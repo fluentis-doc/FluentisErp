@@ -1,0 +1,1 @@
+The list of **Extra data** connected to the item is displayed, with the option to add new extra data specific to the current document only. The *Printable* flag allows choosing which extra data to print.

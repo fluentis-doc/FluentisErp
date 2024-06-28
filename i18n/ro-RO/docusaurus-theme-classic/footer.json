@@ -1,0 +1,26 @@
+{
+  "copyright": {
+    "message": "Copyright © 2021 Fluentis srl.",
+    "description": "The footer copyright"
+  },
+  "link.item.label.ARM": {
+    "message": "ARM",
+    "description": "The label of footer link with label=ARM linking to https://docs.fluentis.com/Arm"
+  },
+  "link.item.label.Fluentis Live Update": {
+    "message": "Fluentis Live Update",
+    "description": "The label of footer link with label=Fluentis Live Update linking to https://docs.fluentis.com/FluentisLiveUpdate/"
+  },
+  "link.title.Documentation": {
+    "message": "Documentation",
+    "description": "The title of the footer links column with title=Documentation in the footer"
+  },
+  "link.title.Site": {
+    "message": "Site",
+    "description": "The title of the footer links column with title=Site in the footer"
+  },
+  "link.item.label.Fluentis": {
+    "message": "Fluentis",
+    "description": "The label of footer link with label=Fluentis linking to https://www.fluentis.com/it/"
+  }
+}
