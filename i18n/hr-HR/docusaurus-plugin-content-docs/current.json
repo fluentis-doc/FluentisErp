@@ -1,0 +1,2194 @@
+{
+  "version.label": {
+    "message": "Next",
+    "description": "The label for version current"
+  },
+  "sidebar.financeArea.category.Dichiarazioni": {
+    "message": "Dichiarazioni",
+    "description": "The label for category Dichiarazioni in sidebar financeArea"
+  },
+  "sidebar.financeArea.category.Plafond": {
+    "message": "Plafond",
+    "description": "The label for category Plafond in sidebar financeArea"
+  },
+  "sidebar.financeArea.category.Intrastat": {
+    "message": "Intrastat",
+    "description": "The label for category Intrastat in sidebar financeArea"
+  },
+  "sidebar.financeArea.category.Ricerca intrastat": {
+    "message": "Ricerca intrastat",
+    "description": "The label for category Ricerca intrastat in sidebar financeArea"
+  },
+  "sidebar.financeArea.category.Crea Intrastat1": {
+    "message": "Crea Intrastat1",
+    "description": "The label for category Crea Intrastat1 in sidebar financeArea"
+  },
+  "sidebar.financeArea.category.Crea Intrastat2": {
+    "message": "Crea Intrastat2",
+    "description": "The label for category Crea Intrastat2 in sidebar financeArea"
+  },
+  "sidebar.financeArea.category.Creazione automatica - Intrastat1": {
+    "message": "Creazione automatica - Intrastat1",
+    "description": "The label for category Creazione automatica - Intrastat1 in sidebar financeArea"
+  },
+  "sidebar.financeArea.category.Creazione da registrazioni - Intrastat1  ": {
+    "message": "Creazione da registrazioni - Intrastat1  ",
+    "description": "The label for category Creazione da registrazioni - Intrastat1   in sidebar financeArea"
+  },
+  "sidebar.financeArea.category.Creazione automatica Intrastat2": {
+    "message": "Creazione automatica Intrastat2",
+    "description": "The label for category Creazione automatica Intrastat2 in sidebar financeArea"
+  },
+  "sidebar.financeArea.category.Creazione da registrazioni Intrastat2": {
+    "message": "Creazione da registrazioni Intrastat2",
+    "description": "The label for category Creazione da registrazioni Intrastat2 in sidebar financeArea"
+  },
+  "sidebar.financeArea.category.Registrazioni contabili": {
+    "message": "Računovodstvo",
+    "description": "The label for category Registrazioni contabili in sidebar financeArea"
+  },
+  "sidebar.financeArea.category.Registrazioni": {
+    "message": "Zapisi glavne knjige",
+    "description": "The label for category Registrazioni in sidebar financeArea"
+  },
+  "sidebar.financeArea.category.Creazione registrazione contabile": {
+    "message": "Generiranje zapisa glavne knjige ",
+    "description": "The label for category Creazione registrazione contabile in sidebar financeArea"
+  },
+  "sidebar.financeArea.category.Apertura automatica conti": {
+    "message": "Automatsko otvaranje konta",
+    "description": "The label for category Apertura automatica conti in sidebar financeArea"
+  },
+  "sidebar.financeArea.category.Chiusura automatica conti": {
+    "message": "Automatsko zatvaranje konta",
+    "description": "The label for category Chiusura automatica conti in sidebar financeArea"
+  },
+  "sidebar.financeArea.category.Nuova": {
+    "message": "Nova",
+    "description": "The label for category Nuova in sidebar financeArea"
+  },
+  "sidebar.financeArea.category.Scritture di assestamento": {
+    "message": "Zapisi usklađenja",
+    "description": "The label for category Scritture di assestamento in sidebar financeArea"
+  },
+  "sidebar.financeArea.category.Creazione": {
+    "message": "Kreiranje",
+    "description": "The label for category Creazione in sidebar financeArea"
+  },
+  "sidebar.financeArea.category.Gestione registrazioni provvisorie": {
+    "message": "Gestione registrazioni provvisorie",
+    "description": "The label for category Gestione registrazioni provvisorie in sidebar financeArea"
+  },
+  "sidebar.financeArea.category.Gestione clienti/fornitori ": {
+    "message": "Gestione clienti/fornitori ",
+    "description": "The label for category Gestione clienti/fornitori  in sidebar financeArea"
+  },
+  "sidebar.financeArea.category.Stampe fiscali": {
+    "message": "Financijski izvještaji",
+    "description": "The label for category Stampe fiscali in sidebar financeArea"
+  },
+  "sidebar.financeArea.category.Stampe contabile": {
+    "message": "Izvještaji računovodstva",
+    "description": "The label for category Stampe contabile in sidebar financeArea"
+  },
+  "sidebar.financeArea.category.Stampe analitica": {
+    "message": "Izvještaji analitike",
+    "description": "The label for category Stampe analitica in sidebar financeArea"
+  },
+  "sidebar.financeArea.category.Partite": {
+    "message": "Partite",
+    "description": "The label for category Partite in sidebar financeArea"
+  },
+  "sidebar.financeArea.category.Procedure": {
+    "message": "Procedure",
+    "description": "The label for category Procedure in sidebar financeArea"
+  },
+  "sidebar.financeArea.category.Calcolo interessi": {
+    "message": "Calcolo interessi",
+    "description": "The label for category Calcolo interessi in sidebar financeArea"
+  },
+  "sidebar.financeArea.category.Generazione solleciti": {
+    "message": "Generazione solleciti",
+    "description": "The label for category Generazione solleciti in sidebar financeArea"
+  },
+  "sidebar.financeArea.category.Compensazione partite": {
+    "message": "Compensazione partite",
+    "description": "The label for category Compensazione partite in sidebar financeArea"
+  },
+  "sidebar.financeArea.category.Giroconto partite": {
+    "message": "Giroconto partite",
+    "description": "The label for category Giroconto partite in sidebar financeArea"
+  },
+  "sidebar.financeArea.category.Stampe": {
+    "message": "Izvještaji",
+    "description": "The label for category Stampe in sidebar financeArea"
+  },
+  "sidebar.financeArea.category.Percipienti": {
+    "message": "Vanjski suradnici",
+    "description": "The label for category Percipienti in sidebar financeArea"
+  },
+  "sidebar.financeArea.category.Cerca compensi": {
+    "message": "Pretraga Naknada",
+    "description": "The label for category Cerca compensi in sidebar financeArea"
+  },
+  "sidebar.financeArea.category.Modello F24": {
+    "message": "F24 Model ",
+    "description": "The label for category Modello F24 in sidebar financeArea"
+  },
+  "sidebar.financeArea.category.Contabilizza": {
+    "message": "Knjiženje",
+    "description": "The label for category Contabilizza in sidebar financeArea"
+  },
+  "sidebar.financeArea.category.Contabilizzazione compensi": {
+    "message": "Knjiženje naknada",
+    "description": "The label for category Contabilizzazione compensi in sidebar financeArea"
+  },
+  "sidebar.financeArea.category.Contabilizza Enasarco": {
+    "message": "Knjiženje fonda osiguranja",
+    "description": "The label for category Contabilizza Enasarco in sidebar financeArea"
+  },
+  "sidebar.financeArea.category.Contabilizza pagamenti": {
+    "message": "Knjiženje plaćanja",
+    "description": "The label for category Contabilizza pagamenti in sidebar financeArea"
+  },
+  "sidebar.financeArea.category.Gestione compensi": {
+    "message": "Upravljanje naknadama",
+    "description": "The label for category Gestione compensi in sidebar financeArea"
+  },
+  "sidebar.financeArea.category.Cespiti": {
+    "message": "Osnovna sredstva",
+    "description": "The label for category Cespiti in sidebar financeArea"
+  },
+  "sidebar.financeArea.category.Gestione cespiti": {
+    "message": "Upravljanje osnovnim sredstvima",
+    "description": "The label for category Gestione cespiti in sidebar financeArea"
+  },
+  "sidebar.financeArea.category.Ammortamento oggettivo": {
+    "message": "Objektivna amortizacija ",
+    "description": "The label for category Ammortamento oggettivo in sidebar financeArea"
+  },
+  "sidebar.financeArea.category.Ammortamento cespiti": {
+    "message": "Amortizacija osnovnih sredstava",
+    "description": "The label for category Ammortamento cespiti in sidebar financeArea"
+  },
+  "sidebar.financeArea.category.Stampe cespiti": {
+    "message": "Izvještaji osnovnih sredstava",
+    "description": "The label for category Stampe cespiti in sidebar financeArea"
+  },
+  "sidebar.financeArea.category.Obsoleto e non supportato": {
+    "message": "Outdated and not supported",
+    "description": "The label for category Obsoleto e non supportato in sidebar financeArea"
+  },
+  "sidebar.financeArea.category.Elenchi clienti/fornitori": {
+    "message": "Popisi Kupci/Dobavljači",
+    "description": "The label for category Elenchi clienti/fornitori in sidebar financeArea"
+  },
+  "sidebar.financeArea.category.Anticipi Incassi": {
+    "message": "Knjiženje naplata",
+    "description": "The label for category Anticipi Incassi in sidebar financeArea"
+  },
+  "sidebar.financeArea.category.Tabelle e Parametri": {
+    "message": "Tablice i parametri",
+    "description": "The label for category Tabelle e Parametri in sidebar financeArea"
+  },
+  "sidebar.financeArea.category.Crea distinta di anticipo": {
+    "message": "Kreiraj popis avansa",
+    "description": "The label for category Crea distinta di anticipo in sidebar financeArea"
+  },
+  "sidebar.financeArea.category.Contabilizzazione": {
+    "message": "Knjiženje",
+    "description": "The label for category Contabilizzazione in sidebar financeArea"
+  },
+  "sidebar.financeArea.category.Gestione incassi": {
+    "message": "Upravljanje naplatom",
+    "description": "The label for category Gestione incassi in sidebar financeArea"
+  },
+  "sidebar.financeArea.category.Crea incassi": {
+    "message": "Generiranje naplata",
+    "description": "The label for category Crea incassi in sidebar financeArea"
+  },
+  "sidebar.financeArea.category.Comunicazione Operazioni paesi a fiscalità privilegiata": {
+    "message": "Prijava poreznih olakšica poslovanja",
+    "description": "The label for category Comunicazione Operazioni paesi a fiscalità privilegiata in sidebar financeArea"
+  },
+  "sidebar.financeArea.category.Creazione solleciti": {
+    "message": "Generiranje opomena",
+    "description": "The label for category Creazione solleciti in sidebar financeArea"
+  },
+  "sidebar.financeArea.category.Simulazione piani di ammortamento": {
+    "message": "Simulacija plana amortizacije",
+    "description": "The label for category Simulazione piani di ammortamento in sidebar financeArea"
+  },
+  "sidebar.financeArea.category.Fatturazione Elettronica": {
+    "message": "E-Invoice",
+    "description": "The label for category Fatturazione Elettronica in sidebar financeArea"
+  },
+  "sidebar.financeArea.category.Leasing": {
+    "message": "Leasing",
+    "description": "The label for category Leasing in sidebar financeArea"
+  },
+  "sidebar.financeArea.category.Contabilizzazioni": {
+    "message": "Contabilizations",
+    "description": "The label for category Contabilizzazioni in sidebar financeArea"
+  },
+  "sidebar.financeArea.category.Documenti SDI": {
+    "message": "SDI Documents",
+    "description": "The label for category Documenti SDI in sidebar financeArea"
+  },
+  "sidebar.erpHome.category.Anagrafici": {
+    "message": "Registri",
+    "description": "The label for category Anagrafici in sidebar erpHome"
+  },
+  "sidebar.erpHome.category.Contatti": {
+    "message": "Kontakti",
+    "description": "The label for category Contatti in sidebar erpHome"
+  },
+  "sidebar.erpHome.category.Crea nuovo contatto": {
+    "message": "Unesi novi kontakt",
+    "description": "The label for category Crea nuovo contatto in sidebar erpHome"
+  },
+  "sidebar.erpHome.category.Dati contabili": {
+    "message": "Računovodstveni podaci",
+    "description": "The label for category Dati contabili in sidebar erpHome"
+  },
+  "sidebar.erpHome.category.Dati clienti/fornitori": {
+    "message": "Podaci Kupaca/Dobavljača",
+    "description": "The label for category Dati clienti/fornitori in sidebar erpHome"
+  },
+  "sidebar.erpHome.category.Anagrafiche banche": {
+    "message": "Registri Banka",
+    "description": "The label for category Anagrafiche banche in sidebar erpHome"
+  },
+  "sidebar.erpHome.category.Anagrafica agenti": {
+    "message": "Registar predstavnika",
+    "description": "The label for category Anagrafica agenti in sidebar erpHome"
+  },
+  "sidebar.erpHome.category.Reports": {
+    "message": "Izvještaji",
+    "description": "The label for category Reports in sidebar erpHome"
+  },
+  "sidebar.erpHome.category.Agents Allocation": {
+    "message": "Dodjela prodajnog predstavnika",
+    "description": "The label for category Agents Allocation in sidebar erpHome"
+  },
+  "sidebar.erpHome.category.Contabili": {
+    "message": "Računovodstvo",
+    "description": "The label for category Contabili in sidebar erpHome"
+  },
+  "sidebar.erpHome.category.Articoli": {
+    "message": "Artikli",
+    "description": "The label for category Articoli in sidebar erpHome"
+  },
+  "sidebar.erpHome.category.Crea nuovo articolo ": {
+    "message": "Stvori novi artikl",
+    "description": "The label for category Crea nuovo articolo  in sidebar erpHome"
+  },
+  "sidebar.erpHome.category.Duplica articolo": {
+    "message": "Duplica articolo",
+    "description": "The label for category Duplica articolo in sidebar erpHome"
+  },
+  "sidebar.erpHome.category.Produzione": {
+    "message": "Proizvodnja",
+    "description": "The label for category Produzione in sidebar erpHome"
+  },
+  "sidebar.erpHome.category.Distinta base": {
+    "message": "Sastavnica materijala",
+    "description": "The label for category Distinta base in sidebar erpHome"
+  },
+  "sidebar.erpHome.category.Assiemi": {
+    "message": "Assiemi",
+    "description": "The label for category Assiemi in sidebar erpHome"
+  },
+  "sidebar.erpHome.category.Opzioni": {
+    "message": "Opzioni",
+    "description": "The label for category Opzioni in sidebar erpHome"
+  },
+  "sidebar.erpHome.category.Cicli": {
+    "message": "Cicli",
+    "description": "The label for category Cicli in sidebar erpHome"
+  },
+  "sidebar.erpHome.category.Prototipazione": {
+    "message": "Prototipiranje",
+    "description": "The label for category Prototipazione in sidebar erpHome"
+  },
+  "sidebar.erpHome.category.Dipendente": {
+    "message": "Zaposlenik",
+    "description": "The label for category Dipendente in sidebar erpHome"
+  },
+  "sidebar.erpHome.category.Gestione ore produzione": {
+    "message": "Gestione ore produzione",
+    "description": "The label for category Gestione ore produzione in sidebar erpHome"
+  },
+  "sidebar.erpHome.category.Utilità": {
+    "message": "Utilità",
+    "description": "The label for category Utilità in sidebar erpHome"
+  },
+  "sidebar.erpHome.category.ExtraData": {
+    "message": "ExtraData",
+    "description": "The label for category ExtraData in sidebar erpHome"
+  },
+  "sidebar.erpHome.category.Template": {
+    "message": "Predložak",
+    "description": "The label for category Template in sidebar erpHome"
+  },
+  "sidebar.erpHome.category.Parametri": {
+    "message": "Parametri",
+    "description": "The label for category Parametri in sidebar erpHome"
+  },
+  "sidebar.erpHome.category.Amministrazione": {
+    "message": "Administracija",
+    "description": "The label for category Amministrazione in sidebar erpHome"
+  },
+  "sidebar.erpHome.category.Tesoreria": {
+    "message": "Riznica",
+    "description": "The label for category Tesoreria in sidebar erpHome"
+  },
+  "sidebar.erpHome.category.Parametri conto lavoro": {
+    "message": "Parametri podizvođač",
+    "description": "The label for category Parametri conto lavoro in sidebar erpHome"
+  },
+  "sidebar.erpHome.category.Parametri ordini di produzione": {
+    "message": "Parametri proizvodnih naloga",
+    "description": "The label for category Parametri ordini di produzione in sidebar erpHome"
+  },
+  "sidebar.erpHome.category.Parameteri MRP": {
+    "message": "Parametri MRP",
+    "description": "The label for category Parameteri MRP in sidebar erpHome"
+  },
+  "sidebar.erpHome.category.Acquisti": {
+    "message": "Purchase",
+    "description": "The label for category Acquisti in sidebar erpHome"
+  },
+  "sidebar.erpHome.category.Vendite": {
+    "message": "Sales",
+    "description": "The label for category Vendite in sidebar erpHome"
+  },
+  "sidebar.erpHome.category.Logistica": {
+    "message": "Logistika",
+    "description": "The label for category Logistica in sidebar erpHome"
+  },
+  "sidebar.erpHome.category.Parametri Picking": {
+    "message": "Uzimanje sa zaliha",
+    "description": "The label for category Parametri Picking in sidebar erpHome"
+  },
+  "sidebar.erpHome.category.Parametri Carico/Scarico": {
+    "message": "Utovar/Istovar",
+    "description": "The label for category Parametri Carico/Scarico in sidebar erpHome"
+  },
+  "sidebar.erpHome.category.Parametri iniziali magazzino": {
+    "message": "Početni parametri skladišta",
+    "description": "The label for category Parametri iniziali magazzino in sidebar erpHome"
+  },
+  "sidebar.erpHome.category.Qualità": {
+    "message": "Qualità",
+    "description": "The label for category Qualità in sidebar erpHome"
+  },
+  "sidebar.erpHome.category.Tabelle": {
+    "message": "Tablice",
+    "description": "The label for category Tabelle in sidebar erpHome"
+  },
+  "sidebar.erpHome.category.Causali di contabilità generale": {
+    "message": "Predlošci glavne knjige",
+    "description": "The label for category Causali di contabilità generale in sidebar erpHome"
+  },
+  "sidebar.erpHome.category.Inserimento causali di contabilità generale": {
+    "message": "Unos predlošci glavne knjige",
+    "description": "The label for category Inserimento causali di contabilità generale in sidebar erpHome"
+  },
+  "sidebar.erpHome.category.Tipi ritenuta": {
+    "message": "Tipovi poreza po odbitku",
+    "description": "The label for category Tipi ritenuta in sidebar erpHome"
+  },
+  "sidebar.erpHome.category.Tipi solleciti": {
+    "message": "Tipovi opomena",
+    "description": "The label for category Tipi solleciti in sidebar erpHome"
+  },
+  "sidebar.erpHome.category.Tabelle modulo cash flow": {
+    "message": "Tablice modul cash flow",
+    "description": "The label for category Tabelle modulo cash flow in sidebar erpHome"
+  },
+  "sidebar.erpHome.category.Tabelle modulo Portafoglio effetti": {
+    "message": "Tablice modul Portfelj računa",
+    "description": "The label for category Tabelle modulo Portafoglio effetti in sidebar erpHome"
+  },
+  "sidebar.erpHome.category.Tabelle modulo DocFinance": {
+    "message": "Tablice modula DocFinance",
+    "description": "The label for category Tabelle modulo DocFinance in sidebar erpHome"
+  },
+  "sidebar.erpHome.category.Controlling": {
+    "message": "Controlling",
+    "description": "The label for category Controlling in sidebar erpHome"
+  },
+  "sidebar.erpHome.category.Contabilità analitica": {
+    "message": "Contabilità analitica",
+    "description": "The label for category Contabilità analitica in sidebar erpHome"
+  },
+  "sidebar.erpHome.category.Contabilità gestionale": {
+    "message": "Contabilità gestionale",
+    "description": "The label for category Contabilità gestionale in sidebar erpHome"
+  },
+  "sidebar.erpHome.category.Contabilità industriale": {
+    "message": "Contabilità industriale",
+    "description": "The label for category Contabilità industriale in sidebar erpHome"
+  },
+  "sidebar.erpHome.category.Causali di contabilità industriale": {
+    "message": "Causali di contabilità industriale",
+    "description": "The label for category Causali di contabilità industriale in sidebar erpHome"
+  },
+  "sidebar.erpHome.category.Inserimento causali contabilità industriale": {
+    "message": "Inserimento causali contabilità industriale",
+    "description": "The label for category Inserimento causali contabilità industriale in sidebar erpHome"
+  },
+  "sidebar.erpHome.category.Business Process": {
+    "message": "Business Process",
+    "description": "The label for category Business Process in sidebar erpHome"
+  },
+  "sidebar.erpHome.category.Budgeting": {
+    "message": "Budgeting",
+    "description": "The label for category Budgeting in sidebar erpHome"
+  },
+  "sidebar.erpHome.category.Previsionale": {
+    "message": "Previsionale",
+    "description": "The label for category Previsionale in sidebar erpHome"
+  },
+  "sidebar.erpHome.category.Caratteristiche articolo": {
+    "message": "Karakteristike artikla",
+    "description": "The label for category Caratteristiche articolo in sidebar erpHome"
+  },
+  "sidebar.erpHome.category.Stagionalità": {
+    "message": "Seasonality",
+    "description": "The label for category Stagionalità in sidebar erpHome"
+  },
+  "sidebar.erpHome.category.Stagioni": {
+    "message": "Season",
+    "description": "The label for category Stagioni in sidebar erpHome"
+  },
+  "sidebar.erpHome.category.Factory Calendar for Vendor": {
+    "message": "Factory Calendar for Vendor",
+    "description": "The label for category Factory Calendar for Vendor in sidebar erpHome"
+  },
+  "sidebar.erpHome.category.Calendario capacità produttive": {
+    "message": "Production Capacity calendar",
+    "description": "The label for category Calendario capacità produttive in sidebar erpHome"
+  },
+  "sidebar.erpHome.category.Numerazione Documenti": {
+    "message": "Numerazione Documenti",
+    "description": "The label for category Numerazione Documenti in sidebar erpHome"
+  },
+  "sidebar.erpHome.category.Impostazioni generali": {
+    "message": "Opće postavke",
+    "description": "The label for category Impostazioni generali in sidebar erpHome"
+  },
+  "sidebar.erpHome.category.Discount Type": {
+    "message": "Discount Type",
+    "description": "The label for category Discount Type in sidebar erpHome"
+  },
+  "sidebar.erpHome.category.Employee": {
+    "message": "Zaposlenik",
+    "description": "The label for category Employee in sidebar erpHome"
+  },
+  "sidebar.erpHome.category.Gestione progetti": {
+    "message": "Project management",
+    "description": "The label for category Gestione progetti in sidebar erpHome"
+  },
+  "sidebar.erpHome.category.Generale": {
+    "message": "Generale",
+    "description": "The label for category Generale in sidebar erpHome"
+  },
+  "sidebar.erpHome.category.Controllo articolo": {
+    "message": "Controllo articolo",
+    "description": "The label for category Controllo articolo in sidebar erpHome"
+  },
+  "sidebar.erpHome.category.Reclami e non conformità": {
+    "message": "Reclami e non conformità",
+    "description": "The label for category Reclami e non conformità in sidebar erpHome"
+  },
+  "sidebar.erpHome.category.Certificati": {
+    "message": "Certificati",
+    "description": "The label for category Certificati in sidebar erpHome"
+  },
+  "sidebar.erpHome.category.CRM": {
+    "message": "CRM",
+    "description": "The label for category CRM in sidebar erpHome"
+  },
+  "sidebar.erpHome.category.Tickets": {
+    "message": "Tickets",
+    "description": "The label for category Tickets in sidebar erpHome"
+  },
+  "sidebar.erpHome.category.EAM": {
+    "message": "EAM",
+    "description": "The label for category EAM in sidebar erpHome"
+  },
+  "sidebar.planning.category.MPS - Master production scheduling": {
+    "message": "MPS - Master production scheduling",
+    "description": "The label for category MPS - Master production scheduling in sidebar planning"
+  },
+  "sidebar.planning.category.Definizione MPS": {
+    "message": "Definizione MPS",
+    "description": "The label for category Definizione MPS in sidebar planning"
+  },
+  "sidebar.planning.category.Commesse di produzione": {
+    "message": "Pretraga proizvodni naloga",
+    "description": "The label for category Commesse di produzione in sidebar planning"
+  },
+  "sidebar.planning.category.Nuova Commessa Monoprodotto": {
+    "message": "Novi podnalog s jednim proizvodom",
+    "description": "The label for category Nuova Commessa Monoprodotto in sidebar planning"
+  },
+  "sidebar.planning.category.Procedure": {
+    "message": "Procedure",
+    "description": "The label for category Procedure in sidebar planning"
+  },
+  "sidebar.planning.category.MS - Master scheduling": {
+    "message": "MS - Master scheduling",
+    "description": "The label for category MS - Master scheduling in sidebar planning"
+  },
+  "sidebar.planning.category.Schedulazione generale": {
+    "message": "General schedule",
+    "description": "The label for category Schedulazione generale in sidebar planning"
+  },
+  "sidebar.planning.category.Ordini pianificati": {
+    "message": "Planirani nalozi",
+    "description": "The label for category Ordini pianificati in sidebar planning"
+  },
+  "sidebar.planning.category.Nuovo Ordine Pianificato": {
+    "message": "Novi planirani nalog",
+    "description": "The label for category Nuovo Ordine Pianificato in sidebar planning"
+  },
+  "sidebar.planning.category.Rilascio ordini pianificati": {
+    "message": "Puštanje planiranih naloga",
+    "description": "The label for category Rilascio ordini pianificati in sidebar planning"
+  },
+  "sidebar.planning.category.Gantt": {
+    "message": "Gantt",
+    "description": "The label for category Gantt in sidebar planning"
+  },
+  "sidebar.planning.category.Gantt di produzione": {
+    "message": "Production outlook",
+    "description": "The label for category Gantt di produzione in sidebar planning"
+  },
+  "sidebar.planning.category.Production outlook": {
+    "message": "Production outlook",
+    "description": "The label for category Production outlook in sidebar planning"
+  },
+  "sidebar.planning.category.Sequenza fasi": {
+    "message": "Phase sequence",
+    "description": "The label for category Sequenza fasi in sidebar planning"
+  },
+  "sidebar.production.category.Bolla di consegna": {
+    "message": "Otpremnica",
+    "description": "The label for category Bolla di consegna in sidebar production"
+  },
+  "sidebar.production.category.Inserimento bolla di consegna": {
+    "message": "Unos otpremnice",
+    "description": "The label for category Inserimento bolla di consegna in sidebar production"
+  },
+  "sidebar.production.category.Consegne": {
+    "message": "Dostave",
+    "description": "The label for category Consegne in sidebar production"
+  },
+  "sidebar.production.category.Procedure": {
+    "message": "Procedure",
+    "description": "The label for category Procedure in sidebar production"
+  },
+  "sidebar.production.category.Stampe": {
+    "message": "Ispisi",
+    "description": "The label for category Stampe in sidebar production"
+  },
+  "sidebar.production.category.Ricerca Rientri": {
+    "message": "Pretraga povrate",
+    "description": "The label for category Ricerca Rientri in sidebar production"
+  },
+  "sidebar.production.category.Inserimento rientri": {
+    "message": "Unos povrati",
+    "description": "The label for category Inserimento rientri in sidebar production"
+  },
+  "sidebar.production.category.Articoli rientrati": {
+    "message": "Povrat stavki",
+    "description": "The label for category Articoli rientrati in sidebar production"
+  },
+  "sidebar.production.category.Registrazione rientri": {
+    "message": "Zapisi povrati",
+    "description": "The label for category Registrazione rientri in sidebar production"
+  },
+  "sidebar.production.category.Capacity Requirements": {
+    "message": "Capacity Requirements",
+    "description": "The label for category Capacity Requirements in sidebar production"
+  },
+  "sidebar.production.category.Istogramma utilizzo risorse": {
+    "message": "Histogram korištenja resursa",
+    "description": "The label for category Istogramma utilizzo risorse in sidebar production"
+  },
+  "sidebar.production.category.Visualizzazione Gantt": {
+    "message": "Pregled Gantt",
+    "description": "The label for category Visualizzazione Gantt in sidebar production"
+  },
+  "sidebar.production.category.MRP - Material requirement planning": {
+    "message": "MRP - Material requirement planning",
+    "description": "The label for category MRP - Material requirement planning in sidebar production"
+  },
+  "sidebar.production.category.PP - Production in progress": {
+    "message": "PP - Production in progress",
+    "description": "The label for category PP - Production in progress in sidebar production"
+  },
+  "sidebar.production.category.Ordini di produzione": {
+    "message": "Production order",
+    "description": "The label for category Ordini di produzione in sidebar production"
+  },
+  "sidebar.production.category.Gestione ordini di produzione": {
+    "message": "Production orders management",
+    "description": "The label for category Gestione ordini di produzione in sidebar production"
+  },
+  "sidebar.production.category.consuntivazione ordini di produzione": {
+    "message": "Production times flushing",
+    "description": "The label for category consuntivazione ordini di produzione in sidebar production"
+  },
+  "sidebar.production.category.Cruscotto Produzione semplificata": {
+    "message": "Panel - simplified production",
+    "description": "The label for category Cruscotto Produzione semplificata in sidebar production"
+  },
+  "sidebar.production.category.Segnalazioni": {
+    "message": "Signals",
+    "description": "The label for category Segnalazioni in sidebar production"
+  },
+  "sidebar.production.category.Registrazione segnalazioni": {
+    "message": "Signal records",
+    "description": "The label for category Registrazione segnalazioni in sidebar production"
+  },
+  "sidebar.production.category.Rilascio ordini di produzione": {
+    "message": "Production orders release",
+    "description": "The label for category Rilascio ordini di produzione in sidebar production"
+  },
+  "sidebar.production.category.Gestione ore di produzione": {
+    "message": "Production hours management",
+    "description": "The label for category Gestione ore di produzione in sidebar production"
+  },
+  "sidebar.production.category.Log modifiche": {
+    "message": "Log modifiche",
+    "description": "The label for category Log modifiche in sidebar production"
+  },
+  "sidebar.production.category.Tables": {
+    "message": "Tables",
+    "description": "The label for category Tables in sidebar production"
+  },
+  "sidebar.purchase.category.DDT di acquisto": {
+    "message": "Otpremnica dobavljača",
+    "description": "The label for category DDT di acquisto in sidebar purchase"
+  },
+  "sidebar.purchase.category.Inserimento DDT di Acquisto": {
+    "message": "Unos otpremnica dobavljača",
+    "description": "The label for category Inserimento DDT di Acquisto in sidebar purchase"
+  },
+  "sidebar.purchase.category.Procedure testata": {
+    "message": "Procedure zaglavlja",
+    "description": "The label for category Procedure testata in sidebar purchase"
+  },
+  "sidebar.purchase.category.Procedure": {
+    "message": "Procedure",
+    "description": "The label for category Procedure in sidebar purchase"
+  },
+  "sidebar.purchase.category.Creazione DDT da Ricevimento merci": {
+    "message": "Kreiranje otpremnice iz popisa primki ",
+    "description": "The label for category Creazione DDT da Ricevimento merci in sidebar purchase"
+  },
+  "sidebar.purchase.category.Registrazione DDT di acquisto in Magazzino": {
+    "message": "Warehouse purchase delivery note record",
+    "description": "The label for category Registrazione DDT di acquisto in Magazzino in sidebar purchase"
+  },
+  "sidebar.purchase.category.Purchase Delivery Notes Accounting": {
+    "message": "Knjiženje otpremnica dobavljača",
+    "description": "The label for category Purchase Delivery Notes Accounting in sidebar purchase"
+  },
+  "sidebar.purchase.category.Fatture di acquisto": {
+    "message": "Ulazni računi",
+    "description": "The label for category Fatture di acquisto in sidebar purchase"
+  },
+  "sidebar.purchase.category.Inserimento fattura di acquisto": {
+    "message": "Unos ulazni računa",
+    "description": "The label for category Inserimento fattura di acquisto in sidebar purchase"
+  },
+  "sidebar.purchase.category.Contabilizzazione": {
+    "message": "Knjiženje",
+    "description": "The label for category Contabilizzazione in sidebar purchase"
+  },
+  "sidebar.purchase.category.Stampe": {
+    "message": "Ispisi",
+    "description": "The label for category Stampe in sidebar purchase"
+  },
+  "sidebar.purchase.category.Ordini fornitori": {
+    "message": "Narudžbe nabave",
+    "description": "The label for category Ordini fornitori in sidebar purchase"
+  },
+  "sidebar.purchase.category.Inserimento ordini fornitori": {
+    "message": "Unos narudžba nabave",
+    "description": "The label for category Inserimento ordini fornitori in sidebar purchase"
+  },
+  "sidebar.purchase.category.Purchase order items": {
+    "message": "Purchase order items",
+    "description": "The label for category Purchase order items in sidebar purchase"
+  },
+  "sidebar.purchase.category.Listini di acquisto": {
+    "message": "Cjenci nabave",
+    "description": "The label for category Listini di acquisto in sidebar purchase"
+  },
+  "sidebar.purchase.category.Richieste di acquisto": {
+    "message": "Zahtjev za nabavom",
+    "description": "The label for category Richieste di acquisto in sidebar purchase"
+  },
+  "sidebar.purchase.category.Ricevimento merci": {
+    "message": "Prijem robe",
+    "description": "The label for category Ricevimento merci in sidebar purchase"
+  },
+  "sidebar.purchase.category.Definizione politica sconti": {
+    "message": "Policies discount definition",
+    "description": "The label for category Definizione politica sconti in sidebar purchase"
+  },
+  "sidebar.sales.category.Fatture di vendita": {
+    "message": "Prodajni računi",
+    "description": "The label for category Fatture di vendita in sidebar sales"
+  },
+  "sidebar.sales.category.Fatturazione": {
+    "message": "Fakturiranje",
+    "description": "The label for category Fatturazione in sidebar sales"
+  },
+  "sidebar.sales.category.Testata": {
+    "message": "Header",
+    "description": "The label for category Testata in sidebar sales"
+  },
+  "sidebar.sales.category.Articoli": {
+    "message": "Stavke",
+    "description": "The label for category Articoli in sidebar sales"
+  },
+  "sidebar.sales.category.Riepiloghi": {
+    "message": "Sažeci ",
+    "description": "The label for category Riepiloghi in sidebar sales"
+  },
+  "sidebar.sales.category.Procedure testata": {
+    "message": "Procedure zaglavlja",
+    "description": "The label for category Procedure testata in sidebar sales"
+  },
+  "sidebar.sales.category.Procedure": {
+    "message": "Procedure",
+    "description": "The label for category Procedure in sidebar sales"
+  },
+  "sidebar.sales.category.Creazione fatture da DDT/Bolle": {
+    "message": "Kreiranje računa iz otpremnica",
+    "description": "The label for category Creazione fatture da DDT/Bolle in sidebar sales"
+  },
+  "sidebar.sales.category.Scarico fatture immediate dal magazzino": {
+    "message": "Razduženje robe po računu",
+    "description": "The label for category Scarico fatture immediate dal magazzino in sidebar sales"
+  },
+  "sidebar.sales.category.Contabilizza": {
+    "message": "Knjiženje",
+    "description": "The label for category Contabilizza in sidebar sales"
+  },
+  "sidebar.sales.category.Stampe": {
+    "message": "Ispisi",
+    "description": "The label for category Stampe in sidebar sales"
+  },
+  "sidebar.sales.category.POS": {
+    "message": "POS",
+    "description": "The label for category POS in sidebar sales"
+  },
+  "sidebar.sales.category.Inserimento POS": {
+    "message": "Umetanje prodajnog mjesta ",
+    "description": "The label for category Inserimento POS in sidebar sales"
+  },
+  "sidebar.sales.category.Scarico POS": {
+    "message": "Izčitaj prodajno mjesto",
+    "description": "The label for category Scarico POS in sidebar sales"
+  },
+  "sidebar.sales.category.DDT/Bolle di vendita": {
+    "message": "Otpremnica",
+    "description": "The label for category DDT/Bolle di vendita in sidebar sales"
+  },
+  "sidebar.sales.category.Ricerca DDT": {
+    "message": "Pretraga otpremnica",
+    "description": "The label for category Ricerca DDT in sidebar sales"
+  },
+  "sidebar.sales.category.Gestione DDT/Bolle": {
+    "message": "Upravljanje otpremnicama",
+    "description": "The label for category Gestione DDT/Bolle in sidebar sales"
+  },
+  "sidebar.sales.category.Scarico DDT da magazzino": {
+    "message": "Istovar otpremnica iz skladišta",
+    "description": "The label for category Scarico DDT da magazzino in sidebar sales"
+  },
+  "sidebar.sales.category.Contabilizzazione DDT/Bolle": {
+    "message": "Knjiženje otpremnica",
+    "description": "The label for category Contabilizzazione DDT/Bolle in sidebar sales"
+  },
+  "sidebar.sales.category.Commesse di vendita": {
+    "message": "Prodajni podnalozi ",
+    "description": "The label for category Commesse di vendita in sidebar sales"
+  },
+  "sidebar.sales.category.Gestione commessa": {
+    "message": "Upravljanje podnalozima",
+    "description": "The label for category Gestione commessa in sidebar sales"
+  },
+  "sidebar.sales.category.Crea fattura di vendita": {
+    "message": "Kreiranje prodajnog računa",
+    "description": "The label for category Crea fattura di vendita in sidebar sales"
+  },
+  "sidebar.sales.category.Crea richiesta intervento": {
+    "message": "Kreiranje zahtjeva za intervenciju",
+    "description": "The label for category Crea richiesta intervento in sidebar sales"
+  },
+  "sidebar.sales.category.Agenti": {
+    "message": "Predstavnici",
+    "description": "The label for category Agenti in sidebar sales"
+  },
+  "sidebar.sales.category.Tabelle": {
+    "message": "Tablice",
+    "description": "The label for category Tabelle in sidebar sales"
+  },
+  "sidebar.sales.category.Inserimento liquidazione": {
+    "message": "Unos podmirenja predstavnika",
+    "description": "The label for category Inserimento liquidazione in sidebar sales"
+  },
+  "sidebar.sales.category.Creazione automatica liquidazione provvigioni": {
+    "message": "Automatsko generiranje podmirenja provizije ",
+    "description": "The label for category Creazione automatica liquidazione provvigioni in sidebar sales"
+  },
+  "sidebar.sales.category.Crea compenso percipiente": {
+    "message": "Unos provizije vanjskog suradnika",
+    "description": "The label for category Crea compenso percipiente in sidebar sales"
+  },
+  "sidebar.sales.category.Listini di Vendita": {
+    "message": "Sales Price List",
+    "description": "The label for category Listini di Vendita in sidebar sales"
+  },
+  "sidebar.sales.category.Offerte": {
+    "message": "Ponude",
+    "description": "The label for category Offerte in sidebar sales"
+  },
+  "sidebar.sales.category.Ordini cliente": {
+    "message": "Narudžba kupca",
+    "description": "The label for category Ordini cliente in sidebar sales"
+  },
+  "sidebar.sales.category.Inserimento nuovo ordine cliente": {
+    "message": "Create new sales orders",
+    "description": "The label for category Inserimento nuovo ordine cliente in sidebar sales"
+  },
+  "sidebar.sales.category.Definizione politiche sconti": {
+    "message": "Policies discount definition",
+    "description": "The label for category Definizione politiche sconti in sidebar sales"
+  },
+  "sidebar.sales.category.Packing list": {
+    "message": "Packing list",
+    "description": "The label for category Packing list in sidebar sales"
+  },
+  "sidebar.treasury.category.DocFinance": {
+    "message": "DocFinance",
+    "description": "The label for category DocFinance in sidebar treasury"
+  },
+  "sidebar.treasury.category.Pagamenti fornitori": {
+    "message": "Plaćanje dobavljaču",
+    "description": "The label for category Pagamenti fornitori in sidebar treasury"
+  },
+  "sidebar.treasury.category.Procedure": {
+    "message": "Procedure",
+    "description": "The label for category Procedure in sidebar treasury"
+  },
+  "sidebar.treasury.category.Creazione automatica pagamento fornitori": {
+    "message": "Automatsko generiranje plaćanja dobavljaču",
+    "description": "The label for category Creazione automatica pagamento fornitori in sidebar treasury"
+  },
+  "sidebar.treasury.category.Contabilizza": {
+    "message": "Knjiženje",
+    "description": "The label for category Contabilizza in sidebar treasury"
+  },
+  "sidebar.treasury.category.Rischio cliente": {
+    "message": "Rizik kupca",
+    "description": "The label for category Rischio cliente in sidebar treasury"
+  },
+  "sidebar.treasury.category.Lock manager": {
+    "message": "Upravljanje zaključavanjem",
+    "description": "The label for category Lock manager in sidebar treasury"
+  },
+  "sidebar.treasury.category.Cash flow": {
+    "message": "Cash flow",
+    "description": "The label for category Cash flow in sidebar treasury"
+  },
+  "sidebar.treasury.category.Portofoglio Effetti": {
+    "message": "Portfolio",
+    "description": "The label for category Portofoglio Effetti in sidebar treasury"
+  },
+  "sidebar.treasury.category.Riba/Rid/Lcr": {
+    "message": "Pretraga isplata/Rid/Lcr",
+    "description": "The label for category Riba/Rid/Lcr in sidebar treasury"
+  },
+  "sidebar.treasury.category.Generazione Riba/Rid/Lcr": {
+    "message": "Kreiranje bankarske potvrde/Rid/Lcr",
+    "description": "The label for category Generazione Riba/Rid/Lcr in sidebar treasury"
+  },
+  "sidebar.treasury.category.Acquisizione effetti dalle partite": {
+    "message": "Računi iz izdanih dospjelih vrijednosti",
+    "description": "The label for category Acquisizione effetti dalle partite in sidebar treasury"
+  },
+  "sidebar.treasury.category.Acquisizione effetti dalle fatture": {
+    "message": "Računi-uplatnice iz izdanih računa",
+    "description": "The label for category Acquisizione effetti dalle fatture in sidebar treasury"
+  },
+  "sidebar.treasury.category.Contabilizzazione": {
+    "message": "Knjiženje",
+    "description": "The label for category Contabilizzazione in sidebar treasury"
+  },
+  "sidebar.treasury.category.Contabilizzazione accrediti": {
+    "message": "Knjiženje kredita",
+    "description": "The label for category Contabilizzazione accrediti in sidebar treasury"
+  },
+  "sidebar.treasury.category.Contabilizzazione distinte": {
+    "message": "Knjiženje popisa",
+    "description": "The label for category Contabilizzazione distinte in sidebar treasury"
+  },
+  "sidebar.treasury.category.Contabilizzazione effetti": {
+    "message": "Knjiženje računa",
+    "description": "The label for category Contabilizzazione effetti in sidebar treasury"
+  },
+  "sidebar.treasury.category.Contabilizzazione effetti a fornitore": {
+    "message": "Knjiženje računa po dobavljaču",
+    "description": "The label for category Contabilizzazione effetti a fornitore in sidebar treasury"
+  },
+  "sidebar.treasury.category.Contabilizzazione insoluti": {
+    "message": "Knjiženje dospijeca",
+    "description": "The label for category Contabilizzazione insoluti in sidebar treasury"
+  },
+  "sidebar.treasury.category.Contabilizzazione insoluti su cessione": {
+    "message": "Knjiženje neplaćenog iz kredita",
+    "description": "The label for category Contabilizzazione insoluti su cessione in sidebar treasury"
+  },
+  "sidebar.treasury.category.Stampe": {
+    "message": "Izvještaji",
+    "description": "The label for category Stampe in sidebar treasury"
+  },
+  "sidebar.treasury.category.Creazione e Gestione distinte": {
+    "message": "Upravljanje popisima",
+    "description": "The label for category Creazione e Gestione distinte in sidebar treasury"
+  },
+  "sidebar.treasury.category.Creazine e Gestione insoluti": {
+    "message": "Upravljanje neplaćenim",
+    "description": "The label for category Creazine e Gestione insoluti in sidebar treasury"
+  },
+  "sidebar.treasury.category.Creazione e Gestione effetti": {
+    "message": "Upravljanje računima",
+    "description": "The label for category Creazione e Gestione effetti in sidebar treasury"
+  },
+  "sidebar.treasury.category.Obsoleto e non supportato": {
+    "message": "Outdated and not supported",
+    "description": "The label for category Obsoleto e non supportato in sidebar treasury"
+  },
+  "sidebar.treasury.category.Conti correnti": {
+    "message": "Tekući računi",
+    "description": "The label for category Conti correnti in sidebar treasury"
+  },
+  "sidebar.treasury.category.Riconciliazione": {
+    "message": "Uskladi centar troška",
+    "description": "The label for category Riconciliazione in sidebar treasury"
+  },
+  "sidebar.treasury.category.Anticipi & Incassi": {
+    "message": "Advance",
+    "description": "The label for category Anticipi & Incassi in sidebar treasury"
+  },
+  "sidebar.logistics.category.Lotti/Numeri di serie": {
+    "message": "Lotovi/serijski brojevi",
+    "description": "The label for category Lotti/Numeri di serie in sidebar logistics"
+  },
+  "sidebar.logistics.category.U.D.C.": {
+    "message": "Utovarna jedinica",
+    "description": "The label for category U.D.C. in sidebar logistics"
+  },
+  "sidebar.logistics.category.Dettaglio ordini in lista": {
+    "message": "Dettaglio ordini in lista",
+    "description": "The label for category Dettaglio ordini in lista in sidebar logistics"
+  },
+  "sidebar.logistics.category.Gestione UDC": {
+    "message": "Upravljanje transportnom jedinicom",
+    "description": "The label for category Gestione UDC in sidebar logistics"
+  },
+  "sidebar.logistics.category.Lsiete di prelievo UDC": {
+    "message": "Loading unit picking lists",
+    "description": "The label for category Lsiete di prelievo UDC in sidebar logistics"
+  },
+  "sidebar.logistics.category.Liste prelievo UDC": {
+    "message": "Liste prelievo UDC",
+    "description": "The label for category Liste prelievo UDC in sidebar logistics"
+  },
+  "sidebar.logistics.category.Visualizzazione trasferimenti UDC": {
+    "message": "Loading unit transfer visualization",
+    "description": "The label for category Visualizzazione trasferimenti UDC in sidebar logistics"
+  },
+  "sidebar.logistics.category.Magazzino": {
+    "message": "Skladište",
+    "description": "The label for category Magazzino in sidebar logistics"
+  },
+  "sidebar.logistics.category.Registrazioni di magazzino": {
+    "message": "Zapisi zalihe",
+    "description": "The label for category Registrazioni di magazzino in sidebar logistics"
+  },
+  "sidebar.logistics.category.Stampe Gestionali": {
+    "message": "Izvještaji Upravljanja",
+    "description": "The label for category Stampe Gestionali in sidebar logistics"
+  },
+  "sidebar.logistics.category.Articoli non movimentati": {
+    "message": "Articoli non movimentati",
+    "description": "The label for category Articoli non movimentati in sidebar logistics"
+  },
+  "sidebar.logistics.category.Etichette": {
+    "message": "Etichette",
+    "description": "The label for category Etichette in sidebar logistics"
+  },
+  "sidebar.logistics.category.Sottoscorta": {
+    "message": "Sottoscorta",
+    "description": "The label for category Sottoscorta in sidebar logistics"
+  },
+  "sidebar.logistics.category.Stampe contabili": {
+    "message": "Izvještaji računovodstva",
+    "description": "The label for category Stampe contabili in sidebar logistics"
+  },
+  "sidebar.logistics.category.Giornale di magazzino": {
+    "message": "Giornale di magazzino",
+    "description": "The label for category Giornale di magazzino in sidebar logistics"
+  },
+  "sidebar.logistics.category.Schede di movimentazione": {
+    "message": "Schede di movimentazione",
+    "description": "The label for category Schede di movimentazione in sidebar logistics"
+  },
+  "sidebar.logistics.category.Brogliaccio di magazzino": {
+    "message": "Brogliaccio di magazzino",
+    "description": "The label for category Brogliaccio di magazzino in sidebar logistics"
+  },
+  "sidebar.logistics.category.Ubicazioni": {
+    "message": "Lokacije",
+    "description": "The label for category Ubicazioni in sidebar logistics"
+  },
+  "sidebar.logistics.category.Procedure": {
+    "message": "Procedure",
+    "description": "The label for category Procedure in sidebar logistics"
+  },
+  "sidebar.logistics.category.Gestione inventario": {
+    "message": "Gestione inventario",
+    "description": "The label for category Gestione inventario in sidebar logistics"
+  },
+  "sidebar.logistics.category.Picking": {
+    "message": "Uzimanje sa zaliha ",
+    "description": "The label for category Picking in sidebar logistics"
+  },
+  "sidebar.logistics.category.Gestione Picking ": {
+    "message": "Upravljanje uzimanjem sa zaliha",
+    "description": "The label for category Gestione Picking  in sidebar logistics"
+  },
+  "sidebar.logistics.category.Procedure testata": {
+    "message": "Procedure testata",
+    "description": "The label for category Procedure testata in sidebar logistics"
+  },
+  "sidebar.logistics.category.Stampe": {
+    "message": "Ispisi",
+    "description": "The label for category Stampe in sidebar logistics"
+  },
+  "sidebar.logistics.category.Scarico picking": {
+    "message": "Scarico picking",
+    "description": "The label for category Scarico picking in sidebar logistics"
+  },
+  "sidebar.logistics.category.Articoli": {
+    "message": "Artikli",
+    "description": "The label for category Articoli in sidebar logistics"
+  },
+  "sidebar.logistics.category.Visualizzazione giacenze": {
+    "message": "Visualizzazione giacenze",
+    "description": "The label for category Visualizzazione giacenze in sidebar logistics"
+  },
+  "sidebar.logistics.category.Ricerca giacenze": {
+    "message": "Ricerca giacenze",
+    "description": "The label for category Ricerca giacenze in sidebar logistics"
+  },
+  "sidebar.logistics.category.Piani di carico ": {
+    "message": "Planovi utovara",
+    "description": "The label for category Piani di carico  in sidebar logistics"
+  },
+  "sidebar.logistics.category.creazione piani di carico ": {
+    "message": "creazione piani di carico ",
+    "description": "The label for category creazione piani di carico  in sidebar logistics"
+  },
+  "sidebar.logistics.category.Modello giro consegne": {
+    "message": "Modello giro consegne",
+    "description": "The label for category Modello giro consegne in sidebar logistics"
+  },
+  "sidebar.logistics.category.Attività giornaliere": {
+    "message": "Attività giornaliere",
+    "description": "The label for category Attività giornaliere in sidebar logistics"
+  },
+  "sidebar.subcontractor.category.Ordini di conto lavoro": {
+    "message": "Nalozi podizvođača",
+    "description": "The label for category Ordini di conto lavoro in sidebar subcontractor"
+  },
+  "sidebar.subcontractor.category.Tabelle e parametri": {
+    "message": "Tablice i parametri",
+    "description": "The label for category Tabelle e parametri in sidebar subcontractor"
+  },
+  "sidebar.subcontractor.category.Inserimento ordini di conto lavoro": {
+    "message": "Unos naloga podizvođača",
+    "description": "The label for category Inserimento ordini di conto lavoro in sidebar subcontractor"
+  },
+  "sidebar.subcontractor.category.Testata": {
+    "message": "Zaglavlje",
+    "description": "The label for category Testata in sidebar subcontractor"
+  },
+  "sidebar.subcontractor.category.Reports": {
+    "message": "Izvještaji",
+    "description": "The label for category Reports in sidebar subcontractor"
+  },
+  "sidebar.subcontractor.category.Bolle di consegna": {
+    "message": "Delivery notes",
+    "description": "The label for category Bolle di consegna in sidebar subcontractor"
+  },
+  "sidebar.subcontractor.category.Nuova bolla di consegna": {
+    "message": "New delivery notes",
+    "description": "The label for category Nuova bolla di consegna in sidebar subcontractor"
+  },
+  "sidebar.subcontractor.category.Stampe": {
+    "message": "Ispisi",
+    "description": "The label for category Stampe in sidebar subcontractor"
+  },
+  "sidebar.subcontractor.category.Rientri": {
+    "message": "Search returns",
+    "description": "The label for category Rientri in sidebar subcontractor"
+  },
+  "sidebar.subcontractor.category.Nuovo rientro": {
+    "message": "new return",
+    "description": "The label for category Nuovo rientro in sidebar subcontractor"
+  },
+  "sidebar.subcontractor.category.stampe": {
+    "message": "Ispisi",
+    "description": "The label for category stampe in sidebar subcontractor"
+  },
+  "sidebar.subcontractor.category.Listini conto lavoro": {
+    "message": "Subcontractor price lists",
+    "description": "The label for category Listini conto lavoro in sidebar subcontractor"
+  },
+  "sidebar.projectManagement.category.Gestione progetti": {
+    "message": "Project management",
+    "description": "The label for category Gestione progetti in sidebar projectManagement"
+  },
+  "sidebar.projectManagement.category.Nuovi progetti": {
+    "message": "new Project",
+    "description": "The label for category Nuovi progetti in sidebar projectManagement"
+  },
+  "sidebar.projectManagement.category.Stampe": {
+    "message": "Ispisi",
+    "description": "The label for category Stampe in sidebar projectManagement"
+  },
+  "sidebar.projectManagement.category.Anagrafiche": {
+    "message": "Šifarnici",
+    "description": "The label for category Anagrafiche in sidebar projectManagement"
+  },
+  "sidebar.projectManagement.category.Dipendente": {
+    "message": "Zaposlenik",
+    "description": "The label for category Dipendente in sidebar projectManagement"
+  },
+  "sidebar.projectManagement.category.Gestione calendari": {
+    "message": "Upravljanje kalendarom",
+    "description": "The label for category Gestione calendari in sidebar projectManagement"
+  },
+  "sidebar.projectManagement.category.Richieste interventi": {
+    "message": "Intervention requests",
+    "description": "The label for category Richieste interventi in sidebar projectManagement"
+  },
+  "sidebar.projectManagement.category.Interventi pianificati": {
+    "message": "Planned intervention",
+    "description": "The label for category Interventi pianificati in sidebar projectManagement"
+  },
+  "sidebar.projectManagement.category.Interventi": {
+    "message": "Intervencija",
+    "description": "The label for category Interventi in sidebar projectManagement"
+  },
+  "sidebar.projectManagement.category.Nuovo intervento": {
+    "message": "New intervention",
+    "description": "The label for category Nuovo intervento in sidebar projectManagement"
+  },
+  "sidebar.projectManagement.category.Procedure": {
+    "message": "Procedure",
+    "description": "The label for category Procedure in sidebar projectManagement"
+  },
+  "sidebar.projectManagement.category.Attività": {
+    "message": "Aktivnost",
+    "description": "The label for category Attività in sidebar projectManagement"
+  },
+  "sidebar.projectManagement.category.Stato avanzamento lavori": {
+    "message": "Stanje Napretka Radova",
+    "description": "The label for category Stato avanzamento lavori in sidebar projectManagement"
+  },
+  "sidebar.quality.category.Controllo articoli": {
+    "message": "Item control",
+    "description": "The label for category Controllo articoli in sidebar quality"
+  },
+  "sidebar.quality.category.Schede tecniche": {
+    "message": "Data sheets",
+    "description": "The label for category Schede tecniche in sidebar quality"
+  },
+  "sidebar.quality.category.Procedure": {
+    "message": "Procedure",
+    "description": "The label for category Procedure in sidebar quality"
+  },
+  "sidebar.quality.category.piani di controllo": {
+    "message": "Control plans",
+    "description": "The label for category piani di controllo in sidebar quality"
+  },
+  "sidebar.quality.category.Stampe": {
+    "message": "Ispisi",
+    "description": "The label for category Stampe in sidebar quality"
+  },
+  "sidebar.quality.category.Certificati": {
+    "message": "Certificates",
+    "description": "The label for category Certificati in sidebar quality"
+  },
+  "sidebar.quality.category.Certificati personale": {
+    "message": "Employee Certificates",
+    "description": "The label for category Certificati personale in sidebar quality"
+  },
+  "sidebar.quality.category.Reclami e non conformità": {
+    "message": "Complaints and non-compliance",
+    "description": "The label for category Reclami e non conformità in sidebar quality"
+  },
+  "sidebar.quality.category.Reclami": {
+    "message": "Complaints",
+    "description": "The label for category Reclami in sidebar quality"
+  },
+  "sidebar.quality.category.non conformità": {
+    "message": "non-compliance",
+    "description": "The label for category non conformità in sidebar quality"
+  },
+  "sidebar.controlling.category.Controlling obsoleto": {
+    "message": "Kontroling",
+    "description": "The label for category Controlling obsoleto in sidebar controlling"
+  },
+  "sidebar.controlling.category.Bilancio": {
+    "message": "Bilanca",
+    "description": "The label for category Bilancio in sidebar controlling"
+  },
+  "sidebar.controlling.category.Nuova comparazione": {
+    "message": "Nova usporedba ",
+    "description": "The label for category Nuova comparazione in sidebar controlling"
+  },
+  "sidebar.controlling.category.Stampe": {
+    "message": "Izvještaji",
+    "description": "The label for category Stampe in sidebar controlling"
+  },
+  "sidebar.controlling.category.Contabilità industriale": {
+    "message": "Troškovno računovodstvo",
+    "description": "The label for category Contabilità industriale in sidebar controlling"
+  },
+  "sidebar.controlling.category.Ricerca registrazioni": {
+    "message": "Pretraga zapisa",
+    "description": "The label for category Ricerca registrazioni in sidebar controlling"
+  },
+  "sidebar.controlling.category.Registrazione industriale": {
+    "message": "Analitički zapisi",
+    "description": "The label for category Registrazione industriale in sidebar controlling"
+  },
+  "sidebar.controlling.category.Visualizzazione conti industriali": {
+    "message": "Vizualizacija konta troška",
+    "description": "The label for category Visualizzazione conti industriali in sidebar controlling"
+  },
+  "sidebar.controlling.category.Allineamento registrazioni periodiche": {
+    "message": "Svrstavanje periodičnih zapisa",
+    "description": "The label for category Allineamento registrazioni periodiche in sidebar controlling"
+  },
+  "sidebar.controlling.category.Chiusure infrannuali": {
+    "message": "Polugodišnja zatvaranja",
+    "description": "The label for category Chiusure infrannuali in sidebar controlling"
+  },
+  "sidebar.controlling.category.Crea chiusure infrannuali": {
+    "message": "Kreiraj polugodišnja zatvaranja",
+    "description": "The label for category Crea chiusure infrannuali in sidebar controlling"
+  },
+  "sidebar.controlling.category.Valori chiusure": {
+    "message": "Vrijednosti zatvaranja",
+    "description": "The label for category Valori chiusure in sidebar controlling"
+  },
+  "sidebar.controlling.category.Consolidamento": {
+    "message": "Konsolidacija",
+    "description": "The label for category Consolidamento in sidebar controlling"
+  },
+  "sidebar.controlling.category.Creazione ripartizione costi": {
+    "message": "Kreiranje distribucije troškova",
+    "description": "The label for category Creazione ripartizione costi in sidebar controlling"
+  },
+  "sidebar.controlling.category.Ripresa ammortamento cespiti": {
+    "message": "Povrat amortizacije osnovnog sredstva",
+    "description": "The label for category Ripresa ammortamento cespiti in sidebar controlling"
+  },
+  "sidebar.controlling.category.Valorizzazione area acquisti e vendite": {
+    "message": "Valorizacija prodaje i nabave",
+    "description": "The label for category Valorizzazione area acquisti e vendite in sidebar controlling"
+  },
+  "sidebar.controlling.category.Budget": {
+    "message": "Budžet",
+    "description": "The label for category Budget in sidebar controlling"
+  },
+  "sidebar.controlling.category.Gestione budget": {
+    "message": "Upravljanje budžetom",
+    "description": "The label for category Gestione budget in sidebar controlling"
+  },
+  "sidebar.controlling.category.Analisi scostamenti": {
+    "message": "Analiza varijanci",
+    "description": "The label for category Analisi scostamenti in sidebar controlling"
+  },
+  "sidebar.controlling.category.Registrazioni extracontabili di chiusura": {
+    "message": "Registrazioni extracontabili di chiusura",
+    "description": "The label for category Registrazioni extracontabili di chiusura in sidebar controlling"
+  },
+  "sidebar.controlling.category.procedure": {
+    "message": "procedure",
+    "description": "The label for category procedure in sidebar controlling"
+  },
+  "sidebar.controlling.category.contabilità gestionale": {
+    "message": "contabilità gestionale",
+    "description": "The label for category contabilità gestionale in sidebar controlling"
+  },
+  "sidebar.controlling.category.Registrazioni": {
+    "message": "Registrazioni",
+    "description": "The label for category Registrazioni in sidebar controlling"
+  },
+  "sidebar.controlling.category.prima nota": {
+    "message": "prima nota",
+    "description": "The label for category prima nota in sidebar controlling"
+  },
+  "sidebar.controlling.category.storico": {
+    "message": "storico",
+    "description": "The label for category storico in sidebar controlling"
+  },
+  "sidebar.controlling.category.visualizzazione": {
+    "message": "visualizzazione",
+    "description": "The label for category visualizzazione in sidebar controlling"
+  },
+  "sidebar.controlling.category.Budgeting": {
+    "message": "Budgeting",
+    "description": "The label for category Budgeting in sidebar controlling"
+  },
+  "sidebar.controlling.category.registrazioni extra contabili di budget": {
+    "message": "registrazioni extra contabili di budget",
+    "description": "The label for category registrazioni extra contabili di budget in sidebar controlling"
+  },
+  "sidebar.controlling.category.registrazioni di budget": {
+    "message": "registrazioni di budget",
+    "description": "The label for category registrazioni di budget in sidebar controlling"
+  },
+  "sidebar.controlling.category.Reporting": {
+    "message": "Reporting",
+    "description": "The label for category Reporting in sidebar controlling"
+  },
+  "sidebar.controlling.category.Riclassificazioni": {
+    "message": "Riclassificazioni",
+    "description": "The label for category Riclassificazioni in sidebar controlling"
+  },
+  "sidebar.controlling.category.modelli di riclassificazione": {
+    "message": "modelli di riclassificazione",
+    "description": "The label for category modelli di riclassificazione in sidebar controlling"
+  },
+  "sidebar.controlling.category.Comparazione riclassificazioni": {
+    "message": "Comparazione riclassificazioni",
+    "description": "The label for category Comparazione riclassificazioni in sidebar controlling"
+  },
+  "sidebar.controlling.category.Previsioni di vendita": {
+    "message": "Prodajne prognoze",
+    "description": "The label for category Previsioni di vendita in sidebar controlling"
+  },
+  "sidebar.controlling.category.Periodi": {
+    "message": "Periodi",
+    "description": "The label for category Periodi in sidebar controlling"
+  },
+  "sidebar.controlling.category.previsioni di vendita": {
+    "message": "Prodajne prognoze",
+    "description": "The label for category previsioni di vendita in sidebar controlling"
+  },
+  "sidebar.controlling.category.Famiglie prodotti": {
+    "message": "Famiglie prodotti",
+    "description": "The label for category Famiglie prodotti in sidebar controlling"
+  },
+  "sidebar.controlling.category.Costo prodotto": {
+    "message": "Costo prodotto",
+    "description": "The label for category Costo prodotto in sidebar controlling"
+  },
+  "sidebar.guide.category.Avviamento applicazione": {
+    "message": "Start application",
+    "description": "The label for category Avviamento applicazione in sidebar guide"
+  },
+  "sidebar.guide.category.Operare con i dati": {
+    "message": "Operare con i dati",
+    "description": "The label for category Operare con i dati in sidebar guide"
+  },
+  "sidebar.guide.category.Glossario": {
+    "message": "Glossary",
+    "description": "The label for category Glossario in sidebar guide"
+  },
+  "sidebar.guide.category.Pannelli laterali": {
+    "message": "Panel",
+    "description": "The label for category Pannelli laterali in sidebar guide"
+  },
+  "sidebar.guide.category.Form Navigator": {
+    "message": "Form Navigator",
+    "description": "The label for category Form Navigator in sidebar guide"
+  },
+  "sidebar.guide.category.Object Navigator": {
+    "message": "Object Navigator",
+    "description": "The label for category Object Navigator in sidebar guide"
+  },
+  "sidebar.guide.category.Status Bar": {
+    "message": "Status Bar",
+    "description": "The label for category Status Bar in sidebar guide"
+  },
+  "sidebar.guide.category.Applications": {
+    "message": "Applications",
+    "description": "The label for category Applications in sidebar guide"
+  },
+  "sidebar.guide.category.ARM": {
+    "message": "ARM",
+    "description": "The label for category ARM in sidebar guide"
+  },
+  "sidebar.guide.category.Business Layer": {
+    "message": "Business Layer",
+    "description": "The label for category Business Layer in sidebar guide"
+  },
+  "sidebar.guide.category.Data Sources": {
+    "message": "Data Sources",
+    "description": "The label for category Data Sources in sidebar guide"
+  },
+  "sidebar.guide.category.Datasource Object Form": {
+    "message": "Datasource Object Form",
+    "description": "The label for category Datasource Object Form in sidebar guide"
+  },
+  "sidebar.guide.category.User Interface Wizard": {
+    "message": "User Interface Wizard",
+    "description": "The label for category User Interface Wizard in sidebar guide"
+  },
+  "sidebar.guide.category.Dashboard Designer Wizard": {
+    "message": "Dashboard Designer Wizard",
+    "description": "The label for category Dashboard Designer Wizard in sidebar guide"
+  },
+  "sidebar.guide.category.BizLink": {
+    "message": "BizLink",
+    "description": "The label for category BizLink in sidebar guide"
+  },
+  "sidebar.guide.category.CRM": {
+    "message": "CRM",
+    "description": "The label for category CRM in sidebar guide"
+  },
+  "sidebar.financeArea.category.Calcolo Interessi": {
+    "message": "Calcolo Interessi",
+    "description": "The label for category Calcolo Interessi in sidebar financeArea"
+  },
+  "sidebar.financeArea.category.Gest. Autofattura Elettronica": {
+    "message": "Gest. Autofattura Elettronica",
+    "description": "The label for category Gest. Autofattura Elettronica in sidebar financeArea"
+  },
+  "sidebar.financeArea.category.Casi particolari e Regimi specifici": {
+    "message": "Casi particolari e Regimi specifici",
+    "description": "The label for category Casi particolari e Regimi specifici in sidebar financeArea"
+  },
+  "sidebar.erpHome.category.Anagrafiche": {
+    "message": "Šifarnici",
+    "description": "The label for category Anagrafiche in sidebar erpHome"
+  },
+  "sidebar.erpHome.category.Crea anagrafica": {
+    "message": "Kreiraj šifarnik",
+    "description": "The label for category Crea anagrafica in sidebar erpHome"
+  },
+  "sidebar.erpHome.category.Anagrafiche clienti/fornitori": {
+    "message": "Šifarnici klijenata/dobavljača",
+    "description": "The label for category Anagrafiche clienti/fornitori in sidebar erpHome"
+  },
+  "sidebar.erpHome.category.Crea nuovo articolo": {
+    "message": "Stvori novi artikl",
+    "description": "The label for category Crea nuovo articolo in sidebar erpHome"
+  },
+  "sidebar.erpHome.category.Anagrafica articolo": {
+    "message": "Šifarnik artikla",
+    "description": "The label for category Anagrafica articolo in sidebar erpHome"
+  },
+  "sidebar.erpHome.category.Cicli di lavoro": {
+    "message": "Radni ciklusi",
+    "description": "The label for category Cicli di lavoro in sidebar erpHome"
+  },
+  "sidebar.erpHome.category.Crea assieme": {
+    "message": "Stvori sklop",
+    "description": "The label for category Crea assieme in sidebar erpHome"
+  },
+  "sidebar.planning.category.Stampe": {
+    "message": "Ispisi",
+    "description": "The label for category Stampe in sidebar planning"
+  },
+  "sidebar.planning.category.CRP - Capacity Requirements Planning": {
+    "message": "CRP - Capacity Requirements Planning",
+    "description": "The label for category CRP - Capacity Requirements Planning in sidebar planning"
+  },
+  "sidebar.planning.category.Visualizzazione Gantt": {
+    "message": "Visualizzazione Gantt",
+    "description": "The label for category Visualizzazione Gantt in sidebar planning"
+  },
+  "sidebar.production.category.MRP": {
+    "message": "MRP",
+    "description": "The label for category MRP in sidebar production"
+  },
+  "sidebar.production.category.PP-Production in Progress": {
+    "message": "PP-Production in Progress",
+    "description": "The label for category PP-Production in Progress in sidebar production"
+  },
+  "sidebar.production.category.Ordini di Produzione": {
+    "message": "Ordini di Produzione",
+    "description": "The label for category Ordini di Produzione in sidebar production"
+  },
+  "sidebar.production.category.Fluentis MES": {
+    "message": "Fluentis MES",
+    "description": "The label for category Fluentis MES in sidebar production"
+  },
+  "sidebar.ddmrp.category.Anagrafiche": {
+    "message": "Šifarnici",
+    "description": "The label for category Anagrafiche in sidebar ddmrp"
+  },
+  "sidebar.ddmrp.category.Procedure": {
+    "message": "Procedure",
+    "description": "The label for category Procedure in sidebar ddmrp"
+  },
+  "sidebar.ddmrp.category.Forms e reports": {
+    "message": "Forms e reports",
+    "description": "The label for category Forms e reports in sidebar ddmrp"
+  },
+  "sidebar.crm.category.Home CRM": {
+    "message": "Home CRM",
+    "description": "The label for category Home CRM in sidebar crm"
+  },
+  "sidebar.crm.category.My CRM area": {
+    "message": "My CRM area",
+    "description": "The label for category My CRM area in sidebar crm"
+  },
+  "sidebar.crm.category.Visit report": {
+    "message": "Izvješća o Posjetama",
+    "description": "The label for category Visit report in sidebar crm"
+  },
+  "sidebar.crm.category.Contatti": {
+    "message": "Kontakti",
+    "description": "The label for category Contatti in sidebar crm"
+  },
+  "sidebar.crm.category.Nuovo contatto CRM": {
+    "message": "Novi kontakt CRM",
+    "description": "The label for category Nuovo contatto CRM in sidebar crm"
+  },
+  "sidebar.crm.category.Newsletter": {
+    "message": "Newsletter",
+    "description": "The label for category Newsletter in sidebar crm"
+  },
+  "sidebar.crm.category.Liste di distribuzione": {
+    "message": "Distribucijske liste",
+    "description": "The label for category Liste di distribuzione in sidebar crm"
+  },
+  "sidebar.crm.category.Template": {
+    "message": "Predložak",
+    "description": "The label for category Template in sidebar crm"
+  },
+  "sidebar.crm.category.Campagne Marketing": {
+    "message": "Marketinške Kampanje",
+    "description": "The label for category Campagne Marketing in sidebar crm"
+  },
+  "sidebar.crm.category.Opportunità": {
+    "message": "Prilika",
+    "description": "The label for category Opportunità in sidebar crm"
+  },
+  "sidebar.crm.category.Previsioni di vendita": {
+    "message": "Prodajne prognoze",
+    "description": "The label for category Previsioni di vendita in sidebar crm"
+  },
+  "sidebar.crm.category.Helpdesk": {
+    "message": "Helpdesk",
+    "description": "The label for category Helpdesk in sidebar crm"
+  },
+  "sidebar.purchase.category.Richiesta di offerta": {
+    "message": "Zahtjev za ponudu",
+    "description": "The label for category Richiesta di offerta in sidebar purchase"
+  },
+  "sidebar.purchase.category.Listini fornitori": {
+    "message": "Cjenik dobavljača",
+    "description": "The label for category Listini fornitori in sidebar purchase"
+  },
+  "sidebar.purchase.category.Gestione prezzi": {
+    "message": "Upravljanje cijenama",
+    "description": "The label for category Gestione prezzi in sidebar purchase"
+  },
+  "sidebar.sales.category.Nuova Offerta": {
+    "message": "Nova ponuda",
+    "description": "The label for category Nuova Offerta in sidebar sales"
+  },
+  "sidebar.sales.category.Nuovo Ordine": {
+    "message": "Nova narudžba",
+    "description": "The label for category Nuovo Ordine in sidebar sales"
+  },
+  "sidebar.sales.category.DDT di vendita": {
+    "message": "Otpremnica",
+    "description": "The label for category DDT di vendita in sidebar sales"
+  },
+  "sidebar.sales.category.Nuovo DDT": {
+    "message": "Nova otpremnica",
+    "description": "The label for category Nuovo DDT in sidebar sales"
+  },
+  "sidebar.sales.category.Nuova Fattura": {
+    "message": "Nova faktura",
+    "description": "The label for category Nuova Fattura in sidebar sales"
+  },
+  "sidebar.sales.category.Contabilizzazione": {
+    "message": "Knjiženje",
+    "description": "The label for category Contabilizzazione in sidebar sales"
+  },
+  "sidebar.sales.category.Nuovo POS": {
+    "message": "Unos malodrodajnog mjesta",
+    "description": "The label for category Nuovo POS in sidebar sales"
+  },
+  "sidebar.sales.category.Liquidazione agenti": {
+    "message": "Obračun trgovačkih predstavnika",
+    "description": "The label for category Liquidazione agenti in sidebar sales"
+  },
+  "sidebar.sales.category.Listini di vendita": {
+    "message": "Prodajni cjenik",
+    "description": "The label for category Listini di vendita in sidebar sales"
+  },
+  "sidebar.sales.category.Gestione prezzi": {
+    "message": "Upravljanje cijenama",
+    "description": "The label for category Gestione prezzi in sidebar sales"
+  },
+  "sidebar.logistics.category.Stampe gestionali": {
+    "message": "Izvještaji Upravljanja",
+    "description": "The label for category Stampe gestionali in sidebar logistics"
+  },
+  "sidebar.logistics.category.Inventari fisici": {
+    "message": "Fizička zaliha",
+    "description": "The label for category Inventari fisici in sidebar logistics"
+  },
+  "sidebar.logistics.category.Liste di prelievo UDC/Packing list": {
+    "message": "Liste preuzimanja/Packing liste",
+    "description": "The label for category Liste di prelievo UDC/Packing list in sidebar logistics"
+  },
+  "sidebar.logistics.category.Piani di carico": {
+    "message": "Planovi utovara",
+    "description": "The label for category Piani di carico in sidebar logistics"
+  },
+  "sidebar.logistics.category.WMS": {
+    "message": "WMS",
+    "description": "The label for category WMS in sidebar logistics"
+  },
+  "sidebar.logistics.category.Acquisti": {
+    "message": "Nabava",
+    "description": "The label for category Acquisti in sidebar logistics"
+  },
+  "sidebar.logistics.category.Logistica": {
+    "message": "Logistika",
+    "description": "The label for category Logistica in sidebar logistics"
+  },
+  "sidebar.logistics.category.UDC": {
+    "message": "Transportna jedinica",
+    "description": "The label for category UDC in sidebar logistics"
+  },
+  "sidebar.logistics.category.Vendita": {
+    "message": "Prodaja",
+    "description": "The label for category Vendita in sidebar logistics"
+  },
+  "sidebar.subcontractor.category.DDT di consegna": {
+    "message": "DDT di consegna",
+    "description": "The label for category DDT di consegna in sidebar subcontractor"
+  },
+  "sidebar.subcontractor.category.Inserimento DDT di consegna": {
+    "message": "Inserimento DDT di consegna",
+    "description": "The label for category Inserimento DDT di consegna in sidebar subcontractor"
+  },
+  "sidebar.subcontractor.category.Procedure testata": {
+    "message": "Procedure zaglavlja",
+    "description": "The label for category Procedure testata in sidebar subcontractor"
+  },
+  "sidebar.subcontractor.category.Procedure": {
+    "message": "Procedure",
+    "description": "The label for category Procedure in sidebar subcontractor"
+  },
+  "sidebar.subcontractor.category.Ricerca Rientri": {
+    "message": "Ricerca Rientri",
+    "description": "The label for category Ricerca Rientri in sidebar subcontractor"
+  },
+  "sidebar.subcontractor.category.Inserimento rientri": {
+    "message": "Inserimento rientri",
+    "description": "The label for category Inserimento rientri in sidebar subcontractor"
+  },
+  "sidebar.subcontractor.category.Registrazione rientri": {
+    "message": "Registrazione rientri",
+    "description": "The label for category Registrazione rientri in sidebar subcontractor"
+  },
+  "sidebar.subcontractor.category.Listini di conto lavoro": {
+    "message": "Listini di conto lavoro",
+    "description": "The label for category Listini di conto lavoro in sidebar subcontractor"
+  },
+  "sidebar.configurations.category.Parametri": {
+    "message": "Parametri",
+    "description": "The label for category Parametri in sidebar configurations"
+  },
+  "sidebar.configurations.category.Parametri generali": {
+    "message": "Parametri generali",
+    "description": "The label for category Parametri generali in sidebar configurations"
+  },
+  "sidebar.configurations.category.Tesoreria": {
+    "message": "Tesoreria",
+    "description": "The label for category Tesoreria in sidebar configurations"
+  },
+  "sidebar.configurations.category.Amministrazione": {
+    "message": "Amministrazione",
+    "description": "The label for category Amministrazione in sidebar configurations"
+  },
+  "sidebar.configurations.category.Produzione": {
+    "message": "Produzione",
+    "description": "The label for category Produzione in sidebar configurations"
+  },
+  "sidebar.configurations.category.Parametri ordini di produzione": {
+    "message": "Parametri ordini di produzione",
+    "description": "The label for category Parametri ordini di produzione in sidebar configurations"
+  },
+  "sidebar.configurations.category.Parametri MRP": {
+    "message": "Parametri MRP",
+    "description": "The label for category Parametri MRP in sidebar configurations"
+  },
+  "sidebar.configurations.category.Acquisti": {
+    "message": "Nabava",
+    "description": "The label for category Acquisti in sidebar configurations"
+  },
+  "sidebar.configurations.category.Vendite": {
+    "message": "Vendite",
+    "description": "The label for category Vendite in sidebar configurations"
+  },
+  "sidebar.configurations.category.Logistica": {
+    "message": "Logistika",
+    "description": "The label for category Logistica in sidebar configurations"
+  },
+  "sidebar.configurations.category.Parametri iniziali magazzino": {
+    "message": "Parametri iniziali magazzino",
+    "description": "The label for category Parametri iniziali magazzino in sidebar configurations"
+  },
+  "sidebar.configurations.category.Parametri carico/scarico": {
+    "message": "Parametri carico/scarico",
+    "description": "The label for category Parametri carico/scarico in sidebar configurations"
+  },
+  "sidebar.configurations.category.Gestione progetti": {
+    "message": "Gestione progetti",
+    "description": "The label for category Gestione progetti in sidebar configurations"
+  },
+  "sidebar.configurations.category.CRM": {
+    "message": "CRM",
+    "description": "The label for category CRM in sidebar configurations"
+  },
+  "sidebar.configurations.category.Qualità": {
+    "message": "Qualità",
+    "description": "The label for category Qualità in sidebar configurations"
+  },
+  "sidebar.configurations.category.Tabelle": {
+    "message": "Tabelle",
+    "description": "The label for category Tabelle in sidebar configurations"
+  },
+  "sidebar.configurations.category.Causali di contabilità generale": {
+    "message": "Causali di contabilità generale",
+    "description": "The label for category Causali di contabilità generale in sidebar configurations"
+  },
+  "sidebar.configurations.category.Inserimento causali di contabilità generale": {
+    "message": "Inserimento causali di contabilità generale",
+    "description": "The label for category Inserimento causali di contabilità generale in sidebar configurations"
+  },
+  "sidebar.configurations.category.Tipi solleciti": {
+    "message": "Tipi solleciti",
+    "description": "The label for category Tipi solleciti in sidebar configurations"
+  },
+  "sidebar.configurations.category.Controlling": {
+    "message": "Controlling",
+    "description": "The label for category Controlling in sidebar configurations"
+  },
+  "sidebar.configurations.category.Contabilità analitica": {
+    "message": "Contabilità analitica",
+    "description": "The label for category Contabilità analitica in sidebar configurations"
+  },
+  "sidebar.configurations.category.Contabilità gestionale": {
+    "message": "Contabilità gestionale",
+    "description": "The label for category Contabilità gestionale in sidebar configurations"
+  },
+  "sidebar.configurations.category.Contabilità industriale": {
+    "message": "Contabilità industriale",
+    "description": "The label for category Contabilità industriale in sidebar configurations"
+  },
+  "sidebar.configurations.category.Budgeting": {
+    "message": "Budgeting",
+    "description": "The label for category Budgeting in sidebar configurations"
+  },
+  "sidebar.configurations.category.Reporting": {
+    "message": "Reporting",
+    "description": "The label for category Reporting in sidebar configurations"
+  },
+  "sidebar.configurations.category.Previsionale": {
+    "message": "Previsionale",
+    "description": "The label for category Previsionale in sidebar configurations"
+  },
+  "sidebar.configurations.category.Costo prodotto / commessa": {
+    "message": "Costo prodotto / commessa",
+    "description": "The label for category Costo prodotto / commessa in sidebar configurations"
+  },
+  "sidebar.configurations.category.Tabelle modulo cash flow": {
+    "message": "Tabelle modulo cash flow",
+    "description": "The label for category Tabelle modulo cash flow in sidebar configurations"
+  },
+  "sidebar.configurations.category.Tabelle modulo Portafoglio effetti": {
+    "message": "Tabelle modulo Portafoglio effetti",
+    "description": "The label for category Tabelle modulo Portafoglio effetti in sidebar configurations"
+  },
+  "sidebar.configurations.category.Tabelle modulo DocFinance": {
+    "message": "Tabelle modulo DocFinance",
+    "description": "The label for category Tabelle modulo DocFinance in sidebar configurations"
+  },
+  "sidebar.configurations.category.Gestione Progetti": {
+    "message": "Gestione Progetti",
+    "description": "The label for category Gestione Progetti in sidebar configurations"
+  },
+  "sidebar.configurations.category.Impostazioni generali": {
+    "message": "Impostazioni generali",
+    "description": "The label for category Impostazioni generali in sidebar configurations"
+  },
+  "sidebar.configurations.category.Contatti": {
+    "message": "Kontakti",
+    "description": "The label for category Contatti in sidebar configurations"
+  },
+  "sidebar.configurations.category.Opportunità": {
+    "message": "Prilika",
+    "description": "The label for category Opportunità in sidebar configurations"
+  },
+  "sidebar.configurations.category.Ticket": {
+    "message": "Ticket",
+    "description": "The label for category Ticket in sidebar configurations"
+  },
+  "sidebar.configurations.category.Utilità": {
+    "message": "Utilità",
+    "description": "The label for category Utilità in sidebar configurations"
+  },
+  "sidebar.configurations.category.ExtraData": {
+    "message": "ExtraData",
+    "description": "The label for category ExtraData in sidebar configurations"
+  },
+  "sidebar.configurations.category.Template": {
+    "message": "Predložak",
+    "description": "The label for category Template in sidebar configurations"
+  },
+  "sidebar.projectManagement.category.Progetti": {
+    "message": "Projekti",
+    "description": "The label for category Progetti in sidebar projectManagement"
+  },
+  "sidebar.projectManagement.category.Nuovo Progetto": {
+    "message": "Novi projekt",
+    "description": "The label for category Nuovo Progetto in sidebar projectManagement"
+  },
+  "sidebar.projectManagement.category.Gestione Risorse": {
+    "message": "Upravljanje resursima",
+    "description": "The label for category Gestione Risorse in sidebar projectManagement"
+  },
+  "sidebar.projectManagement.category.Gestione Calendari": {
+    "message": "Upravljanje kalendarom",
+    "description": "The label for category Gestione Calendari in sidebar projectManagement"
+  },
+  "sidebar.projectManagement.category.Richieste di Intervento": {
+    "message": "Zahtjevi za intervenciju",
+    "description": "The label for category Richieste di Intervento in sidebar projectManagement"
+  },
+  "sidebar.projectManagement.category.Interventi Pianificati": {
+    "message": "Planirane intervencije",
+    "description": "The label for category Interventi Pianificati in sidebar projectManagement"
+  },
+  "sidebar.quality.category.Documenti di origine esterna": {
+    "message": "Documenti di origine esterna",
+    "description": "The label for category Documenti di origine esterna in sidebar quality"
+  },
+  "sidebar.quality.category.Documenti di origine interna": {
+    "message": "Documenti di origine interna",
+    "description": "The label for category Documenti di origine interna in sidebar quality"
+  },
+  "sidebar.quality.category.Controllo articolo": {
+    "message": "Controllo articolo",
+    "description": "The label for category Controllo articolo in sidebar quality"
+  },
+  "sidebar.quality.category.Piani di controllo": {
+    "message": "Piani di controllo",
+    "description": "The label for category Piani di controllo in sidebar quality"
+  },
+  "sidebar.quality.category.Certificati di Analisi": {
+    "message": "Certificati di Analisi",
+    "description": "The label for category Certificati di Analisi in sidebar quality"
+  },
+  "sidebar.quality.category.Non conformità": {
+    "message": "Non conformità",
+    "description": "The label for category Non conformità in sidebar quality"
+  },
+  "sidebar.quality.category.Azioni correttive": {
+    "message": "Azioni correttive",
+    "description": "The label for category Azioni correttive in sidebar quality"
+  },
+  "sidebar.quality.category.Taratura strumenti": {
+    "message": "Taratura strumenti",
+    "description": "The label for category Taratura strumenti in sidebar quality"
+  },
+  "sidebar.quality.category.Strumenti di misura": {
+    "message": "Strumenti di misura",
+    "description": "The label for category Strumenti di misura in sidebar quality"
+  },
+  "sidebar.controlling.category.Procedure": {
+    "message": "Procedure",
+    "description": "The label for category Procedure in sidebar controlling"
+  },
+  "sidebar.controlling.category.Contabilità gestionale": {
+    "message": "Contabilità gestionale",
+    "description": "The label for category Contabilità gestionale in sidebar controlling"
+  },
+  "sidebar.controlling.category.Prima nota": {
+    "message": "Prima nota",
+    "description": "The label for category Prima nota in sidebar controlling"
+  },
+  "sidebar.controlling.category.Storico gestionale": {
+    "message": "Storico gestionale",
+    "description": "The label for category Storico gestionale in sidebar controlling"
+  },
+  "sidebar.controlling.category.Visualizzazione": {
+    "message": "Visualizzazione",
+    "description": "The label for category Visualizzazione in sidebar controlling"
+  },
+  "sidebar.controlling.category.Parametri controlling": {
+    "message": "Parametri controlling",
+    "description": "The label for category Parametri controlling in sidebar controlling"
+  },
+  "sidebar.controlling.category.Panoramica Generale Controlling": {
+    "message": "Panoramica Generale Controlling",
+    "description": "The label for category Panoramica Generale Controlling in sidebar controlling"
+  },
+  "sidebar.controlling.category.Buget": {
+    "message": "Buget",
+    "description": "The label for category Buget in sidebar controlling"
+  },
+  "sidebar.controlling.category.Modelli di riclassificazione": {
+    "message": "Modelli di riclassificazione",
+    "description": "The label for category Modelli di riclassificazione in sidebar controlling"
+  },
+  "sidebar.controlling.category.Calcolo costo": {
+    "message": "Calcolo costo",
+    "description": "The label for category Calcolo costo in sidebar controlling"
+  },
+  "sidebar.guide.category.Funzionalità comuni": {
+    "message": "Funzionalità comuni",
+    "description": "The label for category Funzionalità comuni in sidebar guide"
+  },
+  "sidebar.guide.category.Campi comuni": {
+    "message": "Campi comuni",
+    "description": "The label for category Campi comuni in sidebar guide"
+  },
+  "sidebar.guide.category.Barra di stato": {
+    "message": "Barra di stato",
+    "description": "The label for category Barra di stato in sidebar guide"
+  },
+  "sidebar.applications.category.BizLink": {
+    "message": "BizLink",
+    "description": "The label for category BizLink in sidebar applications"
+  },
+  "sidebar.applications.category.Supervisor": {
+    "message": "Supervisor",
+    "description": "The label for category Supervisor in sidebar applications"
+  },
+  "sidebar.applications.category.Funzionalità": {
+    "message": "Funzionalità",
+    "description": "The label for category Funzionalità in sidebar applications"
+  },
+  "sidebar.applications.category.Attività": {
+    "message": "Attività",
+    "description": "The label for category Attività in sidebar applications"
+  },
+  "sidebar.applications.category.Task": {
+    "message": "Task",
+    "description": "The label for category Task in sidebar applications"
+  },
+  "sidebar.applications.category.Eventi": {
+    "message": "Eventi",
+    "description": "The label for category Eventi in sidebar applications"
+  },
+  "sidebar.applications.category.Liste di Distribuzione": {
+    "message": "Distribucijske liste",
+    "description": "The label for category Liste di Distribuzione in sidebar applications"
+  },
+  "sidebar.knowlegdeBase.category.Amministrativa": {
+    "message": "Amministrativa",
+    "description": "The label for category Amministrativa in sidebar knowlegdeBase"
+  },
+  "sidebar.knowlegdeBase.category.Home": {
+    "message": "Početna stranica",
+    "description": "The label for category Home in sidebar knowlegdeBase"
+  },
+  "sidebar.knowlegdeBase.category.Acquisti": {
+    "message": "Nabava",
+    "description": "The label for category Acquisti in sidebar knowlegdeBase"
+  },
+  "sidebar.knowlegdeBase.category.Vendite": {
+    "message": "Vendite",
+    "description": "The label for category Vendite in sidebar knowlegdeBase"
+  },
+  "sidebar.knowlegdeBase.category.Logistica": {
+    "message": "Logistika",
+    "description": "The label for category Logistica in sidebar knowlegdeBase"
+  },
+  "sidebar.knowlegdeBase.category.Produzione": {
+    "message": "Produzione",
+    "description": "The label for category Produzione in sidebar knowlegdeBase"
+  },
+  "sidebar.knowlegdeBase.category.Qualità": {
+    "message": "Qualità",
+    "description": "The label for category Qualità in sidebar knowlegdeBase"
+  },
+  "sidebar.video.category.Amministrativa": {
+    "message": "Amministrativa",
+    "description": "The label for category Amministrativa in sidebar video"
+  },
+  "sidebar.video.category.Home": {
+    "message": "Početna stranica",
+    "description": "The label for category Home in sidebar video"
+  },
+  "sidebar.video.category.Tesoreria": {
+    "message": "Tesoreria",
+    "description": "The label for category Tesoreria in sidebar video"
+  },
+  "sidebar.video.category.Acquisti": {
+    "message": "Nabava",
+    "description": "The label for category Acquisti in sidebar video"
+  },
+  "sidebar.video.category.Vendite": {
+    "message": "Vendite",
+    "description": "The label for category Vendite in sidebar video"
+  },
+  "sidebar.video.category.Logistica": {
+    "message": "Logistika",
+    "description": "The label for category Logistica in sidebar video"
+  },
+  "sidebar.video.category.Produzione": {
+    "message": "Produzione",
+    "description": "The label for category Produzione in sidebar video"
+  },
+  "sidebar.video.category.Qualità": {
+    "message": "Qualità",
+    "description": "The label for category Qualità in sidebar video"
+  },
+  "sidebar.releaseNotes.category.Versione 605": {
+    "message": "Versione 605",
+    "description": "The label for category Versione 605 in sidebar releaseNotes"
+  },
+  "sidebar.releaseNotes.category.Versione 606": {
+    "message": "Versione 606",
+    "description": "The label for category Versione 606 in sidebar releaseNotes"
+  },
+  "sidebar.releaseNotes.category.Versione 607": {
+    "message": "Versione 607",
+    "description": "The label for category Versione 607 in sidebar releaseNotes"
+  },
+  "sidebar.releaseNotes.category.Versione 608": {
+    "message": "Versione 608",
+    "description": "The label for category Versione 608 in sidebar releaseNotes"
+  },
+  "sidebar.erpHome.category.Dipendenti": {
+    "message": "Zaposlenici",
+    "description": "The label for category Dipendenti in sidebar erpHome"
+  },
+  "sidebar.erpHome.category.Consegne/Resi D.P.I.": {
+    "message": "Isporuke/povrati D.P.I.",
+    "description": "The label for category Consegne/Resi D.P.I. in sidebar erpHome"
+  },
+  "sidebar.erpHome.category.Corsi di formazione": {
+    "message": "Tečajevi obuke",
+    "description": "The label for category Corsi di formazione in sidebar erpHome"
+  },
+  "sidebar.planning.category.MPS - Master Production Schedule": {
+    "message": "MPS - Master Production Schedule",
+    "description": "The label for category MPS - Master Production Schedule in sidebar planning"
+  },
+  "sidebar.planning.category.MS - Master Scheduling": {
+    "message": "MS - Master Scheduling",
+    "description": "The label for category MS - Master Scheduling in sidebar planning"
+  },
+  "sidebar.production.category.Dichiarazioni": {
+    "message": "Dichiarazioni",
+    "description": "The label for category Dichiarazioni in sidebar production"
+  },
+  "sidebar.production.category.Production control": {
+    "message": "Production control",
+    "description": "The label for category Production control in sidebar production"
+  },
+  "sidebar.logistics.category.Automezzi": {
+    "message": "Motorna vozila",
+    "description": "The label for category Automezzi in sidebar logistics"
+  },
+  "sidebar.logistics.category.Consumo materiali": {
+    "message": "Potrošnja materijala",
+    "description": "The label for category Consumo materiali in sidebar logistics"
+  },
+  "sidebar.configurations.category.Dipendenti": {
+    "message": "Zaposlenici",
+    "description": "The label for category Dipendenti in sidebar configurations"
+  },
+  "sidebar.configurations.category.Parametri reclami e non conformità": {
+    "message": "Parametri reclami e non conformità",
+    "description": "The label for category Parametri reclami e non conformità in sidebar configurations"
+  },
+  "sidebar.configurations.category.D.P.I.": {
+    "message": "D.P.I.",
+    "description": "The label for category D.P.I. in sidebar configurations"
+  },
+  "sidebar.configurations.category.Mansioni": {
+    "message": "Mansioni",
+    "description": "The label for category Mansioni in sidebar configurations"
+  },
+  "sidebar.configurations.category.Corsi di formazione": {
+    "message": "Tečajevi obuke",
+    "description": "The label for category Corsi di formazione in sidebar configurations"
+  },
+  "sidebar.configurations.category.Generale": {
+    "message": "Generale",
+    "description": "The label for category Generale in sidebar configurations"
+  },
+  "sidebar.configurations.category.Controlli articolo": {
+    "message": "Controlli articolo",
+    "description": "The label for category Controlli articolo in sidebar configurations"
+  },
+  "sidebar.configurations.category.Documenti": {
+    "message": "Documenti",
+    "description": "The label for category Documenti in sidebar configurations"
+  },
+  "sidebar.configurations.category.Qualificazione fornitori": {
+    "message": "Qualificazione fornitori",
+    "description": "The label for category Qualificazione fornitori in sidebar configurations"
+  },
+  "sidebar.configurations.category.Reclami e Non conformità": {
+    "message": "Reclami e Non conformità",
+    "description": "The label for category Reclami e Non conformità in sidebar configurations"
+  },
+  "sidebar.configurations.category.Azioni correttive": {
+    "message": "Azioni correttive",
+    "description": "The label for category Azioni correttive in sidebar configurations"
+  },
+  "sidebar.configurations.category.Taratura strumenti": {
+    "message": "Taratura strumenti",
+    "description": "The label for category Taratura strumenti in sidebar configurations"
+  },
+  "sidebar.configurations.category.Previsioni di vendita": {
+    "message": "Prodajne prognoze",
+    "description": "The label for category Previsioni di vendita in sidebar configurations"
+  },
+  "sidebar.quality.category.Controlli articolo": {
+    "message": "Controlli articolo",
+    "description": "The label for category Controlli articolo in sidebar quality"
+  },
+  "sidebar.quality.category.Qualificazione fornitore": {
+    "message": "Qualificazione fornitore",
+    "description": "The label for category Qualificazione fornitore in sidebar quality"
+  },
+  "sidebar.releaseNotes.category.Versione 704": {
+    "message": "Versione 704",
+    "description": "The label for category Versione 704 in sidebar releaseNotes"
+  }
+}

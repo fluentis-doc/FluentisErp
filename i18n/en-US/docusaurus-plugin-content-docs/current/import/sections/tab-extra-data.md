@@ -1,0 +1,1 @@
+Here, the information entered in the *Entity Record > Extra Data tab* is proposed, only if default data exists.

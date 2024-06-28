@@ -1,0 +1,122 @@
+{
+  "title": {
+    "message": " ACADEMY",
+    "description": "The title in the navbar"
+  },
+  "item.label.Varie": {
+    "message": "Diverse",
+    "description": "Navbar item with label Varie"
+  },
+  "item.label.Strumenti": {
+    "message": "Instrumente",
+    "description": "Navbar item with label Strumenti"
+  },
+  "item.label.Configurazione": {
+    "message": "Configurări",
+    "description": "Navbar item with label Configurazione"
+  },
+  "item.label.Impostazioni": {
+    "message": "Setări",
+    "description": "Navbar item with label Impostazioni"
+  },
+  "item.label.Acquisti": {
+    "message": "Achiziții",
+    "description": "Navbar item with label Acquisti"
+  },
+  "item.label.Vendite": {
+    "message": "Vânzări",
+    "description": "Navbar item with label Vendite"
+  },
+  "item.label.Conto Lavoro": {
+    "message": "Sistem lohn",
+    "description": "Navbar item with label Conto Lavoro"
+  },
+  "item.label.Qualità": {
+    "message": "Calitate",
+    "description": "Navbar item with label Qualità"
+  },
+  "item.label.Home": {
+    "message": "Home",
+    "description": "Navbar item with label Home"
+  },
+  "item.label.Amministrativa": {
+    "message": "Administrativă",
+    "description": "Navbar item with label Amministrativa"
+  },
+  "item.label.Tesoreria": {
+    "message": "Trezorerie",
+    "description": "Navbar item with label Tesoreria"
+  },
+  "item.label.Controlling": {
+    "message": "Controlling",
+    "description": "Navbar item with label Controlling"
+  },
+  "item.label.Logistica": {
+    "message": "Logistică",
+    "description": "Navbar item with label Logistica"
+  },
+  "item.label.Pianificazione": {
+    "message": "Planificare",
+    "description": "Navbar item with label Pianificazione"
+  },
+  "item.label.Produzione": {
+    "message": "Producție",
+    "description": "Navbar item with label Produzione"
+  },
+  "item.label.Gestione progetti": {
+    "message": "Management proiecte",
+    "description": "Navbar item with label Gestione progetti"
+  },
+  "item.label.Knowlegde Base": {
+    "message": "Knowlegde Base",
+    "description": "Navbar item with label Knowlegde Base"
+  },
+  "item.label.Aree": {
+    "message": "Arii",
+    "description": "Navbar item with label Aree"
+  },
+  "item.label.Anagrafiche": {
+    "message": "Registre",
+    "description": "Navbar item with label Anagrafiche"
+  },
+  "item.label.Object Navigator": {
+    "message": "Object Navigator",
+    "description": "Navbar item with label Object Navigator"
+  },
+  "item.label.Context Panel": {
+    "message": "Context Panel",
+    "description": "Navbar item with label Context Panel"
+  },
+  "item.label.Form navigator": {
+    "message": "Form navigator",
+    "description": "Navbar item with label Form navigator"
+  },
+  "logo.alt": {
+    "message": "Logo",
+    "description": "The alt text of navbar logo"
+  },
+  "item.label.Release Notes": {
+    "message": "Release Notes",
+    "description": "Navbar item with label Release Notes"
+  },
+  "item.label.Formazione": {
+    "message": "Training",
+    "description": "Navbar item with label Formazione"
+  },
+  "item.label.FAQ": {
+    "message": "FAQ",
+    "description": "Navbar item with label FAQ"
+  },
+  "item.label.Video": {
+    "message": "Video",
+    "description": "Navbar item with label Video"
+  },
+  "item.label.DDMRP": {
+    "message": "DDMRP",
+    "description": "Navbar item with label DDMRP"
+  },
+  "item.label.CRM": {
+    "message": "CRM",
+    "description": "Navbar item with label CRM"
+  }
+}

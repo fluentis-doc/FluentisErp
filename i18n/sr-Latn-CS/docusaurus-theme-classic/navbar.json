@@ -1,0 +1,70 @@
+{
+  "title": {
+    "message": " ACADEMY",
+    "description": "The title in the navbar"
+  },
+  "item.label.Guida": {
+    "message": "Guida",
+    "description": "Navbar item with label Guida"
+  },
+  "item.label.Documenti": {
+    "message": "Documenti",
+    "description": "Navbar item with label Documenti"
+  },
+  "item.label.Area": {
+    "message": "Area",
+    "description": "Navbar item with label Area"
+  },
+  "item.label.Acquisti": {
+    "message": "Acquisti",
+    "description": "Navbar item with label Acquisti"
+  },
+  "item.label.Vendite": {
+    "message": "Vendite",
+    "description": "Navbar item with label Vendite"
+  },
+  "item.label.Conto Lavoro": {
+    "message": "Conto Lavoro",
+    "description": "Navbar item with label Conto Lavoro"
+  },
+  "item.label.Home": {
+    "message": "Home",
+    "description": "Navbar item with label Home"
+  },
+  "item.label.Amministrativa": {
+    "message": "Amministrativa",
+    "description": "Navbar item with label Amministrativa"
+  },
+  "item.label.Tesoreria": {
+    "message": "Tesoreria",
+    "description": "Navbar item with label Tesoreria"
+  },
+  "item.label.Controlling": {
+    "message": "Controlling",
+    "description": "Navbar item with label Controlling"
+  },
+  "item.label.Logistica": {
+    "message": "Logistica",
+    "description": "Navbar item with label Logistica"
+  },
+  "item.label.Pianificazione": {
+    "message": "Pianificazione",
+    "description": "Navbar item with label Pianificazione"
+  },
+  "item.label.Produzione": {
+    "message": "Produzione",
+    "description": "Navbar item with label Produzione"
+  },
+  "item.label.Gestione progetti": {
+    "message": "Gestione progetti",
+    "description": "Navbar item with label Gestione progetti"
+  },
+  "item.label.Quality": {
+    "message": "Quality",
+    "description": "Navbar item with label Quality"
+  },
+  "item.label.EAM": {
+    "message": "EAM",
+    "description": "Navbar item with label EAM"
+  }
+}

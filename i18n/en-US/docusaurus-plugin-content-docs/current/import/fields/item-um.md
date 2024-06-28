@@ -1,0 +1,1 @@
+**Unit of Measure**: The primary unit of measure for the item is proposed, but if alternative units of measure are coded in the item registry, the user has the option to choose another one.

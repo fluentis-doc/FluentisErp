@@ -1,0 +1,11 @@
+---
+title: PRODUCȚIE
+sidebar_position: 1
+---
+
+**Fluentis ERP** consente di gestire la Produzione e tutti i suoi aspetti operativi nelle aziende del settore Manifatturiero e Industriale che devono gestire situazioni, anche complesse, di preventivazione, consuntivazione costi, materiali ed attività.
+Gli algoritmi di **Fluentis** permettono di gestire tutti i processi aziendali interni ed esterni dell'intero ciclo di vita del prodotto, dalla preventivazione alla progettazione, all'approvvigionamento dei materiali e delle risorse produttive, alla Schedulazione della Produzione interna e/o in Conto Lavoro, alla Raccolta Dati di Produzione e Controllo costi, senza dimenticare il collegamento in ottica Industry 4.0 degli impianti di Produzione e Magazzini Automatici.
+
+In Fluentis ERP l'applicazione del modello MES è stata progettata implementando una numerosa serie di parametri, per la gestione integrata dei dati provenienti dai processi produttivi che influenzano in modo considerevole la redditività dell'azienda. Nel software MES di Fluentis possiamo notare come i documenti relativi agli ordini di produzione, effettivamente lanciati, ma non necessariamente esecutivi, definiscano la sequenza tramite la quale, in ciascun reparto, e ancora più in dettaglio in ogni centro di lavoro, si trovi la definizione di tutte le informazioni necessarie all'esecuzione dell'attività produttiva.
+I materiali, le fasi e sottofasi, gli attrezzaggi ed in genere tutta la documentazione a supporto è finalizzata a rendere l'esecuzione dell'attività il più automatizzata, organizzata e fluida possibile.
+L'algoritmo principale di un ERP specializzato in ambito Produzione è definito dal MRP, il sistema di pianificazione che si occupa di verificare la corretta allocazione dei materiali e delle risorse necessarie alla realizzazione dell'attività produttiva. L'algoritmo del MRP viene configurato in funzione di una serie corposa di parametri, al fine di adattarsi al meglio in funzione del tipo di realtà produttiva rappresentata dall'azienda.

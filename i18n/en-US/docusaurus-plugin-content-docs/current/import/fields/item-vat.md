@@ -1,0 +1,1 @@
+**VAT**: The VAT (Value Added Tax) rate prioritizes the value entered in the VAT field of the *Contact Record*. If this field is empty, the value from the *Item Record* is proposed. However, the user can manually enter a different value. This field is mandatory.
