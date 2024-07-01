@@ -8,13 +8,16 @@ const config = {
  
   //themes: ['@docusaurus/theme-mermaid'],
   title: 'Fluentis ERP - User Documentation',
-  url: 'https://docs.fluentis.com',
+  url: 'https://github.com',
   baseUrl: '/FluentisErp/',
+
+  organizationName: 'fluentis-doc', // Usually your GitHub org/user name.
+  projectName: 'FluentisErp', // Usually your repo name.
+  deploymentBranch: 'gh-pages',
+  trailingSlash: false,
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/fluentis-32x32px.png',
-  organizationName: 'Fluentis srl', // Usually your GitHub org/user name.
-  projectName: 'academy-FluentisErp', // Usually your repo name.
   i18n: {
     defaultLocale: 'it-IT',
     locales: ['en-US', 'fr-FR', 'hr-HR', 'it-IT', 'pt-PT', 'ro-RO'],  // , 'sr-Latn-CS', 'zh-CN'
