@@ -1,3 +1,5 @@
+[![build](https://github.com/fluentis-doc/FluentisErp/actions/workflows/test-deploy.yml/badge.svg?branch=main)](https://github.com/fluentis-doc/FluentisErp/actions/workflows/test-deploy.yml)
+
 # Website
 
 This website is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
