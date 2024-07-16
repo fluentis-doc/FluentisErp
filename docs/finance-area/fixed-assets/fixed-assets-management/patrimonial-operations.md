@@ -129,7 +129,7 @@ valore corrispondente alla quota del costo storico ceduto o distrutto.
 
 Situazione iniziale
 
-![](/img/it-it/finance-area/fixed-assets/fixed-assets-management/patrimonial-operations/selling1.PNG)
+![](/img/it-it/finance-area/fixed-assets/fixed-assets-management/patrimonial-operations/selling1.png)
 
 Per scaricare il cespite parzialmente inserire un importo negativo nella colonna del fondo per un valore
 corrispondente alla quota del fondo accantonato proporzionale al costo storico ceduto o distrutto.
