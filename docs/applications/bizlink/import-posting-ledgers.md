@@ -17,7 +17,7 @@ Altre righe = libro giornale
 
 Esempio
 
-![](/img/it-it/applications/bizlink/import-mov-contabili.png)
+![](/img/it-it/applications/bizlink/bizlink/import-mov-contabili.png)
 
 **Data Reg / Data Comp:** sono le date registrazione e competenza della testata registrazione contabile. 
 
