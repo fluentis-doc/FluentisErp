@@ -42,7 +42,7 @@ Una volta impostati questi dati, avremo la possibilità di eseguire il calcolo a
 
 Nel primo avremo i totali delle aliquote movimentate nei registri del margine di acquisto e vendita, dove per l’acquisto avremo l’esposizione delle percentuali relative di ripartizione:
 
-![](/img/it-it/finance-area/other/VATMargine5.png)
+![](/img/it-it/finance-area/other/vatmargine5.png)
 
 Nel secondo tab, invece, avremo l’elaborazione del calcolo del margine applicando le percentuali alle aliquote iva collegate alle aliquote d’acquisto:
 
