@@ -11,7 +11,7 @@ Ad esempio, nel caso in cui venga letto solo il codice di un'ubicazione, tramite
 > **Unità di misura**: indica l'unità di misura articolo;     
 > **Quantità**: indica la quantità che l'operatore può variare manualmente oppure tramite i pulsanti **+** e **-**;        
 > **Giacenza**: indica la giacenza dell'articolo;       
-> **Giacenza (FC)**: indica la giacenza espressa nell'unità di misura alternativa, ma calcolata con il fattore di conversione; l'unità di misura alternativa utilizzata sarà quella con il flag UM default attivo nel tab [Unità di misura alternative dell'anagrafica articolo](/erp-home/registers/items/create-new-items/item-registry/alternative-um);             
+> **Giacenza (FC)**: indica la giacenza espressa nell'unità di misura alternativa, ma calcolata con il fattore di conversione; l'unità di misura alternativa utilizzata sarà quella con il flag UM default attivo nel tab [Unità di misura alternative dell'anagrafica articolo](/docs/erp-home/registers/items/create-new-items/item-registry/alternative-um);             
 > **Lotto**: indica il lotto dell'articolo;       
 > **Descrizione articolo**: indica la descrizione dell'articolo.    
 
@@ -21,7 +21,7 @@ Mentre, leggendo l'articolo da rettificare, tramite il pulsante **Ricerca** verr
 > **Unità di misura**: indica l'unità di misura articolo;     
 > **Quantità**: indica la quantità che l'operatore può variare manualmente oppure tramite i pulsanti **+** e **-**;        
 > **Giacenza**: indica la giacenza dell'articolo;       
-> **Giacenza (FC)**: indica la giacenza espressa nell'unità di misura alternativa, ma calcolata con il fattore di conversione; l'unità di misura alternativa utilizzata sarà quella con il flag UM default attivo nel tab [Unità di misura alternative dell'anagrafica articolo](/erp-home/registers/items/create-new-items/item-registry/alternative-um);             
+> **Giacenza (FC)**: indica la giacenza espressa nell'unità di misura alternativa, ma calcolata con il fattore di conversione; l'unità di misura alternativa utilizzata sarà quella con il flag UM default attivo nel tab [Unità di misura alternative dell'anagrafica articolo](/docs/erp-home/registers/items/create-new-items/item-registry/alternative-um);             
 > **Lotto**: indica il lotto dell'articolo;       
 
 A questo punto l'operatore non dovrà far altro che variare la quantità manualmente, modificando il valore direttamente in griglia, oppure tramite i pulsanti **+** e **-**; dopo di che con la pressione del pulsante **Conferma** verranno creati i relativi movimenti di rettifica positivi o negativi.
