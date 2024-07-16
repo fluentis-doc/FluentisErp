@@ -28,8 +28,8 @@ Definire un codice ed una descrizione per il nuovo log specifico e quindi, nella
 
 Definendo l'oggetto verranno visualizzate le proprietà relative e potranno essere selezionate con il flag quelle da tenere monitorate al fine di tracciare le modifiche o le cancellazioni.
 
-![](/static/img/it-it/applications/audittrail/audittrail.PNG)
-
+![](/img/it-it/applications/audittrail/audittrail.png)
+![](/img/it-it/finance-area/declarations/declarations/electronic-invoice-for-foreign/image01.png)
 
 Per **interrogare il LOG** aprire **Audit Trail**:
 
@@ -38,6 +38,6 @@ Nella form se viene premuto semplicemente **Ricerca** saranno visualizzate tutte
 Al fine di visualizzare il dettaglio e dunque il dato prima e dopo la modifica, **occorre selezionare** nella zona di testata, sia il tipo di LOG precedentemente configurato attraverso il campo **Registro eventi**, sia l'**Oggetto**.
 
 
-![](/static/img/it-it/applications/audittrail/audittrail2.PNG)
+![](/img/it-it/applications/audittrail/audittrail2.png)
 
 
