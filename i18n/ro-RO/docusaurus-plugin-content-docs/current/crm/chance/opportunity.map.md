@@ -16,4 +16,3 @@ Dând clic pe Indicator, într-o fereastră pop-up se vor afișa următoarele in
 - Calitatea contactului;
 - Valoarea oportunității;
 - Adresa de contact.
-```
