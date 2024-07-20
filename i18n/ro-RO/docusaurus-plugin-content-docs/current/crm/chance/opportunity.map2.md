@@ -1,4 +1,3 @@
-```yaml
 ---
 title: Hartă oportunități CRM
 sidebar_position: 3
