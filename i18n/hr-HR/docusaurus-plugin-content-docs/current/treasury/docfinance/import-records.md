@@ -21,7 +21,7 @@ Se per qualsiasi motivo l'id della partita non corrisponde a quello presente nel
 
 
 :::note Info
-[Link alle specifiche tecniche **Docfinance**](/pdf/it-IT/TRACCIATI_DocFinance_28_Luglio_2021.pdf)
+[Link alle specifiche tecniche **Docfinance**](/pdf/it-it/TRACCIATI_DocFinance_28_Luglio_2021.pdf)
 :::
 
 
