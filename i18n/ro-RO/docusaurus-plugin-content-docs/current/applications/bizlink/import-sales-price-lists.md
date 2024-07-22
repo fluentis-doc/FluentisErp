@@ -122,7 +122,7 @@ Unitate de măsură:
 
 Descriere: reprezintă codul unității de măsură utilizate pentru articolul analizat
 
-*Exemplu*: *cm* corespunde la centimetri, *UDI* corespunde la palet
+*Exemplu*: *cm* corespunde la centimetri, *UDI* corespunde la UdI
 
 -        Mapping table/coloană: select MBUM_Codice from MB_UnitaMisura
 

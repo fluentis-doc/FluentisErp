@@ -13,6 +13,6 @@ Acest tab permite inserarea diverselor greutăți și dimensiuni ale articolului
 
 **Greutăte**: secțiunea permite alegerea unității de măsură a greutății articolului și inserarea informațiilor în câmpurile inferioare (greutate brută, greutate netă și specifică).
 
-**Tip palet**: permite definirea modulului de ambalare a articolului (pe paleți, europalete etc.) iar numărul de articole pe palet poate fi indicat în câmpul inferior. Pe baza tipului UdI și a articolelor pentru tipul UdI, la crearea planurilor de încărcare, va fi posibilă calcularea automată a cantităților și ambalajelor pentru pregătirea camioanelor.
+**Tip UdI**: permite definirea modulului de ambalare a articolului (pe paleți, europalete etc.) iar numărul de articole pe UdI poate fi indicat în câmpul inferior. Pe baza tipului UdI și a articolelor pentru tipul UdI, la crearea planurilor de încărcare, va fi posibilă calcularea automată a cantităților și ambalajelor pentru pregătirea camioanelor.
 
 **Număr colete**: permite gestionarea numărului de colete din documente; pot fi gestionate fie pe baza numărului de articole prezente într-un colet, fie pe numărul de colete care formează articolul prin activarea parametrului pe care doriți să îl utilizați pentru acest calcul; procedând astfel, calculul numărului de colete va fi raportat automat în documente.

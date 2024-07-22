@@ -24,7 +24,7 @@ Poate fi activat și doar unul dintre cei doi parametri. În plus, se poate acti
 
 **Valorizează pe gestiune**: dacă este activ, închiderea de gestiune va ține cont de costurile medii (sau ultime sau standard în funcție de tipul de cost care va fi utilizat pentru închiderea de gestiune) asociate înregistrărilor efectuate în cursul anului, în fiecare gestiune. Acest lucru înseamnă că, dacă un articol a avut înregistrări în 3 gestiuni, de exemplu, în cazul parametrului activ va avea 3 linii diferite în *istoric gestiune* pentru anul pentru care se efectuează închiderea, probabil cu 3 costuri medii și 3 costuri ultime diferite.
 
-**Permite modificarea conturilor articolelor deja utilizate**: permite modificarea datelor din *Facturare achiziții* și *Facturare  vânzări* pentru articolele care au avut deja înregistrări de gestiune. Dacă flagul este dezactivat, această modificare nu este permisă. 
+**Permite modificarea conturilor articolelor deja utilizate**: permite modificarea datelor din *Facturare achiziții* și *Facturare vânzări* pentru articolele care au avut deja înregistrări de gestiune. Dacă flagul este dezactivat, această modificare nu este permisă. 
 
 **Gestionare stare ciclu de lucru cu Workflow**: dacă este activ, stare ciclului de lucru se poate modifica doar cu ajutorul Workflow-ului.
 
@@ -39,6 +39,11 @@ Poate fi activat și doar unul dintre cei doi parametri. În plus, se poate acti
 **Loturi și numere de serie obligatorii**: dacă este activ, obligă utilizatorul să insereze, în toate documentele de achiziție și vânzare, lotul articolului inserat în documentul însuși, doar dacă articolul este gestionat pe loturi sau numere seriale.
 
 **Gestiune obligatorie pentru articolele gestionate cu loturi**: impune utilizatorului să insereze, în documentele de descărcare, gestiunea și șablonul de descărcare înaintea selectării lotului care va fi descărcat. Sau utilizatorul poate decide să descarce, în același articol al documentului, un lot dintr-o gestiune și un alt lot dintr-o altă gestiune, nemaiavând necesitatea de a insera din care gestiune vor fi descărcate loturilor la nivelul liniei documentului. 
+
+**Usa barcode movimenti**: se attivo, nelle righe dei movimenti di magazzino viene visualizzata la colonna **Barcode**.   
+Sigur, iată traducerea în română:
+
+**Utilizare barcode înregistrări**: dacă este activ, în înregistrările de gestiune se afișează coloana **Cod de bare**.
 
 ## Parametri închidere
 
@@ -63,8 +68,6 @@ Poate fi activat și doar unul dintre cei doi parametri. În plus, se poate acti
 
 În acest tab se pot insera depozitele pentru care se poate gestiona *Stocul negativ*. 
 
-**Calcul stoc pe articol, gestiune**: stocurile de gestiune pot fi afișate pe baza parametrilor inserați aici; deci se poate obține un calcul precis al stocurilor pe variantă/locație/lot/comandă sau client/furnizor în funcție de opțiunile active.
-
 **Permite stoc negativ**: în cazul în care flag-ul nu este activat, sistemul nu permite salvarea înregistrărilor de gestiune sau a operațiilor de descărcare care au ca rezultat stoc zero pentru orice articol. Menționăm că în cazul în care articolul este gestionat pe loturi sau numere seriale, activarea acestui flag nu oferă posibilitatea de a avea acest articol cu stoc zero deoarece articolul gestionat pe loturi sau numere seriale nu poate fi niciodată descărcat dacă stocul lotului sau numărului serial care se descarcă nu există. 
 
 *Pot fi activate următoarele opțiuni pentru fiecare depozit*:	
@@ -73,6 +76,6 @@ Poate fi activat și doar unul dintre cei doi parametri. În plus, se poate acti
 
 **Stoc locație**: permite verificarea stocului și pentru locația specificată în înregistrare (dacă stocul pentru locația respectivă nu este suficient, înregistrarea nu este creată);
 
-**Stoc comandă**: permite verificarea stocului și pentru comanda(proiectul) specificată în înregistrare (în cazul în care stocul pentru comanda respectivă nu este suficient, mișcarea nu este creată);   
+**Stoc proiect**: permite verificarea stocului și pentru comanda(proiectul) specificată în înregistrare (în cazul în care stocul pentru comanda respectivă nu este suficient, mișcarea nu este creată);   
 
 **Stoc client/furnizor**: pentru verificarea stocului și pentru clientul/furnizorul specificat în înregistrare (în cazul în care stocul pentru acel client/furnizor nu este suficient, mișcarea nu este creată. Poate fi utilizat pentru depozitele terților).

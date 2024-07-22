@@ -29,7 +29,7 @@ Parametrii facturilor de achiziţie permit setarea de bază pentru gestionarea c
 
 **Utilizează articolul furnizor**: dacă este activ, câmpul pentru introducerea codului articolului furnizorului este propus în gridul articolelor documentului. Dacă nu este activ, acest câmp nu va fi vizibil; 
 
-**Verifică articole în epuizare**: dacă este activ, sistemul verifică disponibilitatea articolelor pe linia facturii și avertizează dacă articolul se epuizează; 
+**Verifică articole în epuizare**: dacă este activ, sistemul verifică disponibilitatea articolelor din facturpă avertizează dacă articolul se epuizează, și anume dacă în [registrul articolului](/docs/erp-home/registers/items/create-new-items/item-registry/generality) este activat flagul *În epuizare*.
 
 **Contabilizare ambalaje**: permite contabilizarea, în contabilitatea generală, și a liniilor cu articole cu natura Ambalaj care, de obicei, sunt gestionare pentru a verifica stocurile ambalajelor care se returnează. 
 
@@ -39,7 +39,7 @@ Parametrii facturilor de achiziţie permit setarea de bază pentru gestionarea c
 
 **Creează înregistrarea cu data documentului**: dacă este activ, înregistrarea de gestiune este creată cu aceeaşi dată pe care o are factura de achiziţie; nu va fi necesară inserarea datei înregistrării în fereastra de încărcare. 
 
-**Prioritate gestiune şi şabloane de încărcare**: dacă este activ, gestiunea şi şablonul de încărcare sunt citite din liniile facturii de achiziţie şi, dacă nu există, din parametrii ferestrei de încărcare; dacă nu este setat sunt utilizate gestiunea şi şablonul inserate în această fereastră de parametri. 
+**Prioritate gestiune şi şabloane de încărcare**: dacă este activ, în momentul înregistrării facturii în depozit sunt utilizate valorile setate în câmpurile **Gestiune** și **Șablon de gestiune**. Dacă flagul nu este activ, gestiunea și șablonul de încărcare sunt preluate din liniile facturii. În cazul în care acestea nu sunt indicate, nu va fi posibilă efectuarea Încărcării automate din factura de achiziție, dar se poate utiliza procedura de [Încărcare facturi de achiziție în gestiune](/docs/purchase/purchase-invoices/procedures/purchase-invoices-load-on-warehouse/) selectând flagul "*Acceptă ca gestiune și șablon următoarele date:*" în tab *Parametri* indicând *Gestiunea* și *Șablonul* de utilizat.
 
 **Aviz articole fictive**: dacă este activ, în timpul încărcării facturii, programul controlează dacă în factură sunt prezente articole fictive; dacă acestea există, este lansat un mesaj pentru confirmarea încărcării facturii. 
 

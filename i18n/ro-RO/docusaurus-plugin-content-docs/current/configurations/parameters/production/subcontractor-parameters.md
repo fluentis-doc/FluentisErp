@@ -56,7 +56,7 @@ Posibilitățile sunt:
 
 ### Gestiuni
 
-**Livrare materiale către terți**  
+**Livrare materiale la terți**  
 În secțiune se inserează gestiunea și șablonul care trebuie să fie considerate pentru descărcarea materialelor destinate terților. Deci, gestiunea inserată este cea din care vor fi descărcate materialele inserate în tab [Materiale de livrat](/docs/subcontractor/subcontractor-orders/insert-subcontractor-orders/materials) al ordinului în sistem lohn.
 
 **Încărcare materiale la terți**  
@@ -70,6 +70,9 @@ Posibilitățile sunt:
 
 **Reintrare produs W.I.P.**  
 În secțiune se inserează gestiunea și șablonul care trebuie să fie considerate pentru încărcarea produselor finite (sau semifabricate) pe care terții le-au realizat. Deci, gestiunea inserată este cea în care vor fi încărcate articolele inserate în tab *Articole reintrate* din *Reintrări în sistem lohn*.
+
+**Reintrare articol finit**  
+În această secțiune se inserează gestiunea și șablonul care trebuie luate în considerare pentru încărcarea produselor finite/semifabricatelor realizate de terți. Aceasta va fi utilizată în cazul în care faza externă este ultima fază a ciclului de lucru. Astfel, gestiunea setată este cea în care vor fi încărcate articolele introduse în tab *Articole* din *Reintrare sistem lohn*.
 
 **Materiale restituit**  
 În secțiunea se inserează gestiunea și șablonul care trebuie să fie considerate pentru încărcarea materialelor restituite. Deci, gestiunea inserată este cea în care vor fi încărcate articolele inserate în tab *Materiale utilizate* din *Reintrări în sistem lohn* și căruia i-a fost asociată cantitatea restituită.

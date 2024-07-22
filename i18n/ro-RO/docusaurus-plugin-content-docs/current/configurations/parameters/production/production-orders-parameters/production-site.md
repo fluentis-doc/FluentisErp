@@ -3,7 +3,13 @@ title: Locație producție
 sidebar_position: 3
 ---
 
-.
+Tabelul permite gestionarea codificării diferitelor tipuri de *Locație de producție*.
+
+Permite inserarea noilor înregistrări sau căutarea celor deja existente pentru a le vizualiza, modifica sau șterge.
+
+**Căutare Sit Producție**
+
+Formularul este compus dintr-o zonă de filtrare și una de rezultate. Odată ce toți filtrele dorite sunt setate, va fi suficient să faceți clic pe butonul **Căutare** pentru a vizualiza rezultatele în grila de rezultate.
 
 ### Modificare locații de producție
 

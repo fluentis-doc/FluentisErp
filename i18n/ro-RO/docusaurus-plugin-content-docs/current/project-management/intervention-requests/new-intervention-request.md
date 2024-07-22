@@ -67,7 +67,7 @@ In questa tab è presente la stima del Progetto collegato alla Richiesta di inte
 
 **Unità di misura**: indica l’unità di misura da considerare per la quantificazione;
 
-**Listino di vendita**: contiene un eventuale [Listino](/docs/sales/sales-price-list/search-sales-price-list/) da considerare;
+**Listino di vendita**: contiene un eventuale [Listino](/docs/sales/sales-price-list/insert-sales-price-list/) da considerare;
 
 **Quantità**: viene indicata la quantità di unità necessaria;
 

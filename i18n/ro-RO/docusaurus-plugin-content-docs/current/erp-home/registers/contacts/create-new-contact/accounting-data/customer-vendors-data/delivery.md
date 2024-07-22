@@ -8,7 +8,7 @@ Acest form permite definirea listei cu destinațiile mărfurilor și caracterist
 
 Pentru fiecare destinatar se poate asocia **Zona** și **Zona livrării** de referință.
 
-**Listă destinații**: în grid se inserează N posibile destinații pentru acel destinatar, care, la rândul lor, pot avea o valoare implicită de propus, o mașină implicită, un palet (unitate de încărcare) și o zonă de livrare. Deci se poate crea o triangulație: vând la titularul registrului și livrez la un anumit depozit al unui destinatar terț.
+**Listă destinații**: în grid se inserează N posibile destinații pentru acel destinatar, care, la rândul lor, pot avea o valoare implicită de propus, o mașină implicită, un UdI (unitate de încărcare) și o zonă de livrare. Deci se poate crea o triangulație: vând la titularul registrului și livrez la un anumit depozit al unui destinatar terț.
 
 În secțiunea inferioară se pot insera: **Tipul expediției** (via terra/mare/tir etc.), tipul ambalajului și modalitatea de transport (toate aceste câmpuri, cu eventualele note care vor fi preluate în documente).
 

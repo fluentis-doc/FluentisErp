@@ -1,29 +1,25 @@
 ---
-title: Parametri gestione del personale
+title: Parametri gestionare angajați
 sidebar_position: 1
 ---
 
-I parametri si trovano sul percorso **Parametri > Dipendenti > Parametri gestione del personale**.
+Parametrii de gestionare a personalului se găsesc pe calea **Parametri > Angajați > Parametri gestionare angajați**.   
+Aceste date sunt esențiale pentru diverse gestiuni ale companiei, în special pentru gestionarea cursurilor de formare și gestionarea echipamentelor individuale de protecție (EIP).
 
-I dati presenti in questa gestione sono utilizzati per proporre informazioni nelle gestioni:   
-> **Corsi base** - nei *dati di testata*;   
-> **Corsi di formazione** - nei *dati di testata*;   
-> **Consegne/Resi D.P.I.** - nelle stampe di *Scheda consegna D.P.I.* e *Scheda reso D.P.I.*.   
 
-**Salvataggio dei Parametri gestione del personale**
+Informațiile prezente în parametrii de gestionare a personalului sunt utilizate pentru:  
+- **Cursuri de bază**: în datele din antet.
+- **Cursuri de formare**: în datele din antet.
+- **Livrări/Returnări EIP**: în raportul *Fișă livrare EIP* și *Fișă retur EIP*.
 
-Per poter memorizzare le informazioni modificate è necessario premere il pulsante **Salva**.   
+*Câmpuri specifice*
 
-*Campi specifici*: 
-    
-> expander **Corsi di formazione**
->> **Tipo corso base**: *Tipo corso base* da proporre all'inserimento di un *Corso base*.   
->> **Tipo corso di formazione**: *Tipo corso di formazione* da proporre all'inserimento di una *Corso di formazione*.   
+ **Cursuri de formare**   
+- **Tip curs de bază**: reprezintă tipul de curs de bază care va fi propus la introducerea unui *Curs de bază*.
+- **Tip curs de formare**: specifică tipul de curs de formare care va fi propus la introducerea unui *Curs de formare*.
 
-> expander **Gestione D.P.I.**
->> **Nota corpo scheda consegna**: annotazioni libere sull'argomento, vengono proposte nella stampa *Scheda consegna D.P.I.*.   
->> **Nota piè scheda consegna**: annotazioni libere sull'argomento, vengono proposte nella stampa *Scheda consegna D.P.I.*.   
->> **Nota corpo scheda reso**: annotazioni libere sull'argomento, vengono proposte nella stampa *Scheda reso D.P.I.*.   
->> **Nota piè scheda reso**: annotazioni libere sull'argomento, vengono proposte nella stampa *Scheda reso D.P.I.*.   
-
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+**Gestionare EIP**   
+- **Notă corp fișă livrare**: note libere pe acest subiect, propuse în raportul *Fișei de livrare EIP*.
+- **Notă subsol fișă livrare**: note libere pe acest subiect, propuse în raportul *Fișei de livrare EIP*.
+- **Notă corp fișă retur**: note libere pe acest subiect, propuse în raportul *Fișei de retur EIP*.
+- **Notă subsol fișă retur**: note libere pe acest subiect, propuse în raportul *Fișei de retur EIP*.

@@ -3,7 +3,7 @@ title: Caută transfer paleți
 sidebar_position: 2
 ---
 
-Această procedura a fost concepută pentru a permite utilizatorului să interogheze rapid gestiunea palet cu scopul de a ține sub control stocurile și pentru a avea, într-un timp de interogare minim, toate informațiile relative la paleți prezenți în gestiune și care au fost sau nu transferate între gestiuni.
+Această procedura a fost concepută pentru a permite utilizatorului să interogheze rapid gestiunea UdI cu scopul de a ține sub control stocurile și pentru a avea, într-un timp de interogare minim, toate informațiile relative la paleți prezenți în gestiune și care au fost sau nu transferate între gestiuni.
 
 RIBBON BAR: reprezinta meniul cu butoanele de executie, pentru fiecare operatie in parte aferentă fiecarei ferestre din aria in care se lucreaza. Lista functionalitatilor posibile cuprinde:
 

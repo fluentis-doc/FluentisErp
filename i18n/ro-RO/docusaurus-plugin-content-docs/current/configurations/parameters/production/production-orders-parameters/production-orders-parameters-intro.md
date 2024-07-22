@@ -25,7 +25,7 @@ Form-ul se deschide din **Parametri > Producție > Parametri ordine de producți
 
 **Calcul cost de producție pentru avansări**: dacă este activ, pe măsură ce se înregistrează progresul producției, costul înregistrării de gestiune este majorat cu costul real calculat pe baza timpului efectiv declarat în semnalare înmulțit cu costul orar al mașinii și/sau al manoperei, apoi pe costul orar al centrului de lucru utilizat;
 
-**Actualizează materiale utilizate în ordinul de producție**: dacă este activ, permite inserarea articolelor cu cantitățile relative descărcate pe ordinele de producție atunci când fac descărcări în semnalările care nu sunt prevăzute în ordinul de producție;
+**Actualizează materiale utilizate în ordinul de producție**: dacă este activ, la modificarea cantității declarate într-o declarație de producție, va fi afișat un mesaj care solicită recalcularea sau nu a cantităților utilizate de materiale; dacă nu este activ, recalcularea materialelor se efectuează automat;
 
 **Înregistrare automată semnalări**: dacă este activ, indică faptul că, imediat ce este inserată semnalarea, acesta este înregistrată automat;
 

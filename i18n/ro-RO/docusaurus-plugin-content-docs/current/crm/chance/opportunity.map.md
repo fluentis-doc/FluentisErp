@@ -1,18 +1,19 @@
 ---
-title: Hartă de oportunități CRM - pagină nouă
-sidebar_position: 33
+title: Mappa opportunità CRM
+sidebar_position: 5
 ---
 
-Această funcționalitate permite vizualizarea grafică a amplasării geografice a **Oportunităților** aflate pe baza indicațiilor geografice specificate în datele de contact CRM ale oportunităților existente.
+Questa funzionalità permette di visualizzare graficamente la dislocazione geografica delle **Opportunità** in essere sulla base delle indicazioni geografiche indicate nell’anagrafica dei contatti CRM presenti sulle opportunità.
 
-Cu ajutorul filtrelor se pot vizualiza: un singur tip de oportunitate (**Tip Oportunitate**), mai multe oportunități introduse de același utilizator (**Operator**), mai multe oportunități cu aceeași probabilitate de succes (**Probabilitate Succes**).
+Con l’aiuto dei filtri si può visualizzare: una sola tipologia di opportunità (**Tipo Opportunità**), più opportunità inserite dallo stesso utente (**Operatore**), più opportunità con la medesima probabilità di successo (**Probabilità Successo**).
 
-Zona de filtru este dedicată listei posibilelor tipuri de date pe baza cărora se poate face o selecție. Filtrele sunt de obicei în condiția 'ȘI' și este posibil să se specifice mai multe criterii de filtrare simultan.
+L’area di filtro è quella dedicata ad ospitare l’elenco dei possibili tipi di dati grazie ai quali è possibile effettuare una selezione. I filtri sono tipicamente in condizione 'AND' ed è possibile specificare più criteri di filtro contemporanei.
 
-În zona sub cea de filtru se găsește harta unde sunt vizualizate oportunitățile, marcate cu un indicator în interiorul căruia se poate vedea numărul de oportunități asociate aceluiași Contact.
-Dând clic pe Indicator, într-o fereastră pop-up se vor afișa următoarele informații:
+Nell’area sottostante a quella di filtro è presente la mappa dove vengono visualizzate le opportunità, segnalate con un indicatore all’interno del quale è possibile visualizzare il numero di opportunità presenti per lo stesso Contatto.
+Cliccando sull’indicatore vengono visualizzate, in una finestra di pop up le seguenti informazioni:
 
-- Denumirea Companiei contactului titular al oportunității;
-- Calitatea contactului;
-- Valoarea oportunității;
-- Adresa de contact.
+-	Ragione Sociale del contatto titolare dell’opportunità;
+-	La Qualità del contatto;
+-	Lo stadio della Pipeline Flux in cui si trova l’opportunità;
+-	Il valore dell’opportunità;
+-	L’indirizzo del Contatto.

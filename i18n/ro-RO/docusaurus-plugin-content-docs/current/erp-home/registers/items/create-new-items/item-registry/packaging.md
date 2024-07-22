@@ -11,11 +11,11 @@ Definirea ambalării permite crearea UDI necesare expedierii atunci când se pre
 
 *Câmpuri specifice*
 
-**Tip palet / Tip palet conținut**:  reprezintă tipul de UDI(unitate de încărcare) și tipul de conținut, date codificate anterior în tabelul relativ (Configurare > Tabele > Logistică);
+**Tip UdI / Tip UdI conținut**:  reprezintă tipul de UDI(unitate de încărcare) și tipul de conținut, date codificate anterior în tabelul relativ (Configurare > Tabele > Logistică);
 
 **Cantitate**: reprezintă cantitatea pentru UDI;
 
-**Prioritate**: reprezintă prioritatea ambalajului (de exemplu, dacă avem un palet care conține cutii, trebuie să stabilim prioritatea pentru ca sistemul să cunoască deja prioritatea ambalajului atunci când creează UDI); 
+**Prioritate**: reprezintă prioritatea ambalajului (de exemplu, dacă avem un UdI care conține cutii, trebuie să stabilim prioritatea pentru ca sistemul să cunoască deja prioritatea ambalajului atunci când creează UDI); 
 
 **Cont sintetic/analitic**: în aceste câmpuri introduceți conturile clientului/furnizorului;
 
@@ -23,10 +23,10 @@ Definirea ambalării permite crearea UDI necesare expedierii atunci când se pre
 
 **Înălțime/Lățime/Adâncime**: reprezintă dimensiunile ambalajului;
 
-**Descriere tip palet/Descriere tip palet conținut/Descriere client/furnizor**: reprezintă descrierile câmpurilor anterioare, care sunt completate automat de aplicație;
+**Descriere tip UdI/Descriere tip UdI conținut/Descriere client/furnizor**: reprezintă descrierile câmpurilor anterioare, care sunt completate automat de aplicație;
 
 **U.M. vol.**: reprezintă unitatea de măsură a volumului;
 
 **Dimensiuni obligatorii**: dacă este activ, indică faptul că dimensiunile indicate sunt obligatorii;
 
-**Palet obligatoriu**: dacă este activ indică faptul că acest articol trebuie gestionat cu palet (UDI).
+**UdI obligatoriu**: dacă este activ indică faptul că acest articol trebuie gestionat cu UdI.

@@ -86,7 +86,7 @@ Coloanele din grid sunt:
 
 **Furnizor** **: sunt datele furnizorului lotului, deci al furnizorului din documentul cu care a fost încărcat lotul însuși;
 
-**Palet:**este paletul legat la lot.
+**UdI:**este paletul legat la lot.
 
 
 

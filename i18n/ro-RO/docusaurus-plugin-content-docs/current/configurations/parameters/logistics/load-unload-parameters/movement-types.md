@@ -19,7 +19,7 @@ Tipurile de mișcări determină opțiunea activată:
 
 **Rectificare de descărcare**: funcție WMS Mobile permite efectuarea unei rectificări de gestiune negative;
 
-**Încărcare palet**: funcție WMS Mobile și ERP permite efectuarea încărcării în gestiune a paletului;
+**Încărcare UdI**: funcție WMS Mobile și ERP permite efectuarea încărcării în gestiune a paletului;
 
 **Descărcare palet**: funcție WMS Mobile și ERP permite efectuarea descărcării din gestiune a paletului;
 
@@ -37,14 +37,14 @@ Tipurile de mișcări determină opțiunea activată:
 
 **Acceptă materiale gestionate pe loturi**: funcție WMS Mobile pentru a crea avizul de achiziție dintr-un ordin client și relativa încărcare în gestiune a articolelor gestionate cu loturi;
 
-**Înlătură din palet**: funcție WMS Mobil permite ștergerea articolelor dintr-un palet creat anterior;
+**Înlătură din UdI**: funcție WMS Mobil permite ștergerea articolelor dintr-un UdI creat anterior;
 
 **Vânzări**: funcție WMS Mobile pentru a crea avizul de vânzare dintr-un ordin client sau manual și relativa descărcare din gestiune a articolelor;
 
 **Dispoziție livrare**: funcție WMS Mobile pentru a crea o nouă dispoziție de livrare sau pentru a confirma unul creat anterior;
 
-**Inventar palet**: funcție WMS Mobile pentru a crea un inventar palet;
+**Inventar UdI**: funcție WMS Mobile pentru a crea un inventar UdI;
 
-**Transfer palet**: funcție WMS Mobile pentru a crea sau confirma listele de transfer palet;
+**Transfer UdI**: funcție WMS Mobile pentru a crea sau confirma listele de transfer UdI;
 
-**Încărcare palet din creare palet**: funcție WMS Mobile și ERP pentru a crea paleți și relativa încărcare în gestiune.
+**Încărcare UdI din creare UdI**: funcție WMS Mobile și ERP pentru a crea UDI și relativa încărcare în gestiune.

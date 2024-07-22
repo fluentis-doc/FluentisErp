@@ -66,4 +66,6 @@ Modificarea priorităților se poate face utilizând butoanele:
 
 **CdP/CdC obligatorii**: dacă este activ, atribuirea CdC/CdP devine obligatorie.
 
+**Evaluează prioritatea pe fiecare dimensiune**: dacă este activ, acest flag permite evaluarea fiecărei priorități introduse în partea superioară pentru a verifica dacă există dimensiuni suplimentare care nu au fost încă valorificate. De exemplu, să presupunem că în *Registrul articolului* avem centrul de cost pentru dimensiunea *Business unit* și în *Tipul factuării achiziții* dimensiunea *Direcțională*. Dacă flagul nu este activ, sistemul evaluează doar centrul de cost prezent în *Registrul articolului*; dacă flagul este activ, după ce a încărcat centrul de cost prezent în *Registrul articolului*, evaluează și dimensiunea prezentă în *Tipul factuării achiziții* (în exemplul nostru dimensiunea *Direcțională*) și, dacă este diferită de cele deja gestionate (*Business Unit*), încarcă centrul și continuă cu verificarea celorlalte priorități.
+
 După inserarea parametrilor aceștia trebuie salvați cu ajutorul butonului **Salvează**.
