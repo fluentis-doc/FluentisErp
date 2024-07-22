@@ -44,29 +44,3 @@ Os dados propostos, se foram especificados no registro, são:
 **Estado doc.**: o dado se refere a tabela dos estados do documento, o dado tem de ser inserido pelo usuário e pode ser utilizado pelos procedimentos de replicação do ERP, instalados para a gestão de uma sede com alguns pontos de venda. O estado da nota de entrega pode ser impresso, descarregado, valorizado ou anulado;
 
 **EDI**: é a data de transmissão do documento pelos procedimentos de EDI.
-
-RIBBON BAR: representa o menu do módulo em questão, ou seja, a área na qual efeituar algumas ações. A lista de possíveis funcionalidades é sucessivamente representada:
-
-
-
-| RibbonFunction | RibbonMeaning |
-| --- | --- |
-| Salvar | Botão para salvar as CT-e/Notas de entrega. |
-|  [Execução da ordem](/docs/sales/sales-delivery-notes/insert-delivery-notes/header-procedures/execution-from-order)  | Se refere ao procedimento para criar uma nota de entrega duma ordem cliente. |
-| Criar nota de entrega da retirada do depósito  | Permite retomar os artigos da lista de retirada. |
-| Transferir os artigos dos catálogos de venda | Permite retomar os artigos dos catálogos de venda. |
-| Criar nota de entrega da lista de embalagem  | Permite retomar os artigos da lista de embagagem. |
-| Ajuda destinatário/destino | Permite visualizar e inserir os destinatários/destinos do registro cliente. |
-| Cancelar nota de entrega | Executar o procedimento para cancelar uma nota de entrega precedentemente inserida. |
-
-
-
-| RibbonFunction | RibbonMeaning |
-| --- | --- |
-|  [Document manager](/docs/guide/operations-with-data/document-manager)  | Gestão do armazenamento documental associado a máscara em uso. |
-
-
-
-
-
-

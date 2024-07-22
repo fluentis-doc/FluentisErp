@@ -29,7 +29,7 @@ Through the insertion of customer it is possible to propose automatically all sp
 
 **Currency Date**: date on which it is possible to calculate the exchange value as relation between money of company and the customer one, according to settings on Value Exchange table;
 
-** Initial Notes**: it is possible to insert notes that have been inserted previously in 'Codified Notes'. For this reason the user has to double click on 'Initial Note' field in order to open 'Codified Notes Help' and to select data, or through the right mouse button it is possible to open a window to specify a long note text, if the field has a value, then it is necessary to change the background colour of the filed; 
+**Initial Notes**: it is possible to insert notes that have been inserted previously in 'Codified Notes'. For this reason the user has to double click on 'Initial Note' field in order to open 'Codified Notes Help' and to select data, or through the right mouse button it is possible to open a window to specify a long note text, if the field has a value, then it is necessary to change the background colour of the filed; 
 
 **Destination and Recipient**: the information inserted on customer register is proposed in 'Deliveries' tab, only if there are default recipients and destinations. The combo box proposes all recipients and destinations inserted on customer register;
 
@@ -49,9 +49,9 @@ RIBBON BAR: it represents the Form menu, that is the area in which there is the
 | --- | --- |
 | Save | Button to save delivery notes. |
 |  [Execute from Order](/docs/sales/sales-delivery-notes/insert-delivery-notes/header-procedures/execution-from-order)  | It refers to the procedure to create a delivery note from sales order. |
-| Create Delivery Note from Picking  | It enables the user to take items from a picking list. |
+| Create Delivery Note from Picking | It enables the user to take items from a picking list. |
 | Transfer Items from Sales Price Lists | It enables the user to take items from sales price lists. |
-| Create DN from Packing List  | It enables the user to take items from packing list. |
+| Create DN from Packing List| It enables the user to take items from packing list. |
 | Help Recipient/Destination | It enables the user to view and to insert recipients/destinations from customer register. |
 | Delete Delivery Note | It performs the procedure to delete a previously inserted delivery note. |
 
