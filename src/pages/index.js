@@ -105,7 +105,6 @@ const features = [
                 <li><a href='docs/sales/sales-invoices/general-overview'><Translate>Fatture di vendita</Translate></a></li> 
                 <li><a href='docs/sales/pos/general-overview'><Translate>POS</Translate></a></li> 
                 <li><a href='docs/sales/agents/general-overview'><Translate>Liquidazione agenti</Translate></a></li> 
-                <li><a href='docs/sales/sales-price-list/search-sales-price-list'><Translate>Listini di vendita</Translate></a></li> 
                 <li><a href='docs/sales/price-control/definition'><Translate>Gestione prezzi</Translate></a></li> 
               </ul>
              ),    
