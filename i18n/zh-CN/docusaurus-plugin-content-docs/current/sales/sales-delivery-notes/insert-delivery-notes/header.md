@@ -53,9 +53,9 @@ sidebar_position: 2
 | --- | --- |
 | 保存 | 用于保存送货单/货单 |
 |  [从订单的履行](/docs/sales/sales-delivery-notes/insert-delivery-notes/header-procedures/execution-from-order)  | 从销售订单生成货单 |
-|  [从仓库领货清单创建货单](/docs/sales/sales-delivery-notes/insert-delivery-notes/header-procedures/create-delivery-note-from-picking)  | 用于利用在领货清单中的项目 |
+|  从仓库领货清单创建货单  | 用于利用在领货清单中的项目 |
 | 从销售价目表中，交换项目 | 用于利用在销售价目表中的项目 |
-|  [从装箱单创建货单](/docs/sales/sales-delivery-notes/insert-delivery-notes/header-procedures/create-delivery-note-from-packing-list)  | 用于利用在装箱单中的项目 |
+| 从装箱单创建货单  | 用于利用在装箱单中的项目 |
 | 帮助接受者/目的地 | 用于查看以及输入客户登记中的接受者/目的地 |
 | 删除货单 | 用于删除已输入的货单 |
 

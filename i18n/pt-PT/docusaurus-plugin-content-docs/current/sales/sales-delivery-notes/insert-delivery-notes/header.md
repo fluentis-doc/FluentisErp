@@ -53,9 +53,9 @@ RIBBON BAR: representa o menu do módulo em questão, ou seja, a área na qual 
 | --- | --- |
 | Salvar | Botão para salvar as CT-e/Notas de entrega. |
 |  [Execução da ordem](/docs/sales/sales-delivery-notes/insert-delivery-notes/header-procedures/execution-from-order)  | Se refere ao procedimento para criar uma nota de entrega duma ordem cliente. |
-|  [Criar nota de entrega da retirada do depósito](/docs/sales/sales-delivery-notes/insert-delivery-notes/header-procedures/create-delivery-note-from-picking)  | Permite retomar os artigos da lista de retirada. |
+| Criar nota de entrega da retirada do depósito  | Permite retomar os artigos da lista de retirada. |
 | Transferir os artigos dos catálogos de venda | Permite retomar os artigos dos catálogos de venda. |
-|  [Criar nota de entrega da lista de embalagem](/docs/sales/sales-delivery-notes/insert-delivery-notes/header-procedures/create-delivery-note-from-packing-list)  | Permite retomar os artigos da lista de embagagem. |
+| Criar nota de entrega da lista de embalagem  | Permite retomar os artigos da lista de embagagem. |
 | Ajuda destinatário/destino | Permite visualizar e inserir os destinatários/destinos do registro cliente. |
 | Cancelar nota de entrega | Executar o procedimento para cancelar uma nota de entrega precedentemente inserida. |
 

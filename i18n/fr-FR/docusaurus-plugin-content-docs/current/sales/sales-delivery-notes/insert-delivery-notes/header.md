@@ -51,9 +51,9 @@ RIBBON BAR: il représente le menu de la forme en objet, à savoir la zone dan
 | --- | --- |
 | Enregistrer | Bouton pour enregistrer les DDT/BL. |
 |  **Exécution d'ordre** | Il rappele la procedure pour créer un bon de livraison par un autre client. |
-|  [Créer bon de livraison de prélèvement d'entrepôt](/docs/sales/sales-delivery-notes/insert-delivery-notes/header-procedures/create-delivery-note-from-picking)  | Il permet de reprendre les articles d'une liste de prélèvement. |
+|  Créer bon de livraison de prélèvement d'entrepôt  | Il permet de reprendre les articles d'une liste de prélèvement. |
 | Transférer les articles des catalogues de vente | Il permet de reprendre les articles des catalogues de vente. |
-|  [Créer bon de livraison de Packing List](/docs/sales/sales-delivery-notes/insert-delivery-notes/header-procedures/create-delivery-note-from-packing-list)  | Il permet de reprendere les articles du bordereau d'expédition. |
+|  Créer bon de livraison de Packing List  | Il permet de reprendere les articles du bordereau d'expédition. |
 | Aide destinataire/destination | Il permet de visualiser et insérer les destinataires/destinations du regitre client. |
 | Supprimer bon de livraison | Il exécute la procedure pour supprimer une bon de livraison précédemment insérée. |
 

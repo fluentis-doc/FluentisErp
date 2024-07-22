@@ -53,9 +53,9 @@ RIBBON BAR: rappresenta il menu della Form in oggetto, ossia l'area nella quale 
 | --- | --- |
 | Spasi | Pulsante per salvare le DDT/Bolle. |
 |  [Evasione da ordine](/docs/sales/sales-delivery-notes/insert-delivery-notes/header-procedures/execution-from-order)  | Richiama la procedura per creare una bolla da un ordine cliente. |
-|  [Crea bolla da prelievo di magazzino](/docs/sales/sales-delivery-notes/insert-delivery-notes/header-procedures/create-delivery-note-from-picking)  | Permette di riprendere gli articoli da una picking list. |
+| Crea bolla da prelievo di magazzino  | Permette di riprendere gli articoli da una picking list. |
 | Trasferisci gli articoli dai listini di vendita | Permette di riprendere gli articoli dai listini di vendita. |
-|  [Crea bolla da packing list](/docs/sales/sales-delivery-notes/insert-delivery-notes/header-procedures/create-delivery-note-from-packing-list)  | Permette di riprendere gli articoli dal packing list. |
+| Crea bolla da packing list  | Permette di riprendere gli articoli dal packing list. |
 | Help destinatario/destinazione | Permette di visualizzare e inserire i destinatari/le destinazioni dall'anagrafica cliente. |
 | Cancella bolla | Esegue la procedura per cancellare una bolla precedentemente inserita. |
 

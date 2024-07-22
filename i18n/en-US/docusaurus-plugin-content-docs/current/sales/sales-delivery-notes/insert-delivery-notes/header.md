@@ -49,9 +49,9 @@ RIBBON BAR: it represents the Form menu, that is the area in which there is the
 | --- | --- |
 | Save | Button to save delivery notes. |
 |  [Execute from Order](/docs/sales/sales-delivery-notes/insert-delivery-notes/header-procedures/execution-from-order)  | It refers to the procedure to create a delivery note from sales order. |
-|  [Create Delivery Note from Picking](/docs/sales/sales-delivery-notes/insert-delivery-notes/header-procedures/create-delivery-note-from-picking)  | It enables the user to take items from a picking list. |
+| Create Delivery Note from Picking  | It enables the user to take items from a picking list. |
 | Transfer Items from Sales Price Lists | It enables the user to take items from sales price lists. |
-|  [Create DN from Packing List](/docs/sales/sales-delivery-notes/insert-delivery-notes/header-procedures/create-delivery-note-from-packing-list)  | It enables the user to take items from packing list. |
+| Create DN from Packing List  | It enables the user to take items from packing list. |
 | Help Recipient/Destination | It enables the user to view and to insert recipients/destinations from customer register. |
 | Delete Delivery Note | It performs the procedure to delete a previously inserted delivery note. |
 
