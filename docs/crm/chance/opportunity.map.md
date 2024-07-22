@@ -1,6 +1,6 @@
 ---
-title: Mappa opportunità CRM - nuova pagina
-sidebar_position: 33
+title: Mappa opportunità CRM
+sidebar_position: 3
 ---
 
 Questa funzionalità permette di visualizzare graficamente la dislocazione geografica delle **Opportunità** in essere sulla base delle indicazioni geografiche indicate nell’anagrafica dei contatti CRM presenti sulle opportunità.
@@ -9,10 +9,10 @@ Con l’aiuto dei filtri si può visualizzare: una sola tipologia di opportunit�
 
 L’area di filtro è quella dedicata ad ospitare l’elenco dei possibili tipi di dati grazie ai quali è possibile effettuare una selezione. I filtri sono tipicamente in condizione 'AND' ed è possibile specificare più criteri di filtro contemporanei.
 
-Nell'Area sottostante a quella di filtro è presente la mappa dove vengono visualizzate le opportunità, segnalate con un indicatore all’interno del quale è possibile visualizzare il numero di opportunità presenti per lo stesso Contatto.
-Cliccando sull'Indicatore vengono visualizzate, in una finestra di pop up le seguenti informazioni:
+Nell’area sottostante a quella di filtro è presente la mappa dove vengono visualizzate le opportunità, segnalate con un indicatore all’interno del quale è possibile visualizzare il numero di opportunità presenti per lo stesso Contatto.
+Cliccando sull’indicatore vengono visualizzate, in una finestra di pop up le seguenti informazioni:
 
-- Ragione Sociale del contatto titolare dell’opportunità;
-- La Qualità del contatto;
-- Il valore dell’opportunità;
--L’indirizzo del Contatto.
+-	Ragione Sociale del contatto titolare dell’opportunità;
+-	La Qualità del contatto;
+-	Il valore dell’opportunità;
+-	L’indirizzo del Contatto.

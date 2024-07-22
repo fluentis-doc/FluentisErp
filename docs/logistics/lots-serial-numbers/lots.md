@@ -11,11 +11,12 @@ Per aprire i dettagli di un documento, basterà selezionarlo e fare doppio click
 
 *Pulsanti specifici*:
 
-> **Modifica**: il pulsante permette di [Modificare un lotto inserito](/docs/logistics/lots-serial-numbers/lots-register).
+> **Modifica**: il pulsante permette di [Modificare un lotto inserito](/docs/logistics/lots-serial-numbers/lots-register);    
+> **Cancella**: permette la cancellazione del lotto se questo non è referenziato in alcun documento. 
 
 *Filtri specifici*:
 
-**Tutti** **: **attivando questo flag l'utente può filtrare tutti i lotti presenti nel database;
+**Tutti**: attivando questo flag l'utente può filtrare tutti i lotti presenti nel database;
 
 **Non chiusi**: attivando questo flag l'utente può filtrare solo i lotti aperti, ovvero solo i lotti di cui esiste ancora una giacenza a magazzino;
 

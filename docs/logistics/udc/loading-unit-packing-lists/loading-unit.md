@@ -32,8 +32,16 @@ Per tutte le informazioni su come utilizzare questa form da WMS consultare le [L
 
 Questa procedura è utilizzata per la creazione di liste di prelievo con unità di carico.     
 
-Con le **Liste di prelievo UDC / Packing list** è possibile creare un "picking" di unità di carico, al contrario della normale procedura di picking che crea una lista di prelievo formata da singoli articoli.    
+Con le **Liste di prelievo UDC / Packing list** è possibile creare un *picking* di unità di carico, al contrario della normale procedura di picking che crea una lista di prelievo formata da singoli articoli.    
 Le liste di prelievo UDC vengono utilizzate nel caso in cui si voglia spedire la merce ad un cliente, mentre nel caso di movimentazioni di UDC all’interno dei propri magazzini è opportuno utilizzare le [Liste di Trasferimento UDC](/docs/logistics/wms/udc/loading-unit-transfer-list).    
+
+Nella form di filtro è possibile ricercare le liste di interesse filtrando: per data inserimento, data spedizione e anche per lo stato della lista di prelievo; una volta selezionata, è possibile aprire la lista con il pulsante **Apri**, all’interno della quale, l’utente ha la possibilità di modificare le unità di carico contenute nel tab *Dettaglio UDC*.      
+In questo tab è possibile: selezionare un’unità di carico esistente ed eliminarla dalla lista con il pulsante **Cancella UDC**; oppure, aggiungerne una nuova semplicemente leggendo il relativo barcode.      
+Una volta ultimate le modifiche è necessario salvare la lista tramite il pulsante **Salva**.       
+
+Dal filtro è possibile anche creare una nuova lista con il pulsante **Nuovo**.       
+In automatico vengono proposte: la data odierna ed il magazzino indicato nella tabella Parametri magazzino Carico/Scarico per utente; inoltre, con l’inserimento del tipo picking viene proposto anche il numero della lista.
+A questo punto, l’utente può inserire, nel tab *Dettaglio UDC*, le unità di carico da aggiungere alla lista tramite la lettura dei relativi barcode. Ultimato l’inserimento sarà sufficiente salvare la lista con l’apposito pulsante.
 
 **Parametri carico/scarico** da inserire nella tabella [Parametri Carico/Scarico per utente](/docs/configurations/parameters/general-parameters/deliverynotes-grouping).
 
@@ -56,14 +64,18 @@ Questa procedura è utilizzata per ricercare e confermare una [Lista di Trasferi
 
 La form **Conferma trasferimento UDC** viene utilizzata per confermare una [Lista di Trasferimento UDC](/docs/logistics/udc/loading-unit-packing-lists/transfer-unit) esistente per effettuare il movimento di magazzino.
 
-Nel filtro è possibile ricercare la lista di interesse ed anche possibile confermarla direttamente con il relativo pulsante senza doverla aprire.       
-Altrimenti, è possibile entrare nella lista e visualizzare le unità di carico non ancora traferite e quelle già trasferite all’interno dei relativi tab, per poi poterla confermarla e creare il movimento di magazzino.
+Nel filtro è possibile ricercare la lista di interesse per: data, numero e magazzino, inoltre, anche possibile confermarla direttamente con il relativo pulsante **Conferma** senza doverla aprire.       
+Altrimenti, è possibile entrare nella lista tramite il pulsante **Apri** e visualizzare le unità di carico non ancora scaricate e quelle già scaricate all’interno dei relativi tab: unità di carico non trasferite e trasferite, per poi poterla confermarla e creare il movimento di magazzino.
 
 **Parametri carico/scarico** da inserire nella tabella [Parametri Carico/Scarico per utente](/docs/configurations/parameters/general-parameters/deliverynotes-grouping).
 
 | Area | Modulo | Form |
 | :-- | :-- | :-- |
 | WM | Fluentis.FluentisErp.Mvvm.WM.ReadWrite.Views | ConfirmPickingList |
+| WM | Fluentis.FluentisErp.Mvvm.WM.ReadWrite.Views | ConfirmPickingList |
+
+I parametri sono inseriti due volte poiché la form utilizza: sia una causale di carico con come magazzino quello di destinazione della lista, sia una di scarico con come magazzino quello in cui sono stoccate le unità di carico da trasferire.            
+Entrambe le causali utilizzate devono avere il flag *Distinta base* disattivato ed essere senza contropartita.    
 
 Per tutte le informazioni su come codificare i barcode da leggere nel campo **Codice barcode** consultare la pagina relativa al [Barcode tokenizer](/docs/configurations/tables/general-settings/barcode-tokenizer).
 
@@ -71,14 +83,16 @@ Per tutte le informazioni su come codificare i barcode da leggere nel campo **Co
 
 La form **Conferma prelievo UDC** viene utilizzata per ricercare e confermare una [Lista di prelievo UDC / Packing list](/docs/logistics/udc/loading-unit-packing-lists/transfer-unit) esistente per effettuare il movimento di magazzino di scarico.
 
-Nel filtro è possibile ricercare la lista di interesse ed anche possibile confermarla direttamente con il relativo pulsante senza doverla aprire.        
-Altrimenti, è possibile entrare nella lista e visualizzare le unità di carico non ancora scaricate e quelle già scaricate all’interno dei relativi tab, per poi poterla confermarla e creare il movimento di magazzino.    
-
+Nel filtro è possibile ricercare la lista di interesse per: data, numero e magazzino, inoltre, anche possibile confermarla direttamente con il relativo pulsante **Conferma** senza doverla aprire.       
+Altrimenti, è possibile entrare nella lista tramite il pulsante **Apri** e visualizzare le unità di carico non ancora scaricate e quelle già scaricate all’interno dei relativi tab: unità di carico non scaricate e scaricate, per poi poterla confermarla e creare il movimento di magazzino.
+   
 **Parametri carico/scarico** da inserire nella tabella [Parametri Carico/Scarico per utente](/docs/configurations/parameters/general-parameters/deliverynotes-grouping).
 
 | Area | Modulo | Form |
 | :-- | :-- | :-- |
 | WM | Fluentis.FluentisErp.Mvvm.WM.ReadWrite.Views | ConfirmUnloadPickingList |
+
+Questo parametro deve essere creato con il magazzino della *lista di prelievo* e con casuale di magazzino con tipo di scarico e senza contropartita.
 
 Per tutte le informazioni su come codificare i barcode da leggere nel campo **Codice barcode** consultare la pagina relativa al [Barcode tokenizer](/docs/configurations/tables/general-settings/barcode-tokenizer).
 

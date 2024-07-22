@@ -46,7 +46,7 @@ Gli altri stati che può assumere sono:
        
 **Progetti**: indica il progetto in cui è inserita la commessa;       
 
-**Sito Produzione**: indica il sito di produzione in cui verrà prodotta la commessa; 
+**Sito Produzione**: indica il sito di produzione in cui verrà prodotta la commessa. Su questo campo è presente un controllo che, nel caso in cui la commessa nasca da un ordine cliente, verifica che il magazzino indicato sulla riga dell’ordine cliente appartenga allo stesso sito produttivo indicato nella commessa di produzione.  
 
 **Data merce pronta**: in questa colonna viene visualizzata la data della merce pronta che è stata impostata nella riga dell'ordine cliente di cui viene esposto il dettaglio;      
 

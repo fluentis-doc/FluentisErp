@@ -85,6 +85,18 @@ Questo flag deve essere impostato disattivato per la normale contabilità Italia
 
 **Autofattura:** La sezione contiene i parametri per la creazione dell'autofattura dalle registrazioni contabili per la comunicazione dati sugli acquisti allo SDI. [**Cfr. Parametri specifici** ](/docs/finance-area/e-invoice/auto-invoice/parameters) 
 
+**Intrastat:** La sezione contiene alcuni campi relativi all'elaborazione ed esportazione dei modelli intrastat.
+
+- Visualizza dettaglio natura transazione: con un recente aggiornamento normativo è stato introdotto un dettaglio relativo al campo della natura transazione che può essere reso visibile attivando il flag. (Si ricorda che il campo di dettaglio viene compilato da coloro che superano la soglia di Euro 20 milioni nelle cessioni di cui al modello intra 1 bis o acquisti di cui al modello intra 2 bis nel corso dell'anno.) Per i dettagli sulla codifica della nuova colonna B relativa al dettaglio natura transazione si faccia riferimento alle istruzioni ministeriali.
+
+- Codice Identificativo utente abilitato: in questo campo è possibile specificare una codifica per il nome del file esportato contenente gli elenchi (riportata anche nel track record di testata) ai fini dell'invio dei tracciati con il canale Entratel
+
+- Periodicità Intrastat Acquisti / Vendite: I combo box permettono di impostare la periodicità mensile o trimestrale, rispettivamente per acquisti e vendite, in base ai quali sarà richiesto, come da normativa, più o meno dettaglio nella compilazione dei dati. N.B. attualmente per gli acquisti la periodicità trimestrale è stata abolita.
+
+
+**Iva del Margine:** in questa sezione si inseriscono i parametri specifici per la gestione delle funzionalità relative al regime iva del margine.
+Per i dettagli vedere [**qui**](/docs/finance-area/particular-cases/VAT_regime-del-maine)
+
 ---
 
 ### Lista Conti Clienti / Fornitori
@@ -122,8 +134,8 @@ In questa tab si impostano nel dettaglio i conti del piano dei conti che saranno
 **Conto economico**: consente di impostare il sottoconto da proporre per le operazioni di chiusura automatica conti.  
 **Minusvalenze**: consente di impostare il sottoconto da utilizzare nella rilevazione delle differenze economiche negative da cessione cespiti.  
 **Plusvalenze**: consente di impostare il sottoconto da utilizzare nella rilevazione delle differenze economiche positive  da cessione cespiti.  
-**Sopravvenienze attive**: consente di impostare il sottoconto da utilizzare nella rilevazione delle sopravvenienze attive.  
-**Sopravvenienze passive**: consente di impostare il sottoconto da utilizzare nella rilevazione delle sopravvenienze passive.  
+**Sopravvenienze attive**: consente di impostare il sottoconto da utilizzare nella rilevazione delle sopravvenienze attive (utilizzato anche nella gestione sconti e abbuoni).  
+**Sopravvenienze passive**: consente di impostare il sottoconto da utilizzare nella rilevazione delle sopravvenienze passive (utilizzato anche nella gestione sconti e abbuoni).  
 **Insussistenze attive**: consente di impostare il sottoconto da utilizzare nella rilevazione delle insussistenze attive.  
 **Insussistenze passive**: consente di impostare il sottoconto da utilizzare nella rilevazione delle insussistenze passive.  
 **Debiti v/erario**: consente di impostare il sottoconto da proporre nella rilevazione automatica del giro IVA al momento della stampa definitiva della liquidazione IVA periodica.  
@@ -138,9 +150,10 @@ In questa tab si impostano nel dettaglio i conti del piano dei conti che saranno
 **Risconti passivi**: consente di impostare il sottoconto generico da utilizzare nella procedura delle rettifiche automatiche del modulo 'Chiusure infrannuali'.  
 **Ratei passivi**: consente di impostare il sottoconto generico da utilizzare nella procedura delle rettifiche automatiche del modulo 'Chiusure infrannuali'.  
 **Conto INAIL**: consente di impostare il sottoconto generico da utilizzare nella procedura di contabilizzazione del Modello F24.  
-**Conto INPS**: consente di impostare il sottoconto generico da utilizzare nella procedura di contabilizzazione del Modello F24.  
+**Conto INPS / Previdenza sociale**: consente di impostare il sottoconto generico da utilizzare nella procedura di contabilizzazione del Modello F24.  
 **Conto altre imposte**: consente di impostare il sottoconto generico da utilizzare nella procedura di contabilizzazione del Modello F24.  
-**SottoConto autofattura**: consente di impostare il sottoconto per la creazione dell'autofattura dalle registrazioni contabili per la comunicazione dati sugli acquisti allo SDI. [**Cfr. Parametri specifici** ](/docs/finance-area/e-invoice/auto-invoice/parameters).  
+**SottoConto autofattura**: consente di impostare il sottoconto per la creazione dell'autofattura dalle registrazioni contabili per la comunicazione dati sugli acquisti allo SDI. [**Cfr. Parametri specifici** ](/docs/finance-area/e-invoice/auto-invoice/parameters).
+**Contropartita interessi trimestrali liquidazione iva:**  consente di automatizzare la contabilizzazione degli interessi passivi derivanti da liquidazione iva trimestrale inserendo il conto di contropartita (costo) desiderato.
 
 ---
 

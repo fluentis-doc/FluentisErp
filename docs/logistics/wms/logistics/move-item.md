@@ -5,9 +5,11 @@ sidebar_position: 3
 
 Questa procedura è utilizzata per creare un movimento di spostamento di un articolo da una specifica ubicazione ad un’altra. 
 La lettura della prima ubicazione nella form andrà a popolare il campo relativo all’ubicazione di partenza, mentre la seconda andrà a popolare l’ubicazione di destinazione.     
-Le successive letture di ubicazioni andranno a sovrascrivere solo l’ubicazione di destinazione.       
+Le successive letture di ubicazioni andranno a sovrascrivere solo l’ubicazione di destinazione.     
+A questo punto è possibile inserire la quantità da movimentare tramite i pulsanti **+** e **-** oppure inserendola direttamente.  
 Inoltre, è possibile stampare anche l'etichetta del codice articolo tramite il pulsante **Stampa** o visualizzare l'anteprima direttamente sul terminale con il pulsante **Anteprima**.     
 Il pulsante **Pulisci tutto** permette di svuotare la form da tutti i dati inseriti.      
+Nel caso in cui l'articolo sia gestito a lotti, verrà visualizzato anche il relativo campo in cui andare ad inserire il lotto che dovrà essere spostato.        
 Alla conferma viene generato il movimento di magazzino, che in questo caso, oltre alla registrazione principale di scarico, presenta anche la registrazione di contro partita che ha caricato l’articolo nella nuova ubicazione.
 
 :::note Nota

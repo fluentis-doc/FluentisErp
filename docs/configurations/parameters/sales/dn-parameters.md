@@ -39,7 +39,7 @@ I parametri dei DDT permettono l'impostazione di base per gestire correttamente 
 
 **Ricalcola CDC/CDP:** nel caso in cui si sia scelto di generare il DDT partendo dall'ordine cliente con l'apposta procedura, attivando questo flag, il sistema andrà a ricalcolare i centri di costo e di profitto se il DDT è stato generato da ordine, non considerando quelli impostati nell'ordine di vendita. Se non attivo il sistema non ricalcolerà questi dati ma terrà quelli inseriti nell'ordine cliente;
 
-**Proposta lotti**: 
+**Proposta lotti**: questo flag fa in modo che al momento dell'evasione, nel caso in cui venga inserita una quantità diversa da evadere rispetto a quella presente nel documento di origine, la quantità dei lotti sia uguale alla quantità di riga nel documento creato; questo per evitare che il documento creato abbia una quantità di riga diversa da quella dei lotti. 
 
 ### Scarico
 

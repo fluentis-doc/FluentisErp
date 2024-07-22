@@ -3,7 +3,60 @@ title: Patch notes Versione 608
 sidebar_position: 2
 ---
 
+### Patch 608.1-0047 - 19/07/2024
+
+> - Update Document status notification for SanMarino documents
+> - SCM – Corretto errore che non aggiornava lo stato evasione delle RDA a seguito dell’attivazione del flag Evaso forzatamente sulle righe articolo (#TT02937/24).
+> - SCM – Corretto errore che non aggiornava lo stato evasione delle RDA a seguito dell’attivazione del flag Evaso forzatamente sulle righe articolo (#TT02937/24).
+> - CO - revisione nuova riclassificazione per gestione tree ( TT02912/24)
+> - WM – Corretto bug che non verificava correttamente la giacenza negativa quando l’articolo si trovava all’interno di una registrazione di scarico in contropartita (#TT01417/24).
+> - CO – Corretto bug nel calcolo del costo del tempo di attrezzaggio nella procedura Calcolo costo del Controlling. (#TT02654/24)
+> - MPS – Corretto errore che modificava lo stato di una commessa schedulata a seguito di cancellazione dell’ordine pianificato e schedulazione di un’altra commessa (#TT02393/24).
+> - FI - la contabilizzazione effetti assegna la data chiusura commissioni in base alla scadenza effetto (#TT02657/24)
+> - WM – Nell’analisi disponibilità gli ordini clienti non confermati non vengono considerati. (#TT02463/24)
+> - SCM – A seguito della Valorizzazione DDT di acquisto mediante procedura, il flag Valorizzato viene ora riportato anche sulle righe articolo del DDT (#TT02562/24).
+> - WM – Corretto bug che talvolta non riportava la causale o l’ubicazione sulla prima riga dei documenti (#TT02490/24).
+> - SCM - in contabilizzazione fatture di acquisto, revisione assegnazione data registrazione per storno automatico della registrazione “fatture da ricevere” (#TT03056/24)
+> - revisione memorizzazione credito anno precedente da stampa definitiva liquidazione iva periodica di gennaio (#TT02348/24)
+> - Revisione quadratura movimenti di analitica negli ordini fornitori (#TT03053/24)
+> - CO - Risolto bug nel report Distinta base valorizzata nel quale non venivano visualizzati i valori del costo dei materiali. (#TT03281/24)
+> - MES – Corretto bug nelle dichiarazioni di produzione, non veniva riportato correttamente il valore dell’ubicazione del lotto nel movimento di magazzino di scarico del materiale. (#TT02156/24)
+> - FI - la contabilizzazione effetti assegna la data chiusura commissioni in base alla scadenza effetto (#TT02657/24)
+> - FI - Errore registrazione in prima nota di incasso da cliente ( TT03209/24)
+> - SCM -  Errore contabilizzazione FDR ( TT03262/24)
+> - FI - revisione gestione test di validazione della causale contabile nel corso delle contabilizzazioni (#TT03062/24 - #TT03060/24)
+> - SD – Al momento della Conversione delle Offerte in Ordini Cliente viene ora mantenuto l’ordinamento di articoli presente nell’Offerta (#TT03169/24).
+> - SD – Revisione test controllo della nazione cedente/prestatore in fattura Sdi per autofatture, da campo nazione al campo codice iso della partita iva. (#TT03368/24)
+> - WM - Corretto bug nel calcolo dell'analisi disponibilità che generava un errore nell'esecuzione dell'mrp. (#TT03389/24)
+> - MS – Corretto bug nel rilascio degli ordini pianificati di acquisto, ora le RDA create vengono raggruppate correttamente per cliente, tipo e anno. (#TT03382/24)
+> - SD – Nella procedura di Creazione da DDT, è stato inserito un nuovo controllo che impedisce la creazione di  un’autofattura da DDT (#TT02889/24)
+> - FI - nella contabilizzazione fatture di vendita, allineamento della gestione del cambio per la sezione dei centri di costo ( TT02172/24)
+> - SCM - contabilizzazione fatture di acquisto, assegnazione divisione alle righe di movimento centro di costo per righe di spese finali (#TT03239/24)
+> - SCM  - Ricerca DDT Acquisto: nella colonna di valorizzazione viene riportata la fattura creata dal ddt (rif.ticket 1055/24)
+> - FI - nella contabilizzazione fatture di acquisto, gestione in grigila iva del campo dell’iva per causali automatiche (#TT02641/24)
+
+### Patch 608.1-0046 - 28/06/2024
+
+> - MS – Corretto errore nell’elaborazione dell’MRP che generava il blocco dell'operazione (#TT02408/24).
+> - WM – Corretto bug nell’export excel dei dati presenti nel report Implosione componenti che non riportava il valore nella colonna quantità. (#TT02753/24)
+> - MS – Nel ciclo di produzione, quando si associa un materiale ad una determinata fase, questo non viene più visualizzato nell’help tra i materiali che rimangono da associare alle singole fasi.  (#TT02785/24)
+> - FI - revisione gestione assegnazione numerazione cespiti in caso di cambiamento categoria/precodice cespite (#TT02777/24)
+> - FE San Marino: Fatture di Vendita non conformi Ora è possibile riportare una fattura di vendita non conforme per l'HUB di San Marino allo stato Da Esaminare per la correzione. (rif.ticket 2791/24)
+> - FI - nei compensi professionisti, revisione campo inps carico percipienti del primo tab nel caso di calcolo manuale (#TT02802/24)
+> - FI - revisione stampa Controllo cespiti per importo del fondo in caso di alienazioni totali/parziali (#TT02537/24)
+> - SH - Modificate le descrizioni dei record in tabella fissa “Natura giuridica”, per differenziare ‘Residenti’ da ‘Non residenti’ come da tabella delle istruzioni 770 (#TT02870/24)
+> - FI - Corretto bug nella form di lancio della stampa Enasarco che non gestiva correttamente il filtro per range di date ( TT00824/24)
+> - CO - Revisione performance nuova riclassificazione di bilancio (#TT02912/24)
+> - PM: modificata proposta prezzo nelle richieste interventi ed interventi pianificati: se l'articolo non è presente e vene assegnato un progetto, articolo e prezzo sono proposti da progetto. Se l'articolo è già presente e viene assegnato un progetto, se articolo nel documento e nel progetto coincidono, il prezzo viene aggiornato da progetto. Altrimenti viene mantenuto il prezzo già presente (#TT02837/24)
+> - SCM – Se il flag Prezzo Unità di Misura Alternativa è attivo nella Richiesta di Offerta, al momento della creazione dell’Ordine fornitore da Offerta fornitore il flag sarà riportato anche nell’ordine creato (#TT02804/24).
+> - SCM – Corretto bug che non visualizzava Codice/Descrizione dell’Articolo fornitore nella form di Dettaglio righe Ordini quando l’ordine non era evaso (#TT02344/24).
+> - SCM – Le spese con flag Ripartita inserite nei riepiloghi dei documenti vengono ora ripartite sugli articoli del documento anche quando i prezzi sono a zero (#TT02336/24).  
+> - FATTURAZIONE ELETTRONICA SM: Eseguendo il ripristino della stato da Generato o scartato Hub SM a Controllato viene eliminato il file di integrazione della fattura d'acquisto SM, riportando lo stato a non esaminato viene anche resettato il nome file. (rif.ticket 3054/24)
+> - SH - Analisi Didsponibilità: il controllo che se è settao il flag distinta base ci sia settato 1 solo articolo è stato spostato quando si clicca nel ribbon button Ricerca (rif.ticket 2783/24)
+
+
 ### Patch 608.1-0045 - 14/06/2024
+
 > - WM– Implementata la possibilità di salvare l’ordinamento dell’albero della distinta base e dei prototipi nel profilo.  (#TT02677/24)
 > - WM – Corretto bug nella stampa inventario a quantità valorizzato inerente al flag storicizzazione inventario.  (#TT02708/24)
 > - BZ – Nell’importazione standard ‘Articoli e Barcode’ è possibile compilare la colonna ‘Default Forn. Pref.’ con i valori TRUE o FALSE (#TT02245/24)

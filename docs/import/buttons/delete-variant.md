@@ -1,1 +1,1 @@
-**Cancella**: permette di cancellare la riga variante selezionata.
+- **Cancella**: permette di cancellare la riga variante selezionata.

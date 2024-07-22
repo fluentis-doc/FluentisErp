@@ -60,12 +60,12 @@ Nelle prime colonne della griglia è possibile inserire un Articolo codificato, 
 Le altre tab presenti sono analoghe a quelle dell'offerta non gerarchica.     
 
 Nella barra degli strumenti sono presenti i seguenti pulsanti:     
-- **Crea nuovo prototipo**: questo bottone crea un [Prototipo](/docs/erp-home/registers/production/standardization/new-prototype) per la riga articolo selezionata; il riferimento al preventivo generato viene riportato nel tab Dati articolo, campo Preventivo. Sarà possibile modificare il prototipo generato dal relativo modulo.
-- **Associa prototipo**: con questo bottone è possibile associare l'offerta a un [Prototipo](/docs/erp-home/registers/production/standardization/new-prototype) già esistente; viene aperto un help nel quale poter scegliere tra i prototipi disponibili per quell'articolo.
-- **Apri prototipo**: questo bottone è abilitato se la riga articolo selezionata ha un Prototipo associato, e permette di aprirlo.       
-- **Nuovo figlio**: permette di inserire una riga progetto figlia della riga selezionata.        
-- **Nuovo fratello**: permette di inserire una riga progetto nello stesso livello della riga selezionata.       
-- **Sostituisci il numero WBS**: permette di incorporare al Numero WBS delle righe anche il Numero del progetto.       
-- **Implodi**: consente di nascondere le righe dell'albero.       
-- **Esplodi**: consente di visualizzare le righe dell'albero.
+> **Crea nuovo prototipo**: questo bottone crea un [Prototipo](/docs/erp-home/registers/production/standardization/new-prototype) per la riga articolo selezionata; il riferimento al preventivo generato viene riportato nel tab Dati articolo, campo Preventivo. Sarà possibile modificare il prototipo generato dal relativo modulo.      
+> **Associa prototipo**: con questo bottone è possibile associare l'offerta a un [Prototipo](/docs/erp-home/registers/production/standardization/new-prototype) già esistente; viene aperto un help nel quale poter scegliere tra i prototipi disponibili per quell'articolo.       
+> **Apri prototipo**: questo bottone è abilitato se la riga articolo selezionata ha un Prototipo associato, e permette di aprirlo.       
+> **Nuovo figlio**: permette di inserire una riga progetto figlia della riga selezionata.        
+> **Nuovo fratello**: permette di inserire una riga progetto nello stesso livello della riga selezionata.       
+> **Sostituisci il numero WBS**: permette di incorporare al Numero WBS delle righe anche il Numero del progetto.       
+> **Implodi**: consente di nascondere le righe dell'albero.       
+> **Esplodi**: consente di visualizzare le righe dell'albero.
 

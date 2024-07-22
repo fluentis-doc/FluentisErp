@@ -22,9 +22,9 @@ Le righe risultanti riportano gli stanziamenti della risorsa, con le relative ca
 In basso alla schermata è presente il flag **Imposta come confermato** se il documento deve essere creato già confermato, quindi effettivamente da pianificare.
 Oltre al flag è possibile indicare il **Tipo Richiesta di Intervento** ed il **Tipo Intervento Pianificato**.
 La priorità con cui viene considerato il Tipo Richiesta intervento o Il Tipo Intervento Pianificato è la seguente: 
-1 - se presente il Tipo Richiesta intervento o Il Tipo Intervento Pianificato nella videata della procedura, verrà utilizzato per creare i nuovi documenti
-2 - se non presenti configurazioni nella videata, verranno considerati Tipo Richiesta intervento o Il Tipo Intervento Pianificato configurati nella riga di progetto
-3 - se non presenti configurazioni nel progetto, verranno considerati Tipo Richiesta intervento o Il Tipo Intervento Pianificato configurati nei parametri generali progetto. 
+- 1 - se presente il Tipo Richiesta intervento o Il Tipo Intervento Pianificato nella videata della procedura, verrà utilizzato per creare i nuovi documenti
+- 2 - se non presenti configurazioni nella videata, verranno considerati Tipo Richiesta intervento o Il Tipo Intervento Pianificato configurati nella riga di progetto
+- 3 - se non presenti configurazioni nel progetto, verranno considerati Tipo Richiesta intervento o Il Tipo Intervento Pianificato configurati nei parametri generali progetto. 
 
 Dopo aver selezionato una riga, è possibile utilizzare i pulsanti specifici della ribbon bar per eseguire la procedura e creare una **Richiesta di Intervento** oppure un **Intervento Pianificato**.
 

@@ -64,7 +64,7 @@ Per tutte le informazioni su come codificare i barcode da leggere nel campo **Co
 
 ## Conferma Picking
 
-La form di **Conferma Picking** viene utilizzata per confermare una riga picking senza l’utilizzo però delle unità di carico, che invece vengono impiegate nella form di [Gestione spunta](/docs/logistics/wms/sales/check-row-menagement).
+A partire da un Picking esistente, senza l’utilizzo però delle unità di carico, che invece vengono create utilizzando la form di [Gestione spunta](/docs/logistics/wms/sales/check-row-menagement), con la form di **Conferma Picking** è possibile confermare le singole righe del picking, per movimentare gli articoli tra due magazzini o ubicazioni, creando direttamente i movimenti di magazzino di spostamento.
 
 Successivamente, da wpf, è poi possibile procedere alla creazione del DDT o della fattura.
 
@@ -109,7 +109,7 @@ Da questo tab è possibile selezionare un articolo spuntato e cancellarlo.
 | WM | Fluentis.FluentisErp.Mvvm.WM.ReadWrite.Views | CheckRowManagement |
 
 :::note Nota
-Per questa from deve essere impostata una causale di scarico con contropartita.
+È importante ricordare che la causale utilizzata dovrà essere una causale di scarico con una causale di carico in contropartita.
 :::
 
 Per ogni Picking verrà creata un’unica registrazione di scarico con in contropartita un’unica registrazione di carico che contiene i movimenti di tutti gli articoli spuntati. 

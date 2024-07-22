@@ -1,4 +1,4 @@
-**Duplica**: il pulsante consente la creazione di una copia di un documento, riportando tutte le condizioni del documento di origine, ma con i dati attuali.  
+- **Duplica**: il pulsante consente la creazione di una copia di un documento, riportando tutte le condizioni del documento di origine, ma con i dati attuali.  
 Utilizzata per frequenti spedizioni di merci similari dello stesso soggetto documento.
 
 > *Procedura*:  

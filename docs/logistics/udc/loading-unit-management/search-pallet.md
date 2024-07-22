@@ -20,12 +20,16 @@ Nel caso in cui un'*Unità di carico* sia stata inserita in una *lista di conseg
 
 Inoltre, è interessante notare che è anche possibile ricercare le UDC per ordine cliente a cui sono state collegate.
 
-Da questa form, è possible effettuare il carico delle UDC selezionandole e premendo il tasto **Carico UDC** e anche lo scarico (solo se già caricata e presente in una lista) tramite il pulsante **Scarico UDC**.
+Da questa form, è possibile effettuare il carico delle UDC selezionandole e premendo il tasto **Carico UDC** e anche lo scarico (solo se già caricata e presente in una lista) tramite il pulsante **Scarico UDC**.
+
+:::note ATTENZIONE
+Se si desidera trasferire articoli dal magazzino direttamente all'interno dell'unità di carico, utilizzando una causale di carico per inserire gli articoli nell'unità e una contropartita di scarico per rimuoverli dal magazzino, è importante ricordare di spostare prima gli articoli nell'ubicazione indicata nella causale di contropartita.
+:::
 
 *Pulsanti specifici*:
 
 > **Nuovo**: il pulsante permette di [Creare un nuovo UDC](/docs/logistics/udc/loading-unit-management/insert-new-pallet);  
-> **Reso cliente**: prememte di creare una nuova *Unità di carico*, utilizzando come *Tipo UDC* quella con il flag *Per Reso* abilitato e tutte le altre proprietà sono copiate dall'*Unità di carico* originale; questo pulsante si abilita solo per righe che sono caricate e consegnate;  
+> **Reso cliente**: permette di creare una nuova *Unità di carico*, utilizzando come *Tipo UDC* quella con il flag *Per Reso* abilitato e tutte le altre proprietà sono copiate dall'*Unità di carico* originale; questo pulsante si abilita solo per righe che sono caricate e consegnate;  
 > **Inserimento ordini in UDC**: permette di inserire gli articoli di un ordine cliente all'interno di una *Unità di carico*. Questa procedura crea un legame tra l'UDC e l'Ordine cliente;  
 > **Carico UDC**: esegue la procedura di creazione di registrazione/movimento di carico dell'*Unità di carico*;          
 > **Scarico UDC**: esegue la procedura di creazione di registrazione/movimento di scarico dell'*Unità di carico*; questo è abilitato solamente se l'*Unità di carico* è presente in una lista di prelievo UDC;            

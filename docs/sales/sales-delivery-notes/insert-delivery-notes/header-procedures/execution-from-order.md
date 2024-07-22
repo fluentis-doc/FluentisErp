@@ -3,7 +3,7 @@ title: Evasione da ordine
 sidebar_position: 1
 ---
 
-Nella testata del DDT, premendo il pulsante **Evasione da ordine** si aprirà la form dove è possibile filtrare gli ordini relativi al cliente del documento.
+Nella testata del DDT, premendo il pulsante **Evasione da ordine** si aprirà la form dove è possibile filtrare gli ordini relativi al cliente del documento e trasferirli nel DDT. E' possibile eseguire l'operazione di creazione DDT da ordine anche dalla [Ricerca ordini](/docs/sales/sales-orders/search-sales-orders).
 
 Tramite questa procedura è possibile creare un DDT di vendita dall'evasione del relativo ordine cliente. E' quindi possibile inserire gli articoli all'interno del DDT, evadendo totalmente o parzialmente un intero ordine o una riga.
 
@@ -11,11 +11,8 @@ Per poter utilizzare questa procedura vi sono delle condizioni iniziali che devo
 
  -  i/il cliente degli ordini deve essere lo stesso del DDT;
  -  l'ordine che si vuole evadere deve avere impostato il flag *Stampato* e la *Data conferma ordine*;
- -  i tipi documento devono essere compatibili: nella tabella dei *Tipi ordini* il tipo ordine che si vuole evadere deve avere impostato il tipo DDT corrispondente, mentre nella tabella dei *Tipi DDT* deve essere presente il flag su *Ordine* (che indica che il DDT deriva da un ordine).
-
-:::note Nota
-I tipi ordine che contengono righe raggruppate non potranno essere evasi attualmente con questa procedura; di conseguenza andandoli a ricercare nella form di evasione ordini non compariranno.
-:::
+ -  nella tabella [Tipi DDT](/docs/configurations/tables/sales/delivery-notes-type) deve essere presente il flag su *Ordine* (che indica che il DDT può derivare da un ordine).    
+ - solo se la procedura viene eseguita dalla Ricerca ordini, i tipi documento devono essere compatibili: nella tabella [Tipi ordine](/docs/configurations/tables/sales/sales-order-types) il tipo ordine che si vuole evadere deve avere impostato il tipo DDT corrispondente.        
 
 Si dovrà poi andare ad impostare nella testata del nuovo DDT, il *Tipo DDT* che si vuole creare (che deve corrispondere a quello impostato nella tabella dei *Tipi ordini*) e il *Cliente*. Una volta inseriti questi dati, bisognerà cliccare sul pulsante *Evasione ordini* per aprire la form di evasione.
 

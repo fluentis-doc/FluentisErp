@@ -3,6 +3,108 @@ title: Patch notes Versione 705
 sidebar_position: 1
 ---
 
+
+### Patch 705.1-0029 - 18/07/2024
+> - CO - Registrazioni extracontabili di chiusura ( TT03214/24)
+> - FI - revisione gestione test di validazione della causale contabile nel corso delle contabilizzazioni (#TT03062/24 - #TT03060/24)
+> - SD - Fix AgentSettlement report - calculation problem (TT03225/24).
+> - SD – Revisione test controllo della nazione cedente/prestatore in fattura Sdi per autofatture, da campo nazione al campo codice iso della partita iva. (#TT03368/24)
+> - WM - Nel picking, migliorata l'accessibilità al campo lotto nel caso in cui si riapra un picking e l'utente vari la quantità nel campo quantità prelievo. Prima era necessario cambiare riga prima di variare il lotto, mentre ora non è più necessario. (#TT03228/24)
+> - MS – Corretto bug nel rilascio degli ordini pianificati di acquisto, ora le RDA create vengono raggruppate correttamente per cliente, tipo e anno. (#TT03382/24)
+> - MES - Corretto bug nella lista prelievo materiali che non variava correttamente lo stato degli ordini di produzione da lanciato ad esecutivo se venivano elaborati più di uno alla volta. (#TT03383/24)
+> - SD - Corretto errore che non permetteva di effettuare un ordinamento per stato evasione nella griglia degli Ordini clienti (#TT03404/24)
+> - WM - In visualizzazione giacenze, i decimali utilizzati dall'UM alternativa utilizzati, sono quelli indicati sul campo UM decimali dell'UM alternativa utilizzata. (#TT03313/24)
+> - FI - nella contabilizzazione fatture di vendita, allineamento della gestione del cambio per la sezione dei centri di costo ( TT02172/24)
+> - SCM - contabilizzazione fatture di acquisto, assegnazione divisione alle righe di movimento centro di costo per righe di spese finali (TT03239/24)
+> - FI - corretto bug nella generazione solleciti che anziché aggiornare la riga per solleciti successivi al primo creava righe diverse. Rif. #TT03219/24
+
+### Patch 705.1-0028 - 12/07/2024
+> - revisione memorizzazione credito anno precedente da stampa definitiva liquidazione iva periodica di gennaio (#TT02348/24)
+> - PM:  planner e wbs associazione risorse - rimosse dalla visualizzazione attività già collegate ad interventi (#TT03248/24 )
+> - CRM: email da campagne crm - bloccato ricaricamento template email, dopo che l'utente ha fatto delle modifiche pre - invio (#TT03253/24)
+> - SD – Corretto errore che non aggiornava correttamente gli sconti finali a seguito di una modifica della soluzione di pagamento (#TT03200/24).
+> - CO - Risolto bug nel report Distinta base valorizzata nel quale non venivano visualizzati i valori del costo dei materiali. (#TT03281/24)
+> - MES – Corretto bug nelle dichiarazioni di produzione, non veniva riportato correttamente il valore dell’ubicazione del lotto nel movimento di magazzino di scarico del materiale. (#TT02156/24)
+> - FI - la contabilizzazione effetti assegna la data chiusura commissioni in base alla scadenza effetto (#TT02657/24)
+> - FI - Errore registrazione in prima nota di incasso da cliente ( TT03209/24)
+> - MES – Implementata nell’ordine di produzione la possibilità di scaricare i materiali per cliente / fornitore. (#TT03210/24)
+> - Implementazione WEBAPI modulo Picking Import/export e Scarico Picking anche con l'importazione dei lotti/serial number (rif.ticket 2551/24)
+> - SD: Widget Sconti: corretto calcolo totali di riga e documento nella creazione DDT e Fatture da Picking creati da Ordine con l'uso del widget Sconti (rif.ticket 3333/24)
+
+### Patch 705.1-0027 - 08/07/2024
+> - Browser - fix ‘Download attachment‘ no longer working
+> - Solved problem for Missing customer Prefix
+> - Solved bug to export BizLink document on WebApp
+> - Optimize ExcelImport Parameters for Blazor
+> - PM: Calendario - gestita visualizzazione periodi ferie con sfondo di colore arancione, anche in modalità timeline ( #TT03117/24)
+> - SCM - in contabilizzazione fatture di acquisto, revisione assegnazione data registrazione per storno automatico della registrazione “fatture da ricevere” (#TT03056/24)
+
+### Patch 705.1-0026 - 04/07/2024
+> - SH - Corretto bug che, nel caso di contatto con nazione diversa da IT, non rendeva visibile nei dettagli cliente / fornitore, il campo Regime fiscale se non dopo chiusura e riapertura form. Rif. #TT02158/24
+> - Solved bug to create script events for Sdi documents
+> - Solved bug to analize paramaters for Sdi Documents
+> - SH - aggiunto nuovo parametro al commando di duplica contatti per decidere se i sottoconti collegati devono essere duplicati per tutte le società o solo per quella corrente ( TT02592/24)
+> - SH – Tab Anagrafica contatti – Corretta anomalia per la quale se impostato un profilo nell’anagrafica contatti il tab di raggruppamento parametri cli/for veniva nascosto (#TT02346/24)
+> - Solved bug for algo with Missing base class
+> - FI - Errato calcolo liquidazione iva ( TT03165/24)
+> - FI - la contabilizzazione effetti assegna la data chiusura commissioni in base alla scadenza effetto (#TT02657/24)
+> - FI - corretto bug che non faceva valorizzare i centri di costo contabilizzando le scritture di assestamento. Rif   #TT02905/24
+
+
+
+### Patch 705.1-0025 - 01/07/2024
+> - Update Document status notification for SanMarino documents
+> - RO migration – add Border Crossing points Custom Offices
+> - SCM – Corretto errore che non aggiornava lo stato evasione delle RDA a seguito dell’attivazione del flag Evaso forzatamente sulle righe articolo (#TT02937/24).
+> - CO - revisione nuova riclassificazione per gestione tree ( TT02912/24)
+> - PM: al cambio risorsa intervento, corretto aggiornamento risorsa e dipendente in tutti i punti in cui il dato è presente all’interno dell’intervento (#TT02759/24)
+> - Fix script compilation
+
+### Patch 705.1-0024 - 28/06/2024
+> - Fix create image source based on extension
+> - Custom SDI script (#TT02987/24)
+> - Set format to automatic for numbers on BlazorExcel Imports
+> - FI - Corretto bug nella form di lancio della stampa Enasarco che non gestiva correttamente il filtro per range di date ( TT00824/24)
+> - CO - Revisione performance nuova riclassificazione di bilancio (#TT02912/24)
+> - FI: WEB migliorato filtro nella ricerca registrazioni contabili per la causale contabile (#TT03007/24)
+> - WMS – Corretto bug nella visualizzazione dei numeri con decimali. (#TT02080/24)
+> - WM - Corretto bug nella form Dettaglio movimenti in cui venivano visualizzati in maniera errata le quantità calcolate nell’UM alternativa. (#TT02902/24)
+> - SD - Corretto errore che non memorizzava il tipo Stampa nella tabella Tipi Ordine Cliente (#TT02985/24).
+> - CRM - FL Browser: crm campaign email sent without pictures (#TT02986/24)
+> - PM: WEB Planner, corretto caso per conversione in intervento di più pianificati in contemporanea ( #TT02913/24)
+> - SD: corretto caso in cui nella griglia di ricerca fatture veniva visualizzato zero nella colonna “Totale Imponibile” nonostante il documento contenesse i valori corretti (#TT02991/24)
+> - PM: modificata proposta prezzo nelle richieste interventi ed interventi pianificati: se l'articolo non è presente e vene assegnato un progetto, articolo e prezzo sono proposti da progetto. Se l'articolo è già presente e viene assegnato un progetto, se articolo nel documento e nel progetto coincidono, il prezzo viene aggiornato da progetto. Altrimenti viene mantenuto il prezzo già presente (#TT02837/24)
+> - SCM – Se il flag Prezzo Unità di Misura Alternativa è attivo nella Richiesta di Offerta, al momento della creazione dell’Ordine fornitore da Offerta fornitore il flag sarà riportato anche nell’ordine creato (#TT02804/24).
+> - Form Evasione: Risolta sincronizzazione tra generazione evasione e refresh griglia evasione che in alcuni casi restituiva un exception di valore null (rif.ticket 2661/24)
+> - SD – Stampa ordine – Corretta anomalia in stampa destinazione (#TT02733/24)
+> - CRM - riabilitato expander in griglia ricerca contatti (#TT02880/24)
+> - Version 10 from RO declaration 300
+> - PM: migliorate segnalazioni di servizi sovrapposti negli interventi (#TT02891/24)
+> - WM-Add WebAPI Picking Import, Export and WarehousePosting operations (TT02108/24)
+> - Ogetto - SdiPurchaseInvoice - aggiungere nuove proprieta: CurrencyCode, BaseAmount, VatAmount, TotalAmount(#TT03008/24)
+> - Solved bug edit script on new script 
+> - PR - Wrong posting from vendor payments ( TT03031/24)
+> - It allows the coexistence of an algorithm created with arm and a script type one
+> - FI - missing accounting link for maturitiespayments ( TT02885/24)
+> - CRM: WEB - al momento del salvataggio contatto, se presente workflow con attivazione su specifica condizione, viene mostrato subito senza necessità di chiudere e riaprire il contatto (#TT02881/24)
+> - CRM: WEB - nelle campagne, se il contatto presenta il Workflow associato, viene mostrato correttamente con la possibilità di avanzare-retrocedere di stato (#TT03010/24)
+> - CRM: WEB rese visibili stelle nella colonna qualità contatto della griglia ricerca contatti (#TT02989/24)
+> - PM: web - filtro per stato flag "gestito" impostabile come vero/falso/entrambi (#TT02869/24)
+> - SD - Ripresa provvigioni per range sconto: corretta applicazione % di provvigione errata dovuta all'arrotondamento del valore netto riga (rif.ticket 2974/24)
+> - SCM – Corretto bug che non visualizzava Codice/Descrizione dell’Articolo fornitore nella form di Dettaglio righe Ordini quando l’ordine non era evaso (#TT02344/24).
+> - SCM – Le spese con flag Ripartita inserite nei riepiloghi dei documenti vengono ora ripartite sugli articoli del documento anche quando i prezzi sono a zero (#TT02336/24).  
+> - MES - Corretto bug relativo al campo "Prenotazione lotto di carico" dell'ordine di produzione che non veniva riportato correttamente nella dichiarazione di produzione.  (#TT03079/24)
+> - MES - Aggiunto il campo difetto nelle dichiarazioni di produzione. Questo si abilità solamente dopo aver inserito una quantità scartata maggiore di zero.
+> - (#TT01887/24)
+> - SD – Implementation of Simplified Discounts (#TT02571/24)
+> - SH - Discount for payment logic modifications (#TT03023/24)
+> - FI - nuovo parametro generale per gestire l’emissione solleciti su partite chiuse ( TT02936/24)
+> - ARM – reprocess custom scripts when publishing server
+> - SD - Correzione grammaticale dell’avviso uscente quando sono presenti sconti con la stessa priorità: la parola sbagliata ‘sequente’ è stata corretta in ‘seguente’ (#TT03073/24)
+> - SD - Ripresa Provvigioni per range di sconto: se sono definite delle righe provvigioni 0 vengono considerate come fossero un numero valido anche nel caso di più righe definizione per range di sconto e categoria provvigione diversa. Se non si vuole considerare la provvigione 0 non deve essere specificata nella definizione (rif.ticket 2859/24)
+> - FATTURAZIONE ELETTRONICA SM: Eseguendo il ripristino della stato da Generato o scartato Hub SM a Controllato viene eliminato il file di integrazione della fattura d'acquisto SM, riportando lo stato a non esaminato viene anche resettato il nome file. (rif.ticket 3054/24)
+> - SH - Analisi Didsponibilità: il controllo che se è settao il flag distinta base ci sia settato 1 solo articolo è stato spostato quando si clicca nel ribbon button Ricerca (rif.ticket 2783/24)
+
 ### Patch 705.1-0023 - 21/06/2024
 > - SD – Add ConvertAllSelectedOffersToSalesOrders static method for scripting(TT01258/21)
 > - SH – Import excel listini di vendita – Corrette anomalie in fase di duplicazione tracciato e in caso di import del cliente in anagrafica articolo (#TT02871/24)

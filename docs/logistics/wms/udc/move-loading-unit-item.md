@@ -4,9 +4,10 @@ sidebar_position: 7
 ---
 
 Questa procedura è utilizzata per spostare un articolo da un'unità di carico di partenza ad un'altra unità di carico di destinazione.      
-Alla lettura della prima unità di carico, questa viene inserita come unità di carico di partenza e vengono visualizzati nella griglia sottostante tutti gli articoli contenuti al suo interno.       
+Alla lettura della prima unità di carico, questa viene inserita come unità di carico di partenza e vengono visualizzati nella griglia sottostante tutti gli articoli contenuti al suo interno, con l’indicazione di: *codice articolo*, *quantità*, *lotto* e *descrizione articolo*.        
 La seconda lettura, invece, va ad inserire l'unità di carico di destinazione ed ogni successiva lettura di unità di carico verrà considerata come la nuova destinazione.      
-Lo step successivo è quello di leggere l'articolo da spostare (che in automatico viene flaggato nella griglia sottostante) e inserire la quantità per poi premere il pulsante **Sposta** per effettuare il movimento di scarico dall'unità di carico di partenza e di carico nell'unità di carico di destinazione.           
+Lo step successivo è quello di leggere l'articolo da spostare (che in automatico viene flaggato nella griglia sottostante) ed inserire la quantità; anche in questa form se l'articolo è gestito a lotti viene visualizzato anche il relativo campo di inserimento.      
+Dopo di che sarà sufficiente premere il pulsante **Sposta** per effettuare il movimento di scarico dall'unità di carico di partenza e di carico nell'unità di carico di destinazione.           
 Il pulsante **Pulisci tutto** permette di svuotare la form da tutti i dati inseriti.     
 
 :::note Regole da tenere presente per il corretto utilizzo della form:

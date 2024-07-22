@@ -51,7 +51,7 @@ In questa tab sono presenti due aree liberamente compilabili: **Soluzione** e **
 **Tab Stima**
 In questa tab è possibile inserire una stima dell’intervento pianificato attraverso questi dati:
 **Unità di Misura**: contiene l’UM da utilizzare per quantificare l’intervento;
-**Listino di vendita**: è possibile collegare un [Listino](/docs/sales/sales-price-list/search-sales-price-list) di vendita da cui prendere le informazioni;
+**Listino di vendita**: è possibile collegare un [Listino](/docs/sales/sales-price-list/insert-sales-price-list/) di vendita da cui prendere le informazioni;
 **Quantità**: è possibile compilare direttamente in questa tab il tempo effettivo, che comparirà nel relativo campo nella tab Risorsa;
 **Prezzo netto unitario**: contiene il prezzo unitario in base all’UM;
 **Importo totale**: è un campo calcolato in base ai dati inseriti in precedenza;

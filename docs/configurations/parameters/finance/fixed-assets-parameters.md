@@ -10,6 +10,8 @@ I parametri del modulo Cespiti si trovano in **Parametri > Amministrativa**.
 > **Salva parametri**: permette di salvare i parametri impostati.  
 > **Annulla impostazioni**: permette di annullare le impostazioni.  
 
+*Campi specifici*:
+
 **Verifica precodice**: se il flag è settato, il precodice deve essere predefinito in tabella e non può essere impostato liberamente nella creazione del cespite.
 
 **Gestione precodice per società**: con questa spunta attiva la lettura dalla tabella **Precodice cespite** e la verifica del precodice sarà relativa alla singola società anzichè riferirsi a tutti i precodici di tutte le società presenti nel db 

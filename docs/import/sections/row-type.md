@@ -1,4 +1,4 @@
-**Tipo riga** offre la possibilità di selezionare, dalla combo-box, articoli con caratteristiche diverse.
+- **Tipo riga** offre la possibilità di selezionare, dalla combo-box, articoli con caratteristiche diverse.
 
 :::note Nota
 Se si parte direttamente con l'inserimento dell'articolo, la sua *classe*, il *codice* e il *tipo riga - Articolo codificato* vengono inseriti automaticamente.
