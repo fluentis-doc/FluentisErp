@@ -238,6 +238,9 @@ const config = {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           showLastUpdateTime: false,
+          editUrl:
+            'https://github.com/fluentis-doc/FluentisErp/blob/website-edits/',
+          editLocalizedFiles: true,
         },
         blog: {
           showReadingTime: true,
