@@ -239,7 +239,7 @@ const config = {
           // Please change this to your repo.
           showLastUpdateTime: false,
           editUrl:
-            'https://github.com/fluentis-doc/FluentisErp/blob/website-edits/',
+            'https://github.com/fluentis-doc/FluentisErp/edit/website-edits/',
           editLocalizedFiles: true,
         },
         blog: {
