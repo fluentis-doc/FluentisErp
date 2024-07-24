@@ -3,7 +3,7 @@ title: Caută ordine furnizori
 sidebar_position: 2
 ---
 
-Fereastra de cautare ordine furnizori a fost conceputa pentru a permite utilizatorului să caute cu uşurinţă ordinele introduse anterior, în scopul de a le vizualiza, edita sau şterge, doar pe baza drepturilor alocate fiecarui utilizator.
+Fereastra de cautare ordine furnizori a fost conceputa pentru a permite utilizatorului să caute cu uşurinţă ordinele introduse anterior, în scopul de a le vizualiza, edita sau sterge, doar pe baza drepturilor alocate fiecarui utilizator.
 
 *Butoane specifice*:
 
