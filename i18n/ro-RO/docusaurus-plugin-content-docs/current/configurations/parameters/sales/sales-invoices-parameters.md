@@ -11,8 +11,8 @@ Parametrii Facturilor de vânzare permit setarea de bază pentru gestionarea co
 
 ### Generale
 
-**Propune comision inserat în antetul documentului pentru toate articolele** : această procedură nu mai este utilizată.  
-**Inserează comisioane în tipurile de linie 6 și 7(avans/storno)**: semnalează faptul că liniiile avans și storno gestionează comisioanele agenți.  
+**Propune comision pentru toate articolele**: această procedură nu mai este utilizată.  
+**Inserează comisioane în tipurile de linie 6 și 7(avans/storno)**: dacă este activ, permite inserarea și gestionarea comisioanelor și pentru tipurile de linii 6 și 7 ale facturilor. Detalii în [Inserare facturi](/docs/sales/sales-invoices/invoicing/invoicing-intro).   
 **Gestionare unitate de măsură dublă**: când este setat, se abilitează combo box-urile UM Alt şi coloana Cantitate alternativă în grid articole din facturi.  
 **Propune automat U.M. alternativă**: acest check se activează doar dacă *Gestionare unitate de măsură dublă*  este activ. când este inserat un articol care conţine în registrul său, în tab UM alternativă o UM alternativa implicită, această UM este automat propusă ca UM alternativa pentru articol şi este calculată şi cantitatea alternativă folosind factorul de conversie al acesteia.  
 **Recuperare din ziua curentă**: când este activ, recuperarea golurilor de numerotare se realizează automat doar pentru ziua curentă.  
