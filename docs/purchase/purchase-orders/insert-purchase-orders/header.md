@@ -3,15 +3,24 @@ title: Testata
 sidebar_position: 2
 ---
 
+### Testata 
+
 Dopo aver selezionato i dati obbligatori nella sezione superiore, l'utente può continuare l'inserimento dei seguenti dati [manualmente](/docs/guide/operations-with-data/manual-entry-or-help-and-data-selection#inserimento-manuale) oppure con l'[help di campo](/docs/guide/operations-with-data/manual-entry-or-help-and-data-selection#inserimento-con-il-help-di-campo).
 
 :::note Ricorda
 Se il documento viene *creato automaticamente*, ad esempio dal filtro di ricerca degli [**Ordini clienti**](/docs/sales/sales-orders/search-sales-orders), dalla procedura di [**Creazione automatica ordini**](/docs/purchase/purchase-orders/procedures/create-purchase-orders-from-purchase-requests) o dalla procedura di [**Creazione ordine fornitore da offerta fornitore**](/docs/purchase/offer-request/order-creation), questi dati vengono ripresi dal *documento d'origine* da cui è stato generato.
 :::
 
-Inserendo il **Fornitore** vengono proposti in automatico tutti i dati specifici impostati in precedenza nell'[anagrafica fornitore](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/accounting-data-intro). Tra questi ricordiamo: [*Divisa*](/docs/configurations/tables/general-settings/currencies), *Cambio*, *Data valuta*,  [*Nazione*](/docs/guide/glossary/glossary-intro#country), *Lingua*, *Zona*, [*Spedizioni*](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/delivery), *Porto*, *Imballo*, [Listino](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/price-list#listini) predefinito e il suo intervallo di validità, [*Pagamenti*](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/payments), *Sconti*, *Destinazione* e *Vettore*.    Tutti questi campi possono essere cancellati oppure modificati manualmente dall'utente.
+Inserendo il **Fornitore** vengono proposti in automatico tutti i dati specifici del tab **Testata**, secondo i dati impostati in precedenza nell'[anagrafica fornitore](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/accounting-data-intro) nei campi corrispondenti al suo indirizzo e nelle sezioni: 
 
-### Campi facoltativi
+- **Divisa**: sezione contenente i dati [Divisa](/docs/configurations/tables/general-settings/currencies), [Cambio](/docs/guide/glossary/glossary-intro#currency-exchange), [Data valuta](/docs/guide/glossary/glossary-intro#currency-date).   
+- **Nazione**: sezione contenente i dati [*Nazione*](/docs/guide/glossary/glossary-intro#country), [Lingua](/docs/guide/glossary/glossary-intro#language), [Zona](/docs/guide/glossary/glossary-intro#zone).   
+- **Spedizione**: sezione contenente i dati [*Spedizioni*](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/delivery), [Porto](/docs/guide/glossary/glossary-intro#carriage), [Imballo](/docs/guide/glossary/glossary-intro#packing), [Listino](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/price-list#listini) predefinito e il suo [intervallo di validità](/docs/guide/glossary/glossary-intro#validity-date).
+- **Pagamenti**: sezione contenente i dati [*Pagamenti*](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/payments), *Sconti*, *Destinazione* e *Vettore*.    
+
+Tutti questi campi possono essere cancellati oppure modificati manualmente dall'utente.
+
+*Campi facoltativi*:
 
 > **Data richiesta consegna** e **Data consegna**: se impostate prima di inserire gli articoli all'interno dell'ordine esse saranno riportate anche sulle singole righe articolo. In alternativa sarà sufficiente premere il pulsante *Sostituisci data prevista consegna nelle righe* nella ribbon bar per aggiornare le date sulle righe articolo.   
 > **Data conferma ordine**: per i *Tipi ordine* che hanno il flag [Conferma ordine automatica](/docs/configurations/tables/purchase/purchase-orders-type) viene inserita in automatico la data corrente al momento di creazione dell'ordine. Per poter effettuare l'evasione di un ordine fornitore è necessario inserire una *Data conferma*.   
@@ -59,7 +68,7 @@ Se il documento nasce da una commessa o da un'offerta fornitore il tipo pagament
 
 ### Sconti 
 
-Vengono proposti solo gli sconti predefiniti ripresi dall'*Anagrafica fornitore > tab Sconti* e non quelli attribuiti alle condizioni di pagamento o a certi articoli.. Possono essere modificate/cancellate dall'utente.
+Vengono proposti solo gli sconti predefiniti ripresi dall'*Anagrafica fornitore > tab Sconti*. Possono essere modificati/cancellati dall'utente.
 
 import TabDiscount from './../../../import/sections/tab-discount.md'
 
