@@ -15,24 +15,33 @@ on:
 jobs:
   create-issues:
     runs-on: ubuntu-latest
+    permissions:
+        issues: write
+        contents: write
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
         with:
-          fetch-depth: 2 # Fetch at least 2 commits to compare HEAD with HEAD^
+          fetch-depth: 0 # Fetch at least 2 commits to compare HEAD with HEAD^
 
       - name: Get modified and deleted .md files from the last commit
         id: get-files
         run: |
-          # Get list of modified .md files
-          modified_files=$(git diff-tree --no-commit-id --name-status -r HEAD | grep -E '^M\s.*\.md$' | awk '{print $2}' | grep '^docs/')
-          echo "Modified files: $modified_files"
-          echo "modified_files=$modified_files" >> $GITHUB_ENV
+            # Get list of modified .md files
+            modified_files=$(git diff-tree --no-commit-id --name-status -r HEAD | grep -E '^M\s.*\.md$' | awk '{print $2}' | grep '^docs/' || true)
+            echo "Modified files: $modified_files"
+            echo "modified_files=$modified_files" >> $GITHUB_ENV
 
-          # Get list of deleted .md files
-          deleted_files=$(git diff-tree --no-commit-id --name-status -r HEAD | grep -E '^D\s.*\.md$' | awk '{print $2}' | grep '^docs/')
-          echo "Deleted files: $deleted_files"
-          echo "deleted_files=$deleted_files" >> $GITHUB_ENV
+            # Get list of deleted .md files
+            deleted_files=$(git diff-tree --no-commit-id --name-status -r HEAD | grep -E '^D\s.*\.md$' | awk '{print $2}' | grep '^docs/' || true)
+            echo "Deleted files: $deleted_files"
+            echo "deleted_files=$deleted_files" >> $GITHUB_ENV
+
+            # Handle no matching files gracefully
+            if [ -z "$modified_files" ] && [ -z "$deleted_files" ]; then
+            echo "No modified or deleted .md files found in the docs/ folder."
+            exit 0
+            fi
 
       - name: Define languages and teams
         id: define-teams
