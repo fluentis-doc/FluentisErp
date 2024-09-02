@@ -68,7 +68,7 @@ jobs:
                 echo "DEBUG: Final environment variables:"
                 echo "modified_files=$MODIFIED_FILES"
                 echo "deleted_files=$DELETED_FILES"
-                
+
       - name: Create issues for translation review
         if: ${{ env.modified_files != '' || env.deleted_files != '' }}
         env:
@@ -77,15 +77,32 @@ jobs:
             DELETED_FILES: ${{ env.deleted_files }}
             LANGUAGES: "en-US ro-RO hr-HR" # List of languages
         run: |
+            # Define mappings of languages to team member usernames
+            declare -A team_usernames
+            team_usernames=( 
+                ["en-US"]="adi-fluentis" 
+                ["ro-RO"]="adi-fluentis" 
+                ["hr-HR"]="adi-fluentis" 
+            )
+
             # Convert space-separated lists to newline-separated lists
             modified_files=$(echo "$MODIFIED_FILES" | tr ' ' '\n')
             deleted_files=$(echo "$DELETED_FILES" | tr ' ' '\n')
 
             # Process each language
             for LANG in $LANGUAGES; do
+
+                # Get the team member username for the current language
+                team_member=${team_usernames[$LANG]}
+
+                #team_name="translation-team-${LANG}" # Assume your teams are named with the full locale
+                team_name="@translation-team-${LANG:0:2}"
+                
+
                 # Initialize the body for modified files
                 if [ -n "$modified_files" ]; then
                 body="The following files have been modified and need to be reviewed for translation to **${LANG} language**:\n"
+                body+="\n/cc @${team_name}\n" # Mention the team in the body
                 for file in $modified_files; do
                     body+="- ${file}\n"
                 done
@@ -99,7 +116,7 @@ jobs:
                 # Create the GitHub issue using the temporary file for the body
                 gh issue create \
                     --title "${LANG} - Review modified files in docs folder" \
-                    --assignee "@translation-team-${LANG:0:2}" \
+                    --assignee "$team_member" \
                     --label "translation" \
                     --body-file "$temp_file"
 
@@ -123,7 +140,7 @@ jobs:
                 # Create the GitHub issue using the temporary file for the body
                 gh issue create \
                     --title "${LANG} - Review deleted files in docs folder" \
-                    --assignee "@translation-team-${LANG:0:2}" \
+                    --assignee "$team_member" \
                     --label "translation" \
                     --body-file "$temp_file"
 
