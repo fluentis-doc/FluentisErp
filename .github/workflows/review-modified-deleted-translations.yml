@@ -96,7 +96,7 @@ jobs:
                 team_member=${team_usernames[$LANG]}
 
                 #team_name="translation-team-${LANG}" # Assume your teams are named with the full locale
-                team_name="@translation-team-${LANG:0:2}"
+                team_name="translation-team-${LANG:0:2}"
                 
 
                 # Initialize the body for modified files
@@ -117,7 +117,7 @@ jobs:
                 gh issue create \
                     --title "${LANG} - Review modified files in docs folder" \
                     --assignee "$team_member" \
-                    --label "translation" \
+                    --label "modified-review-translation,${LANG}" \
                     --body-file "$temp_file"
 
                 # Clean up the temporary file
@@ -141,7 +141,7 @@ jobs:
                 gh issue create \
                     --title "${LANG} - Review deleted files in docs folder" \
                     --assignee "$team_member" \
-                    --label "translation" \
+                    --label "deleted-review-translation,${LANG}" \
                     --body-file "$temp_file"
 
                 # Clean up the temporary file
