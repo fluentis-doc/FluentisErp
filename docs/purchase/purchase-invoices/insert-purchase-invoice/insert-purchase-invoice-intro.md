@@ -4,6 +4,7 @@ sidebar_position: 1
 ---
 
 La form si apre tramite il perc **Acquisti > Fatture di acquisto > Nuova fattura** oppure tramite il pulsante **Nuova** che si trova nella form [Ricerca fatture di acquisto](/docs/purchase/purchase-invoices/search-purchase-invoices).
+La form si apre tramite il perc **Acquisti > Fatture di acquisto > Nuova fattura** oppure tramite il pulsante **Nuova** che si trova nella form [Ricerca fatture di acquisto](/docs/purchase/purchase-invoices/search-purchase-invoices).
 
 *Dati obbligatori*:
 
