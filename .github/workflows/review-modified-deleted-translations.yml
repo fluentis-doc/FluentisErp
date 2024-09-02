@@ -69,84 +69,52 @@ jobs:
           echo "languages=${languages[*]}" >> $GITHUB_ENV
           echo "team_names=${team_names[*]}" >> $GITHUB_ENV
 
-      - name: Create issues for modified files
-        if: env.modified_files != ''
+      - name: Create issues for each team
+        if: env.deleted_files != '' || env.modified_files != ''
         run: |
-          # Read the languages and teams from the environment variables
-          IFS=' ' read -r -a languages <<< "$languages"
-          IFS=' ' read -r -a team_names <<< "$team_names"
-
-          # Debug: Print the parsed languages and teams
-          echo "Parsed languages: ${languages[@]}"
-          echo "Parsed team names: ${team_names[@]}"
-
-          # Create issues for modified files
-          for i in ${!languages[@]}; do
-            lang=${languages[$i]}
-            team=${team_names[$i]}
-
-            # Debug: Print current language and team
-            echo "Processing language: $lang, Team: $team"
-
-            # Check if there are any modified files for this language
-            lang_files=$(echo "$modified_files" | grep "locale-${lang}/")
-            echo "Modified files for $lang: $lang_files"
-
-            if [ -n "$lang_files" ]; then
-              # Create GitHub issue for modified files
-              body="The following files have been modified and need to be reviewed for translation to ${lang}:\n"
-              for file in $lang_files; do
-                body+="- [${file}](../edit/locale-${lang}/${file})\n"
-              done
-
-              # Debug: Print issue body content
-              echo "Issue body content for modified files - $lang: $body"
-
-              gh issue create \
-                --title "Review translations for modified files - ${lang}" \
-                --body "$body" \
-                --assignee "@${team}" \
-                --label "translation"
-            fi
-          done
-
-      - name: Create issues for deleted files
-        if: env.deleted_files != ''
-        run: |
-          # Read the languages and teams from the environment variables
-          IFS=' ' read -r -a languages <<< "$languages"
-          IFS=' ' read -r -a team_names <<< "$team_names"
-
-          # Debug: Print the parsed languages and teams
-          echo "Parsed languages: ${languages[@]}"
-          echo "Parsed team names: ${team_names[@]}"
-
-          # Create issues for deleted files
-          for i in ${!languages[@]}; do
-            lang=${languages[$i]}
-            team=${team_names[$i]}
-
-            # Debug: Print current language and team
-            echo "Processing language: $lang, Team: $team"
-
-            # Check if there are any deleted files for this language
-            lang_files=$(echo "$deleted_files" | grep "locale-${lang}/")
-            echo "Deleted files for $lang: $lang_files"
-
-            if [ -n "$lang_files" ]; then
-              # Create GitHub issue for deleted files
-              body="The following files have been deleted and need to be reviewed for translation to ${lang}:\n"
-              for file in $lang_files; do
-                body+="- ${file}\n"
-              done
-
-              # Debug: Print issue body content
-              echo "Issue body content for deleted files - $lang: $body"
-
-              gh issue create \
-                --title "Review translations for deleted files - ${lang}" \
-                --body "$body" \
-                --assignee "@${team}" \
-                --label "translation"
-            fi
-          done
+            # Read the languages and teams from the environment variables
+            IFS=' ' read -r -a languages <<< "$languages"
+            IFS=' ' read -r -a team_names <<< "$team_names"
+        
+            echo "Parsed languages: ${languages[@]}"
+            echo "Parsed team names: ${team_names[@]}"
+        
+            # Create issues for each language team
+            for i in ${!languages[@]}; do
+                lang=${languages[$i]}
+                team=${team_names[$i]}
+        
+                echo "Processing language: $lang, Team: $team"
+        
+                # Prepare the issue body for modified files
+                if [ -n "$modified_files" ]; then
+                body="The following files have been modified and need to be reviewed for translation to ${lang}:\n"
+                for file in $modified_files; do
+                    body+="- ${file}\n"
+                done
+        
+                echo "Issue body content for modified files - $lang: $body"
+        
+                gh issue create \
+                    --title "Review modified files in docs folder - ${lang}" \
+                    --body "$body" \
+                    --assignee "@${team}" \
+                    --label "translation"
+                fi
+        
+                # Prepare the issue body for deleted files
+                if [ -n "$deleted_files" ]; then
+                body="The following files have been deleted and need to be reviewed for translation to ${lang}:\n"
+                for file in $deleted_files; do
+                    body+="- ${file}\n"
+                done
+        
+                echo "Issue body content for deleted files - $lang: $body"
+        
+                gh issue create \
+                    --title "Review deleted files in docs folder - ${lang}" \
+                    --body "$body" \
+                    --assignee "@${team}" \
+                    --label "translation"
+                fi
+            done
