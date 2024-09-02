@@ -27,100 +27,90 @@ jobs:
       - name: Get modified and deleted .md files from the last commit
         id: get-files
         run: |
-            # Get list of modified .md files
-            modified_files=$(git diff-tree --no-commit-id --name-status -r HEAD | grep -E '^M\s.*\.md$' | awk '{print $2}' | grep '^docs/' || true)
-            echo "Modified files: $modified_files"
-
-            # Join modified files with a space delimiter and write to the environment
-            modified_files_joined=$(echo "$modified_files" | tr '\n' ' ')
-            echo "modified_files=$modified_files_joined" >> $GITHUB_ENV
-
-            # Get list of deleted .md files
-            deleted_files=$(git diff-tree --no-commit-id --name-status -r HEAD | grep -E '^D\s.*\.md$' | awk '{print $2}' | grep '^docs/' || true)
-            echo "Deleted files: $deleted_files"
-
-            # Join deleted files with a space delimiter and write to the environment
-            deleted_files_joined=$(echo "$deleted_files" | tr '\n' ' ')
-            echo "deleted_files=$deleted_files_joined" >> $GITHUB_ENV
-
-            # Handle no matching files gracefully
-            if [ -z "$modified_files_joined" ] && [ -z "$deleted_files_joined" ]; then
+            # Get list of modified .md files in the docs folder
+            MODIFIED_FILES=$(git diff-tree --no-commit-id --name-status -r HEAD | grep -E '^M\s.*\.md$' | awk '{print $2}' | grep '^docs/')
+            
+            # Get list of deleted .md files in the docs folder
+            DELETED_FILES=$(git diff-tree --no-commit-id --name-status -r HEAD | grep -E '^D\s.*\.md$' | awk '{print $2}' | grep '^docs/')
+            
+            # Check if there are any files and set environment variables
+            if [ -z "$MODIFIED_FILES" ] && [ -z "$DELETED_FILES" ]; then
                 echo "No modified or deleted .md files found in the docs/ folder."
                 exit 0
             fi
 
-      - name: Define languages and teams
-        id: define-teams
+            # Set environment variables for modified and deleted files
+            if [ -n "$MODIFIED_FILES" ]; then
+                MODIFIED_FILES=$(echo "$MODIFIED_FILES" | tr '\n' ' ')
+                echo "Modified files detected: $MODIFIED_FILES"
+                echo "modified_files=$MODIFIED_FILES" >> $GITHUB_ENV
+            fi
+
+            if [ -n "$DELETED_FILES" ]; then
+                DELETED_FILES=$(echo "$DELETED_FILES" | tr '\n' ' ')
+                echo "Deleted files detected: $DELETED_FILES"
+                echo "deleted_files=$DELETED_FILES" >> $GITHUB_ENV
+            fi
+
+      - name: Create issues for translation review
+        if: ${{ env.modified_files != '' || env.deleted_files != '' }}
+        env:
+            GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+            MODIFIED_FILES: ${{ env.modified_files }}
+            DELETED_FILES: ${{ env.deleted_files }}
+            LANGUAGES: "en-US ro-RO hr-HR" # List of languages
         run: |
-          # Define languages
-          languages=("en-US" "ro-RO" "hr-HR")
+            # Convert space-separated lists to newline-separated lists
+            modified_files=$(echo "$MODIFIED_FILES" | tr ' ' '\n')
+            deleted_files=$(echo "$DELETED_FILES" | tr ' ' '\n')
 
-          # Initialize an empty array for team names
-          team_names=()
-
-          # Dynamically generate team names based on languages
-          for lang in "${languages[@]}"; do
-            # Extract the language code (e.g., 'en' from 'en-US')
-            lang_code=$(echo "$lang" | cut -d'-' -f1)
-            # Compose team name (e.g., 'translation-team-en')
-            team_name="translation-team-${lang_code}"
-            team_names+=("$team_name")
-          done
-
-          # Debug: Print languages and team names
-          echo "Languages: ${languages[*]}"
-          echo "Team names: ${team_names[*]}"
-
-          # Save the language and team arrays to environment variables
-          echo "languages=${languages[*]}" >> $GITHUB_ENV
-          echo "team_names=${team_names[*]}" >> $GITHUB_ENV
-
-      - name: Create issues for each team
-        if: env.deleted_files != '' || env.modified_files != ''
-        run: |
-            # Read the languages and teams from the environment variables
-            IFS=' ' read -r -a languages <<< "$languages"
-            IFS=' ' read -r -a team_names <<< "$team_names"
-        
-            echo "Parsed languages: ${languages[@]}"
-            echo "Parsed team names: ${team_names[@]}"
-        
-            # Create issues for each language team
-            for i in ${!languages[@]}; do
-                lang=${languages[$i]}
-                team=${team_names[$i]}
-        
-                echo "Processing language: $lang, Team: $team"
-        
-                # Prepare the issue body for modified files
+            # Process each language
+            for LANG in $LANGUAGES; do
+                # Initialize the body for modified files
                 if [ -n "$modified_files" ]; then
-                body="The following files have been modified and need to be reviewed for translation to ${lang}:\n"
+                body="The following files have been modified and need to be reviewed for translation to **${LANG} language**:\n"
                 for file in $modified_files; do
                     body+="- ${file}\n"
                 done
-        
-                echo "Issue body content for modified files - $lang: $body"
-        
+
+                echo "DEBUG: Body content for modified files - $body"
+
+                # Write the body to a temporary file
+                temp_file=$(mktemp)
+                echo -e "$body" > "$temp_file"
+
+                # Create the GitHub issue using the temporary file for the body
                 gh issue create \
-                    --title "Review modified files in docs folder - ${lang}" \
-                    --body "$body" \
-                    --assignee "@${team}" \
-                    --label "translation"
+                    --title "${LANG} - Review modified files in docs folder" \
+                    --assignee "@translation-team-${LANG:0:2}" \
+                    --label "translation" \
+                    --body-file "$temp_file"
+
+                # Clean up the temporary file
+                rm "$temp_file"
                 fi
-        
-                # Prepare the issue body for deleted files
+
+                # Initialize the body for deleted files
                 if [ -n "$deleted_files" ]; then
-                body="The following files have been deleted and need to be reviewed for translation to ${lang}:\n"
+                body="The following files have been deleted and need to be reviewed for translation to **${LANG} language**:\n"
                 for file in $deleted_files; do
                     body+="- ${file}\n"
                 done
-        
-                echo "Issue body content for deleted files - $lang: $body"
-        
+
+                echo "DEBUG: Body content for deleted files - $body"
+
+                # Write the body to a temporary file
+                temp_file=$(mktemp)
+                echo -e "$body" > "$temp_file"
+
+                # Create the GitHub issue using the temporary file for the body
                 gh issue create \
-                    --title "Review deleted files in docs folder - ${lang}" \
-                    --body "$body" \
-                    --assignee "@${team}" \
-                    --label "translation"
+                    --title "${LANG} - Review deleted files in docs folder" \
+                    --assignee "@translation-team-${LANG:0:2}" \
+                    --label "translation" \
+                    --body-file "$temp_file"
+
+                # Clean up the temporary file
+                rm "$temp_file"
                 fi
             done
