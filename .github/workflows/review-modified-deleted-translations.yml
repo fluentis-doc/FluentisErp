@@ -38,20 +38,24 @@ jobs:
                 echo "No modified or deleted .md files found in the docs/ folder."
                 exit 0
             fi
-
+            
             # Set environment variables for modified and deleted files
             if [ -n "$MODIFIED_FILES" ]; then
                 MODIFIED_FILES=$(echo "$MODIFIED_FILES" | tr '\n' ' ')
                 echo "Modified files detected: $MODIFIED_FILES"
                 echo "modified_files=$MODIFIED_FILES" >> $GITHUB_ENV
+            else
+                echo "modified_files=''" >> $GITHUB_ENV
             fi
 
             if [ -n "$DELETED_FILES" ]; then
                 DELETED_FILES=$(echo "$DELETED_FILES" | tr '\n' ' ')
                 echo "Deleted files detected: $DELETED_FILES"
                 echo "deleted_files=$DELETED_FILES" >> $GITHUB_ENV
+            else
+                echo "deleted_files=''" >> $GITHUB_ENV
             fi
-
+            
       - name: Create issues for translation review
         if: ${{ env.modified_files != '' || env.deleted_files != '' }}
         env:
