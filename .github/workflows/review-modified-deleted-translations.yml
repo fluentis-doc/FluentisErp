@@ -104,8 +104,10 @@ jobs:
                 body="The following files have been modified and need to be reviewed for translation to **${LANG} language**:\n"
                 body+="\n/cc @fluentis-doc/${team_name}\n" # Mention the team in the body
                 for file in $modified_files; do
+                    # Remove 'docs/' prefix from file paths
+                    processed_file="../edit/locale-${LANG:0:2}/i18n/${LANG}/docusaurus-plugin-content-docs/current/${file#docs/}"
                     body+="- [$file](../blob/main/${file})  \n"
-                    body+="   [localized file](../edit/locale-${LANG:0:2}/i18n/${LANG}/docusaurus-plugin-content-docs/current/${file:0:5})  \n"
+                    body+="   [${LANG:0:2} file](../edit/locale-${LANG:0:2}/i18n/${LANG}/docusaurus-plugin-content-docs/current/${processed_file})\n"
                 done
 
                 echo "DEBUG: Body content for modified files - $body"
@@ -130,8 +132,10 @@ jobs:
                 body="The following files have been deleted from main. Check if should be also deleted from **${LANG} language**:\n"
                 body+="\n/cc @fluentis-doc/${team_name}\n" # Mention the team in the body
                 for file in $deleted_files; do
+                    # Remove 'docs/' prefix from file paths
+                    processed_file="../edit/locale-${LANG:0:2}/i18n/${LANG}/docusaurus-plugin-content-docs/current/${file#docs/}"
                     body+="- [$file](../blob/main/${file})  \n"
-                    body+="   [localized file](../edit/locale-${LANG:0:2}/i18n/${LANG}/docusaurus-plugin-content-docs/current/${file:0:5})  \n"
+                    body+="   [${LANG:0:2} file](../edit/locale-${LANG:0:2}/i18n/${LANG}/docusaurus-plugin-content-docs/current/${processed_file})\n"
                 done
 
                 echo "DEBUG: Body content for deleted files - $body"
