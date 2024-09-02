@@ -1,5 +1,5 @@
 ---
-title: Sdi - Chiusura documenti
+title: Sdi - Chiusura
 sidebar_position: 4
 ---
 
