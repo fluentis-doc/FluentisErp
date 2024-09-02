@@ -1,0 +1,141 @@
+name: Review Modified/Deleted Translations
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'docs/**' # Folder to watch for changes
+#   pull_request:
+#     branches:
+#       - main
+#     paths:
+#       - 'docs/**' # Folder to watch for changes
+
+jobs:
+  create-issues:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Get modified and deleted .md files from the last commit
+        id: get-files
+        run: |
+          # Get list of modified .md files
+          modified_files=$(git diff-tree --no-commit-id --name-status -r HEAD | grep -E '^M\s.*\.md$' | awk '{print $2}' | grep '^docs/')
+          echo "Modified files: $modified_files"
+          echo "modified_files=$modified_files" >> $GITHUB_ENV
+
+          # Get list of deleted .md files
+          deleted_files=$(git diff-tree --no-commit-id --name-status -r HEAD | grep -E '^D\s.*\.md$' | awk '{print $2}' | grep '^docs/')
+          echo "Deleted files: $deleted_files"
+          echo "deleted_files=$deleted_files" >> $GITHUB_ENV
+
+      - name: Define languages and teams
+        id: define-teams
+        run: |
+          # Define languages
+          languages=("en-US" "ro-RO" "hr-HR")
+
+          # Initialize an empty array for team names
+          team_names=()
+
+          # Dynamically generate team names based on languages
+          for lang in "${languages[@]}"; do
+            # Extract the language code (e.g., 'en' from 'en-US')
+            lang_code=$(echo "$lang" | cut -d'-' -f1)
+            # Compose team name (e.g., 'translation-team-en')
+            team_name="translation-team-${lang_code}"
+            team_names+=("$team_name")
+          done
+
+          # Debug: Print languages and team names
+          echo "Languages: ${languages[*]}"
+          echo "Team names: ${team_names[*]}"
+
+          # Save the language and team arrays to environment variables
+          echo "languages=${languages[*]}" >> $GITHUB_ENV
+          echo "team_names=${team_names[*]}" >> $GITHUB_ENV
+
+      - name: Create issues for modified files
+        if: env.modified_files != ''
+        run: |
+          # Read the languages and teams from the environment variables
+          IFS=' ' read -r -a languages <<< "$languages"
+          IFS=' ' read -r -a team_names <<< "$team_names"
+
+          # Debug: Print the parsed languages and teams
+          echo "Parsed languages: ${languages[@]}"
+          echo "Parsed team names: ${team_names[@]}"
+
+          # Create issues for modified files
+          for i in ${!languages[@]}; do
+            lang=${languages[$i]}
+            team=${team_names[$i]}
+
+            # Debug: Print current language and team
+            echo "Processing language: $lang, Team: $team"
+
+            # Check if there are any modified files for this language
+            lang_files=$(echo "$modified_files" | grep "locale-${lang}/")
+            echo "Modified files for $lang: $lang_files"
+
+            if [ -n "$lang_files" ]; then
+              # Create GitHub issue for modified files
+              body="The following files have been modified and need to be reviewed for translation to ${lang}:\n"
+              for file in $lang_files; do
+                body+="- [${file}](../edit/locale-${lang}/${file})\n"
+              done
+
+              # Debug: Print issue body content
+              echo "Issue body content for modified files - $lang: $body"
+
+              gh issue create \
+                --title "Review translations for modified files - ${lang}" \
+                --body "$body" \
+                --assignee "@${team}" \
+                --label "translation"
+            fi
+          done
+
+      - name: Create issues for deleted files
+        if: env.deleted_files != ''
+        run: |
+          # Read the languages and teams from the environment variables
+          IFS=' ' read -r -a languages <<< "$languages"
+          IFS=' ' read -r -a team_names <<< "$team_names"
+
+          # Debug: Print the parsed languages and teams
+          echo "Parsed languages: ${languages[@]}"
+          echo "Parsed team names: ${team_names[@]}"
+
+          # Create issues for deleted files
+          for i in ${!languages[@]}; do
+            lang=${languages[$i]}
+            team=${team_names[$i]}
+
+            # Debug: Print current language and team
+            echo "Processing language: $lang, Team: $team"
+
+            # Check if there are any deleted files for this language
+            lang_files=$(echo "$deleted_files" | grep "locale-${lang}/")
+            echo "Deleted files for $lang: $lang_files"
+
+            if [ -n "$lang_files" ]; then
+              # Create GitHub issue for deleted files
+              body="The following files have been deleted and need to be reviewed for translation to ${lang}:\n"
+              for file in $lang_files; do
+                body+="- ${file}\n"
+              done
+
+              # Debug: Print issue body content
+              echo "Issue body content for deleted files - $lang: $body"
+
+              gh issue create \
+                --title "Review translations for deleted files - ${lang}" \
+                --body "$body" \
+                --assignee "@${team}" \
+                --label "translation"
+            fi
+          done
