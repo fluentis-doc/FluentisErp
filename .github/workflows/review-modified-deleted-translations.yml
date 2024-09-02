@@ -68,7 +68,7 @@ jobs:
                 echo "DEBUG: Final environment variables:"
                 echo "modified_files=$MODIFIED_FILES"
                 echo "deleted_files=$DELETED_FILES"
-                
+
       - name: Create issues for translation review
         if: ${{ env.modified_files != '' || env.deleted_files != '' }}
         env:
@@ -102,9 +102,10 @@ jobs:
                 # Initialize the body for modified files
                 if [ -n "$modified_files" ]; then
                 body="The following files have been modified and need to be reviewed for translation to **${LANG} language**:\n"
-                body+="\n/cc @${team_name}\n" # Mention the team in the body
+                body+="\n/cc @fluentis-doc/${team_name}\n" # Mention the team in the body
                 for file in $modified_files; do
-                    body+="- ${file}\n"
+                    body+="- [$file](../blob/main/${file})  \n"
+                    body+="   [localized file](../edit/locale-${LANG:0:2}/i18n/${LANG}/docusaurus-plugin-content-docs/current/${file:0:5})  \n"
                 done
 
                 echo "DEBUG: Body content for modified files - $body"
@@ -126,9 +127,11 @@ jobs:
 
                 # Initialize the body for deleted files
                 if [ -n "$deleted_files" ]; then
-                body="The following files have been deleted and need to be reviewed for translation to **${LANG} language**:\n"
+                body="The following files have been deleted from main. Check if should be also deleted from **${LANG} language**:\n"
+                body+="\n/cc @fluentis-doc/${team_name}\n" # Mention the team in the body
                 for file in $deleted_files; do
-                    body+="- ${file}\n"
+                    body+="- [$file](../blob/main/${file})  \n"
+                    body+="   [localized file](../edit/locale-${LANG:0:2}/i18n/${LANG}/docusaurus-plugin-content-docs/current/${file:0:5})  \n"
                 done
 
                 echo "DEBUG: Body content for deleted files - $body"
