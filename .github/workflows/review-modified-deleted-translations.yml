@@ -30,17 +30,23 @@ jobs:
             # Get list of modified .md files
             modified_files=$(git diff-tree --no-commit-id --name-status -r HEAD | grep -E '^M\s.*\.md$' | awk '{print $2}' | grep '^docs/' || true)
             echo "Modified files: $modified_files"
-            echo "modified_files=$modified_files" >> $GITHUB_ENV
+
+            # Join modified files with a space delimiter and write to the environment
+            modified_files_joined=$(echo "$modified_files" | tr '\n' ' ')
+            echo "modified_files=$modified_files_joined" >> $GITHUB_ENV
 
             # Get list of deleted .md files
             deleted_files=$(git diff-tree --no-commit-id --name-status -r HEAD | grep -E '^D\s.*\.md$' | awk '{print $2}' | grep '^docs/' || true)
             echo "Deleted files: $deleted_files"
-            echo "deleted_files=$deleted_files" >> $GITHUB_ENV
+
+            # Join deleted files with a space delimiter and write to the environment
+            deleted_files_joined=$(echo "$deleted_files" | tr '\n' ' ')
+            echo "deleted_files=$deleted_files_joined" >> $GITHUB_ENV
 
             # Handle no matching files gracefully
-            if [ -z "$modified_files" ] && [ -z "$deleted_files" ]; then
-            echo "No modified or deleted .md files found in the docs/ folder."
-            exit 0
+            if [ -z "$modified_files_joined" ] && [ -z "$deleted_files_joined" ]; then
+                echo "No modified or deleted .md files found in the docs/ folder."
+                exit 0
             fi
 
       - name: Define languages and teams
