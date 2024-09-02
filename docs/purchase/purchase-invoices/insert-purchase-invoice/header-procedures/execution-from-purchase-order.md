@@ -3,7 +3,7 @@ title: Evasione da ordine
 sidebar_position: 1
 ---
 
-La procedura permette la creazione di una fattura di acquisto mediante evasione di uno o più ordini fornitore.
+La procedura permette la creazion di una fattura di acquisto mediante evasione di uno o più ordini fornitore.
 
 Nella testata del documento, premendo il pulsante **Evasione da ordini** si aprirà la form in cui è possibile filtrare gli ordini relativi al fornitore del documento. È quindi possibile inserire gli articoli all'interno della fattura, evadendo totalmente o parzialmente un intero ordine o una riga.
 
