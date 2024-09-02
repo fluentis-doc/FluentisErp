@@ -107,7 +107,7 @@ jobs:
                     # Remove 'docs/' prefix from file paths
                     processed_file="../edit/locale-${LANG:0:2}/i18n/${LANG}/docusaurus-plugin-content-docs/current/${file#docs/}"
                     body+="- [$file](../blob/main/${file})  \n"
-                    body+="   [${LANG:0:2} file](../edit/locale-${LANG:0:2}/i18n/${LANG}/docusaurus-plugin-content-docs/current/${processed_file})\n"
+                    body+="   [${LANG:0:2} file](${processed_file})\n"
                 done
 
                 echo "DEBUG: Body content for modified files - $body"
@@ -135,7 +135,7 @@ jobs:
                     # Remove 'docs/' prefix from file paths
                     processed_file="../edit/locale-${LANG:0:2}/i18n/${LANG}/docusaurus-plugin-content-docs/current/${file#docs/}"
                     body+="- [$file](../blob/main/${file})  \n"
-                    body+="   [${LANG:0:2} file](../edit/locale-${LANG:0:2}/i18n/${LANG}/docusaurus-plugin-content-docs/current/${processed_file})\n"
+                    body+="   [${LANG:0:2} file](${processed_file})\n"
                 done
 
                 echo "DEBUG: Body content for deleted files - $body"
