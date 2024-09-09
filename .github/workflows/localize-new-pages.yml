@@ -15,7 +15,7 @@ jobs:
       contents: write
     strategy:
       matrix:
-        lang: ["en-US", "ro-RO", "hr-HR"]
+        lang: ["ro-RO", "hr-HR"]
 
     steps:
     - name: Checkout repository
