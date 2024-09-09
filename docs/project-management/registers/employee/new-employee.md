@@ -17,6 +17,8 @@ Questa finestra permette di inserire i dati di un nuovo **Dipendente**. I dati d
 
 **Nome**: contiene il nome del dipendente.
 
+**Codice dipendente paghe**: codice che identifica il dipendente nella gestione paghe - fondamentale altrimenti il dipendente non verrà trovato nella ricerca per il calcolo dati paghe. Lo stesso codice verrà utilizzato nel tracciato del file generato per l'esportazione dei dati verso sistemi esterni a Fluentis. 
+
 Sono presenti diverse tab.
 
 **Tab Generalità**     

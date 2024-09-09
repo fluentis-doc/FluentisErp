@@ -1,6 +1,6 @@
 ---
 title: Riepiloghi
-sidebar_position: 4
+sidebar_position: 5
 ---
 
 Nelle diverse sezioni di questo tab sono presentate le informazioni principali dell'intero documento e alcuni pulsanti specifici.
@@ -51,3 +51,11 @@ import SummariesExpenses from './../../../import/sections/summaries-expenses.md'
 import SummariesDocumentTotal from './../../../import/sections/summaries-document-total.md'
 
 <SummariesDocumentTotal />
+
+- **Sconto totale percentuale**: è possibile inserire un ulteriore sconto finale in percentuale; inserendo questo campo si popola automaticamente anche il successivo.     
+
+- **Sconto totale valore**: è possibile inserire uno sconto finale in valore.      
+
+- **Arrotondamento**: è presente un ulteriore campo per arrotondare in eccesso il documento.     
+
+- **Totale a pagare**: viene infine riportato il totale definitivo ottenuto.     

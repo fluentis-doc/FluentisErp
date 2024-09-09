@@ -7,9 +7,7 @@ Normalmente la simulazione di cash flow viene creata attraverso questa maschera,
 
 Ogni nuova elaborazione andrà a salvare il calcolo associato al campo **Numero**, assegnato automaticamente. E' possibile inoltre associare una **Descrizione** di dettaglio.
 
----
-
-### Campi della griglia
+*Campi specifici*
 
 **Tipo / Descrizione flusso:** ripresi dalla tabella Tipi flusso
 
@@ -39,9 +37,7 @@ Se abilitato in relazione al tipo flusso **Anticipi**, va a rilevare gli importi
 Se viene scelta questa opzione NON devono essere inseriti anche i conti d'appoggio utilizzati per il s.b.f. nella consistenza finanziaria iniziale (tramite la gestione dei *tipi conto finanziario*,) altrimenti il dato (in termini di flusso di cassa positivo) verrà duplicato e dunque il risultato sarà falsato e non attendibile.
 
 
----
-
-### Dettaglio delle logiche applicate ai tipi flusso:
+*Dettaglio delle logiche applicate ai tipi flusso*:
 
 **Saldo contabile**: il range di date viene utilizzato per calcolare il saldo contabile secondo la data registrazione contabile;
 
@@ -69,9 +65,3 @@ I parametri di esecuzione sono memorizzati: solo la data finale del tipo flusso 
 | --- | --- |
 | Creazione | Esegue la procedura di generazione del cash flow secondo le impostazioni inserite nella maschera. |
 | Modifica | Apre in modifica il cash flow creato. |
-
-
-
-
-
-

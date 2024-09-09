@@ -7,7 +7,7 @@ Il modulo si trova nell'area *Acquisti > Fatture di acquisto*.
 
 Prima di utilizzare il modulo, è necessario compilare i seguenti parametri e tabelle: 
 > - [Numerazioni](/docs/configurations/tables/fluentis-numerations)    
-> - [Fatturato acquisti](/docs/configurations/tables/purchase/purchase-price-list-type)
+> - [Fatturato acquisti](/docs/configurations/tables/purchase/purchase-turnover/)
 > - [Tipi fatture acquisto](/docs/configurations/tables/purchase/purchase-invoices-type)
 > - [Parametri fatture di acquisto](/docs/configurations/parameters/purchase/purchase-invoices-parameters)
 

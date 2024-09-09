@@ -12,7 +12,7 @@ Da wpf è poi possibile procedere alla creazione del DDT o della fattura.
 Nella form di **Gestione spunta** verranno visualizzati solamente i picking creati con un *tipo picking* con il flag *Unità di carico obbligatoria* abilitato nella tabella [Tipi picking](/docs/configurations/tables/logistics/picking-type/).
 :::
 
-La form si apre sul filtro dei picking, dove è possibile visualizzare tutti i picking in stato *Non evaso* e *Parzialmente evaso*.     
+La form si apre sul filtro dei picking, dove è possibile visualizzare tutti i picking in stato *Non evaso* o *Parzialmente evaso* e con un *tipo picking* con il flag *Unità di carico obbligatoria* attivato.     
 I risultati possono essere filtrati per *Tipo picking*, *Numero*, *Data* e *Cliente*.    
 Tramite il pulsante *Apri* è possibile aprire il picking selezionato.
 
@@ -27,6 +27,7 @@ In questo tab sono visualizzate tutte le righe articoli presenti nel picking.
 
 - **Conferma**
 Tramite il campo **Input code** (quindi utilizzando un lettore barcode) è possibile inserire i dati relativi al lotto, all'ubicazione, alla quantità di prelievo e all’articolo se lo si vuole variare rispetto a quello proposto.
+L’utente può anche variare l’articolo spostandosi nel tab **Articoli**, dove sono visualizzate tutte le righe articoli presenti nel picking, selezionando quello di interesse e premendo il pulsante **Conferma** o spostandosi nuovamente nel tab **Conferma** per poter inserire i dati relativi all’articolo appena selezionato.      
 Nel caso in cui l'utente confermi la riga, di un articolo gestito a lotti e per il quale non sia stato inserito il lotto, verrà mostrato un messaggio che ricorda di inserire il lotto. È presente nel tab anche il campo *Unità di carico* da valorizzare per poter procedere alla conferma dei dati. 
 
 **Pulsanti specifici**
@@ -35,7 +36,7 @@ Nel caso in cui l'utente confermi la riga, di un articolo gestito a lotti e per 
 > **Nuova UDC**: permette di creare una nuova *Unità di carico* dopo aver selezionato il tipo.         
 
 - **UDC**
-Permette di visualizzare la comoposizione delle *Unità di carico* create per il picking corrente.          
+Permette di visualizzare la composizione delle *Unità di carico* create per il picking corrente.          
 
 **Pulsanti specifici**
 > **Apri UDC**: permette di visualizzare il dettaglio dell'*Unità di carico* selezionata. Inoltre, l'ultima *Unità di carico* aperta verrà proposta come *Unità di carico* in cui inserire i inserire i prossimi articoli da confermare.            
@@ -49,6 +50,10 @@ Da questo tab è possibile selezionare un articolo spuntato e cancellarlo.
 **Pulsanti specifici**
 > **Cancella**: permette di eliminare la riga selezionata.
 
+:::note Nota
+Nel caso in cui sia necessario avere la possibilità di sovra evadere la quantità indicata nel picking, è necessario abilitare il flag **Sovraevadibile** presente nella tabella [Tipi picking](/docs/configurations/tables/logistics/picking-type/).
+:::
+
 **Parametri carico/scarico** da inserire nella tabella [Parametri Carico/Scarico per utente](/docs/configurations/parameters/general-parameters/deliverynotes-grouping).
 
 | Area | Modulo | Form |
@@ -56,10 +61,9 @@ Da questo tab è possibile selezionare un articolo spuntato e cancellarlo.
 | WM | Fluentis.FluentisErp.Mvvm.WM.ReadWrite.Views | CheckRowManagement |
 | WM | Fluentis.FluentisErp.Mvvm.WM.ReadWrite.Views | CheckRowManagement |
 
-I parametri sono ripetuti perché si dovranno associare due causali, una di carico e una di scarico (senza contropartita).
+I parametri sono ripetuti poiché la form utilizza una causale di scarico (senza contropartita), per scaricare gli articoli prelevati, ed una di carico per caricarli all’interno delle unità di carico appena create.     
                                          
 Per tutte le informazioni su come codificare i barcode da leggere nel campo **Codice barcode** consultare la pagina relativa al [Barcode tokenizer](/docs/configurations/tables/general-settings/barcode-tokenizer).
-
 
 
 ## Conferma Picking
@@ -101,6 +105,10 @@ Da questo tab è possibile selezionare un articolo spuntato e cancellarlo.
 
 **Pulsanti specifici**
 > **Cancella**: permette di eliminare la riga selezionata.
+
+:::note Nota
+Nel caso in cui sia necessario avere la possibilità di sovra evadere la quantità indicata nel picking, è necessario abilitare il flag **Sovraevadibile** presente nella tabella [Tipi picking](/docs/configurations/tables/logistics/picking-type/).
+:::
 
 **Parametri carico/scarico** da inserire nella tabella [Parametri Carico/Scarico per utente](/docs/configurations/parameters/general-parameters/deliverynotes-grouping).
 

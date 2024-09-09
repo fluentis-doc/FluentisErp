@@ -1,6 +1,6 @@
 ---
 title: Riepiloghi
-sidebar_position: 3
+sidebar_position: 4
 ---
 
 Nelle diverse sezioni di questo tab sono presentate le informazioni principali dell'intero documento e alcuni pulsanti specifici.

@@ -1,5 +1,6 @@
 ---
 title: Consegna
+sidebar_position: 4
 ---
 
 Questa form consente di definire la lista delle destinazioni merce e le caratteristiche standard delle clausole commerciali relative.

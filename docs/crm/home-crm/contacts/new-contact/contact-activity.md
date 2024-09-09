@@ -8,7 +8,7 @@ L'utilizzo di un workflow per la gestione dei Contatti permette di gestire il ra
 
 Sono presenti due tab: Attività e Log.
 
-# Attività 
+## Attività 
 
 I campi disponibili nel dettaglio delle attività sono divisi in 2 riquadri, **Attività** e **Attività in sospeso**. Il primo serve per dettagliare l’attività già svolta, mentre nel secondo possono già essere definite alcune informazioni riguardo l’attività che dovrà essere svolta successivamente a quella già inserita.
 
@@ -38,6 +38,6 @@ Nel secondo riquadro sono invece presenti i seguenti campi:
 
 **Crea attività**: apponendo la spunta su questa voce verrà creata una nuova voce nella sezione **Attività** di Fluentis per l’utente indicato nel campo **Operatore**. Tale automatismo scatterà al momento del salvataggio del contatto.    
 
-# Log 
+## Log 
 
 In questo tab vengono visualizzati i cambiamenti di stato del workflow, con indicati: lo stato di partenza e di arrivo, l'operatore che ha effettuato l'operazione, la data.   

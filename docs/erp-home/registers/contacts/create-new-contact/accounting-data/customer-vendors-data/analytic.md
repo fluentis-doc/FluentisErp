@@ -1,6 +1,6 @@
 ---
 title: Analitica
-sidebar_position: 9
+sidebar_position: 10
 ---
 
 In questa form è possibile definire un legame per la valorizzazione dei costi/ricavi sui centri di costo e di profitto ( *Configurazione > Tabelle > Controlling*) per i documenti/registrazioni intestate al soggetto in uso.

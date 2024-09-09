@@ -3,19 +3,35 @@ title: Patch notes Versione 545
 sidebar_position: 1
 ---
 
+### Patch 545.1-0105: 05/09/2024
+
+> - SD – Creazione fatture da DDT -corretto errore in fase di creazione fatture da DDT di vendita (ticket #TT03745/24)
+> - FI - Vat register report – change to have the possibility to use quarterly/monthly for history ( TT03769/24)
+> - PM: aggiunta ora nel campo "data inizio" delle risorse assegnate alle wbs di progetto (TT03545/24)
+> - WM – Corretto errore nella Stampa Valorizzazione Assiemi che non calcolava correttamente i costi nel caso di componenti con quantità diverse da uno (#TT02175/24).
+> - FI - corretto errore in fase di inserimento cespite componente incrementativo di cespite parzialmente ammortizzato con iva parzialmente indetraibile ( #TT01937/23).
+
+### Patch 545.1-0104: 08/08/2024
+
+> - WM - Corretto bug che non verificava correttamente la giacenza negativa quando l’articolo si trovava all’interno di una registrazione di scarico in contropartita (#TT01417/24)
+> - MPS - Corretto bug nel Rilascio degli Ordini di Conto lavoro che riportava solo il prezzo dell’articolo, ma non il Listino (#TT02812/24)
+> - revisione memorizzazione credito anno precedente da stampa definitiva liquidazione iva periodica di gennaio (#TT02348/24)
+> - SD - Nella procedura di Creazione da DDT, è stato inserito un nuovo controllo che impedisce la creazione di  un’autofattura da DDT (#TT02889/24)
+> -  SCS - Corretto errore nei Rientri di Conto lavoro che non permetteva la modifica del Tipo fatturato acquisti sulle righe articolo (#TT03212/24)
+> - SD - Corretto errore che non permetteva l’evasione forzata di un Ordine Cliente quando era collegato ad un Ordine Pianificato di Produzione contenente degli Extra Data (#TT03267/24)
+> - MPS - Corretto bug in Capacità centri di lavoro che considerava la capacità su un centro di lavoro interno data da un ordine pianificato di conto lavoro; ora, se l’ordine pianificato di conto lavoro ha una fase interna (perché a volte viene prodotto internamente e a volte esternamente) questo non impegna più quel centro di lavoro (#TT03406/24)
+> - MPS - Corretto bug in schedulazione generale che generava ordini pianificati con quantità non corrette (#TT03354/24 - #TT03204/24)
+> - SCS - Risolto bug che permetteva la modifica della Quantità Articolo in un Ordine di conto lavoro già evaso in DDT (#TT02529/24)
+
 ### Patch 545.1-0103: 27/06/2024
 
-> - SD- SalesInvoice Peppol change for RO - “Sector” to upper
 > - SD - Correzione dell’errore che richiedeva uno sconto a scaglione nel caso di inserimento del Mask in un nuovo Arrotondamento (#TT00756/24)
 > - SD - nella stampa del bilancino di fatturazione, revisione gestione segni nel subreport dei totali per fatturato vendite (#TT02720/24)
-> - CO -  Reclasification Model - add new options ( TT02288/24)
-> - SH – Fix for map control (#TT01373/24)
-> - WM – Corretto bug nell’export excel dei dati presenti nel report Implosione componenti che non riportava il valore nella colonna quantità. (#TT02753/24)
-> - FI - Corretto bug nella form di lancio della stampa Enasarco che non gestiva correttamente il filtro per range di date ( TT00824/24)
-> - QY – Azioni correttive – Revisione logiche di abilitazione informazioni presenti nel tabulatore Verifiche prossimo audit.(#TT02916/24)
-> - SCM – Se il flag Prezzo Unità di Misura Alternativa è attivo nella Richiesta di Offerta, al momento della creazione dell’Ordine fornitore da Offerta fornitore il flag sarà riportato anche nell’ordine creato (#TT02804/24).
-> - Version 10 from RO declaration 300
-> - SCM – Corretto bug che non visualizzava Codice/Descrizione dell’Articolo fornitore nella form di Dettaglio righe Ordini quando l’ordine non era evaso (#TT02344/24).
+> - WM - Corretto bug nell’export excel dei dati presenti nel report Implosione componenti che non riportava il valore nella colonna quantità (#TT02753/24)
+> - FI - Corretto bug nella form di lancio della stampa Enasarco che non gestiva correttamente il filtro per range di date (#TT00824/24)
+> - QY - Azioni correttive - Revisione logiche di abilitazione informazioni presenti nel tabulatore Verifiche prossimo audit.(#TT02916/24)
+> - SCM - Se il flag Prezzo Unità di Misura Alternativa è attivo nella Richiesta di Offerta, al momento della creazione dell’Ordine fornitore da Offerta fornitore il flag sarà riportato anche nell’ordine creato (#TT02804/24)
+> - SCM - Corretto bug che non visualizzava Codice/Descrizione dell’Articolo fornitore nella form di Dettaglio righe Ordini quando l’ordine non era evaso (#TT02344/24)
 
 ### Patch 545.1-0102: 03/06/2024
 
@@ -28,10 +44,9 @@ sidebar_position: 1
 > - SCM, SCS - Quando viene modificato il flag Prezzo Unità di misura Alternativa all’interno di una Fattura di acquisto che valorizza un Rientro di Conto lavoro, esso viene modificato anche nel Rientro e nella relativa registrazione, se presente. Quando il flag viene modificato dall’interno Rientro di Conto lavoro gli importi vengono ricalcolati anche nella Registrazione di magazzino (#TT00698/24)
 > - SCM, SCS - Quando viene modificato il flag Prezzo Unità di misura Alternativa all’interno di una Fattura di acquisto che valorizza un Rientro di Conto lavoro, esso viene modificato anche nel Rientro e nella relativa registrazione, se presente. Quando il flag viene modificato dall’interno Rientro di Conto lavoro gli importi vengono ricalcolati anche nella Registrazione di magazzino (#TT00698/24)
 > - SD - Quando nei parametri dell’area Vendite è attivo il flag ‘Blocca inserimento documento in date festive da calendario di fabbrica’ il controllo della data festiva viene effettuato prima nel Calendario di Fabbrica, poi nel Calendario delle capacità produttive (#TT02396/24)
-> - SCS: Arrotondamento per Cdc su ordine di acquisto, DDT di acquisto, Fattura di acquisto (#TT02500/24)
-> - SCM: La richiesta di acquisto deve essere considerata eseguita se vengono eseguite tutte le righe, ad eccezione delle righe di nota (#TT02389/24)
+> - SCS - Arrotondamento per Cdc su ordine di acquisto, DDT di acquisto, Fattura di acquisto (#TT02500/24)
+> - SCM - La richiesta di acquisto deve essere considerata eseguita se vengono eseguite tutte le righe, ad eccezione delle righe di nota (#TT02389/24)
 > - FI - Ripristino funzionalità di rettifica dei pagamenti parziali da griglia pagamenti (#TT02559/24)
-
 
 ### Patch 545.1-0101: 16/05/2024
 
@@ -77,7 +92,6 @@ sidebar_position: 1
 ### Patch 545.1-0098: 08/03/2024
  
 > - FI - Intrastat export sezione doganale and negative value in riepilogo if inserted in quinquies section (#TT00580/24)  
-> - PR - Profilo in esposizione clienti (#TT00853/24)  
 > - MPS - Schedulazione Generale: È ora possibile cancellare un ordine pianificato anche quando è contenuto all’interno di un Cash Flow (#TT00684/24)  
 > - CO - calcolo ammortamenti del controlling, revisione elaborazioni dati iniziali (#TT00477/24) 
 
@@ -113,10 +127,10 @@ sidebar_position: 1
 > - WM - Aggiunto sul report del Giornale di magazzino il filtro per società e divisione (#TT00375/24)  
 > - SD - Risolto il problema del esportazione colonna "Stato SDI" (#TT00321/24)  
 > - SCM - richieste di acquisto: risolvere il problema di salvataggio righe su analitica senza centro di costo(#TT00095/24)  
-
+ 
 ### Patch 545.1-0093: 25/01/2024
 
-> - SH - Creazione nuovo anno: quando il parametro fix è true: se esistono righe con anno di data di fine validità \> = anno: per non aggiornare a null (#TT00093/24)  
+> - SH - Creazione nuovo anno: quando il parametro fix è true: se esistono righe con anno di data di fine validità > = anno: per non aggiornare a null (#TT00093/24)  
 > - MES - Corretto bug nelle dichiarazioni di produzione che non caricava correttamente le UDC create all’interno della dichiarazione (#TT03393/23)  
 > - SH - revisione del rollbak contatori nuovo anno, per i numeratori ex-2010 test se esistono documenti nel periodo (#TT00120/24)  
 > - SD - Revisione gestione blocco fido quando il documento in modifica è quello che causa lo sforamento ed è già autorizzato (#TT00206/24)  
@@ -633,7 +647,7 @@ sidebar_position: 1
 
 > - SCS - Se un Rientro contiene un Articolo archiviato successivamente alla creazione dell’Ordine di conto lavoro, la sua registrazione di magazzino avvisa quale articolo sia archiviato (#TT00405/23) 
 
-> - BZ: Aggiunto campo Persona nell'importazione contatti CRM (#TT02054/22) 
+> - BZ - Aggiunto campo Persona nell'importazione contatti CRM (#TT02054/22) 
 
 > - CO - revisione gestione date competenza e conti utilizzati nella contabilizzazione rimanenze, revisione comparazione riclassificazioni per fomule e dettagli dei dati rimanenze iniziali/finali (#TT00554/23) 
 
@@ -1299,7 +1313,7 @@ Sono state corrette le seguenti anomalie:
 
 > - SD - Nella maschera di Evasione ordine da Fattura di vendita, l’ordinamento delle righe articolo è uguale all’ordinamento delle righe nell’Ordine (#TT01229/22) 
 
-> - FI - nella creazione registrazioni contabili di file Sdi, valorizzazione automatica del link alla dichiarazione di intento inserita dal fornitore negli ‘altri dati gestionali’ come richiesto dall’agenzia delle entrate (\<TipoDato\>INTENTO\</TipoDato\>\<RiferimentoTesto\>00000000000000000-000000\</RiferimentoTesto\>). Il campo di link è attivo e visibile in griglia iva delle registrazioni contabili per le aliquote che hanno il flag plafond in tabella. Al salvataggio della registrazione viene effettuato un controllo (non bloccante) del superamento dell’importo della dichiarazione selezionata: il test viene effettuato unicamente sui dati delle registrazioni contabili, non rilevano documenti in elaborazione nel ciclo documentale attivo/passivo (che prevedono già il test nel ciclo documentale stesso) Non sono previste compilazioni automatiche su registrazioni già salvate nel sistema. 
+> - FI - nella creazione registrazioni contabili di file Sdi, valorizzazione automatica del link alla dichiarazione di intento inserita dal fornitore negli ‘altri dati gestionali’ come richiesto dall’agenzia delle entrate (\<TipoDato\>INTENTO\</TipoDato\>\<RiferimentoTesto\>00000000000000000-000000\</RiferimentoTesto\>) Il campo di link è attivo e visibile in griglia iva delle registrazioni contabili per le aliquote che hanno il flag plafond in tabella. Al salvataggio della registrazione viene effettuato un controllo (non bloccante) del superamento dell’importo della dichiarazione selezionata: il test viene effettuato unicamente sui dati delle registrazioni contabili, non rilevano documenti in elaborazione nel ciclo documentale attivo/passivo (che prevedono già il test nel ciclo documentale stesso) Non sono previste compilazioni automatiche su registrazioni già salvate nel sistema. 
 
 > - MES - Nel caso in cui la prima fase di un ciclo di lavoro sia esterna (quindi si intende conto lavoro di fase), il semilavorato nel magazzino (es. WIP) caricato dal rientro di conto lavoro viene scaricato con la successiva fase del ciclo (#TT01100/22) 
 
@@ -1511,9 +1525,7 @@ Nelle fatture di vendita, in caso di creazione file Sdi a prezzi netti, disabili
 
 > - SD - Gestione dichiarazione di intento in creazione ddt/ft da picking e udc. L'esenzione iva viene applicata se il totale del documento è all'interno del valore disponibile nella dichiarazione (#TT00862/22) 
 
-> - FI - Professional declaration (#TT00785/22) 
-
-> - SD - L’inserimento di un articolo fittizio per la riga acconto in fattura ora riporta la descrizione e il fatturato vendite di questo((#TT00952/22) 
+> - SD - L’inserimento di un articolo fittizio per la riga acconto in fattura ora riporta la descrizione e il fatturato vendite di questo(#TT00952/22) 
 
 > - SD - Nel caso di inserimento di un Prezzo ivato negativo in riga Fattura, anche il Prezzo sarà negativo (#TT00944/22) 
 
@@ -1521,21 +1533,15 @@ Nelle fatture di vendita, in caso di creazione file Sdi a prezzi netti, disabili
 
 > - MPS - Le commesse di produzione vengono generate mantenendo l'ordine delle righe dell'ordine cliente, nel caso in cui non vi sia nessun raggruppamento nei parametri MPS (#TT00911/22) 
 
-> - Saf-T RO declaration first step 
-
-> - FI - increase dimension of SHFOT_Description 
-
 > - WM - Risolto errore uscente nella Creazione registrazione da Visualizzazione giacenze filtrate per progetto (#TT00935/22) 
 
 ### Patch 545.1-0038: 17/03/2022
  
 > - FI - Revisione apertura registrazioni dalla form 'Fatturazione elettronica con soggetti non residenti' 
 
-> - SH - increase dimension of account description and company name (#TT00537/22) 
+> - SH - Prototipi: Correzione dell'anomalia che non considerava la selezione del cliente per la stampa del prototipo (#TT02179/21)
 
-> - SH - Prototipi: Correzione dell'anomalia che non considerava la selezione del cliente per la stampa del prototipo (#TT02179/21 
-
-> - SD - invoice accounting: Contabilizzazione fattura di vendita con omaggi senza rivalsa IVA (#TT01730/19) 
+> - SD - Contabilizzazione fattura di vendita con omaggi senza rivalsa IVA (#TT01730/19) 
 
 > - SCM - Nel caso di scarico a magazzino di un ddt di reso, l'Ubicazione della Registrazione di magazzino deriva dalla Causale di magazzino delle righe del ddt (#TT00671/22) 
 
@@ -1552,8 +1558,6 @@ Nelle fatture di vendita, in caso di creazione file Sdi a prezzi netti, disabili
 > - FI - intrastat: fix grouping problem 
 
 > - Import exchange rate for > - IT: import only decimal values. 
-
-> - BI - make closure and valor FA/ FT:  add filtering for not null cost center 
 
 > - SD - Nel caso di Magazzino per cliente/fornitore, l'evasione, in una fattura,  di righe ordine con lotti e numeri seriali, va a buon fine (#TT00565/22) 
 
@@ -1576,8 +1580,6 @@ Nelle fatture di vendita, in caso di creazione file Sdi a prezzi netti, disabili
 > - SCM - Risolto il bug riguardante il flag Recupero Numeri nella Numerazione dei documenti (#TT00444/22) 
 
 > - MPS - Commesse di produzione: Colori commesse in ritardo o scadute (550/21) 
-
-> - Add refresh button on dashboard and sql queries 
 
 > - FI - Anomalia in procedura "aggiungi partite da raggruppare" nelle partite (#TT01579/21) 
 
@@ -1627,7 +1629,7 @@ Nelle fatture di vendita, in caso di creazione file Sdi a prezzi netti, disabili
 
 > - SCS - Negli ordini di conto lavoro nati da un ordine di produzione, se evado forzatamente lo stato dell'ordine direttamente dalla testata del documento, l'ordine di produzione collegato viene portato in stato "Evaso".    #TT00410/22 
 
-> - SCM - Sistemato errore in "creazione automatica ordini", tab "scelta fornitore" trascinando più articoli (Rif. Ticket: #TT00522/22) 
+> - SCM - Sistemato errore in "creazione automatica ordini", tab "scelta fornitore" trascinando più articoli (#TT00522/22)
 
 ### Patch 545.1-0035: 23/02/2022 
 
@@ -1643,9 +1645,7 @@ Nelle fatture di vendita, in caso di creazione file Sdi a prezzi netti, disabili
 
 > - MES - Nella tabella Tipi Documenti, è possibile inserire la colonna Stampa, che verrà salvata cliccando di nuovo il pulsante di Ricerca (#TT03242/21) 
 
-> - WM - WarehousePosting: fixed bug for enable/disable lots and SNs when the warehouseposting comes from a document 
-
-> - SCM / SD: cost center accounting: test on not null cost center link 
+> - SCM / SD - cost center accounting: test on not null cost center link 
 
 > - Update schema fatture per importazione da BizLink per problema numerazione 
 
@@ -1689,35 +1689,17 @@ Nelle fatture di vendita, in caso di creazione file Sdi a prezzi netti, disabili
 
 > - SD - Creazione fattura da ddt: Risolto errore in fase di generazione fattura da ddt per il quale venivano create due righe pagamenti al 100% (#TT00340/22) 
 
-> - QY - ItemControl : fix index of out range 
-
-> - Crm - (Contact, Opportunity and Tickets): specify Width for tile bar item cards (application will froze if the Width is not specified) 
-
-Skip error trace for invalid documents to be processed for excel importing 
-
 > - FI - professionals: revisione contabilizzazione pagamenti percipienti in database refactored 
 
 > - PR - Vendor Payment: revisione assegnazione riferimenti iban in creazione pagamenti fornitori 
 
-> - FI - modello F24: increase dimension of field User (#TT00371/22) 
-
-> - Remove p7m extension for SanMarino signed files 
-
-> - open attachment documents from Documents tab of Activities (#TT00126/22) 
-
 ### Patch 545.1-0033: 04/02/2022 
-
-> - Fix SalesInvoice-ItemValorization lots problem (rif.ticket 209/22) 
-
-> - CO - add company condition in GetPhysicalProductionMovement calculation 
 
 > - SCM - contabilizzazione fatture da ricevere: Rientro C/L 
 
 > - SD - Nell’Help articoli dei documenti di vendita, tab Documenti, sono visibili i documenti in base ai filtri selezionati (#TT00223/22) 
 
 > - Sistemato errore di stampa nei "Documenti vendita in uscita 
-
-> - Rewrite query GetDocument in BizLink: optimize use for binary content field 
 
 > - SH - Correction for the function UT_DettDispoPROD_Refactor which is used for the Availability Analysis to take into consideration only the orders in execution (#TT00264/22) 
 
@@ -1979,7 +1961,7 @@ Il costo macchina è la somma dei costi macchina e dei costi di attrezzaggio mac
 
 > - WM - By creating a lot code with the DDT Number+Generic Field+ProgressiveNumber, the generated lot code does not have the DDT number inside (#TT02455/21) 
 
-> - Schedulazione Generale: Per la ricerca dei componenti e delle fasi viene utilizzata la versione di distinta della commessa per il livello 0 e la versione di distinta, se presente, di ogni singolo componente per i livelli sottostanti e per le attrezzature, in mancanza della versione nei materiali/attrezzature viene utilizzata quella del padre (rif. ticket 1751/21) 
+> - Schedulazione Generale: Per la ricerca dei componenti e delle fasi viene utilizzata la versione di distinta della commessa per il livello 0 e la versione di distinta, se presente, di ogni singolo componente per i livelli sottostanti e per le attrezzature, in mancanza della versione nei materiali/attrezzature viene utilizzata quella del padre (#TT1751/21) 
 
 > - MPS - Nel caso di modifica della Quantità delle righe di un ordine cliente vengono modificate, nella Commessa collegata, la Quantità e la Quantità alternativa, in base al fattore di conversione o dello stesso importo se il fattore di conversione non esiste (#TT02546/21) 
 
@@ -2124,7 +2106,7 @@ Il costo macchina è la somma dei costi macchina e dei costi di attrezzaggio mac
 
 > - FI -  revisione gestione visibilità tipi distribuzione in griglia cost driver 
 
-> - SD/ SCM: nella contabilizzazione da acquisti e vendite, la dimensione dei centri commesse viene valorizzata solo se questa dimensione è prevista nel piano dei conti per il sottoconto di costo/ricavo. 
+> - SD/ SCM - nella contabilizzazione da acquisti e vendite, la dimensione dei centri commesse viene valorizzata solo se questa dimensione è prevista nel piano dei conti per il sottoconto di costo/ricavo. 
 
 > - CO - Revisione calcolo consolidato di progetto.  
 
@@ -2412,7 +2394,7 @@ Corretta creazione attività dichiarata come conferma del periodo richiesto come
 
 > - FI - fixed assets: filter by department in reports (#TT01671/21) 
 
-> - CO - Previsioni di Vendita: Bug Fix al salvataggio delle Previsioni di vendita (rif. Ticket 1718/21) 
+> - CO - Previsioni di Vendita: Bug Fix al salvataggio delle Previsioni di vendita (#TT1718/21) 
 
 > - SD - creazione listo vendita: corretto applicazione arrotondamento agli scaglioni di prezzo per quantità (ref #TT01728/21) 
 
@@ -2602,9 +2584,9 @@ Corretta creazione attività dichiarata come conferma del periodo richiesto come
 
 > - FI - Liquidazione iva annuale: revisione totalizzazione iva acquisti sospesa e giro iva sospesa di anni differenti 
 
-> - MPS - Schedulazione generale: La modifica del tipo Approvvigionamento nella Commessa non veniva considerato (rif. ticket 2801/20) 
+> - MPS - Schedulazione generale: La modifica del tipo Approvvigionamento nella Commessa non veniva considerato (#TT2801/20) 
 
-> - MES - Segnalazione di Produzione: Problema nella proposizione dei materiali da consumare; non veniva correttamente gestito il caso di ultima fase produttiva e movimentabile tra le fasi di lavoro dell’ordine di produzione (rif. ticket 694/21) 
+> - MES - Segnalazione di Produzione: Problema nella proposizione dei materiali da consumare; non veniva correttamente gestito il caso di ultima fase produttiva e movimentabile tra le fasi di lavoro dell’ordine di produzione (#TT694/21) 
 
 > - SCS - Rientri: Risoluzione anomalie di evasione e dichiarazione quantità prodotte negli Ordini di produzione collegati.(rif ticekt TT00903/21) 
 
@@ -2612,13 +2594,12 @@ Corretta creazione attività dichiarata come conferma del periodo richiesto come
 
 > - MES - Ordini di produzione: Anomalia durante l’eliminazione di una Fase esterna. 
 
-> - WM - Creando un profilo form nella maschera di Dettaglio movimenti nel menu Registrazioni, è possibile ricercare gli articoli dopo il doppio click nell’apposito campo (rif. ticket 1105/21) 
+> - WM - Creando un profilo form nella maschera di Dettaglio movimenti nel menu Registrazioni, è possibile ricercare gli articoli dopo il doppio click nell’apposito campo (#TT1105/21) 
 
 ### Patch 545.1-0013: 15/04/2021 
 
-Add BizLink procedure to import SalesOrders from Excel file 
 
-> - WM - Correzione del lancio Differenze Inventariali (rif. ticket 1077/21) 
+> - WM - Correzione del lancio Differenze Inventariali (#TT1077/21) 
 
 > - WM - Report Multipli: Modificato report in modo che stampi ordinato per priorità 
 
@@ -2632,11 +2613,7 @@ Add BizLink procedure to import SalesOrders from Excel file
 
 > - SD - Report Bilancino di fatturazione: Aggiunti subreport che riportano le spese e il riepilogo iva 
 
-> - MPS - Schedulazione generale: Le commesse con Approvvigionamento di Acquisto non venivano schedulate (rif. Ticket 974/21) 
-
-> - Add Handle to update section DettaglioLinee,DatiContratto,DatiConvenzione,DatiRiceazione sections   
-
-> - FA - Purchase invoice accounting: Accounting supplier invoice procedure correction 
+> - MPS - Schedulazione generale: Le commesse con Approvvigionamento di Acquisto non venivano schedulate (#TT974/21) 
 
 > - ARM - Restrizioni: Risolto exception all'apertura con doppio click della Filter Expression della restrizione (rif.ticket 2080/20) 
 
@@ -2668,7 +2645,7 @@ Add BizLink procedure to import SalesOrders from Excel file
 
 > - SCM - L'ordine delle righe articolo risultanti dalla procedura di creazione automatica ordini fornitori è uguale all'ordine delle righe articolo dell'ordine cliente corrispondente (#TT00120/21) 
 
-> - Crm - Newsletter: in some cases image is added as attachment instead of being embedded: add a new flag in order to let the user choose if the image should be embedded 
+> - Crm - Newsletter: in alcuni casi l'immagine viene aggiunta come allegato invece di essere incorporata: aggiungere un nuovo flag per consentire all'utente di scegliere se l'immagine deve essere incorporata 
 
 > - FI - Partite: view fluentis.CA_PartiteMaturities, revisione trigger di insert (#TT00608/21) 
 
@@ -2688,7 +2665,7 @@ Add BizLink procedure to import SalesOrders from Excel file
 
 > - BI - Vista OC ordinato: Risolto problema vista ssas_oc_ordinato, ricreato l’alter view impostando il formato UCS-2 LE BOM 
 
-> - WM - Aggiornamento della colonna Totale importo dopo l'inserimento della Quantità gestionale, nelle Registrazioni di magazzino (rif. ticket 899/21) 
+> - WM - Aggiornamento della colonna Totale importo dopo l'inserimento della Quantità gestionale, nelle Registrazioni di magazzino (#TT899/21) 
 
 > - PROTOTIPI / Duplica prototipi: corretta la duplicazione dei prototipi riportando i costi corretti e le fasi di lavoro (#TT00639/21) 
 
@@ -2736,7 +2713,7 @@ Add BizLink procedure to import SalesOrders from Excel file
 
 > - CO - Valori di controllo: revisione scheda ‘Valori revertiti’ 
 
-> - WM - Anagrafica Articoli (Pharma): Fix visualizzazione Forma Galenica all'interno degli articoli (rif. ticket 828/21 ) 
+> - WM - Anagrafica Articoli (Pharma): Fix visualizzazione Forma Galenica all'interno degli articoli (#TT828/21 ) 
 
 > - SCM - Creazione automatica Ordini: Creazione da Ordine Cliente, ora la descrizione riportata nell’ordine fornitore è la descrizione di anagrafica dell’articolo (rif.ticket 3156/20) 
 
@@ -2786,9 +2763,9 @@ Add BizLink procedure to import SalesOrders from Excel file
 
 > - SCM - sistemati report stampe multiple 
 
-> - SD - Riferimento fattura in ricerca DDT con valorizzazione (rif. ticket #TT00649/21) 
+> - SD - Riferimento fattura in ricerca DDT con valorizzazione (#TT#TT00649/21) 
 
-> - SD - Dopo l'evasione da ordine, le righe degli articoli nota nel DDT/fattura non riportano l'IVA della dichiarazione d'intento del cliente, se presente (rif. ticket #TT00758/21) 
+> - SD - Dopo l'evasione da ordine, le righe degli articoli nota nel DDT/fattura non riportano l'IVA della dichiarazione d'intento del cliente, se presente (#TT#TT00758/21) 
 
 > - SCM / Widget Progetti FA: il progetto collegato agli articoli della fattura, riporta in tutti gli articoli la wbs e la descrizione (#TT00735/21) 
 
@@ -2796,7 +2773,7 @@ Add BizLink procedure to import SalesOrders from Excel file
 
 > - SCM /Widget progetti in RDA: il progetto collegato agli articoli di una RDA, riporta in tutti gli articoli la wbs e la descrizione (#TT00780/21) 
 
-> - SD - Listini Vendita: Gestione listino, risolto ordinamento righe scaglioni in ordine crescente per quantità a valore (rif. ticket #TT00396/21) 
+> - SD - Listini Vendita: Gestione listino, risolto ordinamento righe scaglioni in ordine crescente per quantità a valore (#TT#TT00396/21) 
 
 > - SD - Fatture di Vendita: Calcolo scadenze: Se l'imponibile degli articoli risulta minore alla somma degli imponibili riportati nelle righe pagamento di testata, viene bloccato il ricalcolo delle scadenze (che risulterebbero anche negative) e dato un messaggio che invita l'utente a cancellare le righe pagamento riferite ai DDT lasciando solo righe a % (rif.ticket 399/21) 
 
@@ -2856,7 +2833,7 @@ Add BizLink procedure to import SalesOrders from Excel file
 
 > - PR - la creazione file Sepa dei bonifici fornitori ora verifica la presenza del codice unico cliente in tabella società e non il codice Sia non più utilizzato nel tracciato 
 
-> - SD\Scm- Set ItemCustomer\ItemVendor at multiple insert from Help (rif. ticket 753/21) 
+> - SD\Scm- Set ItemCustomer\ItemVendor at multiple insert from Help (#TT753/21) 
 
 > - Pite> - CO - add description to payment list 
 
@@ -2896,7 +2873,7 @@ Add BizLink procedure to import SalesOrders from Excel file
 
 > - FI - show period at printing 'vat registry' and 'periodical vat settlement' in definitive 
 
-> - SD - Revisione aggiornamento dati liquidazione agenti dopo cancellazione righe nella scheda ‘pagamenti avvenuti’ della liquidazione stessa(rif. ticket #TT00066/21) 
+> - SD - Revisione aggiornamento dati liquidazione agenti dopo cancellazione righe nella scheda ‘pagamenti avvenuti’ della liquidazione stessa(#TT#TT00066/21) 
 
 > - SD - Impostato blocco salvataggio fatture se presenti righe articolo con numero riga \< 1 (#TT00571/21) 
 
@@ -2904,7 +2881,7 @@ Add BizLink procedure to import SalesOrders from Excel file
 
 > - SCS - report Liste ddt: sistemato il layout e impostato l'ordinamento per tipo ddt, numero e fornitore(#TT00575/21) 
 
-> - SD - Riferimento fattura in ricerca DDT con valorizzazione (rif. ticket #TT00649/21) 
+> - SD - Riferimento fattura in ricerca DDT con valorizzazione (#TT#TT00649/21) 
 
 > - FI - Modifiche allo xaml della maschera dipendenti per gestione personalizzazioni 
 
@@ -3234,7 +3211,7 @@ Add BizLink procedure to import SalesOrders from Excel file
 
 ### Patch 545.1-0001: 26/01/2021
 
-> - SD - Nelle fatture di vendita, gestione riferimento al dettaglio dichiarazione di intento su spese d'incasso (rif. Ticket TT00097/21) 
+> - SD - Nelle fatture di vendita, gestione riferimento al dettaglio dichiarazione di intento su spese d'incasso (#TTTT00097/21) 
 
 > - CRM - phone calls import (#TT00001/21) 
 
@@ -3242,7 +3219,7 @@ Add BizLink procedure to import SalesOrders from Excel file
 
 > - update project computed fields when changing (FSService, FSPlannedIntervention, FSSalesJobOrderResourceActivity)  
 
-> - SD - nel report provvigioni maturate, il campo 'Data scadenza' riporta la data della scadenza e non più la data fattura anche nel caso di agenti con maturazione su 'Fattura emessa' (rif. Ticket TT00230/21) 
+> - SD - nel report provvigioni maturate, il campo 'Data scadenza' riporta la data della scadenza e non più la data fattura anche nel caso di agenti con maturazione su 'Fattura emessa' (#TTTT00230/21) 
 
 > - WM - Liste UDC: bug fix per visualizzare codice lotto dopo help UDC (3197/20) 
 

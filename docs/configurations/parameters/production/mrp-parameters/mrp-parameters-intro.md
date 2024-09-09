@@ -38,9 +38,9 @@ Le seguenti opzioni dei buffer e tolleranza tempo cliente sono disponibili solo 
 
 Inoltre, sono presenti i seguenti campi:
 
-**Priorità approvigionamento:** questo campo editabile consente all’utente di impostare il tipo di priorità da assegnare all’articolo. Questa verrà utilizzata nella creazione delle *richieste di acquisto* in fase di [Rilascio degli ordini pianificati](/docs/planning/ms-master-scheduling/planned-orders/procedures/release-planned-orders/) se è stato attivato il flag **Proprietà approvvigionamento da Parametri MRP articolo**;     
+**Priorità approvvigionamento:** questo campo editabile consente all’utente di impostare il tipo di priorità da assegnare all’articolo. Questa verrà utilizzata nella creazione delle *richieste di acquisto* in fase di [Rilascio degli ordini pianificati](/docs/planning/ms-master-scheduling/planned-orders/procedures/release-planned-orders/) se è stato attivato il flag **Proprietà approvvigionamento da Parametri MRP articolo**;     
 
-**Comm. produzione**: se attivato, indica che le righe ordine cliente che presentano questo articolo devono essere visualizzate nel filtro del tab Ordini Clienti della *Definizione MPS*;
+**Commesse produzione**: se attivato, indica che le righe ordine cliente che presentano questo articolo devono essere visualizzate nel filtro del tab Ordini Clienti della Definizione MPS;
 
 **% scarto**: consente all'utente di impostare una percentuale di scarto fissa per l'articolo. Questa percentuale viene impostata sempre con questo dato quando l'articolo viene ripreso all'interno di una distinta base.  
 *Esempio*: se viene indicato che per produrre quel materiale c'è uno scarto di solito del 10%, se l'ordine da produrre è di 100 pezzi lo schedulatore o l'MRP quando crea l'ordine pianificato invece di farlo da 100 pezzi, lo farà da 100 pezzi + il 10%.

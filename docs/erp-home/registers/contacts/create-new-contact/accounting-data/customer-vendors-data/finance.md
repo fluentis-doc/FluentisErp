@@ -1,6 +1,6 @@
 ---
 title: Amministrazione
-sidebar_position: 2
+sidebar_position: 1
 ---
 
 In questa form troviamo i seguenti campi:
@@ -74,7 +74,6 @@ Un metodo alternativo (consigliato) consiste nel gestire sempre l'anagrafica del
 
 **Sottoconto di pag. (Pag.Forn.)**: questo sottoconto viene associato alle partite contabili create, al fine di poter verificare la canalizzazione dei pagamenti/incassi nelle stampe degli scadenziari e nelle simulazioni di cash flow;
 
-**Costo industriale di contropartita**: è il sottoconto da proporre di default nelle registrazioni di contabilità industriale (CAMPO OBSOLETO PRESENTE PER RETRO-COMPATIBILITA');
 
 **Costo/Ricavo di contropartite predef**.: è il sottoconto di contabilità generale da proporre di default nelle registrazioni contabili IVA; in caso di contabilizzazione di documenti dagli acquisti/vendite, questo sottoconto è il valore di default da utilizzare nel caso in cui non sia stato inserito un fatturato acquisti/vendite nelle righe articolo;
 
@@ -84,6 +83,39 @@ Un metodo alternativo (consigliato) consiste nel gestire sempre l'anagrafica del
 2. Anagrafica Cliente/Fornitore  
 
 **Costo/Ricavo di contropartita alternativo**: questa griglia consente di predefinire la lista dei sottoconti e la relativa aliquota iva da proporre nelle registrazioni iva intestate al soggetto; per utilizzare l'opzione è necessario che sia impostata una ‘Posizione IVA‘ di default e non sia inserito nessun costo/ricavo di contropartita predefinito;
+
+
+**Conto Anticipi:** è possibile definire un sottoconto anticipi associato all’anagrafica cliente stessa (ad esempio un sottoconto legato al tipo conto specifico '*CA*' per Anticipi Clienti con relativo mastro) e collegarlo al conto principale del cliente (quello classico con tipo conto '*CIT*' legato ad esempio al mastro Clienti Italia) tramite il presente campo.
+
+![](/img/it-it/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/finance/image05.png)
+
+Questo sottoconto sarà utilizzato per valorizzare le righe tipo 6 ‘fattura d’acconto’ e 7 ‘storno acconti’ presenti nelle fatture di vendita.
+
+La fattura di acconto sarà sempre intestata al cliente reale e avrà la riga tipo 6 ‘Fattura d’acconto’ e il fatturato vendite rileverà il debito generico ad esempio il conto Clienti c/anticipi (come di consueto quando non viene utilizzato il campo in questione).
+
+Il risultato in contabilizzazione della fattura di acconto sarà il seguente:
+
+![](/img/it-it/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/finance/image06.png)
+
+
+Sarà intestata al cliente effettivo e avrà una riga di storno del suo valore per riassegnarlo al conto anticipi dedicato.
+
+Nella fattura di vendita finale sarà presente la riga di storno acconti per il valore già fatturato come di consueto.
+
+![](/img/it-it/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/finance/image07.png)
+
+
+Il risultato della contabilizzazione della fattura a saldo sarà il seguente:
+
+![](/img/it-it/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/finance/image08.png)
+
+Vi sarà quindi la chiusura del debito generico del conto clienti c/anticipi come di consueto, inoltre vi saranno le due righe di storno della contabilizzazione fattura precedente.
+Dal saldo (dare) di ogni conto anticipi cliente, quindi, si potrà capire l’importo degli anticipi aperti per ogni cliente.
+
+ATTENZIONE: gestione delle partite aperte: in entrambe le contabilizzazioni ci sono squadrature tra movimenti contabili e movimenti dei partitari, per cui le causali **non** devono prevedere la quadratura obbligatoria dei partitari.
+
+---
+
 
 **No fatture accompagnatorie**: flag per non consentire la creazione di fatture di vendita di tipo accompagnatorio in capo al soggetto in uso.
 

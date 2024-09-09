@@ -8,7 +8,7 @@ Rappresenta il riepilogo delle scadenze del documento, per ogni *tipo* e *soluzi
 - **Causale pagamento**: è possibile inserire direttamente in fattura una causale contabile che da luogo ad una scrittura automatica di incasso / pagamento. NB prestare attenzione al template della causale perchè utilizzerà i conti presenti anche senza sottoconto, motivo per il quale è presente il campo seguente.
 - **Conto sottoconto cliente / fornitore** conto che usa per incassare/pagare (cassa o banca ad esempio) la scadenza andando a sovrascrivere il conto presente nella causale contabile di pagamento (o incasso)
 - **N. ricevuta**: Un eventuale numero della ricevuta per i soldi ricevuti
-	- **Sing.**: attiva la contabilizzazione della chiusura scadenze nella scrittura automatizzata
+- **Singolo**: attiva la contabilizzazione della chiusura scadenze nella scrittura automatizzata
 - **Tipo sconto**: Tipo di sconto finanziario
 - **Valore sconto**: Valore dello sconto finanziario su incasso
 - **Dettaglio dichiarazioni**: È il riferimento alla dichiarazione di intento. L’iva applicata alle spese incasso potrebbe essere sempre un’iva plafond, quindi è necessario poter inserire anche qui la dich. di intento collegata (come per le righe articolo e le righe spese)

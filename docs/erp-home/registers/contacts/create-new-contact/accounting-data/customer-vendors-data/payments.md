@@ -1,6 +1,6 @@
 ---
 title: Pagamenti
-sidebar_position: 4
+sidebar_position: 3
 ---
 
 In questa form si possono specificare le condizioni commerciali di default in merito ai pagamenti/incassi.  

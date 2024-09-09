@@ -5,9 +5,9 @@ sidebar_position: 1
 
 Il tab **Home** contiene:
 
-- il combo-box per selezionare la **Lingua** desiderata;
+- il combo-box per selezionare la **Lingua** desiderata,
     
-- il combo-box per scegliere il **Menù** di Fluentis;
+- il combo-box per scegliere il **Menù** di Fluentis,
     
 In base al menu attivato, viene completata la ribbon bar del tab **Home** con le informazioni trasversali a tutta l'applicazione e si aggiungono i tab che corrispondono alle aree di Fluentis.
     

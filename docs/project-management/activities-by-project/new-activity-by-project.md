@@ -7,7 +7,7 @@ sidebar_position: 1
 
 **Tipo attività**: contiene il [Tipo attività](/docs/configurations/tables/project-management/activity-type/);
 
-**Data attività/Numero attività**: contiene la data e il numero dell’attività;
+**Data attività/Numero attività**: contiene la data e il numero dell’attività; verrà proposta in automatico la più vecchia data mancante in base ai mesi da verificare impostati nei parametri progetti. Se la data è una giornata configurata nel Caledario giorni non lavorativi, questa non verrà proposta.
 
 **Risorsa**: contiene la risorsa che svolge l’attività;
 
@@ -19,11 +19,11 @@ sidebar_position: 1
 
 **Conto statistico**: è possibile inserire un conto da utilizzare per le statistiche;
 
-**Ora di inizio/Ora fine**: contiene l’orario di inizio e di fine dell’attività;
+**Ora di inizio/Ora fine**: contiene l’orario di inizio e di fine dell’attività; viene proposta in base al turno della risorsa, e se già presenti altre dichiarazioni, verrà proposta solo la fascia oraria mancante per la giornata. 
 
 **Ora inizio pausa/Ora fine pausa**: contiene gli orari della pausa;
 
-**Intervento**: contiene l’eventuale [Intervento](/docs/project-management/service-activities/search-intervention/) collegato manualmente o da procedura;
+**Intervento**: contiene l’eventuale [Intervento](/docs/project-management/service-activities/search-intervention/) collegato manualmente o generato in automatico al salvataggio o da procedura;
 
 **Tickets**: contiene il ticket dell’attività;
 

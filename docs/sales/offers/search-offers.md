@@ -13,4 +13,4 @@ Il secondo bottone è **Conversione**: permette di trasformare un'offerta di ven
 - **Riporta Materiali/Risorse da righe Offerta come righe Ordine**: con questi flag vengono inserite nell'ordine delle righe articolo con le risorse e i materiali dell'offerta, se gerarchica.
 
 Una volta confermato il pop-up, il sistema genererà quindi un nuovo Ordine cliente utilizzando i dati dell'offerta. Questo ordine può essere visualizzato e modificato nella sezione [Ricerca ordini clienti](/docs/sales/sales-orders/search-sales-orders). Inoltre, l'utente verrà informato tramite un messaggio pop-up riguardante il successo della conversione, il numero dell'offerta convertita e la versione, insieme a un messaggio contenente il numero dell'ordine cliente generato dalla conversione.     
-Nella Conversione da Offerta a Ordine, gli sconti finali articolo inseriti nell’Offerta vengono riportati nelle righe articolo dell’Ordine
+Nella Conversione da Offerta a Ordine, gli sconti finali articolo inseriti nell’Offerta vengono riportati nelle righe articolo dell’Ordine.

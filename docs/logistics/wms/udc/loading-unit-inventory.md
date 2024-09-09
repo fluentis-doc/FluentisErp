@@ -3,9 +3,9 @@ title: Inventario unità di carico
 sidebar_position: 9
 ---
 
-Questa procedura è utilizzata eseguire un inventario delle UDC presenti a magazzino.
+Questa procedura è utilizzata per eseguire un inventario delle UDC presenti a magazzino.
 
-Alla lettura dell'ubicazione vengono visualizzati nella griglia sottostante tutti gli articoli contenuti al suo interno, con l'indicazione dei seguenti campi: 
+Alla lettura dell'ubicazione vengono visualizzate nella griglia sottostante tutte le unità di carico contenute al suo interno, con l'indicazione dei seguenti campi: 
 
 > **Unità di carico**: indica il numero dell'unità di carico contenuta nell'ubicazione;        
 > **Tipo**: indica il tipo dell'unità di carico contenuta nell'ubicazione;     
@@ -14,7 +14,7 @@ Alla lettura dell'ubicazione vengono visualizzati nella griglia sottostante tutt
 Lo step successivo è quello di leggere l'unità di carico da inventariare; se questa è presente tra quelle contenute nell'ubicazione selezionata viene aggiornata la **Data inventario** con la data odierna. Nel caso in cui, invece, l'unità di carico letta non sia presente nell'ubicazione viene mostrato un messaggio di avviso all'utente.      
 Il pulsante **Pulisci tutto** permette di svuotare la form da tutti i dati inseriti.     
 
-Una volta ultimate le letture dell'unità di carico, con la pressione del pulsante **Conferma**, solo nel caso in cui siano presenti delle unità di carico non inventariate, la procedura creerà dei movimenti di scarico di quelle unità di carico dall'ubicazione selezionata e di carico delle stesse nell'ubicazione di default della casuale indicata nei 
+Una volta ultimate le letture dell'unità di carico, con la pressione del pulsante **Conferma**, solo nel caso in cui siano presenti delle unità di carico non inventariate, la procedura creerà dei movimenti di scarico di quelle unità di carico dall'ubicazione selezionata e di carico delle stesse nell'ubicazione di default indicata nella causale presente nei 
 [Parametri Carico/Scarico per utente](/docs/configurations/parameters/general-parameters/deliverynotes-grouping).
 
 **Parametri carico/scarico** da inserire nella tabella [Parametri Carico/Scarico per utente](/docs/configurations/parameters/general-parameters/deliverynotes-grouping).

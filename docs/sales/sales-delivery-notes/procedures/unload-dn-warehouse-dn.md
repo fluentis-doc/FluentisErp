@@ -3,15 +3,16 @@ title: Scarico DDT da magazzino
 sidebar_position: 1
 ---
 
-La procedura si apre tramite il percorso **Vendite > DDT > Procedure > Scarico DDT da magazzino**. 
+La procedura massiva si apre tramite il percorso **Vendite > DDT > Procedure > Scarico DDT da magazzino**. 
 
-Questa procedura permette di eseguire/ripristinare le operazioni di scarico automatico dal magazzino degli articoli presenti nel DDT.
+Questa procedura permette di eseguire/ripristinare le operazioni di scarico automatico dal magazzino degli articoli presenti nel DDT.    
+Ricordiamo che la procedura può essere eseguita anche all'interno della [Testata](/docs/sales/sales-delivery-notes/insert-delivery-notes/header) del singolo DDT con il pulsante [Scarico automatico](/docs/sales/sales-delivery-notes/insert-delivery-notes/header-procedures/unload). 
+
+La procedura massiva è composta da tre tab che analizziamo di seguito. 
 
 ### Filtro
 
-In questo tab, l'utente ha la possibilità di cercare e trasferire i DDT che hanno impostato al loro interno il flag *Controllata*.
-
-**Data registrazione magazzino**: permette di specificare la data relativa allo scarico dal magazzino, tranne l'impostazione del *Crea la registrazione con la data documento* nei *Parametri DDT di vendita > tab Scarico*.
+In questo tab, l'utente ha la possibilità di cercare e trasferire i DDT che hanno impostato al loro interno il flag *Stampata* e quindi sono pronti per lo scarico.     
 
 *Pulsanti specifici*:
 
@@ -22,12 +23,10 @@ In questo tab, l'utente ha la possibilità di cercare e trasferire i DDT che han
 
 In questa maschera, l'utente ha la possibilità di specificare, per le righe articolo, il modo di trattare le eccezioni.
 
-In questo caso se le righe del DDT non hanno specificato il magazzino e la causale per lo scarico, le opzioni disponibile sono:
+In questo caso se le righe del DDT non hanno specificato il magazzino e la causale per lo scarico, le opzioni disponibili sono:
 
-- **Non effettuare lo scarico del DDT per intero**: non permette lo scarico parziale del DDT;
-
-- **Tralasciare l'articolo senza magazzino e causale**: permette lo scarico parziale del documento;
-
+- **Non effettuare lo scarico del DDT per intero**: non permette lo scarico parziale del DDT.     
+- **Tralasciare l'articolo senza magazzino e causale**: permette lo scarico parziale del documento.       
 - **Accettare come magazzino e causale i seguenti dati**: per tutti gli articoli trovati senza magazzino e causale nei DDT selezionati nella parte dei filtri, imposta i dati inseriti subito dopo, nei campi: *Magazzino* e *Causale* (assicura lo scarico completo del documento).
 
 *Pulsante specifico*

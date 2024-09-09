@@ -5,13 +5,13 @@ sidebar_position: 3
 
 La procedura si apre tramite il percorso **Acquisti > Fatture di acquisto > Procedure > Valorizzazione DDT di acquisto**. 
 
-Essa permette di eseguire/ripristinare la creazione della fattura di acquisto da una o più DDT di acquisto.
+Essa permette di eseguire/ripristinare la creazione della fattura di acquisto da uno o più DDT di acquisto.
 
 ### Valorizzazione
 
-In questo tab, l'utente ha la possibilità di inserire filtri per cercare i DDT da fatturare con l'ausilio dei filtri (tipo DDT, data, numero, fornitore). 
+In questo tab, l'utente ha la possibilità di inserire filtri per cercare i DDT di acquisto da valorizzare. È possibile filtrare per: fornitore, tipo bolla di acquisto, numero, data, articolo e progetto.
 
-**Data creazione**: permette di specificare la data della fattura che sarà creata. 
+- **Data creazione**: permette di specificare la data della fattura che sarà creata. 
 
 *Pulsante specifico*: 
 
@@ -21,33 +21,21 @@ In questo tab, l'utente ha la possibilità di inserire filtri per cercare i DDT 
 
 *Inserimento in fattura*
 
-Con l'aiuto di questi parametri si possono raggruppare i DDT dello stesso fornitore in una sola fattura:
+- **Ricalcola CdC/CdR**: utilizzato nella contabilità analitica, serve per ricalcolare i centri di costo o di ricavo.  
 
-**DDT di tipi diversi**: il flag attivo permette la creazione di una fattura da diversi tipi DDT.
+- **Ordina DDT per numero documento fornitore**: se settato permette di inserire i DDT all’interno delle fatture riepilogative ordinandoli per *numero documento fornitore* invece del *numero interno*.  
 
-**DDT di cambio diversi**: il flag attivo permette la creazione di una fattura da più DDT con tassi di cambio diversi.
-
-**Ricalcola CdC/CdP**: utilizzato nella contabilità analitica, serve per ricalcolare i centri di costo o di profitto.
-
-**Raggruppa DDT di anni/mesi diversi**: il flag attivo permette la creazione della fattura da DDT di anni e mesi diversi.
-
-*Trattamento pagamenti in fattura*
-
-Se ci sono DDT con soluzioni di pagamento diverse e se non è stato impostato il flag *Raggruppa DDT*:
-
-**Ripristina quelli di anagrafica**: la fattura prenderà le soluzioni di pagamento dall'anagrafica (e non considera l'informazione inserita nei DDT). 
-
-**Mantiene quelli dei DDT** la fattura prenderà le soluzioni di pagamento inserite nei DDT.
-
-*Inserimento in fattura*
-
-**Raggruppa scadenze in fattura**: il flag attivo permette di raggruppare in una soluzione unica le scadenze con la data uguale ma provenienti da DDT diversi.
+- **Tipo fattura acquisto**: indica il tipo di fattura da creare.
 
 *Riferimenti DDT*
 
-**Metti riferimenti DDT**: se questo flag è impostato, nel tab [Articoli](/docs/purchase/purchase-invoices/insert-purchase-invoice/items) della fattura verrà visualizzato un *Articolo nota* che riprenderà i riferimenti del DDT dal quale è stata creata la fattura. Il contenuto di questa nota deve essere inserito nel campo *Descrizione*, secondo i parametri descritti nella label. 
+- **Metti riferimenti DDT**: se questo flag è impostato, nel tab [Articoli](/docs/purchase/purchase-invoices/insert-purchase-invoice/items) della fattura verrà visualizzato un *Articolo nota* che riprenderà i riferimenti del DDT dal quale è stata creata la fattura. Il contenuto di questa nota deve essere inserito nel campo *Descrizione*, secondo i parametri descritti nella label. 
 
-*Esempio*: ![](/img/it-it/purchase/purchase-invoices/procedures/purchase-delivery-note-valorization/image06.png). Se il DDT ha il numero 5 e la data 11.09.2018, l'articolo nota nella fattura sarà: 'DDT riferimento no 5 del 11.09.2018'.
+    *Esempio*: ![](/img/it-it/purchase/purchase-invoices/procedures/purchase-delivery-note-valorization/image06.png). Se il DDT ha il numero 5 e la data 11.09.2024, l'articolo nota nella fattura sarà: 'DDT riferimento no 5 del 11.09.2024'.
+
+:::tip Ricorda
+Per la fatturazione riepilogativa è necessario impostare nei [Parametri raggruppamento fatture](/docs/configurations/parameters/purchase/invoice-grouping/) le condizioni di raggruppamento da utilizzare. 
+:::
 
 *Pulsante specifico*: 
 
@@ -62,6 +50,6 @@ L'ultimo tab è quello di ripristino: è possibile utilizzarlo per filtrare, vis
 I dati nelle griglie in basso, **Fatture** e **DDT**, corrispondono alla valorizzazione selezionata nella griglia superiore (dopo aver filtrato i dati). Inoltre, in queste ultime due griglie, c'è la possibilità di visualizzare la fattura e il DDT corrispondente con doppio click sulla riga desiderata.
 
 *Pulsanti specifici*:
-> **Ricerca valorizzazione DDT**: per cercare le fatture create e i DDT valorizzati. Il risultato di questa procedura viene visualizzato nella griglia di risultato.  
-> **Rollback fattura**: per cancellare la fattura selezionata.  
+> **Ricerca valorizzazione DDT**: per cercare le fatture create e i DDT valorizzati in base ai filtri impostati. Il risultato di questa procedura viene visualizzato nella griglia di risultato.  
+> **Rirpistino fatture**: per cancellare la fattura selezionata nella griglia inferiore.  
 > **Ripristino valorizzazione**: per cancellare l'intera operazione selezionata, con tutti i suoi dettagli visualizzati nelle due griglie sottostanti.

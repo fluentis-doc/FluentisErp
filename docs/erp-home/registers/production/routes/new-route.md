@@ -55,7 +55,11 @@ Le informazioni importanti che riguardano la fase e che serviranno a livello pro
 
 **Fase produttiva**: se attivo, indica che la fase è produttiva e si può procedere all'inserimento delle segnalazioni di produzione (quindi attivandolo si vuole che la produzione per questa fase venga rilevata); se non attivo, non sarà possibile dichiarare la fase stessa;      
 
-**Fase movimentabile** se attivo, indica che nel momento in cui si va a rilevare la fase di produzione si creano anche dei movimenti di magazzino; questo significa che procedendo con la segnalazione di produzione di procederà anche al carico del prodotto finito a magazzino e allo scarico della materia prima impiegata per la produzione in quella fase;
+**Fase movimentabile**: se attivo, indica che nel momento in cui si va a rilevare la fase di produzione si creano anche dei movimenti di magazzino; questo significa che procedendo con la segnalazione di produzione di procederà anche al carico del prodotto finito a magazzino e allo scarico della materia prima impiegata per la produzione in quella fase;
+
+:::note Nota
+Tutte le fasi esterne devono sempre avere i flag **Fase produttiva** e **Fase movimentabile** attivi.
+:::
 
 **Macchina/Gruppo manodopera**: in questi campi si vanno a selezionare tramite la combo box, il codice della macchina in cui avviene la fase e il codice gruppo manodopera che viene utilizzato; questi due codici vengono ripresi da delle tabelle precedentemente codificate, quali [Gruppi manodopera](/docs/configurations/tables/production/labour-group) e [Macchine](/docs/configurations/tables/production/machines) che si trovano sempre tra le tabella della sezione *Produzione*;  
 

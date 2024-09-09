@@ -59,4 +59,8 @@ I costi e i prezzi in anagrafica sono in EUR, quindi il sistema li andrà anche 
 
 **Gestione matrici Extra Data**: se attivo, permette di visualizzare nel caso di gestione articoli con matrice, un tab aggiuntivo per l'imputazione dei valori della quantità per singola cella di matrice. Se non attivo, non viene visualizzato questo TAB e la conseguente matrice.
 
-**Gestione cespiti**: questo flag indica che la tipologia di RDO deve gestire i cespiti; nel campo successivo è necessario indicaro il **Tipo operazione**, che nel caso delle vendite potrà essere una alienazione, una alienazione parziale, una distruzione, o altre possibilità selezionabili dalla combo box.         
+**Gestione cespiti**: questo flag abilita la gestione dei cespiti nel tipo fattura e nel campo successivo va specificato il tipo di operazione dei cespiti;
+
+**Tipo operazione**: in questa combo box è possibile selezionare il tipo di operazione dei cespiti tra diverse opzioni (rivalutazione, distruzione, plusvalenza, ecc.).       
+
+**Tipo sconto/Descrizione**: in questa colonna è possibile associare la tipologia di sconto da proporre quando gli sconti vengono inseriti direttamente nella colonna *Sconti articolo* della griglia articoli dei documenti (per maggiori dettagli vedi l'articolo [Gestione Widget sconti semplificato](/docs/sales/sales-flow/discount-widget)).

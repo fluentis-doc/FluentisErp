@@ -43,7 +43,7 @@ I campi presenti sono:
 
 **Stampa**: permette di indicare il modello di stampa che verrà utilizzato in fase di stampa della fattura e, mediante il campo **Numero copie**, il numero di copie del documento che sarà proposto di default per la stampa. La stampa delle fatture d'acquisto in realtà non è di esteso utilizzo in quanto la fattura viene ricevuta dal fornitore e quindi non necessita di essere ulteriormente stampata da Fluentis.
 
-**Gestione Conai**: questo flag permette di attivare la gestione Conai per ciascun di tipo fattura. Per maggiori dettagli sulla gestione delle spese relative al [Conai](/docs/sales/conai) si rimanda all'apposita pagina della documentazione.
+**Gestione Conai**: questo flag permette di attivare la gestione Conai per ciascun di tipo fattura. Per maggiori dettagli sulla gestione delle spese relative al [Conai](/docs/sales/sales-flow/conai) si rimanda all'apposita pagina della documentazione.
 
 **Controllo qualità**: se attivo, questo flag rende visibili i tipi fattura nella form [Importa articoli da controllare](/docs/quality/item-control/items-control/item-control-import/) posta nell'area *Qualità*.
 

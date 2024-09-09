@@ -8,7 +8,7 @@ Nella testata della fattura, premendo il pulsante **Evasione da ordini clienti**
 Tramite questa procedura è possibile creare una fattura di vendita dall'evasione del relativo ordine cliente. E' quindi possibile inserire gli articoli all'interno della fattura, evadendo totalmente o parzialmente un intero ordine o una riga.
 
 Per poter utilizzare questa procedura vi sono delle condizioni iniziali che devono essere rispettate:
- -  i/il cliente degli ordini deve essere lo stesso dell fattura;
+ -  i/il cliente degli ordini deve essere lo stesso della fattura;
  -  l'ordine che si vuole evadere deve avere impostato il flag *Stampato* e la *Data conferma ordine*;
  -  i tipi documento devono essere compatibili: nella tabella dei *Tipi ordini* il tipo ordine che si vuole evadere deve avere impostato il tipo fattura corrispondente, mentre nella tabella dei *Tipi fatture* deve essere presente il flag su *Ordine* (che indica che la fattura deriva da un ordine);
 
@@ -24,6 +24,10 @@ Una volta impostati tutti i *Filtri* desiderati, cliccando sul pulsante di *Rice
 La procedura riprende tutti i dati presenti nell'ordine e come conseguenza saranno applicate le condizioni di acquisto presenti nell'ordine, anche se queste attualmente sono cambiate(es: aggiornamento listini).
 :::
 
+:::note Nota
+Le righe di tipo Nota saranno sempre visibili, anche se già evase, fino a quando tutte le righe delle altre tipologie saranno evase.
+:::
+
 Nella griglia di risultati, l'utente ha poi la possibilità di:
 
  1. selezionare l'*ordine per intero*. Per farlo basterà selezionare il flag presente all'inizio della riga ordine.
@@ -34,7 +38,7 @@ Per completare la procedura bisognerà poi cliccare sul pulsante *Trasferimento*
 
 *Pulsanti specifici:*
 
-> **Ricerca**: permette di cercare gli ordini fornitore.  
+> **Ricerca**: permette di cercare gli ordini.  
 > **Trasferimento**: permette di trasferire i dati dell'ordine selezionato all'interno della nuova fattura.  
 > **Evasione forzata dell'ordine**: permette l'evasione forzata dell'ordine.  
 > **Evasione ordini**: permette l'evasione dell'ordine.  

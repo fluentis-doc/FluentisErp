@@ -1,5 +1,5 @@
 ---
-title: Opportunità
+title: Ricerca Opportunità
 sidebar_position: 1
 ---
 

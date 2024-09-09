@@ -71,3 +71,19 @@ La procedura automatica impone, infatti, alle scritture di riapertura degli asse
 Dopo essersi accertati di aver effettivamente inserito movimenti contabili con date di competenza economica a cavallo dell'esercizio contabile, e di aver utilizzato conti di costo aventi il tipo "da rettificare" (db Fast Start) o comunque avente il flag Servizio nella tabella *tipi conto*, se ancora non vedo alcun rateo o risconto proposto, potrei aver attivato, inavvertitamente il flag *Chiusura mensile* nei parametri generali di contabilità. Questo flag attiva infatti logiche per localizzazioni estere non italiane.
 
 </details>
+
+<details>
+
+  <summary> 7. Ho associato un tipo ritenuta d'acconto ad un cliente per generare la fattura elettronica completa dei tag necessari, ora voglio contabilizzare la fattura ma vedo che la scrittura contabile non è corretta e non riporta la ritenuta d'acconto, perchè?</summary>
+
+All'interno nella tabella *Tipi Ritenuta*, aprire la tipologia associata al cliente in questione e verificare che il campo *Tipi partite* sia settato su *Partite Nette*.
+
+</details>
+
+<details>
+
+  <summary> 8.Fluentis mi propone all'interno di una nuova registrazione contabile sempre l'ultima divisa utilizzata con la causale selezionata ignorando la divisa di default del cliente o fornitore, perchè? </summary>
+
+Verificare il settaggio del parametro generale nella tabella PARAM_Parameter codice CA-RegCont-General_PurposeCurrencyByTemplate. Se il parametro è impostato a 1 verrà proposta la divisa ultima utilizzata con la causale, se impostato a 0 non verrà proposta alcuna divisa seguendo la logica base della divisa della società e poi lettura della divisa del cliente o fornitore.
+
+</details>

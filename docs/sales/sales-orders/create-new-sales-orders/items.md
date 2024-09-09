@@ -66,7 +66,7 @@ I campi *non obbligatori*, invece, sono:
 Se viene gestita la produzione, quando il flag viene attivato, viene mostrato un messaggio che avvisa l'utente: “L'evasione forzata della riga comporta l'automatica eliminazione di eventuali ordini pianificati collegati a commesse in stato schedulata e l’evasione delle commesse in stato schedulata e non esaminata". Per quanto riguarda invece i documenti generati a fronte di commesse in stato lanciato o esecutivo, le commesse e documenti non verranno modificati.     
 :::
 
-- **Data Merce pronta e Data consegna**: queste date indicano la data in cui il materiale sarà pronto (quindi quando la produzione sarà terminata) e la data in cui si prevede di consegnare il materiale.
+- **Data Merce pronta e Data consegna**: queste date indicano la data in cui il materiale sarà pronto (quindi quando la produzione sarà terminata) e la data in cui si prevede di consegnare il materiale; la Data Merce Pronta deve essere minore o uguale alla Data consegna.
 
 Nella sezione Articoli sono presenti i seguenti pulsanti, nella barra degli strumenti: 
 
@@ -103,7 +103,7 @@ import AlternativeUMQuantity from './../../../import/fields/alternative-um-quant
 
 - **Progetto**: è il progetto associato al documento; questo può essere assegnata, nel caso dell'ordine cliente, con l'ausilio della procedura *Evasione da commessa* oppure può essere assegnata con l'ausilio del help di campo.
 
-- **Rivalsa IVA**: Per rivalsa IVA si intende l'attribuzione dell'imposta al committente con l'obiettivo di recuperare la somma versata; si attua tramite l'addebito in fattura, posto in essere dal venditore o dal prestatore del servizio nei confronti del committente.
+- **Rivalsa IVA**: se settato l'iva dell'omaggio viene considerata per il totale documento.
 
 - **Offerta**: riporta il riferimento dell'offerta cliente se l'ordine proviene da [Offerta](/docs/sales/offers/search-offers).
 
@@ -116,18 +116,6 @@ import AlternativeUMQuantity from './../../../import/fields/alternative-um-quant
 import SalesTabAgent from './../../../import/sections/sales-tab-agent.md'
 
 <SalesTabAgent />
-
-## Varianti
-
-import TabVariant from './../../../import/sections/tab-variant.md'
-
-<TabVariant />
-
-*Pulsante specifico*
-
-import DeleteVariant from './../../../import/buttons/delete-variant.md'
-
-> <DeleteVariant />
 
 ## Lotti e Serial number
 

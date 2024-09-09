@@ -5,34 +5,41 @@ sidebar_position: 1
 ---
 
 :::info Info
-Una volta aperta la form di dettaglio dell'*Evento*, nella parte superiore sono presenti alcuni parametri standard come *Codice, Nome, Descrizione, Data di creazione, Data ultima modifica*, *Abilitato*. I parametri più rilevanti sono  *Gruppi, Consenti sovrapposizione pianificazione, Attività, Durata massima* e *Risultato dell'ultima esecuzione*.
+La form di dettaglio dell'*Evento* si compone:
+* Di un ribbon menu con cui è possibile salvare, create o eseguire un evento, gestire i profili e festire eventuali parametri.  
+* Informazioni di testata, in cui impostare codice, task da eseguire e gruppo di riferimento con informazioni obbligatorie.
+* Tre tab per la gestione dei parametri legati al task, il log di esecuzione e i parametri di schedulazione.
 :::
 
-### Parametri
-Nella tab **Parametri** (in base al *Task* selezionato nel selettore posto nella parte superiore dell'interfaccia), possono essere specificati i parametri del *Task* con i relativi valori, che verranno poi utilizzati al momento dell'esecuzione dell'*Evento*.
+### Tab Parametri
+Il tab Parametri permette di gestire i parametri di input dell'evento.
+Tramite la colonna Task Parameter si ha accesso alla lista di parametri del task selezionato, si procede associando un codice e un nome da Dizionario.
 
-### Logs
-Nella tab **Logs** verranno visualizzati tutti i logs che si riferiscono all'esecuzione dell'*Evento*. E' importante sottolineare che il log non contiene solo informazioni generiche sull'esecuzione dell'*Evento*, ma anche eventuali messaggi di errore che si sono verificati su di esso.
+![alt text](/img/it-it/applications/supervisor/supervisor12.png)
 
-### Schedulazioni
-Nella tab **Schedulazioni** è possibile inserire una schedulazione, tramite i pulsanti posti sulla ribbon, da una finestra dedicata.
+### Tab Logs
+Il tab LOG permette di visualizzare il log di esecuzione del task, sia per le esecuzione schedulate che per quelle
+manuali.
 
-Con il pulsante *Aggiungi* o *Modifica Schedulazione*, l'app aprirà una finestra di configurazione della schedulazione, contenente i parametri necessari. Al suo interno si potranno scegliere quattro tipi di schedulazione:
+![alt text](/img/it-it/applications/supervisor/supervisor13.png)
 
-:::info Info
-Tutte le date sono comprensive di *data* e *ora*, tutti i tipi di schedulazione hanno un parametro *Data Inizio*.
-:::
+
+### Tab Schedulazioni
+Il tab SCHEDULES permette di schedulare tramite il pulsante dedicato l'esecuzione dell'evento.
+il popup permette di definire il tipo di occorrenza con la relativa parametrizzazione di dettaglio distinguendo tra:
 
 **Una volta**
-> Questa opzione è utilizzata per operazioni non durature/ripetitive.
+> Permette di indicare data/ora esatti per l'esecuzione.
 
 **Giornaliero**
-> Questa opzione ha i parametri *Ripeti ogni (n) giorno/i*, *Ripeti ogni (n) (ore/minuti/secondi)* e *Da/A Ora*.
+> Permette di indicare l'ora di avvio, ogni quanti giorni ripetere nel corso della giornata e in quale intervallo orario.
 
 **Settimanale**
-> Questa opzione ha il parametro *Ripeti ogni (n) settimana/e* e tutti i giorni della settimana disponibili come flag (la schedulazione eseguirà il task dei flag selezionati).
+> Permette una pianificazione settimanale, in cui oltre alle impostazioni su esecuzione giornaliera possiamo definire per quante settimane ripetere e indicare i giorni esatti della settimana.
 
 **Mensile**
-> Questa opzione ha quattro selettori da cui si può scegliere: *Mesi*, *Giorni(n)*, *Giorni della settimana* e *Serie di giorni della settimana*.   
+> Permette una pianificazione mensile indicando i mesi in cui ripetere, i giorni del mese etc.  
 
-E alcune *impostazioni avanzate* che includono i parametri di schedulazione *data fine* e *abilitato* (quest'ultimo è un flag).
+Infine, sarà possibile indicare un’eventuale data di fine esecuzione con il flag End date e decidere se abilitare o meno il task in automatico.
+
+![alt text](/img/it-it/applications/supervisor/supervisor14.png)

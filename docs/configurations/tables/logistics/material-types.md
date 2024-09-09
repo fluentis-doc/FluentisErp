@@ -5,7 +5,7 @@ sidebar_position: 6
 
 La tabella si trova sul percorso **Tabelle > Logistica > Tipi materiale**.
 
-In questa tabella è possibile gestire la codifica dei diversi *Tipi materiale* di imballaggio usati nella [Gestione Conai](/docs/sales/conai).
+In questa tabella è possibile gestire la codifica dei diversi *Tipi materiale* di imballaggio usati nella [Gestione Conai](/docs/sales/sales-flow/conai).
 
 Consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
 
@@ -29,4 +29,4 @@ Nella griglia superiore vengono codificati i *Tipi materiale*. I campi obbligato
 
 Nella griglia inferiore è possibile definire i *Costi di riciclo* associati a ciascun materiale inserito nella tabella superiore, ovvero le tariffe da applicare all’interno dei vari *range di date*, con l’**Unità di misura** da applicare: questa deve essere coerente con l’unità di misura che si utilizzerà all’interno degli articoli di vendita e degli articoli fittizi Conai.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento della *Gestione Conai* in Fluentis fare riferimento al seguente link [Gestione Conai](/docs/sales/conai).
+Per tutto quanto non dettagliato in questo documento sul funzionamento della *Gestione Conai* in Fluentis fare riferimento al seguente link [Gestione Conai](/docs/sales/sales-flow/conai).

@@ -3,7 +3,7 @@ title: Evasione da ordine
 sidebar_position: 1
 ---
 
-Nella testata del DDT, premendo il pulsante **Evasione da ordine** si aprirà la form dove è possibile filtrare gli ordini relativi al cliente del documento e trasferirli nel DDT. E' possibile eseguire l'operazione di creazione DDT da ordine anche dalla [Ricerca ordini](/docs/sales/sales-orders/search-sales-orders).
+Nella testata del DDT, premendo il pulsante **Evasione da ordine** si aprirà la form dove è possibile filtrare gli ordini confermati del cliente del documento e trasferirli nel DDT. E' possibile eseguire l'operazione di creazione DDT da ordine anche dalla [Ricerca ordini](/docs/sales/sales-orders/search-sales-orders).
 
 Tramite questa procedura è possibile creare un DDT di vendita dall'evasione del relativo ordine cliente. E' quindi possibile inserire gli articoli all'interno del DDT, evadendo totalmente o parzialmente un intero ordine o una riga.
 
@@ -26,6 +26,10 @@ Una volta impostati tutti i *Filtri* desiderati, cliccando sul pulsante di *Rice
 La procedura riprende tutti i dati presenti nell'ordine e come conseguenza saranno applicate le condizioni di acquisto presenti nell'ordine, anche se queste attualmente sono cambiate.
 :::
 
+:::note Nota
+Le righe di tipo Nota saranno sempre visibili, anche se già evase, fino a quando tutte le righe delle altre tipologie saranno evase.
+:::
+
 Nella griglia di risultati, l'utente ha poi la possibilità di:
 
  1. selezionare l'*ordine per intero*. Per farlo basterà selezionare il flag presente all'inizio della riga ordine.
@@ -38,7 +42,7 @@ Per completare la procedura bisognerà poi cliccare sul pulsante *Trasferimento*
 
 > **Ricerca** permette di cercare gli ordini fornitore.  
 > **Trasferimento** permette di trasferire i dati dell'ordine selezionato all'interno del nuovo DDT.  
-> **Evasione forzata dell'ordine** permette l'evasione forzata dell'ordine.  
+> **Evasione forzata dell'ordine** permette l'evasione forzata dell'ordine; nel caso in cui vengano selezionate alcune righe dell'ordine, verranno evase forzatamente solo le righe selezionate (con l'aggiunta del flag *Evaso forzato* in corrispondenza della riga articolo); nel caso venga evaso l'ordine intero, esso cambierà lo stato anche in testata.  
 > **Evasione ordini** permette l'evasione dell'ordine.  
 > **Espandi** permette di espandere l'intero albero degli ordini nella griglia sottostante, per visualizzare gli articoli contenuti in essi.  
 > **Comprimi** permette di comprimere la visualizzazione delle righe articolo, e di far visualizzare solamente le righe ordine.  

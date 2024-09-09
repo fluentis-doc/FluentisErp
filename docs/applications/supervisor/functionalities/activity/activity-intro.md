@@ -4,10 +4,11 @@ sidebar_label: Attività
 sidebar_position: 0
 ---
 
-L'*Attività* è stata creata per risolvere un problema di complessità legato alle precedente versione di Fluentis e quindi per ridurre le competenze richieste dal potenziale utente; si è deciso di suddividere il problema in blocchi. L'Attività può essere vista come un'unità atomica o un elemento con una serie di parametri di input è di output, che sono analizzati e divisi in tipi (saranno descritti successivamente nella documentazione). 
+Le **Attività** sono delle azioni atomiche che possono essere configurate per poter essere eseguite e concatenate in altri contesti.  
+L'utente crea un'attività quanto un'azione necessita di essere applicata in modo ripetitivo in diversi scenari d'azione.  
+Tramite le attività è possibile definire degli script che svolgono una determinata funzione in modo che poi possano essere riutilizzati all'interno di un Task.  
+
+Infine, le Attività sono organizzate in gruppi (come ad esempio *Utilità*, *Esempi*, *Demo*) in base al contesto di utilizzo.  
+Per creare un nuovo gruppo di Attività vedere l'articolo [creazioni gruppi](../../group-creation).
 
 La form **Attività** si apre dal menu complementare **Strumenti** > **Fluentis Supervisor** > **Attività**.
-
-Alcune delle funzionalità all'interno della form si riferiscono ad un utilizzo standard. Per qualsiasi dettaglio sull'utilizzo di questa form non esplicitato qui, riferirsi a questo [articolo](/docs/guide/common).
-
-Le *Attività* sono organizzate in gruppi (come ad esempio *Utilità*, *Esempi*, *Demo*) in base al contesto di utilizzo. Per creare un nuovo gruppo di *Attività* riferirsi all'articolo [creazioni gruppi](../../group-creation).

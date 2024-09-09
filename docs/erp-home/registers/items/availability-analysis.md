@@ -31,7 +31,7 @@ Se attivo, questo flag indica che si vogliono visualizzare anche le righe che no
 
 - *Riepilogativa*: la riepilogativa di queste due opzioni sopra citate;
 
-- *Dettaglio distinta base*: decidendo di considerare il dettaglio distinta, si decide di vedere la disponibilità di tutti i singoli componenti della distinta base dell'articolo oggetto della ricerca (vengono visualizzati anche i componenti con disponibilità uguale a zero); 
+- *Dettaglio distinta base*: decidendo di considerare il dettaglio distinta, si decide di vedere la disponibilità di tutti i singoli componenti della distinta base dell'articolo oggetto della ricerca (vengono visualizzati anche i componenti con disponibilità uguale a zero); in questo caso, nella visualizzazione dell'analisi disponibilità, vengono aggiunte le colonne *livello*, *priorità* (si riferisce alla priorità indicata in distinta base per quel componente), *codice e variante articolo padre* relative appunto all'articolo padre. Inoltre, la lista degli articoli sarà ordinata per *livello + codice padre + variante padre + Priorità + codice articolo + variante articolo*. 
 
 **Punti vendita**
 
@@ -56,10 +56,13 @@ Nelle griglie di risultato per magazzino si vedranno le varie righe di disponibi
 
 Nella griglia di dettaglio si vedranno invece, cliccando sulla riga d'interesse nella griglia di magazzino, tutti i documenti collegati a quella singola riga. Quindi l'ordine cliente a cui fa riferimento, l'ordine di produzione e la commessa di riferimento ed eventuali documenti di vendita se presenti (come DDT, fatture).
 
-Tramite un doppio click del tasto sx del mouse sulla riga seleziona è possibile aprire il realativo documento.         
+Tramite un doppio click del tasto sx del mouse sulla riga seleziona è possibile aprire il relativo documento.     
+
+:::note Nota
+La disponibilità dell'articolo da produrre è data solamente dall'ultima fase con i flag **produttiva** e **movimentabile** attivi presente nel [Ciclo di lavoro](/docs/erp-home/registers/production/routes/new-route).
+:::
 
 Per quanto riguarda la descrizione delle funzionalità comuni a tutti le form, presenti nella ribbon bar, si rimanda all'articolo relativo ai [Pulsanti Comuni](/docs/guide/common-buttons), in particolare per le funzionalità delle stampe si rimanda anche all'articolo [Anteprima e Stampa](/docs/guide/operations-with-data/reports).
-
 
 *Pulsante specifico*:
 > **Espandi/riduci griglia articoli**: pulsante che permette di espandere o ridurre le griglie di risultato. 

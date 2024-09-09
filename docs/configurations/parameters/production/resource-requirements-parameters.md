@@ -30,7 +30,7 @@ In questa sezione l'utente può impostare il tipo richiesta d'acquisto e il tipo
 
 **Numero giorni per il calcolo disponibilità**: indica fino a quanto spingersi avanti per la valutazione del calcolo della disponibilità, non considerando ordini e fabbisogni che superano quella data.
 
-**Data impegno materiali alla fase di scarico materiali**:
+**Data impegno materiali alla fase di scarico materiali**: se attivo, la data impiego materiale indicata negli ordini pianificati sarà pari alla data inizio maggiore tra tutte le fasi, il che significa che sarà uguale alla data inizio dell'ultima fase. Mentre, se il flag non è attivo, la data impiego materiale indicata negli ordini pianificati sarà pari alla data inizio dell'ordine, quindi alla data inizio della prima fase.         
 
 **Giorni anticipo impegno materiali**: il valore indicato permette di anticipare di quel numero di giorni la disponibilità del materiale rispetto l’inizio della lavorazione (sia negli ordini pianificati di produzione che negli ordini di produzione), in modo da permettere alla logistica di portare il materiale in tempo in produzione. Questo è preso in considerazione dalle seguenti procedure: tutte le schedulazioni "al più presto", "al più tardi", "a capacità finita", "MRP", "Completamento dati ordine" sia negli ordini pianificati che negli ordini di produzione, "Ricalcola data inizio" sia negli ordini pianificati che negli ordini di produzione tutte le procedure del CRP ("Gantt", "Capacità centri di lavoro" e "Sequenza fasi") che operano sul cambio data inizio o fine della fase dell'ordine.
  

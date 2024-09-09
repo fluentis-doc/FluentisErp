@@ -12,7 +12,7 @@ Alla lettura dell'unità di carico vengono visualizzati nella griglia sottostant
 > **Lotto**: indica il lotto dell'articolo contenuto nell'unità di carico (presente solo se gestito a lotti);           
 > **Variante**: indica la variante dell'articolo contenuto nell'unità di carico (presente solo se gestito a variante).       
 
-Selezionando uno degli articoli, con i pulsanti **+** e **-** è possibile variare rispettivamente in positivo o negativo la quantità riporta in griglia.       
+Selezionando uno degli articoli, con i pulsanti **+** e **-**, oppure tramite tastiera, è possibile variare rispettivamente in positivo o negativo la quantità riporta in griglia.       
 Una volta ultimate le correzioni su tutti gli articoli interessati, tramite il pulsante **Conferma** verranno confermati ed effettuati i relativi movimenti di magazzino di rettifica positivi e negativi all'interno dell'unità di carico selezionata.
 Il pulsante **Pulisci tutto** permette di svuotare la form da tutti i dati inseriti.     
 

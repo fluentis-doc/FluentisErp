@@ -48,7 +48,7 @@ Una volta confermate tutte le righe dell’ordine si viene posizionati automatic
 In questa form vengono riportate tutte le informazioni relative alle righe create.
 
 **Pulsanti specifici**
-> **Cancella articoli**: permttete di cancellare la riga selezionata dal DDT.   
+> **Cancella articoli**: permette di cancellare la riga selezionata dal DDT.   
 
 - **Dettagli dell'ordine**: 
 In questa form vengono riportate tutte le informazioni relative all'ordine fornitore considerato.

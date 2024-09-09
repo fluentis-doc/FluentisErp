@@ -62,7 +62,7 @@ In assenza del listino, il dato proposto può essere ripreso dal *costo ultimo* 
 
 *Pulsanti specifici*
 
-> **Ricalcolo Conai**: se la [Gestione Conai](/docs/sales/conai) è abilitata per il documento, è possibile ricalcolare i valori con questo bottone dopo eventuali modifiche.
+> **Ricalcolo Conai**: se la [Gestione Conai](/docs/sales/sales-flow/conai) è abilitata per il documento, è possibile ricalcolare i valori con questo bottone dopo eventuali modifiche.
 >
 > **Gestione imballi**: permette l'apertura della gestione degli imballi a rendere usati nel documento di acquisto.   
 Il pulsante diventa attivo se il documento è salvato, ma non caricato. Con clic su questo pulsante si apre la form corrispondente dove inserire la quantità, selezionare la riga ed eseguire il trasferimento dell'imballo selezionato nelle righe articolo cliccando sul pulsante **Execute**. In questa form vengono riportati gli articoli che sono stati inseriti con natura Imballo e che sono presenti nella tabella degli [Imballi a rendere](/docs/configurations/tables/logistics/package-to-be-returned).      
@@ -109,7 +109,7 @@ Nelle due griglie possono essere inseriti i lotti e numeri seriali che devono es
 Se l'articolo non prevede la gestione dei [Lotti e Serial Number](/docs/erp-home/registers/items/create-new-items/item-registry/lots-and-serial-number), questo tab sarà disabilitato.
 
 :::tip Ricorda
-Se nei [Parametri fatture di acquisto](docs/configurations/parameters/purchase/purchase-invoices-parameters/) il flag *Lotti e S.N. obbligatori* è disabilitato sarà possibile salvare il documento senza inserire i lotti/serial number. Inoltre, se la *Tipologia di prelievo* del lotto codificata nell'[anagrafica articolo](/docs/erp-home/registers/items/create-new-items/item-registry/lots-and-serial-number) è *FIFO* o *Data scadenza* al momento del carico a magazzino della fattura i lotti saranno proposti in automatico, se non sono già stati inseriti in precedenza.
+Se nei [Parametri fatture di acquisto](/docs/configurations/parameters/purchase/purchase-invoices-parameters) il flag *Lotti e S.N. obbligatori* è disabilitato sarà possibile salvare il documento senza inserire i lotti/serial number. Inoltre, se la *Tipologia di prelievo* del lotto codificata nell'[anagrafica articolo](/docs/erp-home/registers/items/create-new-items/item-registry/lots-and-serial-number) è *FIFO* o *Data scadenza* al momento del carico a magazzino della fattura i lotti saranno proposti in automatico, se non sono già stati inseriti in precedenza.
 :::
 
 
@@ -139,7 +139,7 @@ Questo tab è visibile se per la società attiva è stata attivata la gestione C
 Questa sezione riporterà i materiali d’imballaggio che compongono l’articolo, con la relativa unità di misura, peso unitario (abbattuto dell’eventuale percentuale d’esenzione dell’anagrafica cliente) e il totale del peso ottenuto dalla moltiplicazione tra numero di articoli venduti per il peso unitario.    
 Al salvataggio del documento, o alla pressione del pulsante **Ricalcolo Conai**, Fluentis inserirà una o più righe spese recuperando l’articolo dei materiali, con quantità uguale alla somma delle quantità e prezzo uguale al costo conai per quel materiale.
 
-Per maggiori informazioni sulla [Gestione Conai](/docs/sales/conai) in Fluentis vedere la pagina allegata.
+Per maggiori informazioni sulla [Gestione Conai](/docs/sales/sales-flow/conai) in Fluentis vedere la pagina allegata.
 
 ## Sezione valori
 

@@ -3,18 +3,7 @@ title: Aliquote IVA
 sidebar_position: 1
 ---
 
-
-:::note Percorso
-**Tabelle > Amministrazione > Aliquote / modalità IVA**
-
-Nota:
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
-
-:::
-
----
-
-La tabella in oggetto è comune a tutte le società presenti nella base dati e presenta la lista delle aliquote IVA applicabili in tutto il gestionale.
+Questa tabella è comune a tutte le società presenti nella base dati e presenta la lista delle aliquote IVA applicabili in tutto il gestionale.
 
 Si tratta di una tabella precaricata sulla quale l'utente abilitato può operare per modificare o aggiungere quanto fosse necessario per l'attività della società.
 
@@ -76,6 +65,10 @@ L'utilizzo del campo diventa **fondamentale** in un caso in particolare: si pens
 **Base per conteggio bollo:** poichè il bollo in fattura viene inserito in automatico solo quando si è in presenza di codici iva esenti, esclusi o non imponibili (viene rilevata la *Categoria IVA* del codice stesso) e la fattura supera un certo importo (impostato nella tabella dell'anagrafica della società) il significato di questo flag è di andare a gestire alcune casistiche che, seppur esenti o non imponibili o escluse, fanno eccezione e non prevedono l'applicazione del bollo. In questi casi pertanto il flag dovrà essere disattivato.
 
 NOTA: in caso di errata attivazione del flag su codici di tipo Aliquota prevale comunque la lettura della categoria IVA e pertanto il bollo NON viene inserito.
+
+**Reverse charge:** vedere [**qui**](/docs/finance-area/particular-cases/mixed-reverse-charge)
+
+**Iva del margine / Iva del margine di riferimento:** vedere [**qui**](/docs/finance-area/particular-cases/VAT_regime-del-maine.md)
 
 ---
 

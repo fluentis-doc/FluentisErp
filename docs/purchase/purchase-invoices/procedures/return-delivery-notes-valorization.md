@@ -9,46 +9,44 @@ La procedura permette di creare le fatture dai DDT di rientro.
 
 ### Filtro rientri
 
-In questo tab, l'utente ha la possibilità di inserire filtri per cercare i DDT da fatturare con l'ausilio dei filtri (tipo rientro, data, numero, fornitore). 
+In questo tab, l'utente ha la possibilità di inserire filtri per cercare i DDT di rientro da valorizzare. È possibile filtrare per: fornitore, tipo rientro, numero documento, data, articolo e progetto.
 
-**Num. e data fattura**: permette di specificare il numero e la data della fattura che sarà creata. 
+- **Numero e data fattura**: permette di specificare il numero e la data della fattura che sarà creata. 
+
+- **Totale**: permette di vedere il totale importo dei rientri selezionati per la valorizzazione.
 
 *Pulsante specifico*:
  
-> **Valorizzazione rientri**: permette di valorizzare i rientri selezionati nella griglia, in base ai parametri inseriti nel successivo tab *Parametri*.
+> **Valorizzazione rientri di conto lavoro**: permette di valorizzare i rientri selezionati nella griglia, in base ai parametri inseriti nel successivo tab *Parametri*.
 
 
 ### Parametri
 
-*Trattamento pagamenti in fattura*
-
-**Ripristina quelli di anagrafica**: la fattura prenderà le soluzioni di pagamento dall'anagrafica (e non considera l'informazione inserita nei rientri). 
-
-**Mantiene quelli dei rientri** la fattura prenderà le soluzioni di pagamento inserite nei rientri.
-
-*Scadenze*
-
-**Raggruppa scadenze**: il flag attivo permette di raggruppare in una soluzione unica le scadenze con la data uguale ma provenienti da rientri diversi.
-
 *Tipo fattura*
 
-**Tipo fattura**: selezionare il tipo della fattura che verrà creata.
+- **Tipo fattura**: indica il tipo di fattura da creare.
+
+- **Ordina DDT per numero documento fornitore**: se settato permette di inserire i rientri all’interno delle fatture riepilogative ordinandoli per *numero documento*. In alternativa i rientri saranno ordinati per data documento.  
 
 *Riferimenti rientro*
 
-**Metti riferimenti rientri**: se questo flag è impostato, nel tab [Articoli](/docs/purchase/purchase-invoices/insert-purchase-invoice/items) della fattura verrà visualizzato un *Articolo nota* che riprenderà i riferimenti del rientro dal quale è stata creata la fattura. Il contenuto di questa nota deve essere inserito nel campo *Descrizione*, secondo i parametri descritti nella label. 
+- **Metti riferimenti rientri**: se questo flag è impostato, nel tab [Articoli](/docs/purchase/purchase-invoices/insert-purchase-invoice/items) della fattura verrà visualizzato un *Articolo nota* che riprenderà i riferimenti del rientro dal quale è stata creata la fattura. Il contenuto di questa nota deve essere inserito nel campo *Descrizione*, secondo i parametri descritti nella label. 
+
+:::tip Ricorda
+Per la fatturazione riepilogativa è necessario impostare nei [Parametri raggruppamento fatture](/docs/configurations/parameters/purchase/invoice-grouping/) le condizioni di raggruppamento da utilizzare. 
+:::
 
 *Pulsante specifico*: 
 
 > **Salva parametri valorizzazione**: permette di salvare i parametri impostati per la valorizzazione.
 
-Dopo aver selezionato i DDT (dal tab *Valorizzazione*) e impostato i parametri, la fattura può essere creata con l'aiuto del pulsante *Valorizzazione rientri*.
+Dopo aver selezionato i DDT di rientro (dal tab *Filtro rientri*) e impostato i parametri, la fattura può essere creata con l'aiuto del pulsante *Valorizzazione rientri di conto lavoro*.
 
 ### Precedenti
 
 L'ultimo tab è quello di ripristino: è possibile utilizzarlo per filtrare, visualizzare e annullare le operazioni.
 
-I dati nelle griglie in basso, **Fatture** e **Rientri**, corrispondono alla valorizzazione selezionata nella griglia superiore (dopo aver filtrato i dati). Inoltre, in queste ultime due griglie, c'è la possibilità di visualizzare la fattura e il rientro corrispondente (doppio click sulla riga).
+I dati nelle griglie in basso, **Fatture** e **Rientri**, corrispondono alla valorizzazione selezionata nella griglia superiore (dopo aver filtrato i dati). Inoltre, in queste ultime due griglie, c'è la possibilità di visualizzare la fattura e il rientro corrispondente mediante un doppio click sulla riga.
 
 *Pulsanti specifici*:
 > **Ricerca valorizzazione rientri**: per cercare le fatture create e i rientri valorizzati. Il risultato di questa procedura viene visualizzato nella griglia di risultato.    

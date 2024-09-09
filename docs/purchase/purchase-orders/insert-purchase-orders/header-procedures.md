@@ -1,9 +1,9 @@
 ---
-title: Evasione da progetto
+title: Evasione da progetto (commessa di acquisto)
 sidebar_position: 5
 ---
 
-La procedura di ripresa articoli da commessa di acquisto permette di evadere anche parzialmente la commessa di acquisto. Sono proposte tutte le commesse non evase, non forzatamente evase e parzialmente evase. Per poter essere evasa una commessa di acquisto deve essere *Stampata* e avere una *Data conferma*.
+La procedura di ripresa articoli da progetto permette di evadere anche parzialmente la commessa di acquisto. Sono proposte tutte le commesse non evase, non forzatamente evase e parzialmente evase. Per poter essere evasa una commessa di acquisto deve essere *Stampata* e avere una *Data conferma*.
 
 Nella testata del documento, premendo il pulsante **Evasione da progetto** si aprirà la form dove è possibile filtrare le commesse relative al fornitore del documento.
 

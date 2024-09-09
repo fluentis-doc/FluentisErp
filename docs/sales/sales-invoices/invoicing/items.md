@@ -1,6 +1,6 @@
 ---
 title: Articoli
-sidebar_position: 3
+sidebar_position: 4
 ---
 
 In questo tab vengono inseriti tutti gli articoli con i relativi dati.
@@ -11,30 +11,33 @@ import InsertMode from './../../../import/sections/insert-mode.md'
 
 <InsertMode />
 
-## Articoli
+## Griglia Articoli
 
-Per inserire un **Nuovo articolo** nella griglia basterà posizionarsi sulla riga per compilare i vari dati oppure utilizzare il pulsante **Nuovo** presente nella ribbon bar.
-
-
-### Dati obbligatori
+Per inserire un **Nuovo articolo** nella griglia basterà posizionarsi sulla riga per compilare i vari dati oppure utilizzare il pulsante **Nuovo** presente nella ribbon bar. Le colonne disponibili sono le seguenti:   
 
 import RowNumber from './../../../import/fields/row-number.md'
 
 <RowNumber />
 
-import RowType from './../../../import/sections/row-type.md'
+- **Tipo riga**: offre la possibilità di selezionare, dalla combo-box, articoli con caratteristiche diverse:
+>- *Articolo codificato*: sono gli articoli codificati in anagrafica e possono essere contabilizzati in contabilità analitica e registrati in magazzino.
+>- *Articolo non-codificato*: sono articoli descrittivi che possono essere contabilizzati in contabilità analitica ma non possono essere movimentati a magazzino.
+>- *Articolo spese*: sono articoli codificati o non-codificati e vengono riassunti in modo distinto nei riepiloghi dei documenti, se l'articolo spesa è codificato e di interesse fiscale verrà movimentato in magazzino, se è non codificato oppure non di interesse fiscale non verranno movimentati a magazzino.
+>- *Articolo note*: sono note descrittive riportate nella stampa del documento; non incidono sulla contabilità e sul magazzino.
+>- *Articolo omaggio*: l'articolo omaggio viene gestito come un articolo codificato o non codificato ai fini fiscali e di magazzino, ma essendo un omaggio viene conteggiato separatamente nei riepiloghi del documento e in base al flag Rivalsa iva viene calcolato l'importo dell'iva dell'omaggio a carico del soggetto oppure no.
+>- *Fattura d'acconto*: la riga articolo acconto viene utilizzata per creare delle fatture di acconto.  
+>- *Storno fattura d'acconto*: la riga articolo storno acconto chiude la riga articolo acconto e gli acconti possono essere selezionati tramite un help acconti. Questi dati possono essere inseriti automaticamente quando si inserisce direttamente la classe o la matricola perché il tipo riga 'articolo codificato' viene selezionato in automatico.
+:::note[NOTA]
+Se si parte direttamente con l'inserimento dell'articolo, la sua classe, il codice e il tipo riga - Articolo codificato vengono inseriti automaticamente.
+:::
 
-<RowType />
-
-> **Articolo omaggio**: questo tipo di riga sta ad indicare che l'articolo inserito in quella riga sarà un articolo omaggio, e quindi non avrà un costo per il cliente;
-
-> **Fattura d'acconto**: la riga articolo acconto viene utilizzata per creare delle fatture di acconto;
-
-> **Storno fattura d'acconto**: la riga articolo storno acconto chiude la riga articolo acconto e gli acconti possono essere selezionati tramite un help acconti. Questi dati possono essere inseriti automaticamente quando si inserisce direttamente la classe o la matricola perché il tipo riga 'articolo codificato' viene selezionato in automatico.
+- **Barcode**: se nei [Parametri fattura](/docs/configurations/parameters/sales/sales-invoices-parameters) è stata abilitata la gestione dei Barcode, comparirà la colonna Barcode dove selezionare il dato per l'articolo tra i Barcode inseriti in *Anagrafica articolo > Barcode*. 
 
 import ItemClassDescription from './../../../import/sections/item-class-description.md'
 
 <ItemClassDescription />
+
+- **Articolo cliente**: se nei [Parametri fattura](/docs/configurations/parameters/sales/sales-invoices-parameters) è stata abilitata la gestione degli Articolo cliente, comparirà la colonna Articolo cliente, con il codice articolo valido per il cliente intestatario del documento e inserito in *Anagrafica articolo > Clienti*. 
 
 import UM from './../../../import/fields/item-um.md'
 
@@ -48,23 +51,53 @@ import Price from './../../../import/fields/item-price.md'
 
 <Price />
 
-In assenza del listino, il dato proposto è il **prezzo di vendita** ripreso dall'anagrafica articolo, tab [Costi](/docs/erp-home/registers/items/create-new-items/item-registry/costs) oppure verrà recuperato in base alle impostazioni dei parametri del documento.
+:::note
+In assenza del listino, il dato proposto è il **prezzo di vendita** ripreso dall'*Anagrafica articolo > tab [Costi](/docs/erp-home/registers/items/create-new-items/item-registry/costs)* oppure verrà recuperato in base alle impostazioni dei parametri del documento. In assenza anche di questo dato, verrà riportato il prezzo 0.
+:::
+
+- **Imponibile**: in questo campo viene riportato il Prezzo unitario, moltiplicato per la quantità articolo, al netto degli sconti.        
+
+- **Sconti articolo**: viene riportata la somma degli sconti previsti per l'articolo.     
+
+- **Sconti finali articolo**: viene riportata la somma degli sconti finali inseriti articolo inseriti nei Riepiloghi del documento.     
 
 import Vat from './../../../import/fields/item-vat.md'
 
 <Vat />
 
-### Dati non obbligatori
-
-**Fatturato vendite**: viene proposto il dato inserito nell'*Anagrafica articoli > tab Generalità*.
-
+- **Fatturato vendite**: viene proposto il dato inserito nell'*Anagrafica articoli > tab Generalità*. Se questo non è presente, non viene proposto nessun dato ma al momento della contabilizzazione della fattura, sarà considerato il valore inserito nel campo *Costo/Ricavo di contropartita predefinito* dell'*Anagrafica cliente > Dati contabili > tab Amministrativa* oppure sarà generato un messaggio di errore.
 Se questo non è presente, non viene proposto nessun dato ma al momento della contabilizzazione della fattura, sarà considerato il valore inserito nel campo *Costo/Ricavo di contropartita predefinito* dell'*Anagrafica cliente > Dati contabili > tab Amministrativa* oppure sarà generato un messaggio di errore.
 
-import AlternativeUMQuantity from './../../../import/fields/alternative-um-quantity.md'
+*Pulsanti specifici*
 
-<AlternativeUMQuantity />
+> **Ricalcolo Conai**: se il [Conai](/docs/sales/sales-flow/conai) è abilitato per il documento, è possibile ricalcolare i valori con questo bottone dopo eventuali modifiche.     
 
-**Pesi**: vengono riportati il Peso netto e il Peso lordo totali delle righe articolo. Vengono riportati i pesi di anagrafica articolo moltiplicati per la quantità di riga.
+> **Aggiorna i dati Conai nell'anagrafica articolo**: se nel tab *Materiali Conai per l'articolo* vengono modificati Unità di misura e/o Peso, è possibile trasferire questi valori nella sezione Conai dell'anagrafica articolo.      
+
+> **Gestione imballi**: permette l'apertura della gestione degli imballi a rendere usati nel documento di acquisti.
+Il pulsante diventa attivo se il documento è salvato, ma non caricato.
+Cliccando su questo pulsante si apre la form corrispondente dove: inserire la quantità, selezionare la riga ed eseguire il trasferimento dell'imballo selezionato nelle righe articolo cliccando sul pulsante Execute. In questa form vengono riportati gli articoli che spno stati inseriti con natura Imballo e che sono presenti nella tabella degli Imballi a rendere.         
+  
+> **Aggiornamento listini**: cliccando sulla tendina accanto al pulsante si accede a due procedure. La prima procedura è **Aggiorna il listino corrente**, che permette di allineare il prezzo dell'articolo internamente al Listino, a seguito di una eventuale variazione di prezzo direttamente nella riga articolo. Invece con la seconda procedura, **Crea nuovo listino con nuova validità**, è possibile creare un nuovo listino personalizzato per il cliente intestatario del documento; verranno richiesti, in un pop-up, le date di inizio e fine validità del nuovo listino.      
+
+> **Mostra/Nascondi dettagli**: cliccando questo bottone si rendono o meno visibili le tab interne agli Articoli.   
+
+> **Gestione acconti**: Fluentis permette di gestire le fatture di acconto e il relativo storno, procedure apribili cliccando questo pulsante.
+> - **Creazione fattura di acconto**
+Le fatture di acconto possono avere un [Tipo documento](/docs/configurations/tables/sales/invoices-type) dedicato o meno, in quanto la gestione degli acconti non avviene a livello di tabella, ma di articoli.
+La gestione degli acconti prevede quindi la creazione di una normale fattura di vendita, per la quale sono richiesti un **Tipo**, un **Cliente**, ecc.
+Dopo la compilazione dei dati di Testata, è possibile passare alla tab Articoli.
+Nella griglia articoli, inserire un *Tipo riga 6 Fattura d'acconto*, una Descrizione libera,  il Prezzo, l'IVA, un Fatturato (che dovrebbe avere come conto Anticipi clienti), ed eventuali altri dati. E' quindi la riga di questa tipologia a determinare l'ammontare dell'acconto.
+Una volta completata la fattura, è possibile stamparla. 
+A questo punto la fattura d'acconto risulta confermata.
+Al momento della creazione di altri documenti per questo cliente, Fluentis mi avviserà dell'esistenza di una fattura di acconto.
+> - **Storno fattura di acconto**
+Per stornare una fattura di acconto è necessario creare una nuova fattura di vendita intestata allo stesso cliente.
+Nel tab Articoli, se il cliente ha almeno una fattura di acconto, sarà attivo il bottone della ribbon bar **Gestione acconti**. Cliccandolo verrà aperta l'omonima procedura.    
+Nel tab **Storno acconti** è possibile selezionare gli acconti da stornare; dopo la selezione, con il bottone **Crea storno** verrà creato lo storno, il quale sarà riportato nella griglia in basso. 
+Alla chiusura della maschera verrà chiesto se inserire il nuovo valore di storno in fattura. In caso di conferma, sarà possibile consultare la riga storno nel tab Articoli della fattura, che riporterà i dati della fattura di acconto precedentemente creata.
+
+Sono poi presenti alcune tab che analizziamo di seguito. 
 
 ## Sconti/Listini
 
@@ -74,35 +107,33 @@ import TabDiscount from './../../../import/sections/sales-tab-discount.md'
 
 ## Dati articolo
 
-**Variante**: contiene l'eventuale variante dell'articolo;    
+- **Variante**: contiene l'eventuale variante dell'articolo;    
 
-**Magazzino, causale e ubicazione**: vengono proposti il magazzino e la causale di riferimento che compariranno in automatico al momento dello scarico degli articoli relativi dal magazzino. I dati sono ripresi dalla tabella *Tipi fatture*;     
+import AlternativeUMQuantity from './../../../import/fields/alternative-um-quantity.md'
 
-**Articolo**: riporta l'articolo selezionato;     
+<AlternativeUMQuantity />
 
-**Progetto**: è il progetto associato al documento oppure può essere assegnato con l'ausilio del help di campo; 
+- **Magazzino, causale e ubicazione**: vengono proposti il magazzino e la causale di riferimento che compariranno in automatico al momento dello scarico degli articoli relativi dal magazzino. I dati sono ripresi dalla tabella *Tipi fatture*;     
 
-**Rivalsa IVA**: se settato l'iva dell'omaggio viene considerata per il totale fattura;     
+- **Articolo**: riporta l'articolo selezionato;     
 
-**Dettaglio dichiarazioni**: contiene eventuale [dichiarazione d'intento](/docs/finance-area/declarations/declarations/intent-declaration) del cliente;
+- **Progetto**: è il progetto associato al documento oppure può essere assegnato con l'ausilio del help di campo; 
 
-**Riferimento ordine**: fa riferimento all'ordine dal quale è stata creata la fattura;
+- **Rivalsa IVA**: se settato l'iva dell'omaggio viene considerata per il totale fattura;     
 
-**Marca**: rappresenta la marca dell'articolo, ripresa dalla sua anagrafica oppure dal listino dell'articolo;
+- **Dettaglio dichiarazioni**: contiene eventuale [dichiarazione d'intento](/docs/finance-area/declarations/declarations/intent-declaration) del cliente;
 
-**Note**: offre la possibilità di inserire note per ogni articolo;
+- **Riferimento ordine**: fa riferimento all'ordine dal quale è stata creata la fattura;
+
+- **Marca**: rappresenta la marca dell'articolo, ripresa dalla sua anagrafica oppure dal listino dell'articolo;
+
+- **Note**: offre la possibilità di inserire note per ogni articolo;
 
 ## Agenti
 
 import SalesTabAgent from './../../../import/sections/sales-tab-agent.md'
 
 <SalesTabAgent />
-
-## Varianti
-
-import TabVariant from './../../../import/sections/tab-variant.md'
-
-<TabVariant />
 
 ## Lotti e Serial number
 

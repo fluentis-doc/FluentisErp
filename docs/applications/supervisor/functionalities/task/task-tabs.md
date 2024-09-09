@@ -4,14 +4,18 @@ sidebar_label: Tabs del Task
 sidebar_position: 1
 ---
 
-**Script**
-> Questa tab è divisa a sua volta in tre tabs.
-- La scheda **Definizioni** contiene la definizione dello script, la possibilità di cambiare piattaforma dello script, trovare e sostituire la funzione e varie utilità legate allo script (es. versioning, abbellisci, duplica, compila/salva, nota, ...). 
-- La tab **Referenze script** contiene tutti i riferimenti dello script. 
-- Nella tab **Generale** vengono visualizzati i parametri standard relativi allo script, quali: *Codice, Descrizione, Categoria, Oggetto Business, flag Disabilitato, Versione, e molto altro*.
+La form riguardante i task è suddivisa in ulteriori tre tab.  
+In particolare:
 
-**Parametri**
-> In questa scheda è possibile definire parametri utilizzabili in entrambe le piattaforme di coding, *Script Editor* e *Blockly*. Se si utilizza quest'ultima però, si ha a disposizione il blocco *getTaskParameter* (si può trovare all'interno della *Toolbox*, categoria *Task Utility*), che consente di ottenere i parametri precedentemente creati nella tab.
+Tab **Script**
+In questo tab è possibile:
+* scegliere la modalità di creazione dello script (editor visuale Blockly piuttosto che editor testuale).
+* compilare lo script attraverso l'apposito pulsante.
+  
+Tab **Parametri**
+Possono essere definiti e gestiti diversi parametri di input e di output che l'utente però valorizzare in diverse madalità.
 
-**Logs Esecuzione**
-> In questa tab puoi trovare tutti i log di esecuzione relativi agli script, con diversi tipi di importanza (es. Informazione, Errore, Avvertenza, ecc...). I logs possono essere cancellati con una selezione delle righe della griglia più il pulsante *CANC*.
+Tab **Logs Esecuzione**
+In questo tab vengono visualizzati tutti i log relativi all'esecuzione dello script.
+
+![alt text](/img/it-it/applications/supervisor/supervisor9.png) 

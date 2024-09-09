@@ -60,7 +60,9 @@ Per il nuovo record si devono inserire almeno i campi obbligatori richiesti dal 
 **Descrizione gruppo MDO**: indica la descrizione del gruppo di manodopera;  
 **Ubicazione**: indica l'ubicazione di magazzino associata a quella fase; questo significa che tutti gli articoli impiegati in quella fase saranno presenti in quell'ubicazione.           
 
-
+:::note Nota
+Tutte le fasi esterne devono sempre avere i flag **Fase produttiva** e **Fase movimentabile** attivi.
+:::
 
 
 Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).

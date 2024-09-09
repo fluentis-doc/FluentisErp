@@ -81,6 +81,8 @@ Procedere in ordine inserendo il **tipo conto**, poi il **conto** (senza sottoco
 
 **Apertura partite**: flag che indica, per i conti collegati ad anagrafiche clienti e fornitori, se viene gestita l'apertura partite per quel conto. Il flag è ripreso, e va gestito, all'interno dell'anagarafica. E possibile attivare il flag da qui per conti NON di anagrafica (costi, ricavi ecc...) al fine di aprire partite in concomitanza con la registrazione contabile (raro). In questo caso la causale contabile utilizzata dovrà avere attivo il parametro per l'apertura partite. In questo caso il flag attivo sul conto permette, in particolare, di operare il controllo di quadratura tra il movimento contabile e la partita aperta. In ogni caso l'apertura partite su conti non di anagrafica dovrà essere fatta manualmente e non potrà avvenire automaticamente.
 
+**Tipo / Soluzione di pagamento**: in abbinamento con il precedente flag di apertura partite, nel caso in cui venga utilizzato su conti NON di anagrafica (ad esempio costi ricavi, patrimoniali ecc...) permettono di specificare le condizioni di pagamento da utilizzare in fase di apertura partita.
+
 **Gestione c. aziendali**: attivando questo flag sarà possibile gestire centri di costo anche su conti patrimoniali (raro); esempio incrementi per lavori interni in economia ecc...
 
 **Gestione Divisa**: Flag che abilita il conto per:
@@ -139,6 +141,11 @@ I successivi due campi sono funzionali a questa manovra:
 **Gruppi di conguaglio / Descrizione**: la combo box è collegata alla tabella [Gruppi di conguaglio](/docs/configurations/tables/controlling/analytical-accounting/adjustments-groups), all'interno della quale è possibile codificare dei raggruppamenti di conti utili per la gestione della reportistica specifica per il controlling. Il campo non ha altra valenza operativa e non genera ulteriori automatismi.
 
 **Descrizione estesa 1 / 2 / 3**: ulteriori campi per accogliere descrizioni alternative (ad esempio in lingua). Possono essere, ad esempio, successivamente inserite nella stampa del bilancio mediante personalizzazione della stessa.
+
+**Crisi d'impresa:** vedere pagina specifica relativa a questa funzionalità. Si tratta del modulo specifico, integrato in Fluentis, per la gestione degli indici da calcolare per adempiere alla normativa sulla prevenzione delle crisi di impresa. Tali indici sono gestiti attraverso il modulo CPM di Fluentis (che permette più in generale il calcolo di indicatori di performance)
+
+Poiché gli indicatori per la crisi di impresa fanno alcune considerazioni e calcoli relativamente ad alcuni conti o sottoconti specifici, all’atto della configurazione del modulo per il suo utilizzo occorre agganciare alle varie categorie specifiche previste dalla combo box, e riferendosi alla documentazione teorica specifica di questa normativa, i conti opportuni.
+
 
 ### INSERIMENTO DEL COLLEGAMENTO SOTTOCONTI - CENTRI AZIENDALI
 

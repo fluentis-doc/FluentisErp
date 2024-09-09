@@ -17,6 +17,10 @@ In questo tab, l'utente ha la possibilità di inserire filtri per cercare i DDT,
 > **Creazione fatture da DDT**: permette di valorizzare i DDT selezionati nella griglia, in base ai parametri inseriti nel successivo tab *Parametri*.
 > **Apertura DDT**: permette di visualizzare e modificare il DDT selezionato.
 
+:::note
+Non è possibile creare un'autofattura da DDT.
+:::
+
 ### Parametri
 
 *Inserimento in fattura*

@@ -1,6 +1,6 @@
-Sono proposte le spese inserite nell'anagrafica contatto, nel tab *Spese/Sconti*.
+Sono proposte le spese inserite nell'anagrafica contatto, nel tab *Spese/Sconti*. In questa griglia eventuali spese devono essere inserite in positivo, eventuali sconti in negativo.      
 
-Inoltre c'è la possibilità di inserire spese che fanno riferimento solo al documento in uso.
+Questi elementi vengono applicati alla totalità del documento e non sono distribuiti tra le righe degli articoli. Possono includere costi aggiuntivi, sconti globali, o maggiorazioni applicate all'intero documento. Se impostati nell'anagrafica articolo, vengono automaticamente proposti al momento della creazione del documento.
 
 - **Tipo/Descrizione**: permette di scegliere le tipologie di spesa (predefiniti nella tabella [Tipi spese](/docs/configurations/tables/general-settings/expenses-types)), attribuendo alla tipologia la percentuale di spesa da applicare.  
 - **Importo spesa**: indica il valore della spesa espresso nella divisa del documento.    

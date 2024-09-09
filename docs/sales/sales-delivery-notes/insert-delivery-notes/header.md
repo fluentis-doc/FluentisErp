@@ -41,10 +41,12 @@ I flag possono essere tolti con le procedure di ripristino operazione.
 - **Audit Trail**: come in tutti i documenti, questa sezione riporta la data di creazione del documento con l'operatore, e la data di ultima modifica del documento con l'operatore.   
 
 I pulsanti presenti nella ribbon bar della testata del DDT sono:    
-> [Evasione d ordini](/docs/sales/sales-delivery-notes/insert-delivery-notes/header-procedures/execution-from-order) (vedere la documentazione relativa).        
+> [Evasione da ordini](/docs/sales/sales-delivery-notes/insert-delivery-notes/header-procedures/execution-from-order) (vedere la documentazione relativa).    
+> [Scarico automatico](/docs/sales/sales-delivery-notes/insert-delivery-notes/header-procedures/unload) (vedere la documentazione relativa)   
 > **Help destinatari/destinazioni**: questo bottone apre l'Help per poter scegliere il destinatario/destinazione per il documento, tra quelli disponibili per il cliente e quindi codificati nella sua anagrafica.      
 > **Inserisci agente nelle righe**: questo pulsante fa aprire un pop nel quale inserire un'anagrafica agente, che verrà spalmata in tutte le righe articolo, aggiungendosi eventualmente ad Agenti già presenti.           
-> **Sostituisci CIG/CUP nelle righe**: dopo aver specificato CIG e/o CUP in testata, è possibile sostituire in massa tali dati nelle righe articolo già inserite.   
+> **Sostituisci CIG/CUP nelle righe**: dopo aver specificato CIG e/o CUP in testata, è possibile sostituire in massa tali dati nelle righe articolo già inserite.      
+> **Cancella**: cancella gli sconti selezionati nel tab *Sconti* della Testata.          
 
 Nella testata sono poi presenti alcune tab che analizziamo di seguito. 
 

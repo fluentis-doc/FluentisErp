@@ -32,7 +32,9 @@ Possono essere aggiunte poi direttamente nel documento , oppure nell'anagrafica 
 
 **Spedizione:**
 
-**Viaggio:**
+**Viaggio:** se abilitato il tipo spesa verrà proposto nell'elenco delle spese selezionabili negli interventi dell'area Progetti. 
+
+**Tipo spesa viaggio**: abilitato solo se il flag "Viaggio" è abilitato, indentifica la tipologia di spesa Viaggio: necessario per abilitare appositi campi nelle spese degli interventi (es. nel caso di Distanza verranno abilitati i campi di km e costo km, etc)
 
 **Bollo / Valore Bollo:** utilizzando questa tipologia con il relativo valore indicato nel campo adiacente si attiva la logica del bollo in fattura nel caso di esenzione iva e documento superiore ai 77euro (vedere norme attualmente in vigore per dettagli), oltre alla valorizzazione del tag corrispondente nella fattura elettronica.
 
@@ -61,8 +63,11 @@ I codici IVA delle tipologie di cui sopra devono anche avere il flag *Base per c
 
 **Categoria merceologica:**
 
-**Codici / Descrizione Paghe:** opzione utile nel modulo Progetti e Dipendenti; nell’ esportazione delle ore dei dipendenti dalle attività inserite (viene esportato un file Xml per la gestione paghe di Zucchetti), le ore viaggio e i rimborsi spese (che arrivano dagli interventi) hanno necessità di essere codificate per inserirle nelle paghe. Quindi viene associata la tabella spese, che si usa nelle attività, ai codici paghe del modulo Dipendenti
+**Codici / Descrizione Paghe:** codice utilizzato per inserire nel riquadro "Valori" del Riepilogo per cedolini dei dipendenti le spese presenti negli interventi e nelle dichiarazioni attività.
 
+**Tipo attività**: valido soltanto per le spese di tipo "Viaggio" - Ore di Viaggio". Il tipo attività viene utilizzato per generare in automatico la dichiarazione attività in base alle ore di viaggio dichiarate nelle spese sostenute dell'intervento nell'area Progetti. 
+
+**Categoria attività**: valido soltanto per le spese di tipo "Viaggio" - Ore di Viaggio". La categoria attività viene utilizzata nella dichiarazione attività generata in automatico in base alle ore di viaggio dichiarate nelle spese sostenute dell'intervento nell'area Progetti. 
 
 ### Ritenuta d'acconto e cassa previdenza
 

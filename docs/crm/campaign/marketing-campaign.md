@@ -1,14 +1,14 @@
 ---
-title: Campagne Marketing
-sidebar_position: 1
+title: Nuova Campagna Marketing
+sidebar_position: 2
 ---
-
-In questa maschera è possibile ricercare le **Campagne marketing** esistenti o crearne di Nuove.
 
 La schermata si compone di tre parti:     
 - la prima parte in alto presenta eventuali workflow associati alla Campagna; si rimanda alla relativa guida sui Workflow per approfondimenti in merito;          
 - la parte centrale presenta la Testata, con le informazioni generali, alcune obbligatorie altre no;     
-- sotto si trovano diverse tab, che riportano le diverse operazioni effettuate.      
+- sotto si trovano diverse tab, che riportano le diverse operazioni effettuate.    
+
+
 
 ## Testata
 

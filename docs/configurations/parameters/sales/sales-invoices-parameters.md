@@ -7,30 +7,41 @@ I parametri delle fatture di vendita permettono l'impostazione di base per gesti
 
 ### Generale
 
-**Proponi provvigioni per tutti gli articoli:** campo diventato OBSOLETO, in quanto la provvigione viene sempre gestita indipendentemente da questo flag.
+**Gestione doppia unità misura**: se attivo, nelle righe fattura verranno visualizzate le due colonne UM Alternativa e Quantità Alternativa, sarà perciò possibile gestire la doppia unità di  misura, considerando sempre che è l’unità di misura principale sulla quale vengono fatti i controlli per l’evasione.      
+
+**Proposta automatica UM alternativa:** questo flag diventa editabile solo se è stato attivato il flag di gestione della doppia unità di misura e consente di riportare nel tab articoli della fattura l'unità di misura alternativa impostata nell'anagrafica articolo, nell’apposita colonna 'UM alternativa'; se non attivo, l'unità di misura non viene proposta.      
+
+**Controllo Disponibilità:** questo flag e gli altri relativi al controllo, visualizzazione e obbligorietà con la considerazion per area, nella versione attuale, non sono gestite.     
+
+**Unità di misura volume/pesi predefinita**: queste unità di misura vengono considerate come UM di default da proporre nel tab [Trasporto](/docs/sales/sales-delivery-notes/insert-delivery-notes/transport) del DDT, come unità di misura di volume e pesi; il dato è modificabile nei documenti. 
+
+**Ricerca prezzi articoli in tutti i listini predefiniti**: quando si cercano il prezzo e gli sconti per un articolo all'interno di una fattura, il sistema segue delle regole basate sulle impostazioni configurate nell'anagrafica cliente, sotto la sezione *Listini*. Se è attivata l'opzione 'default' su un determinato tipo di listino, la ricerca di prezzi e sconti si concentrerà solo su quella specifica tipologia di listino; se il flag "default" non è attivo, il sistema estenderà la ricerca a tutti i tipi di listini presenti, seguendo un ordine di priorità. In pratica, con il flag 'default' attivo, il sistema cercherà prima un listino valido per la tipologia predefinita; se non trova risultati, passerà a controllare le altre tipologie di listino in ordine di priorità inserita. Tuttavia, se nell'anagrafica del cliente non è presente alcuna tipologia di listino impostata come 'default' e ci sono solo priorità, questo parametro non influenzerà la ricerca, anche se attivo.       
+
+**Proponi provvigione per gli articoli omaggio**: con questo flag verranno proposte le provvigioni agente anche per le righe articolo di tipo omaggio come avviene per le righe di tipo Articolo Codificato.     
 
 **Inserimento provvigioni nei tipi 6 e 7 (Acconto/Storno):** se attivo, permette l'inserimento e la gestione delle provvigioni anche per le i tipi riga 6 e 7 delle fatture. Per approfondimenti fare riferimento all'articolo relativo all' [inserimento della fattura](/docs/sales/sales-invoices/invoicing/invoicing-intro).
 
-**Gestione doppia unità misura**: questo flag, se attivo, consente al sistema di gestire l'unità di misura alternativa nella fattura di vendita; se non è attivo nella fattura si vedrà riportata solamente l'unità di misura gestionale dell'articolo;
-
-**Proposta automatica UM alternativa**: questo flag è editabile solo se è stato attivato il flag di gestione della doppia unità di misura; se attivo, l'unità di misura alternativa verrà riproposta nella fattura di vendita nel tab articolo nel campo 'UM alternativa';
-
-**Recupera solo nella giornata**: se attivo, permette di recuperare i numeri solo per la giornata in corso, mentre il **Recupero automatico**(attivabile solo se si è attivato il recupero solo nella giornata) segnala il fatto che verrà proposto in automatico il primo numero disponibile.  Se questo flag è disattivato il sistema permetterà comunque il recupero del numero, ma quest'ultimo dovrà essere inserito manualmente dall'utente;
+**Consentire sconti per gli articoli omaggio**: con questo flag saranno calcolati gli sconti anche per gli articoli omaggio e incideranno sui totali.
 
 **Prezzi negativi delle note di credito**: se attivo, il sistema notificherà un avviso qualora ci fossero dei prezzi positivi all'interno di note di accredito. Se non attivo, il sistema non farà nessun controllo e non restituirà nessun avviso.
 
-**Controlla disponibilità**: se attivo controlla la disponibilità dell'articolo.
+**Verifica articoli in esaurimento**: con questo flag viene attivata la gestione degli articoli in esaurimento; se in anagrafica articolo è presente una Data esaurimento e il relativo flag, Fluentis avviserà l'utente con un pop up se l'articolo viene inserito nel documento.    
 
-**Disponibilità obbligatoria**: se attivo, questo flag va a indicare che la quantità per articolo della fattura non potrà essere maggiore alla disponibilità di quell'articolo; e se lo fosse il sistema andrà a fare un controllo e ad avvisare l'utente nel momento dell'inserimento di questo dato nella fattura.
+**[Abilita Widget sconti semplificato](/docs/sales/sales-flow/discount-widget)**: attivando questo flag nella sezione Articoli verranno visualizzate due nuove colonne: *Sconti Articolo* e *Sconti Finali Articolo*. La colonna *Sconti Articolo* è modificabile e mostra gli sconti applicati automaticamente in base alle impostazioni relative al cliente, all'articolo, al listino o alla categoria di sconto. L'utente ha la possibilità di inserire, modificare o eliminare gli sconti direttamente in questa colonna. Per utilizzare questo widget è necessario che, oltre ad attivare il flag, sia specificato nel tipo di fattura quale tipo di sconto utilizzare.     
 
-**Escludi ordini cliente**: se attivo, questo flag indica che l'impegno degli ordini clienti non verrà considerato nel calcolo della disponibilità;
+**Uso articolo cliente**: se settato, questo flag inserirà, nella griglia articoli della fattura, le colonne per il Codice e la Descrizione cliente inseriti in anagrafica articolo, tab Cliente.       
 
-**Vis. Disponibilità**: se attivo, grazie a questo flag vi sarà la possibilità di visualizzare la disponibilità a livello di riga articolo quando si inserisce la quantità,
+**Uso barcode**: se settato, questo flag inserirà, nella griglia articoli della fattura, la colonna per riportare il barcode dell'articolo.     
 
-**Considera disponibilità provenienti da**: 
-In questa sezione è possibile andare ad indicare quali tipologie di movimenti debbano essere considerati per il calcolo della disponibilità articolo tra Conto lavoro, Acquisto, Vendite, Produzione pianificata, Produzione rilasciata e Magazzino.
+**Codice operatore obbligatorio**: questo flag rende obbligatorio compilare il campo *Operatore* in testata.     
 
-**Recupero automatico**: se attivo, segnala il fatto che nel recupero verrà proposto in automatico il primo numero disponibile.  Questo flag è attivabile solo se il flag precedente è attivato. Se disattivato il sistema permetterà il recupero del numero, ma dovrà essere inserito manualmente dall'utente.
+**Blocca inserimento documento in date festive da calendario di fabbrica**: se attivo, il sistema non permette l'inserimento dell'offerta in date festive (viene controllato prima il Calendario di Fabbrica della società, poi il Calendario delle capacità produttive); se non attivo, il sistema non effettua nessun controllo e lascia inserire il documento.     
+
+**Ricalcola trasporto**: questo flag fa in modo che nel tab [Trasporto](/docs/sales/sales-invoices/invoicing/transport) della fattura vengano riportati i totali di peso, volume e colli delle righe del documento; senza questo flag, i campi non saranno compilati.        
+
+**Riferimenti esterni ordine**: questo flag fa in modo che i campi *Nostro* e *Vostro riferimento* vengano trasferiti dalle righe ordine/DDT alle righe fattura.
+
+**Mantieni prezzi da ordini per gli scaglioni**: è utilizzato nell'evasione degli ordini in fattura nel caso in cui la quantità evasa sia diversa (solitamente parziale) della quantità ordinata per la quale è stato inserito un prezzo o uno sconto a scaglione di quantità. Se il prezzo o lo sconto non dipendono dalla quantità consegnata ma solo dalla quantità in ordine questo flag deve essere attivato, se invece il prezzo o sconto a scaglione non deve essere inserito nel documento di consegna nel caso in cui l'evasione non avvenga per la quantità totale dell'ordine il flag non deve essere attivato.
 
 ### Evasione
 
@@ -40,7 +51,9 @@ In questa sezione è possibile andare ad indicare quali tipologie di movimenti d
 
 **Ricalcola CDC/CDP**: nel caso in cui si sia scelto di generare la fattura partendo dall'ordine cliente con l'apposta procedura, attivando questo flag, il sistema andrà a ricalcolare i centri di costo e di profitto nella fattura, non considerando quelli impostati nell'ordine di vendita. Se non attivo il sistema non ricalcolerà questi dati ma terrà quelli inseriti nell'ordine cliente;
 
-**Proposta lotti**:
+**Visualizzazione griglia evasione:** se attivo, il flag abilita la modalità griglia nella form di evasione ddt di vendita.      
+
+**Visualizzazione tree evasione:** se attivo, il flag abilita la modalità tree nella form di evasione ddt di vendita.
 
 ### Scarico
 
@@ -54,10 +67,8 @@ In questa sezione è possibile andare ad indicare quali tipologie di movimenti d
 
 ### Analitica
 
-Questo TAB specifica con che priorità recuperare il Centro di costo(CDC) o Centro di profitto(CDP) nella riga documento.
-
-È possibile modificare le priorità utilizzando i tasti **Sposta su**![](/img/neutral/common/move-up.png) e **Sposta Giù**![](/img/neutral/common/delete-cc.png).
-
-*Valori di default*: il CDC o CDP viene recuperato dal tipo fatturato qualora presente. Per approfondimenti fare riferimento a tabella [Tipo Fatturato](/docs/configurations/tables/sales/sales-turnover);
-
-Qualora non fosse presente nel tipo fatturato il sistema lo cercherà in anagrafica Cliente. Se non presente verrà cercato in anagrafica articolo e successivamente a livello di magazzino.
+Questo TAB specifica con che priorità recuperare il Centro di costo(CDC) o Centro di profitto(CDP) nella riga documento.      
+È possibile modificare le priorità utilizzando i tasti **Sposta su**![](/img/neutral/common/move-up.png) e **Sposta Giù**![](/img/neutral/common/delete-cc.png).      
+*Valori di default*: il CDC o CDP viene recuperato dal tipo fatturato qualora presente. Per approfondimenti fare riferimento a tabella [Tipo Fatturato](/docs/configurations/tables/sales/sales-turnover);         
+Qualora non fosse presente nel tipo fatturato il sistema lo cercherà in anagrafica Cliente. Se non presente verrà cercato in anagrafica articolo e successivamente a livello di magazzino.      
+Il flag **Valuta la priorità di ogni dimensione** fa in modo che nei documenti i CDC/CDP vengano raggruppati per dimensione, nel tab Analitica. 

@@ -17,7 +17,13 @@ I dati obbligatori da inserire sono:
 
 Dopo aver inserito questi dati e gli altri se necessario è possibile salvare la Lista di trasferimento. Dato che si tratta di un trasferimento, è necessario inserire anche il **Magazzino di partenza** e il **Magazzino di destinazione**.       
 
-*Pulsanti specifici:*
+*Pulsanti specifici presenti nella form di dettaglio:*
+
+> **Cancella UDC**: permette di cancellare un'unità di carico presente nella lista;      
+> **Rollback trasferimento**: permette di fare la rollback del movimento di conferma trasferimento; quindi, viene cancellato il movimento di carico creato con la conferma del traferimento e viene sostituito con un movimento di carico sul magazzino di partenza;         
+> **Help UDC**: permette di aggiungere nuove uni di carico tramite l'help.
+
+*Pulsanti specifici presenti nel filtro:*
 
 > **Gestione UDC**: selezionando una Lista di trasferimento e cliccando questo bottone viene aperta la maschera **Gestione UDC** in cui vengono proposti le UDC disponibili per il trasferimento. E' possibile trasferire l'UDC con il pulsante **Sposta UDC**.             
 > **DDT**: crea il DDT dalla **Liste di Trasferimento UDC** selezionata.    

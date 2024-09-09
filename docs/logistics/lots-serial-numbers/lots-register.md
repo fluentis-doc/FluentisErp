@@ -41,7 +41,7 @@ In questa sezione vengono visualizzati, con la possibilità di modificarne alcun
 
 **Lotto vendibile**: il flag, se attivo, evidenzia che il lotto è disponibile per essere prelevato all'interno dei documenti di vendita, di produzione o nelle registrazioni di magazzino. Si tratta praticamente di una possibilità che ha l'utente per definire la possibilità di prelevare o meno un lotto, in alternativa alla gestione, più complessa ed articolata, degli stati lotto;
 
-**Chiuso**: il flag, se attivato, sta ad indicare che il lotto è stato completamente scaricato dal magazzino. Da notare che dopo la chiusura di magazzino tutti i lotti residui dell'anno che si sta chiudendo vengono automaticamente impostati come *Chiusi*, in quanto vengono ricaricati, sulla giacenza iniziale dell'anno nuovo, i lotti 'gemelli' con le quantità residue alla fine dell'anno precedente la chiusura.
+**Chiuso**: il flag, se attivato, fa si che la quantità di quel lotto non venga considerata per il calcolo della giacenza e della disponibilità. Questo flag può solo essere attivato manualmente.        
 
 ### Carico
 

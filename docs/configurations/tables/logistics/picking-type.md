@@ -47,7 +47,9 @@ Per i *Tipi picking* che saranno utilizzati nelle *Liste di prelievo materiali*,
 
 **Evade ordini con commessa di produzione**: non più utilizzato;
 
-**Unità di carico obbligatoria**: i tipi picking che hanno questo flag disattivato non potranno essere usati per il prelievo delle UDC e saranno visibili nella form di [Conferma picking](/docs/logistics/wms/sales/check-row-menagement#conferma-picking) del WMS. Viceversa, le tipologie di picking che hanno questo flag attivo saranno visualizzate nella [Gestione spunta](/docs/logistics/wms/sales/check-row-menagement#gestione-spunta) del WMS.
+**Unità di carico obbligatoria**: i tipi picking che hanno questo flag disattivato non potranno essere usati per il prelievo delle UDC e saranno visibili nella form di [Conferma picking](/docs/logistics/wms/sales/check-row-menagement#conferma-picking) del WMS. Viceversa, le tipologie di picking che hanno questo flag attivo saranno visualizzate nella [Gestione spunta](/docs/logistics/wms/sales/check-row-menagement#gestione-spunta) del WMS. 
+
+**Sovraevadibile**: se attivo, permette di sovra evadere la quantità indicata nel picking; è utilizzabile sia nella [Gestione spunta](/docs/logistics/wms/sales/check-row-menagement) che nella [Conferma picking](/docs/logistics/wms/sales/check-row-menagement) del WMS. Nel caso non sia attivo e si tenti di movimentare una quantità maggiore rispetto a quella indicata viene mostrato un messaggio di avviso che impedisce di proseguire.
 
 **Stampa**: indica il nome della stampa associata e il **Numero di copie** da eseguire di default. 
 

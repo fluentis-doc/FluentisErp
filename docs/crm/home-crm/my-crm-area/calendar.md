@@ -4,7 +4,7 @@ sidebar_position: 2
 ---
 
 Accessibili dal modulo **Home > My CRM area > Calendario**.     
-Questa funzione permette di avere a portata di mano il proprio calendario, che può essere sincronizzato con quello di Outlook. 
+Questa funzione permette di avere a portata di mano il proprio calendario, che può essere sincronizzato con quello di Outlook. Nel caso in cui siano associati più calendari, Fluentis chiedere a quale accedere con un pop up.    
 
 :::note Sincronizzazione con Outlook
 Per poter sincornizzare il Calendario CRM di Fluentis con il calendario personale di Outlook è necessario procedere nel seguente modo.      

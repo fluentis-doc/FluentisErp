@@ -10,9 +10,7 @@ Nella form di inserimento vengono proposti automaticamente la **Data** e **Anno*
 Per continuare la creazione del ordine cliente, l'utente deve inserire i campi **obbligatori**:
 
 - **Tipo ordine** predefinito in  Configurazione > Tabelle >Vendite > [Tipi ordini](/docs/configurations/tables/sales/sales-order-types).
-
 - **Numero** ad ogni documento viene assegnato un numero secondo la numerazione specificata dall'utente nella tabella [Numerazione ordini clienti](/docs/configurations/tables/fluentis-numerations) e al tipo di documento che contiene la numerazione. Si rimanda anche all'articolo [Parametri ordini clienti](/docs/configurations/parameters/sales/sales-orders-parameters) per i parametri specifici per il recupero numeri.
-
 - **Cliente**, usando l'[help di campo](/docs/guide/operations-with-data/manual-entry-or-help-and-data-selection) oppure tastando [direttamente](/docs/guide/operations-with-data/manual-entry-or-help-and-data-selection).
 
 La form contiene una serie di tab:
@@ -23,5 +21,3 @@ La form contiene una serie di tab:
 
 - [Riepiloghi](/docs/sales/sales-orders/create-new-sales-orders/summaries).
 
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/VMimIT7Yehw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

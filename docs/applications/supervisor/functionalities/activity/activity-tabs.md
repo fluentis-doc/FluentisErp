@@ -5,36 +5,37 @@ sidebar_label: Tabs dell'Attività
 sidebar_position: 1
 ---
 
-:::info Nota
+:::danger Nota
 Una volta aperta la form di dettaglio dell'attività, nella parte superiore sono presenti alcuni parametri standard come *Codice*, *Nome*, *Descrizione*, *Data Crazione*, *Data Ultima Modifica*, *Gruppo* e *Tipo Attività*. Per questi ultimi due, bisogna prestare molta attenzione, perchè determinano come si andrà a comporre l'attività.
 :::
 
-### Parametri Collegati
+### Tabs attività
 
-Tutte i *tipi di Attività* hanno i *Parametri Collegati* (sia di input che di output). Essi quando vengono utilizzati all'interno di un *Task* sono visibili (ci si rende conto di quanto detto quando sono utilizzati all'interno del Widget *Blockly*). Questi parametri sono cruciali in molti casi, perchè sono l'unico modo per mettere in comunicazione l'*Attività* con il *Task*.
+La form delle attività è composta da una form di ricerca dedicata composta da:
+* un **ribbon menu** per la gestione delle principali operazioni standard.
+* un **filtro standard**.
+* una **griglia dei risultati**, che mostra la lista delle attività divise in gruppi e sottogruppi.
 
-Per creare un parametro è necessario specificargli un valore di default (come ad esempio *Nome*, *Descrizione*) e qualche valore più specifico *ParametroInput*, *Obbligatorio*, *Tipo* e *Parametro Globale*. 
+![alt text](/img/it-it/applications/supervisor/supervisor6.png)
 
-### Mappatura Records
+### Parametri Collegabili
 
-Per il tipo di *Attività* **Template Mail**, c'è la possibilità di mappare i records (nomi colonne) alla testata; il risultato della mappatura verrà visualizzato dopo che un recordset è stato utilizzato all'interno di un documento (dalla tab *Template Documento*).  
+Tutte le tipologie di Attività hanno dei *Parametri Collegabili* (sia di input che di output), questi parametri, diversamente da quelli globali, hanno una visibilità locale all'intenro dell'attività, task o evento.
+Questi permettono di definire tutti i parametri che verrano collegati all'attività in input e in output.  
+Questa configurazione verrà poi associata al blocchetto fruibile tramite Task permettendo di gestire i parametri.
+
+Per creare un parametro è necessario popolare:
+* **Codice** > riporta il codice del parametro.
+* **Nome** / **Descrizione** > per indicare nome e descrizione localizzate in base al dizionario.
+* **Input parameter** > permette di definire se il parametro deve essere letto in input o output.
+* **Required** > indica i parametri obbligatori, che quindi verrano esposti automaticamente sul blocchetto.
+* **Type** > indica il tipo di dato da associare al parametro.
+* **Global Parameter** > permette di utilizzare un parametro globale per valorizzare il parametro specifico.
 
 ### Configurazione Attività
 
-Spostiandosi invece sulla tab *Configurazione Attività*, la cosa fondamentale da tenere a mente è che cambia in base al **tipo di Attività** e l'unico valore comune a tutti i *tipi di Attività* e il **ParametroRitorno**.
+Il tab **Configurazione Attività** permette di configurare l'attività specificandone i parametri richiesti per il suo funzionamento.
 
-Vediamo ora tutti tipi:
+In base alla tipologia d'attività, ovvero su che tipologia è basata (Script, Datasource, Run Report, SQL Query, Stored Procedure, Mail Template), saranno disponibili diverse opzioni di parametrizzazione.
 
-> Il *tipo di Attività* **Script generico** ha due tabs, *Parametri* e *Script*. I valori di input e di output che sono stati utilizzati nella tab *Script*, devono essere dichiarati nella tab *Parametri*.
-
-> Il *tipo di Attività* **Datasource** non ha alcuna tab, ha soltanto la configurazione dei parametri del *Datasource* e la selezione del *Datasource*.
-
-> Il *tipo di Attività* **Run Report**  non ha alcuna tab, ha solo la selezione del **Business Object**, del **tipo di report** riferito al *Business Object* e infine il **formato di esportazione**.
-
-> Il *tipo di Attività* **Sql Query** condivide lo stesso layout di tabs del tipo Attività *Script Generico*, ad eccezione della tab *Script* che non conterrà più uno script in C# ma in SQL. Per mappare i parametri dell'attività all'interno della query è necessario includerli tra parentesi quadri, come è possible vedere nell'immagine sottostante.
-
-> Il *tipo di Attività* **Stored procedure** non ha alcuna tab, ma solo la configurazione dei parametri di input per le stored procedure.
-
-> Il *tipo di Attività* **Mail Template** ha due tabs, *Impostazione Generazione Documento* e *Template Documento*. Nella prima tab, nella parte superiore dell'interfaccia è possibile impostare il *Master Record* (ovvero il recordset che popolerà il template del documento), *Documento Generato* (la variabile contenente il documento, che deve essere mappata dalla tab Paramateri Collegati come parametro di output in modo tale da da ottenere un risultato quando verrà utilizzata all'interno di un *Task*), *Formato Documento* (ovvero .pdf, .html, .docx, .doc), *Descrizione* e *Invia come corpo HTML* (quest'ultimo è un flag).
-Nella parte inferiore della tab invece ci sono le variabili del documento (le variabili appariranno nella seconda tab, sotto la voce "variabili documento" nel pannello sulla parte destra dell'interfaccia).
-Nella seconda tab c'è un Widget (con la visualizzazione analoga a quella di un documento in *Microsoft Word*) per visualizzare/modificare il template del documento, utilizzando gli strumenti integrati e le variabili documenti che possono essere trovate nel pannello sulla parte destra dell'interfaccia.
+Nel pagina [Tipi di attività](./activity-types.md) si analizzano tutte le tipologie.

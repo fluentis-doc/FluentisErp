@@ -1,5 +1,5 @@
 ---
-title: Categoria Commerciale Contatto
+title: Categoria Commerciale
 sidebar_position: 7
 ---
 
