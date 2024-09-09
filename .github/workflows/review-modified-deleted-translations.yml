@@ -133,7 +133,7 @@ jobs:
                 body+="\n/cc @fluentis-doc/${team_name}\n" # Mention the team in the body
                 for file in $deleted_files; do
                     # Remove 'docs/' prefix from file paths
-                    processed_file="../edit/locale-${LANG:0:2}/i18n/${LANG}/docusaurus-plugin-content-docs/current/${file#docs/}"
+                    processed_file="../blob/locale-${LANG:0:2}/i18n/${LANG}/docusaurus-plugin-content-docs/current/${file#docs/}"
                     body+="- [$file](../blob/main/${file})  \n"
                     body+="   [${LANG:0:2} file](${processed_file})\n"
                 done
