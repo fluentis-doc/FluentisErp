@@ -1,44 +1,44 @@
 ---
-title: Parametri Picking
+title: Parametri slaganja robe 
 sidebar_position: 6
 ---
 
-La form si apre tramite il percorso **Parametri > Logistica > Parametri Picking** e permette di effettuare tutti le parametrizzazioni riguardanti il funzionamento dei picking o liste di prelievo. Soltanto dopo aver parametrizzato opportunamente questa maschera è possibile utilizzare il modulo di Picking.
+Obrazac se otvara preko putanje **Parametri > Logistika > Parametri slaganja robe** e omogućuje provođenje svih parametara u vezi s operacijom komisioniranja ili otpremnih lista. Tek nakon odgovarajuće parametrizacije ove maske moguće je koristiti modul Picking.
 
-*Pulsante specifico*  
-> *Ripristina*: pulsante per ripristinare lo stato precedente dei parametri.
+*Specifični gumb*  
+> *Vrati*: gumb za vraćanje parametara na prethodno stanje. 
 
-### Generale
+### Općenito 
 
-In questo tab si possono parametrizzare le generalità della gestione Picking. E' possibile assegnare un magazzino e una causale da utilizzare di default per lo scarico dei Picking. Per fare ciò è sufficiente spuntare **Priorità parametri picking** e indicare un **Magazzino** e una **Causale**.  
-E' inoltre possibile scegliere se, al momento dello scarico, **Controllare la disponibilità**, **Escludere gli ordini clienti** dalla disponibilità e/o essere bloccati nel caso la disponibilità non soddisfi la quantità da movimentare (**Disponibilità obbligatoria**).
+U ovoj kartici možete parametrirati opće informacije o upravljanju komisioniranjem. Moguće je dodijeliti skladište i razlog koji će se prema zadanim postavkama koristiti za istovar robe. Da biste to učinili, jednostavno označite parametre **Prioritet parametara uzimanja sa zaliha** i označite **Skladište** i **Predložak**.  
+Također je moguće odabrati hoće li se u trenutku istovara **Provjeriti raspoloživost**, **Isključiti narudžbe kupaca** iz raspoloživosti i/ili biti blokiran ako raspoloživost ne zadovoljava količinu koja se premješta (**Obavezna raspoloživost**).
 
-Nel caso si scelga di controllare la disponibilità è possibile determinare come quest'ultima debba essere calcolata in base al **Conto lavoro**, alla **Produzione pianificata**, agli **Acquisti**, alla **Produzione rilasciata**, alle **Vendite** e/o al **Magazzino**.
+Ako odlučite provjeriti dostupnost, možete odrediti kako se potonji treba izračunati na temelju **Podizvođač**, **Planirane proizvodnje**, **Nabave**, **Otpuštene proizvodnje**, **Prodaje** i/ili **Skladišta**.
 
-Come impostazioni generali è possibile scegliere se al momento della creazione del picking è obbligatorio inserire il **Codice operatore**, se la **Numerazione deve essere progressiva per anno**, se il **Codice operatore che conferma il picking** è obbligatorio.
+Kao opće postavke moguće je odabrati da li je kod kreiranja komisioniranja obavezan unos **Šifre korisnika**, da li **Numeracija mora biti progresivna po godinama**, da li je obvezna **Šifra korisnika** koja **potvrđuje picking**.
 
-Nel caso ci siano gestioni particolari degli articoli è attivabile la **Gestione taglia e colore** piuttosto che la **Gestione lotti e serial number**.
+Ako postoji određeno upravljanje artiklima, može se aktivirati **Upravljanje veličinom i bojom** umjesto **Upravljanja lotovima i serijskim brojem.**.
 
-In quest'ultimo caso si può prevedere che durante l'inserimento di un nuovo picking sia *obbligatorio* indicare i lotti e i serial number degli articoli.
+U potonjem slučaju može se očekivati ​​da je prilikom unosa nove komisionacije *obavezno* navesti šarže i serijske brojeve artikala.
 
 ### WMS Mobile
 
-In questo tab si possono definire i parametri per il funzionamento dei Picking in WMS Mobile.
+U ovoj kartici možete definirati parametre za rad Komisioniranja u WMS Mobile. 
 
-**Tipo conto vettore**: rappresenta il vettore che verrà inserito nei picking creati da WMS Mobile,  
+**Tip konta prijevoznika**: predstavlja prijevoznika koji će biti uključen u odabire koje kreira WMS Mobile,   
 
-Si possono scegliere anche diversi tipi di picking. 
+Također možete odabrati različite vrste slaganja.
 
-E' inoltre opportuno specificare le causali che verranno usate per i seguenti movimenti:
+Također je preporučljivo navesti razloge koji će se koristiti za sljedeće pokrete:  
 
-- scarico UDC per conferma trasferimento;
+- preuzimanje transportne jedinice za potvrdu prijenosa; 
 
-- causale proposta per scarico Picking;
+- predloženi razlog za Picking istovar; 
 
-- scarico per magazzino partenza;
+- istovar za otpremno skladište; 
 
-- carico per magazzino destinazione;
+- utovar za odredišno skladište; 
 
-- causale scarico magazzino di contro lavoro.
+- razlog za istovar proturadnog skladišta. 
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Za sve što nije detaljno opisano u ovom dokumentu o uobičajenom funkcioniranju obrazaca, pogledajte sljedeću poveznicu [Zajedničke funkcije, gumbi i polja](/docs/guide/common).

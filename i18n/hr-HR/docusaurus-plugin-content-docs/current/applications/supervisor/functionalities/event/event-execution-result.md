@@ -1,7 +1,7 @@
 ---
-title: Risultato Esecuzione Evento
-sidebar_label: Risultato Esecuzione Evento
+title: Rezultat izvršenja Događaja 
+sidebar_label: Rezultat izvršenja Događaja
 sidebar_position: 3
 ---
 
-All'interno della form principale dell'[Evento](event-intro) vengono visualizzati alcuni dati utili, relativi all'esecuzione dell'*Evento* (sono tali perché non è necessario aprire la form di dettaglio e quindi rende il workflow più fluido). In particolare all'interno della griglia principale della form sono presenti i campi *Risultato Ultima Esecuzione* e *Durata Massima* ed è possibile visualizzare informazioni dettagliate (errori, informazioni e logs) sull'esecuzione dell'*Evento* selezionando la riga e poi espandendola.
+Neki korisni podaci koji se odnose na izvršenje[Događaja](event-intro) prikazani su unutar glavnog obrasca *Događaja* (to je zato što nije potrebno otvarati detaljni obrazac i stoga tijek rada postaje fluidniji). Konkretno, unutar glavne mreže obrasca nalaze se polja *Rezultat zadnje provedbe* i *Maksimalno trajanje* te je moguće vidjeti detaljne informacije (greške, informacije i zapisnici) o izvršenju *Događaja* odabirom retka i njegovim proširenjem.

@@ -1,79 +1,79 @@
 ---
-title: Parametri importazione paghe
+title: Parametri za uvoz plaća 
 sidebar_position: 3
 ---
 
-### Campi della tabella
+### Polja tablice 
 
-I presenti parametri sono necessari per gestire la funzionalità di importazione registrazioni contabili relative alle buste paga dipendenti attraverso file .csv (formato Zucchetti) acquisite tramite servizio bizlink.
+Ovi parametri su nužni za upravljanje funkcionalnošću uvoza računovodstvenih zapisa koji se odnose na platne liste zaposlenika kroz .csv datoteke (Zucchetti format) dobivene putem bizlink usluge.
 
-Qui si imposta per ogni società il **giorno**, la **causale** contabile e l'**utente** da utilizzare per creare la registrazioni.
+Ovdje postavljate za svaku tvrtku **dan**, računovodstveni **predložak** i **korisnika** koji će se koristiti za izradu zapisa. 
 
-**Permetti ricerca in tabella**: (impostare sempre) fa ricercare i mapping (transcodifica) dei conti nella apposita tabella di transcodifica di cui sotto;
+**Dopusti pretraživanje tablice**: (uvijek postavljeno) traži preslikavanja računa (transkodiranje) u odgovarajućoj tablici transkodiranja u nastavku;
  
-**Raggruppa per centro di costo / Raggruppa per Dipendente**: indica a Fluentis che tipo di file aspettarsi (da Zucchetti si può creare un file raggruppato per cdc o per dipendente (differiscono per numero e posizione delle colonne da leggere).
+**Grupiraj prema mjestu troška / Grupiraj prema zaposleniku**: govori Fluentisu koju vrstu datoteke može očekivati ​​(od Zucchettija možete stvoriti datoteku grupiranu prema cdc-u ili prema zaposleniku (razlikuju se u broju i položaju stupaca za čitanje)).
 
-Nota: Gli ultimi due campi non sono legati a questo import paghe, ma all’import per il controlling che al momento si esegue tramite importazione da foglio excel e quindi non sono in realtà utilizzati.
+Napomena: Zadnja dva polja nisu povezana s ovim uvozom obračuna plaća, već s uvozom za kontroling koji se trenutno izvodi preko uvoza iz Excel tabele i stoga se zapravo ne koriste.  
 
-### Generalità Importazione paghe Bizlink
+### Opći Bizlink uvoz plaća 
 
-La funzionalità prevede la creazione di una cartella monitorata dal servizio Bizlink dove depositare i file da importare ottenendo l'elaborazione ed importazione in automatico. 
+Funkcionalnost uključuje stvaranje mape koju nadzire usluga Bizlink u kojoj se pohranjuju datoteke za uvoz, dobivanje automatske obrade i uvoza. 
 
-Nonostante il fatto che sia possibile creare la cartella che viene monitorata dal connettore bizlink per l’import direttamente sul server, per ragioni di sicurezza si preferisce evitare di far accedere utenti al server ed impostare la cartella di importazione su un pc client.
+Unatoč činjenici da je moguće kreirati mapu koju nadzire bizlink konektor za uvoz izravno na poslužitelju, iz sigurnosnih razloga poželjno je izbjegavati da korisnici pristupaju poslužitelju i postaviti mapu za uvoz na klijentsko računalo. 
 
-### Configurazione del servizio Bizlink locale e degli altri parametri necessari
+### Konfiguriranje lokalne usluge Bizlink i ostalih potrebnih parametara 
 
-1. Creare un utente bizLink in Arm (form Utenti Bizlink) che verrà utilizzato sul pc interessato per l’importazione.
-Esempio: Nome: PC-Paghe Password: xxxxx Griglia Connessioni: Spuntare E' attivo sulla connessione di produzione effettivamente utilizzata
+1. Kreirajte bizLink korisnika u Armu (obrazac Bizlink Users) oji će se koristiti na relevantnom računalu za uvoz. 
+Primjer: Nome: PC-Payroll  Password: xxxxx Connections Grid: 
+Označite *Aktivno je* na proizvodnoj vezi koja se stvarno koristi
 
-2. Installare bizLink su pc manualmente
-    Tramite il comando eseguito da cmd come amministratore.
+2. Instalirajte bizLink na računalo ručno
+    Putem naredbe pokreni iz cmd kao administrator
 
 net_dir>\InstallUtil "< fluentis_dir>\Tools\Service \Fluentis.BizLink.Tools.Service.exe"'
 
-Ove net_dir è la cartella di installazione del framework .net e si trova in %WINDIR%\Microsoft.NET\Framework64\versione framework, mentre fluentis_dir è la cartella di installazione di Fluentis.
+Gdje je net_dir instalacijska mapa .net framework a i nalazi se u%WINDIR%\Microsoft.NET\Framework64\ramework verzija, dok je  fluentis_dir instalacijska mapa Fluentisa. 
 
 ![](/img/it-it/configurations/parameters/finance/payroll1.png)
 
-3. Copiare file cartella bin di bizLink da server a client (ogni aggiornamento di versione sarà da fare) tranne il file di log (evidenziato nell’immagine sotto)
+3.  Kopirajte datoteku mape bizLink bin s poslužitelja na klijent  (morat će se izvršiti ažuriranje svake verzije) osim datoteke dnevnika (označeno na slici ispod)
 
 ![](/img/it-it/configurations/parameters/finance/payroll2.png)
 
-Il percorso standard è questo: C:\Program Files (x86)\Fluentis\Fluentis\Bin\Tools\Service
+Standardna staza je ova: C:\Program Files (x86)\Fluentis\Fluentis\Bin\Tools\Service
 
-4. Modificare connettore chiamato: Zucchetti_PaymentData in questo modo (in particolare aggiungendo l'utente bizlink - PC-Paghe - appena creato nel campo Identificativo)
+4. Uredite konektor pod nazivom: Zucchetti_PaymentData a ovaj način (posebno dodavanjem novostvorenog bizlink korisnika - PC-Payroll - u polje Identifier)
 
 ![](/img/it-it/configurations/parameters/finance/payroll5.png)
 
-I percorsi dei file (esempio C:\Temp\Bizlink\Incoming ; C:\Temp\Bizlink\Processed ; C:\Temp\Bizlink\Failed) devono essere presenti sul pc dell’utente e la pool Fluentis deve poter leggere da quella cartella. Se non dovesse funzionare provare a dare come permessi everyone full control.
-Impostare anche un identificativo da riportare successivamente sul file di config di bizLink.
+Putanje datoteke (primjer C:\Temp\Bizlink\Incoming ; C:\Temp\Bizlink\Processed ; C:\Temp\Bizlink\Failed) moraju biti prisutne na korisničkom računalu i skup Fluentis mora moći čitati iz toga mapa. Ako to ne uspije, pokušajte svima dati potpunu kontrolu. Također postavite identifikator koji će se kasnije prijaviti u bizLink konfiguracijskoj datoteci. 
 
 
 
-5. Sistemare il file config di bizLink con user, pwd, server e identifier. Il file si chiama Fluentis.BizLink.Tools.Service.exe.config. 
+5. Postavite bizLink konfiguracijsku datoteku s userom, pwd, server i identifier. Datoteka se zove Fluentis.BizLink.Tools.Service.exe.config. 
 Modificarlo come da immagine sotto.
 
 ![](/img/it-it/configurations/parameters/finance/payroll4.png)
  
-In questo modo il servizio di bizLink installato sul pc, lavorerà solo con quel connettore.
+Na taj će način bizLink servis instaliran na računalu raditi samo s tim konektorom. 
 
-6. Avviare bizLink
+6. Pokrenite bizLink
 
 
-### Gestione del file da importare
+### Upravljanje datotekom za uvoz 
 
 
 
 ![](/img/it-it/configurations/parameters/finance/payroll7.png)
 
-Prestare attenzione al fatto che attualmente in Fluentis è richiesto di formattare mese/anno mentre solitamente il file viene esportato da Zucchetti come data intera, occorre cambiare in excel finchè non sarà rivisto.
+Obratite pozornost na činjenicu da je trenutno u Fluentisu potrebno formatirati mjesec/godinu dok se obično datoteka eksportira iz Zucchettija kao cijeli datum, mora se mijenjati u Excelu dok se ne pregleda. 
 
 ![](/img/it-it/configurations/parameters/finance/payroll8.png)
 
-Occorre poi gestire le transcodifiche della società e del piano dei conti.
+Zatim je potrebno voditi transkodiranje poduzeća i kontnog plana. 
 
 ![](/img/it-it/configurations/parameters/finance/payroll9.png)
 
-Ed eventualmente dei centri di costo.
+I eventualno mjesta troškova. 
 
-Bisogna infine gestire I PARAMETRI IMPORTAZIONE PAGHE come sopra specificato.
+Na kraju, potrebno je upravljati PARAMETRIMA UVOZA PLAĆA kako je gore navedeno.

@@ -3,11 +3,11 @@ title: Business Intelligence
 sidebar_position: 3
 ---
 
-Nella sezione **Business Intelligence** troviamo la possibilità di esplorare i cubi di dati.
+U odjeljku **Business Intelligence** nalazi se mogućnost istraživanja kocki podataka. 
 
-Questa procedura è utile per effettuare analisi di tipo DRILL DOWN all'interno dei dati presenti nel database.
+Ovaj postupak koristan je za provođenje analiza tipa DRILL DOWN unutar podataka prisutnih u bazi podataka. 
 
-Per default troveremo configurati i cubi di dati OLAP relativi alle Vendite, agli Acquisti, alla Produzione e all'Amministrazione.
+Po zadanim postavkama, konfigurirane će biti kocke podataka OLAP koje se odnose na Prodaju, Nabavu, Proizvodnju i Upravu.
 
 
 

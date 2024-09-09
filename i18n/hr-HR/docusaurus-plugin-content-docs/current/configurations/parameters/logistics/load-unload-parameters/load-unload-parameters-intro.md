@@ -1,13 +1,13 @@
 ---
-title: Parametri Carico/Scarico
+title: Parametri Zaduženja/Razduženja 
 sidebar_position: 1
 ---
 
-La form permette di attribuire i diritti ad un utente per effettuare alcune movimentazioni di magazzino.  Le procedure che vengono gestite da questa finestra sono la gestione UDC per quanto riguarda l'ERP e tutti i moduli di WMS Mobile.
+Obrazac omogućuje dodjeljivanje prava korisniku za obavljanje određenih skladišnih kretanja. Procedure kojima se upravlja iz ovog prozora su UDK upravljanje s obzirom na ERP i sve WMS Mobile module. 
 
-**Inserimento nuovo parametro**
+**Umetanje novog parametra**
 
-Per inserire un *Nuovo parametro carico/scarico* è necessario posizionarsi sul record libero oppure premere il pulsante **Inserisci** dalla ribbon bar.  
-Specificare quindi l'**Utente** desiderato, il [Tipo movimento](/docs/configurations/parameters/logistics/load-unload-parameters/movement-types), il **Magazzino** dove dovrà operare e la **Causale** utilizzata nelle registrazioni di magazzino.
+Za umetanje *Novog parametra utovara/istovara* morate se postaviti na slobodni zapis ili pritisnuti gumb  **Umetni** na traci vrpce.  
+Zatim odredite željenog **Korisnika** [Vrstu kretanja](/docs/configurations/parameters/logistics/load-unload-parameters/movement-types),**Skladište** u kojem će morati poslovati  **Predložak** koji se koristi u evidenciji skladišta.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Za sve što nije detaljno opisano u ovom dokumentu o uobičajenom funkcioniranju obrazaca, pogledajte sljedeću poveznicu[Zajedničke funkcije, gumbi i polja](/docs/guide/common).

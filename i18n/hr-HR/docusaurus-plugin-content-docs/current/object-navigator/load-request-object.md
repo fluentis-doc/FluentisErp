@@ -1,95 +1,95 @@
 ---
-title: Load Request Oggetti
+title: Zahtjevi za učitavanje predmeta
 sidebar_position: 2
 ---
 
  
 
-### Come visualizzare campi aggiuntivi nelle form
+### Kako prikazati dodatna polja u obrascima
 
 
-Per aggiungere delle proprietà non presenti nelle form si deve verificare che le proprietà siano presenti nella LoadRequest dell'oggetto.
+Da biste dodali svojstva koja nisu prisutna u obrascima, morate potvrditi da su svojstva prisutna u LoadRequestu objekta. 
 
 
-### Caricare nuove proprietà
 
-**Esempi**:
- - aggiungere la *Partita iva* e il *Codice fiscale* nell'expander del cliente, nella **Testata** degli Ordini clienti.
- - aggiungere lo *SWIFT nella* **griglia** dei Pagamenti degli Ordini clienti.
+### Učitaj nova svojstva
+
+**Primjeri**:
+ - dodajte *PDV* i *porezni broj* u proširenje kupca, u **Zaglavlje** narudžbe kupca.
+ - dodajte *SWIFT* u **mrežu** Plaćanja narudžbe korisnika.  
 
 ![](/img/it-it/guide/panels/object-navigator/load-request-object/image01.png)
 
-1. fissare il panel dell'**Object Navigator** in modo da poterlo avere sempre visibile fino alla definizione dei campi aggiuntivi, cioè fino al momento prima di creare il profilo personalizzato.
+1. popraviti ploču  **Object Navigatora** ako da uvijek može biti vidljiva dok se ne definiraju dodatna polja, tj. do trenutka prije kreiranja prilagođenog profila. 
 
-2. nell'**Object Navigator**, con tasto destro del mouse sul nome dell'oggetto, entrare in **Dettagli** e andare nella sezione **Load Request dell'oggetto** e con tasto destro del mouse selezionare **Nuovo Object Load Request**.
+2. u **Object Navigatoru**, desnom tipkom miša kliknite naziv objekta, unesite **Detalji** i idite na odjeljak **Zahtjev za učitavanje objekta** i desnim klikom odaberite  **Novi zahtjev za učitavanje objekta**.
 
 ![](/img/it-it/guide/panels/object-navigator/load-request-object/image02.png)
 
-3. aprire un *Nuovo Load Request* dove inserire lo stesso codice del *Load Request Standard* e poi salvare in modo che vengano caricate tutte le proprietà dell'oggetto. 
+3. otvorite *Nuovo Load Request* gdje unesete isti kod kao *Load Request Standard* i zatim spremite tako da se učitaju sva svojstva objekta.  
 
-4. ricercare nel tree dell'oggetto le proprietà interessate. 
+4. pretražite stablo objekata za pogođena svojstva.
 
-In questo caso siamo andati sotto la referenza *Cliente* e dentro la referenza *Anagrafica* per trovare *Codice fiscale* e *Partita iva*, e li abbiamo selezionati. 
+U ovom slučaju otišli smo pod reference *Kupca* i u referencu *Šifarnika* kako bismo pronašli *OIB* i *PDV broj*, te smo ih odabrali. 
 
-5. sempre nella stessa form, nella griglia **Based On**, attivare il **Codice** del LoadRequest in modo che in esecuzione vengano caricate tutte le proprietà presenti in questo *Load Request Personalizzato*.
+5. uvijek u istom obrascu, u rešetki **Based On**, aktivirajte LoadRequest **Šifru** tako da se sva svojstva prisutna u ovom *Personaliziranom Load Request*.
 
 ![](/img/it-it/guide/panels/object-navigator/load-request-object/image03.png)
 
-6. chiudere la form.
+6. zatvorite obrazac.
 
  
-### Aggiungere le proprietà nella testata della form
+### Dodajte svojstva u zaglavlje obrasca 
 
-6.1. a sinistra della form di Fluentis da personalizzare aprire e tenere aperto **Form Navigator**. 
+6.1. lijevo od obrasca Fluentis koji treba prilagoditi, otvoriti i držati **Form Navigator** otvorenim. 
 
-6.2. aprire il tree della form e attivare la form in **Customization Mode**.
+6.2. otvorite stablo obrasca i aktivirajte obrazac u **Customization Mode**.
 
 ![](/img/it-it/guide/panels/object-navigator/load-request-object/image04.png)
 
 
-A questo punto la form viene contornata di rosso:
+Na ovom mjestu obrazac je označen crvenom bojom: 
 
 ![](/img/it-it/guide/panels/object-navigator/load-request-object/image05.png)
 
 
-6.3 nell'**
-Object Navigator* cercare le proprietà da aggiungere nella form.
+6.3 u **Object Navigator** potražite svojstva koja želite dodati obrascu.
 
 ![](/img/it-it/guide/panels/object-navigator/load-request-object/image06.png)
 
  
-6.4. selezionare la voce e trascinarla nel *Form Navigator* esattamente sopra la sezione dove deve essere inserita la proprietà che apparirà nella form di Fluentis.
+6.4. odaberite stavku i povucite je u *Form Navigator* točno iznad odjeljka gdje se mora umetnuti svojstvo koje će se pojaviti u obrascu Fluentis. 
 
 ![](/img/it-it/guide/panels/object-navigator/load-request-object/image07.png)
 
 
-6.5. *deselezionare Customization Mode* quando si è terminato di personalizzare la form.
+6.5. *Poništite Customization Mode* kada završite s prilagođavanjem obrasca. 
 
 ![](/img/it-it/guide/panels/object-navigator/load-request-object/image08.png)
 
 
-### Aggiungere le proprietà nella griglia della form
+### Dodajte svojstva rešetki obrasca 
 
 
-Per aggiungere le proprietà nelle griglie non serve entrare in Customization mode.
+Da biste dodali svojstva mrežama, ne morate ulaziti u Customization mode.
 
 
-7.1 nell'*Object Navigator* cercare le proprietà da aggiungere. 
+7.1 u *Object Navigatoru* potražite svojstva za dodavanje. 
 
-7.2 selezionare la voce e trascinarla nella griglia. La form viene contornata di rosso.
+7.2 odaberite stavku i povucite je u mrežu. Obrazac je označen crvenom bojom.
 
 ![](/img/it-it/guide/panels/object-navigator/load-request-object/image09.png)
 
 
-Questa proprietà apparirà come ultima colonna che poi dovrà essere trascinata nella posizione desiderata.
+Ovo svojstvo pojavit će se kao zadnji stupac koji se zatim mora povući na željenu poziciju.  
 
 ![](/img/it-it/guide/panels/object-navigator/load-request-object/image10.png)
 
 
 
-8. *creare un profilo* per salvare la personalizzazione.
+8. *Izradite profil* da biste spremili svoju prilagodbu.
 
 ![](/img/it-it/guide/panels/object-navigator/load-request-object/image11.png)
 
 
-9. *ripartire* Fluentis per rendere operativa la personalizzazione.
+9. *ponovno pokrenite* Fluentis kako bi prilagodba postala operativna.

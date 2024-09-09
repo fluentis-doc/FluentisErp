@@ -4,38 +4,38 @@ sidebar_label: Task & Blockly
 sidebar_position: 2
 ---
 
-:::info
-Quando si apre la form di dettaglio, di default viene visualizzato lo *Script Editor* e non *Blockly*, ma se venisse apportata una modifica al codice, dopo un salvataggio/compilazione durante l'utilizzo di *Blockly*, al successivo avvio ella form di dettaglio del *Task*, la piattaforma di coding predefinita sarà *Blockly*.
+:::INFORMACIJA
+Kada otvorite obrazac s detaljima,*Skript Editor* prikazan je prema zadanim postavkama, a *Blockly*, ali ako se izvrši promjena koda, nakon spremanja/kompiliranja tijekom korištenja *Blockly*, sljedeći put kada pokrenete obrazac s detaljima *Zadatka*, zadana platforma za kodiranje bit će *Blockly*.
 :::
 
-*Supervisor* sfrutta i blocchi personalizzati di Blockly per creare script C#. Oltre alle categorie standard di Blockly (logiche, loops, op.matematiche, testi, date, liste, colori, variabili), le categorie personalizzate che possono essere trovate nella **Toolbox** sono:
+*Supervisor* koristi Blocklyjeve prilagođene blokove za izradu C# skripti. Uz standardne Blockly kategorije (logika, petlje, matematičke operacije, tekstovi, datumi, popisi, boje, varijable), prilagođene kategorije koje se mogu pronaći u **Toolbox** su:
 
-- **Variabili di contesto**, contiene blocchi per selezionare variabili dal contesto corrente e per convertire un oggetto generico in una stringa/numero/...;
+- **Varijable konteksta**, sadrži blokove za odabir varijabli iz trenutnog konteksta i za pretvaranje generičkog objekta u niz/broj/...;
 
-- **Dizionario**, contiene tutti i blocchi necessari per lavorare con la struttura dati di tipo <span style={{ fontFamily: 'Consolas' }}>Dizionario</span>;
+- **Rječnik**, sadrži sve blokove potrebne za rad sa strukturom podataka tipa <span style={{ fontFamily: 'Consolas' }}>Rječnik</span>;
 
-- **Oggetti Fluentis**, suddivisi in tre sottocategorie:
-     - **Commons**, contiene blocchi per eseguire operazioni comuni sugli *Oggetti Fluentis* (ovvero selezionando una proprietà di un oggetto, creando un'espressione logica per filtrare un oggetto, creando un recordset da un'espressione LINQ, ecc...) ;
-     - **Read Only**, contiene blocchi specifici per eseguire operazioni di sola lettura sugli *Oggetti Fluentis*(per esempio la lettura di valori, filtrare elementi di una collezione, ecc...);
-     - **Read Write**, contiene blocchi specifici per eseguire operazioni di lettura-scrittura sugli *Oggetti Fluentis* (ovvero la creazione e istanziazione di oggetti, settare proprietà o riferimenti, ecc...);
+- **Fluentis objekti**, podijeljeni u tri podkategorije:
+     - **Commons**, sadrži blokove za izvođenje uobičajenih operacija na *Objektima Fluentis* (tj. odabir svojstva objekta, stvaranje logičkog izraza za filtriranje objekta, stvaranje skupa zapisa iz LINQ izraza, itd...);  
+     - **Read Only**, sadrži specifične blokove za izvođenje operacija samo za čitanje na *Fluentis objektima* (na primjer čitanje vrijednosti, filtriranje elemenata zbirke, itd...);  
+     - **Read Write**, sadrži specifične blokove za izvođenje operacija čitanja i pisanja na *Fluentis objektima* (tj. stvaranje i instanciranje objekata, postavljanje svojstava ili referenci, itd...);
 
-- **Accesso al database**, contiene blocchi che possono eseguire operazioni direttamente con il database, come chiamare stored procedure o leggere valori da recordsets;
+- **Pristup bazi podataka**, sadrži blokove koji mogu izvoditi operacije izravno s bazom podataka, kao što je pozivanje pohranjenih procedura ili čitanje vrijednosti iz skupova zapisa;
 
-- **Attività**, a sua volta suddivise in categorie che portano lo stesso nome dei gruppi (gli stessi gruppi consultabili dalla form principale delle attività). I gruppi standard sono:
-     - **Utilità**, che contiene tutte le [attività](../activity/activity-intro) standard (l'utente non può aggiungere nuove attività o modificare quelle esistenti in questo gruppo);
-     - **Esempi**, contiene tutti gli esempi di attività che possono guidare l'utente nella creazione di un nuovo *Task* personalizzato (l'utente non può aggiungere nuove attività o modificare quelle esistenti in questo gruppo, è necessario creare un nuovo gruppo con le proprie attività customizzate)
+- **Aktivnosti**, su pak podijeljene u kategorije koje nose isti naziv kao i grupe (iste grupe koje se mogu pregledati iz obrasca glavne aktivnosti). Standardne grupe su:  
+     - **Alati**, koji sadrži sve standardne [Zadatke](../activity/activity-intro) standard (korisnik ne može dodavati nove zadatke ili mijenjati postojeće u ovoj grupi);  
+     - **Primjeri**, sadrži sve primjere aktivnosti koje mogu voditi korisnika u kreiranju novog prilagođenog *Zadatka* (korisnik ne može dodavati nove aktivnosti niti mijenjati postojeće u ovoj grupi, potrebno je kreirati novu grupu sa svojim prilagođenim aktivnostima) 
 
-- **Globals**, contiene blocchi che possono recuperare **Parametri** globali o [liste di distribuzione](../distribution-list/distribution-list-intro)
+- **Globals**, sadrži blokove koji mogu dohvatiti globalne **Parametre** ili [popise distribucije](../distribution-list/distribution-list-intro)
 
-- **Task Utility**, contiene script standard/comuni utili per tutte le *attività*;
+- **Task Utility**, sadrži standardne/uobičajene skripte korisne za sve *zadatke*;
 
-Per aggiungere codice ad un *Task* con *Blockly*, trascinare e rilasciare i blocchi dalla *Toolbox* nel **Workspace**. Ci sono più *Workspace* selezionabili in *Blockly*:
+Za dodavanje koda un *Zadatku* s *Blocklyjem*, povucite i ispustite blokove iz okvira s  *Toolbox* u **Workspace**. Postoji više *Workspace* koji se mogu odabrati u  *Blockly*:
 
-- **#STD** gestisce il codice all'interno del metodo dello script <span style={{ fontFamily: 'Consolas' }}>ExecuteTask()</span>;
-- **TaskCompleted** gestisce il codice all'interno del metodo dello script <span style={{ fontFamily: 'Consolas' }}>TaskCompleted()</span>;  
+- **#STD** obrađuje kod unutar metode skripte <span style={{ fontFamily: 'Consolas' }}>ExecuteTask()</span>;
+- **TaskCompleted** rukuje kodom unutar metode skripte <span style={{ fontFamily: 'Consolas' }}>TaskCompleted()</span>;  
 
-Per cambiare l'attuale *Workspace*, seleziona un altro valore dal menu a tendina della voce *Sezione*.
+Da biste promijenili trenutni *Workspace*, odaberite drugu vrijednost s padajućeg izbornika stavke *Odjeljak*.
 
-Terminato l'inserimento del codice, assicurarsi di cliccare il pulsante *Salva/Compila* e verificare che lo script sia visibile anche nello *Script Editor*, selezionando la voce *Script* dal selettore *Tipo Script* (per cambiare quindi la piattaforma di coding).
+Nakon što završite s umetanjem koda, obavezno kliknite gumb *Spremi/Sastavi*i provjerite je li skripta također vidljiva u *Skript Editor*,  odabirom stavke *Skripta* iz izbornika *Vrsta skripte* (da biste stoga promijenili platformu za kodiranje).
 
-Il codice dello script generato, apparirà tra le due righe commentate (rinominate <span style={{ color: 'forestGreen' , fontWeight: 'bold' }}>// START WIZARD CODE</span> and <span style={{ color: 'forestGreen' , fontWeight: 'bold' }}>// END WIZARD CODE</span>).
+Generirani kod skripte pojavit će se između dva komentirana retka (preimenovana u <span style={{ color: 'forestGreen' , fontWeight: 'bold' }}>// START WIZARD CODE</span> and <span style={{ color: 'forestGreen' , fontWeight: 'bold' }}>// END WIZARD CODE</span>).

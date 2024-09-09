@@ -1,19 +1,19 @@
 ---
-title: Tabs dell'Evento
-sidebar_label: Tabs dell'Evento
+title: Kartice događaja 
+sidebar_label: Kartice događaja 
 sidebar_position: 1
 ---
 
-:::info Info
-Una volta aperta la form di dettaglio dell'*Evento*, nella parte superiore sono presenti alcuni parametri standard come *Codice, Nome, Descrizione, Data di creazione, Data ultima modifica*, *Abilitato*. I parametri più rilevanti sono  *Gruppi, Consenti sovrapposizione pianificazione, Attività, Durata massima* e *Risultato dell'ultima esecuzione*.
+:::info INFO 
+Nakon što se otvori obrazac s detaljima *Događaja*, u gornjem dijelu nalaze se neki standardni parametri kao što su *Šifra, Naziv, Opis, Datum kreiranja, Datum posljednje izmjene*, *Omogućeno*. Najrelevantniji parametri su *Grupe, Dopusti preklapanje rasporeda, Zadatak, Maksimalno trajanje* i *Rezultat zadnjeg pokretanja*.
 :::
 
 ### Parametri
-Nella tab **Parametri** (in base al *Task* selezionato nel selettore posto nella parte superiore dell'interfaccia), possono essere specificati i parametri del *Task* con i relativi valori, che verranno poi utilizzati al momento dell'esecuzione dell'*Evento*.
+U kartici **Parametri** (na temelju *Zadatka* odabranog u biraču na vrhu sučelja), parametri *Zadatka* mogu se specificirati s relativnim vrijednostima, koje će se zatim koristiti kada se *Događaj* izvrši.
 
-### Logs
-Nella tab **Logs** verranno visualizzati tutti i logs che si riferiscono all'esecuzione dell'*Evento*. E' importante sottolineare che il log non contiene solo informazioni generiche sull'esecuzione dell'*Evento*, ma anche eventuali messaggi di errore che si sono verificati su di esso.
+### Registri 
+U kartici **Registri** bit će prikazani svi zapisnici koji se odnose na izvođenje *Događaja*. Važno je naglasiti da dnevnik ne sadrži samo generičke informacije o izvršenju *Događaja*, već i sve poruke o greškama koje su se u njemu pojavile. 
 
-### Schedulazioni
-Nella tab **Schedulazioni** è possibile inserire una schedulazione (tramite i pulsanti posti sulla ribbon), da una finestra dedicata.
+### Rasporedi 
+Na kartici **Rasporedi** moguće je umetnuti raspored (putem gumba na vrpci) iz namjenskog prozora.
 

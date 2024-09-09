@@ -3,6 +3,6 @@ title: States navigator
 sidebar_position: 5
 ---
 
-**States navigator** è un'interfaccia per la gestione dei gruppi di stati; è possibile infatti definire per ogni oggetto un gruppo di stati con relative transizioni & action.
+**States navigator** je sučelje za upravljanje skupinama stanja; moguće je definirati skupinu stanja s pripadajućim prijelazima i akcijama za svaki objekt. 
 
-Inoltre, è abilitato anche il cambio di stato nella maggior parte dei form di ricerca documenti.
+Također, omogućena je promjena stanja u većini obrazaca za pretraživanje dokumenata. 

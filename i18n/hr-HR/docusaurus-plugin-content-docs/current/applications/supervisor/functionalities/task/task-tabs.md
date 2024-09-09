@@ -1,17 +1,17 @@
 ---
-title: Tabs del Task 
-sidebar_label: Tabs del Task
+title: Kartice zadataka 
+sidebar_label: Kartice zadataka 
 sidebar_position: 1
 ---
 
-**Script**
-> Questa tab è divisa a sua volta in tre tabs.
-- La scheda **Definizioni** contiene la definizione dello script, la possibilità di cambiare piattaforma dello script, trovare e sostituire la funzione e varie utilità legate allo script (es. versioning, abbellisci, duplica, compila/salva, nota, ...). 
-- La tab **Referenze script** contiene tutti i riferimenti dello script. 
-- Nella tab **Generale** vengono visualizzati i parametri standard relativi allo script, quali: *Codice, Descrizione, Categoria, Oggetto Business, flag Disabilitato, Versione, e molto altro*.
+**Skripte**
+> Ova kartica je pak podijeljena na tri kartice.   
+- Kartica **Definicije** sadrži definiciju skripte, mogućnost promjene platforme skripte, funkciju pronalaženja i zamjene i razne uslužne programe koji se odnose na skriptu (npr. stvaranje verzija, uljepšavanje, dupliciranje, kompajliranje/spremanje, bilješka, ...).   
+- Kartica **Reference skripti** sadrži sve reference skripte.    
+- Kartica **Općenito** prikazuje standardne parametre koji se odnose na skriptu, kao što su: *Kod, Opis, Kategorija, Poslovni objekt, Onemogućena oznaka, Verzija, i još mnogo toga*.
 
 **Parametri**
-> In questa scheda è possibile definire parametri utilizzabili in entrambe le piattaforme di coding, *Script Editor* e *Blockly*. Se si utilizza quest'ultima però, si ha a disposizione il blocco *getTaskParameter* (si può trovare all'interno della *Toolbox*, categoria *Task Utility*), che consente di ottenere i parametri precedentemente creati nella tab.
+> U ovoj kartici možete definirati parametre koji se mogu koristiti u obje platforme za kodiranje, *Script Editor* i *Blockly*. Međutim, ako koristite potonje, imate dostupan blok *getTaskParameter* (možete ga pronaći unutar *Toolbox*, *Task Utility* kategorije), koji vam omogućuje da dobijete parametre prethodno kreirane u kartici.
 
-**Logs Esecuzione**
-> In questa tab puoi trovare tutti i log di esecuzione relativi agli script, con diversi tipi di importanza (es. Informazione, Errore, Avvertenza, ecc...). I logs possono essere cancellati con una selezione delle righe della griglia più il pulsante *CANC*.
+**Registri izvršenja**
+> U ovoj kartici možete pronaći sve zapisnike izvršenja koji se odnose na skripte, s različitim vrstama važnosti (npr. Informacije, Pogreška, Upozorenje, itd...).Dnevnici se mogu izbrisati odabirom mrežnih linija plus gumbom *DELETE*.

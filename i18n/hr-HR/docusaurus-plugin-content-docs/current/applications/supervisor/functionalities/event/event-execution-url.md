@@ -1,15 +1,15 @@
 ---
-title: Url Esecuzione Evento
-sidebar_label: Url Esecuzione Evento
+title: Url izvršenja Događaja
+sidebar_label: Url izvršenja Događaja
 sidebar_position: 4
 ---
 
-Questa funzionalità offre la possibilità di eseguire un *Evento* da un'origine/app esterna.
+Ova značajka pruža mogućnost pokretanja *Događaja* iz vanjskog izvora/aplikacije. 
 
-All'interno della form principale dell'[Evento](event-intro), posto sulla ribbon, è presente il pulsante **Genera URL di esecuzione**. Selezionato l'*Evento* dalla griglia sottostante e poi cliccato, l'app visualizzerà una finestra, contenente:
+Unutar glavnog obrasca [Događaja](event-intro), koji se nalazi na vrpci, nalazi se gumb **Generiraj URL izvršenja**. Nakon što ste odabrali *Događaj* iz donje mreže i zatim ga kliknuli,  aplikacija će prikazati prozor koji sadrži:   
 
-- **Parametro task URL di reindirizzamento** si occupa di reindirizzare l'utente a un'altra pagina dopo aver eseguito l'URL. Questo parametro può essere impostato nel *Task*, all'interno del metodo *TaskCompleted* (aggiungendo il valore dell'URL al *Dictionary* e impostando un parametro *Task* senza il flag *IsInputParamter*)
+- **Parametar zadatka za preusmjeravanje** odgovoran je za preusmjeravanje korisnika na drugu stranicu nakon izvršavanja URL-a. Ovaj parametar se može postaviti u *Zadatku*, unutar metode  *TaskCompleted* (dodavanjem URL vrijednosti u *Rječnik* i postavljanjem parametra *Zadatka* bez oznake *IsInputParamter*) 
 
-- **Data di scadenza** dell'URL generato
+- **Datum isteka** generiranog URL-a  
 
-- **Genera URL** conterrà l'URL generato tramite il click sul pulsante
+- **Generiraj URL** će sadržavati URL generiran klikom na gumb

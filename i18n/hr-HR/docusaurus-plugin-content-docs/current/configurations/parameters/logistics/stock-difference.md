@@ -1,10 +1,10 @@
 ---
-title: Parametri differenze inventariali
+title: Parametri inventurnih razlika 
 sidebar_position: 3
 ---
 
-La form permette di impostare, per ogni magazzino, le causali che dovranno essere utilizzate automaticamente dall'applicazione in caso di creazione automatica di registrazioni di magazzino tramite l'utilizzo della procedura *Differenze inventariali*. Permette di calcolare la differenza tra la quantità logica e la quantità fisica, ossia quella rilevata dall'inventario fisico, e di generare automaticamente le registrazioni di compensazione delle differenze tra quantità logica e quantità fisica.
+Obrazac vam omogućuje da za svako skladište postavite razloge koje aplikacija mora automatski koristiti u slučaju automatskog kreiranja skladišne ​​evidencije korištenjem procedure *Razlike u Inventurnim listama*. Omogućuje vam izračunavanje razlike između logičke količine i fizičke količine, tj. one koju je otkrio fizički inventar, te automatsko generiranje kompenzacijskih zapisa za razlike između logičke količine i fizičke količine. 
 
-Le causali di magazzino che possono essere impostate in questo tab sono esclusivamente le causali che hanno il flag *Gest Inv.* attivato. È necessario impostare, per ogni magazzino, una casuale di carico di rettifica inventariale ed una causale di scarico di rettifica inventariale. 
+Skladišni razlozi koji se mogu postaviti u ovoj kartici su isključivo oni koji imaju aktivnu oznaku *Upravljanje fizičkim inventarom* u Skladišnim razlozima. Potrebno je za svako skladište postaviti razlog utovara ispravke zaliha i razlog iskrcaja ispravke zaliha. 
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Za sve što nije detaljno opisano u ovom dokumentu o uobičajenom funkcioniranju obrazaca, pogledajte sljedeću poveznicu [Zajedničke funkcije, gumbi i polja](/docs/guide/common).

@@ -1,14 +1,14 @@
 ---
-title: Ricerca Parametri MRP
+title: Pretraži MRP parametre 
 sidebar_position: 1
 ---
 
-Si tratta della finestra di ricerca dei [Parametri MRP](/docs/erp-home/registers/items/create-new-items/create-new-item) degli articoli presenti nel database. Per ciascun articolo viene creata l'anagrafica dei parametri MRP non appena viene inserita la sua anagrafica “principale”, cliccando sul pulsante **Parametri MRP** che si trova nella ribbon bar della form *Anagrafica articoli*.
+Ovo je prozor za pretraživanje [MRP parametara](/docs/erp-home/registers/items/create-new-items/create-new-item) stavki prisutnih u bazi podataka. Za svaku stavku kreiraju se matični podaci MRP parametra čim se unesu njeni "principale", matični podaci klikom na gumb **MRP parametri** koji se nalazi na traci vrpce obrasca  *Matični podaci stavke*.
 
-*Pulsanti specifici*
+*Specifični gumbi*
 
-> **Modifica parametri**: richiama la procedura per modificare i parametri MRP di un articolo precedentemente inserito. Una volta selezionata la riga dell'articolo a cui si vogliono modificare i parametri, cliccando su questo pulsante si entrerà nella finestra di dettaglio e si potrà procedere alla modifica.  
-> **Visualizza parametri**: richiama la procedura per visualizzare i parametri MRP di un articolo precedentemente inserito. Una volta selezionata la riga dell'articolo per cui si vogliono visualizzare i Parametri, cliccando su questo pulsante si aprirà la schermata di dettaglio dove sarà solamente possibile la visualizzazione e non sarà abilitata la modifica di nessun dato.  
-> **Sostituzione informazioni**: apre una finestra di pop-up che permette di decidere quali informazioni relative all'articolo modificare. questo pulsante si abilita solamente quando si vanno a selezionare più articoli (non solo uno) a cui si vogliono cambiare massivamente le stesse informazioni. Nella finestra che si aprirà compariranno tutti i parametri MRP presenti nel tab *Dati Generali* e si potranno vedere le informazioni come sono impostate e modificare solo i dati che serve modificare. Non sarà possibile modificare i dati presenti nel tab *Magazzini* in modo massivo.
+> **Izmijeni parametre**: poziva postupak za izmjenu MRP parametara prethodno umetnute stavke. Nakon što ste odabrali red artikla za koji želite izmijeniti parametre, klikom na ovaj gumb ulazite u detaljni prozor i možete nastaviti s izmjenom.    
+> **Prikaži parametare**: poziva postupak za pregled MRP parametara prethodno unesene stavke. Nakon što ste odabrali redak artikla za koji želite pregledati parametre, klikom na ovaj gumb otvorit će vam se detaljni ekran na kojem će biti moguć samo njegov pregled i neće biti omogućena izmjena bilo kakvih podataka.   
+> **Zamjena informacija**: otvara skočni prozor koji vam omogućuje da odlučite koje informacije koje se odnose na članak želite izmijeniti. ovaj gumb je omogućen samo kada odaberete više stavki (ne samo jednu) za koje želite masivno promijeniti iste informacije. U prozoru koji se otvori pojavit će se svi MRP parametri prisutni na kartici *Opći podaci* i moći ćete vidjeti informacije kako su postavljene i izmijeniti samo podatke koje je potrebno izmijeniti. Neće biti moguće masivno mijenjati podatke u kartici *Skladišta*.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Za sve što nije detaljno opisano u ovom dokumentu o uobičajenom funkcioniranju obrazaca, pogledajte sljedeću poveznicu [Zajedničke funkcije, gumbi i polja](/docs/guide/common).

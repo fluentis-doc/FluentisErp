@@ -1,11 +1,11 @@
 ---
-title: Tab Componenti
-sidebar_label: Tab Componenti
+title: Kartica Komponente
+sidebar_label: Kartica Komponente
 sidebar_position: 1
 ---
 
-:::info Nota
-Una volta aperta la form di dettaglio della *Lista di Distrubuzione*, nella parte superiore sono presenti alcuni parametri standard come *Codice*, *Nome*, *Descrizione*, *Data Crazione*, *Data Ultima Modifica*, *Utente di Creazione*, *Utente di Modifica* e *Lista di Distribuzione Collegata* (quest'ultimo, si riferisce alle liste CRM).
+:::info BILJEŠKA 
+Nakon što se otvori obrazac s detaljima *Distribucijske liste*, u gornjem dijelu nalaze se standardni parametri kao što su *Šifra*, *Naziv*, *Opis*, *Datum kreiranja*, *Datum posljednje izmjene*, *Korisnik kreiranja*, *Korisnik izmjene* i *Povezani popis distribucije* (potonji se odnosi na CRM popisi).
 :::
 
-In questa tab possono essere aggiunti *Componenti* tramite la griglia messa a disposizione. Non c'è nessuna form di help per inserire i valori nelle colonne della griglia.
+ *Komponente* se mogu dodavati ovoj kartici pomoću dobivene mreže. Ne postoji obrazac pomoći za umetanje vrijednosti u stupce mreže. 

@@ -1,8 +1,8 @@
 ---
-title: STRUMENTI
+title: INSTRUMENTI 
 sidebar_position: 1
 ---
 
-Il pannello degli **Strumenti** contiene la lista delle applicazioni che possono essere configurate e gestite all'interno di **Fluentis ERP**.
+Panel **Instrumenti** sadrži popis aplikacija koje se mogu konfigurirati i upravljati unutar **Fluentis ERP-a**.
 
-Quindi abbiamo dei comandi di accesso rapido alla gestione delle risorse dell'applicativo, per fare un esempio alla gestione degli utenti e delle restrizioni, anche se in genere chi configura questi parametri opera solitamente tramite un portale web, il portale **ARM**, specifico per questi scopi.
+Dakle, imamo brze pristupne naredbe za upravljanje resursima aplikacije, kao što je primjerice upravljanje korisnicima i ograničenjima, iako obično oni koji konfiguriraju ove parametre obično rade putem web portala, **ARM** portala, specifičnog za ove svrhe.

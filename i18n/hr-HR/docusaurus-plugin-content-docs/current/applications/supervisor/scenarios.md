@@ -1,39 +1,46 @@
 ---
-title: Scenari
-sidebar_label: Scenari
+title: Scenariji 
+sidebar_label: Scenariji 
 sidebar_position: 3
 ---
 
-Supervisor viene fornito di *Attività* predefinite, che possono essere utilizzate come riferimento per poterne creare di nuove oppure come uno script completo pronto all'utilizzo. Di seguito verrà elencato un elenco di *Attività* a cui sono collegati scenari video che ne spiegano la creazione e l'utilizzo.
+Supervisor dolazi s unaprijed definiranim *Aktivnostima*  koje se mogu koristiti kao referenca za stvaranje novih ili kao potpuna skripta spremna za korištenje. Ispod će biti popis *Aktivnosti* s kojima su povezani video scenariji koji objašnjavaju njihovu izradu i upotrebu.
 
 :::success Video Tutorial
-A questo link puoi trovare il **[video scenario](https://youtu.be/qkj6Q-yATHs)** riferito al task <span style={{ fontFamily: 'Consolas', fontStyle: 'italic' }}>SendEmail</span>.
+Na ovoj poveznici možete pronaći **[video scenarij](https://youtu.be/qkj6Q-yATHs)** vezan uz zadatak <span style={{ fontFamily: 'Consolas', fontStyle: 'italic' }}>SendEmail</span>.
 :::
 
 :::success Video Tutorial
-A questo link puoi trovare il **[video scenario](https://youtu.be/SnR9QeBCWI0)** riferito al task <span style={{ fontFamily: 'Consolas', fontStyle: 'italic' }}>SendEmailWithHTMLBody</span>.
+Na ovoj poveznici možete pronaći **[video scenarij](https://youtu.be/SnR9QeBCWI0)** 
+vezan uz zadatak <span style={{ fontFamily: 'Consolas', fontStyle: 'italic' }}>SendEmailWithHTMLBody</span>.
 :::
 
 :::success Video Tutorial
-A questo link puoi trovare il **[video scenario](https://youtu.be/xVXIFqTbmNo)** riferito al task <span style={{ fontFamily: 'Consolas', fontStyle: 'italic' }}>SendEmailWithQueryParameters</span>.
+Na ovoj poveznici možete pronaći **[video scenarij](https://youtu.be/xVXIFqTbmNo)** 
+vezan uz zadatak <span style={{ fontFamily: 'Consolas', fontStyle: 'italic' }}>SendEmailWithQueryParameters</span>.
 :::
 
 :::success Video Tutorial
-A questo link puoi trovare il **[video scenario](https://youtu.be/7kd7Okv1n8A)** riferito al task <span style={{ fontFamily: 'Consolas', fontStyle: 'italic' }}>SendEmailWithFormattedHTML</span>.
+Na ovoj poveznici možete pronaći **[video scenarij](https://youtu.be/7kd7Okv1n8A)** 
+vezan uz zadatak <span style={{ fontFamily: 'Consolas', fontStyle: 'italic' }}>SendEmailWithFormattedHTML</span>.
 :::
 
 :::success Video Tutorial
-A questo link puoi trovare il **[video scenario](https://youtu.be/zUgKJPp8dZ8)** riferito al task <span style={{ fontFamily: 'Consolas', fontStyle: 'italic' }}>ExecuteQueryOnExternalDatabase</span>.
+Na ovoj poveznici možete pronaći **[video scenarij](https://youtu.be/zUgKJPp8dZ8)** 
+vezan uz zadatak <span style={{ fontFamily: 'Consolas', fontStyle: 'italic' }}>ExecuteQueryOnExternalDatabase</span>.
 :::
 
 :::success Video Tutorial
-A questo link puoi trovare il **[video scenario](https://youtu.be/S2vdHBY8RpQ)** riferito al task <span style={{ fontFamily: 'Consolas', fontStyle: 'italic' }}>ExecuteQueryWithSqlQueryActivity</span>.
+Na ovoj poveznici možete pronaći **[video scenarij](https://youtu.be/S2vdHBY8RpQ)** 
+vezan uz zadatak <span style={{ fontFamily: 'Consolas', fontStyle: 'italic' }}>ExecuteQueryWithSqlQueryActivity</span>.
 :::
 
 :::success Video Tutorial
-A questo link puoi trovare il **[video scenario](https://youtu.be/bxGJYPpfq7Q)** riferito al task <span style={{ fontFamily: 'Consolas', fontStyle: 'italic' }}>ExecuteQueryWithDatasource</span>.
+Na ovoj poveznici možete pronaći **[video scenarij](https://youtu.be/bxGJYPpfq7Q)** 
+vezan uz zadatak <span style={{ fontFamily: 'Consolas', fontStyle: 'italic' }}>ExecuteQueryWithDatasource</span>.
 :::
 
 :::success Video Tutorial
-A questo link puoi trovare il **[video scenario](https://youtu.be/QM7m0aYjI9g)** riferito al task <span style={{ fontFamily: 'Consolas', fontStyle: 'italic' }}>LoopsAndLogic</span>.
+Na ovoj poveznici možete pronaći **[video scenarij](https://youtu.be/QM7m0aYjI9g)** 
+vezan uz zadatak <span style={{ fontFamily: 'Consolas', fontStyle: 'italic' }}>LoopsAndLogic</span>.
 :::

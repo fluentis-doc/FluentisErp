@@ -1,21 +1,21 @@
 ---
-title: Parametri Piani di Carico
+title: Parametri planova utovara 
 sidebar_position: 5
 ---
 
-I Parametri dei Piani di carico si compongono di un solo tab, Generale.
-I flag che permettono la parametrizzazione sono i seguenti.        
+Parametri plana utovara sastoje se od jedne kartice, Općenito. Oznake koje dopuštaju parametriranje su sljedeće.       
 
-**Controlla disponibilità**: questo flag permette di inserire una colonna per visualizzare la disponibilità degli articoli;      
-**Verifica disponibilità**: questo flag permette di verificare l'eventuale disponibilità;
-**Disponibilità obbligatoria**: questo flag impedisce l'evasione di una riga articolo senza disponibilità; si attiva una volta impostato il flag Controlla disponibilità;                  
-**Visualizza disponibilità negativa**: questo flag permette di visualizzare eventuali disponibilità negative; si attiva una volta impostato il flag Controlla disponibilità;     
-**Considera le disponibilità provenienti da:**: è possibile selezionare questi flag se il flag **Controlla disponibilità** è attivo; è considerare la disponibilità proveniente dai diversi moduli;      
-**Crea in automatico lista di prelievo dal piani di carico**: campo obsoleto;          
-**Non usare dimensioni**: questo flag non controlla le dimensioni di articoli e UDC per la comparazione con l'[Automezzo](/docs/configurations/tables/logistics/motorvehicle), evitando blocchi nella spedizione. Senza questo flag, se il volume degli articoli è maggiore del volume dell'automezzo il programma ci farà utilizzare più Automezzi.            
-**Visualizza righe articcoli presenti in piani di carico aperti**: questo flag permette di visualizzare (con un colore impostato nel campo **Colore riga in altro piano di carico aperto**) le righe prese in carico da un altro collega nei piani di carico aperti salvati e non;      
-**Proposta ricerca data consegna**: questo campo imposta, nel filtro di ricerca dei piani di carico, le date di consegna da controllare;       
-**Colore riga disponibile**: in questo campo è possibile inserire il colore con cui visualizzare le righe articolo che hanno disponibilità;       
-**Colore riga non disponibile**: in questo campo è possibile inserire il colore con cui visualizzare le righe articolo che non hanno disponibilità;      
-**Colore riga in altro piano carico**: questo flag colora le righe inserite già in un altro piano di carico salvato;      
-**Colore riga in altro piano carico aperto**: questo flag colora le righe inserite in un altro piano di carico non salvato, quindi magari in uso da un collega.
+**Provjeri dostupnost**: ova zastavica omogućuje umetanje stupca za prikaz dostupnosti artikala;          
+**Provjeri raspoloživost**: ova vam zastavica omogućuje provjeru raspoloživosti;  
+**Obavezna raspoloživost**: ova zastavica sprječava ispunjavanje retka stavke bez dostupnosti; aktivira se nakon što je postavljena zastavica Provjeri dostupnost;                     
+**Pregled negativne raspoloživost**: ova vam zastavica omogućuje pregled negativne dostupnosti; aktivira se nakon što je postavljena zastavica Provjeri dostupnost;    
+**Razmotrite raspoloživosti iz**: ove zastavice možete odabrati ako je zastavica;  
+**Provjeri raspoloživost** aktivna; omogućuje vam da razmotrite dostupnost koja dolazi iz različitih modula;             
+**Automatski kreirajte otpremnu listu iz planova utovara**: zastarjelo polje;           
+**Ne koriste se dimenzije**: ova oznaka ne provjerava dimenzije artikala i utovarne jedinice za usporedbu s [Vozilom](/docs/configurations/tables/logistics/motorvehicle), izbjegavajući blokove u pošiljci. Bez ove oznake, ako je obujam predmeta veći od obujma vozila, program će nas natjerati da koristimo više vozila.              
+**Prikaz linija stavki prisutnih u otvorenim planovima utovara**: ova vam zastavica omogućuje pregled (s **bojom postavljenom u boji retka u drugom polju otvorenog plana utovara**) linija koje je preuzeo drugi kolega u spremljenim i nespremljenim otvorenim planovima opterećenja;        
+**Prijedlog za pretraživanje za datum isporuke**: ovo polje postavlja, u filtru pretraživanja plana opterećenja, datume isporuke koje treba provjeriti, dajući mogućnost odabira između: tekućeg tjedna, od danas nadalje ili bez predloženog datuma;          
+**Dostupna boja crte**: u ovo polje moguće je unijeti boju kojom će se prikazati reci artikala koji imaju dostupnost;        
+**Nije dostupna boja crte**: u ovo polje možete unijeti boju kojom želite prikazati retke stavki koji nisu dostupni;      
+**U drugoj boji crte plana učitavanja**: ova zastavica boji retke koji su već umetnuti u drugi spremljeni plan opterećenja;         
+**U drugoj otvorenoj boji crte za učitavanje**: ova zastavica boji retke umetnute u drugi nespremljeni plan učitavanja, stoga ih možda koristi kolega.  

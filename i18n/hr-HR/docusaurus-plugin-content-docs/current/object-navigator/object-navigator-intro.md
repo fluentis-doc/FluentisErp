@@ -3,6 +3,6 @@ title: Object Navigator
 sidebar_position: 1
 ---
 
-L'**Object Navigator** rappresenta la visualizzazione ad albero delle proprietà dell'oggetto relativo alla form corrente.
+**Object Navigator** predstavlja prikaz stabla svojstava objekta koji se odnose na trenutni obrazac. 
 
-Questa visualizzazione è interattiva e permette all'utente di creare e salvare delle viste personalizzate.
+Ovaj prikaz je interaktivan i omogućuje korisniku stvaranje i spremanje prilagođenih prikaza. 

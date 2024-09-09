@@ -1,22 +1,22 @@
 ---
-title: Panoramica
-sidebar_label: Panoramica
+title: Pregled 
+sidebar_label: Pregled 
 sidebar_position: 0
 ---
 
-*Supervisor* è uno strumento che consente di creare scripts che possono essere eseguiti programmaticamente. In particolare *Supervisor* è composto da diversi componenti - i quali possono essere creati e riutilizzati dall'utente - che sono: 
+*Supervisor* je alat koji vam omogućuje stvaranje skripti koje se mogu programski izvršavati.  Konkretno, *Supervisor* se sastoji od raznih komponenti - koje korisnik može kreirati i ponovno koristiti - a to su:  
 
-- **Attività** (scripts di diverse tipologie) 
+- **Aktivnosti** (skripte različitih vrsta) 
 
-- **Tasks** (una sorta di contenitore che contiene una o più *Attività*)
+- **Zadaci** (neka vrsta spremnika koji sadrži jednu ili više *Aktivnosti*)
 
-- **Eventi** (azioni schedulate)
+- **Događaji** (planirane radnje)
 
-- **Liste di Distribuzione** (liste di membri)
+- **Liste di Distribuzione** (popisi članova)
 
-L'applicazione di *Supervisor* si apre dal menu complementare (posizionato sulla parte destra dell'interfaccia) **Strumenti** > **Fluentis Supervisor**.
+Aplikacija *Supervisor* otvara se iz dopunskog izbornika (koji se nalazi na desnoj strani sučelja)**Alati** > **Fluentis Supervisor**.
 
-:::caution Attenzione
-L'applicazione di Supervisor sarà visibile nel menù complementare *Strumenti*, solo se il menù **Fluentis Universal** sarà selezionato.
+:::caution PAŽNJA
+Aplikacija Supervisor bit će vidljiva u dopunskom izborniku *Alati*, samo ako je odabran izbornik **Fluentis Universal**.
 :::
 

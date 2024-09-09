@@ -1,50 +1,50 @@
 ---
-title: Tipi movimento
+title: Vrste kretanja 
 sidebar_position: 2
 ---
 
-I tipi movimento determinano qual è la funzione abilitata. Di seguito si specifica per ogni tipo movimento la funzione collegata:
+Vrste kretanja određuju koja je značajka omogućena. Povezana funkcija navedena je u nastavku za svaku vrstu kretanja: 
 
-**Carico**: funzione di WMS Mobile che permette di creare una registrazione di magazzino di carico;
+**Utovar**: WMS Mobile funkcija koja vam omogućuje stvaranje zapisa o utovaru skladišta;
 
-**Scarico**: funzione di WMS Mobile che permette di creare una registrazione di magazzino di scarico;
+**Istovar**: WMS Mobile funkcija koja vam omogućuje stvaranje skladišnog zapisa o istovaru;
 
-**Versamento Produzione**: funzione di WMS Mobile che permette di dichiarare la produzione di un prodotto finito o semilavorato;
+**Proizvodni depozit**: WMS Mobile funkcija koja vam omogućuje prijavu proizvodnje gotovog ili poluproizvoda;
 
-**Prelievo produzione**: funzione di WMS Mobile che permette di scaricare da magazzino i materiali necessari per la produzione;
+**Komisioniranje proizvodnje**: WMS Mobile funkcija koja omogućuje preuzimanje materijala potrebnih za proizvodnju sa skladišta;
 
-**Reso Produzione**: funzione di WMS Mobile che permette di dichiarare i resi di produzione con una registrazione di carico a magazzino;
+**Povrati iz proizvodnje**: WMS Mobile funkcija koja vam omogućuje deklariranje povrata iz proizvodnje s registracijom utovara u skladište;
 
-**Rettifica di carico**: funzione di WMS Mobile che permette di effettuare una rettifica di magazzino positiva;
+**Prilagodba opterećenja**: WMS Mobile funkcija koja vam omogućuje da izvršite pozitivnu prilagodbu skladišta;
 
-**Rettifica di scarico**: funzione di WMS Mobile che permette di effettuare una rettifica di magazzino negativa;
+**Prilagodba istovara**: WMS Mobile funkcija koja vam omogućuje da izvršite negativnu prilagodbu zaliha;
 
-**Carico Pallet**: funzione di WMS Mobile e di ERP che permette di effettuare il carico a magazzino dell'UDC;
+**Utovar paleta**: WMS Mobile i ERP funkcija koja omogućuje utovar transportne jedinice u skladište;
 
-**Scarico Pallet**: funzione di WMS Mobile e di ERP che permette di effettuare lo scarico da magazzino dell'UDC;
+**Istovar paleta**: WMS Mobile i ERP funkcija koja omogućuje istovar transportne jedinice iz skladišta;
 
-**Rientri**: funzione di WMS Mobile per la gestione del rientro materiale;
+**Povrati**: WMS Mobile funkcija za upravljanje povratima materijala;
 
-**Conferma trasferimento**: funzione di WMS Mobile per la conferma dei Picking di trasferimento;
+**Potvrdi prebacivanje**: WMS Mobile funkcija za potvrdu prijenosa preuzimanja;
 
-**Assegna ubicazione**: funzione di WMS Mobile che scarica l'articolo da un'ubicazione di default e carica l'articolo nell'ubicazione desiderata;
+**Dodjeli lokaciju**: WMS Mobile funkcija koja preuzima stavku sa zadane lokacije i učitava stavku na željenu lokaciju;
 
-**Spostamento articoli**: funzione di WMS Mobile che permette di spostare gli articoli da un'ubicazione ad un'altra. La causale di magazzino da agganciare dovrà essere di scarico con contropartita;
+**Premještanje stavki**: WMS Mobile funkcija koja vam omogućuje premještanje stavki s jedne lokacije na drugu. Skladišni razlog koji se prilaže mora biti istovar uz naknadu;
 
-**Acquisto**: funzione di WMS Mobile per creare il DDT di acquisto a fronte di un ordine cliente e il relativo carico a magazzino degli articoli;
+**Kupnja**: WMS Mobile funkcija za kreiranje kupovne otpremnice/primke prema narudžbi kupca i povezanog utovara artikala u skladište;
 
-**Sposta lotto non buono**: funzione di WMS Mobile che permette lo spostamento di lotti scaduti;
+**Premjesti loš lot**: WMS Mobile funkcija koja omogućuje premještanje isteklih lotova;
 
-**Accettazione materiali gestiti a lotti**: funzione di WMS Mobile per creare il DDT di acquisto a fronte di un ordine cliente e il relativo carico a magazzino degli articoli gestiti a lotti;
+**Prihvaćanje materijala koji se upravlja u lotovima**: WMS Mobile funkcija za kreiranje otpremnicu prema narudžbi kupca i povezani utovar artikala kojima se upravlja u serijama u skladište;
 
-**Togli da UDC**: funzione di WMS Mobil che permette di togliere articoli da un UDC precedentemente creata;
+**Ukloni iz transportne jedinice**: WMS Mobil funkcija koja omogućuje uklanjanje članaka iz prethodno kreirane transportne jedinice;
 
-**Vendite**: funzione di WMS Mobile per creare il DDT di vendita a fronte di un ordine cliente o manuale e il relativo scarico da magazzino degli articoli;
+**Prodaja**: WMS Mobile funkcija za stvaranje otpremnice prema narudžbi kupca ili ručnoj narudžbi i povezano istovaranje artikala iz skladišta;
 
-**Picking**: funzione di WMS Mobile per creare un nuovo picking o per confermarne uno creato precedentemente;
+**Picking**: funkcija WMS Mobile za kreiranje novog komisioniranja ili potvrdu prethodno kreiranog; 
 
-**Inventario UDC**: funzione di WMS Mobile per la creazione di un inventario UDC;
+**Inventar transportne jedinice**: WMS Mobile značajka za stvaranje transportne jedinice inventara;
 
-**Trasferimento UDC**: funzione di WMS Mobile per la creazione o la conferma delle liste di trasferimento UDC;
+**Prijenos transportne jedinice**: značajka WMS Mobile za stvaranje ili potvrđivanje popisa prijenosa transportne jedinice;
 
-**Carico UDC da creazione UDC**: funzione di WMS Mobile e ERP per la creazione delle UDC e relativo carico a magazzino.
+**Utovari Transportnu jedinicu iz kreiranja transportne jedinice**: WMS Mobile i ERP funkcija za kreiranje transportnih jedinica i povezano učitavanje u skladište.

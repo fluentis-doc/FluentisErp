@@ -1,13 +1,13 @@
 ---
-title: Creazione Gruppi
-sidebar_label: Creazione Gruppi
+title: Stvaranje grupe 
+sidebar_label: Stvaranje grupe 
 sidebar_position: 2
 ---
 
-Per creare un nuovo gruppo di Attività, Tasks o Eventi, aprire la form di gestione dei Gruppi da **Configurazione** > **Tabelle** > **Supervisor** > **Gruppi Attività/Tasks/Eventi**.
+Za stvaranje nove grupe Aktivnosti, Zadataka ili Događaja otvorite obrazac za upravljanje Grupom iz **Konfiguracija** > **Tablice** > **Supervisor** > **Grupe aktivnosti/zadataka/događaja**.
 
-Alcune delle funzionalità all'interno della form si riferiscono ad un utilizzo standard. Per qualsiasi dettaglio sull'utilizzo di questa form non esplicitato qui, riferirsi a questo [articolo](/docs/guide/common).
+Neke od značajki unutar obrasca odnose se na standardnu ​​upotrebu. Za sve detalje o korištenju ovog obrasca koji nisu ovdje objašnjeni, pogledajte ovaj [artikl](/docs/guide/common).
 
-:::success Video Tutorial
-A questo link potete trovare il **[video](https://youtu.be/0uN-0p1vQXw)** che illustra la sopracitata procedura.
+:::success VIDEO TUTORIJALI 
+Na ovoj poveznici možete pronaći **[video](https://youtu.be/0uN-0p1vQXw)** koji prikazuje navedeni postupak. 
 :::

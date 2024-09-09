@@ -3,10 +3,10 @@ title: ARM
 sidebar_position: 1
 ---
 
-Application Resource Manager, di seguito definita anche con l'acronimo **ARM**, consente la configurazione delle applicazioni e dei parametri di accesso delle applicazioni a livello database ed utente.
+Application Resource Manager, također poznat i pod akronimom **ARM**, omogućuje konfiguraciju aplikacija i parametara pristupa aplikacijama na razini baze podataka i korisnika.
 
-Definisce i menù applicativi standard e personalizzati per ruoli/utenti. Stabilisce inoltre restrizioni, diritti di accesso ad ogni singola procedura e funzionalità dell'applicazione.
+Definira standardne i prilagođene aplikativne izbornike za uloge/korisnike. Također postavlja ograničenja, prava pristupa svakom pojedinom postupku i funkciji aplikacije. 
 
-Per quanto concerne lo sviluppo di applicazioni, ARM è lo strumento che permette la consultazione, gestione e creazione degli oggetti business utilizzabili e utilizzati dalle applicazioni.
+Što se tiče razvoja aplikacija, ARM je alat koji omogućuje pregled, upravljanje i stvaranje poslovnih objekata koji se koriste u aplikacijama. 
 
-Per più dettagli leggere anche la documentazione dell'applicazione [ARM](https://docs.fluentis.com/Arm/).
+Za više detalja pogledajte dokumentaciju aplikacije [ARM](https://docs.fluentis.com/Arm/).

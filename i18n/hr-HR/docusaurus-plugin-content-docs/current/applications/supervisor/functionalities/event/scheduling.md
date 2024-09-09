@@ -1,27 +1,27 @@
 ---
-title: Schedulazione
-sidebar_label: Schedulazione
+title: Vremensko planiranje 
+sidebar_label: Vremensko planiranje 
 sidebar_position: 2
 ---
 
-All'interno della tab *Schedulazione* ci sono i pulsanti **Aggiungi/ Modifica/Cancella Schedulazione**.
+Unutar kartice *Raspored* nalaze se gumbi **Dodaj/Uredi/Otkaži planiranje**.
 
-Con il pulsante *Aggiungi* o *Modifica Schedulazione*, l'app aprirà una finestra di configurazione della schedulazione, contenente i parametri necessari. Al suo interno si potranno scegliere quattro tipi di schedulazione:
+Pomoću gumba *Dodaj* ili *Uredi Raspored*, aplikacija će otvoriti prozor konfiguracije rasporeda koji sadrži potrebne parametre. Unutar njega možete odabrati četiri vrste rasporeda:
 
-:::info Info
-Tutte le date sono comprensive di *data* e *ora*, tutti i tipi di schedulazione hanno un parametro *Data Inizio*.
+:::info INFO
+Svi datumi uključuju  *datum* i *vrijeme*, sve vrste rasporeda imaju parametar *Datum početka*.
 :::
 
-**Una volta**
-> Questa opzione è utilizzata per operazioni non durature/ripetitive.
+**Jednom**
+> Ova se opcija koristi za netrajne/ponavljajuće operacije. 
 
-**Giornaliero**
-> Questa opzione ha i parametri *Ripeti ogni (n) giorno/i*, *Ripeti ogni (n) (ore/minuti/secondi)* e *Da/A Ora*.
+**Dnevno**
+> Ova opcija ima parametre *Ponovi svaki (b) dan/i*, *Ponovi svaki (b) (sati/minute/sekunde)* i *Od/Do vremena*.
 
-**Settimanale**
-> Questa opzione ha il parametro *Ripeti ogni (n) settimana/e* e tutti i giorni della settimana disponibili come flag (la schedulazione eseguirà il task dei flag selezionati).
+**Tjedni**
+> Ova opcija ima parametar *Ponovi svakih (b) tjedan/e* i sve dane u tjednu dostupne kao oznake (planer će izvršiti zadatak odabranih oznaka). 
 
-**Mensile**
-> Questa opzione ha quattro selettori da cui si può scegliere: *Mesi*, *Giorni(n)*, *Giorni della settimana* e *Serie di giorni della settimana*.   
+**Mjesečno**
+> Ova opcija ima četiri birača između kojih možete birati: *Mjeseci*, *Dani (b)*, *Dani u tjednu* i *Niz dana u tjednu*.   
 
-E alcune *impostazioni avanzate* che includono i parametri di schedulazione *data fine* e *abilitato* (quest'ultimo è un flag).
+I neke *napredne postavke* koje uključuju *datum završetka* i *omogućene* parametre zakazivanja. (ovo je posljednja oznaka).

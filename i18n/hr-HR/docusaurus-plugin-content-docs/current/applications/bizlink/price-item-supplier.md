@@ -1,14 +1,14 @@
 ---
-title: Importazione Prezzi e Articoli fornitore
+title: Uvoz cijena i artikala dobavljača
 sidebar_position: 5
 ---
 
-Il foglio di importazione si apre dal percorso Applications > BizLink > Importazioni On Demand > Anagrafiche > Importazione Prezzi e Articoli Fornitore.         
-In questo foglio molto simile ad Excel è presente una tabella nella quale è possibile inserire i dati che saranno importati.
-Le colonne in rosso sono quelle obbligatorie: quindi è necessario inserire il **Codice Articolo**, la relativa **Descrizione**, il **Prezzo** e la **Quantità per Prezzo**. Gli altri dati sono liberamente compilabili dall’utente in base alle proprie necessità e comprendono svariate caratteristiche dell’articolo: Unità di misura, sconti, eccetera.
-Passando alla seconda pagina del foglio di importazione, chiamata **BizLink Parameters**, è possibile inserire i parametri che la procedura deve utilizzare. In particolare, per questa importazione è necessario indicare la **Ragione Sociale** e il **Nomignolo** del Fornitore per il quale si importano i nuovi prezzi, ed un **Inizio Validità**, data dalla quale saranno applicati i cambiamenti. È possibile specificare inoltre una data per la Fine validità, non obbligatoria.
+List za uvoz otvara se putem puta Applications > BizLink > Uvozi On Demand > Šifarnici > Uvoz cijena i artikala dobavljača.         
+Na ovom listu, vrlo sličnom Excelu, nalazi se tablica u koju možete unijeti podatke koji će biti uvezeni.  
+Kolone u crvenoj boji su obavezne: stoga je potrebno unijeti **Šifru Artikla**, pripadajuću  **Opis**, **Cijenu** i **Količinu po Cijeni**. Ostali podaci mogu se slobodno popunjavati prema potrebama korisnika i obuhvaćaju različite karakteristike artikla: Jedinicu mjere, popuste, itd.
+Prelaskom na drugu stranicu uvoznog lista, nazvanu **BizLink Parameters**,moguće je unijeti parametre koje procedura treba koristiti. Konkretno, za ovaj uvoz potrebno je navesti **Naziv Tvrtke** i **Nadimak** dobavljača za kojeg se uvoze nove cijene, te **Početak Važenja**, datum od kojeg će promjene biti primijenjene. Također je moguće navesti datum za Kraj važenja, koji nije obavezan.
 
-Dalla ribbon bar è possibile effettuare diverse operazioni per facilitare l’usabilità del foglio. Per esempio, è possibile aprire un foglio precedentemente salvato con il pulsante **Open**, è possibile salvare il documento in corso con il pulsante **Save**, è possibile visualizzare l’anteprima di stampa, eccetera. Queste operazioni fanno parte della tab “File”. Infatti, ancora più sopra della ribbon bar sono presenti diverse tab che a loro volta permettono all’utente svariate operazioni, che non verranno trattate in questo video. L’unica tab che a noi interessa, oltre a “File”, in questo corso è “Importazione”.
-Cliccando infatti il pulsante **Importazione** del tab "Importazione", i dati inseriti nel foglio verranno importati. Se l’operazione va a buon fine, uscirà il messaggio “Importazione completata”, in caso contrario sarà possibile consultare gli errori nei **Documenti in Entrata di BizLink**.
+Iz ribbon bara moguće je izvršiti različite operacije za olakšavanje korištenja lista. Na primjer, moguće je otvoriti prethodno spremljeni list pomoću gumba **Open**, spremiti trenutni dokument pomoću gumba  **Save**, pregledati prikaz za ispis, itd. Te operacije su dio kartice “File”. Također, iznad ribbon bara nalaze se različiti tabovi koji korisniku omogućuju razne operacije, koje neće biti obrađene u ovom videu. Jedina kartica koji nas zanima, osim “File”, u ovom tečaju je “Uvoz”.
+Klikom na gumb **Uvoz** na kartici "Uvoz", podaci uneseni u list bit će uvezeni. Ako operacija bude uspješna, prikazat će se poruka “Uvoz dovršen”, u suprotnom će biti moguće pregledati greške u **Dokumentima u Dolasku u BizLink**.
 
-Possiamo chiudere questo foglio, una volta importato, e possiamo spostarci quindi nelle procedure dei listini, accessibili da Acquisti > Procedure Listini Fornitori > [Prezzi Fornitore](/docs/purchase/purchase-price-lists/procedures/supplier-price).
+Možemo zatvoriti ovaj list nakon uvoza i prijeći na postupke s cjenicima, dostupne putem Nabava > Procedure Cjenici Dobavljača > [Cijene Dobavljača](/docs/purchase/purchase-price-lists/procedures/supplier-price).

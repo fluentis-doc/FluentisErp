@@ -1,65 +1,71 @@
 ---
-title: Parametri Ordini di Produzione
+title: Parametri proizvodnog naloga 
 sidebar_position: 1
 ---
 
-La form si apre tramite il percorso **Parametri > Produzione > Parametri Ordini di Produzione**. Attraverso questa finestra vengono settati tutti i parametri che riguardano la movimentazione degli articoli tramite le procedure legate all'area produzione, nonché alcuni parametri che permettono di decidere le modalità di gestione di alcune parti dell'area produzione.
+Obrazac se otvara preko putanje **Parametri > Proizvodnja > Parametri proizvodnog naloga**. Kroz ovaj prozor se postavljaju svi parametri koji se tiču ​​kretanja artikala kroz procedure vezane za proizvodni prostor, kao i neki parametri koji vam omogućuju da odlučite kako upravljati nekim dijelovima proizvodnog prostora.  
 
-### Generale
+### Općenito 
 
-**Gestione automatica dei lotti e dei serial number**: se attivo, propone automaticamente i lotti e/o i numeri di serie dei materiali che vengono utilizzati nel corso della produzione, direttamente all'interno delle apposite griglie poste in relazione alla griglia dei materiali utilizzati della segnalazione di produzione. Diversamente, l'utente dovrà impostare manualmente sia i lotti, sia i numeri di serie degli articoli utilizzati che abbiano questo tipo di gestione; ricordiamo che la gestione a lotti o SN viene impostata all'interno dell'*Anagrafica articolo* nel tab [Lotti e SN](/docs/erp-home/registers/items/create-new-items/item-registry/lots-and-serial-number) selezionando il tipo di gestione desiderata.
+**Automatsko upravljanje lotovima i serijskim brojevima**: ako je aktivno, automatski predlaže lotove i/ili serijske brojeve materijala koji se koriste tijekom proizvodnje, izravno unutar odgovarajućih rešetki postavljenih u odnosu na rešetku materijala korištenih u proizvodnji izvješća o proizvodnji . U suprotnom, korisnik će morati ručno postaviti i serije i serijske brojeve korištenih artikala koji imaju ovu vrstu upravljanja; Podsjećamo vas da se upravljanje serijama ili SB postavlja unutar *Šifarnik artikla* na kartici [Lotovi i SB](/docs/erp-home/registers/items/create-new-items/item-registry/lots-and-serial-number) odabirom željene vrste upravljanja.
 
-**Determinazione tempi in automatico nelle segnalazioni**: se attivo, calcola automaticamente il tempo macchina e il tempo operaio in base agli orari delle segnalazioni. Diversamente, l'utente dovrà impostare manualmente i detti tempi sulla riga della segnalazione di produzione; 
+**Upravljanje duplom mjernom jedinicom**: ako je aktivno, omogućuje korisniku upravljanje dvostrukom mjernom jedinicom unutar izvješća o proizvodnji, dakle i za proizvedene artikle i za korištene materijale;  
 
-**Gestione doppia unità di misura**: se attivo, permette all'utente di gestire la doppia unità di misura all'interno delle segnalazioni di produzione, quindi sia per gli articoli prodotti sia per i materiali utilizzati;
+**Podijeli nalog ako lot materijala nije dostatan**: ako je aktivna, omogućuje korisniku da odluči da je serija utovarena u skladište otpada identična proizvedenoj seriji (u slučaju otpada gotovog proizvoda, dakle u slučaju prva od 2 zastavice) ili na šaržu koja je korištena (u slučaju materijalnog otpada, dakle u slučaju druge od 2 zastavice); 
 
-**Proposta automatica U.M. alternativa**: se attivo, propone automaticamente l'unità di misura alternativa impostata per l'articolo all'interno della segnalazione di produzione. Solitamente, se viene attivato il flag **Gestione doppia unità di misura**, si attiva per comodità anche questo flag che diventa editabile solamente se si è attivato il flag **Gestione doppia unità di misura**;
+**Podijeli nalog ako lot materijala nije dostatan**: ako je aktivna, omogućuje korisniku da osigura da postupak *Puštanja proizvodnog naloga* provjerava jesu li količine materijala za istovar automatski (dakle, samo u slučaju automatskog ili ručnog komisioniranja, ali s WIP upravljanjem ) su dovoljne u skladištu iz kojeg se moraju preuzeti; ako nisu, postupak dijeli proizvodni nalog na 2 različite narudžbe koje će imati isti broj/godinu, ali različitu seriju (prva će imati seriju 0, druga seriju 1; prva će biti ona za koju su prisutni materijali ima dovoljno na zalihama);
 
-**Stesso lotto per scarti articoli/scarti materiali**: se attivo, permette all'utente di decidere che il lotto caricato nel magazzino scarti sia identico al lotto che è stato prodotto (nel caso di scarto del prodotto finito, dunque nel caso del primo dei 2 flag) oppure al lotto che è stato utilizzato (nel caso di scarto del materiale, dunque nel caso del secondo dei 2 flag);
+**Promijeni podnalog kod promjene datuma proizvodnog naloga**: ako je aktivan, omogućuje korisniku da osigura da se, kada se promijeni datum završetka narudžbe za proizvodnju, automatski promijeni i datum završetka narudžbe, pod uvjetom da je artikl obuhvaćen proizvodnjom nalog je isti objekt kao proizvodni nalog; stoga proizvodni nalog mora biti razine 0; 
 
-**Divisione ordine se i lotti materiali non sono sufficienti**: se attivo, permette all'utente di fare in modo che la procedura di *Rilascio ordini di produzione* controlli se le quantità di materiale da scaricare automaticamente (quindi solo in caso di tipo prelievo automatico o manuale ma con gestione WIP) siano sufficienti nel magazzino da cui devono essere prelevate; se non lo sono, la procedura divide l'ordine di produzione in 2 ordini diversi che avranno lo stesso numero/anno ma lotto diverso (il primo avrà il lotto 0, il secondo il lotto 1; il primo sarà quello per cui i materiali presenti a magazzino sono sufficienti);
+**Izračunaj troškove proizvodnje za idući korak**: ako je aktivan, omogućuje korisniku da osigura da se, kako se bilježi napredak proizvodnje, trošak registracije zaliha s vremena na vrijeme povećava za stvarni trošak izračunat na temelju stvarnog vremena prijavljenog u izvješćima pomnoženog s trošak po satu stroja i/ili grupe rada, dakle prema trošku po satu korištenog radnog centra; 
 
-**Cambia data commessa su cambio data ordine di produzione**: se attivo, permette all'utente di fare in modo che al cambio della data fine dell'ordine di produzione venga modificata automaticamente anche la data fine della commessa, sempre che l'articolo oggetto dell'ordine di produzione sia lo stesso oggetto della commessa di produzione; quindi l'ordine di produzione deve essere di livello 0;
+**Ispis radnih listova za pokrenute narudžbe**: to je zadana postavka koja je postavljena na relevantnom obrascu za pokretanje ispisa i kada se narudžbe pokrenu, narudžbe se automatski ispisuju; 
 
-**Associa lotto per lista prelievo**: se attivo, questo flag indica che quando si crea una lista di prelievo tramite la relativa procedura, per i materiali gestiti a lotti il sistema va a scegliere i materiali che sono da prelevare per quel/quegli ordini di produzione che ho selezionato; se non viene attivato vuol dire che l'utente dovrà andare a dichiarare manualmente quali sono i lotti che sono stati prelevati;
+**Automatsko određivanje vremena u izvješćima**: ako je aktivno, automatski izračunava vrijeme stroja i vrijeme radnika na temelju vremena izvješća. U suprotnom, korisnik će morati ručno postaviti ta vremena na proizvodnoj liniji za izvješćivanje; 
 
-**Calcolo costo produzione per avanzamenti**: se attivo, permette all'utente di fare in modo che man mano che si registrano gli avanzamenti di produzione il costo della registrazione di magazzino venga incrementato di volta in volta del costo effettivo calcolato in base al tempo effettivo dichiarato nella segnalazione moltiplicato per il costo orario di macchina e/o gruppo manodopera, quindi per il costo orario del centro di lavoro utilizzato;
+**Automatski prijedlog alternativne J.M.**: ako je aktivna, automatski predlaže alternativnu mjernu jedinicu postavljenu za stavku u izvješću o proizvodnji. Obično, ako je aktivirana zastavica **Upravljanje duplom mjernim jedinicama**, ova je zastavica radi praktičnosti također aktivirana i može se uređivati ​​samo ako je aktivirana zastavica **Upravljanje duplom mjernim jedinicama**; 
 
-**Aggiorna materiali utilizzati nell’ordine di produzione**: se attivo, permette di inserire gli articoli con le relative quantità scaricate sugli ordini di produzione quando faccio degli scarichi nelle segnalazioni non previsti nell’ordine di produzione stesso;
+**Isti lot za materijalni otpad**: ako je omogućeno, odbijeni materijali zadržavaju istu seriju kao i potrošeni materijali; 
 
-**Stampa Fogli di lavoro per Ordini Lanciati**: è un default che viene impostato sulla relativa form di lancio di stampa e quando viene fatto il lancio degli ordini escono in automatico la stampa degli ordini;
+**Automatsko snimanje izvješća**: ako je aktivna, ova zastavica označava da se automatski bilježi čim uđem u izvješće; 
 
-**Registrazione automatica segnalazioni**: se attivo, questo flag indica che appena inserisco la segnalazione questa viene anche registrata automaticamente;
+**Poveži partiju s otpremnom listom**: ako je aktivna, ova zastavica označava da kada je otpremna lista stvorena korištenjem odgovarajućeg postupka, za materijale kojima se upravlja u serijama, sustav odabire materijale koji će se odkupiti za proizvodne naloge koje sam odabrao; ako nije aktiviran to znači da će korisnik morati ručno deklarirati koje su serije prikupljene; 
 
-Ci sono infine altre quattro sezioni: **Fogli di lavoro Gestiti per**, **Periodo Analisi**, **Valorizzazione materiali a costo**, **Proposta sequenza fase**.
+**Ažuriranje materijala korištenih u proizvodnom nalogu**: ako je aktivno, kada se količina navedena u proizvodnoj deklaraciji promijeni, prikazat će se poruka s pitanjem treba li ili ne ponovno izračunati količine korištenih materijala; ako nije aktivan, ponovni izračun materijala događa se automatski;
 
-**Fogli di lavoro gestiti per**: la sezione consente, tramite l'attivazione di uno dei radio button, di scegliere il tipo di raggruppamento da utilizzare durante la stampa del foglio di lavoro (che contiene i parametri che indicano come deve essere prodotto quel materiale). Si tratta comunque di una proposta, che può essere poi modificata all'interno della maschera di stampa del foglio di lavoro stesso;
+**Omogući kontrolu u MES-u**: ako je aktivan, omogućuje kontrolu prisutnosti unutar Fluentis MES-a; 
 
-**Periodo di Analisi**: la sezione consente, tramite l'attivazione di uno dei radio button, di scegliere il periodo di filtraggio degli ordini di produzione che dovranno essere visualizzati nella finestra della stampa del foglio di lavoro (settimanale, giornaliero o ogni X giorni);
+**Prikaži verziju po komponenti u sastavnici**: ako je aktivno, omogućuje polje verzije na kartici komponente u sastavnici. 
 
-**Valorizzazione materiali a costo**: la sezione consente, tramite l'attivazione di uno dei radio button, di scegliere il tipo di costo per la valorizzazione dei materiali (costo ultimo/medio alla data del versamento ovvero della mia segnalazione di produzione o il costo standard). Inoltre, è possibile, selezionando i flag *Lotti* e/o *Commessa di produzione*, andare a proporre come costo del materiale il costo ultimo/Medio/standard per il relativo lotto e/o commessa di produzione in base ai flag attivati.    
+Konačno, postoje još četiri odjeljka: **Lista posla upravljana za, Period analize, Vrednovanje materijala po cijeni, Sekvenca faze prijedloga**. 
 
-**Proposta sequenza fase**: la sezione consente di scegliere, durante la creazione di un ciclo di lavoro, il numero di sequenza della fase che viene proposto, che può essere preso dal numero di sequenza della fase standard oppure come progressivo dell’ordine di inserimento, indicando anche il valore di step.
+**Lista posla upravljana za**: odjeljak omogućuje, aktiviranjem jednog od radio gumba, odabir vrste grupiranja za ispis radnog lista (koji sadrži parametre koji pokazuju kako taj materijal mora biti proizveden). Međutim, to je prijedlog, koji se zatim može modificirati unutar ispisne maske samog radnog lista; 
 
-### Magazzini
+**Period analize**: odjeljak omogućuje, aktiviranjem jednog od radio gumba, odabir razdoblja filtriranja proizvodnih naloga koji moraju biti prikazani u prozoru za ispis radnog lista (tjedno, dnevno ili svakih X dana); 
 
-La form è dedicata all'inserimento dei magazzini  e delle relative causali che regolano le movimentazioni degli articoli tramite le procedure legate alla produzione; la stessa schermata viene riproposta nei *Parametri MRP* dell'articolo nel tab [Magazzini](/docs/configurations/parameters/production/mrp-parameters/search-mrp-parameters), con la differenza che i magazzini impostati nei *Parametri di produzione* sono considerati dati generali validi di default per gli articoli; se si vanno ad impostare per un articolo in particolare dei magazzini diversi nei *Parametri MRP* dell' articolo, il sistema andrà a dare <u>priorità ai parametri</u> che trova settati in quest'ultima finestra per i carichi e scarichi dei materiali legati alla produzione di questo articolo.
+**Vrednovanje materijala po cijeni**: odjeljak omogućuje, aktiviranjem jednog od radio gumba, odabir vrste troška za valorizaciju materijala (zadnji/prosječni trošak na dan plaćanja ili mog izvještaja o proizvodnji ili standardni trošak) . Nadalje, moguće je, odabirom oznaka *Lotovi i/ili Proizvodnog naloga*, predložiti kao trošak materijala konačni/prosječni/standardni trošak za odgovarajuću seriju i/ili proizvodni nalog na temelju aktiviranih oznaka.
 
-In questo tab quindi, si potranno impostare i magazzini relativi alle *Materie Prime*, ai *Semilavorati*, ai *Prodotti finiti* e ad eventuali *Scarti* con le relative causali di carico e scarico.
+**Sekvenca faze prijedloga**: odjeljak vam omogućuje da odaberete, tijekom stvaranja radnog ciklusa, redni broj predložene faze, koji se može uzeti iz rednog broja standardne faze ili kao progresivni broj naloga za umetanje , označavajući i vrijednost koraka.
 
-Per poter impostare uno di quest magazzini sarà sufficiente selezionare tramite le relative combo box il magazzino e le causali (precodificati nelle rispettive tabelle *Magazzini* e *Causali*) che si vogliono impostare.
+### Skladišta 
 
-Oltre a questi magazzini principali vi sono i magazzini W.I.P. (gestione non molto utilizzata) che si attivano selezionando la voce W.I.P. e procedendo alla selezione all'interno della combo box dei magazzini e delle causali come viene fatto per gli altri magazzini.
+Obrazac je posvećen umetanju skladišta i povezanih razloga koji reguliraju kretanje artikala kroz proizvodne postupke; isti ekran ponovno se prikazuje u *MRP parametrima* artikla u kartici [Skladišta](/docs/configurations/parameters/production/mrp-parameters/search-mrp-parameters), s razlikom da se skladišta postavljena u *Parametrima proizvodnje* smatraju općim podacima koji prema zadanim postavkama vrijede za artikle; ako su različita skladišta postavljena za određenu stavku u *MRP parametrima* stavke, sustav će dati <u>prioritet parametrima</u> koje nađe postavljenima u ovom zadnjem prozoru za utovar i istovar materijala povezanih s proizvodnjom ove stavke.  
 
-Per magazzini *W.I.P.* (Work in Progress) si intendono dei magazzini di transizione, in cui la merce transita nel momento in cui l'ordine di produzione del prodotto finito o del semilavorato viene rilasciato. Quando vengono settati questi magazzini il tipo di prelievo del materiale deve essere *Manuale*, altrimenti se fosse un tipo di prelievo *Automatico* lo scarico dei materiali avverrebbe in automatico nel momento del rilascio dell'ordine di produzione. Nel caso dei magazzini W.I.P. il materiale al momento del rilascio viene quindi spostato in questi magazzini e viene scaricato durante la segnalazione di produzione dell'ultima fase di lavorazione dell'articolo dell'ordine di produzione oppure durante la fase di lavorazione a cui il materiale è associato.
+Stoga u ovoj kartici možete postaviti skladišta koja se odnose na *Sirovine*,*Poluproizvode*, *Gotove proizvode* i bilo koji *Otpad* s pripadajućim razlozima za utovar i istovar.
 
-Diversamente, se il tipo di prelievo del materiale è *Con Lista*, allora mentre lo spostamento del materiale al magazzino W.I.P. avviene nello stesso modo rispetto al tipo di prelievo manuale, lo scarico dal W.I.P. avviene tramite la procedura della Lista di prelievo.     
+Da biste mogli postaviti jedno od ovih skladišta, jednostavno odaberite skladište i razloge (unaprijed kodirane u odgovarajućim tablicama *Skladišta* i *Razlozi*) koje želite postaviti pomoću relevantnih kombiniranih okvira. 
 
-Nello specifico, i magazzini e le causali inserite nella sezione *W.I.P.* vengono impiegati nei movimenti di carico e scarico delle segnalazioni di tutte le fasi di un ciclo di lavoro tranne che per l'ultima fase.     
-Nel caso dell'ultima fase vengono usate magazzini e causali della sezione *Prodotti finiti* se l'ordine di produzione è di livello 1 (quindi relativo al prodotto finito), oppure vengono usate quelle della sezione *Semilavorati* se l'ordine di produzione non è di livello 1 (quindi è un semilavorato) e il flag *W.I.P.* è disabilitato; altrimenti se il flag *W.I.P.* è attivo e l'ordine di produzione non è di livello 1 vengono usate quelle della sezione *Semilavorati W.I.P.*     
+Pored ovih glavnih skladišta postoje i skladišta W.I.P. (upravljanje nije široko korišteno) koje se aktiviraju odabirom stavke W.I.P. i nastavak odabira unutar kombiniranog okvira skladišta i razloga kao što je učinjeno za druga skladišta. 
 
-:::note Nota
-Quando viene attivato il flag *W.I.P.* nei *Parametri ordini produzione*, automaticamente nella creazione degli ordini di conto lavoro (dal *Rilascio ordini pianificati* o direttamente dall'ordine di produzione), vengono considerate per i materiali da inviare al terzista il magazzino e la causale presenti nei  [Parametri conto lavoro](/docs/configurations/parameters/production/subcontractor-parameters) alla sezione *Consegne materiali a terzisti W.I.P.*; quindi in questo caso i materiali da inviare ai terzisti saranno prelevati direttamente dal magazzino *W.I.P.*    
+Za skladišta *W.I.P.* (Work in Progress) označava prijelazna skladišta, u kojima roba prolazi kada se pusti proizvodni nalog za gotov proizvod ili poluproizvod. Kada su ta skladišta postavljena, tip preuzimanja materijala mora biti *Ručni*, inače, ako je tip *Automatskog* preuzimanja, istovar materijala bi se dogodio automatski kada se oslobodi proizvodni nalog. U slučaju skladišta W.I.P nakon otpuštanja, materijal se zatim premješta u ta skladišta i istovaruje tijekom izvješćivanja o proizvodnji posljednje faze obrade stavke proizvodnog naloga ili tijekom faze obrade kojoj je materijal pridružen.  
+
+U suprotnom, ako je tip komisioniranja materijala *Sa popisom*, tada prilikom premještanja materijala u skladište W.I.P istovar iz W.I.P.-a odvija se na isti način kao kod ručnog tipa uzorkovanja. odvija se putem procedure Picking List.    
+
+Konkretno, skladišta i razlozi upisani u odjeljku *W.I.P* koriste se u pokretima utovara i istovara signala svih faza radnog ciklusa osim posljednje faze.    
+U slučaju posljednje faze koriste se skladišta i razlozi iz odjeljka *Gotovi proizvodi* ako je proizvodni nalog razine 1 (dakle, odnosi se na gotov proizvod), odnosno oni iz odjeljka *Poluproizvodi* ako proizvodni nalog nije stupanj 1 (dakle radi se o poluproizvodu) i zastavicom *W.I.P.* Onesposobljeno je; inače ako je zastava *W.I.P* aktivan i proizvodni nalog nije razine 1, koriste se oni iz odjeljka *Poluproizvodi W.I.P*. 
+
+:::note BILJEŠKA 
+Kada je zastavica *W.I.P* u *Parametrima proizvodnog naloga*, automatski prilikom kreiranja podugovaračkih naloga (iz *Objave planiranih naloga* ili izravno iz proizvodnog naloga), materijali koji se šalju podizvođaču uzimaju se u obzir prema skladištu i uzroku navedenim u [Parametrima za vanjsku obradu](/docs/configurations/parameters/production/subcontractor-parameters) u dijelu *Isporuka materijala podizvođačima W.I.P.*; dakle, u ovom slučaju materijali koji se šalju podizvođačima bit će preuzeti izravno iz skladišta *W.I.P.*    
 :::    
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Za sve što nije detaljno opisano u ovom dokumentu o uobičajenom funkcioniranju obrazaca, pogledajte sljedeću poveznicu [Zajedničke funkcije, gumbi i polja](/docs/guide/common).

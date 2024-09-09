@@ -1,33 +1,33 @@
 ---
-title: Tipi di Attività
-sidebar_label: Tipi di Attività
+title: Vrste aktivnosti 
+sidebar_label: Vrste aktivnosti 
 sidebar_position: 2
 ---
 
-I tipi di *Attività* disponibili sono:
+Vrste dostupnih *Aktivnosti* su:
 
 **Generate Script**
-> Consente di creare uno script in C# generico, grazie al Widget script editor (citato in precedenza nell'articolo *Scripting*).  
+> Omogućuje vam stvaranje generičke C# skripte, zahvaljujući Widgetu za uređivanje skripti (spomenutom ranije u članku *Skriptiranje*).  
 
 **Data Source**
-> Consente di selezionare un Data Source - dalla tab **Configurazione Attività** - da una collezioni esistente di Data Sources precedentemente creata dall'utente (dall'applicazione ARM).
+> Omogućuje odabir Izvora Podataka - na kartici **Konfiguracija Aktivnost** -  iz postojeće zbirke izvora podataka koju je prethodno stvorio korisnik (iz aplikacije ARM).
 
-:::success Video Tutorial
-A questo link **[video](https://youtu.be/egDCFGZOu14)** troverai la spiegazione su questo tipo di attività.
+:::success VIDEO TUTORIALI 
+Na ovom linku **[video](https://youtu.be/egDCFGZOu14)** pronaći ćete objašnjenje ove vrste aktivnosti.
 :::
 
 **Run Report**
-> Consente di creare un report basato su alcuni parametri impostati e selezionati dalla tab **Configurazione Attività**, come: Business Object, tipo di stampa report, formato di esportazione e molto altro.
+> Omogućuje vam stvaranje izvješća na temelju nekih parametara postavljenih i odabranih na kartici **Konfiguracija zadatka**, kao što su: Business Object, vrsta ispisa izvješća,  format izvoza i još mnogo toga.
 
 **SQL Query**
-> Consente di eseguire queries create dalla tab **Configurazione Attività** > **Script**, con un set di parametri predefiniti - resi disponibili in caso si debbano eseguire queries su databases esterni - e parametri custom opzionali.
+> Omogućuje vam izvršavanje upita kreiranih na kartici **Konfiguracija** > **Skripta**, sa skupom unaprijed definiranih parametara - koji su dostupni u slučaju da trebate izvršiti upite na vanjskim bazama podataka - i dodatnim prilagođenim parametrima. 
 
-:::success Video Tutorial
-A questo link **[video](https://youtu.be/bzyelPIs9tk)** troverai la spiegazione su questo tipo di attività.
+:::success VIDEO TUTORIJALI
+Na ovom linku **[video](https://youtu.be/bzyelPIs9tk)** pronaći ćete objašnjenje ove vrste aktivnosti.
 :::
 
 **Stored Procedure**
-> Eseguire stored procedures precedentemente create in un database *Fluentis*, con i valori definiti nella tab **Parametri Collegati**. E' importante verificare i parametri utilizzati nella stored procedure con quelli definiti nella sopracitata tab.
+> Izvršite pohranjene procedure prethodno stvorene u *Fluentis* bazi podataka, s vrijednostima definiranim na kartici **Povezani parametri**. Važno je provjeriti parametre koji se koriste u pohranjenoj proceduri s onima koji su definirani u prethodno navedenoj kartici.
 
-**Mail Template**
-> Restituisce un documento formattato - di diverso formato (ad esempio .pdf, .html, .docx, .doc) selezionabile dalla tab **Impostazione di Generazione Documento** - secondo quanto definito nella tab **Template Documento**, con i dati provenienti dai parametri di input definiti nella tab **Parametri Collegati**.  
+**Predložak pošte**
+> Vraća formatirani dokument - različitog formata (na primjer .pdf, .html, .docx, .doc) koji se može odabrati na kartici **Postavke generiranja dokumenta** - kako je definirano na kartici **Predložak dokumenta**,  s podacima koji dolaze iz ulaznih parametara definiranih u kartica **Povezani parametri**.  

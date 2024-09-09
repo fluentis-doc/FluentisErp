@@ -1,13 +1,13 @@
 ---
-title: Attività
-sidebar_label: Attività
+title: Aktivnosti 
+sidebar_label: Aktivnosti 
 sidebar_position: 0
 ---
 
-L'*Attività* è stata creata per risolvere un problema di complessità legato alle precedente versione di Fluentis e quindi per ridurre le competenze richieste dal potenziale utente; si è deciso di suddividere il problema in blocchi. L'Attività può essere vista come un'unità atomica o un elemento con una serie di parametri di input è di output, che sono analizzati e divisi in tipi (saranno descritti successivamente nella documentazione). 
+*Aktivnost* je stvorena za rješavanje problema složenosti povezanog s prethodnom verzijom Fluentisa te za smanjenje vještina potrebnih potencijalnom korisniku; odlučeno je da se problem podijeli u blokove. Aktivnost se može vidjeti kao atomska jedinica ili element sa skupom ulaznih i izlaznih parametara, koji se analiziraju i dijele na tipove (opisani će biti kasnije u dokumentaciji).  
 
-La form **Attività** si apre dal menu complementare **Strumenti** > **Fluentis Supervisor** > **Attività**.
+Obrazac **Aktivnost** otvara se iz dopunskog izbornika **Alati** > **Fluentis Supervisor** > **Aktivnosti**.
 
-Alcune delle funzionalità all'interno della form si riferiscono ad un utilizzo standard. Per qualsiasi dettaglio sull'utilizzo di questa form non esplicitato qui, riferirsi a questo [articolo](/docs/guide/common).
+Neke od značajki unutar obrasca odnose se na standardnu ​​upotrebu. Za sve detalje o korištenju ovog obrasca koji nisu ovdje objašnjeni, pogledajte ova [artikl](/docs/guide/common).
 
-Le *Attività* sono organizzate in gruppi (come ad esempio *Utilità*, *Esempi*, *Demo*) in base al contesto di utilizzo. Per creare un nuovo gruppo di *Attività* riferirsi all'articolo [creazioni gruppi](../../group-creation).
+*Aktivnosti* su organizirane u grupe (kao što su *Pomoćni Programi*, *Primjeri*, *Demo*) na temelju konteksta korištenja. Da biste stvorili novu grupu  *Aktivnosti* pogledajte članak [Stvaranje grupa](../../group-creation).

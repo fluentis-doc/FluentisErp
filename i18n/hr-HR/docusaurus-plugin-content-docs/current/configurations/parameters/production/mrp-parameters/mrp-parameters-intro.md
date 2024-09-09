@@ -1,23 +1,24 @@
 ---
-title: Modifica Parametri MRP
+title: Parametri MPR  
 sidebar_position: 2
 ---
 
-Per modificare i Parametri MRP:
-1. aprire la form che si trova sul percorso **Parametri > Produzione > Parametri MRP**. 
-2. selezionare l'articolo ed eseguire doppio clic sulla riga oppure usare il pulsante **Modifica Parametri**.
+Za uređivanje MRP parametara:   
+1. otvorite obrazac koji se nalazi na putu **Parametri > Proizvodnja > MRP parametri**. 
+2. odaberite članak i dvaput kliknite na red ili upotrijebite gumb **Izmjeni parametre**.
 
-### Dati generali
+### Opći podaci 
 
-I parametri che si possono definire all'interno di questo tab sono i seguenti:
+Parametri koji se mogu definirati unutar ove kartice su sljedeći:   
 
-**Distinta base di riferimento**: sezione nella quale viene impostato, se necessario, l'articolo la cui distinta base deve essere presa come riferimento per la schedulazione di una eventuale commessa di produzione per l'articolo/variante sui cui parametri MRP si sta lavorando. Si potrà quindi inserire l'articolo (comprensivo di *classe*, *codice* e *descrizione*) l'*unità di misura* e l'eventuale *variante*. 
+**Referenca sastavnice materijala**: odjeljak u kojem se po potrebi postavlja artikl čiji se troškovnik mora uzeti kao referenca za raspored eventualnog proizvodnog naloga za artikl/varijantu na čijim MRP parametrima radite. Zatim možete unijeti stavku (uključujući *klasu*, *šifru* i *opis*), *mjernu jedinicu* i bilo koju *varijantu*.
 
-**Politica di gestione**: questa combo box permette all'utente di scegliere se gestire l'articolo a:  
-> **Previsione**: in questo caso l'articolo verrà gestito tramite la generazione previsioni di vendita oppure tramite l'inserimento di un piano principale di produzione. Questa politica di gestione viene presa in considerazione sia in *Definizione MPS* sia dall'*MRP*.  
-> **Scorta**: in questo caso l'articolo verrà gestito sulla base delle informazioni relative ai punti di riordino e di scorta minima inseriti nel tab [Approvvigionamento](/docs/erp-home/registers/items/create-new-items/item-registry/procurement) dell'anagrafica articolo. Questo perché sono articoli per i quali la domanda arriva troppo tardi rispetto alla mia necessità di approvvigionamento e/o produzione e quindi nasce l'esigenza di gestire questi articoli a scorta in modo tale da procedere con l'approvvigionamento o la produzione prima che mi arrivi la reale domanda. Anche in questo caso la generazione della commessa di produzione dell'articolo sarà ottenuta tramite l'utilizzo sia della procedura di *Definizione MPS* sia attraverso l'*MRP*.  
-> **Commessa**: articoli per i quali si andrà a produrre a commessa, quindi per i quali si vuole tenere una tracciabilità delle fasi della sua produzione; in questo caso questo tipo di politica di gestione verrà effettuata di default solo attraverso la definizione MPS, all'interno del tab Ordini Clienti, perché è tramite la gestione MPS che si vanno a generare le commesse di produzione. Si può gestire anche con l'MRP ma solo nel caso in cui lo si vada espressamente a specificare tramite il flag *Considera l'articolo nel calcolo MRP* che si trova più avanti sempre in questa form.  
-*Esempio*: se si sceglie questo tipo di gestione, se si ha un ordine cliente per questo articolo di 6 pezzi e un altro ordine cliente sempre lo stesso articolo di 8 pezzi, per poter tenere traccia della produzione e del legame tra ordine cliente e ordini di produzione, si andranno a creare due commesse di produzione diverse ognuna collegata ad un ordine cliente specifico.  
+**Politika upravljanja**: ovaj kombinirani okvir omogućuje korisniku da odabere hoće li upravljati stavkom na:    
+> **Prognoza**:  u ovom slučaju stavkom će se upravljati generiranjem predviđanja prodaje ili umetanjem glavnog plana proizvodnje. Ova se politika upravljanja uzima u obzir i u *MPS definiciji* i u *MRP-u*. 
+> **Zaliha**: u ovom slučaju artiklom će se upravljati na temelju informacija koje se odnose na ponovnu narudžbu i minimalne bodove zaliha unesene u karticu  [Nabava](/docs/erp-home/registers/items/create-new-items/item-registry/procurement) matičnih podataka artikla. To je zato što su to artikli za koje potražnja stiže prekasno u usporedbi s mojom potrebom za nabavom i/ili proizvodnjom i stoga se javlja potreba za upravljanjem tim artiklima na zalihama na takav način da se nastavi s nabavom ili proizvodnjom prije nego što stignu pravo pitanje. Također u ovom slučaju, generiranje naloga za proizvodnju artikla bit će dobiveno upotrebom postupka *definicije MPS-a* i *MRP-a*. 
+ 
+> **Narudžba**: stavke za koje će se izraditi narudžba, dakle za koje želite zadržati sljedivost faza proizvodnje; u ovom slučaju ova vrsta politike upravljanja će se prema zadanim postavkama provoditi samo kroz definiciju MPS-a, unutar kartice Narudžbe kupaca, jer se kroz upravljanje MPS-om generiraju proizvodni nalozi. Njime se također može upravljati s MRP-om, ali samo ako je izričito navedeno putem oznake *Razmotrite stavku u MRP-u* za izračun koja se također nalazi kasnije u ovom obrascu.    
+*Primjer*: ako odaberete ovu vrstu upravljanja, ako imate narudžbu kupca za ovaj artikal od 6 komada i drugu narudžbu kupca za isti artikl od 8 komada, kako biste mogli pratiti proizvodnju i vezu između narudžbe kupca i proizvodnje proizvodnja narudžbi, stvorit će se dva različita proizvodna naloga, svaki povezan s određenom narudžbom kupca.   
 > **Fabbisogno**: in questo caso invece si tratta di articoli per i quali non si vuole tenere tracciabilità e quindi si possono raggruppare più domande aventi fonti diverse (non si ha quindi un legame con la commessa) in questo caso l'articolo potrà essere preso in considerazione nel caso di utilizzo della procedura *MRP* in luogo della procedura *Schedulazione Generale* (di default). Anche l'articolo gestito a Fabbisogno potrà essere considerato dalla procedura di *Definizione MPS*, ma la differenza in questo caso sta nel fatto che è possibile, tramite un apposita serie di parametri nella form dei *Parametri MPS* che permettono di generare il flusso di produzione in modo automatico e quindi fare in modo che la commessa venga generata in automatico non appena inserita la riga ordine cliente, e quindi che di fatto venga saltata la procedura di *Definizione MPS*.  
 *Esempio*: se si sceglie questo tipo di gestione, e si ha sempre un ordine cliente di 6 pezzi e uno di 8 pezzi sempre per lo stesso articolo, in questo caso si andrà a generare un ordine di produzione cumulativo di 14 pezzi perdendo il legame tra ordine e commessa e quindi la tracciabilità.       
 :::note NOTA

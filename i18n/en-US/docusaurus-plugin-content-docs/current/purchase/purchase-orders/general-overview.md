@@ -1,20 +1,15 @@
 ---
-title: General overview
+title: Settings
 sidebar_position: 1
 ---
 
-The module enables the operator to draw up a purchase order respecting the business relation fixed with vendor. The purchase orders module is located within the purchase area and it represents the initial phase of purchase route. The purchase orders can be inserted manually or automatically from purchase requests or purchase forecast or by getting data from purchase job orders or purchase price lists.
+The module is located in the *Purchases > Purchase Orders* area and represents one of the intermediate steps in the purchasing cycle.
 
-The module enables the operator to perform the goods receipt. Using the Goods receipt it is possible to execute the vendor order and to place goods on warehouse/location before going on to load the same goods on warehouse.
+Purchase orders can be entered manually or automatically from purchase requests or purchase forecasts, or by taking data from purchase orders or purchase price lists.
 
-Before going on to create a purchase order, it is necessary to have correctly set all table data as well as module parameters.
+The module allows the operator to also create the receipt of goods. By using the goods receipt, it is possible to fulfill the purchase order and place the goods in the warehouse/location before proceeding with the actual loading of the goods into the warehouse.
 
-In order to insert purchase orders it is obligatory to have the following tables: purchase orders numeration, purchase order type.
-
-In order to insert a goods receipt it is obligatory to have the following table: Goods Receipt Type.
-
-
-
-
-
-
+Before using the module, the following parameters and tables must be completed:
+> - [Numberings](/docs/configurations/tables/fluentis-numerations)
+> - [Purchase Order Types](/docs/configurations/tables/purchase/purchase-orders-type)
+> - [Purchase Order Parameters](/docs/configurations/parameters/purchase/purchase-orders-parameters)

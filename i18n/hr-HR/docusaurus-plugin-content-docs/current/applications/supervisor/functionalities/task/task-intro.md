@@ -1,14 +1,14 @@
 ---
-title: Task
-sidebar_label: Task
+title: Zadaci 
+sidebar_label: Zadaci 
 sidebar_position: 0
 ---
 
-Per utilizzare le *Attività* è necessario un contenitore, il **Task**. Quando viene creato un *Task*, lo script collegato ad esso ha del codice predefinito, necessario affinché funzioni; l'utente ha la possibilità di aggiungere codice allo script collegato, utilizzando lo *Script Editor* o la piattaforma codeless *Blockly*.
+Za korištenje *Aktivnosti* potreban vam je spremnik **Zadatak**. Kada se *Zadatak*, stvori, skripta povezana s njim ima zadani kod, neophodan za rad; korisnik ima opciju dodavanja koda u povezanu skriptu koristeći *Script Editor* ili *Blockly* platformu bez koda.
 
-Il form del **Task** si apre tramite il percorso **Strumenti** > **Fluentis Supervisor** > **Tasks**.
+Obrazac **Zadatak** otvara se putem **Alati** > **Fluentis Supervisor** > **Zadaci**.
 
-Alcune delle funzionalità all'interno della form si riferiscono ad un utilizzo standard. Per qualsiasi dettaglio sull'utilizzo di questa form non esplicitato qui, riferirsi a questo [articolo](/docs/guide/common).
+Neke od značajki unutar obrasca odnose se na standardnu ​​upotrebu. Za sve detalje o korištenju ovog obrasca koji nisu ovdje objašnjeni, pogledajte ovaj [članak](/docs/guide/common).
 
-I *Tasks* sono organizzati in gruppi (come ad esempio *Utilità*, *Esempi*, *Demo*) in base al contesto di utilizzo. Per creare un nuovo gruppo di *Tasks* riferirsi all'articolo [creazioni gruppi](../../group-creation).
+*Zadaci* su organizirani u grupe (kao što su *Uslužni programi*, *Primjeri*, *Demo*) na temelju konteksta korištenja. Da biste stvorili novu grupu *Zadataka* pogledajte članak o [stvaranju grupe](../../group-creation).
 

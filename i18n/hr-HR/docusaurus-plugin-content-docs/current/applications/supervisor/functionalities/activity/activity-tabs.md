@@ -1,40 +1,39 @@
 ---
-title: Tabs dell'Attività
+title: Kartice aktivnosti 
 #hide_title: true
-sidebar_label: Tabs dell'Attività
+sidebar_label: Kartice aktivnosti 
 sidebar_position: 1
 ---
 
-:::info Nota
-Una volta aperta la form di dettaglio dell'attività, nella parte superiore sono presenti alcuni parametri standard come *Codice*, *Nome*, *Descrizione*, *Data Crazione*, *Data Ultima Modifica*, *Gruppo* e *Tipo Attività*. Per questi ultimi due, bisogna prestare molta attenzione, perchè determinano come si andrà a comporre l'attività.
+:::info BILJEŠKA 
+Nakon što se otvori obrazac s detaljima aktivnosti, u gornjem dijelu nalaze se neki standardni parametri kao što su *Šifra*, *Naziv*, *Opis*, *Data Crazione*, *Datum zadnje izmjene*, *Grupa* e *Vrsta aktivnosti*. Na ove posljednje dvije morate obratiti veliku pozornost, jer one određuju kako će aktivnost biti sastavljena. 
 :::
 
-### Parametri Collegati
+### Povezani parametri 
 
-Tutte i *tipi di Attività* hanno i *Parametri Collegati* (sia di input che di output). Essi quando vengono utilizzati all'interno di un *Task* sono visibili (ci si rende conto di quanto detto quando sono utilizzati all'interno del Widget *Blockly*). Questi parametri sono cruciali in molti casi, perchè sono l'unico modo per mettere in comunicazione l'*Attività* con il *Task*.
+Sve *Vrste aktivnosti* imaju *povezane parametre* (i ulazne i izlazne). Kada se koriste unutar *Zadatka* vidljivi su (shvaćate što je rečeno kada se koriste unutar  *Blockly* Widgeta). Ovi parametri su ključni u mnogim slučajevima, jer su oni jedini način povezivanja *Aktivnosti* sa *Zadatkom*. 
 
-Per creare un parametro è necessario specificargli un valore di default (come ad esempio *Nome*, *Descrizione*) e qualche valore più specifico *ParametroInput*, *Obbligatorio*, *Tipo* e *Parametro Globale*. 
+Za izradu parametra trebate navesti zadanu vrijednost (kao što je *Naziv*, *Opis*) i neke specifičnije vrijednosti *Ulaznog parametra*, *Obaveznog*, *Tipa* i *Globalnog parametra*. 
 
-### Mappatura Records
+### Zapisi mapiranja  
 
-Per il tipo di *Attività* **Template Mail**, c'è la possibilità di mappare i records (nomi colonne) alla testata; il risultato della mappatura verrà visualizzato dopo che un recordset è stato utilizzato all'interno di un documento (dalla tab *Template Documento*).  
+Za vrstu *Aktivnosti* **Predloška pošte** postoji mogućnost mapiranja zapisa (imena stupaca) u zaglavlje; rezultat mapiranja bit će prikazan nakon što se skup zapisa koristi unutar dokumenta (s kartice *Predložak dokumenta*). 
 
-### Configurazione Attività
+### Konfiguracija aktivnosti 
 
-Spostiandosi invece sulla tab *Configurazione Attività*, la cosa fondamentale da tenere a mente è che cambia in base al **tipo di Attività** e l'unico valore comune a tutti i *tipi di Attività* e il **ParametroRitorno**.
+Ako se umjesto toga pomaknemo na karticu *Konfiguracija aktivnosti*,  temeljna stvar koju treba imati na umu je da se mijenja ovisno o **vrsti aktivnosti** a jedina vrijednost zajednička svim *vrstama aktivnosti* je **Povratni parametar**.
 
-Vediamo ora tutti tipi:
+Ostale vrste su: 
 
-> Il *tipo di Attività* **Script generico** ha due tabs, *Parametri* e *Script*. I valori di input e di output che sono stati utilizzati nella tab *Script*, devono essere dichiarati nella tab *Parametri*.
+> *Vrsta zadatka* **Generičke skripte** ima dvije kartice,*Parametri* i *Skripta*. Ulazne i izlazne vrijednosti koje su korištene u kartici *Skripta*, moraju se deklarirati u kartici *Parametri*.
 
-> Il *tipo di Attività* **Datasource** non ha alcuna tab, ha soltanto la configurazione dei parametri del *Datasource* e la selezione del *Datasource*.
+> *Vrsta aktivnosti* **Izvori podataka** ema kartice, ima samo konfiguraciju parametara  *izvora podataka* i odabir *izvora podataka*.
 
-> Il *tipo di Attività* **Run Report**  non ha alcuna tab, ha solo la selezione del **Business Object**, del **tipo di report** riferito al *Business Object* e infine il **formato di esportazione**.
+> *Vrsta aktivnosti* **Izvedi izvješće**  nema kartice, ima samo odabir **Business Object** **vrstu izvješća** koja se odnosi na *Business Object* i na **format izvoza**.
 
-> Il *tipo di Attività* **Sql Query** condivide lo stesso layout di tabs del tipo Attività *Script Generico*, ad eccezione della tab *Script* che non conterrà più uno script in C# ma in SQL. Per mappare i parametri dell'attività all'interno della query è necessario includerli tra parentesi quadri, come è possible vedere nell'immagine sottostante.
+> Tip **Sql Query** *Activity*  dijeli isti raspored kartice kao tip  *eneric Script* Activity, s iznimkom kartice *Script* oja više neće sadržavati skriptu u C# nego u SQL-u. Za mapiranje parametara aktivnosti unutar upita morate ih uključiti u uglate zagrade, kao što možete vidjeti na slici ispod.
 
-> Il *tipo di Attività* **Stored procedure** non ha alcuna tab, ma solo la configurazione dei parametri di input per le stored procedure.
+> *Vrsta aktivnosti* **Pohranjeni postupak** nema kartice, već samo konfiguraciju ulaznih parametara za pohranjene procedure.
 
-> Il *tipo di Attività* **Mail Template** ha due tabs, *Impostazione Generazione Documento* e *Template Documento*. Nella prima tab, nella parte superiore dell'interfaccia è possibile impostare il *Master Record* (ovvero il recordset che popolerà il template del documento), *Documento Generato* (la variabile contenente il documento, che deve essere mappata dalla tab Paramateri Collegati come parametro di output in modo tale da da ottenere un risultato quando verrà utilizzata all'interno di un *Task*), *Formato Documento* (ovvero .pdf, .html, .docx, .doc), *Descrizione* e *Invia come corpo HTML* (quest'ultimo è un flag).
-Nella parte inferiore della tab invece ci sono le variabili del documento (le variabili appariranno nella seconda tab, sotto la voce "variabili documento" nel pannello sulla parte destra dell'interfaccia).
-Nella seconda tab c'è un Widget (con la visualizzazione analoga a quella di un documento in *Microsoft Word*) per visualizzare/modificare il template del documento, utilizzando gli strumenti integrati e le variabili documenti che possono essere trovate nel pannello sulla parte destra dell'interfaccia.
+> *Vrsta zadatka* **predloška pošte** ima dvije kartice, *ostavljanje generiranja dokumenta* i *Predložak dokumenta*. U prvoj kartici, u gornjem dijelu sučelja, moguće je postaviti *Glavni zapis* (tj. skup zapisa koji će popuniti predložak dokumenta), *Generirani dokument*  (varijabla koja sadrži dokument, a koja se mora mapirati iz povezanih paramaterijala karticu kao izlazni parametar kako bi se dobio rezultat kada se koristi unutar *zadatka*), *Format dokumenta* (tj .pdf, .html, .docx, .doc), *Opis* i *Pošalji kao HTML tijelo* (potonje je oznaka).
+U donjem dijelu kartice nalaze se varijable dokumenta (varijable će se pojaviti u drugoj kartici, pod stavkom "varijable dokumenta" u panelu na desnoj strani sučelja). U drugoj kartici nalazi se Widget (s prikazom sličnim dokumentu u *Microsoft Wordu*) za pregled/uređivanje predloška dokumenta, korištenjem integriranih alata i varijabli dokumenta koji se mogu pronaći na ploči s desne strane sučelje.

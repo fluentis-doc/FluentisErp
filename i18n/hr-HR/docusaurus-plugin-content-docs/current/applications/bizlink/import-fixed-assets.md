@@ -1,27 +1,27 @@
 ---
-title: Importazione Cespiti
+title: Uvoz imovine
 sidebar_position: 2
 ---
 
 
-Il foglio excel (template) per l'importazione dei cespiti nel modulo Amministrazione permette di popolare le schede cespite sulla base delle categorie cespiti che devono essere già presenti nel db.
+Excel datoteka (predložak) za uvoz imovine u Administrativnom modulu omogućuje popunjavanje kartica imovine na temelju kategorija imovine koje već moraju biti prisutne u bazi podataka.
 
-**Codice Categoria:** deve essere già presente nel db e sarà usato nella scheda cespite importata
+**Šifra Kategorije:** mora već postojati u bazi podataka i bit će korišten u uvezenoj kartici imovine;
 
-**Precodice:** facoltativo, da gestire solo se attiva la gestione del precodice indicando il precodice da utilizzare nella numerazione
+**Predšifra:** neobavezno, upravljati samo ako je aktiviran prekod upisujući prekod koji treba koristiti u numeriranju;
 
-**Numero cespite:** utilizzare un numero libero
+**Broj sredstva:** koristite slobodan broj;
 
-**Centro di costo:** facoltativo, serve per assegnare un centro di costo nella scheda cespite per la successiva movimentazione in fase di ammortamento
+**Troškovni centar:** neobavezno, koristi se za dodjelu troškovnog centra na kartici imovine za kasnije kretanje u fazi amortizacije;
 
-**Data Acquisto:** Obbligatorio, è la data di carico del costo storico
+**Datum nabave:** obavezno, datum je učitavanja povijesnih troškova;
 
-**Numero Documento / Data Fatt Acquisto:** facoltativi, utili per indicare il riferimento alla fattura d'acquisto
+**Broj dokumenta / Datum računa o nabavi:** neobavezno, korisno za navođenje reference na račun o kupovini;
 
-**Fornitore  Acquisto:** Facoltativo, serve per popolare il campo del fornitore del bene nella scheda cespite, compilare con il nomignolo dell'anagrafica fornitore
+**Dobavljač kupnje:** neobavezno, koristi se za popunjavanje polja dobavljača dobra na kartici imovine, ispuniti s nazivom dobavljača u anketi dobavljača;
 
-**Tot Valore Patrimoniale:** è il costo storico del cespite caricato con la data della colonna Data Acquisto
+**Ukupna vrijednost sredstva:** to je povijesni trošak imovine učitan s datumom u stupcu Datum nabave;
 
-**Tot Fondo Ammortamento:** è il totale fondo ammortamento accumulato al momento del caricamento / importazione della scheda cespite. Attenzione, questo valore sarà caricato come previsto per il carico di un cespite pregresso (compilando almeno una riga di ammortamento) e pertanto viene utilizzato il dato presente nella successiva colonna **Anno**.
+**Ukupna amortizacija:** to je ukupni iznos akumulirane amortizacije u trenutku učitavanja / uvoza kartice imovine. Važno je napomenuti da će se ovaj iznos učitati prema očekivanom za prethodni prijenos imovine (ispunjavajući barem jedan redak amortizacije) i stoga će se koristiti podatak prisutan u sljedećem stupcu **Godina**.
 
-**Perc. Ammortamento da Utilizzare:** Facoltativo, serve nel caso si desideri caricare nella scheda cespite una percentuale di ammortamento particolare per il cespite in questione, se non valorizzato non sarà scritto nulla nel campo corrispondente e i successivi ammortamenti saranno eseguiti secondo la percentuale della categoria di appartenenza.
+**Postotak amortizacije:** koristi se u slučaju da se želi učitati određeni postotak amortizacije za određenu imovinu, ako nije popunjeno, ništa neće biti upisano u odgovarajuće polje, a sljedeće amortizacije bit će izvršene prema postotku pripadajuće kategorije.

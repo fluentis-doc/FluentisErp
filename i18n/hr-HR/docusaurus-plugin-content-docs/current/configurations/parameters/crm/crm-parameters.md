@@ -1,15 +1,21 @@
 ---
-title: Parametri CRM
+title: CRM parametri 
 sidebar_position: 2
 ---
 
-I parametri del CRM si trovano nel percorso **Parametri > CRM > Parametri CRM**, e attraverso il setup di questi parametri si vanno a definire alcune funzionalità del modulo, in particolare in relazione al cambio stato automatico della attività in seguito ad alcune operazioni specifiche.
+CRM parametri nalaze se na putu **Parametri > CRM > CRM parametri**, a kroz postavljanje tih parametara definiraju se neke funkcije modula, posebno u vezi s automatskom promjenom statusa aktivnosti nakon nekih specifičnih operacija.
 
-**Probabilità successo vinto**: il campo fa riferimento alla tabella [Probabilità di successo](/docs/configurations/tables/crm/opportunities/probability-progress) e permette di definire la % di probabilità di successo che Fluentis dovrà impostare sull’opportunità nel caso in si sposti l’opportunità nella sezione delle opportunità vinte nella form Opportunity Progress Kan Ban board;
+**Osvojeni napredak vjerojatnosti**: polje se odnosi na tablicu [Vjerojatnost uspjeha](/docs/configurations/tables/crm/opportunities/probability-progress) i omogućuje vam definiranje % vjerojatnosti uspjeha koju će Fluentis morati postaviti na priliku ako se prilika premjesti u odjeljak dobivenih prilika u Opportunity Progress Kan Ban board;
 
-**Probabilità successo perso**: il campo fa riferimento alla tabella [Probabilità di successo](/docs/configurations/tables/crm/opportunities/probability-progress) e permette di definire la % di probabilità di successo che Fluentis dovrà impostare sull’opportunità nel caso in si sposti l’opportunità nella sezione delle opportunità perse nella form Opportunity Progress Kan Ban board;
+**Izgubljeni napredak vjerojatnosti**: polje se odnosi na tablicu [Vjerojatnost uspjeha](/docs/configurations/tables/crm/opportunities/probability-progress) i omogućuje vam definiranje % vjerojatnosti uspjeha koju će Fluentis morati postaviti na priliku ako se prilika premjesti u odjeljak propuštenih prilika u Opportunity Progress Kan Ban board;
 
-**Numero massimo di email**: in questo campo deve essere definito il numero massimo di email che Fluentis può inviare in caso di invio di una Newsletter;
+**Maksimalan broj e-poruka**: u ovom polju mora biti definiran maksimalan broj e-poruka koje Fluentis može poslati prilikom slanja Newsletter;
 
-**Intervallo invio posta elettronica (secondi)**: in questo campo devono essere impostati i secondi che Fluentis dovrà far passare tra l’invio di una mail e l’altro in caso di invio di una Newsletter.
+**Interval slanja e-pošte (sekunde)**: u ovom polju moraju biti postavljene sekunde koje će Fluentis morati proći između slanja e-pošte i sljedeće u slučaju slanja Newslettera.
+
+**Mjerna jedinica dani**: potrebno je naznačiti mjernu jedinicu koju Fluentis mora koristiti za dane. 
+
+**Mjerna jedinica sati**: potrebno je naznačiti zadanu mjernu jedinicu koju Fluentis mora koristiti za sate. 
+
+**Reference ulaznice**: u ovom polju moguće je naznačiti kodiranje koje će se koristiti za referencu ulaznice koja će se prijaviti u Ponudi povezanoj s kartom i kreiranoj kroz postupak *Stvaranje ponuda iz ulaznice* (prisutan u modulu Ulaznice). 
 

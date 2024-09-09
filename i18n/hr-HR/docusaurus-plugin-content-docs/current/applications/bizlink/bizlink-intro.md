@@ -4,14 +4,14 @@ sidebar_position: 1
 ---
 
 
-**BizLink** consente all'operatore di configurare e monitorare flussi di importazione ed esportazione dati da e verso altri sistemi esterni al gestionale.
+**BizLink** omogućuje operateru konfiguriranje i praćenje tokova uvoza i izvoza podataka između drugih vanjskih sustava i upravljačkog sustava.
 
-E' infatti grazie a questo applicativo di tipo **ESB** (Enterprise Service Bus) che **Fluentis** ha potuto portare a standard tutte le interazioni con le altre procedure esterne, sia per l'importazione che per l'esportazione dei dati, ma soprattutto anche per il consumo di processi esterni da altre applicazioni. 
+Zahvaljujući ovoj aplikaciji tipa **ESB** (Enterprise Service Bus) che **Fluentis** je uspio standardizirati sve interakcije s drugim vanjskim procedurama, kako za uvoz tako i za izvoz podataka, ali posebno i za konzumaciju vanjskih procesa iz drugih aplikacija.
 
-Tramite questa procedura **Bizlink** è molto semplice configurare la lettura di un qualsiasi file CSV, TXT, XML e vari altri formati, al fine di interpretare, leggere e/o anche scrivere i file stessi. Tutto questo viene tracciato in opportuni **LOG di Entrata e di Uscita** dell'informazione in modo da dare all'operatore l'evidenza se un processo di importazione o esportazione è andato a buon fine o meno.
+Kroz ovaj postupak, **Bizlink** omogućuje vrlo jednostavnu konfiguraciju čitanja bilo kojeg CSV, TXT, XML i drugih formata datoteka radi interpretacije, čitanja i/ili čak pisanja istih datoteka. Sve to prati se u odgovarajućim **Zapisnicima Ulaznih i Izlaznih** informacija kako bi se operateru pružila evidencija je li proces uvoza ili izvoza uspio ili nije.
 
-Sempre in **BizLink** troviamo l'area delle **Importazioni OnDemand**, molto utile a tutte le aziende che devono importare dati soprattutto nella fase iniziale di configurazione del prodotto. E' infatti tramite l'area di importazioni On Demand, più specificatamente da *foglio elettronico*, che attivando tale procedura è possibile facilmente importare ed aggiornare gli archivi di base quali Articoli, Distinte, Cicli, Clienti, Fornitori, ecc. addirittura anche documenti quali ordini, fatture, listini ecc.
+Također, u **BizLinku** se nalazi i područje **Uvoz podataka “na zahtjev”**,vrlo korisno svim tvrtkama koje moraju uvoziti podatke, posebno u početnoj fazi konfiguracije proizvoda. Naime, putem područja "na zahtjev" uvoza, posebno putem *elektroničkih tablica*, aktiviranjem ove procedure moguće je lako uvesti i ažurirati osnovne arhive kao što su Artikli, Strukture, Ciklusi, Klijenti, Dobavljači, itd., čak i dokumente poput narudžbenica, računa, cjenika itd.
 
-Il modulo è accessibile dal pannello laterale di **Fluentis** tramite il seguente percorso [**Strumenti**>**BizLink**].
+Modul je dostupan iz bočnog panela **Fluentis** putem sljedeće staze [**Alati**>**BizLink**].
 
-Più informazioni sul funzionamento del modulo trovate nei prossimi articoli.
+Više informacija o radu modula možete pronaći u nadolazećim artiklima.

@@ -1212,7 +1212,7 @@
     "description": "The label for category Procedure in sidebar projectManagement"
   },
   "sidebar.projectManagement.category.Attività": {
-    "message": "Aktivnost",
+    "message": "Aktivnosti",
     "description": "The label for category Attività in sidebar projectManagement"
   },
   "sidebar.projectManagement.category.Stato avanzamento lavori": {
@@ -1728,7 +1728,7 @@
     "description": "The label for category Parametri in sidebar configurations"
   },
   "sidebar.configurations.category.Parametri generali": {
-    "message": "Parametri generali",
+    "message": "Opći parametri",
     "description": "The label for category Parametri generali in sidebar configurations"
   },
   "sidebar.configurations.category.Tesoreria": {
@@ -1996,19 +1996,19 @@
     "description": "The label for category Supervisor in sidebar applications"
   },
   "sidebar.applications.category.Funzionalità": {
-    "message": "Funzionalità",
+    "message": "Funkcionalnost",
     "description": "The label for category Funzionalità in sidebar applications"
   },
   "sidebar.applications.category.Attività": {
-    "message": "Attività",
+    "message": "Aktivnosti",
     "description": "The label for category Attività in sidebar applications"
   },
   "sidebar.applications.category.Task": {
-    "message": "Task",
+    "message": "Zadaci",
     "description": "The label for category Task in sidebar applications"
   },
   "sidebar.applications.category.Eventi": {
-    "message": "Eventi",
+    "message": "Događaji",
     "description": "The label for category Eventi in sidebar applications"
   },
   "sidebar.applications.category.Liste di Distribuzione": {

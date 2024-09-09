@@ -1,54 +1,52 @@
 ---
-title: Importazione Partite aperte
+title: Uvoz Otvorenih stavki
 sidebar_position: 2
 ---
 
-Il foglio excel (template) per l'importazione delle partite aperte nel modulo Amministrazione necessita di essere compilato in entrambi i tab:
+Excel datoteka (predložak) za uvoz otvorenih stavki u Administrativnom modulu zahtijeva popunjavanje obe kartice:
 
-**Bizlink parameters:**
+**Parametri Bizlinka:**
 
-Campi da compilare (non valorizzati automaticamente)
+Polja za popunjavanje (ne popunjavaju se automatski)  
 
-- Partita o pagamento: 0 = partita aperta; 1 = pagamento (chiude partite), fare riferimento alla documentazione del modulo amministrazione in caso di dubbio
-- In pagamento: flag che indica se la partita è già inserita in una distinta di bonifico fornitori. Settare generalmente a 0 per normali partite aperte.
-- Id stato partita: settare 1 di default
+- stavka ili plaćanje: 0 = otvorena stavka; 1 = plaćanje (zatvara stavke), pogledajte dokumentaciju Administrativnog modula u slučaju nejasnoća;  
+- U plaćanju: oznaka koja pokazuje je li stavka već unesena u transakciju uplate dobavljača. Obično postavljeno na 0 za normalne otvorene stavke;  
+- ID statusa stavki: postaviti na 1 prema zadanim postavkama;  
 
 
-**Tab Dati:**
+**Kartica Podaci:**
 
-CLIENTE / FORNITORE
+KLIJENT / DOBAVLJAČ    
     
-- Conto / Sottoconto: inserire un codice di conto e sottoconto clienti o fornitore già presente in Fluentis (OBBLIGATORIO)
+- Račun / Podračun: unesite kOd računa i podračuna kupaca ili dobavljača koji su već prisutni u Fluentisu (OBAVEZNO)  
 
-RIFERIMENTI DOCUMENTO
-- Tipo documento: es FA per fattura d'acquisto, FV per fattura di vendita. Usare codifica già presente su Fluentis.
-- Numero / data Fattura: facoltativi, in caso di partita generica si possono omettere indicando come tipo documento GEN
+REFERENCE DOKUMENTA    
+- Vrsta dokumenta: npr. FA za račun kupovine, FV za račun prodaje. Koristite već postojeću kodiranu vrijednost u Fluentisu.  
+- Broj / Datum računa: neobavezno, u slučaju opće partije možete ga izostaviti označavajući tip dokumenta kao GEN  
 
-DATI PAGAMENTO
-- Tipo pagamento: deve essere già presente su Fluentis (riferirsi al codice dei tipi pagamento presenti) - OBBLIGATORIO
-- Data maturazione: è la data scadenza partita - OBBLIGATORIO
-- Conto / sottoconto banca. si tratta della banca d'appoggio collegata alla partita (facoltativo)
+PODACI O PLAĆANJU  
+- Vrsta plaćanja: već mora biti prisutna u Fluentisu (pogledajte kodove vrsta plaćanja koji su prisutni) - OBAVEZNO  
+- Datum dospijeća: datum dospijeća partije - OBAVEZNO   
+- Račun / podračun banke. To je banka povezana s partijom (neobavezno)  
 
-DATI PARTITE
-- Residuo (Dare / Avere): dato del residuo aperto, se la partita non è parzialmente pagata corrisponde al controvalore. 
-DATO ESPRESSO NELLA VALUTA INSERITA NELLA APPOSITA COLONNA. ATTENZIONE, compilare la sezione Dare oppure Avere (a seconda del segno della partita) e inserire sempre il valore 0,00 nella colonna adiacente. (se valorizzo Dare es 100,00 metto in Avere 0,00) OBBLIGATORIO
-- Controvalore (Dare / Avere): è il valore della partita nella moneta di conto della società (es. Euro). ATTENZIONE, compilare la sezione Dare oppure Avere (a seconda del segno della partita) e inserire sempre il valore 0,00 nella colonna adiacente. (se valorizzo Dare es 100,00 metto in Avere 0,00). OBBLIGATORIO
-- Divisa: valorizzare con un codice già presente in Fluentis (es. Eur per Euro, Usd per dollaro) OBBLIGATORIO
-- Blocco: flag che indica se la partita è bloccata e non pagabile (1) oppure libera (0). OBBLIGATORIO
-- Note: campo note di partita facoltativo
+PODACI O STAVKAMA  
+- Preostalo (Dugovati / Potraživati): podatak o preostalom otvorenom iznosu, ako partija nije djelomično plaćena, odgovara protuvrijednosti.    
+PODATAK JE IZRAŽEN U VALUTI NAVEDENOJ U ODGOVARAJUĆEM STUPCU. OBAVEZNO popuniti odjeljak Dugovati ili Potraživati (ovisno o znaku partije) i uvijek unesite vrijednost 0,00 u susjedni stupac. (ako unesete Dugovati npr. 100,00 stavite 0,00 u Potraživati) OBAVEZNO  
+- Protuvrijednost (Dugovati / Potraživati): to je vrijednost partije u valuti tvrtke (npr. euri). OBAVEZNO popuniti odjeljak Dugovati ili Potraživati (ovisno o znaku partije) i uvijek unesite vrijednost 0,00 u susjedni stupac. (ako unesete Dugovati npr. 100,00 stavite 0,00 u Potraživati) OBAVEZNO  
+- Valuta: popunite kodom koji već postoji u Fluentisu (npr. EUR za euro, USD za američki dolar) - OBAVEZNO  
+- Blokada: oznaka koja pokazuje je li partija blokirana i nije plaćiva (1) ili je slobodna (0). OBAVEZNO  
+- Bilješke: opcionalno polje s napomenama o partiji  
 
-DATI REGISTRAZIONE
-Data e numero di riferimento della registrazione contabile collegata alla partita.
-Sezione facoltativa.
+PODACI O ZAPISU Datum i broj knjiženja povezanog s partijom. Odsjek je neobavezan.  
 
-ATTENZIONE: se valorizzata la registrazione deve essere già presente in Fluentis e verrà ricercata dall'importazione, se non trovata l'import restituirà errore.
+PAŽNJA: Ako je unesen zapis, mora već biti prisutan u Fluentisu i bit će pretražen tijekom uvoza, ako nije pronađen, uvoz će vratiti pogrešku.  
 
 ---
 
-Controllare che nelle divise (tabella divise) sia compilato dappertutto l’isocode (a volte manca proprio per l’euro)
+Provjerite jesu li šifre valuta (tablica valuta) ispunjeni za sve valute (ponekad nedostaje za euro)  
 
 
-**ATTENZIONE**: controllare che il numeratore delle partite includa anche gli anni precedenti se nel foglio excel ci sono partite con scadenze degli anni precedenti, altrimenti darà errore. Questo perché, tipicamente, un db nuovo ha numeratore che parte dall’anno corrente.
+**PAŽNJA**: provjerite jesu li u numeratoru partija uključene i prethodne godine ako u Excelovoj tablici postoje partije s dospijećem iz prethodnih godina, inače će doći do pogreške. To je zato što novi baza podataka obično ima numeratore koji počinju s tekućom godinom.  
 
 
 

@@ -1,6 +1,6 @@
 ---
-title: Parametri percipienti
+title: Parametri vanjskog suradnika 
 sidebar_position: 4
 ---
 
-**Tabella attualmente non gestita o presente per retro-compatibilità.**
+**Tablicom se trenutno ne upravlja niti je prisutna radi kompatibilnosti s prethodnim verzijama.**

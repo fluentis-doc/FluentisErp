@@ -4,30 +4,30 @@ sidebar_position: 4
 ---
 
 
-La *Configurazione dei pannelli contestuali* si realizza tramite **ARM**.
+*Konfiguracija kontekstualnih panela* ostvaruje se putem **ARM-a**.
 
 
-*Percorso*: ARM  > Home > Database Schemas > Configurazione pannelli contestuali
+*Putanja*: ARM  > Početna stranica > Database Schemas > Konfiguracija kontekstualnih panela
 
 
-*Esempio di applicazione*: definizione di un Context Panel agganciato ad una Form.
+*Primjer primjene*: definiranje Context Panela povezanog s obrascem.  
 
-Definire la visualizzazione nel pannello contestuale indicando:
+Definirajte prikaz u kontekstualnom panelu navodeći: 
 
-- l'**Oggetto di business** su cui deve essere agganciato il pannello;
+- **Poslovni predmet** na koji se panel treba prikačiti; 
 
-- il **Tipo** di visualizzazione (Cruscotto per Dashboard da visualizzare);
+- **Vrsta** prikaza (Dashboard koji treba prikazati); 
 
-- attivare flag **Mostra in pannello contestuale**;
+- aktivirati oznaku **Prikaži u Contextual Panel**;
  
-- la **Definizione** del legame, ovvero del parametro da passare.
+- **Definicija** veze, odnosno parametra koji treba proslijediti.
 
 
 ![](/img/it-it/guide/panels/context-panel/image01.png)
 
 
-In **Fluentis**:
+U  **Fluentisu**:
 
-- aprire la form su cui si è impostato il pannello per visualizzare il risultato ottenuto (nel caso dell'esempio aprire la form degli ordini di produzione, selezionare una riga e cliccare sulla barra *Context Panel* sulla destra per visualizzare la *Dashboard*).
+- otvorite obrazac na kojem je postavljen panel kako biste vidjeli dobiveni rezultat (u slučaju primjera, otvorite obrazac za proizvodne narudžbe, odaberite redak i kliknite na traku *Context Panel* s desne strane kako biste prikazali nadzorni *Dashboard*).
 
 ![](/img/it-it/guide/panels/context-panel/image02.png)
