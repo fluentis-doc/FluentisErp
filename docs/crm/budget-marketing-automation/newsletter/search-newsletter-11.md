@@ -1,6 +1,6 @@
 ---
 title: Ricerca Newsletter
-sidebar_position: 4
+sidebar_position: 12
 ---
 
 La maschera di ricerca Newsletter permette di cercare le Newsletter già inserite in Fluentis, oltre a permettere di inserirne di nuove.
