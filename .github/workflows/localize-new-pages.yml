@@ -58,9 +58,12 @@ jobs:
         git config --global user.email 'github-actions[bot]@users.noreply.github.com'
         git checkout -b "locale-${LANG:0:2}" || git checkout "locale-${LANG:0:2}"
         #ls -lR i18n/${{ matrix.lang }}/docusaurus-plugin-content-docs/current
-        #git pull origin "locale-${LANG:0:2}" --no-rebase
-        ls -lR i18n/${{ matrix.lang }}/docusaurus-plugin-content-docs/current
+        echo 'checkout done'
+        git pull origin "locale-${LANG:0:2}" --rebase
+        echo 'pull done'
+        #ls -lR i18n/${{ matrix.lang }}/docusaurus-plugin-content-docs/current
         git merge main
+        echo 'merge done'
         git add "i18n/${{ matrix.lang }}/docusaurus-plugin-content-docs/current"
         git commit -m "Add new localized pages for ${{ matrix.lang }}"
         git push origin "locale-${LANG:0:2}"
