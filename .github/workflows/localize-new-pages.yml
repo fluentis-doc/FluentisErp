@@ -75,7 +75,7 @@ jobs:
         new_files=$(echo "$NEW_FILES" | tr ' ' '\n')
 
         # Initialize the body with the first line using printf
-        body="The following new pages auto translated to **`${LANG}` language** need to be reviewed:\n"
+        body="The following new pages auto translated to **${LANG} language** need to be reviewed:\n"
 
         # Append each file to the body with proper formatting
         for file in $new_files; do
@@ -85,7 +85,7 @@ jobs:
           # Debug: Print processed file name to check correctness
           echo "DEBUG: Processed file - $processed_file"
           
-          body+="- [${processed_file}](https://github.com/${REPO}/edit/locale-${LANG}/i18n/${LANG}/docusaurus-plugin-content-docs/current/${processed_file})\n"
+          body+="- [${processed_file}](https://github.com/${REPO}/edit/locale-${LANG:0:2}/i18n/${LANG}/docusaurus-plugin-content-docs/current/${processed_file})\n"
         done
 
         echo "DEBUG: Body content1 - $body"
