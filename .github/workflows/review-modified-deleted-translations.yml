@@ -76,6 +76,7 @@ jobs:
             MODIFIED_FILES: ${{ env.modified_files }}
             DELETED_FILES: ${{ env.deleted_files }}
             LANGUAGES: "en-US ro-RO hr-HR" # List of languages
+            REPO: ${{ github.repository }}
         run: |
             # Define mappings of languages to team member usernames
             declare -A team_usernames
@@ -105,8 +106,8 @@ jobs:
                 body+="\n/cc @fluentis-doc/${team_name}\n" # Mention the team in the body
                 for file in $modified_files; do
                     # Remove 'docs/' prefix from file paths
-                    processed_file="../edit/locale-${LANG:0:2}/i18n/${LANG}/docusaurus-plugin-content-docs/current/${file#docs/}"
-                    body+="- [$file](../blob/main/${file})  \n"
+                    processed_file="https://github.com/${REPO}/edit/locale-${LANG:0:2}/i18n/${LANG}/docusaurus-plugin-content-docs/current/${file#docs/}"
+                    body+="- [$file](https://github.com/${REPO}/blob/main/${file})  \n"
                     body+="   [${LANG:0:2} file](${processed_file})\n"
                 done
 
@@ -133,8 +134,8 @@ jobs:
                 body+="\n/cc @fluentis-doc/${team_name}\n" # Mention the team in the body
                 for file in $deleted_files; do
                     # Remove 'docs/' prefix from file paths
-                    processed_file="../blob/locale-${LANG:0:2}/i18n/${LANG}/docusaurus-plugin-content-docs/current/${file#docs/}"
-                    body+="- [$file](../blob/main/${file})  \n"
+                    processed_file="https://github.com/${REPO}/blob/locale-${LANG:0:2}/i18n/${LANG}/docusaurus-plugin-content-docs/current/${file#docs/}"
+                    body+="- [$file](https://github.com/${REPO}/blob/main/${file})  \n"
                     body+="   [${LANG:0:2} file](${processed_file})\n"
                 done
 
