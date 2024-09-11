@@ -5,11 +5,11 @@ sidebar_position: 3
 
 Informaţiile necesare pentru inserarea unei noi recepţii mărfuri sunt:
 
-- furnizorul, cu ajutorul help-ului sau manual,
+- furnizorul, cu ajutorul help-ului sau manual;
 
-- data propusă este egală cu data curentă,
+- data propusă este egală cu data curentă;
 
-- numărul propus este ultimul număr progresiv util,
+- numărul propus este ultimul număr progresiv util;
 
 -  tipul recepţiei mărfurilor.
 
