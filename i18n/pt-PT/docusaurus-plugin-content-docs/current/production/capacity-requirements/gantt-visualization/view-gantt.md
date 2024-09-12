@@ -1,0 +1,16 @@
+---
+title: Visualizar Gantt
+sidebar_position: 3
+---
+
+Neste tab se visualiza o Gantt de acordo com os critérios de pesquisa estabelecidos no tab precedente. O tab se compõe de 2 seções, por sua vez divisas em 2 painéis cada uma.
+
+**Seção superior**: na seção superior o usuário pode visualizar na parte esquerda da seção a lista dos documentos que foram selecionados com o botão de opção no tab precedente, um abaixo do outro, com uma indentação baseada nas ligações que os documentos apresentam mutuamente. O nome do documento é oportunamente abreviado (por exemplo Encomenda de produção = EP, Ordem de produção = OP, Pedido de compra = PC, Ordem de empreiteiro = OE, etc...); se a encomenda de produção apresenta mais de um artigo, abaixo da encomenda de produção se apresenta o código do artigo ('ART' e depois classe, código e descrição). Para cada uma das linhas é visível também o dia de início do documento (na coluna 'Começar') e o dia fim (na coluna 'Parar'). Para cada uma dessas linhas corresponde uma barra horizontal colocada na parte gráfica da seção superior, que representa graficamente os documentos detalhados na área da esquerda dessa seção. As barras horizontais cobrem um arco temporal que pode ser amplificado ou reduzido, utilizando adequados botões na Ribbon Bar chamados 'Zoom Out' e 'Zoom In', indo no detalhe de cada dia e visualizando portando os utilizos a nível de hora/minuto. Além disso, com um duplo click na barra horizontal que representa um documento se abre automaticamente o mesmo documento, sempre de acordo com os direitos do usuário que está executando essa operação. As barras horizontais podem ser movidas no gráfico com um simples Drag and Drop; a operação permite mover as datas dos documentos em maneira absolutamente dinâmica. O usuário pode escolher, saindo do tab, de confirmar a mudança efetuada ou não, através do botão 'Importação simulação';
+
+**Seção inferior**: na seção inferior é apresentado, dividido em 2 painéis, um histograma relativo à disponibilidade e ao utilizo dos recursos produtivos. No painel da esquerda se visualizam os nomes dos Centros de trabalho utilizados na produção que se decidiu visualizar no gráfico, ao contrário, no painel da direita, indissoluvelmente associado com o painel da esquerda da seção superior, se encontram algumas barras verticais que para cada dia de trabalho apresentam a quantidade de trabalho que cada Centro de trabalho tem de realizar de acordo com os tempos previstos das fases das ordens de produção presentes naqueles dias. Se sublinha que o histograma evidencia o total das utilizações de cada centros de trabalho, não se limitam a representar graficamente só a utilização que deriva da ordem de produção visualizado no Gantt. De fato, o usuário tem a possibilidade, com um duplo click na barra do histograma de um qualquer centro de trabalho, de explodir uma janela onde se apresenta a lista das ordens de produção presentes no Gantt, e a lista das ordens de produção não presentes na simulação que se esta executando graficamente, com a possibilidade, também através dessa janela, de abrir diretamente os documentos pela qual se fornece um detalhe limitado. A janela que se abre com um duplo click no histograma se chama 'Visualizar as ordens', e é detalhada de seguido.
+
+
+
+
+
+

@@ -1,0 +1,627 @@
+{
+  "theme.NotFound.title": {
+    "message": "Page Not Found",
+    "description": "The title of the 404 page"
+  },
+  "theme.NotFound.p1": {
+    "message": "We could not find what you were looking for.",
+    "description": "The first paragraph of the 404 page"
+  },
+  "theme.NotFound.p2": {
+    "message": "Please contact the owner of the site that linked you to the original URL and let them know their link is broken.",
+    "description": "The 2nd paragraph of the 404 page"
+  },
+  "theme.AnnouncementBar.closeButtonAriaLabel": {
+    "message": "Close",
+    "description": "The ARIA label for close button of announcement bar"
+  },
+  "theme.blog.post.readingTime.plurals": {
+    "message": "One min read|{readingTime} min read",
+    "description": "Pluralized label for \"{readingTime} min read\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
+  },
+  "theme.tags.tagsListLabel": {
+    "message": "Tags:",
+    "description": "The label alongside a tag list"
+  },
+  "theme.blog.post.readMore": {
+    "message": "Read More",
+    "description": "The label used in blog post item excerpts to link to full blog posts"
+  },
+  "theme.blog.paginator.navAriaLabel": {
+    "message": "Blog list page navigation",
+    "description": "The ARIA label for the blog pagination"
+  },
+  "theme.blog.paginator.newerEntries": {
+    "message": "Newer Entries",
+    "description": "The label used to navigate to the newer blog posts page (previous page)"
+  },
+  "theme.blog.paginator.olderEntries": {
+    "message": "Older Entries",
+    "description": "The label used to navigate to the older blog posts page (next page)"
+  },
+  "theme.blog.post.paginator.navAriaLabel": {
+    "message": "Blog post page navigation",
+    "description": "The ARIA label for the blog posts pagination"
+  },
+  "theme.blog.post.paginator.newerPost": {
+    "message": "Newer Post",
+    "description": "The blog post button label to navigate to the newer/previous post"
+  },
+  "theme.blog.post.paginator.olderPost": {
+    "message": "Older Post",
+    "description": "The blog post button label to navigate to the older/next post"
+  },
+  "theme.tags.tagsPageTitle": {
+    "message": "Tags",
+    "description": "The title of the tag list page"
+  },
+  "theme.blog.post.plurals": {
+    "message": "One post|{count} posts",
+    "description": "Pluralized label for \"{count} posts\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
+  },
+  "theme.blog.tagTitle": {
+    "message": "{nPosts} tagged with \"{tagName}\"",
+    "description": "The title of the page for a blog tag"
+  },
+  "theme.tags.tagsPageLink": {
+    "message": "View All Tags",
+    "description": "The label of the link targeting the tag list page"
+  },
+  "theme.CodeBlock.copyButtonAriaLabel": {
+    "message": "Copy code to clipboard",
+    "description": "The ARIA label for copy code blocks button"
+  },
+  "theme.CodeBlock.copied": {
+    "message": "Copied",
+    "description": "The copied button label on code blocks"
+  },
+  "theme.CodeBlock.copy": {
+    "message": "Copy",
+    "description": "The copy button label on code blocks"
+  },
+  "theme.docs.sidebar.expandButtonTitle": {
+    "message": "Expand sidebar",
+    "description": "The ARIA label and title attribute for expand button of doc sidebar"
+  },
+  "theme.docs.sidebar.expandButtonAriaLabel": {
+    "message": "Expand sidebar",
+    "description": "The ARIA label and title attribute for expand button of doc sidebar"
+  },
+  "theme.docs.paginator.navAriaLabel": {
+    "message": "Docs pages navigation",
+    "description": "The ARIA label for the docs pagination"
+  },
+  "theme.docs.paginator.previous": {
+    "message": "Previous",
+    "description": "The label used to navigate to the previous doc"
+  },
+  "theme.docs.paginator.next": {
+    "message": "Next",
+    "description": "The label used to navigate to the next doc"
+  },
+  "theme.docs.sidebar.responsiveCloseButtonLabel": {
+    "message": "Close menu",
+    "description": "The ARIA label for close button of mobile doc sidebar"
+  },
+  "theme.docs.sidebar.responsiveOpenButtonLabel": {
+    "message": "Open menu",
+    "description": "The ARIA label for open button of mobile doc sidebar"
+  },
+  "theme.docs.sidebar.collapseButtonTitle": {
+    "message": "Collapse sidebar",
+    "description": "The title attribute for collapse button of doc sidebar"
+  },
+  "theme.docs.sidebar.collapseButtonAriaLabel": {
+    "message": "Collapse sidebar",
+    "description": "The title attribute for collapse button of doc sidebar"
+  },
+  "theme.common.editThisPage": {
+    "message": "Edit this page",
+    "description": "The link label to edit the current page"
+  },
+  "theme.docs.versions.unreleasedVersionLabel": {
+    "message": "This is unreleased documentation for {siteTitle} {versionLabel} version.",
+    "description": "The label used to tell the user that he's browsing an unreleased doc version"
+  },
+  "theme.docs.versions.unmaintainedVersionLabel": {
+    "message": "This is documentation for {siteTitle} {versionLabel}, which is no longer actively maintained.",
+    "description": "The label used to tell the user that he's browsing an unmaintained doc version"
+  },
+  "theme.docs.versions.latestVersionSuggestionLabel": {
+    "message": "For up-to-date documentation, see the {latestVersionLink} ({versionLabel}).",
+    "description": "The label used to tell the user to check the latest version"
+  },
+  "theme.docs.versions.latestVersionLinkLabel": {
+    "message": "latest version",
+    "description": "The label used for the latest version suggestion link label"
+  },
+  "theme.common.headingLinkTitle": {
+    "message": "Direct link to heading",
+    "description": "Title for link to heading"
+  },
+  "theme.lastUpdated.atDate": {
+    "message": " on {date}",
+    "description": "The words used to describe on which date a page has been last updated"
+  },
+  "theme.lastUpdated.byUser": {
+    "message": " by {user}",
+    "description": "The words used to describe by who the page has been last updated"
+  },
+  "theme.lastUpdated.lastUpdatedAtBy": {
+    "message": "Last updated{atDate}{byUser}",
+    "description": "The sentence used to display when a page has been last updated, and by who"
+  },
+  "theme.common.skipToMainContent": {
+    "message": "Skip to main content",
+    "description": "The skip to content label used for accessibility, allowing to rapidly navigate to main content with keyboard tab/enter navigation"
+  },
+  "Home & Impostazioni": {
+    "message": "Početna stranica & Postavke"
+  },
+  "Connessione e Temi": {
+    "message": "Veze i Tematske opcije"
+  },
+  "Anagrafiche": {
+    "message": "Šifarnici"
+  },
+  "Impostazioni": {
+    "message": "Postavke"
+  },
+  "Strumenti": {
+    "message": "Alati"
+  },
+  "Object navigator": {
+    "message": "Object navigator"
+  },
+  "Configurazioni (table, parametri, utilità)": {
+    "message": "Postavke (tablica, parametri, alati)"
+  },
+  "Form navigator": {
+    "message": "Form navigator"
+  },
+  "Context panel": {
+    "message": "Context panel"
+  },
+  "Varie": {
+    "message": "Razno"
+  },
+  "Amministrativa": {
+    "message": "Administracija"
+  },
+  "Dichiarazioni & Intrastat": {
+    "message": "Deklaracije & Intrastat"
+  },
+  "Registrazioni contabili": {
+    "message": "Knjigovodstveni zapisi"
+  },
+  "Partite": {
+    "message": "Dospijeća plaćanja"
+  },
+  "Percipienti": {
+    "message": "Vanjski suradnik"
+  },
+  "Cespiti": {
+    "message": "Osnovna sredstva"
+  },
+  "Fatturazione Elettronica": {
+    "message": "Elektroničko izdavanje računa"
+  },
+  "Leasing": {
+    "message": "Leasing"
+  },
+  "Documenti SDI": {
+    "message": "ES Dokumenti"
+  },
+  "CRM": {
+    "message": "CRM"
+  },
+  "My CRM area": {
+    "message": "My CRM area"
+  },
+  "Budget and Marketing Automation": {
+    "message": "Budget and Marketing Automation"
+  },
+  "Contatti CRM": {
+    "message": "CRM Kontakti"
+  },
+  "Opportunità": {
+    "message": "Prilika"
+  },
+  "Tickets Management": {
+    "message": "Tickets Management"
+  },
+  "Tesoreria": {
+    "message": "Riznica"
+  },
+  "Conti correnti": {
+    "message": "Trenutačni računi"
+  },
+  "DocFinance": {
+    "message": "Financijski dokument"
+  },
+  "Pagamenti fornitori": {
+    "message": "Plaćanja dobavljaču"
+  },
+  "Rischio cliente": {
+    "message": "Rizik kupca"
+  },
+  "Cash flow": {
+    "message": "Novčani tijek"
+  },
+  "Portafoglio effetti": {
+    "message": "Portfelj računa"
+  },
+  "Anticipi & Incassi": {
+    "message": "Avansi i Naplata"
+  },
+  "Controlling": {
+    "message": "Kontroling"
+  },
+  "Chiusure infrannuali": {
+    "message": "Privremeno zatvaranje"
+  },
+  "Riclassificazioni": {
+    "message": "Reklasifikacije"
+  },
+  "Budgeting": {
+    "message": "Izrada proračuna"
+  },
+  "Contabilità gestionale": {
+    "message": "Računovodstvo upravljanja"
+  },
+  "Calcolo costo": {
+    "message": "Izračun troška"
+  },
+  "Acquisti": {
+    "message": "Nabava"
+  },
+  "Richieste di acquisto": {
+    "message": "Zahtjev za nabavom"
+  },
+  "Richieste di offerta": {
+    "message": "Zahtjev za ponudom"
+  },
+  "Ordini fornitori": {
+    "message": "Narudžba dobavljačima"
+  },
+  "Ricevimento merci": {
+    "message": "Prijem robe"
+  },
+  "DDT di acquisto": {
+    "message": "Otpremnica dobavljača"
+  },
+  "Fatture di acquisto": {
+    "message": "Ulazni računi"
+  },
+  "Listini fornitori": {
+    "message": "Cjenici dobavljača"
+  },
+  "Resi fornitori": {
+    "message": "Povratni dobavljači"
+  },
+  "Gestione prezzi": {
+    "message": "Upravljanje cijenama"
+  },
+  "Vendite": {
+    "message": "Prodaja"
+  },
+  "Ordini cliente": {
+    "message": "Narudžba kupca"
+  },
+  "DDT di vendita": {
+    "message": "Otpremnica"
+  },
+  "Fatture di vendita": {
+    "message": "Izlazni računi"
+  },
+  "POS": {
+    "message": "Maloprodajno mjesto"
+  },
+  "Liquidazione agenti": {
+    "message": "Obračun trgovačkih predstavnika"
+  },
+  "Listini di vendita": {
+    "message": "Prodajni cjenici"
+  },
+  "Logistica": {
+    "message": "Logistika"
+  },
+  "Articoli": {
+    "message": "Artikli"
+  },
+  "Magazzino": {
+    "message": "Skladište"
+  },
+  "Lotti & Numeri di serie": {
+    "message": "Lotovi & Serijski brojevi"
+  },
+  "Picking": {
+    "message": "Slaganje robe"
+  },
+  "Inventari fisici": {
+    "message": "Fizička zaliha"
+  },
+  "UDC": {
+    "message": "Utovarna jedinica"
+  },
+  "Piani di carico": {
+    "message": "Planovi utovara"
+  },
+  "WMS": {
+    "message": "WMS"
+  },
+  "Pianificazione": {
+    "message": "Planiranje"
+  },
+  "Commesse di produzione": {
+    "message": "Nalog proizvodnje"
+  },
+  "MS - Master scheduling": {
+    "message": "MS - Glavno vremensko raspoređivanje"
+  },
+  "CRP-Capacity requirements": {
+    "message": "CRP - Potrebe za kapacitetima"
+  },
+  "Produzione": {
+    "message": "Proizvodnja"
+  },
+  "MRP": {
+    "message": "MRP"
+  },
+  "PP - Production in progress": {
+    "message": "PP - Proizvodnja u tijeku"
+  },
+  "Gestione ore produzione": {
+    "message": "Upravljanje proizvodnim satima"
+  },
+  "Controllo produzione": {
+    "message": "Proizvodna kontrola"
+  },
+  "Fluentis MES": {
+    "message": "Fluentis MES"
+  },
+  "Conto lavoro": {
+    "message": "Podizvođač"
+  },
+  "Ordini di conto lavoro": {
+    "message": "Nalozi podizvođača"
+  },
+  "DDT di consegna": {
+    "message": "Otpremnica"
+  },
+  "Rientri": {
+    "message": "Isporuka robe na skladište"
+  },
+  "Listini di conto lavoro": {
+    "message": "Cjenici radnih naloga"
+  },
+  "Gestione progetti": {
+    "message": "Upravljanje projektima"
+  },
+  "Progetti": {
+    "message": "Projekti"
+  },
+  "Richieste di intervento": {
+    "message": "Zahtjevi za intervencijom"
+  },
+  "Interventi pianificati": {
+    "message": "Planirane intervencije"
+  },
+  "Interventi": {
+    "message": "Intervencije"
+  },
+  "Attività": {
+    "message": "Aktivnost"
+  },
+  "Stato avanzamento lavori": {
+    "message": "Stanje Napretka Radova"
+  },
+  "Pianificazione a calendario delle risorse": {
+    "message": "Planiranje resursa prema kalendaru"
+  },
+  "Qualità": {
+    "message": "Kvaliteta"
+  },
+  "Documenti di origine esterna": {
+    "message": "Dokumenti vanjskog podrijetla"
+  },
+  "Documenti di origine interna": {
+    "message": "Dokumenti s unutarnjim podrijetlom"
+  },
+  "Controllo articolo": {
+    "message": "Kontrola Artikla"
+  },
+  "Reclami e non conformità": {
+    "message": "Reklamacije i nesukladnosti"
+  },
+  "Azioni corretive": {
+    "message": "Korektivne radnje"
+  },
+  "Taratura strumenti": {
+    "message": "Kalibracija uređaja"
+  },
+  "DDMRP": {
+    "message": "DDMRP"
+  },
+  "Procedure": {
+    "message": "Procedure"
+  },
+  "Forms e report": {
+    "message": "Obrasci i izvještaji"
+  },
+  "theme.ErrorPageContent.title": {
+    "message": "This page crashed.",
+    "description": "The title of the fallback page when the page crashed"
+  },
+  "theme.admonition.note": {
+    "message": "note",
+    "description": "The default label used for the Note admonition (:::note)"
+  },
+  "theme.admonition.tip": {
+    "message": "tip",
+    "description": "The default label used for the Tip admonition (:::tip)"
+  },
+  "theme.admonition.danger": {
+    "message": "danger",
+    "description": "The default label used for the Danger admonition (:::danger)"
+  },
+  "theme.admonition.info": {
+    "message": "info",
+    "description": "The default label used for the Info admonition (:::info)"
+  },
+  "theme.admonition.caution": {
+    "message": "caution",
+    "description": "The default label used for the Caution admonition (:::caution)"
+  },
+  "theme.BackToTopButton.buttonAriaLabel": {
+    "message": "Scroll back to top",
+    "description": "The ARIA label for the back to top button"
+  },
+  "theme.blog.archive.title": {
+    "message": "Archive",
+    "description": "The page & hero title of the blog archive page"
+  },
+  "theme.blog.archive.description": {
+    "message": "Archive",
+    "description": "The page & hero description of the blog archive page"
+  },
+  "theme.colorToggle.ariaLabel": {
+    "message": "Switch between dark and light mode (currently {mode})",
+    "description": "The ARIA label for the navbar color mode toggle"
+  },
+  "theme.colorToggle.ariaLabel.mode.dark": {
+    "message": "dark mode",
+    "description": "The name for the dark color mode"
+  },
+  "theme.colorToggle.ariaLabel.mode.light": {
+    "message": "light mode",
+    "description": "The name for the light color mode"
+  },
+  "theme.docs.breadcrumbs.navAriaLabel": {
+    "message": "Breadcrumbs",
+    "description": "The ARIA label for the breadcrumbs"
+  },
+  "theme.docs.DocCard.categoryDescription": {
+    "message": "{count} items",
+    "description": "The default description for a category card in the generated index about how many items this category includes"
+  },
+  "theme.docs.tagDocListPageTitle.nDocsTagged": {
+    "message": "One doc tagged|{count} docs tagged",
+    "description": "Pluralized label for \"{count} docs tagged\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
+  },
+  "theme.docs.tagDocListPageTitle": {
+    "message": "{nDocsTagged} with \"{tagName}\"",
+    "description": "The title of the page for a docs tag"
+  },
+  "theme.docs.versionBadge.label": {
+    "message": "Version: {versionLabel}"
+  },
+  "theme.navbar.mobileVersionsDropdown.label": {
+    "message": "Versions",
+    "description": "The label for the navbar versions dropdown on mobile view"
+  },
+  "theme.blog.sidebar.navAriaLabel": {
+    "message": "Blog recent posts navigation",
+    "description": "The ARIA label for recent posts in the blog sidebar"
+  },
+  "theme.CodeBlock.wordWrapToggle": {
+    "message": "Toggle word wrap",
+    "description": "The title attribute for toggle word wrapping button of code block lines"
+  },
+  "theme.DocSidebarItem.toggleCollapsedCategoryAriaLabel": {
+    "message": "Toggle the collapsible sidebar category '{label}'",
+    "description": "The ARIA label to toggle the collapsible sidebar category"
+  },
+  "theme.NavBar.navAriaLabel": {
+    "message": "Main",
+    "description": "The ARIA label for the main navigation"
+  },
+  "theme.navbar.mobileLanguageDropdown.label": {
+    "message": "Languages",
+    "description": "The label for the mobile language switcher dropdown"
+  },
+  "theme.TOCCollapsible.toggleButtonLabel": {
+    "message": "On this page",
+    "description": "The label used by the button on the collapsible TOC component"
+  },
+  "theme.blog.post.readMoreLabel": {
+    "message": "Read more about {title}",
+    "description": "The ARIA label for the link to full blog posts from excerpts"
+  },
+  "theme.docs.breadcrumbs.home": {
+    "message": "Home page",
+    "description": "The ARIA label for the home page in the breadcrumbs"
+  },
+  "theme.docs.sidebar.navAriaLabel": {
+    "message": "Docs sidebar",
+    "description": "The ARIA label for the sidebar navigation"
+  },
+  "theme.docs.sidebar.closeSidebarButtonAriaLabel": {
+    "message": "Close navigation bar",
+    "description": "The ARIA label for close button of mobile sidebar"
+  },
+  "theme.navbar.mobileSidebarSecondaryMenu.backButtonLabel": {
+    "message": "← Back to main menu",
+    "description": "The label of the back button to return to main menu, inside the mobile navbar sidebar secondary menu (notably used to display the docs sidebar)"
+  },
+  "theme.docs.sidebar.toggleSidebarButtonAriaLabel": {
+    "message": "Toggle navigation bar",
+    "description": "The ARIA label for hamburger menu button of mobile navigation"
+  },
+  "cmfcmf/d-s-l.searchBar.placeholder": {
+    "message": "Traži...",
+    "description": "Placeholder shown in the searchbar"
+  },
+  "cmfcmf/d-s-l.searchBar.clearButtonTitle": {
+    "message": "Izbriši",
+    "description": "Title of the button to clear the current search input"
+  },
+  "cmfcmf/d-s-l.searchBar.detachedCancelButtonText": {
+    "message": "Izbriši",
+    "description": "Text of the button to close the detached search window"
+  },
+  "cmfcmf/d-s-l.searchBar.submitButtonTitle": {
+    "message": "Traži",
+    "description": "Title of the button to submit a new search"
+  },
+  "cmfcmf/d-s-l.searchBar.noResults": {
+    "message": "Nema pronađenih rezultata.",
+    "description": "message shown if no results are found"
+  },
+  "theme.ErrorPageContent.tryAgain": {
+    "message": "Try again",
+    "description": "The label of the button to try again rendering when the React error boundary captures an error"
+  },
+  "Automezzi": {
+    "message": "Motorna vozila"
+  },
+  "Controlli articolo": {
+    "message": "Kontrola artikala"
+  },
+  "Azioni correttive": {
+    "message": "Korektivne radnje"
+  },
+  "Qualificazione fornitore": {
+    "message": "Kvalifikacija dobavljača"
+  },
+  "theme.admonition.warning": {
+    "message": "warning",
+    "description": "The default label used for the Warning admonition (:::warning)"
+  },
+  "theme.DocSidebarItem.expandCategoryAriaLabel": {
+    "message": "Expand sidebar category '{label}'",
+    "description": "The ARIA label to expand the sidebar category"
+  },
+  "theme.DocSidebarItem.collapseCategoryAriaLabel": {
+    "message": "Collapse sidebar category '{label}'",
+    "description": "The ARIA label to collapse the sidebar category"
+  },
+  "theme.unlistedContent.title": {
+    "message": "Unlisted page",
+    "description": "The unlisted content banner title"
+  },
+  "theme.unlistedContent.message": {
+    "message": "This page is unlisted. Search engines will not index it, and only users having a direct link can access it.",
+    "description": "The unlisted content banner message"
+  }
+}

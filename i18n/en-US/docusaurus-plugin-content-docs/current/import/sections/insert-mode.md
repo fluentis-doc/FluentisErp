@@ -1,0 +1,1 @@
+**Data is entered manually**, using the **field help** or can be suggested by **connected procedures**.

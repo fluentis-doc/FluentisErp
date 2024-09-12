@@ -1,0 +1,138 @@
+{
+  "title": {
+    "message": " ACADEMY",
+    "description": "The title in the navbar"
+  },
+  "item.label.Guida": {
+    "message": "Upute",
+    "description": "Navbar item with label Guida"
+  },
+  "item.label.Documenti": {
+    "message": "Dokumenti",
+    "description": "Navbar item with label Documenti"
+  },
+  "item.label.Area": {
+    "message": "Područje",
+    "description": "Navbar item with label Area"
+  },
+  "item.label.Acquisti": {
+    "message": "Nabava",
+    "description": "Navbar item with label Acquisti"
+  },
+  "item.label.Vendite": {
+    "message": "Prodaja",
+    "description": "Navbar item with label Vendite"
+  },
+  "item.label.Conto Lavoro": {
+    "message": "Podizvođač",
+    "description": "Navbar item with label Conto Lavoro"
+  },
+  "item.label.Home": {
+    "message": "Početna stranica",
+    "description": "Navbar item with label Home"
+  },
+  "item.label.Amministrativa": {
+    "message": "Administracija",
+    "description": "Navbar item with label Amministrativa"
+  },
+  "item.label.Tesoreria": {
+    "message": "Riznica",
+    "description": "Navbar item with label Tesoreria"
+  },
+  "item.label.Controlling": {
+    "message": "Kontroling",
+    "description": "Navbar item with label Controlling"
+  },
+  "item.label.Logistica": {
+    "message": "Logistika",
+    "description": "Navbar item with label Logistica"
+  },
+  "item.label.Pianificazione": {
+    "message": "Planiranje",
+    "description": "Navbar item with label Pianificazione"
+  },
+  "item.label.Produzione": {
+    "message": "Proizvodnja",
+    "description": "Navbar item with label Produzione"
+  },
+  "item.label.Gestione progetti": {
+    "message": "Upravljanje projektima",
+    "description": "Navbar item with label Gestione progetti"
+  },
+  "item.label.Quality": {
+    "message": "Kvaliteta",
+    "description": "Navbar item with label Quality"
+  },
+  "item.label.EAM": {
+    "message": "EAM",
+    "description": "Navbar item with label EAM"
+  },
+  "logo.alt": {
+    "message": "Logo",
+    "description": "The alt text of navbar logo"
+  },
+  "item.label.Release Notes": {
+    "message": "Release Notes",
+    "description": "Navbar item with label Release Notes"
+  },
+  "item.label.Formazione": {
+    "message": "Obrazovanje",
+    "description": "Navbar item with label Formazione"
+  },
+  "item.label.Aree": {
+    "message": "Područja",
+    "description": "Navbar item with label Aree"
+  },
+  "item.label.Impostazioni": {
+    "message": "Postavke",
+    "description": "Navbar item with label Impostazioni"
+  },
+  "item.label.FAQ": {
+    "message": "FAQ",
+    "description": "Navbar item with label FAQ"
+  },
+  "item.label.Video": {
+    "message": "Video",
+    "description": "Navbar item with label Video"
+  },
+  "item.label.Anagrafiche": {
+    "message": "Šifarnici",
+    "description": "Navbar item with label Anagrafiche"
+  },
+  "item.label.DDMRP": {
+    "message": "DDMRP",
+    "description": "Navbar item with label DDMRP"
+  },
+  "item.label.CRM": {
+    "message": "CRM",
+    "description": "Navbar item with label CRM"
+  },
+  "item.label.Qualità": {
+    "message": "Kvaliteta",
+    "description": "Navbar item with label Qualità"
+  },
+  "item.label.Context Panel": {
+    "message": "Context Panel",
+    "description": "Navbar item with label Context Panel"
+  },
+  "item.label.Configurazione": {
+    "message": "Konfiguriranje",
+    "description": "Navbar item with label Configurazione"
+  },
+  "item.label.Form navigator": {
+    "message": "Form navigator",
+    "description": "Navbar item with label Form navigator"
+  },
+  "item.label.Object Navigator": {
+    "message": "Object Navigator",
+    "description": "Navbar item with label Object Navigator"
+  },
+  "item.label.Strumenti": {
+    "message": "Alati",
+    "description": "Navbar item with label Strumenti"
+  },
+  "item.label.Varie": {
+    "message": "Razno",
+    "description": "Navbar item with label Varie"
+  }
+}

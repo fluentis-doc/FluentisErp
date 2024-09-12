@@ -1,0 +1,118 @@
+name: Localize New Pages
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'docs/**' # Trigger the workflow when changes are made to files in the /docs folder
+  workflow_dispatch:
+jobs:
+  localize:
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+      contents: write
+    strategy:
+      matrix:
+        lang: ["ro-RO", "en-US", "hr-HR"]
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
+    - name: Print changed files
+      run: |
+        git diff --name-only ${{ github.event.before }} ${{ github.sha }}
+
+
+    - name: Get new files
+      id: new_files
+      run: |
+        NEW_FILES=$(git diff --name-status HEAD~1 HEAD | grep '^A' | awk '{print $2}')
+        if [ -z "$NEW_FILES" ]; then
+        echo "No new files detected."
+        #exit 1
+        else
+        echo "New files detected: $NEW_FILES"
+        NEW_FILES=$(echo "$NEW_FILES" | tr '\n' ' ')
+        echo "new_files=$NEW_FILES" >> $GITHUB_ENV
+        fi
+
+    - name: Translate new files
+      if: ${{ env.new_files != '' }}
+      uses: maibine/git_training/TranslateActionSolution@master
+      with:
+        openai_api_key: ${{ secrets.OPENAI_API_KEY }}
+        lang: ${{ matrix.lang }}
+        input_dir: './docs'
+        repo_dir: './'
+
+    - name: Commit and push changes
+      if: ${{ env.new_files != '' }}
+      env:
+        LANG: ${{ matrix.lang }}
+      run: |
+        git config --global user.name 'github-actions[bot]'
+        git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+        git checkout -b "locale-${LANG:0:2}" || git checkout "locale-${LANG:0:2}"
+        #ls -lR i18n/${{ matrix.lang }}/docusaurus-plugin-content-docs/current
+        echo 'checkout done'
+        git pull origin "locale-${LANG:0:2}" --rebase
+        echo 'pull done'
+        #ls -lR i18n/${{ matrix.lang }}/docusaurus-plugin-content-docs/current
+        git merge main
+        echo 'merge done'
+        git add "i18n/${{ matrix.lang }}/docusaurus-plugin-content-docs/current"
+        git commit -m "Add new localized pages for ${{ matrix.lang }}"
+        git push origin "locale-${LANG:0:2}"
+
+    - name: Create issues for translation review
+      if: ${{ env.new_files != '' }}
+      env:
+        GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        NEW_FILES: ${{ env.new_files }}
+        LANG: ${{ matrix.lang }}
+        REPO: ${{ github.repository }}
+      run: |
+        # Convert the space-separated list of new files into newline-separated list
+        new_files=$(echo "$NEW_FILES" | tr ' ' '\n')
+
+        # Initialize the body with the first line using printf
+        body="The following new pages auto translated to **${LANG} language** need to be reviewed:\n"
+
+        # Append each file to the body with proper formatting
+        for file in $new_files; do
+          # Remove 'docs/' prefix from file paths
+          processed_file=$(echo "$file" | sed 's/^docs\///')
+          
+          # Debug: Print processed file name to check correctness
+          echo "DEBUG: Processed file - $processed_file"
+          
+          body+="- [${processed_file}](https://github.com/${REPO}/edit/locale-${LANG:0:2}/i18n/${LANG}/docusaurus-plugin-content-docs/current/${processed_file})\n"
+        done
+
+        echo "DEBUG: Body content1 - $body"
+
+        # Write the body to a temporary file
+        temp_file=$(mktemp)
+        echo -e "$body" > "$temp_file"
+
+        # Export the content of the temporary file
+        export msg=$(cat "$temp_file")
+
+        # Debug: Print the body content from the file to verify new lines
+        echo "DEBUG: Body content2 - $msg"
+
+        # Create the GitHub issue using the temporary file for the body
+        gh issue create \
+          --title ""$LANG" - Review new translated pages" \
+          --assignee "Adi-Fluentis" \
+          --label "translation" \
+          --body "$msg"
+
+        # Clean up the temporary file
+        rm "$temp_file"
+
+
