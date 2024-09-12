@@ -15,7 +15,7 @@ E' quindi possibile procedere per poterla agganciare all’evasione di DDT e ord
 Una volta cliccato il bottone di Creazione fattura di acquisto, si aprirà una finestra in cui indicare il conto del fornitore da utilizzare. Se il conto non esiste, sarà possibile crearlo.
 Una volta confermato il conto, si aprirà un’ulteriore finestra Valori da utilizzare, nella quale vengono richiesti i seguenti dati:
 
-![](/img/it-it/finance-area/e-invoice/purchase-invoice-creation/Img1.png)
+![](/img/it-it/finance-area/e-invoice/purchase-invoice-creation/img1.png)
 
 **Tipo fattura di acquisto:** indicare la tipologia di documento da creare;
 
@@ -39,11 +39,11 @@ Le anagrafiche articolo potranno avere una codifica interna anche diversa da que
 Esempio: Codice - MATCH1  Descrizione - PT 2,5 BU
 Dentro questa anagrafica dovrà essere valorizzata la sezione del *fornitore preferenziale* con indicazione del fornitore in questione e relativa codifica adottata dal fornitore per questo articolo.
 
-![](/img/it-it/finance-area/e-invoice/purchase-invoice-creation/Img5.png)
+![](/img/it-it/finance-area/e-invoice/purchase-invoice-creation/img5.png)
 
 Il fornitore potrebbe adottare un tipo di codifica o anche più di uno come visibile nell'immagine.
 
-![](/img/it-it/finance-area/e-invoice/purchase-invoice-creation/Img3.png)
+![](/img/it-it/finance-area/e-invoice/purchase-invoice-creation/img3.png)
 
 Ad esempio una codifica EAN o di altro tipo.
 
@@ -53,11 +53,11 @@ Verrà letta la prima codifica presente nel documento xml, nell'esempio la codif
 
 All'interno dell'anagrafica del fornitore dovrà dunque essere inserito il codice del tipo codifica valido per il fornitore stesso (tab *Informazioni fiscali*)
 
-![](/img/it-it/finance-area/e-invoice/purchase-invoice-creation/Img6.png)
+![](/img/it-it/finance-area/e-invoice/purchase-invoice-creation/img6.png)
 
 Se le configurazioni vengono fatte correttamente il risultato della creazione della fattura è il seguente, dove si può notare che è presente una riga non codificata per le spese di trasporto non previste a priori.
 
-![](/img/it-it/finance-area/e-invoice/purchase-invoice-creation/Img4.png)
+![](/img/it-it/finance-area/e-invoice/purchase-invoice-creation/img4.png)
 
 ---
 
@@ -73,6 +73,6 @@ Uscirà una finestra per avvisare l’Operazione completata ed un’altra finest
 Documenti di chiusura con i dettagli del collegamento
 
 
-![](/img/it-it/finance-area/e-invoice/purchase-invoice-creation/Img2.png)
+![](/img/it-it/finance-area/e-invoice/purchase-invoice-creation/img2.png)
 
 Da questo momento il ddt di acquisto e la fattura sono collegati. È possibile verificare il collegamento all’interno della Fattura di acquisto, che contiene il riferimento al ddt nel tab Articoli
