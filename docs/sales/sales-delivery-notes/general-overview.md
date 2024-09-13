@@ -6,9 +6,9 @@ sidebar_position: 1
 Il modulo si trova nell'area **Vendite > DDT**.
 
 Prima di utilizzare il modulo, è necessario compilare le seguenti tabelle:     
+> - [Numerazioni](/docs/configurations/tables/fluentis-numerations)    
 > - [Parametri DDT](/docs/configurations/parameters/sales/dn-parameters)
 > - [Parametri raggruppamento DDT](/docs/configurations/parameters/sales/dn-grouping)
-> - [Numerazioni](/docs/configurations/tables/fluentis-numerations)    
 > - [Tipo DDT](/docs/configurations/tables/sales/delivery-notes-type)     
 
 Permette:

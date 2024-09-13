@@ -20,6 +20,7 @@ La griglia di ordini e DDT contiene le seguenti colonne:
 - Sconto Totale
 - Importo Netto
 - Prezzo Unitario Netto        
+
 Le righe già collegate agli articoli della fattura saranno evidenziate in verde per facilitarne l'identificazione.
 
 La griglia delle fatture contiene le seguenti colonne:        
@@ -32,6 +33,7 @@ La griglia delle fatture contiene le seguenti colonne:
 - Sconto Totale
 - Importo Netto
 - Prezzo Unitario Netto      
+
 Le righe già collegate agli articoli di DDT o Ordini saranno evidenziate per facilitare la verifica.
 
 In queste griglie vengono visualizzate solo le righe dei DDT o degli Ordini che non sono state eseguite o forzate in precedenza. 
@@ -49,4 +51,5 @@ Durante la fase di collegamento, il sistema esegue alcuni controlli per garantir
 - Sconti: Discrepanze tra i valori totali degli sconti.
 - Prezzo Netto Unitario: Differenze tra il prezzo netto unitario indicato nella fattura e quello riportato nei DDT/Ordini.
 - Importo Totale: Differenze tra l'importo totale della fattura e la somma degli importi totali delle righe eseguite nei DDT/Ordini.
+
 Se uno o più di questi controlli falliscono, il collegamento non viene effettuato automaticamente e l'errore viene riportato nella griglia degli errori, con l'indicazione del numero di riga della fattura e la descrizione dell'errore.

@@ -13,6 +13,8 @@ Sempre da questa form è possibile *creare nuove commesse*, sia **monoprodotto**
 
 Facendo doppio clic su una delle commesse presenti nella griglia di risultato si entrerà nel dettaglio della commessa, i cui dati verranno approfonditi negli articoli Inserimenti nuova commessa monoprodotto e Inserimento nuova commessa multiprodotto.
 
+La colonna *Costificata*, se il flag è attivo, indica che la commessa ha già almeno una costificazione al suo interno.
+
 :::note **Nota bene**
 La differenza tra la form **Commesse di produzione** e la form **Commesse di produzione (dettagli)**, è  che in quest'ultima è possibile visualizzare in griglia anche gli articoli presenti all'interno della commessa, mentre in quella senza dettagli sono visualizzati solo i dati di testata delle commesse di produzione.     
 :::

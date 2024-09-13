@@ -5,11 +5,11 @@ sidebar_position: 1
 
 Il modulo si trova sul percorso **Vendite > Fatture di vendita**.
 
-Prima di utilizzare il modulo, è necessario compilare i seguenti parametri e tabelle:      
+Prima di utilizzare il modulo, è necessario compilare i seguenti parametri e tabelle:     
+> - [Numerazioni](/docs/configurations/tables/fluentis-numerations)  
 > - [Parametri fatture di vendita](/docs/configurations/parameters/sales/sales-invoices-parameters)
 > - [Parametri raggruppamento fatture di vendita](/docs/configurations/parameters/sales/invoice-grouping)
-> - [Fatturato vendite](/docs/configurations/tables/sales/sales-turnover)
-> - [Numerazioni](/docs/configurations/tables/fluentis-numerations)    
+> - [Fatturato vendite](/docs/configurations/tables/sales/sales-turnover)   
 > - [Tipi fatture](/docs/configurations/tables/sales/invoices-type)
 
 Permette:

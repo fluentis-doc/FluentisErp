@@ -56,6 +56,8 @@ Nelle griglie di risultato per magazzino si vedranno le varie righe di disponibi
 
 Nella griglia di dettaglio si vedranno invece, cliccando sulla riga d'interesse nella griglia di magazzino, tutti i documenti collegati a quella singola riga. Quindi l'ordine cliente a cui fa riferimento, l'ordine di produzione e la commessa di riferimento ed eventuali documenti di vendita se presenti (come DDT, fatture).
 
+*In ritardo*: rappresenta la somma algebrica di tutti i documenti in ritardo (con data consegna antecedente ad oggi) presenti nella disponibilità, quindi è dato dalla somma dei valori nella colonna domanda meno la somma dei valori della colonna offerta ma solo per i documenti in ritardo.
+
 Tramite un doppio click del tasto sx del mouse sulla riga seleziona è possibile aprire il relativo documento.     
 
 :::note Nota

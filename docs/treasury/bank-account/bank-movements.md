@@ -3,15 +3,6 @@ title: Movimenti Bancari
 sidebar_position: 1
 ---
 
-:::note Percorso
-**Tesoreria>C/C Bancari>Movimenti Bancari**
-
-Nota:
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
-
-:::
-
----
 
 Il modulo conti correnti consente all'operatore di controllare e riconciliare i movimenti bancari in contabilità con l'estratto conto (o lista movimenti) che è possibile scaricare come file telematico da molti siti di Corporate banking. 
 

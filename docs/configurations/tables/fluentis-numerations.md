@@ -89,6 +89,6 @@ Questa griglia è collegata alla politica selezionata nella griglia sopra.
 
 **Numerazione esterna**: deve essere spuntato nel caso in cui la numerazione non venga attribuita da Fluentis ma venga assegnata da sistemi esterni;
 
-**Formula numero**: campo non utilizzato;
+**Formula numero**: in questo campo è possibile associare una formula da utilizzare per il range di date selezionato nella prima griglia;
 
 **Disabilitato**: per disabilitare l'utilizzo del range in oggetto.

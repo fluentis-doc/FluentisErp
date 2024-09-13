@@ -3,99 +3,98 @@ title: Roadmap per startup nuovo ambiente operativo - PROCEDURA FAST START
 sidebar_position: 1
 ---
 
-In questa sezione è presente la roadmap e le check list (espandere) per l'avviamento (di base) di un nuovo ambiente NON configurato con la procedura di Fast Start.
+Il **Fast Start** è una procedura progettata per semplificare e velocizzare l'inizializzazione del software gestionale, consentendo di popolare automaticamente il sistema con parametri e tabelle di base. Questa funzionalità riduce notevolmente il tempo e lo sforzo richiesto per la configurazione iniziale, evitando l'inserimento manuale di ogni singola impostazione.
 
 ---
 <details>
 
   <summary>Fast Start (Click to expand)</summary>
   
-  Accedere alla tabella SOCIETA'
+  Per lanciare la procedura, accedere alla tabella Società e premere il tasto *Impostazioni Generali*.
 
-  > Premere il tasto *Impostazioni Generali*
-
-  ATTENZIONE: non deve essere già stato popolato il paino dei conti (in nessuna parte) e nemmeno altre tabelle coinvolte dalla procedura. Si consiglia di decidere subito ed eseguire come prima cosa dopo l'installazione.
+  ATTENZIONE: non deve essere già stato popolato il piano dei conti (in nessuna parte) e nemmeno altre tabelle coinvolte dalla procedura. Si consiglia di decidere subito ed eseguire come prima cosa questa procedura dopo l'installazione.
 
 Tabelle coinvolte (Stored Procedure Fluentis.SH_CreateNewYear_IT):
     
-    > Tipi conto
-    > Piano dei conti
-    > Parametri di contabilità generale
-    > Parametri cespiti
-    > Parametri portafoglio (attivo- effetti)
-    > Parametri insoluti
-    > Parametri MPS
-    > Causali contabili
-    > Codici IVA
-    > Registri IVA
-    > Tipi documento
-    > Tipi pagamento
-    > Soluzioni pagamento
-    > Categorie Agenti
-    > Tipi ritenuta (d'acconto)
-    > Categorie cespiti
-    > Tipi flusso finanziario
-    > Tipi anticipo
-    > Stati insoluto
-    > Stati effetti
-    > Tipi distinta di presentazione (effetti)
-    > Tipi effetti
-    > Link tra la tabella Tipi pagamento e i tipi effetto
-    > Numerazioni registrazioni contabili (definitive e provvisorie)
-    > Numerazione partite
-    > Numerazione compensazioni (partite)
-    > Numerazione pagamenti fronitori
-    > Numerazione intrastat
-    > Numerazione DDT
-    > Numerazione liquidazioni agenti
-    > Numerazione distinte di presentazione effetti
-    > Numerazione effetti
-    > Numerazione fatture (Acquisto e vendita)
-    > Numerazione DDT (Acquisto e vendita)
-    > Numerazione ordini (Clienti e fornitori)
-    > Numerazione offerte
-    > Numerazione progetti
-    > Numerazione interventi
-    > Tipi fattura (acquisto e vendita) con collegamento alle causali contabili
-    > Tipi DDT (acquisto vendita) con collegamento ai tipi fattura
-    > Tipi Ordine (acquisto e vendita) con collegamento ai tipi DDT
-    > Tipi offerta
-    > Tipi progetto (sales job order)
-    > Tipi intervento
-    > Tipi richiesta intervento (e relativa numerazione)
-    > Tipi interventi pianificati (e numerazione)
-    > Tipi rientro conto lavoro (e numerazione)
-    > Tipi ordini conto lavoro (e numerazione)
-    > Tipi commesse di produzione (e numerazione)
-    > Tipi ordini pianificati di acquisto (e numerazione)
-    > Tipi ordini pianificati di produzione (e numerazione)
-    > Tipi ordini pianificati di conto lavoro (e numerazione)
-    > Tipi o rdini di produzione (e numerazione)
-    > Tipi ordini di conto lavoro (e numerazione)
-    > Tipi RDA (e numerazione)
-    > (Tipi) fatturato vendite
-    > (Tipi) fatturato acquisti
-    > Tipi listino
-    > Tipi indirizzo
-    > Tipi sconto
-    > Lingue
-    > Nazioni
-    > Nazioni Black list
-    > Divise
-    > Unità di misura
-    > Porto (Incoterms - termini di resa)
-    > Spedizioni (tipi)
-    > Modelli di riclassificazione (controlling)
-    > Collegamento del modello di riclassificazione per Bilancio CEE con dettaglio piano dei conti
-    > Orari di lavoro (gest. dipendenti)
-    > Severità (ticket CRM)
-    > SLA (ticket CRM)
-    > Tipi Ticket CRM (e numerazione)
-    > Versioni distinta base
-    > Classi articolo
-    > Magazzini
-    > Causali di magazzino
-    > Dati di default per il CRM (Tipi contatto, Visit report, Opportunità, Qualità contatto, percentuali di successo ecc...)
+ - > Tipi conto
+ - > Piano dei conti
+ - > Parametri di contabilità generale
+ - > Parametri cespiti
+ - > Parametri portafoglio (attivo- effetti)
+ - > Parametri insoluti
+ - > Parametri MPS
+ - > Causali contabili
+ - > Codici IVA
+ - > Registri IVA
+ - > Tipi documento
+ - > Tipi pagamento
+ - > Soluzioni pagamento
+ - > Categorie Agenti
+ - > Tipi ritenuta (d'acconto)
+ - > Categorie cespiti
+ - > Tipi flusso finanziario
+ - > Tipi anticipo
+ - > Stati insoluto
+ - > Stati effetti
+ - > Tipi distinta di presentazione (effetti)
+ - > Tipi effetti
+ - > Link tra la tabella Tipi pagamento e i tipi effetto
+ - > Numerazioni registrazioni contabili (definitive e provvisorie)
+ - > Numerazione partite
+ - > Numerazione compensazioni (partite)
+ - > Numerazione pagamenti fronitori
+ - > Numerazione intrastat
+ - > Numerazione liquidazioni agenti
+ - > Numerazione distinte di presentazione effetti
+ - > Numerazione effetti
+ - > [Numerazione documenti di vendita](/docs/configurations/tables/fluentis-numerations)
+ - > [Numerazione documenti di acquisto](/docs/configurations/tables/fluentis-numerations)
+ - > Tipi fattura ([acquisto](/docs/configurations/tables/purchase/purchase-invoices-type) e [vendita](/docs/configurations/tables/sales/invoices-type)) con collegamento alle causali contabili
+ - > Tipi DDT ([acquisto](/docs/configurations/tables/purchase/purchase-delivery-notes-type) e [vendita](/docs/configurations/tables/sales/delivery-notes-type)) con collegamento ai tipi fattura
+ - > Tipi Ordine ([acquisto](/docs/configurations/tables/purchase/purchase-orders-type) e [vendita](/docs/configurations/tables/sales/sales-order-types)) con collegamento ai tipi DDT
+ - > [Tipi offerta](/docs/configurations/tables/sales/sales-offer-type)
+ - > [Parametri fatture](/docs/configurations/parameters/sales/sales-invoices-parameters) e relativi [raggruppamenti](/docs/configurations/parameters/sales/invoice-grouping) 
+ - > [Parametri DDT](/docs/configurations/parameters/sales/dn-parameters) e relativi [raggruppamenti](/docs/configurations/parameters/sales/dn-grouping) 
+ - > [Parametri ordini](/docs/configurations/parameters/sales/sales-orders-parameters) e relativi [raggruppamenti](/docs/configurations/parameters/sales/orders-grouping)
+ - > [Parametri offerte](/docs/configurations/parameters/sales/offer-parameters)
+ - > Tipi progetto (sales job order)
+ - > Tipi intervento
+ - > Numerazione progetti
+ - > Numerazione interventi
+ - > Tipi richiesta intervento (e relativa numerazione)
+ - > Tipi interventi pianificati (e numerazione)
+ - > Tipi rientro conto lavoro (e numerazione)
+ - > Tipi ordini conto lavoro (e numerazione)
+ - > Tipi commesse di produzione (e numerazione)
+ - > Tipi ordini pianificati di acquisto (e numerazione)
+ - > Tipi ordini pianificati di produzione (e numerazione)
+ - > Tipi ordini pianificati di conto lavoro (e numerazione)
+ - > Tipi o rdini di produzione (e numerazione)
+ - > Tipi ordini di conto lavoro (e numerazione)
+ - > Tipi RDA (e numerazione)
+ - > (Tipi) fatturato vendite
+ - > (Tipi) fatturato acquisti
+ - > Tipi listino
+ - > Tipi indirizzo
+ - > Tipi sconto
+ - > Lingue
+ - > Nazioni
+ - > Nazioni Black list
+ - > Divise
+ - > Unità di misura
+ - > Porto (Incoterms - termini di resa)
+ - > Spedizioni (tipi)
+ - > Modelli di riclassificazione (controlling)
+ - > Collegamento del modello di riclassificazione per Bilancio CEE con dettaglio piano dei conti
+ - > Orari di lavoro (gest. dipendenti)
+ - > Severità (ticket CRM)
+ - > SLA (ticket CRM)
+ - > Tipi Ticket CRM (e numerazione)
+ - > Versioni distinta base
+ - > Classi articolo
+ - > Magazzini
+ - > Causali di magazzino
+ - > Dati di default per il CRM (Tipi contatto, Visit report, Opportunità, Qualità contatto, percentuali di successo ecc...)
 
 
 
@@ -105,13 +104,15 @@ Tabelle coinvolte (Stored Procedure Fluentis.SH_CreateNewYear_IT):
 
 **AMBIENTE CUSTOM SENZA FAST START**
 
-### TABELLE DI BASE
+Nel caso in cui non si lanci il Fast Start, è necessario popolare manualmente le seguenti tabelle.      
+
+## TABELLE DI BASE
 
 <details>
 
   <summary>NAZIONI Click to expand!</summary>
  
- ## Tabella necessaria per tutti i idocumenti e lìinserimento di anagrafiche CLI FOR
+ ## Tabella necessaria per tutti i idocumenti e l'inserimento di anagrafiche CLI FOR
 
   1. Compilare codice (può essere anche interno ma si consiglia quello internazionale) e descrizione 
   2. Controllare in particolare il campo COD ISO EU che se mancante non memorizza il precodice partita IVA, attenzione a casi particolari
@@ -188,7 +189,9 @@ Attenzione al collegamento con i tipi effetto (griglia basso DX) altrimenti non 
 
 </details>
 
-### TABELLE AMMINISTRAZIONE - Contabilità di base
+## TABELLE AMMINISTRAZIONE 
+
+### Contabilità di base
 
 <details>
 
@@ -251,8 +254,6 @@ Attenzione al collegamento con i tipi effetto (griglia basso DX) altrimenti non 
 </details>
 
 
-### ANAGRAFICHE DI BASE - Contabilità di base
-
 <details>
 
   <summary>PIANO DEI CONTI Click to expand!</summary>
@@ -269,7 +270,6 @@ Attenzione al collegamento con i tipi effetto (griglia basso DX) altrimenti non 
 
 </details>
 
-### PARAMETRI - Contabilità di base
 
 <details>
 
@@ -284,11 +284,8 @@ Attenzione al collegamento con i tipi effetto (griglia basso DX) altrimenti non 
   5. Inserire gli abbinamenti tra mastri relativi a clienti e fornitori, banche e agenti ed i relativi tipi conto
   6. Definire i conti per le procedure automatiche nel secondo tab
  
-    
 
 </details>
-
-### CAUSALI CONTABILI - Contabilità di base
 
 <details>
 
@@ -307,10 +304,9 @@ Attenzione al collegamento con i tipi effetto (griglia basso DX) altrimenti non 
   9. Prevedere impostazioni per invio autofatture SDI e una causale per acquisto servizi Extra UE non iva con aggancio ad autofattura  
  
     
-
 </details>
 
-### GESTIONE CESPITI
+### Gestione cespiti
 
 <details>
 
@@ -347,7 +343,7 @@ Attenzione al collegamento con i tipi effetto (griglia basso DX) altrimenti non 
 
 </details>
 
-### GESTIONE PERCIPIENTI
+### Gestione percipienti
 
 <details>
 
@@ -374,9 +370,9 @@ Attenzione al collegamento con i tipi effetto (griglia basso DX) altrimenti non 
 
 ---
 
-### TESORERIA
+## TABELLE TESORERIA
 
-### PORTAFOGLIO ATTIVO
+### Portafoglio attivo
 
 <details>
 
@@ -452,7 +448,7 @@ Attenzione al collegamento con i tipi effetto (griglia basso DX) altrimenti non 
    
 </details>
 
-### GESTIONE BONIFICI FORNITORI
+### Bonifici fornitori
 
 <details>
 
@@ -478,7 +474,7 @@ Attenzione al collegamento con i tipi effetto (griglia basso DX) altrimenti non 
    
 </details>
 
-### GESTIONE ANTICIPO FATTURE
+### Anticipo fatture
 
 <details>
 
@@ -505,7 +501,7 @@ Attenzione al collegamento con i tipi effetto (griglia basso DX) altrimenti non 
    
 </details>
 
-### GESTIONE CASHFLOW
+### Cashflow
 
 <details>
 
@@ -542,6 +538,84 @@ Attenzione al collegamento con i tipi effetto (griglia basso DX) altrimenti non 
   
 </details>
 
-
 Verifcare nelle varie tabelle dei documenti (Ordini, DDT, RDA ecc..) quali tipologie si vogliono leggere nel calcolo cashflow
+
+## TABELLE VENDITA
+
+### Offerte
+
+<details>
+
+  <summary> PARAMETRI  Click to expand!</summary>
+
+  Definire i [parametri](/docs/configurations/parameters/sales/offer-parameters) generali da utilizzare nelle offerte. 
+
+</details>
+
+### Ordini
+
+<details>
+
+  <summary> Tabella TIPI ORDINE  Click to expand!</summary>
+
+  Inserire le [tipologie di ordine](/docs/configurations/tables/sales/sales-order-types) utilizzate; i dati obbligatori sono: *Tipo*, *Descrizione* e *[Numerazione](/docs/configurations/tables/fluentis-numerations)*.     
+  I criteri di creazione delle varie tipologie possono essere diversi, per esempio:      
+  - creazione tipologia ORDINE CLIENTI ITALIA, ORDINE CLIENTE UE, ORDINE CLIENTE EXTRA UE.       
+  - creazione tipologia in base al [Tipo DDT](/DOCS/configurations/tables/sales/delivery-notes-type) o al [Tipo fattura](/docs/configurations/tables/sales/invoices-type) da creare.     
+  - creazione tipologia in base al Magazzino da movimentare
+
+</details>
+
+<details>
+
+  <summary> PARAMETRI  Click to expand!</summary>
+
+  Definire i [parametri](/docs/configurations/parameters/sales/sales-orders-parameters) generali da utilizzare negli ordini cliente. 
+
+</details>
+
+### DDT di vendita
+
+<details>
+
+  <summary> Tabella TIPI DDT  Click to expand!</summary>
+
+  Inserire le [tipologie di DDT](/docs/configurations/tables/sales/delivery-notes-type) utilizzate; i dati obbligatori sono: *Tipo*, *Descrizione* e *[Numerazione](/docs/configurations/tables/fluentis-numerations)*.     
+  I criteri di creazione delle varie tipologie possono essere diversi, per esempio:      
+  - creazione tipologia DDT CLIENTI ITALIA, DDT CLIENTE UE, DDT CLIENTE EXTRA UE.       
+  - creazione tipologia in base al [Tipo fattura](/docs/configurations/tables/sales/invoices-type) da creare.     
+  - creazione tipologia in base al Magazzino da movimentare
+  
+</details>
+
+<details>
+
+  <summary> PARAMETRI  Click to expand!</summary>
+
+  Definire i [parametri](/docs/configurations/parameters/sales/dn-parameters) generali da utilizzare nei DDT cliente. 
+  
+</details>
+
+### Fatture di vendita
+
+<details>
+
+  <summary> Tabella TIPI FATTURA  Click to expand!</summary>
+
+  Inserire le [tipologie di fattura](/docs/configurations/tables/sales/invoices-typee) utilizzate; i dati obbligatori sono: *Tipo*, *Descrizione* e *[Numerazione](/docs/configurations/tables/fluentis-numerations)*.     
+  I criteri di creazione delle varie tipologie possono essere diversi, per esempio:      
+  - creazione tipologia FATTURA CLIENTI ITALIA, FATTURA CLIENTE UE, FATTURA CLIENTE EXTRA UE.     
+  - creazione tipologia in base alla Natura fattura (fattura, nota di credito, ecc.)  
+  - creazione tipologia in base al Magazzino da movimentare.
+  
+</details>
+
+<details>
+
+  <summary> PARAMETRI  Click to expand!</summary>
+
+  Definire i [parametri](/docs/configurations/parameters/sales/sales-invoices-parameters) generali da utilizzare nelle fatture cliente. 
+
+</details>
+  
 

@@ -25,7 +25,7 @@ Elenchiamo gli altri campi disponibili nella testata:
 Nel caso di fattura creata da documento di trasporto già scaricato, è presente il parametro generale VE-PurchaseInvoices_VerifyLoadStatusDDT che blocca il flag *Scaricata* anche nella fattura. 
 :::  
 
-- **Annullata**: il flag attivo permette di annullare il documento.      
+- **Annullata**: il flag attivo permette di annullare il documento; verranno inseriti automaticamente i flag *Scaricata* e *Valorizzata* per evitare che il documento sia visibile nelle procedure.      
 - **Contabilizzata**: il flag indica che la fattura è stata contabilizzata.    
 
 :::note

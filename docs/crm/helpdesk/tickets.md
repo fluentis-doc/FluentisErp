@@ -42,7 +42,15 @@ In questa tab vengono riportati gli operatori che che effettuano le attività su
 Questa tab si attiva dopo aver cliccato il pulsante *Stima tecnica* sulla ribbon bar. In base al Tipo ticket che si sta creando, verrà proposto il [Template](/docs/configurations/tables/crm/tickets/template-ticket) associato, con i relativi dati già inseriti nella relativa tabella. L'utente può modificare tutti i campi. I campi che non vengono ripresi dalle tabelle del Tipo ticket o Template, e che quindi devono essere compilati manualmente, sono i seguenti:        
 **Effettiva data inizio**: in questo campo è possibile inserire una Data di effettivo inizio lavori, che può essere diversa dalla **Data previsto inizio**, accanto e compilata automaticamente con la data di creazione ticket;     
 **Commerciale/Tecnico**: in questi campi vengono inseriti i rispettivi operatori, che verranno proposti anche nella successiva tab *Stima commerciale*.       
-Nella griglia sottostante è importante indicare nella colonna **Quantità prevista** il tempo previsto per lo svolgimento delle attività. La compilazione di questa colonna farà compilare in automatico anche i campi **Minuti stimato sforzo** e **Ore lavorative** e servirà per la successiva creazione della stima commerciale.      
+Nella griglia sottostante è importante indicare nella colonna **Quantità prevista** il tempo previsto per lo svolgimento delle attività e la relativa **Unità di misura**. La compilazione di questa colonna farà compilare in automatico anche i campi **Minuti stimato sforzo** e **Ore lavorative** e servirà per la successiva creazione della stima commerciale.      
+**Risorse Commesse** permette di associare una risorsa dell'area progetti, indicando quale sarà la risorsa che svolgerà questa fase di Stima Tecnica. 
+Quando la risorsa dichiarerà l' attività nell'area progetti, selezionando il ticket corrispondente, avrà proposto in automatico il progetto di riferimento inserito nella corrispondente stima tecnica del ticket.
+
+
+**Progetto** permette di indicare una riga di progetto dell'area Progetti, che verrà proposto in automatico quando la risorsa effettuerà la dichiarazione attività nell'area progetti, selezionando il ticket corrispondente.
+
+**Data Inizio** e **Data Fine** : indica con precisione la data inizio e fine di ogni step della stima tecnica. 
+
 Una volta completata la Stima tecnica, cliccare il pulsante della ribbon bar *Fine stima tecnica*: questo bloccherà nuovamente la modifica della tab Stima/Sforzo. Per poterla nuovamente modificare, cliccare il pulsante *Annulla stima tecnica*.       
 
 ## Informazioni chiusura

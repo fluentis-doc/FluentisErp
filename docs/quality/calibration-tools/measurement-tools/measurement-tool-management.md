@@ -125,7 +125,8 @@ L'elenco si compone delle seguenti informazioni:
 > **Posizione**: annotazioni libere sull'argomento.   
 > **Intervallo lettura**: annotazioni libere sull'argomento.   
 > **Dato richiesto**: è il valore nominale richiesto.   
-> **Incertezza (±)**: è il valore dell'incertezza (espressa in percentuale) che verrà applicata al *Dato richiesto*.   
+> **Incertezza (-)**: è il valore dell'incertezza negativa (espressa in percentuale) che verrà applicata al *Dato richiesto*.   
+> **Incertezza (+)**: è il valore dell'incertezza positiva (espressa in percentuale) che verrà applicata al *Dato richiesto*.   
 > **Nota**: annotazioni libere.   
 
 

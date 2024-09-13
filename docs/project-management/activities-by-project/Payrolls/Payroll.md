@@ -37,7 +37,7 @@ Le trasferte hanno una gestione specifica:
 -	In anagrafica risorsa va configurata la trasferta indicando dopo quante ore di viaggio oltre alle ordinarie scatta la trasferta
 
 Se ad es. in anagrafica risorsa si imposta come limite "2" ore di viaggio
- scatterà il calcolo trasfera solo al superamento di 2 ore oltre alle ore ordinarie:
+ scatterà il calcolo trasfera solo se la somma di servizi + ore viaggio superano 2 ore oltre alle ore ordinarie:
 
  8 ore ordinarie
 

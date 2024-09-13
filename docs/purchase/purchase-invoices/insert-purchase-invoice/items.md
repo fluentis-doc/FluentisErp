@@ -62,7 +62,7 @@ In assenza del listino, il dato proposto può essere ripreso dal *costo ultimo* 
 
 *Pulsanti specifici*
 
-> **Ricalcolo Conai**: se la [Gestione Conai](/docs/sales/sales-flow/conai) è abilitata per il documento, è possibile ricalcolare i valori con questo bottone dopo eventuali modifiche.
+> **Ricalcolo Conai**: se la [Gestione Conai](/docs/purchase/purchase-flow/conai) è abilitata per il documento, è possibile ricalcolare i valori con questo bottone dopo eventuali modifiche.
 >
 > **Gestione imballi**: permette l'apertura della gestione degli imballi a rendere usati nel documento di acquisto.   
 Il pulsante diventa attivo se il documento è salvato, ma non caricato. Con clic su questo pulsante si apre la form corrispondente dove inserire la quantità, selezionare la riga ed eseguire il trasferimento dell'imballo selezionato nelle righe articolo cliccando sul pulsante **Execute**. In questa form vengono riportati gli articoli che sono stati inseriti con natura Imballo e che sono presenti nella tabella degli [Imballi a rendere](/docs/configurations/tables/logistics/package-to-be-returned).      
@@ -139,7 +139,13 @@ Questo tab è visibile se per la società attiva è stata attivata la gestione C
 Questa sezione riporterà i materiali d’imballaggio che compongono l’articolo, con la relativa unità di misura, peso unitario (abbattuto dell’eventuale percentuale d’esenzione dell’anagrafica cliente) e il totale del peso ottenuto dalla moltiplicazione tra numero di articoli venduti per il peso unitario.    
 Al salvataggio del documento, o alla pressione del pulsante **Ricalcolo Conai**, Fluentis inserirà una o più righe spese recuperando l’articolo dei materiali, con quantità uguale alla somma delle quantità e prezzo uguale al costo conai per quel materiale.
 
-Per maggiori informazioni sulla [Gestione Conai](/docs/sales/sales-flow/conai) in Fluentis vedere la pagina allegata.
+Per maggiori informazioni sulla [Gestione Conai](/docs/purchase/purchase-flow/conai) in Fluentis vedere la pagina allegata.
+
+
+## Costi da ricevere 
+
+I tab **Costi da ricevere** e **Spese** non sono gestiti nella versione corrente di Fluentis.
+
 
 ## Sezione valori
 
@@ -152,3 +158,4 @@ La sezione in basso, a destra, presenta il riassunto dei costi che concorrono al
 - **Importo**: Importo di riga - Totale sconti;
 - **Imposta**: Importo * aliquota IVA dell'articolo; 
 - **Totale**: Importo + Imposta.
+

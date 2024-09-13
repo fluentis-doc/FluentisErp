@@ -40,7 +40,7 @@ Inoltre, sono presenti i seguenti campi:
 
 **Priorità approvvigionamento:** questo campo editabile consente all’utente di impostare il tipo di priorità da assegnare all’articolo. Questa verrà utilizzata nella creazione delle *richieste di acquisto* in fase di [Rilascio degli ordini pianificati](/docs/planning/ms-master-scheduling/planned-orders/procedures/release-planned-orders/) se è stato attivato il flag **Proprietà approvvigionamento da Parametri MRP articolo**;     
 
-**Commesse produzione**: se attivato, indica che le righe ordine cliente che presentano questo articolo devono essere visualizzate nel filtro del tab Ordini Clienti della Definizione MPS;
+**Generazione commesse di produzione**: se attivato, indica che le righe ordine cliente che presentano questo articolo devono essere visualizzate nel filtro del tab *Ordini Clienti* della *Generazione commesse di produzione*; inoltre, verrà anche considerato nel caso in cui fosse attiva la *Generazione automatica flusso di produzione* presente nei [Parametri MS](/docs/configurations/parameters/production/mps-parameters/). Nel caso in cui il flag fosse disattivato, l'articolo non verrà considerato in nessuna delle due procedure;
 
 **% scarto**: consente all'utente di impostare una percentuale di scarto fissa per l'articolo. Questa percentuale viene impostata sempre con questo dato quando l'articolo viene ripreso all'interno di una distinta base.  
 *Esempio*: se viene indicato che per produrre quel materiale c'è uno scarto di solito del 10%, se l'ordine da produrre è di 100 pezzi lo schedulatore o l'MRP quando crea l'ordine pianificato invece di farlo da 100 pezzi, lo farà da 100 pezzi + il 10%.

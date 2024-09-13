@@ -3,6 +3,44 @@ title: Patch notes Versione 706
 sidebar_position: 1
 ---
 
+### Patch 706.1-0010 - 12/09/2024
+> - QY - Strumenti di misura – E’ stata implementata la propagazione degli Extradata tra Categoria Strumento di misura e Strumento di misura. (#TT03855/24)
+> - QY – Reclami – E’ stata risolta l’anomalia applicando il filtro Articolo nella Ricerca Reclami. (#TT03654/24)
+> - SD – Corretto errore nell’Evasione DDT dal filtro di ricerca Ordini Clienti (#TT03910/24).
+> - FI: risolto caso specifico di errore in download e stampa fattura elettronica di acquisto (TT03513/24)
+> - CO - revisione comparazione riclassificazioni per visualizzazione indici di costo nel dettaglio mensilizzato (#TT02853/24)
+> - FI - Nelle registrazioni contabili, revisione inserimento nuova riga iva (#TT03900/24)
+> - Nella valorizzazione ddt di acquisto, revisione gestione date competenza centri di costo (#TT03699/24)
+> - CRM: risolto caso in cui nelle campagne il workflow dei contatti avanzava di stato senza cliccare direttamente solamente aprendo l'expander (#TT03807/24)
+> - MES - Corretto bug nelle dichiarazioni di produzione in fase di registrazione dei movimenti. (#TT03901/24)
+> - WEBAPI - Import Sales Order: se il tipo Ordine prevede la creazione del progetto la webapi crea il progetto al momento dell’importazione dell’ordine di vendita (#TT03481/24).
+> - Solved problem with Script code using reserved words
+> - WM– Schede di Movimentazione – Aggiunti parametri AccountId, AccountCode, AccountDetailCode e AccountDescription per poter calcolare la giacenza iniziale per fornitore (#TT03922/24)
+> - SH – fix dashboard saves from Dashboard designer (#TT03725/24)
+> - SD – Fix Execution from SalesOrder/SalesDeliveryNote-custom problem (#TT03731/24)
+> - PM: planner, risolto caso su web per cui caricava solo l'effettivo mese selezionato e non i dati del mese precedente, anche se a video veniva visualizzati qualche giorno del mese precedente (#TT03782/24)
+> - MS – Corretto bug nell’apertura della form Carichi centri di lavoro. (#TT03943/24)
+> - Added integration between BizLink and the document import and export WebApi
+> - CRM: inserita funzionalità affinchè anagrafica cliente aggiorni anagrafica crm se collegata; in caso di cancellazione anagrafica cliente, viene rimosso il riferimento dall'anagrafica Crm; aggiunta opzione in parametri crm affinchè inserendo un nuovo conto contabile si crei un'anagrafica crm se non già presente. (TT03874/24)
+
+### Patch 706.1-0009 - 10/09/2024
+> - ARM – migration – align custom objects
+> - FI - Environment tax for RO - invoices with VAT - tax must be applied to base amount ( TT03877/24)
+> - CRM - add new filters for CrmContact (#TT03665/24)
+> - CRM - add new Crm Parameter 'When searching for a crm contact search also as parent contact' (#TT03671/24)
+> - SCM – Corretto errore nella procedura di Evasione da Ordine in DDT di Acquisto che non riportava sempre le quantità corrette nel DDT (#TT03750/24)
+> - BI – Pivot grid Dashboards – fix loading profiles in ribbon
+> - SCM – L’importazione Web Api standard dei DDT di acquisto include le righe di tipo nota (#TT03884/24)
+> - PM: corretto caso in cui abilitando il flag "Escludi calcolo fuori orario" non calcolava il piano di fatturazione negli interventi (#TT03780/24)
+> - PM: Generate attività da ore viaggio inserite in interventi anche con data spesa diversa dal servizio (#TT03590/24)
+> - PM: corretta data spese inserite automaticamente nella dichiarazione attività generata dal cambio stato approvato dell'intervento (#TT03640/24)
+> - MS – Implementato il flag Generazione commesse di produzione nei Parametri MRP dell’articolo: se attivo, indica che le righe ordine cliente che presentano questo articolo devono essere visualizzate nel filtro del tab Ordini Clienti della Generazione commesse di produzione; inoltre, verrà anche considerato nel caso in cui fosse attiva la Generazione automatica flusso di produzione presente nei Parametri MS. Nel caso in cui il flag fosse disattivato, l'articolo non verrà considerato in nessuna delle due procedure. (#TT03242/24)
+> - WM - e possibile interrogare la giacenza per riga progetti in Visualizzazione giacenza (ticket 03719/24)
+> - MS – In generazione commesse è possibile creare prototipi commessa con molte più righe contemporaneamente. (#TT03636/24)
+> - WMS – Corretto bug nella form carico scarico UDC. (#TT03875/24)
+> - MS – Corretto bug nella Pianificazione generale; ora la schedulazione con il flag “Considera anche le alternative dei materiali” funziona correttamente (#TT00306/24).
+> - Revisione della gestione step 'firma' per i file Sdi importati tramite webapi (#TT03741/24)
+
 ### Patch 706.1-0008 - 05/09/2024
 > - MS – In generazione commesse è possibile creare prototipi commessa con molte più righe contemporaneamente. (#TT03636/24)
 > - WMS - Adesso in gestione spunta e conferma picking il focus ritorna nel campo barcode dopo ogni lettura. (#TT03704/24)

@@ -3,6 +3,11 @@ title: Patch notes Versione 608
 sidebar_position: 2
 ---
 
+### Patch 608.1-0052 - 12/09/2024
+> - PM: corretta data spese inserite automaticamente nella dichiarazione attività generata dal cambio stato approvato dell'intervento (#TT03640/24)
+> - MS – Corretto bug nella Pianificazione generale; ora la schedulazione con il flag “Considera anche le alternative dei materiali” funziona correttamente (#TT00306/24).
+> - SH – optimize Object Load Requests
+
 ### Patch 608.1-0051 - 05/09/2024
 > - FI - all’interno delle registrazioni contabili, revisione del pulsante di ricalcolo imposta (#TT02926/24)
 > - FI - revisione salvataggio registrazioni con nuovi cespiti in creazione, localizzazione RO-HR (TT03614/24)

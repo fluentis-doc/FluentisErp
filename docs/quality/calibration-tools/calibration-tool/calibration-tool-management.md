@@ -86,7 +86,8 @@ L'elenco si compone delle seguenti informazioni:
 > **Posizione**: annotazioni libere sull'argomento.   
 > **Intervallo lettura**: annotazioni libere sull'argomento.   
 > **Dato richiesto**: è il valore nominale richiesto.   
-> **Incertezza (±)**: è il valore dell'incertezza (espressa in percentuale) che verrà applicata al *Dato rilevato*.   
+> **Incertezza (-)**: è il valore dell'incertezza negativa (espressa in percentuale) che verrà applicata al *Dato rilevato*.   
+> **Incertezza (+)**: è il valore dell'incertezza positiva (espressa in percentuale) che verrà applicata al *Dato rilevato*.   
 > **Dato rilevato**: è il valore rilevato dalla lettura dello strumento fatta nella *posizione* indicata.   
 > **Scostamento**: è il valore calcolato dalla differenza tra *Dato rilevato* e *Dato richiesto*.   
 Se lo scostamento è superiore al *Dato richiesto* sommato all'*Incertezza (±)* (applicazione in percentuale) l'*Esito* della rilevazione sarà negativo.   
