@@ -561,7 +561,7 @@ Verifcare nelle varie tabelle dei documenti (Ordini, DDT, RDA ecc..) quali tipol
   Inserire le [tipologie di ordine](/docs/configurations/tables/sales/sales-order-types) utilizzate; i dati obbligatori sono: *Tipo*, *Descrizione* e *[Numerazione](/docs/configurations/tables/fluentis-numerations)*.     
   I criteri di creazione delle varie tipologie possono essere diversi, per esempio:      
   - creazione tipologia ORDINE CLIENTI ITALIA, ORDINE CLIENTE UE, ORDINE CLIENTE EXTRA UE.       
-  - creazione tipologia in base al [Tipo DDT](/DOCS/configurations/tables/sales/delivery-notes-type) o al [Tipo fattura](/docs/configurations/tables/sales/invoices-type) da creare.     
+  - creazione tipologia in base al [Tipo DDT](/docs/configurations/tables/sales/delivery-notes-type) o al [Tipo fattura](/docs/configurations/tables/sales/invoices-type) da creare.     
   - creazione tipologia in base al Magazzino da movimentare
 
 </details>
@@ -602,7 +602,7 @@ Verifcare nelle varie tabelle dei documenti (Ordini, DDT, RDA ecc..) quali tipol
 
   <summary> Tabella TIPI FATTURA  Click to expand!</summary>
 
-  Inserire le [tipologie di fattura](/docs/configurations/tables/sales/invoices-typee) utilizzate; i dati obbligatori sono: *Tipo*, *Descrizione* e *[Numerazione](/docs/configurations/tables/fluentis-numerations)*.     
+  Inserire le [tipologie di fattura](/docs/configurations/tables/sales/invoices-type) utilizzate; i dati obbligatori sono: *Tipo*, *Descrizione* e *[Numerazione](/docs/configurations/tables/fluentis-numerations)*.     
   I criteri di creazione delle varie tipologie possono essere diversi, per esempio:      
   - creazione tipologia FATTURA CLIENTI ITALIA, FATTURA CLIENTE UE, FATTURA CLIENTE EXTRA UE.     
   - creazione tipologia in base alla Natura fattura (fattura, nota di credito, ecc.)  
