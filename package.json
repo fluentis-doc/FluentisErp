@@ -14,10 +14,12 @@
     "write-heading-ids": "set NODE_OPTIONS=--openssl-legacy-provider --max-old-space-size=8192&& docusaurus write-heading-ids"
   },
   "dependencies": {
-    "@cmfcmf/docusaurus-search-local": "^1.1.0",
+    "@cmfcmf/docusaurus-search-local": "^1.2.0",
     "@docusaurus/core": "^3.5.2",
     "@docusaurus/preset-classic": "^3.5.2",
     "@mdx-js/react": "^3.0.0",
+    "bootstrap-icons": "^1.11.3",
+    "cheerio": "1.0.0-rc.12",
     "clsx": "^2.0.0",
     "prism-react-renderer": "^2.3.0",
     "react": "^18.0.0",
@@ -29,7 +31,7 @@
   },
   "overrides": {
     "@cmfcmf/docusaurus-search-local": {
-      "@docusaurus/core": "^3.2.1"
+      "@docusaurus/core": "^3.5.2"
     }
   },
   "browserslist": {
