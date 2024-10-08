@@ -26,8 +26,10 @@ Dopo l'inserimento di questi filtri premere il pulsante **Esegui** per elaborare
 
 La griglia di risultato dell’esecuzione rappresenta l’elenco delle elaborazioni effettuate specificando **Numero** e **Data elaborazione**.
 
+È importante notare che nella procedura del sottoscorta quanto la RDA viene generata e la disponibilità è inferiore al Punto di Riordino, se per l’articolo non è stato impostato un valore di *scorta massima*, la quantità richiesta sarà pari a **Punto di Riordino – Disponibilità**; mentre, se è presente anche il valore di *scorta massima*, la quantità richiesta sarà pari a **Scorta max – Disponibilità**.
+
 :::note Nota
 Da notare che nel caso in cui l'articolo sia di tipo approvvigionamento *Acquisto* verrà creata la richiesta di acquisto ma non la commessa, mentre nel caso in cui l'articolo sia di approvvigionamento *Produzione* o *Conto lavoro* allora verrà creata la relativa commessa,
 :::
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form di stampa fare riferimento al seguente link [Anteprima e stampa](/docs/guide/operations-with-data/reports).
+Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form di stampa fare riferimento al seguente link [Anteprima e stampa](/docs/guide/common/operations-with-data/reports).

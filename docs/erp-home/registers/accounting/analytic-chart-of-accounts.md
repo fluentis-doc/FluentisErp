@@ -2,7 +2,11 @@
 title: Piano dei conti
 sidebar_position: 1
 ---
+:::tip[FAst Start]
+La tabella è interessata dalla procedura di [**Fast Start**](/docs/guide/fast-start)
 
+Nel caso in cui si intenda configurare manualmente fare riferimento alla check list della pagina linkata
+:::
 
 ### RIBBON BAR:
 :::note Bottoni della Ribbon Bar

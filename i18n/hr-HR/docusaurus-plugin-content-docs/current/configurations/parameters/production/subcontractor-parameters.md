@@ -1,83 +1,83 @@
 ---
-title: Parametri Conto Lavoro
+title: Parametri podugovaranja
 sidebar_position: 2
-tags: [Conto Lavoro]
+tags: [Radni Račun]
 ---
 
-Attraverso questa finestra vengono settati tutti i parametri che riguardano la gestione del conto lavoro e più nello specifico il modo in cui devono essere eseguite le movimentazioni di magazzino innescate dalle procedure del modulo stesso.
+Kroz ovaj prozor postavljaju se svi parametri koji se odnose na upravljanje podugovaranjem i, točnije, način na koji se moraju provoditi kretanja skladišta izazvana procedurama samog modula.
 
-### Generale
+### Općenito
 
-**Tipo DDT**  
-In questa sezione si imposta il tipo DDT di vendita che deve essere proposto di default quando si utilizza la procedura di creazione DDT di consegna di conto lavoro. Questo tipo DDT utilizzerà in automatico magazzino e causale impostati nelle apposite combo della voce 'Consegne materiali a terzisti' che si trova nella finestra dei parametri di conto lavoro.
+**Tip otpremnice**  
+U ovom odjeljku postavljate vrstu prodajne otpremnice koja mora biti predložena prema zadanim postavkama pri korištenju postupka izrade dostavnice podugovaranja. Ova vrsta otpremnice automatski će koristiti skladište i razlog postavljen u odgovarajućim kombinacijama stavke 'Isporuke materijala podizvođačima' koja se nalazi u prozoru s parametrima podugovaranja. 
 
-**Codice operatore obbligatorio**: se attivo, permette di decidere se sia necessario inserire il codice operatore nel momento in cui si inserisce la DDT di consegna di conto lavoro.
+**Obavezna šifra operatera**: ako je aktivna, omogućuje vam da odlučite je li potrebno unijeti šifru operatera prilikom unosa otpremnice podugovora.
 
-**Dati materiali proposti**: visualizza le 4 differenti possibilità che l'utente ha di far proporre automaticamente alla procedura i materiali nel tab Materiali da Consegnare dell'ordine di conto lavoro.  
-Le possibilità sono le seguenti:  
-1. *Da ultima consegna effettuata presso lo stesso terzista*: si controlla l'ultimo ordine di conto lavoro generato per lo stesso terzista e in cui è presente lo stesso articolo da produrre;  
-2. *Esplosione livello da struttura distinta*: si controlla la distinta base dell'articolo inserito nel tab Articoli da Produrre;  
-3. *Consegna dello stesso articolo da produrre*: si inserisce nel tab Materiali da Consegnare lo stesso articolo inserito nel tab Articoli da Produrre;  
-4. *Nessun materiale*: nel tab Materiali da Consegnare non viene proposto alcun materiale.
+**Podaci za predložene materijale**: prikazuje 4 različite mogućnosti koje korisnik ima da bi postupak automatski predložio materijale na kartici Materijali za isporuku narudžbe podugovarača.   
+Mogućnosti su sljedeće:  
+1. *Od zadnje isporuke obavljene istom kooperantu*: posljednja kooperantska narudžba generirana za istog kooperanta i u kojoj se nalazi ista stavka koja se proizvodi;    
+2. *Proširenje razine iz strukture sastavnice*: provjeravate sastavnicu artikla umetnutog u karticu Stavke za proizvodnju;;  
+3. *Isporuka iste stavke koja se proizvodi*: umetnite istu stavku umetnutu u karticu Predmeti za proizvodnju u karticu Materijali za isporuku;   
+4. *Nema materijala*: materijal nije predložen na kartici Materijali za isporuku.  
 
-**Controlla disponibilità**: se attivo, permette di decidere se fare in modo che la procedura controlli o meno la disponibilità proveniente dai flag impostati nella sezione *Considera le disponibilità provenienti da*.
+**Kontroliraj raspoloživot**: ako je aktivno, osigurava da nijedna stavka nije unesena u karticu *Materijali za isporuku* za bilo koju stavku koja se proizvodi.
 
-**Nessun materiale in consegna**: se attivo, fa in modo che nel tab *Materiali da consegnare* non sia inserito alcun articolo per nessun articolo da produrre.
+**Nema materijala u dostavi**: se attivo, fa in modo che nel tab *Materiali da consegnare* non sia inserito alcun articolo per nessun articolo da produrre.
 
-**Disponibilità materiali**: se attivo, fa in modo che la procedura consideri anche la disponibilità dei materiali da impiegare nel corso dell'effettuazione del rientro da conto lavoro.
+**Raspoloživost materijala**: ako je aktivan, osigurava da postupak također uzima u obzir dostupnost materijala koji će se koristiti tijekom povrata od podugovaranja.  
 
-**Carico/Scarico automatico**: se attivo, permette all'utente di fare in modo che le movimentazioni di magazzino in uscita avvengano automaticamente non appena la DDT di consegna venga stampata. Questo consente di saltare lo step dello scarico dei  DDT di consegna di conto lavoro
+**Automatski utovar/istovar**: ako je aktivan, omogućuje korisniku da osigura da se izlazna kretanja skladišta dogode automatski čim se otpremnica ispiše. To vam omogućuje da preskočite korak preuzimanja dokumenata isporuke podugovora.
 
-**Blocca inserimento documento in date festive**: se attivo, impedisce l'inserimento di un ordine, di una DDT e di un rientro di conto lavoro in date festive.
+**Blokiraj umetanje dokumenta na državni praznik**: ako je aktivno, sprječava umetanje narudžbe, otpremnice i povrata podugovora na praznične dane. 
 
-**Costo zero in assenza di listino**: se attivo, consente l'inserimento di un articolo nel tab *Articoli di Produrre* dell'ordine di conto lavoro senza che la procedura inserisca come prezzo unitario di lavorazione il costo ultimo dell'articolo preso dalla sua anagrafica; quindi viene inserito un prezzo unitario uguale a zero.
+**Trošak nula ako nedostaje cjenik**: ako je aktivan, omogućuje umetanje artikla u karticu *Proizvodni artikli* narudžbe podugovarača bez postupka umetanja konačnog troška artikla preuzetog iz njegove baze podataka kao jedinične cijene obrade; stoga se upisuje jedinična cijena jednaka nuli.  
 
-**Controllo terzista di riferimento per gli articoli**: se attivo, consente all'utente di fare in modo che la procedura di creazione degli ordini di conto lavoro controlli se l'articolo che si sta inserendo nel tab *Articoli da Produrre* abbia, come fornitore preferenziale, il terzista inserito nella testata dell'ordine stesso.
+**Provjeri referentnog podizvođača za stavke**: ako je aktivna, omogućuje korisniku da osigura da postupak stvaranja narudžbe za podugovaranje provjerava je li artikal koji se umeće na karticu *Artikli za proizvodnju* ima, kao preferiranog dobavljača, izvođača uključenog u zaglavlje same narudžbe.
 
-**Disponibilità obbligatoria**: se attivo, impedisce l'inserimento di materiali in ordini di conto lavoro nel caso di mancata disponibilità alla data dell'eventuale consegna al terzista.
+**Obvezna raspoloživost**: ako je aktivna, sprječava uključivanje materijala u narudžbe podugovarača u slučaju nedostupnosti na datum bilo koje isporuke podizvođaču.
 
-**Proposta dell'ultimo prezzo di lavorazione effettuato**: se attivato, consente di far proporre nell'ordine di conto lavoro, nella casella del prezzo unitario di lavorazione del tab *Articoli da Produrre*, il prezzo dell'ultimo ordine di conto lavoro emesso per quell'articolo per lo stesso terzista.
+**Predložena je zadnja cijena rada**: o je aktiviran, omogućuje vam da u nalogu za podugovaranje, u okviru s jediničnom cijenom obrade na kartici *Stavke za proizvodnju*, predložite cijenu zadnje narudžbe za podugovaranje izdane za tu stavku za istog izvođača.
 
-**Valor. lavorazione materiali a costo**: permette di definire se la valorizzazione della lavorazione dei materiali debba avvenire a costo ultimo o a costo medio. Quindi si tratta di un metodo per decidere se i materiali utilizzati dai terzisti debbano essere imputati alla lavorazione utilizzando il  costo ultimo oppure il  costo medio tra quelli inseriti nell'anagrafica dell'articolo stesso. Inoltre, è possibile, selezionando i flag *Lotti* e/o *Commessa di produzione*, andare a proporre come costo del materiale il costo ultimo/Medio/standard per il relativo lotto e/o commessa di produzione in base ai flag attivati.    
+**Valorizacija radnog materijala naspram troška**: omogućuje vam da definirate treba li se valorizacija obrade materijala odvijati po konačnom trošku ili po prosječnom trošku. Stoga je to metoda za odlučivanje treba li materijale koje koriste podizvođači pripisati obradi koristeći konačni trošak ili prosječni trošak među onima koji su uključeni u registar predmeta. Nadalje, moguće je, odabirom oznaka *Lotovi* i/ili *Proizvodnog naloga*, predložiti kao trošak materijala konačni/prosječni/standardni trošak za odgovarajuću seriju i/ili proizvodni nalog na temelju aktiviranih oznaka.
 
-**Versione**: consentono di selezionare la versione della distinta base.
+**Verzija**: omogućuje odabir verzije popisa materijala.
 
-**Dati dei materiali proposti negli ordini di conto lavoro** è costituita a sua volta da altre 4 sezioni:
+**Podaci predloženog materijala u narudžbi podizvođača** sastoje se od 4 druga odjeljka:
 
-1. **Considera le disponibilità provenienti da**: è possibile decidere se considerare o no le disponibilità provenienti da Conto Lavoro / Produzione / Acquisti / Magazzino / Vendite; ciascuno di questi flag sta a indicare la volontà da parte dell'utente di fare in modo che la procedura di creazione dell'ordine di conto lavoro consideri la disponibilità dei materiali in base alle informazioni che provengono dalle singole aree applicative di ERP. Quindi per esempio se l'utente sceglie di attivare il flag solo su Acquisti e non su Vendite, significa che saranno considerate le disponibilità provenienti dagli ordini fornitori, dalle DDT e fatture di acquisto e dalle richieste di acquisto e non quelle provenienti da ordini clienti, DDT e fatture di vendita;
+1. **Razmotrite raspoloživost iz**: moguće je odlučiti hoćete li ili ne uzeti u obzir dostupnost koja dolazi iz Ugovorenog posla / proizvodnje / nabave / skladišta / prodaje; svaka od ovih oznaka označava želju korisnika da osigura da postupak kreiranja narudžbe za podugovaranje uzima u obzir dostupnost materijala na temelju informacija koje dolaze iz pojedinačnih područja ERP primjene. Na primjer, ako korisnik odabere aktivirati oznaku samo na Kupnji, a ne na Prodaji, to znači da će se uzeti u obzir dostupnost koja dolazi iz narudžbi dobavljača, dostavnica i faktura o kupnji i zahtjeva za kupnju, a ne ona koja dolazi iz narudžbi kupaca, otpremnica i prodajnih računa;
 
-2. **Prodotti finiti** (flag): permette di scegliere, al momento dell'inserimento di un articolo nel tab *Articoli da produrre* dell'ordine di conto lavoro, se considerare le quantità degli articoli stessi in base al lotto economico, e/o considerare eventualmente anche i multipli del lotto;
+2. **Gotovi proizvodi** (zastavica): omogućuje vam da odaberete, kada ubacujete stavku u karticu *Predmeti za proizvodnju* narudžbe podugovarača, hoćete li uzeti u obzir količine samih stavki na temelju ekonomske serije i/ili eventualno uzeti u obzir višestruke lot;
 
-3. **Materiali**: permette di scegliere, al momento dell'inserimento di un articolo nel tab *Articoli da produrre* dell'ordine di conto lavoro, se considerare per i materiali da consegnare le quantità degli articoli stessi in base al lotto economico, e/o considerare eventualmente anche i multipli del lotto;
+3. **Materijali**: omogućuje vam da odaberete, kada ubacujete stavku u karticu *Stavke za proizvodnju* podugovaračke narudžbe, želite li uzeti u obzir količine samih stavki na temelju ekonomske serije za materijale koji se isporučuju i/ili eventualno uzeti u obzir i višekratnici serije;
 
-**Rigenerazione materiali nell'aggiornamento dell'articolo**: se il flag è attivato, ogniqualvolta si effettui una modifica sulla riga articolo presente nel tab *Articoli da produrre* dell'ordine di conto lavoro la procedura rigenera le informazioni relative ai materiali da consegnare e da impiegare da inserire nell'ultimo tab dell'ordine stesso;
+**Regenerirati materijale na ažuriranju stavke**: ako je zastavica aktivirana, svaki put kada se napravi promjena u retku artikla prisutnom na kartici *Stavke za proizvodnju* narudžbe podugovaratelja, postupak ponovno generira informacije koje se odnose na materijale koje treba isporučiti i koristi se umetanje u posljednju karticu samog naloga;;
 
-4. **Magazzini**: permette di scegliere se considerare i magazzini in base al tipo di DDT di rientro o al tipo di DDT consegna, invece che utilizzare le impostazioni inserite nelle apposite combo delle voci *Consegne materiali a terzisti* e *Rientro prodotto*.
+4. **Skladišta**: omogućuje odabir hoće li se skladišta razmatrati prema vrsti povratne otpremnice ili vrsti otpremnice, umjesto pomoću postavki unesenih u odgovarajućim kombinacijama stavki *Isporuke materijala trećim osobama* i *Povrat proizvoda*.
 
-### Magazzini
+### Skladišta
 
-**Consegne materiali a terzisti W.i.P.**   
-In questa sezione vengono impostati il magazzino e la relativa causale che devono essere considerati per lo scarico dei materiali destinati ai terzisti nel caso in cui sia utilizzata la gestione del magazzino W.I.P., attivabile nei [Parametri ordini produzione](/docs/configurations/parameters/production/production-orders-parameters/production-orders-parameters-intro). In questo caso, tutti gli ordini di conto lavoro creati dal *Rilascio ordini pianificati* o direttamente dall'ordine di produzione useranno questo magazzino e casuale per lo scarico dei materiali inseriti nel tab [Materiali da Consegnare](/docs/subcontractor/subcontractor-orders/insert-subcontractor-orders/materials) dell'ordine di conto lavoro.    
+**Isporuke materijala za W.I.P. podizvođača**   
+U ovom se odjeljku postavlja skladište i povezani razlog koji se mora uzeti u obzir za istovar materijala namijenjenih podizvođačima u slučaju da se koristi upravljanje skladištem W.I.P., što se može aktivirati u [Parametrima proizvodnog naloga](/docs/configurations/parameters/production/production-orders-parameters/production-orders-parameters-intro). U ovom slučaju, sve podugovaračke narudžbe kreirane putem *Planiranog izdavanja narudžbe* ili izravno iz proizvodnog naloga koristit će ovo skladište i nasumično za istovar materijala unesenih u kartici [Materijali za isporuku](/docs/subcontractor/subcontractor-orders/insert-subcontractor-orders/materials) podugovaračke narudžbe.    
 
-**Consegne materiali a terzisti**   
-In questa sezione vengono impostati il magazzino e la relativa causale che devono essere considerati per lo scarico dei materiali destinati ai terzisti. Quindi il magazzino impostato è il magazzino da cui saranno scaricati i materiali inseriti nel tab [Materiali da Consegnare](/docs/subcontractor/subcontractor-orders/insert-subcontractor-orders/materials) dell'ordine di conto lavoro. Questi saranno impiegati solo negli ordini di conto lavoro creati manualemente nel caso in cui sia attiva la gestione del magazzino W.I.P., mentre se la gestione del magazzino W.I.P. non è attiva verranno considerate in tutti i casi.     
+**Dostave materijala podizvođaču**   
+U ovom odjeljku postavlja se skladište i povezani razlog koji se mora uzeti u obzir za istovar materijala namijenjenih podizvođačima. Stoga je skladišni skup skladište iz kojeg će se preuzeti materijali umetnuti u karticu [Materijali za isporuku](/docs/subcontractor/subcontractor-orders/insert-subcontractor-orders/materials) podugovaračkog naloga. Oni će se koristiti samo u ručno kreiranim podizvođačkim narudžbama ako je aktivan W.I.P. nije aktivan će se uzeti u obzir u svim slučajevima.     
 
-**Consumo materiali impiegati**  
-In questa sezione vengono impostati il magazzino e la relativa causale che devono essere considerati per lo scarico dei materiali che i terzisti hanno utilizzato. Quindi il magazzino impostato è il magazzino da cui saranno scaricati i materiali inseriti nel tab Materiali dell'ordine di Rientro di conto lavoro. Fare link quando verrà creato l'articolo.   
+**Potrošnja  korištenih materijala**  
+U ovom odjeljku postavljeno je skladište i povezani razlozi koji se moraju uzeti u obzir za istovar materijala koje su podizvođači upotrijebili. Stoga je skladišni skup skladište iz kojeg će se preuzeti materijali umetnuti u karticu Materijali naloga za povrat podugovaratelja. Molimo poveznicu kada artikl bude kreiran.
 
-**Carichi materiali a terzisti**  
-In questa sezione vengono impostati il magazzino e la relativa causale che devono essere considerati per il carico dei materiali destinati ai terzisti. Quindi il magazzino impostato è il magazzino su cui saranno caricati i materiali inseriti nel tab Materiali da Consegnare dell'ordine di conto lavoro. Questi dati vengono ripresi dalla causale di contropartita inserita nella tabella delle causali in corrispondenza della causale che effettua lo scarico dei materiali destinati ai terzisti (cioè la causale impostata nell'apposita combo box della sezione *Consegne materiali a terzisti*).
+**Utovar materijala za podizvođača**  
+U ovom odjeljku postavlja se skladište i povezani razlog koji se mora uzeti u obzir za utovar materijala namijenjenih podizvođačima. Stoga je skup skladišta skladište u koje će se utovariti materijali umetnuti u karticu Materijali za isporuku podugovorne narudžbe. Ovi podaci su preuzeti iz drugog razloga umetnutog u tablicu razloga koji odgovara razlogu koji istovaruje materijale namijenjene podizvođačima (tj. razlog postavljen u posebnom kombiniranom okviru odjeljka *Isporuke materijala podizvođačima*).
 
-**Consegne materiali tra terzisti**   
-In questa sezione vengono impostati il magazzino e la relativa causale che devono essere considerati per lo spostamento dei materiali da un terzista ad un altro.     
+**Dostave materijala između podizvođača**   
+U ovom se odjeljku postavlja skladište i povezani razlog koji se mora uzeti u obzir za premještanje materijala od jednog izvođača do drugog.   
 
-**Rientro articolo W.I.P.**  
-In questa sezione vengono impostati il magazzino e la relativa causale che devono essere considerati per il carico dei semilavorati che i terzisti hanno realizzato, questa verrà usata nel caso di tutte le fasi esterne che non siano l'ultima fase del ciclo di lavoro. Quindi il magazzino impostato è il magazzino su cui saranno caricati gli articoli inseriti nel tab Articoli dell'Ordine di Rientro di conto lavoro.
+**Povratak W.I.P artikla**  
+U ovom se odjeljku postavlja skladište i povezani razlog koji se mora uzeti u obzir za utovar poluproizvoda koje su izradili podizvođači; to će se koristiti u slučaju svih vanjskih faza koje nisu zadnja faza posla ciklus. Stoga je skup skladišta skladište u koje će se utovariti artikli umetnuti u karticu Stavke Naloga za povrat podugovarača.  
 
-**Rientro articolo finito**  
-In questa sezione vengono impostati il magazzino e la relativa causale che devono essere considerati per il carico dei prodotti finiti / semilavorati che i terzisti hanno realizzato, questa verrà usata nel caso in cui la fase esterna sia l'ultima fase del ciclo di lavoro. Quindi il magazzino impostato è il magazzino su cui saranno caricati gli articoli inseriti nel tab Articoli dell'Ordine di Rientro di conto lavoro.
+**Povrat gotovog artikla**  
+U ovom odjeljku postavlja se skladište i povezani razlog koji se mora uzeti u obzir za utovar gotovih proizvoda/poluproizvoda koje su izradili kooperanti. Ovo će se koristiti u slučaju da je vanjska faza zadnja faza proizvodnog ciklusa. Stoga je skup skladišta skladište u koje će se utovariti artikli umetnuti u karticu Stavke Naloga za povrat podugovarača.  
 
-**Materiale reso**  
-In questa sezione vengono impostati il magazzino e la relativa causale che devono essere considerati per il carico dei resi. Quindi il magazzino impostato è il magazzino su cui saranno caricati gli articoli inseriti nel tab Materiali Impiegati del Rientro di conto lavoro e a cui è stata associata una quantità resa.
+**Materijal vraćen**  
+U ovom odjeljku postavlja se skladište i povezani razlog koji se mora uzeti u obzir za povrate utovara. Stoga je skladišni skup skladište u koje će se učitati artikli umetnuti u karticu Materijali zaposlenika povrata podugovarača i s kojim je povezana vraćena količina.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Za sve što nije detaljno opisano u ovom dokumentu o uobičajenom funkcioniranju obrazaca, pogledajte sljedeću poveznicu [Zajedničke funkcije, gumbi i polja](/docs/guide/common).

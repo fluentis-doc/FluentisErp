@@ -3,6 +3,13 @@ title: Magazzini
 sidebar_position: 15
 ---
 
+:::important A cosa serve
+La tabella Magazzini di Fluentis consente di creare, modificare e gestire i record dei magazzini, assicurando un'efficace movimentazione dei materiali all'interno del sistema. 
+Nella tabella, gli utenti trovano un'interfaccia intuitiva che include strumenti di ricerca e filtri per una rapida accessibilità ai dati. È possibile inserire nuovi magazzini specificando almeno il codice e la descrizione, oltre a dettagli come l'area gestionale e la data di fine validità.      
+Ogni magazzino può essere assegnato a uno specifico sito produttivo, facilitando così l'organizzazione delle risorse e il monitoraggio delle scorte.     
+Il collegamento di ogni magazzino a un determinato sito produttivo rappresenta un valore aggiunto, poiché permette di ottimizzare la distribuzione delle risorse e migliorare la pianificazione logistica aziendale.
+:::
+
 La tabella si trova sul percorso **Tabelle > Logistica > Magazzini**.
 
 La tabella di inserimento magazzini è necessaria per poter utilizzare in modo corretto tutte le funzioni del sistema che hanno a che vedere con la movimentazione dei materiali.

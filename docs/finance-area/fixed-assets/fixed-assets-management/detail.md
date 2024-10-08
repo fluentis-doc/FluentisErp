@@ -53,7 +53,7 @@ Per concludere, i flag **Ricavometro** e **Studi di settore** servono per ident
 | Funzione | Significato |
 | --- | --- |
 | Salva | Salva il cespite, obbligatorio per assegnare un numero al cespite e attivare i vari tab. |
-|  [Documenti](/docs/guide/operations-with-data/document-manager)  | Gestione dell'archiviazione documentale associata alla maschera in uso. |
+|  [Documenti](/docs/guide/common/operations-with-data/document-manager)  | Gestione dell'archiviazione documentale associata alla maschera in uso. |
 
 
 

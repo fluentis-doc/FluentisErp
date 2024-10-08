@@ -3,6 +3,14 @@ title: Anagrafica lotti e Tracciabilità
 sidebar_position: 3
 ---
 
+:::important A cosa serve
+L'anagrafica lotti di Fluentis rappresenta uno strumento indispensabile per la gestione precisa e dettagliata dei lotti all'interno di un sistema di tracciabilità dei prodotti. Questa funzionalità consente agli utenti di cercare e visualizzare i dettagli specifici di ogni lotto mediante un semplice doppio clic, facilitando così il monitoraggio e la gestione delle giacenze.
+
+All'interno della scheda dedicata a ogni singolo lotto, gli utenti possono modificare varie informazioni cruciali, come il fornitore, il codice lotto fornito dal fornitore, note specifiche, e lo stato del lotto. Quest'ultimo, che può essere agevolmente aggiornato, gioca un ruolo fondamentale nel determinare la possibilità di utilizzo del lotto stesso nei documenti di vendita e nelle registrazioni di magazzino. Non solo, ma il sistema prevede anche la gestione di vari stati lotto, che incidono direttamente sulla disponibilità operativa del lotto.
+
+Un aspetto distintivo dell'anagrafica lotti è la sezione che consente di visualizzare storicamente i documenti di carico e scarico che hanno coinvolto il lotto, mantenendo così una tracciabilità accurata nel tempo, inoltre, è possibile visualizzare la giacenza attuale suddivisa per magazzino. Grazie a queste funzionalità, l'anagrafica lotti di Fluentis non solo semplifica la gestione operativa, ma contribuisce anche a garantire la compliance normativa in settori dove la tracciabilità è essenziale, come alimentare e farmaceutico.
+:::
+
 ## Anagrafica lotti
 
 La form visualizza il dettaglio del lotto e si compone di 4 diverse sezioni: 
@@ -144,6 +152,18 @@ La griglia si compone dei seguenti campi:
 
 ## Tracciabilità lotto
 
+:::important A cosa serve
+La tracciabilità lotto di Fluentis è un modulo progettato per garantire una gestione efficiente e precisa dei lotti di prodotti all'interno del ciclo produttivo e logistico. Questa funzionalità permette agli utenti di monitorare e registrare il percorso di ogni lotto, dal momento della produzione o acquisto fino alla sua utilizzazione finale, contribuendo a una gestione trasparente e sicura dei materiali.
+
+Utilizzando la sezione dedicata alla tracciabilità, gli utenti possono generare report dettagliati per i lotti selezionati, non solo per visualizzare le informazioni relative al lotto stesso, ma anche per analizzare in quali articoli è stato impiegato e quali materie prime hanno contribuito alla sua produzione. Questo processo è facilitato da una serie di filtri personalizzabili che consentono di adattare la ricerca alle specifiche esigenze aziendali.
+
+Due dei principali strumenti di tracciabilità includono:
+
+Tracciabilità Impiego: che permette di visualizzare tutti gli articoli nei quali è stato utilizzato il lotto in questione, garantendo così una verifica dettagliata della tracciabilità verso l'alto.
+Tracciabilità Composizione: che consente di verificare quali articoli gestiti a lotti sono stati impiegati per la produzione del lotto selezionato, fornendo una chiara visione della tracciabilità verso il basso.
+
+Attraverso questa funzionalità di tracciabilità lotto, Fluentis offre una soluzione robusta per le aziende, specialmente in settori come quello alimentare e farmaceutico, dove la rintracciabilità è fondamentale per la sicurezza e la compliance alle normative vigenti.
+:::
 
 Questa form permette di stampare un report contenente il dettaglio della tracciabilità del lotto selezionato.
 

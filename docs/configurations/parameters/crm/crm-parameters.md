@@ -18,3 +18,7 @@ I parametri del CRM si trovano nel percorso **Parametri > CRM > Parametri CRM**,
 **Unità di misura ore**: è necessario indicare l'unità di misura di default che Fluentis deve utilizzare per le ore.     
 
 **Riferimenti ticket**: in questo campo è possibile indicare la codifica da utilizzare per il Riferimento ticket da riportare nell'Offerta collegata al ticket e creata attraverso la procedura di *Creazione offerte da ticket* (presente nel modulo Tickets).
+
+**Ricerca contatto CRM anche come contatto padre**: se abilitato, abilita di default lo stesso flag in tutte le videate di ricerca dove previsto: Ricerca offerte, Ricerca contatti, Ricerca visit report, tab offerte e visit report nell'anagrafica contatto CRM
+
+**Crea contatto CRM da nuova anagrafica cliente**: se abilitato, all'inserimento di un nuovo conto Cliente all'interno di un contatto, genera in automatico un nuovo contatto CRM se non già presente. 

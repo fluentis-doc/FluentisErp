@@ -3,6 +3,12 @@ title: Tipi documenti
 sidebar_position: 5
 ---
 
+:::tip[FAst Start]
+La tabella è interessata dalla procedura di [**Fast Start**](/docs/guide/fast-start)
+
+Nel caso in cui si intenda configurare manualmente fare riferimento alla check list della pagina linkata
+:::
+
 La tabella si apre tramite il percorso **Tabelle > Impostazioni generali > Tipi documenti** e accoglie le possibili tipologie di documento che saranno memorizzate nel database e gestite dal Documentale Fluentis.
 
 La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.

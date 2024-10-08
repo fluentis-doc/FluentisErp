@@ -3,6 +3,11 @@ title: Fornitori preferenziali
 sidebar_position: 12
 ---
 
+:::important A cosa serve
+Il tab Fornitori Preferenziali all'interno dell'anagrafica articoli di Fluentis è una funzionalità chiave per la gestione degli approvvigionamenti. Questo consente di definire in modo preciso i fornitori preferenziali per ciascun articolo, facilitando così il processo di approvvigionamento e garantendo che vengano scelti i fornitori più adatti.
+Nella sua interfaccia, la sezione è suddivisa in due parti principali. La prima parte riguarda informazioni generali sui fornitori, come la selezione di un fornitore predefinito, che diventa il principale canale d'approvvigionamento per l'articolo in questione. Qui, gli utenti possono anche impostare parametri importanti come la quantità massima ordinabile, le tolleranze sulle quantità e sui prezzi, e i dettagli relativi agli ordini di fornitura. La seconda parte offre una griglia dettagliata in cui si possono aggiungere informazioni specifiche su ciascun fornitore, come il tempo di approvvigionamento, ed eventuali note.
+:::
+
 In questo tab si possono definire, per singolo articolo, quali sono i fornitori preferenziali da cui viene solitamente approvvigionato quell'articolo, indicandone uno di default in modo che il sistema vada ad ordinare sempre dallo stesso fornitore.
 
 La finestra è composta da due sezioni:

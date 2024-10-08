@@ -42,7 +42,7 @@ La stampa definitiva abiliterà l'opzione di **contabilizzazione liquidazione** 
 
 
 :::important Vedi Anche
-[**VIDEO TUTORIALS SULLE STAMPE FISCALI**](/docs/video/finance/intro.md)
+[**VIDEO TUTORIALS SULLE STAMPE FISCALI**](/docs/video/finance/intro)
 :::
 
 

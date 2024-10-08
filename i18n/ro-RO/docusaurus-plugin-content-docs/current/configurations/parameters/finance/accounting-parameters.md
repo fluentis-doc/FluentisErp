@@ -96,5 +96,5 @@ Posibilele criterii cuprinse în secțiune pot fi mutate cu butoanele *Mută sus
 **Cont analitic autofactură**: permite inserarea analiticului pentru crearea autofacturii din evidențele contabile pentru comunicarea datelor privind achizițiile către SDI.
 
 :::note Video tutorial
-[Parametri](/docs/video/finance/intro.md)
+[Parametri](/docs/video/finance/intro)
 :::

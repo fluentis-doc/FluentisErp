@@ -17,7 +17,7 @@ Contiene Informazioni sulle *Versioni*, permette di *Stampare*, contiene informa
 
 ### Tab Home
 
-Vedi dettagli in [Home](/docs/erp-home/home).
+Vedi dettagli in **Home**.
     
 ### I tab delle Aree
 
@@ -47,4 +47,3 @@ Contiene:
 
 ## Sezione inferiore
 
-Contiene una serie di informazioni che spieghiamo nell'articolo [Barra di stato](/docs/guide/status-bar/status-bar-intro).

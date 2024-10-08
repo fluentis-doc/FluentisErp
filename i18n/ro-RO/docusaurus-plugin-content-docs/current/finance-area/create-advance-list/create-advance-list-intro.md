@@ -25,7 +25,7 @@ RIBBON BAR: reprezintă meniul Forum-ului în discuţie, mai precis aria în car
 
 | Functie | Functionalitate |
 | --- | --- |
-|  [Document manager](/docs/guide/operations-with-data/document-manager)  | Procedura da posibilitatea de a atasa documente. |
+|  [Document manager](/docs/guide/common/operations-with-data/document-manager)  | Procedura da posibilitatea de a atasa documente. |
 
 
 

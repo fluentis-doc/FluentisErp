@@ -8,7 +8,7 @@ Il modulo Opportunità consente all’operatore di gestire le opportunità legat
 La procedura di **Ricerca Opportunità** è stata disegnata per permettere all’utente di ricercare facilmente le opportunità del CRM già inserite, con lo scopo di visualizzarle, modificarle ed eventualmente cancellarle.
 Con l’aiuto dei filtri si può visualizzare: una sola opportunità (**Numero**), più opportunità appartenenti alla stessa tipologia (**Tipo opportunità**), più opportunità con la medesima probabilità di successo (**Probabilità Successo**).
 
-Si rimanda alle [Funzionalità comuni](/docs/guide/operations-with-data/view-modify-save-and-delete-data) per i pulsanti presenti nella **Ribbon bar**.
+Si rimanda alle [Funzionalità comuni](/docs/guide/common/operations-with-data/view-modify-save-and-delete-data) per i pulsanti presenti nella **Ribbon bar**.
 
 L’**area di filtro** è quella dedicata ad ospitare l’elenco dei possibili tipi di dati grazie ai quali è possibile effettuare una selezione. I filtri sono tipicamente in condizione 'AND' ed è possibile specificare più criteri di filtro contemporanei.
 

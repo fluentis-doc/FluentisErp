@@ -50,7 +50,8 @@ Sempre all'interno di questa form è possibile aggiungere nuove tipologie all'in
 
 **% avanzamento obbligatorio**: se flaggato, prevede di indicare sempre % percentuale di avanzamento per questo tipo intervento;
 
-**Fatt. vend**: se flaggato, prevede di indicare sempre il fatturato per questo tipo intervento;
+**Fatt. vend**: se flaggato, prevede di indicare sempre il fatturato per questo tipo intervento, a condizione che il servizio/materiale abbia flag Fatturabile attivo;
 
 **L’IVA obbligatoria**: se flaggato, prevede di indiccare sempre l’IVA per questo tipo intervento.
 
+**Colore**: colore per identificare gli interventi nei calendari dell'area progetti, come il [Planner](/docs/project-management/planned-interventions/planner) e [Assegnazione WBS risorse](/docs/project-management/planned-interventions/wbs-resource-assignation)

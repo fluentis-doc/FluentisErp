@@ -1,25 +1,30 @@
 ---
-title: Generalità
+title: Introduzione
 sidebar_position: 1
 ---
 
-Il modulo pagamenti fornitori si utilizza principalmente per creare distinte di pagamento, tipicamente per bonifico bancario: il modulo, infatti, prevede la possibilità dell'invio telematico del tracciato abi dei pagamenti per bonifico all'interno dell'Italia.
+Il modulo pagamenti fornitori si utilizza principalmente per creare **distinte di pagamento**, tipicamente per **bonifico bancario**: il modulo, infatti, prevede la possibilità dell'invio telematico del tracciato **SEPA** (.xml) dei pagamenti per bonifico.
 
-Si procede alla creazione di una nuova distinta di pagamento andando a prelevare i dati dalle partite fornitori presenti: sarà possibile procedere alla contabilizzazione dei movimenti relativi, con la chiusura delle partite relative.
+E' possibile inoltre gestire tracciati per **distinte SDD** (Sepa Direct Debit) un formato che ha sostituito, a livello europeo, le precedenti distinte R.i.d. utilizzate per le autorizzazioni di addebito automatico in conto corrente.
 
-In coda alla creazione della distinta sarà possibile procedere alla stampa della distinta o all'invio telematico della stessa.
+Il modulo consente inoltre di importare telematicamente gli **avvisi di pagamento per le ricevute bancarie passive** e procedere quindi con la loro autorizzazione e pagamento, tramite invio alla banca del flusso di ritorno con le ricevute autorizzate, quindi completare la procedura con la contabilizzazione automatica dei pagamenti eseguiti.
 
-Il modulo si trova all'interno dell'area Tesoreria nel modulo Pagamenti Fornitori.
+Si procede alla creazione di una nuova distinta di pagamento andando a prelevare i dati dalle partite aperte fornitori presenti , direttamente interfacciandosi con il modulo amministrativo: sarà possibile procedere alla contabilizzazione dei movimenti relativi, con la chiusura delle partite relative inserite nella distinta di pagamento e lo storno del relativo saldo a livello contabile.
 
-Le impostazioni del modulo si risolvono unicamente nella definizione dei parametri relativi, mentre le causali contabili da utilizzare sono quelle normali di pagamento fornitore.
+
+
+**Tabelle Preliminari per utilizzare il modulo**:
+
+- **Anagrafiche associate a tipo conto Banca**: necessarie per intestare la distinta, il tipo conto Banca viene popolato alla procedura di Fast Start
+- Causali contabili da utilizzare per la contabilizzazione: sono quelle normali di pagamento fornitore che vengono create dalla procedura di Fast Start
+- Tabella Tipi pagamento: da richiamare in testata distinta, tabella già popolata dalla procedura di Fast Start
+- Numerazione pagamenti fornitori: per definire i numeratori associati, tabella già popolata dal fast Start
 
  
 
-Una corretta parametrizzazione degli algoritmi di base, sono consigliate prima di procedere con la gestione del modulo pagamenti fornitori.
+**Parametri**:   
 
- 
-
-**Parametri**: è opportuno riferirsi alla sezione [Home>Parametri>Tesoreria] per identificare la corretta impostazione degli algoritmi relativi al modulo Pagamenti Fornitori. La form è  [Parametri pagamenti fornitore](/docs/configurations/parameters/treasury/vendor-payments-parameters).
+[Parametri pagamenti fornitore](/docs/configurations/parameters/treasury/vendor-payments-parameters).
 
 ---
 

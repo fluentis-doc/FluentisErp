@@ -3,6 +3,14 @@ title: Causali di magazzino
 sidebar_position: 9
 ---
 
+:::important A cosa serve
+La tabella Causali di Magazzino di Fluentis è un elemento essenziale per la gestione delle movimentazioni di magazzino, consentendo di definire e personalizzare le causali utilizzate nei movimenti di carico e scarico. Gli utenti possono facilmente inserire nuove causali nella griglia, specificando informazioni obbligatorie come il magazzino di riferimento, il codice della causale e la descrizione.      
+
+Una delle caratteristiche principali di questa tabella è la possibilità di associare causali specifiche a ciascun magazzino, il che offre una flessibilità notevole nella personalizzazione delle procedure operative. Ogni causale può essere caratterizzata come carico o scarico, permettendo di gestire in modo preciso come influiscono sulla giacenza di magazzino.      
+
+Inoltre, gli utenti possono configurare vari parametri opzionali, tra cui flag per la visibilità in aree specifiche e definire il costo proposto per i movimenti. È anche possibile attivare funzioni per aggiornare automaticamente il costo medio, il costo ultimo e il prezzo di vendita in funzione delle movimentazioni effettuate. Queste caratteristiche rendono la tabella un componente chiave per una gestione efficiente delle operazioni di magazzino e per il monitoraggio dei costi.
+:::
+
 Attraverso questa finestra vengono impostate tutte le causali di magazzino che servono alla movimentazione degli articoli da e per i vari magazzini inseriti nell'apposita tabella *Magazzini*.
 
 La tabella consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.

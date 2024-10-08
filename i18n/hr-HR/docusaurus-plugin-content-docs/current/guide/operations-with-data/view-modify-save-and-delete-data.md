@@ -25,10 +25,10 @@ Ci sono registrazioni che non possono essere cancellate prima di cancellare i su
 
 Per più dettagli:
 
-- Consultare  [Ricerca dati](/docs/guide/operations-with-data/data-search-in-read-only-forms)  e  [Inserimento e selezione dati](/docs/guide/operations-with-data/manual-entry-or-help-and-data-selection)  per impostare correttamente i campi.
+- Consultare  [Ricerca dati](/docs/guide/common/operations-with-data/data-search-in-read-only-forms)  e  [Inserimento e selezione dati](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection)  per impostare correttamente i campi.
 
-- Consultare  [Stampe ](/docs/guide/operations-with-data/reports) per impostare diverse opzioni di stampa dei documenti.
+- Consultare  [Stampe ](/docs/guide/common/operations-with-data/reports) per impostare diverse opzioni di stampa dei documenti.
 
-- Consultare  [Campi comuni](/docs/guide/glossary/glossary-intro)  e  [Pulsanti comuni](/docs/guide/common-buttons)  per la descrizione dei campi di filtro/pulsanti comuni alla maggior parte delle form.
+- Consultare  [Campi comuni](/docs/guide/common/glossary/glossary-intro)  e  [Pulsanti comuni](/docs/guide/common/common-buttons)  per la descrizione dei campi di filtro/pulsanti comuni alla maggior parte delle form.
 
-- Consultare  [Navigazione e acceleratori](/docs/guide/operations-with-data/navigation-and-accelerators)  per navigare rapidamente nell'applicazione.
+- Consultare  [Navigazione e acceleratori](/docs/guide/common/operations-with-data/navigation-and-accelerators)  per navigare rapidamente nell'applicazione.

@@ -1,6 +1,10 @@
 ---
-title: Generalità
+title: Općenito 
 sidebar_position: 1
 ---
 
-Il modulo **Commesse di Produzione** consente di gestire la generazione del primo documento dell'area produzione, che può essere ottenuto dall'elaborazione di un *Piano Principale di Produzione*, di una lista di *Previsioni di Vendita* oppure di una lista di righe di *Ordini Clienti*.
+Modul **Narudžba za proizvodnju** omogućuje stvaranje i upravljanje prvim dokumentom u području proizvodnje, koji može biti **Jednoproizvodni** ili **Višeproizvodni**.
+
+- [**Jednoproizvodne narudžbe**](/docs/planning/mps-master-production-scheduling/production-job-orders/new-monoproduct-job-order)
+
+- [**Višeproizvodne narudžbe**](/docs/planning/mps-master-production-scheduling/production-job-orders/new-multiproduct-job-order) 

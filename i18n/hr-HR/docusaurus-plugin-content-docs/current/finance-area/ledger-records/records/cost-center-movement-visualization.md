@@ -9,7 +9,7 @@ Questa maschera permette di visualizzare, per ogni sottoconto selezionato (princ
 
 Nell'area di filtro superiore è possibile inserire dati relativi sia alle registrazioni contabili, sia al centro di costo al fine di raffinare la ricerca.
 
-La griglia dei risultati (sotto) presenta, per ogni conto contabile, il relativo movimento dei centri aziendali (uno o più di uno) collegati, oltre ad altri dettagli sulla registrazione contabile. Per il significato dei campi specifici si rinvia al **[Glossario](/docs/guide/glossary/glossary-intro)**.
+La griglia dei risultati (sotto) presenta, per ogni conto contabile, il relativo movimento dei centri aziendali (uno o più di uno) collegati, oltre ad altri dettagli sulla registrazione contabile. Per il significato dei campi specifici si rinvia al **[Glossario](/docs/guide/common/glossary/glossary-intro)**.
 
 In basso, sotto la griglia dei risultati, sono presenti quattro campi con i totali, rispettivamente per le sezioni Dare e Avere.
 

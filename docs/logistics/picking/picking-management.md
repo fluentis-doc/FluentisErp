@@ -3,6 +3,14 @@ title: Crea picking
 sidebar_position: 3
 ---
 
+:::important A cosa serve
+La gestione picking di Fluentis è progettata per ottimizzare il processo di prelievo degli articoli dal magazzino. Questa funzionalità consente agli utenti di generare liste di prelievo in modo efficiente, partendo dalle diverse tipologie di picking configurabili nel sistema. Attraverso la creazione di un picking, gli operatori possono selezionare gli articoli da evadere, definendo dettagli cruciali come la quantità e la ubicazione di prelievo.
+
+La procedura di gestione picking si compone di diverse interfacce, che permettono di visualizzare e filtrare gli ordini cliente, facilitando l'evasione totale o parziale degli ordini attraverso una gestione automatizzata delle informazioni relative agli articoli. Inoltre, il sistema automatizza il numero di identificazione del picking, basandosi sui parametri preconfigurati, garantendo così tracciabilità e ordine nelle operazioni.
+
+Grazie a funzionalità come il monitoraggio dello stato di evasione delle righe, la registrazione dei lotti e serial number, e l'integrazione con documenti di trasporto come DDT e fatture, la gestione picking di Fluentis offre un'esperienza operativa completa e flessibile. Ciò consente alle aziende di migliorare l'efficienza logistica, ridurre gli errori durante il prelievo e garantire una migliore soddisfazione del cliente.
+:::
+
 La form si apre tramite:  
  -  il percorso **Logistica > Picking > Crea picking** 
 

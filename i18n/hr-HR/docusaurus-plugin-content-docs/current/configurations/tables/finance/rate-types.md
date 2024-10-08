@@ -51,9 +51,9 @@ I campi relativi alle date di validità riferiti alla percentuale permettono di 
 
  
 
-RIBBON BAR: per quanto riguarda le funzionalità comuni a tutte le form si rimanda all'articolo ** [Pulsanti comuni](/docs/guide/common-buttons) ;**
+RIBBON BAR: per quanto riguarda le funzionalità comuni a tutte le form si rimanda all'articolo ** [Pulsanti comuni](/docs/guide/common/common-buttons) ;**
 
-Si rimanda inoltre agli articoli generali realtivi all' [**Inserimento dati**](/docs/guide/operations-with-data/manual-entry-or-help-and-data-selection)  e all' [**Anteprima e Stampa**](/docs/guide/operations-with-data/reports).
+Si rimanda inoltre agli articoli generali realtivi all' [**Inserimento dati**](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection)  e all' [**Anteprima e Stampa**](/docs/guide/common/operations-with-data/reports).
 
 
 

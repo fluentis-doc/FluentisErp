@@ -7,7 +7,7 @@ Nella parte inferiore dell'applicazione, la barra di stato contiene una serie di
 
 **Attività**: permette un rapido collegamento con la gestione delle attività pending (derivanti dalle procedure di WorkFlow configurate);
 
-**Calendario**: permette la gestione del calendario, che può essere agganciato con Exchange o Outlook (vedi [Configurazione Calendario](/docs/guide/status-bar/calendar-configuration) );
+**Calendario**: permette la gestione del calendario, che può essere agganciato con Exchange o Outlook.
 
 **Dashboards**: permette una rapida sintesi dei fatti salienti della gestione con un interfaccia statistica molto potente e facilmente customizzabile;
 

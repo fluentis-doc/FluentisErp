@@ -46,14 +46,16 @@ Possibili scenari relativi alla Conferma periodo con sovrapposizioni:
 
 - la richiesta di ferie ha già il flag "Gestito" abilitato: verrà fatto richiesta "Richiesta già gestita, vuoi procedere nuovamente?" 
 Rispondendo no, verrà bloccato tutto il processo. 
-Rispondendo sì, verranno reinserite le dichiarazioni attività ferie e sovrascritte quelle generate in precedenza se precedenti. 
+Rispondendo sì, verranno reinserite le dichiarazioni attività ferie e sovrascritte quelle generate in precedenza dalla richiesta ferie (se presenti). 
 
-- la richiesta di ferie ha già il flag "Gestito" disabilitato ma esistono altre dichiarazioni attività nello stesso periodo: 
+- la richiesta di ferie ha  il flag "Gestito" disabilitato ma esistono altre dichiarazioni attività nello stesso periodo: 
 "Le attività si sovrappongono: *dettaglio attività* - *ferie* Vuoi continuare? "
 
 Rispondendo Sì : verranno generate tutte le dichiarazioni attività per il periodo ferie richiesto
 
 Rispondendo No : verranno generate solo le dichiarazioni attività per le giornate senza altre dichiarazioni attività presenti
+
+Se nella giornata fosse presente anche solo una dichiarazione attività per un orario lavorativo parziale, la giornata verrà comunque saltata e non verranno inserite ferie. 
 
 
 

@@ -3,6 +3,12 @@ title: Soluzioni di pagamento
 sidebar_position: 10
 ---
 
+:::tip[FAst Start]
+La tabella è interessata dalla procedura di [**Fast Start**](/docs/guide/fast-start)
+
+Nel caso in cui si intenda configurare manualmente fare riferimento alla check list della pagina linkata
+:::
+
 La tabella contiene le soluzioni di pagamento da utilizzare nel gestionale per il calcolo delle scadenze e delle partite aperte.
 
 :::danger Attenzione

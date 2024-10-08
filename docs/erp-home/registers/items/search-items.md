@@ -5,6 +5,12 @@ sidebar_position: 1
 
 **Fluentis academy**: [Identificazione dei prodotti e relative parti](/docs/erp-home/registers/items/academy-master-item) 
 
+:::important A cosa serve
+Il filtro dell'anagrafica articoli di Fluentis è una funzione chiave che consente di cercare, visualizzare e gestire gli articoli all'interno del sistema.     
+Organizzato in una sezione per l'inserimento dei criteri di ricerca e una griglia per i risultati, permette di effettuare ricerche mirate attraverso vari parametri come codice, classe, categoria merceologica o fornitore.       
+È possibile effettuare anche ricerche più avanzate, ad esempio per identificare articoli in esaurimento o archiviati, migliorando l’efficienza nella gestione del magazzino.
+:::
+
 Consente di ricercare tutti gli articoli con lo scopo di visualizzarli, modificarli, ed eventualmente cancellarli oppure procedere all'inserimento di un nuovo articolo; la finestra si compone di un'area di filtro e da una griglia di risultato.
 
 Con l'aiuto dei filtri si può decidere di visualizzare: un solo articolo (per es. ricercando con il *codice* articolo) o più articoli appartenenti alla stessa classe inserendo la *classe* articolo; articoli con le stesse caratteristiche, o la stessa *categoria merceologica* (per es. ricercando con caratteristica e categoria merceologica); articoli con lo stesso *tipo* articolo, o la stessa *nomenclatura*; tutti gli articoli aventi uno stesso *fornitore preferenziale*, uno stesso *stato* o *versione*; nel caso dei materiali acquistati è possibile ricercare l'articolo tramite il codice *articolo del fornitore*.

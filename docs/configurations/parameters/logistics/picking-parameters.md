@@ -3,6 +3,12 @@ title: Parametri Picking
 sidebar_position: 6
 ---
 
+:::important A cosa serve
+Attraverso questa funzionalità, gli utenti possono configurare e adattare il sistema in base alle diverse esigenze operative, assicurando un funzionamento fluido e coerente delle attività di logistica.
+
+In questa sezione, è possibile assegnare magazzini e causali di scarico predefiniti, decidere se controllare la disponibilità di articoli e definire se l'inserimento delle informazioni come il codice operatore debba essere obbligatorio. Altre opzioni includono la gestione di articoli a lotti o serial number e il controllo delle quantità al momento della creazione del picking. Questo modulo di parametrizzazione non solo facilita l'operatività, ma garantisce anche che le procedure siano conformi alle politiche aziendali e alle normative vigenti, permettendo una gestione efficace e precisa del magazzino.
+:::
+
 La form si apre tramite il percorso **Parametri > Logistica > Parametri Picking** e permette di effettuare tutti le parametrizzazioni riguardanti il funzionamento dei picking o liste di prelievo. Soltanto dopo aver parametrizzato opportunamente questa maschera è possibile utilizzare il modulo di Picking.
 
 *Pulsante specifico*  
@@ -21,7 +27,11 @@ Nel caso ci siano gestioni particolari degli articoli è attivabile la **Gestion
 
 In quest'ultimo caso si può prevedere che durante l'inserimento di un nuovo picking sia *obbligatorio* indicare i lotti e i serial number degli articoli.
 
-**Movimentazione spunta automatica**: se attivo, nella form *Gestione Spunta* fa lo scarico automatico della riga.          
+**Movimentazione spunta automatica**: se attivo, nella form *Gestione Spunta* fa lo scarico automatico della riga.   
+
+**Visualizzazione griglia evasione**: se attivo, il flag abilita la modalità griglia nella form di evasione picking.
+
+**Visualizzazione tree evasione**: se attivo, il flag abilita la modalità tree nella form di evasione picking.      
 
 ### WMS Mobile
 

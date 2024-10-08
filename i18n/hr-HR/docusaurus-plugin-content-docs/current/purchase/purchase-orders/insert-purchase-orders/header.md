@@ -3,7 +3,7 @@ title: Zaglavlje
 sidebar_position: 2
 ---
 
-Nakon odabira obaveznih podataka u gornjem dijelu, korisnik može nastaviti unos sljedećih podataka [ručno](/docs/guide/operations-with-data/manual-entry-or-help-and-data-selection) pomoću  [polja za pomoć](/docs/guide/operations-with-data/manual-entry-or-help-and-data-selection) ili, prema odabranim postupcima, aplikacija *automatski* popunjava određena polja.
+Nakon odabira obaveznih podataka u gornjem dijelu, korisnik može nastaviti unos sljedećih podataka [ručno](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) pomoću  [polja za pomoć](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) ili, prema odabranim postupcima, aplikacija *automatski* popunjava određena polja.
 
 :::note NAPOMENA
 Ako se dokument *kreira automatski*, ovi podaci preuzimaju se iz *izvornog dokumenta* iz kojeg je generiran.
@@ -11,9 +11,9 @@ Ako se dokument *kreira automatski*, ovi podaci preuzimaju se iz *izvornog dokum
 
 Unosom **Dobavljača** automatski se *predlažu* svi specifični podaci s kartice **Zaglavlje**, prema podacima postavljenim prethodno u [šifarniku dobavljača](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/accounting-data-intro), u odgovarajućim poljima adrese i *odjeljcima*:  
 
-- **Valuta**: [Valuta](/docs/guide/glossary/glossary-intro#currency), [Kurs](/docs/guide/glossary/glossary-intro#currency-exchange), [Datum valute](/docs/guide/glossary/glossary-intro#currency-date).
-- **Država**: [Država](/docs/guide/glossary/glossary-intro#country), [Jezik](/docs/guide/glossary/glossary-intro#language), [Zona](/docs/guide/glossary/glossary-intro#zone).
-- **Isporuka**: [Isporuka](/docs/guide/glossary/glossary-intro#shipment), [Porto](/docs/guide/glossary/glossary-intro#carriage), [Pakiranje](/docs/guide/glossary/glossary-intro#packing), [Cjenik](/docs/guide/glossary/glossary-intro#sales-price-list) i njegov [vremenski okvir važenja](/docs/guide/glossary/glossary-intro#validity-date).
+- **Valuta**: [Valuta](/docs/guide/common/glossary/glossary-intro#currency), [Kurs](/docs/guide/common/glossary/glossary-intro#currency-exchange), [Datum valute](/docs/guide/common/glossary/glossary-intro#currency-date).
+- **Država**: [Država](/docs/guide/common/glossary/glossary-intro#country), [Jezik](/docs/guide/common/glossary/glossary-intro#language), [Zona](/docs/guide/common/glossary/glossary-intro#zone).
+- **Isporuka**: [Isporuka](/docs/guide/common/glossary/glossary-intro#shipment), [Porto](/docs/guide/common/glossary/glossary-intro#carriage), [Pakiranje](/docs/guide/common/glossary/glossary-intro#packing), [Cjenik](/docs/guide/common/glossary/glossary-intro#sales-price-list) i njegov [vremenski okvir važenja](/docs/guide/common/glossary/glossary-intro#validity-date).
 
 *Drugi opcionalni podaci*:
 
@@ -37,7 +37,7 @@ U slučaju stvaranja narudžbenice pomoću postupka *Dobiti iz naloga za posao*,
 
 **Operater**: Omogućuje unos korisnika koji stvara dokument. Zaposlenici su prethodno uneseni u tablicu *Zaposlenici*, koja se nalazi na putanji *Početna stranica > Zaposlenici*. Podatak postaje **obavezan** ako je opcija postavljena u samim Postavkama dokumenta.
 
-**Projekt:** korištenjem [pomoći uz polje](/docs/guide/operations-with-data/manual-entry-or-help-and-data-selection) moguće je povezati dokument s projektom. Ovo udruživanje funkcionira samo na razini zaglavlja stavke. Projekt se automatski unosi ako narudžbenica nastaje kao rezultat dokumenta koji ga sadržava (npr. planirane narudžbe za kupnju).    
+**Projekt:** korištenjem [pomoći uz polje](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) moguće je povezati dokument s projektom. Ovo udruživanje funkcionira samo na razini zaglavlja stavke. Projekt se automatski unosi ako narudžbenica nastaje kao rezultat dokumenta koji ga sadržava (npr. planirane narudžbe za kupnju).    
 **Nalog proizvodnje**: mora biti postojeći broj radnog naloga za određenu godinu. Ako narudžbenica nastaje izdavanjem planiranih narudžbi za kupnju, radni nalog automatski dobiva broj.  
 **Status izvršenja**: kada se narudžbenica izvrši putem DDT-a ili fakture, njezino stanje isporuke automatski se mijenja iz neizvršenog u djelomično izvršeno ili izvršeno. Korisnik može prisiliti izvršenje narudžbenice koja nije u potpunosti izvršena, a kada se to dogodi, datum izvršenja također se sprema.    
 **Status dokumenta**: unosi ga korisnik i upravlja se u određenim vertikalizacijama (distribucijski lanci ili povezane tvrtke) kako bi se replicirali dokumenti između maloprodajnih mjesta i centralnog sustava te obrnuto.

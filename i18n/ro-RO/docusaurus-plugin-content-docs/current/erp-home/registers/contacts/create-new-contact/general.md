@@ -51,7 +51,7 @@ Flag-ul **Contabil**, prezent implicit în noile inserări, va permite definirea
 
 *Butoane specifice*
 
-> **[Propune date](/docs/guide/glossary/glossary-intro#v)**: după ce ați inserat codul fiscal puteți să apăsați acest buton sistemul, prin intermediul web-service va interoga sistemul informatic V.I.E.S. care va verifica valabilitatea și corectitudinea codului fiscal. Daca este corect, sistemul va propune toate celelalte date de bază ale contactului , evitând astfel inserarea manuală. 
+> **[Propune date](/docs/guide/common/glossary/glossary-intro#v)**: după ce ați inserat codul fiscal puteți să apăsați acest buton sistemul, prin intermediul web-service va interoga sistemul informatic V.I.E.S. care va verifica valabilitatea și corectitudinea codului fiscal. Daca este corect, sistemul va propune toate celelalte date de bază ale contactului , evitând astfel inserarea manuală. 
 
 ### Referințe
 

@@ -1,7 +1,15 @@
 ---
 title: Visualizzazione giacenze
-sidebar_position: 1
+sidebar_position: 2
 ---
+
+:::important A cosa serve
+L'introduzione alla visualizzazione delle giacenze di Fluentis costituisce un elemento fondamentale per una gestione efficiente del magazzino. Questa funzionalità consente agli operatori di estrapolare in modo semplice e pratico le giacenze di magazzino, permettendo di monitorare e confrontare la giacenza fisica con quella logica.
+
+La visualizzazione delle giacenze offre la possibilità di raggruppare i dati per articolo, fornendo anche un dettaglio per magazzino. Ciò significa che è possibile visualizzare più righe dello stesso articolo, qualora questo fosse presente in magazzini diversi. Inoltre, l'operatore ha la possibilità di filtrare i dati per ubicazione, progetto, cliente/fornitore o lotto, fornendo così una panoramica completa e dettagliata delle giacenze in relazione ai diversi contesti di utilizzo.
+
+Nel tab di dettaglio, ulteriori informazioni sui movimenti di magazzino sono accessibili, e da questo stesso tab è possibile generare registrazioni di magazzino per uno o più articoli, quando appartenenti allo stesso magazzino. Questa flessibilità permette un’efficace operatività, rendendo Fluentis uno strumento potente per la gestione delle risorse logistiche
+:::
 
 La form consente all'operatore di estrapolare facilmente le giacenze di magazzino per controllare il magazzino e la corrispondenza tra giacenza fisica e logica.
 

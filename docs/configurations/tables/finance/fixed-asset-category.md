@@ -3,6 +3,12 @@ title: Categoria cespite
 sidebar_position: 5
 ---
 
+:::tip[FAst Start]
+La tabella è interessata dalla procedura di [**Fast Start**](/docs/guide/fast-start)
+
+Nel caso in cui si intenda configurare manualmente fare riferimento alla check list della pagina linkata
+:::
+
 All'interno di questa tabella si codificano le categorie dei cespiti gestiti nella società. 
 
 ### **Griglia superiore**

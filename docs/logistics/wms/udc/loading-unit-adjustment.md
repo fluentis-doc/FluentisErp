@@ -3,6 +3,11 @@ title: Rettifica unità di carico
 sidebar_position: 8
 ---
 
+:::important A cosa serve
+La funzione Rettifica Unità di Carico del WMS di Fluentis permette di apportare modifiche agli articoli contenuti in un'unità di carico, consentendo rettifiche sia positive che negative.     
+Gli operatori possono visualizzare tutti gli articoli presenti, variare le quantità e aggiungere o rimuovere articoli, rendendo il processo di aggiornamento delle giacenze più preciso ed efficiente.
+:::  
+
 Questa procedura è utilizzata per rettificare gli articoli di un'unità di carico, in positivo o negativo, oppure per aggiungere un nuovo articolo o toglierne uno già presente.   
 Alla lettura dell'unità di carico vengono visualizzati nella griglia sottostante tutti gli articoli contenuti al suo interno, con l'indicazione dei seguenti campi:
 

@@ -1,43 +1,43 @@
 ---
-title: Parametri Fabbisogno Materiali
+title: Parametri potreba za materijalom
 sidebar_position: 7
-tags: [Fabbisogno materiali]
+tags: [Zahtjevi za materijal]
 ---
 
-Attraverso questa finestra vengono settati i parametri che riguardano alcune delle impostazioni di base dell'area Produzione.
+Kroz ovaj prozor se postavljaju parametri koji se tiču nekih od osnovnih postavki proizvodnog područja.  
 
-**Primo giorno della settimana cal. capacità produttiva**: è possibile decidere quale sia il giorno che debba essere considerato come primo della settimana nel [Calendario delle capacità produttive](/docs/configurations/tables/production/factory-calendar), quindi nel calendario dei centri di lavoro. Solitamente si imposta il lunedì.
+**Prvi dan u tjednu za izračun proizvodnih kapaciteta**: moguće je odlučiti koji dan treba smatrati prvim u tjednu u [Kalendaru proizvodnih kapaciteta](/docs/configurations/tables/production/factory-calendar), a time i u kalendaru radnog centra. Obično se postavlja u ponedjeljak.
 
-**Ultimo ordine pianificato inserito per l'anno in corso**: rappresenta l'ultimo numero progressivo utilizzato nell'anno in corso per gli ordini pianificati.
+**Zadnji planirani nalog umetnut za ovu godinu**: predstavlja zadnji progresivni broj korišten u tekućoj godini za planske naloge.  
 
-**Rilascio RDA autorizzate**: se attivo, permette di fare in modo che le richieste di acquisto generate tramite il rilascio degli ordini pianificati di acquisto siano create con il flag di 'Autorizzato' attivato automaticamente. Diversamente, l'utente che deve generare ordini fornitori da RDA sarà costretto ad autorizzare tutte le righe della richiesta di acquisto prima di poter generare un ordine da essa. È possibile comunque autorizzare solo alcune delle righe della RdA e quindi procedere alla generazione ordini fornitori partendo solo dalle righe autorizzate.
+**Pusti autorizirani PD**: ako je aktivno, omogućuje vam da osigurate da se zahtjevi za kupnju generirani putem izdavanja planiranih narudžbi za kupnju kreiraju s automatski aktiviranom oznakom 'Ovlašteno'. U suprotnom, korisnik koji mora generirati narudžbe dobavljača iz RDA bit će prisiljen autorizirati sve retke zahtjeva za kupnju prije nego što iz njega može generirati narudžbu. Međutim, moguće je autorizirati samo neke od redaka Zahtjeva za ponudu i zatim nastaviti s generiranjem narudžbi dobavljača počevši samo od ovlaštenih redaka.  
 
-**Colori sfondo**: permette di impostare il colore dello sfondo per le diverse tipologie di ordine: di Acquisto, di Produzione o di C/Lavoro, mentre la sezione dei *Colori testo* permette di impostare il colore del testo per le diverse tipologie di ordine: in ritardo e/o scaduti.
+**Boje pozadine**:omogućuju vam postavljanje boje pozadine za različite vrste naloga: Kupnju, Proizvodnju ili Račune za plaćanje, dok odjeljak *Boje teksta* omogućuje postavljanje boje teksta za različite vrste naloga: kasne i/ili istekle.
 
-**Parametri per il rilascio ordini pianificati**  
-In questa sezione l'utente può impostare il tipo richiesta d'acquisto e il tipo ordine di conto lavoro (se chiuso quindi non modificabile ulteriormente o aperto e quindi modificabile) che devono essere generati automaticamente durante il rilascio degli ordini pianificati rispettivamente di acquisto e di conto lavoro.
+**Parametri za puštanje planiranih naloga**  
+U ovom odjeljku korisnik može postaviti vrstu zahtjeva za kupnju i vrstu naloga za podizvođače (ako je zatvoren i stoga se ne može dalje mijenjati ili otvoren i stoga se može mijenjati) koji se moraju automatski generirati tijekom izdavanja planiranih naloga za nabavu odnosno proizvodnih naloga. 
 
-**Controllo terzista obbligatorio per le fasi esterne**: se attivo, nel caso non sia indicato il terzista in una fase esterna, questo verrà segnalato con il **Colore testo riga ordine** sotto indicato. 
-**Controllo materiale obbligatorio**: abilita il controllo della presenza o meno dei materiali a magazzino e a seconda della disponibilità verranno evidenziati con differenti colori (**Colore sfondo riga ordine**: *Completa / Parziale / Assente*); inoltre, è possibile anche indicare in **Tipo controllo su** se questo debba essere fatto sulla giacenza o sulla disponibilità del materiale.
+**Obavezna provjera izvođača u vanjskim fazama**: ako je aktivna, ako podizvođač nije naveden u vanjskoj fazi, to će biti prijavljeno **Bojom teksta za redak narudžbe** navedenom u nastavku. 
+**Obavezna kontrola materijala**: omogućuje kontrolu prisutnosti ili odsutnosti materijala na zalihama i ovisno o dostupnosti bit će istaknuti različitim bojama (**Boja pozadine reda narudžbe**: *Potpuna / Djelomična / Nema*); nadalje, također je moguće u **Tipu kontrole** naznačiti treba li to učiniti na zalihi ili na raspoloživosti materijala.  
 
-**Gestione semplificata della produzione**: è obsoleto e viene utilizzato solo nelle vecchie versioni.  
+**Pojednostavljeno upravljanje proizvodnjom**: zastarjelo je i koristi se samo u starim verzijama.   
 
-**Rilascio ordini di produzione esecutivi**; se attivo, permette di fare in modo che gli ordini di produzione generati tramite il rilascio degli ordini pianificati di produzione siano creati già nello stato di “Esecutivi”, e quindi non richiedano un'ulteriore procedura di Rilascio.
+**Otpustite izvršne proizvodne narudžbe**; ako je aktivan, omogućuje vam da osigurate da su proizvodni nalozi generirani otpuštanjem planiranih proizvodnih naloga već kreirani u stanju “Izvršni“ i stoga ne zahtijevaju daljnji postupak Otpuštanja.
 
-**Visualizzazione formato ad albero degli ordini**: se attivo, permette di visualizzare, nella parte sottostante della form di *Ricerca ordini pianificati*, un albero che leghi gli elementi di una commessa di produzione, in base ai legami delle distinte base coinvolte nella schedulazione di quella commessa.
+**Prikaži stablo naloga**: ako je aktivan, omogućuje vam pregled, u donjem dijelu obrasca za *Pretraživanje planirane narudžbe*, stabla koje povezuje elemente proizvodnog naloga, na temelju veza sastavnica materijala uključenih u raspored tog narudžba.
 
-**Mantenimento legame tra ordini di una Commessa**: se attivo, permette, sfruttando anche i flag immediatamente successivi, di decidere che qualora venga modificata manualmente la data di un ordine pianificato, la procedura attui la modifica conseguente anche sugli ordini pianificati immediatamente adiacenti a quello che ha subito la modifica iniziale.
+**Zadrži poveznicu između naloga i podnaloga**: ako je aktivna, dopušta, također iskorištavanjem neposredno sljedećih oznaka, odlučivanje da će, ako je datum planirane narudžbe ručno izmijenjen, postupak implementirati posljedičnu izmjenu i na planirane narudžbe neposredno uz onaj koji ima početnu promjenu odmah.  
 
-**Numero giorni per il calcolo disponibilità**: indica fino a quanto spingersi avanti per la valutazione del calcolo della disponibilità, non considerando ordini e fabbisogni che superano quella data.
+**Broj dana za izračun raspoloživosti**: pokazuje koliko daleko treba ići za procjenu izračuna dostupnosti, ne uzimajući u obzir narudžbe i potrebe koje prelaze taj datum.  
 
-**Data impegno materiali alla fase di scarico materiali**:
+**Datum predaje materijala u fazi istovara materijala**:
 
-**Giorni anticipo impegno materiali**: il valore indicato permette di anticipare di quel numero di giorni la disponibilità del materiale rispetto l’inizio della lavorazione (sia negli ordini pianificati di produzione che negli ordini di produzione), in modo da permettere alla logistica di portare il materiale in tempo in produzione. Questo è preso in considerazione dalle seguenti procedure: tutte le schedulazioni "al più presto", "al più tardi", "a capacità finita", "MRP", "Completamento dati ordine" sia negli ordini pianificati che negli ordini di produzione, "Ricalcola data inizio" sia negli ordini pianificati che negli ordini di produzione tutte le procedure del CRP ("Gantt", "Capacità centri di lavoro" e "Sequenza fasi") che operano sul cambio data inizio o fine della fase dell'ordine.
+**Dani unaprijed za predavanje materijala**: naznačena vrijednost omogućuje da se dostupnost materijala pomakne za taj broj dana u odnosu na početak obrade (i u planiranim proizvodnim nalozima i u proizvodnim nalozima), kako bi se omogućilo logistici da donese materijal na vrijeme u proizvodnji. Ovo se uzima u obzir sljedećim postupcima: svi rasporedi "što je prije moguće", "najkasnije", "konačnim kapacitetom", "MRP", "Završetak podataka o narudžbi" u planiranim i proizvodnim nalozima, " Ponovno izračunavanje početka datum", kako u planiranim nalozima tako iu proizvodnim nalozima, svi CRP postupci ("Gantt", "Kapacitet radnog centra" i "Slijed faza") koji djeluju na promjenu datuma početka ili završetka faze naloga.
  
-**Magazzini di schedulazione ordini**  
-La griglia è la semplice visualizzazione della lista di magazzini si cui deve essere controllata la disponibilità. Questa lista viene impostata nella form chiamata *Calcolo disponibilità* che si trova tra le Utilità del gestionale.
+**Skladišta za raspoređivanje naloga**  
+Mreža je jednostavan prikaz popisa skladišta čiju dostupnost je potrebno provjeriti. Ovaj popis postavljen je u obliku koji se zove *Izračun dostupnosti* koji se nalazi u Pomoćnim programima sustava upravljanja.
 
-**Parametri Gantt**
-Permette di inserire dei parametri di default per la gestione della form del Gantt (*Tipo simulazione Gantt* e *Tipo simulazione Snapshot*).
+**Parametri Ganttogram**
+Omogućuju unos zadanih parametara za upravljanje Ganttovim obrascem (*Vrsta Ganttove simulacije* i *Vrsta simulacije snimke*).
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Za sve što nije detaljno opisano u ovom dokumentu o uobičajenom funkcioniranju obrazaca, pogledajte sljedeću poveznicu [Zajedničke funkcije, gumbi i polja](/docs/guide/common).

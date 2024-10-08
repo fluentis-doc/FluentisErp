@@ -3,6 +3,73 @@ title: Patch notes Versione 706
 sidebar_position: 1
 ---
 
+### Patch 706.1-0014 - 07/10/2024
+> - FI - Comunicazione liquidazione periodica iva: revisione della stampa per l'indicazione del debito periodo precedente non superiore ai 100€ (campo VP7)
+> - SH – Extradata column – fix condition
+> - Blazor – fix busy indicator remaining active after form initialization
+> - ARM - E' possibile nascondere le tile dalle maschere di ricerca dei documenti nel seguente modo: accedere al Navigatore oggetti, aprire la cartella Informations dell'oggetto, entrare in Modifica e togliere il flag Predefinito dalla Visualizzazione documento (#TT04227/24)
+
+### Patch 706.1-0013 - 03/10/2024
+> - CO - revisione calcolo mensilizzazione dell’elaborazione periodi (#TT04072/24)
+> - MES - Corretto bug nel controllo della giacenza dei materiali delle segnalazioni di produzione. (#TT04123/24)
+> - SD – Stampa Bilancino di fatturazione – Corretti bug subreport ricalcolo iva e spese. (#TT03249/24)
+> - SD – Corretto errore che faceva andare in loop il messaggio con “IVA/Prezzo obbligatorio” quando si cercava di salvare il documento senza aver inserito i dati obbligatori (#TT02165/24).
+> - SD, SCS – Quando il flag Lotti e SN obbligatori non è attivo e il Tipo prelievo del lotto è F.I.F.O. o Data scadenza, il codice lotto viene proposto in automatico quando si effettua lo scarico del documento, se non è già stato inserito manualmente (#TT03979/24).
+> - FI - SafT - changes for GeneralLedgerEntries July 2024 ( TT03838/24)
+> - MES – Ottimizzata la procedura registrazione segnalazioni. (#TT04017/24)
+> - Solved bug to detect properties for Object basic interface on Blocky
+> - QY - Contollo articoli - Refactor custom-standard Siliconature (#TT04169/24)
+> - SCM – Corretto bug nella procedura di Creazione automatica ordini che restituiva errore quando si sceglieva di inserire gli articoli all’interno di un ordine esistente (#TT04134/24).
+> - PM: gestita sovrapposizione o doppia conferma richieste di ferie (#TT02125/24)
+> - ARM: Fix for Extension property mapping when extension object has more properties with parent object type.
+> - SH: Fix extradata filter form columns are loaded from profile. Skip column if not valid (TT01838/24)
+> - MS – Corretto bug nell’applicazione del lotto economico minimo di acquisto nel caso di una pianificazione generale con raggruppamento. (#TT04026/24)
+> - WM – Allow picking unload when created from production ( TT04235/24)
+
+### Patch 706.1-0012 - 26/09/2024
+> - Add Global script to SendEmail from WorkFlow
+> - WM - In anagrafica lotti e tracciabilità, nel filtro sono stati aggiunti i flag: Tutte, Nulla e Positiva, che permettono di filtrare per le quantità: in giacenza, impegnata e disponibile. (#TT03510/24)
+> - QY - Non conformità - Refactor custom-standard Siliconature
+> - SH – fix custom projects references – add post migration script
+> - SD – Nella procedura di Creazione Listini Avanzata possono essere considerati anche gli sconti inseriti nella Definizione politiche sconti: è necessario attivare il flag “Ripresa sconto” nella Formula di aggiornamento politiche prezzi/sconti e il flag “Gestione prezzi” nell’anagrafica del contatto, tab listini (#TT02411/24).
+> - Metodo algoritmo standard customizzato non visibile su object navigator (#TT04032/24)
+> - FI - Implement FA_RO_ContabSpesediFattura in F2023 ( TT03784/24)
+> - SD – Abilitato il campo Stato nel riepilogo di riga degli Ordini, i cui valori possono essere: Inserito, Confermato, In produzione, Prodotto, Annullato (#TT04066/24)
+> - Solved problem with Missing Link with MasterDocumentId (#TT04027/24)
+> - Align script compilation paths for Debug enviroment
+> - Solved bug with Dashboard Viewer
+> - Sh - Documentale - Corretto bug in caricamento di più documenti in modalità cartella in quanto andava in disconnessione il programma (3705/24, 2202/24 )
+> - CO - revisione calcolo mensilizzazione dell’elaborazione periodi (#TT04072/24)
+> - nel calcolo dei totali fatture di acquisto, gestione delle aliquote iva con flag ‘Reverse charge’ per gestione fatture miste (#TT03198)
+> - SD – Implementata la gestione di ‘Spese/Sconti maggiorazioni finali’ nell’importazione WEB Api degli ordini cliente (#TT04102/24)
+> - SCM – Corretto errore nella Creazione automatica ordini da RDA che talvolta proponeva quantità confermate errate (#TT03956/24)
+> - WM - Distinte Basi: Risolta visualizzazione griglia tab Ciclo creando un profilo predefinito (rif. ticket 3907/24)
+> - ARM – Allow no mapping object customization; Fix extension object parent property 
+
+### Patch 706.1-0011 - 20/09/2024
+> - WM - Aggiunto la variante nel report ValorizatedBOM e ValorizatedItemCostBOM della valorizzazione distinta base
+> - Solved problem with Script code invalid chars
+> - Update excel import for Posting
+> - QY - Azioni correttive - E' stata abilitata la gestione multilinea delle colonne "Azione proposta" e "Elementi da valutare" presenti nei Programmi di azione. (#TT03938/24)
+> - Arm – Align object from table – ensure property starts with capitalized letter; fix parent object
+> - WM – fix valorization case for RO version.
+> - FI – Versamenti ritenuta: corretto mancato aggiornamento data di versamento della ritenuta versata (Ticket#TT02897/24).
+> - QY - Controllo articoli - Importa articoli da controllare - Risolta l'anomalia della  ricerca utilizzando i filtri sui Lotti e Numeri seriali (#TT03789/24).
+> - QY – Controllo articoli – Importa articoli da controllare - Risolta anomalia nella ricerca di un articolo, gestito a lotti, già precedentemente importato (#TT03709/24).
+> - Arm.SCR_ScriptCategories – Fix sql script that add new categories for CPQ script area
+> - SCM, SCS – Corretto errore nella ripartizione delle spese con flag Ripartita inserite nei riepiloghi dei documenti (#TT02336/24).  
+> - SH - Update IBAN structure check for country AE (United Arab Emirates) ( TT03985/24)
+> - SH - Risolto caso in inserimento conti nel piano dei conti (#TT04007/24)
+> - CO - revisione cancellazione registrazioni rimanenze nelle chiusure infrannuali (#TT03976/24)
+> - PM: WEB risolta visualizzazione planner con raggruppamento per progetto (TT03950/24)
+> - PR - Contabilizzazione distinta bonifici (TT02623/24)
+> - CO – Aggiunta la Colonna costo variante nel calcolo costi. Questa riporta i valori presenti nel tab varianti dell’anagrafica articolo. (#TT03057/24 - #TT03043/24)
+> - SD - Corretto errore nella stampa Fatturato, che in caso di 'Modalità di ordinamento' per Codice non stampava il Codice articolo (#TT04003/24)
+> - SD – Corretto errore nel salvataggio dei profili nella form delle Offerte di Vendita (#TT03907/24).
+> - SD- Corretto errore nel filtro di Ricerca Ordini Clienti che a volte visualizzava gli articoli duplicati nella finestra di dettaglio dell’ordine (#TT03982/24).
+> - FI – round VAT at purchase invoice accounting ( TT03784/24)
+> - FI - Stampa Libro Cespiti con esercizio non solare ( TT03716/24)
+
 ### Patch 706.1-0010 - 12/09/2024
 > - QY - Strumenti di misura – E’ stata implementata la propagazione degli Extradata tra Categoria Strumento di misura e Strumento di misura. (#TT03855/24)
 > - QY – Reclami – E’ stata risolta l’anomalia applicando il filtro Articolo nella Ricerca Reclami. (#TT03654/24)

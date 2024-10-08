@@ -1,5 +1,5 @@
 ---
-title: Creazione automatica ordine
+title: Creazione automatica ordini
 sidebar_position: 2
 showLastUpdateTime: true
 ---

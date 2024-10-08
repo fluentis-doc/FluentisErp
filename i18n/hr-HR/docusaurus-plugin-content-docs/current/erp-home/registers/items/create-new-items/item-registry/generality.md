@@ -30,7 +30,7 @@ U ovom slučaju, provjerava se kako na artiklu, tako i na vrsti plaćanja koja s
 
 **Prihodi od prodaje**: kao i kod fakturiranja kupovine, ovaj odabir služi za upravljanje podračunima prihoda od prodaje za artikl; 
 
-**Priroda artikla**: to je polje koje se koristi za definiranje članka i koristi se u nekim posebnim postupcima. U padajućem izborniku nalazi se popis različitih priroda koje možemo dodijeliti članku. (Kliknite za [rječnik](/docs/guide/glossary/glossary-intro#item-nature));
+**Priroda artikla**: to je polje koje se koristi za definiranje članka i koristi se u nekim posebnim postupcima. U padajućem izborniku nalazi se popis različitih priroda koje možemo dodijeliti članku. (Kliknite za [rječnik](/docs/guide/common/glossary/glossary-intro#item-nature));
 
 > **Oprema/Alat/Stroj**: grupa članaka posvećena proizvodnom dijelu;	   
 > **Obitelj artikala**: definira artikl za prognoze prodaje;	   
@@ -61,4 +61,4 @@ Uvjeti za dobivanje upozorenja da artikl nestaje u dokumentima, na primjer, u Na
 
 **Arhivirano**: ako je zastava aktivirana, artikl se više neće pojavljivati na popisu artikala koje možete koristiti, jer je postao zastario;
 
-Za više informacija o načinima unosa i odabira podataka unutar formi, pogledajte članak [Unos i odabir podataka](/docs/guide/operations-with-data/manual-entry-or-help-and-data-selection).
+Za više informacija o načinima unosa i odabira podataka unutar formi, pogledajte članak [Unos i odabir podataka](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection).

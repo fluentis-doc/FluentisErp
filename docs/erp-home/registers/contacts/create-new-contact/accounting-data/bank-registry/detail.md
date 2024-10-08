@@ -3,7 +3,13 @@ title: Dettaglio
 sidebar_position: 2
 ---
 
-Nel primo tab si possono indicare alcuni dati generali applicati dalle banche: ‘commissioni per operazione' (utilizzato nell'accredito effetti), per ‘massimo scoperto' (non utilizzato automaticamente), ‘spese varie' (non utilizzato automaticamente), ‘Per insoluto' (non utilizzato automaticamente).
+Nella prima sezione ***Importo Commissioni*** si possono indicare: 
+
+**Per operazione**: utilizzato nell'accredito effetti 
+**Per massimo scoperto** (non utilizzato automaticamente), 
+**Varie** (non utilizzato automaticamente),
+**Per insoluto**: Utilizzato come rivalsa spese e contabilizzazione a costo nella procedura di creazione insoluto e inserita nella testata del nuovo insoluto nel campo apposito.
+**Anticipo Fattura** utilizzato per inserire automaticamente una commissione nel modulo [Anticipi&Incassi](/docs/treasury/advance/advances-collections.md)
 
 Nelle griglie **Attivi**/**Passivi** ci sono gli scaglioni dei tassi di interessi attivi/passivi da applicare.
 

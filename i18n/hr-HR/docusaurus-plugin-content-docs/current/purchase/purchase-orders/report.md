@@ -15,4 +15,4 @@ Ispis **Rokova narudžbi** prikazuje neizvršene ili djelomično izvršene narud
 
 Ispisi **Rokova narudžbi po količini** i **Rokova narudžbi po vrijednosti** prikazuju popis narudžbi dobavljača i ističu njihove količine i vrijednosti (naručene, isporučene i preostale). Grupiranje se u ovom slučaju može obaviti prema *Artiklu*, *Broju*, *Datumu*, *Dobavljaču* ili *Datumu spremnosti robe*. 
 
-Više detalja o ovoj temi potražite u artiklima: [Pretraživanje podataka u formama samo za čitanje](/docs/guide/operations-with-data/data-search-in-read-only-forms) i [Pregled i ispis](/docs/guide/operations-with-data/reports) 
+Više detalja o ovoj temi potražite u artiklima: [Pretraživanje podataka u formama samo za čitanje](/docs/guide/common/operations-with-data/data-search-in-read-only-forms) i [Pregled i ispis](/docs/guide/common/operations-with-data/reports) 

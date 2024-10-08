@@ -36,7 +36,7 @@ RIBBON BAR: representa o menu do módulo em questão, ou seja, a área na qual 
 | Cancelar os pagamentos selecionados | Botão para cancelar os pagamentos fornecedores criados manualmente ou pela criação pagamento das partidas. |
 | Criar um pagamento pelas partidas | Botão, ativável depois de ter salvado o cabeçalho, para criar um pagamento, comprando os dados pelo arquivo partidas. |
 | Numeração da |  |
-|  [Documentos](/docs/guide/operations-with-data/document-manager)  | Botão para a ligação da gestão documental. |
+|  [Documentos](/docs/guide/common/operations-with-data/document-manager)  | Botão para a ligação da gestão documental. |
 
 
 

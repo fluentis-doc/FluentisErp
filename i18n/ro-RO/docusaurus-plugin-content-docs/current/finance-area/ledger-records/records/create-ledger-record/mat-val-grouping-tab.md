@@ -15,4 +15,4 @@ Opțiunile sunt:
 > **Nouă înregistrare** - Buton pentru crearea unei noi înregistrări.  
 > **Parametri de inserare** - Deschide fereastra cu parametri înregistrării.  
 > **Deschide registru** - Deschide registrul analiticului selectat, iar dacă acesta lipseşte, deschide fereastra pentru căutarea unui alt registru.  
-> [Document Manager](/docs/guide/operations-with-data/document-manager) - Procedura da posibilitatea de a atasa documente.
+> [Document Manager](/docs/guide/common/operations-with-data/document-manager) - Procedura da posibilitatea de a atasa documente.

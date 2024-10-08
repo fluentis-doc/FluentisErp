@@ -4,12 +4,10 @@ sidebar_position: 3
 ---
 
 
-:::note Percorso
-**Tabelle > Impostazioni generali > Società**
+:::tip[FAst Start]
+La tabella è interessata dalla procedura di [**Fast Start**](/docs/guide/fast-start)
 
-Nota:
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
-
+Nel caso in cui si intenda configurare manualmente fare riferimento alla check list della pagina linkata
 :::
 
 ---

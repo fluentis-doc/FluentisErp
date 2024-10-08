@@ -14,4 +14,4 @@ Opțiunile sunt:
 > **Salvează** - Buton pentru salvarea înregistrării.  
 > **Nouă înregistrare** - Buton pentru crearea unei noi înregistrări.  
 > **Parametri inserare** - Deschide fereastra cu parametri înregistrării.  
-> [Document Manager](/docs/guide/operations-with-data/document-manager) - Buton pentru deschiderea gestiunii documentelor.
+> [Document Manager](/docs/guide/common/operations-with-data/document-manager) - Buton pentru deschiderea gestiunii documentelor.

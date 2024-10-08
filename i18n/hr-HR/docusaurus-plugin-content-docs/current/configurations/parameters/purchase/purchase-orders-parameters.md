@@ -1,77 +1,77 @@
 ---
-title: Parametri ordini fornitori
-sidebar_position: 5
+title: Parametri narudžbe dobavljača
+sidebar_position: 2
 ---
 
-I parametri degli ordini fornitori permettono l'impostazione di base per gestire correttamente e secondo le specifiche richieste da ogni singola società.
+Parametri narudžbe dobavljača omogućuju pravilno upravljanje osnovnom postavkom i prema specifikacijama koje zahtijeva svaka pojedinačna tvrtka.
 
-La finestra si compone di pulsanti e tre diversi tab: Generale, Carico, Analitica. 
+Prozor se sastoji od gumba i tri različite kartice: Općenito, Učitaj, Analitika.
 
-*Pulsanti*:
+*Gumbi*:
 
-> **Salva**: permette di salvare i parametri impostati.  
-> **Ripristina**: permette di ripristinare i parametri ai valori iniziali.
+> **Spremi**: omogućuje vam spremanje postavljenih parametara.
+> **Vrati**: omogućuje vraćanje parametara na njihove početne vrijednosti.
 
-### Generale
+### Općenito
 
-**Gestione doppia unità misura**: solo se attivato, il sistema può gestire l'unità di misura alternativa nell'ordine fornitore.
+**Upravljanje duplom mjernom jedinicom**:  samo ako je aktivirano, sustav može upravljati alternativnom mjernom jedinicom u narudžbi dobavljača.
 
-**Proposta automatica UM alternativa:** se attivato, fa in modo che venga proposta la quantità relativa all'unità di misura alternativa, a patto che sull'anagrafica dell'articolo ne sia stata impostata una di default. È possibile attivare questo flag solo se il flag precedente è stato attivato;
+**Automatski prijedlog alternativne jedinice mjere**: ako je aktiviran, osigurava da se predloži količina koja se odnosi na alternativnu mjernu jedinicu, pod uvjetom da je zadana postavljena u matičnim podacima stavke. Ovu zastavu možete aktivirati samo ako je prethodna zastavica bila aktivirana;
 
-**Recupera solo nella giornata**: permette di recuperare eventuali buchi nella numerazione degli ordini solo se l'ordine presenta la data odierna;
+**Povrati samo za tekući datum**: omogućuje vam da oporavite sve praznine u numeriranju naloga samo ako nalog ima današnji datum;
 
-**Auto insert varianti in attributi varianti:** non è piu' utilizzato;
+**Auto insert varijante u varijante karakteristika**: više se ne koristi;
 
-**Non permettere di evadere qtà superiore:** se attivo, impedisce, in fase di evasione dell'ordine con un ricevimento merce, di indicare quantità superiori a quelle indicate nelle righe dell'ordine, evitando eventuali disallineamenti tra le quantità ordinate e quelle effettivamente caricate a magazzino;
+**Ne dopusti da se izvrši veća količina**: ako je aktivan, sprječava, prilikom obrade narudžbe s potvrdom o primitku robe, navođenje količina većih od onih navedenih u redovima narudžbe, izbjegavajući bilo kakve neusklađenosti između naručenih količina i onih koje su stvarno utovarene u skladište;
 
-**Controllo sequenza data e numero documento**: controlla la sequenzialità data/numero degli ordini di acquisto. Qualora non ci fosse sequenzialità il sistema ritornerà un errore impedendo l'inserimento dell'ordine;
+**Kontroliraj redni broj dokumenta i datum**: kontrolira slijed datuma/brojeva narudžbenica. Ako nema slijeda, sustav će vratiti grešku koja sprječava unos naloga;
 
-**Costo zero in assenza di listini**: se attivo, in assenza di un listino valido popola il prezzo con il valore zero. Nel caso in cui questa voce non fosse spuntata, il campo sarebbe valorizzato con il costo ultimo dell'articolo, se presente;
+**Trošak nula ako nedostaje cjenik**: ako je aktivan, u nedostatku važećeg cjenika popunjava cijenu s vrijednošću nula. Ako ova stavka nije označena, polje će biti ispunjeno konačnom cijenom stavke, ako postoji;
 
-**Visualizza dimensioni:** se attivo, le colonne dimensioni (Altezza, Larghezza, Profondità) della griglia Articoli vengono gestite e mostrati;
+**Prikaži dimenzije**: ako je aktivno, upravlja se i prikazuje stupce dimenzija (visina, širina, dubina) mreže stavki;
 
-**Permetti DDT con stesso numero e fornitore:** se attivo, permette l'inserimento dello stesso numero DDT per lo stesso fornitore. È consigliato lasciare disattivato questo flag per permettere al sistema di fare il controllo di univocità;
+**Dopusti otpremnice s istim brojem i kupcem**: ako je aktivno, dopušta umetanje iste dostavnice broja za istog dobavljača. Preporuča se ostaviti ovu zastavu deaktiviranom kako bi sustav mogao izvršiti provjeru jedinstvenosti;
 
-**Blocca inserimento in date festive:** se attivo, il sistema non permette l'inserimento dell'ordine in date festive (sabato, domenica e festività). Se non attivo, il sistema non effettua nessun controllo e lascia inserire l'ordine;
+**Blokiraj unos na praznike**: ako je aktivan, sustav ne dopušta unos naloga na praznike (subota, nedjelja i praznici). Ako nije aktivan, sustav ne provodi nikakve provjere i dopušta unos naloga;
 
-**Evadi solo ordini autorizzati:** se attivo, non permette l'evasione di ordini fornitori non autorizzati con il relativo check (in *Ordini fornitori* > tab *Testata*);
+**Izvrši samo autorizirane naloge**: ako je aktivan, ne dopušta obradu neovlaštenih narudžbi dobavljača s povezanom provjerom (u *Narudžbe dobavljača* > kartica *Zaglavlje*);
 
-**Proponi marca con priorità listino fornitore/ordine cliente**: non più utilizzato;
+**Predloži marku s prioritetnim cjenikom/Narudžba prodaje**: više se ne koristi;
 
-**Permetti modifica IVA:** se attivo, in caso di [Creazione automatica Ordini da Richieste di acquisto](/docs/purchase/purchase-orders/procedures/create-purchase-orders-from-purchase-requests) viene proposto il codice IVA dall'anagrafica del fornitore;
+**Dopusti uređivanje PDV-a**: ako je aktivan, u slučaju [Automatskog kreiranja narudžbi iz zahtjeva za kupnju](/docs/purchase/purchase-orders/procedures/create-purchase-orders-from-purchase-requests) predlaže se PDV šifra iz šifarnika dobavljača;
 
-**Codice operatore obbligatorio**: se attivo, è necessario specificare in testata il codice dell'operatore. Senza questo dato non è possibile proseguire con la compilazione dell'ordine. Se non attivo, questo dato non è obbligatorio ma facoltativo;
+**Obvezna šifra korisnika**: ako je aktivna, šifra operatera mora biti navedena u zaglavlju. Bez ovih podataka nije moguće nastaviti s narudžbom. Ako nije aktivna, ovi podaci nisu obvezni, već izborni;
 
-**Ricerca prezzi articoli in tutti i listini predefiniti**: se attivo, articolo inserito nella riga ordine fornitore verrà ricercato in tutti i listini specificati nell'anagrafica fornitore, oltre al listino di default;
+**Traži cijenu stavke u svim zadanim cjenicima**: ako je aktivno, artikl umetnut u retku narudžbe dobavljača će se pretraživati u svim cjenicima navedenim u bazi dobavljača, uz zadani cjenik;  
 
-**Uso articolo fornitore**: se attivo, nella griglia articoli dell'ordine fornitore viene proposto anche il campo per inserire il codice articolo fornitore. Se non attivo questo campo non sarà visibile;
+**Koristi predmet dobavljača**: ako je aktivno, polje za unos šifre stavke dobavljača također se predlaže u mreži stavki narudžbe dobavljača. Ako nije aktivirano, ovo polje neće biti vidljivo; 
 
-**Verifica articoli in esaurimento: s**e attivato, il sistema fa un controllo sulla disponibilità degli articoli in riga ordine ed avvisa qualora l'articolo fosse in esaurimento;
+**Provjeri zalihe artikala**: ako je aktivirano, sustav provjerava dostupnost artikala u retku narudžbe i upozorava vas ako artikal ponestaje;
 
-**Contabilizzazione imballi**: consente di poter contabilizzare, in contabilità generale, anche le righe con articoli di natura imballo che solitamente vengono gestiti per avere la verifica delle giacenze degli imballi a rendere. La gestione delle imballi a rendere verranno spiegati nel video relativo.
+**Ambalažno računovodstvo**: omogućuje vam da u općem računovodstvu obračunate i linije s ambalažnim artiklima kojima se obično upravlja za provjeru zaliha povratne ambalaže. Upravljanje povratnom ambalažom bit će objašnjeno u odgovarajućem videu.
 
-### Carico
+### Utovar
 
-**Crea registrazione con la data del documento**: se attivo, la registrazione di magazzino viene fatta con la stessa data dell'ordine e non sarà necessario specificare la data registrazione nella form di carico. Se non attivo, sarà necessario specificare la data nella form di carico.
+**Kreiraj zapis s datumom dokumenta**: ako je aktivan, registracija skladišta se vrši s istim datumom kao i narudžba i neće biti potrebno navesti datum registracije u obrascu za utovar. Ako nije aktivan, morat ćete navesti datum u obrascu za učitavanje.  
 
-**Priorità magazzino e causale di carico**: se attivo, fa in modo che il carico di magazzino venga effettuato utilizzando il magazzino e la causale definiti nella procedura di carico oppure se assenti utilizza il magazzino e causale definiti in questo tab di *Carico*. Se invece il flag non è settato utilizza il **Magazzino** e la **Causale** definita nelle righe del ricevimento merci.
+**Prioritet predloška skladišta i istovara**:  ako je aktivan, osigurava da se utovar skladišta provodi korištenjem skladišta i razloga definiranog u postupku utovara ili ako nema, koristi skladište i razlog definiran u ovoj kartici *Utovar*. Međutim, ako zastavica nije postavljena, koristite **Skladište** i **Predložak** definirane u redovima prijema robe.
 
-### Analitica
+### Analitika
 
-In questo tab si specifica con che priorità recuperare il centro di costo (CdC) o centro di profitto (CdP) nella riga documento.
+U ovoj kartici određujete prioritet s kojim želite dohvatiti mjesto troška ili mjesto profita u retku dokumenta.
 
-È possibile modificare le priorità utilizzando i pulsanti:
+Možete promijeniti prioritete pomoću gumba:
 
-> **Sposta su** ![](/img/neutral/common/move-up.png) e 
-> **Sposta giù**![](/img/neutral/common/delete-cc.png).
+> **Premjesti gore** ![](/img/neutral/common/move-up.png) i 
+> **Premjesti dolje**![](/img/neutral/common/delete-cc.png).
 
-*Valori di default*: il CDC o CDP viene recuperato dal tipo fatturato qualora presente. Per approfondimenti fare riferimento a tabella [Tipo Fatturato Acquisti](/docs/configurations/tables/purchase/purchase-invoices-type). Qualora non fosse presente nel tipo fatturato il sistema lo cercherà in *Anagrafica fornitore*. Se non presente verrà cercato in *Anagrafica articolo* e successivamente a livello di *Magazzino*.
+*Zadane vrijednosti*: CDC ili CDP se dohvaćaju iz naplaćene vrste ako postoji. Dodatne informacije potražite u tablici [Vrste prometa Nabave](/docs/configurations/tables/purchase/purchase-invoices-type). Ako nije prisutan u fakturiranoj vrsti,  sustav će ga potražiti u *Šifarniku dobavljača*. Ako nije prisutan, pretražit će se u *Šifarniku artikla* potom na razini *Skladišta*.
 
-**Ricalcolo**: se attivo, questo flag, ricalcola i centri di costo/profitto secondo la priorità scelta.
+**Preračun**: ako je aktivan, ova zastavica ponovno izračunava troškovne/profitne centre prema odabranom prioritetu.  
 
-**CdP/CDC obbligatori**: se attivo, questo flag, rende obbligatoria l'imputazione dei centri di costo/profitto.
+**Obvezni CdP/CDC**: ako je aktivan, ova oznaka čini atribuciju troškovnih/profitnih centara obveznom.
 
-Una volta impostati i parametri come meglio conviene, sarà necessario salvarli perché questi diventino effettivi, cliccando sul pulsante **Salva**.
+Nakon što postavite parametre najbolje što želite, morat ćete ih spremiti kako bi postali učinkoviti klikom na gumb **Spremi**.
 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Ly9eQJHYYro" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

@@ -12,8 +12,10 @@ In questa form si possono specificare le condizioni commerciali di default in me
 Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
 
 ### Tipi pagamento
-
+:::tip[ ]
 La sezione fondamentale del tab **Pagamenti** e serve per impostare la logica di calcolo delle scadenze. Si selezionano il **Tipo di pagamento** e la **Soluzione di pagamento** (entrambe si trovano in *Configurazione > Tabelle > Impostazioni generali*).
+:::
+
 
 **Importo**: consente di calcolare una scadenza imponendo l'importo indicato, il residuo dovrà essere gestito con righe con il campo Percentuale compilato. Nel caso in cui il totale del documento sia inferiore rispetto al valore del campo Importo (anche in presenza di righe con il campo Percentuale compilato) verrà inviato un messaggio di errore in fase di creazione delle scadenze nel documento che chiede la rettifica del settaggio in quanto non coerente.
 
@@ -41,7 +43,7 @@ In caso di percentuale inferiore a 100 vanno, pertanto, create tante righe con p
 > - se tipo pagamento è bonifico bancario sarà indicata la banca del fornitore;
 > - se tipo pagamento è ricevuta bancaria sarà indicata la banca della società.
 
-Il campo si compila tramite una combo box (**Banca**) collegata alla tabella *Banca d'appoggio*. All'interno di questa tabella è possibile inserire sia la banche della società, sia le banche della controparte (cliente o fornitore). Inoltre è possibile inserire sia righe complete di codice IBAN e/o SWIFT (consigliato per le banche della società) sia righe complete di soli codice ABI e CAB (consigliato per le banche di controparte per le quali IBAN e SWIFT possono essere indicati nei campi della griglia presente in anagrafica).
+Il campo si compila tramite una combo box (**Banca**) collegata alla tabella [*Banca d'appoggio*](/docs/configurations/tables/general-settings/reference-bank.md). All'interno di questa tabella è possibile inserire sia la banche della società, sia le banche della controparte (cliente o fornitore). Inoltre è possibile inserire sia righe complete di codice IBAN e/o SWIFT (consigliato per le banche della società) sia righe complete di soli codice ABI e CAB (consigliato per le banche di controparte per le quali IBAN e SWIFT possono essere indicati nei campi della griglia presente in anagrafica).
 
 Se la riga presente nella tabella Banca d'appoggio è completa di IBAN e/o SWIFT, oltre che di ABI e CAB, richiamando tale riga tramite la combobox i dati saranno riportati nella griglia in anagrafica, diversamente, saranno riportati solo ABI e CAB, ma sarà sempre possibile aggiungere i dati mancanti direttamente nella griglia. Ciò è consigliabile per le banche di controparte al fine di evitare di codificare nella tabella Banca d'appoggio troppe righe utilizzate solo per un unico cliente o fornitore. E' preferibile indicare solo i dati dello sportello bancario (ABI e CAB) presso il quale potrebbero avere il conto corrente diversi clienti o fornitori.
 

@@ -11,7 +11,7 @@ Problematiche correlate:
 
  [Setări date în griduri](/docs/form-navigator/data-grid-settings) 
 
- [Personalizări form](/docs/guide/operations-with-data/form-customization-and-profiles-management) 
+ [Personalizări form](/docs/guide/common/operations-with-data/form-customization-and-profiles-management) 
 
  [Personalizări cu ajutorul Form Editorului](/docs/form-navigator/form-editor) 
 

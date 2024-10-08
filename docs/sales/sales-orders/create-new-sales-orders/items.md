@@ -1,6 +1,6 @@
 ---
 title: Articoli
-sidebar_position: 3
+sidebar_position: 4
 ---
 
 In questo tab vengono inseriti tutti gli articoli con i relativi dati.
@@ -151,10 +151,20 @@ import DocAttachDocument from './../../../import/sections/doc-attach-document.md
 
 <DocAttachDocument />
 
+## Matrici
+
+Questo tab viene visualizzato esclusivamente per i [Tipi ordine](/docs/configurations/tables/sales/sales-order-types) che hanno il flag di gestione delle matrici Extra Data. 
+
 ## Sezione valori
 
 import SalesValuesSection from './../../../import/sections/item-values-section.md'
 
 <SalesValuesSection />
 
-Il campo **Stato** in cima a questa sezione riporta la situazione dell'articolo nell'eventuale ciclo di produzione e si aggiorna in automatico in base alla presenza degli articoli nei vari documenti. L'articolo ha lo stato inserito quando l'ordine viene salvato e lo mantiene se l'ordine viene Confermato. L'articolo risulta In produzione quando viene generata la commessa. L'artiolo risulta Prodotto una volta concluso il ciclo di produzione.
+Il campo **Stato** in cima a questa sezione riporta la situazione dell'articolo nell'eventuale ciclo di produzione e si aggiorna in automatico in base allo stato della commessa collegata.
+L'articolo può avere i seguenti stati:
+- *Inserito* quando viene inserito l'articolo;
+- *Confermato* quando l'ordine viene confermato, con i relativi flag e data in testata; 
+- *In produzione* quando viene generata la commessa, attraverso la procedura di [Generazione commesse di produzione](/docs/planning/ms-master-scheduling/general-schedule) o automaticamente se il tipo ordine lo prevede; 
+- *Prodotto* se la commessa collegata è in stato evaso;
+- *Annullato* se l'articolo viene evaso forzatamente. 

@@ -51,4 +51,4 @@ Il documento comprende diverse sezioni:
 - Esenzione
 
 
-Più dettagli su questo argomento negli articoli: [Anteprima e stampa](/docs/guide/operations-with-data/reports) 
+Più dettagli su questo argomento negli articoli: [Anteprima e stampa](/docs/guide/common/operations-with-data/reports) 

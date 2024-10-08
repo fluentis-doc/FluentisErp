@@ -52,7 +52,7 @@ Per inserire nuovi record è necessario cliccare nella griglia sulla prima riga 
 
 **Controllo cliente**: se attivo, nel momento in cui viene inserito il cliente all'interno dell'ordine, il sistema andrà a fare un controllo sulle anagrafiche, andando a verificare che il codice inserito corrisponda obbligatoriamente al codice di un'anagrafica cliente. Se così non fosse il sistema avviserà l'utente; senza questo flag è possibile creare Ordini anche per tipi conto Fornitore. 
 
-**Gestione Matrici Extra Data**: se attivo, permette di visualizzare nel caso di gestione articoli con matrice, un tab aggiuntivo per l'imputazione dei valori della quantità per singola cella di matrice. Se non attivo, non viene visualizzato questo TAB e la conseguente matrice. Per saperne di più della gestione Matrici leggere l’articolo Gestione Matrici Extra-Data. 
+**Gestione Matrici Extra Data**: se attivo, permette di visualizzare, nel caso di gestione articoli con matrice, un tab aggiuntivo per l'imputazione dei valori della quantità per singola cella di matrice. Se non attivo, non viene visualizzato questo TAB e la conseguente matrice. Per saperne di più della gestione Matrici leggere l’articolo Gestione Matrici Extra-Data. 
 
 **Configurazione**: in questo campo di andrà ad inserire un codice per l'impostazione automatica degli Extradata nella testata dell'ordine cliente. 
 

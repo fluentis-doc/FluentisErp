@@ -7,11 +7,11 @@ Obrazac se otvara putem putanje **Nabava > Cjenici Dobavljača > Stvori Cjenik D
 
 ## Gornji odjeljak
 
-U obrascu za unos automatski se predlažu vrijednosti polja **Od datuma valjanosti** (predložen je trenutni datum početka valjanosti) i [Valuta](/docs/guide/glossary/glossary-intro#currency) (predložena je valuta tvrtke), ali ih je moguće promijeniti.
+U obrascu za unos automatski se predlažu vrijednosti polja **Od datuma valjanosti** (predložen je trenutni datum početka valjanosti) i [Valuta](/docs/guide/common/glossary/glossary-intro#currency) (predložena je valuta tvrtke), ali ih je moguće promijeniti.
 
 Za nastavak stvaranja cjenika, korisnik mora unijeti:
 
-**Dobavljača**, koristeći [pomoćno polje](/docs/guide/operations-with-data/manual-entry-or-help-and-data-selection) ili [izravno](/docs/guide/operations-with-data/manual-entry-or-help-and-data-selection) unoseći podatke.
+**Dobavljača**, koristeći [pomoćno polje](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) ili [izravno](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) unoseći podatke.
 
 **Do datuma valjanosti**: ovo je opcionalno polje koje se koristi ako se želi definirati promotivnu kampanju ili postaviti datum isteka cjenika.
 

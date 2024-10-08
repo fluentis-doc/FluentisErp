@@ -23,5 +23,5 @@ Acești parametrii se găsesc în **Parametri > Administrativă**.
 **Activare centru contabilitate**: dacă este activ, permite citirea centrului de cost inserat în tab **Detaliu** din *fișă mijloc fix* care se referă la cota de amortizare calculată după principiile contabile, ca alternativă la utilizarea amortizării obiective gestionate în tab-ul corespunzător (Amortizare pentru controlling).
 
 :::note Video tutorial
-[Parametri Mijloace Fixe](/docs/video/finance/intro.md)
+[Parametri Mijloace Fixe](/docs/video/finance/intro)
 :::

@@ -36,7 +36,7 @@ Nella maschera che si apre selezionare Nuovamente l'oggetto e facendo click con 
 
 I filtri sono tipicamente in condizione 'AND', cioè è possibile inserire più filtri contemporaneamente.
 
-Clic sulle freccette ![](/img/neutral/common/arrow.png) per aprire gli [expander](/docs/guide/glossary/glossary-intro#expander) e per filtrare anche in base ai dati contenuti in essi.
+Clic sulle freccette ![](/img/neutral/common/arrow.png) per aprire gli [expander](/docs/guide/common/glossary/glossary-intro#expander) e per filtrare anche in base ai dati contenuti in essi.
 
 Dopo l'inserimento dei filtri desiderati premere il pulsante **Ricerca** per ottenere l'elenco dei dati.
 
@@ -59,4 +59,4 @@ La prima riga della griglia è di filtro (l'icona sul campo di intestazione di r
 
 Il filtro nei campi testo non distingue maiuscole/minuscole. Una volta che si inizia a filtrare i record attraverso le intestazioni di colonna, apparirà alla base della maschera un pannello che mostra come sarà applicato il filtro stesso: all'estrema destra di questa sezione apparirà sia un pulsante di chiusura/annullamento del filtro stesso, che un utile pulsante ![](/img/neutral/common/pencil.png) di editing del filtro stesso, dove poter aggiungere in modo guidato filtri più complessi.
 
-*Approfondimenti*: [Filtrare e ordinare i record nelle griglie](/docs/guide/operations-with-data/filter-sort-and-other-operations-with-records-in-grids).
+*Approfondimenti*: [Filtrare e ordinare i record nelle griglie](/docs/guide/common/operations-with-data/filter-sort-and-other-operations-with-records-in-grids).

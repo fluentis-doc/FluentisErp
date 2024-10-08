@@ -100,7 +100,7 @@
     "description": "The label for category Partite in sidebar financeArea"
   },
   "sidebar.financeArea.category.Procedure": {
-    "message": "Procedures",
+    "message": "Proceduri",
     "description": "The label for category Procedure in sidebar financeArea"
   },
   "sidebar.financeArea.category.Generazione solleciti": {
@@ -108,7 +108,7 @@
     "description": "The label for category Generazione solleciti in sidebar financeArea"
   },
   "sidebar.financeArea.category.Giroconto partite": {
-    "message": "Giroconto angajamente",
+    "message": "Transfer angajamente",
     "description": "The label for category Giroconto partite in sidebar financeArea"
   },
   "sidebar.financeArea.category.Stampe": {
@@ -215,10 +215,6 @@
     "message": "Prototipuri",
     "description": "The label for category Prototipazione in sidebar erpHome"
   },
-  "sidebar.planning.category.MPS - Master production scheduling": {
-    "message": "MPS - Master production scheduling",
-    "description": "The label for category MPS - Master production scheduling in sidebar planning"
-  },
   "sidebar.planning.category.Commesse di produzione": {
     "message": "Caută comenzi de producție",
     "description": "The label for category Commesse di produzione in sidebar planning"
@@ -227,17 +223,9 @@
     "message": "Proceduri",
     "description": "The label for category Procedure in sidebar planning"
   },
-  "sidebar.planning.category.MS - Master scheduling": {
-    "message": "MS - Master scheduling",
-    "description": "The label for category MS - Master scheduling in sidebar planning"
-  },
   "sidebar.planning.category.Ordini pianificati": {
     "message": "Ordine planificate",
     "description": "The label for category Ordini pianificati in sidebar planning"
-  },
-  "sidebar.planning.category.Production outlook": {
-    "message": "Production outlook",
-    "description": "The label for category Production outlook in sidebar planning"
   },
   "sidebar.production.category.Procedure": {
     "message": "Proceduri",
@@ -247,17 +235,9 @@
     "message": "Reports",
     "description": "The label for category Stampe in sidebar production"
   },
-  "sidebar.production.category.Segnalazioni": {
-    "message": "Semnale",
-    "description": "The label for category Segnalazioni in sidebar production"
-  },
   "sidebar.purchase.category.DDT di acquisto": {
     "message": "Avize de achiziţie",
     "description": "The label for category DDT di acquisto in sidebar purchase"
-  },
-  "sidebar.purchase.category.Inserimento DDT di Acquisto": {
-    "message": "Inserare aviz de expediție",
-    "description": "The label for category Inserimento DDT di Acquisto in sidebar purchase"
   },
   "sidebar.purchase.category.Procedure testata": {
     "message": "Proceduri antet",
@@ -271,10 +251,6 @@
     "message": "Facturi de achiziţie",
     "description": "The label for category Fatture di acquisto in sidebar purchase"
   },
-  "sidebar.purchase.category.Inserimento fattura di acquisto": {
-    "message": "Inserare facturi de achiziție",
-    "description": "The label for category Inserimento fattura di acquisto in sidebar purchase"
-  },
   "sidebar.purchase.category.Contabilizzazione": {
     "message": "Contabilizare",
     "description": "The label for category Contabilizzazione in sidebar purchase"
@@ -282,10 +258,6 @@
   "sidebar.purchase.category.Ordini fornitori": {
     "message": "Ordine furnizori",
     "description": "The label for category Ordini fornitori in sidebar purchase"
-  },
-  "sidebar.purchase.category.Inserimento ordini fornitori": {
-    "message": "Inserare ordine furnizori",
-    "description": "The label for category Inserimento ordini fornitori in sidebar purchase"
   },
   "sidebar.purchase.category.Richieste di acquisto": {
     "message": "Cereri de achiziție",
@@ -310,10 +282,6 @@
   "sidebar.sales.category.POS": {
     "message": "POS",
     "description": "The label for category POS in sidebar sales"
-  },
-  "sidebar.sales.category.Inserimento POS": {
-    "message": "Inserare POS",
-    "description": "The label for category Inserimento POS in sidebar sales"
   },
   "sidebar.sales.category.Ordini cliente": {
     "message": "Ordine clienți",
@@ -406,10 +374,6 @@
   "sidebar.treasury.category.Creazione e Gestione distinte": {
     "message": "Gestiune liste",
     "description": "The label for category Creazione e Gestione distinte in sidebar treasury"
-  },
-  "sidebar.treasury.category.Creazine e Gestione insoluti": {
-    "message": "Gestiune efecte neîncasate",
-    "description": "The label for category Creazine e Gestione insoluti in sidebar treasury"
   },
   "sidebar.treasury.category.Creazione e Gestione effetti": {
     "message": "Gestiune efecte",
@@ -519,17 +483,9 @@
     "message": "Închidere interimară",
     "description": "The label for category Chiusure infrannuali in sidebar controlling"
   },
-  "sidebar.controlling.category.Budgeting": {
-    "message": "Budgeting",
-    "description": "The label for category Budgeting in sidebar controlling"
-  },
   "sidebar.controlling.category.Riclassificazioni": {
     "message": "Reclasificări",
     "description": "The label for category Riclassificazioni in sidebar controlling"
-  },
-  "sidebar.guide.category.Avviamento applicazione": {
-    "message": "Start aplicație",
-    "description": "The label for category Avviamento applicazione in sidebar guide"
   },
   "sidebar.financeArea.category.Calcolo Interessi": {
     "message": "Calcul dobânzi",
@@ -571,14 +527,6 @@
     "message": "Rapoarte",
     "description": "The label for category Stampe in sidebar planning"
   },
-  "sidebar.planning.category.Capacity Requirements": {
-    "message": "Capacity Requirements",
-    "description": "The label for category Capacity Requirements in sidebar planning"
-  },
-  "sidebar.planning.category.Istogramma utilizzo risorse": {
-    "message": "Histogramă utilizare resurse",
-    "description": "The label for category Istogramma utilizzo risorse in sidebar planning"
-  },
   "sidebar.planning.category.Visualizzazione Gantt": {
     "message": "Vizualizare Gantt",
     "description": "The label for category Visualizzazione Gantt in sidebar planning"
@@ -591,21 +539,9 @@
     "message": "Oferte furnizori",
     "description": "The label for category Listini fornitori in sidebar purchase"
   },
-  "sidebar.sales.category.Creazione ordine cliente": {
-    "message": "Creare ordine client",
-    "description": "The label for category Creazione ordine cliente in sidebar sales"
-  },
   "sidebar.sales.category.DDT di vendita": {
     "message": "Aviz vânzare",
     "description": "The label for category DDT di vendita in sidebar sales"
-  },
-  "sidebar.sales.category.Creazione DDT di vendita": {
-    "message": "Creare aviz vânzare",
-    "description": "The label for category Creazione DDT di vendita in sidebar sales"
-  },
-  "sidebar.sales.category.Creazione fatture di vendita": {
-    "message": "Creare factură vânzare",
-    "description": "The label for category Creazione fatture di vendita in sidebar sales"
   },
   "sidebar.sales.category.Contabilizzazione": {
     "message": "Contabilizare",
@@ -679,10 +615,6 @@
     "message": "Documente din surse externe",
     "description": "The label for category Documenti di origine esterna in sidebar quality"
   },
-  "sidebar.quality.category.Controllo articolo": {
-    "message": "Control articol",
-    "description": "The label for category Controllo articolo in sidebar quality"
-  },
   "sidebar.quality.category.Piani di controllo": {
     "message": "Planuri de control",
     "description": "The label for category Piani di controllo in sidebar quality"
@@ -703,10 +635,6 @@
     "message": "Generalități Controlling",
     "description": "The label for category Panoramica Generale Controlling in sidebar controlling"
   },
-  "sidebar.guide.category.Barra di stato": {
-    "message": "Status bar",
-    "description": "The label for category Barra di stato in sidebar guide"
-  },
   "sidebar.guide.category.Funzionalità comuni": {
     "message": "Funcționalități comune",
     "description": "The label for category Funzionalità comuni in sidebar guide"
@@ -715,77 +643,9 @@
     "message": "Câmpuri comune",
     "description": "The label for category Campi comuni in sidebar guide"
   },
-  "sidebar.applications.category.ARM": {
-    "message": "ARM",
-    "description": "The label for category ARM in sidebar applications"
-  },
-  "sidebar.applications.category.Business Layer": {
-    "message": "Business Layer",
-    "description": "The label for category Business Layer in sidebar applications"
-  },
-  "sidebar.applications.category.User Interface Wizard": {
-    "message": "User Interface Wizard",
-    "description": "The label for category User Interface Wizard in sidebar applications"
-  },
-  "sidebar.applications.category.Dashboard Designer Wizard": {
-    "message": "Dashboard Designer Wizard",
-    "description": "The label for category Dashboard Designer Wizard in sidebar applications"
-  },
-  "sidebar.applications.category.Data Sources": {
-    "message": "Data Sources",
-    "description": "The label for category Data Sources in sidebar applications"
-  },
-  "sidebar.applications.category.Datasource Object Form": {
-    "message": "Datasource Object Form",
-    "description": "The label for category Datasource Object Form in sidebar applications"
-  },
   "sidebar.applications.category.BizLink": {
     "message": "BizLink",
     "description": "The label for category BizLink in sidebar applications"
-  },
-  "sidebar.applications.category.CRM": {
-    "message": "CRM",
-    "description": "The label for category CRM in sidebar applications"
-  },
-  "sidebar.applications.category.My CRM area": {
-    "message": "My CRM area",
-    "description": "The label for category My CRM area in sidebar applications"
-  },
-  "sidebar.applications.category.Visit Report": {
-    "message": "Visit Report",
-    "description": "The label for category Visit Report in sidebar applications"
-  },
-  "sidebar.applications.category.BudgetandMarketingAutomation": {
-    "message": "Budget and Marketing Automation",
-    "description": "The label for category Budget and Marketing Automation in sidebar applications"
-  },
-  "sidebar.applications.category.Template": {
-    "message": "Template",
-    "description": "The label for category Template in sidebar applications"
-  },
-  "sidebar.applications.category.Liste di distribuzione": {
-    "message": "Liste de distribuție",
-    "description": "The label for category Liste di distribuzione in sidebar applications"
-  },
-  "sidebar.applications.category.Newsletter": {
-    "message": "Newsletter",
-    "description": "The label for category Newsletter in sidebar applications"
-  },
-  "sidebar.applications.category.Contatti CRM": {
-    "message": "Contacte CRM",
-    "description": "The label for category Contatti CRM in sidebar applications"
-  },
-  "sidebar.applications.category.Offerte": {
-    "message": "Oferte",
-    "description": "The label for category Offerte in sidebar applications"
-  },
-  "sidebar.applications.category.Opportunità": {
-    "message": "Oportunități",
-    "description": "The label for category Opportunità in sidebar applications"
-  },
-  "sidebar.applications.category.Tickets Management": {
-    "message": "Tickets Management",
-    "description": "The label for category Tickets Management in sidebar applications"
   },
   "sidebar.knowlegdeBase.category.Amministrativa": {
     "message": "Administrativă",
@@ -891,10 +751,6 @@
     "message": "Calitate",
     "description": "The label for category Qualità in sidebar configurations"
   },
-  "sidebar.configurations.category.Tabele": {
-    "message": "Tabele",
-    "description": "The label for category Tabele in sidebar configurations"
-  },
   "sidebar.configurations.category.Causali di contabilità generale": {
     "message": "Șabloane contabilitate generală",
     "description": "The label for category Causali di contabilità generale in sidebar configurations"
@@ -940,7 +796,7 @@
     "description": "The label for category Costo prodotto / commessa in sidebar configurations"
   },
   "sidebar.configurations.category.Tabelle modulo cash flow": {
-    "message": "Tabele modul cash flow",
+    "message": "Tabele modul Cash flow",
     "description": "The label for category Tabelle modulo cash flow in sidebar configurations"
   },
   "sidebar.configurations.category.Tabelle modulo Portafoglio effetti": {
@@ -963,25 +819,9 @@
     "message": "Contacte",
     "description": "The label for category Contatti in sidebar configurations"
   },
-  "sidebar.configurations.category.Attività": {
-    "message": "Activități",
-    "description": "The label for category Attività in sidebar configurations"
-  },
-  "sidebar.configurations.category.Opportunità": {
-    "message": "Oportunități",
-    "description": "The label for category Opportunità in sidebar configurations"
-  },
-  "sidebar.configurations.category.Pipeline flux": {
-    "message": "Pipeline flux",
-    "description": "The label for category Pipeline flux in sidebar configurations"
-  },
   "sidebar.configurations.category.Ticket": {
     "message": "Ticket",
     "description": "The label for category Ticket in sidebar configurations"
-  },
-  "sidebar.configurations.category.Utilitare": {
-    "message": "Utilitare",
-    "description": "The label for category Utilitare in sidebar configurations"
   },
   "sidebar.configurations.category.ExtraData": {
     "message": "ExtraData",
@@ -1030,14 +870,6 @@
   "sidebar.controlling.category.Calcolo costo": {
     "message": "Calcul cost",
     "description": "The label for category Calcolo costo in sidebar controlling"
-  },
-  "sidebar.applications.category.Database": {
-    "message": "Database",
-    "description": "The label for category Database in sidebar applications"
-  },
-  "sidebar.applications.category.Scripts": {
-    "message": "Scripts",
-    "description": "The label for category Scripts in sidebar applications"
   },
   "sidebar.applications.category.Supervisor": {
     "message": "Supervisor",
@@ -1386,5 +1218,85 @@
   "sidebar.releaseNotes.category.Versione 704": {
     "message": "Versiune 704",
     "description": "The label for category Versione 704 in sidebar releaseNotes"
+  },
+  "sidebar.purchase.category.Nuovo Ordine": {
+    "message": "Ordin nou",
+    "description": "The label for category Nuovo Ordine in sidebar purchase"
+  },
+  "sidebar.purchase.category.Nuovo DDT": {
+    "message": "Aviz de achiziție nou",
+    "description": "The label for category Nuovo DDT in sidebar purchase"
+  },
+  "sidebar.purchase.category.Nuova Fattura": {
+    "message": "Factură nouă",
+    "description": "The label for category Nuova Fattura in sidebar purchase"
+  },
+  "sidebar.purchase.category.Procedure comuni": {
+    "message": "Proceduri comune",
+    "description": "The label for category Procedure comuni in sidebar purchase"
+  },
+  "sidebar.sales.category.Procedure comuni": {
+    "message": "Proceduri comune",
+    "description": "The label for category Procedure comuni in sidebar sales"
+  },
+  "sidebar.treasury.category.Creazione e Gestione insoluti": {
+    "message": "Creare și gestionare efecte neîncasate",
+    "description": "The label for category Creazione e Gestione insoluti in sidebar treasury"
+  },
+  "sidebar.configurations.category.Parametri Generali": {
+    "message": "Parametri generali",
+    "description": "The label for category Parametri Generali in sidebar configurations"
+  },
+  "sidebar.projectManagement.category.Stampe": {
+    "message": "Rapoarte",
+    "description": "The label for category Stampe in sidebar projectManagement"
+  },
+  "sidebar.projectManagement.category.Riepiloghi per cedolini": {
+    "message": "Rezumate pentru fluturași salarii",
+    "description": "The label for category Riepiloghi per cedolini in sidebar projectManagement"
+  },
+  "sidebar.guide.category.Introduzione": {
+    "message": "Introducere",
+    "description": "The label for category Introduzione in sidebar guide"
+  },
+  "sidebar.guide.category.Avviamento Fluentis ERP": {
+    "message": "Pornire Fluentis ERP",
+    "description": "The label for category Avviamento Fluentis ERP in sidebar guide"
+  },
+  "sidebar.guide.category.Campi, funzionalità e pulsanti comuni": {
+    "message": "Câmpuri, funcționalități și butoane comune",
+    "description": "The label for category Campi, funzionalità e pulsanti comuni in sidebar guide"
+  },
+  "sidebar.releaseNotes.category.Versione 545": {
+    "message": "Versiune 545",
+    "description": "The label for category Versione 545 in sidebar releaseNotes"
+  },
+  "sidebar.releaseNotes.category.Versione 705": {
+    "message": "Versiune 705",
+    "description": "The label for category Versione 705 in sidebar releaseNotes"
+  },
+  "sidebar.releaseNotes.category.Versione 706": {
+    "message": "Versiune 706",
+    "description": "The label for category Versione 706 in sidebar releaseNotes"
+  },
+  "sidebar.configurations.category.Opportunità": {
+    "message": "Oportunități",
+    "description": "The label for category Opportunità in sidebar configurations"
+  },
+  "sidebar.configurations.category.CPQ": {
+    "message": "CPQ",
+    "description": "The label for category CPQ in sidebar configurations"
+  },
+  "sidebar.controlling.category.Budget": {
+    "message": "Buget",
+    "description": "The label for category Budget in sidebar controlling"
+  },
+  "sidebar.controlling.category.Previsioni di vendita": {
+    "message": "Previziuni de vânzare",
+    "description": "The label for category Previsioni di vendita in sidebar controlling"
+  },
+  "sidebar.guide.category.Funcționalități, butoane și câmpuri comune": {
+    "message": "Câmpuri, funcționalități și butoane comune",
+    "description": "The label for category Funcționalități, butoane și câmpuri comune in sidebar guide"
   }
 }

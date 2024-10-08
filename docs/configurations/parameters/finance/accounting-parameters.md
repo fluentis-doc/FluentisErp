@@ -3,6 +3,13 @@ title: Parametri contabilità
 sidebar_position: 2
 ---
 
+:::tip[FAst Start]
+La tabella è interessata dalla procedura di [**Fast Start**](/docs/guide/fast-start)
+
+Nel caso in cui si intenda configurare manualmente fare riferimento alla check list della pagina linkata
+:::
+
+
 La maschera dei Parametri di contabilità consente di definire i vari parametri di gestione **di ogni anno contabile** selezionato.
 
 :::tip IMPORTANTE
@@ -58,7 +65,11 @@ Quando si crea il nuovo record di parametri il programma chiede se si desiderano
 
 **Causale apertura e chiusura conti:** I due campi, non obbligatori, consentono di preimpostare le causali da utilizzare nelle procedure di chiusura/apertura conti.
 
-**Percentuale pro-rata:** Il campo consente di impostare il valore percentuale del pro-rata valido per l'esercizio selezionato. In caso non sia un'opzione utilizzare lasciare il campo vuoto o impostato al 100%.
+**Percentuale pro-rata:** Il campo consente di impostare il valore percentuale del pro-rata valido per l'esercizio selezionato. Nel caso in cui non sia un'opzione da utilizzare, lasciare il campo vuoto o impostato al 100%.
+
+:::tip[Info]
+La gestione del pro-rata può avvenire, in alternativa al presente campo unico per tutti i registri iva, anche in modo specifico per ogni registro iva, permettendo di supportare anche la gestione di più attività ai fini iva con diverse percentuali di pro-rata. Vedere [**Registri iva**](/docs/configurations/tables/finance/vat-books) e [**Tipo attività IVA**](/docs/configurations/tables/finance/vat-activity-type)
+:::
 
 **Tipo contabilizzazione  IVA:** Il campo consente di definire il tipo di contabilizzazione di default delle aliquote IVA sui vari sottoconti del piano dei conti.
 
@@ -73,7 +84,13 @@ Questo flag deve essere impostato disattivato per la normale contabilità Italia
 **Fattore di attualizzazione:** Indica il valore di incremento dei cespiti di anno in anno ai fini dell'ammortamento calcolato in modo specifico all'interno del modulo Controlling e gestito nei vari altri dettagli all'interno della tab *Ammortamento per controlling* presente nella scheda cespite, Il settaggio è richiamato anche nella form [*Categorie cespiti per il controlling*](/docs/configurations/tables/controlling/analytical-accounting/controlling-asset-categories).  
 **ESEMPIO:** Inserendo un valore di 1.1 si avrà, ogni anno, un incremento del valore ammortizzabile del cespite del 10%, quindi un cespite del valore iniziale di 1000 avrà nell'anno x+1 un valore di 1.100 e nell'anno x+2 si aggiungerà un'ulteriore quota di incremento secondo la stessa logica.
 
-**Liquidazione IVA:** Imposta la periodicità delle liquidazioni iva periodiche.
+**Regime fiscale**: dato generale da compilare al fine di gestire qualunque automatismo e riferimento a questo dato relativo alla fiscalità e alla fatturazione elettronica.
+
+**Volume d’affari**: è utilizzato per il calcolo di alcuni indicatori relativi alla funzionalità di informativa di bilancio finalizzata alla prevenzione delle crisi di impresa.
+
+**Liquidazione IVA:** Imposta la periodicità delle liquidazioni iva periodiche. I flag sono tra loro alternativi, i due principali sono riferiti alla periodicità mensile o trimestrale in base al fatturato (fare riferimento alla normativa IVA) ed il terzo è riferito ai soggetti trimestrali "per natura" ai sensi del particolare regime dell’articolo 74 DPR 633/72.
+
+**Debito minimo per il versamento iva**: rappresenta il valore (soggetto a possibili variazioni in base alle norme IVA) al di sotto el quale il debito eventualmente risultante dalla liquidazione iva periodica non è dovuto. Questo campo ha impatto sulle stampe della liquidazione periodica e sull'elaborazione della comunicazione trimestrale (Li.Pe.)
 
 **Tipo rounding IVA:** Imposta arrotondamento IVA sempre per eccesso con la selezione 'Lire' o secondo la logica Euro.
 

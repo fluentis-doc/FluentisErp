@@ -3,6 +3,25 @@ title: Patch notes Versione 545
 sidebar_position: 1
 ---
 
+### Patch 545.1-0107: 26/09/2024
+
+> - MPS – Implementata gestione del numero riga non interger nella procedura di Definizione MPS (#TT03992/24)
+> - CO - revisione calcolo mensilizzazione dell’elaborazione periodi (#TT04072/24)
+
+### Patch 545.1-0106: 20/09/2024
+
+> - SH - Contact-fix load ItemCustomer collection problem (TT01967/24).
+> - WM– Schede di Movimentazione – Aggiunti parametri AccountId, AccountCode, AccountDetailCode e AccountDescription per poter calcolare la giacenza iniziale per fornitore (#TT03922/24)
+> - WM - Aggiunto la variante nel report ValorizatedBOM e ValorizatedItemCostBOM della valorizzazione distinta base
+> - FI - manage the accrual date ranges from closure settings ( TT04008/24)
+> - MS - Corretto bug in pianificazione generale che non cancellava gli ordini pianificati collegati al cash flow. (#TT03806/24)
+> - MS - Corretto bug nel rilascio ordini pianificati di produzione, a causa del quale non veniva correttamente valorizzato l'ordine di conto lavoro creato da una fase esterna nel caso in cui nel listino non fosse indicata la fase di riferimento. (#TT03885/24)
+> - SH - Update IBAN structure check for country AE (United Arab Emirates) ( TT03985/24)
+> - CO - revisione cancellazione registrazioni rimanenze nelle chiusure infrannuali (#TT03976/24)
+> - CO – Aggiunta la Colonna costo variante nel calcolo costi. Questa riporta i valori presenti nel tab varianti dell’anagrafica articolo. (#TT03057/24 - #TT03043/24)
+> - SCS – È possibile salvare il rientro di conto lavoro senza indicare i lotti nei materiali se il flag “Lotti e numeri seriali obbligatori” presente nei parametri di conto lavoro è disabilitato.  (#TT03989/24)
+> - WM – bug fix in item matrix dimension (TT00607/24)
+
 ### Patch 545.1-0105: 05/09/2024
 
 > - SD – Creazione fatture da DDT -corretto errore in fase di creazione fatture da DDT di vendita (ticket #TT03745/24)

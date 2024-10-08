@@ -10,4 +10,4 @@ Funkcija **Ispis otpremnice** služi za masovno ispisivanje već unesenih otprem
 S **Listom otpremnica** moguće je ispisati popis otpremnica unesenih u sustav. Filtri koji se nude isti su kao i u prethodnom ispisa, uz mogućnost odabira redoslijeda prikaza računa između klijenta, broja otpremnice i vrste otpremnice.
 
 
-Više detalja o ovom predmetu možete pronaći u člancima: [Pretraživanje podataka u obrascima samo za čitanje](/docs/guide/operations-with-data/data-search-in-read-only-forms) i [Pregled i ispis](/docs/guide/operations-with-data/reports) 
+Više detalja o ovom predmetu možete pronaći u člancima: [Pretraživanje podataka u obrascima samo za čitanje](/docs/guide/common/operations-with-data/data-search-in-read-only-forms) i [Pregled i ispis](/docs/guide/common/operations-with-data/reports) 

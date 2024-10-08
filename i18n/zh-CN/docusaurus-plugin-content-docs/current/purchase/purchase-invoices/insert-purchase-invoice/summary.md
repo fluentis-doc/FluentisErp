@@ -26,7 +26,7 @@ sidebar_position: 5
 
 | RibbonFunction | RibbonMeaning |
 | --- | --- |
-|  [文档经理](/docs/guide/operations-with-data/document-manager)  | 用于管理关于在使用中掩码档案 |
+|  [文档经理](/docs/guide/common/operations-with-data/document-manager)  | 用于管理关于在使用中掩码档案 |
 
 **最终折扣**
 

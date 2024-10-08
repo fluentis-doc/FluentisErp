@@ -19,7 +19,7 @@ Za nastavak stvaranja dokumenta, korisnik mora unijeti *obavezna* polja:
 
 - **Broj** svakom dokumentu dodijeljen je broj prema brojanju koje je korisnik odredio u tablici [Numeracija](/docs/configurations/tables/fluentis-numerations) i za tip dokumenta koji sadrži numeraciju.
 
-- **Klijent**, korištenjem [polja za pomoć](/docs/guide/operations-with-data/manual-entry-or-help-and-data-selection) ili [izravno](/docs/guide/operations-with-data/manual-entry-or-help-and-data-selection) unoseći podatke.
+- **Klijent**, korištenjem [polja za pomoć](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) ili [izravno](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) unoseći podatke.
 
 Nastavite s kreiranjem unoseći barem obavezne podatke na svakom od sljedećih tabova:
 

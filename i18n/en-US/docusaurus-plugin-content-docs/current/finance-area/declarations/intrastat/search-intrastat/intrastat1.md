@@ -22,7 +22,7 @@ RIBBON BAR: it represents the Form menu, that is the area in which it is possibl
 
 | Function | Meaning |
 | --- | --- |
-|  [Document Manager](/docs/guide/operations-with-data/document-manager)  | Button to connect to the document management.  |
+|  [Document Manager](/docs/guide/common/operations-with-data/document-manager)  | Button to connect to the document management.  |
 
 FILTER AREA: the filter area contains the list of possible data types thanks to which it is possible to perform a selection, a research on the total of the inserted declarations. Typically filters have always 'AND' condition and it is possible to specify more search filters at the same time.
 

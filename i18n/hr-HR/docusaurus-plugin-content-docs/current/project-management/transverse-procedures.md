@@ -3,7 +3,7 @@ title: Planiranje resursa po kalendaru
 sidebar_position: 9
 ---
 
-Pogledajte i [Konfiguracija Kalendara](/docs/guide/status-bar/status-bar-intro) 
+Pogledajte i *Konfiguracija Kalendara*.
 
 Nakon konfiguracije kalendara, možete nastaviti sa sinkronizacijom kalendara za upotrebu **Upravljanja Projektima** i **Planiranja resursa prema kalendaru**.
 

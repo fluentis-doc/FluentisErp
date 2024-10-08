@@ -3,6 +3,14 @@ title: Ricerca UDC e Visualizzazione trasferimenti UDC
 sidebar_position: 2
 ---
 
+:::important A cosa serve
+La gestione delle Unità Di Carico (UDC) in Fluentis consente agli operatori di gestire l'intero ciclo di vita delle UDC, dalla loro creazione alla movimentazione, fino alla vendita. Le UDC possono essere create manualmente o tramite WMS Mobile, rendendo il sistema versatile e adattabile alle diverse necessità operative.
+
+La procedura di gestione offre un filtro dettagliato per visualizzare tutte le UDC create, consentendo di controllare lo stato di carico e scarico delle unità. Ogni UDC è identificata da una chiave univoca composta da anno, gruppo e numero, e le informazioni relative a dimensioni e peso possono essere modificate in base alle esigenze specifiche.
+
+Inoltre, il modulo consente di gestire il dettaglio articoli all'interno di ogni UDC, facilitando l'associazione con ordini clienti e la registrazione dei movimenti di magazzino. Operazioni come il carico, lo scarico, e il trasferimento di UDC tra ubicazioni sono gestite con flessibilità, assicurando che i dati siano sempre aggiornati e accurati. Grazie a queste funzionalità, la gestione UDC di Fluentis contribuisce a migliorare l'efficienza operativa e la tracciabilità delle giacenze.
+:::
+
 ### Ricerca UDC
 
 La form si apre tramite il percorso **Logistica > Gestione UDC**.

@@ -3,6 +3,12 @@ title: Tipi conto finanziario
 sidebar_position: 1
 ---
 
+:::tip[FAst Start]
+La tabella è interessata dalla procedura di [**Fast Start**](/docs/guide/fast-start)
+
+Nel caso in cui si intenda configurare manualmente fare riferimento alla check list della pagina linkata
+:::
+
 In questa tabella si andrà a definire la lista dei sottoconti contabili dai quali calcolare il saldo contabile che sarà considerato disponibilità iniziale di cash flow.
 
 *Campi specifici*  

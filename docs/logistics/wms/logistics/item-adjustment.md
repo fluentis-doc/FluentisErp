@@ -3,6 +3,10 @@ title: Rettifica articolo
 sidebar_position: 4
 ---
 
+:::important A cosa serve
+La funzione di **rettifica articolo** è utilizzata per correggere le giacenze degli articoli nel magazzino, permettendo all’operatore di apportare rettifiche positive o negative. Grazie a un'interfaccia chiara, l'operatore può cercare l’articolo da rettificare, visualizzare le informazioni correlate e modificare la quantità direttamente in griglia. Confermando la modifica, il sistema genera automaticamente i movimenti di rettifica, assicurando un aggiornamento preciso delle giacenze.
+:::
+
 Questa procedura è utilizzata per creare delle rettifiche positive o negative di un articolo.          
 La form presenta una griglia che muta le proprie colonne sulla base dei filtri inseriti per la ricerca.        
 Ad esempio, nel caso in cui venga letto solo il codice di un'ubicazione, tramite il pulsante **Ricerca** verranno visualizzati nella griglia sottostante i risultati della ricerca con la valorizzazione delle seguenti colonne:

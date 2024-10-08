@@ -3,6 +3,14 @@ title: Valorizzazione magazzino
 sidebar_position: 6
 ---
 
+:::important A cosa serve
+L'introduzione alla valorizzazione di magazzino di Fluentis è un elemento fondamentale nella gestione delle scorte e nella determinazione del valore dei beni stoccati. Questa funzionalità consente agli operatori di effettuare chiusure di magazzino a una data specificata, registrando le rimanenze e consentendo l'allineamento delle informazioni logistiche con quelle contabili, garantendo così una gestione accurata delle risorse e dei costi associati.
+
+La procedura di valorizzazione permette di configurare diversi parametri, come la causale di movimentazione per le rimanenze, e offre la flessibilità di selezionare i criteri di valorizzazione adeguati, come il costo ultimo o il costo medio. In questo modo, è possibile tenere conto delle movimentazioni effettuate nel corso dell'anno per ciascun magazzino, ottenendo così una panoramica dettagliata e aggiornata del valore delle scorte.
+
+Inoltre, la procedura non solo esegue la chiusura di magazzino, ma crea automaticamente una registrazione di apertura per il giorno successivo, garantendo la continuità delle operazioni logistiche. Gli utenti possono anche monitorare le chiusure effettuate attraverso uno storico, che riporta i dati relativi ai costi e alle quantità valorizzate, facilitando così analisi e decisioni strategiche per il miglioramento delle performance aziendali.
+:::
+
 La procedura permette di effettuare la chiusura di magazzino ad una certa data che deve essere inserita dall'utente nel campo **Data chiusura**.
 Di default, come **Data chiusura** è proposta la data odierna.
 Inoltre, la procedura creerà anche un movimento di apertura con tutte le rimanenze con data uguale a **Data chiusura** più un giorno, utilizzando la causale presente nelle [Causali di magazzino](/docs/configurations/tables/logistics/warehouse-templates) con il flag **Rimanenze** attivo.

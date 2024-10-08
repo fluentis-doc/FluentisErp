@@ -58,7 +58,7 @@ RIBBON BAR: representa o menu do módulo em questão, ou seja, a área na qual 
 
 | RibbonFunction | RibbonMeaning |
 | --- | --- |
-|  [Document manager](/docs/guide/operations-with-data/document-manager)  | Gestione dell'archiviazione documentale associata alla maschera in uso. |
+|  [Document manager](/docs/guide/common/operations-with-data/document-manager)  | Gestione dell'archiviazione documentale associata alla maschera in uso. |
 
 
 

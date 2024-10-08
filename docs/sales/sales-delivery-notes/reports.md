@@ -21,4 +21,4 @@ Con questa stampa è possibile stampare un elenco dei DDT inserite a sistema. I 
 Nella stampa, sotto lo stesso cliente/numero/tipologia fattura (in base all'ordinamento scelto) vengono elencati i DDT con i seguenti dati: divisa, importo, articolo, iva, ecc.         
 Ogni riga dell'elenco viene occupata da un articolo del DDT.        
 
-Più dettagli su questo argomento negli articoli: [Anteprima e stampa](/docs/guide/operations-with-data/reports) 
+Più dettagli su questo argomento negli articoli: [Anteprima e stampa](/docs/guide/common/operations-with-data/reports) 

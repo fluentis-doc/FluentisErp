@@ -13,7 +13,7 @@ Za nastavak stvaranja računa za kupnju, korisnik mora unijeti obavezna polja:
 
 - **Datum** i **Broj** dokumenta dodijeljen od strane dobavljača;
 
-- **Dobavljač**, koristeći [pomoćno polje](/docs/guide/operations-with-data/manual-entry-or-help-and-data-selection) ili [izravno](/docs/guide/operations-with-data/manual-entry-or-help-and-data-selection) unosom podataka.
+- **Dobavljač**, koristeći [pomoćno polje](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) ili [izravno](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) unosom podataka.
 
 Obrazac sadrži niz kartica:
 

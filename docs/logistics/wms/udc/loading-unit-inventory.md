@@ -3,6 +3,11 @@ title: Inventario unità di carico
 sidebar_position: 9
 ---
 
+:::important A cosa serve
+La funzione Inventario Unità di Carico del WMS di Fluentis consente di effettuare un inventario accurato delle unità di carico presenti a magazzino.        
+Gli operatori possono leggere l'ubicazione per visualizzare le UDC contenute e procedere con la registrazione delle quantità, generando automaticamente movimenti di rettifica per allineare le giacenze logiche con quelle fisiche.
+:::  
+
 Questa procedura è utilizzata per eseguire un inventario delle UDC presenti a magazzino.
 
 Alla lettura dell'ubicazione vengono visualizzate nella griglia sottostante tutte le unità di carico contenute al suo interno, con l'indicazione dei seguenti campi: 

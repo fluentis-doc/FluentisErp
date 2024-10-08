@@ -5,6 +5,14 @@ sidebar_position: 2
 
 Attraverso questa gestione è possibile definire la rubrica di tutti i soggetti con i quali possono lavorare le società definite nel database, sia come intestatari dei documenti del ciclo attivo/passivo/contabile che come semplici indirizzi e riferimenti di sedi alternative.
 
+:::danger[Attenzione]
+La parte generale definita **Contatto** accoglie solo i dati generali del soggetto in questione, quali la ragione sociale di un'azienda o il nome di un professionista o soggetto privato, il loro indirizzo, il codice fiscale e la partita iva ecc...
+
+Questi dati costituiscono un serbatoio, una sorta di rubrica, a disposizione di tutte le aziende gestite nel database.
+
+Ogni azienda ha il proprio piano dei conti e pertanto, al fine di poter utilizzare l'anagrafica concretamente nel ciclo documentale e nelle registrazioni contabili e definire i vari dettagli d interesse, **è necessario, all'interno di ogni singola società coinvolta** (agendo dunque dopo aver selezionato la società attiva) [**associare il Contatto ad un Tipo conto**](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/accounting-data-intro) al fine di inizializzare l'anagrafica in dettaglio associandole appunto un conto contabile che identificherà anche ai fini della contabilità quel determinato cliente italiano o ad esempio quel determinato fornitore europeo, quell'agente o quella banca.
+:::
+
 ### Ricerca anagrafiche
 
 La form si apre tramite il percorso **Home > Anagrafiche > Anagrafiche contatti** ed è stata disegnata per permettere all'utente di ricercare facilmente all'interno della rubrica dei contatti, con lo scopo di visualizzarli, modificarli, annullarli ed eventualmente cancellarli o procedere all'inserimento di una nuova referenza, previa la possibilità di avere i diritti necessari per queste operazioni.
@@ -30,3 +38,12 @@ La **Nuova anagrafica** si può inserire:
 La form **Anagrafica** si compone di due tab:
 - **[Generale](/docs/erp-home/registers/contacts/create-new-contact/general)** in cui si troveranno le informazioni generali dell'anagrafica;
 - **[Dati Contabili](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/accounting-data-intro)** che a sua volta presenterà una serie di tab nei quali si potranno inserire informazioni più specifiche di tipo amministrativo, commerciale, logistico e che verranno dettagliate negli articoli successivi.
+ 
+
+## Riepilogo
+:::tip[Flusso Operativo per le Anagrafiche]
+1. Usare il comando *Nuovo* per inserire un *Contatto* che contiene i dati anagrafici generali
+2. Scrivere il numero di partita iva e usare il comando **Proponi Dati** per compilare automaticamente i dati generali verificando anche la validità della partita iva 
+3. Associare un **Tipo conto** e viene creato automaticamente il conto contabile, si attivano i dettagli
+4. Compilare i dettagli nei vari tab, in particolare le **Condizioni di pagamento** (se Cliente, Fornitore o Agente) oppure l'IBAN se anagrafica Banca
+:::

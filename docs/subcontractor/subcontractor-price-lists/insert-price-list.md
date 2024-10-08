@@ -8,7 +8,7 @@ Da questa applicazione sarà possibile inserire i listini di conto lavoro.
 ## Sezione superiore
 
 Nella sezione superiore è necessario inserire il **Fornitore**.
-Nella form di inserimento vengono proposte automaticamente i valori dei campi **Da data validità** (viene proposta la data corrente per inizio validità) e la [Divisa](/docs/guide/glossary/glossary-intro#currency) (viene proposta la divisa della società, ma possono essere modificati.
+Nella form di inserimento vengono proposte automaticamente i valori dei campi **Da data validità** (viene proposta la data corrente per inizio validità) e la [Divisa](/docs/guide/common/glossary/glossary-intro#currency) (viene proposta la divisa della società, ma possono essere modificati.
 Viene riportato un eventuale **Sconto listino da anagrafica** ed è possibile inserire delle **Note**
 
 Nella sezione superiore è presente anche il filtro per ricercare gli Articoli all'interno del listino

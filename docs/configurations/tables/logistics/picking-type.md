@@ -3,6 +3,12 @@ title: Tipi picking
 sidebar_position: 34
 ---
 
+:::important A cosa serve
+La tabella Tipo Picking di Fluentis consente di codificare e definire le diverse tipologie di picking che possono essere utilizzate durante la creazione delle liste di prelievo. Gli utenti possono inserire nuovi record, modificare quelli esistenti o eliminarli in base alle esigenze operative.
+
+Ogni tipologia di picking può essere associata a parametri specifici, tra cui il codice alfanumerico univoco, la numerazione dei documenti, e le causali di movimentazione. È possibile stabilire anche il tipo di fattura o DDT da utilizzare e gestire configurazioni come lo stato iniziale del picking e la priorità delle ubicazioni di magazzino. Questa flessibilità consente alle aziende di adattare il sistema alle proprie necessità, migliorando così l'efficienza nelle operazioni di magazzino e contribuendo a una gestione ottimale dei flussi di materiali.
+:::
+
 La tabella si trova sul percorso **Tabelle > Logistica > Tipi picking**.
 
 In questa tabella è possibile codificare le diverse tipologie di picking da utilizzare quando si crea un [Nuovo Picking](/docs/logistics/picking/picking-management).

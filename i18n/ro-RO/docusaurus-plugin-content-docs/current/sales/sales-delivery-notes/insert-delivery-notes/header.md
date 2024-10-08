@@ -5,7 +5,7 @@ sidebar_position: 2
 
 ## Antet
 
-După selectarea datelor solicitate în secțiunea de sus, utilizatorul poate continua introducerea următoarelor date [manual](/docs/guide/operations-with-data/manual-entry-or-help-and-data-selection) sau cu [campul help](/docs/guide/operations-with-data/manual-entry-or-help-and-data-selection) sau, conform procedurilor pe care le alege, aplicația completează câmpurile *automat*.
+După selectarea datelor solicitate în secțiunea de sus, utilizatorul poate continua introducerea următoarelor date [manual](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) sau cu [campul help](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) sau, conform procedurilor pe care le alege, aplicația completează câmpurile *automat*.
 
 :::note Amintiți-vă 
 Dacă documentul este *creat automat*, aceste date sunt preluate din *documentul sursă* din care a fost generat.
@@ -14,10 +14,10 @@ Dacă documentul este *creat automat*, aceste date sunt preluate din *documentul
 Prin introducerea **Clientului**, toate datele specifice filei **Antet** sunt automat propuse, conform datelor setate anterior în [registru clienți](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/accounting-data-intro), în câmpurile corespunzătoare adresei dvs. și în *secțiunile* :
 
 
-- **Moneda**: [Moneda](/docs/guide/glossary/glossary-intro#currency), [Curs valutar](/docs/guide/glossary/glossary-intro#currency-exchange), [Data valuta](/docs/guide/glossary/glossary-intro#currency-date).
-- **Tara**: [Tara](/docs/guide/glossary/glossary-intro#country), [Limba](/docs/guide/glossary/glossary-intro#language), [Zona](/docs/guide/glossary/glossary-intro#zone)
-- **Adresa de livrare**: [Adresa de livrare](/docs/guide/glossary/glossary-intro#shipment), [Transport](/docs/guide/glossary/glossary-intro#carriage), [Ambalare](/docs/guide/glossary/glossary-intro#packing), [Oferte](/docs/guide/glossary/glossary-intro#sales-price-list) si [intervalul de valabilitate](/docs/guide/glossary/glossary-intro#validity-date)
-- alte campuri propuse la alegerea clientului, dar editabile: [Destinatie](/docs/guide/glossary/glossary-intro#destination), [Destinatar](/docs/guide/glossary/glossary-intro#recipient).
+- **Moneda**: [Moneda](/docs/guide/common/glossary/glossary-intro#currency), [Curs valutar](/docs/guide/common/glossary/glossary-intro#currency-exchange), [Data valuta](/docs/guide/common/glossary/glossary-intro#currency-date).
+- **Tara**: [Tara](/docs/guide/common/glossary/glossary-intro#country), [Limba](/docs/guide/common/glossary/glossary-intro#language), [Zona](/docs/guide/common/glossary/glossary-intro#zone)
+- **Adresa de livrare**: [Adresa de livrare](/docs/guide/common/glossary/glossary-intro#shipment), [Transport](/docs/guide/common/glossary/glossary-intro#carriage), [Ambalare](/docs/guide/common/glossary/glossary-intro#packing), [Oferte](/docs/guide/common/glossary/glossary-intro#sales-price-list) si [intervalul de valabilitate](/docs/guide/common/glossary/glossary-intro#validity-date)
+- alte campuri propuse la alegerea clientului, dar editabile: [Destinatie](/docs/guide/common/glossary/glossary-intro#destination), [Destinatar](/docs/guide/common/glossary/glossary-intro#recipient).
 
 *Alte campuri optionale*:
 
@@ -37,7 +37,7 @@ Poate fi introdus și manual. Cu butonul din dreapta al mouse-ului puteți desch
 
 **Note initiale** : poti selecta notele care au fost inserate anterior in tabelul cu acelasi nume situat in calea Home> Utilities> Management of coded notes. Pentru aceasta utilizatorul trebuie să facă dublu clic pe câmpul Note inițiale pentru a deschide Note de ajutor codificate și a selecta datele, sau cu butonul dreapta al mouse-ului poate deschide o fereastră pentru a specifica un text de notă foarte lung. Dacă câmpul conține o valoare, culoarea de fundal a câmpului este modificată.
 
-**Proiect**: folosind [campul help](/docs/guide/operations-with-data/manual-entry-or-help-and-data-selection) puteți lega documentul la un proiect.
+**Proiect**: folosind [campul help](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) puteți lega documentul la un proiect.
 Această asociere funcționează numai la nivelul antetului articolului.
 
 **Data intrării în vigoare** este data efectivă pentru calcularea termenelor limită de plată.

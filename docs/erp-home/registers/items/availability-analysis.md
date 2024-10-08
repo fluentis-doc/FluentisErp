@@ -3,6 +3,14 @@ title: Analisi disponibilità
 sidebar_position: 6
 ---
 
+:::important A cosa serve
+L'analisi disponibilità di Fluentis è uno strumento potente e versatile che consente agli utenti di monitorare e gestire in tempo reale le disponibilità degli articoli all'interno del magazzino. Attraverso un’interfaccia intuitiva, l'analisi è in grado di elaborare rapidamente i dati relativi a un articolo specifico, richiedendo semplicemente l'inserimento del codice articolo. Inoltre, l'analisi si estende anche ai componenti della distinta base, offrendo una visione completa delle disponibilità.
+
+Nel pannello principale dell'analisi, vengono presentate informazioni dettagliate sulla disponibilità dell'articolo padre e dei suoi componenti, inclusi i dati sulle giacenze, eventuali giacenze non disponibili, e le quantità in ritardo. È possibile visualizzare anche i dettagli dei documenti che impegnano o rendono disponibili quantità all'interno del sistema, permettendo un'analisi approfondita delle operazioni in corso.
+
+Grazie a questa funzionalità, gli utenti possono prendere decisioni informate riguardo agli approvvigionamenti e alla gestione delle scorte, riducendo il rischio di mancanze e ottimizzando l'efficienza operativa. L'analisi disponibilità riveste un ruolo cruciale nel garantire che le aziende possano rispondere efficacemente alle richieste del mercato e mantenere livelli ottimali di servizio.
+:::
+
 La finestra per la stampa dell'analisi disponibilità si apre tramite il percorso **Home > Articoli > Analisi disponibilità**, ed è composta da tre sezioni: l'area di filtro, la griglia di risultato per magazzino, la griglia di dettaglio.
 
 ### Area di filtro
@@ -64,7 +72,7 @@ Tramite un doppio click del tasto sx del mouse sulla riga seleziona è possibile
 La disponibilità dell'articolo da produrre è data solamente dall'ultima fase con i flag **produttiva** e **movimentabile** attivi presente nel [Ciclo di lavoro](/docs/erp-home/registers/production/routes/new-route).
 :::
 
-Per quanto riguarda la descrizione delle funzionalità comuni a tutti le form, presenti nella ribbon bar, si rimanda all'articolo relativo ai [Pulsanti Comuni](/docs/guide/common-buttons), in particolare per le funzionalità delle stampe si rimanda anche all'articolo [Anteprima e Stampa](/docs/guide/operations-with-data/reports).
+Per quanto riguarda la descrizione delle funzionalità comuni a tutti le form, presenti nella ribbon bar, si rimanda all'articolo relativo ai [Pulsanti Comuni](/docs/guide/common/common-buttons), in particolare per le funzionalità delle stampe si rimanda anche all'articolo [Anteprima e Stampa](/docs/guide/common/operations-with-data/reports).
 
 *Pulsante specifico*:
 > **Espandi/riduci griglia articoli**: pulsante che permette di espandere o ridurre le griglie di risultato. 

@@ -29,7 +29,7 @@ Nella maschera che si apre selezionare Nuovamente l'oggetto e facendo click con 
 
 I filtri sono tipicamente in condizione 'AND' ed è possibile specificare più criteri di filtro contemporanei per visualizzare: un solo record (filtro per numero documento), più record (filtro per data), i record inseriti in un anno (filtro per anno), i record inseriti per una certa anagrafica (filtro per conto/sottoconto), ecc.
 
-Clic sulle freccette ![](/img/neutral/common/arrow.png) per aprire gli [expander](/docs/guide/glossary/glossary-intro#expander) e per filtrare anche in base ai dati contenuti in essi.
+Clic sulle freccette ![](/img/neutral/common/arrow.png) per aprire gli [expander](/docs/guide/common/glossary/glossary-intro#expander) e per filtrare anche in base ai dati contenuti in essi.
 
 Dopo l'inserimento dei filtri desiderati premere il pulsante **Ricerca** per ottenere l'elenco dei dati.
 

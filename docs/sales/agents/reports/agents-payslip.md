@@ -11,4 +11,4 @@ Nella sezione **Stampa le provvigioni del** si effettua la selezione del tipo di
 
 Da segnalare l'opzione di stampa con il dettaglio per articolo: questa versione del report può essere utile per controllare la correttezza delle provvigioni inserite dal sistema e poter individuare errori di impostazioni dell'anagrafica agente.
 
-Più dettagli su questo argomento negli articoli: [Ricerca dati nelle form di sola lettura ](/docs/guide/operations-with-data/data-search-in-read-only-forms) e [Anteprima e stampa](/docs/guide/operations-with-data/reports) 
+Più dettagli su questo argomento negli articoli: [Ricerca dati nelle form di sola lettura ](/docs/guide/common/operations-with-data/data-search-in-read-only-forms) e [Anteprima e stampa](/docs/guide/common/operations-with-data/reports) 

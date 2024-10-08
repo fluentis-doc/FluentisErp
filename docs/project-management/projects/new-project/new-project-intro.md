@@ -3,7 +3,7 @@ title: Nuovo progetto
 sidebar_position: 1
 ---
 
-In questa form è possibile inserire tutti i dati di un nuovo **Progetto**. 
+In questa form è possibile inserire tutti i dati di un nuovo **Progetto** . 
 
 **Tipo progetto**: contiene il tipo progetto selezionato dalla tabella Configurazione > Tabelle >Gestione Progetti > Tipi progetto;
 

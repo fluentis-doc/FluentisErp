@@ -8,6 +8,10 @@ keywords:
 
 La procedura si apre tramite il percorso **Acquisti > DDT di acquisto > Procedure > Registrazione DDT di acquisto in magazzino** e permette di eseguire/ripristinare le operazioni di carico in magazzino degli articoli presenti nel DDT.
 
+:::note NOTA
+Il DDT di Acquisto può essere registrato a magazzino anche mediante il pulsante di [*Carico automatico nel magazzino*](/docs/purchase/purchase-delivery-note/procedures/create-delivery-notes-from-orders) presente all'interno del documento.
+:::
+
 ### Filtro
 
 Offre la possibilità di inserire i filtri per cercare i DDT di acquisto, per selezionarli e dopo registrarli in magazzino.

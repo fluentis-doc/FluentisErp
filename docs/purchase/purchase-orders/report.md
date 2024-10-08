@@ -55,7 +55,7 @@ Il risultato è un elenco degli ordini, con indicati eventuali documenti di evas
 Questa stampa fornisce un riepilogo degli ordini ricevuti ma non ancora totalmente evasi, in base al valore monetario di ciascun ordine. Questo documento è particolarmente utile per i reparti di vendite, finanza e gestione strategica, poiché offre una visione chiara del fatturato potenziale legato agli ordini in corso.      
 Nella form iniziale vengono mostrati alcuni filtri relativi alla testata dei documenti da estrarre, analoghi a quelli dei report già analizzati. A questi si aggiuge la possibilità di effettuare un *ordinamento* per *Numero*, *Articolo*, *Data*, *Fornitore* o *Data merce pronta*.   
 
-Il risultato è un elenco degli ordini con per ogni articolo indica i valori ordinati, consegnati e residui.       
+Il risultato è un elenco degli ordini in cui, per ogni articolo vengono indicati i valori ordinati, consegnati e residui.       
 
 
 ### Scadenziario ordini
@@ -66,4 +66,4 @@ Con i filtri messi a disposizione è possibile filtrare i documenti per effettua
 Nella stampa, sotto lo stesso fornitore/data consegna (in base all'ordinamento scelto) vengono elencati per ogni articolo gli ordini con i seguenti dati: numero, data inserimento, stato evasione, quantità residua, ecc.      
 
 
-Più dettagli su questo argomento negli articoli: [Anteprima e stampa](/docs/guide/operations-with-data/reports) 
+Più dettagli su questo argomento negli articoli: [Anteprima e stampa](/docs/guide/common/operations-with-data/reports) 

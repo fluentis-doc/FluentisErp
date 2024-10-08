@@ -32,4 +32,4 @@ Deci, fiecare lot trebuie să poată fi urmărit și, în cazul mai multor depoz
 **Zile valabilitate număr serial**: reprezintă valabilitatea acestui cod;
 **Generare număr serial**: permite stabilirea modului de creare a numărului.
 
-Pentru detalii generale despre form-uri, consultați articolul  [Inserare manuală/help și Selecție date](/docs/guide/operations-with-data/manual-entry-or-help-and-data-selection).
+Pentru detalii generale despre form-uri, consultați articolul  [Inserare manuală/help și Selecție date](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection).

@@ -3,6 +3,14 @@ title: Calcolo disponibilità
 sidebar_position: 5
 ---
 
+:::important A cosa serve
+Il Calcolo della Disponibilità di Fluentis è uno strumento essenziale che consente agli utenti di determinare con precisione la disponibilità degli articoli all'interno dei magazzini. Questa funzionalità è accessibile attraverso un'interfaccia user-friendly, dove è possibile selezionare i magazzini sui quali si desidera eseguire il calcolo. L'utente può inserire informazioni come il codice del magazzino e la sua descrizione, configurando così la base su cui operare.
+
+Nella sezione dedicata al calcolo, gli utenti possono impostare i criteri per la disponibilità fisica e logica, specificando se considerare documenti relativi a acquisti, vendite, produzioni pianificate e rilasciate. Inoltre, è possibile stabilire un intervallo temporale specifico per il quale si desidera effettuare il calcolo, aumentando così l'accuratezza dei dati raccolti.
+
+Questa funzionalità non solo facilita il monitoraggio delle scorte, ma supporta anche decisioni strategiche in tempo reale, assicurando che le aziende possano rispondere prontamente alle esigenze di approvvigionamento e vendita. Grazie al calcolo della disponibilità, Fluentis offre quindi un vantaggio competitivo significativo, ottimizzando la gestione delle giacenze e migliorando l'efficienza operativa.
+:::
+
 La finestra relativa al calcolo della disponibilità si apre tramite il percorso **Home > Articoli > Calcolo disponibilità**.
 
 Attraverso questa form, si inseriscono i magazzini su cui si desidera calcolare la disponibilità e che poi verranno riportati nella form [Analisi della disponibilità](/docs/erp-home/registers/items/availability-analysis).

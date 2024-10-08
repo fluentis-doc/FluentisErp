@@ -55,7 +55,7 @@ Na temelju ovdje unesenog teksta, izlaskom iz polja, sustav upravljanja automats
 
 *Posebni gumbi*
 
-> [Predloži podatke](/docs/guide/glossary/glossary-intro#v): upisivanjem **PDV-a** u odgovarajuće polje osobnih podataka i klikom na **Predloži podatke**, sustav će putem web-servisa postaviti upit IT sustavu V.I.E.S. kojim će se provjeriti valjanost i ispravnost PDV subjekta. Ukoliko su podaci ispravni, sustav će automatski predložiti ostale osnovne osobne podatke ispitanika, bez potrebe ručnog unosa. Za daljnje informacije vezane uz sustav V.I.E.S. pogledajte detaljno objašnjenje putem poveznice/linka nasuprot.
+> [Predloži podatke](/docs/guide/common/glossary/glossary-intro#v): upisivanjem **PDV-a** u odgovarajuće polje osobnih podataka i klikom na **Predloži podatke**, sustav će putem web-servisa postaviti upit IT sustavu V.I.E.S. kojim će se provjeriti valjanost i ispravnost PDV subjekta. Ukoliko su podaci ispravni, sustav će automatski predložiti ostale osnovne osobne podatke ispitanika, bez potrebe ručnog unosa. Za daljnje informacije vezane uz sustav V.I.E.S. pogledajte detaljno objašnjenje putem poveznice/linka nasuprot.
 
 
 ### Reference

@@ -3,6 +3,14 @@ title: Inventario quantità valorizzato
 sidebar_position: 1
 ---
 
+:::important A cosa serve
+Il report "Inventario quantità valorizzato" di Fluentis rappresenta uno strumento chiave per la gestione e il monitoraggio delle giacenze di magazzino, permettendo alle aziende di avere una visione chiara e dettagliata delle proprie scorte. Attraverso questo report, gli utenti possono accedere a informazioni complete non solo sulle quantità fisiche degli articoli presenti in magazzino, ma anche sul loro valore, ottenuto mediante diverse logiche di valorizzazione come costo medio, costo ultimo, FIFO e LIFO.
+
+La generazione del report avviene tramite filtri personalizzabili, che consentono di visualizzare dati specifici per magazzino, articolo, categoria merceologica e altro, facilitando l'analisi e la gestione delle scorte. Gli utenti possono anche raggruppare e ordinare i dati in base a parametri significativi, rendendo l'intero processo di controllo inventariale più efficiente e informato.
+
+Questo report non solo supporta le decisioni operative quotidiane, ma è anche cruciale per garantire la compliance normativa e per effettuare analisi finanziarie e di performance all'interno dell'organizzazione.
+:::
+
 La stampa permette all'utente di visualizzare un report contenente le informazioni relative all'inventario.
 La form si compone di una parte superiore contenente una serie di filtri (magazzino, causale, artciolo/variante, tipo articolo, categoria fiscale, categoria merceologica,...) che permettono di visualizzare i dati desiderati.
 
@@ -71,4 +79,4 @@ Il calcolo viene fatto così:
 Allora il costo LIFO al 23/05/2024 è:
 ((60 * 1,5) + (40 * 2,5) +(70 * 3)) /170 = 2,35
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form di stampa fare riferimento al seguente link [Anteprima e stampa](/docs/guide/operations-with-data/reports).
+Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form di stampa fare riferimento al seguente link [Anteprima e stampa](/docs/guide/common/operations-with-data/reports).

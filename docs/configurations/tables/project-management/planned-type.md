@@ -21,3 +21,5 @@ Sempre all'interno di questa form è possibile aggiungere nuove tipologie all'in
 **Tipo intervento**: indica il tipo intervento associato di default, con la relatva descrizione;
 
 **Esterno/Interno**: se flaggato, indica che è un’operazione esterna.
+
+**Colore**: colore per identificare gli interventi pianificati nei calendari dell'area progetti, come il [Planner](/docs/project-management/planned-interventions/planner) e [Assegnazione WBS risorse](/docs/project-management/planned-interventions/wbs-resource-assignation)

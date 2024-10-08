@@ -48,10 +48,10 @@ import UM from './../../import/fields/item-um.md'
 **Quantità alternativa**: viene proposto il valore relativo all' U.M. alternativa, calcolato moltiplicando o dividendo la quantità gestionale (relativa all' U.M. principale) con il fattore di conversione impostato nell'*Anagrafica articolo > tab UM alternativa*;  
 **Prezzo**: rappresenta il *prezzo* presente nell'ordine fornitore, se la riga ricevimento ha evaso una riga ordine fornitore, o il *costo ultimo* di anagrafica articoli;  
 **Opzione**: il dato, obbligatorio, corrisponde alla tabella delle *Opzioni* della distinta base;  
-**Magazzino**: è il magazzino di ricevimento della merce, viene ripreso dall'ordine fornitore se la riga ricevimento ha evaso una riga ordine fornitore oppure può essere inserito [manualmente ](/docs/guide/operations-with-data/manual-entry-or-help-and-data-selection) dall'utente;  
-**Causale**: è la causale di ricevimento della merce, viene ripresa dall'ordine fornitore se la riga ricevimento ha evaso una riga ordine fornitore oppure può essere inserita [manualmente ](/docs/guide/operations-with-data/manual-entry-or-help-and-data-selection) dall'utente;  
+**Magazzino**: è il magazzino di ricevimento della merce, viene ripreso dall'ordine fornitore se la riga ricevimento ha evaso una riga ordine fornitore oppure può essere inserito [manualmente ](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) dall'utente;  
+**Causale**: è la causale di ricevimento della merce, viene ripresa dall'ordine fornitore se la riga ricevimento ha evaso una riga ordine fornitore oppure può essere inserita [manualmente ](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) dall'utente;  
 **Riferimento ordine**: se la riga è stata creata evadendo una riga ordine fornitore viene riportato il numero ordine evaso;  
-**Ubicazione**: se la causale ha un'ubicazione di default viene proposta tale ubicazione altrimenti può essere inserita [manualmente ](/docs/guide/operations-with-data/manual-entry-or-help-and-data-selection) se il magazzino è gestito ad ubicazioni.  
+**Ubicazione**: se la causale ha un'ubicazione di default viene proposta tale ubicazione altrimenti può essere inserita [manualmente ](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) se il magazzino è gestito ad ubicazioni.  
 
 *Pulsanti specifici*:
 

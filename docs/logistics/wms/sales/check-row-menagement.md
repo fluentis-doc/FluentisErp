@@ -35,6 +35,8 @@ Nel caso in cui l'utente confermi la riga, di un articolo gestito a lotti e per 
 > **Conferma**: permette di confermare i dati inseriti e successivamente di caricare i dati relativi alla riga successiva;          
 > **Nuova UDC**: permette di creare una nuova *Unità di carico* dopo aver selezionato il tipo.         
 
+Al di sotto della quantità prelievo, è presente una griglia in sola lettura con le seguenti colonne: *Quantità*, *Ubicazione* e *Lotto*. Questa si aggiorna dinamicamente ed ad esempio, se viene solo indicato l’articolo deve fare vedere tutte le ubicazioni con giacenza > 0 in cui c’è quell’articolo, se è indicato anche il lotto, deve far vedere tutte le ubicazioni con giacenza > 0 in cui c’è quell’articolo con quel lotto.
+
 - **UDC**
 Permette di visualizzare la composizione delle *Unità di carico* create per il picking corrente.          
 
@@ -96,7 +98,9 @@ Nel caso in cui l'utente confermi la riga, di un articolo gestito a lotti e per 
 **Pulsanti specifici**
 > **Dettaglio**: permette di posizionarsi sul tab **Articoli spuntati**;        
 > **Conferma**: permette di confermare i dati inseriti e successivamente di caricare i dati relativi alla riga successiva;          
-    
+
+Al di sotto della quantità prelievo, è presente una griglia in sola lettura con le seguenti colonne: *Quantità*, *Ubicazione* e *Lotto*. Questa si aggiorna dinamicamente ed ad esempio, se viene solo indicato l’articolo deve fare vedere tutte le ubicazioni con giacenza > 0 in cui c’è quell’articolo, se è indicato anche il lotto, deve far vedere tutte le ubicazioni con giacenza > 0 in cui c’è quell’articolo con quel lotto.
+
 - **Articoli spuntati**       
 Il tab **Articoli Spuntati** si popola solo dopo aver selezionato un articolo nel tab **Articoli** del Picking.
 Quindi dalla lista articoli del Picking, si seleziona un articolo e nel tab **Articoli Spuntati** compaiono tutte le letture fatte dell’articolo selezionato.
@@ -123,5 +127,3 @@ Nel caso in cui sia necessario avere la possibilità di sovra evadere la quantit
 Per ogni Picking verrà creata un’unica registrazione di scarico con in contropartita un’unica registrazione di carico che contiene i movimenti di tutti gli articoli spuntati. 
 
 Per tutte le informazioni su come codificare i barcode da leggere nel campo **Codice barcode** consultare la pagina relativa al [Barcode tokenizer](/docs/configurations/tables/general-settings/barcode-tokenizer).
-
-

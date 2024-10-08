@@ -30,4 +30,4 @@ Mreža rezultata izvođenja prikazuje popis izvedenih obrada specificirajući **
 Važno je napomenuti da u slučaju kada je artikl vrste *Nabava*, bit će stvorena narudžba za nabavu ali ne i narudžba, dok će u slučaju kada je artikl vrste *Proizvodnja* ili *Radni nalog* biti stvorena odgovarajuća narudžba.
 :::
 
-Za sve što nije detaljno opisano u ovom dokumentu o zajedničkom radu formi za ispis, pogledajte sljedeći link: [Pregled i ispis](/docs/guide/operations-with-data/reports).
+Za sve što nije detaljno opisano u ovom dokumentu o zajedničkom radu formi za ispis, pogledajte sljedeći link: [Pregled i ispis](/docs/guide/common/operations-with-data/reports).

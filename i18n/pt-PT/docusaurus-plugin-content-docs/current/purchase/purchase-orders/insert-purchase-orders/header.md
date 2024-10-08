@@ -42,7 +42,7 @@ RIBBON BAR: representa o menu do módulo em questão, ou seja, a área na qual 
 
 | RibbonFunction | RibbonMeaning |
 | --- | --- |
-|  [Documentos](/docs/guide/operations-with-data/document-manager)  | Na ordem cliente é possível associar alguns documentos em diversos formados. |
+|  [Documentos](/docs/guide/common/operations-with-data/document-manager)  | Na ordem cliente é possível associar alguns documentos em diversos formados. |
 
 
 

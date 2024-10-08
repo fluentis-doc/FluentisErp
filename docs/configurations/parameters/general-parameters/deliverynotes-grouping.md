@@ -18,4 +18,4 @@ La tabella si compone dei seguenti campi:
 > **Causali di magazzino**: indica il codice della causale da indicare di defualt nella form;        
 > **Descrizione causale**: indica la descrizione della causale da indicare di defualt nella form.
 
-Nei paragrafi dedicati alle form del [WMS](/docs/logistics/wms/intro), sono indicati i **Parametri magazzino di carico/scarico per utente** da inserire per ciascuna di esse.
+Nei paragrafi dedicati alle form del [WMS](/docs/logistics/wms/wms-intro), sono indicati i **Parametri magazzino di carico/scarico per utente** da inserire per ciascuna di esse.

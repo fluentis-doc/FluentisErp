@@ -53,9 +53,11 @@ Sulla base del testo qui inserito, uscendo dal campo, il gestionale andrà a gen
 
 **Note**: campo in cui si possono inserire eventuali note relative al soggetto;
 
-*Pulsanti specifici*
+### Pulsanti specifici - Inserimento automatico dati anagrafici
+:::tip
+[**Proponi dati**](/docs/guide/common/glossary/glossary-intro#v): inserendo la **Partita Iva** nel relativo campo dell'anagrafica, e cliccando su **Proponi Dati**, il sistema tramite web-service andrà ad interrogare il sistema informatico del V.I.E.S. che andrà a verificare la validità e correttezza della P.Iva del soggetto. Nel caso il dato sia corretto, il sistema andrà a proporre in automatico il resto dei dati anagrafici di base del soggetto, senza doverli inserire manualmente. Per maggiori informazioni relative al sistema V.I.E.S. cliccare sul link.
+:::
 
-> [Proponi dati](/docs/guide/glossary/glossary-intro#v): inserendo la **Partita Iva** nel relativo campo dell'anagrafica, e cliccando su **Proponi Dati**, il sistema tramite web-service andrà ad interrogare il sistema informatico del V.I.E.S. che andrà a verificare la validità e correttezza della P.Iva del soggetto. Nel caso il dato sia corretto, il sistema andrà a proporre in automatico il resto dei dati anagrafici di base del soggetto, senza doverli inserire manualmente.Per maggiori informazioni relative al sistema V.I.E.S. si rimanda alla spiegazione dettagliata trami il link accanto.
 
 
 ### Riferimenti
@@ -68,12 +70,19 @@ Nella sezione **Altri dati** invece è possibile inserire il numero cliente, 
 
 Nella griglia **Persone di Riferimento** si potranno specificare, per il contatto in uso, la lista delle persone di riferimento presenti al suo interno con la descrizione del ruolo occupato, e i relativi contatti telefonici e/o indirizzi email. Oltre a questa funzione, è importante sottolineare che per i soggetti da riportare nella certificazione delle ritenute la prima riga inserita in questa griglia sarà relativa ai riferimenti della persona fisica da riportare nella stampa.
 
+:::tip[]
 Nella griglia **Sottoconti in tutte le società** si potrà vedere se per l'anagrafica in uso è stata definito l'uso contabile in un'altra società; nella griglia si troverà quindi la lista dei vari sottoconti assegnati con la relativa società di riferimento.
+:::
+
 
 
 ### Indirizzi Alternativi
 
-Qui è possibile inserire alcuni indirizzi alternativi che dipendono dal *Tipo indirizzo associato* (non sono gli indirizzi di consegna della merce per i quali è stata sviluppata la tab [Consegna](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/delivery) in *Dati contabili* e dove si inseriscono i *Destinatari/Destinazioni* per permettere la gestione completa nei documenti).
+Qui è possibile inserire alcuni indirizzi alternativi che dipendono dal [**Tipo indirizzo associato**](/docs/configurations/tables/general-settings/address-types.md) 
+
+**Attenzione:** non si tratta degli indirizzi di consegna della merce per i quali è stata sviluppata la tab [Consegna](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/delivery) nella sezione *Dati contabili* dove inserire i *Destinatari/Destinazioni* della merce per permettere la gestione completa nei documenti).
+
+**La funzione più frequente di questa sezione è soprattutto la gestione egli indirizzi mail per automatizzare l'invio di documenti, solitamente report di stampa, tramite workflow (flussi operativi con passaggi di stato da gestire all'interno elle maschere) principalmente tramite invio massivo di mail.**
 
 *Esempio*: se selezioniamo nella griglia il tipo indirizzo 'Sede Commerciale' si andrà ad inserire un referente o più per l'ufficio commerciale a cui inviare ad esempio le conferme d'ordine via mail. La mail va indicata nella sezione accanto alla griglia in cui si possono inserire anche il riferimento telefonico del contatto e altri dati di tipo anagrafico. In questo caso, quando si inserirà l'ordine, nel tab *Rieploghi* quando si andrà a scegliere di inviare la conferma d'ordine al cliente si aprirà una schermata con l'anteprima della mail con l'indirizzo del destinatario già popolato con le informazioni che sono state inserite in questa sezione, e non servirà andare ad aggiungerlo a mano ogni volta. In base al tipo di indirizzo, si potrà scegliere a chi inviare le fatture, degli ordini fornitori ecc.
 
@@ -121,3 +130,37 @@ In questo caso il dato rilevante è il nome dei cointestatari. Sarà dunque nece
 Per la gestione in fattura vedere [qui](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/fiscal-information).
 
 Una volta inserite le informazioni **Generali**, si procederà all'inserimento delle informazioni specifiche all'interno del successivo tab **Dati Contabili**.
+
+
+### Tab Dati Storici
+Questa sezione serve per gestire la possibilità di storicizzare, ovvero memorizzare dei cambiamenti, nei dati generali, quali ad esempio un cambio della ragione sociale o dell'indirizzo ecc. del soggetto in questione, ad esempio un cliente o un fornitore.
+
+:::note
+In particolare un cambio di ragione sociale modificherà in automatico (a fronte comunque di messaggio di conferma che occorre accettare) la descrizione dei sottoconti contabili del piano dei conti assegnati all'anagrafica i contatto.
+
+Pertanto l'esigenza di memorizzare il dato precedente è particolarmente sentita al fine di tracciare i documenti e gli altri dati inseriti anche tramite il riferimento precedente.
+:::
+
+Nella form è presente una griglia di **Sinistra** che accoglierà la data della variazione e servirà da riferimento per mostrare il vecchio o il nuovo dato
+
+Sulla parte **Destra** sono riproposti i campi relativi ai dati del contatto, che saranno però compilati in automatico dalla procedura di storicizzazione. In seguito si potrà modificare la parte *Generale* con il dato attuale aggiornato.
+
+**Pulsante Storicizza dati anagrafici**: posto nella ribbon bar è il pulsante principale per la procedura di storicizzazione (memorizzazione) del dato. Premendolo appare un popup che chiede la data di variazione (*Data fine validità*) la quale sarà riportata nella griglia di Sinistra, mentre nella parte Destra sarnno cpiati i dati attuali per poi procedere alla modifica.
+
+**Pulsante Cancella storico**: Rimuove la data fine validità ed i dati inseriti nella parte Destra 
+
+:::tip[Procedura]
+1. Premere il bottone *Storicizza dati anagrafici*
+2. Nel popup che compare indicare la data della variazione, ovvero la data a partire dalla quale il dato (es. la ragione sociale è cambiata). Confermando il dato "vecchio", attualmente ancora presente, viene salvato
+3. Modificare il dato nel tab ***Dati anagrafici*** e premere **Salva**
+:::
+
+Da questo momento, il dato "vecchio" (storico) è disponibile in diversi report di stampa standard quali ad esempio i registri iva, le fatture di vendita ecc. (oltre a poter essere inserito a piacimento in eventuali report personalizzati o creati ex novo) ed in automatico sarà mostrato il vecchio dato se il documento si riferisce ad una data antecedente alla data di fine validità
+
+:::danger[Attenzione]
+Il dato che viene visualizzato nelle maschere a video ell'ERP è sempre quello attuale aggiornato, non è possibile avere una visualizzazione del dato storico.
+
+La presente sezione permette di gestire il dato storico unicamente per i report di stampa.
+
+Si consiglia di copiare il campo e le relative eventuali formule  per la gestione della visibilità in base alla data di riferimento dal un report standard (o almeno prenderne visione) nel caso di utilizzo in un report di stampa personalizzato 
+:::

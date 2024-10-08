@@ -2,6 +2,11 @@
 title: Tipi ritenuta
 sidebar_position: 34
 ---
+:::tip[FAst Start]
+La tabella è interessata dalla procedura di [**Fast Start**](/docs/guide/fast-start)
+
+Nel caso in cui si intenda configurare manualmente fare riferimento alla check list della pagina linkata
+:::
 
 In questa tabella vengono ricercate ed inserite le tipologie di ritenuta d'acconto da associare ai compensi percipienti (gli agenti di commercio sono a loro volta anche dei percipienti) per la corretta gestione delle contabilizzazioni e degli altri adempimenti fiscali connessi.
 

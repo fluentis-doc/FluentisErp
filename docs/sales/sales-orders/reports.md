@@ -69,4 +69,4 @@ Questa stampa fornisce una panoramica dettagliata delle date di scadenza e dei t
 Con i filtri messi a disposizione è possibile filtrare i documenti per effettuare una ricerca più mirata; è inoltre possibile impostare un ordinamento per Data consegna o Cliente.      
 Nella stampa, sotto lo stesso cliente/data consegna (in base all'ordinamento scelto) vengono elencati per ogni articolo gli ordini con i seguenti dati: numero, data inserimento, stato evasione, quanaità residua, ecc.      
 
-Più dettagli su questo argomento negli articoli: [Anteprima e stampa](/docs/guide/operations-with-data/reports) 
+Più dettagli su questo argomento negli articoli: [Anteprima e stampa](/docs/guide/common/operations-with-data/reports) 

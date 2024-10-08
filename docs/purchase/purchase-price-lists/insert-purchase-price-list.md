@@ -100,4 +100,4 @@ Viene riportata la lista degli **Extra data** collegati all'articolo, con la pos
 
 ### Documenti allegati
 
-Viene visualizzato il dettaglio di un eventuale **Documento allegato** (nome, tipo di documento, eventuali note, ns/vs riferimento). Per le istruzioni relative a come allegare un documento si rimanda all'articolo [Allega documenti](/docs/guide/operations-with-data/attach-documents).
+Viene visualizzato il dettaglio di un eventuale **Documento allegato** (nome, tipo di documento, eventuali note, ns/vs riferimento). Per le istruzioni relative a come allegare un documento si rimanda all'articolo [Allega documenti](/docs/guide/common/operations-with-data/attach-documents).

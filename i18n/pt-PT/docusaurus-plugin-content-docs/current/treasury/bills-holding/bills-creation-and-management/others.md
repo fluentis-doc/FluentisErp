@@ -17,7 +17,7 @@ RIBBON BAR: representa o menu do módulo em questão, ou seja, a área na qual 
 | Cancelar a referência dos vencimentos | Ativo quando é ativo o tab 'Referências vencimentos', permite de desassociar os prazos selecionados pelo efeito em utilização. |
 | Inserção partidas | Ativo quando é ativo o tab 'Referências partidas', permite de abrir a ajuda partidas para associar uma partida com o efeito em utilização. |
 | Cancelar as partidas pelo efeito | Ativo quando é ativo o tab 'Referências partidas', permite de desassociar as partidas selecionadas pelo efeito em utilização. |
-|  [Documentos](/docs/guide/operations-with-data/document-manager)  | Gestão da arquivação documental associada com a máscara em utilização. |
+|  [Documentos](/docs/guide/common/operations-with-data/document-manager)  | Gestão da arquivação documental associada com a máscara em utilização. |
 
 
 

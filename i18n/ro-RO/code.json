@@ -268,26 +268,17 @@
   "Anagrafiche": {
     "message": "Registre"
   },
-  "Connessione e Temi": {
-    "message": "Conexiune și Teme"
-  },
   "Strumenti": {
     "message": "Instrumente"
   },
   "Object navigator": {
     "message": "Object navigator"
   },
-  "Configurazioni (table, parametri, utilità)": {
-    "message": "Configurări (table, parametri, utilitare)"
-  },
   "Form navigator": {
     "message": "Form navigator"
   },
   "Context panel": {
     "message": "Context panel"
-  },
-  "Varie": {
-    "message": "Diverse"
   },
   "Dichiarazioni & Intrastat": {
     "message": "Declarații & Intrastat"
@@ -370,9 +361,6 @@
   "Listini fornitori": {
     "message": "Oferte furnizori"
   },
-  "Resi fornitori": {
-    "message": "Retur furnizori"
-  },
   "Gestione prezzi": {
     "message": "Gestiune prețuri"
   },
@@ -415,9 +403,6 @@
   "Piani di carico": {
     "message": "Planuri de încărcare"
   },
-  "MPS - Master production scheduling": {
-    "message": "MPS - Master production scheduling"
-  },
   "MS - Master scheduling": {
     "message": "MS - Master scheduling"
   },
@@ -426,9 +411,6 @@
   },
   "MRP": {
     "message": "MRP"
-  },
-  "Production outlook": {
-    "message": "Production outlook"
   },
   "PP - Production in progress": {
     "message": "PP - Production in progress"
@@ -478,20 +460,11 @@
   "Documenti di origine interna": {
     "message": "Documente de origine internă"
   },
-  "Controllo articolo": {
-    "message": "Control articole"
-  },
   "Reclami e non conformità": {
     "message": "Reclamații și neconformități"
   },
-  "Azioni corretive": {
-    "message": "Acțiuni corective"
-  },
   "Taratura strumenti": {
     "message": "Calibrare instrumente"
-  },
-  "Home & Impostazioni": {
-    "message": "Home & Setări"
   },
   "Impostazioni": {
     "message": "Setări"
@@ -529,9 +502,6 @@
   "CRM": {
     "message": "CRM"
   },
-  "My CRM area": {
-    "message": "My CRM area"
-  },
   "Budget and Marketing Automation": {
     "message": "Budget and Marketing Automation"
   },
@@ -549,9 +519,6 @@
   },
   "Commesse di produzione": {
     "message": "Comenzi de producție"
-  },
-  "CRP-Capacity requirements": {
-    "message": "CRP-Capacity requirements"
   },
   "Fluentis MES": {
     "message": "Fluentis MES"
@@ -624,5 +591,66 @@
   "theme.unlistedContent.message": {
     "message": "This page is unlisted. Search engines will not index it, and only users having a direct link can access it.",
     "description": "The unlisted content banner message"
-  }
+  },
+  "Anagrafiche/Impostazioni": {
+    "message": "Registre/Sertări"
+  },
+  "theme.docs.DocCard.categoryDescription.plurals": {
+    "message": "1 item|{count} items",
+    "description": "The default description for a category card in the generated index about how many items this category includes"
+  },
+  "theme.blog.author.pageTitle": {
+    "message": "{authorName} - {nPosts}",
+    "description": "The title of the page for a blog author"
+  },
+  "theme.blog.authorsList.pageTitle": {
+    "message": "Authors",
+    "description": "The title of the authors page"
+  },
+  "theme.blog.authorsList.viewAll": {
+    "message": "View all authors",
+    "description": "The label of the link targeting the blog authors page"
+  },
+  "theme.contentVisibility.unlistedBanner.title": {
+    "message": "Unlisted page",
+    "description": "The unlisted content banner title"
+  },
+  "theme.contentVisibility.unlistedBanner.message": {
+    "message": "This page is unlisted. Search engines will not index it, and only users having a direct link can access it.",
+    "description": "The unlisted content banner message"
+  },
+  "theme.contentVisibility.draftBanner.title": {
+    "message": "Draft page",
+    "description": "The draft content banner title"
+  },
+  "theme.contentVisibility.draftBanner.message": {
+    "message": "This page is a draft. It will only be visible in dev and be excluded from the production build.",
+    "description": "The draft content banner message"
+  },
+  "CRP-Capacity requirements": {
+    "message": "CRP-Capacity requirements"
+  },
+  "Newsletter": {
+    "message": "Newsletter"
+  },
+  "Campagne marketing": {
+    "message": "Campagne marketing"
+  },
+  "Previsioni di vendita": {
+    "message": "Previziuni de vânzare"
+  },
+  "Helpdesk": {
+    "message": "Helpdesk"
+  },
+  "Offerte": {
+    "message": "Oferte"
+  },
+  "Introduzione": {
+    "message": "Introducere"
+  },
+  "La guida progettata per supportarti nell’utilizzo quotidiano di Fluentis ERP": {
+    "message": "Documentația creată pentru a vă oferi suport la utilizarea suitei Fluentis ERP"
 }
+}
+
+

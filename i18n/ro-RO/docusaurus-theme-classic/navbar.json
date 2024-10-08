@@ -1,19 +1,7 @@
 {
-  "title": {
-    "message": " ACADEMY",
-    "description": "The title in the navbar"
-  },
-  "item.label.Varie": {
-    "message": "Diverse",
-    "description": "Navbar item with label Varie"
-  },
   "item.label.Strumenti": {
     "message": "Instrumente",
     "description": "Navbar item with label Strumenti"
-  },
-  "item.label.Configurazione": {
-    "message": "Configurări",
-    "description": "Navbar item with label Configurazione"
   },
   "item.label.Impostazioni": {
     "message": "Setări",
@@ -34,10 +22,6 @@
   "item.label.Qualità": {
     "message": "Calitate",
     "description": "Navbar item with label Qualità"
-  },
-  "item.label.Home": {
-    "message": "Home",
-    "description": "Navbar item with label Home"
   },
   "item.label.Amministrativa": {
     "message": "Administrativă",
@@ -66,10 +50,6 @@
   "item.label.Gestione progetti": {
     "message": "Management proiecte",
     "description": "Navbar item with label Gestione progetti"
-  },
-  "item.label.Knowlegde Base": {
-    "message": "Knowlegde Base",
-    "description": "Navbar item with label Knowlegde Base"
   },
   "item.label.Aree": {
     "message": "Arii",
@@ -107,10 +87,6 @@
     "message": "FAQ",
     "description": "Navbar item with label FAQ"
   },
-  "item.label.Video": {
-    "message": "Video",
-    "description": "Navbar item with label Video"
-  },
   "item.label.DDMRP": {
     "message": "DDMRP",
     "description": "Navbar item with label DDMRP"
@@ -118,5 +94,49 @@
   "item.label.CRM": {
     "message": "CRM",
     "description": "Navbar item with label CRM"
+  },
+  "item.label.Introduzione": {
+    "message": "Introducere",
+    "description": "Navbar item with label Introduzione"
+  },
+  "item.label.Video tutorial": {
+    "message": "Video tutorial",
+    "description": "Navbar item with label Video tutorial"
+  },
+  "item.label.Fluentis Fast Start": {
+    "message": "Fluentis Fast Start",
+    "description": "Navbar item with label Fluentis Fast Start"
+  },
+  "item.label.Avviamento Fluentis ERP": {
+    "message": "Pornire Fluentis ERP",
+    "description": "Navbar item with label Avviamento Fluentis ERP"
+  },
+  "item.label.Campi, funzionalità e pulsanti comuni": {
+    "message": "Câmpuri, funcționalități și butoane comune",
+    "description": "Navbar item with label Campi, funzionalità e pulsanti comuni"
+  },
+  "item.label.Configurazioni (Tabelle, Parametri...)": {
+    "message": "Configurări (Tabele, Parametri...)",
+    "description": "Navbar item with label Configurazioni (Tabelle, Parametri...)"
+  },
+  "item.label.Contatti": {
+    "message": "Contacte",
+    "description": "Navbar item with label Contatti"
+  },
+  "item.label.Piano dei conti": {
+    "message": "Plan de conturi",
+    "description": "Navbar item with label Piano dei conti"
+  },
+  "item.label.Articoli": {
+    "message": "Articole",
+    "description": "Navbar item with label Articoli"
+  },
+  "item.label.Dipendenti": {
+    "message": "Angajați",
+    "description": "Navbar item with label Dipendenti"
+  },
+  "title": {
+    "message": "academy",
+    "description": "The title in the navbar"
   }
 }

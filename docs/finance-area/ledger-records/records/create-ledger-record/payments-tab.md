@@ -29,7 +29,7 @@ la compensazione, nella terminologia contabile, può essere intesa sia come comp
 In questa form la compensazione è strettamente collegata alla situazione di partite facenti capo allo stesso sottoconto. 
 
 La compensazione cliente/fornitore può essere gestita  semplicemente effettuando un **pagamento** partite (chiusura semplice) "incrociato" (sia dare che avere - ad esempio tramite un giroconto -  andando a "compensarsi" a saldo in contabilità).
-In alternativa è possibile utilizzare due procedure più specifiche e flessibili: [**Compensazione partite**](/docs/finance-area/maturity-values/procedures/maturity-compensation.md) oppure [**Compensazione veloce**](/docs/finance-area/maturity-values/procedures/fast-compensation.md)
+In alternativa è possibile utilizzare due procedure più specifiche e flessibili: [**Compensazione partite**](/docs/finance-area/maturity-values/procedures/maturity-compensation) oppure [**Compensazione veloce**](/docs/finance-area/maturity-values/procedures/fast-compensation)
 :::
 
 Se in testata della registrazione è stato inserito un sottoconto intestatario, questo sarà riportato come filtro di ricerca nei campi relativi iniziali della scheda pagamenti: 

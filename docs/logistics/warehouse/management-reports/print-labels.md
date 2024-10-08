@@ -9,4 +9,4 @@ Nella griglia si possono inserire gli articoli per i quali si vuole stampare l'e
 
 Una volta inseriti gli articoli desiderati è possibile specificare il numero di etichette da stampare per ogni articolo e stampare dei report standard oppure personalizzati (previa mappatura nella gestione stampe). Nel caso si volesse stampare un report personalizzato è necessario scegliere lo stesso dal tabulato nei parametri di stampa.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form di stampa fare riferimento al seguente link [Anteprima e stampa](/docs/guide/operations-with-data/reports).
+Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form di stampa fare riferimento al seguente link [Anteprima e stampa](/docs/guide/common/operations-with-data/reports).

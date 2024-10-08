@@ -15,7 +15,7 @@ Ovo polje određuje raspon numeriranja dokumenta koji se unosi i automatski pred
 **Godina**: automatski se unosi trenutna godina, ali se može ručno mijenjati uvijek poštujući pravilo progresije između datuma i broja;    
 **Broj**: automatski se predlaže prema vrsti, ali se može ručno mijenjati uvijek poštujući pravilo progresije između datuma i broja;  
 **Datum unosa**: automatski se predlaže trenutni datum, ali se može ručno mijenjati uvijek poštujući pravilo progresije između datuma i broja;  
-**Dobavljač**: korištenjem [polja za pomoć](/docs/guide/operations-with-data/manual-entry-or-help-and-data-selection) ili[izravno](/docs/guide/operations-with-data/manual-entry-or-help-and-data-selection) unosom podataka.
+**Dobavljač**: korištenjem [polja za pomoć](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) ili[izravno](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) unosom podataka.
 
 Obrazac sadrži niz kartica:
 

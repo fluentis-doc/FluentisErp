@@ -10,7 +10,7 @@ sidebar_position: 1
 
 > **Modificare masivă**: butonul pemite, dupăa selectarea unei serii de articole care au nevoie de aceeași modificare, să îl introducă și să îl aplice masiv, fără a fi nevoie să modificați câte un articol la un moment dat.
 
-Fereastra **Caută articol** este imparțită în două secțiuni principale, zona de filtrare și grila cu rezultate (pentru o explicație generală a acestor două secțiuni, vă rugăm să consultați articolul [Căutare date în formurile de citire/scriere](/docs/guide/operations-with-data/data-search-in-read-only-forms) ).
+Fereastra **Caută articol** este imparțită în două secțiuni principale, zona de filtrare și grila cu rezultate (pentru o explicație generală a acestor două secțiuni, vă rugăm să consultați articolul [Căutare date în formurile de citire/scriere](/docs/guide/common/operations-with-data/data-search-in-read-only-forms) ).
 
 Cu ajutorul filtrelor puteți decide să vizualizați: un singur articol (de exemplu, căutarea cu codul articolului) sau mai multe articole care aparțin aceleiași clase de articole; articole cu aceleași caracteristici sau aceeași categorie merceologică (de exemplu, prin căutarea caracteristicii și a categoriei merceologice); articole cu același tip de articole sau cu aceeași nomenclatură; toate articolele care au același furnizor, statut sau versiune; în cazul materialelor achiziționate, este posibilă căutarea folosind codul furnizorului; iar în cele din urmă, puteți căuta articole folosind codul lor de bare.
 

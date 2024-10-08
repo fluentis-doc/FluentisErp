@@ -19,4 +19,4 @@ Ispis **Statistike Prodaje** nudi iste mogućnosti filtera, opcija, sortiranja i
 
 Izvještaj o **recikliranju** također prikazuje filtre već prikazane s drugim ispisima, uz dodatak novih: moguće je filtrirati po *Vrsti materijala*, *Vrsta partnera za reciklažu*, *Stanju elektroničkog računa*. Također je moguće *Grupirati* rezultate po *Materijalu*, *Klijentu* ili *Artiklu*. Kao i kod drugih ispisa, možete nastaviti s *Pregledom* ili pokretanjem *Ispisa* s pripadajućim gumbima na traci s alatkama.
 
-Više informacija o ovoj temi možete pronaći u člancima: [Pretraživanje podataka u obrascima samo za čitanje](/docs/guide/operations-with-data/data-search-in-read-only-forms) i [ Pregled i ispis](/docs/guide/operations-with-data/reports). 
+Više informacija o ovoj temi možete pronaći u člancima: [Pretraživanje podataka u obrascima samo za čitanje](/docs/guide/common/operations-with-data/data-search-in-read-only-forms) i [ Pregled i ispis](/docs/guide/common/operations-with-data/reports). 

@@ -34,7 +34,7 @@ Sadrži polja koja se odnose na analitičko računovodstvo. Prikazuju se centri 
 
 ### Priloženi dokumenti
 
-Prikazuje pojedinosti o eventualnom priloženom dokumentu (naziv, vrsta dokumenta, eventualne napomene, referenca na našu/vašu stranu). Za upute o tome kako priložiti dokument, pogledajte članak  [Priloži dokumente](/docs/guide/operations-with-data/attach-documents).
+Prikazuje pojedinosti o eventualnom priloženom dokumentu (naziv, vrsta dokumenta, eventualne napomene, referenca na našu/vašu stranu). Za upute o tome kako priložiti dokument, pogledajte članak  [Priloži dokumente](/docs/guide/common/operations-with-data/attach-documents).
 
 ### Zahtjev za ponudom
 

@@ -13,7 +13,7 @@ Za nastavak stvaranja računa prodaje, korisnik mora unijeti **obavezna** polja:
 
 - **Broj** svakom dokumentu dodjeljuje se broj prema numeraciji koju je odredio korisnik u tablici [Numeracija POS-a](/docs/configurations/tables/fluentis-numerations) i prema vrsti dokumenta koja sadrži numeraciju.
 
-- **Račun**, koristeći [pomoćno polje](/docs/guide/operations-with-data/manual-entry-or-help-and-data-selection) ili[izravno](/docs/guide/operations-with-data/manual-entry-or-help-and-data-selection) upisujući podatke.
+- **Račun**, koristeći [pomoćno polje](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) ili[izravno](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) upisujući podatke.
 
 
 **Ukupni iznosi**

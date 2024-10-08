@@ -7,7 +7,7 @@ La gestione si trova sul percorso **Qualità > Azioni correttive > Nuova Azione 
 
 
 :::important A cosa serve
-La gestione permette la registrazione di tutte le azioni da intraprendere per eliminare le cause delle non conformità, al fine di prevenirne la ripetizione.   
+Le azioni correttive sono misure adottate per risolvere problemi o deviazioni nei processi e prevenire il loro ripetersi. Vengono implementate dopo l’identificazione di un problema, analizzando la causa radice e attuando cambiamenti per migliorare le performance future. Sono fondamentali per mantenere e migliorare la qualità e l'efficienza nei processi aziendali.   
 Le *Azioni correttive* devono:   
 - essere appropriate agli effetti delle non conformità riscontrate;   
 - assicurare che le non conformità non si ripetano;   

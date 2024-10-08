@@ -8,7 +8,7 @@ sidebar_position: 5
 **La Tab Analitica** dedicata alla gestione a centro di costo/profitto (oggi centri aziendali), è presente solo se la causale ha almeno uno dei due flag di gestione Centri di costo / Centri di profitto.
 
 :::danger ATTENZIONE
-La gestione dei centri di costo / profitto (oggi centri aziendali) sarà differente a seconda che siano attivate o meno le **funzionalità avanzate per il controllo di gestione** all'interno della tabella [**Società**](/docs/configurations/tables/general-settings/company.md).
+La gestione dei centri di costo / profitto (oggi centri aziendali) sarà differente a seconda che siano attivate o meno le **funzionalità avanzate per il controllo di gestione** all'interno della tabella [**Società**](/docs/configurations/tables/general-settings/company).
 
 Queste funzionalità, recentemente sviluppate, permettono una gestione più evoluta e flessibile del controlling (ad esempio consentendo analisi di centri aziendali multi dimensionali e reversioni di qualsiasi centro uno sull'altro) rispetto al set di funzionalità standard, le quali sono comunque tutt'ora disponibili decidendo di non attivare il **flag GESTIONE CONTROLLING** all'interno della tabella di cui sopra.
 :::

@@ -31,7 +31,7 @@ Questa tab contiene Note libere, commerciali, tecniche o amministrative.
 Questa tab contiene:    
 **Divisa**: con la quale specificare i valori del Reclamo;      
 **Rif. Doc addebito**: contiene i documenti ricevuti per i quali è richiesto un addebito della non conformità;       
-**Totale reclamo**: questo campo è automatico se nei Parametri]è settato il flag **Ricalcolo automatico totali**, oppure è calcolato automaticamente dalla somma della gestione dei difetti; questo reclamo è la somma che ci contesta il cliente e, se tutta da accreditare, coinciderà con il Valore da accreditare;         
+**Totale reclamo**: questo campo è automatico se nei Parametri è settato il flag **Ricalcolo automatico totali**, oppure è calcolato automaticamente dalla somma della gestione dei difetti; questo reclamo è la somma che ci contesta il cliente e, se tutta da accreditare, coinciderà con il Valore da accreditare;         
 **Costo di gestione**: automatico se deciso nei Parametri, altrimenti imputabile manualmente; questo costo è il costo di gestione interno che spendo per la gestione del reclamo; esso sarà imputabile: alla mia azienda se responsabile della fornitura; al fornitore altrimenti responsabile della fornitura;       
 **Valore da accreditare**: è il valore che riconosciamo e da accreditare; la nota di accredito generata avrà il riferimento nel campo **Rif. Doc. Accredito** e apporrà il flag **Valorizzato**; il totale da accreditare è ciò che paghiamo al cliente, il costo di gestione è ciò che pago internamente.            
 

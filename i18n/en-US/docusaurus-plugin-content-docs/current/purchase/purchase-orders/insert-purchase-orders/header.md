@@ -3,13 +3,13 @@ title: Header
 sidebar_position: 2
 ---
 
-After selecting the mandatory data in the upper section, the user can continue entering the following data [manually](/docs/guide/operations-with-data/manual-entry-or-help-and-data-selection#manual-entry) or with the [field help](/docs/guide/operations-with-data/manual-entry-or-help-and-data-selection#entry-with-field-help).
+After selecting the mandatory data in the upper section, the user can continue entering the following data [manually](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection#manual-entry) or with the [field help](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection#entry-with-field-help).
 
 :::note Remember
 If the document is *created automatically*, for example from the search filter of [**Customer Orders**](/docs/sales/sales-orders/search-sales-orders), from the [**Automatic Order Creation**](/docs/purchase/purchase-orders/procedures/create-purchase-orders-from-purchase-requests) procedure, or from the [**Supplier Order Creation from Supplier Offer**](/docs/purchase/offer-request/order-creation) procedure, this data is retrieved from the *source document* from which it was generated.
 :::
 
-By entering the **Supplier**, all the specific data previously set in the [supplier record](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/accounting-data-intro) is automatically proposed. Among these, we recall: [*Currency*](/docs/configurations/tables/general-settings/currencies), *Exchange Rate*, *Currency Date*, [*Country*](/docs/guide/glossary/glossary-intro#country), *Language*, *Zone*, [*Shipping*](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/delivery), *Port*, *Packaging*, [Price List](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/price-list#price-lists) default and its validity period, [*Payments*](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/payments), *Discounts*, *Destination*, and *Carrier*. All these fields can be deleted or manually modified by the user.
+By entering the **Supplier**, all the specific data previously set in the [supplier record](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/accounting-data-intro) is automatically proposed. Among these, we recall: [*Currency*](/docs/configurations/tables/general-settings/currencies), *Exchange Rate*, *Currency Date*, [*Country*](/docs/guide/common/glossary/glossary-intro#country), *Language*, *Zone*, [*Shipping*](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/delivery), *Port*, *Packaging*, [Price List](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/price-list#price-lists) default and its validity period, [*Payments*](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/payments), *Discounts*, *Destination*, and *Carrier*. All these fields can be deleted or manually modified by the user.
 
 ### Optional Fields
 

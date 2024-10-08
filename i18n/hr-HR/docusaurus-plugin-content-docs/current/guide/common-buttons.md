@@ -52,10 +52,10 @@ sidebar_position: 6
 
 | <div style={{ width:'200px' }}>Funzione</div> | <div style={{ width:'400px' }}>Significato</div> |
 | --- | --- |
-|  [![](/img/neutral/common/save.png) Salva profilo](/docs/guide/operations-with-data/form-customization-and-profiles-management)  | Pulsante per per memorizzare le personalizzazioni delle form (dimensione/posizionamento dei campi) con un profilo utente per poterle impostare di default all'utente, a più utenti, o per ruoli di utenti (attraverso il pulsante ‘Diritti profilo'): se non sono memorizzate, queste sono perse alla chiusura della maschera stessa. |
+|  [![](/img/neutral/common/save.png) Salva profilo](/docs/guide/common/operations-with-data/form-customization-and-profiles-management)  | Pulsante per per memorizzare le personalizzazioni delle form (dimensione/posizionamento dei campi) con un profilo utente per poterle impostare di default all'utente, a più utenti, o per ruoli di utenti (attraverso il pulsante ‘Diritti profilo'): se non sono memorizzate, queste sono perse alla chiusura della maschera stessa. |
 | ![](/img/neutral/common/save-as.png) Salva come | Pulsante per salvare la form personalizzata con il nome inserito dall'utente. |
 | ![](/img/neutral/common/delete.png) Cancella profilo | Pulsante per cancellare il profilo selezionato. |
-|  [![](/img/neutral/common/image14.png) Diritti profilo](/docs/guide/operations-with-data/form-customization-and-profiles-management)  | Pulsante per aprire la gestione del profilo e assegnare i diritti in base al suo tipo: Per utente, Globale, Per utente/ruolo. |
+|  [![](/img/neutral/common/image14.png) Diritti profilo](/docs/guide/common/operations-with-data/form-customization-and-profiles-management)  | Pulsante per aprire la gestione del profilo e assegnare i diritti in base al suo tipo: Per utente, Globale, Per utente/ruolo. |
 
 
 
@@ -83,4 +83,4 @@ sidebar_position: 6
 
 | <div style={{ width:'200px' }}>Funzione</div> | <div style={{ width:'400px' }}>Significato</div> |
 | --- | --- |
-| ![](/img/neutral/common/document-manager.png)[Document manager](/docs/guide/operations-with-data/document-manager) | Pulsante che permette di allegare file esterni al documento in uso. |
+| ![](/img/neutral/common/document-manager.png)[Document manager](/docs/guide/common/operations-with-data/document-manager) | Pulsante che permette di allegare file esterni al documento in uso. |

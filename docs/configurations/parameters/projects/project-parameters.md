@@ -4,15 +4,76 @@ sidebar_position: 1
 ---
 ### Generale
 
-Questi parametri vengono utilizzati di default se nei documenti non vengono specificati i campi.
+Questi parametri vengono utilizzati di default se per il cliente o per il tipo documento non sono state effettuate configurazioni predefinite. 
 
-**Ore giornaliere**: è possibile indicare un orario di lavoro di default (riferirsi alla tabella Home > Orari di lavoro);
+**Unità di misura predefinita per il servizio**: UM di default da considerare per i servizi negli interventi. 
+
+**Unità di Misura Ore**: UM che identifica le Ore nell'area progetti. In caso di conversione tra UM sarà evidente se la quantità è riferita alle ore di lavoro. 
+
+**Unità di Misura Giorni**: UM che identifica i giorni nell'area progetti. In caso di conversione tra UM sarà evidente se la quantità è riferita ai giorni di lavoro. 
+
+**Ore giornaliere**: indica la durata standard della giornata lavorativa aziendale. Configurabile nella tabella [Orari di lavoro](/docs/configurations/tables/employee/working-hours)
+
+**Articolo**: articolo da utilizzare di default nei documenti in assenza di altre impostazioni. 
+
+**Turno di lavoro**: indicare il turno di lavoro principale per l'azienda. I valori sono configurabili nella tabella  [Turno di lavoro](/docs/configurations/tables/employee/working-hours) per ogni giorno della settimana. Il totale delle ore della giornata verrà considerato per effettuare la conversione tra Ore - Giorni. Se ad es. l'azienda prevede 7 ore giornaliere, 1 Giorno = 7 ore, e su questa base verranno fatte le conversioni ad es. nei servizi di un intervento. 
+
+**Tipo Attività**: tipologia di attività predefinita utilizzata ad es. nella creazione automatica di attività da intervento. 
+
+**Tipo Attività per Richiesta ferie/permessi**: tipologia di attività utilizzata in fase di conferma periodo ferie, per generare le relative dichiarazioni attività della risorsa. 
+
+**Tipo Sprint predefinito**: tipologia di sprint da utilizzare di default se non specificato per il tipo documento. 
+
+**Costo predefinito Materiali Progetto**: è possibile scegliere un valore tra Nessuno, Costo ultimo, Costo medio, Costo standard. Quanto configurato verrà utilizzato come regola di base per reperire il costo articolo inserito nella tab Materiali dei Progetti. 
+
+**Tipo Intervento pianificato predefinito**: tipologia di intervento pianificato da utilizzare di default, ad esempio nella creazione di nuovi pianificati direttamente da Wbs Assegnazione risorse. 
+
+**Tipo Richiesta intervento predefinita**: tipologia di richiesta intervento da utilizzare di default, ad esempio nella creazione di nuove richieste intervento da Wbs Assegnazione risorse. 
 
 **Turno di lavoro**: indica il turno di lavoro specifico, codificato nella tabella **Turno di Lavoro**.
 
 
 ### Interventi
 
+**Tipo intervento interno**: tipologia di intervento identificata come intervento interno
+
+**Tipo intervento esterno**: tipologia di intervento identificata come intervento esterno
+
+**Tipo Intervento predefinito** tipologia di intervento da utilizzare di default, ad es. nella generazione automatica di intervento da attività marcate come fatturabili. 
+
+**Dipendente predefinito**: dipendente da utilizzare di default se non presente altro valore 
+
+**Articolo righe fuori Orario nel Piano di fatturazione**: articolo da usare di default per inserire le righe risultate fuori orario nei calcoli del piano di fatturazione di un intervento. 
+
+**Articolo di storno Fattura di Anticipo**: articolo da usare di default per inserire le righe di storno delle fatture di acconto in una fattura generata dalla valorizzazione interventi. 
+
+**Descrizione riga di storno Fattura di Anticipo**: descrizione da usare di default per inserire le righe di storno delle fatture di acconto in una fattura generata dalla valorizzazione interventi. 
+
+**Proponi Fattura di Anticipo nei servizi**: se abilitato, ad ogni salvataggio intervento effettua una verifica se presente una fattura di anticipo associata al progetto indicato nel documento.
+Se il valore residuo della fattura di anticipo è sufficiente a coprire il servizio, verrà collegato in automatico alla riga di servizio dell'intervento nell'apposito campo. 
+
+**Proponi Fattura di Anticipo nei materiali**: se abilitato, ad ogni salvataggio intervento effettua una verifica se presente una fattura di anticipo associata al progetto indicato nel documento.
+Se il valore residuo della fattura di anticipo è sufficiente a coprire il valore del materiale, verrà collegato in automatico alla riga di materiale dell'intervento nell'apposito campo. 
+
+**Proponi Fattura di Anticipo nelle spese di viaggio**: se abilitato, ad ogni salvataggio intervento effettua una verifica se presente una fattura di anticipo associata al progetto indicato nel documento.
+Se il valore residuo della fattura di anticipo è sufficiente a coprire la spesa di viaggio, verrà collegata in automatico alla riga di spesa di viaggio dell'intervento nell'apposito campo. 
+
+## Impostazioni valorizzazione interventi
+**Utilizza riferimenti intervento**: se abilitato, nella fattura generata dalla valorizzazione interventi verrà inserita una riga descrittiva prima della riga dell'intervento, contenente la descrizione configurata dall'utente. 
+
+**Aggiungi data intervento nella riga del servizio** se abilitato, inserisce la data del servizio nel campo descrizione della riga relativa al servizio. 
+
+**Proponi descrizioni codice articolo**: se abilitato, inserisce la descrizione del codice articolo nel campo descrizione del servizio. 
+
+**Raggruppa per progetto**: se abilitato, effettua il raggruppamento per testata progetto nella fattura generata dalla valorizzazione interventi. 
+
+**Raggruppa per WBS**: se abilitato, effettua il raggruppamento per wbs progetto nella fattura generata dalla valorizzazione interventi. 
+
+**Raggruppa Servizi e Spese**: se abilitato, effettua il raggruppamento di servizi e spese nella fattura generata dalla valorizzazione interventi. 
+
+**Considera i giorni festivi come tempo extra**: se abilitato, nel piano di fatturazione verrà verificato se la giornata del servizio rientra in una delle date configurare come festive. Le date non lavorative possono essere configurate da Configurazione > Tabelle > Gestione Progetti > [Calendario giorni festivi](/docs/configurations/tables/project-management/not-working-days-calendar)
+
+**Priorità di inserimento delle informazioni**: indicare l'ordine con cui inserire i dati nelle fatture generate dalla valorizzazione interventi. 
 
 **PIANO DI FATTURAZIONE**
 

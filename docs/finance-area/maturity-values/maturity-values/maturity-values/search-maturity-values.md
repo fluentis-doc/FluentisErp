@@ -11,7 +11,7 @@ Per default vengono proposte le partite aperte (essendo all'apertura della masch
 
 Eseguendo la ricerca (comando **Ricerca** nella Ribbon Bar) saranno riportate le partite con tutte le informazioni relative.
 
-**Per i campi di dettaglio visualizzati si rinvia al  [Glossario](/docs/guide/glossary/glossary-intro).**
+**Per i campi di dettaglio visualizzati si rinvia al  [Glossario](/docs/guide/common/glossary/glossary-intro).**
 
 **CAMPI SPECIFICI DI TESTATA:**
 

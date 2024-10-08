@@ -13,7 +13,7 @@ Questi parametri propongono delle informazioni per singola risorsa:
 
 **Tipo attività**: indica la [Tipologia di attività](/docs/configurations/tables/project-management/activity-type) di default da proporre per questo operatore, con la relativa **Descrizione**;
 
-**Conto**: è possibile indicare un’anagrafica di default come destinatario dei documenti per questo operatore, con il relativo **Sottoconto** e la relativa **Descrizione**;
+**Conto**: è possibile indicare un’anagrafica di default da utilizzare come default nei documenti per questo operatore, con il relativo **Sottoconto** e la relativa **Descrizione**;
 
 **Progetto**: è possibile indicare un [Progetto](/docs/project-management/projects/search-projects-intro) collegato all’operatore.
 

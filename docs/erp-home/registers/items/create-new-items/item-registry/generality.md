@@ -3,6 +3,11 @@ title: Generalità
 sidebar_position: 1
 ---
 
+:::important A cosa serve
+Il tab Generalità contiene le informazioni principali e logistiche degli articoli, come il codice, la descrizione, l'unità di misura e altre classificazioni opzionali, tra cui categoria merceologica e natura dell’articolo.     
+Questo tab consente di definire ulteriori dettagli utili per la gestione e la tracciabilità degli articoli all'interno dei processi aziendali, facilitando l'organizzazione e la reportistica.
+:::
+
 All'interno di questo tab possono essere definiti i seguenti dati generali:
 
 **Data inserimento**: campo che viene compilato in automatico alla creazione dell'articolo, e che appunto indica la data di creazione dell'articolo;
@@ -29,7 +34,7 @@ All'interno di questo tab possono essere definiti i seguenti dati generali:
 
 **Fatturato vendite**: come per il fatturato acquisti, questa combo serve per la gestione dei sottoconti di ricavo per la vendita dell'articolo; 
 
-**Natura articolo**: è un campo che viene utilizzato per attribuire all'articolo alcune caratteristiche specifiche per poi essere utilizzato in alcune procedure particolari. Nella combo troviamo la lista delle varie nature che possiamo attribuire all'articolo (click per il [glossario](/docs/guide/glossary/glossary-intro#item-nature));
+**Natura articolo**: è un campo che viene utilizzato per attribuire all'articolo alcune caratteristiche specifiche per poi essere utilizzato in alcune procedure particolari. Nella combo troviamo la lista delle varie nature che possiamo attribuire all'articolo (click per il [glossario](/docs/guide/common/glossary/glossary-intro#item-nature));
 
 > **Attrezzatura/Utensile**: l’articolo di questa natura è associabile all’anagrafica degli strumenti di misura e delle attrezzature presenti nelle fasi dei cicli di lavorazione.
 > **Macchina/Impianto**: questa natura è associabile all’anagrafica delle macchine;
@@ -61,4 +66,4 @@ Le condizioni per ottenere l'avviso che l'articolo sta per esaurire, nei documen
 
 **Diritti d'autore**: se attivo, indica che l'articolo è soggetto a diritti d’autore/royalties e sarà considerato nella [Gestione royalties](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/agent-registry/royalties/).       
 
-Per maggiori informazioni sulle modalità di inserimento e selezione dati all'interno delle form si rimanda all'articolo [Inserimento e selezione dati](/docs/guide/operations-with-data/manual-entry-or-help-and-data-selection).
+Per maggiori informazioni sulle modalità di inserimento e selezione dati all'interno delle form si rimanda all'articolo [Inserimento e selezione dati](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection).

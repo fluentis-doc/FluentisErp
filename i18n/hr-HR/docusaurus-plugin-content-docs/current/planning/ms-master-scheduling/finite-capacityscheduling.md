@@ -1,6 +1,6 @@
 ---
 title: Schedulazione a capacità finita
-sidebar_position: 2
+sidebar_position: 3
 ---
 
 La schedulazione di produzione a capacità finita permette di capire quanto lavoro può essere espresso in un periodo di tempo definito, considerando le limitazioni di alcune risorse. L’obiettivo finale è quello di garantire la maggiore efficienza dei ritmi produttivi lungo tutta la filiera interna allo stabilimento, ottimizzando i tempi e riducendo i costi dei centri di lavoro.  

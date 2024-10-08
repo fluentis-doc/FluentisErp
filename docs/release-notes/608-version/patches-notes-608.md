@@ -3,6 +3,27 @@ title: Patch notes Versione 608
 sidebar_position: 2
 ---
 
+### Patch 608.1-0054 - 03/10/2024
+> - SH - Documentale - Corretto bug in caricamento di più documenti in modalità cartella in quanto andava in disconnessione il programma (3705/24, 2202/24 )
+> - CO - revisione calcolo mensilizzazione dell’elaborazione periodi (#TT04072/24)
+> - nel calcolo dei totali fatture di acquisto, gestione delle aliquote iva con flag ‘Reverse charge’ per gestione fatture miste (#TT03198/24)
+> - SD – Stampa Bilancino di fatturazione – Corretti bug subreport ricalcolo iva e spese. (#TT03249/24)
+> - SD - modificato il messaggio all'apertura dell'ordine cliente dal quale è stato generato un progetto inserito in un ordine fornitore (ticket 03608/24)
+> - MES – Ottimizzata la procedura registrazione segnalazioni. (#TT04017/24)
+> - SH - Fix extradata filter form columns are loaded from profile. Skip column if not valid (TT01838/24)
+> - SCM – Nella procedura di Creazione automatica ordini fornitore da Ordini clienti è ora possibile utilizzare anche articoli la cui descrizione supera 200 caratteri (#TT04031/24).
+
+### Patch 608.1-0053 - 20/09/2024
+> - WM - Aggiunto la variante nel report ValorizatedBOM e ValorizatedItemCostBOM della valorizzazione distinta base
+> - SCM, SCS – Corretto errore nella ripartizione delle spese con flag Ripartita inserite nei riepiloghi dei documenti (#TT02336/24).  
+> - SH - Update IBAN structure check for country AE (United Arab Emirates) ( TT03985/24)
+> - CO - revisione cancellazione registrazioni rimanenze nelle chiusure infrannuali (#TT03976/24)
+> - SH - Creazione Documenti allegati docx - miglioramento Anteprima (#TT03095/24)
+> - CO – Aggiunta la Colonna costo variante nel calcolo costi. Questa riporta i valori presenti nel tab varianti dell’anagrafica articolo. (#TT03057/24 - #TT03043/24)
+> - FI - Stampa Libro Cespiti con esercizio non solare ( TT03716/24)
+> - WM – bug fix in item matrix dimension (TT00607/24)
+> - SH - Minimize ObjectLoadRequest for Extensions.
+
 ### Patch 608.1-0052 - 12/09/2024
 > - PM: corretta data spese inserite automaticamente nella dichiarazione attività generata dal cambio stato approvato dell'intervento (#TT03640/24)
 > - MS – Corretto bug nella Pianificazione generale; ora la schedulazione con il flag “Considera anche le alternative dei materiali” funziona correttamente (#TT00306/24).

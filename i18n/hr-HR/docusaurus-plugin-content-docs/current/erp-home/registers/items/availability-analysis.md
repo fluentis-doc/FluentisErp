@@ -59,7 +59,7 @@ U mreži detalja, klikom na odabrani redak u mreži za skladište, prikazat će 
 
 ![](/img/it-it/erp-home/registers/items/availability-analysis/image10.png)
 
-Što se tiče opisa zajedničkih funkcionalnosti koje se pojavljuju u svim obrascima, prisutnih u traci s opcijama, upućuje se na članak o [Zajedničkim gumbima](/docs/guide/common-buttons), posebno za funkcionalnosti ispisa također se upućuje na članak o [Pregledu i Ispisu](/docs/guide/operations-with-data/reports).
+Što se tiče opisa zajedničkih funkcionalnosti koje se pojavljuju u svim obrascima, prisutnih u traci s opcijama, upućuje se na članak o [Zajedničkim gumbima](/docs/guide/common/common-buttons), posebno za funkcionalnosti ispisa također se upućuje na članak o [Pregledu i Ispisu](/docs/guide/common/operations-with-data/reports).
 
 
 *Poseban gumb*:

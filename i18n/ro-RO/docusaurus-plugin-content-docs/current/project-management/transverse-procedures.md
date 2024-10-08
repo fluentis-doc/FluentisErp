@@ -3,7 +3,7 @@ title: Pianificazione a calendario delle risorse
 sidebar_position: 9
 ---
 
-Vedi anche [Configurazione Calendario](/docs/guide/status-bar/status-bar-intro) 
+Vedi anche [Configurazione Calendario
 
 Dopo la configurazione del calendario, si può procedere con la sincronizzazione del calendario per l'utilizzo della **Gestione Progetti** e quindi la **Pianificazione a calendario delle risorse**:
 

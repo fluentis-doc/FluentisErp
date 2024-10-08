@@ -1,23 +1,43 @@
 ---
-title: Impostazioni
+title: Introduzione
 sidebar_position: 1
 ---
 
-Il modulo si trova nell'area *Acquisti > Fatture di acquisto*.
+Il modulo si trova nell'area **Acquisti > Fatture di acquisto**.   
+
+Le fatture di acquisto sono documenti fiscali emessi dai fornitori a fronte della fornitura di beni o servizi all'azienda e rappresentano la base per la registrazione contabile e il pagamento dei fornitori. Queste fatture contengono informazioni come i dettagli del fornitore, la descrizione dei beni o servizi acquistati, le quantità, i prezzi, le condizioni di pagamento e gli eventuali riferimenti a ordini di acquisto o DDT.
+
+**Flusso operativo**
+
+Le fatture di acquisto possono essere inserite manualmente o generate automaticamente evadendo documenti esistenti, come:
+
+- *Ordini di acquisto*: la fattura può essere generata automaticamente dall'evasione di uno o più ordini di acquisto, cliccando il pulsante [Evasione da ordine](/docs/purchase/purchase-invoices/insert-purchase-invoice/header-procedures/execution-from-purchase-order) dall'interno di una nuova fattura.   
+- *DDT di acquisto*: l'evasione da DDT può essere effettuata sia dall'interno della fattura, mediante il pulsante *Evasione DDT*, sia dalla procedura di [valorizzazione DDT di Acquisto](/docs/purchase/purchase-invoices/procedures/purchase-delivery-note-valorization) da cui è possibile effettuare anche un ripristino delle operazioni. 
+- *Rientro di conto lavoro*: la procedura di *Valorizzazione DDT di rientro* consente di generare la fattura evadendo uno o più rientri di conto lavoro.   
+- *Ricevimento merce*: la fattura può essere creata anche da un *Ricevimento merci* attraverso la [Creazione fatture da Ricevimento merci](/docs/purchase/purchase-invoices/procedures/create-purchase-invoices-from-goods-receipt).    
+
+La gestione delle fatture è strettamente integrata con il magazzino e i DDT, consentendo di caricare automaticamente gli articoli e di generare fatture raggruppando uno o più DDT a seconda delle esigenze. La contabilizzazione automatica delle fatture permette poi di aggiornare i registri contabili e finanziari e garantendo la coerenza con il bilancio aziendale. 
+
+
+**Funzionalità principali**
+
+- Gestione di più tipi di fatture e numerazioni: Fluentis consente di classificare e filtrare le fatture in base alla loro natura commerciale, garantendo una gestione ottimizzata di diversi flussi di fornitura.
+- Prezzi e sconti da listini: Il sistema permette di recuperare automaticamente prezzi e sconti dai listini fornitore riducendo gli errori e accelerando il processo di fatturazione.
+- Inserimento di spese e note: Le fatture possono includere spese o sconti legati ai beni scaricati dal magazzino, e ogni articolo può avere note specifiche per una maggiore personalizzazione della fattura.
+- Articoli non codificati e varianti: È possibile inserire in fattura articoli non presenti a sistema, inserendo solo una descrizione, così come gestire varianti di articoli con attributi aggiuntivi.
+- Visualizzazione e modifica delle scadenze: Nel riepilogo della fattura è possibile visualizzare i dettagli di pagamento e scadenza, con opzioni per modificarli, ricalcolarli o raggrupparli in modo flessibile.
+- Gestione lotti e magazzino: i codici lotti e serial number possono essere codificati automaticamente o manualmente. 
+- Stampa personalizzabile: Fluentis consente la stampa delle fatture, con layout personalizzabili, includendo tutti i dettagli commerciali e contabili richiesti.
+
+**Benefici operativi**
+
+Grazie alla gestione integrata delle fatture in Fluentis, è possibile automatizzare molte fasi del processo di fatturazione, riducendo il rischio di errori, migliorando la gestione delle scadenze e ottimizzando la sincronizzazione tra i moduli di acquisti, magazzino e amministrazione. Questo assicura un flusso operativo più efficiente e una migliore visibilità delle performance aziendali.
+
+**Impostazioni**
 
 Prima di utilizzare il modulo, è necessario compilare i seguenti parametri e tabelle: 
 > - [Numerazioni](/docs/configurations/tables/fluentis-numerations)    
 > - [Fatturato acquisti](/docs/configurations/tables/purchase/purchase-turnover/)
 > - [Tipi fatture acquisto](/docs/configurations/tables/purchase/purchase-invoices-type)
 > - [Parametri fatture di acquisto](/docs/configurations/parameters/purchase/purchase-invoices-parameters)
-
-Permette:
-- di seguire i documenti della merce spedita/fatturata dai fornitori;
-- la creazione automatica delle fatture dal ricevimento merci;
-- la creazione automatica della fattura da ordini fornitori;
-- l'esecuzione automatica del carico della merce in magazzino;
-- la valorizzazione della merce presente nel magazzino;
-- l'associazione di varianti esistenti con ulteriori attributi al livello dell'articolo;
-- la verifica di conformità dei termini della fattura ricevuta con quelli dell'ordine fornitore;
-- la prenotazione del carico dei lotti direttamente dalla fattura di acquisto;
-- la contabilizzazione automatica delle fatture.
+> - [Parametri di raggruppamento fatture di acquisto](/docs/configurations/parameters/purchase/invoice-grouping/)

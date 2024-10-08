@@ -5,6 +5,14 @@ sidebar_position: 1
 
 ### Liste di prelievo/Packing list (versione WPF)
 
+:::important A cosa serve
+La Lista Prelievo UDC / Packing List di Fluentis offre un metodo innovativo per gestire il prelievo di unità di carico, in contrapposizione alla tradizionale procedura di picking che si basa su singoli articoli. Questa funzionalità è particolarmente utile quando si desidera spedire merce a un cliente, consentendo di raggruppare articoli all'interno di unità di carico predefinite.
+
+La creazione di una nuova lista di prelievo richiede semplicemente l'inserimento di informazioni come la tipologia del picking, il magazzino e l'utente. Gli operatori possono quindi selezionare le unità di carico già create e caricate a magazzino direttamente nel tab "Dettaglio unità di carico", facilitando così l'associazione degli articoli da spedire con l'ordine cliente corrispondente. Grazie al pulsante "Help UDC", gli utenti possono facilmente navigare tra le unità di carico disponibili, rendendo il processo di selezione rapido ed efficiente.
+
+Le liste di prelievo UDC non solo semplificano la preparazione delle spedizioni, ma consentono anche di generare direttamente documenti di trasporto come DDT e fatture, contenenti tutte le informazioni necessarie riguardo gli articoli e le unità di carico coinvolte nella spedizione. Questa integrazione garantisce una gestione più fluida ed efficace nel processo di logistica e spedizioni
+:::
+
 Con le **liste di prelievo** è possibile creare un picking di unità di carico, al contrario del picking normale che è composto da articoli singoli.         
 Dalla maschera di **Ricerca** è possibile ricercare le liste precedentemente inserite.     
 Per creare una nuova Lista cliccare **Nuovo**.   
@@ -29,6 +37,11 @@ Tornando nella maschera di *Ricerca Liste di prelievo*, la Lista sarà presente 
 Per tutte le informazioni su come utilizzare questa form da WMS consultare le [Liste di prelievo/Packing list](/docs/logistics/wms/udc/loading-unit-picking-list)
 
 ### Liste di prelievo/Packing list (versione WMS)
+
+:::important A cosa serve
+La funzione Liste di Prelievo / Packing List del WMS di Fluentis consente di creare un picking di unità di carico, facilitando la preparazione delle spedizioni direttamente collegate agli ordini cliente. 
+Grazie a questo strumento, gli utenti possono selezionare, modificare e gestire efficacemente le UDC, ottimizzando il processo di prelievo e assicurando una corretta documentazione per le spedizioni.
+:::
 
 Questa procedura è utilizzata per la creazione di liste di prelievo con unità di carico.     
 
@@ -59,8 +72,9 @@ Per tutte le informazioni su come codificare i barcode da leggere nel campo **Co
 
 ### Conferma trasferimento UDC (versione WMS)
 
+:::important A cosa serve
 Questa procedura è utilizzata per ricercare e confermare una [Lista di Trasferimento UDC](/docs/logistics/udc/loading-unit-packing-lists/transfer-unit) esistente per effettuare il movimento di magazzino.
-
+:::
 
 La form **Conferma trasferimento UDC** viene utilizzata per confermare una [Lista di Trasferimento UDC](/docs/logistics/udc/loading-unit-packing-lists/transfer-unit) esistente per effettuare il movimento di magazzino.
 
@@ -81,7 +95,9 @@ Per tutte le informazioni su come codificare i barcode da leggere nel campo **Co
 
 ### Conferma prelievo UDC (versione WMS)
 
+:::important A cosa serve
 La form **Conferma prelievo UDC** viene utilizzata per ricercare e confermare una [Lista di prelievo UDC / Packing list](/docs/logistics/udc/loading-unit-packing-lists/transfer-unit) esistente per effettuare il movimento di magazzino di scarico.
+:::
 
 Nel filtro è possibile ricercare la lista di interesse per: data, numero e magazzino, inoltre, anche possibile confermarla direttamente con il relativo pulsante **Conferma** senza doverla aprire.       
 Altrimenti, è possibile entrare nella lista tramite il pulsante **Apri** e visualizzare le unità di carico non ancora scaricate e quelle già scaricate all’interno dei relativi tab: unità di carico non scaricate e scaricate, per poi poterla confermarla e creare il movimento di magazzino.

@@ -19,4 +19,6 @@ Per inserire una nuova causale, cliccare sul pulsante **Nuova**.
 [**VIDEO TUTORIALS SULLE CAUSALI CONTABILI**](/docs/video/finance/intro.md)
 :::
 
-Per dettagli sul funzionamento comune delle form fare riferimento al link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+:::tip[Maggiori informazioni]
+Consultare la pagina sull' [**Inserimento di una nuova causale**](/docs/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates/header)
+:::

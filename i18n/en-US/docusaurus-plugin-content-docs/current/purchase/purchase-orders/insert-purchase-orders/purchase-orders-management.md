@@ -12,7 +12,7 @@ This field determines the numbering range of the document being entered and auto
 **Year**: automatically enters the current year, but can be manually changed, always respecting the progression rule between date and number.  
 **Number**: automatically proposed based on the type, but can be manually changed, always respecting the progression rule between date and number.  
 **Entry Date**: automatically proposes the current date, but can be manually changed, always respecting the progression rule between date and number.  
-**Supplier**: can be entered using the [field help](/docs/guide/operations-with-data/manual-entry-or-help-and-data-selection#using-field-help) or [manually](/docs/guide/operations-with-data/manual-entry-or-help-and-data-selection#manual-entry).
+**Supplier**: can be entered using the [field help](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection#using-field-help) or [manually](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection#manual-entry).
 
 The form contains several tabs:
 

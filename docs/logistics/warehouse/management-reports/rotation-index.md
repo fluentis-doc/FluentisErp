@@ -21,4 +21,4 @@ Per visualizzare i risultati riguardante l'indice di rotazione è necessario set
 
 Dopo l'inserimento dei parametri desiderati è possibile stampare il report standard oppure personalizzato (previa mappatura nella gestione stampe). Nel caso si volesse stampare un report personalizzato è necessario scegliere lo stesso dal tabulato nei parametri di stampa.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form di stampa fare riferimento al seguente link [Anteprima e stampa](/docs/guide/operations-with-data/reports).
+Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form di stampa fare riferimento al seguente link [Anteprima e stampa](/docs/guide/common/operations-with-data/reports).

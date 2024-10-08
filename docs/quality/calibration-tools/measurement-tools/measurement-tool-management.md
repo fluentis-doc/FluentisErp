@@ -102,7 +102,8 @@ Le informazioni gestite sono:
 >> **Precisione**: è la *Precisione di misura* minima.   
 >> **Limiti**: sono i *Limiti di accettabilitò* dello *Strumento di misura* per poterlo utilizzare; esempi: eventuali limiti di precisione, ambienti dove non utilizzarlo, ecc.   
 >> **Ubicazione fornitore**: è la ragione sociale del *Fornitore* dove è ubicato lo *Strumento di misura*.   
->> **Strumento campione**: indica che lo *Strumento di misura* viene utilizzato come *Strumento campione per una determinata *Categoria strumento*.   
+>> **E' uno Strumento primario**: indica che lo *Strumento di misura* visualizzato viene utilizzato per la taratura di altri strumenti.   
+>> **Strumento primario**: è lo *Strumento di misura* che viene utilizzato per effettuare la taratura dello strumento visualizzato.   
 >
 > **Funzione di utilizzo**: expander dove è possibile inserire:   
 >

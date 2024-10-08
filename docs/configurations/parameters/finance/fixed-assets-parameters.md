@@ -3,6 +3,12 @@ title: Parametri cespiti
 sidebar_position: 4
 ---
 
+:::tip[FAst Start]
+La tabella è interessata dalla procedura di [**Fast Start**](/docs/guide/fast-start)
+
+Nel caso in cui si intenda configurare manualmente fare riferimento alla check list della pagina linkata
+:::
+
 I parametri del modulo Cespiti si trovano in **Parametri > Amministrativa**.
 
 *Pulsanti specifici*:

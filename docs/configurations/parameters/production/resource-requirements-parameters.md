@@ -37,7 +37,26 @@ In questa sezione l'utente può impostare il tipo richiesta d'acquisto e il tipo
 **Magazzini di schedulazione ordini**  
 La griglia è la semplice visualizzazione della lista di magazzini si cui deve essere controllata la disponibilità. Questa lista viene impostata nella form chiamata *Calcolo disponibilità* che si trova tra le Utilità del gestionale.
 
-**Parametri Gantt**
+**Parametri Gantt**   
 Permette di inserire dei parametri di default per la gestione della form del Gantt (*Tipo simulazione Gantt* e *Tipo simulazione Snapshot*).
+
+**Parametri Calcolo Fattibilità**   
+Permette di inserire le indicazioni per l'attivazione e la visualizzazione della Fattibilità delle Fasi di lavorazione.   
+Per la versione di prodotto attuale l'unica attivazione possibile è nelle gestioni di *Sequenza fasi*.   
+E' possibile attivare il controllo della fattibilità:   
+- sui Materiali da utilizzare impostando la spunta su *Considera Materiali*;   
+- sulle Fasi di produzione impostando la spunta su *Considera Fasi precedenti*.   
+
+Si possono impostare dei colori che evidenziano le diverse informazioni sulle disponibilità dei materiali da utilizzare:   
+- *Materiale non disponibile*;   
+- *Materiale disponibile parzialmente*;   
+- *Materiale disponibile*;   
+- *Materiale non necessario*;   
+
+e sullo stato di avanzamento delle fasi di lavoro precedenti alla fase analizzata e alla fase analizzata:   
+- *Fase precedente non iniziata*;   
+- *Fase precedente iniziata*;   
+- *Fase precedente completata*;   
+- *Fase iniziata*.   
 
 Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).

@@ -47,8 +47,10 @@ E' il codice magazzino associato all'unità logistica.
 
 Ad eccezione della fabbrica, ogni unità logistica è identificata univocamente dal magazzino ad essa associato (scelta effettuata per aumentare il grado di compatibilià con applicazioni esterne).
 
-Alla fabbrica invece possono essere associati più magazzini e questi sono i soli che verranno presi in considerazone dal sistema di pianificazione, quindi altri magazzini associati alla fabbrica che non sono presenti in questa tabella verranno ignorati dalla procedura di pianificazione Ddmrp.
+Alla fabbrica invece possono essere associati più magazzini e questi sono i soli che verranno presi in considerazone da parte del sistema Ddmrp per gli articoli buffer di fabbrica, quindi altri magazzini usati in fabbrica che non sono presenti in questa tabella non devono contenere buffers Ddmrp poichè verrebbero ignorati dal calcolo NFP.
 
+I magazzini di questa tabella che non sono contrassegnati di fabbrica, verranno ignorati dalla procedura MRP, in quanto sono dei magazzini di distribuzione merce e non di produzione, ed andranno pianificati singolarmente tramite il calcolo della posizione di flusso netta (NFP), sempre dal menù di esecuzione dell'MRP.
+ 
 In Fluentis Ddmrp ci si riferirà all'unità logistica Fabbrica tramite un codice magazzino vuoto, proprio perchè è l'unica unità logistica alla quale sono associabili più magazzini e quindi si perde la relazione di biunivocità tra magazzino ed unità logistica.
 
 **Cliente**

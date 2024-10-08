@@ -3,6 +3,10 @@ title: Scarico articolo
 sidebar_position: 2
 ---
 
+:::important A cosa serve
+La funzione di **scarico articolo** è progettata per facilitare il prelievo degli articoli da un magazzino. Utilizzando il codice a barre, l'operatore può selezionare l’articolo e l’ubicazione da cui effettuare il prelievo, inserire la quantità da scaricare e, se necessario, il lotto specifico. Questa procedura genera il movimento di scarico di magazzino, aggiornando le giacenze e garantendo la corretta registrazione dei flussi di merci.
+:::
+
 Questa procedura è utilizzata per creare un movimento di scarico di un articolo da una determinata ubicazione.        
 Nel campo **Codice barcode**, l’operatore dovrà solamente leggere il Barcode dell’articolo, poi quello dell’ubicazione da cui vuole scaricarlo.        
 Successivamente dovrà solo inserire la quantità da movimentare, ed una volta confermato verrà creato anche il relativo movimento di magazzino.        

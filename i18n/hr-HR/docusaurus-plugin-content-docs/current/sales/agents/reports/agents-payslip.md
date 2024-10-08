@@ -11,4 +11,4 @@ U odjeljku **Ispiši proviziju od** se vrši odabir tipa dokumenta koji će se u
 
 Treba napomenuti opciju ispisa s detaljima po stavkama: ova verzija izvješća može biti korisna za provjeru ispravnosti provizija koje je sustav unio te za otkrivanje pogrešaka u postavkama agenata u evidenciji.
 
-Više detalja o ovom temu možete pronaći u člancima: [Pretražite podatke u obrascima samo za čitanje](/docs/guide/operations-with-data/data-search-in-read-only-forms) i [Pregled i ispis](/docs/guide/operations-with-data/reports) 
+Više detalja o ovom temu možete pronaći u člancima: [Pretražite podatke u obrascima samo za čitanje](/docs/guide/common/operations-with-data/data-search-in-read-only-forms) i [Pregled i ispis](/docs/guide/common/operations-with-data/reports) 

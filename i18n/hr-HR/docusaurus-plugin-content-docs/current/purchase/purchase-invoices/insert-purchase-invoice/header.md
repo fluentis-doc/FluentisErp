@@ -5,7 +5,7 @@ sidebar_position: 2
 
 ## Zaglavlje
 
-Nakon odabira obveznih podataka u gornjem dijelu, korisnik može nastaviti [ručno](/docs/guide/operations-with-data/manual-entry-or-help-and-data-selection) unos sljedećih podataka ili koristiti [pomoćno polje](/docs/guide/operations-with-data/manual-entry-or-help-and-data-selection) ili, prema odabranim postupcima, aplikacija *automatski* popunjava polja.
+Nakon odabira obveznih podataka u gornjem dijelu, korisnik može nastaviti [ručno](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) unos sljedećih podataka ili koristiti [pomoćno polje](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) ili, prema odabranim postupcima, aplikacija *automatski* popunjava polja.
 
 :::note NAPOMENA
 Ako se dokument *kreira automatski*, ovi podaci preuzimaju se iz *izvornog dokumenta* iz kojeg je generiran.
@@ -13,9 +13,9 @@ Ako se dokument *kreira automatski*, ovi podaci preuzimaju se iz *izvornog dokum
 
 Unoseći **Dobavljača** automatski se *predlažu* svi specifični podaci iz kartice **Zaglavlje**, prema prethodno postavljenim podacima u [šifarnik dobavljača](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/accounting-data-intro) u odgovarajućim poljima adrese i *odjeljcima*:  
 
-- **Valuta**: [Valuta](/docs/guide/glossary/glossary-intro#currency), [Tečaj](/docs/guide/glossary/glossary-intro#currency-exchange), [Datum valute](/docs/guide/glossary/glossary-intro#currency-date).
-- **Država**: [Država](/docs/guide/glossary/glossary-intro#country), [Dostava](/docs/guide/glossary/glossary-intro#language), [Zona](/docs/guide/glossary/glossary-intro#zone)
-- **Dostava**: [Način dostave](/docs/guide/glossary/glossary-intro#shipment), [Luka](/docs/guide/glossary/glossary-intro#carriage), [Pakiranje](/docs/guide/glossary/glossary-intro#packing), [Cjenik](/docs/guide/glossary/glossary-intro#sales-price-list) i njegov [vremenski interval važenja](/docs/guide/glossary/glossary-intro#validity-date)
+- **Valuta**: [Valuta](/docs/guide/common/glossary/glossary-intro#currency), [Tečaj](/docs/guide/common/glossary/glossary-intro#currency-exchange), [Datum valute](/docs/guide/common/glossary/glossary-intro#currency-date).
+- **Država**: [Država](/docs/guide/common/glossary/glossary-intro#country), [Dostava](/docs/guide/common/glossary/glossary-intro#language), [Zona](/docs/guide/common/glossary/glossary-intro#zone)
+- **Dostava**: [Način dostave](/docs/guide/common/glossary/glossary-intro#shipment), [Luka](/docs/guide/common/glossary/glossary-intro#carriage), [Pakiranje](/docs/guide/common/glossary/glossary-intro#packing), [Cjenik](/docs/guide/common/glossary/glossary-intro#sales-price-list) i njegov [vremenski interval važenja](/docs/guide/common/glossary/glossary-intro#validity-date)
 
 *Ostala opcionalna polja*:
 
@@ -44,9 +44,9 @@ Ovaj prijenos vrijedi samo ako je faktura izdana iz samo jedne otpremnice.
 
 **Početne bilješke**: ponovno će se predložiti informacije iz narudžbenice u slučaju [Izuzimanje iz narudžbe](/docs/purchase/purchase-delivery-note/procedures/create-delivery-notes-from-orders).
 
-Može se unijeti i ručno pomoću [pomoćno polje](/docs/guide/operations-with-data/manual-entry-or-help-and-data-selection) kako bi se otvorile bilješke koje su već unesene u prethodnoj tablici koja se nalazi na putanji *Konfiguracija > Alati > Upravljanje kodiranim bilješkama*. Korisnik mora dvaput kliknuti na polje **Početne bilješke** kako bi otvorio *pomoćne kodirane napomene* i odabrao podatke ili desnim klikom miša otvoriti prozor kako bi naveo vrlo dugu napomenu. Ako polje sadrži vrijednost, boja pozadine polja se mijenja.
+Može se unijeti i ručno pomoću [pomoćno polje](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) kako bi se otvorile bilješke koje su već unesene u prethodnoj tablici koja se nalazi na putanji *Konfiguracija > Alati > Upravljanje kodiranim bilješkama*. Korisnik mora dvaput kliknuti na polje **Početne bilješke** kako bi otvorio *pomoćne kodirane napomene* i odabrao podatke ili desnim klikom miša otvoriti prozor kako bi naveo vrlo dugu napomenu. Ako polje sadrži vrijednost, boja pozadine polja se mijenja.
 
-**Projekt**: pomoću [pomoćnog polja](/docs/guide/operations-with-data/manual-entry-or-help-and-data-selection) moguće je povezati dokument s projektom.
+**Projekt**: pomoću [pomoćnog polja](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) moguće je povezati dokument s projektom.
 
 Ovo udruživanje funkcionira samo na razini zaglavlja članka.
 

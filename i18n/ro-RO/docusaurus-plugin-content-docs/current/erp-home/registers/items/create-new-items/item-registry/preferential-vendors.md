@@ -35,7 +35,7 @@ Permite inserarea datelor specifice furnizorului implicit și a altor furnizori 
 **Ordin furnizor**: in questa sezione si andranno ad indicare per ogni singolo fornitore le informazioni relative agli ordini di acquisto già dettagliate sopra (U.M, blocco riga, data blocco, numero massimo di righe, valore massimo, % di tolleranza quantità ricevuta in eccesso/difetto);  
 **Producător**: în aceastăs secțiune se pot insera contul și descrierea producătorului materialului;   
 **Controale la acceptare**: reprezintă eventualele controale care trebuie efectuate la recepția materialului, înainte de utilizarea lui;  
-**Variantă**: reprezintă eventuala variantă a articolului, codificată anterior în tabelul [**Variante**](/erp-home/registers/items/create-new-items/item-registry/variants.md);  
+**Variantă**: reprezintă eventuala variantă a articolului, codificată anterior în tabelul **Variante**;  
 **Note**: reprezintă eventualele note relative la furnizor.
 
 ## Extra data

@@ -1,6 +1,6 @@
 ---
-title: Generalità
+title: Općenito
 sidebar_position: 1
 ---
 
-Per ogni anno di utilizzo devono essere impostati una serie di parametri per una corretta gestione del magazzino. Si tratta di parametri validi per tutti i magazzini della stessa società. 
+Za svaku godinu korištenja potrebno je postaviti niz parametara za ispravno upravljanje skladištem. Ovi parametri vrijede za sva skladišta iste tvrtke.

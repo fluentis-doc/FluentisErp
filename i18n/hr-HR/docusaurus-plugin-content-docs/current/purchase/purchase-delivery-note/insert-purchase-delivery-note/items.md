@@ -8,7 +8,7 @@ Na ovom je kartici potrebno unijeti sve podatke o artiklima.
 Za sve što nije detaljno opisano u ovom dokumentu o općenitom radu formi, molimo pogledajte slijedeći link [Funkcionalnosti, gumbe i zajednička polja](/docs/guide/common).
 
 
-Podaci se unose [ručno](/docs/guide/operations-with-data/manual-entry-or-help-and-data-selection) uz pomoć [pomoći u polju](/docs/guide/operations-with-data/manual-entry-or-help-and-data-selection) ili ih mogu predložiti povezane procedure.
+Podaci se unose [ručno](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) uz pomoć [pomoći u polju](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) ili ih mogu predložiti povezane procedure.
 
 
 ## Artikli 
@@ -33,7 +33,7 @@ Ako se izravno kreće s unosom članka, njegova *klasa*, *kod* i *vrsta retka - 
 
 **Bilješka o članku**: To su opisne bilješke koje se pojavljuju u ispisu dokumenta; ne utječe na računovodstvo i skladište.
 
-**Razred/Kod/Opis članka**: Mogu se unijeti [ručno](/docs/guide/operations-with-data/manual-entry-or-help-and-data-selection) ili u [pomoći u polju](/docs/guide/operations-with-data/manual-entry-or-help-and-data-selection) koja će predložiti sve povezane podatke unesene u Šifarnik artikla.
+**Razred/Kod/Opis članka**: Mogu se unijeti [ručno](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) ili u [pomoći u polju](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) koja će predložiti sve povezane podatke unesene u Šifarnik artikla.
 
 Nakon unosa članka, njegov će se *Opis* automatski preuzeti iz šifarnika. Ako članak ima *Varijante*, trebat će odabrati željenu varijantu iz padajućeg izbornika *Varijante*. 
 

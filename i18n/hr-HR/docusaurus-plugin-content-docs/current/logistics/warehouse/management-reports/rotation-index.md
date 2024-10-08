@@ -21,4 +21,4 @@ Za pregled rezultata indeksa rotacije potrebno je postaviti oznaku **Indeks rota
 
 Nakon unosa željenih parametara moguće je ispisati standardno izvješće ili prilagođeno izvješće (prethodno mapirano u upravljanju ispisima). Ako želite ispisati prilagođeno izvješće, potrebno je odabrati isto u kartici izvještajnih parametara.
 
-Za sve što nije detaljno opisano u ovom dokumentu o općem funkcioniranju obrazaca za ispis, pogledajte sljedeći link [Pregled i ispis](/docs/guide/operations-with-data/reports).
+Za sve što nije detaljno opisano u ovom dokumentu o općem funkcioniranju obrazaca za ispis, pogledajte sljedeći link [Pregled i ispis](/docs/guide/common/operations-with-data/reports).

@@ -3,6 +3,12 @@ title: Pesi/Dimensioni
 sidebar_position: 18
 ---
 
+:::important A cosa serve
+Il tab Pesi e Dimensioni dell'anagrafica articoli di Fluentis è essenziale per la gestione logistica degli articoli. In questa sezione, gli utenti possono specificare dettagli riguardanti le dimensioni e il peso degli articoli, facilitando le operazioni di magazzino e approvvigionamento.         
+Questo consente l'inserimento delle dimensioni (lunghezza, larghezza, altezza) usando l'unità di misura scelta, e calcola automaticamente il volume.           
+Inoltre, è possibile definire il peso lordo, netto e specifico, informazioni importanti per la pianificazione delle spedizioni e la gestione dei costi.
+:::
+
 Questo contiene diverse sezioni:
 
 **Dimensioni articolo**

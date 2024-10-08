@@ -1,17 +1,17 @@
 ---
-title: Parametri commesse acquisto
-sidebar_position: 3
+title: Parametri narudžbenice
+sidebar_position: 6
 ---
 
-I parametri delle commesse di acquisto permettono l'impostazione di base per gestire correttamente e secondo le specifiche richieste da ogni singola società.
+Parametri narudžbenice omogućuju pravilno upravljanje osnovnim postavkama prema specifikacijama koje zahtijeva svaka pojedinačna tvrtka.
 
-*Pulsante specifico*
-> **Ripristina parametri**: permette di ripristinare i parametri ai valori iniziali.
+*Specifični gumb*
+> **Povrati parametare**: omogućuje vraćanje parametara na početne vrijednosti.
 
-*Campi*:
+*Polja*:
 
-**Evasione obbligatoria**: quando è settato e l'utente si trova nella testata dell'ordine fornitore e passa al tab *Articoli* automaticamente si apre la form *Evasione da commessa*, perciò l'utente è obbligato ad evadere le commesse aperte per il fornitore specificato nell'ordine.
+**Obavezno ispunjenje**: kada je postavljeno i korisnik se nalazi u zaglavlju narudžbe dobavljača i ode na karticu *Artikli*, automatski se otvara obrazac *Ispunjenje narudžbe*, stoga je korisnik dužan ispuniti otvorene narudžbe za dobavljača navedenog u narudžbi.
 
-**Evasione articoli da commessa obbligatoria**: quando è settato e sono inseriti degli articoli nel tab *Articoli* viene controllato che l'articolo sia presente in una commessa del fornitore prescelto.
+**Ispunjavanje artikala iz obveznih narudžbi**: kada je ovo postavljeno i artikli su ubačeni u karticu *Artikli*, provjerava se da je artikl prisutan u narudžbi od izabranog dobavljača.
 
-**Quantità fissa**: quando è settato non può essere evasa la commessa per una quantità maggiore a quella inserita nella commessa.
+**Fiksna količina**: kada je postavljena, narudžba se ne može ispuniti za količinu veću od one koja je upisana u narudžbu.

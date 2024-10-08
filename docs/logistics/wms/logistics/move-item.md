@@ -3,6 +3,10 @@ title: Sposta articolo
 sidebar_position: 3
 ---
 
+:::important A cosa serve
+La funzione di **spostamento articolo** consente di trasferire un prodotto da una specifica ubicazione a un'altra all'interno del magazzino. Gli operatori possono inserire l'ubicazione di partenza e di destinazione, e specificare la quantità da movimentare. Nel caso di articoli gestiti a lotti, è possibile anche indicare il lotto da spostare. Questa procedura genera automaticamente il movimento di magazzino necessario per registrare sia lo scarico dalla vecchia ubicazione che il carico nella nuova.
+:::
+
 Questa procedura è utilizzata per creare un movimento di spostamento di un articolo da una specifica ubicazione ad un’altra. 
 La lettura della prima ubicazione nella form andrà a popolare il campo relativo all’ubicazione di partenza, mentre la seconda andrà a popolare l’ubicazione di destinazione.     
 Le successive letture di ubicazioni andranno a sovrascrivere solo l’ubicazione di destinazione.     

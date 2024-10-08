@@ -3,6 +3,14 @@ title: Scarico spunta
 sidebar_position: 5
 ---
 
+:::important A cosa serve
+La procedura di Scarico Spunta di Fluentis è un modulo specializzato che consente di gestire il processo di scarico solo per le righe che sono state effettivamente spuntate durante le operazioni di picking. Questa funzionalità garantisce un'ondata di efficienza e precisione, permettendo di selezionare e registrare solo gli articoli che sono stati confermati come prelevati da magazzino.
+
+Gli utenti possono ricercare i picking desiderati attraverso filtri personalizzati per individuare rapidamente quelli pertinenti. Una volta selezionati, l'interfaccia consente di creare le registrazioni di magazzino per le righe spuntate, mentre un riepilogo puntuale delle operazioni effettuate offre la possibilità di visualizzare dettagli e gestire eventuali rollback. 
+
+La procedura di scarico spunta non solo riduce il rischio di errori, ma ottimizza anche la produttività, assicurando che le operazioni di scarico siano eseguite in modo coerente e affidabile.
+:::
+
 :::note Nota
 A differenza dello [Scarico picking](/docs/logistics/picking/unload-picking), questa procedura permette di eseguire le stesse funzioni ma solamente per le righe spuntate.
 :::

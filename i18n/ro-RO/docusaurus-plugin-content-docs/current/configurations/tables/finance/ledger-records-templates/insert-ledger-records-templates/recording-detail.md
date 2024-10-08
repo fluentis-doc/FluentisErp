@@ -30,7 +30,7 @@ sidebar_position: 3
 **Grupare angajamente**: dacă este activ, se va activa și gruparea angajamentelor (deci nu gestiunea standard) la deschiderea/închiderea angajamentelor, cu ajutorul unui tab specific în înregistrarea contabilă.    
 **Creează grup**: dacă este activ și este activ și parametrul precedent, creează automat un grup de angajamente în grupare angajamente, în care însumează angajamentele înregistrării (de activat în șabloanele facturilor de achiziție/vânzări).
 **Grupare angajamente – tip plată**: reprezintă tipul de plată care va fi atribuit înregistrărilor grupărilor angajamentelor care au acest șablon.
-**Proiecte**: dacă este activ, va determina activarea câmpului *Proiect* în antetul înregistrării, împreună cu detaliile pentru asociera proiectelor la înregistrările contabile detaliate. ([Detalii](/docs/finance-area/ledger-records/records/create-ledger-record/header-and-total-movements-description#campo_progetto)).  
+**Proiecte**: dacă este activ, va determina activarea câmpului *Proiect* în antetul înregistrării, împreună cu detaliile pentru asociera proiectelor la înregistrările contabile detaliate.  
 **Centre de cost**: dacă este activ, se va activa tabul pentru gestionarea valorizării centrelor de cost în înregistrările contabile.  
 **Centre de profit**: dacă este activ, se va activa tabul pentru gestionarea valorizării centrelor de profit în înregistrările contabile.  
 **Mijloace fixe**: dacă este activ, se va activa tabul pentru gestionarea mijloacelor fixe în înregistrarea contabilă.  

@@ -11,6 +11,6 @@ Povezane teme:
 
  [Postavljanje podataka u rešetkama](/docs/form-navigator/data-grid-settings) 
 
- [Prilagodbe obrazaca](/docs/guide/operations-with-data/form-customization-and-profiles-management) 
+ [Prilagodbe obrazaca](/docs/guide/common/operations-with-data/form-customization-and-profiles-management) 
 
  [Prilagodbe uz pomoć Form Editora](/docs/form-navigator/form-editor) 

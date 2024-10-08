@@ -1,6 +1,6 @@
 ---
 title: Scritture di rettifica
-sidebar_position: 5
+sidebar_position: 6
 ---
 
 Siamo all'interno del modulo Chiusure infrannuali e selezioniamo la procedura ‘Scritture di rettifica'. La maschera consente di gestire separatamente le operazioni di rettifica che si possono eseguire contestualmente alla creazione di una nuova chiusura infrannuale.

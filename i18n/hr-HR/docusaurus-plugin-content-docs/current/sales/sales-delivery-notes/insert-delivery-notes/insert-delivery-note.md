@@ -13,7 +13,7 @@ Za nastavak stvaranja otpremnice, korisnik mora unijeti  **obavezna** polja:
 
 - **Broj** svakom dokumentu dodijeljen je broj prema numeraciji specificiranoj od strane korisnika u tablici [Numeracija otpremnica](/docs/configurations/tables/fluentis-numerations) i za tip dokumenta koji sadrži numeraciju. Također se pogledajte članak  [Parametri otpremnice](/docs/configurations/parameters/sales/dn-parameters) za specifične parametre za dobivanje brojeva.
 
-- **Klijent**, korištenjem [pomoćno polje](/docs/guide/operations-with-data/manual-entry-or-help-and-data-selection) ili [izravno](/docs/guide/operations-with-data/manual-entry-or-help-and-data-selection) unosom podataka ili korištenjem automatskog postupka, ako se odlučite kreirati dokumente putem [Izvršenja otpremnice iz narudžbenice klijenta](/docs/sales/sales-delivery-notes/insert-delivery-notes/header-procedures/execution-from-order).
+- **Klijent**, korištenjem [pomoćno polje](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) ili [izravno](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) unosom podataka ili korištenjem automatskog postupka, ako se odlučite kreirati dokumente putem [Izvršenja otpremnice iz narudžbenice klijenta](/docs/sales/sales-delivery-notes/insert-delivery-notes/header-procedures/execution-from-order).
 
 Obrazac sadrži niz kartica:
 

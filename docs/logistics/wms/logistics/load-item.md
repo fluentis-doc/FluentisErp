@@ -3,6 +3,10 @@ title: Carico articolo
 sidebar_position: 1
 ---
 
+:::important A cosa serve
+La funzione di **carico articolo** consente di registrare in modo preciso l’arrivo degli articoli nei magazzini. Attraverso questa procedura, gli operatori possono scansionare il codice a barre dell’articolo e dell’ubicazione, inserire la quantità da caricare e, nel caso di articoli gestiti a lotti, specificare anche il lotto corrispondente. Una volta confermata l'operazione, il movimento di magazzino viene creato automaticamente, assicurando una gestione efficace delle giacenze e una tracciabilità completa.
+:::
+
 Questa procedura è utilizzata per creare un movimento di carico di un articolo in una determinata ubicazione.        
 Nel campo **Codice barcode**, l’operatore dovrà solamente leggere il Barcode dell’articolo, poi quello dell’ubicazione in cui vuole caricarlo.           
 Successivamente dovrà solo inserire la quantità da movimentare, ed una volta confermato verrà creato anche il relativo movimento di magazzino.       

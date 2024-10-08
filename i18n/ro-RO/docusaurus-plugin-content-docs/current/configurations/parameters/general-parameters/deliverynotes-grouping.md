@@ -14,4 +14,4 @@ Acești parametri permit inserarea restricțiilor, și anume setare pentru fieca
 **Gestiune/Descriere**: reprezintă codul/descrierea depozitului care va fi propus implicit în form;
 **Șablon/Descriere**: indică codul/descrierea șablonului de gestiune care va fi propusă implicit în form;
 
-În paragrafele dedicate form-urilor [WMS](/docs/logistics/wms/intro), sunt indicați **Parametrii pentru gestionare încărcare/descărcare pe utilizator** de inserat pentru fiecare dintre ele.
+În paragrafele dedicate form-urilor [WMS](/docs/logistics/wms/wms-intro), sunt indicați **Parametrii pentru gestionare încărcare/descărcare pe utilizator** de inserat pentru fiecare dintre ele.

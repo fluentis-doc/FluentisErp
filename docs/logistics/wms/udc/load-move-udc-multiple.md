@@ -3,6 +3,10 @@ title: Carico/Sposta UDC Multiplo
 sidebar_position: 3
 ---
 
+:::important A cosa serve
+La funzione **Carico/Sposta UDC** del WMS di Fluentis è progettata per semplificare il processo di gestione delle unità di carico. Consente agli operatori di caricare un'unità di carico non ancora registrata nel sistema o di spostare un'unità già caricata da una ubicazione a un'altra, tutto tramite la scansione del codice a barre. Grazie a questa funzionalità, il sistema facilita le operazioni di magazzino in tempo reale.
+:::
+
 Questa procedura è utilizzata per la lettura di una o più unità di carico per poter procedere al *Carico massivo*, se le unità di carico risultano non caricate o allo *Spostamento massivo* se le unità di carico risultano già essere caricate.   
 
 L’operatore può effettuare queste operazioni leggendo direttamente il barcode di una o più unità di carico, nel caso in cui queste non siano caricate, queste vengono direttamente aggiunte nella griglia sottostante il campo codice barcode.     

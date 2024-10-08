@@ -3,6 +3,15 @@ title: Scarico picking
 sidebar_position: 4
 ---
 
+:::important A cosa serve
+La procedura di Scarico Picking in Fluentis è progettata per facilitare la movimentazione degli articoli prelevati dal magazzino durante il processo di picking. Questa funzionalità consente agli utenti di scegliere uno o più picking già creati e, mediante un'interfaccia intuitiva, effettuare le registrazioni di magazzino necessarie per il corretto scarico degli articoli.
+
+All'interno della procedura, gli utenti possono applicare filtri per selezionare i picking desiderati e specificare la data di registrazione a magazzino. 
+Una volta selezionati, è possibile avviare il processo di scarico, assicurando che le movimenti siano registrati correttamente nel sistema. 
+
+Inoltre, il modulo offre funzionalità per gestire anomalie, come articoli senza magazzino e causale, o per visualizzare articoli non scaricati, migliorando così l'efficienza operativa e la tracciabilità delle giacenze.
+:::
+
 Selezionando uno o più picking e premendo il pulsante **Scarico** si apre una finestra che permette di effettuare la movimentazione dei picking.
 
 **Filtro**

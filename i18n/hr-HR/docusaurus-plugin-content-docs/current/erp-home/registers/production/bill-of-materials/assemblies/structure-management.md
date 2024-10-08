@@ -5,7 +5,7 @@ sidebar_position: 2
 
 Kao što je već spomenuto, iz obrasca [Sklopovi](/docs/erp-home/registers/production/bill-of-materials/search-and-insert-assemblies), odabirom osnovne razrade koju želite vidjeti i dvostrukim klikom ulazite u uređivanje osnovne razrade i vidite njezinu grafičku prikaz u obliku stabla.
 
-Osnovna razrada je višerazinska struktura, stablo u kojem postoji veza tipa roditelj-dijete. [Dijete](/docs/guide/glossary/glossary-intro#a) može također biti roditelj i tako dalje, za neodređeni broj razina, sve do posljednje razine gdje se nalaze materijali.
+Osnovna razrada je višerazinska struktura, stablo u kojem postoji veza tipa roditelj-dijete. [Dijete](/docs/guide/common/glossary/glossary-intro#a) može također biti roditelj i tako dalje, za neodređeni broj razina, sve do posljednje razine gdje se nalaze materijali.
 
 Ekran je podijeljen u dva dijela: s lijeve strane je prikazano stablo osnovne razrade, dok se s desne strane prikazuju detalji o različitim komponentama stabla.
 

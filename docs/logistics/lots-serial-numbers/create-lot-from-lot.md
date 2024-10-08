@@ -5,6 +5,13 @@ sidebar_position: 5
 
 ### Creazione lotto da lotto
 
+
+:::important A cosa serve
+La procedura di Creazione Lotto da Lotto di Fluentis è un'importante funzionalità che permette di generare un nuovo lotto a partire da un lotto esistente dello stesso articolo. Questa operazione è fondamentale per gestire in modo efficace il magazzino e per rispondere tempestivamente alle esigenze di produzione e logistica.
+
+La procedura è strutturata in tre sezioni principali: un filtro per la selezione dei dati, una griglia che visualizza le informazioni relative al lotto scelto e una sezione dedicata ai dati del nuovo lotto. Gli utenti possono inserire informazioni cruciali come la quantità iniziale, il numero di colli, e le causali di scarico e carico per completare la registrazione del nuovo lotto. L'implementazione di questa procedura non solo semplifica la movimentazione dei lotti, ma aiuta anche a mantenere una tracciabilità accurata all'interno del sistema, garantendo i requisiti di qualità e conformità normativa.
+:::
+
 Questa form permette di creare un nuovo lotto, di uno stesso articolo, partendo dal vecchio lotto.
 
 La form si compone di 3 sezioni distinte:
@@ -34,6 +41,14 @@ Per dettagli sul funzionamento comune delle form fare riferimento al link [Funzi
 
 
 ### Creazione lotto da lotto con cambio articolo
+
+
+:::important A cosa serve
+La Creazione Lotto da Lotto con Cambio Articolo è una procedura avanzata di Fluentis che consente di creare un nuovo lotto per un articolo diverso, partendo da un lotto di origine. Questa funzionalità risulta particolarmente utile nel contesto di gestione delle scorte, quando è necessario trasferire quantità da un articolo a un altro, mantenendo sempre una registrazione dettagliata dei lotti.
+
+Anche questa procedura è organizzata in tre sezioni: un filtro per la ricerca dei lotti esistenti, una griglia che mostra i risultati della ricerca e una sezione per l'inserimento dei dati relativi al nuovo lotto. Gli utenti possono specificare dettagli come il codice articolo di destinazione, la quantità iniziale e la causale di scarico e carico. Grazie a questa procedura, le aziende possono ottimizzare i flussi di magazzino e garantire una maggiore efficienza operativa, assicurando che tutti i movimenti siano tracciabili e correttamente registrati nel sistema.
+:::
+
 
 Questa form permette di creare un nuovo lotto con un nuovo articolo partendo da un diverso lotto con un diverso articolo.
 

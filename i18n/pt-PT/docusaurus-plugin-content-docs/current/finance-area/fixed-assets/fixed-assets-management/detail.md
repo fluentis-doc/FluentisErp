@@ -34,7 +34,7 @@ RIBBON BAR: representa o menu do módulo em questão, ou seja, a área na qual 
 | RibbonFunction | RibbonMeaning |
 | --- | --- |
 | Salvar | Salva o ativo fixo, obrigatório para atribuir um número ao ativo fixo e ativar os vários tab. |
-|  [Documentos](/docs/guide/operations-with-data/document-manager)  | Gestão do armazenamento documental associado a máscara em uso. |
+|  [Documentos](/docs/guide/common/operations-with-data/document-manager)  | Gestão do armazenamento documental associado a máscara em uso. |
 
 
 

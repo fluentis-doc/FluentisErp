@@ -3,6 +3,16 @@ title: Parametri iniziali magazzino
 sidebar_position: 2
 ---
 
+:::important A cosa serve
+L'introduzione ai parametri iniziali di magazzino di Fluentis funge da fondamentale punto di riferimento per la gestione delle operazioni logistiche all'interno del sistema. Questi parametri, accessibili tramite una form dedicata, consentono di configurare in modo preciso le modalità di gestione del magazzino e di definire norme operative che influenzano l'intera catena di approvvigionamento e distribuzione.
+
+Nel sistema Fluentis, i parametri iniziali includono flag e impostazioni che regolano aspetti cruciali come la modifica delle registrazioni, la gestione delle distinte base, e il calcolo dei costi medi e ultimi. Ad esempio, il flag "Modifica registrazioni di magazzino collegati con altri documenti" permette di modificare movimenti creando un'interazione diretta fra diversi documenti di movimentazione, mentre il flag "Permetti giacenza negativa" offre un'ulteriore flessibilità nelle operazioni di scarico.
+
+È importante notare che questi parametri devono essere rigenerati ogni anno per garantire una corretta gestione e aggiornamento delle operazioni di magazzino. Inoltre, è possibile specificare per ciascun singolo magazzino se debba essere gestito per ubicazione, progetto o cliente/fornitore, consentendo una personalizzazione delle operazioni in base alle specifiche esigenze aziendali.
+
+Inoltre, è possibile impostare periodi specifici in cui le registrazioni possono essere operate, gestendo così in modo dinamico le operazioni di magazzino in base alle esigenze aziendali. La configurazione di questi parametri non solo ottimizza i processi, ma svolge un ruolo centrale nel garantire l'efficacia operativa e la tracciabilità delle merci, elementi chiave per il successo nella gestione della logistica moderna.
+:::
+
 Nella form di *Ricerca Parametri iniziali magazzino* selezionare la riga desiderata ed eseguire doppio click sulla riga o click sul pulsante *Nuovo*.
 
 **Anno**: rappresenta l'anno per il quale si desidera impostare i parametri.

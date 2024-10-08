@@ -15,6 +15,4 @@ Fluentis offre la possibilità di impostare diverse funzionalità e parametri:
 
 - **Fluentis Chat**: permette di interagire con gli utenti abilitati a tale servizio di comunicazione, sia interno nel contesto aziendale, sia esterno per accedere al supporto di Fluentis;  
 
-- [Form Navigator](/docs/form-navigator/form-navigator-intro);
-
-- [Varie](/docs/guide/guide-intro): contiene una serie di articoli di spiegazione generale di utilizzo del gestionale e delle sue funzionalità comuni.
+- [Form Navigator](/docs/form-navigator/form-navigator-intro).

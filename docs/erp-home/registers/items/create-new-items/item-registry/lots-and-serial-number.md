@@ -3,6 +3,15 @@ title: Lotti e serial number
 sidebar_position: 17
 ---
 
+:::important A cosa serve
+Il tab "Lotti e Serial Number" dell'anagrafica articoli di Fluentis consente una gestione dettagliata dei materiali attraverso due varianti: la gestione per lotti e la gestione tramite numeri di serie.
+La gestione a lotti permette di organizzare gli articoli in gruppi omogenei che possono essere sia di acquisto che di produzione. Ogni lotto è identificato da un codice univoco che consente di rintracciarne i movimenti e le giacenze, anche in scenari multi-magazzino. All'interno della gestione a lotti, gli utenti possono definire la tipologia di prelievo (FIFO, data scadenza o manuale), selezionare il tipo di codice lotto per definirne la codifica. Questa gestione è fondamentale per articoli sensibili come quelli alimentari e farmaceutici.
+
+In alternativa, la gestione con serial number offre la possibilità di tracciare ogni singolo pezzo attraverso un numero di serie unico. Questo è particolarmente utile per articoli ad alto valore o critici, dove ogni unità necessita di un monitoraggio preciso. Le opzioni disponibili includono la modalità di generazione del numero di serie (manuale o automatica) e la validità temporale del numero stesso.
+
+Questo tab è quindi un elemento cruciale per garantire la rintracciabilità, la compliance normativa e la gestione efficiente delle scorte nel magazzino, contribuendo così a ottimizzare la logistica aziendale.
+:::
+
 L'articolo può essere gestito a Lotti o a Serial Number e di ogni codice articolo si possono creare dei sottogruppi che a loro volta possono essere gestiti a lotti o a serial number.
 
 I lotti sono dei gruppi di quantità omogenee di articoli che entrano in azienda (lotti di acquisto) o che vengono prodotti nell'azienda stessa (lotti di produzione).
@@ -31,6 +40,7 @@ Si può scegliere altrimenti di gestire l'articolo attraverso la **Gestione con 
 
 **Tipo codice serial number**: per selezionare il tipo predefinito nella tabella **Tipo codice serial number**;      
 **Giorni validità del serial number**: per indicare per quanti giorni questo codice sarà valido;      
-**Generazione del serial number**: per stabilire la modalità di creazione del serial number, se manuale o automatica;      
+**Generazione del serial number**: per stabilire la modalità di creazione del serial number, se manuale o automatica; quanto è impostato su automatica, significa che per tutti i movimenti con causale di *carico* e con il flag *Crea serial number* attivo (sulla causale stessa), all'inserimento del lotto i serial number verranno creati automaticamente.
+      
 
 

@@ -5,7 +5,7 @@ sidebar_position: 2
 
 Din fereastra [Ansamble](/docs/erp-home/registers/production/bill-of-materials/search-and-insert-assemblies), selectând lista componentelor dorită și facând dublu clic, se pot vizualiza detaliile acesteia.
 
-Lista componentelor este o structură multi nivel, în care sunt relații de tip părinte-fiul. [Fiul](/docs/guide/glossary/glossary-intro#a) poate fi părinte, la rândul său pentru nivele nelimitate până la ultimul nivel, unde se află materialele.
+Lista componentelor este o structură multi nivel, în care sunt relații de tip părinte-fiul. [Fiul](/docs/guide/common/glossary/glossary-intro#a) poate fi părinte, la rândul său pentru nivele nelimitate până la ultimul nivel, unde se află materialele.
 
 Form-ul este împărțit în două părți: la stânga se află arborele listei componentelor iar la dreapta detaliile aferente diverselor componente.
 

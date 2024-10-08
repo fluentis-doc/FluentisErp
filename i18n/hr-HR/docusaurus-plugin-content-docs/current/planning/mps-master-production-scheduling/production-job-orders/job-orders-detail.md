@@ -1,20 +1,35 @@
 ---
-title: Commesse di produzione (dettagli)
+title: Proizvodnja narudžbe (detalj)  
 sidebar_position: 3
 ---
 
-import SearchForm from './../../../import/sections/search-form.md'
+Obrazac za Pretragu dokumenata omogućuje pretraživanje svih dokumenata radi njihovog pregleda, uređivanja, brisanja ili dodavanja novog dokumenta; prozor se sastoji od područja za filtriranje i rezultatne mreže. 
 
-<SearchForm />
+Nakon što ste postavili sve željene filtre, jednostavno kliknite na gumb **Traži** u traci izbornika kako biste prikazali rezultate unutar rezultatne mreže.
 
-In base allo stato della commessa (quindi schedulata, esecutiva etc), la riga della commessa avrà un colore diverso. I colori che si possono abbinare allo stato della commessa, vengono stabiliti all'interno dei [Parametri MPS](/docs/configurations/parameters/production/mps-parameters), nella sezione *Colori Commesse*.  
+Za otvaranje detalja dokumenta, dovoljno je odabrati dokument i dvaput kliknuti mišem, ili kliknuti na gumb **Izmjeni** (omogućuje ulazak u detalje i uređivanje) ili na gumb **Prikaži** (omogućuje ulazak u detalje i prikaz, ali bez mogućnosti uređivanja).
 
-Sempre da questa form è possibile *creare nuove commesse*, sia **monoprodotto** che **multiprodotto** cliccando sui rispettivi pulsanti presenti nella *Ribbon Bar*: [Inserisci commessa](/docs/planning/mps-master-production-scheduling/production-job-orders/new-monoproduct-job-order) e [Inserisci commessa multiprodotto](/docs/planning/mps-master-production-scheduling/production-job-orders/new-multiproduct-job-order).
+*Vidi također*:  
+*Značajke, gumbe i zajednička polja*  
+*Dodavanje novih polja u forme za pretraživanje*  
 
-*Pulsanti specifici*:
 
-> **Duplica commessa**: permette di duplicare la commessa selezionata;  
-> **Cambia priorità**: consente di cambiare la priorità assegnata alla commessa;  
-> [Parametri MRP](/docs/configurations/parameters/production/mrp-parameters/search-mrp-parameters): tramite questo pulsante è possibile aprire la schermata relativa ai parametri MRP dell'articolo.  
-> [Distinta base](/docs/erp-home/registers/production/bill-of-materials/search-and-insert-assemblies): permette di aprire la schermata relativa alla distinta base dell'articolo;  
-> [Cicli di lavoro](/docs/erp-home/registers/production/routes/new-route): permette di visualizzare il ciclo di lavoro e le relative fasi di produzione dell'articolo.
+Ovisno o statusu narudžbe (npr. planirana, izvršna itd.), redak narudžbe će imati različitu boju. Boje koje se mogu pridružiti statusu narudžbe određuju se unutar [Parametara MPS](/docs/configurations/parameters/production/mps-parameters), u sekciji *Boje narudžbi*.  
+
+Na istom obrascu moguće je stvoriti *Nove narudžbe*, kako **jednoproizvode** tako i **multiproizvode** klikom na odgovarajuće gumbe u *traci izbornika*: [Umetni narudžbu](/docs/planning/mps-master-production-scheduling/production-job-orders/new-monoproduct-job-order) e [Umetni višeproizvodnu narudžbu](/docs/planning/mps-master-production-scheduling/production-job-orders/new-multiproduct-job-order).
+
+Dvostrukim klikom na jednu od narudžbi u rezultatnoj mreži otvorit će se detalji narudžbe, čiji će se podaci detaljno istražiti u člancima Unos nove jednoproizvode narudžbe i Unos nove višeproizvode narudžbe.
+
+Kolona *Pridruženi troškovi*, ako je oznaka aktivna, označava da narudžba već sadrži barem jedno pridruživanje troškova.
+
+:::note **VAŽNO**
+Razlika između obrasca **Proizvodne narudžbe** i obrasca  **Proizvodne narudžbe (detalji)**, e u tome što u potonjem obrascu možete vidjeti u mreži i članke koji su prisutni unutar narudžbe, dok u prvom obrascu bez detalja vidite samo podatke o zaglavlju proizvodnih narudžbi.      
+:::
+
+*Posebni gumbi*:
+
+> **Dupliciraj narudžbu**: omogućuje dupliciranje odabrane narudžbe;  
+> **Promijena prioriteta**: omogućuje promjenu prioriteta dodijeljenog narudžbi;   
+> [Parametri MRP](/docs/configurations/parameters/production/mrp-parameters/search-mrp-parameters): klikom na ovaj gumb otvara se zaslon s parametrima MRP (materijalni zahtjevi za proizvodnjom) za artikl;     
+> [Sastavnica materijala](/docs/erp-home/registers/production/bill-of-materials/search-and-insert-assemblies): omogućuje otvaranje zaslona s osnovnom strukturom proizvoda za artikl;    
+> [Proizvodni ciklus](/docs/erp-home/registers/production/routes/new-route): omogućuje pregled radnog ciklusa i pripadajućih faza proizvodnje za artikl.  

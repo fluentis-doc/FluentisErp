@@ -1,6 +1,6 @@
 ---
 title: Parametri raggruppamento ordini
-sidebar_position: 6
+sidebar_position: 7
 ---
 
 I parametri di raggruppamento consentono di definire come suddividere i documenti durante le procedure di evasione. A tal fine, è possibile utilizzare specifici flag per raggruppare i documenti in base a diverse proprietà, come ad esempio la categoria, il tipo di documento, o altre caratteristiche rilevanti.            

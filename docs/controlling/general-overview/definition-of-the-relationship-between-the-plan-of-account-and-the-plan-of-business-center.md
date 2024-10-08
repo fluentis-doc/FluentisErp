@@ -1,6 +1,0 @@
----
-title: Definizione delle relazioni fra piano dei conti e piano dei centri aziendali
-sidebar position: 2
----
-
-Dopo aver redatto il piano dei centri aziendali il passaggio successivo è quello di prendere il nostro PIANO DEI CONTI e relazionarlo al piano dei centri, quindi, in questa fase noi dobbiamo definire conto per conto le logiche di attribuzione dello stesso ai vari centri. Per esempio, il riscaldamento, molte volte, si suddivide in base ai metri quadri occupati dai centri medesimi piuttosto che la forza motrice in base a un parametro di utilizzo teorico di ogni centro della stessa forza motrice. Altro esempio è quello di una manutenzione in base alle fatture che la contabilità riceve direttamente. Se vogliamo un’attribuzione oggettiva delle manutenzioni nel momento in cui noi riceveremo la fattura saremo anche in gradi di attribuirla al centro in modo corretto. Bisogna definire in modo particolareggiato le relazioni esistenti tra i conti di contabilità e i relativi centri. Tutto ciò ci permetterà di attivare una contabilità analitica a integrazione di quella generale.

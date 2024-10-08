@@ -3,6 +3,11 @@ title: Approvvigionamento
 sidebar_position: 3
 ---
 
+:::important A cosa serve
+Il tab Approvvigionamento dell'anagrafica articoli di Fluentis permette di definire tutti i parametri necessari per gestire in modo ottimale le scorte dell’articolo. Nella prima sezione, si impostano i dati generali come la scorta minima e massima, che indicano i limiti entro cui mantenere le quantità di magazzino. Altri parametri includono le settimane di copertura, i giorni per la scorta e il punto di riordino, che stabilisce quando è necessario procedere con un nuovo ordine.
+Inoltre, sono disponibili impostazioni per le stampanti etichette e i tipi di report etichette, utili per la gestione dei lotti nei diversi stati (Unico, Conforme, Non conforme, Quarantena). Nella seconda sezione, è possibile specificare questi parametri per ogni magazzino in cui l'articolo è presente, offrendo una gestione accurata e personalizzata delle scorte.
+:::
+
 In questo tab si vanno a definire tutti i dati necessari per l'approvvigionamento dell'articolo in oggetto.
 
 La finestra si compone di due parti: 

@@ -12,6 +12,12 @@ Per tutto quanto non dettagliato in questo documento sul funzionamento comune de
 
 :::
 
+
+:::tip[FAst Start]
+La tabella è interessata dalla procedura di [**Fast Start**](/docs/guide/fast-start)
+
+Nel caso in cui si intenda configurare manualmente fare riferimento alla check list della pagina linkata
+:::
 ---
 
 In questa tabella viene definita, attraverso un ** [*Numeratore standard di Fluentis* ](/docs/configurations/tables/fluentis-numerations) ** , la politica per le registrazioni contabili definitive e provvisorie.

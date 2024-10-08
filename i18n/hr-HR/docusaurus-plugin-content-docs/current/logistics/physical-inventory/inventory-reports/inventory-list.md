@@ -7,4 +7,4 @@ Omogućuju korisniku pregled izvještaja koji sadrži informacije o inventarnim 
 
 Nakon što korisnik odabere željene filtere, može ispisati standardne ili prilagođene izvještaje (prethodno mapirane u upravljanju ispisima). Ako želite ispisati prilagođeni izvještaj, morate ga odabrati u kartici parametara ispisa.
 
-Za sve što nije detaljno opisano u ovom dokumentu o općem funkcioniranju formi ispisa, možete se obratiti na link [Pregled i ispis](/docs/guide/operations-with-data/reports).
+Za sve što nije detaljno opisano u ovom dokumentu o općem funkcioniranju formi ispisa, možete se obratiti na link [Pregled i ispis](/docs/guide/common/operations-with-data/reports).

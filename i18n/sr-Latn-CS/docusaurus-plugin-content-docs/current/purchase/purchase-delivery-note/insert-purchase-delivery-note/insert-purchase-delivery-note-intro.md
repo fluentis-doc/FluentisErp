@@ -23,7 +23,7 @@ Per continuare la creazione del DDT di acquisto, l'utente deve inserire i campi 
 
 - la data e il numero del documento assegnati dal fornitore;
 
-- il fornitore, usando l' [help di campo](/docs/guide/operations-with-data/manual-entry-or-help-and-data-selection)  oppure tastando  [direttamente ](/docs/guide/operations-with-data/manual-entry-or-help-and-data-selection) i dati.
+- il fornitore, usando l' [help di campo](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection)  oppure tastando  [direttamente ](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) i dati.
 
 
 

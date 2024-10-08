@@ -8,7 +8,7 @@ Procedura de creare a unui nou articol de deschide utilizând calea:
 sau  
 - **Articole > Cauta Articole** făcând click pe butonul **Nou** din bara de meniu a acestui fomular.
 
-Se va deschide form-ul **Registru articol** în care se inserează caracteristicile fundamentale și obligatorii pe care trebuie să le aibă fiecare articol și pe care le găsim în prima parte a form-ului: [**Clasa**](/docs/guide/glossary/glossary-intro#item-class), [**Codul**](/docs/guide/glossary/glossary-intro#item-code), și **Unitatea de măsură**.
+Se va deschide form-ul **Registru articol** în care se inserează caracteristicile fundamentale și obligatorii pe care trebuie să le aibă fiecare articol și pe care le găsim în prima parte a form-ului: [**Clasa**](/docs/guide/common/glossary/glossary-intro#item-class), [**Codul**](/docs/guide/common/glossary/glossary-intro#item-code), și **Unitatea de măsură**.
 
 Urmează apoi introducerea datelor specifice care sunt tratate în următoarele documente.
 

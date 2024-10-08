@@ -15,4 +15,6 @@ Mentre risulta del tutto necessaria per chi intende configurare un ambiente oper
 [**VIDEO TUTORIALS SULLE CAUSALI CONTABILI**](/docs/video/finance/intro.md)
 :::
 
-
+:::tip[Maggiori informazioni]
+Consultare la pagina sull' [**Inserimento di una nuova causale**](/docs/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates/header)
+:::

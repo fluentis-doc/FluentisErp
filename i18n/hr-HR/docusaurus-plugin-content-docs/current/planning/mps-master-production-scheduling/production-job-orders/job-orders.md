@@ -1,22 +1,30 @@
 ---
-title: Commesse di produzione
+title: Narudžba za proizvodnju
 sidebar_position: 2
 ---
 
-import SearchForm from './../../../import/sections/search-form.md'
+Obrazac za Pretragu dokumenata omogućuje pretraživanje svih dokumenata radi njihovog pregleda, uređivanja, brisanja ili dodavanja novog dokumenta; prozor se sastoji od područja za filtriranje i rezultatne mreže. 
 
-<SearchForm />
+Nakon što ste postavili sve željene filtre, jednostavno kliknite na gumb **Traži** u traci izbornika kako biste prikazali rezultate unutar rezultatne mreže.
 
-In base allo stato della commessa (quindi schedulata, esecutiva etc), la riga della commessa avrà un colore diverso. I colori che si possono abbinare allo stato della commessa, vengono stabiliti all'interno dei [Parametri MPS](/docs/configurations/parameters/production/mps-parameters), nella sezione *Colori Commesse*.  
+Za otvaranje detalja dokumenta, dovoljno je odabrati dokument i dvaput kliknuti mišem, ili kliknuti na gumb **Izmjeni** (omogućuje ulazak u detalje i uređivanje) ili na gumb **Prikaži** (omogućuje ulazak u detalje i prikaz, ali bez mogućnosti uređivanja).
 
-Sempre da questa form è possibile *creare nuove commesse*, sia **monoprodotto** che **multiprodotto** cliccando sui rispettivi pulsanti presenti nella *Ribbon Bar*: [Inserisci commessa](/docs/planning/mps-master-production-scheduling/production-job-orders/new-monoproduct-job-order) e [Inserisci commessa multiprodotto](/docs/planning/mps-master-production-scheduling/production-job-orders/new-multiproduct-job-order).
+*Vidi također*:  
+*Značajke, gumbe i zajednička polja*  
+*Dodavanje novih polja u forme za pretraživanje*  
 
-Facendo doppio clic su una delle commesse presenti nella griglia di risultato si entrerà nel dettaglio della commessa, i cui dati verranno approfonditi negli articoli *Inserimenti nuova commessa monoprodotto e Inserimento nuova commessa multiprodotto*.
+Na temelju statusa narudžbe (npr. planirana, izvršna itd.), redak narudžbe će imati različitu boju. Boje koje se mogu pridružiti statusu narudžbe određuju se unutar [Parametara MPS](/docs/configurations/parameters/production/mps-parameters), u sekciji *Boje narudžbi*.  
 
-*Pulsanti specifici*:
+Također, iz ovog obrasca moguće je *kreirati nove narudžbe*, kako  **jednoproizvode** tako i **multiproizvode** klikom na odgovarajuće gumbe u *traci izbornika*: [Umetni narudžbu ](/docs/planning/mps-master-production-scheduling/production-job-orders/new-monoproduct-job-order) i [Umetni višeproizvodnu narudžbu](/docs/planning/mps-master-production-scheduling/production-job-orders/new-multiproduct-job-order).
 
-> **Duplica commessa**: permette di duplicare la commessa selezionata;  
-> **Cambia priorità**: consente di cambiare la priorità assegnata alla commessa;
-> **Sequenza commesse**: tramite questa funzionalità si può accedere alla sequenza commesse, all'interno della quale si potranno visualizzare le commesse in base alla sequenza che gli è stata attribuita, anche tramite un grafico;
-> **Capacità centri di lavoro**: tramite questo pulsante di accede alla finestra relativa alla capacità dei centri di lavoro; in questa finestra è possibile visualizzare filtrando per il centro di lavoro e per il periodo di tempo desiderato l'impegno di tale centro tramite un grafico e l'elenco delle commesse di produzioni previste in produzione;
-> **Dettagli ordine di produzione**: permette di visualizzare i dettagli dell'ordine.
+Dvostruki klik na jednu od narudžbi u rezultatnoj mreži omogućit će ulazak u detalje te narudžbe, čiji će se podaci detaljnije istražiti u člancima  *Unos nove jednoproizvodne narudžbe* i *Unos nove višeproizvodne narudžbe*.
+
+Kolona *Pridruženi troškovi*, ako je oznaka aktivna, označava da narudžba već sadrži barem jedno pridruživanje troškova.
+
+*Posebni gumbi*:
+
+> **Dupliciraj narudžbu**: omogućuje dupliciranje odabrane narudžbe;         
+> **Promjena prioriteta**: omogućuje promjenu dodijeljenog prioriteta narudžbi;               
+> **Redoslijed sekvence**: ova funkcionalnost omogućuje pristup sekvenci narudžbi, gdje se mogu pregledati narudžbe prema dodijeljenoj sekvenci, uključujući grafikon;                   
+> **Kapacitet radnog centra**: ovaj gumb omogućuje pristup prozoru za kapacitete radnih centara; ovdje se može filtrirati po radnom centru i željenom vremenskom razdoblju kako bi se prikazala zauzetost tog centra putem grafikona i popisa planiranih proizvodnih narudžbi;                
+> **Detalji proizvodnog naloga**: omogućuje pregled detalja proizvodnog naloga.

@@ -1,19 +1,19 @@
 ---
-title: Parametri per Operatore
+title: Parametri za operatera
 sidebar_position: 2
 ---
 
-Questi parametri propongono delle informazioni per singola risorsa:
+Ovi parametri nude informacije za svaki pojedinačni resurs:
 
-**Operatore**: contiene l’operatore;
+**Operator**: sadrži operator;
 
-**Risorsa**: contiene l’anagrafica della risorsa con la relativa **Descrizione**;
+**Resurs**: sadrži pojedinosti o resursu s pripadajućim **Opisom**;
 
-**Tipo di intervento**: indica il [Tipo di intervento](/docs/configurations/tables/project-management/intervention-type) di default da proporre per questo operatore, con la relativa **Descrizione**;
+**Vrsta intervencije**: označava zadanu [Vrstu intervencije](/docs/configurations/tables/project-management/intervention-type) koja će se predložiti za ovog operatera, s relativnim **Opisom**;
 
-**Tipo attività**: indica la [Tipologia di attività](/docs/configurations/tables/project-management/activity-type) di default da proporre per questo operatore, con la relativa **Descrizione**;
+**Vrsta aktivnosti**: označava zadanu [Vrstu aktivnosti](/docs/configurations/tables/project-management/activity-type) koja se predlaže za ovog operatora, s relativnim **Opisom**;
 
-**Conto**: è possibile indicare un’anagrafica di default come destinatario dei documenti per questo operatore, con il relativo **Sottoconto** e la relativa **Descrizione**;
+**Konto**: moguće je naznačiti zadani registar kao primatelja dokumenata za ovog operatera, s pripadajućim **Podkonto** i pripadajućim **Opisom**;
 
-**Progetto**: è possibile indicare un [Progetto](/docs/project-management/projects/search-projects-intro) collegato all’operatore.
+**Projekt**: moguće je označiti [Projekt](/docs/project-management/projects/search-projects-intro) povezan s operaterom. 
 

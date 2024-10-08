@@ -3,6 +3,10 @@ title: Giacenza articolo
 sidebar_position: 5
 ---
 
+:::important A cosa serve
+La funzione di **giacenza articolo** consente agli operatori di visualizzare rapidamente le giacenze di magazzino per ogni articolo registrato. Attraverso una griglia interattiva, è possibile estrapolare informazioni dettagliate riguardanti la giacenza gestionale, le unità di misura e i lotti. Inoltre, la funzione consente di analizzare le giacenze raggruppate per articolato, ubicazione o progetto, offrendo così una visione completa della disponibilità dei materiali. Questa procedura facilita il monitoraggio delle scorte e consente una gestione più accurata e informata delle operazioni di magazzino, contribuendo così a ottimizzare l'efficienza logistica complessiva.
+:::
+
 Questa procedura è utilizzata per visualizzare la giacenza di un articolo.     
 La form presenta una griglia che muta le proprie colonne sulla base dei filtri inseriti per la ricerca. 
 

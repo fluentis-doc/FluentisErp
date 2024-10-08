@@ -15,6 +15,4 @@ Fluentis nudi mogućnost postavljanja različitih funkcionalnosti i parametara:
 
 - **Fluentis Chat**: omogućuje interakciju s korisnicima koji su ovlašteni za tu komunikacijsku uslugu, kako unutar poslovnog okruženja tako i izvan njega za pristup podršci Fluenti;  
 
-- [Form Navigator](/docs/form-navigator/form-navigator-intro);
-
-- [Razno](/docs/guide/guide-intro): sadrži niz članaka općeg objašnjenja za korištenje upravljanja i njegovih uobičajenih funkcionalnosti.
+- [Form Navigator](/docs/form-navigator/form-navigator-intro).

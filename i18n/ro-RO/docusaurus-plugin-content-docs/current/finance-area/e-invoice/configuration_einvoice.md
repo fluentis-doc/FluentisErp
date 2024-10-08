@@ -34,7 +34,7 @@ Il codice Tipo che viene proposto di default (nelle fatture di vendita) è quell
     </CodiceArticolo> 
 ```         
 
-Oppure il *CodiceTipo* può essere personalizzato valorizzando il campo **[Codice articolo fornitore](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/fiscal-information#codice_articolo_fornitore_cliente)** presente in anagrafica cliente nel tab *informazioni fiscali*. 
+Oppure il *CodiceTipo* può essere personalizzato valorizzando il campo **Codice articolo fornitore** presente in anagrafica cliente nel tab *informazioni fiscali*. 
 
 :::note Nota
 Prestare attenziaone, si tratta di una coppia di campi adiacenti relativi, rispettivamente, alla codifica della nostra società (fornitore) per la personalizzazione rispetto al default, ed al cliente per una doppia codifica da inserire nel tracciato della fattura
@@ -321,5 +321,5 @@ Per quanto riguarda l’Enasarco, con la versione 1.6 dello schema della fattura
 inserita in testata ha le impostazioni enasarco, valorizza nel documento anche il conteggio dell’enasarco, e valorizza come richiesto la sezione 2.1.1.5
 
 :::tip **Vedere anche**
-Per la gestione del riaddebito **contributo cassa previdenza** nella fattura elettronica [**vedere qui**](/docs/configurations/tables/general-settings/expenses-types#ritenuta-dacconto-e-cassa-previdenza)
+Per la gestione del riaddebito **contributo cassa previdenza** nella fattura elettronica
 :::

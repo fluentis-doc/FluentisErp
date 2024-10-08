@@ -3,199 +3,252 @@ title: MES
 sidebar_position: 3
 ---
 
-## *Pulsanti specifici*:  
+## *Specifični gumbi*:  
 
-**Navigabilità**
-> *Precedente*: permette di passare al tab precedente;     
-> *Successivo*: permette di passare al tab successivo;     
-> *Aggiorna*: permette di aggiornare tutti i dati della form, da usare nel caso in cui vengano fatte modifiche sulla risorsa utilizzata;      
-> *Cancella selezione*: permette di annullare la selezioni delle fasi presenti nella griglia principale.     
+**Navigabilnost**
+> *Prethodno*: omogućuje prelazak na prethodnu karticu;       
+> *Sljedeći*: omogućuje prelazak na sljedeću karticu;       
+> *Ažuriraj*: omogućuje osvježavanje svih podataka u obrascu, za korištenje u slučaju promjena na korištenom resursu;         
+> *Poništi odabir*: omogućuje poništavanje odabira faza prisutnih u glavnoj mreži.    
 
-**Conferma segnalazione**
-> *Conferma inizio*: permette di creare una segnalazione di produzione di apertura;    
-> *Conferma avanzamento*: permette di creare una segnalazione di produzione di avanzamento;    
-> *Conferma sospensione*: permette di creare una segnalazione di produzione di sospensione;    
-> *Conferma ripresa*: permette di creare una segnalazione di produzione di ripresa;    
-> *Conferma chiusura*: permette di creare una segnalazione di produzione di chiusura;    
-> *Annulla*: permette di azzerare tutti i dati inseriti in Fluentis MES.                   
+**Potvrda izvještaja**
+> *Započni*: omogućuje stvaranje početnog izvještaja o proizvodnji;       
+> *Napreduj*: omogućuje stvaranje izvještaja o napretku proizvodnje;       
+> *Obustavi*: omogućuje stvaranje izvještaja o obustavi proizvodnje;       
+> *Nastavi*: omogućuje stvaranje izvještaja o nastavku proizvodnje;     
+> *Zatvori*: omogućuje stvaranje završnog izvještaja o proizvodnji;     
+> *Otkaži*: omogućuje brisanje svih unesenih podataka u Fluentis MES-u.                   
 
-## Form principale
+## Glavni obrazac 
 
-La form principale si compone di una sezione con i seguenti campi ed una griglia contenente le fasi in lavoro: 
+Glavni obrazac se sastoji od sekcije sa sljedećim poljima i mrežom koja sadrži faze u radu:   
 
-- **Codice barcode**      
-Gran parte delle operazioni che possono essere effettuate in Fluentis MES, possono essere agevolate e velocizzate grazie all’utilizzo del campo *Codice barcode*, che se opportunamente configurato, rielabora in maniera intelligente i dati acquisiti tramite la lettura del barcode e autonomamente va ad inserire i valori nei campi corrispondenti.    
-Questo da un grande vantaggio all’operatore sia in termini di velocità di inserimento che di efficienza, dato che dovrà leggere i dati sempre nello stesso campo *Codice barcode* senza avere il problema di dover cambiare il focus.     
-I Barcode possono essere configurati all’interno della form Barcode tokenizer, presente in: Tabelle > Impostazioni generali > Barcode tokenizer.               
-Quindi, questo campo *Codice barcode*, nel MES, può essere utilizzato dall’operatore per aggiungere singole fasi o gruppi di fasi, o ad esempio anche le fasi di un intero ordine di produzione, oppure ancora caricare i lotti e/o serial number dei materiali da scaricare, il tutto semplicemente leggendo i vari barcode. 
+- **Šifra barkoda**      
+Većina operacija koje se mogu izvesti u Fluentis MES-u može se olakšati i ubrzati zahvaljujući korištenju polja *Barcode kod*. Ako je pravilno konfigurirano, ovo polje inteligentno obrađuje podatke dobivene skeniranjem bar koda i automatski unosi vrijednosti u odgovarajuća polja.     
+Ovo pruža veliku prednost operateru u smislu brzine unosa i učinkovitosti, jer će uvijek čitati podatke u istom polju *Barcode kod* bez potrebe za promjenom fokusa.      
+Bar kodovi se mogu konfigurirati unutar obrasca Barcode tokenizer, koji se nalazi u: Tablice > Opće postavke > Barkod tokenizator.               
+Dakle, ovo polje *Barcode kod* u MES-u može se koristiti od strane operatera za dodavanje pojedinačnih faza ili grupa faza, ili na primjer, faza cijelog proizvodnog naloga, kao i za učitavanje serija i/ili serijskih brojeva materijala za preuzimanje, sve jednostavnim skeniranjem raznih bar kodova.
+
+Za sve informacije o tome kako kodirati bar kodove za čitanje u polju **Šifra barkoda** konzultirajte stranicu posvećenu [Barkod tokenizator-u](/docs/configurations/tables/general-settings/barcode-tokenizer).
 
 - **Workstation**      
-La procedura è in grado di riconoscere la workstation su cui sta lavorando e se a questa è stato associato un centro di lavoro, caricherà in automatico tutte le fasi che erano in lavorazione su quel centro di lavoro, a quel punto l’operatore può scegliere se proseguire con la segnalazione di quelle fasi o ad esempio aggiungerne altre. Tutte le ulteriori informazioni si possono consultare nella sezione dedicata alla [Workstation](/docs/production/mes/workstation).     
+Postupak može prepoznati radnu stanicu na kojoj operater radi. Ako je radnoj stanici dodijeljen radni centar, automatski će učitati sve faze koje su bile u radu na tom radnom centru. Tada operater može odabrati hoće li nastaviti s izvještavanjem o tim fazama ili dodati nove. Sve dodatne informacije možete pronaći u odjeljku posvećenom [Workstation](/docs/production/mes/workstation).     
 
-- **Risorsa**      
-Il campo *Risorsa*, viene utilizzato per inserire un qualsiasi tipo di risorsa di produzione.     
-Nel caso in cui venga inserita una risorsa di tipo *Centro di lavoro*, questo verrà sostituito automaticamente anche nel relativo campo del *Centro di lavoro*, andando di conseguenza a caricare le fasi inerenti al nuovo centro appena inserito.    
-Nel caso in cui, invece venga inserita una risorsa di tipo *Dipendente*, questo sarà utilizzato come utente di dichiarazione. L'inserimento di una risorsa di tipo dipendente è richiesto obbligatoriamente nel caso in cui sia attivo il flag *Operatore obbligatorio* presente nel tab *Generali* delle [Risorse di produzione](/docs/production/mes/production-resources).        
+- **Resurs**      
+Polje *Resursa* koristi se za unos bilo koje vrste proizvodnog resursa.      
+Ako se unese resursa tipa *Radni centar*, automatski će se ažurirati i odgovarajuće polje *Radni centar*, što će rezultirati učitavanjem faza povezanih s novim centrom.  
+Ako se unese resursa tipa *Djelatni*, koristit će se kao korisnik izvještavanja. Unos resursa tipa *Djelatnik obavezan* je u slučaju aktiviranja oznake Obavezni operater u kartici *Općenito* [Proizvodnih resursa](/docs/production/mes/production-resources).        
 
-- **Centro di lavoro**
-Indica il centro di lavoro su cui l'operatore sta facendo la dichiarazione; è possibile visualizzare solo i centri di lavoro legati alla *Workstation*. Nel caso in cui, la *Workstation* non sia stata inserita, oppure non sia stato associato nessun *Centro di lavoro* alla *Workstation*, sarà possibile visualizzare tutte le *Risorse di produzione* di tipo *Centro di lavoro*.    
+- **Radni centar**
+označava radni centar na kojem operater obavlja izvještavanje; mogu se prikazati samo Radni centri povezani s *Radnom stanicom*. Ako *Radna stanica* nije unesena ili joj nije dodijeljen *Radni centar*, bit će moguće prikazati sve *Proizvodne resurse* tipa *Radni centar*.  
 
-- **Fasi in lavoro**
-Le fasi possono essere aggiunte all'interno della griglia tramite il campo *Codice barcode*, oppure utilizzando il pulsante specifico *Seleziona nuove fasi* presente nel menù di destra. La griglia contiene una serie di informazioni relative alla commessa, all'ordine di produzione, al progetto, alla variante, ecc... 
-Tutte queste informazioni possono essere rese visibili o nascoste tramite la gestione nel tab *Layout* delle [Risorse di produzione](/docs/production/mes/production-resources).   
-Per la riga selezionata, sulla parte destra della griglia, è possibile visualizzare l'immagine di default inserita nell'[Anagrafica articolo](/docs/erp-home/registers/items/create-new-items/item-registry/images); inoltre, con il doppio click verrà visualizzata a tutto schermo.       
+- **Faze u radu**
+faze se mogu dodati unutar mreže koristeći polje *Šifra barkoda* ili korištenjem posebnog gumba *Odaberi nove faze* u desnom izborniku. Mreža sadrži različite informacije o narudžbi, proizvodnom nalogu, projektu, varijanti, itd.   
+Sve te informacije mogu se prikazati ili sakriti putem upravljanja u kartici *Layout* [Proizvodnih resursa](/docs/production/mes/production-resources).   
+Za odabrani redak u mreži, na desnoj strani, moguće je vidjeti zadano sliku iz  [Šifarnik artikla](/docs/erp-home/registers/items/create-new-items/item-registry/images); također, dvostrukim klikom na sliku možete je prikazati u cijelom zaslonu.    
                 
-### Tab Produzione      
+### Kartica Proizvodnja   
 
-*Pulsanti specifici*:
+*Posebni gumbi*:
 
-> *Pulisci risorsa*: permette di rimuovere il valore inserito nel campo *Risorsa*;    
-> *Seleziona nuove fasi*: permette di aprire un help per selezionare nuove fasi da aggiungere a quelle presenti nella griglia principale;      
-> *Elimina fase*: permette di rimuove la fase o le fasi selezionate dalla griglia principale.    
+> *Obriši resursu*: mogućuje uklanjanje unosa u polju *Resursa*;    
+> *Odaberi nove faze*: otvara pomoć za odabir novih faza koje će se dodati u glavnu mrežu;      
+> *Obriši fazu*: omogućuje uklanjanje odabrane faze ili faza iz glavne mreže.     
 
-Il tab **Produzione** è dedicato all'inserimento delle informazioni relative ai tempi di produzione / setup e alle quantità prodotte / scartate. Questo è l'unico che non può essere reso invisibile e si compone dei seguenti campi:
-> **Macchina**: in questo campo viene proposta di default la *Macchina* che è indicata nel *Centro di lavoro* se la fase deve essere ancora iniziata, mentre se sono già state inserite delle dichiarazioni, propone quella della dichiarazione precedente. Inoltre, è comunque possibile variarla manualmente, ma solo con una delle macchine alternative indicate nell'anagrafica della macchina principale;      
-> **Tempo lavoro**: permette di visualizzare / modificare manualmente il tempo di lavoro; è possibile variarne il comportamente tramite i flag *Inserimento tempo manuale* e *Tempo proposto* presenti in [Risorse di produzione](/docs/production/mes/production-resources). Il tempo viene calcolato automaticamente come differenza tra il tempo della dichiarazione attuale e della precedente;                   
-> **Tempo setup**: permette di inserire / modificare manualmente il tempo di lavoro;         
-> **Quantità prodotta**: permette di inserire la quantità prodotta con quella dichiarazione;         
-> **Quantità alternativa**: permette di inserire la quantità alternativa prodotta con quella dichiarazione;      
-> **Magazzino versamento**: indica il magazzino di carico dei prodotti realizzati con la dichiarazione;       
-> **Causale versamento**: indica la causale di carico dei prodotti realizzati con la dichiarazione;       
-> **Ubicazione versamento**: indica l'ubicazione di carico dei prodotti realizzati con la dichiarazione;       
-> **Magazzino versamento scarto**: indica il magazzino di scarico dei prodotti realizzati e scartati con la dichiarazione;       
-> **Causale versamento scarto**: indica la causale di scarico dei prodotti realizzati e scartati con la dichiarazione;       
-> **Ubicazione versamento scarto**: indica l'ubicazione di scarico dei prodotti realizzati e scartati con la dichiarazione;       
-> **Difetto**: indica il difetto di scarico dei prodotti realizzati e scartati con la dichiarazione; è attivabile un controllo dedicato tramite il flag *Difetto obbligatorio se dichiarato scarto* presente in [Risorse di produzione](/docs/production/mes/production-resources);           
-> **Causale di sospensione**: indica la causale di sospensione che viene utilizzata nella dichiarazione; nel caso in cui un operatore crei una sospensione, senza indicare la causale di sospensione, verrà utilizzata la causale di default indicata nel campo *Causale di sospensione proposta* presente nella form delle [Risorse di produzione](/docs/production/mes/production-resources).       
+Kartica **Proizvodnja** je posvećena unosu informacija o vremenima proizvodnje / postavljanja i količinama proizvedenih / odbačenih. Ovo je jedina kartica koja ne može biti skrivena i sastoji se od sljedećih polja:  
+> **Stroj**: ovdje je pretpostavljena zadani *Stroj* koja je navedena u *Radnom centru* ako faza još nije započela, dok ako su već unesene izjave, nudi onu iz prethodne izjave. Također je moguće ručno je promijeniti, ali samo na jednu od alternativnih mašina navedenih u evidenciji glavne mašine;      
+> **Radno vrijeme**: omogućuje ručni prikaz / izmjenu radnog vremena; ponašanje se može promijeniti putem zastavica *Ručni unos vremena* i *Predloženo vrijeme* prisutnih u [Resursima proizvodnje](/docs/production/mes/production-resources). Vrijeme se automatski izračunava kao razlika između vremena trenutne i prethodne izjave;                   
+> **Vrijeme postavljanja**: omogućuje ručni unos / izmjenu vremena postavljanja;         
+> **Proizvedena količina**: omogućuje unos količine proizvedene s tom izjavom;          
+> **Alternativna količina**: omogućuje unos alternativne količine proizvedene s tom izjavom;      
+> **Skladište za odlaganje**: pokazuje skladište za učitavanje proizvoda proizvedenih s izjavom;       
+> **Predložak odlaganja**: označava prdložak učitavanja proizvoda proizvedenih s izjavom;       
+> **Lokacija plaćanja**: pokazuje lokaciju učitavanja proizvoda proizvedenih s izjavom;       
+> **Skladište za odlaganje otpada**: pokazuje skladište za ispraznjenje odbačenih proizvoda proizvedenih s izjavom;       
+> **Predložak odlaganja otpada**: označava predložak ispraznjenja odbačenih proizvoda proizvedenih s izjavom;       
+> **Lokacija plaćanja otpada**: pokazuje lokaciju ispraznjenja odbačenih proizvoda proizvedenih s izjavom;       
+> **Nedostatak**: označava odbačeni nedostatak proizvoda proizvedenih s izjavom; moguće je aktivirati posebnu kontrolu putem zastavice *Obavezni nedostatak ako je izjavljeno odbačeno* prisutne u [Resursima proizvodnje](/docs/production/mes/production-resources);           
+> **Predložak zastoja**: označava predložak suspenzije koji se koristi u izjavi; u slučaju da operater stvori suspenziju bez navođenja uzroka suspenzije, koristi se zadani predložak naveden u polju *Predloženi uzrok suspenzije* u kartici [Resursa proizvodnje](/docs/production/mes/production-resources).       
 
-È possibile modificare il funzionamento e il layout della form tramite la gestione delle [Risorse di produzione](/docs/production/mes/production-resources).      
+Moguće je promijeniti funkcioniranje i layout obrasca putem upravljanja  [Resursima proizvodnje](/docs/production/mes/production-resources).      
 
-### Tab Controlli qualità
+### Kartica Kontrole kvalitete
 
-*Pulsanti specifici*:
+*Posebni gumbi*:
 
-> **Seleziona articoli da controllare**: 
-> **Importa tutti gli articoli**: 
+> *Odaberite stavke*: omogućuje odabir koje artikle uključiti u tablicu kontrole kvalitete između proizvedenih ili odbačenih;       
+> *Uvezi sve*: omogućuje unos svih proizvedenih ili odbačenih artikala u tablicu kontrole kvalitete;     
+> *Izbriši kontrolu*: omogućuje brisanje odabrane kontrole;           
+> *Dupliciraj test*: omogućuje dupliciranje odabranog testa;       
+> *Elimina prova*: omogućuje brisanje odabranog testa.   
 
-Work in progress 
+Ova kartica omogućuje upravljanje kontrolama kvalitete za proizvedene i/ili odbačene artikle. 
 
-È possibile modificare il funzionamento e il layout della form tramite la gestione delle [Risorse di produzione](/docs/production/mes/production-resources). 
+Redovi se mogu dodavati u tablicu *Kontrole kvalitete* pomoću dva specifična gumba.          
+U ovoj tablici prikazani su sljedeći podaci:
+> *Klasa*: označava klasu artikla;          
+> *Šifra artikla*: označava šifru artikla;          
+> *Varijanta*: označava varijantu artikla;    
+> *Detalj artikla za razmatranje*: indica il massimo dettaglio dell'articolo che si va a considerare per effettuare i test (Nijedan, Lot, S.B., Transportna jedinica). Ovo se odabire u tablici Kontrole kvalitete u upravljanju [Resursima proizvodnje](/docs/production/mes/production-resources);             
+> *Ref. detalj*: označava vrijednost *Detalja artikla za razmatranje*, npr. broj serije;          
+> *J.M*: označava jedinicu mjere artikla;    
+> *Količina*: označava količinu artikla;    
+> *Otpad*: ako je aktivno, označava da je količina odbačena; ako nije aktivno, označava da je količina proizvedena, a ne odbačena;             
+> *Opis artikla*: označava opis artikla;          
+> *Opis varijante*: označava opis varijante.      
 
-### Tab Lotti e S/N
+Ako je faza u proizvodnom nalogu podložna kontroli kvalitete i već je pridružen plan kontrole (koji se nasljeđuje iz faze standardnog radnog ciklusa, ali se naravno može ručno promijeniti i u planiranom i u proizvodnom nalogu), testovi povezani s naznačenim planom kontrole automatski će se prikazati u tablici *Testovi*.      
 
-*Pulsanti specifici*:
+Tablica *Testovi* sastoji se od sljedećih polja:        
+> *Redoslijed*: označava redoslijed testova za provođenje;          
+> *Način testiranja*: označava šifru testa koji se mora provesti;         
+> *Opis način testiranja*: označava opis testa koji se mora provesti;             
+> *Alat za kategorije*: označava kategoriju korištenog instrumenta;           
+> *Vrsta iznosa*: označava je li vrijednost Tekstualna, *Da/Ne* ili *Numerička*;      
+> *Vrsta granice*: omogućuje označavanje *Vrste granice*; omogućuje se samo ako je *Vrsta vrijednosti* *Numerička*;       
+> *Vrijednost jedinice mjere*: označava jedinicu mjere vrijednosti;           
+> *Nominalna vrijednost*: označava numeričku vrijednost koju test treba imati;      
+> *Minimalna granica / Maksimalna granica*: označavaju minimalnu i maksimalnu granicu pogreške koju ispitivanje može imati, u postotku ili apsolutnoj vrijednosti, ovisno o zastavici *%*; *Minimalna granica* se oduzima od *Nominalne vrijednosti*, dok se *Maksimalna granica* zbraja;
+> *L. min (tolerancija -/+) / L. max (tolerancija -/+)*: označava tolerancije na minimalne i maksimalne granice koje se dodaju prethodnim tolerancijama; može, na primjer, uključivati nesigurnost u jedinici mjere; to je postotna vrijednost              
+> *%*: označava jesu li vrijednosti izražene u postotcima ili su apsolutne;               
+> *Vrsta kontrolnog testa*: označava vrstu kontrolnog testa;        
+> *Frekvencija*: označava učestalost testiranja;       
+> *Alat za mjerenje*: označava korišteni instrument, ako postoje vrijednosti koje treba izmjeriti; sastoji se od koda / kategorije;      
+> *Otkrivena vrijednost*: označava izmjerenu vrijednost (koristi se ako imam jednu vrijednost);      
+> *Prosjek zabilježenih vrijednosti*: označava prosječnu vrijednost izmjerene vrijednosti (vrijednost se postavlja na temelju unesenih vrijednosti u tablici **Višestruko mjerenje**);      
+> *Rezultat*: označava rezultat testa i automatski se određuje na temelju unesenih parametara;       
+> *Količina neusklađenih*: označava količinu koja je utvrđena kao neusklađena;        
+> *Skladište*: označava skladište u kojem se nalaze neusklađeni artikli; ova se vrijednost automatski prikazuje na temelju onoga što je naznačeno u *Vrsti kontrole artikla*;                    
+> *Predložak skladištenja za neusklađene artikle*: označava uzrok koji će se koristiti za ispis neusklađenih artikala; ova se vrijednost automatski prikazuje na temelju onoga što je naznačeno u *Vrsti kontrole artikla*. Ova promjena događa se prilikom prijave proizvodne izjave;                    
+> *Napomena*: omogućuje unos slobodne napomene.     
 
-> *Genera*: permette di generare i lotti e i serial number;        
-> *Elimina*: permette di eliminare il lotto / serial number selezionato.       
+Tablica **Detekcija višestrukih vrijednosti** koristi se u slučaju kada se mjeri više vrijednosti i one će doprinijeti određivanju *Prosjek izmjerenih vrijednosti*.
+Sastoji se od sljedećih stupaca:  
+> *Redoslijed*: označava redoslijed izmjerenih vrijednosti;      
+> *Pozicija*: opisno polje koje omogućuje da se navede na kojem se mjestu mjerenje obavilo;       
+> *Alat za mjerenje*: označava instrument korišten za to mjerenje;              
+> *Otkrivena vrijednost*: označava izmjerenu vrijednost;           
+> *Napomena*: omogućuje unos slobodne napomene.   
 
-In questo tab è possibile visualizzare tutti gli articoli realizzati con l'indicazione delle relative quantità prodotte e scartate; inoltre, attraverso le apposite griglie è possibile inserire / modificare le informazioni relative ai *Lotti* e *Serial number*.         
+Moguće je promijeniti funkcioniranje i izgled obrasca putem upravljanja  [Resursima proizvodnje](/docs/production/mes/production-resources). 
 
-È possibile modificare il funzionamento e il layout della form tramite la gestione delle [Risorse di produzione](/docs/production/mes/production-resources).     
+Više detalja o području upravljanja kvalitetom dostupno je u [Kvaliteti](/docs/quality/quality-intro).          
 
-### Tab Etichette
+### Kartica Lotova i S/B 
 
-*Pulsanti specifici*:
+*Posebni gumbi*:
 
-> *Nuova*: permette di creare una riga per l'inserimento una nuova etichetta;          
-> *Cancella*: permette di cancellare la riga dell'etichetta selezionata;       
-> *Nuova UDC*: permette di rigenerare il codice dell'UDC selezionata;      
-> *Stampa selezione*: permtte di stampare solo le etichette selezionate;       
-> *Stampa tutto*: permette di stampare tutte le etichette.          
+> *Generirati*: omogućuje generiranje lotova i serijalnih brojeva;        
+> *Izbriši*: omogućuje brisanje odabranog lota / serijalnog broja.      
 
-Nel tab **Etichette** vengono create automaticamente le etichette inerenti agli articoli prodotti.
-La quantità di articoli per ciascuna etichetta è determinata dalle informaizoni inserite nell'anagrafica articolo come segue:
-1. Tab *Confezionamento*: considera l'UDC e la quantità inserite nella riga con il flag "Unità di carico obbligatoria" attivo;       
-2. Tab *Peso/Dimensioni*: considera l'UDC e la quantità inserite nei campi *Tipo unità di carico* e *Numero articoli per unità di carico*;    
-3. Tab *Peso/Dimensioni* > *Numero colli*: considera la quantità inserita in *Articoli presenti in un collo*; in questo caso non verrà proposta l'UDC.
+Na ovoj kartici moguće je pregledati sve artikle koji su proizvedeni s prikazom pripadajućih količina proizvedenih i odbačenih; također, kroz odgovarajuće tablice moguće je unijeti / izmijeniti informacije o *Lotovima* i *Serijalnim Brojevima*.         
 
-Inoltre, l'operatore povrà inserire manualmente o tramite il campo *Codice barcode* *Lotti* e *Serial number* se necessari.      
-Il campo **Stato stampa** può assumere i valori di *Non stampato*, *Stampato* o *Ristampato* in base al numero di volte che l'etichetta è stata stampata.
+Moguće je promijeniti funkcioniranje i izgled obrasca putem upravljanja  [Resursima proizvodnje](/docs/production/mes/production-resources).     
 
-È possibile modificare il funzionamento e il layout della form tramite la gestione delle [Risorse di produzione](/docs/production/mes/production-resources).     
+### Kartica Etikete
 
-### Tab Materiali
+*Posebni gumbi*:
 
-Nel tab **Materiali** vengono riportati automaticamente i materiali consumati in base alla quantità dell'articolo padre da produrre e alla sua distinta base; solo nel caso in cui sia attivo il flag **Dichiarazione quantità materiale obbligatoria** presente nel tab *Generali* della gestione delle [Risorse di produzione](/docs/production/mes/production-resources), il materiale verrà proposto con quantità zero e l'operatore sarà costretto ad inserirlo manualmente.   
-Inoltre, è possibile indicare le quantità scartate di ogni singolo materiali con anche magazzino e causale di scarto; attraverso le apposite griglie è possibile inserire / modificare le informazioni relative ai *Lotti* e *Serial number* relativi al singolo materiale selezionato.            
+> *Nova*: omogućuje stvaranje retka za unos nove etiketea;            
+> *Izbriši*: omogućuje brisanje odabranog retka etikete;       
+> *Nova Transportne jedinica*: omogućuje ponovno generiranje koda odabrane Transportne jedinice;      
+> *Ispis odabira*: omogućuje ispis samo odabranih etiketa;       
+> *Ispis svega*: omogućuje ispis svih etiketa.            
 
-È possibile modificare il funzionamento e il layout della form tramite la gestione delle [Risorse di produzione](/docs/production/mes/production-resources).     
+Na kartici **Etiketa** automatski se stvaraju etikete za proizvedene artikle.   
+Količina artikala za svaku etiketu određena je informacijama unesenima u osnovne podatke o artiklu kako slijedi:  
+1. Kartica *Pakiranje*: uzima u obzir Transportnu jedinicu i količinu unesenu u retku s aktivnim oznakom "Obavezna jedinica utovara";       
+2. Kartica *Težina/Dimenzije*: uzima u obzir transportnu jedinicu i količinu unesenu u poljima *Vrsta jedinice utovara* i *Broj artikala po jedinici utovara*;    
+3. Kartica *Težina/Dimenzije* > *Broj paketa*: uzima u obzir količinu unesenu u  *Poljima prisutnih Artikala u paketu*; u ovom slučaju transportnu jedinicu neće biti ponuđen.
 
-### Tab Squadra
+Također, operater može ručno unijeti ili putem polja *Barkod kod* *Serijski broj* e *Serial number* ako je potrebno.      
+Polje **Stanje ispisa** može imati vrijednosti *Nije ispisano*, *Ispisano* ili *Ponovno ispisano* ovisno o broju puta koliko je etiketa bila ispisana.
 
-*Pulsanti specifici*:
+Možete promijeniti rad i izgled obrasca putem upravljanja [Proizvodnim resursima](/docs/production/mes/production-resources).     
 
-> *Entra in squadra*: permette di inserire un o più operatori all'interno della squadra di lavoro;        
-> *Esci in squadra*: permette di fare uscire un o più operatori dalla squadra di lavoro;      
-> *Sostituisce operatore*: permette di sostituire un operatore (attivo) con un altro mantenendo le date/ore di ingresso e uscita dalla squadra;        
-> *Rimuovi da squadra*: permette di rimuovere la riga relativa all'operatore selezionato.        
+### Kartica Materijali
 
-Il tab **Squadra** si compone di due sezioni:
-> Elenco operatori attivi: permette di inserire e visualizzare gli operatori attivi nella dichiarazione di produzione; il primo operatore inserito assume il flag di *Capo squadra* (ch epuò essere cambiato manualmente);            
-> Elenco operatori non attivi: permette di visualizzare gli operatori non più attivi (che hanno lavorato su questa o questi fasi nelle dichiarazioni precedenti).
+Na kartici **Materijali** automatski se prikazuju materijali koji su potrošeni na osnovu količine glavnog artikla koji se treba proizvesti i njegove osnovne strukture; samo ako je aktivna opcija  **Obavezna je ručna deklaracija materijala** u općim podacima upravljanja  [Proizvodnim resursima](/docs/production/mes/production-resources), materijal će biti ponuđen s označenom žutom bojom i količinom nula, te će operater biti prisiljen da ga ručno unese.     
+Također, moguće je navesti količine odbačenog svakog pojedinog materijala uz informacije o skladištu i predlošku odbačaja; putem odgovarajućih tablica mogu se unijeti / promijeniti informacije o *Lotove* i *Serijskim brojevima* za odabrani pojedinačni materijal.            
 
-È possibile modificare il funzionamento e il layout della form tramite la gestione delle [Risorse di produzione](/docs/production/mes/production-resources).  
+Moguće je mijenjati rad i izgled obrasca putem upravljanja [Proizvodnim resursima](/docs/production/mes/production-resources).     
 
-### Tab Analisi
+### Kartica Tim 
 
-Il tab **Analisi** è dedicato alla visualizzazione e consultazione dei dati relativi alle performance dell'attività di produzione; questo si compone di tre sezioni:
-- Diagrammi OOE
-- Diagrammi a barre: **Analisi quantità** e **Analisi tempo**
-- Tabelle: **Valori quantità** e **Valori tempi** 
+*Posebni gumbi*:
 
-L'**OEE**, **Overall Equipment Effectiveness** (Efficienza complessiva della risorsa produttiva) è un indice di performance (KPI) per misurare la capacità produttiva di una azienda di produzione.
+> *Pridružite se timu*: omogućuje unos jednog ili više operatera u radnu ekipu;        
+> *Izađite iz tima*: omogućuje izlazak jednog ili više operatera iz radne ekipe;     
+> *Zamijeni operatera*: omogućuje zamjenu aktivnog operatera s drugim, zadržavajući datume/sate ulaska i izlaska iz ekipe;      
+> *Ukloni iz tima*: omogućuje uklanjanje retka vezanog za odabranog operatera.   
 
-Il valore **OEE** è costituito dai seguenti tre fattori:
-- **Disponibilità operativa (Availability)**: Percentuale del tempo lavorato (B) rispetto al tempo disponibile (A).
-Si utilizza il rapporto tra il tempo disponibile di lavoro dell'impianto (A) rispetto al reale tempo in cui l'impianto ha prodotto (B).
-- **Tempi lavorazione (Performance) - Efficienza**: Percentuale tra gli articoli realmente lavorati (D) rispetto agli articoli teoricamente lavorabili (C).
-Nella pianificazione vengono calcolati gli articoli lavorabili a regime ottimale (C), eventuali riduzioni di tali performance indicano un calo produttivo (D).
-- **Qualità del prodotto (Quality)**: È il rapporto percentuale tra gli articoli conformi (F) rispetto agli articoli prodotti (E).
-Si evidenziano in tal modo cali produttivi relativi a scarti o rilavorazioni che incidono sull'inefficienza generale.
-- **Efficienza complessiva (OEE)**: Deriva dal calcolo dalle tre precedenti analisi ed è dato da: 
+Kartica **Tim** se sastoji od dva dijela:   
+> Popis aktivnih operatera: omogućuje unos i pregled aktivnih operatera u proizvodnoj deklaraciji; prvi uneseni operater dobiva oznaku *Vođe tima* (koju je moguće ručno promijeniti);          
+> Popis neaktivnih operatera: omogućuje pregled neaktivnih operatera (koji su radili na ovoj ili ovim fazama u prethodnim deklaracijama).
+
+Moguće je mijenjati funkcionalnost i izgled forme putem upravljanja [Proizvodnim resursima](/docs/production/mes/production-resources).  
+
+### Kartica Analiza 
+
+Kartica **Analiza** namijenjena je pregledu i konzultaciji podataka o performansama proizvodnje. Sastoji se od tri dijela:  
+- OEE dijagrami 
+- Stupčasti dijagrami: **Analiza količina** i **Analiza vremena**
+- Tablice: **Vrijednosti količina** i **Vrijednosti vremena** 
+
+**OEE**, **Overall Equipment Effectiveness** (Ukupna učinkovitost opreme), je ključni pokazatelj performansi (KPI) koji mjeri proizvodne kapacitete tvrtke.
+
+Vrijednost **OEE** sastoji se od sljedećih triju faktora: 
+- **Operativna dostupnost (Availability)**: postotak radnog vremena (B) u odnosu na raspoloživo vrijeme (A).   
+Koristi se omjer između planiranog radnog vremena postrojenja (A) i stvarnog vremena tijekom kojeg je postrojenje proizvodilo (B).
+- **Vrijeme obrade (Performance) – Učinkovitosta**: efikasnost je postotak stvarno obrađenih artikala (D) u odnosu na teoretski moguće obrađene artikle (C).   
+U planiranju se računaju artikli koji bi se mogli obraditi pri optimalnom kapacitetu (C), a smanjenje ovih performansi može ukazivati na pad u proizvodnji (D).
+- **Kvaliteta proizvoda (Quality)**: to je postotak ispravnih artikala (F) u odnosu na ukupno proizvedene artikle (E).   
+Ovo jasno pokazuje pad u proizvodnji zbog odbačenih proizvoda ili potrebe za radnim zahvatima koji utječu na opću učinkovitost.
+- **Ukupna učinkovitost resursa (OEE)**: Ovaj se izračun dobiva iz prethodno navedenih analiza i definira se kao:  
 
 OEE = Availability * Performance * Quality * 100 = B/A * D/C * F/E * 100
 
-L'indice di **Efficienza complessiva** può essere calcolato con o senza l'attrezzaggio.
+**Ukupna učinkovitost** resursa može se izračunati s ili bez uključenog vremena za pripremu opreme.
 
-Nella sezione dei diagrammi a barre sono presenti i diagrammi **Analisi quantità** e **Analisi tempo** nei quali è possibile visualizzare i dati di quantità e tempi preventivi e quelli  
-consuntivi dichiarati fino a quel momento.      
+U odjeljku sa stupčastim dijagramima nalaze se dijagrami za **Analizu količina** i **Analizu vremena**, gdje možete vidjeti podatke o planiranim i stvarnim količinama i vremenima do tog trenutka.      
 
-Nelle tabelle presenti nell'ultima sezione, è ancora possibile visualizzare i dati di quantità e tempi preventivi e quelli consuntivi dichiarati fino a quel momento, ma in questo caso sottoforma di dati tabellari.
+U tablicama u posljednjem dijelu možete također pregledati planirane i stvarne količine i vremena do tog trenutka, ali u obliku tabularnih podataka.
 
-I dati riportati in tutte le sezioni del tab **Analisi** sono relativi alle fasi selezionate, nel caso in cui non sia selezionata nessuna delle fasi i dati riportatati rappresenteranno il totale di tutte le fasi presenti nella griglia *Fasi in lavoro*.
+Podaci prikazani u svim sekcijama kartice **Analize** odnose se na odabrane faze. Ako nisu odabrane nikakve faze, prikazani podaci će predstavljati ukupnost svih faza navedenih u mreži *Faze u radu*.
 
-È possibile modificare il funzionamento e il layout della form tramite la gestione delle [Risorse di produzione](/docs/production/mes/production-resources).  
+Moguće je prilagoditi funkcionalnost i izgled obrasca putem upravljanja [Proizvodnim resursima](/docs/production/mes/production-resources).  
 
-### Tab Documenti e Istruzioni operative
+### Kartica Dokumenti i Operativne upute 
 
-Questo tab si compone delle sezioni **Documenti** e **Istruzioni operative**.
+Ovaj kartica sastoji se od sekcija **Dokumenti** i **Operativne upute**.
 
-La sezione **Documenti**, a sua volta si suddivide in:
-> **Documenti allegati alla fase selezionata**: permette di visualizzare tutti i documenti allegati all'*Anagrafica articolo*, all'*Ordine cliente*, alla *Commessa di produzione*, all'*Ordine di produzione*, in accordo con quanto indicato nella tab *Gestione documentale* presente nelle [Risorse di produzione](/docs/production/mes/production-resources);       
-> **Documenti allegati alla segnalazione della fase selezionata**: permette di consultare o allegare direttamente alla dichiarazione dei nuovi documenti anche tramite drag & drop.      
+Sekcija **Dokumenti** dalje se dijeli na:
+> **Dokumenti priloženi odabranoj fazi**: omogućuje pregled svih dokumenata povezanih s *Šifarnikom proizvoda*, *Narudžbom Kupca*, *Proizvodnom narudžbom* i *Narudžbom za proizvodnju* sukladno uputama u *Upravljanju Dokumentacijom* dostupnim u [Resursima za proizvodnju](/docs/production/mes/production-resources);       
+> **Dokumenti povezani s prijavom odabrane faze**: omogućuje pregled ili pričvršćivanje novih dokumenata izravno na izjavu, uključujući metodu povlačenja i ispuštanja;  
+> **Operativne upute**: omogućuje pregled svih dokumenata povezanih s fazom proizvodnog ciklusa.        
 
-È possibile modificare il funzionamento e il layout della form tramite la gestione delle [Risorse di produzione](/docs/production/mes/production-resources).  
+Moguće je prilagoditi funkcioniranje i izgled obrasca putem upravljanja [Proizvodnim resursima](/docs/production/mes/production-resources).  
 
-### Tab Note
+### Kartica napomene  
 
-Il tab si compone di due sezioni:            
-> **Elenco note (seleziona una fase)**: permette di consultare e visualizzare le note relative alla fase selezionata; le note che vengono visualizzate in questa tabella sono prese direttamente dalle fasi del ciclo di lavoro e puù precisamente dal tab *Annotazioni*;                
-> **Elenco note segnalazione**: permette di inserire e consultare le note relative alla dichiarazione in corso.     
+Ova kartica sastoji se od dvije sekcije:           
+> **Popis bilješki (odaberite fazu)**: omogućuje pregled i prikaz bilješki koje se odnose na odabranu fazu; bilješke koje se prikazuju u ovoj tablici direktno su preuzete iz faza radnog ciklusa, konkretno iz kartice *Napomene*;                
+> **Popis napomena o prijavi**: omogućuje unos i pregled bilješki koje se odnose na trenutnu izjavu.     
 
-È possibile modificare il funzionamento e il layout della form tramite la gestione delle [Risorse di produzione](/docs/production/mes/production-resources).  
+Moguće je prilagoditi funkcioniranje i izgled obrasca putem upravljanja [Proizvodnim resursima](/docs/production/mes/production-resources).  
 
-### Tab Segnalazioni precedenti
+### Kartica Prethodne obavijesti
 
-Questo tab permette di visualizzare tutte le segnalazioni precedenti relative alla fase selezionata.
+Ova kartica omogućava pregled svih prethodnih obavijesti koje se odnose na odabranu fazu.
 
-È possibile modificare il funzionamento e il layout della form tramite la gestione delle [Risorse di produzione](/docs/production/mes/production-resources).  
+Moguće je prilagoditi funkcioniranje i izgled obrasca putem upravljanja [Proizvodnim resursima](/docs/production/mes/production-resources).  
 
-### Tab ExtraData
+### Kartica Dodatni podaci
 
-Questo tab si compone di due griglie:
-> *Elenco extra data (selezionare una fase)*: permette di gestire gli extra data relativi alla fase selezionata;       
-> *Elenco extra data segnalazione*: permette di gestire gli extra data relativi alla dichiarazione che si sta eseguendo.       
+Ova kartica sastoji se od dvije rešetke:  
+> *Popis dodatnih podataka (odaberite fazu)*: omogućuje upravljanje dodatnim podacima koji se odnose na odabranu fazu;         
+> *Popis dodatnih podataka o prijavi*: omogućuje upravljanje dodatnim podacima koji se odnose na trenutnu izjavu.      
 
-È possibile modificare il funzionamento e il layout della form tramite la gestione delle [Risorse di produzione](/docs/production/mes/production-resources).  
+Moguće je prilagoditi funkcioniranje i izgled obrasca putem upravljanja [Proizvodnim resursima](/docs/production/mes/production-resources).  
 
 

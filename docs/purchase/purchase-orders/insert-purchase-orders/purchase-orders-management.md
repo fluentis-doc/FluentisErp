@@ -12,7 +12,7 @@ Questo campo determina il range di numerazione del documento che si sta inserend
 - **Anno**: viene inserito automaticamente l'anno in corso, ma può essere modificato manualmente sempre rispettando la regola di progressione tra data e numero;  
 - **Numero**: viene proposto automaticamente in base al tipo, ma può essere modificato manualmente sempre rispettando la regola di progressione tra data e numero;  
 - **Data inserimento**: viene proposta automaticamente la data corrente, ma può essere modificata manualmente sempre rispettando la regola di progressione tra data e numero;  
-- **Fornitore**: può essere inserito usando l'[help di campo](/docs/guide/operations-with-data/manual-entry-or-help-and-data-selection#inserimento-con-il-help-di-campo)  oppure   [manualmente](/docs/guide/operations-with-data/manual-entry-or-help-and-data-selection#inserimento-manuale).
+- **Fornitore**: può essere inserito usando l'[help di campo](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection#inserimento-con-il-help-di-campo)  oppure   [manualmente](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection#inserimento-manuale).
 
 La form contiene una serie di tab:
 

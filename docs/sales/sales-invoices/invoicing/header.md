@@ -4,8 +4,8 @@ sidebar_position: 2
 ---
 
 Dopo aver selezionato i dati obbligatori nella sezione superiore, l'utente può continuare l'inserimento dei seguenti dati:  
-- [manualmente](/docs/guide/operations-with-data/manual-entry-or-help-and-data-selection)  
-- oppure con l'[help di campo](/docs/guide/operations-with-data/manual-entry-or-help-and-data-selection) 
+- [manualmente](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection)  
+- oppure con l'[help di campo](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) 
 - oppure, in base alle procedure che sceglie, l'applicazione compila i campi **automaticamente**.
 
 :::note Ricorda
@@ -13,9 +13,9 @@ Se il documento viene *creato automaticamente*, questi dati vengono ripresi dal 
 :::
 
 Inserendo il **Cliente**, vengono proposti in automatico tutti i dati specifici del tab **Testata**, secondo i dati impostati in precedenza nell'[anagrafica cliente](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/accounting-data-intro), nei campi corrispondenti al suo indirizzo e nelle *sezioni*:  
-- **Divisa**: sezione contenente i dati [Divisa](/docs/guide/glossary/glossary-intro#currency), [Cambio](/docs/guide/glossary/glossary-intro#currency-exchange), [Data valuta](/docs/guide/glossary/glossary-intro#currency-date).
-- **Nazione**: sezione contenente i dati [Nazione](/docs/guide/glossary/glossary-intro#country), [Lingua](/docs/guide/glossary/glossary-intro#language), [Zona](/docs/guide/glossary/glossary-intro#zone).
-- **Spedizione**: sezione contenente i dati [Spedizione](/docs/guide/glossary/glossary-intro#shipment), [Porto](/docs/guide/glossary/glossary-intro#carriage), [Imballo](/docs/guide/glossary/glossary-intro#packing), [Listino](/docs/guide/glossary/glossary-intro#sales-price-list) (in testata documento viene inserito il listino inserito in anagrafica cliente con il flag Default) con il tipo scaglione di sconto e il suo [intervallo di validità](/docs/guide/glossary/glossary-intro#validity-date).
+- **Divisa**: sezione contenente i dati [Divisa](/docs/guide/common/glossary/glossary-intro#currency), [Cambio](/docs/guide/common/glossary/glossary-intro#currency-exchange), [Data valuta](/docs/guide/common/glossary/glossary-intro#currency-date).
+- **Nazione**: sezione contenente i dati [Nazione](/docs/guide/common/glossary/glossary-intro#country), [Lingua](/docs/guide/common/glossary/glossary-intro#language), [Zona](/docs/guide/common/glossary/glossary-intro#zone).
+- **Spedizione**: sezione contenente i dati [Spedizione](/docs/guide/common/glossary/glossary-intro#shipment), [Porto](/docs/guide/common/glossary/glossary-intro#carriage), [Imballo](/docs/guide/common/glossary/glossary-intro#packing), [Listino](/docs/guide/common/glossary/glossary-intro#sales-price-list) (in testata documento viene inserito il listino inserito in anagrafica cliente con il flag Default) con il tipo scaglione di sconto e il suo [intervallo di validità](/docs/guide/common/glossary/glossary-intro#validity-date).
 
 Elenchiamo gli altri campi disponibili nella testata:
 - **Stampata**: si attiva quando viene lanciata la stampa del documento ed identifica che il documento è stato stampato.      
@@ -47,7 +47,7 @@ import User from './../../../import/fields/user.md'
 
 <User />
 
-- **Progetto**: usando l'[help di campo](/docs/guide/operations-with-data/manual-entry-or-help-and-data-selection) si può collegare il documento a un progetto.  
+- **Progetto**: usando l'[help di campo](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) si può collegare il documento a un progetto.  
 Questa associazione funziona solo a livello della testata dell'articolo.
 - **Audit Trail**: come in tutti i documenti, questa sezione riporta la data di creazione del documento con l'operatore, e la data di ultima modifica del documento con l'operatore.      
 - **Tipo riferimento**: se la fattura proviene da un'altra fattura a causa di uno Storno del documento, qui viene riportato il tipo fattura del documento di origine.     

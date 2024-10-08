@@ -38,7 +38,7 @@ RIBBON BAR: representa o menu do módulo em questão, ou seja, a área na qual 
 
 | RibbonFunction | RibbonMeaning |
 | --- | --- |
-|  [Document manager](/docs/guide/operations-with-data/document-manager)  | Gestão do armazenamento documental associado a máscara em uso. |
+|  [Document manager](/docs/guide/common/operations-with-data/document-manager)  | Gestão do armazenamento documental associado a máscara em uso. |
 
 ÁREA DE FILTRO: a área de filtro é dedicada à hospedagem na lista de possíveis tipos de dados através do qual é possível fazer uma seleção. Os filtros são em condição 'E' e é possível especificar mais critérios de filtro contemporâneos.
 

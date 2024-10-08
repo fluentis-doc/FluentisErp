@@ -6,9 +6,20 @@ sidebar_position: 20
 :::note Percorso
 **Configurazione > Tabelle > Amministrazione > Registri IVA**
 
-Nota:
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
 
+:::tip[FAst Start]
+La tabella è interessata dalla procedura di [**Fast Start**](/docs/guide/fast-start)
+
+Nel caso in cui si intenda configurare manualmente fare riferimento alla check list della pagina linkata
+
+I registri creati dal Fast Start sono già pronti per gestire
+
+- Acquisti e vendite Italia
+- Acquisti e vendite Reverse Charge oltre a sezionale per giroconto acquisti
+- Acquisti e vendite UE oltre a sezionale per giroconto acquisti
+- Acquisti e vendite Extra UE
+- Corrispettivi
+- Riepilogativo per stampa liquidazioni iva
 :::
 
 ---

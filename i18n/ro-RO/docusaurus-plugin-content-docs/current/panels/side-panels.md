@@ -13,6 +13,4 @@ Fluentis oferă posibilitatea de a seta diverse funcționalități:
 
 - **[Fluentis Chat](/docs/panels/chat-fluentis)**: permite interacțiunea cu utilizatorii activați pentru acest serviciu de comunicare, atât intern în contextul companiei, cât și extern pentru a accesa asistența Fluentis.
 
-În stângă avem [Form Navigator](/docs/form-navigator/form-navigator-intro) și partea de jos ** [Bara de stare](/docs/guide/status-bar/status-bar-intro)**.
-
-- [Diverse](/docs/guide/guide-intro): conține o serie de articole care explică generalitățile aplicației ERP și a procedurilor comune.
+În stângă avem [Form Navigator](/docs/form-navigator/form-navigator-intro) și partea de jos ** [Bara de stare.

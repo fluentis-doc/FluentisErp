@@ -1,30 +1,30 @@
 ---
-title: Parametri richieste di acquisto
-sidebar_position: 4
+title: Parametri zahtjeva za kupnju
+sidebar_position: 5
 ---
 
-I parametri delle richieste di acquisto permettono l'impostazione di base per gestire correttamente e secondo le specifiche richieste da ogni singola società.
+Parametri zahtjeva za kupnju omogućuju pravilno upravljanje osnovnom postavkom i prema specifikacijama koje zahtijeva svaka pojedinačna tvrtka.
 
-*Pulsanti*:
+*Gumbi*:
 
-> **Salva**: permette di salvare i parametri impostati.  
-> **Ripristina**: permette di ripristinare i parametri ai valori iniziali.
+> **Spremi**: omogućuje vam spremanje postavljenih parametara.   
+> **Vrati**: omogućuje vraćanje parametara na njihove početne vrijednosti.  
 
-### Generale
+### Općenito
  
 
-**Costo zero in assenza di listini**: il prezzo è ricercato nei listini; se non viene trovato ed è attivo questo flag nella riga di richiesta viene messo prezzo 0. Se non è attivo e non è attivo neanche l'altro parametro e non trova il prezzo in listino, cerca il costo ultimo in anagrafica articolo e se non lo trova mette 0.
+**Trošak nula ako nedostaje cjenik**: cijena se traži u cjenicima; ako nije pronađena, a ova zastavica je aktivna, cijena se postavlja na 0 u retku zahtjeva. Ako nije aktivna, a ni drugi parametar nije aktivan i ne nalazi cijenu na popisu, traži zadnji trošak u matičnim podacima stavke, a ako nije pronađen stavlja 0.  
 
-**Costo ultimo in assenza di listini**: quando è attivo, se non trova il prezzo nel listino e non trova il costo ultimo in anagrafica articoli prende il massimo tra i prezzi presenti nelle richieste di acquisto dello stesso fornitore e articolo.
+**Zadnja cijena ako cjenik nedostaje**: kada je aktivan, ako ne pronađe cijenu na popisu i ne pronađe zadnji trošak u bazi podataka artikla, uzima maksimalnu među cijenama prisutnim u zahtjevima za kupnju isti dobavljač i artikl.
 
-**Esplodi distinta base**: se attivo, all'inserimento di un articolo verrà sostituito dal primo livello della sua distinta base, se esiste. Quindi invece dell'articolo “prodotto finito” l'ordine sarà popolato con la distinta base dell'articolo inserito.
+**Proširi sastavnicu materijala**: sako je aktivno, prilikom umetanja stavke bit će zamijenjeno prvom razinom njegovog popisa materijala, ako postoji. Dakle, umjesto stavke “gotov proizvod”, narudžba će biti popunjena popisom materijala umetnute stavke. 
 
-### Analitica
+### Analitika
 
-In questo tab si specifica con che priorità recuperare il centro di costo (CdC) o centro di profitto (CdP) nella riga documento.
+U ovoj kartici određujete prioritet s kojim želite dohvatiti mjesto troška ili mjesto profita u retku dokumenta.
 
-È possibile modificare le priorità utilizzando i pulsanti:
+Možete promijeniti prioritete pomoću gumba:
 
-> **Sposta su** e **Sposta giù**
+> **Premjesti gore** i **Premjesti dolje**
 
-*Valori di default*: il CDC o CDP viene recuperato dal tipo fatturato qualora presente. Per approfondimenti fare riferimento a tabella [Tipo Fatturato Acquisti](/docs/configurations/tables/purchase/purchase-invoices-type). Qualora non fosse presente nel tipo fatturato il sistema lo cercherà in *Anagrafica fornitore*. Se non presente verrà cercato in *Anagrafica articolo*
+*Zadane vrijednosti*: CDC ili CDP se dohvaćaju iz naplaćene vrste ako postoji. Dodatne informacije potražite u tablici [Vrste prometa kupnje](/docs/configurations/tables/purchase/purchase-invoices-type). Ako nije prisutan u fakturiranoj vrsti, sustav će ga potražiti u *Šifarniku dobavljača*. Ako nije prisutan, tražit će se u *Šifarniku o artiklu*.

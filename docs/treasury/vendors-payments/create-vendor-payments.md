@@ -36,7 +36,7 @@ Sulla testata distinta è presente un flag Autorizzato per rilasciare l'autorizz
 | Cancella pagamenti selezionati | Pulsante per cancellare i pagamenti fornitori creati manualmente o da creazione pagamento da partite. |
 | Crea un pagamento dalle partite  | Pulsante, attivabile dopo aver salvato la testata, per creare un pagamento, acquisendo i dati dall'archivio partite. |
 | Numerazione da |  |
-|  [Documenti](/docs/guide/operations-with-data/document-manager)  | Pulsante per il collegamento alla gestione documentale. |
+|  [Documenti](/docs/guide/common/operations-with-data/document-manager)  | Pulsante per il collegamento alla gestione documentale. |
 
 ---
 

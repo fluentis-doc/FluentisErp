@@ -3,6 +3,14 @@ title: Tipo codice lotto
 sidebar_position: 26
 ---
 
+:::important A cosa serve
+La tabella Tipi Codice Lotto di Fluentis rappresenta uno strumento fondamentale per la personalizzazione e la gestione dei codici lotto utilizzati nella logistica e nella tracciabilità dei prodotti. Questa tabella consente di definire vari tipi di codice lotto in base alle specifiche esigenze aziendali, con l'obiettivo di ottimizzare le operazioni di gestione dei materiali e garantire una corretta identificazione dei lotti.
+
+All'interno di questa tabella, è possibile inserire nuovi codici lotto, specificando sia un codice identificativo che una descrizione associata. Inoltre, è possibile configurare parametri come il valore iniziale del numero progressivo e la gestione dei caratteri alfabetici, permettendo una maggiore flessibilità nella composizione dei codici lotto. È importante notare che ogni tipo di codice deve essere associato all'anagrafica articolo per garantire una corretta integrazione durante le procedure di creazione automatica del lotto.
+
+La configurazione di questi codici lotto non solo facilita il controllo e la tracciabilità, ma si rivela essenziale anche in contesti di gestione multi-magazzino, dove la rintracciabilità delle giacenze diventa fondamentale. Gli utenti possono così navigare attraverso diverse sezioni della tabella per definire in dettaglio le caratteristiche, le associazioni e i progressivi dei lotti, contribuendo a una gestione più efficiente e accurata dei materiali all'interno dell'azienda.
+:::
+
 La tabella si trova sul percorso **Tabelle > Logistica > Tipo codice lotto**.
 
 In questa tabella è possibile codificare i *Tipi di codice lotto* personalizzandoli in base alle esigenze.

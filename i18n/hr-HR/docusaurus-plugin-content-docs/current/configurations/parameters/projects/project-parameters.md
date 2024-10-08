@@ -1,10 +1,10 @@
 ---
-title: Parametri Progetti
+title: Parametri projekta
 sidebar_position: 1
 ---
 
-Questi parametri vengono utilizzati di default se nei documenti non vengono specificati i campi.
+Ovi se parametri koriste prema zadanim postavkama ako polja nisu navedena u dokumentima.  
 
-**Ore giornaliere**: è possibile indicare un orario di lavoro di default (riferirsi alla tabella Home > Orari di lavoro);
+**Dnevni sati**: moguće je označiti zadano radno vrijeme (pogledajte tablicu Početna stranica > Radno vrijeme);
 
-**Turno di lavoro**: indica il turno di lavoro specifico, codificato nella tabella **Turno di Lavoro**.
+**Radna smjena**: označava određenu radnu smjenu, kodiranu u tablici  **Radna smjena**.

@@ -12,7 +12,7 @@ Ili
 
 Otvorit će se obrazac **Šifarnik artikala** s odjeljkom u kojem ćete definirati *obavezne karakteristike* artikla i donjim odjeljkom s različitim Karticama koje grupiraju *specifične karakteristike*.
 
-Osnovne i obavezne karakteristike koje svaki članak mora imati, a koje nalazimo u prvom dijelu obrasca, uključuju: [**Klasa**](/docs/guide/glossary/glossary-intro#item-class), [**Šifra**](/docs/guide/glossary/glossary-intro#item-code), kratak **Opis** i [**Jedinica mjere**](/docs/guide/glossary/glossary-intro#unit-of-measurement).
+Osnovne i obavezne karakteristike koje svaki članak mora imati, a koje nalazimo u prvom dijelu obrasca, uključuju: [**Klasa**](/docs/guide/common/glossary/glossary-intro#item-class), [**Šifra**](/docs/guide/common/glossary/glossary-intro#item-code), kratak **Opis** i [**Jedinica mjere**](/docs/guide/common/glossary/glossary-intro#unit-of-measurement).
 
 :::note BILJEŠKE 
 Komplet razreda i koda mora biti jedinstven za taj određeni članak. 

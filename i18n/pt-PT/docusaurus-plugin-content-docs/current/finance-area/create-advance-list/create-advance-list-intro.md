@@ -25,7 +25,7 @@ RIBBON BAR: representa o menu do módulo em questão, ou seja, a área na qual 
 
 | RibbonFunction | RibbonMeaning |
 | --- | --- |
-|  [Document manager](/docs/guide/operations-with-data/document-manager)  | Botão para a ligação com a gestão documental. |
+|  [Document manager](/docs/guide/common/operations-with-data/document-manager)  | Botão para a ligação com a gestão documental. |
 
 
 

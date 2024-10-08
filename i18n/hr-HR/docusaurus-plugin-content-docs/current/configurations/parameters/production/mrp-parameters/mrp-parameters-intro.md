@@ -1,5 +1,5 @@
 ---
-title: Parametri MPR  
+title: Parametri MRP  
 sidebar_position: 2
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: Generalità
+title: Introduzione
 sidebar_position: 1
 ---
 
@@ -15,6 +15,20 @@ Per ottenere il massimo degli automatismi sarà necessario definire, nelle anagr
 L'utilizzo del modulo si effettua con la creazione di una nuova dichiarazione intrastat1 (per le vendite) e Intrastat2 (per gli acquisti): si andranno a completare i dati prelevandoli dalle fatture acquisto e vendite, oppure dalle registrazioni contabili, oppure con l'inserimento manuale nelle sezioni relative.
 
 Completati i dati dei modelli sarà possibile procedere alla stampa dei modelli o all'invio telematico degli stessi con la creazione del file previsto.
+
+**Elenco tabelle obbligatorie per utilizzare il modulo**: 
+
+[Home>Tabelle>Amministrazione] e [Home>Tabelle>Impostazioni generali] per identificare le corrette impostazioni della gestione Intra. 
+
+[Natura transazione intrastat](/docs/configurations/tables/finance/nature-of-intrastat-transaction), 
+
+[Numerazione intrastat](/docs/configurations/tables/fluentis-numerations), 
+
+[Codici nomenclatura](/docs/configurations/tables/finance/nomenclature-codes), 
+
+[Porto](/docs/configurations/tables/general-settings/carriages), 
+
+[Spedizioni](/docs/configurations/tables/general-settings/shipments).
 
 
 

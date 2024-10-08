@@ -58,7 +58,7 @@ sidebar_position: 1
 
 | RibbonFunction | RibbonMeaning |
 | --- | --- |
-|  [文档经理](/docs/guide/operations-with-data/document-manager)  | 用于管理与在使用中掩码关系的档案 |
+|  [文档经理](/docs/guide/common/operations-with-data/document-manager)  | 用于管理与在使用中掩码关系的档案 |
 
 
 

@@ -107,7 +107,7 @@ In particolare si segnala il comando **Parametri di inserimento**
 
 | Funzione | Significato |
 | --- | --- |
-|  [Document Manager](/docs/guide/operations-with-data/document-manager)  | Pulsante per il collegamento alla gestione documentale. |
+|  [Document Manager](/docs/guide/common/operations-with-data/document-manager)  | Pulsante per il collegamento alla gestione documentale. |
 
 
 ---

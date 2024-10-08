@@ -3,6 +3,12 @@ title: Costi
 sidebar_position: 9
 ---
 
+:::important A cosa serve
+Nel tab Costi dell'anagrafica articoli di Fluentis, gli utenti possono registrare vari tipi di costi associati, tra cui il costo ultimo e il costo medio ponderato, che vengono aggiornati automaticamente in base alle movimentazioni di magazzino. Il costo ultimo rappresenta l'ultimo prezzo d'acquisto registrato, mentre il costo medio è il risultato delle movimentazioni di magazzino, utili per calcolare il valore delle rimanenze.       
+Il tab consente anche di definire un costo standard, utilizzato come riferimento per l'anno e solitamente aggiornato annualmente. Inoltre, è possibile inserire il prezzo di vendita, da cui partire per la creazione di listini di vendita.          
+Queste informazioni sono fondamentali per la valorizzazione delle rimanenze di magazzino e per la pianificazione finanziaria, contribuendo a una gestione più efficace degli articoli in magazzino.
+:::
+
 All'interno di questo Tab si inseriscono diversi costi associati all'articolo.
 
 Questi sono campi editabili nei quali si andranno a definire:

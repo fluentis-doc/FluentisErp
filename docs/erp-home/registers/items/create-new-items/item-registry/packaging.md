@@ -3,6 +3,14 @@ title: Confezionamento
 sidebar_position: 8
 ---
 
+:::important A cosa serve
+Il tab di confezionamento dell'anagrafica articoli di Fluentis è essenziale per definire la modalità di confezionamento di un articolo, specificando i tipi di Unità di Carico (UDC) che lo compongono. Questa configurazione può avere una struttura ad albero, nel quale un pallet, ad esempio, può contenere diverse scatole, ognuna delle quali a sua volta può contenere un certo numero di articoli.
+
+Definire accuratamente il confezionamento è fondamentale poiché permette di generare automaticamente le UDC necessarie per la spedizione nel momento in cui si prepara un ordine. 
+
+Inoltre, è possibile associare specifiche unità di misura per il volume e definire la descrizione per cliente o fornitore, permettendo così una gestione personalizzata a seconda delle esigenze specifiche di ciascun cliente. Questo tab si configura quindi come uno strumento chiave per ottimizzare la logistica e la gestione dei magazzini
+:::
+
 Attraverso questo tab si va a definire la modalità di confezionamento dell'articolo definendo quali sono i tipi di unità di carico  che lo compongono.
 
 Può essere una struttura ad albero in quanto per esempio possiamo stabilire come metodo di confezionamento il pallet, che al suo interno può aver un determinato numero di scatole che possono contenere un determinato numero di articoli.

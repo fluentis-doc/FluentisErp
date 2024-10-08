@@ -1,3 +1,3 @@
-**Class/Code/Item Description**: These can be entered [manually](/docs/guide/operations-with-data/manual-entry-or-help-and-data-selection) or with the help of a field selector that proposes all related data entered in the *Item Registry*.
+**Class/Code/Item Description**: These can be entered [manually](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) or with the help of a field selector that proposes all related data entered in the *Item Registry*.
 
 After entering the item, its *Description* will be automatically retrieved from the item registry. If the item has *Variants*, you can select the desired variant from the *Item Data* tab.

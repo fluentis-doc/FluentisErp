@@ -9,14 +9,14 @@ Iz ove aplikacije moguće je unijeti prilagođene cjenike prodaje za klijente il
 
 ## Gornji odjeljak
 
-U obrascu za unos automatski se nude vrijednosti polja  **Od datuma valjanosti** (trenutni datum za početak važenja) i [Valuta](/docs/guide/glossary/glossary-intro#currency) (valuta tvrtke), ali ih je moguće promijeniti.
+U obrascu za unos automatski se nude vrijednosti polja  **Od datuma valjanosti** (trenutni datum za početak važenja) i [Valuta](/docs/guide/common/glossary/glossary-intro#currency) (valuta tvrtke), ali ih je moguće promijeniti.
 
 Za nastavak stvaranja cjenika, korisnik mora unijeti:
 
 **Cjenik** 
 > *Generički*: potencijalno može biti važeći za sve klijente.     
 > *Prilagođeni*: važeći za određenog klijenta.      
-**Klijent**: odaberite samo u slučaju prilagođenog cjenika, koristeći  [pomoćno polje](/docs/guide/operations-with-data/manual-entry-or-help-and-data-selection) ili [izravno](/docs/guide/operations-with-data/manual-entry-or-help-and-data-selection)unosom podataka.   
+**Klijent**: odaberite samo u slučaju prilagođenog cjenika, koristeći  [pomoćno polje](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) ili [izravno](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection)unosom podataka.   
 **Tip cjenika**:  odaberite tip cjenika. Za stvaranje različitih tipova upućuje se na tablicu *Tipovi cjenika*.    
 **Valuta**: pretpostavljena valuta tvrtke.  
 **Datum početka/datum završetka važenja**: interval važenja unesenog cjenika.    

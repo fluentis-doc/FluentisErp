@@ -13,7 +13,7 @@ Per continuare la creazione della fattura di vendita, l'utente deve inserire i c
 
 - **Numero** ad ogni documento viene assegnato un numero secondo la numerazione specificata dall'utente nella tabella [Numerazione POS](/docs/configurations/tables/fluentis-numerations) e al tipo di documento che contiene la numerazione.
 
-- **Conto**, usando l' [help di campo](/docs/guide/operations-with-data/manual-entry-or-help-and-data-selection) oppure tastando [direttamente](/docs/guide/operations-with-data/manual-entry-or-help-and-data-selection) i dati.
+- **Conto**, usando l' [help di campo](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) oppure tastando [direttamente](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) i dati.
 
 
 **Totali documento**

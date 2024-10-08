@@ -18,4 +18,7 @@ A destra della griglia sono presenti due label:
 - **Map**: questa funzione permette di visualizzare i Contatti nella mappa. Per la visualizzazione dei Contatti CRM nella Mappa, viene ricercata prima la presenza di un Indirizzo, poi la presenza di Latitudine e Longitudine. Nel primo caso, cliccando sul pin nella Mappa, saranno visualizzati Nome della società ed Indirizzo, nel secondo caso solo il Nome della società.     
 - **Funnel per qualità contatto**: in questa sezione viene visualizzato graficamente l'andamento della gestione contatti basato sulla [Qualità](/docs/configurations/tables/crm/contacts/contact-quality).
 
+I pulsanti presenti nella barra degli strumenti sono:       
+**Conversione a cliente**: con questo pulsante è possibile convertire un contatto CRM in un [Cliente](/docs/erp-home/registers/contacts/create-new-contact/general); i dati inseriti nel contatto verranno copiati nella nuova anagrafica; il pulsante è attivo per i [Tipi contatto](/docs/configurations/tables/crm/contacts/contact-type) che non hanno attivo il flag *Cliente*.
+
 

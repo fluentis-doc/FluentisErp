@@ -17,9 +17,9 @@ Ako se dokument *automatski generira* iz RDA, ovi podaci bit će preuzeti iz *iz
 
 Unosom **Dobavljača** automatski se *nude* svi specifični podaci na kartici **Zaglavlje**, prema podacima postavljenim unaprijed u [Šifarniku dobavljača](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/accounting-data-intro), u odgovarajućim poljima njegove adrese i u *odjeljcima*:  
 
-- **Valuta**: [Valuta](/docs/guide/glossary/glossary-intro#currency), [Tečaj](/docs/guide/glossary/glossary-intro#currency-exchange), [Datum valute](/docs/guide/glossary/glossary-intro#currency-date).
-- **Država**: [Država](/docs/guide/glossary/glossary-intro#country), [Jezik](/docs/guide/glossary/glossary-intro#language), [Zona](/docs/guide/glossary/glossary-intro#zone)
-- **Dostava**: [Dostava](/docs/guide/glossary/glossary-intro#shipment), [Luka](/docs/guide/glossary/glossary-intro#carriage), [Pakiranje](/docs/guide/glossary/glossary-intro#packing), [Cjenik](/docs/guide/glossary/glossary-intro#sales-price-list) i njegovo [vrijeme važenja](/docs/guide/glossary/glossary-intro#validity-date)
+- **Valuta**: [Valuta](/docs/guide/common/glossary/glossary-intro#currency), [Tečaj](/docs/guide/common/glossary/glossary-intro#currency-exchange), [Datum valute](/docs/guide/common/glossary/glossary-intro#currency-date).
+- **Država**: [Država](/docs/guide/common/glossary/glossary-intro#country), [Jezik](/docs/guide/common/glossary/glossary-intro#language), [Zona](/docs/guide/common/glossary/glossary-intro#zone)
+- **Dostava**: [Dostava](/docs/guide/common/glossary/glossary-intro#shipment), [Luka](/docs/guide/common/glossary/glossary-intro#carriage), [Pakiranje](/docs/guide/common/glossary/glossary-intro#packing), [Cjenik](/docs/guide/common/glossary/glossary-intro#sales-price-list) i njegovo [vrijeme važenja](/docs/guide/common/glossary/glossary-intro#validity-date)
 
 
 **Napomene**: ovo polje preuzima se iz šifarnika dobavljača, ali se može unijeti i ručno.            
@@ -63,7 +63,7 @@ Na ovoj kartici unose se svi artikli s pripadajućim podacima.
 
 Za detalje o zajedničkom radu obrazaca pogledajte sljedeći link  [Značajke, gumbe i zajednička polja](/docs/guide/common).
 
-Podaci se unose [ručno](/docs/guide/operations-with-data/manual-entry-or-help-and-data-selection), uz [pomoćno polje](/docs/guide/operations-with-data/manual-entry-or-help-and-data-selection) ili ih modu predložiti povezane procedure. 
+Podaci se unose [ručno](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection), uz [pomoćno polje](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) ili ih modu predložiti povezane procedure. 
 
 Da biste unijeli **Novi artikl** u mrežu, dovoljno je postaviti kursor na redak i ispuniti razne podatke ili koristiti gumb **Novo** u traci vrpce.
 
@@ -81,7 +81,7 @@ Ako krenete izravno s unosom artikla, njegova *klasa*, *kod* i *vrsta reda* - *K
 > **Trošak**: to su kodirani ili nekodirani artikli koji se razlikuju u zbrojevima dokumenata. Ako je artikl troška kodiran i fiskalno značajan, knjižit će se u skladištu; ako nije kodiran ili nije fiskalno značajan, neće se knjižiti u skladištu.  
 > **Napomene o artiklu**: to su opisne napomene koje se prikazuju u ispisu dokumenta; ne utječe na knjiženje u knjigovodstvu i skladištu.
 
-**Klasa/Kod/ Opis artikla**: Mogu se unijeti [ručno](/docs/guide/operations-with-data/manual-entry-or-help-and-data-selection) ili uz [pomoćno polje](/docs/guide/operations-with-data/manual-entry-or-help-and-data-selection) koje će predložiti sve relevantne podatke unesene u Šifarniku artikla.
+**Klasa/Kod/ Opis artikla**: Mogu se unijeti [ručno](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) ili uz [pomoćno polje](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) koje će predložiti sve relevantne podatke unesene u Šifarniku artikla.
 
 Nakon unosa artikla, njegov će se opis automatski preuzeti iz šifarnika. Ako artikl ima *varijacije*, trebat će odabrati željenu varijantu iz padajućeg izbornika *Varijante*.
 

@@ -1,68 +1,65 @@
 ---
-title: Parametri DDT acquisto
-sidebar_position: 6
+title: Parametri otpremnice za kupnju
+sidebar_position: 3
 ---
 
-I parametri delle DDT di acquisto permettono l'impostazione di base per poter gestire correttamente e secondo le specifiche richieste da ogni singola società.
+Parametri otpremnica za kupnju omogućuju osnovnu postavku za ispravno upravljanje u skladu sa specifičnim zahtjevima svake pojedine tvrtke.
 
-*Pulsanti*:
+Prozor se sastoji od gumba i tri različite kartice: *Općenito*, *Utovar* i *Analitika*.
 
-> **Salva**: permette di salvare i parametri impostati.  
-> **Ripristina**: permette di ripristinare i parametri ai valori iniziali.
+### Općenito
 
-### Generale
+**Upravljanje duplom mjernom jedinicom**: samo ako je ova zastavica aktivirana, sustav može upravljati alternativnom mjernom jedinicom u otpremnici.
 
-**Gestione doppia unità misura**: solo se questo flag è attivato, il sistema può gestire l'unità di misura alternativa nel DDT.
+**Automatski prijedlog alternativne J.M.**: ako je aktiviran, predlaže se količina koja se odnosi na alternativnu mjernu jedinicu, pod uvjetom da je u matičnim podacima stavke postavljena zadana. Ovu zastavu možete aktivirati samo ako je prethodna zastavica bila aktivirana;
 
-**Proposta automatica UM alternativa:** se attivato, viene proposta la quantità relativa all'unità di misura alternativa, a patto che sull'anagrafica dell'articolo ne sia stata impostata una di default. È possibile attivare questo flag solo se il flag precedente è stato attivato;
+**Trošak nula ako nedostaje cjenik**: ako je aktivan, u nedostatku važećeg cjenika popunjava cijenu s vrijednošću nula. Ako ova stavka nije označena, polje će biti ispunjeno konačnom cijenom stavke, ako postoji;  
 
-**Costo zero in assenza di listini**: se attivo, in assenza di un listino valido popola il prezzo con il valore zero. Nel caso in cui questa voce non fosse spuntata, il campo sarebbe valorizzato con il costo ultimo dell'articolo, se presente;
+**Dopusti otpremnice s istim brojem i kupcem**: ako je aktivno, dopušta umetanje dve dostavnice za istog dobavljača s istim brojem. Preporuča se ostaviti ovu zastavu deaktiviranom kako bi sustav mogao izvršiti provjeru jedinstvenosti;
 
-**Visualizza dimensioni:** se attivo, vengono gestite le colonne dimensioni (Altezza, Larghezza, Profondità) della griglia *Articoli*.
+**Lotovi i S.B. (Serijski broj) obavezni**: ako je aktivno, prisiljava korisnika da unese lot i serijski broj na razini retka stavke za sve stavke za koje je ovo upravljanje predviđeno. Preporučamo aktiviranje ove oznake ako koristite paketno upravljanje stavkama;
 
-**Permetti DDT con stesso numero e fornitore:** se attivo, permette l'inserimento di due ddt per lo stesso fornitore con lo stesso numero. È consigliato lasciare disattivato questo flag per permettere al sistema di fare il controllo di univocità;
+**Traži cijenu stavke u svim zadanim cjenicima**: ako je aktivno, cijena artikla unesenog u redoslijed dobavljača bit će pretražena u svim unaprijed definiranim cjenicima kartice dobavljača, uz zadani cjenik. Ako nije aktivno, cijena artikla bit će pretražena samo u zadnjem cjeniku prisutnom na vrhu narudžbe, ali ne i u drugim cjenicima za istog dobavljača s različitim datumima valjanosti.
 
-**Lotti e S.N. (Serial Number) obbligatori:** se attivo, obbliga l'utente ad inserire a livello di riga articolo il lotto ed il serial number per tutti gli articoli per cui è prevista questa gestione. Si consiglia l'attivazione di questo flag qualora si utilizzi la gestione articoli con lotto;
+**Dopusti popuste za promotivne poklone**: ako je aktivno, dopušta umetanje popusta na linije besplatnog tipa dostavnice. 
 
-**Ricerca prezzi articoli in tutti i listini predefiniti**: se attivo, l'articolo inserito nella riga DDT verrà ricercato in tutti i listini specificati nell'anagrafica fornitore, oltre al listino di default;
+**Korištenje artikla dobavljača**: ako je aktivno, u tablici artikala otpremnice također se nudi polje za unos šifre artikla dobavljača.
 
-**Consentire sconti per articoli omaggio**: se attivo, permette l'inserimento di sconti sulle righe del Ddt di tipo omaggio.
+**Provjeri zalihe artikala**: ako je aktivirano, sustav provodi provjeru dostupnosti artikala unesenih u otpremnicu i obavještava ako je artikl u odlasku, odnosno ako je u [Šifarniku artikla](/docs/erp-home/registers/items/create-new-items/item-registry/generality) aktivna oznaka *U odlasku*.
 
-**Uso articolo fornitore**: se attivo, nella griglia articoli del DDT viene proposto anche il campo per inserire il codice articolo fornitore.
+**Ambalažno računovodstvo**: omogućuje knjiženje, u glavnoj knjizi, i redaka s artiklima prirode ambalaže koji se obično upravljaju kako bi se provjerili inventari [Pakiranja za napraviti](/docs/configurations/tables/logistics/package-to-be-returned).
 
-**Verifica articoli in esaurimento:** se attivato, il sistema fa un controllo sulla disponibilità degli articoli in riga DDT ed avvisa qualora l'articolo fosse in esaurimento;
+**Održavajte cijene narudžbe za zagrade**: koristi se u postupku realizacije narudžbi u otpremnici u slučaju kada je isporučena količina različita (obično djelomična) od naručene količine za koju je unesena cijena ili popust po količinskim razredima. Ako cijena ili popust ne ovise o isporučenoj količini nego samo o naručenoj količini, ova oznaka mora biti aktivirana; međutim, ako cijena ili popust po količinskim razredima ne treba biti uneseni u dokument isporuke u slučaju da isporuka ne bude izvršena za cijelu naručenu količinu, oznaka ne smije biti aktivirana.
 
-**Contabilizzazione imballi**: consente di poter contabilizzare, in contabilità generale, anche le righe con articoli di natura imballo che solitamente vengono gestiti per avere la verifica delle giacenze degli imballi a rendere. La gestione delle imballi a rendere verranno spiegati nel video relativo.
+**Uključi Kontrolu Kvalitete**: work in progress.
 
-**Mantieni prezzi da ordini per gli scaglioni**: è utilizzato in evasione degli ordini in DDT nel caso in cui la quantità evasa sia diversa (solitamente parziale) della quantità ordinata per la quale è stato inserito un prezzo o uno sconto a scaglione di quantità. Se il prezzo o lo sconto non dipendono dalla quantità consegnata ma solo dalla quantità in ordine questo flag deve essere attivato, se invece il prezzo o sconto a scaglione non deve essere inserito nel documento di consegna nel caso l'evasione non avvenga per la quantità totale dell'ordine il flag non deve essere attivato.
+**Preračunaj prijevoz**: ako je aktivno, izračunava težinu i volumen iz vrijednosti matičnih podataka stavke na dokumentu, automatski postavljajući vrijednost prijevoza. Ako nije aktivan, trošak prijevoza dostavnice morat će se izračunati ručno jer neće biti ponuđen;  
 
-**Ricalcola trasporto**: se attivo, calcola il peso e volume dai valori di anagrafica articoli sul documento, impostando il valore del trasporto in automatico. Se non attivo, il costo del trasporto del DDT dovrà essere calcolato manualmente poiché non verrà proposto;
+**DEF U.M. količine**: ako je aktivno, označava zadanu mjernu jedinicu za količinu pri izračunavanju transporta dostavnice;  
 
-**DEF U.M. volume:** se attivo, indica l'unità di misura di default per il volume quando si calcola il trasporto del DDT;
+**Def. U.M. težine**: ako je aktivno, označava zadanu mjernu jedinicu za težinu pri izračunavanju transporta dostavnice. 
 
-**Def. U.M. pesi:** se attivo, indica l'unità di misura di default per il peso quando si calcola il trasporto del DDT.
+### Utovar
 
-### Carico
+**Kreirajte registraciju s datumom dokumenta**: Ako je aktivirano, registracija u skladištu se vrši s istim datumom kao otpremnica. Ako nije aktivirano, registracija se vrši s *datumom utovara* navedenim u zaglavlju otpremnice, ako je prisutan; inače, koristi se *datum registracije* u skladištu naveden u postupku [Zaduženje skladišta Primkom](/docs/purchase/purchase-delivery-note/procedures/load-delivery-notes-on-warehouse). Ako se registracija vrši unutar otpremnice putem gumba *Automatski utovar* u skladištu, a *Datum utovara* nije unesen, koristit će se današnji datum.
 
-**Crea registrazione con la data del documento**: se attivo, la registrazione di magazzino viene fatta con la stessa data del DDT e non sarà necessario specificare la data registrazione nella form di carico. Se non attivo, sarà necessario specificare la data nella form di carico;
+**Prioritet predloška skladišta i istovara**: ako je aktivirano, prilikom registracije otpremnice u skladištu koriste se vrijednosti postavljene u donjim poljima: **Skladište** i **Predložak skladišta**. Ako oznaka nije aktivna, skladište i razlog utovara se čitaju iz redaka otpremnice. Ako nisu prisutni u redovima otpremnice, neće biti moguće izvršiti automatski utovar unutar otpremnice za kupnju, ali će biti moguće registrirati otpremnicu putem posebnog postupka (vidi [Zaduženje skladišta Primkom](/docs/purchase/purchase-delivery-note/procedures/load-delivery-notes-on-warehouse)) odabirom u kartici *Parametri* oznake  "*Prihvatiti kao skladište i predložak sljedeće podatke:*" i označavanjem *Skladišta* i *Predložak* koji se koriste. 
 
-**Priorità magazzino e causale di carico**: se attivo, il magazzino e la causale di carico vengono letti dalle righe del DDT. Qualora non fossero presenti sulle righe del DDT verranno recuperati dal tab parametri della procedura di carico (vedi [Registrazione DDT di acquisto in magazzino](/docs/purchase/purchase-delivery-note/procedures/load-delivery-notes-on-warehouse)). Qualora questi parametri non fossero settati verranno usati i valori impostati nei campi sottostanti: **Magazzino** e **Causale magazzino**;
+**Automatski utovar/istovar**: Ako je aktivirano, prilikom aktivacije oznake *Kontrolirano* u zaglavlju dokumenta prikazat će se poruka koja podsjeća da je parametar automatskog utovara/istovara aktivan i pita želi li se nastaviti. Ako se pritisne "*Da*" otpremnica će biti učitana u skladište, inače će biti moguće učitati je kasnije pritiskom na gumb *Automatski utovar u skladištu* koji se nalazi u traci s alatima.
 
-**Carico/Scarico automatico**: se attivo, il carico del DDT verrà effettuato in automatico all'attivazione del flag Stampata e direttamente dal DDT di acquisto mediante il pulsante “Carico automatico da magazzino”. Se non attivo, il carico dovrà essere fatto con l'apposito pulsante (vedi [Registrazione DDT di acquisto in magazzino](/docs/purchase/purchase-delivery-note/procedures/load-delivery-notes-on-warehouse));
+**Upozorenje fiktivne stavke**: ako je aktivno, tijekom učitavanja provjerava se postoje li fiktivne stavke. Ako su prisutni, daje se poruka za dovršetak postupka; ako je odgovor potvrdan, cijela dostavnica će biti učitana (osim očito izmišljenih artikala). Ako odgovorite negativno, dostavnica se neće učitati. Fiktivna stavka može biti bez popisa materijala prve razine ako je u MRP parametrima deklarirana s vrstom nabave nabave, inače će registracija utovara dati poruku o pogrešci ako postoje fiktivne stavke u dokumentu koji se učitava.
 
-**Avviso articoli fittizi**: se attivo, durante il carico del DDT viene controllato se sono presenti degli articoli fittizi. Se sono presenti viene dato un messaggio per il completamento della procedura; se la risposta è affermativa tutto il DDT verrà caricato (ad eccezione degli articoli fittizi ovviamente). Rispondendo di no, il DDT non verrà caricato. L'articolo fittizio può essere senza distinta base di primo livello se nei parametri MRP è dichiarato con tipo approvvigionamento di acquisto altrimenti la registrazione di carico darà un messaggio di errore nel caso ci siano degli articoli fittizi nel documento da caricare.
+### Analitika
 
-### Analitica
+U ovoj kartici određujete prioritet s kojim želite dohvatiti mjesto troška ili mjesto profita u retku dostavnice.
 
-In questo tab si specifica con che priorità recuperare il centro di costo (CdC) o centro di profitto (CdP) nella riga DDT.
+Možete promijeniti prioritete pomoću gumba:  
 
-È possibile modificare le priorità utilizzando i pulsanti:
+> **Premjesti gore**       
+> **Premjesti dolje**.
 
-> **Sposta su** ![](/img/neutral/common/move-up.png) e 
-> **Sposta giù**![](/img/neutral/common/delete-cc.png).
+*Zadane vrijednosti*: CDC ili CDP se dohvaćaju iz naplaćene vrste ako postoji. Dodatne informacije potražite u tablici [Vrste prometa kupnje](/docs/configurations/tables/purchase/purchase-invoices-type). Ako nije prisutan u fakturiranoj vrsti, sustav će ga potražiti u *Šifarniku dobavljača*. Ako nije prisutan, pretražit će se u *Šifarniku artikla* i potom na razini *Skladišta*.
 
-*Valori di default*: il CDC o CDP viene recuperato dal tipo fatturato qualora presente. Per approfondimenti fare riferimento a tabella [Tipo Fatturato Acquisti](/docs/configurations/tables/purchase/purchase-invoices-type). Qualora non fosse presente nel tipo fatturato il sistema lo cercherà in *Anagrafica fornitore*. Se non presente verrà cercato in *Anagrafica articolo* e successivamente a livello di *Magazzino*.
+**Preračun**: ako je aktivno, ponovno izračunava troškovne/profitne centre prema odabranom prioritetu.
 
-**Ricalcolo**: se attivo, ricalcola i centri di costo/profitto secondo la priorità scelta.
-
-Una volta impostati i parametri come meglio conviene, sarà necessario salvarli perché questi diventino effettivi, cliccando sul pulsante **Salva**.
+**Ocijeni prioritet za svaku dimenziju**: ako je aktivirano, ova oznaka omogućuje procjenu svake prioritetne vrijednosti unesene na vrhu kako bi se utvrdilo postoje li dodatne dimenzije koje još nisu valorizirane. Na primjer, pretpostavimo da imamo u Šifarniku artikla centar troška za dimenziju *Business unit* i u Tipu fakturiranja kupnji dimenziju *Direkcijska*. Ako oznaka nije aktivna, sustav procjenjuje samo CdC prisutan u Šifarniku artikla; ako je oznaka aktivna, nakon što se učita CdC iz Šifarnika artikla, sustav također procjenjuje dimenziju prisutnu u Tipu fakturiranja kupnji (u našem primjeru dimenzija *Direkcijska*) i ako se razlikuje od onih koje je već obradio (*Business Unit*), učitava centar i nastavlja s provjerom drugih prioriteta.

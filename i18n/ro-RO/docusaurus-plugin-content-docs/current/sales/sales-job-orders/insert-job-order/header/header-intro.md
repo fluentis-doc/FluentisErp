@@ -52,7 +52,7 @@ RIBBON BAR: reprezinta meniul cu butoanele de executie, pentru fiecare operatie 
 
 | Functie | Functionalitate |
 | --- | --- |
-|  [Document manager](/docs/guide/operations-with-data/document-manager)  | Procedura da posibilitatea de a atasa documente. |
+|  [Document manager](/docs/guide/common/operations-with-data/document-manager)  | Procedura da posibilitatea de a atasa documente. |
 
 
 

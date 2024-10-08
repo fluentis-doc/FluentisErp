@@ -1,6 +1,6 @@
 ---
 title: Ricalcolo costo
-sidebar_position: 2
+sidebar_position: 3
 ---
 
 La procedura di **Ricalcolo costo** presente nel Controlling permette di ricalcolare i costi ultimo e medio degli articoli in base ai movimenti di magazzino.

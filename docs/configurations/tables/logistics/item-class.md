@@ -3,6 +3,12 @@ title: Classi articolo
 sidebar_position: 12
 ---
 
+:::important A cosa serve
+La Classe Articolo in Fluentis è un elemento cruciale per la gestione efficiente degli articoli. Essa consente di raggruppare articoli omogenei, facilitandone la rintracciabilità e permettendo analisi dettagliate.        
+Ogni articolo viene identificato in modo univoco grazie alla combinazione tra la Classe, un dato precodificato, e un Codice alfanumerico. In alcuni casi, la classe articolo può essere configurata per generare automaticamente sia il codice che la descrizione degli articoli appartenenti a quella classe, agevolando così i processi di codifica.           
+Inoltre, è possibile gestire le classi articolo, personalizzandole in base alle esigenze operative. Questo approccio garantisce una maggiore efficienza nella classificazione e nella gestione dei prodotti.     
+:::
+
 La tabella si trova sul percorso **Tabelle > Logistica > Classi articolo**.  
 
 La tabella permette di gestire la codifica delle diverse classi articolo per poter effettuare il raggruppamento degli articoli.

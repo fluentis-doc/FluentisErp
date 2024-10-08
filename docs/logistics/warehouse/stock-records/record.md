@@ -3,6 +3,14 @@ title: Nuova registrazione
 sidebar_position: 3
 ---
 
+:::important A cosa serve
+L'introduzione alle registrazioni di magazzino di Fluentis rappresenta un elemento cruciale per la gestione efficiente delle operazioni logistiche, permettendo una registrazione accurata dei movimenti di beni all'interno del sistema. Le registrazioni possono essere create automaticamente attraverso diverse procedure, come carico di documenti (ad esempio, DDT e fatture di acquisto) o scarico (tramite DDT e fattura di vendita). Questo processo non solo semplifica l'inserimento dei movimenti, ma garantisce anche la sincronizzazione delle informazioni tra i vari documenti operativi.
+
+Ogni registrazione di magazzino permette all'operatore di specificare dettagli fondamentali quali magazzino, causale e data. La registrazione dell'articolo avviene attraverso una griglia che consente di indicare quantità e unità di misura, con l'opzione di gestire lotti e numeri di serie quando necessario. Inoltre, sono implementati diversi flag che governano la necessità di documenti obbligatori e il trattamento delle causali di contropartita, garantendo così la tracciabilità e la conformità delle operazioni di magazzino.
+
+Un altro aspetto distintivo è la possibilità di personalizzare le registrazioni in base alle esigenze specifiche del magazzino, scegliendo tra gestioni per ubicazione, progetto o cliente/fornitore. Questa flessibilità consente di adattare il sistema alle varie configurazioni logistiche aziendali, rendendo Fluentis uno strumento potente per la gestione del magazzino
+:::
+
 La form si apre:
 - tramite il percorso **Logistica > Magazzino  > Registrazioni > Nuova registrazione**  
 oppure  

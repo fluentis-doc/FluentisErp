@@ -7,7 +7,7 @@ U ovoj kartici unose se svi artikli s pripadajućim podacima.
 
 Za sve što nije detaljno opisano u ovom dokumentu o zajedničkom radu obrazaca, pogledajte sljedeći link [Funkcionalnosti, gumbe i zajednička polja](/docs/guide/common).
 
-Podaci se unose [ručno](/docs/guide/operations-with-data/manual-entry-or-help-and-data-selection), uz [pomoćno polje](/docs/guide/operations-with-data/manual-entry-or-help-and-data-selection) ili ih može predložiti povezane procedure.
+Podaci se unose [ručno](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection), uz [pomoćno polje](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) ili ih može predložiti povezane procedure.
 
 ### Artikli
 
@@ -32,7 +32,7 @@ Ako se krene izravno s unosom artikla, njegova *klasa*, *šifra* i *vrsta retka*
 > **Račun za predujam**: artikl depozita koristi se za izradu depozitnih faktura;  
 > **Storno račun**: linija artikla storno depozita zatvara liniju depozita i depoziti se mogu odabrati pomoću pomoći depozita. Ovi podaci mogu se automatski unijeti kada se unese klasa ili serija jer je automatski odabran tip reda *kodirani artikl*.
 
-**Klasa/Šifra/Opis artikla**: mogu se unijeti [ručno](/docs/guide/operations-with-data/manual-entry-or-help-and-data-selection) ili uz [pomoćno polje](/docs/guide/operations-with-data/manual-entry-or-help-and-data-selection) koje će predložiti sve povezane podatke unesene u Šifarnik artikala.
+**Klasa/Šifra/Opis artikla**: mogu se unijeti [ručno](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) ili uz [pomoćno polje](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) koje će predložiti sve povezane podatke unesene u Šifarnik artikala.
 
 Nakon unosa artikla, njegov će se *Opis* automatski preuzeti iz evidencije. Ako artikl ima varijante, bit će potrebno odabrati željenu varijantu iz padajućeg izbornika *Varijante*.
 

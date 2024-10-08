@@ -3,6 +3,14 @@ title: Anagrafica Serial Number
 sidebar_position: 8
 ---
 
+:::important A cosa serve
+L'anagrafica serial number di Fluentis è un modulo essenziale per la gestione dettagliata dei serial number, consentendo alle aziende di tenere traccia di articoli singoli attraverso un codice identificativo unico. Questa funzionalità risponde a esigenze specifiche di rintracciabilità e sicurezza, particolarmente importante per articoli critici o ad alto valore, dove è fondamentale monitorare ogni singolo pezzo piuttosto che semplicemente una quantità complessiva.
+
+L'utente ha la possibilità di ricercare un serial number specifico e visualizzarne i dettagli con un semplice doppio clic. In questa sezione, è possibile modificare informazioni chiave come il codice cliente, il codice fornitore, e lo stato del serial number, che può essere annullato, chiuso forzatamente o prenotato. Inoltre, l'anagrafica fornisce dettagli sui documenti di carico e scarico associati al serial number, permettendo un'analisi completa del suo utilizzo nel tempo.
+
+L'approccio sistematico alla gestione dei serial numbers non solo ottimizza i processi interni, ma garantisce anche la compliance alle normative vigenti, facendo di quest'anagrafica uno strumento indispensabile per le aziende moderne che puntano a massimizzare l'efficienza operativa e la qualità del servizio.
+:::
+
 Questa finestra visualizza il dettaglio del lotto e si compone di 4 diverse sezioni: 
 
 ### Testata Serial Number

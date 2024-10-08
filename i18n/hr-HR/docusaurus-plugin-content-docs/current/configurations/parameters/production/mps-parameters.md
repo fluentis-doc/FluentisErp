@@ -1,68 +1,71 @@
 ---
-title: Parametri MPS
+title: MS Parametri
 sidebar_position: 3
 tags: [MPS]
 ---
 
-Attraverso questa finestra vengono settati tutti i parametri che riguardano la gestione delle commesse di produzione ed il modo in cui devono essere gestite le fasi successive alla generazione delle commesse stesse.
+Kroz ovaj prozor se moraju upravljati svim parametrima koji se tiču upravljanja proizvodnim nalozima i načinom na koji se vode faze koje slijede nakon generiranja samih naloga.
 
-**Metodo generazione commessa**  
-In questa sezione deve essere impostato il **Tipo di Commessa** (Monoprodotto / Multiprodotto) che deve essere proposto nella procedura **Definizione MPS**, tab Parametri.   
-Nel momento della generazione della commessa dalla Definizione MPS è comunque possibile modificare questa impostazione, così come quella relativa alla combo successiva chiamata **Raggruppamento per**, tramite la quale è possibile indicare come devono essere eventualmente raggruppati gli articoli all'interno della stessa commessa *Monoprodotto* o *Multiprodotto*.
+**Metoda generiranja podnaloga**  
+U ovom odjeljku, **Vrsta narudžbe** (jedan proizvod / više proizvoda) mora biti postavljena i predložena u postupku **Generiranja proizvodnog naloga**, kartici [Parametri](/docs/planning/mps-master-production-scheduling/job-order-creation).  
+Prilikom generiranja narudžbe iz [Stvaranje proizvodnog naloga](/docs/planning/mps-master-production-scheduling/job-order-creation) moguće je izmijeniti ovu postavku, kao i onu koja se odnosi na sljedeću kombinaciju koja se zove Grupiranje po, putem koje je moguće naznačiti kako stavke trebaju biti **Grupiranje za** istog *pojedinačnog proizvoda* ili *Narudžba jednog proizvoda*.
 
-Se il *Tipo commessa* è:  
-- *Monoprodotto*, l'unico raggruppamento ammesso è quello per Articolo: questo tipo di gestione permette all'utente di far generare automaticamente dal sistema una serie di commesse monoprodotto, selezionando una lista di righe di ordini clienti, righe provenienti da Previsioni di Vendita o dal Piano Principale di Produzione o provenienti dal Sottoscorta, facendo in modo che ciascuna commessa che verrà generata presenti la somma delle quantità richieste per lo stesso articolo. La data di fine di una commessa raggruppata è sempre uguale a quella del fabbisogno più vicino alla data in cui si lancia l'elaborazione.  
-- *Multiprodotto* i raggruppamenti possono essere effettuati per cliente, commessa di vendita,  cliente/commessa, e consentono all'utente di inserire nella stessa commessa Multiprodotto più articoli provenienti da righe d'ordine cliente legate allo stesso cliente, alla stessa commessa di vendita oppure alla stessa commessa di vendita dello stesso cliente.
+Ako je *Vrsta naloga*:   
+- *Mono proizvod*, jedino dopušteno grupiranje je ono prema artiklu: ova vrsta upravljanja omogućuje korisniku da sustav automatski generira niz narudžbi za jedan proizvod, odabirom popisa redova narudžbi kupaca, redova koji dolaze iz predviđanja prodaje ili plana proizvodnje Glavni ili dolazi iz podzaliha, osiguravajući da svaka narudžba koja se generira predstavlja zbroj traženih količina za istu stavku. Datum završetka grupiranog naloga uvijek je isti kao i datum zahtjeva koji je najbliži datumu pokretanja obrade.      
+- *Multiproizvod* grupiranje više proizvoda može se izvršiti prema kupcu, prodajnom nalogu, kupcu/narudžbi i omogućiti korisniku da umetne više stavki iz redova kupčeve narudžbe povezanih s istim kupcem, istom prodajnom narudžbom ili istom prodajnom narudžbom od istog kupca.
 
-La **Priorità approvvigionamento** sarà il default per quando verranno generate le commesse.
+**Prioritet nabave** bit će zadani kada se generiraju narudžbe.  
 
-**Generazione commessa da**   
-In questa sezione l'utente può impostare con gli appositi flag se la commessa debba essere generata da *Ordini clienti* o da un *Previsionale* (nello specifico poi può selezionare se da *Previsioni di vendita*, e/o da *Piano principale di produzione*).  
-Questi parametri sono poi modificabili dalla finestra di **Definizione MPS**.  
-Nel caso di *Generazione commessa di produzione dal Previsionale*, deve essere specificato se si preferisce che la commessa di produzione venga generata con scadenza settimanale o mensile.
+**Generiranje naloga**   
+U ovom odjeljku korisnik može postaviti s odgovarajućim zastavicama hoće li se narudžba generirati iz *Narudžbi kupaca* ili iz *Predviđanja* (konkretno, tada može odabrati hoće li iz *Predviđanja prodaje*, i/ili iz  *Glavnog plana proizvodnje*).  
+Ti se parametri tada mogu mijenjati iz prozora [Generiranje proizvodnog naloga](/docs/planning/mps-master-production-scheduling/job-order-creation).  
+U slučaju *Stvaranja proizvodnog naloga iz Predviđanja*, mora se navesti da li je poželjno da se proizvodni nalog generira na tjednoj ili mjesečnoj osnovi.  
 
-**Considera le disponibilità provenienti da**   
-In questa sezione l'utente può decidere di impostare la considerazione della disponibilità dei prodotti finiti in sede di generazione commessa di produzione da: *Conto Lavoro*, *Acquisti*, *Vendite*, *Produzione*, *Magazzino*.
+**Uzmi raspoloživost iz**   
+U ovom odjeljku korisnik može odlučiti postaviti razmatranje raspoloživosti gotovih proizvoda prilikom generiranja proizvodnog naloga iz: *Podizvođač*, *Nabave*, *Prodaje*, *Proizvodnje*, *Skladišta*.
 
-Ci sono poi una serie di flag:
+Zatim postoji niz zastava:
 
-**Calcolo quantità in base al Lead Time dell'articolo**: viene attivato nel caso non si vogliano utilizzare i cicli di lavorazione per calcolare la durata di una commessa di produzione; in questo caso, ai fini del calcolo della durata della commessa si fa riferimento al campo Lead time di produzione presente nei [Parametri MRP](/docs/configurations/parameters/production/mrp-parameters/search-mrp-parameters)  dell'articolo. 
+**Izračunaj količinu prema pripremnom vremenu stavke**: aktivira se ako ne želite koristiti cikluse obrade za izračun trajanja proizvodnog naloga; u ovom slučaju, za potrebe izračuna trajanja narudžbe, upućuje se na polje vremena proizvodnje koje je prisutno u [MRP Parametrima](/docs/configurations/parameters/production/mrp-parameters/search-mrp-parameters)  stavke. 
 
-**Generazione commessa da Ordini clienti in automatico**: se attivo, permette di fare in modo che la procedura crei automaticamente la commessa di produzione non appena venga inserita una riga ordine cliente. La commessa in questo caso viene creata nello stato di *Non Esaminata*. Generalmente viene attivato quando per schedulare si utilizza la procedura *MRP* anziché la *Schedulazione Generale*.
+**Automatsko generiranje naloga iz naloga kupaca**: ako je aktivno, to omogućuje postupku da automatski kreira proizvodni nalog čim se umetne redak naloga kupca. U ovom slučaju, nalog se kreira u stanju *Neispitano*. Općenito se aktivira kada se za planiranje koristi *MRP* postupak umjesto  *Općeg rasporeda*.
 
-**Aggiornamento data prevista consegna**: se attivo, permette di vedere automaticamente aggiornata la data di prevista consegna della riga dell'ordine cliente legato alla riga di commessa di produzione di cui si modifica manualmente la data di prevista fine.
+**Ažuriraj datum kad će roba biti spremna**: ako je aktivno, kada se promijeni predviđeni datum završetka obrade u nalogu (ručno ili putem procedure), novi datum će se prikazati i u polju *Datum kad je roba spremna* samog naloga, kao i u povezanoj narudžbi kupca. Također, stvorena je i tablica loga pod nazivom **MS_ProductionJobOrderItemReadyGoodsDateLogs** koja prati sve promjene napravljene. Ova tablica može se pregledavati samo putem SQL-a.       
 
-**Generazione automatica Flusso di produzione**: se attivo, l'utente può decidere di attivare il flag **Schedulazione**, che permette di vedere già schedulate le commesse di produzione non appena generate dalla Definizione MPS. L'attivazione del flag *Schedulazione* consente poi di attivare il flag **Rilascio**, che permette di decidere se dopo la schedulazione automatica gli ordini pianificati di acquisto, produzione e/o conto lavoro debbano essere rilasciati anch'essi in automatico. In quest'ultimo caso, per gli ordini pianificati di produzione si può attivare anche il flag **Rilascio OP esecutivi**, che permette di generare direttamente ordini di produzione esecutivi, saltando quindi anche la procedura di Rilascio ordini di produzione.  
+**Automatsko generiranje tijeka proizvodnje**: ako je aktivno, korisnik može odlučiti aktivirati oznaku **Zakazivanje**,  koja vam omogućuje da vidite već zakazane proizvodne naloge čim ih generira **Generacija proizvodnih naloga**. Aktiviranje zastavice za *Planiranje* tada vam omogućuje da aktivirate zastavicu za **Puštanje**, koji omogućuje odlučivanje hoće li nakon automatskog rasporeda planirani narudžbe za nabavu, proizvodnju i/ili račun rada također biti automatski otpušteni. U tom slučaju, za planirane narudžbe proizvodnje može se aktivirati i oznaka **Otpuštanje izvršnih OP**, koja omogućuje izravno generiranje izvršnih narudžbi proizvodnje, čime se preskoči i postupak otpuštanja narudžbi proizvodnje.    
 
-**Costificazione commessa**      
-In questa sezione è possibile indicare dei parametri che saranno proposti come defualt per la costificazione delle commesse di produzione.    
+**Otpusti izvršne proizvodne naloge**        
+koja vam omogućuje izravno generiranje izvršnih proizvodnih naloga, čime također preskačete postupak Otpuštanja proizvodnih naloga.    
 
-> **Tipo di costo**: permette di indicare il tipo di costo da utilizzare per la valorizzazione delle materie prime tra costo *Ultimo*, *Medio* e *Standard*;    
-> **Tipo di ricarico**: permette di indicare il tipo di ricarico tra *Costo* (a valore) e *Percentuale*; nel campo accanto è possibile inserire il valore corrispondente;      
-> **Costo del lotto**: attivando questo flag, la procedura valorizzerà il costo del materiale in base al tipo costo selezionato considerando i valori solo di quello specifico lotto;     
-> **Costo della commessa**: attivando questo flag, la procedura valorizzerà il costo del materiale in base al tipo costo selezionato considerando i valori solo di quella specifica commesa.     
+> **Troškovi posla**: omogućuje označavanje vrste troška koja će se koristiti za obračun materijalnih troškova između troška * Zadnjeg, Srednjeg* i *Standardnog*;      
+> **Vrsta troška**: omogućuje vam da naznačite vrstu troška koji će se koristiti za obračun troškova sirovina između *krajnjih*, *prosječnih* i *standardnih troškova*;      
+> **Vrsta marže**: omogućuje vam da označite vrstu marže između *Troška* (vrijednosti) i *Postotka*; u susjedno polje možete unijeti odgovarajuću vrijednost;      
+> **Trošak lota**: aktiviranjem ove zastavice, postupak će vrednovati cijenu materijala na temelju odabrane vrste cijene uzimajući u obzir vrijednosti samo te određene serije;  
+> **Trošak narudžbe proizvodnje**: aktiviranjem ove zastavice, procedura će vrednovati trošak materijala na temelju odabrane vrste troška, uzimajući u obzir samo vrijednosti te specifične narudžbe.   
 
-:::note Nota
-Se **Costo del lotto** e **Costo della commessa** sono attivati entrambi, la procedura valorizzerà il costo del materiale in base al tipo costo selezionato considerando i valori solo di quella specifica commesa e per quello specifico lotto.
+:::note BILJEŠKA
+Ako su aktivirani i **Trošak serije** i **Trošak naloga**, postupak će vrednovati trošak materijala na temelju odabrane vrste troška uzimajući u obzir vrijednosti samo te određene narudžbe i za taj određeni lot.
 ::: 
 
-**Magazzini di schedulazione commesse**   
-Questa griglia è la semplice visualizzazione della lista di magazzini su cui deve essere controllata la disponibilità in sede di generazione commessa di produzione. Questa lista viene impostata nella form chiamata *Calcolo disponibilità* che si trova in *Home > Articoli >  [Calcolo disponibilità](/docs/erp-home/registers/items/calculate-availability)*.
+**Skladišta za raspoređivanje podnaloga**   
+Ova mreža je jednostavan prikaz popisa skladišta na kojima je potrebno provjeriti dostupnost prilikom generiranja proizvodnog naloga. Ovaj je popis postavljen u obliku koji se zove *Izračun dostupnosti* koji se nalazi u *Početna stranica > Artikli >  [Izračun dostupnosti](/docs/erp-home/registers/items/calculate-availability)*.
 
-**Dati ultima schedulazione**   
-Questa sezione contiene alcuni dati riepilogativi dell'ultima schedulazione (data e ora inizio, numero di errori generati, data e ora fine, progressivo di schedulazione).
+**Zadnji datum vremenskog planiranja**   
+Ovaj odjeljak sadrži neke sažete podatke posljednjeg rasporeda (početni datum i vrijeme, broj generiranih pogrešaka, završni datum i vrijeme, progresivni broj rasporeda).  
 
-**Parametri proposti schedulazione**: permette di definire quali parametri proporre per la schedulazione, può riproporre i parametri dell’ultima schedulazione effettuata, oppure proporre i parametri utilizzati per la schedulazione dal singolo operatore.
+**Predloženi zakazani parametri**: omogućuje vam da definirate koje parametre želite predložiti za raspored, može ponovno predložiti parametre zadnjeg izvršenog rasporeda ili predložiti parametre koje za raspored koristi pojedinačni operater.  
 
-**Giorni prossima schedulazione**: indica il numero di giorni che verranno usati per incrementare la data inizio della schedulazione a capacità finita (campo *Dalla data*), nel tab *Parametri schedulazione a capacità finita* della form *Schedulazione a capacità finita*.
+**Dani za sljedeći raspored**: označava broj dana koji će se koristiti za povećanje početnog datuma raspoređivanja konačnog kapaciteta (polje *Od datuma*), na kartici *Parametri raspoređivanja konačnog kapaciteta* obrasca za *Raspoređivanje konačnog kapaciteta*.
 
-**Numero massimo di mesi per la schedulazione**: indica il numero di mesi da aggiungere alla data odierna per determinare la data di fine schedulazione *Schedulare fino al* presente nei parametri della *Schedulazione generale*.        
+**Maksimalan broj mjeseci za planiranje**: označava broj mjeseci koji se dodaju današnjem datumu kako bi se odredio krajnji datum rasporeda *Raspored do danas* u parametrima *Općeg rasporeda*.        
 
-**Numero massimo di mesi per il calcolo della disponibilità materiali**: è possibile definire l’orizzonte temporale per il calcolo della disponibilità, nello specifico viene inserito il numero di mesi in cui verranno considerati i documenti; invece, i documenti con data successiva ai mesi presi in considerazione non saranno considerati nella schedulazione.   
+**Maksimalni broj mjeseci za izračun raspoloživosti građe**: moguće je definirati vremenski horizont za izračun raspoloživosti, odnosno upisuje se broj mjeseci u kojima će se dokumenti razmatrati; međutim, dokumenti datirani nakon mjeseci koji su uzeti u obzir neće se uzeti u obzir u rasporedu.     
 
-**Primo giorno della settimana visualizzato nel Calendario di fabbrica**: consente di inserire il giorno che si vuol far comparire come primo giorno della settimana lavorativa nel [Calendario di Fabbrica](/docs/configurations/tables/production/factory-calendar). Di solito si inserisce il lunedì.
+**Prvi dan u tjednu vizualiziran u kalendara tvornice**: omogućuje vam da unesete dan koji želite da se pojavi kao prvi dan radnog tjedna u  [Tvorničkom kalendaru](/docs/configurations/tables/production/factory-calendar). Obično se ubacuje u ponedjeljak.  
 
-**Colori delle commesse**   
-In questa sezione è possibile impostare i colori dello sfondo e del testo delle commesse di produzione in base al loro stato (non esaminate, lanciate...ecc).
+**Boja podnaloga**   
+U ovoj sekciji moguće je postaviti boje pozadine i teksta proizvodnih naloga na temelju njihovog statusa (nije ispitano, lansirano... itd.).  
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Za sve što nije detaljno opisano u ovom dokumentu o uobičajenom funkcioniranju obrazaca, pogledajte sljedeću poveznicu [Zajedničke funkcije, gumbi i polja](/docs/guide/common).
+
+

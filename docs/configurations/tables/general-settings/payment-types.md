@@ -2,6 +2,12 @@
 title: Tipi pagamento
 sidebar_position: 7
 ---
+:::tip[FAst Start]
+La tabella è interessata dalla procedura di [**Fast Start**](/docs/guide/fast-start)
+
+Nel caso in cui si intenda configurare manualmente fare riferimento alla check list della pagina linkata
+:::
+
 
 La tabella contiene le tipologie di pagamento da utilizzare nel gestionale.
 

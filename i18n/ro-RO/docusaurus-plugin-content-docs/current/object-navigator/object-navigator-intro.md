@@ -11,7 +11,7 @@ sidebar_position: 1
 
 
 
-Această vizualizare este interactivă și permite, împreună cu ** [Form Navigator](/docs/form-navigator/form-navigator-intro) **, crearea și salvarea personalizării form-urilor prin intermediul  [Profilelor](/docs/guide/operations-with-data/form-customization-and-profiles-management).
+Această vizualizare este interactivă și permite, împreună cu ** [Form Navigator](/docs/form-navigator/form-navigator-intro) **, crearea și salvarea personalizării form-urilor prin intermediul  [Profilelor](/docs/guide/common/operations-with-data/form-customization-and-profiles-management).
 
 
 
@@ -41,7 +41,7 @@ La redeschiderea form-ului, utilizatorul va avea posibilitatea să vizualizeze f
 
 
 
-Pentru mai multe detalii despre salvarea personalizărilor consultați articolul  [Pesonalizări form și Gestionare profile](/docs/guide/operations-with-data/form-customization-and-profiles-management).
+Pentru mai multe detalii despre salvarea personalizărilor consultați articolul  [Pesonalizări form și Gestionare profile](/docs/guide/common/operations-with-data/form-customization-and-profiles-management).
 
 
 

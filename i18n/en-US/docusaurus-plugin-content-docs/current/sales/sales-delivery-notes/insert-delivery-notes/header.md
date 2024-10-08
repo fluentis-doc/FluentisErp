@@ -59,7 +59,7 @@ RIBBON BAR: it represents the Form menu, that is the area in which there is the
 
 | Function | Meaning |
 | --- | --- |
-|  [Document Manager](/docs/guide/operations-with-data/document-manager)  | Management of document storage associated to the mask in use. |
+|  [Document Manager](/docs/guide/common/operations-with-data/document-manager)  | Management of document storage associated to the mask in use. |
 
 
 

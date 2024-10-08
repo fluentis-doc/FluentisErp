@@ -38,7 +38,7 @@ I dati da inserire possono essere:
 
 </p>
 
-- selezionando il dato dalla **combo-box** (vedi anche  [Filtrare e ordinare i record](/docs/guide/operations-with-data/filter-sort-and-other-operations-with-records-in-grids) )   
+- selezionando il dato dalla **combo-box** (vedi anche  [Filtrare e ordinare i record](/docs/guide/common/operations-with-data/filter-sort-and-other-operations-with-records-in-grids) )   
 
 <p align="center">
 
@@ -48,7 +48,7 @@ I dati da inserire possono essere:
 
 ### Inserimento con il help di campo  
 
-- in tutti i campi che hanno lo sfondo blu, con F9 o doppio clic si apre il *help di campo* dove si possono inserire i filtri per ricercare i dati desiderati (vedi anche  [Ricerca dati](/docs/guide/operations-with-data/data-search-in-read-only-forms) ).  
+- in tutti i campi che hanno lo sfondo blu, con F9 o doppio clic si apre il *help di campo* dove si possono inserire i filtri per ricercare i dati desiderati (vedi anche  [Ricerca dati](/docs/guide/common/operations-with-data/data-search-in-read-only-forms) ).  
 
 - inserire il dato anche parzialmente e scegliere dalla lista che comparirà il dato desiderato. L'applicazione compilerà in automatico tutti gli altri campi del help. Nell'esempio accanto, per il Fornitore il primo campo è il conto, il secondo è il sottoconto e il terzo è la descrizione del fornitore. Inserendo i caratteri 'am' compare la lista con le alternative da dove potete selezionare il record.   
 

@@ -1,32 +1,40 @@
 ---
-title: Verifica avanzamento commesse
+title: Kontrola izvršenja radnog naloga
 sidebar_position: 6
 ---
 
-Questa form permette di lanciare il report che consente di visualizzare un prospetto di tutti i documenti legati ad una stessa commessa.
+Ovaj obrazac omogućuje pokretanje izvješća koje omogućuje prikaz pregleda svih dokumenata povezanih s istim nalogom. 
 
-**Filtri**
+Za svaki dokument također je naznačeno stanje napretka istog, putem obojanog kvadratića sa sljedećim značenjem:
 
-In questa sezione è possibile inserire filtrare per: tipo di commessa di produzione, priorità approvvigionamento, data inizio e/o fine della commessa, ecc. 
+- **Crno** ako je nalog u stanju  *Izvršen*;  
+- **Žuto** ako je nalog u stanju  *Izvršava se*;  
+- **Zeleno** ako je nalog u stanju *Pokrenut*;
+- **Svijetlo zeleno** ako je nalog u stanju *Vremenski raspoređeno*;
+- **Bijelo** u svim ostalim slučajevima. 
 
-**Tipo di stampa**
+**Filteri**
 
-In questa sezione è possibile filtrare a seconda che la commessa sia in ritardo o scaduta, ed è possibile decidere il livello di dettaglio a cui scendere nella stampa (Analitica o Sintetica).
+U ovom dijelu je moguće filtrirati prema: vrsti proizvodnog naloga, prioritetu nabave, datumu početka i/ili završetka naloga, itd.
 
-**Dettagli**
+**Tip izvještaja**
 
-In questa sezione è possibile decidere se visualizzare o meno i dettagli relativi all'area acquisto, produzione e conto lavoro, oltre che decidere se visualizzare o meno le commesse di vendita e gli ordini pianificati. 
+U ovom dijelu je moguće filtrirati prema tome je li nalog u kašnjenju ili istekao, te je moguće odabrati razinu detalja u izvještaju (Analitički ili Sintetski).
 
-**Tipo approvvigionamento**
+**Detalji**
 
-In questa sezione è possibile filtrare in base al tipo di approvvigionamento dell'articolo oggetto di commessa presente nei parametri MRP (Acquisto, Produzione, Conto lavoro).
+U ovom dijelu je moguće odlučiti hoće li se prikazivati detalji vezani uz područje nabave, proizvodnje i radnih naloga, kao i hoće li se prikazivati prodajni nalozi i planirani nalozi.   
 
-**Stato commessa**
+**Tip nabave**
 
-In questa sezione è possibile filtrare in base allo stato della commessa di produzione (non esaminata, schedulata, lanciata, esecutiva, evasa, chiusa, annullata;
+U ovom dijelu je moguće filtrirati prema vrsti nabave artikla koji je predmet naloga, a koji se nalazi u parametrima MRP-a (Nabava, Proizvodnja, Radni nalozi).
 
-**Ordine**
+**Status podnaloga**
 
-In questa sezione si può impostare l'ordine di raggruppamento delle informazioni da visualizzare nella stampa, scegliendo tra l'ordine in base alla commessa, al progetto, al conto, all'articolo,  alla data di inizio della commessa.
+U ovom dijelu je moguće filtrirati prema statusu proizvodnog naloga (nepregledan, zakazan, pokrenut, u izvršenju, izvršen, zatvoren, poništen);
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+**Redoslijed**
+
+U ovom dijelu moguće je postaviti redoslijed grupiranja informacija za prikaz u ispisu, birajući između redoslijeda prema nalogu, projektu, kontu, artiklu, datumu početka naloga. 
+
+Za sve što nije detaljno opisano u ovom dokumentu o zajedničkom funkcioniranju formi, pogledajte sljedeću poveznic [Funkcionalnosti, tipke i zajednička polja](/docs/guide/common).

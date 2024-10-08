@@ -3,6 +3,12 @@ title: Tipi presentazione distinte effetti
 sidebar_position: 4
 ---
 
+:::tip[FAst Start]
+La tabella è interessata dalla procedura di [**Fast Start**](/docs/guide/fast-start)
+
+Nel caso in cui si intenda configurare manualmente fare riferimento alla check list della pagina linkata
+:::
+
 La tabella è collegata al campo *Tipo* presente nella testata della distinta di presentazione effetti. 
 
 Viene compilata attraverso l'imposizione di un codice e di una descrizione, ai quali va assegnato poi un numeratore di riferimento.

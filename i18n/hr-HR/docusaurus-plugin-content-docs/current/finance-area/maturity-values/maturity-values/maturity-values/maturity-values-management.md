@@ -28,7 +28,7 @@ oppure togliendolo per sbloccare (a questo punto comparirà anche l'utente che h
 
 **Data Prevista**: questo campo può essere compilato per supportare le elaborazione del ** [Cash Flow](/docs/treasury/cash-flow/cash-flow/cash-flow-management) ** (funzionalità presente nell'area tesoreria). Può dunque essere indicata una data prevista di incasso o di pagamento che differisce rispetto alla data scadenza della partita e che sarà riportata nelle elaborazioni per il cash flow (alle quali si rinvia). In particolare si ricorda che in assenza di indicazione particolare definita nel campo in commento, la data prevista sarà valorizzata nell'elaborazione del cash flow, a partire dalla data scadenza, sommando il dato (se presente) contenuto nel campo **Giorni di Ritardo** presente nell'anagrafica del cliente o fornitore.
 
-Per gli altri campi vedere il ** [Glossario](/docs/guide/glossary/glossary-intro) ** e fare riferimento alle istruzioni relative alla ** [Tab Partite nella Registrazione contabile](/docs/finance-area/ledger-records/records/create-ledger-record/maturity-values-tab) **.
+Per gli altri campi vedere il ** [Glossario](/docs/guide/common/glossary/glossary-intro) ** e fare riferimento alle istruzioni relative alla ** [Tab Partite nella Registrazione contabile](/docs/finance-area/ledger-records/records/create-ledger-record/maturity-values-tab) **.
 
 **NOTA:**
 

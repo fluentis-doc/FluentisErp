@@ -3,7 +3,11 @@ title: Spostamento articoli tra due unità di carico
 sidebar_position: 7
 ---
 
-Questa procedura è utilizzata per spostare un articolo da un'unità di carico di partenza ad un'altra unità di carico di destinazione.      
+:::important A cosa serve
+La funzione Spostamento Articoli tra Due Unità di Carico del WMS di Fluentis permette di trasferire facilmente articoli da un'unità di carico di partenza a una di destinazione.     
+Attraverso la scansione dei codici a barre, l'operatore può visualizzare gli articoli contenuti nella prima UDC e, dopo aver selezionato la UDC di destinazione, è in grado di spostare rapidamente le quantità desiderate, rendendo il processo di movimentazione più efficiente.
+:::  
+
 Alla lettura della prima unità di carico, questa viene inserita come unità di carico di partenza e vengono visualizzati nella griglia sottostante tutti gli articoli contenuti al suo interno, con l’indicazione di: *codice articolo*, *quantità*, *lotto* e *descrizione articolo*.        
 La seconda lettura, invece, va ad inserire l'unità di carico di destinazione ed ogni successiva lettura di unità di carico verrà considerata come la nuova destinazione.      
 Lo step successivo è quello di leggere l'articolo da spostare (che in automatico viene flaggato nella griglia sottostante) ed inserire la quantità; anche in questa form se l'articolo è gestito a lotti viene visualizzato anche il relativo campo di inserimento.      

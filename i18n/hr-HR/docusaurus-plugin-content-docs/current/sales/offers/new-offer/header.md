@@ -13,7 +13,7 @@ Da bi nastavili s kreiranjem prodajne ponude, korisnik mora unijeti  **obavezna 
 
 - **Broj** svakom dokumentu dodjeljuje se broj prema numeraciji koju je postavio korisnik u tablici [Numeracija ponuda](/docs/configurations/tables/fluentis-numerations) i vrsti dokumenta koja sadrži tu numeraciju. Također se možete pozvati na članak o [Parametrima narudžbi](/docs/configurations/parameters/sales/sales-orders-parameters) (za posebne parametre povlačenja brojeva);
 
-- **Klijent**, koristeći [pomoćno polje](/docs/guide/operations-with-data/manual-entry-or-help-and-data-selection) ili  [izravno](/docs/guide/operations-with-data/manual-entry-or-help-and-data-selection) unosom podataka. Prilikom unosa klijenta, unijet će se i **Broj dokumenta**, koji je također promjenjiv.
+- **Klijent**, koristeći [pomoćno polje](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) ili  [izravno](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) unosom podataka. Prilikom unosa klijenta, unijet će se i **Broj dokumenta**, koji je također promjenjiv.
 
 *Specifična polja*
 

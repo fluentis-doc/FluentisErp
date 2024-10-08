@@ -71,7 +71,7 @@ SDD este un instrument de încasare preautorizat în baza unui mandat de debit e
 
 Se bazează pe un acord (mandat) prealabil între Debitor și Creditor care permite acestuia din urmă să solicite activarea unei proceduri interbancare pentru a debita automat contul debitorului.
 
-**Cod scop mandat: **trebuie introdus ‘Purpose code' (de obicei este setat codul 'GDSV' [PurchaseSaleOfGoodsAndServices]).
+**Cod scop mandat: **trebuie introdus ‘Purpose code' (de obicei este setat codul 'GDSV' *PurchaseSaleOfGoodsAndServices*).
 
 **Cod client/mandat**: reprezintă codul de identificare atribuit mandatului semnat de debitor. Corespunde în Rulebook (document oficial tehnic) la AT-01 Unique Mandate Reference.
 

@@ -7,7 +7,7 @@ La gestione si trova sul percorso **Home > Dipendenti > Corsi di formazione > Nu
 
 
 :::important A cosa serve
-I Corsi di base sono dei templates di corsi che ricorsivamente, o non, vengono effettuati in azienda: all'assunzione di nuovi dipendenti, a loro cambi di mansione, periodicamente per rinnovi previsti da leggi e normative.   
+I Corsi di base sono dei templates di corsi che ricorsivamente, o non, vengono effettuati: all'assunzione di nuovi dipendenti, a loro cambi di mansione, periodicamente per rinnovi previsti da leggi e normative.   
 :::
 
 

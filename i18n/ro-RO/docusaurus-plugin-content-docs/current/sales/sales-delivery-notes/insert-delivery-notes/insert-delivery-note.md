@@ -14,7 +14,7 @@ Pentru a continua crearea avizului, sunt necesare următoarele câmpuri obligato
 - **Numar** Fiecărui document i se atribuie un număr în funcție de numerotarea specificată de utilizator în tabelul [Numerotare Avize de Vânzare](/docs/configurations/tables/fluentis-numerations) și de tipul de document care conține numerotarea.  
 Vă rugăm să consultați, de asemenea, articolul ***[Parametri Avize de Vânzare](/docs/configurations/parameters/sales/dn-parameters)*** pentru parametrii specifici regăsirii numerelor.
 
-- **Client**, se poate folosi ***[Fereastra de help](/docs/guide/operations-with-data/manual-entry-or-help-and-data-selection)***, se pot tasta ***[direct](/docs/guide/operations-with-data/manual-entry-or-help-and-data-selection)*** datele sau se poate folosi procedura automată, dacă alegeți să creați documentul prin procedura ***[Executare aviz de vânzare din ordin client](/docs/sales/sales-delivery-notes/insert-delivery-notes/header-procedures/execution-from-order)***.
+- **Client**, se poate folosi ***[Fereastra de help](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection)***, se pot tasta ***[direct](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection)*** datele sau se poate folosi procedura automată, dacă alegeți să creați documentul prin procedura ***[Executare aviz de vânzare din ordin client](/docs/sales/sales-delivery-notes/insert-delivery-notes/header-procedures/execution-from-order)***.
 
 Fereastra conține o serie de tab-uri:
 

@@ -5,6 +5,14 @@ sidebar_position: 2
 
 ### Liste di Trasferimento UDC (versione WPF)
 
+:::important A cosa serve
+La Lista Trasferimento UDC di Fluentis è uno strumento progettato per gestire le movimentazioni delle Unità Di Carico (UDC) all'interno dei propri magazzini, offrendo un metodo sistematico e intuitivo per il trasferimento di merce. A differenza della Lista di Prelievo UDC, che è utilizzata per la spedizione ai clienti, la lista di trasferimento si concentra sull'ottimizzazione dei flussi interni delle UDC tra le varie ubicazioni del magazzino.
+
+Per creare una nuova lista di trasferimento, gli utenti devono semplicemente inserire i dettagli necessari, come la tipologia di picking, il magazzino di origine e l'utente coinvolto. La selezione delle unità di carico da trasferire può essere effettuata facilmente attraverso l'interfaccia, anche in questo caso grazie al pulsante Help UDC, che assiste nella ricerca delle UDC da includere nel trasferimento.
+
+Questa procedura consente anche di visualizzare gli articoli collegati a specifici ordini cliente, fornendo una panoramica chiara dei dettagli delle UDC selezionate. Una volta completata la lista di trasferimento, è possibile generare un DDT (Documento di Trasporto) direttamente dalla lista stessa, garantendo che tutte le informazioni relative agli articoli e alle unità di carico siano riportate in modo accurato e completo. Questo approccio non solo semplifica la gestione delle movimentazioni interne, ma contribuisce anche a mantenere una tracciabilità precisa delle scorte.
+:::
+
 Le **Liste di Trasferimento UDC** sono molto simili alle [Liste di prelievo UDC / Packing list](/docs/logistics/udc/loading-unit-packing-lists/loading-unit), con la differenza che vengono utilizzate nel caso di movimentazioni di UDC all’interno dei propri magazzini, mentre **Liste di prelievo UDC / Packing list** sono impiegate nel caso in cui si voglia spedire la merce ad un cliente.     
 
 Dalla maschera di **Ricerca** è possibile ricercare le liste precedentemente inserite.     
@@ -31,6 +39,11 @@ Dopo aver inserito questi dati e gli altri se necessario è possibile salvare la
 Per tutte le informazioni su come utilizzare questa form da WMS consultare le [Liste di Trasferimento UDC](/docs/logistics/wms/udc/loading-unit-transfer-list)
 
 ### Liste trasferimento UDC (versione WMS)
+
+:::important A cosa serve
+La funzione Liste di Trasferimento UDC del WMS di Fluentis consente di gestire le movimentazioni delle unità di carico all'interno dei magazzini, facilitando l'organizzazione e la tracciabilità delle UDC durante i trasferimenti tra diverse ubicazioni.        
+Questa funzionalità permette di creare e modificare liste di trasferimento in modo efficiente, migliorando così la gestione logistica interna
+:::
 
 Questa procedura è utilizzata per la creazione di liste di trasferimento con unità di carico.         
 Le **Liste di Trasferimento UDC** sono molto simili alle [Liste di prelievo UDC / Packing list](/docs/logistics/udc/loading-unit-packing-lists/loading-unit), con la differenza che vengono utilizzate nel caso di movimentazioni di unità di carico all’interno dei propri magazzini, mentre **Liste di prelievo UDC / Packing list** sono impiegate nel caso in cui si voglia spedire la merce ad un cliente.          

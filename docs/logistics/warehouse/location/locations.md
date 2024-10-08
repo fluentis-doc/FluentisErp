@@ -3,6 +3,15 @@ title: Ubicazioni
 sidebar_position: 1
 ---
 
+
+:::important A cosa serve
+La gestione delle ubicazioni in Fluentis è un elemento cruciale per l'ottimizzazione delle operazioni di magazzino. Questo modulo consente agli utenti di strutturare le ubicazioni di stoccaggio all'interno dei magazzini secondo uno schema gerarchico, facilmente modificabile per adattarsi alle esigenze aziendali. Ogni ubicazione può essere definita in base a vari parametri, inclusi il tipo di ubicazione (ad esempio, area, ripiano, scaffale, sezione) e le sue caratteristiche fisiche come larghezza, altezza e capacità di carico.
+
+Grazie alla creazione di un albero delle ubicazioni, gli operatori possono inserire nuove ramificazioni e visualizzare il contenuto di ciascuna ubicazione, con dettagli sugli articoli e le quantità in giacenza. La sezione degli attributi dell'ubicazione permette ulteriormente una personalizzazione, consentendo di definire requisiti specifici per le singole ubicazioni.
+
+Questa gestione efficiente delle ubicazioni non solo migliora il controllo delle giacenze, ma supporta anche la logistica operativa, contribuendo a una gestione più agile e efficace delle scorte all'interno dell'azienda.
+:::
+
 La form consente all'operatore di creare e gestire l’albero delle ubicazioni di magazzino.
 
 Attraverso i filtri è possibile fare una ricerca mirata secondo i parametri e visualizzare il risultato dell'interrogazione nelle griglie dei risultati. Tali risultati possono essere raggruppati per vari parametri per facilitare la lettura dei dati. L'unico parametro di filtro obbligatorio è quello del magazzino.

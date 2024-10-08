@@ -11,6 +11,6 @@ Problematiche correlate:
 
  [Impostazioni dati nelle griglie](/docs/form-navigator/data-grid-settings) 
 
- [Personalizzazioni form](/docs/guide/operations-with-data/form-customization-and-profiles-management) 
+ [Personalizzazioni form](/docs/guide/common/operations-with-data/form-customization-and-profiles-management) 
 
  [Personalizzazioni con l'aiuto del Form Editor](/docs/form-navigator/form-editor) 

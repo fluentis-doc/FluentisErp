@@ -3,7 +3,42 @@ title: Inserimento causali di contabilità generale
 sidebar_position: 1
 ---
 
-Le causali contabili sono composte da una testata e da tre sezioni: **[Dettaglio attributi;](/docs/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates/attributes-detail)**, **[Dettaglio registrazione](/docs/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates/recording-detail)** e **[Parametri](/docs/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates/parameters)**.
+:::tip[FAst Start]
+La tabella è interessata dalla procedura di [**Fast Start**](/docs/guide/fast-start)
+
+Nel caso in cui si intenda configurare manualmente fare riferimento alla check list della pagina linkata
+
+Le causali create dalla procedura di Fast Start permettono di eseguire:
+
+- Scritture di acquisto e vendita **Italia**
+- Acquisto e vendita in **Reverse charge** in Italia, giroconto acquisti e relativa autofatturazione
+- Scritture di acquisto e vendita **UE**, giroconto acquisti e relativa autofatturazione
+- Scritture di acquisto e vendita **Extra UE** e relativa autofatturazione con giroconto
+- Note di accredito a storno delle precedenti
+- Acquisto e vendita **cespiti**
+- Corrispettivi
+- **Incassi e pagamenti**
+- Portafoglio attivo (emissione e presentazione Ri.Ba e incasso, insoluti)
+- Scritture di prima nota libere
+- Altre scritture in prima nota quali paghe ecc.
+- Giriconto IVA
+- Versamenti imposte e contributi
+- Scritture di rettifica quali ratei e risconti attivi e passivi
+- Ammortamenti
+- Scritture di chiusura e riapertura conti
+:::
+
+:::important[Importante]
+Le causali contabili sono composte da una testata e da tre sezioni: 
+
+**[Dettaglio attributi;](/docs/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates/attributes-detail)**, 
+
+**[Dettaglio registrazione](/docs/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates/recording-detail)** e 
+
+**[Parametri](/docs/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates/parameters)**.
+:::
+
+
 
 ![](/img/it-it/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates/header/image01.png)
 

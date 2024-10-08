@@ -1,1 +1,1 @@
-The details of any **Attached Document** are displayed (name, document type, any notes, our/your reference). For instructions on how to attach a document, please refer to the article [Attach Documents](/docs/guide/operations-with-data/attach-documents).
+The details of any **Attached Document** are displayed (name, document type, any notes, our/your reference). For instructions on how to attach a document, please refer to the article [Attach Documents](/docs/guide/common/operations-with-data/attach-documents).

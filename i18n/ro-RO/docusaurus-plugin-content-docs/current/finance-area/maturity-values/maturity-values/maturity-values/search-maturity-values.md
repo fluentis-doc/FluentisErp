@@ -40,9 +40,9 @@ Puteți consulata și urmatoarele articole:
 
 -        [ Fila Angajamente](/docs/finance-area/ledger-records/records/create-ledger-record/maturity-values-tab)  din Înregistrări contabile;
 
--         [Inserare manuală/help și Selecție date](/docs/guide/operations-with-data/manual-entry-or-help-and-data-selection) ; 
+-         [Inserare manuală/help și Selecție date](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) ; 
 
--         [Butoane comune](/docs/guide/common-buttons). 
+-         [Butoane comune](/docs/guide/common/common-buttons). 
 
 
 
