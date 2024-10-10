@@ -206,8 +206,8 @@ jobs:
           echo "new_files_list.txt is correctly downloaded as a file"
           cat new_files_list.txt
       
-      - name: Debug i18n folder
-        run: ls -la i18n/${{ matrix.lang }}/docusaurus-plugin-content-docs/current/tutorial-basics/New\ Folder
+      # - name: Debug i18n folder
+      #   run: ls -la i18n/${{ matrix.lang }}/docusaurus-plugin-content-docs/current
 
       - name: Call Docker action to process translations #unauthorized if private
         uses: docker://ghcr.io/fluentis-doc/translate-action:latest
