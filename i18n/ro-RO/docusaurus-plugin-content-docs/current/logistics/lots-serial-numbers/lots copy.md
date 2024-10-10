@@ -9,7 +9,8 @@ Odată ce toate filtrele dorite sunt setate, este suficient să faceți clic pe 
 
 Pentru a deschide detaliile unui document, este suficient să-l selectați și să faceți dublu click cu mouse-ul sau să faceți clic pe butonul **Modifică**.
 
-*Buton specific*:
+*Buton specific* :
+Inca o modificare
 
 > **Modifică**: butonul permite [Modificarea unui lot introdus](/docs/logistics/lots-serial-numbers/lots-register);    
 > **Anulează**: permite ștergerea lotului dacă acesta nu este referit în niciun document. 
