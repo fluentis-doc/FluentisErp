@@ -1,16 +1,16 @@
 ---
-title: Serial Numbers
+title: Numere Seriale (Serial Numbers)
 sidebar_position: 7
 ---
 
-La form si apre tramite il percorso **Logistica > Anagrafica lotti > Anagrafica serial numbers**, e presenta la lista di tutti i Serial Numbers presenti nel database, consentendo di modificarli e visualizzarne un dettaglio.
+La fereastra se deschide prin parcursul **Registru Numar Serial** și prezintă lista tuturor Numere Seriale prezente în baza de date, permițând modificarea lor și vizualizarea detaliilor.
 
-Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** presente nella *Ribbon bar* per visualizzare i risultati all'interno della griglia di risultato.
+Odată setate toate filtrurile dorite, va fi suficient să faceți clic pe butonul **Caută** prezent în *Ribbon bar* pentru a vizualiza rezultatele în grila de rezultate.
 
-Per aprire i dettagli di un documento, basterà selezionarlo e fare doppio click con il mouse, oppure cliccare sul pulsante **Modifica**.
+Pentru a deschide detaliile unui document, va fi suficient să-l selectați și să faceți dublu clic cu mouse-ul, sau să faceți clic pe butonul **Modifică**.
 
-*Pulsanti specifici*:
+*Butoane specifice*:
 
-> **Modifica**: il pulsante permette di [Modificare un serial number inserito](/docs/logistics/lots-serial-numbers/serial-numbers).
+> **Modifică**: butonul permite [Modificarea unui număr serial introdus (Modificare un serial number inserito)](/docs/logistics/lots-serial-numbers/serial-numbers).
 
-Per dettagli sul funzionamento comune delle form fare riferimento al link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Pentru detalii despre funcționarea comună a ferestrelor, consultați linkul [Funcționalități, butoane și câmpuri comune (Funzionalità, pulsanti e campi comuni)](/docs/guide/common).
