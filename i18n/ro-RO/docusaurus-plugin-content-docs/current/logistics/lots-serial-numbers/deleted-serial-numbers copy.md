@@ -1,11 +1,10 @@
 ---
-title: Serial Number cancellati
+title: Numere de serie șterse (Serial Number cancellati)
 sidebar_position: 9
 ---
 
-Questa form permette di visualizzare il dettaglio dei Serial Number che sono stati cancellati.
+Această formă permite vizualizarea detaliilor numerelor de serie care au fost șterse.
 
-Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** presente nella *Ribbon bar* per visualizzare i risultati all'interno della griglia di risultato.
+Odată ce toate filtrele dorite sunt setate, este suficient să faceți clic pe butonul **Caută** prezent în *Ribbon bar* pentru a vizualiza rezultatele în cadrul grilei de rezultate.
 
-Per dettagli sul funzionamento comune delle form fare riferimento al link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
-
+Pentru detalii despre funcționarea comună a formelor, consultați linkul [Funcționalități, butoane și câmpuri comune (Funzionalità, pulsanti e campi comuni)](/docs/guide/common).

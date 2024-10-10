@@ -1,37 +1,38 @@
 ---
-title: Ricerca lotti
+title: Căutare loturi (Ricerca lotti)
 sidebar_position: 2
 ---
 
-La form si apre tramite il percorso **Logistica > Anagrafica lotti** e consente di ricercare tutti i lotti con lo scopo di visualizzarli e modificarli.
+Formularul se deschide prin parcursul **Logistică > Registrul loturilor** și permite căutarea tuturor loturilor în scopul de a le vizualiza și modifica.
 
-Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** presente nella *Ribbon bar* per visualizzare i risultati all'interno della griglia di risultato.
+Odată ce toate filtrele dorite sunt setate, este suficient să faceți clic pe butonul **Caută** prezent în *Ribbon bar* pentru a vizualiza rezultatele în cadrul grilei de rezultate.
 
-Per aprire i dettagli di un documento, basterà selezionarlo e fare doppio click con il mouse, oppure cliccare sul pulsante **Modifica**.
+Pentru a deschide detaliile unui document, este suficient să-l selectați și să faceți dublu clic cu mouse-ul sau să faceți clic pe butonul **Modifică**.
 
-*Pulsanti specifici*:
+*Butonuri specifice*:
 
-> **Modifica**: il pulsante permette di [Modificare un lotto inserito](/docs/logistics/lots-serial-numbers/lots-register);    
-> **Cancella**: permette la cancellazione del lotto se questo non è referenziato in alcun documento. 
+> **Modifică**: butonul permite [Modificarea unui lot introdus](/docs/logistics/lots-serial-numbers/lots-register);    
+> **Anulează**: permite ștergerea lotului dacă acesta nu este referit în niciun document. 
 
-*Filtri specifici*:
+*Filtre specifice*:
 
-**Tutti**: attivando questo flag l'utente può filtrare tutti i lotti presenti nel database;
+**Toate**: activând acest indicator, utilizatorul poate filtra toate loturile prezente în baza de date;
 
-**Non chiusi**: attivando questo flag l'utente può filtrare solo i lotti aperti, ovvero solo i lotti di cui esiste ancora una giacenza a magazzino;
+**Nu închis**: activând acest indicator, utilizatorul poate filtra doar loturile deschise, adică doar loturile de care există încă o disponibilitate în depozit;
 
-**Chiusi**: attivando questo flag l'utente può filtrare solo i lotti chiusi, ovvero solo i lotti la cui giacenza risulta uguale a zero.  
+**Închis**: activând acest indicator, utilizatorul poate filtra doar loturile închise, adică doar loturile a căror disponibilitate este egală cu zero.  
 
-*Campi specifici* nella griglia di risultato (click sul segno **+** per aprire il dettaglio della riga)
+*Campuri specifice* în grila de rezultate (click pe semnul **+** pentru a deschide detaliile rândului)
 
-**Chiuso**: il flag, se attivo, evidenzia che la giacenza è uguale a zero;
+**Închis**: indicatorul, dacă este activat, evidențiază că disponibilitatea este egală cu zero;
 
-**Quantità**: la colonna visualizza la quantità iniziale del lotto per ciascun magazzino;
+**Cantitate**: coloana vizualizează cantitatea inițială a lotului pentru fiecare depozit;
 
-**Quantità disponibile**: la colonna visualizza la quantità disponibile per ciascun magazzino del lotto, ossia la quantità in giacenza meno la quantità impegnata nei vari documenti. La quantità disponibile può anche essere visualizzata come uguale a zero nel caso in cui il lotto si trovi in uno stato 'non disponibile per prelievi automatici';
+**Cantitate
+disponibilă**: coloana vizualizează cantitatea disponibilă pentru fiecare depozit al lotului, adică cantitatea în stoc minus cantitatea angajată în diverse documente. Cantitatea disponibilă poate fi de asemenea vizualizată ca fiind egală cu zero în cazul în care lotul se află într-o stare 'nedisponibil pentru retrageri automate';
 
-**Stato lotto**: la colonna visualizza lo stato del lotto. Si tratta di un dato che potrebbe anche non essere gestito;
+**Stare Lot**: coloana vizualizează starea lotului. Este o informație care ar putea să nu fie gestionată;
 
-**Magazzino**: la colonna visualizza il codice del magazzino su cui si trova il lotto.
+**Gestiune**: coloana vizualizează codul depozitului în care se află lotul.
 
-Per dettagli sul funzionamento comune delle form fare riferimento al link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Pentru detalii privind funcționarea comună a formularelor, consultați linkul [Funcționalități, butoane și câmpuri comune](/docs/guide/common).
