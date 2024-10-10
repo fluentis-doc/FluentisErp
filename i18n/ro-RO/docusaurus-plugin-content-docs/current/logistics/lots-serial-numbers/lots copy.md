@@ -1,5 +1,5 @@
 ---
-title: Căutarea loturilor (Ricerca lotti)
+title: Căutarea loturilor
 sidebar_position: 2
 ---
 
