@@ -1,7 +1,7 @@
 ---
-title: TEST
+title: Test
 sidebar_position: 1
 ---
 
-La gestione **Acquisti** di Fluentis ERP è concepita per supportare gli operatori aziendali nella gestione rapida di tutta la documentazione relativa alla gestione della Supply Chain.
-Tramite l'emissione di ordini di fornitura, che possono avvenire in modalità manuale o automatica, è possibile procedere con l'approvvigionamento delle merci finalizzate alla gestione della produzione o del magazzino in funzione della specifica realtà aziendale.
+La gestionare **Achiziţii** a Fluentis ERP este concepută pentru a sprijini operatorii de afaceri în gestionarea rapidă a întreagăi documentații referitoare la gestionarea Lanțului de aprovizionare (Supply Chain).
+Prin emiterea comenzilor de furnizare, care pot avea loc în mod manual sau automat, este posibil să se procedeze cu aprovizionarea mărfurilor destinate gestionării producției sau a depozitului în funcție de specifica realitate a companiei.
