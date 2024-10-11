@@ -24,50 +24,77 @@ jobs:
         with:
           fetch-depth: 0 # Fetch at least 2 commits to compare HEAD with HEAD^
 
-      - name: Get modified and deleted .md files from the last commit
+      - name: Get modified, deleted, and renamed .md files from the last commit
         id: get-files
         run: |
-                # Debug: Print the current commit
-                echo "Current commit:"
-                git log -1 --oneline
+            # Check if the commit message indicates a merge pull request
+            MERGE_MESSAGE=$(git log -1 --pretty=%B)
 
-                # Get list of modified .md files in the docs folder
+            if [[ "$MERGE_MESSAGE" == *"Merge pull request"* ]]; then
+                echo "This is a pull request merge."
+
+                # Check if the commit was a fast-forward
+                PARENT_COUNT=$(git rev-list --count --parents -n 1 HEAD | awk '{print NF-1}')
+                if [ "$PARENT_COUNT" -eq 1 ]; then
+                    echo "This was a fast-forward merge."
+
+                    # Use the regular approach since it's a fast-forward merge
+                    MODIFIED_FILES=$(git diff-tree --no-commit-id --name-status -r HEAD | grep -E '^M\s.*\.md$' | awk '{print $2}' | grep '^docs/' || true)
+                    DELETED_FILES=$(git diff-tree --no-commit-id --name-status -r HEAD | grep -E '^D\s.*\.md$' | awk '{print $2}' | grep '^docs/' || true)
+                    RENAMED_FILES=$(git diff-tree --no-commit-id --name-status -r HEAD | grep -E '^R\s.*\.md$' | awk '{print $3}' | grep '^docs/' || true)
+                else
+                    # Not a fast-forward, use the original merge diff logic
+                    MODIFIED_FILES=$(git diff --name-status HEAD^1 HEAD | grep -E '^M\s.*\.md$' | awk '{print $2}' | grep '^docs/' || true)
+                    DELETED_FILES=$(git diff --name-status HEAD^1 HEAD | grep -E '^D\s.*\.md$' | awk '{print $2}' | grep '^docs/' || true)
+                    RENAMED_FILES=$(git diff --name-status HEAD^1 HEAD | grep -E '^R\s.*\.md$' | awk '{print $3}' | grep '^docs/' || true)
+                fi
+            else
+                echo "This is a regular commit."
+                # Use the regular approach
                 MODIFIED_FILES=$(git diff-tree --no-commit-id --name-status -r HEAD | grep -E '^M\s.*\.md$' | awk '{print $2}' | grep '^docs/' || true)
-                echo "DEBUG: Modified files detected: $MODIFIED_FILES"
-                
-                # Get list of deleted .md files in the docs folder
                 DELETED_FILES=$(git diff-tree --no-commit-id --name-status -r HEAD | grep -E '^D\s.*\.md$' | awk '{print $2}' | grep '^docs/' || true)
-                echo "DEBUG: Deleted files detected: $DELETED_FILES"
-                
-                # Check if there are any files and set environment variables
-                if [ -z "$MODIFIED_FILES" ] && [ -z "$DELETED_FILES" ]; then
-                    echo "No modified or deleted .md files found in the docs/ folder."
-                    exit 0
-                fi
-                
-                # Set environment variables for modified and deleted files
-                if [ -n "$MODIFIED_FILES" ]; then
-                    MODIFIED_FILES=$(echo "$MODIFIED_FILES" | tr '\n' ' ')
-                    echo "DEBUG: Writing modified files to environment: $MODIFIED_FILES"
-                    echo "modified_files=$MODIFIED_FILES" >> $GITHUB_ENV
-                else
-                    echo "DEBUG: No modified files detected."
-                    echo "modified_files=" >> $GITHUB_ENV
-                fi
-                
-                if [ -n "$DELETED_FILES" ]; then
-                    DELETED_FILES=$(echo "$DELETED_FILES" | tr '\n' ' ')
-                    echo "DEBUG: Writing deleted files to environment: $DELETED_FILES"
-                    echo "deleted_files=$DELETED_FILES" >> $GITHUB_ENV
-                else
-                    echo "DEBUG: No deleted files detected."
-                    echo "deleted_files=" >> $GITHUB_ENV
-                fi
-                
-                # Debug: Verify environment variables were set
-                echo "DEBUG: Final environment variables:"
-                echo "modified_files=$MODIFIED_FILES"
-                echo "deleted_files=$DELETED_FILES"
+                RENAMED_FILES=$(git diff-tree --no-commit-id --name-status -r HEAD | grep -E '^R\s.*\.md$' | awk '{print $3}' | grep '^docs/' || true)
+            fi
+            
+            # Check if there are any files and set environment variables
+            if [ -z "$MODIFIED_FILES" ] && [ -z "$DELETED_FILES" ] && [ -z "$RENAMED_FILES" ]; then
+                echo "No modified, deleted, or renamed .md files found in the docs/ folder."
+                exit 0
+            fi
+            
+            # Set environment variables for modified, deleted, and renamed files
+            if [ -n "$MODIFIED_FILES" ]; then
+                MODIFIED_FILES=$(echo "$MODIFIED_FILES" | tr '\n' ' ')
+                echo "DEBUG: Writing modified files to environment: $MODIFIED_FILES"
+                echo "modified_files=$MODIFIED_FILES" >> $GITHUB_ENV
+            else
+                echo "DEBUG: No modified files detected."
+                echo "modified_files=" >> $GITHUB_ENV
+            fi
+            
+            if [ -n "$DELETED_FILES" ]; then
+                DELETED_FILES=$(echo "$DELETED_FILES" | tr '\n' ' ')
+                echo "DEBUG: Writing deleted files to environment: $DELETED_FILES"
+                echo "deleted_files=$DELETED_FILES" >> $GITHUB_ENV
+            else
+                echo "DEBUG: No deleted files detected."
+                echo "deleted_files=" >> $GITHUB_ENV
+            fi
+
+            if [ -n "$RENAMED_FILES" ]; then
+                RENAMED_FILES=$(echo "$RENAMED_FILES" | tr '\n' ' ')
+                echo "DEBUG: Writing renamed files to environment: $RENAMED_FILES"
+                echo "renamed_files=$RENAMED_FILES" >> $GITHUB_ENV
+            else
+                echo "DEBUG: No renamed files detected."
+                echo "renamed_files=" >> $GITHUB_ENV
+            fi
+            
+            # Debug: Verify environment variables were set
+            echo "DEBUG: Final environment variables:"
+            echo "modified_files=$MODIFIED_FILES"
+            echo "deleted_files=$DELETED_FILES"
+            echo "renamed_files=$RENAMED_FILES"
 
       - name: Create issues for translation review
         if: ${{ env.modified_files != '' || env.deleted_files != '' }}
