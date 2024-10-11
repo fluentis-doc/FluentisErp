@@ -3,7 +3,7 @@ title: Introduzione
 sidebar_position: 1
 ---
 
-Il modulo si trova nell'area *Acquisti > Ordini fornitori* e rappresenta uno degli step intermedi del ciclo passivo. Gli ordini di acquisto sono documenti formali emessi dal reparto *Acquisti*, utilizzati per richiedere beni o servizi da un fornitore, secondo condizioni predefinite. Contengono i dettagli relativi ai prodotti o servizi da acquistare, inclusi quantità, prezzi, termini di consegna, condizioni di pagamento e altre specifiche contrattuali.   
+Il modulo si trova nell'area **Acquisti > Ordini fornitori** e rappresenta uno degli step intermedi del ciclo passivo. Gli ordini di acquisto sono documenti formali emessi dal reparto *Acquisti*, utilizzati per richiedere beni o servizi da un fornitore, secondo condizioni predefinite. Contengono i dettagli relativi ai prodotti o servizi da acquistare, inclusi quantità, prezzi, termini di consegna, condizioni di pagamento e altre specifiche contrattuali.   
 
 **Flusso operativo**
 
