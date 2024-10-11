@@ -5,7 +5,7 @@ sidebar_position: 1
 
 Il modulo si trova nell'area **Acquisti > Richieste di acquisto** e consente la creazione, gestione e monitoraggio delle richieste di acquisto, permettendo all'operatore di elaborare internamente all'azienda la richiesta di materiale da acquistare a partire da segnalazioni di carenze di inventario, richieste provenienti dai vari reparti aziendali o previsioni di domanda.
 
-**Flusso operativo**
+### **Flusso operativo**
 
 Le *Richieste di acquisto* possono essere inserite manualmente dall'operatore quando viene identificata una necessità di materiali o servizi, oppure possono essere generate automaticamente da: 
 
@@ -14,13 +14,13 @@ Le *Richieste di acquisto* possono essere inserite manualmente dall'operatore qu
 
 Una volta *autorizzata*, la Richiesta di Acquisto può generare una *Richiesta di Offerta*, mediante il pulsante *Generatore RDO* posto all'interno della RDA, oppure può essere trasformata in un *Ordine di acquisto* mediante la procedura di [Creazione automatica Ordini](/docs/purchase/purchase-orders/procedures/create-purchase-orders-from-purchase-requests).
 
-**Funzionalità principali**
+### **Funzionalità principali**
 
 - Automazione delle richieste: È possibile generare automaticamente richieste di acquisto sulla base di segnali come il sottoscorta o la pianificazione della produzione, semplificando ed accelerando il processo di approvvigionamento. 
 - Monitoraggio e tracciamento: Consente di tracciare lo stato delle richieste, dall'invio all'approvazione, fino alla conversione in ordini. 
 - Reportistica: Genera report dettagliati con layout personalizzabili dall'utente, fornendo informazioni utili per la gestione e l'analisi delle attività di approvvigionamento.
 
-**Impostazioni**
+### **Impostazioni**
 
 Prima di utilizzare il modulo, è necessario compilare le seguenti tabelle e parametri:     
 > - [Numerazione richieste di acquisto](/docs/configurations/tables/fluentis-numerations)    
