@@ -1,7 +1,15 @@
 ---
 title: Risorse di produzione
-sidebar_position: 2
+sidebar_position: 3
 ---
+
+:::important A cosa serve
+Le Risorse produttive nel sistema MES di Fluentis consentono di gestire tutti i parametri necessari per la pianificazione e l'ottimizzazione delle operazioni produttive. Attraverso un'interfaccia intuitiva, gli utenti possono importare diverse tipologie di risorse, tra cui articoli, macchine, dipendenti, centri di lavoro e strumenti di misura. 
+
+Inoltre, è possibile personalizzare il layout e il comportamento del centro di lavoro, adattando il sistema alle specifiche esigenze aziendali, in maniera semplice, veloce ed in piena autonomia. 
+
+Questa funzionalità non solo semplifica la gestione delle risorse di produzione, ma permette anche di copiare facilmente impostazioni predefinite da risorse esistenti, garantendo che i dati siano sempre aggiornati e coerenti.
+:::
 
 Attraverso questa finestra vengono settati tutti i parametri che riguardano la gestione delle risorse di produzione all'interno del MES.
 
@@ -61,7 +69,8 @@ Le tipologie di documenti che si possono escludere sono:
 > *Articolo*: tutti i documenti (file, immagini,...) legati all'articolo non saranno visualizzati nel tab *Documenti e Istruzioni operative*;     
 > *Ordine cliente*: tutti i documenti (file, immagini,...) legati all'ordine cliente non saranno visualizzati nel tab *Documenti e Istruzioni operative*;      
 > *Commessa*: tutti i documenti (file, immagini,...) legati alla commessa non saranno visualizzati nel tab *Documenti e Istruzioni operative*;   
-> *Ordine di produzione*: tutti i documenti (file, immagini,...) legati all'ordine di produzione non saranno visualizzati nel tab *Documenti e Istruzioni operative*.     
+> *Ordine di produzione*: tutti i documenti (file, immagini,...) legati all'ordine di produzione non saranno visualizzati nel tab *Documenti e Istruzioni operative*;
+> *Fase ordine di produzione*: tutti i documenti (file, immagini,...) legati alla singola fase di un ordine di produzione (all'interno del tab *Documenti allegati* relativo alla fase) non saranno visualizzati nel tab *Documenti e Istruzioni operative*.          
 
 ### *Controlli Qualità*
 Contiene una serie di controlli legati al tab *Controllo qualità* di Fluentis MES.     
@@ -81,6 +90,11 @@ Contiene una serie di controlli legati al tab *Controllo qualità* di Fluentis M
 
 ## Layout
 
+*Pulsanti specifici*:  
+
+> **Layout completo**: permette di attivare il layout completo dell'interfaccia MES con un solo click;           
+> **Layout minimo**: permette di attivare il layout minimo dell'interfaccia MES con un solo click;               
+
 In questo tab sono presenti una serie di informazioni che influenzano il layout della risorsa di produzione durante le Dichiarazioni di produzione.      
 
 **Sequenza tabulatori**       
@@ -89,7 +103,7 @@ Questa sezione permette di definire se un tab sia visibile o meno, inoltre è po
 **Non visualizzare**        
 Questa sezione permette di nascondere varie informazioni non necessarie all'interno di Fluentis MES.
 
-### *Generale*
+### **Generale**
 > *Gruppo*: se attivo, nasconde le informazioni relative al gruppo;     
 > *Sequenza*: se attivo, nasconde le informazioni relative alla sequenza;     
 > *Sottofase*: se attivo, nasconde le informazioni relative alla Sottofase;     
@@ -104,21 +118,31 @@ Questa sezione permette di nascondere varie informazioni non necessarie all'inte
 > *Lotti*: se attivo, nasconde le informazioni relative alla gestione dei lotti;    
 > *Serial number*: se attivo, nasconde le informazioni relative alla gestione dei serial number;    
 > *UDC*: se attivo, nasconde le informazioni relative alla gestione delle UDC;    
-> *Quantità alternativa*: se attivo, nasconde le informazioni relative alla gestione della quantità alternativa;    
-
-### *Articoli prodotti*
+  
+### **Articoli prodotti**
 > *Magazzino versamento*: se attivo, nasconde le informazioni relative al magazzino di versamento degli articoli prodotti nel tab *Produzione*;    
 > *Causale versamento*: se attivo, nasconde le informazioni relative alla causale di versamento degli articoli prodotti nel tab *Produzione*;    
 > *Ubicazione versamento*: se attivo, nasconde le informazioni relative all'ubicazione di versamento degli articoli prodotti nel tab *Produzione*;    
 > *Magazzino versamento scarto*: se attivo, nasconde le informazioni relative al magazzino di versamento scarto degli articoli prodotti nel tab *Produzione*;     
-> *Causale versamento scarto*: se attivo, nasconde le informazioni relative alla causale di versamento sacrto degli articoli prodotti nel tab *Produzione*;     
+> *Causale versamento scarto*: se attivo, nasconde le informazioni relative alla causale di versamento scarto degli articoli prodotti nel tab *Produzione*;     
 > *Ubicazione versamento scarto*: se attivo, nasconde le informazioni relative all'ubicazione di versamento scarto degli articoli prodotti nel tab *Produzione*;     
+> *Quantità alternativa*: se attivo, nasconde le informazioni relative alla gestione della quantità alternativa;  
 
-### *Materiali*
+### **Materiali**
 > *Magazzino prelievo*: se attivo, nasconde le informazioni relative al magazzino di scarico dei materiali nel tab *Materiali*;    
 > *Causale prelievo*: se attivo, nasconde le informazioni relative alla causale di scarico dei materiali nel tab *Materiali*;    
 > *Magazzino versamento scarto*: se attivo, nasconde le informazioni relative al magazzino di scarico scarto dei materiali nel tab *Materiali*;    
 > *Causale versamento scarto*: se attivo, nasconde le informazioni relative alla causale di scarico scarto dei materiali nel tab *Materiali*;    
+
+### **Controlli qualità**
+
+> **Sequenza**: se attivo, nasconde le informazioni relative alla sequenza nel tab *Controlli qualità*;     
+> **Tipo di prova**: se attivo, nasconde le informazioni relative al tipo di prova nel tab *Controlli qualità*;     
+> **Strumenti di misura**: se attivo, nasconde le informazioni relative alla Categoria strumento di misura e agli Strumenti di misura nel tab *Controlli qualità*;      
+> **Limiti tolleranze**: se attivo, nasconde le informazioni relative ai Limiti tolleranze (L.min.(toll-), L.min.(toll+), L.max.(toll-) e L.max.(toll+)) nel tab *Controlli qualità*;     
+> **Tipo controllo e Frequenza**: se attivo, nasconde le informazioni relative al Tipo controllo prova e Frequenza nel tab *Controlli qualità*;        
+> **Magazzino**: se attivo, nasconde le informazioni relative al magazzino nel tab *Controlli qualità*;         
+> **Causale**: se attivo, nasconde le informazioni relative alla causale di magazzino per articoli non conformi nel tab *Controlli qualità*;       
 
 ### **Altro**
 

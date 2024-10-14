@@ -46,10 +46,7 @@ dove codificare la nuova unità di misura e attribuire le caratteristiche princi
 
 :::important IMPORTANTE
 **Tipo di valutazione del tempo:** campo utilizzato nel modulo controlling per definire se l'UM si di tipo Flusso o Stato.
-Es. ore macchina è flusso, mentre metri quadri è stato perché valido ogni mese, è sempre quello, flusso varia ogni mese.
-
-**NOTA**
-La registrazione delle grandezze ***stato*** nella *prima nota registrazioni gestionali* deve essere comunque fatta ogni anno anche di per se non variano nel corso del tempo, è presente un comando per la duplica al fine di velocizzare l'inserimento ed un messaggio di errore in *elaborazione periodi* se viene dimenticato.
+Es. ore macchina è flusso, mentre i metri quadri di uno stabile sono tipicamente di stato perché valido ogni mese.
 :::
 
 
@@ -67,7 +64,4 @@ dove gestire i fattori di conversioni tra diverse unità di misura al fine di ge
 ---
 
 ### Tipo valutazione tariffa 
-assieme al campo **Tipo valutazione** del tempo (nella griglia principale) è utilizzata dal modulo Controlling.
-
-E' possibile associare ad ogni unità di misura il [**TIPO DI DISTRIBUZIONE PERIODI**](/docs/configurations/tables/controlling/managerial-accounting/periods-distribution) 
-(ad esempio in undicesimi, in dodicesimi, in giorni lavorativi ecc...) ed il <u>**criterio di valutazione della tariffa**</u> tra quelli presenti nella combo box.
+Gestione non attiva

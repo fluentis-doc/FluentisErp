@@ -27,6 +27,6 @@ Attraverso questa sezione vengono gestite le seguenti tipologie di anagrafiche:
     - Listini: associazione listini di vendita e acquisto all'anagrafica
     - Agenti: associazione degli agenti ai clienti
     - Altro
-- [le anagrafe degli **articoli**:](/docs/erp-home/registers/items/academy-master-item) composte da diverse sezioni in base al tipo di dato ed all'utilizzo relativo (es. i dati amministrativi, le unità di misura ecc)
+- [le anagrafe degli **articoli**:](/docs/erp-home/registers/items/master-item-intro) composte da diverse sezioni in base al tipo di dato ed all'utilizzo relativo (es. i dati amministrativi, le unità di misura ecc)
 - [piano dei **conti**:](/docs/erp-home/registers/accounting/analytic-chart-of-accounts) che pur inserito nel contesto delle anagrafiche (inquanto connesso alle anagrafiche clienti e fornitori) si presenta più simile ad una tabella dove definire i conti ed i loro raggruppamenti
 - **[cicli di lavoro,](/docs/erp-home/registers/production/routes/cycle-management-and-production-phases) [distinte base](/docs/erp-home/registers/production/bill-of-materials/bom), [prototipi:](/docs/erp-home/registers/production/standardization/new-prototype)** elementi relativi al contesto della produzione

@@ -1,7 +1,15 @@
 ---
 title: Risorse di produzione
-sidebar_position: 2
+sidebar_position: 3
 ---
+
+:::important A cosa serve
+Le Risorse produttive nel sistema MES di Fluentis consentono di gestire tutti i parametri necessari per la pianificazione e l'ottimizzazione delle operazioni produttive. Attraverso un'interfaccia intuitiva, gli utenti possono importare diverse tipologie di risorse, tra cui articoli, macchine, dipendenti, centri di lavoro e strumenti di misura. 
+
+Inoltre, è possibile personalizzare il layout e il comportamento del centro di lavoro, adattando il sistema alle specifiche esigenze aziendali, in maniera semplice, veloce ed in piena autonomia. 
+
+Questa funzionalità non solo semplifica la gestione delle risorse di produzione, ma permette anche di copiare facilmente impostazioni predefinite da risorse esistenti, garantendo che i dati siano sempre aggiornati e coerenti.
+:::
 
 Attraverso questa finestra vengono settati tutti i parametri che riguardano la gestione delle risorse di produzione all'interno del MES.
 

@@ -57,7 +57,7 @@ In questo modo l'utente dovrà poi impostare soltanto l'anagrafica e le impostaz
 Specularmente il settaggio opera sulla parte fornitori, mettendo il flag *Fornitori* nella tabella [Tipo contab. articolo](/docs/configurations/tables/finance/articles-accounting-types) ed aggiornando la tabella **Fatturato acquisti**.
 
 
-**Sottoconto fatture da ricevere**: indicare in questo campo il sottoconto patrimoniale (prioritario rispetto al default inserito nei parametri di contabilità) da utilizzare nella procedura dell'area acquisti **Contabilizzazione fatture da ricevere** (funzionalità attualmente disabilitata).
+**Sottoconto fatture da ricevere**: indicare in questo campo il sottoconto patrimoniale (prioritario rispetto al default inserito nei parametri di contabilità) da utilizzare nella procedura dell'area acquisti **Contabilizzazione fatture da ricevere**, ma anche nelle procedure di calcolo degli assestamenti di bilancio o delle simulazioni di bilancio infrannuale nel caso in cui tutto il costo sia da inserire nel bilancio di periodo.
 
 
 **Sottoconto di fatturazione**: il campo, gestito esclusivamente per le anagrafiche clienti, consente di definire per il sottoconto di anagrafica in uso, quale sia il sottoconto sul quale intestare la fattura nel corso della creazione delle fatture da DDT;
@@ -127,9 +127,9 @@ ATTENZIONE: gestione delle partite aperte: in entrambe le contabilizzazioni ci s
 
 **Gest. EDI**: abilita la gestione dei file EDI (funzionalità attualmente disabilitata);
 
-**Intrastat/Cod. Serv**: flag che abilita la gestione della dichiarazione intrastat per i documenti/registrazioni intestati al soggetto in uso; in caso di soggetto con flag ‘Intrastat', è possibile indicare il codice servizio di default per le sezioni quater e quinquies della dichiarazione intrastat;
+**Intrastat/Cod. Serv**: flag che abilita la gestione della dichiarazione intrastat per i documenti/registrazioni intestati al soggetto in uso, se anche il tipo documento è di tipo intracomunitario; in caso di soggetto con flag ‘Intrastat', è possibile indicare il codice servizio di default per le sezioni quater e quinquies della dichiarazione intrastat;
 
-**Perc. spese Intra/Segno**: indica la percentuale media delle spese da aggiungere/togliere al valore merce per il calcolo del valore statistico in dichiarazione intrastat;/ segno che definisce se le spese vanno sommate o detratte per ottenere il valore statistico della merce nelle dichiarazioni intrastat;
+**Perc. spese Intra/Segno**: indica la percentuale media delle spese da aggiungere/togliere al valore merce per il calcolo del valore statistico in dichiarazione intrastat; il segno che definisce se le spese vanno sommate o detratte per ottenere il valore statistico della merce nelle dichiarazioni intrastat;
 
 **Categoria amministrativa**: dato statistico della categoria amministrativa associata al soggetto;
 
@@ -137,7 +137,12 @@ ATTENZIONE: gestione delle partite aperte: in entrambe le contabilizzazioni ci s
 
 **Categoria fatturazione**: criterio di filtro per la procedura di creazione fatture di vendita da DDT;
 
+**Categoria provvigionale cliente**: dato che può servire per l'attribuzione delle percentuali provvigionali agli agenti legati a questo cliente, secondo le priorità definite nella loro anagrafica;
+
 **Responsabile**: per le analisi del rischio cliente, soggetto interno responsabile commerciale del soggetto.
+
+**Filiale aziendale di riferimento**: in questo campo è possibile associare il cliente/fornitore ad una filiale e, tramite questa, ad una *divisione* aziendale differente. Nella contabilizzazione delle fatture di vendita è presente un parametro con il quale assegnare la registrazione contabile a questa divisione, pur mantenendo tutti i documenti in quella principale operativa.
+
 
 *Pulsante specifico*:
 > **Calcolo sconti**: per assegnare, all'anagrafica cliente in uso, una configurazione sconti (definita nel modulo area *Vendite > Listini di vendita*). Il pulsante è **attivo** **solo** all'interno di un'anagrafica cliente.

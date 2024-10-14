@@ -8,8 +8,8 @@ In questa form è possibile inserire (tramite il tasto **Nuovo**) delle tariffe 
 Tali tariffe saranno poi utilizzate dai cost driver (in particolare dal criterio di distribuzione *Reversione su produzione a tariffa standard*) per valorizzare i movimenti ed i risultati dei centri tipicamente movimentati a grandezze fisiche e quindi non economiche.
 
 Per codificare una tariffa fissa dovremo inserire:
-- una ***Area*** di analisi (ad esempio *Consuntivo*, piuttosto che *Budget*) 
-- il ***Centro aziendale*** di riferimento (tipicamente un centro valorizzato a grandezze fisiche)
+- una [***Area***](/docs/controlling/controlling-parametrization/controlling-specific-settings/area-types-areas) di analisi (ad esempio *Consuntivo*, piuttosto che *Budget*) 
+- il [***Centro aziendale***](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-centers) di riferimento (tipicamente un centro valorizzato a grandezze fisiche)
 - un ***Codice*** della tariffa
 - una ***Descrizione*** della tariffa.
 

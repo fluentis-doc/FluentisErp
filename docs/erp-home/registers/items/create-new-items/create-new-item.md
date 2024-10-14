@@ -3,7 +3,15 @@ title: Anagrafica articolo - sezione fissa
 sidebar_position: 1
 ---
 
-**Fluentis academy**: [Identificazione dei prodotti e relative parti](/docs/erp-home/registers/items/academy-master-item) 
+**Introduzione**: [Identificazione dei prodotti e relative parti](/docs/erp-home/registers/items/master-item-intro) 
+
+:::important A cosa serve
+L'anagrafica articoli di Fluentis svolge un ruolo cruciale nella gestione e organizzazione delle informazioni relative agli articoli di un'azienda. Essa si presenta come un database centrale dove vengono registrati e aggiornati i dettagli di ogni prodotto, consentendo una visione chiara e sistematica delle giacenze, dei costi e delle movimentazioni di magazzino.
+
+Le informazioni contenute nell'anagrafica articoli includono dettagli identificativi come il codice articolo, la descrizione, l'unità di misura, e le informazioni relative ai fornitori. Inoltre, è possibile inserire dati riguardanti i prezzi, le politiche di approvvigionamento e la gestione dei lotti, facilitando le operazioni quotidiane di acquisto, vendita e logistica.
+
+Grazie a quest’anagrafica, le aziende possono tenere traccia dello stato degli articoli, automatizzare processi come il riordino delle scorte e ottenere report dettagliati per una pianificazione più efficace degli acquisti. Inoltre, l'integrazione con altri moduli di Fluentis consente di coordinare al meglio le attività di magazzino, migliorando l’efficienza operativa e contribuendo a una gestione delle scorte più accurata e rettificata nel tempo.
+:::
 
 La procedura di creazione di un nuovo articolo si apre tramite il percorso:
 - **Home > Articolo > Crea Nuovo Articolo**,

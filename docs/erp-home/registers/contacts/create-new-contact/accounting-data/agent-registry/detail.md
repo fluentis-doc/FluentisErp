@@ -21,11 +21,17 @@ Questa finestra contiene elementi generali dell'agente stesso:
 
 **Data inizio/fine rapporto**: sulla base di questa data parte il calcolo dell'indennità suppletiva di clientela (stampa a disposizione per il modulo Agenti/Percipienti);
 
-**Costo di/contropartita**: il sottoconto di contabilità generale da proporre all'inserimento del compenso nel modulo Percipienti (o da utilizzare nella sua creazione automatica dalla liquidazione agenti) al fine di accogliere il costo delle provvigioni
+**Costo di/contropartita**: il sottoconto di contabilità generale da proporre all'inserimento del compenso nel modulo Percipienti (o da utilizzare nella sua creazione automatica dalla liquidazione agenti) al fine di accogliere il costo delle provvigioni;
+
+**Conto di contropartita costo fisso**: è possibile valorizzare il fisso su un conto contabile specifico tramite questo campo;
 
 **Conto di fatturazione**: questo sottoconto viene utilizzato, nella creazione automatica del compenso percipiente dalla liquidazione agenti, per intestare il compenso ad un codice contabile differente (di tipo fornitore, al fine di unificare i dati contabili per soggetti che sono sia agente che fornitore);
 
 **Annotazioni**: note libere dell'anagrafica agente;
+
+**Operatore**: collegamento all'utente di **Fluentis**, serve per le restrizioni di visibilità dei dati quando all'agente è stato abilitato un accesso a ***Fluentis***
+
+**Visibilità del documento**: è collegato al campo precedente, consente di definire se l'agente vede *Tutti i documenti* o *Propri documenti*
 
 **Enasarco**: numero di iscrizione all'ente;
 
@@ -33,8 +39,12 @@ Questa finestra contiene elementi generali dell'agente stesso:
 
 **Capo area**: permette di collegare l'anagrafica di un agente che è capo area rispetto a quello in uso; non vi sono automatismi relativi al calcolo delle provvigioni.
 
+**Regime fiscale**: il regime del soggetto
+
 **Intra e Cod.serv.**: per agenti intracomunitari da riportare nelle sezioni quater e quinquies della dichiarazione intrastat;
 
 **Società di capitali**: obsoleto, presente per retrocompatibilità
 
 **Obbligo provvigioni su riga ordine**: con questo flag si obbliga l'utente a impostare una provvigione per l'agente nell'ordine cliente.
+
+I campi legati alla fatturazione elettronica non sono attualmente in uso.

@@ -5,9 +5,9 @@ sidebar_position: 2
 
 La maschera dello ***Storico ammortamenti*** consente di visualizzare il dettaglio, cespite per cespite, del risultato di elaborazione degli ammortamenti tecnici specifici del *Controlling*. Nella maschera abbiamo visibilità dei seguenti campi:
 
-- L'***Area*** di riferimento
+- L'[***Area***](/docs/controlling/controlling-parametrization/controlling-specific-settings/area-types-areas) di riferimento
 
-- Il ***Centro aziendale*** di attribuzione dell'ammortamento
+- Il [***Centro aziendale***](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-centers) di attribuzione dell'ammortamento
 
 - L'***Anno*** e il ***Periodo*** di riferimento
 

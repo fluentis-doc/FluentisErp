@@ -28,7 +28,10 @@ La sezione generale presenta la struttura ramificata dei Centri di profitto defi
 
 **Flag MRP**: il flag consente di utilizzare il centro di profitto nel modulo della produzione.
 
-
+:::tip Nota
+la tabella è da considerarsi superata e viene gestita solo per retrocompatibilità.
+Si consiglia di definire piuttosto una *dimensione* ricavi da utilizzare nei *Centri aziendali*
+:::
 
 
 

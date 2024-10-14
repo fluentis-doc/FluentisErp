@@ -37,7 +37,7 @@ All'interno di questa tabella si codificano le categorie dei cespiti gestiti nel
 
 **Cod. bilancio**: codice di bilancio per la stampa del prospetto delle rivalutazioni.
 
-**Amm. oggettivo**: attiva la gestione dei dati oggettivi del cespite: questa prevede una duplicazione dei valori patrimoniali contabili al fine di applicare una logica d'ammortamento extracontabile separata
+**Gestione extra-contabile**: attiva la gestione dei dati extracontabili del cespite: questa prevede una duplicazione dei valori patrimoniali contabili al fine di applicare una logica d'ammortamento extracontabile separata
 
 **Giorni**: Attivando questo flag il calcolo della quota di ammortamento terrà conto dei giorni esatti di possesso del bene nell'anno in corso, anzichè riferirsi alla logica standard che calcola la quota intera indipendentemente dalla data di acquisto, eventualmente dimezzandola il primo anno se il flag *Amm. Primo anno* presente nella seconda griglia è stato attivato (vedi sotto).
 
@@ -90,7 +90,7 @@ La seconda sezione  è dedicata all'impostazione dei dettagli di ammortamento a
 
 ---
 
-### GRIGLIA DEI CENTRI DI COSTO (RIMOSSA SE ATTIVO IL MODULO CONTROLLING COMPLETO)
+### GRIGLIA DEI CENTRI DI COSTO (RIMOSSA SE ATTIVO IL MODULO CONTROLLING COMPLETO IN TABELLA SOCIETA', SENZA IL PARAMETRO DI USO CENTRI CONTABILI)
 
 :::note NOTA
 Nonostante la gestione dei centri di costo per i cespiti possa essere elaborata con delle logiche più sofisticate di gestione dell'ammortamento oggettivo, utili alle esigenze di un controllo di gestione approfondito, è comunque possibile agganciare un centro di costo specifico per il singolo cespite, **nella tab Dettaglio**, (oppure direttamente sulla categoria cespite ma in tal caso occorre disattivare il Flag Gestione controlling nell'anagrafica della società in uso) da valorizzare con la quota annuale calcolata ai fini fiscali e contabili.

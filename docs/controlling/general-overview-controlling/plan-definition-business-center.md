@@ -3,13 +3,13 @@ title: Definizione piano dei centri aziendali
 sidebar_position: 2.1
 ---
 
-Il piano dei centri aziendali è il primo punto da affrontare ed anche quello fondamentale per una corretta impostazione della contabilità analitica/gestionale: per poter codificare i centri dovremo definire innanzi tutto le ***Dimensioni*** di analisi e poi le ***Categorie dei centri aziendali***.
+Il piano dei [***Centri aziendali***](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-centers) è il primo punto da affrontare ed anche quello fondamentale per una corretta impostazione della contabilità analitica/gestionale: per poter codificare i centri dovremo definire innanzi tutto le ***Dimensioni*** di analisi e poi le ***Categorie dei centri aziendali***.
 
 :::tip Nota
 In società senza l'opzione *Controlling* attiva è consentita la creazione di Centri di costo senza una dimensione di riferimento e senza una categoria di centro
 :::
 
-La ***Dimensione*** è sostanzialmente un criterio coerente di suddivisione di COSTI e RICAVI all’interno dell’azienda. La contabilità analitica avrà tipicamente *sempre* una dimensione INDUSTRIALE/DIREZIONALE, che è tipica di tutte le aziende, dove andiamo a suddividere l’azienda nelle varie entità funzionali: in questa dimensione, in sostanza, avremo CENTRO AZIENDALE AMMINISTRATIVO, IL CENTRO DIREZIONE, IL CENTRO DELL’UFFICIO TECNICO, IL CENTRO DEL COMMERCIALE e poi i vari CENTRI PRODUTTIVI ovvero i centri che identificano le singole macchine o raggruppamenti di macchine piuttosto che i gruppi manodopera.
+La [***Dimensione***](/docs/controlling/controlling-parametrization/controlling-specific-settings/dimension) è sostanzialmente un criterio coerente di suddivisione di COSTI e RICAVI all’interno dell’azienda. La contabilità analitica avrà tipicamente *sempre* una dimensione INDUSTRIALE/DIREZIONALE, che è tipica di tutte le aziende, dove andiamo a suddividere l’azienda nelle varie entità funzionali: in questa dimensione, in sostanza, avremo CENTRO AZIENDALE AMMINISTRATIVO, IL CENTRO DIREZIONE, IL CENTRO DELL’UFFICIO TECNICO, IL CENTRO DEL COMMERCIALE e poi i vari CENTRI PRODUTTIVI ovvero i centri che identificano le singole macchine o raggruppamenti di macchine piuttosto che i gruppi manodopera.
 Caso tipico di dimensione alternativa sono i PROGETTI ovvero le aziende che lavorano su PROGETTO o commessa; i progetti sono una dimensione parallela alla dimensione direzionale, e questa dimensione dei progetti accoglierà tutti i costi e ricavi DIRETTI di progetto, mentre riceverà dalla dimensione industriale/direzionale quelli che sono i centri ausiliari e generici come quelli citato poco fa (direzione, amministrazione ecc.): possiamo infatti, attraverso i cost driver, ribaltare i dati da una dimensione all’altra. 
 Possiamo anche definire dimensioni alternative dove l’azienda vuole assegnare valori separandoli dalle logiche normali, perché vuole tenere nota di alcuni tipi di costi: es. una dimensione fiere piuttosto che investimenti, o budget d'acquisto.
 
@@ -33,3 +33,5 @@ La seconda caratteristica obbligatoria dei centri di costo è quella della ***Ca
 :::tip Nota
 La categorizzazione dei centri, oltre che avere valenza teorica sulla struttura del modello di analisi, ha anche un risvolto operativo: quando si definiscono gli agganci dei centri a livello di piano dei conti, è possibile associare ad ogni sottoconto i vari centri che possono essere valorizzati oppure più velocemente si può indicare una categoria di centri, in modo da rendere visibili all’utente nel menù a tendina di selezione solo quelli facenti parte della categoria stessa.
 :::
+
+Dovremo poi identificare per quali di questi centri ci serve o ci interessa calcolare una tariffa di costo, tramite l'aggancio ad ognuno di un [*Modello di riclassificazione*](/docs/controlling/reclassifications/create-reclassification-model) di cumulo dei costi e una logica di calcolo a quantità su due possibili [*Unità di misura*](/docs/controlling/controlling-parametrization/controlling-specific-settings/measure-units) o in percentuale.

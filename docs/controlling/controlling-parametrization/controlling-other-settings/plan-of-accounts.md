@@ -3,7 +3,7 @@ title: Piano dei Conti
 sidebar_position: 3
 ---
 
-La tabella del piano dei conti presenta una serie di caratteristiche molto importanti a livello di logiche del Controlling, sia questo inteso come simulazioni di bilancio infrannuali che di contabilità analitica/gestionale vera e propria. Andiamo a vedere punto per punto le caratteristiche specifiche.
+La tabella del [***Piano dei conti***](/docs/erp-home/registers/accounting/analytic-chart-of-accounts) presenta una serie di caratteristiche molto importanti a livello di logiche del Controlling, sia questo inteso come simulazioni di bilancio infrannuali che di contabilità analitica/gestionale vera e propria. Andiamo a vedere punto per punto le caratteristiche specifiche.
 
 ## GRIGLIA DEI SOTTOCONTI
 
@@ -44,7 +44,7 @@ Per ogni sottoconto selezionato, nella scheda *Assegnazione centri* presente sul
 In questa griglia abbiamo i seguenti campi:
 - ***NUMERO*** progressivo di riga
 
-- ***CENTRO DI COSTO*** in questo campo si associa il centro aziendale. La proprietà è obbligatoria nelle società che **non** gestiscono il *Controlling*, mentre è opzionale in quelle con la gestione **attiva**. In questo secondo caso, infatti, si potrà indicare solo la *dimensione* da valorizzare e la *categoria* del centro predefinita.
+- [***CENTRO DI COSTO***](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-centers) in questo campo si associa il centro aziendale. La proprietà è obbligatoria nelle società che **non** gestiscono il *Controlling*, mentre è opzionale in quelle con la gestione **attiva**. In questo secondo caso, infatti, si potrà indicare solo la *dimensione* da valorizzare e la *categoria* del centro predefinita.
 
 - ***PERCENTUALE %*** la percentuale d'attribuzione, obbligatoria da valorizzare all'interno del range 0-100
 
@@ -55,7 +55,7 @@ In installazioni multidivisionali, è possibile gestire la divisione in due modi
 
 - ***DATA INIZIO VALIDITA'*** e ***DATA FINE VALIDITA'*** questo range attualmente **non** viene testato
 
-- ***DIMENSIONE*** il campo è specifico per le società con il *Controlling* attivo, viene valorizzato secondo il centro selezionato nella riga ma può anche essere inserito manualmente quando il centro non è previsto nella riga. In questo caso serve nei casi in cui questa dimensione sia a quadratura obbligatoria (com'è tipicamente la *dimensione direzionale* dei centri), in modo da vincolare l'utente a valorizzarla in quadratura alla generale.
+- [***DIMENSIONE***](/docs/controlling/controlling-parametrization/controlling-specific-settings/dimension) il campo è specifico per le società con il *Controlling* attivo, viene valorizzato secondo il centro selezionato nella riga ma può anche essere inserito manualmente quando il centro non è previsto nella riga. In questo caso serve nei casi in cui questa dimensione sia a quadratura obbligatoria (com'è tipicamente la *dimensione direzionale* dei centri), in modo da vincolare l'utente a valorizzarla in quadratura alla generale.
 
 - ***CATEGORIA CENTRI DI COSTO*** il campo è specifico per le società con il *Controlling* attivo, viene valorizzato secondo il centro selezionato nella riga ma può anche essere inserito manualmente quando il centro non è previsto nella riga. Serve per limitare la visibilità dei centri selezionabili, in questa dimensione, quando si valorizza questo sottoconto.
 

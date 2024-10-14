@@ -13,33 +13,60 @@ Per tutto quanto non dettagliato in questo documento sul funzionamento comune de
 
 ---
 
-In questa tabella può essere definita la logica di valorizzazione dell centro di commessa.
-
- Potrebbero esserci driver differenti in base al centro aziendale. E' possibile eseguire successivamente vari ribaltamenti da centro a centro e anche da una dimensione di analisi all’ altra, ragionando su centri di destinazione differenti che raggruppano le commesse. 
-
-
-:::note **Campi tabella**
--	**CODICE / DESCRIZIONE:** per codificare e descrivere i vari criteri da richiamare
--	**TIPO:**  associazione in base ad una caratteristica della commessa, del cliente intestatario piuttosto che degli articoli inseriti nella commessa
-- **PROPRIETA':** dettaglio della caratteristica della commessa (o del cliente, oppure degli articoli) che è possibile associare quale criterio di valorizzazione. A esempio: TIPO COMMESSA, ANNO COMMESSA, ZONA COMMESSA, NAZIONE COMMESSA
-
+:::tip Nota
+Questa tabella è ad uso esclusivo delle società che hanno impostato il *Controlling*
 :::
 
+Quando l'aziendale produce su progetto/commessa, l'interesse dell'analisi consuntiva potrebbe essere di due tipi:
+- un interesse puntuale, sul singolo progetto/commessa, in particolar modo quando questi non hanno fra loro caratteristiche comuni;
+- un interesse su un gruppo di progetti/commesse prodotti in un certo periodo di tempo, quando questi progetti/commesse hanno delle caratteristiche che consentono di generalizzarne la tipologia.
 
+In questo secondo caso diventa essenziale questa tabella, che consente di collegare i centri aziendali della *dimensione* Progetti/Commesse ad una caratteristica di questi, al fine di poter valutare i dati totali secondo questi *centri progetto/commessa* senza entrare nel dettaglio di ogni singolo lavoro.
 
-![](/img/it-it/configurations/tables/controlling/analytical-accounting/projects-centers-association/prj-cen-ass1.png)
+:::tip Nota
+se l'azienda non è interessata ad una analisi di tipo macro, si può saltare la configurazione di questa tabella ed utilizzare un unico *centro progetto/commessa* identificandolo con il flag *Centro di default per i progetti*, dettagli in tabella [***CENTRO DI COSTO***](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-centers)
+:::
 
+I campi di configurazione disponibili sono i seguenti:
+- il ***CODICE*** dell'associazione
 
-![](/img/it-it/configurations/tables/controlling/analytical-accounting/projects-centers-association/prj-cen-ass2.png)
+:::tip Nota
+***FluentisERP*** valuterà le associazioni in ordine di Codice: quando si selezionerà il progetto X, quindi, si valuterà se la prima associazione consente di determinare il centro da assegnare alla riga, se non viene individuato si andrà a verificare la seconda associazione e via di seguito, fino alla prima occorrenza valida
+:::
 
-**GESTIONE DELLA GRIGLIA IN BASSO:** A seconda del tipo di progetto (commessa) viene associato il centro aziendale ad esso collegato; 
-Questa possibilità di raggruppamento per caratteristica e valorizzazione automatica è utile laddove non è presente o non è sufficiente un centro unico generico per tutte le commesse. 
+- la ***DESCRIZIONE*** dell'associazione
 
-![](/img/it-it/configurations/tables/controlling/analytical-accounting/projects-centers-association/prj-cen-ass3.png)
+- il ***TIPO*** di associazione, cioè l'oggetto all'interno del quale trovare l'elemento distintivo
+- la ***PROPRIETA'*** da considerare, che dipende dalla selezione effettuata nel campo precedente. Le opzioni sono
 
+Per questi ultimi due campi le opzioni sono:
+    - *Progetto*
+        - *Tipo progetto*
+        - *Anno progetto*
+        - *Zona progetto*
+        - *Nazione progetto*
+    - *Cliente*
+        - *Tipo conto*
+        - *Conto cliente*
+        - *Zona cliente*
+        - *Nazione cliente*
+        - *Categoria amministrativa*
+        - *Categoria commerciale*
+        - *Voce spesa*
+    - *Articolo*
+        - *Classe*
+        - *Categoria merceologica*
+        - *Unità di Misura*
+        - *Categoria fiscale*
+        - *Caratteristica*
+        - *Tipo Articolo*
 
-![](/img/it-it/configurations/tables/controlling/analytical-accounting/projects-centers-association/prj-cen-ass4.png)
+A seconda dell'impostazione, quindi, nella griglia in basso si abiliterà l'associazione del Centro all'elemento corrispondente impostato.
 
+:::danger ATTENZIONE
+La definizione di una associazione legata agli *Articoli* richiederà chiaramente che
+    - all'interno di ogni progetto ci sia almeno una riga articolo codificato
+    - l'assegnazione di una riga d'acquisto o vendita, o in generale di una riga dell'analitica in contabilità, come costo/ricavo diretto di progetto/commessa, dovrà necessariamente essere assegnata ad una riga articolo codificato interna al progetto, altrimenti ***FluentisERP*** non avrà nessun modo di valorizzare questa associazione e cercherà una associazione successiva
 
-![](/img/it-it/configurations/tables/controlling/analytical-accounting/projects-centers-association/prj-cen-ass5.png)
-
+Se ad esempio ogni progetto fosse caratterizzato da un prodotto finito di vendita di *classe* differente, probabilmente è più semplice gestire *Tipi progetto* differenti a seconda di ogni classe piuttosto che richiedere la valorizzazione di un articolo dentro il singolo progetto e selezionarlo in ogni documento a valle.
+:::

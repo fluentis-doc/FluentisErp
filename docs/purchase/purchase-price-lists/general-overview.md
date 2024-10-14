@@ -7,7 +7,7 @@ Il modulo si trova sul percorso **Acquisti > Listini Fornitori**.
 
 Attraverso questo modulo, è possibile creare, aggiornare e gestire i listini in modo centralizzato, garantendo che i prezzi concordati siano correttamente applicati durante le operazioni di approvvigionamento. Il modulo permette di gestire facilmente listini multipli, applicare sconti e condizioni personalizzate per ciascun cliente, e monitorare le variazioni di prezzo nel tempo.
 
-**Funzionalità principali**
+### **Funzionalità principali**
 
 - Inserimento e aggiornamento dei prezzi: Gli utenti possono inserire e aggiornare rapidamente i prezzi dei prodotti, garantendo che le informazioni siano sempre attuali e precise.
 - Importazione prezzi dai cataloghi: I listini possono essere importati da file esterni (ad esempio Excel) riducendo i tempi di inserimento manuale e minimizzando gli errori di trascrizione. 
@@ -19,15 +19,11 @@ Attraverso questo modulo, è possibile creare, aggiornare e gestire i listini in
 - Generazione di report: È possibile generare report dettagliati sui listini e sui prezzi, fornendo informazioni utili per analisi e decisioni strategiche.
 - Storico delle variazioni: Il sistema mantiene uno storico delle variazioni di prezzo, consentendo di monitorare le modifiche nel tempo e valutare l'impatto delle decisioni di acquisto e migliorare le strategie future.
 
-**Integrazione**
+### **Integrazione**
 
 Il modulo di gestione dei listini è strettamente integrato con i moduli di acquisto e fatturazione di Fluentis, garantendo che i prezzi applicati siano sempre aggiornati e corrispondano alle condizioni contrattuali negoziate con i fornitori. Questa integrazione assicura una gestione accurata del ciclo passivo, prevenendo errori nella definizione dei costi e supportando un flusso efficiente delle operazioni di approvvigionamento.   
 
-**Benefici operativi**
-
-Grazie alla gestione centralizzata dei listini di acquisto, le aziende possono ottimizzare i processi di approvvigionamento, adattandosi rapidamente alle fluttuazioni dei prezzi e migliorando la gestione dei costi operativi. La flessibilità nella definizione di sconti e condizioni specifiche consente alle aziende di negoziare in modo più efficace con i fornitori, migliorando così la loro capacità di gestione dei costi. La tracciabilità delle variazioni di prezzo fornisce inoltre una visione completa e consapevole dell'andamento dei costi, migliorando le performance di acquisto e ottimizzando il budget aziendale. 
-
-**Impostazioni**
+### **Impostazioni**
 
 Prima di utilizzare il modulo, è necessario compilare la seguente tabella:
 > - [Tipi listini fornitori](/docs/configurations/tables/purchase/purchase-price-list-type)

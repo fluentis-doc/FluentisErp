@@ -1,7 +1,13 @@
 ---
 title: Workstation
-sidebar_position: 1
+sidebar_position: 2
 ---
+
+:::important A cosa serve
+L'introduzione alle workstation del MES di Fluentis è fondamentale per comprendere come gestire efficacemente le risorse e le operazioni produttive all'interno dell'ambiente di lavoro. Il sistema MES offre una tabella dedicata alla codifica delle workstation, utile per inserire, modificare o cancellare record. Attraverso un'interfaccia intuitiva, gli utenti possono cercare workstation tramite un'area di filtro, e all'inserimento di nuove codifiche bisogna fornire il codice e la descrizione della workstation.
+
+Ogni workstation può essere associata a diverse risorse, a seconda delle necessità operative. Ad esempio, se è prevista un'associazione a risorse multiple, in fase di avvio del MES, sarà compito dell'utente selezionare manualmente la risorsa desiderata. Al contrario, nel caso di un'associazione a una sola risorsa, il sistema carica automaticamente tutte le fasi operative già iniziate di quella risorsa, semplificando il flusso di lavoro e migliorando l'efficienza.
+:::
 
 La tabella permette di gestire la codifica delle diverse tipologie di *Workstation*.
 

@@ -9,7 +9,7 @@ La maschera si divide in 3 procedure differenti
 
 ## RIPRESA ORE/COSTI DI PROGETTO
 Con questa procedura andiamo a recuperare i dati delle ore del personale di produzione (nella ***Gestione ore dichiarate***) ma anche dell'area Progetti, in particolare dalla ***Dichiarazione attività*** e dagli ***Interventi***, per inserirli nelle ***Registrazioni movimenti fisici*** e nelle tabelle dei ***Movimenti di progetto/commessa***. Vediamo le varie opzioni disponibili:
-- Andremo ad indicare su che ***Area*** rilevare i movimenti
+- Andremo ad indicare su che [***Area***](/docs/controlling/controlling-parametrization/controlling-specific-settings/area-types-areas) rilevare i movimenti
 - in che ***Data***
 - su che ***Anno*** del controlling 
 - a destra imposteremo coerentemente il range ***Da data*** e ***A data***
@@ -28,7 +28,7 @@ Sul lato destro possiamo aggiungere anche una valorizzazione economica alle nost
 ## RIPRESA MOVIMENTI FISICI
 La ***Ripresa movimenti fisici*** va a leggere le segnalazioni di produzione e valorizza i tempi macchina, piuttosto che i tempi uomo, e i tempi di attrezzaggio uomo e macchina: li andrà a valorizzare sia nella tabella delle ***Registrazioni movimenti fisici***, che nella tabella dei ***movimenti fisici di progetto/commessa***. Questi dati vengono verificati in riferimento al centro di costo associato alla macchina e al gruppo manodopera, se questo centro viene misurato per i tempi macchina o uomo o attrezzaggio così come impostato nella tabella delle ***Unità di misura dei centri nel controlling***.
 I dati da impostare sono 
-- l’***Area*** di riferimento
+- l’[***Area***](/docs/controlling/controlling-parametrization/controlling-specific-settings/area-types-areas) di riferimento
 - la ***Data*** della rilevazione 
 - l’***Anno*** 
 - il range di date di filtro ***Da data*** e ***A data*** a destra.
@@ -41,7 +41,7 @@ Se ci sono macchine o attrezzature collegate ad un’anagrafica cespite, questa 
 ## RIPRESA COSTI DI COMMESSA
 La procedura della ***Ripresa costi di commessa***, infine, è dedicata alla rilevazione dei costi delle trasformazioni interne ed esterne.
 Imposteremo anche qui 
-- l’***Area***
+- l’[***Area***](/docs/controlling/controlling-parametrization/controlling-specific-settings/area-types-areas)
 - la ***Data*** della rilevazione
 - l’***Anno***
 - la ***Causale*** da utilizzare nella registrazione di area

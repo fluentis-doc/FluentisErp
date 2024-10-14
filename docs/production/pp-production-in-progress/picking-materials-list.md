@@ -3,6 +3,10 @@ title: Lista prelievo materiali
 sidebar_position: 4
 ---
 
+:::important A cosa serve
+La **lista prelievo materiali** di Fluentis è uno strumento fondamentale per la gestione efficace dei materiali destinati agli ordini di produzione. Consente di creare e gestire elenchi dettagliati di materiali da prelevare, collegando direttamente l'operazione alle specifiche esigenze di produzione. Questa funzione è molto utilizzata per creare un documento di picking per gestire efficacemente il trasferimento dei materiali (ad esempio nel WIP), semplificando il processo logistico e garantendo una tracciabilità accurata.
+:::
+
 La lista prelievo materiali consente di creare e gestire le liste di prelievo dei materiali per gli ordini di produzione che ne prevedono l'utilizzo.
 
 È possibile ricercare tra gli ordini di produzione, in stato lanciato ed esecutivo, quello di interesse per poi effettuare due operazioni differenti.

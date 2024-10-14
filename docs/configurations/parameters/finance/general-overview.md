@@ -9,7 +9,7 @@ I parametri dell'area **Amministrativa** concernono i moduli di
 
 **Percipienti**:  Parametri **non necessari** e presenti per retro compatibilità
 
-[**Cespiti**](/docs/configurations/parameters/finance/fixed-assets-parameters): parametri che prevedono opzioni specifiche di interesse limitatamente al modulo cespiti
+[**Cespiti**](/docs/configurations/parameters/finance/fixed-assets-parameters): parametri che prevedono opzioni specifiche di interesse limitatamente al modulo cespiti/controlling
 
 [**Importazione paghe**](/docs/configurations/parameters/finance/payroll-import-parameters) Parametri specifici per l'importazione delle scritture relative alle paghe dipendenti da altri sistemi gestionali tramite il flusso di importazione Bizlink.
 

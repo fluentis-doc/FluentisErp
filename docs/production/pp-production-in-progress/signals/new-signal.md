@@ -3,7 +3,7 @@ title: Nuova dichiarazione
 sidebar_position: 2
 ---
 
-Normalmente le *Dichiarazioni di produzione* vengono generate automaticamente tramite Fleuntis [MES](/docs/production/mes/), ma l'utente ha anche la possibilità di generarle manualmente utilizzando questa form.
+Normalmente le *Dichiarazioni di produzione* vengono generate automaticamente tramite Fluentis [MES](/docs/production/mes/mes-intro), ma l'utente ha anche la possibilità di generarle manualmente utilizzando questa form.
 
 All'apertura della form è necessario inserire l'ordine di produzione e la relativa fase/sottofase che si vuole dichiarare, in questo modo vengono caricati in automatico i realtivi dati nella parte superiore della form.
 

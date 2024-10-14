@@ -3,7 +3,19 @@ title: Lista prelievo materiali
 sidebar_position: 4
 ---
 
-La form consente di creare e gestire liste di prelievo materiali per gli ordini di produzione che ne prevedono l'utilizzo.
+:::important A cosa serve
+La **lista prelievo materiali** di Fluentis è uno strumento fondamentale per la gestione efficace dei materiali destinati agli ordini di produzione. Consente di creare e gestire elenchi dettagliati di materiali da prelevare, collegando direttamente l'operazione alle specifiche esigenze di produzione. Questa funzione è molto utilizzata per creare un documento di picking per gestire efficacemente il trasferimento dei materiali (ad esempio nel WIP), semplificando il processo logistico e garantendo una tracciabilità accurata.
+:::
+
+La lista prelievo materiali consente di creare e gestire le liste di prelievo dei materiali per gli ordini di produzione che ne prevedono l'utilizzo.
+
+È possibile ricercare tra gli ordini di produzione, in stato lanciato ed esecutivo, quello di interesse per poi effettuare due operazioni differenti.
+
+La prima, tramite il pulsante **Cerca materiali**, permette di effettuare lo scarico di tutti i materiali contenuti nell’ordine di produzione che hanno come **tipo prelievo**, nei [Parametri MRP](/docs/configurations/parameters/production/mrp-parameters/search-mrp-parameters) dell’articolo, il valore **Con lista**. Questi i materiali vengono consumati nel momento in cui viene premuto il pulsante crea movimenti, che in questo caso, crea il movimento di scarico di magazzino.            
+
+La seconda operazione permette di spostare i materiali dal magazzino in cui sono stoccati, al magazzino WIP ad esempio. Questo si verifica utilizzando il pulsante **Cerca materiali picking**; il quale permette di creare dei documenti di picking, quindi non delle vere e proprie registrazioni, ma dei documenti di spostamento dei materiali che si potranno visualizzare nella finestra Picking presente nell'area logistica.                
+In questo caso, il pulsante **Crea movimenti** genera il documento di picking, nel quale per i materiali che sono con *Tipo prelievo con lista* verranno settate la causale e il magazzino che sono già presenti nella riga dei materiali dell'ordine di produzione per poter essere scaricati definitivamente; mentre, per i materiali con *Tipo prelievo Manuale* varranno settate la causale e il magazzino impostati nel “Tipo picking” utilizzato.  I materiali spostati nel magazzino WIP verranno poi scaricati all’interno delle dichiarazioni di produzione.            
+La registrazione verrà fatta in un secondo momento tramite la procedura dedicata allo scarico del picking.        
 
 ## Filtro
 

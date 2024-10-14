@@ -2,27 +2,33 @@
 title: Area
 sidebar position: 2
 ---
-I Dati del Controlling vengono sempre gestiti con un’area di analisi collegata che identifica che tipi di dati ci sono dentro. 
 
 
-![](/img/it-it/controlling/area.png)
+:::tip Nota
+La tabella è d'interesse solo nelle società con il flag *Controlling* attivo.
+:::
+
+I Dati del Controlling vengono sempre gestiti con un’area di analisi collegata che identifica che tipi di dati ci sono dentro: Possiamo immaginarla come una scatola fisica, dove ogni scatola viene alimentata con valori contabili e valori quantitativi e ogni scatola può avere un suo modello di calcolo diverso e a sé stante. Un’area comprende i dati di tutte le *dimensioni* dei centri.
+I campi disponibili sono:
+- ***Codice***
+- ***Descrizione***
+- [***Tipo Area***](/docs/configurations/tables/controlling/managerial-accounting/area-type)
+- ***Commessa di quadratura***, non gestito
+
+
 
 ***TIPOLOGIE DI AREE***
+Avremo tipicamente 3 aree:
+- *BUDGET*: avremo il budget per l’anno successivo;
 
-*BUDGET* :avremo il budget per l’anno successivo;
+- *CONSUNTIVO*: quando andiamo ad elaborare le chiusure infrannuali; 
 
-*CONSUNTIVI*: quando andiamo ad elaborare le chiusure infrannuali; 
+- *SET DI REGOLE*: area che non ha valori, se non qualche misura fisica. E’ l’area depositaria delle regole *standard* dei cost driver: se sto elaborando, ad esempio, l’area dei consuntivi e sto cercando di ripartire il mio costo per gli affitti tramite un cost driver, se trovo un Cost driver specifico per i consuntivi Fluentis userà quel driver, altrimenti andrà a ricercare nelle regole generali valide di default collegandole all'area *set di regole*
 
-*MULTIAMBIENTE*: area che non ha valori, se non qualche misura fisica. Tipicamente è un’area depositaria delle regole standard dei cost driver. I DRIVER  sono CRITERI DI ATTRIBUZIONE O RIBALTAMENTO DEI VALORI CENTRI AZIENDALI. I Driver saranno sempre associati all’area, e ci saranno sempre driver generici collegati all’area generica MULTIAMBIENTE. Sono elle regole che possono essere specifiche del BUDGET o comunque differenti dalle logiche dalle logiche per consuntivo. 
+:::tip Nota
+Possiamo definire liberamente quante aree di analisi vogliamo. L'obiettivo tipico è quello di simulare *cosa succede se* cambio le regole dei cost driver aziendali, o magari con il fine di applicare configurazioni di costo differenziate.
 
-***Il concetto fondamentale è che L’AREA IDENTIFICA IL SET DI DATI CE STO ELABORANDO/ANALIZZANDO. ***
-
-Quando andiamo a creare gli elavorati per le aree, automaticamente andiamo a cancellare i dati di quell'anno e a crearli nuovamente con la situazione in cui si trova in quel momento. 
-
-ESEMPIO: se sto elaborando il consuntivo di GENNAIO 2019 ed elaboro nel mio controlling, il mese dopo, quando vado ad elaborare sia GENNAIO che FEBBRAIO, fluentis elimina GENNAIO e si ricalcola GENNAIO e FEBBRAIO con i nuovi dati che ha. 
-
-**FLUENTIS svuota i mesi precedenti e li ricalcola insieme ai successivi**. 
-
-
+Altro utilizzo è quello di 'cristallizzare' le elaborazioni del controlling: come avremo modo di spiegare parlando dei cost driver, le elaborazioni del controlling cancellano e ricreano i dati dell'anno che si sta elaborando. Se si vuole storicizzare, ad esempio, il primo *trimestre* per poterlo poi confrontare con i primi 3 mesi di quanto calcolato nell'elaborazione del primo *semestre*, possiamo ottenere questo risultato creando aree consuntive differenti.
+:::
 
 

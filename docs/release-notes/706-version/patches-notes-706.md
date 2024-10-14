@@ -3,6 +3,22 @@ title: Patch notes Versione 706
 sidebar_position: 1
 ---
 
+### Patch 706.1-0015 - 10/10/2024
+> - SCS – Stampe Multiple – Aggiunto report stampe multiple per i documenti di conto lavoro (#TT04144/24)
+> - PR - revisione file sepa versione pain 001.001.03 per localizzazione SI (#TT04313/24)
+> - CRM – fix for Crm Contact object form
+> - SD – Stampa scadenziario ordini – Modifca report scadenziaro per poter gestire l’ordinamento per data consegna e per cliente (#TT04277/24)
+> - MS – Corretto bug nella procedura MRP. (#TT04322/24)
+> - ARM – fix migration of Arm. RPT_PrintServers, Arm.OBJ_AlgorithmMethodScripts
+> - SD – Quando viene effettuata la conversione di un’Offerta in Ordine, se il tipo ordine ha il flag di Creazione Progetto Automatico attivo il numero e il tipo progetto vengono proposti in automatico al momento del salvataggio dell’ordine (#TT04336/24).
+> - SH – Tipo file – Aggiunto tipo file .msg (#TT04182/24)
+> - SCM – Corretto errore che non permetteva l’inserimento multiplo di articoli nelle Richieste di Offerta (#TT04334/24).
+> - SD – Risolta exception che impediva la modifica del prezzo di listino da anagrafica articolo (#TT04237/24)
+> - ARM - add post migration scripts for RO version
+> - ARM – fix exception when delete referenced row from Filter result grid
+> - Nel cambio stati delle fatture di vendita Sdi, revisione step di firma su file importati tramite WebApi (#TT04229/24)
+> - SCS – Corretto errore negli Ordini di Conto lavoro che talvolta non caricava i materiali per la prima riga articolo inserita (#TT04112/24).
+
 ### Patch 706.1-0014 - 07/10/2024
 > - FI - Comunicazione liquidazione periodica iva: revisione della stampa per l'indicazione del debito periodo precedente non superiore ai 100€ (campo VP7)
 > - SH – Extradata column – fix condition

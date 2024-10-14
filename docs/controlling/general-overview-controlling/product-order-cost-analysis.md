@@ -16,7 +16,7 @@ L’ultimo punto, che rappresenta l’obiettivo finale del nostro controllo alme
 
 ***COSTO ECONOMICO TECNICO:*** rappresenta l’ultima configurazione. Il costo economico tecnico non sempre viene utilizzato. La differenza tra il costo complessivo e il costo economico tecnico sta nel fatto che noi aggiungiamo degli oneri figurativi. Ad esempio invece di considerare la quota di ammortamento del mio immobile tecnico considero una quota di locazione di affitto di mercato, anche se, è di proprietà dell’azienda stessa. Altro esempio è quello della prestazione del proprietario della ditta che generalmente non viene quantificata in quanto rientra nel capitolo utili ma in questo caso viene quantificata perché considerata come se fosse un dipendente a tutti gli effetti (quindi si da uno stipendio per la prestazione che lo stesso svolge nell’ambito aziendale).
 
-In questo senso potremo creare liberamente gli N *Modelli di riclassificazione* per il controlling, con le configurazioni di costo che si ritengono più consone alla realtà aziendale.
+In questo senso potremo creare liberamente gli N [*Modelli di riclassificazione*](/docs/controlling/reclassifications/create-reclassification-model) per il controlling, con le configurazioni di costo che si ritengono più consone alla realtà aziendale.
 
 :::tip Nota
 Per creare modelli alternativi è facile procedere alla duplicazione di uno già esistente per estenderlo e considerare costi aggiuntivi

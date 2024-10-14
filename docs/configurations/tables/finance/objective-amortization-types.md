@@ -1,9 +1,9 @@
 ---
-title: Tipi ammortamenti oggettivi
+title: Tipi ammortamenti fiscali/oggettivi
 sidebar_position: 26
 ---
 
-La tabella permette di definire delle tipologie di ammortamento oggettivo al fine di dare libertà nel calcolare extra-contabilmente ammortamenti interni a fini alternativi. 
+La tabella permette di definire delle tipologie di ammortamento fiscali (o extracontabili) al fine di dare libertà nel calcolare extra-contabilmente ammortamenti a fini alternativi. 
 
 **ATTENZIONE**:
 Per il modulo *controlling* è stata sviluppata una nuova funzionalità specifica (creando un tab apposito all'interno della scheda cespite). 

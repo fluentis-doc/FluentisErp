@@ -528,7 +528,7 @@
     "description": "The label for category Definizione MPS in sidebar planning"
   },
   "sidebar.planning.category.Commesse di produzione": {
-    "message": "Pretraga proizvodni naloga",
+    "message": "Proizvodni nalozi",
     "description": "The label for category Commesse di produzione in sidebar planning"
   },
   "sidebar.planning.category.Nuova Commessa Monoprodotto": {
@@ -572,7 +572,7 @@
     "description": "The label for category Production outlook in sidebar planning"
   },
   "sidebar.planning.category.Sequenza fasi": {
-    "message": "Phase sequence",
+    "message": "Redoslijed faza",
     "description": "The label for category Sequenza fasi in sidebar planning"
   },
   "sidebar.production.category.Bolla di consegna": {
@@ -1524,7 +1524,7 @@
     "description": "The label for category CRP - Capacity Requirements Planning in sidebar planning"
   },
   "sidebar.planning.category.Visualizzazione Gantt": {
-    "message": "Visualizzazione Gantt",
+    "message": "Vizualizacija Gantta",
     "description": "The label for category Visualizzazione Gantt in sidebar planning"
   },
   "sidebar.production.category.MRP": {
@@ -2190,5 +2190,85 @@
   "sidebar.releaseNotes.category.Versione 704": {
     "message": "Versione 704",
     "description": "The label for category Versione 704 in sidebar releaseNotes"
+  },
+  "sidebar.purchase.category.Nuovo Ordine": {
+    "message": "Nuovo Ordine",
+    "description": "The label for category Nuovo Ordine in sidebar purchase"
+  },
+  "sidebar.purchase.category.Nuovo DDT": {
+    "message": "Nuovo DDT",
+    "description": "The label for category Nuovo DDT in sidebar purchase"
+  },
+  "sidebar.purchase.category.Nuova Fattura": {
+    "message": "Nuova Fattura",
+    "description": "The label for category Nuova Fattura in sidebar purchase"
+  },
+  "sidebar.purchase.category.Procedure comuni": {
+    "message": "Procedure comuni",
+    "description": "The label for category Procedure comuni in sidebar purchase"
+  },
+  "sidebar.sales.category.Procedure comuni": {
+    "message": "Procedure comuni",
+    "description": "The label for category Procedure comuni in sidebar sales"
+  },
+  "sidebar.treasury.category.Creazione e Gestione insoluti": {
+    "message": "Creazione e Gestione insoluti",
+    "description": "The label for category Creazione e Gestione insoluti in sidebar treasury"
+  },
+  "sidebar.configurations.category.Parametri Generali": {
+    "message": "Parametri Generali",
+    "description": "The label for category Parametri Generali in sidebar configurations"
+  },
+  "sidebar.configurations.category.CPQ": {
+    "message": "CPQ",
+    "description": "The label for category CPQ in sidebar configurations"
+  },
+  "sidebar.projectManagement.category.Riepiloghi per cedolini": {
+    "message": "Riepiloghi per cedolini",
+    "description": "The label for category Riepiloghi per cedolini in sidebar projectManagement"
+  },
+  "sidebar.controlling.category.Tabelle e Parametri controlling": {
+    "message": "Tabelle e Parametri controlling",
+    "description": "The label for category Tabelle e Parametri controlling in sidebar controlling"
+  },
+  "sidebar.controlling.category.Tabelle e Parametri specifici della contabilità analitica e gestionale": {
+    "message": "Tabelle e Parametri specifici della contabilità analitica e gestionale",
+    "description": "The label for category Tabelle e Parametri specifici della contabilità analitica e gestionale in sidebar controlling"
+  },
+  "sidebar.controlling.category.Tabelle e Parametri all'interno delle altre Aree": {
+    "message": "Tabelle e Parametri all'interno delle altre Aree",
+    "description": "The label for category Tabelle e Parametri all'interno delle altre Aree in sidebar controlling"
+  },
+  "sidebar.controlling.category.Gestione del controlling nelle varie aree": {
+    "message": "Gestione del controlling nelle varie aree",
+    "description": "The label for category Gestione del controlling nelle varie aree in sidebar controlling"
+  },
+  "sidebar.controlling.category.Storico di progetto": {
+    "message": "Storico di progetto",
+    "description": "The label for category Storico di progetto in sidebar controlling"
+  },
+  "sidebar.guide.category.Introduzione": {
+    "message": "Uvod",
+    "description": "The label for category Introduzione in sidebar guide"
+  },
+  "sidebar.guide.category.Avviamento Fluentis ERP": {
+    "message": "Avviamento Fluentis ERP",
+    "description": "The label for category Avviamento Fluentis ERP in sidebar guide"
+  },
+  "sidebar.guide.category.Campi, funzionalità e pulsanti comuni": {
+    "message": "Campi, funzionalità e pulsanti comuni",
+    "description": "The label for category Campi, funzionalità e pulsanti comuni in sidebar guide"
+  },
+  "sidebar.releaseNotes.category.Versione 545": {
+    "message": "Versione 545",
+    "description": "The label for category Versione 545 in sidebar releaseNotes"
+  },
+  "sidebar.releaseNotes.category.Versione 705": {
+    "message": "Versione 705",
+    "description": "The label for category Versione 705 in sidebar releaseNotes"
+  },
+  "sidebar.releaseNotes.category.Versione 706": {
+    "message": "Versione 706",
+    "description": "The label for category Versione 706 in sidebar releaseNotes"
   }
 }

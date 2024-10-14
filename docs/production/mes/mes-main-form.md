@@ -1,7 +1,15 @@
 ---
 title: MES
-sidebar_position: 3
+sidebar_position: 4
 ---
+
+:::important A cosa serve
+La forma principale del Modulo di Esecuzione della Produzione (MES) di Fluentis è progettata per ottimizzare e semplificare il processo di dichiarazione delle attività produttive. Questa interfaccia consente agli operatori di monitorare e gestire in tempo reale le risorse di produzione, facilitando l'inserimento dei dati relativi alle fasi di lavorazione e alle quantità prodotte.
+
+Gli operatori possono gestire facilmente l'inserimento e la modifica dei dati, grazie a funzionalità come il barcode Tokenizer e l'abilitazione di controlli specifici per garantire la correttezza delle registrazioni. Inoltre, il sistema supporta diversi metodi di ripartizione del tempo e delle quantità, consentendo un'analisi dettagliata delle performance produttive e garantendo una gestione efficiente delle risorse impiegate.
+
+Questo approccio integrato non solo migliora la visibilità delle operazioni, ma contribuisce anche a ottimizzare i flussi di lavoro e la produttività complessiva dell'impresa.
+:::
 
 ## *Pulsanti specifici*:  
 

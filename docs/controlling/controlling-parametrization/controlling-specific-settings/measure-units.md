@@ -20,8 +20,8 @@ Dovremo innanzi tutto definire la conversione tra i minuti della produzione e la
 
 In secondo luogo, dovremo agganciare queste UM del Controlling ai nostri *Centri aziendali produttivi*, cosa che si esegue nella tabella ***Unità di misura dei centri aziendali per il controlling***. In questa maschera andremo a configurare:
 
-- l'***Area*** di riferimento della configurazione
-- il ***Centro aziendale*** produttivo che avrà una valorizzazione dei tempi da produzione
+- l'[***Area***](/docs/controlling/controlling-parametrization/controlling-specific-settings/area-types-areas) di riferimento della configurazione
+- il [***Centro aziendale***](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-centers) produttivo che avrà una valorizzazione dei tempi da produzione
 - l'unità di misura da utilizzare se per questo Centro si vuole rilevare il ***Tempo attrezzaggio***
 - l'unità di misura da utilizzare se per questo Centro si vuole rilevare il ***Tempo uomo***
 - l'unità di misura da utilizzare se per questo Centro si vuole rilevare il ***Tempo macchina***

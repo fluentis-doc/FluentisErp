@@ -136,9 +136,9 @@ In questo tab, costituito principalmente da una griglia, è possibile visualizza
 
 In questo tab viene visualizzata la nota legata alla fase di lavorazione selezionata nel tab *Fasi*. Essa è modificabile dall'utente contestualmente all'ordine di produione in oggetto.
 
-## Note precodificate fase
+## Istruzioni opertative
 
-In questo tab vengono visualizzate le note precodificate legate alla fase di lavorazione selezionata nel tab *Fasi*. Esse sono modificabili dall'utente contestualmente all'ordine di produzione in oggetto. L'utente può inoltre aggiungere altre fasi, riprendendole, tramite l'apposito help note codificate, dalla tabella *Gestione note codificate* che si trova nelle *Utilità* del gestionale.  
+In questo tab è possibile allegare e visualizzate le *Istruzioni operative* legate alla fase di lavorazione selezionata nel tab *Fasi*.
 
 ## Personale
 

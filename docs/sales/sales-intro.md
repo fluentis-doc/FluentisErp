@@ -14,6 +14,51 @@ Questa interconnessione tra i moduli favorisce una gestione sinergica con le are
 L'interfacciamento dell'area Vendite con l'Area Contabile facilita l'elaborazione amministrativa dei documenti di vendita, garantendo un flusso di lavoro senza interruzioni e una registrazione accurata delle transazioni.     
 Infine, l'integrazione con il Controllo di Gestione offre un'analisi dettagliata dei margini relativi a ciascun processo di vendita, fornendo preziose informazioni per ottimizzare le strategie commerciali e massimizzare i profitti.     
 
+### Moduli dell'area
+
+import Link from '@docusaurus/Link';
+
+<div className="cardContainer">
+    <div className="card">
+###     <Link to="/docs/sales/offers/settings">Offerte</Link>
+        <p>Creazione, monitoraggio e aggiornamento delle proposte commerciali, integrandole direttamente con i processi aziendali.</p>
+    </div>
+    <div className="card">
+###     <Link to="/docs/sales/sales-orders/settings">Ordini</Link>
+        <p>Gestione e organizzazione del processo di acquisto di beni e servizi da parte dei clienti.</p>
+    </div>
+</div>
+<div className="cardContainer">
+    <div className="card">
+###     <Link to="/docs/sales/sales-delivery-notes/general-overview">DDT</Link>
+        <p>Tracciamento e documentazione della movimentazione delle merci in uscita.</p>
+    </div>
+    <div className="card">
+###     <Link to="/docs/sales/sales-invoices/general-overview">Fatture</Link>
+        <p>Attestazione della transazione di vendita, specificando i beni o servizi forniti, i costi, l'IVA e le condizioni di pagamento.</p>
+    </div>
+</div>
+<div className="cardContainer">
+    <div className="card">
+###     <Link to="/docs/sales/pos/general-overview">POS</Link>
+        <p>Gestione delle vendite direttamente nel punto cassa, con strumenti per la creazione e gestione di fatture, emissione di ricevute e aggiornamento automatico delle giacenze di magazzino.</p>
+    </div>
+    <div className="card">
+###     <Link to="/docs/sales/agents/general-overview">Liquidazione agenti</Link>
+        <p>Gestione delle vendite direttamente nel punto cassa, con strumenti avanzati per la creazione e gestione di fatture, emissione di ricevute e aggiornamento automatico delle giacenze di magazzino..</p>
+    </div>
+</div>
+<div className="cardContainer">
+    <div className="card">
+###     <Link to="/docs/sales/sales-price-list/general-overview">Listini di vendita</Link>
+        <p>Elenco dei prezzi dei prodotti o servizi offerti per facilitare il processo di vendita e includere eventuali sconti applicabili.</p>
+    </div>
+    <div className="card">
+###     <Link to="/docs/sales/price-control/definition">Gestione prezzi</Link>
+        <p>Gestione di sconti aggiuntivi basati sulla categoria commerciale di appartenenza del cliente o altre politiche di definizione sconti.</p>
+    </div>
+</div>
+
 ### Fast start
 
 Prima di cominciare ad utilizzare il gestionale, è necessario scegliere se lanciare o meno la procedura di **Fast start**.        

@@ -3,7 +3,7 @@ title: Anagrafica articolo
 sidebar_position: 5
 --- 
 
-All'interno dell'articolo, nel tab **AMMINISTRAZIONE**, abbiamo la possibilità di associare all'articolo i CENTRI AZIENDALI.
+All'interno dell'articolo, nel tab **AMMINISTRAZIONE**, abbiamo la possibilità di associare all'articolo i [***CENTRI DI COSTO***](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-centers).
 
 In particolare, le società che **non** hanno il *Controlling* attivo avranno a disposizione un unico campo di associazione di un singolo centro, mentre per quelle con la gestione **attiva** si abiliterà una griglia nella quale poter valorizzare una molteplicità di centri, anche di dimensioni differenti, replicando sostanzialmente la logica già dettagliata nel *Piano dei conti* (quindi anche lasciando il centro vuoto e la sola dimensione attiva da valorizzare).
 

@@ -1,5 +1,5 @@
 ---
-title: Proizvodnja narudžbe (detalj)  
+title: Proizvodni nalozi (detalj)  
 sidebar_position: 3
 ---
 
@@ -23,7 +23,7 @@ Dvostrukim klikom na jednu od narudžbi u rezultatnoj mreži otvorit će se deta
 Kolona *Pridruženi troškovi*, ako je oznaka aktivna, označava da narudžba već sadrži barem jedno pridruživanje troškova.
 
 :::note **VAŽNO**
-Razlika između obrasca **Proizvodne narudžbe** i obrasca  **Proizvodne narudžbe (detalji)**, e u tome što u potonjem obrascu možete vidjeti u mreži i članke koji su prisutni unutar narudžbe, dok u prvom obrascu bez detalja vidite samo podatke o zaglavlju proizvodnih narudžbi.      
+Razlika između obrasca **Proizvodni nalozi** i obrasca  **Proizvodni nalozi (detalji)**, e u tome što u potonjem obrascu možete vidjeti u mreži i članke koji su prisutni unutar narudžbe, dok u prvom obrascu bez detalja vidite samo podatke o zaglavlju proizvodnih narudžbi.      
 :::
 
 *Posebni gumbi*:

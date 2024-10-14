@@ -30,11 +30,11 @@ I parametri del modulo Cespiti si trovano in **Parametri > Amministrativa**.
 
 **Gestione divisione**: se il flag è settato sarà possibile attribuire, nell'anagrafica del cespite, la divisione desiderata altrimenti il campo divisione sarà proposto di default.  
 
-**Causale contabilizzazione ammortamenti**: campo per inserire la causale di default da proporre nella form di contabilizzazione ammortamenti.
+**Causale contabilizzazione ammortamenti**: campo per inserire la causale di default da proporre nella form di contabilizzazione ammortamenti, anche per il controlling.
 
 **Singola registrazione in contabilizzazione ammortamenti**: con questa spunta ogni scheda cespite darà luogo ad una singola registrazione contabile di ammortamento.
 
-**Abilitazione centro contabilità**: questo flag abilita la lettura del centro di costo inserito nel tab **Dettaglio** della scheda cespite il quale si riferisce alla quota ammortamento calcolata dalle logiche contabili, in alternativa all'utilizzo dell'ammortamento oggettivo gestito nell'apposita tab (Ammortamento per controlling).
+**Abilitazione centro contabilità**: questo flag abilita la lettura del centro di costo inserito nel tab **Dettaglio** della scheda cespite il quale si riferisce alla quota ammortamento calcolata dalle logiche contabili, e rende non obbligatoria la gestione alternativa di utilizzo dell'ammortamento tecnico gestito nell'apposita tab (Ammortamento per controlling).
 
 ### VIDEO TUTORIALS
 

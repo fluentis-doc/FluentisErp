@@ -3,12 +3,13 @@ title: Registrazione dichiarazioni
 sidebar_position: 1
 ---
 
-Attraverso questa form è possibile registrare più dichiarazioni contemporaneamente.
-
+:::important A cosa serve
+La procedura di registrazione delle dichiarazioni di produzione in Fluentis consente di registrare più dichiarazioni contemporaneamente.
+:::
 
 ## Filtro
 
-In questo tab è possibile visualizzare la lista delle segnlazioni di produzione non ancora registrate ed è possibile filtrarle attraverso una serie di criteri di selezione. 
+In questo tab è possibile visualizzare la lista delle segnalazioni di produzione non ancora registrate ed è possibile filtrarle attraverso una serie di criteri di selezione. 
 
 Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** presente nella *ribbon bar* per visualizzare i risultati all'interno della griglia di risultato.
 

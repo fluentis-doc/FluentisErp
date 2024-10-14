@@ -10,4 +10,4 @@ Possiamo suddividere la reportistica in due tipologie:
 
 Naturalmente questa reportistica dovrà avere anche la possibilità di confrontare periodi o orari diversi per poter fare un minimo di analisi degli scostamenti. Per esempio, per aree diverse potremmo confrontare un consuntivo rispetto a un budget.
 
-Per le aziende che valorizzano la *dimensione progetti/commesse* sarà disponibile la procedura di stampa del consuntivo di progetto, sempre basato su un *Modello di riclassificazione* specifico.
+Per le aziende che valorizzano la [*dimensione progetti/commesse*](/docs/controlling/controlling-parametrization/controlling-specific-settings/dimension) sarà disponibile la procedura di stampa del consuntivo di progetto, sempre basato su un [*Modello di riclassificazione*](/docs/controlling/reclassifications/create-reclassification-model) specifico.

@@ -3,7 +3,7 @@ title: Uvod
 sidebar_position: 1
 ---
 
-**Fluentis academy**: [Sastavnica materijala](/docs/erp-home/registers/production/bill-of-materials/academy-bom) 
+**Fluentis academy**: [Sastavnica materijala](/docs/erp-home/registers/production/bill-of-materials/bom-intro) 
 
 Modul **Sastavnice materijala** omogućuje kodiranje strukture proizvodnih ili radnih naloga, ispisivanje, usporedbu, valorizaciju, dupliciranje i izmjenu razrada putem automatskih poništenja i zamjena prisutnih u bazi podataka.
 

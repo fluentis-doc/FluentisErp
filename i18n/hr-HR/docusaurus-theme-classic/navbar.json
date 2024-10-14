@@ -134,5 +134,45 @@
   "item.label.Varie": {
     "message": "Razno",
     "description": "Navbar item with label Varie"
+  },
+  "item.label.Introduzione": {
+    "message": "Uvod",
+    "description": "Navbar item with label Introduzione"
+  },
+  "item.label.Video tutorial": {
+    "message": "Video tutoriali",
+    "description": "Navbar item with label Video tutorial"
+  },
+  "item.label.Fluentis Fast Start": {
+    "message": "Fluentis Fast Start",
+    "description": "Navbar item with label Fluentis Fast Start"
+  },
+  "item.label.Avviamento Fluentis ERP": {
+    "message": "Pokretanje Fluentis ERP-a",
+    "description": "Navbar item with label Avviamento Fluentis ERP"
+  },
+  "item.label.Campi, funzionalità e pulsanti comuni": {
+    "message": "Polja, funkcionalnosti i uobičajeni gumbi",
+    "description": "Navbar item with label Campi, funzionalità e pulsanti comuni"
+  },
+  "item.label.Configurazioni (Tabelle, Parametri...)": {
+    "message": "Konfiguracije (Tablice, Parametri...)",
+    "description": "Navbar item with label Configurazioni (Tabelle, Parametri...)"
+  },
+  "item.label.Contatti": {
+    "message": "Kontakti",
+    "description": "Navbar item with label Contatti"
+  },
+  "item.label.Piano dei conti": {
+    "message": "Kontni plan",
+    "description": "Navbar item with label Piano dei conti"
+  },
+  "item.label.Articoli": {
+    "message": "Artikli",
+    "description": "Navbar item with label Articoli"
+  },
+  "item.label.Dipendenti": {
+    "message": "Zaposlenici",
+    "description": "Navbar item with label Dipendenti"
   }
 }

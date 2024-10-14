@@ -619,3 +619,73 @@ Verifcare nelle varie tabelle dei documenti (Ordini, DDT, RDA ecc..) quali tipol
 </details>
   
 
+## TABELLE ACQUISTI
+
+### Ordini
+
+<details>
+
+  <summary> Tabella TIPI ORDINE  Click to expand!</summary>
+
+  Inserire le [tipologie di ordine](/docs/configurations/tables/purchase/purchase-orders-type) utilizzate; i dati obbligatori sono: *Tipo*, *Descrizione* e *[Numerazione](/docs/configurations/tables/fluentis-numerations)*.     
+  I criteri di creazione delle varie tipologie possono essere diversi, per esempio:      
+  - creazione tipologia ORDINE FORNITORE ITALIA, ORDINE FORNITORE UE, ORDINE FORNITORE EXTRA UE.       
+  - creazione tipologia in base al [Tipo DDT](/docs/configurations/tables/purchase/purchase-delivery-notes-type) o al [Tipo fattura](/docs/configurations/tables/purchase/purchase-invoices-type) da creare.     
+  - creazione tipologia in base al Magazzino da movimentare
+
+</details>
+
+<details>
+
+  <summary> PARAMETRI  Click to expand!</summary>
+
+  Definire i [parametri](/docs/configurations/parameters/purchase/purchase-orders-parameters) generali da utilizzare negli ordini fornitore. 
+
+</details>
+
+### DDT di acquisto
+
+<details>
+
+  <summary> Tabella TIPI DDT  Click to expand!</summary>
+
+  Inserire le [tipologie di DDT](/docs/configurations/tables/purchase/purchase-delivery-notes-type) utilizzate; i dati obbligatori sono: *Tipo*, *Descrizione* e *[Numerazione](/docs/configurations/tables/fluentis-numerations)*.     
+  I criteri di creazione delle varie tipologie possono essere diversi, per esempio:      
+  - creazione tipologia DDT FORNITORE ITALIA, DDT FORNITORE UE, DDT FORNITORE EXTRA UE.       
+  - creazione tipologia in base al [Tipo fattura](/docs/configurations/tables/purchase/purchase-invoices-type) da creare.     
+  - creazione tipologia in base al Magazzino da movimentare
+  
+</details>
+
+<details>
+
+  <summary> PARAMETRI  Click to expand!</summary>
+
+  Definire i [parametri](/docs/configurations/parameters/purchase/purchase-delivery-note-parameters) generali da utilizzare nei DDT di acquisto. 
+  
+</details>
+
+### Fatture di acquisto
+
+<details>
+
+  <summary> Tabella TIPI FATTURA  Click to expand!</summary>
+
+  Inserire le [tipologie di fattura](/docs/configurations/tables/purchase/purchase-invoices-type) utilizzate; i dati obbligatori sono: *Tipo*, *Descrizione* e *[Numerazione](/docs/configurations/tables/fluentis-numerations)*.     
+  I criteri di creazione delle varie tipologie possono essere diversi, per esempio:      
+  - creazione tipologia FATTURA FORNITORE ITALIA, FATTURA FORNITORE UE, FATTURA FORNITORE EXTRA UE.     
+  - creazione tipologia in base alla Natura fattura (fattura, nota di debito, ecc.)  
+  - creazione tipologia in base al Magazzino da movimentare.
+  
+</details>
+
+<details>
+
+  <summary> PARAMETRI  Click to expand!</summary>
+
+  Definire i [parametri](/docs/configurations/parameters/purchase/purchase-invoices-parameters) generali da utilizzare nelle fatture di acquisto. 
+
+</details>
+  
+
+

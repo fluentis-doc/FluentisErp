@@ -13,6 +13,10 @@ Per tutto quanto non dettagliato in questo documento sul funzionamento comune de
 
 ---
 
+:::tip Nota
+La tabella è d'interesse solo nelle società con il flag *Controlling* attivo.
+:::
+
 
 Il concetto di Dimensione è spiegabile come un criterio di analisi e coerente suddivisione di COSTI e RICAVI all’ interno dell’ azienda.
 
@@ -39,11 +43,9 @@ Possiamo, attraverso i cost driver, ribaltare i dati (costi e profitti) da una d
 
 :::note CAMPI DELLA TABELLA
 
-
-il FLAG **QUADRATURA OBBLIGATORIA** impone che tutti i centri che fanno capo a quella dimensione devono avere quadratura con la contabilità. Non è più la contabilità generale che va quadrata al centro di costo/profitto o commessa ma va quadrata alla singola dimensione d’ analisi. 
-
-Il FLAG **COMMESSA** indica che la riga della contabilità analitica viene associata anche alla COMMESSA RELATIVA AL COSTO E RICAVO MOVIMENTATO. 
-
-IL FLAG **VINCOLO CONTO/CENTRO**  limita la possibilità di scegliere il centro aziendale quando si registra in contabilità. Sarà vincolante l'associazione tra conto contabile e centro o centri aziendali impostata nel piano dei conti.
+- Il flag **QUADRATURA OBBLIGATORIA** va ad identificare che questa deve avere quadratura con la contabilità. Non è più la contabilità generale che va quadrata al centro di costo/profitto o commessa ma va quadrata rispetto alla singola dimensione d’analisi che prevede quadratura. Il test di quadratura sarà effettuato solo se la causale contabile di movimentazione prevede a sua volta il blocco al salvataggio di movimenti non quadrati a livello di valorizzazione dei centri;
+- Il flag **COMMESSA** indica che la riga dell’analitica viene associata in via prioritaria al progetto per il quale il costo o ricavo è movimentato in modo diretto, e da questo progetto si deriverà un centro di costo da valorizzare, centro che potrà essere un codice generico uguale per tutti i progetti oppure magari un centro legato ad una caratteristica specifica del progetto selezionato;
+- Il flag **VINCOLO CONTO/CENTRO** va a dire che si vuole limitare quello che l’utente può fare quando registra in contabilità un centro di questa dimensione: dato che nel piano dei conti possiamo agganciare ad ogni sottoconto di costo e di ricavo uno o più centri aziendali, con questa opzione dico che quello che è inserito nel piano dei conti non può essere modificato dall’utente. In sostanza, un costo di produzione non mi può diventare un costo assegnato al centro direzionale. Il vincolo può essere legato al singolo centro, piuttosto che sulle categorie dei centri;
+- Il flag **ABILITA COMMESSA**, invece, serve per poter collegare una commessa di riferimento anche nelle righe della dimensione industriale/direzionale normale, per evitare di gestire due dimensioni differenti.
 :::
 

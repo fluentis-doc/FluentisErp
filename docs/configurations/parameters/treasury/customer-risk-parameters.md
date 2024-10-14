@@ -7,7 +7,7 @@ sidebar_position: 6
 
 Il modulo rischio cliente legge gli ordini clienti, DDT , fatture, partite, effetti a scadere (in pratica tutto quello che occupa fido e crea esposizione). 
 
-Partite ed effetti sono letti in ogni caso , i documenti (OC, DDT, FV) sono una scelta da effettuare con apposito flag nelle varie tabelle (Tipo ordine cliente, Tipi DDT di vendita, Tipi Fattura di vendita)
+Partite ed effetti sono letti in ogni caso, i documenti (OC, DDT, FV) sono una scelta da effettuare con apposito flag nelle varie tabelle (Tipo ordine cliente, Tipi DDT di vendita, Tipi Fattura di vendita)
 
 Il flag da apporre per la lettura nello specifico dei vari tipi di documento è il flag **Fido**
 

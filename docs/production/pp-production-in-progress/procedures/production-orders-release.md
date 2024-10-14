@@ -3,6 +3,10 @@ title: Rilascio ordini di produzione
 sidebar_position: 2
 ---
 
+:::important A cosa serve
+La procedura di **Rilascio degli ordini di produzione** in Fluentis permette di gestire in modo efficiente il passaggio degli ordini dallo stato *Lanciato* a *Esecutivo*. Mediante un'interfaccia intuitiva, è possibile filtrare e selezionare gli ordini da rilasciare, generando al contempo i relativi movimenti di magazzino per il prelievo automatico dei materiali. Inoltre, questa procedura consente di ripristinare ordini già rilasciati, garantendo una flessibilità operativa significativa nel processo produttivo.
+:::
+
 Questa form permette di effettuare il cambio di stato degli ordini di produzione e contemporaneamente creare anche i relativi movimenti di magazzino di scarico di tutti gli articoli che hanno, nei [Parametri MRP](/docs/configurations/parameters/production/mrp-parameters/mrp-parameters-intro) dell'articolo, come *Tipo di prelievo* il valore **Automatico**.
 
 ## Filtro

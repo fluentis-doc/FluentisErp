@@ -33,7 +33,14 @@ La form si apre tramite il percorso **Parametri > Produzione > Parametri Ordini 
 
 **Aggiorna materiali utilizzati nell’ordine di produzione**: se attivo, al variare della quantità dichiarata in una dichiarazione di produzione, verrà mostrato un messaggio che chiede di ricalcolare o meno le quantità utilizzate dei materiali; se non è attivo, il ricalcolo dei materiali avviene automaticamente;
 
-**Abilita controllo presenze nel MES**: se attivo, abilita il controllo presenze all'interno di Fluentis MES;       
+**Abilita controllo presenze nel MES**: se attivo, abilita il controllo presenze all'interno di Fluentis MES, Il controllo si basa sulla tabella *Fluentis.HR_BadgeRecords*.       
+In questa i campi obbligatori per il controllo sono: *HRBR_Resource_HRR_Id*, *HRBR_RecordDateTime*, *HRBR_BadgeRecordType_HRBRTY_Id*, che può assumere i valori E = Ingresso o U = Uscita.
+Per ogni riga ci può essere solo l’orario di entrata o quello di uscita, quindi in giorno ci saranno 4 righe per ogni utente, ad esempio:     
+- 2024-01-02 08:30:00.000 - tipo E 
+- 2024-01-02 12:30:00.000 - Tipo U 
+- 2024-01-02 14:00:00.000 - Tipo E 
+- 2024-01-02 18:00:00.000 - Tipo U      
+I dati devono essere importati all'interno di questa tabella partendo dai dati del timbratore utilizzato.
 
 **Mostra la versione per componente dentro distinta base**: se attivo, abilita il campo della versione nel tab componente della distinta base.
 

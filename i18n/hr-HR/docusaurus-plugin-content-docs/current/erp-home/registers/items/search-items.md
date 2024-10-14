@@ -3,7 +3,7 @@ title: Traži artikle
 sidebar_position: 1
 ---
 
-**Fluentis academy**: [Identifikacija proizvoda i pripadajućih dijelova](/docs/erp-home/registers/items/academy-master-item) 
+**Fluentis academy**: [Identifikacija proizvoda i pripadajućih dijelova](/docs/erp-home/registers/items/master-item-intro) 
 
 Omogućuje pretraživanje svih artikala s ciljem pregleda, uređivanja i, prema potrebi, brisanja ili dodavanja novog artikla; prozor se sastoji od područja filtra i rezultatnog mrežnog prikaza.
 

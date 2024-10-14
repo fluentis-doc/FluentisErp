@@ -3,7 +3,7 @@ title: Distinta Base
 sidebar_position: 2
 ---
 
-**Fluentis academy**: [Distinta base](/docs/erp-home/registers/production/bill-of-materials/academy-bom) 
+**Introduzione**: [Distinta base](/docs/erp-home/registers/production/bill-of-materials/bom-intro) 
 
 Come accennato già, dalla form [Assiemi](/docs/erp-home/registers/production/bill-of-materials/search-and-insert-assemblies), selezionando la distinta base che si vuole visualizzare e facendo doppio click, si entra nel dettaglio della distinta stessa in modifica e si visualizza la sua rappresentazione grafica ad albero.
 

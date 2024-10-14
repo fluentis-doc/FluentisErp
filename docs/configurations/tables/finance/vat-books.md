@@ -56,7 +56,7 @@ I campi della **prima sezione**:
 
 **Descrizione**: descrizione rif. reg. acquisto.
 
-**Numerazione**: consente di impostare per ogni registro un numeratore con le consuete opzioni standard comuni agli altri numeratori presenti nel gestionale, al posto della numerazione standard prevista per i registri iva.
+**Numerazione**: consente di impostare per ogni registro un numeratore con le consuete opzioni standard comuni agli altri numeratori presenti nel gestionale, al posto della numerazione standard prevista per i registri iva. Nella localizzazione italiana questo campo non viene utilizzato.
 
 **Descrizione**: descrizione del numeratore associato
 
@@ -79,6 +79,10 @@ I campi della **prima sezione**:
 **Ultima pag. stampata**: ultimo numero di pagina stampata in definitiva.
 
 ---
+
+:::tip nota
+la stampa di questa tabella consente di visualizzare l'ultimo periodo stampato in modo definitivo per ogni registro e anno
+:::
 
 :::important Vedi Anche
 [**VIDEO TUTORIALS SULLE TABELLE AMMINISTRATIVE**](/docs/video/finance/intro.md)

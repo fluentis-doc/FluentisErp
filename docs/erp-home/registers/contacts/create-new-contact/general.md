@@ -15,13 +15,25 @@ La finestra si compone di una prima sezione in cui verranno inserite le informaz
 
 Sulla base del testo qui inserito, uscendo dal campo, il gestionale andrà a generare automaticamente un ‘Nomignolo', cioè un codice univoco breve identificativo dell'anagrafica stessa: questo è modificabile da parte dell'utente, ma deve essere unico nella lista di tutte le anagrafiche. Dato che la ricerca del soggetto (se contabile) sarà effettuata tipicamente sulla base della ragione sociale, questo campo non è particolarmente rilevante.
 
+**Partita IVA**: campo composto dal codice ISO internazionale della nazione (definito nella tabella Nazioni stessa) e dalla relativa partita iva. Il campo è soggetto a test di correttezza del carattere di controllo per le partite iva italiane (test eseguito all'uscita del campo). Una volta impostata la partita iva, nel caso di soggetto Europeo, tramite il pulsante 'Proponi dati' è possibile andare a richiedere al database comunitario del Vies la verifica e il recepimento dei dati disponibili: per alcune nazioni, infatti, vengono restituiti anche i dati dell'indirizzo corrispondente alla partita iva richiesta, che andranno a valorizzare i campi in ***Fluentis***
+
+**Codice fiscale**: campo per l'inserimento del codice fiscale del soggetto;
+
+**Persona fisica/giuridica**: indica se il soggetto è un privato o meno;
+
 **Contabile**: flag presente di default nei nuovi inserimenti, consentirà di definire i dettagli di gestione amministrativa/commerciale per i sottoconti associati all'anagrafica in uso.
 
 **Indirizzo**: è l'indirizzo della sede legale;
 
+**Numero civico**: il numero civico dell'indirizzo;
+
+**Edificio**: l'eventuale edificio dell'indirizzo;
+
 **CAP**: è il codice di avviamento posta; può essere scritto manualmente oppure derivare dalla selezione del comune (campo successivo) attraverso l'help comuni;
 
 **Comune**: campo editabile all'interno del quale inserire il comune della sede legale. È presente un help Comuni per ricercare nella lista dei comuni così come definiti in tabella (Home>Tabelle>Impostazioni generali);
+
+**Natura giuridica**: natura giuridica, la lista è legata alla nazione del contatto;
 
 **Provincia**: campo editabile all'interno del quale inserire il codice della provincia. È presente un help Province per ricercare nella lista delle province così come definite in tabella (Home>Tabelle>Impostazioni generali);
 
@@ -33,11 +45,9 @@ Sulla base del testo qui inserito, uscendo dal campo, il gestionale andrà a gen
 
 **Lingua**: codice della lingua (Home>Tabelle>Impostazioni generali) di riferimento per le comunicazioni indirizzate all'anagrafica in uso. È possibile generare una reportistica automaticamente in lingua sulla base del dizionario definito in ARM (Application Resource Manager);
 
-**Partita IVA**: campo composto dal codice ISO internazionale della nazione (definito nella tabella Nazioni stessa) e dalla relativa partita iva. Il campo è soggetto a test di correttezza del carattere di controllo per le partite iva italiane (test eseguito all'uscita del campo.
+**Nome** e **Cognome**: per persone fisiche;
 
-**Codice fiscale**: campo per l'inserimento del codice fiscale del soggetto;
-
-**Persona fisica/giuridica**: indica se il soggetto è un privato o meno;
+**Città nascita**, **Codice provincia nascita**, **Data nascita**, **Sesso**: per persone fisiche;
 
 **Telefono/Telefono cellulare**: campo per l'inserimento del telefono principale o del cellulare del contatto;
 
@@ -68,7 +78,7 @@ Nella sezione **Codice EDI** è possibile inserire il codice per il trasferimen
 
 Nella sezione **Altri dati** invece è possibile inserire il numero cliente, il n. reg. autotrasp. ovvero per anagrafiche relative a trasportatori, è il codice del soggetto nel registro degli autotrasportatori; e la data di nascita nel caso di persona fisica.
 
-Nella griglia **Persone di Riferimento** si potranno specificare, per il contatto in uso, la lista delle persone di riferimento presenti al suo interno con la descrizione del ruolo occupato, e i relativi contatti telefonici e/o indirizzi email. Oltre a questa funzione, è importante sottolineare che per i soggetti da riportare nella certificazione delle ritenute la prima riga inserita in questa griglia sarà relativa ai riferimenti della persona fisica da riportare nella stampa.
+Nella griglia **Persone di Riferimento** si potranno specificare, per il contatto in uso, la lista delle persone di riferimento presenti al suo interno con la descrizione del ruolo occupato, e i relativi contatti telefonici e/o indirizzi email.
 
 :::tip[]
 Nella griglia **Sottoconti in tutte le società** si potrà vedere se per l'anagrafica in uso è stata definito l'uso contabile in un'altra società; nella griglia si troverà quindi la lista dei vari sottoconti assegnati con la relativa società di riferimento.
@@ -84,7 +94,7 @@ Qui è possibile inserire alcuni indirizzi alternativi che dipendono dal [**Tip
 
 **La funzione più frequente di questa sezione è soprattutto la gestione egli indirizzi mail per automatizzare l'invio di documenti, solitamente report di stampa, tramite workflow (flussi operativi con passaggi di stato da gestire all'interno elle maschere) principalmente tramite invio massivo di mail.**
 
-*Esempio*: se selezioniamo nella griglia il tipo indirizzo 'Sede Commerciale' si andrà ad inserire un referente o più per l'ufficio commerciale a cui inviare ad esempio le conferme d'ordine via mail. La mail va indicata nella sezione accanto alla griglia in cui si possono inserire anche il riferimento telefonico del contatto e altri dati di tipo anagrafico. In questo caso, quando si inserirà l'ordine, nel tab *Rieploghi* quando si andrà a scegliere di inviare la conferma d'ordine al cliente si aprirà una schermata con l'anteprima della mail con l'indirizzo del destinatario già popolato con le informazioni che sono state inserite in questa sezione, e non servirà andare ad aggiungerlo a mano ogni volta. In base al tipo di indirizzo, si potrà scegliere a chi inviare le fatture, degli ordini fornitori ecc.
+*Esempio*: se selezioniamo nella griglia il tipo indirizzo 'Sede Commerciale' si andrà ad inserire un referente o più per l'ufficio commerciale a cui inviare ad esempio le conferme d'ordine via mail. La mail va indicata nella sezione accanto alla griglia in cui si possono inserire anche il riferimento telefonico del contatto e altri dati di tipo anagrafico. In questo caso, quando si inserirà l'ordine, nel tab *Riepiloghi* quando si andrà a scegliere di inviare la conferma d'ordine al cliente si aprirà una schermata con l'anteprima della mail con l'indirizzo del destinatario già popolato con le informazioni che sono state inserite in questa sezione, e non servirà andare ad aggiungerlo a mano ogni volta. In base al tipo di indirizzo, si potrà scegliere a chi inviare le fatture, degli ordini fornitori ecc.
 
 Pertanto la form **Indirizzi alternativi** non consente una gestione dei dati nei successivi documenti del ciclo attivo/passivo.
 

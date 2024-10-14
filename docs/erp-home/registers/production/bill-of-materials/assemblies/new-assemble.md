@@ -3,7 +3,7 @@ title: Nuova Distinta Base
 sidebar_position: 1
 ---
 
-**Fluentis academy**: [Distinta base](/docs/erp-home/registers/production/bill-of-materials/academy-bom) 
+**Introduzione**: [Distinta base](/docs/erp-home/registers/production/bill-of-materials/bom-intro) 
 
 La procedura di creazione di un **Nuovo** si apre tramite il percorso:
 

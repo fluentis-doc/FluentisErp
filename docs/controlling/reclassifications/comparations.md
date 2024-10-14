@@ -3,7 +3,7 @@ title: Comparazione riclassificazioni
 sidebar_position: 5
 ---
 
-Le comparazioni delle riclassificazioni consentono, a partire da un determinato *Modello di riclassificazione*, di elaborare dei confronti tra le varie riclassificazioni memorizzate in ***FluentisERP***.
+Le comparazioni delle riclassificazioni consentono, a partire da un determinato [*Modello di riclassificazione*](/docs/controlling/reclassifications/create-reclassification-model), di elaborare dei confronti tra le varie riclassificazioni memorizzate in ***FluentisERP***.
 
 
 ## COMPARAZIONI SU DATI DEI RICLASSIFICATI DI CHIUSURE INFRANNUALI
@@ -30,8 +30,8 @@ Imposteremo il modello, inseriremo una Descrizione identificativa della comparaz
 Nella griglia sottostanti dei ***Dettagli*** avremo i seguenti campi:
 - *Progressivo* di riga, sarà l'elemento identificativo del dato nella scheda successiva degli ***Scostamenti***
 - *Area*, obbligatorio, sarà l'area dalla quale leggere i dati
-- *Dimensione*, obbligatorio, cioè da quale dimensione leggere i dati
-- *Centro aziendale*, opzionale, cioè di quale centro si vuole visualizzare i dati
+- [*Dimensione*](/docs/controlling/controlling-parametrization/controlling-specific-settings/dimension), obbligatorio, cioè da quale dimensione leggere i dati
+- [*Centro aziendale*](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-centers), opzionale, cioè di quale centro si vuole visualizzare i dati
 - *Progetto*, non in uso
 - *Periodo inizio* e *Periodo fine*, obbligatori, è il range di periodi da considerare
 - *Anno inizio* e *Anno fine*, obbligatori, è il range di anni da considerare

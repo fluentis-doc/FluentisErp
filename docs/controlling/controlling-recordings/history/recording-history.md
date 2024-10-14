@@ -14,9 +14,9 @@ Possiamo aprire in visualizzazione ogni registrazione per andare a verificare i 
 I campi disponibili in griglia sono i seguenti:
 
 - ***Sottoconto***
-- ***Area***
-- ***Centro aziendale***
-- ***Centro cedente***, che sarà valorizzato solo per le righe legate ai driver
+- [***Area***](/docs/controlling/controlling-parametrization/controlling-specific-settings/area-types-areas)
+- [***Centro aziendale***](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-centers)
+- [***Centro cedente***](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-centers), che sarà valorizzato solo per le righe legate ai driver
 - ***Anno***
 - ***Periodo***
 - ***Dare***
@@ -34,7 +34,7 @@ I campi disponibili in griglia sono i seguenti:
 Le righe di *attribuzione* sono sostanzialmente le righe di ribaltamento dei *Cost driver* che dal Centro di comodo *Conti da riassegnare* valorizzano i *Centri aziendali* effettivi della direzionale. I driver di *ribaltamento* sono sostanzialmente tutti gli altri.
 :::
 - ***Tipo distribuzione*** del driver applicato
-- ***Cost driver*** applicato
+- [***Cost driver***](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-drivers) applicato
 - ***Sorgente***, cioè l'origine del dato, che può essere:
     - *Contabile* (1), cioè proveniente direttamente dalla *Chiusura infrannuale*
     - *Manuale* (2), cioè proveniente dalle *Registrazioni extracontabili di area*

@@ -15,11 +15,7 @@ Nella **Griglia superiore** sono presenti i seguenti campi:
 
 **Da data documento**: data documento a partire dalla quale va gestito il calcolo interessi (il rif. è al DECRETO LEGISLATIVO 9 ottobre 2002, n. 231). Lo scopo del campo è quello di impedire che siano calcolati interessi su documenti aventi data anteriore a quella di emanazione della legge.
 
-
-
 **Da data scadenza**: data scadenza a partire dalla quale va gestito il calcolo interessi (il rif. è al DECRETO LEGISLATIVO 9 ottobre 2002, n. 231). Lo scopo del campo è quello di impedire che siano calcolati interessi su documenti aventi scadenza anteriore a quella di emanazione della legge.
-
-
 
 **Interesse min.**: importo minimo degli interessi al di sotto del quale non valorizzare alcun importo.
 
@@ -27,9 +23,9 @@ Nella **Griglia superiore** sono presenti i seguenti campi:
 
 **Calcolo anche sconto**: flag di gestione anche in sconto in caso di pagamento anticipato. 
 
+:::tip nota
 ESEMPIO: in caso di pagamento anticipato da parte del cliente e successivo ritardo di pagamento, se l'importo dell'interesse calcolato sul ritardo è superiore al valore impostato nel campo Interesse min. , al valore dell'interesse calcolato sarà detratto il valore (negativo) calcolato in base ai giorni che intercorrono tra la data pagamento e la data scadenza. In ogni caso il risultato del calcolo non potrà mai essere un interesse negativo.
-
- 
+:::
 
 Nella **Griglia inferiore** sono presente i seguenti campi:
 
@@ -39,11 +35,9 @@ Nella **Griglia inferiore** sono presente i seguenti campi:
 
 **A data**: data fino alla quale sarà gestito il tasso indicato nella riga
 
- 
-
 **Percentuale**: percentuale di tasso d'interesse applicabile.
 
-I campi relativi alle date di validità riferiti alla percentuale permettono di definire l'andamento della politica del tasso di interesse che, come noto, è soggetta a periodiche rvisioni relative al tasso legale.
+I campi relativi alle date di validità riferiti alla percentuale permettono di definire l'andamento della politica del tasso di interesse che, come noto, è soggetta a periodiche revisioni relative al tasso legale.
 
  
 

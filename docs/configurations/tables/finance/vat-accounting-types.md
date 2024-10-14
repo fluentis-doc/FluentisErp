@@ -2,7 +2,7 @@
 title: Tipi contabilizzazione IVA
 sidebar_position: 24
 ---
-Questa tabella è richiamata all'interno dell'anagrafica clienti / fornitori alla quale si rinvia.
+Questa tabella è richiamata all'interno dell'anagrafica clienti / fornitori alla quale si rinvia e poi all'interno delle Aliquote/modalità iva, per definire gli specifici sottoconti da utilizzare su ogni tipologia.
 
 
 **Codice**: codice identificativo del tipo di contabilizzazione IVA.

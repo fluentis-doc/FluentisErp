@@ -67,3 +67,7 @@ I dati nelle griglie in basso, **Fatture di acquisto** e **Registrazione contabi
 > **Anteprima contabilizzazione**: per visualizzare l'anteprima di stampa della contabilizzazione.  
 > **Ripristina contabilizzazione**: per cancellare la contabilizzazione selezionata.  
 > **Ripristina registrazione**: per cancellare l'intera operazione selezionata, con tutti i suoi dettagli visualizzati nelle due griglie sottostanti.
+
+### Messaggi di errore
+
+vedere la pagina sulla [**contabilizzazione fattura di vendita**](/docs/sales/sales-invoices/accounting/sales-invoices-accounting#messaggi-di-errore)

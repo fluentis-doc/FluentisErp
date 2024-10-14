@@ -48,7 +48,7 @@ La definizione della tabella tipo conto non è altro che una ‘qualifica' che v
 
 **Servizio**: con flag su servizio. I conti con tale flag attivo sono i sottoconti per i quali Ia procedura gestisce in automatico le scritture di rettifica e integrazione a livello di bilanci infrannuali, ma anche le scritture di assestamento di contabilità generale.
 
-**Controlling**: attualmente non gestito. I conti con questo tipo si vedono solo nell'area controlling (una volta implementata la funzionalità)
+**Controlling**: I conti con questo tipo si possono utilizzare solo nell'area controlling e non in registrazioni di Contabilità generale
 
 ---
 

@@ -9,9 +9,9 @@ Questa form consente di definire la lista delle destinazioni merce e le caratte
 
 Per ogni destinatario si può collegare la **Zona** e la **Zona consegna** di riferimento.
 
-**Elenco destinazioni**:  nella griglia si inseriscono le N possibili destinazioni in capo a quel destinatario, che a loro volta possono avere un valore di *default* da proporre, un *automezzo* di default, un *tipo di UDC* (unità di carico) e una *zona consegna*. Si può quindi creare una *triangolazione*: vendo al soggetto dell'anagrafica e consegno ad un magazzino particolare di un destinatario terzo.
+**Elenco destinazioni**:  nella griglia si inseriscono le N possibili destinazioni in capo a quel destinatario, che a loro volta possono avere un valore di *default* da proporre, un *automezzo* di default, un *tipo di UDC* (unità di carico), una *zona consegna* e un *vettore*. Si può quindi creare una *triangolazione*: vendo al soggetto dell'anagrafica e consegno ad un magazzino particolare di un destinatario terzo.
 
-Nella sezione inferiore si possono definire il **Tipo di spedizione** (via terra/mare/tir ecc.) ed eventuali note, il tipo di *imballaggio* ed eventuali *note*, e le condizioni di resa nel campo *porto* ed eventuali *note* (tutti i campi note se compilati verranno riportati nei documenti di spedizione) con una lista di *vettori* autorizzati per il soggetto;
+Nella sezione inferiore si possono definire il **Tipo di spedizione** (via terra/mare/tir ecc.) ed eventuali note, il tipo di *imballaggio* ed eventuali *note*, e le condizioni di resa nel campo *porto* ed eventuali *note* (tutti i campi note se compilati verranno riportati nei documenti di spedizione);
 
 Nella sezione **Zone Consegna**  ci sono elementi di default validi per il cliente quali:
 

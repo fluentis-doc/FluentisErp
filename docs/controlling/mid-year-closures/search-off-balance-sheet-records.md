@@ -3,7 +3,7 @@ title: Ricerca registrazioni extracontabili
 sidebar_position: 4
 ---
 
-La ricerca delle registrazioni extracontabili consente di visualizzare tutti i movimenti associati ad una determinata chiusura infrannuale. La maschera avrà tutti i pulsanti disabilitati fino a che non si imposterà su quale chiusura infrannuale si vuole operare.
+La ricerca delle registrazioni extracontabili consente di visualizzare tutti i movimenti associati ad una determinata ***Chiusura infrannuale***. La maschera avrà tutti i pulsanti disabilitati fino a che non si imposterà su quale chiusura infrannuale si vuole operare.
 
 Da questa maschera sarà possibile: trovare e modificare le registrazioni associate alla chiusura infrannuale; cancellare le registrazioni associate alla chiusura infrannuale; aggiungere registrazioni manuali alla chiusura infrannuale (es.: rilevare gli accantonamenti di competenza delle paghe);  duplicare una registrazione manuale (non quelle automatiche create con le procedure del modulo) selezionata in griglia in un'altra chiusura già presente nel modulo.
 

@@ -94,79 +94,79 @@ Mreža je već popunjena ako je planirana narudžba generirana iz *Opće planira
 **Datum početka/završetka planirani**: o su datumi početka i završetka odgovarajuće faze; mijenjanjem planiranih datuma početka i završetka automatski se mijenjaju i ovi datumi. Oni se izračunavaju na temelju vremena unesenog u radnim fazama, posebno na osnovi maksimalnog vremena stroja i ukupnog vremena rada za odabranu fazu;    
 **Vrijeme stroja**: to je vrijeme koje stroj troši za provedbu faze, odnosi se na količinu komada po fazi;    
 **Broj stroja**: to je broj strojeva uključenih u ovu fazu;    
-**Količina komada po fazi**: indica il numero di pezzi per fase;  
-**Tempo operaio**: è il tempo impiegato dall'operaio per realizzare questa fase, riferito alla quantità di pezzi per fase;  
-**Numero operai**: è il numero di operai coinvolti in questa fase;  
-**Conto terzista/descrizione terzista**: con doppio click sulla casella si apre il help per poter selezionare il conto e sottoconto del relativo terzista. Questa casella è attiva solo nel caso in cui la fase sia designata come fase *Esterna*. Da notare che il *terzista* viene anch'esso ripreso dalla fase di lavorazione inserita nel ciclo di lavorazione dell'articolo.  
-**Decrizione centro di lavoro**: indica la descrizione del centro di lavoro.       
+**Količina komada po fazi**: to je broj komada po fazi;  
+**Radnikovo vrijeme**: to je vrijeme koje radnik troši za provedbu ove faze, odnosi se na količinu komada po fazi;    
+**Broj radnika**: : to je broj radnika uključenih u ovu fazu;  
+**Podizvođač/opis podizvođača**: dvoklikom na polje otvara se pomoć za odabir podračuna i podračuna odgovarajućeg podizvođača. Ovo polje je aktivno samo ako je faza označena kao *Vanjska* faza. Napomena da se *podizvođač* također preuzima iz radne faze unesene u radnom ciklusu predmeta.    
+**Opis radnog centra**: označava opis radnog centra.         
 
-### Fasi - Proprietà
+### Faze - Svojstva   
 
-Contiene le proprietà relative alla fase selezionata.
+Ovo područje sadrži svojstva odabrane faze. 
 
-**Descrizione fase/sottofase**: in questo campo appare la descrizione della fase selezionata;  
-**Tipo**: in questa combo è possibile impostare il tipo di lavorazione (interna o esterna);  
-**Sovrapposizione**: tramite questa combo inserisco la tipologia di un'eventuale sovrapposizione tra fasi. Possiamo avere sovrapposizione *Totale* (in questo caso la fase in oggetto è sovrapposta totalmente alla fase indicata successiva), *A pezzi* (in questo caso è necessario indicare dopo quanti pezzi prodotti da questa fase avrà inizio la fase successiva), *A tempo* (in questo caso è necessario indicare dopo quanti minuti da quando è iniziata la fase in oggetto avrà inizio la fase successiva);  
-**UM Tempi**: in questa combo box compare l'*Unità Misura Tempi* della Fase; si può decidere di gestire i tempi della fase in secondi, minuti, ore e giorni. Di solito si gestiscono a minuti i tempi delle fasi interne e a giorni quelli delle fasi esterne, ma ovviamente dipende molto dalla tipologia di azienda per cui si sta impostando il lavoro;  
-**Macchina**: in questa combo può essere selezionato il codice (e descrizione) della relativa macchina. Essa viene proposta in automatico, ripresa dal centro di lavoro che è stato precedentemente inserito nella griglia;  
-**Gruppo manodopera**: in questa combo può essere selezionato il codice (e descrizione) del relativo gruppo manodopera. Essa viene proposto in automatico, ripreso dal centro di lavoro che è stato precedentemente inserito nella griglia;  
-**Sovrapposiz. riferita alla fase/sottofase**: qui viene indicato il codice della fase e Sottofase che presentano una sovrapposizione con la fase in oggetto. Di solito si indica la fase successiva, ma anche qui si tratta solo di una consuetudine; 
-**Valore**: qui si indica il valore dell'eventuale sovrapposizione, utilizzando i criteri specificati sopra;  
-**Utilizzo**: se il flag è attivato, significa che si vuole che il tempo di attesa/coda aumenti il tempo di impegno del Centro di Lavoro su quella fase;  
-**Tempo di attesa o coda**: indica l'eventuale tempo di attesa/coda prevista per questa macchina.  
+**Opis faze/podfaze**: ovdje se prikazuje opis odabrane faze;  
+**Vrsta**: u ovoj padajućoj listi moguće je postaviti vrstu obrade (unutarnja ili vanjska);  
+**Preklapanje**: ovdje se postavlja vrsta eventualnog preklapanja između faza. Moguće opcije su *Potpuno* (u ovom slučaju odabrana faza potpuno se preklapa s navedenom sljedećom fazom), *Po komadima* (u ovom slučaju treba navesti nakon koliko proizvedenih komada iz ove faze počinje sljedeća faza), *Po vremenu* (u ovom slučaju treba navesti nakon koliko minuta od početka odabrane faze počinje sljedeća faza);    
+**Jedinica mjere vremena**: ou ovoj padajućoj listi nalazi se *Jedinica mjere vremena faze*; možete odlučiti kako upravljati vremenima faze u sekundama, minutama, satima i danima. Obično se vremena internih faza upravljaju minutama, a eksternih faza danima, ali naravno, to ovisi o vrsti tvrtke za koju se posao postavlja;       
+**Stroj**: ovdje možete odabrati kod (i opis) odgovarajućeg stroja. Automatski se predlaže prema centru rada koji je prethodno unesen u mrežu;    
+**Grupa radne snage**: u ovoj padajućoj listi može se odabrati kod (i opis) odgovarajuće radne skupine. Automatski se predlaže prema centru rada koji je prethodno unesen u mrežu;    
+**Preklapanje s fazom/podfazom**: ovdje se navodi kod faze i podfaze koje imaju preklapanje s odabranom fazom. Obično se navodi sljedeća faza, ali i ovdje je riječ samo o običaju;   
+**Vrijednost**: ovdje se navodi vrijednost eventualnog preklapanja, koristeći gore navedene kriterije;    
+**Korištenje**: ako je zastava aktivirana, znači da želite da vrijeme čekanja/čekanja poveća vrijeme angažmana radnog centra na toj fazi;    
+**Čekaj/Vrijeme reda**: navodi eventualno predviđeno vrijeme čekanja/čekanja za ovaj stroj.  
 
-### Fasi - Extra Data
+### Faze - Dodatni podaci   
 
-Contiene gli eventuali extra data relativi alla fase selezionata.
+Ovo područje sadrži dodatne podatke o odabranoj fazi.  
 
-## Attrezzaggio
+## Opremanje
 
-In questo tab è possibile definire i tempi relativi all'attrezzaggio della fase selezionata nel tab precedente. 
+Na ovoj je kartici moguće definirati vrijeme povezano s postavljanjem opreme za odabranu fazu u prethodnoj kartici.
 
-*Campi specifici*:
+*Specifična polja*:
 
-**Fase/Sottofase**: in questi campi vengono visualizzate le informazioni relative alla fase che è selezionata nel tab *Fasi*;  
-**Tipo**: indica la tipologia della fase (interna o esterna);  
-**Tipo sovrapposizione**: indica l'eventuale tipologia della sovrapposizione;  
-**UM Tempi**: indica l'unità di misura temporale della fase;  
-**Centro di Lavoro**: in questi campi viene inserito il codice (e relativa descrizione) del Centro di Lavoro impostato per l'attrezzaggio;  
-**Macchina**: in questi campi viene inserito il codice (e relativa descrizione) della macchina per l'attrezzaggio;  
-**Gruppo MDO**: in questi campi viene inserito il codice (e relativa descrizione) del Gruppo manodopera per l'attrezzaggio;  
-**Valore**: indica il valore dell'eventuale sovrapponibilità;  
-**CdL**: in questi campi viene visualizzato il codice e la descrizione del relativo Centro di Lavoro della fase selezionata;  
-**Data inizio**: viene visualizzata la data d'inizio della fase selezionata nel tab *Fasi*;  
-**Data fine**: viene visualizzata la data di fine della fase selezionata nel tab *Fasi*;  
-**Tempo attrezzaggio**: viene inserito il tempo dell'attrezzaggio. Si tratta di un tempo fisso, che non varia al variare delle quantità da produrre nella fase selezionata;  
-**Tempo riattrezzaggio**: viene inserito il tempo del riattrezzaggio, che viene sommato al tempo attrezzaggio;  
-**Num. macchine**: si indica il numero di macchine impiegate per l'attrezzaggio;  
-**Num. operai**: si indica il numero di operai impiegati per l'attrezzaggio.
+**Faza/Podfaza**: ovdje se prikazuju informacije o fazi koja je odabrana u prethodnoj kartici *Faze*;  
+**Vrsta**: označava vrstu faze (interna ili vanjska);  
+**Vrsta preklapanja**: označava eventualnu vrstu preklapanja;  
+**J.M. vremena**: označava jedinicu mjere vremena za fazu;  
+**Radni centar**: ovdje se unosi kod (i opis) radnog mjesta postavljenog za opremanje;  
+**Stroj**: ovdje se unosi kod (i opis) stroja za opremanje;  
+**Grupa radne snage**: ovdje se unosi kod (i opis) grupe radne snage za opremanje;    
+**Vrijednost**: označava vrijednost eventualnog preklapanja;    
+**Centar rada**: ovdje se prikazuju kod i opis odgovarajućeg radnog mjesta odabrane faze;    
+**Datum početka**: prikazuje datum početka odabrane faze u kartici *Faze*;  
+**Datum završetka**: prikazuje datum završetka odabrane faze u kartici *Faze*;  
+**Vrijeme postrojenja**: unosi se vrijeme opremanja. To je fiksno vrijeme koje se ne mijenja s promjenama u količinama za proizvodnju u odabranoj fazi;    
+**Vrijeme ponovnog opremanja**: unosi se vrijeme ponovnog opremanja, koje se zbraja s vremenom opremanja;    
+**Br. strojeva**: označava broj korištenih strojeva za opremanje;   
+**Br. radnika**: označava broj radnika koji sudjeluju u opremanju.  
 
-## Attrezzature
+## Oprema
 
-In questo tab, costituito principalmente da una griglia, è possibile definire quali e quante attrezzature dovranno essere utilizzate nella produzione della fase selezionata nel tab *Fasi*. 
+Na ovom obrascu, koji se uglavnom sastoji od mrežice, moguće je definirati koje i koliko opreme će biti korištene u proizvodnji odabrane faze iz kartice *Faze*. 
 
-*Campi specifici*:
+*Specifični polja*:
 
-**Sequenza**: in questo campo è possibile indicare la sequenza con cui devono essere utilizzate le attrezzature;      
-**Attrezzature**: con questa combo box è possibile richiamare il codice dell'attrezzatura, ripreso dall'apposita tabella [Attrezzature](/docs/configurations/tables/production/equipments);  
-**Classe/Codice articolo**: in questi campi è possibile indicare la classe e il codice dell'articolo (l'help filtra automaticamente solo gli articoli che sono identificati come *Attrezzature* nel campo *Natura Articolo* dell'anagrafica di magazzino);  
-**Variante**: rappresenta la variante dell'articolo;  
-**Quantità**: rappresenta la quantità dell'articolo.
+**Redoslijed**: ovdje je moguće navesti redoslijed kojim će se koristiti oprema;        
+**Oprema**: ovom kombiniranom okviru možete odabrati kod opreme, preuzet iz odgovarajuće tablice [Oprema](/docs/configurations/tables/production/equipments);  
+**Klasa/Šifra stavke**: u ovim poljima možete navesti klasu i kod artikla (pomoć automatski filtrira samo one artikle koji su označeni kao *Oprema* u polju *Priroda artikla* u šifarniku skladišta);    
+**Varijanta**: predstavlja varijantu artikla;   
+**Količina**: predstavlja količinu artikla.  
 
-## Controllo qualità
+## Kontrola kvalitete 
 
-In questo tab, costituito principalmente da una griglia, è possibile visualizzare i dettagli delle prove pianificate di controllo per la fase/sottofasse.
+Na ovoj kartici, koji se uglavnom sastoji od mreže (tablice), možete pregledati detalje planiranih testova kontrole za fazu/podfazu.  
 
-## Nota fase
+## Bilješka faze
 
-In questo tab viene visualizzata la nota legata alla fase di lavorazione selezionata nel tab *Fasi*. Essa è modificabile dall'utente contestualmente all'ordine pianificato in oggetto.
+Na ovoj kartici prikazana je bilješka vezana uz odabranu fazu obrade na kartici *Faze*. Korisnik je može uređivati u kontekstu trenutnog planiranog naloga.  
 
-## Istruzioni operative
+## Operativne upute
 
-In questo tab vengono visualizzate le note / documenti legate alla fase di lavorazione selezionata nel tab *Fasi*. Esse sono modificabili dall'utente contestualmente all'ordine pianificato in oggetto. Questi documenti sono visibili all'interno del MES nel tab *Documenti e Istruzioni opertive.
+Na ovoj kartici prikazuju se bilješke/dokumenti vezani uz odabranu fazu obrade na kartici *Faze*. Korisnik ih može uređivati u kontekstu trenutnog planiranog naloga. Ti dokumenti su vidljivi unutar MES-a na kartici *Dokumenti* i *Operativne upute*.  
 
-## Extra Data
+## Dodatni podaci 
 
-Per una descrizione approfondita sugli extra data si rimanda all'articolo [Extra data](/docs/configurations/utility/extra-data/extradata/new-extradata-simple).
+Za detaljan opis dodatnih podataka molimo pogledajte članak [Dodatni podaci](/docs/configurations/utility/extra-data/extradata/new-extradata-simple).
 
-Per dettagli sul funzionamento comune delle form fare riferimento al link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Za informacije o uobičajenom funkcioniranju formi molimo pogledajte link [Funkcionalnosti, gumbi i zajednička polja.](/docs/guide/common).  

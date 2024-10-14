@@ -1,5 +1,5 @@
 ---
-title: Generiranje proizvodnih narudžbi
+title: Generiranje proizvodnih naloga
 sidebar_position: 1
 ---
 
@@ -7,7 +7,7 @@ Postupak **Generiranja proizvodnih naloga** omogućuje generiranje proizvodnih n
 
 ### Narudžbe kupaca {#sales-orders}
 
-Na ovoj kartici možete filtrirati redove narudžbi kupaca koje želite analizirati pomoću procedure **Generiranja proizvodnih narudžbi**. 
+Na ovoj kartici možete filtrirati redove narudžbi kupaca koje želite analizirati pomoću procedure **Generiranja proizvodnih naloga**. 
 
 Da bi se prikazale na ovoj kartici, redovi narudžbi moraju zadovoljavati sljedeće **zahtjeve**:
 
@@ -55,7 +55,7 @@ Stupac **Dostupnost** iznosi nula za sve redove u slučaju da je zastavica *Razm
 
 ### Predviđanje {#forecast}
 
-U ovoj kartici mogu se filtrirati redovi *Prodajnih Prognoza* ili *Glavnog Plana* ili  **Generiranja proizvodnih narudžbi**, koristeći filtre za artikl i varijantu.
+U ovoj kartici mogu se filtrirati redovi *Prodajnih Prognoza* ili *Glavnog Plana* ili  **Generiranja proizvodnih naloga**, koristeći filtre za artikl i varijantu.
 
 Redovi *Prodajnih prognoza* koji se mogu prikazati u ovoj kartici moraju ispunjavati sljedeće **uvjete**:
 
@@ -132,7 +132,7 @@ Samo redci za koje postupak smatra da se može stvoriti proizvodna narudžba bit
 Ova kartica prikazuje redove koji su premješteni iz prethodnih kartica i koji se trebaju pretvoriti u proizvodne narudžbe.
 
 Kartica sadrži:  
-- sekciju **Predložena proizvodna narudžba** u kojoj korisnik može postaviti **Vrstu**, **Godinu** i **Broj** proizvodne narudžbe kojoj trebaju biti dodani odabrani redci u istoj kartici **Sažetak**. 
+- sekciju **Predloženi proizvodni nalog** u kojoj korisnik može postaviti **Vrstu**, **Godinu** i **Broj** proizvodne narudžbe kojoj trebaju biti dodani odabrani redci u istoj kartici **Sažetak**. 
 - rezultatnu mrežu gdje će biti prikazani redci artikala koji su premješteni iz drugih kartica.  
 
 *Polja u mreži*:  

@@ -129,7 +129,7 @@ const features = [
                     <li><a href='docs/production/pp-production-in-progress/production-orders/search-production-orders'><Translate>PP - Production in progress</Translate></a></li> 
                     <li><a href='docs/production/pp-production-in-progress/production-orders/search-production-orders'><Translate>Gestione ore produzione</Translate></a></li> 
                     <li><a href='docs/production/pp-production-in-progress/production-orders/search-production-orders'><Translate>Controllo produzione</Translate></a></li> 
-                    <li><a href='docs/production/mes/mes-main-form'><Translate>Fluentis MES</Translate></a></li> 
+                    <li><a href='docs/production/mes/mes-intro'><Translate>Fluentis MES</Translate></a></li> 
                   </ul>
                  ),    
                 },

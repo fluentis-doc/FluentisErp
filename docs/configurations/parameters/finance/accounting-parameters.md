@@ -71,7 +71,7 @@ Quando si crea il nuovo record di parametri il programma chiede se si desiderano
 La gestione del pro-rata può avvenire, in alternativa al presente campo unico per tutti i registri iva, anche in modo specifico per ogni registro iva, permettendo di supportare anche la gestione di più attività ai fini iva con diverse percentuali di pro-rata. Vedere [**Registri iva**](/docs/configurations/tables/finance/vat-books) e [**Tipo attività IVA**](/docs/configurations/tables/finance/vat-activity-type)
 :::
 
-**Tipo contabilizzazione  IVA:** Il campo consente di definire il tipo di contabilizzazione di default delle aliquote IVA sui vari sottoconti del piano dei conti.
+**Tipo contabilizzazione IVA:** Il campo consente di definire il tipo di contabilizzazione di default delle aliquote IVA sui vari sottoconti del piano dei conti.
 
 **Chiusura mensile:** Se attivo modifica il funzionamento della procedura *Chiusura automatica conti* al fine di poterla eseguire mensilmente come richiesto in alcune localizzazioni estere (particolarmente nell'Europa dell'est). **Settaggio sconsigliato per l'Italia**.
 

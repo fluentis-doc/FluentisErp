@@ -1,5 +1,5 @@
 ---
-title: Narudžba za proizvodnju
+title: Proizvodni nalozi
 sidebar_position: 2
 ---
 

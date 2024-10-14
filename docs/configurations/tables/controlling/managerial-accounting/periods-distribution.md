@@ -13,20 +13,35 @@ Per tutto quanto non dettagliato in questo documento sul funzionamento comune de
 
 ---
 
-In questa tabella è possibile codificare, per ogni anno e per ogni *area* riferita ai centri aziendali, diverse logiche di distribuzione dei movimenti contabili tra i periodi oggetto delle chiusure infrannuali.
-
-:::tip Esempio
-Generalmente in un sistema di controllo di gestione si ragiona in termini mensili, generando dunque, solitamente, chiusure contabili mensili da elaborare successivamente con ribaltamenti tramite cost driver ecc... In questa tabella possiamo definire come vengono mensilizzati i dati
+:::tip Nota
+Questa tabella è ad uso esclusivo delle società che hanno impostato il *Controlling*
 :::
 
-Esempio: "Giorni lavorativi" , per una determinata area di analisi si vogliono definire, per l'anno in corso, i giorni lavorativi effettivi di ogni mese. In fase di ripartizione la lettura della logica definita in questa tabella sommerà il totale dei giorni di ogni mese e dividerà il movimento per tale totale giorni e moltiplicherà per il dato del campo **Valore**. In questo modo si ottiene un peso sul totale riferito al singolo mese per il quale si sta ripartendo.
+Nella distribuzione periodi possiamo indicare, area per area e di anno in anno, come suddividere i nostri mesi. I campi disponibili sono i seguenti:
 
-![](/img/it-it/configurations/tables/controlling/managerial-accounting/periods-distribution/image01.png)
+- il ***CODICE***
+- la ***DESCRIZIONE***
+- il flag ***PREDEFINITO***
 
-Ulteriore esempio: la regola degli "Undicesimi" che considera solo undici mesi come operativi ed assegna un peso ad ogni mese, ad es. gennaio 0,75 , febbraio, marzo ecc... 1 , agosto 0,5 ecc....
+:::danger ATTENZIONE
+è obbligatorio aver inserito in questa tabella un record con questo flag, altrimenti l'elaborazione periodi del controlling lo richiederà
+:::
+
+Al di sotto avremo la lista dei record di ogni codice inserito, dove avremo
+- l'[***AREA***](/docs/controlling/controlling-parametrization/controlling-specific-settings/area-types-areas) di riferimento
+- l'***ANNO*** 
+- il ***PERIODO***
+- Il ***VALORE***, cioè il peso del singolo periodo all'interno dell'anno
+
+:::tip Esempi
+Potremmo dividere l’anno in dodicesimi, oppure in undicesimi pesando opportunamente agosto/dicembre e gennaio, piuttosto che assegnare di anno in anno i giorni effettivi di produzione previsti nel singolo nel mese
+:::
+
+La *Distribuzione periodi* viene associata in due punti:
+- Nel [*Piano dei conti*](/docs/erp-home/registers/accounting/analytic-chart-of-accounts): posso dire che il sottoconto X, per il quale si valorizza un range di date competenza, venga ripartito tramite una determinata distribuzione periodi invece che sui giorni esatti del range di date impostato, che è la logica di default quando la distribuzione periodi non è impostata.
+- Nella *Prima nota movimenti fisici*, obbligatoriamente per le *Unità di misura* che sono definite di *Flusso* e non di *Stato*
 
 
-
-
-
-
+:::tip Nota
+Nella maschera è presente un pulsante di duplicazione della distribuzione selezionata, opzione comoda ad inizio anno per preparare la nuova lista valida per ogni nuovo esercizio
+:::

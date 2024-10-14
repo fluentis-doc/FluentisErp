@@ -3,34 +3,38 @@ title: Formule di Calcolo
 sidebar position: 3
 --- 
 
-Le formule di calcolo possono servirci per automatizzare la registrazione extracontabile di alcuni dati del controlling. 
+:::tip Nota
+Questa tabella è ad uso esclusivo delle società che hanno impostato il *Controlling*
+:::
 
-***Campi della Tabella "Formule di calcolo"***
+Nelle Formule di calcolo possiamo definire come creare automaticamente delle registrazioni extracontabili di area a partire da dei valori di origine. In generale, l’idea è cercare di automatizzare, magari approssimandole, alcune registrazioni che in contabilità sarebbero rilevate posticipatamente, o che sarebbe dispendioso inserire su ogni periodo come registrazioni extracontabili di Area manuali.
 
+:::tip Esempio
+Ad esempio, potremmo valorizzare automaticamente i costi dei premi di risultato, che magari rileviamo a fine anno tramite l’applicazione del 3% sul fatturato dei ricambi Italia, attraverso una formula che rileva questa percentuale sul saldo del conto d’interesse valorizzato sul centro di costo dei ricavi di vendita, assegnando questo costo al centro del Commerciale.
 
-![](/img/it-it/controlling/calculation.png)
+Oppure potremmo applicare delle formule sulle quantità rilevate di un’unità di misura, se magari si presuppone che determinati costi siano di un tot. a pezzo
+:::
 
-***DATA INIZIO E FINE VALIDITA’:*** Abbiamo definito questa formula che vale per quel solo range di date 
+Per inserire una nuova *Formula*, dalla maschera di ricerca si premerà sul pulsante *Nuovo* in modo da aprire la maschera di gestione, che prevede i seguenti campi:
+- la ***DATA INIZIO*** e ***DATA FINE*** validità della regola
 
-***CONTO SUL QUALE POGGIA LA REGISTRAZIONE:*** Mi farà una registrazione, ad esempio, su CONTI DI DESTINAZIONE e sul CENTRO DI DESTINAZIONE. 
+- l'[***AREA***](/docs/controlling/controlling-parametrization/controlling-specific-settings/area-types-areas) di applicazione della regola stessa
 
-**ESEMPIO**
+- il ***CONTO DI DESTINAZIONE***, cioè il sottoconto da utilizzare per rilevare il movimento automatico nell'analitica della registrazione extracontabile di area
 
-Invece di andare a leggere l mie provvigioni o scrivere una registrazione manuale, su quelli che sono i costi delle provvigioni del periodo, li derivo da quanto sto registrando come ricavi nel periodo stesso. 
+- il [***CENTRO DI DESTINAZIONE***](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-centers), cioè il centro da utilizzare nella riga stessa
 
-Un modo per ottenere una registrazione automatica sulla base di qualche altro dato che ho registrato. 
+- il [***CENTRO DI ORIGINE UM***](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-centers), opzionale, che serve come centro di filtro dei movimenti fisici quando la formula prevede delle quantità gestite da un'unità di misura
 
+- il ***CENTRO ORIGINE CONTI***(/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-centers), opzionale, che serve come centro di filtro dei valori dei sottoconti inseriti nella formula
 
-***CENTRO ORIGINE CONTI*** Filtra solo i movimenti di questo centro. Lo registra su quel centro ma lo pesca da questo conto.
+Al di sotto avremo due griglie, a sinistra la lista dei conti del piano dei conti, a destra le[* Unità di misura*](/docs/controlling/controlling-parametrization/controlling-specific-settings/measure-units) disponibili.
+Alla base della maschera c'è la sezione con la formula, che può essere gestita trascinando con il mouse le entità (*conti* e/o *UM*) che si vogliono inserire nella formula stessa
 
-***ESEMPIO***
+:::tip Esempio
+Una formula potrebbe essere, ad esempio, "40001-004-Ricavi di Vendita ricambi ITA"*0.03
+:::
 
-MATERIALI PER MANUTENZIONE E RIPARAZIONE BENI DI TERZI
-
-
-E’ una regola che verrà applicata sempre, poiché legata al multi ambiente
-
-***COTNO DI DESTINAZIONE:*** MATERIALI PER MANUTENZIONE E RIPARAZIONE 
-***CENTRO DI DESTINAZIONE:*** FRESATURA-TORNITURA
-
-**Registrazione: Leggendo le ore macchina registrate sempre sulla fresatura e tornitura. Rispetto a quante ore ha registrato quel centro li dico che i costi dei materiali sono TOT % di quanto la macchina sta lavorando.** 
+:::tip Nota
+Nella maschera di ricerca è presente un pulsante di duplicazione della formula selezionata.
+:::

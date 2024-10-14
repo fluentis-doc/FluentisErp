@@ -11,15 +11,15 @@ Quando poi utilizziamo gli indici per i cost driver di ribaltamento, prenderemo 
 
 In particolare abbiamo:
 
-- l'***Area*** di riferimento dell'indice
+- l'[***Area***](/docs/controlling/controlling-parametrization/controlling-specific-settings/area-types-areas) di riferimento dell'indice
 
-- il ***Centro aziendale***
+- il [***Centro aziendale***](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-centers)
 
 - l'***Anno*** e il ***Periodo*** di riferimento
 
 - il ***Valore fisso*** e il ***Valore variabile***: sono le due parti del totale costi attribuiti al centro tramite il *Modello di riclassificazione* associato al centro stesso
 
-- le quattro unità di misura possibili per ogni centro: l'***Unità di misura fissa***, la ***Seconda unità di misura fissa***, l'***Unità di misura variabile*** e la ***Seconda unità di misura variabile***. I campi saranno valorizzati sugli indici fisici e a seconda delle impostazioni del singolo centro
+- le quattro [*unità di misura*](/docs/controlling/controlling-parametrization/controlling-specific-settings/measure-units) possibili per ogni centro: l'***Unità di misura fissa***, la ***Seconda unità di misura fissa***, l'***Unità di misura variabile*** e la ***Seconda unità di misura variabile***. I campi saranno valorizzati sugli indici fisici e a seconda delle impostazioni del singolo centro
 
 - la ***Prima unità di misura quantità fissa*** Il campo sarà valorizzato sugli indici fisici e a seconda delle impostazioni del singolo centro, è il denominatore per l'indice fisso, è il denominatore per l'indice fisso per la prima unità di misura
 

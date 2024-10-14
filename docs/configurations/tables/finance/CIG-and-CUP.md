@@ -7,7 +7,7 @@ Le due tabelle, sostanzialmente identiche, permettono di inserire i codici ident
 
 Si ricorda che sono presenti due flag nelle anagrafiche clienti al fine di rendere visibili i campi nei documenti.
 
-**Codice:** accoglie il codice di gara o il codice progetto
+**Codice:** accoglie il codice di gara o il codice progetto, che sarà poi riportato nei file SDI ad esempio
 
 **Data / Data richiesta:** accoglie la data di inizio validità del codice
 

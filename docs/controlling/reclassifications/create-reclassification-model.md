@@ -117,7 +117,7 @@ Nella griglia dei centri di costo si vanno a caricare i centri di costo che valo
 
 - **Conto-Sottoconto-Descrizione**: serve per indicare con quale conto (o conto-sottoconto) contabile filtrare i dati dell'analitica o della gestionale
 
-- **Centro di costo**: il campo è facoltativo nei modelli di tipo legato al Controlling, mentre è obbligatorio negli altri casi. E' il centro da utilizzare per filtrare i dati dell'analitica o della gestionale.
+- [**Centro di costo**](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-centers): il campo è facoltativo nei modelli di tipo legato al Controlling, mentre è obbligatorio negli altri casi. E' il centro da utilizzare per filtrare i dati dell'analitica o della gestionale.
 
 - **Inversione colonne**: significa che, sulla riga selezionata, il segno del saldo sarà invertito
 

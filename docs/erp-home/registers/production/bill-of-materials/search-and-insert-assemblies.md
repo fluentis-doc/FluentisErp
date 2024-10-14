@@ -3,7 +3,7 @@ title: Assiemi
 sidebar_position: 2
 ---
 
-**Fluentis academy**: [Distinta base](/docs/erp-home/registers/production/bill-of-materials/academy-bom) 
+**Introduzione**: [Distinta base](/docs/erp-home/registers/production/bill-of-materials/bom-intro) 
 
 Consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
 

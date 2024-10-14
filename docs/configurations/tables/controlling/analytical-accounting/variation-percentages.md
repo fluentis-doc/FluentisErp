@@ -12,16 +12,15 @@ Per tutto quanto non dettagliato in questo documento sul funzionamento comune de
 :::
 
 ---
-In questa tabella è possibile codificare delle categorie di variazioni percentuali da utilizzare in diverse procedure del controlling, come ad esempio l'elaborazione del budget previsionale a partire dal consuntivo dell'anno precedente, applicando degli incrementi o decrementi.
 
-![](/img/it-it/configurations/tables/controlling/analytical-accounting/variation-percentages/variation-percentages.png)
 
-ESEMPIO: per i costi fissi di anno in anno stabilisco incrementi del 5% , per i semi-variabili l’ incremento sarà del 3% per la quota variabile e del 3% per la quota fissa ed infine per i costi variabili l ’incremento sarà del 10%. 
-
-:::note NOTA: Le modalità di codifica potrebbero essere differenti rispetto a quanto si vede nell'immagine. Ad esempio potrebbe essere definita una percentuale (rispettivamente per la quota fissa e la quota variabile) per i servizi, una per le materie prime.... una per i ricavi caratteristici ecc...
+:::tip Nota
+Questa tabella è ad uso esclusivo delle società che hanno impostato il *Controlling*
 :::
 
 
+In questa tabella è possibile codificare delle categorie di variazioni percentuali da utilizzare in diverse procedure del controlling, come ad esempio l'elaborazione del budget previsionale a partire dal consuntivo dell'anno precedente, applicando degli incrementi o decrementi, in particolare quando si procede ad una duplica dello ***Storico registrazioni gestionali***. 
+La tabella prevede semplicemente i seguenti campi
 
 
 Nel ** [piano dei conti ](/docs/erp-home/registers/accounting/analytic-chart-of-accounts) **si attribuirà, per ogni sottoconto, la relativa voce per la variazione automatica.
@@ -29,17 +28,17 @@ e quando verrà utilizzata la procedura che copia da un area di analisi all’ a
 
 :::note Campi tabella
 
-**Codice / Descrizione**: liberamente assegnabili e necessari per per distinguere e richiamare le varie logiche
-
-**Variabili**: percentuale di incremento (o decremento se con segno negativo) da assegnare alla quota variabile del costo o ricavo;
-
-**Fisso**: percentuale di incremento (o decremento se con segno negativo) da assegnare alla quota fissa del costo o ricavo.
+- ***CODICE***
+- ***DESCRIZIONE***
+- ***QUOTA FISSA*** è la percentuale di variazione, positiva o negativa da applicare alla quota fissa
+- ***QUOTA VARIABILE*** è la percentuale di variazione, positiva o negativa da applicare alla quota variabile
 
 :::
 
 ---
 
 :::tip Approfondimento
+ESEMPIO: per i costi fissi di anno in anno stabilisco incrementi del 5% , per i semi-variabili l’ incremento sarà del 3% per la quota variabile e del 3% per la quota fissa ed infine per i costi variabili l ’incremento sarà del 10%. 
 
 La ripartizione tra costi variabili e fissi nel controllo di gestione deriva dalla metodologia di "splittare" tutti i costi e tutti i ricavi registrati in contabilità generale in quota fissa e quota variabile. Viene poi portato nella contabilità *gestionale* "mensilizzato" e suddiviso in quota fissa ed in quota variabile.
 :::

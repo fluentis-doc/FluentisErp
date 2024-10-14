@@ -1,5 +1,5 @@
 ---
-title: Impostazioni
+title: Introduzione
 sidebar_position: 1
 ---
 

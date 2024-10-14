@@ -25,7 +25,7 @@ Se il flag non è impostato sarà invece utilizzato il *cambio presente in testa
 
 **Comp. IVA = data documento**: il flag impone che la competenza iva dei movimenti sia uguale alla data fattura. Nel caso in cui si voglia sfruttare la possibilità di fatturare fino al 15 del mese successivo alla data spedizione (fatturazione differita), il flag va tolto per far si che la competenza iva sia ripresa dalla data inizio trasposto nel documento d'origine, così come previsto dalla normativa IVA;
 
-**Contabilizzazione industriale**: il campo va settato per gestire contestualmente anche la contabilizzazione industriale. Il campo della **Causale contabile** che si abilita non è obbligatorio, in quanto associato al tipo fattura è codificato anche la causale industriale da utilizzare.
+**Utilizzare la filiale aziendale per assegnare la divisione**: flag connesso al campo *Filiale aziendale di riferimento* presente nelle anagrafiche clienti e fornitori, dove è possibile associare il cliente/fornitore ad una filiale e, tramite questa, ad una *divisione* aziendale differente da quella in uso. Il presente flag fa scattare la verifica se nel cliente c’è una filiale di riferimento e, da questo link, verifica se c’è una divisione associata alla filiale in questione. In caso positivo registra la fattura attribuendola a quella divisione (anche se la fattura è attribuita alla divisione X la registrazione contabile sarà nella Y). Questa opzione agevola la redazione di bilanci per divisione in situazione dove la fatturazione avviene separatamente ma i risultati dal punto di vista di bilancio si vogliono aggregare presso una divisione principale.
 
 *Pulsanti specifici*: 
 > **Ricerca fattura**: per cercare le fatture; vengono proposte tutte le fatture stampate e non contabilizzate.  
@@ -72,3 +72,55 @@ I dati nelle griglie in basso, **Fatture** e **Registrazione contabile** corrisp
 > **Anteprima contabilizzazione**: per visualizzare l'anteprima di stampa della contabilizzazione.  
 > **Ripristina contabilizzazione**: con questo pulsante sarà cancellata tutta la contabilizzazione effettuata, con tutte le fatture associate.  
 > **Ripristina fattura**: il pulsante esegue il ripristino della singola fattura selezionata.  
+
+### Messaggi di errore
+
+Questi errori possono derivare, in alcuni casi da una errata gestione dei dati da parte dell’utente, ovvero mancano delle informazioni essenziali, in altri casi possono derivare da configurazioni o settaggi errati a livello di parametri o dati di base.
+
+Gli errori di configurazione o mancanze nei dati di base si riferiscono perlopiù ad ambienti nei quali non è stata lanciata la procedura di Fast Start.
+
+:::note[Messaggio]
+La fattura con numero ... tipo ... anno ... di AAA S.p.a. non può essere contabilizzata perche **non esiste il conto di contropartita**.
+:::
+
+La contropartita contabile, nel contesto di una fattura di vendita o di acquisto, deve intendersi come l’indicazione del conto destinato ad accogliere il ricavo o il costo. 
+Quindi, più in generale, la registrazione contabile di una fattura poggia normalmente su tre elementi essenziali che possiamo ricontrollare aprendo la [**causale contabile**](/docs/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates/attributes-detail) con la quale stiamo tentando di contabilizzare questa fattura.
+Per verificare prima di tutto quale sia questa causale, passiamo dalla tabella dei [**tipi fattura**](/docs/configurations/tables/sales/invoices-type) dove è definito il collegamento.
+Ecco dunque i tre elementi, il cliente o fornitore, l’iva ed il costo o ricavo, se manca uno di questi elementi la registrazione non sta in piedi.
+
+Dentro la causale contabile, creata o modificata manualmente rispetto allo standard generato dal Fast Start potrebbe trarci in inganno se in apparenza sembra che il conto di ricavo sia stato definito come un conto fisso essendoci il codice di conto e sottoconto e pertanto dovrebbe usarlo e limitarsi a sostituire il conto generico del cliente con il sottoconto di dettaglio che prende dalla testata della fattura.
+
+In realtà essendo impostato il criterio di lettura dell’imponibile sottoconto, il programma cerca in ogni caso il dato per la sostituzione, e lo cerca in primo luogo nella fattura, in secondo luogo nell’anagrafica cliente.
+
+**Dunque per risolvere occorre definire nella fattura il dato del fatturato vendite, dato che potrebbe essere associato direttamente all’anagrafica articolo codificato.
+In alternativa possiamo inserire in anagrafica cliente il conto di default. In questo modo la contabilizzazione automatica può funzionare.**
+
+Nota: anche il criterio di lettura *Totale imponibile* nella causale contabile non può funzionare perché tenterebbe di leggere comunque la griglia iva della registrazione dove manca un dato obbligatorio che è sempre il conto di contropartita. Dunque non è prevista una modalità di contabilizzazione con sottoconto fisso, occorre gestire sempre il fatturato vendite e acquisto o le anagrafiche cliente fornitore.
+
+:::note[Messaggio]
+La fattura con numero ... tipo ... anno ... di AAA S.p.a. non può essere contabilizzata perche **la registrazione è bilanciata**.
+:::
+
+Al di la del significato più ovvio del messaggio, ovvero quello che impedisce, in relazione ai settaggi dei parametri della causale contabile, di salvare una registrazione dove il totale dare non quadra con il totale avere, un possibile motivo di questa situazione potrebbe essere legato ancora ad un errato settaggio della causale stessa, ad esempio la mancanza nello schema contabile della riga relativa all'iva e dunque in presenza di una fattura che contiene iva e dello scorporo eseguito dalla prima parte della procedura, non riuscirebbe comunque a generare una scrittura contabile (nella parte relativa al libro giornale) che possa bilanciare, generando l'errore.
+
+Nota: il blocco è sottoposto a parametro ma si sconsiglia vivamente di disattivarlo per accettare scritture sbilanciate, se non in casi del tutto eccezionali, oppure temporaneamente per verificare volutamente il risultato (sbagliato) della contabilizzazione.
+
+:::note[Messaggio]
+La fattura con numero ... tipo ... anno ... di AAA S.p.a. non può essere contabilizzata perche **nel libro giornale ci sono 1 righe con un conto senza un sottoconto**.
+:::
+
+Questo messaggio (meno immediato nell'interpretazione) fa riferimento al fatto che il software non può salvare registrazioni dve non sia definito il sottoconto di dettaglio.
+
+Tra i vari motivi per i quali questo potrebbe accedere, ovviamente legati al fatto che lo schema della causale contabile definisce i mastri (senza sottoconto di dettaglio) anche per quanto riguarda i clienti e fornitori, potrebbe trattarsi del fatto che all'interno dei [**parametri di contabilità**](/docs/configurations/parameters/finance/accounting-parameters) manca l'abbinamento tra il tipo conto (magari una nuova tipologia aggiunta) ed il mastro di riferimento. Tale parametro mancante impedisce l'esecuzione dell'automatismo che completa la scrittura contabile.
+
+:::note[Messaggio]
+La fattura con numero ... tipo ... anno ... di AAA S.p.a. non può essere contabilizzata perche **il valore delle partite non corrisponde al movimento contabile**.
+:::
+
+Questo messaggio solitamente corrisponde alla mancanza dell'indicazione delle condizioni di pagamento in fattura, pertanto la partita non può aprirsi e chiaramente si cre la differenza e si viene bloccati dal software.
+
+La scelta di essere bloccati nella contabilizzazione è settabile in un parametro della causale contabile.
+
+---
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/NgroQvVOgD8" title="YouTube video player" frameborder="0" allowfullscreen= "true"></iframe>

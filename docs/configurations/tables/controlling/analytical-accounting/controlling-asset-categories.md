@@ -13,48 +13,45 @@ Per tutto quanto non dettagliato in questo documento sul funzionamento comune de
 
 ---
 
-Questa tabella serve per definire una serie di logiche standard di GESTIONE DEI CESPITI. 
+:::tip Nota
+Questa tabella è dedicata alle società che hanno attivato la gestione del *Controlling*, ma non è obbligatoria nel caso in cui si vogliano applicare logiche contabili di valorizzazione degli ammortamenti nel controllo di gestione
+:::
 
-In particolare CONTI DI COSTO e di FONDO specifici per il controllo di gestione. 
+In questa tabella andiamo ad identificare le varie tipoligie di calcolo che vogliamo utilizzare nelle elaborazioni degli ammortamenti tecnici per il controlling: le logiche del controllo di gestione, relativamente ai cespiti, si discostano da quelle contabili al fine di utilizzare delle logiche legate, ad esempio, alle quantità prodotte da un determinato macchinario, piuttosto che ad un valore di riacquisto. Facendo questo si evitano le distorsioni legate, ad esempio, ai criteri di ammortamento contabili che sono fortemente influenzati dalle logiche fiscali. 
 
-Le logiche del controllo di gestione, relativamente ai cespiti, si discostano da quelle contabili al fine di utilizzare delle logiche legate, ad esempio, alle quantità prodotte da un determinato macchinario, piuttosto che ad un valore di riacquisto.
-Facendo questo si evitano le distorsioni legate, ad esempio, ai criteri di ammortamento contabili che sono fortemente influenzati dalle logiche fiscali. 
+Campi tabella
 
-I dati contabili e dunque i movimenti sui sottoconti contabili degli ammortamenti, andranno successivamente conguagliati, ovvero riconciliati, con i calcoli effettuati nel modulo controlling.
+- ***CODICE*** della categoria
+
+- ***DESCRIZIONE*** della categoria
+
+- ***SOTTOCONTO DI COSTO*** e ***SOTTOCONTO DEL FONDO*** da utilizzare: potrebbero essere gli stessi sottoconti associati alle categorie cespiti contabili, al fine di operare a fine anno i conguagli tra le due logiche di calcolo, piuttosto che sottoconti specifici del controlling che non sono utilizzati in contabilità.
+
+:::tip nota
+Nel caso in cui si vogliano utilizzare nel controlling, in determinati casi, degli specifici sottoconti separati da quelli di contabilità generale, si consiglia di definire un *Tipo conto* specifico con il flag *Controlling* impostato, in quanto questi sottoconti non potranno essere utilizzati neanche erroneamente nelle registrazioni di contabilità generale
+:::
 
 
-:::note Campi tabella
+- ***BASE DI CALCOLO*** possiamo scegliere tra
+    - *Valore patrimoniale*, cioè lo stesso di contabilità
+    - *Valore oggettivo*, dato extracontabile
+    - *Valore di riacquisto*, campo specifico per il controlling
 
-**CODICE / DESCRIZIONE:** Necessari per per distinguere e richiamare le varie logiche che si stanno codificando
+- ***TIPO DI CALCOLO*** può essere di 5 tipologie differenti: 
+    - *Percentuale*: secondo la percentuale per il controlling impostata nel singolo cespite
+    - *Percentuale perpetua*: come la precedente ma senza verifiche sul residuo da ammortizzare
+    - *Quantità*: per i cespiti che hanno una vita utile legata ad una quantità teorica prodotta (es. uno stampo che può fare tot battute)
+    - *Quantità perpetua*: come la precedente, ma senza verificare se la quantità totale teorica è stata raggiunta
+    - *Totale nell’anno*: per ammortizzare il cespite totalmente nell’anno di acquisto.
 
-**Conto / Sottoconto / Descrizione COSTO:** Widget per inserire il conto contabile desitnato ad accogliere la quota di ammortamento calcolata in modo specifico per il controlling rispetto alla quota ordinaria calcolata per la contabilità
+- ***PERCENTUALE*** possiamo impostare la percentuale di questa categoria, che sarà riportato sul singolo cespite, oppure lasciare in bianco il campo per inserirla di volta in volta all’interno del cespite
 
-**Conto / Sottoconto / Descrizione FONDO:** Widget per inserire il conto contabile desitnato ad accogliere l'incremento del fondo ammortamento calcolato in modo specifico per il controlling rispetto alla  la contabilità generale
+- ***USA ATTUALIZZAZIONE PERCENTUALE*** Il flag, riportato anche nella corrispondente tab *Ammortamento per controlling* presente nella scheda cespite, se attivato, fa si che il valore del cespite venga incrementato di anno in anno in base al valore impostato nel campo *Fattore di attualizzazione* nei ** [*Parametri di contabilità* ](/docs/configurations/parameters/finance/accounting-parameters) **.
 
-**BASE DI CALCOLO:** Valore sul quale sarà calcolato l'ammortamento per il controlling
+- ***RICREARE I VALORI DI CONTROLLO*** serve tipicamente nel caso in cui non si sia certi dei criteri extracontabili da applicare al calcolo degli ammmortamenti tecnici. Dato che l'elaborazione degli ammortamenti partirà da un anno YYYY, ***FluentisERP*** dovrà calcolare innanzi tutto i residui a fine anno YYYY-1. Nel caso in cui si cambino percentuali o logiche, quindi, può essere necessario resettare questi dati di partenza per ripartire da capo nelle elaborazioni.
 
-> VALORE PATRIMONIALE: il valore di bilancio che sarà la base imponibile dell’ ammortamento 
-
-> VALORE OGGETTIVO: un dato extra-contabile del cespite
-
-> VALORE DI RIACQUISTO: dato specifico del controlling basato sul costo di riacquisto del bene.
-
-**TIPO DI CALCOLO:** Metodo di calcolo che sarà usato nel calcolo ammortamento per il controlling
-
-> PERCENTUALE: sempre un residuo fino a fine vita utile
-
-> PERCENTUALE PERPETUA: finché utilizzo quel cespite, continuo ad ammortizzarlo.
-
-> QUANTITA’: quantità totale che il cespite può produrre nella sua vita utile
-
-> QUANTITA’ PERPETUA: Se continuo a registrare quantità prodotte su quel centro aziendale/cespite continuerò ad ammortizzare ed a assegnare i costi rispetto alla quantità che produco. 
-
-**PERCENTUALE:** Aliquota percentuale per il calcolo della quota di ammortamento (specifica per il controlling)
-
-**USA ATTUALIZZAZIONE PERCENTUALE:** Il flag, riportato anche nella corrispondente tab *Ammortamento per controlling* presente nella scheda cespite, se attivato, fa si che il valore del cespite venga incrementato di anno in anno in base al valore impostato nel campo *Fattore di attualizzazione* nei ** [*Parametri di contabilità* ](/docs/configurations/parameters/finance/accounting-parameters) **. Questa impostazione ha effetto unicamente ai fini dell'ammortamento calcolato in mdo specifico all'interno del modulo Controlling.
-
-**RICREARE I VALORI DI CONTROLLO:** Permette, se attivo, di ricalcolare lo storico dei dati del controlling a seguito del cambiamento di qualche logica. (Ad esempio se ho cambiato in corsa qualche percentuale o caratteristica di quella categoria). 
-
+:::danger ATTENZIONE
+Attenzione alle modifiche apportate a queste categorie: se ad esempio impostiamo un flag e salviamo la riga per confermare, ***FluentisERP*** ci chiederà se vogliamo aggiornare i cespiti di questa categoria. Dobbiamo fare attenzione che se confermiamo l’operazione e siamo in una categoria con calcolo percentuale ma *senza la percentuale impostata*, il sistema andrà a resettare anche le percentuali nei cespiti
 :::
 
 ---

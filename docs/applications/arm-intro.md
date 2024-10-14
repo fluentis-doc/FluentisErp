@@ -9,4 +9,4 @@ Definisce i menù applicativi standard e personalizzati per ruoli/utenti. Stabil
 
 Per quanto concerne lo sviluppo di applicazioni, ARM è lo strumento che permette la consultazione, gestione e creazione degli oggetti business utilizzabili e utilizzati dalle applicazioni.
 
-Per più dettagli leggere anche la documentazione dell'applicazione [ARM](https://docs.fluentis.com/Arm/).
+Per dettagli, consulta la *documentazione completa dell'applicazione ARM* disponibile [**qui**](https://docs.fluentis.com/Arm/).

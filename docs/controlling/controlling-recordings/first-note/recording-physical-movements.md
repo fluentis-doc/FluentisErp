@@ -8,9 +8,9 @@ Per alcune unità di misura, come ad esempio i metri quadri occupati dai vari ce
 
 I campi disponibili nella griglia superiore sono i seguenti:
 
-- l'***Area*** di riferimento del dato
+- l'[***Area***](/docs/controlling/controlling-parametrization/controlling-specific-settings/area-types-areas) di riferimento del dato
 
-- l'***Unità di misura***
+- l'[***Unità di misura***](/docs/controlling/controlling-parametrization/controlling-specific-settings/measure-units)
 
 - la ***Distribuzione periodi*** da utilizzare, che è un campo obbligatorio per le Unità di misura di *Flusso*. Si tratta di indicare a ***FluentisERP*** come suddividere nei singoli periodi il dato inserito per un range di questi
 
@@ -23,15 +23,15 @@ I campi disponibili nella griglia superiore sono i seguenti:
 - il campo ***Stato***, non editabile, che indica se la riga è stata caricata manualmente o che tipo di origine ha
 
 Nella griglia sottostante andremo poi ad inserire i dettagli delle quantità, in particolare valorizzando:
-- il ***Centro di origine*** del movimento
+- il [***Centro di origine***](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-centers) del movimento
 
 - il ***Progetto destinazione***, se sono quantità dirette su un progetto
 
-- il ***Centro destinazione***, cioè il centro per il quale il *Centro di origine* precedente ha lavorato per queste quantità
+- il [***Centro destinazione***](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-centers), cioè il centro per il quale il *Centro di origine* precedente ha lavorato per queste quantità
 
 :::tip Esempio
 Quando una persona delL'ufficio tecnico, ad esempio, prepara i dettagli tecnici di un preventivo ad uso del commerciale, avremo il centro dell'Ufficio tecnico come *Centro di origine* e il centro Commerciale come *Centro destinazione*.
-I ***Cost driver*** con ***Tipo distribuzione*** 10-Reversione su produzione a tariffa standard, 11-Reversione diretta a tariffa standard, 12-Reversione su produzione a tariffa calcolata fanno riferimento alle quantità dei centri di origine e/o destinazione
+I [***Cost driver***](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-drivers) con ***Tipo distribuzione*** 10-Reversione su produzione a tariffa standard, 11-Reversione diretta a tariffa standard, 12-Reversione su produzione a tariffa calcolata fanno riferimento alle quantità dei centri di origine e/o destinazione
 :::
 
 - la ***Quantità*** valida per la riga

@@ -28,7 +28,7 @@ I campi della form sono:
 
 **Tipi partite**: la scelta è tra partite nette e partite lorde. La distinzione è relativa alla creazione delle scadenze al netto o al lordo di tutti i tributi a carico del percipiente: l'impostazione standard prevede le partite nette, al fine d'avere uno scadenziario con l'effettivo importo da pagare al professionista, nel qual caso la causale contabile di riferimento non dovrà avere il blocco alla registrazione di movimenti sbilanciati con le partite.
 
-**Tipo ritenuta**: prevede l'opzione a titolo d'acconto o a titolo d'imposta: la distinzione non ha attualmente alcuna rilevanza sull'operatività del modulo.
+**Tipo ritenuta**: prevede l'opzione a titolo d'acconto o a titolo d'imposta: la distinzione non ha attualmente alcuna rilevanza sull'operatività del modulo, ma è rilevante a livello di CU (Certificazione unica) per valorizzare i due campi *Ritenuta acconto* o *Ritenuta imposta*.
 
 **Codice pagamento**: è il codice del pagamento della ritenuta. Questo dato è ripreso nella procedura di elaborazione della CU (certificazione unica) e per la sua gestione si consiglia di riferirsi alle relative istruzioni ministeriali scaricabili dal sito dell'Agenzia delle Entrate. 
 

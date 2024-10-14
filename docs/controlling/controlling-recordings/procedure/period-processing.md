@@ -7,12 +7,12 @@ La procedura di ***Elaborazione periodi*** è quella principale nelle elaborazio
 
 ## ELABORAZIONE MOVIMENTI FISICI
 La prima procedura non fa altro che leggere le ***Registrazioni movimenti fisici*** per creare la base dati dello ***Storico movimenti fisici***, andando a leggere le quantità delle unità di misura di stato (come ad esempio i metri quadri degli uffici) per replicarle nei vari periodi piuttosto che prendendo quelle di flusso per suddividerle secondo i criteri dei periodi di distribuzione collegati. Dovremo impostare solo
-- l'***Area***
+- l'[***Area***](/docs/controlling/controlling-parametrization/controlling-specific-settings/area-types-areas)
 - l'***Anno***
 
 ## STORICO AMMORTAMENTI
 Da questa sezione si effettua l’elaborazione degli ammortamenti del controlling. Andremo a impostare 
-- l’***Area*** alla quale assegnare i valori
+- l’[***Area***](/docs/controlling/controlling-parametrization/controlling-specific-settings/area-types-areas) alla quale assegnare i valori
 - l’***Anno*** da elaborare-
 - il campo ***Fino a periodo***, cioè il periodo finale dell’anno da elaborare, che tipicamente corrisponderà con il periodo finale del nostro consuntivo elaborato nella chiusura infrannuale
 - infine abbiamo l’***Anno iniziale per ricalcolo storico***. Questo campo serve nel caso in cui si siano modificate delle impostazioni del controlling nei cespiti già elaborati
@@ -26,7 +26,7 @@ Una volta completata l’elaborazione, ***FluentisERP*** avrà valorizzato i dat
 
 ## ELABORAZIONE DATI CONTABILI
 E' l’elaborazione che legge il consuntivo della ***Chiusura infrannuale*** che abbiamo preparato per andare a mensilizzare i dati e poi applicare i vari driver nell’ordine di ciclo. I parametri da inserire sono i soliti
-- l’***Area*** di riferimento
+- l’[***Area***](/docs/controlling/controlling-parametrization/controlling-specific-settings/area-types-areas) di riferimento
 - la ***Chiusura infrannuale*** da utilizzare
 - gli eventuali ***Tempi di bilanciamento*** se si vogliono creare i conguagli sui conti da non utilizzare nel controlling
 - la ***Data*** 
@@ -48,7 +48,7 @@ Nel corso di queste elaborazioni, ***FluentisERP*** andrà anche a preparare una
 ## ELABORAZIONE CONSUNTIVO DI PROGETTO
 Questa procedura leggerà lo storico delle registrazioni elaborate nella procedura precedente che sono collegate a progetti, leggerà i dati da produzione (cioè lavorazioni interne ed esterne), in sostanza tutti i costi e ricavi diretti di progetto, per poi elaborare i driver dei tipi distribuzione da 13 a 18. Si vedano le spiegazioni disponibili nei ***Cost driver***. I campi da impostare sono:
 
-- l'***Area*** da elaborare
+- l'[***Area***](/docs/controlling/controlling-parametrization/controlling-specific-settings/area-types-areas) da elaborare
 - il range ***Da data*** e ***A data***
 - un ***Codice*** e una ***Descrizione*** di questa elaborazione
 - una ***Data*** da assegnare alle registrazioni create

@@ -47,11 +47,17 @@ Il campo si compila tramite una combo box (**Banca**) collegata alla tabella [*B
 
 Se la riga presente nella tabella Banca d'appoggio è completa di IBAN e/o SWIFT, oltre che di ABI e CAB, richiamando tale riga tramite la combobox i dati saranno riportati nella griglia in anagrafica, diversamente, saranno riportati solo ABI e CAB, ma sarà sempre possibile aggiungere i dati mancanti direttamente nella griglia. Ciò è consigliabile per le banche di controparte al fine di evitare di codificare nella tabella Banca d'appoggio troppe righe utilizzate solo per un unico cliente o fornitore. E' preferibile indicare solo i dati dello sportello bancario (ABI e CAB) presso il quale potrebbero avere il conto corrente diversi clienti o fornitori.
 
-L'inserimento di una banca può essere eseguita anche attraverso un doppio click nei campi abi/cab per aprire l'help di ricerca tra le agenzie bancarie nazionali, dalle quali selezionare quella del caso e creare il codice nell'anagrafica da completare con i dati di conto corrente, cin, iban, swift.
+L'inserimento di una banca può essere eseguita anche attraverso un doppio click nei campi abi/cab per aprire l'help di ricerca tra le agenzie bancarie nazionali, dalle quali selezionare quella del caso e creare il codice nell'anagrafica da completare con i dati di conto corrente, cin, iban, swift. Al salvataggio di un Iban, **Fluentis** eseguirà i controlli sintattici sulla sua struttura, indicando eventuali errori sul numero di caratteri o sul carattere di controllo.
 
 **Descrizione Banca**: campo collegato al precedente campo.
 
 **Codice Banca**: campo NON utilizzato in Italia. Per localizzazioni estere può accogliere un codice bancario alternativo rispetto al sistema ABI CAB.
+
+**Configurazione ricerche**: con questo campo è possibile legare la riga ad una logica di attribuzione a livello di Ordine cliente, tramite un extra-data legato al tipo Ordine.
+
+:::tip nota
+Con questa impostazione, in sostanza, possiamo impostare che per gli ordini di tipo X il cliente ci pagherà con Riba a 60GG, mentre per gli ordini di tipo Y ci pagherà con Bonifico a 30GG
+:::
 
 ### Banca d'appoggio
 

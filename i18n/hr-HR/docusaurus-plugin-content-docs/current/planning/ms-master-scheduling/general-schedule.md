@@ -1,151 +1,151 @@
 ---
-title: Pianificazione generale
+title: Generalno planiranje
 sidebar_position: 1
 ---
 
-Rappresenta l’algoritmo di Master Scheduling, ovvero lo schedulatore di produzione che si occupa di interessare le commesse selezionate e analizzarne la *fattibilità produttiva* in funzione della sua composizione strutturale. 
-Questo tipo di pianificazione, eseguibile con logiche di analisi *al più presto* o *al più tardi*, dà la possibilità di verificare la necessità di ulteriore capacità produttiva, evidenziando la sovra-allocazione dei centri di lavoro critici, permettendo all’operatore di decidere se aumentare la capacità interna, acquistare capacità esterna o spostare i carichi nel tempo, eventualmente accettando ritardi di consegna. 
+Predstavlja algoritam Master Schedulinga, odnosno planer proizvodnje koji se bavi odabranim radnim nalozima i analizira njihovu *proizvodnu izvedivost* u funkciji njihove strukturne kompozicije.   
+Ova vrsta planiranja, koja se može izvršiti s logikama analize *što prije* ili *što kasnije*, omogućuje provjeru potrebe za dodatnim proizvodnim kapacitetom, ističući prekomjernu alokaciju kritičnih radnih centara, dopuštajući operateru da odluči hoće li povećati unutarnji kapacitet, kupiti vanjski kapacitet ili premjestiti opterećenja u vremenu, eventualno prihvaćajući kašnjenja u isporuci.  
 
-Da una o più commesse selezionate, in base ai parametri di pianificazione impostati nel tab relativo, la procedura va a creare gli ordini pianificati dei tre tipi previsti: produzione, acquisto e conto lavoro.
+Iz jednog ili više odabranih radnih naloga, na temelju parametara planiranja postavljenih u odgovarajućoj kartici, postupak stvara planirane narudžbe za tri predviđene vrste: proizvodnju, nabavu i vanjsku obradu.   
 
-Una volta creati, gli ordini pianificati si potranno visualizzare nella form [Ricerca ordini pianificati](/docs/planning/ms-master-scheduling/planned-orders/search-planned-orders).
+Nakon što su stvoreni, planirane narudžbe će biti vidljive u kartici [Pretraživanje planiranih narudžbi](/docs/planning/ms-master-scheduling/planned-orders/search-planned-orders).
 
-## Commesse
+## Radni nalozi
 
-*Pulsanti specifici*:
+*Posebni gumbi*:
 
-> **Pianificazione generale**: consente al sistema di schedulare le commesse selezionate;  
-> **Apri ricerca ordini pianificati**: questo pulsante consente di aprire la schermata di  [Ricerca ordini pianificati](/docs/planning/ms-master-scheduling/planned-orders/search-planned-orders); nel caso in cui, prima di premere questo pulsante, venga selezionata una riga di commessa la form degli ordini pianificati si aprirà già pre filtrata su quella commessa;               
-> **Cambia data fine prevista con data suggerita**: questo pulsante consente di modificare la data suggerita, di cui si è parlato in questo articolo;  
-> **Sequenza commesse**: tramite questa funzionalità si può accedere alla sequenza commesse, all'interno della quale si potranno visualizzare le commesse in base alla sequenza che gli è stata attribuita, anche tramite un grafico.
+> **Generalno planiranje**: omogućuje sustavu da rasporedi odabrane narudžbe;  
+> **Otvori pretragu planiranih narudžbi**: ovim gumbom otvarate ekran za [Pretraživanje planiranih narudžbi](/docs/planning/ms-master-scheduling/planned-orders/search-planned-orders); ako ste prije pritiska na ovaj gumb odabrali redak narudžbe, forma planiranih narudžbi će se otvoriti već filtrirana za tu narudžbu;                 
+> **Promijeni procijenjeni datum završetka s predloženim datumom**: ovim gumbom možete promijeniti preporučeni datum, o kojem je bilo riječi u ovom artiklu;    
+> **Redoslijed sekvence**: ovom funkcionalnošću možete pristupiti sekvenci narudžbi, unutar koje možete pregledati narudžbe prema njihovom dodijeljenom redoslijedu, uključujući i grafikon.  
 
 
-*Filtri specifici*:
+*Specifični filtri*:
 
-**Tipo commessa**: tramite questa combo è possibile andare a selezionare il tipo di commessa che si vuole visualizzare, se le commesse monoprodotto, le commesse multiprodotto oppure entrambe;
+**Tip radnog naloga**: putem ovog izbornika možete odabrati vrstu narudžbe koju želite prikazati - jednoproizvodne narudžbe, višeproizvodne narudžbe ili obje;  
 
-**Sito produzione**: si possono andare a visualizzare le commesse in base al sito di produzione in cui vanno prodotte, selezionandolo tramite l'apposita combo;
+**Mjesto proizvodnje**: možete pregledati narudžbe prema lokaciji proizvodnje gdje se proizvode, odabirom putem odgovarajućeg izbornika;  
 
-**In ritardo/Scadute/Lanciate/Esecutive**: questi flag consentono di scegliere se si vogliono visualizzare anche le commesse in ritardo rispetto alla data oppure scadute e solo se nei  [Parametri generali di pianificazione ](/docs/planning/ms-master-scheduling/general-schedule) è settato il flag *pianificazione commesse lanciate o esecutive*, altrimenti i due campi risultano non essere attivi; altrimenti come spiegato nell'articolo sui parametri di pianificazione , nel tab commesse si potranno vedere solamente in stato di non esaminate o di schedulate, ma queste assumono lo stato di lanciate  e/o esecutive se questo flag non viene settato non si potranno visualizzare le commesse all'interno di questo tab.
+**Kasne/Prošle/Pokrenute/Izvršne**: ove ovi oznake omogućuju odabir želite li prikazati narudžbe koje kasne u odnosu na datum, istekle narudžbe te samo ako je u [Parametri opće planiranja](/docs/planning/ms-master-scheduling/general-schedule) postavljena zastavica za *planiranje pokrenutih ili izvršnih narudžbi*. Inače, ova dva polja neće biti aktivna; kako je objašnjeno u članku o planovima, na kartici narudžbi bit će vidljive samo u stanju nepregledane ili planirane, ali ove prelaze u stanje pokrenute i/ili izvršne ako zastavica nije postavljena, neće se moći vidjeti narudžbe unutar ove kartice.
 
-*Campi specifici nella griglia dei Risultati*
+*Specifična polja u tablici Rezultata*
 
-**Data suggerita**: come spiegato nell'articolo relativo ai parametri generali di pianificazione , attivando un particolare flag chiamato  [Controlla doc in ritardo con ATP](/docs/planning/ms-master-scheduling/general-schedule) lo schedulatore andrà ad eseguire un ragionamento tale per cui se anche uno solo degli ordini che vengono schedulati e generati risulta essere in ritardo rispetto alla data prevista il sistema andrà a cancellare tutti gli ordini creati e ripartirà a generali dalla data MS che viene definita sempre nei parametri e che si attiva solo settando il flag controllo doc in ritardo con ATP e andrà a proporre la nuova data per le commesse proprio nel campo *Data suggerita* presente nella griglia di risultato.
+**Predloženi datum**: kao što je objašnjeno u članku o općim parametrima planiranja, aktiviranjem određene zastavice nazvane [Provjeri zakašnjele dokumente s ATP](/docs/planning/ms-master-scheduling/general-schedule) planer će provesti razmatranje prema kojem, ako je barem jedna od planiranih i generiranih narudžbi kasni u odnosu na predviđeni datum, sustav će obrisati sve stvorene narudžbe i ponovno započeti s općim datumom MS, definiranim uvijek u parametrima i koji se aktivira samo postavljanjem zastavice za provjeru zakašnjelih dokumenata s ATP te će predložiti novi datum za narudžbe upravo u polju *Predloženi datum* koje se nalazi u tablici rezultata.
 
-### Procedura Pianificazione generale
+### Procedura Generalnog planiranja
 
-Una volta selezionate le commesse che si vogliono schedulare, si attiverà il pulsante **Pianificazione generale** presente nella ribbon bar della form, e cliccando su quel pulsante il sistema procederà con la pianificazione delle commesse selezionate.
+Nakon što se odaberu narudžbe koje želite rasporediti, aktivirat će se gumb **Generalno planiranje** koji se nalazi na traci s alatkama forme. Klikom na taj gumb, sustav će započeti planiranje odabranih narudžbi.  
 
-Per visualizzare tutte le schedulazioni effettuate e i relativi ordini di produzione creati per ogni commessa, basterà spostarsi nel tab **Storico**.
+Za pregled svih izvršenih rasporeda i pripadajućih proizvodnih naloga za svaku narudžbu, jednostavno se prebacite na karticu **Arhiva**.
 
-:::danger Nota    
-Le commesse create manualmente vengono sempre prodotte indipendentemente dalla disponibilità dell'articolo da produrre.    
+:::danger NAPOMENA     
+Ručno kreirane narudžbe uvijek se proizvode neovisno o dostupnosti proizvodnog artikla.   
 :::   
 
-## Parametri di Pianificazione generale
+## Parametri Općeg planiranja  
 
-:::note Nota
-Prima di procedere con la pianificazione , è importante settare all'interno di questo tab i parametri da seguire per eseguire la pianificazione .
+:::note NAPOMENA
+Prije nego što započnete s planiranjem, važno je postaviti parametre unutar ove kartice kako bi se planiranje moglo provesti.   
 ::: 
 
-**Schedulare fino al**: indicare la data entro la quale il sistema dovrà andare a considerare i documenti inseriti; è possibile inserire un valore di default in mesi nel campo **Numero massimo di mesi per la pianificazione ** presente nei [Parametri MS](/docs/configurations/parameters/production/mps-parameters);       
+**Vremensko planiranje do**: označava datum do kojeg sustav uzima u obzir unesene dokumente; moguće je unijeti zadanu vrijednost u mjesecima u polje **Maksimalni broj mjeseci za planiranje** koje se nalazi u [MS Parametrima](/docs/configurations/parameters/production/mps-parameters);       
 
-**Materiali/Risorse**: attraverso questi flag si decide se schedulare sia i materiali che le risorse, quindi sia la distinta base che il ciclo di lavoro; con il flag *Risorse* attivo verranno considerati, nella pianificazione , anche i centri di lavoro;
+**Materijali/Resursi**: putem ovih oznaka odlučuje se hoće li se planirati i materijali i resursi, odnosno struktura proizvoda i radni ciklus. Aktiviranjem oznake *Resursi* u planiranju će se također uzeti u obzir radni centri;  
 
-**Ordini pianificati di**: attraverso i 3 flag si va ad indicare se si vuole che il sistemare generi tutti e tre i tipi di ordini previsti quindi produzione, acquisto e conto lavoro; in questo modo questi tipi di ordine avranno il legame diretto con la commessa; (per esempio se non viene messo il flag su Acquisto, però viene mantenuto il flag su Esecuzione MRP, il sistema andrà comunque a creare anche gli ordini di acquisto ma questi risulteranno slegati dalla commessa);
+**Planirane narudžbe na**: putem tri zastavice označava se želi li se sustav generirati sve tri vrste predviđenih naloga, odnosno proizvodnju, nabavu i radni nalog; na taj način ove vrste naloga imat će izravnu vezu s narudžbom; (na primjer, ako nije označena zastavica za Nabavu, ali je zadržana zastavica za Izvršavanje MRP-a, sustav će ipak stvoriti naloge za nabavu, ali ti će biti odvojeni od narudžbe);  
 
-**Genera solo ordini pianificati per livelli**: in questo caso si andranno ad indicare i livelli (1-2...) per i quali si vuole vengano generati gli ordini pianificati;
+**Generira samo planirane naloge po razinama**: u ovom slučaju označava se razine (1-2...) za koje želite da se generiraju planirani nalozi;  
 
-**Ordini fornitori o Richieste d'acquisto e ordini cliente**: in questo caso, se vi sono presenti a sistema documenti privi di data di impegno e disponibilità, si può dire al sistema che vada a considerare come data quella che si potrà indicare nel apposto campo, oppure dire al sistema che non vada a considerare questo tipo di documenti;
+**Narudžbe dobavljača ili Zahtjevi za nabavom i Narudžbe kupca**:  u ovom slučaju, ako postoje dokumenti u sustavu bez datuma obveze i dostupnosti, možete sustavu reći da uzme u obzir datum koji možete navesti u odgovarajućem polju ili da ne uzima u obzir ovu vrstu dokumenata;  
 
-**Raggruppamento ordini pianificati per**: nel caso in cui si lavori a commessa, in questo campo va impostata la voce *Nessun raggruppamento*; altrimenti si può andare a selezionare tramite l'apposita combo il tipo di raggruppamento che si intende applicare ma in questo caso il legame tra ordini pianificati e commessa si andrebbe a perdere;
+**Grupiranje planiranih naloga po**: u slučaju rada po narudžbi, u ovom polju treba odabrati opciju *Nema grupiranja*; inače, možete odabrati vrstu grupiranja putem odgovarajuće kombinacije, ali u tom slučaju veza između planiranih naloga i narudžbe bila bi izgubljena;   
 
-**Raggruppamento al più tardi o al più presto**: in questo caso si può scegliere se andare a raggruppare gli ordini al più tardi (quindi in base all'ultimo) o al più presto (che è il più consigliato) e nel campo successivo chiamato **Per un per. in giorni** di si andranno ad indicare il numero di giorni all'interno del quale fare il raggruppamento;
+**Grupiranje najkasnije ili najranije**: u ovom slučaju možete odabrati hoćete li grupirati naloge prema najkasnijem datumu (što znači prema posljednjem datumu) ili najranijem datumu (što se obično preporučuje), a zatim u sljedećem polju nazvanom **Za period, u danima** navesti broj dana unutar kojih se želi izvršiti grupiranje;  
 
-**Considera le quantità in base al lotto economico/Considera i multipli del lotto economico**: settando il primo parametro si va ad indicare che durante la pianificazione si vuole tenere conto anche del lotto economico dell'articolo, e di conseguenza si attiverà il flag che permetterà di decidere se si vuole vengano tenuti in considerazione anche i multipli del lotto economico (entrambi questi dati vengono impostati all'interno dei [Parametri MRP](/docs/configurations/parameters/production/mrp-parameters/search-mrp-parameters) dell'articolo);
+**Razmatraj količine prema ekonomskom lotu/Razmatraj višestruke ekonomskog lota**: postavljanjem prvog parametra označava se da se prilikom planiranja želi uzeti u obzir ekonomski lot artikla, što aktivira opciju za odlučivanje hoće li se također uzeti u obzir višestruki ekonomski lotovi (obe ove postavke se podešavaju unutar [MRP Parametara](/docs/configurations/parameters/production/mrp-parameters/search-mrp-parameters) artikla);
 
-**Compatta/separa ordini**: in questo caso si va a scegliere se si vuole venga tenuto o meno un giorno di lasco tra la fine della produzione dell'ordine di 1 livello e quello del livello successivo;
+**Kompaktiraj/odvoji narudžbe**: u ovom slučaju birate želite li da postoji ili ne dan razmaka između završetka proizvodnje narudžbe na 1. razini i narudžbe na sljedećoj razini;  
 
-**Esecuzione del MRP dopo pianificazione e Articoli a scorta**: in questo si va ad indicare che si vuole che il sistema vada ad analizzare comunque con l'MRP tutti i codici articolo che sono gestiti a fabbisogno per questo prodotto finito. L'MRP gira su tutti gli articoli della Distinta Base di questo articolo, che hanno politica di gestione diversa da quella a commessa, perchè su tutti quegli articoli si può voler verificare la copertura o si può voler generare gli ordini pianificati senza legame con la commessa; in questo caso l'MRP prende inconsiderazione i parametri indicati nel tab *Parametri generali* della **pianificazione **;      
+**Izvršenje MRP-a nakon planiranja i Artikli na zalihama**: ovdje se označava da se želi da sustav analizira sve kodove artikala koji se upravljaju potrebama za ovaj gotovi proizvod. MRP se izvršava na sve artikle u baznoj strukturi ovog artikla koji imaju različite politike upravljanja od onih vezanih uz narudžbu, jer se može željeti provjeriti pokrivenost ili generirati planirane narudžbe bez veze s narudžbom. U ovom slučaju, MRP uzima u obzir parametre navedene u kartici *Opći parametri planiranja*;        
 
-**pianificazione per zona consegna**: settando questo flag il sistema va a vedere quando l'ordine va consegnato in base alla sua zona di consegna e andrà a schedulare l'ordine per prima rispetto al giorno della consegna;
+**Planiranje po zoni isporuke**: postavljanjem ove zastavice, sustav će provjeravati kada narudžba treba biti isporučena prema svojoj zoni isporuke i rasporedit će narudžbu tako da bude gotova prije dana isporuke;  
 
-**Controlla documenti in ritardo con ATP**: se si va ad abilitare questo flag si andrà ad abilitare contemporaneamente anche il campo successivo chiamato **Data inizio MS** e il sistema andrà ad eseguire il seguente ragionamento: se nella pianificazione degli ordini che genero, anche solo uno di questi risulta avere una data inizio inferiore ad oggi, cioè se sono in ritardo con la produzione di questa commessa, abilitando questo flag il sistema va a cancellare tutti gli ordini pianificati che ha generato e riparte dalla data che viene impostata dall'operatore nel campo **Data inizio MS** e riparte a schedulare al più presto da quella data;
+**Provjerite s ATP zakašnjele dokumente**: ako omogućite ovu zastavicu, istovremeno ćete omogućiti i sljedeće polje nazvano **Početak MS-a**, a sustav će izvršiti sljedeći postupak: ako u planiranju generiranih naloga postoji barem jedan koji ima datum početka raniji od današnjeg, odnosno ako kasni u odnosu na proizvodnju ove narudžbe, omogućavanjem ove zastavice sustav će obrisati sve planirane naloge koje je generirao i ponovno započeti od datuma koji operater postavlja u polju **Početak MS-a**, raspoređujući ih što je prije moguće od tog datuma;  
 
-**Rilascio automatico ordini pianificati**: se si decide di abilitare questo parametro, lo schedulatore oltre a generare gli ordini come pianificati, li va anche a rilasciare automaticamente e quindi gli ordini pianificati di produzione diventeranno ordini di produzione, gli ordini di acquisti diventeranno RDA (richieste d'acquisto) e il conto lavoro diventeranno ordini di conto lavoro;
+**Automatsko puštanje planiranih naloga**: ako se odlučite omogućiti ovaj parametar, sustav za planiranje će, osim što generira naloge prema planu, automatski ih puštati u realizaciju. Time će planirani proizvodni nalazi postati stvarni proizvodni nalozi, nalozi za nabavu će postati RDA (zahtjevi za nabavom), a nalozi za rad će postati radni nalozi;  
 
-**pianificazione al più presto o al più tardi:** grazie a questi flag, si può andare a definire se la pianificazione dovrà essere eseguita basandosi sull'ultima data di produzione degli ordini che si devono schedulare, quindi basandosi sull'ultimo ordine da produrre, oppure al più presto basandosi sul primo ordine da produrre;
+**Planiranje najkasnije ili najranije**: ovim zastavicama se određuje da li će se planiranje izvršavati na temelju najkasnijeg datuma proizvodnje naručenih naloga, što znači da će se planirati na temelju posljednjeg naloga koji se mora rasporediti, ili najranije, što znači da će se planiranje temeljiti na prvom nalogu koji se mora rasporediti;  
 
-**pianificazione commesse lanciate o esecutive**: di default quando una commessa viene schedulata la si vede ancora nel tab commesse e da li essendo in stato schedulata è possibile riselezionarla e rischedularla quante vuole si vuole; Quando però si iniziano a rilasciare gli ordini pianificati le commesse cambiano stato da schedulate a lanciare o esecutive e non si vedono più nel tab commesse; per poter continuare a vederle nel tab commesse anche una volta diventate lasciate o esecutive basterà questo flag cosi da poterle vedere e poterle rischedulare esattamente come avviene per le commesse in stato schedulate;
+**Planiranje pokrenutih ili izvršnih naloga**: po zadanim postavkama, kada se narudžba planira, i dalje se može vidjeti u kartici *Narudžbe*, gdje se može ponovno odabrati i ponovno planirati koliko god puta je potrebno. Međutim, kada se počnu puštati planirani nalozi, narudžbe mijenjaju status s planiranih na pokrenute ili izvršne i više ih nije moguće vidjeti u kartici *Narudžbe*. Da bi se i dalje mogle vidjeti u kartici *Narudžbe* nakon što postanu pokrenute ili izvršne, dovoljno je omogućiti ovu zastavicu, čime se omogućuje njihovo daljnje prikazivanje i mogućnost ponovnog planiranja baš kao i narudžbi u statusu planiranih;  
 
-**Versione**: lo schedulatore schedulerà in una versione che viene impostata in questo campo, se nella commessa di produzione non trova una versione definita;
+**Verzija**: planer će rasporediti u verziju koja je postavljena u ovom polju, ako u proizvodnoj narudžbi nije definirana verzija;  
 
-**Considera la disponibilità**: se attivo questo flag indica allo schedulatore che nel processo di pianificazione dovrà tenere conto della disponibilità proveniente dai magazzini indicati nella griglia sottostante che sono quelli precedentemente definiti nei [Parametri MS](/docs/configurations/parameters/production/mps-parameters);  
+**Razmotri raspoloživost**: ako aktivirate ovu opciju, naznačujete planeru da pri procesu planiranja mora uzeti u obzir dostupnost robe iz skladišta navedenih u donjoj tablici, koja su prethodno definirana u [MS Parametrima](/docs/configurations/parameters/production/mps-parameters);  
 
-**Magazzini**: la griglia contenente i magazzini si attiva solamente se viene settato il flag **Considera la disponibilità**; nella griglia compaiono i magazzini che sono stati inseriti nella finestra del [Calcolo Disponibilità](/docs/erp-home/registers/items/calculate-availability);         
+**Skladišta**: mreža skladišta se aktivira samo ako je postavljena zastavica **Razmotri dostupnost**, u mreži se prikazuju skladišta koja su unesena u prozor [Izračun raspoloživosti](/docs/erp-home/registers/items/calculate-availability);         
 
-**Considera disponibilità al data fabbisogno o la minima nel periodo**: questi flag si attivano solamente se è attivo il flag **Considera la disponibilità**; alla data fabbisogno significa che lo schedulatore dovrà considerare la disponibilità nel momento in cui devo produrre l'ordine, mentre considera la data minima nel periodo lo schedulatore andrà a considerare la disponibilità minima nel periodo fino alla data impostata inizialmente nel parametro Schedulare fino al;
+**Uzmite u obzir dostupnost na datum potrebe ili minimalnu u razdoblju**: ove opcije se aktiviraju samo ako je aktivirana opcija **Razmotri raspoloživost**; na datum potrebe znači da će planer morati uzeti u obzir dostupnost u trenutku kada treba proizvesti narudžbu, dok minimalna u razdoblju znači da će planer uzeti u obzir minimalnu dostupnost u razdoblju do datuma postavljenog u parametru Planirati do;
 
-**Considera lotti in stato non disponibile**: anche questo flag si attiva solamente se è attivo il flag **Considera la disponibilità**; se attivo, lo schedulatore dovrà considerare i lotti in stato non disponibile alla data;      
+**Razmotrite lotove s stanjem nije raspoloživo**: ova opcija se također aktivira samo ako je aktivirana opcija **Razmotri raspoloživost**. Ako je aktivirana, planer će morati uzeti u obzir serije u nedostupnom stanju na određeni datum;      
 
-**Considera disponibilità anche per il primo livello**: anche questo flag si attiva solamente se è attivo il flag **Considera la disponibilità**; se attivo, lo schedulatore dovrà considerare la disponibilità anche per il primo livello (quindi per l'articolo presente nella commessa di produzione);
+**Razmotrite raspoloživost i za prvu razinu**: ova opcija se također aktivira samo ako je aktivirana opcija **Razmotri raspoloživost**; ako je aktivirana, planer će morati uzeti u obzir dostupnost i za prvu razinu (odnosno za artikl prisutan u proizvodnom nalogu);
 
-**Considera anche disponibilità negativa**: se attivo, lo schedulatore dovrà considerare anche le disponibilità negative al momento della pianificazione per l'articolo di primo livello; infatti, è possibile abilitare questo flag solo se è attivo il flag **Considera disponibilità anche per il primo livello**;      
+**Razmotrite negativnu raspoloživost**: ako je aktivirano, planer će morati uzeti u obzir i negativnu dostupnost pri planiranju za artikl prve razine. Ovu opciju je moguće omogućiti samo ako je aktivirana opcija **Razmotrite raspoloživost i za prvu razinu**;      
 
-**Considera disponibilità provenienti da**: anche questi flag diventano attivabili solamente se attivato il flag **Considera la disponibilità** e permettono di indicare se si vuole che lo schedulatore consideri le disponibilità provenienti dagli acquisti, dalle vendite, dal magazzino, dal conto lavoro e dalla produzione;
+**Uzmite u obzir dostupnost iz**: ove opcije postaju dostupne samo ako je aktivirana opcija  **Razmotri raspoloživost** i omogućuju vam da naznačite želite li da planer uzme u obzir dostupnost iz nabave, prodaje, skladišta, uslužne proizvodnje i proizvodnje;  
 
-**Reintegro scorta minima dell'articolo e reintegro punto di riordino dell'articolo**: il primo flag si attiva solamente se si va a settare il secondo; questi due flag vanno ad indicare che lo schedulatore dovrà prevedere il reintegro del punto di riordino stabilito per quell'articolo e se si vuole anche il reintegro della scorta minima dell'articolo; entrambi questi dati vengono inseriti nel momento della creazione dell'articolo nel tab [Approvvigionamento](/docs/erp-home/registers/items/create-new-items/item-registry/procurement);
+**Obnavljanje minimalne zalihe artikla i obnavljanje točke ponovnog naručivanja artikla**: prva opcija se aktivira samo ako je postavljena druga opcija. Ove dvije opcije ukazuju na to da planer mora predvidjeti obnavljanje točke ponovnog naručivanja određene za taj artikl, a također, ako želite, i obnavljanje minimalne zalihe artikla. Oba podatka unose se prilikom kreiranja artikla u kartici [Nabava](/docs/erp-home/registers/items/create-new-items/item-registry/procurement);
 
-**Considera l'indice di copertura**: se il flag è attivo, lo schedulatore dovrà tenere conto dell'indice di copertura che viene stabilito sempre nel tab *Approvvigionamento* dell'articolo;
+**Razmotrite indeks pokrivanja**: ako je opcija aktivirana, planer će morati uzeti u obzir indeks pokrivenosti koji se postavlja u kartici *Nabava* artikla;  
 
-**Considera anche le alternative dei materiali**: se attivo, nel momento della pianificazione della commessa lo schedulatore dovrà andare a considerare anche le alternative dei materiali nel caso in cui non ci sia disponibilità sufficiente per il materiale indicato in distinta; viene abilitato solo se è attivo il flag **Considera la disponibilità**;            
+**Razmotrite alternative materijala**: ako je aktivno, prilikom planiranja proizvodnog naloga, planer će također morati razmotriti alternative materijala ako nema dovoljno dostupnosti za materijal naveden u strukturi. Ova opcija se može omogućiti samo ako je aktivirana opcija **Razmotri raspoloživost**;            
 
-**Considera solo materiali alternativi**: si attiva solamente quando il flag **Considera anche le alternative dei materiali** è attivo; se attivo questo flag, viene verificata prima la disponibilità dei componenti alternativi in base alla priorità degli stessi, se non sufficiente verifica poi quella del componente principale; viene abilitato solo se è attivo il flag **Considera la disponibilità**;    
+**Razmotrite samo alternativne materijale**: ova opcija se aktivira samo kada je aktiviran flag **Uzmite u obzir i alternative materijala**; ako je ova opcija aktivna, prvo će se provjeriti dostupnost alternativnih komponenti prema njihovom prioritetu. Ako ti materijali nisu dovoljni, onda će se provjeriti dostupnost glavne komponente. Ova opcija se može omogućiti samo ako je aktivirana opcija **Razmotri raspoloživost**;    
 
-:::note Nota
-I materiali alternativi vengono inseriti nel tab **Alternative**, relativo al materiale principale, presente nella [Distinta base](/docs/erp-home/registers/production/bill-of-materials/assemblies/structure-management).
+:::note NAPOMENA 
+Alternativni materijali se unose u karticu **Alternative**, koja se odnosi na glavni materijal, prisutnu u [Sastavnici materijala](/docs/erp-home/registers/production/bill-of-materials/assemblies/structure-management).
 :::
 
-**Considera le fasi alternative**: se attivo, questo flag indica che al momento della pianificazione bisognerà andare a considerare anche le fasi di lavoro alternative; attivando questo flag si attiverà il campo editabile successivo chiamato **Tolleranza per l'occupazione del C.d.L. %**, nel quale si potrà andare ad indicare la tolleranza di occupazione del centro di lavoro in %, oltre alla quale lo schedulatore dovrà andare a considerare le fasi alternative alla fase di default.
+**Razmotri alternativne faze**: ako je ovaj flag aktivan, to znači da će planer pri planiranju morati uzeti u obzir i alternativne radne faze. Aktiviranjem ovog flaga aktivira se i sljedeće editabilno polje nazvano **Tolerancija za zauzeće radnog centra %**, gdje se može navesti tolerancija zauzeća radnog centra u postotcima. Ako zauzeće premaši tu toleranciju, planer će morati razmotriti alternativne faze umjesto zadane faze.  
 
-## Monitor
+## Praćenje
 
-In questo tab, tramite l'attivazione o meno dei flag presenti, l'utente ha la possibilità di scegliere la visualizzazione dei risultati della pianificazione nel tab **Storico**.
+Na ovoj kartici, aktiviranjem ili deaktiviranjem dostupnih opcija, korisnik ima mogućnost odabira prikaza rezultata planiranja u tablici **Arhiva**.
 
-Si può decidere se visualizzare i **Calendari** presi in considerazione (il Calendario di *Fabbrica* e il calendario delle *Capacità produttive*); si può decidere che venga segnalato se nella pianificazione erano presenti **Articoli privi di** *Parametri MRP*, privi di *Distinta base* o di *Ciclo di lavoro*, privi di *Fornitore preferenziale* (nel caso di ordini di acquisto), privi di *Terzista preferenziale* (per gli ordini di conto lavoro) e privi dell'indicazione della scorta minima per tutti quegli articoli che sono gestiti a scorta. Per ogni **Commessa di produzione** si può scegliere di visualizzare nello storico, il *Numero di righe schedulate* e il dettaglio di queste righe, le commesse in ritardo e le commesse scadute.
+Može se odlučiti želi li se prikazati koje su **Kalendari** uzeti u obzir (*Proizvodni kalendar* i *kalendar Kapaciteta proizvodnje*); također se može odabrati da se označi ukoliko je u planiranju prisutno više **Artikala bez** *MRP Parametara*, bez *Osnovne strukture* ili *Radnog ciklusa*, bez *preferiranog Dobavljača* (u slučaju narudžbi za nabavu), bez *preferiranog Izvođača* (za narudžbe radnih naloga) i bez naznake minimalne zalihe za sve one artikle koji su upravljani zalihama. Za svaki **Radni nalog** može se odlučiti da se u povijesti prikaže *Broj zakazanih redova* i pojedinosti tih redova, kašnjenje narudžbi i istekli nalozi.
 
-Per quanto riguarda gli **Ordini pianificati**, si può scegliere se visualizzare nello storico, il *Numero di ordini generati* e il loro *Dettaglio*, gli ordini *In ritardo* e *Scaduti*, le *Alternative materiali*; si può scegliere anche di essere avvisati nel caso in cui ci siano **Ordini pianificati privi di** *Materiale*, di *Fasi di lavorazione*, del *Fornitore* (per l'acquisto) e il *Terzista* (per il conto lavoro).
+Što se tiče **Planiranih Narudžbi**, možete odabrati hoćete li prikazati u povijesti *Broj Generiranih Narudžbi* i njihove *Detalje*, *kašnjenja* i *istekle* narudžbe, *Alternativne materijale*. Također možete odabrati da vas se obavijesti ako su **Planirane narudžbe bez** *Materijala*, *Radnih faza*, *Dobavljača* (za nabavu) ili *Podizvođača* (za radne naloge).
 
-**Legenda**: i flag attivi permettono di ricevere l'avviso e i dettagli riguardanti le voci selezionate.
+**Legenda**: aktiviranje zastavica omogućuje primanje obavijesti i detalja o odabranim stavkama.  
 
-## Storico
+## Povijest
 
-Nella griglia di questo tab vengono visualizzate tutte le informazioni riepilogative relative alla pianificazione della commessa.
+Na mreži ove kartice prikazuju se sve sažete informacije o planiranju naloga.  
 
-**Progr. sched.**: visualizza un semplice progressivo dell'operazione di pianificazione lanciata dall'utente;
+**Redni broj planiranja**: prikazuje jednostavan redni broj operacije planiranja pokrenute od strane korisnika;  
 
-**Operatore**: visualizza l'utente che ha lanciato la pianificazione ;
+**Operater**: prikazuje korisnika koji je pokrenuo planiranje;
 
-**No. errori**: visualizza il numero degli errori registrati durante la procedura di pianificazione ;
+**Broj pogrešaka**: prikazuje broj pogrešaka zabilježenih tijekom postupka planiran;
 
-**Data inizio**: visualizza data e ora di inizio del processo di pianificazione ;
+**Datum početka**: prikazuje datum i vrijeme početka procesa planiranja;
 
-**Data fine**: visualizza data e ora di fine del processo di pianificazione ;
+**Datum završetka**: prikazuje datum i vrijeme završetka procesa planiranja;
 
-**Dati schedulati provenienti da**: visualizza l'origine precisa dei dati schedulati;
+**Planirani podaci dolaze iz**: prikazuje točan izvor planiranih podataka;
 
-**Previsionale**: visualizza se i dati provengano dalle Previsioni di Vendita oppure dal Piano Principale di Produzione;
+**Predviđanje**: prikazuje jesu li podaci iz predviđanja prodaje ili iz glavnog plana proizvodnje;
 
-**Periodo**: visualizza il tipo di previsione, settimanale o mensile;
+**Razdoblje**: prikazuje vrstu predviđanja, tj. tjedni ili mjesečni;
 
-**Giorno**: visualizza il giorno della settimana designato come giorno in cui deve cadere la data di fine della commessa di produzione schedulata direttamente da Definizione MPS.
+**Dan**: prikazuje dan u tjednu koji je određen kao dan kada bi trebao biti završen planirani proizvodni nalog izravno iz Definicije MPS-a.
 
-Tutte le altre colonne della griglia visualizzano le impostazioni utilizzate nel tab **Parametri** della *Pianificazione generale* relativa alla riga selezionata.
+Sve ostale stupce u mreži prikazuju postavke koje su korištene u kartici **Opći parametri** *Planiranja* za odabranu liniju.  
 
-**Risultato pianificazione **
+**Rezultat planiranja**
 
-In base alla riga selezionata nella griglia, in questa sezione compariranno i dettagli richiesti dall'utente nel tab **Monitor**.
+Na temelju odabrane stavke u mreži, u ovoj sekciji će se prikazati detalji koje je korisnik zatražio u kartici **Praćenje**.
 
-Nel risultato della pianificazione , si possono vedere il numero della commessa che si è schedulata, il numero degli ordini pianificati che sono stati generati da quella commessa e il dettaglio degli ordini pianificati che sono stati generati.
+U rezultatima planiranja možete vidjeti broj proizvodnog naloga koji je zakazan, broj planiranih narudžbi koje su generirane iz tog naloga i detalje generiranih narudžbi. 
 
-Per dettagli sul funzionamento comune delle form fare riferimento al link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Za detalje o općem radu obrasca, pogledajte link [Značajke, gumbe i zajednička polja](/docs/guide/common).

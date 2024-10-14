@@ -21,7 +21,7 @@
   },
   "link.item.label.ARM": {
     "message": "ARM",
-    "description": "The label of footer link with label=ARM linking to https://docs.fluentis.com/Arm"
+    "description": "The label of footer link with label=ARM linking to https://docs.fluentis.com/Arm/"
   },
   "link.item.label.Fluentis Live Update": {
     "message": "Fluentis Live Update",
@@ -30,5 +30,45 @@
   "link.item.label.Fluentis": {
     "message": "Fluentis",
     "description": "The label of footer link with label=Fluentis linking to https://www.fluentis.com/it/"
+  },
+  "link.title.Fluentis Documentation": {
+    "message": "Fluentis Documentation",
+    "description": "The title of the footer links column with title=Fluentis Documentation in the footer"
+  },
+  "link.title.Integration": {
+    "message": "Integration",
+    "description": "The title of the footer links column with title=Integration in the footer"
+  },
+  "link.title.Fluentis Training": {
+    "message": "Fluentis Training",
+    "description": "The title of the footer links column with title=Fluentis Training in the footer"
+  },
+  "link.title.About Fluentis": {
+    "message": "About Fluentis",
+    "description": "The title of the footer links column with title=About Fluentis in the footer"
+  },
+  "link.item.label.Integration": {
+    "message": "Integration",
+    "description": "The label of footer link with label=Integration linking to https://docs.fluentis.com/Integration/"
+  },
+  "link.item.label.Training": {
+    "message": "Training",
+    "description": "The label of footer link with label=Training linking to https://training.fluentis.com/"
+  },
+  "link.item.label. Web Site": {
+    "message": " Web Site",
+    "description": "The label of footer link with label= Web Site linking to https://www.fluentis.com/it/"
+  },
+  "link.item.label. Instagram": {
+    "message": " Instagram",
+    "description": "The label of footer link with label= Instagram linking to https://www.instagram.com/fluentis.erp/"
+  },
+  "link.item.label. Facebook": {
+    "message": " Facebook",
+    "description": "The label of footer link with label= Facebook linking to https://www.facebook.com/FluentisSrl"
+  },
+  "link.item.label. Youtube": {
+    "message": " Youtube",
+    "description": "The label of footer link with label= Youtube linking to https://www.youtube.com/@formazionefluentis"
   }
 }
