@@ -155,7 +155,7 @@ const config = {
               label: 'Piano dei conti',
             },
             {
-              to: 'docs/erp-home/registers/items/academy-master-item',
+              to: 'docs/erp-home/registers/items/master-item-intro',
               activeBasePath: 'docs',
               label: 'Articoli',
             },
@@ -270,7 +270,7 @@ const config = {
           items: [
             {
               label: 'Integration',
-              href: 'https://docs.fluentis.com/Integration/docs/webApi/getting-started',
+              href: 'https://docs.fluentis.com/Integration/',
             },
           ],
         },
