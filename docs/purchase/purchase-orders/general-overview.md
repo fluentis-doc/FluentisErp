@@ -10,7 +10,7 @@ Il modulo si trova nell'area **Acquisti > Ordini fornitori** e rappresenta uno d
 Gli ordini di acquisto possono essere inseriti manualmente oppure creati automaticamente a partire da documenti preesistenti. Le modalità di generazione automatica comprendono:    
 
 - **Richieste di acquisto**: attraverso la procedura di [Creazione automatica ordini](/docs/purchase/purchase-orders/procedures/create-purchase-orders-from-purchase-requests) è possibile evadere le RDA autorizzate all'interno di un ordine di acquisto.    
-- **Richieste di offerta**: dopo aver selezionato l'offerta migliore tra quelle ricevute dai fornitori è possibile generare l'ordine di acquisto mediante la procedura di [Creazione Ordine fornitore da Offerta fornitore](/docs/purchase/offer-request/order-creation).   
+- **Richieste di offerta**: dopo aver selezionato l'offerta migliore tra quelle ricevute dai fornitori è possibile generare l'ordine di acquisto mediante la procedura di [Creazione Ordine fornitore da Offerta fornitore](/docs/purchase/offer-request/procedures/order-creation).   
 - **Ordini clienti**: la procedura di *Creazione automatica ordini* permette anche la creazione di un *Ordine fornitore* a partire da un *Ordine cliente*. In alternativa, è possibile generare un ordine di acquisto dal filtro di [Ricerca Ordini clienti](/docs/sales/sales-orders/search-sales-orders) mediante il pulsante *Creazione ordini fornitori*.    
 - **Commesse di acquisto**: l'ordine di acquisto può essere generato anche attraverso l'[evasione](/docs/purchase/purchase-orders/insert-purchase-orders/header-procedures) totale o parziale di una commessa di acquisto, sulla base di contratti predefiniti e già negoziati con il fornitore.   
 

@@ -11,7 +11,7 @@ Le richieste di offerta (RDO) servono a gestire in modo efficiente il processo d
 
 - Invio di richieste multiple: Le RDO permettono di inviare richieste di preventivo a diversi fornitori per beni o servizi specifici, consentendo di raccogliere informazioni su prezzi, tempi di consegna, condizioni di pagamento e altre variabili importanti per l'azienda
 - Comparazione delle offerte: consente di confrontare le offerte ricevute facilitando la selezione della soluzione più vantaggiosa in termini di costi e condizioni contrattuali.
-- Conversione in ordini di acquisto: Una volta selezionata l'offerta più conveniente, il sistema permette di convertire la richiesta di offerta in un ordine di acquisto utilizzando la procedura di [Creazione ordine fornitore da offerta fornitore](/docs/purchase/offer-request/order-creation). 
+- Conversione in ordini di acquisto: Una volta selezionata l'offerta più conveniente, il sistema permette di convertire la richiesta di offerta in un ordine di acquisto utilizzando la procedura di [Creazione ordine fornitore da offerta fornitore](/docs/purchase/offer-request/procedures/order-creation). 
 - Creazione e gestione centralizzata: Le RDO possono essere generate utilizzando template predefiniti e personalizzabili con la Duplica e l'utilizzo delle Versioni, con possibilità di includere dettagli come scontistiche, termini di pagamento e condizioni specifiche.
 
 ### Benefici operativi

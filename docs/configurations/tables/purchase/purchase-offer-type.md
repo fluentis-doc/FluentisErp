@@ -11,7 +11,7 @@ I campi presenti sono:
 
 **Numerazione**: contiene la [Numerazione](/docs/configurations/tables/fluentis-numerations) associata;      
 
-**Tipo ordine fornitore**: contiene il [Tipo ordine fornitore](/docs/configurations/tables/purchase/purchase-orders-type) da creare partendo dalla RDO, nella procedura di [Creazione ordine fornitore da offerta fornitore](/docs/purchase/offer-request/order-creation).         
+**Tipo ordine fornitore**: contiene il [Tipo ordine fornitore](/docs/configurations/tables/purchase/purchase-orders-type) da creare partendo dalla RDO, nella procedura di [Creazione ordine fornitore da offerta fornitore](/docs/purchase/offer-request/procedures/order-creation.md).         
 
 **Prezzo ivato**: questo flag indica che nelle righe del documento sarà presente il Prezzo già ivato.    
 
