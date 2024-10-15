@@ -15,6 +15,6 @@ sau
 
 Conexiunea la **Fluentis** necesită inserarea utilizatorului, numelui server-ului și bazei de date.
 
-Dacă a a fost selectată opțiunea *Utilizator predefinit*(Single Sign On), numele utilizatorului și parola nu vor mai fi cerute pentru că datele vor fi preluate automat la deschiderea aplicației.
+Dacă a a fost selectată opțiunea *Utilizator predefinit* (Single Sign On), numele utilizatorului și parola nu vor mai fi cerute pentru că datele vor fi preluate automat la deschiderea aplicației.
 
 Confirmați cu tasta Enter sau apăsând butonul **Connect**.
