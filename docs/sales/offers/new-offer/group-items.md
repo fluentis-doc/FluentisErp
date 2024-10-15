@@ -54,7 +54,7 @@ Nelle prime colonne della griglia è possibile inserire un Articolo codificato, 
 - **Percentuale/Valore**: in questi campi è possibile inserire un eventuale ricarico da applicare al Costo totale, in percentuale o valore.     
 - **Ricavo**: in questa colonna verrà calcolato automaticamente il Costo totale ricaricato.        
 - **Descrizione fornitore**: viene proposto il Fornitore preferenziale inserito in anagrafica articolo, ma è possibile modificarlo; se nella colonna *Tipo origine costo* è stato selezionato il listino fornitore, il listino considerato sarà quello valido per questo fornitore; inoltre, questo fornitore sarà l'intestatario della [Richiesta di offerta](/docs/purchase/offer-request/insert-offert-request/insert-offer-request) generata dalla riga materiale.           
-- **Numero/Data richiesta**: contiene l'eventuale [Richiesta di offerta](/docs/purchase/offer-request/insert-offert-request-insert-offer-request) creata per il Materiale; infatti, quando si è posizionati nel tab *Materiali*, nella barra degli strumenti compare il pulsante *Creazione Richiesta di offerta* che genererà la RDO per il materiale selezionato.    
+- **Numero/Data richiesta**: contiene l'eventuale [Richiesta di offerta](/docs/purchase/offer-request/insert-offert-request/insert-offer-request) creata per il Materiale; infatti, quando si è posizionati nel tab *Materiali*, nella barra degli strumenti compare il pulsante *Creazione Richiesta di offerta* che genererà la RDO per il materiale selezionato.    
 - **Nota**: in questo campo è possibile inserire delle note libere.   
 
 Le altre tab presenti sono analoghe a quelle dell'offerta non gerarchica.     
