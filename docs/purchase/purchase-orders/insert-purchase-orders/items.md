@@ -103,7 +103,7 @@ All'interno di questo tab vengono riportate/inserite ulteriori informazioni rela
 
 - **Articoli commessa di produzione**: se l'ordine fornitore è collegato ad una commessa di produzione (mediante il rilascio di un ordine pianificato di acquisto e creazione di ordine fornitore da richiesta di acquisto) in questo campo viene riportato l'articolo padre contenuto nella commessa. 
 
-- **Richiesta di offerta**: se l'ordine è stato creato da una richiesta di offerta mediante la procedura [Creazione Ordine fornitore da Offerta fornitore](/docs/purchase/offer-request/order-creation) in questo campo viene riportata la richiesta di riferimento.
+- **Richiesta di offerta**: se l'ordine è stato creato da una richiesta di offerta mediante la procedura [Creazione Ordine fornitore da Offerta fornitore](docs/purchase/offer-request/procedures/order-creation) in questo campo viene riportata la richiesta di riferimento.
 
 - **Magazzino e causale**: vengono proposti il magazzino e la causale di riferimento che compariranno in automatico al momento del carico degli articoli relativi in magazzino. I dati sono ripresi dai [Tipi ordine](/docs/configurations/tables/purchase/purchase-orders-type) ma possono essere modificati manualmente per ciascuna riga articolo.
 
