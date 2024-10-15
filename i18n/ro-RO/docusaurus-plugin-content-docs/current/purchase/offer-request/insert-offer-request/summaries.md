@@ -1,48 +1,48 @@
 ---
-title: Riepiloghi
+title: Rezumate
 sidebar_position: 3
 ---
 
-Nelle sezioni di questo tab sono presentate le informazioni principali dell'intero documento.
+În secțiunile acestui tab sunt prezentate informațiile principale ale întregului document.
 
-### Sconti finali articoli
+### Discounturi finale articole (Sconti finali articoli)
 
-Gli sconti finali applicati a livello di singolo articolo vengono distribuiti (o "spalmati") su ciascuna riga articolo del documento. Questo significa che l'importo dello sconto è suddiviso proporzionalmente tra tutti gli articoli presenti nel documento, e lo sconto relativo sarà visibile nel tab Articoli per ogni singola riga.
+Discounturile finale aplicate la nivelul fiecărui articol sunt distribuite (sau "întinse") pe fiecare linie de articol a documentului. Acest lucru înseamnă că suma discountului este împărțită proporțional între toate articolele prezente în document, iar discountul corespunzător va fi vizibil în tab-ul Articole pentru fiecare linie în parte.
 
-- **Tipo/Descrizione sconto**: permette di scegliere le tipologie di sconto (predefiniti in [Tipi sconti](/docs/configurations/tables/general-settings/discount-types)), attribuendo alla tipologia la priorità di applicazione dello sconto e se lo sconto viene calcolato sull'imponibile o in cascata rispetto agli sconti precedentemente applicati.  
+- **Tip/Descriere discount (Tipo/Descrizione sconto)**: permite alegerea tipurilor de discount (predefinite în [Tipuri discounturi](/docs/configurations/tables/general-settings/discount-types)), atribuind tipologiei prioritatea de aplicare a discountului și dacă discountul este calculat pe baza valorii impozabile sau în cascada față de discounturile aplicate anterior.  
 
-- **Priorità**: rappresenta la priorità di applicazione dello sconto; l'ordinamento da applicare avviene in modo crescente.  
+- **Prioritate**: reprezintă prioritatea de aplicare a discountului; ordonarea se face în mod crescător.  
 
-- **Cascata/Imponibile**: per definire se il calcolo dello sconto usa come imponibile il (prezzo * quantità) - (sconti già calcolati) oppure (prezzo * quantità).  
+- **Cascadă/B.Impozitare**: pentru a defini dacă calculul discountului folosește ca bază de impozitare (preț * cantitate) - (discounturi deja calculate) sau (preț * cantitate).  
 
-- **Valore**: valore numerico dello sconto finale da applicare.  
+- **Valoric**: valoarea numerică a discountului final care trebuie aplicat.  
 
-### Totali documento
+### Totale document (Totali documento)
 
-- **Importo lordo articoli**: rappresenta la somma dei valori di tutti gli articoli.
+- **Valoare brută articole**: reprezintă suma valorilor tuturor articolelor.
 
-- **Acconto**: rappresenta il valore dell'eventuale acconto ricevuto per il documento.
+- **Acont**: reprezintă valoarea oricărui avans primit pentru document.
 
-- **Importo omaggio**: rappresenta l'importo degli articoli di tipo omaggio inseriti nel tab *Articoli*.
+- **Valoare articole promo**: reprezintă suma articolelor de tip cadou introduse în tab-ul *Articole*.
 
-- **Totale sconti applicati**: rappresenta il valore totale degli sconti applicati sugli articoli, escludendo gli sconti finali.
+- **Total discounturi aplicate**: reprezintă valoarea totală a discounturilor aplicate articolelor, excluzând discounturile finale.
 
-- **Importo netto articoli**: *Importo lordo articoli* – *Totale sconti applicati*.
+- **Valoare netă articole**: *Suma brută articole* – *Total discounturi aplicate*.
 
-- **Sconti finali articoli**: rappresenta il valore degli sconti finali espressi in percentuale sull'importo lordo degli articoli.
+- **Discounturi articol finale**: reprezintă valoarea discounturilor finale exprimate în procent din suma brută a articolelor.
 
-- **Importo netto sconti finali**: *Importo netto articoli* - *Totale sconti finali*.
+- **Suma netă discounturi finale (Importo netto sconti finali)**: *Suma netă articole* - *Total discounturi finale*.
 
-- **Totale articoli spese**: rappresenta il valore delle spese inserite nel tab precedente come articoli di *Tipo spese*.
+- **Total articole cheltuieli**: reprezintă valoarea cheltuielilor introduse în tab-ul anterior ca articole de *Tip cheltuieli*.
 
-- **Spese di incasso**: rappresenta la somma delle spese di incasso inserite nella griglia delle *Spese*.
+- **Cheltuieli încasare**: reprezintă suma cheltuielilor de încasare introduse în grila de *Cheltuieli*.
 
-- **Spese bollo**: rappresenta la somma delle spese di bollo inserite nella griglia delle *Spese*.
+- **Taxă timbru**: reprezintă suma cheltuielilor de timbru introduse în grila de *Cheltuieli*.
 
-- **Totale spese/sconti/maggiorazioni**: rappresenta il valore totale delle spese inserite nella griglia *Spese*.
+- **Total cheltuieli/discounturi/mărituri (Totale spese/sconti/maggiorazioni)**: reprezintă valoarea totală a cheltuielilor introduse în grila *Cheltuieli*.
 
-- **Imponibile**: *Importo netto articoli* – *Sconti finali* + *Totale articoli spese* + *Totale spese/sconti/maggiorazioni*.
+- **Baza de impozitare**: *Suma netă articole* – *Discounturi finale* + *Total articole cheltuieli* + *Total cheltuieli/discounturi/mărituri*.
 
-- **IVA**: rappresenta la somma dei valori contenuti nei riepiloghi IVA.
+- **TVA**: reprezintă suma valorilor conținute în rapoartele TVA.
 
-- **Totale**: *Imponibile* + *IVA*.
+- **Total**: *Impozitabil* + *TVA*.

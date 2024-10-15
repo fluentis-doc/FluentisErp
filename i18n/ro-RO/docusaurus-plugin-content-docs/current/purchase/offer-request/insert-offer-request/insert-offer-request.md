@@ -1,62 +1,61 @@
 ---
-title: Testata
+title: Header
 sidebar_position: 1
 ---
 
-I campi obbligatori per l'inserimento di una richiesta di acquisto sono i seguenti:
+Câmpurile obligatorii pentru introducerea unei cereri de achiziție sunt următoarele:
 
-- **Tipo**: è un campo obbligatorio. A seconda del [Tipo RDO](/docs/configurations/tables/purchase/purchase-offer-type) scelto, saranno attivate alcune funzionalità, quali ad esempio la *Gestione cespiti*. 
-- **Data/Anno**: di default viene proposta la data corrente, ma può essere modificata manualmente.  
-- **Numero**: poposto automaticamente in base al Tipo RDO scelto.   
-- **Fornitore**: contiene l'anagrafica contatto a cui viene richiesta l'offerta.                
-- **Versione**: contiene la versione dell'offerta; è possibile creare una nuova versione con il pulsante della ribbon bar **Nuova versione**.       
+- **Tip**: este un câmp obligatoriu. În funcție de [Tipul RDO](/docs/configurations/tables/purchase/purchase-offer-type) ales, vor fi activate anumite funcționalități, cum ar fi *Gestionarea bunurilor*. 
+- **Dată/An (Data/Anno)**: implicit se propune data curentă, dar poate fi modificată manual.  
+- **Număr**: propus automat în funcție de Tipul RDO ales.   
+- **Furnizor**: conține anagrafica contactului căruia i se solicită oferta.                
+- **Versiune**: conține versiunea ofertei; este posibil să creați o nouă versiune cu butonul din ribbon bar **Nouă versiune**.       
 
-:::note Ricorda
-Se il documento viene *creato automaticamente* da una RDA, questi dati vengono ripresi dal *documento d'origine* da cui è stata generato.
+:::note Ține minte
+Dacă documentul este *creat automat* dintr-o RDA, aceste date sunt preluate din *documentul de origine* din care a fost generat.
 :::
 
 
-Inserendo il **Fornitore** vengono proposti in automatico tutti i dati specifici del tab **Testata**, secondo i dati impostati in precedenza nell'[anagrafica fornitore](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/accounting-data-intro) nei campi corrispondenti al suo indirizzo e nelle sezioni:    
->- **Divisa**: sezione contenente i dati [Divisa](/docs/configurations/tables/general-settings/currencies), [Cambio](/docs/guide/common/glossary/glossary-intro#currency-exchange), [Data valuta](/docs/guide/common/glossary/glossary-intro#currency-date).     
->- **Spedizione**: sezione contenente i dati [*Spedizioni*](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/delivery), [Porto](/docs/guide/common/glossary/glossary-intro#carriage), [Imballo](/docs/guide/common/glossary/glossary-intro#packing), [Listino](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/price-list#listini) predefinito e il suo [intervallo di validità](/docs/guide/common/glossary/glossary-intro#validity-date).   
->- **Nazione**: sezione contenente i dati [*Nazione*](/docs/guide/common/glossary/glossary-intro#country), [Lingua](/docs/guide/common/glossary/glossary-intro#language), [Zona](/docs/guide/common/glossary/glossary-intro#zone).    
->- **Pagamenti**: sezione contenente i dati [*Pagamenti*](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/payments), *Sconti*, *Destinazione* e *Vettore*.    
+Introducând **Furnizor**, vor fi propuse automat toate datele specifice tab-ului **Header**, conform datelor setate anterior în [anagrafica furnizorului](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/accounting-data-intro) în câmpurile corespunzătoare adresei sale și în secțiunile:    
+>- **Monedă**: secțiune care conține datele [Monedă](/docs/configurations/tables/general-settings/currencies), [Curs](/docs/guide/common/glossary/glossary-intro#currency-exchange), [Data valutei](/docs/guide/common/glossary/glossary-intro#currency-date).     
+>- **Transport**: secțiune care conține datele [*Expedieri*](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/delivery), [Transport](/docs/guide/common/glossary/glossary-intro#carriage), [Ambalare (Imballo)](/docs/guide/common/glossary/glossary-intro#packing), [Listă de prețuri (Listino)](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/price-list#listini) implicită și intervalul său de [valabilitate](/docs/guide/common/glossary/glossary-intro#validity-date).   
+>- **Ţară**: secțiune care conține datele [*Țară*](/docs/guide/common/glossary/glossary-intro#country), [Limba (Lingua)](/docs/guide/common/glossary/glossary-intro#language), [Zonă (Zona)](/docs/guide/common/glossary/glossary-intro#zone).    
+>- **Plăţi**: secțiune care conține datele [*Plăți*](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/payments), *Discount-uri (Sconti)*, *Destinaţie* și *Transportator*.    
 
-Tutti questi campi possono essere cancellati oppure modificati manualmente dall'utente.
+Toate aceste câmpuri pot fi șterse sau modificate manual de utilizator.
 
-Altri campi facoltativi sono: 
+Alte câmpuri opționale sunt: 
 
-- **Annotazioni**: questo campo viene ripreso dall'anagrafica fornitore o eventualmente dalla RDA, ma può essere inserito anche manualmente.             
-- **Nostro/Vostro riferimento**: in questi campi solitamente viene indicato un riferimento interno ed un riferimento fornitore per il documento. Se presente, viene ripreso dall'anagrafica fornitore alrimenti può essere inserito manualmente.   
-- **Note iniziali/finali**: si possono selezionare le note che sono state inserite in precedenza nella tabella che si trova nel percorso *Configurazione > Utilità > Gestione note codificate*. Per questo l'utente deve effettuare doppio click sul campo *Note iniziali/finali* per aprire Help note codificate e selezionare i dati.
-- **Progetto**: usando l'help di campo si può collegare il documento a un progetto. Questa associazione funziona solo al livello della testata dell'articolo. Il progetto viene inserito automaticamente se la RDO è stata generata da una RDA che lo contiene. 
-- **Data conferma offerta**: permette di inserire la data in cui è stata confermata l'offerta, ma non è un dato obbligatorio; nella procedura di [Creazione ordine fornitore da Offerta fornitore](/docs/purchase/offer-request/procedures/order-creation) è possibile visualizzare e convertire anche le RDO non confermate, attivando l'apposito flag nell'area di filtro.  
-- **Data prevista consegna**: se impostata prima dell'inserimento degli articoli all'interno della RDO sarà riportate anche sulle singole righe articolo. In alternativa sarà sufficiente premere il pulsante *Sostituisci data prevista consegna nelle righe* nella ribbon bar per aggiornare le date sulle righe articolo.
-- **Data chiusura**: al momento della conversione della RDO in ordine fornitore viene automaticamente valorizzata con la data corrente se è stato abilitato l'apposito flag per chiudere le offerte convertite. 
-- **Validità offerta**: permette di impostare una data fine validità per la richiesta di offerta. 
+- **Note**: acest câmp este preluat din anagrafica furnizorului sau, eventual, din RDA, dar poate fi introdus și manual.             
+- **Referinţa noastră/dumneavoastră**: în aceste câmpuri se indică de obicei o referință internă și o referință a furnizorului pentru document. Dacă este prezent, este preluat din anagrafica furnizorului, altfel poate fi introdus manual.   
+- **Note inițiale/finale (Note iniziali/finali)**: se pot selecta notele care au fost introduse anterior în tabelul care se află pe parcursul *Configurare > Utilități > Gestionare note codificate*. Pentru acest lucru, utilizatorul trebuie să facă dublu clic pe câmpul *Note inițiale/finale* pentru a deschide Help note codificate și a selecta datele.
+- **Proiect**: folosind ajutorul de câmp, se poate conecta documentul la un proiect. Această asociere funcționează doar la nivelul antetului articolului. Proiectul este introdus automat dacă RDO-ul a fost generat dintr-o RDA care îl conține. 
+- **Dată confirmare deviz**: permite introducerea datei în care oferta a fost confirmată, dar nu este o dată obligatorie; în procedura de [Creare a comenzii de furnizare din Oferta de furnizor](/docs/purchase/offer-request/procedures/order-creation) este posibil să vizualizați și să convertiți și RDO-urile neconfirmate, activând indicatorul corespunzător în zona de filtrare.  
+- **Dată prevăzută livrare**: dacă este setată înainte de introducerea articolelor în RDO, va fi afișată și pe liniile individuale de articole. Alternativ, este suficient să apăsați butonul *Înlocuiește data estimată a livrării în rânduri* din ribbon bar pentru a actualiza datele pe liniile de articole.
+- **Dată închidere**: în momentul conversiei RDO-ului în comandă de furnizare, este automat valorizată cu data curentă dacă este activat indicatorul corespunzător pentru a închide ofertele convertite. 
+- **Valididate oferta**: permite setarea unei date de încheiere a valabilității pentru cererea de ofertă. 
 
-*Pulsanti specifici*
-> **Sostituisci data prev. consegna nelle righe**: dopo aver specificato la data prevista consegna in testata è possibile sostituirla in massa nelle righe articolo già inserite.
+*Buton specific*
+> **Înlocuiește data estimată a livrării în rânduri (Sostituisci data prev. consegna nelle righe)**: după ce ați specificat data estimată a livrării în antet, este posibil să o înlocuiți în masă în rândurile de articole deja introduse.
 
-### Pagamenti
+### Plăți
 
-Le [Soluzioni di pagamento](/docs/configurations/tables/general-settings/payment-terms) sono riportate in automatico dall'*Anagrafica fornitore > tab Pagamenti* e possono essere modificate/cancellate dall'utente.   
-Se al [Tipo pagamento](/docs/configurations/tables/general-settings/payment-types) è associato uno sconto finanziario, l'importo dello sconto viene considerato solo ai fini contabili cioè nelle scadenze del documento e non nel totale DDT.
+[Solutiile de plată](/docs/configurations/tables/general-settings/payment-terms) sunt preluate automat din *Anagrafica furnizor > tab Plăți* și pot fi modificate sau șterse de utilizator.   
+Dacă la [Tipul de plată](/docs/configurations/tables/general-settings/payment-types) este asociat un discount financiar, suma discountului este considerată doar în scopuri contabile, adică în termenii documentului și nu în totalul DDT.
 
-*Pulsante specifico*
-> **Cancella pagamenti**: utilizzato per cancellare le righe di pagamento selezionate.
+*Buton specific*
+> **Şterge plăţi**: utilizat pentru a șterge liniile de plată selectate.
 
-### Sconti
+### Discounturi
 
-Vengono proposti solo gli sconti predefiniti ripresi dall'*Anagrafica fornitore> tab Sconti* e non quelli attribuiti alle condizioni di pagamento o a certi articoli. Possono essere modificati/cancellati dall'utente.   
+Sunt propuse doar discounturile implicite preluate din *Anagrafica furnizor > tab Discounturi* și nu cele atribuite condițiilor de plată sau anumitor articole. Pot fi modificate sau șterse de utilizator.   
 
-Gli sconti proposti in testata del documento vengono riportati in ogni nuova riga articolo inserita nel documento. Se dopo aver inserito le righe articolo viene inserito un nuovo sconto in testata questo non viene replicato nelle righe articolo già inserite.
+Discounturile propuse în antetul documentului sunt aduse în fiecare nouă linie de articol introdusă în document. Dacă, după ce ați introdus liniile de articole, este introdus un nou discount în antet, acesta nu este replicat în liniile de articole deja introduse.
 
-*Pulsante specifico*
-> **Cancella sconti predefiniti**: utilizzato per cancellare gli sconti selezionati.
+*Buton specific*
+> **Şterge discounturile predefinite**: utilizat pentru a șterge discounturile selectate.
 
 
-### Extra Data
+### Date suplimentare (Extra Data)
 
-Qui viene proposta l'informazione inserita nell'*Anagrafica del soggetto > tab Extra data*, solo se esistono dati di default.
-
+Aici sunt propuse informațiile introduse în *Anagrafica subiectului > tab Date suplimentare*, doar dacă există date implicite.

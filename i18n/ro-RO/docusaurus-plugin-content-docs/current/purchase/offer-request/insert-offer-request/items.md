@@ -1,89 +1,88 @@
 ---
-title: Articoli
+title: Articole (Articoli)
 sidebar_position: 2
 ---
 
 
-Per inserire un *Nuovo articolo* nella griglia basterà posizionarsi sulla riga per compilare i vari dati oppure utilizzare il pulsante **Nuovo articolo** presente nella ribbon bar.
+Pentru a insera un *Articol nou* (Nuovo articolo) în grilă, este suficient să te poziționezi pe rând pentru a completa diferitele date sau să folosești butonul **Articol Nou** disponibil în bara de ribbon.
 
-### Dati obbligatori
+### Date obligatorii
 
 import RowNumber from './../../../import/fields/row-number.md'
 
 <RowNumber />
 
-- **Tipo riga** offre la possibilità di selezionare, dalla combo-box, articoli con caratteristiche diverse:
-> - *Articolo codificato*: sono gli articoli codificati in anagrafica e possono essere contabilizzati in contabilità analitica e registrati in magazzino. <br />
-> - *Articolo non-codificato*: sono articoli descrittivi che possono essere contabilizzati in contabilità analitica ma non possono essere movimentati a magazzino. <br />
-> - *Articolo spese*: sono articoli codificati o non-codificati e vengono riassunti in modo distinto nei riepiloghi dei documenti, se l'articolo spesa è codificato e di interesse fiscale verrà movimentato in magazzino, se è non codificato oppure non di interesse fiscale non verranno movimentati a magazzino. <br />
-> - *Articolo note*: sono note descrittive riportate nella stampa del documento; non incidono sulla contabilità e sul magazzino.
-> - *Articolo omaggio*: viene gestito come un articolo codificato o non codificato ai fini fiscali e di magazzino, ma essendo un omaggio viene conteggiato separatamente nei riepiloghi del documento e in base al flag Rivalsa iva viene calcolato l'importo dell'iva dell'omaggio a carico del soggetto oppure no.
+- **Tip linie** oferă posibilitatea de a selecta, din combo-box, articole cu caracteristici diferite:
+> - *Articol codificat*: sunt articolele codificate în registru și pot fi contabilizate în contabilitate analitică și înregistrate în depozit. <br />
+> - *Articol ne-codificat (Articolo non-codificato)*: sunt articole descriptive care pot fi contabilizate în contabilitate analitică, dar nu pot fi mișcate în depozit. <br />
+> - *Articol cheltueli*: sunt articole codificate sau ne-codificate și sunt rezumate în mod distinct în sumarizarea documentelor; dacă articolul cheltuială este codificat și de interes fiscal, va fi mișcat în depozit, dacă este ne-codificat sau nu de interes fiscal, nu va fi mișcat în depozit. <br />
+> - *Articol note*: sunt note descriptive menționate în document; nu afectează contabilitatea și depozitul.
+> - *Articol cadou*: este gestionat ca un articol codificat sau ne-codificat în scopuri fiscale și de depozit, dar fiind un cadou, este contabilizat separat în sumarizarea documentului, iar pe baza indicatorului de *Atribuire TVA* se va calcula suma TVA-ului cadoului pe seama subiectului sau nu.
 
 :::note Nota
-Se si parte direttamente con l'inserimento dell'articolo, la sua classe, il codice e il tipo riga (*Articolo codificato*) vengono inseriti automaticamente.
+Dacă începi direct cu inserarea articolului, clasa, codul și tipul rândului (*Articol codificat*) sunt introduse automat.
 :::
 
-- **Classe/Codice/Descrizione articolo**: si possono inserire manualmente oppure con l'ausilio dell'help di campo il quale proporrà tutti i dati relativi inseriti nell'Anagrafica articolo. Dopo l'inserimento dell'articolo, la sua Descrizione sarà ripresa automaticamente dall'anagrafica. Se l'articolo ha Varianti, sarà possibile selezionare la variante desiderata dal tab Dati articolo.
+- **Clasă/Cod/Descriere articol (Classe/Codice/Descrizione articolo)**: se pot introduce manual sau cu ajutorul ajutorului de câmp care va propune toate datele relevante introduse în Registrul articolului. După inserarea articolului, Descrierea acestuia va fi preluată automat din registru. Dacă articolul are Variante, va fi posibil să selectezi varianta dorită din tab-ul Date articol.
 
-- **Unità di misura**: viene proposta l'unità di misura principale dell'articolo, ma nel caso in cui nell'anagrafica articolo siano codificate unità di misura alternative l'utente ha la possibilità di sceglierne un'altra.
+- **Unităţi de Măsură**: se propune unitatea de măsură principală a articolului, dar în cazul în care în registrul articolului sunt codificate unități de măsură alternative, utilizatorul are posibilitatea de a alege alta.
 
-- **Quantità**: rappresenta la quantità dell'U.M. principale e di default ha il valore 1; può essere modificata manualmente oppure può essere ripresa dal documento considerato per l'evasione.
+- **Cantitate**: reprezintă cantitatea U.M. principale și în mod implicit are valoarea 1; poate fi modificată manual sau poate fi preluată din documentul considerat pentru execuție.
 
-- **Prezzo**: il prezzo viene proposto dal listino inserito nell'anagrafica contatto; il listino di riferimento per l'articolo stesso è visualizzato nel tab *Dati articolo*; lo stesso documento potrebbe contenere articoli con prezzi presi da listini diversi, se nell'anagrafica soggetto sono associati più listini in cascata. Attraverso il doppio click nel campo Listini l'utente ha la possibilità di selezionare un listino diverso da quello di default, dal quale sarà ripreso il prezzo dell'articolo inserito.   
+- **Preţ**: prețul este propus din lista introdusă în registrul contactului; lista de referință pentru articolul în sine este vizibilă în tab-ul *Date articol*; același document ar putea conține articole cu prețuri preluate din liste diferite, dacă în registrul subiectului sunt asociate mai multe liste în cascadă. Printr-un dublu click în câmpul Listine, utilizatorul are posibilitatea de a selecta o listă diferită de cea implicită, din care va fi preluat prețul articolului introdus.   
 
-- **IVA**: è prioritario il dato inserito nel campo IVA dell'Anagrafica contatto. Se questo non è presente, viene proposto il valore presente nell'Anagrafica articolo, ma l'utente ha la possibilità di inserire un'altro dato. 
+- **TVA**: datele introduse în câmpul TVA al Registrului contactului sunt prioritare. Dacă aceasta nu este disponibilă, se propune valoarea din Registrul articolului, dar utilizatorul poate introduce o altă valoare. 
 
-- **Importo unitario**: viene calcolato in automatico al netto degli sconti.
+- **Valoare unitară**: este calculat automat fără discounturi.
 
-### Dati non obbligatori
+### Date neobligatorii
 
-- **Fatturato acquisti**: viene proposto il dato inserito nel tab *Generalità* dell'anagrafica articoli.   
+- **Facturare achiziţii**: se propune valoarea introdusă în tab-ul *Generalități* al registrului articolelor.   
 
-- **Data chiusura**: indica la data di chiusura dell'offerta; viene compilata automaticamente se al momento della [creazione ordine fornitore da offerta fornitore](/docs/purchase/offer-request/procedures/order-creation) viene selezionato il flag di chiusura delle offerte. 
+- **Dată închidere**: indică data închiderii ofertei; este completată automat dacă, în timpul [creării comenzii furnizorului din oferta furnizorului](/docs/purchase/offer-request/procedures/order-creation), este selectat indicatorul de închidere a ofertelor. 
 
-- **Data stimata di consegna**: indica la data prevista per la consegna della merce. Viene proposta in automatico se la *Data prevista consegna*è stata valorizzata nel tab testata.
+- **Data de livrare estimată**: indică data prevăzută pentru livrarea mărfii. Se propune automat dacă *Data prevăzută livrare* a fost completată în tab-ul antet.
 
-- **Periodo di prevista consegna**: campo descrittivo libero in cui è possibile indicare il periodo di tempo previsto per la consegna della merce.
+- **Perioadă prevăzută livrare**: câmp descriptiv liber în care se poate indica perioada de timp estimată pentru livrarea mărfii.
 
-### Sconti
+### Discounturi
 
-- **Tipo scaglione**: riporta lo scaglione di sconto da utilizzare, che viene ripreso dall'anagrafica fornitore oppure dal listino.  
+- **Tip eşalon**: indică scăderea care va fi utilizată, care este preluată din registrul furnizorului sau din listă.  
 
-- **Prezzo manuale**: si attiva automaticamente quando il prezzo dell'articolo è stato inserito o modificato manualmente.   
+- **Preţ manual**: se activează automat atunci când prețul articolului a fost introdus sau modificat manual.   
 
-Nella griglia invece vengono proposti tutti gli sconti associati all'articolo, ognuno con la propria base di calcolo e di assegnazione. Gli sconti possono essere ripresi: dall'anagrafica fornitore, dalla soluzione di pagamento assegnata al documento, dal listino, dalla [definizione politiche sconti](/docs/purchase/price-control/definition). Tutti i dati proposti sono modificabili.
+În grilă sunt propuse toate discounturile asociate articolului, fiecare cu propria bază de calcul și de atribuire. Discounturile pot fi preluate: din registrul furnizorului, din soluția de plată atribuită documentului, din listă, din [definirea politicilor de discount]( /docs/purchase/price-control/definition). Toate datele propuse sunt modificabile.
 
-*Pulsante specifico*
-> **Cancella sconti**: permette di cancellare lo sconto selezionato dalla griglia corrispondente. 
+*Buton specific*
+> **Şterge discounturi**: permite ștergerea discountului selectat din grila corespunzătoare. 
 
-### Dati articolo
+### Date articol
 
-All'interno di questo tab vengono riportate/inserite ulteriori informazioni relative all'articolo.
+În cadrul acestui tab sunt indicate/inserate informații suplimentare referitoare la articol.
 
->- **Articolo**: visualizza l'articolo selezionato nella griglia superiore.   
->- **Variante**: in questo campo è possibile selezionare una variante dell'articolo tra quelle precedentemente codificate nel tab [Varianti](/docs/erp-home/registers/items/create-new-items/item-registry/variants) dell'anagrafica articolo. Se nel listino sono stati inseriti prezzi e/o sconti diversi per ciascuna variante essi saranno aggiornati quando si sleziona una variante diversa dell'articolo.     
->- **Nota**: sono le note relative alla riga articolo, possono essere inserite anche tramite l'help note codificate. Saranno riportate in tutti i documenti generati da questo.
->- **Magazzino e causale**: vengono proposti il magazzino e la causale di riferimento che compariranno in automatico al momento del carico degli articoli relativi in magazzino.    
+>- **ARTICOL**: vizualizează articolul selectat în grila superioară.   
+>- **Variante**: în acest câmp este posibil să selectezi o variantă a articolului dintre cele codificate anterior în tab-ul [Variante](/docs/erp-home/registers/items/create-new-items/item-registry/variants) al registrului articolului. Dacă în listă au fost introduse prețuri și/sau discounturi diferite pentru fiecare variantă, acestea vor fi actualizate atunci când se selectează o variantă diferită a articolului.     
+>- **Notă**: sunt notele referitoare la rândul articolului, pot fi introduse și prin ajutorul notelor codificate. Vor fi menționate în toate documentele generate din aceasta.
+>- **Depozit și cauză (Magazzino e causale)**: se propun depozitul și cauza de referință care vor apărea automat în momentul în care articolele respective sunt încărcate în depozit.    
 
->- **Progetto**: rappresenta il progetto da associare al documento. Se nella testata del documento è stato inserito un progetto, esso sarà riportato su tutte le righe articolo; in alternativa può essere selezionato tramite l'apposito help progetti.
->- **Listino**: viene proposto il listino dal quale è stato ripreso il prezzo dell'articolo, con la sua data inizio/fine validità.
+>- **Proiect**: reprezintă proiectul ce trebuie asociat documentului. Dacă în antetul documentului a fost introdus un proiect, acesta va fi menționat pe toate rândurile articolului; alternativ, poate fi selectat prin ajutorul special al proiectelor.
+>- **Ofertă**: se propune lista din care a fost preluat prețul articolului, cu data de început/final de valabilitate.
 
->- **Unità di misura/Quantità alternativa**: permette di impostare un'unità di misura alternativa e la relativa quantità per l'articolo selezionato nella griglia.     
->- **Prezzo unità di misura alternativa**: se attivo indica che il prezzo inserito sulla riga articolo è riferito all'unità di misura alternativa e non a quella principale.    
+>- **Unitate de măsură/Cantitate alternativă (Unità di misura/Quantità alternativa)**: permite setarea unei unități de măsură alternative și a cantității corespunzătoare pentru articolul selectat în grilă.     
+>- **Preț unitate de măsură alternativă (Prezzo unità di misura alternativa)**: dacă este activ, indică faptul că prețul introdus pe rândul articolului se referă la unitatea de măsură alternativă și nu la cea principală.    
 
->- **Marca**: rappresenta la marca dell'articolo, ripresa dalla sua anagrafica oppure dal listino dell'articolo.   
->- **Richiesta di acquisto**: se l'offerta è stato creata da RDA viene riportata la [Richiesta d'acquisto](/docs/purchase/purchase-requests/insert-purchase-request) di riferimento.   
+>- **Marcă**: reprezintă marca articolului, preluată din registrul său sau din lista articolului.   
+>- **Cerere de cumpărare**: dacă oferta a fost creată din RDA, va fi menționată [Cererea de achiziție](/docs/purchase/purchase-requests/insert-purchase-request) relevantă.   
 
 
-## Extra data
+## Date suplimentare
 
 import DocItemExtraData from './../../../import/sections/doc-item-extradata.md'
 
 <DocItemExtraData />
 
-## Documenti allegati
+## Documente atașate
 
 import DocAttachDocument from './../../../import/sections/doc-attach-document.md'
 
 <DocAttachDocument />
-
