@@ -8,7 +8,7 @@ sidebar_position: 2
 Dopo aver selezionato i dati obbligatori nella sezione superiore, l'utente può continuare l'inserimento dei seguenti dati [manualmente](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection#inserimento-manuale) oppure con l'[help di campo](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection#inserimento-con-il-help-di-campo).
 
 :::note Ricorda
-Se il documento viene *creato automaticamente*, ad esempio dal filtro di ricerca degli [**Ordini clienti**](/docs/sales/sales-orders/search-sales-orders), dalla procedura di [**Creazione automatica ordini**](/docs/purchase/purchase-orders/procedures/create-purchase-orders-from-purchase-requests) o dalla procedura di [**Creazione ordine fornitore da offerta fornitore**](/docs/purchase/offer-request/order-creation), questi dati vengono ripresi dal *documento d'origine* da cui è stato generato.
+Se il documento viene *creato automaticamente*, ad esempio dal filtro di ricerca degli [**Ordini clienti**](/docs/sales/sales-orders/search-sales-orders), dalla procedura di [**Creazione automatica ordini**](/docs/purchase/purchase-orders/procedures/create-purchase-orders-from-purchase-requests) o dalla procedura di [**Creazione ordine fornitore da offerta fornitore**](docs/purchase/offer-request/procedures/order-creation), questi dati vengono ripresi dal *documento d'origine* da cui è stato generato.
 :::
 
 Inserendo il **Fornitore** vengono proposti in automatico tutti i dati specifici del tab **Testata**, secondo i dati impostati in precedenza nell'[anagrafica fornitore](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/accounting-data-intro) nei campi corrispondenti al suo indirizzo e nelle sezioni: 
