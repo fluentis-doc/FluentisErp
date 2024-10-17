@@ -109,7 +109,7 @@ jobs:
             declare -A team_usernames
             team_usernames=( 
                 ["en-US"]="adi-fluentis" 
-                ["ro-RO"]="adi-fluentis" 
+                ["ro-RO"]="rodica1234" 
                 ["hr-HR"]="adi-fluentis" 
             )
             
@@ -133,10 +133,10 @@ jobs:
                 # Initialize the body for modified files
                 if [ -n "$modified_files" ]; then
                 body="The following files have been modified and need to be reviewed for translation to **${LANG} language**:\n"
-                body+="\n/cc @fluentis-doc/${team_name}\n" # Mention the team in the body
+                body+="\n@fluentis-doc/${team_name}\n" # Mention the team in the body
                 for file in $modified_files; do
                     # Remove 'docs/' prefix from file paths
-                    processed_file="https://github.com/${REPO}/edit/locale-${LANG:0:2}/i18n/${LANG}/docusaurus-plugin-content-docs/current/${file#docs/}"
+                    processed_file="https://github.com/${REPO}/edit/main/i18n/${LANG}/docusaurus-plugin-content-docs/current/${file#docs/}"
                     body+="- [$file](https://github.com/${REPO}/blob/main/${file})  \n"
                     body+="   [${LANG:0:2} file](${processed_file})\n"
                 done
@@ -164,10 +164,10 @@ jobs:
                 # Initialize the body for deleted files
                 if [ -n "$deleted_files" ]; then
                 body="The following files have been deleted from main. Check if should be also deleted from **${LANG} language**:\n"
-                body+="\n/cc @fluentis-doc/${team_name}\n" # Mention the team in the body
+                body+="\n@fluentis-doc/${team_name}\n" # Mention the team in the body
                 for file in $deleted_files; do
                     # Remove 'docs/' prefix from file paths
-                    processed_file="https://github.com/${REPO}/blob/locale-${LANG:0:2}/i18n/${LANG}/docusaurus-plugin-content-docs/current/${file#docs/}"
+                    processed_file="https://github.com/${REPO}/blob/main/i18n/${LANG}/docusaurus-plugin-content-docs/current/${file#docs/}"
                     body+="- [$file](https://github.com/${REPO}/blob/main/${file})  \n"
                     body+="   [${LANG:0:2} file](${processed_file})\n"
                 done
