@@ -3,6 +3,5 @@ title: Fluentis Fast Start - foaia de parcurs pentru startup noul mediu operați
 sidebar_position: 2
 ---
 
-**Fast Start (Fast Start)** este o procedură proiectată pentru a simplifica și accelera inițializarea software-ului de gestionare, permițând popularea automată a sistemului cu parametri și tabele de bază. Această funcționalitate reduce semnificativ timpul și efortul necesar pentru configurarea inițială, evitând introducerea manuală a fiecărei setări individuale. 
-
+**Fast Start (Fast Start)** este o procedură proiectată pentru a simplifica și accelera inițializarea software-ului de gestionare, permițând popularea automată a sistemului cu parametri și tabele de bază. Această funcționalitate reduce semnificativ timpul și efortul necesar pentru configurarea inițială, evitând introducerea manuală a fiecăre.
 ---
