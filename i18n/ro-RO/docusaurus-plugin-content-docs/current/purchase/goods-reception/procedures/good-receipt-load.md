@@ -1,52 +1,52 @@
 ---
-title: Carico Ricevimento Merci
+title: Încărcare Recepţie Marfuri
 sidebar_position: 4
 ---
 
-La procedura si apre tramite il percorso **Acquisti > Ricevimento merci > Carico ricevimento merci** e permette di eseguire/ripristinare le operazioni di registrazione in magazzino degli articoli presenti nel *Ricevimento merci*.
+Procedura se deschide prin parcursul **Achiziții > Recepție mărfuri > Încărcare recepție mărfuri** și permite executarea/restaurarea operațiunilor de înregistrare în depozit a articolelor prezente în *Recepția mărfuri*. 
 
-La maschera si compone di tre tab: *Filtro*, *Parametro* e *Rollback*.     
+Masca se compune din trei tab-uri: *Filtru*, *Parametru* și *Rollback*.     
 
-### Filtro
+### Filtru
 
-In questo tab, l'utente ha la possibilità di inserire filtri per cercare il ricevimento merci da caricare in magazzino.   
-È possibile filtrare per: *Fornitore*, *Numero ricevimento*, *Da/A data ricevimento*.
+În acest tab, utilizatorul are posibilitatea de a introduce filtre pentru a căuta recepția mărfurilor de încărcat în depozit.   
+Este posibil să filtrați după: *Furnizor*, *Număr recepție*, *Din/Până la data recepției*. 
 
-- **Data registrazione**: permette di specificare la data relativa alla registrazione in magazzino.
+- **Data înregistrare**: permite specificarea datei referitoare la înregistrarea în depozit.
 
-:::important Ricorda
-Se nei [Parametri ordini fornitori](/docs/configurations/parameters/purchase/purchase-orders-parameters#carico) > tab Carico il flag **Crea registrazione con la data del documento** è attivo, la registrazione di magazzino sarà sempre eseguita con la *Data ricevimento* inserita nella testata del documento, ignorando la *Data registrazione magazzino* inserita in questa form.    
-Se la *Data carico* non è valorizzata la registrazione di magazzino sarà creata con la *Data registrazione magazzino* inserita in questa form oppure con la data corrente, se il campo *Data registrazione* non è valorizzato.
+:::important Ține minte
+Dacă în [Parametrii comenzilor furnizori](/docs/configurations/parameters/purchase/purchase-orders-parameters#carico) > tab Încărcare indicatorul **Creează înregistrare cu data documentului** este activ, înregistrarea de depozit va fi întotdeauna efectuată cu *Data recepției* introdusă în antetul documentului, ignorând *Data înregistrării depozitului* introdusă în acest formular.    
+Dacă *Data încărcare* nu este completată, înregistrarea în depozit va fi creată cu *Data înregistrării depozitului* introdusă în acest formular sau cu data curentă, dacă câmpul *Data înregistrării* nu este completat.
 :::
 
-*Pulsanti specifici*:
+*Butonuri specifice*:  
 
-> **Ricerca**: permette di cercare i ricevimenti da registrare in magazzino.  
-> **Carico**: permette di eseguire il carico dei ricevimenti selezionati, in base ai parametri inseriti nel tab successivo.
+> **Caută**: permite căutarea recepțiilor de înregistrat în depozit.   
+> **Încărcat**: permite executarea încărcării recepțiilor selectate, pe baza parametrilor introduși în tab-ul următor.
 
 
 ### Parametri
 
-Nel tab *Parametri* è possibile scegliere, con i relativi flag, come trattare eventuali articoli non codificati oppure senza magazzino e causale presenti all'interno del documento. Le opzioni disponibili sono:  
+În tab-ul *Parametri* este posibil să alegeți, cu indicatorii corespunzători, cum să tratați articolele eventual necodificate sau fără depozit și cauză prezente în document. Opțiunile disponibile sunt:  
 
-- **Ignora il ricevimento contenente articoli non codificati**: non permette il carico parziale del documento se questo contiene almeno un articolo non codificato.       
-- **Ignora gli articoli non codificati del ricevimento**: permette il carico parziale del documento tralasciando gli articoli non codificati.  
+- **Ignoră recepţia care conţine articole necodificate**: nu permite încărcarea parțială a documentului dacă acesta conține cel puțin un articol necodificat.       
+- **Ignoră articolele necodificate din recepţie**: permite încărcarea parțială a documentului, omitem articolele necodificate.  
 
 
-- **Ignora il ricevimento contenente articoli senza mag./caus.**: non permette il carico parziale del documento se questo contiene almeno un articolo senza magazzino e causale.      
-- **Ignora gli articoli del ricevimento senza mag./caus.**: permette il carico parziale del documento tralasciando gli articoli che non hanno magazzino e causale.     
-- **Utilizza i seguenti valori per gli articoli senza mag./caus.**: assicura il carico completo del documento. Per tutti gli articoli trovati senza magazzino e causale nei ricevimenti selezionati, imposta i dati inseriti ne campi sottostanti: *Magazzino* e *Causale*.
+- **Ignoră recepţia care conţine articole fără gestiune/şablon**: nu permite încărcarea parțială a documentului dacă acesta conține cel puțin un articol fără depozit și cauză.      
+- **Ignoră articolele din recepţie fără gestiune/şablon**: permite încărcarea parțială a documentului, omitem articolele care nu au depozit și cauză.     
+- **Utilizează următoarele valori pt. articolele fără gestiune/şablon**: asigură încărcarea completă a documentului. Pentru toate articolele găsite fără depozit și cauză în recepțiile selectate, setează datele introduse în câmpurile de mai jos: *Gestiune* și *Şablon*.
 
-:::important Ricorda
-Se nei [Parametri ordini fornitori](/docs/configurations/parameters/purchase/purchase-orders-parameters) > tab Carico il flag **Priorità magazzino e causale di carico** è attivo, saranno sempre utilizzati il *Magazzino* e la *Causale* inseriti nei parametri, ignorando quelli presenti nel ricevimento merci per ciascuna riga articolo, altrimenti avranno priorità quelli inseriti nel documento.  
+:::important Ține minte
+Dacă în [Parametrii comenzilor furnizori](/docs/configurations/parameters/purchase/purchase-orders-parameters) > tab Încărcare indicatorul **Prioritate depozit și cauză de încărcare** este activ, vor fi utilizate întotdeauna *Depozitul* și *Cauza* introduse în parametrii, ignorând cele prezente în recepția mărfurilor pentru fiecare linie de articol, altfel vor avea prioritate cele introduse în document.  
 :::
 
 ### Rollback
 
-In questo tab l'utente ha la possibilità di cercare, visualizzare e annullare le operazioni di registrazione eseguite.
+În acest tab, utilizatorul are posibilitatea de a căuta, vizualiza și anula operațiunile de înregistrare efectuate.
 
-I dati nelle griglie in basso, **Ricevimento merci** e **Registrazione**, corrispondono alla registrazione di carico selezionata nella griglia superiore (dopo aver filtrato i dati). Inoltre, in queste ultime due griglie, c'è la possibilità di visualizzare il ricevimento merci e la sua registrazione di magazzino mediante doppio click sulla riga.
+Datele din grilele de mai jos, **Recepție mărfuri** și **Înregistrare**, corespund înregistrării de încărcare selectate în grila superioară (după ce au fost filtrate datele). În plus, în aceste două grile, există posibilitatea de a vizualiza recepția mărfurilor și înregistrarea sa de depozit prin dublu click pe linie.
 
-*Pulsanti specifici*:
-> **Ricerca**: permette di cercare le fatture caricate. Il risultato di questa procedura viene visualizzato nelle griglie di risultato.  
-> **Rollback**: permette di cancellare l'intera registrazione di carico selezionata.
+*Butonuri specifice*:  
+> **Caută**: permite căutarea facturilor încărcate. Rezultatul acestei proceduri este vizualizat în grilele de rezultate.  
+> **Rollback**: permite ștergerea întregii înregistrări de încărcare selectate.
