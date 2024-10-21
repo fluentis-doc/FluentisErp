@@ -1,7 +1,7 @@
 ---
-title: Pulsanti comuni
+title: Butoane comune (Pulsanti comuni)
 sidebar_position: 7
 ---
 
 
-### Generale
+### General (Generale)
