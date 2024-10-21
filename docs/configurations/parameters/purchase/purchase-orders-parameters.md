@@ -33,7 +33,7 @@ La finestra si compone di pulsanti e tre diversi tab: *Generale*, *Carico* e 
 
 ### Carico
 
-In questo tab vengono definiti i parametri utilizzati per il [Carico ricevimento merci](/docs/purchase/goods-reception/good-receipt-load).
+In questo tab vengono definiti i parametri utilizzati per il [Carico ricevimento merci](/docs/purchase/goods-reception/procedures/good-receipt-load).
 
 **Crea registrazione con la data del documento**: se attivo, la registrazione di magazzino viene fatta con la stessa data dell'ordine e non sarà necessario specificare la data registrazione nella form di carico. Se non attivo, sarà necessario specificare la data nella form di carico.
 
