@@ -1,6 +1,6 @@
 ---
-title: Fluenti- test rodic
+title: Fluenti - test rodic (Fluenti- test rodic)
 sidebar_position: 2
 ---
 
- procedura progettata per semplificare e velocizzare l'inizializzazione del software gestionale, consentendo di popolare automaticamente il sistema con parametri e tabelle di base. Questa funzionalità riduce notevolmente il tempo e lo sforzo richiesto per la configurazione iniziale, evitando l'inserimento manuale di ogni singola impostazione.
+Procedura proiectată pentru a simplifica și accelera inițializarea software-ului de gestionare, permițând popularea automată a sistemului cu parametrii și tabele de bază. Această funcționalitate reduce semnificativ timpul și efortul necesar pentru configurarea inițială, evitând introducerea manuală a fiecărei setări individuale.
