@@ -1,6 +1,6 @@
 ---
 title: BizLink
-sidebar_position: 1
+sidebar_position: 11
 ---
 
 Modulul se află în secțiunea laterală a aplicației **Fluentis**, pe calea [**Instrumente > BizLink**].
