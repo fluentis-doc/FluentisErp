@@ -13,5 +13,3 @@ Il **Fast Start** è una procedura progettata per semplificare e velocizzare l'i
   Per lanciare la procedura, accedere alla tabella Società e premere il tasto *Impostazioni Generali*.
 
   ATTENZIONE: non deve essere già stato popolato il piano dei conti (in nessuna parte) e nemmeno altre tabelle coinvolte dalla procedura. Si consiglia di decidere subito ed eseguire come prima cosa questa procedura dopo l'installazione.
-
-Tabelle coinvolte (Stored Procedure Fluentis.SH_CreateNewYear_IT):
