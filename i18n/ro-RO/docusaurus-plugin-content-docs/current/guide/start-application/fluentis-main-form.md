@@ -1,82 +1,96 @@
 ---
-title: Fereastră principală Fluentis
+title: La form principale di Fluentis
 sidebar_position: 2
 ---
 
+La form principale di **Fluentis** è composta da più zone con funzionalità diverse:
+
+## Sezione superiore 
+
+La toolbar contiene i combo-box per selezionare la **Società** e/o la **Divisione** che vengono utilizzate per l'inserimento dei dati e l'editore per facilitare la ricerca delle form all'interno dell'applicazione
+
+Subito sotto ci sono diversi tab:
+
+### Primo tab
+
+Contiene Informazioni sulle **Versioni**, permette di **Stampare**, contiene informazioni dettagliate sulla **Licenza**, permette di **Chiudere** il programma.
+
+### Tab Home
+
+Il tab contiene:
+
+- il combo-box per selezionare la **Lingua** desiderata,
+    
+- il combo-box per scegliere il **Menù** di Fluentis,
+
+:::note Menu    
+In base al menu attivato, viene completata la ribbon bar del tab **Home** con le informazioni trasversali a tutta l'applicazione e si aggiungono i tab che corrispondono alle aree di Fluentis.
+:::
+    
+- i **Temi** che l'utente può scegliere per cambiare lo sfondo dell'applicazione in base alle sue esigenze visive,
+    
+- lo spazio disponibile per visualizzare le *form aperte dall'utente*,
+    
+- la **freccia** per nascondere o visualizzare l'intera ribbon bar.
+    
+### I tab delle Aree
+
+Contengono una serie di ribbon raggruppati per tipo/modulo. Per esempio, il tab *Acquisti* contiene tutti i documenti del ciclo attivo: richieste, ordini, DDT, fatture ecc.
+
+### Help
+    
+Per informazioni dettagliate sulla form in uso, l'utente può consultare la documentazione usando **F1** oppure premendo il pulsante **?**.
+
+## Panello sinistro
+
+Contiene la [Form Navigator](/docs/form-navigator/data-grid-settings) con informazioni sulla form attiva.
+
+## Panello destro
+
+Contiene:
+
+**[Strumenti](/docs/applications/applications-intro)** contiene diverse applicazioni complementari: ARM, Audit Trail, BizLink, Business Intelligence, CRM, Gestione Documentale, Applicazioni non supportate.
+
+**[Object Navigator](/docs/object-navigator/object-navigator-intro)** contiene informazioni sull'oggetto attivo, utile a personalizzare le form con l'aggiunta di ulteriori dati o informazioni.
+
+**[Context Panel](/docs/panels/context-panel)** in base alle impostazioni, Fluentis permette di visualizzare informazioni contestuali al campo selezionato (esempio: se selezionate l'articolo l'applicazione mostra la sua disponibilità).
+
+**[Configurazioni](/docs/configurations/configuration)** contiene informazioni che consentiranno la definizione della gestione dei moduli.
+
+**Fluentis Chat** permette di interagire con gli utenti abilitati a tale servizio di comunicazione, sia interno nel contesto aziendale, sia esterno per accedere al supporto di Fluentis. La chat è uno strumento molto utile per condividere informazioni rapidamente con un altro l'operatore, condividere documenti digitali o addirittura documenti attivi del gestionale. 
+
+## Sezione inferiore
+
+Nella parte inferiore dell'applicazione, la barra di stato contiene una serie di informazioni che spieghiamo di seguito:
+
+**Attività**: permette un rapido collegamento con la gestione delle attività pending (derivanti dalle procedure di WorkFlow configurate);
+
+**Calendario**: permette la gestione del calendario, che può essere agganciato con Exchange o Outlook.
+:::note Sincronizzare il *calendario Outlook* con il *calendario Fluentis*. 
+
+1. Configurare l'utente in **ARM** e definire nel tab **Altre Caratteristiche** la mail: 
+
+![](/img/it-it/guide/panels/status-bar/calendar-configuration/image01.png)
 
 
+2. Successivamente, premendo il bottone *Percorso predefinito per Outlook*, verrà richiesto quale calendario configurare tra quelli che trova e il campo **Percorso predefinito per Outlook** verrà compilato automaticamente: 
+
+![](/img/it-it/guide/panels/status-bar/calendar-configuration/image02.png) ![](/img/it-it/guide/panels/status-bar/calendar-configuration/image03.png)
 
 
-Fereastra principală a Fluentis este compusă din mai multe zone: 
+A questo punto, spostandosi in **Calendario** (barra di stato), dopo aver *riavviato* Fluentis, si noterà che la sincronizzazione con Outlook è avvenuta con successo:
 
-1.  sus, în bara de instrumente, sunt combo box-urile **Societății **și **Diviziunii **care vor fi utilizate pentru introducerea datelor, precum și editorul **Caută **care facilitează căutarea form-urilor din aplicație.
-
-![](/img/ro-RO/guide/start-application/fluentis-main-form/image01.png)
-
-2. dedesupt sunt diverse tab-uri:
-
-![](/img/ro-RO/guide/start-application/fluentis-main-form/image02.png)
+![](/img/it-it/guide/panels/status-bar/calendar-configuration/image04.png)
 
 
-
-| **Primul tab**- conține informații despre versiuni- permite imprimarea- conține informații detaliate despre licență- permite închiderea programului | ![](/img/ro-RO/guide/start-application/fluentis-main-form/image03.png) |
-| --- | --- |
-
- 
-
-Tab-ul **Home **conține:
-
-- combo-box (1) pentru alegerea **Limbii;**
-
-- combo-box (2) pentru alegerea **Meniului** Fluentis;
-
-- pe baza meniului activat, aplicația completează ribbon bar-ul tab-ului **Home **(3) cu informațiile necesare întreagii aplicații și sunt adăugate tab-urile (4) care corespund ariilor aplicației Fluentis;
-
-- (5) **temele **pe care utilizatorul le poate alege pentru a schimba fundalul aplicației, în funcție de nevoile sale vizuale
-
-- (6) spațiu disponibil pentru afișarea form-urilor deschise de utilizator
-
-- (7) săgeată pentru a ascunde sau a afișa întreaga ribbon bar
-
-Tab-uri **Arii** cuprind o serie de ribbon grupate după tip/modul. De exemplu, tabul  'Achiziții' conține toate documentele ciclului activ: cereri, ordine, avize, facturi etc.
-
-Pentru detalii despre form-ul curent, utilizatorul poate consulta documentația utilizând tasta F1 sau apăsând butonul **?**.
-
-3. În partea stângă, **Form Navigator**conține informații despre form-ul curent.
+Vedi anche [Pianificazione a calendario delle risorse](/docs/project-management/transverse-procedures).
+:::
 
 
-                 4. În partea dreaptă: 
+**Dashboards**: permette una rapida sintesi dei fatti salienti della gestione con un interfaccia statistica molto potente e facilmente customizzabile;
 
-- **Applications** conține mai multe aplicații: ARM, Audit Trail, BizLink, Business Intelligence, CRM, Document Manager, Applicații nesuportate.
+**Trova**: permette di visualizzare tutti i comandi dell'applicazione. Usato insieme al campo di ricerca che si trova in alto, nel menu principale, possiamo trovare un comando specifico oppure dei comandi raggruppati;
 
-- **Object Navigator** conține informații despre obiectul activ, utile pentru personalizarea form-urilor prin adăugarea de date suplimentare. 
+**...**: permette all'utente di accedere, con clic destra, alla finestra **Navigation Options** per selezionare il numero massimo degli elementi da visualizzare (freccette su/giù per aumentare/diminuire) e per stabilire l'ordine in quale questi devono essere esposti (freccette su/giù per cambiare l'ordine). Usare il pulsante 'OK' per confermare le scelte e il pulsante 'Reset' per tornare alla situazione standard;
 
-- **States navigator** este o interfață pentru administrarea grupurilor de statusuri.
-
-- **Context Panel:**pe baza setărilor, Fluentis afișează informații contextuale în câmpul selectat (de exemplu: dacă selectați articolul aplicația arată disponibilitatea sa).
-
-- **Chat** Fluentis permite interacțiunea cu utilizatorii activați pentru acest serviciu de comunicare, atât interni companiei, cat și externi pentru a solicita asistenta Fluentis. 
-
- 5. În partea inferioară, bara de stare conține o serie de informații:
-
-![](/img/ro-RO/guide/start-application/fluentis-main-form/image04.png)
-
-
-
-1. **Activitate **permite o conexiune rapidă cu gestionarea activităților în așteptare (care derivă din procedurile WorkFlow configurate),  gestionarea DashBoards care permite o sinteză rapidă a activităților cu o interfață statistică puternică și ușor de personalizat.
-
-2. **Calendar** permite gestionarea calendarului, care poate fi asociat cu Exchange sau Outlook;
-
-3. **Dashboards** permit o sinteză rapidă a activităților cu o interfață statistică puternică și ușor de personalizat
-
-4.** Caută**: permite afișarea tuturor comenzilor aplicației. Folosit împreună cu câmpul de căutare care se află sus, în meniul principal, poate găsi o comandă specifică sau comenzi grupate.
-
-5. **...** permite utilizatorului să acceseze, cu clic dreapta, fereastra 'Navigation Options' pentru a selecta numărul maxim de elemente de afișat (săgeți sus/jos pentru a crește/micșora numărul) și pentru a determina ordinea în care să fie expuse (săgeți sus/jos pentru a schimba ordinea). Utilizați butonul 'OK' pentru a confirma opțiunile și butonul 'Reset' pentru a reveni la situația standard.
-
-6. Informațiile afișate se referă la conexiunea la baza de date și sunt, în ordinea afișată în imagine: Utilizator, Server\Database, Societate (Diviziune).
-
-
-
-
-
-
+**Database**: le informazioni esposte fanno riferimento alla connessione alla database e sono, in ordine visualizzata: *Utente*, *Server\Database*, *Società*, (*Divisione*).
