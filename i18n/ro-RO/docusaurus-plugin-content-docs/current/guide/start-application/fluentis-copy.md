@@ -1,96 +1,96 @@
 ---
-title: La form principale di Fluentis
+title: Interfața principală Fluentis (La form principale di Fluentis)
 sidebar_position: 2
 ---
 
-La form principale di **Fluentis** è composta da più zone con funzionalità diverse:
+Interfața principală a **Fluentis** este compusă din mai multe zone cu funcționalități diferite:
 
-## Sezione superiore 
+## Secțiunea superioară 
 
-La toolbar contiene i combo-box per selezionare la **Società** e/o la **Divisione** che vengono utilizzate per l'inserimento dei dati e l'editore per facilitare la ricerca delle form all'interno dell'applicazione
+Toolbar-ul conține combo-box-uri pentru a selecta **Societăţi** și/sau **Diviziune** care sunt folosite pentru introducerea datelor și editorul pentru a facilita căutarea formularelor în cadrul aplicației.
 
-Subito sotto ci sono diversi tab:
+Imediat sub aceasta sunt diferite tab-uri:
 
-### Primo tab
+### Primul tab
 
-Contiene Informazioni sulle **Versioni**, permette di **Stampare**, contiene informazioni dettagliate sulla **Licenza**, permette di **Chiudere** il programma.
+Conține informații despre **Versiuni**, permite **Tipărirea (Stampare)**, conține informații detaliate despre **Licenţă**, permite **Închiderea (Chiudere)** programului.
 
-### Tab Home
+### Tabul Acasă (Home)
 
-Il tab contiene:
+Tab-ul conține:
 
-- il combo-box per selezionare la **Lingua** desiderata,
-    
-- il combo-box per scegliere il **Menù** di Fluentis,
+- combo-box pentru a selecta **Limba** dorită,
 
-:::note Menu    
-In base al menu attivato, viene completata la ribbon bar del tab **Home** con le informazioni trasversali a tutta l'applicazione e si aggiungono i tab che corrispondono alle aree di Fluentis.
+- combo-box pentru a alege **Meniul (Menù)** Fluentis,
+
+:::note Meniu    
+În funcție de meniul activat, ribbon bar-ul tab-ului **Home** este completat cu informațiile transversale la întreaga aplicație și se adaugă tab-urile care corespund domeniilor din Fluentis.
 :::
+
+- **Temă** pe care utilizatorul le poate alege pentru a schimba fundalul aplicației în funcție de nevoile sale vizuale,
+
+- spațiul disponibil pentru a vizualiza *formele deschise de utilizator*,
+
+- **săgeata (freccia)** pentru a ascunde sau a vizualiza întreaga ribbon bar.
     
-- i **Temi** che l'utente può scegliere per cambiare lo sfondo dell'applicazione in base alle sue esigenze visive,
+### Tab-urile Domeniilor
+
+Conțin o serie de ribbon-uri grupate după tip/modul. De exemplu, tab-ul *Achiziţii* conține toate documentele ciclului activ: solicitări, comenzi, DDT, facturi etc.
+
+### Ajutor (Help)
     
-- lo spazio disponibile per visualizzare le *form aperte dall'utente*,
-    
-- la **freccia** per nascondere o visualizzare l'intera ribbon bar.
-    
-### I tab delle Aree
+Pentru informații detaliate despre formularul în utilizare, utilizatorul poate consulta documentația folosind **F1** sau apăsând butonul **?**.
 
-Contengono una serie di ribbon raggruppati per tipo/modulo. Per esempio, il tab *Acquisti* contiene tutti i documenti del ciclo attivo: richieste, ordini, DDT, fatture ecc.
+## Panoul stâng
 
-### Help
-    
-Per informazioni dettagliate sulla form in uso, l'utente può consultare la documentazione usando **F1** oppure premendo il pulsante **?**.
+Conține [Navigatorul Formularelor (Form Navigator)](/docs/form-navigator/data-grid-settings) cu informații despre formularul activ.
 
-## Panello sinistro
+## Panoul drept
 
-Contiene la [Form Navigator](/docs/form-navigator/data-grid-settings) con informazioni sulla form attiva.
+Conține:
 
-## Panello destro
+**[Instrumente (Strumenti)](/docs/applications/applications-intro)** conține diverse aplicații complementare: ARM, Audit Trail, BizLink, Business Intelligence, CRM, Gestionare Documentală, Aplicații nesuportate.
 
-Contiene:
+**[Navigatorul de Obiecte (Object Navigator)](/docs/object-navigator/object-navigator-intro)** conține informații despre obiectul activ, util pentru personalizarea formularelor cu adăugarea de date sau informații suplimentare.
 
-**[Strumenti](/docs/applications/applications-intro)** contiene diverse applicazioni complementari: ARM, Audit Trail, BizLink, Business Intelligence, CRM, Gestione Documentale, Applicazioni non supportate.
+**[Panoul de Context (Context Panel)](/docs/panels/context-panel)** în funcție de setări, Fluentis permite vizualizarea informațiilor contextuale pentru câmpul selectat (exemplu: dacă este selectat articolul, aplicația va arăta disponibilitatea acestuia).
 
-**[Object Navigator](/docs/object-navigator/object-navigator-intro)** contiene informazioni sull'oggetto attivo, utile a personalizzare le form con l'aggiunta di ulteriori dati o informazioni.
+**[Configurări (Configurazioni)](/docs/configurations/configuration)** conține informații care vor permite definirea gestionării formularelor.
 
-**[Context Panel](/docs/panels/context-panel)** in base alle impostazioni, Fluentis permette di visualizzare informazioni contestuali al campo selezionato (esempio: se selezionate l'articolo l'applicazione mostra la sua disponibilità).
+**Fluentis Chat** permite interacțiunea cu utilizatorii autorizați pentru acest serviciu de comunicare, atât intern în contextul corporativ, cât și extern pentru a accesa suportul Fluentis. Chatul este un instrument foarte util pentru a împărtăși rapid informații cu alt operator, a partaja documente digitale sau chiar documente active ale gestionării. 
 
-**[Configurazioni](/docs/configurations/configuration)** contiene informazioni che consentiranno la definizione della gestione dei moduli.
+## Secțiunea inferioară
 
-**Fluentis Chat** permette di interagire con gli utenti abilitati a tale servizio di comunicazione, sia interno nel contesto aziendale, sia esterno per accedere al supporto di Fluentis. La chat è uno strumento molto utile per condividere informazioni rapidamente con un altro l'operatore, condividere documenti digitali o addirittura documenti attivi del gestionale. 
+În partea inferioară a aplicației, bara de stare conține o serie de informații pe care le vom explica mai jos:
 
-## Sezione inferiore
+**Sarcini**: permite un link rapid cu gestionarea activităților pendente (derivate din procedurile de WorkFlow configurate);
 
-Nella parte inferiore dell'applicazione, la barra di stato contiene una serie di informazioni che spieghiamo di seguito:
+**Calendar**: permite gestionarea calendarului, care poate fi conectat cu Exchange sau Outlook.
+:::note Sincronizați *calendarul Outlook* cu *calendarul Fluentis*. 
 
-**Attività**: permette un rapido collegamento con la gestione delle attività pending (derivanti dalle procedure di WorkFlow configurate);
-
-**Calendario**: permette la gestione del calendario, che può essere agganciato con Exchange o Outlook.
-:::note Sincronizzare il *calendario Outlook* con il *calendario Fluentis*. 
-
-1. Configurare l'utente in **ARM** e definire nel tab **Altre Caratteristiche** la mail: 
+1. Configurați utilizatorul în **ARM** și definiți în tab-ul **Alte opţiuni** email-ul: 
 
 ![](/img/it-it/guide/panels/status-bar/calendar-configuration/image01.png)
 
 
-2. Successivamente, premendo il bottone *Percorso predefinito per Outlook*, verrà richiesto quale calendario configurare tra quelli che trova e il campo **Percorso predefinito per Outlook** verrà compilato automaticamente: 
+2. Ulterior, apăsând butonul *Cale implicită Outlook*, va fi solicitat care calendar să fie configurat dintre cele găsite, iar câmpul **Calea implicită pentru Outlook** va fi completat automat: 
 
 ![](/img/it-it/guide/panels/status-bar/calendar-configuration/image02.png) ![](/img/it-it/guide/panels/status-bar/calendar-configuration/image03.png)
 
 
-A questo punto, spostandosi in **Calendario** (barra di stato), dopo aver *riavviato* Fluentis, si noterà che la sincronizzazione con Outlook è avvenuta con successo:
+În acest punct, mutându-vă în **Calendar** (bara de stare), după ce ați *repornit* Fluentis, veți observa că sincronizarea cu Outlook a avut loc cu succes:
 
 ![](/img/it-it/guide/panels/status-bar/calendar-configuration/image04.png)
 
 
-Vedi anche [Pianificazione a calendario delle risorse](/docs/project-management/transverse-procedures).
+Vezi de asemenea [Planificarea pe calendar a resurselor](/docs/project-management/transverse-procedures).
 :::
 
 
-**Dashboards**: permette una rapida sintesi dei fatti salienti della gestione con un interfaccia statistica molto potente e facilmente customizzabile;
+**Dashboards**: permite o sinteză rapidă a principalelor fapte din gestionare cu o interfață statistică foarte puternică și ușor personalizabilă;
 
-**Trova**: permette di visualizzare tutti i comandi dell'applicazione. Usato insieme al campo di ricerca che si trova in alto, nel menu principale, possiamo trovare un comando specifico oppure dei comandi raggruppati;
+**Caută**: permite vizualizarea tuturor comenzilor aplicației. Folosit împreună cu câmpul de căutare care se află în partea de sus, în meniul principal, putem găsi un comandă specifică sau comenzi grupate;
 
-**...**: permette all'utente di accedere, con clic destra, alla finestra **Navigation Options** per selezionare il numero massimo degli elementi da visualizzare (freccette su/giù per aumentare/diminuire) e per stabilire l'ordine in quale questi devono essere esposti (freccette su/giù per cambiare l'ordine). Usare il pulsante 'OK' per confermare le scelte e il pulsante 'Reset' per tornare alla situazione standard;
+**...**: permite utilizatorului să acceseze, cu clic dreapta, fereastra **Opțiuni de Navigare (Navigation Options)** pentru a selecta numărul maxim de elemente de vizualizat (săgețile sus/jos pentru a crește/scădea) și pentru a stabili ordinea în care acestea trebuie să fie afișate (săgețile sus/jos pentru a schimba ordinea). Folosiți butonul 'OK' pentru a confirma alegerile și butonul 'Reset' pentru a reveni la situația standard;
 
-**Database**: le informazioni esposte fanno riferimento alla connessione alla database e sono, in ordine visualizzata: *Utente*, *Server\Database*, *Società*, (*Divisione*).
+**Bază de date**: informațiile afișate fac referire la conexiunea la baza de date și sunt, în ordinea vizualizată: *Utilizator*, *Server/Bază de date (Server\Database)*, *Societăţi*, (*Diviziune*).
