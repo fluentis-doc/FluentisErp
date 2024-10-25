@@ -1,5 +1,5 @@
 ---
-title: Fluentis Fast Start - roadmap startup nou mediu operațional (roadmap startup nuovo ambiente operativo)
+title: Fluentis Fast Start
 sidebar_position: 2
 ---
 
