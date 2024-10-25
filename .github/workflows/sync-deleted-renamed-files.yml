@@ -2,8 +2,8 @@ name: Sync Deleted and Renamed Files in Localization Folder
 
 on:
   push:
-#    branches:
-#      - main
+    branches:
+      - main
     paths:
       - 'docs/**'  # Trigger only if files in the docs folder are changed
 
