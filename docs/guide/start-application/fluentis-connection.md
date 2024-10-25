@@ -3,8 +3,8 @@ title: Accesso a Fluentis
 sidebar_position: 1
 ---
 
-Per accedere a **Fluentis** si può usare:
-
+Per accedere a **Fluentis** si può usare: xxxxx
+xxxxxxxxxxxxcccccccccccc
 - l'icona che si trova sul desktop e che rappresenta il shortcut per accedere all'applicazione  
     oppure  
 - dal menu dei Programmi windows con doppio clic su: **Fluentis.Portal.Wpf**.  
