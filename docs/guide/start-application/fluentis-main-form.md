@@ -49,7 +49,7 @@ Contiene la [Form Navigator](/docs/form-navigator/data-grid-settings) con infor
 
 Contiene:
 
-**[Strumenti](/docs/applications/applications-intr)** contiene diverse applicazioni complementari: ARM, Audit Trail, BizLink, Business Intelligence, CRM, Gestione Documentale, Applicazioni non supportate.
+**[Strumenti](/docs/applications/applications-intro)** contiene diverse applicazioni complementari: ARM, Audit Trail, BizLink, Business Intelligence, CRM, Gestione Documentale, Applicazioni non supportate.
 
 **[Object Navigator](/docs/object-navigator/object-navigator-intro)** contiene informazioni sull'oggetto attivo, utile a personalizzare le form con l'aggiunta di ulteriori dati o informazioni.
 
