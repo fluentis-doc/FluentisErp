@@ -1,6 +1,6 @@
 ---
-title: Fluentis Fast Start - roadmap startup nuovo ambiente operativo
+title: Fluentis Fast Start - roadmap startup nou mediu operațional (roadmap startup nuovo ambiente operativo)
 sidebar_position: 2
 ---
 
-Il **Fast Start** è una procedura progettata per semplificare e velocizzare l'inizializzazione del software gestionale.
+**Fast Start (Fast Start)** este o procedură concepută pentru a simplifica și accelera inițializarea software-ului de gestionare.
