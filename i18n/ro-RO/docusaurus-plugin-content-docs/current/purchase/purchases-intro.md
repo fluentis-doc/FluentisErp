@@ -1,79 +1,79 @@
 ---
-title: ACQUISTI
+title: Achiziţii
 sidebar_position: 1
 ---
 
-La gestione **Acquisti** di Fluentis ERP è concepita per supportare gli operatori aziendali nella gestione rapida di tutta la documentazione relativa alla gestione della Supply Chain.   
+Gestionarea **Achiziţii** din Fluentis ERP este concepută pentru a sprijini operatorii din cadrul companiilor în gestionarea rapidă a întreagăi documentații referitoare la administrarea lanțului de aprovizionare.   
 
-Tramite l'emissione di ordini di fornitura, che possono avvenire in modalità manuale o automatica, è possibile procedere con l'approvvigionamento delle merci finalizzate alla gestione della produzione o del magazzino e la creazione di tutti i documenti necessari per il processo di fornitura, tra cui *DDT di acquisto*, *Fatture*, *Richieste di Acquisto*, *Richieste di Offerta*.   
+Prin emiterea comenzilor de furnizare, care pot avea loc în mod manual sau automat, este posibil să se procedeze cu aprovizionarea bunurilor necesare gestionării producției sau stocului și crearea tuturor documentelor necesare pentru procesul de furnizare, inclusiv *Avize de achiziţie*, *Facturi de Vânzare*, *Cereri de Achiziţie*, *Cereri de oferte*.   
 
-L’interconnessione con l’area **Logistica** garantisce l'aggiornamento delle giacenze e la generazione di richieste di reintegro delle scorte, mentre l'integrazione con l’area **Amministrazione** facilita la gestione finanziaria degli acquisti, assicurando un processo fluido e la registrazione accurata delle transazioni.    
-L'area *Acquisti* è integrata anche con la **Pianificazione** mediante la generazione di RDA a partire da richieste di materiale necessario per la produzione e con l'area **Vendite** grazie alla possibilità di generare ordini fornitore a partire da ordini clienti.
+Interconectarea cu domeniul **Logistică** garantează actualizarea stocurilor și generarea cererilor de refill pentru stocuri, în timp ce integrarea cu domeniul **Administrativ** facilitează gestionarea financiară a achizițiilor, asigurând un proces fluid și înregistrarea precisă a tranzacțiilor.    
+Zona *Achiziţii* este, de asemenea, integrată cu **Planificare** prin generarea RDA (Cereri de Aprovizionare) pe baza cererilor de material necesar pentru producție și cu domeniul **Vânzări** datorită posibilității de a genera comenzi de furnizor pe baza comenzilor clienților.
 
-## Moduli dell'area
+## Modulele domeniului
 
 import Link from '@docusaurus/Link';
 
 <div className="cardContainer">
     <div className="card">
-###     <Link to="/docs/purchase/purchase-requests/general-overview">Richieste di acquisto</Link>
-        <p>Elaborazione della richiesta di materiale da acquistare a partire da richieste provenienti da altri reparti o segnalazioni di carenze. </p>
+###     <Link to="/docs/purchase/purchase-requests/general-overview">Cereri de achiziție (Richieste di acquisto)</Link>
+        <p>Elaborarea cererii de material de achiziționat în baza cererilor provenite din alte departamente sau semnalărilor de lipsuri.</p>
     </div>
     <div className="card">
-###     <Link to="/docs/purchase/offer-request/settings">Richieste di offerta</Link>
-        <p>Confronto preventivi dei fornitori per scegliere l'offerta migliore e trasformarla in ordine di acquisto.</p>
-    </div>
-</div>
-<div className="cardContainer">
-    <div className="card">
-###     <Link to="/docs/purchase/purchase-orders/general-overview">Ordini fornitori</Link>
-        <p>Gestione e organizzazione del processo di acquisto di beni e servizi dai fornitori. </p>
-    </div>
-    <div className="card">
-###     <Link to="/docs/purchase/goods-reception/receipt-goods-form-settings-and-structure">Ricevimento merci</Link>
-        <p>Registrazione dell'arrivo della merce pirma della creazione del DDT o della fattura di acquisto. </p>
+###     <Link to="/docs/purchase/offer-request/settings">Cereri de ofertă (Richieste di offerta)</Link>
+        <p>Compararea ofertelor furnizorilor pentru a alege cea mai bună ofertă și a o transforma în comandă de achiziție.</p>
     </div>
 </div>
 <div className="cardContainer">
     <div className="card">
-###     <Link to="/docs/purchase/purchase-delivery-note/general-overview">DDT di acquisto</Link>
-        <p>Tracciamento e documentazione del trasferimento delle merci in entrata e registrazione a magazzino. </p>
+###     <Link to="/docs/purchase/purchase-orders/general-overview">Comenzi furnizori (Ordini fornitori)</Link>
+        <p>Gestionarea și organizarea procesului de achiziție a bunurilor și serviciilor de la furnizori.</p>
     </div>
     <div className="card">
-###     <Link to="/docs/purchase/purchase-invoices/general-overview">Fatture di acquisto</Link>
-        <p>Attestazione dell'importo dovuto dall'azienda a un fornitore per beni o servizi ricevuti, specificando i costi, l'IVA e le condizioni di pagamento. </p>
-    </div>
-</div>
-<div className="cardContainer">
-    <div className="card">
-###     <Link to="/docs/purchase/purchase-price-lists/general-overview">Listini fornitori</Link>
-        <p>Gestione e aggiornamento dei prezzi concordati con i fornitori, automatizzando l'applicazione di prezzi, sconti ed eventuali condizioni personalizzate. </p>
-    </div>
-    <div className="card">
-###     Commesse di acquisto
-        <p>Gestione di commesse di acquisto sulla base di contratti precedentemente negoziati con il fornitore. </p>
+###     <Link to="/docs/purchase/goods-reception/receipt-goods-form-settings-and-structure">Recepția bunurilor (Ricevimento merci)</Link>
+        <p>Înregistrarea sosirii bunurilor înainte de crearea DDT-ului sau a facturii de achiziție.</p>
     </div>
 </div>
 <div className="cardContainer">
     <div className="card">
-###     Gestione prezzi
-        <p><Link to="/docs/purchase/price-control/definition" className="bold-link">Definizione politiche sconti</Link></p>
-        <p>Applicazione di sconti associati al fornitore, alla classe articolo e/o alle categorie di sconto.</p>
-        <p><Link to="/docs/purchase/price-control/formulas" className="bold-link">Formule di aggiornamento politiche prezzi/sconti</Link></p>
-        <p>Definizione delle regole di aggiornamento dei prezzi nei listini di acquisto/vendita. </p>
-        <p><Link to="/docs/purchase/price-control/correspondence" className="bold-link">Corrispondenza categorie sconto acq//ven</Link></p>
-        <p>Abbinamento della categoria di sconto generica alle condizioni di sconto da applicare ai propri clienti/fornitori.</p>
+###     <Link to="/docs/purchase/purchase-delivery-note/general-overview">DDT de achiziție (DDT di acquisto)</Link>
+        <p>Urmărirea și documentarea transferului bunurilor în intrare și înregistrarea la stoc.</p>
+    </div>
+    <div className="card">
+###     <Link to="/docs/purchase/purchase-invoices/general-overview">Facturi de achiziție (Fatture di acquisto)</Link>
+        <p>Atestarea sumei datorate de către companie unui furnizor pentru bunuri sau servicii primite, specificând costurile, TVA-ul și condițiile de plată.</p>
+    </div>
+</div>
+<div className="cardContainer">
+    <div className="card">
+###     <Link to="/docs/purchase/purchase-price-lists/general-overview">Listine furnizori (Listini fornitori)</Link>
+        <p>Gestionarea și actualizarea prețurilor convenite cu furnizorii, automatizând aplicarea prețurilor, reducerilor și eventualelor condiții personalizate.</p>
+    </div>
+    <div className="card">
+###     Comenzi de achiziție (Commesse di acquisto)
+        <p>Gestionarea comenzilor de achiziție pe baza contractelor negociate anterior cu furnizorul.</p>
+    </div>
+</div>
+<div className="cardContainer">
+    <div className="card">
+###     Gestionarea prețurilor (Gestione prezzi)
+        <p><Link to="/docs/purchase/price-control/definition" className="bold-link">Definirea politicilor de reduceri (Definizione politiche sconti)</Link></p>
+        <p>Aplicarea reducerilor asociate furnizorului, clasei de articole și/sau categoriilor de reducere.</p>
+        <p><Link to="/docs/purchase/price-control/formulas" className="bold-link">Formulele de actualizare a politicilor de prețuri/reduceri (Formule di aggiornamento politiche prezzi/sconti)</Link></p>
+        <p>Definirea regulilor de actualizare a prețurilor în listele de achiziție/vânzare.</p>
+        <p><Link to="/docs/purchase/price-control/correspondence" className="bold-link">Corespondența categoriilor de discount achiziție/vânzare (Corrispondenza categorie sconto acq//ven)</Link></p>
+        <p>Asocierea categoriei de discount generice la condițiile de discount care trebuie aplicate clienților/ furnizorilor proprii.</p>
     </div>
 </div>
 
-## Fast start
+## Lansare rapidă (Fast start)
 
-:::important ATTENZIONE
-Prima di utilizzare le funzionalità disponibili è necessario configurare le Tabelle e i Parametri dell'area.
+:::important ATENȚIE (ATTENZIONE)
+Înainte de a utiliza funcționalitățile disponibile, este necesar să configurați Tabelele și Parametrii domeniului.
 
-In alternativa è disponibile la procedura di Fast Start descritta di seguito. 
+Alternativ, este disponibilă procedura de Lansare Rapidă descrisă mai jos. 
 :::
 
-Il Fast Start è una procedura progettata per semplificare e velocizzare l'inizializzazione del software gestionale, consentendo di popolare automaticamente il sistema con parametri e tabelle di base. Questa funzionalità riduce notevolmente il tempo e lo sforzo richiesto per la configurazione iniziale, evitando l'inserimento manuale di ogni singola impostazione.    
+Lansarea Rapidă este o procedură concepută pentru a simplifica și accelera inițializarea software-ului de gestionare, permițând popularea automată a sistemului cu parametrii și tabele de bază. Această funcționalitate reduce semnificativ timpul și efortul necesar pentru configurarea inițială, evitând introducerea manuală a fiecărei setări.    
 
-Consigliamo di consultare il relativo [articolo](/docs/guide/fast-start#tabelle-acquisti) prima di affrontare il modulo.
+Vă recomandăm să consultați articolul corespunzător [articol](/docs/guide/fast-start#tabelle-acquisti) înainte de a aborda modulul.
