@@ -26,7 +26,7 @@ import Link from '@docusaurus/Link';
 </div>
 <div className="cardContainer">
     <div className="card">
-###     <Link to="/docs/purchase/purchase-orders/general-overview">Comenzi furnizori (Ordini fornitori)</Link>
+###     <Link to="/docs/purchase/purchase-orders/general-overview">Ordine furnizori</Link>
         <p>Gestionarea și organizarea procesului de achiziție de bunuri și servicii de la furnizori. </p>
     </div>
     <div className="card">
@@ -36,7 +36,7 @@ import Link from '@docusaurus/Link';
 </div>
 <div className="cardContainer">
     <div className="card">
-###     <Link to="/docs/purchase/purchase-delivery-note/general-overview">DDT de achiziție (DDT di acquisto)</Link>
+###     <Link to="/docs/purchase/purchase-delivery-note/general-overview">Avize de achiziție</Link>
         <p>Urmărirea și documentarea transferului de mărfuri în intrare și înregistrarea în depozit. </p>
     </div>
     <div className="card">
