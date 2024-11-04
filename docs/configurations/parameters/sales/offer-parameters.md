@@ -3,6 +3,12 @@ title: Parametri offerte
 sidebar_position: 2
 ---
 
+:::tip[FAst Start]
+La tabella è interessata dalla procedura di [**Fast Start**](/docs/guide/fast-start)
+
+Nel caso in cui si intenda configurare manualmente fare riferimento alla check list della pagina linkata
+:::
+
 I parametri offerte permettono l'impostazione di base per gestire correttamente e secondo le specifiche richieste da ogni singola società. La finestra si compone di due tab: Generale e Scarico.     
 
 ### Generale 

@@ -75,7 +75,7 @@ Se il valore residuo della fattura di anticipo è sufficiente a coprire la spesa
 
 **Priorità di inserimento delle informazioni**: indicare l'ordine con cui inserire i dati nelle fatture generate dalla valorizzazione interventi. 
 
-**PIANO DI FATTURAZIONE**
+### PIANO DI FATTURAZIONE
 
 Le regole da applicare al piano di fatturazione dell'intervento possono essere stabilite nei parametri generali della Gestione Progetti, ed essere quindi valide per tutti i clienti, oppure specifiche per cliente. 
 La procedura di calcolo del piano di fatturazione controllerà prima la presenza di configurazioni specifiche per il cliente, e se non presenti, considererà quelle presenti nei parametri generali. 

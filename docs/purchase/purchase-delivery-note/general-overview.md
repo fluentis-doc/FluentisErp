@@ -12,9 +12,9 @@ Il DDT viene generato quando un fornitore spedisce la merce ordinata e contiene 
 La generazione automatica del DDT può avvenire mediante:
 
 - **Evasione da Ordini fornitore**: sia dall'interno del DDT utilizzando il pulsante Evasione da ordini, sia attraverso l'apposita [procedura](/docs/purchase/purchase-delivery-note/procedures/create-delivery-notes-from-orders). Entrambe le modalità permettono l'evasione parziale o totale di più ordini intestati allo stesso fornitore all'interno di un unico DDT.   
-- **Creazione da ricevimento merci**: utilizzando la [procedura](/docs/purchase/purchase-delivery-note/procedures/create-delivery-notes-from-orders) omonima; permette la creazione del DDT anche quando l'ordine è già stato evaso all'interno di un *Ricevimento merci*.  
+- **Creazione da ricevimento merci**: utilizzando la [procedura](/docs/purchase/purchase-delivery-note/procedures/create-delivery-note-from-goods-receipt) omonima; permette la creazione del DDT anche quando l'ordine è già stato evaso all'interno di un *Ricevimento merci*.  
 
-Una volta generato e controllato, il DDT di acquisto può essere [caricato a magazzino](/docs/purchase/purchase-delivery-note/procedures/create-delivery-notes-from-orders) per registrare l'arrivo della merce e aggiornare le giacenze di materiale e [valorizzato](/docs/purchase/purchase-delivery-note/procedures/create-delivery-notes-from-orders).
+Una volta generato e controllato, il DDT di acquisto può essere [caricato a magazzino](/docs/purchase/purchase-delivery-note/procedures/load-delivery-notes-on-warehouse) per registrare l'arrivo della merce e aggiornare le giacenze di materiale e [valorizzato](/docs/purchase/purchase-invoices/procedures/purchase-delivery-note-valorization).
 
 ### **Funzionalità principali**
 

@@ -1,78 +1,84 @@
 ---
-title: Inserimento Ricevimento Merci
+title: Nuovo Ricevimento Merci
 sidebar_position: 3
 ---
 
-Percorsi creazione nuovo **Ricevimento Merci**:
+La form si apre tramite il percorso **Acquisti > Ricevimento merci > Crea ricevimento merci** oppure dal filtro di ricerca del Ricevimento merci, mediante il pulsante *Nuovo*.
 
-- andando in **Acquisti > Ordine fornitore > Crea ricevimento merci**  
 
-- oppure tramite il pulsante **Nuovo** che si trova nella form  [Ricerca ricevimento merci](/docs/purchase/goods-reception/search-goods-reception).
+## Sezione superiore
 
-## Dati obbligatori
+Per creare il ricevimento merci, l'utente deve inserire i seguenti dati:
 
-import Vendor from './../../import/fields/vendor.md'
-
-<Vendor />
-
-**Tipo ricevimento merci**: predefinito in  *Configurazione > Tabelle > Acquisti > Tipi ricevimento merci*. Questo campo determina il range di numerazione del documento che si sta inserendo e propone automaticamente il **Numero** in base alla data inserimento e all'ultimo numero inserito;  
-**Numero**: viene proposto automaticamente in base al tipo, ma può essere modificato manualmente sempre rispettando la regola di progressione tra data e numero;  
-**Data ricevimento**: viene proposta automaticamente la data corrente, ma può essere modificata manualmente sempre rispettando la regola di progressione tra data e numero.
+- **Fornitore**: può essere inserito usando l'[help di campo](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection#inserimento-con-il-help-di-campo) oppure [manualmente](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection#inserimento-manuale).  
+- **Tipo documento**: predefinito nella tabella [Tipi ricevimento merci](/docs/configurations/tables/purchase/goods-receipt-types). Questo campo determina il range di numerazione del documento che si sta inserendo e propone automaticamente il *Numero* in base alla data inserimento e all'ultimo numero inserito.   
+- **Numero ricevuta**: viene proposto automaticamente in base al tipo, ma può essere modificato manualmente sempre rispettando la regola di progressione tra data e numero.  
+- **Data ricevimento**: viene proposta automaticamente la data corrente, ma può essere modificata manualmente sempre rispettando la regola di progressione tra data e numero.
+- **Progetto**: posizionato nella parte inferiore alla griglia articoli; rappresenta il progetto da associare al documento e può essere selezionato tramite l'apposito help progetti.
 
 ## Articoli
 
-import RowType from './../../import/sections/row-type.md'
+- **Tipo riga** offre la possibilità di selezionare, dalla combo-box, articoli con caratteristiche diverse:
+> - *Articolo codificato*: sono gli articoli codificati in anagrafica e possono essere contabilizzati in contabilità analitica e registrati in magazzino. <br />
+> - *Articolo omaggio*: viene gestito come un articolo codificato o non codificato ai fini fiscali e di magazzino, ma essendo un omaggio viene conteggiato separatamente nei riepiloghi del documento e in base al flag Rivalsa iva viene calcolato l'importo dell'iva dell'omaggio a carico del soggetto oppure no.
 
-<RowType />
+:::note Nota
+Se si parte direttamente con l'inserimento dell'articolo, la sua classe, il codice e il tipo riga (*Articolo codificato*) vengono inseriti automaticamente.
+:::
 
-**Codice**: fa riferimento al *Codice articolo barcode* inserito nei *Articoli > tab Codice barcode*.  
+- **Codice**: fa riferimento al Codice articolo barcode inserito nell'*Anagrafica articoli > tab Codice barcode*. 
 
-import ItemClassDescription from './../../import/sections/item-class-description.md'
+- **Classe/Codice/Descrizione articolo**: si possono inserire manualmente oppure con l'ausilio dell'help di campo il quale proporrà tutti i dati relativi inseriti nell'Anagrafica articolo. Dopo l'inserimento dell'articolo, la sua Descrizione sarà ripresa automaticamente dall'anagrafica. Se l'articolo ha Varianti, sarà possibile selezionare la variante desiderata dal tab Dati articolo.
 
-<ItemClassDescription />
+- **Codice/Variente articolo fornitore**: fa riferimento al codice che il fornitore utilizza per identificare l'articolo e all'eventuale variante; questo dato viene proposto in automatico se nell'anagrafica dell'articolo, tab [Fornitori preferenziali](/docs/erp-home/registers/items/create-new-items/item-registry/preferential-vendors/) è stato associato un articolo fornitore. 
 
-import Variant from './../../import/fields/item-variant.md'
+- **Unità di misura**: viene proposta l'unità di misura principale dell'articolo, ma nel caso in cui nell'anagrafica articolo siano codificate unità di misura alternative l'utente ha la possibilità di sceglierne un'altra.
 
-<Variant />
+- **Quantità documento**: rappresenta la quantità della U.M. principale; viene inserita la quantità riferita all'ordine fornitore evaso, non è un dato obbligatorio.   
 
-**Codice articolo fornitore**: fa riferimento alla tabella degli *Articoli fornitore*;  
-**Variante articolo fornitore**: fa riferimento alla tabella delle *Varianti* degli articoli fornitore;  
+- **Quantità ricevuta**: rappresenta la quantità effettivamente ricevuta.  
 
-import UM from './../../import/fields/item-um.md'
+- **Prezzo**: rappresenta il *prezzo* presente nell'ordine fornitore, se la riga ricevimento ha evaso una riga ordine fornitore, o il *costo ultimo* di anagrafica articoli.
 
-<UM />
+- **Riferimento ordine**: se la riga è stata creata evadendo una riga ordine fornitore viene riportato il numero ordine evaso.
 
-**Quantità documento**: rappresenta la quantità della U.M. principale; viene inserita la quantità riferita all'ordine fornitore evaso, non è un dato obbligatorio;  
-**Quantità ricevuta**: rappresenta la quantità effettivamente ricevuta;  
-**Unità di misura alternativa**: viene proposta U.M. presente nel tab U.M. alternative dell'*Anagrafica articolo* con il flag di *Default* impostato;  
-**Quantità alternativa**: viene proposto il valore relativo all' U.M. alternativa, calcolato moltiplicando o dividendo la quantità gestionale (relativa all' U.M. principale) con il fattore di conversione impostato nell'*Anagrafica articolo > tab UM alternativa*;  
-**Prezzo**: rappresenta il *prezzo* presente nell'ordine fornitore, se la riga ricevimento ha evaso una riga ordine fornitore, o il *costo ultimo* di anagrafica articoli;  
-**Opzione**: il dato, obbligatorio, corrisponde alla tabella delle *Opzioni* della distinta base;  
-**Magazzino**: è il magazzino di ricevimento della merce, viene ripreso dall'ordine fornitore se la riga ricevimento ha evaso una riga ordine fornitore oppure può essere inserito [manualmente ](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) dall'utente;  
-**Causale**: è la causale di ricevimento della merce, viene ripresa dall'ordine fornitore se la riga ricevimento ha evaso una riga ordine fornitore oppure può essere inserita [manualmente ](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) dall'utente;  
-**Riferimento ordine**: se la riga è stata creata evadendo una riga ordine fornitore viene riportato il numero ordine evaso;  
-**Ubicazione**: se la causale ha un'ubicazione di default viene proposta tale ubicazione altrimenti può essere inserita [manualmente ](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) se il magazzino è gestito ad ubicazioni.  
+- **Ubicazione**: se la causale ha un'ubicazione di default viene proposta tale ubicazione altrimenti può essere inserita [manualmente ](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) se il magazzino è gestito ad ubicazioni.  
 
 *Pulsanti specifici*:
 
-import PackagesManagement from './../../import/procedure/packages-management.md'
-
-> **Evasione da ordine**: permette di di creare un ricevimento merci evadendo le righe di un ordine fornitore con la procedura [Evasione da ordini fornitori](/docs/purchase/purchase-delivery-note/insert-purchase-delivery-note/header-procedures/execution-from-purchase-order).
-> <PackagesManagement />
+> **Evasione da ordine**: permette di di creare un ricevimento merci evadendo le righe di un ordine fornitore con la procedura [Evasione da ordini fornitori](/docs/purchase/purchase-delivery-note/insert-purchase-delivery-note/header-procedures/execution-from-purchase-order).   
+>
+> **Gestione imballi**: permette l'apertura della gestione degli imballi a rendere usati nel documento di acquisto. Il pulsante diventa attivo se il documento è salvato, ma non caricato.   
+> Con clic su questo pulsante si apre la form corrispondente dove inserire la quantità, selezionare la riga ed eseguire il trasferimento dell'imballo selezionato nelle righe articolo cliccando sul pulsante *Execute*. In questa form vengono riportati gli articoli che sono stati inseriti con natura *Imballo* e che sono presenti nella tabella degli [Imballi a rendere](/docs/configurations/tables/logistics/package-to-be-returned).
 
 ### Lotti
 
-Vengono riportati i lotti che devono essere caricati nel magazzino e che sono collegati all'articolo in  Anagrafica articolo > tab [Lotti e Serial Number](/docs/erp-home/registers/items/create-new-items/item-registry/lots-and-serial-number) oppure possono essere inserite manualmente.
+Nelle due griglie possono essere inseriti i lotti e numeri seriali che devono essere caricati nel magazzino. 
+Se l'articolo non prevede la gestione dei [Lotti e Serial Number](/docs/erp-home/registers/items/create-new-items/item-registry/lots-and-serial-number), questo tab sarà disabilitato.   
 
-*Pulsante specifico*:
+*Pulsante specifico*:   
 
 > **Cancella lotto**: permette di cancellare la riga lotto selezionata
 
+### Dati articolo
+
+All'interno di questo tab vengono riportate/inserite ulteriori informazioni relative all'articolo.
+
+- **Articolo**: visualizza l'articolo selezionato nella griglia superiore.   
+
+- **Variante**: in questo campo è possibile selezionare una variante dell'articolo tra quelle precedentemente codificate nel tab [Varianti](/docs/erp-home/registers/items/create-new-items/item-registry/variants) dell'anagrafica articolo. Se nel listino sono stati inseriti prezzi e/o sconti diversi per ciascuna variante essi saranno aggiornati quando si sleziona una variante diversa dell'articolo.   
+
+- **Magazzino e causale**: permette di inserire il magazzino e la causale di riferimento da utilizzare per il carico degli articoli relativi in magazzino. Se la riga articolo è stata ripresa a un ordine di acquisto, saranno proposti il magazzino e la causale inseriti nell'ordine, altrimenti possono essere inseriti manualmente per ciascuna riga articolo. Se i campi non sono valorizzati, al momento del carico del ricevimento merci saranno utilizzati quelli inseriti nei parameti ordini fornitori, tab [Carico](/docs/configurations/parameters/purchase/purchase-orders-parameters#carico). 
+
+- **Progetto**: rappresenta il progetto da associare al documento. Se nella testata del documento è stato inserito un progetto, esso sarà riportato su tutte le righe articolo; in alternativa può essere selezionato tramite l'apposito help progetti.
+
+- **Unità di misura/Quantità alternativa**: se nell'[anagrafica dell'articolo](/docs/erp-home/registers/items/create-new-items/item-registry/alternative-um) è stata codificata un'unità di misura alternativa con il flag *Predefinito* e nei Parametri ordini fornitore è stato attivato il flag *Proposta automatica U.M. alternativa*, questi valori saranno proposti in automatico al momento dell'inserimento dell'articolo.
+
 ### Analitica
 
-import TabAnalytic from './../../import/buttons/delete-pc.md'
+Può contenere informazioni sui centri di costo/profitto sui quali sono distribuiti i valori degli articoli.   
 
-<TabAnalytic />
+Questi dati possono essere inseriti manualmente oppure automaticamente (nel caso in cui i centri di costo/profitto siano stati inseriti precedentemente nell'*anagrafica contatto*, *anagrafica articolo* oppure nel *piano dei conti*).   
 
 *Pulsanti specifici*
 

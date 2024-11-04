@@ -1,6 +1,6 @@
 ---
 title: Report Chiusura periodico 
-sidebar_position: 3
+sidebar_position: 4
 ---
 
 In questa maschera è possibile aggiornare le [Stampe Chiusura previsioni di vendita](/docs/crm/sales-forecast-crm/report-forecast) esistenti o generarne di nuove. Ricordiamo che queste Stampe servono per confrontare le Previsioni di vendita create con il documentale.         

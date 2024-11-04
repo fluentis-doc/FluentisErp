@@ -18,9 +18,6 @@ Il POS permette di gestire le vendite direttamente nel punto cassa, con strument
 - Contabilizzazione automatica: Le fatture emesse vengono automaticamente contabilizzate, aggiornando i registri contabili e finanziari senza necessità di interventi manuali.
 - Gestione tramite barcode: Il sistema POS supporta la gestione delle vendite e la creazione di segnalazioni tramite lettura di barcode, velocizzando le operazioni di cassa.
 
-**Benefici Operativi**:        
-La gestione del POS in Fluentis permette una gestione fluida delle operazioni di cassa, automatizzando molte delle attività tipicamente associate alla vendita al dettaglio, come la gestione delle scorte, l'emissione delle fatture, la gestione dei pagamenti e la contabilizzazione. Questo porta a una maggiore efficienza, riduzione degli errori e miglioramento dell'esperienza del cliente.
-
 Prima di utilizzare il modulo, è necessario compilare le seguenti tabelle:
 > - [Numerazioni](/docs/configurations/tables/fluentis-numerations)    
 > - [Tipo POS](/docs/configurations/tables/sales/pos-types)

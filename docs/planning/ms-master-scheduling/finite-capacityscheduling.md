@@ -1,7 +1,13 @@
 ---
 title: Schedulazione a capacità finita
-sidebar_position: 3
+sidebar_position: 4
 ---
+
+:::important A cosa serve
+La funzione di Schedulazione a capacità finita di Fluentis è uno strumento avanzato progettato per ottimizzare la gestione delle risorse produttive all'interno di un'azienda manifatturiera. Questo modulo viene integrato all'interno del sistema ERP di Fluentis e consente di pianificare e gestire le attività produttive considerando le reali capacità delle risorse disponibili, come manodopera, macchinari e materiali. Grazie a tale funzionalità, le aziende possono minimizzare i tempi di inattività, migliorare l'efficienza operativa e rispondere con maggiore flessibilità alle variazioni della domanda.
+
+La schedulazione a capacità finita tiene conto delle limitazioni fisiche delle risorse, permettendo di creare piani di produzione realistici e attuabili. Inoltre, offre strumenti analitici per prevedere eventuali colli di bottiglia e consente l'ottimizzazione dell'allocazione dei compiti, integrandosi con altre funzionalità dell'ERP per una visione olistica delle operazioni aziendali. Questo sistema aiuta le aziende a bilanciare in modo efficace la domanda dei clienti con le capacità produttive, migliorando in ultima analisi la redditività e la soddisfazione del cliente.
+:::
 
 La schedulazione di produzione a capacità finita permette di capire quanto lavoro può essere espresso in un periodo di tempo definito, considerando le limitazioni di alcune risorse. L’obiettivo finale è quello di garantire la maggiore efficienza dei ritmi produttivi lungo tutta la filiera interna allo stabilimento, ottimizzando i tempi e riducendo i costi dei centri di lavoro.  
 Con questa modalità di pianificazione è possibile creare sequenze ottimali di lavorazione su ogni singolo Centro di lavoro ottenendo la loro massima saturazione.

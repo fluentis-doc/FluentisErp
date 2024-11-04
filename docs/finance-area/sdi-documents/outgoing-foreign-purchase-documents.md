@@ -2,8 +2,13 @@
 title: Documenti esteri in uscita
 sidebar_position: 5
 ---
+:::tip[Nota]
+**Adempimento superato** per quanto riguarda gli acquisti dall'attuale invio allo sdi di [**autofattura**](/docs/finance-area/e-invoice/auto-invoice/auto-invoice-generation).
+Per quanto riguarda le vendite attualmente si procede all'invio diretto delle fatture (vedi sotto)
+:::
 
-La normativa attuale prevede di inviare all'Agenzia delle Entrate anche i dati relativi alle operazioni di cessione beni/prestazioni servizi EFFETTUATE e RICEVUTE da soggetti NON identificati/non residenti nel territorio dello Stato.
+
+La normativa prevedeva di inviare all'Agenzia delle Entrate anche i dati relativi alle operazioni di cessione beni/prestazioni servizi EFFETTUATE e RICEVUTE da soggetti NON identificati/non residenti nel territorio dello Stato.
 
 - Per i documenti **EMESSI** è possibile utilizzare il medesimo tracciato previsto per le fatture elettroniche italiane; in alternativa possono essere inviati con il tracciato previsto per i documenti esteri di acquisto di cui al punto seguente.
 

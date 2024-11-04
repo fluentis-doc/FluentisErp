@@ -3,6 +3,12 @@ title: Tipi DDT di vendita
 sidebar_position: 18
 ---
 
+:::tip[FAst Start]
+La tabella è interessata dalla procedura di [**Fast Start**](/docs/guide/fast-start)
+
+Nel caso in cui si intenda configurare manualmente fare riferimento alla check list della pagina linkata
+:::
+
 La tabella si apre tramite il percorso **Tabelle > Vendite > Tipi DDT di vendita** ed è utilizzata per determinare le proprietà di un DDT.
 
 Consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.

@@ -3,6 +3,12 @@ title: Tipi fatture di vendita
 sidebar_position: 20
 ---
 
+:::tip[FAst Start]
+La tabella è interessata dalla procedura di [**Fast Start**](/docs/guide/fast-start)
+
+Nel caso in cui si intenda configurare manualmente fare riferimento alla check list della pagina linkata
+:::
+
 La tabella si apre tramite il percorso **Tabelle > Vendite > Tipi fatture di vendita** ed è utilizzata per determinare le proprietà di una fattura;
 
 Consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli;

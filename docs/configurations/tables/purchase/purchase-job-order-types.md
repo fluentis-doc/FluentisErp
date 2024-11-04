@@ -1,5 +1,5 @@
 ---
-title: Tipi Commesse di acquisto
+title: Tipi commesse di acquisto
 sidebar_position: 8
 ---
 
@@ -15,4 +15,3 @@ I campi presenti sono:
 
 **Stampa** permette di indicare il modello di stampa che verrà utilizzato in fase di stampa della commessa, mediante il campo **Numero copie**, il numero di copie del documento che sarà proposto di default per la stampa.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).

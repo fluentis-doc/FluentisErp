@@ -3,6 +3,12 @@ title: Rilascio Ordini Pianificati
 sidebar_position: 1
 ---
 
+:::important A cosa serve
+La funzione di "Rilascio Ordini Pianificati" nel sistema Fluentis è progettata per facilitare il passaggio degli ordini pianificati ai loro rispettivi stati operativi. Una volta che gli ordini pianificati sono stati generati, è possibile procedere al loro rilascio utilizzando specifici pulsanti nella ribbon bar. Questo processo varia a seconda del tipo di ordine: produzione, acquisto o conto lavoro.
+
+Quando si rilascia un ordine pianificato di produzione, esso diventa un ordine di produzione operativo. Gli ordini pianificati di acquisto generano delle richieste d'acquisto (RDA), mentre gli ordini di conto lavoro pianificati vengono trasformati in ordini di conto lavoro operativi. 
+:::
+
 La form permette la creazione di:
 
 - *richieste di acquisto*, eventualmente già autorizzate tramite un opportuno parametro, nel caso di ordini pianificati di acquisto;  

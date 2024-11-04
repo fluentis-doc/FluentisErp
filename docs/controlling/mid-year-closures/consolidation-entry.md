@@ -11,3 +11,6 @@ Come per le Registrazioni extracontabili, da questa posizione sarà inoltre poss
 
 Anche queste registrazioni prevedono una causale contabile di riferimento: rispetto alle normali registrazioni, ogni singola riga di contabilità prevede innanzi tutto l'indicazione della società di riferimento della riga stessa.
 
+:::tip[]
+Per la procedura di configurazione ed esecuzione del consolidamento vedere [**qui**](/docs/controlling/mid-year-closures/procedures/consolidation)
+:::

@@ -11,10 +11,10 @@ I campi presenti sono:
 
 **Numerazione**: contiene la [Numerazione](/docs/configurations/tables/fluentis-numerations) associata;      
 
-**Tipo ordine fornitore**: contiene il [Tipo ordine fornitore](/docs/configurations/tables/purchase/purchase-orders-type) da creare partendo dalla RDO, nella procedura di [Creazione ordine fornitore da offerta fornitore](/docs/purchase/offer-request/procedures/order-creation).         
+**Tipo ordine fornitore**: contiene il [Tipo ordine fornitore](/docs/configurations/tables/purchase/purchase-orders-type) e la relativa **descrizione**da creare partendo dalla RDO, nella procedura di [Creazione ordine fornitore da offerta fornitore](/docs/purchase/offer-request/procedures/order-creation).         
 
 **Prezzo ivato**: questo flag indica che nelle righe del documento sarà presente il Prezzo già ivato.    
 
 **Stampa**: in questo campo è possibile scegliere la stampa da utilizzare di default (si ricorda che, per stampare il report di default, in fase di stampa sarà necessario selezionare l'opzione *Stampe multiple*); nel campo successivo è possibile indicare un **Numero di copie** da stampare.    
 
-**Gestione cespiti**: questo flag indica che la tipologia di RDO deve gestire i cespiti; nel campo successivo è necessario indicaro il **Tipo operazione**, che nel caso degli acquisti sarà sempre un *Costo originario*.     
+**Gestione cespiti**: questo flag indica che la tipologia di RDO deve gestire i cespiti; nel campo successivo è necessario indicare il **Tipo operazione**, che nel caso degli acquisti sarà sempre un *Costo originario*.     

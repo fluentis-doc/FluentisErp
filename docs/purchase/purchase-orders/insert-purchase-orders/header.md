@@ -3,8 +3,6 @@ title: Testata
 sidebar_position: 2
 ---
 
-### Testata 
-
 Dopo aver selezionato i dati obbligatori nella sezione superiore, l'utente può continuare l'inserimento dei seguenti dati [manualmente](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection#inserimento-manuale) oppure con l'[help di campo](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection#inserimento-con-il-help-di-campo).
 
 :::note Ricorda
@@ -50,7 +48,7 @@ Nel caso in cui l'ordine viene completato con la procedura *Evasione da progetto
 
 *Pulsanti specifici*
 
-> **Evasione da progetto**: richiama la [procedura](/docs/purchase/purchase-orders/insert-purchase-orders/header-procedures) per creare un ordine fornitore da una commessa di acquisto. Si attiva con l'inserimento del fornitore e del tipo ordine fornitore.  
+> **Evasione da progetto**: richiama la [procedura](/docs/purchase/purchase-orders/insert-purchase-orders/header-procedures) per creare un ordine fornitore da una commessa di acquisto. Si attiva con l'inserimento del fornitore e del tipo ordine fornitore. Per poter evadere la commessa di acquisto è necessario che sia stampata e confermata.     
 > **Sostituisci data prev. consegna nelle righe**: dopo aver specificato la *Data richiesta consegna* e/o la *Data consegna* in testata ordine è possibile sostituire in massa tali date nelle righe articolo già inserite.
  
 ### Pagamenti

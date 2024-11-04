@@ -1,6 +1,6 @@
 ---
 title: Opportunity Progress KanBan Board
-sidebar_position: 4
+sidebar_position: 5
 ---
 
 La procedura **Opportunity Progress Kan Ban Board** ha l’obiettivo di mostrare graficamente, mediante l’utilizzo della metodologia Kan Ban, le **Opportunità** inserite in Fluentis suddivise per le **percentuali di probabilità di successo** delle opportunità stesse.

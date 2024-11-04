@@ -1,6 +1,6 @@
 ---
 title: Ricerca Opportunità
-sidebar_position: 1
+sidebar_position: 2
 ---
 
 Il modulo Opportunità consente all’operatore di gestire le opportunità legate ai contatti del CRM. Per Opportunità si intendono le trattative, già in essere o potenziali, per il contatto.

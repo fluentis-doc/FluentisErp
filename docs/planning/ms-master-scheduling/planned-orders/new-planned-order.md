@@ -1,9 +1,15 @@
 ---
 title: Ordine pianificato
-sidebar_position: 3
+sidebar_position: 4
 ---
 
-Normalmente gli ordini pianificati vengono generati automaticamente dalla procedura di *Schedulazione generale* oppure dall'*Elaborazione MPR*, ma l'utente ha la possibilità di generare manualmente un ordine pianificato, sia esso di acquisto, di produzione o di conto lavoro.
+:::important A cosa serve
+La funzione degli **Ordini Pianificati** nel sistema Fluentis è una componente chiave per la gestione della pianificazione della produzione e degli acquisti. Gli ordini pianificati possono essere generati automaticamente attraverso la schedulazione generale o tramite l'elaborazione MRP (Manufacturing Resource Planning), oppure creati manualmente dall'utente. Questi ordini vengono utilizzati per gestire le necessità future delle risorse e dei materiali in modo preventivo e organizzato.
+
+Nella piattaforma Fluentis, gli ordini pianificati possono essere relativi a diverse tipologie: produzione, acquisto, e conto lavoro; questi vengono visualizzati con colori diversi nella griglia, a seconda della loro tipologia. Lo scopo principale dell'utilizzo degli ordini pianificati è ottimizzare i processi produttivi e di approvvigionamento, garantendo che le risorse necessarie siano disponibili quando richiesto e che le operazioni possano procedere senza interruzioni.
+:::
+
+Normalmente gli ordini pianificati vengono generati automaticamente dalla procedura di *Pianificazione generale* oppure dall'*Elaborazione MPR*, ma l'utente ha la possibilità di generare manualmente un ordine pianificato, sia esso di acquisto, di produzione o di conto lavoro.
 
 La form si apre tramite:  
  -  il percorso **Pianificazione > MS Master scheduling > Ordini Pianificati > Nuovo Ordine Pianificato** 

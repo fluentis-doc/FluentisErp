@@ -89,6 +89,15 @@ import Link from '@docusaurus/Link';
         <p>Ottimizza la disposizione e la sistemazione delle merci all'interno di un mezzo di trasporto, garantendo stabilità, sicurezza ed efficienza durante il trasporto.</p>
      </div>
     <div className="card">
+###     <Link to="/docs/logistics/shipping/shippings-intro">Spedizioni</Link>
+        <p><Link to="/docs/logistics/shipping/shippings" className="bold-link">Spedizioni</Link></p>
+        <p>Tramite la gestione groupage, è possibile raggruppare le spedizioni di diversi clienti o fornitori in un'unica unità di trasporto.</p>
+        <p><Link to="/docs/logistics/shipping/calendar" className="bold-link">Calendario</Link></p>
+        <p>Consente di pianificare e gestire in modo efficiente le attività operative e logistiche, ottimizzando le risorse e migliorando il coordinamento delle spedizioni.</p>
+    </div>
+</div>
+<div className="cardContainer">
+    <div className="card">
 ###     <Link to="/docs/logistics/motorvehicles/motorvehicle-management">Automezzi</Link>
         <p><Link to="/docs/logistics/motorvehicles/material-consumption/material-consumption-filter" className="bold-link">Consumo materiali</Link></p>
         <p>Gestisce i movimenti realizzati per il consumo dei materiali legati agli automezzi.</p>

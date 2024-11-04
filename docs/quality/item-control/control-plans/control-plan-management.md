@@ -182,6 +182,16 @@ L'elenco si compone delle seguenti informazioni:
 In questo elenco è possibile inserire e consultare eventuali allegati; è possibile visualizzare l'anteprima.   
 
 
+### Clienti/Fornitori
+Contiene i *Clienti*/*Fornitori* per i quali effettuare le *Prove pianificate* agli *Articoli associati*.   
+L'elenco si compone delle seguenti informazioni:   
+> **Cliente/Fornitore**: è la ragione sociale del *Cliente* o "Fornitore". Le *Proprietà* sono personalizzate per i *Clienti*/*Fornitori*/*Articoli associati*.   
+> **Data specifica**: e la data della specifica ricevuta dal cliente.    
+> **Riferimenti specifica**: annotazioni libere sul riferimento alla specifica ricevuta dal cliente che richiede controlli specifici da effettuare per gli *Articoli associati*.   
+> **Nota specifica**: annotazioni libere relative alla specifica ricevuta dal cliente.   
+> **Note**: annotazioni libere.   
+
+
 ### Articoli associati
 Contiene gli *Articoli* con caratteristiche simili ed elencate nell'elenco delle *Prove pianificate*.
 L'elenco si compone delle seguenti informazioni:   

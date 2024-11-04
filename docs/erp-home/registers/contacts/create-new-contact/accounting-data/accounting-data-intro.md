@@ -15,7 +15,7 @@ Ogni categoria ha dei campi di dettaglio differenti a fronte di scopi differenti
 
 ### [Anagrafica banche](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/bank-registry/references)
 
-### [Anagrafica agenti](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/agent-registry/analytic)
+### [Anagrafica agenti](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/agent-registry/detail)
 
 
 ---

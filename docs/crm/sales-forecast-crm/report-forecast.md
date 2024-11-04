@@ -1,6 +1,6 @@
 ---
 title: Stampa Chiusura Previsioni di vendita
-sidebar_position: 2
+sidebar_position: 3
 ---
 
 In questa maschera è possibile importare il documentale e confrontarlo con le [Previsioni di vendita](/docs/crm/sales-forecast-crm/new-sales-forecast) precedentemente create, per capire se gli obiettivi della previsione sono stati raggiunti.      

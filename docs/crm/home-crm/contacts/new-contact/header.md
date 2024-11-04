@@ -88,3 +88,12 @@ Nell'ultima parte della maschera sono poi presenti le **tab specifiche**.
 Nella barra degli strumenti sono presenti i seguenti pulsanti:         
 **Proponi dati**: utilizzando questa funzionalità a partire dalla partita iva, verranno precompilati i dati anagrafici.      
 **Conversione a cliente**: con questo pulsante è possibile convertire un contatto CRM in un [Cliente](/docs/erp-home/registers/contacts/create-new-contact/general); i dati inseriti nel contatto verranno copiati nella nuova anagrafica; il pulsante è attivo per i [Tipi contatto](/docs/configurations/tables/crm/contacts/contact-type) che non hanno attivo il flag *Cliente*.
+
+All'interno del contatto sono presenti anche dei campi utilizzati a fine statistico, non mostrati direttamente all'utente ed impostati in automatico: 
+
+- data creazione contatto
+- data inizio lead e data fine lead
+- data inizio cliente e data fine cliente
+
+Nel momento in cui un contatto viene creato, viene assegnata la data di creazione del contatto. Quando il tipo contatto viene passato in un tipo con flag "lead" abilitato, verrà assegnata la data di passaggio a tipo lead. Nel momento di passaggio ad un altro tipo contatto che ha flag "lead" disabilitato, verrà assegnata la data di fine lead. 
+La stessa logica verrà utilizzata nel caso di passaggio del tipo contatto in tipo contatto con flag "cliente" abilitato. 

@@ -3,17 +3,21 @@ title: Dettaglio
 sidebar_position: 2
 ---
 
-L'anagrafica di tipo **Agente** è necessaria al fine di gestire le diverse impostazioni ed automatismi relativi a questa tipologia di soggetti.
+L'anagrafica di tipo **Agente** è necessaria al fine di gestire le diverse impostazioni ed **automatismi** relativi a questa tipologia di soggetti e permettere il **calcolo delle provvigioni** oltre alla gestione degli **aspetti fiscali** quali i contributi ENASARCO e la ritenuta d'acconto.
 
-Dopo aver inserito i dati anagrafici generali del soggetto si procederà quindi alla scelta del tipo conto **Agenti** nella griglia *Sottoconti assegnati* della tab *Dati contabili*
+Dopo aver inserito i dati anagrafici generali del soggetto si procederà quindi alla scelta del [tipo conto](/docs/configurations/tables/finance/account-types) **Agenti** nella griglia *Sottoconti assegnati* della tab [*Dati contabili*](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/accounting-data-intro)
+
+:::important[Importante]
+Si consiglia di compilare in modo completo tutti i campi necessari alla gestione dell'agente, organizzati nella presente e nelle successive tab.
+:::
 
 Questa finestra contiene elementi generali dell'agente stesso:
 
-**Utilizzo a partite aperte**: attiva la gestione delle partite aperte per l'anagrafica in uso;
+**Utilizzo a partite aperte**: attiva la gestione delle partite aperte per l'anagrafica in uso (si consiglia di abilitarla sempre per ottenere nello scadenziario anche le partite aperte nei confronti dell'agente, ad esempio per pagamento provvigioni spettanti);
 
-**Categoria agente**: è l'elemento fondamentale per il calcolo dell'Enasarco e del FIrr, così come definito nella tabella [Categorie Agenti](/docs/configurations/tables/sales/agent-category); la scelta si effettua tramite la combobox collegata alla tabella
+**Categoria agente**: è l'elemento fondamentale per il calcolo dell'**Enasarco** e del **FIRR**, così come definito nella tabella [Categorie Agenti](/docs/configurations/tables/sales/agent-category); la scelta si effettua tramite la combobox collegata alla tabella
 
-**Caratteristica agente**: elemento statistico libero utile, ad esempio, per creare dei raggruppamenti. La combobox è collegata alla tabella [Categorie Agenti](/docs/configurations/tables/sales/agent-category)
+**Caratteristica agente**: elemento statistico libero utile, ad esempio, per creare dei raggruppamenti. La combobox è collegata alla tabella [Caratteristiche Agenti](/docs/configurations/tables/sales/agent-characteristics)
 
 **IVA**: Aliquota iva di default da proporre nella creazione del compenso agente, sia manualmente, sia dalla procedura di calcolo dalla liquidazione provvigioni.
 

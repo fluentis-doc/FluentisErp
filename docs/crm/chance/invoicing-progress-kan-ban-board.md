@@ -1,6 +1,6 @@
 ---
 title: Invoicing Progress KanBan Board
-sidebar_position: 6
+sidebar_position: 7
 ---
 
 Questa procedura ha l'obiettivo di visualizzare (mediante l'utilizzo della metodologia Kan Ban) Opportunità, Ordini e Fatture per determinati periodi. La procedura si compone di due tab: **Filtro** e **Risultati**.

@@ -1,6 +1,6 @@
 ---
 title: Ricerca Ordini Pianificati
-sidebar_position: 2
+sidebar_position: 3
 ---
 
 import SearchForm from './../../../import/sections/search-form.md'

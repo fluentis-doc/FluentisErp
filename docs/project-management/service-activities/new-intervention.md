@@ -169,10 +169,72 @@ I pulsanti specifici della ribbon bar sono:
 ![](/img/neutral/common/delete-discount.png) Cancella sconti materiali: cancella gli sconti collegati al materiale selezionato.	
 
 
-**Tab Riepiloghi**
+## Tab Riepiloghi
 
 Questa tab contiene i Riepiloghi dell’intervento, che possono essere consultati.
 È possibile inoltre inserire eventuali spese finali indicandone il Tipo, l’Importo, la presenza In fattura o meno con il relativo flag, l’IVA. Questi dati modificheranno i riepiloghi sulla destra.
 
 È possibile infine inserire delle Note finali.
 
+## Tab Piano di fatturazione
+Il Piano di fatturazione (oppure Invioce Plan) contiene un'anteprima della fattura che verrà generata dall'intervento. Questo tab viene calcolato in automatico all'avanzamento di stato intervento, da Inserito in Da Approvare. Può però essere ricalcolato in qualsiasi momento utilizzando il bottone "Genera Piano di fatturazione".
+
+Le righe presenti sono inserite partendo dai dati presenti in: servizi, materiali, spese da fatturare e altre spese. 
+Le righe di servizi e materiali potranno avere Tipo Riga "1 o 2 - codificato o non codificato", mentre le spese avranno tipo riga "3-spese"
+Le righe avranno corrispondenza 1-1 tra servizi/materiali/spese ed invoice plan. 
+Solo nel caso dei servizi le righe potranno essere divise:
+
+es. un servizio ha una durata per più di 8 ore. Nell'invoice plan se previsto il calcolo del fuori orario, la riga del servizio verrà divisa in 2: 
+
+1. riga servizio per 8 ore, con tutti i riferimenti e prezzo inseriti nella tab servizi
+2. riga di fuori orario per le ore eccedenti le 8, con tariffa assegnata da listino, e codice articolo diverso a seconda delle configurazioni (parametri progetto o fascia oraria dove è previsto un cambio articolo)
+
+Ogni riga ha anche un suo stato: 
+1. Da fatturare: la riga verrà considerata dalla procedura di valorizzazione interventi;
+2. Sospeso: la riga NON verrà considerata dalla procedura di valorizzazione interventi fino a quando il suo stato non verrà ripristinato in Da fatturare;
+3. Escluso: la riga NON verrà considerata dalla procedura di valorizzazione interventi in alcun caso;
+4. Fatturato: la riga è già stata valorizzata ed è quindi già inclusa in una fattura di vendita. 
+
+Gli altri dati presenti in riga sono: 
+- codice articolo / variante / descrizione variante / descrizione articolo che sono dati relativi al codice articolo utilizzato
+- Descrizione per attività pianificata / sprint, data effettiva servizio e  tempo effettivo: dati ottenuti dalla tab servizi, riportano la descrizione inserita dall'utente relativamente al servizio svolto ed alla data e tempo effettivi del servizio.
+- valore arrotondamento: se previsto dalle regole di fatturazione, il monte ore calcolato nei servizi potrà essere arrotondato. Il valore da aggiungere per ottenere il totale desiderato, è indicato in questo campo. 
+- unità di misura: unità di misura di riferimento per la riga;
+- Quantità: quantità in base all'unità di misura;
+- Prezzo: prezzo stabilito nei servizi/materiali/spese oppure ricalcolato per il fuori orario
+- Imposta: aliquota iva applicata;
+- E' fuori orario: flag che indica se la riga in questione è stata calcolata in automatico e deriva da un superamento degli orari indicati nelle fasce orarie.
+
+
+Ogni riga ha anche ulteriori dettagli: 
+ognuno di questi sono ereditati dalle tab originarie (servizi/materiali/spese) ma possono essere poi modificati. 
+- fatturato vendite: fatturato vendite indicato nel progetto, e se non presente fatturato dell'articolo;
+- articolo fattura: articolo che verrà inserito in fattura. Questo campo viene utilizzato quando ad es. si abilita l'opzione per gestire le ore di viaggio come ore servizio. In questo caso la riga nell'invoice plan avrà l'articolo della spese di viaggio, mentre nel campo Articolo fattura troveremo l'articolo servizio a cui sono state accorpate le ore di viaggio. 
+- categoria attività: categoria attività derivata dal progetto o manualmente; 
+- ticket: numero ticket associato alla riga;
+- anagrafica impianti: anagrafica impianto associato alla riga; 
+- dipendente: anagrafica dipendente associata alla riga, derivato dalla risorsa assegnata. 
+- Progetto: riga progetto di riferimento; 
+- Fattura di anticipo: fattura di anticipo presente nel progetto, e legata alla riga del piano di fatturazione. Indica che la riga concorrerà all'erosione dell'importo e quantità della fattura di anticipo. 
+- causale di sospensione: nel caso di stato riga "Sospeso", è possibile indicare il motivo di sospensione; 
+- Annotazione: annotazione libera; 
+- Sconti e Tipo scaglione: sconti e relativo scaglione da applicare sul valore della riga, presenta le stesse modalità utilizzate negli altri documenti
+- Listino: listino di riferimento per la riga
+- Prezzo manuale: flag che si abilita in automatico nel caso di modifica manuale del prezzo in riga, rispetto a quello calcolato in automatico.
+
+
+
+Il piano di fatturazione viene generato con regole specifiche che possono essere configurate a livello di cliente oppure parametri progetto. 
+La priorità con cui vengono prese le informazioni è la seguente: 
+
+- verifica le configurazioni presenti in anagrafica cliente: se sono presenti, verifica anche la corrispondenza per tipo intervento e sede di lavoro (dato presente nella risorsa intestataria dell'intervento). 
+Nel caso di configurazioni con tipo intervento nullo, o tipo luogo di lavoro nullo, si intendono valide per tutti i tipi intervento/sede di lavoro. 
+
+- se nel cliente non viene trovata la corrispondenza, la ricerca si estende ai [parametri progetto](/docs/configurations/parameters/projects/project-parameters/) > interventi > Impostazioni valorizzazione interventi
+
+Le regole impostate a livello dei parametri generali, sono valide per tutti i clienti oppure per determinate categorie commerciali di clienti. 
+Se il campo categoria commericale risulta vuoto, si intende valido per tutte le categorie. 
+In seguito vengono cercate le configurazioni per tipo intervento (corrispondenza precisa oppure tipo intervento nullo) e per Sede di lavoro (corrispondenza precisa oppure Sede di lavoro nullo)
+
+
+In base a queste corrispondenze verranno utilizzate le configurazioni più consone. Se non si trova alcuna corrispondenza, il piano di fatturazione rimarrà vuoto. 

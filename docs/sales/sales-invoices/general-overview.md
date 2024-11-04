@@ -23,9 +23,6 @@ Nel modulo Vendite e Amministrazione di Fluentis, la gestione delle fatture perm
 - Stampa personalizzabile: Fluentis consente la stampa delle fatture, con layout personalizzabili per ogni cliente, includendo tutti i dettagli commerciali e contabili richiesti.
 - Gestione barcode: Il sistema supporta la generazione di segnalazioni tramite barcode, facilitando la gestione dei documenti e la tracciabilità degli articoli.
 
-**Benefici operativi**:      
-Grazie alla gestione integrata delle fatture in Fluentis, è possibile automatizzare molte fasi del processo di fatturazione, riducendo il rischio di errori, migliorando la gestione delle scadenze e ottimizzando la sincronizzazione tra i moduli di vendita, magazzino e contabilità. Questo assicura un flusso operativo più efficiente e una migliore visibilità delle performance aziendali.
-
 Prima di utilizzare il modulo, è necessario compilare i seguenti parametri e tabelle:     
 > - [Numerazioni](/docs/configurations/tables/fluentis-numerations)  
 > - [Parametri fatture di vendita](/docs/configurations/parameters/sales/sales-invoices-parameters)

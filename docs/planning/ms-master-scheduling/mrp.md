@@ -1,9 +1,11 @@
 ---
 title: MRP
-sidebar_position: 2
+sidebar_position: 3
 ---
 
-**Manufacturing Resourse Planning**
+:::important A cosa serve
+La funzione **MRP** (**Manufacturing Resourse Planning**) di Fluentis permette agli utenti di analizzare la disponibilità dei materiali e delle risorse produttive in base alla pianificazione della produzione. Attraverso questa procedura, l'operatore riceve suggerimenti su come ottimizzare la gestione dei materiali, comprese le indicazioni per anticipare forniture, integrare quantità necessarie o annullare ordini superflui. L'MRP di Fluentis tiene conto dei vincoli di produzione, delle materie prime, dei semilavorati disponibili o ordinati, consentendo così un controllo efficiente di ogni commessa attiva. Questo sistema mira a ottimizzare le scorte aziendali, riducendo i livelli di magazzino e migliorando l'efficienza operativa
+:::
 
 Tale procedura permette all’utente di avere l’analisi della corretta disponibilità dei materiali e delle risorse produttive in funzione della pianificazione di produzione. Attraverso questa elaborazione l’operatore può ricevere una serie di suggerimenti relativi all’anticipo di alcune forniture di materiali, all’integrazione di quantità necessarie, piuttosto che provvedere ad annullare ordini di articoli inutili in modo da rendere il più agevole possibile il controllo e la gestione delle operazioni.
 L’MRP realizza una pianificazione di produzione tenendo conto dei diversi vincoli di produzione, delle materie prime e semilavorati disponibili e di quelli ordinati.

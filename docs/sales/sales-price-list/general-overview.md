@@ -21,9 +21,6 @@ Il modulo offre un approccio completo e flessibile alla definizione e al control
 **Automazione e Integrazione**:      
 Il modulo di gestione dei listini è strettamente integrato con i moduli di vendita e fatturazione di Fluentis, garantendo che i prezzi applicati siano sempre aggiornati e coerenti. Questa integrazione aiuta a prevenire errori e a garantire una gestione fluida delle vendite.
 
-**Benefici Operativi**:     
-Grazie alla gestione dei listini in Fluentis, le aziende possono ottimizzare le proprie strategie di pricing, adattandosi rapidamente alle dinamiche di mercato e migliorando la competitività. La flessibilità nel definire sconti e condizioni specifiche per i clienti contribuisce a creare offerte più attraenti, mentre la tracciabilità delle variazioni di prezzo assicura una gestione più informata e consapevole. In definitiva, il modulo di gestione dei listini facilita la massimizzazione dei profitti e il miglioramento delle performance di vendita.
-
 Prima di utilizzare il modulo, è necessario compilare i seguenti parametri e tabelle:
 > - [Parametri](/docs/configurations/parameters/sales/price-list-parameters)
 > - [Tipi listini di vendita](/docs/configurations/tables/sales/sales-price-lists)

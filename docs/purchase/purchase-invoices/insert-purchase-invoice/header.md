@@ -3,8 +3,6 @@ title: Testata
 sidebar_position: 2
 ---
 
-### Testata 
-
 Dopo aver selezionato i dati obbligatori nella sezione superiore, l'utente può continuare l'inserimento dei seguenti dati manualmente oppure con il [help di campo](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) oppure, in base alle procedure che sceglie, l'applicazione compila i campi *automaticamente*.
 
 :::note Ricorda

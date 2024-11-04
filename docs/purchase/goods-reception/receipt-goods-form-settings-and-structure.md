@@ -8,8 +8,8 @@ Il modulo si trova nell'area acquisti **Acquisti > Ricevimento merci** e rappre
 ### Flusso operativo
 
 - Creazione: Il ricevimento merci può essere inserito manualmente dall'operatore quando al momento di arrivo della merce oppure può essere generato a partire da un ordine fornitore mediante il pulsante di *Evasione da Ordini*. 
-- Registrazione a magazzino: Il ricevimento merci può essere caricato a magazzino mediante l'apposita [procedura](/docs/purchase/purchase-delivery-note/procedures/create-delivery-note-from-goods-receipt).
-- Documenti collegati: A partire da un ricevimento merci è possibile effettuare la [Creazione di un DDT di acquisto](/docs/purchase/purchase-delivery-note/procedures/create-delivery-note-from-goods-receipt) oppure di una [Fattura di acquisto](/docs/purchase/purchase-delivery-note/procedures/create-delivery-note-from-goods-receipt).
+- Registrazione a magazzino: Il ricevimento merci può essere caricato a magazzino mediante l'apposita [procedura](/docs/purchase/goods-reception/procedures/good-receipt-load).
+- Documenti collegati: A partire da un ricevimento merci è possibile effettuare la [Creazione di un DDT di acquisto](/docs/purchase/purchase-delivery-note/procedures/create-delivery-note-from-goods-receipt) oppure di una [Fattura di acquisto](/docs/purchase/purchase-invoices/procedures/create-purchase-invoices-from-goods-receipt).
 
 ### Benefici operativi
 

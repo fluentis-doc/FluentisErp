@@ -1,7 +1,13 @@
 ---
 title: Pianificazione generale
-sidebar_position: 1
+sidebar_position: 2
 ---
+
+:::important A cosa serve
+La pianificazione generale in Fluentis è un processo che opera con il presupposto di capacità infinita, il che significa che la pianificazione non tiene conto di limitazioni fisiche nei centri di lavoro o nelle risorse disponibili. Questa metodologia permette di schedulare le operazioni produttive con una certa flessibilità.
+
+La pianificazione può essere eseguita utilizzando due logiche distinte: "al più presto" e "al più tardi". La logica "al più presto" mira a iniziare le operazioni non appena possibile, mentre la logica "al più tardi" pianifica le operazioni il più tardi possibile senza compromettere le scadenze. Questi approcci consentono un'analisi ottimizzata delle esigenze produttive e la gestione dei tempi di lavorazione in base alle priorità aziendali e alle necessità operative
+:::
 
 Rappresenta l’algoritmo di Master Scheduling, ovvero lo schedulatore di produzione che si occupa di interessare le commesse selezionate e analizzarne la *fattibilità produttiva* in funzione della sua composizione strutturale. 
 Questo tipo di pianificazione, eseguibile con logiche di analisi *al più presto* o *al più tardi*, dà la possibilità di verificare la necessità di ulteriore capacità produttiva, evidenziando la sovra-allocazione dei centri di lavoro critici, permettendo all’operatore di decidere se aumentare la capacità interna, acquistare capacità esterna o spostare i carichi nel tempo, eventualmente accettando ritardi di consegna. 

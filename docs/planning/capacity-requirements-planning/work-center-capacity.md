@@ -3,6 +3,11 @@ title: Capacità centri di lavoro
 sidebar_position: 2
 ---
 
+:::important A cosa serve
+La funzione **Capacità centri di lavoro** in Fluentis offre un panorama chiaro e immediato dei carichi di lavoro nei centri produttivi, evidenziando picchi di sovraccarico o inefficienze. Attraverso una form organizzata in quattro sezioni, gli operatori possono filtrare e visualizzare gli ordini per reparto, data o stato (pianificato, lanciato, esecutivo) e intervenire con facilità tramite il drag & drop per spostare, posticipare o modificare le lavorazioni.     
+La visualizzazione grafica illustra la capacità massima e l'impegno giornaliero dei centri, consentendo una gestione visiva e interattiva delle fasi produttive. Pulsanti specifici rendono possibile modificare le fasi, cambiare date e navigare attraverso il dettaglio temporale del carico di lavoro, ottimizzando in tal modo l'efficienza operativa dell'intero processo produttivo.
+:::
+
 L’operatore può ottenere una visualizzazione immediata dei carichi di ciascun centro di lavoro attivo nell’ambito dei singoli reparti per un determinato periodo temporale, permettendogli di conoscere in modo immediato gli eventuali picchi di sovraccarico o di inefficienza produttiva. 
 Con un semplice *drag & drop* l’operatore può anticipare, posticipare o cambiare centro di lavoro ad una lavorazione, e con un doppio click nell’ambito della singola barra di capacità, è possibile conoscere nel dettaglio le informazioni relative a quali ordini di lavoro impegnano il centro nella specifica data selezionata.
 

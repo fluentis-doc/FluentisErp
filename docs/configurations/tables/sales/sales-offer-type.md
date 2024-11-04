@@ -3,6 +3,12 @@ title: Tipi offerte cliente
 sidebar_position: 23
 ---
 
+:::tip[FAst Start]
+La tabella è interessata dalla procedura di [**Fast Start**](/docs/guide/fast-start)
+
+Nel caso in cui si intenda configurare manualmente fare riferimento alla check list della pagina linkata
+:::
+
 La tabella si apre tramite il percorso **Tabelle > Vendite > Tipi offerte cliente**.
 
 Consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.

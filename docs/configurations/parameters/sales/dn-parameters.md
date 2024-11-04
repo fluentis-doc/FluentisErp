@@ -3,6 +3,12 @@ title: Parametri DDT
 sidebar_position: 4
 ---
 
+:::tip[FAst Start]
+La tabella è interessata dalla procedura di [**Fast Start**](/docs/guide/fast-start)
+
+Nel caso in cui si intenda configurare manualmente fare riferimento alla check list della pagina linkata
+:::
+
 I parametri dei DDT di vendita permettono l'impostazione di base per gestire correttamente e secondo le specifiche richieste da ogni singola società. La finestra relativa a questi parametri si compone di 4 diversi tab: Generale, Evasione, Scarico e Analitica.
 
 ### Generale

@@ -1,6 +1,6 @@
 ---
 title: Mappa opportunità CRM
-sidebar_position: 3
+sidebar_position: 4
 ---
 
 Questa funzionalità permette di visualizzare graficamente la dislocazione geografica delle **Opportunità** in essere sulla base delle indicazioni geografiche indicate nell’anagrafica dei contatti CRM presenti sulle opportunità.

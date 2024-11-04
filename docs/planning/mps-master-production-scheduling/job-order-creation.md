@@ -1,6 +1,6 @@
 ---
 title: Generazione commesse di produzione
-sidebar_position: 1
+sidebar_position: 2
 ---
 
 La procedura **Generazione commesse di produzione** permette di generare commesse di produzione da ordini clienti, dal previsionale e/o dal Sottoscorta.
@@ -11,7 +11,7 @@ In questo tab si possono filtrare le righe d'ordine cliente che si vogliono far 
 
 Per poter essere visualizzate all'interno di questo tab, le righe d'ordine devono rispondere ai seguenti **requisiti**:
 
-- l'articolo oggetto della riga ordine cliente deve avere il flag *Escludi da MRP* abilitato nei suoi [Parametri MRP](/docs/configurations/parameters/production/mrp-parameters/search-mrp-parameters);  
+- l'articolo oggetto della riga ordine cliente deve avere il flag *Generazione commesse di produzione* abilitato nei suoi [Parametri MRP](/docs/configurations/parameters/production/mrp-parameters/search-mrp-parameters);  
 - la riga non deve essere stata evasa tramite *Picking list*, o *DDT di vendita*, o *Fattura di vendita*;  
 - la riga non deve essere stata messa *Forzatamente evasa* e quindi deve risultare in stato *Non Evasa* oppure *Parzialmente evasa*;  
 - dalla riga non devono ancora essere state generate *Commesse di produzione*;  

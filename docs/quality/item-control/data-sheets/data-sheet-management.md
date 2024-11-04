@@ -146,6 +146,13 @@ L'elenco si compone delle seguenti informazioni:
 > **Note**: annotazioni libere.   
 
 
+### Clienti
+Contiene i *Clienti* interessati agli *Articoli* con *Proprietà* simili ed elencati nei due rispettivi elenchi.   
+L'elenco si compone delle seguenti informazioni:   
+> **Cliente**: è la ragione sociale del *Cliente*. Le *Proprietà* sono personalizzate per i *Clienti*/*Articoli associati*.   
+> **Note**: annotazioni libere.   
+
+
 ### Articoli associati
 Contiene gli *Articoli* con caratteristiche simili ed elencate nell'elenco delle *Proprietà*.
 L'elenco si compone delle seguenti informazioni:   

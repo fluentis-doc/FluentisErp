@@ -1,6 +1,6 @@
 ---
 title: Tipo Prototipo Articolo
-sidebar_position: 58
+sidebar_position: 50
 ---
 
 La tabella permette di gestire la codifica delle diverse tipologie di *Tipo Prototipo Articolo*.

@@ -11,6 +11,8 @@ sidebar_position: 4
 
 **Codice unità di misura** : unità di misura utilizzata nel tracciato del file esportato dall'elaborazione paghe per gestioni esterne a Fluentis.
 
+**Ordinario**: se abilitato, utilizzato come codice di default per le ore ordinarie di lavoro, in caso di mancanza di configurazioni più specifiche.  
+
 **Valori Finali**: se abilitato, il valore associato a questo codice paga verrà inserito nel riquadro "Valori" del Riepilogo per cedolini e verrà escluso dai movimenti
 
 **Rimborso Viaggio**: se abilitato le ore di viaggio identificate con questo codice verranno sommate alle ore ordinarie. Se la somma risulta maggiore di 8 ore, verrà inserita una riga con quantità 1 nei movimenti come identificativo di 1 trasferta indipendentemente dalle ore di viaggio di dichiarate. Se disabilitato, le ore viaggio verranno inserite separatamente per le ore effettivamente dichiarate.
@@ -30,8 +32,6 @@ verrà utilizzato per identificare le giornate di trasferta nel riquadro "Movime
 **ROL**: se abilitato verrà utilizzato per identificare le ore di ROL nel riquadro "Movimenti" del Riepilogo per cedolini - in base alla categoria attività inserita nella dichiarazione attività 
 
 **Smart Working**: se abilitato verrà utilizzato per identificare le giornate di smartworking nel riquadro "Movimenti" del Riepilogo per cedolini - identificate in base alle dichiarazioni attività con flag "Smartworking" abilitato, sostituirà il codice paga associato alla categoria di attività
-
-**Ordinario**: se abilitato, utilizzato come codice di default per le ore ordinarie di lavoro, in caso di mancanza di configurazioni più specifiche.  
 
 **Non viene esportato**: blocca l'esportazione nel tracciato file per gestioni esterne a Fluentis
 

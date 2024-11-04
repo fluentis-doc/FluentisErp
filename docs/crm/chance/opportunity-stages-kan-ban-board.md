@@ -1,6 +1,6 @@
 ---
 title: Opportunity Stages KanBan Board
-sidebar_position: 5
+sidebar_position: 6
 ---
 
 La procedura **Opportunity Stages Kan Ban Board** ha l’obiettivo di mostrare graficamente, mediante l’utilizzo della metodologia Kan Ban, le opportunità inserite in Fluentis suddivise per gli stadi del workflow associato alle opportunità stesse. Il workflow da considerare deve essere inserito nei filtri.     

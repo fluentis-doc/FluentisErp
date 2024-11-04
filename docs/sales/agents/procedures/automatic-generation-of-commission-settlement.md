@@ -10,7 +10,9 @@ La procedura di creazione automatica liquidazione provvigioni esegue il calcolo 
 
 ## Calcolo liquidazioni
 
-Una volta eseguita la ricerca, nella sezione **Lista agenti** saranno visualizzati tutti gli agenti definiti nel sistema: in questa sezione è necessario selezionare la lista dei soggetti per i quali eseguire il calcolo. Si fa notare che è altresì visibile il tipo di maturazione della provvigione agente, in modo da poter impostare i filtri di destra in modo idoneo alle impostazioni dell'agente.
+Una volta eseguita la ricerca, nella sezione **Lista agenti** saranno visualizzati tutti gli agenti definiti nel sistema: in questa sezione è necessario selezionare (anche utilizzando i comandi *Ctrl* o *Shift* della tastiera per richiamare più righe) la lista dei soggetti per i quali eseguire il calcolo. 
+
+E' visibile il **tipo di maturazione** della provvigione agente, in modo da poter **impostare i filtri di destra in modo idoneo alle impostazioni dell'agente**.
 
 Sulla destra si presentano i seguenti filtri:
 
@@ -18,9 +20,18 @@ Sulla destra si presentano i seguenti filtri:
 
 - tre sezioni di filtro a seconda del documento di riferimento (ordine/bolla/fatture, per agenti con ordine confermato, consegna effettuata, fattura emessa);
 
-- una sezione di filtro sulle partite, per gli agenti con scadenza maturata o pagamento avvenuto: sulla base della data impostata saranno quindi maturate le partite con scadenza antecedente nel primo caso, nel secondo caso la quota parte in relazione agli incassi registrati in contabilità con data antecedente. Nel caso di effetti, questi non saranno considerati maturati fino alla data di maturazione (cioè data scadenza più i giorni di rischio cliente impostati nei parametri dell'omonimo modulo).
+- una sezione di filtro sulle **partite**, per gli agenti con scadenza maturata o **pagamento avvenuto**: sulla base della data impostata saranno quindi maturate le partite con scadenza antecedente nel primo caso, nel secondo caso la quota parte in relazione agli **incassi registrati** in contabilità **con data antecedente**. 
 
-Il flag *Conversione provvigioni usando il cambio alla data documento* prevede invece che l'importo delle provvigioni sia effettuato secondo il cambio della data del documento, altrimenti  sarà utilizzato di default il cambio della data della liquidazione agente così come impostato nei campi alla base della maschera.
+Nel caso di **effetti**, questi non saranno considerati maturati fino alla **data di maturazione** (cioè data scadenza **più i giorni di rischio cliente** impostati nei parametri dell'omonimo modulo).
+
+:::note[Nota]
+Con il metodo del *pagamento avvenuto* la selezione delle provvigioni da liquidare sarà sempre "tutto" *fino alla data*, non è possibile selezionare quello che è maturato in uno specifico range di date e non è previsto un collegamento con il campo della periodicità dell liquidazione presente in [anagrafica agente](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/agent-registry/settlement).
+
+
+Ciò è necessario perchè mentre per i documenti non c'è modo di aggiungerne di nuovi / modificare in periodi già liquidati, il discorso è diverso per i pagamenti: niente vieta di creare un pagamento con data registrazione in un periodo già chiuso in un calcolo liquidazione agenti (magari perché non non sono state riconciliate le banche o si è commesso un errore in una vecchia registrazione), dunque il dato verrebbe "perso" nei calcoli successivi.
+:::
+
+Il flag **Conversione provvigioni usando il cambio alla data documento** prevede che l'importo delle provvigioni sia effettuato secondo il cambio della data del documento, altrimenti  sarà utilizzato di default il cambio della data della liquidazione agente così come impostato nei campi alla base della maschera.
 
 :::note **Più in dettaglio:**
 - se non si imposta il flag, Fluentis totalizzerà le provvigioni maturate per divisa del documento e poi convertirà questi totali in divisa nella divisa dell’agente al cambio della data liquidazione (in un caso complesso, ad esempio fattura in GPB e agente in USD quindi, cercherà se trova in tabella cambi un cambio esplicito gbp-usd o usd-gbp e lo applicherà, se non lo trova userà i cambi rispetto all’euro con tutti i decimali che trova).
@@ -31,8 +42,13 @@ La situazione è chiaramente improbabile e "teorica" per far meglio capire l'esa
 
 :::
 
-Nella sezione inferiore, *Estremi per la creazione della liquidazione delle provvigioni*, va indicata la data della liquidazione, una sua descrizione e il mese/anno di riferimento per il calcolo dell'Enasarco.
+Nella **sezione inferiore**, *Estremi per la creazione della liquidazione delle provvigioni*, va indicata la data della liquidazione, una sua descrizione e il mese/anno di riferimento per il calcolo dell'Enasarco.
 
+:::important[Importante]
+I campi del mese / anno per l'Enasaco devono essere compilati con attenzione perchè da essi dipende il calcolo del minimale e massimale enasarco. Dunque al calcolo che si sta per eseguire viene attribuita una "competenza" ai fini del calcolo di eventuale minimale, se per il trimestre in questione non si raggiunge il minimo, o massimale, adeguando i contributi a carico agente e/o ditta mandante.
+
+Gli scaglioni per i contributi enasarco sono definiti nella tabella [Categorie agenti](/docs/configurations/tables/sales/agent-category)
+:::
 
 :::tip PROVVIGIONI SULL'INCASSATO E SCRITTURE CONTABILI PROVVISORIE
 Per il calcolo delle provvigioni maturate vengono considerate SOLO le registrazioni nello stato **definitivo**, quindi eventuali incassi (anche anticipati) registrati in modalità provvisoria verranno ignorati

@@ -1,6 +1,6 @@
 ---
 title: Gestione Previsioni di vendita
-sidebar_position: 1
+sidebar_position: 2
 ---
 
 Questa funzione è raggiungibile da **Sales Forecast > Gestione previsioni di vendita**. Da qui è possibile visualizzare tutte le Previsioni di vendita già codificate e crearne di nuove. Analizziamo le caratteristiche di una Nuova Previsione di vendita.       

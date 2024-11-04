@@ -3,6 +3,12 @@ title: Tipi ordine cliente
 sidebar_position: 23
 ---
 
+:::tip[FAst Start]
+La tabella è interessata dalla procedura di [**Fast Start**](/docs/guide/fast-start)
+
+Nel caso in cui si intenda configurare manualmente fare riferimento alla check list della pagina linkata
+:::
+
 La tabella si apre tramite il percorso **Tabelle > Vendite > Tipi ordine cliente**.
 
 Consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
@@ -21,12 +27,11 @@ Per inserire nuovi record è necessario cliccare nella griglia sulla prima riga 
 
 **Escludi blocco:** si riferisce al blocco per superamento del fido e perciò inserito nella gestione Lock Manager presente nell’area tesoreria tra le procedure dell’Utilizzo Fidi. Se attivo, il sistema per questo tipo ordine non considererà il blocco del documento dovuto al superamento del fido ma lascerà all'utente la possibilità di inserire e stampare il documento; se non attivo, il tipo ordine verrà bloccato qualora si superi il fido e all'utente verrà impedito la stampa del documento; 
 
-**D-Evasione tipo DDT**: contiene il tipo DDT che si vuole venga generato al lancio della procedura automatica di Evasione DDT presente nella ribbon button della Ricerca Ordini Clienti; 
+**Evasione tipo DDT**: contiene il tipo DDT che si vuole venga generato al lancio della procedura automatica di Evasione DDT presente nella ribbon button della Ricerca Ordini Clienti; 
 
-**D-Evasione tipo fattura**: contiene il tipo fattura  che si vuole venga generato al lancio della procedura automatica di Evasione Fatture presente nella ribbon button della Ricerca Ordini Clienti; 
+**Evasione tipo fattura**: contiene il tipo fattura  che si vuole venga generato al lancio della procedura automatica di Evasione Fatture presente nella ribbon button della Ricerca Ordini Clienti; 
 
-
-**D-Evasione tipo picking**: contiene il tipo picking che si vuole venga generato al lancio della procedura automatica di creazione del picking per l'evasione degli ordini disponibili o tramite i piani di carico; 
+**Evasione tipo picking**: contiene il tipo picking che si vuole venga generato al lancio della procedura di creazione del picking dalle [Spedizioni](/docs/logistics/shipping/shippings); 
 
 **Blocca Doc. Stampato**: se attivo, non permette la modifica dell'ordine cliente che abbia il flag “Stampato” attivo in testata; 
 

@@ -9,12 +9,11 @@ I campi obbligatori per l'inserimento di una richiesta di acquisto sono i seguen
 - **Data/Anno**: di default viene proposta la data corrente, ma può essere modificata manualmente.  
 - **Numero**: poposto automaticamente in base al Tipo RDO scelto.   
 - **Fornitore**: contiene l'anagrafica contatto a cui viene richiesta l'offerta.                
-- **Versione**: contiene la versione dell'offerta; è possibile creare una nuova versione con il pulsante della ribbon bar **Nuova versione**.       
+- **Versione**: contiene la versione dell'offerta; è possibile creare una nuova versione con il pulsante della ribbon bar **Nuova versione**.        
 
 :::note Ricorda
 Se il documento viene *creato automaticamente* da una RDA, questi dati vengono ripresi dal *documento d'origine* da cui è stata generato.
 :::
-
 
 Inserendo il **Fornitore** vengono proposti in automatico tutti i dati specifici del tab **Testata**, secondo i dati impostati in precedenza nell'[anagrafica fornitore](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/accounting-data-intro) nei campi corrispondenti al suo indirizzo e nelle sezioni:    
 >- **Divisa**: sezione contenente i dati [Divisa](/docs/configurations/tables/general-settings/currencies), [Cambio](/docs/guide/common/glossary/glossary-intro#currency-exchange), [Data valuta](/docs/guide/common/glossary/glossary-intro#currency-date).     

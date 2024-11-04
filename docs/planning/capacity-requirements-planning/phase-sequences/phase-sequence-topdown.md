@@ -3,6 +3,12 @@ title: Sequenza Fasi - TopDown grid
 sidebar_position: 2
 ---
 
+:::important A cosa serve
+La procedura di **Sequenza fasi** in Fluentis, tramite la funzionalità "Sequenza Fasi - TopDown grid", consente di ottimizzare la gestione delle fasi di produzione assemblando sequenze manuali o basate su regole personalizzate.      
+Dopo un'accurata selezione dei filtri, tra cui centro di lavoro, periodo d'ordine e commessa, le fasi non ancora ordinate sono elencate in una griglia superiore. Da qui, le fasi vengono spostate nella griglia inferiore per attribuire una sequenza.      
+La form include strumenti per modificare dati associati alle fasi, calcolare tempi e aggiornare date, garantendo un preciso controllo sulla pianificazione della produzione. Pulsanti specifici facilitano il calcolo delle sequenze, la gestione delle giacenze e l'aggiornamento dello stato degli ordini, assicurando un flusso produttivo efficiente.
+:::
+
 Dà la possibilità di sequenziare le fasi manualmente o secondo regole decise dall’operatore.
 
 La form si compone di una prima area di filtro dove è possibile selezionare:

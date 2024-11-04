@@ -1,6 +1,6 @@
 ---
 title: Nuova Opportunità
-sidebar_position: 2
+sidebar_position: 3
 ---
 
 In questa form verranno inserite tutte le informazioni generali legate all’**Opportunità** che si vuole inserire. La schermata del'Opportunità si compone di tre parti:

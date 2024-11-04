@@ -33,23 +33,32 @@ Le trasferte hanno una gestione specifica:
 
 **INTERVENTI**
 
-- dagli interventi: nelle spese sostenute sono state dichiarate delle ore di viaggio. Se configurato nella tabella [Tipi Spese](/docs/configurations/tables/general-settings/expenses-types), allo stato approvato dell’intervento verranno generate le dichiarazioni di attività per le ore viaggio ed i servizi. Il codice paga associato alla categoria di attività delle ore viaggio, dovrà avere abilitato il flag "Rimborso viaggio"
+- dagli interventi: nelle spese sostenute sono state dichiarate delle ore di viaggio. Se configurato nella tabella [Tipi Spese](/docs/configurations/tables/general-settings/expenses-types), allo stato approvato dell’intervento verranno generate le dichiarazioni di attività per le ore viaggio ed i servizi. 
 -	In anagrafica risorsa va configurata la trasferta indicando dopo quante ore di viaggio oltre alle ordinarie scatta la trasferta
 
-Se ad es. in anagrafica risorsa si imposta come limite "2" ore di viaggio
- scatterà il calcolo trasfera solo se la somma di servizi + ore viaggio superano 2 ore oltre alle ore ordinarie:
+
+Se il [codice paga](/docs/configurations/tables/employee/Payroll_codes) associato alla categoria di attività delle ore viaggio ha abilitato il flag "Rimborso viaggio", nel cedolino il movimento relativo al viaggio avrà sempre quantità 1 indipendentemente dalle ore di viaggio effettuate (il senso è quello di indicare che c'è stata una trasferta senza segnare l'effettiva durata)
+Se invece il codice paga associato alla categoria di attività delle ore viaggio, NON ha abilitato il flag "Rimborso viaggio", nel cedolino il movimento relativo al viaggio avremo quantità = ore di viaggio effettive. 
+
+Se ad es. in anagrafica risorsa si imposta come soglia "2" ore di viaggio per il calcolo della trasferta scatterà il calcolo trasfera solo se la somma di servizi + ore viaggio superano 2 ore oltre alle ore ordinarie:
+
+> Esempio 1:
 
  8 ore ordinarie
 
  3 ore di viaggio
 
- --> nel cedolino paga nei movimenti ci saranno 2 righe: una riga con 8 ore di servizio + una riga con quantità 1 per la trasferta
+ --> nel cedolino paga nei movimenti ci saranno 2 righe: 
+ - una riga con 8 ore di servizio 
+ - una riga per la trasferta (con quantità=1 se il flag "Rimborso viaggio" nel codice paghe è attivo, con quanità=3 se il flag "Rimborso viaggio" nel codice paghe NON è attivo )
  
+ > Esempio 2:
+
  6 ore ordinarie
 
  3 ore di viaggio
 
---> nel cedolino paga nei movimenti ci sarà una unica riga per 8 ore ordinarie, in quanto il minimo oltre alle 8 ore sono 2 di viaggio (in questo caso invece avremmo 9 ore, quindi 1 sola ora oltre alle 8 ordinarie)
+--> nel cedolino paga nei movimenti ci sarà una unica riga per 8 ore ordinarie, in quanto la soglia perchè sia considerata trasferta, sono 2 ore di viaggio oltre alle 8 ore ordinarie (in questo caso invece sono 9 ore, quindi 1 sola ora oltre alle 8 ordinarie)
 
 La stessa cosa accadrà se la dichiarazione attività è stata inserita manualmente separatamente per le ore ordinarie e le ore di viaggio con apposita causale attività. 
 

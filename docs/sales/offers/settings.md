@@ -13,9 +13,6 @@ Nel modulo Vendite e CRM di Fluentis, la gestione delle offerte consente di crea
 - Automazione e workflow: Le offerte possono essere soggette a regole di workflow che attivano notifiche, approvazioni o ulteriori azioni, migliorando l'efficienza del processo decisionale.
 - Reportistica e analisi: È possibile generare report dettagliati sulle offerte, analizzando tassi di conversione, tempi di approvazione e altri KPI per supportare la gestione delle performance aziendali.     
 
-**Benefici operativi**:          
-L'integrazione delle offerte con il gestionale Fluentis permette di ridurre ridondanze, migliorare l'accuratezza dei dati e garantire la coerenza operativa su tutte le fasi del processo di vendita, dal primo contatto fino alla chiusura del contratto.
-
 Prima di utilizzare il modulo, è necessario compilare le seguenti tabelle:
 > - [Numerazioni](/docs/configurations/tables/fluentis-numerations)    
 > - [Parametri offerte](/docs/configurations/parameters/sales/offer-parameters)     

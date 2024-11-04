@@ -1,6 +1,6 @@
 ---
 title: Stampa Ordini Produzione
-sidebar_position: 5
+sidebar_position: 6
 ---
 
 Questa form consente di stampare una lista di ordini di produzione, con possibilità di dettagliare la visualizzazione.
