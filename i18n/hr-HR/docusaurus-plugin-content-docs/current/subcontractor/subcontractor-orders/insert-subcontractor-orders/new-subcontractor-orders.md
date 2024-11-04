@@ -1,17 +1,17 @@
 ---
-title: Nuovo ordine di conto lavoro
+title: Novi nalog podizvođača 
 sidebar_position: 1
 ---
 
-Tramite questa form è possibile creare manualmente un nuovo ordine di conto lavoro oppure si possono modificare quelli già esistenti.
+Pomoću ovog obrasca moguće je ručno kreirati novu narudžbu za rad na temelju ugovora o radu ili izmijeniti već postojeće narudžbe.
 
-La form si apre tramite il percorso **Conto Lavoro > Ordine di conto lavoro > Nuovo ordine di conto lavoro** oppure tramite il pulsante **Nuovo** che si trova nella form [Ricerca ordine di conto lavoro](/docs/subcontractor/subcontractor-orders/search-subcontractor-orders).
+Obrazac se otvara putem puta **Podizvođač > Nalog Podizvođača > Novi nalog Podizvođača** ili putem gumba **Novo** koji se nalazi u obrascu [Pretraga narudžbi Podizvođača](/docs/subcontractor/subcontractor-orders/search-subcontractor-orders).
 
-L'applicazione richiede di inserire il **Fornitore** (Terzista) intestatario del ordine, utilizzando l'apposito help conti. In automatico verranno proposti: **Anno**, **Numero**, **Data** correnti e il **Tipo documento** (proposto uguale a quello inserito nei *Parametri di Conto Lavoro*), che possono essere modificati dall'utente.
+Aplikacija zahtijeva unos **Dobavljača** (izvršitelja) koji je nositelj narudžbe, koristeći odgovarajuću pomoć za račune. Automatski će biti predloženi: trenutna **Godina**, **Broj**, **Datum** i **Tip dokumenta** (predložena jednaka onoj unesenoj u *Parametre Podizvođača*), a korisnik ih može izmijeniti.
 
-La form contiene una serie di tab:
+Obrazac sadrži niz kartica:
 
-- [Testata](/docs/subcontractor/subcontractor-orders/insert-subcontractor-orders/header) e le sue Procedure;  
-- [Articoli](/docs/subcontractor/subcontractor-orders/insert-subcontractor-orders/items);   
-- [Materiali](/docs/subcontractor/subcontractor-orders/insert-subcontractor-orders/materials);  
-- [Riepiloghi](/docs/subcontractor/subcontractor-orders/insert-subcontractor-orders/summary).
+- [Zaglavlje](/docs/subcontractor/subcontractor-orders/insert-subcontractor-orders/header) i njezine Procedure;  
+- [Artikli](/docs/subcontractor/subcontractor-orders/insert-subcontractor-orders/items);   
+- [Materijali](/docs/subcontractor/subcontractor-orders/insert-subcontractor-orders/materials);  
+- [Sažeci](/docs/subcontractor/subcontractor-orders/insert-subcontractor-orders/summary).

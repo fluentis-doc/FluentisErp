@@ -1,15 +1,21 @@
 ---
-title: Ricerca ordini di conto lavoro
+title: Pretraga naloga podizvođača
 sidebar_position: 3
 ---
 
-La form si apre tramite il percorso **Conto Lavoro > Ordini > Ordini di Conto Lavoro**.
+Obrazac se otvara putem puta **Podizvođač > Narudžbe > Nalozi Podizvođača**.
 
-import SearchForm from './../../import/sections/search-form.md'
+Obrazac za Pretragu dokumenata omogućuje pretraživanje svih dokumenata u svrhu njihovog pregledavanja, izmjene i eventualnog brisanja, ili unosa novog dokumenta; prozor se sastoji od područja za filtriranje i mreže s rezultatima
 
-<SearchForm />
+Nakon postavljanja svih željenih filtera, dovoljno je kliknuti na gumb **Traži** koji se nalazi u *traci izbornika* kako biste prikazali rezultate unutar mreže s rezultatima.
 
-*Pulsanti specifici*:
+Za otvaranje detalja dokumenta, dovoljno je odabrati ga i dvaput kliknuti mišem, ili kliknuti na gumb **Izmijeni** (omogućuje ulazak u detalje i njihovu izmjenu) ili na gumb **Prikaži** (omogućuje ulazak u detalje i njihovo pregledavanje bez mogućnosti izmjene).
 
-> **Nuovo**: il pulsante permette di [Creare un nuovo ordine](/docs/subcontractor/subcontractor-orders/insert-subcontractor-orders/new-subcontractor-orders).    
-> **Duplica**: pulsante per duplicare un documento. Permette la creazione di una copia di un documento, riportando tutte le condizioni del documento di origine, ma con i dati attuali. Utilizzata per frequenti inserimenti di ordini dello stesso Fornitore.
+*Vidi također*: 
+*Funkcionalnosti, gumbi i zajednička polja* *Dodavanje novih polja u obrasce za pretraživanje* 
+
+
+*Specifični gumbi*:
+
+> **Novo**: gumb omogućuje [Stvaranje nove narudžbe](/docs/subcontractor/subcontractor-orders/insert-subcontractor-orders/new-subcontractor-orders).    
+> **Dupliciraj**: gumb za dupliciranje dokumenta. Omogućuje stvaranje kopije dokumenta, zadržavajući sve uvjete izvornog dokumenta, ali s ažuriranim podacima. Koristi se za česta unosa narudžbi od istog dobavljača.

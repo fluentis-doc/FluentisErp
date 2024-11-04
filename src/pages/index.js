@@ -106,8 +106,9 @@ const features = [
                 <li><a href='docs/logistics/physical-inventory/physical-inventory-intro'><Translate>Inventari fisici</Translate></a></li> 
                 <li><a href='docs/logistics/udc/loading-unit-intro'><Translate>UDC</Translate></a></li> 
                 <li><a href='docs/logistics/load-plans/create-plan'><Translate>Piani di carico</Translate></a></li> 
-                <li><a href='docs/logistics/wms/wms-intro'><Translate>WMS</Translate></a></li> 
+                <li><a href='docs/logistics/shipping/shippings-intro'><Translate>Spedizioni</Translate></a></li> 
                 <li><a href='docs/logistics/motorvehicles/motorvehicle-management'><Translate>Automezzi</Translate></a></li> 
+                <li><a href='docs/logistics/wms/wms-intro'><Translate>WMS</Translate></a></li> 
               </ul>
              ),    
             },
@@ -115,9 +116,9 @@ const features = [
               title: <a href='docs/planning/planning-intro'><Translate>{'Pianificazione'}</Translate></a>,
               description: (
                 <ul style={{ listStyleType: 'none', padding: 0 }}>
-                  <li><a href='docs/planning/mps-master-production-scheduling/job-order-creation'><Translate>Commesse di produzione</Translate></a></li> 
-                  <li><a href='docs/planning/ms-master-scheduling/general-schedule'><Translate>MS - Master scheduling</Translate></a></li> 
-                  <li><a href='docs/planning/capacity-requirements-planning/general-overview'><Translate>CRP-Capacity requirements</Translate></a></li> 
+                  <li><a href='docs/planning/mps-master-production-scheduling/job-orders-intro'><Translate>Commesse di produzione</Translate></a></li> 
+                  <li><a href='docs/planning/ms-master-scheduling/ms-master-scheduling-intro'><Translate>MS - Master scheduling</Translate></a></li> 
+                  <li><a href='docs/planning/capacity-requirements-planning/capacity-requirements-planning-intro'><Translate>CRP-Capacity requirements</Translate></a></li> 
                 </ul>
                ),    
               },

@@ -1,35 +1,34 @@
 ---
-title: Registrazione rientri
+title: Zapisi isporuke robe na skladište
 sidebar_position: 1
 ---
 
-La form si apre tramite il percorso **Conto Lavoro > Rientri > Procedure > Registrazione rientri** e permette di registrare a magazzino i rientri di conto lavoro già controllati e non ancora registrati.
+Obrazac se otvara putem puta  **Podizvođač > Povrati > Procedure > Zapis isporuke robe na skladište** i omogućuje registraciju povrata u skladište koji su već provjereni i još nisu registrirani.
 
-## Filtro
+## Filter 
 
-In questo tab, l'utente ha la possibilità di cercare e trasferire in magazzino i rientri, secondo i criteri di filtro disponibili. 
+Na ovoj kartici korisnik ima mogućnost pretraživanja i prijenosa povrataka u skladište prema dostupnim kriterijima filtra. 
   
+*Poseban gumb*:
 
-*Pulsanti specifici*:
+> **Traži**: omogućuje primjenu filtara pretrage na cijelu bazu podataka Povrata Podizvođača koji su uneseni, provjereni i još nisu registrirani;     
+> **Razduženje**: omogućuje izdavanje odabranih povrataka iz skladišta prema algoritmima izdavanja.
 
-> **Ricerca**: permette di applicare i filtri di ricerca all'intero database dei Rientri di Conto Lavoro inseriti, controllati e non ancora registrati;    
-> **Scarico**: permette di eseguire lo scarico dei rientri selezionati dal magazzino, in base agli algoritmi di scarico.
+*Specifična polja*:
 
-*Campi specifici*:
+**Broj dokumenta**: u ovom stupcu prikazuje se broj povratka iz konta lavoro;  
+**Zadani  datum dokumenta**: u ovom stupcu prikazuje se datum povratka iz konta lavoro;  
+**Datum zapisa zalihe**: nalazi se u donjem dijelu forme i prema zadanim postavkama postavljen je na trenutni datum, ali se može promijeniti.
 
-**Numero doc. def.**: in questa colonna viene visualizzato il numero del rientro di conto lavoro;  
-**Data doc. def.**: in questa colonna viene visualizzata la data del rientro di conto lavoro;  
-**Data registrazione magazzino**: si trova nella zona inferiore della form ed è impostata di default sulla data corrente, ma può essere modificata.
+Nakon što se odaberu povrati podizvođača, koristite gumb *Razduženje* za izvršavanje skladišnih operacija: istovremeno s ovom operacijom, aplikacija vrši unos proizvedenih artikala izvan tvrtke na skladište, izdavanje materijala koji su korišteni iz skladišta izvan tvrtke te eventualni unos povrata na odgovarajuće skladište za povrate.
 
-Una volta selezionati i rientri di conto lavoro, utilizzare il tasto *Scarico* per eseguire i movimenti di magazzino: contestualmente a questa operazione l'applicazione esegue il carico sul magazzino di rientro degli articoli prodotti dal terzista, lo scarico dal magazzino del terzista dei materiali utilizzati e l'eventuale carico dei resi sull'apposito magazzino resi.
+## Sažeci
 
-## Riepiloghi
+Na ovoj kartici moguće je izvršiti 'rollback' operacije registracije povrata konta lavoro, vraćajući situaciju na stanje prije same operacije. 
 
-In questo tab è possibile eseguire il 'rollback' dell'operazione di registrazione del rientro di conto lavoro, ripristinando quindi la situazione antecedente all'operazione stessa.
+Podaci u donjim tablicama, **Povrati** i **Registracije**, odgovaraju odabranim zapisima o registraciji iz tablice na vrhu (nakon primjene filtriranja podataka).
 
-I dati nelle griglie in basso, **Rientri** e **Registrazioni**, corrispondono alla registrazione di scarico selezionata nella griglia superiore (dopo aver filtrato i dati).
-
-*Pulsanti specifici*:
-> **Ricerca**: per cercare i rientri scaricati. Il risultato di questa procedura viene visualizzata nella griglia di risultato, *Scarico rientri*;    
-> **Ripristina**: Richiama la procedura che esegue il rollback dell'intera operazione di registrazione rientri selezionata nella griglia *Scarico rientri*; quindi se con la stessa operazione di registrazione sono stati registrati più rientri, tutti questi rientri saranno riportati nello stato di 'non caricati';  
-> **Ripristina rientri**: richiama la procedura che esegue il rollback della registrazione dei soli rientri selezionati nella griglia inferiore, nel tab *Rientri*.
+*Specifični gumbi*:
+> **Traži**: koristi se za pretraživanje izvršenih izdavanja povrata. Rezultat ove procedure prikazuje se u tablici rezultata,  *Razduženje skladišta povratom*;    
+> **Vrati**: pokreće proceduru za poništavanje cijele operacije registracije odabrane iz tablice  *Razduženje skladišta povratom*; dakle, ako je istom operacijom registrirano više povrata, svi ti povrati će biti vraćeni u stanje "nije izdano";    
+> **Otkaži isporuke na skladište**: pokreće proceduru za poništavanje registracije samo odabranih povrata u donjoj tablici, u kartici *Povrati*.

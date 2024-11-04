@@ -1,21 +1,21 @@
 ---
-title: Articoli
+title: Artikli
 sidebar_position: 3
 ---
 
-La form è costituita da una griglia, all'interno della quale l'utente può inserire manualmente i prodotti che sono richiesti al terzista. 
+Obrazac se sastoji od mreže u koju korisnik može ručno unijeti proizvode koji su potrebni izvršitelju. Mogu se unijeti kodirani artikli i napomene.
 
-Essa risulta già compilata nel caso in cui l'ordine provenga da *Schedulazione generale* o da *Elaborazione MRP*, lasciando comunque la facoltà all'utente di modificarla e/o aggiungere ulteriori materiali alla lista componenti dell'ordine pianificato. Da notare che se l'ordine pianificato è di acquisto il tab Materiali risulta non attivo. 
+Obrazac već može biti popunjena ako narudžba dolazi iz *Općeg rasporeda* ili *MRP obrade*, ali korisnik i dalje može izmijeniti ili dodati dodatne materijale na listu komponenti planirane narudžbe. Važno je napomenuti da ako je planirana narudžba za kupovinu, kartica Materijali bit će neaktivna.
 
-## Dati articolo
+## Podaci o artiklu
 
-In questo tab vengono visualizzate le informazioni relative alla riga selezionata nella griglia degli articoli, tra quali:
+Na ovoj kartici prikazuju se informacije koje se odnose na odabranu liniju u mreži artikala, uključujući:  
 
-**Corso lavorazione**: in questo campo è ripreso il flag presente nei parametri MRP dell'articolo chiamato *Corso Lavorazione*;  
-**Quantità da produrre**: quantità dell'ordine iniziale comunicata al terzista;  
-**Quantità già rientrata**: totale della quantità ricevuta e lavorata;  
-**Data previsto rientro**: data di arrivo merce lavorata;  
-**Note lavorazione**: sono gestite dall'utente. Può essere parametrizzato e possono essere riportati dei dati sensibili del sistema, ad esempio la descrizione della fase di lavoro che ha generato il fabbisogno di lavorazione;  
-**Fase**: con un doppio click si apre un help fasi di lavorazione dal quale si può selezionare la relativa fase e sottofase, e quindi assegnare il materiale selezionato ad una determinata fase di lavorazione dell'articolo;  
-**Magazzino**: magazzino di destinazione del prodotto lavorato;  
-**Pesi**: vengono riportati il Peso netto e il Peso lordo totali delle righe articolo. Vengono riportati i pesi di anagrafica articolo moltiplicati per la quantità di riga.
+**Radni tijek**: ovo polje odražava oznaku prisutnu u MRP parametrima artikla nazvanom *Radni tijek*;  
+**Količina za proizvesti**: količina početne narudžbe komunicirana izvršitelju;  
+**Već vraćena količina**: ukupna količina primljena i obrađena;  
+**Očekivani datum povrata**: datum dolaska obrađenih proizvoda;  
+**Radna bilješka**: upravlja ih korisnik. Može biti parametrizirano i može sadržavati osjetljive podatke sustava, kao što je opis faze obrade koja je generirala potrebu za obradom;    
+**Faza**: dvoklikom se otvara pomoć za faze obrade, iz koje se može odabrati odgovarajuća faza i podfaza te dodijeliti odabrani materijal određenoj fazi obrade artikla;    
+**Skladište**: skladište odredišta za obrađeni proizvod;  
+**Težine**: prikazuju se ukupna neto i bruto težina linija artikala. Prikazuju se težine artikla iz evidencije pomnožene s količinom linije.  

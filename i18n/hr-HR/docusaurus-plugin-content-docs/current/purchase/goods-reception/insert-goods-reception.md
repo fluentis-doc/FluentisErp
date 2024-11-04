@@ -7,7 +7,8 @@ Putanje za stvaranje novog **Primanja Robe**:
 
 - idite na **Nabava > Narudžba dobavljača > Stvorite popis primanja**  
 
-- ili putem gumba **Novo** koji se nalazi u obrascu [Pretraga primanja robe](/docs/purchase/goods-reception/search-goods-reception).
+- ili putem gumba **Novo** koji se nalazi u obrascu
+
 
 ## Obavezni podaci
 

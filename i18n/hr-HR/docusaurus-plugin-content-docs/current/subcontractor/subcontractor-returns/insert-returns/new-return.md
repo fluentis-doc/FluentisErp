@@ -1,23 +1,23 @@
 ---
-title: Nuovo rientro
+title: Novi povrat
 sidebar_position: 1
 ---
 
-Tramite questa form è possibile creare manualmente un nuovo rientro di conto lavoro oppure si possono modificare quelli già esistenti.
+Putem ovog obrasca moguće je ručno stvoriti novi povrat podizvođača ili izmijeniti već postojeće. 
 
-La form si apre tramite il percorso **Conto Lavoro > Rientri > Nuovo Rientro** oppure tramite il pulsante **Nuovo** che si trova nella form [Ricerca Rientri](/docs/subcontractor/subcontractor-returns/search-returns).
+Obrazac se otvara putem puta  **Podizvođač > Povrati >  Novi povrat** ili putem gumba **Novo** koji se nalazi u obrascu [Pretraga Povrata](/docs/subcontractor/subcontractor-returns/search-returns).
 
-L'applicazione richiede di inserire il **Fornitore** (Terzista) intestatario del ordine, utilizzando l'apposito help conti, il **Tipo**, il **Numero** e la **Data rientro** effettivo (che di solito corrisponde alla data corrente).
+Aplikacija zahtijeva unos  **Dobavljača** (Podizvođača) na čije ime je narudžba, koristeći odgovarajuću pomoć za račune, te  **Tip**, **Broj** i **Datum** stvarnog povrata (koji obično odgovara trenutnom datumu). 
 
-**Controllato**: il flag viene attivato manualmente dall'utente;  
-**Valorizzato e Caricato**: vengono attivati automaticamente nel momento in cui si procede ad eseguire nell'ordine la valorizzazione e la registrazione a magazzino del documento.
+**Kontrolirano**: oznaku ručno aktivira korisnik;    
+**Valorizirano i Utovareno**: oznake se automatski aktiviraju u trenutku kada se redom izvrše vrijednovanje i registracija dokumenta u skladište.  
 
-> **Rientri previsti**: il pulsante si attiva dopo il salvataggio dei dati obbligatori e apre la form *Evasione da ordine*, all'interno della quale l'utente visualizza tutti gli ordini di conto lavoro che hanno ancora righe parzialmente o completamente inevase e da cui è possibile quindi generare dei rientri;  
-> **Registrazione rientri**:
+> **Predviđene isporuke na skladište**: gumb se aktivira nakon spremanja obaveznih podataka i otvara obrazac *Izuzimanje iz narudžbe*, unutar kojeg korisnik vidi sve narudžbe kontnog rada koje još uvijek imaju djelomično ili potpuno neizvršene stavke i iz kojih je moguće generirati povrate;     
+> **Zapis isporuke robe na skladište**:
 
-La form contiene una serie di tab:
+Obrazac sadrži niz kartica:
 
-- [Testata](/docs/subcontractor/subcontractor-orders/insert-subcontractor-orders/header) e le sue Procedure;  
-- [Articoli](/docs/subcontractor/subcontractor-orders/insert-subcontractor-orders/items);   
-- [Materiali](/docs/subcontractor/subcontractor-orders/insert-subcontractor-orders/materials);  
-- [Riepiloghi](/docs/subcontractor/subcontractor-orders/insert-subcontractor-orders/summary).
+- [Zaglavlje](/docs/subcontractor/subcontractor-orders/insert-subcontractor-orders/header) i njegove Procedure;  
+- [Artikli](/docs/subcontractor/subcontractor-orders/insert-subcontractor-orders/items);   
+- [Materijali](/docs/subcontractor/subcontractor-orders/insert-subcontractor-orders/materials);  
+- [Sažeci](/docs/subcontractor/subcontractor-orders/insert-subcontractor-orders/summary).

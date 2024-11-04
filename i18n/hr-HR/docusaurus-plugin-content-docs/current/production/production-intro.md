@@ -37,7 +37,7 @@ import Link from '@docusaurus/Link';
 <div className="cardContainer">
     <div className="card">
 ###     <Link to="/docs/production/mes/mes-intro">Fluentis MES</Link>
-        <p><Link to="/docs/production/mes/workstation" className="bold-link">Workstation</Link></p>
+        <p><Link to="/docs/production/mes/workstation" className="bold-link">Radna stanica</Link></p>
         <p>Omogućuju učinkovito upravljanje proizvodnim operacijama, omogućavajući kodiranje, filtriranje i povezivanje resursa. Zahvaljujući svom intuitivnom sučelju, korisnici mogu optimizirati tijek rada i poboljšati operativnu učinkovitost.</p>
         <p><Link to="/docs/production/mes/production-resources" className="bold-link">Proizvodni resursi</Link></p>
         <p>Omogućuje jednostavno i brzo prilagođavanje izgleda i ponašanja pojedinog radnog centra, prilagođavajući sustav specifičnim poslovnim potrebama.</p>

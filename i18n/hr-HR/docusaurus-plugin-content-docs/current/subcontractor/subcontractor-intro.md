@@ -1,9 +1,6 @@
 ---
-title: CONTO LAVORO
+title: PODIZVOĐAČ  
 sidebar_position: 1
 ---
 
-La gestione Conto Lavoro di **Fluentis** consente la creazione degli ordini di Conto Lavoro sia manualmente dalla produzione, sia automaticamente tramite la conferma delle proposte di riordino generate dalle procedure di analisi fabbisogni.
-Una volta effettuato l'inoltro degli ordini ai fornitori terzisti, il modulo gestisce l'emissione dei documenti di trasporto per i materiali (tenendo in considerazione i materiali forniti direttamente dai terzisti e la loro giacenza in magazzino), infine il caricamento dei documenti di trasporto di acquisto che andranno a scaricare il magazzino del terzista.
-Il modulo è integrato con la distinta base e consente di gestire i codici di rientro dal conto lavoro, attraverso l'organizzazione dei rientri.
-Il tutto è integrato con la gestione dei listini, che consente l'assegnazione del prezzo sia per codice sia, eventualmente, per codice – fase.
+Upravljanje Podizvođača u **Fluentisu** omogućava kreiranje radnih naloga kako ručno iz proizvodnje, tako i automatski putem potvrde prijedloga za ponovno naručivanje generiranih analizom potreba. Nakon što se narudžbe proslijede vanjskim dobavljačima, modul upravlja izdavanjem transportnih dokumenata za materijale (uzimajući u obzir materijale koje direktno dobavljaju vanjski dobavljači i njihovu zalihu u skladištu), te konačno učitavanjem dokumenata o nabavi koji će smanjiti zalihu kod vanjskog dobavljača. Modul je integriran s osnovnom specifikacijom i omogućava upravljanje kodovima povrata iz Podizvođača putem organizacije povrata. Sve je integrirano s upravljanjem cjenicima, što omogućava dodjelu cijene kako za kodove tako i, prema potrebi, za kodove i faze.

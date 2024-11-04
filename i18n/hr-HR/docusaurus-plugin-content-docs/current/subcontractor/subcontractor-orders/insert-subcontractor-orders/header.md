@@ -1,28 +1,32 @@
 ---
-title: Testata
+title: Zaglavlje
 sidebar_position: 3
 ---
 
-Dopo aver selezionato i dati obbligatori nella sezione superiore, l'utente può continuare l'inserimento dei seguenti dati [manualmente](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) oppure con il [help di campo](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) oppure, in base ai dati inseriti nell'anagrafica del terzista', l'applicazione compila i campi *automaticamente*.
+Nakon što odabere obavezne podatke u gornjem dijelu, korisnik može nastaviti unos sljedećih podataka [ručno](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) ili uz [pomoć polja](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) ili, na temelju podataka unesenih u evidenciju izvršitelja, aplikacija *automatski* popunjava polja.
 
-Inserendo il **Fornitore** vengono *proposti* in automatico tutti i dati specifici del tab **Testata**, secondo i dati impostati in precedenza nell'[anagrafica fornitore](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/accounting-data-intro) nei campi corrispondenti al suo indirizzo e nelle *sezioni*:  
+Kada se unese **Dobavljač** automatski se *predlažu* svi specifični podaci na kartici **Zaglavlje**, prema podacima postavljenim ranije u [šifarniku dobavljača](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/accounting-data-intro) u odgovarajućim poljima adrese i u sljedećim *sekcijama*:  
 
-- **Divisa**: [Divisa](/docs/guide/common/glossary/glossary-intro#currency), [Cambio](/docs/guide/common/glossary/glossary-intro#currency-exchange), [Data valuta](/docs/guide/common/glossary/glossary-intro#currency-date).
-- **Nazione**: [Nazione](/docs/guide/common/glossary/glossary-intro#country), [Lingua](/docs/guide/common/glossary/glossary-intro#language), [Zona](/docs/guide/common/glossary/glossary-intro#zone)
-- **Consegna**: [Consegna](/docs/guide/common/glossary/glossary-intro#shipment), [Porto](/docs/guide/common/glossary/glossary-intro#carriage), [Imballo](/docs/guide/common/glossary/glossary-intro#packing), [Listino](/docs/guide/common/glossary/glossary-intro#sales-price-list) e il suo [intervallo di validità](/docs/guide/common/glossary/glossary-intro#validity-date)
+- **Valuta**: [Valuta](/docs/guide/common/glossary/glossary-intro#currency), [Tečaj](/docs/guide/common/glossary/glossary-intro#currency-exchange), [Datum valute](/docs/guide/common/glossary/glossary-intro#currency-date).
+- **Država**: [Država](/docs/guide/common/glossary/glossary-intro#country), [Jezik](/docs/guide/common/glossary/glossary-intro#language), [Zona](/docs/guide/common/glossary/glossary-intro#zone)
+- **Isporuka**: [Isporuka](/docs/guide/common/glossary/glossary-intro#shipment), [Luka](/docs/guide/common/glossary/glossary-intro#carriage), [Pakiranje](/docs/guide/common/glossary/glossary-intro#packing), [Cjenik](/docs/guide/common/glossary/glossary-intro#sales-price-list) i njegov  [vremenski okvir važenja](/docs/guide/common/glossary/glossary-intro#validity-date)
 
-### Pagamenti
+### Plaćanja
 
-Le **Soluzioni di pagamento** sono riportate in automatico dall'*Anagrafica terzista > tab Pagamenti* e possono essere modificate/cancellate dall'utente.
+**Mogućnost plaćanja** automatski se prenose  *Šifarnik izvršitelja > kartica Plaćanja* i mogu se mijenjati/brisati od strane korisnika.  
 
-*Pulsante specifico*
+*Poseban gumb*
 
-> **Cancella pagamenti**: utilizzato per cancellare le righe di pagamento selezionate.
+> **Izbriši plaćanja**:  koristi se za brisanje odabranih redaka plaćanja.  
 
-### Sconti
+### Popusti
 
-Vengono proposti solo gli sconti predefiniti ripresi dall'*Anagrafica terzista > tab Sconti* e possono essere modificate/cancellate dall'utente.
+Ponuđeni su samo predefinirani popusti preuzeti iz *Šifarnnik izvršitelja > kartica Popusti* i mogu se mijenjati/brisati od strane korisnika.  
 
-import TabDiscount from './../../../import/sections/tab-discount.md'
+Popusti koji su ponuđeni u zaglavlju dokumenta primjenjuju se na svaki novi redak artikla koji se unese u dokument.
 
-<TabDiscount />
+Ako nakon što su uneseni retci artikla dodate novi popust u zaglavlje, on se neće automatski primijeniti na već unesene retke artikla.
+
+*Poseban gumb*  
+
+> **Izbriši popuste**: koristi se za brisanje odabranih redaka popusta.

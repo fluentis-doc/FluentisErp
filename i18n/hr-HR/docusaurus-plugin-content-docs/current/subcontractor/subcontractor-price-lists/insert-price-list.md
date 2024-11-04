@@ -1,104 +1,102 @@
 ---
-title: Inserimento Listini di Conto lavoro
+title: Unos cjenika konta rada 
 sidebar_position: 1
 ---
 
-Da questa applicazione sarà possibile inserire i listini di conto lavoro.
+Iz ove aplikacije bit će moguće unositi cjenike konta rada.   
 
-## Sezione superiore
+## Gornji dio 
 
-Nella sezione superiore è necessario inserire il **Fornitore**.
-Nella form di inserimento vengono proposte automaticamente i valori dei campi **Da data validità** (viene proposta la data corrente per inizio validità) e la [Divisa](/docs/guide/common/glossary/glossary-intro#currency) (viene proposta la divisa della società, ma possono essere modificati.
-Viene riportato un eventuale **Sconto listino da anagrafica** ed è possibile inserire delle **Note**
+U gornjem dijelu potrebno je unijeti **Dobavljača**.
+U obrascu za unos automatski su predložene vrijednosti polja **Od datma valjanosti** (predložen je trenutni datum za početak valjanosti) i [Valuta](/docs/guide/common/glossary/glossary-intro#currency) (predložena je valuta tvrtke, ali ih je moguće izmijeniti).
+Također je navedena eventualna **Cijena popusta iz šifarnika** i moguće je unijeti **Napomene**
 
-Nella sezione superiore è presente anche il filtro per ricercare gli Articoli all'interno del listino
+U gornjem dijelu nalazi se i filtar za pretraživanje Artikala unutar cjenika.  
 
-## Articoli
+## Artikli 
 
-In questa form verranno indicati gli articoli ed eventuali sconti associati a questo listino.
+U ovom obascu bit će prikazani članci i eventualni popusti povezani s ovim cjenikom. 
 
-**Classe/Articolo/Descrizione**: indicare il codice dell'articolo da includere nel listino. La descrizione verrà recuperata in automatico grazie al codice articolo. Per inserire un nuovo articolo nella griglia basterà posizionarsi sulla riga per compilare i vari dati oppure utilizzare il pulsante *Nuovo articolo* presente nella ribbon bar.
+**Klasa/Članak/Opis**: upišite kod članka koji želite uključiti u cjenik. Opis će se automatski popuniti na temelju koda članka. Za unos novog članka u tablicu, dovoljno je pozicionirati se na redak i unijeti potrebne podatke ili koristiti gumb *Novi artikl* koji se nalazi u traci izbornika.  
 
-**Codice/Descrizione variante**: serve se oltre al codice articolo anche la variante contraddistingue un articolo da un altro.
+**Kod/Opis varijante**: ovo se koristi da biste osim kôda artikla naveli i varijantu koja razlikuje jedan artikl od drugoga.  
 
-**Codice fase**: è possibile associare all'articolo un'eventuale [Fase esterna](/docs/configurations/tables/production/standard-phases) che sarà svolta dal terzista. In questo modo è possibile definire un prezzo per ogni fase dello stesso articolo; verranno compilati in automatico i campi **Fase** e **Sottofase**;
+**Šifra faze**: moguće je povezati s artiklom eventualnu [Vanjsku fazu](/docs/configurations/tables/production/standard-phases) koju će obaviti izvođač radova. Na ovaj način moguće je definirati cijenu za svaku fazu istog artikla; polja **Faza** i **Podfaza** automatski će se popuniti;  
 
-**Unità di misura**: può essere quella gestionale dell'articolo o una delle sue unità di misura alternative.
+**Mjerna jedinica**: može biti upravna jedinica za artikl ili jedna od njegovih alternativnih jedinica mjere.   
 
-**Quantità**: proposta uguale a 1, è la quantità di riferimento del prezzo; se diversa da 1, quando deve essere calcolato il prezzo viene diviso per la quantità del listino.
+**Količina**: predloženo je da bude jednako 1, što je referentna količina za cijenu; ako je različito od 1, kada se izračunava cijena, podijelit će se s količinom iz cjenika.  
 
-**Prezzo** riferito alla divisa del listino.
+**Cijena**: vezana uz valutu cjenika.
 
-**IVA**: questo campo viene recuperato. Qualora sul cliente non fosse impostato sarà necessario popolare questo campo con il codice IVA.  
+**PDV**: ovo polje se automatski popunjava. Ako nije postavljeno na klijenta, potrebno je popuniti ovo polje s PDV-om.   
 
-**Prezzo Ivato**: il sistema calcola questo prezzo a partire fa prezzo e dall'aliquota del codice IVA inserito. 
+**Cijena s PDV-om**: sustav izračunava ovu cijenu na temelju cijene i stope PDV-a unesene u kodu PDV-a.   
 
-**Altezza/Larghezza/Profondità**: dati informativi relativi al listino. Il sistema non utilizza questi campi per eventuali elaborazioni. 
+**Visina/Širina/Dubina**: informativni podaci o cjeniku. Sustav ne koristi ova polja za eventualne obrade.  
 
-Per ogni articolo del listino è possibile inserire alcune tipologie di sconto come spiegato di seguito.
+Za svaki artikl u cjeniku moguće je unijeti nekoliko vrsta popusta kako je objašnjeno u nastavku.  
 
-Si indica il **Tipo scaglione** nel campo omonimo, mentre nei campi successivi verranno riportati i dati relativi agli articoli inseriti a listino.
+U polju **Tip skale** navodi se vrsta skale, dok se u sljedećim poljima navode podaci o artiklima unesenim u cjenik.  
 
-Questi scaglioni sono indicati nella tabella *Tipi Sconti*.
+Ove skale navedene su u tablici *Tipovi popusta*.  
 
-Nella parte destra della form troviamo una griglia in cui sono indicati tutti i possibili sconti per questo articolo. Queste vengono compilate solo selezionando un articolo presente nel listino.
+Na desnoj strani forme nalazi se mreža u kojoj su navedeni svi mogući popusti za ovaj artikl. Ove se informacije unose samo odabirom artikla prisutnog u cjeniku. 
 
-### Sconti
+### Popusti 
 
-Questi sconti sono degli sconti fissi che vengono riportati nei documenti.
+Ovi popusti su fiksni popusti koji se primjenjuju u dokumentima.  
 
-Di seguito la corretta compilazione di questa griglia:
+Evo ispravne popune ove mreže: 
 
-**N**: popolato dal sistema, indica l'ordine in cui vengono considerati gli sconti.
+**Br**: automatski popunjava sistem, označava redoslijed primjene popusta.   
 
-**Tipo sconto/Descrizione**: selezionare il tipo sconto tra quelli presenti. A standard sono previsti 3 tipologie diverse: *Sconto commerciale*, *Sconto a quantità* e *Sconto a valore*.
+**Tip popusta/Opis**: odaberite tip popusta iz ponuđenih opcija. Standardno su dostupne tri različite vrste: *Komercijalni popust*, *Količinski popust* i  *Vrijednosni popust*.
 
-**Valore**: impostare la percentuale di sconto da applicare.
+**Vrijednost**: postavite postotak popusta koji želite primijeniti. .
 
-**Priorità**: questa priorità viene riportata dalle impostazioni eseguite nella tabella [Tipi sconti](/docs/configurations/tables/general-settings/discount-types).
+**Prioritet**: ova se prioritetnost preuzima iz postavki u tablici [Tipovi popusta](/docs/configurations/tables/general-settings/discount-types).
 
-**Casc./Imp.**: viene popolato a partire dal valore inserito nella tabella Tipi sconti.
+**Kaskadni/Osnovni**: automatski se popunjava na temelju vrijednosti unesene u tablici [Tipovi popusta](/docs/configurations/tables/general-settings/discount-types)
 
-### Sconti a quantità
+### Popusti na količinu
 
-Questa tipologia di sconto può avere diverse percentuali a seconda della quantità. 
+Ova vrsta popusta može imati različite postotke ovisno o količini.  
 
-**Tipo**: impostare il tipo sconto che dovrà essere *Sconto a quantità*. Questa dicitura verrà riportata poi nella stampa.
+**Tip**: impostare il tipo sconto che dovrà essere *Sconto a quantità*. Questa dicitura verrà riportata poi nella stampa.  
 
-**Quantità**: impostare la quantità per la quale verrà attivato lo sconto.
+**Količina**: postavite količinu pri kojoj će se popust aktivirati.  
 
-**Percentuale**: inserire la percentuale di sconto al raggiungimento della quantità indicata
+**Postotak**: unesite postotak popusta koji će se primijeniti kada se dostigne navedena količina.
 
 ![](/img/it-it/sales/sales-price-list/insert-sales-price-list/image07.png)
 
-### Sconti a Valore
+### Popusti za vrijednost
 
-In questa tipologia lo sconto scatta quando si raggiunge un determinato importo per riga.
+U ovoj vrsti popusta, popust se primjenjuje kada se dostigne određeni iznos po stavci.  
 
-**Tipo**: impostare il tipo sconto che dovrà essere *Sconto a valore*.
+**Tip**: postavite tip popusta na *Rabat po vrijednosti*.  
 
-**Valore**: impostare un valore superato il quale scatta lo sconto.
+**Vrijednost**: postavite vrijednost iznad koje će se primijeniti popust.  
 
-**Percentuale**: inserire la percentuale di sconto al raggiungimento del valore.
+**Postotak**: unesite postotak popusta koji će se primijeniti kada se dostigne navedena vrijednost.  
 
 ![](/img/it-it/sales/sales-price-list/insert-sales-price-list/image09.png)
 
-### Prezzo per quantità
+### Cijena po količini  
 
-In questa caso, al raggiungimento di una certa quantità , il prezzo unitario cambia.
+U ovom slučaju, kada se dostigne određena količina, jedinična cijena se mijenja.  
 
-**Quantità**: impostare un valore superato il quale scatta il prezzo "personalizzato".
+**Količina**: postavite vrijednost iznad koje će se primijeniti *prilagođena* cijena. 
 
-**Prezzo unitario**: inserire il prezzo unitario per la quantità ordinata.
+**Jedinična cijena**: unesite jediničnu cijenu za naručenu količinu.   
 
-Questi sconti si sommeranno ad altri eventuali sconti presenti.
+Ovi popusti će se zbrajati s drugim eventualnim popustima.  
 
-### Note
+### Napomene 
 
-A livello informativo è possibile inserire delle note legate ad un particolare tipo di scontistica.
+Informativno, moguće je dodati napomene koje se odnose na određeni tip popusta.  
 
-### Documenti allegati
+### Priloženi dokumenti 
 
-import DocAttachDocument from './../../import/sections/doc-attach-document.md'
-
-<DocAttachDocument />
+Prikazuje se detalj eventualnog **Priloženog dokumenta** (naziv, vrsta dokumenta, eventualne napomene, naša/vaša referenca). Za upute o tome kako priložiti dokument, molimo pogledajte članak *Priloži dokumente*.

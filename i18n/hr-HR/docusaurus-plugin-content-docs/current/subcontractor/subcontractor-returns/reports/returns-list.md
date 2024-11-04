@@ -1,5 +1,5 @@
 ---
-title: Lista rientri
+title: Popis povrata 
 sidebar_position: 1
 ---
 

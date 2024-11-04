@@ -1,20 +1,25 @@
 ---
-title: Materiali
+title: Materijali
 sidebar_position: 4
 ---
 
-La form è costituita da due griglie che riportano i materiali da inviare al terzista per la lavorazione e i materiali che saranno impiegati al rientro del prodotto lavorato.
+Obrazac se sastoji od dvije mreže koje prikazuju materijale koji se šalju izvršitelju na obradu i materijale koji će se koristiti po povratku obrađenog proizvoda. Mogu se unijeti kodirani artikli, nekodirani artikli i napomene.
 
-I materiali inviati e impiegati possono essere gestiti dall'operatore e in tal caso è necessario immettere la quantità, l'eventuale prezzo della lavorazione, la data di previsto rientro, la data di impiego del materiale. Questi dati sono invece già valorizzati nel caso in cui l'ordine provenga da *Schedulazione generale* o da *Elaborazione MRP*.
+Operater može upravljati materijalima koji se šalju i koriste, u tom slučaju potrebno je unijeti količinu, eventualnu cijenu obrade, predviđeni datum povratka i datum upotrebe materijala. Ovi podaci već su popunjeni ako narudžba dolazi iz *Općeg rasporeda* ili *MRP obrade*.
 
-## Materiali da consegnare
+## Materijali za dostavu
 
-**Codice articolo**: indica il materiale da consegnare per la lavorazione;  
+**Šifra artikla**: označava materijal koji treba dostaviti na obradu;
 
-## Materiali da impiegare
+:::note NAPOMENA
+U slučaju da je narudžba rad na temelju ugovora generirana iz izdavanja *Planirane narudžbe* rad na temelju ugovora ili *Planirane proizvodne narudžbe* s jednim ili više vanjskih faza, materijali za dostavu neće biti prikazani ako: ne postoje [MRP parametri](/docs/configurations/parameters/production/mrp-parameters/mrp-parameters-intro) za artikl, ili zastavica *Razmatra se u podizvođaču* nije omogućena u  [MRP parametrima](/docs/configurations/parameters/production/mrp-parameters/mrp-parameters-intro), ili je *Tip izuzimanja* u [MRP parametrima](/docs/configurations/parameters/production/mrp-parameters/mrp-parameters-intro) *automatska*, ili je *Tip izuzimanja* u [MRP parametrima](/docs/configurations/parameters/production/mrp-parameters/mrp-parameters-intro) s *popisom* i zastavica WIP nije omogućena.
+:::
 
-**Codice articolo**: indica il materiale da impiegare al rientro del lavorato;  
-**Impiego unitario**: quantità da impiegare per ogni unità del rientro del lavorato, nel caso di gestione automatica della schedulazione di distinte; questo dato è valorizzato dal sistema;  
-**Impiego totale**: quantità totale da impiegare per la completa lavorazione nel caso di gestione automatica della schedulazione di distinte; questo dato è valorizzato dal sistema;  
-**% scarto**: quantità da impiegare in più che risulta essere lo scarto;  
-**Data prev. impegno**: in base a questa data il sistema pianifica la disponibilità del fabbisogno.
+
+## Materijali za upotrebu
+
+**Šifra artikla**: označava materijal koji će se koristiti nakon povratka obrađenog proizvoda;    
+**Jedinična upotreba**: količina potrebna za svaku jedinicu obrađenog proizvoda, u slučaju automatskog upravljanja rasporedom sklopova; ova informacija je automatski popunjena od strane sistema;    
+**Ukupna upotreba**: ukupna količina potrebna za potpunu obradu, u slučaju automatskog upravljanja rasporedom sklopova; ova informacija je automatski popunjena od strane sistema;    
+**% otpad**: dodatna količina koja se koristi kao otpad;    
+**Planirani datum upotrebe**: prema ovom datumu, sistem planira dostupnost potrebnog materijala.  

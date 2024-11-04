@@ -1,6 +1,6 @@
 ---
-title: Lista dichiarazioni
+title: Popis signala
 sidebar_position: 2
 ---
 
-Questa form consente di stampare un report contenente l'elenco delle dichiarazioni di produzione filtrate.      
+Ovaj obrazac omogućuje ispis Izvješća koje sadrži popis filtriranih izjava proizvodnje.    

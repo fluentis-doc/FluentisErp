@@ -1,34 +1,34 @@
 ---
-title: Rilascio ordini di produzione
+title: Izdavanje proizvodnih naloga
 sidebar_position: 2
 ---
 
-:::important A cosa serve
-La procedura di **Rilascio degli ordini di produzione** in Fluentis permette di gestire in modo efficiente il passaggio degli ordini dallo stato *Lanciato* a *Esecutivo*. Mediante un'interfaccia intuitiva, è possibile filtrare e selezionare gli ordini da rilasciare, generando al contempo i relativi movimenti di magazzino per il prelievo automatico dei materiali. Inoltre, questa procedura consente di ripristinare ordini già rilasciati, garantendo una flessibilità operativa significativa nel processo produttivo.
+:::important Čemu služi   
+Postupak **Izdavanja proizvodnih naloga** u Fluentisu omogućuje učinkovito upravljanje prijelazom naloga iz stanja *Pokrenuto* u *Aktivno*. Kroz intuitivno sučelje moguće je filtrirati i odabrati naloge koje treba izdati, pri čemu se automatski generiraju odgovarajući skladišni pokreti za automatsko preuzimanje materijala. Osim toga, ovaj postupak omogućuje vraćanje već izdanih naloga, čime se jamči značajna operativna fleksibilnost u proizvodnom procesu.  
 :::
 
-Questa form permette di effettuare il cambio di stato degli ordini di produzione e contemporaneamente creare anche i relativi movimenti di magazzino di scarico di tutti gli articoli che hanno, nei [Parametri MRP](/docs/configurations/parameters/production/mrp-parameters/mrp-parameters-intro) dell'articolo, come *Tipo di prelievo* il valore **Automatico**.
+Ovaj obrazac omogućuje promjenu statusa proizvodnih narudžbi i istovremeno kreiranje odgovarajućih skladišnih pomaka za sve artikle koji u  [MRP parametrima](/docs/configurations/parameters/production/mrp-parameters/mrp-parameters-intro) artikla imaju *Tip uzimanja* postavljen na vrijednost **Automatski**.
 
-## Filtro
+## Filter
 
-In questo tab è possibile visualizzare la lista degli ordini pianificati che devono essere ancora rilasciati ed è possibile filtrarli attraverso una serie di criteri di selezione. 
+U ovoj kartici moguće je pregledati popis planiranih narudžbi koje još nisu izdane te ih je moguće filtrirati kroz niz kriterija odabira.    
 
-Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** presente nella *ribbon bar* per visualizzare i risultati all'interno della griglia di risultato.
+Nakon postavljanja željenih filtera, dovoljno je kliknuti na gumb  **Traži** na *traci izbornika* kako bi se rezultati prikazali unutar mreže rezultata.   
 
-Dopo aver individuato e selezionato gli ordini che si vogliono rilasciare, per procedere bisognerà utilizzare con il pulsante **Rilascio ordini**  presente nella *ribbon bar*, questo permetterà di variare lo stato degli ordini da *Lanciato* ad *Esecutivo* e allo stesso tempo di creare i movimenti di magazzino di scarico di tutti i materiali che hanno, nei [Parametri MRP](/docs/configurations/parameters/production/mrp-parameters/mrp-parameters-intro) dell'articolo, come *Tipo di prelievo* il valore **Automatico**.
+Nakon što su odabrane narudžbe koje se žele izdati, potrebno je koristiti gumb **Izdavanje naloga** na traci izbornika*. Ovaj postupak omogućuje promjenu statusa narudžbi iz *Lansirano* u *Izvršno*i istovremeno kreira skladišne pomake za sve materijale koji imaju *Vrsta uzimanja* postavljen na Vrijednost **Automatski** [MRP Parametrima](/docs/configurations/parameters/production/mrp-parameters/mrp-parameters-intro) artikla.
 
-## Ripristino
+## Povrat
 
-In questo tab è possibile eseguire la procedura di ripristino che consente di annullare il rilascio dell'ordine di produzione precedentemente effettuato, ripristinando la situazione antecedente al rilascio stesso, riportando lo stato dell'ordine di produzione a *Lanciato* ed eliminando il relativo movimento di magazzino.
+U ovoj kartici moguće je izvršiti postupak vraćanja koji omogućuje poništavanje izdavanja proizvodne narudžbe, vraćajući situaciju na stanje prije samog izdavanja, vraćajući status proizvodne narudžbe na *Lansirano* i uklanjajući odgovarajuće skladišne pomake. 
 
-Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** presente nella *ribbon bar* per visualizzare i risultati all'interno della griglia di risultato.  
+Nakon postavljanja željenih filtera, dovoljno je kliknuti na gumb **Traži** na *traci izbornika* kako bi se rezultati prikazali unutar mreže rezultata. 
 
-Tenendo selezionata una delle righe presenti nella griglia di risultato, vengono visualizzati nella griglia sottostante i relativi movimenti di magazzino creati.
+Odabirom jedne od redaka u mreži rezultata, prikazat će se odgovarajući skladišni pomaci u donjoj mreži.   
 
-Per lanciare il ripristino, selezionare uno o più ordini e cliccare il pulsante **Ripristino**. 
+Za pokretanje vraćanja, odaberite jednu ili više narudžbi i kliknite gumb  **Povrat**. 
 
-Il ripristino dell'ordine di produzione è possibile solo se l'ordine di produzione generato si trova nello stato di *Esecutivo* e non sono ancora state iniziate le relative dichiarazioni di produzione; mentre nel caso in cui sia già *Evaso* non è più possibile eseguire il ripristino dell'ordine di produzione, a meno che non si proceda a ritroso partendo dal rollback della registrazione della dichiarazioni di produzione.
+Vraćanje proizvodne narudžbe moguće je samo ako se generirana narudžba nalazi u statusu *Izvršno* i još nisu započete odgovarajuće proizvodne izjave; ako je narudžba već *Izvršena* vraćanje nije moguće, osim ako se ne započne postupak unatrag počevši od povratka registracije proizvodnih izjava. 
 
-Eseguendo questa procedura, gli ordini ripristinati saranno nuovamente visibili nel tab di **Filtro** dove sarà possibile rieseguire il rilascio.
+Nakon izvršenja ove procedure, vraćene narudžbe ponovno će biti vidljive u kartici  **Filter** gdje će biti moguće ponovno izdavanje.  
 
-Per dettagli sul funzionamento comune delle form fare riferimento al link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Za detalje o zajedničkom funkcioniranju obrazaca pogledajte link [Funkcionalnosti, gumbi i zajednička polja](/docs/guide/common).

@@ -1,25 +1,24 @@
 ---
-title: Materiali
+title: Materijali 
 sidebar_position: 5
 ---
 
-In questo tab vengono visualizzati i materiali che il terzista dovrebbe aver utilizzato per produrre ciò che è stato inserito nel tab *Articoli*. La proposta dei materiali viene definita nei Parametri di Conto lavoro, nel campo **Dati materiali proposti**.
+Na ovoj kartici prikazani su materijali koje je podizvođač trebao koristiti za proizvodnju onoga što je uneseno u tablicu *Artikli*. Prijedlog materijala definiran je u Parametrima podizvođača, u polju **Podaci za predložene materijale**. 
 
-La sezione *Articolo* contiene le informazioni della riga selezionata nel tab *Articoli*
+Odjeljak *Artikl* sadrži informacije o odabranoj liniji u tablici *Artikli*.  
 
-## Materiali
+## Materijali
 
-Per ogni articolo visualizzato sopra si possono inserire i materiali e i loro dettagli, oppure questi dati verranno proposti.
+Za svaki artikl prikazan gore možete unijeti materijale i njihove detalje ili će ti podaci biti predloženi.
 
-### Dettaglio materiale
+### Detalj materijala
 
-In questa tab vengono inseriti i Materiali che non sono stati utilizzati dal terzista, perchè in eccesso o perchè scartati.
+Na ovoj se kartici unose materijali koji nisu korišteni od strane podizvođača, bilo zbog viška ili zbog odbačenih materijala.  
 
-*Campi specifici*:
+*Specifična polja*:
 
-**Magazzino**: in questa colonna viene visualizzato il codice del magazzino Resi, ripreso dai parametri di conto lavoro, visualizzato automaticamente solo se viene inserita la quantità resa sulla riga del materiale, editabile dall'utente;
+**Skladište**: u ovoj koloni prikazan je kod skladišta za povrate, preuzet iz parametara radnog naloga, automatski prikazan samo ako je unesena količina vraćena za liniju materijala, moguće ga je uređivati od strane korisnika;  
 
-**Causale**: in questa colonna viene visualizzato il codice della causale per il carico dei Resi, ripreso dai parametri di conto lavoro, visualizzato automaticamente solo se viene inserita la quantità resa sulla riga del materiale, editabile dall'utente. Se i materiali non utilizzati dall'utente sono stati scartati, allora la causale non deve avere contropartita. Se invece i materiali sono stati tornati, allora la causale deve avere una contropartita di carico per indicare dove collocare i materiali resi.
+**Predložak**: u ovoj koloni prikazan je kod predložak za unos povrata, preuzet iz parametara radnog naloga, automatski se prikazuje samo ako je unesena količina vraćena za liniju materijala, i može se uređivati od strane korisnika. Ako materijali koje korisnik nije koristio budu odbačeni, tada predložak ne smije imati protupostavku. Međutim, ako su materijali vraćeni, tada predložak mora imati protupostavku u opterećenju kako bi se naznačilo gdje će se smjestiti vraćeni materijali.  
 
-**Carico Lotto**
-Nella griglia, l'utente può indicare quali siano i lotti dei materiali che sono stati utilizzati dal terzista. Le colonne visualizzate e le regole di utilizzo della griglia sono le stesse rispetto alla griglia lotti del tab Lotti\SN che si trova nel tab *Articoli*.
+**Učitaj lot**: u mreži, korisnik može naznačiti koje su partije materijala upotrijebile podizvođači. Prikazane su iste kolone i pravila za korištenje mreže kao i u tabu Lote\SB koji se nalazi u kartici *Artikli*.

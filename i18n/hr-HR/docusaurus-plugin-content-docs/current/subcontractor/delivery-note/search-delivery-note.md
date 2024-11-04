@@ -1,18 +1,25 @@
 ---
-title: Ricerca DDT di Consegna
+title: Pretraživanje otpremnice
 sidebar_position: 2
 ---
 
-La form si apre tramite il percorso **Conto Lavoro > DDT di Consegna > DDT di Consegna**.
+Obrazac se otvara putem putanje  **Podizvođač > Otpremnica > Otpremnica**.
 
-import SearchForm from './../../import/sections/search-form.md'
+Obrazac za Pretragu dokumenata omogućuje pretraživanje svih dokumenata radi pregleda, izmjene, brisanja ili unosa novog dokumenta; prozor se sastoji od područja za filtriranje i rezultatne mreže.
 
-<SearchForm />
+Nakon što se postave svi željeni filteri, dovoljno je kliknuti na gumb **Traži** u *traci izbornika* kako bi se rezultati prikazali u mreži rezultata.
 
-*Filtri specifici*
+Za otvaranje detalja dokumenta dovoljno je odabrati ga i dvaput kliknuti mišem, ili kliknuti na gumb **Izmjeni** (omogućava ulazak u detalje i uređivanje) ili na gumb **Prikaži** (omogućava pregled, ali bez mogućnosti uređivanja).
 
-**Scaricate**: questo flag consente di filtrare i DDT di Consegna già scaricati dal magazzino, cioè i DDT per cui è stata effettuata l'operazione di *Scarico DDT*;  
-**Stampate**: questo flag consente di i DDT di Consegna già stampati.  
-La finestra della ricerca DDT di apre con questi 2 flag disattivati di default, quindi per visualizzare tutte i DDT è necessario attivarli.
+*Vidi također*:  
+*Zajedničke funkcionalnosti, gumbe i polja*  
+*Dodavanje novih polja u obrasce za pretraživanje*
 
-Sempre da questa form è possibile creare un nuovo DDT di consegna, cliccando sul pulsante [Nuovo](/docs/subcontractor/delivery-note/insert-delivery-note/new-delivery-note).
+
+*Specifični filteri*
+
+**Istovareno**: ovaj flag omogućuje filtriranje otpremnice koja su već preuzeta iz skladišta, odnosno otpremnica za koju je izvršena operacija *Razduživanje Otpremnice*;    
+**Ispisano**: ovaj flag omogućuje filtriranje otpremnice koja je već isprintana.
+Prozor za pretraživanje otpremnice se otvara s tim da su ova 2 flaga zadano isključena, stoga je potrebno aktivirati ih kako bi se prikazale sve otpremnice.
+
+Također, iz ovog obrasca je moguće kreirati novu otpremnicu dostave klikom na gumb [Novo](/docs/subcontractor/delivery-note/insert-delivery-note/new-delivery-note).

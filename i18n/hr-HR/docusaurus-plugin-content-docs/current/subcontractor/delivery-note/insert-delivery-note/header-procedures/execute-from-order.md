@@ -1,40 +1,40 @@
 ---
-title: Evasione da ordine
+title: Izvršenje iz narudžbe
 sidebar_position: 1
 ---
 
-Nella testata del DDT di consegna, premendo il pulsante **Consegne Previste** si aprirà la form dove è possibile filtrare gli ordini relativi al cliente del documento.
+U zaglavlju otpremnice, pritiskom na gumb **Predviđene isporuke** otvorit će se obrazac gdje je moguće filtrirati narudžbe povezane s kupcem dokumenta.
 
-Tramite questa procedura è possibile creare un DDT di consegna dall'evasione del relativo ordine. E' quindi possibile inserire gli articoli all'interno del DDT, evadendo totalmente o parzialmente un intero ordine o una riga.
+Pomoću ove procedure moguće je kreirati otpremnicu iz izvršenja odgovarajuće narudžbe. Zatim je moguće unijeti artikle u otpremnicu, izvršavajući cijelu narudžbu ili njezin dio, bilo da se radi o cijeloj narudžbi ili pojedinačnoj stavci.
 
-Per poter utilizzare questa procedura vi sono delle condizioni iniziali che devono essere rispettate:
+Za korištenje ove procedure potrebno je ispuniti sljedeće početne uvjete:
 
- -  i/il fornitore degli ordini deve essere lo stesso del DDT;
- -  l'ordine che si vuole evadere deve avere impostato il flag *Stampato*;
- -  i tipi documento devono essere compatibili.
+ -  dobavljač narudžbi mora biti isti kao onaj u otpremnici;  
+ -  narudžba koju želite izvršiti mora imati označenu opciju *Ispisano*;
+ -  vrste dokumenata moraju biti kompatibilne.
 
-*Procedimento*:
+*Postupak*:
 
-I filtri per fornitore e divisa verranno riportati in automatico in base al fornitore selezionato nel DDT.
+Filtri za dobavljača i valutu automatski će se prenijeti na temelju odabranog dobavljača u otpremnici.   
 
-Una volta impostati tutti i *Filtri* desiderati, cliccando sul pulsante di *Ricerca* verrà visualizzata nella griglia una riga per ciascun ordine stampato e non evaso oppure evaso parzialmente.
+Nakon što postavite sve željene *Filtere* klikom na gumb *Pretraživanje*, u mreži će se prikazati jedan redak za svaku narudžbu koja je ispisana i još nije izvršena ili je djelomično izvršena.
 
-:::note AVVISO
-La procedura riprende tutti i dati presenti nell'ordine e come conseguenza saranno applicate le condizioni presenti nell'ordine, anche se queste attualmente sono cambiate.
+:::note UPOZORENJE
+Procedura preuzima sve podatke prisutne u narudžbi, što znači da će se primijeniti uvjeti iz narudžbe, čak i ako su se u međuvremenu promijenili.
 :::
 
-Nella griglia di risultati, l'utente ha poi la possibilità di:
+U mreži rezultata korisnik zatim ima mogućnost:
 
- 1. selezionare l'*ordine per intero*. Per farlo basterà selezionare il flag presente all'inizio della riga ordine.
- 2. selezionare solo *alcuni* degli *articoli* proposti. Per farlo basterà selezionare il flag presente all'inizio della riga articolo.
- 3. selezionare solo *alcuni articoli* ma solo per una *determinata quantità*. In questo caso dovrà andare a modificare la quantità da evadere.
+ 1. odabrati *cijelu narudžbu*. Da biste to učinili, jednostavno označite zastavicu na početku reda narudžbe.  
+ 2. odabrati samo *neke* od predloženih *artikala*. Da biste to učinili, označite zastavicu na početku reda artikla.  
+ 3. odabrati samo *neke artikle*, ali samo za *određenu količinu*. U tom slučaju morate izmijeniti količinu za izvršenje.  
 
-Per completare la procedura bisognerà poi cliccare sul pulsante **Trasferimento**, che andrà a riprendere tutti i dati presenti nell'ordine e li riporterà nel DDT.
+Za dovršetak procedure potrebno je kliknuti na gumb **Prijenos**, koji će preuzeti sve podatke iz narudžbe i prenijeti ih u otpremnicu.  
 
-*Pulsanti specifici*:
+*Specifični gumbi*:
 
-> **Ricerca** permette di applicare i filtri di ricerca all'intero del database degli ordini inseriti e non ancora evasi o solo parzialmente evasi.  
-> **Trasferimento** permette di trasferire nella griglia del tab Consegne del DDT di conto lavoro gli articoli selezionati nella finestra sottostante.  
-> **Esplodi** permette di espandere l'intero albero degli ordini nella griglia sottostante, per visualizzare gli articoli contenuti in essi.  
-> **Comprimi** permette di comprimere la visualizzazione delle righe articolo, e di far visualizzare solamente le righe ordine.  
-> **Seleziona tutti** permette di selezionare tutti gli articoli dalla lista.  
+> **Traži** omogućuje primjenu pretraživačkih filtera na cijelu bazu podataka narudžbi koje još nisu izvršene ili su djelomično izvršene.   
+> **Prijenos** omogućuje prijenos odabranih artikala u mrežu kartice Isporuke u otpremnici za vanjsko uslužno računovodstvo.    
+> **Proširi** omogućuje proširenje cijelog stabla narudžbi u donjoj mreži, kako bi se prikazali artikli sadržani u njima.    
+> **Sažmi** omogućuje sažimanje prikaza redaka artikala, prikazujući samo redove narudžbi.    
+> **Odaberi sve** omogućuje odabir svih artikala s popisa.   

@@ -1,11 +1,11 @@
 ---
-title: Impostazioni Ordini di Conto Lavoro
+title: Postavke naloga podizvođača
 sidebar_position: 1
 ---
 
-L'ordine di Conto Lavoro può essere creato dalla pianificazione in funzione di fasi di lavoro esterne dichiarate in ordine di produzione oppure può essere creato in modo autonomo.
+Narudžba Podizvođača može biti stvorena iz planiranja na temelju vanjskih faza rada navedenih u proizvodnom nalogu ili može biti stvorena samostalno.
 
-Una serie di **impostazioni** di natura tabellare precodificata e una corretta parametrizzazione degli algoritmi di base sono consigliate prima di procedere con la generazione degli ordini C/L.
+Preporuča se niz **postavki** tablične prirode i ispravna parametrizacija osnovnih algoritama prije nego što se pristupi generiranju narudžbi za podizvođače.  
 
-> **Tabelle**: è opportuno riferirsi alla sezione *Configurazione > Tabelle > Produzione* per identificare le corrette impostazioni del modulo Conto Lavoro.  
-> **Parametri**: la form è [Parametri C/Lavoro](/docs/configurations/parameters/production/subcontractor-parameters).
+> **Tablice**: preporučuje se posjetiti odjeljak *Konfiguracija  > Tablice  > Proizvodnja* za identifikaciju ispravnih postavki modul Podizvođača.     
+> **Parametri**: obrazac je [Parametri Podizvođača](/docs/configurations/parameters/production/subcontractor-parameters).

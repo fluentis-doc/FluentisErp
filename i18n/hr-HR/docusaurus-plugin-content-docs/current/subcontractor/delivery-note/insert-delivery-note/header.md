@@ -1,58 +1,62 @@
 ---
-title: Testata
+title: Zaglavlje
 sidebar_position: 2
 ---
 
-Dopo aver selezionato i dati obbligatori nella sezione superiore, l'utente può continuare l'inserimento dei seguenti dati [manualmente](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) oppure con il [help di campo](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) oppure, in base ai dati inseriti nell'anagrafica del terzista', l'applicazione compila i campi *automaticamente*.
+Nakon odabira obveznih podataka u gornjem dijelu, korisnik može nastaviti [ručni](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) unos sljedećih podataka ili koristiti [pomoćno polje](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection). Ovisno o podacima unesenima u kartici dobavljača, aplikacija *automatski* popunjava polja.
 
-Inserendo il **Fornitore** vengono *proposti* in automatico tutti i dati specifici del tab **Testata**, secondo i dati impostati in precedenza nell'[anagrafica fornitore](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/accounting-data-intro) nei campi corrispondenti al suo indirizzo e nelle *sezioni*:  
+Unosom **Dobavljača** automatski se *predlažu* svi specifični podaci iz kartice **Zaglavlje**, prema prethodno unesenim podacima u [Šifarnik dobavljača](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/accounting-data-intro) i u sljedećim *sekcijama*:  
 
-- **Divisa**: [Divisa](/docs/guide/common/glossary/glossary-intro#currency), [Cambio](/docs/guide/common/glossary/glossary-intro#currency-exchange), [Data valuta](/docs/guide/common/glossary/glossary-intro#currency-date).
-- **Nazione**: [Nazione](/docs/guide/common/glossary/glossary-intro#country), [Lingua](/docs/guide/common/glossary/glossary-intro#language), [Zona](/docs/guide/common/glossary/glossary-intro#zone)
-- **Spedizione**: [Spedizione](/docs/guide/common/glossary/glossary-intro#shipment), [Porto](/docs/guide/common/glossary/glossary-intro#carriage), [Imballo](/docs/guide/common/glossary/glossary-intro#packing), [Listino](/docs/guide/common/glossary/glossary-intro#sales-price-list) e il suo [intervallo di validità](/docs/guide/common/glossary/glossary-intro#validity-date)
+- **Valuta**: [Valuta](/docs/guide/common/glossary/glossary-intro#currency), [Tečaj](/docs/guide/common/glossary/glossary-intro#currency-exchange), [Datum valute](/docs/guide/common/glossary/glossary-intro#currency-date).
+- **Država**: [Država](/docs/guide/common/glossary/glossary-intro#country), [Jezik](/docs/guide/common/glossary/glossary-intro#language), [Zona](/docs/guide/common/glossary/glossary-intro#zone)
+- **Dostava**: [Dostava](/docs/guide/common/glossary/glossary-intro#shipment), [Luka](/docs/guide/common/glossary/glossary-intro#carriage), [Pakiranje](/docs/guide/common/glossary/glossary-intro#packing), [Cjenik](/docs/guide/common/glossary/glossary-intro#sales-price-list) i njegov [interval valjanosti](/docs/guide/common/glossary/glossary-intro#validity-date)
 
-*Altri campi*:
+*Ostala polja*:
 
-**Stato DDT**: con questi 2 flag viene identificato lo stato del DDT, che può essere stampato (dopo che è stata lanciata la stampa fisica del report del DDT di consegna) e scaricato (dopo che è avvenuto lo scarico del DDT stessa dal magazzino). Se il DDT non è stato stampato non è possibile scaricarlo;  
+**Stanje otpremnice**: pomoću ova dva znaka označava se stanje otpremnice, što može biti označeno kao ispisano (nakon što je fizički ispis izvješća otpremnice dostave pokrenut) i preuzeto (nakon što je sama otpremnica preuzeta iz skladišta). Ako otpremnica nije isprintana, nije moguće preuzeti;  
 
-**Nostro/Vostro riferimento**: quando viene completata la procedura [Evasione da ordine](/docs/purchase/purchase-delivery-note/procedures/create-delivery-notes-from-orders), viene proposta anche l'informazione presente nel campo omonimo dell'ordine;  
+**Naša/vaša referenca**: nakon što se postupak [Izvršenje iz narudžbe](/docs/purchase/purchase-delivery-note/procedures/create-delivery-notes-from-orders),završi, također se predlaže informacija koja se nalazi u istoimenom polju narudžbe;    
 
-**Progetto**: usando il [help di campo](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) si può collegare il documento a un progetto.  
+**Projekt**: koristeći [pomoćno polje](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) dokument se može povezati s projektom.   
 
-**Pulsanti specifici**
+**Specifični gumbi**
 
-> [Consegne previste](/docs/subcontractor/delivery-note/insert-delivery-note/header-procedures/execute-from-order): richiama la procedura per creare un DDT da un ordine. Si attiva con l'inserimento del fornitore e del tipo DDT. L'ordine da evadere dovrà aver impostato il flag *Stampato* e la *Data conferma ordine* valorizzata;  
-> **Scarico automatico**: utilizzato per scaricare automaticamente il magazzino con gli articoli selezionati. Questo campo sarà editabile solo una volta attivato il campo *Stampato*.
+> [Očekivane isporuke](/docs/subcontractor/delivery-note/insert-delivery-note/header-procedures/execute-from-order): pokreće postupak stvaranja otpremnice iz narudžbe. Aktivira se unosom dobavljača i vrste otpremnice. Narudžba koja se mora izvršiti mora imati postavljenu oznaku *Ispisano* i popunjeno polje *Datum potvrde narudžbe*;    
+> **Automatsko preuzimanje**: koristi se za automatsko preuzimanje skladišta odabranih artikala. Ovo polje će biti editabilno samo nakon što je polje *Ispisano* aktivirano.  
 
-### Pagamenti
+### Plaćanja
 
-Le **Soluzioni di pagamento** sono riportate in automatico dall'*Anagrafica fornitore > tab Pagamenti* e possono essere modificate/cancellate dall'utente.
+**Načini plaćanja** automatski se preuzimaju u *Šifarniku dobavljača > kartice Plaćanja* i mogu se izmijeniti/izbrisati od strane korisnika.
 
-Se al **Tipo pagamento** è associato uno sconto finanziario, l'importo dello sconto viene considerato solo ai fini contabili cioè nelle scadenze del documento e non nel totale DDT.
+Ako je na **Način plaćanja** povezan financijski popust, iznos popusta se uzima u obzir samo za računovodstvene svrhe, odnosno za rokove plaćanja dokumenta, a ne za ukupne Otpremnice.
 
-Se il documento nasce da un ordine, i tipi pagamento possono essere ripresi dal primo documento o dall'anagrafica fornitore. 
+Ako dokument potječe iz narudžbe, vrste plaćanja mogu se preuzeti ili iz prvog dokumenta ili iz Šifarnika dobavljača.
 
-*Pulsanti specifici*
+*Specifični gumbi*
 
-> **Inserisci/Cancella pagamenti**: utilizzati per inserire/cancellare le righe di pagamento selezionate.
+> **Dodaj/Ukloni plaćanja**: koriste se za dodavanje/brisanje odabranih redaka plaćanja.  
 
-### Sconti
+### Popusti  
 
-Vengono proposti solo gli sconti predefiniti ripresi dall'*Anagrafica fornitore > tab Sconti* e possono essere modificate/cancellate dall'utente.
+Ponuđeni su samo predefinirani popusti preuzeti u *Šifarniku dobavljača >  kartica Popusti* i mogu ih korisnici mijenjati/brisati.  
 
-import TabDiscount from './../../../import/sections/tab-discount.md'
+Popusti navedeni u zaglavlju dokumenta prikazuju se u svakom novom retku stavke dodanom u dokument.
 
-<TabDiscount />
+Ako nakon unosa stavki u dokumentu dodate novi popust u zaglavlju, on se ne kopira u već unesene retke stavki.
+
+*Poseban gumb*  
+
+**Izbriši popuste**: koristi se za brisanje odabranih redaka popusta.
 
 ### Agenti
 
-Indica il codice agente e la sua provvigione per ogni riga articolo. Viene proposto il codice e la percentuale definiti nell'*Anagrafica terzista > tab Agenti*.
+Ovdje se navodi kod agenta i njegova provizija za svaku stavku artikla. Predloženi su kod i postotak koji su definirani u *Šifarnik dobavljača > kartica Agenti*.  
 
-Se la provvigione non è collegata al terzista nella sua anagrafica, comunque deve essere inserito l'agente ma con provvigione NULL perché se fosse con provvigione 0, significherebbe che l'agente è collegato all'agente ma non percepisce provvigione.
+Ako provizija nije povezana s dobavljačem u njegovoj kartici, ipak se mora unijeti kod agenta ali s provizijom NULL. Ako bi provizija bila 0, to bi značilo da je agent povezan, ali ne prima proviziju.
 
-La stessa sezione verrà riproposta per ogni riga articolo nel relativo tab *Agenti*.
+Ovaj odjeljak bit će ponovno prikazan za svaki artikal u pripadajućoj kartici *Agenti*.  
 
-**Pulsante specifico**
+**Specifični gumb**
 
-**Cancella agenti**: permette di cancellare gli agenti selezionati.
+**Obriši agente**: omogućuje brisanje odabranih redaka agenata.
 

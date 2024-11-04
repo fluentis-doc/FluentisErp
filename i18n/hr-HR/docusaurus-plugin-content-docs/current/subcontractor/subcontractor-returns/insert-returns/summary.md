@@ -1,33 +1,45 @@
 ---
-title: Riepiloghi
+title: Sažeci
 sidebar_position: 6
 ---
 
-Nei Riepiloghi sono presentate le informazioni principali dell'intero documento.
+U sažecima su prikazane osnovne informacije cijelog dokumenta.
 
-## Sconti finali articoli
+## Konačni popusti artikala 
 
-import SummariesFinalDiscount from './../../../import/sections/summaries-final-discount.md'
+Mogu se unijeti samo popusti izraženi u postocima koji se primjenjuju na ukupan iznos dokumenta.
 
-<SummariesFinalDiscount />
+Popusti uneseni u ovoj sekciji se izračunavaju i prikazuju na svakom artiklu dokumenta, u kartici *Artikli > kartica Popusti/Cjenici*.
 
-## Spese
+**Vrsta/Opis popusta**: omogućuje odabir vrsta popusta (predefiniranih u *Vrstama popusta*), dodjeljujući vrsti prioritet primjene popusta te određujući računanje popusta na osnovicu ili kaskadno u odnosu na prethodno primijenjene popuste;  
+**Prioritet**: predstavlja redoslijed primjene popusta; sortiranje se vrši uzlazno;  
+**Kaskada/Iznos**: definira računa li se popust na osnovicu (cijena * količina) - (već izračunati popusti) ili samo na (cijena * količina);  
+**Vrijednost**: numerička vrijednost završnog popusta koji treba primijeniti.
 
-import SummariesExpenses from './../../../import/sections/summaries-expenses.md'
+## Troškovi
 
-<SummariesExpenses />
+Prikazani su troškovi uneseni u šifarniku kontakta, u kartici *Naknade/Rabati*.
 
-## Totali documento
+Također postoji mogućnost unosa troškova koji se odnose samo na trenutni dokument.
 
-**Importo lordo articoli**: rappresenta la somma dei valori di tutti gli articoli;  
-**Acconto**: rappresenta il valore dell' eventuale acconto ricevuto per il documento;  
-**Importo omaggio**: rappresenta l'importo degli articoli di tipo omaggio inseriti nel tab *Articoli*;  
-**Totale sconti applicati**: rappresenta il valore totale dei sconti applicati sugli articoli, ma senza i sconti finali;  
-**Importo netto articoli**: *Importo lordo articoli* – *Totale sconti applicati*;  
-**Totale sconti finali**: rappresenta il valore degli sconti finali espressi in percentuale sull'importo lordo degli articoli;  
-**Importo netto sconti finali**: *Importo netto articoli* - *Totale sconti finali*;  
-**Spese di incasso**: rappresenta la somma delle spese di incasso inserite nella griglia delle *Spese*;  
-**Spese bollo**: rappresenta la somma delle spese di bollo inserite nella griglia delle *Spese*;   
-**Imponibile**: *Importo netto articoli* – *Sconti finali* + *Totale spese non documentati* + *Totale spese documentati*;  
-**Imposta**: rappresenta la somma dei valori contenuti nei riepiloghi IVA;  
-**Totale**: *Imponibile* + *IVA*.
+**Vrsta/Opis**: omogućuje odabir vrsta troškova (predefiniranih u tablici *Tipovi troškova*), dodjeljujući vrsti postotak troška koji treba primijeniti;  
+**Iznos troška**: označava vrijednost troška izraženu u valuti dokumenta;  
+**PDV**: navodi stopu PDV-a koja se primjenjuje na unesene troškove;   
+**Postotak/Vrijednost**: označava treba li se troškovi izračunati kao postotak ili kao fiksni iznos. Odabirom "Vrijednost", iznos troška treba unijeti u odgovarajuće polje;    
+**Postotak**: numerička vrijednost postotka troška.  
+
+
+## Ukupnosti dokumenta
+
+**Iznos stavki bez popusta**: predstavlja zbroj vrijednosti svih artikala;  
+**Zaduženje**: predstavlja iznos eventualne akontacije primljene za dokument;    
+**Poklonjeni iznos**: predstavlja iznos darovanih artikala unesenih u kartici *Artikli*;  
+**Ukupni primjenjeni rabati**: predstavlja ukupnu vrijednost primijenjenih popusta na artikle, ali bez završnih popusta;    
+**Neto iznos artikala**: *Bruto iznos artikala * – *Ukupno primijenjeni popusti*;    
+**Ukupno konačnih popusta**: predstavlja vrijednost završnih popusta izraženih u postocima na bruto iznos artikala;  
+**Neto iznos završnih popusta**: *Neto iznos artikala* - *Ukupni završni popusti*;  
+**Naknade za naplatu**: predstavlja zbroj troškova naplate unesenih u mrežu *Troškovi*;  
+**Trošak ovjere**: predstavlja zbroj troškova pečata unesenih u mrežu *Troškovi*;   
+**Oporezivi iznos**: *Neto iznos artikala* – *Završni popusti* + *Ukupno neizdvojene troškove* + *Ukupno izdvojene troškove*;  
+**Porez**: predstavlja zbroj vrijednosti sadržanih u sažecima PDV-a;  
+**Ukupno**: *Osnovica* + *PDV*.

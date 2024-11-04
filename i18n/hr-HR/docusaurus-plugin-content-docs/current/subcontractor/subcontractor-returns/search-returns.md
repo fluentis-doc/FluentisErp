@@ -1,20 +1,26 @@
 ---
-title: Ricerca Rientri
+title: Pretraga isporuka robe na skladište
 sidebar_position: 2
 ---
 
-La form si apre tramite il percorso **Conto Lavoro > Rientri > Ricerca Rientri**.
+Obrazac se otvara putem puta  **Podizvođač > Isporuke > Pretraga isporuka robe na skladište**.
 
-import SearchForm from './../../import/sections/search-form.md'
+Obrazac za pretragu dokumenata omogućuje pretraživanje svih dokumenata s ciljem njihove vizualizacije, izmjene i eventualnog brisanja ili dodavanja novog dokumenta; prozor se sastoji od područja za filtriranje i mreže rezultata.
 
-<SearchForm />
+Nakon postavljanja svih željenih filtara, dovoljno je kliknuti na gumb **Traži** koji se nalazi na Traci izbornika kako bi se rezultati prikazali unutar mreže rezultata. 
 
-*Pulsanti specifici*:
+Za otvaranje detalja dokumenta, dovoljno je odabrati dokument i dvaput kliknuti mišem ili kliknuti na gumb **Izmjeni** (omogućuje ulazak u detalje i njihovu izmjenu) ili na gumb **Prikaži** (omogućuje ulazak u detalje i njihovo pregledavanje bez mogućnosti izmjene).
 
-> **Nuovo**: il pulsante permette di [Creare un nuovo rientro](/docs/subcontractor/subcontractor-returns/insert-returns/new-return).  
+*Vidi također*  
+*Funkcionalnosti, tipke i zajednička polja*   
+*Dodavanje novih polja u obrasce za pretraživanje*
 
-*Campi specifici*:
+*Poseban gumb*:
 
-**Valorizzati**: questo flag consente di filtrare i rientri già valorizzati, cioè i rientri da cui è già stata creata una fattura di acquisto nell'area Acquisti;  
-**Caricati**: questo flag consente di filtrare i rientri già caricati a magazzino, cioè i rientri per cui è già stata effettuata l'operazione di *Registrazione rientro*;  
-**Tutti**: questo consente di filtrare tutti i rientri di conto lavoro, indipendentemente dal fatto che siano stati caricati e/o valorizzati.  
+> **Novo**: gumb omogućuje  [Stvaranje nove isporuke robe na skladištu](/docs/subcontractor/subcontractor-returns/insert-returns/new-return).  
+
+*Specifična polja*:
+
+**Valorizirano**: ova oznaka omogućuje filtriranje povrata koji su već vrijednovani, tj. povrata iz kojih je već stvorena nabavna faktura u odjelu Nabava;      
+**Utovareno**: ova oznaka omogućuje filtriranje povrata koji su već uneseni u skladište, tj. povrata za koje je već obavljena operacija *Registracija Isporuke*;    
+**Svi**: ova opcija omogućuje filtriranje svih povrata kontnog rada, bez obzira na to jesu li uneseni i/ili vrijednovani.   

@@ -1,8 +1,8 @@
 ---
-title: Nuovo DDT di Consegna
+title: Nova otpremnica 
 sidebar_position: 1
 ---
 
-La form si apre tramite il percorso **Conto Lavoro > Ordini > Nuovo Ordine di Conto Lavoro** oppure tramite il pulsante **Nuovo** che si trova nella form [Ricerca ordini di C/L](/docs/subcontractor/subcontractor-orders/insert-subcontractor-orders/new-subcontractor-orders).
+Obrazac se otvara putem puta  **Podizvođač > Narudžbe > Novi nalog podizvođača** ili putem gumba **Novo** unutar obrasca [Pretraga naloga Podizvođača. ](/docs/subcontractor/subcontractor-orders/insert-subcontractor-orders/new-subcontractor-orders).
 
-L'applicazione richiede di inserire il **Fornitore** (Terzista) intestatario del DDT, utilizzando l'apposito help conti presente nella testata del DDT. In automatico verranno proposti: **Anno**, **Numero**, **Data** correnti e il **Tipo DDT di Consegna**(proposto uguale a quello inserito nei *Parametri di Conto Lavoro*), che possono essere modificati dall'utente.
+Aplikacija zahtijeva unos  **Dobavljača** (Izvođača) koji je primatelj Otpremnice, koristeći odgovarajuću pomoćnu opciju računa koja se nalazi u zaglavlju Otpremnice. Automatski će se predložiti: trenutna: **Godina**, **Broj**, **Datum** i **Tip otpremnice** (predložen identično kao što je uneseno u *Parametre Podizvođača*), a korisnik ih može izmijeniti po potrebi.

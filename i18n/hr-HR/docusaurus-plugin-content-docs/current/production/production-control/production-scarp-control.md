@@ -1,6 +1,6 @@
 ---
-title: Controllo scarti di produzione
+title: Kontrola otpada proizvodnje
 sidebar_position: 3
 ---
 
-Questa form consente di stampare il report **Controllo scarti di produzione** che per ogni articolo riporta tutte le quantità scartate nel periodo selezionato.
+Ovaj obrazac omogućuje ispis izvješća **Kontrola otpada proizvodnje** koje za svaki artikl prikazuje sve odbačene količine u odabranom razdoblju.

@@ -1,6 +1,6 @@
 ---
-title: Generalità
+title: Općenito
 sidebar_position: 1
 ---
 
-Il modulo delle **DDT di Consegna** di Conto Lavoro consente di gestire le consegne dei materiali ai terzisti e controllare lo scadenzario delle consegne da effettuare.
+Modul **Otpremnice** za radne naloge omogućuje upravljanje dostavom materijala izvršiteljima i kontrolu rokova dostave koji trebaju biti izvršeni.

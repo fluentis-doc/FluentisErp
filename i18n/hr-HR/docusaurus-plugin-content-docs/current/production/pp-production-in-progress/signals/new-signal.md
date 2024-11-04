@@ -1,227 +1,227 @@
 ---
-title: Nuova dichiarazione
+title: Novi signal
 sidebar_position: 2
 ---
 
-Normalmente le *Dichiarazioni di produzione* vengono generate automaticamente tramite Fluentis [MES](/docs/production/mes/mes-intro), ma l'utente ha anche la possibilità di generarle manualmente utilizzando questa form.
+Normalno se *Deklaracije signala* automatski generiraju putem Fluentis [MES-a](/docs/production/mes/mes-intro), ali korisnik također ima mogućnost da ih ručno generira koristeći ovaj obrazac.  
 
-All'apertura della form è necessario inserire l'ordine di produzione e la relativa fase/sottofase che si vuole dichiarare, in questo modo vengono caricati in automatico i realtivi dati nella parte superiore della form.
+Prilikom otvaranja obrasca potrebno je unijeti proizvodni nalog i odgovarajuću fazu/podfazu koju želite prijaviti, čime se automatski učitavaju odgovarajući podaci u gornji dio obrasca.  
 
-Nella griglia centrale vanno inserite le righe della dichiarazione di produzione.
-Il primo dato da inserire è lo *Stato della dichiarazione* che può assumere i seguenti valori:
+U središnju mrežu potrebno je unijeti retke izjave o proizvodnji.   
+Prvi podatak koji treba unijeti je *Status deklaracije* koje može imati sljedeće vrijednosti:  
 
-- *Apertura*: permette di creare una segnalazione di produzione di apertura;    
-- *Sospensione*: permette di creare una segnalazione di produzione di sospensione;    
-- *Ripresa*: permette di creare una segnalazione di produzione di ripresa; va inserito solo dopo una *Sospensione*;          
-- *Avanzamento*: permette di creare una segnalazione di produzione di avanzamento;    
-- *Chiusura*: permette di creare una segnalazione di produzione di chiusura;    
+- *Otvaranje*: omogućuje stvaranje prijave početka proizvodnje;     
+- *Obustava*: omogućuje stvaranje prijave obustave proizvodnje;      
+- *Nastavljanje*: omogućuje stvaranje prijave nastavka proizvodnje; treba se unijeti samo nakon *Obustave*;          
+- *Napredovanje*: omogućuje stvaranje prijave napredovanja proizvodnje;     
+- *Zatvaranje*: omogućuje stvaranje prijave završetka proizvodnje;      
 
-Ogni dichiarazione di produzione deve avere come prima riga una dichiarazione di apertura che determina il momento in cui inizia la lavorazione.              
-Questa può essere seguita da un avanzamento o direttamente da una fase di chiusura a seconda dei casi. La differenza sostanziale sta nel fatto che la chiusura non permette di inserire ulteriori righe di dichiarazione, mentre l'avanzamento si.         
-Inoltre, è anche possibile inserire dichiarazioni di sospensione seguite da una di ripresa, nel caso in cui sia necesario fermare la produzione per qualche motivo.
+Svaka izjava o proizvodnji mora imati kao prvi redak izjavu o otvaranju koja određuje trenutak kada počinje obrada.              
+Ova izjava može biti praćena napredovanjem ili direktno fazom zatvaranja, ovisno o slučaju. Ključna razlika je u tome što zatvaranje ne dopušta unos dodatnih redaka izjave, dok napredovanje to omogućuje.         
+Također, moguće je unijeti izjave o obustavi koje su praćene izjavom o nastavku, u slučaju da je potrebno zaustaviti proizvodnju iz nekog razloga.  
 
-*Pulsante specifico*:  
+*Posebni gumb*:  
 
-> **Nuova dichiarazione**: permette di inserire una nuova riga della dichiarazione;          
-> **Nuova sospensione/ripresa**: permette di inserire contemporaneamente un riga di sospensione e una riga di ripresa indicando nel pop-up data ed ora per ciascuna; il pulsante si attiva solo se l'ultimo stato della dichiarazione è di *Apertura* o *Avanzamento*;                 
-> **Ricalcola tempo macchina**: permette di ricalcolare il tempo macchina di tutte le righe della dichiarazione;          
-> **Ricalcola tempo uomo**: permette di ricalcolare il tempo di manodopera di tutte le righe della dichiarazione;          
-> **Inserisci dichiarazione**: permette di inserire una nuova riga di dichiarazione successiva a quelle già inserite;         
-> **Cancella dichiarazione**: permette di cancellare la riga di dichiarazione selezionata;             
-> **Gestione UDC**: permette di aprire la *Gestione unità di carico* con filtrata l'unità di carico relativa alla riga delle dichiarazione selezionata;          
-> **Crea UDC**: permette di creare un'unità di carico relativa alla riga delle dichiarazione selezionata. Per crearla è necessario prima inserire manualmente *Tipo unità di carico* e il *Dipendente*;
-> **Registrazione dichiarazione**: permette di creare la registrazione del movimento di magazzino relativo alla riga di dichiarazione selezionata;          
-> **Ripristino dichiarazione**: permette di annullare la registrazione del movimento di magazzino relativo alla riga di dichiarazione selezionata.                                     
+> **Nova deklaracija**: omogućuje unos novog retka izjave;          
+> **Novi Prekid / Nastavak**: omogućuje istovremeno unos retka obustave i retka nastavka s pop-up prozorom za unos datuma i vremena za svaku; gumb se aktivira samo ako je posljednje stanje izjave *Otvaranje* ili *Napredovanje*;                   
+> **Preračunaj vrijeme stroja**: omogućuje preračunavanje vremena stroja za sve retke izjave;          
+> **Preračunaj vrijeme rada**: omogućuje preračunavanje vremena rada za sve retke izjave;           
+> **Unesi signal**: omogućuje unos novog retka izjave nakon već unesenih;           
+> **Izbriši signal**: mogućuje brisanje odabranog retka izjave;               
+> **Upravljanje Transportnom jedinicom**: omogućuje otvaranje *Upravljanja jedinicom iz tereta* filtriranom jedinicom iz tereta koja je povezana s odabranim retkom izjave;          
+> **Stvori Transportnu jedinicu**: omogućuje kreiranje jedinice iz tereta povezane s odabranim retkom izjave. Za kreiranje je potrebno prvo ručno unijeti *Tip jedinice iz tereta* i *Zaposlenika*;  
+> **Registracija izjave**: omogućuje kreiranje registracije kretanja skladišta povezanog s odabranim retkom izjave;             
+> **Povratak izjave**: omogućuje poništavanje registracije kretanja skladišta povezanog s odabranim retkom izjave.                                     
 
-*Campi specifici*: 
+*Specifična polja*: 
 
-**Registrato**: indica che la riga della dichiarazione è stata registrata ed è stato creato il relativo movimento di magazzino;        
-**Data**: indica la data di inizio relativa alla riga della dichiarazione;         
-**Ora**: indica l'ora di inizio relativa alla riga della dichiarazione;         
-**Numero**: è un numero progressivo che viene attribuito alle singolo righe della dichiarazione (parte sempre da 1);        
-**Stato dichiarazione**: permette di definire lo stato relativo alla riga della dichiarazione. Può assumere i seguenti valori: *Apertura*, *Sospensione*, *Ripresa*, *Avanzamento* o *Chiusura*;        
-**Causale di sospensione**: permette di indicare la causale di sospensione da utilizzare per la relativa riga di dichiarazione. Si abilità solo se lo *Stato dichiarazione* è di tipo *Sospensione*;     
-**Lotto**: permette di inserire manualmente il numero di lotto relativo alla quantità prodotta;    
-**Quantità prodotta**: indica la quantità prodotta relativa alla riga della dichiarazione;         
-**Unità di misura alternativa**: indica l'unità di misura laternativa utilizzata;     
-**Quantità alternativa**: indica la quantità prodotta nell'unità di misura laternativa utilizzata;       
-**Magazzino versamento**: indica il magazzino di versamento della quantità prodotta;         
-**Causale versamento**: indica la causale di versamento utilizzata per la quantità prodotta;         
-**Versamento ubicazione**: indica l'ubicazione di versamento della quantità prodotta;         
-**Quantità scartata**: indica la quantità scartata relativa alla riga della dichiarazione;        
-**Magazzino di scarto**: indica il magazzino di versamento della quantità scartata;      
-**Causale di scarto**: indica la causale di versamento utilizzata per la quantità scartata;       
-**Scarto ubicazione**: indica l'ubicazione di versamento della quantità scartata;        
-**Macchine**: indica il numero delle macchine indica la descrizione della causale di versamento della quantità prodotta;             
-**Numero macchine**: indica il numero delle macchine utilizzata relativo alla riga della dichiarazione;        
-**Gruppi manodopera**: indica il codice del gruppo manodopera utilizzato relativo alla riga della dichiarazione;         
-**Numero operai**: indica il numero di operai utilizzati relativo alla riga della dichiarazione;        
-**Sito produttivo**: indica il codice del sito produttivo relativo alla riga della dichiarazione;     
-**Minuti macchina**: indica il tempo macchina in minuti relativo alla riga della dichiarazione; viene calcolato come differenza tra *data/ora* della dichiarazione attuale e quelle della dichiarazione precedente;           
-**Minuti manodopera**: indica il tempo manodopera in minuti relativo alla riga della dichiarazione; viene calcolato come differenza tra *data/ora* della dichiarazione attuale e quelle della dichiarazione precedente;              
-**Minuti attrezzaggio**: indica il tempo di attrezzaggio in minuti relativo alla riga della dichiarazione; viene indicato manualmente;           
-**Dipendente**: indica il codice dell'utente che sta effettuando la dichiarazione;             
-**Cognome**: indica il cognome dell'utente che sta effettuando la dichiarazione;            
-**Nome**: indica il nome dell'utente che sta effettuando la dichiarazione;           
-**Unità di carico**: indica il numero dell'unità di carico, composto da anno, numero ordine di produzione e un progressivo;                
-**Tipo unità di carico**: indica il tipo di unità di carico;     
-**Descrizione tipo unità di carico**: indica la descrizione del tipo unità di carico;         
+**Registrirano**: označava da je redak izjave registriran i da je kreirano odgovarajuće kretanje skladišta;          
+**Datum**: označava datum početka vezan za redak izjave;          
+**Vrijeme**: označava vrijeme početka vezano za redak izjave;           
+**Broj**: progresivni broj koji se dodjeljuje pojedinim redovima izjave (uvijek počinje od 1);          
+**Stanje signala**: omogućuje definiranje stanja vezanog za redak izjave. Može imati sljedeće vrijednosti: *Otvaranje*, *Obustava*, *Nastavak*, *Napredovanje* ili *Zatvaranje*;          
+**Predložak zastoja**: omogućuje navođenje predložka obustave koji će se koristiti za odgovarajući redak izjave. Omogućuje se samo ako je *Stanje izjave* *Obustava*;       
+**Lot**: omogućuje ručni unos broja serije vezane za proizvedenu količinu;      
+**Proizvedena količina**: označava proizvedenu količinu vezanu za redak izjave;           
+**Alternativna mjerna jedinica**: označava alternativnu jedinicu mjere koja se koristi;       
+**Alternativna količina**: označava količinu proizvedenu u alternativnoj jedinici mjere koja se koristi;         
+**Skladište za odlaganje**: označava skladište za prijem proizvedene količine;           
+**Predložak odlaganja**: označava predložak prijema korišten za proizvedenu količinu;          
+**Lokacija prijema**: označava lokaciju prijema proizvedene količine;           
+**Otpisana količina**: označava odbijenu količinu vezanu za redak izjave;          
+**Skladište za otpad**: označava lokaciju prijema odbijene količine;           
+**Predložak otpada**: označava predložak prijema korišten za odbijenu količinu;         
+**Lokacija otpada**: označava lokaciju prijema odbijene količine;         
+**Strojevi**: označava broj strojeva korištenih za redak izjave;               
+**Broj stroja**: označava broj strojeva korištenih za redak izjave;          
+**Grupe radne snage**: označava kod grupe radne snage korišten za redak izjave;           
+**Broj radnika**: označava broj radnika korištenih za redak izjave;          
+**Proizvodno mjesto**: označava kod proizvodne lokacije vezane za redak izjave;       
+**Minuti stroja**: označava vrijeme rada stroja u minutama vezano za redak izjave; računa se kao razlika između *datuma/vremena* trenutne izjave i one prethodne;             
+**Minuti radne snage**: označava vrijeme radne snage u minutama vezano za redak izjave; računa se kao razlika između *datuma/vremena* trenutne izjave i one prethodne;                
+**Minuti za podešavanje**: označava vrijeme podešavanja u minutama vezano za redak izjave; unosi se ručno;           
+**Zaposlenik**: označava kod korisnika koji podnosi izjavu;             
+**Prezime**: označava prezime korisnika koji podnosi izjavu;            
+**Ime**: označava ime korisnika koji podnosi izjavu;           
+**Učitavanje jedinice**: označava broj jedinice tereta, koji se sastoji od godine, broja proizvodnog naloga i progresivnog broja;                
+**Vrsta jedinice za ućitavanje**: označava tip jedinice tereta;     
+**Broj utovarne jedinice**: označava broj jedinice tereta;         
 **Numero unità di carico**: indica il numero dell'unità di carico;    
-**Unità di carico di scarico**: **Work in progress**       
-**Altezza**: indica l'altezza dell'unità di carico;    
-**Larghezza**: indica la larghezza dell'unità di carico;    
-**Profondità**: indica la profondità dell'unità di carico;    
-**Descrizione causale di sospensione**: indica la descrizione della *Causale di sospensione* utilizzata nella riga della dichiarazione;                       
-**Descrizione magazzino di versamento**: indica la descrizione del magazzino di versamento della quantità prodotta;         
-**Descrizione causale di versamento**: indica la descrizione della causale di versamento della quantità prodotta;      
-**Descrizione magazzino di scarto**: indica la descrizione del magazzino di versamento della quantità scartata;      
-**Descrizione causale di scarto**: indica la descrizione della causale di versamento della quantità scartata;      
-**Descrizione macchina**: indica la descrizione della macchina utilizzata;            
-**Descrizione gruppo manodopera**: indica la descrizione del gruppo manodopera utilizzato;              
-**Descrizione sito produzione**: indica la descrizione del sito produttivo utilizzato.
+**Jedinica tereta za otpremu**: **Work in progress**       
+**Visina**: označava visinu jedinice tereta;    
+**Širina**: označava širinu jedinice tereta;    
+**Dubina**: označava dubinu jedinice tereta;      
+**Opis predloška obustave**: označava opis *Predloška obustave* korištenog u retku izjave;                       
+**Opis skladišta za prijem**: označava opis skladišta za prijem proizvedene količine;         
+**Opis predloška prijema**: označava opis prijema proizvedene količine;      
+**Opis skladišta otpada**: označava opis skladišta prijenosa odbačene količine;      
+**Opis predloška otpada**: označava prijenos odbačene količine;        
+**Opis stroja**: označava opis stroja korištenog;              
+**Opis grupe radne snage**: označava opis grupe radne snage korištene;              
+**Opis proizvodne lokacije**: označava opis korištene proizvodne lokacije.
 
-La parte inferiore della form si compone di una serie di tab relativi alla riga della dichiarazione selezionata.
+Donji dio obrasca sastoji se od niza kartica vezanih za odabrani redak izjave.  
 
-## Materiali
+## Materijali
 
-In questo tab vengono riportati automaticamente i materiali utilizzati nella fase per la realizzazione dell'articolo da produrre, ma l'utente può modificare i dati e/o aggiungere ulteriori materiali in base alle necessità.      
-Ovviamente, per far si che i materiali siano riporatati automaticamente, la fase deve essere l'ultima di tipo *Produttivo* e *Movimentabile* presente nel ciclo; nel caso in cui non fosse l'ultima, deve comunque essere di tipo *Produttivo* e *Movimentabile* ed ad essa devono essere stati assegnati dei materiali direttamente.  
+Na ovoj kartici automatski se prikazuju materijali korišteni u fazi za izradu proizvoda, no korisnik može mijenjati podatke i/ili dodavati dodatne materijale prema potrebi.      
+Da bi se materijali automatski prikazivali, faza mora biti posljednja u ciklusu koja je tipa *Proizvodna* i *Premjestiva*; ako nije posljednja, mora biti tipa *Proizvodna* i *Premjestiva* te joj moraju biti izravno dodijeljeni materijali.
 
-*Campi specifici*: 
+*Specifična polja*: 
 
-**Unità di carico materiale**: permette di indicare l'unità di carico da cui prelevo il materiale;             
-**Classe**: indica la classe dell'articolo;         
-**Codice articolo**: indica il codice dell'articolo;         
-**Variante**: indica il codice variante dell'articolo;         
-**Unità di misura**: indica l'unità di misura principale del materiale;        
-**Quantità consumata**: indica la quantità utilizzata del materiale;         
-**Unità di misura alternativa**: indica l'unità di misura alternativa del materiale;        
-**Quantità alternativa**: indica la quantità utilizzata del materiale nell'unità di misura alternativa;        
-**Magazzino consumo**: indica il codice del magazzino di consumo del materiale;         
-**Causale consumo**: indica il codice della causale di consumo del materiale;         
-**Quantità scartata**: indica la quantità scartata del materiale;     
-**Magazzino di scarto**: indica il codice del magazzino di scarto del materiale;     
-**Causale di scarco**: indica il codice della casuale di scarto del materiale;     
-**Descrizione articolo**: indica la descrizione dell'articolo;        
-**Descrizione variante**: indica la descrizione della variante dell'articolo;        
-**Descrizione magazzino consumo**: indica la descrizione del magazzino di consumo del materiale;        
-**Descrizione causale consumo**: indica la descrizione della causale di consumo del materiale;        
-**Descrizione magazzino di scarto**: indica la descrizione del magazzino di scarto del materiale;        
-**Descrizione causale di scarto**: indica la descrizione della causale di scarto del materiale;        
-**Priorità**: indica la priorità con la quale vengono visualizzati i materiali,        
+**Jedinica tereta materijala**: omogućuje navođenje jedinice tereta iz koje se preuzima materijal;             
+**Klasa**: označava klasu artikla;         
+**Šifra artikla**: označava šifru artikla;         
+**Varijanta**: označava šifru varijante artikla;         
+**Jedinica mjere**: označava glavnu jedinicu mjere materijala;        
+**Potrošena količina**: označava korištenu količinu materijala;         
+**Alternativna jedinica mjere**: označava alternativnu jedinicu mjere materijala;        
+**Alternativna količina**: označava korištenu količinu materijala u alternativnoj jedinici mjere;        
+**Skladište potrošnje**: označava šifru skladišta potrošnje materijala;         
+**Predložak potrošnje**: označava šifru predloška potrošnje materijala;         
+**Odbačena količina**: označava količinu odbačenog materijala;     
+**Skladište otpada**: označava šifru skladišta otpada materijala;     
+**Predložak otpada**: označava šifru razloga otpada materijala;     
+**Opis artikla**: označava opis artikla;        
+**Opis varijante**: označava opis varijante artikla;        
+**Opis skladišta potrošnje**: označava opis skladišta potrošnje materijala;        
+**Opis predloška potrošnje**: označava opis predloška potrošnje materijala;        
+**Opis skladišta otpada**: opis skladišta otpada;        
+**Opis predloška otpada**: označava opis predloška otpada materijala;        
+**Prioritet**: označava prioritet prikaza materijala.         
 
-Inoltre, nella parte sottostante è possibile inserire i lotti e anche i serial number nelle relative griglie.
+Također, u donjem dijelu moguće je unijeti serije i serijske brojeve u odgovarajuće mreže.
 
-La griglia dei *Lotti* si compone delle seguenti colonne:
+Mreža *Serija* sastoji se od sljedećih stupaca:
 
-**Lotto**: indica il numero di lotto del materiale selezionato;        
-**Codice lotto fornitore**: indica il numero di lotto del fornitore del materiale selezionato;         
-**Quantità**: indica la quantità di materiale selezionato per quel lotto;         
-**Ubicazione**: indica l'ubicazione di quel lotto del materiale selezionato;     
-**Data inizio**: indica la data inizio del lotto del materiale selezionato;         
-**Data scadenza**: indica la data scadenza del lotto del materiale selezionato;         
-**Conto/Sottoconto/Descrizione conto**: indicano rispettivamente conto, sotto conto e descrizione del cliente/fornitore del materiale selezionato.   
+**Serija**: označava broj serije odabranog materijala;        
+**Šifra serije dobavljača**: označava broj serije dobavljača odabranog materijala;         
+**Količina**: označava lokaciju serije odabranog materijala;         
+**Lokacija**: indica l'ubicazione di quel lotto del materiale selezionato;     
+**Datum početka**: označava datum početka serije odabranog materijala;         
+**Datum isteka**: označava datum isteka serije odabranog materijala;         
+**Konto/Podkonto/Opis konta**: označavaju redom konto, podkonto i opis kupca/dobavljača odabranog materijala.  
 
-La griglia dei *Serial number* si compone delle seguenti colonne:
+Tablica *Serijski broja* sastoji se od sljedećih stupaca:
 
-**Barcode**: il codice barcode riporta il numero di serial number e le altre informazione relative. Per tutte le informazioni su come codificare i barcode da leggere in questo campo consultare la pagina relativa al [Barcode tokenizer](/docs/configurations/tables/general-settings/barcode-tokenizer);          
-**Tipo Serial numnber**: indica il tipo di serial number del materiale selezionato;    
-**Serial number**: indica il serial number del materiale selezionato;    
-**Data inizio**: indica la data inizio del serial number del materiale selezionato;    
-**Annullato**: indica che il serial number è in stato annullato;      
-**Lotto**: indica il codice lotto del serial number del materiale selezionato.             
+**Barkod**: barkod prikazuje broj serijskog broja i druge relevantne informacije. Za sve informacije o tome kako kodirati barkodove za očitavanje u ovom polju, pogledajte stranicu o [Barkod tokenizator](/docs/configurations/tables/general-settings/barcode-tokenizer);          
+**Tip serijskog broja**: označava tip serijskog broja odabranog materijala;    
+**Serijski broj**: označava serijski broj odabranog materijala;    
+**Datum početka**: označava datum početka serijskog broja odabranog materijala;    
+**Poništeno**: označava da je serijski broj poništen;      
+**Lot**: označava šifru serije serijskog broja odabranog materijala.             
 
-## Dipendente
+## Zaposlenici
 
-Questo tab permette di gestire i membri della squadra che svolgono la lavorazione relativa alla riga della dichiarazione selezionta andando ad indicare per ognuno data inizio e fine lavorazione.
+Ovaj kartica omogućuje upravljanje članovima tima koji obavljaju rad koji je povezan s odabranim redom izjave, navodeći za svakog datume početka i završetka rada.
 
-*Campi specifici*: 
+*Specifična polja*: 
 
-**Codice**: indica il codice dell'operatore che sta lavorando sulla dichiarazione;             
-**Cognome**: indica il cognome dell'operatore che sta lavorando sulla dichiarazione;     
-**Nome**: indica il nome dell'operatore che sta lavorando sulla dichiarazione;        
-**Capo squdra**: indica che quell'operatore è anch ecapo squadra;      
-**Attività**: indica l'attività che sta svolgendo l'operatore;        
-**Descrzione**: indica la descrizione dell'attività che sta svolgendo l'operatore;      
-**Attrezzaggio**: indica che il tempo lavorato dall'operatore verrà calcolato come tempo di attrezzaggio nelle successive analisi;       
-**Data inizio**: indica la data di inizio della lavorazione dell'operatore;         
-**Ora inizio**: indica l'ora di inizio della lavorazione dell'operatore;         
-**Data fine**: indica la data di fine della lavorazione dell'operatore;         
-**Ora fine**: indica lìora di fine della lavorazione dell'operatore;         
-**Data creazione**: indica la data di creazione del record;         
-**Data ultima modifica**: indica la data di ultima modifica del record;         
-**Operatore**: indica l'utente di creazione del record.
+**Šifra**: označava šifru operatera koji radi na izjavi;             
+**Prezime**: označava prezime operatera koji radi na izjavi;     
+**Ime**: označava ime operatera koji radi na izjavi;        
+**Voditelj tima**: označava da je operater i vođa tima;        
+**Aktivnost**: označava aktivnost koju operater obavlja;        
+**Opis**: označava opis aktivnosti koju operater obavlja;      
+**Opremanje**: označava da će vrijeme koje operater radi biti obračunato kao vrijeme pripreme opreme u kasnijim analizama;       
+**Datum početka**: označava datum početka rada operatera;         
+**Vrijeme početka**: označava vrijeme početka rada operatera;         
+**Datum završetka**: označava datum završetka rada operatera;         
+**Vrijeme završetka**: označava vrijeme završetka rada operatera;         
+**Datum kreiranja**: označava datum kreiranja zapisa;         
+**Datum posljednje izmjene**: označava datum posljednje izmjene zapisa;         
+**Operator**: označava korisnika koji je kreirao zapis.
 
-## Articoli alternativi
+## Alternativni artikli 
 
-Questo tab permette di aggiungere e gestire tutti quegli articoli (spin-off) che vengono realizzati come conseguenza della produzione di un articolo principale.       
-Quindi, è possibile inserirli nella griglia dedicata con la possibilità di gestirne anche i relativi lotti e serial numbers. Ovviamente, i lotti e serial numbers sono riferiti alla riga dell'articolo alternativo selezionato.
+Ova kartica omogućuje dodavanje i upravljanje svim onim artiklima (izvedenima) koji se proizvode kao posljedica proizvodnje glavnog artikla.
+Možete ih dodati u odgovarajuću mrežu s mogućnošću upravljanja povezanim serijama i serijskim brojevima. Naravno, serije i serijski brojevi odnose se na odabrani redak alternativnog artikla.
 
-La griglia dei *Lotti* si compone delle seguenti colonne:
+Mreža *Lotovi* sastoji se od sljedećih stupaca::
 
-**Lotto**: indica il numero di lotto dell'articolo;  
-**Tipo codice lotto**: indica il tipo del codice lotto dell'articolo;         
-**Tipo lotto**: indica il tipo del lotto dell'articolo;         
-**Codice lotto fornitore**: indica il numero di lotto del fornitore dell'articolo;       
-**Note**: permette di inserire una nota relativa al lotto;                 
-**Quantità**: indica la quantità dell'articolo per quel lotto;         
-**Ubicazione**: indica l'ubicazione di quel lotto dell'articolo;     
-**Data inizio**: indica la data inizio del lotto dell'articolo;         
-**Data scadenza**: indica la data scadenza del lotto dell'articolo;         
-**Conto/Sottoconto/Descrizione conto**: indicano rispettivamente conto, sotto conto e descrizione del cliente/fornitore dell'articolo.   
+**Lot**: označava broj serije artikla;    
+**Vrsta šifre lota**: označava vrstu koda serije artikla;           
+**Vrsta Lota**: označava vrstu serije artikla;         
+**Šifra serije dobavljača**: označava broj serije dobavljača artikla;         
+**Napomena**: omogućuje unos napomene vezane uz seriju;                  
+**Količina**: označava količinu artikla za tu seriju;           
+**Lokacija**: označava lokaciju te serije artikla;       
+**Datum početka**: označava datum početka te serije artikla;           
+**Datum isteka**: označava datum isteka te serije artikla;           
+**Konto/Podkonto/Opis konta**: označavaju redom račun, podračun i opis klijenta/dobavljača artikla.     
 
-La griglia dei *Serial number* si compone delle seguenti colonne:
+Mreža *Serijskih Brojeva*  sastoji se od sljedećih stupaca:  
     
-**Codice Serial number**: indica il serial number dell'articolo;      
-**Tipo Serial numnber**: indica il tipo di serial number dell'articolo;  
-**Serial number cliente**: indica il serial number del cliente per quell'articolo;      
-**Serial number fornitore**: indica il serial number del fornitore per quell'articolo;      
-**Data inizio**: indica la data inizio del serial number dell'articolo;    
-**Annullato**: indica che il serial number è in stato annullato;      
-**Lotto**: indica il codice lotto del serial number dell'articolo.             
+**Šifra serijskog broja**: označava serijski broj artikla;        
+**Vrsta serijskog broja**: označava vrstu serijskog broja artikla;  
+**Serijski broj kupca**: označava serijski broj klijenta za taj artikl;        
+**Serijski broj dobavljača**: označava serijski broj dobavljača za taj artikl;        
+**Datum početka**: označava datum početka serijskog broja artikla;      
+**Poništeno**: označava da je serijski broj poništen;        
+**Lot**: označava broj serije serijskog broja artikla.              
 
-## Sospensioni
+## Suspenzija
 
-Questo tab permette di specificare più causali di sospensione con i relativi minuti e si abilità solamente in corrispondenza di una riga con stato dichiarazione *Sospensione*.  
+Ova kartica omogućuje specificiranje više predloška za suspenziju s pripadajućim minutama i aktivira se samo kada je redak označen sa statusom *Suspenzija*.   
 
-## Scarto
+## Otpad
 
-Questo tab permette di specificare più magazzini e causali di scarto con le relative quantità e si abilità solamente se viene dichiarata una quantità scartata.  
+Ova kartica omogućuje specificiranje više skladišta i predloška odbacivanja s pripadajućim količinama i aktivira se samo ako je navedena količina odbačena.
 
-## Extra Data
+## Dodatni podaci
 
-Permmette di gestire e visualizzare gli Extra Data relativi alla segnalazione.
+Omogućuje upravljanje i pregled Dodatnih podataka povezanih s izvješćem. 
 
-Per una descrizione approfondita sugli extra data si rimanda all'articolo [Extra data](/docs/configurations/utility/extra-data/extradata/new-extradata-simple).
+Za detaljan opis dodatnih podataka, molimo pogledajte članak o [Dodatnim podacima](/docs/configurations/utility/extra-data/extradata/new-extradata-simple).
 
-## Lotti e Serial Number
+## Lotovi/Serijski broj
 
-Questo tab permette di gestire i lotti e serial numbers degli articoli principali prodotti tramite le apposite griglie.
+Ova kartica omogućuje upravljanje serijama i serijskim brojevima glavnih artikala proizvedenih putem odgovarajućih mreža.
 
-La griglia dei *Lotti* si compone delle seguenti colonne:
+Mreža *Lotovi* sastoji se od sljedećih stupaca:
 
-**Lotto**: indica il numero di lotto dell'articolo;  
-**Tipo codice lotto**: indica il tipo del codice lotto dell'articolo;         
-**Tipo lotto**: indica il tipo del lotto dell'articolo;         
-**Codice lotto fornitore**: indica il numero di lotto del fornitore dell'articolo;       
-**Note**: permette di inserire una nota relativa al lotto;                 
-**Quantità**: indica la quantità dell'articolo per quel lotto;         
-**Ubicazione**: indica l'ubicazione di quel lotto dell'articolo;     
-**Data inizio**: indica la data inizio del lotto dell'articolo;         
-**Data scadenza**: indica la data scadenza del lotto dell'articolo;         
-**Conto/Sottoconto/Descrizione conto**: indicano rispettivamente conto, sotto conto e descrizione del cliente/fornitore dell'articolo.   
+**Lot**: označava broj serije artikla;    
+**Vrsta šifre lota**: označava vrstu koda serije artikla;         
+**Vrsta serije**: označava vrstu serije artikla;         
+**Šifra serije dobavljača**: označava broj serije dobavljača artikla;          
+**Napomena**: omogućuje unos napomene vezane uz seriju;                   
+**Količina**: označava količinu artikla za tu seriju;           
+**Lokacija**: označava lokaciju te serije artikla;       
+**Datum početka**: označava datum početka te serije artikla;           
+**Datum isteka**: označava datum isteka te serije artikla;         
+**Konto/Podkonto/Opis konta**: označavaju redom račun, podračun i opis klijenta/dobavljača artikla.     
 
-La griglia dei *Serial number* si compone delle seguenti colonne:
+Mreža *Serijskih brojeva* sastoji se od sljedećih stupaca:  
     
-**Codice Serial number**: indica il serial number dell'articolo;      
-**Tipo Serial numnber**: indica il tipo di serial number dell'articolo;  
-**Serial number cliente**: indica il serial number del cliente per quell'articolo;      
-**Serial number fornitore**: indica il serial number del fornitore per quell'articolo;      
-**Data inizio**: indica la data inizio del serial number dell'articolo;    
-**Annullato**: indica che il serial number è in stato annullato;      
-**Lotto**: indica il codice lotto del serial number dell'articolo.             
+**Kod Serijskog broja**: označava serijski broj artikla;       
+**Tip Serijskog broja**: označava tip serijskog broja artikla;    
+**Serijski broj klijenta**: označava serijski broj klijenta za taj artikl;        
+**Serijski broj dobavljača**:  označava serijski broj dobavljača za taj artikl;      
+**Datum početka**: označava datum početka serijskog broja artikla;    
+**Poništeno**: označava da je serijski broj u statusu poništenog;      
+**Lot**: označava kod lota serijskog broja artikla.               
 
-Per dettagli sul funzionamento comune delle form fare riferimento al link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Za detalje o zajedničkom funkcioniranju formi, pogledajte link [Funkcionalnosti, gumbi i zajednička polja](/docs/guide/common).
 
 
 

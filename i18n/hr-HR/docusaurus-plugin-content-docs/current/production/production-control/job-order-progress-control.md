@@ -1,7 +1,7 @@
 ---
-title: Verifica avanzamento commesse
+title: Kontrola izvršenja radnog naloga
 sidebar_position: 2
 ---
 
-Vedasi documentazione al seguente link: [Verifica avanzamento commesse](/docs/planning/mps-master-production-scheduling/reports/job-orders-progress-control/)
+Vidi dokumentaciju na sljedećoj poveznici: [Provjera napretka narudžbi](/docs/planning/mps-master-production-scheduling/reports/job-orders-progress-control/)
 

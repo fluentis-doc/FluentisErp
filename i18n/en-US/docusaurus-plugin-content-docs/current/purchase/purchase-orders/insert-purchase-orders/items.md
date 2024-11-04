@@ -91,7 +91,7 @@ Additional information related to the item is displayed/entered in this tab.
 
 **Production Job Orders**: if the purchase order is linked to a production job order (through the release of a planned purchase order and creation of a purchase order from a purchase request), the parent item from the job order is displayed here.
 
-**Request for Quotation**: if the order was created from a request for quotation using the [Create Purchase Order from Supplier Offer](/docs/purchase/offer-request/procedures/order-creation) procedure, the reference request is displayed here.
+**Request for Quotation**: if the order was created from a request for quotation using the [Create Purchase Order from Supplier Offer procedure, the reference request is displayed here.
 
 **Warehouse and Reason**: the warehouse and associated reason that will appear automatically when loading the corresponding items into inventory. Data is taken from the [Order Types](/docs/configurations/tables/purchase/purchase-orders-type) but can be manually modified for each item line.
 

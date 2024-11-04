@@ -1,20 +1,20 @@
 ---
-title: Accesso a Fluentis
+title: Pristup Fluentisu
 sidebar_position: 1
 ---
 
-Per accedere a **Fluentis** si può usare:
+Za pristup **Fluentisu** možete koristiti:
 
-- l'icona che si trova sul desktop e che rappresenta il shortcut per accedere all'applicazione  
-    oppure  
-- dal menu dei Programmi windows con doppio clic su: **Fluentis.Portal.Wpf**.  
+- Ikonicu na radnoj površini koja predstavlja prečac za pristup aplikaciji  
+    ili  
+- Izbornik Windows programa s dvostrukim klikom na: **Fluentis.Portal.Wpf**.  
 
-In questo modo si avrà l'accesso alla vista relativa alle credenziali per l'accesso al database.
+Na taj način ćete dobiti pristup prikazu povezanom s pristupnim podacima za pristup bazi podataka.  
 
-**Connessione a database**
+**Povezivanje na bazu podataka**
 
-La connessione a **Fluentis** comporta l'inserimento dei dati: *Utente*, *Parola*, nome del *Server* e *Database*.
+Povezivanje na **Fluentis** uključuje unos podataka: *Korisnik*, *Lozinka*, naziv *Servera* i *Database*.
 
-Se è stata selezionata l'opzione *Utente predefinito*, il nome del utente e la parola non saranno più richieste perché i dati saranno ripresi automaticamente all'apertura dell'applicazione.
+Ako je odabrana opcija za *predefiniranog Korisnika*, ime korisnika i lozinka više neće biti potrebni jer će se podaci automatski preuzeti prilikom pokretanja aplikacije.   
 
-Confermate con il tasto invio o premendo il pulsante **Connect**.
+Potvrdite pritiskom na tipku Enter ili pritiskom na gumb **Connect**.

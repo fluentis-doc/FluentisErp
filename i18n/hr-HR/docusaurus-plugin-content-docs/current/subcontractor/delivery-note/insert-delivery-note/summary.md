@@ -1,44 +1,58 @@
 ---
-title: Riepiloghi
+title: Sažeci
 sidebar_position: 5
 ---
 
-Nei Riepiloghi sono presentate le informazioni principali dell'intero documento.
+U Sažecima su prikazane glavne informacije cijelog dokumenta.
 
-## Sconti finali
+## Konačni popusti
 
-import SummariesFinalDiscount from './../../../import/sections/summaries-final-discount.md'
+Mogu se unijeti samo popusti izraženi u postocima, koji se primjenjuju na ukupan iznos dokumenta.
 
-<SummariesFinalDiscount />
+Popusti uneseni u ovoj sekciji izračunavaju se i prikazuju na svakom artiklu dokumenta, na *kartici Artikli > kartica Popusti/Cjenici*.
 
-## Spese/Sconti/Maggiorazioni finali
 
-import SummariesExpenses from './../../../import/sections/summaries-expenses.md'
+> **Vrsta/Opis popusta**: omogućuje odabir vrsta popusta (prethodno definiranih u Vrstama popusta), dodjeljujući svakoj vrsti prioritet primjene popusta i određujući je li popust izračunat na osnovici ili se primjenjuje kaskadno u odnosu na prethodno primijenjene popuste;       
+> **Prioritet**: predstavlja redoslijed primjene popusta; sortiranje se vrši uzlazno;    
+> **Kaskada/Iznos**: određuje koristi li se za izračun popusta osnovica (cijena * količina) - (već izračunati popusti) ili (cijena * količina);     
+> **Vrijednost**: numerička vrijednost završnog popusta koji treba primijeniti.  
 
-<SummariesExpenses />
 
-## Altri campi
+## Konačni troškovi/popusti/doplate
 
-**Volume**: viene proposto il volume cumulativo, risultato dalla somma dei volumi degli articoli (il valore viene ripreso dall'*Anagrafica articolo > tab Pesi/Dimensioni*), quando l'unità di misura del volume degli articoli corrisponde a quella inserita nei parametri della fattura. Sono presi in considerazione solo gli articoli che hanno questo campo compilato;  
-**Peso netto**: viene proposto il peso netto cumulativo, risultato dalla somma dei pesi degli articoli (il valore viene ripreso dall'*Anagrafica articolo > tab Pesi/Dimensioni*), quando l'unità di misura del peso degli articoli corrisponde a quello inserito nei parametri della fattura. Sono presi in considerazione solo gli articoli che hanno questo campo compilato;  
-**Peso lordo**: viene proposto il peso lordo cumulativo, risultato dalla somma dei pesi degli articoli (il valore viene ripreso dall'*Anagrafica articolo > tab Pesi/Dimensioni*), quando l'unità di misura del peso degli articoli corrisponde a quella inserita nei parametri della fattura. Sono presi in considerazione solo gli articoli che hanno questo campo compilato;  
-**Colli**: viene proposto il numero dei colli, sulla base dei dati inseriti nell'*Anagrafica articolo > tab Pesi/Dimensioni*, nei campi *Articoli presenti in un collo* oppure *Colli per formare l'articolo*. Sono presi in considerazione solo gli articoli che hanno questo campo compilato.  
+Ovdje se prikazuju troškovi uneseni u Šifarnik  kontakata, u kartici *Troškovi/Popusti*.
 
-## Trasporto
+Također postoji mogućnost unosa troškova koji se odnose samo na trenutni dokument.
 
-Viene proposto automaticamente il *Trasporto a cura del* presente in *Anagrafica del contatto > tab [Consegna](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/delivery)* (radio button: Mittente/Destinatario/Vettore), ma i dati possono essere modificati.
+> **Vrsta/Opis**: omogućuje odabir vrste troška (prethodno definirane u tablici Tipovi troškova), dodjeljujući svakoj vrsti postotak troška za primjenu;   
+> **Iznos troška**: označava vrijednost troška izraženu u valuti dokumenta;    
+> **PDV**: označava stopu PDV-a koja se primjenjuje na unesene troškove;    
+> **Postotak/Vrijednost**: označava hoće li se troškovi izračunati kao postotak ili kao unaprijed određeni novčani iznos. Odabirom Iznos troška treba unijeti u odgovarajuće polje;    
+> **Postotak**: numerička vrijednost postotka troška.  
 
-## Totali documento
 
-**Importo lordo articoli**: rappresenta la somma dei valori di tutti gli articoli;  
-**Acconto**: rappresenta il valore dell' eventuale acconto ricevuto per il documento;  
-**Importo omaggio**: rappresenta l'importo degli articoli di tipo omaggio inseriti nel tab *Articoli*;  
-**Totale sconti applicati**: rappresenta il valore totale dei sconti applicati sugli articoli, ma senza i sconti finali;  
-**Importo netto articoli**: *Importo lordo articoli* – *Totale sconti applicati*;  
-**Totale sconti finali**: rappresenta il valore degli sconti finali espressi in percentuale sull'importo lordo degli articoli;  
-**Importo netto sconti finali**: *Importo netto articoli* - *Totale sconti finali*;  
-**Spese di incasso**: rappresenta la somma delle spese di incasso inserite nella griglia delle *Spese*;  
-**Spese bollo**: rappresenta la somma delle spese di bollo inserite nella griglia delle *Spese*;   
-**Imponibile**: *Importo netto articoli* – *Sconti finali* + *Totale spese non documentati* + *Totale spese documentati*;  
-**Imposta**: rappresenta la somma dei valori contenuti nei riepiloghi IVA;  
-**Totale**: *Imponibile* + *IVA*.
+## Ostala polja
+
+**Volumen**: prikazuje kumulativni volumen koji proizlazi iz zbroja volumena artikala (vrijednost se preuzima iz kartice *Šifarnik artikla > kartica Težine/Dimenzije*), kada se jedinica mjere volumena artikala podudara s onom navedenom u parametrima računa. Razmatraju se samo artikli koji imaju ovaj podatak popunjen;    
+**Neto težina**: prikazuje kumulativnu neto težinu koja proizlazi iz zbroja neto težina artikala (vrijednost se preuzima iz kartice *Šifarnik artikla > kartica Težine/Dimenzije*), kada se jedinica mjere težine artikala podudara s onom navedenom u parametrima računa. Razmatraju se samo artikli koji imaju ovaj podatak popunjen;    
+**Bruto težina**: prikazuje kumulativnu bruto težinu koja proizlazi iz zbroja bruto težina artikala (vrijednost se preuzima iz kartice *Šifarnik artikla > kartica Težine/Dimenzije*), kada se jedinica mjere težine artikala podudara s onom navedenom u parametrima računa. Razmatraju se samo artikli koji imaju ovaj podatak popunjen;    
+**Paketi**: prikazuje broj komada na temelju podataka unesenih u kartici *Šifarnik artikla > kartica Težine/Dimenzije*, u poljima *Artikli prisutni u jednom pakiranju* ili *Paketi za oblikovanje*. Razmatraju se samo artikli koji imaju ovaj podatak popunjen.   
+
+## Transport
+
+Automatski se predlaže *Vrsta prijevoza prema postavkama* u  *Šifarniku kontakta > kartica  [Isporuka](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/delivery)* (radio button: Pošiljatelj/Primatelj/Prijevoznik), ali podaci se mogu izmijeniti.  
+
+## Sveukupni Dokument
+
+**Iznos stavki bez popusta**: predstavlja zbroj vrijednosti svih artikala;
+**Zaduženje**: predstavlja iznos eventualnog avansa primljenog za dokument;
+**Poklonjeni iznos**: predstavlja iznos artikala koji su poklonjeni, uneseni u kartici *Artikli*;  
+**Ukupni primjenjeni rabati**: predstavlja ukupnu vrijednost primijenjenih popusta na artikle, ali bez završnih popusta;  
+**Neto iznos artikala**: *Bruto iznos artikala* – *Ukupni primijenjeni popusti*;  
+**Ukupno konačnih popusta**: predstavlja vrijednost završnih popusta izraženih u postocima na bruto iznos artikala;    
+**Neto iznos završnih popusta**: *Neto iznos artikala* - *Ukupni završni popusti*;  
+**Naknade naplate**: predstavlja zbroj naknada za naplatu unesenih u mreži *Naknade*;    
+**Trošak ovjere**: predstavlja zbroj troškova pečata unesenih u mrežu *Naknade*;   
+**Oporezivo**: *Neto iznos artikala* – *Završni popusti* + *Ukupni nepotvrđeni troškovi* + *Ukupni potvrđeni troškovi*;  
+**Porezi**: predstavlja zbroj vrijednosti u pregledima PDV-a;  
+**Ukupno**: *Osnovica + PDV*.
