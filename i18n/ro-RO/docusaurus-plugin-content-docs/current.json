@@ -1312,7 +1312,7 @@
     "description": "The label for category Nuova commessa di acquisto in sidebar purchase"
   },
   "sidebar.logistics.category.Spedizioni": {
-    "message": "Spedizioni",
+    "message": "Transport",
     "description": "The label for category Spedizioni in sidebar logistics"
   },
   "sidebar.controlling.category.Tabelle e Parametri controlling": {
@@ -1332,11 +1332,11 @@
     "description": "The label for category Gestione del controlling nelle varie aree in sidebar controlling"
   },
   "sidebar.controlling.category.Storico di progetto": {
-    "message": "Storico di progetto",
+    "message": "Istoric proiect",
     "description": "The label for category Storico di progetto in sidebar controlling"
   },
   "sidebar.releaseNotes.category.Versione 707": {
-    "message": "Versione 707",
+    "message": "Versiune 707",
     "description": "The label for category Versione 707 in sidebar releaseNotes"
   }
 }
