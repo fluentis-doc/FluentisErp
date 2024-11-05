@@ -1300,15 +1300,15 @@
     "description": "The label for category Funcționalități, butoane și câmpuri comune in sidebar guide"
   },
   "sidebar.purchase.category.Nuova Richiesta di offerta": {
-    "message": "Nuova Richiesta di offerta",
+    "message": "Cerere de ofertă nouă",
     "description": "The label for category Nuova Richiesta di offerta in sidebar purchase"
   },
   "sidebar.purchase.category.Commesse di acquisto": {
-    "message": "Commesse di acquisto",
+    "message": "Comenzi de achizție",
     "description": "The label for category Commesse di acquisto in sidebar purchase"
   },
   "sidebar.purchase.category.Nuova commessa di acquisto": {
-    "message": "Nuova commessa di acquisto",
+    "message": "Comandă de achiziție nouă",
     "description": "The label for category Nuova commessa di acquisto in sidebar purchase"
   },
   "sidebar.logistics.category.Spedizioni": {
@@ -1316,19 +1316,19 @@
     "description": "The label for category Spedizioni in sidebar logistics"
   },
   "sidebar.controlling.category.Tabelle e Parametri controlling": {
-    "message": "Tabelle e Parametri controlling",
+    "message": "Tabele și parametri controlling",
     "description": "The label for category Tabelle e Parametri controlling in sidebar controlling"
   },
   "sidebar.controlling.category.Tabelle e Parametri specifici della contabilità analitica e gestionale": {
-    "message": "Tabelle e Parametri specifici della contabilità analitica e gestionale",
+    "message": "Tabele și parametrii specifici contabilității de gestiune",
     "description": "The label for category Tabelle e Parametri specifici della contabilità analitica e gestionale in sidebar controlling"
   },
   "sidebar.controlling.category.Tabelle e Parametri all'interno delle altre Aree": {
-    "message": "Tabelle e Parametri all'interno delle altre Aree",
+    "message": "Tabele și parametri în alte arii",
     "description": "The label for category Tabelle e Parametri all'interno delle altre Aree in sidebar controlling"
   },
   "sidebar.controlling.category.Gestione del controlling nelle varie aree": {
-    "message": "Gestione del controlling nelle varie aree",
+    "message": "Gestionare controlling în alte arii",
     "description": "The label for category Gestione del controlling nelle varie aree in sidebar controlling"
   },
   "sidebar.controlling.category.Storico di progetto": {
