@@ -1,763 +1,787 @@
 ---
-title: Import Registru Contacte
+title: Importazione Anagrafiche Contatti
 sidebar_position: 1
 ---
 
-Procedura permite importarea registrului de contacte (clienți sau furnizori) în **Fluentis** folosind un **fișier electronic**.
-
-Această import este posibil datorită utilizării **Parametrilor BizLink**, deoarece de fiecare dată când este procesată o linie, aceștia vor fi apelați.
 
 
-### Import folosind fișierul electronic
+In questo articolo verrà spiegato come **Importare le anagrafiche contatti** (clienti o fornitori) all'interno di **Fluentis** tramite l'utilizzo di un **foglio elettronico**.
 
-Clic pe **Instrumente** (de obicei, se află în partea dreaptă a aplicației Fluentis), apoi pe **BizLink > Import On Demand > Registre > Import Clienți/Furnizori** ca în figura următoare:
+Questa importazione è possibile, grazie all'utilizzo dei **BizLink Parameters** in quanto ogni qualvolta verrà processata una riga, essi saranno richiamati.
+
+
+### Come aprire l'importazione tramite foglio elettronico
+
+Cliccare su **Strumenti** (di solito è situata nel lato destro di Fluentis).
+
+Cliccare sulla sezione **BizLink**
+
+Cliccare su **Importazione On Demand > Anagrafiche > Importazione Clienti/Fornitori** come in figura sotto.
 
 ![](/img/it-it/applications/bizlink/import-contacts-registry/image03.png) 
 
 
-### Date
+### Sezione Data
 
-În această secțiune vor fi inserate datele care vor deveni permanente prin salvarea lor în baza de date **Fluentis**.
+In questa sezione andremo a inserire i dati che verranno poi resi permanenti tramite salvataggio nella base di dati di **Fluentis**.
 
-Aplicația afișează fișierul electronic pentru import:
+Ora a video viene visualizzato il foglio elettronico per l'importazione.
 
 ![](/img/it-it/applications/bizlink/import-contacts-registry/image04.png) 
 
-Se poate opta pentru una din variantele:
+Da questo punto si possono prendere varie strade:
 
- 1. Importul fișierului electronic deja completat, **File > Open**.
- 2. Adăugarea diferitelor coloane prin Copy&Paste din lista salvată în computer.
- 3. Salvarea acestui fișier (**File > Save**) în computer, adăugarea datelor necesare și reimportarea apoi în **Fluentis** (vedeți punctul 1). Acest lucru ar putea fi foarte util pentru a pasa template-ul fișierului electronic pentru import, de completat pentru viitoarele liste pe care ni le vor trimite furnizorii. 
- 4. Adăugarea manuală a câmpurilor.
+ 1. Importare il foglio elettronico già compilato, **File > Open**.
+ 2. Aggiungere le varie colonne facendo copia e incolla dal listino salvato nel nostro pc.
+ 3. Salvare questo file (**File > Salva**) nel nostro pc, per poi andare ad aggiungerci i vari dati e reimportarlo successivamente in **Fluentis** (vedi punto 1). Questo potrebbe essere molto utile per passare il template, del foglio elettronico per l'importazione, da compilare per i futuri listini che ci invieranno i fornitori. 
+ 4. Aggiungere manualmente i campi.
 
-:::important Important
-Dacă aveți un fișier electronic salvat, acesta trebuie să respecte structura fișierului din figura de mai sus (aceeași ordine a coloanelor, tipul de date etc.)
-:::
+**ATTENZIONE**: se abbiamo un foglio elettronico salvato sul nostro pc, esso deve seguire lo schema del foglio in figura sopra. Ossia lo stesso ordine di colonne, tipo di dato ecc. Quest'ultimi sono spiegati nel dettaglio al paragrafo successivo.
 
 
-### Inserare câmpuri
+### Inserimento campi
 
-Când se introduce un câmp, trebuie să se insereze și alte date, cum ar fi: tipul, lungimea maximă, obligatoriu etc…
+Quando viene inserito un campo vanno tenute in considerazione molte cose tra cui tipo, lunghezza massima, richiesto ecc…
 
-Indicații generale:
+Indicazioni generali:
 
--        Dacă este scris cu roșu, este un câmp obligatoriu;
+-        Se il campo è scritto in rosso è un campo obbligatorio
 
--        Dacă numele celulei este evidențiat cu verde, este o **secțiune**
+-        Se il nome della cella è evidenziato in verde è una **sezione**
 
--        Dacă numele celulei este evidențiat cu galben, este un **câmp**
+-        Se il nome della cella è evidenziato in giallo è un **campo**
 
--        Câmp: indică dacă este sau nu necesară inserarea
+-        Campo: indica se è obbligatorio o meno l'inserimento
 
--        Tip: indică tipul câmpului
+-        Tipo: indica il tipo del campo
 
--        Formatare Excel: indică formatarea Excel recomandată pentru a evita inserarea greșită (consultați la sfârșitul paginii *Sfaturi și avertismente utile*)
+-        Formattazione Excel: indica la formattazione Excel consigliata per evitare inserimenti sbagliati, vedi alla fine Consigli e avvertenze utili
 
--        Lungime: indică limita de caractere care se poate insera în câmp
+-        Lunghezza: indica se il campo ha un limite di caratteri da rispettare
 
--        Descriere: scurtă descriere a câmpului
+-        Descrizione: breve descrizione del campo
 
-*Exemplu*: exemplu real cu ce se poate scrie în acel câmp
+*Esempio*: esempio reale di cosa poter scrivere in quel campo
 
--        Mapping table/Coloană: dacă este prezent, indică maparea câmpului respectiv în baza de date (consultați la sfârșitul paginii *Sfaturi și avertismente utile*)
+-        Mapping table/colonna: se presente indica del rispettivo campo la mappatura nel database, per approfondire alla fine Consigli e avvertenze utili
 
+ ![](/img/it-it/applications/bizlink/import-contacts-registry/image05.png)
 
-**Date generale**:
+ 
 
-Cod:
+**Dati generali**:
 
--        Câmp: obligatoriu
+Codice:
 
--        Tip: string
+-        Campo: obbligatorio
 
--        Formatare Excel: text
+-        Tipo: stringa
 
--        Lungime maximă: 6 caractere
+-        Formattazione Excel: testo
 
--        Descriere: cod de referință client/furnizor
+-        Lunghezza massima: 6 caratteri
 
-*Exemplu*: TEGOL
+-        Descrizione: codice di riferimento del cliente/fornitore
 
--        Mapping table/coloană: select MBAN_Nomignolo from MB_Anagr
+*Esempio*: TEGOL
 
-Nume societate:
+-        Mapping table/colonna: select MBAN_Nomignolo from MB_Anagr
 
--        Câmp: obligatoriu
+Ragione Sociale:
 
--        Tip: string
+-        Campo: obbligatorio
 
--        Formatare Excel: text
+-        Tipo: stringa
 
--        Lungime maximă: /
+-        Formattazione Excel: testo
 
--        Descriere: ragione sociale del client/furnizor
+-        Lunghezza massima: /
 
-*Exemplu*: TEGOLA CANADESE spa
+-        Descrizione: ragione sociale del cliente/fornitore
 
--        Mapping table/coloană: select MBAN_RagSoc from MB_Anagr
+*Esempio*: TEGOLA CANADESE spa
 
-Client/Furnizor:
+-        Mapping table/colonna: select MBAN_RagSoc from MB_Anagr
 
--        Câmp: obligatoriu
+Cliente/Fornitore:
 
--        Tip: string
+-        Campo: obbligatorio
 
--        Formatare Excel: text
+-        Tipo: stringa
 
--        Lungime maximă: 1 caracter
+-        Formattazione Excel: testo
 
--        Descriere: indică dacă introducem un client sau un furnizor. Cele două litere care reprezintă clientul și furnizorul sunt specificate în parametri.
+-        Lunghezza massima: 1 carattere
 
-*Exemplu*: “C” ccorespunde clientului, "F" corespunde furnizorului.
+-        Descrizione: Indica se stiamo inserendo un cliente o un fornitore. Le due lettere che rappresentano cliente e fornitore sono specificate nei parametri.
 
-:::important Important
-Singurul mod de a introduce un contact care este atât client, cât și furnizor, este să-l introduceți mai întâi ca client și apoi ca furnizor.
-:::
+*Esempio*: “C” corrisponde a fornitore, ”F” corrisponde a fornitore
 
-Cont sintetic:
+**Attenzione**: l'unico modo per inserire un contatto, il quale è sia cliente che fornitore, è inserirlo prima come cliente e poi come fornitore.
 
--        Câmp: neobligatoriu
+Conto:
 
--        Tip: string
+-        Campo: non obbligatorio
 
--        Descriere: cont sintetic furnizor
+-        Tipo: string
 
-*Exemplu*: 
+-        Descrizione: conto del fornitore, mastro del fornitore
 
--        Mapping table/coloană: select MBPC_Conto from MB_PiaCon
+*Esempio*: “15200” corrisponde a Clienti Italia
 
-Cont analitic:
+-        Mapping table/colonna: select MBPC_Conto from MB_PiaCon
 
--        Câmp: neobligatoriu
+Sottoconto:
 
--        Tip: string
+-        Campo: non obbligatorio
 
--        Descriere: cont analitic furnizor
+-        Tipo: string
 
-*Exemplu*: dacă sunt introduse conturi cu un sistem gol, se poate folosi o codificare de tipul 01; 02; 03 sau 001; 002; 003.
+-        Descrizione: sottoconto del fornitore, mastrino del fornitore
 
--        Mapping table/coloană: select BPC_SottoConto from MB_PiaCon
+*Esempio*: se vengono passati i conti con sistema vuoto si può usare una codifica tipo 01; 02; 03 oppure 001; 002; 003
 
-Angajamente (true/false):
+-        Mapping table/colonna: select BPC_SottoConto from MB_PiaCon
 
--        Câmp: obligatoriu
+Partite (true/false):
 
--        Tip: string
+-        Campo: obbligatorio
 
--        Formatare Excel: text
+-        Tipo: stringa
 
--        Lungime maximă: 200 caractere
+-        Formattazione Excel: testo
 
--        Descriere: flag partite aperte
+-        Lunghezza massima: 200 caratteri
 
-*Exemplu*: este suficient să scrieți “true”, iar imediat ce se schimbă celula, va apărea automat “TRUE” în centrul celulei sau “FALSE”, în funcție de caz.
-Adresă:
+-        Descrizione: flag partite aperte
 
--        Câmp: neobligatoriu
+*Esempio*: basta semplicemente scrivere “true” e appena si cambia cella automaticamente scriverà “TRUE” in centro della cella o “FALSE” a seconda dei casi
 
--        Tip: string
+Indirizzo:
 
--        Formatare Excel: text
+-        Campo: non obbligatorio
 
--        Lungime maximă: /
+-        Tipo: stringa
 
--        Descriere: adresă sediu client/furnizor
+-        Formattazione Excel: testo
 
-*Exemplu*: Str. Decebal 32
+-        Lunghezza massima: /
 
--        Mapping table/coloană: select MBAN_Indirizzo from MB_Anagr
+-        Descrizione: indirizzo sede cliente/fornitore
 
-Localitate:
+*Esempio*: via le dita dalla tastiera 7
 
--        Câmp: neobligatoriu
+-        Mapping table/colonna: select MBAN_Indirizzo from MB_Anagr
 
--        Tip: string
+Comune:
 
--        Formatare Excel: text
+-        Campo: non obbligatorio
 
--        Lungime maximă: /
+-        Tipo: stringa
 
--        Descriere: localitate sediu client/furnizor
+-        Formattazione Excel: testo
 
-*Exemplu*: Iași
+-        Lunghezza massima: /
 
--        Mapping table/coloană: select MBAN_Comune from MB_Anagr
+-        Descrizione: comune sede cliente/fornitore
 
-CP:
+*Esempio*: Cordignano
 
--        Câmp: neobligatoriu
+-        Mapping table/colonna: select MBAN_Comune from MB_Anagr
 
--        Tip: string
+CAP:
 
--        Formatare Excel: text
+-        Campo: non obbligatorio
 
--        Lungime maximă: 5 caractere
+-        Tipo: stringa
 
--        Descriere: codul poștal sediu client/furnizor
+-        Formattazione Excel: testo
 
-*Exemplu*: 31016
+-        Lunghezza massima: 5 caratteri
 
--        Mapping table/coloană: select MBAN_CAP from MB_Anagr
+-        Descrizione: codice di avviamento postale della sede cliente/fornitore
 
-Județ:
+*Esempio*: 31016
 
--        Câmp: neobligatoriu
+-        Mapping table/colonna: select MBAN_CAP from MB_Anagr
 
--        Tip: string
+Provincia:
 
--        Formatare Excel: text
+-        Campo: non obbligatorio
 
--        Lungime maximă: 200 caractere
+-        Tipo: stringa
 
--        Descriere: județ sediu client/furnizor
+-        Formattazione Excel: testo
 
-*Exemplu*: “IS” corespunde la Iași
+-        Lunghezza massima: 200 caratteri
 
--        Mapping table/coloană: select MBAN_Provincia from MB_Anagr
+-        Descrizione: provincia sede cliente/fornitore
 
-Țară:
+*Esempio*: “TV” corrisponde a Treviso
 
--        Câmp: neobligatoriu
+-        Mapping table/colonna: select MBAN_Provincia from MB_Anagr
 
--        Tip: string
+Nazione:
 
--        Formatare Excel: text
+-        Campo: non obbligatorio
 
--        Lungime maximă: 200 caractere
+-        Tipo: stringa
 
--        Descriere: țara sediu client/furnizor
+-        Formattazione Excel: testo
 
-*Exemplu*: “RO” corespunde la România
+-        Lunghezza massima: 200 caratteri
 
--        Mapping table/coloană: select MBNZ_CodIso from MB_Nazioni
+-        Descrizione: nazione sede cliente/fornitore
 
-Limba:
+*Esempio*: “IT” corrisponde a Italia
 
--        Câmp: neobligatoriu
+-        Mapping table/colonna: select MBNZ_CodIso from MB_Nazioni
 
--        Tip: string
+Lingua:
 
--        Formatare Excel: text
+-        Campo: non obbligatorio
 
--        Lungime maximă: 200 caractere
+-        Tipo: stringa
 
--        Descriere: limba utilizată de client/furnizor
+-        Formattazione Excel: testo
 
-*Exemplu*: “Ro” corespunde la română
+-        Lunghezza massima: 200 caratteri
 
--        Mapping table/coloană: select MBAN_RagSoc from MB_Anagr
+-        Descrizione: lingua utilizzata dal cliente/fornitore
 
-Telefon:
+*Esempio*: “IT” corrisponde a italiano
 
--        Câmp: neobligatoriu
+-        Mapping table/colonna: select MBAN_RagSoc from MB_Anagr
 
--        Tip: string
+Telefono:
 
--        Formatare Excel: text
+-        Campo: non obbligatorio
 
--        Lungime maximă: 200 caractere
+-        Tipo: stringa
 
--        Descriere: telefon client/furnizor
+-        Formattazione Excel: testo
 
-*Exemplu*: 
+-        Lunghezza massima: 200 caratteri
 
--        Mapping table/coloană: select MBAN_Telefono from MB_Anagr
+-        Descrizione: telefono del cliente/fornitore
+
+*Esempio*: 0438-123456
+
+-        Mapping table/colonna: select MBAN_Telefono from MB_Anagr
 
 Email:
 
--        Câmp: neobligatoriu
+-        Campo: non obbligatorio
 
--        Tip: string
+-        Tipo: stringa
 
--        Formatare Excel: text
+-        Formattazione Excel: testo
 
--        Lungime maximă: 200 caractere
+-        Lunghezza massima: 200 caratteri
 
--        Descriere: e-mail principal client/furnizor
+-        Descrizione: e-mail principale del cliente/fornitore
 
-*Exemplu*: info@mycompany.com
+*Esempio*: info@mycompany.com
 
--        Mapping table/coloană: select MBAN_Email from MB_Anagr
+-        Mapping table/colonna: select MBAN_Email from MB_Anagr
 
 Nota:
 
--        Câmp: neobligatoriu
+-        Campo: non obbligatorio
 
--        Tip: string
+-        Tipo: stringa
 
--        Formatare Excel: text
+-        Formattazione Excel: testo
 
--        Lungime maximă: 200 caractere
+-        Lunghezza massima: 200 caratteri
 
--        Descriere: note suplimentare
+-        Descrizione: note aggiuntive
 
-*Exemplu*:
+*Esempio*:
 
--        Mapping table/coloană: select MBAN_Note from MB_Anagr
+-        Mapping table/colonna: select MBAN_Note from MB_Anagr
 
+![](/img/it-it/applications/bizlink/import-contacts-registry/image06.png) 
 
-**Date fiscale**:
+**Dati fiscali**:
 
-Nr. reg. comerț:
+Cod. fiscale:
 
--        Câmp: neobligatoriu
+-        Campo: non obbligatorio
 
--        Tip: string
+-        Tipo: stringa
 
--        Formatare Excel: text
+-        Formattazione Excel: testo
 
--        Lungime maximă: /
+-        Lunghezza massima: /
 
--        Descriere: număr registru de comerț client/furnizor
+-        Descrizione: Codice Fiscale del cliente/fornitore
 
-*Exemplu*: RO01720550936
+*Esempio*: IT01720550936
 
--        Mapping table/coloană: select MBAN_CodFiscale from MB_Anagr
+-        Mapping table/colonna: select MBAN_CodFiscale from MB_Anagr
 
-Cod ISO:
+Cod. ISO:
 
--        Câmp: neobligatoriu
+-        Campo: non obbligatorio
 
--        Tip: string
+-        Tipo: stringa
 
--        Formatare Excel: text
+-        Formattazione Excel: testo
 
--        Lungime maximă: 50 caractere
+-        Lunghezza massima: 50 caratteri
 
--        Descriere:
+-        Descrizione:
 
-*Exemplu*: “RO” corespunde la România
+*Esempio*: “IT” corrisponde ad Italia
 
--        Mapping table/coloană: select MBAN_CodIso from MB_Anagr
+-        Mapping table/colonna: select MBAN_CodIso from MB_Anagr
 
-CUI:
+P. Iva:
 
--        Câmp: neobligatoriu
+-        Campo: non obbligatorio
 
--        Tip: string
+-        Tipo: stringa
 
--        Formatare Excel: text
+-        Formattazione Excel: testo
 
--        Lungime maximă: 200 caractere
+-        Lunghezza massima: 200 caratteri
 
--        Descriere: CUI client/furnizor
+-        Descrizione: partita iva del cliente/fornitore
 
-*Exemplu*: 28207227700
+*Esempio*: 28207227700
 
--        Mapping table/coloană: select MBAN_PartitaIva from MB_Anagr
+-        Mapping table/colonna: select MBAN_PartitaIva from MB_Anagr
 
+![](/img/it-it/applications/bizlink/import-contacts-registry/image07.png) 
 
-**Plăți**:
+**Pagamenti**:
 
-Tip plată:
+Tipo pagamento:
 
--        Câmp: obligatoriu
+-        Campo: obbligatorio
 
--        Tip: string
+-        Tipo: stringa
 
--        Formatare Excel: text
+-        Formattazione Excel: testo
 
--        Lungime maximă: /
+-        Lunghezza massima: /
 
--        Descriere: tip de plată utilizat de client/furnizor
+-        Descrizione: tipo di pagamento che viene utilizzato dal cliente/fornitore
 
-*Exemplu*: 
+*Esempio*: “04” corrisponde a bonifico bancario
 
--        Mapping table/coloană: select MBTP_Pagamento from MB_TipoPag
+-        Mapping table/colonna: select MBTP_Pagamento from MB_TipoPag
 
-Soluții de plată:
+Soluzioni di Pagamento:
 
--        Câmp: obligatoriu
+-        Campo: obbligatorio
 
--        Tip: string
+-        Tipo: stringa
 
--        Formatare Excel: text
+-        Formattazione Excel: testo
 
--        Lungime maximă: /
+-        Lunghezza massima: /
 
--        Descriere: termenele de plată client/furnizor
+-        Descrizione: tempistiche di pagamento del cliente/fornitore
 
-*Exemplu*: “60 zile DF” corespunde la *până în 60 de zile de la data facturii*. *La livrare* reprezintă plata de efectuat în momentul livrării.
+*Esempio*: “60 GG DF” corrisponde a entro 60 giorni rispetto alla data della fattura, “In consegna” pagamento nel momento della consegna della merce
 
--        Mapping table/coloană: select * from MB_SolPag
+-        Mapping table/colonna: select * from MB_SolPag
 
 ABI:
 
--        Câmp: neobligatoriu
+-        Campo: non obbligatorio
 
--        Tip: string
+-        Tipo: stringa
 
--        Formatare Excel: text
+-        Formattazione Excel: testo
 
--        Lungime maximă: 5
+-        Lunghezza massima: 5
 
--        Descriere:se referă la banca contului curent client/furnizor. Este o parte din IBAN
+-        Descrizione: identifica la banca a cui appartiene il conto corrente del cliente/fornitore. È una parte dell'IBAN
 
-*Exemplu*: 01234
+*Esempio*: 01234
 
 CAB:
 
--        Câmp: neobligatoriu
+-        Campo: non obbligatorio
 
--        Tip: string
+-        Tipo: stringa
 
--        Formatare text
+-        Formattazione testo
 
--        Lungime maximă: 5
+-        Lunghezza massima: 5
 
--        Descriere: indică filiala băncii (ABI) client/furnizor. Este o parte din IBAN
+-        Descrizione: indica la filiale della rispettiva banca (ABI) del cliente/fornitore. È una parte dell'IBAN
 
-*Exemplu*: 12345
+*Esempio*: 12345
 
 IBAN:
 
--        Câmp: neobligatoriu
+-        Campo: non obbligatorio
 
--        Tip: string
+-        Tipo: stringa
 
--        Formatare Excel: text
+-        Formattazione Excel: testo
 
--        Lungime maximă: 27 caractere
+-        Lunghezza massima: 27 caratteri
 
--        Descriere: è un codice utilizzato nelle transazioni fra conti correnti diversi e che all'interno contiene l'identificazione del paese, della banca e del numero di conto corrente.
+-        Descrizione: è un codice utilizzato nelle transazioni fra conti correnti diversi e che all'interno contiene l'identificazione del paese, della banca e del numero di conto corrente.
 
-*Exemplu*: IT66C010050338 2000000218020     
+*Esempio*: IT66C010050338 2000000218020     
 
 SWIFT:
 
--        Câmp: neobligatoriu
+-        Campo: non obbligatorio
 
--        Tip: string
+-        Tipo: stringa
 
--        Formatare Excel: text
+-        Formattazione Excel: testo
 
--        Lungime maximă: 11 caractere
+-        Lunghezza massima: 11 caratteri
 
--        Descriere: cifrele de identificare care permit sistemelor să înțeleagă instantaneu care este banca acceptantă și care este banca emitentă, numele și locul de unde operează acestea. Este necesar pentru plățile la nivel internațional. Este compus din 8 caractere + 3 opționale.
+-        Descrizione: cifre identificative che permettono ai sistemi di capire all'istante qual è la banca ricevente e quale quella mittente, il loro nome e luogo da cui operano. È necessario per i pagamenti a livello internazionale. È composto da 8 caratteri + 3 opzionali.
 
-Aceasta se referă la codul SWIFT (Society for Worldwide Interbank Financial Telecommunication), cunoscut și ca BIC (Bank Identifier Code).
-
-*Exemplu*: „UNCRITMM” corespunde codului SWIFT al UniCredit.
+*Esempio*: “UNCRITMM” corrisponde allo SWIFT di UniCredit
 
 Zona:
 
--        Câmp: neobligatoriu
+-        Campo: non obbligatorio
 
--        Tip: string
+-        Tipo: string
 
--        Formatare Excel: text
+-        Formattazione Excel: testo
 
--        Lungime maximă: /
+-        Lunghezza massima: /
 
--        Descriere: zonă definită la începutul codului IBAN
+-        Descrizione: Zona definita all'inizio dell'IBAN
 
-*Exemplu*: “IT” corespunde Italiei
+*Esempio*: “IT” Corrisponde ad Italia
 
+ ![](/img/it-it/applications/bizlink/import-contacts-registry/image08.png)
 
-**Agenți**:
+**Agenti**:
 
-Agent:
+Agente:
 
--        Câmp: neobligatoriu
+-        Campo: non obbligatorio
 
--        Tip: string
+-        Tipo: stringa
 
--        Formatare Excel: text
+-        Formattazione Excel: testo
 
--        Lungime maximă: /
+-        Lunghezza massima: /
 
--        Descriere: dacă există un agent (prezent în baza de date a agenților), acesta poate fi asociat cu clientul.
+-        Descrizione: Se c'è un agente (presente nell'anagrafica agenti) può essere collegato al cliente
 
-*Exemplu*:
+*Esempio*:
 
--        Mapping table/coloană: select * from MB_Agenti
+-        Mapping table/colonna: select * from MB_Agenti
 
 Provvigioni:
 
--        Câmp: neobligatoriu
+-        Campo: non obbligatorio
 
--        Tip: string
+-        Tipo: stringa
 
--        Formatare Excel: text
+-        Formattazione Excel: testo
 
--        Lungime maximă: /
+-        Lunghezza massima: /
 
--        Descriere: comisionul agentului, dacă este diferit de cel introdus în baza de date a agenților, poate fi ajustat printr-o interfață unde se poate decide care dintre ele are prioritate.
+-        Descrizione: Provvigione dell'agente, se diversa rispetto a quella inserita nell'anagrafica agente c'è una maschera in cui si può decidere quale ha più priorità rispetto all'altra
 
-*Exemplu*:
+*Esempio*:
 
--        Mapping table/coloană: select * from MB_AgentiZone
+-        Mapping table/colonna: select * from MB_AgentiZone
 
+![](/img/it-it/applications/bizlink/import-contacts-registry/image09.png) 
 
 **Listini**:
 
 Listino:
 
--        Câmp: neobligatoriu
+-        Campo: non obbligatorio
 
--        Tip: string
+-        Tipo: string
 
--        Formatare Excel: text
+-        Formattazione Excel: testo
 
--        Lungime maximă: /
+-        Lunghezza massima: /
 
--        Descriere:
+-        Descrizione:
 
-*Exemplu*:
+*Esempio*:
 
-Discount 1:
+Sconto 1:
 
--        Câmp: neobligatoriu
+-        Campo: non obbligatorio
 
--        Tip: zecimale
+-        Tipo: decimale
 
--        Formatare Excel: număr, poziție zecimale = 2
+-        Formattazione Excel: numero, posizione decimali = 2
 
--        Lungime maximă: /
+-        Lunghezza massima: /
 
--        Descriere: valoare discount
+-        Descrizione: valore dello sconto
 
-*Exemplu*: 550
+*Esempio*: 550
 
-Discount 2:
+Sconto 2:
 
--        Câmp: neobligatoriu
+-        Campo: non obbligatorio
 
--        Tip: zecimale
+-        Tipo: decimale
 
--        Formatare Excel: număr, poziție zecimale = 2
+-        Formattazione Excel: numero, posizione decimali = 2
 
--        Lungime maximă: /
+-        Lunghezza massima: /
 
--        Descriere: valoare discount
+-        Descrizione: valore dello sconto
 
-*Exemplu*: 5%
+*Esempio*: 5%
 
  
 ### BizLink Parameters
 
-Acești parametri vor fi utilizați pentru a procesa rândurile inserate în secțiunea *Date*. După cum se poate observa din imagine, unele câmpuri sunt deja completate, dar pot fi modificate.
+Questi parametri serviranno per processare le righe inserite nella sezione Data. Come si può notare dall'immagine, alcuni campi sono già precompilati ma nulla ci vieta di modificarli.
 
 ![](/img/it-it/applications/bizlink/import-contacts-registry/image10.png) 
 
  BizLink Spreadsheet:
 
--        Câmp: nu este obligatoriu
+-        Campo: da non inserire
 
-Limba:
+Lingua:
 
--        Câmp: obligatoriu
+-        Campo: obbligatorio
 
--        Tip: string
+-        Tipo: string
 
--        Descriere: Iso code aferent limbii
+-        Descrizione: codice Iso code relativo alla lingua
 
-*Exemplu*: “it-IT” este pentru italiană, “en-US” este pentru engleza americană.
+*Esempio*: “it-IT” rappresenta la lingua italiana, “en-US” rappresenta la lingua inglese in America.
 
-Societate:
+ Società:
 
--        Câmp: obligatoriu
+-        Campo: obbligatorio
 
--        Tip: string
+-        Tipo: string
 
--        Descriere: este un câmp deja populat, deoarece preia valorile deja existente în Fluentis. Acestea pot fi vizualizate în colțul din stânga sus.
+-        Descrizione: è un campo precompilato in quanto prende i valori già all'interno di Fluentis, si possono vedere nell'angolo in alto a sinistra.
 
-*Exemplu*: “1” corespunde societății demo
+*Esempio*: “1” corrisponde alla società demo
 
--        Mapping table/coloană: Select MBSC_Code from MB_Soc
+-        Mapping table/colonna: Select MBSC_Code from MB_Soc
 
-Diviziune:
+Divisione:
 
--        Câmp: obligatoriu
+-        Campo: obbligatorio
 
--        Tip: string
+-        Tipo: string
 
--        Descriere: este un câmp deja populat ca in cazul societății.
+-        Descrizione: come per la società viene precompilato
 
-*Exemplu*: “1” corespunde sediului legal, “2” sediului operativ
+*Esempio*: “1” corrisponde alla sede legale, “2” alla sede operativa di Milano
 
--        Mapping table/coloană: select MBDP_Code from MB_Dep
+-        Mapping table/colonna: select MBDP_Code from MB_Dep
 
-Identificator client:
+Identificativo cliente:
 
--        Câmp: obligatoriu
+-        Campo: obbligatorio
 
--        Tip: string
+-        Tipo: string
 
--        Descriere: o literă oarecare care se inserează în parametri și care va corespunde câmpului client/furnizor. Recomandăm litera „C”.
+-        Descrizione: Una qualsiasi lettera che inseriamo nei parametri che andrà poi a corrispondere al campo cliente/fornitore. Per semplicità è consigliato “C”
 
-*Exemplu*: “C” corespunde clienților
+*Esempio*: “C” corrisponde a clienti
 
-Identificator furnizor:
+Identificativo fornitore:
 
--        Câmp: obligatoriu
+-        Campo: obbligatorio
 
--        Tip: string
+-        Tipo: string
 
--        Descriere: o literă oarecare care se inserează în parametri și care va corespunde câmpului client/furnizor. Recomandăm litera “F”.
+-        Descrizione: Una qualsiasi lettera che inseriamo nei parametri che andrà poi a corrispondere al campo cliente/fornitore. Per semplicità è consigliato “F”
 
-*Exemplu*: “F” corespunde furnizorilor
+*Esempio*: “F” corrisponde a fornitori
 
-Cod tip cont clienți:
+Codice tipo conto clienti:
 
--        Câmp: obligatoriu
+-        Campo: obbligatorio
 
--        Tip: string
+-        Tipo: string
 
--        Descriere: contul în raport cu clienții. În Fluentis se poate vizualiza în *Home > Parametri > Administrativ > Parametri contabilitate*. Dublu clic pe anul curent pentru a afișa în partea dreaptă *Tipul contului*.
+-        Descrizione: conto mastro rispetto ai clienti. Per poterlo vedere anche da Fluentis basta andare in Home**  > ** Parametri ** > ** Amministrazione**  > ** Parametri di contabilità. Fare doppio click sull'anno corrente e sulla destra si dovrebbe vedere il “Tipo conto”
 
-*Exemplu*: “CIT” corespunde clienților din Italia
+*Esempio*: “FIT” corrisponde a clienti Italia
 
-Cod tip cont furnizori:
+Codice tipo conto fornitori:
 
--        Câmp: obligatoriu
+-        Campo: obbligatorio
 
--        Tip: string
+-        Tipo: string
 
--        Descriere: contul în raport cu furnizorii. În Fluentis se poate vizualiza în *Home > Parametri > Administrativ > Parametri contabilitate*. Dublu clic pe anul curent pentru a afișa în partea dreaptă *Tipul contului*.
+-        Descrizione: conto mastro rispetto ai fornitori. Per poterlo vedere anche da Fluentis basta andare in Home ** > ** Parametri ** > ** Amministrazione ** > ** Parametri di contabilità. Fare doppio click sull'anno corrente e sulla destra si dovrebbe vedere il “Tipo conto”
 
-*Exemplu*: “FIT” corespunde furnizorilor din Italia
+*Esempio*: “CIT” corrisponde a fornitori Italia
 
-Grup clienți:
+Gruppo clienti:
 
--        Câmp: obligatoriu
+-        Campo: obbligatorio
 
--        Tip: string
+-        Tipo: string
 
--        Descriere: codurile prezente pot fi vizualizate în *Home > Contabilitate > Plan de conturi*. Primul form afișează codul grupului.
+-        Descrizione: è possibile vedere i codici presenti da Home ** > ** Contabili ** > ** Piano dei conti, nella prima maschera di visualizzazione c'è un codice del gruppo.
 
-*Exemplu*: 
+*Esempio*: “1520” corrisponde a Clienti Italia
 
--        Mapping table/coloană: select MBGR_Gruppo from MB_GRUPP
+-        Mapping table/colonna: select MBGR_Gruppo from MB_GRUPP
 
-Grup furnizori:
+Gruppo fornitori:
 
--        Câmp: obligatoriu
+-        Campo: obbligatorio
 
--        Tip: string
+-        Tipo: string
 
--        Descriere: codurile prezente pot fi vizualizate în *Home > Contabilitate > Plan de conturi*. Primul form afișează codul grupului.
+-        Descrizione: è possibile vedere i codici presenti da Home ** > ** Contabili ** > ** Piano dei conti, nella prima maschera di visualizzazione c'è un codice del gruppo.
 
-*Exemplu*: 
+*Esempio*: “2506” corrisponde a Fornitori Italia
 
--        Mapping table/coloană: select MBGR_Gruppo from MB_GRUPPI
+-        Mapping table/colonna: select MBGR_Gruppo from MB_GRUPPI
 
-Cod Tip discount 1:
+Codice Tipo sconto 1:
 
--        Câmp: obligatoriu doar dacă a fost inserat discount 1
+-        Campo: obbligatorio solo se inserito lo sconto 1
 
--        Tip: string
+-        Tipo: string
 
--        Descriere: Reprezintă categoria de discount aplicat ofertei de prețuri
+-        Descrizione: Rappresenta la categoria di sconto applicata al listino
 
-*Exemplu*: “C1” corespunde discountului în cascadă
+*Esempio*: “C1” corrisponde a sconto a cascata
 
--        Mapping table/coloană: select MBST_TipSco from MB_Sconti
+-        Mapping table/colonna: select MBST_TipSco from MB_Sconti
 
-Cod Tip discount 2:
+Codice Tipo sconto 2:
 
--        Câmp: obligatoriu doar dacă a fost inserat discount 2
+-        Campo: obbligatorio solo se inserito lo sconto 2
 
--        Tip: string
+-        Tipo: string
 
--        Descriere: Reprezintă categoria de discount aplicat ofertei de prețuri
+-        Descrizione: Rappresenta la categoria di sconto applicata al listino
 
-*Exemplu*: “3” corespunde discountului comercial
+*Esempio*: “3” corrisponde a sconto commerciale
 
--        Mapping table/coloană: select MBST_TipSco from MB_Sconti
+-        Mapping table/colonna: select MBST_TipSco from MB_Sconti
 
 
 
-### Start import
+### Avviare importazione
 
-După introducerea datelor, pentru a începe importul, clic pe butonul **Import**.
+Una volta inseriti i dati, per avviare l'importazione, cliccare sul pulsante presente nel menu importazione, in alto a sinistra, chiamato anch'esso “Importazione” come in figura sotto.
 
-### Concluzie – Inserare efectuată
+![](/img/it-it/applications/bizlink/import-contacts-registry/image11.png)
 
-Verificarea operației se face accesând registrul articolelor (**Home > Articole**) pentru a vedea dacă sunt prezente articolele importate de la furnizor. În caz contrar, aplicația va genera un mesaj de eroare care va indica ce parametri și/sau câmpuri sunt incorecte. Pentru a interpreta tipul de eroare, consultați secțiunea *Sfaturi și atenționări utile* din ultimul paragraf.
 
 
+### Conclusioni – Inserimento avvenuto
 
-### Sfaturi și atenționări utile
+Se tutto va a buon fine non comparirà nessun messaggio di errore. Per un ulteriore verifica di buon riuscita, andare a controllare nell'anagrafica articoli (**Home > Articoli**) se sono presenti quelli importati dal fornitore.  Altrimenti ci apparirà a video una schermata di errore la quale ci indicherà quali parametri e/o campi non sono corretti. Per interpretare il tipo di errore vedi Consigli e avvertenze utili nell'ultimo paragrafo. 
 
-**Formatare Excel recomandată**:
 
-- Pentru un import corect, recomandăm să formatați coloanele conform tipului indicat în secțiunea *Formatare Excel* pentru fiecare câmp. De exemplu, dacă tipul câmpului este zecimal și în acel câmp va fi introdusă o valută, formatați câmpul ca valută. Dacă celula nu este formatată corespunzător, Excel elimină cifrele nesemnificative. Pentru a aplica formatarea, urmați pașii de mai jos:
 
-1. selectați coloana dorită:
 
-![](/img/it-it/applications/bizlink/import-contacts-registry/image12.png)
 
-2. poziționați-vă în coloană și faceți clic dreapta.
+### Consigli e avvertenze utili
 
-![](/img/it-it/applications/bizlink/import-contacts-registry/image13.png)
+**Formattazione Excel consigliata**:
 
-3. selectați cu clic stânga **> Format Cells...**
+-        Per una corretta importazione, è vivamente consigliato di formattare le colonne secondo il tipo indicato alla voce “Formattazione Excel” di ogni campo. Per esempio se il tipo del campo è decimal e in quel campo andrà inserito una valuta, formattare il campo appunto come valuta. Questo perché per esempio se non viene formattata la cella, Excel elimina le cifre non significative. Per inserire la formattazione seguire i seguenti passaggi:
 
-![](/img/it-it/applications/bizlink/import-contacts-registry/image14.png)
+Per prima cosa selezionare la colonna desiderata come in fig. sotto:
 
-4. formatați coloana selectată. Conform indicațiilor furnizate în *Inserare câmpuri*, selectați categoria corespunzătoare, cu specificațiile relative (de exemplu, valută, fără simbol). Același lucru se poate face și din foaia de calcul prezentă în Fluentis.
+![](/img/it-it/applications/bizlink/import-contacts-registry/image12.png) 
 
-:::note Atenție
-O situație tipică implică coduri care conțin zerouri aparent nesemnificative, de exemplu "001". Dacă câmpul este formatat generic sau ca număr, zerourile vor fi eliminate, dar dacă este formatat ca text, acestea vor fi păstrate.
-:::
+Poi, dopo essersi posizionati con il puntatore del mouse all'interno della colonna, premere il tasto destro del mouse.
 
-**Mapping table/coloană**:
+![](/img/it-it/applications/bizlink/import-contacts-registry/image13.png) 
 
-- Dacă în *Inserare câmpuri* există *Mapping table/coloană*, înseamnă că valoarea introdusă în câmp pentru import poate fi deja prezentă în baza de date. A fost inserat și în câmpurile care vor fi introduse de la zero, pentru a putea vedea un exemplu, dacă este prezent în baza de date. Pentru a vizualiza datele prezente în baza de date, urmați pașii de mai jos, utilizând ca exemplu clasa articole și mapping-ul aferent:
+Selezionare premendo il tasto sinistro ** > ** **Formato celle**…
 
-select MBDC_Classe from MB_Classi. Executați interogarea în "Microsoft SQL Server Management Studio" și obțineți rezultatul:
+![](/img/it-it/applications/bizlink/import-contacts-registry/image14.png) 
 
-![](/img/it-it/applications/bizlink/import-contacts-registry/image15.png)
+In questa schermata si potrà quindi formattare la colonna selezionata. In base alle indicazioni fornite nell' “Inserimento campi” selezionare l'opportuna categoria, con le relative specifiche (es. valuta, simbolo nessuno). La stessa identica cosa è possibile farla dal foglio elettronico presente all'interno di Fluentis.
 
-Rezultatul nu oferă informații clare; pentru a înțelege semnificația, înlocuiți după clauza select simbolul "*" cu câmpul pentru a compune noua interogare. În acest caz, ar fi select * from MB_Class, care selectează întregul conținut al tabelului.
+**Attenzione: **Il caso classico riguarda codici contenenti zeri, apparentemente, non significativi es. “001”. Se il campo è formattato generico o numero gli zeri sarebbero scartati, se formatta come stringa vengono invece mantenuti.
 
-![](/img/it-it/applications/bizlink/import-contacts-registry/image16.png)
+**Mapping table/colonna**:
 
-Aceasta operație este utilă deoarece datorită descrierii (MBDC_Descr) se poate înțelege ce reprezintă câmpul și verifica dacă ceea ce veți introduce este sau nu în baza de date. Această procedură este universală, valabilă pentru fiecare câmp și aceeași reprezentare este vizibilă și în Fluentis:
+-        Se nell' “Inserimento campi” vi è presente la voce mapping table/colonna, significa che il valore inserito all'interno del campo per l'importazione, può essere già presente nel database. È stato inserito anche nei campi i quali verranno inseriti da zero per poter vedere magari un esempio, se presente, nel database. Per visualizzare i relativi dati presenti nella base di dati basterà seguire i seguenti passaggi, in cui verrà utilizzato come esempio la classe articoli e il relativo mapping: 
 
-În Fluentis selectați **Home > Articole > Articole furnizori**. În acest form, alegeți clasa articolelor cu descrierea aferentă.
+select MBDC_Classe from MB_Classi (**\<-** questo è il mapping). Eseguiamo la query in “Microsoft SQL server management studio” e otteniamo il seguente risultato:
 
-Aceasta este pentru clasa articolelor. Pentru alte câmpuri, se poate urma aceeași procedură, dar în locații diferite. Trebuie să selectați una din valorile prezente, altfel importul nu va reuși și va afișa un mesaj de eroare. Acest lucru este valabil pentru fiecare câmp pentru care există un mapping table/coloană.
+![](/img/it-it/applications/bizlink/import-contacts-registry/image15.png) 
 
-Dacă doriți să adăugați un câmp cu mapping care nu este în baza de date, acesta va trebui să fie inserat cu un query sau din Fluentis. În acest caz, interogarea de inserție nu este recomandată deoarece este mai complicată decât vizualizarea descrisă anterior. Procedura recomandată este inserarea din Fluentis. Tot pentru clasa articole, în *Articole furnizori*, faceți clic dreapta în filtrul de căutare al clasei articole și selectați **Deschide form**.
+Visto così non comunica nulla, per capirne il significato sostituire dopo la clausola di select, il simbolo “*” al campo per comporre la nuova query. In questo caso avremmo quindi select * from MB_Class, che serve per selezionare l'intero contenuto della tabella, eseguiamo ora.
 
-În fereastra care se va deschide, faceți clic pe butonul de căutare pentru a vizualiza clasele de articole existente.
+ ![](/img/it-it/applications/bizlink/import-contacts-registry/image16.png)
 
-Sub ultima linie inserată se află o linie goală. Aceasta este folosită pentru introducerea de noi valori.
+Questo è utile in quanto, come mostrato dalla figura, tramite la descrizione (MBDC_Descr) è possibile capire il campo cosa rappresenta e verificare se quello che si inserirà è presente o meno nella base di dati.
 
-![](/img/it-it/applications/bizlink/import-contacts-registry/image21.png)
+Questa procedura appena descritta è universale, ossia vale per ogni campo.
 
-Introduceți valorile noi și apăsați *Enter*.
+La stessa rappresentazione è possibile vederla in Fluentis:
 
-Această procedură este similară pentru celelalte câmpuri, singurul lucru care se schimbă fiind locația filtrelor de căutare unde trebuie să faceți clic stânga pentru a deschide form-ul.
+Dalla home di Fluentis selezionare **Articoli > Articoli fornitori** (vedi fig. sotto).
 
-**Erori**:
+ ![](/img/it-it/applications/bizlink/import-contacts-registry/image17.png)
 
-În cazul importului nereușit, aplicația va genera un mesaj de eroare.
+Poi nella maschera di ricerca che appare cliccare con il pulsante sinistro del mouse sul triangolino affianco ad articoli, il quale apre una tendina dove è possibile visualizzare la classe degli articoli con relativa descrizione come in figura.
 
-Dacă eroarea s-a produs în secțiunea *Data*, se poate identifica rândul care conține eroarea, deoarece va fi scris, de exemplu: "System.ArgumentException: Error importing row 4". În acest caz (vedeți figura de mai jos), eroarea va fi pe rândul 4, care însă nu este rândul care conține efectiv eroarea. Pentru a identifica exact rândul cu eroarea, utilizați numerele din coloana din stânga și adăugați 1. Deci:
+![](/img/it-it/applications/bizlink/import-contacts-registry/image18.png) 
 
-Rând real care conține eroarea = Error importing rownum + 1
+Questo per la classe articoli. Per gli altri campi si potrà eseguire la stessa procedura solamente in punti diversi.
+
+Noi dovremmo quindi inserire uno dei valori presenti altrimenti l'importazione non andrà a buon fine e ci comunicherà un errore. Questo per ogni campo di cui è presente il mapping table/colonna. 
+
+Se vogliamo invece aggiungere un campo con mapping non presente nel database andrà inserito o tramite query o da Fluentis, in questo caso la query di inserimento è sconsigliata in quanto più complicata da comporre rispetto alla visualizzazione vista in precedenza. La procedura consigliata è quindi l'inserimento da Fluentis. Sempre nel caso della classe articoli, da articoli fornitore (figura sopra) premere tasto destro all'interno del filtro di ricerca della classe articolo e selezionare “apri form”.
+
+ ![](/img/it-it/applications/bizlink/import-contacts-registry/image19.png)
+
+Nella form che si aprirà premere il pulsante ricerca per visualizzare le classi articolo presenti.
+
+ ![](/img/neutral/common/search.png)
+
+Sotto l'ultima riga presente c'è una riga vuota. È quella usata per l'inserimento di nuovi valori.
+
+![](/img/it-it/applications/bizlink/import-contacts-registry/image21.png) 
+
+Lì vanno scritti i nuovi valori da inserire e una volta fatto, basterà premere invio. 
+
+ Questa procedura è analoga per gli altri campi, l'unica cosa che cambia è il dove si trovano i filtri di ricerca nei quali premere il tasto sinistro per aprire la form.
+
+**Errori:** 
+
+-        In caso di importazione fallita, come detto in precedenza, apparirà a video una schermata di errore.
+
+ Se l'errore è stato commesso nella parte Data è possibile risalire alla riga che contiene l'errore in quanto ci sarà per esempio scritto “System.ArgumentException: Error importing row 4”. In questo caso (vedi figura sotto), l'errore si troverà nella riga 4, la quale però non è l'effettiva riga contente l'errore. Per capire esattamente quale riga contenga l'errore, utilizzando i numeri nella colonna di sinistra, gli va sommato 1. Quindi: 
+
+ Riga reale contente errore = Error importing rownum + 1
 
 ![](/img/it-it/applications/bizlink/import-contacts-registry/image22.png)
 
-Pentru a interpreta eroarea din mesaj, urmați pașii de mai jos:  
-- pe același rând care conține numărul rândului menționat anterior, este scris **obiectul** la care se referă, apoi **eroarea** propriu-zisă și în final **proprietatea** în care a fost detectată eroarea.  
-Tot în exemplul de mai sus *Failed to create, update or delete the object of type Fluentis.FluentisErp.Core.Scm.PurchasePriceLists.FSPurchasePriceListItem, Fluentis.FluentisErp.Core.Scm.PurchasePriceLists* not-null property references a null or transient value Fluentis.FluentisErp.Core.Scm.PurchasePriceLists.ReadWrite.FSWPurchasePriceListItem.MeasurementUnit*, așa cum se poate observa în imaginea de mai sus, unitatea de măsură aferentă prețului de achiziție din ofertă a generat eroarea deoarece aceasta este nulă. Aplicația avizează că inserarea acesteia este obligatorie.
+   
 
-Dacă eroarea s-a produs în secțiunea *Parametri*, mesajul va fi similar, metoda de rezolvare rămânând aceeași. Deci, în baza proprietății, verificați inserarea corectă a acesteia.
+Per interpretare l'errore, nel messaggio dello stesso, seguire i seguenti passaggi: nella stessa riga contenente il numero di riga visto in precedenza, c'è scritto **l'oggetto** a cui è riferito, poi **l'errore** vero e proprio e infine la **proprietà** relativa ad esso in cui è stato riscontrato l'errore. Sempre nell'esempio sopra riportato “Failed to create, update or delete the object of type Fluentis.FluentisErp.Core.Scm.PurchasePriceLists.FSPurchasePriceListItem, Fluentis.FluentisErp.Core.Scm.**PurchasePriceLists**not-null property references a null or transient value Fluentis.FluentisErp.Core.Scm.PurchasePriceLists.ReadWrite.FSWPurchasePriceListItem.MeasurementUnit”. In questo caso come si può notare dall'immagine sopra, l'unità di misura relativa al prezzo di acquisto listino ha generato l'errore in quanto essa è nulla. Infatti il suo inserimento è obbligatorio. 
 
-:::important Important  
-Dacă este găsit un rând complet gol, nu va fi raportată nicio eroare, dar importul se va opri. De exemplu, dacă primul rând (rândul nr. 4) este gol dintr-un motiv oarecare și sub acesta (începând cu rândul nr. 5) se află rânduri populate, nu se va importa nimic.
-:::
+ Se l'errore è stato commesso nella parte dei parametri il messaggio sarà analogo, il metodo di risoluzione rimane sempre il precedente quindi, in base alla proprietà verificare il corretto inserimento della stessa.
 
-:::important Important  
-Dacă este introdus un registru de 10 rânduri, de exemplu, și în rândul nr. 7 apare o eroare, primele 6 rânduri, neavând probleme, sunt inserate. Dacă nu este schimbată nicio valoare în primele 6 rânduri (și evident, dacă eroarea este corectată), reluând importul nu vor apărea nici erori de duplicare, deoarece se verifică mai întâi dacă este deja prezent contactul. Dacă este schimbată chiar și o singură valoare, acel contact va fi inserat deoarece va fi văzut ca un nou contact.
-:::
+**Attenzione**: Se viene trovata una riga completamente vuota, non verrà comunicato nessuno errore ma l'importazione terminerà lì. Per esempio se la prima riga (riga n.4) è vuota per qualche motivo e sotto (da riga n.5 compresa) si trovano le righe popolate, non sarà importato nulla.
 
-În final, un alt mesaj de eroare care poate apărea este următorul:
+**Attenzione**: Se viene inserito un'anagrafica di 10 righe per esempio e alla riga n. 7 si verifica un errore, le prime 6 righe non avendo causato problemi sono state inserite! Se non viene cambiato nessun valore nelle prime 6 righe (e se ovviamente l'errore è stato corretto), riavviando l'importazione non ci saranno problemi, neanche di duplicazione in quanto viene prima cercato se il contatto è già presente. Se viene cambiato anche solo un valore, tale contatto verrà inserito in quanto visto come un nuovo contatto.
+
+Infine un altro messaggio di errore che potrà capitare è il seguente.
 
  ![](/img/it-it/applications/bizlink/import-contacts-registry/image23.png)
 
-Așa cum se poate observa în imaginea de mai sus, acest tip de mesaje sunt mai ușor de interpretat deoarece se referă exact la celula cu eroarea. În acest caz, în celula F:4 nu este prezentă nicio valoare.
+Come si può notare dall'immagine sopra riportata, questa tipologia di messaggi sono più facili da interpretare in quanto viene messo il riferimento esatto della cella con relativo errore. In questo caso nella cella F:4 non è presente nessun valore. 
