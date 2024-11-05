@@ -1,11 +1,16 @@
 ---
-title: Eveniment
-sidebar_label: Eveniment
+title: Evento
+sidebar_label: Evento
 sidebar_position: 0
 ---
 
-Un *Eveniment* permite utilizatorului să execute un *Task* pe baza unei programări.
+Un <mark>Evento</mark> è una funzionalità di **Supervisor** che consente all'utente di eseguire in maniera schedulata un **Task** in base a una pianificazione temporale.  
+Si potrà potrà eseguire un task in maniera automatizzata su base oraria, giornaliera, settimanale o mensile.  
 
-Evenimentele sunt organizate în grupuri (de exemplu, *Utilități*, *Exemple*, *Demo*) în funcție de contextul în care sunt utilizate. Pentru a crea un nou grup de *Evenimente*, consultați articolul [Creare grupuri](../../group-creation).
+La form **Eventi** si apre dal menu complementare **Strumenti** > **Fluentis Supervisor** > **Eventi**.
 
-Pentru detalii despre utilizarea standard a acestui form clic [aici](/docs/guide/common).
+Alcune delle funzionalità all'interno della form si riferiscono ad un utilizzo standard. Per qualsiasi dettaglio sull'utilizzo di questa form non esplicitato qui, riferirsi a questo [articolo](/docs/guide/common).
+
+Gli *Eventi* sono organizzati in gruppi (come ad esempio *Utilità*, *Esempi*, *Demo*) in base al contesto di utilizzo. Per creare un nuovo gruppo di *Eventi* riferirsi all'articolo [creazioni gruppi](../../group-creation).
+
+![alt text](/img/it-it/applications/supervisor/supervisor11.png)

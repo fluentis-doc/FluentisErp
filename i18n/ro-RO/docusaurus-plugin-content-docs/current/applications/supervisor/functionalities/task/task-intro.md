@@ -1,13 +1,17 @@
 ---
-title: Tasks
-sidebar_label: Tasks
+title: Task
+sidebar_label: Task
 sidebar_position: 0
 ---
 
-Form-ul se află în **Instrumente** > **Fluentis Supervisor** > **Tasks**.
+I task definiscono uno scenario di azione che potrà essere creato da zero o contenere delle attività. Il task potrà poi essere salvato, eseguito manualmente o schedulato.
 
-Pentru a utiliza *Activitățile* este necesar un container, numit **Task**. Când se creează un *Task*, scriptul asociat acestuia conține un cod predefinit, necesar funcționării acestuia; utilizatorul are posibilitatea de a adăuga cod la scriptul asociat, folosind *Script Editor* sau platforma fără cod *Blockly*.
+Per utilizzare le *Attività* è necessario un contenitore, il **Task**. Quando viene creato un *Task*, lo script collegato ad esso ha del codice predefinito, necessario affinché funzioni; l'utente ha la possibilità di aggiungere codice allo script collegato, utilizzando lo *Script Editor* o la piattaforma codeless *Blockly*.
 
-Task-urile sunt organizate în grupuri (de exemplu, *Utilități*, *Exemple*, *Demo*) în funcție de contextul în care sunt utilizate. Pentru a crea un nou grup de task-uri consultați articolul [Creare grupuri](../../group-creation).
+Il form del **Task** si apre tramite il percorso **Strumenti** > **Fluentis Supervisor** > **Tasks**.
 
-Pentru detalii despre utilizarea standard a acestui form clic [aici](/docs/guide/common).
+Alcune delle funzionalità all'interno della form si riferiscono ad un utilizzo standard. Per qualsiasi dettaglio sull'utilizzo di questa form non esplicitato qui, riferirsi a questo [articolo](/docs/guide/common).
+
+I *Tasks* sono organizzati in gruppi (come ad esempio *Utilità*, *Esempi*, *Demo*) in base al contesto di utilizzo. Per creare un nuovo gruppo di *Tasks* riferirsi all'articolo [creazioni gruppi](../../group-creation).
+
+![alt text](/img/it-it/applications/supervisor/supervisor8.png) 

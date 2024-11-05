@@ -1,40 +1,41 @@
 ---
-title: Activitate
+title: Tabs dell'Attività
 #hide_title: true
-sidebar_label: Activitate
+sidebar_label: Tabs dell'Attività
 sidebar_position: 1
 ---
 
-:::info Nota
-În partea superioară a ferestrei sunt câțiva parametri standard importanți deoarece determină modul în care se va compune activitatea.
+:::danger Nota
+Una volta aperta la form di dettaglio dell'attività, nella parte superiore sono presenti alcuni parametri standard come *Codice*, *Nome*, *Descrizione*, *Data Crazione*, *Data Ultima Modifica*, *Gruppo* e *Tipo Attività*. Per questi ultimi due, bisogna prestare molta attenzione, perchè determinano come si andrà a comporre l'attività.
 :::
 
-### Parametri asociați
+### Tabs attività
 
-Toate *Tipurile de activitate* au *Parametri asociați* (atât de input cât și de output). Aceștia, atunci când sunt utilizați într-un *Task*, sunt vizibili (lucru evident când sunt utilizați în Widget-ul *Blockly*). Acești parametri sunt esențiali în multe cazuri, deoarece reprezintă singura conexiune dintre *Activitate* și *Task*.
+La form delle attività è composta da una form di ricerca dedicata composta da:
+* un **ribbon menu** per la gestione delle principali operazioni standard.
+* un **filtro standard**.
+* una **griglia dei risultati**, che mostra la lista delle attività divise in gruppi e sottogruppi.
 
-Pentru a crea un parametru este necesar să specificați o valoare implicită (cum ar fi *Nume*, *Descriere*) și câteva valori specifice cum ar fi *ParametruInput*, *Obligatoriu*, *Tip* și *Parametru Global*.
+![alt text](/img/it-it/applications/supervisor/supervisor6.png)
 
-### Mapare înregistrări
+### Parametri Collegabili
 
-Pentru tipul de activitate **Template Mail**, există posibilitatea de a mapa înregistrările (numele coloanelor) la antet; rezultatul mapării va fi vizualizat după ce un set de înregistrări a fost utilizat într-un document (din tab-ul *Template Document*).
+Tutte le tipologie di Attività hanno dei *Parametri Collegabili* (sia di input che di output), questi parametri, diversamente da quelli globali, hanno una visibilità locale all'intenro dell'attività, task o evento.
+Questi permettono di definire tutti i parametri che verrano collegati all'attività in input e in output.  
+Questa configurazione verrà poi associata al blocchetto fruibile tramite Task permettendo di gestire i parametri.
 
-### Configurare activitate
+Per creare un parametro è necessario popolare:
+* **Codice** > riporta il codice del parametro.
+* **Nome** / **Descrizione** > per indicare nome e descrizione localizzate in base al dizionario.
+* **Input parameter** > permette di definire se il parametro deve essere letto in input o output.
+* **Required** > indica i parametri obbligatori, che quindi verrano esposti automaticamente sul blocchetto.
+* **Type** > indica il tipo di dato da associare al parametro.
+* **Global Parameter** > permette di utilizzare un parametro globale per valorizzare il parametro specifico.
 
-Acest tab se schimbă în baza **Tipului activității** și singura valoare comună tuturor acestor tipuri este **Parametru rezultat**.
+### Configurazione Attività
 
-**Tip activitate**
+Il tab **Configurazione Attività** permette di configurare l'attività specificandone i parametri richiesti per il suo funzionamento.
 
-> **Generate Script**: conține două tab-uri, *Parametri* și *Script*. Valorile de input și output care au fost utilizate în tab-ul *Script*, trebuie să fie declarate în tab-ul *Parametri*.
+In base alla tipologia d'attività, ovvero su che tipologia è basata (Script, Datasource, Run Report, SQL Query, Stored Procedure, Mail Template), saranno disponibili diverse opzioni di parametrizzazione.
 
-> **Datasource**: permite configurarea parametrilor *Datasource* și selecția *Datasource*.
-
-> **Run Report** permite selectarea unui *Business Object*, a *Tipului de raport* și a *Formatului exportului*.
-
-> **Sql Query**: similar activității *Generate Script*, cu excepția tab-ului *Script* care nu va mai conține un script în C#, ci în SQL. Pentru a mapa parametrii activității în cadrul query-ului, este necesar să îi includeți între paranteze pătrate.
-
-> **Stored procedure**: permite configurarea parametrilor de input pentru stored procedures.
-
-> **Mail Template**: conține două tab-uri, *Setări Generare Document* și *Template Document*. În primul tab, în partea superioară, este posibil să setați *Master Record* (și anume setul de înregistrări care va popula template-ul documentului), *Document Generat* (variabila care conține documentul, care trebuie mapată din tab-ul *Parametri asociați* ca parametru de output pentru a obține un rezultat atunci când va fi utilizată în cadrul unui *Task*), *Format Document* (adică .pdf, .html, .docx, .doc), *Descriere* și *Send as HTML body*.
-În partea inferioară a tab-ului se află variabilele documentului (variabilele sunt prezente în al doilea tab, sub secțiunea *Variabile document* în panoul din partea dreaptă a interfeței).
-În al doilea tab există un Widget (ssimilar cu un document în *Microsoft Word*) pentru a vizualiza/modifica template-ul documentului, folosind instrumentele integrate și variabilele documentului care pot fi găsite în panoul din partea dreaptă.
+Nel pagina [Tipi di attività](./activity-types.md) si analizzano tutte le tipologie.

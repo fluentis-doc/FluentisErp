@@ -4,37 +4,38 @@ sidebar_label: Task & Blockly
 sidebar_position: 2
 ---
 
-În acest form implicit este afișat *Script Editor* și nu *Blockly*.  
-Dacă se face o modificare a codului și se salvează/compilează folosind *Blockly*, la următoarea deschidere a Task-ului, platforma de codare implicită va fi *Blockly*.
+:::info
+Quando si apre la form di dettaglio, di default viene visualizzato l'editor Blockly e non l'editor testuale.  
+E' possibile passare da modalità Blockly ad editor testuale (o viceversa) attraverso il drop-down **Tipo Script** che consente di selezionare la modalità desiderata.
+:::
 
-*Supervisor* folosește blocuri personalizate de Blockly pentru a crea scripturi C#. În plus față de categoriile standard Blockly (logice, *Supervisor* sfrutta i blocchi personalizzati di Blockly per creare script C#. Oltre alle categorie standard di Blockly (logiche, loops, operații matematice, texte, date, liste, culori, variabile), categoriile personalizate care pot fi găsite în **Toolbox** sunt:
+**Supervisor** sfrutta i blocchi personalizzati della libreria Blockly di Google per creare script in C#. Oltre alle categorie standard di Blockly (operatori logici, istruzioni di ciclo, operazioni matematiche, testi, date, liste, colori, variabili), le categorie personalizzate che possono essere trovate nella **Toolbox** sono:
 
-- **Variabile de context**, conține blocuri pentru selectarea variabilelor din contextul curent și pentru conversia unui obiect generic într-un șir de caractere/număr/...;
+- **Variabili contestuali a Supervisor**, contiene blocchi per selezionare variabili dal contesto corrente e per convertire un oggetto generico in una stringa/numero/...;
 
-- **Dicționar**, conține toate blocurile necesare pentru a lucra cu structura de date de tip <span style={{ fontFamily: 'Consolas' }}>Dictionar</span>;
+- **Dizionario**, contiene tutti i blocchi necessari per lavorare con la struttura dati di tipo <span style={{ fontFamily: 'Consolas' }}>Dizionario</span>;
 
-- **Obiecte Fluentis**, împărțite în trei subcategorii:
-     - **Commons**: conține blocuri pentru efectuarea operațiilor comune pe *Obiectele Fluentis* (de exemplu, selectarea unei proprietăți a unui obiect, crearea unei expresii logice pentru a filtra un obiect, crearea unui recordset dintr-o expresie LINQ, etc.);
-     - **Read Only**: conține blocuri specifice pentru efectuarea operațiilor doar de citire pe *Obiectele Fluentis* (de exemplu, citirea valorilor, filtrarea elementelor dintr-o colecție, etc.);
-     - **Read Write**: conține blocuri specifice pentru efectuarea operațiilor de citire-scriere pe *Obiectele Fluentis* (de exemplu, crearea și instanțierea obiectelor, setarea proprietăților sau referințelor, etc.);
+- **Oggetti Fluentis**, suddivisi in tre sottocategorie:
+     - **Commons**, contiene blocchi per eseguire operazioni comuni sugli *Oggetti Fluentis*.
+     - **Read Only**, contiene blocchi specifici per eseguire operazioni di sola lettura sugli *Oggetti Fluentis*.
+     - **Read Write**, contiene blocchi specifici per eseguire operazioni di lettura-scrittura sugli *Oggetti Fluentis*.
+  
+- **Accesso al database**, contiene blocchi che possono eseguire operazioni direttamente con il database, come chiamare stored procedure o leggere valori da recordset.
 
-- **Acces la baza de date**: conține blocuri care pot efectua operațiuni direct cu baza de date, cum ar fi apelarea stored procedure sau citirea valorilor din seturile de date;
+- **Attività**, a sua volta suddivise in categorie che portano lo stesso nome dei gruppi (gli stessi gruppi consultabili dalla form principale delle attività). I gruppi standard sono:
+     - **Utilità**, che contiene tutte le [attività](../activity/activity-intro) previste a standard (l'utente non può aggiungere nuove attività o modificare quelle esistenti in questo gruppo);
+     - **Esempi**, contiene tutti gli esempi di attività che possono guidare l'utente nella creazione di un nuovo *Task* personalizzato (l'utente non può aggiungere nuove attività o modificare quelle esistenti in questo gruppo, è necessario creare un nuovo gruppo con le proprie attività customizzate)
 
-- **Activități**: sunt împărțite în categorii care au aceleași numele grupurilor (aceleași grupuri care pot fi consultate din form-ul principal al activităților). Grupurile standard sunt:
-     - **Utilități**, care conține toate [activitățile](../activity/activity-intro) standard (utilizatorul nu poate adăuga noi activități sau modifica pe cele existente în acest grup);
-     - **Exemple**, conține toate exemplele de activități care pot ghida utilizatorul la crearea unui nou *Task* personalizat (utilizatorul nu poate adăuga noi activități sau modifica pe cele existente în acest grup, este necesar să creeze un nou grup cu propriile activități personalizate).
+- **Globals**, contiene blocchi che possono recuperare **Parametri** globali o [liste di distribuzione](../distribution-list/distribution-list-intro)
 
-- **Globals**, conține blocuri care pot recupera [parametri globali] sau [liste de distribuție](../distribution-list/distribution-list-intro).
+- **Task Utility**, contiene script utili per tutte le *attività*;
 
-- **Task Utility**, conține scripturi standard/comune utile tuturor *activităților*.
+Per aggiungere codice ad un *Task* con *Blockly*, trascinare e rilasciare i blocchi dalla *Toolbox* nel **Workspace**.
 
-Pentru a adăuga cod unui *Task* cu *Blockly*, efectuați drag&drop blocurilor din *Toolbox* în **Workspace**. Există mai multe *Workspace*-uri selectabile în *Blockly*:
+- **#STD** gestisce il codice all'interno del metodo dello script <span style={{ fontFamily: 'Consolas' }}>ExecuteTask()</span>;
 
-- **#STD** gestionează codul în metoda scriptului <span style={{ fontFamily: 'Consolas' }}>ExecuteTask()</span>;
-- **TaskCompleted** gestionează codul în metoda scriptului <span style={{ fontFamily: 'Consolas' }}>TaskCompleted()</span>;
+Terminato l'inserimento del codice è necessario salvare il progetto e procedere alla sua compilazione mendiante l'apposito pulsante dedicato.
 
-Pentru a schimba *Workspace*-ul actual, selectați o altă valoare din meniul derulant al *Secțiunii*.
+Il codice dello script generato, apparirà tra le due righe commentate (rinominate <span style={{ color: 'forestGreen' , fontWeight: 'bold' }}>// START WIZARD CODE</span> and <span style={{ color: 'forestGreen' , fontWeight: 'bold' }}>// END WIZARD CODE</span>).
 
-După introducerea codului, efectuați clic pe butonul *Salvează/Compilează* și verificați ca scriptul să fie vizibil și în *Script Editor*, selectând *Script* din selectorul *Tip Script* (pentru a schimba platforma de coding).
-
-Codul scriptului generat va apărea între cele două linii comentate (redenumite <span style={{ color: 'forestGreen' , fontWeight: 'bold' }}>// START WIZARD CODE</span> and <span style={{ color: 'forestGreen' , fontWeight: 'bold' }}>// END WIZARD CODE</span>).
+![alt text](/img/it-it/applications/supervisor/supervisor10.png)

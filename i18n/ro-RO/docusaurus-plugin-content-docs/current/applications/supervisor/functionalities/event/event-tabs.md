@@ -1,36 +1,45 @@
 ---
-title: Evenimente
-sidebar_label: Evenimente
+title: Tabs dell'Evento
+sidebar_label: Tabs dell'Evento
 sidebar_position: 1
 ---
 
-Un *Eveniment* permite utilizatorului să execute un *Task* pe baza unei programări.
+:::info Info
+La form di dettaglio dell'*Evento* si compone:
+* Di un ribbon menu con cui è possibile salvare, create o eseguire un evento, gestire i profili e festire eventuali parametri.  
+* Informazioni di testata, in cui impostare codice, task da eseguire e gruppo di riferimento con informazioni obbligatorie.
+* Tre tab per la gestione dei parametri legati al task, il log di esecuzione e i parametri di schedulazione.
+:::
 
-Form-ul se află pe calea **Instrumente** > **Fluentis Supervisor** > **Evenimente**.
+### Tab Parametri
+Il tab Parametri permette di gestire i parametri di input dell'evento.
+Tramite la colonna Task Parameter si ha accesso alla lista di parametri del task selezionato, si procede associando un codice e un nome da Dizionario.
 
-### Parametri
+![alt text](/img/it-it/applications/supervisor/supervisor12.png)
 
-În acest tab, în funcție de *Task*-ul selectat în partea superioară, pot fi specificați parametrii acestuia care vor fi utilizați în momentul execuției *Evenimentului*.
+### Tab Logs
+Il tab LOG permette di visualizzare il log di esecuzione del task, sia per le esecuzione schedulate che per quelle
+manuali.
 
-### Logs
+![alt text](/img/it-it/applications/supervisor/supervisor13.png)
 
-Afișează toate informațiile referitoare la execuția evenimentului și eventuale mesaje de eroare care s-au produs în timpul execuției acestuia.
 
-### Planificări
+### Tab Schedulazioni
+Il tab SCHEDULES permette di schedulare tramite il pulsante dedicato l'esecuzione dell'evento.
+il popup permette di definire il tipo di occorrenza con la relativa parametrizzazione di dettaglio distinguendo tra:
 
-În acest tab este posibilă adăugarea, modificarea sau ștergerea unei Planificări cu ajutorul butoanelor din ribbon bar.
+**Una volta**
+> Permette di indicare data/ora esatti per l'esecuzione.
 
-Cu butonul **Adaugă planificare** sau **Modifică planificare**, aplicația va deschide o fereastră de configurare a planificării, care conține parametrii necesari.  
-Există patru tipuri de programare:
+**Giornaliero**
+> Permette di indicare l'ora di avvio, ogni quanti giorni ripetere nel corso della giornata e in quale intervallo orario.
 
-**O dată**
-> Această opțiune este utilizată pentru operațiuni care nu durează/repetitive.
+**Settimanale**
+> Permette una pianificazione settimanale, in cui oltre alle impostazioni su esecuzione giornaliera possiamo definire per quante settimane ripetere e indicare i giorni esatti della settimana.
 
-**Zilnic**
-> Această opțiune are parametrii *Repetă la fiecare (n) zi/zi*, *Repetă la fiecare (n) (ore/minute/secunde)* și *De la/La ora*.
+**Mensile**
+> Permette una pianificazione mensile indicando i mesi in cui ripetere, i giorni del mese etc.  
 
-**Săptămânal**
-> Această opțiune are parametrul *Repetă la fiecare (n) săptămână/săptămâni* și toate zilele săptămânii disponibile ca flag-uri (planificarea va executa task-ul în zilele activate).
+Infine, sarà possibile indicare un’eventuale data di fine esecuzione con il flag End date e decidere se abilitare o meno il task in automatico.
 
-**Lunar**
-> Această opțiune are patru selecții din care se poate alege: *Luni*, *Zile(n)*, *Zilele săptămânii* și *Seria zilelor săptămânii*.
+![alt text](/img/it-it/applications/supervisor/supervisor14.png)

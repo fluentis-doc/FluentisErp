@@ -1,11 +1,14 @@
 ---
-title: Activități
-sidebar_label: Activități
+title: Attività
+sidebar_label: Attività
 sidebar_position: 0
 ---
 
-Activitățile conțin cu o serie de parametri de input și de output, care sunt analizați și împărțiți în tipuri.
+Le **Attività** sono delle azioni atomiche che possono essere configurate per poter essere eseguite e concatenate in altri contesti.  
+L'utente crea un'attività quanto un'azione necessita di essere applicata in modo ripetitivo in diversi scenari d'azione.  
+Tramite le attività è possibile definire degli script che svolgono una determinata funzione in modo che poi possano essere riutilizzati all'interno di un Task.  
 
-Form-ul se află pe calea **Instrumente > Fluentis Supervisor > Activități**.
+Infine, le Attività sono organizzate in gruppi (come ad esempio *Utilità*, *Esempi*, *Demo*) in base al contesto di utilizzo.  
+Per creare un nuovo gruppo di Attività vedere l'articolo [creazioni gruppi](../../group-creation).
 
-**Activitățile** sunt organizate în grupuri (cum ar fi *Utilități*, *Exemple*, *Demo*) în funcție de contextul în care sunt utilizate. Pentru a crea un nou grup de activități, consultați [Creare grupuri](../../group-creation).
+La form **Attività** si apre dal menu complementare **Strumenti** > **Fluentis Supervisor** > **Attività**.
