@@ -1,22 +1,18 @@
 ---
-title: Import Plan de onturi
+title: Importazione Piano dei conti
 sidebar_position: 2
 ---
 
-Fișierul Excel (template) pentru importarea planului de conturi în modulul *Administrativ* permite popularea detaliilor a planului de conturi.
+Il foglio excel (template) per l'importazione del piano dei conti nel modulo Amministrazione permette di popolare la parte di dettaglio del piano dei conti.
 
-:::note Notă
-Structura (grupurile) trebuie să fie deja prezentă în tabelul superioar din formul planului de conturi.
-:::
+**Deve pertanto già essere presente la parte della struttura (gruppi) nella griglia superiore della form dle piano dei conti.**
 
-**Grup Nivel (1, 2, 3, 4, 5)**: în aceste coloane se inserează codurile diferitelor niveluri și subniveluri (până la al cincilea nivel) unde se vor plasa conturile de importat.
+**Colonne Gruppo Livello (1, 2, 3, 4, 5):** In queste colonne indicare i codici dei vari livelli e sottolivelli (possibili fino al quinto) dove collocare i conti da importare. 
 
-:::important Important
-Vor fi căutate grupuri deja existente, importul nu creează grupuri noi.
-:::
+ATTENZIONE vengono ricercati gruppi già esistenti, l'import non crea nuovi gruppi.
 
-**Cont sintetic/analitic/Descriere**: reprezintă codurile conturilor și descrierea de importat (în acest caz, se va crea contul sintetic/analitic cu codul introdus).
+**Conto / Sottoconto / Descrizione:** inserire il codice del conto e sottoconto e la descrizione da importare (in questo caso sarà creato il conto / sottoconto con il codice inserito)
 
-**Descriere 2**: este un câmp opțional. Permite inserarea unei descrieri secundare noului cont.
+**Descrizione 2:** è possibile compilare anche la seconda descrizione (Opzionale) per il nuovo conto
 
-**Tip cont**: permite alegerea unui tip de conturi dintre cele deja existente în Fluentis pentru a-l atribui noului cont creat.
+**Tipo conto:** compilare con il codice di uno dei tipo conti già presenti in Fluentis per assegnarlo al nuovo conto che viene creato

@@ -3,15 +3,15 @@ title: BizLink
 sidebar_position: 1
 ---
 
-Modulul se află în secțiunea laterală a aplicației **Fluentis**, pe calea [**Instrumente > BizLink**].
 
-**BizLink** permite operatorului să configureze și să monitorizeze fluxurile de import și export date către și de la alte sisteme externe aplicației Fluentis ERP.
+**BizLink** consente all'operatore di configurare e monitorare flussi di importazione ed esportazione dati da e verso altri sistemi esterni al gestionale.
 
+E' infatti grazie a questo applicativo di tipo **ESB** (Enterprise Service Bus) che **Fluentis** ha potuto portare a standard tutte le interazioni con le altre procedure esterne, sia per l'importazione che per l'esportazione dei dati, ma soprattutto anche per il consumo di processi esterni da altre applicazioni. 
 
-Datorită acestei aplicații de tip **ESB** (Enterprise Service Bus), Fluentis a reușit să aducă în standard toate interacțiunile cu celelalte proceduri externe, atât pentru importul, cât și pentru exportul de date, dar mai ales pentru consumul de procese externe din alte aplicații.
+Tramite questa procedura **Bizlink** è molto semplice configurare la lettura di un qualsiasi file CSV, TXT, XML e vari altri formati, al fine di interpretare, leggere e/o anche scrivere i file stessi. Tutto questo viene tracciato in opportuni **LOG di Entrata e di Uscita** dell'informazione in modo da dare all'operatore l'evidenza se un processo di importazione o esportazione è andato a buon fine o meno.
 
+Sempre in **BizLink** troviamo l'area delle **Importazioni OnDemand**, molto utile a tutte le aziende che devono importare dati soprattutto nella fase iniziale di configurazione del prodotto. E' infatti tramite l'area di importazioni On Demand, più specificatamente da *foglio elettronico*, che attivando tale procedura è possibile facilmente importare ed aggiornare gli archivi di base quali Articoli, Distinte, Cicli, Clienti, Fornitori, ecc. addirittura anche documenti quali ordini, fatture, listini ecc.
 
-Prin această procedură **BizLink** este foarte simplă configurarea citirii oricăror fișiere CSV, TXT, XML și în diferite alte formate, pentru a le interpreta, citi și/sau scrie. Toate acestea sunt urmărite în LOG-uri corespunzătore de intrare și ieșire a informației pentru a oferi operatorului feedback-uri despre rezultatul unui proces de import sau export.
+Il modulo è accessibile dal pannello laterale di **Fluentis** tramite il seguente percorso [**Strumenti**>**BizLink**].
 
-
-Tot în **BizLink** găsim secțiunea **OnDemand Imports**, foarte utilă tuturor companiilor care trebuie să importe date mai ales în faza inițială de configurare a produsului. Cu ajutorul secțiunii de import On Demand, mai precis din excel, se poate activa această procedură pentru a importa și actualiza cu ușurință arhivele de bază (cum ar fi articole, liste, cicluri, clienți, furnizori etc), dar și documente precum comenzi, facturi, liste de prețuri etc.
+Più informazioni sul funzionamento del modulo trovate nei prossimi articoli.
