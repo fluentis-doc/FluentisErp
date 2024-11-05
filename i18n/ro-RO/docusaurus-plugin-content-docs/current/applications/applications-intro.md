@@ -3,6 +3,6 @@ title: Strumenti
 sidebar_position: 1
 ---
 
-Il pannello degli **Strumenti** contiene la lista delle applicazioni che possono essere configurate e gestite all'interno di **Fluentis ERP**.
+Panoul **Instrumente** conține lista aplicațiilor care pot fi configurate și gestionate în cadrul Fluentis.
 
-Quindi abbiamo dei comandi di accesso rapido alla gestione delle risorse dell'applicativo, per fare un esempio alla gestione degli utenti e delle restrizioni, anche se in genere chi configura questi parametri opera solitamente tramite un portale web, il portale [**ARM**](https://docs.fluentis.com/Arm/), specifico per questi scopi.
+Avem comenzi de acces rapid pentru gestionarea resurselor aplicației, de exemplu pentru gestionarea utilizatorilor și a restricțiilor, chiar dacă, în general, cei care configurează acești parametri lucrează de obicei printr-un portal web, portalul [**ARM**](https://docs.fluentis.com/Arm/), specific pentru aceste scopuri.
