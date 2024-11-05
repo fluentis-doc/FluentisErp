@@ -1,27 +1,27 @@
 ---
-title: Import mijloace fixe
+title: Importazione Cespiti
 sidebar_position: 2
 ---
 
-Acest form permite completarea fișelor mijloacelor fixe pe baza categoriilor care trebuie să fie deja în baza de date.
 
-**Cod categorie**: trebuie să fie deja prezent în baza de date și va fi utilizat în fișa mijlocului fix importat.
+Il foglio excel (template) per l'importazione dei cespiti nel modulo Amministrazione permette di popolare le schede cespite sulla base delle categorie cespiti che devono essere già presenti nel db.
 
-**Precod**: opțional, de gestionat doar dacă este activă gestionarea precodului, indicând precodul de utilizat în numerotare.
+**Codice Categoria:** deve essere già presente nel db e sarà usato nella scheda cespite importata
 
-**Număr mijloc fix**: număr liber atribuit mijlocului fix.
+**Precodice:** facoltativo, da gestire solo se attiva la gestione del precodice indicando il precodice da utilizzare nella numerazione
 
-**Centru de cost**: opțional, util atribuirii unui centru de cost în fișa mijlocului fix în momentul amortizării.
+**Numero cespite:** utilizzare un numero libero
 
-**Dată achiziție**: obligatoriu, este data înregistrării costului istoric.
+**Centro di costo:** facoltativo, serve per assegnare un centro di costo nella scheda cespite per la successiva movimentazione in fase di ammortamento
 
-**Număr document/Dată factură achiziție**: opționale, utile pentru a indica referința la factura de achiziție.
+**Data Acquisto:** Obbligatorio, è la data di carico del costo storico
 
-**Furnizor**: opțional, reprezintă furnizorul din fișa mijlocului fix.
+**Numero Documento / Data Fatt Acquisto:** facoltativi, utili per indicare il riferimento alla fattura d'acquisto
 
-**Valoare patrimonială totală**: reprezintă costul istoric al mijlocului fix înregistrat cu data din coloana *Dată achiziție*.
+**Fornitore  Acquisto:** Facoltativo, serve per popolare il campo del fornitore del bene nella scheda cespite, compilare con il nomignolo dell'anagrafica fornitore
 
-**Fond de amortizare total**: reprezintă totalul fondului de amortizare acumulat în momentul încărcării/importului fișei mijlocului fix.  
-*Notă*: această valoare va fi încărcată cum este prevăzută încărcarea unui mijloc fix anterioar (completând cel puțin un rând de amortizare) și, prin urmare, este utilizată data prezentă în coloana următoare **An**.
+**Tot Valore Patrimoniale:** è il costo storico del cespite caricato con la data della colonna Data Acquisto
 
-**Procent de a mortizare de utilizat**: opțional, este util în cazul în care doriți să încărcați în fișa mijlocului fix un procent de amortizare specific acestuia. Dacă nu este completat, nu va fi inserat nimic în câmpul corespunzător iar amortizările ulterioare vor fi efectuate conform procentului categoriei de apartenență.
+**Tot Fondo Ammortamento:** è il totale fondo ammortamento accumulato al momento del caricamento / importazione della scheda cespite. Attenzione, questo valore sarà caricato come previsto per il carico di un cespite pregresso (compilando almeno una riga di ammortamento) e pertanto viene utilizzato il dato presente nella successiva colonna **Anno**.
+
+**Perc. Ammortamento da Utilizzare:** Facoltativo, serve nel caso si desideri caricare nella scheda cespite una percentuale di ammortamento particolare per il cespite in questione, se non valorizzato non sarà scritto nulla nel campo corrispondente e i successivi ammortamenti saranno eseguiti secondo la percentuale della categoria di appartenenza.

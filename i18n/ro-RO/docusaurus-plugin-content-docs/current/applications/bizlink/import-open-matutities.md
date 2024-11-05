@@ -1,50 +1,54 @@
 ---
-title: Import angajamente deschise
+title: Importazione Partite aperte
 sidebar_position: 2
 ---
 
-### Parametrii Bizlink
+Il foglio excel (template) per l'importazione delle partite aperte nel modulo Amministrazione necessita di essere compilato in entrambi i tab:
 
-**În plată**: indică dacă angajamentul este deja inclus într-o listă de transferuri bancare către furnizori. În general este 0 pentru angajamentele deschise, normale.
-**Id stare angajament**: setați 1 în mod implicit.
+**Bizlink parameters:**
 
-#### Date 
+Campi da compilare (non valorizzati automaticamente)
 
-CLIENT/FURNIZOR
+- Partita o pagamento: 0 = partita aperta; 1 = pagamento (chiude partite), fare riferimento alla documentazione del modulo amministrazione in caso di dubbio
+- In pagamento: flag che indica se la partita è già inserita in una distinta di bonifico fornitori. Settare generalmente a 0 per normali partite aperte.
+- Id stato partita: settare 1 di default
 
-**Cont sintetic/analitic**: reprezintă contul sintetic și analitic client/furnizor deja prezent în Fluentis.
 
-REFERINȚE DOCUMENT
+**Tab Dati:**
 
-**Tip document**: de ex. FA pentru factură de achiziție, FV pentru factură de vânzare. Utilizați codificarea deja prezentă în Fluentis.  
-**Număr/data factură**: când angajamentul este generic, câmpurile pot fi omise, indicând ca tip document *Gen*.
+CLIENTE / FORNITORE
+    
+- Conto / Sottoconto: inserire un codice di conto e sottoconto clienti o fornitore già presente in Fluentis (OBBLIGATORIO)
 
-DATE PLATĂ
+RIFERIMENTI DOCUMENTO
+- Tipo documento: es FA per fattura d'acquisto, FV per fattura di vendita. Usare codifica già presente su Fluentis.
+- Numero / data Fattura: facoltativi, in caso di partita generica si possono omettere indicando come tipo documento GEN
 
-**Tip plată**: este obligatorie selectarea unei plăți deja prezente în Fluentis.  
-**Dată scadență**: reprezintă data scadenței angajamentului.  
-**Cont sintetic/analitic bancă**: reprezintă banca asociată angajamentului.  
+DATI PAGAMENTO
+- Tipo pagamento: deve essere già presente su Fluentis (riferirsi al codice dei tipi pagamento presenti) - OBBLIGATORIO
+- Data maturazione: è la data scadenza partita - OBBLIGATORIO
+- Conto / sottoconto banca. si tratta della banca d'appoggio collegata alla partita (facoltativo)
 
-DATE ANGAJAMENTE
+DATI PARTITE
+- Residuo (Dare / Avere): dato del residuo aperto, se la partita non è parzialmente pagata corrisponde al controvalore. 
+DATO ESPRESSO NELLA VALUTA INSERITA NELLA APPOSITA COLONNA. ATTENZIONE, compilare la sezione Dare oppure Avere (a seconda del segno della partita) e inserire sempre il valore 0,00 nella colonna adiacente. (se valorizzo Dare es 100,00 metto in Avere 0,00) OBBLIGATORIO
+- Controvalore (Dare / Avere): è il valore della partita nella moneta di conto della società (es. Euro). ATTENZIONE, compilare la sezione Dare oppure Avere (a seconda del segno della partita) e inserire sempre il valore 0,00 nella colonna adiacente. (se valorizzo Dare es 100,00 metto in Avere 0,00). OBBLIGATORIO
+- Divisa: valorizzare con un codice già presente in Fluentis (es. Eur per Euro, Usd per dollaro) OBBLIGATORIO
+- Blocco: flag che indica se la partita è bloccata e non pagabile (1) oppure libera (0). OBBLIGATORIO
+- Note: campo note di partita facoltativo
 
-**Sold (debit/credit)**: valoarea soldului deschis. Dacă angajamentul nu este parțial plătit, corespunde contravalorii.  
-Completați secțiunea *Debit* sau *Credit* (în funcție de semnul angajamentului) și introduceți întotdeauna valoarea 0,00 în coloana adiacentă.  
- 
-**Contravaloare (debit/credit)**: este valoarea angajamentului în moneda societății (ex. Euro).  
-Completați secțiunea *Debit* sau *Credit* (în funcție de semnul angajamentului) și introduceți întotdeauna valoarea 0,00 în coloana adiacentă.   
+DATI REGISTRAZIONE
+Data e numero di riferimento della registrazione contabile collegata alla partita.
+Sezione facoltativa.
 
-**Moneda**: selectați un cod deja prezent în Fluentis (ex. EUR pentru Euro, USD pentru dolar).   
-**Blocat**: flag care indică dacă angajamentul este blocat și nu poate fi plătit (1) sau este liber (0).  
-**Note**: câmp opțional pentru notele angajamentului.
+ATTENZIONE: se valorizzata la registrazione deve essere già presente in Fluentis e verrà ricercata dall'importazione, se non trovata l'import restituirà errore.
 
-DATE ÎNREGISTRARE
+---
 
-Secțiune opțională, include **Data** și **Numărul** de referință al înregistrării contabile asociate angajamentului.
+Controllare che nelle divise (tabella divise) sia compilato dappertutto l’isocode (a volte manca proprio per l’euro)
 
-:::note Notă
-Dacă se completează, înregistrarea trebuie să fie deja în Fluentis și va fi căutată în timpul importului. Dacă nu va fi găsită, importul va returna o eroare.
-:::
 
-*Verificați ca în tabelul Devizelor să fie completat peste tot codul ISO*.  
+**ATTENZIONE**: controllare che il numeratore delle partite includa anche gli anni precedenti se nel foglio excel ci sono partite con scadenze degli anni precedenti, altrimenti darà errore. Questo perché, tipicamente, un db nuovo ha numeratore che parte dall’anno corrente.
 
-*Controlați dacă numărătorul angajamentelor include și anii anteriori în cazul în care în fișierul Excel există angajamente cu scadențe din anii anteriori, pentru ca aplicația să nu genereze erori.*
+
+

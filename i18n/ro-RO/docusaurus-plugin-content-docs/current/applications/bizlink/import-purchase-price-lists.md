@@ -1,786 +1,813 @@
 ---
-title: Import oferte furnizori
+title: Importazione Listini Fornitore
 sidebar_position: 3
 ---
 
-Procedura permite importarea ofertelor furnizorilor în **Fluentis** folosind un **fișier electronic**.
 
-Această import este posibil datorită utilizării **Parametrilor BizLink**, deoarece de fiecare dată când este procesată o linie, aceștia vor fi apelați.
+In questo documento verrà spiegato come **Importare i listini fornitori** all'interno di **Fluentis** tramite l'utilizzo di un **foglio elettronico**.
+
+Questa importazione è possibile, grazie all'utilizzo dei **BizLink Parameters** in quanto ogni qualvolta verrà processata una riga, essi saranno richiamati.
 
 
-### Import folosind fișierul electronic
+### Come aprire l'importazione tramite foglio elettronico
 
-Clic pe **Instrumente** (de obicei, se află în partea dreaptă a aplicației Fluentis), apoi pe **BizLink > Import On Demand > Documente de achiziție > Import oferte furnizori** ca în figura următoare:
+Cliccare su **Strumenti** (di solito è situata nel lato destro di Fluentis).
+
+Cliccare sulla sezione **BizLink**
+
+Cliccare su **Importazione On Demand  >  Documenti di acquisto  >  Importazione Listini Fornitori** come in figura sotto.
 
 ![](/img/it-it/applications/bizlink/import-purchase-price-lists/image03.png) 
 
-### Date
 
-În această secțiune vor fi inserate datele care vor deveni permanente prin salvarea lor în baza de date **Fluentis**.
 
-Aplicația afișează fișierul electronic pentru import:
+### Sezione Data
+
+In questa sezione andremo a inserire i dati che verranno poi resi permanenti tramite salvataggio nella base di dati di Fluentis.
+
+Ora a video viene visualizzato il foglio elettronico per l'importazione.
 
 ![](/img/it-it/applications/bizlink/import-purchase-price-lists/image04.png) 
 
-Se poate opta pentru una din variantele:
+Da questo punto si possono prendere varie strade:
 
- 1. Importul fișierului electronic deja completat, **File > Open**.
- 2. Adăugarea diferitelor coloane prin Copy&Paste din lista salvată în computer.
- 3. Salvarea acestui fișier (**File > Save**) în computer, adăugarea datelor necesare și reimportarea apoi în **Fluentis** (vedeți punctul 1). Acest lucru ar putea fi foarte util pentru a pasa template-ul fișierului electronic pentru import, de completat pentru viitoarele liste pe care ni le vor trimite furnizorii. 
- 4. Adăugarea manuală a câmpurilor.
+ 1. Importare il foglio elettronico già compilato, **File > Open**.
+ 2. Aggiungere le varie colonne facendo copia e incolla dal listino salvato nel nostro pc.
+ 3. Salvare questo file (**File  > Salva**) nel nostro pc, per poi andare ad aggiungerci i vari dati e reimportarlo successivamente in Fluentis (vedi punto 1). Questo potrebbe essere molto utile per passare il template, del foglio elettronico per l'importazione, da compilare per i futuri listini che ci invieranno i fornitori. 
+ 4. Aggiungere manualmente i campi.
 
-:::important Important
-Dacă aveți un fișier electronic salvat, acesta trebuie să respecte structura fișierului din figura de mai sus (aceeași ordine a coloanelor, tipul de date etc.)
-:::
+**ATTENZIONE**: se abbiamo un foglio elettronico salvato sul nostro pc, esso deve seguire lo schema del foglio in figura sopra. Ossia lo stesso ordine di colonne, tipo di dato ecc. Quest'ultimi sono spiegati nel dettaglio al paragrafo successivo.
 
 
-### Inserare câmpuri
 
-Când se introduce un câmp, trebuie să se insereze și alte date, cum ar fi: tipul, lungimea maximă, obligatoriu etc…
+### Inserimento campi
 
-Indicații generale:
+Quando viene inserito un campo vanno tenute in considerazione molte cose tra cui tipo, lunghezza massima, richiesto ecc…
 
--        Dacă este scris cu roșu, este un câmp obligatoriu;
+Indicazioni generali:
 
--        Dacă numele celulei este evidențiat cu verde, este o **secțiune**
+-        Se il campo è scritto in rosso è un campo obbligatorio
 
--        Dacă numele celulei este evidențiat cu galben, este un **câmp**
+-        Se il nome della cella è evidenziato in verde è una **sezione**
 
--        Câmp: indică dacă este sau nu necesară inserarea
+-        Se il nome della cella è evidenziato in giallo è un **campo**
 
--        Tip: indică tipul câmpului
+-        Campo: indica se è obbligatorio o meno l'inserimento
 
--        Formatare Excel: indică formatarea Excel recomandată pentru a evita inserarea greșită (consultați la sfârșitul paginii *Sfaturi și avertismente utile*)
+-        Tipo: indica il tipo del campo
 
--        Lungime: indică limita de caractere care se poate insera în câmp
+-        Formattazione Excel: indica la formattazione Excel consigliata per evitare inserimenti sbagliati, vedi ultima sezione Consigli e avvertenze utili
 
--        Descriere: scurtă descriere a câmpului
+-        Lunghezza: indica se il campo ha un limite di caratteri da rispettare
 
-*Exemplu*: exemplu real cu ce se poate scrie în acel câmp
+-        Descrizione: breve descrizione del campo
 
--        Mapping table/Coloană: dacă este prezent, indică maparea câmpului respectiv în baza de date (consultați la sfârșitul paginii *Sfaturi și avertismente utile*)
+*Esempio*: esempio reale di cosa poter scrivere in quel campo
+
+-        Mapping table/colonna: se presente indica del rispettivo campo la mappatura nel database, per approfondire vedi ultima sezione  Consigli e avvertenze utili.
+
+![](/img/it-it/applications/bizlink/import-purchase-price-lists/image05.png) 
 
 
-**Date generale**:
 
-Cod:
+**Dati articolo fornitore**:
 
--        Câmp: obligatoriu
+Codice:
 
--        Tip: string
+-        Campo: obbligatorio
 
--        Formatare Excel: text
+-        Tipo: stringa
 
--        Lungime maximă: 50 caractere
+-        Formattazione Excel: testo
 
--        Descriere: cod de referință articol
+-        Lunghezza massima: 50 caratteri
 
-*Exemplu*: 02030508
+-        Descrizione: codice di riferimento all'articolo usato dal fornitore
 
-Descriere:
+*Esempio*: 02030508
 
--        Câmp: obligatoriu
+Descrizione:
 
--        Tip: string
+-        Campo: obbligatorio
 
--        Formatare Excel: text
+-        Tipo: stringa
 
--        Lungime maximă: 200 caractere
+-        Formattazione Excel: testo
 
--        Descriere: descriere dată de furnizorul articolului
+-        Lunghezza massima: 200 caratteri
 
-*Exemplu*: minge de tenis sensibilă la rotație, poate corespunde codului articolului
+-        Descrizione: descrizione data dal fornitore all'articolo
+
+*Esempio*: pallina da tennis sensibile alla rotazione, può corrispondere al codice articolo
 
 ![](/img/it-it/applications/bizlink/import-purchase-price-lists/image06.png) 
 
 
-**Date articol**:
+**Dati articolo**:
 
-Clasă:
+Classe:
 
--        Câmp: neobligatoriu
+-        Campo: non obbligatorio
 
--        Tip: string
+-        Tipo: stringa
 
--        Formatare Excel: text
+-        Formattazione Excel: testo
 
--        Lungime maximă: /
+-        Lunghezza massima: /
 
--        Descriere: cod clasă articol
+-        Descrizione: codice riferito alla classe dell'articolo
 
-*Exemplu*: “1” pentru semifabricate, “IMB” pentru ambalaje
+*Esempio*: “1” corrisponde a semilavorati, “IMB” corrisponde a imballi
 
--        Mapping table/coloană: select MBDC_Classe from MB_Classi
+-        Mapping table/colonna: select MBDC_Classe from MB_Classi
 
-Cod intern:
+Codice interno:
 
--        Câmp: neobligatoriu
+-        Campo: non obbligatorio
 
--        Tip: string
+-        Tipo: stringa
 
--        Formatare Excel: text: 50 caractere
+-        Formattazione Excel: testo
 
--        Descriere: dacă nu este atribuit, va fi considerat cel al furnizorului. Acesta va identifica articolul. Deci, dacă unui articol i se modifică codul intern, atunci va fi adăugat un nou articol. În schimb, dacă unui articol i se lasă nemodificat codul articolului și, de exemplu, i se modifică descrierea, se va efectua o actualizare a articolului cu acel cod articol. (nu actualizați unitatea de măsură).
+-        Lunghezza massima: 50 caratteri
 
-*Exemplu*: 7710ct7tb
+-        Descrizione: se non viene assegnato viene preso quello del fornitore. Esso identificherà l'articolo, quindi se dato un articolo ne modifico il codice interno di conseguenza Sarà aggiunto il nuovo articolo. Altrimenti se dato un articolo lascio invariato il codice articolo e ne modifico per esempio la descrizione, verrà eseguito un update dell'articolo con quel codice articolo. (Non fare l'update dell'unità di misura)
 
-Descriere internă:
+*Esempio*: 7710ct7tb
 
--        Câmp: neobligatoriu
+Descrizione interna:
 
--        Tip: string
+-        Campo: non obbligatorio
 
--        Formatare Excel: text: 200 caractere
+-        Tipo: stringa
 
--        Descriere: dacă nu este atribuit, va fi considerat cel al furnizorului.
+-        Formattazione Excel: testo
 
-*Exemplu*: minge de tenis sensibilă la rotație
+-        Lunghezza massima: 200 caratteri
 
-Unitate de măsură:
+-        Descrizione: se non viene assegnato viene preso quello del fornitore
 
--        Câmp: obligatoriu
+*Esempio*: pallina da tennis sensibile alla rotazione
 
--        Tip: string
+Unità di misura:
 
--        Formatare Excel: text
+-        Campo: obbligatorio
 
--        Lungime maximă: 3 caractere
+-        Tipo: stringa
 
--        Descriere: reprezintă codul unității de măsură utilizate pentru articolul analizat
+-        Formattazione Excel: testo
 
-*Exemplu*: *cm* corespunde la centimetri, *UDI* corespunde la UdI
+-        Lunghezza massima: 3 caratteri
 
--        Mapping table/coloană: select MBUM_Codice from MB_UnitaMisura
+-        Descrizione: codice riferito alla misura utilizzata per l'articolo in questione
 
-TVA:
+*Esempio*: “cm” corrisponde a centimetri, “UDC” corrisponde a bancale
 
--        Câmp: neobligatoriu
+-        Mapping table/colonna: select MBUM_Codice from MB_UnitaMisura
 
--        Tip: string
+IVA:
 
--        Formatare Excel: text
+-        Campo: non obbligatorio
 
--        Lungime maximă: text
+-        Tipo: stringa
 
--        Lungime maximă: 3 caractere
+-        Formattazione Excel: testo
 
--        Descriere: se referă la codul măsurii utilizate pentru articolul analizat
+-        Lunghezza massima: 3 caratteri
 
-*Exemplu*: “22” corespunde la 22% de TVA, 
+-        Descrizione: codice riferito alla misura utilizzata per l'articolo in questione
 
--        Mapping table/coloană: select MBIV_Code from MB_iva
+*Esempio*: “22” corrisponde al 22% di iva, “944” Esente art. 40 c. 4 bis DL 331
+
+-        Mapping table/colonna: select MBIV_Code from MB_iva
 
 Cat Merc:
 
--        Câmp: neobligatoriu
+-        Campo: non obbligatorio
 
--        Tip: string
+-        Tipo: stringa
 
--        Formatare Excel: text
+-        Formattazione Excel: testo
 
--        Lungime maximă: 3 caractere
+-        Lunghezza massima: 3 caratteri
 
--        Descriere: codul se referă la categoria mărfii articolului analizat
+-        Descrizione: codice riferito alla categoria merce dell'articolo in questione
 
-*Exemplu*: “211” corespunde materiei prime
+*Esempio*: “206” corrisponde a collanti, “211” corrisponde a materie prime
 
--        Mapping table/coloană: select MBCM_Codice from MB_CatMerceologica
+-        Mapping table/colonna: select MBCM_Codice from MB_CatMerceologica
 
-Fact. ach.:
+Fatt acq:
 
--        Câmp: neobligatoriu
+-        Campo: non obbligatorio
 
--        Tip: string
+-        Tipo: stringa
 
--        Formatare Excel: text
+-        Formattazione Excel: testo
 
--        Lungime maximă: 10 caractere
+-        Lunghezza massima: 10 caratteri
 
--        Descriere: codul se referă la tipul facturii emise pentru articol
+-        Descrizione: codice riferito al tipo di fattura emessa dell'articolo in questione
 
-*Exemplu*: “4” corespunde la achiziții semifabricate, “1” corespunde la materii prime
+*Esempio*: “4” corrisponde ad acquisto semilavorati, “1” corrisponde a materie prime
 
--        Mapping table/coloană: select MBFA_TipoFatt from mb_TipoFattAcq
+-        Mapping table/colonna: select MBFA_TipoFatt from mb_TipoFattAcq
 
 Barcode:
 
--        Câmp: neobligatoriu
+-        Campo: non obbligatorio
 
--        Tip: string
+-        Tipo: stringa
 
--        Formatare Excel: text
+-        Formattazione Excel: testo
 
--        Lungime maximă: /
+-        Lunghezza massima: /
 
--        Descriere: codul de bare al articolului
+-        Descrizione: codice a barre dell'articolo in questione
 
-*Exemplu*: ABC-1234
+*Esempio*: ABC-1234
 
-Tip lot:
+Tipo lotto:
 
--        Câmp: neobligatoriu
+-        Campo: non obbligatorio
 
--        Tip: string
+-        Tipo: stringa
 
--        Formatare Excel: text
+-        Formattazione Excel: testo
 
--        Lungime maximă: 2 caractere
+-        Lunghezza massima: 2 caratteri
 
--        Descriere: tipul lotului din care face parte articolul
+-        Descrizione: tipo lotto di cui fa parte l'articolo
 
-*Exemplu*: “4” corespunde la achiziții semifabricate, “1” corespunde la materii prime
+*Esempio*: “4” corrisponde ad acquisto semilavorati, “1” corrisponde a materie prime
 
-Nomenclatură:
+Nomenclatura:
 
--        Câmp: neobligatoriu
+-        Campo: non obbligatorio
 
--        Tip: string
+-        Tipo: stringa
 
--        Formatare Excel: text
+-        Formattazione Excel: testo
 
--        Lungime maximă: 50 caractere
+-        Lunghezza massima: 50 caratteri
 
--        Descriere: nomenclatura, clasificare articol
+-        Descrizione: nomenclatura, classificazione articolo
 
-*Exemplu*: “32049000” corespunde la coloranți
+*Esempio*: “32049000” corrisponde a coloranti
 
--        Mapping table/coloană: select INCN_CodNomencl from IN_CodNomenc
+-        Mapping table/colonna: select INCN_CodNomencl from IN_CodNomenc
 
-Cod producător:
+Codice produttore:
 
--        Câmp: neobligatoriu
+-        Campo: non obbligatorio
 
--        Tip: string
+-        Tipo: stringa
 
--        Formatare Excel: text
+-        Formattazione Excel: testo
 
--        Lungime maximă: 100 caractere
+-        Lunghezza massima: 100 caratteri
 
--        Descriere: reprezintă codul producătorului articolului
+-        Descrizione: codice del produttore dell'articolo
 
-*Exemplu*: art0102032019
+*Esempio*: art0102032019
 
-Cod comercial:
+Codice commerciale:
 
--        Câmp: neobligatoriu
+-        Campo: non obbligatorio
 
--        Tip: string
+-        Tipo: stringa
 
--        Formatare Excel: text
+-        Formattazione Excel: testo
 
--        Lungime maximă: 100 caractere
+-        Lunghezza massima: 100 caratteri
 
--        Descriere: reprezintă codul categoriei comerciale
+-        Descrizione: codice della categoria commerciale
 
-*Exemplu*: *P* corespunde la privat
+*Esempio*: “P” corrisponde a privato
 
 ![](/img/it-it/applications/bizlink/import-purchase-price-lists/image07.png) 
 
 
-**Date ofertă**:
+**Dati listino**:
 
-Preț:
+Prezzo:
 
--        Câmp: obligatoriu
+-        Campo: obbligatorio
 
--        Tip: zecimale
+-        Tipo: decimale
 
--        Formatare Excel: valută, simbol niciunul
+-        Formattazione Excel: valuta, simbolo nessuno
 
--        Lungime maximă: /
+-        Lunghezza massima: /
 
--        Descriere: preț articol din ofertă
+-        Descrizione: prezzo a listino dell'articolo
 
-*Exemplu*: 10.99, 123.45
+*Esempio*: 10.99, 123.45
 
-UMPreț:
+UMPrezzo:
 
--        Câmp: obligatoriu
+-        Campo: obbligatorio
 
--        Tip: string
+-        Tipo: stringa
 
--        Formatare Excel: text
+-        Formattazione Excel: testo
 
--        Lungime maximă: /
+-        Lunghezza massima: /
 
--        Descriere: pentru stabilirea prețului în raport cu cantitatea (ex. Preț pe kg, Preț pe mp)
+-        Descrizione: serve per definire il prezzo rispetto alla quantità (es. prezzo al kilo, prezzo al metro quadro)
 
-*Exemplu*: “kg” corespunde la kilograme
+*Esempio*: “kg” corrisponde a kilogrammi
 
--        Mapping table/coloană: select MBUM_Codice from MB_UnitaMisura
-
-
-Cantitate:
-
--        Câmp: neobligatoriu
-
--        Tip: zecimale
-
--        Formatare Excel: număr, poziție zecimale = 2
-
--        Lungime maximă: /
-
--        Descriere: cantitatea de articol la care se referă prețul anterior
-
-*Exemplu*: 500
+-        Mapping table/colonna: select MBUM_Codice from MB_UnitaMisura
 
 
-**Valoare adăugată**:
+**Quantità**:
 
--        Câmp: neobligatoriu
+-        Campo: non obbligatorio
 
--        Tip: zecimale
+-        Tipo: decimale
 
--        Formatare Excel: număr, poziție zecimale = 2
+-        Formattazione Excel: numero, posizione decimali = 2
 
--        Lungime maximă: /
+-        Lunghezza massima: /
 
--        Descriere: valoare adăugată care poate fi utilizată la crearea ofertelor de prețuri de vânzare din ofertele de achiziție. De exemplu, dacă există cheltuieli de transport (care trebuie plătite furnizorului), acestea sunt raportate aici pentru a fi utilizate ulterior în calculul prețului de vânzare al articolului.
-*Exemplu*: 123.45
+-        Descrizione: quantità dell'articolo a cui è riferito il prezzo precedente
+
+*Esempio*: 500
 
 
-**% adăugată**:
+**Valore aggiunto**:
 
--        Câmp: neobligatoriu
+-        Campo: non obbligatorio
 
--        Tip: zecimale
+-        Tipo: decimale
 
--        Formatare Excel: număr, poziție zecimale = 2
+-        Formattazione Excel: numero, posizione decimali = 2
 
--        Lungime maximă: /
+-        Lunghezza massima: /
 
--        Descriere: procent suplimentar care poate fi utilizat la crearea ofertelor de prețuri de vânzare din ofertele de achiziție  
-*Exemplu*: 10        
+-        Descrizione: valore aggiuntivo da poter utilizzare in creazione listini di vendita da listini acquisto. Per esempio se ci sono delle spese di trasposto (che dobbiamo pagare al fornitore), vengono qui riportate per poi essere utilizzate nel calcolo del prezzo di vendita di tale articolo.
+
+*Esempio*: 123.45
+
+
+**% Aggiuntiva**:
+
+-        Campo: non obbligatorio
+
+-        Tipo: decimale
+
+-        Formattazione Excel: numero, posizione decimali = 2
+
+-        Lunghezza massima: /
+
+-        Descrizione: percentuale aggiuntiva da poter utilizzare in creazione listini di vendita da listini acquisto
+
+*Esempio*: 10        
 
   ![](/img/it-it/applications/bizlink/import-purchase-price-lists/image08.png)
 
 
-**Discounturi**:
+**Sconti**:
 
-Discount1:
+Sconto1:
 
--        Câmp: neobligatoriu
+-        Campo: non obbligatorio
 
--        Tip: zecimale
+-        Tipo: decimale
 
--        Formatare Excel: număr, poziție zecimale = 2
+-        Formattazione Excel: numero, posizione decimali = 2
 
--        Lungime maximă: /
+-        Lunghezza massima: /
 
--        Descriere: discounturi posibile aplicabile
+-        Descrizione: sconti possibili applicabili
 
-*Exemplu*: *50+10* pe totalul rândului se aplică un prim discount de 50% și pe noul total un alt discount de 10%
+*Esempio*: “50+10” sul totale della riga viene effettuato un primo sconto del 50% e sul nuovo totale un ulteriore sconto del 10%
 
-Aceeași procedură se aplică și celorlalte două reduceri, diferă doar valoarea reducerii.
+Stessa identica cosa per gli altri due sconti, cambia solo il valore dello sconto.
 
 ![](/img/it-it/applications/bizlink/import-purchase-price-lists/image09.png) 
 
 
-**Discounturi pe cantitate**:
+**Sconti a qtà**:
 
-Discount1:
+Sconto1:
 
--        Câmp: neobligatoriu
+-        Campo: non obbligatorio
 
--        Tip: zecimale
+-        Tipo: decimale
 
--        Formatare Excel: număr, poziție zecimale = 2
+-        Formattazione Excel: numero, posizione decimali = 2
 
--        Lungime maximă: /
+-        Lunghezza massima: /
 
--        Descriere: reducerea este aplicată dacă se achiziționează o anumită Cantitate de articol.
+-        Descrizione: sconto applicato se viene acquistata un data quantità dell'articolo in questione
 
-*Exemplu*: 10
+*Esempio*: 10
 
-Cantitate1:
+Quantità1:
 
--        Câmp: neobligatoriu
+-        Campo: non obbligatorio
 
--        Tip: zecimale
+-        Tipo: decimale
 
--        Formatare Excel: număr, poziție zecimale = 2
+-        Formattazione Excel: numero, posizione decimali = 2
 
--        Lungime maximă: /
+-        Lunghezza massima: /
 
--        Descriere: cantitate minimă necesară pentru a avea acel discount
+-        Descrizione: quantità minima necessaria per avere il rispettivo sconto
 
-*Exemplu*: 550
+*Esempio*: 550
 
-Aceeași procedură se aplică și celorlalte două reduceri pe cantitate, diferă doar valoarea reducerii.
+Stessa identica cosa per gli altri due sconti a quantità, cambia solo il corrispettivo valore.
 
 ![](/img/it-it/applications/bizlink/import-purchase-price-lists/image10.png) 
 
 
-**Discounturi pe valoare**:
+**Sconti a valore**:
 
-Discount1:
+Sconto1:
 
--        Câmp: neobligatoriu
+-        Campo: non obbligatorio
 
--        Tip: zecimale
+-        Tipo: decimale
 
--        Formatare Excel: număr, poziție zecimale = 2
+-        Formattazione Excel: numero, posizione decimali = 2
 
--        Lungime maximă: /
+-        Lunghezza massima: /
 
--        Descriere: discount  aplicat dacă linia depășește o aumită sumă 
+-        Descrizione: sconto applicato se supera determinato imponibile di riga
 
-*Exemplu*: 20
+*Esempio*: 20
 
-Valoare1:
+Valore1:
 
--        Câmp: neobligatoriu
+-        Campo: non obbligatorio
 
--        Tip: zecimale
+-        Tipo: decimale
 
--        Formatare Excel: număr, poziție zecimale = 2
+-        Formattazione Excel: numero, posizione decimali = 2
 
--        Lungime maximă: /
+-        Lunghezza massima: /
 
--        Descriere: sumă minimă necesară pentru a avea acel discount
+-        Descrizione: imponibile minimo necessario per avere il rispettivo sconto
 
-*Exemplu*: 950
+*Esempio*: 950
 
-Aceeași procedură se aplică și celorlalte două reduceri pe valoare.
+Stessa identica cosa per gli altri due sconti e valori.
 
 ![](/img/it-it/applications/bizlink/import-purchase-price-lists/image11.png) 
 
 
-**Preț per Cantitate**:
+**Prezzo per quantità**:
 
-Preț1:
+Prezzo1:
 
--        Câmp: neobligatoriu
+-        Campo: non obbligatorio
 
--        Tip: zecimale
+-        Tipo: decimale
 
--        Formatare Excel: număr, poziție zecimale = 2
+-        Formattazione Excel: numero, posizione decimali = 2
 
--        Lungime maximă: /
+-        Lunghezza massima: /
 
--        Descriere: preț unitar aplicat dacă se depășește o anumită cantitate
+-        Descrizione: prezzo unitario applicato se superata una determinata quantità
 
-*Exemplu*: 3.99
+*Esempio*: 3.99
 
-Cantitate1:
+Quantità1:
 
--        Câmp: neobligatoriu
+-        Campo: non obbligatorio
 
--        Tip: zecimale
+-        Tipo: decimale
 
--        Formatare Excel: număr, poziție zecimale = 2
+-        Formattazione Excel: numero, posizione decimali = 2
 
--        Lungime maximă: /
+-        Lunghezza massima: /
 
--        Descriere: cantitate minimă necesară pentru a avea acel preț unitar
+-        Descrizione: quantità minima necessaria per avere il rispettivo prezzo unitario
 
-*Exemplu*: 250
+*Esempio*: 250
 
-Aceeași procedură se aplică și celorlalte două prețuri pe cantitate, diferă doar valoarea reducerii.
+Stessa identica cosa per gli altri due prezzi e relative quantità, cambia solo il rispettivo valore.
 
 ![](/img/it-it/applications/bizlink/import-purchase-price-lists/image12.png) 
 
 
-**Alte date**:
+**Altri dati**:
 
 Note:
 
--        Câmp: neobligatoriu
+-        Campo: non obbligatorio
 
--        Tip: string
+-        Tipo: stringa
 
--        Formatare Excel: text
+-        Formattazione Excel: testo
 
--        Lungime maximă: /
+-        Lunghezza massima: /
 
--        Descriere: note suplimentare
+-        Descrizione: note aggiuntive
 
-*Exemplu*: nu expuneți la soare
+*Esempio*: non esporre ai raggi solari
 
--        Mapping table/coloană: select MBNC_Codice from MB_NoteCodificat
+-        Mapping table/colonna: select MBNC_Codice from MB_NoteCodificat
 
 
 
 ### BizLink Parameters
 
-Acești parametri vor fi utilizați pentru a procesa rândurile inserate în secțiunea *Date*. După cum se poate observa din imagine, unele câmpuri sunt deja completate, dar pot fi modificate.
+Questi parametri serviranno per processare le righe inserite nella sezione Data. Come si può notare dall'immagine, alcuni campi sono già precompilati ma nulla ci vieta di modificarli.
 
  ![](/img/it-it/applications/bizlink/import-purchase-price-lists/image13.png)
 
 1      BizLink Spreadsheet:
 
--        Câmp: nu trebuie completat
+-        Campo: da non inserire
 
-2      Limba:
+2      Lingua:
 
--        Câmp: obligatoriu
+-        Campo: obbligatorio
 
--        Tip: string
+-        Tipo: string
 
--        Descriere: Iso code aferent limbii
+-        Descrizione: codice Iso code relativo alla lingua
 
-*Exemplu*: “it-IT” este pentru italiană, “en-US” este pentru engleza americană.
+*Esempio*: “it-IT” rappresenta la lingua italiana, “en-US” rappresenta la lingua inglese in America.
 
-3      Societate:
+3      Società:
 
--        Câmp: obligatoriu
+-        Campo: obbligatorio
 
--        Tip: string
+-        Tipo: string
 
--        Descriere: este un câmp deja populat, deoarece preia valorile deja existente în Fluentis. Acestea pot fi vizualizate în colțul din stânga sus.
+-        Descrizione: è un campo precompilato in quanto prende i valori già all'interno di Fluentis, si possono vedere nell'angolo in alto a sinistra.
 
-*Exemplu*: “1” corespunde societății demo
+*Esempio*: “1” corrisponde alla società demo
 
--        Mapping table/coloană: Select MBSC_Code from MB_Soc
+-        Mapping table/colonna: Select MBSC_Code from MB_Soc
 
-4      Diviziune:
+4      Divisione:
 
--        Câmp: obligatoriu
+-        Campo: obbligatorio
 
--        Tip: string
+-        Tipo: string
 
--        Descriere: este un câmp deja populat ca in cazul societății.
+-        Descrizione: come per la società viene precompilato
 
-*Exemplu*: “1” corespunde sediului legal, “2” sediului operativ
+*Esempio*: “1” corrisponde alla sede legale, “2” alla sede operativa di Milano
 
--        Mapping table/coloană: select MBDP_Code from MB_Dep
+-        Mapping table/colonna: select MBDP_Code from MB_Dep
 
-5      Țară:
+5      Nazione:
 
--        Câmp: obligatoriu
+-        Campo: obbligatorio
 
--        Tip: string
+-        Tipo: string
 
--        Descriere: reprezintă țara în care se află diviziunea pentru care a fost importată ofera de prețuri
+-        Descrizione: nazione in cui si trova la divisione per cui è stato importato il listino
 
-*Exemplu*: “GB” corespunde Marii Britanii, “USA” corespunde Statelor Unite
+*Esempio*: “GB” corrisponde a Gran Bretagna, “USA” corrisponde agli Stati Uniti
 
--        Mapping table/coloană: select MBNZ_Codice from MB_Nazioni
+-        Mapping table/colonna: select MBNZ_Codice from MB_Nazioni
 
 6      Barcode:
 
--        Câmp: obligatoriu doar dacă în secțiunea *Date* a fost inserat barcodul cel puțin pentru un articol
+-        Campo: obbligatorio solo se nella sezione data si ha inserito il barcode di almeno un articolo
 
--        Tip: string
+-        Tipo: string
 
--        Descriere: indică tipul de barcode utilizat
+-        Descrizione: serve per indicare il tipo di barcode utilizzato
 
-*Exemplu*: “39” corespunde la COD39
+*Esempio*: “39” corrisponde al COD39
 
--        Mapping table/coloană: select MBBC_Codice from MB_BarCode
+-        Mapping table/colonna: select MBBC_Codice from MB_BarCode
 
-7      Cont sintetic:
+7      Conto:
 
--        Câmp: obligatoriu
+-        Campo: obbligatorio
 
--        Tip: string
+-        Tipo: string
 
--        Descriere: cont sintetic furnizor
+-        Descrizione: conto del fornitore, mastro del fornitore
 
-*Exemplu*: 
+*Esempio*: “1701” il quale ha 3 sottoconti (vedi sotto)
 
--        Mapping table/coloană: select MBPC_Conto from MB_PiaCon
+-        Mapping table/colonna: select MBPC_Conto from MB_PiaCon
 
-8      Cont analitic:
+8      Sottoconto:
 
--        Câmp: neobligatoriu
+-        Campo: obbligatorio
 
--        Tip: string
+-        Tipo: string
 
--        Descriere: cont analitic furnizor
+-        Descrizione: sottoconto del fornitore, mastrino del fornitore
 
-*Exemplu*: 
+*Esempio*: per il conto 1701 visto in precedenza, ci sono 3 sottoconti: “001” che corrisponde a conti, “002” che corrisponde a valori DDTti e “” (nessun sottoconto specificato) che corrisponde a disponibilità liquide.
 
--        Mapping table/coloană: select BPC_SottoConto from MB_PiaCon
+-        Mapping table/colonna: select BPC_SottoConto from MB_PiaCon
 
-9      Deviza:
+9      Divisa:
 
--        Câmp: obligatoriu
+-        Campo: obbligatorio
 
--        Tip: string
+-        Tipo: string
 
--        Descriere: deviza cu care se interpretează datele introduse în secțiunea *Date*
+-        Descrizione: divisa con cui interpretare i valori inseriti nella sezione data
 
-*Exemplu*: “EUR” corespunde la Euro, “USD” corespunde la dolar.
+*Esempio*: “EUR” corrisponde a Euro, “USD” corrisponde a Dollaro
 
--        Mapping table/coloană: select MBDI_Divisa from MB_Divise
+-        Mapping table/colonna: select MBDI_Divisa from MB_Divise
 
-10  Început valabilitate:
+10  Inizio validità:
 
--        Câmp: obligatoriu
+-        Campo: obbligatorio
 
--        Tip: datetime
+-        Tipo: datetime
 
--        Descriere: indică începutul valabilității ofertei inserate (zz/ll/aaaa)
+-        Descrizione: indica l'inizio di validità del listino inserito (gg/mm/aaaa)
 
-*Exemplu*: 1/10/2018
+*Esempio*: 1/10/2018
 
-11  Sfârșit valabilitate:
+11  Fine validità:
 
--        Câmp: neobligatoriu
+-        Campo: non obbligatorio
 
--        Tip: datetime
+-        Tipo: datetime
 
--        Descriere: indică sfârșitul valabilității ofertei inserate (zz/ll/aaaa)
+-        Descrizione: se presente indica la fine di validità del listino inserito (gg/mm/aaaa)
 
-*Exemplu*: 31/12/2027
+*Esempio*: 31/12/2027
 
-12  Tip discount ofertă:
+12  Tipo sconto listino:
 
--        Câmp: neobligatoriu
+-        Campo: non obbligatorio
 
--        Tip: string
+-        Tipo: string
 
--        Descriere: indică tipul de reducere efectuată. Vor fi trei tipuri diferite, fiecare pentru reducerea sa din secțiunea *Discounturi*.
+-        Descrizione: se presente indica il tipo di sconto effettuato, ci saranno tre diverse tipologie ognuna per il relativo sconto alla sezione Sconti
 
-*Exemplu*: “4” corespunde discountului final la vânzare
+*Esempio*: “4” corrisponde a sconto finale su vendita
 
--        Mapping table/coloană: select MBST_Code from MB_Sconti
+-        Mapping table/colonna: select MBST_Code from MB_Sconti
 
-15 Tip discount cantitate:
+15 Tipo sconto quantità:
 
--        Câmp: neobligatoriu
+-        Campo: non obbligatorio
 
--        Tip: string
+-        Tipo: string
 
--        Descriere: indică tipul discountului efectuat
+-        Descrizione: se presente indica il tipo di sconto effettuato
 
-*Exemplu*: “4” corespunde discountului final la vânzare
+*Esempio*: “4” corrisponde a sconto finale su vendita
 
--        Mapping table/coloană: select MBST_Code from MB_Sconti
+-        Mapping table/colonna: select MBST_Code from MB_Sconti
 
-16 Tip discount valore:
+16 Tipo sconto valore:
 
--        Câmp: neobligatoriu
+-        Campo: non obbligatorio
 
--        Tip: string
+-        Tipo: string
 
--        Descriere: indică tipul discountului efectuat
+-        Descrizione: se presente indica il tipo di sconto effettuato
 
-*Exemplu*: “4” corespunde discountului final la vânzare
+*Esempio*: “4” corrisponde a sconto finale su vendita
 
--        Mapping table/coloană: select MBST_Code from MB_Sconti
+-        Mapping table/colonna: select MBST_Code from MB_Sconti
 
-17 Pe terț:
+17 Per terzista:
 
--        Câmp: obligatoriu
+-        Campo: obbligatorio
 
--        Tip: boolean
+-        Tipo: boolean
 
--        Descriere: indica dacă acea ofertă (în sistem lohn) va fi sau nu pentru un terț
+-        Descrizione: indica se tale listino (di conto lavoro) sarà o meno per un terzista
 
-*Exemplu*: “1” corespunde la true, “0” corespunde la false
+*Esempio*: “1” corrisponde a true, “0” corrisponde a false
 
-18 Inserare articol:
+18 Inserimento articolo:
 
--        Câmp: obligatoriu
+-        Campo: obbligatorio
 
--        Tip: boolean
+-        Tipo: boolean
 
--        Descriere: dacă este setat , inserează articolul în tabelul *Registru articole* MG_AnaArt
+-        Descrizione: se impostato a 1 inserisce l'articolo nella tabella dell'anagrafica articoli MG_AnaArt
 
-*Exemplu*: “1” corespunde la true, “0” corespunde la false
+*Esempio*: “1” corrisponde a true, “0” corrisponde a false
 
-19  Inserare articol pe furnizor:
+19  Inserimento articolo per fornitore:
 
--        Câmp: obligatoriu
+-        Campo: obbligatorio
 
--        Tip: boolean
+-        Tipo: boolean
 
--        Descriere: dacă este setat , inserează articolul în tabelul *Articole pe furnizor* MB_ArticoliFornitore, MG_FornPreferenziali
+-        Descrizione: se impostato a 1 inserisce l'articolo nella tabella articoli per fornitore MB_ArticoliFornitore, MG_FornPreferenziali
 
-*Exemplu*: “1” corespunde la true, “0” corespunde la false
+*Esempio*: “1” corrisponde a true, “0” corrisponde a false
 
-### Start import
+### Avviare importazione
 
-După introducerea datelor, pentru a începe importul, clic pe butonul **Import**.
+Una volta inseriti i dati, per avviare l'importazione, cliccare sul pulsante presente nel menu importazione, in alto a sinistra, chiamato anch'esso “Importazione” come in figura sotto.
 
-### Concluzie – Inserare efectuată
+ ![](/img/it-it/applications/bizlink/import-purchase-price-lists/image14.png)
 
-Verificarea operației se face accesând registrul articolelor (**Home > Articole**) pentru a vedea dacă sunt prezente articolele importate de la furnizor. În caz contrar, aplicația va genera un mesaj de eroare care va indica ce parametri și/sau câmpuri sunt incorecte. Pentru a interpreta tipul de eroare, consultați secțiunea *Sfaturi și atenționări utile* din ultimul paragraf.
+ 
 
+### Conclusioni – Inserimento avvenuto
 
+Se tutto va a buon fine non comparirà nessun messaggio di errore. Per un ulteriore verifica di buon riuscita, andare a controllare nell'anagrafica articoli (**Home > Articoli**) se sono presenti quelli importati dal fornitore.  Altrimenti ci apparirà a video una schermata di errore la quale ci indicherà quali parametri e/o campi non sono corretti. Per interpretare il tipo di errore vedi Consigli e avvertenze utili nell'ultimo paragrafo. 
 
-### Sfaturi și atenționări utile
+### Consigli e avvertenze utili
 
-**Formatare Excel recomandată**:
+**Formattazione Excel consigliata**:
 
-- Pentru un import corect, recomandăm să formatați coloanele conform tipului indicat în secțiunea *Formatare Excel* pentru fiecare câmp. De exemplu, dacă tipul câmpului este zecimal și în acel câmp va fi introdusă o valută, formatați câmpul ca valută. Dacă celula nu este formatată corespunzător, Excel elimină cifrele nesemnificative. Pentru a aplica formatarea, urmați pașii de mai jos:
+-        Per una corretta importazione, è vivamente consigliato di formattare le colonne secondo il tipo indicato alla voce “Formattazione Excel” di ogni campo. Per esempio se il tipo del campo è decimal e in quel campo andrà inserito una valuta, formattare il campo appunto come valuta. Questo perché per esempio se non viene formattata la cella, Excel elimina le cifre non significative. Per inserire la formattazione seguire i seguenti passaggi:
 
-1. selectați coloana dorită:
+Per prima cosa selezionare la colonna desiderata come in fig. sotto:
 
-![](/img/it-it/applications/bizlink/import-purchase-price-lists/image15.png)
+ ![](/img/it-it/applications/bizlink/import-purchase-price-lists/image15.png)
 
-2. poziționați-vă în coloană și faceți clic dreapta.
 
-![](/img/it-it/applications/bizlink/import-purchase-price-lists/image16.png)
+Poi, dopo essersi posizionati con il puntatore del mouse all'interno della colonna, premere il tasto destro del mouse.
 
-3. selectați cu clic stânga **> Format Cells...**
+ ![](/img/it-it/applications/bizlink/import-purchase-price-lists/image16.png)
+
+
+Selezionare premendo il tasto sinistro ** > Formato celle…**
 
 ![](/img/it-it/applications/bizlink/import-purchase-price-lists/image17.png) 
 
-4. formatați coloana selectată. Conform indicațiilor furnizate în *Inserare câmpuri*, selectați categoria corespunzătoare, cu specificațiile relative (de exemplu, valută, fără simbol). Același lucru se poate face și din foaia de calcul prezentă în Fluentis.
+In questa schermata si potrà quindi formattare la colonna selezionata. In base alle indicazioni fornite nell' Inserimento campi selezionare l'opportuna categoria, con le relative specifiche (es. valuta, simbolo nessuno). La stessa identica cosa è possibile farla dal foglio elettronico presente all'interno di Fluentis.
 
-:::note Atenție
-O situație tipică implică coduri care conțin zerouri aparent nesemnificative, de exemplu "001". Dacă câmpul este formatat generic sau ca număr, zerourile vor fi eliminate, dar dacă este formatat ca text, acestea vor fi păstrate.
-:::
+**Attenzione**: il caso classico riguarda codici contenenti zeri, apparentemente, non significativi es. “001”. Se il campo è formattato generico o numero gli zeri sarebbero scartati, se formatta come stringa vengono invece mantenuti.
 
-**Mapping table/coloană**:
+**Mapping table/colonna**:
 
-- Dacă în *Inserare câmpuri* există *Mapping table/coloană*, înseamnă că valoarea introdusă în câmp pentru import poate fi deja prezentă în baza de date. A fost inserat și în câmpurile care vor fi introduse de la zero, pentru a putea vedea un exemplu, dacă este prezent în baza de date. Pentru a vizualiza datele prezente în baza de date, urmați pașii de mai jos, utilizând ca exemplu clasa articole și mapping-ul aferent: 
+-        Se nell' Inserimento campi vi è presente la voce mapping table/colonna, significa che il valore inserito all'interno del campo per l'importazione, deve essere già presente nel database. Per visualizzare i relativi dati presenti nella base di dati basterà seguire i seguenti passaggi, in cui verrà utilizzato come esempio la classe articoli e il relativo mapping: 
 
-select MBDC_Classe from MB_Classi (**\<-** questo è il mapping). Executați query in “Microsoft SQL server management studio” și obțineți rezultatul:
+select MBDC_Classe from MB_Classi (**\<-** questo è il mapping). Eseguiamo la query in “Microsoft SQL server management studio” e otteniamo il seguente risultato:
 
 ![](/img/it-it/applications/bizlink/import-purchase-price-lists/image18.png) 
 
-Rezultatul nu oferă informații clare; pentru a înțelege semnificația, înlocuiți după clauza select simbolul "*" cu câmpul pentru a compune noua interogare. În acest caz, ar fi select * from MB_Class, care selectează întregul conținut al tabelului.
+Visto così non comunica nulla, per capirne il significato sostituire dopo la clausola di select, il simbolo “*” al campo per comporre la nuova query. In questo caso avremmo quindi select * from MB_Class, che serve per selezionare l'intero contenuto della tabella, eseguiamo ora.
 
  ![](/img/it-it/applications/bizlink/import-purchase-price-lists/image19.png)
 
-Aceasta operație este utilă deoarece datorită descrierii (MBDC_Descr) se poate înțelege ce reprezintă câmpul și verifica dacă ceea ce veți introduce este sau nu în baza de date. Această procedură este universală, valabilă pentru fiecare câmp și aceeași reprezentare este vizibilă și în Fluentis:
+Questo è utile in quanto, come mostrato dalla figura, tramite la descrizione (MBDC_Descr) è possibile capire il campo cosa rappresenta e verificare se quello che si inserirà è presente o meno nella base di dati.
 
-În Fluentis selectați **Home > Articole > Articole furnizori**. În acest form, alegeți clasa articolelor cu descrierea aferentă.
+Questa procedura appena descritta è universale, ossia vale per ogni campo.
 
-Aceasta este pentru clasa articolelor. Pentru alte câmpuri, se poate urma aceeași procedură, dar în locații diferite. Trebuie să selectați una din valorile prezente, altfel importul nu va reuși și va afișa un mesaj de eroare. Acest lucru este valabil pentru fiecare câmp pentru care există un mapping table/coloană.
+La stessa rappresentazione è possibile vederla in Fluentis:
 
-Dacă doriți să adăugați un câmp cu mapping care nu este în baza de date, acesta va trebui să fie inserat cu un query sau din Fluentis. În acest caz, interogarea de inserție nu este recomandată deoarece este mai complicată decât vizualizarea descrisă anterior. Procedura recomandată este inserarea din Fluentis. Tot pentru clasa articole, în *Articole furnizori*, faceți clic dreapta în filtrul de căutare al clasei articole și selectați **Deschide form**.
+Dalla Home di Fluentis selezionare **Articoli > Articoli fornitori** (vedi fig. sotto).
 
-În fereastra care se va deschide, faceți clic pe butonul de căutare pentru a vizualiza clasele de articole existente.
+![](/img/it-it/applications/bizlink/import-purchase-price-lists/image20.png) 
 
-Sub ultima linie inserată se află o linie goală. Aceasta este folosită pentru introducerea de noi valori.
+Poi nella maschera di ricerca che appare cliccare con il pulsante sinistro del mouse sul triangolino affianco ad articoli, il quale apre una tendina dove è possibile visualizzare la classe degli articoli con relativa descrizione come in figura.
 
-![](/img/it-it/applications/bizlink/import-purchase-price-lists/image24.png)
+![](/img/it-it/applications/bizlink/import-purchase-price-lists/image21.png) 
 
-Introduceți valorile noi și apăsați *Enter*.
+Questo per la classe articoli. Per gli altri campi si potrà eseguire la stessa procedura solamente in punti diversi.
 
-Această procedură este similară pentru celelalte câmpuri, singurul lucru care se schimbă fiind locația filtrelor de căutare unde trebuie să faceți clic stânga pentru a deschide form-ul.
+Noi dovremmo quindi inserire uno dei valori presenti altrimenti l'importazione non andrà a buon fine e ci comunicherà un errore. Questo per ogni campo di cui è presente il mapping table/colonna. 
 
-**Erori**:
+Se vogliamo invece aggiungere un campo con mapping non presente nel database andrà inserito o tramite query o da Fluentis, in questo caso la query di inserimento è sconsigliata in quanto più complicata da comporre rispetto alla visualizzazione vista in precedenza. La procedura consigliata è quindi l'inserimento da Fluentis. Sempre nel caso della classe articoli, da articoli fornitore (figura sopra) premere tasto destro all'interno del filtro di ricerca della classe articolo e selezionare **Apri form**.
 
-În cazul importului nereușit, aplicația va genera un mesaj de eroare.
+![](/img/it-it/applications/bizlink/import-purchase-price-lists/image22.png) 
 
-Dacă eroarea s-a produs în secțiunea *Data*, se poate identifica rândul care conține eroarea, deoarece va fi scris, de exemplu: "System.ArgumentException: Error importing row 4". În acest caz (vedeți figura de mai jos), eroarea va fi pe rândul 4, care însă nu este rândul care conține efectiv eroarea. Pentru a identifica exact rândul cu eroarea, utilizați numerele din coloana din stânga și adăugați 1. Deci:
+Nella form che si aprirà premere il pulsante **Ricerca** per visualizzare le classi articolo presenti.
 
-Rând real care conține eroarea = Error importing rownum + 1
+![](/img/neutral/common/search.png) 
+
+Sotto l'ultima riga presente c'è una riga vuota. È quella usata per l'inserimento di nuovi valori.
+
+ ![](/img/it-it/applications/bizlink/import-purchase-price-lists/image24.png)
+
+Lì vanno scritti i nuovi valori da inserire e una volta fatto, basterà premere invio. 
+
+ Questa procedura è analoga per gli altri campi, l'unica cosa che cambia è il dove si trovano i filtri di ricerca nei quali premere il tasto sinistro per aprire la form.
+
+**Errori**: 
+
+-        In caso di importazione fallita, come detto in precedenza, apparirà a video una schermata di errore.
+
+ Se l'errore è stato commesso nella parte Data è possibile risalire alla riga che contiene l'errore in quanto ci sarà per esempio scritto “System.ArgumentException: Error importing row 4”.
+
+In questo caso (vedi figura sotto), l'errore si troverà nella riga 4, la quale però non è l'effettiva riga contente l'errore. Per capire esattamente quale riga contenga l'errore, utilizzando i numeri nella colonna di sinistra, gli va sommato 1. Quindi: 
+
+ Riga reale contente errore = Error importing rownum + 1
 
 ![](/img/it-it/applications/bizlink/import-purchase-price-lists/image25.png)
 
-Pentru a interpreta eroarea din mesaj, urmați pașii de mai jos:  
-- pe același rând care conține numărul rândului menționat anterior, este scris **obiectul** la care se referă, apoi **eroarea** propriu-zisă și în final **proprietatea** în care a fost detectată eroarea.  
-Tot în exemplul de mai sus *Failed to create, update or delete the object of type Fluentis.FluentisErp.Core.Scm.PurchasePriceLists.FSPurchasePriceListItem, Fluentis.FluentisErp.Core.Scm.PurchasePriceLists* not-null property references a null or transient value Fluentis.FluentisErp.Core.Scm.PurchasePriceLists.ReadWrite.FSWPurchasePriceListItem.MeasurementUnit*, așa cum se poate observa în imaginea de mai sus, unitatea de măsură aferentă prețului de achiziție din ofertă a generat eroarea deoarece aceasta este nulă. Aplicația avizează că inserarea acesteia este obligatorie.
+Per interpretare l'errore, nel messaggio dello stesso, seguire i seguenti passaggi: nella stessa riga contenente il numero di riga visto in precedenza, c'è scritto l'oggetto a cui è riferito, poi l'errore vero e proprio e infine la proprietà relativa ad esso in cui è stato riscontrato l'errore. Sempre nell'esempio sopra riportato “Failed to create, update or delete the object of type Fluentis.FluentisErp.Core.Scm.PurchasePriceLists.FSPurchasePriceListItem, Fluentis.FluentisErp.Core.Scm.PurchasePriceListsnot-null property references a null or transient value Fluentis.FluentisErp.Core.Scm.PurchasePriceLists.ReadWrite.FSWPurchasePriceListItem.MeasurementUnit”. In questo caso come si può notare dall'immagine sopra, l'unità di misura relativa al prezzo di acquisto listino ha generato l'errore in quanto essa è nulla. Infatti il suo inserimento è obbligatorio. 
 
-Dacă eroarea s-a produs în secțiunea *Parametri*, mesajul va fi similar, metoda de rezolvare rămânând aceeași. Deci, în baza proprietății, verificați inserarea corectă a acesteia.
+ Se l'errore è stato commesso nella parte dei parametri il messaggio sarà analogo, il metodo di risoluzione rimane sempre il precedente quindi, in base alla proprietà verificare il corretto inserimento della stessa.
 
-:::important Important  
-Dacă este găsit un rând complet gol, nu va fi raportată nicio eroare, dar importul se va opri. De exemplu, dacă primul rând (rândul nr. 4) este gol dintr-un motiv oarecare și sub acesta (începând cu rândul nr. 5) se află rânduri populate, nu se va importa nimic.
-:::
+**Attenzione**: Se viene trovata una riga completamente vuota, non verrà comunicato nessuno errore ma l'importazione terminerà lì. Per esempio se la prima riga (riga n.4) è vuota per qualche motivo e sotto (da riga n.5 compresa) si trovano le righe popolate, non sarà importato nulla.
 
-:::important Important  
-Dacă este introdus un registru de 10 rânduri, de exemplu, și în rândul nr. 7 apare o eroare, primele 6 rânduri, neavând probleme, sunt inserate. Dacă nu este schimbată nicio valoare în primele 6 rânduri (și evident, dacă eroarea este corectată), reluând importul nu vor apărea nici erori de duplicare, deoarece se verifică mai întâi dacă este deja prezent contactul. Dacă este schimbată chiar și o singură valoare, acel articol va fi inserat deoarece va fi văzut ca un nou articol.
-:::
+**Attenzione**: Se viene inserito un listino di 10 righe per esempio e alla riga n. 7 si verifica un errore, le prime 6 righe non avendo causato problemi sono state inserite! Se non viene cambiato nessun valore nelle prime 6 righe (e se ovviamente l'errore è stato corretto), riavviando l'importazione non ci saranno problemi, neanche di duplicazione in quanto viene prima cercato se l'articolo è già presente. Se viene cambiato anche solo un valore, tale articolo verrà inserito in quanto visto come un nuovo articolo.
 
-În final, un alt mesaj de eroare care poate apărea este următorul:
+Infine un altro messaggio di errore che potrà capitare è il seguente.
 
 ![](/img/it-it/applications/bizlink/import-purchase-price-lists/image26.png) 
 
-Așa cum se poate observa în imaginea de mai sus, acest tip de mesaje sunt mai ușor de interpretat deoarece se referă exact la celula cu eroarea. În acest caz, în celula F:4 nu este prezentă nicio valoare.
+Come si può notare dall'immagine sopra riportata, questa tipologia di messaggi sono più facili da interpretare in quanto viene messo il riferimento esatto della cella con relativo errore. In questo caso nella cella F:4 non è presente nessun valore.

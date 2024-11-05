@@ -1,48 +1,53 @@
 ---
-title: Import înregistrări contabile
+title: Importazione Movimenti contabili
 sidebar_position: 2
 ---
 
-Acest form permite completarea atât a secțiunii TVA, cât și a secțiunii contabile a înregistrărilor și este completat corespunzător în baza datelor care vor fi importate (care implică sau nu TVA).
+Il foglio excel (template) per l'importazione dei movimenti contabili nel modulo Amministrazione permette di popolare sia la sezione iva, sia la sezione contabile delle registrazioni e viene pertanto compilato in maniera adeguata a seconda se si stiano importando scritture contabili che coinvolgono l'iva o semplicemente scritture di prima nota.
 
-Dacă se importă înregistrări de facturi:
-- 1^ rând = antet
-- 2^ rând = registrul jurnal + Registrul TVA
-- 3^ rând (și următoarele) = înregistrările din registrul jurnal
 
-**Notă contabilă**
-- 1^ rând = antet
-- Alte rânduri = registrul jurnal
+SE si importa registrazioni di fatture: 
+1^ riga = testata 
+2^ riga = libro giornale + Registro IVA
+3^ riga (e seguenti) = movimenti del libro giornale
 
-*Exemplu*:
+Prima nota
+1^ riga = testata
+Altre righe = libro giornale
+
+Esempio
 
 ![](/img/it-it/applications/bizlink/import-mov-contabili.png)
 
-**Dată înreg./Dată comp.**: sunt datele de înregistrare și de competență din antetul înregistrării contabile.
+**Data Reg / Data Comp:** sono le date registrazione e competenza della testata registrazione contabile. 
 
-**Număr înreg.**: trebuie să fie liber în baza de date de destinație, altfel funcția va suprascrie ceea ce găsește fără control (este un update SQL).
+**Num Reg.** Attenzione, deve essere libero nel db di destinazione oppure la funzione andrà a sovrascrivere quello che trova senza controllo (è una update sql)
 
-**Șablon**: selectați un cod deja prezent și coerent cu înregistrarea (de exemplu, un șablon TVA dacă importați înregistrări de facturi).
+**Causale:** utilizzare un codice di causale già presente e coerente con la registrazione (esempio una causale IVA se importo registrazioni di fatture)
 
-**Registrul TVA**: selectați codul unui registru deja prezent.
+**Registro iva:**: utilizzare il codice di un registro già presente
 
-**Nr. în reg. TVA**: inserați un număr liber.
+**Protocollo IVA**: utilizzare un protocollo libero
 
-**Divisă; Valută; Euro**: obligatorii, chiar dacă este totul în euro și nu există schimb valutar. Completați întotdeauna și cealaltă coloană cu 0,00 (de exemplu, dacă în coloana *Debit* inserați 1000,00 în coloana *Credit* inserați 0,00).
+**Divisa; Valuta; Euro** completare sempre tutto anche se è tutto in euro e non c’è il cambio. Compilare sempre anche l'altra colonna con 0,00 (Esempio se compilo la colonna Dare 1000,00 nella colonna adiacente Avere metto 0,00)
 
+**Conto / Sottoconto:** utilizzare codici di conti già presenti
 
-### Date TVA
+---
+**Dati IVA**
 
-Selectați **codul** cotei TVA și completați baza de impozitare TVA și TVA nedeductibilă (eventual cu valoarea 0,00).
+Caricare il **codice** dell'aliquota che deve essere già presente nel db
 
-**Centru de cost**: opțional, pentru a încărca și legătura cu centrul de cost (deja prezent).
+Compilare tutti i dati quindi imponibile iva e anche iva indetraibile (eventualmente con valore 0,00)
 
-**Număr proiect**: opțional, pentru a încărca și legătura cu proiectul.
+---
 
-### Parametri
+Centro Aziendale: Opzionale, se intendo caricare anche il collegamento al centro di costo (già presente)
 
-Se poate insera valoarea 1 la **Recalculare**, pentru a recalcula datele începând de la registrul jurnal și pentru a genera angajamentele deschise din datele condițiilor de plată, dacă de exemplu lipsesc pentru că nu au fost importate separat.  
-În caz contrar, nu se recalculează și angajamentele nu vor fi create dacă nu sunt importate. (Opțiune recomandată pentru motive de performanță și timpi de procesare, mai ales când sunt multe rânduri).
+Numero commessa: Opzionale, se intendo caricare anche il collegamento
 
-:::note Observație
-Conturile trebuie să fie deja în baza de date, altfel mesajul de eroare nu va indica ce cont lipsește (se va referi întotdeauna la ultimul rând din file Excel).
+---
+
+**Nella tab Parametri** si può mettere il valore 1 su **Ricalcolo**, in questo modo fa un ricalcolo dei dati a partire dal libro giornale e quindi genera le partite aperte dai dati delle condizioni di pagamento se ad esempio mancano perché non sono stati importati separatamente. Altrimenti non fa alcun ricalcolo e le partite ad esempio non si creeranno se non vengono importate. (Opzione consigliata per ragioni di performance e tempistiche di elaborazione soprattutto con molte righe)
+
+Attenzione: i conti devono già esistere nel db altrimenti il messaggio di errore non mi dice quale conto manca ma si riferisce sempre all’ultima riga del foglio excel
