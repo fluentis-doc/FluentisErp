@@ -1,8 +1,8 @@
 ---
-title: Strumenti
+title: Tools
 sidebar_position: 1
 ---
 
-Il pannello degli **Strumenti** contiene la lista delle applicazioni che possono essere configurate e gestite all'interno di **Fluentis ERP**.
+The **Tools** panel contains the list of applications that can be configured and managed within **Fluentis ERP**.
 
-Quindi abbiamo dei comandi di accesso rapido alla gestione delle risorse dell'applicativo, per fare un esempio alla gestione degli utenti e delle restrizioni, anche se in genere chi configura questi parametri opera solitamente tramite un portale web, il portale [**ARM**](https://docs.fluentis.com/Arm/), specifico per questi scopi.
+Thus, we have quick access commands to manage the application's resources, for example, user and restriction management, although generally, those who configure these parameters usually operate through a web portal, the [**ARM**](https://docs.fluentis.com/Arm/) portal, specific for these purposes.
