@@ -1,17 +1,24 @@
 ---
-title: Generalități
-sidebar_label: Generalități
+title: Panoramica
+sidebar_label: Panoramica
 sidebar_position: 0
 ---
 
-*Supervisor* este un instrument care permite scrierea scripturile și este compus din diverse componente modificabile: 
+**Supervisor** è uno strumento che consente di creare scripts che possono essere eseguiti in maniera schedulata.  
+In particolare, è composto da quattro componenti distinti - i quali possono essere creati e riutilizzati dall'utente - che sono: 
 
-- **Activități** (scripts de diverse tipuri) 
+- [x] Attività
 
-- **Tasks** (conține mai multe *Activități*)
+- [x] Tasks
 
-- **Evenimente** (acțiuni planificate)
+- [x] Eventi
 
-- **Liste de distribuție** (liste de membri)
+- [x] Liste di Distribuzione
 
-Aplicația *Supervisor* este vizibilă în partea dreaptă a aplicației, în **Instrumente** > **Fluentis Supervisor**, doar dacă meniul **Fluentis Universal** a fost selectat.
+Il modulo di *Supervisor* si apre dal menu complementare (posizionato sulla parte destra dell'interfaccia) **Strumenti** > **Fluentis Supervisor**.
+
+:::danger Attenzione
+Il modulo di Supervisor è visibile nel menù complementare *Strumenti* solo se il menù **Fluentis Universal** è selezionato.
+:::
+
+![alt text](/img/it-it/applications/supervisor/supervisor1.png)
