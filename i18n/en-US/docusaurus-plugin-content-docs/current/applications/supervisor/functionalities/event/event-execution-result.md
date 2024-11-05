@@ -1,7 +1,10 @@
 ---
-title: Event Execution Result
-sidebar_label: Event Execution Result
+title: Risultato Esecuzione Evento
+sidebar_label: Risultato Esecuzione Evento
 sidebar_position: 3
 ---
 
-Within the [Event](event-intro) main *Form* are displayed some relevant data regarding the *Event* execution (comes handy because opening the *Object Form* is not needed). In particular inside the main *Form*'s grid there are *Last Execution Result* and *Maximum Duration* fields and it's possibile to view detailed information about the *Event* execution (errors, informations and logs) by clicking on the row and then expanding it. 
+All'interno della form principale dell'[Evento](event-intro) vengono visualizzati alcuni dati utili, relativi all'esecuzione dell'Evento.  
+In particolare all'interno della griglia principale della form sono presenti i campi *Risultato Ultima Esecuzione* e *Durata Massima* ed è possibile visualizzare informazioni dettagliate (errori, informazioni e logs) sull'esecuzione dell'*Evento* selezionando la riga e poi espandendola.
+
+![alt text](/img/it-it/applications/supervisor/supervisor15.png)
