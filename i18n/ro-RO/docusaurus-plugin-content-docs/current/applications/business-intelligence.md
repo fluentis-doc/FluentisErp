@@ -3,10 +3,14 @@ title: Business Intelligence
 sidebar_position: 3
 ---
 
+Nella sezione **Business Intelligence** troviamo la possibilità di esplorare i cubi di dati.
+
+Questa procedura è utile per effettuare analisi di tipo DRILL DOWN all'interno dei dati presenti nel database.
+
+Per default troveremo configurati i cubi di dati OLAP relativi alle Vendite, agli Acquisti, alla Produzione e all'Amministrazione.
 
 
-**Business Intelligence** oferă posibilitatea de a explora cuburile de date.
 
-Această procedură este utilă pentru efectuarea analizelor de tip DRILL DOWN în datele prezente în baza de date.
 
-În mod implicit, veți găsi configurate cuburile de date OLAP referitoare la Vânzări, Achiziții, Producție și Administrativ.
+
+
