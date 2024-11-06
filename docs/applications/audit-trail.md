@@ -3,41 +3,40 @@ title: Audit Trail
 sidebar_position: 2
 ---
 
+**Audit Trail** este o funcționalitate aplicativă integrată în Fluentis care permite configurarea unui sistem complet de log pentru a monitoriza toate operațiile efectuate în Fluentis de către orice operator. Această funcționalitate este deosebit de utilă și, în anumite sectoare de activitate chiar obligatorie, atunci când este necesară generarea documentației detaliate despre “cine” a efectuat o operațiune specifică, “ce” operație și “când”, adică în ce interval de timp.
 
+**Audit Trail** permite de asemenea înregistrarea detaliilor modificărilor efectuate, evidențiind ce valori au fost alterate și asupra căror date. Fluentis oferă deja două module de log preconfigurate care permit începerea imediată a urmăririi activităților, fără a fi necesare setări suplimentare:
 
-**Audit Trail** rappresenta una parte applicativa che permette di configurare una sorta di LOG in grado di tracciare qualsiasi operatività all'interno di Fluentis, da parte di qualsiasi operatore.
+1. **Monitorizare activitate**: afișează în timp real utilizatorii conectați la sistem și form-urile pe care le deschid.  
+   Actualizarea form-ului se poate efectua:  
+   - manual cu ajutorul butonului **Actualizare** sau 
+   - automat cu ajutorul butonului **Actualizare automată date**.
 
-Molto utile e talvolta obbligatoria in taluni settori aziendali nei quali si renda necessario produrre documenti relativi a “chi ha svolto”, “quale attività” e soprattutto “quando”, ovvero in che lasso temporale.
+2. **Cronologie activități**: înregistrează și memorează automat toate accesele utilizatorilor la diferitele ecrane (formulare) ale sistemului. Fiecare acces este urmărit și arhivat, garantând înregistrarea istorică a activităților.
 
-E' possibile produrre dei log evidenziando anche quali valori sono stati modificati relativamente a qualsiasi dato.
+### LOG-uri specifice
 
-Sono già disponibili, senza eseguire alcuna configurazione due utili form di log: 
+*Exemplu*: configurarea unui log de Audit Trail pentru a monitoriza modificările sau ștergerea datelor particulare din Fluentis ERP. De exemplu, această funcționalitate permite urmărirea modificărilor efectuate înregistrărilor contabile.
 
-**Monitoraggio attività** che visualizza in tempo reale gli utenti collegati al sistema e le form che stanno aprendo, il refresh della form può avvenire manualmente premendo il bottone **Aggiorna**, oppure in automatico dopo aver premuto **Aggiornamento automatico dati**.
+#### Procedură pentru configurare Log
 
-**Cronologia delle attività**: questo pannello traccia e memorizza in automatico tutti gli accessi a tutte le form da parte di qualsiasi utente. 
+1. Accesați **Configurare → Configurare Audit Trail** și faceți clic pe **Nou** pentru a crea noua configurare.
 
+2. Definiți logul, inserându-i un cod unic și o descriere.
 
-### LOG SPECIFICI
-
-E' possibile configurare un log per tenere sotto controllo le modifiche o le cancellazioni di dati particolari. Ad esempio possiamo monitorare le modifiche che vengono fatte sulle registrazioni contabili.
-
-Aprire Configurazione -> **Configurazione Audit Trail** e premere **Nuovo**
-
-Definire un codice ed una descrizione per il nuovo log specifico e quindi, nella griglia sottostante impostare il business object di riferimento (ed eventualmente, se necessario il suo oggetto padre).
-
-Definendo l'oggetto verranno visualizzate le proprietà relative e potranno essere selezionate con il flag quelle da tenere monitorate al fine di tracciare le modifiche o le cancellazioni.
-
+3. În grid-ul de configurare setați business object-ul de referință pentru care doriți să activați urmărirea (dacă este necesar, puteți specifica și părintele său). Această operație va determina afișarea proprietăților relative.
+   
 ![](/img/it-it/applications/audittrail/audittrail.png)
 
+Pentru **interogarea LOG-ului (interrogare il LOG)** deschide **Audit Trail (Audit Trail)**:
 
-Per **interrogare il LOG** aprire **Audit Trail**:
+În formular, dacă se apasă simplu **Căutare (Ricerca)**, vor fi vizualizate toate operațiunile supuse monitorizării și va fi vizibil tipul de operațiune: Inserare, modificare, ștergere.
 
-Nella form se viene premuto semplicemente **Ricerca** saranno visualizzate tutte le operazioni soggette e monitoraggio e sarà visibile i tipo di operazione: Inserimento, modifica, cancellazione.
+Pentru a vizualiza detaliile și astfel datele înainte și după modificare, **este necesar să selectezi** în zona de antet, atât tipul de LOG configurat anterior prin câmpul **Registru evenimente (Registro eventi)**, cât și **Obiectul (Oggetto)**. 
 
-Al fine di visualizzare il dettaglio e dunque il dato prima e dopo la modifica, **occorre selezionare** nella zona di testata, sia il tipo di LOG precedentemente configurato attraverso il campo **Registro eventi**, sia l'**Oggetto**.
+#### Procedură pentru interogare log
 
+1. În form-ul Audit Trail, click pe butonul **Căutare** pentru a vizualiza toate operațiunile monitorizate și detalii precum tipul operațiunii efectuate: inserare, modificare sau ștergere.  
+2. Vizualizarea detaliilor modificărilor. Pentru a accesa detaliile este necesar să filtrați în antet rezultatele după tipul de log (onfigurat anterior cu ajutorul câmpului **Registru evenimente**) și obiect.
 
 ![](/img/it-it/applications/audittrail/audittrail2.png)
-
-
