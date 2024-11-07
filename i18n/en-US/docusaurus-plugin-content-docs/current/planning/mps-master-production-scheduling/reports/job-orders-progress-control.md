@@ -1,40 +1,40 @@
 ---
-title: Verifica avanzamento commesse
+title: Check Progress of Orders
 sidebar_position: 6
 ---
 
-Questa form permette di lanciare il report che consente di visualizzare un prospetto di tutti i documenti legati ad una stessa commessa.
+This form allows you to launch the report that displays an overview of all documents related to the same order.
 
-Per ciascun documento è anche indicato lo stato di avanzamento dello stesso, tramite un quadratino colorato con il seguente significato:
+For each document, the progress status is also indicated by a colored square with the following meanings:
 
-- **Nero** se la commessa è in stato *Evasa*;
-- **Giallo** se la commessa è in stato *Esecutiva*;
-- **Verde** se la commessa è in stato *Lanciata*;
-- **Verde chiaro** se la commessa è in stato *Schedulata*;
-- **Bianco** in tutti gli altri casi.
+- **Black** if the order is in *Closed* status;
+- **Yellow** if the order is in *Executable* status;
+- **Green** if the order is in *Launched* status;
+- **Light green (Verde chiaro)** if the order is in *Scheduled* status;
+- **White (Bianco)** in all other cases.
 
-**Filtri**
+**Filters (Filtri)**
 
 In questa sezione è possibile inserire filtrare per: tipo di commessa di produzione, priorità approvvigionamento, data inizio e/o fine della commessa, ecc. 
 
-**Tipo di stampa**
+**Print Type (Tipo di stampa)**
 
-In questa sezione è possibile filtrare a seconda che la commessa sia in ritardo o scaduta, ed è possibile decidere il livello di dettaglio a cui scendere nella stampa (Analitica o Sintetica).
+In this section, you can filter based on whether the order is delayed or overdue, and you can decide the level of detail to be included in the printout (Analytical or Synthetic).
 
-**Dettagli**
+**Details (Dettagli)**
 
-In questa sezione è possibile decidere se visualizzare o meno i dettagli relativi all'area acquisto, produzione e conto lavoro, oltre che decidere se visualizzare o meno le commesse di vendita e gli ordini pianificati. 
+In this section, you can choose whether or not to display details related to the purchasing area, production, and job costing, as well as whether or not to display sales orders and planned orders.
 
-**Tipo approvvigionamento**
+**Procurement Type (Tipo approvvigionamento)**
 
-In questa sezione è possibile filtrare in base al tipo di approvvigionamento dell'articolo oggetto di commessa presente nei parametri MRP (Acquisto, Produzione, Conto lavoro).
+In this section, you can filter based on the type of procurement of the item subject to the order present in the MRP parameters (Purchase, Production, Job costing).
 
-**Stato commessa**
+**Order Status (Stato commessa)**
 
-In questa sezione è possibile filtrare in base allo stato della commessa di produzione (non esaminata, schedulata, lanciata, esecutiva, evasa, chiusa, annullata);
+In this section, you can filter based on the status of the production order (not reviewed, scheduled, launched, executable, fulfilled, closed, canceled);
 
-**Ordine**
+**Order (Ordine)**
 
-In questa sezione si può impostare l'ordine di raggruppamento delle informazioni da visualizzare nella stampa, scegliendo tra l'ordine in base alla commessa, al progetto, al conto, all'articolo,  alla data di inizio della commessa.
+In this section, you can set the order of grouping the information to be displayed in the printout, choosing between the order based on the order, the project, the account, the item, or the start date of the order.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+For all items not detailed in this document regarding the common operation of forms, please refer to the following link [Common functionalities, buttons, and fields](/docs/guide/common).
