@@ -1,30 +1,30 @@
 ---
-title: Ispis Proizvodnih naloga
-sidebar_position: 5
+title: Stampa Ordini Produzione
+sidebar_position: 6
 ---
 
-Ovaj obrazac omogućuje ispis popisa proizvodnih naloga, uz mogućnost detaljnog prikaza.
+Questa form consente di stampare una lista di ordini di produzione, con possibilità di dettagliare la visualizzazione.
 
 **Filtri**
 
-Osim uobičajenih filtara, možete odabrati putem odgovarajuće opcije želite li prikazati i *Naloge za održavanje*.  
+A parte i filtri comuni, si può scegliere, tramite l'apposito flag, se si vogliono visualizzare anche gli *Ordini di manutenzione*.
 
-**Radovi**
+**Lavorazioni**
 
-U ovom odjeljku možete označiti želite li prikazati sve proizvodne naloge bez razlike ili samo one koji su istekli ili kasne.  
+In questa sezione, è possibile andare ad indicare tramite dei flag, se si vogliono visualizzare tutti gli ordini di produzione indistintamente oppure si può scegliere se visualizzare solamente gli ordini scaduti o in ritardo.
 
-**Sortiranje**
+**Ordinamento**
 
-U ovom odjeljku možete odabrati prema čemu će se podaci unutar ispisa sortirati. Možete odabrati sortiranje prema broju naloga, artiklu ili njegovom opisu, datumu početka/završetka ili prema narudžbi;  
+In questa sezione è possibile scegliere tramite gli appositi flag, su cosa basare l'ordinamento dei dati all'interno della stampa. Si potrà quindi scegliere se ordinare i risultati in base al numero d'ordine, all'articolo o alla sua descrizione, alla data inizio/data fine oppure in base alla commessa;
 
-**Detalji**
+**Dettaglio**
 
-U ovom odjeljku možete odlučiti želite li prikazati popis materijala sadržanih u nalogu i predviđenih faza. Također je moguće prikazati uključeno osoblje i povezane prijave. Ovi su detalji predviđeni samo za planirane proizvodne naloge i naloge po narudžbi.  
+In questa sezione è possibile decidere, tramite gli appositi flag, se visualizzare o meno la lista dei materiali contenuti nell'ordine e delle fasi previste; è possibile anche visualizzare il personale coinvolto e le segnalazioni collegate. Ovviamente questi dettagli sono previsti solamente per gli ordini pianificati di produzione e di conto lavoro.
 
-**Status naloga**
+**Stato ordine**
 
-U ovom odjeljku možete odabrati želite li prikazati sve naloge bez obzira na njihov status ili samo one s određenim statusima kao što su Pokrenuto, U tijeku, Završeno i Arhivirano.  
+Infine in questa sezione è pssibile scegliere, tramite gli appositi flag, se visualizzare tutti gli ordini indipendentemente dal loro stato, oppure se visualizzare solamente quelli aventi determinati stati tra Lanciato, Esecutivo, Evaso e Storicizzato.
 
-Nakon što postavite različite parametre filtra i prikaza, potrebno je odabrati u alatnoj traci vrstu ispisa koju želite pokrenuti (samo ako je predviđeno više vrsta) putem odgovarajuće opcije, te zatim pokrenuti pregled ispisa ili direktno ispis dokumenta.  
+Una volta impostati i vari parametri di filtro e visualizzazione, basterà andare a selezionare nella ribbon bar tramite il tipo di stampa che si vuole lanciare (solo nel caso vi siano più tipologie previste) tramite l'apposita combo, e successivamente lanciare l'anteprima di stampa o direttamente la stampa del documento.
 
-Za detalje o uobičajenom funkcioniranju formi pogledajte poveznicu [Funkcionalnosti, gumbi i uobičajena polja](/docs/guide/common).  
+Per dettagli sul funzionamento comune delle form fare riferimento al link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
