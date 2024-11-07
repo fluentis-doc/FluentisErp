@@ -10,10 +10,10 @@ For each document, the progress status is also indicated by a colored square wit
 - **Black** if the order is in *Closed* status;
 - **Yellow** if the order is in *Executable* status;
 - **Green** if the order is in *Launched* status;
-- **Light green (Verde chiaro)** if the order is in *Scheduled* status;
-- **White (Bianco)** in all other cases.
+- **Light green** if the order is in *Scheduled* status;
+- **White** in all other cases.
 
-**Filters (Filtri)**
+**Filters**
 
 In questa sezione è possibile inserire filtrare per: tipo di commessa di produzione, priorità approvvigionamento, data inizio e/o fine della commessa, ecc. 
 
