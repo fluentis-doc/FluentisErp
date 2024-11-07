@@ -1,83 +1,83 @@
 ---
-title: Radni nalog jednoproizvoda
+title: Commessa Monoprodotto
 sidebar_position: 4
 ---
 
-Obrazac se otvara putem putanje  **Planiranje > Proizvodne narudžbe** klikom na gumb  **Umetni narudžbu** unutar obrasca **Proizvodne narudžbe**.  
+La form si apre tramite il percorso **Pianificazione > Commesse di produzione** cliccando nella form **Commesse di produzione** sull'pulsante **Inserisci commessa**.  
 
-## Posebni gumbi
+## Pulsanti specifici
 
-> [Parametri MRP](/docs/configurations/parameters/production/mrp-parameters/search-mrp-parameters):omogućuje otvaranje zaslona s parametrima MRP (materijalni zahtjevi za proizvodnju) za artikl;      
-> [Sastavnica materijala](/docs/erp-home/registers/production/bill-of-materials/search-and-insert-assemblies): omogućuje otvaranje zaslona s baznom strukturom proizvoda za artikl;   
-> [Proizvodni ciklus](/docs/erp-home/registers/production/routes/new-route): omogućuje prikaz radnog ciklusa i pripadajućih faza proizvodnje za artikl.
+> [Parametri MRP](/docs/configurations/parameters/production/mrp-parameters/search-mrp-parameters): tramite questo pulsante è possibile aprire la schermata relativa ai parametri MRP dell'articolo;      
+> [Distinta base](/docs/erp-home/registers/production/bill-of-materials/search-and-insert-assemblies): permette di aprire la schermata relativa alla distinta base dell'articolo;  
+> [Cicli di lavoro](/docs/erp-home/registers/production/routes/new-route): permette di visualizzare il ciclo di lavoro e le relative fasi di produzione dell'articolo.
 
-## Upravljanje narudžbama jednoproizvoda
+## Gestione commesse monoprodotto
 
-Unutar ovog obrasca se navode glavni podaci koje mora sadržavati proizvodna narudžba.
+All'interno di questo tab si vanno ad indicare i dati principali che deve contenere la commessa di produzione.
 
-**Tip radnog naloga**: predložen je zadani tip kao zadano;    
+**Tipo commessa**: viene proposto il tipo predefinito come tipo di default;    
 
-**Broj**: označava progresivni broj narudžbe koji se automatski predlaže;     
+**Numero**: indica il numero progressivo della commessa, che viene proposto in automatico;     
 
-**Godina**: automatski se predlaže trenutna godina;   
+**Anno**: viene proposto in automatico quello corrente;   
 
-**Klijent**: označava računske podatke/podsračunske podatke i opis klijenta;    
+**Cliente**: indica i riferimenti di conto/sottoconto e descrizione del cliente;    
 
-**Datum**: automatski se predlaže trenutni datum;        
+**Data**: viene proposta in automatico quella corrente;        
 
-**Obvezna**: ako je aktivno, označava je li ova narudžba od temeljne važnosti;    
+**Tassativa**: se attivo, indica se questa commessa sia di importanza fondamentale;    
 
-**Status podnaloga**: Sistem automatski predlaže *Nije ispitano*, stanje koje narudžba dobiva odmah nakon što se stvori;   
+**Stato commessa**: il sistema in automatico propone come *Non esaminata*, stato che la commessa assume appena creata;   
 
-Ostali statusi koje može preuzeti su:  
+Gli altri stati che può assumere sono:
 
-- **Vremenski raspoređeno**: narudžba prelazi u ovaj status nakon što je prošla kroz proces Opće rasporedbe;    
-- **Pokrenuto**: narudžba prelazi u ovaj status nakon što je barem jedna od planiranih proizvodnih narudžbi koje su generirane tijekom Opće rasporedbe bila puštena (ne smiju biti pušteni drugi planirani redovi kupnje ili radnog naloga, inače narudžba prelazi u izvršni status);        
-- **Izvršno**: narudžba prelazi u ovaj status nakon što je barem jedan od generiranih proizvodnih naloga postao izvršan ili nakon što je barem jedan od planiranih redova kupnje ili radnog naloga postao izvršan;     
-- **Izvršeno**: Narudžba prelazi u ovaj status nakon što je proizvodni nalog generiran za artikl koji je predmet narudžbe prešao u status *Izvršeno*;   
-- **Povijesni**: narudžba može biti ručno postavljena u ovaj status kako se ne bi prikazivala prilikom pretraživanja *Izvršenih* narudžbi;  
-- **Otkazano**: narudžba može biti ručno postavljena u ovaj status umjesto da se potpuno obriše, kako bi označila da narudžba, koja je prvotno bila planirana, ipak nije uvedena u proizvodnju.
+- **Schedulata**: la commessa passa in questo stato dopo che ha subito il processo di Schedulazione Generale;  
+- **Lanciata**: la commessa passa in questo stato dopo che almeno uno degli ordini pianificati di produzione da essa generati durante la Schedulazione Generale sono stati rilasciati (non devono essere stati rilasciati altri ordini pianificati di tipo acquisto o conto lavoro altrimenti la commessa passa in stato esecutivo);      
+- **Esecutiva**: la commessa passa in questo stato dopo che almeno uno degli ordini di produzione da essa generati è stato rilasciato ed è diventato esecutivo, oppure dopo che almeno uno degli ordini pianificati di acquisto o conto lavoro da essa generati è stato rilasciato;   
+- **Evasa**: la commessa passa in questo stato dopo che l'ordine di produzione generato per l'articolo oggetto della commessa è passato in stato *Evaso*;   
+- **Storicizzata**: la commessa può essere messa in questo stato manualmente per fare in modo che non esca più quando si effettua una ricerca delle commesse *Evase*;  
+- **Annullata**: la commessa può essere messa in questo stato manualmente, anziché eliminarla del tutto, per indicare che la commessa, che inizialmente era stata prevista, non è poi stata portata in produzione.
 
-**Opis**: omogućuje unos opisa vezanog uz narudžbu;        
+**Descrizione**: permette di inserire una descrizione relativa alla commessa;        
 
-**Tip nabave**: obično odgovara vrsti nabave artikla unesenog u proizvodnu narudžbu. Vrsta nabave artikla označena je unutar [MRP parametara](/docs/configurations/parameters/production/mrp-parameters/search-mrp-parameters) istog;     
+**Tipo approvvigionamento**: generalmente coincide con il tipo di approvvigionamento dell'articolo inserito nella commessa di produzione. Il tipo di approvvigionamento dell'articolo viene indicato all'interno dei [Parametri MRP](/docs/configurations/parameters/production/mrp-parameters/search-mrp-parameters) di quest'ultimo;     
 
-**Prioritet nabave**: označava prioritet nabave;           
+**Priorità approvvigionamento**: indica la priorità dell'approvvigionamento;           
        
-**Projekti**: označava projekt u koji je narudžba uključena;       
+**Progetti**: indica il progetto in cui è inserita la commessa;       
 
-**Mjesto proizvodnje**: označava lokaciju proizvodnje gdje će se narudžba proizvesti.  Na ovom polju postoji kontrola koja, u slučaju da narudžba proizlazi iz narudžbe kupca, provjerava da li skladište navedeno u retku narudžbe kupca pripada istoj proizvodnoj lokaciji naznačenoj u proizvodnoj narudžbi.  
+**Sito Produzione**: indica il sito di produzione in cui verrà prodotta la commessa. Su questo campo è presente un controllo che, nel caso in cui la commessa nasca da un ordine cliente, verifica che il magazzino indicato sulla riga dell’ordine cliente appartenga allo stesso sito produttivo indicato nella commessa di produzione.  
 
-**Datum kad je roba spremna**: u ovoj stupcu prikazan je datum spremne robe koji je postavljen u retku klijentske narudžbe čiji se detalji prikazuju;      
+**Data merce pronta**: in questa colonna viene visualizzata la data della merce pronta che è stata impostata nella riga dell'ordine cliente di cui viene esposto il dettaglio;      
 
-**Predloženi datum**: polje u kojem se prikazuje datum koji je sustav predložio u slučaju da je korisnik zakazao narudžbu koristeći parametar *Provjeri zakašnjele dokumente s ATP-om*postavljajući, također u parametrima *općeg rasporeda*, *Početni datum MS* (Master Scheduling). Predloženi datum je onaj koji korisnik zatim može odlučiti da postane predviđeni datum završetka narudžbe;
+**Data suggerita**: un campo in cui compare la data suggerita dal sistema nel caso in cui l'utente abbia schedulato la commessa utilizzando il parametro *Controlla documenti in ritardo con ATP* e avendo impostato, sempre nei parametri di *Schedulazione generale*, una *Data Inizio MS* (Master Scheduling). La data suggerita è quella che poi l'utente ha la facoltà di decidere che diventi la data di prevista fine della commessa;
 
-**Datum radova predviđen Početak/Kraj**: u ovim poljima prikazuju se predviđeni datumi početka/završetka *Proizvodne narudžbe*. Dok god proizvodna narudžba ostaje u statusu *Nije pregledana*, ovi datumi su identični i jednaki su datumu spremnosti robe iz retka Narudžbe kupca iz kojeg je narudžba generirana, ili jednaki datumu završetka Prodajnih predviđanja iz kojeg je narudžba generirana. Nakon što je proizvodna narudžba raspoređena, predviđeni datum početka narudžbe podudara se s predviđenim datumom početka prve planirane narudžbe koja je generirana rasporedom narudžbe. Konačno, napominje se da u slučaju ručnog unosa proizvodne narudžbe, korisnik mora ručno unijeti ovaj podatak, inače neće biti moguće spremiti narudžbu;
+**Data lavorazione prevista Inizio/Fine**: in questi campi compaiono le date di previsto inizio/fine della *Commessa di produzione*. Fino a quando la Commessa di Produzione resta in stato *Non esaminata*, queste date sono identiche tra loro ed uguali alla data di merce pronta della riga dell'Ordine Cliente da cui la commessa è stata generata, oppure uguali alla data di fine della Previsione di Vendita da cui la commessa è stata generata. Dopo che la Commessa di Produzione è stata schedulata, la data di previsto inizio della commessa coincide con la data di previsto inizio del primo ordine pianificato che viene generato dalla schedulazione della commessa. Infine, si ricorda che in caso di inserimento manuale della Commessa di Produzione, l'utente è tenuto ad inserire questo dato manualmente, pena l'impossibilità di salvare la commessa stessa;
 
-**Stvarni datum radova Početak/Kraj**: u ovim poljima pojavljuju se datumi početka/završetka stvarne obrade, odnosno, datumi prve proizvodne prijave naloga za proizvodnju generiranog iz naloga za proizvodnju i datumi zadnje proizvodne prijave koja je uzrokovala konačno zatvaranje naloga za proizvodnju čiji je artikl isti kao i nalog za proizvodnju. Naravno, datum stvarnog završetka prisutan je samo u slučaju kada je nalog u statusu *Izvršeno*;
+**Data Lavorazione effettiva Inizio/Fine**: in questi campi compaiono le date di Inizio/Fine della lavorazione effettiva, cioè rispettivamente la data della prima segnalazione di produzione di un ordine di produzione generato dalla commessa e la data dell'ultima segnalazione di produzione che ha causato la chiusura definitiva dell'ordine di produzione il cui articolo è lo stesso della Commessa di Produzione. Ovviamente la data di effettiva fine è presente solo nel caso in cui la commessa si trovi nello stato di *Evasa*;
 
-*Obavezna polja za generiranje proizvodne narudžbe*: **Artikl** (s pripadajućom klasom, kodom i opisom), **Verzija**, **Količina** narudžbe i pripadajuća **Jedinica mjere**.  
-Na kraju, postoji niz polja koja se preuzimaju iz [MRP Parametara](/docs/configurations/parameters/production/mrp-parameters/search-mrp-parameters)  odabranog artikla, kao što su: **Ciklus**, **Ekonomski lot** s pripadajućim **Višekratnicima**, **Vrijeme isporuke**, **Postotak otpada** na količinu i **Tip nabave**.
-Polja **Početak / Kraj prognoze** označavaju početak i kraj razdoblja uzetog u obzir za prognozu prodaje koja je generirala tu narudžbu. 
+*Campi obbligatori per la generazione della commessa di produzione*: **Articolo** (con il suo relative classe, codice e descrizione), **Versione**, **Quantità** della commessa e la relativa **Unità di misura**.  
+Infine vi sono una serie di campi che vengono tutti ripresi dai [Parametri MRP](/docs/configurations/parameters/production/mrp-parameters/search-mrp-parameters)  dell'artcolo selezionato quali: il **Ciclo**, il **Lotto economico** con i relativi **Multipli**, il **Lead time**, la **Percentuale di scarto** sulla quantità e il **Tipo approvvigionamento**.
+I campi **Inizio / Fine previsione** indicano l'inizio e fine del periodo preso in considerazione della previsione di vendita che ha generato quella commessa. 
 
-### Referencije narudžbi kupaca
+### Riferimenti ordini clienti
 
-Tablica sadrži samo za čitanje mrežu u kojoj se prikazuju narudžbe kupaca povezane s referentnom proizvodnom narudžbom kada je narudžba generirana iz jednog ili više redaka narudžbi kupaca.   
-**Tip/Godina/Broj**: : u ovim stupcima prikazuju se *Tip/Godina/Broj* narudžbe kupca u kojoj je sadržan redak za koji se prikazuje detalj;  
-**Br./Količina/Jedinica mjere**: u ovom stupcu prikazuje se količina reda narudžbe kupca za koji se prikazuje detalj;  
-**Datum kad je roba spremna**: u ovom stupcu prikazuje se datum spremnosti robe koji je postavljen u redu narudžbe kupca za koji se prikazuje detalj;  
-**Konto**: u ovom stupcu prikazuju se konto i podkonto kupca na čije ime glasi narudžba kupca u kojoj je sadržan redak za koji se prikazuje detalj.  
+Il tab contiene una griglia di sola lettura, in cui compaiono gli ordini clienti collegati alla commessa di produzione di riferimento quando la commessa è stata generata da una o più righe ordini clienti.  
+**Tipo/Anno/Numero**: in queste colonne vengono visualizzati il *Tipo/Anno/Numero* dell'ordine cliente in cui è contenuta la riga di cui viene esposto il dettaglio;  
+**N./Quantità/Unità di misura**: in questa colonna viene visualizzata la quantità della riga dell'ordine cliente di cui viene esposto il dettaglio;  
+**Data merce pronta**: in questa colonna viene visualizzata la data della merce pronta che è stata impostata nella riga dell'ordine cliente di cui viene esposto il dettaglio;  
+**Conto**: in questa colonna vengono visualizzati conto e sottoconto del cliente a cui è intestato l'ordine cliente in cui è contenuta la riga di cui viene esposto il dettaglio.
 
-### Dodatni podaci 
+### Extra data
 
-Ova kartica također sadrži mrežu u kojoj će biti prikazani svi dodatni podaci povezani s artiklom koji se nalazi u proizvodnoj narudžbi.
+Anche questo tab è costituito da una griglia in cui verranno riportati tutti gli extra data collegati all'articolo presente nella commessa di produzione.
 
-##  Obračun troškova
+##  Costificazione
 
-Sve informacije vezane uz  **Obračun troškova** mogu se pronaći na stranici [Obračun troškova](/docs/planning/mps-master-production-scheduling/production-job-orders/valorization).
+Tutte le informazioni relative alla **Costificazione** si possono consultare nella pagina [Costificazione](/docs/planning/mps-master-production-scheduling/production-job-orders/valorization).
 
-## Dodatni podaci 
+## Extra data
 
-Ova kartica, koja se nalazi uz karticu *Upravljanje radnim nalozima s jednim proizvodom*, sadrži sve [dodatne podatke](/docs/configurations/utility/extra-data/extradata/search-extradata) povezane s proizvodnom narudžbom.  
+Questo tab, che affianca il tab *Gestione commesse monoprodotto*, contiene tutto l'insieme degli [extra data](/docs/configurations/utility/extra-data/extradata/search-extradata) collegati alla commessa di produzione.
 
-Za detalje o zajedničkom radu obrazaca pogledajte poveznicu [Funkcionalnosti, gumbi i zajednička polja](/docs/guide/common).
+Per i dettagli sul funzionamento comune delle form fare riferimento al link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).

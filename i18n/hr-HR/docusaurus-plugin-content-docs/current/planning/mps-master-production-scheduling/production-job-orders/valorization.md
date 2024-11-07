@@ -1,143 +1,142 @@
 ---
-title: Obračun troškova
+title: Costificazione
 sidebar_position: 6
 ---
 
-**Preliminarna Parametrizacija**   
+**Parametrizzazioni preliminari**   
 
-Prije nastavka, molimo pogledajte kako je naznačeno na sljedećim stranicama u vezi s *Obračun troškova proizvodnih naloga*:    
+Prima di procedere vedasi quando indicato nelle seguenti pagine in merito alla *Costificazione delle commesse di produzione*:    
 
-> [Parametri MS -> kartica cijenjenje narudžbe](/docs/configurations/parameters/production/mps-parameters)     
-> [Tipovi dokumenata](/docs/configurations/tables/production/documents-types)     
-> [Vrsta cijenjenja narudžbe](/docs/configurations/tables/production/production-job-order-cost-type)      
-> [Parametri podizvođača -> Vrijednost radnog materijala po trošku](/docs/configurations/parameters/production/subcontractor-parameters/)       
+> [Parametri MS -> tab costificazione commessa](/docs/configurations/parameters/production/mps-parameters)     
+> [Tipi documenti](/docs/configurations/tables/production/documents-types)     
+> [Tipo costificazione commessa](/docs/configurations/tables/production/production-job-order-cost-type)      
+> [Parametri conto lavoro -> Valor. lavorazione materiali a costo](/docs/configurations/parameters/production/subcontractor-parameters/)       
 
-*Specifični gumbi*:
+*Pulsanti specifici*:
  
-> **Dodatni troškovi**: omogućuje unos dodatnih troškova koji se mogu automatski predložiti u svakom narednom cijenjenju (ovi troškovi nisu povezani s pojedinom narudžbom, već su globalni). Ti troškovi se dijele na *Direktni troškovi*, *Opći troškovi* i *Ostali troškovi*. Oni će se automatski prikazati u odgovarajućim sekcijama procijenjenih i stvarnih troškova na kartici *Ukupni troškovi*;     
-> **Izvrši obračun troškova**: omogućuje pokretanje postupka cijenjenja narudžbi;    
-> **Umetni obračunsku kalkulaciju**: omogućuje unos novog cijenjenja; automatski će se unijeti svi zadani podaci uneseni u fazi preliminarnog parametriziranja, koje se naravno mogu ručno mijenjati za pojedino cijenjenje;     
-> **Izbriši obračunsku kalkulaciju**: omogućuje brisanje već stvorenog cijenjenja;     
-> **Proširite obračun troškova**: omogućuje raspakiranje stabla dokumenata već stvorenog cijenjenja.  
+> **Costi aggiuntivi**: permette di inserire dei costi aggiuntivi che possono essere proposti di default in ogni successiva costificazione (questi costi non sono legati alla singola commessa, ma sono globali). Tali costi si dividono in *Costi diretti*, *Costi generali* e *Altri costi*. Questi verranno riportati di default nelle corrispondenti sezioni di costi preventivi e consuntivi nel tab *Costi totali*;     
+> **Esegui costificazione**: permette di lanciare la procedura di costificazione commesse;    
+> **Inserisci costificazione**: permette di inserire una nuova costificazione; in automatico verrnno inseriti tutti i dati di default inseriti nella fase di parametrizzazione preliminare, che ovviamente possono essere variati manualmente per la singola costificazione;     
+> **Cancella costificazione**: permette di cancellare una costificazione già creata;     
+> **Esplodi costificazione**: permette di esplodere l'albero dei documenti di una costificazione già creata. 
 
-:::note NAPOMENA
-Kartica **Obračun troškova** (koja se odnosi na cijenjenje troškova) prisutna je u upravljanju kako jednoproizvodnim tako i višeproizvodnim narudžbama; u slučaju višeproizvodnih narudžbi, cijenjenje će uzeti u obzir sve artikle prisutne u toj narudžbi.  
+:::note Nota
+Il tab **Costificazione** (realtavio alla costificazione) è presente nella gestione sia delle commesse monoprodotto che in quella delle multiprodotto; nel caso delle multiprodotto la costificazione perderà in esame tutti gli articoli presenti in quella commessa.
 ::: 
 
-U gornjem dijelu obrasca nalazi se mreža koja sadrži popis svih pokrenutih valorizacija za tu narudžbu, dok se na desnoj strani prikazuju opće informacije o odabranoj narudžbi.   
-Donji dio obrasca sastoji se od sljedećih kartica:  
+Nella parte superiore della form è presente una griglia contenente l'elenco di tutte le valorizzazioni lanciate per quella commessa, mentre nella parte destra vengono mostrate le informazioni generali relative alla commessa selezionata.
+La parte inferiore della form, invece, si compone dei seguenti tab:
 
-## Detalji troškova  
+## Dettaglio costi
 
-U ovoj kartici prikazuju se detaljne informacije o troškovima povezane s odabranim cijenjenjem na vrhu obrasca.   
-U lijevoj tablici možete vidjeti stablo dokumenata koji čine cijenjenje s sljedećim informacijama:  
-**Vrsta dokumenta**: označava vrstu dokumenta;      
-**Godina**: označava godinu dokumenta;     
-**Broj**: označava broj dokumenta;     
-**Lot**: označava broj lota dokumenta (ako je dostupno);       
-**Vrsta**: označava kod vrste dokumenta;      
-**Razred**: označava razred artikla u dokumentu;       
-**Šifra artikla**: označava šifru artikla u dokumentu;      
-**Varijanta**: označava varijantu artikla u dokumentu;        
-**Jedinica mjere**: označava jedinicu mjere artikla u dokumentu;        
-**Količina**: označava količinu artikla u dokumentu;      
-**Ukupni planirani trošak**: označava ukupni planirani trošak artikla (predviđeno) u dokumentu;        
-**Ukupni stvarni trošak**: označava ukupni stvarni trošak artikla (stvarno) u dokumentu;        
-**Opis artikla**: označava opis artikla u dokumentu;      
-**Opis varijante**: označava opis varijante artikla u dokumentu.     
+In questo tab vengono mostrate le informazioni di dettglio dei costi relativi alla costificazione selezionata nella parte superiore della form.
+Nella tabella di sinistra è possibile visualizzare l'albero dei documenti che compongono la costificazione con le seguenti informazioni:
+**Tipo documento**: indica la tipologia del documento;    
+**Anno**: indica l'anno del documento;     
+**Numero**: indica il numero del documento;     
+**Lotto**: indica il numero di lotto del documento (se presente);     
+**Tipo**: indica il codice della tipologia del documento;    
+**Classe**: indica la classe dell'articolo presente nel documento;     
+**Codice articolo**: indica il codice dell'articolo presente nel documento;    
+**Variante**: indica la variante dell'articolo presente nel documento;      
+**U.M.**: indica l'unità di misura dell'articolo presente nel documento;      
+**Quantità**: indica la quantità dell'articolo presente nel documento;      
+**Cst. tot. previsto**: indica il costo totale previsto (preventivo) dell'articolo presente nel documento;      
+**Cst. tot. effettivo**: indica il costo totale effettivo (consuntivo) dell'articolo presente nel documento;      
+**Descrizione articolo**: indica la descrizione dell'articolo presente nel documento;      
+**Descrizione variante**: indica la descrizione della variante dell'articolo presente nel documento.      
 
-Nakon što odaberete dokument iz stabla, u desnom dijelu obrasca prikazat će se sve detaljne informacije vezane uz taj dokument, podijeljene po:  
+Una volta selezionato un documento dall'albero, nella parte destra della form vengono visualizzate tutte le informazioni di dettaglio relative allo stesso, suddivise per:
 
-#### *Interna obrada*  
+#### *Lavorazioni interne*  
 
-**Centar rada**: označava kod radnog centra;    
-**Stroj**: označava kod stroja;       
-**Grupa radne snage**: označava kod radne skupine;        
-**Ref. Dokument**: označava referencu dokumenta;    
-**J.M. Vremena**:označava jedinicu mjere vremena;      
-**Predviđeno podešavanje vremena**: označava predviđeno vrijeme podešavanja;       
-**Stvarno podešavanje vremena**: označava stvarno vrijeme podešavanja;      
-**Predviđeno vrijeme stroja**: označava predviđeno vrijeme stroja;     
-**Stvarno vrijeme stroja**: označava stvarno vrijeme stroja;      
-**Predviđeno vrijeme radne skupine**: označava predviđeno vrijeme radne skupine;      
-**Stvarno vrijeme radne skupine**: označava stvarno vrijeme radne skupine;      
-**Opis Centar rada**: označava opis radnog centra;   
-**Opis stroja**: označava opis stroja;      
-**Opis Grupe radne snage**: označava opis radne skupine;          
-**Ukupni predviđeni trošak**: označava ukupni predviđeni trošak;     
-**Ukupni stvarni trošak**: označava ukupni stvarni trošak.  
+**C.D.L.**: indica il codice del centro di lavoro;    
+**Macchina**: indica il codice della macchina;     
+**Grp MDO**: indica il codice del gruppo manodopera;     
+**Rif. Documento**: indica il riferimento del documento;    
+**U.M. Tempi**: indica l'unità di misura dei tempi;    
+**T. Setup previsto**: indica il tempo di setup previsto;     
+**T. Setup effettivo**: indica il tempo di setup effettivo;    
+**T. Macchina previsto**: indica il tempo macchina previsto;    
+**T. Macchina effettivo**: indica il tempo macchina effettivo;     
+**T. MDO previsto**: indica il tempo manodopera previsto;    
+**T. MDO effettivo**: indica il tempo manodopera effettivo;    
+**Descrizione C.D.L.**: indica la descrizione dell'articolo del centro di lavoro; 
+**Descrizione macchina**: indica la descrizione dalla macchina;     
+**Descrizione Grp. MDO**: indica la descrizione del gruppo manodopera;        
+**Cst. tot. previsto**: indica il costo totale previsto;    
+**Cst. tot. effettivo**: indica il costo totale previsto. 
 
-:::note NAPOMENA 
-U slučaju da je stvarni radni centar različit od predviđenog, u ovoj će tablici biti prikazana dva reda: jedan s predviđenim radnim centrom i pripadajućim troškovima, a drugi sa stvarnim radnim centrom.  
+:::note Nota
+Nel caso in cui il centro di lavoro effettivo sia diverso da quello previsto, in questa tabella verranno visualizzate due righe, una con il centro di lavoro previsto con i relativi costi ed una con il centro di lavoro effettivo. 
 ::: 
 
-#### *Vanjska obrada*
+#### *Lavorazioni esterne*
 
-**Podizvođač**: označava podizvođača;   
-**Ref. Dokument**: označava referencu dokumenta;       
-**J.M.**: označava jedinicu mjere upravljanja;     
-**Predviđena količina**: označava predviđenu količinu za proizvodnju;    
-**Stvarna količina**: označava stvarno proizvedenu količinu;    
-**Predviđena jedinična cijena**: označava predviđenu jediničnu cijenu;    
-**Stvarna jedinična cijena**: označava stvarnu jediničnu cijenu;      
-**Ukupni predviđeni trošak**: označava ukupni predviđeni trošak;      
-**Ukupni stvarni trošak**: označava ukupni stvarni trošak.     
+**Terzista**: indica il terzista; 
+**Rif. Documento**: indica il riferimento del documento;    
+**U.M.**: indica l'unità di misura gestionale;    
+**Q.tà prevista**: indica la quantità prevista da produrre;    
+**Q.tà effettiva**: indica la quantità effettiva prodotta;    
+**Prz. unit. previsto**: indica il prezzo unitario previsto;    
+**Prz. Unit. effettivo**: indica il prezzo unitario effettivo;    
+**Cst. tot. previsto**: indica il costo totale previsto;    
+**Cst. tot. effettivo**: indica il costo totale previsto.    
 
-#### *Materijali*    
+#### *Materiali*    
 
-**Razred**: označava razred artikla;     
-**Šifra artikla**: označava šifru artikla;    
-**Opis artikla**:označava opis artikla;      
-**Ref. Dokument**: označava referencu dokumenta;    
-**J.M.**: označava jedinicu mjere upravljanja;    
-**Predviđena količina**: označava predviđenu količinu za kupnju;    
-**Stvarna količina**: označava stvarno kupljenu količinu;    
-**Predviđena jedinična cijena**: označava predviđenu jediničnu cijenu;    
-**Stvarna jedinična cijena**: označava stvarnu jediničnu cijenu;      
-**Varijanta**: označava varijantu artikla;     
-**Opis varijante**: označava opis varijante artikla;    
-**Ukupni predviđeni trošak**: označava ukupni predviđeni trošak;    
-**Ukupni stvarni trošak**: označava ukupni stvarni trošak.  
+**Classe**: indica la classe dell'articolo;     
+**Codice articolo**: indica il codice dell'articolo;    
+**Descrizione articolo**: indica la descrizione dell'articolo;      
+**Rif. Documento**: indica il riferimento del documento;    
+**U.M.**: indica l'unità di misura gestionale;    
+**Q.tà prevista**: indica la quantità prevista da acquistare;    
+**Q.tà effettiva**: indica la quantità effettiva acquistata;    
+**Prz. unit. previsto**: indica il prezzo unitario previsto;    
+**Prz. Unit. effettivo**: indica il prezzo unitario effettivo;     
+**Variante**: indica la variante dell'articolo;     
+**Descrizione variante**: indica la descrizione della variante dell'articolo;   
+**Cst. tot. previsto**: indica il costo totale previsto;    
+**Cst. tot. effettivo**: indica il costo totale previsto.   
 
-U donjem dijelu obrasca nalazi se expander nazvan **Detalji troškova dokumenta** u kojem su navedene sljedeće informacije:  
+Nella parte inferiore della form è presente un expander denominato **Dettaglio costo documento** nel quale vengono riportate le seguenti informazioni:
 
-**Trošak materijala predviđeni / stvarni po jedinici**: označava predviđeni / stvarni jedinični trošak materijala vezanih uz odabrani dokument;      
-**Trošak obrade predviđeni / stvarni po jedinici**: označava predviđeni / stvarni jedinični trošak obrade (unutarnje i vanjske) vezane uz odabrani dokument;   
-**Ukupan trošak predviđeni / stvarni po jedinici**: označava ukupan predviđeni / stvarni jedinični trošak (materijali i obrade) vezan uz odabrani dokument;     
-**Trošak materijala predviđeni / stvarni ukupno**: označava predviđeni / stvarni ukupni trošak materijala vezanih uz odabrani dokument;     
-**Trošak obrade predviđeni / stvarni ukupno**: označava predviđeni / stvarni ukupni trošak obrade (unutarnje i vanjske) vezane uz odabrani dokument;    
-**Ukupan trošak predviđeni / stvarni ukupno**: označava ukupan predviđeni / stvarni trošak (materijali i obrade) vezan uz odabrani dokument.  
+**Costo materiali preventivo / effettivo unitario**: indica il costo unitario dei materiali preventivo / effettivo relativo al documento selezionato;    
+**Costo lavorazione preventivo / effettivo unitario**: indica il costo unitario delle lavorazioni (interne ed esterne) preventivo / effettivo relativo al documento selezionato;  
+**Totale costo preventivo / effettivo unitario**: indica il totale costo unitario (materiali e lavorazioni) preventivo / effettivo relativo al documento selezionato;    
+**Costo materiali preventivo / effettivo totale**: indica il costo unitario dei materiali preventivo / effettivo relativo al documento selezionato;    
+**Costo lavorazione preventivo / effettivo totale**: indica il costo unitario delle lavorazioni (interne ed esterne) preventivo / effettivo relativo al documento selezionato;  
+**Totale costo preventivo / effettivo totale**: indica il totale costo unitario (materiali e lavorazioni) preventivo / effettivo relativo al documento selezionato;  
 
-## Ukupni troškovi
+## Costi totali
 
-U ovoj kartici se sažeto prikazuju predviđeni i stvarni troškovi povezani s odabranom cijenjenjem.    
-Za svaku sekciju (predviđeni i stvarni troškovi), prikazani su sljedeći podaci:     
-**Analitika troškova**: ukupni troškovi materijala i troškovi unutarnjih i vanjskih radova;     
-**Ukupni direktan trošak**: ukupni troškovi navedeni u sekciji **Direktni troškovi**;    
-**Ukupni direktni trošak kom.**: ukupni *Industrijski Trošak* i ukupni *Direktan Trošak*;     
-**Nadoplata**: omogućuje odabir vrste nadoplate, bilo postotka ili iznosa, te unosi vrijednost nadoplate;      
-**Ukupni nadopunjeni trošak**: ukupni trošak kom. direktnog i nadoplate;       
-**Ukupni opći troškovi**: ukupni troškovi navedeni u sekciji **Opći troškovi**;      
-**Ukupni ostali troškovi**: ukupni troškovi navedeni u sekciji **Opći troškovi**;     
-**Korekcija**: omogućuje unos vrijednosti za korekciju *Ukupnog nadopunjenog troška*;      
-**Zaokruživanje**: omogućuje odabir zaokruživanja prema gore ili prema dolje i veličinu zaokruživanja;       
-**Ukupni trošak narudžbe**: *Ukupni trošak Nadopunjenog troška*, *Ukupni opći troškovi*, *Ukupni ostali troškovi*, *Korekcija* i *Zaokruživanje*. *Ukupni trošak narudžbe* se prikazuje crvenom bojom u sekciji *Stvarni troškovi* quando questo è superiore quello presente nella sezione deiako je veći od troška u sekciji *Predviđeni troškovi*.           
+In questo tab sono riportati in maniera riepilogativa i costi preventivi e consuntivi relativi alla costificazione selezionata.     
+Nello specifico, per ciascuna sezione (preventivo e consuntivo), sono riportati i seguenti campi:     
+**Costo industriale**: totale dei costi materiali e costo lavorazioni (interne ed esterne);     
+**Totale costi diretti**: totale dei costi inseriti nella sezione **Costi diretti**;    
+**Totale costo diretto comm.**: totale del *Costo industriale* e del *Totale costi diretti*;     
+**Ricarco**: permette di indicare il tipo di ricarico se a percentuale o a valore ed anche il valore stesso;    
+**Totale costo ricaricato**: totale del *Totale costo diretto comm.* e del *Ricarico*;     
+**Totale costi generali**: totale dei costi inseriti nella sezione **Costi generali**;      
+**Totale altri costi**: totale dei costi inseriti nella sezione **Altri costi**;     
+**Correzione**: permette di inserire un valore per correggere il *Totale costo ricaricato*;      
+**Arrotondamento**: permette di decidere se arrotondare per eccesso o difetto e l'ordine di grandezza;     
+**Totale costo commesa**: totale del *Totale costo ricaricato*, *Totale costi generali*, *Totale altri costi*, *Correzione* ed *Arrotondamento*. Il *Totale costo commesa* viene evidenziato in rosso nella sezione dei *Costi consuntivi* quando questo è superiore quello presente nella sezione dei *Costi preventivi*.           
 
-:::note NAPOMENA 
-Polja koja se automatski prikazuju i usklađuju između sekcije *Predviđeni troškovi* i *Stvarni troškovi* su: *Nadoplata* (vrsta nadoplate i vrijednost), *Korekcija* i *Zaokruživanje* (vrsta zaokruživanja i vrijednost). U svakom slučaju, u sekciji *Stvarni troškovi* mogu se ručno promijeniti kako bi se razlikovali od vrijednosti unesenih u sekciji *Predviđeni troškovi*.
+:::note Nota
+I campi che vengono riportati ed allineati in automatico, tra la sezione dei *Costi preventivi* e quella dei *Costi consuntivi*, sono: il *Ricarco* (tipo di ricarico e valore), *Correzione* ed *Arrotondamento* (tipo di arrotondamento e valore). In ogni caso nella sezione dei *Costi consuntivi* è possibile variarli manualmente per diversificarli dai valori inseriti nella sezione dei *Costi preventivi*.
 ::: 
 
-Pomoću dugmeta **Dodatni troškovi** mogu se dodati *Direktni troškovi*, *Opći troškovi* i *Ostali troškovi* koji mogu biti unaprijed predloženi kako u predviđenim tako i u stvarnim troškovima.   
-Za svaki od tih troškova moguće je odrediti je li postotni ili fiksni, navodeći i samu vrijednost.      
-    
+Tramite il punlsante **Costi aggiuntivi** è possibile inserire dei *Costi diretti*, *Costi generali* e *Altri costi* che possono essere proposti di default, sia nei costi preventivi che nei costi consuntivi.      
+Per ciascuno di questi costi è possibile definire se sia di tipo percerntuale o a valore, indicandone anche il valore stesso.    
 
-Za sve informacije potrebne za stvaranje ovih troškova, pogledajte stranicu [Elementi troška](/docs/configurations/tables/general-settings/cost-elements).         
+Per tutte le informazioni necessarie alla creazione di questi costi, consultare la pagina relativa a [Voci di costo](/docs/configurations/tables/general-settings/cost-elements).         
 
-## Analiza troškova
+## Analisi costi
 
-Ova kartica ističe sve komponente troškova u predviđenim i stvarnim troškovima koristeći dva tipa analize:      
+In questo tab vengono messe in evidenza tutte le componenti di costo per quanto rigaurda i costi preventivi e consuntivi, utilizzando due tipi di analisi:      
 
-> **Sintetski**: u ovoj vrsti analize prikazan je *Industrijski trošak*, koji obuhvaća troškove materijala i troškove unutarnjih i vanjskih radova. Također su prikazani *Direktni troškovi*, *Opći troškovi* i *Ostali troškovi*, te ukupan iznos *Nadoplata* i *Korekcija*;        
-> **Analitički**: ovaj tip analize detaljno razdvaja svaku stavku u grafikonu. *Industrijski trošak* je podijeljen na *Troškove materijala*, *Unutarnje troškove rada* i *Vanjske troškove rada*. Također su pojedinačno prikazane stavke *Nadoplata* i *Korekcija*. Naravno, uključeni su i *Direktni troškovi*, *Opći troškovi* i *Ostali troškovi*.         
+> **Sintetica**: in questa tipologia di analisi viene riportato il *Costo industriale*, quindi come somma dei costi materiali e dei costi di lavorazione, inoltre sono riportati i *Costi diretti*, *Costi generali* e *Altri costi* ed infine il totale di *Ricarichi* e *Correzioni*;     
+> **Analitica**: in questa tipologia, invece, vengono riportate nel grafico tutte le voci singolarmente, quindi il *Costo industriale* viene suddiviso in *Costo materiali*, *Costo lavorazione interne* e *Costo lavorazioni esterne*; anche le voci relative a *Ricarichi* e *Correzioni* vengono riportate separatamente; ovviamente vengono poi riportati anche i Costi diretti*, *Costi generali* e *Altri costi*.       
 
-Za detalje o zajedničkom radu obrazaca, pogledajte link [Značajke, gumbe i zajednička polja](/docs/guide/common).
+Per i dettagli sul funzionamento comune delle form fare riferimento al link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).

@@ -1,42 +1,42 @@
 ---
-title: Radni nalog s više proizvoda
+title: Commessa Multiprodotto
 sidebar_position: 5
 ---
 
-Obrazac se otvara putem staze  **Planiranje > Proizvodne narudžbe** klikom na gumb  **Unesi višeproizvodnu narudžbu** u obrascu **Proizvodne narudžbe**.
+La form si apre tramite il percorso **Pianificazione > Commesse di produzione** cliccando nella form **Commesse di produzione** sull'pulsante **Inserisci commessa multiprodotto**.
 
-## Posebni gumbi
+## Pulsanti specifici
 
-> [Parametri MRP](/docs/configurations/parameters/production/mrp-parameters/search-mrp-parameters): putem ovog gumba možete otvoriti zaslon s parametrima MRP-a artikla;  
-> [Sastavnica materijala](/docs/erp-home/registers/production/bill-of-materials/search-and-insert-assemblies): omogućuje otvaranje zaslona s materijalnom specifikacijom artikla;  
-> [Proizvodni ciklusi](/docs/erp-home/registers/production/routes/new-route): omogućuje pregled radnog ciklusa i pripadajućih faza proizvodnje artikla.  
+> [Parametri MRP](/docs/configurations/parameters/production/mrp-parameters/search-mrp-parameters): tramite questo pulsante è possibile aprire la schermata relativa ai parametri MRP dell'articolo;  
+> [Distinta base](/docs/erp-home/registers/production/bill-of-materials/search-and-insert-assemblies): permette di aprire la schermata relativa alla distinta base dell'articolo;  
+> [Cicli di lavoro](/docs/erp-home/registers/production/routes/new-route): permette di visualizzare il ciclo di lavoro e le relative fasi di produzione dell'articolo.
 
-## Upravljanje radnim nalozima s više proizvoda
+## Gestione commesse multiprodotto
 
-Ova kartica izgleda isto kao ona na zaslonu za [Unos narudžbi s jednim proizvodom](/docs/planning/mps-master-production-scheduling/production-job-orders/new-monoproduct-job-order).
+Questo tab si presenta uguale a quello presente nella schermata di [inserimento commesse monoprodotto](/docs/planning/mps-master-production-scheduling/production-job-orders/new-monoproduct-job-order).
 
-*Osnovna razlika* je u tome što ne postoji odjeljak u kojem se unosi artikl s njegovim relevantnim podacima kao što je to slučaj kod kreiranja narudžbe s jednim proizvodom, već je taj prostor zamijenjen mrežom koja omogućuje unos ne jednog, već više artikala budući da se radi o narudžbi s više proizvoda.   
+La *differenza sostanziale* sta nel fatto che non è presente una sezione in cui viene inserito l'articolo con i suoi relativi dati come avviene per la creazione di una commessa monoprodotto, ma bensi questo spazio è sostituito da una griglia che permette l'inserimento non di uno, ma di più articoli essendo appunto una commessa multiprodotto.
 
-Polja prisutna u mreži su ista kao i u narudžbi s [jednim proizvodom](/docs/planning/mps-master-production-scheduling/production-job-orders/new-monoproduct-job-order); jedina razlika je polje **Progresivno** koje je polje koje korisnik može uređivati, u kojem se predlaže progresivni redak *Narudžbe za proizvodnju s više proizvoda* te planirani datumi početka/završetka, predloženi datum i datum početka i završetka plana se specificiraju za svaki artikl prisutan u narudžbi s više proizvoda (ostaje dio Predviđeni datum i Stvarni datum koji se odnosi na ukupno stanje narudžbe s više proizvoda).
+I campi presenti nella griglia, sono gli stessi della [commessa monoprodotto](/docs/planning/mps-master-production-scheduling/production-job-orders/new-monoproduct-job-order); l'unica differenza è il campo **Progressivo** che è un campo editabile dall'utente,  in cui viene proposto un progressivo di riga della *Commessa di Produzione Multiprodotto* e le date di previsto inizio/fine, la data suggerita e la data di inizio e fine previsione vengono specificate per ogni articolo presente nella commessa multiprodotto (resta comunque la sezione Data prevista e Data effettiva riferite allo stato complessivo della commessa multiprodotto).
 
-### Referencije narudžbi kupaca
+### Riferimenti ordini clienti
 
-Kartica sadrži mrežu samo za čitanje, u kojoj se prikazuju narudžbe kupaca povezane s referentnom proizvodnom narudžbom kada je narudžba generirana iz jednog ili više redaka narudžbi kupaca.   
-**Tip/Godina/Broj**: u ovim stupcima prikazuju se *Tip/Godina/Broj* narudžbe kupca u kojoj se nalazi redak čiji su detalji prikazani;  
-**Br./Količina/JM**: u ovom stupcu prikazuje se količina retka narudžbe kupca čiji su detalji prikazani;    
-**Datum kad je roba spremna**: u ovom stupcu prikazuje se datum spremnosti robe koji je postavljen u retku narudžbe kupca čiji su detalji prikazani; Konto: u ovom stupcu prikazuju se konto i podkonto kupca na kojeg je naslovljena narudžba kupca u kojoj se nalazi redak čiji su detalji prikazani;    
-**Konto**: u ovom stupcu prikazuju se konto i podkonto kupca na kojeg je naslovljena narudžba kupca u kojoj se nalazi redak čiji su detalji prikazani.  
+Il tab contiene una griglia di sola lettura, in cui compaiono gli ordini clienti collegati alla commessa di produzione di riferimento quando la commessa è stata generata da una o più righe ordini clienti.  
+**Tipo/Anno/Numero**: in queste colonne vengono visualizzati il *Tipo/Anno/Numero* dell'ordine cliente in cui è contenuta la riga di cui viene esposto il dettaglio;  
+**N./Quantità/*UM**: in questa colonna viene visualizzata la quantità della riga dell'ordine cliente di cui viene esposto il dettaglio;  
+**Data merce pronta**: in questa colonna viene visualizzata la data della merce pronta che è stata impostata nella riga dell'ordine cliente di cui viene esposto il dettaglio;  
+**Conto**: in questa colonna vengono visualizzati conto e sottoconto del cliente a cui è intestato l'ordine cliente in cui è contenuta la riga di cui viene esposto il dettaglio.
 
-### Dodatni podaci
+### Extra data
 
-Ova kartica također se sastoji od mreže u kojoj će biti prikazani svi dodatni podaci povezani s artiklom prisutnim u proizvodnoj narudžbi.  
+Anche questo tab è costituito da una griglia in cui verranno riportati tutti gli extra data collegati all'articolo presente nella commessa di produzione.
 
-##  Obračun troškova
+##  Costificazione
 
-Sve informacije o **Obračun troškova** možete pronaći na stranici [Obračun troškova](/docs/planning/mps-master-production-scheduling/production-job-orders/valorization).
+Tutte le informazioni relative alla **Costificazione** si possono consultare nella pagina [Costificazione](/docs/planning/mps-master-production-scheduling/production-job-orders/valorization).
 
-## Dodatni podaci
+## Extra data
 
-Ova kartica, koji je uz kartice  *Upravljanje narudžbama više proizvoda*, sadrži sve [dodatne podatke](/docs/configurations/utility/extra-data/extradata/search-extradata) povezane s proizvodnom narudžbom.   
+Questo tab, che affianca il tab *Gestione commesse multiprodotto*, contiene tutto l'insieme degli [extra data](/docs/configurations/utility/extra-data/extradata/search-extradata) collegati alla commessa di produzione.
 
-Za detalje o zajedničkom radu obrazaca molimo pogledajte poveznicu [Zajedničke funkcionalnosti, gumbe i polja](/docs/guide/common).
+Per i dettagli sul funzionamento comune delle form fare riferimento al link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
