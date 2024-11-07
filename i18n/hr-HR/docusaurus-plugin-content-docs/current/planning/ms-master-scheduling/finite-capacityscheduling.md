@@ -1,123 +1,128 @@
 ---
-title: Planiranje s ograničenjem kapaciteta
-sidebar_position: 3
+title: Schedulazione a capacità finita
+sidebar_position: 4
 ---
 
-Vremensko planiranje proizvodnje s ograničenjem kapaciteta omogućuje razumijevanje koliko rada može biti izraženo u određenom vremenskom razdoblju, uzimajući u obzir ograničenja određenih resursa. Konačni cilj je osigurati najveću učinkovitost proizvodnih tokova kroz interni pogon, optimizirajući vrijeme i smanjujući troškove radnih centara.   
-Ovom vrstom planiranja moguće je stvoriti optimalne radne sekvence za svaki pojedinačni radni centar postižući njihovu maksimalnu iskorištenost.
+:::important A cosa serve
+La funzione di Schedulazione a capacità finita di Fluentis è uno strumento avanzato progettato per ottimizzare la gestione delle risorse produttive all'interno di un'azienda manifatturiera. Questo modulo viene integrato all'interno del sistema ERP di Fluentis e consente di pianificare e gestire le attività produttive considerando le reali capacità delle risorse disponibili, come manodopera, macchinari e materiali. Grazie a tale funzionalità, le aziende possono minimizzare i tempi di inattività, migliorare l'efficienza operativa e rispondere con maggiore flessibilità alle variazioni della domanda.
 
+La schedulazione a capacità finita tiene conto delle limitazioni fisiche delle risorse, permettendo di creare piani di produzione realistici e attuabili. Inoltre, offre strumenti analitici per prevedere eventuali colli di bottiglia e consente l'ottimizzazione dell'allocazione dei compiti, integrandosi con altre funzionalità dell'ERP per una visione olistica delle operazioni aziendali. Questo sistema aiuta le aziende a bilanciare in modo efficace la domanda dei clienti con le capacità produttive, migliorando in ultima analisi la redditività e la soddisfazione del cliente.
+:::
 
-## Radni nalozi  
+La schedulazione di produzione a capacità finita permette di capire quanto lavoro può essere espresso in un periodo di tempo definito, considerando le limitazioni di alcune risorse. L’obiettivo finale è quello di garantire la maggiore efficienza dei ritmi produttivi lungo tutta la filiera interna allo stabilimento, ottimizzando i tempi e riducendo i costi dei centri di lavoro.  
+Con questa modalità di pianificazione è possibile creare sequenze ottimali di lavorazione su ogni singolo Centro di lavoro ottenendo la loro massima saturazione.
 
-Tablica radnih naloga prikazuje samo radne naloge koji se nalaze u stanju neplanirano.
+## Commesse
 
-*Specifični gumbi*:
+Il tab commesse mostra solamente le commesse che si trovano in stato non schedulato.
 
-> **Zakazivanje F.C.S.**: omogućuje sustavu da planira faze obrade dokumenata s ograničenjem kapaciteta;    
-> **Izmjeni datum radnog naloga**: omogućuje promjenu datuma komitenta;    
-> **Promjena prioriteta**: omogućuje promjenu prioriteta odabranih komitenta;      
-> **Parametri MRP**: omogućuje otvaranje parametara MRP za odabrane komitente;    
-> **Sastavnica materijala**: omogućuje otvaranje struktura materijala za odabrane komitente;    
-> **Proizvodni ciklus**: omogućuje otvaranje radnih ciklusa za odabrane komitente.         
+*Pulsanti specifici*:
 
-*Specifični filteri*:
+> **Schedulazione F.C.S.**: consente al sistema di schedulare a capacità finita le fasi di lavorazione dei documenti previsti;  
+> **Modifica data commessa**: questo pulsante consente di modificare la data commessa;  
+> **Cambia priorità**: tramite questa funzionalità si può variare la piorità delle commesse selezionate;    
+> **Parametri MRP**: consente di aprire i parametri MRP delle commesse selezionate;    
+> **Distinta base**: consente di aprire le distinte basi delle commesse selezionate;    
+> **Ciclo di lavoro**: consente di aprire i cicli di lavoro delle commesse selezionate.        
 
-**Tip radnog naloga**: pomoću ovog izbornika moguće je odabrati vrstu radnog naloga koju želite prikazati, bilo da se radi o radnim nalozima za jedan proizvod, radnim nalozima za više proizvoda ili oba;  
+*Filtri specifici*:
 
-**Mjesto proizvodnje**: možete pregledati narudžbe prema proizvodnom mjestu na kojem se proizvode, odabirom putem odgovarajućeg izbornika;  
+**Tipo commessa**: tramite questa combo è possibile andare a selezionare il tipo di commessa che si vuole visualizzare, se le commesse monoprodotto, le commesse multiprodotto oppure entrambe;
 
-*Specifična polja u mreži Rezultata*
+**Sito produzione**: si possono andare a visualizzare le commesse in base al sito di produzione in cui vanno prodotte, selezionandolo tramite l'apposita combo;
 
-**Predloženi datum**: je pojasnjen u članku o općim parametrima rasporeda, gdje aktiviranje posebnog flaga nazvanog [Provjeri zakašnjele dokumente s ATP](/docs/planning/ms-master-scheduling/general-schedule) upravljač rasporeda će provesti razmatranje. Ako je bilo koji od generiranih i raspoređenih naloga u kašnjenju u odnosu na planirani datum, sustav će obrisati sve stvorene naloge i ponovno početi s generiranjem od datuma MS, što se definira u parametrima i aktivira samo postavljanjem zastave *Provjeri dokumente u kašnjenju s ATP*. Nova datum će biti predložen za narudžbe u polju *Predloženi datum* koje se nalazi u mreži rezultata.  
+*Campi specifici nella griglia dei Risultati*
 
-### Postupak Vremenskog planiranja F.C.S.  
+**Data suggerita**: come spiegato nell'articolo relativo ai parametri generali di schedulazione, attivando un particolare flag chiamato  [Controlla doc in ritardo con ATP](/docs/planning/ms-master-scheduling/general-schedule) lo schedulatore andrà ad eseguire un ragionamento tale per cui se anche uno solo degli ordini che vengono schedulati e generati risulta essere in ritardo rispetto alla data prevista il sistema andrà a cancellare tutti gli ordini creati e ripartirà a generali dalla data MS che viene definita sempre nei parametri e che si attiva solo settando il flag controllo doc in ritardo con ATP e andrà a proporre la nuova data per le commesse proprio nel campo *Data suggerita* presente nella griglia di risultato.
 
-Iz kartice **Radni nalog** mogu se odabrati neplanirane komisije koje se žele uzeti u obzir.   
-Pritiskom na gumb **Vremensko planiranje F.C.S.** postupak će izvršiti prvo raspoređivanje bez ograničenja kapaciteta na odabrane, neplanirane komisije, koristeći parametre koji su navedeni u kartici **Opći parametri**. Nakon toga, provest će se raspoređivanje s ograničenjem kapaciteta na sve dokumente navedene u **Parametri planiranja konačnih kapaciteta**.
+### Procedura schedulazione F.C.S.    
 
-Kao i u slučaju općeg raspoređivanja, planirane narudžbe moći će se pregledati u obrascu [Pretraga planirane narudžbe](/docs/planning/ms-master-scheduling/planned-orders/search-planned-orders).
+Dal tab **Commesse** è possibile selezionare le commesse non schedulate che si vogliono prendere in considerazione. 
+Premendo il pulsante **Schedulazione F.C.S.** la procedura eseguirà una prima schedulazione a capacità infinita sulle commesse non schedulate appena selezionate, utilizzando i parametri presenti nel tab **Parametri generali** e di seguito eseguirà una schedulazione a capacità finita su tutti i documenti indicati nei **Parametri schedulazione a capacità finita**.
 
-Da biste vidjeli sve izvršene rasporedne zadatke i povezane greške/upozorenja za svaku narudžbu, jednostavno se premjestite na karticu **Arhiva**.    
+Come nel caso della schedulazione generale, gli ordini pianificati si potranno visualizzare nella form [Ricerca ordini pianificati](/docs/planning/ms-master-scheduling/planned-orders/search-planned-orders).
 
-## Parametri generičkog vremenskog planiranja  
+Per visualizzare tutte le schedulazioni effettuate e i relativi errori / warning creati per ogni  commessa, basterà spostarsi nel tab **Storico**.    
 
-Svi parametri vezani za fazu općeg raspoređivanja mogu se pregledati izravno u artiklu vezanom za [Opći vremenski raspored](/docs/planning/ms-master-scheduling/general-schedule) u odjeljku **Parametri općeg raspoređivanja**.        
+## Parametri di schedulazione generale
 
-## Parametri planiranja konačnih kapaciteta   
+Tutti i parametri relativi alla fase di schedulazione generale posso essere consultati direttamente nell'articolo relativo alla [Schedulazione generale](/docs/planning/ms-master-scheduling/general-schedule) nella sezione **Parametri di schedulazione generale**.        
 
-:::note NAPOMENA 
-Prije nego što nastavite s planiranjem F.C.S.-a, važno je postaviti parametre unutar ovog taba kako biste izvršili planiranje s ograničenjem kapaciteta.  
+## Parametri schedulazione a capacità finita   
+
+:::note Nota
+Prima di procedere con la schedulazione F.C.S., è importante settare all'interno di questo tab i parametri  da seguire per eseguire la schedulazione a capacità finita.
 ::: 
 
-**Planiranje što je prije moguće ili što je kasnije moguće**: te se zastavice ne koriste, a uvijek je aktivna samo zastavica *Najranije*, budući da se planiranje kapaciteta na temelju ograničenih resursa trudi maksimizirati iskorištenje radnih centara što je prije moguće;          
+**Schedulazione al più presto o al più tardi**: questi flag sono disabilitati ed è attivo sempre e solo il flag *Al più presto*, in quanto la schedulazione a capacità finita cerca di saturare al più presto i centri di lavoro;        
 
-**Od datuma**: omogućava definiranje datuma od kojeg počinje planiranje s ograničenjem kapaciteta; preporučuje se kao *Današnji datum*, ali se može povećati za broj dana koji se može unijeti iz *Parametara MPS* u polju *Sljedeći dani planiranja*.  
+**Dalla data**: permette di definire la data da cui iniziare la schedulazione a capacità finita; è proposta come *Data odierna* ma può essere incrementata per un numero di giorni pari al valore che si può inserire dai *Parametri MPS* nel campo *Giorni prossima schedulazione*
 
-**Operacija na planiranim nalozima Ponovno izračunavanje vremena**: zastava je uvijek aktivna i omogućuje ponovno izračunavanje vremena u planiranim nalozima;      
+**Operazione su ordini pianificati Ricalcolo tempo**: il flag è sempre attivo e permette di ricalcolare il tempo negli ordini pianificati;    
 
-**Preračun proizvodnih nalog**: omogućuje odabir koje proizvodne naloge, među *Pokrenutim* i/ili *Izvršnim*, treba uzeti u obzir prilikom planiranja F.C.S.;    
+**Ricalcolo ordini di produzione**: permette di selezionare quali ordini di produzione, tra *Lanciati* e/o *Esecutivi*, deve prendere in considerazione la schedulazione F.C.S.;    
 
-**Preračun faza**: omogućuje odabir koje proizvodne faze, *Nisu započete* i/ili *Već započete*, treba uzeti u obzir prilikom planiranja F.C.S.;      
+**Ricalcolo fasi**: permette di selezionare quali fasi di produzione, *Non iniziate* e/o *Già iniziate*, deve prendere in considerazione la schedulazione F.C.S.;    
 
-**Faze načina ponovnog izračuna već su započete**: omogućuje odabir načina na koji procedura schedulacije F.C.S. treba ponovno izračunati preostali dio već započetih faza. Može se odabrati da se prioritet da radnom vremenu označavanjem opcije *Radno vrijeme već radilo, a zatim Količina već proizvedena*, ili dati prednost proizvedenoj količini s opcijom *Količina već proizvedena, a zatim Radno vrijeme već radilo*;       
+**Modalità di ricalcolo fasi già iniziate**: permette di segliere la modalità con cui la procedura di schedulazione F.C.S. deve ricalcolare la parte rimanente da eseguire delle fasi già iniziate. Si tratta di definire se dare la priorità al tempo lavorato flaggando *Tempo già lavorato e poi Quantità già prodotte*, oppure dare la priorità alla quantità prodotta con il flag *Quantità già prodotte e poi Tempo già lavorato*;     
 
-**Blokiraj obvezne naloge**: omogućuje vam odabir vrsta narudžbi između *Planiranih*, *Pokrenutih* i *Izvršnih*, koje, ako imaju omogućenu zastavicu *Obavezno*, neće biti promijenjene postupkom raspoređivanja F.C.S.;    
+**Blocca gli ordini tassativi**: permette selezionare le tipologie di ordini tra *Pianificati*, *Lanciati* ed *Esecutivi*, che nel caso abbiano il flag *Tassativo* abilitato non saranno modificati dalla procedura di schedulazione F.C.S.;    
 
-**Početak radova na raspoloživost materijala**: ako je omogućeno, raspoređivanje F.C.S. će također provjeravati raspoloživost materijala do datuma navedenog u polju **Provjerite dostupnost do**, nakon čega će raspoređivanje nastaviti bez uzimanja u obzir raspoloživosti materijala. Aktiviranjem zastavice **Provjerite dostupnost samo kritičnih materijala**, postupak će provjeravati raspoloživost samo za materijale koji imaju aktiviranu zastavicu *Kritično* u odvojenoj bazi;   
+**Inizia lavori su disponibilità materiale**: se attivo, la schedulazione F.C.S. verificherà anche la disponibilità di materiale fino alla data indicata nel campo **Controllo disponibilità fino al**, oltre a quella data la schedulazione proseguira senza prendere in considerazione la disponibilità di materiale. Attivando il flag **Controllo disponibilità solo sui Materiali critici** la procedura verificherà la diposnibilità solamente per i materiali che in disitinta base hanno il flag *Critico* attivo;   
 
-**Razmotri dostupnost materijala**: omogućit će odabir načina na koji se razmatra dostupnost materijala između *Opće* (nezavisno od proizvodnog naloga koji ga angažira) i *Po Proizvodnom Nalogu*; trenutno je dostupno samo *Opće* pravilo.   
+**Considera disponibiltà Materiale**: permetterà di selezionare la modalità con cui considerare la disponibilità del materiale tra *Generale* (indipendentemente dalla commessa di produzione ch elo impegna) e *Per Commessa Prod.*; attualmente è prevista solamente la regola *Generale*.
 
-U donjem dijelu obrasca moguće je naznačiti kriterije prema kojima raspoređivanje s ograničenom kapacitetom treba djelovati za dokument.  
+Nella parte sottostante della form è possibile indicare con quali criteri, a paratià di documento, la scheduazione a capacità finita deve operare.
 
-:::note NAPOMENA  
-Sukladno prethodno aktiviranim zastavicama, raspoređivanje F.C.S. će rasporediti različite dokumente prema sljedećem redoslijedu: Faze koje su već započete, Faze koje još nisu započete, Narudžbe za proizvodnju u izvršnom stanju, zatim pokrenute narudžbe, i na kraju planirane narudžbe.  
+:::note Nota
+In accordo con i flag precedentemente attivati o meno, la schedulazione F.C.S. schedulerà i vari documenti nel seguente ordine: Fasi già iniziate, Fasi non ancora iniziate, Ordini di produzione in stato esecutivo e poi lanciato ed in fine Ordini pianificati. 
 ::: 
 
-U tablici **Zakaži prioritete izbora** moguće je pomicati pojedinačne stavke metodom povlačenja i ispuštanja unutar tablice **Prioriteti izbora**, gdje se također mogu promijeniti prioriteti. Ako se odaberu opcije *Kritični klijenti* ili *Kritični centri za obradu*, aktivirat će se tablica **Detaljni raspored prioriteta**, gdje će se moći unijeti kritični klijenti ili centri za obradu, te će se također moći promijeniti njihovi prioriteti.    
+Dalla tabella **Scelte priorità schedulazione** è possibile trascinare con il drag & drop le singole voci all'interno della tabella **Piorità schedulaizone**, dove in quest'ultima è possibile variarne la priorità. Nel caso in cui vengano selezionare le voci *Clienti critici* oppure *C.d.L critici* si abiliterà anche la tabella **Dettaglio priorità schedulazione** dove sarà possibile inserire rispettivamente i clienti o i centri di lavoro, potendo variare anche in questo caso la priorità.   
 
-*Posebni gumbi*:
+*Pulsanti specifici*:
 
-> **Poništi prioritet**: omogućuje vraćanje zadanih prioriteta unutar tablice *Prioriteti rasporeda*.    
+> **Ripristina priorità**: permette di ripristinare le priorità di default all'interno della tabella *Priorità schedulazione*.    
 
-## Praćenje
+## Monitor
 
-Na ovoj kartici, aktiviranjem ili deaktiviranjem dostupnih oznaka, korisnik može odabrati prikaz rezultata raspoređivanja u kartici **Arhiva**.  
+In questo tab, tramite l'attivazione o meno dei flag presenti, l'utente ha la possibilità di scegliere la visualizzazione dei risultati della schedulazione nel tab **Storico**.
 
-Možete odlučiti hoćete li prikazati uzete **Kalendare** (*Proizvodni kalendar* i *Kalendar kapaciteta*), te možete odabrati da se prikaže upozorenje ako raspoređivanje sadrži **Stavke bez** *MRP parametara*, bez *Popisa materijala* ili *Radnog ciklusa*, bez *Preferiranog dobavljača* (za narudžbe za kupnju), bez *Preferiranog podizvođača* (za narudžbe za rad na račun), i bez naznačene minimalne razine zaliha za sve artikle koji se upravljaju na osnovu zaliha. Za svaki **Radni nalog** možete odabrati prikaz u povijesti *Broja raspoređenih linija* i detalje tih linija, kašnjenja i isteka narudžbi.  
+Si può decidere se visualizzare i **Calendari** presi in considerazione (il Calendario di *Fabbrica* e il calendario delle *Capacità produttive*); si può decidere che venga segnalato se nella schedulazione erano presenti **Articoli privi di** *Parametri MRP*, privi di *Distinta base* o di *Ciclo di lavoro*, privi di *Fornitore preferenziale* (nel caso di ordini di acquisto), privi di *Terzista preferenziale* (per gli ordini di conto lavoro) e privi dell'indicazione della scorta minima per tutti quegli articoli che sono gestiti a scorta. Per ogni **Commessa di produzione** si può scegliere di visualizzare nello storico, il *Numero di righe schedulate* e il dettaglio di queste righe, le commesse in ritardo e le commesse scadute.
 
-Što se tiče **Planiranih narudžbi**, možete odabrati prikaz u povijesti *Broja generiranih narudžbi* i njihovih *Detalja*, *Kasnih* *Isteklih* narudžbi, te *Alternativnih Materijala*. Također možete odabrati da budete obaviješteni ako postoje **Planirane narudžbe bez** *Materijala*, *Radnih faza*, *Dobavljača* (za kupovinu) i *Podizvođača* (za rad na račun).  
+Per quanto riguarda gli **Ordini pianificati**, si può scegliere se visualizzare nello storico, il *Numero di ordini generati* e il loro *Dettaglio*, gli ordini *In ritardo* e *Scaduti*, le *Alternative materiali*; si può scegliere anche di essere avvisati nel caso in cui ci siano **Ordini pianificati privi di** *Materiale*, di *Fasi di lavorazione*, del *Fornitore* (per l'acquisto) e il *Terzista* (per il conto lavoro).
 
-**Legenda**: aktiviranje zastavica omogućuje primanje obavijesti i detalja o odabranim stavkama.  
+**Legenda**: i flag attivi permettono di ricevere l'avviso e i dettagli riguardanti le voci selezionate.
 
-## Arhiva
+## Storico
 
-U mreži ovog obrasca prikazuju se sve sažete informacije o raspoređivanju narudžbi.  
+Nella griglia di questo tab vengono visualizzate tutte le informazioni riepilogative relative alla schedulazione della commessa.
 
-**Redni broj planiranja**: prikazuje jednostavan redni broj operacije raspoređivanja koju je pokrenuo korisnik;  
+**Progr. sched.**: visualizza un semplice progressivo dell'operazione di schedulazione lanciata dall'utente;
 
-**Operater**: prikazuje korisnika koji je pokrenuo raspoređivanje;  
+**Operatore**: visualizza l'utente che ha lanciato la schedulazione;
 
-**Br. grešaka**: prikazuje broj evidentiranih grešaka tijekom postupka raspoređivanja;  
+**No. errori**: visualizza il numero degli errori registrati durante la procedura di schedulazione;
 
-**Datum početka**: prikazuje datum i vrijeme početka postupka raspoređivanja;  
+**Data inizio**: visualizza data e ora di inizio del processo di schedulazione;
 
-**Datum završetka**: prikazuje datum i vrijeme završetka postupka raspoređivanja;  
+**Data fine**: visualizza data e ora di fine del processo di schedulazione;
 
-**Podaci raspoređeni iz**:  prikazuje točan izvor raspoređenih podataka;  
+**Dati schedulati provenienti da**: visualizza l'origine precisa dei dati schedulati;
 
-**Predviđanje**: označava jesu li podaci iz Prognoze prodaje ili Glavnog plana proizvodnje;  
+**Previsionale**: visualizza se i dati provengano dalle Previsioni di Vendita oppure dal Piano Principale di Produzione;
 
-**Razdoblje**: prikazuje vrstu prognoze, tjedno ili mjesečno;  
+**Periodo**: visualizza il tipo di previsione, settimanale o mensile;
 
-**Dan**: prikazuje dan u tjednu koji je određen kao datum završetka planirane proizvodne narudžbe prema Definiciji MPS.    
+**Giorno**: visualizza il giorno della settimana designato come giorno in cui deve cadere la data di fine della commessa di produzione schedulata direttamente da Definizione MPS.
 
-Sve ostale stupce u mreži prikazuju postavke koje su korištene u kartici **Parametri** raspoređivanja za odabranu liniju.   
+Tutte le altre colonne della griglia visualizzano le impostazioni utilizzate nel tab **Parametri** della Schedulazione relativa alla riga selezionata.
 
-**Rezultat vremenskog planiranja**
+**Risultato schedulazione**
 
-Na temelju odabrane linije u mreži, u ovoj sekciji će se prikazati eventualne greške i/ili upozorenja s detaljima koje je korisnik zatražio u kartici **Praćenje**.
+In base alla riga selezionata nella griglia, in questa sezione compariranno eventuali errori e/o warning con i dettagli richiesti dall'utente nel tab **Monitor**.
 
-Za detalje o općim funkcijama obrasca, pogledajte link [Funkcionalnosti, gumbi i zajednička polja](/docs/guide/common).
+Per dettagli sul funzionamento comune delle form fare riferimento al link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
 
 
 
