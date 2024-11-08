@@ -1,8 +1,8 @@
 ---
-title: Sequenza Fasi
+title: Redoslijed faza
 sidebar_position: 1
 ---
 
-Dà la possibilità di sequenziare le fasi manualmente o secondo regole decise dall’operatore.
-Funziona esattamente come [Sequenza Fasi - TopDown grid](/docs/planning/capacity-requirements-planning/phase-sequences/phase-sequence-topdown) tranne che per il fatto che le *Fasi non ordinate* e le *Fasi ordinate* si trovano, in questo caso, su due tab differenti.
+Daje mogućnost sekvenciranja faza ručno ili prema pravilima koje odluči operater.   
+Funkcionira točno kao [Sekvenca faze - višeslojna mreža](/docs/planning/capacity-requirements-planning/phase-sequences/phase-sequence-topdown) osim što su *Neuređene faze* i *Uređene faze*, u ovom slučaju, na dvije različite kartice.  
 
