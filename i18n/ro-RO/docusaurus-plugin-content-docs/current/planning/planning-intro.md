@@ -1,13 +1,13 @@
 ---
-title: Introduzione
+title: Introducere
 sidebar_position: 1
 ---
 
-Prin intermediul procedurii de Planificare a Producției, compania stabilește și organizează strategiile de producție destinate satisfacerii livrărilor către clienți, care însă adesea produc contradicții cu obiectivele de gestionare și eficiență ale departamentelor de producție.  
+Prin procedura de Planificare a Producției, compania definește și organizează strategiile de producție necesare pentru a asigura livrările către clienți. Totuși, aceste strategii intră adesea în conflict cu obiectivele de gestionare și eficiență ale departamentelor de producție.  
 
 În **Fluentis ERP** există diverse tehici care permit alegerea strategiei pentru planificarea produției: MTO (Make to Order - Fabricare la Comandă), MTS (Make to Stock - Fabricare pe Stoc), ATO (Assembly to Order - Asamblare la Comandă), sau ETO (Engineering To Order - Inginerie la Comandă). 
 
-Uneori, cerințele pot fi mixte, prin urmare, alegerea strategică a modului de a stabili fluxul de producție determină în realitate capacitatea companiei de a gestiona un bun echilibru între satisfacerea cererii și gestionarea ofertei de producție.
+Cerințele sunt uneori mixte, ceea ce face ca alegerea strategică a modului de organizare a fluxului de producție să devină esențială pentru capacitatea companiei de a menține un echilibru optim între satisfacerea cererii și gestionarea eficientă a ofertei de producție.
 
 ## Modulele ariei
 
@@ -30,7 +30,7 @@ import Link from '@docusaurus/Link';
     <div className="card">
 ###     <Link to="/docs/planning/ms-master-scheduling/ms-master-scheduling-intro">MS - Planificarea Master</Link>
         <p><Link to="/docs/planning/ms-master-scheduling/general-schedule" className="bold-link">Planificare generală</Link></p>
-        <p>Funcționează pe capacitate infinită și permite programarea operațiunilor *cât mai devreme* și *cât mai târziu*. Aceste abordări flexibile permit o gestionare optimizată a cerințelor de producție și a timpilor de lucru.</p>
+        <p>Funcționează pe principiul capacității infinite, permițând programarea operațiunilor atât *cât mai devreme*, cât și *cât mai târziu*. Această abordare flexibilă facilitează gestionarea optimizată a cerințelor de producție și a timpilor de lucru, contribuind la un flux eficient al operațiunilor.</p>
         <p><Link to="/docs/planning/ms-master-scheduling/mrp" className="bold-link">M.R.P.</Link></p>
         <p>Optimizează gestionarea stocurilor și producției, îmbunătățind eficiența și reducând nivelurile stocurilor.</p>
         <p><Link to="/docs/planning/ms-master-scheduling/finite-capacityscheduling" className="bold-link">Programare pe capacitate finită</Link></p>
