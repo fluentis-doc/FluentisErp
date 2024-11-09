@@ -3,6 +3,12 @@ title: Sekvenca faze - višeslojna mreža
 sidebar_position: 2
 ---
 
+:::important Čemu služi
+Postupak **Sekvenca faza (Sequenza fasi)** u Fluentis-u, putem funkcionalnosti "Sekvenca fazi - TopDown grid", omogućuje optimizaciju upravljanja fazama proizvodnje sastavljanjem ručnih sekvenci ili sekvenci temeljenih na prilagođenim pravilima.      
+Nakon pažljivog odabira filtara, uključujući radni centar, razdoblje narudžbe i posao, faze koje još nisu naručene prikazane su u gornjoj mreži. Odatle se faze premještaju u donju mrežu radi dodjeljivanja sekvence.      
+Obrazac uključuje alate za promjenu podataka povezanih s fazama, izračunavanje vremena i ažuriranje datuma, osiguravajući preciznu kontrolu nad planiranjem proizvodnje. Specifične tipke olakšavaju izračun sekvenci, upravljanje zalihama i ažuriranje statusa narudžbi, osiguravajući efikasan proizvodni tok.
+:::
+
 Daje mogućnost sekvenciranja faza ručno ili prema pravilima koje odluči operater.  
 
 Obrazac se sastoji od prvog područja filtera gdje je moguće odabrati:  
@@ -12,9 +18,10 @@ Obrazac se sastoji od prvog područja filtera gdje je moguće odabrati:
 > **Do datum završetka narudžbe**       
 > **Nalog proizvodnje**     
 
-Espandendo quest'area è possibile filtrare, ad esempio, anche per *Artiklu*, *Sekvenci*, *Vrsti proizvodnog naloga*, *Grupama radne snage*, a također postoji i mogućnost izbora vrsta naloga koje želite prikazati između planiranih naloga, proizvodnih naloga u lansiranom i/ili izvršnom stanju.  
+Ekspanzija ovog područja omogućuje filtriranje, na primjer, i za *Artiklu*, *Sekvenci*, *Vrsti proizvodnog naloga*, *Grupama radne snage*, a također postoji i mogućnost izbora vrsta naloga koje želite prikazati između planiranih naloga, proizvodnih naloga u lansiranom i/ili izvršnom stanju.  
 
-Središnji dio formulara sastoji se od dvije rešetke.               
+Središnji dio formulara sastoji se od dvije rešetke.  
+             
 Prva prikazuje sve faze proizvodnje kojima još nije dodijeljena sekvenca. Dakle, odabirom jedne ili više faza iz prve rešetke i pritiskom na gumb  *Premjestiti Faze*, one se premještaju u drugu rešetku (ispod) gdje je zatim moguće dodijeliti sekvencu ručno ili automatski.           
 
 :::note NAPOMENA 
