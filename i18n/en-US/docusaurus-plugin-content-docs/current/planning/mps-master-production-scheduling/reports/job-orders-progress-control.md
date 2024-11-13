@@ -15,25 +15,25 @@ For each document, the progress status is also indicated by a colored square wit
 
 **Filters**
 
-In questa sezione è possibile inserire filtrare per: tipo di commessa di produzione, priorità approvvigionamento, data inizio e/o fine della commessa, ecc. 
+In this section, it is possible to filter by: type of production order, procurement priority, start and/or end date of the order, etc.
 
-**Print Type (Tipo di stampa)**
+**Report type**
 
 In this section, you can filter based on whether the order is delayed or overdue, and you can decide the level of detail to be included in the printout (Analytical or Synthetic).
 
-**Details (Dettagli)**
+**Details**
 
 In this section, you can choose whether or not to display details related to the purchasing area, production, and job costing, as well as whether or not to display sales orders and planned orders.
 
-**Procurement Type (Tipo approvvigionamento)**
+**Procurement Type**
 
 In this section, you can filter based on the type of procurement of the item subject to the order present in the MRP parameters (Purchase, Production, Job costing).
 
-**Order Status (Stato commessa)**
+**Job order status**
 
 In this section, you can filter based on the status of the production order (not reviewed, scheduled, launched, executable, fulfilled, closed, canceled);
 
-**Order (Ordine)**
+**Order**
 
 In this section, you can set the order of grouping the information to be displayed in the printout, choosing between the order based on the order, the project, the account, the item, or the start date of the order.
 
