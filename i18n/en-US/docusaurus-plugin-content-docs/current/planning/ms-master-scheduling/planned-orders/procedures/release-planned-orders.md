@@ -1,99 +1,99 @@
 ---
-title: Rilascio Ordini Pianificati
+title: Release Planned Orders
 sidebar_position: 1
 ---
 
-:::important A cosa serve
-La funzione di "Rilascio Ordini Pianificati" nel sistema Fluentis è progettata per facilitare il passaggio degli ordini pianificati ai loro rispettivi stati operativi. Una volta che gli ordini pianificati sono stati generati, è possibile procedere al loro rilascio utilizzando specifici pulsanti nella ribbon bar. Questo processo varia a seconda del tipo di ordine: produzione, acquisto o conto lavoro.
+:::important Purpose
+The "Release Planned Orders" function in the Fluentis system is designed to facilitate the transition of planned orders to their respective operational statuses. Once planned orders have been generated, it is possible to proceed with their release using specific buttons on the ribbon bar. This process varies depending on the type of order: production, purchase, or subcontractor.
 
-Quando si rilascia un ordine pianificato di produzione, esso diventa un ordine di produzione operativo. Gli ordini pianificati di acquisto generano delle richieste d'acquisto (RDA), mentre gli ordini di conto lavoro pianificati vengono trasformati in ordini di conto lavoro operativi. 
+When releasing a production planned order, it becomes an operational production order. Purchase planned orders generate purchase requests (RDA), while planned subcontractor orders are converted into operational subcontractor orders.
 :::
 
-La form permette la creazione di:
+The form allows the creation of:
 
-- *richieste di acquisto*, eventualmente già autorizzate tramite un opportuno parametro, nel caso di ordini pianificati di acquisto;  
-- *ordini di conto lavoro* nel caso di ordini pianificati di conto lavoro, o nel caso in cui nella lista fasi di un ordine pianificato di produzione sia presente una fase esterna;  
-- *ordini di produzione*, *lanciati* o *esecutivi* a seconda dell'attivazione di un apposito parametro, nel caso di ordini pianificati di produzione.
+- *purchase requests*, possibly already authorized through an appropriate parameter, in the case of purchase planned orders;  
+- *subcontractor orders* in the case of subcontractor planned orders, or if an external phase is present in the phases list of a planned production order;  
+- *production orders*, *launched* or *executive* depending on the activation of a specific parameter, in the case of production planned orders.
 
-Il rilascio degli ordini comporta che questi non siano più visibili tra gli [Ordini pianificati](/docs/planning/ms-master-scheduling/planned-orders/search-planned-orders) e, di conseguenza, non può essere generata una nuova [Schedulazione](/docs/planning/ms-master-scheduling/general-schedule) della commessa di produzione da cui gli ordini pianificati erano stati eventualmente generati tramite schedulazione generale. Gli ordini pianificati presenti nella griglia generati manualmente o tramite elaborazione MPR non presentano alcun legame con le commesse di produzione.
+The release of orders means that they are no longer visible among the [Planned Orders](/docs/planning/ms-master-scheduling/planned-orders/search-planned-orders) and, consequently, a new [Scheduling](/docs/planning/ms-master-scheduling/general-schedule) of the production job from which the planned orders were possibly generated through general scheduling cannot be generated. Planned orders present in the grid generated manually or through MPR processing have no connection to production jobs.
 
-## Filtro
+## Filter
 
-In questo tab è possibile visualizzare la lista degli ordini pianificati che devono essere ancora rilasciati ed è possibile filtrarli attraverso una serie di criteri di selezione. 
+In this tab, it is possible to view the list of planned orders that still need to be released and filter them through a series of selection criteria.
 
-Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** presente nella *ribbon bar* per visualizzare i risultati all'interno della griglia di risultato.
+Once all desired filters are set, simply click the **Search** button on the *ribbon bar* to view the results within the results grid.
 
-*Pulsanti specifici*: 
+*Specific buttons*: 
 
-> **Rilascio Ordini Pianificati di produzione**: questo pulsante si attiva solamente se nei filtri viene impostato, nel campo *Rilascio ordini pianificati a*, il tipo ordine di produzione e se nella griglia di risultato è stata selezionata almeno una riga ordine di produzione da rilasciare; cliccando su questa funzionalità il sistema eseguirà il rilascio generando ordini di produzione lanciati o esecutivi, a seconda di come siano stati impostati i parametri all'interno dei [Parametri Fabbisogno Materiali](/docs/configurations/parameters/production/resource-requirements-parameters);  
-> **Rilascio ordini pianificati di Acquisto**: questo pulsante si attiva solamente se nei filtri viene impostato, nel campo *Rilascio ordini pianificati a*, il tipo ordine di acquisto e se nella griglia di risultato è stata selezionata almeno una riga ordine di acquisto da rilasciare; cliccando su questa funzionalità il sistema eseguirà il rilascio generando Richieste d'Acquisto autorizzare oppure non autorizzate, a seconda di come si sia scelto di impostare il parametri all'interno dei  [Parametri Fabbisogno Materiali](/docs/configurations/parameters/production/resource-requirements-parameters);  
-> **Rilascio ordini pianificati di Conto Lavoro**: questo pulsante si attiva solamente se nei filtri viene impostato, nel campo *Rilascio ordini pianificati a*, il tipo ordine di conto lavoro e se nella griglia di risultato è stata selezionata almeno una riga ordine di conto lavoro da rilasciare; cliccando su questa funzionalità il sistema eseguirà il rilascio generando ordini di Conto Lavoro;   
-> **Apri ricerca ordini di produzione**: tramite questo pulsante sarà possibile aprire la Ricerca Ordini di Produzione filtrati con gli stessi criteri utilizzati nella sezione di filtro di questa finestra. Ad esempio se si filtrano gli ordini pianificati in questa schermata in base al numero di commessa 3 dell'anno 2018, la finestra di ricerca ordini di produzione di aprirà già filtrata per la commessa 3 dell'anno 2018.
+> **Release Production Planned Orders**: this button is activated only if a production order type is set in the filters in the field *Release orders planned to* and if at least one production order line is selected in the results grid; clicking this feature will release the orders generating launched or executive production orders, depending on how the parameters are set within the [Material Requirements Parameters](/docs/configurations/parameters/production/resource-requirements-parameters);  
+> **Release Purchase Planned Orders**: this button is activated only if a purchase order type is set in the filters in the field *Release orders planned to* and if at least one purchase order line is selected in the results grid; clicking this feature will release the orders generating authorized or unauthorized Purchase Requests, depending on how the parameters are set in the [Material Requirements Parameters](/docs/configurations/parameters/production/resource-requirements-parameters);  
+> **Release Subcontractor Planned Orders**: this button is activated only if a subcontractor order type is set in the filters in the field *Release orders planned to* and if at least one subcontractor order line is selected in the results grid; clicking this feature will release the orders generating Subcontractor Orders;   
+> **Open Production Order Search**: through this button it will be possible to open the Production Orders Search filtered with the same criteria used in the filter section of this window. For example, if the planned orders are filtered in this screen by job number 3 of the year 2018, the production orders search window will open already filtered for job 3 of the year 2018.
 
-*Campi specifici*:
+*Specific fields*:
 
-**Anno**: indica l'anno dell'ordine pianificato;     
-**Ordine**: indica il numero dell'ordine pianificato;           
-**Livello**: indica il livello dell'articolo oggetto dell'ordine all'interno della distinta base;  
-**Anno/Numero/Codice/Descrizione commessa di produzione**: i campi risulteranno essere vuoti se l'ordine pianificato è stato generato manulamente oppure tramite MRP;  
-**Data di inizio prevista**: se si tratta di ordine pianificato di acquisto o di conto lavoro questa data rappresenta la data in cui deve essere inviato al fornitore l'ordine di acquisto che verrà successivamente generato con il rilascio dell'ordine stesso; se si tratta di ordine pianificato di produzione questa data rappresenta la data di previsto inizio della prima fase di lavorazione del ciclo dell'articolo;  
-**Data di fine prevista**: se si tratta di ordine pianificato di acquisto o di conto lavoro questa data rappresenta la data in cui deve essere ricevuta la fornitura e quindi coinciderà con la data di previsto ricevimento della riga dell'ordine fornitore che verrà successivamente generato con il rilascio dell'ordine stesso; se si tratta di ordine pianificato di produzione questa data rappresenta la data di prevista fine dell'ultima fase di lavorazione del ciclo dell'articolo;  
-**Quantità confermata**: sarà diversa da zero solamente se l'elaborazione è avvenuta tramite l'MRP; 
-**Cliente conto, sottoconto e decsrizione**: indica il cliente collegato nel caso degli ordini di produzione;  
-**Fornitore conto, sottoconto e decsrizione**: indica il fornitore collegato nel caso degli ordini di acquisto e di conto lavoro;  
-**Anno/Numero/Tipo ordine cliente**: rappresenta l'ordine cliente da cui è stata generata la commessa da cui è stato schedulato l'ordine pianificato in oggetto.
+**Year**: indicates the year of the planned order;     
+**Order**: indicates the number of the planned order;           
+**Level**: indicates the level of the item subject of the order within the bill of materials;  
+**Year/Number/Code/Description of production job order**: the fields will be empty if the planned order was generated manually or through MRP;  
+**Estimated start date**: if it is a purchase or subcontractor planned order, this date represents the date when the purchase order to be generated with the release of the order itself must be sent to the supplier; if it is a production planned order, this date represents the estimated start date of the first working phase of the item's cycle;  
+**Estimated end date**: if it is a purchase or subcontractor planned order, this date represents the date by which the supply must be received and therefore coincides with the receipt estimated date of the supplier order line that will be generated with the release of the order itself; if it is a planned production order, this date represents the estimated end date of the last working phase of the item's cycle;  
+**Confirmed quantity**: will only be different from zero if processing has occurred via MRP; 
+**Customer account, Detail account, and description**: indicates the customer linked in the case of production orders;  
+**Supplier account, Detail account, and description**: indicates the supplier linked in the case of purchase and subcontractor orders;  
+**Year/Number/Sales order type**: represents the customer order from which the job that the planned order in question was scheduled was generated.
 
-Dopo aver individuato gli ordini che si vogliono rilasciare, per procedere con il **Rilascio** bisognerà utilizzare uno dei pulsanti presenti nella *ribbon bar*, in base al tipo ordine che si deve rilasciare: **Rilascio Ordini Pianificati di produzione**, **Rilascio ordini pianificati di Acquisto** oppure **Rilascio ordini pianificati di Conto Lavoro**. Questi pulsanti si abiliteranno rispettivamente a quanto inserito nel campo **Rilascio ordini pianificati a**.
+After identifying the orders to be released, to proceed with the **Release**, one of the buttons on the *ribbon bar* must be used, depending on the type of order to be released: **Release Production Planned Orders**, **Release Purchase Planned Orders** or **Release Subcontractor Planned Orders**. These buttons will be enabled according to what is entered in the **Release orders planned to** field.
 
-E' anche possibile entrare in **Visualizzazione dei dettagli dell'ordine pianificato** presente nella griglia, facendo semplicemente doppio click con il mouse sopra la riga dell'ordine pianficato che si desidera visualizzare, prima di procedere al rilascio. 
+It is also possible to enter the **Planned Order Detail View (Visualizzazione dei dettagli dell'ordine pianificato)** present in the grid by simply double-clicking on the planned order line that you wish to view before proceeding with the release.
 
-## Parametri
+## Parameters
 
-In questo tab è possibile impostare e salvare i parametri che servono per il rilascio degli ordini pianificati.  
+In this tab, it is possible to set and save the parameters needed for the release of planned orders.
 
-### Ordini di Produzione
+### Production Orders
 
-In questa sezione è possibile, tramite l'attivazione del flag **Generazione ordini di conto lavoro per operazioni esterne**, decidere che, se nella lista fasi dell'ordine pianificato di produzione che si sta rilasciando è presente una fase esterna, venga generato di conseguenza un ordine di conto lavoro per la fase esterna. Solitamente questo flag viene lasciato attivo.
+In this section, it is possible, by activating the **Generation of subcontractor orders for external operations** flag, to decide that if an external phase is present in the phases list of the production planned order being released, a subcontractor order for the external phase will be generated accordingly. This flag is usually left active.
 
-### Richieste d'acquisto
+### Purchase Requests
 
-Nella sezione è possibile:
+In this section, it is possible to:
 
-- impostare, tramite l'apposita combo box, il **Tipo di richiesta di acquisto** che deve essere generata dal rilascio ordine pianificati di acquisto. In questa combo box viene proposto automaticamente il tipo richiesta di acquisto già impostato nei [Parametri Fabbisogno Materiali](/docs/configurations/parameters/production/resource-requirements-parameters) nella sezione Parametri per il rilascio degli ordini pianificati;      
-- attivando il flag **Proprietà approvvigionamento da Parametri MRP articolo** la procedura creerà le *richieste di acquisto* inserendo la priorità indicata nei [Parametri MRP](/docs/configurations/parameters/production/mrp-parameters/mrp-parameters-intro) del singolo articolo; mentre se non è attivo le *richieste di acquisto* verranno create con la priorità incata nella commessa a cui sono legate;      
-- fare in modo, attivando il flag **Arrotonda richiesta di acquisto**',che la procedura di rilascio ordine pianificato di acquisto arrotondi all'intero superiore la quantità che viene inserita nella riga della richiesta di acquisto che viene generata dal rilascio degli ordini pianificati di acquisto, nel caso in cui siano presenti quantità con decimali;  
-- decidere il metodo di raggruppamento: attivando infatti il flag **Raggruppa al più presto**, la procedura di rilascio effettua un raggruppamento di ordini pianificati di acquisto generati per lo stesso articolo; nella casella **Per un periodo in giorni di** si imposta il numero di giorni di range entro il quale può essere effettuato il raggruppamento, considerando le date di previsto ricevimento degli articoli, quindi le date di fine ordine pianificato di acquisto;  
-- decidere, nel caso non sia presente il fornitore nell'ordine pianificato di acquisto, se **Accettare gli ordini senza il fornitore**, **Tralasciare gli ordini senza il  fornitore** oppure **Accettare come fornitore il seguente conto** specificato nelle apposite caselle.
+- set, through the appropriate combo box, the **Type of purchase request (Tipo di richiesta di acquisto)** that must be generated from the release of purchase planned orders. This combo box automatically proposes the type of purchase request already set in the [Material Requirements Parameters](/docs/configurations/parameters/production/resource-requirements-parameters) in the section Parameters for the release of planned orders;      
+- by activating the **Property procurement from MRP article parameters (Proprietà approvvigionamento da Parametri MRP articolo)** flag, the procedure will create *purchase requests* entering the priority indicated in the [MRP Parameters](/docs/configurations/parameters/production/mrp-parameters/mrp-parameters-intro) of the individual item; while if not active, the *purchase requests* will be created with the priority indicated in the job to which they are linked;      
+- ensure, by activating the **Round purchase request (Arrotonda richiesta di acquisto)** flag, that the purchase planned order release procedure rounds to the next whole number the quantity entered in the purchase request line generated by the release of purchase planned orders if decimal quantities are present;  
+- decide the grouping method: activating the **Grouping earliest** flag, the release procedure performs a grouping of  purchase planned orders generated for the same item; in the box **Period days** the number of days for the range of grouping is set, considering the expected receipt dates of the items, thus the expected end dates of the purchase planned orders;  
+- decide, if the supplier is not present in the purchase planned order, whether to **Accept the orders without vendor**, **Leave the orders without vendor**, or **Accept like vendor this account:** specified in the appropriate boxes.
 
-### Ordini di conto lavoro
+### Subcontractor Orders
 
-Nella sezione è possibile:
+In this section, it is possible to:
 
-- impostare, tramite la combo box del **Tipo Ordine** e il campo **Anno**, se l'ordine di conto lavoro da generare debba essere di tipo *Chiuso* o *Aperto* e di che anno debba essere;  
-- decidere il metodo di raggruppamento: attivando infatti il flag **Raggruppare gli ordini dello stesso terzista**, la procedura di rilascio effettua un raggruppamento di ordini pianificati di conto lavoro, inserendo nello stesso ordine di conto lavoro gli articoli che devono essere lavorati dallo stesso terzista;   
-- decidere, nel caso non sia presente il terzista nell'ordine pianificato di conto lavoro, se **Accettare gli ordini senza il fornitore**, **Tralasciare gli ordini senza il terzista** oppure **Accettare come terzista il seguente conto** specificato nelle apposite caselle.
+- set, through the combo box of **Order Type** and the **Year** field, whether the subcontractor order to be generated should be of type *Closed* or *Open* and which year it should be for;  
+- decide the grouping method: by activating the **Group the orders of the same subcontractor** flag, the release procedure groups subcontractor planned orders, inserting in the same subcontractor order the items that must be worked by the same subcontractor;   
+- decide, if the subcontractor is not present in the subcontractor planned order, whether to **Accept the orders without vendor**, **Leave the orders without subcontractor**, or **Accept like subcontractor this account:** specified in the appropriate boxes.
 
-*Pulsante specifico*:  
-> **Salva le modifiche**: consente di salvare  i parametri come sono stati impostati.
+*Specific button*:  
+> **Save changes**: allows saving the parameters as they have been set.
 
-### Ripristino
+### Restoration
 
-In questo tab è possibile eseguire la procedura di ripristino ordine pianificato che consente di annullare il rilascio precedentemente effettuato, ripristinando la situazione antecedente al rilascio stesso. 
+In this tab, it is possible to execute the restore planned order procedure that allows reversing the previously made release, restoring the situation prior to the release.
 
-Vengono visualizzati gli ordini pianificati della stessa tipologia specificata nel campo **Rilascio ordini pianificati a** del tab **Filtro**.
+The planned orders of the same type specified in the field **Release orders planned to** of the **Filter** tab are displayed.
 
-Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** presente nella *ribbon bar* per visualizzare i risultati all'interno della griglia di risultato.  
+Once all desired filters are set, simply click the **Search** button on the *ribbon bar* to view the results within the results grid.  
 
-Tenendo selezionata una delle righe presenti nella griglia di risultato, viene visualizzato in uno dei tre tab inferiori, **Ordini di produzione**, **Richieste d'acquisto** oppure **Ordini di conto lavoro**, il documento generato dal rilascio dell'ordine pianificato selezionato.
+By selecting one of the rows present in the results grid, the document generated from the release of the selected planned order will be displayed in one of the three bottom tabs, **Production Orders**, **Purchase Requests**, or **Subcontractor Orders**.
 
-Per lanciare il ripristino, selezionare uno o più ordini e cliccare il pulsante **Ripristino ordini**. 
+To launch the restoration, select one or more orders and click the **Restore orders** button. 
 
-*Condizioni per la procedura di ripristino*:
+*Conditions for the restoration procedure*:
 
-Per l'**ordine pianificato di produzione**: solo se l'ordine di produzione generato si trova nello stato di *Lanciato*; nel caso in cui l'ordine di produzione sia *Esecutivo* è necessario eseguire il ripristino del rilascio dell'ordine di produzione, mentre nel caso in cui sia già *Evaso* non è più possibile eseguire il ripristino dell'ordine pianificato, a meno che non si proceda a ritroso partendo dal rollback della registrazione della segnalazione di produzione;  
-Per l'**ordine pianificato di acquisto**: solo se la riga di richiesta di acquisto generata si trova nello stato di *Non Evasa*; nel caso in cui la riga di richiesta di acquisto sia già stata evasa con la creazione di un ordine fornitore, sarà necessario procedere a ritroso partendo dal documento di acquisto fino al quale si è già arrivati;  
-Per l'**ordine pianificato di conto lavoro**: solo se la riga dell'ordine di conto lavoro generato non sia stata ancora evasa, oppure non sia stato generato una DDT di consegna per il materiale relativo a quella riga di ordine di conto lavoro.
+For the **production planned order**: only if the generated production order is in the *Launched* state; if the production order is *Executive*, it is necessary to restore the release of the production order, while if it is already *Executed*, it is no longer possible to restore the planned order, unless proceeding backwards starting from the rollback of the production report registration;  
+For the **purchase planned order**: only if the generated purchase request line is in the *Not Executed* state; if the purchase request line has already been executed with the creation of a supplier order, it will be necessary to proceed backwards from the purchase document to which it has already arrived;  
+For the **subcontracted planned order**: only if the subcontractor order line generated has not yet been executed, or if a delivery note (DDT) for the material related to that subcontractor order line has not been generated.
 
-Eseguendo questa procedura, gli ordini ripristinati saranno nuovamente visibili nel tab di **Filtro** dove sarà possibile rieseguire il rilascio.
+By executing this procedure, the restored orders will be visible again in the **Filter** tab where the release can be retried.
 
-Per dettagli sul funzionamento comune delle form fare riferimento al link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+For details on the common functioning of forms, please refer to the link [Common functions, buttons, and fields](/docs/guide/common).
