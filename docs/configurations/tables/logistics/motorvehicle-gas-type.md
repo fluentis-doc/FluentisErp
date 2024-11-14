@@ -5,7 +5,7 @@ sidebar_position: 55
 
 La tabella si trova sul percorso **Tabelle > Logistica > Tipi carburanti autoveicolo**.
 
-In questa tabella è possibile codificare i *Tipi carburanti autoveicolo* che potranno essere selezionati nell'[Angrafica automezzi](/docs/configurations/tables/logistics/motorvehicle/).
+In questa tabella è possibile codificare i *Tipi carburanti autoveicolo* che potranno essere selezionati nell'[Angrafica automezzi](/docs/logistics/motorvehicles/motorvehicle).
 
 La tabella consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
 

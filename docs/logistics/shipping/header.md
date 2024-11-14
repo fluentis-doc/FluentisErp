@@ -9,8 +9,8 @@ Dopo aver selezionato i dati obbligatori nella sezione superiore, l'utente può 
 - **Ore pianificate**: indica il totale delle ore necessarie per la spedizione. Viene calcolato automaticamente sulla base della data inizio e fine;
 
 Le informazioni relative al mezzo e all'autista:
-- **Automezzo**: permette di selezionare il mezzo con il quale verrà effettuata la spedizione tra quelli indicati nella tabella [Automezzi](/docs/configurations/tables/logistics/motorvehicle/);
-- **Autista assegnato**: permette di selezionare l'autista che effettuerà la spedizione tra quelli indicati nella tabella [Autisti](/docs/configurations/tables/logistics/motorvehicle/);
+- **Automezzo**: permette di selezionare il mezzo con il quale verrà effettuata la spedizione tra quelli indicati nella tabella [Automezzi](/docs/logistics/motorvehicles/motorvehicle);
+- **Autista assegnato**: permette di selezionare l'autista che effettuerà la spedizione tra quelli indicati nella tabella [Autisti](//docs/logistics/motorvehicles/motorvehicle-drivers);       
 - **Volume**: permette di indicare il volume della spedizione e la relativa unità di misura;
 - **Peso netto**: permette di indicare il peso netto della spedizione e la relativa unità di misura;
 - **Peso lordo**: permette di indicare il peso lordo della spedizione e la relativa unità di misura;
