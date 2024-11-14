@@ -26,4 +26,9 @@ Per quanto riguarda le previsioni di consumo future, queste devono essere inseri
 
 Per tale ragione il valore del parametro **Giorni nel futuro** deve essere pari almeno al lead time cumulativo dell'articolo.
 
+Per quanto concerne le medie che verificano i consumi nel passato, ricordare che nella tabella delle causali di magazzino bisogna impostare il Flag DDMRP ADU, per indicare alla procedura quali causali vanno considerate tra quelle di scarico del magazzino in cui è stoccato l'articolo.
+
+Se nella tabella delle causali di magazzino non compare il flag DDMRP significa che nei parametri generali non è impostata l'opzione DDMRP.
+
+
 
