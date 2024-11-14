@@ -7,27 +7,25 @@ sidebar_position: 7
 
 ATTENZIONE: La tab è visibile solamente se la causale contabile che si sta utilizzando presenta al suo interno il flag '**cespiti**' attivo. Inoltre è opportuno impostare, sempre nella causale (tab **[Dettaglio registrazione](/docs/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates/recording-detail)**), il **tipo di operazione** da compiere, tramite la combo box accanto al flag di cui sopra (acquisizione, dismissione, distruzione ecc...). Pertanto sarà opportuno creare diverse causali dedicate ai cespiti ed adatte a compiere le diverse operazioni possibili.
 
-![](/img/it-it/finance-area/ledger-records/records/create-ledger-record/fixed-assets-tab/image01.png)
-
  
 
-La sezione superiore è dedicata alla codifica del nuovo cespite acquistato oppure alla selezione del cespite esistente per rilevare una nuova operazione al suo interno: 
+### LA SEZIONE SUPERIORE
+
+è dedicata alla codifica del nuovo cespite acquistato oppure alla selezione del cespite esistente per rilevare una nuova operazione al suo interno: 
 
 **per inserire un nuovo cespite** è sufficiente procedere a compilare una nuova riga, 
 
-mentre **per selezionare un cespite esistente** bisogna necessariamente utilizzare il pulsante denominato ‘Seleziona cespite esistente' presente nella ribbon bar al fine di richiamare la scheda cespite già esistente ed integrarla. 
-
-![](/img/it-it/finance-area/ledger-records/records/create-ledger-record/fixed-assets-tab/image02.png)
+mentre **per selezionare un cespite esistente** bisogna necessariamente utilizzare il pulsante denominato **Seleziona cespite esistente** presente nella ribbon bar al fine di richiamare la scheda cespite già esistente ed integrarla. 
 
  
 
-**Procedura per l'inserimento**:
+### PROCEDURA PER L'INSERIMENTO:
 
 selezionare 
 
 - la **Categoria cespite** di appartenenza tramite la combo box (la quale è collegata alla tabella '**[categoria cespite](/docs/configurations/tables/finance/fixed-asset-category)**'), 
 
-- il **Tipo di proprietà** (normalmente è proposto 'cespite di proprietà' di default), 
+- il **Tipo di proprietà** (normalmente è proposto 'cespite di proprietà' di default), (**Note proprietà**: campo per inserire un'ulteriore annotazione libera)
 
 - assegnare un eventuale **Precodice** (se si desidera ottenere una numerazione all'interno di questo precodice, non sono infatti possibili due schede cespiti con lo stesso numero se non utilizzando un precodice che permette di attribuire una nuova numerazione ad esso riferita) la combo box è collegata alla tabella '**[Precodice cespite](/docs/configurations/tables/finance/fixed-asset-precode)**'
 
@@ -77,7 +75,7 @@ Altri campi:
 
 **Note**: campo per annotazioni, non riportato nei report standard (può essere aggiunto personalizzandoli). 
 
-**Ricavometro**: campo obsoleto
+**Statistiche fiscali**: Abilita la gestione del tab inferiore Dati oggettivi cespite al fine di utilizzarlo per l'ammortamento fiscale.
 
 
 
@@ -103,21 +101,23 @@ Tipo Ammortamento: combo box che permette di selezionare la tipologia (codice) 
 
 - "Vuoi legare l'alienazione parziale ad un'operazione patrimoniale già esistente?": la causale è di vendita parziale e la categoria cespite non ha il flag ‘incrementale': in questo caso sarà eseguito il messaggio per una assegnazione dell'importo di alienazione ad una specifica operazione patrimoniale del cespite. Esempio: per un cespite ‘non incrementale' ogni singola riga di operazione viene gestita a livello di ammortamenti con una vita a se stante: l'alienazione parziale (rispetto a tutto il cespite) potrebbe essere in realtà gestita come una vendita totale della singola operazione (ad es.: ho un computer, lo incremento con uno scanner, poi vendo solo lo scanner).
 
-**Scegliendo Si (Yes)** verrà visualizzato un help (popup) per la ricerca di quale componente che costituisce il cespite si vuole alienare, permettendo di selezionarlo tramite i tasti 'Ricerca' e 'Seleziona'  
+**Scegliendo Si (Yes)** verrà visualizzato un help (popup) per la ricerca di quale **componente** che costituisce il cespite si vuole alienare, permettendo di selezionarlo tramite i tasti *Ricerca* e *Seleziona*  
 
-![](/img/it-it/finance-area/ledger-records/records/create-ledger-record/fixed-assets-tab/image03.png)
-
- 
+In particolare si noti che i vari componenti sono facilmente individuabili anche perchè riferiti, all'interno dell'help, al campo **Progressivo** (*Progrg*.) così come all'interno della scheda cespite
 
  
 
-**TAB DI DETTAGLIO INFERIORI**
+ 
+
+## TAB DI DETTAGLIO INFERIORI
 
  
 
 Il contenuto è riferito alla riga superiore selezionata. 
 
-**OPERAZIONI PATRIMONIALI**: (viene aggiunta una nuova riga per ogni operazione caricata nella griglia superiore). 
+### OPERAZIONI PATRIMONIALI: 
+
+(viene aggiunta una nuova riga per ogni operazione caricata nella griglia superiore). 
 
 **Data Oper**: Data alla quale viene registrato il movimento sul libro cespiti;
 
@@ -179,7 +179,7 @@ Ammortamento 30.000 - 15.000 = 15.000 x 3%; L'ammortamento sarà calcolato fich�
 
  
 
-**OPERAZIONI ECONOMICHE**:
+### OPERAZIONI ECONOMICHE:
 
 (normalmente non utilizzata), serve per collegare alla scheda cespite un costo che non va capitalizzato (perché non pluriennale).
 
@@ -193,13 +193,11 @@ I campi sono simili a quelli presenti nella tab Operazioni patrimoniali
 
  
 
-**AMMORTAMENTI**:
+### AMMORTAMENTI:
 
 Normalmente non utilizzata all'interno della registrazione contabile, poiché l'ammortamento può essere più comodamente gestito tramite la relativa procedura automatica nell'ambito delle scritture di assestamento, oppure, per singolo cespite, dall'interno della scheda cespite (nell'apposita griglia che ricalca i campi presenti nella tab in commento).
 
-Nel caso si desideri, nell'ambito di una registrazione di prima nota, effettuare l'ammortamento (per quanto riguarda la scheda cespite, la parte contabile sarà gestita nel tab Registrazione) occorrerà richiamare il cespite esistente da ammortizzare tramite il tasto ![](/img/it-it/finance-area/ledger-records/records/create-ledger-record/fixed-assets-tab/image04.png)
-
-che farà comparire la riga relativa nella griglia superiore, assicurarsi che il Tipo operazione sia 'F.do Ammortamento Ordinario', se non già previsto nelle impostazioni della causale, inserire nel campo Importo il valore dell'ammortamento annuale da registrare, quindi nella tab Ammortamenti indicare l'anno dell'ammortamento (campo Anno) e compilare manualmente i campi obbligatori della griglia:
+Nel caso si desideri, nell'ambito di una registrazione di prima nota, effettuare l'ammortamento (per quanto riguarda la scheda cespite, la parte contabile sarà gestita nel tab Registrazione) occorrerà richiamare il cespite esistente da ammortizzare tramite il tasto **Seleziona un cespite esistente** che farà comparire la riga relativa nella griglia superiore, assicurarsi che il Tipo operazione sia *F.do Ammortamento Ordinario*, se non già previsto nelle impostazioni della causale, inserire nel campo **Importo** il valore dell'ammortamento annuale da registrare, quindi nella tab *Ammortamenti* indicare l'anno dell'ammortamento (campo **Anno**) e compilare manualmente i campi obbligatori della griglia:
 
 **Progressivo**: permette id selezionare tramite combo box la riga della scheda cespite da ammortizzare (l'unico presente se non vi sono componenti aggiuntivi o incrementi del cespite);
 
@@ -217,7 +215,6 @@ che farà comparire la riga relativa nella griglia superiore, assicurarsi che il
 
 **Costo**: risultato del calcolo imponibile * Percentuale * giorni possesso / 365 (può essere forzato manualmente).
 
-![](/img/it-it/finance-area/ledger-records/records/create-ledger-record/fixed-assets-tab/image05.png)
 
 **Contab**: flag contabilizzato, attribuisce alla registrazione la qualifica di contabilizzata impedendone la sovrascrittura, senza questo flag non potrà essere elaborato un ammortamento successivo.
 
@@ -227,25 +224,12 @@ che farà comparire la riga relativa nella griglia superiore, assicurarsi che il
 
 Nella tab Operazioni patrimoniali il tipo operazione F.do Amm. Ordinario avrà già aggiornato la riga del libro cespiti che incrementa il fondo ammortamento e riduce per pari importo il valore netto contabile del bene.
 
-![](/img/it-it/finance-area/ledger-records/records/create-ledger-record/fixed-assets-tab/image06.png)
 
- 
 
-**PROPRIETA'**:
 
-![](/img/it-it/finance-area/ledger-records/records/create-ledger-record/fixed-assets-tab/image07.png)
+### GESTIONE DATI OGGETTIVI:
 
-Questa tab permette di assegnare liberamente delle informazioni tabellate, ad esempio per collegare al cespite delle caratteristiche o informazioni predefinite.
-
-**Tipo**: combo box, collegata alla tabella **[Proprietà cespiti](/docs/configurations/tables/finance/fixed-asset-property)**, necessaria per l'inserimento del dato
-
-**Descrizione**: Campo collegato al precedente 'Tipo'
-
-**Nota**: campo per inserire un'ulteriore annotazione libera
-
-**GESTIONE DATI OGGETTIVI**:
-
-Questo tab permette di gestire i dati utili per l'ammortamento oggettivo (tecnico extracontabile) che possono essere elaborati parallelamente all'ammortamento civilistico.
+Questo tab permette di gestire i dati utili per l'ammortamento oggettivo (tecnico extracontabile - oppure fiscale) che possono essere elaborati parallelamente all'ammortamento civilistico.
 
 Per prima cosa all'interno della tabella delle **[Categorie cespite](/docs/configurations/tables/finance/fixed-asset-category)** dovrà essere attivato il relativo flag per recepire i dati all'interno della scheda cespite.
 
@@ -253,19 +237,18 @@ Quindi inserendo la registrazione contabile relativa, ad esempio, all'acquisto d
 
 I campi della tab ricalcano infatti quelli presenti nella tab 'Operazioni patrimoniali'. La tab 'Ammortamenti', invece, è utilizzata esclusivamente per registrazioni di tipo contabile / civilistico, quindi la gestione degli ammortamenti tecnici (extracontabili) potrà essere eseguita soltanto entrando nelle scheda cespite (Amministrazione > Cespiti > Cespiti > doppio click per entrare).
 
-**CENTRI DI COSTO - COMMESSE**:
+### CENTRI DI COSTO - COMMESSE:
 
-Questo tab (visibile solo quando NON sono attive le funzioni avanzate per il controlling gestite dal flag 'Gestione controlling' nella tabella Società è riservato all'imputazione del centro di costo / profitto (oggi centro aziendale)  e della commessa (oggi Progetto) da collegare alla scheda cespite che verrà creata con la registrazione contabile che si sta inserendo.
+Questo tab (**visibile solo quando NON sono attive le funzioni avanzate per il controlling**) gestite dal flag *Gestione controlling* nella tabella Società è riservato all'imputazione del centro di costo / profitto (oggi centro aziendale)  e della commessa (oggi Progetto) da collegare alla scheda cespite che verrà creata con la registrazione contabile che si sta inserendo.
 
 In particolare il centro che verrà collegato alla scheda cespite con la registrazione (e che è possibile inserire anche manualmente direttamente nella scheda, nella tab 'Dettaglio' della stessa) rappresenta una eccezione, valida per quel cespite, rispetto al dato inserito nella categoria cespite alla quale la scheda inserita fa riferimento, nella tabella Categorie cespite.
 
 **Il centro di costo inserito sarà valorizzato al momento del calcolo (da parte della procedura automatica) dell'ammortamento.**
 
-NOTA:
+:::tip NOTA:
+Nel caso in cui siano attive le funzioni avanzate per il controlling la gestione del centro aziendale e del progetto a cui agganciare le quote di ammortamento sarà definita in una apposita tab **Ammortamento per controlling** all'interno della scheda cespite.
+:::
 
-Nel caso in cui siano attive le funzioni avanzate per il controlling la gestione del centro aziendale e del progetto a cui agganciare le quote di ammortamento sarà definita in una apposita tab 'Ammortamento per controlling' all'interno della scheda cespite.
-
-![](/img/it-it/finance-area/ledger-records/records/create-ledger-record/fixed-assets-tab/image08.png)
 
 **Cdc**: combo box necessaria per richiamare il centro e collegata con la tabella **[Centri aziendali;](/docs/configurations/tables/controlling/analytical-accounting/corporate-centers)**
 
@@ -275,13 +258,12 @@ Nel caso in cui siano attive le funzioni avanzate per il controlling la gestione
 
 **La griglia riservata all'inserimento del Progetto** (Commessa) non viene aggiornata e non interagisce con il campo 'Progetto' in testata registrazione e/o la tab 'Progetti' (dedicati alla gestione dei costi ordinari di esercizio anziché quelli pluriennali) infatti tale griglia è dedicata, così come per i centri aziendali, ad indicare il progetto che dovrà essere riportato nella scheda cespite e sul quale andranno imputate le quote di ammortamento calcolate.
 
-![](/img/it-it/finance-area/ledger-records/records/create-ledger-record/fixed-assets-tab/image09.png)
 
 **Progetti**: widget per l'inserimento del progetto (con doppio click si apre l'help di ricerca, oppure iniziando a scrivere nel campo si attiva la ricerca rapida); il campo è collegato alla tabella Progetti
 
 **Percentuale**: percentuale di attribuzione al progetto inserito nella riga in uso (esempio, in caso di attribuzione totalmente a quel progetto indicare 100%, se invece il costo relativo alla quota ammortamento sarà ripartito su due progetti si inseriranno die righe ognuna con ripartizione al 50%).
 
-ALTRO
+## ALTRO
 
 In caso di alienazione parziale (sempre per un cespite ‘incrementale' o in caso di alienazione parziale non collegata per un non incrementale) l'utente dovrà integrare la riga dell'operazione parziale con gli importi di storno dei fondi (con segno negativo quindi) e valorizzare la minusvalenza o plusvalenza relativa: tali importi saranno poi da inserire anche all'interno della scheda ‘registrazione' per la contabilità generale. Negli altri casi, invece, l'applicativo avrà aggiornato correttamente la scheda cespite, avrà inserito il movimento anche all'interno della sezione Iva della registrazione e da qui avrà aggiornato la registrazione relativa. Nel caso di alienazione, in particolare, se sono stati codificati i sottoconti di minusvalenza e plusvalenza sia all'interno della causale che nei parametri di contabilità, saranno state aggiunte anche le righe relative all'operazione di vendita (una riga di storno del totale patrimoniale attivo, una o più righe di storno dei fondi ammortamento e per differenza la minusvalenza/plusvalenza).
 
@@ -289,24 +271,15 @@ Ulteriori operazioni attivabili nella scheda cespiti: al momento del caricamento
 
 È possibile cancellare la riga cespite inserita nella griglia superiore: in questo caso sarà eseguito un messaggio di conferma della cancellazione anche dell'anagrafica cespite, per il quale il default è su ‘No' (il messaggio viene eseguito anche al momento di chiudere la registrazione senza salvare). Si raccomanda di fare particolare attenzione al messaggio, al fine di non lasciare schede cespiti ‘vuote' all'interno del database.
 
-RIBBON BAR: rappresenta il menu della Form in oggetto, ossia l'area nella quale è possibile effettuare delle azioni. La lista delle funzionalità possibili, nel tab corrente, è di seguito rappresentata:
 
 
 
 | Funzione | Significato |
 | --- | --- |
-| Salva | Pulsante per salvare la registrazione. |
-| Nuova registrazione | Pulsante per creare una nuova registrazione. |
-| Parametri di inserimento | Richiama i parametri di inserimento della prima nota. |
 | Seleziona un cespite esistente | Pulsante per selezionare un cespite già esistente e rilevare una nuova operazione al suo interno. |
 | Cancella cespite | Pulsante per cancellare il cespite selezionato. |
 | Cancella i dati selezionati dalla griglia tipo ammortamento | Pulsante per cancellare la riga selezionata all'interno della griglia (inferiore) contenuta nella tab Ammortamenti |
 
-
-
-| Funzione | Significato |
-| --- | --- |
-| Document Manager | Pulsante per il collegamento alla gestione documentale. |
 
 
 

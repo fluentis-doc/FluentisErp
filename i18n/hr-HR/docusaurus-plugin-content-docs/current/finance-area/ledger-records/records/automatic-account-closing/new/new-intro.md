@@ -25,8 +25,6 @@ La form si compone di una serie di tab (vedere i link qui sopra) e di un'area di
 
 Una volta lanciata la nuova chiusura, all'apertura della form vengono proposti in automatico la data di chiusura (data odierna) ed il numero di versione (progressivo), campi comunque editabili.
 
-![](/img/it-it/finance-area/ledger-records/records/automatic-account-closing/new/new/image01.png)
-
  
 
 E' necessario inserire una descrizione e **compilare i campi obbligatori presenti nella Tab Parametri prima di procedere a Salvare** la chiusura.

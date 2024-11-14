@@ -33,7 +33,7 @@ Fatturazione elettronicaNella sezione dei filtri è presente un expander relativ
 
 ![](/img/it-it/finance-area/ledger-records/records/search-ledger-records/image02.png)
 
-Nel ribbon Menu, nella sezione dedicata alla fatturazione elettronica, utilizzando la funzione ![](/img/neutral/common/legenda.png)  **Registro documenti Sdi** è possibile prendere visione delle azioni svolte sul documento selezionato, con la funzione ![](/img/neutral/common/print.png)**Stampa** stampare il documento XML abbinato, con le funzioni ![](/img/it-it/finance-area/ledger-records/records/search-ledger-records/image05.png)**Scarica allegato** o **Scarica il contenuto del registro** eseguire il download del file XML.
+Nel ribbon Menu, nella sezione dedicata alla fatturazione elettronica, utilizzando il bottone **Registro documenti Sdi** è possibile prendere visione delle azioni svolte sul documento selezionato, con la funzione **Stampa** stampare il documento XML abbinato, con le funzioni **Scarica allegato** o **Scarica il contenuto del registro** eseguire il download del file XML.
 
 La griglia di riepilogo risultati visualizza alcune colonne nelle quali viene riportato lo stato e l'esito dei documenti in riferimento alla trasmissione degli stessi al SdI:
 

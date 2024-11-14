@@ -9,7 +9,6 @@ In prima battuta la ricerca dei dati possibile con questa form può essere utile
 
 All'apertura della form è necessario selezionare il registro IVA da controllare e/o modificare ed il range di date di interesse (per un controllo generale si consiglia di partire dall'inizio dell'anno). Tale selezione viene fatta nella parte più alta della form.
 
-![](/img/it-it/finance-area/ledger-records/records/rearrange-vat-reference-number/image01.png)
 
 A questo punto è possibile avviare la ricerca tramite il comando **Cerca** presente nella ribbon bar.
 
