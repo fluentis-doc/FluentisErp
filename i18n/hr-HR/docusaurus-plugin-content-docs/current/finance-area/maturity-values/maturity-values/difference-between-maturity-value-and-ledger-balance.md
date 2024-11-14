@@ -44,5 +44,7 @@ A titolo di esempio: Un totale dare contabile postivo (e quindi un saldo dare co
 
 ### **VIDEO TUTORIALS**
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Phu6-Q4ZF7o" title="YouTube video player" frameborder="0" allowfullscreen= "true"></iframe>
+:::important Vedi Anche
+[**VIDEO TUTORIALS SULLE PARTITE APERTE**](/docs/video/finance/intro.md)
+:::
 

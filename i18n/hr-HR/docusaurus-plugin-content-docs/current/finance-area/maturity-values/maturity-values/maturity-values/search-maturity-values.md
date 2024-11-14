@@ -54,7 +54,14 @@ In particolare per ogni riga corrispondente alla partita è presente un comando 
 | Modifica registrazione | Permette di entrare direttamente in modifica della registrazione contabile collegata alla partita selezionata. Se la partita selezionata non è collegata ad una registrazione contabile il pulsante risulterà disabilitato. |
 
 
+:::tip[NOTA: Aggiorna lo stato delle partite]
+Dalle versioni Fluentis2021 e successive, non sono più presenti triggers e stored procedures che eseguono procedure di calcolo o ricalcolo. Una di queste procedure eseguite a livello di database era il ricalcolo automatico dello stato delle partite, in particolare tipicamente la partita **Scaduta** in luogo della generica partita Aperta. E' pertanto necessario servirsi del pulsante Aggiorna lo stato delle partite per eseguire il ricalcolo dello stato e la corretta visualizzazione di partite (non movimentate da alcun pagamento, anche parziale, il quale le aggiornerebbe nello stato) scadute.
 
+Si ricorda che volendo ignorare lo stato *Scaduto* a scopo di filtro, è possibile utilizzare i filtri in testata form per data scadenza ottenendo lo stesso risultato.
+
+Per gli utenti che dispongono del tool ***Supervisor***, è possibile abilitare il task codice FI_MaturitiesOverdueStatusFix
+che setta lo stato *Scaduto* su partite con residuo != 0 e data scadenza < oggi
+:::
 
 
 

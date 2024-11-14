@@ -18,9 +18,13 @@ Da questa posizione è possibile:
 
 In particolare, tipicamente, da questa posizione può essere aggiunto o rimosso il blocco della partita per il pagamento agendo sul flag apposito:
 
-![](/img/it-it/finance-area/maturity-values/maturity-values/maturity-values-management/image01.png) aggiungendo il flag per bloccare (il programma aggiungerà automaticamente la data e l'utente che ha bloccato)
+![](/img/it-it/finance-area/maturity-values/maturity-values/maturity-values-management/image01.png) 
 
-oppure togliendolo per sbloccare (a questo punto comparirà anche l'utente che ha sbloccato). ![](/img/it-it/finance-area/maturity-values/maturity-values/maturity-values-management/image02.png)
+aggiungendo il flag per bloccare (il programma aggiungerà automaticamente la data e l'utente che ha bloccato)
+
+oppure togliendolo per sbloccare (a questo punto comparirà anche l'utente che ha sbloccato). 
+
+![](/img/it-it/finance-area/maturity-values/maturity-values/maturity-values-management/image02.png)
 
 **Sottoconto di pagam.**: questo sottoconto viene associato alle partite create, al fine di poter verificare la canalizzazione dei pagamenti/incassi nelle stampe degli scadenziari e nelle simulazioni di cash flow; verrà pertanto compilato inserendo il conto bancario dell'azienda in uso. Il campo verrà compilato in automatico, per le partite create da registrazioni contabili, se nell'** [anagrafica del fornitore](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/finance) ** è compilato il campo apposito.
 
@@ -38,7 +42,7 @@ Se, parallelamente, ad esempio, viene inserita una scrittura contabile di apertu
 
 ## Partite raggruppate
 
- Dalla form in commento è possibile anche eseguire una sorta di "accorpamento" delle partite. Ovvero alla partita attualmente in modifica è possibile accorpare altre partite (anche non intestate allo stesso soggetto).
+ Dalla form in commento è possibile anche eseguire una sorta di "accorpamento" delle partite. Ovvero alla partita attualmente in modifica è possibile accorpare altre partite (anche non intestate allo stesso soggetto). Il comando è posto nella ribbon bar. **Aggiungi partite da raggruppare**.
 
 Il risultato sarà che:
 
