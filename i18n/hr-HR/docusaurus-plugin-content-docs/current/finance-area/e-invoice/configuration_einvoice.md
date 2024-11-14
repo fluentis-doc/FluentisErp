@@ -138,7 +138,12 @@ Per gestire le annotazioni che nelle stampe delle vecchie fatture venivano inser
 Conai assolto ove dovuto”), devono essere inserite nuove note nella tabella Note codificate (Utilità->Gestione note 
 codificate). Questo tipo di annotazioni vengono riportate nel tag Causale del file XML. 
 Le condizioni da rispettare per avere compilato il tag Causale sono: 
-- il tipo nota codificata deve avere codice ‘FATTURAZIONEELETTRONICA_CAUSALE’ 
+- il tipo nota codificata deve avere codice        
+   
+```
+   FATTURAZIONEELETTRONICA_CAUSALE
+```
+   
 - la nota deve essere legata alla singola società 
 - viene riportato quello che c’è scritto nel campo Descrizione, se questo è vuoto quello che c’è nel campo ‘Titolo’
  
@@ -149,7 +154,10 @@ Per gestire delle annotazioni da riportare in base al cliente, devono essere ges
 essere replicato più volte nel file. 
 
 Le condizioni da rispettare per avere compilato il tag Causale sono: 
-- il tipo nota codificata deve avere codice ‘FATTURAZIONEELETTRONICA_CAUSALE’ 
+- il tipo nota codificata deve avere codice
+```
+   FATTURAZIONEELETTRONICA_CAUSALE
+```
 - le note devono essere inserire nella scheda ‘Varie’ dell’anagrafica cliente, dedicato alla gestione delle note 
 specifiche da riportare in stampa dei documenti. 
 - la nota deve avere il flag ‘Stampa in Fatture Vendita’ o, se questo è vuoto, si riporta quanto scritto nel campo ‘Note’ della riga
@@ -157,9 +165,18 @@ specifiche da riportare in stampa dei documenti.
 ### Gestione dati aggiuntivi liberi (tag 2.2.1.16 AltriDatiGestionali)
 
 Per gestire dati aggiuntivi ‘liberi’ di riga, in Fluentis è necessario inserire degli ExtraData con codice che inizia con 
-‘AltriDGes_’ (es. AltriDGes_AltriDati3). 
 
-Questi Extradata, di tipo semplice, vanno collegati all’oggetto padre  ‘FSSalesInvoiceItem’ sulla proprietà, appunto, ExtraData (sono previsti 3 tipi: stringa, numerico, data). 
+```
+  AltriDGes_
+```
+(es. AltriDGes_AltriDati3). 
+
+Questi Extradata, di tipo semplice, vanno collegati all’oggetto padre  
+
+```
+   FSSalesInvoiceItem
+```
+sulla proprietà, appunto, ExtraData (sono previsti 3 tipi: stringa, numerico, data). 
 
 In ogni riga articolo, quindi, l’utente può aggiungere liberamente (manualmente) questi dati aggiuntivi; come risultato la riga articolo avrà, (ad esempio, se l’extra data è di tipo stringa), questa sezione aggiuntiva: 
 
@@ -171,7 +188,11 @@ In ogni riga articolo, quindi, l’utente può aggiungere liberamente (manualmen
 ```
 
 dove: 
-- il ‘TipoDato’ è ripreso dal testo che segue il codice AltriDGes_ dell’extra data, 
+- il ‘TipoDato’ è ripreso dal testo che segue il codice 
+```
+   AltriDGes_ 
+```
+dell’extra data, 
 - quando il tipo dell’extra data è numerico, quello che c’è nel campo ‘Valore’ dell’extra data finisce nel tag ‘RiferimentoNumero’ e quello che c’è nel campo ‘Descrizione’ (se non è vuota) dell’extra data stesso finirà nel ‘RiferimentoTesto’. 
 
 Esempio
@@ -186,16 +207,36 @@ Esempio
 ### Gestione del “riferimento amministrazione” in testata documento (tag 1.2.6 RiferimentoAmministrazione) 
 
 Il “RiferimentoAmministrazione” in testata fattura viene gestito riprendendo dall’anagrafica cliente la ‘Persona di 
-riferimento’ inserita con nota ‘XMLPA’. In fattura vengono riportati i campi “Nome” + “ “ + “Cognome” della persona 
+riferimento’ inserita con nota 
+
+```
+   XMLPA
+```
+
+
+In fattura vengono riportati i campi “Nome” + “ “ + “Cognome” della persona 
 così inserita.
 
 ### Gestione del “riferimento amministrazione” per dettaglio linee (tag 2.2.1.15 RiferimentoAmministrazione)
 
 Alcuni enti pubblici richiedono un ‘Riferimento amministrazione’ per la singola riga articolo (e non in testata). 
 
-In Fluentis è possibile inserire degli ‘ExtraData’ con codice ‘RiferimentoAmminis’. 
+In Fluentis è possibile inserire degli ‘ExtraData’ con codice 
 
-Questo extradata, di tipo semplice, deve essere collegato all’oggetto padre ‘FSSalesInvoiceItem’ con proprietà ExtraData (previsto come stringa). 
+```
+   RiferimentoAmminis
+```
+
+ 
+
+Questo extradata, di tipo semplice, deve essere collegato all’oggetto padre 
+
+```
+   FSSalesInvoiceItem
+```
+
+
+con proprietà ExtraData (previsto come stringa). 
 
 In ogni riga articolo, quindi, l’utente può aggiungere liberamente (manualmente) questi dati aggiuntivi e il risultato sarà che quella riga articolo avrà questa sezione aggiuntiva: 
 
@@ -209,7 +250,13 @@ Dove il valore ‘RifAmm’ è preso dalla “Descrizione” dell’extra data i
  
 La quantità utilizzata per il calcolo del prezzo di riga (indifferentemente che sia la prima o la seconda, dipende dal flag UMPrezzo della riga stessa) viene riportata nel tag 2.2.1.5 Quantità. 
 
-L’unità di misura non riferita al prezzo viene riportata come ‘Altri dati gestionali’, con TipoDato = ‘QTALTERNA’ e quantità riportata nel tag ‘RiferimentoNumero’. 
+L’unità di misura non riferita al prezzo viene riportata come ‘Altri dati gestionali’, 
+
+con TipoDato = 
+```
+   QTALTERNA
+```
+e quantità riportata nel tag ‘RiferimentoNumero’. 
 
 Esempio
 
@@ -319,6 +366,12 @@ Per la gestione della ritenuta d’acconto:
 
 Per quanto riguarda l’Enasarco, con la versione 1.6 dello schema della fatturazione elettronica (in vigore dal 01/10/2020) è stato definito che la sezione 2.1.1.5, dedicata inizialmente alle sole ritenute, ora possa essere replicata N volte per indicare anche l’Enasarco, al quale è stato assegnato il codice RT04. Fluentis, se la ritenuta 
 inserita in testata ha le impostazioni enasarco, valorizza nel documento anche il conteggio dell’enasarco, e valorizza come richiesto la sezione 2.1.1.5
+
+
+:::danger[Attenzione]
+CONTABILIZZAZIONE: la fattura attiva collegata alla ritenuta d'acconto subita ed al contributo enasarco sarà contabilizzata generando automaticamente la scrittura contabile corretta che storna dal credito verso il cliente la ritenuta ed il contributo.
+PRESTARE ATTENZIONE CHE NELLA CONFIGURAZIONE DEL TIPO RITENUTA ASSOCIATO IL CAMPO **Tipi Partite** sia impostato su *Partite nette,* altrimenti la scrittura contabile ed il calcolo partite aperte risulteranno errati e mancanti del giroconto delle ritenuta.
+:::
 
 :::tip **Vedere anche**
 Per la gestione del riaddebito **contributo cassa previdenza** nella fattura elettronica [**vedere qui**](/docs/configurations/tables/general-settings/expenses-types#ritenuta-dacconto-e-cassa-previdenza)
