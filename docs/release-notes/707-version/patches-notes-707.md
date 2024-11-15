@@ -3,6 +3,27 @@ title: Patch notes Versione 707
 sidebar_position: 1
 ---
 
+### Patch 707.1-0007 - 08/11/2024
+> - SD – Modificata la procedura di Creazione listini avanzata: ora vengono visualizzati nella griglia solo gli articoli che hanno una formula di aggiornamento politiche prezzi/sconti e solo con la formula inserita nell’anagrafica articolo. È stata aggiunta la possibilità di filtrare per la Formula di calcolo e per il Conto a cui è intestato il listino di origine e/o di destinazione. Infine, il Prezzo precedente viene ora ripreso da un listino analogo a quello di destinazione, se presente, in modo da calcolare la percentuale di variazione rispetto al prezzo di vendita in vigore al momento dell’aggiornamento listini. Se l’articolo non è già presente all’interno di un listino analogo a quello di destinazione, il Prezzo precedente sarà 0 e la percentuale di Variazione sarà 100% (#TT03973/24)
+> - ARM - Risolto bug inerente l'esportazione dati degli ordini di produzione con webapi nel formato Json. (#TT04655/24)
+> - FI - nel registro dichiarazioni di intento fornitori è stato disabilitato il test di copertura sui documenti di vendita (#TT04673/24)
+> - FI - Payroll calculation ( TT01772/24)
+> - PM: Data inizio-fine pianificazione wbs di progetto, gestito incremento data solo se l’unità di misura corrisponde al parametro Unità di misura giorni nei parametri progetto (#TT04433/24)
+> - SD – Fix Sales -load Item with big matrix problem (#TT04469/24)
+> - Add reference System.Security.Crysptography  to scripts (#TT04721/24)
+> - PM: planner e wbs assegnazione risorse, risolto caso di drag&drop appuntamenti in calendari di risorse diverse ed in date diverse (#TT03781/24)
+> - QY - ItemControlRef AfterUpdate / ImportItemControlResult optimization
+> - WMS – In carico sposta UDC corretto bug che non riportava il focus del cursore nel campo codice barcode dopo aver spostato una UDC. (#TT04724/24)
+> - PM: introdotto nelle dichiarazioni attività campo articolo, che se valorizzato per una attività fatturabile, verrà utilizzato nel servizio dell'intervento. In corrispondenza di UM il prezzo verrà preso dal progetto, in caso contrario verrà preso dalle logiche presenti nei documenti business (#TT04173/24)
+> - Nell’evasione ordini fornitori in bolle e fatture acquisto senza ricalcolo analitica, revisione assegnazione centri su priorità magazzini (#TT01624/24)
+> - MS – Corretta traduzione del messaggio di anticipare un ordine nella procedura MRP. (#TT04704/24)
+> - FI - Blazor - Sdi transition inside Comunicazione liquidazione iva  ( TT04136/24)
+> - FI - esclusione visualizzazione Tiles nelle form di “Visualizzazione conti” e “Blocco partite passive” (TT04659/24)
+> - FI - Visualizzazione conti di conto economico ( TT04647/24)
+> - SH - Error while creating new Company in General Settings ( TT04702/24)
+> - SD - Corretto errore nella ricerca delle Fatture di Vendita collegato alla presenza di fatture inviate allo SDI RSM (#TT04740/24)
+> - SD - SalesInvoice-Allow execution from DDT when linked with SDI (TT04745/24)
+
 ### Patch 707.1-0006 - 31/10/2024
 > - Create script to report general parameters ( TT03202/24)
 > - SD - Revisione calcolo centri di costo in documenti di vendita, per valorizzazione collection FSItemCostCenter (#TT04576/24)
