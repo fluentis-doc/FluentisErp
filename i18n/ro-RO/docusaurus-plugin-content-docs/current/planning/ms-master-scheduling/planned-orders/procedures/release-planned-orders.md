@@ -1,105 +1,96 @@
 ---
-title: Rilascio Ordini Pianificati
+title: Lansare Ordine Planificate
 sidebar_position: 1
 ---
 
-:::important A cosa serve
-La funzione di "Rilascio Ordini Pianificati" nel sistema Fluentis è progettata per facilitare il passaggio degli ordini pianificati ai loro rispettivi stati operativi. Una volta che gli ordini pianificati sono stati generati, è possibile procedere al loro rilascio utilizzando specifici pulsanti nella ribbon bar. Questo processo varia a seconda del tipo di ordine: produzione, acquisto o conto lavoro.
+:::important Utilizare
+Procedura **Lansare Ordine Planificate** din Fluentis facilitează trecerea ordinelor planificate la stările lor operaționale. După generarea acestora, utilizatorul poate efectua lansarea folosind butoane specifice, disponibile în ribbon bar. Procesul de lansare este personalizat în funcție de tipul de ordin: producție, achiziție sau sistem lohn.
 
-Quando si rilascia un ordine pianificato di produzione, esso diventa un ordine di produzione operativo. Gli ordini pianificati di acquisto generano delle richieste d'acquisto (RDA), mentre gli ordini di conto lavoro pianificati vengono trasformati in ordini di conto lavoro operativi. 
+Când se lansează un ordin planificat de producție, acesta devine un ordin de producție operativ. Ordinele planificate de achiziție generează cereri de achiziție (CdA), în timp ce ordinele în sistem lohn planificate sunt transformate în ordine în sistem lohn operative.
 :::
 
-La form permette la creazione di:
+Form-ul permite crearea:
 
-- *richieste di acquisto*, eventualmente già autorizzate tramite un opportuno parametro, nel caso di ordini pianificati di acquisto;  
-- *ordini di conto lavoro* nel caso di ordini pianificati di conto lavoro, o nel caso in cui nella lista fasi di un ordine pianificato di produzione sia presente una fase esterna;  
-- *ordini di produzione*, *lanciati* o *esecutivi* a seconda dell'attivazione di un apposito parametro, nel caso di ordini pianificati di produzione.
+- *cereri de achiziție*, eventual deja autorizate cu ajutorul unui parametru corespunzător, în cazul ordinelor planificate de achiziție;
+- *ordine în sistem lohn* în cazul ordinelor planificate în sistem lohn, sau în cazul în care în lista de faze a unui ordin planificat de producție este prezentă o fază externă;
+- *ordine de producție* *lansate* sau *executive* în funcție de activarea unui parametru corespunzător, în cazul ordinelor planificate de producție.
 
-La form permette la creazione di:
+Eliberarea ordinelor face ca acestea să nu mai fie vizibile în [Ordinele Planificate](/docs/planning/ms-master-scheduling/planned-orders/search-planned-orders) și, în consecință, nu se poate genera o nouă [Programare](/docs/planning/ms-master-scheduling/general-schedule) a comenzii de producție din care ordinele planificate au fost eventual generate utilizând programarea generală. Ordinele planificate din tabel generate manual sau prin procesare MRP nu prezintă nicio legătură cu comenzile de producție.
 
-- *richieste di acquisto*, eventualmente già autorizzate tramite un opportuno parametro, nel caso di ordini pianificati di acquisto;  
-- *ordini di conto lavoro* nel caso di ordini pianificati di conto lavoro, o nel caso in cui nella lista fasi di un ordine pianificato di produzione sia presente una fase esterna;  
-- *ordini di produzione*, *lanciati* o *esecutivi* a seconda dell'attivazione di un apposito parametro, nel caso di ordini pianificati di produzione.
+## Filtru
 
-Il rilascio degli ordini comporta che questi non siano più visibili tra gli [Ordini pianificati](/docs/planning/ms-master-scheduling/planned-orders/search-planned-orders) e, di conseguenza, non può essere generata una nuova [Schedulazione](/docs/planning/ms-master-scheduling/general-schedule) della commessa di produzione da cui gli ordini pianificati erano stati eventualmente generati tramite schedulazione generale. Gli ordini pianificati presenti nella griglia generati manualmente o tramite elaborazione MPR non presentano alcun legame con le commesse di produzione.
+În acest tab este posibilă vizualizarea listei ordinelor planificate care trebuie să fie lansate și care se pot filtra utilizând diverse criterii de selecție.
 
-## Filtro
+După setarea filtrelor dorite, apăsați butonul **Caută** din *ribbon bar* pentru a vizualiza rezultatele în tabel.
 
-In questo tab è possibile visualizzare la lista degli ordini pianificati che devono essere ancora rilasciati ed è possibile filtrarli attraverso una serie di criteri di selezione. 
+*Butoane specifice*:
 
-Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** presente nella *ribbon bar* per visualizzare i risultati all'interno della griglia di risultato.
+> **Lansare ordine planificate de producție**: este activ dacă în filtre, în câmpul *Lansare ordine planificate în*,  este setat tipul de ordin de producție și dacă în tabelul rezultatelor a fost selectată cel puțin o linie de ordin de producție pentru lansare. Apăsând butomul, aplicația va genera ordine de producție lansate sau executive, în baza opțiunilor selectate în [Parametrii Necesar materiale](/docs/configurations/parameters/production/resource-requirements-parameters);
+> **Lansare ordine planificate de achiziție**: este activ dacă în filtre, în câmpul *Lansare ordine planificate în*,  este setat tipul de ordin de achiziție și dacă în tabelul rezultatelor a fost selectată cel puțin o linie de ordin de achiziție pentru lansare. Apăsând butomul, aplicația va genera cereri de achiziție autorizate sau neautorizate, conform parametrilor setați în [Parametrii de Necesitate Materiale](/docs/configurations/parameters/production/resource-requirements-parameters);
+> **Lansare ordine planificate în sistem Lohn**: este activ dacă în filtre, în câmpul *Lansare ordine planificate în*,  este setat tipul de ordin în sistem lohn și dacă în tabelul rezultatelor a fost selectată cel puțin o linie de ordin în sistem lohn pentru lansare. Apăsând butomul, aplicația va genera ordine în sistem lohn;
+> **Deschide Căutare ordine de producţie**: permite deschiderea Căutării ordinelor de producție filtrate după aceleași criterii utilizate în secțiunea de filtrare a acestei ferestre.De exemplu, dacă se filtrează ordinele planificate în această fereastră în funcție de numărul ordinului 3 din anul 2018, fereastra de căutare a ordinelor de producție se va deschide deja filtrată pentru ordinul 3 din anul 2018.
 
-*Pulsanti specifici*: 
+*Campuri specifice*:
 
-> **Rilascio Ordini Pianificati di produzione**: questo pulsante si attiva solamente se nei filtri viene impostato, nel campo *Rilascio ordini pianificati a*, il tipo ordine di produzione e se nella griglia di risultato è stata selezionata almeno una riga ordine di produzione da rilasciare; cliccando su questa funzionalità il sistema eseguirà il rilascio generando ordini di produzione lanciati o esecutivi, a seconda di come siano stati impostati i parametri all'interno dei [Parametri Fabbisogno Materiali](/docs/configurations/parameters/production/resource-requirements-parameters);  
-> **Rilascio ordini pianificati di Acquisto**: questo pulsante si attiva solamente se nei filtri viene impostato, nel campo *Rilascio ordini pianificati a*, il tipo ordine di acquisto e se nella griglia di risultato è stata selezionata almeno una riga ordine di acquisto da rilasciare; cliccando su questa funzionalità il sistema eseguirà il rilascio generando Richieste d'Acquisto autorizzare oppure non autorizzate, a seconda di come si sia scelto di impostare il parametri all'interno dei  [Parametri Fabbisogno Materiali](/docs/configurations/parameters/production/resource-requirements-parameters);  
-> **Rilascio ordini pianificati di Conto Lavoro**: questo pulsante si attiva solamente se nei filtri viene impostato, nel campo *Rilascio ordini pianificati a*, il tipo ordine di conto lavoro e se nella griglia di risultato è stata selezionata almeno una riga ordine di conto lavoro da rilasciare; cliccando su questa funzionalità il sistema eseguirà il rilascio generando ordini di Conto Lavoro;   
-> **Apri ricerca ordini di produzione**: tramite questo pulsante sarà possibile aprire la Ricerca Ordini di Produzione filtrati con gli stessi criteri utilizzati nella sezione di filtro di questa finestra. Ad esempio se si filtrano gli ordini pianificati in questa schermata in base al numero di commessa 3 dell'anno 2018, la finestra di ricerca ordini di produzione di aprirà già filtrata per la commessa 3 dell'anno 2018.
+**An**: indică anul ordinului planificat;
+**Ordin**: indică numărul ordinului planificat;
+**Nivel**: indică nivelul articolului ordinului în lista componentelor;
+**An/Număr/Cod/Descriere comandă de producție**: câmpurile NU sunt completate dacă ordinul planificat a fost generat manual sau utilizând procedura MRP;
+**Data început prevăzută**: dacă este ordin planificat de achiziție sau în sistem lohn, această dată reprezintă data la care trebuie trimis ordinul de achiziție către furnizor, generat ulterior prin lansarea ordinului;
+**Data sfârșit prevăzută**: dacă este ordin planificat de achiziție sau în sistem lohn, această dată reprezintă data la care trebuie să fie primite bunurile și, prin urmare, va corespunde cu data de primire estimată a liniei ordimnului furnizor care va fi generat ulterior simultan cu lansarea ordinului însuși. Dacă este un ordin planificat de producție, această dată reprezintă data prevăzută pentru finalizarea ultimei faze de procesare a ciclului articolului;  
+**Cantitate confirmată**: va fi diferită de zero doar dacă procesarea s-a realizat cu ajutorul procedurii MRP;  
+**Client cont, analitic și descriere**: indică clientul asociat în cazul ordinelor de producție;  
+**Furnizor cont, analitic și descriere**: indică furnizorul asociat în cazul ordinelor de achiziție și în sistem lohn;  
+**An/Număr/Tip ordin client**: reprezintă ordinul clientului din care a fost generată comanda pe baza căreia a fost programat ordinul planificat în cauză.
 
-*Campi specifici*:
 
-**Anno**: indica l'anno dell'ordine pianificato;     
-**Ordine**: indica il numero dell'ordine pianificato;           
-**Livello**: indica il livello dell'articolo oggetto dell'ordine all'interno della distinta base;  
-**Anno/Numero/Codice/Descrizione commessa di produzione**: i campi risulteranno essere vuoti se l'ordine pianificato è stato generato manulamente oppure tramite MRP;  
-**Data di inizio prevista**: se si tratta di ordine pianificato di acquisto o di conto lavoro questa data rappresenta la data in cui deve essere inviato al fornitore l'ordine di acquisto che verrà successivamente generato con il rilascio dell'ordine stesso; se si tratta di ordine pianificato di produzione questa data rappresenta la data di previsto inizio della prima fase di lavorazione del ciclo dell'articolo;  
-**Data di fine prevista**: se si tratta di ordine pianificato di acquisto o di conto lavoro questa data rappresenta la data in cui deve essere ricevuta la fornitura e quindi coinciderà con la data di previsto ricevimento della riga dell'ordine fornitore che verrà successivamente generato con il rilascio dell'ordine stesso; se si tratta di ordine pianificato di produzione questa data rappresenta la data di prevista fine dell'ultima fase di lavorazione del ciclo dell'articolo;  
-**Quantità confermata**: sarà diversa da zero solamente se l'elaborazione è avvenuta tramite l'MRP; 
-**Cliente conto, sottoconto e decsrizione**: indica il cliente collegato nel caso degli ordini di produzione;  
-**Fornitore conto, sottoconto e decsrizione**: indica il fornitore collegato nel caso degli ordini di acquisto e di conto lavoro;  
-**Anno/Numero/Tipo ordine cliente**: rappresenta l'ordine cliente da cui è stata generata la commessa da cui è stato schedulato l'ordine pianificato in oggetto.
-
-Dopo aver individuato gli ordini che si vogliono rilasciare, per procedere con il **Rilascio** bisognerà utilizzare uno dei pulsanti presenti nella *ribbon bar*, in base al tipo ordine che si deve rilasciare: **Rilascio Ordini Pianificati di produzione**, **Rilascio ordini pianificati di Acquisto** oppure **Rilascio ordini pianificati di Conto Lavoro**. Questi pulsanti si abiliteranno rispettivamente a quanto inserito nel campo **Rilascio ordini pianificati a**.
-
-E' anche possibile entrare in **Visualizzazione dei dettagli dell'ordine pianificato** presente nella griglia, facendo semplicemente doppio click con il mouse sopra la riga dell'ordine pianficato che si desidera visualizzare, prima di procedere al rilascio. 
+Dupa ce au fost identificate ordinele de lansat, se poate efectua **Lansarea** utilizând unul dintre butoanele din *ribbon bar* corespunzătoare tipului de ordin: **Lansare ordine planificate de producție**, **Lansare ordine planificate de achiziție** sau **Lansare ordine planificate în sistem Lohn**.
+Este de asemenea posibil să **Vizualizți detaliile ordinelor planificate** prezente în tabel, făcând dublu clic pe linia ordinului planificate pe care doriți să îl vizualizați, înainte de operația de lansare. 
 
 ## Parametri
 
-In questo tab è possibile impostare e salvare i parametri che servono per il rilascio degli ordini pianificati.  
+Permite setarea și salvarea parametrilor pentru lansarea ordinelor planificate.
 
 ### Ordini di Produzione
 
 In questa sezione è possibile, tramite l'attivazione del flag **Generazione ordini di conto lavoro per operazioni esterne**, decidere che, se nella lista fasi dell'ordine pianificato di produzione che si sta rilasciando è presente una fase esterna, venga generato di conseguenza un ordine di conto lavoro per la fase esterna. Solitamente questo flag viene lasciato attivo.
 
-### Richieste d'acquisto
+### Cereri de achiziție
 
-Nella sezione è possibile:
+În această secțiune este posibil să:
 
-- impostare, tramite l'apposita combo box, il **Tipo di richiesta di acquisto** che deve essere generata dal rilascio ordine pianificati di acquisto. In questa combo box viene proposto automaticamente il tipo richiesta di acquisto già impostato nei [Parametri Fabbisogno Materiali](/docs/configurations/parameters/production/resource-requirements-parameters) nella sezione Parametri per il rilascio degli ordini pianificati;      
-- attivando il flag **Proprietà approvvigionamento da Parametri MRP articolo** la procedura creerà le *richieste di acquisto* inserendo la priorità indicata nei [Parametri MRP](/docs/configurations/parameters/production/mrp-parameters/mrp-parameters-intro) del singolo articolo; mentre se non è attivo le *richieste di acquisto* verranno create con la priorità incata nella commessa a cui sono legate;      
-- fare in modo, attivando il flag **Arrotonda richiesta di acquisto**',che la procedura di rilascio ordine pianificato di acquisto arrotondi all'intero superiore la quantità che viene inserita nella riga della richiesta di acquisto che viene generata dal rilascio degli ordini pianificati di acquisto, nel caso in cui siano presenti quantità con decimali;  
-- decidere il metodo di raggruppamento: attivando infatti il flag **Raggruppa al più presto**, la procedura di rilascio effettua un raggruppamento di ordini pianificati di acquisto generati per lo stesso articolo; nella casella **Per un periodo in giorni di** si imposta il numero di giorni di range entro il quale può essere effettuato il raggruppamento, considerando le date di previsto ricevimento degli articoli, quindi le date di fine ordine pianificato di acquisto;  
-- decidere, nel caso non sia presente il fornitore nell'ordine pianificato di acquisto, se **Accettare gli ordini senza il fornitore**, **Tralasciare gli ordini senza il  fornitore** oppure **Accettare come fornitore il seguente conto** specificato nelle apposite caselle.
+- stabiliți, prin intermediul combo box-ului aferent, **Tipul cererii de achiziție (Tipo di richiesta di acquisto)** care trebuie generat de eliberarea comenzilor planificate de achiziție. În acest combo box este propus automat tipul cererii de achiziție deja configurat în [Parametrii Cererii de Materiale](/docs/configurations/parameters/production/resource-requirements-parameters) în secțiunea Parametrii pentru eliberarea comenzilor planificate;      
+- activând indicatorul **Proprietate de aprovizionare din Parametrii MRP articol (Proprietà approvvigionamento da Parametri MRP articolo)**, procedura va crea *cereri de achiziție* introducând prioritatea indicată în [Parametrii MRP](/docs/configurations/parameters/production/mrp-parameters/mrp-parameters-intro) ai fiecărui articol; în timp ce, dacă nu este activ, *cererile de achiziție* vor fi create cu prioritatea specificată în comanda căreia îi sunt legate;      
+- să facă în așa fel, activând indicatorul **Rotunjire cerere de achiziție (Arrotonda richiesta di acquisto)**, ca procedura de eliberare a ordinului planificat de achiziție să rotunjească la cel mai apropiat întreg cantitatea care este introdusă în linia cererii de achiziție generate de eliberarea comenzilor planificate de achiziție, în cazul în care există cantități cu zecimale;  
+- să decidă metoda de grupare: activând de fapt indicatorul **Grupare cât mai curând (Raggruppa al più presto)**, procedura de eliberare efectuează o grupare a comenzilor planificate de achiziție generate pentru același articol; în caseta **Pentru o perioadă în zile de (Per un periodo in giorni di)** se stabilește numărul de zile de interval în care poate fi efectuată gruparea, luând în considerare datele de primire preconizată a articolelor, deci datele de finalizare a ordinului planificat de achiziție;  
+- să decidă, în cazul în care nu este prezent furnizorul în ordinul planificat de achiziție, dacă **Acceptați comenzile fără furnizor (Accettare gli ordini senza il fornitore)**, **Ignorați comenzile fără furnizor (Tralasciare gli ordini senza il fornitore)** sau **Acceptați următorul cont ca furnizor (Accettare come fornitore il seguente conto)** specificat în căsuțele aferente.
 
-### Ordini di conto lavoro
+### Comenzi de muncă (Ordini di conto lavoro)
 
-Nella sezione è possibile:
+În această secțiune puteți să:
 
-- impostare, tramite la combo box del **Tipo Ordine** e il campo **Anno**, se l'ordine di conto lavoro da generare debba essere di tipo *Chiuso* o *Aperto* e di che anno debba essere;  
-- decidere il metodo di raggruppamento: attivando infatti il flag **Raggruppare gli ordini dello stesso terzista**, la procedura di rilascio effettua un raggruppamento di ordini pianificati di conto lavoro, inserendo nello stesso ordine di conto lavoro gli articoli che devono essere lavorati dallo stesso terzista;   
-- decidere, nel caso non sia presente il terzista nell'ordine pianificato di conto lavoro, se **Accettare gli ordini senza il fornitore**, **Tralasciare gli ordini senza il terzista** oppure **Accettare come terzista il seguente conto** specificato nelle apposite caselle.
+- alegeți, cu ajutorul combo-boxului **Tip ordin** și câmpului **An**, dacă ordinul în sistem lohn care trebuie generat să fie de tip *Închis* sau *Deschis* și în ce an;  
+- decideți metoda de grupare: activând opțiunea **Grupează ordinele aceluiași terț**, procedura de lansare efectuează o grupare a ordinelor planificate în sistem lohn, inserând în același ordin în sistem lohn articolele care trebuie lucrate de același terț;   
+- decideți, în cazul în care terțul nu este prezent în ordinul planificat în sistem lohn, dacă **Acceptă ordine fără furnizor**, **Omite ordinele fără terț** sau **Acceptă ca terț următorul cont** specificat în câmpurile corespunzătoare.
 
-*Pulsante specifico*:  
-> **Salva le modifiche**: consente di salvare  i parametri come sono stati impostati.
+### Restaurare
 
-### Ripristino
+În acest tab puteți să executați procedura de restaurare a ordinului planificat care permite anularea lansării efectuate anterior.
 
-In questo tab è possibile eseguire la procedura di ripristino ordine pianificato che consente di annullare il rilascio precedentemente effettuato, ripristinando la situazione antecedente al rilascio stesso. 
+Sunt afișate ordinele planificate de același tip specificat în câmpul **Lansare ordine planificate către** din tab **Filtru**.
 
-Vengono visualizzati gli ordini pianificati della stessa tipologia specificata nel campo **Rilascio ordini pianificati a** del tab **Filtro**.
+După alegerea filtrelor, efectuați clic pe butonul **Căutare** din *ribbon bar* pentru a vizualiza rezultatele.
 
-Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** presente nella *ribbon bar* per visualizzare i risultati all'interno della griglia di risultato.  
+Pentru liniile prezente în tabelul de rezultate, este afișat în unul dintre cele trei tab-uri inferioare, **Ordine de producție**, **Cereri de achiziție** sau **Ordine în sistem lohn**, documentul generat din lansarea ordinului planificat.
 
-Tenendo selezionata una delle righe presenti nella griglia di risultato, viene visualizzato in uno dei tre tab inferiori, **Ordini di produzione**, **Richieste d'acquisto** oppure **Ordini di conto lavoro**, il documento generato dal rilascio dell'ordine pianificato selezionato.
+Pentru a lansa restaurarea, selectați unul sau mai multe ordine și faceți clic pe butonul **Restaurare ordine**. 
 
-Per lanciare il ripristino, selezionare uno o più ordini e cliccare il pulsante **Ripristino ordini**. 
+*Condiții pentru procedura de restaurare*:
 
-*Condizioni per la procedura di ripristino*:
+Pentru  **ordinul planificat de producție**: doar dacă ordinul de producție generat se află în starea *Lansat*; în cazul în care ordinul de producție este *Executiv*, este necesar să se execute restaurarea lansării ordinului de producție, în timp ce în cazul în care a fost deja *Executat*, nu mai este posibil să se execute restaurarea ordinului planificat, cu excepția cazului în care se pornește de la restaurarea înregistrării semnalării de producției;  
+Pentru **ordinul planificat de achiziție**: doar dacă linia cererii de achiziție generate se află în starea de *Neexecutată*; în cazul în care linia cererii de achiziție a fost deja finalizată cu crearea unui ordin furnizor, va fi necesar să mergeți înapoi, până la documentul de achiziție;  
+Pentru **ordinul planificat în sistem lohn**: doar dacă linia ordinului în sistem lohn generat nu a fost încă executată sau nu a fost generat un aviz de livrare pentru materialul relativ linii ordinului în sistem lohn.
 
-Per l'**ordine pianificato di produzione**: solo se l'ordine di produzione generato si trova nello stato di *Lanciato*; nel caso in cui l'ordine di produzione sia *Esecutivo* è necessario eseguire il ripristino del rilascio dell'ordine di produzione, mentre nel caso in cui sia già *Evaso* non è più possibile eseguire il ripristino dell'ordine pianificato, a meno che non si proceda a ritroso partendo dal rollback della registrazione della segnalazione di produzione;  
-Per l'**ordine pianificato di acquisto**: solo se la riga di richiesta di acquisto generata si trova nello stato di *Non Evasa*; nel caso in cui la riga di richiesta di acquisto sia già stata evasa con la creazione di un ordine fornitore, sarà necessario procedere a ritroso partendo dal documento di acquisto fino al quale si è già arrivati;  
-Per l'**ordine pianificato di conto lavoro**: solo se la riga dell'ordine di conto lavoro generato non sia stata ancora evasa, oppure non sia stato generato una DDT di consegna per il materiale relativo a quella riga di ordine di conto lavoro.
+Executând această procedură, ordinele restaurate vor fi din nou vizibile în tab-ul **Filtru** unde va fi posibil să se execute din nou lansarea.
 
-Eseguendo questa procedura, gli ordini ripristinati saranno nuovamente visibili nel tab di **Filtro** dove sarà possibile rieseguire il rilascio.
-
-Per dettagli sul funzionamento comune delle form fare riferimento al link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Pentru detalii despre funcționarea comună a form-urilor, consultați linkul [Funcționalități, butoane și câmpuri comune](/docs/guide/common).
