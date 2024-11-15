@@ -1,19 +1,19 @@
 ---
-title: Lansare ordine planificate
+title: Rilascio Ordini Pianificati
 sidebar_position: 1
 ---
 
-:::important Utilizare
-Procedura **Lansare ordine planificate** din sistemul Fluentis este concepută pentru a facilita tranziția ordinelor planificate către statele operative relative. Odată generate, ordinele planificate pot fi lansate cu ajutorul butoanelor disponibile în bara de ribbon, cu variații în funcție de tipul de comandă: producție, achiziție sau sistem lohn.
+:::important A cosa serve
+La funzione di "Rilascio Ordini Pianificati" nel sistema Fluentis è progettata per facilitare il passaggio degli ordini pianificati ai loro rispettivi stati operativi. Una volta che gli ordini pianificati sono stati generati, è possibile procedere al loro rilascio utilizzando specifici pulsanti nella ribbon bar. Questo processo varia a seconda del tipo di ordine: produzione, acquisto o conto lavoro.
 
-Lansarea unui ordin planificat de producție îl transformă într-un ordin de producție operativ. Ordinele planificate de achiziție generează cereri de achiziție (CdA), în timp ce ordinele planificate în sistem lohn sunt transformate în ordine în sistem lohn operative.
+Quando si rilascia un ordine pianificato di produzione, esso diventa un ordine di produzione operativo. Gli ordini pianificati di acquisto generano delle richieste d'acquisto (RDA), mentre gli ordini di conto lavoro pianificati vengono trasformati in ordini di conto lavoro operativi. 
 :::
 
-La form permite crearea de:
+La form permette la creazione di:
 
-- *cereri de achiziție (richieste di acquisto)*, eventual autorizate deja printr-un parametru adecvat, în cazul comenzilor planificate de achiziție;  
-- *comenzi de lucru (ordini di conto lavoro)* în cazul comenzilor planificate de lucru, sau în cazul în care în lista etapelor unei comenzi planificate de producție există o etapă externă;  
-- *comenzi de producție (ordini di produzione)*, *lansate (lanciati)* sau *executive (esecutivi)*, în funcție de activarea unui parametru special, în cazul comenzilor planificate de producție.
+- *richieste di acquisto*, eventualmente già autorizzate tramite un opportuno parametro, nel caso di ordini pianificati di acquisto;  
+- *ordini di conto lavoro* nel caso di ordini pianificati di conto lavoro, o nel caso in cui nella lista fasi di un ordine pianificato di produzione sia presente una fase esterna;  
+- *ordini di produzione*, *lanciati* o *esecutivi* a seconda dell'attivazione di un apposito parametro, nel caso di ordini pianificati di produzione.
 
 La form permette la creazione di:
 
