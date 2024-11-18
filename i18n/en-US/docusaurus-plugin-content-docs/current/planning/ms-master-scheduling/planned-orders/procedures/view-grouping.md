@@ -1,16 +1,16 @@
 ---
-title: Visualizza raggruppamento
+title: View Grouping
 sidebar_position: 1
 ---
 
-La form consente di ricercare tutti i raggruppamenti con lo scopo di visualizzarli oppure cancellarli.  
+The form allows you to search for all groupings in order to view or delete them.
 
-Nell'area di filtro è possibile applicare il filtro per articolo, variante, per commessa di produzione, ordine di produzione, ecc. Tramite l'apposito flag è possibile scegliere se visualizzare anche i raggruppamenti contenenti degli *Ordini di manutenzione*.
+In the filter area, it is possible to apply filters for item, variant, production job, production order, etc. With the appropriate flag, you can choose whether to also display groupings containing *Maintenance Orders*.
 
-Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** presente nella *ribbon bar* per visualizzare i risultati all'interno della griglia di risultato.
+Once all desired filters have been set, simply click on the **Search** button present in the *ribbon bar* to view the results in the results grid.
 
-Per *aprire* i dettagli di un raggruppamento, basterà selezionarlo e fare doppio click con il mouse, oppure cliccare sul pulsante **Visualizza**.
+To *open* the details of a grouping, simply select it and double-click with the mouse, or click on the **View** button.
 
-Entrando in visualizzazione del raggruppamento che si è scelto di selezionare, si aprirà una nuova form, composta da una prima parte con dei campi che riassumono i dati principali del *Raggruppamento* e una griglia di risultato dove si possono visualizzare tutti gli *Ordini del raggruppamento*.
+Entering the view of the grouping you chose to select, a new form will open, consisting of an initial part with fields summarizing the main data of the *Grouping* and a results grid where you can view all the *Grouping Orders*.
 
-Per dettagli sul funzionamento comune delle form fare riferimento al link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+For details on the common functionality of forms, refer to the link [Common features, buttons, and fields (Funzionalità, pulsanti e campi comuni)](/docs/guide/common).
