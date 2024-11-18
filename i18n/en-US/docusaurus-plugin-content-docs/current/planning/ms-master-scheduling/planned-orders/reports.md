@@ -1,30 +1,35 @@
 ---
-title: Stampa Ordini Produzione
-sidebar_position: 6
+title: Print Planned Orders
+sidebar_position: 4
 ---
 
-Questa form consente di stampare una lista di ordini di produzione, con possibilità di dettagliare la visualizzazione.
+This window enables the user to print a list of production or subcontractor purchase planned orders together with the possibility to detail the visualization; the planned orders can be filtered and ordered according to a series of parameters. The window that enables the user to print the planned orders is located within the following path Production > MPS > Reports > Planned Orders and it consists of 6 different sections:
 
-**Filtri**
+**Filters**: in this section it is possible to insert manually production job order type, year and number and the planned order number in order to filter. In addition it is possible to filter per item class, code, description and variant of planned order, sales job order and customer, estimated workin start date from…to…. Lastly it is possible to decide if it is necessary to view or not the maintenance orders by using the special flag
 
-A parte i filtri comuni, si può scegliere, tramite l'apposito flag, se si vogliono visualizzare anche gli *Ordini di manutenzione*.
+**Report Type**: in this section it is possible to filter according to tha fact that the planned order is in delay or expired
 
-**Lavorazioni**
+**Sorting**: in this section it is possible to decide which sorting type it is necessary to give to the print report
 
-In questa sezione, è possibile andare ad indicare tramite dei flag, se si vogliono visualizzare tutti gli ordini di produzione indistintamente oppure si può scegliere se visualizzare solamente gli ordini scaduti o in ritardo.
+**Detail**: in this section it is possible to view or not the list detail of materials contained into the planned order and the estimated phases. Obviuosly this detail level occurs only for production and subcontractor planned orders
 
-**Ordinamento**
+**Order Type**: in this section it is possible to filter according to the procurement type inserted into the planned order header
 
-In questa sezione è possibile scegliere tramite gli appositi flag, su cosa basare l'ordinamento dei dati all'interno della stampa. Si potrà quindi scegliere se ordinare i risultati in base al numero d'ordine, all'articolo o alla sua descrizione, alla data inizio/data fine oppure in base alla commessa;
+**Report Parameters**: in this section it is possible to set the copies number to be printed and the printout to be used
 
-**Dettaglio**
+RIBBON BAR: it represents the Form Menu, that is the area in which it is possible to perform actions linked to the procedure in use. The list of features is the following: 
 
-In questa sezione è possibile decidere, tramite gli appositi flag, se visualizzare o meno la lista dei materiali contenuti nell'ordine e delle fasi previste; è possibile anche visualizzare il personale coinvolto e le segnalazioni collegate. Ovviamente questi dettagli sono previsti solamente per gli ordini pianificati di produzione e di conto lavoro.
 
-**Stato ordine**
 
-Infine in questa sezione è pssibile scegliere, tramite gli appositi flag, se visualizzare tutti gli ordini indipendentemente dal loro stato, oppure se visualizzare solamente quelli aventi determinati stati tra Lanciato, Esecutivo, Evaso e Storicizzato.
 
-Una volta impostati i vari parametri di filtro e visualizzazione, basterà andare a selezionare nella ribbon bar tramite il tipo di stampa che si vuole lanciare (solo nel caso vi siano più tipologie previste) tramite l'apposita combo, e successivamente lanciare l'anteprima di stampa o direttamente la stampa del documento.
 
-Per dettagli sul funzionamento comune delle form fare riferimento al link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+| Function | Meaning |
+| --- | --- |
+| Preview | It shows the print preview according to filters set. |
+| Print | It launches the report print according to filters set on the default printer. |
+
+
+
+
+
+
