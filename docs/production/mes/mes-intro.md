@@ -12,6 +12,8 @@ import Link from '@docusaurus/Link';
 <div className="cardContainer">
     <div className="card">
 ###     <Link to="/docs/planning/ms-master-scheduling/mrp">Fluentis MES</Link>
+        <p><Link to="/docs/production/mes/configuration" className="bold-link">Installazione</Link></p>
+        <p>breve guida sull'installazione di Fluentis MES</p>
         <p><Link to="/docs/production/mes/workstation" className="bold-link">Workstation</Link></p>
         <p>Sono progettate per ottimizzare la gestione delle operazioni produttive, offrendo una piattaforma intuitiva per la codifica, la modifica e la cancellazione delle workstation. Gli utenti possono facilmente filtrare e cercare workstation, associando risorse specifiche per ogni attività. Questo sistema migliora l'efficienza del flusso di lavoro, consentendo di gestire in modo efficace le risorse di produzione, quali macchine e operatori, e facilitando la pianificazione delle attività operative.</p>
         <p><Link to="/docs/production/mes/production-resources" className="bold-link">Risorse di produzione</Link></p>

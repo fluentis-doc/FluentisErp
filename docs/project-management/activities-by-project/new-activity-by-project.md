@@ -3,7 +3,7 @@ title: Nuova Dichiarazione Attività per Progetto
 sidebar_position: 1
 ---
 
-**. I dati sono:
+I dati sono:
 
 **Tipo attività**: contiene il [Tipo attività](/docs/configurations/tables/project-management/activity-type/);
 
@@ -18,6 +18,11 @@ sidebar_position: 1
 **Conto statistico**: è possibile inserire un conto da utilizzare per le statistiche;
 
 **Progetto**: contiene il [Progetto](/docs/project-management/projects/search-projects-intro/) collegato;
+
+Aprendo l'expander del Progetto, è possibile impostare un **Articolo**: questo codice articolo verrà utilizzato nel caso l'attività sia fatturabile, e quindi convertita in intervento. Se non viene indicato un codice articolo specifico, il servizio nell'intervento avrà codice articolo, UM e prezzo presi dal progetto collegato. 
+Se invece viene indicato un articolo specifico: 
+- se l'UM articolo e UM progetto collegato coincidono, nell'intervento avremo il codice articolo indicato in attività, con prezzo ed UM presi dal progetto. 
+- se l'UM articolo e UM progetto collegato NON coincidono, nell'intervento avremo il codice articolo indicato in attività, con prezzo ed UM attribuiti in base alle logiche standard dei documenti (come nel caso di inserimento di una nuova riga in un documento, vengono considerati listini, sconti, prezzo default in anagrafica articolo, etc) 
 
 **Ora di inizio/Ora fine**: contiene l’orario di inizio e di fine dell’attività; viene proposta in base al turno della risorsa, e se già presenti altre dichiarazioni, verrà proposta solo la fascia oraria mancante per la giornata. 
 <u>Non sono ammesse date disallineate</u> tra i vari campi Inizio-Fine, Inizio-Fine pausa e Data attività, per cui alla modifica di una qualsiasi data di queste, gli altri campi si allineeranno in automatico. 
@@ -95,13 +100,6 @@ In questa tab è possibile collegare la dichiarazione attività ad un contatto d
 
 **Tab Documenti allegati**
 In questa tab è possibile visualizzare e aggiungere degli allegati, che verranno salvati nel modulo Documentale di Fluentis. Per aggiungere un file è sufficiente utilizzare il drag and drop, ossia selezionando il file dal percorso in cui si trova attualmente e rilasciandolo all’interno della tabella.
-Si aprirà quindi la seguente maschera:
-
-![](/img/it-it/project-management/projects/doc.png)
-
-Nel campo **Tipo Documento** nella parte superiore della form è possibile selezionare la tipologia di documento che si sta caricando selezionandola tra quelle presenti.
-Premendo poi il pulsante **Applica**, tale valore verrà riportato nel corrispondente campo su tutti i file che si stanno caricando in quel momento. **Nome** e **Tipo** file vengono invece reperiti in automatico dalla procedura.
-Premendo OK, il programma salverà il file nel Documentale di Fluentis.
 
 **Tab Extra Data** 
 In questo tab è possibile inserire eventuali Extra Data collegati; per maggiori informazioni consultare la sezione [Extra Data](/docs/configurations/utility/extra-data/extradata/search-extradata).
