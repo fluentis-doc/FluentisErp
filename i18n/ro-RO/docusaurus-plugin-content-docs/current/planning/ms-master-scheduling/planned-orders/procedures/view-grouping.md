@@ -1,16 +1,16 @@
 ---
-title: Visualizza raggruppamento
+title: Vizualizare grupare
 sidebar_position: 1
 ---
 
-La form consente di ricercare tutti i raggruppamenti con lo scopo di visualizzarli oppure cancellarli.  
+Form-ul permite căutarea tuturor grupărilor cu scopul de a le vizualiza sau de a le șterge.  
 
-Nell'area di filtro è possibile applicare il filtro per articolo, variante, per commessa di produzione, ordine di produzione, ecc. Tramite l'apposito flag è possibile scegliere se visualizzare anche i raggruppamenti contenenti degli *Ordini di manutenzione*.
+În zona de filtrare, puteți să aplicați filtrul pentru articol, variantă, pentru ordinul de producție,  etc. Prin intermediul opțiunii relative, puteți alege să vizualizați și grupările care conțin *Ordine de întreţinere*.
 
-Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** presente nella *ribbon bar* per visualizzare i risultati all'interno della griglia di risultato.
+După inserarea filtrelor dorite, faceți clic pe butonul **Caută** din *ribbon bar* pentru a vizualiza rezultatele în tabelul inferior.
 
-Per *aprire* i dettagli di un raggruppamento, basterà selezionarlo e fare doppio click con il mouse, oppure cliccare sul pulsante **Visualizza**.
+Pentru a *deschide* detaliile unei grupări, va fi suficient să o selectați și să faceți dublu clic cu mouse-ul, sau să faceți clic pe butonul **Vizualizează**.
 
-Entrando in visualizzazione del raggruppamento che si è scelto di selezionare, si aprirà una nuova form, composta da una prima parte con dei campi che riassumono i dati principali del *Raggruppamento* e una griglia di risultato dove si possono visualizzare tutti gli *Ordini del raggruppamento*.
+Intrând în vizualizarea grupării pe care ați ales-o, se va deschide un nou form, compus dintr-o primă parte cu câmpuri care rezumă datele principale ale *Grupării* și un tabel de rezultate în care pot fi vizualizate toate *Ordinele grupării*.
 
-Per dettagli sul funzionamento comune delle form fare riferimento al link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Pentru detalii despre funcționarea comună a form-urilor, consultați documentul [Funcționalități, butoane și câmpuri comune](/docs/guide/common).
