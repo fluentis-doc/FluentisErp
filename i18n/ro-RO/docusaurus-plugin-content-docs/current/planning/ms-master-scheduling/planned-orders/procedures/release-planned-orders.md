@@ -11,11 +11,11 @@ Când se lansează un ordin planificat de producție, acesta devine un ordin de 
 
 Form-ul permite crearea:
 
-- *cereri de achiziție*, eventual deja autorizate cu ajutorul unui parametru corespunzător, în cazul ordinelor planificate de achiziție;
-- *ordine în sistem lohn* în cazul ordinelor planificate în sistem lohn, sau în cazul în care în lista de faze a unui ordin planificat de producție este prezentă o fază externă;
-- *ordine de producție* *lansate* sau *executive* în funcție de activarea unui parametru corespunzător, în cazul ordinelor planificate de producție.
+- *cererilor de achiziție*, eventual deja autorizate cu ajutorul parametrului relativ, în cazul ordinelor planificate de achiziție;
+- *ordinelor în sistem lohn* în cazul ordinelor planificate în sistem lohn, sau în cazul în care în lista de faze a unui ordin planificat de producție este prezentă o fază externă;
+- *ordinelor de producție* *lansate* sau *executive* în funcție de activarea parametrului relativ, în cazul ordinelor planificate de producție.
 
-Eliberarea ordinelor face ca acestea să nu mai fie vizibile în [Ordinele Planificate](/docs/planning/ms-master-scheduling/planned-orders/search-planned-orders) și, în consecință, nu se poate genera o nouă [Programare](/docs/planning/ms-master-scheduling/general-schedule) a comenzii de producție din care ordinele planificate au fost eventual generate utilizând programarea generală. Ordinele planificate din tabel generate manual sau prin procesare MRP nu prezintă nicio legătură cu comenzile de producție.
+Lansarea ordinelor face ca acestea să nu mai fie vizibile în [Ordine planificate](/docs/planning/ms-master-scheduling/planned-orders/search-planned-orders) și, în consecință, nu se poate genera o nouă [Programare](/docs/planning/ms-master-scheduling/general-schedule) a ordinului de producție din care ordinele planificate au fost eventual generate utilizând programarea generală. Ordinele planificate din tabel, generate manual sau prin elaborare MRP, nu prezintă nicio legătură cu ordinele de producție.
 
 ## Filtru
 
@@ -25,9 +25,9 @@ După setarea filtrelor dorite, apăsați butonul **Caută** din *ribbon bar* pe
 
 *Butoane specifice*:
 
-> **Lansare ordine planificate de producție**: este activ dacă în filtre, în câmpul *Lansare ordine planificate în*,  este setat tipul de ordin de producție și dacă în tabelul rezultatelor a fost selectată cel puțin o linie de ordin de producție pentru lansare. Apăsând butomul, aplicația va genera ordine de producție lansate sau executive, în baza opțiunilor selectate în [Parametrii Necesar materiale](/docs/configurations/parameters/production/resource-requirements-parameters);
-> **Lansare ordine planificate de achiziție**: este activ dacă în filtre, în câmpul *Lansare ordine planificate în*,  este setat tipul de ordin de achiziție și dacă în tabelul rezultatelor a fost selectată cel puțin o linie de ordin de achiziție pentru lansare. Apăsând butomul, aplicația va genera cereri de achiziție autorizate sau neautorizate, conform parametrilor setați în [Parametrii de Necesitate Materiale](/docs/configurations/parameters/production/resource-requirements-parameters);
-> **Lansare ordine planificate în sistem Lohn**: este activ dacă în filtre, în câmpul *Lansare ordine planificate în*,  este setat tipul de ordin în sistem lohn și dacă în tabelul rezultatelor a fost selectată cel puțin o linie de ordin în sistem lohn pentru lansare. Apăsând butomul, aplicația va genera ordine în sistem lohn;
+> **Lansare ordine planificate de producție**: este activ dacă în filtre, în câmpul *Lansare ordine planificate în*, este setat tipul de ordin de producție și dacă în tabelul rezultatelor a fost selectată cel puțin o linie de ordin de producție pentru lansare. Apăsând butonul, aplicația va genera ordine de producție lansate sau executive, în baza opțiunilor selectate în [Parametrii Necesar materiale](/docs/configurations/parameters/production/resource-requirements-parameters);
+> **Lansare ordine planificate de achiziție**: este activ dacă în filtre, în câmpul *Lansare ordine planificate în*, este setat tipul de ordin de achiziție și dacă în tabelul rezultatelor a fost selectată cel puțin o linie de ordin de achiziție pentru lansare. Apăsând butonul, aplicația va genera cereri de achiziție autorizate sau neautorizate, conform parametrilor setați în [Parametrii Necesar materiale](/docs/configurations/parameters/production/resource-requirements-parameters);
+> **Lansare ordine planificate în sistem Lohn**: este activ dacă în filtre, în câmpul *Lansare ordine planificate în*, este setat tipul de ordin în sistem lohn și dacă în tabelul rezultatelor a fost selectată cel puțin o linie de ordin în sistem lohn pentru lansare. Apăsând butonul, aplicația va genera ordine în sistem lohn;
 > **Deschide Căutare ordine de producţie**: permite deschiderea Căutării ordinelor de producție filtrate după aceleași criterii utilizate în secțiunea de filtrare a acestei ferestre.De exemplu, dacă se filtrează ordinele planificate în această fereastră în funcție de numărul ordinului 3 din anul 2018, fereastra de căutare a ordinelor de producție se va deschide deja filtrată pentru ordinul 3 din anul 2018.
 
 *Campuri specifice*:
@@ -37,7 +37,7 @@ După setarea filtrelor dorite, apăsați butonul **Caută** din *ribbon bar* pe
 **Nivel**: indică nivelul articolului ordinului în lista componentelor;
 **An/Număr/Cod/Descriere comandă de producție**: câmpurile NU sunt completate dacă ordinul planificat a fost generat manual sau utilizând procedura MRP;
 **Data început prevăzută**: dacă este ordin planificat de achiziție sau în sistem lohn, această dată reprezintă data la care trebuie trimis ordinul de achiziție către furnizor, generat ulterior prin lansarea ordinului;
-**Data sfârșit prevăzută**: dacă este ordin planificat de achiziție sau în sistem lohn, această dată reprezintă data la care trebuie să fie primite bunurile și, prin urmare, va corespunde cu data de primire estimată a liniei ordimnului furnizor care va fi generat ulterior simultan cu lansarea ordinului însuși. Dacă este un ordin planificat de producție, această dată reprezintă data prevăzută pentru finalizarea ultimei faze de procesare a ciclului articolului;  
+**Data sfârșit prevăzută**: dacă este ordin planificat de achiziție sau în sistem lohn, această dată reprezintă data la care trebuie să fie primite bunurile și, prin urmare, va corespunde datei de primire estimate a liniei ordimnului furnizor care va fi generat ulterior, simultan cu lansarea ordinului. Dacă este un ordin planificat de producție, această dată reprezintă data prevăzută pentru finalizarea ultimei faze de procesare a ciclului articolului;  
 **Cantitate confirmată**: va fi diferită de zero doar dacă procesarea s-a realizat cu ajutorul procedurii MRP;  
 **Client cont, analitic și descriere**: indică clientul asociat în cazul ordinelor de producție;  
 **Furnizor cont, analitic și descriere**: indică furnizorul asociat în cazul ordinelor de achiziție și în sistem lohn;  
@@ -45,27 +45,27 @@ După setarea filtrelor dorite, apăsați butonul **Caută** din *ribbon bar* pe
 
 
 Dupa ce au fost identificate ordinele de lansat, se poate efectua **Lansarea** utilizând unul dintre butoanele din *ribbon bar* corespunzătoare tipului de ordin: **Lansare ordine planificate de producție**, **Lansare ordine planificate de achiziție** sau **Lansare ordine planificate în sistem Lohn**.
-Este de asemenea posibil să **Vizualizți detaliile ordinelor planificate** prezente în tabel, făcând dublu clic pe linia ordinului planificate pe care doriți să îl vizualizați, înainte de operația de lansare. 
+Este de asemenea posibil să **Vizualizți detaliile ordinelor planificate** prezente în tabel, făcând dublu clic pe linia ordinului planificat pe care doriți să îl vizualizați înainte de operația de lansare. 
 
 ## Parametri
 
 Permite setarea și salvarea parametrilor pentru lansarea ordinelor planificate.
 
-### Ordini di Produzione
+### Ordine de producție
 
-In questa sezione è possibile, tramite l'attivazione del flag **Generazione ordini di conto lavoro per operazioni esterne**, decidere che, se nella lista fasi dell'ordine pianificato di produzione che si sta rilasciando è presente una fase esterna, venga generato di conseguenza un ordine di conto lavoro per la fase esterna. Solitamente questo flag viene lasciato attivo.
+În această secțiune, activând opțiunea **Generare ordine în sistem lohn pentru operațiuni externe**, puteți să decideți dacă, în lista etapelor ordinelor planificate de producție pe care o lansați este prezentă o etapă externă, să fie generat un ordin în sistem lohn pentru etapa externă. De obicei, această opțiune este activă.
 
 ### Cereri de achiziție
 
-În această secțiune este posibil să:
+În această secțiune permite să:
 
-- stabiliți, prin intermediul combo box-ului aferent, **Tipul cererii de achiziție (Tipo di richiesta di acquisto)** care trebuie generat de eliberarea comenzilor planificate de achiziție. În acest combo box este propus automat tipul cererii de achiziție deja configurat în [Parametrii Cererii de Materiale](/docs/configurations/parameters/production/resource-requirements-parameters) în secțiunea Parametrii pentru eliberarea comenzilor planificate;      
-- activând indicatorul **Proprietate de aprovizionare din Parametrii MRP articol (Proprietà approvvigionamento da Parametri MRP articolo)**, procedura va crea *cereri de achiziție* introducând prioritatea indicată în [Parametrii MRP](/docs/configurations/parameters/production/mrp-parameters/mrp-parameters-intro) ai fiecărui articol; în timp ce, dacă nu este activ, *cererile de achiziție* vor fi create cu prioritatea specificată în comanda căreia îi sunt legate;      
-- să facă în așa fel, activând indicatorul **Rotunjire cerere de achiziție (Arrotonda richiesta di acquisto)**, ca procedura de eliberare a ordinului planificat de achiziție să rotunjească la cel mai apropiat întreg cantitatea care este introdusă în linia cererii de achiziție generate de eliberarea comenzilor planificate de achiziție, în cazul în care există cantități cu zecimale;  
-- să decidă metoda de grupare: activând de fapt indicatorul **Grupare cât mai curând (Raggruppa al più presto)**, procedura de eliberare efectuează o grupare a comenzilor planificate de achiziție generate pentru același articol; în caseta **Pentru o perioadă în zile de (Per un periodo in giorni di)** se stabilește numărul de zile de interval în care poate fi efectuată gruparea, luând în considerare datele de primire preconizată a articolelor, deci datele de finalizare a ordinului planificat de achiziție;  
-- să decidă, în cazul în care nu este prezent furnizorul în ordinul planificat de achiziție, dacă **Acceptați comenzile fără furnizor (Accettare gli ordini senza il fornitore)**, **Ignorați comenzile fără furnizor (Tralasciare gli ordini senza il fornitore)** sau **Acceptați următorul cont ca furnizor (Accettare come fornitore il seguente conto)** specificat în căsuțele aferente.
+- alegeți, prin intermediul combo box-ului aferent, **Tipul cererii de achiziție** care trebuie generat de lansarea ordinelor planificate de achiziție. În acest combo box este propus automat tipul cererii de achiziție deja configurat în [Parametrii Necesar materiale](/docs/configurations/parameters/production/resource-requirements-parameters) în secțiunea *Parametrii* pentru lansarea ordinelor planificate;      
+- activați opțiunea **Proprietate aprovizionare** din **Parametrii MRP** articol, pentru ca procedura să creeze *cereri de achiziție* introducând prioritatea indicată în [Parametrii MRP](/docs/configurations/parameters/production/mrp-parameters/mrp-parameters-intro) ai fiecărui articol. Dacă nu este activă, *cererile de achiziție* vor fi create cu prioritatea specificată în ordinul asociat;      
+- activați opțiunea **Rotunjire cerere de achiziție**, pentru ca procedura de lansare a ordinului planificat de achiziție să rotunjească la cel mai apropiat întreg cantitatea care este introdusă în linia cererii de achiziție generate de lansarea ordinelor planificate de achiziție, în cazul în care există cantități cu zecimale;  
+- activați opțiunea **Grupează mai devreme**, pentru ca procedura de lansare să grupeze ordinele planificate de achiziție generate pentru același articol; în câmpul **Pentru numărul de zile** se stabilește numărul de zile al intervalului de timp în care poate fi efectuată gruparea, luând în considerare datele de primire preconizată a articolelor, deci datele de finalizare ale ordinului planificat de achiziție;  
+- decideți, în cazul în care nu este prezent furnizorul în ordinul planificat de achiziție, dacă **Acceptați ordinele fără furnizor**, **Omite ordinele fără furnizor** sau **Acceptă ca furnizor următorul cont** specificat în căsuțele aferente.
 
-### Comenzi de muncă (Ordini di conto lavoro)
+### Ordine în sistem lohn
 
 În această secțiune puteți să:
 
