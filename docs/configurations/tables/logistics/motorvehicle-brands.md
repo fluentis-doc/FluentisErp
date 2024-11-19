@@ -5,7 +5,7 @@ sidebar_position: 56
 
 La tabella si trova sul percorso **Tabelle > Logistica > Marchi automezzi**.
 
-In questa tabella è possibile codificare le *Marchi automezzi* che potranno essere selezionati nell'[Angrafica automezzi](/docs/configurations/tables/logistics/motorvehicle/).
+In questa tabella è possibile codificare le *Marchi automezzi* che potranno essere selezionati nell'[Angrafica automezzi](/docs/logistics/motorvehicles/motorvehicle).
 
 La tabella consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
 

@@ -5,7 +5,7 @@ sidebar_position: 54
 
 La tabella si trova sul percorso **Tabelle > Logistica > Tipi automezzi**.
 
-In questa tabella è possibile codificare le *Tipi automezzi* che potranno essere selezionati nell'[Angrafica automezzi](/docs/configurations/tables/logistics/motorvehicle/).
+In questa tabella è possibile codificare le *Tipi automezzi* che potranno essere selezionati nell'[Angrafica automezzi](/docs/logistics/motorvehicles/motorvehicle).
 
 La tabella consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
 

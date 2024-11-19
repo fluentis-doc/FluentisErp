@@ -63,6 +63,8 @@ Sono poi presenti alcuni flag nella griglia, che indicano le varie tab da mostra
 
 **Fatturato Obbligatorio**: nel caso di riga progetto fatturabile e flag fatturato obbligatorio, verrà bloccato il salvataggio.
 
+**Ricalcolo data inizio-fine**: se abilitato, permette la modifica automatica della data di inzio e fine pianificazione nelle righe wbs di progetto. Le date si aggiorneranno in base alla quantità di riga se la UM corrisponde alla UM dei giorni impostata nei parametri progetto, oppure in inserimento nuove risorse nella tab risorse della riga progetto.
+
 Nella griglia sottostante è possibile costruire la valorizzazione del SAL nell’ambito dello stato avanzamento lavori. Per ogni progetto è possibile indicare una serie di codici, che rappresenteranno documenti da includere nel calcolo dello stato avanzamento lavori. Questi codici verranno poi proposti nelle singole righe di progetto. 
 Dopo aver selezionato una riga dalla prima griglia, i campi da compilare nella seconda sono:
 
