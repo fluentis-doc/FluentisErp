@@ -29,7 +29,7 @@ import Link from '@docusaurus/Link';
 - create [*Work Cycles*](/docs/erp-home/registers/production/routes/new-route) 
 - create [*Work Centers*](/docs/erp-home/registers/production/routes/work-center) 
 - create [*Factory Calendars*](/docs/configurations/tables/production/factory-calendar/) 
-- create [*Production Capacity Calendars (Calendari capacità produttive)*](/docs/configurations/tables/production/productive-capacity-calendar/) 
+- create [*Production Capacity Calendars*](/docs/configurations/tables/production/productive-capacity-calendar/) 
 
-## Connections with other modules (Collegamenti con altri moduli)
-These are closely linked to the [*Item Registry (Anagrafica articoli)*](/docs/erp-home/registers/items/create-new-items/create-new-item), [*Bills of Materials (Distinte basi)*](/docs/erp-home/registers/production/bill-of-materials/search-and-insert-assemblies), [*Work Cycles (Cicli di lavoro)*](/docs/erp-home/registers/production/routes/new-route), [*Work Centers (Centri di lavoro)*](/docs/erp-home/registers/production/routes/work-center), [*Planned Orders (Ordini pianificati)*](/docs/planning/ms-master-scheduling/planned-orders/search-planned-orders), and [*Production Orders (Ordini produzione)*](/docs/production/pp-production-in-progress/production-orders/search-production-orders).
+## Connections with other modules
+These are closely linked to the [*Item Register*](/docs/erp-home/registers/items/create-new-items/create-new-item), [*Bills of Materials*](/docs/erp-home/registers/production/bill-of-materials/search-and-insert-assemblies), [*Work Cycles*](/docs/erp-home/registers/production/routes/new-route), [*Work Centers*](/docs/erp-home/registers/production/routes/work-center), [*Planned Orders*](/docs/planning/ms-master-scheduling/planned-orders/search-planned-orders), and [*Production Orders*](/docs/production/pp-production-in-progress/production-orders/search-production-orders).
