@@ -1,52 +1,52 @@
 ---
-title: Capacità centri di lavoro
+title: Work Center Capacity
 sidebar_position: 2
 ---
 
-:::important A cosa serve
-La funzione **Capacità centri di lavoro** in Fluentis offre un panorama chiaro e immediato dei carichi di lavoro nei centri produttivi, evidenziando picchi di sovraccarico o inefficienze. Attraverso una form organizzata in quattro sezioni, gli operatori possono filtrare e visualizzare gli ordini per reparto, data o stato (pianificato, lanciato, esecutivo) e intervenire con facilità tramite il drag & drop per spostare, posticipare o modificare le lavorazioni.     
-La visualizzazione grafica illustra la capacità massima e l'impegno giornaliero dei centri, consentendo una gestione visiva e interattiva delle fasi produttive. Pulsanti specifici rendono possibile modificare le fasi, cambiare date e navigare attraverso il dettaglio temporale del carico di lavoro, ottimizzando in tal modo l'efficienza operativa dell'intero processo produttivo.
+:::important What it is for
+The **Work Center Capacity** function in Fluentis offers a clear and immediate overview of the workloads in production centers, highlighting peaks of overload or inefficiencies. Through a form organized into four sections, operators can filter and view orders by department, date, or status (planned, launched, executive) and intervene easily using drag & drop to move, postpone, or modify operations.     
+The graphical display illustrates the maximum capacity and daily commitment of the centers, allowing for a visual and interactive management of the production phases. Specific buttons make it possible to modify phases, change dates, and navigate through the detailed timeline of the workload, thereby optimizing the operational efficiency of the entire production process.
 :::
 
-L’operatore può ottenere una visualizzazione immediata dei carichi di ciascun centro di lavoro attivo nell’ambito dei singoli reparti per un determinato periodo temporale, permettendogli di conoscere in modo immediato gli eventuali picchi di sovraccarico o di inefficienza produttiva. 
-Con un semplice *drag & drop* l’operatore può anticipare, posticipare o cambiare centro di lavoro ad una lavorazione, e con un doppio click nell’ambito della singola barra di capacità, è possibile conoscere nel dettaglio le informazioni relative a quali ordini di lavoro impegnano il centro nella specifica data selezionata.
+The operator can obtain an immediate view of the loads of each active work center within the individual departments for a specific time period, allowing them to quickly identify any peaks of overload or production inefficiency. 
+With a simple *drag & drop*, the operator can bring forward, postpone, or change the work center of an operation, and with a double click within the single capacity bar, it is possible to know in detail the information related to which work orders are occupying the center on the selected date.
 
-Questa form, è costituita da 4 sezioni: 
+This form consists of 4 sections:
 
-- la prima permette di filtrare per *Reparto* e/o per *Centro di lavoro* e di visualizzare i risultati nella griglia sottostante;  
+- the first section allows filtering by *Division* and/or *Work Center* and displaying the results in the grid below;  
 
-- nella seconda è possibile filtrare gli ordini per *Data inizio* e *Data fine* ed inoltre, decidere se visualizzare gli ordini: 
+- in the second section, it is possible to filter the orders by *Start Date* and *End Date* and also decide whether to view the orders: 
 
-> *Pianificati*: mostra gli ordini pianificati di produzione;              
-> *Lanciati*: mostra gli ordini di produzione in stato lanciato;                
-> *Esecutivi*: mostra gli ordini di produzione in stato esecutivo.          
+> *Planned*: shows the planned production orders;               
+> *Launched*: shows the production orders in the launched state;                
+> *Executive*: shows the production orders in the executive state.          
 
-Inoltre, è possibile visualizzare tutti i dati relativi ai centri di lavoro selezionati nella prima sezione.
+Additionally, all data related to the work centers selected in the first section can be viewed.
 
-- nella terza sezione è possibile visualizzare una riga per ogni fase degli ordini pianificati e/o di produzione filtrati corrispondenti ai centri di lavoro selezionati nella prima sezione con tutti i dettagli relativi.
+- in the third section, it is possible to view a line for each phase of the planned and/or production orders filtered that correspond to the work centers selected in the first section, with all the relevant details.
 
-- nella quarta sezione denominata **Dati di dettaglio Fase selezionata** è possibile visualizzare graficamente i carichi di lavoro relativi ai centri di lavoro selezionati nella prima sezione. 
+- in the fourth section called **Details Selected Phase**, it is possible to graphically display the workloads related to the work centers selected in the first section.
 
-**Dati di dettaglio Fase selezionata**
+**Details Selected Phase**
 
-All'interno della parte grafica, la linea arancione rappresenta la capacità produttiva massima giornaliera del centro di lavoro, mentre in blu viene rappresentato l'impegno del centro di lavoro in una certa giornata. In rosso, invece, viene eviidenziata la sovrallocazione del centro stesso.
-Selezionando una fase nella terza sezione, questa viene visualizzata in giallo all'interno della sezione grafica.
+Within the graphical part, the orange line represents the maximum daily production capacity of the work center, while the blue represents the commitment of the work center on a certain day. The red highlights the overallocation of the center itself.
+Selecting a phase in the third section will display it in yellow within the graphical section.
 
-Inoltre, tramite drag & drop è possibile selezionare una fase dalla griglia e trascinarla all'interno della sezione grafica e rilasciarla per variarne la data di inizio e di conseguenza quella di fine. Selezionando più centri di lavoro alternativi vi è la possibilità di spostare le fasi da un centro ad un altro in modo da ottimizzare la produzione.
+Moreover, through drag & drop, it is possible to select a phase from the grid and drag it into the graphical section and drop it to change the start date and consequently the end date. By selecting multiple alternative work centers, it is possible to move phases from one center to another to optimize production.
 
-Esercitando un semplice doppio click sulla riga della griglia delle fasi, l'utente entra direttamente nel documento (ordine pianificato o ordine di produzione) che contiene la fase rappresentata nella riga da cui si è partiti, con la possibilità, subordinata alla presenza dei diritti utente, di modificare il documento e vedere, dopo aver dato un refresh della visualizzazione, la situazione aggiornata anche dal punto di vista grafico.
-Invece, con un doppio click su un elemento del grafico viene aperto un pop-up contenente l'elenco della fasi di lavoro che contribuiscono a determinarne l'impegno.
+By double-clicking on the row of the phases grid, the user directly enters the document (planned order or production order) that contains the phase represented in the row from which they started, with the possibility, subject to the presence of user rights, to modify the document and see, after refreshing the view, the updated situation from a graphical perspective as well.
+On the other hand, double-clicking on an element of the graph opens a pop-up containing the list of work phases that contribute to determining its commitment.
 
-*Pulsanti specifici*:  
+*Specific buttons*:  
 
-> **Cambia fasi**: una volta selezionata una fase, questo comando permette di *Aggiornare* la fase stessa variando: fase, macchina, centro di lavoro, totale del tempo macchina, del tempo operaio e del tempo di attrezzaggio. Inoltre, selezionado la voce *Inserisci* è possibile aggiungere una nuova fase oppure, tramite la voce *Cancella* di eliminarla definitivamente;            
-> **Cambio date**: permette di variare la data di inizio della fase selezionata;         
-> **Zoom in**: permette di diminuire il dettaglio temporale nel grafico;          
-> **Zoom alla finestra**: permette di visualizzare il dettaglio temporale nel grafico sulla base delle *Date Inizio/Fine* indicate nei filtri;                    
-> **Zoom out**: permette di aumentare il dettaglio temporale nel grafico;              
-> **Zoom settimana**: permette di visualizzare un arco temporale di una settimana nel grafico a partire dalla *Data Inizio*;              
-> **Zoom 2 settimane**: permette di visualizzare un arco temporale di due settimane nel grafico a partire dalla *Data Inizio*;     
-> **Zoom mese**: permette di visualizzare un arco temporale di un mese nel grafico a partire dalla *Data Inizio*;     
-> **Zoom data**: permette di visualizzare un arco temporale indicando *Date Inizio* e *Data fine* dello stesso.
+> **Change phases**: once a phase is selected, this command allows to *Update (Aggiornare)* the phase by changing: phase, machine, work center, total machine time, worker time, and setup time. Additionally, by selecting the *Insert* option, it is possible to add a new phase or, through the *Delete* option, to remove it permanently;            
+> **Change dates**: allows changing the start date of the selected phase;         
+> **Zoom in**: allows decreasing the temporal detail in the graph;          
+> **Zoom to window**: allows viewing the temporal detail in the graph based on the *Start/End Dates* indicated in the filters;                    
+> **Zoom out**: allows increasing the temporal detail in the graph;              
+> **Zoom week**: allows viewing a time span of a week in the graph starting from the *Start Date*;              
+> **Zoom 2 weeks**: allows viewing a time span of two weeks in the graph starting from the *Start Date*;     
+> **Zoom month**: allows viewing a time span of one month in the graph starting from the *Start Date*;     
+> **Zoom date**: allows viewing a time span by indicating *Start Date* and *End Date*.
 
-Per dettagli sul funzionamento comune delle form fare riferimento al link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+For details on the common functioning of forms, refer to the link [Common functionalities, buttons, and fields](/docs/guide/common).
