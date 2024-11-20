@@ -1,5 +1,5 @@
 ---
-title: Commesse di produzione
+title: Production Job Order
 sidebar_position: 2
 ---
 
@@ -7,18 +7,18 @@ import SearchForm from './../../../import/sections/search-form.md'
 
 <SearchForm />
 
-In base allo stato della commessa (quindi schedulata, esecutiva etc), la riga della commessa avrà un colore diverso. I colori che si possono abbinare allo stato della commessa, vengono stabiliti all'interno dei [Parametri MPS](/docs/configurations/parameters/production/mps-parameters), nella sezione *Colori Commesse*.  
+Based on the status of the order (thus scheduled, executive, etc.), the line of the order will have a different color. The colors that can be matched to the status of the order are established within the [MPS Parameters](/docs/configurations/parameters/production/mps-parameters), in the *Job Order colors* section.
 
-Sempre da questa form è possibile *creare nuove commesse*, sia **monoprodotto** che **multiprodotto** cliccando sui rispettivi pulsanti presenti nella *Ribbon Bar*: [Inserisci commessa](/docs/planning/mps-master-production-scheduling/production-job-orders/new-monoproduct-job-order) e [Inserisci commessa multiprodotto](/docs/planning/mps-master-production-scheduling/production-job-orders/new-multiproduct-job-order).
+From this form, it is also possible to *create new orders*, both **monoproduct** and **multiproduct** by clicking on the respective buttons available in the *Ribbon Bar*: [Insert job order](/docs/planning/mps-master-production-scheduling/production-job-orders/new-monoproduct-job-order) and [Insert multiproduct job order](/docs/planning/mps-master-production-scheduling/production-job-orders/new-multiproduct-job-order).
 
-Facendo doppio clic su una delle commesse presenti nella griglia di risultato si entrerà nel dettaglio della commessa, i cui dati verranno approfonditi negli articoli *Inserimenti nuova commessa monoprodotto e Inserimento nuova commessa multiprodotto*.
+By double-clicking on one of the orders present in the results grid, you will enter the details of the order, whose data will be further explored in the articles *Insert New Monoproduct Job Order* and *Insert New Multiproduct Job Order*.
 
-La colonna *Costificata*, se il flag è attivo, indica che la commessa ha già almeno una costificazione al suo interno.
+The *Valorized* column, if the flag is active, indicates that the order already has at least one costing within it.
 
-*Pulsanti specifici*:
+*Specific buttons*:
 
-> **Duplica commessa**: permette di duplicare la commessa selezionata;         
-> **Cambia priorità**: consente di cambiare la priorità assegnata alla commessa;               
-> **Sequenza commesse**: tramite questa funzionalità si può accedere alla sequenza commesse, all'interno della quale si potranno visualizzare le commesse in base alla sequenza che gli è stata attribuita, anche tramite un grafico;                  
-> **Capacità centri di lavoro**: tramite questo pulsante di accede alla finestra relativa alla capacità dei centri di lavoro; in questa finestra è possibile visualizzare filtrando per il centro di lavoro e per il periodo di tempo desiderato l'impegno di tale centro tramite un grafico e l'elenco delle commesse di produzioni previste in produzione;             
-> **Dettagli ordine di produzione**: permette di visualizzare i dettagli dell'ordine.
+> **Duplicate Job Order**: allows you to duplicate the selected order;         
+> **Change priority**: allows you to change the priority assigned to the order;               
+> **Job Order Sequence**: through this functionality, you can access the order sequence, where you can view the orders based on the sequence assigned to them, even through a chart;                  
+> **Work center capacity**: through this button, you can access the window related to the capacity of work centers; in this window, it is possible to visualize the commitment of that center by filtering by work center and for the desired time period using a chart and the list of expected production orders;              
+> **Production Job Order details**: allows you to view the details of the order.
