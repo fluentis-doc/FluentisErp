@@ -3,7 +3,7 @@ title: Articoli Offerta
 sidebar_position: 3
 ---
 
-Questa tab contiene gli articoli dell'Offerta.      
+Questa form contiene gli articoli dell'Offerta.      
 
 Nella griglia principale vengono inseriti gli articoli.       
 Sono poi presenti le seguenti tab:       
