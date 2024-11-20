@@ -99,10 +99,10 @@ import Link from '@docusaurus/Link';
 <div className="cardContainer">
     <div className="card">
 ###     <Link to="/docs/logistics/motorvehicles/motorvehicle-management">Automezzi</Link>
+        <p><Link to="/docs/logistics/motorvehicles/motorvehicle" className="bold-link">Gestione automezzo</Link></p>
+        <p>Fondamentale per ottimizzare l'uso, la manutenzione e la sicurezza dei veicoli aziendali.</p>
         <p><Link to="/docs/logistics/motorvehicles/material-consumption/material-consumption-filter" className="bold-link">Consumo materiali</Link></p>
         <p>Gestisce i movimenti realizzati per il consumo dei materiali legati agli automezzi.</p>
-        <p><Link to="/docs/logistics/motorvehicles/motorvehicle-management" className="bold-link">Gestione automezzo</Link></p>
-        <p>Fondamentale per ottimizzare l'uso, la manutenzione e la sicurezza dei veicoli aziendali.</p>
     </div>
 </div>
 <div className="cardContainer">
