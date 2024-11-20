@@ -5,7 +5,7 @@ sidebar_position: 3
 
 Nella presente scheda si gestiscono i parametri contabili principali della procedura: 
 
-le date di registrazione e competenza, la causale di pagamento da utilizzare, i sottoconti della banca da addebitare e quello di rilevazione del debito della ritenuta (non obbligatorio, se non presente sarà utilizzato il sottoconto inserito nel tipo ritenuta). 
+le **date di registrazione e competenza**, la **causale** di pagamento da utilizzare, i s**ottoconti della banca da addebitare** e quello di **rilevazione del debito della ritenuta (non obbligatorio**, se non presente sarà utilizzato il sottoconto inserito nel tipo ritenuta). 
 
 Il flag di chiusura partite, proposto di default, non va mai tolto (al fine di gestire la chiusura partite).
 
