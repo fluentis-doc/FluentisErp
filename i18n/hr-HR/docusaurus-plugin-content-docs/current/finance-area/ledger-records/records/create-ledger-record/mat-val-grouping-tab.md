@@ -83,23 +83,6 @@ Operativamente l'applicativo andrà a creare, su ognuna di queste partite, i rel
 
 Direttamente nella tab **Pagamenti gruppi** è possibile effettuare ulteriori modifiche quali de-raggruppamenti o nuovi raggruppamenti.
 
- 
-
-RIBBON BAR: rappresenta il menu della Form in oggetto, ossia l'area nella quale è possibile effettuare delle azioni. La lista delle funzionalità possibili nel tab corrente è di seguito rappresentata:
-
-
-
-| Funzione | Significato |
-| --- | --- |
-| Salva | Pulsante per salvare la registrazione. |
-| Nuova registrazione | Pulsante per creare una nuova registrazione. |
-| Parametri di inserimento | Richiama i parametri di inserimento della prima nota. |
-
-
-
-| Funzione | Significato |
-| --- | --- |
-|  [Document Manager](/docs/guide/common/operations-with-data/document-manager)  | Pulsante per il collegamento alla gestione documentale. |
 
 
 
