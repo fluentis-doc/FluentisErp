@@ -33,6 +33,7 @@ All'esecuzione della stampa in via definitiva il programma effettua un controllo
 
 
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/E_lIBlV2OXI" title="YouTube video player" frameborder="0" allowfullscreen= "true"></iframe>
-
+:::important Vedi Anche
+[**VIDEO TUTORIALS SULLE STAMPE FISCALI**](/docs/video/finance/intro.md)
+:::
 
