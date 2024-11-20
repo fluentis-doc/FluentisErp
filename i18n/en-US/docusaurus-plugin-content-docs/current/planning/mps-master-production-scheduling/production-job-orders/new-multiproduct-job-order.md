@@ -1,42 +1,42 @@
 ---
-title: Commessa Multiprodotto
+title: New Multiproduct Job Order
 sidebar_position: 5
 ---
 
-La form si apre tramite il percorso **Pianificazione > Commesse di produzione** cliccando nella form **Commesse di produzione** sull'pulsante **Inserisci commessa multiprodotto**.
+The form opens via the path **Planning > Production Job Orders** by clicking on the **Insert Multiproduct Job Order** button in the **Production Job Orders** form.
 
-## Pulsanti specifici
+## Specific Buttons
 
-> [Parametri MRP](/docs/configurations/parameters/production/mrp-parameters/search-mrp-parameters): tramite questo pulsante è possibile aprire la schermata relativa ai parametri MRP dell'articolo;  
-> [Distinta base](/docs/erp-home/registers/production/bill-of-materials/search-and-insert-assemblies): permette di aprire la schermata relativa alla distinta base dell'articolo;  
-> [Cicli di lavoro](/docs/erp-home/registers/production/routes/new-route): permette di visualizzare il ciclo di lavoro e le relative fasi di produzione dell'articolo.
+> [MRP Parameters](/docs/configurations/parameters/production/mrp-parameters/search-mrp-parameters): this button allows you to open the screen related to the MRP parameters of the item;  
+> [Bill of Materials](/docs/erp-home/registers/production/bill-of-materials/search-and-insert-assemblies): allows you to open the screen related to the bill of materials of the item;  
+> [Work Cycles](/docs/erp-home/registers/production/routes/new-route): allows you to view the work cycle and the related production phases of the item.
 
-## Gestione commesse multiprodotto
+## Multiproduct Job Order Management
 
-Questo tab si presenta uguale a quello presente nella schermata di [inserimento commesse monoprodotto](/docs/planning/mps-master-production-scheduling/production-job-orders/new-monoproduct-job-order).
+This tab is the same as the one present in the [Monoproduct Job Orders Insertion](/docs/planning/mps-master-production-scheduling/production-job-orders/new-monoproduct-job-order).
 
-La *differenza sostanziale* sta nel fatto che non è presente una sezione in cui viene inserito l'articolo con i suoi relativi dati come avviene per la creazione di una commessa monoprodotto, ma bensi questo spazio è sostituito da una griglia che permette l'inserimento non di uno, ma di più articoli essendo appunto una commessa multiprodotto.
+The *substantial difference* lies in the fact that there is no section where the item with its related data is entered, as occurs for the creation of a monoproduct job order; instead, this space is replaced by a grid that allows the entry of not one, but multiple items as it is indeed a multiproduct job order.
 
-I campi presenti nella griglia, sono gli stessi della [commessa monoprodotto](/docs/planning/mps-master-production-scheduling/production-job-orders/new-monoproduct-job-order); l'unica differenza è il campo **Progressivo** che è un campo editabile dall'utente,  in cui viene proposto un progressivo di riga della *Commessa di Produzione Multiprodotto* e le date di previsto inizio/fine, la data suggerita e la data di inizio e fine previsione vengono specificate per ogni articolo presente nella commessa multiprodotto (resta comunque la sezione Data prevista e Data effettiva riferite allo stato complessivo della commessa multiprodotto).
+The fields present in the grid are the same as those of the [Monoproduct Job Order](/docs/planning/mps-master-production-scheduling/production-job-orders/new-monoproduct-job-order); the only difference is the **Progressive** field which is editable by the user, where a progressive line number of the *MultiProduct Production Job Order* is proposed, and the estimated start/end dates, suggested date, and start and end forecast dates are specified for each item present in the multiproduct job order (the sections Estimated Date and Effective Date referring to the overall status of the multiproduct job order remain).
 
-### Riferimenti ordini clienti
+### Sales Order References
 
-Il tab contiene una griglia di sola lettura, in cui compaiono gli ordini clienti collegati alla commessa di produzione di riferimento quando la commessa è stata generata da una o più righe ordini clienti.  
-**Tipo/Anno/Numero**: in queste colonne vengono visualizzati il *Tipo/Anno/Numero* dell'ordine cliente in cui è contenuta la riga di cui viene esposto il dettaglio;  
-**N./Quantità/*UM**: in questa colonna viene visualizzata la quantità della riga dell'ordine cliente di cui viene esposto il dettaglio;  
-**Data merce pronta**: in questa colonna viene visualizzata la data della merce pronta che è stata impostata nella riga dell'ordine cliente di cui viene esposto il dettaglio;  
-**Conto**: in questa colonna vengono visualizzati conto e sottoconto del cliente a cui è intestato l'ordine cliente in cui è contenuta la riga di cui viene esposto il dettaglio.
+The tab contains a read-only grid, where the sales orders linked to the reference production job order appear when the job order has been generated from one or more lines of sales orders.  
+**Type/Year/Number**: in these columns, the *Type/Year/Number* of the sales order containing the detailed line is displayed;  
+**N./Quantity/*MU**: in this column, the quantity of the sales order line of which the detail is displayed is shown;  
+**Goods Ready Date**: in this column, the date of the ready goods set in the sales order line of which the detail is displayed is shown;  
+**Account**: in this column, the account and sub-account of the customer to whom the sales order containing the detailed line is addressed are displayed.
 
-### Extra data
+### Extra Data
 
-Anche questo tab è costituito da una griglia in cui verranno riportati tutti gli extra data collegati all'articolo presente nella commessa di produzione.
+This tab is also composed of a grid where all the extra data related to the item present in the production job order will be reported.
 
-##  Costificazione
+## Costing
 
-Tutte le informazioni relative alla **Costificazione** si possono consultare nella pagina [Costificazione](/docs/planning/mps-master-production-scheduling/production-job-orders/valorization).
+All information related to **Costing** can be consulted on the [Costing page](/docs/planning/mps-master-production-scheduling/production-job-orders/valorization).
 
-## Extra data
+## Extra Data
 
-Questo tab, che affianca il tab *Gestione commesse multiprodotto*, contiene tutto l'insieme degli [extra data](/docs/configurations/utility/extra-data/extradata/search-extradata) collegati alla commessa di produzione.
+This tab, which runs alongside the *Multiproduct Job Order Management* tab, contains the entire set of [extra data](/docs/configurations/utility/extra-data/extradata/search-extradata) linked to the production job order.
 
-Per i dettagli sul funzionamento comune delle form fare riferimento al link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+For details on the common functionality of the forms, please refer to the link [Custom Features, Buttons, and Fields](/docs/guide/common).

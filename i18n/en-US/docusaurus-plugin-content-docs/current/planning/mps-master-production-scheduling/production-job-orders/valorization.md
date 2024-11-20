@@ -1,142 +1,142 @@
 ---
-title: Costificazione
+title: Costing
 sidebar_position: 6
 ---
 
-**Parametrizzazioni preliminari**   
+**Preliminary Settings**   
 
-Prima di procedere vedasi quando indicato nelle seguenti pagine in merito alla *Costificazione delle commesse di produzione*:    
+Before proceeding, please refer to the information provided on the following pages regarding the *Costing of production job orders*:    
 
-> [Parametri MS -> tab costificazione commessa](/docs/configurations/parameters/production/mps-parameters)     
-> [Tipi documenti](/docs/configurations/tables/production/documents-types)     
-> [Tipo costificazione commessa](/docs/configurations/tables/production/production-job-order-cost-type)      
-> [Parametri conto lavoro -> Valor. lavorazione materiali a costo](/docs/configurations/parameters/production/subcontractor-parameters/)       
+> [MS Parameters -> Costing tab of the order](/docs/configurations/parameters/production/mps-parameters)     
+> [Document Types](/docs/configurations/tables/production/documents-types)     
+> [Production job order cost type](/docs/configurations/tables/production/production-job-order-cost-type)      
+> [Parameters Subcontractor ->  Valorization of the work. mat. to cost:](/docs/configurations/parameters/production/subcontractor-parameters/)       
 
-*Pulsanti specifici*:
+*Specific Buttons*:
  
-> **Costi aggiuntivi**: permette di inserire dei costi aggiuntivi che possono essere proposti di default in ogni successiva costificazione (questi costi non sono legati alla singola commessa, ma sono globali). Tali costi si dividono in *Costi diretti*, *Costi generali* e *Altri costi*. Questi verranno riportati di default nelle corrispondenti sezioni di costi preventivi e consuntivi nel tab *Costi totali*;     
-> **Esegui costificazione**: permette di lanciare la procedura di costificazione commesse;    
-> **Inserisci costificazione**: permette di inserire una nuova costificazione; in automatico verrnno inseriti tutti i dati di default inseriti nella fase di parametrizzazione preliminare, che ovviamente possono essere variati manualmente per la singola costificazione;     
-> **Cancella costificazione**: permette di cancellare una costificazione già creata;     
-> **Esplodi costificazione**: permette di esplodere l'albero dei documenti di una costificazione già creata. 
+> **Additional Costs**: allows you to enter additional costs that can be proposed by default in every subsequent costing (these costs are not linked to the individual order, but are global). These costs are divided into *Total direct costs*, *General Costs*, and *Other Costs*. These will be brought by default into the corresponding sections of estimated and actual costs in the *Total Costs* tab;     
+> **Execute Costing**: allows you to launch the costing procedure for the orders;    
+> **Insert Costing**: allows you to insert a new costing; automatically all default data entered in the preliminary parameterization phase will be included, which can obviously be manually changed for the individual costing;     
+> **Delete Costing**: allows you to delete an already created costing;     
+> **Expand Costing**: allows you to expand the document tree of an already created costing. 
 
-:::note Nota
-Il tab **Costificazione** (realtavio alla costificazione) è presente nella gestione sia delle commesse monoprodotto che in quella delle multiprodotto; nel caso delle multiprodotto la costificazione perderà in esame tutti gli articoli presenti in quella commessa.
+:::note Note
+The **Costing** tab (realtavio alla costificazione) is present in the management of both single-product orders and multi-product orders; in the case of multiproduct, the costing will take into account all items present in that order.
 ::: 
 
-Nella parte superiore della form è presente una griglia contenente l'elenco di tutte le valorizzazioni lanciate per quella commessa, mentre nella parte destra vengono mostrate le informazioni generali relative alla commessa selezionata.
-La parte inferiore della form, invece, si compone dei seguenti tab:
+At the top of the form, there is a grid containing the list of all the valuations launched for that order, while on the right side, general information about the selected order is displayed.
+The lower part of the form is composed of the following tabs:
 
-## Dettaglio costi
+## Cost Details
 
-In questo tab vengono mostrate le informazioni di dettglio dei costi relativi alla costificazione selezionata nella parte superiore della form.
-Nella tabella di sinistra è possibile visualizzare l'albero dei documenti che compongono la costificazione con le seguenti informazioni:
-**Tipo documento**: indica la tipologia del documento;    
-**Anno**: indica l'anno del documento;     
-**Numero**: indica il numero del documento;     
-**Lotto**: indica il numero di lotto del documento (se presente);     
-**Tipo**: indica il codice della tipologia del documento;    
-**Classe**: indica la classe dell'articolo presente nel documento;     
-**Codice articolo**: indica il codice dell'articolo presente nel documento;    
-**Variante**: indica la variante dell'articolo presente nel documento;      
-**U.M.**: indica l'unità di misura dell'articolo presente nel documento;      
-**Quantità**: indica la quantità dell'articolo presente nel documento;      
-**Cst. tot. previsto**: indica il costo totale previsto (preventivo) dell'articolo presente nel documento;      
-**Cst. tot. effettivo**: indica il costo totale effettivo (consuntivo) dell'articolo presente nel documento;      
-**Descrizione articolo**: indica la descrizione dell'articolo presente nel documento;      
-**Descrizione variante**: indica la descrizione della variante dell'articolo presente nel documento.      
+In this tab, detailed cost information related to the costing selected in the upper part of the form is displayed.
+In the left table, you can view the document tree that makes up the costing with the following information:
+**Document Type**: indicates the type of document;    
+**Year**: indicates the document year;     
+**Number**: indicates the document number;     
+**Batch**: indicates the batch number of the document (if present);     
+**Type**: indicates the code of the document type;    
+**Class**: indicates the class of the item in the document;     
+**Item Code**: indicates the code of the item in the document;    
+**Variant**: indicates the variant of the item in the document;      
+**M.U.**: indicates the unit of measure of the item in the document;      
+**Quantity**: indicates the quantity of the item in the document;      
+**Total Estimated Cost**: indicates the total estimated (preventive) cost of the item in the document;      
+**Total Effective Cost**: indicates the total actual (consuntivo) cost of the item in the document;      
+**Item Description**: indicates the description of the item in the document;      
+**Variant Description**: indicates the description of the variant of the item in the document.      
 
-Una volta selezionato un documento dall'albero, nella parte destra della form vengono visualizzate tutte le informazioni di dettaglio relative allo stesso, suddivise per:
+Once a document is selected from the tree, all detailed information related to it is displayed on the right side of the form, divided into:
 
-#### *Lavorazioni interne*  
+#### *Internal Processing*  
 
-**C.D.L.**: indica il codice del centro di lavoro;    
-**Macchina**: indica il codice della macchina;     
-**Grp MDO**: indica il codice del gruppo manodopera;     
-**Rif. Documento**: indica il riferimento del documento;    
-**U.M. Tempi**: indica l'unità di misura dei tempi;    
-**T. Setup previsto**: indica il tempo di setup previsto;     
-**T. Setup effettivo**: indica il tempo di setup effettivo;    
-**T. Macchina previsto**: indica il tempo macchina previsto;    
-**T. Macchina effettivo**: indica il tempo macchina effettivo;     
-**T. MDO previsto**: indica il tempo manodopera previsto;    
-**T. MDO effettivo**: indica il tempo manodopera effettivo;    
-**Descrizione C.D.L.**: indica la descrizione dell'articolo del centro di lavoro; 
-**Descrizione macchina**: indica la descrizione dalla macchina;     
-**Descrizione Grp. MDO**: indica la descrizione del gruppo manodopera;        
-**Cst. tot. previsto**: indica il costo totale previsto;    
-**Cst. tot. effettivo**: indica il costo totale previsto. 
+**Work C.**: indicates the code of the work center;    
+**Machine**: indicates the machine code;     
+**Lab. gr.**: indicates the code of the labor group;     
+**Document ref.**: indicates the document reference;    
+**Times M.U.**: indicates the unit of measure of times;    
+**Estimated Setup Time**: indicates the estimated setup time;     
+**Effective Setup Time**: indicates the effective setup time;    
+**Estimated Machine Time**: indicates the estimated machine time;    
+**Effective Machine Time**: indicates the effective machine time;     
+**Estimated Labor Time**: indicates the estimated labor time;    
+**Effective Labor Time**: indicates the effective labor time;    
+**C.D.L. Description**: indicates the description of the work center item; 
+**Machine Description**: indicates the description of the machine;     
+**Lab. gr. Description**: indicates the description of the labor group;        
+**Total Estimated Cost**: indicates the total estimated cost;    
+**Total Effective Cost**: indicates the total effective cost. 
 
-:::note Nota
-Nel caso in cui il centro di lavoro effettivo sia diverso da quello previsto, in questa tabella verranno visualizzate due righe, una con il centro di lavoro previsto con i relativi costi ed una con il centro di lavoro effettivo. 
+:::note Note
+If the actual work center is different from the estimated one, two rows will be displayed in this table, one with the estimated work center with the related costs and one with the effective work center.
 ::: 
 
-#### *Lavorazioni esterne*
+#### *External Processing*
 
-**Terzista**: indica il terzista; 
-**Rif. Documento**: indica il riferimento del documento;    
-**U.M.**: indica l'unità di misura gestionale;    
-**Q.tà prevista**: indica la quantità prevista da produrre;    
-**Q.tà effettiva**: indica la quantità effettiva prodotta;    
-**Prz. unit. previsto**: indica il prezzo unitario previsto;    
-**Prz. Unit. effettivo**: indica il prezzo unitario effettivo;    
-**Cst. tot. previsto**: indica il costo totale previsto;    
-**Cst. tot. effettivo**: indica il costo totale previsto.    
+**Contractor**: indicates the subcontractor; 
+**Document ref.**: indicates the document reference;    
+**M.U.**: indicates the management unit of measure;    
+**Estimated Quantity**: indicates the estimated quantity to produce;    
+**Effective Quantity**: indicates the effective quantity produced;    
+**Estimated Unit Price**: indicates the estimated unit price;    
+**Effective Unit Price**: indicates the effective unit price;    
+**Total Estimated Cost**: indicates the total estimated cost;    
+**Total Effective Cost**: indicates the total effective cost.    
 
-#### *Materiali*    
+#### *Materials*    
 
-**Classe**: indica la classe dell'articolo;     
-**Codice articolo**: indica il codice dell'articolo;    
-**Descrizione articolo**: indica la descrizione dell'articolo;      
-**Rif. Documento**: indica il riferimento del documento;    
-**U.M.**: indica l'unità di misura gestionale;    
-**Q.tà prevista**: indica la quantità prevista da acquistare;    
-**Q.tà effettiva**: indica la quantità effettiva acquistata;    
-**Prz. unit. previsto**: indica il prezzo unitario previsto;    
-**Prz. Unit. effettivo**: indica il prezzo unitario effettivo;     
-**Variante**: indica la variante dell'articolo;     
-**Descrizione variante**: indica la descrizione della variante dell'articolo;   
-**Cst. tot. previsto**: indica il costo totale previsto;    
-**Cst. tot. effettivo**: indica il costo totale previsto.   
+**Class**: indicates the item class;     
+**Item Code**: indicates the item code;    
+**Item Description**: indicates the item description;      
+**Document ref.**: indicates the document reference;    
+**M.U.**: indicates the management unit of measure;    
+**Estimated Quantity**: indicates the estimated quantity to purchase;    
+**Effective Quantity**: indicates the effective quantity purchased;    
+**Estimated Unit Price**: indicates the estimated unit price;    
+**Effective Unit Price**: indicates the effective unit price;     
+**Variant**: indicates the item variant;     
+**Variant Description**: indicates the description of the item variant;   
+**Total Estimated Cos**: indicates the total estimated cost;    
+**Total Effective Cost**: indicates the total effective cost.   
 
-Nella parte inferiore della form è presente un expander denominato **Dettaglio costo documento** nel quale vengono riportate le seguenti informazioni:
+At the bottom of the form, there is an expander called **Document Cost Detail** where the following information is displayed:
 
-**Costo materiali preventivo / effettivo unitario**: indica il costo unitario dei materiali preventivo / effettivo relativo al documento selezionato;    
-**Costo lavorazione preventivo / effettivo unitario**: indica il costo unitario delle lavorazioni (interne ed esterne) preventivo / effettivo relativo al documento selezionato;  
-**Totale costo preventivo / effettivo unitario**: indica il totale costo unitario (materiali e lavorazioni) preventivo / effettivo relativo al documento selezionato;    
-**Costo materiali preventivo / effettivo totale**: indica il costo unitario dei materiali preventivo / effettivo relativo al documento selezionato;    
-**Costo lavorazione preventivo / effettivo totale**: indica il costo unitario delle lavorazioni (interne ed esterne) preventivo / effettivo relativo al documento selezionato;  
-**Totale costo preventivo / effettivo totale**: indica il totale costo unitario (materiali e lavorazioni) preventivo / effettivo relativo al documento selezionato;  
+**Estimated / Effective Unit Material Cost**: indicates the unit cost of materials (estimated / effective) related to the selected document;    
+**Estimated / Effective Unit Cost Working**: indicates the unit cost of processing (internal and external) (estimated / effective) related to the selected document;  
+**Total Estimated / Effective Unit Cost Working**: indicates the total unit cost (materials and processing) (estimated / effective) related to the selected document;    
+**Total Estimated / Effective Cost Material**: indicates the total material cost (estimated / effective) related to the selected document;    
+**Total Estimated / Effective Cost Working**: indicates the total processing cost (internal and external) (estimated / effective) related to the selected document;  
+**Total Estimated / Effective Cost **: indicates the total cost (materials and processing) (estimated / effective) related to the selected document;  
 
-## Costi totali
+## Total Costs
 
-In questo tab sono riportati in maniera riepilogativa i costi preventivi e consuntivi relativi alla costificazione selezionata.     
-Nello specifico, per ciascuna sezione (preventivo e consuntivo), sono riportati i seguenti campi:     
-**Costo industriale**: totale dei costi materiali e costo lavorazioni (interne ed esterne);     
-**Totale costi diretti**: totale dei costi inseriti nella sezione **Costi diretti**;    
-**Totale costo diretto comm.**: totale del *Costo industriale* e del *Totale costi diretti*;     
-**Ricarco**: permette di indicare il tipo di ricarico se a percentuale o a valore ed anche il valore stesso;    
-**Totale costo ricaricato**: totale del *Totale costo diretto comm.* e del *Ricarico*;     
-**Totale costi generali**: totale dei costi inseriti nella sezione **Costi generali**;      
-**Totale altri costi**: totale dei costi inseriti nella sezione **Altri costi**;     
-**Correzione**: permette di inserire un valore per correggere il *Totale costo ricaricato*;      
-**Arrotondamento**: permette di decidere se arrotondare per eccesso o difetto e l'ordine di grandezza;     
-**Totale costo commesa**: totale del *Totale costo ricaricato*, *Totale costi generali*, *Totale altri costi*, *Correzione* ed *Arrotondamento*. Il *Totale costo commesa* viene evidenziato in rosso nella sezione dei *Costi consuntivi* quando questo è superiore quello presente nella sezione dei *Costi preventivi*.           
+In this tab, the estimated and effective costs related to the selected costing are summarized.     
+Specifically, for each section (estimated and effective), the following fields are displayed:     
+**Industrial Cost**: total costs of materials and processing costs (internal and external);     
+**Total Direct Costs**: total costs entered in the **Direct Costs** section;    
+**Total Direct Cost Comm.**: total of *Industrial Cost* and *Total Direct Costs*;     
+**Refill**: allows you to indicate the type of refill, whether as a percentage or as a value, and also the value itself;    
+**Total Cost Refilled**: total of *Total direct cost comm.* and *Refill*;     
+**Total General Costs**: total costs entered in the **General Costs** section;      
+**Total Other Costs**: total costs entered in the **Other Costs** section;     
+**Correction**: allows you to enter a value to correct the *Total Cost Refilled*;      
+**Rounding**: allows you to decide whether to round up or down and the order of magnitude;     
+**Total Job Order Cost**: total of *Total Cost Refilled*, *Total General Costs*, *Total Other Costs*, *Correction*, and *Rounding*. The *Total Order Cost* is highlighted in red in the *Final Costs* section when this is higher than that in the *Previewed costs* section.           
 
-:::note Nota
-I campi che vengono riportati ed allineati in automatico, tra la sezione dei *Costi preventivi* e quella dei *Costi consuntivi*, sono: il *Ricarco* (tipo di ricarico e valore), *Correzione* ed *Arrotondamento* (tipo di arrotondamento e valore). In ogni caso nella sezione dei *Costi consuntivi* è possibile variarli manualmente per diversificarli dai valori inseriti nella sezione dei *Costi preventivi*.
+:::note Note
+The fields that are automatically reported and aligned between the *Previewed costs* section and the *Final Costs* section are: *Refill* (type of refill and value), *Correction*, and *Rounding* (type of rounding and value). In any case, in the *Final Costs* section, they can be manually varied to differentiate them from the values entered in the *Previewed costs* section.
 ::: 
 
-Tramite il punlsante **Costi aggiuntivi** è possibile inserire dei *Costi diretti*, *Costi generali* e *Altri costi* che possono essere proposti di default, sia nei costi preventivi che nei costi consuntivi.      
-Per ciascuno di questi costi è possibile definire se sia di tipo percerntuale o a valore, indicandone anche il valore stesso.    
+Through the **Additional Costs** button, it is possible to enter *Direct Costs*, *General Costs*, and *Other Costs* that can be proposed by default in both estimated and effective costs.      
+For each of these costs, it is possible to define whether it is of percentage type or value type, indicating the value itself.    
 
-Per tutte le informazioni necessarie alla creazione di questi costi, consultare la pagina relativa a [Voci di costo](/docs/configurations/tables/general-settings/cost-elements).         
+For all necessary information for creating these costs, refer to the page related to [Cost elements](/docs/configurations/tables/general-settings/cost-elements).         
 
-## Analisi costi
+## Cost Analysis
 
-In questo tab vengono messe in evidenza tutte le componenti di costo per quanto rigaurda i costi preventivi e consuntivi, utilizzando due tipi di analisi:      
+In this tab, all cost components regarding estimated and effective costs are highlighted, using two types of analysis:      
 
-> **Sintetica**: in questa tipologia di analisi viene riportato il *Costo industriale*, quindi come somma dei costi materiali e dei costi di lavorazione, inoltre sono riportati i *Costi diretti*, *Costi generali* e *Altri costi* ed infine il totale di *Ricarichi* e *Correzioni*;     
-> **Analitica**: in questa tipologia, invece, vengono riportate nel grafico tutte le voci singolarmente, quindi il *Costo industriale* viene suddiviso in *Costo materiali*, *Costo lavorazione interne* e *Costo lavorazioni esterne*; anche le voci relative a *Ricarichi* e *Correzioni* vengono riportate separatamente; ovviamente vengono poi riportati anche i Costi diretti*, *Costi generali* e *Altri costi*.       
+> **Synthetic**: in this type of analysis, the *Industrial Cost* is reported, thus as the sum of material costs and processing costs, in addition to *Direct Costs*, *General Costs*, and *Other Costs* with the total of *Refill* and *Corrections*;     
+> **Analytic**: in this type, all items are reported individually in the graph, so the *Industrial Cost* is divided into *Material Cost*, *Internal Work Cost*, and *External Work Cost*; items related to *Refill* and *Corrections* are also reported separately, and obviously, *Direct Costs*, *General Costs*, and *Other Costs* are also reported.       
 
-Per i dettagli sul funzionamento comune delle form fare riferimento al link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+For details on the common functionality of the forms, refer to the link [Custom functionalities, buttons, and fields](/docs/guide/common).
