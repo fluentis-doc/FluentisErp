@@ -1,6 +1,6 @@
 ---
 title: Creazione fattura elettronica
-sidebar_position: 1
+sidebar_position: 2
 ---
 
 In questa pagina viene illustrato:
