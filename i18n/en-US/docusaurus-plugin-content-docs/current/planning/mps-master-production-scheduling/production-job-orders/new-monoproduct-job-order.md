@@ -1,83 +1,82 @@
 ---
-title: Commessa Monoprodotto
+title: New Monoproduct Job Order
 sidebar_position: 4
 ---
 
-La form si apre tramite il percorso **Pianificazione > Commesse di produzione** cliccando nella form **Commesse di produzione** sull'pulsante **Inserisci commessa**.  
+The form opens via the path **Planning > Production Job Orders** by clicking on the **Insert Job Order** button in the **Production Job Orders** form.  
 
-## Pulsanti specifici
+## Specific Buttons
 
-> [Parametri MRP](/docs/configurations/parameters/production/mrp-parameters/search-mrp-parameters): tramite questo pulsante è possibile aprire la schermata relativa ai parametri MRP dell'articolo;      
-> [Distinta base](/docs/erp-home/registers/production/bill-of-materials/search-and-insert-assemblies): permette di aprire la schermata relativa alla distinta base dell'articolo;  
-> [Cicli di lavoro](/docs/erp-home/registers/production/routes/new-route): permette di visualizzare il ciclo di lavoro e le relative fasi di produzione dell'articolo.
+> [MRP Parameters](/docs/configurations/parameters/production/mrp-parameters/search-mrp-parameters): with this button, it is possible to open the screen related to the MRP parameters of the item;      
+> [Bill of Materials](/docs/erp-home/registers/production/bill-of-materials/search-and-insert-assemblies): allows opening the screen related to the bill of materials of the item;  
+> [Work Cycles](/docs/erp-home/registers/production/routes/new-route): allows viewing the work cycle and the related production phases of the item.
 
-## Gestione commesse monoprodotto
+## Monoproduct Job Orders Management
 
-All'interno di questo tab si vanno ad indicare i dati principali che deve contenere la commessa di produzione.
+Within this tab, the main data that the production job must contain is indicated.
 
-**Tipo commessa**: viene proposto il tipo predefinito come tipo di default;    
+**Job Order Type**: the default type is proposed as the default type;    
 
-**Numero**: indica il numero progressivo della commessa, che viene proposto in automatico;     
+**Number**: indicates the progressive number of the job, which is proposed automatically;     
 
-**Anno**: viene proposto in automatico quello corrente;   
+**Year**: the current year is proposed automatically;   
 
-**Cliente**: indica i riferimenti di conto/sottoconto e descrizione del cliente;    
+**Client**: indicates the account/subaccount references and description of the customer;    
 
-**Data**: viene proposta in automatico quella corrente;        
+**Date**: the current date is proposed automatically;        
 
-**Tassativa**: se attivo, indica se questa commessa sia di importanza fondamentale;    
+**Compulsory**: if active, indicates whether this job is of fundamental importance;    
 
-**Stato commessa**: il sistema in automatico propone come *Non esaminata*, stato che la commessa assume appena creata;   
+**Job Order Status**: the system automatically proposes *Not examined*, the status that the job assumes as soon as it is created;    
 
-Gli altri stati che può assumere sono:
+The other statuses that it can assume are:
 
-- **Schedulata**: la commessa passa in questo stato dopo che ha subito il processo di Schedulazione Generale;  
-- **Lanciata**: la commessa passa in questo stato dopo che almeno uno degli ordini pianificati di produzione da essa generati durante la Schedulazione Generale sono stati rilasciati (non devono essere stati rilasciati altri ordini pianificati di tipo acquisto o conto lavoro altrimenti la commessa passa in stato esecutivo);      
-- **Esecutiva**: la commessa passa in questo stato dopo che almeno uno degli ordini di produzione da essa generati è stato rilasciato ed è diventato esecutivo, oppure dopo che almeno uno degli ordini pianificati di acquisto o conto lavoro da essa generati è stato rilasciato;   
-- **Evasa**: la commessa passa in questo stato dopo che l'ordine di produzione generato per l'articolo oggetto della commessa è passato in stato *Evaso*;   
-- **Storicizzata**: la commessa può essere messa in questo stato manualmente per fare in modo che non esca più quando si effettua una ricerca delle commesse *Evase*;  
-- **Annullata**: la commessa può essere messa in questo stato manualmente, anziché eliminarla del tutto, per indicare che la commessa, che inizialmente era stata prevista, non è poi stata portata in produzione.
+- **Scheduled**: the job moves to this status after undergoing the General Scheduling process;  
+- **Launched**: the job moves to this status after at least one of the planned production orders generated from it during the General Scheduling has been released (no other planned orders of purchase or job work should have been released; otherwise, the job moves to executive status);      
+- **Executive**: the job moves to this status after at least one of the production orders generated from it has been released and has become executive, or after at least one of the planned purchase orders or job work generated from it has been released;   
+- **Closed**: the job moves to this status after the production order generated for the item subject to the job has moved to *Executed (Evaso)*;   
+- **Historicized**: the job can be set to this status manually to ensure it no longer appears when searching for *Executed (Evase)* jobs;  
+- **Cancelled**: the job can be set to this status manually, instead of deleting it entirely, to indicate that the job, which was initially planned, has not been brought into production.
 
-**Descrizione**: permette di inserire una descrizione relativa alla commessa;        
+**Description**: allows entering a description related to the job;        
 
-**Tipo approvvigionamento**: generalmente coincide con il tipo di approvvigionamento dell'articolo inserito nella commessa di produzione. Il tipo di approvvigionamento dell'articolo viene indicato all'interno dei [Parametri MRP](/docs/configurations/parameters/production/mrp-parameters/search-mrp-parameters) di quest'ultimo;     
+**Procurement type**: generally coincides with the supply type of the item entered in the production job. The supply type of the item is indicated in the [MRP Parameters](/docs/configurations/parameters/production/mrp-parameters/search-mrp-parameters) of the latter;     
 
-**Priorità approvvigionamento**: indica la priorità dell'approvvigionamento;           
+**Procurement Priority**: indicates the priority of the supply;           
        
-**Progetti**: indica il progetto in cui è inserita la commessa;       
+**Projects**: indicates the project in which the job is included;       
 
-**Sito Produzione**: indica il sito di produzione in cui verrà prodotta la commessa. Su questo campo è presente un controllo che, nel caso in cui la commessa nasca da un ordine cliente, verifica che il magazzino indicato sulla riga dell’ordine cliente appartenga allo stesso sito produttivo indicato nella commessa di produzione.  
+**Production Site**: indicates the production site where the job will be produced. This field has a check that, in case the job originates from a customer order, verifies that the warehouse indicated on the customer order line belongs to the same production site indicated in the production job.  
 
-**Data merce pronta**: in questa colonna viene visualizzata la data della merce pronta che è stata impostata nella riga dell'ordine cliente di cui viene esposto il dettaglio;      
+**Ready Goods Date**: in this column, the date of the ready goods set in the customer order line of which the detail is displayed is shown;      
 
-**Data suggerita**: un campo in cui compare la data suggerita dal sistema nel caso in cui l'utente abbia schedulato la commessa utilizzando il parametro *Controlla documenti in ritardo con ATP* e avendo impostato, sempre nei parametri di *Schedulazione generale*, una *Data Inizio MS* (Master Scheduling). La data suggerita è quella che poi l'utente ha la facoltà di decidere che diventi la data di prevista fine della commessa;
+**Suggested Date**: a field where the date suggested by the system appears if the user has scheduled the job using the *Check Late Documents with ATP* parameter and having set, also in the parameters of *General Scheduling*, a *MS Start Date* (Master Scheduling). The suggested date is what the user has the option to decide to become the expected end date of the job;
 
-**Data lavorazione prevista Inizio/Fine**: in questi campi compaiono le date di previsto inizio/fine della *Commessa di produzione*. Fino a quando la Commessa di Produzione resta in stato *Non esaminata*, queste date sono identiche tra loro ed uguali alla data di merce pronta della riga dell'Ordine Cliente da cui la commessa è stata generata, oppure uguali alla data di fine della Previsione di Vendita da cui la commessa è stata generata. Dopo che la Commessa di Produzione è stata schedulata, la data di previsto inizio della commessa coincide con la data di previsto inizio del primo ordine pianificato che viene generato dalla schedulazione della commessa. Infine, si ricorda che in caso di inserimento manuale della Commessa di Produzione, l'utente è tenuto ad inserire questo dato manualmente, pena l'impossibilità di salvare la commessa stessa;
+**Estimated Working Date Start/End**: in these fields, the expected start/end dates of the *Production Job Order* appear. As long as the Production Job Order remains in the *Not examined* state, these dates are identical to each other and equal to the ready goods date of the Customer Order line from which the job was generated, or equal to the end date of the Sales Forecast from which the job was generated. After the Production Job Order has been scheduled, the expected start date of the job coincides with the expected start date of the first planned order generated from the scheduling of the job order. Finally, it is worth noting that in case of manual entry of the Production Job Order, the user is required to manually enter this data, otherwise it will not be possible to save the job order itself;
 
-**Data Lavorazione effettiva Inizio/Fine**: in questi campi compaiono le date di Inizio/Fine della lavorazione effettiva, cioè rispettivamente la data della prima segnalazione di produzione di un ordine di produzione generato dalla commessa e la data dell'ultima segnalazione di produzione che ha causato la chiusura definitiva dell'ordine di produzione il cui articolo è lo stesso della Commessa di Produzione. Ovviamente la data di effettiva fine è presente solo nel caso in cui la commessa si trovi nello stato di *Evasa*;
+**Effective working date Start/End**: in these fields, the Start/End dates of the actual processing appear, that is, respectively, the date of the first production reporting of a production order generated from the job order and the date of the last production reporting that caused the definitive closure of the production order whose item is the same as that of the Production Job Order. Obviously, the actual end date is present only if the job order is in the *Closed* status;
 
-*Campi obbligatori per la generazione della commessa di produzione*: **Articolo** (con il suo relative classe, codice e descrizione), **Versione**, **Quantità** della commessa e la relativa **Unità di misura**.  
-Infine vi sono una serie di campi che vengono tutti ripresi dai [Parametri MRP](/docs/configurations/parameters/production/mrp-parameters/search-mrp-parameters)  dell'artcolo selezionato quali: il **Ciclo**, il **Lotto economico** con i relativi **Multipli**, il **Lead time**, la **Percentuale di scarto** sulla quantità e il **Tipo approvvigionamento**.
-I campi **Inizio / Fine previsione** indicano l'inizio e fine del periodo preso in considerazione della previsione di vendita che ha generato quella commessa. 
+*Mandatory fields for the generation of the production job order*: **Item** (with its related class, code, and description), **Version**, **Quantity** of the job, and the related **Units of Measure**.  
+Finally, there are a series of fields that are all taken from the [MRP Parameters](/docs/configurations/parameters/production/mrp-parameters/search-mrp-parameters) of the selected item such as: **Cycle**, **Economic Lot** with the related **Multiples**, **Lead Time**, **Scrap Rage** on quantity, and **Procurement Type**. The fields **Start/End Forecast Date** indicate the start and end of the period considered for the sales forecast that generated that job order. 
 
-### Riferimenti ordini clienti
+### Sales Orders References
 
-Il tab contiene una griglia di sola lettura, in cui compaiono gli ordini clienti collegati alla commessa di produzione di riferimento quando la commessa è stata generata da una o più righe ordini clienti.  
-**Tipo/Anno/Numero**: in queste colonne vengono visualizzati il *Tipo/Anno/Numero* dell'ordine cliente in cui è contenuta la riga di cui viene esposto il dettaglio;  
-**N./Quantità/Unità di misura**: in questa colonna viene visualizzata la quantità della riga dell'ordine cliente di cui viene esposto il dettaglio;  
-**Data merce pronta**: in questa colonna viene visualizzata la data della merce pronta che è stata impostata nella riga dell'ordine cliente di cui viene esposto il dettaglio;  
-**Conto**: in questa colonna vengono visualizzati conto e sottoconto del cliente a cui è intestato l'ordine cliente in cui è contenuta la riga di cui viene esposto il dettaglio.
+The tab contains a read-only grid, in which the customer orders linked to the relevant production job order appear when the job order was generated from one or more customer order lines.  
+**Type/Year/Number**: in these columns, the *Type/Year/Number* of the customer order containing the line for which the detail is displayed is shown;  
+**N./Quantity/Units of Measure**: in this column, the quantity of the customer order line for which the detail is displayed is shown;  
+**Ready Goods Date**: in this column, the date of the ready goods that was set in the sales order line for which the detail is displayed is shown;  
+**Account**: in this column, the account and subaccount of the customer to whom the sales order in which the line for which the detail is displayed is registered is shown.
 
-### Extra data
+### Extra Data
 
-Anche questo tab è costituito da una griglia in cui verranno riportati tutti gli extra data collegati all'articolo presente nella commessa di produzione.
+This tab is also made up of a grid where all extra data related to the item present in the production job order will be reported.
 
-##  Costificazione
+## Costing
 
-Tutte le informazioni relative alla **Costificazione** si possono consultare nella pagina [Costificazione](/docs/planning/mps-master-production-scheduling/production-job-orders/valorization).
+All information related to **Costing** can be consulted on the [Costing Page](/docs/planning/mps-master-production-scheduling/production-job-orders/valorization).
 
-## Extra data
+## Extra Data
 
-Questo tab, che affianca il tab *Gestione commesse monoprodotto*, contiene tutto l'insieme degli [extra data](/docs/configurations/utility/extra-data/extradata/search-extradata) collegati alla commessa di produzione.
+This tab, which is alongside the *Monoproduct Job Orders Management* tab, contains all the sets of [extra data](/docs/configurations/utility/extra-data/extradata/search-extradata) related to the production job order.
 
-Per i dettagli sul funzionamento comune delle form fare riferimento al link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+For details on the common functionality of the forms, please refer to the link [Custom Features, Buttons, and Fields](/docs/guide/common).
