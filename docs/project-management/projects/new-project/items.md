@@ -33,7 +33,12 @@ Le informazioni si aggregano a livello superiore, quindi il Root Node conterrà 
 
 Nella tab Articolo troviamo poi la **tab Pianificazione servizio**, i cui dati da riportare per la riga articolo selezionata sono:
 
-**Data inizio/Data fine**: indicano le date pianificate per l’attività;          
+**Data inizio/Data fine**: indicano le date pianificate per l’attività; 
+>Le date verranno aggiornate in automatico a condizione di:
+- flag attivo "Ricalcolo data inizio-fine" nella tabella dei tipi progetto
+- se l'unità di misura utilizzata corrisponde all'unità di misura giorni nei parametri progetto, e si modifica la quantità di riga, la data fine verrà ricalcolata
+- inserendo nuove risorse con data anteriore a quella di inizio o successiva a quella di fine, le date di inizio-fine verranno aggiornate in automatico in base alla data minima e massima presente nella tab risorse.   
+
 **Da data Milestone/A Data Milestone**:               
 **Lavoro completato(perc.)/Stima**: è possibile indicare una percentuale di avanzamento lavori o una relativa stima;              
 **Tipo richiesta intervento**: è possibile indicare una tipologia di richiesta intervento collegata che verrà usata nella generazione di nuove richieste intervento legate alla riga progetto;              

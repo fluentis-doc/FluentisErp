@@ -3,6 +3,20 @@ title: Patch notes Versione 608
 sidebar_position: 2
 ---
 
+### Patch 608.1-0059 - 13/11/2024
+> - MPS – In Definizione MPS,  le commesse selezionate nel tab riepilogativo vengono aggiunte ad una commessa già esistente (indicata nel box Commessa di produzione proposto nel tab Riepilogativo), se e solo se è abilitato il flag Aggiornamento commesse già esistenti nel tab parametri. In automatico verrà proposta una commessa già salvata dove aggiungere le righe, se ne esiste già una con quel tipo e data. (#TT04762/24)
+> - SH – Modifica del filtro di sola lettura per la classe Extra data dell’oggetto FSItemMaterialProfile, per abilitare la selezione dei ‘Valori ammessi’ basati su questo oggetto durante la creazione di una matrice in Anagrafica Articolo (#TT04490/24)
+> - MES – Corretto bug nella procedura di completamento dati ordine degli ordini di produzione. (#TT04741/24)
+> - WM – Corretto bug in analisi disponibilità inerente alla visualizzazione con dettaglio distinta base nel caso di varianti. (#TT04602/24)
+> - FI - repository method ComputeCheckDeclarationOfExemptionAmounts ( TT02373/23)
+
+
+### Patch 608.1-0058 - 07/11/2024
+> - FI - revisione assegnazione date competenza economica in contabilizzazione fatture di acquisto (#TT02138/24)
+> - FI - Add checks for migration (TT04710/24)
+> - Nell’evasione ordini fornitori in bolle e fatture acquisto senza ricalcolo analitica, revisione assegnazione centri su priorità magazzini (#TT01624/24)
+> - SD - Corretto errore nella ricerca delle Fatture di Vendita collegato alla presenza di fatture inviate allo SDI RSM (#TT04740/24)
+
 ### Patch 608.1-0057 - 31/10/2024
 > - WMS - Implementato nel Barcode tokenizer anche la possibilità di gestire le collections e non solo le references. (#TT04232/24)
 > - SD – Stampa CMR - Corretta stampa del CMR, non riportava sempre i dati del Mittente e i Pesi (#TT04342/24).

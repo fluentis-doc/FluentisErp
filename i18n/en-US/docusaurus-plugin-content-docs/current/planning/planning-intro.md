@@ -1,54 +1,50 @@
 ---
-title: Introduzione
+title: Introduction
 sidebar_position: 1
 ---
 
-Attraverso la procedura di Pianificazione della Produzione l'azienda imposta ed organizza le strategie produttive finalizzate al soddisfacimento delle consegne per i clienti, che tuttavia spesso producono contrasti con gli obiettivi di gestione ed efficienza dei reparti produttivi.
-Varie sono le tecniche attraverso cui in **Fluentis ERP** è possibile impostare una Pianificazione di Produzione strategica: MTO (Make to Order), MTS (Make to Stock), ATO (Assembly to Order), oppure ETO (Engineering To Order).
-A volte le esigenze possono essere miste, pertanto la scelta strategica di come impostare il flusso produttivo determina in effetti la capacità dell'azienda di gestire un buon equilibrio tra soddisfacimento della domanda e gestione dell'offerta produttiva.
+Through the Production Planning procedure, the company sets and organizes production strategies aimed at meeting delivery requirements for customers, which often conflict with the management and efficiency objectives of the production departments. Various techniques can be used in **Fluentis ERP** to establish a strategic Production Planning: MTO (Make to Order), MTS (Make to Stock), ATO (Assembly to Order), or ETO (Engineering To Order). Sometimes the needs can be mixed; therefore, the strategic choice of how to set the production flow effectively determines the company's ability to maintain a good balance between meeting demand and managing production supply.
 
-## Moduli dell'area 
+## Modules of the area (Moduli dell'area)
 
 import Link from '@docusaurus/Link';
 
 <div className="cardContainer">
     <div className="card">
-###     <Link to="/docs/planning/mps-master-production-scheduling/job-orders-intro">Commesse di produzione</Link>
-        <p><Link to="/docs/planning/mps-master-production-scheduling/job-order-creation" className="bold-link">Generazione commesse di produzione</Link></p>
-        <p>Consente di creare commesse di produzione basate su ordini clienti, previsioni, sottoscorta e necessità di magazzino.</p>
-        <p><Link to="/docs/planning/mps-master-production-scheduling/production-job-orders/new-monoproduct-job-order" className="bold-link">Commesse monoprodotto</Link></p>
-        <p>Consente gestire commesse di produzione dedicate ad un unico articolo.</p>
-        <p><Link to="/docs/planning/mps-master-production-scheduling/production-job-orders/new-multiproduct-job-order" className="bold-link">Commesse multiprodotto</Link></p>
-        <p>Consente gestire commesse di produzione con il raggruppamento di più articoli legati allo stesso cliente o progetto.</p>
-        <p><Link to="/docs/planning/mps-master-production-scheduling/production-job-orders/valorization" className="bold-link">Costificazione</Link></p>
-        <p>Permette di calcolare i costi associati alla produzione, evidenziando costi preventivi e consuntivi. </p>
+###     <Link to="/docs/planning/mps-master-production-scheduling/job-orders-intro">Production Orders (Commesse di produzione)</Link>
+        <p><Link to="/docs/planning/mps-master-production-scheduling/job-order-creation" className="bold-link">Generation of Production Orders (Generazione commesse di produzione)</Link></p>
+        <p>Allows the creation of production orders based on customer orders, forecasts, stock shortage, and warehouse needs.</p>
+        <p><Link to="/docs/planning/mps-master-production-scheduling/production-job-orders/new-monoproduct-job-order" className="bold-link">Monoproduct Orders (Commesse monoprodotto)</Link></p>
+        <p>Allows the management of production orders dedicated to a single item.</p>
+        <p><Link to="/docs/planning/mps-master-production-scheduling/production-job-orders/new-multiproduct-job-order" className="bold-link">Multiproduct Orders (Commesse multiprodotto)</Link></p>
+        <p>Allows the management of production orders that group multiple items related to the same customer or project.</p>
+        <p><Link to="/docs/planning/mps-master-production-scheduling/production-job-orders/valorization" className="bold-link">Costing (Costificazione)</Link></p>
+        <p>Allows the calculation of costs associated with production, highlighting estimated and actual costs.</p>
     </div>
 </div>
 <div className="cardContainer">
     <div className="card">
-###     <Link to="/docs/planning/ms-master-scheduling/ms-master-scheduling-intro">MS - Matser Scheduling</Link>
-        <p><Link to="/docs/planning/ms-master-scheduling/general-schedule" className="bold-link">Pianificazione generale</Link></p>
-        <p>Opera a capacità infinita e permette di schedulare operazioni sia *al più presto*che *al più tardi*. Questi approcci flessibili consentono una gestione ottimizzata delle esigenze produttive e dei tempi di lavorazione.</p>
-        <p><Link to="/docs/planning/ms-master-scheduling/mrp" className="bold-link">M.R.P.</Link></p>
-        <p> Ottimizza la gestione delle scorte e della produzione, migliorando l'efficienza e riducendo i livelli di magazzino.</p>
-        <p><Link to="/docs/planning/ms-master-scheduling/finite-capacityscheduling" className="bold-link">Schedulazione a capacità finita</Link></p>
-        <p>Consente di ottimizzare la gestione delle risorse produttive all'interno di un'azienda manifatturiera.</p>
-        <p><Link to="/docs/planning/ms-master-scheduling/planned-orders/new-planned-order" className="bold-link">Ordini pianificati</Link></p>
-        <p>Permette la creazione e la gestione efficiente degli ordini pianificati di produzione, acquisto e conto lavoro.</p>
-        <p><Link to="/docs/planning/ms-master-scheduling/planned-orders/procedures/release-planned-orders" className="bold-link">Rilascio ordini pianificati</Link></p>
-        <p>Consente di trasformare gli ordini pianificati in effettivi.</p>    
+###     <Link to="/docs/planning/ms-master-scheduling/ms-master-scheduling-intro">MS - Master Scheduling (MS - Matser Scheduling)</Link>
+        <p><Link to="/docs/planning/ms-master-scheduling/general-schedule" className="bold-link">General Scheduling (Pianificazione generale)</Link></p>
+        <p>Operates at infinite capacity and allows scheduling operations both *as soon as possible* and *as late as possible*. These flexible approaches enable optimized management of production needs and processing times.</p>
+        <p><Link to="/docs/planning/ms-master-scheduling/mrp" className="bold-link">M.R.P. (M.R.P.)</Link></p>
+        <p> Optimizes inventory and production management, improving efficiency and reducing stock levels.</p>
+        <p><Link to="/docs/planning/ms-master-scheduling/finite-capacityscheduling" className="bold-link">Finite Capacity Scheduling (Schedulazione a capacità finita)</Link></p>
+        <p>Allows optimizing the management of production resources within a manufacturing company.</p>
+        <p><Link to="/docs/planning/ms-master-scheduling/planned-orders/new-planned-order" className="bold-link">Planned Orders (Ordini pianificati)</Link></p>
+        <p>Enables the efficient creation and management of planned production, purchase, and subcontracting orders.</p>
+        <p><Link to="/docs/planning/ms-master-scheduling/planned-orders/procedures/release-planned-orders" className="bold-link">Release Planned Orders (Rilascio ordini pianificati)</Link></p>
+        <p>Allows the transformation of planned orders into actual orders.</p>    
     </div> 
 </div> 
 <div className="cardContainer">
     <div className="card">
-###     <Link to="/docs/planning/capacity-requirements-planning/capacity-requirements-planning-intro">CRP – Capacity Requirements Planning</Link>
-        <p><Link to="/docs/planning/capacity-requirements-planning/work-center-capacity" className="bold-link">Capacità Centri di Lavoro</Link></p>
-        <p>Permette di monitorare e gestire i carichi di lavoro dei centri produttivi, evidenziando eventuali sovraccarichi o inefficienze.</p>
-        <p><Link to="/docs/planning/capacity-requirements-planning/gantt-visualization/gantt-visualization-intro" className="bold-link">Simulazione Gantt</Link></p>
-        <p>Permette la pianificazione e il monitoraggio efficace delle attività progettuali, ottimizzando la gestione del tempo e delle risorse.</p>
-        <p><Link to="/docs/planning/capacity-requirements-planning/phase-sequences/phase-sequence-topdown" className="bold-link">Sequenza fasi</Link></p>
-        <p>Consente di organizzare le fasi produttive tramite una sequenza manuale o basata su regole definite dall'utente.</p>
+###     <Link to="/docs/planning/capacity-requirements-planning/capacity-requirements-planning-intro">CRP – Capacity Requirements Planning (CRP – Capacity Requirements Planning)</Link>
+        <p><Link to="/docs/planning/capacity-requirements-planning/work-center-capacity" className="bold-link">Work Center Capacity (Capacità Centri di Lavoro)</Link></p>
+        <p>Allows monitoring and managing the workload of production centers, highlighting any overloads or inefficiencies.</p>
+        <p><Link to="/docs/planning/capacity-requirements-planning/gantt-visualization/gantt-visualization-intro" className="bold-link">Gantt Simulation (Simulazione Gantt)</Link></p>
+        <p>Allows effective planning and monitoring of project activities, optimizing time and resource management.</p>
+        <p><Link to="/docs/planning/capacity-requirements-planning/phase-sequences/phase-sequence-topdown" className="bold-link">Phase Sequence (Sequenza fasi)</Link></p>
+        <p>Allows organizing production phases through a manual sequence or based on rules defined by the user.</p>
     </div>
-</div> 
-
-
+</div>
