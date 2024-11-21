@@ -13,9 +13,9 @@ Upravljanje računovodstvom integrirano je s aktivnim i pasivnim ciklusom, elekt
 
 ### Detalj Funkcionalnosti
 
-```javascript
+
 import Link from '@docusaurus/Link';
-```
+
 
 <div className="cardContainer">
     <div className="card">
