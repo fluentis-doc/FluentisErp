@@ -1,204 +1,202 @@
 ---
-title: Generazione commesse di produzione
+title: Production Job Order Generation 
 sidebar_position: 2
 ---
 
-La procedura **Generazione commesse di produzione** permette di generare commesse di produzione da ordini clienti, dal previsionale e/o dal Sottoscorta.
+The **Production Job Order Generation** procedure allows you to generate production job orders from customer orders, forecasts, and/or safety stock.
 
-### Ordini Clienti {#sales-orders}
+### Customer Orders {#sales-orders}
 
-In questo tab si possono filtrare le righe d'ordine cliente che si vogliono far analizzare dalla procedura **Generazione commesse di produzione**. 
+In this tab, you can filter the customer order lines that you want the **Production Job Order Generation** procedure to analyze.
 
-Per poter essere visualizzate all'interno di questo tab, le righe d'ordine devono rispondere ai seguenti **requisiti**:
+To be visible in this tab, the order lines must meet the following **requirements**:
 
-- l'articolo oggetto della riga ordine cliente deve avere il flag *Generazione commesse di produzione* abilitato nei suoi [Parametri MRP](/docs/configurations/parameters/production/mrp-parameters/search-mrp-parameters);  
-- la riga non deve essere stata evasa tramite *Picking list*, o *DDT di vendita*, o *Fattura di vendita*;  
-- la riga non deve essere stata messa *Forzatamente evasa* e quindi deve risultare in stato *Non Evasa* oppure *Parzialmente evasa*;  
-- dalla riga non devono ancora essere state generate *Commesse di produzione*;  
-- la riga deve avere la *Data merce pronta* inserita nell'*Ordine cliente* all'interno del tab *Articoli* da cui proviene;  
-- l'ordine cliente da cui proviene la riga deve essere *Stampato* e *Confermato*.
+- the item subject to the customer order line must have the flag *Production Job Order Generation* enabled in its [MRP Parameters](/docs/configurations/parameters/production/mrp-parameters/search-mrp-parameters);  
+- the line must not have been fulfilled through *Picking list*, *Delivery Note*, or *Sales Invoice*;  
+- the line must not have been *Forcefully Executed* and therefore must be in *Not Executed* or *Partially Executed* status;  
+- no *Production Job Orders* should have been generated from the line yet;  
+- the line must have the *Goods Ready Date* entered in the *Sales Order* within the *Items* tab from which it originates;  
+- the sales order from which the line originates must be *Printed* and *Confirmed*.
 
-:::note Nota
-La non presenza di UNA SOLA di queste condizioni provoca l'impossibilità di visualizzare la riga ordine cliente nella griglia.
+:::note Note
+The absence of ANY ONE of these conditions prevents the customer order line from being displayed in the grid.
 :::
 
-Nell'area di filtro in cui è possibile filtrare solamente le righe ordine che si vogliono visualizzare in base ai filtri presenti. Una volta impostati i filtri necessari, cliccando sul pulsante **Ricerca** verranno visualizzate nella griglia di risultato tutte le righe ordine corrispondenti ai filtri indicati. 
+In the filtering area, you can filter only the order lines you want to display based on the available filters. Once the necessary filters are set, clicking the **Search** button will display all the order lines corresponding to the specified filters in the results grid.
 
-*Campi*    
+*Fields*
 
-**Tipo**: rappresenta il tipo di ordine cliente;       
-**Numero**: rappresenta il numero dell'ordine cliente;     
-**Anno**: rappresenta l'anno dell'ordine cliente;     
-**Data ordine cliente**: rappresenta la data dell'ordine cliente;     
-**Numero riga**: rappresenta il numero di riga dell'ordine cliente;     
-**Classe** e **Codice articolo**: rappresentano la classe e il codice dell'articolo;             
-**Variante**: rappresenta la variante dell'articolo;          
-**Data OC**: rappresenta la data inserimento ordine;     
-**Quantità**: rappresenta la quantità ancora da evadere della riga d'ordine;   
-**Disponibilità**: rappresenta la quantità disponibile dell'articolo nella data di merce pronta della riga d'ordine;           
-**UM**: rappresenta l'unità di misura;        
-**Consegna**: rappresenta data di merce pronta della riga d'ordine;  
-**Tipo commessa** e **Decrizione commessa**: rappresentano il codice e la descrizione del tipo commessa;    
-**Descrizione articolo**: rappresenta la descriozione dell'articolo;          
-**Descrizione conto**: rappresenta la ragione sociale del cliente.  
+**Type**: represents the type of sales order;  
+**Number**: represents the number of the sales order;  
+**Year**: represents the year of the sales order;  
+**Sales Order Date**: represents the date of the sales order;  
+**Line Number**: represents the line number of the sales order;  
+**Class** and **Item Code**: represent the class and the code of the item;  
+**Variant**: represents the variant of the item;  
+**SO Date**: represents the order insertion date;  
+**Quantity**: represents the quantity still to be fulfilled for the order line;  
+**Availability**: represents the available quantity of the item on the goods ready date of the order line;  
+**MU**: represents the units of measure;  
+**Delivery**: represents the goods ready date of the order line;  
+**Job Order Type** and **Job Order Description**: represent the code and the description of the job order type;  
+**Item Description**: represents the description of the item;  
+**Account Description**: represents the company name of the customer.  
 
-:::note Nota
-La colonna **Disponibilità** risulta uguale a zero per tutte le righe nel caso in cui il flag *Considera la disponibilità dell'articolo* presente nel tab **Parametri** sia disattivato. 
+:::note Note
+The **Availability** column shows zero for all rows if the flag *Consider item availability* present in the **Parameters** tab is disabled.
 :::
 
-*Pulsanti specifici*  
+*Specific Buttons*
 
-> **Considera per commesse**: permette di spostare le righe d'ordine selezionate nel tab **Riepilogo** dove potranno essere prese in esame dalla procedura di generazione della commessa di produzione.  
+> **Consider for Job Orders**: allows you to move the selected job order lines to the **Summary** tab, where they can be considered for the production job order generation procedure.  
 
-> **Generazione flusso**: il pulsante viene abilitato solo nel caso in cui nei [Parametri MRP](/docs/configurations/parameters/production/mrp-parameters/mrp-parameters-intro) sia stato abilitato il flag *Generazione automatica flusso di produzione*. Con questo tasto è possibile lanciare direttamente l'esecuzione del flusso di produzione completo e quindi la *creazione* delle *Commesse di produzione* che verrebbero direttamente schedulate e, a seconda dei flag successivi impostati sempre nei [Parametri MPS](/docs/configurations/parameters/production/mps-parameters), verrebbero eventualmente generati anche *Ordini pianificati* e *Ordini di produzione*.
+> **Flow generation**: the button is enabled only if the flag *Automatic generation of production flow* has been enabled in the [MRP Parameters](/docs/configurations/parameters/production/mrp-parameters/mrp-parameters-intro). With this button, you can directly launch the execution of the complete production flow and therefore the *creation* of *Production Job Orders* that would be directly scheduled and, depending on the subsequent flags set in the [MPS Parameters](/docs/configurations/parameters/production/mps-parameters), scheduled *Planned Orders* and *Production Orders* may also be generated.
 
+### Forecast {#forecast}
 
-### Previsionale {#forecast}
+In this tab, you can filter the lines of *Sales Forecasts* or the *Master Production Schedule* that you want the **Production Job Order Generation** procedure to analyze, using the filters for item and variant.
 
-In questo tab si possono filtrare le righe di *Previsioni di vendita* o del *Piano principale di produzione* che si vogliono far analizzare dalla procedura **Generazione commesse di produzione**, utilizzando i filtri per articolo e per variante.
+The lines of the *Sales Forecasts* that can be displayed in this tab must meet the following **requirements**:
 
-Le righe delle *Previsioni di vendita* che possono essere visualizzate in questo tab devono rispondere ai seguenti **requisiti**:
+- the annual sales forecast must be in *Consolidated* status;  
+- the annual sales forecast must have been generated with a valid *Version*;  
+- no *Production Job Orders* should have been generated from the forecast line yet;  
+- from the lines of the *Master Production Schedule* that can be displayed in this tab, no *Production Job Orders* should have been generated yet.
 
-- la previsione di vendita annuale deve essere in stato di *Consolidata*;  
-- la previsione di vendita annuale deve essere stata generata con una *Versione* valida;  
-- dalla riga di previsione non devono ancora essere state generate *Commesse di produzione*;  
-- dalle righe del *Piano principale di produzione* che possono essere visualizzate in questo tab non devono ancora essere state generate *Commesse di produzione*.
+In the filtering area, you can filter only the order lines you want to display based on the inserted *filters*.  
+**See variant**: the active flag allows you to view the variant;  
+**End scheduling month**: serves to display only the sales forecasts that go up to the indicated date in the grid;  
+**Job Order Type**: represents the type of production job order to be generated;  
+**Order Types**: the grid allows you to set the *Sales Order Types* that must be taken into account in conjunction with the quantities present in the sales forecasts, so that the job order creation procedure generates the production job order with a quantity equal to the greater, less, or sum of the quantities present for the same item in the sales order line and/or in the production forecast or master plan.
 
-Nell'area di filtro è possibile filtrare solamente le righe ordine che si vogliono visualizzare in base ai *filtri* inseriti.  
-**Vedi variante**: il flag attivo permette di visualizzare la variante;  
-**Mese di fine schedulazione**: serve per visualizzare nella griglia solo le previsioni di vendita che arrivano fino alla data indicata;  
-**Tipo commessa**: rappresenta il tipo di commessa di produzione da generare;    
-**Tipi ordine**: la griglia consente di impostare i *Tipi ordini cliente* che devono essere considerati contemporaneamente alle quantità presenti nelle previsioni di vendita, in modo tale che la procedura di creazione commessa generi la commessa di produzione con una quantità pari al maggiore, al minore o alla somma delle quantità presenti, per lo stesso articolo, in riga ordine cliente e/o in previsione di produzione o piano principale.
+Once the necessary filters are set, clicking the **Search** button will display all the forecast lines corresponding to the specified filters in the results grid.
 
-Una volta impostati i filtri necessari, cliccando sul pulsante **Ricerca** verranno visualizzate nella griglia di risultato tutte le righe di previsione corrispondenti ai filtri indicati.  
+*Fields*
 
-*Campi* 
+**Class**, **Code**, and **Item Description**;  
+**Variant**: is displayed if the corresponding flag has been selected; if it has been decided in the filtering area to display it;  
+**Year**: represents the year of the sales forecast;  
+**Month/Week**: represents the number of the month or week of the sales forecast;  
+**Job Order Generation Date**: represents the date of generation of the production job order;  
+**Forecast Start/End Dates**: for example, if the forecast is set for the month of May, the start date will be 01/05 and the end date will be 31/05;  
+**Quantity**: represents the quantity related to the individual forecast line;  
+**Account/Detail Account/Account Description**: represents the order customer's account related to the sales forecast line (if present).  
 
-**Classe**, **Codice** e **Descrizione articolo**;  
-**Variante**: viene visualizzato se il flag omonimo è stato selezionato; se si è deciso nell'area di filtro che venga visualizzata; 
-**Anno**: rappresenta l'anno della previsione di vendita;  
-**Mese/Sett**: rappresenta il numero del mese o della settimana della previsione di vendita;  
-**Data gen. commessa**: rappresenta la data di generazione della commessa di produzione;  
-**Date inizio / fine previsione**: per esempio, se la previsione è stata impostata per il mese di maggio, la data inizio sarà il 01/05 e la data fine sarà il 31/05;   
-**Quantità**: rappresenta la quantità relativa alla singola riga di previsione;  
-**Conto/Sottoconto/Descrizione conto**: rappresenta il conto del cliente relativo alla riga di previsione di vendita (ove presente).  
+*Specific Button*
 
-*Pulsante specifico*  
+> **Consider for job orders**: allows you to move the selected lines to the **Summary** tab, where they can be considered for the production job order generation procedure.
 
-> **Considera per commesse**: permette di spostare le righe selezionate nel tab **Riepilogo** dove potranno essere prese in esame dalla procedura di generazione della commessa di produzione.
+### Safety Stock {#safety-stock}
 
+Through this tab, you can filter the lines of items managed under Safety Stock that you want the *Production Job Order Generation* procedure to analyze.  
+The only **requirement** that allows the item to be visible in this grid is that it has, in its [MRP Parameters](/docs/configurations/parameters/production/mrp-parameters/mrp-parameters-intro), the *Management Type* set to *Safety Stock*.
 
-### Sottoscorta {#safety-stock}
+In the filtering area, you can filter only the order lines you want to display based on the inserted *filters*.  
+**See variant**: the active flag allows you to view the variant;  
+**Production Job Order Type**: allows you to decide the type of production job order to be generated;  
+**Under ROL on date**: represents the date until which you do not want the items in the grid to go below safety stock.
 
-Attraverso questo tab si possono filtrare le righe di articoli gestiti a Scorta che si vogliono far analizzare dalla procedura *Generazione commesse di produzione*.  
-L'unico **requisito** che consente all'articolo di essere visualizzabile in questa griglia è rappresentato dal fatto che abbia, nel suoi [Parametri MRP](/docs/configurations/parameters/production/mrp-parameters/mrp-parameters-intro), il *Tipo di gestione* a *Scorta*.
+Once the necessary filters are set, clicking the **Search** button will display all the item lines corresponding to the specified filters in the results grid.
 
-Nell'area di filtro è possibile filtrare solamente le righe ordine che si vogliono visualizzare in base ai *filtri* inseriti.  
-**Vedi variante**: il flag attivo permette di visualizzare la variante;  
-**Tipo commessa di produzione**: consente di decidere il tipo di commessa di produzione da generare;  
-**Sotto punto di riordino al**: rappresenta la data fino alla quale non si vuole che gli articoli della griglia finiscano sottoscorta.  
+The data you can view in the grid include:  
+**Class**, **Code**, and **Item Description**;  
+**Variant**: is displayed if the corresponding flag has been selected; if it has been decided in the filtering area to display it;  
+**Reorder Level**, **Minimum Stock**, and **Reorder Days**: are retrieved from the *Item Registry* > *Procurement* tab;  
+**Average Daily Usage**: is calculated by subtracting the minimum stock from the reorder point and dividing the result obtained by the reordering days;  
+**Quantity of multiples of the economic production batch** and its **Multiples**: are retrieved from the [MRP parameters](/docs/configurations/parameters/production/mrp-parameters/search-mrp-parameters) of the item;  
+**On hand**: shows the stock of the item as of the current date;  
+**Initial Availability**: represents the availability of the item on the day the processing is launched;  
+**Final Availability**: represents the availability of the item on the day indicated in the **Under ROL on date** box present in the filtering area;  
+**Minimum Availability**: represents the minimum availability that the item presents in the period between the initial availability date and the final availability date.
 
-Una volta impostati i filtri necessari, cliccando sul pulsante **Ricerca** verranno visualizzate nella griglia di risultato tutte le righe articolo corrispondenti ai filtri indicati.
-
-I dati che si possono visualizzare all'interno della griglia sono:  
-**Classe**, **Codice** e **Descrizione articolo**;  
-**Variante**: viene visualizzato se il flag omonimo è stato selezionato; se si è deciso nell'area di filtro che venga visualizzata;  
-**Punto di riordino**, **Scorta minima** e **Giorni di riordino**: vengono ripersi dall'*Anagrafica articolo* > tab *Approvvigionamento*;   
-**Consumo medio giornaliero**: viene calcolato sottraendo la scorta minima dal punto di riordino e dividendo il risultato ottenuto per i giorni di riordino;   
-**Lotto economico di produzione** e i suoi **Multipli**: vengono ripresi dai [parametri MRP](/docs/configurations/parameters/production/mrp-parameters/search-mrp-parameters) dell'articolo;  
-**Giacenza**: riporta la giacenza dell'articolo alla data corrente; 
-**Disponibilità iniziale**: rappresenta la disponibilità dell'articolo al giorno in cui si lancia l'elaborazione;  
-**Disponibilità finale**: rappresenta la disponibilità dell'articolo al giorno indicato nella casella **Sotto punto di riordino alla data** presente nell'area di filtro;   
-**Disponibilità minima**: rappresenta la disponibilità minima che l'articolo presenta nel lasso di tempo che intercorre tra la data di disponibilità inizio e la data di disponibilità finale.  
-
-:::note Nota
-Per i documenti privi della Data Consegna viene considerato il parametro *Se non è specificata la data di consegna* presente nel tab Parametri.
+:::note Note
+For documents lacking a Delivery Date, the parameter *If are not specified the delivery date* present in the Parameters tab is considered.
 :::
 
-La *griglia inferiore* visualizza il dettaglio della disponibilità dell'articolo selezionato nella griglia principale.
+The *lower grid* displays the details of the availability of the selected item in the main grid.
 
-:::note Nota
-Nella prima riga della griglia, la disponibilità è data dalla somma della giacenza e di tutti i documenti scaduti (con data antecedente ad oggi).
+:::note Note
+In the first row of the grid, the availability is given by the sum of the stock and all expired documents (with a date prior to today).
 :::
 
-*Pulsante specifico*  
+*Specific Button*
 
-> **Considera per commesse**: permette di spostare le righe selezionate nel tab **Riepilogo** dove potranno essere prese in esame dalla procedura di generazione della commessa di produzione.
+> **Consider for job orders**: allows you to move the selected lines to the **Summary** tab, where they can be considered for the production job order generation procedure.
 
-Solo le righe per le quali la procedura ritiene di poter creare una commessa di produzione saranno trasferite nel tab *Riepilogo*. La procedura propone per ogni articolo una commessa di produzione e cerca di fare in modo che nel giorno in cui l'articolo abbia il rischio di scendere sotto il livello di scorta minima, venga reintegrato tramite una commessa di produzione avente data identica alla data sottoscorta. La quantità di questa commessa dovrà consentire di sopravvivere fino alla data di **Sotto punto di riordino** indicata nell'area di filtro: ovviamente se l'articolo presenta dei lotti economici di produzione o di acquisto e dei multipli essi vengono rispettati.
+Only the lines for which the procedure considers it able to create a production job order will be transferred to the *Summary* tab. The procedure proposes a production job order for each item and tries to ensure that on the day when the item risks falling below the minimum stock level, it is replenished through a production job order with the same date as the stockout date. The quantity of this job order should allow survival until the indicated **Under ROL on date** date in the filtering area: obviously, if the item presents economic production lots or purchases and multiples, they are respected.
 
-### Riepilogo
+### Summary
 
-Questo tab presenta le righe che sono state spostate dagli tab precedenti e che devono essere trasformate in commesse di produzione.
+This tab presents the lines that have been moved from the previous tabs and need to be transformed into production job orders.
 
-Il tab contiene:  
-- la sezione **Commessa di produzione proposta** in cui l'utente può impostare il **Tipo**, l'**Anno** e il **Numero** della commessa di produzione a cui devono essere aggiunte le righe selezionate nello stesso tab **Riepilogo**.  
-- la griglia di risultato dove verranno visualizzate le righe articolo che sono state spostate dagli altri tab.
+The tab contains:  
+- the section **Proposed Production Job Order** where the user can set the **Type**, **Year**, and **Number** of the production job order to which the selected lines in the same **Summary** tab should be added.  
+- the results grid where the item lines that have been moved from the other tabs will be displayed.
 
-*Campi griglia*:  
+*Grid Fields*:
 
-**Dati da**: rappresenta il tab di provenienza della riga;     
-**Classe**, **Codice articolo** e **Descrizione**: rappresentano la classe, il codice e la descrizione dell'articolo;             
-**Variante**: rappresenta la variante dell'articolo;     
-**Quantità**: rappresenta la quantità della commessa che viene proposta dalla procedura;
-**Disponibilità**: rappresenta la quantità disponibile dell'articolo alla *Data consegna*;            
-**Data di consegna**: rappresenta la data di fine della commessa di produzione proposta (che è modificabile manulamente dall'utente);                
-**Data inizio previsione**: rappresenta la data di inizio previsione;      
-**Codice tipo**: rappresenta il codice dell'ordine cliente;        
-**Numero ordine cliente**: rappresenta il numero dell'ordine cliente;  
-**Conto/Sottoconto/Descrizione conto**: rappresentano il conto del cliente relativo alla riga di previsione di vendita (ove presente);      
-**Tipo commessa** e **Descrizione commessa**: rappresentano il codice e la descrizione del tipo commessa.       
+**Data from**: represents the source tab of the line;  
+**Class**, **Item Code**, and **Description**: represent the class, code, and description of the item;  
+**Variant**: represents the variant of the item;  
+**Quantity **: represents the quantity of the order proposed by the procedure;  
+**Availability**: represents the available quantity of the item at the *Delivery Date*;  
+**Delivery Date**: represents the end date of the proposed production job order (which can be manually modified by the user);  
+**Forecast Start Date**: represents the forecast start date;  
+**Type Code**: represents the code of the sales order;  
+**Sales Order Number**: represents the number of the sales order;  
+**Account/Detail Account/Account Description**: represent the sales account related to the sales forecast line (if present);  
+**Job Order Type** and **Job Order Description**: represent the code and description of the job order type.
 
-Dopo aver selezionato le righe desiderate, l'utente ha la possibilità di creare le commesse di produzione in base ai criteri impostati nel tab **Parametri**, utilizzando il tasto **Formazione automatica commesse**. La procedura presenta, al termine dell'elaborazione, una finestra in cui vengono specificati i numeri delle commesse generate, finestra sulla quale l'utente deve solo cliccare su OK e chiudere.
+After selecting the desired lines, the user has the opportunity to create the production orders based on the criteria set in the **Parameters** tab, using the **Automatic creation of job order** button. At the end of the processing, the procedure presents a window specifying the numbers of the generated job orders, on which the user only needs to click OK and close.
 
-*Pulsante specifico*   
-> **Formazione automatica commesse**: richiama la procedura che genera le commesse di produzione dalle righe selezionate.  
+*Specific Button*  
+> **Automatic creation of job order**: calls the procedure that generates the production job orders from the selected lines.
 
-### Parametri
+### Parameters
 
-Attraverso questo tab vengono settati tutti i parametri che riguardano la gestione della creazione delle commesse di produzione ed il modo in cui devono essere gestite le fasi successive alla generazione delle commesse stesse. Alcune impostazioni presente in questo tab vengono riprese dalla finestra [Parametri MPS](/docs/configurations/parameters/production/mps-parameters).
+Through this tab, all parameters regarding the management of the creation of production job orders and how to manage the phases following the generation of the job orders themselves are set. Some settings present in this tab are retrieved from the [MPS Parameters](/docs/configurations/parameters/production/mps-parameters).
 
-**Metodo generazione commessa**:  
-- **Tipo commessa** (Monoprodotto / Multiprodotto): viene riproposto il dato che era stato settato nel tab  [Parametri MPS.](/docs/configurations/parameters/production/mps-parameters)  Nel momento della generazione della commessa dalla *Generazione commesse di produzione* è comunque possibile modificare questa impostazione all'interno di questa finestra, così come quella relativa alla combo successiva;  
-- **Raggruppamento prodotti per**: combo tramite la quale è possibile indicare come devono essere eventualmente raggruppati gli articoli all'interno della stessa commessa *Monoprodotto* o *Multiprodotto*.  
+**Method of job order generation**:  
+- **Job Order Type** (Monoproduct / Multiproduct): the data that was set in the [MPS Parameters](/docs/configurations/parameters/production/mps-parameters) tab is proposed again. At the time of generating the order from the *Production Job Order generation*, this setting can still be modified within this window, as can the subsequent combo;  
+- **Grouping products for**: combo through which it is possible to indicate how items should be grouped within the same *Monoproduct* or *Multiproduct* job order.
 
-> Se il tipo commessa è *Monoprodotto*, l'unico raggruppamento ammesso è quello per *Articolo*; questo tipo di gestione permette all'utente di far generare automaticamente dal sistema una serie di commesse *Monoprodotto*, selezionando una lista di righe di *Ordini clienti*, righe provenienti da   *Previsioni di vendita* o dal *Piano principale di produzione* o provenienti dal *Sottoscorta* facendo in modo che ciascuna commessa che verrà generata presenti la somma delle quantità richieste per lo stesso articolo. La data di fine di una commessa raggruppata è sempre uguale a quella del fabbisogno più vicino alla data in cui si lancia l'elaborazione.  
-> Se il tipo commessa è *Multiprodotto* i raggruppamenti possono essere effettuati per cliente o progetto e consentono all'utente di inserire nella stessa commessa *Multiprodotto* più articoli provenienti da righe d'ordine cliente legate allo stesso cliente, alla stessa commessa di vendita oppure alla stessa commessa di vendita dello stesso cliente.
+> If the job order type is *Monoproduct*, the only allowed grouping is by *Item*; this type of management allows the user to have the system automatically generate a series of *Monoproduct* job orders by selecting a list of lines from *Sales Orders*, lines from *Sales Forecasts*, or from the *Master Production Schedule*, or from *Safety Stock*, ensuring that each generated job order has the sum of the requested quantities for the same item. The end date of a grouped job order is always equal to that of the nearest requirement date when launching the processing.  
+> If the job order type is *Multiproduct*, groupings can be made by customer or project, allowing the user to include multiple items in the same *Multiproduct* job order from customer order lines linked to the same customer, the same sales job order, or the same sales job order from the same customer.
 
-**Priorità approvvigionamento**: la combo riporta la priorità di approvvigionamento che era stata impostata nei  [Parametri MPS](/docs/configurations/parameters/production/mps-parameters) selezionando una priorità tra quelle codificate all'interno della tabella *Priorità approvvigionamento* che si trova tra le tabelle della sezione *Impostazioni Generali*.
+**Procurement Priority**: the combo displays the procurement priority that was set in the [MPS Parameters](/docs/configurations/parameters/production/mps-parameters) by selecting a priority from those coded in the *Procurement Priority* table found among the tables in the *General Settings* section.
 
-**Aggiornamento commesse già esistenti**: le commesse selezionate nel tab riepilogativo vengono aggiunte ad una commessa già esistente (indicata nel box *Commessa di produzione propost* del tab **Riepilogativo**), se e solo se è abilitato il flag **Aggiornamento commesse già esistenti** nel tab parametri. In automatico verrà proposta una commessa già salvata dove aggiungere le righe, se ne esiste già una con quel tipo e data.         
+**Update Existing Job Orders**: the selected job orders in the summary tab are added to an already existing job order (indicated in the *Proposed Production Job Order* box of the **Summary** tab), if and only if the **Update Existing Job Orders** flag in the parameters tab is enabled. An already saved job order where the lines can be added will automatically be proposed if one exists with that type and date.
 
-Di seguito, attraverso degli appositi flag, si può indicare se la commessa debba essere generata da **Ordini clienti** o da un **Previsionale** (e nel caso del previsionale se da **Previsioni di vendita** o dal **Piano principale di produzione**), oppure, in ultima analisi, dal **Sottoscorta**. In quest'ultimo caso viene utilizzato un algoritmo particolare spiegato nel paragrafo dedicato al tab [Sottoscorta](#safety-stock).
+Below, through appropriate flags, you can indicate whether the order should be generated from **Sales Orders** or from a **Forecast** (and in the case of the forecast whether from **Sales Forecasts** or from the **Master Production Schedule**), or, lastly, from **Safety Stock**. In the latter case, a specific algorithm is used as explained in the section dedicated to the [Safety Stock](#safety-stock) tab.
 
-**Previsionale**: se il flag è attivo, si può poi decidere con quale modalità temporale debbano essere generate le commesse di produzione, tra le opzioni seguenti:  
-> **Mensile**: in questo caso la commessa di produzione verrà generata nel mese in cui cade la data della fine della Previsione di Vendita oppure nel mese in cui è stata inserita la quantità nel Piano Principale di Produzione. L'utente può anche impostare il giorno del mese in cui deve essere impostata dalla procedura automatica di creazione commessa la data di prevista fine della commessa stessa;  
-> **Settimanale**: in questo caso verrà generata una commessa di produzione per ogni settimana del mese in cui cade la data della fine della Previsione di Vendita oppure del mese in cui è stata inserita la quantità nel Piano Principale di Produzione. L'utente può anche impostare il giorno della settimana in cui deve essere impostata dalla procedura automatica di creazione commessa la data di prevista fine della commessa stessa;  
-> **Reali**: in questo caso verrà generata una commessa di produzione per ogni settimana del mese in cui cade la data della fine della *Previsione di Vendita* oppure del mese in cui è stata inserita la quantità nel *Piano Principale di Produzione*, ma considerando esattamente la data di fine della singola riga della *Previsione di Vendita*;  
-> **Settimanale considerando gg di produzione della zona di consegna**: in questo caso verrà generata una commessa di produzione tenendo conto dei giorni di produzione della zona di consegna legata al cliente per cui è stata creata la *Previsione di Vendita*;  
-> **Raggruppamento previsioni per clienti**: il flag serve per fare in modo che le commesse di produzione vengano generate raggruppando le righe di previsione degli stessi clienti.
+**Forecast**: if the flag is active, you can then decide with which temporal mode the production job orders should be generated, from the following options:  
+> **Monthly**: in this case, the production job order will be generated in the month in which the end date of the Sales Forecast falls or in the month in which the quantity was entered in the Master Production Schedule. The user can also set the day of the month on which the automated job order creation procedure should set the expected end date of the job order itself;  
+> **Weekly**: in this case, a production job order will be generated for every week of the month in which the end date of the Sales Forecast falls or the month in which the quantity was entered in the Master Production Schedule. The user can also set the day of the week on which the automated job order creation procedure should set the expected end date of the job order itself;  
+> **Real**: in this case, a production job order will be generated for every week of the month in which the end date of the *Sales Forecast* falls or the month in which the quantity was entered in the *Master Production Schedule*, but considering the exact end date of the individual line of the *Sales Forecast*;  
+> **Weekly, considering production days of delivery zone**: in this case, a production job order will be generated taking into account the production days of the delivery zone associated with the customer for whom the *Sales Forecast* was created;  
+> **Grouping forecasts by customers**: the flag serves to ensure that production job orders are generated by grouping the forecast lines of the same customers.
 
-**Se non è specificata la data di consegna** la sezione riguarda esclusivamente il tab *Ordini Clienti* e il tab *Sottoscorta* della *Generazione commesse di produzione*. Qui l'utente può decidere se, nel caso in cui manchi la *Data merce pronta* nella riga dell'ordine cliente che deve essere analizzata dalla procedura, debba essere ignorata la riga priva di data, oppure debba essere accettata una certa data come prevista fine della commessa che verrà generata, oppure debba essere accettata una certa data come previsto inizio della commessa che verrà generata (in questi ultimi due casi le date vanno selezionate nelle due combo dedicate).
+**If are not specified the delivery date** the section concerns exclusively the *Sales Orders* tab and the *Safety Stock* tab of the *Production Job Order Generation*. Here the user can decide whether, in cases where the *Goods Ready Date* is missing in the sales order line to be analyzed by the procedure, the line lacking a date should be ignored, or if a certain date as the estimated end of the generated job order should be accepted, or if a certain date as the estimated start of the generated job order should be accepted (in these last two cases, the dates must be selected in the two dedicated combos).
 
-**Considera la disponibilità dell'articolo**: il flag consente, se attivato, di fare in modo che in tutti i tabs della *Generazione commesse di produzione* venga esposta la disponibilità dell'articolo alla *Data di prevista fine* della commessa di produzione che dovrà essere creata. Lo stesso avviene anche nel tab *Riepilogo*. La disponibilità viene presa in considerazione sulla base dei flag attivati nei *Parametri MPS* (Conto Lavoro, Acquisti, Vendite, Produzione, Magazzino). In questo caso, quando si andrà a creare la commessa la procedura andrà a tenere conto della disponibilità creando la commessa per la differenza tra la domanda e la disponibilità di quell'articolo.
+**Consider item availability**: the flag allows, if activated, for the item availability to be displayed in all tabs of the *Production Job Order Generation* regarding the availability of the item at the *Estimated End Date* of the production job order that will need to be created. The same happens in the *Summary* tab. Availability is taken into account based on the flags activated in the *MPS Parameters* (Work Account, Purchases, Sales, Production, Warehouse). In this case, when the job order is created, the procedure will take into account the availability by creating the job order for the difference between the demand and the availability of that item.
 
-**Magazzini di schedulazione commesse**: nella griglia compaiono i magazzini che sono stati inseriti nella finestra del [Calcolo Disponibilità](/docs/erp-home/registers/items/calculate-availability). Da questo tab *Parametri* possono solo essere visualizzato e non modificati.
+**Warehouses for job order scheduling**: the grid displays the warehouses that have been entered in the [Calculate Availability](/docs/erp-home/registers/items/calculate-availability) window. From this *Parameters* tab, they can only be viewed and not modified.
 
-**Sito Produttivo:** questa informazione, se indicata, viene utilizzata per far considerare alla procedura di generazione commessa da ordine cliente le sole righe ordine cliente confermate, dove il magazzino di prelievo previsto è associato a quel sito produttivo.
+**Production Site**: this information, if indicated, is used to make the procedure consider for the job order generation from sales order only the confirmed sales order lines, where the expected picking warehouse is associated with that production site.
 
-**Calcolo quantità in base al lotto economico**: se attivato, questo flag, fa in modo che la procedura generi la commessa di produzione considerando il lotto economico di acquisto inserito nel tab [Fornitori preferenziali](/docs/erp-home/registers/items/create-new-items/item-registry/preferential-vendors) sul fornitore designato come di default se l'articolo analizzato in *Generazione commesse di produzione* ha come *Tipo approvvigionamento*: *Acquisto* o *Conto Lavoro*, e il lotto economico di produzione inserito nei [Parametri MRP](/docs/configurations/parameters/production/mrp-parameters/search-mrp-parameters) se l'articolo oggetto della commessa ha come *Tipo Approvvigionamento* 'Produzione'.       
+**Compute quantity according to item EOQ**: if activated, this flag ensures that the procedure generates the production job order considering the economic purchase lot entered in the [Preferential Vendors](/docs/erp-home/registers/items/create-new-items/item-registry/preferential-vendors) tab on the vendor designated as default, if the item analyzed in the *Production Job Order Generation* has *Procurement Type* as *Purchase* or *Subcontractor*, and the economic production lot entered in the [MRP Parameters](/docs/configurations/parameters/production/mrp-parameters/search-mrp-parameters) if the item subject to the job order has *Procurement Type* as *Production*. 
 
-**Calcolo quantità in base ai multipli dell'articolo**: se attivato, questo flag fa in modo che la procedura generi la commessa di produzione considerando anche i multipli del lotto economico di acquisto inserito nel tab fornitori preferenziali sul fornitore designato come di default degli articoli se l'articolo oggetto della commessa ha come *Tipo Approvvigionamento* *Acquisto* o *Conto Lavoro*, e i multipli del lotto economico di produzione inserito nei  [Parametri MRP](/docs/configurations/parameters/production/mrp-parameters/search-mrp-parameters)  se l'articolo analizzato in G*enerazione commesse di produzione* ha come *Tipo Approvvigionamento*: *Produzione*. Ovviamente questo flag può essere attivato solo se risulti attivo il flag di cui al paragrafo precedente.              
+**Compute quantity according to items multiples**: if activated, this flag ensures that the procedure generates the production job order also considering the multiples of the economic purchase lot entered in the preferential vendors tab on the vendor designated as default for the items if the item subject to the job order is of *Procurement Type* *Purchase* or *Subcontractor*, and the multiples of the economic production lot entered in the [MRP Parameters](/docs/configurations/parameters/production/mrp-parameters/search-mrp-parameters) if the item analyzed in the *Production Job Order Generation* has *Procurement Type* as *Production*. Obviously, this flag can only be activated if the flag mentioned in the previous paragraph is active.
 
-**Reintegro scorta minima dell'articolo**: se attivato, questo flag permette all'utente di fare in modo che per l'articolo analizzato in *DGenerazione commesse di produzione* sia reintegrata la scorta minima inserita nell'*Anagrafica articolo > tab Approvvigionamento*.    
+**Replenish item minimum stock**: if activated, this flag allows the user to ensure that for the item analyzed in the *Production Job Order Generation*, the minimum stock indicated in the *Item Registry > Procurement tab* is replenished.
 
-**Reintegro punto di riordino dell'articolo**: se attivato, questo flag permette all'utente di fare in modo che per l'articolo analizzato in *Generazione commesse di produzione* sia reintegrato il punto di riordino inserito nell'*Anagrafica articolo > tab Approvvigionamento*.
+**Replenish item ROL**: if activated, this flag allows the user to ensure that for the item analyzed in the *Production Job Order Generation*, the reorder point indicated in the *Item Registry > Procurement tab* is replenished.
 
-**Escludi ordini in ritardo**: se attivato, questo flag permette all'utente di fare in modo che la procedura di generazione della commessa di produzione escluda dal calcolo della disponibilità dell'articolo analizzato le quantità provenienti dalle righe d'ordine cliente la cui *Data merce pronta* risulta essere precedente alla data corrente.
+**Exclude delayed orders**: if activated, this flag allows the user to ensure that the production job order generation procedure excludes from the availability calculation of the analyzed item the quantities coming from sales order lines whose *Goods Ready Date* is earlier than the current date.
 
-Una volta impostati i parametri, si potrà procedere con la creazione delle commesse, nei rispettivi tab degli [Ordini clienti](#sales-orders), del [Previsionale](#forecast) e del [Sottoscorta](#safety-stock).
+Once the parameters are set, you can proceed with creating the job orders in the respective tabs of [Sales Orders](#sales-orders), [Forecast](#forecast), and [Safety Stock](#safety-stock).
 
-*Pulsante specifico*  
-> **Formazione automatica commesse**: richiama la procedura che genera le commesse di produzione dalle righe selezionate.  
+*Specific Button*  
+> **Automatic creation of job order**: calls the procedure that generates the production job orders from the selected lines.  
 
-Per dettagli sul funzionamento comune delle form fare riferimento al link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+For details on the common functionality of the forms, refer to the link [Custom Features, Buttons, and Fields](/docs/guide/common).
