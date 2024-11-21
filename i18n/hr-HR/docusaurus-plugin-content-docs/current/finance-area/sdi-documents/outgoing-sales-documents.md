@@ -1,49 +1,40 @@
 ---
-title: Documenti Vendita in uscita
+title: Izlazni prodajni dokumenti
 sidebar_position: 2
 ---
 
-La form “**Documenti vendita in uscita**“ è divisa in due sezioni, una di testata che contiene i campi di filtro utilizzabili per filtrare i documenti e una griglia di risultato della ricerca effettuata:
+Obrazac “**Izlazni prodajni dokumenti**“ podijeljen je u dva dijela, zaglavlje koje sadrži polja za filtriranje koja se mogu koristiti za filtriranje dokumenata i mrežu rezultata provedenog pretraživanja:
 
-## Pulsanti della ribbon bar:
+## Gumbi na traci izbornika:
 
-- Ricerca: avvia la ricerca nella griglia di risultato secondo i dati presenti nei filtri della testata
-- Visualizza: apre il visualizzatore integrato per la visione del file xml secondo il foglio di stile già pre-caricato dentro Fluentis al fine di consentire la visione "in chiaro"
-- Apri documento: viene aperto il documento fattura riferito al file xml in questione
-- **Scarica allegato:** viene scaricato localmente nel pc copia del file xml al fine di gestirlo ad esempio con servizi di invio di terze parti
-- **Ricarica file:** E’ attivo quando la riga è in stato *Generata* e permette di ricaricare il file da un folder esterno (locale o di rete); utile per consentire di ricaricare un xml nel quale si è dovuto intervenire manualmente per settare qualche tag particolare o non gestito (senza dover passare per lo step *firmata* come sin passato).
-Fluentis verifica che il file abbia lo stesso nome e che l’xml sia sintatticamente corretto, ma non fa un test sulla struttura Sdi (quindi un tag sbagliato o con valori errati non riceverà nessun messaggio e non avverrà l'invio Sdi). Nel log relativo al file, (premendo ad esempio Visualizza) nel campo **Informazioni** viene riportata la dicitura che il file è stato sovrascritto manualmente e la data.
+- **Pretraži**: pokreće pretragu u mreži rezultata prema podacima prisutnim u filtrima zaglavlja
+- **Prikaži**: otvara ugrađeni preglednik za prikazivanje xml datoteke prema unaprijed učitanom stilskom listu unutar Fluentis-a kako bi se omogućilo "javno" gledanje
+- **Otvorite dokument**: otvara dokument računa povezan s odabranom xml datotekom
+- **Preuzmi privitak**: preuzima se lokalno na PC kopija xml datoteke kako bi se upravljalo, na primjer, s uslugama slanja trećih strana
+- **Ponovno učitaj datoteku**: aktivan je kada je redak u stanju *Generirana* i omogućuje ponovno učitavanje datoteke iz vanjske (lokalne ili mrežne) mape; korisno za ponovno učitavanje xml-a u kojem je ručno potrebno postaviti određenu oznaku ili neurednu oznaku (bez prolaska kroz korak *potpisana* kao u prošlosti). Fluentis provjerava da li datoteka ima isto ime i da li je xml sintaktički ispravan, ali ne provodi test na Sdi strukturi (dakle, pogrešna oznaka ili oznaka s netočnim vrijednostima neće primiti nikakvu poruku i neće se poslati Sdi). U logu vezanom uz datoteku, (pritiskom na primjer Prikaži) u polju **Informacije** prikazat će se izjavu da je datoteka ručno prepisana i datum.
 
+## Vrijednosti prikazane u mreži su: 
 
-## Valori presentati nella griglia:
+- **Sdl status**: status dokumenta koji se odnosi na njegovo slanje u Sdl putem Fluentis Business Huba
 
--      **Stato SdI**: lo stato del documento relativo al suo invio al SdI tramite Fluentis Business Hub
+- **Vrsta**: referentna šifra vrste prodajnog dokumenta
 
--      **Tipo**: il codice di riferimento del tipo documento di vendita
+- **Datum, Broj, Kupac**: datum, broj dokumenta i registrirani kupac
 
--      **Data**,**Numero,Cliente :** la data, il numero del documento e il cliente intestatario
+- **Datum primitka kupca**: datum dostave dokumenta kupcu ili datum "stavljanja na raspolaganje" dokumenta u rezerviranom prostoru kupca. Ovaj zadnji slučaj odnosi se na pošiljke za koje ES ne može točno identificirati klijenta/primatelja
 
--      **Data di ricevimento del cliente**: la data consegna del documento al cliente oppure la data di “messa a disposizione” del documento sull'area riservata del cliente. Quest'ultima casistica si riferisce agli invii per cui il SdI non riesce ad individuare correttamente il committente/cessionario
+- **SdI naziv datoteke:** naziv datoteke i naziv XML datoteke koja se stvara kada se dokument pomakne u stanje GENERIRANO; u izvornom formatu ili nakon digitalnog potpisa, predstavlja datoteku računa koja se šalje SdI-u.
 
--      **Nome file SdI:** il nome del file il nome del file XML che viene creato nel momento in cui il documento viene avanzato nello stato GENERATA; nel formato originale o successivamente all'apposizione della firma digitale, rappresenta il file di fattura da inviare a SdI.
+- **Datum zadnjeg događaja**: odnosi se na zadnju radnju koju je izvršio operater ili posljednju obavijest primljenu od Sdl-a tijekom procesa upravljanja dokumentima
 
--      **Data ultimo evento**: si riferisce all'ultima azione compiuta dall'operatore o all'ultima notifica ricevuta dal SdI durante il processo di gestione del documento
-
-Cliccando in corrispondenza dell'expander di una fattura (pulsantino + all'estrema sinistra)  si apre il dettaglio delle transizioni relative agli stati del documento e vengono visualizzate le singole transizioni intervenute nella gestione del documento con la relativa data di esecuzione e il nome dell'eventuale file generato dal cambio stato:
+Klikom na ekspander računa (tipka + krajnje lijevo) otvara se detalj prijelaza koji se odnose na stanja dokumenta te se prikazuju pojedinačni prijelazi koji su se dogodili u vođenju dokumenta s pripadajućim datumom izvršenja i naziv fakture bilo koje datoteke generirane promjenom stanja: 
 
 ![](/img/it-it/finance-area/sdi-documents/outgoing-sales-documents/image02.png)
 
-I documenti presentati nella griglia Registro dei documenti SdI sono tutti quelli creati dal flusso attivo di gestione dei documenti Fattura, indipendentemente dallo stato; l'azione doppio click in corrispondenza di una riga di fattura apre il pannello  nel quale è possibile visionare i documenti creati durante la gestione del file fattura e lo storico delle transizioni.
+Dokumenti predstavljeni u rešetki Registra dokumenata SdI su svi oni koji su kreirani aktivnim tokom upravljanja dokumentima fakture, bez obzira na status; dvostruki klik na retku fakture otvara panel u kojem je moguće pregledati dokumente nastale tijekom upravljanja fakturnom datotekom i povijest prijelaza.
 
 ![](/img/it-it/finance-area/sdi-documents/outgoing-sales-documents/image03.png)
 
-Nella griglia Registro documenti SdI, selezionando un documento fattura o più documenti fattura nel medesimo stato, è possibile gestire lo stato di lavorazione del documento utilizzando la combo Stato nella ribbon menu e selezionando il nuovo stato del documento:
+U mreži Registra dokumenata SdI, odabirom dokumenta fakture ili više dokumenata fakture u istom statusu, moguće je upravljati statusom obrade dokumenta pomoću kombinacije Status na traci izbornika i odabirom novog statusa dokumenta:
 
 ![](/img/it-it/finance-area/sdi-documents/outgoing-sales-documents/image04.png)
-
-
-
-
-
-
-
