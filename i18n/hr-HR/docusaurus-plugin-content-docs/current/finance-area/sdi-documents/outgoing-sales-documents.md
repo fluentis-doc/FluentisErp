@@ -1,50 +1,40 @@
 ---
-title: Documenti Vendita in uscita
+title: Izlazni prodajni dokumenti
 sidebar_position: 2
 ---
 
-LINK:
+Obrazac “**Izlazni prodajni dokumenti**“ podijeljen je u dva dijela, zaglavlje koje sadrži polja za filtriranje koja se mogu koristiti za filtriranje dokumenata i mrežu rezultata provedenog pretraživanja:
 
-** [Documenti acquisto in entrata](/docs/finance-area/sdi-documents/incoming-purchase-documents) **
+## Gumbi na traci izbornika:
 
-Comunicazioni IVA in uscita
+- **Pretraži**: pokreće pretragu u mreži rezultata prema podacima prisutnim u filtrima zaglavlja
+- **Prikaži**: otvara ugrađeni preglednik za prikazivanje xml datoteke prema unaprijed učitanom stilskom listu unutar Fluentis-a kako bi se omogućilo "javno" gledanje
+- **Otvorite dokument**: otvara dokument računa povezan s odabranom xml datotekom
+- **Preuzmi privitak**: preuzima se lokalno na PC kopija xml datoteke kako bi se upravljalo, na primjer, s uslugama slanja trećih strana
+- **Ponovno učitaj datoteku**: aktivan je kada je redak u stanju *Generirana* i omogućuje ponovno učitavanje datoteke iz vanjske (lokalne ili mrežne) mape; korisno za ponovno učitavanje xml-a u kojem je ručno potrebno postaviti određenu oznaku ili neurednu oznaku (bez prolaska kroz korak *potpisana* kao u prošlosti). Fluentis provjerava da li datoteka ima isto ime i da li je xml sintaktički ispravan, ali ne provodi test na Sdi strukturi (dakle, pogrešna oznaka ili oznaka s netočnim vrijednostima neće primiti nikakvu poruku i neće se poslati Sdi). U logu vezanom uz datoteku, (pritiskom na primjer Prikaži) u polju **Informacije** prikazat će se izjavu da je datoteka ručno prepisana i datum.
 
-** [Documenti esteri in uscita](/docs/finance-area/sdi-documents/outgoing-foreign-purchase-documents) **
+## Vrijednosti prikazane u mreži su: 
 
-La form “**Documenti vendita in uscita**“ è divisa in due sezioni, una di testata che contiene i campi di filtro utilizzabili per filtrare i documenti e una griglia di risultato della ricerca effettuata:
+- **Sdl status**: status dokumenta koji se odnosi na njegovo slanje u Sdl putem Fluentis Business Huba
 
-![](/img/it-it/finance-area/sdi-documents/outgoing-sales-documents/image01.png)
+- **Vrsta**: referentna šifra vrste prodajnog dokumenta
 
-I valori presentati nella griglia sono:
+- **Datum, Broj, Kupac**: datum, broj dokumenta i registrirani kupac
 
--      **Stato SdI**: lo stato del documento relativo al suo invio al SdI tramite Fluentis Business Hub
+- **Datum primitka kupca**: datum dostave dokumenta kupcu ili datum "stavljanja na raspolaganje" dokumenta u rezerviranom prostoru kupca. Ovaj zadnji slučaj odnosi se na pošiljke za koje ES ne može točno identificirati klijenta/primatelja
 
--      **Tipo**: il codice di riferimento del tipo documento di vendita
+- **SdI naziv datoteke:** naziv datoteke i naziv XML datoteke koja se stvara kada se dokument pomakne u stanje GENERIRANO; u izvornom formatu ili nakon digitalnog potpisa, predstavlja datoteku računa koja se šalje SdI-u.
 
--      **Data**,**Numero,Cliente :** la data, il numero del documento e il cliente intestatario
+- **Datum zadnjeg događaja**: odnosi se na zadnju radnju koju je izvršio operater ili posljednju obavijest primljenu od Sdl-a tijekom procesa upravljanja dokumentima
 
--      **Data di ricevimento del cliente**: la data consegna del documento al cliente oppure la data di “messa a disposizione” del documento sull'area riservata del cliente. Quest'ultima casistica si riferisce agli invii per cui il SdI non riesce ad individuare correttamente il committente/cessionario
-
--      **Nome file SdI:** il nome del file il nome del file XML che viene creato nel momento in cui il documento viene avanzato nello stato GENERATA; nel formato originale o successivamente all'apposizione della firma digitale, rappresenta il file di fattura da inviare a SdI.
-
--      **Data ultimo evento**: si riferisce all'ultima azione compiuta dall'operatore o all'ultima notifica ricevuta dal SdI durante il processo di gestione del documetno
-
-Cliccando in corrispondenza dell'expander di una fattura (pulsantino + all'estrema sinistra)  si apre il dettaglio delle transizioni relative agli stati del documento e vengono visualizzate le singole transizioni intervenute nella gestione del documento con la relativa data di esecuzione e il nome dell'eventuale file generato dal cambio stato:
+Klikom na ekspander računa (tipka + krajnje lijevo) otvara se detalj prijelaza koji se odnose na stanja dokumenta te se prikazuju pojedinačni prijelazi koji su se dogodili u vođenju dokumenta s pripadajućim datumom izvršenja i naziv fakture bilo koje datoteke generirane promjenom stanja: 
 
 ![](/img/it-it/finance-area/sdi-documents/outgoing-sales-documents/image02.png)
 
-I documenti presentati nella griglia Registro dei documenti SdI sono tutti quelli creati dal flusso attivo di gestione dei documenti Fattura, indipendentemente dallo stato; l'azione doppio click in corrispondenza di una riga di fattura apre il pannello  nel quale è possibile visionare i documenti creati durante la gestione del file fattura e lo storico delle transizioni.
+Dokumenti predstavljeni u rešetki Registra dokumenata SdI su svi oni koji su kreirani aktivnim tokom upravljanja dokumentima fakture, bez obzira na status; dvostruki klik na retku fakture otvara panel u kojem je moguće pregledati dokumente nastale tijekom upravljanja fakturnom datotekom i povijest prijelaza.
 
 ![](/img/it-it/finance-area/sdi-documents/outgoing-sales-documents/image03.png)
 
-Nella griglia Registro documenti SdI, selezionando un documento fattura o più documenti fattura nel medesimo stato, è possibile gestire lo stato di lavorazione del documento utilizzando la combo Stato nella ribbon menu e selezionando il nuovo stato del documento:
+U mreži Registra dokumenata SdI, odabirom dokumenta fakture ili više dokumenata fakture u istom statusu, moguće je upravljati statusom obrade dokumenta pomoću kombinacije Status na traci izbornika i odabirom novog statusa dokumenta:
 
 ![](/img/it-it/finance-area/sdi-documents/outgoing-sales-documents/image04.png)
-
-Selezionando una fattura dalla griglia, con la funzione **![](/img/it-it/finance-area/sdi-documents/outgoing-sales-documents/image05.png) Apri documento**  dal ribbon menu, viene aperto il documento fattura
-
-
-
-
-
-
