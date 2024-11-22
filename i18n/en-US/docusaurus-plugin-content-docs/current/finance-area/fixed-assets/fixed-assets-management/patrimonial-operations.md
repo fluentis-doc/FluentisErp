@@ -1,45 +1,179 @@
 ---
-title: Patrimonial Operations
+title: Operazioni patrimoniali
 sidebar_position: 2
 ---
 
-Once having saved header data it will be possible to activate the following tabulators: within the 'Patrimonial Operations' tab there are details of different operations to fixed asset journal. The first line will be related to the initial purchase of fixed asset: operation date, its progressive number and the following amount inserted into the related column (possibly, if there is the quantity management, also the fixed assets quantity related to this total value). On the right of the grid there are customer/vendor detail account field and other references of the operation. In case of a load of an historic fixed asset, the amount of depreciation funds, already calculated, has not to be inserted directly on this section but  it has to be reported on section below with 'accounted' status in order to be recalculated by the ERP.
+All'interno della presente scheda si inseriscono i dettagli delle varie operazioni a libro cespite. 
 
-The central grid shows the list of depreciations calculated for fixed asset: the insertion can be manual or automatic. The manual insertion provides for the indication of reference year, reference progressive line number (but always for not incremental categories, for the others the field is hided because the depreciation will be always linked to the progressive number 1), depreciation type to be applied: at this point, the ERP will consider settings of reference fixed asset category with account and detail account percentage of application and amounts, values that can be force and edit independently. At the end of the grid there is the reference depreciation date, proposed as end date of accounting period and lastly, the amounts of the deductible or not deductible amount of the depreciation. The automatic insertion provides for the definition of the reference year in the upper field of the grid and the use of management button as 'Execute Automatic Depreciation' that will report data of depreciations provided for in the category for all the fixed asset in use.
-
-The depreciation calculation will be reported on 'Already Depreciated' column of the upper grid to indicate a not definitive amount: only thanks to the indication of 'accounted' flag in the various lines the upper amounts will be attributed to the fund column related to the same depreciation typology. The manual insertion of flag DOES NOT perform a ledger record (for which there is the procedure regarding depreciations accounting). Usually it is necessary to use it for the manual initial load of the historic situation, for which the user performs the insertion of the total amount amortized corresponding to the previous year compared to the year previous than the start use of the ERP and not about all the depreciation detail.
-
-During the saving of line with 'accounted' flag, the ERP will ask the user to connect a ledger record, that already exists, message that has usually a negative answer (in case of historical data retrieve). The fiscal depreciation flag provides for the fiscal management of depreciation line: it is proposed according to the same flag of the fixed asset category. In some cases it can be used manually in order to detect the anticipated depreciations used on the ordinary balance sheet as regards fiscal depreciations to be managed only for tax calculation. On the contrary, the fiscal management can be obtained through the valorization of fields with deductible/not deductible amounts of depreciation, valorized automatically according to the deductibility percentage associated to the fixed asset or to its category.
-
-In the last section there is the valorization detail to cost centre/sales job orders of depreciations selected in the second grid.
-
-RIBBON BAR: it represents the Form menu, that is the area in which it is possible to perform actions linked to the fixed asset in management. The list of features is the following:
-
-
-
-| Function | Meaning |
+ | Funzione | Significato |
 | --- | --- |
-| New Operation | It activates the cursor in the first grid of patrimonial operations. |
-| Delete Operation | It deletes the selected operation on the patrimonial operation grid. |
-| New Depreciation | It activates the cursor on the second depreciations grid. |
-| Delete Depreciation | It deletes the selected depreciation on the depreciations grid. |
-| Execute Automatic Depreciation | It calculates the fixed asset depreciation in use for the year set on field immediately above the depreciations grid. |
-| Insert C.C. | It activates the cursor on cost centre grid. |
-| Delete C.C. | It deletes the movement of the selected cost centre on grid. |
-| Calculate Cost Centres | It performs the calculation of cost centres for value of the selected depreciation line. |
-| Insert Job Orders | It activates the cursor on job orders grid. |
-| Delete Job Orders | It deletes the job order calculation selected on grid. |
-| Calculate Job Orders | It performs the job order calculation for value of the selected depreciation line. |
-| Revaluation Details | It opens the revaluation details management. The button is active only if 'revaluations' flag is set for the fixed asset category in use. See application a. |
-| Documents | Management of document storage associated to the mask in use. |
+| Nuova operazione | Attiva il cursore nella prima griglia delle operazioni patrimoniali. |
+| Cancella operazione | Cancella l'operazione selezionata nella griglia dell'operazione patrimoniale. |
+| Nuovo ammortamento | Attiva il cursore nella seconda griglia degli ammortamenti. |
+| Cancella ammortamento | Cancella l'ammortamento selezionato nella griglia ammortamenti. |
+| Esegue ammortamento automatico | Calcola l'ammortamento del cespite in uso per l'anno impostato nel campo immediatamente sopra la griglia ammortamenti. |
+| Inserimento cdc | Attiva il cursore nella griglia dei centri di costo. |
+| Cancella cdc | Cancella il movimento del centro di costo selezionato nella griglia. |
+| Calcolo centri di costo | Esegue il calcolo dei centri di costo per il valore della riga ammortamento selezionata. |
+| Inserimento commesse | Attiva il cursore nella griglia delle commesse. |
+| Cancella commesse | Cancella il calcolo commessa selezionato in griglia. |
+| Calcolo commesse | Esegue il calcolo della commessa per il valore della riga ammortamento selezionata. |
+| Dettagli rivalutazione | Apre la gestione dei dettagli di rivalutazione. Il pulsante è attivo solo se il flag ‘rivalutazioni' è impostato per la categoria del cespite in uso. Vedi applicazione a. |
+| Documenti | Gestione dell'archiviazione documentale associata alla maschera in uso. |
 
-Applications:
+### GRIGLIA SUPERIORE
+
+La prima riga sarà sicuramente relativa all'acquisto iniziale del cespite: la **data dell'operazione**, il suo numero **progressivo** e il successivo **importo** inserito nella colonna relativa: 
+
+**Costo originario**: se l'importo è relativo ad una operazione di acquisto e rappresenta dunque il costo storico;
+
+**Alienazione**: se l'importo si riferisce ad una alienazione totale e rappresenta il valore di vendita;
+
+**Alienazione parziale**: se l'importo si riferisce ad una alienazione parziale e rappresenta il valore di vendita;
+
+ 
+
+Se è attiva la gestione delle quantità, deve essere valorizzato anche il campo **quantità**.
+
+ 
+:::danger NOTA:
+Nel caso del caricamento di un cespite storico preesistente l'importo dei fondi ammortamento già calcolati **NON** deve essere inserito direttamente in questa sezione ma riportato nella sezione sottostante (inserendo il valore totale dell'ammortamento accumulato in un' unica quota ammortamento con anno pari all'anno precedente la data di inserimento) **con stato *Contabilizzato*** tramite spunta del flag corrispondente per far si che questa sezione sia ricalcolata dall'ERP. **Si veda il video tutorial corrispondente**
+:::
+
+**![](/img/it-it/finance-area/fixed-assets/fixed-assets-management/patrimonial-operations/image01.png)**
+
+Inserendo una riga relativa ad una operazione patrimoniale (es. acquisto, ma anche alienazione) ed impostando il relativo importo nella colonna adeguata (es. costo originario in caso di acquisto), si nota che i campi evidenziati in giallo vengono aggiornati in automatico dal programma.
+
+**Importo da ammortizzare**: valore di "carico" (acquisto o comunque costo storico caricato) sul quale calcolare l'ammortamento;
 
 
- 1. Revaluation Details: on revaluation details mask it is possible to insert any details of revaluation values (amount origin and revaluation amount, fund and amount of the revalued fund) of fixed asset in use, with particular reference to the revaluation type established on table.
+**Valore contabile**: Costo storico - Fondo ammortamento accumulato;
+
+
+**Già ammortizzato**: Valore provvisorio che sarà aggiornato al momento del calcolo dell'ammortamento e poi sarà nuovamente azzerato aggiornando il totale dell'ammortamento accumulato (nel momento della contabilizzazione ammortamento).
 
 
 
+### GRIGLIA CENTRALE Ammortamenti:
+
+presenta la lista degli ammortamenti calcolati per il cespite: l'inserimento può essere manuale oppure automatico. 
+
+- L'inserimento manuale prevede l'indicazione dell'anno di riferimento, del numero riga progressivo di riferimento (ma solo per categorie non incrementali, per le altre il campo è nascosto in quanto l'ammortamento sarà sempre collegato al progressivo 1), il tipo di ammortamento da applicare: a questo punto l'ERP riporterà le impostazioni della categoria cespite di riferimento, con un conto e sottoconto per la contabilizzazione della quota, la percentuale e gli importi (valori che si possono forzare e modificare a piacimento). Alla fine della griglia è presente la data di riferimento dell'ammortamento, proposta come la fine esercizio dell'anno contabile di riferimento della riga, e infine gli importi della quota deducibile e indeducibile dell'ammortamento. 
+
+![](/img/it-it/finance-area/fixed-assets/fixed-assets-management/patrimonial-operations/image02.png)
 
 
+- L'inserimento automatico prevede la definizione dell'anno di riferimento nel campo superiore alla griglia e l'uso del pulsante di gestione *Esegue ammortamento automatico* che andrà a riportare i dati degli ammortamenti previsti in categoria per tutto il cespite in uso.
+
+![](/img/it-it/finance-area/fixed-assets/fixed-assets-management/patrimonial-operations/image03.png)
+
+![](/img/it-it/finance-area/fixed-assets/fixed-assets-management/patrimonial-operations/image04.png)
+
+![](/img/it-it/finance-area/fixed-assets/fixed-assets-management/patrimonial-operations/image05.png)
+
+ 
+
+Il calcolo dell'ammortamento sarà riportato nella colonna ***Già ammortizzato*** della griglia superiore che servirà ad indicare un importo non ancora definitivo: solo con l'indicazione del flag ***Contabilizzato***, nelle varie righe, gli importi superiori saranno attribuiti alla colonna del fondo relativo alla tipologia dell'ammortamento stesso. 
+
+![](/img/it-it/finance-area/fixed-assets/fixed-assets-management/patrimonial-operations/image06.png)
+
+ 
+
+![](/img/it-it/finance-area/fixed-assets/fixed-assets-management/patrimonial-operations/image07.png)
+
+![](/img/it-it/finance-area/fixed-assets/fixed-assets-management/patrimonial-operations/image08.png)
+
+ 
+:::danger Nota
+L'inserimento manuale del flag **NON** effettua una registrazione in contabilità (per questo c'è la procedura di contabilizzazione ammortamenti): si utilizza normalmente solo per il caricamento manuale iniziale della situazione storica, per la quale, di norma, si effettua un inserimento unico dell'importo totale ammortizzato all'anno precedente all'inizio dell'uso del gestionale e non di tutto il dettaglio dell'ammortamento. 
+:::
+
+Al salvataggio della riga con flag *Contabilizzato*, Fluentis chiederà se si vuole collegare una registrazione contabile già esistente, messaggio al quale normalmente (in caso di ripresa di dati storici) si risponde negativamente. 
+
+Il flag di Ammortamento fiscale prevede la gestione fiscale della riga ammortamento: viene proposto sulla base dello stesso flag previsto in categoria cespite. In qualche caso può essere utilizzato manualmente per rilevare a libro cespiti, il giro degli ammortamenti anticipati utilizzati nel bilancio ordinario ad ammortamenti fiscali da gestire solo per il calcolo della tassazione. La gestione fiscale, invece, si ha attraverso la valorizzazione dei campi con gli importi deducibili/indeducibili dell'ammortamento, valorizzati automaticamente sulla base della percentuale di deducibilità associata al cespite o alla sua categoria.
+
+Nell'ultima sezione è presente il dettaglio di valorizzazione a centro di costo degli ammortamenti selezionati nella seconda griglia.
+
+
+### Caricamento di un cespite pregresso
+
+Per inserire nel sistema i cespiti già esistenti al momento dell’inizio delle registrazioni, con la relativa
+situazione del fondo ammortamento operare come segue:
+1. Inserire una nuova scheda cespite con i dati anagrafici del cespite: descrizione, categoria ecc… (tab *Dettaglio*) e
+porre attenzione alla **data inizio attività** che deve essere quella storica
+
+2. Nella tab *Operazioni patrimoniali* inserire il costo storico indicando la data di acquisto e compilando
+il campo **Costo originario**
+
+3. **NON** compilare manualmente il campo *Fondo ammortamento* nella riga (altrimenti verrebbe
+sovrascritto al prossimo ammortamento), ma inserire una riga (sotto) nella griglia Ammortamenti
+con anno uguale all’ anno precedente a quello di inserimento ed il totale degli ammortamenti già
+calcolati. E mettere il flag contabilizzato. L’ammortamento si deve inserire nel campo costo
+(imponendolo indipendentemente dagli altri campi precedenti)
+
+
+### Gestione dell'alienazione cespite (casi di alienazione parziale)
+
+#### Caso del cespite già ammortizzato
+Esempio valido se il cespite non è stato gestito tramite componenti o incrementi ma in maniera indivisa
+
+1. La scrittura contabile automatica non viene gestita, quindi si può anche gestire il cespite da dentro
+la scheda e poi fare la scrittura Fondo amm. a Cespite separatamente.
+2. Per scaricare il cespite parzialmente inserire un importo negativo nella colonna del fondo per un
+valore corrispondente alla quota del costo storico ceduto o distrutto.
+3. Nella colonna Alienazione parziale indicare (**sempre**) il valore al quale viene ceduto (o 0,00 se distrutto)
+4. La colonna costo originario ceduto si aggiornerà automaticamente.
+
+
+#### Caso del cespite NON completamente ammortizzato
+
+Situazione iniziale
+
+![](/img/it-it/finance-area/fixed-assets/fixed-assets-management/patrimonial-operations/selling1.png)
+
+Per scaricare il cespite parzialmente inserire un importo negativo nella colonna del fondo per un valore
+corrispondente alla quota del fondo accantonato proporzionale al costo storico ceduto o distrutto.
+
+Nella colonna Alienazione parziale indicare il valore al quale viene ceduto (o 0,00 se distrutto, in questo
+caso si può indicare il valore anche nella colonna Distruzione)
+La colonna costo originario ceduto si aggiornerà automaticamente.
+
+Il calcolo che viene fatto nella colonna costo originario ceduto tiene conto anche della plus / minusvalenza
+di cessione, che dovrà essere inserita tenendo conto della quota parte di valore netto contabile che viene
+ceduto.
+
+**Esempio 1:**
+Costo storico 1000, ammortizzato per 125
+Ne vendo la metà al prezzo di 200
+
+Rettifico il fondo accantonato per la metà, quindi -62,50 e ho un valore di vendita (attenzione a compilare
+la colonna Alienazione parziale, altrimenti se compilo alienazione totale forza a scaricare tutto il costo
+storico) di 200.
+
+Quindi dovrò calcolare la minusvalenza da inserire sulla base della metà del valore netto contabile, quindi
+875 / 2 = 437,50
+Minusvalenza = 437,50 – 200 = 237,50
+
+Il campo Costo originario ceduto si calcola automaticamente a 500 che è il costo storico effettivamente
+scaricato dal libro cespiti per la metà.
+
+
+![](/img/it-it/finance-area/fixed-assets/fixed-assets-management/patrimonial-operations/selling2.png)
+
+**Esempio 2:**
+Costo storico 1000, ammortizzato per 125
+Ne smaltisco la metà a prezzo 0,00
+
+Rettifico il fondo accantonato per la metà, quindi -62,50 e ho un valore di vendita (attenzione a compilare
+la colonna Alienazione parziale, altrimenti se compilo alienazione totale forza a scaricare tutto il costo
+storico) di 0,00.
+
+Quindi dovrò calcolare la minusvalenza da inserire sulla base della metà del valore netto contabile, quindi
+875 / 2 = 437,50
+Minusvalenza = 437,50 – 0 = 437,50
+
+Il campo Costo originario ceduto si calcola automaticamente a 500 che è il costo storico effettivamente
+scaricato dal libro cespiti per la metà.
+
+![](/img/it-it/finance-area/fixed-assets/fixed-assets-management/patrimonial-operations/selling3.png)
 

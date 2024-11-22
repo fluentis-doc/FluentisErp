@@ -1,38 +1,59 @@
 ---
-title: Detail
+title: Dettaglio
 sidebar_position: 1
 ---
 
-Let us to see the 'Detail' section: the fixed asset status is managed automatically by the ERP according to the operations linked to the fixed asset and this procedure has not to be forced. The activity start date, proposed as current date, corresponds to the date on which the fixed asset is entered in the company: only starting from this date it will be possible to amortize it. The activity end date usually is not set, except in special cases, in order to block the depreciation calculation and not to view the fixed asset more: on the normal management, to the completion of the residual depreciation, the fixed asset will not be amortized more. The following dates related to the guarantees have not a specific management: it regards available fields in oder to record these elements.
-
-On **Fixed Asset** field it is possible to record automatically the patrimonial detail account for the selected fixed asset category; the following code of vendor is not managed automatically by the program, because reference vendors and customers of the various operations will be indicated specifically within these ones. The cost detail account references to the detail of cost chart of accounts, usually not used.
-
-**Location and matrix** are free textual fields where it is possible to note location and matrix of the fixed asset; the employee code enables the user to record the subject that is using the fixed asset.
-
-According to the parameters settings, it is possible to view a civil depreciation percentage 'personalized' for the single fixed asset, to be used in priority to the one of the belonging category and also the unit of measure for quantities valorized in the fixed asset card.
-
-On **deductibility** field it is possible to associate the single fixed asset on its fiscal deductibility priority type of its depreciations.
-
-The **cost centres/sales job orders** section can be activated only after having saved the fixed asset register: it enables the user to attribute a percentage structure of automatic valorization of depreciations to the various cost centres/sales job order set in the company.
-
-Then there is a series of check boxes: default of fixed asset **in use** (if there is not the flag, the fixed asset will not be amortized), fixed asset status **used** (if flag is set, the anticipated depreciation will be applied only on the first purchase and the **first year depreciation** flag will not have effect, for this reason on the first year the application percentages of depreciations will not be reduced); 
-
-**in maintenance** means that the fixed asset is to be recorded in maintenances report; 
-
-**Loaned** is an active flag only for immaterial fixed asset categories and it is necessary to exclude the report to fixed assets journal in case that patrimonial value has been eliminated from the budget (direct depreciation in account and not to fund); 
-
-**Total Depreciation** enables the user to attribute the 100% depreciation to the fixed asset directly to the first year: during the saving of fixed asset, the ERP will verify the correctness of this setting in respect to the limit set on the fixed asset category; it is possible to view the printed or not fixed asset status, that indicates that the header references of fixed asset cannot be edited in case that this has already been inserted in a definitive report of depreciable fixed asset journal. 
-
-In conclusion, the **system for assessing income** and **sector studies** in order to identify the fixed assets to be considered for these tax compliances.
-
-RIBBON BAR: it represents the Form menu, that is the area in which it is possible to perform actions linked to the fixed asset in management. The list of features is the following:
+**Stato cespite**: viene gestito automaticamente sulla base delle operazioni collegate al cespite e non va forzato. In caso di cespite pregresso inserendo anche il fondo ammortamento lo stato passerà a Parzialmente/Totalmente ammortizzato. Per il corretto inserimento di un cespite pregresso vedere  [**l'allegato all'articolo sulla registrazione contabile di un cespite**.](/docs/finance-area/ledger-records/records/create-ledger-record/fixed-assets-tab) 
 
 
 
-| Function | Meaning |
+La **data d'inizio attività**, proposta come data odierna, è la data alla quale il cespite è effettivamente entrato in uso nella società: solo a partire da questa data sarà possibile ammortizzare il cespite. La **data di fine attività** normalmente non va impostata se non in casi particolari per bloccare il calcolo dell'ammortamento e non visualizzare più il cespite a libro cespiti: nella gestione normale, infatti, al completamento dell'ammortamento residuo il cespite non sarà comunque più ammortizzato. Le **date** relative alle **garanzie** hanno una funzione informativa non collegata ad alcun automatismo.
+
+
+
+Nel campo **Cespite** viene riportato automaticamente il sottoconto patrimoniale di riferimento per la categoria cespite selezionata; il successivo codice del fornitore non viene gestito automaticamente dal programma, in quanto i fornitori e i clienti di riferimento delle varie operazioni saranno indicati specificatamente all'interno di queste. Il sottoconto industriale fa riferimento in dettaglio del piano dei conti industriale, normalmente non utilizzato.
+
+Il campo **Ubicazione** richiama la tabella omonima e serve per memorizzare dove si trova fisicamente il cespite (ad es. una sede aziendale) mentre **Matricola** è un campo testuale libero, dove annotare l'ubicazione e la matricola del cespite; il codice **dipendente** può consentire di memorizzare il soggetto che ha in uso il cespite.
+
+A seconda delle impostazioni dei parametri (Configurazione > Utilità > Parametri Cespiti), può essere visibile inoltre una **percentuale di ammortamento** civile 'personalizzata' per il singolo cespite, da utilizzare in via prioritaria rispetto a quella della categoria d'appartenenza come anche l'unità di misura per le quantità valorizzate nella scheda cespite.
+
+![](/img/it-it/finance-area/fixed-assets/fixed-assets-management/detail/image01.png)
+
+![](/img/it-it/finance-area/fixed-assets/fixed-assets-management/detail/image02.png)
+
+ 
+
+Nel campo **Tipi Deducibilità** si può associare al singolo cespite il suo tipo prioritario di deducibilità fiscale degli ammortamenti. La combo box rinvia alla specifica tabella dove codificare il codice e descrizione dei possibili tipi di deducibilità e nella griglia inferiore la relativa percentuale di deducibilità che sarà utilizzata, durante il calcolo della quota di ammortamento, per calcolare la quota deducibile fiscalmente. I campi data inizio / data fine permettono di gestire eventuali cambiamenti di aliquota tenendo traccia dei precedenti.
+
+La sezione dei **Centri di costo**: consente di attribuire una percentuale di valorizzazione automatica degli ammortamenti ai vari centri di costo definiti nella società.
+Per abilitarne la lettura occorre attivare, all'interno della form Parametri > Amministrazione > Parametri cespiti, il **flag Abilitazione centro contabilità**
+
+![](/img/it-it/finance-area/fixed-assets/fixed-assets-management/detail/image03.png)
+
+ 
+
+Sono poi presenti una serie di check box visibili aprendo l'Expander Extra Data: 
+
+![](/img/it-it/finance-area/fixed-assets/fixed-assets-management/detail/image04.png)
+
+ 
+
+il default del cespite **in uso** (se il flag non è presente, il cespite non potrà essere ammortizzato), lo stato di cespite **usato** (se il flag è impostato, l'ammortamento anticipato sarà applicato solo il primo anno di acquisto e il flag Ammortamento primo anno (presente nella tabella delle ** [Categorie cespiti](/docs/configurations/tables/finance/fixed-asset-category) **) non avrà effetto, per cui le percentuali di applicazione  degli ammortamenti del primo anno non saranno dimezzate); 
+
+**In manutenzione** significa che il cespite è da conteggiare nella stampa manutenzioni; 
+
+**Cessato** è un flag attivo solo per categorie cespiti immateriali e serve ad escluderne la stampa a libro cespiti nel caso in cui il valore patrimoniale sia stato stornato dal bilancio (ammortamento diretto in conto e non a fondo); 
+
+**Amm**. **Totale** consente di attribuire al cespite l'ammortamento al 100% direttamente al primo anno: al salvataggio del cespite ERP sarà effettuata una verifica della correttezza di questa impostazione in relazione al limite impostato in categoria cespite; sarà visibile lo stato di cespite stampato o meno, che indicherà la non modificabilità dei riferimenti di testata del cespite nel caso in cui questo sia già stato inserito in una stampa definitiva del libro cespiti ammortizzabili;
+
+Per concludere, i flag **Ricavometro** e **Studi di settore** servono per identificare i cespiti da considerare per questi adempimenti fiscali.
+
+
+
+| Funzione | Significato |
 | --- | --- |
-| Save | It saves the fixed asset, that is obligatory in order to assign a fixed asset number and activate the various tabs. |
-| Documents | Management of document storage associated to the mask in use. |
+| Salva | Salva il cespite, obbligatorio per assegnare un numero al cespite e attivare i vari tab. |
+|  [Documenti](/docs/guide/common/operations-with-data/document-manager)  | Gestione dell'archiviazione documentale associata alla maschera in uso. |
 
 
 
