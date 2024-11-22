@@ -1,20 +1,36 @@
 ---
-title: Plafond Start Management
+title: Gestione inizio Plafond
 sidebar_position: 4
 ---
 
-The first operation to be performed at the beginning of activities with program consists on loading the historical values to be used. By generating a new Plafond it is possible to open a window on which it is necessary to insert the following values: Plafond description, if this corresponds to a new Plafond or if it is an extension (mobile plafond), if it is Solar (fix) or Mobile (that are two fix fiscal options provided for plafond management). Then it is necessary to insert month and start year of plafond, and in case of an “extension” plafond it is necessary to insert also month, year and amount of the last period calculated. Lastly, it is possible to set a threshold value starting from which to advice user that the available plafond is going to be used totally.
+La prima operazione da fare è caricare i valori storici da utilizzare. 
 
-At this point the user can view the grid below, where it is possible to display data belonging to the previous twelve months: in case of a mobile plafond, it will be necessary to insert detail, month by month, because as regards each month it will be necessary to cut the 12°month and to add data belonging to the new 12° month; on the contrary, in case of solar plafond, it is possible to load the first 11 months with all zero values and to give total sales in plafond of year in the final December period directly. Once having clicked the button with the arrow towards right, the program will control data completeness and save plafond, in order to use it.
+Generando un nuovo Plafond il programma apre una finestra nella quale si devono inserire i seguenti valori di descrizione del Plafond: 
 
-RIBBON BAR: the ribbon bar represents the Form menu, that is the area on which it is possible to perform actions about a pre-existing document, rather than to create a new one. The possible features list is the following:
+![](/img/it-it/finance-area/declarations/declarations/plafond/plafond-start-management/image01.png)
+
+ 
+
+Tipo inizio Plafond: se questo è un nuovo Plafond o se è una estensione di un plafond mobile; 
+
+Tipo plafond: se è Solare (cioè fisso) oppure Mobile (sono due opzioni fiscali fisse previste per gestire il plafond). 
+
+Data inizio Plafond: è necessario inserire il mese e l'anno iniziale del plafond, e in caso di un plafond 'estensione' anche il **mese**, l'**anno** e l'**importo** dell'ultimo periodo calcolato (sezione Proprietà plafond). 
+
+**Valore di controllo**: è possibile impostare una soglia valore al fine di avvertire l'utente che sta per utilizzare il totale del plafond disponibile.
+
+A questo punto è necessario riportare nella griglia sottostante i dati dei dodici mesi precedenti: nel caso di un plafond mobile sarà necessario inserire precisamente mese per mese, in quanto ad ogni mese si dovrà togliere il 12° mese uscente e aggiungere i dati del nuovo 12°; nel caso di plafond solare, invece, si possono caricare i primi 11 mesi con tutti valori zero e dare direttamente il totale delle vendite in plafond dell'anno del periodo finale di dicembre. Il programma controllerà la completezza dei dati e salverà il plafond per poterlo, quindi, utilizzare.
+
+![](/img/it-it/finance-area/declarations/declarations/plafond/plafond-start-management/image02.png)
 
 
 
-| Function | Meaning |
+| Funzione | Significato |
 | --- | --- |
-| Save | It saves plafond data |
-| Go to Plafond | It saves the plafond and makes it definitive for the use |
+| Salva | Salva i dati del plafond. |
+| Nuovo plafond | Permette di inserire manualmente una nuova riga nella griglia di dettaglio del plafond. |
+| Cancella plafond | Esegue la cancellazione della riga selezionata dalla griglia di dettaglio del plafond. |
+| Proponi Valori | Esegue automaticamente il calcolo della riga relativa al nuovo mese a aprtire dai dati precedentemente calcolati o inseriti nelle righe superiori. |
 
 
 
