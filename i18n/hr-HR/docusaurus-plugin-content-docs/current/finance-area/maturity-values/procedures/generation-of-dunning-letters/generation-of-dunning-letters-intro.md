@@ -1,30 +1,29 @@
 ---
-title: Generazione solleciti
+title: Izrada opomena
 sidebar_position: 1
 ---
 
-Da questa maschera si procederà alla generazione solleciti con la caratteristica di poter impostare un livello di sollecito che andrà oltre l'ordine logico di priorità che invece caratterizza la generazione automatica solleciti. 
-E' possibile inoltre selezionare manualmente le partite da sollecitare dopo averle filtrate avendo di fatto un maggiore controllo sull'operazione.
+
+S ovom procedurom se također može postaviti određena razina podsjetnika koja će ići izvan nekog logičkog reda prioriteta. Također je moguće ručno odabrati dospijeća za traženje nakon što se filtriraju, čime se ima veća kontrola nad operacijom.
 
 
-Per procedere è necessario, nella parte inferiore della maschera, assegnare la data di creazione dei solleciti e selezionare il tipo di sollecito (precedentemente codificato nella tabella *Tipi solleciti*) dalla combo box.
-Opzionale è invece l'attribuzione di uno specifico livello di sollecito (tramite la combo box ***N. solleciti***), al fine di forzare la creazione oltre l'ordine logico di priorità. Normalmente, infatti, le partite mai sollecitate avranno il sollecito di priorità 1, quelle già sollecitate passeranno ad un nuovo sollecito di priorità 2 e via di seguito per le successive.
+U donjem dijelu obrasca dodijeli se datum izrade opomena i odabere vrsta opomene (prethodno kodiranu u tablici *Vrste opomena*). Međutim, dodjela određene razine opomena nije obavezna kako bi se stvaranje prisililo izvan logičkog reda prioriteta. Zapravo, obično će stavke koje nikada nisu zatražene imati podsjetnik prioriteta 1, a one koje su već zatražene premjestit će se na novi podsjetnik prioriteta 2 i tako dalje za sljedeće.
 
-La data del sollecito influisce sulla creazione inquanto deve rispettare i parametri presenti nella tipologia del sollecito e nel numero del sollecito quali i giorni di ritardo ed i *giorni* che determinano la scadenza dell'eventuale sollecito precedente.
-Se la data sollecito non è valida rispetto ai parametri per la partita selezionata, il comando di creazione non eseguirà alcun sollecito.
+Datum opomene utječe na kreiranje jer mora poštivati parametre prisutne u vrsti opomene i broju opomene kao što su dani kašnjenja i *dani* koji određuju istek svake prethodne opomene. Ako je datum opomene nevažeći s obzirom na parametre za odabranu seriju, naredba za stvaranje neće izvršiti podsjetnike.
 
-CAMPI DI FILTRO:
+POLJA FILTRA:
 
-**Conto / sottoconto:** riferito all'intestatario delle partite
+**Konto/podkonto:** odnosi se na odabir klijenta kao kupca/dobavljača
 
-**Agente:** per filtrare l’agente che è dentro l’anagrafica cliente
+**Agent:** služi za filtriranje agenta koji je u šifrarniku kupaca
 
-**Agente da partite sollecitate:** filtra le partite con l’agente inserito nella partita, dato che a sua volta si valorizza alla contabilizzazione fatture di vendita con l’agente principale presente nel documento ovvero quello con importo più alto nel caso di più agenti valorizzati.
+**Agent (dospijeća s opomenama):** filtrira dospijeća s agentom umetnutim u to dospijeće. 
 
-CAMPI RELATIVI ALLE PARTITE DA RICERCARE:
-Nr Documento, Posizione partita, Da / A Data documento, Da / A data scadenza, anno partita, numero ... Tipo documento, Categoria amministrativa (in anagrafica cliente), Tipo pagamento
+POLJA VEZANA UZ SERIJE ZA PRETRAŽIVANJE:
+Broj dokumenta/Status dospijeća plaćanja, Od/Do Datum dokumenta, Od/Do datum dospijeća, godina dospjele vrijednosti, broj ... Vrsta dokumenta, Administrativna kategorija (u bazi podataka korisnika), Način plaćanja.
 
-CAMPI RELATIVI AI RIFERIMENTI SOLLECITO PRECEDENTE SU PARTITE GIA? SOLLECITATE
-Tipo Sollecito, DA / A data sollecito, DA / A Data scadenza (sollecito), Numero sollecito, Riferimento...
+POLJA VEZANA UZ PRETHODNO TRAŽENE REFERENCE NA DOSPIJEĆA:  
+Vrsta opomene, OD / DO datum opomene, Broj opomene, Referentni broj.
 
-TIPO PARTITE: Flag per estrarre non solo le classiche partite attive clienti ma anche quelle riferite ad esempio ai fornitori ecc....
+TIP DOSPJELE VRIJEDNOSTI:   
+Oznaka za izdvajanje ne samo klasičnih aktivnih podudaranja kupaca, već i onih koja se odnose na primjerice dobavljače itd....
