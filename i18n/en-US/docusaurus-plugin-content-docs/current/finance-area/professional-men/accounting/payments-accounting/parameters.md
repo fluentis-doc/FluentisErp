@@ -1,27 +1,41 @@
 ---
-title: Parameters
+title: Parametri
 sidebar_position: 3
 ---
 
-In the second section it will be possible to manage the procedure parameters: accrual and record dates, payment template to be used, bank detail accounts to be debited and the survey detail account of debit of withholding-tax (not obligatory, if it is not available it will be necessary to use the detail account inserted into the withholding-tax type). The maturity values closure flag, proposed automatically, has never to be cut (in order to manage the maturity values closure).
+Nella presente scheda si gestiscono i parametri contabili principali della procedura: 
 
-The grouping options are:
+le **date di registrazione e competenza**, la **causale** di pagamento da utilizzare, i s**ottoconti della banca da addebitare** e quello di **rilevazione del debito della ritenuta (non obbligatorio**, se non presente sarà utilizzato il sottoconto inserito nel tipo ritenuta). 
 
-**Bank Grouping** default without the following **Group Detail Accounts** flag: in this case it will be created an only one record with a bank movement (in order to help the reconciliation of movements with the bank statement) while the other detail account will be detailed compensation by compensation (for an higher control of movements on withholding-tax account). In case that the detail accounts grouping flag is set, it will be possible to group data of other detail accounts moved.
+Il flag di chiusura partite, proposto di default, non va mai tolto (al fine di gestire la chiusura partite).
 
-**Grouping per Detail Account**: in this case the grouping will be performed professional man by professional man
+ 
 
-**No Grouping**: in this case every compensation will have a separate record
+Le opzioni di raggruppamento previste sono:
 
-The following section, activated by the **Vendor Payment Generation** flag, enables the user to create a payment list on 'Vendors Payments' module, in order to print and send electronically the line of the bank transfer via remote banking. The fields to be set are: list payment type, current account field (it is proposed by the register linked to the bank detail account inserted above) and possible a final note to be accounted in the bank line.
+Il default **Singola registrazione** (senza flag **Raggruppa conti**): in questo caso sarà creata un'unica registrazione con un unico movimento banca (per facilitare la riconciliazione dei movimenti con l'estratto conto bancario) mentre gli altri sottoconti saranno dettagliati compenso per compenso (per un controllo maggiore dei movimenti sul conto delle ritenute). In caso sia impostato anche il flag di raggruppamento conti saranno raggruppati i dati anche degli altri sottoconti uguali movimentati;
 
-RIBBON BAR: it represents the Form menu, that is the area in which it is possible to perform actions linked to the procedure in use. The list of features is the following:
+**Nessun raggruppamento**: in questo caso ogni compenso avrà una registrazione separata.
+
+**Raggruppa per sottoconto**: in questo caso il raggruppamento sarà effettuato percipiente per percipiente;
+
+ 
+
+![](/img/it-it/finance-area/professional-men/accounting/payments-accounting/parameters/image01.png)
+
+ 
+
+La sezione successiva, attivata dal flag di **Creazione automatica pagamenti fornitori**, consente di creare una distinta di pagamento nel modulo ** [Pagamenti fornitori](/docs/treasury/vendors-payments/create-vendor-payments) **, al fine di stamparla e inviare telematicamente il tracciato dei bonifici bancari via homebanking. I campi da impostare sono: il tipo di pagamento della distinta, il campo conto corrente (viene proposto dall'anagrafica collegata al sottoconto banca inserito in alto), la data di emissione del pagamento ed una eventuale data valuta beneficiario (previa attivazione del flag corrispondente) ed un'eventuale nota finale da riportare in contabilità in corrispondenza della riga banca.
+
+![](/img/it-it/finance-area/professional-men/accounting/payments-accounting/parameters/image02.png)
+
+ 
 
 
 
-| Function | Meaning |
+| Funzione | Significato |
 | --- | --- |
-| Payments Accounting | It performs the accounting of the selected payments. |
+| Contabilizzazione pagamenti | Esegue la contabilizzazione dei pagamenti selezionati. |
 
 
 

@@ -1,18 +1,26 @@
 ---
-title: Filter
+title: Filtro
 sidebar_position: 2
 ---
 
-On the first section the user identifies the list of compensations maturities to be paid: the manual modification, of amounts to be paid, is allowed.  This will cause a recalculation of the related share of withholding-tax.
+Nella prima scheda si ricercano e selezionano le scadenze compensi da pagare: è consentita la modifica manuale degli importi da pagare, che causerà un ricalcolo della quota relativa della ritenuta.
 
-RIBBON BAR: it represents the Form menu, that is the area in which it is possible to perform actions linked to the procedure in use. The list of features is the following:
+Alla successiva apertura della maschera verà visualizzato in tal caso il residuo da pagare.
+
+ 
+
+ATTENZIONE: prima di eseguire il comando di contabilizzazione verificare i parametri nella tab ** [Parametri](/docs/finance-area/professional-men/accounting/payments-accounting/parameters).**
+
+![](/img/it-it/finance-area/professional-men/accounting/payments-accounting/filter/image01.png)
 
 
 
-| Function | Meaning |
+
+
+| Funzione | Significato |
 | --- | --- |
-| Search Payments | It searches the list of payments to be performed. |
-| Payments Accounting | It performs the accounting of the selected payments. |
+| Ricerca pagamenti | Ricerca la lista dei pagamenti da effettuare. |
+| Contabilizzazione pagamenti | Esegue la contabilizzazione dei pagamenti selezionati. |
 
 
 

@@ -1,19 +1,19 @@
 ---
-title: Filter
+title: Filtro
 sidebar_position: 2
 ---
 
-The upper part of the mask is dedicated to the setting of search filters. Once having set at the base of the mask the accrual record dates and possible record with temporary status, it is sufficient to click on accounting button: if everything is successful, the selected lines will disappear from the grid and summaries and it will be possible to view the result preview.
+La parte superiore della maschera è dedicata all'impostazione dei filtri di ricerca. Una volta impostate alla base della maschera le date di registrazione competenza e l'eventuale registrazione con stato provvisorio è sufficiente premere il pulsante di contabilizzazione: se tutto va a buon fine le righe selezionate scompariranno dalla griglia e dalla form di rollback sarà possibile visualizzare in anteprima il risultato.
 
-RIBBON BAR: it represents the Form menu, that is the area in which it is possible to perform actions linked to the procedure in use. The list of features is the following:
+![](/img/it-it/finance-area/professional-men/accounting/compensation-accounting/filter/image01.png)
 
 
 
-| Function | Meaning |
+| Funzione | Significato |
 | --- | --- |
-| Search Compensations | It searches the compensations list to be accounted. |
-| Compensations Accounting | It performs the compensations accounting regarding the selected lines. |
-| Edit Compensation | It edits the selected compensation. |
+| Ricerca contabilizzazioni | Ricerca la lista dei compensi da contabilizzare. |
+| Contabilizzazione compensi | Esegue la contabilizzazione compensi per le righe selezionate. |
+| Modifica compenso | Apre in modifica il compenso selezionato. |
 
 
 

@@ -1,9 +1,25 @@
 ---
-title: Compensations Accounting
+title: Contabilizzazione compensi
 sidebar_position: 1
 ---
 
-Through this procedure it will be possible to move definitive compensations to the financial accounting in order to record invoice into the VAT register. Then in order to go on to the operation it is necessary that the compensation has definitive document number and date (even if the template linked to the withholding-tax type corresponds to a not VAT template) as well as a maturity. If the definitive references miss, it is possible to edit the compensation directly starting from this mask and through the related management button.
+LINK:
+
+** [Filtro](/docs/finance-area/professional-men/accounting/compensation-accounting/filter) **
+
+** [Rollback](/docs/finance-area/professional-men/accounting/compensation-accounting/rollback) **
+
+ 
+
+ 
+
+Con questa procedura i compensi divenuti definitivi vengono registrati in contabilità generale e nel registro IVA. 
+
+Per procedere all'operazione è **obbligatorio che il compenso abbia il numero e  la data documento definitivo** (anche se la causale collegata al tipo ritenuta è una causale non IVA) così come **almeno una scadenza** da rilevare. 
+
+Nel caso in cui manchino i riferimenti definitivi è possibile aprire in modifica il compenso direttamente da questa maschera, attraverso il relativo pulsante ![](/img/it-it/finance-area/professional-men/accounting/compensation-accounting/compensations-accounting/image01.png).
+
+
 
 
 

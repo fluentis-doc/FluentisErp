@@ -3,18 +3,17 @@ title: Rollback
 sidebar_position: 3
 ---
 
-Through the 'Previous' section it is possible to go on to cancel the performed accounting. The cancellation will be possible only if period can be edited (print journal, VAT register not printed, periodical settlement not printed, accounts closure not performed). Thanks to a double click on the records section it will be possible to view the related ledger record. There is a visualization report of errors recorded during the accounting procedure.
+Dalla scheda precedenti è possibile procedere all'annullamento delle contabilizzazioni eseguite. 
 
-RIBBON BAR: it represents the Form menu, that is the area in which it is possible to perform actions linked to the procedure in use. The list of features is the following:
+L'annullamento sarà possibile solo se il periodo è ancora modificabile (stampa libro giornale, registro iva non stampato, liquidazione periodica non stampata, chiusura conti non eseguita). Un doppio click nella sezione delle registrazioni consentirà di visualizzare la registrazione contabile relativa.
 
 
 
-| Function | Meaning |
+| Funzione | Significato |
 | --- | --- |
-| Search | It searches the list of creations performed. |
-| Rollback Accounting | Through this button it will be cancelled all performed accounting together with all associated compensations. |
-| Rollback Records | The button restores the selected record. |
-| View Compensations | The button opens the visualization of the selected compensation. |
+| Ricerca | Ricerca la lista delle creazioni eseguite. |
+| Rollback contabilizzazione | Con questo pulsante sarà cancellata tutta la contabilizzazione effettuata (selezionata dalla griglia 'Contabilizzazione'), con tutti i compensi associati. |
+| Rollback registrazioni | Il pulsante esegue il ripristino solamente della registrazione contabile selezionata dalla griglia 'Registrazione contabile'. |
 
 
 
