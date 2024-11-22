@@ -1,68 +1,115 @@
 ---
-title: Compensations Management
+title: Gestione compensi
 sidebar_position: 1
 ---
 
-Through this mask it is possible to load/edit document received by professional man or by agent, both in case of temporary fee and definitive invoice: the difference between them will concern only the immediate or following insertion (by editing a temporary fee) of fields related to the definitive number and document date.
+### **LINK AI TAB DELLA PARTE INFERIORE DELLA FORM**:
 
-The first field of compensation regards the insertion of the compensation detail account: it is possible to insert on this field only detail accounts with agent account type or vendors that have withholding-tax flag set on register.
+** [Totale ritenuta](/docs/finance-area/professional-men/compensations-management/total-withholding-tax) **
 
-The following status flags are: accounted, managed automatically by the application at the moment of the compensations accounting. Once having set this flag the compensation will not be edited. The paid withholding-tax will be applied at the compensation manually or through the 'Withholding-Tax Paying-In' procedure that can be performed by 'search compensations' mask. The 'certified' flag is set automatically by the program during the definitive print procedure of withholding-tax certifications.
+** [Lista pagamenti](/docs/finance-area/professional-men/compensations-management/total-withholding-tax) **
 
-Linked to the agent or vendor detail account, it is possible to set the withholding-tax type to be proposed at the moment of compensation load.
+** [Versamenti ritenute](/docs/finance-area/professional-men/compensations-management/withholding-tax-paying-in) **
 
-The following notes field enables the user to note a reference text about compensation: it regards a note that will be reported into detail notes of all accounting movements linked to this compensation. Immediately afterwards there is a field called 'Movement Description' that will be used during the compensations accounting procedure for the same field of ledger record.
+** [Riepiloghi IVA](/docs/finance-area/professional-men/compensations-management/vat-summaries) **
 
-On the right there is the number and year of compensation: it regards an automatic internal numeration of program that must be univocal for company. The date field is proposed as the current date but it can be set as date of the temporary withholding-tax fee.
+** [Centri di costo / profitto](/docs/finance-area/professional-men/compensations-management/cost-profit-centres) **
 
-The fields about date and definitive document number regard reference to definitive invoice: they are obligatory fields to account compensations, even if the reference template has not to be a VAT template. These two fields will be the only ones that could be edited in case that payment has been already recorded in accounting.
+** [INPS](/docs/finance-area/professional-men/compensations-management/national-insurance) **
 
-The job order/year field is necessary in order to link compensation to a sales job order: as for example a survey on a construction site managed per job order. If the reference accounting template manages the job orders, it means that charges inserted into this compensation will be assigned to this.
+ 
 
-Currency date and exchange are linked to the management of currency and of the related exchange data taken by exchanges table (currency is set by the agent/vendor register).
+ 
 
-Within the compensation details there will be the possibility to load all compensation detail lines: starting from the 'service cost' line type the application will propose the amount origin and withholding tax percentage read by withholding tax type, cost detail account will be reported by the offset cost of agent/vendor (there could be the cost detail account of offset and analytical accounting data as defined on the linked cost template), cost in currency and in euro, Vat rate to be applied (proposed even this according to register), the social insurance fund to be calculated on line (proposed by withholding-tax type) and reference economic accrual dates. These are managed for the connected user according to the related management parameters (that can be set thanks to the specific button on this mask): the following lines will propose automatically the range set on the previous line.
+Da questa maschera si procede al caricamento/modifica del documento ricevuto dal professionista o dall'agente, **sia nel caso di notula provvisoria che di fattura definitiva: la differenza tra i due, infatti, riguarderà unicamente l'inserimento immediato o successivo (entrando quindi in modifica di un provvisoria già rilevato) dei campi relativi al numero e data documento definitivo.**
 
-The following line types are: insurance fund, for which the application will propose 0% application percentage of withholding-tax and value calculated automatically according to the percentage that is on service charges line, previously loaded.
+![](/img/it-it/finance-area/professional-men/compensations-management/compensations-management/image01.png)
 
-The **enasarco** line type has not to be used.
+ 
 
-The 'other' line type is managed as amount subject to withholding-tax (but the user can force that setting): it concerns usually the expenses refunded inserted into compensation list, that can be or not subject to withholding-tax and thay are not usually VAT taxable.
+### **CAMPI DI TESTATA**:
 
-During the saving of compensation there will be the possibility to perform control messages in case in which maturity value does not correspond the total to be paid, as well as the non-balancing data per cost/profit centre.
+**Percipiente**: riguarda l'inserimento del sottoconto intestatario del compenso: si possono inserire in questo campo solo sottoconti con tipo conto agente oppure fornitori che abbiano il flag ritenute d'acconto impostato in anagrafica.
 
-Once having performed the compensations accounting it will not possible to edit compensation data: in case that the pyaments accounting or enasarco have not been performed, it will be edited the references to defintive document number/date, movement description and detail account inserted into the details grid.
+I flag di stato successivi (aprire l'expander) sono: 
 
-In conclusion, it is possible to create a new compensation directly from the previous one that has just been saved through the specific management button: the new compensation will have some elements taken by the previous one, according to user settings loaded. In case that a compensation is saved and has definitive document date and number, it will be possible to go on to the accounting procedure through the related button: for this reason a mask will be opened on which proposed dates will be the last valid ones for the VAT register associated to the withholding-tax type template.
+**contabilizzato**: gestito in automatico dall'applicazione al momento della contabilizzazione compensi. Una volta impostato questo flag il compenso non sarà più modificabile. **ritenuta versata**: sarà applicato al compenso manualmente oppure attraverso alla procedura ** [Versamenti ritenuta](/docs/finance-area/professional-men/search-compensations/withholding-tax-paying-in) ** eseguibile dalla maschera di ricerca compensi. 
 
-There is also a print button about the compensation in use.
+**certificato**: viene impostato in automatico dal programma all'atto della stampa definitiva delle certificazioni ritenute.
 
-RIBBON BAR: itr represents the Form menu, that is the area in which it is possible to perform actions linked to the fixed asset in management. The list of features is the following:
+![](/img/it-it/finance-area/professional-men/compensations-management/compensations-management/image02.png)
+
+ 
+
+Collegato al sottoconto agente o fornitore può essere predefinito il **tipo di ritenuta** da proporre al momento di caricamento del compenso (il collegamento si definisce nell'anagrafica dell'agente o del fornitore).
+
+Il campo **note** successivo consente di annotare un testo di riferimento del compenso: si tratta di una nota che sarà poi riportata nelle note di dettaglio di tutti i movimenti contabili collegati a questo compenso. 
+
+**Descrizione movimento**: sarà utilizzato nella contabilizzazione compensi per l'omonimo campo della registrazione contabile.
+
+ 
+
+Nella parte a destra: 
+
+**Codice pagamento**: questo campo, proposto in automatico (richiamando il compenso il tipo ritenuta applicabile) se è stato compilato l'omonimo campo nella form  [Gestione tipo ritenuta](/docs/configurations/tables/finance/withholding-tax-types), si riferisce al codice relativo alla causale di pagamento da indicare nella Certificazione unica dei percipienti (vedere istruzioni ministeriali).
+
+Esempio: codice A = prestazioni di lavoro autonomo esercitate abitualmente; Q = provvigioni corrisposte ad agente o rappresentante di commercio monomandatario; R = provvigioni corrisposte ad agente o rappresentante di commercio plurimandatario; U = provvigioni corrisposte a procacciatore d'affari......
+
+ 
+
+**Numero e anno di riferimento del compenso**: si tratta di una numerazione automatica interna del programma che deve essere univoca per la società. 
+
+**Data documento**: viene proposta come la data attuale ma può essere impostata come la data della notula provvisoria ricevuta.
+
+**Data e numero documento definitivo**: riguardano i riferimenti alla fattura definitiva: si tratta di campi obbligatori per procedere alla contabilizzazione compensi, anche se la causale di riferimento non dovesse essere una causale IVA. Questi due campi saranno gli unici modificabili nel caso in cui il pagamento sia già stato rilevato in contabilità.
+
+**Data ricevimento**: campo per annotare la data di ricezione della fattura definitiva (non obbligatorio per la contabilizzazione).
+
+ 
+
+**Progetto** (ex commessa): serve a collegare il compenso ad un progetto (commessa di vendita): potrebbe essere il caso di una perizia su un cantiere gestito a commessa. Se la ** [causale contabile](/docs/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates/recording-detail) ** utilizzata nella contabilizzazione del compenso ha il flag progetti (ex commesse) attivo allora i costi inseriti in questo compenso saranno assegnati al progetto (commessa) inserito in questo campo.
+
+**Cambio valuta/Data valuta/Divisa**: collegati alla gestione della divisa e dei relativi dati del cambio prelevati dalla tabella cambi (la divisa viene impostata dall'anagrafica agente/fornitore).
+
+ 
+
+### RIGHE DI DETTAGLIO
+
+ 
+
+**Tipo riga**: dato fonadamentale che permette di gestire automaticamente l'applicazione della ritenuta d'acconto sulla quota di costo del servizio e la sua disapplicazione sulla quota relativa lla cassa previdenziale del percipiente. Può essere di tre tipologie:
 
 
 
-| Function | Meaning |
-| --- | --- |
-| Save | It saves the compensation in management. |
-| New Compensation | It creates a new compensation starting from the current one. |
-| It creates a new compensation starting from the current one | It enables the user to define the user parameters for the compensation management. See application a. |
-| Accounting and Close | It is active with the insertion of definitive date and document number, it enables the user to perform the compensation accounting. |
-| New Detail | It activates the cursor at the insertion of a new compensation detail line. |
-| Delete Detail | It deletes the detail lines selected on compensation. |
+**Costo del servizio**: per inserire la quota soggetta a ritenuta per la quale Fluentis proporrà la percentuale di imponibile e l'aliquota della ritenuta letti dal tipo ritenuta, il sottoconto di costo sarà riportato dal costo di contropartita dell'agente/fornitore, il costo in valuta e in euro, l'aliquota IVA da applicare (proposta anche questa sulla base dell'anagrafica), la percentuale di cassa previdenza da calcolare sulla riga (proposta dal tipo ritenuta) e le date di competenza economica di riferimento. Queste sono gestite, per l'utente connesso, secondo i parametri di inserimento (che si possono impostare con il pulsante presente nella ribbon bar): le righe successive alla prima proporranno automaticamente il range impostato nella riga precedente.
+
+**Cassa previdenza**: Fluentis proporrà Imponibile ritenuta 0% e il valore imponibile iva calcolato automaticamente sulla base della percentuale presente nella riga del costo del servizio precedentemente caricata.
+
+**Altro**: viene gestito come importo soggetto a ritenuta (ma l'utente può forzare tale impostazione): si tratta normalmente dei rimborsi spese a piè di lista inseriti nel compenso, che possono essere o meno soggetti a ritenuta e normalmente sono non imponibili di IVA.
+
+Al salvataggio del compenso saranno eseguiti messaggi di controllo nel caso in cui il valore delle partita non sia corrispondente con il totale a pagare, così come del mancato bilanciamento dei dati a centro di costo/profitto.
+
+Una volta che è stata eseguita la contabilizzazione compensi non sarà più consentito di modificare i dati del compenso: nel caso in cui sia stato eseguita la contab. pagamenti o Enasarco, invece, saranno modificabili i riferimenti al numero/data documento definitivo, la descrizione movimento e il sottoconto inserito nella griglia dei dettagli.
+
+ Nel caso in cui il compenso sia salvato e abbia data e numero documento definitivo, sarà possibile procedere alla contabilizzazione attraverso il pulsante **Contabilizza e chiudi** nella ribbon bar: si aprirà una maschera nella quale le date proposte saranno quelle ultime valide per il registro iva associato alla causale collegata al tipo ritenuta utilizzato.
+
+Sono disponibili alcune stampe che possono essere eseguite con i comandi posti nella ribbon bar.
+
+![](/img/it-it/finance-area/professional-men/compensations-management/compensations-management/image03.png)
 
 
+*Pulsanti specifici*:  
+> **Parametri inserimento**: nei parametri utente è possibile definire se il nuovo compenso deve riproporre lo stesso sottoconto dell'attuale, lo stesso tipo ritenuta, come gestire la nuova data documento e infine come gestire il range di date competenza economica (fine esercizio – cioè la data finale sarà uguale alla fine esercizio, giornaliera – cioè data finale uguale a data iniziale, nessuna data per tipo conto servizi – cioè richiederà obbligatoriamente l'inserimento di entrambe le date se il tipo del sottoconto inserito è impostato come 'Servizio');  
+> **Contabilizza e chiudi**: attivo quando sono stati inseriti data e numero documento definitivi, consente di eseguire la contabilizzazione del compenso;  
+> **Nuovo dettaglio**: attiva il cursore nell'inserimento di una nuova riga di dettaglio del compenso;  
+> **Cancella dettaglio**: cancella le righe di dettaglio selezionate nel compenso;  
+> **Calcola valori**: esegue un ricalcolo dei valori relativi alle ritenute sulla base dei dati inseriti nelle righe di dettaglio.  
 
-| Function | Meaning |
-| --- | --- |
-| Document Manager | Button to connect to the document management.  |
+---
+### **VIDEO TUTORIALS**
 
-APPLICATIONS:
+<iframe width="560" height="315" src="https://www.youtube.com/embed/k7abmzqf6Bk" title="YouTube video player" frameborder="0" allowfullscreen= "true"></iframe>
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/8sdFGMDVIFc" title="YouTube video player" frameborder="0" allowfullscreen= "true"></iframe>
 
- 1. Within user parameters it is possible to set if the new compensation has to consider the same detail account as the current one, the same withholding-tax type, as well as to manage the new document date and lastly to manage the range of economic accrual dates (accounting period end – that refers to the same end date as the start one, no date regarding the services account type. For this reason there will be necessary to insert both dates, in case that the inserted detail account is set as 'service').
-
-
-
-
-
-
+<iframe width="560" height="315" src="https://www.youtube.com/embed/DVXhUdwqBS4" title="YouTube video player" frameborder="0" allowfullscreen= "true"></iframe>

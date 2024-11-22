@@ -1,17 +1,15 @@
 ---
-title: VAT Summaries
+title: Riepiloghi IVA
 sidebar_position: 5
 ---
 
-The 'VAT Summaries' section consists of a detailed summary about rate VAT data per rate: this section cannot be edited.
+La sezione Riepiloghi IVA presenta il riepilogo dettagliato dei dati IVA aliquota per aliquota.
 
-RIBBON BAR: it represents the Form menu, that is the area in which it is possible to perform actions linked to the compensation in management. The list of features is the following:
+I dati possono essere forzati manualmente, ad esempio per gestire arrtondamenti dell'imposta in modo manuale. 
+
+Per abilitare la modifica manuale attivare il flag **Calcolo manuale** nella tab** [Totale ritenuta](/docs/finance-area/professional-men/compensations-management/total-withholding-tax) **.
 
 
-
-| Function | Meaning |
-| --- | --- |
-| Recalculate VAT Data | It performs the recalculation of compensation VAT data. |
 
 
 

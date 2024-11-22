@@ -1,22 +1,24 @@
 ---
-title: Total Withholding-Tax
+title: Totali ritenuta
 sidebar_position: 2
 ---
 
-On the left side there will be possible to memorize the VAT summaries, on the right the detail data of withholding-tax calculation, then below there are the Enasarco fields at the expense of the company and agent, the total field to be paid and National Insurance section summary.
+Riepiloghi IVA e dati di dettaglio del calcolo della ritenuta d'acconto, dei contributi Enasarco e INPS.
 
-It is important to signal that at the base of mask it is possible to set the manual calculation: in this case it will be possible to force manually calculation fields of withholding-tax and Enasarco fields. It is not possible to edit the VAT calculation. Remember that the manual calculation has been set and application does not go on to align the maturity to be paid that is within the following tabulator.
+ ![](/img/it-it/finance-area/professional-men/compensations-management/total-withholding-tax/image01.png)
 
-Lastly remember that, in case (remote) of a professional men credit note, values of the detail grid will have to be inserted with negative sign.
+**FLAG alla base della maschera**: è possibile impostare il **calcolo manuale**: in questo caso sarà possibile forzare manualmente i campi di calcolo della ritenuta i campi Enasarco ed il calcolo dell'IVA nella tab ** [Riepiloghi IVA](/docs/finance-area/professional-men/compensations-management/vat-summaries) **. 
 
-RIBBON BAR: it represents the Form menu, that is the area in which it is possible to perform actions linked to the compensation in management. The list of features is the following:
+Si segnala che se è stato impostato il calcolo manuale l'applicazione non procederà più ad allineare la scadenza da pagare presente nel tabulatore successivo.
+
+Si ricorda infine, che nel caso (remoto) di nota di credito percipiente, i valori della griglia di dettaglio saranno da inserire con segno negativo.
 
 
 
-| Function | Meaning |
+| Funzione | Significato |
 | --- | --- |
-| Calculate Values | It performs the recalculation of compensation data (withholding-tax, VAT, maturities). |
-| Print Preview | It performs the print preview of compensation. |
+| Calcola valori | Esegue il ricalcolo dei dati del compenso (ritenute, IVA, scadenze). |
+| Anteprima di stampa | Esegue l'anteprima di stampa del compenso. |
 
 
 

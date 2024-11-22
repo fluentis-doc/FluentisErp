@@ -1,20 +1,20 @@
 ---
-title: Cost/Profit Centres
+title: Centri di costo/profitto
 sidebar_position: 6
 ---
 
-The cost/profit centres sections enable the user to valorize the inserted costs per cost and profit centre.
-
-RIBBON BAR: it represents the Form menu, that is the area in which it is possible to perform actions linked to the compensation in management. The list of features is the following:
+Le schede centri di costo/profitto consentono di valorizzare il centro di costo (e/o profitto - da non utilizzare se attiva la gestione controlling avanzata) con costi inseriti.
 
 
 
-| Function | Meaning |
+
+
+
+
+| Funzione | Significato |
 | --- | --- |
-| New C.C | It inserts the cursors during the insertion of a new line on Cost Centres section. |
-| Delete C.C | It deletes the movements selected in the cost centres grid. |
-| New P.C | It inserts the cursor during the insertion of a new line on the Profit Centres section. |
-| Delete P.C | It deletes the movements selected in the profit centres grid. |
+| Nuovo cdc | Inserisce il cursore nell'inserimento di una nuova riga nella sezione Centri di costo. |
+| Cancella cdc | Cancella i movimenti selezionati nella griglia dei centri di costo. |
 
 
 

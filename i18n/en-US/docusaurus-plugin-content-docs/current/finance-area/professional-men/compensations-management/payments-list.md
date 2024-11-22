@@ -1,20 +1,32 @@
 ---
-title: Payments List
+title: Lista pagamento
 sidebar_position: 3
 ---
 
-The 'Payments List' tabulator shows, in the upper grid, the default setting of payments as inserted into the reference agent or vendor register: on section below, on the contrary, there is the list of maturities to be paid. As regards the professional men module it is necessary that at least one maturity was loaded, otherwise it will not possible to pay the compensation (and to detect the withholding-tax) or to account the same one.
+![](/img/it-it/finance-area/professional-men/compensations-management/payments-list/image01.png)
 
-RIBBON BAR: it represents the Form menu, that is the area in which it is possible to perform actions linked to the compensation in management. The list of features is the following:
+**Griglia superiore**: presenta l'impostazione le condizioni di pagamento così come proposte tramite l'anagrafica agente o fornitore di riferimento, oppure inseribili o modificabili direttamente in questa form. Sono inoltre presenti i campi per inserire la Banca d'appoggio del percipiente (in caso di pagamento tramite bonifico) oppure della nostra società (in caso ad esempio di pagamento Ri.Ba.).
 
 
 
-| Function | Meaning |
+**Griglia inferiore**: presenta la lista delle scadenze da pagare calcolate in base alle condizioni della griglia superiore.
+
+La partita che verrà aperta al salvataggio del compenso (anche sotto forma di preavviso di parcella) può essere bloccata per il pagamento attivando il **flag Non pagabile** e può essere aggiunta una nota relativa.
+
+Il funzionamento è del tutto simile alla griglia presente nelle ** [registrazioni di prima nota](/docs/finance-area/ledger-records/records/create-ledger-record/maturity-values-tab) ** a cui si rinvia.
+
+ 
+
+Per il modulo percipienti è obbligatorio che sia stata caricata almeno una scadenza, altrimenti non sarà possibile pagare il compenso (e rilevare la ritenuta quindi) né contabilizzare il compenso.
+
+
+
+| Funzione | Significato |
 | --- | --- |
-| New Payment | It inserts the cursor during the insertion of a new payment line on the first grid of this tab. |
-| Delete Payments | It deletes the payments selected in the first grid of this tab. |
-| New Maturities | It inserts the cursor during the insertion of a new maturities line on the second grid of this tab. |
-| Delete Maturities | It deletes the maturities selected on the second grid of this tab. |
+| Nuovo pagamento | Inserisce il cursore nell'inserimento di una nuova riga condizione di pagamento nella griglia superiore. |
+| Cancella pagamenti | Cancella i pagamenti selezionati nella prima griglia superiore. |
+| Nuove scadenze | Inserisce il cursore nell'inserimento di una nuova riga scadenze nella griglia inferiore. |
+| Cancella scadenze | Cancella le scadenze selezionate nella griglia inferiore. |
 
 
 
