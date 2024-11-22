@@ -1,35 +1,47 @@
 ---
-title: Currency Adjustment
+title: Regolarizzazione Valuta
 sidebar_position: 2
 ---
 
-This mask has been created in order to enable the user to calculate, automatically to a certain date, the change differences for currency accounts and in order to create maturity values and regularization accounting records. 
+Questa maschera permette di calcolare in automatico, ad una certa data, le differenze di cambio per i conti in valuta (ad esempio crediti e debiti oppure conti bancari) e per generare le partite e le registrazioni contabili di regolarizzazione.
 
-Within the Parameters area there is a series of parameters with which it will be possible to realize the regularization accounting: 
+**Occorre, prima di tutto selezionare una divisa** (una per volta) rispetto alla quale sarà eseguito il calcolo, oltre (mediante i radio buttons sulla destra) alla tipologia di 
+calcolo:
 
-**Temporary**: it enables the user to create the change difference as a temporary accounting record;
+- Disponibilità: considera saldi (es. bancari)
+- Partite: legge crediti e debiti verso clienti / fornitori
+    - Attiva: clienti
+    - Passiva: fornitori
 
-**Change**: with which it is possible to calculate the updated value. It is possible to propose it automatically by the program (starting from the currency change table), but the user can edit it;
+Il conto / sottoconto e la Divisione sono invece filtri opzionali per restringere la ricerca.
 
-**Date** and **Document Number** and **Accounting Template**: related to the accounting record to be regularized. The inserted date represents also the date up to which it is possible to select the accounting records;
+---
 
-**Costs and Revenues**: used in order to record the change differences;
+Nella griglia centrale che espone il dettaglio delle posizioni ricercate vengono evidenziati, conto per conto, l'importo espresso nella divisa estera, il controvalore in euro storico, calcolato come somma algebrica di tutti i movimenti, il controvalore corrente ricalcolato al cambio esposto più in basso nella maschera, la differenza cambio positiva o negativa.
 
-Within the 'Restore' area it is possible to view the result of the regularization operations performed according to the filters set (From/To date, account). 
+---
 
-RIBBON BAR: the ribbon bar represents the Form menu, that is the area in which it is possible to perform actions. The list of features is the following: 
+Nella zona dei *Parametri* sono definiti una serie di parametri con i quali sarà realizzata la contabilizzazione della regolarizzazione:
+
+**Provvisorie**: permette di generare la differenza di cambio come registrazione contabile provvisorie;
+
+**Cambio**: con il quale viene calcolato il valore aggiornato. Viene proposto in automatico dal programma (dalla tabella cambio valute), ma può essere cambiato dall'utente;
+
+**Data** e **Numero** **documento** e **Causale** **contabile** relativa alla registrazione contabile da regolarizzare. **La data inserita rappresenta anche la data fino alla quale vengono selezionate le registrazioni contabili;**
+
+**Conti** **di ricavo** e **costo**: utilizzati per registrare le differenze di cambio;
+
+---
+
+Nella tab di *Ripristino* è possibile visualizzare e ripristinare il risultato delle operazioni di regolarizzazione eseguite in base ai filtri impostati (Da data/A data, il conto).
 
 
 
-| Function | Meaning |
+| Funzione | Significato |
 | --- | --- |
-| Search | Button to search accounts to be regularized according to the filters set.  |
-| To Be Accounted | Button to regularize the accounts selected within the filters area and in correspondence to the parameters inserted into the related area.  |
-| Restore Regularization | Button to delete the regularization operations selected into the result grid.  |
-
-FILTER AREA: in this area it is possible to select the accounts to be regularized thanks to the following filters. The currency is part of the accounts, the account type (active/passive or of availability/maturity values) and the account. 
-
-RESULT GRID: the result grid is located at the bottom of the window. It represents both the list of accounts, that correspond to filter data above mentioned, and values, that will be elaborated through the regularization procedure (historical value, tha value updated according to the change inserted into the parameters area, the change difference). 
+| Cerca | Pulsante per cercare i conti da regolarizzare in base ai filtri inseriti. |
+| Contabilizzazione | Pulsante per eseguire l'operazione di regolarizzazione dei conti selezionati nella zona dei filtri e in corrispondenza ai parametri inseriti nella zona relativa. |
+| Ripristina regolarizzazione | Pulsante per cancellare le operazioni di regolarizzazione selezionate nella griglia di risultato. |
 
 
 

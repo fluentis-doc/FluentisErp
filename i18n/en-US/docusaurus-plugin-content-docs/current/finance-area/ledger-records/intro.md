@@ -23,7 +23,7 @@ Le **procedure** del modulo consentono:
 - La gestione delle registrazioni provvisorie
 - Il riordino dei protocolli iva 
 
-Prima di procedere all'introduzione o realizzazione di una registrazione è necessario accertarsi di avere correttamente impostato tutti i dati tabellari nonché i **parametri** del modulo.
+Prima di procedere all'introduzione o realizzazione di una registrazione è necessario accertarsi di avere correttamente impostato tutti i dati tabellari nonché i [**parametri**](/docs/configurations/parameters/finance/accounting-parameters) del modulo.
 
 I dati contabili sono utilizzati dal modulo Controlling per elaborare le chiusure infrannuali e per elaborare tutti i movimenti dei centri di costo ad esse collegate.
 Il modulo è strettamente interconnesso con la tesoreria con cui interscambia i dati e riceve movimenti contabili dalle procedure automatiche di contabilizzazione dei vari fatti contabili connessi alle operazioni di tesoreria (bonifici , portafoglio attivo ecc....)
