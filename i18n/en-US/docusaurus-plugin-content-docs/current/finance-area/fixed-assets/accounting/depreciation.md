@@ -1,20 +1,20 @@
 ---
-title: Depreciation
+title: Ammortamento
 sidebar_position: 2
 ---
 
-At the opening of the mask it will be possible to go on to set reference year, record dates and accrual (the second one will correspond certainly to the end of accounting period of the reference year, while the first one could refer to the current year), accounting template of detection and grouping flag in a single record. Through this option all movements will be inserted into the same record and amounts, of the same detail account, will be grouped in an only one movement.
+All'apertura della maschera si procederà a impostare l'anno di riferimento, le date di registrazione e competenza (di cui questa seconda sarà certamente la fine esercizio dell'anno di riferimento mentre la prima potrebbe essere nell'anno in corso), 
 
-RIBBON BAR: the ribbon bar represents the Form menu, that is the area on which it is possible to perform actions linked to the procedure in use. The possible features list is the following:
+la causale contabile di rilevazione e il flag di raggruppamento in una singola registrazione. Con questa opzione tutti i movimenti saranno inseriti nella stessa registrazione e gli importi facenti capo allo stesso sottoconto saranno raggruppati in un unico movimento.
+
+![](/img/it-it/finance-area/fixed-assets/accounting/depreciation/image01.png)
 
 
 
-| Function | Meaning |
+| Funzione | Significato |
 | --- | --- |
-| Search | It searches the list of depreciation calculations performed. |
-| Depreciation | It performs the calculation for the selected lines. |
-| View Fixed Asset | It views the fixed asset register whose depreciation has been selected in grid. |
-
+| Ricerca | Ricerca la lista dei calcoli di ammortamento eseguiti. |
+| Ammortamento | Esegue il calcolo per le righe selezionate. |
 
 
 
