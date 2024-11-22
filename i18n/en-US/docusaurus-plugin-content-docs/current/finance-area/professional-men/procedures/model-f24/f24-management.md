@@ -1,27 +1,49 @@
 ---
-title: F24 Management
+title: Gestione F24
 sidebar_position: 2
 ---
 
-The F24 model creation provides for the load of a new model within which header data can be compiled according to references inserted into the Company table. The VAT period and withholding-tax period are proposed as the current month: for this reason, it will be necessary to indicate the previous month in order to record automatically on declaration both data of periodical VAT settlement and the various tribute codes related to paid compensations. In particular, as regards the VAT settlement, it will be search the period memorized in the 'VAT Paying-In' mask that is located into the financial accounting (where values of settlement can be automatically memorized at the moment of its definitive print procedure: in addition a manual value load is allowed).
+## Compilazione automatica
 
-Once  having recorded header data it will be possible to activate the 'Propose Values' button that will compile the various lines of the first treasury card. Once having compiled the other declaration sections manually, according to the necessity, or having set the signer and file creation path it will be possible to perform the creation of file thanks to special button that will create a file with name as 'Company VAT Register' + '_' + 'Declaration Number' + '_'+ 'Declaration Date' with F24 extension. If some obligatory data miss, it will be possible to give an error message and the file will not be created.
+La creazione del modello F24 prevede il caricamento di un nuovo modello all'interno del quale i dati di testata sono compilati sulla base dei riferimenti inseriti all'interno della tabella [**Società**](/docs/configurations/tables/general-settings/company). 
+ 
 
-It is possible to cancel the file creation thanks to the specific management button.
+Il periodo IVA e il periodo ritenuta (composti dai due campi mese / anno) sono proposti come il mese attuale: possono essere variati per richiamare il mese di riferimento (sia per i dati dell'iva da versare che per le ritenute d'acconto da versare). 
 
-RIBBON BAR: it represents the Form menu, that is the area in which it is possible to perform actions linked to the procedure in use. The list of features is the following:
+In particolare, per quanto riguarda le  liquidazioni IVA, sarà ricercato il periodo memorizzato nella maschera ** [Versamenti IVA](/docs/finance-area/declarations/declarations/vat-payment) ** presente in contabilità generale (dove sono memorizzati automaticamente i valori della liquidazione al momento della sua stampa in definitivo: è consentito un caricamento manuale del valore).
+
+E' possibile scegliere di elaborare solo i dati iva o solo i dati delle ritenute cancellando i dati dai campi (periodo e anno di riferimento) del dato che non interessa.
+
+Una volta memorizzati i dati di testata si attiverà il pulsante **Proponi valori** che andrà a compilare le varie righe della prima **scheda erario**. 
+
+Una volta compilate **manualmente** anche tutte **le altre sezioni** della dichiarazione, a seconda delle necessità, impostato il versante/firmatario e il percorso di creazione del file sarà possibile eseguire la creazione del file con l'apposito pulsante che andrà a creare un file con il nome strutturato come 'Partita IVA società' + '_' + 'Numero dichiarazione' + '_' + 'Data dichiarazione' con estensione F24. In caso di dati obbligatori mancanti sarà restituito un messaggio di errore esplicativo e il file non sarà creato.
+
+È possibile annullare la creazione del file con l'apposito pulsante di gestione.
+
+Tramite il pulsante **Crea File telematico** è possibile creare il file che sarà inviato all'Agenzia delle Entrate tramite i canali appositi (es. Entratel).
+Il file viene automaticamente archiviato nl Documentale e può essere visualizzato e scaricato localmente attraverso il pulsante e drop down list **Documenti**, presente nella ribbon bar.
+
+:::note[Nota]
+Per la creazione del file è richiesta la presenza (potrebbe essere restituito un messaggio di avviso) di due connettori Bizlink denominati F24 (Gestito dal servizio con autenticazione) ed F24Errors, di tipo Folder Output e con aggancio al partner AgeEnt, Flusso AgeEnt, Operazione di Flusso e documento di flusso F24 (F24Errors per il secondo)
+:::
+
+## Contabilizzazione
+
+Nella testata del modello è possibile compilare i campi per le eventuali **Spese bancarie** e per il conto della **Banca di pagamento**.
+A questo punto è possibile premere il bottone **Contabilizzazione** per generare automaticamente la scrittura che rileva l'uscita di banca e lo storno dei conti (alimentati automaticamente) dove è stato caricato il debito per ritenute d'acconto da versare e per iva da versare (esempio conti solitamente denominati Erario c/ritenute d'acconto ed Erario C/Iva).
+
+:::tip[Nota]
+I conti utilizzati automaticamente per caricare il debito IVA e il debito per le ritenute d'acconto sono impostati, rispettivamente, nei [**parametri di contabilità**](/docs/configurations/parameters/finance/accounting-parameters#conti) per quanto riguarda l'iva, e nella tabella [**Tipi Ritenuta**](/docs/configurations/tables/finance/withholding-tax-types.md) per le ritenute d'acconto, conto di default che può essere stato sovrascritto in fase di [**contabilizzazione pagamento compensi**](/docs/finance-area/professional-men/accounting/payments-accounting/parameters)
+:::
 
 
 
-| Function | Meaning |
+| Funzione | Significato |
 | --- | --- |
-| Save | It saves the model in use. |
-| Propose Values | It performs the data retrieve from VAT paying-in and from withholding-tax of paid compensations. |
-| View | It shows the electronic file created. |
-| New Detail | It sets the cursor on the details insertion grid. |
-| Delete Detail | It deletes the selected detail line. |
-| Create Electronic File | It performs the electronic file creation on the directory set. |
-| Cancel Electronic File | It deletes the electronic file created. |
+| Salva | Salva il modello in uso. |
+| Proponi valori | Esegue la ripresa dei dati dai versamenti iva e dalle ritenute dei compensi pagati. |
+| Nuovo dettaglio | Imposta il cursore nella griglia di inserimento dei dettagli. |
+| Cancella dettaglio | Cancella la riga di dettaglio selezionata. |
 
 
 

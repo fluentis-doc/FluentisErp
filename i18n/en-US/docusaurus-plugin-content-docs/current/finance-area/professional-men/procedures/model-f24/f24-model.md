@@ -1,23 +1,23 @@
 ---
-title: F24 Model
+title: Modello F24
 sidebar_position: 1
 ---
 
-The procedure is dedicated to the creation of ministerial tracing of F24 declaration in order to send it electronically. This model is dedicated to the communication of various tributes that are paid monthly to the company.
+La procedura è dedicata alla creazione del modello F24. Questo modello è dedicato al versamento dei vari tributi versati mensilmente dall'azienda.
 
-The basic setting is to codify the subject of the declaration within the employee module of the finance area. In particular, it is necessary to indicate the load code and the references of residence, address, tax code, name and surname.
+Per inserire un nuovo modello F24 premere il tasto **Nuovo** nella ribbon bar.
 
-RIBBON BAR: it represents the Form menu, that is the area in which it is possible to perform actions linked to the compensation in management. The list of features is the following:
+Per i dettagli nel nuovo modello in fase di inserimento vedere [**Gestione modello F24**](/docs/finance-area/professional-men/procedures/model-f24/f24-management)
 
 
 
-| Function | Meaning |
+| Funzione | Significato |
 | --- | --- |
-| Search | Button to apply search filters within database of the inserted models. |
-| New | It refers to the procedure to insert a new model. |
-| Edit | It refers to the procedure to edit a previously inserted model. |
-| View | It refers to the procedure to view a previously inserted model. |
-| Delete | It performs the procedure to delete a previously inserted model. |
+| Ricerca | Pulsante per applicare i filtri di ricerca all'intero database dei modelli inseriti. |
+| Nuovo | Richiama la procedura per inserire un nuovo modello. |
+| Modifica | Richiama la procedura per modificare un modello precedentemente inserito. |
+| Visualizzazione | Richiama la procedura per visualizzare un modello precedentemente inserito. |
+| Cancella | Esegue la procedura per cancellare un modello precedentemente inserito. |
 
 
 
