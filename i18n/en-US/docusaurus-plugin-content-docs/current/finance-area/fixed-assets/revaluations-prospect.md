@@ -1,20 +1,20 @@
 ---
-title: Revaluations Prospect
+title: Prospetto rivalutazioni
 sidebar_position: 4
 ---
 
-The printing mask of revaluations prospect enables the user to set the search filters during the data extraction.
+La maschera di stampa del Prospetto rivalutazioni consente di definire i consueti filtri di ricerca all'estrazione dati.
 
-The report enables the user to summarize detail data of revaluations associated to the various fixed assets according to the grouping code set in fixed assets categories table.
+Il report consente di riepilogare i dati di dettaglio delle rivalutazioni associate ai vari cespiti, secondo il codice di raggruppamento impostato in tabella categorie cespiti.
 
-RIBBON BAR: the ribbon bar represents the Form menu, that is the area on which it is possible to perform actions linked to the procedure in use. The possible features list is the following:
+Per ulteriori informazioni sui parametri di filtro della form **[vedere qui](/docs/finance-area/fixed-assets/reports-fixed-assets/yearly-fixed-assets-purchase).**
 
 
 
-| Function | Meaning |
+| Funzione | Significato |
 | --- | --- |
-| Preview | Button to perform the print preview. |
-| Print | Button to print a document. |
+| Anteprima | Pulsante per eseguire l'anteprima di stampa. |
+| Stampa | Pulsante per eseguire la stampa fisica del documento. |
 
 
 

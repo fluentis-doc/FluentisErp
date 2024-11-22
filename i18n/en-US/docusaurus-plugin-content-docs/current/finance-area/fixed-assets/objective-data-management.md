@@ -1,19 +1,19 @@
 ---
-title: Objective Data Management
+title: Gestione dati oggettivi
 sidebar_position: 9
 ---
 
-If the fixed asset category shows the management of 'Objective Depreciations', there will be also the management tab: on this one, the upper grid will present the list of patrimonial operations that are in the fixed asset, taken by the grid and that can be edited partially in this section (cancellations and new lines independent from the official ones are allowed). On the contrary, the grid below will contain the objective calculations of depreciations, according to the fixed asset percentage or objective depreciation type inserted into the same fixed asset header.
+Se la categoria cespite presenta la gestione degli Ammortamenti oggettivi, sarà presente l'omonima scheda di gestione: in questa, la griglia superiore presenterà la lista delle operazioni patrimoniali presenti nel cespite man mano che si vanno ad aggiungere, ma che sono parzialmente modificabili in questa sezione (sono consentite cancellazioni e nuove righe autonome da quelle 'ufficiali'). La griglia inferiore conterrà, invece, i calcoli oggettivi degli ammortamenti, secondo la percentuale del cespite o del tipo ammortamento oggettivo inserito nella testata del cespite stesso.
 
-RIBBON BAR: it represents the Form menu, that is the area in which it is possible to perform actions linked to the fixed asset in management. The list of features  is the following:
+RIBBON BAR: rappresenta il menu della Form in oggetto, ossia l'area nella quale è possibile effettuare delle azioni collegate al cespite in gestione. La lista delle funzionalità possibili è di seguito rappresentata:
 
 
 
-| Function | Meaning |
+| Funzione | Significato |
 | --- | --- |
-| New Operation | It activates the cursor for the insertion of a new objective operation line. |
-| Delete Operation | It deletes the objective operation selected in the grid. |
-| Execute Objective Depreciation | It calculates the objective depreciation for year set in the field above the depreciations grid. |
+| Nuova operazione | Attiva il cursore per l'inserimento di una nuova riga operazione oggettiva. |
+| Cancella operazione | Cancella l'operazione oggettiva selezionata in griglia. |
+| Esegue ammortamento oggettivo | Calcola l'ammortamento oggettivo per l'anno impostato nel campo al di sopra della griglia ammortamenti. |
 
 
 
