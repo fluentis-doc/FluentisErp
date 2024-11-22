@@ -1,32 +1,32 @@
 ---
-title: Intendo Declaration
+title: Dichiarazione di intento
 sidebar_position: 2
 ---
 
-At the opening of the window, it is possible to see the current accounting year.
+All'apertura della finestra viene proposto l'esercizio contabile attuale.
 
-It is possible to print all the Intendo Declarations or filter the report by:
+E' possibile stampare tutte le dichiarazioni di intento o filtrare la stampa per:
 
-**Declaration type**: customer, vendor;
+**Tipo Dichiarazione**: Cliente o Fornitore;
 
-**It is possible to search a customer/vendor register detail account** according to what has been selected in the previous field;
+**Ricercare un Sottoconto di anagrafica cliente o fornitore**: in funzione di quanto selezionato al campo precedente;
 
-**According to the VAT  ref.   From/to.**
+**Numero di ns. protocollo da / a**.
 
-Among the elements that have to be printed it is possible to diversify the description of the field 'VAT office of' and the field  and 'Operation Description'.
+Tra gli elementi da stampare è possibile variare la descrizione del campo Ufficio IVA di -  e il campo Descrizione Operazione.
 
-The date of print is the current date of the system.
+La data di stampa proposta è la data odierna di sistema.
 
-It is possible to set many copies of the declaration; the default value is 1.
+ATTENZIONE:
 
-RIBBON BAR: it represents the form menu, that is the area in which it is possible to perform actions. The list of features is the following:
+Sono presenti diverse stampe selezionabili dalla tendina in alto a sinistra, da combinare per ottenere le diverse parti del modello ministeriale (es. frontespizio, dettagli, plafond).
 
 
 
-| Function | Meaning |
+| Funzione | Significato |
 | --- | --- |
-| Preview | Button to launch the print preview of the Intendo Declarations. |
-| Report | Button to launch the concrete print of the Intendo Declarations. |
+| Anteprima | Pulsante per eseguire l'anteprima di stampa delle dichiarazioni di intento. |
+| Stampa | Pulsante per eseguire la stampa fisica delle dichiarazioni di intento. |
 
 
 

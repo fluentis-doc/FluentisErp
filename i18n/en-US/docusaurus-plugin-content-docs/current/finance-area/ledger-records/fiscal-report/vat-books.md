@@ -1,43 +1,49 @@
 ---
-title: VAT Books
+title: Registri iva
 sidebar_position: 9
 ---
 
-The VAT books report must be made register by register: the total report of the registers belonging to a period is not permitted.
+La stampa dei registri IVA deve essere effettuata singolarmente per ogni registro: non è consentita la stampa complessiva di tutti i registri del periodo.
 
-**VAT period**: at the opening of the mask this field can cover the previous month or quarter (it depends on the settlement settings in the accounting parameters). 
+**Periodo IVA**: All'apertura della maschera questo potrà essere il mese precedente all'attuale nel caso di periodo mensile oppure il trimestre nel caso in cui la periodicità della liquidazione impostata nei parametri di contabilità sia appunto trimestrale;
 
-**Year of reference**: it corresponds to the second field;
+**Anno di riferimento**: viene proposto di default l'anno in corso;
 
-**VAT book to be printed**: this field is not mandatory but the user has to request the summary register report.
+**Registro IVA da stampare**: selezionare il registro da stampare;
 
-**Division**: the VAT book must be printed by company, the user can set this filter only in case of temporary print.
+**Divisione**: non è normalmente da utilizzare, a maggior ragione se non sono presenti varie divisioni;
 
-**VAT Register**: It must be printed per company. It is possible to set this filter only in case in which there is a temporary report.  
-
-The following fields display which is the last number of printed page as regards the register set: then this element is used by the VAT Register table.
-
-The **View Header** flag is already set by default: in the past it was removed when the user had to authenticate the stamped modules of the registers. Nowadays it is not obligatory anymore.  This flag reports the name of the VAT register, of the company and the number/year of the pages.
-
-The **View Document type** flag adds, in the document references, the document type: it can be useful if the selling invoices have many numerations that rely on the same VAT register.
-
-The title of the register is retaken by the name of the VAT register and it is the one reported in the report with the option 'View header'.
-
-By selecting the option 'Definitive' the procedure changes the period of reference in order to make it correspond to the one immediately after the last definitively printed: the division filter and the number of pages to be printed are disabled. The execution of the definitive print preview does not block the period and update counters: it is only the execution of the print process that blocks the period/register in accounting and updates the counter of the pages of the VAT registers Tab (it is not necessary that the print process reaches a good conclusion, it can be a print on a file). By launching the print or the preview the application can verify if there are missing parts in the protocols and if the chronological order has been followed by blocking the definitive print  unless that the control flag of the VAT register has not be disabled. The definitive print does not need to go through the print of the periodic VAT settlement.
-
-The print of the summary register launches the CA_RegistroRiep.rpt report: this kind of report groups the amounts of VAT rate amounts, register by register, with a final summary of all purchase and sales.
-
-RIBBON BAR: it represents the form menu, that is the area in which it is possible to perform actions. The list of features is the following:
+**Riepilogativo**: il flag permette di stampare, sul registro selezionato tramite l'apposito campo, un riepilogo dei registri e dei relativi codici iva movimentati nel mese o trimestre selezionato;
 
 
 
-| Function | Meaning |
+I campi successivi visualizzano qual è l'ultimo numero della pagina stampata per il registro impostato: questo dato viene ripreso dalla tabella Registri IVA.
+
+Il flag **Visualizza intestazione** è già impostato di default: si toglieva quando si dovevano far vidimare i moduli DDTti sui quali stampare i registri, obbligo che non è più previsto. Con questo flag viene riportato il nome del registro IVA, della società e il numero/anno delle pagine.
+
+Il flag **Visualizza tipo documento** farà aggiungere, nei riferimenti dei documenti, anche il tipo del documento: può servire nel caso in cui le fatture di vendita abbiano più numerazioni che fanno capo allo stesso registro IVA.
+
+**Registrazione titolo**: quando il flag Riepilogativo non è attivo è possibile imporre un titolo alla stampa differente rispetto al nome del registro iva che compare per default
+
+Il titolo del registro viene ripreso dal nome del registro IVA e sarà quello riportato in stampa con l'opzione 'Visualizza intestazione'.
+
+**Mensile / Trimestrale**: i due flag riprendono l'impostazione della periodicità iva definità nei parametri di contabilità per memoria ma il settaggio non è modificabile da qui;
+
+ 
+
+Attivando il flag **Definitiva** la procedura andrà a stampare i registri in definitivo bloccando il periodo selezionato per ulteriori modifiche: sarà inoltre disabilitato il filtro per divisione. L'esecuzione dell'anteprima di stampa in definitivo non andrà a bloccare il periodo e aggiornare i contatori: solo l'esecuzione del processo di stampa fisica andrà ad operare il blocco del periodo/registro in contabilità e ad aggiornare il contatore delle pagine della tabella Registri IVA (e non è rilevante che il processo di stampa vada a buon fine o meno, potrebbe essere anche una stampa su file). Eseguendo la stampa o l'anteprima, l'applicativo andrà a verificare se ci sono buchi nella protocollazione e se l'ordine cronologico è stato rispettato, bloccandone la stampa definitiva a meno che per il registro IVA non sia stato disabilitato il flag di controllo in tabella. La stampa definitiva NON è necessaria per procedere alla stampa della liquidazione IVA periodica.
+
+
+
+| Funzione | Significato |
 | --- | --- |
-| Preview | Button to launch the print preview of the VAT register. |
-| Print | Button to launch the print of the VAT register. |
+| Anteprima | Pulsante per eseguire l'anteprima di stampa del registro IVA. |
+| Stampa | Pulsante per eseguire la stampa fisica del registro IVA. |
 
 
-
+:::important Vedi Anche
+[**VIDEO TUTORIALS SULLE STAMPE FISCALI**](/docs/video/finance/intro.md)
+:::
 
 
 

@@ -1,38 +1,47 @@
 ---
-title: Period Balance Sheet
+title: Bilancio d'esercizio
 sidebar_position: 1
 ---
 
-This report has the function to represent a basic prospect of the company balance. It divides by default the four typical sections active/passive/costs/profits. The report only works by accounting accrual date inserted in the record header, regardless of record date on the journal.
+Questo report ha la funzione di presentare un prospetto base del bilancio aziendale, suddividendo di default le quattro sezioni attivo/passivo/costi/ricavi tipiche. Si sottolinea che il report funziona unicamente per data competenza contabile inserita nella testata della registrazione, indipendentemente quindi dalla data di registrazione della stessa a libro giornale.
 
-Options within the mask:
+Inoltre bisogna tener presente che le date di competenza sono state distinte per i conti dello stato patrimoniale, rispetto a quelli economici.
 
-**Negative Sign Amount View**: if it is set, the application enters every detail account in the appropriate section (according to the account type). The negative sign occurs when the balance is in the opposite direction. If the flag is not active, as by default, every detail account is viewed in the section related to its balance;
+![](/img/it-it/finance-area/ledger-records/fiscal-report/period-balance-sheet/image01.png)
 
-**Registers Details**: the application excludes by default the whole detail of the detail accounts linked to the customers/vendors/agents. Only through the related flag the details of these register detail accounts are visible.
+In questo modo è possibile, e raccomandato, mantenere il range di date economiche all'interno dell'anno in corso (esempio 01/01/2018 - 31/12/2018) e portare la data di inizio della competenza contabile patrimoniale fino all'ultima apertura conti (esempio 01/01/2017) nel caso in cui l'anno precedente (2017) non sia stato ancora chiuso. Ciò è necessario in tale situazione per ottenere il corretto saldo attuale dei conti in assenza dei valori di apertura per l'anno in corso che verrebbero altrimenti omessi filtrando normalmente.
 
-**Exclude Interim Account**: interim accounts are viewed at the bottom of the active/passive section. Thanks to this flag, the interim accounts are not visible in the report. Interim accounts never are the object of closure/opening account in the automatic procedure of the application;
+ 
 
-**Comparison with the Previous Year**: thanks to this option the report Previous Year Balances active. It includes a column of the current year and a balance column of the same period but of the previous year;
+Sono possibili vari layout tra i quali una rappresentazione a sezioni contrapposte ed una con raggruppamento al fine di ottenere i totali per conto e per livello della struttura del piano dei conti. La stampa desiderata si può selezionare dalla tendina in alto a sinistra.
 
-**Exclude Template**: in case that the account closure records are found, to get the balance data it is necessary to exclude the movements based on the template of the closure itself. Let the report run without excluding this template will result in a report with all balances=0 (except for Interim account as said above): this can be used as a control check of the good result of the accounts closure.
-
-In the report, it is possible to enter the movements that come from temporary registrations
-
-Last point regards other two files that can be associated through the report management: the report Section Balance displays the balance with opposed sections, the report Group Balance on the other hand displays the structure of the chart of accounts with the related results of the various accounts grouping.
-
-The best flexibility of re-classification (for instance according to the EEC IV directive) can be got through the Balance module and the related reclassification models.
-
-RIBBON BAR: it represents the form menu, that is the area in which it is possible to perform actions. The list of features is the following:
+ 
 
 
 
-| Function | Meaning |
-| --- | --- |
-| Preview | Button to start the preview of the accounting year balance. |
-| Print | Button to start the concrete print of the accounting year balance. |
 
 
+**Visualizzazione importi segno negativo**: se impostato l'applicativo inserirà ogni sottoconto nella sezione di appartenenza (secondo il suo tipo conto) con eventualmente il segno negativo quando il saldo sia nella sezione opposta. Se il flag non è inserito, come di default, ogni sottoconto sarà visualizzato nella sezione relativa al suo saldo;
+
+**Dettaglio della anagrafiche**: di default l'applicativo esclude tutto il dettaglio dei sottoconti collegati ai clienti/fornitori e agli agenti. Solo con il flag relativo saranno visualizzati i dettagli di questi sottoconti di anagrafica;
+
+**Escludi conti d'ordine**: i conti d'ordine sono visualizzati in calce alle sezioni dell'attivo e passivo. Con questo flag i conti d'ordine non saranno visualizzati nel report. Si ricorda, in particolare, che i conti d'ordine non sono mai oggetto di chiusura/apertura conti nella procedura automatica dell'applicativo;
+
+**Comparazione anno precedente**: con questa opzione sarà visualizzata la colonna dell'anno in corso e una per il saldo dello stesso periodo ma dell'anno precedente a quello impostato come filtro
+
+**Escludi causale**: nel caso in cui siano state rilevate le registrazioni di chiusura dei conti, per ottenere i saldi di bilancio sarà necessario escludere i movimenti basati sulla causale di chiusura stessa. Eseguire il report senza escludere questa darà un report con tutti i saldi a zero (salvo i conti d'ordine per quanto detto sopra): questa può essere utilizzato come controllo di verifica dell'effettivo buon fine delle operazioni di chiusura conti effettuate;
+
+È possibile inserire nella stampa anche i movimenti derivanti dalle registrazioni provvisorie.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/E_lIBlV2OXI" title="YouTube video player" frameborder="0" allowfullscreen= "true"></iframe>
+
+---
+
+### Riclassificazione di bilancio per elaborazione bilancio civilistico (schema CEE)
+
+:::important Vedi Anche
+[**VIDEO TUTORIALS SULLE STAMPE FISCALI**](/docs/video/finance/intro.md)
+:::
 
 
 

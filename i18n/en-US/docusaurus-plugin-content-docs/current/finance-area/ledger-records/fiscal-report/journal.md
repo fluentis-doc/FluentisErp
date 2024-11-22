@@ -1,27 +1,39 @@
 ---
-title: Journal
+title: Libro giornale
 sidebar_position: 3
 ---
 
-At the opening of the window, the current accounting year and the related initial data of page number, line and  credit/debit balance  are visible: the program includes a records filter from the date immediately after the last definitive report.
+All'apertura della finestra viene proposto l'esercizio contabile attuale ed il filtro per le registrazioni è settato di default per coprire l'esercizio contabile corrispondente (la data di competenza contabile non viene compilata per default supponendo di voler operare per data "formale"); 
 
-Among the available options, the report headline visualization, useful to manage stamped modules already printed as well as the visualization of the definitive print, is really worth attention.
+vengono riportati i dati iniziali di numero pagina, riga e saldo dare e saldo avere: il programma propone il filtro delle registrazioni tenendo conto anche della data dell'ultima stampa in definitivo.
 
-During the execution of the definitive print, the program controls if previous no-printed records are present as well as the presence, within a date range, of data already reported in the print. Once that the print process has been launched (so the simple preview does not make any operation but it is necessary going through the concrete print even of the files, regardless of the good result of the process), the related records are blocked in the whole fiscal part while the counters memorized in the “Ledger Accounts Parameters” are updated: within this table there are specific user rights to delete the definitive print with the related button: once selected, it is necessary to set the range of dates that have to be unblocked, confirm the operation and then manually update all the related counters.
+![](/img/it-it/finance-area/ledger-records/fiscal-report/journal/image01.png)
 
-The report, at least regarding the definitive operations, is run by setting the range of record dates, month by month.
+ 
 
-RIBBON BAR: the ribbon bar represents the form menu, that is the area on which it is possible to perform actions. The possible feature list is the following:
+POSSIBILI OPZIONI: 
+
+**Visualizza intestazione**: per gestire eventuali moduli DDTti già stampati;
+
+**Definitiva**: attiva la modalità di stampa definitiva che, una volta eseguita, blocca successive modifiche nelle registrazioni contabili del periodo;
 
 
 
-| Function | Meaning |
+All'esecuzione della stampa in via definitiva il programma effettua un controllo sulla presenza di registrazioni antecedenti non stampate e sulla presenza all'interno del range di date già riportati in stampa. Una volta lanciato il processo di stampa (quindi la semplice anteprima non opera alcuna operazione, ma si dovrà eseguire la stampa fisica, anche su file, indipendentemente dal buon fine del processo) le registrazioni relative saranno bloccate in tutta la parte fiscale mentre saranno aggiornati i contatori memorizzati nella tabella  **[Parametri di contabilità:](/docs/configurations/parameters/finance/accounting-parameters)** all'interno di questa tabella è presente il pulsante per la cancellazione delle stampe definitive (può essere posto sotto specifici diritti utente): una volta premuto bisognerà indicare il range di date da sbloccare, dare conferma dell'operazione e poi aggiornare manualmente tutti i relativi contatori;
+
+**Divisione**: permette di gestire la stampa specificando una delle divisioni presenti nel database;
+
+**Da n. registrazione / A nr. registrazione**: permette di filtrare la stampa per numero di registrazione (meno significativo in caso di stampa definitiva).
+
+
+| Funzione | Significato |
 | --- | --- |
-| Preview | Button to start the Journal print preview. |
-| Print | Button to start the concrete print of the Journal. |
+| Anteprima | Pulsante per eseguire l'anteprima di stampa del libro giornale. |
+| Stampa | Pulsante per eseguire la stampa fisica del libro giornale. |
 
 
 
-
-
+:::important Vedi Anche
+[**VIDEO TUTORIALS SULLE STAMPE FISCALI**](/docs/video/finance/intro.md)
+:::
 
