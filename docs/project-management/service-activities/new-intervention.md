@@ -238,3 +238,27 @@ In seguito vengono cercate le configurazioni per tipo intervento (corrispondenza
 
 
 In base a queste corrispondenze verranno utilizzate le configurazioni più consone. Se non si trova alcuna corrispondenza, il piano di fatturazione rimarrà vuoto. 
+
+##Esempi di calcolo piano di fatturazione
+Poniamo che la configurazione attuale per gli esempi a seguire sia:
+
+>Fascia oraria: lun-ven 08.00-20.00 massimo giornaliero 8 ore
+>Arrotondamento: fino ad 8 ore si arrotonda di 2 in 2, dalle 8 ore in poi si arrotonda alla mezz'ora. 
+>Ovvero: servizio 3.15 h --> diventeranno 4 ore fatturabili; servizio di 7.30h --> diventeranno 8 ore fatturabili; 8.15 di servizio --> diventeranno 8.30 fatturabili. 
+>Ore di viaggio incluse nei servizi: abilitato
+
+Gli orari così impostati, non indicano che l'attività si svolgerà dalle 08.00 alle 20.00, ma che nell'arco di questo orario si possono svolgere al massimo 8 ore dopo le quali scatterà il calcolo del fuori orario. Così come lo superamento di questa fascia oraria farà scattare il calcolo del fuori orario, anche se inferiore alle 8 ore. 
+
+
+:::note[Esempio 1] 
+
+:::
+
+:::note[Esempio 2]
+>Ore di viaggio: data 05/09 - 2 h
+>Servizio: data 06/09 - 08.30-12.30/14.00-18.00 - 8 h
+
+>Piano di fatturazione: servizio 06/09 8 h. 
+In questo caso le ore di viaggio non sono considerate perchè essendo attiva l'opzione di considerare le ore di viaggio come un servizio, nella giornata del 05/09 non essendoci nessun servizio a cui accorpare le ore di viaggio, queste non sono considerate nel piano di fatturazione. 
+
+:::

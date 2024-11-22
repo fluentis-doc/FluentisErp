@@ -1,6 +1,6 @@
 ---
 title: Gestione automezzo
-sidebar_position: 2
+sidebar_position: 1
 ---
 
 La tabella si trova sul percorso **Logistica > Automezzi > Gestione automezzo**.
@@ -20,9 +20,9 @@ Per il nuovo record si devono inserire almeno i campi obbligatori richiesti dal 
 
 *Campi specifici*: 
 
-> **Tipo automezzo**: indica il tipo di automezzo, ch epuò essere codificato nella tabella [Tipo automezzo](/docs/configurations/tables/logistics/motorvehicle-types/);            
+> **Tipo automezzo**: indica il tipo di automezzo, che può essere codificato nella tabella [Tipo automezzo](/docs/configurations/tables/logistics/motorvehicle-types/);            
 > **Codice**: indica il codice dell'automezzo;               
 > **Descrizione**: indica la descrizione dell'automezzo;         
-> **Classe/Codice/Descrizione**: permette di collegare l'automezzo ad un articolo presente in angrafica inserendo classe, codice e descrizione.   
+> **Classe/Codice/Descrizione**: permette di collegare l'automezzo ad un articolo presente in anagrafica inserendo classe, codice e descrizione.   
 
 Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).

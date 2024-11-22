@@ -1,6 +1,6 @@
 ---
 title: Gestione Unità di misura principale e alternativa
-sidebar_position: 5
+sidebar_position: 4
 ---
 
 Questa funzionalità permette di definire e utilizzare diverse unità di misura per lo stesso prodotto in contesti differenti, come la vendita, l'acquisto o la gestione del magazzino.

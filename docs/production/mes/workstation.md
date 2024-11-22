@@ -1,6 +1,6 @@
 ---
 title: Workstation
-sidebar_position: 2
+sidebar_position: 3
 ---
 
 :::important A cosa serve
