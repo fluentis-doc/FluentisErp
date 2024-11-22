@@ -1,21 +1,47 @@
 ---
-title: Day Book
+title: Brogliaccio
 sidebar_position: 2
 ---
 
-The Day Book Report is a temporary print of the journal. To be noticed, as alternative tabs, are a tab to find possible unbalanced records and a tab that summarizes the data of every tabs visualized in the record.
+Il 'Brogliaccio' è una stampa provvisoria del libro giornale. 
 
-RIBBON BAR: it represents the Form menu, that is the area in which it is possible to perform actions. The list of features is the following: 
+Sono presenti varie versioni della stampa (secondo diversi layout) selezionabili tramite la combo box in alto a sinistra.
+
+Possibilità di filtrare per:
+
+- Date delle registrazioni contabili (da - a);
+
+- Date di competenza **contabile** delle registrazioni (da - a), da non confondere con il concetto di competenza economica;
+
+- Numero delle registrazioni contabili (da - a ) e protocollo iva (da - a);
+
+- Registro IVA che contiene i movimenti che saranno restituiti (se non viene selezionato saranno esposti tutti i movimenti)
+
+- Widget per selezionare un sottoconto al fine di restituire solo i movimenti che contengono il sottoconto inserito
 
 
 
-| Function | Meaning |
+- Tipo documento presente nella testata della registrazione contabile
+
+- Operatore che ha creato le registrazioni
+
+- Causale contabile con la quale sono state create le registrazioni. 
+
+**Si ricorda che è possibile selezionare più di una voce dalle combo box tenendo premuto il tasto Ctrl.**
+
+
+
+
+
+| Funzione | Significato |
 | --- | --- |
-| Preview | Button to perform the print preview.  |
-| Print | Button to print document.  |
+| Anteprima | Pulsante per eseguire l'anteprima di stampa. |
+| Stampa | Pulsante per eseguire la stampa fisica del documento. |
 
 
-
+:::important Vedi Anche
+[**VIDEO TUTORIALS SULLE STAMPE CONTABILI**](/docs/video/finance/intro.md)
+:::
 
 
 

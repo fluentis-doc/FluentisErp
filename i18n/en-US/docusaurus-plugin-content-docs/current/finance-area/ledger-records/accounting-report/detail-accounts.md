@@ -1,21 +1,33 @@
 ---
-title: Detail Accounts
+title: Sottoconti
 sidebar_position: 6
 ---
 
-The report enables the user to view the detail of the movements of various accounting detail accounts.
+La stampa visualizza il dettaglio dei movimenti dei vari sottoconti contabili.
 
-RIBBON BAR: it represents the Form menu, that is the area in which it is possible to perform actions. The list of features is the following:
+Il layout è simile alla stampa **[Estratto conto](/docs/finance-area/ledger-records/accounting-report/account-statement)** di cui rappresenta, in qualche modo, una versione semplificata ed al quale si rinvia.
+
+ 
+
+ELEMENTI SPECIFICI:
+
+ 
+
+Visualizza descrizione: attivando questo flag viene visualizzata in stampa la colonna descrizione movimento che riporta il contenuto della riga descrittiva di dettaglio per quel sottoconto presente nella registrazione contabile.
 
 
 
-| Function | Meaning |
+
+
+| Funzione | Significato |
 | --- | --- |
-| Preview | Button to perform the print preview.  |
-| Print | Button to print document.  |
+| Anteprima | Pulsante per eseguire l'anteprima di stampa. |
+| Stampa | Pulsante per eseguire la stampa fisica del documento. |
 
 
-
+:::important Vedi Anche
+[**VIDEO TUTORIALS SULLE STAMPE CONTABILI**](/docs/video/finance/intro.md)
+:::
 
 
 

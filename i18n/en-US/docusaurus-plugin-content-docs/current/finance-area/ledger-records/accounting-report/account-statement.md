@@ -1,35 +1,94 @@
 ---
-title: Account Statement
+title: Estratto Conto
 sidebar_position: 3
 ---
 
-It is the basic report to get the details of the accounting movements of every detail account of any kind (active, passive, cost, profit, register): with the standard report for every detail account there is a new print sheet.
+Si tratta del report base per ottenere il dettaglio dei movimenti contabili di ogni sottoconto, qualsiasi sia il tipo (attivo, passivo, costo, ricavo, anagrafici): con il report standard per ogni sottoconto ci sarà un nuovo foglio di stampa.
 
-Report distinctive elements are:
+Questa stampa corrisponde a ciò che, nella terminologia contabile, viene definito "mastrino".
 
-- Through an agent filter it is possible to request the Account Statement of the customers that have this agent in the register;
+**PRINCIPALI FILTRI**:
 
-- through 'View Amounts in Currency' it is possible to request data (A4 format, horizontal). Without this flag it is possible to see only debit/credit data in the currency of the company (A4 format, vertical) or to set the 'View Offset' with the number of movements of the offset to be showed (A4 format, horizontal). Finally it is possible to view the movement expressed with a specific currency (A4 format, horizontal). These settings are recorded at single user level in order to view them at the next mask opening;
+- Dati relativi alla registrazione contabile
 
-- it is possible to sort records by record date or by accrual date. This setting is recorded at single user level and re-occurs at the next mask opening. The option is interesting if the account closing/opening is made with different record/accrual dates in order to get a meaningful progressive balance;
+   - **Conto**: Sottoconto di riferimento (ad esempio per visualizzare i movimenti ed il saldo risultante di un determinato fornitore per un certo range di date, oppure per  visualizzare i ricavi riferiti ad un determinato sottoconto del piano dei conti);
 
-- It is extremely important explain the management of the filters by dates in respect of the 'Account Opening Last Date'. In the 'Account View', movements of every detail account are always visible; on the contrary, the report is a print process that takes in great consideration the amount of records to be viewed in order to optimize performances of the machine. In this sense, the application, suggest movements while printing, considering the original balance starting from the date of the last account opening. To simplify, if the user filters movements from the 09/01/2007 to 12/31/2007 (both as record date and accrual date) the procedure suggest the last account opening with date 01/01/2007, the result is: original balance calculated from 01/01/2007 to 08/31/2007, detail of movements linked to records with date within the range 09/01 21/31/2007 (so the report includes just the detail accounts that have at least a movement between the last  date of account opening and the final date of the filter). If the user deletes the last date of opening account the result will be the same as the one in the account view.
+   - Data registrazione
 
-The last detail worth mentioning is the standard file called  Synthetic  Account Statement that can be linked to the report; it is a synthetic report that enlists all the detail accounts, without any page interruption. We suggest to use this report to print t-account to be attached to the accounting year closing reports.
+   - Data competenza **contabile**
 
-The standard report  Account Statement (offset) and Account Statement (no currency) are not used but, thanks to some parameters in the same standard report Account Statement, they are integrated.
+   - Numero registrazione
 
-RIBBON BAR: it represents the form menu, that is the area in which it is possible to perform actions. The list of features is the following:
+   - Tipo / Data / numero documento in testata registrazione (se presenti - possono non essere presenti data e numero documento per le registrazioni di prima nota)
+
+   - Tipo conto
+
+- Dati IVA
+
+   - Registro
+
+   - Protocollo (aprire l'expander)
+
+- Tipo di registrazioni (provvisorie e/o definitive)
+
+ 
+
+**ALTRI ELEMENTI CARATTERISTICI DEL REPORT**:
 
 
 
-| Function | Meaning |
+- filtri **Agente** e **Banca**: è possibile richiedere ad esempio l'estratto conto di tutti i clienti nella cui anagrafica è stato inserito questo agente, oppure di tutti i fornitori pagati tramite un certo conto bancario.
+
+- filtro **Progetti** (ex Commesse): è possibile filtrare i sottoconti collegati ad un determinato progetto (commessa).
+
+
+
+- **Visualizza importi in valuta**: con flag attivo saranno riportati anche gli importi in valuta (accanto agli importi in euro, senza alcun raggruppamento) senza questo flag, saranno visualizzati solo i  dati dare/avere nella divisa della società, 
+
+- **Visualizza contropartite**: il flag attivo visualizza i movimenti di contropartita riferiti ai movimenti del sottoconto selezionato (formato A4 orizzontale)
+
+- **No. righe**: in questo campo, attivo se il flag di cui sopra viene attivato, viene specificato quante righe di contropartita inserite nella sezione Libro giornale della **[registrazione contabile](/docs/finance-area/ledger-records/records/create-ledger-record/record-tab)** saranno visualizzate in estratto conto. Ad esempio in presenza di diversi conti di ricavo riferiti alla registrazione di una fattura emessa, il valore può essere aumentato se nella stampa non vengono riportati tutti i conti di contropartita così come inseriti nella registrazione.
+
+- **Annotazioni**: questo campo permette di inserire dati alfanumerici che saranno riportati nella stampa. Può essere utile per inserire un'annotazione veloce che rimane valida solo per la stampa elaborata in quel momento, il campo infatti si resetta chiudendo la form.
+
+
+
+
+
+Possibilità di visualizzare i movimenti espressi in una specifica divisa tramite: 
+
+- **Visualizza E/C in valuta**: flag che attiva anche la combo box per la scelta della valuta e disattiva il flag Visualizza importi in valuta e Visualizza contropartite
+
+permette inoltre di raggruppare i movimenti per ogni singola valuta e di totalizzarli
+
+
+
+- **Divisa**: permette di selezionare la divisa di riferimento per filtrare l'esposizione dei valori. Saranno dunque mostrati soltanto i valori denominati nella valuta selezionata per il sottoconto selezionato.
+
+
+
+
+
+E' possibile ordinare le registrazioni per data registrazione o per data competenza. L'opzione diventa di particolare interesse nel caso in cui la chiusura/riapertura conti sia effettuata con data registrazione e competenza differenti, al fine di avere un saldo progressivo significativo;
+
+ 
+
+**Data ultima apertura conti**: A differenza della **[Visualizzazione conti](/docs/finance-area/ledger-records/records/view-accounts)**, nel quale sono sempre visibili tutti i movimenti di ogni sottoconto, il report di stampa è un processo dove è importante limitare la numerosità dei record da visualizzare per non inficiare le prestazioni della macchina. 
+
+In questo senso l'applicativo proporrà in stampa i movimenti considerando il saldo iniziale a partire dalla data ultima apertura conti, che viene proposta come la data più alta che sia antecedente ai filtri iniziali del report.
+
+Esempio: se l'utente filtra i movimenti dal 01/09/2017 al 31/12/2017 (sia come data reg. che comp.), la procedura propone ultima apertura conti con data 01/01/2017, il risultato sarà: saldo iniziale calcolato dal 01/01/2017 al 31/08/2017, dettaglio dei movimenti collegati a registrazioni con data all'interno del range 01/09-31/12/2017 (per cui, nel report saranno inseriti solo i sottoconti che hanno almeno un movimento tra la data ultima apertura conti e la data finale di filtro). Se l'utente, invece, cancella la data ultima apertura conti il risultato sarà identico a quello presente nella visualizzazione conti.
+
+**Visualizza sintetico**: si tratta di un report sintetico che presenta la lista di tutti i sottoconti senza alcun salto pagina. Si consiglia l'uso di questo report per stampare i mastrini da allegare alle stampe di chiusura dell'esercizio contabile.
+
+
+
+| Funzione | Significato |
 | --- | --- |
-| Preview | Button to perform the print preview of the account statement.  |
-| Print | Button to print the account statement document.  |
+| Anteprima | Pulsante per eseguire l'anteprima di stampa dell'estratto conto. |
+| Stampa | Pulsante per eseguire la stampa fisica del documento estratto conto. |
 
 
-
-
-
-
+:::important Vedi Anche
+[**VIDEO TUTORIALS SULLE STAMPE CONTABILI**](/docs/video/finance/intro.md)
+:::
