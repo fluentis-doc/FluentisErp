@@ -1,78 +1,78 @@
 ---
-title: Creazione fattura di acquisto da xml
+title: Create Purchase Invoice from XML
 sidebar_position: 4
 ---
 
-Il bottone **Creazione fattura di acquisto** è disponibile nella ribbon bar del Registro documenti Sdi, accessibile da Applications > BizLink > Documenti SDI > Documenti acquisto in entrata.
+The button **Create Purchase Invoice** is available in the ribbon bar of the ES Document Log, accessible from Applications > BizLink > ES Documents > Incoming Purchase Documents.
 
-:::note Nota
-Per attivare il bottone si deve settare da SQL nella tabella fluentis.SDI_CompanyConfiguration il flag SDICFC_PurchaseInvoiceCreation.
+:::note Note
+To activate the button, the flag SDICFC_PurchaseInvoiceCreation must be set in the fluentis.SDI_CompanyConfiguration table via SQL.
 :::
 
-Una volta selezionata una riga, esso permette di creare una fattura nei documenti del ciclo passivo dopo aver importato o ricevuto da FBH il documento sdi in formato xml. 
-E' quindi possibile procedere per poterla agganciare all’evasione di DDT e ordini ai quali fa riferimento.
+Once a row is selected, it allows for the creation of an invoice in the passive cycle documents after importing or receiving the ES document in XML format from FBH. 
+It is therefore possible to proceed to attach it to the fulfillment of Purchase Delivery Note and orders to which it refers.
 
-Una volta cliccato il bottone di Creazione fattura di acquisto, si aprirà una finestra in cui indicare il conto del fornitore da utilizzare. Se il conto non esiste, sarà possibile crearlo.
-Una volta confermato il conto, si aprirà un’ulteriore finestra Valori da utilizzare, nella quale vengono richiesti i seguenti dati:
+After clicking the Create Purchase Invoice button, a window will open to specify the supplier account to use. If the account does not exist, it will be possible to create it.
+Once the account is confirmed, another window titled Values to Use will open, requesting the following data:
 
 ![](/img/it-it/finance-area/e-invoice/purchase-invoice-creation/img1.png)
 
-**Tipo fattura di acquisto:** indicare la tipologia di documento da creare;
+**Type of Purchase Invoice:** specify the type of document to create;
 
-**Articoli:** indicare gli articoli che andranno a far parte della fattura di acquisto;
+**Items:** specify the items that will be part of the purchase invoice;
 
-**IVA:** indicare l’aliquota da applicare;
+**VAT:** specify the applicable tax rate;
 
-**Tipo pagamento:** contiene la tipologia di pagamento da inserire nel documento per il fornitore.
+**Payment Type:** contains the payment type to be entered in the document for the supplier.
 
-Tutti questi dati possono essere impostati come default da proporre per le volte successive con il flag **Salva impostazioni**, presente accanto ad ogni dato da utilizzare.
+All these data can be set as default to propose for subsequent times using the flag **Save Settings**, present next to each data to be used.
 
-Una volta impostati tutti i campi e premuto OK, si aprirà la fattura di acquisto creata; essa avrà la tipologia, l’articolo e l’IVA prescelti. Se l’articolo non viene riconosciuto come codificato, verrà inserito un articolo non codificato. 
-Gli altri dati vengono presi di default dall’anagrafica del fornitore. È possibile modificare manualmente la fattura e salvarla.
+Once all fields are filled in and OK is pressed, the created purchase invoice will open; it will have the chosen type, item, and VAT. If the item is not recognized as coded, an uncoded item will be inserted. 
+Other data is retrieved by default from the supplier's register. It is possible to manually modify and save the invoice.
 
 ---
 
-Per la creazione di fattura con **ARTICOLI CODIFICATI** (riconoscimento automatico delle anagrafiche articoli presenti su Fluentis) è necessario procedere come segue al fine di permettere il riconoscimento, diversamente sarà creata una fattura con righe di tipo 2 (non codificato).
+For creating invoices with **CODED ITEMS** (automatic recognition of item registers present in Fluentis), it is necessary to proceed as follows to allow for recognition; otherwise, an invoice will be created with type 2 lines (uncoded).
 
-Le anagrafiche articolo potranno avere una codifica interna anche diversa da quella usata dal fornitore che sta inviando la fattura.
+Item registrers may have an internal coding that differs from that used by the supplier sending the invoice.
 
-Esempio: Codice - MATCH1  Descrizione - PT 2,5 BU
-Dentro questa anagrafica dovrà essere valorizzata la sezione del *fornitore preferenziale* con indicazione del fornitore in questione e relativa codifica adottata dal fornitore per questo articolo.
+Example: Code - MATCH1  Description - PT 2.5 BU
+Within this register, the section of *preferential vendor* must be populated with the indication of the relevant supplier and the corresponding coding adopted by the supplier for this item.
 
 ![](/img/it-it/finance-area/e-invoice/purchase-invoice-creation/img5.png)
 
-Il fornitore potrebbe adottare un tipo di codifica o anche più di uno come visibile nell'immagine.
+The supplier may adopt a type of coding or even more than one as visible in the image.
 
 ![](/img/it-it/finance-area/e-invoice/purchase-invoice-creation/img3.png)
 
-Ad esempio una codifica EAN o di altro tipo.
+For example, an EAN code encoding or some other type.
 
-:::danger Attenzione
-Verrà letta la prima codifica presente nel documento xml, nell'esempio la codifica di tipo SA mentre la codifica EAN sarà ignorata, dunque dovrà essere gestito questo primo riferimento
+:::danger Attention
+The first coding present in the XML document will be read; in this example, the SA type coding will be utilized while the EAN coding will be ignored, thus this first reference must be managed.
 :::
 
-All'interno dell'anagrafica del fornitore dovrà dunque essere inserito il codice del tipo codifica valido per il fornitore stesso (tab *Informazioni fiscali*)
+Within the supplier register, the valid coding type for that supplier must therefore be inserted (tab *Fiscal Information*).
 
 ![](/img/it-it/finance-area/e-invoice/purchase-invoice-creation/img6.png)
 
-Se le configurazioni vengono fatte correttamente il risultato della creazione della fattura è il seguente, dove si può notare che è presente una riga non codificata per le spese di trasporto non previste a priori.
+If the configurations are done correctly, the result of the creation of the invoice is as follows, where you can notice that there is an uncoded line for unanticipated transport costs.
 
 ![](/img/it-it/finance-area/e-invoice/purchase-invoice-creation/img4.png)
 
 ---
 
-Nella ribbon bar della testata è presente il bottone **Sdi – Chiusura documenti** che permette di agganciare un ddt di acquisto alla fattura di acquisto appena creata. 
+In the ribbon bar of the header, there is the button **Sdi – Closing Documents** that allows you to link a Purchase Delivery Note to the purchase invoice just created. 
 
-Una volta cliccato il bottone si aprirà una finestra in cui sono presenti dei filtri da impostare per avere una ricerca più mirata dei ddt di acquisto da abbinare: è possibile inserire il Tipo DDT di acquisto, il numero, il Fornitore, ecc.
+Once the button is clicked, a window will open where there are filters to set for a more targeted search of the Purchase Delivery Notes to match: you can enter the Purchase Delivery Note Type, number, Supplier, etc.
 
-Premendo il tasto Ricerca, nelle griglie sottostanti verranno presentati i ddt di acquisto sulla sinistra, e le fatture di acquisto sulla destra, che è possibile abbinare. 
+By pressing the Search button, the Purchase Delivery Notes will be displayed on the left, and the purchase invoices on the right that can be matched.
 
-Selezionando i documenti o le singole righe nella griglie e cliccando il tasto **Collegamenti** nella ribbon bar, verrà effettuato il collegamento tra i documenti. 
+By selecting the documents or individual rows in the grids and clicking the **Links** button in the ribbon bar, the linking between documents will be executed.
 
-Uscirà una finestra per avvisare l’Operazione completata ed un’altra finestra Riepilogo Sdi –
-Documenti di chiusura con i dettagli del collegamento
+A window will appear to notify the operation is completed and another window Sdi - Closing Documents Summary – 
+Closure Documents with the details of the connection.
 
 
 ![](/img/it-it/finance-area/e-invoice/purchase-invoice-creation/img2.png)
 
-Da questo momento il ddt di acquisto e la fattura sono collegati. È possibile verificare il collegamento all’interno della Fattura di acquisto, che contiene il riferimento al ddt nel tab Articoli
+From this moment, the Purchase Delivery Note and the invoice are linked. It is possible to verify the connection within the Purchase Invoice, which contains the reference to the Purchase Delivery Note in the Items tab.

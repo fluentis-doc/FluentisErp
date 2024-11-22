@@ -1,53 +1,47 @@
 ---
-title: Documenti esteri in uscita
+title:Outgoing foreign purchase documents
 sidebar_position: 5
 ---
-:::tip[Nota]
-**Adempimento superato** per quanto riguarda gli acquisti dall'attuale invio allo sdi di [**autofattura**](/docs/finance-area/e-invoice/auto-invoice/auto-invoice-generation).
-Per quanto riguarda le vendite attualmente si procede all'invio diretto delle fatture (vedi sotto)
+:::tip[Note]
+**Compliance met** regarding purchases from the current submission to the ES of [**Selfbilling**](/docs/finance-area/e-invoice/auto-invoice/auto-invoice-generation).
+As for sales, the direct sending of invoices is currently being carried out (see below).
 :::
 
 
-La normativa prevedeva di inviare all'Agenzia delle Entrate anche i dati relativi alle operazioni di cessione beni/prestazioni servizi EFFETTUATE e RICEVUTE da soggetti NON identificati/non residenti nel territorio dello Stato.
+The regulations required sending to the Revenue Agency also the data related to the transactions of goods/services PERFORMED and RECEIVED by subjects NOT identified/non-resident in the territory of the State.
 
-- Per i documenti **EMESSI** è possibile utilizzare il medesimo tracciato previsto per le fatture elettroniche italiane; in alternativa possono essere inviati con il tracciato previsto per i documenti esteri di acquisto di cui al punto seguente.
+- For **ISSUED** documents, it is possible to use the same format provided for Italian electronic invoices; alternatively, they can be sent with the format provided for foreign purchase documents as outlined in the following point.
 
-- Per l'invio al Sdi dei documenti di acquisto da fornitori esteri è previsto un ** [tracciato apposito](/docs/finance-area/declarations/declarations/electronic-invoice-for-foreign) **.
+- For sending to the ES of purchase documents from foreign suppliers, a **[dedicated format](/docs/finance-area/declarations/declarations/electronic-invoice-for-foreign)** is provided.
 
-La firma digitale per entrambe le tipologie di file è obbligatoria.
+The digital signature is mandatory for both types of files.
 
-L'invio al SdI di questi file viene gestito in Fluentis attraverso le operazioni di cambio stato dei documenti.
+The sending of these files to the ES is managed in Fluentis through the status change operations of the documents.
 
-Il documento XML viene quindi trasmesso al SdI che lo controlla e lo acquisice e restituisce le notifiche relative all'eventuale scarto dovuto alla mancata conformità del file oppure dell'avvenuta acquisizione.
+The XML document is then transmitted to the ES, which checks and acquires it, returning notifications regarding any rejection due to non-compliance of the file or of successful acquisition.
 
-**Dalla presente form è possibile gestire singolarmente per ogni documento, oppure massivamente per molteplici documenti in contemporanea, il cambio stati per l'invio all'SDI seguendo il medesimo tracciato delle fatture italiane.**
+**From this form, it is possible to manage individually for each document or massively for multiple documents simultaneously, the status change for sending to the ES following the same format as Italian invoices.**
 
-Nella Form Documenti acquisti esteri in uscita vengono visualizzati tutti i file prodotti dalle Registrazioni contabili e relativi a questa tipologia di accadimento. La form è suddivisa in una sezione superiore nella quale vengono esposti i filtri di selezione dei file gestiti, tra i quali :
-
-
- - Da data/ A data di ricevimento:
- - Da data/A data di ricezione cliente:
-
-Nella griglia dei risultati vengono visualizzati i dati relativi ai file gestiti o da gestire:
+In the Outgoing Foreign Purchase Documents form, all files produced by the ledger records related to this type of occurrence are displayed. The form is divided into an upper section where the selection filters managed files are presented, including:
 
 
- - **Stato SdI**: accoglie la descrizione dello stato del documento, riportando sia lo stato di gestione interno di Fluentis sia lo stato riportato da Fluentis Business Hub e acquisito direttamente da SdI.
- - **Nome file SdI**: il nome del file che viene creato nel momento in cui il documento viene avanzato nello stato GENERATA; nel formato originale o successivamente all'apposizione della firma digitale, rappresenta il file di fattura da inviare a SdI.
- - **Sdi Id**: l'identificativo univoco che il SdI attribuisce al documento nel momento della ricezione
- - **Data ultimo evento**: la data dell'ultimo cambio stato avvenuto sul file o manualmente o per effetto dell'avanzamento dell'elaborazione sul SdI
+- From date / To date of receipt:
+- From date / To date of customer receipt:
 
-Nel ribbon menu sono presentate le funzioni di gestione del documento o dei documenti selezionati:
+In the results grid, the data regarding the managed or to-be-managed files are displayed:
 
-il pulsante ![](/img/neutral/common/view.png) **Visualizza** consente di visionare il   dove è possibile prendere visione degli eventi collegati al file XML generato, eseguirne lo scarico o modificarne lo stato:
+
+- **ES Status**: includes the description of the document's status, reporting both the internal management status of Fluentis and the status reported by Fluentis Business Hub, directly acquired from the ES.
+- **ES File Name**: the name of the file that is created when the document is advanced to the GENERATED status; in the original format or after the application of the digital signature, represents the invoice file to be sent to the ES.
+- **ES Id**: the unique identifier that the ES assigns to the document upon receipt.
+- **Date of last event**: the date of the last status change that occurred on the file, either manually or as a result of the processing advancement on the ES.
+
+In the ribbon menu, the functions for managing the selected document(s) are presented:
+
+the button ![](/img/neutral/common/view.png) **View** allows you to view the document where you can see the events related to the generated XML file, download it, or modify its status:
 
 ![](/img/it-it/finance-area/sdi-documents/outgoing-foreign-purchase-documents/image02.png)
 
-- il pulsante ![](/img/it-it/finance-area/sdi-documents/outgoing-foreign-purchase-documents/image03.png)   **Scarica allegato** esegue il download del file selezionato su una cartella di filesystem prescelta.
+- the button ![](/img/it-it/finance-area/sdi-documents/outgoing-foreign-purchase-documents/image03.png) **Download attachment** downloads the selected file to a chosen filesystem folder.
 
-- il pulsante ![](/img/it-it/finance-area/sdi-documents/outgoing-foreign-purchase-documents/image04.png) **Apri documento**  apre la registrazione contabile relativa al file selezionato
-
-
-
-
-
-
+- the button ![](/img/it-it/finance-area/sdi-documents/outgoing-foreign-purchase-documents/image04.png) **Open document** opens the ledger record related to the selected file.

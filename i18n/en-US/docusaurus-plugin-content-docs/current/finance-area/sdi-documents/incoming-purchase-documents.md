@@ -1,225 +1,217 @@
 ---
-title: Documenti Acquisto in entrata
+title: Incoming Purchase Documents
 sidebar_position: 3
 ---
 
- ### SCARICO AUTOMATICO DELLE FATTURE DI ACQUISTO DALLO SDI
+### AUTOMATIC DISCHARGE OF PURCHASE INVOICES FROM ES
 
- - **ABBINAMENTO DELLE FATTURE ELETTRONICHE D'ACQUISTO ALLE REGISTRAZIONI O DOCUMENTI**
- - **CONTABILIZZAZIONE AUTOMATICA DELE FATTURE ELETTRONICHE D'ACQUISTO**
+- **MATCHING OF ELECTRONIC PURCHASE INVOICES TO RECORDS OR DOCUMENTS**
+- **AUTOMATIC ACCOUNTING OF ELECTRONIC PURCHASE INVOICES**
 
-In Fluentis è possibile, una volta configurato il servizio Fluentis Business Hub, ricevere le fatture passive provenienti dai fornitori e che transitano dal Sistema di Interscambio.
+In Fluentis, once the Fluentis Business Hub service is configured, it is possible to receive passive invoices from suppliers that transit through the Interchange System.
 
-Una delle modalità d visualizzazione di tali documenti è tramite la gestione delle fatture nella funzione **Documenti acquisto in entrata**. La form di gestione si presenta suddivisa in una sezione di testata, con i campi di filtro per la ricerca dei documenti, e una griglia di risultato.
+One way to visualize these documents is through the management of invoices in the **Incoming Purchase** function. The management form is divided into a header section, with filter fields for document searches, and a results grid.
 
--      **Stato Sdi**: lo stato del documento una volta acquisito in Fluentis:
-
-
- - **Non assegnato** : la fattura non è stata ancora abbinata ad una registrazione contabile o ad una fattura emessa dal ciclo passivo o documento emesso nei confronti di un percipiente
+- **ES Status**: the status of the document once acquired in Fluentis:
 
 
- - **Ricevuta** : la fattura è stata abbinata
+  - **Unassigned**: the invoice has not yet been matched to a ledger record, an issued invoice from the passive cycle, or a document issued to a professional 
+ 
+ 
+  - **Received**: the invoice has been matched
 
--      **Tipo**: il codice di riferimento del tipo documento (fattura di acquisto)
+- **Type**: the reference code of the document type (purchase invoice)
 
--      **Data doc.def., Numero doc.def:**  data e numero del documento acquisito
+- **Doc.Def. Date, Doc.Def. Number (Data doc.def., Numero doc.def.):** date and number of the acquired document
 
--      **Fornitore:** l'emittente del documento
+- **Supplier:** the issuer of the document
 
--      **Nome file SdI**: il nome del file XML presente nel sistema di interscambio ed inviato da quest'ultimo al Fluentis Business Hub.
+- **ES File Name:** the name of the XML file present in the interchange system and sent by it to the Fluentis Business Hub.
 
--      **Data ultimo evento**: si riferisce all'ultima azione compiuta dall'operatore o all'ultima notifica ricevuta dal SdI durante il processo di gestione del documento
+- **Last Event Date:** refers to the last action performed by the operator or the last notification received from the ES during the document management process
 
-Nel ribbon menu:
+In the ribbon menu:
 
--       il pulsante  **![](/img/it-it/finance-area/sdi-documents/incoming-purchase-documents/image01.png) Apri documento **è abilitato solo se il documento selezionato è nello stato **RICEVUTA** e apre la registrazione contabile/documento di acquisto/fattura compenso a cui il file XML risulta abbinato
+- The button **![](/img/it-it/finance-area/sdi-documents/incoming-purchase-documents/image01.png) Open Document** is enabled only if the selected document is in the **RECEIVED** status and opens the accounting entry/purchase document/invoice to which the XML file is matched
 
--      il pulsante ![](/img/neutral/common/view.png) **Visualizza** consente di visionare il file XML selezionato  con l'apertura del **Registro documenti SdI  **dove è possibile visualizzare le azioni svolte sul documento e scaricare gli allegati****:
+- The button **![](/img/neutral/common/view.png) View** allows you to view the selected XML file by opening the **ES Document Register**, where you can view the actions taken on the document and download attachments:
 
--     il pulsante   ![](/img/it-it/finance-area/sdi-documents/incoming-purchase-documents/image03.png)”**Scarica allegato**” esegue il download del file XML selezionato
-
-
+- The button **![](/img/it-it/finance-area/sdi-documents/incoming-purchase-documents/image03.png) Download Attachment** downloads the selected XML file
 
 
 
-### IMPORTAZIONE MANUALE FATTURE ELETTRONICHE
-
-Per l'importazione manuale di fatture elettroniche è stato progettato un apposito comando  ![](/img/it-it/finance-area/sdi-documents/incoming-purchase-documents/image04.png) il quale aprirà in automatico una finestra dove andare a selezionare il/i file da importare nel registro dei documenti SDI.
 
 
-### ABBINAMENTO DELLE FATTURE ELETTRONICHE D'ACQUISTO
+### MANUAL IMPORT OF ELECTRONIC INVOICES
 
-Dopo aver eseguito la ricerca dei documenti in entrata,  utilizzando la funzione ![](/img/neutral/common/view.png)**Visualizza  **oppure con l'azione doppio click in corrispondenza del file da gestire, è possibile abbinare il file XML ad una registrazione contabile o a un documento di acquisto oppure ancora ad una registrazione di compensi, cliccando in corrispondenza della riga relativa ad un file XML, entrando nel dialogo di gestione del file e utilizzando le funzioni
+For the manual import of electronic invoices, a specific command **![](/img/it-it/finance-area/sdi-documents/incoming-purchase-documents/image04.png)** has been designed, which will automatically open a window to select the file(s) to be imported into the SDI document register.
 
--  ![](/img/it-it/finance-area/sdi-documents/incoming-purchase-documents/image06.png)  **Collega agli acquisti**  oppure
 
-- ![](/img/neutral/common/posting.png)**Collega alle registrazioni **oppure ancora
+### MATCHING OF ELECTRONIC PURCHASE INVOICES
 
--**![](/img/it-it/finance-area/sdi-documents/incoming-purchase-documents/image08.png)Collega ai percipienti**
+After searching for incoming documents using the **![](/img/neutral/common/view.png) View** function or by double-clicking on the file to be managed, it is possible to match the XML file to an accounting entry or a purchase document or again to a compensation entry, by clicking on the corresponding line related to an XML file, entering the file management dialog and using the functions:
+
+- **![](/img/it-it/finance-area/sdi-documents/incoming-purchase-documents/image06.png) Assign to purchases** or
+
+- **![](/img/neutral/common/posting.png) Assign to Postings** or again
+
+- **![](/img/it-it/finance-area/sdi-documents/incoming-purchase-documents/image08.png) Assign to Professionals**
 
 ![](/img/it-it/finance-area/sdi-documents/incoming-purchase-documents/image09.png)
 
-Cliccando in corrispondenza di una delle tre funzioni sopra indicate, viene visualizzato un dialogo di ricerca rispettivamente dei documenti di acquisto registrati nel ciclo passivo di Fluentis, nelle registrazioni contabili relative agli acquisti, nei documenti relativi ai compensi di percipienti.
+Clicking on one of the three functions mentioned above will display a search dialog for registered purchase documents in the passive cycle of Fluentis, in the accounting records related to purchases, or in documents related to recipients' compensations.
 
 ![](/img/it-it/finance-area/sdi-documents/incoming-purchase-documents/image10.png)
 
-Eseguendo la ricerca tramite il pannello di filtro presentato nel dialogo di ricerca e selezionando un elemento della griglia dei risultati,   il documento XML viene contrassegnato con lo stato **Ricevuta**, in corrispondenza della Transizione Documento ricevuto viene indicata data e ora dell'abbinamento. Il documento potrà anche essere modificato nuovamente nello stato **Non assegnato** nel caso si renda necessario tornare allo stato precedente.
+By searching through the filter panel presented in the search dialog and selecting an item from the results grid, the XML document is marked with the status **Received**, and the date and time of the matching are indicated next to the Document Received Transition. The document can also be modified back to the **Unassigned** status if necessary.
 
-### CONTABILIZZAZIONE AUTOMATICA
+### AUTOMATIC ACCOUNTING
 
-Fluentis inoltre, dà la possibilità, partendo dalla fattura d'acquisto ricevuta, di creare in automatico la relativa registrazione contabile. Basterà selezionare la fattura d'acquisto desiderata e successivamente cliccare il pulsante “**CREAZIONE REGISTRAZIONE**”.
+Fluentis also allows for the automatic creation of the corresponding accounting entry starting from the received purchase invoice. It will be enough to select the desired purchase invoice and then click the **CREATE RECORD** button.
 
 ![](/img/it-it/finance-area/sdi-documents/incoming-purchase-documents/image11.png)
 
-SOMMARIO DI MASSIMA:
+### SUMMARY OF MAJOR POINTS:
 
-Se il fornitore indicato nella fattura non è presente all'interno delle anagrafiche contatti, comparirà una finestra che darà la possibilità di creare l'anagrafica relativa. Il software compilerà in maniera automatica le generalità del fornitore e basterà solamente compilare i campi specifici.
+If the supplier indicated in the invoice is not present in the contacts register, a window will appear that allows you to create the corresponding register. The software will automatically fill in the supplier's details, and you will only need to fill in the specific fields.
 
-Successivamente si inseriranno i valori da utilizzare per la registrazione, specificando: la causale, il costo/ricavo di contropartita predefinito, l'aliquota IVA utilizzata ed infine la tipologia di pagamento.
+Subsequently, the values to be used for the entry will be entered, specifying: the reason, the default counter cost/revenue, the VAT rate used, and finally the payment type.
 
-Un flag darà la possibilità di salvare le impostazioni per le registrazioni successive, senza l'obbligo di andarle ad inserire ogni volta.
+A flag will allow you to save the settings for subsequent entries, without the need to enter them each time.
 
-In automatico dando l''OK' si verrà indirizzati nella Tab delle registrazioni contabili dove è possibile controllare il corretto inserimento di dati e volendo andare ad integrare la registrazione.
+Automatically, by clicking ‘OK,’ you will be directed to the Ledger Records tab where you can check the correct entry of data and, if desired, integrate the record.
 
-Andando a salvare  lo stato della fattura da "non esaminata" si aggiornerà a “Ricevuta”.
+Saving the invoice status from "not examined" will update it to “Received.”
 
-### DETTAGLI FUNZIONE DI CREAZIONE AUTOMATICA REGISTRAZIONI
+### DETAILS OF AUTOMATIC RECORD CREATION FUNCTION
 
-**PARAMETRI CREAZIONE REGISTRAZIONE**
+**RECORD CREATION PARAMETERS**
 
-All'interno della form dei “Documenti acquisto in entrata”, selezionando il pulsante ‘Parametri creazione registrazioni' si aprirà questa configurazione
+Within the “Incoming Purchase Documents” form, selecting the 'Record Creation Parameters' button will open this configuration:
 
- ![](/img/it-it/finance-area/sdi-documents/incoming-purchase-documents/image12.png)
+![](/img/it-it/finance-area/sdi-documents/incoming-purchase-documents/image12.png)
 
-all'interno della quale ogni utente può configurare le seguenti opzioni di gestione:
+Within it, each user can configure the following management options:
 
-A)     Data registrazione proposta
+A) Proposed registration date 
 
-B)     Visualizza dati di dettaglio
+B) View detail data (Visualizza dati di dettaglio)
 
-Con la prima, l'utente può scegliere se farsi assegnare l'ultima data registrazione introdotta (per il registro iva della causale preimpostata/selezionata), la data odierna, oppure la data dell'ultimo evento del file stesso (cioè la data di ricezione dallo Sdi)
+With the first option, the user can choose to be assigned the last recorded record date (for the IVA register of the pre-set/selected reason), the current date, or the date of the last event of the file itself (i.e., the date of receipt from the ES).
 
-Con la seconda, l'utente imposta la visualizzazione della maschera di gestione del file stesso, dove saranno già valorizzate eventuali configurazioni salvate nell'anagrafica del fornitore che ha emesso il file. In questa form sarà quindi possibile modificare eventuali opzioni già memorizzate oppure sovrascrivere quanto proposto per adattarlo all'esigenza del momento, prima di creare la registrazione. Senza questo flag, invece, la maschera di aprirebbe solo nel caso Fluentis non avesse tutti i parametri per impostare la registrazione risultante, tipicamente per una nuova tipologia iva o pagamento utilizzata dal fornitore rispetto ai precedenti già gestiti dall'utente.
+With the second option, the user sets the view of the management mask of the file itself, where any saved configurations in the supplier's register that issued the file will already be populated. In this form, it will be possible to modify any previously stored options or overwrite what is proposed to adapt it to the current requirement before creating the record. Without this flag, the mask would only open in case Fluentis does not have all the parameters to set the resulting record, typically for a new VAT or payment type used by the supplier that differs from those previously managed by the user.
 
-**FLUSSO OPERATIVO**
+**OPERATIONAL FLOW**
 
-Quando il file che è stato selezionato è in stato ‘Non assegnato', cioè non collegato ad una registrazione contabile, si può procedere alla sua contabilizzazione tramite il pulsante ‘Creazione registrazione':
+When the selected file is in the ‘Unassigned’ status, i.e., not linked to an accounting record, you can proceed to its accounting by clicking the ‘Create Record’ button:
 
 ![](/img/it-it/finance-area/sdi-documents/incoming-purchase-documents/image13.png)
 
-Una volta premuto questo pulsante Fluentis analizzerà il file per individuare, tramite la partita iva del cedente prestatore, il sottoconto del fornitore. A seconda dei casi potrà apparire uno dei seguenti messaggi:
+Once this button is pressed, Fluentis will analyze the file to identify, through the VAT number of the issuer, the supplier's detail account. Depending on the cases, one of the following messages may appear:
 
-**caso 1**, non viene individuato nessun fornitore
+**Case 1**, no supplier is identified
 
-viene richiesto di creare un nuovo soggetto
+You will be prompted to create a new entity:
 
 ![](/img/it-it/finance-area/sdi-documents/incoming-purchase-documents/image14.png)
 
-Premendo ‘Si' si aprirà automaticamente la maschera di creazione di una nuova anagrafica, nella quale sarà stata impostata la partita iva del soggetto riprendendone i dati dal database comunitario del Vies: sarà necessario entrare nella scheda ‘Dati contabili' per assegnare un codice contabile di tipo fornitore alla nuova anagrafica. E' necessario salvare per poter proseguire nella procedura, se si chiude senza salvare la procedura di contabilizzazione verrà annullata con questo messaggio
+Pressing ‘Yes’ will automatically open the new register creation mask, in which the supplier's VAT number will be set by retrieving its data from the community database of Vies: it will be necessary to access the 'Accounting Data' tab to assign a supplier type accounting code to the new register. It is essential to save to proceed with the procedure; if you close without saving, the accounting procedure will be canceled with this message:
 
 ![](/img/it-it/finance-area/sdi-documents/incoming-purchase-documents/image15.png)
 
-**caso 2**, ci sono più sottoconti di tipo fornitore collegati ad un'anagrafica con la partita iva del cedente/prestatore
+**Case 2**, there are multiple supplier-type detail accounts linked to a register with the issuer's VAT number
 
-verrà richiesto quale sottoconto utilizzare con questa maschera:
+You will be prompted which detail account to use with this mask:
 
 ![](/img/it-it/finance-area/sdi-documents/incoming-purchase-documents/image16.png)
 
-**caso 3**, il fornitore è stato individuato in modo univoco
+**Case 3**, the supplier is uniquely identified
 
-se il fornitore è già presente, o se in questo documento per la prima volta è stato inserito un articolo codificato da parte del fornitore, Fluentis individuerà il primo ‘Tipo codice articolo' presente nel file (potrebbero essercene N: codice fornitore, codice cliente, EAN13, nomenclatura, ecc. ecc.) per chiedere conferma di quale sarà la codifica articolo da memorizzare per questo soggetto, ad esempio
+If the supplier is already present, or if this document contains a newly coded item from the supplier for the first time, Fluentis will identify the first ‘Item Code Type’ present in the file (there may be several: supplier code, customer code, EAN13, nomenclature, etc.) to ask for confirmation of which item coding will be stored for this entity, for example:
 
 ![](/img/it-it/finance-area/sdi-documents/incoming-purchase-documents/image17.png)
 
-La fase successiva dipende dal parametro utente ‘Visualizza dati di dettaglio' o dal fatto che il file in gestione sia il primo per questo soggetto o se in esso è presente una codifica che Fluentis non sa come gestire per questo soggetto. Se è la prima fattura che si riceve da questo fornitore e non vi sono impostazioni predefinite nella sua anagrafica, allora si aprirà sempre una maschera come questa
+The next phase depends on the user parameter ‘View detailed data’ or whether the file being processed is the first for this entity or if it contains a coding that Fluentis does not know how to manage for this entity. If it is the first invoice received from this supplier and there are no predefined settings in their register, then a mask like this will always open:
 
 ![](/img/it-it/finance-area/sdi-documents/incoming-purchase-documents/image18.png)
 
-nella quale Fluentis richiede di definire
+In which Fluentis requests to define:
 
-1)     qual è la causale da utilizzare
+1) which reason to use
 
-2)     qual è il costo di contropartita predefinito
+2) what the default offset cost is
 
-3)     visualizza la lista degli articoli presenti in fattura, per dare la possibilità di associare un sottoconto specifico a determinati articoli
+3) view the list of items present in the invoice, to allow for the assignment of a specific detail account to certain items
 
-4)     visualizza la lista delle aliquote o esenzioni applicate nel castelletto iva del file
+4) view the list of VAT rates or exemptions applied in the VAT box of the file
 
-5)     visualizza le tipologie di pagamento utilizzate nel file
+5) view the payment types used in the file
 
-Ognuna di queste tipologie di dato prevede l'opzione di salvataggio della selezione effettuata, in modo da riutilizzarla nelle fatture che si riceveranno in seguito dallo stesso soggetto.
+Each of these types of data allows the option to save the selected choice, to reuse it for invoices received subsequently from the same entity.
 
-Nel caso in cui questo non sia il primo file e l'utente abbia impostato il flag ‘Visualizza dati di dettaglio', questa stessa maschera sarà visualizzata con già assegnati eventuali valori già memorizzati precedentemente nell'anagrafica del fornitore che ha emesso il file, per consentirne una modifica prima della creazione della registrazione contabile.
+In case this is not the first file and the user has set the ‘View detailed data’ flag, this same mask will be viewed with any values previously stored in the supplier's register that issued the file for modification before creating the accounting record.
 
-Nel caso in cui questo non sia il primo file e l'utente non abbia impostato flag ‘Visualizza dati di dettaglio', allora potrebbe aprirsi una maschera di configurazione per i soli valori che Fluentis non sa come gestire rispetto alle configurazioni già memorizzate nell'anagrafica del fornitore che ha emesso il file: ad esempio è la prima volta che emette fattura con tipo pagamento MP12 invece che il precedente MP05, o un nuovo codice di esenzione iva.
+If this is not the first file and the user has not set the ‘View detailed data’ flag, then a configuration mask may open for only the values that Fluentis does not know how to manage concerning the configurations already stored in the supplier's register that issued the file: for example, it is the first time they issue an invoice with payment type MP12 instead of the previous MP05, or a new VAT exemption code.
 
-Vediamo ora, nella maschera suddetta, quali sono le caratteristiche specifiche delle 5 tipologie suddette
+Now let's see, in the aforementioned mask, what the specific characteristics of the 5 types mentioned above are:
 
-1) causale
+1) template 
 
- nella causale da utilizzare saranno visibili le causali che hanno come tipo documento uno di quelli codificato con il ‘TD' utilizzato dal fornitore nel file. Se non dovessero esserci causali con queste caratteristiche, la tendina mostrerà tutte le causali contabili (es.: non si è codificato una causale specifica per i documenti TD24 e si vuole utilizzare la causale dell'acquisto con il TD01)
+   In the reason to be used, the templates that have a document type coded with the 'TD' used by the supplier in the file will be visible. If there are no templates with these characteristics, the dropdown will display all accounting templates (e.g., a specific template was not coded for documents TD24 and the purchase template with TD01 is to be used).
 
-2) contropartita predefinita
+2) Offset Cost/Revenue (defined)
 
- in questo campo si può definire il sottoconto di costo standard da assegnare a tutte le righe articolo per le quali non si sia memorizzato un sottoconto specifico
+   In this field, the standard cost detail account to be assigned to all item lines for which a specific detail account has not been stored can be defined.
 
-3) griglia articoli
+3) Item grid
 
- in questa griglia si ha visibilità dei codici e descrizioni di riga presenti nel file, per poter assegnare sottoconti specifici a determinati articoli presenti in fattura. Nel caso che l'articolo sia un articolo codificato, Fluentis memorizzerà questo codice per individuarlo nei documenti successivi, se l'articolo non è codificato si memorizzeranno le descrizioni di riga dell'articolo (i primi 200 caratteri).
+   In this grid, you can see the codes and descriptions of line items present in the file, to assign specific detail accounts to certain items present in the invoice. If the item is a coded item, Fluentis will store this code to identify it in subsequent documents; if the item is not coded, the line descriptions of the item (the first 200 characters) will be stored.
 
-4) griglia iva
+4) VAT grid 
 
- all'interno di questa griglia avremo il castelletto iva, con la percentuale applicata dal fornitore oppure la natura dell'esenzione utilizzata. Fluentis andrà a memorizzare la percentuale (es. 22.00) oppure il codice d'esenzione utilizzato dal fornitore con la relativa aliquota selezionata dall'utente
+   Within this grid, we will have the VAT box, with the percentage applied by the supplier or the nature of the exemption used. Fluentis will store the percentage (e.g., 22.00) or the exemption code used by the supplier with the corresponding rate selected by the user.
 
-5) griglia pagamenti
+5) Payment grid 
 
- sarà presentata la lista dei codici pagamento (con l'eventuale descrizione utilizzata nel file) per poterne assegnare la corrispondente tipologia di Fluentis
+   The list of payment codes (with any description used in the file) will be presented to assign the corresponding Fluentis type.
 
-Avremo quindi memorizzato le varie opzioni da utilizzare, come in questo esempio:
+We will thus have recorded the various options to use, as in this example:
 
 ![](/img/it-it/finance-area/sdi-documents/incoming-purchase-documents/image19.png)
 
-La fase conclusiva sarà la creazione della registrazione contabile: una volta confermate le configurazioni inserite, oppure direttamente dopo la lettura del file se queste fossero già state memorizzate e l'utente non avesse impostato il flag ‘Visualizza dati di dettaglio', si aprirà la registrazione contabile valorizzata con i dati del file stesso.
+The final phase will be the creation of the ledger record: once the entered configurations are confirmed, or directly after reading the file if they have already been stored and the user has not set the ‘View detailed data’ flag, the ledger record populated with the data of the file itself will open.
 
 ![](/img/it-it/finance-area/sdi-documents/incoming-purchase-documents/image20.png)
 
-La registrazione può essere ulteriormente modificata in questa fase, ma queste modifiche non andranno a influire sulle configurazioni già memorizzate nella fase precedente.
+The record can be further modified at this stage, but these modifications will not affect the configurations already stored in the previous phase.
 
-Nel caso in cui non si completasse il salvataggio della registrazione, Fluentis annullerà le operazioni eseguite sul file che resterà nello stato ‘Non assegnato': le eventuali configurazioni già salvate nel processo, invece, saranno mantenute all'interno dell'anagrafica fornitore.
+If the record saving is not completed, Fluentis will cancel the operations performed on the file, which will remain in the ‘Unassigned’ status: any configurations already saved in the process will be retained within the supplier's register.
 
-### ANAGRAFICA FORNITORI: CONFIGURAZIONE IMPORT F.E.
+### SUPPLIER REGISTER: F.E. IMPORT CONFIGURATION
 
-Le configurazioni memorizzate nel corso della gestione dei vari files sono memorizzate all'interno delle varie anagrafiche fornitori nella scheda ‘Configurazione import F.E.'.
+The configurations stored during the management of the various files are kept within the various supplier registers in the ‘F.E. Import Configuration’ tab.
 
-Ecco il risultato della memorizzazione nell'esempio utilizzato:
+Here is the result of storing in the example used:
 
 ![](/img/it-it/finance-area/sdi-documents/incoming-purchase-documents/image21.png)
 
-In questa griglia ritroviamo, in pratica, le sezioni che abbiamo memorizzato in precedenza.
+In this grid, we essentially find the sections we previously stored.
 
-Nel primo campo indichiamo cosa andiamo a memorizzare nella riga: il tipo documento, il tipo di cessione/prestazione, la percentuale iva e la sua natura, il tipo di pagamento. A seconda di questa tipologia di riga si attiveranno i campi successivi: nel ‘Codice P.A.' saranno visualizzati la lista dei codici ufficiali che si possono utilizzare nei file (dai tipi documento, alle nature iva, al tipi pagamento, …), nelle colonne successive si indicheranno la causale, piuttosto che l'aliquota iva, o il tipo pagamento, o il sottoconto contabile di Fluentis. Nel campo ‘Valore fornitore', invece, avremo tipicamente i dati ‘liberi' che il fornitore può inserire nel file: in particolare, la percentuale iva (22.00, 10.00 ecc.) ma soprattutto il codice o la descrizione della riga articolo.
+In the first field, we indicate what we are storing in the row: document type, type of transfer/service, VAT percentage and its nature, payment type. Depending on this row type, the subsequent fields will be activated: in the ‘P.A. Code’, the list of official codes that can be used in the files (from document types to VAT natures to payment types, etc.) will be viewed; in the subsequent columns, the reason, VAT rate, payment type, or Fluentis accounting detail account will be indicated. In the ‘Supplier Value’ field, we will typically have the ‘free’ data that the supplier may include in the file: in particular, the VAT percentage (22.00, 10.00, etc.) but mainly the code or description of the item line.
 
-Il ‘costo di contropartita predefinito' (punto 2 dell'elenco sopra), viene memorizzato nel campo standard del sottoconto di contropartita dell'anagrafica, qui:
+The 'Offset Cost/Revenue (defined)' (point 2 of the above list) is stored in the standard offset detail account field of the register, here:
 
 ![](/img/it-it/finance-area/sdi-documents/incoming-purchase-documents/image22.png)
 
-Il “Tipo codice articolo fornitore”, infine, è presente nella scheda ‘Informazioni fiscali':
+The “Supplier Item Code Type", finally, is present in the 'Fiscal Information' tab:
 
 ![](/img/it-it/finance-area/sdi-documents/incoming-purchase-documents/image23.png)
 
-È quindi possibile intervenire anche in questi punti per rivedere le impostazioni già memorizzate e modificarle in vista delle contabilizzazioni successive.
+It is therefore possible to intervene at these points to review the settings already stored and modify them in view of future accountings.
 
-### CANCELLAZIONE DI UNA REGISTRAZIONE CREATA AUTOMATICAMENTE
+### CANCELLATION OF AN AUTOMATICALLY CREATED RECORD
 
-Procedere nel seguente modo:
+Proceed as follows:
 
-- Annullare il collegamento automatico tra il documento SDI e la registrazione riportando il documento SDI nello stato **non assegnato** (utilizzando l'apposita tendina raggiungibile sia dalla maschera con la lista documenti SDI in entrata, sia dalla maschera con la lista delle registrazioni contabili)
-
-- Procedere cancellando la registrazione contabile normalmente come fosse inserita dalla procedura di prima nota.
-
-
-
-
-
-
-
+- Cancel the automatic link between the ES document and the record, bringing the ES document back to the **unassigned** status (using the appropriate dropdown accessible from the document list mask for incoming ES, as well as from the accounting records list mask)
+- Proceed to delete the accounting record normally as if it were entered from the journal procedure.

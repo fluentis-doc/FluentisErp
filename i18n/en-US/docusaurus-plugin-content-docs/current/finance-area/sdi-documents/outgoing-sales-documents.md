@@ -1,49 +1,42 @@
 ---
-title: Documenti Vendita in uscita
+title: Outgoing Sales Documents 
 sidebar_position: 2
 ---
 
-La form “**Documenti vendita in uscita**“ è divisa in due sezioni, una di testata che contiene i campi di filtro utilizzabili per filtrare i documenti e una griglia di risultato della ricerca effettuata:
+The form "**Outgoing Sales Documents**" is divided into two sections: a header that contains the filter fields used to filter the documents, and a result grid of the performed search:
 
-## Pulsanti della ribbon bar:
+## Buttons on the ribbon bar:
 
-- Ricerca: avvia la ricerca nella griglia di risultato secondo i dati presenti nei filtri della testata
-- Visualizza: apre il visualizzatore integrato per la visione del file xml secondo il foglio di stile già pre-caricato dentro Fluentis al fine di consentire la visione "in chiaro"
-- Apri documento: viene aperto il documento fattura riferito al file xml in questione
-- **Scarica allegato:** viene scaricato localmente nel pc copia del file xml al fine di gestirlo ad esempio con servizi di invio di terze parti
-- **Ricarica file:** E’ attivo quando la riga è in stato *Generata* e permette di ricaricare il file da un folder esterno (locale o di rete); utile per consentire di ricaricare un xml nel quale si è dovuto intervenire manualmente per settare qualche tag particolare o non gestito (senza dover passare per lo step *firmata* come sin passato).
-Fluentis verifica che il file abbia lo stesso nome e che l’xml sia sintatticamente corretto, ma non fa un test sulla struttura Sdi (quindi un tag sbagliato o con valori errati non riceverà nessun messaggio e non avverrà l'invio Sdi). Nel log relativo al file, (premendo ad esempio Visualizza) nel campo **Informazioni** viene riportata la dicitura che il file è stato sovrascritto manualmente e la data.
+- Search: initiates the search in the result grid according to the data present in the header filters
+- View: opens the integrated viewer to display the XML file according to the pre-loaded stylesheet within Fluentis to allow for "clear" viewing
+- Open document: opens the invoice document related to the XML file in question
+- **Download attachment:** downloads a copy of the XML file locally to the PC to manage it, for example, with third-party sending services
+- **Reload file:** Active when the row is in *Generated* status and allows reloading the file from an external folder (local or network); useful to allow reloading an XML in which manual intervention was needed to set some specific or unmanaged tag (without having to go through the *signed* step as in the past). Fluentis checks that the file has the same name and that the XML is syntactically correct but does not test the ES structure (therefore, an incorrect tag or one with wrong values will not receive any message and the ES sending will not occur). In the log related to the file, (for example, by pressing View), the **Information** field indicates that the file has been manually overwritten and the date.
 
 
-## Valori presentati nella griglia:
 
--      **Stato SdI**: lo stato del documento relativo al suo invio al SdI tramite Fluentis Business Hub
+## Values presented in the grid:
 
--      **Tipo**: il codice di riferimento del tipo documento di vendita
+-      **ES Status:** the status of the document regarding its sending to the ES via Fluentis Business Hub
 
--      **Data**,**Numero,Cliente :** la data, il numero del documento e il cliente intestatario
+-      **Type:** the reference code for the type of sales document
 
--      **Data di ricevimento del cliente**: la data consegna del documento al cliente oppure la data di “messa a disposizione” del documento sull'area riservata del cliente. Quest'ultima casistica si riferisce agli invii per cui il SdI non riesce ad individuare correttamente il committente/cessionario
+-      **Date, Number, Customer:** the date, the document number, and the customer invoice holder
 
--      **Nome file SdI:** il nome del file il nome del file XML che viene creato nel momento in cui il documento viene avanzato nello stato GENERATA; nel formato originale o successivamente all'apposizione della firma digitale, rappresenta il file di fattura da inviare a SdI.
+-      **Customer Received Date:** the delivery date of the document to the customer or the date of "making available" the document in the customer's reserved area. The latter case refers to instances where the ES is unable to accurately identify the principal/cessionary.
 
--      **Data ultimo evento**: si riferisce all'ultima azione compiuta dall'operatore o all'ultima notifica ricevuta dal SdI durante il processo di gestione del documento
+-      **ES File Name:** the name of the XML file created when the document is moved to the GENERATED state; in its original format or after applying the digital signature, it represents the invoice file to be sent to ES.
 
-Cliccando in corrispondenza dell'expander di una fattura (pulsantino + all'estrema sinistra)  si apre il dettaglio delle transizioni relative agli stati del documento e vengono visualizzate le singole transizioni intervenute nella gestione del documento con la relativa data di esecuzione e il nome dell'eventuale file generato dal cambio stato:
+-      **Date of Last Event:** refers to the last action taken by the operator or the last notification received from the ES during the document management process.
+
+By clicking on the expander next to an invoice (the + button at the far left), the details of the transitions related to the document's states are opened, and the individual transitions occurring in the document management along with their execution dates and the name of any file generated by the state change are displayed:
 
 ![](/img/it-it/finance-area/sdi-documents/outgoing-sales-documents/image02.png)
 
-I documenti presentati nella griglia Registro dei documenti SdI sono tutti quelli creati dal flusso attivo di gestione dei documenti Fattura, indipendentemente dallo stato; l'azione doppio click in corrispondenza di una riga di fattura apre il pannello  nel quale è possibile visionare i documenti creati durante la gestione del file fattura e lo storico delle transizioni.
+The documents presented in the ES Document Log grid are all those created from the active invoice document management flow, regardless of their status; a double-click action on a row of an invoice opens the panel where the documents created during the management of the invoice file and the history of transitions can be viewed.
 
 ![](/img/it-it/finance-area/sdi-documents/outgoing-sales-documents/image03.png)
 
-Nella griglia Registro documenti SdI, selezionando un documento fattura o più documenti fattura nel medesimo stato, è possibile gestire lo stato di lavorazione del documento utilizzando la combo Stato nella ribbon menu e selezionando il nuovo stato del documento:
+In the ES Document Log grid, by selecting an invoice document or multiple invoice documents in the same status, it is possible to manage the document processing state using the State combo in the ribbon menu and selecting the new document status:
 
 ![](/img/it-it/finance-area/sdi-documents/outgoing-sales-documents/image04.png)
-
-
-
-
-
-
-
