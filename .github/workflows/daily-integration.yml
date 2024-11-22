@@ -13,7 +13,7 @@ jobs:
     steps:
       # Step 1: Checkout the repository
       - name: Checkout repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       # Step 2: Fetch all branches
       - name: Fetch all branches
@@ -37,11 +37,18 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          
+
+          git checkout website-edits
+          git pull --rebase origin main
+          git push --force-with-lease origin website-edits
+
           # Create a unique branch for the PR
           BRANCH_NAME="chore_automated_update_main_from_website-edits_$(date +%s)"
+          
+          #sync website-edits with main
           git checkout -b $BRANCH_NAME origin/website-edits
           git push origin $BRANCH_NAME
+          echo "website-edits successfully rebased and synced with main."
 
           # Create the pull request
           PR_URL=$(gh pr create --title "Automated PR: Sync website-edits with main" \
@@ -69,12 +76,12 @@ jobs:
           gh pr merge "$PR_URL" --auto --squash --delete-branch
 
           # Sync website-edits with main using rebase
-          echo "Syncing website-edits with main using rebase..."
-          git checkout website-edits
-          git pull --rebase origin main
-          git push --force-with-lease origin website-edits
+          #echo "Syncing website-edits with main using rebase..."
+          #git checkout website-edits
+          #git pull --rebase origin main
+          #git push --force-with-lease origin website-edits
 
-          echo "website-edits successfully rebased and synced with main."
+          #echo "website-edits successfully rebased and synced with main."
 
       # Step 6: Log if no changes
       - name: No changes detected
