@@ -1,49 +1,34 @@
 ---
-title: Search Compensations
+title: Ricerca compensi
 sidebar_position: 1
 ---
 
-The search compensations procedure has been created to enable the user to search easily the compensations previously inserted in order to view, to edit and to delete them, if necessary. Starting from search compensations procedure it is possible to perform all the necessary operations about a document, after having obtained particular user's rights.
-
-The search compensations procedure consists as follows:
-
-RIBBON BAR: it represents the Form menu, that is the area in which it is possible to perform actions about a pre-existing document, rather than to create a new one. The list of features is the following:
 
 
-
-| Function | Meaning |
+| Funzione | Significato |
 | --- | --- |
-| Search Compensations | Button to insert search filters within database of the inserted compensations. |
-| New Compensation | It refers to the procedure to insert a new compensation. |
-| Edit Compensations | It refers to the procedure to edit a previously inserted compensation. |
-| View Compensations | It refers to the procedure to view a previously inserted compensation. |
-| Delete Compensations | It performs the procedure to delete a previously inserted compensation. |
-| Withholding-Tax Paying-In | It manages data of performed payments, see application a. |
+| Ricerca | Pulsante per applicare i filtri di ricerca all'intero database dei compensi inseriti. |
+| Nuovo | Richiama la procedura per inserire un nuovo compenso. |
+| Modifica | Richiama la procedura per modificare un compenso precedentemente inserito. |
+| Visualizzazione | Richiama la procedura per visualizzare un compenso precedentemente inserito. |
+| Cancella | Esegue la procedura per cancellare un compenso precedentemente inserito. |
+|  [Versamenti ritenuta](/docs/finance-area/professional-men/search-compensations/withholding-tax-paying-in)  | Apre la gestione dei dati dei versamenti effettuati. |
 
 
 
-| Function | Meaning |
+| Funzione | Significato |
 | --- | --- |
-| Report – Withholding-Tax Certification | It refers to the procedure to print periodic certifications of withholding-tax. |
-|  [Report – Withholding-Tax Situation](/docs/finance-area/professional-men/reports/withholding-tax-situation)  | It refers to the procedure to print the situation regarding the paid or to be paid withholding-tax  for payments about the selected period. |
+| Stampa certificazione ritenute (nel gruppo Ritenute a Titolo d'acconto) | Richiama la procedura per stampare le certificazioni periodiche delle ritenute. |
+|  [Stampa Situazione ritenute (nel gruppo Ritenute a Titolo d'acconto)](/docs/finance-area/professional-men/reports/withholding-tax-situation)  | Richiama la procedura per stampare la situazione delle ritenute versate/da versare per i pagamenti del periodo selezionato. |
 
 
 
-| Function | Meaning |
+| Funzione | Significato |
 | --- | --- |
-| F24 Model | It refers to the procedure to manage data of F24 module. |
-|  [Compensations Accounting](/docs/finance-area/professional-men/accounting/compensation-accounting/compensations-accounting)  | It refers to the procedure to perform the compensations accounting. |
-|  [Enasarco Accounting](/docs/finance-area/professional-men/accounting/enasarco-accounting/enasarco-accounting-intro)  | RIt refers to the procedure to perform the accounting of tributes due to Enasarco Institution. |
-|  [Payments Accounting](/docs/finance-area/professional-men/accounting/payments-accounting/payments-accounting-intro)  | It refers to the procedure to perform the accounting of payments to professional men, that will detect the withholding-tax and any additional national insurance charges. |
-
-FILTER AREA: the filter area contains the list of data types thanks to which it is possible to perform a selection, a research on the total of compensations inserted. Typically filters have always 'AND' condition and it is possible to specify more search filters at the same time.
-
-RESULT GRID: the result grid represents the list of compensations that correspond to filter data, above mentioned. After having specified values through which to obtain a compensations research, the user, by clicking on the [Search Compensations] button on the related Ribbon, will obtain the list of the desired compensations on the result grid.
-
-APPLICATIONS:
-
-
- 1. Withholding-Tax Paying-In [IDD_VERSAM]: in this mask it is possible to filter payments that have been performed during month in order to assign to these ones the paying-in references with F24 model without entering to each compensation in order to insert them one by one. Once having filtered and selected compensations, it is necessary to set data on 'paying-in' section and then to assign them through 'Set Paying-In' button.
+| Modello F24 | Richiama la procedura per gestire i dati del modello F24. |
+|  [Contabilizzazione compensi](/docs/finance-area/professional-men/accounting/compensation-accounting/compensations-accounting)  | Richiama la procedura per effettuare la contabilizzazione dei compensi. |
+|  [Contabilizzazione Enasarco](/docs/finance-area/professional-men/accounting/enasarco-accounting/enasarco-accounting-intro)  | Richiama la procedura per effettuare la contabilizzazione dei tributi dovuti all'ente Enasarco. |
+|  [Contabilizzazione pagamenti](/docs/finance-area/professional-men/accounting/payments-accounting/payments-accounting-intro)  | Richiama la procedura per effettuare la contabilizzazione dei pagamenti ai professionisti, che rileverà le ritenute e gli eventuali oneri INPS. |
 
 
 
