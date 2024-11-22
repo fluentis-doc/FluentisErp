@@ -1,37 +1,29 @@
 ---
-title: Moratory Interests Calculation Parameters
+title: Parametri di calcolo interessi moratori
 sidebar_position: 3
 ---
 
-In the first tabulator on the left there is a list of selection flags regarding maturity values types for which to calculate interest rates, while on 'other' field there is a filter field per account/detail account codes. Below this, it is necessary to set the default rate type to be applied and flags that guide the calculation logic:
+Nella form sono presenti una lista di flag di selezione dei tipi di partite per le quali procedere al calcolo dei tassi di interesse, mentre in altro è presente un campo di filtro per codici di conto/sottoconto. Al di sotto di questo si deve impostare il tipo di tasso di default da applicare e i flag che guidano la logica di calcolo:
 
-**Calculate per maturity values closed in period**: the procedure will verify the maturity values that became closed within the dates range set and it will calculate the interests value. So as regards partial payments no interest will be calculated;
+**Calcola per le partite chiuse nel periodo**: la procedura andrà a verificare le partite che sono diventate chiuse all'interno del range di date impostate e solo per queste andrà a calcolare il valore degli interessi, quindi per i pagamenti parziali non sarà conteggiato alcun interesse;
 
-**Calculate for payments of period: **the procedure will identify payments recorded within the dates range and on these amounts it will be possible to calculate the related interests value: this setting is recommended;
+**Calcola per i pagamenti del periodo**: la procedura andrà a individuare i pagamenti registrati all'interno del range di date e su questi importi andrà a calcolare il valore degli interessi relativi: questa impostazione è quella consigliata.
 
-In case that no calculation flag has been inserted, it will be necessary to valorize interests related to delay days that are on dates range set.
+In caso non sia stato inserito nessun flag il calcolo andrà a valorizzare gli interessi relativi ai giorni di ritardo presenti nel range di date impostate.
 
-**Document Type** and **Payment Type** are additional identification filters of maturity values on which to perform the interests calculation.
+**Tipo documento** e **tipo pagamento**: sono ulteriori filtri di individuazione delle partite sulle quali eseguire il calcolo interessi.
 
-The following radio button enables the user to set the rate type to be used during the interests calculation:
+Il radio button successivo consente di definire il tipo di tasso da utilizzare nel calcolo interessi:
 
-- calculate interests only on customers for which an agreement date has been inserted into register;
+- calcolare gli interessi solo sui clienti per i quali è stato inserito in anagrafica una data accordo;
 
-- calculate interests on customers with an agreement according to register settings and default rate inserted above for the others;
+- calcolare gli interessi sui clienti con un accordo secondo le impostazioni di anagrafica, il tasso di default inserito in alto per tutti gli altri;
 
-- calculate interests for all customers according to default interest rate inserted above.
+- calcolare gli interessi per tutti i clienti secondo il tasso d'interesse di default inserito in alto.
 
-A last flag, that has been already set on default, provides for the exclusion of paid maturity values from interests with bills of bills portfolio module: in particular, that specific setting is necessary for rate types on which the calculation to discount has been set, because the closing of customer maturity value is usually recorded directly during the bank receipt/bills of exchange issue.
+Un ultimo flag, **Escludi effetti emessi**, già impostato di default, prevede l'esclusione dagli interessi delle partite pagate con effetti del modulo portafoglio effetti: tale impostazione serve, in particolare, per i tipi tasso sui quali è stato impostato il calcolo anche a sconto, in quanto la chiusura della partita cliente viene solitamente rilevata direttamente all'emissione della ricevuta bancaria/effetto cambiario.
 
-The calculation procedure consists as follows:
-
-RIBBON BAR: it represents the Form menu, that is the area in which it is possible to perform actions linked to the procedure in use. The list of features is the following:
-
-
-
-| Function | Meaning |
-| --- | --- |
-| Calculate Interests | The button performs the calculation according to parameters set. |
+La procedura di calcolo si avvia con il tasto **Calcolo interessi**, nella ribbon bar.
 
 
 
