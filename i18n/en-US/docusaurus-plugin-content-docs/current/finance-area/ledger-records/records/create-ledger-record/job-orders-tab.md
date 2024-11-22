@@ -1,31 +1,27 @@
 ---
-title: Job Orders Tab
+title: Tab Progetti
 sidebar_position: 6
 ---
 
-The Job Order Tab is available only if the template has activated the flag “Job Order”.
+La tab **Progetti** (ex *Commesse*) è presente solo se la causale ha il flag *Progetti* impostato.
 
-In this Tab the economic data taken from the ledger accounting are assigned to the various selling job orders:  they are automatically assigned to the job order inserted into the upper part but the user can divide the amounts in different ways, even manually, directly in this section.
+:::danger ATTENZIONE:
+se le funzioni avanzate del controlling sono attive (flag *Gestione controlling* nella tabella Società), è previsto che il progetto possa essere attribuito soltanto agganciandolo ad un centro aziendale a sua volta attribuito ad una dimensione di tipo Commessa.
 
-There are not automatisms during the manual insertion of amounts, nor the range of economic competence dates, nor the controls of the balance between amounts and general accounting.
+**Se le funzioni avanzate per il controlling sono attive, pertanto, la tab in commento NON sarà visibile**. 
 
-RIBBON BAR: the ribbon bar represents the form menu, that is the area on which it is possible to perform actions. The possible features list is the following:
+Rimane invece visibile il campo presente nella testata della registrazione per l'attribuzione del Progetto (ex Commessa) alla registrazione nel suo complesso anzichè al dettaglio dei movimenti.
+:::
+ 
+In questo tab saranno assegnati ai vari Progetti (commesse di vendita) i dati economici rilevati nella registrazione di contabilità: automaticamente saranno assegnati tutti alla commessa inserita in testata, ma l'utente potrà suddividere gli importi in modo differente manualmente direttamente in questa sezione.
 
+ 
 
-
-| Function | Meaning |
-| --- | --- |
-| Save | Button to save the record. |
-| New Record | Button to create a new record. |
-| Insertion Parameters | It refers to the insertion parameters of the first note. |
-| Open Register | Button to recall the register of the selected detail account or the search of another register. |
-| Delete Selected Job Orders | Button to delete the selected Job Orders. |
+Nell'inserimento manuale degli importi il software provvederà automaticamente ad attribuire il valore residuo al fine di quadrare il movimento contabile. Sono previsti controlli del bilanciamento degli importi con la contabilità generale e la possibilità di bloccare il salvataggio della registrazione in caso di differenze (vedere '** [parametri](/docs/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates/parameters)**' della causale).
 
 
 
-| Function | Meaning |
-| --- | --- |
-| Document Manager | Button to connect to the document management. |
+
 
 
 

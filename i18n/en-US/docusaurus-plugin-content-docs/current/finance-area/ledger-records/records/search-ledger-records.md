@@ -1,52 +1,55 @@
 ---
-title: Search Ledger Records
+title: Ricerca registrazioni contabili
 sidebar_position: 7
 ---
 
-Search Ledger Records procedure has been created  in order to enable the user easily to search, to view, to change or to delete previous records or to go through a new one.
-
-Thanks to the Management of Ledger Records, it is possible  going through all the necessary related operations. The right to manage the data is, of course, the necessary requirement to do so. 
-
-Ledger Record search procedure includes:
-
-RIBBON BAR: the ribbon bar represents the Form menu, that is the area on which it is possible to perform actions about a pre-existing record, rather than to create a new one. The possible features list is the following:
+La presente form permette di ricercare le registrazioni contabili precedentemente inserite ed eventualmente di entrare in modifica (o in visualizzazione) delle stesse selezionando la riga corrispondente ed effettuando un doppio click.
 
 
 
-| Function | Meaning |
+| Funzione | Significato |
 | --- | --- |
-| Search Record | Button to apply search filters within database of the inserted ledger records. |
-| New Record | Button to enter a new ledger record |
-| Edit Invoice | Button to edit a ledger record previously inserted. |
-| View Invoice | Button to view a ledger record previously inserted. |
-| Delete Invoice | Button to delete a ledger record previously inserted. |
-| Original Document | Button to recall the original document from which the ledger records has been created. |
+| Ricerca | Pulsante per avviare la ricerca delle registrazioni contabili inserite secondo i filtri impostati  |
+| Nuovo | Pulsante per inserire una nuova registrazione contabile. |
+| Modifica | Pulsante per modificare una registrazione contabile precedentemente inserita. |
+| Visualizzazione | Pulsante per visualizzare una registrazione contabile precedentemente inserita. |
+| Elimina | Pulsante per cancellare una registrazione contabile precedentemente inserita. |
+| Documento origine	 | Pulsante attraverso il quale richiamare il documento di origine dal quale si è originata la registrazione contabile. |
+| Duplica | Pulsante che permette di creare un duplicato della registrazione contabile al fine di crearne una simile, modificando gli elementi opportuni, senza doverla inserire da capo. |
 
-**Regarding the information related to the following reports, please rely on the related section of the menu.**
+Filtri di ricercaI principali campi di filtro per la ricerca delle registrazioni contabili sono:
 
+**Causale contabile**: la combo box (come di consueto in Fluentis) consente di selezionare anche più di una causale alla volta tenendo premuto il tasto Ctrl.
 
+**Da / A data registrazione + Da / A data competenza**: sono le date di riferimento delle registrazioni contabili; attenzione, i filtri operano con una condizione AND e quindi il raffinamento della ricerca si somma. In caso di disallineamento involontario della data di registrazione e della data di competenza (contabile) per ritrovare la registrazione desiderata è opportuno togliere in alternativa il filtro per competenza oppure quello per data registrazione.
 
-| Function | Meaning |
-| --- | --- |
-|  [Report Analytic ](/docs/finance-area/ledger-records/analytic-reports/cost-centres-analysis)  | It refers to the analytical accounting procedure in order to print the various documentation related to:-	Cost centers analysis-	Profit centers analysis-	Movements analysis for CC-	Unbalance CC/PC/Job orders controlling |
-|  [Accounting Report](/docs/finance-area/ledger-records/accounting-report/trial-balance)  | It refers to the financial accounting procedure in order to print according to specific filter criteria, the situation related to:-	Account Statement-	Trial balance-	Daybook-	Offset Account Statement-	Movements Summary for template  -	 Movements Summary for document type-	 Detail accounts situation-	Detail accounts |
-|  [Fiscal Report](/docs/finance-area/ledger-records/fiscal-report/period-balance-sheet)  | It refers to the procedure to print according to specific filter criteria, the situation related to:-	Period Balance Sheet-	Intendo Declaration-	Journal-	Yearly VAT settlement-	Period VAT settlement-	VAT 74Ter settlement-	Stamped modules -	Intendo Declaration register-	Considerations VAT Register-	Vat books-	VAT codes summary |
-| Due Dates Reports | It refers to the procedure to print according to specific filter criteria, the situations related to:-	Difference between Maturity Value and Ledger balance-	Average Delay Collection Payments-	Account Statement to Open Maturity Value-	Maturity Value List-	Maturity Value Grouping-	Due Dates Summary-	Customer/Vendor Due Register |
+**Conto**: si tratta del sottoconto inserito nella testata della registrazione (Cliente o fornitore).
 
-**Regarding the information related to the following procedures, please rely on the related section of the menu.**
+**Tipo conto**: permette di selezionare uno (o più di uno tenendo premuto Ctrl) de tipi conto (Costi / Ricavi / attivo / passivo o conti di anagrafica come Clienti, Fornitori, Banche ed Agenti). Inoltre aprendo l'expander è possibile escludere le tipologie di conti di anagrafica.
 
+![](/img/it-it/finance-area/ledger-records/records/search-ledger-records/image01.png)
 
+Fatturazione elettronicaNella sezione dei filtri è presente un expander relativo alle possibili informazioni legate allo Stato della fattura elettronica, riferito ai documenti che hanno un'interazione con il Sistema di Interscambio:
 
-| Function | Meaning |
-| --- | --- |
-| Maturity Value Compensation | Button to manage the compensation of active/passive maturity values of detail accounts. |
-| Group Maturity Value  | Button to manage  the creation of one or more maturity value groups. |
-| Settle Account  | Button to manage active maturity values  money collection. |
-| Adjustment Records | Button to manage adjustment records at the end of the year. |
+![](/img/it-it/finance-area/ledger-records/records/search-ledger-records/image02.png)
 
-FILTER AREA: the Filter Area contains the list of necessary data types thanks to which it is possible to perform a selection. Typically, filters have always “AND” condition and it is possible to specify more filter criteria at the same time.
+Nel ribbon Menu, nella sezione dedicata alla fatturazione elettronica, utilizzando il bottone **Registro documenti Sdi** è possibile prendere visione delle azioni svolte sul documento selezionato, con la funzione **Stampa** stampare il documento XML abbinato, con le funzioni **Scarica allegato** o **Scarica il contenuto del registro** eseguire il download del file XML.
 
-RESULT GRID: the Result Grid represents the list of records which correspond to filter data above mentioned. After having set search filters,  the user, by clicking on [Search] button on the related Ribbon, will obtain the list of the desired records.
+La griglia di riepilogo risultati visualizza alcune colonne nelle quali viene riportato lo stato e l'esito dei documenti in riferimento alla trasmissione degli stessi al SdI:
+
+![](/img/it-it/finance-area/ledger-records/records/search-ledger-records/image06.png)
+
+-      **Stato SdI**: accoglie la descrizione dello stato del documento, riportando sia lo stato di gestione interno di Fluentis sia lo stato riportato da Fluentis Business Hub e acquisito direttamente da SdI.
+
+-      **Nome file SdI**: il nome del file che viene creato nel momento in cui il documento viene avanzato nello stato GENERATA; nel formato originale o successivamente all'apposizione della firma digitale, rappresenta il file di fattura da inviare a Sdi.
+
+-      **Sdi Id**: l'identificativo univoco che il SdI attribuisce al documento nel momento della ricezione
+
+-      **Data ricezione Sdi**: la data in cui il sistema di interscambio ha acquisto il documento inviatogli. Tale informazione viene reperita dalla notifica di ricezione che il SdI rilascia a fronte del recepimento della spedizione e prima di procedere con i controlli formali del file
+
+-      **Data chiusura**: la data di chiusura del flusso di gestione (es. documento Consegnato).
+
+-      **Data ultimo evento**: la data dell'ultimo cambio stato avvenuto sul file o manualmente o per effetto dell'avanzamento dell'elaborazione sul SdI.
 
 
 

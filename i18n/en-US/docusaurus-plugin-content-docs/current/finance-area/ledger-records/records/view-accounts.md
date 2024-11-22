@@ -1,41 +1,88 @@
 ---
-title: View Accounts
+title: Visualizzazione conti
 sidebar_position: 2
 ---
 
-'View Accounts' mask enables the user to view accounting movements of any account or detail account  of different kinds ( active, passive, costs, profit or register): all the movements of every accounting period are always in line. They can be edited according to the closing of the period, mandatory fiscal reports or account closure operations. It is mandatory to insert an account code or a detail account in the upper part: the following filter fields are not mandatory. They include predefined filter of the current division movements and the definitive records flag.
+La form consente di visualizzare i movimenti contabili di qualsiasi conto o sottoconto contabile, di qualsivoglia tipologia (attivo, passivo, costi, ricavi o anagrafico): tutti i movimenti di tutti gli esercizi contabili sono sempre in linea, ma chiaramente potranno essere modificati o meno a seconda della chiusura del periodo a seguito di stampe fiscali obbligatorie eseguite in definitivo o per operazioni di chiusura conti.
 
-Data grid enables the user to view movements list (sorted by record date) according to set filters: for instance, if we have filtered for X account 'record date' 01/01/yyyy, in the upper fields of  'Previous Balance'  section, it is possible to see the total debit/credit of the previous records. In the records grid, the 'Progressive'   field displays the updated amount of the same line, then it is updated line by line (IMPORTANT:  this 'progressive' has got a meaning just in case that record date or accrual date are sorted following an ascending order, not in other cases). In the fields at the bottom of the mask we can find 'Sel. Balance' the debit/credit amounts selected in the grid, as 'Current Balance' the debit/credit amount of the grid lines, as 'Total' the debit/credit amount of the previous balance and current balance. Finally,  in the 'Balance' field we can find 'Final Balance', in the debit or credit section (the final balance always corresponds to the progressive one visible in the last line).
+## Testata:
 
-Another element that should be considered in the management of the grid is the following: there are two series of visualized detailed accounts, heading detail account ( that is recalled by the holder detail account of the record related to the movement itself) and detail account of detail that is the detail account whose movements are searched. For instance, if we are viewing the movements of a generic account, in the heading detail account we can find the codes of the vendors that sent recorded invoices to that account and in the detail account specific costs.
+Nella parte superiore è obbligatorio inserire un codice di conto o direttamente un sottoconto di dettaglio: i campi di filtro successivi, invece, sono opzionali.
 
-The possible 'Account View' operations:
+![](/img/it-it/finance-area/ledger-records/records/view-accounts/image01.png)
 
-- Double click on the viewed line: in this case, if the user has the authorization,  he can edit the record that belongs to the movement.
+ 
 
-- 'Edit' button has the same function of the double click described above.
+## La griglia dati: 
 
-- 'Initial Doc.' button, if active, can open the visualization modality (if the user has the authorization) of the purchasing or selling invoice that, together with the accounting activities has created the selected accounting movement.
+Risulta ordinata di default per data registrazione discendente**, (il criterio di ordinamento può essere comunque variato) e visualizza la lista dei movimenti secondo i filtri impostati: 
 
-- Select 'Details' button (active only in case that one line is selected) to view all ledger record movements within a separated grid. As soon as the pointer will be moved towards an upper record, the grid will be disabled.
+Con questa impostazione i dati vanno dunque letti tenendo presente che:
 
-Accounts view procedure includes:
+-  supponendo di filtrare con ‘da data registrazione' 01/01/yyyy, avremo nei campi (in alto) **Saldo precedente** i totali dare avere delle registrazioni antecedenti al 01/01/yyyy,
 
-RIBBON BAR: the ribbon bar represents the form menu, that is the area on which the user can operate. The list of the possible features list is the following:
+- nella griglia dei movimenti i dati saranno presentati dal più recente al più vecchio (temporalmente) procedendo a leggere dall'altro verso il basso 
+
+- il campo **Progressivo** visualizzerà nell' ultima riga l'importo del campo **Saldo precedente** aggiornato del valore della riga stessa per poi essere aggiornato riga per riga dal basso verso l'alto.
 
 
+:::note[Nota]
+Il campo **Progressivo** è visibile solo nel caso in cui sia mantenuto l' ordinamento di default previsto per la form; negli altri casi il campo scompare e per farlo riapparire sarà necessario chiudere e riaprire la form e dunque rieseguire la ricerca. 
+:::
 
-| Function | Meaning |
-| --- | --- |
-| View Accounts | Button to view the ledger records previously inserted. |
-| Edit | Button to edit a new ledger record previously inserted. |
-| Original Document | Button to recall the original document from which the ledger record starts. |
-| Details | Let the user view, within the result grid, the details of the selected ledger record. |
 
-FILTER AREA: the Filter Area contains the list of necessary data types thanks to which it is possible to perform a selection. Typically, filters have always 'AND' condition and it is possible to specify more filter criteria at the same time.
+ 
 
-RESULT GRID: Result Grid represents the list of records which correspond to the filter data above mentioned. After having set search filters,  the user, by clicking on [Search] button on the related Ribbon, will obtain the list of the desired records.
+## Totali alla base della maschera:
 
+**Saldo selezione**: somma dare/avere delle righe che sono selezionate nella griglia con il mouse; selezionando tutto in griglia (con ctrl+a) questo campo visualizzerà lo stesso risultato del campo *Saldo corrente*
+
+**Saldo corrente**: somma dare/avere delle righe visualizzate nella griglia (sempre tutte indipendentemente dalla selezione effettuata con il mouse);  
+
+**Totale**: somma dare/avere del saldo precedente e del saldo corrente;  
+
+**Saldo**: saldo finale, o in dare o in avere (che corrisponderà sempre al progressivo visualizzato nella prima riga).
+
+
+:::tip[Come leggere e interpretare i totali]
+**Dare/Avere precedente** (al range filtrato e dall'ultima apertura conti) **+ Saldo corrente = Totale** (entrambe le colonne dare / avere sono valorizzate sempre in questi 3 blocchi).
+
+**Saldo precedente +  Saldo corrente** (come differenza dare-avere) **= Saldo** (attuale)
+
+Il *Saldo Corrente* è rappresentato su entrambe le sezioni al fine di evidenziare analiticamente la formazione del *Totale* (inquanto per calcolarlo vengono sommate al Saldo corrente le due distinte sezioni *Dare / Avere precedente*)
+
+![](/img/it-it/finance-area/ledger-records/records/view-accounts/image04.png)
+
+:::
+
+
+Nella griglia sono visibili due serie di sottoconti visualizzati, il sottoconto intestazione (che viene ripreso dal sottoconto intestatario della registrazione dal quale è ripreso il movimento stesso) e il sottoconto di dettaglio che è effettivamente il sottoconto di cui si stanno ricercando i movimenti. Ad esempio, nel caso in cui si stiano visualizzando i movimenti di un conto generico di costo, avremo nel sottoconto intestazione i codici dei fornitori che ci hanno inviato fatture registrate a quel conto di costo e nel sottoconto di dettaglio dei singoli sottoconto di costo specifici rilevati.
+
+![](/img/it-it/finance-area/ledger-records/records/view-accounts/image02.png)
+
+ 
+
+Inoltre è possibile "espandere" la riga tramite il comando + a sinistra per visualizzare l'intera scrittura contabile.
+
+![](/img/it-it/finance-area/ledger-records/records/view-accounts/image03.png)
+
+ 
+
+Ulteriori operazioni che si possono effettuare con riferimento alla griglia dei risultati:
+
+- Doppio click sulla singola riga visualizzata: in questo caso, se l'utente ha i diritti relativi, si aprirà in modifica la registrazione di appartenenza del movimento;
+
+- Premere il pulsante **Modifica** situato nella ribbon bar avrà lo stesso effetto del doppio click appena descritto;
+
+- Premere il pulsante **Doc. Origine**, quando è attivo, andrà ad aprire in Visualizzazione (se l'utente ne ha il diritto) la fattura di acquisto o di vendita che con la contabilizzazione ha creato il movimento di contabilità selezionato;
+
+AREA DI FILTRO: l'area di filtro è quella dedicata ad ospitare l'elenco dei possibili tipi di dati grazie ai quali è possibile effettuare una selezione. I Filtri sono tipicamente sempre in condizione 'AND' ed è possibile specificare più criteri di filtro contemporanei.
+
+GRIGLIA DI RISULTATO: la griglia di risultato rappresenta l'elenco delle registrazioni che corrispondono ai dati di filtro sopra specificati. L'utente, dopo aver specificato i valori attraverso i quali desidera ottenere una ricerca delle registrazioni, se preme il pulsante [Ricerca ] presente nella relativa Ribbon, otterrà nella griglia di risultato l'elenco delle registrazioni desiderate.
+
+:::important Vedi Anche
+[**VIDEO TUTORIALS SULLE REGISTRAZIONI CONTABILI**](/docs/video/finance/intro.md)
+:::
 
 
 

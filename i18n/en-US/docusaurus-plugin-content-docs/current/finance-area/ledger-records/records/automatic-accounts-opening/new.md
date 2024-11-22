@@ -1,40 +1,69 @@
 ---
-title: New
+title: Nuova
 sidebar_position: 2
 ---
 
- 'Automatic Opening Accounts' procedure is one of the options that can be used to register activities starting balances: starting from the first balance closure, the following account openings are directly managed by the closing procedure. For this reason, the mask interest is low. This procedure only registers the opening ledger balances, not the re-opening of the related maturity values.
+La procedura Apertura automatica conti si può utilizzare, in alternativa ad una scrittura di prima nota da inserire tramite il comando **[Creazione Registrazione contabile](/docs/finance-area/ledger-records/records/create-ledger-record/header-and-total-movements-description),**  **per rilevare i saldi di inizio attività.**
 
-The procedure can create a 'new opening' whose functionalities are going to be explained in the following paragraphs.
+**A partire dalla prima chiusura di bilancio, le successive aperture conti potranno essere gestite direttamente dalla procedura di chiusura.**
 
-**Opening Date**: is the date of the operation. It does not have any link with the record date of the operation that is indicated at the bottom of the window.
+ 
 
-**Opening Number**: is a progressive number that is automatically managed.
+NOTA:
 
-**Description**: it enables the user to identify the operation as well as the notes.
+Con questa procedura si registrano unicamente i saldi contabili di apertura, non l'apertura delle partite contabili relative.
 
-**Detail Account** and **Account Type**: they represent search-filters within the list of the chart of accounts.
-
-At the bottom of the mask it is necessary to set the **Record Date** and the **Accrual Date** that have to be assigned to the re-opening record.
-
-**Number**: it is assigned once that the accounting has been done.
-
-It is necessary to indicate the opening accounts template and the description of the movement to be assigned to the Journal.
-
-Once that these mandatory data has been set, it is possible to save the settings and to activate the whole list of the detail accounts: the next step is to start the detail account memorization for the re-opening accounts credit/debit detail account balance, with the re-opening amount in the currency, if it is necessary. Once that the credit/debit amounts correspond, it is possible to start the balance retrieve in the accounting: the user can open the same account opening in order to complete all data (this procedure is long and can last some days); it is possible even to create many different account openings, grouping them for active/passive or for customer/vendor.
-
-A rollback procedure is not included in the mask: it is simply necessary to delete the opening and the application asks delete confirmation of the related ledger record.
-
-RIBBON BAR: it represents the form menu, that is the area in which it is possible to perform actions. The list of features is the following:
+ 
 
 
 
-| Function | Meaning |
+
+
+**Data apertura**: è la **data dell'elaborazione**, non ha alcun collegamento con la data di registrazione dell'operazione che si andrà a indicare nel campo apposito alla base della finestra;
+
+**Numero apertura**: è un numero progressivo gestito automaticamente;
+
+**Descrizione**: consente all'utente di identificare l'operazione, così come le annotazioni;
+
+**Conto** e **Tipo conto**: sono filtri di ricerca all'interno della lista del piano dei conti;
+
+**Data registrazione** e **Data competenza**: campi obbligatori da assegnare alla registrazione di apertura;
+
+**Numero**: sarà assegnato una volta operata la contabilizzazione;
+
+**Causale di apertura conti** e **Descrizione del movimento**: da assegnare per il libro giornale.
+
+Una volta impostati questi dati obbligatori sarà possibile salvare le impostazioni e attivare tutta la lista dei sottoconti contabili: la fase successiva sarà quindi quella di operare la memorizzazione sottoconto per sottoconto del saldo dare o avere di apertura conti, con l'eventuale importo di apertura in divisa.
+
+![](/img/it-it/finance-area/ledger-records/records/automatic-accounts-opening/new/image01.png)
+
+ 
+
+Esempio (non realistico)
+
+ 
+
+Solo una volta che il totale dare e il totale avere corrispondono sarà possibile procedere alla rilevazione in contabilità della ripresa saldi (in caso contrario premendo il comando di contabilizzazione sarà visualizzato un messaggio di errore).
+
+ 
+
+CONSIGLI OPERATIVI:
+
+l'utente può riaprire più volte la stessa elaborazione di apertura conti per completare tutti i dati (l'operazione potrebbe essere anche lunga e svolgersi in più giorni) prima di procedere, oppure si potrebbero creare tante aperture conti differenti, magari differenziando una per l'attivo, l'altra per il passivo, o per i clienti/fornitori ecc.
+
+Nella maschera non è prevista una procedura di rollback: si potrà semplicemente cancellare l'apertura e l'applicativo chiederà conferma della cancellazione della relativa registrazione di contabilità.
+
+Nel caso in cui siano operate modifiche al dettaglio dell'apertura conti DOPO la sua contabilizzazione, è possibile premere nuovamente il comando Crea registrazione di apertura (nella ribbon bar) per aggiornare la precedente scrittura contabile. Apparirà un messaggio di avviso e conferma dell'aggiornamento della scrittura.
+
+
+
+| Funzione | Significato |
 | --- | --- |
-| Save | Button to save the header of the opening accounts; it is active once that the description and the accounting template has been inserted. |
-| Search | Button to search the list of accounts that the user wants to insert in the opening, through the 'detail account' and 'account type' fields. |
-| Create Accounts Opening Record | Button to create the opening accounts record. |
-| Open the Record of Accounts Opening | Button to open the opening record. |
+| Salva | Pulsante per salvare la testata dell'apertura conti, attivabile dopo aver inserito la descrizione e la causale contabile. |
+| Cerca | Pulsante per cercare, la lista dei conti, che si intendono inserire nell'apertura, attraverso i campi del sottoconto e del tipo conto. |
+| Crea registrazione apertura | Pulsante per creare la registrazione di apertura conti. |
+| Apre la registrazione per l'apertura conti | Pulsante che apre la registrazione di apertura. |
+| Elimina dettaglio | Elimina il contenuto dei campi riferiti alla riga selezionata. ATTENZIONE: le righe per quanto riguarda il contenuto dei campi relativi al conto non possono essere eliminate, se lasciate in bianco non saranno incluse nella scrittura contabile di apertura. |
 
 
 

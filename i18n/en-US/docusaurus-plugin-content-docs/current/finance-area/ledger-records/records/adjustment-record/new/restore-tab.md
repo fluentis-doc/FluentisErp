@@ -1,18 +1,17 @@
 ---
-title: Restore Tab
+title: Tab Ripristino
 sidebar_position: 3
 ---
 
-As usual, a final “Restore” tab is present to view records in advance or to delete them through the special button.
+E' presente una scheda finale ‘**Ripristino**' per visualizzare in anteprima le registrazioni effettuate e per annullarle attraverso l'apposito pulsante.
 
-RIBBON BAR: the ribbon bar represents the form menu, that is the area on which it is possible to perform actions. The possible features list is the following:
+![](/img/it-it/finance-area/ledger-records/records/adjustment-record/new/restore-tab/image01.png)
+
+ 
+
+E' possibile utilizzare i campi di filtro per conto / sottoconto ed i flag adiacenti per selezionare solo scritture di integrazione o solo scritture di rettifica prima di procedere al ripristino.
 
 
-
-| Function | Meaning |
-| --- | --- |
-| Search | Button to search adjustment records performed. |
-| Restore  | Button to view and/or to restore an adjustment record with the possibility to filter by detail account or operation type: integration and/or adjustment. |
 
 
 

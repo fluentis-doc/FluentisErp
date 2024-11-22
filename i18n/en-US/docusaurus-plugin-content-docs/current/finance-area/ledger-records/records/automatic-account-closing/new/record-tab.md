@@ -1,13 +1,64 @@
 ---
-title: Record Tab
+title: Tab Registrazione
 sidebar_position: 5
 ---
 
-The records, that are visible with a double click on the 'Record' Tab, are the following: (in the first grid) the first record closes the profit, the second one the costs, the third one by closing the economic account registers the profit or the loss, the fourth (in the second grid) closes the passive and the fifth closes the active (including the profit/loss accounts); in the third grid are reported the three opening records, the first one that opens the passive, the second one that opens the active, the third one that transfers the profit/loss account of a period to the profit/loss account of the previous period.
+Le registrazioni (visualizzabili con un doppio click) sono in particolare le seguenti: 
 
-Possible errors, found later, can be removed: it is possible to delete the account closure directly and, when the program requests, to delete records linked to it so that it is possible to start the procedure from zero; otherwise it is possible to use the rollback button of the accounting. There are specific user-authorizations for the accounting and for the accounting-deletion. The account closure blocks records included in the set dates range and it will not be possible to enter records within that specific range.
+![](/img/it-it/finance-area/ledger-records/records/automatic-account-closing/new/record-tab/image01.png)
 
-Last detail: order accounts cannot be closed or re-opened in this procedure.
+**Nella prima griglia**
+
+- la prima registrazione chiude i ricavi, 
+
+- la seconda i costi, 
+
+- la terza rileva l'utile o la perdita chiudendo il conto economico, 
+
+ 
+
+![](/img/it-it/finance-area/ledger-records/records/automatic-account-closing/new/record-tab/image02.png)
+
+**Nella seconda griglia**:
+
+- la quarta chiude il passivo 
+
+- la quinta l'attivo (comprensivi dei conti di utile o perdita); 
+
+ 
+
+![](/img/it-it/finance-area/ledger-records/records/automatic-account-closing/new/record-tab/image03.png)
+
+**Nella terza griglia**:
+
+sono riportate le tre registrazioni dell'apertura: 
+
+- la prima apre il passivo, 
+
+- la seconda l'attivo, 
+
+- la terza gira il conto utile/perdita d'esercizio all'utile/perdita dell'esercizio precedente.
+
+ 
+
+**NOTA**:
+
+Eventuali errori che fossero rilevati in seguito possono essere risolti in questi modi: 
+
+- è possibile cancellare direttamente la chiusura conti effettuata e, alla richiesta del programma, cancellare anche le registrazioni ad essa collegate al fine di ripartire da zero nella procedura; 
+
+- in alternativa è presente un pulsante di *rollback*  **Ripristina contabilizzazione** della contabilizzazione (nella tab Parametri). 
+
+
+Esistono specifici permessi utente per la contabilizzazione e l'annullamento della stessa. 
+
+ 
+
+**ATTENZIONE**:
+
+La chiusura conti bloccherà le registrazioni comprese nel range di date impostato e, inoltre, non sarà più possibile inserire registrazioni all'interno di quel range di date.
+
+I **conti d'ordine** non sono mai oggetto di chiusura e riapertura conti in questa procedura.
 
 
 

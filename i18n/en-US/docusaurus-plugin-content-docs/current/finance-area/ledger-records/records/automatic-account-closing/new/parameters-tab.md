@@ -1,32 +1,52 @@
 ---
-title: Parameters Tab
+title: Tab Parametri
 sidebar_position: 2
 ---
 
-In the 'Accounting-Account Closure' window, in the first tab called 'Parameters' it is necessary to insert filters to get the record data, detail account codes and templates that have to be used in the Journal.
+Nel tab ‘parametri' è necessario inserire: 
 
-The first three fields (Closure Date, Version, Description) report the date of the operation (it does not influence the record dates), the progressive number of the closing, and how the user defines the operation itself (typically  Year Accounts Closing). The accounting year of the accounting parameters to be indicated, it is useful for the adjusting entries management that can be activated at the bottom of the mask with the flag 'Giro Account-adjustment Records': it manages, at the end of the accounts re-opening, movements of deferred re-attribution and of the accrued to the related costs/profits (the deferred are recorded in the same day of the accounts opening, the accrued according to the original document record date).
-
-In the record date and accrual date  fields it is necessary to enter parameters for the detection of records that have to be reported in the accounting balance: in particular, the accrual dates will refer to the balance term (1/1/…-12/31/…) while the 'To record date' field could be moved to the next term in order to include all the adjustments: we suggest not to set the record date filter.
-
-It is possible to make the flag to manage the closure balance and re-opening by movement currency: it means that the program adds a line for every specific detail account movement currency, keeping the company total in the currency correct. This opportunity is necessary to guarantee the correctness of the initial balance of the 'Account Statement in Currency' print.
-
-In addition to these data, it is necessary to give the program all the references to the accounting templates, to the record dates and to the account to be used in the closing and re-opening operations. These data (except for record dates) are automatically reported if they are entered in the table 'Accounting Parameters'. 'Account' tab. The 'Giro Account-Adjustment Record' flag automatically creates the re-opening of the costs/profits, adjusted through the 'Adjustment Record' procedure. 
-
-At this point it is possible to save the setting through the appropriate button. In this way it is possible to activate the other buttons. Before proceeding with the operations the user should check the 'account type' tab settings: in addition to a flag on the respective column, the account types of the customer-vendor-agent-banks register must have a second flag within one of the first two columns related to the Patrimonial Active/Passive.
-
-It is possible to re-enter the procedure and, through the related button, to start the Detail Account Retrieve. In this way the program can calculate the balance of every detail account and report the related data in the 'Profit and Loss' and 'Patrimonial' tabs.
-
-RIBBON BAR: the ribbon bar represents the form menu, that is the area on which it is possible to perform actions. The possible features list is the following:
+- dati per filtrare i movimenti contabili che saranno oggetto di chiusura dei conti; le **date registrazione e competenza** individuano quali registrazioni riportare nel saldo contabile: in particolare le date di competenza saranno relative al periodo di bilancio (1/1/….-31/12/….), mentre il campo ‘a data registrazione' potrebbe slittare nell'esercizio successivo per ricomprendere le scritture di rettifica:** si consiglia più semplicemente di non impostare il filtro per date registrazione**.
 
 
 
-| Function | Meaning |
+- i codici di sottoconto, causale da utilizzare e data di registrazione e di competenza contabile delle scritture di chiusura del libro giornale; tali dati (tranne le date di registrazione) vengono riportati automaticamente se inseriti all'interno dei **[parametri di contabilità](/docs/configurations/parameters/finance/accounting-parameters)** (tab ‘Conti');
+
+- (opzionale) la scelta di gestire contestualmente anche la riapertura dei conti anziché gestirla separatamente con **[l'apposito comando](/docs/finance-area/ledger-records/records/automatic-accounts-opening/new)**.
+
+ 
+
+![](/img/it-it/finance-area/ledger-records/records/automatic-account-closing/new/parameters-tab/image01.png)
+
+
+
+**Anno contabile**: richiama il corrispondente anno dei **[parametri di contabilità](/docs/configurations/parameters/finance/accounting-parameters)**, serve per la gestione della riapertura delle scritture di assestamento, da attivare alla base della maschera con il flag **Giroconto scritture di assestamento**: si tratta di gestire, in coda alla riapertura conti, i movimenti di riattribuzione dei risconti e dei ratei (a patto che questi siano già stati elaborati con la procedura **[Scritture di assestamento](/docs/finance-area/ledger-records/records/adjustment-record/new/adjustment-creation)**) ai costi/ricavi relativi (i risconti saranno registrati alla stessa data dell'apertura conti, i ratei invece alla data della registrazione del documento d'origine).
+
+ 
+
+Flag **Gestione saldo** (di chiusura e riapertura) **per divisa di movimentazione**: se attivato il programma inserisce una riga per ogni divisa di movimentazione del sottoconto specifico, mantenendo chiaramente il totale in divisa della società corretto. Tale possibilità si rende necessaria per garantire la correttezza dei saldi iniziali della stampa ‘Estratto conto in valuta'.
+
+ 
+
+ATTENZIONE: Prima di avviare il calcolo è bene verificare le impostazioni della tabella **[Tipi conto](/docs/configurations/tables/finance/account-types)**: 
+
+in particolare i tipi conto di anagrafica cliente-fornitore-agente-banche oltre ad avere un flag sulle relative colonne debbono averne un secondo in una delle prime due colonne, relative all'attivo e al passivo patrimoniale. 
+
+E' quindi possibile dare il via alla **Ripresa valori sottoconti** con il pulsante relativo, in modo da far calcolare al programma il saldo di ogni sottoconto e di presentare nelle tab Profitti e perdite e Patrimoniale i dati relativi. Una volta sicuri dei risultati è possibile passare all'ultima fase della procedura: rientrando nella scheda parametri, infatti, possiamo cliccare il pulsante Crea registrazione per la chiusura conti, che creerà le registrazioni contabili relative e inserirà il flag su **Contabilizzata**.
+
+ 
+
+NOTA: se il flag **Giroconto scritture di assestamento** è stato attivato, quando si lancia il comando **Ripresa valori sottoconti**, diventerà visibile una ulteriore tab **[Riapertura scritture di assestamento](/docs/finance-area/ledger-records/records/automatic-account-closing/new/re-opening-adjustment-records-tab)**.
+
+ 
+
+
+
+| Funzione | Significato |
 | --- | --- |
-| Save | Button to save the header of the account closure, it can be activated once that the description has been entered. |
-| Retrieve Detail Accounts Values | Button to calculate the balance of every detail account and to display the related data in the “Profit and Loss” and “Patrimonial” tabs. |
-| Create Accounts Closing Records  | Button to create the Account Closing Records. |
-| Button to create the Account Closing Records | Button to restore the accounting closing accounting. |
+| Salva | Pulsante per salvare la testata della chiusura conti, attivabile dopo aver inserito la descrizione. |
+| Ripresa valori sottoconti | Pulsante per far calcolare al programma il saldo di ogni sottoconto e di presentare nelle schede ‘profitti e perdite' e ‘patrimoniale' i dati relativi. |
+| Crea registrazione per la chiusura conti | Pulsante per creare la registrazione di chiusura conti. |
+| Ripristina contabilizzazione | Pulsante per annullare  ripristinando la contabilizzazione della chiusura conti. |
 
 
 

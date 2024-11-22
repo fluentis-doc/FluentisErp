@@ -1,18 +1,22 @@
 ---
-title: Patrimonial Tab
+title: Tab Patrimoniale
 sidebar_position: 4
 ---
 
-In the Patrimonial Tab are listed the active and passive components with the evidence of the period result and the possibility to print, (through the button at the bottom) the related situation.
-
-RIBBON BAR: it represents the form menu, that is the area in which it is possible to perform actions. The list of features is the following:
+Nel Tab **Patrimoniale** verranno epilogati i componenti attivi e passivi  con evidenza del risultato d'esercizio e la possibilità di di filtrare (analogamente a quanto previsto per la tab **[Profitti e perdite](/docs/finance-area/ledger-records/records/automatic-account-closing/new/profit-and-loss-tab)**) i conti presenti nelle due sezioni sottostanti tramite i campi appositi ed i pulsanti di ricerca posti nella ribbon bar (vedere tabella qui sotto).
 
 
 
-| Function | Meaning |
+
+
+
+
+
+
+| Funzione | Significato |
 | --- | --- |
-| Search Active Patrimonial | Button to search active accounts within the closure. |
-| Search Passive Patrimonial | Button to search passive accounts within the closure. |
+| Ricerca patrimoniale attivo | Pulsante per cercare all'interno della chiusura i conti attivi desiderati. |
+| Ricerca patrimoniale passivo | Pulsante per cercare all'interno della chiusura i conti passivi desiderati. |
 
 
 

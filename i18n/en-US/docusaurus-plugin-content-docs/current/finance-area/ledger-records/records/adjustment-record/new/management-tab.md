@@ -1,33 +1,122 @@
 ---
-title: Management Tab
+title: Tab Gestione
 sidebar_position: 2
 ---
 
-It is necessary to indicate to the procedure the accounting year to be considered for the calculation, then to indicate the record/accrual dates that have to be assigned to the records that have to be created as well as the templates to be used for the adjustment and the integration. The option “Single Record” groups into one record all the adjustments and in another record all the integrations.
+### PROCEDURA: 
 
-Once that all these settings are saved, the calculation button is active. The button fills the section below with the list of the suggested adjustments: within these adjustments are indicated: the operation type, references to the original record, the number of the adjustment days and the editable amount and survey detail account.  In case that the set templates include the CC/PC management and the original movement has the related data to be adjusted/integrated, in the section below the data of the related calculation are present.
+- indicare per quale esercizio contabile si vuole procedere al calcolo e la data di calcolo (di default è proposta la data odierna); 
 
-The next step is to confirm, line by line, that the calculated import is correct and complete. This happens through the flag “controlled”, an operation that activates the possibility to edit and the related control flags, even of the section below related to CC/PC.  Every line with “controlled” status are subjected to the accounting survey that start once the accounting button has been selected. As the details are defined, the user can create many accountings and re-calculate the list to verify that other operations (typically record integrations of the new period with previous accrual) have not be added or create new adjustments for these. In any case, a tab to restore the previous situation is available.
+- indicare la data registrazione/competenza da assegnare alle registrazioni contabili da creare; 
 
-In case that ledger records edits occurred, the button “Verify Calculation” can be useful. This button can re-calculate, line by line, showing possible difference with what already seen in the grid. There is a button to align the differences; it can delete adjustment/integration lines linked to the no-existing accounting movements. (The accounting of lines that refers to no-existing movements is not possible, the user has to go to the mask and to delete them directly)
+- indicare le causali contabili da utilizzare per la rettifica e l'integrazione. 
 
-A last important note has to be reported in case that the adjustments are already accounted: currently there is not a block to the original movement modification (that leads to the adjustment) for the user. The only block is to the not allowed record deletion. So we recommend the user to be extremely careful  during the modification of records already involved in the adjustment operation at the end of the year.
+L'opzione singola registrazione andrà o meno a cumulare in un'unica registrazione tutte le rettifiche e in un'altra tutte le integrazioni.
 
-The last detail to be mention is related to the “Automatic Accounts Closures”: in this procedure it is possible to find an option of automatic giro if the adjustment operations at the end of the re-opening accounts records. Through this option, the application detects , at the date of the re-opening, the adjustment reversal and makes the giro of the integrations at the date of the original  record of the adjustment itself.
+![](/img/it-it/finance-area/ledger-records/records/adjustment-record/new/management-tab/image01.png)
 
-RIBBON BAR: the ribbon bar represents the form menu, that is the area on which it is possible to perform actions. The possible features list is the following:
+ 
 
-
-
-| Function | Meaning |
-| --- | --- |
-| Save | Button to save header, it can be activated once that the data are completed. |
-| Calculate | Button to calculate. It fills the section below with the list of the suggested adjustments. |
-| Check Adjustement Calculation  | Button to re-calculate, line by line. It displays possible differences with what occurs in the grid. |
-| Accounting | Button to account the lines, with the “control” flag active. |
+Una volta salvate queste impostazioni si attiverà il pulsante **Calcola**
 
 
+che andrà a popolare la sezione sottostante con la lista degli assestamenti proposti: all'interno di questi sarà indicata la tipologia di operazione, i riferimenti alla registrazione d'origine, il numero di giorni della rettifica e poi, editabili, l'importo e il sottoconto di rilevazione. 
+
+Nel caso in cui le causali impostate prevedano la gestione cdc/cdp e il movimento d'origine abbia i relativi dati da rettificare/integrare, nella sezione sottostante saranno presenti anche i dettagli dei calcoli relativi.
+
+ 
+
+La fase successiva sarà quella di confermare, riga per riga, che l'importo calcolato è corretto e completo attraverso l'imposizione del flag **Controllato**, operazione che attiverà di conseguenza la modificabilità e i relativi flag di controllo anche della sezione sottostante relativa ai cdc/cdp. 
+
+![](/img/it-it/finance-area/ledger-records/records/adjustment-record/new/management-tab/image04.png)
+
+Tutte le righe con stato *controllato* saranno oggetto della rilevazione in contabilità che sarà eseguita premendo il pulsante di **Contabilizza**. 
 
 
 
+L'utente può procedere a creare più contabilizzazioni man mano che vengono definiti i dettagli, così come procedere a ricalcolare la lista per verificare che non siano state aggiunte altre operazioni (tipicamente di integrazione di registrazioni del nuovo esercizio con competenza antecedente) o creare assestamenti nuovi per questi. È comunque presente la **[scheda di ripristino](/docs/finance-area/ledger-records/records/adjustment-record/new/restore-tab)** della situazione precedente.
 
+NOTA: saranno contabilizzate tutte le righe con flag **Controllato** attivo.
+
+ 
+
+Nel caso in cui siano state effettuate modifiche alle registrazioni in contabilità dopo il lancio del calcolo potrebbe essere utile utilizzare il pulsante **Verifica calcolo assestamento**: 
+
+
+
+questo pulsante andrà ad effettuare un ricalcolo riga per riga, mostrando eventuali differenze rispetto a quanto già proposto nella griglia (in particolare campi **Assestamento Dare / Avere** e **Nuovo assestamento Dare / avere**), con un pulsante per allineare le differenze o meno, che andrà anche a cancellare righe di rettifica/integrazione collegate a movimenti contabili non più esistenti (Non sarà possibile contabilizzare se presenti righe con riferimenti a movimenti non esistenti ed in tal caso sarà dunque necessario passare per questa maschera e cancellarli).
+
+
+ 
+
+ATTENZIONE: nel caso in cui gli assestamenti siano già stati contabilizzati non è previsto alcun blocco alla modifica del movimento di origine che ha portato alla rettifica, l'unico blocco è alla cancellazione della registrazione che non è consentita. Si raccomanda quindi la massima attenzione nell'entrare in modifica di registrazioni che siano coinvolte nelle operazioni di assestamento di fine anno.
+
+NOTA relativa alla procedura di **[Chiusura automatica conti](/docs/finance-area/ledger-records/records/automatic-account-closing/new/new-intro)**: è presente un'opzione di giroconto automatico delle operazioni di assestamento in coda alle registrazioni di riapertura conti. Con questa opzione l'applicativo procederà a rilevare, alla data di riapertura, lo storno delle rettifiche mentre opererà il giroconto delle integrazioni alla data della registrazione d'origine dell'assestamento stesso.
+
+
+**FLAG Singola registrazione:** con questo flag attivo la contabilizzazione degli assestamenti avviene con un'unica registrazione contabile (unico numero) anzichè con tante registrazioni quante sono le rettifiche da eseguire.
+In fase di riapertura conti anche il giroconto per riapertura dei ratei e risconti seguirà la medesima impostazione.
+
+### GESTIONE FATTURE DA RICEVERE
+
+In questa sezione illustriamo come gestire in modo automatizzato la particolare situazione delle *Fatture da ricevere*, ovvero lo stanziamento da effettuare a fine anno quando la registrazione di un costo o di un ricavo di competenza avverrà solo nell'esercizio successivo.
+
+In sintesi possiamo vedere, nelle immagini seguenti, come il riconoscimento di questa situazione avvenga automaticamente da parte del software e venga utilizzato il conto apposito previsto nei parametri generali di contabilità.
+
+E' possibile inoltre personalizzare il conto da utilizzare in relazione ad ogni singolo fornitore o cliente.
+
+Allo stesso modo è possibile personalizzare il conto da utilizzare per gli altri ratei e risconti attivi e passivi impostando il conto particolare in corrispondenza del conto del costo o ricavo direttamente nel piano dei conti.
+
+**Situazione standard SENZA IMPOSTAZIONI SPECIFICHE NEL FORNITORE**
+
+![](/img/it-it/finance-area/ledger-records/records/adjustment-record/new/management-tab/image08.png)
+
+E NEMMENO NEL CONTO DI COSTO
+
+![](/img/it-it/finance-area/ledger-records/records/adjustment-record/new/management-tab/image09.png)
+
+LE IMPOSTAZIONI SONO SOLO A LIVELLO DI PARAMETRI DI CONTABILITA’
+
+![](/img/it-it/finance-area/ledger-records/records/adjustment-record/new/management-tab/image10.png)
+
+**CASO 1 registrazione nell’anno x e competenza totalmente in x+1**
+
+![](/img/it-it/finance-area/ledger-records/records/adjustment-record/new/management-tab/image11.png)
+
+**CASO 2: registrazione nell’anno y e competenza tutta nell’anno y-1**
+
+![](/img/it-it/finance-area/ledger-records/records/adjustment-record/new/management-tab/image12.png)
+
+**CASO 3: registrazione anno x e competenza a cavallo tra x e x+1**
+
+![](/img/it-it/finance-area/ledger-records/records/adjustment-record/new/management-tab/image13.png)
+
+**CASO 4: registrazioni anno y con competenza a cavallo tra y e y-1**
+
+![](/img/it-it/finance-area/ledger-records/records/adjustment-record/new/management-tab/image13.png)
+
+**RISULTATI**
+
+![](/img/it-it/finance-area/ledger-records/records/adjustment-record/new/management-tab/image15.png)
+
+
+La riga 1 è la rettifica del caso 1, dove tutto il costo registrato nell’anno X è di competenza dell’esercizio successivo X+1: Fluentis utilizza il conto Risconti attivi definito nei parametri di contabilità generale
+
+La riga 2 è l’integrazione del caso 2, dove tutto il costo registrato nell’anno Y è di competenza dell’esercizio precedente Y-1: Fluentis utilizza il conto delle ‘Fatture da ricevere’ definito nei parametri di contabilità generale
+
+La riga 3 è la rettifica del caso 3, dove il costo registrato nell’anno X è solo in parte di competenza dell’esercizio successivo X+1: Fluentis utilizza il conto Risconti attivi definito nei parametri di contabilità generale
+
+La riga 4 è l’integrazione del caso 4, dove il costo registrato nell’anno Y è solo in parte di competenza dell’esercizio precedente Y-1: Fluentis utilizza il conto Ratei passivi definito nei parametri di contabilità generale
+
+**CON IMPOSTAZIONI SPECIFICHE PER FORNITORE/CONTO CONTABILE**
+
+![](/img/it-it/finance-area/ledger-records/records/adjustment-record/new/management-tab/image16.png)
+
+
+![](/img/it-it/finance-area/ledger-records/records/adjustment-record/new/management-tab/image17.png)
+
+**RISULTATO**
+
+![](/img/it-it/finance-area/ledger-records/records/adjustment-record/new/management-tab/image18.png)
+
+Al posto dei sottoconti di default si utilizzano i sottoconti custom presi dalla riga di costo o dal fornitore

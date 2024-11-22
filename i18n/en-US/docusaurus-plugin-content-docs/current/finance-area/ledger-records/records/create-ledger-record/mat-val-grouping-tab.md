@@ -1,32 +1,88 @@
 ---
-title: Mat. Val. Grouping Tab
+title: Tab Raggruppamento partite
 sidebar_position: 9
 ---
 
-“Mat. Val. Grouping Tab” management, once active, is a kind of management that is not compatible with the normal maturity values/payment management: the choice between one of these management modalities has to be performed when the general accounting templates are set. The user should be aware of the features of both modalities.
+La gestione dei Raggruppamenti partite permette di creare, in fase di apertura partite oppure in un secondo tempo, dei gruppi di partite (il gruppo è una sorta di contenitore con all'interno, anche visivamente, le partite di dettaglio).
 
-When the VAT type template  has the flag “Maturity Value Grouping” active,  “opening mat. Val” tab is automatically active: “opening maturity values” follows the customer/vendor register settings. Within the form “maturity value grouping”, the user can create, for these maturity values, one or more maturity value groups. They take number and date from the maturity value document that has created them. Thanks to the contextual menu that appears after a click on the right button of the mouse, it is possible to manage these operations, maturity value by maturity value:  it is possible then to select many maturity values/groups (“mark” option), to create new groups (“Create New Group”), to create allowance to close the group (“allowance”), to view details of the single maturity value (“Details”), to divide the inserted maturity value in a group (“Split maturity Value”).  The visualization of the groups relies on the selected detail account in the upper grid.
+Questi gruppi possono essere poi manipolati aggregando o disaggregando le partite. Quindi in fase di pagamento è possibile assegnare il pagamento stesso in maniera flessibile rispetto ai gruppi ed alle relative partite di dettaglio.
 
-In case of collection/payment records, the user work is completely different from the work of a normal maturity value closing. In this case the user starts the record from the form of the record itself, finding a value to payment/collection on which the application creates a debit/credit maturity value and the user manually (if he/she wants) assigns it to a group of the form “Maturity value grouping”. In concrete terms, on each one of these maturity values, the application creates the related reciprocal payments (so this is the reason why reading a “standard” tickler is not sufficient and it is necessary to use only the reports and the visualization/management masks of the groupings in order to get the situation of the ledgers). When the group balance, as an effect of the assigned maturity values, reaches the 0, then the group will get the status “close”.
-
-RIBBON BAR: the ribbon bar represents the form menu, that is the area on which it is possible to perform actions. The possible features list is the following:
+Questo genere di gestione, evidentemente particolare, si addice a chi opera in settori quali la grande distribuzione o il commercio al dettaglio, o comunque a chi gestisca molteplici partite / pagamenti di piccolo importo e alta numerosità e dove il collegamento tra le fatture emesse o ricevute ed i relativi pagamenti sia soggetto ad elevata flessibilità e collegamento meno netto rispetto all'ordinaria operatività. 
 
 
 
-| Function | Meaning |
-| --- | --- |
-| Save | Button to save the record. |
-| New Record | Button to create a new record. |
-| Insertion Parameters | It refers to the insertion parameters of the first note. |
-| Open Register | Button to recall the register-management of the selected detail account or the search of another register. |
-| Expand/Collapse Grid |  |
-| Refresh Three |  |
+Questa funzionalità, una volta inserita, è una gestione incompatibile con la normale gestione a partite e pagamenti: la scelta tra una gestione e l'altra, quindi, va effettuata inizialmente all'atto dell'impostazione delle causali di contabilità generale con ben chiara le caratteristiche di questa gestione.
+
+ 
+
+**GESTIONE DELLA CAUSALE CONTABILE E RISULTATO NELLA REGISTRAZIONE**:
+
+Causale di apertura partite (esempio per "Emissione fattura" o "Fattura Fornitore"): attivare i consueti flag per l'apertura partite (ed eventualmente la chiusura e compensazione), aggiungendo il flag Crea Gruppo.
+
+![](/img/it-it/finance-area/ledger-records/records/create-ledger-record/mat-val-grouping-tab/image01.png)
+
+Nella registrazione contabile di prima nota, con la causale così modificata, in fase di inserimento della registrazione non si noteranno differenze ed il gruppo partite non sarà visibile, ma esso sarà creato con i medesimi riferimenti della partita in esso contenuta: 
+
+![](/img/it-it/finance-area/ledger-records/records/create-ledger-record/mat-val-grouping-tab/image02.png)
+
+Per effettuare modifiche al gruppo accorpando altre partite o de-raggruppando si deve operare all'interno della maschera **[Raggruppamenti partite](/docs/finance-area/maturity-values/maturity-values/maturity-value-grouping)**.
+
+![](/img/it-it/finance-area/ledger-records/records/create-ledger-record/mat-val-grouping-tab/image03.png)
+
+Qui l'utente potrà procedere a creare, per queste partite, uno o più nuovi gruppi partite (che prenderanno numero e data dal numero e data documento della partita che lo crea). La gestione di queste operazioni si effettua utilizzando il menù contestuale che appare premendo il pulsante destro del mouse partita per partita: 
+
+mark: per selezionare più partite/gruppi 
+
+crea nuovo gruppo:  per creare nuovi gruppi; 
+
+de-raggruppa: per sganciare una partita dal gruppo  
+
+abbuoni: per creare abbuoni  e per chiudere un gruppo, 
+
+dettagli: per visualizzare i dettagli della singola partita ; 
+
+suddividi partita: per suddividere la partita inserita in un gruppo . 
+
+La visualizzazione dei gruppi è effettuata per il sottoconto selezionato nella griglia in alto.
+
+![](/img/it-it/finance-area/ledger-records/records/create-ledger-record/mat-val-grouping-tab/image04.png)   ![](/img/it-it/finance-area/ledger-records/records/create-ledger-record/mat-val-grouping-tab/image05.png)
+
+Con drag and drop si può spostare le partite da un gruppo all'altro
+
+![](/img/it-it/finance-area/ledger-records/records/create-ledger-record/mat-val-grouping-tab/image06.png)
+
+NOTA:
+
+Nel caso di contabilizzazione automatica di fatture dal modulo acquisti o vendite nelle tabelle **Tipi fatture** (in **[acquisti ](/docs/configurations/tables/purchase/purchase-invoices-type)** e **[vendite](/docs/configurations/tables/sales/invoices-type)**) c'è un flag analogo per quando si contabilizza la fattura automaticamente (Ragg. partite)
+
+Causale di chiusura partite: (esempio la causale "Pagamento in contanti") attivare il flag ‘Raggruppamenti partite' che rende visibile la scheda **Pagamenti gruppi.**
+
+E' obbligatorio indicare il tipo pagamento corrispondente nella combo box adiacente.
 
 
 
-| Function | Meaning |
-| --- | --- |
-| Document Manager | Button to link to the document management. |
+ 
+
+![](/img/it-it/finance-area/ledger-records/records/create-ledger-record/mat-val-grouping-tab/image07.png)
+
+ A questo punto l'operatività dell'utente nelle registrazioni di incasso/pagamento è completamente differente da quella di una chiusura partite normale: in questo caso, infatti, l'utente inizierà la registrazione dalla scheda **[Registrazione](/docs/finance-area/ledger-records/records/create-ledger-record/record-tab)**, imputando direttamente un valore al pagamento/incasso (tramite la compilazione delle sezioni della prima nota), sul quale l'applicativo creerà comunque una partita dare/avere che l'utente procederà poi ad assegnare manualmente (se vuole) ad un gruppo dalla scheda ‘Pagamenti gruppi'.
+
+![](/img/it-it/finance-area/ledger-records/records/create-ledger-record/mat-val-grouping-tab/image08.png)
+
+ 
+
+Operativamente l'applicativo andrà a creare, su ognuna di queste partite, i relativi pagamenti reciproci (ed è per questo che la lettura di uno scadenziario ‘standard' non sarà più chiaro e si dovrà utilizzare solo i report e le maschere di visualizzazione/gestione dei raggruppamenti per avere una visione chiara dei partitari). Quando il saldo del gruppo, per effetto delle varie partite assegnate, andrà a 0 allora il gruppo avrà passerà automaticamente allo stato ‘chiuso'.
+
+![](/img/it-it/finance-area/ledger-records/records/create-ledger-record/mat-val-grouping-tab/image09.png)
+
+**NOTA: Per visualizzare i raggruppamenti selezionare con il mouse la riga nella griglia superiore.**
+
+ 
+
+![](/img/it-it/finance-area/ledger-records/records/create-ledger-record/mat-val-grouping-tab/image10.png)
+
+Direttamente nella tab **Pagamenti gruppi** è possibile effettuare ulteriori modifiche quali de-raggruppamenti o nuovi raggruppamenti.
+
 
 
 
