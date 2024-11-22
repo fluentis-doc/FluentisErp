@@ -1,19 +1,19 @@
 ---
-title: Depreciation
+title: Ammortamento
 sidebar_position: 2
 ---
 
-First of all, it is very important to manage the “incremental operations” flag: considering that the depreciation procedure is managed according to different logics, if the company uses the incremental option for its categories it will be necessary to import this flag in order to identify data. At the base of the mask, on the contrary, it is necessary to set the reference calculation year: usually it will be edited in order to insert the year previous than the current one.
+Innanzi tutto è di fondamentale importanza gestire il flag **Operazioni incrementali**: essendo la procedura di ammortamento gestita con logiche differenti, nel caso l'azienda utilizzi l'opzione incrementale per le sue categorie sarà necessario importare questo flag al fine di individuare i dati. Alla base della maschera, invece, va impostato l'anno di rifermento del calcolo: normalmente sarà da modificare al fine di inserire l'anno precedente all'attuale.
 
-RIBBON BAR: the ribbon bar represents the Form menu, that is the area on which it is possible to perform actions linked to the procedure in use. The possible features list is the following:
+RIBBON BAR: rappresenta il menu della Form in oggetto, ossia l'area nella quale è possibile effettuare delle azioni collegate alla procedura in uso. La lista delle funzionalità possibili è di seguito rappresentata:
 
 
 
-| Function | Meaning |
+| Funzione | Significato |
 | --- | --- |
-| Search | It searches the list of depreciations to be calculated. |
-| Depreciation | It performs the calculation for the selected lines. |
-| View Fixed Asset | It views the fixed asset register whose depreciation is selected in the grid. |
+| Ricerca | Ricerca la lista degli ammortamenti da calcolare. |
+| Ammortamento | Esegue il calcolo per le righe selezionate. |
+| Visualizza cespite | Apre in visualizzazione l'anagrafica del cespite il cui ammortamento è selezionato in griglia. |
 
 
 

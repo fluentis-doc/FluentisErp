@@ -1,19 +1,19 @@
 ---
-title: Restore
+title: Ripristino
 sidebar_position: 3
 ---
 
-It performs the calculation, the lines will disappear from the grid and the result will be visible in the 'Restore' tab within which it is possible to cancel the operation.
+Eseguito il calcolo, le righe spariranno dalla griglia e il risultato sarà visibile nella scheda 'Ripristino' all'interno della quale è possibile annullare l'operazione.
 
-RIBBON BAR: it represents the Form menu, that is the area in which it is possible to perform actions linked to the procedure in use. The list of features is the following:
+RIBBON BAR: rappresenta il menu della Form in oggetto, ossia l'area nella quale è possibile effettuare delle azioni collegate alla procedura in uso. La lista delle funzionalità possibili è di seguito rappresentata:
 
 
 
-| Function | Meaning |
+| Funzione | Significato |
 | --- | --- |
-| Search | It performs the list of depreciation calculations performed. |
-| Restore | It performs the restore of the calculation for the selected lines. |
-| View Fixed Asset | It views the register of fixed asset whose depreciation is selected in the grid. |
+| Ricerca | Ricerca la lista dei calcoli di ammortamento eseguiti. |
+| Ripristina | Esegue il ripristino del calcolo per le righe selezionate. |
+| Visualizza cespite | Apre in visualizzazione l'anagrafica del cespite il cui ammortamento è selezionato in griglia. |
 
 
 

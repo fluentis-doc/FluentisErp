@@ -1,11 +1,9 @@
 ---
-title: Objective Depreciations
+title: Ammortamenti oggettivi
 sidebar_position: 1
 ---
 
-In this mask it is possible to go on to calculate the objective depreciations on all fixed assets that belong to the categories that manage them. The depreciations cannot be accounted.
-
-
+In questa maschera è possibile procedere al calcolo massivo degli ammortamenti oggettivi su tutti i cespiti facenti capo a categorie che li gestiscono. Tali ammortamenti non possono essere contabilizzati.
 
 
 

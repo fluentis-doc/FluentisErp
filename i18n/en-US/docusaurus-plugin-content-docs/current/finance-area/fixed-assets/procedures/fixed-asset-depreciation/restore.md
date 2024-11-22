@@ -1,19 +1,16 @@
 ---
-title: Restore
+title: Ripristino
 sidebar_position: 3
 ---
 
-Executed the calculation, lines will disappear from the grid and the result will be visible in “Restore” tab within which it is possible to cancel the operation: that possibility is allowed as long as depreciations have not been accounted.
-
-RIBBON BAR: the ribbon bar represents the Form menu, that is the area on which it is possible to perform actions linked to the procedure in use. The possible features list is the following:
+Eseguito il calcolo, le righe spariranno dalla griglia di ricerca della tab Ammortamento e il risultato sarà visibile nella scheda Ripristino all'interno della quale è possibile annullare l'operazione: tale possibilità è consentita finché gli ammortamenti non sono stati contabilizzati.
 
 
 
-| Function | Meaning |
+| Funzione | Significato |
 | --- | --- |
-| Search | It searches the list of depreciation calculations performed. |
-| Restore | It restores the calculation for the selected lines. |
-| View Fixed Asset | It views the register of fixed asset whose depreciation is selected in the grid. |
+| Ricerca | Ricerca la lista dei calcoli di ammortamento eseguiti. |
+| Ripristina | Esegue il ripristino del calcolo per le righe selezionate. |
 
 
 
