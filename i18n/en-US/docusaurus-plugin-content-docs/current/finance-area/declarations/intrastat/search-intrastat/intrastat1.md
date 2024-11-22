@@ -3,30 +3,19 @@ title: Intrastat1
 sidebar_position: 2
 ---
 
-The Intrastat1 declarations search procedure consists as follows:
+Form per la ricerca specifica dei modelli INTRA 1 e l'inserimento di un nuovo modello (sia manualmente sia tramite procedura automatica).
 
-RIBBON BAR: it represents the Form menu, that is the area in which it is possible to perform actions linked to the procedure in use. The list of features is the following:
+Nella ribbon bar sono presenti anche i comandi per la stampa del modello, è necessario selezionare distintamente dalla combobox le varie sezioni da stampare oltre al frontespizio.
 
 
 
-| Function | Meaning |
+| Funzione | Significato |
 | --- | --- |
-| Search  | Button to apply search filters within database of the previously inserted Intrastat1 declarations. There is also the possibility to search per summary type, period, year and presentation number. |
-| Creation New | It refers to the procedure to insert a new Intrastat1 declaration. |
-| Edit Selected Intrastat  | It refers to the procedure to edit a new previously inserted Intrastat1 declaration. |
-| Delete | It refers to the procedure to delete a new previously inserted Intrastat1 declaration. |
-| Export on File | Button to create and export electronic file together with file save in a directory chosen by the user. |
-| Import from File | Button to import from electronic file of an Intrastat1 declaration. |
-
-
-
-| Function | Meaning |
-| --- | --- |
-|  [Document Manager](/docs/guide/common/operations-with-data/document-manager)  | Button to connect to the document management.  |
-
-FILTER AREA: the filter area contains the list of possible data types thanks to which it is possible to perform a selection, a research on the total of the inserted declarations. Typically filters have always 'AND' condition and it is possible to specify more search filters at the same time.
-
-RESULT GRID: the result grid represents the list of Intrastat1 declarations which correspond to data filter, above mentioned. After having specified values through which it is possible to obtain a declarations search, the user, by clicking on [Search] button on the related Ribbon, will obtain the list of the desired declarations on result grid.
+| Ricerca | Pulsante per applicare i filtri di ricerca all'intero database delle dichiarazioni Intrastat1 precedentemente inserite. Possibilità di poter ricercare per tipo riepilogo, periodo, anno e numero di presentazione. |
+| Nuovo | Richiama la procedura per inserire una nuova dichiarazione Intrastat1. |
+| Modifica | Richiama la procedura per modificare una dichiarazione Intrastat1 precedentemente inserita. |
+| Elimina | Cancella una dichiarazione Intrastat1 precedentemente inserita. |
+| Esporta su file | Pulsante per la creazione e contestuale esportazione del file telematico, con  salvataggio del file in una  directory a scelta dell'utente e nella gestione documentale di Fluentis . |
 
 
 
