@@ -1,37 +1,31 @@
 ---
-title: Ricerca compensi
+title: Search Commissions
 sidebar_position: 1
 ---
 
 
 
-| Funzione | Significato |
+| Function | Extended Description |
 | --- | --- |
-| Ricerca | Pulsante per applicare i filtri di ricerca all'intero database dei compensi inseriti. |
-| Nuovo | Richiama la procedura per inserire un nuovo compenso. |
-| Modifica | Richiama la procedura per modificare un compenso precedentemente inserito. |
-| Visualizzazione | Richiama la procedura per visualizzare un compenso precedentemente inserito. |
-| Cancella | Esegue la procedura per cancellare un compenso precedentemente inserito. |
-|  [Versamenti ritenuta](/docs/finance-area/professional-men/search-compensations/withholding-tax-paying-in)  | Apre la gestione dei dati dei versamenti effettuati. |
+| Search | Button to apply the search filters to the entire database of entered commissions. |
+| New  | Calls the procedure to enter a new commission. |
+| Modify | Calls the procedure to modify a previously entered commission. |
+| View | Calls the procedure to view a previously entered commission. |
+| Delete | Executes the procedure to delete a previously entered commission. |
+| [Withholding Tax Paying-in](/docs/finance-area/professional-men/search-compensations/withholding-tax-paying-in) | Opens the management of the data of payments made. |
 
 
 
-| Funzione | Significato |
+| Function | Extended Description |
 | --- | --- |
-| Stampa certificazione ritenute (nel gruppo Ritenute a Titolo d'acconto) | Richiama la procedura per stampare le certificazioni periodiche delle ritenute. |
-|  [Stampa Situazione ritenute (nel gruppo Ritenute a Titolo d'acconto)](/docs/finance-area/professional-men/reports/withholding-tax-situation)  | Richiama la procedura per stampare la situazione delle ritenute versate/da versare per i pagamenti del periodo selezionato. |
+| Print Withholding Tax Certification (in the Withholding Tax by way of Advance group) | Calls the procedure to print the periodic certificates of withholdings. |
+| [Print Withholding Tax Situation](/docs/finance-area/professional-men/reports/withholding-tax-situation) (in the Withholding Tax by way of Advance group) | Calls the procedure to print the situation of withholdings paid/to be paid for payments of the selected period. |
 
 
 
-| Funzione | Significato |
+| Function | Extended Description |
 | --- | --- |
-| Modello F24 | Richiama la procedura per gestire i dati del modello F24. |
-|  [Contabilizzazione compensi](/docs/finance-area/professional-men/accounting/compensation-accounting/compensations-accounting)  | Richiama la procedura per effettuare la contabilizzazione dei compensi. |
-|  [Contabilizzazione Enasarco](/docs/finance-area/professional-men/accounting/enasarco-accounting/enasarco-accounting-intro)  | Richiama la procedura per effettuare la contabilizzazione dei tributi dovuti all'ente Enasarco. |
-|  [Contabilizzazione pagamenti](/docs/finance-area/professional-men/accounting/payments-accounting/payments-accounting-intro)  | Richiama la procedura per effettuare la contabilizzazione dei pagamenti ai professionisti, che rileverà le ritenute e gli eventuali oneri INPS. |
-
-
-
-
-
-
+| F24 Model | Calls the procedure to manage the data of the F24 form. |
+| [Commissions Accounting](/docs/finance-area/professional-men/accounting/compensation-accounting/compensations-accounting) | Calls the procedure to carry out the accounting of commissions. |
+| [Enasarco Accounting](/docs/finance-area/professional-men/accounting/enasarco-accounting/enasarco-accounting-intro) | Calls the procedure to carry out the accounting of taxes owed to the Enasarco entity. |
+| [Payment Accounting](/docs/finance-area/professional-men/accounting/payments-accounting/payments-accounting-intro) | Calls the procedure to carry out the accounting of payments to professionals, which will record the withholdings and any INPS charges. |
