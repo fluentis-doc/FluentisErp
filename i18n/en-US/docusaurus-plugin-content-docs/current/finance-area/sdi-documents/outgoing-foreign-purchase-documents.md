@@ -1,7 +1,8 @@
 ---
-title:Outgoing foreign purchase documents
+title: Outgoing foreign purchase documents
 sidebar_position: 5
 ---
+
 :::tip[Note]
 **Compliance met** regarding purchases from the current submission to the ES of [**Selfbilling**](/docs/finance-area/e-invoice/auto-invoice/auto-invoice-generation).
 As for sales, the direct sending of invoices is currently being carried out (see below).
