@@ -23,9 +23,9 @@ Provođenjem pretrage (naredba **Traži** na traci izbornika) dospijeće će bit
 
 Konkretno, za svaki redak koji odgovara dospijeću postoji naredba (+) koja vam omogućuje pregled dodatnih i prvobitno skrivenih informacija: to su sva plaćanja povezana sa zatvorenom ili djelomično otvorenom igrom.
 
-![](/img/it-it/finance-area/maturity-values/maturity-values/image01.png)
+![](/img/it-it/finance-area/maturity-values/maturity-values/maturity-values-management/image01.png)
 
-![](/img/it-it/finance-area/maturity-values/maturity-values/image02.png)
+![](/img/it-it/finance-area/maturity-values/maturity-values/maturity-values-management/image02.png)
 
 **SPECIFIČNA POLJA ZA DOPUNSKI OBRAZAC:**
 
