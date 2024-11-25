@@ -5,7 +5,7 @@ sidebar_position: 2
 
 Ova maska omogućuje pretraživanje dospijeća pomoću polja u zaglavlju, koje predstavlja područje filtera za podatke koji će biti predloženi, te uređivanje svakog pojedinačnog dospijeća s dvostrukim klikom miša.
 
-Daljnja korisna polja za filtar pretraživanja dostupna su otvaranjem **Ekspandera** prisutnih u zaglavlju. ![](/img/it-it/finance-area/maturity-values/maturity-values/image03.png)
+Daljnja korisna polja za filtar pretraživanja dostupna su otvaranjem **Ekspandera** prisutnih u zaglavlju. 
 
 Standardno se predlažu otvorene stavke (polje **Status** filtra popunjava se stavkom Otvorena stavka prilikom otvaranja obrasca). Moguće je pregledati sva podudaranja jednostavnim brisanjem unosa iz polja filtra kako se ne bi filtrirala određena vrsta.
 
