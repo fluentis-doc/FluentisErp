@@ -3,7 +3,7 @@ title: Agenti Contatto
 sidebar_position: 9
 ---
 
-Al 8lea tab **Contatti CRM**.
+Questa è l'ottava tab dei **Contatti CRM**.
 
 In questa tab è possibile definire gli **Agenti** collegati a questo contatto.
 

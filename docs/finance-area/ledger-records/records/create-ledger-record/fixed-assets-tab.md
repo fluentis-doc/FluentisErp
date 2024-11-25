@@ -263,6 +263,15 @@ Nel caso in cui siano attive le funzioni avanzate per il controlling la gestione
 
 **Percentuale**: percentuale di attribuzione al progetto inserito nella riga in uso (esempio, in caso di attribuzione totalmente a quel progetto indicare 100%, se invece il costo relativo alla quota ammortamento sarà ripartito su due progetti si inseriranno die righe ognuna con ripartizione al 50%).
 
+## PROCEDURA PER VENDITA CESPITE
+
+- Inserire una causale contabile adeguatamente configurata con la funzione Cespiti ed il tipo operazione corretto, ad esempio alienazione totale
+- Compilare la testata registrazione come di consueto con il cliente ed i dati fattura compreso il totale
+- Nel tab Cespiti utilizzare il comando **seleziona cespite esistente** per richiamare la scheda dl cespite venduto
+- Nella griglia superiore indicare nel campo **Importo** l'imponibile del valore di vendita pattuito con il cliente (indicare zero se il cespite viene donato o distrutto)
+- Nella griglia inferiore il valore del fondo ammortamento accumulato viene stornato in automatico e , per differenza, viene compilato automaticamente il campo plusvalenza o minusvalenza
+- Se la causale è correttamente configurata (consigliabile causale standard) la sezione contabile è correttamente già completa con i dati iva e contabili compreso lo storno del costo storico, del fondo ammortamento e la rilevazione della plus/minusvalenza.
+
 ## ALTRO
 
 In caso di alienazione parziale (sempre per un cespite ‘incrementale' o in caso di alienazione parziale non collegata per un non incrementale) l'utente dovrà integrare la riga dell'operazione parziale con gli importi di storno dei fondi (con segno negativo quindi) e valorizzare la minusvalenza o plusvalenza relativa: tali importi saranno poi da inserire anche all'interno della scheda ‘registrazione' per la contabilità generale. Negli altri casi, invece, l'applicativo avrà aggiornato correttamente la scheda cespite, avrà inserito il movimento anche all'interno della sezione Iva della registrazione e da qui avrà aggiornato la registrazione relativa. Nel caso di alienazione, in particolare, se sono stati codificati i sottoconti di minusvalenza e plusvalenza sia all'interno della causale che nei parametri di contabilità, saranno state aggiunte anche le righe relative all'operazione di vendita (una riga di storno del totale patrimoniale attivo, una o più righe di storno dei fondi ammortamento e per differenza la minusvalenza/plusvalenza).
