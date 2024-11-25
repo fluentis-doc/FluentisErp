@@ -1,39 +1,39 @@
 ---
 sidebar_position: 2
-title: Reverse Charge Misto
+title: Periodical VAT Settlement - mixed reverse charge
 ---
 
-E' presente a sistema una particolare gestione per automatizzare maggiormente la gestione delle situazioni cosiddette di Reverse charge misto, ovvero nella stessa fattura di acquisto una parte fatturata in reverse charge e l'altra in regime ordinario.
+There is a specific management system in place to further automate the handling of situations known as mixed reverse charge, meaning that in the same purchase invoice, part of the amount is invoiced under reverse charge and the other part under ordinary regime.
 
-Questo set di impostazioni **va ad aggiungersi** a quelle già presenti con le quali in precedenza si ovviava (in maniera non completa) alla situazione mista, in particolare al flag *Escludi da causali automatiche* presente nella tabella Aliquote e modalità IVA.
-Le presenti configurazioni possono essere utilizzate al posto del flag predetto per una gestione più completa e funzionale.
+This set of settings **adds to** those already present, which previously provided (in a non-complete way) a solution for the mixed situation, particularly the flag *Exclude from automatic templates* present in the table of Rates and VAT method. The current configurations can be used instead of the aforementioned flag for a more complete and functional management.
 
 
-Le implementazioni specifiche per questa gestione prevedono:
 
-- Un **flag** nella tabella **Aliquote e modalità IVA**
-- UN apposito **Tipo importo** nella causale contabile
+The specific implementations for this management include:
 
-### Tabella Aliquote e modalità IVA
+- A **flag** in the **Rates and VAT methods** table
+- A specific **Amount type** in the accounting template
 
-In corrispondenza del codice iva che verrà designato per la quota parte fatturata in reverse charge si abiliterà il **flag** **Reverse Charge** che contrassegna l'aliquota da utilizzare per il reverse charge. Questo vuol dire che l’iva di questa riga non sarà messa nel totale registrazione né sarà conteggiata per le partite (l’ipotesi è che il fornitore abbia la logica di calcolo partite su *imponibile+ iva*).
+### Rates and VAT Methods Table
 
-:::tip Nota
-La logica delle "nuove configurazioni" per la situazione mista è pertanto rovesciata rispetto al passato, anzichè identificare la parte da non girocontare perchè esclusa da reverse charge, si andrà a indicare  la quota parte che è in reverse charge.
-L'iva in reverse non sarà dunque aggiunta al totale della registrazione come in precedenza, nè corrisposta al fornitore monetariamente (cosa che già avveniva, ma senza bisogno di impostare il metodo di calcolo della partita aperta su solo imponibile inquanto anche lasciando il settaggio base su imponibile + iva la quota in reverse non viene aggiunta alla partita aperta)
+Corresponding to the VAT code that will be designated for the portion invoiced under reverse charge, the **Reverse Charge** **flag** will be enabled, which marks the rate to be used for the reverse charge. This means that the VAT for this line will not be included in the total registration nor will it be counted for the entries (the assumption is that the supplier has the logic for calculating entries based on *origin amount + VAT*).
+
+:::tip Note
+The logic of the "new configurations" for the mixed situation is therefore reversed compared to the past; instead of identifying the portion not to be journaled because excluded from reverse charge, the portion that is in reverse charge will be indicated.
+Thus, the reverse VAT will not be added to the total registration as it was before, nor paid to the supplier monetarily (this was already happening, but without needing to set the method of calculating open entries based on only origin amount, since even leaving the base setting on origin amount + VAT, the portion in reverse is not added to the open entry).
 :::
 
-### Causali contabili: Tipo importo
+### Accounting templates: Amount Type
 
-Nella causale contabile che verrà utilizzata per contabilizzare il reverse charge, il tipo importo *Totale doc/registrazione* viene valorizzato con imponibile + iva ordinaria - iva reverse (perché l’iva reverse viene sottratta tramite il flag di cui sopra e in questa logica non deve essere aggiunta al totale inquanto non deriva dalla fattura fornitore, quindi non è da pagare).
+In the accounting template that will be used to account for the reverse charge, the amount type *Total doc./record* is valued with origin amount + ordinary VAT - reverse VAT (because the reverse VAT is deducted through the above flag and in this logic should not be added to the total since it does not come from the supplier invoice and therefore is not to be paid).
 
-E' previsto un nuovo tipo importo *Reverse charge* che valorizza con l’iva in reverse ed è da utilizzare quindi per la riga di iva transitoria e per le due righe iva della reg. automatica.
+A new amount type *Reverse Charge* is provided, which is valued with the reverse VAT and is therefore to be used for the transitional VAT line and for the two automatic VAT lines.
 
-:::note Nota
-Il tipo importo *Reverse charge* non considera l'iva indetraibile, (anche per quadratura con l’importo che ho nel fornitore) La quota indetraibile quindi finisce a costo nella prima registrazione e poi va nell’iva a debito del girococonto, come iva da versare.
+:::note Note
+The amount type *Reverse Charge* does not consider non-deductible VAT (also for alignment with the amount I have with the supplier). The non-deductible portion thus ends up as a cost in the first registration and then goes into the payable VAT of the journal entry, as VAT to be paid.
 :::
 
-Le causali reverse quindi diventano così:
+The reverse templates thus become: 
 
 ![](/img/it-it/finance-area/other/mixrev1.png)
 

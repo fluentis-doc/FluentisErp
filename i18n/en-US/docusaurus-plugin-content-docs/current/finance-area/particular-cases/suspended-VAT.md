@@ -1,41 +1,41 @@
 ---
 sidebar_position: 3
-title: Regime dell'iva per cassa
+title: Cash Accounting VAT Regime
 ---
 
 :::important **Fluentis Academy** 
-Si definisce 'IVA in sospensione' l'IVA che diviene esigibile non alla consegna del bene ma al pagamento della fattura.
-Il contribuente che adotta questo regime liquida l’Iva di tutte le operazioni, sia attive che passive, con il criterio di cassa.
-Il momento impositivo Iva viene fatto coincidere con il momento della data del pagamento o dell’incasso dei corrispettivi. 
-In questo modo si deroga, quindi, al principio che vede come esigibile l’Iva di un documento registrato in contabilità.
+The term 'suspended VAT' refers to VAT that becomes payable not upon delivery of the goods but at the payment of the invoice. The taxpayer who adopts this regime settles VAT on all operations, both active and passive, using the cash criterion. The VAT taxable event coincides with the date of payment or collection of the amounts. 
+This way, a deviation from the principle that sees VAT on a document recorded in bookkeeping as payable is established.
 
-In pratica, il regime dell’Iva per cassa consente il versamento dell’Iva a debito sulle cessioni o sulle prestazioni di servizi solo al momento del pagamento della fattura da parte del cliente. 
-Ed allo stesso tempo consente la detrazione dell’Iva sugli acquisti solo al momento in cui il soggetto pagherà la fattura al fornitore. 
 
-In ogni caso, la liquidazione dell’Iva dovrà avvenire entro un anno dalla vendita o dalla prestazione del servizio fatta eccezione per i casi di fallimento o di coinvolgimento del concessionario o del committente di una procedura concorsuale.
+
+In practice, the cash accounting VAT regime allows the payment of VAT payable on sales or services only at the time of the customer's invoice payment. 
+At the same time, it allows the deduction of VAT on purchases only at the time when the entity pays the invoice to the supplier. 
+
+In any case, the VAT settlement must occur within one year from the sale or service provided, except in cases of bankruptcy or the involvement of the licensee or the client in a competitive procedure.
 :::
 
-### IMPOSTAZIONI E CONFIGURAZIONE CAUSALI CONTABILI COINVOLTE
+### SETTINGS AND CONFIGURATION OF ACCOUNTING TEMPLATES INVOLVED
 
-Le impostazioni principali per la gestione di questo regime avvengono semplicemente attraverso la corretta configurazione delle causali contabili.
+The main settings for managing this regime are simply achieved through the correct configuration of accounting templates.
 
-In particolare è fondamentale selezionare correttamente, all'interno delle causali coinvolte, nel campo **Tipo movimento** (riferito all'IVA), la tipologia esatta.
+In particular, it is essential to correctly select, within the involved templates, the field **Movement Type** (referred to VAT), the exact type.
 
-In dettaglio:
+In detail:
 
-- La causale per la registrazione fattura fornitore avrà il tipo *IVA acquisti in sospensione*
-- La causale per la registrazione fattura cliente avrà il tipo *Vendita con IVA in sospensione*
-- Le causali per l'incasso o il pagamento non avranno un tipo particolare, ma come di consueto il tipo *Non IVA* (saranno collegate alle causali eseguite in automatico per il giroconto dell'iva che diviene esigibile attraverso il campo *Causale automatica*)
-- La causale di giroconto dell'iva acquisti avrà il tipo Giroconto IVA acquisti in sospensione
-- La causale di giroconto dell'iva vendite avrà il tipo Giroconto IVA in sospensione
+- The template for registering the supplier invoice will have the type *Suspended Purchases VAT*
+- The template for registering the customer invoice will have the type *Sale with Suspended VAT*
+- The templates for collection or payment will not have a particular type, but as usual the type *rice without VAT* (they will be linked to the templates executed automatically for the accounting of the VAT that becomes payable through the *Automatic Template* field)
+- The template for the accounting of the suspended purchase VAT will have the type *Suspended Purchases VAT Transfer*
+- The template for the accounting of the sales VAT will have the type *Suspended Sales VAT Transfer*
 
-Il contenuto (template) delle causali utilizzate per la fattura di vendita e di acquisto differisce tipicamente dalle causali ordinarie per il fatto che l'iva viene contabilizzata su un conto specifico per l'iva sospesa e diverso da quelli ordinari destinati al'iva a credito ed a debito che vengono poi girocontati al conto erario c/iva in fase di liquidazione periodica. Per quanto riguarda il registro iva movimentato, questo può rimanere quello consueto senza necessità di definirne uno specifico. Il tipo particolare di movimento iva definito nella causale fa in modo che l'imposta non venga considerata come credito o debito finchè non interverrà il giroconto, pur essendo visualizzata nei movimenti iva del periodo. 
+The content (template) of the templates used for the sales and purchase invoices typically differs from ordinary templates as VAT is accounted for in a specific account for suspended VAT and is different from those ordinary accounts destined for credit and debit VAT, which are then transferred to the treasury account for VAT during periodic settlement. As for the VAT register, it can remain the usual one without the need to define a specific one. The specific type of VAT movement defined in the template ensures that the tax is not considered as credit or debt until the transfer occurs, even though it is displayed in the VAT movements of the period. 
 
-Il contenuto delle causali di incasso e pagamento risulta quello consueto
+The content of the collection and payment templates remains the usual.
 
-Il contenuto delle causali (eseguite in automatico) di giroconto dell'iva sospesa, storna i conti specifici dell'iva sospesa e contabilizza sui conti dell'iva ordinaria inquanto da quel momento l'iva è esigibile o detraibile rispettivamente.
+The content of the templates (executed automatically) for the suspended VAT transfer clears the specific accounts of the suspended VAT and accounts for them in the ordinary VAT accounts as from that moment the VAT is payable or deductible respectively.
 
-Di seguito alcune immagini di dettaglio delle impostazioni. 
+Below are some detailed images of the settings.
 
 ![](/img/it-it/finance-area/other/suspvat1.png)
 
@@ -47,22 +47,22 @@ Di seguito alcune immagini di dettaglio delle impostazioni.
 
 ![](/img/it-it/finance-area/other/suspvat5.png)
 
-### GESTIONE IVA DECORSO UN ANNO DALL'OPERAZIONE SE NON PAGATA O NON INCASSATA
+### MANAGEMENT OF VAT AFTER ONE YEAR FROM THE OPERATION IF NOT PAID OR COLLECTED
 
-La gestione permette di individuare le partite aperte da oltre un anno e contabilizzare automaticamente il giroconto dell'iva al fine di renderla esigibile oppure detraibile rispettivamente.
+The management allows identifying open items over a year old and automatically accounting for the VAT transfer in order to make it payable or deductible respectively.
 
-Per fare questo è possibile utilizzare (con settaggi specifici) la form [**Giroconto partite**](/docs/finance-area/maturity-values/procedures/maturity-values-giro/filter-tab)
+To do this, it is possible to use (with specific settings) the form [**Transfer of Items**](/docs/finance-area/maturity-values/procedures/maturity-values-giro/filter-tab)
 
-### IMPOSTAZIONI IN PRESENZA DI RICEVUTE BANCARIE ED INSOLUTI
+### SETTINGS IN THE PRESENCE OF BANK RECEIPTS AND UNPAID INVOICES
 
-Se, nell'ambito del ciclo attivo, è prevista l'emissione di ricevute bancarie e la presentazione di in banca delle stesse all'incasso o al salvo buon fine, la configurazione delle causali sarà la seguente:
+If, in the active cycle, the issuance of bank receipts and their presentation to the bank for collection or safe passage is expected, the configuration of the causes will be as follows:
 
-1. Emissione della fattura: registrata con la causale configurata come descritto sopra;
+1. Invoice issue: registered with the template configured as described above;
 
-2. Emissione effetto: registrazione normale con la consueta causale, si chiude la partita aperta dalla fattura ma non viene eseguito nessun giroconto iva
+2. Effect issue: normal registration with the usual template, it closes the open item from the invoice but no VAT transfer is executed.
 
-3. contabilizzazione **distinta** di presentazione Ri.Ba: **la causale utilizzata ha il collegamento a quella automatica di giroconto iva**, il giroconto viene contabilizzato alla data scadenza degli effetti
+3. **List** accounting presentation of Cash Order Parameters: **the template used is linked to the automatic VAT transfer**, the transfer is accounted for on the due date of the effects.
 
-4. contabilizzazione accrediti: normale come di consueto
+4. Accounting for credits: normal as usual.
 
-**Nel caso di contabilizzazione insoluti**: la causale contabile utilizzata non necessita di particolari settaggi, la procedura intercetta la partita chiusa dalla Ri.ba. e collegata all' iva per cassa e cancella la registrazione di giroconto e contestualmente, invece di riaprire la partita, fa un pagamento con segno dare per stornare il pagamento partita eseguito dall'emissione Ri.ba., in modo da avere la partita originale (legata all'iva in sospensione) di nuovo aperta.
+**In the case of accounting for unpaid invoices**: the accounting template used does not require special settings, the procedure intercepts the item closed by the Cash Order Parameters and linked to the cash VAT and cancels the transfer registration and concurrently, instead of reopening the item, makes a payment with a debit sign to cancel the payment of the item executed by the issuance of Cash Order Parameters, so as to have the original item (linked to the suspended VAT) reopened again.

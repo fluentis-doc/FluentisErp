@@ -1,49 +1,49 @@
 ---
 sidebar_position: 1
-title: Regime Speciale dell'IVA Agricola
+title: Special Agricultural VAT Regime 
 ---
 
-L’iva Agricola prevede la non detraibilità dell’iva per gli acquisti sottostanti a questo regime e l’applicazione di una percentuale di compensazione per le vendite del regime stesso: invece di detrarre l’iva acquisti come nel regime normale, l’iva negli acquisti è sempre indetraibile mentre l’iva applicata alle vendite è da versare solo in parte con un calcolo fisso, senza alcuna relazione con gli acquisti del periodo, applicando percentuali compensative variabili a seconda del tipo bene venduto.
+The Agricultural VAT provides for the non-deductibility of VAT for purchases subject to this regime and the application of a compensation percentage for sales under the same regime: instead of deducting VAT on purchases as in the normal regime, VAT on purchases is always non-deductible while VAT applied to sales must be paid only in part with a fixed calculation, with no relation to current period purchases, applying variable compensation percentages depending on the type of goods sold.
 
-### Gestione preliminare delle tabelle
+### Preliminary Management of Tables
 
-Per gestire la percentuale compensativa andremo innanzi tutto a definire le necessarie aliquote iva in vendita, nelle quali andremo a sfruttare la ‘percentuale di indetraibilità’ per eseguire il calcolo:
+To manage the compensation percentage, we will first define the necessary VAT rates for sales, where we will use the 'deductibility percentage' to perform the calculation:
 
 ![](/img/it-it/finance-area/other/agr1.png)
 
-In sostanza, se l’iva X ha percentuale compensativa Y, si andrà ad indicare Y nella colonna ‘% IVA agr. detr.’ (come dato informativo riportato in stampa della liquidazione iva) mentre si valorizzerà con il risultato di Y*100/X la percentuale da indicare in colonna ‘Perc. indetraibilità’.
+Essentially, if VAT X has compensation percentage Y, Y will be indicated in the column ‘% VAT agr. nondeduc.’ (as informational data reported in the VAT settlement printout) while the percentage to indicate in the column ‘% Non-Deductible’ will be valued with the result of Y*100/X.
 
-Andremo a definire uno specifico conto sul quale valorizzare la quota di iva compensata tramite l’applicazione della percentuale di indetraibilità, ad esempio
+We will define a specific account on which to value the compensated VAT portion through the application of the Non-Deductible percentage, for example:
 
 ![](/img/it-it/finance-area/other/agr2.png)
 
-Andremo a definire causali specifiche per suddividere le due Iva nelle registrazioni di vendita in regime agricolo, dove in particolare avremo 
--	un tipo movimento ‘vendita regime agricolo’
--	il conto iva specifico per la rilevazione della quota compensativa di iva
-Non è necessario definire un registro iva ad hoc per la rilevazione di queste operazioni.
+We will define specific causes to divide the two VATs in the sales records under the agricultural regime, where in particular we will have:
+- a movement type ‘agricultural sales’
+- the specific VAT account for recording the compensated VAT portion
+It is not necessary to define a specific VAT register for the recording of these operations.
 
 ![](/img/it-it/finance-area/other/agr3.png)
 
-Anche gli acquisti effettuati in regime agricolo dovranno essere gestiti con una causale contabile ad hoc, che ha la sola particolarità di essere legata al regime iva agricolo appunto.
+Purchases made under the agricultural regime must also be managed with a specific accounting cause, which has the sole particularity of being linked to the agricultural VAT regime.
 
 ![](/img/it-it/finance-area/other/agr4.png)
 
-Dato che l’iva acquisti registrata con questa causale dovrà avere sempre percentuale di indetraibilità 100% (o percentuale iva 0, se operazione non imponibili/esenti/escluse), si consiglia di valorizzare la scheda ‘Controllo aliquote IVA’ in modo da evitare valorizzazioni errate
+Since the VAT on purchases recorded with this cause must always have a Non-Deductible percentage of 100% (or VAT percentage 0, if the operation is non-taxable/exempt/excluded), it is advisable to fill in the ‘VAT Rates Check’ section to avoid incorrect valuations.
 
 ![](/img/it-it/finance-area/other/agr5.png)
 
-Nel caso si effettuino anche acquisti intracomunitari soggetti a regime agricolo, invece delle solite causali con tipo movimento acquisto intracomunitario e relativo giroconto iva, sono stati previsti due tipi movimento ad hoc, iva acquisti intracomunitario agricolo con il relativo giroconto iva agricolo.
-L’acquisto avrà nuovamente iva indetraibile al 100%, mentre in vendita sarà applicata l’iva che andrà versata: tale cambio di aliquota sarà gestibile tramite l’impostazione dell’aliquota iva automatica in griglia iva, come nei casi di reverse charge misto.
+If intracommunity purchases subject to the agricultural regime are also made, instead of the usual causes with movement type intracommunity purchase and the relative VAT accounting adjustment, two specific movement types are provided: agricultural intracommunity purchase VAT with the related agricultural VAT accounting adjustment. The purchase will again have VAT non-deductible at 100%, while on sales, the VAT to be paid will be applied: this change in rate will be manageable through the configuration of the automatic VAT rate in the VAT grid, as in cases of mixed reverse charge.
 
 
-### Risultati per la liquidazione IVA periodica
 
-La liquidazione iva mostrerà il riepilogo dei movimenti in regime agricolo in questo modo:
+### Results for Periodical VAT Settlement
+
+The VAT settlement will show a summary of the movements in the agricultural regime in this way:
 
 ![](/img/it-it/finance-area/other/agr6.png)
 
 ![](/img/it-it/finance-area/other/agr7.png)
 
-:::danger Attenzione
-La chiusura del conto ‘IVA vendite agricola’, utilizzato per rilevare la quota compensativa dell’iva vendite, dovrà essere gestito **manualmente** dall’utente con una rilevazione contabile specifica.
+:::danger Attention
+The closing of the account ‘Agricultural Sales VAT’, used to record the compensated portion of VAT on sales, must be managed **manually** by the user with a specific accounting entry.
 :::
