@@ -1,46 +1,40 @@
 ---
-title: Calcolo provvigioni
+title: Calculate Commissions 
 sidebar_position: 2
 ---
 
-La presente procedura (pertinente all'area amministrativa) è stata creata per l'elaborazione dei dati delle provvigioni agenti inseriti direttamente dalle scritture contabili previa opportuna configurazione delle causali contabili coinvolte.
+This procedure (pertaining to the administrative area) was created for processing the data of agent commissions entered directly from the accounting records, following appropriate configuration of the involved accounting reasons.
 
-In particolare la causale (o le causali) utilizzate per la registrazone delle fatture di vendita dovranno avere il flag **Provvigioni** attivo.
+In particular, the reason (or reasons) used for recording sales invoices must have the **Commissions** flag active.
 
-**NOTA**: è necessario abiltare i flag Gestione Provvigioni anche all'interno di Configurazione > Utilità > Amministrazione > Parametri di contabilità in corrispondenza dell'anno desiderato.
+**NOTE**: It is necessary to enable the Commission Management flags also within Configuration > Utilities > Administration > Accounting Parameters for the desired year.
 
-All'apertura della form eseguendo il comando **Ricerca**, posto nella ribbon bar, viene caricata la lista degli agenti attivi (tramite il flag apposito possono essere caricati anche quelli con data fine mandato scaduta).
+Upon opening the form by executing the **Search** command, located in the ribbon bar, the list of active agents is loaded (through the appropriate flag, those with expired mandate end dates can also be loaded).
 
 ![](/img/it-it/finance-area/professional-men/procedures/calculate-commissions/image01.png)
 
 ![](/img/it-it/finance-area/professional-men/procedures/calculate-commissions/image02.png)
 
-Nella parte destra della form sono presenti sia elementi di filtro per i dati dai quali elaborare le provvigioni, sia elementi da indicare al fine di elaborare correttamente i compensi basati sulla liquidazione che si sta generando.
+On the right side of the form, there are both filter elements for the data from which to process the commissions, as well as elements to indicate in order to correctly process the compensation based on the liquidation being generated.
 
-ATTENZIONE:
+WARNING:
 
-Diversamente dall'elaborazione analoga presente nell'area vendite, al termine della presente procedura non vengono elaborate le Liquidazioni (ricercabili e consultabili e da trasformare poi in compensi) ma saranno direttamente generati i compensi agenti ricercabili ed ulteriormente elaborabili dall'area Percipienti.
+Unlike the similar processing present in the sales area, at the end of this procedure, Liquidations are not processed (which can be searched and consulted and then transformed into compensations), but the agent compensations will be directly generated, searchable and further processable from the Professional Men area.
 
-**Filtro Divisa**: permette di selezionare e filtrare le partite, da considerare per il calcolo delle provvigioni, espresse in una particolare divisa.
+**Currency Filter**: allows you to select and filter transactions to be considered for the commission calculation, expressed in a particular currency.
 
-**Filtro partite**: i filtri di questo gruppo permettono di impostare la data di riferimento per la maturazione della provvigione (posta di default come la data corrente all'apertura della form) e di filtrare ulteriormente per tipo e data del documento. E' presente inoltre un flag che attiva la conversione delle partite in valuta utilizzando il cambio della data documento andando ad imporsi rispetto all'eventuale diverso cambio di apertura delle partite.
+**Maturity value filter**: the filters in this group allow you to set the reference date for the accrual of the commission (default set to the current date upon opening the form) and to further filter by document type and date. There is also a flag that activates the conversion of transactions into currency using the exchange rate of the document date, overriding any different opening exchange rate of the transactions.
 
 ![](/img/it-it/finance-area/professional-men/procedures/calculate-commissions/image03.png)
 
-**ATTENZIONE**: Nel caso in cui l'agente abbia il metodo di maturazione provvigioni a **Pagamento totale** e la fattura di vendita abbia come tipo pagamento **Ricevuta bancaria**, la maturazione della provvigione avverrà in ogni caso alla data di scadenza della ricevuta bancaria, indipendentemente dalla chiusura della partita a fronte dell'emissione della RiBa e della presentazione al Salvo buon fine e/o accredito delle somme.
+**WARNING**: If the agent has the commission accrual method set to **Total Payment** and the sales invoice has the payment type set to **Bank Receipt**, the commission accrual will occur on the due date of the bank receipt, regardless of the closure of the transaction upon issuance of the C.Ord and presentation at subject to collection and/or crediting of the amounts.
 
-Inoltre saranno aggiunti ulteriori giorni impostabili in **Parametri > Tesoreria > Parametri Rischio Cliente** > **N. giorni oltre la scadenza per effetti pres. al slavo buon fine / dopo incasso.**
+Additionally, more days will be added as set in **Parameters > Treasury > Customer Risk Parameters** > **No. days beyond the deadline for effects presented at subject to collection / after collection.** 
 
-**Estremi per la creazione liquidazione**: I campi di questo gruppo sono da gestire prima di lanciare l'esecuzione del calcolo al fine di inserire la data della liquidazione (proposta di default come data corrente), la descrizione della liquidazione ed il mese/anno di comptenza ENASARCO (se si omette quest'ultimo dato il compenso sarà creato con gli omonimi campi vuotti e sarà necessario integrare manualmente dentro ogni compenso generato).
+**Data for creation of commission settlement**: The fields in this group must be managed before launching the execution of the calculation in order to enter the liquidation date (default proposed as the current date), the description of the liquidation, and the month/year of Insurance fund competence (if this last data is omitted, the compensation will be created with the respective fields empty, and it will be necessary to manually fill in each generated compensation).
 
 ![](/img/it-it/finance-area/professional-men/procedures/calculate-commissions/image04.png)
 
-Dopo aver impostato i filtri come sopra descritto, inserito gli stremi per la creazione liquidazione, selezionare dalla lista agenti i soggetti da liquidare e premere il tasto **Calcola** posto nella ribbon bar.
+After setting the filters as described above, entering the data for the creation of the liquidation, select from the agent list the subjects to be liquidated and press the **Calculate** button located in the ribbon bar.
 
-a questo punto è possibile chiudere la form in commento essendo i compensi agenti già calcolati e presenti automaticamente nell'area Percipienti.
-
-
-
-
-
-
+At this point, the form can be closed as the agent compensations have already been calculated and are automatically present in the Professional Men area.

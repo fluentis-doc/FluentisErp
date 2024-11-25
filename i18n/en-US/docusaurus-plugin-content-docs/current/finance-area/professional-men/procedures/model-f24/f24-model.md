@@ -1,26 +1,20 @@
 ---
-title: Modello F24
+title: F24 Model 
 sidebar_position: 1
 ---
 
-La procedura è dedicata alla creazione del modello F24. Questo modello è dedicato al versamento dei vari tributi versati mensilmente dall'azienda.
+The procedure is dedicated to the creation of the F24 model. This model is dedicated to the payment of various taxes paid monthly by the company.
 
-Per inserire un nuovo modello F24 premere il tasto **Nuovo** nella ribbon bar.
+To enter a new F24 model, press the **New** button in the ribbon bar.
 
-Per i dettagli nel nuovo modello in fase di inserimento vedere [**Gestione modello F24**](/docs/finance-area/professional-men/procedures/model-f24/f24-management)
+For details on the new model during the entry phase, see [**F24 Model Management**](/docs/finance-area/professional-men/procedures/model-f24/f24-management)
 
 
 
-| Funzione | Significato |
+| Function | Extended Description |
 | --- | --- |
-| Ricerca | Pulsante per applicare i filtri di ricerca all'intero database dei modelli inseriti. |
-| Nuovo | Richiama la procedura per inserire un nuovo modello. |
-| Modifica | Richiama la procedura per modificare un modello precedentemente inserito. |
-| Visualizzazione | Richiama la procedura per visualizzare un modello precedentemente inserito. |
-| Cancella | Esegue la procedura per cancellare un modello precedentemente inserito. |
-
-
-
-
-
-
+| Search | Button to apply search filters to the entire database of entered models. |
+| New | Calls the procedure to enter a new model. |
+| Modify | Calls the procedure to modify a previously entered model. |
+| View | Calls the procedure to view a previously entered model. |
+| Delete | Executes the procedure to delete a previously entered model. |

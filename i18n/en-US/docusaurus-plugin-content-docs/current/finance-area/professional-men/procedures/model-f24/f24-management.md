@@ -1,52 +1,44 @@
 ---
-title: Gestione F24
+title: F24 Management
 sidebar_position: 2
 ---
 
-## Compilazione automatica
+## Automatic Compilation
 
-La creazione del modello F24 prevede il caricamento di un nuovo modello all'interno del quale i dati di testata sono compilati sulla base dei riferimenti inseriti all'interno della tabella [**Società**](/docs/configurations/tables/general-settings/company). 
- 
+The creation of the F24 model involves loading a new model within which the header data is filled based on the references entered in the [**Company**](/docs/configurations/tables/general-settings/company) table.
 
-Il periodo IVA e il periodo ritenuta (composti dai due campi mese / anno) sono proposti come il mese attuale: possono essere variati per richiamare il mese di riferimento (sia per i dati dell'iva da versare che per le ritenute d'acconto da versare). 
 
-In particolare, per quanto riguarda le  liquidazioni IVA, sarà ricercato il periodo memorizzato nella maschera ** [Versamenti IVA](/docs/finance-area/declarations/declarations/vat-payment) ** presente in contabilità generale (dove sono memorizzati automaticamente i valori della liquidazione al momento della sua stampa in definitivo: è consentito un caricamento manuale del valore).
+The VAT period and withholding period (composed of the two fields month/year) are proposed as the current month: they can be changed to call up the reference month (for both the VAT to be paid and the withholding taxes to be paid).
 
-E' possibile scegliere di elaborare solo i dati iva o solo i dati delle ritenute cancellando i dati dai campi (periodo e anno di riferimento) del dato che non interessa.
+In particular, regarding VAT settlements, the system will search for the period stored in the **[VAT Payments](/docs/finance-area/declarations/declarations/vat-payment)** mask present in general accounting (where the settlement values are automatically stored at the time of its final printing: manual loading of the value is allowed).
 
-Una volta memorizzati i dati di testata si attiverà il pulsante **Proponi valori** che andrà a compilare le varie righe della prima **scheda erario**. 
+You can choose to process only VAT data or only withholding data by clearing the data from the fields (period and reference year) of the data that is not of interest.
 
-Una volta compilate **manualmente** anche tutte **le altre sezioni** della dichiarazione, a seconda delle necessità, impostato il versante/firmatario e il percorso di creazione del file sarà possibile eseguire la creazione del file con l'apposito pulsante che andrà a creare un file con il nome strutturato come 'Partita IVA società' + '_' + 'Numero dichiarazione' + '_' + 'Data dichiarazione' con estensione F24. In caso di dati obbligatori mancanti sarà restituito un messaggio di errore esplicativo e il file non sarà creato.
+Once the header data is stored, the **Propose values** button will be activated, which will fill in the various lines of the first **treasury card**.
 
-È possibile annullare la creazione del file con l'apposito pulsante di gestione.
+Once all **other sections** of the declaration are also filled in **manually**, as needed, set the payer/signer and the file creation path, it will be possible to create the file with the appropriate button that will generate a file with a name structured as 'VAT number of company' + '_' + 'Declaration number' + '_' + 'Declaration date' with F24 extension. If mandatory data is missing, an explanatory error message will be returned, and the file will not be created.
 
-Tramite il pulsante **Crea File telematico** è possibile creare il file che sarà inviato all'Agenzia delle Entrate tramite i canali appositi (es. Entratel).
-Il file viene automaticamente archiviato nl Documentale e può essere visualizzato e scaricato localmente attraverso il pulsante e drop down list **Documenti**, presente nella ribbon bar.
+It is possible to cancel the file creation with the appropriate management button.
 
-:::note[Nota]
-Per la creazione del file è richiesta la presenza (potrebbe essere restituito un messaggio di avviso) di due connettori Bizlink denominati F24 (Gestito dal servizio con autenticazione) ed F24Errors, di tipo Folder Output e con aggancio al partner AgeEnt, Flusso AgeEnt, Operazione di Flusso e documento di flusso F24 (F24Errors per il secondo)
+Through the **Create Electronic File** button, it is possible to create the file that will be sent to the Revenue Agency through the appropriate channels (e.g., Entratel).
+The file is automatically archived in Document Management and can be viewed and downloaded locally through the **Documents** dropdown button present in the ribbon bar.
+
+:::note[Note]
+For file creation, the presence (you may receive a warning message) of two Bizlink connectors called F24 (Managed by the service with authentication) and F24Errors, of type Folder Output and linked to the partner AgeEnt, AgeEnt flow, Flow Operation, and F24 flow document (F24Errors for the latter) is required.
 :::
 
-## Contabilizzazione
+## Accounting
 
-Nella testata del modello è possibile compilare i campi per le eventuali **Spese bancarie** e per il conto della **Banca di pagamento**.
-A questo punto è possibile premere il bottone **Contabilizzazione** per generare automaticamente la scrittura che rileva l'uscita di banca e lo storno dei conti (alimentati automaticamente) dove è stato caricato il debito per ritenute d'acconto da versare e per iva da versare (esempio conti solitamente denominati Erario c/ritenute d'acconto ed Erario C/Iva).
+In the header of the model, it is possible to fill in the fields for any **Bank Expenses** and for the **Payment Bank** account.
+At this point, it is possible to press the **Accounting** button to automatically generate the entry that records the bank outflow and the reversal of the accounts (automatically fed) where the debt for withholding taxes to be paid and VAT to be paid has been loaded.
 
-:::tip[Nota]
-I conti utilizzati automaticamente per caricare il debito IVA e il debito per le ritenute d'acconto sono impostati, rispettivamente, nei [**parametri di contabilità**](/docs/configurations/parameters/finance/accounting-parameters#conti) per quanto riguarda l'iva, e nella tabella [**Tipi Ritenuta**](/docs/configurations/tables/finance/withholding-tax-types.md) per le ritenute d'acconto, conto di default che può essere stato sovrascritto in fase di [**contabilizzazione pagamento compensi**](/docs/finance-area/professional-men/accounting/payments-accounting/parameters)
+:::tip[Note]
+The accounts automatically used to load VAT debt and debt for withholding taxes are set, respectively, in the [**accounting parameters**](/docs/configurations/parameters/finance/accounting-parameters#conti) regarding VAT, and in the [**Withholding tax Types**](/docs/configurations/tables/finance/withholding-tax-types.md) table for withholding taxes, with default accounts that may have been overwritten during [**payment accounting parameters**](/docs/finance-area/professional-men/accounting/payments-accounting/parameters).
 :::
 
-
-
-| Funzione | Significato |
+| Function | Extended Description |
 | --- | --- |
-| Salva | Salva il modello in uso. |
-| Proponi valori | Esegue la ripresa dei dati dai versamenti iva e dalle ritenute dei compensi pagati. |
-| Nuovo dettaglio | Imposta il cursore nella griglia di inserimento dei dettagli. |
-| Cancella dettaglio | Cancella la riga di dettaglio selezionata. |
-
-
-
-
-
-
+| Save | Saves the current model. |
+| Propose values | Retrieves data from VAT payments and from withholding taxes on compensations paid. |
+| New detail | Sets the cursor in the detail input grid. |
+| Delete detail | Deletes the selected detail line. |
