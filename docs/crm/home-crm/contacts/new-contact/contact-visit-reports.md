@@ -3,7 +3,7 @@ title: Visit Report Contatti
 sidebar_position: 10
 ---
 
-Questa è la nona tab dei **Contatti CRM**.
+Tab 9 din  **Contatti CRM**.
 
 In questa tab viene visualizzata la lista dei **Visit Reports** inseriti per il contatto.
 
