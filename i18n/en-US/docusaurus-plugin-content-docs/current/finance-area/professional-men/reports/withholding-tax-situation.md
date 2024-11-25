@@ -1,67 +1,61 @@
 ---
-title: Stampa situazione ritenute
+title: Print Withholding Tax Situation
 sidebar_position: 2
 ---
 
-Con questa stampa è possibile estrarre i dati dei pagamenti compensi effettuati, al fine di avere un riepilogo dei dati relativi alle ritenute d'acconto operate al fine di  gestirne il versamento con modello F24 oppure per effettuare verifiche nell'ambito della certificazione unica dei percipienti e del successivo modello 770.
+With this printout, it is possible to extract data regarding the payments made for compensation, in order to have a summary of the data related to the withholding taxes operated for the purpose of managing the payment with model F24 or for performing verifications in the context of the unique certification of the recipients and the subsequent model 770.
 
-Sono presenti due diversi layout della stampa selezionabili tramite la combo box in alto a sinistra: il primo "Certificazione ritenute" ricalca la comunicazione in forma libera che veniva inviata ai percipienti fino alla recente introduzione della Certificazione Unica mentre la seconda "Situazione ritenute" si presenta come una lista di verifica.
+There are two different layouts of the printout selectable via the combo box in the top left: the first, "Withholding Tax Certification," reflects the free-form communication that was sent to the recipients until the recent introduction of the Unique Certification, while the second, "Withholding Tax Situation," presents itself as a verification list.
 
 ![](/img/it-it/finance-area/professional-men/reports/withholding-tax-situation/image01.png)
 
-PRINCIPALI ELEMENTI DI FILTRO:
+MAIN FILTER ELEMENTS:
 
-Dati del preavviso di parcella.
+Data from the pre-invoice notification.
 
-- Filtro anagrafica percipente
+- professional man register filter 
 
-- Range date del preavviso
+- Notice invoice date range 
 
-- Range numero del preavviso
+- Notice invoice number range
 
-- Divisa
+- Currency 
 
-- Codice tributo
+- Tax code 
 
-- Tipo ritenuta
+- Withholding Tax type
 
 ![](/img/it-it/finance-area/professional-men/reports/withholding-tax-situation/image02.png)
 
- 
 
-Dati relativi alla fattura definitiva (da utilizzare se il preavviso è già stato integrato con i datti della fattura)
 
-- Range di date fattura
+Data related to the final invoice (to be used if the notice invoice has already been integrated with the invoice data):
 
-- Numero
+- Invoice date range 
+
+- Number
 
 ![](/img/it-it/finance-area/professional-men/reports/withholding-tax-situation/image03.png)
 
-Altri dati:
+Other data:
 
-- Flag di filtro che verificano le principali condizioni del documento (contabilizzato, certificato, versata ritenuta, pagato)
+- Filter flags that check the main conditions of the document (accounted, certificate, withholding tax paying-in, paid)
 
 ![](/img/it-it/finance-area/professional-men/reports/withholding-tax-situation/image04.png)
 
-- Anno: filtra solo i compens di competenza dell'anno inserito
+- Year: filters only the compensations for the year entered 
 
-- Flag definitiva: esegue la stampa in definitivo e non permette di variare ulteriormente i dati relativi al versamento delle ritenute.
+- Final flag: executes the print in final form and does not allow further modification of the data related to the payment of withholdings.
 
-- Flag escludi già stampate in definitiva: esclude i compensi già stampati in una stampa definitiva.
+- Exclude already printed in final: excludes compensations that have already been printed in a final printout.
 
 ![](/img/it-it/finance-area/professional-men/reports/withholding-tax-situation/image05.png)
 
- 
 
 
 
-| Funzione | Significato |
+
+| Function | Extended Description |
 | --- | --- |
-| Anteprima | Pulsante per eseguire l'anteprima di stampa. |
-| Stampa | Pulsante per eseguire la stampa fisica del documento. |
-
-
-
-
-
-
+| Preview | Button to execute the print preview. |
+| Print | Button to execute the physical printing of the document. |

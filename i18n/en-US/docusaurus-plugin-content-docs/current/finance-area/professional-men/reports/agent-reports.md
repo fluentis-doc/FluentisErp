@@ -1,18 +1,12 @@
 ---
-title: Stampe Agenti
+title: Agents reports
 sidebar_position: 1
 ---
 
-Da questa form è possibile lanciare diverse stampe riguardanti la gestione degli agenti.
+From this form, it is possible to launch various prints related to the management of agents.
 
-I vari report sono selezioanbili dall'apposita combo box.
+The various reports can be selected from the appropriate combo box.
 
 ![](/img/it-it/finance-area/professional-men/reports/agent-reports/image01.png)
 
-I vari campo di filtro ricalcano quelli previsti per la** [ Situazione ritenute](/docs/finance-area/professional-men/reports/withholding-tax-situation) ** alla quale si rinvia.
-
-
-
-
-
-
+The various filter fields mirror those required for the **[Withholding Tax Situation](/docs/finance-area/professional-men/reports/withholding-tax-situation)** to which it refers.

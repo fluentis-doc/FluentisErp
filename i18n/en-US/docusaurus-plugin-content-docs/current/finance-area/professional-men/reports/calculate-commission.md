@@ -1,14 +1,8 @@
 ---
-title: Calcolo provvigioni
+title: Calculate Commissions 
 sidebar_position: 3
 ---
 
-La stampa presente in questa posizione (pertinente all'area amministrativa) è stata creata a supporto del ** [calcolo provvigioni](/docs/finance-area/professional-men/procedures/calculate-commissions) ** presente nelle procedure amministrative (che attinge ai dati delle provvigioni agenti inseriti direttamente dalle scritture contabili previa opportuna configurazione delle causali contabili coinvolte).
+The report available in this position (related to the administrative area) has been created to support **[calculate commissions](/docs/finance-area/professional-men/procedures/calculate-commissions)** present in the administrative procedures (which draws data from the agent commissions entered directly by the accounting entries, following appropriate configuration of the involved accounting causes).
 
-Tramite questa stampa è possibile dunque elaborare la lista delle provvigioni maturate filtrando eventualmente per singolo agente, per cliente, per data e inserendo la data di riferimento per considerare maturata la provvigione.
-
-
-
-
-
-
+Through this report, it is possible to process the list of accrued commissions, optionally filtering by individual agent, by customer, by date, and entering the reference date to consider the commission accrued.
