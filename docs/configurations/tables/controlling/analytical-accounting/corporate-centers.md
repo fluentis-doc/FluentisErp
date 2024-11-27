@@ -51,7 +51,7 @@ ATTENZIONE: alcuni campi sono, tuttavia, modificabili agendo direttamente sulla 
 ### Campi non obbligatori della colonna di destra 
 - ***DATA INIZIO***/***DATA FINE VALIDITA’*** impostando queste date andremo a verificare se il centro di costo è valido alla data di registrazione (o alla data del documento), cioè il menù a tendina dei centri mostrerà solo quelli validi alla data (o con range di validità vuoto)
 - FLAG ***VALORIZZABILE***: indica se il centro può essere valorizzato in contabilità o nei documenti o se è un centro di struttura logica
-- FLAG ***VISIBILE IN PRODUZIONE***, questo rende visibile quel centro nelle tabelle di produzione, in particolare nelle macchine e nei gruppi manodopera;
+- FLAG ***VISIBILE IN PRODUZIONE***: questo rende visibile quel centro nella tabella [Centri di costo](/docs/configurations/tables/production/cost-center) presente in produzione;
 - ***CENTRO DI RESPONSABILITA’***. È una tabella libera dove indico chi è il responsabile di quel centro, non ha influenza nelle logiche di gestione della contabilità analitica, ma può essere utilizzato per segnalare tramite supervisor eventuali sforamenti di budget al dipendente collegato.
 
 ## SECONDO TAB - Impostazioni di controllo

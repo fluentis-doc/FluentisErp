@@ -60,17 +60,17 @@ La form è dedicata all'inserimento dei magazzini  e delle relative causali che
 Inoltre, è possibile settare gli stessi parametri anche per uno specifico Sito di produzione.       
 
 Quindi la priorità per il **carico** sarà presa nel seguente ordine:
-- Magazzino e casuale se sono settati nella testata dell'ordine di produzione
-- [Parametri dei siti produttivi](/docs/configurations/parameters/production/production-orders-parameters/production-site) della commessa collegata all'ordine di produzione
+- Magazzino e casuale se sono indicati nella testata dell'ordine di produzione
+- [Parametri del sito produttivi](/docs/configurations/parameters/production/production-orders-parameters/production-site) indicato nella commessa collegata all'ordine di produzione
 - [Parametri MRP dell'articolo](/docs/configurations/parameters/production/mrp-parameters/mrp-parameters-intro)
-- Dal sito di produzione collegato alla macchina che è inserita nella dichiarazione di produzione; se la macchina è nulla nelle dichiarazioni, i parametri sono presi dal sito di produzione collegato alla macchina indicata nella fase  
+- Dal sito di produzione collegato alla macchina che è inserita nella dichiarazione di produzione; se la macchina non è stata indicata nella dichiarazione, i parametri sono presi dal sito di produzione collegato alla macchina indicata nella fase dell'ordine di produzione
 - [Parametri degli ordini di produzione](/docs/configurations/parameters/production/production-orders-parameters/production-orders-parameters-intro)
 
-mentre la priorità per lo **scarico** sarà data nell'ordine da:
+La priorità per lo **scarico** sarà data nell'ordine da:
 
-- [Parametri dei siti produttivi](/docs/configurations/parameters/production/production-orders-parameters/production-site) della commessa collegata all'ordine di produzione
+- [Parametri del sito produttivi](/docs/configurations/parameters/production/production-orders-parameters/production-site) indicato nella commessa collegata all'ordine di produzione
 - [Parametri MRP dell'articolo](/docs/configurations/parameters/production/mrp-parameters/mrp-parameters-intro)
-- Dal sito di produzione collegato alla macchina che è inserita nella dichiarazione di produzione; se la macchina è nulla nelle dichiarazioni, i parametri sono presi dal sito di produzione collegato alla macchina indicata nella fase  
+- Dal sito di produzione collegato alla macchina che è inserita nella dichiarazione di produzione; se la macchina non è stata indicata nella dichiarazione, i parametri sono presi dal sito di produzione collegato alla macchina indicata nella fase dell'ordine di produzione
 - [Parametri degli ordini di produzione](/docs/configurations/parameters/production/production-orders-parameters/production-orders-parameters-intro)
 
 In questo tab quindi, si potranno impostare i magazzini relativi alle *Materie Prime*, ai *Semilavorati*, ai *Prodotti finiti* e ad eventuali *Scarti* con le relative causali di carico e scarico.
@@ -83,12 +83,17 @@ Per magazzini *W.I.P.* (Work in Progress) si intendono dei magazzini di transizi
 
 Diversamente, se il tipo di prelievo del materiale è *Con Lista*, allora mentre lo spostamento del materiale al magazzino W.I.P. avviene nello stesso modo rispetto al tipo di prelievo manuale, lo scarico dal W.I.P. avviene tramite la procedura della [Lista di prelievo materiali](/docs/production/pp-production-in-progress/picking-materials-list).     
 
-Per quanto riguarda il carico di prodotti finiti e semilavorati, se si considera l'ultima fase (produttiva e movimentabile) del ciclo vengono usati magazzini e causali della sezione *Prodotti finiti* se l'ordine di produzione è di livello 1 (quindi relativo al prodotto finito), invece vengono usate quelle della sezione *Semilavorati* se l'ordine di produzione **non** è di livello 1 (quindi è un semilavorato). Se la sezione *Semilavorati* non è valorizzata vengono usate quelle della sezione *Prodotti finiti*.     
+**Funzionamento Magazzini e Causali**
 
-Nel caso in cui **non** sia l'ultima fase (produttiva e movimentabile) del ciclo e il flag WIP **non** è attivo, vengono usati magazzini e causali della sezione *Semilavorati WIP*. Invece, se è attivo il flag WIP vengono usate quelle della sezione *WIP* e quelle della sezione *Semilavorati WIP* non vengono più considerate.     
+Per quanto riguarda il **carico** di prodotti finiti e semilavorati:
 
-Per lo scarico dei materiali invece, se il flag WIP non è attivo vengono usati magazzini e causali presenti nella sezione *Materie prime* se l'articolo ha tipo approvvigionamento *Acquisto* nei [Parametri MRP](/docs/configurations/parameters/production/mrp-parameters/mrp-parameters-intro), mentre se ha tipo approvvigionamento *Produzione* o *Conto lavoro* vengono usati per lo scarico magazzini e causali presenti nella sezione *Semilavorati*.        
-Invece, se il flag WIP è attivo vengono usati magazzini e causali presenti nella sezione *WIP* (nel caso in cui quest non fossero valorizzate vengono utilizzate quelle della sezione *Materie prime*). Quindi se l'articolo ha tipo approvvigionamento *Acquisto* viene usata la causale *Consumo materiali* e se ha tipo approvvigionamento *Produzione* o *Conto lavoro* la causale consumo semilavorati.
+- Se si considera l'**ultima fase produttiva e movimentabile** del ciclo, vengono usati magazzini e causali della sezione **Prodotti finiti**, se l'ordine di produzione è di **livello 1** (quindi relativo al prodotto finito), invece vengono usate quelle della sezione **Semilavorati**, se l'ordine di produzione **non è di livello 1** (quindi è un semilavorato). Se la sezione **Semilavorati** non è valorizzata vengono usate quelle della sezione **Prodotti finiti**.
+- Nel caso in cui **non sia l'ultima fase produttiva e movimentabile** del ciclo e la **gestione WIP** **non è stata attivata**, vengono usati magazzini e causali della sezione **Semilavorati WIP**. Invece, se **è attiva** la **gestione WIP** vengono usate quelle della **sezione WIP** e quelle della sezione **Semilavorati WIP** non vengono più considerate.
+
+Per lo **scarico** dei materiali invece:
+
+- Se la **gestione WIP** **non è stata attivata**, vengono usati magazzini e causali presenti nella sezione **Materie prime** se l'articolo ha **tipo approvvigionamento Acquisto** nei [Parametri MRP](/docs/configurations/parameters/production/mrp-parameters/mrp-parameters-intro), mentre se ha **tipo approvvigionamento Produzione o Conto lavoro**, vengono usati per lo scarico magazzini e causali presenti nella sezione **Semilavorati**.       
+- Invece, se **è attiva la gestione WIP**, vengono usati magazzini e causali presenti nella **sezione WIP** (nel caso in cui questi non fossero valorizzate vengono utilizzate quelle della sezione Materie prime). Quindi, se l'articolo ha **tipo approvvigionamento Acquisto**, viene usata la causale **Consumo materiali**. Invece, se ha **tipo approvvigionamento Produzione o Conto lavoro**, viene usata la causale consumo **semilavorati**.
 
 :::note Nota
 Quando viene attivato il flag *W.I.P.* nei *Parametri ordini produzione*, automaticamente nella creazione degli ordini di conto lavoro (dal *Rilascio ordini pianificati* o direttamente dall'ordine di produzione), vengono considerate per i materiali da inviare al terzista il magazzino e la causale presenti nei  [Parametri conto lavoro](/docs/configurations/parameters/production/subcontractor-parameters) alla sezione *Consegne materiali a terzisti W.I.P.*; quindi in questo caso i materiali da inviare ai terzisti saranno prelevati direttamente dal magazzino *W.I.P.*    

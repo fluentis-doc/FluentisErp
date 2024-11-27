@@ -3,6 +3,12 @@ title: Patch notes Versione 608
 sidebar_position: 2
 ---
 
+### Patch 608.1-0060 - 21/11/2024
+> - Revisione calcolo residuo per partite in valuta (#TT04613/24)
+> - FI - stampa controllo cespiti, revisione segni conti dei fondi ammortamento (#TT04667/24)
+> - MES – Corretto bug in registrazione segnalazioni di produzione. (#TT04825/24)
+> - MES – Corretto bug nella registrazione delle dichiarazioni di produzione. (#TT04826/24)
+
 ### Patch 608.1-0059 - 13/11/2024
 > - MPS – In Definizione MPS,  le commesse selezionate nel tab riepilogativo vengono aggiunte ad una commessa già esistente (indicata nel box Commessa di produzione proposto nel tab Riepilogativo), se e solo se è abilitato il flag Aggiornamento commesse già esistenti nel tab parametri. In automatico verrà proposta una commessa già salvata dove aggiungere le righe, se ne esiste già una con quel tipo e data. (#TT04762/24)
 > - SH – Modifica del filtro di sola lettura per la classe Extra data dell’oggetto FSItemMaterialProfile, per abilitare la selezione dei ‘Valori ammessi’ basati su questo oggetto durante la creazione di una matrice in Anagrafica Articolo (#TT04490/24)
