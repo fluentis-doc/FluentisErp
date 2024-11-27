@@ -1,30 +1,22 @@
 ---
-title: Contabilizzazione pagamenti
+title: Payments Accounting 
 sidebar_position: 1
 ---
 
 LINK:
 
-** [Filtro](/docs/finance-area/professional-men/accounting/payments-accounting/filter) **
+**[Filter](/docs/finance-area/professional-men/accounting/payments-accounting/filter)**
 
-** [Parametri](/docs/finance-area/professional-men/accounting/payments-accounting/parameters) **
+**[Parameters](/docs/finance-area/professional-men/accounting/payments-accounting/parameters)**
 
-** [Rollback](/docs/finance-area/professional-men/accounting/payments-accounting/previous) **
-
- 
-
-Con questa procedura si può eseguire la contabilizzazione dei pagamenti dei compensi percipienti inseriti a sistema.
-
-La contabilizzazione del pagamento può avvenire sia sul preavviso di parcella (senza numero e data documento definitivo), sia sulla fattura definitiva.
-
-Pertanto l'ordine con il quale potranno essere eseguite la presente procedura rispetto a quella di ** [Contabilizzazione compensi](/docs/finance-area/professional-men/accounting/compensation-accounting/compensations-accounting) ** dipenderà dall'emissione direttamente di una fattura o di un preavviso da parte del percipiente. Questa possibilità è legata anche al fatto che il termine per il versamento della ritenuta d'acconto  scatta dal momento del pagamento e non della fatturazione.
-
-**Per la corretta gestione della ritenuta d'acconto da parte di Fluentis, si raccomanda di gestire il pagamento dei percipienti esclusivamente da questa procedura evitando di effettuare registrazioni manuali in prima nota oppure di operare dal modulo Tesoreria.**
-
- 
+**[Rollback](/docs/finance-area/professional-men/accounting/payments-accounting/previous)**
 
 
 
+With this procedure, it is possible to carry out the accounting of payments for the compensations received entered into the system.
 
+The payment accounting can occur both on the pro forma invoice (without document number and date) and on the final invoice.
 
+Therefore, the order in which this procedure can be carried out concerning **[Commissions Accounting](/docs/finance-area/professional-men/accounting/compensation-accounting/compensations-accounting)** will depend on whether an invoice or a pro forma notice is issued directly by the professional man. This possibility is also linked to the fact that the term for the payment of the withholding tax starts from the moment of payment and not from the invoicing.
 
+**For the correct management of the withholding tax by Fluentis, it is recommended to manage the payment of professional man exclusively through this procedure, avoiding manual entries in the journal or operating from the Treasury module.**

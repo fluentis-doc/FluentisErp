@@ -1,22 +1,16 @@
 ---
-title: Filtro
+title: Filter
 sidebar_position: 2
 ---
 
-La parte superiore della maschera è dedicata all'impostazione dei filtri di ricerca. Una volta impostate alla base della maschera le date di registrazione competenza e l'eventuale registrazione con stato provvisorio è sufficiente premere il pulsante di contabilizzazione: se tutto va a buon fine le righe selezionate scompariranno dalla griglia e dalla form di rollback sarà possibile visualizzare in anteprima il risultato.
+The upper part of the mask is dedicated to setting search filters. Once the registration dates for proficiency and any provisional status registration are set at the bottom of the mask, it is sufficient to press the accounting button: if everything goes well, the selected lines will disappear from the grid, and the rollback form will allow you to preview the result.
 
 ![](/img/it-it/finance-area/professional-men/accounting/compensation-accounting/filter/image01.png)
 
 
 
-| Funzione | Significato |
+| Function | Extended Description |
 | --- | --- |
-| Ricerca contabilizzazioni | Ricerca la lista dei compensi da contabilizzare. |
-| Contabilizzazione compensi | Esegue la contabilizzazione compensi per le righe selezionate. |
-| Modifica compenso | Apre in modifica il compenso selezionato. |
-
-
-
-
-
-
+| Search Accounting | Searches the list of compensations to be accounted for. |
+| Commissions Accounting | Executes the accounting for the selected lines. |
+| Edit Commission | Opens the selected compensation for editing. |

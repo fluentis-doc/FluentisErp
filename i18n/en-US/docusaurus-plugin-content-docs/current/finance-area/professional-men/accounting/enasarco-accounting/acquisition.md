@@ -1,31 +1,25 @@
 ---
-title: Acquisizione
+title: Transfer
 sidebar_position: 2
 ---
 
-La maschera presenta nella parte superiore la consueta zona di filtro che gestisce la ricerca dei compensi da selezionare per la contabilizzazione enasarco.
+The form presents at the top the usual filter zone that manages the search for fees to be selected for Enasarco accounting.
 
 ![](/img/it-it/finance-area/professional-men/accounting/enasarco-accounting/acquisition/image01.png)
 
-I dati filtrati vengono presentati nella griglia centrale
+The filtered data is displayed in the central grid.
 
 ![](/img/it-it/finance-area/professional-men/accounting/enasarco-accounting/acquisition/image02.png)
 
- 
 
-Una volta impostate alla base della maschera le date di registrazione, di competenza, la causale di contabilità da utilizzare e l'eventuale gestione in una singola registrazione (senza effettuare alcun raggruppamento in caso di sottoconti uguali), sarà sufficiente premere il pulsante di contabilizzazione: se tutto va a buon fine le righe selezionate scompariranno dalla griglia e dalla tab di rollback sarà possibile visualizzare in anteprima il risultato.
+
+Once the registration dates, competence dates, the ledger reccords template to be used, and any management in a single registration (without any grouping in case of equal detail accounts) are set at the bottom of the form, it will be sufficient to press the accounting button: if everything goes well, the selected lines will disappear from the grid, and from the rollback tab, it will be possible to preview the result.
 
 ![](/img/it-it/finance-area/professional-men/accounting/enasarco-accounting/acquisition/image03.png)
 
 
 
-| Funzione | Significato |
+| Function | Extended Description |
 | --- | --- |
-| Ricerca | Ricerca la lista dei compensi per i quali contabilizzare i tributi Enasarco. |
-| Contabilizzazione | Esegue la contabilizzazione dei tributi Enasarco selezionati. |
-
-
-
-
-
-
+| Search | Searches the list of fees for which to account for Enasarco contributions. |
+| Accounting | Executes the accounting of the selected Enasarco contributions. |

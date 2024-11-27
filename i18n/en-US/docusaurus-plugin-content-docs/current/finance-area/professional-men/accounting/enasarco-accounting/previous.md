@@ -1,9 +1,9 @@
 ---
-title: Precedenti
+title: Previous
 sidebar_position: 3
 ---
 
-Dalla scheda precedenti è possibile procedere all'annullamento delle contabilizzazioni eseguite. L'annullamento sarà possibile solo se il periodo è ancora modificabile (stampa libro giornale e chiusura conti non eseguite). Un doppio click nella sezione delle registrazioni consentirà di visualizzare la registrazione contabile relativa.
+From the previous tab, it is possible to proceed with the cancellation of the recorded transactions. The cancellation will only be possible if the period is still modifiable (journal book printout and account closure not performed). A double click in the registration section will allow you to view the related ledger record.
 
 
 
@@ -13,15 +13,9 @@ Dalla scheda precedenti è possibile procedere all'annullamento delle contabiliz
 
 
 
-| Funzione | Significato |
+| Function | Extended Description |
 | --- | --- |
-| Ricerca | Ricerca la lista delle creazioni eseguite. |
-| Rollback contabilizzazione | Con questo pulsante sarà cancellata tutta la contabilizzazione effettuata, con tutti i compensi associati. |
-| Rollback registrazioni | Il pulsante esegue il ripristino della registrazione selezionata. |
-| Visualizza compensi | Il pulsante apre il visualizzazione il compenso selezionato. |
-
-
-
-
-
-
+| Search | Searches the list of completed entries. |
+| Rollback accounting | With this button, all accounting performed will be deleted, along with all associated commissions. |
+| Rollback Records | The button restores the selected record. |
+| View commissions | The button opens the view for the selected commission. |

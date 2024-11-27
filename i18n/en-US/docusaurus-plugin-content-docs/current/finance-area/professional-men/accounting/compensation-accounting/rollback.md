@@ -3,20 +3,12 @@ title: Rollback
 sidebar_position: 3
 ---
 
-Dalla scheda precedenti è possibile procedere all'annullamento delle contabilizzazioni eseguite. 
+From the previous tab, it is possible to proceed with the cancellation of executed entries.
 
-L'annullamento sarà possibile solo se il periodo è ancora modificabile (stampa libro giornale, registro iva non stampato, liquidazione periodica non stampata, chiusura conti non eseguita). Un doppio click nella sezione delle registrazioni consentirà di visualizzare la registrazione contabile relativa.
+Cancellation will only be possible if the period is still editable (journal book print, VAT register not printed, periodic liquidation not printed, account closure not executed). A double-click in the entry section will allow you to view the related ledger record.
 
-
-
-| Funzione | Significato |
+| Function | Extended Description |
 | --- | --- |
-| Ricerca | Ricerca la lista delle creazioni eseguite. |
-| Rollback contabilizzazione | Con questo pulsante sarà cancellata tutta la contabilizzazione effettuata (selezionata dalla griglia 'Contabilizzazione'), con tutti i compensi associati. |
-| Rollback registrazioni | Il pulsante esegue il ripristino solamente della registrazione contabile selezionata dalla griglia 'Registrazione contabile'. |
-
-
-
-
-
-
+| Search | Searches the list of executed creations. |
+| Rollback accounting | With this button, all accounting entries made (selected from the 'Accounting' grid) will be deleted, along with all associated compensations. |
+| Rollback Records | The button performs the restoration of only the ledger record selected from the 'Ledger Record' grid. |
