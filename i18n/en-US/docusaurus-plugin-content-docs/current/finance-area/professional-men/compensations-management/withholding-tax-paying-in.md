@@ -1,12 +1,6 @@
 ---
-title: Versamenti ritenute
+title: Withholding Tax Paying-in
 sidebar_position: 4
 ---
 
-La scheda Versamenti ritenuta memorizza i riferimenti generali del versamento ritenuta: viene gestita manualmente inserendo i dati del versamento effettuato con modello F24 o in modo massivo attraverso la maschera ** [Versamenti ritenuta](/docs/finance-area/professional-men/search-compensations/withholding-tax-paying-in) ** che si può aprire dalla ** [Ricerca compensi](/docs/finance-area/professional-men/search-compensations/search-compensations-intro) **.
-
-
-
-
-
-
+The Withholding Tax Paying-in tab stores the general references of the withholding payment: it can be managed manually by entering the details of the payment made using the F24 form or in bulk through the **[Withholding Tax Paying-in](/docs/finance-area/professional-men/search-compensations/withholding-tax-paying-in)** form that can be opened from the **[Search Commissions](/docs/finance-area/professional-men/search-compensations/search-compensations-intro)**.

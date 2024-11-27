@@ -1,27 +1,21 @@
 ---
-title: Totali ritenuta
+title: Withholding-tax Totals
 sidebar_position: 2
 ---
 
-Riepiloghi IVA e dati di dettaglio del calcolo della ritenuta d'acconto, dei contributi Enasarco e INPS.
+Summary of VAT and details of the calculation of withholding tax, Enasarco contributions, and social security.
 
  ![](/img/it-it/finance-area/professional-men/compensations-management/total-withholding-tax/image01.png)
 
-**FLAG alla base della maschera**: è possibile impostare il **calcolo manuale**: in questo caso sarà possibile forzare manualmente i campi di calcolo della ritenuta i campi Enasarco ed il calcolo dell'IVA nella tab ** [Riepiloghi IVA](/docs/finance-area/professional-men/compensations-management/vat-summaries) **. 
+**FLAG at the bottom of the form**: it is possible to set the **manual calculation**: in this case, it will be possible to manually force the withholding calculation fields, Insurance fund fields, and VAT calculation in the tab **[VAT Summaries](/docs/finance-area/professional-men/compensations-management/vat-summaries)**.
 
-Si segnala che se è stato impostato il calcolo manuale l'applicazione non procederà più ad allineare la scadenza da pagare presente nel tabulatore successivo.
+It is noted that if manual calculation has been set, the application will no longer proceed to align the payment due present in the next tab.
 
-Si ricorda infine, che nel caso (remoto) di nota di credito percipiente, i valori della griglia di dettaglio saranno da inserire con segno negativo.
+Finally, it is recalled that in the (remote) case of a credit note for the beneficiary, the values in the detail grid must be entered with a negative sign.
 
 
 
-| Funzione | Significato |
+| Function | Extended Description |
 | --- | --- |
-| Calcola valori | Esegue il ricalcolo dei dati del compenso (ritenute, IVA, scadenze). |
-| Anteprima di stampa | Esegue l'anteprima di stampa del compenso. |
-
-
-
-
-
-
+| Calculate values | Recalculates the compensation data (withholdings, VAT, deadlines). |
+| Print preview | Executes the print preview of the compensation. |
