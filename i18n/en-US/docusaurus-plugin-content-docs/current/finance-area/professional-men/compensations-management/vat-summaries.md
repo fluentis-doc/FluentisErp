@@ -1,20 +1,10 @@
 ---
-title: VAT Summaries
+title: VAT Summaries 
 sidebar_position: 5
 ---
 
-The 'VAT Summaries' section consists of a detailed summary about rate VAT data per rate: this section cannot be edited.
+The VAT Summaries section presents a detailed summary of VAT data by rate.
 
-RIBBON BAR: it represents the Form menu, that is the area in which it is possible to perform actions linked to the compensation in management. The list of features is the following:
+The data can be manually forced, for example, to handle tax rounding manually.
 
-
-
-| Function | Meaning |
-| --- | --- |
-| Recalculate VAT Data | It performs the recalculation of compensation VAT data. |
-
-
-
-
-
-
+To enable manual editing, activate the flag **Manual Calculation** in the tab **[Withholding Tax Total](/docs/finance-area/professional-men/compensations-management/total-withholding-tax)**.
