@@ -1,65 +1,60 @@
 ---
-title: Introduzione
+title: Introduction
 sidebar_position: 1
 ---
 
-Il modulo Percipienti di Fluentis ERP gestisce le attività legate ai compensi erogati a professionisti esterni e agenti, garantendo il controllo sulle ritenute d’acconto e sugli adempimenti fiscali connessi, come la compilazione del modello F24. Questo modulo permette di registrare compensi, contabilizzare pagamenti, e generare certificazioni fiscali. Il modulo può ricevere i dati degli agenti dall'omonimo modulo dell'area **Vendite**.  
-Da questo modulo si realizza la rilevazione dei debiti per i vari tributi da versare (ritenuta, Enasarco, INPS).
+The Fluentis ERP Professional Men module manages activities related to payments made to external professionals and agents, ensuring control over withholding tax and related tax obligations, such as the completion of the F24 form. This module allows for the registration of commissions, accounting for payments, and generating tax certifications. The module can receive agent data from the corresponding module in the **Sales** area.  
+From this module, debt for various taxes to be paid (Withholding, Insurance fund, Social security) is recorded.
 
-**Funzionalità Principali**
+**Main Features**
 
-- Ricerca e gestione dei compensi: Consente di inserire, modificare e visualizzare i compensi, con la possibilità di eliminare quelli errati e gestire versamenti delle ritenute d’acconto in modo massivo, evitando modifiche manuali sui singoli compensi​
+- Search and management of commissions: Allows you to enter, modify, and view commissions, with the option to delete incorrect entries and manage withholding payments en masse, avoiding manual modifications on individual commissions.
 
-- Contabilizzazione compensi: I compensi possono essere contabilizzati direttamente, sia per la parte fiscale (ritenute, INPS, ENASARCO), sia per la gestione dei centri di costo e profitto aziendali. I compensi definitivi vengono poi inseriti in contabilità​
+- Commissions Accounting: commissions can be accounted for directly, both for the tax side (Withholdings, Social security, Insurance fund) and for managing company cost and profit centers. Definitive commissions is then entered into accounting.
 
-- Modello F24: Il modulo gestisce il calcolo e la compilazione del modello F24 per il versamento delle ritenute e altri tributi, con la possibilità di proporre automaticamente i dati necessari grazie alle informazioni inserite nei compensi​
-
-
-
-**Stampe Disponibili**
-
-- Stampa certificazione ritenute: Genera la certificazione delle ritenute periodiche a titolo d’acconto​
-
-- Situazione ritenute: Fornisce un riepilogo delle ritenute versate o da versare, utile per il controllo interno e la compilazione della Certificazione Unica​
-
-- Stampa provvigioni: Supporta la gestione delle provvigioni maturate dagli agenti, con filtri per data e agente, permettendo di elaborare liste complete​
+- F24 Form: The module manages the calculation and completion of the F24 form for the payment of withholdings and other taxes, with the possibility of automatically proposing the necessary data based on the information entered in the commissions.
 
 
 
-**Procedure Principali**
+**Available Prints**
 
-- Gestione compensi e versamenti ritenute: Permette di caricare, modificare e collegare documenti fiscali relativi ai compensi, e di gestire manualmente o massivamente i dati del versamento​
+- Withholding certificate printout: Generates the certification of periodic withholdings in advance.
 
-- Calcolo provvigioni: Automatizza il calcolo delle provvigioni per gli agenti, con la possibilità di collegare i compensi a specifici progetti o commesse​
+- Withholding situation: Provides a summary of withholdings paid or to be paid, useful for internal control and the compilation of the Unique Certification.
 
-
-**Vantaggi nell'utilizzo del modulo**: Questo modulo dialoga sia con il modulo **Vendite** per la lettura delle provvigioni agenti calcolate e la trasformazione in Parcella dell'agente, garantendo il calcolo sia delle ritenute d'acconto, sia dei contributi pensionistici Enasarco, e sia con il modulo Dichiarazioni fiscali permettendo di gestire tutta la fiscalità, fino alla CU (certificazione unica delle ritenute d'acconto) in autonomia senza necessariamente dover ricorrere a consulenze esterne. L'elaborazione della CU permette anche di esportare il tracciato telematico per l'invio all'Agenzia delle Entrate. Particolare attenzione è stata posta alla logica di gestione dei compensi ed alla realtà Italiana, con la possibilità di inserire il preavviso di parcella (di fatto una fattura proforma) e procedere al pagamento, con nascita del debito per i versamenti fiscali, prima della contabilizzazione della fattura ricevuta.
-
-**Tabelle e parametri necessari per utilizzare il modulo**
-
-Per utilizzare il modulo Percipienti di Fluentis ERP, è necessario gestire alcune tabelle chiave per assicurare il corretto funzionamento del sistema e l'allineamento delle operazioni contabili e fiscali. Tra le principali tabelle da configurare ci sono:
-
-- Tipi conto e **Tipi ritenuta**: Essenziali per definire la tipologia di ritenuta da applicare ai diversi percipienti.
-- **Categorie Agenti**: Tabella fondamentale per gli agenti dove definire la contribuzione pensionistica e gli altri contribuiti a cui sono soggetti.
-- Codice tributo: Necessario per la gestione delle ritenute e dei tributi collegati ai compensi.
-- Modalità di versamento: Per definire le modalità di pagamento dei tributi.
-- Piano dei conti: Necessario per associare le registrazioni contabili ai conti corretti.
-- Aliquote IVA: Per la corretta applicazione delle imposte sui compensi.
-- Causali contabilità generale e causali contributo: Utilizzate per classificare correttamente le operazioni contabili legate ai compensi dei percipienti.
-- Centri di costo/profitto/responsabilità: Per assegnare i costi e i ricavi ai vari centri aziendali.
-- Cambi fissi euro e cambi valute: Importanti per la gestione delle transazioni in diverse valute.
+- Commission printout: Supports the management of commissions earned by agents, with filters for date and agent, allowing for the processing of complete lists.
 
 
 
-**Conclusioni**
+**Main Procedures**
 
-Il modulo Percipienti di Fluentis ERP è uno strumento avanzato per la gestione dei compensi a professionisti e agenti, assicurando la correttezza dei versamenti fiscali e facilitando l’elaborazione di documenti ufficiali come il modello F24 e le certificazioni delle ritenute.
+- Management of commissions and withholding payments: Allows loading, modifying, and linking tax documents related to commissions, and manually or massively managing payment data.
+
+- Commission calculation: Automates the calculation of commissions for agents, with the ability to link compensations to specific projects or engagements.
 
 
+**Advantages of using the module**: This module interacts with the **Sales** module for reading calculated agent commissions and transforming them into the agent's Invoice, ensuring the calculation of both withholding tax and Enasarco pension contributions, and also with the Tax Declarations module allowing for complete management of taxation, up to the CU (unique certification of withholding tax) independently without necessarily resorting to external consulting. The processing of the Currency convert also allows exporting the electronic track for submission to the Revenue Agency. Special attention has been given to the logic of managing compensation and the Italian reality, with the ability to enter a pre-invoice notice (essentially a proforma invoice) and proceed to payment, thereby creating the debt for tax payments before accounting for the received invoice.
 
+**Tables and parameters necessary to use the module**
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/k7abmzqf6Bk" title="YouTube video player" frameborder="0" allowfullscreen= "true"></iframe>
+To use the Fluentis ERP Professional Men module, it is essential to manage some key tables to ensure the correct functioning of the system and the alignment of accounting and tax operations. Among the main tables to configure are:
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/8sdFGMDVIFc" title="YouTube video player" frameborder="0" allowfullscreen= "true"></iframe>
+- Account Types and **Withholding Tax Types**: Essential for defining the type of withholding to apply to different recipients.
+- **Agent Categories**: A fundamental table for agents where pension contributions and other contributions they are subject to are defined.
+- Tax Code: Necessary for managing withholdings and taxes related to compensation.
+- Payment methods: To define the payment methods for taxes.
+- Chart of accounts: Necessary to associate accounting entries with the correct accounts.
+- VAT rates (Aliquote IVA): For the correct application of taxes on compensation.
+- General accounting reasons and contribution reasons: Used to correctly classify accounting operations related to the compensation of recipients.
+- Cost/profit/responsibility centers: To allocate costs and revenues to various business centers.
+- Fixed euro exchange rates and currency exchange rates: Important for managing transactions in different currencies.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/DVXhUdwqBS4" title="YouTube video player" frameborder="0" allowfullscreen= "true"></iframe>
+**Conclusions (Conclusioni)**
+
+The Fluentis ERP Recipients module is an advanced tool for managing compensation for professionals and agents, ensuring the correctness of tax payments and facilitating the processing of official documents such as the F24 form and withholding certifications.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/k7abmzqf6Bk" title="YouTube video player" frameborder="0" allowfullscreen="true"></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/8sdFGMDVIFc" title="YouTube video player" frameborder="0" allowfullscreen="true"></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/DVXhUdwqBS4" title="YouTube video player" frameborder="0" allowfullscreen="true"></iframe>
