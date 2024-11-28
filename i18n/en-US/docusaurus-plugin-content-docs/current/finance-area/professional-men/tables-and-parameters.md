@@ -1,16 +1,10 @@
 ---
-title: Tabelle e Parametri
+title: Tables and Parameters 
 sidebar_position: 2
 ---
 
-Una serie di impostazioni di natura sia tabellare precodificata che anche una corretta parametrizzazione degli algoritmi di base, sono consigliate prima di procedere con la gestione dei percipienti.
+A series of settings of both tabular pre-coded nature and a correct parameterization of the base algorithms are recommended before proceeding with the management of professional men.
 
-**Tabelle**: è opportuno riferirsi alla sezione  Configurazione > Tabelle > Amministrazione] per identificare le corrette impostazioni del portafoglio effetti. Le form di riferimento sono:  [Piano dei conti](/docs/erp-home/registers/accounting/analytic-chart-of-accounts),  [Aliquote IVA](/docs/configurations/tables/finance/vat-rates),  [Cambi fissi euro](/docs/configurations/tables/finance/euro-fixed-exchanges),  [Cambi valute](/docs/configurations/tables/finance/currency-exchange),  [Causali contabilità generale](/docs/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates/header),  [Causali contributo](/docs/configurations/tables/finance/contribution-templates), [Centri di profitto](/docs/configurations/tables/controlling/cost-accounting/profit-centres) / costo / [responsabilità](/docs/configurations/tables/controlling/cost-accounting/responsability-centres),  [Codice tributo](/docs/configurations/tables/finance/tax-code),  Cost driver,  [Modalità di versamento](/docs/configurations/tables/finance/paying-in-modality),  [Tipi conto](/docs/configurations/tables/finance/account-types),  [Tipi ritenuta](/docs/configurations/tables/finance/withholding-tax-types).
+**Tables**: it is advisable to refer to the section **Configuration > Tables > Finance** to identify the correct settings for the effects portfolio. The reference forms are: [Chart of Accounts](/docs/erp-home/registers/accounting/analytic-chart-of-accounts), [VAT Rates](/docs/configurations/tables/finance/vat-rates), [Euro Fixed Exchanges](/docs/configurations/tables/finance/euro-fixed-exchanges), [Currency Exchange](/docs/configurations/tables/finance/currency-exchange), [Ledger Records Templates](/docs/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates/header), [Contribution Templates](/docs/configurations/tables/finance/contribution-templates), [Profit Centres](/docs/configurations/tables/controlling/cost-accounting/profit-centres) / cost / [Responsibility Centres](/docs/configurations/tables/controlling/cost-accounting/responsability-centres), [Tax Code](/docs/configurations/tables/finance/tax-code), Cost driver, [Paying-in Modality](/docs/configurations/tables/finance/paying-in-modality), [Account Types](/docs/configurations/tables/finance/account-types), [Withholding Tax Types](/docs/configurations/tables/finance/withholding-tax-types).
 
-**Parametri**: è opportuno riferirsi alla sezione [Home>Parametri> Amministrazione] per identificare la corretta impostazione degli algoritmi relativi al modulo portafoglio effetti. La form à  [Parametri percipienti](/docs/configurations/parameters/finance/professional-men-parameters).
-
-
-
-
-
-
+**Parameters**: it is advisable to refer to the section [Home > Parameters > Finance] to identify the correct setting of algorithms related to the effects portfolio module. The form is [Professional Men Parameters](/docs/configurations/parameters/finance/professional-men-parameters).

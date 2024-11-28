@@ -39,19 +39,19 @@ From this module, debt for various taxes to be paid (Withholding, Insurance fund
 
 To use the Fluentis ERP Professional Men module, it is essential to manage some key tables to ensure the correct functioning of the system and the alignment of accounting and tax operations. Among the main tables to configure are:
 
-- Account Types and **Withholding Tax Types**: Essential for defining the type of withholding to apply to different recipients.
+- Account Types and **Withholding Tax Types**: Essential for defining the type of withholding to apply to different professional men.
 - **Agent Categories**: A fundamental table for agents where pension contributions and other contributions they are subject to are defined.
 - Tax Code: Necessary for managing withholdings and taxes related to compensation.
 - Payment methods: To define the payment methods for taxes.
 - Chart of accounts: Necessary to associate accounting entries with the correct accounts.
-- VAT rates (Aliquote IVA): For the correct application of taxes on compensation.
-- General accounting reasons and contribution reasons: Used to correctly classify accounting operations related to the compensation of recipients.
+- VAT rates: For the correct application of taxes on compensation.
+- General ledger template and contribution template: Used to correctly classify accounting operations related to the compensation of professional men.
 - Cost/profit/responsibility centers: To allocate costs and revenues to various business centers.
 - Fixed euro exchange rates and currency exchange rates: Important for managing transactions in different currencies.
 
-**Conclusions (Conclusioni)**
+**Conclusions**
 
-The Fluentis ERP Recipients module is an advanced tool for managing compensation for professionals and agents, ensuring the correctness of tax payments and facilitating the processing of official documents such as the F24 form and withholding certifications.
+The Fluentis ERP Professional Men module is an advanced tool for managing compensation for professionals and agents, ensuring the correctness of tax payments and facilitating the processing of official documents such as the F24 form and withholding certifications.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/k7abmzqf6Bk" title="YouTube video player" frameborder="0" allowfullscreen="true"></iframe>
 
