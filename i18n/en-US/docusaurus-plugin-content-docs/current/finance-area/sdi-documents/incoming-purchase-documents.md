@@ -22,7 +22,7 @@ One way to visualize these documents is through the management of invoices in th
 
 - **Type**: the reference code of the document type (purchase invoice)
 
-- **Doc.Def. Date, Doc.Def. Number (Data doc.def., Numero doc.def.):** date and number of the acquired document
+- **Document definitive Date, Document definitive Number:** date and number of the acquired document
 
 - **Supplier:** the issuer of the document
 
@@ -187,9 +187,8 @@ The record can be further modified at this stage, but these modifications will n
 
 If the record saving is not completed, Fluentis will cancel the operations performed on the file, which will remain in the ‘Unassigned’ status: any configurations already saved in the process will be retained within the supplier's register.
 
-### SUPPLIER REGISTER: F.E. IMPORT CONFIGURATION
-
-The configurations stored during the management of the various files are kept within the various supplier registers in the ‘F.E. Import Configuration’ tab.
+### SUPPLIER REGISTER: ELECTRONIC INVOICE IMPORT CONFIGURATION
+The configurations stored during the management of the various files are kept within the various supplier registers in the ‘Electronic Invoice Import Configuration’ tab.
 
 Here is the result of storing in the example used:
 
