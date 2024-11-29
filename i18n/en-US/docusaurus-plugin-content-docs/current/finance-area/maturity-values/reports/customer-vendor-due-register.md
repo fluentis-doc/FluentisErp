@@ -1,75 +1,70 @@
 ---
-title: Scdenziario Clienti / Fornitori
+title: Customer / Supplier Aging Report (Scdenziario Clienti / Fornitori)
 sidebar_position: 1
 ---
 
-Dalla presente form è possibile definire tutti i parametri preliminari e lanciare la stampa dello scadenziario clienti / fornitori.
+From this form, it is possible to define all preliminary parameters and launch the printing of the customer/supplier aging report.
 
-La form è uguale a quella presente per il lancio di altre stampe basate sull'elaborazione delle partite aperte, tuttavia alcuni campi potrebbero non essere utilizzati o pertinenti alla specifica stampa in questione.
+The form is the same as that used for launching other prints based on the processing of open items; however, some fields may not be used or relevant to the specific print in question.
 
-Nella parte alta della form sono presenti diversi filtri sui dati di origine:
+At the top of the form, there are several filters on the source data:
 
 **![](/img/it-it/finance-area/maturity-values/reports/customer-vendor-due-register/image01.png)**
 
-**Conto:** filtro principale sui sottoconti clienti / fornitori. Se non viene inserito alcun dato lo scadenziario sarà elaborato su tutti i iconti dei clienti e dei fornitori. E' possibile inserire solo il conto mastro (senza sottoconto) per ottenere soltanto i clienti (o solo i clienti Italia ad esempio) o solo i fornitori.
+**Account (Conto):** main filter on the customer/supplier sub-accounts. If no data is entered, the aging report will be processed for all customer and supplier accounts. It is possible to enter only the master account (without sub-account) to obtain only customers (or only Italian customers, for example) or only suppliers.
 
-**Da / A Data scadenza**: filtro sulla data di scadenza memorizzata all'interno della partita (elaborata in fase di apertura dalle condizioni di pagamento salvo modifiche manualmente apportate).
+**From / To Due Date (Da / A Data scadenza):** filter on the due date stored within the item (processed at the opening stage according to payment terms unless manually changed).
 
-**Stato Partita**: il filtro è proposto di default sullo stato Aperte (che comprende anche le Scadute e Parzialmente Aperte), può essere modificato (portandolo sulle partite chiuse o scadute o parzialmente aperte ecc... al fine di estrare soltanto una singola tipologia) oppure lasciato vuoto per proporre tutte le partite.
+**Item Status (Stato Partita):** the filter is defaulted to the Open status (which also includes Overdue and Partially Open), it can be modified (to include Closed or Overdue or Partially Open items, etc., in order to extract only a specific type) or left empty to include all items.
 
-**Posizione Partita**: la combo box del filtro è collegata alla tabella Posizione Partite (utilizzata per attribuire alle partite delle categorie liberamente codificabili).
+**Item Position (Posizione Partita):** the combo box filter is linked to the Item Position table (used to assign freely codifiable categories to items).
 
-**Pag. **: filtro sul tipo pagamento memorizzato all'interno della partita (elaborata in fase di apertura dalle condizioni di pagamento salvo modifiche manualmente apportate).
+**Payment Type (Pag.):** filter on the payment type stored within the item (processed at the opening stage according to payment terms unless manually changed).
 
-**Cod. Doc. **: filtro sul codice del tipo documento associato alla partita in fase di apertura (es. Fattura, nota di accredito, ricevuta fiscale ecc...).
+**Doc Code (Cod. Doc.):** filter on the code of the document type associated with the item at the opening stage (e.g., Invoice, credit note, fiscal receipt, etc.).
 
-**Divisa**: filtro sull divisa nella quale sono denominate le partite (nella stampa saranno esposti anche i controvalori in Euro).
+**Currency (Divisa):** filter on the currency in which the items are denominated (the equivalents in Euro will also be shown in the print).
 
-**Agente**: filtro sull'agente collegato alla partita (solo lato cliente).
+**Agent (Agente):** filter on the agent linked to the item (only on the customer side).
 
-**Banca**: filtro sulla banca di canalizzazione collegata alla partita in fase di apertura (campo Sottoconto di pagamento all'interno della partita).
+**Bank (Banca):** filter on the channeling bank linked to the item at the opening stage (Payment sub-account field within the item).
 
-**Progetto**: (ex commessa): filtro sul proetto (commessa) collegato alla partita.
+**Project (Progetto):** (formerly job): filter on the project (job) linked to the item.
 
-**Da / A Anno partita; Da / A Nr. Partita**: filtro sull'anno e numero della partita (anche questi, campi presenti all'interno delle partite).
+**From / To Item Year; From / To Item Number (Da / A Anno partita; Da / A Nr. Partita):** filter on the year and number of the item (these fields are also present within the items).
 
-**Dipartimento**: filtro sulla divisione (operativo se presenti più divisioni nella base dati).
+**Department (Dipartimento):** filter on the division (operational if multiple divisions are present in the database).
 
-Parametri di visualizzazione
+### Display Parameters
 
 ![](/img/it-it/finance-area/maturity-values/reports/customer-vendor-due-register/image02.png)
 
-**Partite aperte al**: questo campo, proposto di default all'apertura della maschera pari alla data odierna, può essere modificato per ottenere la situazione delle partite aperte (oppure delle partite con uno degli altri stati selezionabili nel campo Stato Partite) cos'ì come si presentavano ad una certa data.
+**Open items as of (Partite aperte al):** this field, defaulted to today's date when the mask opens, can be modified to obtain the situation of open items (or items with one of the other selectable states in the Item Status field) as they were on a specific date.
 
-Esempio: se una fattura passiva datata 01 giugno aveva aperto una partita con scadenza 01 luglio ed il giorno 28 giugno è stato registrato il pagamento di quella partita, se elaboriamo lo scadenziario fornitore con data Partite aperte al dopo il 28 (esempio chiediamo lo scadenziario al 30 giugno) la partita non sarà visibile inquanto chiusa, se chiediamo lo scadenziario con data 20 luglio, ad esempio, la partita risulterà visibile inquanto ancora aperta a tale data. 
+Example: if a passive invoice dated June 1 resulted in an open item with a due date of July 1, and on June 28 the payment for that item was recorded, if we process the supplier aging report with the Open items as of date after June 28 (e.g., we request the aging report as of June 30), the item will not be visible since it is closed; if we request the aging report with a date of July 20, for example, the item will appear visible since it is still open as of that date.
 
-**Partite e pagamenti alle date**: con il flag attivo il precedente campo Partite aperte al avrà effetto con riferimento sia alla data di apertura delle partite sia alla data di pagamento; con il flag disattivato la data di cui sopra avrà effetto solamente con riferimento alla data d apertura delle partite e verranno considerati tutti i pagamenti.
+**Items and payments as of dates (Partite e pagamenti alle date):** with the flag active, the previous field Open items as of will take effect concerning both the opening date of the items and the payment date; with the flag deactivated, the above date will apply only concerning the opening date of the items, and all payments will be considered.
 
-**Sintetica**: il flag, se attivo, nasconde dalla stampa le ulteriori colonne relative ai dettagli del pagamento, se disattivato permette di mostrare tutti i dettagli.
+**Summary (Sintetica):** the flag, if active, hides additional columns related to payment details from the print; if deactivated, it allows showing all the details.
 
-**Con effetti a scadere**: poichè a seguito della contabilizzazione dell'emissione degli effetti attvi (cambiali, ricevute bancarie ecc...) avviene uno storno del credito verso il cliente ed una contestuale chiusura della partita aperta, attivando questo flag lo scadenziario viene "rettificato" per tener conto anche degli effetti a scadere.
+**With outstanding effects (Con effetti a scadere):** since following the accounting of the issuance of outstanding effects (bills of exchange, bank receipts, etc.), a reversal of credit towards the customer and a simultaneous closure of the open item occurs, activating this flag will "adjust" the aging report to also account for outstanding effects.
 
-**Conversione Valuta**: selezionado una divisa dalla combo box le partite saranno convertite nella divisa selezionata al cambio di riferimento del giorno (visualizzato nella colonna cambio presente nella stampa).
+**Currency Conversion (Conversione Valuta):** selecting a currency from the combo box will convert the items to the selected currency at the day's exchange rate (displayed in the exchange rate column in the print).
 
-POSSIBILI CRITERI DI RAGGRUPPAMENTO ATTIVABILI
+### POSSIBLE GROUPING CRITERIA ENABLED
 
 ![](/img/it-it/finance-area/maturity-values/reports/customer-vendor-due-register/image03.png)
 
-Nota: Ragione sociale = raggruppamento in base all'anagrafica del cliente o fornitore.
+Note: Business name = grouping based on the customer or supplier registry.
 
-Banca = raggruppamento in base alla banca di canalizzazione (vedi sopra)
+Bank = grouping based on the channeling bank (see above).
 
-Scadenza = il raggruppamento avverrà per scadenza rappresentando in ordine cronologico tutte le partite aperte (in base ovviamente ai criteri del filtro impostati sopra)
+Due date = the grouping will occur by due date, representing all open items in chronological order (based on the filter criteria set above).
 
-AREA **Giorni**: utilizzato solo per la stampa Report di Aging ed irrilevante per la presente stampa.
+**Days (AREA Giorni):** used only for the Aging Report print and irrelevant for the present print.
 
 ![](/img/it-it/finance-area/maturity-values/reports/customer-vendor-due-register/image04.png)
 
 ---
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/WhWmjPGfF0Y" title="YouTube video player" frameborder="0" allowfullscreen= "true"></iframe>
-
-
-
-
-
+<iframe width="560" height="315" src="https://www.youtube.com/embed/WhWmjPGfF0Y" title="YouTube video player" frameborder="0" allowfullscreen="true"></iframe>

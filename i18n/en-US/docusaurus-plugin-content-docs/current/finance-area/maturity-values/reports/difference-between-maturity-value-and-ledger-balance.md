@@ -1,25 +1,25 @@
 ---
-title: Differenza tra saldo contabile e partite aperte
+title: Difference Between Ledger Balance and Open Maturity Values
 sidebar_position: 5
 ---
 
-La stampa che è possibile lanciare dalla presente form corrisponde al contenuto della visualizzazione a video ottenibile con la form ** [Differenza partite aperte saldo contabile.](/docs/finance-area/maturity-values/maturity-values/difference-between-maturity-value-and-ledger-balance) **
+The print that can be launched from this form corresponds to the content of the on-screen display obtainable with the form **[Difference Between Open Maturity Values and Ledger Balance](/docs/finance-area/maturity-values/maturity-values/difference-between-maturity-value-and-ledger-balance)**.
 
-Specularmente alla viualizzazione a video, il significato della presente stampa è quello di ricercare le differenze (squadrature) tra i saldi contabili ed i saldi del partitario per ogni cliente e fornitore al fine di correggerle. Dette differenze possono originare da errori nella gestione del partitario o delle scritture contabili (mancato allineamento tra movimento contabile ed apertura partite o incasso / pagamento e chiusura partita).
+Mirroring the on-screen display, the meaning of this printout is to search for the differences (discrepancies) between the ledger balances and the balances of the accounts for each customer and vendor in order to correct them. These differences can originate from errors in managing the accounts or accounting entries (failure to align between accounting movement and open items or collection/payment and closing of the mat. value).
 
-:::danger NOTA:
-Nel caso dei **percipienti**, se si adotta il criterio di esposizione delle partite aperte al netto della ritenuta d'acconto (nei parametri del [tipo ritenuta d'acconto](/docs/configurations/tables/finance/withholding-tax-types), le differenze che saranno evidenziate devono essere ignorate (e non da considerare come errori) tenedo inoltre presente che saranno riassorbite all'atto del pagamento del compenso e della chiusura della relativa partita.
+:::danger NOTE:
+In the case of **Professional Men**, if the criterion of reporting open mat. value net of withholding tax (in the parameters of [withholding tax type](/docs/configurations/tables/finance/withholding-tax-types)) is adopted, the differences that will be highlighted must be ignored (and not considered as errors), keeping in mind that they will be absorbed at the time of payment of the fee and the closing of the related mat. value.
 :::
 
 
-**Conto**: filtro principale per estrarre solo un sottoconto di cliente o fornitore. Non filtrando saranno riportati i sottoconti di tutti i clienti e fornitori che presentano differenze.
+**Account**: main filter to extract only a detail account of a customer or vendor. If not filtered, all detail accounts of customers and vendors that have discrepancies will be reported.
 
-**Da/A Data registrazione**: filtro sulle date di registrazione contabile
+**From/To Posting Date**: filter on accounting posting dates.
 
-**Escludi partite chiuse**: attivando il flag verranno ignorate le partite nello stato Chiusa.
+**Exclude closed maturities value**: activating this flag will ignore mat. value in the Closed state.
 
-**Dettagli**: attivando questo flag i risultati saranno scomposti (anziché raggruppati) evidenziando l'eventuale differenza per ogni singolo movimento contabile rispetto alla partita correlata (o al pagamento relativo in caso di movimento contabile di incasso / pagamento);
+**Details**: activating this flag will decompose the results (instead of grouping them), highlighting any discrepancies for each individual accounting movement compared to the related mat. value (or the related payment in the case of collection/payment accounting movement);
 
-**Visualizzare solo i sottoconti / registrazioni con differenza diversa da zero**: il flag (consigliato) attivo permette di evidenziare solo i sottoconti che presentano delle differenze da correggere nascondendo invece quelli che risultano corretti.
+**View only detail accounts/recordings with difference different from zero**: the flag (recommended) active allows highlighting only the detail accounts that have differences to correct, while hiding those that are correct.
 
-**Raggruppa per divisa della società**: il flag attivo determina l'esposizione dei movimenti in divisa secondo la divisa della società. Esempio dei movimenti in USD saranno esposti e convertiti in Euro.
+**Grouping by company currency**: the active flag determines the display of movements in currency according to the company's currency. For example, movements in USD will be displayed and converted to Euro.

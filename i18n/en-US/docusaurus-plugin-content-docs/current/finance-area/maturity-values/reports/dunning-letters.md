@@ -1,20 +1,13 @@
 ---
-title: Lettere di sollecito
+title: Dunning Letters
 sidebar_position: 6
 ---
 
-Da questa maschera è possibile procedere alla stampa dei solleciti.
+From this screen, it is possible to proceed with the printing of dunned values.
 
-Prima di eseguire la stampa è possibile, anzichè stampare tutti i solleciti generati, filtrare per numero del sollecito, per data, per tipo e per cliente.
+Before executing the print, it is possible to filter by dunned values number, date, type, and customer instead of printing all generated dunned values.
 
-
-| Funzione | Significato |
+| Function | Extended Description |
 | --- | --- |
-| Anteprima | Esegue l'anteprima delle lettere di sollecito, con possibilità di poter selezionare solo i movimenti con massima priorità o tutti i movimenti. |
-| Stampa | Esegue la stampa delle lettere di sollecito, con possibilità di poter selezionare solo i movimenti con massima priorità o tutti i movimenti. |
-
-
-
-
-
-
+| Preview | Executes the preview of dunning letters, with the option to select only the movements with the highest priority or all movements. |
+| Print | Executes the print of dunning letters, with the option to select only the movements with the highest priority or all movements. |

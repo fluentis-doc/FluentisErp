@@ -1,17 +1,12 @@
 ---
-title: Lista Partite
+title: Maturity Values list
 sidebar_position: 3
 ---
 
-Da questa form è possibile lanciare la stampa di una lista di partite aperte (o partite in uno degli altri stati possbili) secondo i parametri di filtro impostati.
+From this form, it is possible to launch the printing of a list of open mat. values (or mat. values in one of the other possible states) according to the set filter parameters.
 
-Il funzionamento della form è il medesimo previsto per ** [altre stampe del modulo alle quali si rinvia](/docs/finance-area/maturity-values/reports/customer-vendor-due-register).**
+The operation of the form is the same as that provided for **[other prints of the module referred to](/docs/finance-area/maturity-values/reports/customer-vendor-due-register).**
 
 ---
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/WhWmjPGfF0Y" title="YouTube video player" frameborder="0" allowfullscreen= "true"></iframe>
-
-
-
-
-
+<iframe width="560" height="315" src="https://www.youtube.com/embed/WhWmjPGfF0Y" title="YouTube video player" frameborder="0" allowfullscreen="true"></iframe>

@@ -1,18 +1,12 @@
 ---
-title: Estratto conto a partite aperte
+title: Account Statement on Open Maturity Values
 sidebar_position: 4
 ---
 
-Da questa form è possibile lanciare l'estratto conto a partite aperte, che rappresenta, specularmente all'estratto conto contabile, la situazione delle partite aperte per singolo cliente o fornitore, per il quale viene stampata una scheda distinta.
+From this form, it is possible to generate the open account statement, which represents, mirroring the accounting statement, the situation of open items for each individual customer or supplier, for which a separate record is printed.
 
-Il funzionamento della maschera è il medesimo previsto per lo ** [scadenziario al quale si rinvia](/docs/finance-area/maturity-values/reports/customer-vendor-due-register) **.
+The functionality of the mask is the same as that provided for the **[aging report to which it refers](/docs/finance-area/maturity-values/reports/customer-vendor-due-register)**.
 
 ---
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/WhWmjPGfF0Y" title="YouTube video player" frameborder="0" allowfullscreen= "true"></iframe>
-
-
-
-
-
-
+<iframe width="560" height="315" src="https://www.youtube.com/embed/WhWmjPGfF0Y" title="YouTube video player" frameborder="0" allowfullscreen="true"></iframe>

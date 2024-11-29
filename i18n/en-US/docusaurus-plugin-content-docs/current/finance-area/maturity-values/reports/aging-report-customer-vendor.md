@@ -1,31 +1,26 @@
 ---
-title: Report di aging
+title: Vendor/Customer Aging Report
 ---
 
-Da questa form è possibile lanciare la stampa del Report di aging.
 
-Questa particolare stampa è pensata per fornire, a colpo d'occhio, una situazione, sia per i fornitori sia per i clienti, sulla composizione delle partite scadute ed a scadere per categorie temporali.
+From this form, it is possible to initiate the printing of the Aging Report.
 
-Esempio: è possibile selezionare innanzitutto una categoria alla volta, concentrandosi ad esempio sui clienti (ed eventualmente selezionando solo i clienti italiani) ed ottenere una visione dello scaduto suddiviso in scaglioni da 0 a 30 giorni, da 30 a 60 giorni ed oltre 60 giorni. Lo stesso dicasi per le partite a scadere, ottendo una suddivisione su tre scaglioni per valutare le quote a più breve scadenza rispetto a quelle più lontane nel tempo.
+This particular printout is designed to provide, at a glance, a situation for both suppliers and customers regarding the composition of overdue and upcoming accounts by temporal categories.
 
-La stampa presenta una legenda in alto per la comprensione dei totali scaduto ed a scadere (TOT = A + B + C...)
+For example: it is possible to select one category at a time, focusing for instance on customers (and possibly selecting only Italian customers) to obtain a view of the overdue amounts divided into brackets of 0 to 30 days, 30 to 60 days, and over 60 days. The same applies for upcoming accounts, achieving a division into three brackets to evaluate the amounts with the shortest due dates compared to those further away in time.
 
-Gli scaglioni di suddivisione delle partite sono liberamente impostabili dall'utente in termini di numero di giorni.
+The printout features a legend at the top for understanding the total overdue and upcoming amounts (TOT = A + B + C...).
 
-La sezione Giorni è infatti l'elemento specifico della form per questa stampa, e permette di inserire il numero di giorni, con segno negativo (obbligatorio) per lo scaduto e positivo per le partite a scadere per determinare l'ampiezza degli scagioni di raggruppamento.
+The division brackets for the accounts can be freely set by the user in terms of the number of days.
+
+The Days section is, in fact, the specific element of the form for this printout, and allows the entry of the number of days, with a negative sign (mandatory) for overdue amounts and positive for upcoming accounts to determine the size of the grouping brackets.
 
 ![](/img/it-it/finance-area/maturity-values/reports/aging-report-customer-vendor/image01.png)
 
-La lettura nella stampa sarà da sinistra (scaduto) a destra (a scadere) e pertanto si consiglia di rispettare la logica dei campi che sono numerati da 1 (sarà quello più a sinistra e pertanto scaduto più "vecchio") a 6 (a scadere più lontano nel tempo) dove il campo 1 avrà un numero negativo maggiore che andrà a ridursi passando a 2 e 3 fino ad azzerarsi e crescere in positivo.
+The reading in the printout will be from left (overdue) to right (upcoming), and therefore it is recommended to adhere to the logic of the fields that are numbered from 1 (which will be the leftmost and therefore the most "aged" overdue amount) to 6 (the upcoming amount that is furthest away in time) where field 1 will have a larger negative number that will reduce down to 2 and 3 until it returns to zero and grows positively.
 
-Gli **altri campi della form** sono i medesimi utilizzati in altre stampe del modulo. ** [Vedere qui per maggiori dettagli.](/docs/finance-area/maturity-values/reports/customer-vendor-due-register) **
+The **other fields of the form** are the same as those used in other prints of the module. **[See here for more details](/docs/finance-area/maturity-values/reports/customer-vendor-due-register)**
 
 ---
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/WhWmjPGfF0Y" title="YouTube video player" frameborder="0" allowfullscreen= "true"></iframe>
-
-
-
-
-
-
+<iframe width="560" height="315" src="https://www.youtube.com/embed/WhWmjPGfF0Y" title="YouTube video player" frameborder="0" allowfullscreen="true"></iframe>
