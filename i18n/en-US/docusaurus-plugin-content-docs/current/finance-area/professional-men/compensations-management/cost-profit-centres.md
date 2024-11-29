@@ -1,23 +1,17 @@
 ---
-title: Cost/Profit Centres
+title: Cost/Profit Centers 
 sidebar_position: 6
 ---
 
-The cost/profit centres sections enable the user to valorize the inserted costs per cost and profit centre.
-
-RIBBON BAR: it represents the Form menu, that is the area in which it is possible to perform actions linked to the compensation in management. The list of features is the following:
+The cost/profit center sheets allow for the valuation of the cost center (and/or profit - not to be used if advanced controlling management is active) with inserted costs.
 
 
 
-| Function | Meaning |
+
+
+
+
+| Function | Extended Description |
 | --- | --- |
-| New C.C | It inserts the cursors during the insertion of a new line on Cost Centres section. |
-| Delete C.C | It deletes the movements selected in the cost centres grid. |
-| New P.C | It inserts the cursor during the insertion of a new line on the Profit Centres section. |
-| Delete P.C | It deletes the movements selected in the profit centres grid. |
-
-
-
-
-
-
+| New CdC | Inserts the cursor for adding a new row in the Cost Centers section. |
+| Delete CdC | Deletes the selected movements in the cost centers grid. |

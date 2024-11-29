@@ -3,6 +3,80 @@ title: Patch notes Versione 707
 sidebar_position: 1
 ---
 
+### Patch 707.1-0009 - 21/11/2024
+> - ARM – migration F2021-F2023 - manage parent/children properties/parameters in stand alone custom objects
+> - FI - stampa controllo cespiti, revisione segni conti dei fondi ammortamento (#TT04667/24)
+> - SH - Corretto problema di visibilità e salvataggio valori degli extradata nella form dell’anagrafica agente. (#TT04860/24)
+> - FI - visualizzazione conti, ora è possibile filtrare con entrambi i flag ‘ da riconciliare’-‘riconciliati’ attivi. (#TT04836/24)
+> - CRM - L'Offerta creata dall'interno dell'anagrafica di un Contatto CRM, riporta correttamente i Destinatari dell'anagrafica contabile collegata al contatto (#TT04831/24)
+> - Schedulazione eventi con Task che usano la Sessione (#TT04732/24)
+> - QY - Azioni correttive - Sono state implementate nuove informazioni descrittive:  "Verifica efficacia" e "Descrizione allegati" presenti nei dati generali dell'Azione correttiva e nei Programmi di azione.(#TT03939/24)
+> - SD - Risoluzione errore che non riportava la descrizione articolo nell'evasione POS in DDT; risoluzione errore che inseriva prezzo a 0 nell'evasione POS in DDT con prezzo ivato (#TT04925/24)
+> - WM - Nelle liste di Trasferimento UDC ora vengono visualizzate solo le stampe con contesto = 'TransferList'. Inoltre sono stati aggiunti i pulsanti di stampa anche all'interno della lista di prelievo e di trasferimento. (#TT04654/24)
+> - WM – In Duplica articoli, implementata la possibilità di duplicare anche articoli archiviati. Nell’articolo duplicato il flag archiviato e i dati di legati al flag in esaurimento non verranno riportati. (#TT04809/24)
+> - Improved script editor for smoother writing
+> - SCS - Ordini di Conto lavoro - Revisione della proposta prezzi di lavorazione se associata una fase di lavorazione di un Ordine di produzione.
+> - La priorità di ricerca e proposta del prezzo, fermo restando la ricerca di un listino valido per Terzista, Articolo e Unità di misura, è la seguente; ricerca del Prezzo indicato per:
+o	- Fase standard, Fase e Sottofase indicate nella riga Ordine;
+o	- Fase standard, Fase indicate nella riga Ordine con Sottofase vuota;
+o	- Fase standard indicata nella riga Ordine con Fase e Sottofase vuote;
+o	- Articolo privo di Fase standard, Fase e Sottofase.
+> - SCM – Corretto errore negli Ordini fornitore che non permetteva la modifica del fornitore se nel Tipo ordine era attivo il flag “Controllo fornitore” (#TT04857/24).
+> - Per le società con il controlling attivo, valorizzazione della griglia dei centri di costo dell’articolo nell’analitica dei documenti d’acquisto (#TT04580/24)
+> - La webapi di import dei file Sdi ora accetta un nuovo parametro “SendFromGeneratedToDeliver” che, se impostato a 1, dopo l’inserimento del file Sdi in stato ‘Generato’ fa eseguire automaticamente la transizione ‘da spedire’ sul file stesso (#TT04171/24)
+> - ARM – Add ItemNature property to ArmFormContext
+> - Disabled the creation of client scripts for 100% custom modules
+> - MES – Corretto bug nella registrazione delle dichiarazioni di produzione. Inoltre, nel messaggio di errore della registrazione è stata aggiunta anche l’informazione relativa all’ubicazione. (#TT04826/24)
+> - SH – Nel Navigatore articoli, tab Acquisti sono state aggiunte le colonne di Descrizione sconto e Sconto unitario anche per i DDT e le Fatture di Acquisto (#TT04759/24).
+> - SD - Fix Exchange Rate transfer between SD documents (#TT04919/24)
+> - SCM – Se nei Parametri Commesse di Acquisto il flag “Evasione obbligatoria” è attivo, al momento dell’inserimento di un nuovo ordine fornitore si aprirà la form di Evasione commesse e non sarà possibile aggiungere manualmente articoli nell’ordine senza aver prima evaso almeno una riga di una Commessa di acquisto. Il flag “Evasione articoli da commessa obbligatoria” non permette l’aggiunta di altri articoli all’ordine, oltre a quelli inseriti mediante evasione da commessa. Il flag “Quantità fissa” non permette l’evasione di una quantità maggiore rispetto a quella inserita nella commessa (#TT04508/24).
+> - FI - Correzione errore creazione Intrastat dalle registrazioni ( TT04980/24)
+> - PM: Introdotto negli interventi - calcolo piano di fatturazione, possibilità di gestire orari notturni, e matrice articoli per sostituzione articolo in riga in caso di extra time/orari notturni (#TT00599/24)
+> - MES – Implementata e migliorata la gestione dei parametri degli ordini di produzione per quanto riguarda magazzini e causali indicati nel tab magazzini. Per tutti i dettagli fare riferimento alla guida in linea sui Parametri degli ordini di produzione.
+> - FI - revisione import da DocFinance (#TT04954/24)
+> - FI - searching fixed assets to perform ammortamento for interim closure generates exception ( TT04993/24)
+> - SD - Shipping calendar - Add default status color for background and foreground (#TT04932/24)
+> - FI - show other linked sdi documents ( sales, purchase, professional) in view account and in view VAT movements ( TT05003/24)
+> - ARM – fix publish extension in ODataController (TT04973/24)
+> - CO - Previsioni di vendita mensili - Blocco durante il consolidamento di una versione se un'altra versione, per lo stesso anno, è già stata consolidata(ticket #TT04573/24)
+
+### Patch 707.1-0008 - 15/11/2024
+> - SH – Inserito controllo, anche per le Varianti articolo, che impedisce l’inserimento di un Barcode uguale (#TT04624/24)
+> - MES – Corretto bug nella procedura di completamento dati ordine degli ordini di produzione. (#TT04741/24)
+> - SD - Nella conversione F2021-F2023, valorizzazione del campo Dimensione nei documenti di vendita (#TT04775/24)
+> - FI/PR/CO/SH - allineamento tecnico - FluentisLayoutControl and BaseForm (TT04772/24)
+> - SCM – Stampa lista ordini – Impostata la data di prevista consegna corretta (#TT04803/24)
+> - WM – Corretto bug in analisi disponibilità inerente alla visualizzazione con dettaglio distinta base nel caso di varianti. (#TT04602/24)
+> - SD - La generazione del file Sdi viene bloccata quando la data fattura è successiva alla data odierna (#TT0431/24)
+> - SD - Lo step di Controllo della fattura elettronica di vendita ora testa che, per le aliquote plafond inserite nelle dichiarazioni di intento dell’anno fattura, sia stata indicata in fattura anche la relativa dichiarazione di intento da utilizzare (#TT04751/24)
+> - Add Reference to HttpClient for all server side scripts
+> - Risolto problema di crash quando in ricezione merci si cerca di caricare una form custom(rif #TT04820/24.)
+> - Solved problem to save script on Blazor
+> - Bug script in object form blazor (#TT04421/24)
+> - WM – Stampa Visualizzazione Giacenze – Creato repository Method e report standard visualizzazione giacenze (#TT04755/24)
+> - MS – Risolta anomalia in generazione commesse di produzione nel caso in cui si usi il tipo commessa monoprodotto e raggruppamento per articolo (#TT04806/24)
+> - CPM - calculation in CPM business crisis check ( TT04735/24)
+> - FI - revsione contabilizzazione fatture di acquisto e vendita per gestione UM alternativa in scheda intrastat della registrazione creata (#TT04790/24)
+> -  Creazione Scripts su AlgorithmService con oggetto Custom. (#TT04776/24)
+> - Attività supervisor non visualizzate correttamente - sembrano vuote ma query presente in db (#TT04552/24)
+> - CO/FI/PR - Blazor - administrative area ( TT0482/23)
+> - FI - nel tab intrastat delle registrazioni contabili, revisione inserimento righe in sezione quater (#TT04839/24)
+> - FI/CO/PR/SH/CRM - move code from Xaml constructor to PostInitialize ( TT04723/24)
+> - SH-aggiungere download ID su rapporto sdi - #TT04786/24
+> - ARM – fix multi domain Active Directory import
+> - PM: risolta casistica di assegnazione categoria attività fatturabile in riga progetto (#TT04718/24)
+> - FI - blocco della modifica delle registrazioni automatiche (#TT04692/24)
+> - PM: risolto caso di tipo intervento segnalato come duplicato, in realtà dovuto ad una validation rule poi corretta (#TT04733/24)
+> - PM: progetti - risolto caso di associazione tipo intervento pianificato nella riga di progetto che non funzionava (#TT04764/24)
+> - SCS – Corretto errore nella ricerca degli Ordini di Conto lavoro causato dalla presenza di un oggetto custom (#TT04819/24).
+> - WM – L’assenza della Numerazione di magazzino viene ora segnalata in fase di registrazione documento mediante un pop-up con un messaggio di errore (#TT04642/24).
+> - SH – autorefresh dashboards (TT04763/24)
+> - CO, CPM, FI, PR - review tabs layout - administrative area ( TT04854/24)
+> - Improved writing performance of script editor
+> - SH - nella tabella Tipi area ora non è possibile togliere il flag ‘Default’ se il tipo area è già stato associato ad un’area (#TT04847/24)
+> - PM: aggiunta possibilità di gestire la data fine 00.00 nelle dichiarazioni attività ( #TT04167/24)
+> - CO - aggiunto messaggio di avviso utente quando si esegue la procedura del controlling Elaborazione periodi e nella tabella Tipo Area manca una tipologia con flag Set regole attivo. ( TT04680/24)
+
 ### Patch 707.1-0007 - 08/11/2024
 > - SD – Modificata la procedura di Creazione listini avanzata: ora vengono visualizzati nella griglia solo gli articoli che hanno una formula di aggiornamento politiche prezzi/sconti e solo con la formula inserita nell’anagrafica articolo. È stata aggiunta la possibilità di filtrare per la Formula di calcolo e per il Conto a cui è intestato il listino di origine e/o di destinazione. Infine, il Prezzo precedente viene ora ripreso da un listino analogo a quello di destinazione, se presente, in modo da calcolare la percentuale di variazione rispetto al prezzo di vendita in vigore al momento dell’aggiornamento listini. Se l’articolo non è già presente all’interno di un listino analogo a quello di destinazione, il Prezzo precedente sarà 0 e la percentuale di Variazione sarà 100% (#TT03973/24)
 > - ARM - Risolto bug inerente l'esportazione dati degli ordini di produzione con webapi nel formato Json. (#TT04655/24)
