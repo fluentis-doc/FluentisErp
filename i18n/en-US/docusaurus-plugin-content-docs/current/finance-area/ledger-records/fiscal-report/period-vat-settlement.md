@@ -1,28 +1,49 @@
 ---
-title: Period VAT Settlement
+title: Liquidazione iva periodica
 sidebar_position: 5
 ---
 
-Through this print procedure, it is possible to calculate credit/debit VAT of the reference period: for this report, printing the VAT registers of the period is not mandatory but VAT settlement definitive print  of the previous period is necessary (or a manual upload in the VAT transfer that has the same result of blocking the VAT period in the accounting)  in order to report the possible credit of the previous period.
-
-Once that the period and year of reference has been set (the period changes according to the VAT settlement frequency set in the accounting parameters. It can be one month, three months…), it is possible to decide on which settlement register it has to be printed: normally, this operation is made at the end of the selling register or on a dedicated summarizing register (suggested option). In case that the last period of the year has been selected, the user has the possibility to print/calculate VAT advanced amount. On this amount the report reports records to 12/20/yyyy. 
-
-“View Header” flag is suggested by default: it has to be removed just in case that the company keep on printing on stamped modules. The Definitive Report option changes the period of reference to make it correspond to the one after the last definitive printed one. The number of copies to be printed is disabled. The execution of the definitive print preview does not block the period nor updates counters: only the concrete print process can block accounting period and update pages counter of the VAT registers table. (it is not important that the print process reaches a successful conclusion, it can be a print on a file)
-
-The definitive print enables the option “accounting of the period balance”: by setting this option the application makes the list of the accounts to be used active (by taking them from accounting parameters), the user just has to give template and the dates of references: once that the print process is over, two records are added in accounting: purchasing/selling VAT giro records to debit/credit VAT detail accounts.
-
-Finally, the option of Report-Period VAT Declaration is not important since its abolition by the Italian fiscal system.
-
-RIBBON BAR: the ribbon bar represents the form menu, that is the area on which it is possible to perform actions. The possible features list is the following:
+Con questa procedura di stampa si procede al calcolo dell'IVA a credito/debito del periodo di riferimento: per questo report non è obbligatorio che siano già stampati i registri IVA del periodo, ma al fine di riportare l'eventuale credito del periodo precedente, ci dovrà essere stata la stampa in definitiva della liquidazione IVA del periodo precedente (oppure un caricamento manuale nella tabella **[Versamenti IVA ](/docs/finance-area/declarations/declarations/vat-payment)** che dà lo stesso risultato di bloccare il periodo IVA in contabilità). Diversamente la stampa potrà comunque essere eseguita ma senza il riporto del credito del mese o trimestre precedente.
 
 
 
-| Function | Meaning |
+Impostare il periodo e l'anno di riferimento (dove il periodo sarà mensile o trimestrale a seconda della periodicità della liquidazione IVA periodica impostata nei **[parametri di contabilità](/docs/configurations/parameters/finance/accounting-parameters)**); 
+
+selezionare dalla combo box il registro iva sul quale stampare la liquidazione: 
+
+la stampa può essere effettuata in coda al registro vendite o su un registro riepilogativo dedicato (opzione consigliata). 
+
+Nel caso in cui sia stato selezionato l'ultimo periodo dell'anno si abiliterà la possibilità di stampa/**calcolo dell'acconto** IVA, in base al quale il report riporterà le registrazioni fino alla data del 20/12/yyyy.
+
+**Data versamento / Modalità di versamento**: questi campi (una data che poi viene riportata nella stringa testuale) permettono di far comparire nella stampa una dicitura relativa alla data e modalità di versamento dell'imposta (oppure, modificandoli, un'annotazione libera).
+
+ 
+
+**Visualizza intestazione**: flag proposto di default: va tolto solo nel caso in cui la società proceda ancora a stampare su moduli DDTti. 
+
+Stampa **definitiva**: il flag attivo renderà definitiva la stampa bloccando il periodo iva di riferimento ed aggiornando i contatori di pagina del registro sul quale si sta stampando. Permette inoltre di abilitare la sezione sottostante per i giroconti automatici. Inoltre andrà a modificare il periodo di riferimento per farlo corrispondere a quello successivo all'ultimo stampato in definitivo e sarà disabilitato il numero di copie da stampare. 
+
+![](/img/it-it/finance-area/ledger-records/fiscal-report/period-vat-settlement/image01.png)
+
+ 
+
+L'esecuzione dell'anteprima di stampa in definitivo non basta per bloccare il periodo e aggiornare i contatori: solo l'esecuzione del processo di stampa fisica andrà ad operare il blocco del periodo in contabilità e ad aggiornare il contatore delle pagine della tabella Registri iva (e non è rilevante che il processo di stampa vada a buon fine o meno, potrebbe essere anche una stampa su file).
+
+La stampa definitiva abiliterà l'opzione di **contabilizzazione liquidazione** (del saldo del periodo): impostando questa opzione l'applicativo attiverà la lista dei conti da utilizzare (riprendendoli dai parametri di contabilità) e l'utente dovrà semplicemente confermare causale e date di riferimento: una volta eseguito il processo di stampa saranno aggiunti in contabilità due registrazioni di giroconto dell'iva acquisti e vendite ai sottoconti di iva a debito/credito sul conto erario C/iva.
+
+![](/img/it-it/finance-area/ledger-records/fiscal-report/period-vat-settlement/image02.png)
+
+
+
+| Funzione | Significato |
 | --- | --- |
-| Preview | Button to launch the preview of the settlement report. |
-| Print | Button to launch the concrete report of the settlement. |
+| Anteprima | Pulsante per eseguire l'anteprima di stampa della liquidazione. |
+| Stampa | Pulsante per eseguire la stampa fisica della liquidazione. |
 
 
+:::important Vedi Anche
+[**VIDEO TUTORIALS SULLE STAMPE FISCALI**](/docs/video/finance/intro)
+:::
 
 
 
