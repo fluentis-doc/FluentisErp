@@ -1,25 +1,21 @@
 ---
-title: Total Withholding-Tax
+title: Withholding-tax Totals
 sidebar_position: 2
 ---
 
-On the left side there will be possible to memorize the VAT summaries, on the right the detail data of withholding-tax calculation, then below there are the Enasarco fields at the expense of the company and agent, the total field to be paid and National Insurance section summary.
+Summary of VAT and details of the calculation of withholding tax, Enasarco contributions, and social security.
 
-It is important to signal that at the base of mask it is possible to set the manual calculation: in this case it will be possible to force manually calculation fields of withholding-tax and Enasarco fields. It is not possible to edit the VAT calculation. Remember that the manual calculation has been set and application does not go on to align the maturity to be paid that is within the following tabulator.
+ ![](/img/it-it/finance-area/professional-men/compensations-management/total-withholding-tax/image01.png)
 
-Lastly remember that, in case (remote) of a professional men credit note, values of the detail grid will have to be inserted with negative sign.
+**FLAG at the bottom of the form**: it is possible to set the **manual calculation**: in this case, it will be possible to manually force the withholding calculation fields, Insurance fund fields, and VAT calculation in the tab **[VAT Summaries](/docs/finance-area/professional-men/compensations-management/vat-summaries)**.
 
-RIBBON BAR: it represents the Form menu, that is the area in which it is possible to perform actions linked to the compensation in management. The list of features is the following:
+It is noted that if manual calculation has been set, the application will no longer proceed to align the payment due present in the next tab.
+
+Finally, it is recalled that in the (remote) case of a credit note for the beneficiary, the values in the detail grid must be entered with a negative sign.
 
 
 
-| Function | Meaning |
+| Function | Extended Description |
 | --- | --- |
-| Calculate Values | It performs the recalculation of compensation data (withholding-tax, VAT, maturities). |
-| Print Preview | It performs the print preview of compensation. |
-
-
-
-
-
-
+| Calculate values | Recalculates the compensation data (withholdings, VAT, deadlines). |
+| Print preview | Executes the print preview of the compensation. |
