@@ -3,21 +3,12 @@ title: Rollback
 sidebar_position: 3
 ---
 
-Through the 'Previous' section it is possible to go on to cancel the performed accounting. The cancellation will be possible only if period can be edited (print journal, VAT register not printed, periodical settlement not printed, accounts closure not performed). Thanks to a double click on the records section it will be possible to view the related ledger record. There is a visualization report of errors recorded during the accounting procedure.
+From the previous tab, it is possible to proceed with the cancellation of executed entries.
 
-RIBBON BAR: it represents the Form menu, that is the area in which it is possible to perform actions linked to the procedure in use. The list of features is the following:
+Cancellation will only be possible if the period is still editable (journal book print, VAT register not printed, periodic liquidation not printed, account closure not executed). A double-click in the entry section will allow you to view the related ledger record.
 
-
-
-| Function | Meaning |
+| Function | Extended Description |
 | --- | --- |
-| Search | It searches the list of creations performed. |
-| Rollback Accounting | Through this button it will be cancelled all performed accounting together with all associated compensations. |
-| Rollback Records | The button restores the selected record. |
-| View Compensations | The button opens the visualization of the selected compensation. |
-
-
-
-
-
-
+| Search | Searches the list of executed creations. |
+| Rollback accounting | With this button, all accounting entries made (selected from the 'Accounting' grid) will be deleted, along with all associated compensations. |
+| Rollback Records | The button performs the restoration of only the ledger record selected from the 'Ledger Record' grid. |

@@ -21,8 +21,8 @@ I dati sono:
 
 Aprendo l'expander del Progetto, è possibile impostare un **Articolo**: questo codice articolo verrà utilizzato nel caso l'attività sia fatturabile, e quindi convertita in intervento. Se non viene indicato un codice articolo specifico, il servizio nell'intervento avrà codice articolo, UM e prezzo presi dal progetto collegato. 
 Se invece viene indicato un articolo specifico: 
-- se l'UM articolo e UM progetto collegato coincidono, nell'intervento avremo il codice articolo indicato in attività, con prezzo ed UM presi dal progetto. 
-- se l'UM articolo e UM progetto collegato NON coincidono, nell'intervento avremo il codice articolo indicato in attività, con prezzo ed UM attribuiti in base alle logiche standard dei documenti (come nel caso di inserimento di una nuova riga in un documento, vengono considerati listini, sconti, prezzo default in anagrafica articolo, etc) 
+- se l'UM articolo e UM progetto collegato coincidono, e la UM nel progetto è di tipo "Tempo", nell'intervento avremo il codice articolo indicato in attività, con prezzo ed UM presi dal progetto. 
+- se l'UM articolo e UM progetto collegato NON coincidono o la UM del progetto non è di tipo "Tempo", nell'intervento avremo il codice articolo indicato in attività, con prezzo ed UM attribuiti in base alle logiche standard dei documenti (come nel caso di inserimento di una nuova riga in un documento, vengono considerati listini, sconti, prezzo default in anagrafica articolo, etc) 
 
 **Ora di inizio/Ora fine**: contiene l’orario di inizio e di fine dell’attività; viene proposta in base al turno della risorsa, e se già presenti altre dichiarazioni, verrà proposta solo la fascia oraria mancante per la giornata. 
 <u>Non sono ammesse date disallineate</u> tra i vari campi Inizio-Fine, Inizio-Fine pausa e Data attività, per cui alla modifica di una qualsiasi data di queste, gli altri campi si allineeranno in automatico. 

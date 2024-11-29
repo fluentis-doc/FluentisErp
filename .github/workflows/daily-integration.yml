@@ -1,54 +1,96 @@
-name: Daily Integration
+name: Sync website-edits to main
 
 on:
   schedule:
-    - cron: '0 0 * * *' # Runs every day at midnight
-  workflow_dispatch: # Allows manual triggering
+    # Run daily at 2:00 AM UTC, Monday to Saturday
+    - cron: "0 2 * * 1-6"
+  workflow_dispatch: # Allow manual trigger
 
 jobs:
-  integrate-changes:
+  sync-website-edits:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write # Ensure the workflow has write permissions
 
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v4
-      with:
-        fetch-depth: 0
+      # Step 1: Checkout the repository
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
-    - name: Synchronize website-edits with main
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      run: |
-        git config --global user.name 'github-actions[bot]'
-        git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+      # Step 2: Fetch all branches
+      - name: Fetch all branches
+        run: git fetch origin
 
-        # Fetch all branches
-        git fetch --all
+      # Step 4: Check for changes in website-edits
+      - name: Check if website-edits is ahead of main
+        id: check_changes
+        run: |
+          if [[ -n "$(git log origin/main..origin/website-edits --oneline)" ]]; then
+            echo "has_changes=true" >> $GITHUB_ENV
+          else
+            echo "has_changes=false" >> $GITHUB_ENV
+          fi
 
-        # Checkout website-edits branch
-        git checkout website-edits
+      # Step 5: Create PR if changes exist
+      - name: Create and merge PR
+        if: env.has_changes == 'true'
+        env:
+          #GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_TOKEN: ${{ secrets.FG_PAT }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
 
-        # Pull the latest changes from origin/website-edits
-        git pull origin website-edits
+          git checkout website-edits
+           # Pull the latest changes from origin/website-edits
+          git pull origin website-edits
+          
+          git pull --rebase origin main
+          git push --force-with-lease origin website-edits
 
-        # Merge main into website-edits
-        git merge origin/main -m "Sync website-edits with main"
+          # Create a unique branch for the PR
+          BRANCH_NAME="chore_automated_update_main_from_website-edits_$(date +%s)"
+          
+          #sync website-edits with main
+          git checkout -b $BRANCH_NAME origin/website-edits
+          git push origin $BRANCH_NAME
+          echo "website-edits successfully rebased and synced with main."
 
-        # Push the synchronized website-edits branch back to the remote
-        git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git website-edits
+          # Create the pull request
+          PR_URL=$(gh pr create --title "Automated PR: Sync website-edits with main" \
+                                --body "This pull request was created automatically to merge updates from website-edits into main." \
+                                --base main \
+                                --head $BRANCH_NAME \
+                                --label "auto" | grep "https://github.com")
 
-    - name: Merge website-edits into main
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      run: |
-        # Checkout main branch
-        git checkout main
-        git pull origin main
+          # Check if PR creation was successful
+          if [[ -z "$PR_URL" ]]; then
+              echo "Failed to create the pull request. Cleaning up..."
 
-        # Merge website-edits into main
-        git merge --no-ff origin/website-edits -m "Daily merge of website-edits into main"
+              # Switch to a different branch before deleting
+              git checkout website-edits
+              git branch -D $BRANCH_NAME
+              git push origin --delete $BRANCH_NAME
 
-        # Push the changes to the main branch
-        git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git main
+              echo "Cleanup completed. Aborting."
+              exit 1
+          fi
+
+          echo "Pull request created: $PR_URL"
+
+          # Automatically merge the PR once checks pass
+          gh pr merge "$PR_URL" --auto --squash --delete-branch
+
+          # Sync website-edits with main using rebase
+          #echo "Syncing website-edits with main using rebase..."
+          #git checkout website-edits
+          #git pull --rebase origin main
+          #git push --force-with-lease origin website-edits
+
+          #echo "website-edits successfully rebased and synced with main."
+
+      # Step 6: Log if no changes
+      - name: No changes detected
+        if: env.has_changes == 'false'
+        run: echo "No changes detected in website-edits. No pull request needed."
+

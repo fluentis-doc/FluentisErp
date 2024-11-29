@@ -3,6 +3,15 @@ title: Patch notes Versione 545
 sidebar_position: 1
 ---
 
+### Patch 545.1-0109- 21/10/2024
+> - ARM - Workflow: Passaggio di stato condizionato(#TT04384/24)
+> - SD - Ottimizzazione della griglia 'Note articolo-cliente' del tab Varie dell'anagrafica cliente (#TT01967/24)
+> - MPS - Corretto bug in schedulazione generale nel caso in cui si schedulasse un articolo con in distinta base un materiale alternativo con quantità null. (#TT04639/24)
+> - Nell’evasione ordini fornitori in bolle e fatture acquisto senza ricalcolo analitica, revisione assegnazione centri su priorità magazzini (#TT01624/24)
+> - Revisione import excel delle fatture di vendita, fix del lookup del campo ‘Cedente’
+> - SH – autorefresh dashboards (TT04763/24)
+> - Bizlink – esportazione Piteco – filtro per pagamenti contabilizati
+
 ### Patch 545.1-0108- 24/10/2024
 > - SD - nella contabilizzazione fatture di vendita, esclusione righe con spese incasso 0 (#TT01642/24)
 > - Add new fields on rollback dunning letters
