@@ -1,25 +1,25 @@
 ---
-title: Depreciation Plans Simulation
+title: Simulazione piani di ammortamento
 sidebar_position: 3
 ---
 
-Every simulation is linked to the user that has calculated it: at the opening of the mask there will be the button to view the last calculation performed by the user (this elaboration can be quite demanding in terms of time and elaboration resources).
+Ogni simulazione è legata all'utente che l'ha calcolata: all'apertura della maschera sarà disponibile il pulsante per visualizzare l'ultimo calcolo effettuato dall'utente (questa elaborazione può essere abbastanza esigente in termini di tempo e risorse di elaborazione).
 
-The maximum years range provided for the simulation corresponds to 10 years. The following flags enable the user to set which types of property (property, leasing, hire) have to be considered in the simulation.
+Il range massimo di anni previsto per la simulazione è un range di 10 anni. I flag successivi consentono di definire quali tipi di proprietà (proprietà, leasing, noleggio) siano da considerare nella simulazione.
 
-In the grid below it will be possible to indicate different depreciation plans to be calculated: for this reason it will be possible to calculate for each of them which depreciation types have to be simulated, together with fiscal option or not. The “calculate” flag identifies which plans will go on to simulate.
+Nella lista sottostante si andranno a indicare i differenti piani di ammortamento da calcolare: di ognuno sarà possibile definire quali tipi di ammortamento vadano simulati, con l'opzione anche fiscale o meno. Il flag Calcola identifica per quali piani si procederà con la simulazione.
 
-Once having saved the settings it will be possible to calculate through the specific button: at the end of the elaboration it will be viewed a summary mask of totals of category for each year/plan or for each plan/year. It is possible to change the visualization between both one and the other criterion thanks to the specific button. Starting from this mask there is an excel export.
+Una volta salvate le impostazioni si procederà al calcolo con l'apposito pulsante: al termine dell'elaborazione sarà visualizzata una maschera di riepilogo dei totali di categoria per ogni anno/piano o per ogni piano/anno. Si può scambiare la visualizzazione tra l'uno e l'altro criterio con l'apposito pulsante. Da questa maschera è prevista un'esportazione Excel.
 
-RIBBON BAR: the ribbon bar represents the Form menu, that is the area on which it is possible to perform actions linked to the procedure in use. The possible features list is the following:
+RIBBON BAR: rappresenta il menu della Form in oggetto, ossia l'area nella quale è possibile effettuare delle azioni collegate alla procedura in uso. La lista delle funzionalità possibili è di seguito rappresentata:
 
 
 
-| Function | Meaning |
+| Funzione | Significato |
 | --- | --- |
-| Save | It saves the calculation settings for the active user. |
-| View the last Calculation | It views the result of the last calculation performed. |
-| Calculate | It performs the calculation according to settings saved. |
+| Salva | Salva le impostazioni di calcolo per l'utente attivo. |
+| Visualizza ultimo calcolo | Visualizza il risultato dell'ultimo calcolo eseguito. |
+| Calcola | Esegue il calcolo secondo le impostazioni salvate. |
 
 
 
