@@ -1,37 +1,29 @@
 ---
-title: Pretraga Proizvodnih naloga 
-sidebar_position: 2
+title: Ricerca Ordini Pianificati
+sidebar_position: 3
 ---
 
-Obrazac za pretraživanje dokumenata omogućuje pretraživanje svih dokumenata s ciljem njihovog prikazivanja, izmjene i eventualnog brisanja ili unosa novog dokumenta; prozor se sastoji od područja filtra i rezultata u tablici. 
+import SearchForm from './../../../import/sections/search-form.md'
 
-Nakon postavljanja svih željenih filtara, dovoljno je kliknuti na gumb **Traži** na *traci izbornika* kako bi se rezultati prikazali u tablici. 
+<SearchForm />
 
-Za otvaranje detalja dokumenta, dovoljno je odabrati ga i dvaput kliknuti mišem, ili kliknuti na gumb **Izmjena** (omogućuje ulazak u detalje i njihovu izmjenu) ili na gumb **Prikaži** (omogućuje ulazak u detalje i njihov prikaz, ali bez mogućnosti izmjene).
+*Pulsanti specifici*:
 
-*Vidi također*: 
+> [Parametri MRP](/docs/configurations/parameters/production/mrp-parameters/search-mrp-parameters): tramite questo pulsante è possibile aprire la schermata relativa ai parametri MRP dell'articolo;             
+> [Distinta base](/docs/erp-home/registers/production/bill-of-materials/search-and-insert-assemblies): permette di aprire la schermata relativa alla distinta base dell'articolo;  
+> [Cicli di lavoro](/docs/erp-home/registers/production/routes/new-route): permette di visualizzare il ciclo di lavoro e le relative fasi di produzione dell'articolo.
 
-*Funkcionalnosti, gumbi i zajednička polja*   
-*Dodavanje novih polja u obrasce za pretraživanje*   
+*Campi specifici*:
 
+**Data inizio**: per gli ordini pianificati di acquisto o di conto lavoro rappresenta la data in cui deve essere inviato al fornitore l'ordine di acquisto che verrà successivamente generato con il rilascio dell'ordine stesso. Per gli ordini pianificati di produzione questa data rappresenta la data di previsto inizio della prima fase di lavorazione del ciclo dell'articolo);  
+**Data FOB**(free on Board): rappresenta la data che viene calcolata sommando alla *Data di inizio previsto* il *Tempo di Approvvigionamento* inserito nel tab [Fornitori Preferenziali](/docs/erp-home/registers/items/create-new-items/item-registry/procurement) dell'articolo oggetto dell'ordine pianificato, e viene gestita solo per gli articoli con tipo approvvigionamento *Acquisto*;  
+**Data ETA**(Estimated Time of Arrival): rappresenta la data che viene calcolata sommando alla *Data FOB* il *Lead Time di Spedizione* inserito sempre nel tab *Fornitori Preferenziali* dell'articolo oggetto dell'ordine pianificato, e viene gestita solo per gli articoli con tipo approvvigionamento *Acquisto*;      
+**Data fine**: per gli ordini pianificati di acquisto o di conto lavoro rappresenta la data in cui deve essere ricevuta la fornitura e quindi coinciderà con la data di previsto ricevimento della riga dell'ordine fornitore che verrà successivamente generato con il rilascio dell'ordine stesso. Per gli ordini pianificati di produzione questa data rappresenta la data di prevista fine dell'ultima fase di lavorazione del ciclo dell'articolo;  
+**Da disponibilità minima**: il flag è attivo solo se l'ordine pianificato è stato generato utilizzando la procedura di *Schedulazione generale* e se, nei [Parametri di Schedulazione](/docs/planning/ms-master-scheduling/general-schedule), il flag che consente di *Considerare la disponibilità minima nel periodo* è attivo. Questo flag si attiva quando la *Data della disponibilità minima* nel periodo di schedulazione è successiva alla data di fabbisogno; in caso contrario sarà disabilitato;            
+**Quantità confermata**: è diversa da zero solamente se l'ordine risulta generato dall'elaborazione dell'MRP;  
+**Quantità impegnata**: è la quantità che risulta essere impegnata alla data corrente dell'articolo;  
+**Tassativo**: se attivo, il flag indicherà che l'ordine pianificato di produzione non è spostabile rispetto alla data di inizio impostata al suo interno.
 
-*Specifični gumbi*:
+All'interno della griglia, gli ordini verranno visualizzati con colori diversi in base al *Tipo di ordine pianificato* (se di acquisto, produzione e conto lavoro). Questa impostazione viene data all'interno dei [Parametri fabbisogno dei materiali](/docs/configurations/parameters/production/resource-requirements-parameters), nella relativa griglia dove si può scegliere il colore dello sfondo della riga o del testo dei diversi ordini.
 
-> [Parametri MRP](/docs/configurations/parameters/production/mrp-parameters/search-mrp-parameters): ovim gumbom možete otvoriti zaslon za MRP parametre artikla;               
-> [Sastavnica materijala](/docs/erp-home/registers/production/bill-of-materials/search-and-insert-assemblies): omogućuje otvaranje zaslona za popis materijala artikla;    
-> [Proizvodni ciklusi](/docs/erp-home/registers/production/routes/new-route): omogućuje pregled radnog ciklusa i povezanih proizvodnih faza artikla.  
-
-*Specifična polja*:
-
-**Datum početka**: za planirane narudžbe kupnje ili radnih naloga, označava datum kada treba poslati narudžbu dobavljaču koja će biti generirana prilikom izdavanja same narudžbe. Za planirane narudžbe proizvodnje, ovo označava predviđeni datum početka prve faze proizvodnje;    
-**Datum FOB-a**(free on Board): predstavlja datum koji se izračunava zbrajanjem *Predviđenog datuma početka* i *Vremena nabave* unesenog u karticu [Preferirani dobavljači](/docs/erp-home/registers/items/create-new-items/item-registry/procurement) artikla koji je predmet Planirane narudžbe za nabavu. Ovo se obrađuje samo za artikle s tipom nabave *Kupnja*;    
-**Datum očekivanog vremena dolaska**(Estimated Time of Arrival): označava datum koji se izračunava dodavanjem *Datum FOB-a* na *Lead Time Otpreme* koje je uneseno također u kartici  *Preferirani dobavljači* artikla koji je predmet planirane narudžbe za nabavu. Ovo se obrađuje samo za artikle s tipom nabave *Kupnja*;      
-**Datum završetka**: za planirane narudžbe kupnje ili radnih naloga, označava datum kada treba primiti isporuku, što će se podudarati s predviđenim datumom primitka linije narudžbe dobavljača koja će biti generirana prilikom izdavanja same narudžbe. Za planirane narudžbe proizvodnje, ovo označava predviđeni datum završetka posljednje faze proizvodnje;    
-**Od minimalne dostupnosti**: ova značajka je aktivna samo ako je planirana narudžba generirana korištenjem procedure *Općeg raspoređivanja* i ako je u [Parametrima raspoređivanja](/docs/planning/ms-master-scheduling/general-schedule), omogućena opcija za *Razmatranje minimalne dostupnosti* u razdoblju. Ova značajka će biti aktivirana ako je *Datum minimalne dostupnosti* u razdoblju rasporeda nakon datuma potrebe; inače će biti onemogućena;              
-**Potvrđena količina**: različita je od nule samo ako je narudžba generirana obradom MRP-a;    
-**Korištena količina**: količina koja je obvezana na trenutni datum za artikl;    
-**Obvezna**: ako je aktivno, zastava će naznačiti da planirana proizvodna narudžba nije pomična u odnosu na unutarnji datum početka.  
-
-U tablici će narudžbe biti prikazane u različitim bojama ovisno o *Vrsti planirane narudžbe* (ako je kupnja, proizvodnja ili radni nalog). Ovo se podešava unutar [Parametara potrebe materijala](/docs/configurations/parameters/production/resource-requirements-parameters), u pripadnoj tablici gdje možete odabrati pozadinu reda ili tekst različitih narudžbi.  
-
-Iz ovog obrasca također možete unijeti novu narudžbu klikom na gumb [Umetni nalog](/docs/planning/ms-master-scheduling/planned-orders/new-planned-order).
+Sempre da questa form è possibile inserire un nuovo ordine, cliccando sul pulsante [Inserisci ordine](/docs/planning/ms-master-scheduling/planned-orders/new-planned-order).

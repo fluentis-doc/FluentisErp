@@ -1,172 +1,178 @@
 ---
-title: Planirani nalozi
-sidebar_position: 3
+title: Ordine pianificato
+sidebar_position: 4
 ---
 
-Obično se planirane narudžbe automatski generiraju iz postupka *Općeg raspoređivanja* ili iz *MRP-a*, ali korisnik ima mogućnost ručnog generiranja planirane narudžbe, bilo da se radi o narudžbi za kupnju, proizvodnju ili radni nalog.  
+:::important A cosa serve
+La funzione degli **Ordini Pianificati** nel sistema Fluentis è una componente chiave per la gestione della pianificazione della produzione e degli acquisti. Gli ordini pianificati possono essere generati automaticamente attraverso la schedulazione generale o tramite l'elaborazione MRP (Manufacturing Resource Planning), oppure creati manualmente dall'utente. Questi ordini vengono utilizzati per gestire le necessità future delle risorse e dei materiali in modo preventivo e organizzato.
 
-Obrazac se otvara putem:   
- -  putem **Planiranje > MS Master scheduling > Planirani nalozi > Novi Planirani nalozi** 
-
-ili putem   
-
- - gumba **Umetni nalog** koji se nalazi u obrascu [Pretraga planiranih narudžbi](/docs/planning/ms-master-scheduling/planned-orders/search-planned-orders).
-
-## Zaglavlje planirane narudžbe  
-
-*Posebni gumbi*:  
-
-> **Kompletiranje podataka narudžbe**: poziva postupak koji omogućuje unos i/ili ažuriranje svih podataka vezanih za materijale, faze, opremu, alate, atribute i različite bilješke za artikl u planiranoj narudžbi, uzimajući ih iz popisa materijala i radnog ciklusa artikla.   
-> **Ponovno izračunaj izvorni datum**: poziva postupak koji omogućuje ažuriranje datuma početka planirane narudžbe i eventualno faza njenog rada nakon izmjene radnih vremena i/ili količine za proizvodnju navedenog članka u planiranom nalogu;    
-> **[Parametri MRP](/docs/configurations/parameters/production/mrp-parameters/search-mrp-parameters)**: otvara prozor s parametrima MRP za artikl;    
-> **Generiraj sastavnicu materijala**: omogućuje generiranje popisa materijala na temelju podataka unesenih u proizvodni nalog ili ažuriranje postojećih podataka s onima unesenima u nalog;    
-> **Generiraj proizvodni ciklus**: omogućuje stvaranje proizvodnog ciklusa za artikl na temelju podataka unesenih u nalog, ili ažuriranje postojećih podataka s onima unesenima u nalog;    
-> **[Sastavnica materijala](/docs/erp-home/registers/production/bill-of-materials/search-and-insert-assemblies)**: omogućuje otvaranje zaslona s popisom materijala za artikl;  
-> **[Proizvodni ciklusi](/docs/erp-home/registers/production/routes/new-route)**: omogućuje prikaz proizvodnog ciklusa i povezanih proizvodnih faza za artikl.  
-
-*Specifična polja*: 
-
-**Vrsta planirane narudžbe**: prikazuje se pretpostavljeni tip kao zadani tip;    
-**Obvezni nalog**: ako je aktivno, ova zastava označava da planirana narudžba ima prioritet i korisnik ne može pomaknuti narudžbu postavljanjem datuma kasnije od predviđenog završetka prema općem raspoređivanju;    
-**Prioritet naloga**: omogućuje postavljanje prioriteta za ovu narudžbu;  
-**Generato da domanda**: ovaj se polje prikazuje kao *Ručno* (ako je planirana narudžba stvorena ručno), *Ovisno* (ako je planirana narudžba stvorena raspoređivanjem i ovisi o drugim planiranim narudžbama više razine) ili *Neovisno* (ako je planirana narudžba stvorena raspoređivanjem i ne ovisi o drugim planiranim narudžbama više razine, već je već narudžba razine 1);       
-**Nalog proizvodnje**: u ova 3 polja postavljaju se godina, broj i opis proizvodnog naloga iz kojeg je generirana planirana narudžba. Naravno, ako je narudžba generirana ručno, neće ju biti moguće povezati s već postojećim proizvodnim nalogom i ta će polja ostati prazna;       
-**Tip radnog naloga**: u ovom polju prikazuje se tip proizvodnog zadatka iz kojeg je generirana planirana narudžba. Naravno, ako je generirana ručno, neće biti moguće povezati je s postojećim proizvodnim zadatkom, pa će ovo polje ostati prazno;       
-**Projekt**: dvoklikom se otvara pomoćni alat koji omogućuje povezivanje projekta s planiranom narudžbom koja se unosi;       
-**Klijent**: označava klijenta narudžbe;      
-**Dobavljač / podizvođač**: ova polja su aktivna ako je planirana narudžba kupovna ili radni nalog;      
-**Artikl**: označava klasu, kod i opis artikla narudžbe;         
-**Varijanta**: u ovom okviru može se specificirati varijanta artikla;    
-**Količina za proizvesti**: označava količinu koja se treba proizvesti;         
-**JM za upravljanje**: označava upravljačku jedinicu mjere za artikl;    
-**Količina za koristiti**: u ovom se polju postavlja količina za proizvodnju u slučaju alternativne jedinice mjere;        
-**Koristiti jedinicu mjere**: označava alternativnu jedinicu mjere za artikl;  
-**Datum početka i završetka**: postavljaju se predviđeni datumi početka i završetka odgovarajućeg rada. Ako korisnik izvrši promjenu jednog od ovih datuma nakon što je završio unos podataka o radnom ciklusu, drugi se automatski izračunava prema tome;    
-**Audit**: ovaj odjeljak automatski bilježi datum stvaranja narudžbe i datum posljednje izmjene, prikazujući za oba korisnika koji je izvršio operaciju;  
-**Napomene**: to je slobodno polje u koje se mogu unijeti napomene.    
-
-Nakon što su obavezna polja spremljena, pritisnite gumb **Kompletiranje podataka narudžbe** kako biste ažurirali sve kartice (Materijali, Faze, itd.) koje preuzimaju podatke iz popisa materijala i radnog ciklusa predmeta planirane narudžbe (samo za proizvodnju).  
-
-
-## Materijali   
-
-Ovaj se obrazac sastoji  od mreže, unutar koje korisnik može ručno unijeti materijale koje želi koristiti za proizvodnju predmetnog planiranog naloga (samo ako se radi o proizvodnji). Nakon ručnog unosa, potrebno je kliknuti na gumb **Kompletiranje podataka narudžbe** koji se nalazi u ribbon traci kako bi se uvezli podaci iz osnovne strukture.  
-
-Mreža već može biti popunjena ako planirani nalog dolazi iz *Općeg rasporeda* ili iz *MRP obrade*, ali korisnik može mijenjati podatke i/ili dodavati dodatne materijale na popis komponenti planiranog naloga.   
-
-:::note NAPOMENA 
-Ako je planirana narudžba za kupnju, kartica *Materijali* nije aktivna.
+Nella piattaforma Fluentis, gli ordini pianificati possono essere relativi a diverse tipologie: produzione, acquisto, e conto lavoro; questi vengono visualizzati con colori diversi nella griglia, a seconda della loro tipologia. Lo scopo principale dell'utilizzo degli ordini pianificati è ottimizzare i processi produttivi e di approvvigionamento, garantendo che le risorse necessarie siano disponibili quando richiesto e che le operazioni possano procedere senza interruzioni.
 :::
 
-*Posebni gumbi*:
-> **Umetni materijal**: omogućuje dodavanje novog materijala u mrežu;  
-> **Otkaži materijal**: omogućuje brisanje materijala koji su uneseni u mrežu.
+Normalmente gli ordini pianificati vengono generati automaticamente dalla procedura di *Pianificazione generale* oppure dall'*Elaborazione MPR*, ma l'utente ha la possibilità di generare manualmente un ordine pianificato, sia esso di acquisto, di produzione o di conto lavoro.
 
-*Posebni gumbi*:
+La form si apre tramite:  
+ -  il percorso **Pianificazione > MS Master scheduling > Ordini Pianificati > Nuovo Ordine Pianificato** 
 
-**Prioritet**: ovdje je prikazan prioritet komponente, ako je naveden, unesen u popisu materijala. Može se izmijeniti, kao i svi ostali podaci u ovoj mreži;  
-**Podizvođač**: ovaj se flag preuzima iz *MRP parametara* artikla i naziva se *Uključi u Podizvođač*, što označava treba li se artikl uključiti kao materijal u radne naloge;          
-**Koristi jedinicu mjere**: ovdje se unosi eventualna alternativna jedinica mjere za artikl;  
-**Datum korištenja**: podudara se s predviđenim datumom početka planirane narudžbe (ako se prvi promijeni, automatski se mijenja i ovaj);    
-**Korištena količina**: predstavlja jediničnu količinu potrebnu za ovaj artikl (predviđeno u popisu materijala), ali može se mijenjati;  
-**Ukupna količina**: predstavlja količinu koja se dobiva množenjem *Količine uporabe* s *Količinom za proizvodnju*;  
-**% otpada**: ovdje se unosi ili preuzima iz popisa materijala eventualni postotak otpada za ovaj artikl;    
-**Faza/Podfaza**: moguće je ručno unijeti odgovarajuću fazu i podfazu te dodijeliti odabrani materijal određenoj radnoj fazi artikla; ove se automatski nude iz radnog ciklusa;              
-**Dostupna količina**: u ovom polju prikazuje se raspoloživa količina artikla na datum uporabe. 
+oppure tramite 
 
-## Faze   
+ - il pulsante **Inserisci Ordine** che si trova nella form [Ricerca Ordini Pianificati](/docs/planning/ms-master-scheduling/planned-orders/search-planned-orders).
 
-Ovaj je obrazac sastavljena od mreže u koju korisnik može ručno unijeti faze koje želi koristiti za proizvodnju predmeta planirane narudžbe (samo ako je u pitanju proizvodnja). Nakon ručnog unosa, za uvoz podataka iz radnog ciklusa artikla potrebno je kliknuti na gumb **Kompletiranje podataka narudžbe** u traci izbornika s karticama.
+## Testata ordine pianificato 
 
-Mreža je već popunjena ako je planirana narudžba generirana iz *Opće planirane* ili *MRP obrade*. 
+*Pulsante specifico*:  
 
-*Posebni gumbi*:
-> **Umetni fazu**: omogućuje dodavanje nove faze u mrežu;  
-> **Cancella fase**: omogućuje brisanje unesenih faza iz mreže.  
+> **Completamento dati ordine**: richiama la procedura che consente di inserire e/o aggiornare, per l'articolo inserito nell'ordine pianificato, tutti i dati relativi a materiali, fasi, attrezzaggio, attrezzature, attributi e note varie, riprendendoli da distinta base e ciclo di lavorazione dell'articolo..
+> **Ricalcola data inizio**: Richiama la procedura che consente di eseguire un aggiornamento della data inizio dell'ordine pianificato ed eventualmente delle fasi di lavorazione dello stesso a seguito di una modifica dei tempi di lavorazione e/o della quantità da produrre dell'articolo oggetto di ordine pianificato;  
+> **[Parametri MRP](/docs/configurations/parameters/production/mrp-parameters/search-mrp-parameters)**: consente di aprire la finestra relativa ai parametri MRP dell'articolo;  
+> **Genera distinta base**: consente di generare la distinta base sulla base dei dati inseriti all'interno dell'ordine di produzione o di aggiornare i dati esistenti con quelli inseriti nell'ordine;  
+> **Generazione ciclo di lavoro**: permette di creare il ciclo di lavoro dell'articolo basandosi sui dati inseriti nell'ordine, o di aggiornare i dati esistenti con quelli inseriti nell'ordine;  
+> **[Distinta base](/docs/erp-home/registers/production/bill-of-materials/search-and-insert-assemblies)**: permette di aprire la schermata relativa alla distinta base dell'articolo;  
+> **[Cicli di lavoro](/docs/erp-home/registers/production/routes/new-route)**: permette di visualizzare il ciclo di lavoro e le relative fasi di produzione dell'articolo.  
 
-*Specifična polja*:
+*Campi specifici*: 
 
-**Šifra faze/Faza/Podfaza**: dvoklikom se otvara pomoć za faze rada, iz kojeg se može odabrati odgovarajuća faza i podfaza;    
-**Kontrola kvalitete**: questo flag indica se il materiale debba essere sottoposto a controllo qualità prima del suo utilizzo;  
-**Proizvodna faza**: ako je zastava označena, označava da je u pitanju proizvodna faza i da će se prijaviti;   
-**Pokretno**:  ako je zastava označena, označava da je u pitanju prijenosna faza i generirat će se skladišni pokret nakon registracije proizvodne izjave;           
-**Radni centar**: iz ovog izbornika odabire se radni centar. Automatski se predlaže prema prethodno odabranoj fazi i unesenoj u mrežu;    
-**Datum početka/završetka planirani**: o su datumi početka i završetka odgovarajuće faze; mijenjanjem planiranih datuma početka i završetka automatski se mijenjaju i ovi datumi. Oni se izračunavaju na temelju vremena unesenog u radnim fazama, posebno na osnovi maksimalnog vremena stroja i ukupnog vremena rada za odabranu fazu;    
-**Vrijeme stroja**: to je vrijeme koje stroj troši za provedbu faze, odnosi se na količinu komada po fazi;    
-**Broj stroja**: to je broj strojeva uključenih u ovu fazu;    
-**Količina komada po fazi**: to je broj komada po fazi;  
-**Radnikovo vrijeme**: to je vrijeme koje radnik troši za provedbu ove faze, odnosi se na količinu komada po fazi;    
-**Broj radnika**: : to je broj radnika uključenih u ovu fazu;  
-**Podizvođač/opis podizvođača**: dvoklikom na polje otvara se pomoć za odabir podračuna i podračuna odgovarajućeg podizvođača. Ovo polje je aktivno samo ako je faza označena kao *Vanjska* faza. Napomena da se *podizvođač* također preuzima iz radne faze unesene u radnom ciklusu predmeta.    
-**Opis radnog centra**: označava opis radnog centra.         
+**Tipo Ordine Pianificato**: viene proposto il tipo predefinito come tipo di default;  
+**Ordine tassativo**: se attivo, questo flag indica che l'ordine pianificato assume un' importanza prioritaria e non permette all'utente di spostare l'ordine stesso impostando una data maggiore rispetto alla data fine prevista da schedulazione generale;  
+**Priorità dell'ordine**: permette di impostare la priorità che viene data a questo ordine;  
+**Generato da domanda**: in questo campo viene visualizzato *Manuale* (se si tratta di un ordine pianificato creato manualmente), *Dipendente* (se si tratta di un ordine pianificato creato da schedulazione e che dipende da altri ordini pianificati di livello superiore) o *Indipendente* (se si tratta di un ordine pianificato creato da schedulazione e che non dipende da altri ordini pianificati di livello superiore, in quanto già esso è un ordine di livello 1);    
+**Commessa prod**: in questi 3 campi vengono impostati l'anno, il numero e la descrizione della commessa di produzione da cui è stato generato l'ordine pianificato. Ovviamente se esso è stato generato manualmente, non sarà possibile legarlo ad alcune commessa di produzione già esistente e quindi questa casella risulterà vuota;     
+**Tipo commessa**: in questa casella viene visualizzato il tipo della commessa di produzione da cui è stato generato l'ordine pianificato. Ovviamente se esso è stato generato manualmente, non sarà possibile legarlo ad alcune commessa di produzione già esistente e quindi questa casella risulterà vuota;     
+**Progetto**: con un doppio click si apre l'help' che permette di collegare un progetto all'ordine pianificato che si sta inserendo;       
+**Cliente**: indica il cliente della commessa;      
+**Fornitore/Terzista**: queste caselle risultano attive nel caso in cui l'ordine pianificato sia di acquisto o di conto lavoro;     
+**Articolo**: indica classe, codice e descrizione dell'articolo della commessa;        
+**Variante**: in questa combo box viene specificata la variante dell'articolo;  
+**Quantità da produrre**: indica la quantità da produrre;         
+**UM Gestionale**: viene indicata l'unità misura gestionale dell'articolo;  
+**Quantità utilizzo**: in questo campo viene impostata la quantità da produrre nella eventuale unità di misura alternativa;  
+**UM Utilizzo**: viene indicata l'unità misura alternativa dell'articolo;  
+**Data inizio e fine**: vengono impostate le date previste di inizio e fine della relativa lavorazione. Se dopo aver completato i dati del ciclo di lavorazione l'utente esegue una modifica di una di queste 2 date, l'altra viene ricalcolata di conseguenza;  
+**Audit trail**: sezione che riporta in automatico la data di creazione dell'ordine e la data dell'ultima modifica, riportando per entrambe l'utente che ha compiuto l'operazione;  
+**Note**: é un campo libero nel quale possono essere inserite note.  
 
-### Faze - Svojstva   
+Dopo il salvataggio almeno dei campi obbligatori premere il pulsante **Completamento dati ordine** per aggiornare tutti i tabs (Materiali, Fasi, etc.) che prendono i dati da distinta base e ciclo di lavorazione dell'articolo oggetto di Ordine Pianificato (solo se di produzione).
 
-Ovo područje sadrži svojstva odabrane faze. 
 
-**Opis faze/podfaze**: ovdje se prikazuje opis odabrane faze;  
-**Vrsta**: u ovoj padajućoj listi moguće je postaviti vrstu obrade (unutarnja ili vanjska);  
-**Preklapanje**: ovdje se postavlja vrsta eventualnog preklapanja između faza. Moguće opcije su *Potpuno* (u ovom slučaju odabrana faza potpuno se preklapa s navedenom sljedećom fazom), *Po komadima* (u ovom slučaju treba navesti nakon koliko proizvedenih komada iz ove faze počinje sljedeća faza), *Po vremenu* (u ovom slučaju treba navesti nakon koliko minuta od početka odabrane faze počinje sljedeća faza);    
-**Jedinica mjere vremena**: ou ovoj padajućoj listi nalazi se *Jedinica mjere vremena faze*; možete odlučiti kako upravljati vremenima faze u sekundama, minutama, satima i danima. Obično se vremena internih faza upravljaju minutama, a eksternih faza danima, ali naravno, to ovisi o vrsti tvrtke za koju se posao postavlja;       
-**Stroj**: ovdje možete odabrati kod (i opis) odgovarajućeg stroja. Automatski se predlaže prema centru rada koji je prethodno unesen u mrežu;    
-**Grupa radne snage**: u ovoj padajućoj listi može se odabrati kod (i opis) odgovarajuće radne skupine. Automatski se predlaže prema centru rada koji je prethodno unesen u mrežu;    
-**Preklapanje s fazom/podfazom**: ovdje se navodi kod faze i podfaze koje imaju preklapanje s odabranom fazom. Obično se navodi sljedeća faza, ali i ovdje je riječ samo o običaju;   
-**Vrijednost**: ovdje se navodi vrijednost eventualnog preklapanja, koristeći gore navedene kriterije;    
-**Korištenje**: ako je zastava aktivirana, znači da želite da vrijeme čekanja/čekanja poveća vrijeme angažmana radnog centra na toj fazi;    
-**Čekaj/Vrijeme reda**: navodi eventualno predviđeno vrijeme čekanja/čekanja za ovaj stroj.  
+## Materiali
 
-### Faze - Dodatni podaci   
+Questo tab è costituito da una griglia, all'interno della quale l'utente può inserire manualmente i materiali che vuole che vengano utilizzati per la produzione dell'articolo oggetto dell'ordine pianificato (solo se di produzione). Dopo l'inserimento manuale è necessario, per importare i dati dalla distinta base, cliccare sul pulsante **Completamento dati ordine** presente nella ribbon bar.
 
-Ovo područje sadrži dodatne podatke o odabranoj fazi.  
+La griglia risulta già compilata nel caso in cui l'ordine pianificato provenga da *Schedulazione generale* o da *Elaborazione MRP*, ma l'utente può modificare i dati e/o aggiungere ulteriori materiali alla lista componenti dell'ordine pianificato.  
 
-## Opremanje
+:::note Nota
+Se l'ordine pianificato è di acquisto il tab *Materiali* risulta non attivo.
+:::
 
-Na ovoj je kartici moguće definirati vrijeme povezano s postavljanjem opreme za odabranu fazu u prethodnoj kartici.
+*Pulsanti specifici*:
+> **Inserisci materiale**: consente di inserire un nuovo materiale nella griglia;  
+> **Cancella materiale**: consente di cancellare i materiali inseriti nella griglia. 
 
-*Specifična polja*:
+*Campi specifici*:
 
-**Faza/Podfaza**: ovdje se prikazuju informacije o fazi koja je odabrana u prethodnoj kartici *Faze*;  
-**Vrsta**: označava vrstu faze (interna ili vanjska);  
-**Vrsta preklapanja**: označava eventualnu vrstu preklapanja;  
-**J.M. vremena**: označava jedinicu mjere vremena za fazu;  
-**Radni centar**: ovdje se unosi kod (i opis) radnog mjesta postavljenog za opremanje;  
-**Stroj**: ovdje se unosi kod (i opis) stroja za opremanje;  
-**Grupa radne snage**: ovdje se unosi kod (i opis) grupe radne snage za opremanje;    
-**Vrijednost**: označava vrijednost eventualnog preklapanja;    
-**Centar rada**: ovdje se prikazuju kod i opis odgovarajućeg radnog mjesta odabrane faze;    
-**Datum početka**: prikazuje datum početka odabrane faze u kartici *Faze*;  
-**Datum završetka**: prikazuje datum završetka odabrane faze u kartici *Faze*;  
-**Vrijeme postrojenja**: unosi se vrijeme opremanja. To je fiksno vrijeme koje se ne mijenja s promjenama u količinama za proizvodnju u odabranoj fazi;    
-**Vrijeme ponovnog opremanja**: unosi se vrijeme ponovnog opremanja, koje se zbraja s vremenom opremanja;    
-**Br. strojeva**: označava broj korištenih strojeva za opremanje;   
-**Br. radnika**: označava broj radnika koji sudjeluju u opremanju.  
+**Priorità**: qui viene visualizzata la priorità del componente, se presente, inserita in distinta base. Essa può essere modificata, come tutti gli altri dati presenti in questa griglia;  
+**C/L**: in questo campo viene ripreso il flag presente nei *Parametri MRP* dell'articolo chiamato *Considera in CL* ovvero indica se l'articolo deve essere incluso come materiale negli ordini di conto lavoro;        
+**UM Utilizzo**: in questo campo si inserisce l'eventuale unità di misura alternativa dell'articolo;  
+**Data impiego**: coincide con la data inizio prevista dell'ordine pianificato (modificando la prima viene automaticamente cambiata anche quest'ultima);  
+**Qtà impiego**: rappresenta la quantità unitaria necessaria per questo articolo (prevista dalla DB) che può essere comunque modificata;  
+**Qtà totale**: rappresenta la quantità che si ottiene moltiplicando la *Qtà d'impiego* per la *Qtà da produrre*;  
+**% scarto**: in questa casella viene inserita o ripresa dalla distinta base l'eventuale % di scarto per questo articolo;  
+**Fase/Sottofase**: è possibile inserire manualmente la relativa fase e sottofase e quindi assegnare il materiale selezionato ad una determinata fase di lavorazione dell'articolo; queste vengono proposte in automatico dal ciclo di lavoro;            
+**Q.tà disp**: in questo campo compare la quantità disponibile dell'articolo alla data di impiego.
 
-## Oprema
+## Fasi
 
-Na ovom obrascu, koji se uglavnom sastoji od mrežice, moguće je definirati koje i koliko opreme će biti korištene u proizvodnji odabrane faze iz kartice *Faze*. 
+Questo tab è costituito da una griglia, all'interno della quale l'utente può inserire manualmente le fasi che vuole che vengano utilizzati per la produzione dell'articolo oggetto dell'ordine pianificato (solo se di produzione). Dopo l'inserimento manuale è necessario, per importare i dati dal ciclo di lavorazione dell'articolo, cliccare sul pulsante **Completamento dati ordine** presente nella ribbon bar.
 
-*Specifični polja*:
+La griglia risulta già compilata nel caso in cui l'ordine pianificato provenga da *Schedulazione generale* o da *Elaborazione MRP*. 
 
-**Redoslijed**: ovdje je moguće navesti redoslijed kojim će se koristiti oprema;        
-**Oprema**: ovom kombiniranom okviru možete odabrati kod opreme, preuzet iz odgovarajuće tablice [Oprema](/docs/configurations/tables/production/equipments);  
-**Klasa/Šifra stavke**: u ovim poljima možete navesti klasu i kod artikla (pomoć automatski filtrira samo one artikle koji su označeni kao *Oprema* u polju *Priroda artikla* u šifarniku skladišta);    
-**Varijanta**: predstavlja varijantu artikla;   
-**Količina**: predstavlja količinu artikla.  
+*Pulsanti specifici*:
+> **Inserisci fase**: consente di inserire una nuova fase nella griglia;  
+> **Cancella fase**: consente di cancellare le fasi inserite nella griglia. 
 
-## Kontrola kvalitete 
+*Campi specifici*:
 
-Na ovoj kartici, koji se uglavnom sastoji od mreže (tablice), možete pregledati detalje planiranih testova kontrole za fazu/podfazu.  
+**Codice fase/Fase/Sotto Fase**: con un doppio click si apre il relativo help fasi di lavorazione dal quale si può selezionare la relativa fase e sottofase;  
+**Controllo qualità**: questo flag indica se il materiale debba essere sottoposto a controllo qualità prima del suo utilizzo;  
+**Fase produttiva**: se il flag è spuntato identifica che la fase in questione è una fase produttiva, e che quindi dovrà essere segnalata; 
+**Movimentabile**:  se il flag è spuntato identifica che la fase in questione è una fase movimentabile, quindi genererà un movimento di magazzino una volta registrata la dichiarazione di produzione;         
+**Centro di lavoro**: da questa combo si imposta il Centro di lavoro. Esso viene proposto in automatico, ripreso dalla fase che è stata precedentemente selezionata ed inserita nella griglia;  
+**Data inizio/fine prevista**: si tratta delle date di inizio e fine della relativa fase; cambiando le Date previste di inizio e fine lavorazione vengono automaticamente modificate anche quest'ultime. Esse vengono calcolate in base i tempi inseriti nelle fasi di lavorazione, e più precisamente in base al maggiore tra il tempo operaio e il tempo macchina totale per la fase selezionata;  
+**Tempo macchina**: è il tempo impiegato dalla macchina per realizzare la fase, riferito alla quantità di pezzi per fase;  
+**Numero macchine**: indica il numero di macchine coinvolte in questa fase;  
+**Qtà pezzi per fase**: indica il numero di pezzi per fase;  
+**Tempo operaio**: è il tempo impiegato dall'operaio per realizzare questa fase, riferito alla quantità di pezzi per fase;  
+**Numero operai**: è il numero di operai coinvolti in questa fase;  
+**Conto terzista/descrizione terzista**: con doppio click sulla casella si apre il help per poter selezionare il conto e sottoconto del relativo terzista. Questa casella è attiva solo nel caso in cui la fase sia designata come fase *Esterna*. Da notare che il *terzista* viene anch'esso ripreso dalla fase di lavorazione inserita nel ciclo di lavorazione dell'articolo.  
+**Decrizione centro di lavoro**: indica la descrizione del centro di lavoro.       
 
-## Bilješka faze
+### Fasi - Proprietà
 
-Na ovoj kartici prikazana je bilješka vezana uz odabranu fazu obrade na kartici *Faze*. Korisnik je može uređivati u kontekstu trenutnog planiranog naloga.  
+Contiene le proprietà relative alla fase selezionata.
 
-## Operativne upute
+**Descrizione fase/sottofase**: in questo campo appare la descrizione della fase selezionata;  
+**Tipo**: in questa combo è possibile impostare il tipo di lavorazione (interna o esterna);  
+**Sovrapposizione**: tramite questa combo inserisco la tipologia di un'eventuale sovrapposizione tra fasi. Possiamo avere sovrapposizione *Totale* (in questo caso la fase in oggetto è sovrapposta totalmente alla fase indicata successiva), *A pezzi* (in questo caso è necessario indicare dopo quanti pezzi prodotti da questa fase avrà inizio la fase successiva), *A tempo* (in questo caso è necessario indicare dopo quanti minuti da quando è iniziata la fase in oggetto avrà inizio la fase successiva);  
+**UM Tempi**: in questa combo box compare l'*Unità Misura Tempi* della Fase; si può decidere di gestire i tempi della fase in secondi, minuti, ore e giorni. Di solito si gestiscono a minuti i tempi delle fasi interne e a giorni quelli delle fasi esterne, ma ovviamente dipende molto dalla tipologia di azienda per cui si sta impostando il lavoro;  
+**Macchina**: in questa combo può essere selezionato il codice (e descrizione) della relativa macchina. Essa viene proposta in automatico, ripresa dal centro di lavoro che è stato precedentemente inserito nella griglia;  
+**Gruppo manodopera**: in questa combo può essere selezionato il codice (e descrizione) del relativo gruppo manodopera. Essa viene proposto in automatico, ripreso dal centro di lavoro che è stato precedentemente inserito nella griglia;  
+**Sovrapposiz. riferita alla fase/sottofase**: qui viene indicato il codice della fase e Sottofase che presentano una sovrapposizione con la fase in oggetto. Di solito si indica la fase successiva, ma anche qui si tratta solo di una consuetudine; 
+**Valore**: qui si indica il valore dell'eventuale sovrapposizione, utilizzando i criteri specificati sopra;  
+**Utilizzo**: se il flag è attivato, significa che si vuole che il tempo di attesa/coda aumenti il tempo di impegno del Centro di Lavoro su quella fase;  
+**Tempo di attesa o coda**: indica l'eventuale tempo di attesa/coda prevista per questa macchina.  
 
-Na ovoj kartici prikazuju se bilješke/dokumenti vezani uz odabranu fazu obrade na kartici *Faze*. Korisnik ih može uređivati u kontekstu trenutnog planiranog naloga. Ti dokumenti su vidljivi unutar MES-a na kartici *Dokumenti* i *Operativne upute*.  
+### Fasi - Extra Data
 
-## Dodatni podaci 
+Contiene gli eventuali extra data relativi alla fase selezionata.
 
-Za detaljan opis dodatnih podataka molimo pogledajte članak [Dodatni podaci](/docs/configurations/utility/extra-data/extradata/new-extradata-simple).
+## Attrezzaggio
 
-Za informacije o uobičajenom funkcioniranju formi molimo pogledajte link [Funkcionalnosti, gumbi i zajednička polja.](/docs/guide/common).  
+In questo tab è possibile definire i tempi relativi all'attrezzaggio della fase selezionata nel tab precedente. 
+
+*Campi specifici*:
+
+**Fase/Sottofase**: in questi campi vengono visualizzate le informazioni relative alla fase che è selezionata nel tab *Fasi*;  
+**Tipo**: indica la tipologia della fase (interna o esterna);  
+**Tipo sovrapposizione**: indica l'eventuale tipologia della sovrapposizione;  
+**UM Tempi**: indica l'unità di misura temporale della fase;  
+**Centro di Lavoro**: in questi campi viene inserito il codice (e relativa descrizione) del Centro di Lavoro impostato per l'attrezzaggio;  
+**Macchina**: in questi campi viene inserito il codice (e relativa descrizione) della macchina per l'attrezzaggio;  
+**Gruppo MDO**: in questi campi viene inserito il codice (e relativa descrizione) del Gruppo manodopera per l'attrezzaggio;  
+**Valore**: indica il valore dell'eventuale sovrapponibilità;  
+**CdL**: in questi campi viene visualizzato il codice e la descrizione del relativo Centro di Lavoro della fase selezionata;  
+**Data inizio**: viene visualizzata la data d'inizio della fase selezionata nel tab *Fasi*;  
+**Data fine**: viene visualizzata la data di fine della fase selezionata nel tab *Fasi*;  
+**Tempo attrezzaggio**: viene inserito il tempo dell'attrezzaggio. Si tratta di un tempo fisso, che non varia al variare delle quantità da produrre nella fase selezionata;  
+**Tempo riattrezzaggio**: viene inserito il tempo del riattrezzaggio, che viene sommato al tempo attrezzaggio;  
+**Num. macchine**: si indica il numero di macchine impiegate per l'attrezzaggio;  
+**Num. operai**: si indica il numero di operai impiegati per l'attrezzaggio.
+
+## Attrezzature
+
+In questo tab, costituito principalmente da una griglia, è possibile definire quali e quante attrezzature dovranno essere utilizzate nella produzione della fase selezionata nel tab *Fasi*. 
+
+*Campi specifici*:
+
+**Sequenza**: in questo campo è possibile indicare la sequenza con cui devono essere utilizzate le attrezzature;      
+**Attrezzature**: con questa combo box è possibile richiamare il codice dell'attrezzatura, ripreso dall'apposita tabella [Attrezzature](/docs/configurations/tables/production/equipments);  
+**Classe/Codice articolo**: in questi campi è possibile indicare la classe e il codice dell'articolo (l'help filtra automaticamente solo gli articoli che sono identificati come *Attrezzature* nel campo *Natura Articolo* dell'anagrafica di magazzino);  
+**Variante**: rappresenta la variante dell'articolo;  
+**Quantità**: rappresenta la quantità dell'articolo.
+
+## Controllo qualità
+
+In questo tab, costituito principalmente da una griglia, è possibile visualizzare i dettagli delle prove pianificate di controllo per la fase/sottofasse.
+
+## Nota fase
+
+In questo tab viene visualizzata la nota legata alla fase di lavorazione selezionata nel tab *Fasi*. Essa è modificabile dall'utente contestualmente all'ordine pianificato in oggetto.
+
+## Istruzioni operative
+
+In questo tab vengono visualizzate le note / documenti legate alla fase di lavorazione selezionata nel tab *Fasi*. Esse sono modificabili dall'utente contestualmente all'ordine pianificato in oggetto. Questi documenti sono visibili all'interno del MES nel tab *Documenti e Istruzioni opertive.
+
+## Extra Data
+
+Per una descrizione approfondita sugli extra data si rimanda all'articolo [Extra data](/docs/configurations/utility/extra-data/extradata/new-extradata-simple).
+
+Per dettagli sul funzionamento comune delle form fare riferimento al link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).

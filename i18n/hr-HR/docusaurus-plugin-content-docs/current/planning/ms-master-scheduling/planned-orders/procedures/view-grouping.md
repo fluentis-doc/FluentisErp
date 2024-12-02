@@ -1,16 +1,16 @@
 ---
-title: Prikaži grupiranje
+title: Visualizza raggruppamento
 sidebar_position: 1
 ---
 
-Obrazac omogućuje pretraživanje svih grupacija s ciljem njihovog prikaza ili brisanja. 
+La form consente di ricercare tutti i raggruppamenti con lo scopo di visualizzarli oppure cancellarli.  
 
-U području filtra moguće je primijeniti filtar po artiklu, varijanti, proizvodnom nalogu, proizvodnoj narudžbi, itd. Putem odgovarajuće opcije moguće je odabrati želite li prikazati i grupacije koje sadrže *Naloge za održavanje*.
+Nell'area di filtro è possibile applicare il filtro per articolo, variante, per commessa di produzione, ordine di produzione, ecc. Tramite l'apposito flag è possibile scegliere se visualizzare anche i raggruppamenti contenenti degli *Ordini di manutenzione*.
 
-Nakon što postavite sve željene filtre, dovoljno je kliknuti na gumb **Traži** u  *traci izbornika* kako biste prikazali rezultate unutar rezultatske mreže.   
+Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** presente nella *ribbon bar* per visualizzare i risultati all'interno della griglia di risultato.
 
-Za *otvaranje* detalja grupacije, dovoljno je odabrati ju i dvaput kliknuti mišem ili kliknuti na gumb **Prikaži**.
+Per *aprire* i dettagli di un raggruppamento, basterà selezionarlo e fare doppio click con il mouse, oppure cliccare sul pulsante **Visualizza**.
 
-Ulaskom u prikaz odabrane grupacije otvara se novi obrazac, koji se sastoji od prvog dijela s poljima koja sažimaju glavne podatke o *Grupaciji* i rezultatske mreže gdje se mogu prikazati svi *Nalozi u grupaciji*.
+Entrando in visualizzazione del raggruppamento che si è scelto di selezionare, si aprirà una nuova form, composta da una prima parte con dei campi che riassumono i dati principali del *Raggruppamento* e una griglia di risultato dove si possono visualizzare tutti gli *Ordini del raggruppamento*.
 
-Za detalje o uobičajenom funkcioniranju formi pogledajte poveznicu [Funkcionalnosti, gumbi i uobičajena polja](/docs/guide/common).
+Per dettagli sul funzionamento comune delle form fare riferimento al link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
