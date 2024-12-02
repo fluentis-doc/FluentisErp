@@ -17,8 +17,6 @@ E' la procedura standard consigliata in quanto permette di operare massivamente 
 
 Una volta Elaborato il calcolo, sarà possibile procedere alla funzione di **[contabilizzazione](/docs/finance-area/fixed-assets/accounting/depreciation)**, anch'essa di tipo massivo.
 
- 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/jD0qtQmqCIA" title="YouTube video player" frameborder="0" allowfullscreen= "true"></iframe>
 
 
 
