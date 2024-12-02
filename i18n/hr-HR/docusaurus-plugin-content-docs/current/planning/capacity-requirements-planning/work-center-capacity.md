@@ -1,45 +1,52 @@
 ---
-title: Kapacitet radnog centra
+title: Capacità centri di lavoro
 sidebar_position: 2
 ---
 
-Operater može dobiti trenutni prikaz opterećenja svakog aktivnog radnog centra unutar pojedinih odjela za određeno vremensko razdoblje, što mu omogućuje da odmah uoči eventualne vrhunce preopterećenja ili neefikasnosti u proizvodnji. Pomoću jednostavne funkcije *povlačenja i ispuštanja (drag & drop)*, operater može unaprijediti, odgoditi ili promijeniti radni centar za određeni radni zadatak, a dvostrukim klikom unutar pojedine trake kapaciteta može saznati detaljne informacije o tome koji radni nalozi opterećuju centar na odabrani datum.
+:::important A cosa serve
+La funzione **Capacità centri di lavoro** in Fluentis offre un panorama chiaro e immediato dei carichi di lavoro nei centri produttivi, evidenziando picchi di sovraccarico o inefficienze. Attraverso una form organizzata in quattro sezioni, gli operatori possono filtrare e visualizzare gli ordini per reparto, data o stato (pianificato, lanciato, esecutivo) e intervenire con facilità tramite il drag & drop per spostare, posticipare o modificare le lavorazioni.     
+La visualizzazione grafica illustra la capacità massima e l'impegno giornaliero dei centri, consentendo una gestione visiva e interattiva delle fasi produttive. Pulsanti specifici rendono possibile modificare le fasi, cambiare date e navigare attraverso il dettaglio temporale del carico di lavoro, ottimizzando in tal modo l'efficienza operativa dell'intero processo produttivo.
+:::
 
-Ovaj obrazac sastoji se od 4 dijela:   
+L’operatore può ottenere una visualizzazione immediata dei carichi di ciascun centro di lavoro attivo nell’ambito dei singoli reparti per un determinato periodo temporale, permettendogli di conoscere in modo immediato gli eventuali picchi di sovraccarico o di inefficienza produttiva. 
+Con un semplice *drag & drop* l’operatore può anticipare, posticipare o cambiare centro di lavoro ad una lavorazione, e con un doppio click nell’ambito della singola barra di capacità, è possibile conoscere nel dettaglio le informazioni relative a quali ordini di lavoro impegnano il centro nella specifica data selezionata.
 
-- prvi dio omogućuje filtriranje prema *Odjelu* i/ili prema *Radnom centru* te prikaz rezultata u donjoj mreži;  
+Questa form, è costituita da 4 sezioni: 
 
-- u drugom dijelu moguće je filtrirati narudžbe prema *Datumu početka* i *Datumu završetka* te odlučiti hoće li se prikazati narudžbe: 
+- la prima permette di filtrare per *Reparto* e/o per *Centro di lavoro* e di visualizzare i risultati nella griglia sottostante;  
 
-> *Planirani*: prikazuje planirane proizvodne naloge;              
-> *Pokrenuto*: prikazuje proizvodne naloge u statusu pokrenuto;                
-> *Izvršni*: prikazuje proizvodne naloge u statusu izvršno.            
+- nella seconda è possibile filtrare gli ordini per *Data inizio* e *Data fine* ed inoltre, decidere se visualizzare gli ordini: 
 
-Također, moguće je pregledati sve podatke koji se odnose na odabrane radne centre u prvoj sekciji. 
+> *Pianificati*: mostra gli ordini pianificati di produzione;              
+> *Lanciati*: mostra gli ordini di produzione in stato lanciato;                
+> *Esecutivi*: mostra gli ordini di produzione in stato esecutivo.          
 
-- u trećoj sekciji možete vidjeti redak za svaku fazu filtriranih planiranih i/ili proizvodnih naloga koji odgovaraju odabranim radnim centrima u prvoj sekciji s svim relevantnim detaljima.  
+Inoltre, è possibile visualizzare tutti i dati relativi ai centri di lavoro selezionati nella prima sezione.
 
-- u četvrtoj sekciji nazvanoj  **Detalji Odabrane faze** moguće je grafički prikazati opterećenje rada za odabrane radne centre u prvoj sekciji.  
+- nella terza sezione è possibile visualizzare una riga per ogni fase degli ordini pianificati e/o di produzione filtrati corrispondenti ai centri di lavoro selezionati nella prima sezione con tutti i dettagli relativi.
 
-**Detalji odabrane faze**
+- nella quarta sezione denominata **Dati di dettaglio Fase selezionata** è possibile visualizzare graficamente i carichi di lavoro relativi ai centri di lavoro selezionati nella prima sezione. 
 
-U grafičkom dijelu, narančasta linija predstavlja maksimalni dnevni proizvodni kapacitet radnog centra, dok plava linija prikazuje opterećenje radnog centra tijekom određenog dana. Crvena boja označava preopterećenje istog centra. Odabirom faze u trećoj sekciji, ona se prikazuje žutom bojom unutar grafičkog prikaza.
+**Dati di dettaglio Fase selezionata**
 
-Također, pomoću funkcije povuci i ispusti (drag & drop) moguće je odabrati fazu iz mreže i povući je u grafički prikaz, gdje ju je moguće ispustiti kako bi se promijenili datum početka i, kao posljedica toga, datum završetka. Odabirom više alternativnih radnih centara omogućeno je premještanje faza s jednog centra na drugi radi optimizacije proizvodnje.  
+All'interno della parte grafica, la linea arancione rappresenta la capacità produttiva massima giornaliera del centro di lavoro, mentre in blu viene rappresentato l'impegno del centro di lavoro in una certa giornata. In rosso, invece, viene eviidenziata la sovrallocazione del centro stesso.
+Selezionando una fase nella terza sezione, questa viene visualizzata in giallo all'interno della sezione grafica.
 
-Klikom na redak u mreži faza dva puta, korisnik direktno ulazi u dokument (planirani nalog ili proizvodni nalog) koji sadrži fazu prikazanu u tom redu, s mogućnošću, pod uvjetom da korisnik ima odgovarajuća prava, da izmijeni dokument i nakon ažuriranja prikaza vidi ažuriranu situaciju i u grafičkom prikazu.  
-Nasuprot tome, dvostrukim klikom na element grafikona otvara se skočni prozor koji sadrži popis radnih faza koje doprinose određivanju opterećenja.  
+Inoltre, tramite drag & drop è possibile selezionare una fase dalla griglia e trascinarla all'interno della sezione grafica e rilasciarla per variarne la data di inizio e di conseguenza quella di fine. Selezionando più centri di lavoro alternativi vi è la possibilità di spostare le fasi da un centro ad un altro in modo da ottimizzare la produzione.
 
-*Posebni gumbi*:  
+Esercitando un semplice doppio click sulla riga della griglia delle fasi, l'utente entra direttamente nel documento (ordine pianificato o ordine di produzione) che contiene la fase rappresentata nella riga da cui si è partiti, con la possibilità, subordinata alla presenza dei diritti utente, di modificare il documento e vedere, dopo aver dato un refresh della visualizzazione, la situazione aggiornata anche dal punto di vista grafico.
+Invece, con un doppio click su un elemento del grafico viene aperto un pop-up contenente l'elenco della fasi di lavoro che contribuiscono a determinarne l'impegno.
 
-> **Promijeni faze**: nakon što odaberete fazu, ova naredba vam omogućuje *Ažuriranje* same faze mijenjajući: fazu, stroj, radni centar, ukupno vrijeme stroja, radnika i vremena postavljanja. Također, odabirom opcije *Dodaj* moguće je dodati novu fazu ili putem opcije *Obriši* trajno je ukloniti.              
-> **Promijenite datume**: omogućuje promjenu početnog datuma odabrane faze;         
-> **Povećaj**: smanjuje vremenski detalj na grafikonu;            
-> **Zoom do prozora**: prikazuje vremenski detalj na grafikonu na temelju *Početnog i Završnog* datuma navedenih u filtarskim postavkama;                      
-> **Umanji**: povećava vremenski detalj na grafikonu;                
-> **Zoom tjedan**: prikazuje tjedni vremenski okvir na grafikonu počevši od *Početnog datuma*;              
-> **Zoom 2 tjedna**: prikazuje dvotjedni vremenski okvir na grafikonu počevši od *Početnog datuma*;     
-> **Zoom mjesec**: prikazuje mjesečni vremenski okvir na grafikonu počevši od *Početnog datuma*;     
-> **Zoom datum**: prikazuje vremenski okvir određen unosom *Početnog* i *Završnog datuma*.  
+*Pulsanti specifici*:  
 
-Za detalje o uobičajenom radu obrazaca obratite se na link  [Funkcionalnosti, gumbi i zajednička polja](/docs/guide/common).
+> **Cambia fasi**: una volta selezionata una fase, questo comando permette di *Aggiornare* la fase stessa variando: fase, macchina, centro di lavoro, totale del tempo macchina, del tempo operaio e del tempo di attrezzaggio. Inoltre, selezionado la voce *Inserisci* è possibile aggiungere una nuova fase oppure, tramite la voce *Cancella* di eliminarla definitivamente;            
+> **Cambio date**: permette di variare la data di inizio della fase selezionata;         
+> **Zoom in**: permette di diminuire il dettaglio temporale nel grafico;          
+> **Zoom alla finestra**: permette di visualizzare il dettaglio temporale nel grafico sulla base delle *Date Inizio/Fine* indicate nei filtri;                    
+> **Zoom out**: permette di aumentare il dettaglio temporale nel grafico;              
+> **Zoom settimana**: permette di visualizzare un arco temporale di una settimana nel grafico a partire dalla *Data Inizio*;              
+> **Zoom 2 settimane**: permette di visualizzare un arco temporale di due settimane nel grafico a partire dalla *Data Inizio*;     
+> **Zoom mese**: permette di visualizzare un arco temporale di un mese nel grafico a partire dalla *Data Inizio*;     
+> **Zoom data**: permette di visualizzare un arco temporale indicando *Date Inizio* e *Data fine* dello stesso.
+
+Per dettagli sul funzionamento comune delle form fare riferimento al link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
