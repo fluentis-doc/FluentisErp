@@ -19,8 +19,6 @@ Sulla destra sono proposti i criteri di raggruppamento disponibili, mentre sulla
 
 Nella ribbon bar sono presenti alcuni comandi per la gestione dei raggruppamenti:
 
-![](/img/it-it/finance-area/ledger-records/accounting-report/movements-summary-for-template/image04.png)
-
 **Cancella**: rimuove il raggruppamento selezionato
 
 **Rimuovi raggruppamenti**: rimuove tutti i raggruppamenti presenti (se sono attivi più di uno)
@@ -28,18 +26,9 @@ Nella ribbon bar sono presenti alcuni comandi per la gestione dei raggruppamenti
 **Sposta su /giù**: sposta il raggruppamento selezionato in alto o in basso al fine di variare la priorità di raggruppamento.
 
 
-
-
-
-
-
-| Funzione | Significato |
-| --- | --- |
-| Anteprima | Pulsante per eseguire l'anteprima di stampa. |
-| Stampa | Pulsante per eseguire la stampa fisica del documento. |
-
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/vQS47gLDe2M" title="YouTube video player" frameborder="0" allowfullscreen= "true"></iframe>
+:::important Vedi Anche
+[**VIDEO TUTORIALS SULLE STAMPE CONTABILI**](/docs/video/finance/intro.md)
+:::
 
 
 
