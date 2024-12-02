@@ -3,9 +3,11 @@ title: Modello F24
 sidebar_position: 1
 ---
 
-La procedura è dedicata alla creazione del modello F24. Questo modello è dedicato alla comunicazione dei vari tributi versati mensilmente dall'azienda.
+La procedura è dedicata alla creazione del modello F24. Questo modello è dedicato al versamento dei vari tributi versati mensilmente dall'azienda.
 
 Per inserire un nuovo modello F24 premere il tasto **Nuovo** nella ribbon bar.
+
+Per i dettagli nel nuovo modello in fase di inserimento vedere [**Gestione modello F24**](/docs/finance-area/professional-men/procedures/model-f24/f24-management)
 
 
 
