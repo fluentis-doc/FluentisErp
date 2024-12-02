@@ -1,204 +1,204 @@
 ---
-title: Generiranje proizvodnih naloga
-sidebar_position: 1
+title: Generazione commesse di produzione
+sidebar_position: 2
 ---
 
-Postupak **Generiranja proizvodnih naloga** omogućuje generiranje proizvodnih naloga iz narudžbi kupaca, pretpregleda i/ili iz stavki ispod razine zaliha.
+La procedura **Generazione commesse di produzione** permette di generare commesse di produzione da ordini clienti, dal previsionale e/o dal Sottoscorta.
 
-### Narudžbe kupaca {#sales-orders}
+### Ordini Clienti {#sales-orders}
 
-Na ovoj kartici možete filtrirati redove narudžbi kupaca koje želite analizirati pomoću procedure **Generiranja proizvodnih naloga**. 
+In questo tab si possono filtrare le righe d'ordine cliente che si vogliono far analizzare dalla procedura **Generazione commesse di produzione**. 
 
-Da bi se prikazale na ovoj kartici, redovi narudžbi moraju zadovoljavati sljedeće **zahtjeve**:
+Per poter essere visualizzate all'interno di questo tab, le righe d'ordine devono rispondere ai seguenti **requisiti**:
 
-- artikl koji je predmet reda narudžbe kupca mora imati omogućenu zastavicu *Isključi iz MRP-a* u svojim [MRP parametrima](/docs/configurations/parameters/production/mrp-parameters/search-mrp-parameters);  
-- red ne smije biti ispunjen putem *Picking list*, ili *Otpremnica*, ili *Izlazni račun*;   
-- red ne smije biti *Prisilno izvršeno*, stoga mora biti u statusu *Neizvršeno* ili *Djelomično izvršeno*;  
-- za taj red još nisu generirani *Nalog proizvodnje*;   
-- red mora imati uneseni *Datum spremne robe* u *Narudžbi kupca* unutar kartice *Artikli* iz koje dolazi;    
-- narudžba kupca iz koje dolazi red mora biti *Ispisana* i *Potvrđena*.
+- l'articolo oggetto della riga ordine cliente deve avere il flag *Generazione commesse di produzione* abilitato nei suoi [Parametri MRP](/docs/configurations/parameters/production/mrp-parameters/search-mrp-parameters);  
+- la riga non deve essere stata evasa tramite *Picking list*, o *DDT di vendita*, o *Fattura di vendita*;  
+- la riga non deve essere stata messa *Forzatamente evasa* e quindi deve risultare in stato *Non Evasa* oppure *Parzialmente evasa*;  
+- dalla riga non devono ancora essere state generate *Commesse di produzione*;  
+- la riga deve avere la *Data merce pronta* inserita nell'*Ordine cliente* all'interno del tab *Articoli* da cui proviene;  
+- l'ordine cliente da cui proviene la riga deve essere *Stampato* e *Confermato*.
 
-:::note NAPOMENA
-Nedostatak BILO KOJE od ovih uvjeta rezultira nemogućnošću prikazivanja reda narudžbe kupca u rešetki.  
+:::note Nota
+La non presenza di UNA SOLA di queste condizioni provoca l'impossibilità di visualizzare la riga ordine cliente nella griglia.
 :::
 
-U području filtra gdje je moguće filtrirati samo redove narudžbe koje želite prikazati prema dostupnim filtrima. Nakon što postavite potrebne filtre, klikom na gumb **Traži** prikazat će se u rezultatnoj mreži svi redovi narudžbe koji odgovaraju navedenim filtrima.
+Nell'area di filtro in cui è possibile filtrare solamente le righe ordine che si vogliono visualizzare in base ai filtri presenti. Una volta impostati i filtri necessari, cliccando sul pulsante **Ricerca** verranno visualizzate nella griglia di risultato tutte le righe ordine corrispondenti ai filtri indicati. 
 
-*Polja*    
+*Campi*    
 
-**Tip**: predstavlja tip narudžbe kupca;       
-**Broj**: predstavlja broj narudžbe kupca;      
-**Godina**: predstavlja godinu narudžbe kupca;     
-**Datum narudžbe kupca**: predstavlja datum narudžbe kupca;     
-**Broj linije**: predstavlja broj reda narudžbe kupca;     
-**Klasa** i **Šifra artikla**: predstavljaju klasu i šifru artikla;               
-**Varijanta**: predstavlja varijantu artikla;          
-**Datum naloga prodaje**: predstavlja datum naloga prodaje;     
-**Količina**: predstavlja količinu reda narudžbe koja još nije ispunjena;   
-**Dostupnost**: predstavlja raspoloživu količinu artikla na datum gotovosti robe reda narudžbe;             
-**JM**: predstavlja jedinicu mjere;        
-**Dostava**: predstavlja datum gotovosti robe reda narudžbe;    
-**Vrsta naloga** i **Opis naloga**: predstavljaju šifru i opis tipa naloga;    
-**Opis artikla**: predstavlja opis artikla;          
-**Opis konta**: predstavlja naziv kupca. 
+**Tipo**: rappresenta il tipo di ordine cliente;       
+**Numero**: rappresenta il numero dell'ordine cliente;     
+**Anno**: rappresenta l'anno dell'ordine cliente;     
+**Data ordine cliente**: rappresenta la data dell'ordine cliente;     
+**Numero riga**: rappresenta il numero di riga dell'ordine cliente;     
+**Classe** e **Codice articolo**: rappresentano la classe e il codice dell'articolo;             
+**Variante**: rappresenta la variante dell'articolo;          
+**Data OC**: rappresenta la data inserimento ordine;     
+**Quantità**: rappresenta la quantità ancora da evadere della riga d'ordine;   
+**Disponibilità**: rappresenta la quantità disponibile dell'articolo nella data di merce pronta della riga d'ordine;           
+**UM**: rappresenta l'unità di misura;        
+**Consegna**: rappresenta data di merce pronta della riga d'ordine;  
+**Tipo commessa** e **Decrizione commessa**: rappresentano il codice e la descrizione del tipo commessa;    
+**Descrizione articolo**: rappresenta la descriozione dell'articolo;          
+**Descrizione conto**: rappresenta la ragione sociale del cliente.  
 
-:::note NAPOMENA 
-Stupac **Dostupnost** iznosi nula za sve redove u slučaju da je zastavica *Razmotri dostupnost artikla* prisutna u kartici **Parametri** deaktivirana.  
+:::note Nota
+La colonna **Disponibilità** risulta uguale a zero per tutte le righe nel caso in cui il flag *Considera la disponibilità dell'articolo* presente nel tab **Parametri** sia disattivato. 
 :::
 
-*Posebni gumbi*  
+*Pulsanti specifici*  
 
-> **Uzmite u obzir za naloge**: omogućuje premještanje odabranih redova narudžbe u karticu **Sažetak** gdje će biti razmotreni u postupku generiranja proizvodnog naloga.    
+> **Considera per commesse**: permette di spostare le righe d'ordine selezionate nel tab **Riepilogo** dove potranno essere prese in esame dalla procedura di generazione della commessa di produzione.  
 
-> **Generiranje toka**: tipka se omogućava samo ako je u [Parametrima MRP](/docs/configurations/parameters/production/mrp-parameters/mrp-parameters-intro) omogućena zastavica *Automatsko generiranje tijeka proizvodnje*. Ovom tipkom moguće je izravno pokrenuti izvršavanje cjelokupnog toka proizvodnje i time  *kreirati* *Proizvodne narudžbe* koji bi se izravno rasporedili, a ovisno o sljedećim zastavicama postavljenim također u [Parametrima MPS](/docs/configurations/parameters/production/mps-parameters), eventualno bi se generirali i *Planirane narudžbe* i *Proizvodni nalog*.
-
-
-### Predviđanje {#forecast}
-
-U ovoj kartici mogu se filtrirati redovi *Prodajnih Prognoza* ili *Glavnog Plana* ili  **Generiranja proizvodnih naloga**, koristeći filtre za artikl i varijantu.
-
-Redovi *Prodajnih prognoza* koji se mogu prikazati u ovoj kartici moraju ispunjavati sljedeće **uvjete**:
-
-- godišnja prodajna prognoza mora biti u statusu  *Konsolidirana*;  
-- godišnja prodajna prognoza mora biti generirana s važećom *Verzijom*;  
-- za prodajne prognoze ne smiju biti još generirane *Naloge proizvodnje*;  
-- za redove u *Glavnom planu proizvodnje* koji se mogu prikazati na ovoj kartici, ne smiju biti još generirane *Naloge proizvodnje*.
-
-U području filtra moguće je filtrirati samo redove narudžbi koje želite vidjeti prema unesenim *filterima*.  
-**Prikaz varijanti**: omogućuje prikaz varijante ako je zastava aktivna;  
-**Mjesec završetka rasporeda**: koristi se za prikazivanje samo prodajnih prognoza koje idu do navedenog datuma;    
-**Tip radnog naloga**: predstavlja Tip radnog naloga koji se generira;      
-**Tip naloga**: omogućuje postavljanje *Vrste narudžbe prodaje* koje se moraju uzeti u obzir istovremeno s količinama u prodajnim prognozama, tako da postupak stvaranja proizvodne narudžbe generira proizvodnu narudžbu s količinom jednako najvećoj, najmanjoj ili zbroju količina prisutnih za isti članak u retku narudžbe kupca i/ili u prodajnoj prognozi ili glavnom planu.
-
-Kada su postavljeni potrebni filtri, klikom na gumb **Traži** će se prikazati u rezultatnoj mreži sve odgovarajuće redove prognoze.    
-
-*Polja* 
-
-**Klasa**, **Kod** i **Opis artikla**;    
-**Varijanta**: prikazuje se ako je odgovarajuća opcija označena ili ako je odabrana u području filtriranja;   
-**Godina**: predstavlja godinu prodajne prognoze;  
-**Mjesec/Tjedan**: broj mjeseca ili tjedna prodajne prognoze;    
-**Datum generiranja narudžbenice**: datum generiranja proizvodne narudžbenice;    
-**Datum početka / završetka prognoze**: na primjer, ako je prognoza postavljena za mjesec svibanj, datum početka bit će 01/05, a datum završetka 31/05;     
-**Količina**: predstavlja količinu za svaku pojedinu liniju prodajne prognoze;  
-**Konto/Podkonto/Opis konta**: predstavlja konto kupca za odgovarajuću liniju prodajne prognoze (ako je dostupan).   
-
-*Poseban gumb*  
-
-> **Razmotri za radni nalog**: omogućuje premještanje odabranih redaka u karticu **Sažetak** gdje će biti razmotreni u postupku generiranja proizvodne narudžbe.  
+> **Generazione flusso**: il pulsante viene abilitato solo nel caso in cui nei [Parametri MRP](/docs/configurations/parameters/production/mrp-parameters/mrp-parameters-intro) sia stato abilitato il flag *Generazione automatica flusso di produzione*. Con questo tasto è possibile lanciare direttamente l'esecuzione del flusso di produzione completo e quindi la *creazione* delle *Commesse di produzione* che verrebbero direttamente schedulate e, a seconda dei flag successivi impostati sempre nei [Parametri MPS](/docs/configurations/parameters/production/mps-parameters), verrebbero eventualmente generati anche *Ordini pianificati* e *Ordini di produzione*.
 
 
-### Sigurnosna zaliha {#safety-stock}
+### Previsionale {#forecast}
 
-Putem ove kartice mogu se filtrirati redci artikala koji se upravljaju na zalihama i koje želite analizirati postupkom *Generiranja proizvodnih narudžbi*.   
-Jedini **uvjet** koji omogućuje prikazivanje artikla u ovoj mreži je taj da u svojim [MRP parametrima ](/docs/configurations/parameters/production/mrp-parameters/mrp-parameters-intro), ima *Tip upravljanja na zalihama*.
+In questo tab si possono filtrare le righe di *Previsioni di vendita* o del *Piano principale di produzione* che si vogliono far analizzare dalla procedura **Generazione commesse di produzione**, utilizzando i filtri per articolo e per variante.
 
-U području za filtriranje moguće je filtrirati samo redke narudžbi koje želite prikazati na temelju unesenih *filtera*.  
-**Prikaz varijanti**: aktivni zastavica omogućuje prikaz varijante;  
-**Tip proizvodne narudžbe**:  omogućuje odabir tipa proizvodne narudžbe koju želite generirati;  
-**Ispod točke ponovnog naručivanja do**: predstavlja datum do kojeg ne želite da artikli u mreži budu ispod zaliha.    
+Le righe delle *Previsioni di vendita* che possono essere visualizzate in questo tab devono rispondere ai seguenti **requisiti**:
 
-Nakon što postavite potrebne filtere, klikom na gumb **Traži** prikazat će se u mreži rezultata svi redci artikala koji odgovaraju navedenim filterima.  
+- la previsione di vendita annuale deve essere in stato di *Consolidata*;  
+- la previsione di vendita annuale deve essere stata generata con una *Versione* valida;  
+- dalla riga di previsione non devono ancora essere state generate *Commesse di produzione*;  
+- dalle righe del *Piano principale di produzione* che possono essere visualizzate in questo tab non devono ancora essere state generate *Commesse di produzione*.
 
-Podaci koji se mogu prikazati unutar mreže su:    
-**Klasa**, **Šifra** i **Opis artikla**;    
-**Varijanta**: prikazuje se ako je odabrana istoimena zastavica u području za filtriranje; Točka ponovnog naručivanja;   
-**Razina zalihe za ponovno naručivanje**, **Minimalne zalihe** i **Dani za ponovno naručivanje**: preuzimaju se iz *Šifarnika artikla* > kartica *Nabava*;   
-**Prosječna dnevna potrošnja**: izračunava se tako da se od točke ponovnog naručivanja oduzmu minimalne zalihe i dobiveni rezultat podijeli s brojem dana za ponovno naručivanje;    
-**Količina ekonomske proizvodnje lota** i njezini **Višestruki**: preuzimaju se iz [MRP parametara ](/docs/configurations/parameters/production/mrp-parameters/search-mrp-parameters)  artikla;  
-**Raspoloživost**: predstavlja dostupnost artikla na dan pokretanja obrade; 
-**Početna raspoloživost**: predstavlja raspoloživost artikla na dan kada se pokreće obrada;  
-**Konačna raspoloživost**: predstavlja raspoloživost artikla na dan naveden u polju **Ispod točke ponovnog naručivanja na datum** prisutan u području za filtriranje;   
-**Minimalna dostupnost**: predstavlja minimalnu dostupnost artikla u vremenskom razdoblju između početne i konačne dostupnosti.   
+Nell'area di filtro è possibile filtrare solamente le righe ordine che si vogliono visualizzare in base ai *filtri* inseriti.  
+**Vedi variante**: il flag attivo permette di visualizzare la variante;  
+**Mese di fine schedulazione**: serve per visualizzare nella griglia solo le previsioni di vendita che arrivano fino alla data indicata;  
+**Tipo commessa**: rappresenta il tipo di commessa di produzione da generare;    
+**Tipi ordine**: la griglia consente di impostare i *Tipi ordini cliente* che devono essere considerati contemporaneamente alle quantità presenti nelle previsioni di vendita, in modo tale che la procedura di creazione commessa generi la commessa di produzione con una quantità pari al maggiore, al minore o alla somma delle quantità presenti, per lo stesso articolo, in riga ordine cliente e/o in previsione di produzione o piano principale.
 
-:::note NAPOMENA
-Za dokumente bez datuma isporuke uzima se u obzir parametar *Ako nisu specificirani datumi dostave* na kartici Parametri.
+Una volta impostati i filtri necessari, cliccando sul pulsante **Ricerca** verranno visualizzate nella griglia di risultato tutte le righe di previsione corrispondenti ai filtri indicati.  
+
+*Campi* 
+
+**Classe**, **Codice** e **Descrizione articolo**;  
+**Variante**: viene visualizzato se il flag omonimo è stato selezionato; se si è deciso nell'area di filtro che venga visualizzata; 
+**Anno**: rappresenta l'anno della previsione di vendita;  
+**Mese/Sett**: rappresenta il numero del mese o della settimana della previsione di vendita;  
+**Data gen. commessa**: rappresenta la data di generazione della commessa di produzione;  
+**Date inizio / fine previsione**: per esempio, se la previsione è stata impostata per il mese di maggio, la data inizio sarà il 01/05 e la data fine sarà il 31/05;   
+**Quantità**: rappresenta la quantità relativa alla singola riga di previsione;  
+**Conto/Sottoconto/Descrizione conto**: rappresenta il conto del cliente relativo alla riga di previsione di vendita (ove presente).  
+
+*Pulsante specifico*  
+
+> **Considera per commesse**: permette di spostare le righe selezionate nel tab **Riepilogo** dove potranno essere prese in esame dalla procedura di generazione della commessa di produzione.
+
+
+### Sottoscorta {#safety-stock}
+
+Attraverso questo tab si possono filtrare le righe di articoli gestiti a Scorta che si vogliono far analizzare dalla procedura *Generazione commesse di produzione*.  
+L'unico **requisito** che consente all'articolo di essere visualizzabile in questa griglia è rappresentato dal fatto che abbia, nel suoi [Parametri MRP](/docs/configurations/parameters/production/mrp-parameters/mrp-parameters-intro), il *Tipo di gestione* a *Scorta*.
+
+Nell'area di filtro è possibile filtrare solamente le righe ordine che si vogliono visualizzare in base ai *filtri* inseriti.  
+**Vedi variante**: il flag attivo permette di visualizzare la variante;  
+**Tipo commessa di produzione**: consente di decidere il tipo di commessa di produzione da generare;  
+**Sotto punto di riordino al**: rappresenta la data fino alla quale non si vuole che gli articoli della griglia finiscano sottoscorta.  
+
+Una volta impostati i filtri necessari, cliccando sul pulsante **Ricerca** verranno visualizzate nella griglia di risultato tutte le righe articolo corrispondenti ai filtri indicati.
+
+I dati che si possono visualizzare all'interno della griglia sono:  
+**Classe**, **Codice** e **Descrizione articolo**;  
+**Variante**: viene visualizzato se il flag omonimo è stato selezionato; se si è deciso nell'area di filtro che venga visualizzata;  
+**Punto di riordino**, **Scorta minima** e **Giorni di riordino**: vengono ripersi dall'*Anagrafica articolo* > tab *Approvvigionamento*;   
+**Consumo medio giornaliero**: viene calcolato sottraendo la scorta minima dal punto di riordino e dividendo il risultato ottenuto per i giorni di riordino;   
+**Lotto economico di produzione** e i suoi **Multipli**: vengono ripresi dai [parametri MRP](/docs/configurations/parameters/production/mrp-parameters/search-mrp-parameters) dell'articolo;  
+**Giacenza**: riporta la giacenza dell'articolo alla data corrente; 
+**Disponibilità iniziale**: rappresenta la disponibilità dell'articolo al giorno in cui si lancia l'elaborazione;  
+**Disponibilità finale**: rappresenta la disponibilità dell'articolo al giorno indicato nella casella **Sotto punto di riordino alla data** presente nell'area di filtro;   
+**Disponibilità minima**: rappresenta la disponibilità minima che l'articolo presenta nel lasso di tempo che intercorre tra la data di disponibilità inizio e la data di disponibilità finale.  
+
+:::note Nota
+Per i documenti privi della Data Consegna viene considerato il parametro *Se non è specificata la data di consegna* presente nel tab Parametri.
 :::
 
-*Donja mreža* prikazuje detalje o dostupnosti artikla odabranog u glavnoj mreži.  
+La *griglia inferiore* visualizza il dettaglio della disponibilità dell'articolo selezionato nella griglia principale.
 
-:::note NAPOMENA
-U prvom retku mreže, dostupnost je određena zbrojem zaliha i svih dospjelih dokumenata (s datumom prije današnjeg dana).  
+:::note Nota
+Nella prima riga della griglia, la disponibilità è data dalla somma della giacenza e di tutti i documenti scaduti (con data antecedente ad oggi).
 :::
 
-*Posebni gumbi*  
+*Pulsante specifico*  
 
-> **Razmotri za radni nalog**: omogućuje premještanje odabranih redaka u karticu **Sažetak** gdje će biti razmatrani u postupku generiranja proizvodne narudžbe.   
+> **Considera per commesse**: permette di spostare le righe selezionate nel tab **Riepilogo** dove potranno essere prese in esame dalla procedura di generazione della commessa di produzione.
 
-Samo redci za koje postupak smatra da se može stvoriti proizvodna narudžba bit će preneseni u karticu *Sažetak*. Postupak za svaki artikl predlaže proizvodnu narudžbu i nastoji osigurati da se na dan kada artikl može pasti ispod minimalne razine zaliha, obnovi putem proizvodne narudžbe s istim datumom kao datum ispod kojeg se ne želi da artikl padne ispod zaliha.  Količina ove narudžbe treba omogućiti opstanak do datuma **Ispod točke ponovnog naručivanja** navedenog u području za filtriranje: naravno, ako artikl ima ekonomske serije proizvodnje ili kupovine i njihove višekratnike, oni se poštuju.  
+Solo le righe per le quali la procedura ritiene di poter creare una commessa di produzione saranno trasferite nel tab *Riepilogo*. La procedura propone per ogni articolo una commessa di produzione e cerca di fare in modo che nel giorno in cui l'articolo abbia il rischio di scendere sotto il livello di scorta minima, venga reintegrato tramite una commessa di produzione avente data identica alla data sottoscorta. La quantità di questa commessa dovrà consentire di sopravvivere fino alla data di **Sotto punto di riordino** indicata nell'area di filtro: ovviamente se l'articolo presenta dei lotti economici di produzione o di acquisto e dei multipli essi vengono rispettati.
 
-### Sažetak
+### Riepilogo
 
-Ova kartica prikazuje redove koji su premješteni iz prethodnih kartica i koji se trebaju pretvoriti u proizvodne narudžbe.
+Questo tab presenta le righe che sono state spostate dagli tab precedenti e che devono essere trasformate in commesse di produzione.
 
-Kartica sadrži:  
-- sekciju **Predloženi proizvodni nalog** u kojoj korisnik može postaviti **Vrstu**, **Godinu** i **Broj** proizvodne narudžbe kojoj trebaju biti dodani odabrani redci u istoj kartici **Sažetak**. 
-- rezultatnu mrežu gdje će biti prikazani redci artikala koji su premješteni iz drugih kartica.  
+Il tab contiene:  
+- la sezione **Commessa di produzione proposta** in cui l'utente può impostare il **Tipo**, l'**Anno** e il **Numero** della commessa di produzione a cui devono essere aggiunte le righe selezionate nello stesso tab **Riepilogo**.  
+- la griglia di risultato dove verranno visualizzate le righe articolo che sono state spostate dagli altri tab.
 
-*Polja u mreži*:  
+*Campi griglia*:  
 
-**Podaci iz**: predstavlja karticu iz koje je redak došao;      
-**Klasa**, **Šifra artikla** i **Opis**: predstavljaju klasu, šifru i opis artikla;              
-**Varijanta**: predstavlja varijantu artikla;     
-**Količina**: predstavlja količinu proizvodne narudžbe predložene postupkom;  
-**Dostupnost**: predstavlja dostupnu količinu artikla na *Datum isporuke*;            
-**Datum isporuke**: predstavlja datum završetka predložene proizvodne narudžbe (koji korisnik može ručno mijenjati);                  
-**Datum početka prognoze**: predstavlja datum početka prognoze;      
-**Kod vrste**: predstavlja kod klijentske narudžbe;          
-**Broj narudžbe kupca**: predstavlja broj klijentske narudžbe;  
-**Konto/Podkonto/Opis konta**: predstavljaju račun klijenta vezan uz liniju prodajne prognoze (ako postoji);      
-**Vrsta narudžbe** i **Opis narudžbe**: predstavljaju kod i opis vrste narudžbe.       
+**Dati da**: rappresenta il tab di provenienza della riga;     
+**Classe**, **Codice articolo** e **Descrizione**: rappresentano la classe, il codice e la descrizione dell'articolo;             
+**Variante**: rappresenta la variante dell'articolo;     
+**Quantità**: rappresenta la quantità della commessa che viene proposta dalla procedura;
+**Disponibilità**: rappresenta la quantità disponibile dell'articolo alla *Data consegna*;            
+**Data di consegna**: rappresenta la data di fine della commessa di produzione proposta (che è modificabile manulamente dall'utente);                
+**Data inizio previsione**: rappresenta la data di inizio previsione;      
+**Codice tipo**: rappresenta il codice dell'ordine cliente;        
+**Numero ordine cliente**: rappresenta il numero dell'ordine cliente;  
+**Conto/Sottoconto/Descrizione conto**: rappresentano il conto del cliente relativo alla riga di previsione di vendita (ove presente);      
+**Tipo commessa** e **Descrizione commessa**: rappresentano il codice e la descrizione del tipo commessa.       
 
-Nakon što korisnik odabere željene retke, ima mogućnost stvaranja proizvodnih narudžbi prema postavljenim kriterijima u kartici **Parametri**, koristeći gumb **Automatsko kreiranje radnih naloga**. Nakon završetka procesa, procedura prikazuje prozor u kojem su navedeni brojevi generiranih narudžbi, a korisnik samo treba kliknuti na OK i zatvoriti prozor.  
+Dopo aver selezionato le righe desiderate, l'utente ha la possibilità di creare le commesse di produzione in base ai criteri impostati nel tab **Parametri**, utilizzando il tasto **Formazione automatica commesse**. La procedura presenta, al termine dell'elaborazione, una finestra in cui vengono specificati i numeri delle commesse generate, finestra sulla quale l'utente deve solo cliccare su OK e chiudere.
 
-*Specifičan gumb*   
-> **Automatsko kreiranje radnih naloga**: poziva postupak koji generira proizvodne narudžbe iz odabranih redaka.   
+*Pulsante specifico*   
+> **Formazione automatica commesse**: richiama la procedura che genera le commesse di produzione dalle righe selezionate.  
 
 ### Parametri
 
-Putem ove kartice podešavaju se svi parametri koji se odnose na upravljanje stvaranjem proizvodnih narudžbi i na način kako treba upravljati fazama nakon generiranja samih narudžbi. Neke postavke prisutne na ovoj kartici preuzimaju se iz prozora [Parametri MPS](/docs/configurations/parameters/production/mps-parameters).
+Attraverso questo tab vengono settati tutti i parametri che riguardano la gestione della creazione delle commesse di produzione ed il modo in cui devono essere gestite le fasi successive alla generazione delle commesse stesse. Alcune impostazioni presente in questo tab vengono riprese dalla finestra [Parametri MPS](/docs/configurations/parameters/production/mps-parameters).
 
-**Metoda generiranja podnaloga**:  
-- **Vrsta narudžbenice** (Jedan proizvod / Više proizvoda): ponovno se primjenjuju podaci postavljeni u kartici [Parametri MPS.](/docs/configurations/parameters/production/mps-parameters)  Prilikom generiranja narudžbe iz *Proizvodne narudžbe* moguće je ipak izmijeniti ovu postavku unutar ovog prozora, kao i postavku u sljedećoj kombinaciji;  
-- **Grupiranje proizvoda za**: kombinacija preko koje možete naznačiti kako se eventualno moraju grupirati članci unutar iste narudžbe *Jedan proizvod* ili *Više proizvoda*.  
+**Metodo generazione commessa**:  
+- **Tipo commessa** (Monoprodotto / Multiprodotto): viene riproposto il dato che era stato settato nel tab  [Parametri MPS.](/docs/configurations/parameters/production/mps-parameters)  Nel momento della generazione della commessa dalla *Generazione commesse di produzione* è comunque possibile modificare questa impostazione all'interno di questa finestra, così come quella relativa alla combo successiva;  
+- **Raggruppamento prodotti per**: combo tramite la quale è possibile indicare come devono essere eventualmente raggruppati gli articoli all'interno della stessa commessa *Monoprodotto* o *Multiprodotto*.  
 
-> Ako je vrsta narudžbe *Monoproizvod*, jedino dopušteno grupiranje je po *Artiklu*; ovaj način omogućuje korisniku da sustav automatski generira niz  *Monoproizvodnih*, narudžbi, odabirom liste redova *klijentskih Narudžbi*, redova iz  *Prodajnih prognoza* ili *Glavnog Plana proizvodnje* ili redova koji dolaze iz područja *Sigurnosnih zaliha* tako da svaka generirana narudžba prikazuje zbroj količina potrebnih za isti artikl. Datum završetka grupirane narudžbe uvijek je jednak najbližem potrebom prema datumu pokretanja obrade.    
-> Ako je vrsta narudžbe *Multiproizvod* grupiranje može biti po klijentu ili projektu i omogućuje korisniku da u istu *Multiproizvodnu* narudžbu unese više artikala iz redova klijentskih narudžbi povezanih s istim klijentom, istom prodajnom narudžbom ili istom prodajnom narudžbom istog klijenta.  
+> Se il tipo commessa è *Monoprodotto*, l'unico raggruppamento ammesso è quello per *Articolo*; questo tipo di gestione permette all'utente di far generare automaticamente dal sistema una serie di commesse *Monoprodotto*, selezionando una lista di righe di *Ordini clienti*, righe provenienti da   *Previsioni di vendita* o dal *Piano principale di produzione* o provenienti dal *Sottoscorta* facendo in modo che ciascuna commessa che verrà generata presenti la somma delle quantità richieste per lo stesso articolo. La data di fine di una commessa raggruppata è sempre uguale a quella del fabbisogno più vicino alla data in cui si lancia l'elaborazione.  
+> Se il tipo commessa è *Multiprodotto* i raggruppamenti possono essere effettuati per cliente o progetto e consentono all'utente di inserire nella stessa commessa *Multiprodotto* più articoli provenienti da righe d'ordine cliente legate allo stesso cliente, alla stessa commessa di vendita oppure alla stessa commessa di vendita dello stesso cliente.
 
-**Prioritet nabave**: ova kombinacija prikazuje prioritet opskrbe koji je bio postavljen u [MPS Parametrima](/docs/configurations/parameters/production/mps-parameters) odabirući prioritet iz kodiranih opcija unutar tablice *Prioritet opskrbe* koja se nalazi u sekciji *Opće postavke* tablica.
+**Priorità approvvigionamento**: la combo riporta la priorità di approvvigionamento che era stata impostata nei  [Parametri MPS](/docs/configurations/parameters/production/mps-parameters) selezionando una priorità tra quelle codificate all'interno della tabella *Priorità approvvigionamento* che si trova tra le tabelle della sezione *Impostazioni Generali*.
 
-**Ažuriraj postojeće podnaloge**: odabrane narudžbe u sažetnom tabu dodaju se postojećoj narudžbi (označenoj u polju *Predložena proizvodna narudžba **sažetne** kartice), samo ako je omogućena opcija **Ažuriraj postojeće podnaloge** u tablici parametara. Automatski će biti predložena već spremljena narudžba u koju se mogu dodati retci, ako već postoji narudžba istog tipa i datuma.         
+**Aggiornamento commesse già esistenti**: le commesse selezionate nel tab riepilogativo vengono aggiunte ad una commessa già esistente (indicata nel box *Commessa di produzione propost* del tab **Riepilogativo**), se e solo se è abilitato il flag **Aggiornamento commesse già esistenti** nel tab parametri. In automatico verrà proposta una commessa già salvata dove aggiungere le righe, se ne esiste già una con quel tipo e data.         
 
-Nakon toga, putem odgovarajućih oznaka, može se naznačiti treba li narudžba biti generirana iz **Klijentskih narudžbi** ili iz **Prognostičkog plana** (i u slučaju prognostičkog plana, da li iz **Plana prodaje** ili iz **Minimalnih zaliha**), ili, konačno, iz **Sigurnosnih zaliha**. U ovom posljednjem slučaju koristi se poseban algoritam objašnjen u odjeljku posvećenom kartici [Sigurnosnih zaliha](#safety-stock).
+Di seguito, attraverso degli appositi flag, si può indicare se la commessa debba essere generata da **Ordini clienti** o da un **Previsionale** (e nel caso del previsionale se da **Previsioni di vendita** o dal **Piano principale di produzione**), oppure, in ultima analisi, dal **Sottoscorta**. In quest'ultimo caso viene utilizzato un algoritmo particolare spiegato nel paragrafo dedicato al tab [Sottoscorta](#safety-stock).
 
-**Predviđanje**: ako je oznaka aktivna, tada se može odlučiti u kojem vremenskom modu trebaju biti generirane proizvodne narudžbe, između sljedećih opcija:    
-> **Mjesečno**: U ovom slučaju, proizvodna narudžba će biti generirana u mjesecu kada završava datum Prognoze prodaje ili kada je količina unesena u Glavni plan proizvodnje. Korisnik također može postaviti dan u mjesecu kada procedura automatskog stvaranja narudžbe treba postaviti očekivani datum završetka narudžbe;    
-> **Tjedno**: u ovom slučaju bit će generirana proizvodna narudžba za svaki tjedan u mjesecu kada završava datum Prognoze prodaje ili kada je količina unesena u Glavni plan proizvodnje. Korisnik također može postaviti dan u tjednu kada procedura automatskog stvaranja narudžbe treba postaviti očekivani datum završetka narudžbe;  
-> **Stvarni**: u ovom slučaju bit će generirana proizvodna narudžba za svaki tjedan u mjesecu kada završava datum pojedinačne linije *Prognoze prodaje* ili kada je količina unesena u *Glavni plan proizvodnje*, uz točno uzimanje u obzir datuma završetka pojedinačne linije *Prognoze prodaje*;  
-> **Tjedno uzimajući u obzir radne dane zone isporuke**: u ovom slučaju bit će generirana proizvodna narudžba uzimajući u obzir radne dane zone isporuke povezane s klijentom za kojeg je stvorena *Prognoza prodaje*;  
-> **Grupiranje predviđanja po kupcima**: ova oznaka omogućuje generiranje proizvodnih narudžbi grupiranjem linija prognoze istih klijenata. 
+**Previsionale**: se il flag è attivo, si può poi decidere con quale modalità temporale debbano essere generate le commesse di produzione, tra le opzioni seguenti:  
+> **Mensile**: in questo caso la commessa di produzione verrà generata nel mese in cui cade la data della fine della Previsione di Vendita oppure nel mese in cui è stata inserita la quantità nel Piano Principale di Produzione. L'utente può anche impostare il giorno del mese in cui deve essere impostata dalla procedura automatica di creazione commessa la data di prevista fine della commessa stessa;  
+> **Settimanale**: in questo caso verrà generata una commessa di produzione per ogni settimana del mese in cui cade la data della fine della Previsione di Vendita oppure del mese in cui è stata inserita la quantità nel Piano Principale di Produzione. L'utente può anche impostare il giorno della settimana in cui deve essere impostata dalla procedura automatica di creazione commessa la data di prevista fine della commessa stessa;  
+> **Reali**: in questo caso verrà generata una commessa di produzione per ogni settimana del mese in cui cade la data della fine della *Previsione di Vendita* oppure del mese in cui è stata inserita la quantità nel *Piano Principale di Produzione*, ma considerando esattamente la data di fine della singola riga della *Previsione di Vendita*;  
+> **Settimanale considerando gg di produzione della zona di consegna**: in questo caso verrà generata una commessa di produzione tenendo conto dei giorni di produzione della zona di consegna legata al cliente per cui è stata creata la *Previsione di Vendita*;  
+> **Raggruppamento previsioni per clienti**: il flag serve per fare in modo che le commesse di produzione vengano generate raggruppando le righe di previsione degli stessi clienti.
 
-**Ako nisu specificirani datumi dostave** ova sekcija se odnosi isključivo na karticu *Klijentskih narudžbi* i karticu *Sigurnosne zalihe* u *Generiranju proizvodnih narudžbi*. Ovdje korisnik može odlučiti hoće li, u slučaju nedostatka *Datuma gotovog proizvoda* u retku klijentske narudžbe koji se mora analizirati postupkom, taj redak bez datuma biti ignoriran ili će se prihvatiti određeni datum kao očekivani datum završetka generirane narudžbe, ili će se prihvatiti određeni datum kao očekivani datum početka generirane narudžbe (u ovim posljednja dva slučaja, datumi se biraju u odgovarajućim kombinacijama).  
+**Se non è specificata la data di consegna** la sezione riguarda esclusivamente il tab *Ordini Clienti* e il tab *Sottoscorta* della *Generazione commesse di produzione*. Qui l'utente può decidere se, nel caso in cui manchi la *Data merce pronta* nella riga dell'ordine cliente che deve essere analizzata dalla procedura, debba essere ignorata la riga priva di data, oppure debba essere accettata una certa data come prevista fine della commessa che verrà generata, oppure debba essere accettata una certa data come previsto inizio della commessa che verrà generata (in questi ultimi due casi le date vanno selezionate nelle due combo dedicate).
 
-**Razmotrite raspoloživost stavke**: ova oznaka omogućava, ako je aktivirana, da se u svim karticama *Generiranja proizvodnih narudžbi* prikaže dostupnost artikla na *Datum očekivanog završetka* proizvodne narudžbe koja će biti stvorena. Isti postupak vrijedi i za karticu *Sažetak*. Dostupnost se uzima u obzir na temelju aktiviranih oznaka u *MPS parametrima* (Radni nalog, Nabava, Prodaja, Proizvodnja, Skladište). U ovom slučaju, prilikom stvaranja narudžbe, procedura će uzeti u obzir dostupnost i stvoriti narudžbu za razliku između potražnje i dostupnosti tog artikla.
+**Considera la disponibilità dell'articolo**: il flag consente, se attivato, di fare in modo che in tutti i tabs della *Generazione commesse di produzione* venga esposta la disponibilità dell'articolo alla *Data di prevista fine* della commessa di produzione che dovrà essere creata. Lo stesso avviene anche nel tab *Riepilogo*. La disponibilità viene presa in considerazione sulla base dei flag attivati nei *Parametri MPS* (Conto Lavoro, Acquisti, Vendite, Produzione, Magazzino). In questo caso, quando si andrà a creare la commessa la procedura andrà a tenere conto della disponibilità creando la commessa per la differenza tra la domanda e la disponibilità di quell'articolo.
 
-**Skladište protustavke**: u mreži se prikazuju skladišta koja su unesena u prozor  [Izračun raspoloživosti](/docs/erp-home/registers/items/calculate-availability). Iz ove kartice *Parametri* mogu se samo pregledavati, ali ne mogu se mijenjati.  
+**Magazzini di schedulazione commesse**: nella griglia compaiono i magazzini che sono stati inseriti nella finestra del [Calcolo Disponibilità](/docs/erp-home/registers/items/calculate-availability). Da questo tab *Parametri* possono solo essere visualizzato e non modificati.
 
-**Proizvodno mjesto**: ova informacija, ako je navedena, koristi se kako bi procedura generiranja narudžbe iz klijentskog naloga uzimala u obzir samo potvrđene retke klijentskog naloga, gdje je planirano skladište za izdavanje povezano s tim proizvodnim mjestom.
+**Sito Produttivo:** questa informazione, se indicata, viene utilizzata per far considerare alla procedura di generazione commessa da ordine cliente le sole righe ordine cliente confermate, dove il magazzino di prelievo previsto è associato a quel sito produttivo.
 
-**Izračun količine prema ekonomskom lotu**: ako je ovaj flag aktiviran, procedura će generirati proizvodnu narudžbu uzimajući u obzir ekonomski lot nabave unesen u kartici [Preferirani dobavljači](/docs/erp-home/registers/items/create-new-items/item-registry/preferential-vendors) za zadani dobavljač, ako se analizirani artikl u *Generaciji proizvodnih narudžbi* ima *Tip nabave*: *Nabava* ili *Radni nalog*, također će uzeti u obzir ekonomski lot proizvodnje unesen u [MRP parametrima](/docs/configurations/parameters/production/mrp-parameters/search-mrp-parameters) ako je artikl predmet narudžbe ima *Tip nabave* 'Proizvodnja'.       
+**Calcolo quantità in base al lotto economico**: se attivato, questo flag, fa in modo che la procedura generi la commessa di produzione considerando il lotto economico di acquisto inserito nel tab [Fornitori preferenziali](/docs/erp-home/registers/items/create-new-items/item-registry/preferential-vendors) sul fornitore designato come di default se l'articolo analizzato in *Generazione commesse di produzione* ha come *Tipo approvvigionamento*: *Acquisto* o *Conto Lavoro*, e il lotto economico di produzione inserito nei [Parametri MRP](/docs/configurations/parameters/production/mrp-parameters/search-mrp-parameters) se l'articolo oggetto della commessa ha come *Tipo Approvvigionamento* 'Produzione'.       
 
-**Izračun količine prema višekratnicima artikla**: ako je ovaj flag aktiviran, procedura će generirati proizvodnu narudžbu uzimajući u obzir i višekratnike ekonomskog lota nabave unesene u kartici [Preferirani dobavljači](/docs/erp-home/registers/items/create-new-items/item-registry/preferential-vendors) na odabranom dobavljaču kao zadani za artikle ako artikl koji je predmet narudžbe ima kao *Tip nabave* *Nabava* ili *Podizvođač*,  višekratnici ekonomične količine proizvodnje unesenih u [MRP Parametre](/docs/configurations/parameters/production/mrp-parameters/search-mrp-parameters)  ako analizirani artikl u *Generiranju proizvodnih narudžbi* ima kao *Tip nabave*: *Proizvodnja*. Naravno, ovaj flag može biti aktiviran samo ako je aktiviran i flag naveden u prethodnom odlomku.              
+**Calcolo quantità in base ai multipli dell'articolo**: se attivato, questo flag fa in modo che la procedura generi la commessa di produzione considerando anche i multipli del lotto economico di acquisto inserito nel tab fornitori preferenziali sul fornitore designato come di default degli articoli se l'articolo oggetto della commessa ha come *Tipo Approvvigionamento* *Acquisto* o *Conto Lavoro*, e i multipli del lotto economico di produzione inserito nei  [Parametri MRP](/docs/configurations/parameters/production/mrp-parameters/search-mrp-parameters)  se l'articolo analizzato in G*enerazione commesse di produzione* ha come *Tipo Approvvigionamento*: *Produzione*. Ovviamente questo flag può essere attivato solo se risulti attivo il flag di cui al paragrafo precedente.              
 
-**Obnovi minimalnu zalihu stavki**:  ako je ovaj flag aktiviran, korisnik može omogućiti da se za analizirani artikl u *Generiranju proizvodnih narudžbi*obnovi minimalna zaliha unesena u *Šifarnik artikla > kartica Nabava*.    
+**Reintegro scorta minima dell'articolo**: se attivato, questo flag permette all'utente di fare in modo che per l'articolo analizzato in *DGenerazione commesse di produzione* sia reintegrata la scorta minima inserita nell'*Anagrafica articolo > tab Approvvigionamento*.    
 
-**Obnova točke ponovnog naručivanja artikla**: ako je ovaj flag aktiviran, korisnik može omogućiti da se za analizirani artikl u *Generiranju proizvodnih narudžbi* obnovi točka ponovnog naručivanja unesena u *Šifarnik artikla > kartica Nabava*.
+**Reintegro punto di riordino dell'articolo**: se attivato, questo flag permette all'utente di fare in modo che per l'articolo analizzato in *Generazione commesse di produzione* sia reintegrato il punto di riordino inserito nell'*Anagrafica articolo > tab Approvvigionamento*.
 
-**Isključi odgođene naloge**: ako je ovaj flag aktiviran, korisnik može omogućiti da procedura generiranja proizvodne narudžbe izuzme iz izračuna dostupnosti analiziranog artikla količine koje dolaze iz redova klijentskih narudžbi čiji je *Datum gotove robe* prije trenutnog datuma.  
+**Escludi ordini in ritardo**: se attivato, questo flag permette all'utente di fare in modo che la procedura di generazione della commessa di produzione escluda dal calcolo della disponibilità dell'articolo analizzato le quantità provenienti dalle righe d'ordine cliente la cui *Data merce pronta* risulta essere precedente alla data corrente.
 
-Nakon što su postavljeni parametri, možete nastaviti s kreiranjem narudžbi u njihovim odgovarajućim karticama za [Narudžbe kupca](#sales-orders), [Prognoze](#forecast) i [Minimalne zalihe](#safety-stock).
+Una volta impostati i parametri, si potrà procedere con la creazione delle commesse, nei rispettivi tab degli [Ordini clienti](#sales-orders), del [Previsionale](#forecast) e del [Sottoscorta](#safety-stock).
 
-*Poseban gumb*  
-> **Automatsko kreiranje radnih naloga**: poziva postupak koji generira proizvodne narudžbe iz odabranih redaka.
+*Pulsante specifico*  
+> **Formazione automatica commesse**: richiama la procedura che genera le commesse di produzione dalle righe selezionate.  
 
-Za detalje o uobičajenom radu s formama, pogledajte link [Značajke, gumbe i zajednička polja](/docs/guide/common).
+Per dettagli sul funzionamento comune delle form fare riferimento al link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
