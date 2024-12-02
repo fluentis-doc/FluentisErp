@@ -3,7 +3,7 @@ title: Tab Gestione
 sidebar_position: 2
 ---
 
-PROCEDURA: 
+### PROCEDURA: 
 
 - indicare per quale esercizio contabile si vuole procedere al calcolo e la data di calcolo (di default è proposta la data odierna); 
 
@@ -17,27 +17,22 @@ L'opzione singola registrazione andrà o meno a cumulare in un'unica registrazio
 
  
 
-Una volta salvate queste impostazioni si attiverà il pulsante di calcolo 
+Una volta salvate queste impostazioni si attiverà il pulsante **Calcola**
 
-![](/img/it-it/finance-area/ledger-records/records/adjustment-record/new/management-tab/image02.png)
 
 che andrà a popolare la sezione sottostante con la lista degli assestamenti proposti: all'interno di questi sarà indicata la tipologia di operazione, i riferimenti alla registrazione d'origine, il numero di giorni della rettifica e poi, editabili, l'importo e il sottoconto di rilevazione. 
 
 Nel caso in cui le causali impostate prevedano la gestione cdc/cdp e il movimento d'origine abbia i relativi dati da rettificare/integrare, nella sezione sottostante saranno presenti anche i dettagli dei calcoli relativi.
 
-![](/img/it-it/finance-area/ledger-records/records/adjustment-record/new/management-tab/image03.png)
-
  
 
- 
-
-La fase successiva sarà quella di confermare, riga per riga, che l'importo calcolato è corretto e completo attraverso l'imposizione del flag ‘controllato', operazione che attiverà di conseguenza la modificabilità e i relativi flag di controllo anche della sezione sottostante relativa ai cdc/cdp. 
+La fase successiva sarà quella di confermare, riga per riga, che l'importo calcolato è corretto e completo attraverso l'imposizione del flag **Controllato**, operazione che attiverà di conseguenza la modificabilità e i relativi flag di controllo anche della sezione sottostante relativa ai cdc/cdp. 
 
 ![](/img/it-it/finance-area/ledger-records/records/adjustment-record/new/management-tab/image04.png)
 
-Tutte le righe con stato ‘controllato' saranno oggetto della rilevazione in contabilità che sarà eseguita premendo il pulsante di contabilizzazione. 
+Tutte le righe con stato *controllato* saranno oggetto della rilevazione in contabilità che sarà eseguita premendo il pulsante di **Contabilizza**. 
 
-![](/img/it-it/finance-area/ledger-records/records/adjustment-record/new/management-tab/image05.png)
+
 
 L'utente può procedere a creare più contabilizzazioni man mano che vengono definiti i dettagli, così come procedere a ricalcolare la lista per verificare che non siano state aggiunte altre operazioni (tipicamente di integrazione di registrazioni del nuovo esercizio con competenza antecedente) o creare assestamenti nuovi per questi. È comunque presente la **[scheda di ripristino](/docs/finance-area/ledger-records/records/adjustment-record/new/restore-tab)** della situazione precedente.
 
@@ -47,11 +42,10 @@ NOTA: saranno contabilizzate tutte le righe con flag **Controllato** attivo.
 
 Nel caso in cui siano state effettuate modifiche alle registrazioni in contabilità dopo il lancio del calcolo potrebbe essere utile utilizzare il pulsante **Verifica calcolo assestamento**: 
 
-![](/img/it-it/finance-area/ledger-records/records/adjustment-record/new/management-tab/image06.png)
 
-questo pulsante andrà ad effettuare un ricalcolo riga per riga, mostrando eventuali differenze rispetto a quanto già proposto nella griglia, con un pulsante per allineare le differenze o meno, che andrà anche a cancellare righe di rettifica/integrazione collegate a movimenti contabili non più esistenti (Non sarà possibile contabilizzare se presenti righe con riferimenti a movimenti non esistenti ed in tal caso sarà dunque necessario passare per questa maschera e cancellarli).
 
-![](/img/it-it/finance-area/ledger-records/records/adjustment-record/new/management-tab/image07.png)
+questo pulsante andrà ad effettuare un ricalcolo riga per riga, mostrando eventuali differenze rispetto a quanto già proposto nella griglia (in particolare campi **Assestamento Dare / Avere** e **Nuovo assestamento Dare / avere**), con un pulsante per allineare le differenze o meno, che andrà anche a cancellare righe di rettifica/integrazione collegate a movimenti contabili non più esistenti (Non sarà possibile contabilizzare se presenti righe con riferimenti a movimenti non esistenti ed in tal caso sarà dunque necessario passare per questa maschera e cancellarli).
+
 
  
 
@@ -59,6 +53,9 @@ ATTENZIONE: nel caso in cui gli assestamenti siano già stati contabilizzati non
 
 NOTA relativa alla procedura di **[Chiusura automatica conti](/docs/finance-area/ledger-records/records/automatic-account-closing/new/new-intro)**: è presente un'opzione di giroconto automatico delle operazioni di assestamento in coda alle registrazioni di riapertura conti. Con questa opzione l'applicativo procederà a rilevare, alla data di riapertura, lo storno delle rettifiche mentre opererà il giroconto delle integrazioni alla data della registrazione d'origine dell'assestamento stesso.
 
+
+**FLAG Singola registrazione:** con questo flag attivo la contabilizzazione degli assestamenti avviene con un'unica registrazione contabile (unico numero) anzichè con tante registrazioni quante sono le rettifiche da eseguire.
+In fase di riapertura conti anche il giroconto per riapertura dei ratei e risconti seguirà la medesima impostazione.
 
 ### GESTIONE FATTURE DA RICEVERE
 
@@ -70,7 +67,7 @@ E' possibile inoltre personalizzare il conto da utilizzare in relazione ad ogni 
 
 Allo stesso modo è possibile personalizzare il conto da utilizzare per gli altri ratei e risconti attivi e passivi impostando il conto particolare in corrispondenza del conto del costo o ricavo direttamente nel piano dei conti.
 
-Situazione standard SENZA IMPOSTAZIONI SPECIFICHE NEL FORNITORE
+**Situazione standard SENZA IMPOSTAZIONI SPECIFICHE NEL FORNITORE**
 
 ![](/img/it-it/finance-area/ledger-records/records/adjustment-record/new/management-tab/image08.png)
 
