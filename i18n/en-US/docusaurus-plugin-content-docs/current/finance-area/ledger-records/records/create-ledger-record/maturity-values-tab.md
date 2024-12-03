@@ -1,48 +1,100 @@
 ---
-title: Maturity Values Tab
+title: Tab Partite
 sidebar_position: 3
 ---
 
-The Maturity Value tab is available only if the template has the  'opening mat. val' flag set.
+La scheda Partite è presente **solo se la causale ha il flag 'Apertura partite'** impostato.
+ 
 
-The first section of the form 'Maturity Value' is dedicated to the management of the data calculation of the following maturity values: for a manual VAT record it is possible to find the grid filled with the default data as entered in the customer/vendor/agent register assigned as detail account of the record itself. For other kinds of records (for instance advance payment) it is possible to code a template that opens the maturity value, with the opposite sign, instead of closing it because the document has not be noted yet: in this case the management of this section becomes manual, so that the user can enter the basic data related to the payment type, payment solution and detail account of reference, with the 'percentage' field 100% filled.
+### **La prima sezione** della scheda **Partite** 
 
-For this section it is important to notice that:
+è dedicata alla gestione dei dati di calcolo delle partite sottostanti e ricalca le condizioni di pagamento per una registrazione manuale di tipo IVA troveremo la griglia compilata con i dati di default così come inseriti all'interno dell'anagrafica cliente/fornitore/agente assegnata come sottoconto intestatario della registrazione stessa. Per altri tipi di registrazione (ad esempio, per i pagamenti anticipati è possibile codificare una causale che apra la partita, nel segno opposto, invece di chiuderla visto che il documento non è stato ancora rilevato): in questo caso la gestione di questa sezione diventa manuale, cosicché l'utente potrà inserire i dati essenziali del tipo di pagamento, della soluzione di pagamento e del sottoconto di riferimento, con il 100% inserito nel campo 'Percentuale'.
 
-- The maturity value can be created on the detail accounts that are not part of the register, that do not have the flag 'Opening mat. Val' in the chart of accounts (this flag is related just to the control that data of the Journal and of the maturity value correspond to the detail accounts that have this control option set)
+Per questa sezione è da segnalare che:
 
-- The bank supports are typically reported by the register or by the accounted document of purchase/sales/professional man areas, but they can be forced every time by using the help of  IBAN. The bank support linked in this section is the figure normally used during the payment to the vendors, that is to the bank which receives money unless the flag 'impose the support bank in the vendor register' is ticked.
+- la partita può essere creata anche su sottoconti non di anagrafica e che non hanno il flag Apertura partite nel piano dei conti (questo flag è relativo al solo controllo che i dati di giornale e partite corrispondano per i sottoconti che l'hanno impostato);
 
-- Normally the field 'percentage' is entered. The meaning of amount/tax is the following: in the amount field it is possible to enter a fixed amount that can be used for the combination like payment/payment term of the managing line; the field tax enables the user to define, of a certain amount, what can be attributed to VAT (this is useful in case that the payment solution includes Amount origin/tax different according to the various installments in order to get a correct amount). It is possible to enter a combination amount/percentage (already in the register): the procedures will assign a value to the maturity value with the type/solution of payment until the complete cover of the amount and, on the surplus,  it will calculate according to the percentage of the alternative line (for instance amount 1000 for 30 days BB, 100 percentage for 60/90 RB: if the amount is 1500,  a maturity value of 1000 for BB 30 days will be created, two maturity values of 250 as RB of 60 and 90 days).
+- gli appoggi bancari sono riportati tipicamente dall'anagrafica o dal documento contabilizzato dall'area acquisti/vendite/percipienti, ma possono essere di volta in volta forzati richiamandone uno differente utilizzando l'help abi/cab (doppio click nel campo). L'appoggio bancario collegato in questa sezione sarà il dato normalmente utilizzato nei pagamenti fornitori quale banca beneficiaria del pagamento a meno che non sia impostato il flag di '**[Imponi banca d'appoggio presente in anagrafica del fornitore](/docs/configurations/parameters/treasury/vendor-payments-parameters)**';
 
-- 'Grouping mat. Val' flag that is on the left side is taken by the register of customer/vendor: basically it has not a practical use, since  it is not usual that two maturity values has the same kind of payment and the same expiring date within one document.
-
-- Some summary fields of the customer/vendor situation are: the amount of the credit released in the Customer Risk module, the value of the presentation obtained according to the situation of the open maturity values (without considering the current registration) and the Ledger balance (considering the current registration).
-
-- Regarding the case of a record that comes from the Unpaid accounting, the upper grid does not have any relevance for the calculation of the maturity values below (typically register includes maturity values for RB but the unpaid are managed as BB and it is not automatically necessary to re-enter other Interim Account.)
-
-The grid below displays the list of the maturity values calculated according to the settings explained above: the user can force the type of payment, the expiring date to let it correspond to the document data; the user can even force the import of the various installments (Respecting, manually, the amounts). More important is the possibility to block the payment of the maturity value: procedures will record the date and the user that has blocked the payment (with a possible explanation note attached), as well as the date and the user that unblocks them (for both the activities it is necessary to have specific user rights within ArtinfoUserManager). Other manual management elements are: mat. Value position, that is a free table (that can be set by the user) to classify the accounting maturity values starting from the moment in which they are entered; Maturity value notes that can be automatically attached in the Ledger template at the description of the detail account as it is inserted in the accounting. The maturity value grid DOES NOT allow the manual enter of a new installment. The last field includes the possibility to assign (or change) the agent of reference for the maturity value: this can automatically get a value relying on the agent entered in the sell invoice during the accounting (if more than one agent, it will be assigned the one with more commissions). If the template includes the Opening mat. Value and the Maturity Value Compensation and the 'Warning' flag is ticked, when saving the record, the user gets a message of maturity values that can be compensated.
-
-RIBBON BAR: the ribbon bar represents the form menu, that is the area on which it is possible to perform actions. The list possible features list is the following:
+- normalmente viene inserito il campo '**Percentuale**'. Il significato dei campi 'Importo/Imposta' è il seguente: nel campo '**Importo**' si può inserire un importo fisso da utilizzare per la combinazione tipo pag./soluzione pag. della riga in gestione; il campo '**Imposta**' consente di definire, di questo importo, quanto sia riferibile all'IVA (questo serve nel caso in cui la soluzione di pagamento preveda delle percentuali imponibile/imposta differenziate tra le varie rate, per ottenere un calcolo corretto). È possibile inserire una combinazione importo/percentuale:
 
 
 
-| Function | Meaning |
+- flag **Raggruppa partite** NON ATTIVO: che si trova a sinistra viene ripreso dall'anagrafica cliente/fornitore: sostanzialmente non ha uso pratico, in quanto è ben raro che due partite abbiano stesso tipo pagamento e stessa data scadenza all'interno dello stesso documento;
+
+- al di sotto ci sono alcuni campi di riepilogo della situazione cliente/fornitore: l'importo del fido concesso nel modulo Rischio cliente, il valore dell'esposizione ottenuto secondo la situazione delle partite aperte (senza considerare la registrazione in uso) e il saldo contabile (considerando anche la registrazione in uso);
+
+- nel caso di registrazione derivante dalla **contabilizzazione insoluti**, la griglia superiore NON ha nessuna rilevanza per il calcolo delle partite sottostanti (tipicamente l'anagrafica prevede partite per RB, ma gli insoluti vengono gestiti come BB e non si devono riemettere in automatico altre riba): viene letta unicamente nel caso serva il dato degli appoggi bancari.
+
+### **La griglia sottostante** 
+
+presenta la lista delle partite calcolate secondo le impostazioni della sezione sopra: l'utente può forzare il tipo di pagamento, la data scadenza e gli importi delle varie rate (avendo cura di rispettare i totali). La griglia delle partite NON consente l'inserimento manuale di una nuova rata. 
+
+Nel caso in cui la causale preveda sia l'apertura partite, che la chiusura per compensazione e sia stato attivato anche il flag 'Avviso', al momento del salvataggio della registrazione verrà restituito all'utente un messaggio di avviso della presenza di partite da poter compensare.
+
+ 
+
+### I dati riportati per ogni partita creata sono:
+
+**Descrizione**: viene indicato lo stato della partita (aperta, parzialmente aperta, chiusa);
+
+**Conto/sottoconto/descrizione**: sottoconto cliente o fornitore al quale la partita è riferita;
+
+**Pag**: tipo pagamento (bonifico, contanti ecc...);
+
+**Scadenza**: data di scadenza calcolata a partire dalle condizioni di pagamento della griglia soprastante o imposta manualmente;
+
+**Cod. doc**: codice del documento che ha generato la partita (esempio FA = fattura di acquisto, FV = fattura di vendita);
+
+**Data documento**: data del documento (esempio fattura di acquisto) che ha generato la partita;
+
+**N. documento**: numero del documento che ha generato la partita;
+
+**Divisa**: divisa in cui è denominata la partita (es. EUR = Euro);
+
+**Cambio**: tasso di cambio che ha determinato il valore in valuta ed il controvalore in Euro della partita;
+
+**Data Valuta**: data di riferimento del tasso di cambio;
+
+**Importo in valuta**: pari all'importo in euro se il cambio è 1;
+
+**Importo Dare / Avere**: la partita ha un segno (o sezione che dir si voglia) così come il movimento contabile che l'ha generata. La partita con segno dare sarà una partita a nostro credito, mentre una partita con segno avere sarà una partita a debito (esempio a fronte di fattura ricevuta da fornitore o di nota di accredito emessa al cliente) ;
+
+ 
+
+E' inoltre possibile bloccare il pagamento della partita (Flag **Non Pagabile**): la procedura memorizzerà la data e l'utente che ha bloccato il pagamento con un'eventuale nota esplicativa (**Inizio Blocco, Utente Blocco, Note Blocco**) così come data e utente sbloccante (**Utente Sblocco, Fine Blocco**), per entrambe le operazioni sono previsti specifici diritti utente nell'ARM. 
+
+### Ulteriori elementi:
+
+**Numero / anno partita**: assegnati automaticamente per identificare la partita;
+
+ 
+
+**Posizione partita**: combo box collegata ad una una tabella libera definibile dall'utente, consente di classificare le partite contabili fin dal momento della loro creazione; 
+
+**Note** (della partita): note libere che si possono anche legare automaticamente in causale contabile alla descrizione di dettaglio del sottoconto così come inserite in contabilità. 
+
+ 
+
+**Agente**: in questo campo è possibile agganciare l'agente di riferimento per la partita: questo viene valorizzato automaticamente sulla base dell'agente inserito nella fattura di vendita all'atto della contabilizzazione (nel caso siano presenti più agenti, sarà assegnato quello con provvigioni superiori). 
+
+**Data Rif / N. Rif**: Campi ripresi dalla data documento  e numero documento nella registrazione contabile (se presenti, altrimenti ripresi da data/numero registrazione), premettono di raggruppare e filtrare le partite/settlement riferite allo stesso documento (ad esempio una nota di credito che si riferisce ad una fattura, per visualizzare il partitario tutto insieme).
+
+**Cig** e **Cup**: ripresi dalla fattura di vendita, ma possono anche esser scritti a mano (tramite combo box) Si veda **[documentazione sui campi in fattura](/docs/sales/sales-invoices/invoicing/header).**
+
+**Modelli di riferimento** e **Numero di riferimento**: campi solitamente non utilizzati in Italia, tipici della Croazia (dove quando l'azienda emette la fattura ad ogni scadenza associa un tipo/codice identificativo della rata, che il cliente poi riporta nel pagamento e la banca riporta nel movimento d'incasso: dall'estratto conto bancario, quindi, facilmente si può risalire alla rata chiusa. Il campi rappresentano un riferimento anche a seguito di una futura implementazione di importazione movimenti bancari).
+
+**Ritardo medio giorni di pagamento**: Non utilizzato in Italia: riprende il valore dei giorni di ritardo dell'anagrafica cliente ma è modificabile anche manualmente. Può essere utilizzato nella simulazione di cash flow.
+
+
+
+| Funzione | Significato |
 | --- | --- |
-| Save | Button to save record. |
-| New Record | Button to create a new record. |
-| Insertion Parameters | It refers to the enter parameters of the first note. |
-| Open Register | Button to recall the register management of the selected detail account, or the search of another register. |
-| Delete Maturity Values | Button to delete the maturity values automatically created according to the payment modality inserted. |
-| Delete Payments | Button to delete the payment solution, automatically suggested by the register or manually inserted. |
-| Recompute Maturity Values | Button to recalculate the maturity value that has been manually forced. |
-| Group Maturity Values | Button to group maturity values with more than one maturity value with the same due date. |
+| Cancella le partite | Pulsante per cancellare la partita creata in automatico in base alla tipologia di pagamento inserita. |
+| Cancellazione dalla griglia dei pagamenti | Pulsante per cancellare la soluzione di pagamento, proposta in automatico dall'anagrafica, o inserita manualmente. |
+| Ricalcola partite | Pulsante per ricalcolare la partita forzata manualmente. |
+| Raggruppa partite | Pulsante per raggruppare le partite in presenza di più partite con stessa data scadenza. |
 
-
-
-| Function | Meaning |
-| --- | --- |
-| Document Manager | Button to connect to document management. |
 
 
 
