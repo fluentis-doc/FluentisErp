@@ -1,30 +1,26 @@
 ---
-title: Generazione solleciti
+title: Dunning Letters Generation
 sidebar_position: 1
 ---
 
-Da questa maschera si procederà alla generazione solleciti con la caratteristica di poter impostare un livello di sollecito che andrà oltre l'ordine logico di priorità che invece caratterizza la generazione automatica solleciti. 
-E' possibile inoltre selezionare manualmente le partite da sollecitare dopo averle filtrate avendo di fatto un maggiore controllo sull'operazione.
+From this screen, dunning letters will be generated with the feature of being able to set a level of dunning letter that will go beyond the logical order of priority, which instead characterizes the automatic generation of dunning letters. It is also possible to manually select the mat. values to remind after filtering them, thus having greater control over the operation. 
 
+To proceed, it is necessary, in the lower part of the screen, to assign the creation date of the dunning letters and select the type of dunning letters (previously coded in the *dunning letters Types* table) from the combo box. The assignment of a specific level of dunning letter (via the combo box ***Dun. Letters Nr.***) is optional, in order to force the creation beyond the logical order of priority. Normally, in fact, mat. values that have never been dunned will have a priority 1 dunning letter, those already dunned will pass to a new dunning letter of priority 2, and so on for the successive ones.
 
-Per procedere è necessario, nella parte inferiore della maschera, assegnare la data di creazione dei solleciti e selezionare il tipo di sollecito (precedentemente codificato nella tabella *Tipi solleciti*) dalla combo box.
-Opzionale è invece l'attribuzione di uno specifico livello di sollecito (tramite la combo box ***N. solleciti***), al fine di forzare la creazione oltre l'ordine logico di priorità. Normalmente, infatti, le partite mai sollecitate avranno il sollecito di priorità 1, quelle già sollecitate passeranno ad un nuovo sollecito di priorità 2 e via di seguito per le successive.
+The dunning letter date affects the creation as it must respect the parameters present in the type of dunning letter and in the dunning letter number, such as the days of delay and the *days* that determine the expiration of the potential previous dunning letter. If the dunning letter date is not valid concerning the parameters for the selected mat. value, the creation command will not execute any dunning letter.
 
-La data del sollecito influisce sulla creazione inquanto deve rispettare i parametri presenti nella tipologia del sollecito e nel numero del sollecito quali i giorni di ritardo ed i *giorni* che determinano la scadenza dell'eventuale sollecito precedente.
-Se la data sollecito non è valida rispetto ai parametri per la partita selezionata, il comando di creazione non eseguirà alcun sollecito.
+FILTER FIELDS:
 
-CAMPI DI FILTRO:
+**Account / Detail account:** refers to the holder of the mat. values
 
-**Conto / sottoconto:** riferito all'intestatario delle partite
+**Agent:** to filter the agent that is within the customer contact 
 
-**Agente:** per filtrare l’agente che è dentro l’anagrafica cliente
+**Agent from Dunned maturity values:** filters the mat. values with the agent entered in the mat. value, since it in turn is valued during the accounting of sales invoices with the main agent present in the document, that is, the one with the highest amount in the case of multiple agents valued.
 
-**Agente da partite sollecitate:** filtra le partite con l’agente inserito nella partita, dato che a sua volta si valorizza alla contabilizzazione fatture di vendita con l’agente principale presente nel documento ovvero quello con importo più alto nel caso di più agenti valorizzati.
+FIELDS RELATED TO MAT. VALUES TO BE RESEARCHED:
+Document No., Mat. Val Position, From / To Document date, From / To Due date, Mat. value year, number ... Document type, Finance category (in customer contact), Payment type
 
-CAMPI RELATIVI ALLE PARTITE DA RICERCARE:
-Nr Documento, Posizione partita, Da / A Data documento, Da / A data scadenza, anno partita, numero ... Tipo documento, Categoria amministrativa (in anagrafica cliente), Tipo pagamento
+FIELDS RELATED TO THE PREVIOUS DUNNING LETTER REFERENCES ON ALREADY DUNNES MAT. VALUE:  
+Dunning letter type, FROM / TO Dun. letter date, FROM / TO due date (dunning letter), Dun. letter no., Reference...  
 
-CAMPI RELATIVI AI RIFERIMENTI SOLLECITO PRECEDENTE SU PARTITE GIA? SOLLECITATE
-Tipo Sollecito, DA / A data sollecito, DA / A Data scadenza (sollecito), Numero sollecito, Riferimento...
-
-TIPO PARTITE: Flag per estrarre non solo le classiche partite attive clienti ma anche quelle riferite ad esempio ai fornitori ecc....
+MAT. VALUE TYPE: Flag to extract not only the classic active customer mat. value but also those related, for example, to suppliers, etc.

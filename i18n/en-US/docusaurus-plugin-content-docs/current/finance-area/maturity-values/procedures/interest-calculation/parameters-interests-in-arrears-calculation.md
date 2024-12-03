@@ -1,32 +1,26 @@
 ---
-title: Parametri di calcolo interessi moratori
+title: Moratory Interests Calculation Parameters
 sidebar_position: 3
 ---
 
-Nella form sono presenti una lista di flag di selezione dei tipi di partite per le quali procedere al calcolo dei tassi di interesse, mentre in altro è presente un campo di filtro per codici di conto/sottoconto. Al di sotto di questo si deve impostare il tipo di tasso di default da applicare e i flag che guidano la logica di calcolo:
+In the form, there is a list of selection flags for the types of mat. values for which to proceed with the calculation of interest rates, while above there is a filter field for account/detail account codes. Below this, you need to set the default interest rate type to apply and the flags that guide the calculation logic:
 
-**Calcola per le partite chiuse nel periodo**: la procedura andrà a verificare le partite che sono diventate chiuse all'interno del range di date impostate e solo per queste andrà a calcolare il valore degli interessi, quindi per i pagamenti parziali non sarà conteggiato alcun interesse;
+**Calculate for closed mat. values of period**: the procedure will check the mat. values that have become closed within the set date range, and it will only calculate the interest value for these, so no interest will be calculated for partial payments;
 
-**Calcola per i pagamenti del periodo**: la procedura andrà a individuare i pagamenti registrati all'interno del range di date e su questi importi andrà a calcolare il valore degli interessi relativi: questa impostazione è quella consigliata.
+**Calculate on payments of period**: the procedure will identify the payments recorded within the date range and will calculate the corresponding interest value on these amounts: this setting is recommended.
 
-In caso non sia stato inserito nessun flag il calcolo andrà a valorizzare gli interessi relativi ai giorni di ritardo presenti nel range di date impostate.
+If no flags have been set, the calculation will value the interest related to the days of delay present in the specified date range.
 
-**Tipo documento** e **tipo pagamento**: sono ulteriori filtri di individuazione delle partite sulle quali eseguire il calcolo interessi.
+**Document type** and **payment type**: are additional filters for identifying the mat. values on which to execute the interest calculation.
 
-Il radio button successivo consente di definire il tipo di tasso da utilizzare nel calcolo interessi:
+The next radio button allows defining the type of rate to use in the interest calculation:
 
-- calcolare gli interessi solo sui clienti per i quali è stato inserito in anagrafica una data accordo;
+- calculate interest only on customers for whom an agreement date has been entered in the register;
 
-- calcolare gli interessi sui clienti con un accordo secondo le impostazioni di anagrafica, il tasso di default inserito in alto per tutti gli altri;
+- calculate interest on customers with an agreement according to the register settings, the default rate entered above for all others;
 
-- calcolare gli interessi per tutti i clienti secondo il tasso d'interesse di default inserito in alto.
+- calculate interest for all customers according to the default interest rate entered above.
 
-Un ultimo flag, **Escludi effetti emessi**, già impostato di default, prevede l'esclusione dagli interessi delle partite pagate con effetti del modulo portafoglio effetti: tale impostazione serve, in particolare, per i tipi tasso sui quali è stato impostato il calcolo anche a sconto, in quanto la chiusura della partita cliente viene solitamente rilevata direttamente all'emissione della ricevuta bancaria/effetto cambiario.
+A final flag, **Exclude emitted bills**, already set by default, provides for the exclusion from interest of the mat. values paid with effects from the effects portfolio module: this setting is particularly useful for rate types where the calculation has also been set for discounts, as the closure of the customer mat. value is usually detected directly at the issuance of the bank receipt/bill of exchange.
 
-La procedura di calcolo si avvia con il tasto **Calcolo interessi**, nella ribbon bar.
-
-
-
-
-
-
+The calculation procedure is started with the **Interest Calculation** button in the ribbon bar.

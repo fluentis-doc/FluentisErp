@@ -1,19 +1,13 @@
 ---
-title: Tab Ripristino
+title: Restore Tab 
 sidebar_position: 2
 ---
 
-E' presente come al solito una scheda finale ‘Ripristino' per visualizzare in anteprima la registrazione effettuata o anche per annullarle attraverso l'apposito pulsante.
+As usual, there is a final tab ‘Restore' to preview the record made or to cancel it through the appropriate button.
 
 
 
-| Funzione | Significato |
+| Function | Extended Description |
 | --- | --- |
-| Ricerca | Pulsante per cercare il giroconto partite effettuati precedentemente. |
-| Ripristina giroconto partite | Pulsante per visualizzare e/o ripristinare il giroconto partite. |
-
-
-
-
-
-
+| Search | Button to search for the maturity values giro made previously. |
+| Restore maturity values giro | Button to view and/or restore the maturity values giro. |

@@ -3,17 +3,11 @@ title: Rollback
 sidebar_position: 4
 ---
 
-La scheda di Rollback consente di annullare la creazione: nel caso specifico lo stesso risultato si ottiene entrando nella ricerca partite sollecitate e cancellando direttamente da qui.
+The Rollback tab allows for the cancellation of the creation: specifically, the same result can be achieved by entering the search for dunned maturity values and deleting directly from there.
 
 
-| Funzione | Significato |
+| Function | Extended Description |
 | --- | --- |
-| Ricerca | Pulsante per la ricerca della creazione solleciti. |
-| Rollback tutti | Pulsante per cancellare tutti i solleciti della creazione selezionata. |
-| Rollback selezione | Pulsante per cancellare solo alcuni solleciti della creazione selezionata. |
-
-
-
-
-
-
+| Search | Button for searching the creation of dunned values. |
+| Rollback all | Button to delete all dunned values of the selected creation. |
+| Rollback selection | Button to delete only some dunned values of the selected creation. |

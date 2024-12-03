@@ -1,20 +1,14 @@
 ---
-title: Risultati
+title: Results
 sidebar_position: 4
 ---
 
-Nel tabulatore 'Risultati' è possibile visualizzare e cancellare il risultato dei calcoli effettuati, con la possibilità di poter filtrare l'interrogazione per conto/sottoconto e tipo di pagamento
+In the 'Results' tab, it is possible to view and delete the results of the calculations performed, with the option to filter the query by account/detail account and payment type.
 
 
 
-| Funzione | Significato |
+| Function | Extended Description |
 | --- | --- |
-| Ricerca risultati | Il pulsante ricerca i risultati di calcolo eseguiti. |
-| Cancella | Il pulsante cancella i risultati di calcolo eseguiti. |
-| Elimina dettaglio | Il pulsante cancella solo i dettagli selezionati di un determinato calcolo. |
-
-
-
-
-
-
+| Search results | The button searches for the results of the calculations performed. |
+| Delete | The button deletes the results of the calculations performed. |
+| Delete detail | The button deletes only the selected details of a specific calculation. |

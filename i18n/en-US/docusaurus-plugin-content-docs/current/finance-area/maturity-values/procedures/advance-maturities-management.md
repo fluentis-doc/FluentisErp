@@ -1,10 +1,10 @@
 ---
-title: Advanced Maturities Management
+title: Advanced Maturities Management 
 sidebar_position: 7
 ---
 
 :::note Path
-**Finance>Mat. Values>Procedures>Advanced Maturities Management**
+**Revenue office>Mat. Values>Procedures>Advanced Maturities Management**
 
 Note:
 For everything not detailed in this document regarding the common operation of forms, refer to the following link [Functionality, buttons, and common fields](/docs/guide/common).
@@ -12,8 +12,8 @@ For everything not detailed in this document regarding the common operation of f
 :::
 
 ---
-This procedure allows you to create advanced maturities to be paid or collected upon the issuance of the order confirmation (or upon delivery) and then invoice and account for the collected advance.
-These are clearly extra-accounting maturities as they exist before the issuance of the invoice.
+This procedure allows you to create advanced maturities to be paid or collected upon the issuance of the order confirmation (or upon delivery) and then invoice and account for the collected advance. These are clearly extra-accounting maturities as they exist before the issuance of the invoice.
+
 
 The commands for managing this functionality are located in this form as well as in the ***Summaries*** tab of the order.
 
@@ -36,11 +36,11 @@ import FileName from '/docs/import/sections/advance-maturities-creation-order.md
 
 ---
 
-### Management of Advance Payments within the Form.
+### Management of Advance Payments within the Form 
 
 In this form, in the first tab of the sales section, it is possible to create advance payments also for other customer orders and independently of the creation made from within the customer order, or payments on deliveries present in the second tab.
 
-In the ***Advance Management tab (tab Gestione anticipo)***, it is possible to roll back the recently created advance payment.
+In the ***Advance Management tab***, it is possible to roll back the recently created advance payment.
 
 ![](/img/it-it/finance-area/maturity-values/maturity-values/advance-maturities/advance-maturities-form.png)
 
@@ -65,11 +65,10 @@ Pressing it will display a new data request mask for the invoice:
 
 The proposed data are for today’s date and the description that will be reported in the item line, while the invoice type, VAT rate, and sales accounting code will need to be managed by the user from time to time.
 
-### Invoicing Collected Advance and Accounting
-Once the creation is confirmed, the invoice will open:
-the article line type is automatically set to type 6, i.e., advance invoice, so that it can then be available for reversal in the closing invoicing of the order.
+### Invoicing Collected Advance and Accounting 
+Once the creation is confirmed, the invoice will open: the article line type is automatically set to type 6, i.e., advance invoice, so that it can then be available for reversal in the closing invoicing of the order.
 
-:::tip **NOTE:**
 
+:::tip **NOTE:** 
 Once this invoice is accounted for, the peculiarity is that it will not create a new payment, but the extra-accounting advance payment will be retrieved (even if it is already in "Closed" status) and associated with the accounting record of this invoice:
 :::

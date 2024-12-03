@@ -1,27 +1,22 @@
 ---
-title: Tab Filtro
+title: Filter Tab 
 sidebar_position: 1
 ---
 
-| Funzione | Significato |
+| Function | Extended Description |
 | --- | --- |
-| Ricerca | Pulsante per cercare le partite relative al sottoconto da girare su un altro sottoconto. |
-| Contabilizza | Pulsante per operare la contabilizzazione del giroconto partite. |
+| Search | Button to search for the mat. values related to the detail account to transfer to another detail account. |
+| Accounting | Button to perform the accounting of the maturity values giro |
 
-### UTILIZZO GENERICO
+### GENERAL USE 
 
-La maschera si compone di una parte superiore di filtro, all'interno della quale è obbligatorio indicare il sottoconto sul quale ricercare le partite da girare, una griglia di selezione delle partite e in basso l'impostazione della causale di contabilità, le date di registrazione/competenza e il sottoconto sul quale riaprire le partite. In particolare, la causale di contabilità deve prevedere sia il flag di chiusura partite che quello di apertura. Il risultato sarà la rilevazione della chiusura delle partite selezionate per riaprirle, mantenendo gli stessi riferimenti d'origine, ma sul sottoconto di destinazione.
-
-
-### UTILIZZO NELL'AMBITO DELL'IVA IN SOSPENSIONE
-Questa procedura può essere utilizzata anche nell'ambito delle casistiche di IVA in sospensione (c.d. iva per cassa) che, come noto, prevede che, decorso un anno dalla fatturazione dell'operazione attiva o passiva, se non è avvenuto l'incasso o il pagamento (che avrebbero reso esigibile o detraibile l'iva relativa) si debba in ogni caso rendere l'iva imponibile o detrarre l'imposta sull'acquisto.
-
-Apponendo il flag (in basso) **Mostra scadenze sospese non chiuse alla data** e valorizzando opportunamente il campo **Data iva sospesa** vengono estratte soltanto le partite aperte riferite ad operazioni con iva in sospensione (identificate tramite le causali contabili appositamente configurate) alla data impostata nel campo di cui sopra.
-
-A questo punto, selezionandole ed impostando la causale contabile desiderata, premendo **Contabilizza**, si va a creare la registrazione di giro dai conti utilizzati per l'iva in sospensione ai conti per l'iva a debito o a credito, lasciando tuttavia (ecco la particolarità della procedura in commento)le partite aperte. 
-La registrazione contabile di incasso o pagamento rileverà automaticamente l'avvenuto giroconto e non farà scattare nuovamente la scrittura automatica per il giroconto dell'iva.
+The mask consists of an upper filter section, within which it is mandatory to indicate the detail account to search for the mat. values to transfer, a selection grid for the mat. values, and at the bottom the setting of the accounting reason, the record/competence dates, and the detail account to reopen the mat. values. In particular, the accounting reason must include both the flag for closing mat. values and that for opening. The result will be the recording of the closure of the selected mat. values to reopen them, maintaining the same original references, but on the destination detail account.
 
 
+### USE IN THE CONTEXT OF SUSPENDED VAT 
+This procedure can also be used in the cases of suspended VAT (so-called cash VAT) which, as is known, provides that after one year from the invoicing of the active or passive operation, if collection or payment has not occurred (which would have made the VAT collectible or deductible), the VAT must be declared taxable or the tax on purchases deducted.
 
+By checking the flag (at the bottom) **Show pending due dates not closed as of** and appropriately filling in the **Suspended VAT date** field, only the open mat. values related to operations with suspended VAT (identified via specifically configured ledger templates) on the date set in the aforementioned field will be extracted.
 
-
+At this point, by selecting them and setting the desired ledger template, pressing **Accounting** will create the transfer record from the accounts used for the suspended VAT to the accounts for VAT due or to be credited, while leaving (this is the particularity of the commented procedure) the mat. values open. 
+The ledger record of collection or payment will automatically record the transfer and will not trigger the automatic entry again for the VAT transfer.
