@@ -1,45 +1,45 @@
 ---
-title: Compensazione veloce
+title: Fast Compensation
 sidebar_position: 3
 ---
 
-:::note Percorso
-**Amministrazione>Partite>Procedure>Compensazione veloce**
+:::note Path 
+**Finance > Mat. Values > Procedures > Fast Compensation**
 
-Nota:
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Note:
+For everything not detailed in this document regarding the common functioning of forms, please refer to the following link [Custom Features, Buttons, and Fields](/docs/guide/common).
 
 :::
 
 ---
 
-La presente form permette, in maniera leggermente semplificata rispetto all'analoga *Compensazione partite*, di gestire la compensazione tra partite aperte di segno inverso (Dare / Avere) ed intestate al medesimo sottoconto (ad es. un cliente o un fornitore).
+This form allows for a slightly simplified management of compensation between open mat. values of opposite sign (Debit / Credit) that are assigned to the same detail account (e.g., a customer or a vendor), compared to the equivalent *Mat. Values Compensation*.
 
-Viene pertanto utilizzata in alternativa alla manovra di compensazione da eseguire direttamente in fase di registrazione contabile (ad esempio nel caso di registrazione di una fattura emessa o ricevuta dove in precedenza sia già avvenuto un incasso o un pagamento anticipato) e dunque anche in un secondo momento.
+It is therefore used as an alternative to the compensation operation to be performed directly during the ledger record phase (for example, in the case of recording an issued or received invoice where a collection or advance payment has previously occurred) and, thus, also at a later stage.
 
-**Le partite attive vengono rappresentate nella griglia superiore, mentre quelle passive nella griglia inferiore.**
-I pulsanti per avviare la ricerca delle partite sono posti come di consueto nella ribbon bar e vanno premuti entrambi per ottenere entrambe le tipologie di partita.
+**Active mat. values are represented in the upper grid, while passive itmat. values are in the lower grid.**
+The buttons to initiate the search for mat. values are placed, as usual, in the ribbon bar and both must be pressed to obtain both types of mat. values.
 
-Per gestire la ricerca tramite i consueti campi di filtro (ad esempio per ricercare solo le partite attive e le passive intestate ad un singolo fornitore) è necessario visualizzare i campi di filtro (a scomparsa) dagli **appositi tab posti sulla destra** (divengono visibili passando sopra con il mouse e possono essere eventualmente bloccati su visibile).
+To manage the search using the usual filter fields (for example, to search only for active and passive mat. values assigned to a single vendor), it is necessary to display the filter fields (which are collapsible) from the **appropriate tabs on the right** (they become visible when hovering the mouse over them and can be optionally locked to stay visible).
 
-Le partite che devono essere compensate tra di loro devono essere selezionate sia nella griglia superiore, sia in quella inferiore
+Mat. values that need to be compensated must be selected both in the upper grid and in the lower grid.
 
 
 ![](/img/it-it/finance-area/maturity-values/fast-compensation.png)
 
-Premendo il tasto ***Compensazione partite***, nella ribbon bar le partite selezionate vengono compensate tra di loro.
+Pressing the ***Maturity offsetting*** button in the ribbon bar will compensate the selected mat. values against each other.
 
-Nel caso di importi non coincidenti la partite di minore importo viene chiusa mentre quella maggiore rimane aperta per il valore residuo.
+In the case of non-matching amounts, the maturity with the lower amount will be closed, while the greater amount remains open for the remaining value.
 
-E' possibile anche specificare un valore parziale secondo il quale eseguire la compensazione. In questo caso espandere la sezione Contabilizzazione ed utilizzare il campo **Valore** (si veda ultima immagine in basso).
+It is also possible to specify a partial amount according to which the compensation should be executed. In this case, expand the Accounting section and use the **Value** field (see the last image below).
 
 
 ![](/img/it-it/finance-area/maturity-values/fast-compensation2.png)
 
 ---
 
-La compensazione può dar luogo, automaticamente, anche ad una scrittura contabile (ad esempio quando si compensano partite di uno stesso soggetto ma avente sottoconti distinti inquanto è sia cliente che fornitore e dunque devono essere compensati anche i saldi contabili).
+Compensation can also automatically result in an accounting entry (for example, when compensating mat. values of the same subject that have distinct detail accounts because they are both a customer and a vendor, and thus the accounting balances must also be compensated).
 
-Per attivare la contabilizzazione mettere il flag sul campo contabilizzazione in alto in corrispondenza delle tab della maschera ed espandere la sezione per impostare i parametri necessari (in particolare la causale di contabilità)
+To enable accounting, check the box in the accounting field at the top corresponding to the tabs of the form, and expand the section to set the necessary parameters (especially the ledger record template).
 
 ![](/img/it-it/finance-area/maturity-values/fast-compensation3.png)

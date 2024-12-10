@@ -1,30 +1,24 @@
 ---
-title: Creazione automatica solleciti
+title: Dunning Letters Automatic Issue
 sidebar_position: 2
 ---
 
-La presente procedura, alternativa rispetto alla analoga *Generazione solleciti*, agisce massivamente generando i solleciti per tutte le partite scadute e secondo i parametri (giorni di ritardo ecc...) previsti dalla tipologia di sollecito che si va a selezionare.
-Non avviene pertanto alcun controllo e selezione di dettaglio delle partite, come invece prevede la procedura di *Generazione solleciti*.
+This procedure, an alternative to the similar *Dunning Letters Issue*, acts massively by generating dunned values for all overdue items according to the parameters (days of delay, etc.) established by the type of dunned value that is selected. Therefore, there is no detailed control and selection of the mat. values, as is the case with the *Dunning Letters Issue* procedure.
 
-In questa maschera è possibile impostare una lista di clienti da non sollecitare, una lista di partite escluse da solleciti e il tipo di sollecito di default da creare.
 
-Una volta salvate queste impostazioni si attiverà il pulsante di creazione automatica: con questo l'applicativo procederà a creare i solleciti per tutte le partite che soddisfano i criteri di selezione impostati.
+In this interface, it is possible to set up a list of customers not to be dunned, a list of mat. values excluded from dunned values, and the default type of dunned value to create.
 
-Tali criteri vengono impostati nella sezione Parametri attraverso l'uso dei flag. E' inoltre possibile filtrare i clienti per ***Categoria amministrativa*** (campo che è presente nelle anagrafiche al fine di creare dei raggruppamenti).
+Once these settings are saved, the automatic creation button will be activated: with this, the application will proceed to create dunned values for all mat. values that meet the established selection criteria.
 
-Al termine della creazione le partite sollecitate sono visibili nella relativa form, mentre le lettere di sollecito sono stampabili ed inviabili mediante l'apposita stampa (Amministrazione>Partite>Stampe>Lettere di sollecito)
+These criteria are set in the Parameters section through the use of flags. It is also possible to filter customers by ***Finance Category*** (a field present in the registers to create groupings).
 
-| Funzione | Significato |
+At the end of the creation, the dunned maturity values are visible in the relevant form, while the dunning letters can be printed and sent using the specific print option (Finance > Mat. Values > Prints > DUnning Letters)
+
+| Function | Extended Description |
 | --- | --- |
-| Salva | Pulsante per salvare la generazione solleciti. |
-| Generazione solleciti | Pulsante per effettuare la generazione solleciti delle partite che soddisfano i criteri di selezione impostati. |
-| Ricerca cliente da escludere | Pulsante per  la ricerca dei clienti che si intendono escludere dalla generazione automatica solleciti. |
-| Cancella clienti | Pulsante per cancellare i clienti, dalla sezione lista clienti esclusi da solleciti. |
-| Ricerca partite da escludere | Pulsante per la ricerca delle partite che si intendono escludere. |
-| Cancella partite | Pulsante per cancellare le partite da escludere precedentemente selezionate. |
-
-
-
-
-
-
+| Save | Button to save the Dunning Letters Issue. |
+| Dunning Letters Issue | Button to perform the Dunning Letters Issue for mat. values that meet the established selection criteria. |
+| Search customer to be Ignored | Button to search for customers intended to be ignored from automatic Dunning Letters Issue. |
+| Delete customers | Button to delete customers from the excluded customer list for dunned values. |
+| Search maturity values to be ignored | Button to search for mat. values intended to be ignored. |
+| Delete maturity values | Button to delete previously selected mat. values to exclude. |

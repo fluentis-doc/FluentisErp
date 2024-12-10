@@ -1,119 +1,119 @@
 ---
-title: Gestione Liquidità
+title: Cash Management 
 sidebar_position: 6
 ---
 
-L’utilità della presente form è quello di dare un quadro semplice e veloce della situazione bancaria in modo da verificare la disponibilità per ogni conto bancario ed eventualmente spostare/ritardare l'impegno o cambiare la banca.
+The purpose of this form is to provide a simple and quick overview of the banking situation to verify the availability for each bank account and, if necessary, to transfer/delay the commitment or change the bank.
 
 
-### Modalità Operative: 
+### Operating Modes:
 
-Sono presenti due possibili modalità: con o senza l’aggancio ad un cash flow. 
+There are two possible modes: with or without linking to a cash flow.
 
-Tramite il cash flow è possibile prendere in considerazione anche i dati prelevati dal ciclo attivo/passivo, in modo da estendere il periodo di analisi oltre a quelle che sono le sole evidenze contabili dei partitari. 
+By using the cash flow, it is possible to consider data retrieved from the active/passive cycle, thus extending the analysis period beyond just the accounting evidence of the parties.
 
-Se non si usa il cash flow, si leggeranno solo saldi contabili (per le disponibilità) ed i partitari (per questo motivo la stessa entry di menù è stata collocata sia nel menu delle partite che nel modulo cash flow…).
+If cash flow is not used, only accounting balances (for availability) and the parties will be read (for this reason, the same menu entry has been placed in both the parties menu and the cash flow module…).
 
-:::danger Attenzione
-Quello che l’utente vede all’apertura della maschera è l’ultima situazione salvata, così come l’ha gestita l’ultima volta. Le modifiche che dovesse fare ai valori o ai dati, se vengono confermati con un nuovo salvataggio, andranno a storicizzare la situazione di partenza e a memorizzare i nuovi dati, che saranno riproposti riaprendo la maschera in seguito. 
-Le precedenti elaborazioni fatte vengono memorizzate nel database ma, attualmente, non è ancora prevista la possibilità di consultare le versioni precedenti.
+:::danger Attention
+What the user sees upon opening the mask is the last saved situation, as it was managed last time. Any changes made to the values or data, if confirmed with a new save, will historicize the starting situation and store the new data, which will be re-proposed when reopening the mask later. 
+Previous processing will be stored in the database, but currently, the ability to consult previous versions is not yet provided.
 :::
 
 
-### Logiche specifiche del cash flow
-Se è già presente un cash flow  calcolato ed apriamo per la prima volta la maschera di Gestione liquidità, l’utente può selezionare il cash flow dal quale recepire i dati elaborati.
+### Specific logic of the cash flow
+If a calculated cash flow is already present and we open the Cash Management mask for the first time, the user can select the cash flow from which to draw the processed data.
 
-Una volta selezionato un cash flow, Fluentis prenderà i saldi dei conti finanziari per inserirli nella griglia superiore delle disponibilità.
+Once a cash flow is selected, Fluentis will take the balances of the financial accounts to insert them into the upper availability grid.
 
 
-**ATTENZIONE: occorre aprire l’expander *Liquidità disponibile* per vedere la lista dei conti bancari, con i valori dei fidi e degli utilizzi nel portafoglio.**
+**ATTENTION: you need to open the *Available Liquidity* expander to see the list of bank accounts, along with the values of the credit lines and uses in the portfolio.**
 
 ![](/img/it-it/finance-area/maturity-values/cash-management-1.png)
 
-tutti gli altri valori saranno da riprendere dal pannello laterale *Cash flow*, ricercando con il pulsante di ***Ricerca cash flow***, selezionando le righe e aggiungendole con il pulsante ***Crea dal flusso di cassa***.
+All other values will be retrieved from the *Cash flow* side panel, searching with the ***Search cash flow*** button, selecting the rows, and adding them with the ***Create from cash flow*** button.
 
 ![](/img/it-it/finance-area/maturity-values/cash-management-2.png)
 
 ![](/img/it-it/finance-area/maturity-values/cash-management-3.png)
 
-L’utente può creare un nuovo cash flow tramite il pulsante ***Calcola cash flow***, che va a creare una nuova simulazione con i parametri di default salvati (in modo simile a quanto avviene per creare i dati da esportare su altri software di tesoreria come DocFinance: 
-l'elaborazione è equivalente all' apertura della maschera di *creazione automatica cash flow*, aggiunta di una descrizione e avvio dell'elaborazione senza aggiunta di altri parametri): 
+The user can create a new cash flow using the ***Calculate cash flow*** button, which creates a new simulation with the saved default parameters (similarly to how it works to create data to be exported to other treasury software like DocFinance: the processing is equivalent to opening the *automatic cash flow creation* mask, adding a description, and starting the processing without adding other parameters):
 
-in questo caso, completata l’elaborazione, Fluentis chiederà se si vogliono aggiornare i dati o meno nella *Gestione della liquidità* attiva. 
 
-In alternativa l’utente può anche creare dal cash flow una nuova simulazione e poi riaprire la maschera di gestione della liquidità: in questo caso, all’apertura della *Gestione della liquidità*, avrà un messaggio che chiede se si vuole aggiornare i dati con quelli del nuovo cash flow o meno.
+In this case, once processing is complete, Fluentis will ask whether to update the data or not in the active *Cash Management*.
 
-In entrambi i casi, se non si aggiornano i dati non succederà nulla, mentre, se vengono aggiornati, Fluentis andrà a verificare i cambiamenti alle righe precedenti, per andare ad aggiornare i valori: i dati della liquidità saranno aggiornati con quelli nuovi disponibili dal nuovo previsionale, mentre per quanto riguarda partite e altri flussi Fluentis verifica se la riga esiste ancora, in modo da cancellare il record se non esiste più la partita, oppure aggiornerà i valori (se il residuo è cambiato o la data scadenza è cambiata). 
+Alternatively, the user can also create a new simulation from the cash flow and then reopen the cash management mask: in this case, upon opening *Cash Management*, there will be a message asking whether to update the data with those from the new cash flow or not.
 
-Non vengono sovrascritte dai nuovi dati quelle impostazioni fatte a mano in precedenza dall’ utente (ad esempio nel campo ‘importo da pagare’, o nella data prevista) per non perdere tali dati.
+In both cases, if the data is not updated, nothing will happen, while if it is updated, Fluentis will verify the changes to the previous rows to update the values: the liquidity data will be updated with the new available data from the new forecast, while for parties and other flows, Fluentis checks if the row still exists to delete the record if the party no longer exists or will update the values (if the residual has changed or the due date has changed).
 
-Fatto questo l’utente potrà leggere dal pannello cash flow i nuovi record previsionali ed aggiungerli alla gestione corrente
+Manual settings made previously by the user (for example, in the 'amount to pay' field, or the expected date) are not overwritten by the new data to avoid losing such data.
 
-### Logiche specifiche quando non c’è il cash flow
-In questo caso non accade nulla all’apertura della maschera.
-L’utente ha a disposizione il pulsante ***Aggiorna partite*** che consente di fare un allineamento dei record di simulazione (la griglia in basso) rispetto alla situazione attuale delle partite. Se la partita è chiusa allora sarà eliminata dalla gestione, altrimenti sarà aggiornata con il nuovo residuo o le nuove date.
+Having done this, the user will be able to read the new forecast records from the cash flow panel and add them to the current management.
 
-### Logiche generali
-#### Griglia in alto
-L’utente può riprendere dal pannello *Record* i saldi dei conti che preferisce, per inserirli tra le disponibilità. Questo pannello mostra la *visualizzazione conti*, con le righe di dettaglio dei vari movimenti: selezionando una riga e premendo sul pulsante ***Creazione da registrazioni*** Fluentis prenderà il conto ed inserirà una riga con il <u>saldo ad oggi</u>, <u>**non con l’importo del movimento specifico selezionato**</u>.
-E' possibile anche inserire manualmente i record delle disponibilità, o sovrascrivere l’importo valuta e/o euro.
+### Specific logic when there is no cash flow
+In this case, nothing happens upon opening the mask. 
+The user has the ***Update parties*** button available, which allows for alignment of the simulation records (the grid at the bottom) with the current situation of the parties. If the party is closed, it will be removed from management; otherwise, it will be updated with the new residual or new dates.
 
-:::note Altri campi della griglia
+### General logics
+#### Upper Grid
+The user can retrieve the balances of the accounts they prefer from the *Records* panel to insert them among the availabilities. This panel shows the *account view*, with the detailed rows of the various movements: by selecting a row and pressing the ***Creation from records*** button, Fluentis will take the account and insert a row with the <u>balance as of today</u>, <u>**not with the amount of the specific selected movement**</u>.
+It is also possible to manually enter availability records or overwrite the currency and/or euro amount.
 
-**Linea di credito globale**: è il castelletto globale dell’anagrafica banca
+:::note Other fields of the grid
 
-**Linea di credito anticipi**: è il castelletto anticipi dell’anagrafica banca
+**Global credit line**: is the global envelope of the bank master data
 
-**Linea di credito effetti SBF**: è il castelletto sbf dell’anagrafica banca
+**Advance credit line**: is the advances envelope of the bank master data
 
-**Saldo Anticipi**: rappresenta un ‘Saldo anticipi su fattura’, è il totale presentato nel modulo *anticipi e incassi* (con data scadenza superiore ad ‘oggi’)
+**Collection credit line**: is the collection envelope of the bank master data
 
-**Saldo SBF**: rappresenta il ‘Saldo effetti presentati’, il totale degli effetti presentati nel portafoglio (con data scadenza superiore ad ‘oggi’)
+**Advance balance**: represents an 'Advance balance on invoice,' it is the total presented in the *advances and collections* module (with due date greater than 'today')
 
-**Residuo per Anticipi**: rappresenta il ‘Castelletto residuo per anticipi’, la differenza dei due valori precedenti relativi agli anticipi su fattura
+**Collection balance**: represents the 'Balance of presented bills,' the total of the bills presented in the portfolio (with due date greater than 'today')
 
-**Residuo per SBF**: rappresenta il ‘Castelletto residuo per presentazione sbf’, la differenza dei due valori precedenti relativi agli effetti
+**Free Value for Advance**: represents the 'Remaining envelope for advances,' the difference of the two previous values related to invoice advances
 
-**Liquidità disponibile**: somma di importo del saldo contabile + effetti presentati
+**Free Value for Collection**: represents the 'Remaining envelope for collection presentation,' the difference of the two previous values related to bills
 
-**Liquidità disponibile progressiva**: è un progressivo di riga del valore precedente. Il valore dell’ultima riga è quello che si vede in testata dell’expander.
+**Available liquidity**: sum of the accounting balance amount + presented bills
+
+**Progressive available liquidity**: is a progressive row of the previous value. The value of the last row is what is seen in the header of the expander.
 :::
 
-#### Griglia in basso
-Anche in questa griglia l’utente può inserire nuove righe manualmente, anche senza collegare alcun conto (ad esempio per rilevare uscite/entrate extracontabili come paghe o iva da versare). 
+#### Lower Grid
+In this grid, the user can also manually enter new rows, even without linking any account (for example, to record non-accounting incomes/expenses like salaries or VAT to be paid).
 
-I campi modificabili sono quelli della *Data prevista*, del *Numero sequenziale*, *importo monetario da pagare*, i flag *Escludi* e *Nascondi*. 
+The fields that can be modified are the *Scheduled date*, *Sequential number*, *amount to pay*, the flags *Exclude* and *Hide*.
 
-Le righe diventano rosse quando il residuo progressivo di riga va in negativo.
+The rows turn red when the row's progressive residual goes negative.
 
 ![](/img/it-it/finance-area/maturity-values/cash-management-4.png)
 
-La **data prevista** è la *data prevista* presente all'interno della partita (oppure è impostata uguale ad oggi se questa è inferiore): modificare il valore in questa griglia della presente form va ad aggiornare la data prevista all'interno della partita collegata (al salvataggio). 
+The **scheduled date** is the *scheduled date* present within the party (or is set to today's date if it is earlier): changing the value in this grid of the present form will update the scheduled date within the connected maturity (upon saving).
 
-Se la riga arriva dal cash flow sarà presa dalla data prevista che c’è nella riga di cash flow (o oggi se antecedente).
+If the row comes from the cash flow, it will take the scheduled date from the cash flow row (or today if before).
 
-La **data scadenza** è la data ufficiale della partita (o del flusso di cash flow).
+The **expiry date** is the official date of the maturity (or the cash flow).
 
-Il **Numero sequenziale** è quello che mette in ordine di pagamento le righe: lo si può cambiare scrivendo a mano il nuovo valore o indirettamente tramite il pulsante **Modifica la data prevista**. Questo pulsante fa riposizionare le partite selezionate dopo quelle che già esistono alla data impostata, modificandone il numero con un valore superiore.
+The **Sequential number** is what orders the payment of the rows: it can be changed by manually entering the new value or indirectly via the **Change expected date** button. This button repositions selected mat. values after those that already exist on the set date, changing their number to a higher value.
 
-**Conto/sottoconto** è editabile nelle righe manuali, non quelle che arrivano da partite/flussi
+**Account/Detail acc.** is editable in manual rows, not those that come from mat. values/flows.
 
-**Nota** è compilata con la ragione sociale del cliente/fornitore, altrimenti sarà scritta manualmente la descrizione del flusso extracontabile che si sta inserendo manualmente
-gli importi non sono modificabili se sono legati a righe che arrivano da partite/flussi finanziari
+**Note** is filled in with the trading name of the customer/supplier; otherwise, the description of the non-accounting flow being manually entered will be written manually. 
+The amounts are not modifiable if they are linked to rows that come from financial mat.values/flows.
 
-il campo ***conto*** più a destra è il conto della banca d’appoggio (presa dalla partita o dal flusso di cash flow),
+The **account** field furthest to the right is the support bank account (taken from the maturity or cash flow),
 
-il flag **Escludi**  esclude la riga dal calcolo, pur lasciandola visibile
+The **Exclude** flag excludes the row from the calculation while keeping it visible.
 
-il flag **Nascondi** imposta automaticamente anche il flag *escludi* e serve a non conteggiare la riga e a non renderla visibile (tramite il flag di filtro in testata **Escludi** **nascosti**,  togliendo tale flag tornano visibili).
+The **Hide** flag also automatically sets the *exclude* flag and serves to not count the row and make it invisible (via the filter flag in the header **Exclude** **hidden**; removing this flag makes them visible again).
 
-I campi più a destra sono collegati al [**Livello autorizzativo**](/docs/configurations/tables/finance/authorization-levels/) (**data autorizzazione, nome, descrizione, codice, descrizione e nota di autorizzazione**).
+The fields furthest to the right are linked to the [**Authorization Level**](/docs/configurations/tables/finance/authorization-levels/) (**authorization date, name, description, code, description and authorization note**).
 
-### Altre opzioni:
-- il filtro per **conto banca** (in testata), in modo da avere nella griglia superiore le disponibilità di quella banca e nella inferiore le relative righe canalizzate su questo istituto;
+### Other options:
+- the filter for **bank account** (in the header), to have in the upper grid the availabilities of that bank and in the lower grid the related rows channeled to this institution;
 
-- il pulsante **Cambia banca** per cambiare massivamente la banca di riferimento delle righe selezionate
+- the **Change bank** button to massively change the reference bank of the selected rows;
 
-- il pulsante **Autorizza le partite** , per procedere alle autorizzazioni (disponibile se l’utente può dare l’autorizzazione alla riga selezionata, (secondo il suo [**Livello autorizzativo**](/docs/configurations/tables/finance/authorization-levels/) già raggiunto)
+- the **Authorize maturity values** button, to proceed with the authorizations available if the user can give authorization to the selected row, (according to their already achieved [**Authorization Level**](/docs/configurations/tables/finance/authorization-levels/));
 
-- il pulsante **Crea pagamenti** che consente di creare la distinta del modulo *Pagamenti fornitori*, se le righe selezionate sono pagabili.
+- the **Create payments** button that allows creating the list from the *Vendors Payments* module if the selected rows are payable.
