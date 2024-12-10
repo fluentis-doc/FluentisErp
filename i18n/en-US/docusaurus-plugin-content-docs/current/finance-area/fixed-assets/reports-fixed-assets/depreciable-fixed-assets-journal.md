@@ -1,24 +1,45 @@
 ---
-title: Depreciable Fixed Assets Journal
+title: Libro cespiti ammortizzabili
 sidebar_position: 4
 ---
 
-The report mask of fixed assets journal enables the user to set the search filters during data extraction.
+La maschera di stampa del libro cespiti consente di definire i consueti filtri di ricerca all'estrazione dati.
 
-In particular it is important to notice that: usually the sold or destroyed fixed assets of the previous years compared to the reference year inserted will not be reported in report, whether not imposing the specific flag. At the same time it will be possible to exclude from report the fixed assets that have activity end date in register.
+![](/img/it-it/finance-area/fixed-assets/reports-fixed-assets/depreciable-fixed-assets-journal/image01.png)
 
-The definitive report flag will block header data of the various printed fixed assets registers, will block even the cancellation of the single printed line and will update the counter of pages for the reference year within financial accounting parameters. The cancellation of the definitive report can be performed by the enabled user from the “Financial Accounting Parameters” mask.
+Il flag **Categoria Cespite**, se attivo, consente di selezionare una o più (con il tasto Ctrl) categorie dalla griglia sottostante.
 
-It is important to notice some standard reports that can be linked to this procedure: report of “fiscal” fixed assets journal (to be used for customers who use the fiscal calculation) and report of fixed assets journal with initial values (that does not report all the historical detail of every fixed asset but a single initial summary line of start data of the required year and in addition the related detail).
+ 
 
-RIBBON BAR: the ribbon bar represents the Form menu, that is the area on which it is possible to perform actions linked to the procedure in use. The possible features list is the following:
+Nella parte destra: normalmente i cespiti venduti o distrutti negli anni precedenti all'anno di riferimento inserito non saranno più riportati in stampa, se non imponendo l'apposito flag. 
+
+Anche per i cespiti 'Cessati' è previsto un pulsante di inserimento nel report. Allo stesso modo saranno esclusi dalla stampa i cespiti che hanno una data di fine attività in anagrafica.
+
+![](/img/it-it/finance-area/fixed-assets/reports-fixed-assets/depreciable-fixed-assets-journal/image02.png)
+
+I flag ![](/img/it-it/finance-area/fixed-assets/reports-fixed-assets/depreciable-fixed-assets-journal/image03.png)
+
+**Non ammortizzati**
+
+**Parzialmente ammortizzati**
+
+**Totalmente ammortizzati**
+
+sono di default attivi per visualizzare tutte le tipologie di cespite, possono essere disattivati quelli relativi alle tipologie che si vuole nascondere.
+
+ 
+
+ 
+
+Il flag di **Stampa definitiva** andrà a bloccare i dati di testata delle varie anagrafiche cespiti stampati, andrà a bloccare anche la cancellazione della singola riga stampata e aggiornerà il contatore delle pagine per l'anno di riferimento all'interno dei parametri di contabilità generale. L'annullamento della stampa definitiva può essere eseguita, dall'utente abilitato, dalla maschera dei Parametri d contabilità generale.
+
+**Dati fiscali**: visualizza ulteriori colonne con i dati fiscali relativi agli ammortamenti.
 
 
 
-| Function | Meaning |
-| --- | --- |
-| Preview | Button to perform the print preview. |
-| Print | Button to print a document. |
+**Visualizza intestazione**: se disattivato non riporterà in stampa l'intestazione della stampa permettendo di stampare su moduli prestampati.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/0vMJpldI7fw" title="YouTube video player" frameborder="0" allowfullscreen= "true"></iframe>
 
 
 
