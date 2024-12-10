@@ -3,38 +3,24 @@ title: Moratory Interests Calculation Parameters
 sidebar_position: 3
 ---
 
-In the first tabulator on the left there is a list of selection flags regarding maturity values types for which to calculate interest rates, while on 'other' field there is a filter field per account/detail account codes. Below this, it is necessary to set the default rate type to be applied and flags that guide the calculation logic:
+In the form, there is a list of selection flags for the types of mat. values for which to proceed with the calculation of interest rates, while above there is a filter field for account/detail account codes. Below this, you need to set the default interest rate type to apply and the flags that guide the calculation logic:
 
-**Calculate per maturity values closed in period**: the procedure will verify the maturity values that became closed within the dates range set and it will calculate the interests value. So as regards partial payments no interest will be calculated;
+**Calculate for closed mat. values of period**: the procedure will check the mat. values that have become closed within the set date range, and it will only calculate the interest value for these, so no interest will be calculated for partial payments;
 
-**Calculate for payments of period: **the procedure will identify payments recorded within the dates range and on these amounts it will be possible to calculate the related interests value: this setting is recommended;
+**Calculate on payments of period**: the procedure will identify the payments recorded within the date range and will calculate the corresponding interest value on these amounts: this setting is recommended.
 
-In case that no calculation flag has been inserted, it will be necessary to valorize interests related to delay days that are on dates range set.
+If no flags have been set, the calculation will value the interest related to the days of delay present in the specified date range.
 
-**Document Type** and **Payment Type** are additional identification filters of maturity values on which to perform the interests calculation.
+**Document type** and **payment type**: are additional filters for identifying the mat. values on which to execute the interest calculation.
 
-The following radio button enables the user to set the rate type to be used during the interests calculation:
+The next radio button allows defining the type of rate to use in the interest calculation:
 
-- calculate interests only on customers for which an agreement date has been inserted into register;
+- calculate interest only on customers for whom an agreement date has been entered in the register;
 
-- calculate interests on customers with an agreement according to register settings and default rate inserted above for the others;
+- calculate interest on customers with an agreement according to the register settings, the default rate entered above for all others;
 
-- calculate interests for all customers according to default interest rate inserted above.
+- calculate interest for all customers according to the default interest rate entered above.
 
-A last flag, that has been already set on default, provides for the exclusion of paid maturity values from interests with bills of bills portfolio module: in particular, that specific setting is necessary for rate types on which the calculation to discount has been set, because the closing of customer maturity value is usually recorded directly during the bank receipt/bills of exchange issue.
+A final flag, **Exclude emitted bills**, already set by default, provides for the exclusion from interest of the mat. values paid with effects from the effects portfolio module: this setting is particularly useful for rate types where the calculation has also been set for discounts, as the closure of the customer mat. value is usually detected directly at the issuance of the bank receipt/bill of exchange.
 
-The calculation procedure consists as follows:
-
-RIBBON BAR: it represents the Form menu, that is the area in which it is possible to perform actions linked to the procedure in use. The list of features is the following:
-
-
-
-| Function | Meaning |
-| --- | --- |
-| Calculate Interests | The button performs the calculation according to parameters set. |
-
-
-
-
-
-
+The calculation procedure is started with the **Interest Calculation** button in the ribbon bar.
