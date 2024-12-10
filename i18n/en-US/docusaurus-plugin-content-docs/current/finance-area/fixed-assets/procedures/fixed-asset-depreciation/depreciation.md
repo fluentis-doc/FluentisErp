@@ -1,21 +1,30 @@
 ---
-title: Depreciation
+title: Ammortamento
 sidebar_position: 2
 ---
 
-First of all, it is very important to manage the 'incremental operations' flag: considering that the depreciation procedure is managed according to different logics, if the company uses the incremental option for its categories it will be necessary to import this flag in order to identify data. On the contrary,  at the base of the mask, it is necessary to set the reference calculation year: usually it will be edited in order to insert year previous than the current one. The calculation of depreciations of X year will not be allowed when depreciations of X-1 year have not been accounted.
+Innanzitutto è di fondamentale importanza gestire il flag **Operazioni incrementali**: essendo la procedura di ammortamento gestita con logiche differenti, nel caso l'azienda utilizzi l'opzione incrementale per le sue categorie sarà necessario importare questo flag al fine di individuare i dati. 
 
- Once having performed the data search, it is possible, line by line, to force the number of application days as well as the depreciation percentage: it is recommended to calculate these particular cases directly within the single fixed asset tab or to edit directly table of fixed assets categories in order to perform a quick calculation with a total selection of lines. An alternative option to be used, if the user wants to use different percentages among fixed assets, can be the parameters definition of fixed assets module called 'Percentage on single fixed asset', which enables the user to set in header of each fixed asset a depreciation percentage to be used.
+Pertanto, se sono presenti sia categorie cespiti con l'opzione incrementale, sia categorie senza l'opzione, l'ammortamento dei cespiti dovrà essere effettutato in due tempi seguendo la ricerca con e senza il flag in commento.
 
-RIBBON BAR: it represents the Form menu, that is the area in which it is possible to perform actions linked to the procedure in use. The list of features is the following:
+![](/img/it-it/finance-area/fixed-assets/procedures/fixed-asset-depreciation/depreciation/image01.png)
+
+Alla base della maschera, invece, va impostato l'anno di rifermento del calcolo: normalmente sarà da modificare al fine di inserire l'anno precedente all'attuale. Non è consentito il calcolo degli ammortamenti dell'anno X quando non siano stati contabilizzati gli ammortamenti dell'anno X-1.
+
+![](/img/it-it/finance-area/fixed-assets/procedures/fixed-asset-depreciation/depreciation/image02.png)
+
+ Una volta effettuata la ricerca dei dati vediamo che è possibile, riga per riga, andare a forzare il numero di giorni di applicazione così come la percentuale d'ammortamento: si consiglia, in realtà, di effettuare il calcolo di questi casi particolari direttamente all'interno della singola scheda cespite oppure di modificare direttamente la tabella delle categorie cespiti al fine di effettuare un calcolo veloce con una selezione totale delle righe. 
+
+Una opzione alternativa da utilizzare, se si vogliono utilizzare percentuali differenti fra i vari cespiti, può essere la definizione del **[parametro del modulo cespiti ](/docs/configurations/parameters/finance/fixed-assets-parameters)** denominato **Percentuale su singolo cespite**, che consente di definire in testata di ogni cespite una percentuale di ammortamento da utilizzare.
+
+![](/img/it-it/finance-area/fixed-assets/procedures/fixed-asset-depreciation/depreciation/image03.png)
 
 
 
-| Function | Meaning |
+| Funzione | Significato |
 | --- | --- |
-| Search | It searches the list of depreciations to be calculated. |
-| Depreciation | It performs the calculations for the selected lines. |
-| View Fixed Asset | It views the fixed asset register whose depreciation is selected in the grid. |
+| Ricerca | Ricerca la lista degli ammortamenti da calcolare. |
+| Ammortamento | Esegue il calcolo per le righe selezionate. |
 
 
 
