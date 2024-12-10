@@ -3,19 +3,33 @@ title: Intra1
 sidebar_position: 2
 ---
 
-Below these general data there is the fields list of model header: as far as possible the basic data are compiled according to what has been inserted into the 'Company' table. The flags that maintain a manual management regard: the first presentation and activity suspension or VAT rate variation as well as the subject section of presentation.
+La tab Intra 1 contiene i dati del frontespizio del modello: i dati di base sono compilati secondo quanto inserito nella tabella Società.
 
-At the base of the window there are summary fields of bis, ter, quater and quinquies sections of model; lastly the selection related to the periodicity changes related to the declaration in use.
+Restano a gestione manuale i flag di prima presentazione e quello di cessazione dell'attività o variazione partita IVA, così come la sezione del soggetto delegato alla presentazione.
 
-RIBBON BAR: it represents the Form menu, that is the area in which it is possible to perform actions linked to the procedure in use. The list of features is the following:
+![](/img/it-it/finance-area/declarations/intrastat/create-intrastat1/intra1/image01.png)![](/img/it-it/finance-area/declarations/intrastat/create-intrastat1/intra1/image02.png)
+
+ 
+
+Alla base della finestra sono presenti campi di riepilogo delle sezioni bis, ter, quater e quinquies del modello; 
+
+![](/img/it-it/finance-area/declarations/intrastat/create-intrastat1/intra1/image03.png)
+
+infine la selezione relativa agli eventuali cambi di periodicità presenti nella dichiarazione in uso.
+
+![](/img/it-it/finance-area/declarations/intrastat/create-intrastat1/intra1/image04.png)
 
 
 
-| Function | Meaning |
+
+
+
+
+| Funzione | Significato |
 | --- | --- |
-| Save | Button through which it is possible to save the declaration. |
-|  [Automatic Creation](/docs/finance-area/declarations/intrastat/automatic-creation-intrastat1/automatic-creation)  | Button to refer to the guided procedure regarding data retrieve of sales area. |
-|  [Creation from Records](/docs/finance-area/declarations/intrastat/create-from-records-intrastat1/create-from-records-intrastat1-intro)  | Button to refer to the guided procedure regarding data retrieve from ledger records. |
+| Salva | Pulsante attraverso il quale salvare la dichiarazione. |
+|  [Creazione automatica](/docs/finance-area/declarations/intrastat/automatic-creation-intrastat1/automatic-creation)  | Pulsante che richiama la procedura guidata di ripresa dati dall'area vendite. |
+|  [Creazione da registrazioni](/docs/finance-area/declarations/intrastat/create-from-records-intrastat1/create-from-records-intrastat1-intro)  | Pulsante che richiama la procedura guidata di ripresa dati dalle registrazioni di contabilità. |
 
 
 

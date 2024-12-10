@@ -3,21 +3,18 @@ title: Intra1 ter
 sidebar_position: 4
 ---
 
-The ter section of intrastat declarations contains adjustments related to previous periods declarations, relating to the assignment of goods. The section is compiled by the procedure automatically, but it is possible to edit and to integrate it manually.
+La sezione 'Ter' delle dichiarazioni Intrastat contiene le rettifiche relative a dichiarazioni di periodi precedenti, relativo alla cessione di beni. La sezione è compilata dalla procedura automaticamente, ma ne è consentita la modifica e l'integrazione manuale.
 
-At the base of the section there is the grouping button: the intrastat declaration has to be grouped according to the uniformity of line data.
-
-RIBBON BAR: it represents the Form menu, that is the area in which it is possible to perform actions linked to the procedure in use. The list of features is the following:
+Nella ribbon bar è presente il pulsante di raggruppamento delle righe sulla base dei dati della controparte.
 
 
 
-| Function | Meaning |
+| Funzione | Significato |
 | --- | --- |
-| Save | Button to save the declaration. |
-|  [Automatic Creation](/docs/finance-area/declarations/intrastat/automatic-creation-intrastat1/automatic-creation)  | Button to refer to the guided procedure of data retrieve from sales area. |
-|  [Creation from Records](/docs/finance-area/declarations/intrastat/create-from-records-intrastat1/create-from-records-intrastat1-intro)  | Button to refer to the guided procedure of data retrieve from ledger records. |
-| Create New Detail | Button to create a new detail line manually. |
-| Delete | Button to delete the selected detail line. |
+| Salva | Pulsante attraverso il quale salvare la dichiarazione. |
+|  [Creazione automatica](/docs/finance-area/declarations/intrastat/automatic-creation-intrastat1/automatic-creation)  | Pulsante che richiama la procedura guidata di ripresa dati dall'area vendite. |
+|  [Creazione da registrazioni](/docs/finance-area/declarations/intrastat/create-from-records-intrastat1/create-from-records-intrastat1-intro)  | Pulsante che richiama la procedura guidata di ripresa dati dalle registrazioni di contabilità. |
+| Cancella | Pulsante per cancellare la riga di dettaglio selezionata. |
 
 
 
