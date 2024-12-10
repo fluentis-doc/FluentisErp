@@ -1,129 +1,127 @@
 ---
-title: Schedulazione a capacità finita
+title: Planificare la capacitate finită
 sidebar_position: 4
 ---
 
-:::important A cosa serve
-La funzione di Schedulazione a capacità finita di Fluentis è uno strumento avanzato progettato per ottimizzare la gestione delle risorse produttive all'interno di un'azienda manifatturiera. Questo modulo viene integrato all'interno del sistema ERP di Fluentis e consente di pianificare e gestire le attività produttive considerando le reali capacità delle risorse disponibili, come manodopera, macchinari e materiali. Grazie a tale funzionalità, le aziende possono minimizzare i tempi di inattività, migliorare l'efficienza operativa e rispondere con maggiore flessibilità alle variazioni della domanda.
+:::important Utilizare
+Funcționalitatea **Planificare la capacitate finită** din Fluentis este un instrument avansat, conceput pentru a optimiza gestionarea resurselor productive într-o companie de producție. Acest modul este integrat în sistemul ERP al Fluentis și permite planificarea și gestionarea activităților productive, având în vedere capacitățile reale ale resurselor disponibile, cum ar fi forța de muncă, utilajele și materialele. Datorită acestei funcționalități, companiile pot minimiza timpii de nefuncționare, îmbunătăți eficiența operațională și răspunde cu o flexibilitate mai mare la variațiile cererii.
 
-La schedulazione a capacità finita tiene conto delle limitazioni fisiche delle risorse, permettendo di creare piani di produzione realistici e attuabili. Inoltre, offre strumenti analitici per prevedere eventuali colli di bottiglia e consente l'ottimizzazione dell'allocazione dei compiti, integrandosi con altre funzionalità dell'ERP per una visione olistica delle operazioni aziendali. Questo sistema aiuta le aziende a bilanciare in modo efficace la domanda dei clienti con le capacità produttive, migliorando in ultima analisi la redditività e la soddisfazione del cliente.
+Planificarea la capacitate finită ia în considerare limitările fizice ale resurselor, permițând crearea planurilor de producție realiste și realizabile. În plus, oferă instrumente analitice pentru a prezice eventualele blocaje și permite optimizarea alocării sarcinilor, integrându-se cu alte funcționalități ale ERP-ului pentru o viziune completă a operațiunilor de afaceri. Acest sistem ajută companiile să echilibreze eficient cererea clienților cu capacitățile de producție, îmbunătățind în cele din urmă rentabilitatea și satisfacția clientului.
 :::
 
-La schedulazione di produzione a capacità finita permette di capire quanto lavoro può essere espresso in un periodo di tempo definito, considerando le limitazioni di alcune risorse. L’obiettivo finale è quello di garantire la maggiore efficienza dei ritmi produttivi lungo tutta la filiera interna allo stabilimento, ottimizzando i tempi e riducendo i costi dei centri di lavoro.  
-Con questa modalità di pianificazione è possibile creare sequenze ottimali di lavorazione su ogni singolo Centro di lavoro ottenendo la loro massima saturazione.
+Planificarea producției la capacitate finită permite înțelegerea orelor de lucru care poate fi realizată într-o perioadă de timp definită, având în vedere limitările unor resurse. Obiectivul final este de a asigura cea mai mare eficiență a ritmurilor de producție pe întreaga linie internă a fabricii, optimizând timpii și reducând costurile centrelor de lucru.  
+Cu această modalitate de planificare, este posibil să se creeze secvențe optime de procesare pe fiecare *Centru de lucru*, obținând astfel o saturație maximă a acestora.
 
-## Commesse
+## Comenzi
 
-Il tab commesse mostra solamente le commesse che si trovano in stato non schedulato.
+Acest tabel afișează doar comenzile care sunt cu statusul *neplanificată*.
 
-*Pulsanti specifici*:
+*Butoane specifice*:
 
-> **Schedulazione F.C.S.**: consente al sistema di schedulare a capacità finita le fasi di lavorazione dei documenti previsti;  
-> **Modifica data commessa**: questo pulsante consente di modificare la data commessa;  
-> **Cambia priorità**: tramite questa funzionalità si può variare la piorità delle commesse selezionate;    
-> **Parametri MRP**: consente di aprire i parametri MRP delle commesse selezionate;    
-> **Distinta base**: consente di aprire le distinte basi delle commesse selezionate;    
-> **Ciclo di lavoro**: consente di aprire i cicli di lavoro delle commesse selezionate.        
+> **Planificare F.C.S.**: permite sistemului să planifice la capacitate finită etapele de procesare ale documentelor prevăzute;  
+> **Modifică dată comandă**: permite modificarea datei comenzii;  
+> **Schimbă prioritatea**: permite modificarea priorității comenzilor selectate;    
+> **Parametri MRP**: permite deschiderea parametrilor MRP pentru comenzile selectate;    
+> **Lista componente**: permite deschiderea listelor de componente ale comenzilor selectate;    
+> **Ciclul de lucru**: permite deschiderea ciclurilor de lucru ale comenzilor selectate.        
 
-*Filtri specifici*:
+*Filtre specifice*:
 
-**Tipo commessa**: tramite questa combo è possibile andare a selezionare il tipo di commessa che si vuole visualizzare, se le commesse monoprodotto, le commesse multiprodotto oppure entrambe;
+**Tip comandă**: permite selectarea tipul de comandă care va fi afișat: monoprodus, multiprodus sau ambele;
 
-**Sito produzione**: si possono andare a visualizzare le commesse in base al sito di produzione in cui vanno prodotte, selezionandolo tramite l'apposita combo;
+**Locație producție**: afișează comenzile în baza locului unde se produc, după selectarea acestuia din combo-box;
 
-*Campi specifici nella griglia dei Risultati*
+*Câmpuri specifice*
 
-**Data suggerita**: come spiegato nell'articolo relativo ai parametri generali di schedulazione, attivando un particolare flag chiamato  [Controlla doc in ritardo con ATP](/docs/planning/ms-master-scheduling/general-schedule) lo schedulatore andrà ad eseguire un ragionamento tale per cui se anche uno solo degli ordini che vengono schedulati e generati risulta essere in ritardo rispetto alla data prevista il sistema andrà a cancellare tutti gli ordini creati e ripartirà a generali dalla data MS che viene definita sempre nei parametri e che si attiva solo settando il flag controllo doc in ritardo con ATP e andrà a proporre la nuova data per le commesse proprio nel campo *Data suggerita* presente nella griglia di risultato.
+**Data sugerată**: cum am precizat în documentul *Parametrii generali de planificare*, activând parametrul [Verifică document în întârziere cu ATP](/docs/planning/ms-master-scheduling/general-schedule), planificatorul va verifica dacă chiar și unul dintre ordinele care sunt planificate și generate este întârziat față de data prevăzută și va șterge toate ordinele create, apoi le va genera de la data MS care este inserată întotdeauna în parametrii (care se activează setând opțiunea *Verifică document în întârziere cu ATP*) și va propune data nouă pentru comenzi în câmpul *Data sugerată* din tabelul rezultatelor.
 
-### Procedura schedulazione F.C.S.    
+### Procedură planificare F.C.S.    
 
-Dal tab **Commesse** è possibile selezionare le commesse non schedulate che si vogliono prendere in considerazione. 
-Premendo il pulsante **Schedulazione F.C.S.** la procedura eseguirà una prima schedulazione a capacità infinita sulle commesse non schedulate appena selezionate, utilizzando i parametri presenti nel tab **Parametri generali** e di seguito eseguirà una schedulazione a capacità finita su tutti i documenti indicati nei **Parametri schedulazione a capacità finita**.
+În tab-ul **Comenzi** puteți selecta comenzile neplanificate pe care doriți să le considerați. 
+Cu butonul **Planificare F.C.S.**, procedura va efectua o primă planificare la capacitate infinită asupra comenzilor neplanificate recent selectate, utilizând parametrii prezenți în tab **Parametri generali** și apoi va efectua o planificare la capacitate finită asupra tuturor documentelor indicate în **Parametrii planificare la capacitate finită**.
 
-Come nel caso della schedulazione generale, gli ordini pianificati si potranno visualizzare nella form [Ricerca ordini pianificati](/docs/planning/ms-master-scheduling/planned-orders/search-planned-orders).
+Ca în cazul planificării generale, ordinele planificate vor putea fi vizualizate în form [Caută ordine planificate](/docs/planning/ms-master-scheduling/planned-orders/search-planned-orders).
 
-Per visualizzare tutte le schedulazioni effettuate e i relativi errori / warning creati per ogni  commessa, basterà spostarsi nel tab **Storico**.    
+Pentru a vizualiza toate planificările efectuate și erorile / avertizările corespunzătoare create pentru fiecare comandă, este suficient să accesați tab-ul **Istoric**.    
 
-## Parametri di schedulazione generale
+## Parametrii planificare generală
 
-Tutti i parametri relativi alla fase di schedulazione generale posso essere consultati direttamente nell'articolo relativo alla [Schedulazione generale](/docs/planning/ms-master-scheduling/general-schedule) nella sezione **Parametri di schedulazione generale**.        
+Toți parametrii referitori la faza de planificare generală pot fi consultați în documentul [Planificare generală](/docs/planning/ms-master-scheduling/general-schedule).        
 
-## Parametri schedulazione a capacità finita   
+## Parametrii planificare la capacitate finită   
 
-:::note Nota
-Prima di procedere con la schedulazione F.C.S., è importante settare all'interno di questo tab i parametri  da seguire per eseguire la schedulazione a capacità finita.
+:::note Notă
+Este important să se seteze în acest tab parametrii de respectat pentru a efectua planificarea la capacitate finită.
 ::: 
 
-**Schedulazione al più presto o al più tardi**: questi flag sono disabilitati ed è attivo sempre e solo il flag *Al più presto*, in quanto la schedulazione a capacità finita cerca di saturare al più presto i centri di lavoro;        
+**Planificare mai devreme sau mai târziu**: aceste opțiuni sunt dezactivate. Este activă întotdeauna doar opțiunea *Mai devreme*, deoarece planificarea la capacitate finită încearcă să satureze cât mai repede centrele de lucru;        
 
-**Dalla data**: permette di definire la data da cui iniziare la schedulazione a capacità finita; è proposta come *Data odierna* ma può essere incrementata per un numero di giorni pari al valore che si può inserire dai *Parametri MPS* nel campo *Giorni prossima schedulazione*
+**De la data**: permite definirea datei de la care să înceapă planificarea la capacitate finită; este propusă ca *Data curentă* dar poate fi majorată cu un număr de zile egal cu valoarea care poate fi introdusă din *Parametrii MPS* în câmpul *Zile următoarea planificare*.
 
-**Operazione su ordini pianificati Ricalcolo tempo**: il flag è sempre attivo e permette di ricalcolare il tempo negli ordini pianificati;    
+**Operație pe ordine planificate Recalculare timp**: este întotdeaună activă și permite recalcularea timpului în ordinele planificate;    
 
-**Ricalcolo ordini di produzione**: permette di selezionare quali ordini di produzione, tra *Lanciati* e/o *Esecutivi*, deve prendere in considerazione la schedulazione F.C.S.;    
+**Recalculare ordine de producție**: permite selectarea ordinelor de producție, *Lansate* și/sau *Executive*, care trebuie luate în considerare de planificarea F.C.S.;    
 
-**Ricalcolo fasi**: permette di selezionare quali fasi di produzione, *Non iniziate* e/o *Già iniziate*, deve prendere in considerazione la schedulazione F.C.S.;    
+**Recalculare faze**: permite selectarea fazelor de producție, *Neîncepute* și/sau *Deja începute*, care trebuie luate în considerare de planificarea F.C.S.;    
 
-**Modalità di ricalcolo fasi già iniziate**: permette di segliere la modalità con cui la procedura di schedulazione F.C.S. deve ricalcolare la parte rimanente da eseguire delle fasi già iniziate. Si tratta di definire se dare la priorità al tempo lavorato flaggando *Tempo già lavorato e poi Quantità già prodotte*, oppure dare la priorità alla quantità prodotta con il flag *Quantità già prodotte e poi Tempo già lavorato*;     
+**Modalitate pentru recalculare faze deja începute**: permite alegerea modului în care procedura de planificare F.C.S. trebuie să recalculeze partea rămasă de executat a fazelor deja începute. Permite alegerea priorității între timpului lucrat, marcând *Timp deja lucrat* și apoi *Cantitate deja produsă* sau se va da prioritate cantității produse cu opțiunea *Cantitate deja produsă* și apoi *Timp deja lucrat*;     
 
-**Blocca gli ordini tassativi**: permette selezionare le tipologie di ordini tra *Pianificati*, *Lanciati* ed *Esecutivi*, che nel caso abbiano il flag *Tassativo* abilitato non saranno modificati dalla procedura di schedulazione F.C.S.;    
+**Blochează ordinele obligatorii**: permite selectarea tipurilor de ordine între *Planificate*, *Lansate* și *Executive*, care, în cazul în care au opțiunea *Obligatoriu * activată, nu vor fi modificate de procedura de planificare F.C.S.;  
 
-**Inizia lavori su disponibilità materiale**: se attivo, la schedulazione F.C.S. verificherà anche la disponibilità di materiale fino alla data indicata nel campo **Controllo disponibilità fino al**, oltre a quella data la schedulazione proseguira senza prendere in considerazione la disponibilità di materiale. Attivando il flag **Controllo disponibilità solo sui Materiali critici** la procedura verificherà la diposnibilità solamente per i materiali che in disitinta base hanno il flag *Critico* attivo;   
+**Începe lucrările pe baza disponibilității materialelor**: dacă este activ, planificarea F.C.S. va verifica și disponibilitatea materialelor până la data indicată în câmpul **Verifică disponibilitate până la**, iar după acea dată planificarea va continua fără a lua în considerare disponibilitatea materialelor. Activând opțiunea **Verifică disponibilitate doar pentru Materialele critice**, procedura va verifica disponibilitatea doar pentru materialele care în lista de componente au opțiunea *Critic* activă;   
 
-**Considera disponibiltà Materiale**: permetterà di selezionare la modalità con cui considerare la disponibilità del materiale tra *Generale* (indipendentemente dalla commessa di produzione ch elo impegna) e *Per Commessa Prod.*; attualmente è prevista solamente la regola *Generale*.
+**Consideră disponibilitatea Materialelor**: va permite selectarea modului în care se consideră disponibilitatea materialelor între *General* (indiferent de comanda de producție care le implică) și *Pe comandă producție*. Momentan este prevăzută doar regula *General*.
 
-Nella parte sottostante della form è possibile indicare con quali criteri, a paratià di documento, la scheduazione a capacità finita deve operare.
+În partea de jos a form-ului este posibil să se indice cu ce criterii planificarea la capacitate finită trebuie să opereze.
 
-:::note Nota
-In accordo con i flag precedentemente attivati o meno, la schedulazione F.C.S. schedulerà i vari documenti nel seguente ordine: Fasi già iniziate, Fasi non ancora iniziate, Ordini di produzione in stato esecutivo e poi lanciato ed in fine Ordini pianificati. 
+:::note Notă
+În funcție de opțiunile activate anterior, planificarea F.C.S. va programa diversele documente în următoarea ordine: Faze deja începute, Faze încă neîncepute, Ordine de producție în stare executivă și apoi lansate, și în final Ordine planificate. 
 ::: 
 
-Dalla tabella **Scelte priorità schedulazione** è possibile trascinare con il drag & drop le singole voci all'interno della tabella **Piorità schedulaizone**, dove in quest'ultima è possibile variarne la priorità. Nel caso in cui vengano selezionare le voci *Clienti critici* oppure *C.d.L critici* si abiliterà anche la tabella **Dettaglio priorità schedulazione** dove sarà possibile inserire rispettivamente i clienti o i centri di lavoro, potendo variare anche in questo caso la priorità.   
+Din tabelul **Opţiuni prioritate planificare**, se pot muta elementele cu drag & drop în tabelul **Prioritate planificare** pentru a le modifica prioritatea. În cazul în care sunt selectate elementele *Clienți critici* sau *C.d.L critici*, se va activa și tabelul **Detaliu prioritate planificare**, unde se vor putea insera clienții sau centrele de lucru, putând modifica și în acest caz prioritatea.   
 
-*Pulsanti specifici*:
+*Buton specific*:
 
-> **Ripristina priorità**: permette di ripristinare le priorità di default all'interno della tabella *Priorità schedulazione*.    
+> **Restaurare prioritate**: permite restabilirea priorităților implicite în tabelul *Prioritate planificare*.    
 
 ## Monitor
 
-In questo tab, tramite l'attivazione o meno dei flag presenti, l'utente ha la possibilità di scegliere la visualizzazione dei risultati della schedulazione nel tab **Storico**.
+În acest tab, prin activarea sau dezactivarea opțiunilor prezente, utilizatorul are posibilitatea de a alege vizualizarea rezultatelor planificării în tab-ul **Istoric**.
 
-Si può decidere se visualizzare i **Calendari** presi in considerazione (il Calendario di *Fabbrica* e il calendario delle *Capacità produttive*); si può decidere che venga segnalato se nella schedulazione erano presenti **Articoli privi di** *Parametri MRP*, privi di *Distinta base* o di *Ciclo di lavoro*, privi di *Fornitore preferenziale* (nel caso di ordini di acquisto), privi di *Terzista preferenziale* (per gli ordini di conto lavoro) e privi dell'indicazione della scorta minima per tutti quegli articoli che sono gestiti a scorta. Per ogni **Commessa di produzione** si può scegliere di visualizzare nello storico, il *Numero di righe schedulate* e il dettaglio di queste righe, le commesse in ritardo e le commesse scadute.
+Se poate decide dacă:
+- să fie vizualizeze **Calendarele** considerate (*Calendar fabrică* și calendarul *Capacități productive*);  
+- să fie semnalat dacă în planificare au fost **Articole fără** *Parametri MRP*, fără *Lista componente*, fără *Ciclul de lucru*, fără *Furnizor preferențial* (în cazul ordinelor de achiziție), fără *Terț preferențial* (pentru ordinele în sistem lohn) și fără indicarea stocului minim pentru toate acele articole care sunt gestionate pe stoc.  Pentru fiecare **Comandă de producție** se poate alege să se vizualizeze în istoric, *Numărul de rânduri planificate* și detaliul acestor rânduri, comenzile întârziate și comenzile expirate.
 
-Per quanto riguarda gli **Ordini pianificati**, si può scegliere se visualizzare nello storico, il *Numero di ordini generati* e il loro *Dettaglio*, gli ordini *In ritardo* e *Scaduti*, le *Alternative materiali*; si può scegliere anche di essere avvisati nel caso in cui ci siano **Ordini pianificati privi di** *Materiale*, di *Fasi di lavorazione*, del *Fornitore* (per l'acquisto) e il *Terzista* (per il conto lavoro).
+În ceea ce privesc **Ordinele planificate**, se poate alege să se vizualizeze în istoric, *Numărul de ordine generate* și *Detaliul* acestora, ordinele *Întârziate* și *Expirate*, *Alternative materiale*.  De asemenea, utilizatorul poate fi avizat în cazul în care există **Ordine planificate fără** *Materiale*, fără *Faze de procesare*, fără *Furnizor* (pentru achiziție) și fără *Terț* (pentru sistem lohn).
 
-**Legenda**: i flag attivi permettono di ricevere l'avviso e i dettagli riguardanti le voci selezionate.
+**Legendă**: opțiunile active permit primirea avertizărilor și detaliilor referitoare la elementele selectate.
 
-## Storico
+## Istoric
 
-Nella griglia di questo tab vengono visualizzate tutte le informazioni riepilogative relative alla schedulazione della commessa.
+Afișează toate informațiile rezumative referitoare la planificarea comenzii.
 
-**Progr. sched.**: visualizza un semplice progressivo dell'operazione di schedulazione lanciata dall'utente;
+**Progr. planificare**: vizualizează un simplu progresiv al operațiunii de planificare lansate de utilizator;
 
-**Operatore**: visualizza l'utente che ha lanciato la schedulazione;
+**Operator**: vizualizează utilizatorul care a lansat planificarea;
 
-**No. errori**: visualizza il numero degli errori registrati durante la procedura di schedulazione;
+**Nr. erori**: vizualizează numărul erorilor înregistrate în timpul procedurii de planificare;
 
-**Data inizio**: visualizza data e ora di inizio del processo di schedulazione;
+**Data început**: vizualizează data și ora de început a procesului de planificare;
 
-**Data fine**: visualizza data e ora di fine del processo di schedulazione;
+**Data sfârșit**: vizualizează data și ora de sfârșit a procesului de planificare;
 
-**Dati schedulati provenienti da**: visualizza l'origine precisa dei dati schedulati;
+**Date planificate care provin din**: vizualizează originea precisă a datelor planificate;
 
-**Previsionale**: visualizza se i dati provengano dalle Previsioni di Vendita oppure dal Piano Principale di Produzione;
+**Previzional**: vizualizează dacă datele provin din *Previziuni de vânzare* sau din *Plan principal de producție*;
 
-**Periodo**: visualizza il tipo di previsione, settimanale o mensile;
+**Perioadă**: vizualizează tipul de previziune, săptămânal sau lunar;
 
-**Giorno**: visualizza il giorno della settimana designato come giorno in cui deve cadere la data di fine della commessa di produzione schedulata direttamente da Definizione MPS.
+**Zi**: vizualizează ziua săptămânii în care va fi *Data sfârșit comandă de producție* planificată direct din *Definiția MP*.
 
-Tutte le altre colonne della griglia visualizzano le impostazioni utilizzate nel tab **Parametri** della Schedulazione relativa alla riga selezionata.
+Toate celelalte coloane ale tabelului vizualizează setările utilizate în tab-ul **Parametri** al planificării relative la rândul selectat.
 
-**Risultato schedulazione**
+**Rezultat planificare**
 
-In base alla riga selezionata nella griglia, in questa sezione compariranno eventuali errori e/o warning con i dettagli richiesti dall'utente nel tab **Monitor**.
+În baza rândului selectat în tabel, în această secțiune vor apărea eventuale erori și/sau avertizări cu detaliile solicitate de utilizator în tab-ul **Monitor**.
 
-Per dettagli sul funzionamento comune delle form fare riferimento al link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
-
-
-
-
+Pentru detalii despre funcționarea comună a form-urilor, consultați documentul [Funcționalități, butoane și câmpuri comune](/docs/guide/common).

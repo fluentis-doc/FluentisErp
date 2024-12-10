@@ -1,157 +1,155 @@
 ---
-title: Pianificazione generale
+title: Planificare generală
 sidebar_position: 2
 ---
 
-:::important A cosa serve
-La pianificazione generale in Fluentis è un processo che opera con il presupposto di capacità infinita, il che significa che la pianificazione non tiene conto di limitazioni fisiche nei centri di lavoro o nelle risorse disponibili. Questa metodologia permette di schedulare le operazioni produttive con una certa flessibilità.
+:::important Utilizare
+Planificarea generală în Fluentis este un proces care operează pe capacitate infinită, ceea ce înseamnă că planificarea nu ține cont de limitările fizice în centrele de lucru sau în resursele disponibile. Această metodologie permite programarea operațiunilor productive cu o anumită flexibilitate.
 
-La pianificazione può essere eseguita utilizzando due logiche distinte: "al più presto" e "al più tardi". La logica "al più presto" mira a iniziare le operazioni non appena possibile, mentre la logica "al più tardi" pianifica le operazioni il più tardi possibile senza compromettere le scadenze. Questi approcci consentono un'analisi ottimizzata delle esigenze produttive e la gestione dei tempi di lavorazione in base alle priorità aziendali e alle necessità operative
+Planificarea poate fi efectuată utilizând două proceduri distincte:*cel mai devreme* și *cel mai târziu*.  Procedura *cel mai devreme* începe operațiunile cât mai repede posibil, în timp ce procedura *cel mai târziu* planifică operațiunile cât mai târziu posibil fără a compromite termenele limită. Aceste abordări permit o analiză optimizată a cerințelor productive și gestionarea timpilor de lucru în funcție de prioritățile companiei și necesitățile operaționale.
 :::
 
-Rappresenta l’algoritmo di Master Scheduling, ovvero lo schedulatore di produzione che si occupa di interessare le commesse selezionate e analizzarne la *fattibilità produttiva* in funzione della sua composizione strutturale. 
-Questo tipo di pianificazione, eseguibile con logiche di analisi *al più presto* o *al più tardi*, dà la possibilità di verificare la necessità di ulteriore capacità produttiva, evidenziando la sovra-allocazione dei centri di lavoro critici, permettendo all’operatore di decidere se aumentare la capacità interna, acquistare capacità esterna o spostare i carichi nel tempo, eventualmente accettando ritardi di consegna. 
+Reprezintă algoritmul de Master Scheduling, adică programatorul de producție care se ocupă de implicarea comenzilor selectate și analiza *fezabilității productive* în funcție de compoziția sa structurală. 
+Acest tip de planificare, realizabil cu strategia de analiză *cel mai devreme* sau *cel mai târziu*, oferă posibilitatea de a verifica necesitatea unei capacități productive suplimentare, evidențiind supra-alocarea centrelor de lucru critice, permițând astfel operatorului să decidă dacă să crească capacitatea internă, să achiziționeze capacitate externă sau să mute sarcinile în timp, acceptând eventual întârzieri la livrare.
 
-Da una o più commesse selezionate, in base ai parametri di pianificazione impostati nel tab relativo, la procedura va a creare gli ordini pianificati dei tre tipi previsti: produzione, acquisto e conto lavoro.
+Din una sau mai multe comenzi selectate, în funcție de parametrii de planificare setați în tab-ul corespunzător, procedura va crea ordinele planificate ale celor trei tipuri prevăzute: producție, achiziție și sistem lohn.
 
-Una volta creati, gli ordini pianificati si potranno visualizzare nella form [Ricerca ordini pianificati](/docs/planning/ms-master-scheduling/planned-orders/search-planned-orders).
+Ordinele planificate create se pot vizualiza în form-ul [Caută ordine planificate](/docs/planning/ms-master-scheduling/planned-orders/search-planned-orders).
 
-## Commesse
+## Comenzi
 
-*Pulsanti specifici*:
+*Butoane specifice*:
 
-> **Pianificazione generale**: consente al sistema di schedulare le commesse selezionate;  
-> **Apri ricerca ordini pianificati**: questo pulsante consente di aprire la schermata di  [Ricerca ordini pianificati](/docs/planning/ms-master-scheduling/planned-orders/search-planned-orders); nel caso in cui, prima di premere questo pulsante, venga selezionata una riga di commessa la form degli ordini pianificati si aprirà già pre filtrata su quella commessa;               
-> **Cambia data fine prevista con data suggerita**: questo pulsante consente di modificare la data suggerita, di cui si è parlato in questo articolo;  
-> **Sequenza commesse**: tramite questa funzionalità si può accedere alla sequenza commesse, all'interno della quale si potranno visualizzare le commesse in base alla sequenza che gli è stata attribuita, anche tramite un grafico.
+> **Planificare generală**: permite sistemului să programeze comenzile selectate;  
+> **Deschide căutare ordine planificate**: acest buton permite deschiderea form-ului [Căutare ordine planificate](/docs/planning/ms-master-scheduling/planned-orders/search-planned-orders). Dacă, înainte de a apăsa acest buton, este selectat un rând de comandă, form-ul ordinelor planificate se va deschide deja pre-filtrat pe acea comandă;               
+> **Schimbă data finală prevăzută cu data sugerată**: acest buton permite modificarea datei sugerate;  
+> **Secvență comenzi**: permite accesul la secvența comenzilor, în care se vor putea vizualiza comenzile pe baza secvenței care le-a fost atribuită, inclusiv printr-un grafic.
 
+*Filtre specifice*:
 
-*Filtri specifici*:
+**Tip comandă**: permite selectarea tipului de comandă care se dorește să fie vizualizat, și anume: comenzi monoprodus, comenzi multiprodus sau ambele;
 
-**Tipo commessa**: tramite questa combo è possibile andare a selezionare il tipo di commessa che si vuole visualizzare, se le commesse monoprodotto, le commesse multiprodotto oppure entrambe;
+**Locație producție**: permite vizualizarea comenzilor în funcție de locul unde au fost produse;
 
-**Sito produzione**: si possono andare a visualizzare le commesse in base al sito di produzione in cui vanno prodotte, selezionandolo tramite l'apposita combo;
+**Întârziate/Expirate/Lansate/Esecutive**: aceste opțiuni permit alegerea dacă se doresc vizualizate și comenzile întârziate în raport cu data sau expirate și doar dacă în [Parametrii generali de planificare](/docs/planning/ms-master-scheduling/general-schedule) este setată opțiunea *planificare comenzi lansate sau executive*, altfel cele două câmpuri nu vor fi active; altfel, așa cum este explicat în articolul despre parametrii de planificare, în tab-ul comenzi se vor putea vedea doar în starea de neexaminată sau de programată, dar acestea asumă starea de lansate și/sau executive. Dacă această opțiune nu este setată, nu se vor putea vizualiza comenzile în cadrul acestui tab.
 
-**In ritardo/Scadute/Lanciate/Esecutive**: questi flag consentono di scegliere se si vogliono visualizzare anche le commesse in ritardo rispetto alla data oppure scadute e solo se nei  [Parametri generali di pianificazione ](/docs/planning/ms-master-scheduling/general-schedule) è settato il flag *pianificazione commesse lanciate o esecutive*, altrimenti i due campi risultano non essere attivi; altrimenti come spiegato nell'articolo sui parametri di pianificazione , nel tab commesse si potranno vedere solamente in stato di non esaminate o di schedulate, ma queste assumono lo stato di lanciate  e/o esecutive se questo flag non viene settato non si potranno visualizzare le commesse all'interno di questo tab.
+*Campuri specifice*
 
-*Campi specifici nella griglia dei Risultati*
+**Data sugerată**: așa cum este explicat în articolul referitor la parametrii generali de planificare, activând un anumit flag numit [Control documente întârziate cu ATP](/docs/planning/ms-master-scheduling/general-schedule), programatorul va efectua un raționament astfel încât, dacă chiar și unul dintre ordinele care sunt programate și generate se dovedește a fi întârziat în raport cu data prevăzută, sistemul va șterge toate ordinele create și va reporni de la data MS care este definită întotdeauna în parametrii și care se activează doar setând flag-ul verificare documente întârziate cu ATP și va propune noua dată pentru comenzile chiar în câmpul *Data sugerată* prezent în tabelul de rezultate.
 
-**Data suggerita**: come spiegato nell'articolo relativo ai parametri generali di pianificazione , attivando un particolare flag chiamato  [Controlla doc in ritardo con ATP](/docs/planning/ms-master-scheduling/general-schedule) lo schedulatore andrà ad eseguire un ragionamento tale per cui se anche uno solo degli ordini che vengono schedulati e generati risulta essere in ritardo rispetto alla data prevista il sistema andrà a cancellare tutti gli ordini creati e ripartirà a generali dalla data MS che viene definita sempre nei parametri e che si attiva solo settando il flag controllo doc in ritardo con ATP e andrà a proporre la nuova data per le commesse proprio nel campo *Data suggerita* presente nella griglia di risultato.
+### Procedura Planificare generală
 
-### Procedura Pianificazione generale
+Odată selectate comenzile care se doresc a fi programate, se va activa butonul **Planificare generală** prezent în ribbon bar-ul form-ului, iar făcând clic pe acel buton, sistemul va proceda cu planificarea comenzilor selectate.
 
-Una volta selezionate le commesse che si vogliono schedulare, si attiverà il pulsante **Pianificazione generale** presente nella ribbon bar della form, e cliccando su quel pulsante il sistema procederà con la pianificazione delle commesse selezionate.
+Pentru a vizualiza toate programările efectuate și ordinele de producție corespunzătoare create pentru fiecare comandă, este suficient să se mute în tab-ul **Istoric**.
 
-Per visualizzare tutte le schedulazioni effettuate e i relativi ordini di produzione creati per ogni commessa, basterà spostarsi nel tab **Storico**.
-
-:::danger Nota    
-Le commesse create manualmente vengono sempre prodotte indipendentemente dalla disponibilità dell'articolo da produrre.    
+:::danger Notă    
+Comenzile create manual sunt întotdeauna produse independent de disponibilitatea articolului de produs.    
 :::   
 
-## Parametri di Pianificazione generale
+## Parametrii Planificare generală
 
-:::note Nota
-Prima di procedere con la pianificazione , è importante settare all'interno di questo tab i parametri da seguire per eseguire la pianificazione .
+:::note Notă
+Înainte de a continua cu planificarea, este important să se seteze în cadrul acestui tab parametrii care trebuie urmați pentru a efectua planificarea.
 ::: 
 
-**Schedulare fino al**: indicare la data entro la quale il sistema dovrà andare a considerare i documenti inseriti; è possibile inserire un valore di default in mesi nel campo **Numero massimo di mesi per la pianificazione ** presente nei [Parametri MS](/docs/configurations/parameters/production/mps-parameters);       
+**Programare până la**: indică data până la care sistemul va lua în considerare documentele introduse; este posibil să se introducă o valoare implicită în luni în câmpul **Număr maxim de luni pentru planificare** prezent în [Parametrii MS](/docs/configurations/parameters/production/mps-parameters);       
 
-**Materiali/Risorse**: attraverso questi flag si decide se schedulare sia i materiali che le risorse, quindi sia la distinta base che il ciclo di lavoro; con il flag *Risorse* attivo verranno considerati, nella pianificazione , anche i centri di lavoro;
+**Materiale/Resurse**: prin aceste opțiuni se decide dacă se va programa atât materialele, cât și resursele, deci atât lista de componente, cât și ciclul de lucru; cu flag-ul *Resurse* activ, vor fi considerate, în planificare, și centrele de lucru;
 
-**Ordini pianificati di**: attraverso i 3 flag si va ad indicare se si vuole che il sistemare generi tutti e tre i tipi di ordini previsti quindi produzione, acquisto e conto lavoro; in questo modo questi tipi di ordine avranno il legame diretto con la commessa; (per esempio se non viene messo il flag su Acquisto, però viene mantenuto il flag su Esecuzione MRP, il sistema andrà comunque a creare anche gli ordini di acquisto ma questi risulteranno slegati dalla commessa);
+**Ordini planificate de**: prin cele 3 opțiuni se indică dacă se dorește ca sistemul să genereze toate cele trei tipuri de ordine prevăzute, deci producție, achiziție și sistem lohn; în acest mod, aceste tipuri de ordine vor avea legătura directă cu comanda; (de exemplu, dacă nu se pune flag-ul pe Achiziție, dar se menține flag-ul pe Execuție MRP, sistemul va crea totuși și ordinele de achiziție, dar acestea vor fi neslegate de comandă);
 
-**Genera solo ordini pianificati per livelli**: in questo caso si andranno ad indicare i livelli (1-2...) per i quali si vuole vengano generati gli ordini pianificati;
+**Generează doar ordine planificate pe nivele**: în acest caz se vor indica nivelurile (1-2...) pentru care se dorește generarea ordonărilor planificate;
 
-**Ordini fornitori o Richieste d'acquisto e ordini cliente**: in questo caso, se vi sono presenti a sistema documenti privi di data di impegno e disponibilità, si può dire al sistema che vada a considerare come data quella che si potrà indicare nel apposto campo, oppure dire al sistema che non vada a considerare questo tipo di documenti;
+**Ordini furnizori** sau **Cereri de achiziție** și **Ordine client**: în acest caz, dacă există documente în sistem fără dată de angajament și disponibilitate, se poate spune sistemului să considere ca dată cea care se poate indica în câmpul corespunzător, sau să spună sistemului să nu ia în considerare acest tip de documente;
 
-**Raggruppamento ordini pianificati per**: nel caso in cui si lavori a commessa, in questo campo va impostata la voce *Nessun raggruppamento*; altrimenti si può andare a selezionare tramite l'apposita combo il tipo di raggruppamento che si intende applicare ma in questo caso il legame tra ordini pianificati e commessa si andrebbe a perdere;
+**Grupare ordine planificate după**: în cazul în care se lucrează pe comandă, în acest câmp trebuie setată opțiunea *Nici o grupare*; altfel, se poate selecta prin combo-ul corespunzător tipul de grupare care se intenționează a fi aplicat, dar în acest caz legătura între ordinele planificate și comandă s-ar pierde;
+**Grupare cel mai târziu** sau **Cel mai devreme**: în acest caz se poate alege dacă se va grupa ordinele cel mai târziu (deci în funcție de ultimul) sau cel mai devreme (care este cel mai recomandat) și în câmpul următor numit **Pentru o perioadă de zile** se va indica numărul de zile în care se va face gruparea;
 
-**Raggruppamento al più tardi o al più presto**: in questo caso si può scegliere se andare a raggruppare gli ordini al più tardi (quindi in base all'ultimo) o al più presto (che è il più consigliato) e nel campo successivo chiamato **Per un per. in giorni** di si andranno ad indicare il numero di giorni all'interno del quale fare il raggruppamento;
+**Consideră cantitățile în funcție de lotul economic/Consideră multiplii lotului economic**: setând primul parametru se indică că în timpul planificării se dorește să se țină cont și de lotul economic al articolului, și în consecință se va activa flag-ul care va permite să se decidă dacă se doresc a fi luate în considerare și multiplii lotului economic (ambele aceste date sunt setate în cadrul [Parametrii MRP](/docs/configurations/parameters/production/mrp-parameters/search-mrp-parameters) ai articolului);
 
-**Considera le quantità in base al lotto economico/Considera i multipli del lotto economico**: settando il primo parametro si va ad indicare che durante la pianificazione si vuole tenere conto anche del lotto economico dell'articolo, e di conseguenza si attiverà il flag che permetterà di decidere se si vuole vengano tenuti in considerazione anche i multipli del lotto economico (entrambi questi dati vengono impostati all'interno dei [Parametri MRP](/docs/configurations/parameters/production/mrp-parameters/search-mrp-parameters) dell'articolo);
+**Compacteză/separă ordine**: în acest caz se alege dacă se dorește să se păstreze sau nu o zi de marjă între finalizarea producției ordinii de 1 nivel și cea a nivelului următor;
 
-**Compatta/separa ordini**: in questo caso si va a scegliere se si vuole venga tenuto o meno un giorno di lasco tra la fine della produzione dell'ordine di 1 livello e quello del livello successivo;
+**Execuție MRP după planificare** și **Articole pe stoc**: în acest caz se indică că se dorește ca sistemul să analizeze totuși cu MRP toate codurile de articol care sunt gestionate pe baza cererii pentru acest produs finit. MRP rulează pe toate articolele din *Lista de componente* a acestui articol, care au o politică de gestionare diferită de cea pe comandă, deoarece pentru toate acele articole se poate dori verificarea acoperirii sau se pot genera ordinele planificate fără legătură cu comanda; în acest caz, MRP ia în considerare parametrii indicați în tab-ul *Parametrii generali* al **planificării**;      
 
-**Esecuzione del MRP dopo pianificazione e Articoli a scorta**: in questo si va ad indicare che si vuole che il sistema vada ad analizzare comunque con l'MRP tutti i codici articolo che sono gestiti a fabbisogno per questo prodotto finito. L'MRP gira su tutti gli articoli della Distinta Base di questo articolo, che hanno politica di gestione diversa da quella a commessa, perchè su tutti quegli articoli si può voler verificare la copertura o si può voler generare gli ordini pianificati senza legame con la commessa; in questo caso l'MRP prende inconsiderazione i parametri indicati nel tab *Parametri generali* della **pianificazione **;      
+**planificare pe zona de livrare**: setând acest flag, sistemul va verifica când comanda trebuie livrată în funcție de zona sa de livrare și va programa comanda mai întâi în raport cu ziua livrării;
 
-**pianificazione per zona consegna**: settando questo flag il sistema va a vedere quando l'ordine va consegnato in base alla sua zona di consegna e andrà a schedulare l'ordine per prima rispetto al giorno della consegna;
+**Control documente întârziate cu ATP**: dacă se activează acest flag, se va activa simultan și câmpul următor numit **Data început MS** și sistemul va efectua următorul raționament: dacă în planificarea ordonărilor pe care le generează, chiar și unul dintre acestea are o dată de început inferioară zilei de azi, adică dacă sunt întârziate cu producția acestei comenzi, activând acest flag, sistemul va șterge toate ordinele planificate pe care le-a generat și va reporni de la data care este setată de operator în câmpul **Data început MS** și va reporni să programeze cel mai devreme de la acea dată;
 
-**Controlla documenti in ritardo con ATP**: se si va ad abilitare questo flag si andrà ad abilitare contemporaneamente anche il campo successivo chiamato **Data inizio MS** e il sistema andrà ad eseguire il seguente ragionamento: se nella pianificazione degli ordini che genero, anche solo uno di questi risulta avere una data inizio inferiore ad oggi, cioè se sono in ritardo con la produzione di questa commessa, abilitando questo flag il sistema va a cancellare tutti gli ordini pianificati che ha generato e riparte dalla data che viene impostata dall'operatore nel campo **Data inizio MS** e riparte a schedulare al più presto da quella data;
+**Lansare automată ordine planificate**: dacă se decide activarea acestui parametru, programatorul, pe lângă generarea ordonărilor conform planificării, le va elibera automat, astfel încât ordinele planificate de producție vor deveni ordine de producție, ordinele de achiziție vor deveni RDA (cereri de achiziție) și contul de lucru va deveni ordine de sistem lohn;
 
-**Rilascio automatico ordini pianificati**: se si decide di abilitare questo parametro, lo schedulatore oltre a generare gli ordini come pianificati, li va anche a rilasciare automaticamente e quindi gli ordini pianificati di produzione diventeranno ordini di produzione, gli ordini di acquisti diventeranno RDA (richieste d'acquisto) e il conto lavoro diventeranno ordini di conto lavoro;
+**Planificare cel mai devreme** sau **Cel mai târziu:**: cu aceste opțiuni se poate stabili dacă planificarea trebuie să fie efectuată pe baza ultimei date de producție a ordonărilor care trebuie programate, deci pe baza ultimei comenzi de produs, sau cel mai devreme pe baza primei comenzi de produs;
 
-**pianificazione al più presto o al più tardi:** grazie a questi flag, si può andare a definire se la pianificazione dovrà essere eseguita basandosi sull'ultima data di produzione degli ordini che si devono schedulare, quindi basandosi sull'ultimo ordine da produrre, oppure al più presto basandosi sul primo ordine da produrre;
+**planificare comenzi lansate sau executive**: în mod implicit, atunci când o comandă este programată, aceasta este încă vizibilă în tab-ul comenzi și de acolo, fiind în stare programată, este posibil să fie reselectată și reprogramată de câte ori se dorește; cu toate acestea, atunci când se încep eliberarea ordonărilor planificate, comenzile își schimbă starea din programate în lansate sau executive și nu mai sunt vizibile în tab-ul comenzi; pentru a putea continua să le vezi în tab-ul comenzi și după ce au devenit lansate sau executive, este suficient să activezi acest flag pentru a le putea vedea și reprograma exact așa cum se întâmplă pentru comenzile în stare programată;
 
-**pianificazione commesse lanciate o esecutive**: di default quando una commessa viene schedulata la si vede ancora nel tab commesse e da li essendo in stato schedulata è possibile riselezionarla e rischedularla quante vuole si vuole; Quando però si iniziano a rilasciare gli ordini pianificati le commesse cambiano stato da schedulate a lanciare o esecutive e non si vedono più nel tab commesse; per poter continuare a vederle nel tab commesse anche una volta diventate lasciate o esecutive basterà questo flag cosi da poterle vedere e poterle rischedulare esattamente come avviene per le commesse in stato schedulate;
+**Versiune**: programatorul va programa într-o versiune care este setată în acest câmp, dacă în comanda de producție nu găsește o versiune definită;
 
-**Versione**: lo schedulatore schedulerà in una versione che viene impostata in questo campo, se nella commessa di produzione non trova una versione definita;
+**Consideră disponibilitatea**: dacă acest flag este activ, indică programatorului că în procesul de planificare trebuie să țină cont de disponibilitatea provenită din magazinele indicate în tabelul de mai jos, care sunt cele definite anterior în [Parametrii MS](/docs/configurations/parameters/production/mps-parameters);  
 
-**Considera la disponibilità**: se attivo questo flag indica allo schedulatore che nel processo di pianificazione dovrà tenere conto della disponibilità proveniente dai magazzini indicati nella griglia sottostante che sono quelli precedentemente definiti nei [Parametri MS](/docs/configurations/parameters/production/mps-parameters);  
+**Magazine**: conține magazinele se activează doar dacă este setat flag-ul **Consideră disponibilitatea**; în grilă apar magazinele care au fost introduse în fereastra de [Calcul Disponibilitate](/docs/erp-home/registers/items/calculate-availability);         
 
-**Magazzini**: la griglia contenente i magazzini si attiva solamente se viene settato il flag **Considera la disponibilità**; nella griglia compaiono i magazzini che sono stati inseriti nella finestra del [Calcolo Disponibilità](/docs/erp-home/registers/items/calculate-availability);         
+**Consideră disponibilitatea la data cererii sau minimul în perioada**: aceste flag-uri se activează doar dacă este activ flag-ul **Consideră disponibilitatea**; la data cererii înseamnă că programatorul trebuie să considere disponibilitatea în momentul în care trebuie să producă comanda, în timp ce consideră minimul în perioada, programatorul va lua în considerare disponibilitatea minimă în perioada până la data setată inițial în parametrul Programare până la;
 
-**Considera disponibilità al data fabbisogno o la minima nel periodo**: questi flag si attivano solamente se è attivo il flag **Considera la disponibilità**; alla data fabbisogno significa che lo schedulatore dovrà considerare la disponibilità nel momento in cui devo produrre l'ordine, mentre considera la data minima nel periodo lo schedulatore andrà a considerare la disponibilità minima nel periodo fino alla data impostata inizialmente nel parametro Schedulare fino al;
+**Consideră loturi cu status nedisponibil**: și acest flag se activează doar dacă este activ flag-ul **Consideră disponibilitatea**; dacă este activ, programatorul va trebui să considere loturile în stare indisponibilă la data respectivă;      
 
-**Considera lotti in stato non disponibile**: anche questo flag si attiva solamente se è attivo il flag **Considera la disponibilità**; se attivo, lo schedulatore dovrà considerare i lotti in stato non disponibile alla data;      
+**Consideră disponibilitatea și pentru primul nivel**: și acest flag se activează doar dacă este activ flag-ul **Consideră disponibilitatea**; dacă este activ, programatorul va trebui să considere disponibilitatea și pentru primul nivel (deci pentru articolul prezent în comanda de producție);
 
-**Considera disponibilità anche per il primo livello**: anche questo flag si attiva solamente se è attivo il flag **Considera la disponibilità**; se attivo, lo schedulatore dovrà considerare la disponibilità anche per il primo livello (quindi per l'articolo presente nella commessa di produzione);
+**Consideră și disponibilitatea negativă**: dacă este activ, programatorul va trebui să considere și disponibilitățile negative în momentul planificării pentru articolul de prim nivel; de fapt, acest flag poate fi activat doar dacă este activ flag-ul **Consideră disponibilitatea și pentru primul nivel**;      
 
-**Considera anche disponibilità negativa**: se attivo, lo schedulatore dovrà considerare anche le disponibilità negative al momento della pianificazione per l'articolo di primo livello; infatti, è possibile abilitare questo flag solo se è attivo il flag **Considera disponibilità anche per il primo livello**;      
+**Consideră disponibilitatea provenind din**: aceste flag-uri devin activabile doar dacă este activ flag-ul **Consideră disponibilitatea** și permit programatorului să considere disponibilitățile provenind din achiziții, vânzări, din magazin, din sistem lohn și din producție;
 
-**Considera disponibilità provenienti da**: anche questi flag diventano attivabili solamente se attivato il flag **Considera la disponibilità** e permettono di indicare se si vuole che lo schedulatore consideri le disponibilità provenienti dagli acquisti, dalle vendite, dal magazzino, dal conto lavoro e dalla produzione;
+**Reintegrare stoc minim articol** ți **Reintegrare punct de reordonare articol**: primul flag se activează doar dacă se setează al doilea; aceste două flag-uri indică că programatorul va trebui să prevadă reintegrarea punctului de reordonare stabilit pentru acel articol și dacă se dorește și reintegrarea stocului minim al articolului; ambele aceste date sunt introduse în momentul creării articolului în tab-ul [Aprovizionare](/docs/erp-home/registers/items/create-new-items/item-registry/procurement);
 
-**Reintegro scorta minima dell'articolo e reintegro punto di riordino dell'articolo**: il primo flag si attiva solamente se si va a settare il secondo; questi due flag vanno ad indicare che lo schedulatore dovrà prevedere il reintegro del punto di riordino stabilito per quell'articolo e se si vuole anche il reintegro della scorta minima dell'articolo; entrambi questi dati vengono inseriti nel momento della creazione dell'articolo nel tab [Approvvigionamento](/docs/erp-home/registers/items/create-new-items/item-registry/procurement);
+**Consideră indice de acoperire**: dacă flag-ul este activ, programatorul va trebui să țină cont de indicele de acoperire care este stabilit întotdeauna în tab-ul *Aprovizionare* al articolului;
 
-**Considera l'indice di copertura**: se il flag è attivo, lo schedulatore dovrà tenere conto dell'indice di copertura che viene stabilito sempre nel tab *Approvvigionamento* dell'articolo;
+**Consideră și alternativele materialelor**: dacă este activ, în momentul planificării comenzii, programatorul va trebui să considere și alternativele materialelor în cazul în care nu există suficientă disponibilitate pentru materialul indicat în listă; este activat doar dacă este activ flag-ul **Consideră disponibilitatea**;            
 
-**Considera anche le alternative dei materiali**: se attivo, nel momento della pianificazione della commessa lo schedulatore dovrà andare a considerare anche le alternative dei materiali nel caso in cui non ci sia disponibilità sufficiente per il materiale indicato in distinta; viene abilitato solo se è attivo il flag **Considera la disponibilità**;            
+**Consideră doar materiale alternative**: se activează doar atunci când flag-ul **Consideră și alternativele materialelor** este activ; dacă este activ acest flag, se verifică mai întâi disponibilitatea componentelor alternative în funcție de prioritatea acestora, dacă nu este suficientă, se verifică apoi disponibilitatea componentei principale; este activat doar dacă este activ flag-ul **Consideră disponibilitatea**;    
 
-**Considera solo materiali alternativi**: si attiva solamente quando il flag **Considera anche le alternative dei materiali** è attivo; se attivo questo flag, viene verificata prima la disponibilità dei componenti alternativi in base alla priorità degli stessi, se non sufficiente verifica poi quella del componente principale; viene abilitato solo se è attivo il flag **Considera la disponibilità**;    
-
-:::note Nota
-I materiali alternativi vengono inseriti nel tab **Alternative**, relativo al materiale principale, presente nella [Distinta base](/docs/erp-home/registers/production/bill-of-materials/assemblies/structure-management).
+:::note Notă
+Materialele alternative sunt introduse în tab-ul **Alternative**, referitor la materialul principal, prezent în [Lista de componente](/docs/erp-home/registers/production/bill-of-materials/assemblies/structure-management).
 :::
 
-**Considera le fasi alternative**: se attivo, questo flag indica che al momento della pianificazione bisognerà andare a considerare anche le fasi di lavoro alternative; attivando questo flag si attiverà il campo editabile successivo chiamato **Tolleranza per l'occupazione del C.d.L. %**, nel quale si potrà andare ad indicare la tolleranza di occupazione del centro di lavoro in %, oltre alla quale lo schedulatore dovrà andare a considerare le fasi alternative alla fase di default.
+**Consideră etapele alternative**: dacă este activ, acest flag indică că în momentul planificării trebuie să se considere și etapele de lucru alternative; activând acest flag se va activa câmpul editabil următor numit **Toleranță pentru ocuparea C.d.L. %**, în care se va putea indica toleranța de ocupare a centrului de lucru în %, peste care programatorul va trebui să considere etapele alternative față de etapa implicită.
 
 ## Monitor
 
-In questo tab, tramite l'attivazione o meno dei flag presenti, l'utente ha la possibilità di scegliere la visualizzazione dei risultati della pianificazione nel tab **Storico**.
+În acest tab, prin activarea sau dezactivarea flag-urilor prezente, utilizatorul are posibilitatea de a alege vizualizarea rezultatelor planificării în tab-ul **Istoric**.
 
-Si può decidere se visualizzare i **Calendari** presi in considerazione (il Calendario di *Fabbrica* e il calendario delle *Capacità produttive*); si può decidere che venga segnalato se nella pianificazione erano presenti **Articoli privi di** *Parametri MRP*, privi di *Distinta base* o di *Ciclo di lavoro*, privi di *Fornitore preferenziale* (nel caso di ordini di acquisto), privi di *Terzista preferenziale* (per gli ordini di conto lavoro) e privi dell'indicazione della scorta minima per tutti quegli articoli che sono gestiti a scorta. Per ogni **Commessa di produzione** si può scegliere di visualizzare nello storico, il *Numero di righe schedulate* e il dettaglio di queste righe, le commesse in ritardo e le commesse scadute.
+Se poate decide dacă să se vizualizeze **Calendarele** luate în considerare (Calendarul de *Fabrică* și calendarul *Capacităților productive*); se poate decide ca să fie semnalat dacă în planificare au fost prezente **Articole fără** *Parametri MRP*, fără *Listă de componente* sau *Ciclul de lucru*, fără *Furnizor preferențial* (în cazul ordonărilor de achiziție), fără *Terț preferențial* (pentru ordonările de sistem lohn) și fără indicația stocului minim pentru toate acele articole care sunt gestionate pe stoc. Pentru fiecare **Comandă de producție** se poate alege să se vizualizeze în istoric, *Numărul de rânduri programate* și detaliul acestor rânduri, comenzile întârziate și comenzile expirate.
 
-Per quanto riguarda gli **Ordini pianificati**, si può scegliere se visualizzare nello storico, il *Numero di ordini generati* e il loro *Dettaglio*, gli ordini *In ritardo* e *Scaduti*, le *Alternative materiali*; si può scegliere anche di essere avvisati nel caso in cui ci siano **Ordini pianificati privi di** *Materiale*, di *Fasi di lavorazione*, del *Fornitore* (per l'acquisto) e il *Terzista* (per il conto lavoro).
+În ceea ce privește **Ordinele planificate**, se poate alege să se vizualizeze în istoric, *Numărul de ordine generate* și *Detaliul* acestora, ordinele *Întârziate* și *Expirate*, *Alternativele materialelor*; se poate alege de asemenea să se fie avertizat în cazul în care există **Ordine planificate fără** *Material*, fără *Etape de lucru*, fără *Furnizor* (pentru achiziție) și fără *Terț* (pentru sistem lohn).
 
-**Legenda**: i flag attivi permettono di ricevere l'avviso e i dettagli riguardanti le voci selezionate.
+**Legendă**: flag-urile active permit primirea avertizării și detaliilor referitoare la elementele selectate.
 
-## Storico
+## Istoric
 
-Nella griglia di questo tab vengono visualizzate tutte le informazioni riepilogative relative alla pianificazione della commessa.
+În tabelul acestui tab sunt vizualizate toate informațiile rezumative referitoare la planificarea comenzii.
 
-**Progr. sched.**: visualizza un semplice progressivo dell'operazione di pianificazione lanciata dall'utente;
+**Progr. sched.**: vizualizează un simplu progresiv al operațiunii de planificare lansate de utilizator;
 
-**Operatore**: visualizza l'utente che ha lanciato la pianificazione ;
+**Operator**: vizualizează utilizatorul care a lansat planificarea;
 
-**No. errori**: visualizza il numero degli errori registrati durante la procedura di pianificazione ;
+**Nr. erori**: vizualizează numărul erorilor înregistrate în timpul procedurii de planificare;
 
-**Data inizio**: visualizza data e ora di inizio del processo di pianificazione ;
+**Data început**: vizualizează data și ora de început a procesului de planificare;
 
-**Data fine**: visualizza data e ora di fine del processo di pianificazione ;
+**Data finală**: vizualizează data și ora de finalizare a procesului de planificare;
 
-**Dati schedulati provenienti da**: visualizza l'origine precisa dei dati schedulati;
+**Datele programate provenind de la**: vizualizează originea precisă a datelor programate;
 
-**Previsionale**: visualizza se i dati provengano dalle Previsioni di Vendita oppure dal Piano Principale di Produzione;
+**Previzional**: vizualizează dacă datele provin din Previziile de Vânzare sau din Planul Principal de Producție;
 
-**Periodo**: visualizza il tipo di previsione, settimanale o mensile;
+**Perioada**: vizualizează tipul de previziune, săptămânală sau lunară;
 
-**Giorno**: visualizza il giorno della settimana designato come giorno in cui deve cadere la data di fine della commessa di produzione schedulata direttamente da Definizione MPS.
+**Zi**: vizualizează ziua săptămânii desemnată ca zi în care trebuie să cadă data de finalizare a comenzii de producție programate direct din Definiția MPS.
 
-Tutte le altre colonne della griglia visualizzano le impostazioni utilizzate nel tab **Parametri** della *Pianificazione generale* relativa alla riga selezionata.
+Toate celelalte coloane ale grilei vizualizează setările utilizate în tab-ul **Parametri** al *Planificării generale* referitoare la rândul selectat.
 
-**Risultato pianificazione **
+**Rezultatul planificării**
 
-In base alla riga selezionata nella griglia, in questa sezione compariranno i dettagli richiesti dall'utente nel tab **Monitor**.
+În funcție de rândul selectat în grilă, în această secțiune vor apărea detaliile solicitate de utilizator în tab-ul **Monitor**.
 
-Nel risultato della pianificazione , si possono vedere il numero della commessa che si è schedulata, il numero degli ordini pianificati che sono stati generati da quella commessa e il dettaglio degli ordini pianificati che sono stati generati.
+În rezultatul planificării, se pot vedea numărul comenzii care a fost programată, numărul ordonărilor planificate care au fost generate din acea comandă și detaliul ordonărilor planificate care au fost generate.
 
-Per dettagli sul funzionamento comune delle form fare riferimento al link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Pentru detalii despre funcționarea comună a form-urilor, consultați linkul [Funcționalități, butoane și câmpuri comune](/docs/guide/common).
