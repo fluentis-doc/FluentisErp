@@ -19,7 +19,7 @@ Fiecărui document i se evidențiază starea sa, cu un pătrat colorat cu următ
 
 - **Tip raport**: secțiunea permite filtrarea în funție de comandă: *întârziată* sau *expirată* și se poate decide nivelul de detaliu dorit la imprimare (Analitic sau Sintetic).
 
-- **Detalii (Dettagli)**: secțiunea permite vizualizarea sau nu a detaliilor referitoare la aria achiziții, producție și sistem lohn, precum și vizualizarea sau nu a comenzile de vânzare și ordinelor planificate.
+- **Detalii**: secțiunea permite vizualizarea sau nu a detaliilor referitoare la aria achiziții, producție și sistem lohn, precum și vizualizarea sau nu a comenzile de vânzare și ordinelor planificate.
 
 - **Tipul de aprovizionare**: secțiunea permite filtrarea în funcție de tipul de aprovizionare al articolului comenzii prezente în parametrii MRP (Achiziție, Producție, Sistem lohn).
 
