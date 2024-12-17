@@ -1,12 +1,14 @@
 ---
-title: Enasarco Accounting
+title: Enasarco Accounting 
 sidebar_position: 1
 ---
 
-The procedure will detect the Enasarco contributions of the selected compensations, if the linked withholding-tax type provides for the 'Enasarco paid by company' management (otherwise it will detect only the contribution at the expense of agent directly within the payments accounting procedure of module, not recommended setting).
+LINK:
 
+** [Transfer](/docs/finance-area/professional-men/accounting/enasarco-accounting/acquisition) **
 
+** [Rollback](/docs/finance-area/professional-men/accounting/enasarco-accounting/previous) **
 
+ 
 
-
-
+The procedure will detect the Enasarco contributions of the selected payments if the linked withholding type provides for the management of 'Enasarco borne by the company' (otherwise, only the agent's contribution will be detected directly within the payment accounting procedure of the module, a setting that is not recommended).

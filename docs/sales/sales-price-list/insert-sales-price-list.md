@@ -11,7 +11,7 @@ La form si compone di tre parti: Sezione superiore, Articoli e Dettagli.
 I campi di testata obbligatori per l'inserimento di un nuovo listino sono:
 - **Listino**: un listino può essere *Generico* (potenzialmente valido per tutti i clienti) oppure *Personalizzato* (valido per un cliente specifico); è necessario selezionare l'opzione appropriata per determinare il listino da creare.     
 - **Tipo listino**: questo campo è attivo solo se il listino è generico e contiene il [Tipo listino](/docs/configurations/tables/sales/sales-price-lists).      
-- **Cliente**: questo campo è attivo solo se il listino è personalizzato e contiene il cliente per il quale viene creato il listino.    
+- **Cliente**: questo campo è attivo solo se il listino è personalizzato e contiene il cliente per il quale viene creato il listino. In questa modalità si attiva anche il campo Contatto, che permette di scegliere una delle persone di riferimento inserite in anagrafica cliente; sebbene questo campo non influenzi i documenti, è utile per le restrizioni di visualizzazione, permettendo di limitare l’accesso ai soli documenti personali.    
 
 :::important[Importante]
 Per rendere un listino valido per un cliente, è necessario inserirlo in anagrafica cliente. Consultare la [documentazione](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/price-list) dedicata. 
@@ -21,7 +21,7 @@ Per rendere un listino valido per un cliente, è necessario inserirlo in anagraf
 - **Data inizio validità**: contiene la data a partire dalla quale il listino sarà considerato valido; viene proposta la data odierna.    
 
 I campi di testata non obbligatori sono:       
-- **Prezzo ivato**: se attivo, questo flag indica che il listino sarà creato con prezzo ivato, quindi nei suoi articoli non sarà presente la colonna Prezzo, ma solo la colonna Prezzo ivato che riporterà direttamente la somma tra Prezzo e Iva; questo flag viene proposto se presente nella tabella [Tipo listino](/docs/configurations/tables/sales/sales-price-lists) ma è modificabile.      
+- **Prezzo ivato**: se attivo, questo flag indica che il listino sarà creato con prezzo ivato, quindi nei suoi articoli non sarà presente la colonna Prezzo, ma solo la colonna Prezzo ivato che riporterà direttamente la somma tra Prezzo e Iva; questo flag viene proposto se presente nella tabella [Tipo listino](/docs/configurations/tables/sales/sales-price-lists) ma è modificabile. Per una gestione più flessibile, nei [Parametri Listini di Vendita](/docs/configurations/parameters/sales/price-list-parameters), è possibile forzare la visualizzazione sia del prezzo che del prezzo ivato tramite il flag visualizza prezzo e prezzo ivato, indipendentemente dall’impostazione del tipo listino.      
 - **Data fine validità**: se il listino non deve più essere valido dopo una certa data, la data va inserita in questo campo.       
 - **Listino minimo**: questo flag informativo indica che il listino è a prezzi minimi di tentata vendita.       
 - **Configurazione ricerche**: questa impostazione ha due possibili funzioni: mostrare alcuni Extra Data a livello di listino, oppure pilotare alcune informazioni (per esempio il tipo pagamento) per diverse tipologie di operazioni.      
@@ -31,16 +31,14 @@ Infine è presente un **Filtro articoli** che permette di ricercare velocemente 
 
 In questa sezione verranno indicati gli articoli ed eventuali sconti associati a questo listino. Le colonne presenti nella griglia sono:    
 - **Classe/Articolo/Descrizione**: contiene il codice dell'articolo da includere nel listino; per inserire un nuovo articolo nella griglia basterà posizionarsi sulla riga per compilare i vari dati oppure utilizzare il pulsante *Nuovo articolo* presente nella ribbon bar.            
-- **Codice/Descrizione variante**: serve se oltre al codice articolo anche la variante contraddistingue un articolo da un altro.       
-- **Unità di misura**: può essere quella gestionale dell'articolo o una delle sue unità di misura alternative.      
+- **Codice/Descrizione variante**: nelle colonne dedicate alla variante possiamo associare le varianti dell’articolo e ad ognuna il relativo prezzo di vendita, da proporre nei documenti; solo gestendo i listini è possibile gestire la proposta del prezzo per variante.      
+- **Unità di misura**: può essere quella gestionale dell'articolo o una delle sue unità di misura alternative; in sede di creazione dei documenti, in base all’unità di misura specificata, verrà proposto un listino valido per quella unità di misura.      
 - **Marca**: se specificata.      
 - **Quantità**: proposta uguale a 1, è la quantità di riferimento del prezzo; se diversa da 1, quando deve essere calcolato il prezzo viene diviso per la quantità del listino.
 - **Prezzo** riferito alla divisa del listino, questa colonna è visibile se il listino non è a Prezzo ivato.     
 - **IVA**: questo campo viene recuperato dall'anagraica cliente; qualora sul cliente non fosse impostato sarà necessario popolare questo campo con il codice IVA.  
 - **Prezzo Ivato**: il sistema calcola questo prezzo come somma tra il prezzo e l'aliquota del codice IVA inserito.     
 - **Fascia di prezzo**: questa impostazione è utilizzata per selezionare i listini cliente in base alle fasce di prezzo impostabili negli extra data relativi agli articoli; è possibile, a parità di articolo, avere delle discriminanti per le quali il prezzo di listino risulti diverso: basti pensare ai capi d'abbigliamento per i quali al cambiare della taglia varia anche il prezzo di vendita. 
-
-Accanto al tab *Articoli*, sono presenti i tab *Extra Data*, *Note* ed eventuali *Documenti collegati*.      
 
 ## Dettagli
 
