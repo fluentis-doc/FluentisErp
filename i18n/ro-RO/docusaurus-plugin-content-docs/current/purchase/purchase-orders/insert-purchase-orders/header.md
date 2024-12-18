@@ -34,7 +34,7 @@ RIBBON BAR: reprezinta meniul cu butoanele de executie, pentru fiecare operatie 
 | Functie | Functionalitate |
 | --- | --- |
 | Salvează | Salvează ordinul. |
-|  [Preia articole din comenzi de achiziţie](/docs/purchase/purchase-orders/insert-purchase-orders/header-procedures)  | După inserarea furnizorului ordinului, se activează preluarea articolelor din comanda de achiziţie. |
+|  [Preia articole din comenzi de achiziţie]  | După inserarea furnizorului ordinului, se activează preluarea articolelor din comanda de achiziţie. |
 | Preia articole din oferte furnizori | După inserarea furnizorului ordinului, se activează preluarea articolelor din oferte furnizori. |
 | Substituie data prevăzută pentru livrare din linii | După inserarea în antetul ordinului a datei cererii livrării şi/sau datei prevăzute pentru livrare, aceste date pot fi substituite în masă, în liniile articol deja inserate. |
 

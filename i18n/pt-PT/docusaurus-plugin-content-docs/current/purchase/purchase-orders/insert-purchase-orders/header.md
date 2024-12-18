@@ -34,7 +34,7 @@ RIBBON BAR: representa o menu do módulo em questão, ou seja, a área na qual 
 | RibbonFunction | RibbonMeaning |
 | --- | --- |
 | Salvar | Salva a ordem. |
-|  [Retomada dos artigos da encomenda de compra](/docs/purchase/purchase-orders/insert-purchase-orders/header-procedures)  | Depois de ter especificado o fornecedor pela qual emitir a ordem se ativa a retomada dos artigos da encomenda de compra. |
+|  [Retomada dos artigos da encomenda de compra]  | Depois de ter especificado o fornecedor pela qual emitir a ordem se ativa a retomada dos artigos da encomenda de compra. |
 | Retomada dos artigos pelos catálogos fornecedores | Depois de ter especificar o fornecedor pela qual emitir a ordem se ativa a retomada dos artigos pelos catálogos fornecedores. |
 | Substituir a data prev. entrega nas linhas  | Depois de ter especificado a data de pedido entrega e/ou a data prevista entrega no cabeçalho ordem é possível substituir em quantidade tal datas nas linhas artigo já inseridas. |
 
