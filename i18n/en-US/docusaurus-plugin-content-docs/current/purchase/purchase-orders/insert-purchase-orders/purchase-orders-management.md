@@ -16,6 +16,6 @@ This field determines the numbering range of the document being entered and auto
 
 The form contains several tabs:
 
-> - [Header](/docs/purchase/purchase-orders/insert-purchase-orders/header) and its [Procedures](/docs/purchase/purchase-orders/insert-purchase-orders/header-procedures)
-> - [Items](/docs/purchase/purchase-orders/insert-purchase-orders/items)
+> - [Header] and its [Procedures]
+> - [Items]
 > - [Summaries](/docs/purchase/purchase-orders/insert-purchase-orders/summaries)

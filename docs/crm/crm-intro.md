@@ -3,7 +3,7 @@ title: CRM
 sidebar_position: 1
 ---
 
-Il modulo **CRM** (Customer Relationship Management) di Fluentis permette di gestire e ottimizzare le interazioni con i clienti e i potenziali clienti. Le principali funzionalità all'interno del CRM sono progettate per coprire ogni aspetto del ciclo di vita del cliente, dalla raccolta dei primi contatti fino alla gestione post-vendita. 
+Il modulo **CRM** (Customer Relationship Management) di Fluentis permette di gestire e ottimizzare le interazioni con i clienti e i potenziali clienti. Le principali funzionalità all'interno del CRM sono progettate per coprire ogni aspetto del ciclo di vita del cliente, dalla raccolta dei primi contatti fino alla gestione post-vendita  
 
 ### Moduli dell'area
 

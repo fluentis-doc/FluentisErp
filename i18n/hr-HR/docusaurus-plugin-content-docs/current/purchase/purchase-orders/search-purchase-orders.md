@@ -19,7 +19,7 @@ Dodavanje novih polja u obrasce pretraživanja
 
 *Posebni gumbi*:
 
-> **Novo**: omogućuje [Stvaranje nove narudžbe](/docs/purchase/purchase-orders/insert-purchase-orders/purchase-orders-management);  
+> **Novo**: omogućuje [Stvaranje nove narudžbe];  
 > **Dupliciraj**: gumb za dupliranje dokumenta. Omogućuje stvaranje kopije dokumenta, zadržavajući sve uvjete izvornog dokumenta, ali s trenutnim podacima. Koristi se za često umetanje narudžbi od istog Dobavljača.
 
 *Postupak*:

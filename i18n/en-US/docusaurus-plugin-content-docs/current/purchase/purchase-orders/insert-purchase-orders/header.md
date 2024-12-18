@@ -41,7 +41,7 @@ If the order is completed using the *Project Execution* procedure, the *Supplier
 
 *Specific Buttons*
 
-> **Project Execution**: calls the [procedure](/docs/purchase/purchase-orders/insert-purchase-orders/header-procedures) to create a supplier order from a purchase order. It is activated by entering the supplier and the type of supplier order.  
+> **Project Execution**: calls the [procedure] to create a supplier order from a purchase order. It is activated by entering the supplier and the type of supplier order.  
 > **Replace Expected Delivery Date in Lines**: after specifying the *Requested Delivery Date* and/or *Delivery Date* in the order header, it is possible to mass replace these dates in the already entered item lines.
 
 ### Payments
