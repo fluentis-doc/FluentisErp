@@ -105,7 +105,7 @@ Se il documento nasce da una commessa o da un'offerta fornitore, il tipo pagamen
  
 Vengono proposti solo gli sconti predefiniti ripresi dall'*Anagrafica fornitore > tab Sconti*. Possono essere modificati/cancellati dall'utente.
  
-import TabDiscount from './../../../../import/sections/tab-discount.md'
+import TabDiscount from './../../import/sections/tab-discount.md'
  
 <TabDiscount />
  
@@ -123,7 +123,7 @@ Opzionalmente si possono aggiungere i dettagli della *Targa* del vettore e la *D
  
 ### 2.7 Extra Data
  
-import TabExtraData from './../../../../import/sections/tab-extra-data.md'
+import TabExtraData from './../../import/sections/tab-extra-data.md'
  
 <TabExtraData />
  
@@ -162,7 +162,7 @@ Per completare la procedura, bisognerà cliccare sul pulsante Evasione, che andr
  
 In questo tab vengono inseriti tutti gli articoli con i relativi dati.
  
-import InsertMode from './../../../../import/sections/insert-mode.md'
+import InsertMode from './../../import/sections/insert-mode.md'
  
 <InsertMode />
  
@@ -170,7 +170,7 @@ Per inserire un nuovo articolo nella griglia, basterà posizionarsi sulla riga p
  
 ### 3.1 Dati obbligatori
  
-import RowNumber from './../../../../import/fields/row-number.md'
+import RowNumber from './../../import/fields/row-number.md'
  
 <RowNumber />
  
@@ -184,25 +184,25 @@ import RowNumber from './../../../../import/fields/row-number.md'
 Se si parte direttamente con l'inserimento dell'articolo, la sua classe, il codice e il tipo riga (*Articolo codificato*) vengono inseriti automaticamente.
 :::
  
-import ItemClassDescription from './../../../../import/sections/item-class-description.md'
+import ItemClassDescription from './../../import/sections/item-class-description.md'
  
 <ItemClassDescription />
  
-import UM from './../../../../import/fields/item-um.md'
+import UM from './../../import/fields/item-um.md'
  
 <UM />
  
-import Quantity from './../../../../import/fields/item-quantity.md'
+import Quantity from './../../import/fields/item-quantity.md'
  
 <Quantity />
  
-import Price from './../../../../import/fields/item-price.md'
+import Price from './../../import/fields/item-price.md'
  
 <Price />
  
 In assenza del listino, il dato proposto può essere ripreso dal *costo ultimo* di anagrafica articolo, se nei [Parametri ordini fornitori](/docs/configurations/parameters/purchase/purchase-orders-parameters) il flag *Costo a zero in assenza di listini* non è attivo.
  
-import Vat from './../../../../import/fields/item-vat.md'
+import Vat from './../../import/fields/item-vat.md'
  
 <Vat />
  
@@ -268,25 +268,25 @@ All'interno di questo tab vengono riportate/inserite ulteriori informazioni rela
  
 ### 3.5 Analitica
  
-import TabAnalytic from './../../../../import/sections/tab-analytic.md'
+import TabAnalytic from './../../import/sections/tab-analytic.md'
  
 <TabAnalytic />
  
 ### 3.6 Extra data
  
-import DocItemExtraData from './../../../../import/sections/doc-item-extradata.md'
+import DocItemExtraData from './../../import/sections/doc-item-extradata.md'
  
 <DocItemExtraData />
  
 ### 3.7 Documenti allegati
  
-import DocAttachDocument from './../../../../import/sections/doc-attach-document.md'
+import DocAttachDocument from './../../import/sections/doc-attach-document.md'
  
 <DocAttachDocument />
  
 ### 3.8 Sezione valori
  
-import SalesValuesSection from './../../../../import/sections/item-values-section.md'
+import SalesValuesSection from './../../import/sections/item-values-section.md'
  
 <SalesValuesSection />
  
@@ -296,13 +296,13 @@ Nelle diverse sezioni di questo tab sono presentate le informazioni principali d
  
 ### 4.1 Sconti finali
  
-import SummariesFinalDiscount from './../../../../import/sections/summaries-final-discount.md'
+import SummariesFinalDiscount from './../../import/sections/summaries-final-discount.md'
  
 <SummariesFinalDiscount />
  
 ### 4.2 Spese
  
-import SummariesExpenses from './../../../../import/sections/summaries-expenses.md'
+import SummariesExpenses from './../../import/sections/summaries-expenses.md'
  
 <SummariesExpenses />
  
@@ -320,6 +320,6 @@ In questa griglia vengono riportate le scadenze calcolate in base alle soluzioni
  
 ### 4.6 Totali documento
  
-import SummariesDocumentTotal from './../../../../import/sections/summaries-document-total.md'
+import SummariesDocumentTotal from './../../import/sections/summaries-document-total.md'
  
 <SummariesDocumentTotal />

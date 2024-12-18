@@ -11,7 +11,7 @@ Per abilitare la gestione delle unità di misura alternative, è necessario atti
 
 L'unità di misura principale, obbligatoria, viene definita per ogni articolo nella sua anagrafica e non può essere modificata dopo l’utilizzo dell’articolo nei documenti o nei movimenti di magazzino. L'unità di misura alternativa, invece, consente di gestire il prodotto in un'unità diversa rispetto a quella principale e può essere impostata nel tab [Unità di Misura Alternative](/docs/erp-home/registers/items/create-new-items/item-registry/alternative-um) dell’anagrafica articolo.
 
-Nei documenti, l'unità di misura principale viene mostrata nella griglia degli [Articoli](/docs/purchase/purchase-orders/insert-purchase-orders/items), mentre il widget dell'unità di misura alternativa è visibile nel tab "Dati articolo", contenente i campi "Quantità Alternativa" e "Prezzo Unità di Misura Alternativa", ma solo se il flag "Gestione Doppia Unità di Misura" è attivo nei parametri del modulo.
+Nei documenti, l'unità di misura principale viene mostrata nella griglia degli [Articoli], mentre il widget dell'unità di misura alternativa è visibile nel tab "Dati articolo", contenente i campi "Quantità Alternativa" e "Prezzo Unità di Misura Alternativa", ma solo se il flag "Gestione Doppia Unità di Misura" è attivo nei parametri del modulo.
 
 Se il flag "Proposta Automatica Unità di Misura Alternativa" è abilitato, il sistema proporrà automaticamente l'unità di misura alternativa con il flag "Predefinito" attivo nell’anagrafica dell’articolo, calcolando e inserendo automaticamente la quantità alternativa utilizzando il fattore di conversione.
 

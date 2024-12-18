@@ -38,7 +38,7 @@ RIBBON BAR: il représente le menu de la forme en objet, à savoir la zone dan
 | RibbonFunction | RibbonMeaning |
 | --- | --- |
 | Enregistrer | Il enregistre l'ordre. |
-|  [Reprise des articles à commande d'achat](/docs/purchase/purchase-orders/insert-purchase-orders/header-procedures)  | Après avoir spécifié le fournisseur auquel émettre l'ordre s'active la reprise des articles par commande d'achat. |
+|  [Reprise des articles à commande d'achat]  | Après avoir spécifié le fournisseur auquel émettre l'ordre s'active la reprise des articles par commande d'achat. |
 | Reprise des articles par les catalogues fournisseurs | Après avoir spécifié le fournisseur auquel émettre l'ordre s'active la reprise des articles par les catalogues fournisseurs. |
 | Remplacer la date de livraison prévue dans les lignes | Après avoir spécifié la date de livraison demandée et/ou la date prévue de livraison en en-tête ordre est possible remplacer en masse telle date dans les lignes article déjà insérés. |
 
