@@ -36,7 +36,7 @@ Na ovoj kartici, korisnik ima mogućnost unosa filtera za pretraživanje otpremn
 
 *Reference povrata*
 
-**Zadrži povratnu referencu**: ako je postavljena ova zastava, u kartici [Artikli](/docs/purchase/purchase-invoices/insert-purchase-invoice/items) računa bit će prikazan *bilješka o artiklu* koja će uzeti reference otpremnice iz koje je račun stvoren. Sadržaj ove napomene mora biti unesen u polje *Opis*, prema parametrima opisanim u oznaci.
+**Zadrži povratnu referencu**: ako je postavljena ova zastava, u kartici [Artikli] računa bit će prikazan *bilješka o artiklu* koja će uzeti reference otpremnice iz koje je račun stvoren. Sadržaj ove napomene mora biti unesen u polje *Opis*, prema parametrima opisanim u oznaci.
 
 *Specifično dugme* 
 

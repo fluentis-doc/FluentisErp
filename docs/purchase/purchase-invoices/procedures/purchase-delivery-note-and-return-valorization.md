@@ -32,7 +32,7 @@ A differenza delle due procedure analoghe [Valorizzazione DDT di acquisto](/docs
 
 *Riferimenti DDT*
 
-- **Metti riferimenti DDT**: se questo flag è impostato, nel tab [Articoli](/docs/purchase/purchase-invoices/insert-purchase-invoice/items) della fattura verrà visualizzato un *Articolo nota* che riprenderà i riferimenti del DDT dal quale è stata creata la fattura. Il contenuto di questa nota deve essere inserito nel campo *Descrizione*, secondo i parametri descritti nella label. 
+- **Metti riferimenti DDT**: se questo flag è impostato, nel tab [Articoli] della fattura verrà visualizzato un *Articolo nota* che riprenderà i riferimenti del DDT dal quale è stata creata la fattura. Il contenuto di questa nota deve essere inserito nel campo *Descrizione*, secondo i parametri descritti nella label. 
     
     *Esempio*: ![](/img/it-it/purchase/purchase-invoices/procedures/purchase-delivery-note-valorization/image06.png). Se il DDT ha il numero 5 e la data 11.09.2024, l'articolo nota nella fattura sarà: 'DDT riferimento no 5 del 11.09.2024'.
 
@@ -45,7 +45,7 @@ A differenza delle due procedure analoghe [Valorizzazione DDT di acquisto](/docs
 
 *Riferimenti rientro*
 
-- **Metti riferimenti rientri**: se questo flag è impostato, nel tab [Articoli](/docs/purchase/purchase-invoices/insert-purchase-invoice/items) della fattura verrà visualizzato un *Articolo nota* che riprenderà i riferimenti del rientro dal quale è stata creata la fattura. Il contenuto di questa nota deve essere inserito nel campo *Descrizione*, secondo i parametri descritti nella label. 
+- **Metti riferimenti rientri**: se questo flag è impostato, nel tab [Articoli] della fattura verrà visualizzato un *Articolo nota* che riprenderà i riferimenti del rientro dal quale è stata creata la fattura. Il contenuto di questa nota deve essere inserito nel campo *Descrizione*, secondo i parametri descritti nella label. 
 
 
 :::tip Ricorda
