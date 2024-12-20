@@ -1,63 +1,52 @@
 ---
-title: Il sistema Fluentis ERP
+title: Struttura della documentazione
 sidebar_position: 2
 ---
 
-Adottare un sistema ERP di nuova generazione è diventato un requisito fondamentale per le aziende che cercano di ottenere più efficienza e governance nella propria gestione aziendale. Grazie alle funzionalità avanzate e all’integrazione di tecnologie emergenti, Fluentis ERP supporta le aziende nel gestire meglio i propri processi aziendali e nel prendere decisioni più informate, per rimanere competitive sul mercato globale.
+Grazie alle funzionalità avanzate e all’integrazione di tecnologie emergenti, Fluentis ERP supporta le aziende nel gestire meglio i propri processi aziendali e nel prendere decisioni più informate, per rimanere competitive sul mercato globale.
 
-Con Fluentis ERP puoi:
+La documentazione è organizzata in diverse sezioni per facilitare la navigazione e l'accesso alle informazioni:
 
-**Iniziare subito**  
-Grazie al Cloud e ai processi pre-configurati.
+### Impostazioni
 
+Descrive le configurazioni iniziali, le tabelle, i parametri e gli strumenti comuni necessari per personalizzare Fluentis ERP secondo le esigenze specifiche dell'azienda.
 
-**Crescere senza limiti**  
-Ottieni l’agilità, la flessibilità e la scalabilità di cui la tua azienda ha bisogno per supportare l’innovazione e la crescita.
+### Anagrafiche
+Include informazioni dettagliate sulla gestione dei contatti, del piano dei conti, degli articoli, della produzione e dei dipendenti.
 
-**Avere in ogni momento una visione completa sul Business**  
-Accedi a informazioni in tempo reale sui KPI dell’impresa grazie alla Business Analytics integrata.
+### Aree Funzionali
 
+La documentazione copre le diverse aree funzionali del sistema, tra cui:
 
-**Dedicarti al tuo Business**  
-Al resto ci pensa Fluentis: grazie a un’offerta applicativa completa e a numerosi dipartimentali integrati, puoi gestire facilmente ogni area aziendale, senza dover integrare software di terze parti.
+- **Amministrativa**: Gestione delle dichiarazioni, registrazioni contabili, partite, cespiti e fatturazione elettronica.
+- **Tesoreria**: Gestione dei conti correnti, pagamenti fornitori, rischio cliente, cash flow e portafoglio effetti.
+- **Controlling**: Chiusure infrannuali, riclassificazioni, budgeting, contabilità gestionale e calcolo dei costi.
+- **CRM**: Gestione dei contatti CRM, newsletter, campagne marketing, opportunità, previsioni di vendita e helpdesk.
+- **Acquisti e Vendite**: Gestione delle richieste di acquisto, ordini fornitori, ricevimento merci, offerte, ordini cliente, DDT e fatture.
+- **Logistica**: Gestione degli articoli, magazzino, lotti, picking, inventari fisici, UDC, piani di carico e spedizioni.
+- **Pianificazione e Produzione**: Gestione delle commesse di produzione, MRP, avanzamento produzione e controllo produzione.
+- **Conto Lavoro**: Gestione degli ordini di conto lavoro, DDT di consegna e rientri.
+- **Gestione Progetti**: Gestione dei progetti, richieste di intervento, attività e pianificazione delle risorse.
+- **Qualità**: Gestione dei documenti di origine esterna ed interna, controlli articolo, reclami, azioni correttive e taratura strumenti.
 
+### Release Notes
 
-#### Fluentis ERP  
+Aggiornamenti sulle nuove versioni del software, con dettagli sulle modifiche e miglioramenti apportati.
 
-**È un ERP Cloud Native**  
-Grazie alla sua architettura nativa in cloud, Fluentis offre performance migliori a costi inferiori, sistemi più affidabili e velocemente scalabili, garantendo un regime di sicurezza molto elevato.
-Tecnologia Avanzata: flessibilità, scalabilità, efficienza
-L’innovazione continua è un concetto chiave della filosofia Fluentis, permette alle aziende di essere sempre allineate con i trend della “Digital Transformation” e di poter cogliere le opportunità da essa derivanti.
+### Formazione
 
-**Accessibilità Totale: multi piattaforma e multi device**  
-Fluentis consente di lavorare in modo sincronizzato su diversi dispositivi e in diversi ambienti, permettendo di accedere ai dati aziendali in qualsiasi momento e ovunque ti trovi.
- 
-**Completa copertura funzionale**  
-Fluentis copre un'ampia e completa suite di soluzioni che spaziano dalla gestione Contabile e Finanziaria, ai flussi documentali degli Acquisti e delle Vendite, fino alla gestione completa dei flussi Logistico-Produttivi.
+Include FAQ e video tutorial per approfondire l'apprendimento e l'utilizzo efficace del sistema.
 
-**Disegno e ottimizzazione dei processi**  
-Grazie alle tecniche di BPMN, Fluentis è in grado di monitorare, ottimizzare e integrare tra loro i vari processi aziendali, creando efficienza tramite l'automazione delle attività ripetitive e/o non a valore aggiunto.
+### Accesso Multilingua
 
-**Processi ottimizzati**  
-Grazie alle tecniche di BPMN, Fluentis è in grado di monitorare, ottimizzare e integrare tra loro i vari processi aziendali, creando efficienza tramite l'automazione delle attività ripetitive e/o non a valore aggiunto.
+La documentazione è disponibile in diverse lingue, tra cui: Italiano, Inglese, Croato e Rumeno per supportare utenti di diverse nazionalità.
 
-**Semplice da customizzare**  
-Fluentis è ingegnerizzato per realizzare, in tempi rapidi, personalizzazioni anche molto complesse per adattarsi alle specifiche esigenze del tuo settore.
+### Risorse Aggiuntive
 
-**Integrabilità con Software di terze parti**  
-Fluentis è dotato di un software ESB integrato, Bizlink, che permette di interscambiare dati e processi con altri applicativi e con altri ERP in modo sicuro, documentato e dinamico.
+Oltre alla documentazione, sono disponibili ulteriori risorse per approfondire la conoscenza di Fluentis ERP:
 
-**Implementazione rapida con il Fast Start**  
-Grazie alla configurazione Fast Start di Fluentis, puoi essere operativo in pochi minuti con una serie di dati predefiniti che possono eventualmente poi essere ritoccati e modificati in funzione delle specifiche esigenze.
+- **Fluentis Live Update**: Informazioni sugli aggiornamenti in tempo reale del sistema.
+- **Fluentis Training**: Piattaforma dedicata alla formazione degli utenti.
+- **Integrazioni**: Dettagli sulle possibilità di integrazione con altri sistemi e applicazioni.
 
-**Intelligenza Artificiale Applicata**  
-L'utilizzo dell'Intelligenza Artificiale conversazionale, unita alle tecniche di Generative AI, in Fluentis ERP consentono di automatizzare molte attività e di semplificare il processo decisionale.
- 
-**Dati al sicuro**  
-Con Fluentis ERP i dati aziendali vengono archiviati in data center sicuri e altamente protetti, con sistemi di sicurezza  su più livelli. Inoltre ogni giorno viene realizzata una copia di sicurezza dei dati come garanzia ulteriore dal rischio che vengano cancellati o persi.
-
-**ERP multi-lingua, multi-valuta, multi-fiscalità**  
-Con Fluentis puoi configurare un gruppo aziendale per la gestione contemporanea di aziende italiane ed estere, installare lingue specifiche per gli utenti di altre nazionalità, configurare le diverse fiscalità dei Paesi interessati.
-
-**User Experience**  
-Fluentis ERP offre un’interfaccia piacevole e intuitiva, finalizzata all’ottimizzazione della user experience e della learning experience dell’operatore, in modo da consentire all’azienda di recuperare risorse importanti soprattutto nel percorso di progetto.
+Per ulteriori informazioni, visita il sito web ufficiale: [www.fluentis.com](https://www.fluentis.com/).

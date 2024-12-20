@@ -30,7 +30,7 @@ In questo tab, l'utente ha la possibilità di inserire filtri per cercare i DDT 
 
 *Riferimenti rientro*
 
-- **Metti riferimenti rientri**: se questo flag è impostato, nel tab [Articoli] della fattura verrà visualizzato un *Articolo nota* che riprenderà i riferimenti del rientro dal quale è stata creata la fattura. Il contenuto di questa nota deve essere inserito nel campo *Descrizione*, secondo i parametri descritti nella label. 
+- **Metti riferimenti rientri**: se questo flag è impostato, nel tab [Articoli](/docs/purchase/purchase-invoices/insert-purchase-invoice/items) della fattura verrà visualizzato un *Articolo nota* che riprenderà i riferimenti del rientro dal quale è stata creata la fattura. Il contenuto di questa nota deve essere inserito nel campo *Descrizione*, secondo i parametri descritti nella label. 
 
 :::tip Ricorda
 Per la fatturazione riepilogativa è necessario impostare nei [Parametri raggruppamento fatture](/docs/configurations/parameters/purchase/invoice-grouping/) le condizioni di raggruppamento da utilizzare. 

@@ -29,7 +29,8 @@ Di seguito sono riportati i dati relativi al nuovo lotto da creare:
 > **Ubicazione lotto di destinazione**: indica l'ubicazione nella quale verrà caricato il lotto di destinazione.
 
 :::note **ATTENZIONE** 
-Le causali di magazzino che possono essere utilizzate in questa procedura sono solo quelle che hanno il flag **Crea lotto da lotto** attivo nella tabella delle [Causali di magazzino](/docs/configurations/tables/logistics/warehouse-templates/).
+Le causali di magazzino che possono essere utilizzate in questa procedura sono solo quelle che hanno il flag **Crea lotto da lotto** attivo nella tabella delle [Causali di magazzino](/docs/configurations/tables/logistics/warehouse-templates/).     
+Per poterlo settare è necessario creare una causale di **Scarico**, con i flag **Gestione lotti** e **Integra quantità iniziale** attivi, il flag **Distinta base** disattivato e deve avere una **contro partita** di **Carico**.
 :::
 
 Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** presente nella *Ribbon bar* per visualizzare i risultati all'interno della griglia di risultato.
@@ -69,7 +70,8 @@ Di seguito sono riportati i dati relativi al nuovo lotto da creare:
 > **Ubicazione lotto di destinazione**: indica l'ubicazione nella quale verrà caricato il lotto di destinazione.
 
 :::note **ATTENZIONE** 
-Le causali di magazzino che possono essere utilizzate in questa procedura sono solo quelle che hanno il flag **Crea lotto da lotto** attivo nella tabella delle [Causali di magazzino](/docs/configurations/tables/logistics/warehouse-templates/).
+Le causali di magazzino che possono essere utilizzate in questa procedura sono solo quelle che hanno il flag **Crea lotto da lotto** attivo nella tabella delle [Causali di magazzino](/docs/configurations/tables/logistics/warehouse-templates/).        
+Per poterlo attivare è necessario creare una causale di **Scarico**, con i flag **Gestione lotti** e **Integra quantità iniziale** attivi, il flag **Distinta base** disattivato e deve avere una **contro partita** di **Carico**.
 :::
 
 Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** presente nella *Ribbon bar* per visualizzare i risultati all'interno della griglia di risultato.

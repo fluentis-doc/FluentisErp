@@ -9,7 +9,7 @@ Attraverso l'impiego delle commesse di acquisto, le aziende possono stabilire co
 
 ### Funzionalità principali
 
-Una volta concordati i contratti con i fornitori e creata la commessa di acquisto, questa può essere evasa all'interno degli ordini fornitore mediante il pulsante di [Evasione da progetto].   
+Una volta concordati i contratti con i fornitori e creata la commessa di acquisto, questa può essere evasa all'interno degli ordini fornitore mediante il pulsante di [Evasione da progetto*.   
 Utilizzando gli appositi [parametri](/docs/configurations/parameters/purchase/purchase-job-orders-parameters/) è possibile rendere obbligatoria l'evasione da commessa quando si crea un nuovo ordine e bloccare la quantità della commessa, in modo da non permettere l'evasione di quantità superiori a quelle predefinite nel contratto.
 
 - Le commesse sono integrate con le anagrafiche dei fornitori e i listini, permettendo la configurazione automatica di sconti, termini di pagamento e altre condizioni specifiche per ciascun fornitore.

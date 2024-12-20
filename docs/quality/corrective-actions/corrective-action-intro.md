@@ -25,9 +25,9 @@ import Link from '@docusaurus/Link';
 ## Per iniziare ad utilizzare   
 
 le **Azioni correttive**:
-- definire un [*Tipo Azione correttiva*](/docs/configurations/tables/quality/corrective-actions/corrective-action-type)   
+- devi definire un [*Tipo Azione correttiva*](/docs/configurations/tables/quality/corrective-actions/corrective-action-type) e relativa *Numerazione*   
 - per agevolare la gestione delle *Azioni correttive* impostare i [*Parametri Azioni correttive*](/docs/configurations/parameters/quality/corrective-actions)   
-- inserire una nuova [*Azione correttiva*](/docs/quality/corrective-actions/corrective-action-management)   
+- devi inserire una nuova [*Azione correttiva*](/docs/quality/corrective-actions/corrective-action-management)   
 
 
 ## Collegamenti con altri moduli

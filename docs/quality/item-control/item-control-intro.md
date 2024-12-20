@@ -44,8 +44,34 @@ import Link from '@docusaurus/Link';
 </div>
 <div className="cardContainer">
     <div className="card">
-###     <Link to="/docs/quality/item-control/certificates-of-analysis/certificate-of-analysis-management">Certificati di Analisi</Link>
+###     <Link to="/docs/quality/item-control/certificates-of-analysis/certificate-of-analysis-management">Certificati di analisi</Link>
         <p>I Certificati di Analisi attestano le avvenute verifiche sul prodotto, il rispetto dei limiti indicati nei Piani di controllo e nelle Schede tecniche correlate e accompagnano la vendita del prodotto.</p>
         <p>A standard sono disponibili le reportistiche di: Certificato di analisi e Dichiarazione di conformità.</p>
     </div>
 </div>
+
+
+## Per iniziare ad utilizzare   
+
+le **Schede tecniche**:
+- devi definire un [*Tipo scheda tecnica*](/docs/configurations/tables/quality/item-control/data-sheets-type)   
+- devi definire un [*Tipo prova*](/docs/configurations/tables/quality/item-control/test-type) che verrà utilizzato nella sessione/tabulatore *Proprietà* delle *Schede tecniche*   
+- per agevolare la gestione delle *Schede tecniche* impostare i [*Parametri Controllo articoli*](/docs/configurations/parameters/quality/item-control) nella sessione delle *Schede tecniche*   
+- devi inserire una nuova [*Scheda tecnica*](/docs/quality/item-control/data-sheets/data-sheet-management)   
+
+i **Piani di controllo**:
+- devi definire un [*Tipo piano di controllo*](/docs/configurations/tables/quality/item-control/control-plan-type) e relativa *Numerazione*   
+- devi definire un [*Tipo prova*](/docs/configurations/tables/quality/item-control/test-type) che verrà utilizzato nella sessione/tabulatore *Prove pianificate* dei [*Piani di controllo*](/docs/quality/item-control/control-plans/control-plan-management)   
+- per agevolare la gestione dei *Piani di controllo* impostare i [*Parametri Controllo articoli*](/docs/configurations/parameters/quality/item-control) nella sessione dei *Piani di controllo*   
+- devi inserire un nuovo [*Piano di controllo*](/docs/quality/item-control/control-plans/control-plan-management)   
+
+i **Controlli articolo**:   
+- devi definire: un [*Tipo controllo articolo*](/docs/configurations/tables/quality/item-control/item-control-type) e uno [*Tipo esito*](/docs/configurations/tables/quality/general/result-type)   
+- devi definire un [*Piano di controllo*](/docs/quality/item-control/control-plans/control-plan-management) e associarlo ad un articolo nella sessione/tabulatore *Articoli associati* oppure ad una fase di un Ciclo di lavoro soggetta a Controllo qualità   
+- per agevolare la gestione dei *Controlli articolo* impostare i [*Parametri Controllo articoli*](/docs/configurations/parameters/quality/item-control) nella sessione/tabulatore del *Controlli articolo*   
+- devi inserire un nuovo [*Controllo articolo*](/docs/quality/item-control/items-control/item-control-management) tramite la funzionalità di [*Importa articoli da controllare*](/docs/quality/item-control/items-control/item-control-import)    
+
+i **Certificati di analisi**:   
+- devi definire un [*Tipo certificati di analisi*](/docs/configurations/tables/quality/item-control/c-o-a-type) e relativa *Numerazione*   
+- per agevolare la gestione dei *Certificati di analisi* impostare i [*Parametri Controllo articoli*](/docs/configurations/parameters/quality/item-control) nella sessione dei *Certificati di analisi*   
+- devi inserire un nuovo [*Certificato di analisi*](/docs/quality/item-control/certificates-of-analysis/certificate-of-analysis-management)   
