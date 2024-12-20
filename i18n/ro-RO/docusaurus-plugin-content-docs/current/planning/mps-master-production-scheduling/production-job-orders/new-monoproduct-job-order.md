@@ -77,6 +77,6 @@ Toate informațiile referitoare la **Estimare cost** pot fi consultate în pagin
 
 ## Extra data
 
-Acest ta conține întregul set de [date suplimentare](/docs/configurations/utility/extra-data/extradata/search-extradata) asociate comenzii de producție.
+Acest tab conține întregul set de [date suplimentare](/docs/configurations/utility/extra-data/extradata/search-extradata) asociate comenzii de producție.
 
 Pentru detalii despre funcționarea comună a form-urilor, vă rugăm să consultați linkul [Funcționalitate, butoane și câmpuri comune](/docs/guide/common).
