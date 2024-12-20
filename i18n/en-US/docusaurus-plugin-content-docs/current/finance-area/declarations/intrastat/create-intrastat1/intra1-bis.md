@@ -3,21 +3,20 @@ title: Intra1 bis
 sidebar_position: 3
 ---
 
-The bis section of intrastat declarations contains detail data of period related to the assignment of goods. The section is compiled by the procedure automatically, but it is possible to edit and to integrate it manually.
+La sezione 'bis' delle dichiarazioni intrastat contiene i dati di dettaglio del periodo, relativo alla cessione di beni. 
 
-At the base of the section there is the grouping button: the intrastat declaration has to be grouped by uniformity of line data.
+La sezione è compilata dalla procedura automaticamente, ma ne è consentita la modifica e l'integrazione manuale.
 
-RIBBON BAR: it represents the Form menu, that is the area in which it is possible to perform actions linked to the procedure in use. The list of features is the following:
+Nella ribbon bar è presente il pulsante di raggruppamento delle righe sulla base dei dati della controparte ed a parità di nomenclatura combinata e natura della transazione oltre che Codice e modo trasporto e paese di destinazione e provincia d'origine (questi ultimi generalmente omogenei in relazione alla stessa controparte).
 
 
 
-| Function | Meaning |
+| Funzione | Significato |
 | --- | --- |
-| Save | Button to save the declaration. |
-|  [Automatic Creation](/docs/finance-area/declarations/intrastat/automatic-creation-intrastat1/automatic-creation)  | Button to refer to the guided procedure of data retrieve from sales area. |
-|  [Create from Records](/docs/finance-area/declarations/intrastat/create-from-records-intrastat1/create-from-records-intrastat1-intro)  | Button to refer to the guided procedure of data retrieve from ledger records. |
-| Create New Detail  | Button to create a new detail line manually. |
-| Delete | Button to delete the selected detail line. |
+| Salva | Pulsante attraverso il quale salvare la dichiarazione. |
+|  [Creazione automatica](/docs/finance-area/declarations/intrastat/automatic-creation-intrastat1/automatic-creation)  | Pulsante che richiama la procedura guidata di ripresa dati dall'area vendite. |
+|  [Creazione da registrazioni](/docs/finance-area/declarations/intrastat/create-from-records-intrastat1/create-from-records-intrastat1-intro)  | Pulsante che richiama la procedura guidata di ripresa dati dalle registrazioni di contabilità. |
+| Cancella | Pulsante per cancellare la riga di dettaglio selezionata. |
 
 
 
