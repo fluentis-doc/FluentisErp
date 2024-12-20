@@ -130,11 +130,15 @@ Occorre previamente importare una o più immagini da utilizzare come logo tramit
 
 ---
 
-### Pulsante Impostazioni generali
-Vogliamo ora focalizzare l’attenzione sul pulsante ‘Impostazioni generali’: questo pulsante va a creare, in un database appena installato, tutta una serie di tabelle di base di default (ad esempio, nazioni, lingue, divise) come pure un piano dei conti ed impostazioni di base di registri iva, causali contabili ecc.
+### PULSANTE IMPOSTAZIONI GENERALI (PER IL LANCIO DELLA PROCEDURA DI FAST START)
+
+questo pulsante crea, in un database appena installato, oppure in una azienda aggiunta alla base dati tutta una serie di dati di base di default; ad esempio, un piano dei conti ed impostazioni di base di registri iva, causali contabili, tipi documenti quali ordini, bolle e fatture  ecc.
+
 Si tratta di una funzionalità molto utile in fase di definizione della strategia per l’ avvio di una nuova società e per la relativa impostazione del software, inquanto, in certi casi, potrebbe essere più conveniente, al fine di rendere il software completamente operativo in tempi contenuti, partire da una situazione di default, facendo poi delle modifiche per adattare ad esempio il piano dei conti, le causali contabili e le altre tabelle di default alla situazione concreta, piuttosto che partire da zero creando queste tabelle ed impostazioni. 
 
-Nel caso sia già presente un’altra società impostata e si stia creando una società ulteriore, (pensiamo al caso del gruppo societario), questo pulsante crea semplicemente le impostazioni specifiche per la nuova società che stiamo creando, ad esempio il piano dei conti le causali contabili ecc., non creerà invece quelle tabelle comuni di base (ad esempio le valute) che sono già esistenti inquanto create al tempo della prima società. 
+:::tip[Più Info]
+per maggiori informazioni di dettaglio vedere [**qui**](/docs/guide/fast-start)
+:::
 
 ### DATI NECESSARI PER LA FATTURAZIONE ELETTRONICA
 
