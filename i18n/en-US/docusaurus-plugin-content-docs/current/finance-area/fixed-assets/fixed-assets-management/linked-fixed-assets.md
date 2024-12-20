@@ -1,20 +1,20 @@
 ---
-title: Linked Fixed Assets
+title: Cespiti Collegati
 sidebar_position: 4
 ---
 
-In 'Linked Fixed Assets' tab it is possible to view and to add 'child' fixed assets cards of the fixed asset in use: this option does not create any automatism on sales of fixed assets or grouping of cards in printing (remain however separated cards). On the contrary the link influences the calculation of depreciations: the child fixed asset will be amortized as regards the activity start date of father fixed asset.
+Nella scheda 'Cespiti collegati' è possibile visualizzare ed aggiungere schede cespiti figli del cespite in uso: questa opzione non crea alcun automatismo a livello di vendita dei cespiti o raggruppamento delle schede in stampa (restano comunque schede separate). Il collegamento ha invece influenza a livello di calcolo degli ammortamenti: il cespite figlio sarà ammortizzato in riferimento alla data di inizio attività del cespite padre.
 
-RIBBON BAR: it represents the Form menu, that is the area in which it is possible to perform actions linked to the fixed asset in management. The list of features is the following:
+![](/img/it-it/finance-area/fixed-assets/fixed-assets-management/linked-fixed-assets/image01.png)
 
 
 
-| Function | Meaning |
+| Funzione | Significato |
 | --- | --- |
-| Edit Fixed Asset | It edits the child fixed asset selected on grid. |
-| Fixed Asset Link | It opens the fixed assets help in order to insert a child fixed asset to the fixed asset in use. |
-| Delete Links with Fixed Asset | It deletes the child fixed asset from fixed asset in use. |
-| View Father Fixed Asset | If the fixed asset in use is a child fixed asset, the button will open in visualization mode the reference fixed asset. |
+| Modifica cespite | Apre in modifica il cespite figlio selezionato in griglia. |
+| Collegamento cespite | Apre l'help cespiti per inserire un cespite figlio al cespite in uso. |
+| Cancella collegamenti con cespite | Elimina il cespite figlio dal cespite in uso. |
+| Visualizza cespite padre | Se il cespite in uso è un cespite figlio, il pulsante apre in visualizzazione il cespite di riferimento. |
 
 
 
