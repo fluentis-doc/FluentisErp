@@ -1,55 +1,55 @@
 ---
-title: Gestione mutui
+title: Bank Loans Management
 sidebar_position: 2
 ---
 
-### Introduzione
+### Introduction 
 
-Dalla presente form è possibile ricercare ed inserire nuovi mutui passivi.
+From this form, it is possible to search and enter new passive bank loans.
 
-La gestione del mutuo passivo permette, nel dettaglio, di inserire tutti i dati relativi, in particolare il piano di ammortamento del mutuo, al fine di procedere successivamente alla contabilizzazione automatica del pagamento delle rate alle scadenze previste.
+The management of the passive bank loan allows, in detail, to enter all related data, particularly the amortization plan of the bank loan, in order to subsequently proceed with the automatic accounting of the payment of installments on the scheduled due dates.
 
-I campi principali esposti nella maschera ono quelli presenti anche nel dettaglio.
+The main fields displayed in the mask are those present in the detail.
 
-Per inserire un nuovo mutuo premere **Nuovo**.
+To enter a new bank loan, press **New**.
 
-Il primo dato obbligatorio da inserire è il tipo di mutuo, tramite una combo box che rinvia all'apposita tabella *Tipi mutuo* (accessibile anche con il tasto destro e comando Apri form).
+The first mandatory data to enter is the type of bank loan, through a combo box that refers to the appropriate table *Bank Loan Types* (also accessible with the right-click and Open form command).
 
-### Tabella tipi mutuo
+### Bank Loan Types Table 
 
-:::note Campi della tabella Tipi Mutuo
-**Tipo Mutuo**: codice per richiamare il dato
+:::note Bank Loan Types Table Fields 
+**Bank Loan Type**: code to recall the data
 
-**Descrizione del tipo mutuo**: descrizione estesa del dato
+**Description of the Bank Loan type**: extended description of the data
 
-**Tipo flusso / Descrizione**: campo per richiamare (nella tabella *Tipi flusso finanziario*) quale tipo di flusso finanziario relativo all'elaborazione del Cash Flow sarà abbinato alle rate mutuo, in modo tale da poterle rappresentare automaticamente nell'elaborazione dei cash flow
+**Flux Type / Description**: field to recall (in the *Financial Flux Types* table) which type of financial flow related to the Cash Flow processing will be associated with the bank loan installments, so they can be automatically represented in the cash flow processing
 
-**Causale**: causale contabile abbinata al fine di permettere la contabilizzazione automatica delle rate
+**Template**: ledger template associated to allow the automatic accounting of the installments
 :::
 
-### Dettaglio nuovo mutuo
+### New Bank Loan Detail 
 
-Gli altri campi obbligatori sono la descrizione del contratto ed i conti principali per le successive operazioni di contabilizzazione
+The other mandatory fields are the contract description and the main accounts for subsequent accounting operations
 
-- Banca: per inserire il conto corrente bancario con cui saranno pagate le rate
-- Debito: per inserire il conto di debito dal quale saranno stornati i pagamenti delle rate, **in linea capitale** (ad es. "Mutui passivi") 
-- Interessi: per inserire il conto sul quale sarà contabilizzata la quota interessi di ogni rata
-- Costi: per inserire il conto dove saà contabilizzata la commissione o gli altri costi di ogni rata
+- Bank: to enter the bank account with which the installments will be paid
+- Debit: to enter the debit account from which the payments of the installments will be debited, **on the principal** (e.g., "Passive Bank Loans")
+- Interest: to enter the account on which the interest portion of each installment will be accounted for
+- Costs: to enter the account where the commission or other costs of each installment will be accounted for
 
-Gli altri campi importanti sono l'importo erogato, la divisa (in particolare se diversa da Euro attiva il relativo tasso di cambio)
+Other important fields include the disbursed amount, the currency (especially if different from Euro to activate the relevant exchange rate)
 
-**TAEG:** tasso di interesse praticato sul mutuo, il dato viene utilizzato dalla procedura di calcolo automatico del piano di ammortamento.
+**EAPR:** interest rate applied to the Bank Loan, the data is used by the automatic calculation procedure of the amortization plan.
 
-Il campo Versione si ricollega al pulsante **Nuova Versione** presente nella form di ricerca che permette, anche dopo l'inserimento del piano di ammortamento e la contabilizzazione di alcune rate, di effettuare delle modifiche nel piano storicizzando la situazione precedente.
+The Version field is connected to the **New Version** button present in the search form which allows, even after entering the amortization plan and the accounting of some installments, to make modifications in the plan while historicizing the previous situation.
 
-Nella griglia di dettaglio viene inserito il piano di ammortamento composto da tutte le rate previste, compilando ola data (che sarà ripresa nella procedura di contabilizzazione), la quota capitale e la quota interessi e le relative commissioni (nella colonna **Costo**)
+In the detail grid, the amortization plan is inserted, composed of all the expected installments, filling in the date (which will be picked up in the accounting procedure), the principal portion, the interest portion, and the related commissions (in the **Cost** column).
 
-Le successive colonne, evidenziate in azzurro, vengono gestite da Fluentis per evidenziare il totale della rata, l'avvenuta contabilizzazione mediante procedura relativa ed il riferimento alla registrazione contabile generata.
+The subsequent columns, highlighted in blue, are managed by Fluentis to highlight the total installment, the completed accounting via the related procedure, and the reference to the generated accounting record.
 
-### Procedure disponibili nella ribbon bar
+### Available Procedures in the Ribbon Bar 
 
-Le procedure disponibili, ovvero Calcola Piano di ammortamento, Cambia date Rate e Aggiorna spese rata, sono le medesime disponibili per la gestione dei leasing, pertanto si rinvia alla [**pagina corrispondente**](/docs/finance-area/leasing/new).
+The available procedures, namely Calculate Depreciation Plan, Change Date Rate, and Update Rate Expenses, are the same available for the management of leases, therefore please refer to the [**corresponding page**](/docs/finance-area/leasing/new).
 
-### Contabilizzazione rate mutuo
+### Accounting of Bank Loan Rate 
 
-Avviene utilizzando i comandi posti nella ribbon bar **Contabilizzazione** ( e **Ripristina contabilizzazione** per annullare la manovra)
+This occurs using the commands placed in the **Accounting** ribbon bar (and **Restore Accounting** to undo the operation).

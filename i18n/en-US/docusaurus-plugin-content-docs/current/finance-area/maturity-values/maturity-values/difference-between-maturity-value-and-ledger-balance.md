@@ -1,50 +1,49 @@
 ---
-title: Differenza partite aperte saldo contabile
+title: Difference Between Open Maturity Values and Ledger Balance 
 sidebar_position: 4
 ---
 
-I dati che è possibile estrarre dalla presente form corrispondono al contenuto della stampa **Differenza tra saldo contabile e partite.**
+The data that can be extracted from this form corresponds to the content of the report **Difference Between Ledger Balance and Mat. Values.**
 
-Il significato della ricerca è quello di verificare le differenze (squadrature) tra i saldi contabili ed i saldi del partitario per ogni cliente e fornitore al fine di correggerle. Dette differenze possono originare da errori nella gestione del partitario o delle scritture contabili (mancato allineamento tra movimento contabile ed apertura partite o incasso / pagamento e chiusura partita).
+The purpose of the search is to verify the differences (discrepancies) between the ledger balances and the balances of the accounts receivable/accounts payable for each customer and vendor in order to correct them. These differences may originate from errors in managing the accounts or accounting entries (mismatch between accounting movements and opening mat. values or collection/payment and closing maturity).
 
-:::danger NOTA IMPORTANTE:
-Nel caso dei **percipienti**, se si adotta il criterio di esposizione delle partite aperte al netto della ritenuta d'acconto (nei parametri del [tipo ritenuta d'acconto](/docs/configurations/tables/finance/withholding-tax-types), le differenze che saranno evidenziate devono essere ignorate (e non da considerare come errori) tenendo inoltre presente che saranno riassorbite all'atto del pagamento del compenso e della chiusura della relativa partita.
+:::danger IMPORTANT NOTE:
+In the case of **professional men**, if the criterion of displaying open mat. values net of withholding tax is adopted (in the parameters of the [withholding tax type](/docs/configurations/tables/finance/withholding-tax-types)), the differences highlighted must be ignored (and not considered as errors), keeping in mind that they will be absorbed at the time of payment of the compensation and the closure of the related maturity.
 :::
 
 
-### **AREA DI FILTRO**:
+### **FILTER AREA**:
 
-**Conto**: filtro principale per estrarre solo un sottoconto di cliente o fornitore. Non filtrando saranno riportati i sottoconti di tutti i clienti e fornitori che presentano differenze.
+**Account**: main filter to extract only a specific customer or vendor detail account. If not filtered, all detail accounts of customers and vendors with differences will be reported.
 
-**Da /  A Data registrazione**: filtro sulle date di registrazione contabile
+**From / To Posting Date**: filter on accounting posting dates.
 
-**Escludi partite chiuse**: attivando il flag verranno ignorate le partite nello stato Chiusa.
+**Exclude closed maturities value**: by activating this flag, mat. values in the Closed status will be ignored.
 
-:::tip **UTILE**
-**Dettagli**: attivando questo flag i risultati saranno scomposti (anzichè raggruppati) evidenziando l'eventuale differenza per ogni singolo movimento contabile rispetto alla partita correlata (o al pagamento relativo in caso di movimento contabile di incasso / pagamento); L'opzione è utile in combinazione con il filtro sul sottoconto dello specifico cliente o fornitore per analizzare come si è formata la squadratura (su quali movimenti contabili) e procedere a correggerla.
+:::tip **USEFUL**
+**Details**: by activating this flag, the results will be disaggregated (instead of grouped), highlighting the potential difference for each individual accounting entry compared to the related maturity (or the corresponding payment in the case of accounting movement of collection/payment); This option is useful in combination with the filter on the detail account of the specific customer or vendor to analyze how the discrepancy has formed (on which accounting movements) and proceed to correct it.
 :::
 
-:::tip **MOLTO UTILE**
-**Visualizzare solo i sottoconti / registrazioni con differenza diversa da zero**: il flag (consigliato) attivo permette di evidenziare solo i sottoconti che presentano delle differenze da correggere nascondendo invece quelli che risultano corretti.
+:::tip **VERY USEFUL**
+**View only detail accounts/recordings with difference different from zero**: the active flag (recommended) allows highlighting only the detail accounts that have differences to correct while hiding those that are correct.
 :::
 
-**Raggruppa per divisa della società**: il flag attivo determina l'esposizione dei movimenti in divisa secondo la divisa della società. Esempio dei movimenti in USD saranno esposti e convertiti in Euro.
+**Grouping by company currency**: the active flag determines the display of movements in currency according to the company's currency. For example, movements in USD will be displayed and converted to Euro.
 
-### **GRIGLIA DEI RISULTATI**:
+### **RESULTS GRID**:
 
 ![](/img/it-it/finance-area/maturity-values/maturity-values/difference-between-maturity-value-and-ledger-balance/image1.png)
 
-Per ogni sottoconto relativo al cliente o fornitore sono visualizzati i totali, rispettivamente, DARE ed AVERE sia per la parte dei movimenti contabili, sia per la parte del partitario ed infine il saldo contabile e di partitario. Quindi una colonna con la differenza.
+For each detail account related to the customer or vendor, the totals are displayed for DEBIT and CREDIT, both for the accounting movements and for the accounts receivable/accounts payable, and finally the ledger balance and account balance. Then a column with the difference.
 
-In questo modo è possibile anche valutare la possibile origne della squadratura.
+In this way, it is also possible to evaluate the possible origin of the discrepancy.
 
-A titolo di esempio: Un totale dare contabile postivo (e quindi un saldo dare contabile positivo) ed un totale dare partite a zero relativamente al sottoconto di un cliente può essere orginato da una apertura dei conti per la quale non si è provveduto anche all'apertura delle partite. 
+For example: A positive accounting debit total (and therefore a positive accounting debit balance) and a zero accounts receivable total for a detail account of a customer can be caused by an opening of the accounts for which the opening of the mat. values was not also provided. 
 
 ---
 
 ### **VIDEO TUTORIALS**
 
-:::important Vedi Anche
-[**VIDEO TUTORIALS SULLE PARTITE APERTE**](/docs/video/finance/intro.md)
+:::important See Also
+[**VIDEO TUTORIALS ON OPEN MAT. VALUES**](/docs/video/finance/intro.md)
 :::
-

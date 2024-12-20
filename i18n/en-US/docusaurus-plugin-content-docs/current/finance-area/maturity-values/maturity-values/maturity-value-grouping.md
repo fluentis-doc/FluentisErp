@@ -1,26 +1,20 @@
 ---
-title: Raggruppamenti partite
+title: Maturity Value Grouping
 sidebar_position: 3
 ---
 
-La ricerca effettuata dalla presente form deve essere utilizzata, in luogo della funzionalità di ricerca Partite, in presenza di raggruppamenti partite.
+The search conducted by this form should be used instead of the Maturity Value search functionality in the presence of maturity value groupings.
 
-La gestione delle partite tramite i raggruppamenti rappresenta infatti una metodologia alternativa e particolare rispetto alla classica, e richiede una visualizzazione specifica per ottenere una situazione chiaramente leggibile.
+Managing maturity values through groupings represents, in fact, an alternative and specific method compared to the classical approach, and requires a specific visualization to obtain a clearly readable situation.
 
-Per ulteriori ** [dettagli sul raggruppamento partite vedere qui.](/docs/finance-area/ledger-records/records/create-ledger-record/mat-val-grouping-tab) **
+For further **[details on maturity value grouping see here.](/docs/finance-area/ledger-records/records/create-ledger-record/mat-val-grouping-tab)**
 
-La stampa  che corrisponde alla presente funzionalità di ricerca è denominata anch'essa** [ Raggruppamento partite.](/docs/finance-area/maturity-values/reports/maturity-value-grouping) **
+The report corresponding to this search functionality is also called **[Maturity Value Grouping.](/docs/finance-area/maturity-values/reports/maturity-value-grouping)**
 
  
 
-**Sottoconto:** filtro principale di selezione del sottoconto relativo al cliente o fornitore.
+**Detail account:** main filter for selecting the detail account related to the customer or vendor.
 
-**Nr. documento:** filtro per l'inserimento del numero di documento (fattura, ricevuta fiscale ecc..) relativo al gruppo partite o alle partite di dettaglio (attivando il flag **Ricerca rif. all'interno del gruppo**).
+**Document No.:** filter for entering the document number (invoice, fiscal receipt, etc.) related to the maturity value group or the detail maturity values (by activating the flag **Search within group**).
 
-**Tipo Gruppo**: Aperto / Chiuso = Benchè le singole partite partite del gruppo possano essere aperte o chiuse da pagamenti di segno opposto, l'intero gruppo si considera chiuso quando tutte le partite sono chiuse ed il totale dare ed avere del gruppo pareggiano. Pertanto è possibile selezionare questa condizione nel filtro.
-
-
-
-
-
-
+**Group Type:** Open / Closed = Although the individual maturity values of the group may be open or closed by payments of opposite signs, the entire group is considered closed when all the maturity values are closed and the total debits and credits of the group balance. Therefore, this condition can be selected in the filter.

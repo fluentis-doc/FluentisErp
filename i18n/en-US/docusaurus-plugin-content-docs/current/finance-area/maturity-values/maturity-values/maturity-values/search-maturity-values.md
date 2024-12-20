@@ -1,67 +1,63 @@
 ---
-title: Ricerca Partite
+title: Search Maturity Values
 sidebar_position: 2
 ---
 
-Questa maschera permette di ricercare la partite tramite i campi presenti nella testata, che rappresenta l'area di filtro per i dati che saranno proposti, e di entrare in modifica di ogni singola partita con un doppio click del mouse.
+This mask allows you to search for mat. values using the fields available in the header, which represents the filtering area for the data that will be proposed, and to enter into editing each single maturity with a double mouse click.
 
-Ulteriori campi utili per il filtro di ricerca sono disponibili aprendo gli **Expander** presenti nella testata.finance-area/maturity-values/maturity-values/image03.png
+Additional useful fields for the search filter are available by opening the **Expanders** present in the header. ![](/img/it-it/finance-area/maturity-values/maturity-values/maturity-values-management/image03.png)
 
-Per default vengono proposte le partite aperte (essendo all'apertura della maschera compilato il campo **Stato** del filtro con la voce Partita Aperta). E' possibile visualizzare tutte le partite semplicemente cancellando la voce dal campo del filtro in modo da non filtrare una tipologia in particolare.
+By default, open mat. values are proposed (since when opening the mask the **State** filter field is filled with the "Opened Maturity" option). It is possible to view all mat. values simply by removing the entry from the filter field so as not to filter a specific type.
 
-Eseguendo la ricerca (comando **Ricerca** nella Ribbon Bar) saranno riportate le partite con tutte le informazioni relative.
+By performing the search (**Search** command in the Ribbon Bar), all mat. values with all related information will be displayed.
 
-**Per i campi di dettaglio visualizzati si rinvia al  [Glossario](/docs/guide/common/glossary/glossary-intro).**
+**For the detail fields displayed, please refer to the [Glossary](/docs/guide/common/glossary/glossary-intro).**
 
-**CAMPI SPECIFICI DI TESTATA:**
+**SPECIFIC HEADER FIELDS:**
 
-**Partite aperte al**: rappresenta la data di riferimento a lla quale considerare aperta la partita (esempio oggi potrebbe essere chiusa ma rappresentandola alla data di ieri potrebbe essere rappresentata come aperta inquanto non era ancora stata pagata). Per utilizzare questo campo togliere lo stato Aperta dal filtro principale **Stato**.
+**Maturity values open at**: represents the reference date at which to consider the maturity as open (for example, today it might be closed, but representing it as of yesterday it might be shown as open since it had not yet been paid). To use this field, remove the Open status from the main **State** filter.
 
-**Con effetti a scadere**: in maniera analoga alle stampe del modulo permette di includere anche quelle partite che sarebbero chiuse ma sono state trasformate in effetti attivi (es. RiBa) e dunque sono interessanti inquanto non ancora incassate definitivamente. Per utilizzare questo campo togliere lo stato Aperta dal filtro principale **Stato**.
+**With bills that fall due**: similarly to the module prints, it allows the inclusion of those mat. values that would be closed but have been transformed into active effects (e.g., C.Ord) and are therefore interesting as they have not yet been definitely collected. To use this field, remove the Open status from the main **State** filter.
 
 
-**Mostra Cauzioni**: campo che rende visibili i depositi cauzionali incassati da clienti. Questi particolari incassi sono rappresentati da partite aventi al loro interno (form di gestione partite, il campo **Conto Cauzione** compilato) Quando vengono chiuse da una registrazione contabile di incasso, nella sezione Libro giornale, al posto di essere movimento come di consueto il conto del cliente, viene movimentato il *Conto Cauzione* presente dentro la partita che viene incassata.
+**Show Deposit Account**: a field that makes visible the deposit guarantees collected from customers. These particular collections are represented by mat. values that have inside them (in the mat. values management form, the **Security Deposit Account** field filled) When they are closed by an accounting entry of collection, in the Journal Book section, instead of moving as usual the customer's account, the *Security Deposit Account* present inside the maturity being collected is moved.
 
-In particolare per ogni riga corrispondente alla partita è presente un comando (+) che permette di visualizzare delle informazioni ulteriori e inizialmente nascoste: si tratta degli eventuali pagamenti collgati alla partita chiusa o parzialmente aperta.
+In particular, for each row corresponding to the maturity, there is a command (+) that allows you to view additional and initially hidden information: it concerns any payments linked to the closed or partially open maturity.
 
 ![](/img/it-it/finance-area/maturity-values/maturity-values/maturity-values-management/image01.png)
 
 ![](/img/it-it/finance-area/maturity-values/maturity-values/maturity-values-management/image02.png)
 
-**CAMPI SPECIFICI PER LA FORM IN OGGETTO**:
+**SPECIFIC FIELDS FOR THIS FORM:**
 
-**In pagamento**: indica che la partita è già stata inserita in una distinta di pagamento fornitori, ma la distinta di pagamento  non è ancora contabilizzata e quindi la chiusura della partita non è ancora avvenuta.
+**In payment**: indicates that the maturity has already been included in a vendor payment list, but the payment list has not yet been accounted for, and therefore the line has not yet been closed.
 
-**Contab.**: indica che la partita è legata ad una registrazione contabile.
+**Accounted**: indicates that the maturity is linked to an accounting entry.
 
-**Non pagabile**: indica che la partita è stata bloccata dall'utente affinchè non sia pagabile. Il blocco può essere impostato direttamente all'atto della creazione oppure in un secondo tempo e sia dalla ** [tab Partite](/docs/finance-area/ledger-records/records/create-ledger-record/maturity-values-tab) ** della registrazione contabile che genera la partita, sia entrando in modifica nella partita stessa dalla form in commento.
+**Not payable**: indicates that the line has been blocked by the user so that it cannot be paid. The block can be set directly at the time of creation or later from either the **[Mat. Values Tab](/docs/finance-area/ledger-records/records/create-ledger-record/maturity-values-tab)** of the accounting entry that generates the maturity or by entering edit mode on the line itself from the comment form.
 
 **Ribbon bar**:
 
 
 
-| Funzione | Significato |
+| Function | Extended Description |
 | --- | --- |
-| Ricerca | Avvia la ricerca dele partite secondo i dati inseriti nel filtro |
-| Nuova Partita | Permette di inserire una nuova partita manualmente |
-| Modifica partita | Entra nella form di modifica della partita selezionata 'Gestione partite' (in alternativa al doppio click del mouse sulla riga da modificare) |
-| Visualizza | Entra nella form 'Gestione partite' in modalità di sola visualizzazione, non sarà posssibile salvare modifiche |
-| Cancella partite selezionate | Cancella la riga selezionata |
-| Cancella pagamenti selezionati | Permette di cancellare i pagamenti collegati alle partite (visibili tramite il tasto + a sinistra delle partite) |
-| Cambia la posizione partite | Fa comparire una form di ricerca della posizione partita permettendo di attribuire lostato selezionato alla partita senza dover entrare nella form di modifica 'Gestione partite' |
-| Aggiorna lo stato delle partite | Esegue un refresh dello stato delle partite per una corretta visualizzazione. |
-| Suddivisione partite | Apre una form pop-up che permette di suddividere la partita selezionata in più partite di importo e scadenza desiderati. **Chiaramente la somma delle partite risultanti deve coincidere con l'importo della partita di partenza.**L'importo della partita iniziale viene proposto nel campo **Suddividi,** a questo punto si devono inserire nelle righe della griglia gli **importi** e le **date di scadenza** delle partite risultanti (esempio da una si vogliono far diventare due o tre) ed il programma si occuperà di eseguire l'operazione in automatico. |
-| Modifica registrazione | Permette di entrare direttamente in modifica della registrazione contabile collegata alla partita selezionata. Se la partita selezionata non è collegata ad una registrazione contabile il pulsante risulterà disabilitato. |
+| Search | Starts the search for mat. values according to the data entered in the filter |
+| New Maturity Value | Allows you to manually enter a new maturity |
+| Edit Maturity Value | Enters the edit form of the selected line 'Mat. Values Management' (as an alternative to double-clicking on the row to modify) |
+| View | Enters the 'Mat. Management Management' form in read-only mode, modifications cannot be saved |
+| Delete Selected Mat. Values | Deletes the selected row |
+| Delete Selected Payments | Allows you to delete payments linked to the mat. values (visible via the + button to the left of the mat. values) |
+| Change Mat. Values Position | Opens a maturity position search form allowing you to assign the selected status to the maturity without entering the edit form 'Mat. Values Management' |
+| Update Mat. Values Status | Refreshes the status of the mat. values for correct display. |
+| Split Mat. Values | Opens a pop-up form that allows you to split the selected maturity into multiple mat. values of desired amount and due date. **Clearly, the sum of the resulting mat. values must match the amount of the starting maturity value.** The amount of the initial maturity is proposed in the **Split** field, at this point you need to enter in the grid rows the **amounts** and **due dates** of the resulting mat. values (for example, from one you want to make two or three) and the program will take care of performing the operation automatically. |
+| Edit Record | Allows you to directly enter into the edit of the accounting entry linked to the selected maturity. If the selected maturity is not linked to an accounting entry, the button will be disabled. |
 
 
-:::tip[NOTA: Aggiorna lo stato delle partite]
-Dalle versioni Fluentis2021 e successive, non sono più presenti triggers e stored procedures che eseguono procedure di calcolo o ricalcolo. Una di queste procedure eseguite a livello di database era il ricalcolo automatico dello stato delle partite, in particolare tipicamente la partita **Scaduta** in luogo della generica partita Aperta. E' pertanto necessario servirsi del pulsante Aggiorna lo stato delle partite per eseguire il ricalcolo dello stato e la corretta visualizzazione di partite (non movimentate da alcun pagamento, anche parziale, il quale le aggiornerebbe nello stato) scadute.
+:::tip[NOTE: Update Maturity Value Status]
+From the Fluentis2021 versions and later, there are no longer triggers and stored procedures that execute calculation or recalculation procedures. One of these procedures executed at the database level was the automatic recalculation of the status of mat. values, particularly typically the **Expired** maturity instead of the generic Open maturity value. It is therefore necessary to use the button to Update Maturity Value Status to perform the recalculation of the status and the correct display of mat. values (not moved by any payment, even partial, which would update them in status) expired.
 
-Si ricorda che volendo ignorare lo stato *Scaduto* a scopo di filtro, è possibile utilizzare i filtri in testata form per data scadenza ottenendo lo stesso risultato.
+It should be noted that if you want to ignore the **Expired** status for filtering purposes, you can use the date filter in the form header to achieve the same result.
 
-Per gli utenti che dispongono del tool ***Supervisor***, è possibile abilitare il task codice FI_MaturitiesOverdueStatusFix
-che setta lo stato *Scaduto* su partite con residuo != 0 e data scadenza < oggi
+For users who have the ***Supervisor*** tool, it is possible to enable the task code FI_MaturitiesOverdueStatusFix which sets the status **Expired** on mat. values with remaining != 0 and due date < today.
 :::
-
-
-

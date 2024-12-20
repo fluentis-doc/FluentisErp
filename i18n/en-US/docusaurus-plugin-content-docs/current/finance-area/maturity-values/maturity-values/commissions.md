@@ -1,33 +1,31 @@
 ---
-title: Commissioni
+title: Commissions
 sidebar_position: 7
 ---
 
-Questa form permette di visualizzare le commissioni (provvigioni agenti) maturate e liquidate.
+This form allows you to view the commissions (agent commissions) earned and paid.
 
-Si riferisce alla gestione delle provvigioni agenti effettuata dal modulo amministrativo.
+It refers to the management of agent commissions carried out by the finance module.
 
-Nella sezione di testata sono presenti i filtri per Agente e per alcuni elementi contabili, dal momento che le righe relative alle provvigioni vengono inserite già nel momento in cui la fattura di vendita che le determina viene contabilizzata.
+In the header section, there are filters for Agent and some accounted elements, since the lines corresponding to the commissions are entered at the time when the sales invoice that determines them is recorded.
 
-:::note Nota
-**Si ricorda che all'interno della causale contabile con la quale viene contabilizzata la fattura deve essere attivo il flag di gestione delle provvigioni, il quale farà in modo che siano valorizzati i dati nell'apposito tab dedicato alle provvigioni presenta all'interno della registrazione contabile.**
+:::note Note
+**Please remember that within the ledger template with which the invoice is recorded, the commission management flag must be active, which will ensure that the data is populated in the appropriate tab dedicated to commissions present within the ledger record.**
 :::
 
 
-Ulteriori elementi di filtro sono i quattro flag che permettono di ricercare provvigioni da liquidare, o provvigioni liquidate o entrambe, e provvigioni non maturate o maturate.
+Additional filtering elements are the four flags that allow searching for commissions to be settled, settled commissions, or both, and commissions not earned or earned.
 
-**N.B.** più precisamente la condizione *APERTA* e *CHIUSA* fa riferimento al fatto che ci sia ancora un residuo da incassare o sia tutto incassato (e quindi la provvigione *chiusa* non avrà altri movimenti).
+**N.B.** more precisely, the condition *OPEN* and *CLOSED* refers to whether there is still a residual amount to be collected or if everything has been collected (thus the *closed* commission will not have any further movements).
 
-Nella griglia di dettaglio le righe corrispondono alle provvigioni calcolate in fattura inserite al momento della contabilizzazione della fattura stessa.
+In the detail grid, the rows correspond to the commissions calculated in the invoice entered at the time of the invoice's accounting.
 
-A seconda del criterio di maturazione definito nell'anagrafica agente, (ad esempio a pagamento avvenuto) verranno create delle righe di "storno" (ad esempio in caso di pagamento parziale o di una delle varie partite aperte, si creerà un riga corrispondente al valore dle pagamento). Per vederle occorre espandere il dettaglio della riga principale con l'apposito pulsante + a sinistra della riga.
+Depending on the maturation criterion defined in the agent register (for example, upon payment), "reversal" rows will be created (for instance, in the case of a partial payment or one of the various open mat. values, a row corresponding to the payment amount will be created). To see them, you need to expand the details of the main row with the appropriate + button on the left of the row.
 
-Nel dettaglio (riportato poi sula riga principale) è presente anche il flag che si valorizza quando la provvigione viene liquidata all'agente.
+In the details (then reported on the main row), there is also a flag that gets activated when the commission is paid to the agent.
 
 ![](/img/it-it/finance-area/maturity-values/commissions.png)
 
 :::tip LINK
-Per la procedura di liquidazione provvigioni specifica della gestione dal modulo amministrativo vedere [**qui**](/docs/finance-area/professional-men/procedures/calculate-commissions)
+For the specific procedure for settling commissions from the finance module, see [**here**](/docs/finance-area/professional-men/procedures/calculate-commissions).
 :::
-
-

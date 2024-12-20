@@ -1,44 +1,37 @@
 ---
-title: Partite sollecitate
+title: Dunned Maturity Values 
 sidebar_position: 2
 ---
 
-Ricerca partite sollecitate 
-
- 
-
-La procedura di ricerca delle partite sollecitate permette all'utente di ricercare i solleciti inseriti precedentemente con lo scopo di visualizzarli, modificarli ed eventualmente cancellarli.
+Search Dunned Maturity Values
 
 
 
-| Funzione | Significato |
+The procedure for searching dunned maturity values allows the user to search for previously entered dunned values in order to view, modify, or possibly delete them.
+
+
+
+| Function | Extended Description |
 | --- | --- |
-| Ricerca | Pulsante per applicare i filtri di ricerca all'intero database dei solleciti inseriti. |
-| Nuovo | Richiama la procedura per inserire un nuovo sollecito. Normalmente il sollecito viene creato con la procedura di creazione automatica, un inserimento di tipo manuale risulta pertanto molto raro e meno efficiente. |
-| Modifica | Richiama la procedura per modificare un sollecito precedentemente inserito. |
-| Visualizza | Richiama la procedura per visualizzare un sollecito precedentemente inserito. |
-| Cancella | Esegue la procedura per cancellare un sollecito precedentemente inserito. |
+| Search | Button to apply search filters to the entire database of entered dunned values. |
+| New | Calls the procedure to insert a new dunning letter. Normally, the dunning letter is created with the automatic creation procedure; therefore, a manual entry is very rare and less efficient. |
+| Modify | Calls the procedure to modify a previously entered dunning letter. |
+| View | Calls the procedure to view a previously entered dunning letter. |
+| Delete | Executes the procedure to delete a previously entered dunning letter. |
 
-**Per le informazioni, relative alle Stampe  e Procedure che seguono, si rinvia alle rispettive voci di Menù**
+**For information related to the Prints and Procedures that follow, please refer to their respective Menu items**
 
 
 
-| Funzione | Significato |
+| Function | Extended Description |
 | --- | --- |
-| Stampa interessi | Richiama la procedura per stampare gli interessi sui ritardi di pagamento. |
-| Stampa lettere di sollecito | Richiama la procedura per stampare le lettere di sollecito. |
+| Print interests | Calls the procedure to print interests on payment delays. |
+| Print dunning letters | Calls the procedure to print dunning letters. |
 
 
 
-| Funzione | Significato |
+| Function | Extended Description |
 | --- | --- |
-|  [Calcolo interessi](/docs/finance-area/maturity-values/procedures/interest-calculation/parameters-interests-in-arrears-calculation)  | Richiama la procedura per gestire il calcolo degli interessi sui ritardi di pagamento. |
-|  [Creazione automatica solleciti](/docs/finance-area/maturity-values/procedures/dunning-letters-automatic-issue)  | Richiama la procedura per effettuare la creazione automatica solleciti.. |
-|  [Generazione solleciti](/docs/finance-area/maturity-values/procedures/generation-of-dunning-letters/generation-of-dunning-letters-intro)  | Richiama la procedura per effettuare la creazione manuale solleciti. |
-
-
-
-
-
-
-
+|  [Interest Calculation](/docs/finance-area/maturity-values/procedures/interest-calculation/parameters-interests-in-arrears-calculation)  | Calls the procedure to manage the calculation of interests on payment delays. |
+|  [Automatic Dunning Letters Creation](/docs/finance-area/maturity-values/procedures/dunning-letters-automatic-issue)  | Calls the procedure to carry out the automatic creation of dunning letters. |
+|  [Generation of Dunning Letters](/docs/finance-area/maturity-values/procedures/generation-of-dunning-letters/generation-of-dunning-letters-intro)  | Calls the procedure to carry out the manual creation of dunning letters. |

@@ -1,14 +1,14 @@
 ---
-title: Pagamenti
+title: Payments 
 sidebar_position: 3
 ---
 
-La presente form permette di ricercare o inserire manualmente i pagamenti.
+This form allows you to search for or manually enter payments.
 
-Si ricorda che il sistema dei partitari Fluentis prevede che una partita sia aperta oppure chiusa, rispettivamente, se ad essa NON è collegato oppure è collegato un pagamento.
+Note that the Fluentis partial system requires that a payment is either open or closed, depending on whether it is NOT connected to a payment or if a payment is connected to it.
 
-Nella presente form si segnala pertanto, in particolare, nell'area di filtro, il **flag Pagamenti non collegati a partite**, molto utile a livello diagnostico per individuare pagamenti orfani della relativa partita e pertanto da considerare dato non congruente da correggere.
+In this form, particularly in the filter area, the **Payments not attached to the maturity values** is highlighted, which is very useful diagnostically for identifying orphan payments without the relevant party and therefore considered inconsistent data to be corrected.
 
-Nel caso in cui venga inserito manualmente un pagamento tramite il comando **Nuovo** (caso particolare e generalmente non tipico, ad esempio per chiudere una partita aperta extra-contabilmente) dopo l'apertura della form di inserimento nuovo pagamento si segnala il comando **Crea da partite / pagamenti**, che permette di ricercare la partita da chiudere creando il pagamento collegato in modo automatico.
+In the event that a payment is manually entered using the **New** command (a particular and generally atypical case, for example, to close an open payment extra-accounting), after opening the new payment entry form, the **Create from maturity values/payments / pagamenti** command is indicated, which allows you to search for the party to close while automatically creating the connected payment.
 
-Utile anche il comando **Collegamento registrazioni** per ricostruire il legame (mancante) tra il pagamento e la registrazione contabile relativa se necessario.
+The **Recording Link** command is also useful for reconstructing the (missing) link between the payment and the related accounting entry if necessary.
