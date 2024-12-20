@@ -1,19 +1,19 @@
 ---
-title: Search Adjustment
+title: Ricerca Assestamento
 sidebar_position: 1
 ---
 
-RIBBON BAR: it represents the form menu, that is the area in which it is possible to perform actions. The list of features is the following:
+In questa form è possibile ricercare, per eventuali modifiche, le elaborazioni delle scritture di assestamento precedentemente elaborate, oppure inserirne di nuove.
 
 
 
-| Function | Meaning |
+| Funzione | Significato |
 | --- | --- |
-| Search Adjustement | Button to search Adjustment Records. |
-| Adjustement Creation | Button to create Adjustment Records. |
-| Button to create Adjustment Records | Button to edit Adjustment Records. It can be activated once that an Adjustment Record has been selected. |
-| View | Button to view the Adjustment Record. It can be activated once that an Adjustment Record has been selected. |
-| Delete | Button to delete the account closures. It can be activated once that an account closing has been selected. |
+| Ricerca assestamento | Pulsante per la ricerca delle scritture di assestamento. |
+| Nuovo | Pulsante per la creazione delle scritture di assestamento. |
+| Modifica | Pulsante, attivabile dopo aver selezionato una scrittura di assestamento, che ne permette la modifica. |
+| Visualizza | Pulsante, attivabile dopo aver selezionato una scrittura di assestamento, che ne permette la visualizzazione. |
+| Cancella | Pulsante, attivabile dopo aver selezionato una chiusura conti, che ne permette la cancellazione. |
 
 
 
