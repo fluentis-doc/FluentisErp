@@ -37,7 +37,7 @@ RIBBON BAR: rappresenta il menu della Form in oggetto, ossia l'area nella quale 
 |  [Contabilizzazione effetti a fornitore](/docs/treasury/bills-holding/accounting/bills-accounting-by-vendor/accounting)  | Richiama la procedura per effettuare la contabilizzazione effetti a fornitore e chiudere il conto fornitore. |
 |  [Contabilizzazione distinte](/docs/treasury/bills-holding/accounting/lists-accounting/accounting)  | Richiama la procedura per effettuare la contabilizzazione della distinta e valorizzare il conto di presentazione. |
 |  Contabilizzazione accrediti  | Richiama la procedura per effettuare la contabilizzazione dell'accredito in conto. |
-|  [Generazione file Riba](/docs/treasury/bills-holding/cash-order-rid-lcr/cash-order-rid-lcr-creation/cash-order-files-creation)  | Richiama la procedura per generare il tracciato telematico Riba. |
+|  [Generazione file Riba]  | Richiama la procedura per generare il tracciato telematico Riba. |
 |  [Generazione file Rid]  | Richiama la procedura per generare il tracciato telematico Rid. |
 |  [Importazione insoluti](/docs/treasury/bills-holding/procedures/import-unpaids)  | Richiama la procedura di importazione del tracciato telematico Insoluti. |
 |  [Contabilizzazione insoluti](/docs/treasury/bills-holding/accounting/unpaid-accounting/unpaids)  | Richiama la procedura di contabilizzazione insoluti, con contestuale riapertura della partita cliente secondo i parametri del modulo. |
