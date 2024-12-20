@@ -1,22 +1,28 @@
 ---
-title: Cost Centres Analysis
+title: Analisi Centri di Costo
 sidebar_position: 1
 ---
 
-Through the 'Cost Centres Analysis' report it is possible to get accounting movements (those whose every single cost centre has got valorization) detail report, adding the amounts on the cost centre itself. among the mask filters, it can be interesting explain more details about 'Print until number level detail' filter: because cost centres have a multilevel structure, this option (which execute a specific table structure report) gives the user the chance to get specific level report which contains the amount of all the inferior levels.
-
-RIBBON BAR: it represents the Form menu, that is the area in which it is possible to perform actions. The list of features is the following: 
+Il report dell'analisi centri di costo consente di stampare il dettaglio dei movimenti contabili che hanno valorizzato ogni singolo centro di costo, totalizzando gli importi sul centro di costo stesso. 
 
 
 
+E' presente nella form un'area di filtro con diversi campi, tra i quali i principali sono il centro aziendale ed il conto contabile.
+
+Nell'area inferiore sono presenti i criteri di raggruppamento.
+
+Un tipico criterio di raggruppamento utile è il centro aziendale per osservare i movimenti dei vari conti distinti per ogni centro.
+
+In merito all'utilizzo dei criteri di raggruppamento si veda  **[Riepilogo movimenti per causale](/docs/finance-area/ledger-records/accounting-report/movements-summary-for-template)**.
 
 
 
 
-| Function | Meaning |
+
+| Funzione | Significato |
 | --- | --- |
-| Preview | Command to launch cost centres analysis print preview. |
-| Print | Command to launch cost centres analysis print. |
+| Anteprima | Pulsante per eseguire l'anteprima di stampa dell'analisi centri di costo. |
+| Stampa | Pulsante per eseguire la stampa fisica dell'analisi centri di costo. |
 
 
 
