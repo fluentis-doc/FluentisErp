@@ -37,7 +37,7 @@ RIBBON BAR: representa o menu do módulo em questão, ou seja, a área na qual 
 |  [Contabilização efeitos ao forncedor](/docs/treasury/bills-holding/accounting/bills-accounting-by-vendor/accountingo procedimento para efetuar a contabilização dos efeitos ao fornecedor e fechar a conta fornecedor. |
 |  [Contabilização listas](/docs/treasury/bills-holding/accounting/lists-accounting/accounting)  | Refere-se ao procedimento para efetuar a contabilização da lista e valorizar a conta de apresentação. |
 |  Contabilização créditos  | Refere-se ao procedimento para efetuar a contabilização do crédito na conta. |
-|  [Geração arquivo Recibo bancário](/docs/treasury/bills-holding/cash-order-rid-lcr/cash-order-rid-lcr-creation/cash-order-files-creation)  | Refere-se ao procedimento para gerar o traçado telemático recibo bancário. |
+|  [Geração arquivo Recibo bancário]  | Refere-se ao procedimento para gerar o traçado telemático recibo bancário. |
 |  [Geração arquivo DDA](/docs/treasury/bills-holding/cash-order-rid-lcr/cash-order-rid-lcr-creation/rid-file-creation)  | Refere-se ao procedimento para gerar o traçado telemático debito direto autorisado. |
 |  [Importação não pagos](/docs/treasury/bills-holding/procedures/import-unpaids)  | Refere-se ao procedimento de importação do traçado telemático não pagos. |
 |  [Contabilização não pagos](/docs/treasury/bills-holding/accounting/unpaid-accounting/unpaids)  | Refere-se ao procedimento de contabilização não pagos, com a contextual reabertura da partida cliente em relação os parâmetros do módulo. |

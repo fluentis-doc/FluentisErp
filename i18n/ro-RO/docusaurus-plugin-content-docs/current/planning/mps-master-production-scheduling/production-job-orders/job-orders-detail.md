@@ -1,5 +1,5 @@
 ---
-title: Commesse di produzione (dettagli)
+title: Comenzi de producție (detalii)
 sidebar_position: 3
 ---
 
@@ -7,14 +7,22 @@ import SearchForm from './../../../import/sections/search-form.md'
 
 <SearchForm />
 
-In base allo stato della commessa (quindi schedulata, esecutiva etc), la riga della commessa avrà un colore diverso. I colori che si possono abbinare allo stato della commessa, vengono stabiliti all'interno dei [Parametri MPS](/docs/configurations/parameters/production/mps-parameters), nella sezione *Colori Commesse*.  
+În funcție de starea comenzii (deci programată, executivă etc.), linia comenzii va avea o culoare diferită. Culorile care pot fi asociate cu starea comenzii sunt stabilite în [Parametrii MPS](/docs/configurations/parameters/production/mps-parameters), în secțiunea *Culori comenzi*.  
 
-Sempre da questa form è possibile *creare nuove commesse*, sia **monoprodotto** che **multiprodotto** cliccando sui rispettivi pulsanti presenti nella *Ribbon Bar*: [Inserisci commessa](/docs/planning/mps-master-production-scheduling/production-job-orders/new-monoproduct-job-order) e [Inserisci commessa multiprodotto](/docs/planning/mps-master-production-scheduling/production-job-orders/new-multiproduct-job-order).
+De asemenea, acest form permite *crearea comenzilor noi*, atât **monoprodus**, cât și **multiprodus**, utilizând butoanele relative din *Ribbon Bar*: [Inserare comandă](https://docs/planning/mps-master-production-scheduling/production-job-orders/new-monoproduct-job-order) și [Inserare comandă multiprodus](https://docs/planning/mps-master-production-scheduling/production-job-orders/new-multiproduct-job-order).
 
-*Pulsanti specifici*:
+Cu dublu clic pe una din comenzile prezente în tabelul de rezultate, veți putea accesa detaliile comenzii (detalii în articolele *Inserare nouă comandă monoprodus* și *Inserare nouă comandă multiprodus*).
 
-> **Duplica commessa**: permette di duplicare la commessa selezionata;  
-> **Cambia priorità**: consente di cambiare la priorità assegnata alla commessa;  
-> [Parametri MRP](/docs/configurations/parameters/production/mrp-parameters/search-mrp-parameters): tramite questo pulsante è possibile aprire la schermata relativa ai parametri MRP dell'articolo.  
-> [Distinta base](/docs/erp-home/registers/production/bill-of-materials/search-and-insert-assemblies): permette di aprire la schermata relativa alla distinta base dell'articolo;  
-> [Cicli di lavoro](/docs/erp-home/registers/production/routes/new-route): permette di visualizzare il ciclo di lavoro e le relative fasi di produzione dell'articolo.
+*Estimare cost*: dacă este activ, comanda are deja cel puțin o estimare cost.
+
+:::note Notă
+Diferența dintre form **Comenzi de producție** și formă **Comenzi de producție (detalii)** este că în aceasta din urmă este posibil să vizualizați în grilă și articolele prezente în cadrul comenzii, în timp ce în cea fără detalii sunt vizualizate doar datele de cap de comandă.     
+:::
+
+#### Butoane specifice
+
+> - **Duplică comandă**: permite duplicarea comenzii selectate;  
+> - **Schimbă prioritate**: permite schimbarea priorității atribuite comenzii;   
+> - [Parametrii MRP](/docs/configurations/parameters/production/mrp-parameters/search-mrp-parameters): permite deschiderea form-ului referitor la parametrii MRP ai articolului;    
+> [Lista de componente](/docs/erp-home/registers/production/bill-of-materials/search-and-insert-assemblies): permite deschiderea form-ului referitor la lista de componente a articolului;  
+> [Cicluri de lucru](/docs/erp-home/registers/production/routes/new-route): permite vizualizarea ciclului de lucru și a fazelor de producție corespunzătoare articolului.
