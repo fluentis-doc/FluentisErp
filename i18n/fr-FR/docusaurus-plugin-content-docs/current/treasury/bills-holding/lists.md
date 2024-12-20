@@ -38,7 +38,7 @@ RIBBON BAR: il représente le menu de la forme en objet, à savoir la zone dan
 |  [Comptabilisation registres](/docs/treasury/bills-holding/accounting/lists-accounting/accounting)  | Il se réfère à la procédure pour effectuer la comptabilisation du registre et valoriser le compte de présentation. |
 |  Comptabilisation crédits  | Il se réfère à la procédure pour effectuer la comptabilisation du crédit en compte. |
 |  [Génération fichier reçu bancaire](/docs/treasury/bills-holding/cash-order-rid-lcr/cash-order-rid-lcr-creation/cash-order-files-creation)  | Il se réfère à la procédure pour engendrer le tracé télématique reçu bancaire. |
-|  [Génération fichier prélèvement bancaire](/docs/treasury/bills-holding/cash-order-rid-lcr/cash-order-rid-lcr-creation/rid-file-creation)  | Il se réfère à la procédure pour engendrer le tracé télématique prélèvement bancaire. |
+|  [Génération fichier prélèvement bancaire]  | Il se réfère à la procédure pour engendrer le tracé télématique prélèvement bancaire. |
 |  [Importation impayés](/docs/treasury/bills-holding/procedures/import-unpaids)  | Il se réfère à la procédure d'importation du tracé télématique impayés. |
 |  [Comptabilisation impayés](/docs/treasury/bills-holding/accounting/unpaid-accounting/unpaids)  | Il se réfère à la procédure de comptabilisation impayés, avec contextuelle réouverture du compte client selon les paramètres du formulaire. |
 |  Comptabilisation impayés sur la cession | Il se réfère à la procédure de comptabilisation impayés, avec contextuelle réouverture des comptes client et fournisseur selon les paramètres du formulaire. |
