@@ -54,14 +54,14 @@ import Link from '@docusaurus/Link';
 ## Per iniziare ad utilizzare   
 
 i **Reclami (da cliente)**:
-- definire: un [*Tipo Reclamo*](/docs/configurations/tables/quality/claim-and-non-compliance/claim-type), un conto [*Cliente*](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/accounting-data-intro) o un [*Contatto*](/docs/erp-home/registers/contacts/create-new-contact/general) e un [*Difetto*](/docs/configurations/tables/quality/claim-and-non-compliance/defect-detected)   
+- devi definire: un [*Tipo Reclamo*](/docs/configurations/tables/quality/claim-and-non-compliance/claim-type) e relativa *Numerazione*, un conto [*Cliente*](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/accounting-data-intro) o un [*Contatto*](/docs/erp-home/registers/contacts/create-new-contact/general) e un [*Difetto*](/docs/configurations/tables/quality/claim-and-non-compliance/defect-detected)   
 - per agevolare la gestione dei *Reclami* impostare, per l'anno desiderato, i [*Parametri Reclami e Non conformità*](/docs/configurations/parameters/quality/claim-and-non-compliances/complaints-and-non-compliance) nella sessione *Reclami*   
-- inserire un nuovo [*Reclamo*](/docs/quality/claims-and-non-compliance/claims/claim)   
+- devi inserire un nuovo [*Reclamo*](/docs/quality/claims-and-non-compliance/claims/claim)   
 
 le **Non conformità (a fornitore, interne e a cliente)**:
-- definire: un [*Tipo Non conformità*](/docs/configurations/tables/quality/claim-and-non-compliance/non-compliance-type), un conto [*Cliente* o *Fornitore*](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/accounting-data-intro) o una [*Funzione aziendale*](/docs/configurations/tables/quality/general/company-function) e un [*Difetto*](/docs/configurations/tables/quality/claim-and-non-compliance/defect-detected)   
+- devi definire: un [*Tipo Non conformità*](/docs/configurations/tables/quality/claim-and-non-compliance/non-compliance-type) e relativa *Numerazione*, un conto [*Cliente* o *Fornitore*](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/accounting-data-intro) o una [*Funzione aziendale*](/docs/configurations/tables/quality/general/company-function) e un [*Difetto*](/docs/configurations/tables/quality/claim-and-non-compliance/defect-detected)   
 - per agevolare la gestione delle *Non conformità* impostare, per l'anno desiderato, i [*Parametri Reclami e Non conformità*](/docs/configurations/parameters/quality/claim-and-non-compliances/complaints-and-non-compliance) nella sessione *Non conformità*   
-- inserire una nuova [*Non conformità*](/docs/quality/claims-and-non-compliance/non-compliances/non-compliance)   
+- devi inserire una nuova [*Non conformità*](/docs/quality/claims-and-non-compliance/non-compliances/non-compliance)   
 
 
 ## Collegamenti con altri moduli

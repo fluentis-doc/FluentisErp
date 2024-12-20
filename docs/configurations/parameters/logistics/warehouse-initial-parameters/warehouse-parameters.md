@@ -45,12 +45,13 @@ Il movimento di contropartita nasce da una seconda causale di movimentazione col
 
 **Gestione lotti e numeri seriali**: permette di decidere se debbano essere consentiti movimenti di magazzino a lotti e/o a serial numbers. Se questo flag è disattivato, tutti gli altri flags presenti nel database che gestiscono opzioni relative a lotti e serial numbers risultano inefficaci.
 
-**Lotti e SN obbligatori**: se attivato, obbliga l'utente ad inserire in tutti i documenti di acquisto e di vendita il lotto dell'articolo inserito nel documento stesso, sempre che l'articolo sia gestito a lotti o a serial numbers.
+**Lotti e numeri seriali obbligatori**: se attivato, obbliga l'utente ad inserire in tutti i documenti di acquisto e di vendita il lotto dell'articolo inserito nel documento stesso, sempre che l'articolo sia gestito a lotti o a serial numbers.
 
-**Gestione stato lotto tramite Workflow**: se attivo, lo **Stato lotto**, i flags **Lotto vendibile** e **Chiuso** presenti in anagrafica lotti sono modificabili sololamente tramite Workflow. Stessa cosa vale anche per i flags **Annullato**, **Chiuso forzatamente** e **Prenotato** presenti in angrafica numeri seriali.
+**Abilitata unicità dei lotti**: se attivo, abilità l'unicità del lotto per società e divisione nella fase di creazione del lotto stesso, quindi nel caso di più articoli che usano lo stesso *tipo codice lotto*, il progressivo con cui verrà creato il lotto continuerà ad aumentare; se non attivo invece, l'unicità è per articolo e variante, quindi quando vengono creati dei nuovi lotti per articoli diversi, ma che usano lo stesso *tipo codice lotto*, il primo lotto proposto sarà lo stesso per tutti quegli articoli. 
+
+**Gestione stato lotto tramite Workflow**: se attivo, lo **Stato lotto**, i flag **Lotto vendibile** e **Chiuso** presenti in anagrafica lotti sono modificabili solamente tramite Workflow. Stessa cosa vale anche per i flag **Annullato**, **Chiuso forzatamente** e **Prenotato** presenti in anagrafica numeri seriali.
 
 **Usa barcode movimenti**: se attivo, nelle righe dei movimenti di magazzino viene visualizzata la colonna **Barcode**.        
-
 
 ## Parametri chiusura
 

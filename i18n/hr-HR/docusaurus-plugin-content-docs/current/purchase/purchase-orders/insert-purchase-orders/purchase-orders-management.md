@@ -19,9 +19,9 @@ Ovo polje određuje raspon numeriranja dokumenta koji se unosi i automatski pred
 
 Obrazac sadrži niz kartica:
 
--  [Zaglavlje](/docs/purchase/purchase-orders/insert-purchase-orders/header) i njegovi [Postupci](/docs/purchase/purchase-orders/insert-purchase-orders/header-procedures) 
+-  [Zaglavlje] i njegovi [Postupci] 
 
--  [Artikli](/docs/purchase/purchase-orders/insert-purchase-orders/items) 
+-  [Artikli] 
 
 -  [Sažeci](/docs/purchase/purchase-orders/insert-purchase-orders/summaries) 
 

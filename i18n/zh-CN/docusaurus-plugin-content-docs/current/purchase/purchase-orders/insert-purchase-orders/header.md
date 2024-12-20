@@ -36,7 +36,7 @@ sidebar_position: 2
 | RibbonFunction | RibbonMeaning |
 | --- | --- |
 | 保存 | 用于保存订单 |
-|  [从采购作业单恢复项目](/docs/purchase/purchase-orders/insert-purchase-orders/header-procedures)  | 指定供应商之后，从采购作业单恢复项目的程序开始。按照4.1.a点。 |
+|  [从采购作业单恢复项目]  | 指定供应商之后，从采购作业单恢复项目的程序开始。按照4.1.a点。 |
 | 从供应商价目表恢复项目 | 指定供应商之后，从供应商价目表恢复项目的程序开始 |
 | 在行中替代估计的交货日期 | 在头标内指定交货申请日期和/或者估计交货日期之后，用户可以将这些日期替代于已插入的项目行 |
 
