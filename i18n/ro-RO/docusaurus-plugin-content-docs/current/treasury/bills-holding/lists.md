@@ -35,7 +35,7 @@ RIBBON BAR: reprezintă meniul Form-ului în discuţie. Mai precis, aria în car
 |  [Contabilizare efecte la furnizor](/docs/treasury/bills-holding/accounting/bills-accounting-by-vendor/accountingu contabilizarea efectelor la furnizor și pentru închiderea contului furnizor. |
 |  [Contabilizare liste](/docs/treasury/bills-holding/accounting/lists-accounting/accounting)  | Buton pentru contabilizarea listei și pentru valorizarea contului de prezentare. |
 |  Contabilizare acreditive  | Buton pentru contabilizarea acreditului în cont. |
-|  [Generare fișier incasso documentar](/docs/treasury/bills-holding/cash-order-rid-lcr/cash-order-rid-lcr-creation/cash-order-files-creation)  | Buton pentru generarea fișierului telematic incasso documentar. |
+|  [Generare fișier incasso documentar]  | Buton pentru generarea fișierului telematic incasso documentar. |
 |  [Generare fișier Rid](/docs/treasury/bills-holding/cash-order-rid-lcr/cash-order-rid-lcr-creation/rid-file-creation)  | Buton pentru generarea fișierului telematic Rid. |
 |  [Import efecte neîncasate](/docs/treasury/bills-holding/procedures/import-unpaids)  | Buton pentru importarea fișierului telematic efecte neîncasate. |
 |  [Contabilizare efecte neîncasate](/docs/treasury/bills-holding/accounting/unpaid-accounting/unpaids)  | Buton pentru contabilizarea efectelor neîncasate, cu redeschiderea angajamentului client pe baza parametrilor modulului. |
