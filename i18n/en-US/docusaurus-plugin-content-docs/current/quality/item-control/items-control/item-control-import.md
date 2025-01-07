@@ -1,87 +1,87 @@
 ---
-title: Importa articoli da controllare
+title: Import Items to Check 
 sidebar_position: 2
 ---
 
-La procedura di importazione si trova sul percorso **Qualità > Controlli articolo > Controlli articolo > Importa articoli da controllare**.   
+The import procedure is located at **Quality > Item Checks > Item Checks > Import Items to Check**.   
 
 
-:::important A cosa serve
-Questa gestione permette di creare nuovi *Controlli articolo* importando gli *Articoli* da controllare dai *Tipi documento* previsti:   
-> ***Ricevimento merci***   
-> ***DDT di acquisto***   
-> ***Fatture di acquisto***   
-> ***Dichiarazioni di produzione***   
-> ***Fasi ordine di produzione***   
-> ***Rientri di conto lavoro***   
-> ***Movimentazioni di carico***   
+:::important Purpose
+This management allows for the creation of new *Item Checks* by importing the *Items* to check from the provided *Document Types*:   
+> ***Goods Receipt***   
+> ***Purchase Delivery Note***   
+> ***Purchase Invoices***   
+> ***Production Declarations***   
+> ***Production Order Phases***   
+> ***Valorization of Subcontractor Returns***   
+> ***Movements Load***   
 
-associarli al *Piano di controllo* previsto per poi, tramite rilevazioni visive o con l'ausilio di *Strumenti di misura*, andare a verificare la loro conformità.   
+and associate them with the planned *Control Plan* to then verify their compliance through visual inspections or with the aid of *Measuring Instruments*.   
 :::
 
 
-La form è suddivisa in:
-- un'area di filtro, contestuale al *Tipo documento* da cui si desiderano importare gli *Articoli* da controllare;   
-- un'area composta da diversi tabulatori, uno per *Tipo documento*,  ognuno dei quali contiene le griglie dedicate al risultato del filtro.   
+The form is divided into:
+- a filter area, contextual to the *Document Type* from which the *Items* to check are to be imported;   
+- an area made up of several tabs, one for each *Document Type*, each containing grids dedicated to the results of the filter.   
 
-## Pulsanti specifici
+## Specific Buttons
 
-### ![](/img/neutral/common/search.png) Ricerca righe documento da importare
+### ![](/img/neutral/common/search.png) Search Document Lines to Import
 
-L'area di filtro e il tabulatore contenente la griglia risultato variano una volta indicato il *Tipo documento*.   
-Impostati i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.   
-Del *Tipo documento* selezionato, verranno visualizzate solamente le righe documento di articoli:   
-- codificati per *Ricevimento merci*, *DDT di acquisto*, *Fatture di acquisto* e *Rientri di conto lavoro*;   
-- con quantità prodotte e/o scartate per *Dichiarazioni di produzione*;   
+The filter area and the tab containing the results grid change once the *Document Type* is specified.   
+Once the desired filters are set, clicking on the **Search** button will display the results within the results grid.   
+For the selected *Document Type*, only the item document lines will be displayed:   
+- coded for *Goods Receipt*, *Purchase Delivery Note*, *Purchase Invoices*, and *Valorization of Subcontractor Returns*;   
+- with produced and/or discarded quantities for *Production Declarations*;   
 
-per i restanti *tipi documento* di *Fasi ordine di produzione* e *Movimentazioni di carico* verranno visualizzate tutte le righe documento.   
+for the remaining *Document Types* of *Production Order Phases* and *Movements Load*, all document lines will be displayed.   
 
-### Conferma righe documento da importare
+### Confirm Document Lines to Import
 
-Abilitato se si seleziona almeno una riga dalla griglia risultato e il *Tipo controllo* da creare.   
-Selezionate le righe desiderate è necessario cliccare sul pulsante **Conferma** per associare i *Piani di controllo* e creare i *Controlli articolo*.   
-Al termine dell'operazione viene richiesto se proseguire nell'attività di importazione o aprire i *Controlli articolo* appena creati.   
+Enabled if at least one line is selected from the results grid and the *Control Type* to create.   
+Once the desired lines are selected, it is necessary to click the **Confirm** button to associate the *Control Plans* and create the *Item controls*.   
+At the end of the operation, a prompt will ask if you wish to continue with the import process or open the *Item controls* just created.   
 
 import ControlPlanSearchMethod from './../../../import/procedure/control-plan-search-method.md'
 
 <ControlPlanSearchMethod />
 
-## Gestione Importa articoli da controllare
+## Management Import Items to Check 
 
-### Area di filtro
+### Filter Area
 
-L'area è composta da una parte fissa dove vengono riportati i filtri di ricerca relativi alle informazioni generali e da una parte variabile e contestuale al *Tipo documento* selezionato; la parte variabile viene visualizzata al di sotto dell'expander *Articolo*.   
-I filtri di ricerca relativi alle informazioni generali sono:   
-> **Tipo documento**: è il *Tipo documento* nel quale ricercare le informazioni.   
-> All'esecuzione della gestione viene proposto il *Tipo documento* indicato come *Default* nell'elenco *Tipi documento per l'importazione* presente nel tabulatore *Controlli articolo* dei *Parametri controlli articolo*; se non indicato viene proposto *DDT di acquisto*.   
-> La proposta automatica, o la successiva variazione da parte dell'operatore, faranno variare la parte variabile del filtro dati e il tabulatore visualizzato.
+The area consists of a fixed part where the general search filters are shown and a variable part contextual to the selected *Document Type*; the variable part is displayed below the *Item* expander.   
+The general search filters are:   
+> **Document Type**: is the *Document Type* in which to search for information.   
+> When executing the management task, the *Document Type* indicated as *Default* in the list of *Document Types for Import* in the *Item controls* tab of the *Item Control Parameters* will be proposed; if not specified, *Purchase Delivery Note* will be suggested.   
+> The automatic proposal, or any subsequent variation by the operator, will change the variable part of the filters and the displayed tab.   
 >   
-> **Dettaglio articolo**: è il tipo di dettaglio da controllare dell'*Articolo* per la tipologia documento specifica.   
-> E' un elenco di valori predefiniti dal sistema:   
-> - *Nessuno* - la riga *Articolo* considerata non prenderà alcun dato di dettaglio;   
-> - *Lotto* - la riga *Articolo* considerata prenderà come massimo dettaglio il *Lotto*;   
-> - *S.N.* - la riga *Articolo* considerata prenderà come massimo dettaglio il *Serial Number*;   
-> - *UDC* - la riga *Articolo* considerata prenderà come massimo dettaglio l'*Unità di Carico*.   
+> **Item Detail**: is the type of detail to check for the specific *Item* related to the document type.   
+> It is a predefined list of values from the system:   
+> - *None* - the considered *Item* line will not take any detail data;   
+> - *Batch* - the considered *Item* line will take the maximum detail as the *Batch*;   
+> - *S.N.* - the considered *Item* line will take the maximum detail as the *Serial Number*;   
+> - *Loading Unit* - the considered *Item* line will take the maximum detail as the *Loading Unit*.   
 >   
-> All'esecuzione della gestione viene proposto il *Dettaglio articolo* indicato in *Dettaglio articolo* nell'elenco *Tipi documento per l'importazione* presente nel tabulatore *Controlli articolo* dei *Parametri controlli articolo*.   
+> When executing the management task, the *Item Detail* indicated in *Item Detail* in the list of *Document Types for Import* in the *Item controls* tab of the *Item Control Parameters* will be proposed.   
 >
-> **Tipo controllo**: il codice del *Tipo controllo* da associare al *Controllo articoli* da creare.   
-> All'esecuzione della gestione viene proposto il *Tipo controllo* indicato in *Tipo controllo* nell'elenco *Tipi documento per l'importazione* presente nel tabulatore *Controlli articolo* dei *Parametri controlli articolo*.   
+> **Control Type**: the code of the *Control Type* to associate with the *Item controls* to be created.   
+> When executing the management task, the *Control Type* indicated in *Control Type* in the list of *Document Types for Import* in the *Item controls* tab of the *Item Control Parameters* will be proposed.   
 >   
-> expander **Dettaglio**   
->> **Non ancora considerate**: indica se ricercare solamente le righe del documento non ancora considerate in precedenti importazioni.   
->> **Già considerate**:  indica se ricercare, oltre a quelle non ancora considerate, anche le righe del già considerate in precedenti importazioni (solitamente utilizzata nel caso si desideri effettuare ulteriori controlli).   
+> expander **Detail**   
+>> **Not yet considered**: indicates whether to search only for the document lines that have not been considered in previous imports.   
+>> **Already considered**: indicates whether to search, in addition to those not yet considered, also for the lines that have already been considered in previous imports (usually used if further checks are desired).   
 >   
-> **Bar Code**: è il codice che abilitato al riconoscimento di: *Articolo*, *Unità di carico*, *Lotto* e *Serial number*.   
+> **Bar Code**: is the code enabled for recognition of: *Item*, *Loading Unit*, *Batch*, and *Serial Number*.   
 >   
-> expander **Articolo**
->> **Unità di carico**: è il codice formattato dell'*Unità di carico*.   
->> **Lotto**: è il codice del *Lotto*.   
->> **Serial number**: è il codice del *Serial number*.   
+> expander **Item**
+>> **Loading Unit**: is the formatted code of the *Loading Unit*.   
+>> **Batch**: is the code of the *Batch*.   
+>> **Serial Number**: is the code of the *Serial Number*.   
 
-### Area di risultato   
+### Result Area   
 
-Contenuta in ogni tabulatore, è la "griglia" che contiene il risultato della *Ricerca* applicata all'area di filtro.   
-Le informazioni contenute nell'elenco sono contestuali al *Tipo documento* selezionato.   
+Contained in each tab, it is the "grid" that contains the result of the *Search* applied to the filter area.   
+The information contained in the list is contextual to the selected *Document Type*.   
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+For anything not detailed in this document regarding the common functioning of the forms, please refer to the following link [Custom features, buttons, and fields](/docs/guide/common).

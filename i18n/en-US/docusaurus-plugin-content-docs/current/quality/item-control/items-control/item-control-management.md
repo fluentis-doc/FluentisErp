@@ -1,237 +1,237 @@
 ---
-title: Controlli articolo
+title: Item Control
 sidebar_position: 3
 ---
 
-La gestione è possibile eseguirla dalla **Ricerca Controlli articolo**.   
+Management can be performed from the **Item Control Search**.
 
 
-:::important A cosa serve
-I Controlli articolo permettono la registrazione delle misurazioni effettuate, dei valori rilevati e la conseguente indicazione della conformità o meno del materiale, semilavorato o prodotto controllato.   
-Elenchiamo i documenti dai quali è possibile effettuare dei controlli sugli articolo: Ricevimenti merce, D.D.T. e Fatture di acquisto, Dichiarazioni di produzione, Fasi ordini di produzione, Rientri da Conto lavoro e Movimentazioni di carico.   
-I controlli possono essere specifici per: Lotto articolo, Serial number o per Unità di carico.   
-Tramite la soluzione M.E.S., integrata in Fluentis, è possibile inserire le suddette informazioni richieste in modo diretto e semplificato.   
+:::important Purpose
+Item Controls allow for the recording of measurements taken, the values obtained, and the subsequent indication of the compliance or non-compliance of the material, semi-finished product, or controlled product.   
+We list the documents from which it is possible to carry out controls on items: Goods receipts, Delivery Notes, and Purchase Invoices, Production Declarations, Production Order Phases, Returns from Subcontractors, and Load Movements.   
+Controls can be specific for: Item Lot, Serial Number, or Load Unit.   
+Through the M.E.S. solution, integrated into Fluentis, it is possible to enter the aforementioned required information directly and simplified.
 
-A standard sono disponibili le reportistiche di:   
-> **Elenco Controlli articolo per Articolo**:  elenco dei *Controlli articolo* raggruppati per: *Articolo*.   
-> **Elenco Controlli articolo per Cliente/Fornitore**:  elenco dei *Controlli articolo* raggruppati per: *Cliente/Fornitore*.   
-> **Elenco Controlli articolo per Tipo documento**:  elenco dei *Controlli articolo* raggruppati per: *Tipo documento*.   
-> **Etichetta Articolo C e NC**: etichetta che riporta i riferimenti *Articolo* e dettaglio *Lotto* o *Serial number* controllato.   
+Standard reports available:   
+> **Item Control List by Item**: list of *Item Controls* grouped by: *Item*.   
+> **Item Control List by Customer / Supplier**: list of *Item Controls* grouped by: *Customer/Supplier*.   
+> **Item Control List by Document Type**: list of *Item Controls* grouped by: *Document Type*.   
+> **Label item C and NC**: label showing the references *Item* and detail *Batch* or *Serial Number* controlled.   
 :::
 
 
-## Pulsanti di comando
+## Command Buttons
 
 
-### ![](/img/neutral/common/save.png) Salva
+### ![](/img/neutral/common/save.png) Save
 
-Premendo questo pulsante si memorizzano tutte le informazioni modificate dei *Controlli articolo* visualizzati.   
+Pressing this button saves all modified information of the displayed *Item Controls*.
 
-### ![](/img/neutral/common/tick.png) Ricerca Piano di controllo
+### ![](/img/neutral/common/tick.png) Search Control Plan
 
-Premendo questo pulsante si ricerca il *Piano di controllo* da associare ai *Controlli articolo* selezionati. Se, per il *Controllo articolo* esaminato:
-- sono presenti delle *Prove* con dei valori già rilevati per quei *Controlli* non verrà fatta alcuna ricerca;   
-- tutte le *Prove* non sono state ancora rilevate, le *Prove* verranno sostituite con quelle associate al *Piano di controllo* trovato nella ricerca.
+Pressing this button searches for the *Control Plan* to associate with the selected *Item Controls*. If, for the examined *Item Control*:
+- there are *Tests* with values already recorded for those *Controls*, no search will be performed;   
+- all *Tests* have not yet been recorded, the *Tests* will be replaced with those associated with the *Control Plan* found in the search.
 
 import ControlPlanSearchMethod from './../../../import/procedure/control-plan-search-method.md'
 
-<ControlPlanSearchMethod />   
+<ControlPlanSearchMethod />
 
 
-### ![](/img/neutral/common/update.png) Aggiorna
+### ![](/img/neutral/common/update.png) Update
 
-Premendo questo pulsante si effettua un aggiornamento di tutte le informazioni presenti nei *Controlli articolo* visualizzati.   
-
-
-### ![](/img/neutral/common/delete.png) Cancella
-
-Premendo questo pulsante si eliminano tutte le righe selezionate dall'elenco principale dei *Controlli articolo*.   
+Pressing this button updates all information present in the displayed *Item Controls*.
 
 
-### Registra magazzino
+### ![](/img/neutral/common/delete.png) Delete
 
-Il pulsante è abilitato solamente se, dall'elenco *Prove*, è stata selezionata almeno una *Prova*, non ancora *Registrata*, con valori rilevati e con almeno *Quantità confermata* o *Quantità non conforme* dichiarate.   
-Premendo questo pulsante si effettuano le registrazioni di magazzino, in data odierna, per l'*Articolo* associato al *Controllo* per la *Quantità confermata* e/o *Quantità non conforme* dichiarata, per il *Magazzino* e *Causali* specificate.   
-
-
-### Ripristina registrazione
-
-Il pulsante è abilitato solamente se, dall'elenco *Prove*, è stata selezionata almeno una *Prova* già *Registrata*.   
-Premendo questo pulsante si ripristinano le registrazioni di magazzino associate alla riga *Prova*.   
+Pressing this button deletes all selected rows from the main list of *Item Controls*.
 
 
-### ![](/img/neutral/common/duplicate.png) Duplica prova
+### Warehouse Record
 
-Il pulsante è abilitato solamente se, dall'elenco *Prove*, è stata selezionata una sola riga *Prova*.   
-Tutte la informazioni della *Prova* di origine vengono duplicate in una nuova *Prova* accodata in *Sequenza* alle *Prove* già esistenti.   
-
-
-## Gestione dati
+The button is enabled only if at least one *Test* has been selected from the *Tests* list that has not yet been *Registered*, with recorded values and at least *Confirmed Quantity* or *Non-Compliant Quantity* declared.   
+Pressing this button performs warehouse registrations, on the current date, for the *Item* associated with the *Control* for the declared *Confirmed Quantity* and/or *Non-Compliant Quantity*, for the specified *Warehouse* and *Reasons*.
 
 
-### Dati di testata
-I dati di testata si dividono in due diverse aree:   
-- a sinistra l'elenco dei *Controlli articolo* richiesti dalla *Ricerca Controlli articolo*;   
-- a destra i riferimenti del documento di origine dei controlli.   
+### Restore Record
 
-L'elenco dei *Controlli articolo*, di sola lettura se non diversamente specificato, si compone delle seguenti informazioni:   
-> **Classe**: è la classe dell'*Articolo* della riga documento controllata.   
-> **Codice articolo**: è il codice dell'*Articolo* della riga documento controllata.   
-> **Dettaglio articolo**: è il tipo di dettaglio da controllare dell'*Articolo* e può assumere i seguenti valori: *Nessuno*, *Lotto*, *S.N.* o *UDC*.   
-> **Riferimento dettaglio articolo**: è il dettaglio articolo richiesto: *Nessuno*, *Codice lotto*, *Codice Serial Number* o *Codice Unità di carico*.   
-> **Tipo controllo**: e il codice del *Tipo controllo articolo*.   
-> **Numero**: e il numero del *Controllo articolo*.   
-> **Data inserita**: e la data in cui è stato inserito il *Controllo articolo*.   
-> **Piano di controllo utilizzato**: è il riferimento del *Piano di controllo* associato.   
-> Il dato può essere variato se la ricerca ha trovato più *Piani di controllo* associabili.   
-> **Descrizione piano di controllo**: è la descrizione del *Piano di controllo*.   
-> **Data analisi**: è la data in cui si effettua l'analisi. Il dato può essere variato.   
-> **Esito**: è l'esito complessivo delle prove. Viene attribuito manualmente dall'operatore. Il dato può essere variato.   
-> **Data esito**: e la data in cui è stato attribuito l'*Esito* complessivo delle *Prove*. Il dato può essere variato.   
-> **Approvato**: indica l'*Approvazione* sui controlli effettuati.   
-> All'atto dell'approvazione la *Data approvazione* viene automaticamente proposta pari alla data odierna e può essere variata, tutte le informazioni delle *Prove* non possono essere più modificate.   
-> **Data approvazione**: è la data in cui è stata effettuata l'*Approvazione* complessiva delle *Prove*.   
-> All'atto dell'inserimento della data viene automaticamente impostato il flag *Approvata*.   
-> **Unità di misura**: è l'*Unità di misura* della *Quantità documento* della riga documento controllata.   
-> **Quantità documento**: è la *Quantità documento* della riga documento controllata.   
-> **Descrizione articolo**: è la descrizione dell'*Articolo* della riga documento controllata.   
-> **Descrizione tipo controllo**: è la descrizione del *Tipo controllo articolo*.   
-> **Note**: annotazioni libere. Il dato può essere variato.   
-
-L'area dove sono presenti i riferimenti del documento di origine dei controlli varia a seconda del *Tipo documento*.   
-I riferimenti per ogni *Tipo documento* sono:   
-> **Ricevimento merci**: *Fornitore*, *Tipo ricevimento*, *Numero ricevuta*, *Data ricevimento* e *Riga*.   
-> **DDT di acquisto**: *Fornitore*, *Tipo bolla consegna*, *Numero documento*, *Numero interno*, *Data* e *Riga*.   
-> **Fatture di acquisto**: *Fornitore*, *Tipo fattura acquisto*, *Numero documento*, *Numero interno*, *Data* e *Riga*.   
-> **Dichiarazioni di produzione**: *Cliente*, *Tipo ordine*, *Anno/Ordine/Lotto*, *Fase/Sottofase*, *Numero* e *Data segnalazione*.   
-> **Fasi ordine di produzione**: *Cliente*, *Tipo ordine*, *Anno/Ordine/Lotto*, *Fase/Sottofase* e *Centro di lavoro*.   
-> **Rientri di conto lavoro**: *Fornitore*, *Tipo rientro*, *Numero documento*, *Data* e *Riga*.   
-> **Movimentazioni di carico**: *Cliente/Fornitore*, *Magazzino*, *Causale*, *Numero*, *Data* e *Numero movimento*.   
+The button is enabled only if at least one *Test* that has already been *Registered* has been selected from the *Tests* list.   
+Pressing this button restores the warehouse registrations associated with the *Test* row.
 
 
-### Prove
-Contiene l'elenco delle *Prove* per l'*Articolo*.   
-L'elenco si compone delle seguenti informazioni:   
-> **Sequenza**: è la sequenza di attuazione della *Prove*.   
-> **Registrato**: indica che, per la *Prova*sono state effettuate le registrazioni di magazzino, in data odierna, per l'*Articolo* associato al *Controllo* per la *Quantità confermata* e/o *Quantità non conforme* dichiarata, per il *Magazzino* e *Causali* specificate. L'informazione è di sola lettura.   
-> **Tipo prova**: è il codice della *Prova*.   
-> **Descrizione tipo prova**:  è la descrizione della *Prova*. L'informazione è di sola lettura.   
-> **Prova distruttiva**: indica se la prova è di tipo distruttiva. L'informazione è di sola lettura.   
-> **Prova interna**: indica se la *Prova* viene rilevata internamente o presso un laboratorio esterno.   
-> **Laboratorio esterno**: è la ragione sociale del *Fornitore* che effettuerà la prova. L'informazione è di sola lettura se è indicata la *Prova interna*.   
-> **Data invio**: è la data in cui si è inviato il materiale necessario ad effettuare la *Prova* presso il *Laboratorio esterno*. L'informazione è di sola lettura se è indicata la *Prova interna*.   
-> **Unità di misura della quantità**: è l'*Unità di misura* della *Quantità documento* della riga documento controllata. L'informazione è di sola lettura.   
-> **Quantità documento**: è la *Quantità documento* della riga documento controllata. L'informazione è di sola lettura.   
-> **Categoria Strumento di misura**: è la *Categoria dello strumento di misura* da utilizzare per poter rilevare i *Valori* espressi nella *Prova*.   
-> **Unità di misura valori rilevati**: è l'*Unità di misura* con cui si esprimono il *Valore nominale*, i *Limiti minimo e massimo* se espressi in valore e non in percentuale e i *Valori rilevati*.   
-> **Tipo valore**: è il *Tipo valore* con cui esprimere il *Valore nominale*; i *Tipi valore* possibili sono: *Numerico*, *Si/No* o *Testo*.   
-> **Tipo limite**: abilitato se il *Tipo valore* è *Numerico*, è il *Tipo limite* che piloterà l'abilitazione dei *Limiti* e dei valori di *Tolleranza*.   
-> **Valore nominale**: è il valore teorico atteso della *Prova*.   
-> **Limite minimo**: limite minimo consentito rispetto al *Valore nominale*.   
-> **L.min.(toll-)**: è il limite di tolleranza negativa sul limite minimo.   
-> **L.min.(toll+)**: è il limite di tolleranza positiva sul limite minimo.   
-> **Limite massimo**: limite massimo consentito rispetto  al *Valore nominale*.   
-> **L.max.(toll-)**: è il limite di tolleranza negativa sul limite massimo.   
-> **L.max.(toll+)**: è il limite di tolleranza positiva sul limite massimo.   
-> **%**: indica se il *Limite minimo* e il *Limite massimo* sono espressi in percentuale.   
-> **Tipo controllo prova**: è il *Tipo controllo* da effettuare sulla *Prova*.   
-> **Frequenza**: annotazioni libere relative alla frequenza di campionatura.   
-> **Numero rilevazioni**: è il numero di rilevazioni valori minime suggerite da effettuare.   
+### ![](/img/neutral/common/duplicate.png) Duplicate Test
+
+The button is enabled only if one *Test* row has been selected from the *Tests* list.   
+All the information from the source *Test* is duplicated into a new *Test* appended in *Sequence* to the already existing *Tests*.
+
+
+## Data Management
+
+
+### Header Data
+The header data is divided into two different areas:   
+- on the left, the list of *Item Controls* requested from the *Item Control Search*;   
+- on the right, the references of the source document of the controls.
+
+The list of *Item Controls*, read-only unless specified otherwise, consists of the following information:   
+> **Class**: is the class of the *Item* of the controlled document row.   
+> **Item code**: is the code of the *Item* of the controlled document row.   
+> **Item detail**: is the type of detail to be checked for the *Item* and can take the following values: *None*, *Batch*, *Serial Number*, or *Load Unit*.   
+> **Item Detail reference**: is the required item detail: *None*, *Batch code*, *Serial Number Code*, or *Load Unit Code*.   
+> **Control Type**: is the code of the *Item Control Type*.   
+> **Number**: is the number of the *Item Control*.   
+> **Insertion date**: is the date when the *Item Control* was entered.   
+> **Control plan used**: is the reference of the associated *Control Plan*.   
+> This data can be changed if the search found multiple *Control Plans* to associate.   
+> **Control plan description**: is the description of the *Control Plan*.   
+> **Analysis date**: is the date when the analysis is performed. This data can be changed.   
+> **Result**: is the overall result of the tests. It is manually assigned by the operator. This data can be changed.   
+> **Result date**: is the date when the overall *Result* of the *Tests* was assigned. This data can be changed.   
+> **Approved**: indicates the *Approval* of the controls performed.   
+> At the time of approval, the *Approval date* is automatically proposed to be today's date and can be modified; all information of the *Tests* can no longer be changed.   
+> **Approved date**: is the date when the overall *Approval* of the *Tests* was performed.   
+> At the time of entering the date, the *Approved* flag is automatically set.   
+> **Unit of measure**: is the *Unit of measure* of the *Document Quantity* of the controlled document row.   
+> **Document quantity**: is the *Document Quantity* of the controlled document row.   
+> **Item description**: is the description of the *Item* of the controlled document row.   
+> **Control type description**: is the description of the *Item Control Type*.   
+> **Notes**: free annotations. This data can be changed.   
+
+The area containing the references of the source document of the controls varies depending on the *Document Type*.   
+The references for each *Document Type* are:   
+> **Goods Receipt**: *Supplier*, *Reception Type*, *Receipt Number*, *Reception Date*, and *Row*.   
+> **Purchase Delivery Note**: *Supplier*, *Delivery Note Type*, *Document Number*, *Internal Number*, *Date*, and *Row*.   
+> **Purchase Invoices**: *Supplier*, *Purchase Invoice Type*, *Document Number*, *Internal Number*, *Date*, and *Row*.   
+> **Production Declarations**: *Client*, *Order Type*, *Year/Order/Batch*, *Phase/Subphase*, *Number*, and *Reporting Date*.   
+> **Production Order Phases**: *Client*, *Order Type*, *Year/Order/Batch*, *Phase/Subphase*, and *Work Center*.   
+> **Subcontractor Returns**: *Supplier*, *Return Type*, *Document Number*, *Date*, and *Row*.   
+> **Load Movements**: *Customer/Supplier*, *Warehouse*, *Reason*, *Number*, *Date*, and *Movement Number*.   
+
+
+### Tests
+Contains the list of *Tests* for the *Item*.   
+The list consists of the following information:   
+> **Sequence**: is the sequence of the *Tests* implementation.   
+> **Posted**: indicates that registrations have been made for the *Test* in the warehouse, on the current date, for the *Item* associated with the *Control* for the declared *Confirmed Quantity* and/or *Non-Compliant Quantity*, for the specified *Warehouse* and *Reasons*. This information is read-only.   
+> **Test type**: is the code of the *Test*.   
+> **Test type description**: is the description of the *Test*. This information is read-only.   
+> **Destructive Test**: indicates whether the test is destructive. This information is read-only.   
+> **Internal Test**: indicates whether the *Test* is detected internally or at an external laboratory.   
+> **External Laboratory**: is the legal name of the *Supplier* that will conduct the test. This information is read-only if *Internal Test* is indicated.   
+> **Sending Date**: is the date the material necessary to conduct the *Test* was sent to the *External Laboratory*. This information is read-only if *Internal Test* is indicated.   
+> **Unit of measure of quantity**: is the *Unit of measure* of the *Document Quantity* of the controlled document row. This information is read-only.   
+> **Document quantity**: is the *Document Quantity* of the controlled document row. This information is read-only.   
+> **Measurement Tools Category**: is the *Category of the measurement tool* to be used to detect the *Values* expressed in the *Test*.   
+> **Unit of measure of recorded values**: is the *Unit of measure* with which the *Typical Value*, *Minimum and Maximum Limits* are expressed if in value and not in percentage, and the *Recorded Values*.   
+> **Value Type**: is the *Value Type* with which to express the *Typical Value*; the possible *Value Types* are: *Numeric*, *Yes/No*, or *Text*.   
+> **Limit Type**: enabled if the *Value Type* is *Numeric*, this is the *Limit Type* that will control the enabling of *Limits* and the values of *Tolerances*.   
+> **Typical Value**: is the theoretical expected value of the *Test*.   
+> **Minimum Limit**: is the minimum limit allowed compared to the *Typical Value*.   
+> **L.min.(toll-)**: is the negative tolerance limit on the minimum limit.   
+> **L.min.(toll+)**: is the positive tolerance limit on the minimum limit.   
+> **Maximum Limit**: is the maximum limit allowed compared to the *Typical Value*.   
+> **L.max.(toll-)**: is the negative tolerance limit on the maximum limit.   
+> **L.max.(toll+)**: is the positive tolerance limit on the maximum limit.   
+> **%**: indicates whether the *Minimum Limit* and *Maximum Limit* are expressed as a percentage.   
+> **Test Control Type**: is the *Control Type* to be carried out on the *Test*.   
+> **Frequency**: free annotations related to sampling frequency.   
+> **Number of recordings**: is the number of minimum suggested value recordings to be made.   
 >
-> **Data inizio**: e la data di inizio della *Prova*.  
-> **Data fine**: e la data di fine della *Prova*.  
-> **Valore rilevato**: è il valore puntuale rilevato della *Prova* che ne determinerà l'*Esito*.   
-> All'inserimento del *Valore rilevato*:   
-> - in *Rilevato da* viene proposto il *Dipendente* associato all'*Utente A.R.M.* che ha effettuato l'accesso;   
-> - in *Rilevato da utente* viene proposto l'*Utente A.R.M.* che ha effettuato l'accesso;   
-> - in *Esito* viene proposto il risultato della *Prova* e modificabile successivamente.   
-> - in *Data esito prova* viene proposta la data odierna e modificabile successivamente.   
+> **Start Date**: is the start date of the *Test*.  
+> **End Date**: is the end date of the *Test*.  
+> **Detected Value**: is the detected point value of the *Test* that will determine the *Result*.   
+> Upon entering the *Detected Value*:   
+> - in *Detected by*, the *Employee* associated with the *A.R.M. User* who logged in will be proposed;   
+> - in *Detected by user*, the *A.R.M. User* who logged in will be proposed;   
+> - in *Result*, the result of the *Test* will be proposed and can be modified later.   
+> - in *Test result date*, the current date will be proposed and can be modified later.   
 >
-> **Media valori rilevati**: è la media dei valori rilevati nella *Rilevazione multipla valori* della *Prova*.   
-> **Strumento di misura**: è lo *Strumento di misura* utilizzato per rilevare il valore puntuale della *Prova*.   
-> **Rilevato da**: è il *Dipendente* che ha inserito il *Valore rilevato*.   
-> All'inserimento del *Valore rilevato* questa informazione viene proposta pari al *Dipendente* associato all'*Utente A.R.M.* che ha effettuato l'accesso.   
-> **Rilevato da utente**: è l'*Utente A.R.M.* che ha inserito il *Valore rilevato*.   
-> All'inserimento del *Valore rilevato* questa informazione viene proposta pari all'*Utente A.R.M.* che ha effettuato l'accesso.   
-> **Valore rilevato manualmente**: indica se il *Valore rilevato* è stato inserito manualmente. L'informazione è di sola lettura.   
-> **Esito**: è il risultato positivo o negativo della *Prova*.   
-> All'inserimento dell'*Esito* in *Data esito prova* viene proposta la data odierna e modificabile successivamente.   
-> All'inserimento del *Valore rilevato* o della *Media valori rilevati* questa informazione viene proposta sulla base del *Tipo valore*, *Tipo limite*, *Valore nominale*, *Limiti* e *Tolleranze* inserite.   
-> **Data esito prova**: è la data di attribuzione dell'*Esito*.   
-> All'inserimento dell'*Esito* questa informazione viene proposta pari alla data odierna e modificabile successivamente.   
-> **Descrizione sul risultato**: annotazioni libere sull'argomento.   
-> **Esito rilevato manualmente**: indica se l'*Esito* è stato inserito manualmente. L'informazione è di sola lettura.   
+> **Average values detected**: is the average of the detected values in the *Measurement Values* of the *Test*.   
+> **Measurement Tool**: is the *Measurement Tool* used to detect the point value of the *Test*.   
+> **Detected by**: is the *Employee* who entered the *Detected Value*.   
+> Upon entering the *Detected Value*, this information will be proposed to be equal to the *Employee* associated with the *A.R.M. User* who logged in.   
+> **Detected by user**: is the *A.R.M. User* who entered the *Detected Value*.   
+> Upon entering the *Detected Value*, this information will be proposed to be equal to the *A.R.M. User* who logged in.   
+> **Detected Value Manually**: indicates whether the *Detected Value* was entered manually. This information is read-only.   
+> **Result**: is the positive or negative result of the *Test*.   
+> Upon entering the *Result*, the *Test Result Date* will propose today’s date and can be modified later.   
+> Upon entering the *Detected Value* or *Average of detected values*, this information will be proposed based on the *Value Type*, *Limit Type*, *Typical Value*, *Limits*, and *Tolerances* entered.   
+> **Test Result Date**: is the date when the *Result* is assigned.   
+> Upon entering the *Result*, this information will be proposed to be equal to today’s date and can be modified later.   
+> **Description of the result**: free annotations on the subject.   
+> **Manual outcome attrib.**: indicates whether the *Result* was entered manually. This information is read-only.   
 >
-> **Quantità conforme**: .   
-> **Quantità non conforme**: .   
-> **Magazzino**: è il *Magazzino* dal quale si prelevano gli *Articoli* controllati.   
-> **Causale scarico articoli conformi**: è la *Causale di scarico* utilizzata per movimentare gli *Articoli* controllati risultati *Conformi*.   
-> **Causale scarico articoli non conformi**: è la *Causale di scarico* utilizzata per movimentare gli *Articoli* controllati risultati *Non conformi*.   
-> **Ubicazione**: è l'*Ubicazione* dal quale si prelevano gli *Articoli* controllati.   
+> **Confirmed Quantity**:    
+> **Non-Compliant Quantity**: .   
+> **Warehouse**: is the *Warehouse* from which the *Controlled Items* are taken.   
+> **Template for unload compliant items**: is the *Unload Template* used to move the *Controlled Items* that are found to be *Compliant*.   
+> **Template for unload non-compliant items**: is the *Unload Template* used to move the *Controlled items* that are found to be *Non-Compliant*.   
+> **Location**: is the *Location* from which the *Controlled Items* are taken.   
 >
-> **Stampabile**: indica che la *Prova* è stampabile.   
-> **Approvato**: indica che i valori e l'*Esito* attribuito alla *Prova* sono stati *Approvati*.   
-> All'atto dell'approvazione la *Data approvazione esito* viene automaticamente proposta pari alla data odierna e può essere variata, tutte le informazioni della *Prova* non possono essere più modificate.   
-> **Data approvazione esito**: è la data in cui è stata effettuata l'*Approvazione* della *Prova*.   
-> All'atto dell'inserimento della data viene automaticamente impostato il flag *Approvato*.   
-> **Operatore**: è l'*Utente A.R.M.* che ha *Approvato* la *Prova*. L'informazione è di sola lettura.   
-> **Descrizione approvazione**: annotazioni libere sull'argomento.   
-> **Note**: annotazioni libere.   
+> **Printable**: indicates that the *Test* is printable.   
+> **Approved**: indicates that the values and the *Result* assigned to the *Test* have been *Approved*.   
+> At the time of the approval, the *Result Approval Date* is automatically proposed to be today’s date and can be modified; all information of the *Test* can no longer be changed.   
+> **Result Approval Date**: is the date when the *Approval* of the *Test* was carried out.   
+> At the time of entering the date, the *Approved* flag is automatically set.   
+> **User**: is the *A.R.M. User* who *Approved* the *Test*. This information is read-only.   
+> **Approval Description**: free annotations on the subject.   
+> **Notes**: free annotations.   
 >
-> **Descrizione categoria Strumento di misura**: è la descrizione della *Categoria strumento di misura* da utilizzare. L'informazione è di sola lettura.   
-> **Descrizione Strumento di misura**: è la descrizione dello *Strumento di misura* utilizzato. L'informazione è di sola lettura.   
-> **Descrizione Magazzino**: è la descrizione del *Magazzino* dal quale si prelevano gli *Articoli* controllati. L'informazione è di sola lettura.   
-> **Descrizione causale scarico articoli conformi**: è la descrizione della *Causale di scarico* utilizzata per movimentare gli *Articoli* controllati risultati *Conformi*. L'informazione è di sola lettura.   
-> **Descrizione causale scarico articoli non conformi**: è la descrizione della *Causale di scarico* utilizzata per movimentare gli *Articoli* controllati risultati *Non conformi*. L'informazione è di sola lettura.   
+> **Measurement Tool Category Description**: is the description of the *Measurement Tool Category* to be used. This information is read-only.   
+> **Measurement Tool Description**: is the description of the *Measurement Tool* used. This information is read-only.   
+> **Warehouse Description**: is the description of the *Warehouse* from which the *Controlled Items* are taken. This information is read-only.   
+> **Template description for unload compliant items**: is the description of the *Unload Template* used to move the *Controlled Items* that are found to be *Compliant*. This information is read-only.   
+> **Template description for unload non-compliant items**: is the description of the *Unload Template* used to move the *Controlled Items* that are found to be *Non-Compliant*. This information is read-only.   
 
-Le informazioni di: *Tipo prova*, *Prova interna*, *Laboratorio esterno*, *Categoria Strumento di misura*, *Unità di misura valori rilevati*, *Tipo valore*, *Tipo limite*, *Valore nominale*, *Limiti ...*, *Tolleranze ...*, *%*, *Tipo controllo prova*, *Frequenza* e *Numero rilevazioni*, sono di sola lettura se la *Prova* proviene dal *Piano di controllo* altrimenti possono essere modificabili per dare la possibilità di aggiungere maualmente ulteriori *Prove* non previste del *Piano di controllo*.
+The information of: *Test Type*, *Internal Test*, *External Laboratory*, *Measurement Tool Category*, *Unit of Measure for Detected Values*, *Value Type*, *Limit Type*, *Typical Value*, *Limits ...*, *Tolerances ...*, *%*, *Test Control Type*, *Frequency*, and *Number of Detections* is read-only if the *Test* comes from the *Control Plan*; otherwise, they can be modifiable to allow adding additional *Tests* not foreseen in the *Control Plan*.
 
 
-#### Rilevazione multipla valori
-Contiene l'elenco delle rilevazioni fatte per una singola *Prova*.   
-L'elenco si compone delle seguenti informazioni:   
-> **Sequenza**: è la sequenza di attuazione della rilevazione.   
-> **Posizione**: annotazioni libere relative alla posizione della rilevazione.   
-> **Valore rilevato**: è il valore rilevato dall'operatore.   
-> Se il *Valore rilevato* è di tipo *Numerico*, la media dei *Valori rilevati*, inseriti in questo elenco per la *Prova* selezionata, verrà inserita nella colonna *Media valori rilevati* della *Prova* selezionata che ne determinerà l'*Esito*.   
-> All'inserimento del *Valore rilevato*:   
-> - in *Rilevato da* viene proposto il *Dipendente* associato all'*Utente A.R.M.* che ha effettuato l'accesso;   
-> - in *Rilevato da utente* viene proposto l'*Utente A.R.M.* che ha effettuato l'accesso;   
-> - in *Rilevato il* viene proposta la data odierna.   
+#### Measurement Values 
+Contains the list of detections made for a single *Test*.   
+The list consists of the following information:   
+> **Sequence**: is the sequence of the detection implementation.   
+> **Position**: free annotations related to the position of the detection.   
+> **Detected Value**: is the value detected by the user.   
+> If the *Detected Value* is of *Numeric* type, the average of the *Detected Values* entered in this list for the selected *Test* will be inserted in the *Average of Detected Values* column of the selected *Test*, which will determine the *Result*.   
+> Upon entering the *Detected Value*:   
+> - in *Detected by*, the *Employee* associated with the *A.R.M. User* who logged in will be proposed;   
+> - in *Detected by user*, the *A.R.M. User* who logged in will be proposed;   
+> - in *Detected on*, the current date will be proposed.   
 >
-> **Strumento di misura utilizzato**: è il rifermento allo *Strumento di misura* utilizzato dall'operatore per acquisire il *Valore rilevato*.   
-> **Rilevato da**: è il *Dipendente* che ha inserito il *Valore rilevato*.   
-> All'inserimento del *Valore rilevato* questa informazione viene proposta pari al *Dipendente* associato all'*Utente A.R.M.* che ha effettuato l'accesso.   
-> **Rilevato da utente**: è l'*Utente A.R.M.* che ha inserito il *Valore rilevato*.   
-> All'inserimento del *Valore rilevato* questa informazione viene proposta pari all'*Utente A.R.M.* che ha effettuato l'accesso.   
-> **Rilevato il**: è la data in cui l'operatore ha inserito il *Valore rilevato*.   
-> All'inserimento del *Valore rilevato* questa informazione viene proposta pari alla data odierna.   
-> **Note**: annotazioni libere.   
-> **Descrizione Strumento di misura**: è la descrizione dello *Strumento di misura* utilizzato.   
+> **Measurement Tool Used**: is the reference to the *Measurement Tool* used by the user to acquire the *Detected Value*.   
+> **Detected by**: is the *Employee* who entered the *Detected Value*.   
+> Upon entering the *Detected Value*, this information will be proposed to be equal to the *Employee* associated with the *A.R.M. User* who logged in.   
+> **Detected by user**: is the *A.R.M. User* who entered the *Detected Value*.   
+> Upon entering the *Detected Value*, this information will be proposed to be equal to the *A.R.M. User* who logged in.   
+> **Detected on**: is the date when the operator entered the *Detected Value*.   
+> Upon entering the *Detected Value*, this information will be proposed to be equal to the current date.   
+> **Notes**: free annotations.   
+> **Measurement Tool Description**: is the description of the *Measurement Tool* used.   
 
 
-#### Attributi prove effettuate
-E' possibile inserire degli [Extra Data](/docs/configurations/utility/extra-data/extradata/new-extradata-simple) per la singola *Prova*.   
+#### Test Attribute
+It is possible to enter [Extra Data](/docs/configurations/utility/extra-data/extradata/new-extradata-simple) for the single *Test*.
 
 
-#### Configurazione della prova
-Contiene gli [Extra Data](/docs/configurations/utility/extra-data/extradata/search-extradata) necessari agli operatori per preparare tutti gli strumenti necessari per poter iniziare una determinata prova. Possono essere considerate delle configurazioni necessarie, informazioni operative propedeutiche all'esecuzione della prova.   
-Vengono ereditati dalle *Configurazioni prove pianificate* presenti nelle *Prove pianificate* del *Piano di controllo* o dai *Parametri di configurazione prova e strumento di misura* presenti nei *Tipi prova*.   
+#### Test Configuration
+Contains the [Extra Data](/docs/configurations/utility/extra-data/extradata/search-extradata) necessary for users to prepare all the necessary tools to start a specific test. These can be considered necessary configurations, operational information prerequisite to the execution of the test.   
+They are inherited from the *Planned Test Configurations* present in the *Planned Tests* of the *Control Plan* or from the *Testing and Measurement Tool Configuration Parameters* present in the *Test Types*.
 
 
-#### Documenti allegati
-In questo elenco è possibile inserire e consultare eventuali allegati; è possibile visualizzare l'anteprima.   
+#### Attached Documents
+In this list, it is possible to insert and consult any attachments; it is possible to view the preview.
 
 
-### Attributi controlli
-E' possibile inserire degli [Extra Data](/docs/configurations/utility/extra-data/extradata/new-extradata-simple) per ogni *Controllo*.   
-Vengono ereditati dagli *Extra data* associati al *Tipo controllo articoli*.   
+### Attributes Controls
+It is possible to enter [Extra Data](/docs/configurations/utility/extra-data/extradata/new-extradata-simple) for each *Control*.   
+They are inherited from the *Extra Data* associated with the *Items Control Type*.
 
 
-### Attributi articolo
-E' possibile inserire degli [Extra Data](/docs/configurations/utility/extra-data/extradata/new-extradata-simple) per l'*Articolo* controllato.   
-Vengono ereditati dagli *Extra data* associati all'*Articolo*.   
+### Item Attributes
+It is possible to enter [Extra Data](/docs/configurations/utility/extra-data/extradata/new-extradata-simple) for the *Controlled Item*.   
+They are inherited from the *Extra Data* associated with the *Item*.
 
 
-### Documenti collegati
-In questo elenco è possibile inserire e consultare eventuali allegati; è possibile visualizzare l'anteprima.   
+### Linked Documents
+In this list, it is possible to insert and consult any attachments; it is possible to view the preview.
