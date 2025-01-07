@@ -1,91 +1,91 @@
 ---
-title: Valutazioni iniziali e periodiche
+title: Initial and Periodic Ratings 
 sidebar_position: 2
 ---
 
-La gestione si trova sul percorso **Qualità > Valutazioni fornitore > Valutazioni iniziali e periodiche**
+Management can be found at the path **Quality > Vendor Ratings > Initial and Periodic Ratings**.
 
 
-:::important A cosa serve
-Le *Valutazioni iniziali e periodiche* è uno dei metodi di valutazione dei fornitori che vengono messi a disposizione per la valutazione degli stessi.
-Questo metodo "soggettivo" è manuale e viene abitualmente utilizzato per le prime valutazioni e valutazioni successive.   
+:::important Purpose
+*Initial and Periodic Ratings* is one of the methods for evaluating suppliers that are made available for their assessment. 
+This "subjective" method is manual and is commonly used for initial ratings and subsequent ratings.
 
-La gestione consente di inserire nuove *Valutazioni iniziali e periodiche* o di ricercare quelle già esistenti per visualizzarle, modificarle oppure cancellarle.   
+The management allows you to enter new *Initial and Periodic Ratings* or to search for existing ones to view, modify, or delete them.
 :::
 
 
-## Pulsanti di comando
+## Command Buttons
 
 
-### ![](/img/neutral/common/search.png) Ricerca Valutazioni iniziali e periodiche
+### ![](/img/neutral/common/search.png) Search Initial and Periodic Ratings
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
-
-
-### ![](/img/neutral/common/new.png) Inserimento Valutazioni iniziali e periodiche
-
-Per poter inserire nuove *Valutazioni iniziali e periodiche* è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.   
-Per il nuovo record si devono inserire almeno i campi obbligatori richiesti dal programma: La **Data valutazione**, il **Fornitore** e il **Tipo valutazione**.
+The form consists of a filter area and a results area. Once all desired filters are set, simply click the **Search** button to view the results within the results grid.
 
 
-### ![](/img/neutral/common/select-all.png) Associa Check-list
+### ![](/img/neutral/common/new.png) Enter Initial and Periodic Ratings
 
-Pulsante abilitato solamente se si seleziona una sola *Valutazione iniziale e periodica* e il *Fornitore* non è già stato valutato.   
-Viene visualizzato l'*Help delle Check-list* dal quale è possibile selezionarne una sola.
-Se esiste già una *Check-list* associata alla riga viene richiesto se sostituire quella esistente (e relative *Domande*) con la nuova *Check-list* selezionata.
-
-
-## Gestione dati
+To enter new *Initial and Periodic Ratings*, you must click on the first empty row in the grid or press the **New** button.   
+For the new record, at least the mandatory fields required by the program must be filled in: **Rating Date**, **Supplier**, and **Rating Type**.
 
 
-### Valutazioni iniziali e periodiche
+### ![](/img/neutral/common/select-all.png) Associate Checklist
 
-E' l'elenco dove vengono inserite le informazioni principali della *Valutazione iniziale e periodica*.   
-L'elenco si compone delle seguenti informazioni:   
-> **Data valutazione**: (dato obbligatorio) è la data nella quale viene effettuata la valutazione.   
-> All'inserimento di una nuova valutazione viene proposta in automatico la data odierna.   
+Button enabled only if a single *Initial and Periodic Rating* is selected and the *Supplier* has not already been evaluated.   
+The *Checklist Help* is displayed from which it is possible to select only one. 
+If there is already a *Checklist* associated with the row, you will be asked whether to replace the existing one (and its related *Questions*) with the newly selected *Checklist*.
+
+
+## Data Management
+
+
+### Initial and Periodic Ratings
+
+This is the list where the main information for the *Initial and Periodic Rating* is entered.   
+The list consists of the following information:   
+> **Rating Date**: (mandatory field) is the date the rating is carried out.   
+> When entering a new rating, the current date is automatically proposed.   
 >
-> **Fornitore**: (dato obbligatorio) è la ragione sociale del *Fornitore* che viene valutato.   
+> **Supplier**: (mandatory field) is the corporate name of the *Supplier* being evaluated.   
 >
-> **Tipo valutazione**: (dato obbligatorio) è il codice del *Tipo valutazione*.   
-> All'inserimento di una nuova valutazione viene proposto il *Tipo valutazione* indicato nei *Parametri qualificazione fornitore*.   
+> **Rating Type**: (mandatory field) is the code of the *Rating Type*.   
+> When entering a new rating, the *Rating Type* indicated in the *Vendor qualification parameters* is proposed.   
 >
-> **Check-list**: è il codice della *Check-list*.   
-> All'inserimento di un *Fornitore* viene proposta in automatico la *Check-list* presente nei suoi *Dati contabili > Dati qualità* e le relative *Domande*.   
-> La modifica di una *Check-list* comporta la sostituzione delle *Descrizioni/Domande* presenti previo richiesta.
+> **Checklist**: is the code of the *Checklist*.   
+> When entering a *Supplier*, the *Checklist* present in its *Accounting Data > Quality Data* and the related *Questions* are automatically proposed.   
+> Modifying a *Checklist* results in the replacement of the existing *Descriptions/Questions* upon request.
 >
-> **Ispettore**: è il codice dell'*Ispettore* che effettua la valutazione.   
+> **Auditor**: is the code of the *Auditor* who carries out the rating.   
 >
-> **Motivo valutazione**: annotazioni libere sull'argomento, è una descrizione della motivazione della valutazione.   
+> **Rating Reason**: free notes on the subject, is a description of the reason for the rating.   
 >
-> **Valutazione**: è la *Valutazione* data al *Fornitore* dell'*Ispettore*.   
-> La cella viene colorata con i colori di *sfondo* e di *testo* previsti nella tabella delle *Valutazioni fornitore*.   
-> Se la *Valutazione* attribuita è assoviata ad una *Valutazione fornitore* con *Sospensione automatica* il *Fornitore* valutato verrà *Sospeso* dalla *Data valutazione*.
-> Il ripristino della sospensione deve essere fatta manualmente dalla *Funzione aziendale* preposta.   
-> Associata una *Valutazione* le informazioni di: *Data valutazione*, *Fornitore* e *Tipo valutazione* non saranno più modificabili.   
+> **Rating**: is the *Rating* given to the *Supplier* by the *Auditor*.   
+> The cell is colored with the background and text colors specified in the *Vendor Ratings* table.   
+> If the *Rating* assigned is associated with a *Vendor Ratig* with *Automatic Suspension* the evaluated *Supplier* will be *Suspended* from the *Rating Date*. 
+> Restoration of the suspension must be done manually by the designated *Company Function*.   
+> Once a *Rating* is associated, the information of: *Rating Date*, *Supplier*, and *Rating Type* will no longer be modifiable.   
 >
-> **Descrizione tipo valutazione**: è la descrizione del *Tipo valutazione*.   
-> **Descrizione check-list**: è la descrizione della *Check-list*.   
-> **Descrizione ispettore**: è la descrizione dell'*Ispettore*.   
-> **Note**: annotazioni libere.  
+> **Description of Rating Type**: is the description of the *Rating Type*.   
+> **Description of Checklist**: is the description of the *Checklist*.   
+> **Description of Auditor**: is the description of the *Auditor*.   
+> **Notes**: free annotations.  
 
 
-### Descrizioni/Domande
+### Descriptions/Questions
 
-E' l'elenco delle domande/attività da utilizzare/effettuare per le valutazioni a fornitori.   
-L'elenco si compone delle seguenti informazioni:   
-> **Sequenza**: è la sequenza di attuazione delle *domande/attività*.   
-> **Descrizione/Domanda**: annotazioni libere sull'argomento.   
-> **Risposta**: annotazioni libere sull'argomento.   
-> **Valutazione attesa**: è il *Livello di valutazione* minimo richiesto per la valutazione.   
-> **Valutazione rilevata**: è il *Livello di valutazione* valutato.   
-> Il carattere diventa *Rosso* se la *Valutazione rilevata* è inferiore alla *Valutazione attesa*.   
-> **Note**: annotazioni libere.
-
-
-### Extra data
-
-E' possibile inserire degli [Extra Data](/docs/configurations/utility/extra-data/extradata/search-extradata) generali per la *Valutazione iniziale e periodica*.   
+This is the list of questions/activities to use/perform for ratings of suppliers.   
+The list consists of the following information:   
+> **Sequence**: is the sequence of implementation of the *questions/activities*.   
+> **Description/Question**: free notes on the subject.   
+> **Answer**: free notes on the subject.   
+> **Rating Expected**: is the minimum required *Rating Level* for the rating.   
+> **Rating Detected**: is the evaluated *Rating Level*.   
+> The character turns *Red* if the *Rating Detected* is lower than the *Rating Expected*.   
+> **Notes**: free annotations.
 
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+### Extra Data
+
+It is possible to enter general [Extra Data](/docs/configurations/utility/extra-data/extradata/search-extradata) for the *Initial and Periodic Rating*. 
+
+
+For anything not detailed in this document on the common functioning of the forms, please refer to the following link [Custom features, buttons, and fields](/docs/guide/common).

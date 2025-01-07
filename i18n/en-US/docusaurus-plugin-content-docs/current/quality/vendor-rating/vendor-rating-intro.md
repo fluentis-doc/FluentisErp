@@ -1,40 +1,40 @@
 ---
-title: Introduzione
+title: Introduction
 sidebar_position: 1
 ---
 
-La valutazione dei fornitori si riferisce al processo di approvazione dei potenziali fornitori e valutazione dei fornitori storici attraverso valutazioni quantitative e qualitative. Lo scopo principale è quello di compilare una graduatoria dei fornitori disponibili ai fini della qualità del prodotto/servizio.   
+The rating of suppliers refers to the process of approving potential suppliers and assessing historical suppliers through quantitative and qualitative ratings. The main purpose is to create a ranking of available suppliers based on product/service quality.
 
 
-## I documenti gestiti
+## Managed Documents 
 
 import Link from '@docusaurus/Link';
 
 <div className="cardContainer">
     <div className="card">
-###     <Link to="/docs/quality/vendor-rating/initial-vendor-rating">Valutazioni iniziali e periodiche</Link>
-        <p>E' un criterio di valutazione *soggettivo* che si basa su domande (*Check-List*) predefinite per *Classi di fornitura* fatte a potenziali fornitori o fornitori storici.</p>
+###     <Link to="/docs/quality/vendor-rating/initial-vendor-rating">Initial and Periodic Ratings</Link>
+        <p>It is a *subjective* rating criterion based on predefined questions (*Check-List*) for *Supplying Classes* posed to potential or historical suppliers.</p>
     </div>
     <div className="card">
-###     <Link to="/docs/quality/vendor-rating/vendor-rating-on-nc">Valutazioni periodiche su Non conformità</Link>
-        <p>E' un criterio di valutazione *oggettivo* che si basa sulle *Non conformità* attribuite a *Fornitori* in un determinato arco temporale.</p>
+###     <Link to="/docs/quality/vendor-rating/vendor-rating-on-nc">Periodic Ratings on Non-Compliance</Link>
+        <p>It is an *objective* rating criterion based on the *Non-Compliance* attributed to *Suppliers* within a specific timeframe.</p>
     </div>
 </div>
 
 
-## Per iniziare ad utilizzare   
+## Getting Started    
 
-le **Valutazioni iniziali e periodiche**:
-- devi definire: un [*Tipo valutazione*](/docs/configurations/tables/quality/vendor-rating/vendor-rating-type), un conto [*Fornitore*](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/accounting-data-intro) e una [*Valutazione fornitore*](/docs/configurations/tables/quality/vendor-rating/vendor-ratings)   
-- per agevolare la gestione delle *Valutazioni iniziali e periodiche* impostare i [*Parametri Qualificazione fornitore*](/docs/configurations/parameters/quality/vendor-ratings) nella sessione *Valutazioni iniziali*   
-- devi inserire una nuova [*Valutazione iniziali*](/docs/quality/vendor-rating/initial-vendor-rating)   
+For **Initial and Periodic Ratings**:
+- You need to define: a [*Rating Type*](/docs/configurations/tables/quality/vendor-rating/vendor-rating-type), an account [*Supplier*](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/accounting-data-intro), and a [*Vendor Rating*](/docs/configurations/tables/quality/vendor-rating/vendor-ratings);
+- To facilitate the management of *Initial and Periodic Ratings*, set the [*Vendor Qualification Parameters*](/docs/configurations/parameters/quality/vendor-ratings) in the *Initial Ratings* section;   
+- You need to enter a new [*Initial Rating*](/docs/quality/vendor-rating/initial-vendor-rating);   
 
-le **Valutazioni periodiche su Non conformità**:
-- devi definire un [*Tipo valutazione*](/docs/configurations/tables/quality/vendor-rating/vendor-rating-type)   
-- per agevolare la gestione delle *Valutazioni periodiche su Non conformità* impostare i [*Parametri Qualificazione fornitore*](/docs/configurations/parameters/quality/vendor-ratings) nella sessione *Valutazioni periodiche Non conformità*   
-- devi inserire almeno una nuova [*Non conformità a fornitore*](/docs/quality/claims-and-non-compliance/non-compliances/non-compliance) con data compresa nel periodo che si desidera valutare   
-- devi elaborare una [*Valutazione periodica su Non conformità*](/docs/quality/vendor-rating/vendor-rating-on-nc)   
+For **Periodic Ratings on Non-Compliance**:
+- You need to define a [*Rating Type*](/docs/configurations/tables/quality/vendor-rating/vendor-rating-type);   
+- To facilitate the management of *Periodic Ratings on Non-Compliance*, set the [*Vendor Qualification Parameters*](/docs/configurations/parameters/quality/vendor-ratings) in the *Periodic Non-Compliance Ratings* section;   
+- You need to enter at least one new [*Supplier Non-Compliance*](/docs/quality/claims-and-non-compliance/non-compliances/non-compliance) with a date within the period you wish to evaluate;   
+- You need to process a [*Periodic Non-Compliance Rating*](/docs/quality/vendor-rating/vendor-rating-on-nc);   
 
 
-## Collegamenti con altri moduli
-Il modulo dei *Documenti di origine esterna* non è collegato ad alcun altro modulo.   
+## Links to Other Modules 
+The *External Origin Documents* module is not linked to any other modules.
