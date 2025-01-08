@@ -15,7 +15,7 @@ In order to make use of the *Insert* function, it is necessary to:
 :::
 
 
-## Items (Articoli)   
+## Items   
 
 In this tab, it is possible to search for and select the *items* that you wish to insert en masse into the *Data Sheets*, which can be selected in the corresponding tab.   
 The session consists of a filtering area and a results area. Once all the desired filters are set, simply click the **Search Items** button to display the results within the results grid.    
@@ -43,7 +43,7 @@ Pressing the button automatically positions you in the **Items** tab.
 The selected *Items* will be associated with the selected *Data Sheets* in their respective tabs with the information indicated in the *Parameters* tab.   
 
 
-## Parameters (Parametri)
+## Parameters 
 
 In this tab, it is possible to indicate some information that will be proposed when inserting the *Items* into the *Data Sheets*.   
 In the tab, it is possible to enter:   

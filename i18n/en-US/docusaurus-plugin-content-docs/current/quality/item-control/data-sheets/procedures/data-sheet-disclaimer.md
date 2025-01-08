@@ -3,7 +3,7 @@ title: Disclaimer
 sidebar_position: 1
 ---
 
-The management can be found at the path **Quality > Item Controls > Technical Sheets > Procedures > Disclaimer**
+The management can be found at the path **Quality > Item Controls > Data Sheets > Procedures > Disclaimer**
 
 :::important What it is for
 The *Disclaimers* are clauses under which the company does not assume responsibility, for example due to misuse, for damages caused by or to the item. In disclaimers, the causes that invalidate the declared properties of the product can therefore be defined.   

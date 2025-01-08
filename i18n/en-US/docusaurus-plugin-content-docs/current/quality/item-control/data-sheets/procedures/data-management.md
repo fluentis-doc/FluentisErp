@@ -3,11 +3,11 @@ title: Data Management
 sidebar_position: 2
 ---
 
-The management can be found at the path **Quality > Item Controls > Technical Data Sheets > Procedures > Data Management**
+The management can be found at the path **Quality > Item Controls > Data Sheets > Procedures > Data Management**
 
 
 :::important What it is for
-This management allows for the handling of many of the *Technical Data Sheets* information without having to manually enter each *Technical Data Sheet*.   
+This management allows for the handling of many of the *Data Sheets* information without having to manually enter each *Technical Data Sheet*.   
 :::
 
 
@@ -17,7 +17,7 @@ The form is divided into:
 - the last tab contains the *Errors Found* encountered during the *Modify* activities.   
 
 The tabs are:   
-> **Technical Data Sheets**;   
+> **Data Sheets**;   
 > **Properties**;   
 > **Norms & Laws**;   
 > **Associated Items**.
@@ -43,7 +43,7 @@ In case of anomalies encountered during the *Modification*, the reports are avai
 
 #### Filter Area 
 
-The area consists of a fixed part where the search filters related to the header information of the *Technical Data Sheet* are displayed, and a variable part contextual to the selected tab; the variable part is contained in an expander that bears the same title as the selected tab; this variable part is not visible for the *Technical Data Sheets* tab.   
+The area consists of a fixed part where the search filters related to the header information of the *Data Sheet* are displayed, and a variable part contextual to the selected tab; the variable part is contained in an expander that bears the same title as the selected tab; this variable part is not visible for the *Data Sheets* tab.   
 Pressing the **Search** button displays the results within the results grid of the selected tab.  
 
 #### Modification Area 
@@ -54,7 +54,7 @@ Once the replacement of values is completed, the existing values in the upper gr
 
 #### Results Area 
 Contained in each tab, it is the lower "grid" that contains the result of the *Search* applied to the filter area.  
-In this grid, which displays the same columns as the modification grid (the upper one), you can manually modify all information without needing to enter each management of the *Technical Data Sheet*. The columns vary depending on the selected tab.   
+In this grid, which displays the same columns as the modification grid (the upper one), you can manually modify all information without needing to enter each management of the *Data Sheet*. The columns vary depending on the selected tab.   
 The columns where information cannot be modified are disabled and highlighted in a different color.
 
 For anything not detailed in this document regarding the common functionality of the forms, please refer to the following link [Custom Features, Buttons, and Fields](/docs/guide/common).
