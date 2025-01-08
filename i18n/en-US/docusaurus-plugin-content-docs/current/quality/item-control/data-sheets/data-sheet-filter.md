@@ -1,59 +1,59 @@
 ---
-title: Ricerca Schede tecniche
+title: Data Sheet Search
 sidebar_position: 1
 ---
 
-Il filtro si trova sul percorso **Qualità > Controlli articolo > Schede tecniche**.   
+The filter can be found on the path **Quality > Item Controls > Data Sheets**.
 
-Le **Schede tecniche** catalogano tutte quelle informazioni che descrivono le caratteristiche dei prodotti associati come idonee ad un contratto, ad una specifica funzionale o ad un determinato impiego, possono essere personalizzabili per *Cliente*.   
-Vengono gestite le *revisioni* e la rintracciabilità tra *Schede tecniche* diverse*.   
-A standard sono disponibili le reportistiche di: *Scheda tecnica* (per uso interno) e *Scheda Prodotto* (ad uso commerciale).   
+The **Data Sheets** catalog all the information that describes the characteristics of the associated products as suitable for a contract, a functional specification, or a specific use; they can be customizable for *Client*.   
+Revisions and traceability between different *Data Sheets* are managed.   
+Standard reports are available for: *Data Sheet* (for internal use) and *Product Details* (for commercial use).
 
 
-Il filtro dati consente di inserire nuove *Schede tecniche* o di ricercare quelle già esistenti per visualizzarle, modificarle oppure cancellarle.   
+The data filter allows for the entry of new *Data Sheets* or to search for existing ones to view, modify, or delete them.
 
-### ![](/img/neutral/common/search.png) Ricerca Schede tecniche
+### ![](/img/neutral/common/search.png) Data Sheet Search 
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.   
+The form consists of a filter area and a results area. Once all desired filters are set, simply click the **Search** button to view the results in the results grid.
 
-### ![](/img/neutral/common/new.png) Inserimento Schede tecniche
+### ![](/img/neutral/common/new.png) Insertion of Data Sheet 
 
-Per poter inserire nuove *Schede tecniche* è necessario premere il pulsante **Nuovo**.   
+To enter new *Data Sheets*, it is necessary to press the **New** button.
 
-### ![](/img/neutral/common/edit.png) Modifica o ![](/img/neutral/common/view.png) Visualizzazione Schede tecniche
+### ![](/img/neutral/common/edit.png) Edit or ![](/img/neutral/common/view.png) View Data Sheets 
 
-Per aprire la gestione, della griglia di risultato, è necessario fare doppio click sulla riga di nostro interesse oppure, selezionando una o più righe, premere i pulsanti **Modifica** o **Visualizza**.   
+To open the management of the results grid, it is necessary to double-click on the row of interest or, by selecting one or more rows, press the **Modify** or **View** buttons.
 
-*Pulsanti specifici*:   
+*Specific buttons*:
 
-### ![](/img/neutral/common/duplicate.png) Duplica Scheda
+### ![](/img/neutral/common/duplicate.png) Duplicate Sheet 
 
-Per poter duplicare una *Scheda tecnica* esistente in una nuova *Scheda tecnica* è necessario cliccare nella griglia sulla *Scheda tecnica* da cui si desidera duplicare e premere il pulsante **Duplica scheda**. Si può duplicare una sola *Scheda tecnica* alla volta. Viene visualizzata una richiesta di:   
-> **Tipo scheda**: è il *Tipo scheda* della nuova *Scheda tecnica* (dato obbligatorio).   
-> **Del cliente**: è il *Cliente* della nuova *Scheda tecnica*, viene proposto il conto *Cliente* della *Scheda tecnica* di origine.   
-> **Nuovo codice**: è il *Codice* della nuova *Scheda tecnica* (dato obbligatorio), viene proposto in base a quanto previsto dal *Metodo di Codifica* associata al *Tipo scheda tecnica*.   
-> **Duplica con rintracciabilità**: indica se si desidera mantenere relazione/rintracciabilità, nella *Scheda tecnica* di origine (tabulatore *Schede correlate* della *Scheda tecnica* di origine) e nella *Scheda tecnica* di destinazione (nell'expander *Origine dati scheda* presente nei *dati di testata*).   
+To duplicate an existing *Data Sheet* into a new *Data Sheet*, click on the *Data Sheet* in the grid that you wish to duplicate and press the **Duplicate Sheet** button. You can duplicate only one *Data Sheet* at a time. A request will be displayed:   
+> **Sheet Type**: it is the *Sheet Type* of the new *Data Sheet* (mandatory data).   
+> **Customer**: it is the *Customer* of the new *Data Sheet*, and the *Customer account* from the source *Data Sheet* is proposed.   
+> **New code**: it is the *Code* of the new *Data Sheet* (mandatory data), and it is proposed based on what is provided by the *Encoding Method* associated with the *Data Sheet Type*.   
+> **Duplicate with traceability**: indicates whether to maintain the relationship/traceability in the source *Data Sheet* (related sheets tab of the source *Data Sheet*) and in the destination *Data Sheet* (in the data sheet origin expander present in the header info).
 
-Premere successivamente il pulsante **OK** o il pulsante **Cancel** se si desidera proseguire nell'attività di duplica o meno.   
-La nuova *Scheda tecnica* creata avrà la *Revisione* pari a *Zero*.   
-Al termine dell'elaborazione la nuova *Scheda tecnica* viene visualizzata.   
+Then press the **OK** button or the **Cancel** button if you wish to continue with the duplication process or not.   
+The new *Data Sheet* created will have the *Revision* equal to *Zero*.   
+At the end of the process, the new *Data Sheet* will be displayed.
 
-### ![](/img/neutral/common/execute.png) Crea nuova revisione
+### ![](/img/neutral/common/execute.png) Create New Revision 
 
-Per poter creare una nuova *Revisione* ad una *Scheda tecnica* esistente è necessario cliccare nella griglia sulla *Scheda tecnica* da cui si desidera creare una nuova *Revisione* e premere il pulsante **Crea nuova revisione**. Si può creare una nuova *Revisione* per una sola *Scheda tecnica* alla volta.   
-Viene creata una nuova *Scheda tecnica*, con tutte le informazioni della *Scheda tecnica* di origine ma con indice di *Revisione* incrementato e la *Data di inizio validità* pari alla data odierna.   
-La *Scheda tecnica* di origine finisce la sua validità, la *Data fine validità* viene impostata pari alla data odierna.   
-Al termine dell'elaborazione la nuova *Revisione* della *Scheda tecnica* viene visualizzata.   
+To create a new *Revision* of an existing *Data Sheet*, click on the *Data Sheet* in the grid from which you want to create a new *Revision* and press the **Create New Revision** button. You can create a new *Revision* for only one *Data Sheet* at a time.   
+A new *Data Sheet* will be created, with all the information from the source *Data Sheet* but with an incremented *Revision index* and the *Start validity date* equal to today's date.   
+The source *Data Sheet* will end its validity; the *End validity date* will be set to today's date.   
+At the end of the process, the new *Revision* of the *Data Sheet* will be displayed.
 
-### ![](/img/neutral/common/item-web.png) Crea Piano di controllo
+### ![](/img/neutral/common/item-web.png) Create Control Plan
 
-Dalla *Scheda tecnica* è possibile creare un *Piano di controllo*; per fare ciò è necessario cliccare nella griglia sulla *Scheda tecnica* da cui si desidera duplicare e premere il pulsante **Crea nuovo Piano di controllo**. Si può creare un nuovo *Piano di controllo* per una sola *Scheda tecnica* alla volta.   
-Viene creato un nuovo *Piano di controllo*, vengono copiate solamente le *Proprietà* di origine con l'indicatore *Prove da rilevare*, tutte le altre informazioni della *Scheda tecnica* ma con indice di *Revisione* pari a *zero* e con *Data di inizio validità* pari alla data odierna. Verrà visualizzata una richiesta di:   
-> **Tipo piano di controllo**: è il *Tipo piano di controllo* del nuovo *Piano di controllo* (dato obbligatorio).   
-> **Numero**: è il *Numero* progressivo del nuovo *Piano di controllo* (dato obbligatorio), viene proposto in base a quanto previsto dalla *Numerazione* associata al *Tipo piano di controllo* e alla data odierna.   
-> **Crea mantenendo la rintracciabilità**: indica se si desidera mantenere relazione/rintracciabilità, della *Scheda tecnica* di origine, nel *Piano di controllo* di destinazione (nell'expander *Origine Piano di controllo* presente nei *dati di testata*).   
+From the *Data Sheet* it is possible to create a *Control Plan*; to do this, click on the *Data Sheet* in the grid from which you wish to duplicate and press the **Create New Control Plan** button. You can create a new *Control Plan* for only one *Data Sheet* at a time.   
+A new *Control Plan* will be created, copying only the source *Properties* with the *Tests to detect* indicator, all other information from the *Data Sheet* but with *Revision index* equal to *zero* and the *Start validity date* equal to today's date. A request will be displayed:   
+> **Control plan type**: it is the *Control Plan Type* of the new *Control Plan* (mandatory data).   
+> **Number**: it is the progressive *Number* of the new *Control Plan* (mandatory data), proposed based on what is provided by the *Numeration* associated with the *Control Plan Type* and today's date.   
+> **Create maintaining traceability**: indicates whether to maintain the relationship/traceability of the source *Data Sheet* in the destination *Control Plan* (origin control plan expander present in the header info).
 
-Premere successivamente il pulsante **OK** o il pulsante **Cancel** se si desidera proseguire nell'attività di creazione o meno.   
-Al termine dell'elaborazione il nuovo *Piano di controllo* viene visualizzato.   
+Then press the **OK** button or the **Cancel** button if you wish to proceed with the creation or not.   
+At the end of the process, the new *Control Plan* will be displayed.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+For anything not detailed in this document regarding the common operation of the forms, please refer to the following link [Custom features, Buttons, and Fields](/docs/guide/common).

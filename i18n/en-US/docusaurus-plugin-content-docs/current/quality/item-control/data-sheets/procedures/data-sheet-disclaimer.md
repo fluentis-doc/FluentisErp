@@ -1,37 +1,37 @@
 ---
-title: Dichiarazione di non responsabilità
+title: Disclaimer 
 sidebar_position: 1
 ---
 
-La gestione si trova sul percorso **Qualità > Controlli articolo > Schede tecniche > Procedure > Dichiarazione di non responsabilità**
+The management can be found at the path **Quality > Item Controls > Technical Sheets > Procedures > Disclaimer**
 
-:::important A cosa serve
-Le *Dichiarazione di non responsabilità* sono le clausole per le quali l'azienda non si assume la responsabilità, per esempio a causa di un uso improprio, per i danni causati dal o all'articolo.   Nelle dichiarazioni di non responsabilità possono essere definite quindi le cause che fanno decadere le proprietà dichiarate del prodotto.   
+:::important What it is for
+The *Disclaimers* are clauses under which the company does not assume responsibility, for example due to misuse, for damages caused by or to the item. In disclaimers, the causes that invalidate the declared properties of the product can therefore be defined.   
 :::
 
-Un esempio di utilizzo lo troviamo nella stampa **Scheda prodotto** eseguibile dalla **Stampa Scheda tecnica**.
+An example of use can be found in the **Product Sheet** printout executable from the **Report Data Sheet**.
 
-Il filtro dati consente di inserire nuove *Dichiarazioni* o di ricercare quelle già esistenti per visualizzarle, modificarle oppure cancellarle.   
+The data filter allows you to enter new *Disclaimers* or search for existing ones to view, modify, or delete them.
 
-### ![](/img/neutral/common/search.png) Ricerca Dichiarazione di non responsabilità
+### ![](/img/neutral/common/search.png) Search Disclaimer 
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.   
+The form consists of a filter area and a results area. Once all desired filters have been set, simply click the **Search** button to view the results within the results grid.
 
-### ![](/img/neutral/common/new.png) Inserimento Dichiarazione di non responsabilità
+### ![](/img/neutral/common/new.png) Insertion of Disclaimer 
 
-Per poter inserire nuove *Check-list* è necessario premere il pulsante **Nuovo**.   
+To enter new *Checklists*, it is necessary to press the **New** button.
 
-### ![](/img/neutral/common/edit.png) Modifica o ![](/img/neutral/common/view.png) Visualizzazione Dichiarazione di non responsabilità
+### ![](/img/neutral/common/edit.png) Modify or ![](/img/neutral/common/view.png) View Disclaimer 
 
-Per aprire la gestione, della griglia di risultato, è necessario fare doppio click sulla riga di nostro interesse oppure, selezionando una o più righe, premere i pulsanti **Modifica** o **Visualizza**.   
+To open the management of the results grid, you need to double-click on the row of interest or, by selecting one or more rows, press the **Modify** or **View** buttons.
 
-*Campi specifici*:   
+*Specific fields*:
 
-> **Sequenza**: è la sequenza di visualizzazione delle *Dichiarazioni*.   
-> **Tipo**: è il *Tipo di dichiarazione* usata per il scegliere il gruppo di *Dichiarazioni* da riportare in stampa.   
-> **Data inizio validità**: è la data dalla quale la *Dichiarazione* è valida e utilizzabile.   
-> **Data fine validità**: è la data dalla quale la *Dichiarazione* cessa di essere valida e utilizzabile.   
-> **Descrizione**: è la descrizione della *Dichiarazione*.   
-> **Note**: annotazioni libere.   
+> **Sequence**: is the display sequence of the *Disclaimers*.   
+> **Type**: is the *Disclaimer type* used to choose the group of *Disclaimers* to be printed.   
+> **Starting validity date**: is the date from which the *Disclaimer* is valid and usable.   
+> **End validity date**: is the date from which the *Disclaimer* ceases to be valid and usable.   
+> **Description**: is the description of the *Disclaimer*.   
+> **Notes**: free annotations.   
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+For everything not detailed in this document regarding the common functionality of forms, please refer to the following link [Custom features, buttons, and common fields](/docs/guide/common).

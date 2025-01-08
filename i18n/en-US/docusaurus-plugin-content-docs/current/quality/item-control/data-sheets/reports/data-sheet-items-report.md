@@ -1,20 +1,20 @@
 ---
-title: Stampa Scheda tecnica
+title: Report Data Sheet
 sidebar_position: 1
 ---
 
-Il filtro di esecuzione report si trova sul percorso **Qualità > Controlli articolo > Schede tecniche > Stampe > Stampa Scheda tecnica**.   
+The report execution filter is located along the path **Quality > Item Controls > Data Sheets > Reports > Report Data Sheet**.   
 
-Il filtro di esecuzione report consente di ricercare gli *Articoli* presenti nelle *Schede tecniche* per poterli stampare.   
-Il report predefinito è **Scheda Prodotto** - *Scheda tecnica dell'Articolo* che riporta l'elenco delle *Proprietà* indicate nella *Scheda tecnica*.   
+The report execution filter allows you to search for *Items* present in the *Data Sheets* for printing.   
+The default report is **Product Details** - *Data Sheet of the Item*, which lists the *Properties* indicated in the *Data Sheet*.   
 
-### ![](/img/neutral/common/search.png) Ricerca Schede tecniche
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato *Schede tecniche* (elenco di sinistra).   
+### ![](/img/neutral/common/search.png) Search Data Sheets 
+The form consists of a filter area and a results area. Once all desired filters are set, simply click the **Search** button to display the results in the *Data Sheets* results grid (left list).   
 
-Dalla griglia risultato delle *Schede tecniche* è necessario selezionare un'unica *Scheda tecnica* desiderata per poter visualizzare, nella griglia di risultato *Articoli* (elenco di destra) l'elenco degli *Articoli* in essa associati.   
+From the results grid of the *Data Sheets*, it is necessary to select a single desired *Data Sheet* to view, in the *Items* results grid (right list), the list of *Items* associated with it.   
 
-Dalla griglia risultato degli *Articoli* è necessario selezionare gli *Articoli* che si desiderano stampare.   
+From the *Items* results grid, it is necessary to select the *Items* that you wish to print.   
 
-In calce alla stampa **Scheda Prodotto** standard viene anche riportata la *Dichiarazione di non responsabilità* del *Tipo dichiarazione* associata all'*Articolo*. Se non indicato verrà riportata la *Dichiarazione di non responsabilità* del *Tipo dichiarazione* indicata in *Tipo dichiarazione da stampare in caso l'articolo ne sia sprovvisto"
-
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+At the bottom of the standard **Product Details** print, the *Disclaimer* of the associated *Disclaimer Type* for the *Item* is also provided. If not specified, the *Disclaimer* of the *Disclaimer Type* indicated in *Disclaimer type to be printed
+in case the article is lacking* will be displayed.
+For all details not covered in this document on the common operation of forms, please refer to the following link [Custom Features, buttons, and fields](/docs/guide/common).
