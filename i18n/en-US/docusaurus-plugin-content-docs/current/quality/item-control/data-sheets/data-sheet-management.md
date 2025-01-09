@@ -1,186 +1,186 @@
 ---
-title: Scheda tecnica
+title: Data Sheet 
 sidebar_position: 2
 ---
 
-La gestione si trova sul percorso **Qualità > Controlli articolo > Schede tecniche > Nuova scheda tecnica** oppure è possibile eseguirla dalla **Ricerca Schede tecniche**.   
+The management is found along the path **Quality > Item Controls > Data Sheets > New Data Sheet** or it can be executed from **Search Data Sheets**.
 
 
-:::important A cosa serve
-Le Schede tecniche catalogano tutte quelle informazioni che descrivono le caratteristiche dei prodotti associati come idonee ad un contratto, ad una specifica funzionale o ad un determinato impiego.   
-Le schede tecniche possono essere personalizzabili per Cliente.   
-Vengono gestite le revisioni e la rintracciabilità tra Schede tecniche desiderate.   
+:::important Purpose
+Data sheets catalog all the information that describes the characteristics of associated products as suitable for a contract, a functional specification, or a specific use.   
+Data sheets can be customized for the Client.   
+Revisions and traceability between desired data sheets are managed.
 
-A standard sono disponibili le reportistiche di:   
-> **Scheda tecnica**: scheda con l'elenco delle *Proprietà* e delle *Norme e Leggi* associate (per uso interno).   
-> **Scheda Prodotto**: scheda riportante i dati del *Prodotto* e delle *Proprietà* (per uso commerciale).   
+Standard reports are available for:   
+> **Data Sheet**: sheet with the list of *Properties* and *Norms and Laws* associated (for internal use).   
+> **Product Details**: sheet containing data of the *Product* and *Properties* (for commercial use).   
 :::
 
 
-## Pulsanti di comando
+## Command Buttons
 
 
-### ![](/img/neutral/common/save.png) Salva
+### ![](/img/neutral/common/save.png) Save
 
-Premendo questo pulsante si memorizzano tutte le informazioni modificate della *Scheda tecnica* visualizzata.   
-
-
-### ![](/img/neutral/common/duplicate.png) Duplica Scheda
-
-E' possibile duplicare la *Scheda tecnica* visualizzata in una nuova *Scheda tecnica*. E' sufficiente premere il pulsante **Duplica**.   
-Viene visualizzata una richiesta di:
-> **Tipo scheda**: è il *Tipo scheda* della nuova *Scheda tecnica* (dato obbligatorio), viene proposto il *Tipo scheda* della *Scheda tecnica* di origine.   
-> **Del cliente**: è il *Cliente* della nuova *Scheda tecnica*, viene proposto il conto *Cliente* della *Scheda tecnica* di origine.   
-> **Extra data**: elenco degli extra data previsti dal *Tipo scheda* indicato.   
-> **Nuovo codice**: è il *Codice* della nuova *Scheda tecnica* (dato obbligatorio), viene proposto in base a quanto previsto dal *Metodo di Codifica* associata al *Tipo scheda tecnica*.   
-> **Duplica con rintracciabilità**: indica se si desidera mantenere relazione/rintracciabilità, nella *Scheda tecnica* di origine (tabulatore *Schede correlate* della *Scheda tecnica* di origine) e nella *Scheda tecnica* di destinazione (nell'expander *Origine dati scheda* presente nei *dati di testata*).   
-
-*Tipo scheda* e *Del cliente* sono proposti dal documento di origine; il *Codice* viene proposto se, al *Tipo scheda*, è associato un *Metodo di codifica*.   
-Premere successivamente il pulsante **OK** o il pulsante **Cancel** se si desidera proseguire nell'attività di duplica o meno.   
-La nuova *Scheda tecnica* creata avrà la *Revisione* pari a *Zero*.   
-Al termine dell'elaborazione la nuova *Scheda tecnica* viene visualizzata.   
+Pressing this button saves all modified information of the displayed *Data Sheet*.
 
 
-### ![](/img/neutral/common/execute.png) Crea nuova revisione
+### ![](/img/neutral/common/duplicate.png) Duplicate Sheet
 
-Per poter creare una nuova *Revisione* della *Scheda tecnica* visualizzata è necessario premere il pulsante **Crea nuova revisione**.   
-Viene creata una nuova *Scheda tecnica*, con tutte le informazioni della *Scheda tecnica* di origine ma con indice di *Revisione* incrementato e la *Data di inizio validità* pari alla data odierna.   
-La *Scheda tecnica* di origine finisce la sua validità, la *Data fine validità* viene impostata pari alla data odierna.   
-Al termine dell'elaborazione la nuova *Revisione* della *Scheda tecnica* viene visualizzata.   
+It is possible to duplicate the displayed *Data Sheet* into a new *Data Sheet*. Just press the **Duplicate** button.   
+A request will be displayed for:
+> **Sheet type**: is the *Sheet type* of the new *Data Sheet* (mandatory data), the *Sheet type* of the origin *Data Sheet* is proposed.   
+> **Of the customer**: is the *Customer* of the new *Data Sheet*, the *Customer account* of the origin *Data Sheet* is proposed.   
+> **Extra data**: list of the extra data provided by the indicated *Sheet type*.   
+> **New code**: is the *Code* of the new *Data Sheet* (mandatory data), it is proposed based on the provisions of the *Coding Method* associated with the *Data Sheet type*.   
+> **Duplicate with traceability**: indicates whether to maintain the relationship/traceability in the origin *Data Sheet* (tab *Related Sheets* of the origin *Data Sheet*) and in the destination *Data Sheet* (in the *Data Sheet Origin* expander present in the *header data*).
 
-
-### ![](/img/neutral/common/item-web.png) Crea Piano di controllo
-
-Dalla *Scheda tecnica* è possibile creare un *Piano di controllo*; per fare ciò è necessario premere il pulsante **Crea Piano di controllo**.   
-Viene creato un nuovo *Piano di controllo*, vengono copiate solamente le *Proprietà* di origine con l'indicatore *Prove da rilevare*, tutte le altre informazioni della *Scheda tecnica* ma con indice di *Revisione* pari a *zero* e con *Data di inizio validità* pari alla data odierna. Verrà visualizzata una richiesta di:   
-> **Tipo piano di controllo**: è il *Tipo piano di controllo* del nuovo *Piano di controllo* (dato obbligatorio).   
-> **Numero**: è il *Numero* progressivo del nuovo *Piano di controllo* (dato obbligatorio), viene proposto in base a quanto previsto dalla *Numerazione* associata al *Tipo piano di controllo* e alla data odierna.   
-> **Crea mantenendo la rintracciabilità**: indica se si desidera mantenere relazione/rintracciabilità, della *Scheda tecnica* di origine, nel *Piano di controllo* di destinazione (nell'expander *Origine Piano di controllo* presente nei *dati di testata*).   
-
-Premere successivamente il pulsante **OK** o il pulsante **Cancel** se si desidera proseguire nell'attività di creazione o meno.   
-Al termine dell'elaborazione il nuovo *Piano di controllo* viene visualizzato.   
+*Sheet type* and *Of the customer* are proposed from the origin document; the *Code* is proposed if a *Coding method* is associated with the *Sheet type*.   
+Then press the **OK** button or the **Cancel** button if you wish to continue or not with the duplication activity.   
+The newly created *Data Sheet* will have a *Revision* equal to *Zero*.   
+At the end of the processing, the new *Data Sheet* will be displayed.
 
 
-### ![](/img/neutral/common/duplicate.png) Duplica prova
+### ![](/img/neutral/common/execute.png) Create new revision
 
-Contestuale al tabulatore *Proprietà* il pulsante è abilitato solamente se, dall'elenco *Proprietà*, è stata selezionata una sola riga *Proprietà*.
-Tutte la informazioni della *Proprietà* di origine vengono duplicate in una nuova *Proprietà* accodata in *Sequenza* alle *Proprietà* già esistenti.
+To create a new *Revision* of the displayed *Data Sheet*, you must press the **Create new revision** button.   
+A new *Data Sheet* is created, with all the information of the origin *Data Sheet* but with an incremented *Revision* index and the *Start validity date* equal to today's date.   
+The origin *Data Sheet* ends its validity, and the *End validity date* is set to today's date.   
+At the end of the processing, the new *Revision* of the *Data Sheet* will be displayed.
 
 
-## Gestione dati
+### ![](/img/neutral/common/item-web.png) Create Control Plan
+
+From the *Data Sheet*, you can create a *Control Plan*; to do this, you need to press the **Create Control Plan** button.   
+A new *Control Plan* is created, only copying the *Properties* of the origin with the *Tests to detect* indicator, and all other information of the *Technical Sheet* but with a *Revision* index equal to *zero* and with *Start validity date* equal to today's date. A request will be displayed for:   
+> **Control plan type**: is the *Control plan type* of the new *Control Plan* (mandatory data).   
+> **Number**: is the progressive *Number* of the new *Control Plan* (mandatory data), proposed based on the provisions of the *Numeration* associated with the *Control Plan type* and today's date.   
+> **Create maintaining traceability**: indicates if you want to maintain the relationship/traceability of the origin *Data Sheet* in the destination *Control Plan* (in the *Control Plan Origin* expander present in the *header data*).
+
+Then press the **OK** button or the **Cancel** button if you wish to continue or not with the creation activity.   
+At the end of the processing, the new *Control Plan* will be displayed.
 
 
-### Dati di testata
+### ![](/img/neutral/common/duplicate.png) Duplicate Test
 
-Le informazioni gestibili sono:   
-> **Tipo scheda**: è il *Tipo scheda tecnica* (dato obbligatorio).   
-> All'inserimento manuale di una nuova *Scheda tecnica* viene proposto il *Tipo scheda tecnica* indicato nell'expander *Schede tecniche* del tabulatore *Generale* presente nei *Parametri Controllo articoli*.   
+Next to the *Properties* tab, the button is enabled only if a single row of *Properties* has been selected from the *Properties* list.  
+All information from the origin *Property* is duplicated in a new *Property* appended in *Sequence* to the already existing *Properties*.
+
+
+## Data Management
+
+
+### Header Data
+
+The manageable information is:   
+> **Sheet type**: is the *Data Sheet type* (mandatory data).   
+> When manually entering a new *Data Sheet*, the indicated *Data Sheet type* is proposed in the *Data Sheets* expander of the *General* tab present in the *Item Control Parameters*.   
 >
-> **Codice**: è il *Codice* della *Scheda tecnica* (dato obbligatorio).   
-> Viene proposto in base a quanto previsto dal *Metodo di Codifica* associata al *Tipo scheda tecnica*.   
+> **Code**: is the *Code* of the *Data Sheet* (mandatory data).   
+> It is proposed based on the provisions of the *Encoding Method* associated with the *Data Sheet type*.   
 >
-> **Revisione**: è la Revisione della *Scheda tecnica* (dato obbligatorio).   
-L'informazione è modificabile se si stà creando una nuova *Scheda tecnica* altrimenti è di sola lettura; si può variare in modo pilotato dal sistema usando il pulsante *Crea nuova revisione* che incrementano il precedente valore di *Revisione* di una unità.   
+> **Revision**: is the Revision of the *Data Sheet* (mandatory data).   
+This information is modifiable if creating a new *Data Sheet*; otherwise, it is read-only; it can be varied in a controlled manner by the system using the *Create new revision* button that increments the previous *Revision* value by one.   
 >
-> **Descrizione**: è la descrizione della *Scheda tecnica*.   
-> **Nome commerciale**: è la descrizione commerciale della *Scheda tecnica*.   
-> **Del cliente**: è la ragione sociale del *Cliente*. Le *Proprietà* sono personalizzate per il *Cliente*/*Articoli associati*.    
-> **Data richiesta/Richiesta da**: solo i riferimenti in quale data e qual'è la persona che ha richiesto la creazione della *Scheda tecnica*.    
+> **Description**: is the description of the *Data Sheet*.   
+> **Trade name**: is the commercial description of the *Data Sheet*.   
+> **Of the customer**: is the company name of the *Customer*. The *Properties* are customized for the *Customer*/*Associated items*.    
+> **Demand date/Required by**: only references on which date and who is the person that requested the creation of the *Data Sheet*.    
 >
-> **Validità: Inizio/Fine**: sono le date di inizio e di fine validità della *Scheda tecnica*.    
-> Le date sono gestite automaticamente alla creazione di una nuova *Revisione* della *Scheda tecnica*.
+> **Validity: Start/End**: are the start and end validity dates of the *Data Sheet*.    
+> The dates are managed automatically when creating a new *Revision* of the *Data Sheet*.
 >
-> **Responsabile**: è il *Dipendente* responsabile della *Scheda tecnica*.   
-> All'inserimento manuale di una nuova *Scheda tecnica* viene proposto il *Responsabile* indicato nell'expander *Schede tecniche* del tabulatore *Generale* presente nei *Parametri Controllo articoli*.   
+> **Responsible**: is the *Employee* responsible for the *Data Sheet*.   
+> When manually entering a new *Data Sheet*, the *Responsible* indicated in the *Data Sheets* expander of the *General* tab present in the *Item Control Parameters* is proposed.   
 >
-> **Origine dati scheda**: expander dove è possibile inserire:   
+> **Data sheet origin**: expander where it is possible to enter:   
 >
->> **Tipo/Scheda origine/Rev.**: contiene i riferimenti della *Scheda tecnica di origine* (*Tipo scheda*, *Codice* e *Revisione*).   
->> **Motivo della revisione**: una breve descrizione del motivo che ha condotto alla revisione.   
->> L'informazione può essere variata se la *Scheda tecnica* è ancora in corso di validità.   
+>> **Type/Sheet Origin/Rev.**: contains the references of the *Data Sheet Origin* (*Sheet type*, *Code*, and *Revision*).   
+>> **Reason for revision**: a brief description of the reason that led to the revision.   
+>> This information can be varied if the *Data Sheet* is still valid.   
 >
-> **Note**: annotazioni libere.   
+> **Notes**: free notes.
 
 
-### Attributi scheda
-E' possibile inserire degli [Extra Data](/docs/configurations/utility/extra-data/extradata/new-extradata-simple) per ogni *Scheda tecnica*.   
-Vengono ereditati dagli *Attributi Scheda tecnica* associati al *Tipo scheda tecnica*.   
+### Sheet Attributes
+It is possible to enter [Extra Data](/docs/configurations/utility/extra-data/extradata/new-extradata-simple) for each *Data Sheet*.   
+They are inherited from the *Data Sheet Attributes* associated with the *Data Sheet type*.
 
 
-### Proprietà
-Contiene le *Proprietà* degli *Articoli* o *Attributi articolo* della *Scheda tecnica*.
-L'elenco si compone delle seguenti informazioni:   
-> **Sequenza**: è la sequenza di visualizzazione/importanza della *Proprietà*.   
-> **Tipo prova**: è il codice della *Proprietà*.   
-> **Descrizione tipo prova**:  è la descrizione della *Proprietà*. L'informazione è di sola lettura.   
-> **Descrizione**: è la descrizione della *Proprietà* compilabile.   
-> **Riferimento piano di controllo standard**: è un campo descrittivo che contiene i riferimenti a codifiche di prove riconosciute globalmente.   
-> **Strumento di misura**: è la *Categoria dello strumento di misura* da utilizzare per poter rilevare i *Valori* espressi nella *Proprietà*.   
-> **Prova da rilevare**: indica se la *Proprietà* è una *Prova da rilevare*.   
-Alla creazione di un *Piano di controllo* dalla *Scheda tecnica* la *Proprietà* verrà copiata nelle *Prove da rilevare*.   
-> **Unità di misura**: è l'*Unità di misura* con cui si esprimono il *Valore nominale* e i *Limiti minimo e massimo* se espressi in valore e non in percentuale.   
-> **Tipo valore**: è il *Tipo valore* con cui esprimere il *Valore nominale*; i *Tipi valore* possibili sono: *Numerico*, *Si/No* o *Testo*.   
-> **Tipo limite**: abilitato se il *Tipo valore* è *Numerico*, è il *Tipo limite* che piloterà l'abilitazione dei *Limiti* e dei valori di *Tolleranza*.   
-> **Valore nominale**: è il valore teorico atteso della *Proprietà*.   
-> **Limite minimo**: limite minimo consentito rispetto al *Valore nominale*.   
-> **L.min.(toll-)**: è il limite di tolleranza negativa sul limite minimo.   
-> **L.min.(toll+)**: è il limite di tolleranza positiva sul limite minimo.   
-> **Limite massimo**: limite massimo consentito rispetto  al *Valore nominale*.   
-> **L.max.(toll-)**: è il limite di tolleranza negativa sul limite massimo.   
-> **L.max.(toll+)**: è il limite di tolleranza positiva sul limite massimo.   
-> **%**: indica se il *Limite minimo* e il *Limite massimo* sono espressi in percentuale.   
-> **Data inizio validità**: è la data di inizio validità della *Proprietà*.   
-> **Data fine validità**: è la data di fine validità della *Proprietà*.   
-> **Stampabili**: indica se le informazioni sono stampabili o meno nei reports: *Scheda tecnica* e *Scheda Prodotto*.   
-> **Note**: annotazioni libere.   
+### Properties
+Contains the *Properties* of the *Items* or *Item Attributes* of the *Data Sheet*.  
+The list consists of the following information:   
+> **Sequence**: is the display/importance sequence of the *Property*.   
+> **Test type**: is the code of the *Property*.   
+> **Test type description**: is the description of the *Property*. This information is read-only.   
+> **Description**: is the fillable description of the *Property*.   
+> **Standard control plan reference**: is a descriptive field containing references to globally recognized test codifications.   
+> **Measurement tool**: is the *Category of the measurement tool* to be used to detect the *Values* expressed in the *Property*.   
+> **Test to detected**: indicates if the *Property* is a *Test to detect*.   
+When creating a *Control Plan* from the *Data Sheet*, the *Property* will be copied into the *Tests to detect*.   
+> **Unit of measure**: is the *Unit of measure* with which the *Typical value* and the *Minimum and maximum limits* are expressed if expressed in value and not percentage.   
+> **Value type**: is the *Value type* with which to express the *Typical value*; the possible *Value types* are: *Numeric*, *Yes/No*, or *Text*.   
+> **Limit type**: enabled if the *Value type* is *Numeric*, is the *Limit type* that will control the enabling of *Limits* and *Tolerance* values.   
+> **Typical value**: is the expected theoretical value of the *Property*.   
+> **Minimum limit**: minimum allowed limit compared to the *Typical value*.   
+> **L.min.(toll-)**: is the negative tolerance limit on the minimum limit.   
+> **L.min.(toll+)**: is the positive tolerance limit on the minimum limit.   
+> **Maximum limit**: maximum allowed limit compared to the *Typical value*.   
+> **L.max.(toll-)**: is the negative tolerance limit on the maximum limit.   
+> **L.max.(toll+)**: is the positive tolerance limit on the maximum limit.   
+> **%**: indicates if the *Minimum limit* and the *Maximum limit* are expressed in percentage.   
+> **Start validity date**: is the start validity date of the *Property*.   
+> **End validity date**: is the end validity date of the *Property*.   
+> **Printable**: indicates if the information is printable or not in the reports: *Data Sheet* and *Product Details*.   
+> **Notes**: free notes.   
 
-I Limiti di tolleranza positiva e negativa sui limiti minimi e massimi sono informazioni abitualmente dati dall'errore dello *Strumento di misura* utilizzato per rilevare i valori. In questa versione sono inseribili solo manualmente dall'operatore.   
-
-
-### Norme e Leggi
-Contiene i riferimenti a *Normative* e/o *legislazioni* applicabili alle *Proprietà* della *Scheda tecnica*.
-L'elenco si compone delle seguenti informazioni:   
-> **Tipo**: è il *Tipo norma e legge* associata alla *Norma e Legge* indicata. L'informazione è di sola lettura.   
-> **Codice**: è la *Norma e Legge*.   
-> **Descrizione**: è la descrizione della *Norma e Legge* indicata. L'informazione è di sola lettura.   
-> **Note**: annotazioni libere.   
+The positive and negative tolerance limits on minimum and maximum limits are information usually given by the error of the *Measurement tool* used to detect the values. In this version, they can only be entered manually by the operator.
 
 
-### Clienti
-Contiene i *Clienti* interessati agli *Articoli* con *Proprietà* simili ed elencati nei due rispettivi elenchi.   
-L'elenco si compone delle seguenti informazioni:   
-> **Cliente**: è la ragione sociale del *Cliente*. Le *Proprietà* sono personalizzate per i *Clienti*/*Articoli associati*.   
-> **Note**: annotazioni libere.   
+### Norms and Laws
+Contains references to *Regulations* and/or *legislations* applicable to the *Properties* of the *Data Sheet*.  
+The list consists of the following information:   
+> **Type**: is the *Norm and law type* associated with the indicated *Norm and Law*. This information is read-only.   
+> **Code**: is the *Norm and Law*.   
+> **Description**: is the description of the indicated *Norm and Law*. This information is read-only.   
+> **Notes**: free notes.
 
 
-### Articoli associati
-Contiene gli *Articoli* con caratteristiche simili ed elencate nell'elenco delle *Proprietà*.
-L'elenco si compone delle seguenti informazioni:   
-> **Classe**: è la classe dell'*Articolo*.   
-> **Codice articolo**: è il codice dell'*Articolo*.   
-> **Descrizione articolo**: è la descrizione dell'*Articolo*.   
-> **Variante**: è il codice della *Variante articolo*.   
-> **Descrizione variante**: è la descrizione della *Variante articolo*. L'informazione è di sola lettura.   
-> **Tipo dichiarazione**: è il *Tipo di dichiarazione* (di non responsabilità) che verrà proposta nel report *Scheda Prodotto*.   
-> **Note**: annotazioni libere.   
+### Clients
+Contains the *Clients* interested in the *Items* with similar *Properties* listed in the two respective lists.   
+The list consists of the following information:   
+> **Client**: is the company name of the *Client*. The *Properties* are customized for *Clients*/*Associated items*.   
+> **Notes**: free notes.
 
 
-### Attributi articolo
-In alternativa all'elenco degli *Articoli associati* è possibile inserire caratteristiche (in formato [Extra Data](/docs/configurations/utility/extra-data/extradata/new-extradata-simple)) per cui le *Proprietà* della *Scheda tecnica* sono valide.   
+### Associated Items
+Contains the *Items* with similar characteristics listed in the properties list.  
+The list consists of the following information:   
+> **Class**: is the class of the *Item*.   
+> **Item code**: is the code of the *Item*.   
+> **Item description**: is the description of the *Item*.   
+> **Variant**: is the code of the *Item variant*.   
+> **Variant description**: is the description of the *Item variant*. This information is read-only.   
+> **Declaration type**: is the *Type of declaration* (of non-responsibility) that will be proposed in the *Product Details* report.   
+> **Notes**: free notes.
 
 
-### Schede correlate
-In questo elenco è possibile visualizzare le *Schede tecniche* duplicate con rintracciabilità dalla *Scheda* visualizzata.   
-Tramite un doppio click del mouse sulla riga desiderata è possibile eseguire la gestione della *Scheda tecnica* selezionata.   
+### Item Attributes
+Alternatively to the list of *Associated Items*, it is possible to enter characteristics (in [Extra Data](/docs/configurations/utility/extra-data/extradata/new-extradata-simple)) for which the *Properties* of the *Data Sheet* are valid.
 
 
-### Revisioni
-In questo elenco è possibile visualizzare lo storico delle *Revisioni* antecedenti alla *Schede tecniche* visualizzata.   
-Tramite un doppio click del mouse sulla riga desiderata è possibile eseguire la gestione della *Scheda tecnica* selezionata.   
+### Related Sheets
+In this list, you can view the *Data Sheets* duplicated with traceability from the displayed *Sheet*.   
+By double-clicking the desired row, you can manage the selected *Data Sheet*.
 
 
-### Documenti collegati
-In questo elenco è possibile inserire e consultare eventuali allegati; è possibile visualizzare l'anteprima.   
+### Revisions
+In this list, you can view the history of *Revisions* prior to the displayed *Data Sheets*.   
+By double-clicking the desired row, you can manage the selected *Data Sheet*.
 
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).   
+### Linked Documents
+In this list, you can enter and consult any attachments; a preview is available.
+
+
+For everything not detailed in this document regarding the common functionality of forms, refer to the following link [Custom features, buttons, and fields](/docs/guide/common).
