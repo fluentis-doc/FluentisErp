@@ -23,6 +23,6 @@ Obrazac sadrži niz kartica:
 
 -  [Artikli] 
 
--  [Sažeci](/docs/purchase/purchase-orders/insert-purchase-orders/summaries) 
+-  [Sažeci]
 
 Za sve što nije pojedinostima navedeno u ovom dokumentu o zajedničkom radu obrazaca, uputite se na sljedeću poveznicu: [Zajedničke značajke, gumbe i polja](/docs/guide/common).
