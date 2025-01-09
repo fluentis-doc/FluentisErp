@@ -54,4 +54,4 @@ Contained in each tab, it is the lower "grid" that contains the result of the *S
 In this grid, which displays the same columns as the modification grid (the upper one), you can manually modify all information without having to enter each management of the *Control Plan*. The columns vary depending on the selected tab.   
 The columns where information cannot be modified are disabled and highlighted with a different color.   
 
-For anything not detailed in this document regarding the common functioning of forms, please refer to the following link [Custom Features, Buttons, and Fields (Funzionalità, pulsanti e campi comuni)](/docs/guide/common).
+For anything not detailed in this document regarding the common functioning of forms, please refer to the following link [Custom Features, Buttons, and Fields](/docs/guide/common).
