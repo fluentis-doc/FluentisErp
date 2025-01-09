@@ -1,51 +1,51 @@
 ---
-title: Inserimento massivo articoli
+title: Multiple Items Insert
 sidebar_position: 2
 ---
 
-La gestione si trova sul percorso **Qualità > Controlli articolo > Piani di controllo > Procedure > Inserimento massivo articoli**
+The management can be found along the path **Quality > Item Controls > Control Plans > Procedures > Multiple Items Insert**.
 
-:::important A cosa serve
-Questa procedura permette di assegnare massivamente gli *Articoli* ai *Piani di controllo*.
-Per poter usufruire della funzione di *Inserisci* è necessario:
-- dal tabulatore **Articolo** scegliere gli *Articoli* da assegnare;  
-- dal tabulatore **Piani di controllo** scegliere i *Piani di controllo*;      
-- cliccare il pulsante **Inserisci**.   
+:::important Purpose
+This procedure allows for the massive assignment of *Items* to *Control Plans*.
+To use the *Insert* function, it is necessary to:
+- from the **Item** tab, choose the *Items* to be assigned;  
+- from the **Control Plans** tab, choose the *Control Plans*;      
+- click the **Insert** button.   
 :::
 
 
-## Articoli   
+## Items
 
-In questo tabulatore è possibile ricercare e selezionare gli *articoli* che si desidera inserire massivamente nei *Piani di controllo* e selezionabili nel tabulatore omonimo.   
-La sessione si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca articoli** per visualizzare i risultati all'interno della griglia di risultato.    
+In this tab, it is possible to search for and select the *items* that you want to insert massively into the *Control Plans* and selectable in the corresponding tab.   
+The session consists of a filter area and a results area. Once all desired filters are set, just click the **Search Items** button to view the results in the results grid.    
 
-*Pulsanti specifici*:   
+*Specific buttons*:   
 
-### ![](/img/neutral/common/search.png) Ricerca articoli
-Sulla base del filtro impostato si visualizzano i risultati all'interno della griglia di risultato.   
-### ![](/img/neutral/common/duplicate.png) Scegli Piani di controllo
-Premendo il pulsante ci si posiziona automaticamente nel tabulatore **Piani di controllo**.   
-
-
-## Piani di controllo   
-
-In questo tabulatore è possibile ricercare e selezionare i *Piani di controllo* a cui si desidera inserire massivamente gli *Articoli* selezionabili nel tabulatore omonimo.   
-La sessione si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca Piani di controllo** per visualizzare i risultati all'interno della griglia di risultato.    
-
-*Pulsanti specifici*:   
-
-### ![](/img/neutral/common/search.png) Ricerca Piani di controllo
-Sulla base del filtro impostato si visualizzano i risultati all'interno della griglia di risultato.   
-### ![](/img/neutral/common/duplicate.png) Scegli articoli
-Premendo il pulsante ci si posiziona automaticamente nel tabulatore **Articoli**.   
-### ![](/img/neutral/common/execute.png) Inserisci
-Gli *Articoli* selezionati verranno associati ai *Piani di controllo* selezionate nei rispettivi tabulatori con le informazioni indicate nel tabulatore *Parametri*.   
+### ![](/img/neutral/common/search.png) Search Items
+Based on the set filter, results will be displayed in the results grid.   
+### ![](/img/neutral/common/duplicate.png) Choose Control Plans 
+Pressing this button will automatically take you to the **Control Plans** tab.   
 
 
-## Parametri
+## Control Plans 
 
-In questo tabulatore è possibile indicare alcune informazioni che verranno proposte all'inserimento degli *Articoli* nei *Piani di controllo*.   
-Nel tabulatore è possibile inserire:   
-> **Note**: annotazioni libere.   
+In this tab, it is possible to search for and select the *Control Plans* to which you want to massively insert the *Items* selectable in the corresponding tab.   
+The session consists of a filter area and a results area. Once all desired filters are set, just click the **Search Control Plans** button to view the results in the results grid.    
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+*Specific buttons*:   
+
+### ![](/img/neutral/common/search.png) Search Control Plans 
+Based on the set filter, results will be displayed in the results grid.   
+### ![](/img/neutral/common/duplicate.png) Choose Items
+Pressing this button will automatically take you to the **Items** tab.   
+### ![](/img/neutral/common/execute.png) Insert 
+The selected *Items* will be associated with the selected *Control Plans* in their respective tabs with the information indicated in the *Parameters* tab.   
+
+
+## Parameters
+
+In this tab, you can indicate some information that will be proposed during the insertion of *Items* into *Control Plans*.   
+In the tab, you can enter:   
+> **Notes**: free annotations.   
+
+For anything not detailed in this document on the common operation of forms, please refer to the following link [Custom features, buttons, and fields](/docs/guide/common).

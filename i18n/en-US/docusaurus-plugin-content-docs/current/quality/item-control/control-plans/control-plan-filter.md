@@ -1,72 +1,72 @@
 ---
-title: Ricerca Piani di controllo
+title: Search Control Plan Search 
 sidebar_position: 1
 ---
 
-Il filtro si trova sul percorso **Qualità > Controlli articolo > Piani di controllo**.   
+The filter is located on the path **Quality > Item Controls > Control Plans**.   
 
 
-Nei **Piani di controllo** si definiscono sequenze di *Prove pianificate* da effettuare in: accettazione materiali, durante il flusso produttivo o durante il collaudo finale per verificare l'idoneità dei materiali ricevuti o degli articoli prodotti.   
-Si posso definire dei *Piani di controllo* per singolo articolo o per gruppi o da associare a *Fasi* dei *Cicli di lavorazione* e differenziarli per *Cliente* e *Fornitore*.   
-E' prevista la gestione delle *Revisioni* del *Piano di controllo*.
+In the **Control Plans**, sequences of *Planned Tests* are defined to be carried out during material acceptance, throughout the production flow, or during final testing to verify the suitability of received materials or produced items.   
+*Control Plans* can be defined for individual items or for groups, or associated with *Stages* of *Processing Cycles*, and differentiated by *Customer* and *Supplier*.   
+Management of *Revisions* for the *Control Plan* is provided.
 
 
-Il filtro dati consente di inserire nuovi *Piani di controllo* o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.   
+The data filter allows for the entry of new *Control Plans* or for searching existing ones to view, modify, or delete them.   
 
 
-### ![](/img/neutral/common/search.png) Ricerca Piani di controllo
+### ![](/img/neutral/common/search.png) Search Control Plan  
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.   
-
-
-### ![](/img/neutral/common/new.png) Inserimento Piani di controllo
-
-Per poter inserire nuovi *Piani di controllo* è necessario premere il pulsante **Nuovo**.   
+The form is composed of a filter area and a results area. Once all desired filters are set, simply click the **Search** button to view the results in the results grid.   
 
 
-### ![](/img/neutral/common/edit.png) Modifica o ![](/img/neutral/common/view.png) Visualizzazione Piani di controllo
+### ![](/img/neutral/common/new.png) Insert Control Plans 
 
-Per aprire la gestione, della griglia di risultato, è necessario fare doppio click sulla riga di nostro interesse oppure, selezionando una o più righe, premere i pulsanti **Modifica** o **Visualizza**.   
-
-
-*Pulsanti specifici*: 
+To enter new *Control Plans*, it is necessary to press the **New** button.   
 
 
-### ![](/img/neutral/common/duplicate.png) Duplica Piano di controllo
+### ![](/img/neutral/common/edit.png) Edit or ![](/img/neutral/common/view.png) View Control Plans 
 
-Per poter duplicare un *Piano di controllo* esistente in un nuovo *Piano di controllo* è necessario cliccare nella griglia sul *Piano di controllo* da cui si desidera duplicare e premere il pulsante **Duplica Piano di controllo**. Si può duplicare un solo *Piano di controllo* alla volta. Verrà visualizzata una richiesta di:   
-> **Tipo piano di controllo**: è il *Tipo piano di controllo* del nuovo *Piano di controllo* (dato obbligatorio), viene proposto il *Tipo piano di controllo* del *Piano di controllo* di origine.   
-> **Numero**: è il *Numero* progressivo del nuovo *Piano di controllo* (dato obbligatorio), viene proposto in base a quanto previsto dalla *Numerazione* associata al *Tipo piano di controllo* e alla data odierna.   
-> **Duplica con rintracciabilità**: indica se si desidera mantenere relazione/rintracciabilità, del *Piano di controllo* di destinazione, nel *Piano di controllo* di origine ed in particolare nel tabulatore *Piani di controllo correlati*.   
-
-Premere successivamente il pulsante **OK** o il pulsante **Cancel** se si desidera proseguire nell'attività di duplica o meno.   
-Al termine dell'elaborazione il nuovo *Piano di controllo* viene visualizzato.
+To open the management of the results grid, you must double-click on the row of interest or, by selecting one or more rows, press the **Edit** or **View** buttons.   
 
 
-### ![](/img/neutral/common/execute.png) Crea nuova revisione
+*Specific buttons*:  
 
-Per poter creare una nuova *Revisione* ad un *Piano di controllo* esistente è necessario cliccare nella griglia sul *Piano di controllo* da cui si desidera creare una nuova *Revisione* e premere il pulsante **Crea nuova edizione**. Si può creare una nuova *Revisione* per un solo *Piano di controllo* alla volta.   
-Viene creato nuovo *Piano di controllo*, con tutte le informazioni del *Piano di controllo* di origine ma con indice di *Revisione* incrementato e la *Data di inizio validità* pari alla data odierna.
-Il *Piano di controllo* di origine finisce la sua validità impostando automaticamente la *Data fine validità* pari alla data odierna.   
-Al termine dell'elaborazione la nuova *Revisione* del *Piano di controllo* viene visualizzata.
+### ![](/img/neutral/common/duplicate.png) Duplicate Control Plan 
 
 
-### Crea nuova Scheda tecnica
+To duplicate an existing *Control Plan* into a new *Control Plan*, you need to click on the *Control Plan* in the grid that you want to duplicate and press the **Duplicate Control Plan** button. Only one *Control Plan* can be duplicated at a time. A request will be displayed:   
+> **Control plan type**: this is the *Control plan type* of the new *Control Plan* (mandatory data), the *Control plan type* of the origin *Control Plan* is proposed.   
+> **Number**: this is the progressive *Number* of the new *Control Plan* (mandatory data), proposed based on what is provided by the *Numeration* associated with the *Control plan type* and today's date.   
+> **Duplicate with traceability**: this indicates whether to maintain the relationship/traceability of the destination *Control Plan* in the origin *Control Plan*, specifically in the *Related Control Plans* tab.   
 
-Dal *Piano di controllo* è possibile creare una *Scheda tecnica*; per fare ciò è necessario cliccare nella griglia sul *Piano di controllo* da cui si desidera duplicare e premere il pulsante **Crea nuova Scheda tecnica**. Si può creare una nuova *Scheda tecnica* per un solo *Piano di controllo* alla volta.   
-Viene creata nuova *Scheda tecnica*, con tutte le informazioni del *Piano di controllo* di origine ma con indice di *Revisione* pari a *zero* e con *Data di inizio validità* pari alla data odierna. Verrà visualizzata una richiesta di:   
-> **Tipo scheda**: è il *Tipo scheda* della nuova *Scheda tecnica* (dato obbligatorio).   
-> **Del cliente**: è il *Cliente* della nuova *Scheda tecnica*, viene proposto il conto *Cliente* del *Piano di controllo* di origine (solo se è di *Tipo conto cliente*).   
-> **Nuovo codice**: è il *Codice* della nuova *Scheda tecnica* (dato obbligatorio), viene proposto in base a quanto previsto dal *Metodo di Codifica* associata al *Tipo scheda tecnica*.   
-> **Rev.**: è l'indice di *Revisione* della nuova *Scheda tecnica* (dato obbligatorio), viene proposto a *zero*.   
-> **Crea mantenendo la rintracciabilità**: indica se si desidera mantenere relazione/rintracciabilità, nella *Scheda tecnica* di destinazione, nel *Piano di controllo* di origine ed in particolare nel tabulatore *Schede correlate*.   
-
-Premere successivamente il pulsante **OK** o il pulsante **Cancel** se si desidera proseguire nell'attività di creazione o meno.   
-Al termine dell'elaborazione la nuova *Scheda tecnica* viene visualizzata.   
+Then press the **OK** button or the **Cancel** button if you do not wish to proceed with the duplication.   
+At the end of the process, the new *Control Plan* is displayed.
 
 
-### Richieste Piani di controllo
-Da questo pulsante è possibile eseguire la gestione di *Richieste Piani di controllo*.   
+### ![](/img/neutral/common/execute.png) Create New Revision 
+
+To create a new *Revision* for an existing *Control Plan*, it is necessary to click on the *Control Plan* in the grid from which you wish to create a new *Revision* and press the **Create New Edition** button. A new *Revision* can be created for only one *Control Plan* at a time.   
+A new *Control Plan* is created, containing all the information from the origin *Control Plan* but with an incremented *Revision* index and the *Start Validity Date* equal to today’s date.  
+The origin *Control Plan* will end its validity by automatically setting the *End Validity Date* to today’s date.   
+At the end of the process, the new *Revision* of the *Control Plan* is displayed.
 
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+### Create New Data Sheet 
+
+From the *Control Plan*, it is possible to create a *Data Sheet*; to do this, you need to click on the *Control Plan* in the grid from which you wish to duplicate and press the **Create New Data Sheet** button. A new *Data Sheet* can be created for only one *Control Plan* at a time.   
+A new *Data Sheet* is created with all the information from the origin *Control Plan*, but with a *Revision* index equal to *zero* and a *Start Validity Date* equal to today’s date. A request will be displayed:   
+> **Sheet type**: this is the *Sheet type* of the new *Data Sheet* (mandatory data).   
+> **Of the customer**: this is the *Customer* of the new *Data Sheet*, the *Customer account* of the origin *Control Plan* is proposed (only if it is of *Customer account type*).   
+> **New code**: this is the *Code* for the new *Data Sheet* (mandatory data), proposed based on what is provided by the *Encoding Method* associated with the *Data Sheet type*.   
+> **Rev.**: this is the *Revision* index of the new *Data Sheet* (mandatory data), proposed as *zero*.   
+> **Create maintaining traceability**: indicates whether to maintain the relationship/traceability in the destination *Data Sheet* to the origin *Control Plan*, specifically in the *Related Sheets* tab.   
+
+Then press the **OK** button or the **Cancel** button if you do not wish to proceed with the creation.   
+At the end of the process, the new *Data Sheet* is displayed.   
+
+
+### Control Plan Requests
+From this button, you can manage *Control Plan Requests*.   
+
+
+For everything not detailed in this document about the common functioning of forms, please refer to the following link [Custom features, buttons, and fields](/docs/guide/common).

@@ -1,57 +1,57 @@
 ---
-title: Gestione massiva dei dati
+title: Data Management 
 sidebar_position: 1
 ---
 
-La gestione si trova sul percorso **Qualità > Controlli articolo > Piani di controllo > Procedure > Gestione massiva dei dati**
+The management can be found in the path **Quality > Item Controls > Control Plans > Procedures > Data Management**.
 
-:::important A cosa serve
-Questa gestione permette di gestire molte delle informazioni delle *Schede tecniche* in modo massivo, senza dover entrare manualmente in ogni *Piano di controllo*.   
+:::important What is it for
+This management allows for the mass handling of many of the information in the *Data Sheets* without the need to manually enter each *Control Plan*.   
 :::
 
-La form è suddivisa in:
-- un'area di filtro, contestuale alle sessioni delle informazioni che si desidera variare;   
-- un'area composta da diversi tabulatori ognuno dei quali contiene le griglie dedicate alla modifica e risultato del filtro;   
-- l'ultimo tabulatore contiene lo *Storico errori* riscontrati durante le attività di *Modifica*.   
+The form is divided into:
+- a filter area, contextual to the sessions of the information you wish to change;   
+- an area composed of different tabs, each containing grids dedicated to modification and filter results;   
+- the last tab contains the *Error Found* encountered during *Modification* activities.   
 
-I tabulatori sono:   
-> **Piani di controllo**;   
-> **Prove pianificate**;   
-> **Articoli associati**.
+The tabs are:   
+> **Control Plans**;   
+> **Planned Tests**;   
+> **Associated Items**.
 
-### Pulsanti specifici
+### Specific Buttons
 
-#### ![](/img/neutral/common/search.png) Ricerca
+#### ![](/img/neutral/common/search.png) Search 
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato. L'area filtro è variabile ed è contestuale al tabulatore selezionato. Il risultato dell'applicazione del filtro visualizzerà i dati nella griglia risultato del tabulatore precedentemente selezionato.   
+The form consists of a filter area and a results area. Once all desired filters are set, simply click the **Search** button to display results within the results grid. The filter area is variable and contextual to the selected tab. The result of applying the filter will display data in the results grid of the previously selected tab.   
 
-#### ![](/img/neutral/common/delete.png) Cancella
+#### ![](/img/neutral/common/delete.png) Delete 
 
-Abilitato se si seleziona almeno una riga dalla griglia risultato.   
-Selezionate le righe desiderate è necessario cliccare sul pulsante **Cancella** per eliminarle, previo conferma.   
+Enabled if at least one row is selected from the results grid.   
+After selecting the desired rows, you need to click the **Delete** button to remove them, after confirmation.   
 
-#### ![](/img/neutral/common/execute.png) Modifica massiva dei dati
+#### ![](/img/neutral/common/execute.png) Data Modification 
 
-Abilitato se si seleziona almeno una riga dalla griglia risultato.   
-Selezionate le righe desiderate e indicate le modifiche da attuare nella griglia risultato, è necessario cliccare sul pulsante **Modifica** per applicare le modifiche.   
-In caso di anomalie riscontrate durante la *Modifica* le segnalazioni sono disponibili nel tabulatore *Storico errori*.   
+Enabled if at least one row is selected from the results grid.   
+After selecting the desired rows and indicating the changes to be made in the results grid, you need to click the **Modify** button to apply the changes.   
+In case of anomalies encountered during the *Modification*, reports are available in the *Error Found* tab.   
 
-### Gestione massiva dei dati
+### Data Management
 
-#### Area di filtro
+#### Filter Area 
 
-L'area è composta da una parte fissa dove vengono riportati i filtri di ricerca relativi alle informazioni di testata del *Piano di controllo* e da una parte variabile e contestuale al tabulatore selezionato; la parte variabile è contenuta in un expander che riporta lo stesso titolo del tabulatore selezionato; questa parte variabile non è visualizzata per il tabulatore *Piani di controllo*.   
-Premendo il pulsante **Ricerca** sono visualizzati i risultati all'interno della griglia di risultato del tabulatore selezionato.  
+The area consists of a fixed part where the search filters related to the header information of the *Control Plan* are reported and a variable part contextual to the selected tab; the variable part is contained in an expander that shows the same title as the selected tab; this variable part is not displayed for the *Control Plans* tab.   
+By pressing the **Search** button, results are displayed within the results grid of the selected tab.  
 
-#### Area di modifica
+#### Modification Area 
 
-Contenuta in ogni tabulatore (eccetto nel tabulatore *Storico errori*), è la "griglia" superiore composta da una singola riga.   
-In questa griglia, che riporta le medesime colonne della griglia risultato (quella inferiore), è possibile inserire tutte le informazioni che si desiderano riportare nelle righe della griglia risultato alla pressione del pulsanta *Modifica*.   
-Una volta terminata la sostituzione dei valori, i valori preesisenti nella griglia superiore verranno eliminati.   
+Contained in each tab (except in the *Error Found* tab), it is the upper "grid" composed of a single row.   
+In this grid, which displays the same columns as the results grid (the lower one), it is possible to enter all the information you wish to report in the rows of the results grid upon pressing the *Modify* button.   
+Once the replacement of values is finished, the pre-existing values in the upper grid will be deleted.   
 
-#### Area di risultato
-Contenuta in ogni tabulatore, è la "griglia" inferiore che contiene il risultato della *Ricerca* applicata all'area di filtro.   
-In questa griglia, che riporta le medesime colonne della griglia di modifica (quella superiore), è possibile modificare manualmente tutte le informazioni senza dover entrare in ogni gestione del *Piano di controllo*. Le colonne variano a seconda del tabulatore selezionato.   
-Le colonne dove non è possibile modificare le informazioni sono disabilitate ed evidenziate con un diverso colore.   
+#### Results Area 
+Contained in each tab, it is the lower "grid" that contains the result of the *Search* applied to the filter area.   
+In this grid, which displays the same columns as the modification grid (the upper one), you can manually modify all information without having to enter each management of the *Control Plan*. The columns vary depending on the selected tab.   
+The columns where information cannot be modified are disabled and highlighted with a different color.   
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+For anything not detailed in this document regarding the common functioning of forms, please refer to the following link [Custom Features, Buttons, and Fields (Funzionalità, pulsanti e campi comuni)](/docs/guide/common).

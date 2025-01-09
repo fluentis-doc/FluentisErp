@@ -1,230 +1,230 @@
 ---
-title: Piano di controllo
+title: Control Plan 
 sidebar_position: 2
 ---
 
-La gestione si trova sul percorso **Qualità > Controlli articolo > Piani di controllo > Nuovo piano di controllo** oppure è possibile eseguirla dalla **Ricerca Piani di controllo**.   
+The management can be found on the path **Quality > Item Controls > Control Plans > New Control Plan** or it can be executed from **Search Control Plans**.   
 
 
-:::important A cosa serve
-Nei Piani di controllo si catalogano tutte le prove pianificate, verifiche, misurazioni necessarie ed i valori da ottenere per garantire che materiali e prodotti associati rientrino nei limiti delle proprietà richieste.   
-Tramite i Piani di controllo è possibile predefinire i controlli da effettuare durante il ciclo di vita di un articolo: dai controlli in accettazione materiali, rientri da conto lavoro, ai controlli durante il ciclo produttivo di un articolo: prima, durante e successivamente alla creazione del prodotto.
-I Piani di controllo, così come le Schede tecniche, possono essere personalizzabili per Cliente e/o Fornitore. Anche in questo documento vengono gestite le revisioni e la rintracciabilità tra Piani di controllo desiderati.   
-Ad ogni prova pianificata è possibile indicare: se la prova viene effettuata internamente o presso terzi, la categoria e lo strumento di misura da utilizzare, i tipi di valore richiesti (Si/No o Numerici), il valore nominale, i limiti inferiore e superiore specificabili in percentuale o in valore assoluto, il numero di misurazioni da effettuare e con quale frequenza.   
+:::important What it’s for
+In Control Plans, all planned tests, verifications, necessary measurements, and values to be obtained are cataloged to ensure that materials and associated products fall within the limits of the required properties.   
+Through Control Plans, it is possible to predefine the checks to be carried out during the lifecycle of an item: from incoming materials checks, returns from subcontracted work, to checks during the production cycle of an item: before, during, and after the product creation.  
+Control Plans, just like Data Sheets, can be customizable for Customer and/or Supplier. This document also manages revisions and traceability among desired Control Plans.   
+For each planned test, it is possible to indicate: whether the test is performed internally or by third parties, the category and measurement tool to be used, the types of required values (Yes/No or Numeric), the typical value, the lower and upper limits which can be specified in percentage or absolute value, the number of measurements to be taken, and how frequently.   
 
-Elenchiamo alcuni esempi di tipologie di Piani di controllo possibili: Controlli in accettazione, Controlli in accettazione per fornitori critici, Controlli di produzione, Collaudi finali.   
+Here are some examples of possible types of Control Plans: Incoming checks, Incoming checks for critical suppliers, Production checks, Final tests.   
 
-A standard è disponibile la reportistica di: **Piano di controllo**.   
+A standard report is available for: **Control Plan**.   
 :::
 
 
-## Pulsanti di comando
+## Command Buttons
 
 
-### ![](/img/neutral/common/save.png) Salva
+### ![](/img/neutral/common/save.png) Save
 
-Premendo questo pulsante si memorizzano tutte le informazioni modificate del *Piano di controllo* visualizzato.   
-
-
-### ![](/img/neutral/common/duplicate.png) Duplica Piano di controllo
-
-E' possibile duplicare il *Piano di controllo* visualizzato in un nuovo *Piano di controllo*. E' sufficiente premere il pulsante **Duplica**.   
-Viene visualizzata una richiesta di:
-> **Tipo piano di controllo**: è il *Tipo piano di controllo* del nuovo *Piano di controllo* (dato obbligatorio).   
-> Viene proposto il *Tipo piano di controllo* del *Piano di controllo* di origine.   
-> **Numero**: è il *Numero* progressivo del nuovo *Piano di controllo* (dato obbligatorio).   
-> Viene proposto in base a quanto previsto dalla *Numerazione* associata al *Tipo piano di controllo* e alla data odierna.   
-> **Duplica con rintracciabilità**: indica se si desidera mantenere relazione/rintracciabilità, del *Piano di controllo* di destinazione, nel *Piano di controllo* di origine ed in particolare nel tabulatore *Piani di controllo correlati*.   
-
-Premere successivamente il pulsante **OK** o il pulsante **Cancel** se si desidera proseguire nell'attività di duplica o meno.   
-Al termine dell'elaborazione il nuovo *Piano di controllo* viene visualizzato.   
+Pressing this button saves all modified information of the *Control Plan* displayed.   
 
 
-### ![](/img/neutral/common/execute.png) Crea nuova revisione
+### ![](/img/neutral/common/duplicate.png) Duplicate Control Plan
 
-Per poter creare una nuova *Revisione* ad un *Piano di controllo* esistente è necessario premere il pulsante **Crea nuova edizione**.   
-Viene creato nuovo *Piano di controllo*, con tutte le informazioni del *Piano di controllo* di origine ma con indice di *Revisione* incrementato e la *Data di inizio validità* pari alla data odierna.
-Il *Piano di controllo* di origine finisce la sua validità impostando automaticamente la *Data fine validità* pari alla data odierna.   
-Al termine dell'elaborazione la nuova *Revisione* del *Piano di controllo* viene visualizzata.
+It is possible to duplicate the displayed *Control Plan* into a new *Control Plan*. Simply press the **Duplicate** button.   
+A request is displayed for:
+> **Control plan type**: it is the *Control plan type* of the new *Control Plan* (mandatory data).   
+> The *Control plan type* of the origin *Control Plan* is proposed.   
+> **Number**: it is the sequential *Number* of the new *Control Plan* (mandatory data).   
+> It is proposed based on what is provided by the *Numeration* associated with the *Control plan type* and the current date.   
+> **Duplicate with traceability**: indicates whether to maintain the relationship/traceability of the destination *Control Plan* in the origin *Control Plan*, particularly in the *Related Control Plans tab*.   
 
+Then press the **OK** button or the **Cancel** button if you wish to proceed with the duplication activity or not.   
+At the end of the process, the new *Control Plan* is displayed.   
 
-### Crea nuova Scheda tecnica
+### ![](/img/neutral/common/execute.png) Create new revision
 
-Dal *Piano di controllo* è possibile creare una *Scheda tecnica*; per fare ciò è necessario premere il pulsante **Crea nuova Scheda tecnica**.   
-Viene creata nuova *Scheda tecnica*, con tutte le informazioni del *Piano di controllo* di origine ma con indice di *Revisione* pari a *zero* e con *Data di inizio validità* pari alla data odierna. Verrà visualizzata una richiesta di:   
-> **Tipo scheda**: è il *Tipo scheda* della nuova *Scheda tecnica* (dato obbligatorio).   
-> **Del cliente**: è il *Cliente* della nuova *Scheda tecnica*, viene proposto il conto *Cliente* del *Piano di controllo* di origine (solo se è di *Tipo conto cliente*).   
-> **Nuovo codice**: è il *Codice* della nuova *Scheda tecnica* (dato obbligatorio), viene proposto in base a quanto previsto dal *Metodo di Codifica* associata al *Tipo scheda tecnica*.   
-> **Rev.**: è l'indice di *Revisione* della nuova *Scheda tecnica* (dato obbligatorio), viene proposto a *zero*.   
-> **Crea mantenendo la rintracciabilità**: indica se si desidera mantenere relazione/rintracciabilità, nella *Scheda tecnica* di destinazione, nel *Piano di controllo* di origine ed in particolare nel tabulatore *Schede correlate*.   
-
-Premere successivamente il pulsante **OK** o il pulsante **Cancel** se si desidera proseguire nell'attività di creazione o meno.   
-Al termine dell'elaborazione la nuova *Scheda tecnica* viene visualizzata.   
-
-
-### ![](/img/neutral/common/duplicate.png) Duplica prova
-
-Contestuale al tabulatore *Prove pianificate* il pulsante è abilitato solamente se, dall'elenco *Prove pianificate*, è stata selezionata una sola riga *Prova*.
-Tutte la informazioni della *Prova pianificate* di origine vengono duplicate in una nuova *Prova pianificate* accodata in *Sequenza* alle *Prove pianificate* già esistenti.
+To create a new *Revision* of an existing *Control Plan*, it is necessary to press the **Create new edition** button.   
+A new *Control Plan* is created, with all the information from the origin *Control Plan*, but with an incremented *Revision* index and a *Start validity date* equal to the current date.   
+The origin *Control Plan* ends its validity by automatically setting the *End validity date* equal to the current date.   
+At the end of the process, the new *Revision* of the *Control Plan* is displayed.   
 
 
-## Gestione dati
+
+### Create new Data Sheet
+
+From the *Control Plan*, it is possible to create a *Data Sheet*; to do so, it is necessary to press the **Create new Data Sheet** button.   
+A new *Data Sheet* is created, with all the information from the origin *Control Plan* but with a *Revision* index equal to *zero* and with a *Start validity date* equal to the current date. A request will be displayed for:   
+> **Sheet type**: it is the *Sheet type* of the new *Data Sheet* (mandatory data).   
+> **Client**: it is the *Client* of the new *Data Sheet*, the *Client* account of the origin *Control Plan* is proposed (only if it is of *Client account type*).   
+> **New code**: it is the *Code* of the new *Data Sheet* (mandatory data), proposed based on what is provided by the *Encoding Method* associated with the *Data Sheet type*.   
+> **Rev.**: it is the *Revision index* of the new *Data Sheet* (mandatory data), proposed as *zero*.   
+> **Create maintaining traceability**: indicates whether to maintain the relationship/traceability in the destination *Data Sheet* with the origin *Control Plan*, particularly in the *Related Sheets tab*.   
+
+Then press the **OK** button or the **Cancel** button if you wish to proceed with the creation activity or not.   
+At the end of the process, the new *Data Sheet* is displayed.   
 
 
-### Dati di testata
+### ![](/img/neutral/common/duplicate.png) Duplicate Test
 
-Le informazioni gestibili sono:   
-> **Tipo**: è il *Tipo piano di controllo* (dato obbligatorio).   
-> All'inserimento manuale di un nuovo *Piano di controllo* viene proposto il *Tipo piano di controllo* indicato nell'expander *Piani di controllo* del tabulatore *Generale* presente nei *Parametri Controllo articoli*.   
+In conjunction with the *Planned Tests* tab, the button is enabled only if, from the *Planned Tests* list, a single *Test* row has been selected.  
+All the information from the origin *Planned Test* is duplicated in a new *Planned Test* appended in *Sequence* to the already existing *Planned Tests*.   
+
+
+## Data Management
+
+
+### Header Data
+
+The manageable information is:   
+> **Type**: it is the *Control Plan type* (mandatory data).   
+> When manually inserting a new *Control Plan*, the *Control Plan type* indicated in the *Control Plans* expander of the *General* tab present in the *Item Control Parameters* is proposed.   
 >
-> **Anno/Numero**: sono l'*Anno* e *Numero* del *Piano di controllo* (dati obbligatori).   
-> All'inserimento di un nuovo *Piano di controllo* l'*Anno* e il *Numero* vengono proposti in base alla data odierna e alla *Numerazione* associata al *Tipo piano di controllo*.   
+> **Year/Number**: it is the *Year* and *Number* of the *Control Plan* (mandatory data).   
+> Upon entering a new *Control Plan*, the *Year* and the *Number* are proposed based on the current date and the *Numeration* associated with the *Control Plan type*.   
 >
-> **Rev.**: è la Revisione del *Piano di controllo* (dato obbligatorio).   
-L'informazione è modificabile se si stà creando un nuovo *Piano di controllo* altrimenti è di sola lettura; si può variare in modo pilotato dal sistema usando il pulsante *Crea nuova revisione* che incrementano il precedente valore di *Revisione* di una unità.   
+> **Rev.**: it is the Revision of the *Control Plan* (mandatory data).   
+The information is editable if you are creating a new *Control Plan*, otherwise it is read-only; it can be varied in a controlled manner by the system using the *Create new revision* button, which increments the previous *Revision* value by one.   
 >
-> **Descrizione**: è la descrizione del *Piano di controllo*.   
-> **Per il cliente/fornitore**: è la ragione sociale del *Cliente* o *Fornitore*. Le *Prove pianificate* sono personalizzate per il *Cliente* o *Fornitore* e *Articoli associati*.    
-> **Note del cliente/fornitore**: annotazioni libere per il cliente/fornitore.   
+> **Description**: it is the description of the *Control Plan*.   
+> **For customer/supplier**: it is the corporate name of the *Customer* or *Supplier*. The *Planned Tests* are customized for the *Customer* or *Supplier* and *Associated Items*.    
+> **Customer/Supplier notes**: free annotations for the customer/supplier.   
 >
-> **Specifica del cliente**: expander dove è possibile inserire:   
+> **Customer specification**: expander where it is possible to enter:   
 >
->> **Data specifica**: e la data della specifica ricevuta dal cliente.    
->> **Riferimento**: annotazioni libere sul riferimento alla specifica ricevuta dal cliente che richiede controlli specifici da effettuare per gli *Articoli associati*.   
->> **Data scadenza**: e la data di fine validità della specifica ricevuta dal cliente.    
->> **Note**: annotazioni libere relative alla specifica ricevuta dal cliente.   
+>> **Specific date**: it is the date of the specification received from the customer.    
+>> **Reference**: free annotations about the reference to the specification received from the customer requiring specific checks to be performed for the *Associated Items*.   
+>> **Expiry date**: it is the expiry date of the specification received from the customer.    
+>> **Notes**: free annotations related to the specification received from the customer.   
 >
-> **Data richiesta/Richiesta da**: solo i riferimenti in quale data e qual'è la persona che ha richiesto la creazione del *Piano di controllo*.    
+> **Demand date/Required by**: only references on which date and who requested the creation of the *Control Plan*.    
 >
-> **Validità: Inizio/Fine**: sono le date di inizio e di fine validità del *Piano di controllo*.    
-> Le date sono gestite automaticamente alla creazione di una nuova *Revisione* del *Piano di controllo*.
+> **Validity: Start/End**: these are the start and end validity dates of the *Control Plan*.    
+> The dates are managed automatically upon creating a new *Revision* of the *Control Plan*.
 >
-> **Responsabile**: è il *Dipendente* responsabile del *Piano di controllo*.   
-> All'inserimento manuale di un nuovo *Piano di controllo* viene proposto il *Responsabile* indicato nell'expander *Piani di controllo* del tabulatore *Generale* presente nei *Parametri Controllo articoli*.   
+> **Responsible**: it is the *Employee* responsible for the *Control Plan*.   
+> When manually inserting a new *Control Plan*, the *Responsible* indicated in the *Control Plans* expander of the *General* tab present in the *Item Control Parameters* is proposed.   
 >
-> **Note**: annotazioni libere.   
+> **Notes**: free annotations.   
 >
-> **Origine piano di controllo**: expander dove è possibile inserire:   
+> **Origin control plan**: expander where it is possible to enter:   
 >
->> **Scheda origine**: contiene i riferimenti della *Scheda tecnica di origine* (*Tipo scheda*, *Codice* e *Revisione*).   
->> **Piano di controllo**: contiene i riferimenti del *Piano di controllo di origine* (*Tipo piano*, *Anno*, *Numero* e *Revisione*).   
->> **Motivo della revisione**: una breve descrizione del motivo che ha condotto alla revisione.   
->> L'informazione può essere variata se il *Piano di controllo* è ancora in corso di validità.   
+>> **Sheet origin**: contains the references of the *Data Sheet origin* (*Sheet Type*, *Code* and *Revision*).   
+>> **Control plan**: contains the references of the *Origin Control Plan* (*Control plan type*, *Year*, *Number* and *Revision*).   
+>> **Reason for revision**: a brief description of the reason that led to the revision.   
+>> The information can be varied if the *Control Plan* is still valid.   
 
 
-### Attributi piano di controllo
-E' possibile inserire degli [Extra Data](/docs/configurations/utility/extra-data/extradata/new-extradata-simple) per ogni *Piano di controllo*.   
-Vengono ereditati dagli *Extra data* associati al *Tipo piano di controllo*.   
+### Control Plan Attributes
+It is possible to insert [Extra Data](/docs/configurations/utility/extra-data/extradata/new-extradata-simple) for each *Control Plan*.   
+They are inherited from the *Extra Data* associated with the *Control Plan type*.   
 
 
-### Prove pianificate
-Contiene le *Prove pianificate* degli *Articoli* o *Attributi articolo* del *Piano di controllo*.
-L'elenco si compone delle seguenti informazioni:   
-> **Sequenza**: è la sequenza di attuazione della *Prove pianificate*.   
-> **Tipo prova**: è il codice della *Prova pianificata*.   
-> **Descrizione tipo prova**:  è la descrizione della *Prova pianificata*. L'informazione è di sola lettura.   
-> **Descrizione**: è la descrizione della *Prova pianificata* compilabile.   
-> **Riferimento piano di controllo standard**: è un campo descrittivo che contiene i riferimenti a codifiche di prove riconosciute globalmente.   
-> **Prova interna**: indica se la *Prova* viene rilevata internamente o presso un laboratorio esterno.   
-> **Laboratorio esterno**: è la ragione sociale del *Fornitore* che effettuerà la prova. L'informazione è di sola lettura se è indicata la *Prova interna*.   
-> **Categoria Strumento di misura**: è la *Categoria dello strumento di misura* da utilizzare per poter rilevare i *Valori* espressi nella *Prova*.   
-> **Strumento di misura**: è lo *Strumento di misura* da utilizzare per poter rilevare i *Valori* espressi nella *Prova*.   
-> **Unità di misura**: è l'*Unità di misura* con cui si esprimono il *Valore nominale* e i *Limiti minimo e massimo* se espressi in valore e non in percentuale.   
-> **Tipo valore**: è il *Tipo valore* con cui esprimere il *Valore nominale*; i *Tipi valore* possibili sono: *Numerico*, *Si/No* o *Testo*.   
-> **Tipo limite**: abilitato se il *Tipo valore* è *Numerico*, è il *Tipo limite* che piloterà l'abilitazione dei *Limiti* e dei valori di *Tolleranza*.   
-> **Valore nominale**: è il valore teorico atteso della *Prova pianificata*.   
-> **Limite minimo**: limite minimo consentito rispetto al *Valore nominale*.   
-> **L.min.(toll-)**: è il limite di tolleranza negativa sul limite minimo.   
-> **L.min.(toll+)**: è il limite di tolleranza positiva sul limite minimo.   
-> **Limite massimo**: limite massimo consentito rispetto  al *Valore nominale*.   
-> **L.max.(toll-)**: è il limite di tolleranza negativa sul limite massimo.   
-> **L.max.(toll+)**: è il limite di tolleranza positiva sul limite massimo.   
-> **%**: indica se il *Limite minimo* e il *Limite massimo* sono espressi in percentuale.   
-> **Tipo controllo prova**: è il *Tipo controllo* da effettuare sulla *Prova pianificata*.   
-> **Frequenza**: annotazioni libere relative alla frequenza di campionatura.   
-> **Numero rilevazioni**: è il numero di rilevazioni valori minime suggerite da effettuare.   
-> **Data inizio validità**: è la data di inizio validità della *Prova pianificata*.   
-> **Data fine validità**: è la data di fine validità della *Prova pianificata*.   
-> **Stampato**: indica se le informazioni sono stampabili o meno nel report: *Piano di controllo*.   
-> **Note**: annotazioni libere.   
-> **Descrizione Categoria Strumento di misura**: è la *Descrizione Categoria dello strumento di misura* da utilizzare. L'informazione è di sola lettura.   
-> **Descrizione Strumento di misura**: è lo *Descrizione Strumento di misura* da utilizzare. L'informazione è di sola lettura.   
+### Planned Tests
+Contains the *Planned Tests* of the *Items* or *Item Attributes* of the *Control Plan*.  
+The list consists of the following information:   
+> **Sequence**: it is the implementation sequence of the *Planned Tests*.   
+> **Test type**: it is the code of the *Planned Test*.   
+> **Test type description**: it is the description of the *Planned Test*. The information is read-only.   
+> **Description**: it is the description of the *Planned Test* that can be filled in.   
+> **Standard control plan reference**: it is a descriptive field that contains references to globally recognized test codifications.   
+> **Internal test**: indicates whether the *Test* is performed internally or at an external laboratory.   
+> **External laboratory**: it is the corporate name of the *Supplier* that will carry out the test. The information is read-only if the *Internal Test* is indicated.   
+> **Measurement tool category**: it is the *Category of the measurement tool* to be used to record the *Values* expressed in the *Test*.   
+> **Measurement tool**: it is the *Measurement tool* to be used to record the *Values* expressed in the *Test*.   
+> **Unit of measure**: it is the *Unit of measure* with which the *Typical value* and the *Minimum and Maximum limits* are expressed if given in value and not in percentage.   
+> **Value type**: it is the *Value type* with which to express the *Typical value*; the possible *Value types* are: *Numeric*, *Yes/No*, or *Text*.   
+> **Limit type**: enabled if the *Value type* is *Numeric*, it is the *Limit type* that will control the enabling of *Limits* and *Tolerance* values.   
+> **Typical value**: it is the expected theoretical value of the *Planned Test*.   
+> **Minimum limit**: minimum limit allowed compared to the *Typical value*.   
+> **L.min.(toll-)**: it is the negative tolerance limit on the minimum limit.   
+> **L.min.(toll+)**: it is the positive tolerance limit on the minimum limit.   
+> **Maximum limit**: maximum limit allowed compared to the *Nominal value*.   
+> **L.max.(toll-)**: it is the negative tolerance limit on the maximum limit.   
+> **L.max.(toll+)**: it is the positive tolerance limit on the maximum limit.   
+> **%**: indicates whether the *Minimum limit* and the *Maximum limit* are expressed in percentage.   
+> **Test control type**: it is the *Control type* to be performed on the *Planned Test*.   
+> **Frequency**: free annotations related to the sampling frequency.   
+> **Number of detections**: it is the number of minimum suggested value measurements to perform.   
+> **Start validity date**: it is the start validity date of the *Planned Test*.   
+> **End validity date**: it is the end validity date of the *Planned Test*.   
+> **Printed**: indicates whether the information is printed or not in the report: *Control Plan*.   
+> **Notes**: free annotations.   
+> **Measurement tool category description**: it is the *Description of the Measurement Tool category* to be used. The information is read-only.   
+> **Measurement tool description**: it is the *Measurement Tool description* to be used. The information is read-only.   
 
 
-#### Attributi prova pianificata
-E' possibile inserire degli [Extra Data](/docs/configurations/utility/extra-data/extradata/search-extradata) generali per la *Prova pianificata*.   
-Vengono ereditati dagli *Attributi tipo prova* presenti nei *Tipi prova*.   
+#### Planned Test Attributes
+It is possible to insert general [Extra Data](/docs/configurations/utility/extra-data/extradata/search-extradata) for the *Planned Test*.   
+They are inherited from the *Test type attributes* present in the *Test types*.   
 
 
-#### Configurazione della prova
-Contiene gli [Extra Data](/docs/configurations/utility/extra-data/extradata/search-extradata) necessari agli operatori per preparare tutti gli strumenti necessari per poter iniziare una determinata prova. Possono essere considerate delle configurazioni necessarie, informazioni operative propedeutiche all'esecuzione della prova.   
-Vengono ereditati dai *Parametri di configurazione prova e strumento di misura* presenti nei *Tipi prova*.   
+#### Test Configuration
+Contains the necessary [Extra Data](/docs/configurations/utility/extra-data/extradata/search-extradata) for operators to prepare all necessary tools to start a given test. They can be considered necessary configurations, operational information prerequisite to the execution of the test.   
+They are inherited from the *Test and Measurement Tool Configuration Parameters* present in the *Test types*.   
 
 
-#### Funzioni di rilevamento ed approvazione
-E' un'attribuzione di diritti che elenca chi può rilevare e/o approvare i valori della prova.   
-Vengono ereditati dalle *Funzioni di rilevamento ed approvazione* presenti nei *Tipi prova*.   
-L'elenco si compone delle seguenti informazioni:   
-> **Funzione**: è il codice della *Funzione aziendale*.   
-> **Descrizione funzione**: è la descrizione della *Funzione aziendale*.   
-> **Tipo attività**: è il diritto dato alla *Funzione aziendale* durante le attività di rilevamento e/o approvazione di una prova. I valori possibili sono:   
-> - *Può rilevare* - la *Funziona aziendale* ha i permessi di sola rilevazione dei valori;   
-> - *Può approvare* - la *Funziona aziendale* ha i permessi di sola approvazione della prova;   
-> - *Può rilevare e approvare* - la *Funziona aziendale* ha i permessi di rilevazione dei valori e approvazione della prova.   
+#### Detection and Approval Functions
+It is an attribution of rights that lists who can detect and/or approve the test values.   
+They are inherited from the *Detection and Approval Functions* present in the *Test types*.   
+The list consists of the following information:   
+> **Function**: it is the code of the *Business Function*.   
+> **Function description**: it is the description of the *Business Function*.   
+> **Activity type**: it is the right given to the *Business Function* during the detection and/or approval activities of a test. Possible values are:   
+> - *Can detect* - the *Business Function* has only permission to detect values;   
+> - *Can approve* - the *Business Function* has only permission to approve the test;   
+> - *Can detect and approve* - the *Business Function* has permission to detect values and approve the test.   
 >
-> Le altre *Funzioni aziendali* non elencate non hanno alcun diritto di rilevazione valori e approvazione della prova.   
-> Se non vengono specificate *Funzioni aziendali* tutti gli operatori potranno rilevare valori e approvare la prova.
+> Other *Business Functions* not listed do not have any rights to detect values and approve the test.   
+> If no *Business Functions* are specified, all operators will be able to detect values and approve the test.
 >
-> **Note**: annotazioni libere.
+> **Notes**: free annotations.  
 
 
-#### Documenti allegati
-In questo elenco è possibile inserire e consultare eventuali allegati; è possibile visualizzare l'anteprima.   
+#### Documents Attached
+In this list, it is possible to insert and consult any attachments; a preview can be displayed.   
 
 
-### Clienti/Fornitori
-Contiene i *Clienti*/*Fornitori* per i quali effettuare le *Prove pianificate* agli *Articoli associati*.   
-L'elenco si compone delle seguenti informazioni:   
-> **Cliente/Fornitore**: è la ragione sociale del *Cliente* o "Fornitore". Le *Proprietà* sono personalizzate per i *Clienti*/*Fornitori*/*Articoli associati*.   
-> **Data specifica**: e la data della specifica ricevuta dal cliente.    
-> **Riferimenti specifica**: annotazioni libere sul riferimento alla specifica ricevuta dal cliente che richiede controlli specifici da effettuare per gli *Articoli associati*.   
-> **Nota specifica**: annotazioni libere relative alla specifica ricevuta dal cliente.   
-> **Note**: annotazioni libere.   
+### Customers/Suppliers
+Contains the *Customers*/*Suppliers* for whom to carry out the *Planned Tests* on the *Associated Items*.   
+The list consists of the following information:   
+> **Customers/Supplier**: it is the corporate name of the *Customer* or "Supplier". The *Properties* are customized for *Customers*/*Suppliers*/*Associated Items*.   
+> **Specific date**: it is the date of the specification received from the customer.    
+> **Specification references**: free annotations about the reference to the specification received from the customer requiring specific checks to be performed for the *Associated Items*.   
+> **Specific note**: free annotations related to the specification received from the customer.   
+> **Notes**: free annotations.   
 
 
-### Articoli associati
-Contiene gli *Articoli* con caratteristiche simili ed elencate nell'elenco delle *Prove pianificate*.
-L'elenco si compone delle seguenti informazioni:   
-> **Classe**: è la classe dell'*Articolo*.   
-> **Codice articolo**: è il codice dell'*Articolo*.   
-> **Descrizione articolo**: è la descrizione dell'*Articolo*.   
-> **Variante**: è il codice della *Variante articolo*.   
-> **Descrizione variante**: è la descrizione della *Variante articolo*. L'informazione è di sola lettura.   
-> **Fornitore**: è la ragione sociale del *Fornitore* che consegna l'*Articolo* per il quale verranno attivate le *Prove pianificate*.   
-> **Note**: annotazioni libere.   
+### Associated Items
+Contains the *Items* with similar characteristics listed in the *Planned Tests* list.  
+The list consists of the following information:   
+> **Class**: it is the class of the *Item*.   
+> **Item code**: it is the code of the *Item*.   
+> **Item description**: it is the description of the *Item*.   
+> **Variant**: it is the code of the *Item variant*.   
+> **Variant description**: it is the description of the *Item variant*. The information is read-only.   
+> **Supplier**: it is the corporate name of the *Supplier* delivering the *Item* for which the *Planned Tests* will be activated.   
+> **Notes**: free annotations.   
 
 
-### Attributi articolo
-In alternativa all'elenco degli *Articoli associati* è possibile inserire caratteristiche (in formato [Extra Data](/docs/configurations/utility/extra-data/extradata/new-extradata-simple)) per cui le *Prove pianificate* del *Piano di controllo* sono valide.   
+### Item Attributes
+Alternatively to the list of *Associated Items*, it is possible to insert characteristics (in [Extra Data](/docs/configurations/utility/extra-data/extradata/new-extradata-simple) format) for which the *Planned Tests* of the *Control Plan* are valid.   
 
 
-### Schede correlate
-In questo elenco è possibile visualizzare le *Schede tecniche* create con rintracciabilità dal *Piano di controllo* visualizzato.   
-Tramite un doppio click del mouse sulla riga desiderata è possibile eseguire la gestione della *Scheda tecnica* selezionata.   
+### Related Sheets
+In this list, it is possible to view the *Data Sheets* created with traceability from the displayed *Control Plan*.   
+By double-clicking on the desired row, you can manage the selected *Data Sheet*.   
 
 
-### Piani di controllo correlati
-In questo elenco è possibile visualizzare i *Piani di controllo* duplicati con rintracciabilità dal *Piano di controllo* visualizzato.   
-Tramite un doppio click del mouse sulla riga desiderata è possibile eseguire la gestione del *Piano di controllo* selezionato.   
+### Related Control Plans
+In this list, it is possible to view the duplicated *Control Plans* with traceability from the displayed *Control Plan*.   
+By double-clicking on the desired row, you can manage the selected *Control Plan*.   
 
 
-### Revisioni
-In questo elenco è possibile visualizzare lo storico delle *Revisioni* antecedenti al *Piano di controllo* visualizzato.   
-Tramite un doppio click del mouse sulla riga desiderata è possibile eseguire la gestione della *Piano di controllo* selezionato.   
+### Revisions
+In this list, you can view the history of *Revisions* prior to the displayed *Control Plan*.   
+By double-clicking on the desired row, you can manage the selected *Control Plan*.   
 
 
-### Documenti collegati
-In questo elenco è possibile inserire e consultare eventuali allegati; è possibile visualizzare l'anteprima.   
+### Related Documents
+In this list, it is possible to insert and consult any attachments; a preview can be displayed.   
 
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).   
+For everything not detailed in this document on the common functioning of forms, refer to the following link [Custom features, buttons, and fields](/docs/guide/common).
