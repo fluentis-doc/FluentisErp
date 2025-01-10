@@ -1,77 +1,77 @@
 ---
-title: Introduzione
+title: Introduction
 sidebar_position: 1
 ---
 
-Il modulo consente di registrare tutte le informazioni necessarie per garantire una corretta produzione e un’erogazione dei servizi in condizioni controllate.   
+The module allows for the recording of all necessary information to ensure correct production and service delivery under controlled conditions.
 
 
-## I documenti gestiti
+## Managed Documents 
 
 import Link from '@docusaurus/Link';
 
 <div className="cardContainer">
     <div className="card">
-###     <Link to="/docs/quality/item-control/data-sheets/data-sheet-management">Schede tecniche</Link>
-        <p>Le Schede tecniche catalogano tutte quelle informazioni che descrivono le caratteristiche dei prodotti associati come idonee ad un contratto, ad una specifica funzionale o ad un determinato impiego.</p>
-        <p>Le schede tecniche possono essere personalizzabili per Cliente.</p>
-        <p>Vengono gestite le revisioni e la rintracciabilità tra Schede tecniche desiderate.</p>
-        <p>A standard sono disponibili le reportistiche di: Scheda tecnica (per uso interno) e Scheda Prodotto (ad uso commerciale).</p>
+###     <Link to="/docs/quality/item-control/data-sheets/data-sheet-management">Data Sheets</Link>
+        <p>Data Sheets catalog all the information that describes the characteristics of products associated as suitable for a contract, a functional specification, or a specific use.</p>
+        <p>Data sheets can be customizable for the Customer.</p>
+        <p>Revisions and traceability among desired Data Sheets are managed.</p>
+        <p>Standard reports are available for: Data Sheet (for internal use) and Product Details (for commercial use).</p>
     </div>
 </div>
 <div className="cardContainer">
     <div className="card">
-###     <Link to="/docs/quality/item-control/control-plans/control-plan-management">Piani di controllo</Link>
-        <p>Nei Piani di controllo si catalogano tutte le prove pianificate, verifiche, misurazioni necessarie ed i valori da ottenere per garantire che materiali e prodotti associati rientrino nei limiti delle proprietà richieste.</p>
-        <p>Tramite i Piani di controllo è possibile predefinire i controlli da effettuare durante il ciclo di vita di un articolo: dai controlli in accettazione materiali, rientri da conto lavoro, ai controlli durante il ciclo produttivo di un articolo: prima, durante e successivamente alla creazione del prodotto.</p>
-        <p>I Piani di controllo, così come le Schede tecniche, possono essere personalizzabili per Cliente e/o Fornitore. Anche in questo documento vengono gestite le revisioni e la rintracciabilità tra Piani di controllo desiderati.</p>
-        <p>Ad ogni prova pianificata è possibile indicare: se la prova viene effettuata internamente o presso terzi, la categoria e lo strumento di misura da utilizzare, i tipi di valore richiesti (Si/No o Numerici), il valore nominale, i limiti inferiore e superiore specificabili in percentuale o in valore assoluto, il numero di misurazioni da effettuare e con quale frequenza.</p>
-        <p>Elenchiamo alcuni esempi di tipologie di Piani di controllo possibili: Controlli in accettazione, Controlli in accettazione per fornitori critici, Controlli di produzione, Collaudi finali.</p>
-        <p>A standard è disponibile la reportistica di: Piano di controllo.</p>
+###     <Link to="/docs/quality/item-control/control-plans/control-plan-management">Control Plans</Link>
+        <p>Control Plans catalog all planned tests, checks, necessary measurements, and the values to be achieved to ensure that associated materials and products fall within the limits of the required properties.</p>
+        <p>Through Control Plans it is possible to predefined the checks to be performed during the lifecycle of an item: from incoming material checks, returns from work orders, to checks during the production cycle of an item: before, during, and after the creation of the product.</p>
+        <p>Control Plans, as well as Data Sheets, can be customizable for Customer and/or Supplier. This document also manages revisions and traceability among desired Control Plans.</p>
+        <p>For each planned test, it is possible to indicate: whether the test is performed internally or by third parties, the category and the measuring tool to be used, the types of required values (Yes/No or Numeric), the typical value, the specified lower and upper limits in percentage or in absolute value, the number of measurements to be taken, and how frequently.</p>
+        <p>We list some examples of possible types of Control Plans: Incoming quality checks, Checks for critical suppliers, Production checks, Final testing.</p>
+        <p>Standard reports are available for: Control Plan.</p>
     </div>
 </div>
 <div className="cardContainer">
     <div className="card">
-###     <Link to="/docs/quality/item-control/items-control/item-control-management">Controllo articoli</Link>
-        <p>I Controlli articolo permettono la registrazione delle misurazioni effettuate, dei valori rilevati e la conseguente indicazione della conformità o meno del materiale, semilavorato o prodotto controllato.</p>
-        <p>Elenchiamo i documenti dai quali è possibile effettuare dei controlli sugli articolo: Ricevimenti merce, D.D.T. e Fatture di acquisto, Dichiarazioni di produzione, Fasi ordini di produzione, Rientri da Conto lavoro e Movimentazioni di carico. Per ogni tipologia di documento è possibile specificare per quale dettaglio articolo si desidera attuare la verifica: Nessuno, per Lotto, per Serial number o per Unità di carico, il tipo di controllo da generare e da quale tipologia di Piano di controllo ricercare, in modo prioritario, le prove da effettuare.</p>
-        <p>È possibile impostare delle gradazioni di colore per indicare diversi stati dei controlli visibili successivamente nel filtro dei Controlli.</p>
-        <p>Inoltre è possibile impostare se il riconoscimento dell’esito negativo della prova viene proposto automaticamente dal sistema: al primo valore rilevato non conforme o sulla media aritmetica dei valori rilevati.</p>
-        <p>La gestione dell’inserimento e consultazione delle rilevazioni riportano: l’articolo controllato, il Piano di controllo di origine, l’esito complessivo delle rilevazioni, il dettaglio del documento di origine e, per ogni prova rilevata, tutte le informazioni ereditate dal Piano di controllo di origine, il valore e la media dei valori rilevati nella sessione Rilevazione multipla valori, l’esito, l’operatore che ha rilevato i valori e con quale strumento di misura. Dalla gestione è inoltre possibile effettuare le movimentazioni di trasferimento articoli dal magazzino di controllo qualità ai magazzini articoli conformi e non conformi.</p>
-        <p>Tramite la soluzione M.E.S., integrata in Fluentis, è possibile inserire le suddette informazioni richieste in modo diretto e semplificato.</p>
-        <p>A standard sono disponibili le reportistiche di: Elenco Controlli articolo per Articolo, Elenco Controlli articolo per Cliente/Fornitore, Elenco Controlli articolo per Tipo documento e Etichetta Articolo C e NC.</p>
+###     <Link to="/docs/quality/item-control/items-control/item-control-management">Item Control</Link>
+        <p>Item Controls allow for the recording of measurements taken, the values detected, and the consequent indication of the compliance of the controlled material, semi-finished product, or finished product.</p>
+        <p>We list the documents from which checks can be made on items: Goods Receipts, D.D.T. (Transport Document), and Purchase Invoices, Production Declarations, Phases of production orders, Returns from subcontractors, and Loading Movements. For each type of document, it is possible to specify for which item detail the verification is desired: None, by Lot, by Serial number, or by Load Unit, the type of control to generate, and from which type of Control Plan to search for, as a priority, the tests to be performed.</p>
+        <p>It is possible to set color gradations to indicate different states of the controls visible later in the Controls filter.</p>
+        <p>Furthermore, it is possible to set whether the recognition of a negative test result is automatically proposed by the system: on the first non-compliant detected value or based on the arithmetic mean of the detected values.</p>
+        <p>The management of the insertion and consultation of the measurements includes: the controlled item, the origin Control Plan, the overall result of the measurements, the details of the source document, and for each detected test, all information inherited from the origin Control Plan, the value and the average of the values detected in the Multiple Values Detection session, the result, the operator who detected the values, and with which measuring instrument. From the management, it is also possible to perform the transfer movements of items from the quality control warehouse to the compliant and non-compliance item warehouses.</p>
+        <p>Through the M.E.S. solution, integrated into Fluentis, it is possible to enter the aforementioned required information directly and simplified.</p>
+        <p>Standard reports are available for: List of Item Controls by Item, List of Item Controls by Customer/Supplier, List of Item Controls by Document type, and Item Label C and NC.</p>
     </div>
 </div>
 <div className="cardContainer">
     <div className="card">
-###     <Link to="/docs/quality/item-control/certificates-of-analysis/certificate-of-analysis-management">Certificati di analisi</Link>
-        <p>I Certificati di Analisi attestano le avvenute verifiche sul prodotto, il rispetto dei limiti indicati nei Piani di controllo e nelle Schede tecniche correlate e accompagnano la vendita del prodotto.</p>
-        <p>A standard sono disponibili le reportistiche di: Certificato di analisi e Dichiarazione di conformità.</p>
+###     <Link to="/docs/quality/item-control/certificates-of-analysis/certificate-of-analysis-management">Certificates of Analysis</Link>
+        <p>Certificates of Analysis attest to the checks carried out on the product, compliance with the limits indicated in the corresponding Control Plans and Data Sheets, and accompany the sale of the product.</p>
+        <p>Standard reports are available for: Certificate of analysis and Declaration of conformity.</p>
     </div>
 </div>
 
 
-## Per iniziare ad utilizzare   
+## Getting Started   
 
-le **Schede tecniche**:
-- devi definire un [*Tipo scheda tecnica*](/docs/configurations/tables/quality/item-control/data-sheets-type)   
-- devi definire un [*Tipo prova*](/docs/configurations/tables/quality/item-control/test-type) che verrà utilizzato nella sessione/tabulatore *Proprietà* delle *Schede tecniche*   
-- per agevolare la gestione delle *Schede tecniche* impostare i [*Parametri Controllo articoli*](/docs/configurations/parameters/quality/item-control) nella sessione delle *Schede tecniche*   
-- devi inserire una nuova [*Scheda tecnica*](/docs/quality/item-control/data-sheets/data-sheet-management)   
+for **Data Sheets**:
+- you must define a [*Type of Data Sheet*](/docs/configurations/tables/quality/item-control/data-sheets-type)   
+- you must define a [*Type of Test*](/docs/configurations/tables/quality/item-control/test-type) that will be used in the *Properties* session/tab of the *Data Sheets*   
+- to facilitate the management of *Data Sheets*, set the [*Item Control Parameters*](/docs/configurations/parameters/quality/item-control) in the session of *Data Sheets*   
+- you need to enter a new [*Data Sheet*](/docs/quality/item-control/data-sheets/data-sheet-management)   
 
-i **Piani di controllo**:
-- devi definire un [*Tipo piano di controllo*](/docs/configurations/tables/quality/item-control/control-plan-type) e relativa *Numerazione*   
-- devi definire un [*Tipo prova*](/docs/configurations/tables/quality/item-control/test-type) che verrà utilizzato nella sessione/tabulatore *Prove pianificate* dei [*Piani di controllo*](/docs/quality/item-control/control-plans/control-plan-management)   
-- per agevolare la gestione dei *Piani di controllo* impostare i [*Parametri Controllo articoli*](/docs/configurations/parameters/quality/item-control) nella sessione dei *Piani di controllo*   
-- devi inserire un nuovo [*Piano di controllo*](/docs/quality/item-control/control-plans/control-plan-management)   
+for **Control Plans**:
+- you must define a [*Type of Control Plan*](/docs/configurations/tables/quality/item-control/control-plan-type) and its *Numeration*   
+- you must define a [*Type of Test*](/docs/configurations/tables/quality/item-control/test-type) that will be used in the *Planned Tests* session/tab of [*Control Plans*](/docs/quality/item-control/control-plans/control-plan-management)   
+- to facilitate the management of *Control Plans*, set the [*Item Control Parameters*](/docs/configurations/parameters/quality/item-control) in the session of *Control Plans*   
+- you need to enter a new [*Control Plan*](/docs/quality/item-control/control-plans/control-plan-management)   
 
-i **Controlli articolo**:   
-- devi definire: un [*Tipo controllo articolo*](/docs/configurations/tables/quality/item-control/item-control-type) e uno [*Tipo esito*](/docs/configurations/tables/quality/general/result-type)   
-- devi definire un [*Piano di controllo*](/docs/quality/item-control/control-plans/control-plan-management) e associarlo ad un articolo nella sessione/tabulatore *Articoli associati* oppure ad una fase di un Ciclo di lavoro soggetta a Controllo qualità   
-- per agevolare la gestione dei *Controlli articolo* impostare i [*Parametri Controllo articoli*](/docs/configurations/parameters/quality/item-control) nella sessione/tabulatore del *Controlli articolo*   
-- devi inserire un nuovo [*Controllo articolo*](/docs/quality/item-control/items-control/item-control-management) tramite la funzionalità di [*Importa articoli da controllare*](/docs/quality/item-control/items-control/item-control-import)    
+for **Item Controls**:   
+- you must define: a [*Type of Item Control*](/docs/configurations/tables/quality/item-control/item-control-type) and a [*Type of Result*](/docs/configurations/tables/quality/general/result-type)   
+- you must define a [*Control Plan*](/docs/quality/item-control/control-plans/control-plan-management) and associate it with an item in the *Associated Items* session/tab or with a phase of a Working Cycle subject to Quality Control   
+- to facilitate the management of *Item Controls*, set the [*Item Control Parameters*](/docs/configurations/parameters/quality/item-control) in the session/tab of *Item Controls*   
+- you need to enter a new [*Item Control*](/docs/quality/item-control/items-control/item-control-management) using the functionality of [*Import Items to be Controlled*](/docs/quality/item-control/items-control/item-control-import)    
 
-i **Certificati di analisi**:   
-- devi definire un [*Tipo certificati di analisi*](/docs/configurations/tables/quality/item-control/c-o-a-type) e relativa *Numerazione*   
-- per agevolare la gestione dei *Certificati di analisi* impostare i [*Parametri Controllo articoli*](/docs/configurations/parameters/quality/item-control) nella sessione dei *Certificati di analisi*   
-- devi inserire un nuovo [*Certificato di analisi*](/docs/quality/item-control/certificates-of-analysis/certificate-of-analysis-management)   
+for **Certificates of Analysis**:   
+- you must define a [*Type of Certificates of Analysis*](/docs/configurations/tables/quality/item-control/c-o-a-type) and its *Numeration*   
+- to facilitate the management of *Certificates of Analysis*, set the [*Item Control Parameters*](/docs/configurations/parameters/quality/item-control) in the session of *Certificates of Analysis*   
+- you need to enter a new [*Certificate of Analysis*](/docs/quality/item-control/certificates-of-analysis/certificate-of-analysis-management)
