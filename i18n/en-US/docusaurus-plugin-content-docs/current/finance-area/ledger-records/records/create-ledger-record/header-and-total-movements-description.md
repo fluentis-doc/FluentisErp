@@ -1,63 +1,114 @@
 ---
-title: Header and Total Movements Description
+title: Testata e Descrizione movimenti totali
 sidebar_position: 1
 ---
 
-The various fields within the record header, in loading order, are:
+LINK:
 
-**Record Date**: in a new record, this date is set as system current date but it can be shifted according to the chronological order of  the VAT reference, to the possible periods (definitely printed) and to the parameters. This date is very important because there is no need to go through a 'Accounting Period Change': the application, on the base of the record date, will search the year of the accounting parameters of reference (defining the date-range of the company). Starting from this year, the application will search the other control dates ranges (Accrual dates in line and period dates in line). This date is the one at the bottom of the report of the Journal and of the account statements. If the button 'New record' is selected,  it is possible to set user parameters from the current record. In this way, this field will be present even in the new record.
+**[TAB REGISTRAZIONE](/docs/finance-area/ledger-records/records/create-ledger-record/record-tab)**
 
-**Record Number**: is a daily record counter; the combination 'record-date' + 'record number' ensures that the record is univocal and unambiguous.  The daily counter gives the user the possibility to register on more dates. Record number is automatically managed by the procedure: in particular, during the saving step, the definitive correct number is assigned by the application that is able to discover missing numbers of the related record date. Deleting a record at X date causes a 'hole' in the numeration of the record date itself; only through the insert/edit of one of the records of date, the number will be recovered. In case of temporary record, this number will rely on a negative progression, starting from -1000, in order to make the user aware of the record status. Report and accounting searches are set in order to filter, by default, only definitive records.
+**[TAB PARTITE](/docs/finance-area/ledger-records/records/create-ledger-record/maturity-values-tab)**
 
-**Accrual Date**: is the date of reference for the period balance sheet: usually it is always the same of the record date, except for adjustment records and the related account closings/openings,  that can even have June as record date but they have 12/32-01/01 as accrual date. Be careful: this date CANNOT be used to note down 'invoices to be received' at the end of the year. It is suggested to keep this date and the record date always the same: in accounting there are reports that work relying on record date, others on accrual date, others that give the user the possibility to filter for both, obviously results would be different depending on filters used. Within user management parameters, it is possible to set accrual date equal to record date.
+**[TAB PAGAMENTI](/docs/finance-area/ledger-records/records/create-ledger-record/payments-tab)**
 
-**Detail Account**: this field is obligatory only for VAT records, as it is linked to customer / supplier register, holder of the recorded document. This field, normally, should not be filled in case of payment /collection records, since usually in the same record  the user makes payments / collections on different subjects and this is used as a filter of the open maturity values  in the 'Payments' form. If the button 'New Record' is selected, from the current one it is possible to  set user parameters so that this field will appear in the new one. The ledger template, then, can provide concordance control (in 'soft' notice and as a block) between the account type entered and what is provided by the ledger template: the substitution is permitted depending on the accounting parameters,  Customer/vendor accounts list.
+**[TAB CENTRI DI COSTO / PROFITTO](/docs/finance-area/ledger-records/records/create-ledger-record/cost-profit-centers-tab)**
 
-**Template**: this field is mandatory; every record is based on a  reference template that regulates the features and the functioning. Once the record has been saved, this field is not editable (obviously other fields will be blocked in case that VAT book or journal have been definitely printed or the automatic closure of accounts has been completed): if the template is not correct, it is absolutely necessary to delete and re-enter the records with the correct code. If the button is selected to create a 'New Record' from the current one, it is possible to set user parameters so that this field will also appear in the new one.
+**[TAB PROGETTO (Ex Commesse)](/docs/finance-area/ledger-records/records/create-ledger-record/job-orders-tab)**
 
-**VAT book**: is reported by the selected accounting template: it can be edited manually by the user but this kind of operation is not recommended (it is much better going to encode a new specific template of the second VAT book).
+**[TAB CESPITI](/docs/finance-area/ledger-records/records/create-ledger-record/fixed-assets-tab)**
 
-**VAT reference**: is a numeric field that is automatically managed by the procedure for each register: at the opening of the mask the last reference +1 will be suggested for the set register, then, while saving  it will be confirmed or not depending on the case; other 'saves' may have been recorded for that register or VAT reference to be recovered (reference recover: the 'recovery' changes depending on the template, if the 'save block' with progressive numbering is active or not because with the save block a free reference will be recovered at the same record date, without the block a protocol even not valid for that date will be suggested together with warning messages to the user). 'Reference' field is disabled in case of temporary record.
+**[TAB PARAMETRI](/docs/finance-area/ledger-records/records/create-ledger-record/parameters-tab)**
 
-**Document Type**: is suggested by the procedure depending on the value set in the general ledger template: it is editable, but normally this kind of edit is not necessary (typically it is used to specify the documents of VAT book, but this is already in the template, while all the other movements will always rely on a generic type of document ). The field of document date becomes mandatory depending on the settings of accounts template (flag document date in the second tab): this date cannot exceed the date of the record and must be within the range of validity dates related to the period in line with the accounting period of record. If the button 'New record' is selected from the current one, it is possible to set parameters so that this field will also appear in the new record.
+**[TAB RAGGRUPPAMENTO PARTITE](/docs/finance-area/ledger-records/records/create-ledger-record/mat-val-grouping-tab)**
 
-**Document Number**: is an alphanumeric field made by 20 characters: depending on the settings of template the application blocks the same number as well as the same year (taken from document date) and the same type (document type field) for the same code entered in the detail account field that is in the upper part of the record ( this block is inserted by default on every accounting template but it can be disabled). In case of equal number/year/detail account but different type, a warning message is sent to the user. The same message is sent in case that the same reference is saved in a temporary record.
-
-**Job Order**: this field is active only if the accounting template provides job order management: this job order is a reference point for the whole record but it is possible to re-assign values inside Job order form. Field filling uses Help Job Order to filter the active Job orders inside the selling job orders belonging to the selling area.
-
-**Currency**: is suggested by the register of record or by the company: it can be changed every time. Once that the record is saved the field is no longer editable.
-
-**Currency Date**: corresponds to the date of  the exchange rate taken as reference, entered in the currency exchange chart; the procedure reads the last date entered in the chart. In the management parameters, this date can be set as record date (default) or as document date. A 'warning user parameter' is active when an exchange is not set at the record date ( and so, a previous exchange rate is used).
-
-**Exchange Value**: is based on the value entered in the currency exchange chart: it is the reverse value comparing to the one that it is normally found in the exchange currency ( this is because the procedure kept the logic 'certain for uncertain'- 1 euro corresponds to x units of the other currency). This value can be manually forced by the user (typical case: payment/collection template in currency, exchange rate value applied by the bank is never the official one)
-
-**Total Currency/Total Document**: these are fields linked by the exchange, so, regarding euro-records, writing in one field or in the other one does not make any difference. Within the accounting template, these fields are automatically updated according to the data variations inside the VAT grid; normally they increase but they can even decrease if this is set in the template. Template- saving can be blocked if this amount does not correspond to the record VAT data.
-
-**Total VAT**: this value is automatically updated by the procedure, it is not necessary to enter it manually.
-
-At the Ledger Record bottom, within the record form, there is the description of the ledger record:  it is a note that can be set inside the accounting template thanks to the use of numeric codes  (1) (2) … (10)( (8) and (9) codes are used only in the description of detail accounts within the journal section). Double click on the field enables the user to start a research among the coded notes ( a procedure belonging to 'Tools'-'Utility'): the manual edit of this description  will be reset  after user's confirmation, once that one of the field automatically managed within the notes has been edited.
-
-At the bottom of the mask it is possible to find other VAT data and record summary fields: record unbalance fields are particularly important. Normally the visualization of this kind of unbalance is not permitted but it can be activated within the template settings. The unbalance will appear as amount in the new accounting lines, manually entered in the record. 
-
-Ledger Record Creation procedure includes:
-
-RIBBON BAR: it represents the Form menu that is the area in which it is possible to perform actions. The list of features is the following:
+Campi presenti nella **testata della registrazione**, nell'ordine di caricamento:
 
 
+ 
 
-| Function | Meaning |
-| --- | --- |
-| Save | Button to save the record. |
-| New Record | Button to save a new record. |
-| Insertion Parameters | It refers to the insertion parameters of the first note. |
-| Open Register | Button to recall the Register Management of the selected detail account, or the search of another Register. |
+**Data di registrazione**: in una nuova registrazione questa viene impostata come data odierna di sistema, ma può essere spostata in avanti o indietro nel tempo fatti salvi l'ordinamento cronologico dei protocolli IVA e gli eventuali periodi stampati in definitivo e la presenza dei parametri. L'importanza di questa data è fondamentale in quanto non esiste la necessità di procedere ad un ‘Cambio esercizio': a partire dalla data di registrazione l'applicativo andrà a ricercare l'anno dei parametri di contabilità di riferimento (individuando all'interno di quale range di date esercizio si trovi) e da questo andrà a riprendere gli altri range di date di controllo (date competenza in linea e date periodo in linea). Questa data è quella base della stampa del libro giornale e degli estratti conto contabili. In caso sia premuto il pulsante di creazione di una ‘Nuova registrazione' da quella in gestione è possibile impostare i **parametri di inserimento**  (nella ribbon bar) in modo che questo campo sia proposto anche in quella nuova;
+
+**Data competenza**: è la data di riferimento per il bilancio di esercizio: normalmente è sempre uguale alla data registrazione, salvo che per le scritture di assestamento di bilancio e le relative chiusure/aperture conti, che possono essere datate anche giugno come data registrazione ma saranno come 31/12 – 01/01 come data competenza. Attenzione: questa data NON può essere utilizzata per rilevare le fatture da ricevere di fine anno. Si consiglia di lasciarla sempre uguale alla data registrazione: in contabilità ci sono stampe che lavorano per data registrazione, altre per data competenza, altre che danno libertà all'utente di filtrare per entrambe, chiaramente si otterrebbero risultati differenti a seconda dei filtri applicati. 
+
+Nei **parametri di inserimento** è possibile impostare che questa data sia allineata automaticamente rispetto alla data registrazione;
+
+**Numero di registrazione**: è un contatore giornaliero delle registrazioni; l'univocità della registrazione viene determinata sempre dalla combinazione ‘Data registrazione'+ ‘Numero registrazione'. La scelta di un contatore giornaliero è stata effettuata per dare massima libertà all'utente di registrare su più date. Questo numero di registrazione viene gestito automaticamente dalla procedura: in particolare, al momento del salvataggio viene attribuito il numero definitivo corretto, recuperando eventualmente un buco di numerazione alla data registrazione relativa. Cancellare una registrazione alla data X, infatti, lascerà un buco nella numerazione di questa data: solo intervenendo in inserimento/modifica di una delle registrazioni di questa data il numero sarà recuperato. In caso di registrazione provvisoria questo numero andrà in progressione negativa a partire dal numero -1000, in modo da rendere ben visibile all'utente che si tratta di una registrazione di questo stato: i report e le ricerche contabili sono impostate per filtrare di default solo sulle registrazioni definitive;
+
+**Sottoconto intestatario della registrazione**: questo campo è obbligatorio solo per registrazioni IVA, in quanto è legata all'anagrafica cliente/fornitore intestataria del documento registrato. Questo campo, normalmente, non va compilato in caso di registrazioni di pagamento/incasso, in quanto normalmente nella stessa registrazione si effettuano N pagamenti/incassi su soggetti differenti e viene utilizzato come filtro delle partite aperte il campo presente nella scheda ‘Pagamenti'. In caso sia premuto il pulsante di creazione di una ‘Nuova registrazione' da quella in gestione è possibile impostare i **parametri di inserimento** in modo che questo campo sia proposto anche in quella nuova. La causale contabile, infine, può prevedere un  **[controllo di coerenza](/docs/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates/parameters)** tra il tipo conto inserito in questo punto e quanto previsto in causale; 
+
+**Causale**: questo campo è **obbligatorio**: ogni registrazione si basa infatti su una causale di riferimento che ne regola le caratteristiche e il funzionamento. Questo campo non è più modificabile una volta salvata la registrazione (chiaramente saranno bloccati altri campi nel caso in cui sia stato stampato in definitivo il registro IVA o il giornale o sia stata effettuata la chiusura automatica conti): nel caso in cui la causale sia errata bisogna necessariamente cancellare e reinserire la registrazione con il codice corretto. In caso sia premuto il pulsante di creazione di una ‘Nuova registrazione' da quella in gestione è possibile impostare i **parametri di inserimento** in modo che questo campo sia proposto anche in quella nuova;
+
+**Registro IVA**: viene riportato dalla causale di contabilità selezionate non è modificabile manualmente: 
+
+**Protocollo IVA**: è un campo numerico che viene gestito automaticamente dalla procedura per ogni registro: all'apertura della maschera sarà proposto il max protocollo + 1 per il registro impostato, poi al salvataggio verrà confermato o meno a seconda del caso che siano stati effettuati altri salvataggi per quel registro o vi siano protocolli IVA da recuperare. 
+
+Il recupero protocolli cambia a seconda che nella causale sia inserito o meno il blocco del salvataggio con numerazione non progressiva (trattasi di un controllo di coerenza tra data registrazione e numero di protocollo), con il blocco attivo sarà recuperato un protocollo libero solamente se la data registrazione è coerente, senza il blocco sarà proposto anche un protocollo non valido per quella data, con i relativi messaggi di avvertimento all'utente. 
+
+Il campo del protocollo viene disabilitato in caso di registrazione provvisoria;
+
+**Tipo documento**: viene proposto dalla procedura sulla base del valore impostato nelle causali di contabilità generale: è modificabile, ma si tratta di una modifica normalmente non necessaria (tipicamente serve specificare i documenti delle registrazioni IVA, esempio FV = Fatture di vendita o FA = Fatture di acquisto, mentre tutti gli altri movimenti avranno sempre un documento di tipo ‘generico');
+
+**Data documento**: è un campo obbligatorio o meno a seconda delle  **[impostazioni delle causali di contabilità:](/docs/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates/recording-detail)** questa data non può essere superiore alla data di registrazione e deve essere all'interno del range di date di validità relativo al  **[periodo in linea per l'esercizio di riferimento](/docs/configurations/parameters/finance/accounting-parameters)** della registrazione. In caso sia premuto il pulsante di creazione di una ‘Nuova registrazione' da quella in gestione è possibile impostare i **parametri di inserimento** in modo che questo campo sia proposto anche in quella nuova;
+
+<a id="campo_progetto" style={{ textDecoration: 'none' , color: 'inherit' , fontWeight: 'bold' }}></a> 
+
+**Numero documento**: è un campo alfanumerico di 20 caratteri: a seconda delle impostazioni della causale viene bloccato l'inserimento dello stesso numero/anno (preso dalla data documento) / tipo (campo tipo documento) per lo stesso codice inserito nel campo sottoconto della testata della registrazione (questo blocco è inserito di default su ogni causale contabile, ma può essere disabilitato). In caso che sia lo stesso numero/anno/sottoconto ma il tipo sia differente viene invece restituito un semplice messaggio di avvertimento all'utente. Allo stesso modo, il messaggio di avvertimento viene restituito anche se lo stesso riferimento è salvato in una registrazione provvisoria;
+
+**Campo Progetto** (ex commessa): è attivo solo se la causale di contabilità prevede la gestione progetti (ex flag 'Commessa'): questo progetto è quello di riferimento per tutta la registrazione, ma sarà possibile riattribuire i valori all'interno della scheda ‘**[Progetto](/docs/finance-area/ledger-records/records/create-ledger-record/job-orders-tab)**' della stessa. La compilazione del campo prevede di utilizzare sempre l'help progetto (maschera di ricerca che si attiva con doppio click all'interno del campo) per filtrare quelli attivi all'interno dell'area **Progetti**;
+
+
+:::danger ATTENZIONE
+il campo e la tab sopra descritti sono attivi solamente quando all'interno dell'anagrafica generale della società (Configurazione > Tabelle >Impostazioni generali > Società) il flag **Gestione Controlling** è disattivato. Ciò significa che non è attivo il modulo di gestione del controllo di gestione in modalità completa.
+
+Nel caso in cui il flag **Gestione Controlling** sia attivo la gestione del progetto (o commessa, secondo la precedente dicitura) avverrà in maniera diversa, ovvero sarà necessario attribuire il progetto (commessa) attraverso un particolare centro di costo (oggi centro aziendale) avente come dimensione (si veda la documentazione dell'area controlling) quella adatta alla gestione delle commesse.
+:::
+
+
+ 
+
+**Divisa**: proposta in via prioritaria dall'anagrafica intestataria della registrazione, in alternativa dalla divisa della società: può essere comunque modificata di volta in volta. Una volta salvata la registrazione il campo non è più modificabile;
+
+**Data valuta**: è la data di riferimento del cambio, così come inserito nella tabella cambi valuta: la procedura andrà a leggere in questa tabella l'ultima data inserita precedente a questa. Nei parametri di gestione utente questa data può essere impostata come data registrazione (default) o come data documento. E' previsto un parametro utente di avviso quando non è impostata un cambio alla data della registrazione (e quindi viene utilizzato un cambio antecedente);
+
+**Cambio**: è il valore del cambio così come inserito nella tabella cambi valute: si tratta del valore INVERSO rispetto a quello che normalmente si legge nei cambi valute (questo deriva dal fatto che la procedura ha mantenuto la logica ‘incerto per certo' derivante dalla gestione lire – quante lire per una unità della seconda divisa – mentre l'euro ha cambi ‘certo per incerto' – con 1 euro quante unità ottengo della seconda divisa –). Tale valore può essere forzato manualmente dall'utente (caso tipico: causali di pagamento/incasso in divisa, il valore del cambio applicato dalla banca non sarà mai quello ufficiale dei cambi internazionali);
+
+**Totale divisa / Totale documento**: sono campi legati tra loro attraverso il cambio, per cui in registrazioni in euro sarà indifferente scrivere l'importo in uno o l'altro.  **[La causale contabile](/docs/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates/parameters)** può prevedere che questi siano aggiornati automaticamente al variare dei dati inseriti all'interno della griglia IVA, normalmente solo in incremento ma anche in decremento se impostato in causale. Il salvataggio della registrazione può essere bloccato se questo importo non è uguale ai dati IVA della registrazione;
+
+**Totale imposta**: viene aggiornato sempre automaticamente dalla procedura, non va inserito manualmente.
+
+Alla base della registrazione contabile, nella scheda registrazione, è presente la descrizione della registrazione contabile: si tratta di una nota che si può impostare all'interno della causale di contabilità attraverso l'uso dei codici numerici (1) (2) … (10) (i codici (8) e (9) si utilizzano solo nelle descrizioni di dettaglio dei sottoconti nella sezione del libro giornale). Con un doppio click nel campo è possibile aprire una ricerca all'interno delle note codificate (procedura presente all'interno delle Utilità: la modifica manuale di questa descrizione sarà eventualmente resettata su conferma utente una volta modificato uno dei campi gestiti automaticamente nelle note.
+
+Alla base della maschera sono presenti ulteriori campi di riepilogo dei dati IVA e della registrazione: meritano in particolare un'annotazione i campi dedicati alla visualizzazione dello sbilancio della registrazione, cosa normalmente non consentita (ma che si può abilitare nelle impostazioni della causale in uso). 
+
+Lo sbilancio sarà proposto come importo nelle nuove righe di contabilità che saranno inserite manualmente nella registrazione al fine di bilanciarla automaticamente.
 
 
 
-| Function | Meaning |
-| --- | --- |
-| Document Manager | Button to connect to the document management. |
 
+
+RIBBON BAR: rappresenta il menu della Form in oggetto, ossia l'area nella quale è possibile effettuare delle azioni. La lista delle funzionalità possibili, nel tab corrente, è di seguito rappresentata:
+
+In particolare si segnala il comando **Parametri di inserimento**
+
+![](/img/it-it/finance-area/ledger-records/records/create-ledger-record/header-and-total-movements-description/image03.png)
+
+ Richiama i parametri di inserimento della prima nota. 
+
+- Sottconto (Nessuno / Ultimo introdotto): riferito al sottoconto intestatario della registrazione inserito in testata.
+
+- Data competenza economica: presente nella griglia del registro IVA e riportata in automatico in quella del Libro giornale, può essere proposta come giornaliero (pari alla data registrazione sia per "da data" sia per "a data"), fine esercizio ("a data" sarà impostato 31/12/XXXX), e nessuna per conti di tipo servizi (dove sarà lasciata in bianco se il conto di contropartita utilizzato è di tipo "da rettificare" ovvero utile per il calcolo dell'assestamento, al fine di obbligare l'utente a definire il range di date)
+
+- Avvisa sbilancio in valuta: controlla se anche la colonna 'Importo in valuta' nel Libro Giornale bilancia (anche se rappresentata su un' unica colonna il programma conosce la sezione del movimento);
+ 
+- Avvisa data cambio: poiché il cambio proposto in automatico nella registrazione è l'ultimo cambio inserito nella tabella "cambi valute", verifica che la data del cambio in tabella "cambi valute" sia uguale a data registrazione
+
+---
+
+### VIDEO TUTORIALS
+
+:::important Vedi Anche
+[**VIDEO TUTORIALS SULLE REGISTRAZIONI CONTABILI**](/docs/video/finance/intro.md)
+:::
 
 
 
