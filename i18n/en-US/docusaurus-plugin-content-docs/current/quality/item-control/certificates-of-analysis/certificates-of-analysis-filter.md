@@ -1,39 +1,39 @@
 ---
-title: Ricerca Certificato di analisi
+title: Analysis Certificate Search 
 sidebar_position: 1
 ---
 
-Il filtro si trova sul percorso **Qualità > Controlli articolo > Piani di controllo**.   
+The filter is located along the path **Quality > Item Controls > Control Plans**. 
 
-I **Certificati di analisi** o **Certificati di collaudo** attestano la conformità degli articoli venduti alle caratteristiche specificate nella *Scheda tecnica*.   
-I *Certificati di analisi* possono essere generici o specifici per *Cliente*.   
+**Analysis Certificates** or **Final Test Certificate** certify the compliance of the sold items with the characteristics specified in the *Data Sheet*.   
+*Analysis Certificates* can be general or specific to a *Customer*.
 
-Il filtro dati consente di inserire nuovi *Certificati di analisi* o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.   
+The data filter allows you to enter new *Analysis Certificates* or search for existing ones to view, modify, or delete them.
 
-### ![](/img/neutral/common/search.png) Ricerca Certificati di analisi
+### ![](/img/neutral/common/search.png) Analysis Certificate Search 
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.   
+The form consists of an area for filtering and one for results. Once all desired filters are set, simply click the **Search** button to display the results within the results grid.
 
-### ![](/img/neutral/common/new.png) Inserimento Certificati di analisi
+### ![](/img/neutral/common/new.png) Insert of Analysis Certificates 
 
-Per poter inserire nuovi *Certificati di analisi* è necessario premere il pulsante **Nuovo**.   
+To enter new *Analysis Certificates*, it is necessary to press the **New** button.
 
-### ![](/img/neutral/common/edit.png) Modifica o ![](/img/neutral/common/view.png) Visualizzazione Certificati di analisi
+### ![](/img/neutral/common/edit.png) Modify or ![](/img/neutral/common/view.png) View Analysis Certificates
 
-Per aprire la gestione, della griglia di risultato, è necessario fare doppio click sulla riga di nostro interesse oppure, selezionando una o più righe, premere i pulsanti **Modifica** o **Visualizza**.   
+To open the management of the results grid, you need to double-click on the row of interest or, by selecting one or more rows, press the **Modify** or **View** buttons.
 
-*Pulsanti specifici*: 
-    
-### ![](/img/neutral/common/duplicate.png) Duplica Certificato di analisi
+*Specific buttons (Pulsanti specifici)*:
 
-Per poter duplicare un *Certificato di analisi* esistente in un nuovo *Certificato di analisi* è necessario cliccare nella griglia sul *Certificato di analisi* da cui si desidera duplicare e premere il pulsante **Duplica**. Si può duplicare un solo *Certificato di analisi* alla volta. Verrà visualizzata una richiesta di:   
-> **Tipo certificato analisi**: è il *Tipo certificato analisi* del nuovo *Certificato di analisi* (dato obbligatorio), viene proposto il *Tipo certificato analisi* del *Certificato di analisi* di origine.   
-> **Numero**: è il *Numero* progressivo del nuovo *Certificato di analisi* (dato obbligatorio), viene proposto in base a quanto previsto dalla *Numerazione* associata al *Tipo certificato analisi* e alla data odierna.   
-> **Duplica i riferimenti dei controlli di origine**: indica se si desidera duplicare le righe associate a *Controlli articolo*.   
-> **Duplica i riferimenti delle altre righe di origine**: indica se si desidera duplicare le righe non associate a *Controlli articolo*.   
-> **Duplica i documenti di origine**: indica se si desidera duplicare i *Documenti*.   
+### ![](/img/neutral/common/duplicate.png) Duplicate Analysis Certificate 
 
-Premere successivamente il pulsante **OK** o il pulsante **Cancel** se si desidera proseguire nell'attività di duplica o meno.   
-Al termine dell'elaborazione il nuovo *Certificato di analisi* viene visualizzato.
+To duplicate an existing *Analysis Certificate* into a new *Analysis Certificate*, it is necessary to click on the *Analysis Certificate* in the grid from which you wish to duplicate and press the **Duplicate** button. You can only duplicate one *Analysis Certificate* at a time. A request will be displayed:   
+> **Analysis Certificate Type**: is the *Analysis Certificate Type* of the new *Analysis Certificate* (mandatory data), the *Analysis Certificate Type* from the source *Analysis Certificate* is proposed.   
+> **Number**: is the progressive *Number* of the new *Analysis Certificate* (mandatory data), proposed based on the *Numeration* associated with the *Analysis Certificate Type* and today’s date.   
+> **Duplicate origin item control references**: indicates whether to duplicate the rows associated with *Item Controls*.   
+> **Duplicate other origin references**: indicates whether to duplicate the rows not associated with *Item Controls*.   
+> **Duplicate origin documents**: indicates whether to duplicate the *Documents*.   
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Then press the **OK** button or the **Cancel** button if you want to proceed with the duplication activity or not.   
+At the end of the processing, the new *Analysis Certificate* will be displayed.
+
+For everything not detailed in this document regarding the common functionality of forms, please refer to the following link [Custom Features, Buttons, and Field](/docs/guide/common).

@@ -1,241 +1,241 @@
 ---
-title: Certificato di Analisi
+title: Certificate of Analysis 
 sidebar_position: 2
 ---
 
-La gestione si trova sul percorso **Qualità > Controlli articolo > Certificati di analisi > Nuovo Certificato di analisi** oppure è possibile eseguirla dalla **Ricerca Certificati di analisi**.   
+The management is located along the path **Quality > Item Controls > Certificates of Analysis > New Certificate of Analysis** or it can be executed from the **Search Certificates of Analysis**.   
 
 
-:::important A cosa serve
-Il **Certificato di analisi** attesta che un determinato articolo è conforme alle caratteristiche specificate dalla Scheda tecnica o nelle specifiche del Cliente, attesta altresì le avvenute verifiche sul prodotto, il rispetto dei limiti indicati nei Piani di controllo e accompagnano la vendita del prodotto.   
-I Certificati possono essere generici o personalizzati. Se personalizzati sarà necessario inserire il **Cliente**.   
+:::important What it is for
+The **Certificate of Analysis** certifies that a certain item complies with the characteristics specified by the Data Sheet or in the Customer specifications, also certifying the checks performed on the product, the compliance with the limits indicated in the Control Plans, and accompanies the sale of the product.   
+Certificates can be generic or customized. If customized, it will be necessary to enter the **Customer**.   
 
-A standard sono disponibili le reportistiche di:   
-> **Certificato di analisi**: scheda che riporta l'elenco dei *Prodotti* con il dettaglio delle *Prove effettuate*, dei *Valori rilevati* e l'*Esito* ottenuto.   
-> **Dichiarazione di conformità**: scheda che attesta e garantisce la conformità del *Prodotto*.   
+Standard reports are available for:   
+> **Certificate of Analysis**: a sheet that lists the *Products* with details of the *Tests performed*, *Values detected*, and the *Result* obtained.   
+> **Declaration of Conformity**: a sheet that certifies and guarantees the conformity of the *Product*.   
 :::
 
 
-## Pulsanti di comando
+## Command Buttons
 
 
-### ![](/img/neutral/common/save.png) Salva
+### ![](/img/neutral/common/save.png) Save
 
-Premendo questo pulsante si memorizzano tutte le informazioni modificate del *Certificato di analisi* visualizzato.   
-
-
-### ![](/img/neutral/common/import.png) Importazione controlli
-
-Premendo questo pulsante si ricercano i *Controlli articolo Approvati* da associare al *Certificato di analisi* visualizzato.   
-Viene visualizzata una gestione per la ricerca e la selezione dei *Controlli articolo* da importare nel *Certificato di analisi*.   
-Vengono elencati i soli *Controlli articolo Approvati * che soddisfano il filtro dati richiesto.   
-Premendo il pulsante *Seleziona* i *Controlli articolo* selezionati vengono duplicati e riportati nel Certificato di analisi* visualizzato.   
+Pressing this button saves all the modified information of the displayed *Certificate of Analysis*.   
 
 
-### ![](/img/neutral/common/update.png) Aggiorna
+### ![](/img/neutral/common/import.png) Import Controls
 
-Premendo questo pulsante si effettua un aggiornamento di tutte le informazioni presenti nei *Certificato di analisi* visualizzato.   
+Pressing this button searches for *Approved Item Controls* to associate with the displayed *Certificate of Analysis*.   
+A management interface appears for searching and selecting the *Item Controls* to import into the *Certificate of Analysis*.   
+Only *Approved Item Controls* that meet the required data filter are listed.   
+Pressing the *Select* button duplicates the selected *Item Controls* and includes them in the displayed *Certificate of Analysis*.   
+
+
+### ![](/img/neutral/common/update.png) Update
+
+Pressing this button updates all the information in the displayed *Certificate of Analysis*.   
 
 
 
-## Gestione dati
+## Data Management
 
 
-### Dati di testata del documento
-Le informazioni gestite sono:   
-> **Tipo certificato**: è il tipo del documento (dato obbligatorio).   
-> All'inserimento di un nuovo *Certificato di analisi* viene proposto il *Tipo certificato* indicato nell'expander *Certificati di analisi* del tabulatore *Generale* presente nei *Parametri Controllo articoli*.   
+### Header Data of the Document
+The managed information includes:   
+> **Certificate Type**: it is the type of the document (mandatory data).   
+> When entering a new *Certificate of Analysis*, the *Certificate Type* indicated in the expander *Certificates of Analysis* of the *General* tab in the *Item Control Parameters* is proposed.   
 >
-> **Anno/Numero/Data**: sono l'*Anno*, *Numero* e *Data* del *Certificato di analisi* (dati obbligatori).   
-> All'inserimento di un nuovo *Certificato di analisi*:   
-> - la *Data* viene proposta pari alla data odierna;   
-> - l'*Anno* e il *Numero* vengono proposti in base alla *Data* e alla *Numerazione* associata al *Tipo certificato*.   
+> **Year/Number/Date**: these are the *Year*, *Number*, and *Date* of the *Certificate of Analysis* (mandatory data).   
+> Upon entering a new *Certificate of Analysis*:   
+> - the *Date* is proposed as today’s date;   
+> - the *Year* and *Number* are proposed based on the *Date* and the *Numeration* associated with the *Certificate Type*.   
 >
-> **Cliente**: è la ragione sociale del *Cliente* a cui verrà inviato il documento.   
+> **Customer**: this is the legal entity of the *Customer* to whom the document will be sent.   
 
 
-### Testata 
-Le informazioni gestite sono:   
-> **Responsabile**: è il *Dipendente* responsabile del *Certificato di analisi*.   
-> All'inserimento manuale di un nuovo *Certificato di analisi* viene proposto il *Responsabile* indicato nell'expander *Certificati di analisi* del tabulatore *Generale* presente nei *Parametri Controllo articoli*.  
+### Header 
+The managed information includes:   
+> **Responsible**: this is the *Employee* responsible for the *Certificate of Analysis*.   
+> When manually entering a new *Certificate of Analysis*, the *Responsible* indicated in the expander *Certificates of Analysis* of the *General* tab in the *Item Control Parameters* is proposed.  
 >
-> **Referente esterno**: è la *Funzione aziendale* responsabile dell'*Azione correttiva*.   
-> **Nota cliente**: annotazioni libere.   
-> **Nostro riferimento**: annotazioni libere su riferimenti a documenti interni.   
-> **Vostro riferimento**: annotazioni libere su riferimenti a documenti esterni del cliente.   
-> **Descrizione**: annotazioni libere.   
+> **External Reference**: this is the *Business Function* responsible for the *Corrective Action*.   
+> **Customer Note**: free annotations.   
+> **Our Reference**: free annotations referring to internal documents.   
+> **Your Reference**: free annotations referring to external documents from the customer.   
+> **Description**: free annotations.   
 >
-> **Completato/In data**: expander dove è possibile inserire:   
+> **Completed/In Date**: expander where the following can be entered:   
 >
->> **Completato**: indica che il *Certificato di analisi* è stato *Completato*.   
->> All'atto del completamento vengono automaticamente proposte: *In data* (data del completamento) proposta alla data odierna e può essere variata, *Completato da* collegato e al *Dipendente* collegato all'*Utente A.R.M.* che ha effettuato l'accesso.  
->> **Notificato/In data**: indica che il *Certificato di analisi* è stato *Notificato* al cliente nella data specificata.   
->> All'atto della notifica viene automaticamente proposta: *In data* (data della notifica) proposta alla data odierna e può essere variata.  
+>> **Completed**: indicates that the *Certificate of Analysis* has been *Completed*.   
+>> Upon completion, the following are automatically proposed: *In Date* (completion date) proposed as today’s date and can be changed, *Completed By* linked to the *Employee* associated with the *A.R.M. User* who logged in.  
+>> **Notified/In Date**: indicates that the *Certificate of Analysis* has been *Notified* to the customer on the specified date.   
+>> Upon notification, the following is automatically proposed: *In Date* (notification date) proposed as today’s date and can be changed.  
 >
-> **Audit Trail**: expander di sola lettura dove sono visibili le seguenti informazioni:   
+> **Audit Trail**: read-only expander where the following information is visible:   
 
 
-#### Annotazioni
-Le informazioni gestite sono:   
-> **Note interne**: annotazioni libere.   
-> **Stampabili**: indica se le *Note interne* sono stampabili o meno nei reports: *Certificato di analisi* e *Dichiarazione di conformità*.   
-> **Note Piano di controllo**: annotazioni libere su riferimenti a Piani di controllo utilizzati.   
-> **Stampabili**: indica se le *Note Piano di controllo* sono stampabili o meno nei reports: *Certificato di analisi* e *Dichiarazione di conformità*.   
-> **Altre note**: annotazioni libere.   
+#### Annotations
+The managed information includes:   
+> **Internal Notes**: free annotations.   
+> **Printable**: indicates whether the *Internal Notes* are printable in the reports: *Certificate of Analysis* and *Declaration of Conformity*.   
+> **Control Plan Notes**: free annotations regarding references to used Control Plans.   
+> **Printable**: indicates whether the *Control Plan Notes* are printable in the reports: *Certificate of Analysis* and *Declaration of Conformity*.   
+> **Other Notes**: free annotations.   
 
 
-#### Extra data
-E' possibile inserire degli [Extra Data](/docs/configurations/utility/extra-data/extradata/new-extradata-simple) per ogni *Certificato di analisi*.   
+#### Extra Data
+It is possible to enter [Extra Data](/docs/configurations/utility/extra-data/extradata/new-extradata-simple) for each *Certificate of Analysis*.   
 
 
-### Controlli e valori rilevati 
-Le informazioni gestite sono:   
-> **Articolo**   
->> **Numero**: è il numero di riga del documento.   
->> **Tipo riga**: è il tipo riga del documento. Nella versione è gestito solamente il *Tipo riga: 1 - Articolo codificato*.   
->> **Classe**: è la classe dell'*Articolo* della riga documento controllata.   
->> **Codice articolo**: è il codice dell'*Articolo* della riga documento controllata.   
->> **Descrizione articolo**: è la descrizione dell'*Articolo* della riga documento controllata.   
->> **Unità di carico**: .   
->> **Lotto**: .   
->> **Numero seriale**: .   
->> **Unità di misura**: è l'*Unità di misura* della *Quantità documento* della riga documento controllata.   
->> **Quantità**: è la *Quantità documento* della riga documento controllata.   
->> **Unità di misura alternativa**: è l'*Unità di misura alternativa* della *Quantità documento* della riga documento controllata.   
->> **Quantità alternativa**: è la *Quantità alternativa documento* della riga documento controllata.   
+### Controls and Detected Values 
+The managed information includes:   
+> **Item**   
+>> **Number**: this is the line number of the document.   
+>> **Type Line**: this is the line type of the document. In the version, only the *Type Line: 1 - Coded Item* is managed.   
+>> **Class**: this is the class of the *Item* of the controlled document line.   
+>> **Item Code**: this is the code of the *Item* of the controlled document line.   
+>> **Item Description**: this is the description of the *Item* of the controlled document line.   
+>> **Loading Unit**: .   
+>> **Batch**: .   
+>> **Serial Number**: .   
+>> **Unit of Measure**: this is the *Unit of Measure* of the *Document Quantity* of the controlled document line.   
+>> **Quantity**: this is the *Document Quantity* of the controlled document line.   
+>> **Alternative Unit of Measure**: this is the *Alternative Unit of Measure* of the *Document Quantity* of the controlled document line.   
+>> **Alternative Quantity**: this is the *Alternative Document Quantity* of the controlled document line.   
 >
-> **Controlli Articolo**   
->> **Tipo**: e il codice del *Tipo controllo articolo*.   
->> **Descrizione tipo**: è la descrizione del *Tipo controllo articolo*. L'informazione è di sola lettura.   
->> **Numero**: e il numero del *Controllo articolo*. L'informazione è di sola lettura.   
->> **Data**: e la data in cui è stato inserito il *Controllo articolo*. L'informazione è di sola lettura.   
+> **Item Controls**   
+>> **Type**: this is the code of the *Item Control Type*.   
+>> **Type Description**: this is the description of the *Item Control Type*. This information is read-only.   
+>> **Number**: this is the number of the *Item Control*. This information is read-only.   
+>> **Date**: this is the date the *Item Control* was entered. This information is read-only.   
 
 
-#### Valori rilevati
-Contiene l'elenco delle *Prove* per l'*Articolo*.   
-Le informazioni vengono ereditate dalle *Prove dei *Controlli articolo* importati e sono modificabili con le stesse logiche utilizzate nella gestione dei [*Controlli articolo*](/docs/quality/item-control/items-control/item-control-management).
-L'elenco si compone delle seguenti informazioni:   
-> **Sequenza**: è la sequenza di attuazione della *Prove*.   
-> **Tipo prova**: è il codice della *Prova*.   
-> **Descrizione tipo prova**:  è la descrizione della *Prova*. L'informazione è di sola lettura.   
-> **Unità di misura valori rilevati**: è l'*Unità di misura* con cui si esprimono il *Valore nominale*, i *Limiti minimo e massimo* se espressi in valore e non in percentuale e i *Valori rilevati*.   
-> **Tipo valore**: è il *Tipo valore* con cui esprimere il *Valore nominale*; i *Tipi valore* possibili sono: *Numerico*, *Si/No* o *Testo*.   
-> **Tipo limite**: abilitato se il *Tipo valore* è *Numerico*, è il *Tipo limite* che piloterà l'abilitazione dei *Limiti* e dei valori di *Tolleranza*.   
-> **Valore nominale**: è il valore teorico atteso della *Prova*.   
-> **Limite minimo**: limite minimo consentito rispetto al *Valore nominale*.   
-> **L.min.(toll-)**: è il limite di tolleranza negativa sul limite minimo.   
-> **L.min.(toll+)**: è il limite di tolleranza positiva sul limite minimo.   
-> **Limite massimo**: limite massimo consentito rispetto  al *Valore nominale*.   
-> **L.max.(toll-)**: è il limite di tolleranza negativa sul limite massimo.   
-> **L.max.(toll+)**: è il limite di tolleranza positiva sul limite massimo.   
-> **%**: indica se il *Limite minimo* e il *Limite massimo* sono espressi in percentuale.   
-> **Valore rilevato**: è il valore puntuale rilevato della *Prova* che ne determinerà l'*Esito*.   
-> All'inserimento del *Valore rilevato*:   
-> - in *Rilevato da* viene proposto il *Dipendente* associato all'*Utente A.R.M.* che ha effettuato l'accesso;   
-> - in *Rilevato da utente* viene proposto l'*Utente A.R.M.* che ha effettuato l'accesso;   
-> - in *Esito* viene proposto il risultato della *Prova* e modificabile successivamente.   
-> - in *Data esito prova* viene proposta la data odierna e modificabile successivamente.   
+#### Detected Values
+It contains the list of *Tests* for the *Item*.   
+The information is inherited from the *Tests of the *Imported Item Controls* and can be modified using the same logic used in the management of [*Item Controls*](/docs/quality/item-control/items-control/item-control-management).
+The list includes the following information:   
+> **Sequence**: this is the sequence of implementation of the *Tests*.   
+> **Test Type**: this is the code of the *Test*.   
+> **Test Type Description**: this is the description of the *Test*. This information is read-only.   
+> **Unit of Measure Detected Values**: this is the *Unit of Measure* used to express the *Typical Value*, the *Minimum and Maximum Limits* if expressed in value and not in percentage, and the *Detected Values*.   
+> **Value Type**: this is the *Value Type* used to express the *Typical Value*; the possible *Value Types* are: *Numeric*, *Yes/No* or *Text*.   
+> **Limit Type**: enabled if the *Value Type* is *Numeric*, this is the *Limit Type* that will drive the enabling of the *Limits* and *Tolerance* values.   
+> **Typical Value**: this is the expected theoretical value of the *Test*.   
+> **Minimum Limit**: minimum limit allowed compared to the *Typical Value*.   
+> **L.min.(toll-)**: this is the negative tolerance limit on the minimum limit.   
+> **L.min.(toll+)**: this is the positive tolerance limit on the minimum limit.   
+> **Maximum Limit**: maximum limit allowed compared to the *Typical Value*.   
+> **L.max.(toll-)**: this is the negative tolerance limit on the maximum limit.   
+> **L.max.(toll+)**: this is the positive tolerance limit on the maximum limit.   
+> **%**: indicates whether the *Minimum Limit* and the *Maximum Limit* are expressed as a percentage.   
+> **Detected Value**: this is the detected value of the *Test* that will determine the *Result*.   
+> Upon entering the *Detected Value*:   
+> - in *Detected By* is proposed the *Employee* associated with the *A.R.M. User* who logged in;   
+> - in *Detected By User* is proposed the *A.R.M. User* who logged in;   
+> - in *Result* is proposed the result of the *Test* and can be modified later.   
+> - in *Test Result Date* is proposed today’s date and can be modified later.   
 >
-> **Media valori rilevati**: è la media dei valori rilevati nella *Rilevazione multipla valori* della *Prova*.   
-> **Rilevato da**: è il *Dipendente* che ha inserito il *Valore rilevato*.   
-> All'inserimento del *Valore rilevato* questa informazione viene proposta pari al *Dipendente* associato all'*Utente A.R.M.* che ha effettuato l'accesso.   
-> **Rilevato da utente**: è l'*Utente A.R.M.* che ha inserito il *Valore rilevato*.   
-> All'inserimento del *Valore rilevato* questa informazione viene proposta pari all'*Utente A.R.M.* che ha effettuato l'accesso.   
-> **Esito**: è il risultato positivo o negativo della *Prova*.   
-> All'inserimento dell'*Esito* in *Data esito prova* viene proposta la data odierna e modificabile successivamente.   
-> All'inserimento del *Valore rilevato* o della *Media valori rilevati* questa informazione viene proposta sulla base del *Tipo valore*, *Tipo limite*, *Valore nominale*, *Limiti* e *Tolleranze* inserite.   
-> **Stampabile**: indica che la *Prova* è stampabile.   
-> **Approvato**: indica che i valori e l'*Esito* attribuito alla *Prova* sono stati *Approvati*.   
-> All'atto dell'approvazione la *Data approvazione esito* viene automaticamente proposta pari alla data odierna e può essere variata, tutte le informazioni della *Prova* non possono essere più modificate.   
+> **Average Values Detected**: this is the average of the detected values in the *Multiple Value Detection* of the *Test*.   
+> **Detected By**: this is the *Employee* who entered the *Detected Value*.   
+> Upon entering the *Detected Value*, this information is proposed as equal to the *Employee* associated with the *A.R.M. User* who logged in.   
+> **Detected By User**: this is the *A.R.M. User* who entered the *Detected Value*.   
+> Upon entering the *Detected Value*, this information is proposed as equal to the *A.R.M. User* who logged in.   
+> **Result**: this is the positive or negative result of the *Test*.   
+> Upon entering the *Result*, today’s date is proposed in *Test Result Date* and can be modified later.   
+> Upon entering the *Detected Value* or the *Average Values Detected*, this information is proposed based on the *Value Type*, *Limit Type*, *Typical Value*, *Limits*, and *Tolerances* entered.   
+> **Printable**: indicates that the *Test* is printable.   
+> **Approved**: indicates that the values and the *Result* attributed to the *Test* have been *Approved*.   
+> Upon approval, the *Approval Date for Result* is automatically proposed as today’s date and can be modified; all information of the *Test* cannot be modified anymore.   
 
 
-***Valori multipli rilevati***   
+***Multiple Detected Values***   
 
-Contiene l'elenco delle rilevazioni fatte per una singola *Prova*.   
-Anch'esse vengono ereditate dalle *Prove dei *Controlli articolo* importati e sono modificabili con le stesse logiche utilizzate nella gestione dei [*Controlli articolo*](/docs/quality/item-control/items-control/item-control-management).
-L'elenco si compone delle seguenti informazioni:   
-> **Sequenza**: è la sequenza di attuazione della rilevazione.   
-> **Posizione**: annotazioni libere relative alla posizione della rilevazione.   
-> **Valore rilevato**: è il valore rilevato dall'operatore.   
-> Se il *Valore rilevato* è di tipo *Numerico*, la media dei *Valori rilevati*, inseriti in questo elenco per la *Prova* selezionata, verrà inserita nella colonna *Media valori rilevati* della *Prova* selezionata che ne determinerà l'*Esito*.   
-> All'inserimento del *Valore rilevato*:   
-> - in *Rilevato da* viene proposto il *Dipendente* associato all'*Utente A.R.M.* che ha effettuato l'accesso;   
-> - in *Rilevato da utente* viene proposto l'*Utente A.R.M.* che ha effettuato l'accesso;   
-> - in *Rilevato il* viene proposta la data odierna.   
+Contains the list of measurements taken for a single *Test*.   
+These are also inherited from the *Tests of the *Imported Item Controls* and can be modified using the same logic used in the management of [*Item Controls*](/docs/quality/item-control/items-control/item-control-management).
+The list includes the following information:   
+> **Sequence**: this is the sequence of execution of the measurement.   
+> **Position**: free annotations related to the position of the measurement.   
+> **Detected Value**: this is the value detected by the operator.   
+> If the *Detected Value* is of type *Numeric*, the average of the *Detected Values* entered in this list for the selected *Test* will be inserted in the *Average Values Detected* column of the selected *Test*, determining its *Result*.   
+> Upon entering the *Detected Value*:   
+> - in *Detected By* is proposed the *Employee* associated with the *A.R.M. User* who logged in;   
+> - in *Detected By User* is proposed the *A.R.M. User* who logged in;   
+> - in *Detected On* the current date is proposed.   
 >
-> **Strumento di misura utilizzato**: è il rifermento allo *Strumento di misura* utilizzato dall'operatore per acquisire il *Valore rilevato*.   
-> **Rilevato da**: è il *Dipendente* che ha inserito il *Valore rilevato*.   
-> All'inserimento del *Valore rilevato* questa informazione viene proposta pari al *Dipendente* associato all'*Utente A.R.M.* che ha effettuato l'accesso.   
-> **Rilevato da utente**: è l'*Utente A.R.M.* che ha inserito il *Valore rilevato*.   
-> All'inserimento del *Valore rilevato* questa informazione viene proposta pari all'*Utente A.R.M.* che ha effettuato l'accesso.   
-> **Rilevato il**: è la data in cui l'operatore ha inserito il *Valore rilevato*.   
-> All'inserimento del *Valore rilevato* questa informazione viene proposta pari alla data odierna.   
-> **Note**: annotazioni libere.   
-> **Descrizione Strumento di misura**: è la descrizione dello *Strumento di misura* utilizzato.   
+> **Measuring Tool Used**: this is the reference to the *Measuring Tool* used by the operator to obtain the *Detected Value*.   
+> **Detected By**: this is the *Employee* who entered the *Detected Value*.   
+> Upon entering the *Detected Value*, this information is proposed as equal to the *Employee* associated with the *A.R.M. User* who logged in.   
+> **Detected By User**: this is the *A.R.M. User* who entered the *Detected Value*.   
+> Upon entering the *Detected Value*, this information is proposed as equal to the *A.R.M. User* who logged in.   
+> **Detected On**: this is the date when the operator entered the *Detected Value*.   
+> Upon entering the *Detected Value*, this information is proposed as today’s date.   
+> **Notes**: free annotations.   
+> **Description of Measuring Tool**: this is the description of the *Measuring Tool* used.   
 
 
-***Dati di dettaglio valori rilevati***   
+***Detected Values Details***   
 
-Contiene altre informazioni associate alla *Prova* selezionata.   
-Le informazioni vengono ereditate dalle *Prove dei *Controlli articolo* importati e sono modificabili con le stesse logiche utilizzate nella gestione dei [*Controlli articolo*](/docs/quality/item-control/items-control/item-control-management).   
-Le informazioni gestite sono:   
-> **Prova interna**: indica se la *Prova* viene rilevata internamente o presso un laboratorio esterno.   
-> **Data invio**: è la data in cui si è inviato il materiale necessario ad effettuare la *Prova* presso il *Laboratorio esterno*. L'informazione è di sola lettura se è indicata la *Prova interna*.   
-> **Laboratorio esterno**: è la ragione sociale del *Fornitore* che effettuerà la prova. L'informazione è di sola lettura se è indicata la *Prova interna*.   
-> **Tipo prova**: è il codice e la descrizione della *Prova*.   
-> **Categoria frequenza**: annotazioni libere relative alla frequenza di campionatura.   
-> **Numero rilevazioni**: è il numero di rilevazioni valori minime suggerite da effettuare.   
-> **Strumento di misura utilizzato**: è lo *Strumento di misura* utilizzato per rilevare il valore puntuale della *Prova*.   
-> **Data inizio/Data fine**: sono le date di inizio e di fine della *Prova*.  
-> **Data esito prova**: è la data di attribuzione dell'*Esito*.   
-> All'inserimento dell'*Esito* questa informazione viene proposta pari alla data odierna e modificabile successivamente.   
-> **Descrizione su risultato**: annotazioni libere sull'argomento.   
-> **Data approvazione**: è la data in cui è stata effettuata l'*Approvazione* della *Prova*.   
-> All'atto dell'inserimento della data viene automaticamente impostato il flag *Approvato*.   
-> **Descrizione approvazione**: annotazioni libere sull'argomento.   
-> **Note prova**: annotazioni libere sull'argomento.   
-> **Altre note**: annotazioni libere.   
-
-
-***Altri dati prove effettuate***   
-
-E' possibile visualizzare degli [Extra Data](/docs/configurations/utility/extra-data/extradata/new-extradata-simple) per ogni riga *Valori rilevati* della riga *Articolo/Controlli articolo*.   
-Vengono ereditati dagli *Attributi prove effettuate* associati alle *Prove* dei *Controlli articolo*.   
+Contains additional information associated with the selected *Test*.   
+The information is inherited from the *Tests of the *Imported Item Controls* and can be modified using the same logic used in the management of [*Item Controls*](/docs/quality/item-control/items-control/item-control-management).   
+The managed information includes:   
+> **Internal Test**: indicates whether the *Test* is conducted internally or at an external laboratory.   
+> **Sending Date**: this is the date when the necessary materials to conduct the *Test* were sent to the *External Laboratory*. This information is read-only if an *Internal Test* is indicated.   
+> **External Laboratory**: this is the legal entity of the *Supplier* that will conduct the test. This information is read-only if an *Internal Test* is indicated.   
+> **Test Type**: this is the code and description of the *Test*.   
+> **Frequency Category**: free annotations related to the sampling frequency.   
+> **Number of Detections**: this is the number of minimum values suggested for measurements.   
+> **Measuring Tool Used**: this is the *Measuring Tool* used to detect the point value of the *Test*.   
+> **Start Date/End Date**: these are the start and end dates of the *Test*.  
+> **Test Result Date**: this is the date the *Result* is assigned.   
+> Upon entering the *Result*, this information is proposed as today’s date and can be modified later.   
+> **Description on Result**: free annotations on the subject.   
+> **Approval Date**: this is the date when the *Approval* of the *Test* was made.   
+> Upon entering the date, the *Approved* flag is automatically set.   
+> **Approval Description**: free annotations on the subject.   
+> **Test Notes**: free annotations on the subject.   
+> **Other Notes**: free annotations.   
 
 
-***Attributi articolo***   
+***Other Test Data***   
 
-E' possibile inserire degli [Extra Data](/docs/configurations/utility/extra-data/extradata/new-extradata-simple) per ogni riga *Valori rilevati* della riga *Articolo/Controlli articolo*.   
-
-
-***Documenti allegati***   
-
-In questo elenco è possibile inserire e consultare eventuali allegati associati alla riga *Valori rilevati* della riga *Articolo/Controlli articolo*.   
+It is possible to view [Extra Data](/docs/configurations/utility/extra-data/extradata/new-extradata-simple) for each row of *Detected Values* of the *Item/Item Controls* row.   
+These are inherited from the *Attributes of Conducted Tests* associated with the *Tests* of the *Item Controls*.   
 
 
-#### Dati di dettaglio controlli
-Le informazioni gestite sono:   
-> **Riferimento Piano di controllo**: è il riferimento al *Piano di controllo* utilizzato per le prove ed i valori rilevati. L'informazione è di sola lettura.   
-> **Descrizione controllo**: è la descrizione del *Controllo articoli* collegato. L'informazione è di sola lettura   
-> **Note controllo**: annotazioni libere sull'argomento.   
-> **Note articolo-cliente**: annotazioni libere sull'argomento.   
-> **Riferimento Scheda tecnica**: è il riferimento alla *Scheda tecnica* collegata al *Piano di controllo* utilizzato. L'informazione è di sola lettura   
-> **Documento di origine**: è il riferimento del *Tipo documento di origine* sul quale si sono effettuati i *Controlli articoli*. L'informazione è di sola lettura   
-> **Riferimento documento di origine**: è il riferimento del *Documento di origine* sul quale si sono effettuati i *Controlli articoli*. L'informazione è di sola lettura.   
-> **Note**: annotazioni libere.   
+***Item Attributes***   
+
+It is possible to enter [Extra Data](/docs/configurations/utility/extra-data/extradata/new-extradata-simple) for each row of *Detected Values* of the *Item/Item Controls* row.   
 
 
-#### Altri dati controllo
-E' possibile visualizzare degli [Extra Data](/docs/configurations/utility/extra-data/extradata/new-extradata-simple) per ogni riga *Articolo/Controlli articolo*.   
-Vengono ereditati dagli *Attributi controlli* associati ai *Controlli articolo*.   
+***Attached Documents***   
+
+In this list, it is possible to enter and consult any attachments associated with the row of *Detected Values* of the *Item/Item Controls* row.   
 
 
-#### Attributi articolo
-E' possibile inserire degli [Extra Data](/docs/configurations/utility/extra-data/extradata/new-extradata-simple) per ogni riga *Articolo/Controlli articolo*.   
+#### Detail Data of Controls
+The managed information includes:   
+> **Control Plan Reference**: this is the reference to the *Control Plan* used for the tests and the detected values. This information is read-only.   
+> **Control Description**: this is the description of the linked *Item Control*. This information is read-only.   
+> **Control Notes**: free annotations on the subject.   
+> **Item-Customer Notes**: free annotations on the subject.   
+> **Data Sheet Reference**: this is the reference to the *Data Sheet* linked to the used *Control Plan*. This information is read-only.   
+> **Source Document**: this is the reference of the *Source Document Type* on which the *Item Controls* were performed. This information is read-only.   
+> **Source Document Reference**: this is the reference of the *Source Document* on which the *Item Controls* were performed. This information is read-only.   
+> **Notes**: free annotations.   
 
 
-#### Documenti allegati
-In questo elenco è possibile inserire e consultare eventuali allegati associati alla riga *Articolo/Controlli articolo*.   
+#### Other Control Data
+It is possible to view [Extra Data](/docs/configurations/utility/extra-data/extradata/new-extradata-simple) for each row of *Item/Item Controls*.   
+These are inherited from the *Attributes of Controls* associated with the *Item Controls*.   
 
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).   
+#### Item Attributes
+It is possible to enter [Extra Data](/docs/configurations/utility/extra-data/extradata/new-extradata-simple) for each row of *Item/Item Controls*.   
+
+
+#### Attached Documents
+In this list, it is possible to enter and consult any attachments associated with the row of *Item/Item Controls*.   
+
+
+For everything not detailed in this document regarding the common functionality of the forms, please refer to the following link [Custom Features, Buttons, and Fields](/docs/guide/common).
