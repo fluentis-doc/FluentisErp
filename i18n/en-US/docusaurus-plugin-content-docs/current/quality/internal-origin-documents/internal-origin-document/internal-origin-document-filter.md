@@ -1,67 +1,67 @@
 ---
-title: Ricerca Documenti di origine interna
+title: Search for Internal Origin Documents
 sidebar_position: 1
 ---
 
-Il filtro si trova sul percorso **Qualità > Documenti di origine interna > Documenti di origine interna**.   
+The filter is located at the path **Quality > Internal Origin Documents > Internal Origin Documents**.
 
-Il filtro dati consente di inserire nuovi *Documenti di origine interna* o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.   
+The data filter allows you to enter new *Internal Source Documents* or to search for existing ones to view, modify, or delete them.
 
-### ![](/img/neutral/common/search.png) Ricerca Documenti di origine interna
+### ![](/img/neutral/common/search.png) Search for Internal Origin Documents
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.   
+The form consists of a filter area and a results area. Once all desired filters are set, simply click the **Search** button to view the results within the results grid.
 
-### ![](/img/neutral/common/new.png) Inserimento Documenti di origine interna
+### ![](/img/neutral/common/new.png) Inserting Internal Origin Documents 
 
-Per poter inserire nuovi *Documenti di origine interna* è necessario premere il pulsante **Nuovo**.   
+To insert new *Internal Origin Documents*, you need to press the **New** button.
 
-### ![](/img/neutral/common/edit.png) Modifica o ![](/img/neutral/common/view.png) Visualizzazione Documenti di origine interna
+### ![](/img/neutral/common/edit.png) Modify or ![](/img/neutral/common/view.png) View Internal Origin Documents 
 
-Per aprire la gestione, della griglia di risultato, è necessario fare doppio click sulla riga di nostro interesse oppure, selezionando una o più righe, premere i pulsanti **Modifica** o **Visualizza**.   
+To open the management of the results grid, you must double-click on the row of interest or, by selecting one or more rows, press the **Modify** or **View** buttons.
 
-*Pulsanti specifici*: 
-    
-### ![](/img/neutral/common/duplicate.png) Duplica Documento di origine interna
+*Specific buttons*: 
 
-Il pulsante è abilitato solamente per i componenti delle *Funzioni aziendali* di *verifica/approvazione* e *redazione/emissione*.
-Per poter duplicare un *Documento di origine interna* esistente in un nuovo *Documento* è necessario cliccare nella griglia sul *Documento* da cui si desidera duplicare e premere il pulsante **Duplica**. Si può duplicare un solo *Documento* alla volta. Verrà visualizzata una richiesta di:   
-> **Categoria**: è il *Codice categoria documento di origine interna* del nuovo *Documento* (dato obbligatorio).   
-> **Codice**: è il *Codice* del nuovo *Documento* (dato obbligatorio).   
-> **Titolo**: è il *Titolo* del nuovo *Documento* (dato obbligatorio).   
+### ![](/img/neutral/common/duplicate.png) Duplicate Internal Origin Document 
 
-*Categoria* e *Titolo* sono proposti dal documento di origine; il *Codice* viene proposto se, alla *Categoria*, è associata una *Codifica automatica*.   
-Premere successivamente il pulsante **OK** o il pulsante **Cancel** se si desidera proseguire nell'attività di duplica o meno.   
-Il nuovo *Documento di origine interna* creato avrà *Edizione* e *Revisione* pari a *Zero* e lo stato di *In creazione*.   
-Al termine dell'elaborazione il nuovo *Documento di origine interna* viene visualizzato.
-    
-### Crea nuova revisione Documento di origine interna
+The button is enabled only for components of the *Business Functions* of *verification/approval* and *editing/issuing*.
+To duplicate an existing *Internal Origin Document* into a new *Document*, click on the *Document* you want to duplicate in the grid and press the **Duplicate** button. You can duplicate only one *Document* at a time. A prompt will appear:   
+> **Category**: the *Category code for the internal origin document* of the new *Document* (mandatory data).   
+> **Code**: the *Code* of the new *Document* (mandatory data).   
+> **Title**: the *Title* of the new *Document* (mandatory data).   
 
-Per poter creare una nuova *Revisione* ad un *Documento di origine interna* esistente è necessario cliccare nella griglia sul *Documento* in stato di *Emesso* da cui si desidera duplicare e premere il pulsante **Crea nuova revisione**. Si può creare una nuova *Revisione* per un solo *Documento* alla volta. Verrà visualizzata una richiesta di:   
-> **Motivo della revisione**: una breve descrizione del motivo che ha condotto alla revisione (dato obbligatorio).   
-> **Modifica su paragrafi**: un pro-memoria descrittivo sul riferimento al numero dei paragrafi variati.   
-> **Modifica su pagine**: un pro-memoria descrittivo sul riferimento al numero delle pagine variate.   
+*Category* and *Title* are proposed from the origin document; the *Code* is proposed if an *Automatic Encoding* is associated with the *Category*.   
+Then press the **OK** button or the **Cancel** button if you wish to continue with the duplication activity or not.   
+The newly created *Internal Origin Document* will have *Edition* and *Revision* equal to *Zero* and a status of *In creation*.   
+Once processed, the new *Internal Origin Document* will be displayed.
 
-Premere successivamente il pulsante **OK** o il pulsante **Cancel** se si desidera proseguire nell'attività di creazione o meno.   
-Viene creato nuovo *Documento di origine interna*, con tutte le informazioni del *Documento* originale ma con indice di *Revisione* incrementato e lo stato di *In revisione*. Il *Documento* originale rimane in vigore con lo stato di *Emesso*.   
-Al termine dell'elaborazione il nuovo *Documento di origine interna* viene visualizzato.
-    
-### Crea nuova edizione Documento di origine interna
+### Create New Revision for Internal Origin Document 
 
-Per poter creare una nuova *Edizione* ad un *Documento di origine interna* esistente è necessario cliccare nella griglia sul *Documento* in stato di *Emesso* da cui si desidera duplicare e premere il pulsante **Crea nuova edizione**. Si può creare una nuova *Edizione* per un solo *Documento* alla volta. Verrà visualizzata una richiesta di:   
-> **Motivo della revisione**: una breve descrizione del motivo che ha condotto alla revisione (dato obbligatorio).   
-> **Modifica su paragrafi**: un pro-memoria descrittivo sul riferimento al numero dei paragrafi variati.   
-> **Modifica su pagine**: un pro-memoria descrittivo sul riferimento al numero delle pagine variate.   
+To create a new *Revision* for an existing *Internal Origin Document*, you need to click on the *Document* in *Issued* status that you want to duplicate in the grid and press the **Create New Revision** button. You can create a new *Revision* for only one *Document* at a time. A prompt will appear:   
+> **Reason for revision**: a brief description of the reason that led to the revision (mandatory data).   
+> **Edit on paragraphs**: a descriptive reminder referencing the number of paragraphs changed.   
+> **Edit on pages**: a descriptive reminder referencing the number of pages changed.   
 
-Premere successivamente il pulsante **OK** o il pulsante **Cancel** se si desidera proseguire nell'attività di creazione o meno.   
-Viene creato nuovo *Documento di origine interna*, con tutte le informazioni del *Documento* originale ma con indice di *Edizione* incrementato e lo stato di *In revisione*. Il *Documento* originale rimane in vigore con lo stato di *Emesso*.   
-Al termine dell'elaborazione il nuovo *Documento di origine interna* viene visualizzato.
-    
-### Annulla Documento di origine interna
-Per poter annullare un *Documento di origine interna* esistente è necessario cliccare nella griglia sul *Documento* da cui si desidera eliminare e premere il pulsante **Annulla documento**. Si può *Annullare*" un solo *Documento* alla volta.   
-Premere successivamente il pulsante **Si** o il pulsante **No** se si desidera proseguire nell'attività di annullamento o meno.   
-    
-### Ripristina annullamento Documento di origine interna
-Per poter ripristinare un *Documento di origine interna* precedentemente *Annullato* è necessario cliccare nella griglia sul *Documento* in stato di *Annullato* da cui si desidera ripristinare e premere il pulsante **Ripristina annullamento**. Si può *Ripristinare*" un solo *Documento* alla volta.   
-Premere successivamente il pulsante **Si** o il pulsante **No** se si desidera proseguire nell'attività di ripristino o meno.   
+Then press the **OK** button or the **Cancel** button if you wish to continue with the creation activity or not.   
+A new *Internal Origin Document* will be created, including all information from the original *Document* but with an incremented *Revision* index and a status of *Under review*. The original *Document* remains in effect with a status of *Issued*.   
+Once processed, the new *Internal Origin Document* will be displayed.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+### Create New Edition for Internal Origin Document 
+
+To create a new *Edition* for an existing *Internal Origin Document*, you need to click on the *Document* in *Issued* status that you want to duplicate in the grid and press the **Create New Edition** button. You can create a new *Edition* for only one *Document* at a time. A prompt will appear:   
+> **Reason for revision**: a brief description of the reason that led to the revision (mandatory data).   
+> **Edit on paragraphs**: a descriptive reminder referencing the number of paragraphs changed.   
+> **Edit on pages**: a descriptive reminder referencing the number of pages changed.   
+
+Then press the **OK** button or the **Cancel** button if you wish to continue with the creation activity or not.   
+A new *Internal Origin Document* will be created, including all information from the original *Document* but with an incremented *Edition* index and a status of *Under review*. The original *Document* remains in effect with a status of *Issued*.   
+Once processed, the new *Internal Origin Document* will be displayed.
+
+### Cancel Internal Origin Document 
+To cancel an existing *Internal Origin Document*, you need to click on the *Document* you wish to remove in the grid and press the **Cancel Document** button. You can *Cancel* only one *Document* at a time.   
+Then press the **Yes** button or the **No** button if you wish to continue with the cancellation activity or not.
+
+### Restore Cancelled Internal Origin Document 
+To restore a previously *Cancelled* *Internal Origin Document*, you need to click on the *Document* in *Cancelled* status that you wish to restore in the grid and press the **Restore Cancellation** button. You can *Restore* only one *Document* at a time.   
+Then press the **Yes** button or the **No** button if you wish to continue with the restoration activity or not.
+
+For everything that is not detailed in this document regarding the common functionality of forms, please refer to the following link [Custom features, Buttons, and Fields](/docs/guide/common).
