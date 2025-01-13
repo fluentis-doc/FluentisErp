@@ -23,15 +23,16 @@ LINK:
 
 Campi presenti nella **testata della registrazione**, nell'ordine di caricamento:
 
-![](/img/it-it/finance-area/ledger-records/records/create-ledger-record/header-and-total-movements-description/image01.png)
 
  
 
-**Data di registrazione**: in una nuova registrazione questa viene impostata come data odierna di sistema, ma può essere spostata in avanti o indietro nel tempo fatti salvi l'ordinamento cronologico dei protocolli IVA e gli eventuali periodi stampati in definitivo e la presenza dei parametri. L'importanza di questa data è fondamentale in quanto non esiste la necessità di procedere ad un ‘Cambio esercizio': a partire dalla data di registrazione l'applicativo andrà a ricercare l'anno dei parametri di contabilità di riferimento (individuando all'interno di quale range di date esercizio si trovi) e da questo andrà a riprendere gli altri range di date di controllo (date competenza in linea e date periodo in linea). Questa data è quella base della stampa del libro giornale e degli estratti conto contabili. In caso sia premuto il pulsante di creazione di una ‘Nuova registrazione' da quella in gestione è possibile impostare i **parametri di inserimento** ![](/img/it-it/finance-area/ledger-records/records/create-ledger-record/header-and-total-movements-description/image02.png)  (nella ribbon bar) in modo che questo campo sia proposto anche in quella nuova;
+**Data di registrazione**: in una nuova registrazione questa viene impostata come data odierna di sistema, ma può essere spostata in avanti o indietro nel tempo fatti salvi l'ordinamento cronologico dei protocolli IVA e gli eventuali periodi stampati in definitivo e la presenza dei parametri. L'importanza di questa data è fondamentale in quanto non esiste la necessità di procedere ad un ‘Cambio esercizio': a partire dalla data di registrazione l'applicativo andrà a ricercare l'anno dei parametri di contabilità di riferimento (individuando all'interno di quale range di date esercizio si trovi) e da questo andrà a riprendere gli altri range di date di controllo (date competenza in linea e date periodo in linea). Questa data è quella base della stampa del libro giornale e degli estratti conto contabili. In caso sia premuto il pulsante di creazione di una ‘Nuova registrazione' da quella in gestione è possibile impostare i **parametri di inserimento**  (nella ribbon bar) in modo che questo campo sia proposto anche in quella nuova;
+
+**Data competenza**: è la data di riferimento per il bilancio di esercizio: normalmente è sempre uguale alla data registrazione, salvo che per le scritture di assestamento di bilancio e le relative chiusure/aperture conti, che possono essere datate anche giugno come data registrazione ma saranno come 31/12 – 01/01 come data competenza. Attenzione: questa data NON può essere utilizzata per rilevare le fatture da ricevere di fine anno. Si consiglia di lasciarla sempre uguale alla data registrazione: in contabilità ci sono stampe che lavorano per data registrazione, altre per data competenza, altre che danno libertà all'utente di filtrare per entrambe, chiaramente si otterrebbero risultati differenti a seconda dei filtri applicati. 
+
+Nei **parametri di inserimento** è possibile impostare che questa data sia allineata automaticamente rispetto alla data registrazione;
 
 **Numero di registrazione**: è un contatore giornaliero delle registrazioni; l'univocità della registrazione viene determinata sempre dalla combinazione ‘Data registrazione'+ ‘Numero registrazione'. La scelta di un contatore giornaliero è stata effettuata per dare massima libertà all'utente di registrare su più date. Questo numero di registrazione viene gestito automaticamente dalla procedura: in particolare, al momento del salvataggio viene attribuito il numero definitivo corretto, recuperando eventualmente un buco di numerazione alla data registrazione relativa. Cancellare una registrazione alla data X, infatti, lascerà un buco nella numerazione di questa data: solo intervenendo in inserimento/modifica di una delle registrazioni di questa data il numero sarà recuperato. In caso di registrazione provvisoria questo numero andrà in progressione negativa a partire dal numero -1000, in modo da rendere ben visibile all'utente che si tratta di una registrazione di questo stato: i report e le ricerche contabili sono impostate per filtrare di default solo sulle registrazioni definitive;
-
-**Data competenza**: è la data di riferimento per il bilancio di esercizio: normalmente è sempre uguale alla data registrazione, salvo che per le scritture di assestamento di bilancio e le relative chiusure/aperture conti, che possono essere datate anche giugno come data registrazione ma saranno come 31/12 – 01/01 come data competenza. Attenzione: questa data NON può essere utilizzata per rilevare le fatture da ricevere di fine anno. Si consiglia di lasciarla sempre uguale alla data registrazione: in contabilità ci sono stampe che lavorano per data registrazione, altre per data competenza, altre che danno libertà all'utente di filtrare per entrambe, chiaramente si otterrebbero risultati differenti a seconda dei filtri applicati. Nei **parametri di inserimento** è possibile impostare che questa data sia allineata automaticamente rispetto alla data registrazione;
 
 **Sottoconto intestatario della registrazione**: questo campo è obbligatorio solo per registrazioni IVA, in quanto è legata all'anagrafica cliente/fornitore intestataria del documento registrato. Questo campo, normalmente, non va compilato in caso di registrazioni di pagamento/incasso, in quanto normalmente nella stessa registrazione si effettuano N pagamenti/incassi su soggetti differenti e viene utilizzato come filtro delle partite aperte il campo presente nella scheda ‘Pagamenti'. In caso sia premuto il pulsante di creazione di una ‘Nuova registrazione' da quella in gestione è possibile impostare i **parametri di inserimento** in modo che questo campo sia proposto anche in quella nuova. La causale contabile, infine, può prevedere un  **[controllo di coerenza](/docs/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates/parameters)** tra il tipo conto inserito in questo punto e quanto previsto in causale; 
 
@@ -41,7 +42,7 @@ Campi presenti nella **testata della registrazione**, nell'ordine di caricamento
 
 **Protocollo IVA**: è un campo numerico che viene gestito automaticamente dalla procedura per ogni registro: all'apertura della maschera sarà proposto il max protocollo + 1 per il registro impostato, poi al salvataggio verrà confermato o meno a seconda del caso che siano stati effettuati altri salvataggi per quel registro o vi siano protocolli IVA da recuperare. 
 
-Il recupero protocolli cambia a seconda che nella causale sia inserito o meno il blocco del salvataggio con numerazione non progressiva (trattasi di un controllo di coerenza tra data registrazione e numero di protocollo), con il blocco attivo sarà recuperato un protocollo libero solamente se la data registrazione è coerente, senza il blocco sarà proposto anche un protocollo non valido per quella data, con i relativi messaggi di avvertimento all'utente). 
+Il recupero protocolli cambia a seconda che nella causale sia inserito o meno il blocco del salvataggio con numerazione non progressiva (trattasi di un controllo di coerenza tra data registrazione e numero di protocollo), con il blocco attivo sarà recuperato un protocollo libero solamente se la data registrazione è coerente, senza il blocco sarà proposto anche un protocollo non valido per quella data, con i relativi messaggi di avvertimento all'utente. 
 
 Il campo del protocollo viene disabilitato in caso di registrazione provvisoria;
 
@@ -91,30 +92,23 @@ In particolare si segnala il comando **Parametri di inserimento**
 
 ![](/img/it-it/finance-area/ledger-records/records/create-ledger-record/header-and-total-movements-description/image03.png)
 
- 
+ Richiama i parametri di inserimento della prima nota. 
 
+- Sottconto (Nessuno / Ultimo introdotto): riferito al sottoconto intestatario della registrazione inserito in testata.
 
+- Data competenza economica: presente nella griglia del registro IVA e riportata in automatico in quella del Libro giornale, può essere proposta come giornaliero (pari alla data registrazione sia per "da data" sia per "a data"), fine esercizio ("a data" sarà impostato 31/12/XXXX), e nessuna per conti di tipo servizi (dove sarà lasciata in bianco se il conto di contropartita utilizzato è di tipo "da rettificare" ovvero utile per il calcolo dell'assestamento, al fine di obbligare l'utente a definire il range di date)
 
-| Funzione | Significato |
-| --- | --- |
-| Salva | Pulsante per salvare la registrazione. |
-| Nuova registrazione | Pulsante per creare una nuova registrazione. |
-| Parametri di inserimento | Richiama i parametri di inserimento della prima nota. Di seguito alcune precisazioni:- Sottconto (Nessuno / Ultimo introdotto) riferito al sottoconto intestatario della registrazione inserito in testata.- Data competenza economica: presente nella griglia del registro IVA e riportata in automatico in quella del Libro giornale, può essere proposta come giornaliero (pari alla data registrazione sia per "da data" sia per "a data"), fine esercizio ("a data" sarà impostato 31/12/XXXX), e nessuna per conti di tipo servizi (dove sarà lasciata in bianco se il conto di contropartita utilizzato è di tipo "da rettificare" ovvero utile per il calcolo dell'assestamento, al fine di obbligare l'utente a definire il range di date)- Avvisa sbilancio in valuta: controlla se anche la colonna 'Importo in valuta' nel Libro Giornale bilancia (anche se rappresentata su un' unica colonna il programma conosce la sezione del movimento);- Avvisa data cambio: poiché il cambio proposto in automatico nella registrazione è l'ultimo cambio inserito nella tabella "cambi valute", verifica che la data del cambio in tabella "cambi valute" sia uguale a data registrazione |
-| Apri anagrafica | Pulsante per richiamare, la gestione anagrafica del sottoconto selezionato, o in assenza, la ricerca di un'altra anagrafica. |
-|  |  |
-
-
-
-| Funzione | Significato |
-| --- | --- |
-|  [Document Manager](/docs/guide/common/operations-with-data/document-manager)  | Pulsante per il collegamento alla gestione documentale. |
-
+- Avvisa sbilancio in valuta: controlla se anche la colonna 'Importo in valuta' nel Libro Giornale bilancia (anche se rappresentata su un' unica colonna il programma conosce la sezione del movimento);
+ 
+- Avvisa data cambio: poiché il cambio proposto in automatico nella registrazione è l'ultimo cambio inserito nella tabella "cambi valute", verifica che la data del cambio in tabella "cambi valute" sia uguale a data registrazione
 
 ---
 
 ### VIDEO TUTORIALS
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/lOWGrEg-w6A" title="YouTube video player" frameborder="0" allowfullscreen= "true"></iframe>
+:::important Vedi Anche
+[**VIDEO TUTORIALS SULLE REGISTRAZIONI CONTABILI**](/docs/video/finance/intro.md)
+:::
 
 
 
