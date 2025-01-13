@@ -1,157 +1,157 @@
 ---
-title: Documento di origine esterna
+title: External Origin Document 
 sidebar_position: 2
 ---
 
-La gestione si trova sul percorso **Qualità > Documenti di origine esterna > Nuovo Documento di origine esterna** oppure è possibile eseguirla dalla **Ricerca Documenti di origine esterna**.   
+The management can be found in the path **Quality > External Origin Documents > New External Origin Document** or it can be executed from the **External Origin Document Search**.   
 
 
-:::important A cosa serve
-La gestione dei documenti di origine esterna permette: la catalogazione, la gestione delle edizioni/revisioni e la loro distribuzione (sia in formato cartaceo che elettronico) alle funzioni aziendali che sono interessate nel visionare tali documenti.   
+:::important Purpose
+The management of external origin documents allows for: cataloging, management of editions/revisions, and their distribution (both in paper and electronic format) to the business functions that are interested in viewing such documents.   
 
 
-Elenchiamo alcuni esempi di documenti di origine esterna che possono essere catalogati:   
-> *Manuali d'uso e manutenzione macchinari e impianti*   
-> *Normative*   
-> *Leggi*   
-> *Rivista specifiche*   
+Here are some examples of external origin documents that can be cataloged:   
+> *User and maintenance manuals for machinery and equipment*   
+> *Regulations*   
+> *Laws*   
+> *Specifications magazine*   
 
-Le informazioni di dove siano depositati gli originali e la possibilità di allegare loro copie elettroniche, permette una loro immediata rintracciabilità e consultazione con un semplice click del mouse.
+The information on where the originals are deposited and the possibility of attaching electronic copies allows for immediate traceability and consultation with a simple click of the mouse.
 
-A standard sono disponibili le reportistiche di:   
-> **Documento interno**: anteprima del documento allegato nel tabulatore *Allegato*.   
-> **Documenti allegati al documentale**: anteprima dei documenti allegati alla *Gestione Documentale*.   
-:::
-
-
-## Pulsanti di comando
+Standard reports available:   
+> **Internal Document**: preview of the attached document in the *Attachment* tab.   
+> **Documents attached to the document management**: preview of the documents attached to the *Document Management*.   
+::: 
 
 
-### ![](/img/neutral/common/save.png) Salva
-
-Premendo questo pulsante si memorizzano tutte le informazioni modificate del *Documento di origine esterna* visualizzato.   
+## Command Buttons
 
 
-### ![](/img/neutral/common/duplicate.png) Duplica
+### ![](/img/neutral/common/save.png) Save 
 
-E' possibile duplicare il *Documento* visualizzato in un nuovo *Documento*. E' sufficiente premere il pulsante **Duplica**.   
-Viene visualizzata una richiesta di:
-> **Categoria**: è la *Categoria documento di origine esterna* del nuovo *Documento* (dato obbligatorio).   
-> **Codice**: è il Codice del nuovo *Documento* (dato obbligatorio).   
-> **Edizione/Revisione**: sono l'Edizione e la Revisione del nuovo *Documento*.   
-> **Titolo**: è il *Titolo* del *Documento* (dato obbligatorio).   
-
-Premere successivamente il pulsante **OK** o il pulsante **Cancel** se si desidera proseguire nell'attività di duplica o meno.   
-Al termine dell'elaborazione il nuovo *Documenti di origine esterna* viene visualizzato.
+Pressing this button saves all the modified information of the *External Origin Document* displayed.   
 
 
-### ![](/img/neutral/common/bill.png) Distribuzione
+### ![](/img/neutral/common/duplicate.png) Duplicate 
 
-Il pulsante avvia la procedura di *Distribuzione* del *Documento*.   
-Viene visualizzata una richiesta di filtro di chi, tra i destinatari presenti nella *Lista di distribuzione*, riceverà copia del *Documento*:   
-> **Tipo:**   
->> **Cartacei**: distribuzione a chi richiede copia cartacea;   
->> **Elettronici**: distribuzione a chi richiede email;   
+It is possible to duplicate the displayed *Document* into a new *Document*. Just press the **Duplicate** button.   
+A request will be displayed for:
+> **Category**: this is the *External Origin Document category* for the new *Document* (mandatory field).   
+> **Code**: this is the code of the new *Document* (mandatory field).   
+> **Edition/Revision**: these are the edition and revision of the new *Document*.   
+> **Title**: this is the *Title* of the *Document* (mandatory field).   
+
+Press the **OK** button or the **Cancel** button if you want to continue with the duplication activity or not.   
+At the end of the processing, the new *External Origin Document* will be displayed.
+
+
+### ![](/img/neutral/common/bill.png) Distribution 
+
+This button starts the *Distribution* procedure of the *Document*.   
+A filter request will be displayed for which of the recipients in the *Distribution List* will receive a copy of the *Document*:   
+> **Type:**   
+>> **Paper**: distribution to those who request a paper copy;   
+>> **Electronic**: distribution to those who request email;   
 >
-> **Stato:**   
->> **Già consegnati**: distribuzione a chi ha già ricevuto il documento;   
->> **Ancora da consegnare**: distribuzione a chi non ha ancora ricevuto il documento;   
+> **Status:**   
+>> **Already delivered**: distribution to those who have already received the document;   
+>> **Still to be delivered**: distribution to those who have not yet received the document;   
 >
-> **Destinatario:**
->> **Interni**: distribuzione al solo personale interno (*Funzioni aziendali* e/o *Dipendenti*);   
->> **Clienti/Fornitori**: distribuzione a *Clienti/Fornitori*.
+> **Recipient:**
+>> **Internal**: distribution to internal personnel only (*Business functions* and/or *Employees*);   
+>> **Customers/Suppliers**: distribution to *Customers/Suppliers*.   
 
-Premere successivamente il pulsante **OK** o il pulsante **Cancel** se si desidera proseguire nell'attività di distribuzione o meno.   
-
-
-## Gestione dati
+Press the **OK** button or the **Cancel** button if you want to continue with the distribution activity or not.   
 
 
-### Dati di testata
+## Data Management
 
-Le informazioni gestibili sono:   
-> **Categoria**: è la *Categoria documento di origine esterna* del *Documento* (dato obbligatorio).   
-> Inserendo la categoria, la *Lista di distribuzione* e i dati di *Accesso consentito alle funzioni*, vengono ereditati nel *Documento*.   
+
+### Header Data 
+
+The manageable information includes:   
+> **Category**: this is the *External Origin Document category* of the *Document* (mandatory field).   
+> When entering the category, the *Distribution List* and the data for *Access allowed to the functions* are inherited in the *Document*.   
 >
-> **Codice**: è il Codice del *Documento* (dato obbligatorio).   
+> **Code**: this is the code of the *Document* (mandatory field).   
 >
-> **Edizione/Revisione**: sono l'Edizione e la Revisione del *Documento*; le informazioni sono libere in quanto devono essere riportate le eventuali informazioni descritte nei 
-documenti non generati dall'azienda.   
+> **Edition/Revision**: these are the edition and revision of the *Document*; the information is free as it must include any details described in documents not generated by the company.   
 >
-> **Titolo**: è il *Titolo* del *Documento* (dato obbligatorio).   
+
+> **Title**: this is the *Title* of the *Document* (mandatory field).   
 >
-> **Provenienza**: annotazioni libere sull'argomento.   
-> **Data arrivo**: è la data di arrivo del *Documento*, inserendo un nuovo *Documento* viene proposta pari alla data odierna.   
-> **Valido dal/al**: contiene una eventuale data di inizio e fine validità del *Documento*.   
-> **Verifica validità**: indica che il *Documento* è stato verificato.   
-> **Data verifica**: indica la data di quando è stato verificato il *Documento*.   
+> **Origin**: free notes on the subject.   
+> **Arrival date**: this is the arrival date of the *Document*, entering a new *Document* proposes today’s date.   
+> **Valid from/to**: contains any start and end validity dates of the *Document*.   
+> **Verify validity**: indicates that the *Document* has been verified.   
+> **Verification date**: indicates the date when the *Document* was verified.   
 >
-> **Archivio**: è il *Magazzino* fisico di dove abitualmente viene archiviato il *Documento* (esempio: Ufficio tecnico, Direzione, ...).   
-> Il dato è ereditato dalla *Categoria documento di origine esterna* ed è modificabile.   
+> **Archive**: this is the physical *Warehouse* where the *Document* is usually archived (example: Technical office, Management, ...).   
+> This data is inherited from the *External Origin Document category* and is modifiable.   
 >
-> **Ubicazione**: è l'*Ubicazione* fisica di dove abitualmente viene archiviato il *Documento* (esempio: Armadio, Scaffale, Cassetto, , ...).   
-> Il dato è ereditato dalla *Categoria documento di origine esterna* ed è modificabile.   
+> **Location**: this is the physical *Location* where the *Document* is usually archived (example: Cabinet, Shelf, Drawer, ...).   
+> This data is inherited from the *External Origin Document category* and is modifiable.   
 >
-> **Ubicazione descrittiva**: è l'*Ubicazione* fisica in caso di non codifica di *Archivio* e/o *Ubicazione*.   
-> Il dato è ereditato dalla *Categoria documento di origine esterna* ed è modificabile.   
+> **Descriptive location**: this is the physical *Location* in case of no coding for *Archive* and/or *Location*.   
+> This data is inherited from the *External Origin Document category* and is modifiable.   
 >
-> **Funzione responsabile**: è la *Funzione aziendale* responsabile del *Documento*. 
-> Il dato è ereditato dalla *Categoria documento di origine esterna* ed è modificabile.   
+> **Responsible function**: this is the *Business function* responsible for the *Document*. 
+> This data is inherited from the *External Origin Document category* and is modifiable.   
 >
-> **Categorie di interesse**: annotazioni libere sull'argomento.   
-> **Note**: annotazioni libere.
+> **Categories of interest**: free notes on the subject.   
+> **Notes (Note)**: free notes.
 
 
-### Lista di distribuzione
+### Distribution List 
 
-In questo elenco è possibile associare: *Funzioni aziendali*, *Dipendenti*, *Clienti/Fornitori* e *Contatti* che abitualmente ricevono copia del *Documento* ed indicare le metodologie abituali di ricezione del documento.   
-Alla creazione del *Documento* la *Lista di distribuzione* viene ereditata dalla *Categoria documento di origine esterna* e le informazioni sono modificabili.   
-L'elenco si compone delle seguenti informazioni:   
-> **Funzione aziendale**   
->> **Codice**: è il codice della *Funzione aziendale* destinataria.   
->> **Descrizione**: è la descrizione della *Funzione aziendale* destinataria.   
+In this list, you can associate: *Business functions*, *Employees*, *Customers/Suppliers*, and *Contacts* that usually receive a copy of the *Document* and indicate the usual methods of receiving the document.   
+When creating the *Document*, the *Distribution List* is inherited from the *External Origin Document category* and the information is modifiable.   
+The list consists of the following information:   
+> **Business function**   
+>> **Code**: this is the code of the recipient *Business function*.   
+>> **Description**: this is the description of the recipient *Business function*.   
 >
-> **Dipendente**   
->> **Codice**: è il codice del *dipendente* destinatario.   
->> **Cognome**: è il cognome del *dipendente* destinatario.   
->> **Nome**: è il nome del *    dipendente* destinatario.   
+> **Employee**   
+>> **Code**: this is the code of the recipient *employee (dipendente)*.   
+>> **Surname**: this is the surname of the recipient *employee*.   
+>> **Name**: this is the name of the recipient *employee*.   
 >
-> **Cliente/Fornitore**   
->> **Descrizione**: è la ragione sociale del *Cliente/Fornitore* destinatario.   
+> **Customer/Supplier**   
+>> **Description**: this is the company name of the recipient *Customer/Supplier*.   
 >
-> **Contatto**   
->> **Codice**: è il codice del *Contatto* destinatario.   
->> **Descrizione**: è la descrizione del *Contatto* destinatario.   
+> **Contact**   
+>> **Code**: this is the code of the recipient *Contact*.   
+>> **Description**: this is the description of the recipient *Contact*.   
 >
-> **Altro destinatario**   
->> **Descrizione**: è la libera descrizione di un destinatario non codificato.   
+> **Other recipient**   
+>> **Description**: this is the free description of an uncoded recipient.   
 >
-> **Dati per la consegna**   
->> **Cartacea**: indica che al momento della distribuzione il soggetto desidera ricevere copia *Cartacea* del documento o in allegato tramite *Email*.   
->> **Metodo di consegna**: indica la metodologia di consegna abituale del *Documento*.   
->> **Email**: indica una email di destinazione, se non codificata nell'anagrafica del destinatario.   
->> **Numero di copie**: indica il numero di copie cartacee che il destinatario desidera ricevere.   
->> **Note**: annotazioni libere.   
+> **Data for delivery**   
+>> **Paper**: indicates that at the time of distribution, the subject wishes to receive a *Paper* copy of the document or as an attachment via *Email*.   
+>> **Delivery method**: indicates the usual delivery method of the *Document*.   
+>> **Email**: indicates a destination email if not coded in the recipient's register.   
+>> **Number of copies**: indicates the number of paper copies the recipient wishes to receive.   
+>> **Notes**: free notes.   
 
 
-### Allegati
-In questo elenco è possibile inserire e consultare eventuali allegati, è possibile visualizzare l'anteprima ed effettuare operazioni sull'immagine.   
-Questi allegati sono separati dal Documentale di Fluentis, che è sempre presente ed utilizzabile.   
+### Attachments
+In this list, you can enter and consult any attachments, view the preview, and perform operations on the image.   
+These attachments are separate from the Fluentis Document Management, which is always present and usable.   
 
 
-### Accesso consentito alle funzioni
+### Access Allowed to the Functions
 
-In questa elenco è possibile inserire le *Funzioni aziendali* a cui dare i diritti di accesso al *Documento*.   
-Se non vengono inserite righe in questa tabella, allora l'accesso è consentito a tutti.   
-Alla creazione del *Documento* la lista delle *Funzioni aziendali* viene ereditata dalla *Categoria documento di origine esterna* e le informazioni sono modificabili.   
-L'elenco si compone delle seguenti informazioni:   
-> **Funzione**: è il codice della *Funzione aziendale*.   
-> **Descrizione funzione**: è la descrizione della *Funzione aziendale*.   
-> **Note**: annotazioni libere.   
-
-
-### Extra data
-E' possibile inserire degli [Extra Data](/docs/configurations/utility/extra-data/extradata/new-extradata-simple) per ogni *Documento di origine esterna*.   
+In this list, you can enter the *Business functions* to grant access rights to the *Document*.   
+If no rows are entered in this table, then access is granted to everyone.   
+When creating the *Document*, the list of *Business functions* is inherited from the *External Origin Document category* and the information is modifiable.   
+The list consists of the following information:   
+> **Function**: this is the code of the *Business function*.   
+> **Function description**: this is the description of the *Business function*.   
+> **Notes**: free notes.   
 
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+### Extra Data
+It is possible to enter [Extra Data](/docs/configurations/utility/extra-data/extradata/new-extradata-simple) for each *External Origin Document*.   
+
+
+For everything not detailed in this document regarding the common operation of forms, please refer to the following link [Custom featuress, buttons, and fields](/docs/guide/common).
