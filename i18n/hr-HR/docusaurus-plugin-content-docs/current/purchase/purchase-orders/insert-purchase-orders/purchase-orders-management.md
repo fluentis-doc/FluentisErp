@@ -6,7 +6,7 @@ sidebar_position: 1
 Ovaj obrazac otvara se putem:    
 -  putanje **Nabava > Narudžba od dobavljača > Kreiraj narudžbu od dobavljača**  
 ili putem  
--  gumba **Novo** koji se nalazi u formi [Pretraživanje narudžbe od dobavljača](/docs/purchase/purchase-orders/search-purchase-orders).
+-  gumba **Novo** koji se nalazi u formi [Pretraživanje narudžbe od dobavljača](/docs/purchase/purchase-orders/insert-purchase-orders/search-purchase-orders).
 
 Da biste kreirali narudžbu, korisnik mora unijeti obavezna polja:
 
@@ -23,6 +23,6 @@ Obrazac sadrži niz kartica:
 
 -  [Artikli] 
 
--  [Sažeci](/docs/purchase/purchase-orders/insert-purchase-orders/summaries) 
+-  [Sažeci]
 
 Za sve što nije pojedinostima navedeno u ovom dokumentu o zajedničkom radu obrazaca, uputite se na sljedeću poveznicu: [Zajedničke značajke, gumbe i polja](/docs/guide/common).
