@@ -1,67 +1,67 @@
 ---
-title: Check-list
+title: Check-list 
 sidebar_position: 3
 ---
 
-La gestione si trova sul percorso **Qualità > Documenti di origine interna > Check-list**
+The management can be found on the path **Quality > Internal Origin Documents > Check-list**
 
 
-:::important A cosa serve
-Le *Check-list* sono un raggruppamento di domande/attività utilizzate per effettuare valutazioni a fornitori o audit interni.   
+:::important What it is for
+*Check-lists* are a grouping of questions/activities used to conduct evaluations of suppliers or internal audits.   
 :::
 
-La gestione consente di inserire nuove *Check-list* o di ricercare quelle già esistenti per visualizzarle, modificarle oppure cancellarle.   
+The management allows you to enter new *Check-lists* or search for existing ones to view, modify, or delete them.
 
 
-## Pulsanti di comando
+## Command Buttons
 
 
-### ![](/img/neutral/common/search.png) Ricerca Check-list
+### ![](/img/neutral/common/search.png) Search Check-list
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.   
-
-
-### ![](/img/neutral/common/new.png) Inserimento Check-list
-
-Per poter inserire nuove *Check-list* è necessario premere il pulsante **Nuovo**.   
+The form consists of a filter area and a results area. Once all desired filters are set, simply click the **Search** button to display the results within the results grid.
 
 
-### ![](/img/neutral/common/edit.png) Modifica o ![](/img/neutral/common/view.png) Visualizzazione Check-list
+### ![](/img/neutral/common/new.png) Insert Check-list
 
-Per aprire la gestione, della griglia di risultato, è necessario fare doppio click sulla riga di nostro interesse oppure, selezionando una o più righe, premere i pulsanti **Modifica** o **Visualizza**.   
+To insert new *Check-lists*, you need to press the **New** button.
 
 
-## Gestione dati
+### ![](/img/neutral/common/edit.png) Modify or ![](/img/neutral/common/view.png) View Check-list
+
+To open the management of the results grid, you can double-click on the row of interest or, by selecting one or more rows, press the **Modify** or **View** buttons.
+
+
+## Data Management
 
 
 ### Check-list
 
-E' l'elenco dove vengono inserite le informazioni principali della *Check-list*.   
-L'elenco si compone delle seguenti informazioni:   
-> **Codice**: è il codice della *Check-list*.   
-> **Descrizione**: è la descrizione della *Check-list*.   
-> **Area**: è l'*Area* di interesse della *Check-list*.   
-> **Settore**: è il *Settore* di interesse della *Check-list*.   
-> **Attiva**: indica se la *Check-list* è ancora valida e utilizzabile.   
-> **Normative di riferimento**: annotazioni libere sull'argomento.   
-> **Documenti da consultare**: annotazioni libere sull'argomento.   
-> **Funzioni da coinvolgere**: annotazioni libere sull'argomento.   
-> **Note**: annotazioni libere.
+It is the list where the main information of the *Check-list* is entered.   
+The list consists of the following information:   
+> **Code**: is the code of the *Check-list*.   
+> **Description**: is the description of the *Check-list*.   
+> **Area**: is the area of interest of the *Check-list*.   
+> **Sector**: is the sector of interest of the *Check-list*.   
+> **Active**: indicates whether the *Check-list* is still valid and usable.   
+> **Reference standards**: free annotations on the subject.   
+> **Documents to be consulted**: free annotations on the subject.   
+> **Functions to be involved**: free annotations on the subject.   
+> **Notes**: free annotations.
 
-### Domande
+### Questions
 
-E' l'elenco delle domande/attività da utilizzare/effettuare per le valutazioni a fornitori o audit interni.   
-L'elenco si compone delle seguenti informazioni:   
-> **Sequenza**: è la sequenza di attuazione delle *domande/attività*.   
-> **Domanda**: annotazioni libere sull'argomento.   
-> **Livello di valutazione**: è il *Livello di valutazione competenza* richiesto per la valutazione.   
-> **Attiva**: indica se la *domanda/attività* è ancora valida e utilizzabile.   
-> **Data inizio**: è la data dalla quale la *domanda/attività* è valida e utilizzabile.   
-> **Data fine**: è la data dalla quale la *domanda/attività* cessa di essere valida e utilizzabile.   
-> **Note**: annotazioni libere.
+It is the list of questions/activities to be used/performed for evaluations of suppliers or internal audits.   
+The list consists of the following information:   
+> **Sequence**: is the sequence of implementation of the *questions/activities*.   
+> **Question**: free annotations on the subject.   
+> **Level of evaluation**: is the required *Competence evaluation level* for the evaluation.   
+> **Active**: indicates whether the *question/activity* is still valid and usable.   
+> **Start date**: is the date from which the *question/activity* is valid and usable.   
+> **End date**: is the date from which the *question/activity* ceases to be valid and usable.   
+> **Notes**: free annotations.
 
-### Extra data
+### Extra Data
 
-E' possibile inserire degli [Extra Data](/docs/configurations/utility/extra-data/extradata/search-extradata) generali per la *Check-list*.   
+It is possible to enter general [Extra Data](/docs/configurations/utility/extra-data/extradata/search-extradata) for the *Check-list*.   
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+For everything that is not detailed in this document about the common operation of forms, please refer to the following link [Custom features, buttons, and fields](/docs/guide/common).
