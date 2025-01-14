@@ -14,9 +14,3 @@ Pentru a insera un nou ordin furnizor trebuie să fie inserate:
 **Data inserării**: este propusă automat data curentă, dar poate fi modificată manual respectând regula progresiei dintre dată şi număr.
 
 După inserarea tipului, datei şi numărului se activează câmpul pentru inserarea furnizorului.
-
-
-
-
-
-
