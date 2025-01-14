@@ -42,6 +42,18 @@ Per creare l'ordine, l'utente deve inserire i campi obbligatori:
  
 Continuați cu inserarea următoarelor date [manual](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection#inserimento-manuale) sau cu ajutorul [help-ului](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection#inserimento-con-il-help-di-campo).
 
+Pentru a insera un nou ordin furnizor trebuie să fie inserate:
+
+**Tip ordin**: determină intervalul de numerotare al documentului care se inserează şi propune automat numărul ordinului furnizor pe baza datei inserate şi a ultimului număr inserat. În plus, dacă în tipul ordinului este setat  flag-ul Autoexecutare este propusă data confirmării ordinului egală cu data inserării ordinului.
+
+**An**: este inserat automat anul în curs, dar poate fi modificat manual respectând regula progresiei dintre dată şi număr.
+
+**Număr**: este propus automat pe baza tipului, dar poate fi modificat manual respectând regula progresiei dintre dată şi număr.
+
+**Data inserării**: este propusă automat data curentă, dar poate fi modificată manual respectând regula progresiei dintre dată şi număr.
+
+După inserarea tipului, datei şi numărului se activează câmpul pentru inserarea furnizorului.
+
 :::note Important
 Dacă documentul este *creat automat*, de exemplu din filtrul de căutare al [**Ordinelor clienți**](/docs/sales/sales-orders/search-sales-orders), din procedura de [**Creare automată ordine**](/docs/purchase/purchase-orders/procedures/create-purchase-orders-from-purchase-requests) sau din procedura de [**Creare ordin furnizor din ofertă furnizor**](/docs/purchase/offer-request/procedures/order-creation), aceste date sunt preluate din *documentul de origine* din care a fost generat. 
 :::
