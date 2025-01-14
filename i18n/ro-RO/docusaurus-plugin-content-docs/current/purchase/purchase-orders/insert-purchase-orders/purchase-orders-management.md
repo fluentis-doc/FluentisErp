@@ -1,31 +1,29 @@
 ---
-title: Nuovo ordine fornitore
+title: Nou ordin furnizor (Nuovo ordine fornitore)
 sidebar_position: 2
 ---
  
-La form si trova nell'area **Acquisti > Ordini fornitori** e contiene i dettagli relativi ai prodotti o servizi da acquistare, inclusi quantità, prezzi, termini di consegna, condizioni di pagamento e altre specifiche contrattuali.
+Form-ul se află în **Achiziții > Ordine furnizori** și conține detalii referitoare la produsele sau serviciile de achiziționat, inclusiv cantități, prețuri, termeni de livrare, condiții de plată și alte specificații contractuale.
  
-Dalla form di ricerca degli ordini è possibile creare un nuovo documento mediante il pulsante **Nuovo** oppure aprirne uno esistente per visualizzarlo e/o modificarlo.
+Din form-ul de căutare al ordinelor este posibil să creați un nou document folosind butonul **Nou** sau să deschideți unul existent pentru a-l vizualiza și/sau modifica.
  
-## *Come creare un ordine fornitore*
-
-
+## *Cum să creați o comandă furnizor*
+ 
 <details>
  
-<summary>Clicca per i passaggi fondamentali</summary>
+<summary>Click pentru pașii fundamentali</summary>
  
-1. **Inserisci i dati obbligatori**: *Tipo Ordine* e *Fornitore*. *Anno*, *Numero* e *Data Inserimento* saranno proposti in automatico.  
+1. **Introduceți datele obligatorii**: *Tip ordin* și *Furnizor*. *An*, *Număr* și *Dată inserare* vor fi propuse automat.  
  
-2. **Inserisci o modifica i dati facoltativi** della testata: come date di consegna, eventuali *sconti*, la *destinazione*, ecc.  
+2. **Introduceți sau modificați datele opționale** ale antetului: cum ar fi datele de livrare, eventualele *discounturi*, *destinația*, etc.  
  
-3. **Inserisci gli Articoli**: mediante doppio click nel campo *Codice articolo* si apre l’help articoli che permette di cercare e selezionare un articolo esistente. Tutti gli altri dati della riga, come *unità di misura*, *quantità*, *prezzo*, saranno proposti in automatico, ma possono essere modificati.
-In alternativa è possibile selezionare come *Tipo riga* un *Articolo non codificato* e inserire manualmente i dati successivi.
+3. **Introduceți articolele**: cu dublu clic pe câmpul *Cod articol* se deschide *Help articole*, care permite căutarea și selectarea unui articol existent. Toate celelalte date ale liniei, cum ar fi *unitate de măsură*, *cantitate*, *preț*, vor fi propuse automat, dar pot fi modificate. Alternativ, este posibil să selectați ca *Tip linie* un *Articol necodificat* și să introduceți manual datele ulterioare.
  
-4. **Inserisci eventuali sconti o altre informazioni aggiuntive** nei tab *Sconti/listini* e *Dati articolo*
+4. **Introduceți eventuale discounturi sau alte informații suplimentare** în tab-urile *Discounturi/Oferte de preț* și *Date articol*
  
-5. **Controlla la sezione dei Riepiloghi** ed inserisci eventuali spese o sconti finali.  
+5. **Verificați secțiunea Rapoarte** și introduceți eventuale cheltuieli sau reduceri finale.  
  
-6. Una volta controllato e confermato l’ordine, **inserisci una *Data conferma* e attiva il flag *Stampato* in testata** in modo da rendere l’ordine disponibile per le procedure di evasione.
+6. După ce ați verificat și confirmat ordinul, inserați *Data confirmării* și activați opțiunea *Listat* în antet pentru ca ordinul să fie disponibil pentru procedurile de execuție.
  
 </details>
  
@@ -34,30 +32,30 @@ In alternativa è possibile selezionare come *Tipo riga* un *Articolo non codifi
  
 Per creare l'ordine, l'utente deve inserire i campi obbligatori:
  
-- **Tipo ordine**: predefinito in *Configurazione > Tabelle > Acquisti > Tipi ordini fornitori*. Questo campo determina il range di numerazione del documento che si sta inserendo e propone automaticamente il numero ordine fornitore in base alla data inserimento e all'ultimo numero inserito. Inoltre, se nel *Tipo ordine* è settato il flag [Conferma ordine automatica](/docs/configurations/tables/purchase/purchase-orders-type), viene proposta la data conferma ordine uguale alla data inserimento ordine;  
-- **Anno**: viene inserito automaticamente l'anno in corso, ma può essere modificato manualmente sempre rispettando la regola di progressione tra data e numero;  
-- **Numero**: viene proposto automaticamente in base al tipo, ma può essere modificato manualmente sempre rispettando la regola di progressione tra data e numero;  
-- **Data inserimento**: viene proposta automaticamente la data corrente, ma può essere modificata manualmente sempre rispettando la regola di progressione tra data e numero;  
-- **Fornitore**: può essere inserito usando l'[help di campo](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection#inserimento-con-il-help-di-campo) oppure [manualmente](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection#inserimento-manuale).
+- **Tip ordin**: predefinit în *Configurare > Tabele > Achiziții > Tipuri ordine furnizori*. determină intervalul de numerotare al documentului care se inserează şi propune automat numărul ordinului furnizor pe baza datei inserate şi a ultimului număr inserat. În plus, dacă în *Tipo ordine* este setată opțiunea [Confirmare automată ordin](/docs/configurations/tables/purchase/purchase-orders-type), este propusă data confirmării ordinului egală cu data inserării ordinului;  
+- **Anno**: ste inserat automat anul în curs, dar poate fi modificat manual respectând regula progresiei dintre dată şi număr;  
+- **Numero**: este propus automat pe baza tipului, dar poate fi modificat manual respectând regula progresiei dintre dată şi număr;  
+- **Data inserimento**: este propusă automat data curentă, dar poate fi modificată manual respectând regula progresiei dintre dată şi număr;  
+- **Fornitore**: poate fi inserat utilizând [help-ul](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection#inserimento-con-il-help-di-campo) sau [manual](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection#inserimento-manuale).
  
-## 2. Testata
+## 2. Antet
  
-Continuare l'inserimento dei seguenti dati [manualmente](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection#inserimento-manuale) oppure con l'[help di campo](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection#inserimento-con-il-help-di-campo).
- 
-:::note Ricorda
-Se il documento viene *creato automaticamente*, ad esempio dal filtro di ricerca degli [**Ordini clienti**](/docs/sales/sales-orders/search-sales-orders), dalla procedura di [**Creazione automatica ordini**](/docs/purchase/purchase-orders/procedures/create-purchase-orders-from-purchase-requests) o dalla procedura di [**Creazione ordine fornitore da offerta fornitore**](/docs/purchase/offer-request/procedures/order-creation), questi dati vengono ripresi dal *documento d'origine* da cui è stato generato.
+Continuați cu inserarea următoarelor date [manual](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection#inserimento-manuale) sau cu ajutorul [help-ului](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection#inserimento-con-il-help-di-campo).
+
+:::note Important
+Dacă documentul este *creat automat*, de exemplu din filtrul de căutare al [**Ordinelor clienți**](/docs/sales/sales-orders/search-sales-orders), din procedura de [**Creare automată ordine**](/docs/purchase/purchase-orders/procedures/create-purchase-orders-from-purchase-requests) sau din procedura de [**Creare ordin furnizor din ofertă furnizor**](/docs/purchase/offer-request/procedures/order-creation), aceste date sunt preluate din *documentul de origine* din care a fost generat. 
 :::
  
-### 2.1 Dati fornitore
- 
-Inserendo il **Fornitore**, vengono proposti automaticamente tutti i dati specifici del tab **Testata**, secondo i dati impostati in precedenza nell'[anagrafica fornitore](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/accounting-data-intro) nei campi corrispondenti al suo indirizzo e nelle sezioni:
- 
-- **Divisa**: sezione contenente i dati [Divisa](/docs/configurations/tables/general-settings/currencies), [Cambio](/docs/guide/common/glossary/glossary-intro#currency-exchange), [Data valuta](/docs/guide/common/glossary/glossary-intro#currency-date).  
-- **Nazione**: sezione contenente i dati [*Nazione*](/docs/guide/common/glossary/glossary-intro#country), [Lingua](/docs/guide/common/glossary/glossary-intro#language), [Zona](/docs/guide/common/glossary/glossary-intro#zone).  
-- **Spedizione**: sezione contenente i dati [*Spedizioni*](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/delivery), [Porto](/docs/guide/common/glossary/glossary-intro#carriage), [Imballo](/docs/guide/common/glossary/glossary-intro#packing), [Listino](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/price-list#listini) predefinito e il suo [intervallo di validità](/docs/guide/common/glossary/glossary-intro#validity-date).
-- **Pagamenti**: sezione contenente i dati [*Pagamenti*](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/payments), *Sconti*, *Destinazione* e *Vettore*.    
- 
-Tutti questi campi possono essere cancellati oppure modificati manualmente dall'utente.
+### 2.1 Date furnizor
+
+Introducând **Furnizorul**, sunt propuse automat toate datele specifice tab-ului **Antet**, conform datelor setate anterior în [Registru furnizor](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/accounting-data-intro) în câmpurile corespunzătoare adresei sale și în secțiunile:
+
+- **Monedă**: secțiune conținând date din [Monedă](/docs/configurations/tables/general-settings/currencies), [Schimb valutar](/docs/guide/common/glossary/glossary-intro#currency-exchange), [Data valută](/docs/guide/common/glossary/glossary-intro#currency-date).  
+- **Țară**: secțiune conținând date din [Țară](/docs/guide/common/glossary/glossary-intro#country), [Limba](/docs/guide/common/glossary/glossary-intro#language), [Zonă](/docs/guide/common/glossary/glossary-intro#zone).  
+- **Expediţie**: secțiune conținând date din [Expediere](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/delivery), [Incoterm](/docs/guide/common/glossary/glossary-intro#carriage), [Ambalaj](/docs/guide/common/glossary/glossary-intro#packing), [Listă de prețuri](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/price-list#listini) predefinită și intervalul său de [valabilitate](/docs/guide/common/glossary/glossary-intro#validity-date).
+- **Plăți**: secțiune conținând date din [Plăți](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/payments), *Discounturi*, *Destinație* și *Transportator*.    
+
+Toate aceste câmpuri pot fi șterse sau modificate manual de utilizator.  
  
 ### 2.2 Dati facoltativi testata
  
