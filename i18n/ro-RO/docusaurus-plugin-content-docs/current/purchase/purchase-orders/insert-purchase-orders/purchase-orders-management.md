@@ -1,5 +1,5 @@
 ---
-title: Nou ordin furnizor (Nuovo ordine fornitore)
+title: Nou ordin furnizor
 sidebar_position: 2
 ---
  
