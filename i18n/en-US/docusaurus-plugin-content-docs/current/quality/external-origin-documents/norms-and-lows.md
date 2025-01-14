@@ -1,40 +1,40 @@
 ---
-title: Norme e leggi
+title: Norms and Laws
 sidebar_position: 3
 ---
 
-La gestione si trova sul percorso **Qualità > Documenti di origine esterna**.
+The management can be found in the path **Quality > External Origin Documents**.
 
 
-:::important A cosa serve
-In questa gestione è possibile catalogare le normative e le leggi di interesse aziendale.   
-Un esempio di utilizzo delle *Norme e leggi* lo troviamo nella gestione delle **Schede tecniche** nel tabulatore *Norme e leggi*.   
+:::important What it is for
+In this management, it is possible to catalog the regulations and laws of business interest.   
+An example of using *Norms and Laws* can be found in the management of **Data Sheets** in the *Norms and Laws* tab.   
 :::
 
-La gestione consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+The management allows for the insertion of new records or the searching of existing ones to view, modify, or delete them.
 
 
-## Pulsanti di comando
+## Command Buttons
+
+### ![](/img/neutral/common/search.png) Search Norms and Laws 
 
 
-### ![](/img/neutral/common/search.png) Ricerca Norme e leggi
+The form consists of a filter area and a results area. Once all desired filters are set, simply click the **Search** button to view the results within the results grid.
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+### ![](/img/neutral/common/new.png) Insert Norms and Laws 
 
-### ![](/img/neutral/common/new.png) InserimentoInserimento Norme e leggi
-
-Per poter inserire nuove *Norme e leggi* è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.   
-Per il nuovo record si devono inserire almeno i campi obbligatori richiesti dal programma: il **Codice** e la **Descrizione**.
+To insert new *Norms and Laws*, it is necessary to click on the first empty row in the grid or press the **New** button.   
+For the new record, you must enter at least the mandatory fields required by the program: **Code** and **Description**.
 
 
-## Gestione dati
+## Data Management
 
 
-Le informazioni gestibili sono:   
-> **Tipo**: è il "Tipo norme e leggi" della *Norme e leggi*.   
-> **Codice**: è il codice della *Norme e leggi*.   
-> **Descrizione**: è la descrizione della *Norme e leggi*.   
-> **Note**: annotazioni libere.   
+The manageable information includes:   
+> **Type**: is the "Type of norms and laws" of the *Norms and Laws*.   
+> **Code**: is the code of the *Norms and Laws*.   
+> **Description**: is the description of the *Norms and Laws*.   
+> **Notes**: free annotations.
 
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+For everything not detailed in this document about the common functioning of forms, please refer to the following link [Custom features, buttons, and fields](/docs/guide/common).
