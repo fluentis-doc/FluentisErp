@@ -1,365 +1,365 @@
 ---
-title: Azione correttiva
+title: Corrective Action 
 sidebar_position: 3
 ---
 
-La gestione si trova sul percorso **Qualità > Azioni correttive > Nuova Azione correttiva** oppure è possibile eseguirla dalla **Ricerca Azioni correttive**.   
+The management can be found along the path **Quality > Corrective Actions > New Corrective Action** or it can be executed from the **Search Corrective Actions**.
 
 
-:::important A cosa serve
-Le azioni correttive sono misure adottate per risolvere problemi o deviazioni nei processi e prevenire il loro ripetersi. Vengono implementate dopo l’identificazione di un problema, analizzando la causa radice e attuando cambiamenti per migliorare le performance future. Sono fondamentali per mantenere e migliorare la qualità e l'efficienza nei processi aziendali.   
-Le *Azioni correttive* devono:   
-- essere appropriate agli effetti delle non conformità riscontrate;   
-- assicurare che le non conformità non si ripetano;   
-- esaminare l'efficacia delle azioni correttive effettuate.
+:::important Purpose
+Corrective actions are measures taken to resolve problems or deviations in processes and prevent their recurrence. They are implemented after identifying a problem, analyzing the root cause, and making changes to improve future performance. They are essential for maintaining and improving quality and efficiency in business processes.   
+*Corrective Actions* must:   
+- be appropriate to the effects of the identified non-compliances;   
+- ensure that non-compliances do not recur;   
+- examine the effectiveness of the implemented corrective actions.
 
-A standard è disponibile la reportistica di:   
-> **Scheda Azione correttiva**: scheda dell'*Azione correttiva*.   
+A standard report is available for:   
+> **Corrective Action Sheet**: form for the *Corrective Action*.   
 :::
 
 
-## Pulsanti di comando
+## Command Buttons
 
 
-### ![](/img/neutral/common/save.png) Salva
+### ![](/img/neutral/common/save.png) Save 
 
-Premendo questo pulsante si memorizzano tutte le informazioni modificate dell'*Azione correttiva* visualizzata.   
-
-
-### ![](/img/neutral/common/save.png) Salva e Nuova
-
-Premendo questo pulsante si memorizzano tutte le informazioni modificate dell'*Azione correttiva* visualizzata e apre una nuova form creando una nuova *Azione correttiva*.   
+Pressing this button saves all modified information of the *Corrective Action* displayed.
 
 
-## Gestione dati
+### ![](/img/neutral/common/save.png) Save and New 
+
+Pressing this button saves all modified information of the *Corrective Action* displayed and opens a new form to create a new *Corrective Action*.   
 
 
-## Dati di testata del documento
+## Data Management 
 
-Le informazioni gestite sono:   
-> **Tipo azione**: è il *Tipo azione* (dato obbligatorio).   
-> All'inserimento di una nuova *Azione correttiva* viene proposto il *Tipo azione* indicata nei *Parametri azioni correttive*.   
+
+## Document Header Data 
+
+The information managed is:   
+> **Action Type**: it is the *Action Type* (mandatory data).   
+> When entering a new *Corrective Action*, the *Action Type* indicated in the *Corrective Action Parameters* is proposed.   
 >
-> **Anno/Numero/Data**: sono l'*Anno*, *Numero* e *Data* dell'*Azione correttiva* (dati obbligatori).   
-> All'inserimento di una nuova *Azione correttiva*:   
-> - la *Data* viene proposta pari alla data odierna;   
-> - l'*Anno* e il *Numero* vengono proposti in base alla *Data* e alla *Numerazione* associata al *Tipo azione*.   
+> **Year/Number/Date**: they are the *Year*, *Number*, and *Date* of the *Corrective Action* (mandatory data).   
+> When entering a new *Corrective Action*:   
+> - the *Date* is proposed to be equal to today's date;   
+> - the *Year* and *Number* are proposed based on the *Date* and the *Numeration* associated with the *Action Type*.   
 >
-> **Settore**: è il codice del *Settore*.   
-> All'inserimento di una nuova *Azione correttiva* viene proposto il *Settore* indicato nei *Parametri azioni correttive*.   
+> **Sector**: it is the code of the *Sector*.   
+> When entering a new *Corrective Action*, the *Sector* indicated in the *Corrective Action Parameters* is proposed.   
 >
-> **Area coinvolta**: è il codice dell'*Area* (dato obbligatorio).   
-> All'inserimento di una nuova *Azione correttiva* viene proposta l'*Area* indicata nei *Parametri azioni correttive*.   
+> **Area Involved**: it is the code of the *Area* (mandatory data).   
+> When entering a new *Corrective Action*, the *Area* indicated in the *Corrective Action Parameters* is proposed.   
 
 
-## Testata
+## Header 
 
-Le informazioni gestite sono:   
-> **Persona responsabile**: è il *Dipendente* responsabile dell'*Azione correttiva*.   
-> All'inserimento di una nuova *Azione correttiva* viene proposta la *Persona responsabile* indicata nei *Parametri azioni correttive*.   
+The information managed is:   
+> **Responsible Person**: it is the *Employee* responsible for the *Corrective Action*.   
+> When entering a new *Corrective Action*, the *Responsible Person* indicated in the *Corrective Action Parameters* is proposed.   
 >
-> **Funzione responsabile**: è la *Funzione aziendale* responsabile dell'*Azione correttiva*.   
-> All'inserimento di una nuova *Azione correttiva* viene proposta la *Funzione responsabile* indicata nei *Parametri azioni correttive*.   
+> **Responsible Function**: it is the *Business Function* responsible for the *Corrective Action*.   
+> When entering a new *Corrective Action*, the *Responsible Function* indicated in the *Corrective Action Parameters* is proposed.   
 >
-> **Descrizione della non conformità**: (dato obbligatorio) annotazioni libere sulle non conformità o situazioni non conformi (anche potenziali).   
-> **Riferimento documenti**: annotazioni libere su riferimenti a documenti da cui è scaturita l'*Azione correttiva*.   
-> **Azione proposta**: annotazioni libere sull'argomento.   
+> **Description of Non-Compliance**: (mandatory data) free notes on non-compliances or non-compliant situations (including potential ones).   
+> **Document References**: free notes on references to documents from which the *Corrective Action* originated.   
+> **Proposed Action**: free notes on the subject.   
 >
-> **Approvata/Data approvazione**: expander dove è possibile inserire:   
+> **Approved/Approval Date**: expander where it is possible to enter:   
 >
->> **Approvata**: indica che l'*Azione correttiva* è *Approvata*.   
->> Solamente la **Persona responsabile** o la **Funzione responsabile** possono approvare l'*Azione correttiva*.   
->> All'atto dell'approvazione vengono automaticamente proposte: la *Data approvazione* proposta alla data odierna e può essere variata, *Approvata da utente* e *Approvata da persona* proposte all'*Utente A.R.M.* collegato e al *Dipendente* collegato all'*Utente A.R.M.*   
->>
->> **Data approvazione**: è la data in cui l'*Azione correttiva* è stata *Approvata*.   
->> Solamente la **Persona responsabile** o la **Funzione responsabile** possono variare questa data.   
->> All'atto dell'inserimento della data vengono automaticamente proposte: *Approvata da utente* e *Approvata da persona* proposte all'*Utente A.R.M.* collegato e al *Dipendente* collegato all'*Utente A.R.M.* e impostato il flag *Approvata*.   
->>
->> **Approvata da utente**: è l'*Utente A.R.M.* che ha approvato l*Azione correttiva*. L'informazione è di sola lettura.   
->> **Approvata da persona**: è il *Dipendente* che ha approvato l*Azione correttiva*. L'informazione è di sola lettura.   
->> **Approvata da funzione**: è la *Funzione aziendale* che ha approvato l*Azione correttiva*.   
->> Abilitata solamente se l'*Azione correttiva* è *Approvata*.   
->
-> **Bloccata/Data blocco**: expander dove è possibile inserire:   
->
->> **Bloccata**: indica che l'*Azione correttiva* è *Bloccata*.   
->> Solamente la **Persona responsabile** o la **Funzione responsabile** possono bloccare l'*Azione correttiva*.   
->> All'atto del blocco vengono automaticamente proposte: la *Data blocco* proposta alla data odierna e può essere variata, *Bloccata da utente* e *Bloccata da persona* proposte all'*Utente A.R.M.* collegato e al *Dipendente* collegato all'*Utente A.R.M.*   
->>
->> **Data blocco**: è la data in cui l'*Azione correttiva* è stata *Bloccata*.   
->> Solamente la **Persona responsabile** o la **Funzione responsabile** possono variare questa data.   
->> All'atto dell'inserimento della data vengono automaticamente proposte: *Bloccata da utente* e *Bloccata da persona* proposte all'*Utente A.R.M.* collegato e al *Dipendente* collegato all'*Utente A.R.M.* e impostato il flag *Bloccata*.   
->>
->> **Bloccata da utente**: è l'*Utente A.R.M.* che ha bloccato l'*Azione correttiva*. L'informazione è di sola lettura.   
->> **Bloccata da persona**: è il *Dipendente* che ha bloccato l'*Azione correttiva*. L'informazione è di sola lettura.   
->> **Bloccata da funzione**: è la *Funzione aziendale* che ha bloccato l'*Azione correttiva*.
->> Abilitata solamente se l'*Azione correttiva* è *Bloccata*.   
->
-> **Cause**: annotazioni libere sulle cause che hanno condotto alla non conformità, documentazione sull'eventuale indagine svolta.   
-> **Valutazione azione da adottare**: annotazioni libere sulla valutazione dell'esigenza di adottare un'azione per evitare il ripetersi delle non conformità.   
-> **Descrizione allegati**: annotazioni libere sul contenuto di eventuali documenti allegati nel documentale.   
-> **Data prevista chiusura**: è la data che si presume che l'*Azione correttiva* venga completata.   
-> **Note**: annotazioni libere.   
->
-> **Chiusa/Data di chiusura**: expander dove è possibile inserire:   
->
->> **Chiusa**: indica che l'*Azione correttiva* è *Chiusa*.   
->> Solamente la **Persona responsabile** o la **Funzione responsabile** possono chiudere l'*Azione correttiva*.   
->> All'atto della chiusura vengono automaticamente proposte: la *Data di chiusura* proposta alla data odierna e può essere variata, *Chiusa da utente* e *Chiusa da persona* proposte all'*Utente A.R.M.* collegato e al *Dipendente* collegato all'*Utente A.R.M.*   
->>
->> **Data di chiusura**: è la data in cui l'*Azione correttiva* è stata *Chiusa*.   
->> Solamente la **Persona responsabile** o la **Funzione responsabile** possono variare questa data.   
->> All'atto dell'inserimento della data vengono automaticamente proposte: *Chiusa da utente* e *Chiusa da persona* proposte all'*Utente A.R.M.* collegato e al *Dipendente* collegato all'*Utente A.R.M.* e impostato il flag *Chiusa*.   
->>
->> **Chiusa da utente**: è l'*Utente A.R.M.* che ha chiuso l'*Azione correttiva*. L'informazione è di sola lettura.   
->> **Chiusa da persona**: è il *Dipendente* che ha chiuso l'*Azione correttiva*. L'informazione è di sola lettura.   
->> **Chiusa da funzione**: è la *Funzione aziendale* che ha chiuso l'*Azione correttiva*.   
->> Abilitata solamente se l'*Azione correttiva* è *Chiusa*.   
->
-> **Audit Trail**: expander di sola lettura dove sono visibili le seguenti informazioni:   
->
->> **Data creazione/Nome**: è la data e l'*Utente A.R.M.* che ha inserito l'*Azione correttiva*.   
->> **Data ultima modifica/Nome**: è la data e l'*Utente A.R.M.* che ha apportato l'ultima modifica all'*Azione correttiva*.   
->
-> **Costo totale previsto**: è il costo previsto per la gestione dell'*Azione correttiva*.   
-> **Costo totale effettivo**: è il costo totale sostenuto per la gestione dell'*Azione correttiva*.   
+>> **Approved**: indicates that the *Corrective Action* is *Approved*.   
+>> Only the **Responsible Person** or the **Responsible Function** can approve the *Corrective Action*.   
+>> At the time of approval, the *Approval Date* is automatically proposed to be today's date and can be changed, *Approved by the user* and *Approved by the person* are proposed to the connected *A.R.M. User* and to the *Employee* connected to the *A.R.M. User*.
 
+> **Approval Date**: it is the date when the *Corrective Action* was *Approved*.   
+> Only the **Responsible Person** or the **Responsible Function** can change this date.   
+> Upon entering the date, *Approved by the user* and *Approved by the person* are automatically proposed to the connected *A.R.M. User* and the *Employee* linked to the *A.R.M. User* and the *Approved* flag is set.   
+>
+> **Approved by the user**: it is the *A.R.M. User* who approved the *Corrective Action*. The information is read-only.   
+> **Approved by the person**: it is the *Employee* who approved the *Corrective Action*. The information is read-only.   
+> **Approved by the function**: it is the *Business Function* that approved the *Corrective Action*.   
+> Enabled only if the *Corrective Action* is *Approved*.   
+>
+> **Blocked/Block date**: expander where it is possible to enter:   
+>
+> **Blocked**: indicates that the *Corrective Action* is *Blocked*.   
+> Only the **Responsible Person** or the **Responsible Function** can block the *Corrective Action*.   
+> Upon blocking, the *Block date* is automatically proposed to today's date and can be changed, *Blocked by the user* and *Blocked by the person* are proposed to the connected *A.R.M. User* and the *Employee* linked to the *A.R.M. User*.   
+> 
+> **Block date**: it is the date when the *Corrective Action* was *Blocked*.   
+> Only the **Responsible Person** or the **Responsible Function** can change this date.   
+> When entering the date, *Blocked by the user* and *Blocked by the person* are automatically proposed to the connected *A.R.M. User* and the *Employee* linked to the *A.R.M. User* and the *Blocked* flag is set.   
+> 
+> **Blocked by the user**: it is the *A.R.M. User* who blocked the *Corrective Action*. The information is read-only.   
+> **Blocked by the person**: it is the *Employee* who blocked the *Corrective Action*. The information is read-only.   
+> **Blocked by the function**: it is the *Business Function* that blocked the *Corrective Action*.   
+> Enabled only if the *Corrective Action* is *Blocked*.   
+>
+> **Causes**: free notes on the causes that led to non-compliance, documentation on any investigation carried out.   
+> **Evaluation action to be taken**: free notes on the assessment of the need to take action to prevent the recurrence of non-compliances.   
+> **Description of attachments**: free notes on the content of any documents attached in the documentation.   
+> **Expected closing date**: it is the date when it is expected that the *Corrective Action* will be completed.   
+> **Notes**: free notes.   
+>
+> **Closed/Closed date**: expander where it is possible to enter:
 
-### Verifiche prossimo audit
-
-Nel tabulatore sono contenute le indicazioni sulle verifiche da effettuare nel prossimo audit per valutare se l'*Azione correttiva* ha avuto efficacia.   
-Le informazioni gestite sono:   
-> **Da valutare nel prossimo audit**: expander dove è possibile inserire:   
+>**Closed**: indicates that the *Corrective Action* is *Closed*.   
+> Only the **Responsible Person** or the **Responsible Function** can close the *Corrective Action*.   
+> Upon closure, the following are automatically proposed: the *Proposed closed date* is set to today's date and can be modified, *Closed by the user* and *Closed by the person* are proposed to the connected *A.R.M. User* and the *Employee* associated with the *A.R.M. User*.   
 >
->> **Da valutare nel prossimo audit**: indica se sono necessarie attività di verifica nel prossimo audit per l'*Area coinvolta*.   
->> **Elementi da verificare**: annotazioni libere sugli elementi da verificare nel prossimo audit.   
->> Abilitato solamente se l'*Azione correttiva* è *Da valutare nel prossimo audit*.   
+> **Closed date**: it is the date on which the *Corrective Action* was *Closed*.   
+> Only the **Responsible Person** or the **Responsible Function** can modify this date.   
+> When entering the date, the following are automatically proposed: *Closed by the user* and *Closed by the person* are proposed to the connected *A.R.M. User* and the *Employee* connected to the *A.R.M. User*, and the flag *Closed* is set.   
 >
-> **Verificata/Data di verifica**: expander dove è possibile inserire:   
+> **Closed by the user**: it is the *A.R.M. User* who closed the *Corrective Action*. This information is read-only.   
+> **Closed by the person**: it is the *Employee* who closed the *Corrective Action*. This information is read-only.   
+> **Closed by the function**: it is the *Business Function* that closed the *Corrective Action*.   
+> Enabled only if the *Corrective Action* is *Closed*.   
 >
->> **Verificata**: indica che l'*Azione correttiva* è stata *Verificata*.   
->>> All'atto della verifica vengono automaticamente proposte: la *Data di verifica* proposta alla data odierna e può essere variata, *Verificata da utente* e *Verificata da persona* proposte all'*Utente A.R.M.* collegato e al *Dipendente* collegato all'*Utente A.R.M.*   
->>
->> **Data di verifica**: è la data in cui l'*Azione correttiva* è stata *Verificata*.   
->> Solamente la **Persona responsabile** o la **Funzione responsabile** possono variare questa data.   
->> All'atto dell'inserimento della data vengono automaticamente proposte: *Verificata da utente* e *Verificata da persona* proposte all'*Utente A.R.M.* collegato e al *Dipendente* collegato all'*Utente A.R.M.* e impostato il flag *Verificata*.   
->>
->> **Esito complessivo**: è l'*Esito* che ha viene attribuito alla verifica dell'*Azione correttiva*.   
->> **Verifica efficacia**: annotazioni libere sull'esito della verifica o meno dell'efficacia dell'*Azione correttiva*.   
->> **Verificata da utente**: è l'*Utente A.R.M.* che ha verificato l'*Azione correttiva*. L'informazione è di sola lettura.   
->> **Verificata da persona**: è il *Dipendente* che ha verificato l'*Azione correttiva*. L'informazione è di sola lettura.   
->> **Verificata da funzione**: è la *Funzione aziendale* che ha verificato l'*Azione correttiva*.   
->> Abilitata solamente se l'*Azione correttiva* è *Verificata*.   
+> **Audit Trail**: read-only expander where the following information is visible:   
+>
+> **Creation Date/Name**: it is the date and the *A.R.M. User* who entered the *Corrective Action*.   
+> **Last Edit Date/Name**: it is the date and the *A.R.M. User* who made the last edit to the *Corrective Action*.   
+>
+> **Previewed total cost**: it is the expected cost for managing the *Corrective Action*.   
+> **Effective total cost**: it is the total cost incurred for managing the *Corrective Action*.   
 
 
-### Verifiche intermedie azione
+### Verifications next audit
 
-Nel tabulatore sono contenute le indicazioni sulle verifiche intermedie effettuate sull'*Azione correttiva*.   
-Le informazioni gestite sono:   
-> **Dati verifica**   
->> **Data**: è la data in cui è stata effettuata la verifica intermedia.   
->> **Elementi verificati**: annotazioni libere sugli elementi considerati durante la verifica.   
->> **Verifica efficacia**: annotazioni libere sulle azioni svolte per verificare l'efficacia.   
->> **Esito**: è l'*Esito* che ha viene attribuito alla verifica intermedia dell'*Azione correttiva*.   
->> **Descrizione esito**: è la descrizione dell'*Esito* che ha viene attribuito alla verifica dell'*Azione correttiva*.   
+The tab contains indications on the checks to be performed in the upcoming audit to assess whether the *Corrective Action* has been effective.   
+The managed information is:   
+> **To be evaluated in the next audit**: expander where it is possible to insert:   
 >
-> **Verificata da utente**   
->> **Utente**: è l'*Utente* che ha effettuato la verifica intermedia.   
+> **To be evaluated in the next audit**: indicates whether verification activities are needed in the next audit for the *Involved Area*.   
+> **Elements to be verified**: free notes on the elements to verify in the next audit.   
+> Enabled only if the *Corrective Action* is *To be evaluated in the next audit*.   
 >
-> **Verificata da persona**   
->> **Operatore**: è il codice del *Dipendente* che ha effettuato la verifica intermedia.   
->> **Cognome**: è il cognome del *Dipendente* che ha effettuato la verifica intermedia.   
->> **Nome**: è il nome del *Dipendente* che ha effettuato la verifica intermedia.   
+> **Verified/Verification Date**: expander where it is possible to insert:   
 >
-> **Verificata da persona**   
->> **Codice**: è il codice della *Funzione aziendale* che ha effettuato la verifica intermedia.   
->> **Descrizione**: è la descrizione della *Funzione aziendale* che ha effettuato la verifica intermedia.   
+> **Verified**: indicates that the *Corrective Action* is *Verified*.   
+>>> Upon verification, the following are automatically proposed: the *Verification date* is set to today's date and can be modified, *Verified by the user* and *Verified by the person* are proposed to the connected *A.R.M. User* and the *Employee* connected to the *A.R.M. User*.   
 >
-> **Nota**: annotazioni libere.   
+> **Verification date**: it is the date on which the *Corrective Action* was *Verified*.   
+> Only the **Responsible Person** or the **Responsible Function** can modify this date.   
+> Upon entering the date, the following are automatically proposed: *Verified by the user* and *Verified by the person* are proposed to the connected *A.R.M. User* and the *Employee* connected to the *A.R.M. User*, and the flag *Verified* is set.   
+>
+> **Overall result**: it is the *Result* that is assigned to the verification of the *Corrective Action*.   
+> **Verify effectiveness**: free notes on the result of the verification or not of the effectiveness of the *Corrective Action*.   
+> **Verified by the user**: it is the *A.R.M. User* who verified the *Corrective Action*. This information is read-only.   
+> **Verified by the person**: it is the *Employee* who verified the *Corrective Action*. This information is read-only.   
+> **Verified by the function**: it is the *Business Function* that verified the *Corrective Action*.   
+> Enabled only if the *Corrective Action* is *Verified*.   
 
 
-### Soggetti coinvolti
+### Intermediate Action Checks 
 
-Nel tabulatore sono contenute le indicazioni sulle *Funzioni aziendali* e/o *Dipendenti* che prenderanno parte alla gestione dell'*Azione correttiva*.   
-L'elenco si compone delle seguenti informazioni:   
-> **Funzione aziendale**   
->> **Codice**: è il codice della *Funziona aziendale* coinvolta.   
->> **Descrizione**: è la descrizione della *Funziona aziendale* coinvolta.   
+The tab contains indications on the intermediate checks performed on the *Corrective Action*.   
+The managed information is:   
+> **Verification Data**   
+>> **Date**: it is the date on which the intermediate verification was performed.   
+>> **Checked items**: free notes on the elements considered during the verification.   
+>> **Verify effectiveness**: free notes on the actions taken to verify effectiveness.   
+>> **Result**: it is the *Result* that is assigned to the intermediate verification of the *Corrective Action*.   
+>> **Result description**: it is the description of the *Result* that is assigned to the verification of the *Corrective Action*.   
+>
+> **Verified by the user**   
+>> **User**: it is the *User* who performed the intermediate verification.   
+>
+> **Verified by the person**   
+>> **User**: it is the code of the *Employee* who performed the intermediate verification.   
+>> **Surname**: it is the surname of the *Employee* who performed the intermediate verification.   
+>> **Name**: it is the name of the *Employee* who performed the intermediate verification.   
+>
+> **Verified by the function**   
+>> **Code**: it is the code of the *Business Function* that performed the intermediate verification.   
+>> **Description**: it is the description of the *Business Function* that performed the intermediate verification.   
+>
+> **Note**: free notes.
+
+
+### Subjects Involved
+
+The tab contains indications about *Business Functions* and/or *Employees* that will participate in the management of the *Corrective Action*.   
+The list consists of the following information:   
+> **Business Function**   
+>> **Code**: is the code of the involved *Business Function*.   
+>> **Description**: is the description of the involved *Business Function*.   
 >   
-> **Dipendente**   
->> **Codice**: è il codice del *Dipendente* coinvolto.   
->> **Descrizione**: è il cognome e nome del *Dipendente* coinvolto.   
+> **Employee**   
+>> **Code**: is the code of the involved *Employee*.   
+>> **Description**: is the surname and name of the involved *Employee*.   
 >   
-> **Gestione coinvolgimento**   
->> **Descrizione soggetto**: annotazione libera nel caso in cui, il soggetto coinvolto, non sia *Funziona aziendale* o *Dipendente*.   
->> **Motivo del coinvolgimento**: annotazioni libere sull'argomento   
->> **Data scadenza**: è la data entro la quale il soggetto coinvolto deve completare le attività inerenti al motivo del suo coinvolgimento.   
->> **Risposta**: annotazioni libere sull'argomento.   
->> **Chiuso**: indica che il coinvolgimento del soggetto è stato completato.   
->> Solamente la *Funzione o Persona responsabile* dell'*Azione correttiva* o la *Funzione aziendale* o il *Dipendente* coinvolto possono chiudere il coinvolgimento.   
->> All'atto della chiusura viene automaticamente proposta la *Data chiusura*, proposta alla data odierna e può essere variata.   
->> **Data chiusura**: è la data in cui il coinvolgimento del soggetto è stato completato.   
->> Solamente la *Funzione o Persona responsabile* dell'*Azione correttiva* o la *Funzione aziendale* o il *Dipendente* coinvolto possono inserire o variare questa data.   
->> All'atto dell'inserimento della data viene automaticamente impostato il flag *Chiuso*.   
+> **Management of Involvement**   
+>> **Subject Description**: free notation in case the involved subject is not a *Business Function* or *Employee*.   
+>> **Reason for Involvement**: free notes on the subject.   
+>> **Expiry Date**: is the date by which the involved subject must complete the activities related to the reason for their involvement.   
+>> **Answer**: free notes on the subject.   
+>> **Closed**: indicates that the involvement of the subject has been completed.   
+>> Only the *Responsible Function or Person* of the *Corrective Action* or the involved *Business Function* or *Employee* can close the involvement.   
+>> At the time of closure, the *Closed Date* is automatically proposed, suggested to be today's date, and can be changed.   
+>> **Closed Date**: is the date on which the involvement of the subject has been completed.   
+>> Only the *Responsible Function or Person* of the *Corrective Action* or the involved *Business Function* or *Employee* can insert or change this date.   
+>> At the moment of inserting the date, the *Closed* flag is automatically set.   
 >
-> **Nota**: annotazioni libere.   
+> **Note**: free notes.   
 
-### Riferimento documenti di origine
+### Origin Documents Reference
 
-Nel tabulatore sono contenute le indicazioni sui documenti che ha dato origine all'*Azione correttiva*in gestione.   
-Le informazioni visibili sono:   
-> **Reclamo**: expander dove è possibile visualizzare:   
+The tab contains indications on the documents that originated the *Corrective Action* in management.   
+The visible information is:   
+> **Complaint**: expander where it is possible to view:   
 >
->> **Reclamo**: è il riferimento al *Reclamo* di origine.   
->> **Gestione difetti**: è il riferimento alla riga di *Gestione difetti* del *Reclamo* di origine.   
->> **Azione di contenimento**: è il riferimento alla riga dell'*Azione di contenimento* del *Reclamo* di modello *8D - Problem solving* di origine.   
->> **Azione permanente**: è il riferimento alla riga dell'*Azione permanente* del *Reclamo* di modello *8D - Problem solving* di origine.   
->> **Fase**: è il riferimento alla riga della *Fase di attuazione* del *Reclamo* di modello *8D - Problem solving* di origine.   
+>> **Complaint**: is the reference to the original *Complaint*.   
+>> **Defects Management**: is the reference to the row of *Defect Management* of the original *Complaint*.   
+>> **Containment Action**: is the reference to the row of *Containment Action* of the original *Complaint* modeled as *8D - Problem Solving*.   
+>> **Permanent Action**: is the reference to the row of *Permanent Action* of the original *Complaint* modeled as *8D - Problem Solving*.   
+>> **Phase**: is the reference to the row of the *Implementation Phase* of the original *Complaint* modeled as *8D - Problem Solving*.   
 >
-> **Non conformità**: expander dove è possibile visualizzare:   
+> **Non-compliance**: expander where it is possible to view:   
 >
->> **Non conformità**: è il riferimento alla *Non conformità* di origine.   
->> **Gestione difetti**: è il riferimento alla riga di *Gestione difetti* della *Non conformità* di origine.   
+>> **Non-compliance**: is the reference to the original *Non-compliance*.   
+>> **Defects Management**: is the reference to the row of *Defects Management* of the original *Non-compliance*.   
 >
-> **Azione correttiva di origine**: expander dove è possibile visualizzare:   
+> **Source Corrective Action**: expander where it is possible to view:   
 >
->> **Azione correttiva di origine**: è il riferimento all'*Azione correttiva* di origine.   
->> **Programma**: è il riferimento alla riga di *Programma* dell'*Azione correttiva* di origine.   
+>> **Source Corrective Action**: is the reference to the original *Corrective Action*.   
+>> **Program**: is the reference to the row of *Program* of the original *Corrective Action*.   
 >
-> **Altri documenti di riferimento**: elenco dove è possibile inserire eventuali altri documenti che hanno generato l'*Azione correttiva*.   
-> L'elenco si compone delle seguenti informazioni:   
+> **Other Reference Documents**: list where it is possible to insert any other documents that generated the *Corrective Action*.   
+> The list consists of the following information:   
 >
->> **Data**: è la data del documento di riferimento.   
->> **Riferimento documento**: annotazione libera del documento di riferimento.   
->> **Numero**: è il numero del documento di riferimento.   
->> **Note**: annotazioni libere.   
+>> **Date**: is the date of the reference document.   
+>> **Document Reference**: free notation of the reference document.   
+>> **Number**: is the number of the reference document.   
+>> **Notes**: free notes.   
 
 
-### Extra data
+### Extra Data 
 
-E' possibile inserire degli [Extra Data](/docs/configurations/utility/extra-data/extradata/new-extradata-simple) per l'*Azione correttiva*.   
-
-
-## Programmi azione correttiva
-
-Se l'*Azione correttiva* è di lunga attuazione, la si può suddividere in più *Programmi di azione*.   
-L'elenco si compone delle seguenti informazioni:   
-> **Numero**: è un progressivo numerico (dato obbligatorio).   
-> **Azione proposta**: annotazioni libere sull'argomento (dato obbligatorio).   
-> **Elementi da valutare**: annotazioni libere sull'argomento.   
-> **Costo previsto**: è il costo previsto per la gestione del *Programma di azione correttiva*.   
-> **Data prevista chiusura**: è la data che si presume che il *Programma di azione correttiva* venga completata.   
-> **Chiusa**: indica che il *Programma di azione correttiva* è *Chiusa*.   
-> **Costo effettivo**: è il costo totale sostenuto per la gestione del *Programma di azione correttiva*.   
-> **Verificata**: indica che il *Programma di azione correttiva* è stata *Verificata*.   
-> **Esito**: è l'*Esito* che ha viene attribuito alla verifica del *Programma di azione correttiva*.   
-> **Descrizione esito**: è la descrizione dell'*Esito*.   
+It is possible to insert [Extra Data](/docs/configurations/utility/extra-data/extradata/new-extradata-simple) for the *Corrective Action*.   
 
 
-### Dati di dettaglio
+## Corrective Action Programs
 
-Le informazioni gestite sono:   
-> **Persona responsabile**: è il *Dipendente* responsabile del *Programma di azione correttiva*.   
-> **Funzione responsabile**: è la *Funzione aziendale* responsabile del *Programma di azione correttiva*.   
-> **Obiettivi da conseguire**: annotazioni libere sull'argomento'.   
-> **Descrizione allegati**: annotazioni libere sul contenuto degli eventuali documenti allegati.   
+If the *Corrective Action* is of long implementation, it can be divided into multiple *Action Programs*.   
+The list consists of the following information:   
+> **Number**: is a numeric progressive (required data).   
+> **Proposed Action**: free notes on the subject (required data).   
+> **Elements to be evaluated**: free notes on the subject.   
+> **Expected cost**: is the expected cost for managing the *Corrective Action Program*.   
+> **Expected closing date**: is the date by which the *Corrective Action Program* is expected to be completed.   
+> **Closed**: indicates that the *Corrective Action Program* is *Closed*.   
+> **Effective Cost**: is the total cost incurred for managing the *Corrective Action Program*.   
+> **Verified**: indicates that the *Corrective Action Program* has been *Verified*.   
+> **Result**: is the *Result* that has been attributed to the verification of the *Corrective Action Program*.   
+> **Result Description**: is the description of the *Result*.
+
+
+### Detail Data 
+
+The managed information includes:   
+> **Responsible person**: is the *Employee* responsible for the *Corrective Action Program*.   
+> **Responsible function**: is the *Business Function* responsible for the *Corrective Action Program*.   
+> **Objectives to be achieved**: free notes on the subject.   
+> **Description of attachments**: free notes on the content of any attached documents.   
 >
-> **Chiuso/Data di chiusura**: expander dove è possibile inserire:   
+> **Closed/Closed Date**: expander where you can enter:   
 >
->> **Chiuso**: indica che il *Programma di azione correttiva* è *Chiuso*.   
->> Solamente la **Persona responsabile** o la **Funzione responsabile** possono chiudere il *Programma di azione correttiva*.   
->> All'atto della chiusura vengono automaticamente proposte: la *Data di chiusura* proposta alla data odierna e può essere variata, *Chiuso da utente* e *Chiuso da persona* proposte all'*Utente A.R.M.* collegato e al *Dipendente* collegato all'*Utente A.R.M.*   
+>> **Closed**: indicates that the *Corrective Action Program* is *Closed*.   
+>> Only the **Responsible person** or the **Responsible function** can close the *Corrective Action Program*.   
+>> At the time of closure, the *Closed Date* is automatically proposed to today's date and can be changed, *Closed by the user* and *Closed by the person* proposed to the linked *A.R.M. User* and the *Employee* linked to the *A.R.M. User*.   
 >>
->> **Data di chiusura**: è la data in cui il *Programma di azione correttiva* è stato *Chiuso*.   
->> Solamente la **Persona responsabile** o la **Funzione responsabile** possono variare questa data.   
->> All'atto dell'inserimento della data vengono automaticamente proposte: *Chiuso da utente* e *Chiuso da persona* proposte all'*Utente A.R.M.* collegato e al *Dipendente* collegato all'*Utente A.R.M.* e impostato il flag *Chiuso*.   
+>> **Closed Date**: is the date on which the *Corrective Action Program* was *Closed*.   
+>> Only the **Responsible person** or the **Responsible function** can change this date.   
+>> At the time of entering the date, *Closed by the user* and *Closed by the person* are automatically proposed to the linked *A.R.M. User* and the *Employee* linked to the *A.R.M. User*, and the *Closed* flag is set.   
 >>
->> **Chiuso da utente**: è l'*Utente A.R.M.* che ha chiuso il *Programma di azione correttiva*. L'informazione è di sola lettura.   
->> **Chiuso da persona**: è il *Dipendente* che ha chiuso il *Programma di azione correttiva*. L'informazione è di sola lettura.   
->> **Chiuso da funzione**: è la *Funzione aziendale* che ha chiuso il *Programma di azione correttiva*.   
->> Abilitata solamente se il *Programma di azione correttiva* è *Chiuso*.   
+>> **Closed by the user**: is the *A.R.M. User* who closed the *Corrective Action Program*. This information is read-only.   
+>> **Closed by the person**: is the *Employee* who closed the *Corrective Action Program*. This information is read-only.   
+>> **Closed by the function**: is the *Business Function* that closed the *Corrective Action Program*.   
+>> Enabled only if the *Corrective Action Program* is *Closed*.   
 >
-> **Note**: annotazioni libere.   
-> **Riferimento azione correttiva**: è il riferimento all'*Azione correttiva* che potrebbe essere creata dal *Programma di azione correttiva*.   
-> **Verifica efficacia**: annotazioni libere sull'esito della verifica o meno dell'efficacia del *Programma di azione correttiva*.   
+> **Notes**: free notes.   
+> **Corrective action reference**: is the reference to the *Corrective Action* that could be created by the *Corrective Action Program*.   
+> **Verify effectiveness**: free notes on the result of the verification of the effectiveness of the *Corrective Action Program*.   
 >
-> **Verificato/Data verifica**: expander dove è possibile inserire:   
+> **Verified/Verification Date**: expander where you can enter:   
 >
->> **Verificato**: indica che il *Programma di azione correttiva* è stato *Verificato*.   
->> Solamente la **Persona responsabile** o la **Funzione responsabile** possono verificare il *Programma di azione correttiva*.   
->> All'atto della verifica vengono automaticamente proposte: la *Data verifica* proposta alla data odierna e può essere variata, *Verificato da utente* e *Verificato da persona* proposte all'*Utente A.R.M.* collegato e al *Dipendente* collegato all'*Utente A.R.M.*   
+>> **Verified**: indicates that the *Corrective Action Program* has been *Verified*.   
+>> Only the **Responsible person** or the **Responsible function** can verify the *Corrective Action Program*.   
+>> At the time of verification, the *Verification Date* is automatically proposed to today's date and can be changed, *Verified by the user* and *Verified by the person* proposed to the linked *A.R.M. User* and the *Employee* linked to the *A.R.M. User*.   
 >>
->> **Data verifica**: è la data in cui il *Programma di azione correttiva* è stato *Verificato*.   
->> Solamente la **Persona responsabile** o la **Funzione responsabile** possono variare questa data.   
->> All'atto dell'inserimento della data vengono automaticamente proposte: *Verificato da utente* e *Verificato da persona* proposte all'*Utente A.R.M.* collegato e al *Dipendente* collegato all'*Utente A.R.M.* e impostato il flag *Verificato*.   
+>> **Verification Date**: is the date on which the *Corrective Action Program* was *Verified*.   
+>> Only the **Responsible person** or the **Responsible function** can change this date.   
+>> At the time of entering the date, *Verified by the user* and *Verified by the person* are automatically proposed to the linked *A.R.M. User* and the *Employee* linked to the *A.R.M. User*, and the *Verified* flag is set.   
 >>
->> **Verificato da utente**: è l'*Utente A.R.M.* che ha verificato il *Programma di azione correttiva*. L'informazione è di sola lettura.   
->> **Verificato da persona**: è il *Dipendente* che ha verificato il *Programma di azione correttiva*. L'informazione è di sola lettura.   
->> **Verificato da funzione**: è la *Funzione aziendale* che ha verificato il *Programma di azione correttiva*.   
->> Abilitata solamente se il *Programma di azione correttiva* è *Verificato*.   
+>> **Verified by the user**: is the *A.R.M. User* who verified the *Corrective Action Program*. This information is read-only.   
+>> **Verified by the person**: is the *Employee* who verified the *Corrective Action Program*. This information is read-only.   
+>> **Verified by the function**: is the *Business Function* that verified the *Corrective Action Program*.   
+>> Enabled only if the *Corrective Action Program* is *Verified*.   
 
 
-### Verifiche intermedie programma azione
+### Intermediate checks on the action programme	
 
-Nel tabulatore sono contenute le indicazioni sulle verifiche intermedie effettuate sul *Programma di azione correttiva*.   
-Le informazioni gestite sono:   
-> **Dati verifica**   
->> **Data**: è la data in cui è stata effettuata la verifica intermedia.   
->> **Elementi verificati**: annotazioni libere sugli elementi considerati durante la verifica.   
->> **Verifica efficacia**: annotazioni libere sulle azioni svolte per verificare l'efficacia.   
->> **Esito**: è l'*Esito* che ha viene attribuito alla verifica intermedia del *Programma di azione correttiva*.   
->> **Descrizione esito**: è la descrizione dell'*Esito* che ha viene attribuito alla verifica del *Programma di azione correttiva*.   
+The tab contains indications on the intermediate verification carried out on the *Corrective Action Program*.   
+The managed information includes:   
+> **Verification Data**   
+>> **Date**: is the date on which the intermediate verification was carried out.   
+>> **Checked Items**: free notes on the elements considered during the verification.   
+>> **Verify effectiveness**: free notes on the actions taken to verify effectiveness.   
+>> **Result**: is the *Result* attributed to the intermediate verification of the *Corrective Action Program*.   
+>> **Result Description**: is the description of the *Result* attributed to the verification of the *Corrective Action Program*.   
 >
-> **Verificata da utente**   
->> **Utente**: è l'*Utente* che ha effettuato la verifica intermedia.   
+> **Verified by the user**   
+>> **User**: is the *User* who carried out the intermediate verification.   
 >
-> **Verificata da persona**   
->> **Operatore**: è il codice del *Dipendente* che ha effettuato la verifica intermedia.   
->> **Cognome**: è il cognome del *Dipendente* che ha effettuato la verifica intermedia.   
->> **Nome**: è il nome del *Dipendente* che ha effettuato la verifica intermedia.   
+> **Verified by the person**   
+>> **User**: is the code of the *Employee* who carried out the intermediate verification.   
+>> **Surname**: is the surname of the *Employee* who carried out the intermediate verification.   
+>> **Name**: is the name of the *Employee* who carried out the intermediate verification.   
 >
-> **Verificata da persona**   
->> **Codice**: è il codice della *Funzione aziendale* che ha effettuato la verifica intermedia.   
->> **Descrizione**: è la descrizione della *Funzione aziendale* che ha effettuato la verifica intermedia.   
+> **Verified by the function**   
+>> **Code**: is the code of the *Business Function* that carried out the intermediate verification.   
+>> **Description**: is the description of the *Business Function* that carried out the intermediate verification.   
 >
-> **Nota**: annotazioni libere.   
+> **Notes**: free notes.   
 
 
-### Soggetti coinvolti
+### Subjects Involved
 
-Nel tabulatore sono contenute le indicazioni sulle *Funzioni aziendali* e/o *Dipendenti* che prenderanno parte alla gestione del *Programma di azione correttiva*.   
-L'elenco si compone delle seguenti informazioni:   
-> **Funzione aziendale**   
->> **Codice**: è il codice della *Funziona aziendale* coinvolta.   
->> **Descrizione**: è la descrizione della *Funziona aziendale* coinvolta.   
+The tab contains indications on the *Business Functions* and/or *Employees* that will participate in the management of the *Corrective Action Program*.   
+The list consists of the following information:   
+> **Business function**   
+>> **Code**: is the code of the involved *Business Function*.   
+>> **Description**: is the description of the involved *Business Function*.   
 >   
-> **Dipendente**   
->> **Codice**: è il codice del *Dipendente* coinvolto.   
->> **Descrizione**: è il cognome e nome del *Dipendente* coinvolto.   
+> **Employee**   
+>> **Code**: is the code of the involved *Employee*.   
+>> **Description**: is the surname and name of the involved *Employee*.   
 >   
-> **Gestione coinvolgimento**   
->> **Descrizione soggetto**: annotazione libera nel caso in cui, il soggetto coinvolto, non sia *Funziona aziendale* o *Dipendente*.   
->> **Motivo del coinvolgimento**: annotazioni libere sull'argomento   
->> **Data scadenza**: è la data entro la quale il soggetto coinvolto deve completare le attività inerenti al motivo del suo coinvolgimento.   
->> **Risposta**: annotazioni libere sull'argomento.   
->> **Chiuso**: indica che il coinvolgimento del soggetto è stato completato.   
->> Solamente la *Funzione o Persona responsabile* del *Programma di azione correttiva* o la *Funzione aziendale* o il *Dipendente* coinvolto possono chiudere il coinvolgimento.   
->> All'atto della chiusura viene automaticamente proposta la *Data chiusura*, proposta alla data odierna e può essere variata.   
->> **Data chiusura**: è la data in cui il coinvolgimento del soggetto è stato completato.   
->> Solamente la *Funzione o Persona responsabile* del *Programma di azione correttiva* o la *Funzione aziendale* o il *Dipendente* coinvolto possono inserire o variare questa data.   
->> All'atto dell'inserimento della data viene automaticamente impostato il flag *Chiuso*.   
+> **Management involvement**   
+>> **Subject Description**: free note in case the involved subject is not a *Business Function* or *Employee*.   
+>> **Reason for involvement**: free notes on the subject.   
+>> **Expiry Date**: is the date by which the involved subject must complete the activities related to the reason for their involvement.   
+>> **Answer**: free notes on the subject.   
+>> **Closed**: indicates that the involvement of the subject has been completed.   
+>> Only the *Responsible Function or Person* of the *Corrective Action Program* or the *Business Function* or the involved *Employee* can close the involvement.   
+>> At the time of closure, the *Closed Date* is automatically proposed to today's date and can be changed.   
+>> **Closed Date**: is the date on which the involvement of the subject has been completed.   
+>> Only the *Responsible Function or Person* of the *Corrective Action Program* or the *Business Function* or the involved *Employee* can enter or change this date.   
+>> At the time of entering the date, the *Closed* flag is automatically set.   
 >
-> **Nota**: annotazioni libere.   
+> **Notes**: free notes.   
 
 
-### Extra data
+### Extra Data 
 
-E' possibile inserire degli [Extra Data](/docs/configurations/utility/extra-data/extradata/new-extradata-simple) per il *Programma azione correttiva*.   
+It is possible to enter [Extra Data (Extra Data)](/docs/configurations/utility/extra-data/extradata/new-extradata-simple) for the *Corrective Action Program*.   
 
 
-### Documenti allegati
+### Attached Documents 
 
-In questo elenco è possibile inserire e consultare eventuali allegati.
-L'inserimento avviene tramite la funzione di drag&drop. Trascinando l'immagine o documento sull'area dell'elenco, questa verrà evidenziata con un bordo rosso. Rilasciando il pulsante del mouse, all'immagine o documento vengono richiesti i dati per la catalogazione (se non già automaticamente riconosciuti dal sistema): *Nome*, *TIpo documento* e *Tipo file*.   
+In this list, it is possible to insert and consult any attachments. 
+The insertion occurs via the drag & drop function. By dragging the image or document onto the list area, it will be highlighted with a red border. Upon releasing the mouse button, the image or document will be prompted for cataloging data (if not automatically recognized by the system): *Name*, *Document Type*, and *File Type*.   
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+For everything not detailed in this document about the common operation of the forms, please refer to the following link [Custom features, buttons, and fields](/docs/guide/common).
