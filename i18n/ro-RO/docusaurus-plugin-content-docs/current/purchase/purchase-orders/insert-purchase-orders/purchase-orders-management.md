@@ -293,15 +293,15 @@ import SalesValuesSection from './../../../import/sections/item-values-section.m
 
 ### 4.1 Discounturi finale
 
-import RezumateDiscountFinal from './../../../import/sections/summaries-final-discount.md'
-
-<RezumateDiscountFinal />
+import SummariesFinalDiscount from './../../../import/sections/summaries-final-discount.md'
+ 
+<SummariesFinalDiscount />
 
 ### 4.2 Cheltuieli
 
-import RezumateCheltuieli from './../../../import/sections/summaries-expenses.md'
-
-<RezumateCheltuieli />
+import SummariesExpenses from './../../../import/sections/summaries-expenses.md'
+ 
+<SummariesExpenses />
 
 ### 4.3 Rezumat TVA
 
