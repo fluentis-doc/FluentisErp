@@ -18,4 +18,4 @@ The form contains several tabs:
 
 > - [Header] and its [Procedures]
 > - [Items]
-> - [Summaries](/docs/purchase/purchase-orders/insert-purchase-orders/summaries)
+> - [Summaries]
