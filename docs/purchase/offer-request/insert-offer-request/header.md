@@ -68,7 +68,7 @@ Per inserire un *Nuovo articolo* nella griglia basterà posizionarsi sulla riga 
 
 ### Dati obbligatori
 
-import RowNumber from './../../import/fields/row-number.md'
+import RowNumber from './../../../import/fields/row-number.md'
 
 <RowNumber />
 
@@ -137,13 +137,13 @@ All'interno di questo tab vengono riportate/inserite ulteriori informazioni rela
 
 ## Extra data
 
-import DocItemExtraData from './../../import/sections/doc-item-extradata.md'
+import DocItemExtraData from './../../../import/sections/doc-item-extradata.md'
 
 <DocItemExtraData />
 
 ## Documenti allegati
 
-import DocAttachDocument from './../../import/sections/doc-attach-document.md'
+import DocAttachDocument from './../../../import/sections/doc-attach-document.md'
 
 <DocAttachDocument />
 
@@ -153,7 +153,7 @@ Per inserire un *Nuovo articolo* nella griglia basterà posizionarsi sulla riga 
 
 ### Dati obbligatori
 
-import RowNumber from './../../import/fields/row-number.md'
+import RowNumber from './../../../import/fields/row-number.md'
 
 <RowNumber />
 
@@ -222,13 +222,13 @@ All'interno di questo tab vengono riportate/inserite ulteriori informazioni rela
 
 ## Extra data
 
-import DocItemExtraData from './../../import/sections/doc-item-extradata.md'
+import DocItemExtraData from './../../../import/sections/doc-item-extradata.md'
 
 <DocItemExtraData />
 
 ## Documenti allegati
 
-import DocAttachDocument from './../../import/sections/doc-attach-document.md'
+import DocAttachDocument from './../../../import/sections/doc-attach-document.md'
 
 <DocAttachDocument />
 
