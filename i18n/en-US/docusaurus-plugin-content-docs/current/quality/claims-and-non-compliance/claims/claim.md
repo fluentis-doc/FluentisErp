@@ -1,84 +1,84 @@
 ---
-title: Reclami
+title: Complaints 
 sidebar_position: 2
 ---
 
-I dati che compongono un **Reclamo** sono:     
-**Tipo Reclamo**: contiene la tipologia; questa selezione determinerà le tab visibili;            
-**Cliente**: contiene la provenienza del reclamo, la quale può essere anche un **Contatto**.
+The data that make up a **Complaint** are:     
+**Complaint type**: contains the type; this selection will determine the visible tabs;            
+**Customer**: contains the origin of the complaint, which can also be a **Contact**.
 
-Analizziamo la sezione ***Testata***, comune ad entrambe le possibili tipologie di Reclamo.         
-**Persona responsabile**: contiene il [Dipendente](/docs/project-management/registers/employee/new-employee) responsabile del reclamo;      
-**Funzione aziendale**: contiene una eventuale Funzione aziendale responsabile;       
-**Rif. documenti**: contiene i riferimenti dei documenti relativi alla merce che si è rivelata non conforme, quindi la fattura con la quale è stata venduta,il ricevimento merce, ecc.;     
-**Approvato/In data**: contiene i riferimenti di chi ha approvato il Reclamo;
-**Chiuso/In data**: contiene i riferimenti di chi ha chiuso il Reclamo e le eventuali **Notifiche** effettuate.        
+Let's analyze the ***Header*** section, common to both possible types of Complaints.         
+**Responsible person**: contains the [Employee](/docs/project-management/registers/employee/new-employee) responsible for the complaint;      
+**Business function**: contains any responsible Business function;       
+**Ref. documents**: contains references to the documents related to the goods that have turned out to be non-compliant, such as the invoice with which it was sold, the receipt of goods, etc.;     
+**Approved/On date**: contains references to who approved the Complaint;
+**Closed/On date**: contains references to who closed the Complaint and any notifications made.        
 
-I Reclami possono essere Approvati e Chiusi solo da:
-- Persona responsabile: in questo campo è possibile inserire il Dipendente codificato, che deve avere un utente Arm associato;
-- Funzione responsabile: è possibile abilitare alla modifica un'intera funzione aziendale; in questo caso deve fare Apri form nella Funzione aziendale ed inserire, nella griglia in basso, i Dipendenti da abilitare per ogni funzione aziendale selezionata.
+Complaints can be Approved and Closed only by:
+- Responsible person: in this field, it is possible to enter the coded Employee, who must have an associated Arm user;
+- Responsible function: it is possible to enable an entire business function to modify; in this case, one must open the form in the business function and enter, in the grid below, the Employees to be authorized for each selected business function.
 
-Sono poi presenti diverse tab.
+Several tabs are also present.
 
-## Notifiche
-Questa tab contiene il **Motivo della contestazione** ricevuto e nel caso il **Sito produttivo** aziendale destinatario.
-Se il reclamo non dovesse venire accettato dall'azienda, il **Motivo del recesso** sarà liberamente compilabile accanto. 
+## Notifications
+This tab contains the **Reason for the complaint** received and, if applicable, the **Production site** of the company recipient.
+If the complaint is not accepted by the company, the **Reason for withdrawal** will be freely fillable beside it. 
 
-## Annotazioni     
-Questa tab contiene Note libere, commerciali, tecniche o amministrative.
+## Annotations     
+This tab contains free notes, commercial, technical, or administrative.
 
-## Valori   
-Questa tab contiene:    
-**Divisa**: con la quale specificare i valori del Reclamo;      
-**Rif. Doc addebito**: contiene i documenti ricevuti per i quali è richiesto un addebito della non conformità;       
-**Totale reclamo**: questo campo è automatico se nei Parametri è settato il flag **Ricalcolo automatico totali**, oppure è calcolato automaticamente dalla somma della gestione dei difetti; questo reclamo è la somma che ci contesta il cliente e, se tutta da accreditare, coinciderà con il Valore da accreditare;         
-**Costo di gestione**: automatico se deciso nei Parametri, altrimenti imputabile manualmente; questo costo è il costo di gestione interno che spendo per la gestione del reclamo; esso sarà imputabile: alla mia azienda se responsabile della fornitura; al fornitore altrimenti responsabile della fornitura;       
-**Valore da accreditare**: è il valore che riconosciamo e da accreditare; la nota di accredito generata avrà il riferimento nel campo **Rif. Doc. Accredito** e apporrà il flag **Valorizzato**; il totale da accreditare è ciò che paghiamo al cliente, il costo di gestione è ciò che pago internamente.            
+## Values   
+This tab contains:    
+**Currency**: to specify the values of the Complaint;      
+**Ref. Doc. Debit**: contains the documents received for which a charge for non-compliance is requested;       
+**Total complaint**: this field is automatic if the flag **Total automatic recalculation** is set in the Parameters, or it is calculated automatically from the sum of the defect handling; this complaint is the sum that the customer contests to us, and if fully creditable, it will coincide with the Value to be credited;         
+**Management cost**: automatic if decided in the Parameters, otherwise chargeable manually; this cost is the internal management cost that I spend for handling the complaint; it will be chargeable to my company if responsible for the supply; to the supplier otherwise responsible for the supply;       
+**Value to be credited**: is the value that we recognize and to be credited; the credit note generated will reference the field **Ref. Doc. Accreditation** and will apply the **Valorized** flag; the total to be credited is what we pay to the customer, the management cost is what I pay internally.            
 
-Analizziamo la tab ***Gestione difetti***, presente solo nel caso la tipologia di Reclamo sia **Reclamo cliente**.    
-E' possibile indicare uno o più difetti riscontrati nel Reclamo, con i relativi dati:     
-- **Difetto riscontrato**: contiene il Difetto con relativo **Codice** e **Descrizione** ed eventuali **Note**;     
-- **Causa presunta**, che ha causato il difetto;    
-- **Fase di rilevamento**, con i dettagli della fase nella quale è stato rilevato il difetto;    
-- **Quantità**: contiene la quantità venduta, contestata e resa della merce;     
-- **Rif. Azione correttiva**: contiene i riferimenti dell'azione correttiva se creata.   
-Questa tab è suddivisa in tab ulteriori.        
+Let's analyze the tab ***Defects Management***, present only if the type of Complaint is **Customer Complaint**.    
+It is possible to indicate one or more defects found in the Complaint, with the respective data:     
+- **Defect detected**: contains the Defect with its **Code** and **Description** and any **Notes**;     
+- **Alleged cause**, which caused the defect;    
+- **Detecting step**, with details of the phase in which the defect was detected;    
+- **Quantity**: contains the sold, contested, and returned quantity of the goods;     
+- **Ref. Corrective action**: contains references to the corrective action if created.   
+This tab is divided into additional tabs.        
 
-## Dati difetto     
-I dati principali sono:      
-- **Gravità**: contiene l'eventuale Gravità del difetto;    
-- **Causa effettiva**: è possibile che la causa del difetto presunta, inserita in griglia, non coincida con la causa effettiva, che è possibile inserire in questo campo;      
-- **Soluzione proposta**: contiene la soluzione che è stata proposta per risolvere il difetto, tra un elenco a discesa;     
-- **Decisione intrapresa**: contiene la soluzione che, tra le possibili proposte, è stata intrapresa;
-- ecc.     
-E' possibile specificare i vari campi con le **Note** accanto.     
+## Defective Data     
+The main data are:      
+- **Severity**: contains the eventual Severity of the defect;    
+- **Effective cause**: it is possible that the alleged cause of the defect, entered in the grid, does not coincide with the effective cause, which can be entered in this field;      
+- **Proposed solution**: contains the solution that has been proposed to resolve the defect, from a dropdown list;     
+- **Decision taken**: contains the solution that, among the possible proposals, has been undertaken;
+- etc.     
+It is possible to specify the various fields with **Notes** next to them.     
 
-## Materiali utilizzati 
-Questa tab contiene materiali eventualmente utilizzati per porre rimedio al difetto. I dati del materiali sono accompagnati dai relativi costi.
+## Materials Used 
+This tab contains materials that may have been used to remedy the defect. The data of the materials are accompanied by their respective costs.
 
-## Oggetti reclamati
-Contiene tutti gli articoli nei quali è stato riscontrato il difetto della griglia principale.
+## Claimed Objects
+Contains all the items for which the defect of the main grid was found.
 
-## Soggetti coinvolti
-In questa tab è possibile indicare le Funzioni aziendali coinvolte e/o i [Dipendenti](/docs/project-management/registers/employee/new-employee).     
-Nella sezione **Gestione coinvolgimento** è possibile indicare il Motivo del coinvolgimento, campo automatico se nella tabella delle Funzioni aziendali ne abbiamo inserito precedentemente uno.   
+## Subjects Involved 
+In this tab, it is possible to indicate the involved Business functions and/or the [Employees](/docs/project-management/registers/employee/new-employee).     
+In the **Involvement Management** section, it is possible to indicate the Reason for involvement, which is an automatic field if we have previously entered one in the business functions table.   
 
-Analizziamo la tab ***Gestione 8D***, presente solo nel caso la tipologia Reclamo sia **Reclamo cliente 8D**.    
-Questa tab è suddivisa in due tab ulteriori.      
+Let's analyze the tab ***8D Management***, present only if the type of Complaint is **8D Customer Complaint**.    
+This tab is divided into two additional tabs.      
 
-## Oggetti reclamati    
-Questa tab contiene un elenco di tutti i materiali che ci stanno contestando.     
+## Claimed Objects    
+This tab contains a list of all the materials being contested.     
 
-## Gestione 8D         
-Questa tab contiene la gestione del modello 8D Problem Solving, che richiede la definizione di:     
-- un **Team**, nel quale indicare la Funzione e/o il Dipendente;     
-- delle **Azioni di contenimento** per evitare il ripetersi nell'immediato dei difetti riscontrati;     
-- un'analisi delle **Cause** che hanno permesso il verificarsi dell'evento;     
-- l'elenco delle **Azioni** che verranno intraprese e diverranno Permanenti nel tempo per evitare che il difetto si ripresenti;   
-- nel momento in cui viene inserito il flag **Attuata** nell'Azione, si abilita la **Convalida azioni**;    
-- eventuali **Fasi** da attuare a fronte delle attività per le azioni correttive.    
+## 8D Management         
+This tab contains the management of the 8D Problem Solving model, which requires the definition of:     
+- a **Team**, in which to indicate the Function and/or Employee;     
+- **Containment Actions** to avoid the immediate recurrence of the detected defects;     
+- an analysis of the **Causes** that allowed the event to occur;     
+- the list of **Actions** that will be undertaken and will become Permanent over time to prevent the defect from reappearing;   
+- when the **Implemented** flag is checked in the Action, the **Validate Actions** is enabled;    
+- any **Phases** to be implemented in light of the activities for corrective actions.    
 
 
-I pulsanti specifici della ribbon bar sono:
-**Crea azione correttiva**: alla selezione di un difetto, è possibile creare una Azione correttiva. Si apre una maschera nella quale vengono richiesti una serie di dati da riportare nell'Azione.     
-**Crea non conformità**: alla selezione di un difetto, è possibile creare una Non conformità relativa. 
+The specific buttons on the ribbon bar are:
+**Create corrective action**: upon selecting a defect, a Corrective Action can be created. A form will open where a series of data are requested to be entered in the Action.     
+**Create non-compliance**: upon selecting a defect, it is possible to create a related Non-compliance.

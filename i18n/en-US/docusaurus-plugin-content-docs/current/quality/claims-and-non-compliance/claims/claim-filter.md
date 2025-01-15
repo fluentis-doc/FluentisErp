@@ -1,22 +1,22 @@
 ---
-title: Ricerca Reclami
+title: Complaint Search
 sidebar_position: 1
 ---
 
-Il filtro si trova sul percorso **Qualità > Reclami e Non conformità > Reclami**.   
+The filter is located on the path **Quality > Complaints and Non-Compliance > Complaints**.
 
-Il filtro dati consente di inserire nuovi *Reclami* o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.   
+The data filter allows you to enter new *Complaints* or search for existing ones to view, modify, or delete them.
 
-### ![](/img/neutral/common/search.png) Ricerca Reclami
+### ![](/img/neutral/common/search.png) Search Complaints 
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.   
+The form consists of a filter area and a result area. Once all desired filters are set, simply click the **Search** button to display the results within the result grid.
 
-### ![](/img/neutral/common/new.png) Inserimento Reclami
+### ![](/img/neutral/common/new.png) Insert Complaints 
 
-Per poter inserire nuovi *Reclami* è necessario premere il pulsante **Nuovo**.   
+To enter new *Complaints*, it is necessary to press the **New** button.
 
-### ![](/img/neutral/common/edit.png) Modifica o ![](/img/neutral/common/view.png) Visualizzazione Reclami
+### ![](/img/neutral/common/edit.png) Modify or ![](/img/neutral/common/view.png) View Complaints 
 
-Per aprire la gestione, della griglia di risultato, è necessario fare doppio click sulla riga di nostro interesse oppure, selezionando una o più righe, premere i pulsanti **Modifica** o **Visualizza**.   
+To open the management of the result grid, you need to double-click on the row of interest or, by selecting one or more rows, press the **Modify** or **View** buttons.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+For anything not detailed in this document about the common functionality of the forms, please refer to the following link [Custom Features, Buttons, and Fields](/docs/guide/common).
