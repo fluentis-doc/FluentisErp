@@ -1,22 +1,22 @@
 ---
-title: Ricerca Non conformità
+title: Non-Compliance Search 
 sidebar_position: 1
 ---
 
-Il filtro si trova sul percorso **Qualità > Reclami e Non conformità > Non conformità**.   
+The filter can be found along the path **Quality > Complaints and Non-Compliance > Non-Compliance**.
 
-Il filtro dati consente di inserire nuove *Non conformità* o di ricercare quelle già esistenti per visualizzarle, modificarle oppure cancellarle.   
+The data filter allows you to enter new *Non-Compliance* or search for existing ones to view, modify, or delete them.
 
-### ![](/img/neutral/common/search.png) Ricerca Non conformità
+### ![](/img/neutral/common/search.png) Non-Compliance Search 
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.   
+The form consists of a filter area and a results area. Once all desired filters are set, simply click the **Search** button to view the results within the results grid.
 
-### ![](/img/neutral/common/new.png) Inserimento Non conformità
+### ![](/img/neutral/common/new.png) Insert Non-Compliance
 
-Per poter inserire nuovi *Non conformità* è necessario premere il pulsante **Nuovo**.   
+To enter new *Non-Compliance*, it is necessary to press the **New** button.
 
-### ![](/img/neutral/common/edit.png) Modifica o ![](/img/neutral/common/view.png) Visualizzazione Non conformità
+### ![](/img/neutral/common/edit.png) Modify or ![](/img/neutral/common/view.png) View Non-Compliance 
 
-Per aprire la gestione, della griglia di risultato, è necessario fare doppio click sulla riga di nostro interesse oppure, selezionando una o più righe, premere i pulsanti **Modifica** o **Visualizza**.   
+To open the management of the results grid, you need to double-click on the row of interest or, by selecting one or more rows, press the **Modify** or **View** buttons.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+For everything not detailed in this document about the common functioning of forms, please refer to the following link [Custom Features, Buttons, and Fields](/docs/guide/common).

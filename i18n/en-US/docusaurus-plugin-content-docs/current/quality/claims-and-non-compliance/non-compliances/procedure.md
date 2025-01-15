@@ -1,24 +1,24 @@
 ---
-title: Procedura di Valorizzazione Non conformità
+title: Non-Compliance Valorization Procedure 
 sidebar_position: 3
 ---
 
-La procedura di Valorizzazione non conformità permette di creare una nota di addebito a cliente.
-Per utilizzare la procedura quindi, è necessario che al conto Fornitore al quale viene contestato il prodotto sia associato un conto Cliente al quale intestare la fattura.
-La procedura si compone di tre tab.
+The non-compliance valorization procedure allows for the creation of a debit note to a customer. 
+To use the procedure, it is necessary that the Supplier account to which the product is contested is associated with a Customer account to which the invoice should be addressed. 
+The procedure consists of three tabs.
 
-## Valorizzazione
-In questa tab è possibile selezionare le Non conformità da valorizzare. E' possibile filtrare i risultati con i filtri disponibili per effettuare una ricerca più mirata.
-La fattura verrà creata con la **Data creazione** presente in basso alla maschera. 
-Dopo la selezione, la procedura viene lanciata con il pulsante delle ribbon bar **Creazione fatture da non conformità**. 
+## Valorization
+In this tab, it is possible to select the non-compliance to be valued. It is possible to filter the results with the available filters to perform a more targeted search. 
+The invoice will be created with the **Creation Date** present at the bottom of the form. 
+After selection, the procedure is launched with the **Creating invoices from non-compliance** button on the ribbon bar.
 
-## Parametri 
-In questa tab è possibile inserire dei parametri da utilizzare nella procedura. 
-Il flag **Non conformità con cambi diversi** permette di inserire, in una stessa fattura, Non conformità con cambi diversi.
-Il flag **Metti riferimenti non conformità** permette di inserire il riferimento in fattura; è possibile codificare il riferimento nel campo sottostante.
+## Parameters 
+In this tab, it is possible to enter parameters to be used in the procedure. 
+The **Non-compliances with different exchanges** flag allows for entering non-compliances with different exchanges on the same invoice. 
+The **Insert non-compliance references** flag allows for including the reference on the invoice; it is possible to code the reference in the field below.
 
-## Ripristino valorizzazione
-In questa tab è possibile ricercare le fatture precedentemente create con la procedura.
-Sono presenti dei filtri per effettuare una ricerca più mirata.      
-Nella prima griglia sono presenti le operazioni effettuate, mentre nella seconda griglia sono presenti le **Fatture** e le **Non conformità** di ogni operazione.       
-Per annullare le operazioni, è necessario selezionare le operazioni da cancellare e cliccare **Ripristina creazione** nella ribbon bar. Per annullare invece delle singole fatture tra più fatture create in una stessa operazione, è necessario selezionare nella seconda griglia le fatture da cancellare e cliccare il pulsate **Ripristina fattura** nella ribbon bar.
+## Restore valorization
+In this tab, it is possible to search for invoices previously created with the procedure. 
+There are filters available to perform a more targeted search. 
+In the first grid, the operations performed are listed, while in the second grid, the **Invoices** and **Non-compliance** for each operation are present. 
+To cancel operations, it is necessary to select the operations to be deleted and click **Restore creation** on the ribbon bar. To cancel individual invoices among multiple invoices created in the same operation, it is necessary to select the invoices to be deleted in the second grid and click the **Restore invoice** button on the ribbon bar.
