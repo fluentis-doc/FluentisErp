@@ -1,21 +1,21 @@
+
 ---
-title: Cereri de achiziție
+title: Cereri de ofertă
 sidebar_position: 1
 ---
 
+## Antet
 
-## Testata
+Câmpurile obligatorii pentru inserarea unei cereri de achiziție sunt următoarele:
 
-I campi obbligatori per l'inserimento di una richiesta di acquisto sono i seguenti:
+- **Tip**: este un câmp obligatoriu. În funcție de [Tipul CdO](/docs/configurations/tables/purchase/purchase-offer-type), vor fi activate anumite funcționalități, cum ar fi *Gestionare mijloace fixe*.
+- **Data/An**: în mod implicit este propusă data curentă, dar poate fi modificată manual.
+- **Număr**: propus automat în funcție de Tipul CdO ales.
+- **Furnizor**: conține registrul contactului de la care se solicită oferta.
+- **Versiune**: conține versiunea ofertei; este posibil să creați o nouă versiune cu butonul din ribbon bar **Versiune nouă**.
 
-- **Tipo**: è un campo obbligatorio. A seconda del [Tipo RDO](/docs/configurations/tables/purchase/purchase-offer-type) scelto, saranno attivate alcune funzionalità, quali ad esempio la *Gestione cespiti*. 
-- **Data/Anno**: di default viene proposta la data corrente, ma può essere modificata manualmente.  
-- **Numero**: poposto automaticamente in base al Tipo RDO scelto.   
-- **Fornitore**: contiene l'anagrafica contatto a cui viene richiesta l'offerta.                
-- **Versione**: contiene la versione dell'offerta; è possibile creare una nuova versione con il pulsante della ribbon bar **Nuova versione**.        
-
-:::note Ricorda
-Se il documento viene *creato automaticamente* da una RDA, questi dati vengono ripresi dal *documento d'origine* da cui è stata generato.
+:::note Important
+Dacă documentul este *creat automat* dintr-o CdO, aceste date sunt preluate din *documentul de origine* din care a fost generat.
 :::
 
 Inserendo il **Fornitore** vengono proposti in automatico tutti i dati specifici del tab **Testata**, secondo i dati impostati in precedenza nell'[anagrafica fornitore](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/accounting-data-intro) nei campi corrispondenti al suo indirizzo e nelle sezioni:    
