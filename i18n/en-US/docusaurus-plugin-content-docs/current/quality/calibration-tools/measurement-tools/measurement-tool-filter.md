@@ -1,50 +1,50 @@
 ---
-title: Ricerca Strumenti di misura
+title: Measurement Tool Search 
 sidebar_position: 1
 ---
 
-Il filtro si trova sul percorso **Qualità > Taratura strumenti > Strumenti di misura**.   
+The filter is located on the path **Quality > Calibration tools > Measurement Tools**.   
 
-Il filtro dati consente di inserire nuovi *Strumenti di misura* o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.   
+The data filter allows you to input new *Measurement Tools* or search for existing ones to view, modify, or delete them.   
 
-### ![](/img/neutral/common/search.png) Ricerca Strumenti di misura
+### ![](/img/neutral/common/search.png) Measurement Tool Search 
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.   
+The form consists of a filter area and a results area. Once all the desired filters are set, simply click the **Search** button to display the results within the results grid.   
 
-### ![](/img/neutral/common/new.png) Inserimento Strumenti di misura
+### ![](/img/neutral/common/new.png) Insert Measurement Tools 
 
-Per poter inserire nuovi *Strumenti di misura* è necessario premere il pulsante **Nuovo**.   
+To add new *Measurement Tools*, it is necessary to press the **New** button.   
 
-### ![](/img/neutral/common/edit.png) Modifica o ![](/img/neutral/common/view.png) Visualizzazione Strumenti di misura
+### ![](/img/neutral/common/edit.png) Modify or ![](/img/neutral/common/view.png) View Measurement Tools 
 
-Per aprire la gestione, della griglia di risultato, è necessario fare doppio click sulla riga di nostro interesse oppure, selezionando una o più righe, premere i pulsanti **Modifica** o **Visualizza**.   
+To open the management of the results grid, double-click on the row of interest or select one or more rows and press the **Modify** or **View** buttons.   
 
-*Pulsanti specifici*: 
+*Specific buttons*: 
 
-### Pianifica nuove tarature
+### Schedule New Calibrations
 
-Il pulsante è abilitato solamente se, dalla griglia di risultato, si seleziona un solo *Strumento di misura* e lo *Strumento* deve essere:   
-> *Attivo*;   
-> *Soggetto a taratura*;   
-> a taratura periodica e di tipo temporale (expander *Proprietà di taratura* con *Periodo di taratura* diverso da *zero* e *Unità di misura* di tipo *Giorno* o *Mese*).   
+The button is enabled only if, from the results grid, a single *Measurement Tool* is selected and the *Instrument* must be:   
+> *Active*;   
+> *Subject to calibration*;   
+> periodic calibration and of a temporal type (expanding *Calibration Properties* with *Calibration Period (Periodo di taratura)* different from *zero* and *Measurement Unit* of type *Day* or *Month*).   
 
-Per poter pianificare nuove *Tarature strumento pianificate* da uno *Strumento di misura* è necessario cliccare nella griglia sullo *Strumento di misura* da cui si desidera pianificare le *Tarature* e premere il pulsante **Pianifica nuove tarature**. Si può pianificare un solo *Strumento di misura* alla volta.   
-Verrà visualizzata una richiesta di:   
-> **Pianificare fino al**: è la data di fine periodo di pianificazione (dato obbligatorio), viene proposto un anno di pianificazione a partire dalla data odierna.   
+To schedule new *Scheduled Tool Calibrations* from a *Measurement Tool*, click on the tool in the grid from which you wish to schedule the *Calibrations* and press the **Schedule New Calibrations** button. You can only schedule one *Measurement Tool* at a time.   
+A prompt will be displayed for:   
+> **Plan until**: this is the end date of the planning period (mandatory data), a year of planning is proposed starting from today's date.   
 
-Premere successivamente il pulsante **OK** o il pulsante **Cancel** se si desidera proseguire nell'attività di pianifica o meno.   
+Then press the **OK** button or the **Cancel** button if you wish to proceed with the planning activity or not.   
 
-*Metodo utilizzato per la pianificazione*:   
-Come prima cosa si eliminano tutte le precedenti *Tarature* pianificate e non ancora attuate per lo *Strumento*.  
-Successivamente, a partire dalla data di ultima *Taratura*, si creano tante *Tarature* quante sono possibili creare nell'intervallo richiesto a partire dalla data odierna e cadenziate per il *Periodo di taratura*. Se la data proposta ricade in una giornate non lavorativa specificata nel *Calendario di fabbrica* la data proposta verrà posticipata alla prima data lavorativa utile.   
-Se per lo strumento non è mai stata pianificata o effettuata una *Taratura* o l'ultima data di *Taratura* risale a un periodo antecedente alla data odierna detratta dal
-*Periodo di taratura*, la prima *Taratura* sarà proposta in data odierna e successivamente le altre.
-
-### Nuova taratura
-
-Il pulsante è abilitato solamente se, dalla griglia di risultato, si seleziona un solo *Strumento di misura* e lo *Strumento* deve essere *Attivo*.   
-Per poter creare una nuova *Taratura strumento* da uno *Strumento di misura* è necessario cliccare nella griglia sullo *Strumento di misura* da cui si desidera creare le *Taratura* e premere il pulsante **Nuova taratura**. Si può creare una *Taratura strumento* da un solo *Strumento di misura* alla volta.   
-Al termine dell'elaborazione la nuova *Taratura strumento pianificata* viene visualizzata.   
+*Method used for scheduling*:   
+First, all previous *Calibrations* that were planned and not yet performed for the *Instrument* are deleted.  
+Subsequently, from the date of the last *Calibration*, as many *Calibrations* as possible are created in the requested interval starting from today's date, spaced according to the *Calibration Period*. If the proposed date falls on a non-working day specified in the *Factory Calendar*, the proposed date will be postponed to the first available working day.   
+If the tool has never had a *Calibration* scheduled or performed, or if the last *Calibration* was from a period prior to today's date minus the *Calibration Period*, the first *Calibration* will be proposed for today, followed by the others.
 
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+### New Calibration 
+
+The button is enabled only if, from the results grid, a single *Measurement Tool* is selected and the *Instrument* must be *Active*.   
+To create a new *Tool Calibration* from a *Measurement Tool*, click on the *Measurement Tool* in the grid from which you wish to create the *Calibrations* and press the **New Calibration** button. You can create a *Tool Calibration* from only one *Measurement Tool* at a time.   
+Upon completion of the processing, the new *Scheduled Tool Calibration* is displayed.   
+
+
+For everything that is not detailed in this document regarding the common operation of forms, please refer to the following link [Custom Features, Buttons, and Fields](/docs/guide/common).

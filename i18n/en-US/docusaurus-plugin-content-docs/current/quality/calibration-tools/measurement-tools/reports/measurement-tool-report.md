@@ -1,14 +1,14 @@
 ---
-title: Elenco Strumenti di misura
+title: Measurement Tools List
 sidebar_position: 1
 ---
 
-Il filtro di esecuzione report si trova sul percorso **Qualità > Taratura strumenti > Strumenti di misura > Procedure > Elenco Strumenti di misura**.   
+The report execution filter is located on the path **Quality > Calibration Tools > Measurement Tools > Procedures > Measurement Tools List**.
 
-Il filtro di esecuzione report consente di ricercare gli *Strumenti di misura* per poterli stampare.   
-I reports predefiniti sono:
-> **Registro Strumenti di misura**: elenco degli *Strumenti di misura* raggruppabili per: *Strumento*, *Categoria*, *Fornitore* (di acquisto), *Ubicazione*, *Utilizzatore*, *Scadenza garanzia* e *Scadenza taratura*;   
-> **Registro Strumenti non soggetti a taratura**: elenco degli *Strumenti di misura* dove non è prevista la *Taratura*; per la stampa di questo report non ha effetto il filtro *Stato - Non soggetti a taratura: Tutti, Soggetti a taratura, Non soggetti a taratura*.   
-> **Scheda Strumento di misura**: scheda degli *Strumenti di misura*.   
+The report execution filter allows you to search for *Measurement Tools* in order to print them.   
+The default reports are:
+> **Measurement Instruments Register**: list of *Measurement Tools* groupable by: *Instrument*, *Category*, *Supplier* (of purchase), *Location*, *User*, *Expire Warrant*, and *Calibration Due Date*;   
+> **Register of Instruments not subject to calibration**: list of *Measurement Tools* where *Calibration* is not required; for printing this report, the filter *Status - Not subject to calibration: All, Subject to calibration, Not subject to calibration* does not apply.   
+> **Measurement Tool Card**: sheet of *Measurement Tools*.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+For any details not covered in this document regarding the common functionality of forms, please refer to the following link [Custom features, buttons, and fields](/docs/guide/common).
