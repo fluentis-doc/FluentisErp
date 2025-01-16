@@ -1,48 +1,48 @@
 ---
-title: Introduzione
+title: Introduction 
 sidebar_position: 1
 ---
 
-Questo modulo permette la catalogazione e la manutenzione periodica e straordinaria degli strumenti di monitoraggio e misurazione utilizzati per garantire l’idoneità dei prodotti e l’erogazione dei servizi offerti.   
+This module allows for the cataloguing and periodic and extraordinary maintenance of the monitoring and measurement tools used to ensure the suitability of products and the delivery of services offered.
 
 
-## I documenti gestiti
+## Managed Documents
 
 import Link from '@docusaurus/Link';
 
 <div className="cardContainer">
     <div className="card">
-###     <Link to="/docs/quality/calibration-tools/measurement-tools/measurement-tool-management">Strumenti di misura</Link>
-        <p>In questa anagrafica vengono memorizzati gli strumenti di misura utilizzati per garantire l’idoneità dei prodotti e l’erogazione dei servizi offerti.</p>
-        <p>Allo strumento di misura è possibile associare le informazioni di acquisto, di responsabilità, le proprietà tecniche/meccaniche, di ubicazione e di taratura.</p>
-        <p>Se lo strumento è soggetto a taratura e la taratura è interna, è possibile definire quali sono le attività che devono essere fatte e i valori da rilevare affinché la taratura dia esito positivo.</p>
-        <p>Se lo strumento è soggetto a taratura e la taratura è esterna, è possibile definire qual e l'ente terzo che effettuerà la taratura.</p>
-        <p>Se inserita una periodicità temporale di taratura il pulsante di "Pianifica nuove tarature" permette la creazione automatica, per un periodo desiderato, delle tarature pianificate.</p>
-        <p>A standard sono disponibili le reportistiche di: *Registro strumenti* raggruppati per: *Strumento*, *Categoria*, *Fornitore*, *Ubicazione*, *Utilizzatore*, *Scadenza garanzia* e *Scadenza taratura*, *Registro Strumenti non soggetti a taratura* e *Scheda Strumento di misura*.</p>
+###     <Link to="/docs/quality/calibration-tools/measurement-tools/measurement-tool-management">Measurement Tools</Link>
+        <p>This registry stores the measurement tool used to ensure the suitability of products and the delivery of services offered.</p>
+        <p>To the measurement instrument, it is possible to associate purchase information, responsibility, technical/mechanical properties, location, and calibration information.</p>
+        <p>If the instrument is subject to calibration and the calibration is internal, it is possible to define what activities must be performed and the values to be detected so that the calibration yields a positive result.</p>
+        <p>If the instrument is subject to calibration and the calibration is external, it is possible to define which third-party entity will perform the calibration.</p>
+        <p>If a calibration periodicity is entered, the "Schedule new calibrations" button allows for the automatic creation of scheduled calibrations for a desired period.</p>
+        <p>As standard, reports are available for: Measurement instruments register* grouped by: *Instrument*, *Category*, *Supplier*, *Location*, *User*, *Expire Warrant* and *Calibration Due Date*, *Register of Instruments not Subject to Calibration*, and *Measurement Tool Card*.</p>
     </div>
 </div>
 <div className="cardContainer">
     <div className="card">
-###     <Link to="/docs/quality/calibration-tools/calibration-tool/calibration-tool-management">Taratura strumenti</Link>
-        <p>Nella gestione Taratura strumenti è possibile la registrazione delle Tarature interne e dei Certificati di taratura.</p>
-        <p>Se lo strumento è soggetto a taratura e la taratura è interna, è possibile inserire, per le posizioni previste, i valori rilevati. Fluentis assegnerà automaticamente un esito positivo o negativo, per singola posizione e generale.</p>
-        <p>Se lo strumento è soggetto a taratura e la taratura è esterna, è possibile allegare il Certificato di taratura ricevuto dall'ente terzo che ha effettuato la taratura. L'esito, in questo caso, verrà attribuito manualmente dall'operatore.</p>
-        <p>A standard sono disponibili le reportistiche di: *Registro tarature strumenti* raggruppati per: *Rapporto*, *Strumento* e *Operatore*.</p>
+###     <Link to="/docs/quality/calibration-tools/calibration-tool/calibration-tool-management">Calibration Tools</Link>
+        <p>In the Calibration Tools Management, it is possible to register Internal Calibrations and Calibration Certificates.</p>
+        <p>If the instrument is subject to calibration and the calibration is internal, it is possible to enter the detected values for the required positions. Fluentis will automatically assign a positive or negative result for each position and overall.</p>
+        <p>If the instrument is subject to calibration and the calibration is external, it is possible to attach the Calibration Certificate received from the third-party entity that performed the calibration. In this case, the result will be manually assigned by the operator.</p>
+        <p>As standard, reports are available for: *Instrument Calibration Log* grouped by: *Report*, *Instrument*, and *User*.</p>
     </div>
 </div>
 
 
-## Per iniziare ad utilizzare   
+## Getting Started
 
-gli **Strumenti di misura**:
-- devi definire una [*Categoria Strumenti di misura*](/docs/configurations/tables/quality/calibration-tools/measurement-tool-categories)   
-- devi inserire un nuovo [*Strumento di misura*](/docs/quality/calibration-tools/measurement-tools/measurement-tool-management)   
+with the **Measurement Tools**:
+- you need to define a [*Measurement Tools Category*](/docs/configurations/tables/quality/calibration-tools/measurement-tool-categories)   
+- you must enter a new [*Measurement Tool*](/docs/quality/calibration-tools/measurement-tools/measurement-tool-management)   
 
-la **Taratura strumenti**:
-- devi definire: un [*Tipo taratura*](/docs/configurations/tables/quality/calibration-tools/calibration-type), relativa *Numerazione* e uno [*Strumento di misura*](/docs/quality/calibration-tools/measurement-tools/measurement-tool-management)   
-- per agevolare la gestione delle *Taratura strumenti* impostare i [*Parametri Taratura strumenti*](/docs/configurations/parameters/quality/calibration-tools)   
-- devi inserire una nuova [*Taratura strumento*](/docs/quality/calibration-tools/calibration-tool/calibration-tool-management)   
+with **Calibration Tools**:
+- you need to define: a [*Calibration Type*], related *Numeration* and a [*Measurement Tool*](/docs/quality/calibration-tools/measurement-tools/measurement-tool-management)   
+- to facilitate the management of *Calibration Tools*, set the [*Calibration Tools Parameters*](/docs/configurations/parameters/quality/calibration-tools)   
+- you must enter a new [*Calibration Tool*](/docs/quality/calibration-tools/calibration-tool/calibration-tool-management)   
 
 
-## Collegamenti con altri moduli
-Il modulo della *Taratura strumenti* non è collegato ad alcun altro modulo.   
+## Links to Other Modules
+The *Calibration Tools* module is not linked to any other module.
