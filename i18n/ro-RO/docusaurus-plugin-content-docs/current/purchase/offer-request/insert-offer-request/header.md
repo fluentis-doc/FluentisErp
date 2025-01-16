@@ -18,15 +18,15 @@ Câmpurile obligatorii pentru inserarea unei cereri de achiziție sunt următoar
 Dacă documentul este *creat automat* dintr-o CdO, aceste date sunt preluate din *documentul de origine* din care a fost generat.
 :::
 
-Inserendo il **Fornitore** vengono proposti in automatico tutti i dati specifici del tab **Testata**, secondo i dati impostati in precedenza nell'[anagrafica fornitore](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/accounting-data-intro) nei campi corrispondenti al suo indirizzo e nelle sezioni:    
->- **Divisa**: sezione contenente i dati [Divisa](/docs/configurations/tables/general-settings/currencies), [Cambio](/docs/guide/common/glossary/glossary-intro#currency-exchange), [Data valuta](/docs/guide/common/glossary/glossary-intro#currency-date).     
->- **Spedizione**: sezione contenente i dati [*Spedizioni*](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/delivery), [Porto](/docs/guide/common/glossary/glossary-intro#carriage), [Imballo](/docs/guide/common/glossary/glossary-intro#packing), [Listino](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/price-list#listini) predefinito e il suo [intervallo di validità](/docs/guide/common/glossary/glossary-intro#validity-date).   
->- **Nazione**: sezione contenente i dati [*Nazione*](/docs/guide/common/glossary/glossary-intro#country), [Lingua](/docs/guide/common/glossary/glossary-intro#language), [Zona](/docs/guide/common/glossary/glossary-intro#zone).    
->- **Pagamenti**: sezione contenente i dati [*Pagamenti*](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/payments), *Sconti*, *Destinazione* e *Vettore*.    
+Inserând **Furnizorul**, toate datele specifice din *Antet* sunt propuse automat, conform datelor setate anterior în [registrul furnizorului](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/accounting-data-intro) în câmpurile corespunzătoare pentru adresa sa și în secțiunile:    
+>- **Monedă**: secțiune care conține datele [Monedei](/docs/configurations/tables/general-settings/currencies), [Schimbului](/docs/guide/common/glossary/glossary-intro#currency-exchange), [Data valutei](/docs/guide/common/glossary/glossary-intro#currency-date).     
+>- **Expediţie**: secțiune care conține datele [*Expediţie*](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/delivery), [Incoterm](/docs/guide/common/glossary/glossary-intro#carriage), [Ambalajului](/docs/guide/common/glossary/glossary-intro#packing), [Ofertei de prețuri](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/price-list#listini) implicite și [intervalul său de valabilitate](/docs/guide/common/glossary/glossary-intro#validity-date).   
+>- **Țară**: secțiune care conține datele [Țarii](/docs/guide/common/glossary/glossary-intro#country), [Limbii](/docs/guide/common/glossary/glossary-intro#language), [Zonei](/docs/guide/common/glossary/glossary-intro#zone).    
+>- **Plăți**: secțiune care conține datele [Plății](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/payments), *Discounturilor*, *Destinației* și *Transportatorului*.    
 
-Tutti questi campi possono essere cancellati oppure modificati manualmente dall'utente.
+Toate aceste câmpuri pot fi șterse sau modificate manual de utilizator.
 
-Altri campi facoltativi sono: 
+Alte câmpuri opționale sunt:
 
 - **Annotazioni**: questo campo viene ripreso dall'anagrafica fornitore o eventualmente dalla RDA, ma può essere inserito anche manualmente.             
 - **Nostro/Vostro riferimento**: in questi campi solitamente viene indicato un riferimento interno ed un riferimento fornitore per il documento. Se presente, viene ripreso dall'anagrafica fornitore alrimenti può essere inserito manualmente.   
