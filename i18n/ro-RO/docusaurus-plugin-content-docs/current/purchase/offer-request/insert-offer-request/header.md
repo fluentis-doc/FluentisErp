@@ -28,17 +28,17 @@ Toate aceste câmpuri pot fi șterse sau modificate manual de utilizator.
 
 Alte câmpuri opționale sunt:
 
-- **Annotazioni**: questo campo viene ripreso dall'anagrafica fornitore o eventualmente dalla RDA, ma può essere inserito anche manualmente.             
-- **Nostro/Vostro riferimento**: in questi campi solitamente viene indicato un riferimento interno ed un riferimento fornitore per il documento. Se presente, viene ripreso dall'anagrafica fornitore alrimenti può essere inserito manualmente.   
-- **Note iniziali/finali**: si possono selezionare le note che sono state inserite in precedenza nella tabella che si trova nel percorso *Configurazione > Utilità > Gestione note codificate*. Per questo l'utente deve effettuare doppio click sul campo *Note iniziali/finali* per aprire Help note codificate e selezionare i dati.
-- **Progetto**: usando l'help di campo si può collegare il documento a un progetto. Questa associazione funziona solo al livello della testata dell'articolo. Il progetto viene inserito automaticamente se la RDO è stata generata da una RDA che lo contiene. 
-- **Data conferma offerta**: permette di inserire la data in cui è stata confermata l'offerta, ma non è un dato obbligatorio; nella procedura di [Creazione ordine fornitore da Offerta fornitore](/docs/purchase/offer-request/procedures/order-creation) è possibile visualizzare e convertire anche le RDO non confermate, attivando l'apposito flag nell'area di filtro.  
-- **Data prevista consegna**: se impostata prima dell'inserimento degli articoli all'interno della RDO sarà riportate anche sulle singole righe articolo. In alternativa sarà sufficiente premere il pulsante *Sostituisci data prevista consegna nelle righe* nella ribbon bar per aggiornare le date sulle righe articolo.
-- **Data chiusura**: al momento della conversione della RDO in ordine fornitore viene automaticamente valorizzata con la data corrente se è stato abilitato l'apposito flag per chiudere le offerte convertite. 
-- **Validità offerta**: permette di impostare una data fine validità per la richiesta di offerta. 
+- **Note**: acest câmp este preluat din registrul furnizorului sau, eventual, din CdA, dar poate fi introdus și manual.             
+- **Referința noastră/Referința dvs.**: în aceste câmpuri se indică de obicei o referință internă și o referință a furnizorului pentru document. Dacă este prezent, este preluat din registrul furnizorului, altfel poate fi introdus manual.   
+- **Note inițiale/finale**: se pot selecta notele care au fost introduse anterior în tabelul găsit în parcursul *Configurare > Utilitate > Gestionare note codificate*. Pentru aceasta, utilizatorul trebuie să facă dublu click pe câmpul *Note inițiale/finale* pentru a deschide Ajutor note codificate și a selecta datele.
+- **Proiect**: folosind ajutorul de câmp, se poate lega documentul de un proiect. Această asociere funcționează doar la nivelul antetului articolului. Proiectul este introdus automat dacă RDO-ul a fost generat dintr-o RDA care îl conține. 
+- **Data confirmării ofertei**: permite introducerea datei în care oferta a fost confirmată, dar nu este o informație obligatorie; în procedura de [Creare ordine furnizor din ofertă furnizor](/docs/purchase/offer-request/procedures/order-creation) este posibil să vizualizați și să convertiți RDO-urile neconfirmate, activând indicatorul corespunzător în zona de filtrare.  
+- **Data estimată de livrare**: dacă este setată înainte de introducerea articolelor în RDO, va fi reportată și pe liniile individuale ale articolului. În alternativă, este suficient să apăsați butonul *Înlocuiește data estimată de livrare în linii* din ribbon bar pentru a actualiza datele pe liniile articolului.
+- **Datè închidere**: în momentul conversiei RDO în ordine de furnizor, este valorificată automat cu data curentă dacă indicatorul corespunzător pentru închiderea ofertelor convertite a fost activat. 
+- **Valabilitate ofertè**: permite setarea unei date de expirare pentru cererea de ofertă. 
 
-*Pulsanti specifici*
-> **Sostituisci data prev. consegna nelle righe**: dopo aver specificato la data prevista consegna in testata è possibile sostituirla in massa nelle righe articolo già inserite.
+*Butoane specifice*
+> **Substituie data prevăzută pentru livrare din linii**: după ce a fost specificată data estimată de livrare în antet, este posibil să o înlocuiți în masă în liniile articolului deja introduse.
 
 ### Pagamenti
 
