@@ -1,5 +1,5 @@
 ---
-title: Richieste di acquisto
+title: Cereri de achiziție
 sidebar_position: 1
 ---
 
