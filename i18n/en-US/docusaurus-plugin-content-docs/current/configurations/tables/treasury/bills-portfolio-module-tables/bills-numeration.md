@@ -1,26 +1,16 @@
 ---
-title: Bills Numeration
+title: Numerazione effetti
 sidebar_position: 1
 ---
 
-In order to establish a numeration it is necessary to set reference year, numeration code, its description and start number.
+:::tip[FAst Start]
+La tabella è interessata dalla procedura di [**Fast Start**](/docs/guide/fast-start)
 
-The table is automatically managed in the generation procedure of counters of the new accounting year, that is located within 'Tools-Utility'.
+Nel caso in cui si intenda configurare manualmente fare riferimento alla check list della pagina linkata
+:::
 
-RIBBON BAR: it represents the Form Menu, that is the area in which it is possible to perform actions linked to the procedure in use. The list of features is the following:
+Per definire una numerazione è sufficiente impostare l'anno di riferimento, il codice della numerazione, la sua descrizione e il numero di partenza.
 
+La tabella è fra quelle gestite automaticamente nella procedura di generazione dei contatori del nuovo esercizio contabile, che si trova all'interno degli ‘Strumenti'-‘Utilità'.
 
-
-| Function | Meaning |
-| --- | --- |
-| Search | Button to perform the search of bills numeration according to filters set. |
-| New | Button to place the cursor during the insertion of a new line. |
-| Delete | Button to delete the selected advance type. |
-| Print Preview | Button to perform the print preview of table in use. |
-| Print | Button to print the table in use. |
-
-
-
-
-
-
+<iframe width="560" height="315" src="https://www.youtube.com/embed/pnRACKqZqvM" title="YouTube video player" frameborder="0" allowfullscreen= "true"></iframe>

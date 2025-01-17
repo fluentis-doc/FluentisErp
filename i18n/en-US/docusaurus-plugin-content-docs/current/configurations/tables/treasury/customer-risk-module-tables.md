@@ -1,29 +1,31 @@
 ---
-title: Customer Risk Module Tables
+title: Tabelle modulo Rischio cliente
 sidebar_position: 7
 ---
 
-There are no specific tables of this module, but it is necessary to mark that different purchase and sales document type have settings linked to the customer risk.
+Non sono presenti tabelle specifiche del modulo in oggetto, ma va segnalato che vari tipi documento in acquisto e vendita presentano impostazioni collegate al rischio cliente.
 
-The customer credit collects data from the following sales area documents:
+Il fido cliente preleva i dati dai seguenti documenti dell'area vendita:
 
- [**Sales Order Type**](/docs/configurations/tables/sales/sales-order-types) : the credit flag indicates if document (printed and confirmed) is considered during the customer credit calculation or not. The 'Exclude Block' flag excludes this document type from customer block.
+**[Tipo ordine cliente](/docs/configurations/tables/sales/sales-order-types)**: il ‘flag fido' indica che se il documento (stampato e confermato) viene considerato nel calcolo del fido cliente o meno. Il flag ‘Escludi blocco' esclude questo tipo documento dal blocco cliente;
 
-**Delivery Note Type**: the 'credit' flag indicated if document (printed and confirmed) is considered during the customer credit calculation or not. The 'Exclude Block' flag excludes this document type from customer block.
+**Tipi DDT**: il ‘flag fido' indica che se il documento (stampato, non valorizzato in fattura) viene considerato nel calcolo del fido cliente o meno. Il flag ‘Escludi blocco' esclude questo tipo documento dal blocco cliente;
 
-**Invoice Types**: the 'credit' flag indicated if document (printed and confirmed) is considered during the customer credit calculation or not. The 'Exclude Block' flag excludes this document type from customer block. Lastly, every  customer register has two settings linked to this module:
+**[Tipi fattura](/docs/configurations/tables/purchase/purchase-invoices-type)**: il ‘flag fido' indica che se il documento (stampato, non contabilizzato) viene considerato nel calcolo del fido cliente o meno. Il flag ‘Escludi blocco' esclude questo tipo documento dal blocco cliente.
 
-**Credit Control Type**:
+Infine, ogni anagrafica cliente presenta due impostazioni collegate al modulo in oggetto:
 
-**Doc. Block and Credit Monitor**: the sales area document, that overruns the credit, will be blocked and for this reason there will be the necessity to authorize it in order to move along the next phase of documental flow;
+**Il tipo controllo fido:** 
 
-**Credit Monitor**: a credit control will be performed together with a message to the user for the occured overrun;
+**Blocco doc. e monitor fido**: il documento dell'area vendita che va a sforare il fido sarà bloccato e quindi ci sarà la necessità di autorizzarlo per procedere alle fasi successivo del flusso documentale;
 
-**Group Block**: this is like the first one, except for the calculation, which is cumulative for all database companies referred to the same customer register;
+**Monitor fido**: sarà semplicemente effettuato un controllo del fido con eventuale messaggio all'utente dell'avvenuto sforamento;
 
-**Group Monitor**: this is like the second one, except for the calculation, which is cumulative for all database companies referred to the same customer register;
+**Blocco di gruppo**: come per il primo, ma il calcolo è cumulativo per tutte le società del database facenti capo alla stessa anagrafica cliente;
 
-The second setting is 'Statement Control' check that make mask customer visible of customers statement.
+**Monitor di gruppo**: come per il secondo, ma il calcolo è cumulativo per tutte le società del database facenti capo alla stessa anagrafica cliente.
+
+La seconda impostazione è il check ‘controllo esposizione', che rende visibile il cliente nella maschera dell'esposizione clienti.
 
 
 

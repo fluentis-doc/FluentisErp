@@ -1,34 +1,23 @@
 ---
-title: Financial Account Types
+title: Tipi conto finanziario
 sidebar_position: 1
 ---
 
-In this table the accounting detail account list will be defined in order to calculate the ledger balance that will be considered as cash flow initial availability.
+:::tip[FAst Start]
+La tabella è interessata dalla procedura di [**Fast Start**](/docs/guide/fast-start)
 
-RIBBON BAR: it represents the Form Menu, that is the area in which it is possible to perform actions linked to the procedure in use. The list of features is the following:
+Nel caso in cui si intenda configurare manualmente fare riferimento alla check list della pagina linkata
+:::
 
+In questa tabella si andrà a definire la lista dei sottoconti contabili dai quali calcolare il saldo contabile che sarà considerato disponibilità iniziale di cash flow.
 
+*Campi specifici*  
+**Tipo conto finanziario**: indica il tipo del conto finanziario. Può essere selezionato tra due tipologie: Cassa e Banca, inquanto la consistenza iniziale di risorse finanziarie verrà calcolata su queste tipologie di conti contabili. Si tratta poi, nei campi seguenti, di indicare in dettaglio quali conti / sottoconti andare a leggere.
 
-| Function | Meaning |
-| --- | --- |
-| Search | Button to perform the search of financial account types according to filters set. |
-| New  | Button to place the cursor during the insertion of a new line. |
-| Delete  | Button to delete the selected financial account type. |
+**Descrizione conto finanziario**: rappresenta la descrizione del tipo conto.
 
-**Financial Account Type**: the type of financial account. 
+**Conto**: è il codice del conto.
 
+**Sottoconto**: è il codice del sottoconto.
 
-
-**Financial Account Description**: the account description.
-
-**Account**: the account number.
-
-**Detail Account**: the detail account number.
-
-**Detail Account Description**: the description of detail account.
-
-
-
-
-
-
+**Descrizione sottoconto**: rappresenta la descrizione del sottoconto.

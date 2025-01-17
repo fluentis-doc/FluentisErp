@@ -1,9 +1,9 @@
 ---
-title: Payment Types
+title: Tipi pagamento
 sidebar_position: 7
 ---
 
-In payment type table it is possible (but not obligatory) to link the payment type to the bill type to be created in bills portfolio module.
+Nella tabella tipi pagamento è possibile (ma non obbligatorio) legare il tipo pagamento al tipo di effetto da creare nel modulo portafoglio effetti
 
 
 
