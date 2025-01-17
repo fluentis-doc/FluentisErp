@@ -92,5 +92,18 @@ jobs:
       # Step 6: Log if no changes
       - name: No changes detected
         if: env.has_changes == 'false'
-        run: echo "No changes detected in website-edits. No pull request needed."
+        env:
+          GH_TOKEN: ${{ secrets.FG_PAT }}
+        run: |
+          echo "No changes detected in website-edits. No pull request needed."
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
 
+          git checkout website-edits
+           # Pull the latest changes from origin/website-edits
+          git pull origin website-edits
+          
+          git pull --rebase origin main
+          git push --force-with-lease origin website-edits
+
+          echo "website-edits successfully rebased and synced with main."
