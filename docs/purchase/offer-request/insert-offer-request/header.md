@@ -3,7 +3,6 @@ title: Richieste di acquisto
 sidebar_position: 1
 ---
 
-
 ## Testata
 
 I campi obbligatori per l'inserimento di una richiesta di acquisto sono i seguenti:
@@ -37,7 +36,7 @@ Altri campi facoltativi sono:
 - **Data chiusura**: al momento della conversione della RDO in ordine fornitore viene automaticamente valorizzata con la data corrente se è stato abilitato l'apposito flag per chiudere le offerte convertite. 
 - **Validità offerta**: permette di impostare una data fine validità per la richiesta di offerta. 
 
-*Pulsanti specifici*
+#### Pulsanti specifici
 > **Sostituisci data prev. consegna nelle righe**: dopo aver specificato la data prevista consegna in testata è possibile sostituirla in massa nelle righe articolo già inserite.
 
 ### Pagamenti
@@ -45,7 +44,8 @@ Altri campi facoltativi sono:
 Le [Soluzioni di pagamento](/docs/configurations/tables/general-settings/payment-terms) sono riportate in automatico dall'*Anagrafica fornitore > tab Pagamenti* e possono essere modificate/cancellate dall'utente.   
 Se al [Tipo pagamento](/docs/configurations/tables/general-settings/payment-types) è associato uno sconto finanziario, l'importo dello sconto viene considerato solo ai fini contabili cioè nelle scadenze del documento e non nel totale DDT.
 
-*Pulsante specifico*
+#### Pulsanti specifici
+
 > **Cancella pagamenti**: utilizzato per cancellare le righe di pagamento selezionate.
 
 ### Sconti
@@ -54,7 +54,8 @@ Vengono proposti solo gli sconti predefiniti ripresi dall'*Anagrafica fornitore>
 
 Gli sconti proposti in testata del documento vengono riportati in ogni nuova riga articolo inserita nel documento. Se dopo aver inserito le righe articolo viene inserito un nuovo sconto in testata questo non viene replicato nelle righe articolo già inserite.
 
-*Pulsante specifico*
+#### Pulsanti specifici
+
 > **Cancella sconti predefiniti**: utilizzato per cancellare gli sconti selezionati.
 
 
@@ -113,7 +114,8 @@ Se si parte direttamente con l'inserimento dell'articolo, la sua classe, il codi
 
 Nella griglia invece vengono proposti tutti gli sconti associati all'articolo, ognuno con la propria base di calcolo e di assegnazione. Gli sconti possono essere ripresi: dall'anagrafica fornitore, dalla soluzione di pagamento assegnata al documento, dal listino, dalla [definizione politiche sconti](/docs/purchase/price-control/definition). Tutti i dati proposti sono modificabili.
 
-*Pulsante specifico*
+#### Pulsanti specifici
+
 > **Cancella sconti**: permette di cancellare lo sconto selezionato dalla griglia corrispondente. 
 
 ### Dati articolo
