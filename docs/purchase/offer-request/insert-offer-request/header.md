@@ -37,6 +37,7 @@ Altri campi facoltativi sono:
 - **Validità offerta**: permette di impostare una data fine validità per la richiesta di offerta. 
 
 #### Pulsanti specifici
+
 > **Sostituisci data prev. consegna nelle righe**: dopo aver specificato la data prevista consegna in testata è possibile sostituirla in massa nelle righe articolo già inserite.
 
 ### Pagamenti
