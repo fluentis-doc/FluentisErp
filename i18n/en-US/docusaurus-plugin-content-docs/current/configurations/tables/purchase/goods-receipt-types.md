@@ -1,30 +1,24 @@
 ---
-title: Goods Receipt Types
-sidebar_position: 13
+title: Tipi ricevimento merci
+sidebar_position: 4
 ---
 
-The goods receipt type is used in order to set the property of a goods receipt.
+La tabella si apre tramite il percorso **Tabelle > Acquisti > Tipi Ricevimento merci** ed è utilizzato per determinare le proprietà di un ricevimento merce.
 
-RIBBON BAR: it represents the Form menu, that is the area in which it is possible to perform actions linked to the procedure in use. The list of features is the following:
+I campi presenti sono:
 
+**Codice**: codice del tipo ricevimento merci.
 
+**Descrizione**: descrizione del tipo ricevimento merci.
 
-| Function | Meaning |
-| --- | --- |
-| Search | Button to search the document type.  |
-| Insert | Button to insert a new document type.  |
-| Delete | Button to delete the document type.  |
-| Preview | Button to perform the print preview.  |
-| Print | Button to print according to the filters set and to the printer configuration.  |
+**Bolla di consegna**: se attivo, il sistema permette la generazione di una DDT dal ricevimento merci. Se non attivo, non sarà possibile generare la DDT dal ricevimento merci quindi le operazioni di carico a magazzino e registrazione DDT rimarranno non collegate. 
 
-**Code**: goods receipt type code.
+**Fattura**: se attivo, il sistema permette la generazione di una fattura dal ricevimento merci. Se non attivo, non sarà possibile generare la fattura dal ricevimento merci quindi l'operazione di carico a magazzino resterà non collegata. 
 
-**Description**: goods receipt type description.
+**Evasione quantità articolo non sommata**: se settato, nel momento in cui si andranno ad evadere righe ordine con quantità parziali nello stesso ricevimento merci questo flag consentirà di riportare le quantità evase dell'ordine suddivise per riga articolo senza sommare le quantità.
 
-**Without Add Quantities**: if it is set, during the execution of this orders type, the executed quantities can be saved into the execution document for single execution lines.
+**Numerazione**: determina la [Numerazione](/docs/configurations/tables/fluentis-numerations) e la relativa **Descrizione** che è associata al *Tipo ricevimento merci*. 
 
+**Controllo qualità**: i *tipi Ricevimento* che hanno questo flag attivo sono visibili nella form [Importa articoli da controllare](/docs/quality/item-control/items-control/item-control-import/) posta nell'area *Qualità*.
 
-
-
-
-
+**Gerstione cespiti**: questo flag permette di abilitare la [Gestione cespiti](/docs/finance-area/fixed-assets/general-overview) per quel tipo ricevimento e di selezionare il **Tipo operazione** che si vuole effettuare, che nel caso degli acquisti sarà un *Costo originario*.

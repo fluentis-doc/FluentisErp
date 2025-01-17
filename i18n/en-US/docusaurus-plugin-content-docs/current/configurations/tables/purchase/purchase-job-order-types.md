@@ -1,32 +1,17 @@
 ---
-title: Purchase Job Order Types
+title: Tipi commesse di acquisto
 sidebar_position: 8
 ---
 
-The purchase job order type is used in order to set the property of a job order.
+La tabella si apre tramite il percorso **Tabelle > Acquisti > Tipi commessa di acquisto** e viene utilizzata per determinare le proprietà di una commessa.
 
-RIBBON BAR: the ribbon bar represents the Form menu, that is the area on which it is possible to perform actions linked to the procedure in use. The list of the possible functions is the following:
+I campi presenti sono:
 
+**Tipo/Descrizione tipo commessa di acquisto**: sono campi obbligatori per definire il tipo della commessa.
 
+**Struttura gerarchica**: se settato, la visualizzazione degli articoli in commessa è di tipo gerarchico.
 
-| Function | Meaning |
-| --- | --- |
-| Search | Command to search document type |
-| Insert | Command to insert a new document type. |
-| Delete | Command to delete document type. |
-| Print Preview | Command to launch print preview. |
-| Print | Command to launch the print according to the set filters and printer configuration. |
+**Numerazione**: per selezionare la [numerazione](/docs/configurations/tables/fluentis-numerations) appropriata. 
 
-
-
-| Function | Meaning |
-| --- | --- |
-| Type | It represents the job order code. |
-| Description | Job order code description. |
-| Hierarchical Structure | If set, the items visualization on job order is hierarchical. |
-
-
-
-
-
+**Stampa** permette di indicare il modello di stampa che verrà utilizzato in fase di stampa della commessa, mediante il campo **Numero copie**, il numero di copie del documento che sarà proposto di default per la stampa.
 

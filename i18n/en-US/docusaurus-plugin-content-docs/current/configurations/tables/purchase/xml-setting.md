@@ -1,41 +1,37 @@
 ---
-title: XML Setting
-sidebar_position: 2
+title: Impostazione XML
+sidebar_position: 10
 ---
 
-This table is necessary to set data in order to import a vendor price list by unloading it from a website with XML format.
+La tabella si apre tramite il percorso **Tabelle > Acquisti > Fatturato acquisti** ed è utilizzata per determinare le proprietà di una richiesta.   
+Questa tabella è necessaria per impostare i dati per importare un listino fornitore scaricandolo da un sito internet in formato XML.
 
-RIBBON BAR: the ribbon bar represents the Form menu, that is the area on which it is possible to perform actions linked to the procedure in use. 
+I campi presenti sono:
 
+**Conto-Sottoconto/Descrizione sottoconto**: conto e sottoconto del cliente per cui importare il listino.
 
+**Indirizzo**: indirizzo da cui scaricare il file xml
 
-| Function | Meaning |
-| --- | --- |
-| Search | Command to search document type. |
-| Use |  |
-| Duplicate | Command to duplicate a XML setting. It can create a document copy mentioning all the original document terms, updated with current data |
-| Delete | Command to delete document type |
+**Utente**: utente per collegarsi all'indirizzo.
 
+**Password**: password per collegarsi all'indirizzo.
 
+**Webservice**: path dove trovare i dati da importare e il file.
 
-| Function | Meaning |
-| --- | --- |
-| Account-Detail Account / Detail Account Description | Account and Detail Account of customer for which to import price list. |
-| Address | The xml file can be downloaded here: http://zoppelletto@gruppomade.com:srvr5m9p@ws.madelogo.net |
-| User | User to connect to address. |
-| Password | Password to connect to the address. |
-| Webservice | Path where it is possible to find data to be imported and the file: /listino/MPI.xml |
-| Initial Information | Initial Information from which the creation of xml file: offset=”1” starts |
-| Initial Tag  | It refers to the initial tab to recognize the initial xml file: price list |
-| Initial Line | It refers to the line from which to start with import: items |
-| Homepage | It refers to the homepage: page |
-| Page Dimension | It refers to the pages dimension: offset=”500” |
-| Class | Class to be used to import items. |
-| UM | UM to be used to import items. |
-| Mark | Mark to be used to import items. |
+**Informazione iniziale**: informazione iniziale da dove partire per la creazione del file xml: offset=”1”.
 
+**Tag iniziale**: definisce il tag iniziale per riconoscere l'inizio dei file xml: listino.
 
+**Riga iniziale**: definisce la riga da cui iniziare con l'importazione: articoli.
 
+**Pagina iniziale**: definisce la pagina iniziale: page.
 
+**Dimensione pagina**: definisce la dimensione delle pagine: offset=”500”.
 
+**Classe**: classe da utilizzare per importare gli articoli.
 
+**UM**: UM da utilizzare per importare gli articoli.
+
+**Marca**: marca da utilizzare per importare gli articoli. 
+
+Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
