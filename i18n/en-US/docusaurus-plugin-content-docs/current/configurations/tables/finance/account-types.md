@@ -1,44 +1,67 @@
 ---
-title: Account Types
-sidebar_position: 21
+title: Tipi conto
+sidebar_position: 30
+---
+:::tip[FAst Start]
+La tabella è interessata dalla procedura di [**Fast Start**](/docs/guide/fast-start)
+
+Nel caso in cui si intenda configurare manualmente fare riferimento alla check list della pagina linkata
+:::
+
+
+Percorso: **Configurazione > Tabelle > Amministrazione > Tipi conto**
+
+Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+
+### Gestione tabella
+
+La definizione della tabella tipo conto non è altro che una ‘qualifica' che va a indicare alla procedura come gestire il codice di sottoconto cui è assegnato:
+
+- innanzi tutto va a identificare come valorizzare il dettaglio di gestione delle 4 tipologie di anagrafica previste;
+
+- in secondo luogo va a identificare le sezioni di appartenenza a bilancio (attivo/passivo/costi/ricavi);
+
+- può infine servire come criterio di filtro, tipicamente all'interno dell'help conti.
+
+:::note Campi tabella
+**Codice**: codice tipo conto.
+
+**Descrizione**: descrizione tipo conto.
+
+**P. Attivo**: con flag su attivo.
+
+**P. Passivo**: con flag su passivo.
+
+**E. Costi**: con flag su costi.
+
+**E. Ricavi**: con flag su ricavi.
+
+**C. Ordine**: con flag su conti d'ordine.
+
+**Cliente**: con flag su clienti + attivo.
+
+**Fornitore**: con flag su fornitori + passivo.
+
+**Banca**: con flag su attivo o passivo + banca.
+
+**Agente**: con flag su agente + passivo.
+
+**Servizio**: con flag su servizio. I conti con tale flag attivo sono i sottoconti per i quali Ia procedura gestisce in automatico le scritture di rettifica e integrazione a livello di bilanci infrannuali, ma anche le scritture di assestamento di contabilità generale.
+
+**Controlling**: I conti con questo tipo si possono utilizzare solo nell'area controlling e non in registrazioni di Contabilità generale
+
 ---
 
-The table ‘account type' is a ‘qualification' that indicates to the procedure how to manage the relative detail account code:
+**Flag successivi (da *Tutti* a *Impostazioni Conai*)**: Con questi flag si abilita la visibilità dei corrispondenti tab all'interno delle anagrafiche contabili clienti / fornitori. Attivando *Tutti* i tab saranno tutti visibili.
 
-a) first of all, it identifies how to valorize the management detail of the 4 register typologies;
+:::
 
-b) secondly it identifies the sections that belong to the balance (active/passiv/costs/revenues);
+---
+### Video Tutorials
 
-c) finally it can offer a filter criterion within help accounts
-
-
-
-| Function | Meaning |
-| --- | --- |
-| Code  | Account type code |
-| Description | Account type description |
-| P. Active | With flag on active |
-| P. Passive | With flag on passive |
-| E. Costs | With flag on costs |
-| E. Revenues | With flag on revenues |
-| Interim Account | With flag on interim account |
-| Customer | With flag on customers + active |
-| Vendor | With flag on vendor + passive |
-| Bank | With flag on active or passive + bank |
-| Agent | With flag on agent + passive |
-| Service | With flag on service – the accounts with this flag are the detail accounts where the procedure manages the automatic adjusting entries and integration according to mid-year balance sheet, but also adjustment records according to general accounting.  |
-
-RIBBON BAR: the ribbon bar represents the Form menu, that is the area in which it is possible to operate on previous recordings or generate new ones. The possible features list is the following:
-
-
-
-| Function | Meaning |
-| --- | --- |
-| Search | Button to look for the account type through the fields: code and description |
-| Insertion | Button to insert the account type |
-| Delete | Button to delete the account type where the user is located |
-| Preview  | Button to perform the preview |
-| Print | Button to print |
+:::important Vedi Anche
+[**VIDEO TUTORIALS SULLE TABELLE AMMINISTRATIVE**](/docs/video/finance/intro.md)
+:::
 
 
 

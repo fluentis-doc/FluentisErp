@@ -1,28 +1,19 @@
 ---
-title: VAT Accounting Types
+title: Tipi contabilizzazione IVA
 sidebar_position: 24
 ---
+Questa tabella è richiamata all'interno dell'anagrafica clienti / fornitori alla quale si rinvia e poi all'interno delle Aliquote/modalità iva, per definire gli specifici sottoconti da utilizzare su ogni tipologia.
 
 
+**Codice**: codice identificativo del tipo di contabilizzazione IVA.
 
-| Function | Meaning |
-| --- | --- |
-| Code | Identification code of VAT accounting type |
-| Description | Description of VAT accounting type |
-| Customer |  |
-| Vendor |  |
+**Descrizione**: descrizione del tipo di contabilizzazione IVA.
 
-RIBBON BAR: the ribbon bar represents the Form menu, that is the area in which it is possible to operate on previous recordings or generate new ones. The possible features list is the following:
+**Cliente**: flag per specificare se la riga fa riferimento ad un cliente.
 
+**Fornitore**: flag per specificare se la riga fa riferimento ad un fornitore.
 
-
-| Function | Meaning |
-| --- | --- |
-| Search | Button to look for VAT accounting type through the fields: code filter and description |
-| Insertion | Button to insert the VAT accounting type |
-| Delete  | Button to delete the VAT accounting type, where the user is located |
-| Preview  | Button to perform the preview |
-| Print | Button to print |
+É possibile spuntare entrambi i flag quando la riga è sia cliente che fornitore.
 
 
 

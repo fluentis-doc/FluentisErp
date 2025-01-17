@@ -1,9 +1,9 @@
 ---
-title: SFA Cash Register Template
+title: Causali cassa SFA
 sidebar_position: 6
 ---
 
-In this table it is possible to encode templates for Sales Force Automation management, that is a module no longer used.
+All'interno di questa tabella si codificano le causali per la gestione del Sales Force Automation, modulo non più in uso. 
 
 
 

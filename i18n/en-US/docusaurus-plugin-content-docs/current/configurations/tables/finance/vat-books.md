@@ -1,53 +1,89 @@
 ---
-title: VAT Books
+title: Registri IVA
 sidebar_position: 20
 ---
 
-This is the setting table of VAT books to manage in active company.
+:::note Percorso
+**Configurazione > Tabelle > Amministrazione > Registri IVA**
 
 
+:::tip[FAst Start]
+La tabella è interessata dalla procedura di [**Fast Start**](/docs/guide/fast-start)
 
-| Function | Meaning |
+Nel caso in cui si intenda configurare manualmente fare riferimento alla check list della pagina linkata
+
+I registri creati dal Fast Start sono già pronti per gestire
+
+- Acquisti e vendite Italia
+- Acquisti e vendite Reverse Charge oltre a sezionale per giroconto acquisti
+- Acquisti e vendite UE oltre a sezionale per giroconto acquisti
+- Acquisti e vendite Extra UE
+- Corrispettivi
+- Riepilogativo per stampa liquidazioni iva
+:::
+
+---
+
+Tabella di impostazione dei registri IVA da gestire nella società attiva. 
+
+:::note Pulsanti della Ribbon bar
+| Funzione | Significato |
 | --- | --- |
-| Code | Alphanumeric code that identifies the register |
-| Description | Description of the register that is usually printed in official reports |
-| Register Type | Pre-encoded typology of register |
-| Description | Description of register type |
-| Protocols Control | The setting of this flag blocks the possibility to print a register in definitive, that could have deficits in the protocols or incongruities in the organization of them  |
-| To Allocate | This flag imposes the management of its register in the valuable consideration allotment procedure |
-| In VAT Settlement | It enables the user to determine which VAT registers to manage in the periodic VAT settlement print |
-| Ref. Rec. Purchase | This field is active only for valuable considerations/sales registers, in order to indicate the beginning purchases VAT register of the valuable considerations allotment  |
-| Description | Ref. rec. Purchase description |
+| Nuovo | Pulsante per effettuare l'inserimento di un nuovo registro IVA. |
+| Inserimento anno | Pulsante per effettuare l'inserimento di un nuovo anno per il registro IVA su cui si è posizionati. |
+| Cancella | Pulsante per effettuare la cancellazione del registro IVA su cui si è posizionati. |
+| Cancella anno | Pulsante per effettuare la cancellazione dell'anno del registro IVA su cui si è posizionati. |
+| Anteprima | Pulsante per effettuare la stampa. |
+| Stampa | Pulsante per effettuare la stampa. |
+| Annulla stampe definitive | Pulsante per effettuare l'annullamento delle stampe definitive dei registri. Si apre un dialog nel quale selezionare il registro e il periodo che si intende annullare. |
+:::
 
-This section enables the user to organize the starting number of references for every accounting period in field ‘First VAT reference'. 
+I campi della **prima sezione**:
 
+**Codice**: codice alfanumerico identificativo del registro.
 
+**Descrizione**: descrizione del registro stampato normalmente nei report ufficiali.
 
-| Function | Meaning |
-| --- | --- |
-| Year | Reference year |
-| First VAT Reference | First VAT reference number of the reference year |
-| Last VAT Reference | The field ‘Last VAT reference number' enables the user to visualize the last VAT reference number, that was printed in definitive in the same register |
-| Last Print Date | Execution date of the last definitive print |
-| Last Page Printed | Last page printed in definitive |
-|  |  |
+**Tipo registro**: tipologia precodificata del registro. Prestare attenzione al corretto settaggio ad esempio dei registri che accolgono il giroconto per acquisti intra o reverse charge i quali saranno impostati su *Vendite* ed a differenziare correttamente la fattispecie degli acquisti / vendite in sospensione d'imposta ed il regime speciali ex art. 74 ter dpr 633/72.
 
-RIBBON BAR: the ribbon bar represents the Form menu, that is the area in which it is possible to operate on previous recordings or generate new ones. The possible features list is the following:
+**Controllo protocolli**: l'impostazione di questo flag blocca la possibilità di stampare in definitivo un registro che abbia buchi nei protocolli o incongruenze nell'ordinamento degli stessi.
 
+**Da ventilare**: questo flag impone la gestione del registro relativo nella procedura di ventilazione dei corrispettivi.
 
+**Da liquidare**: permette di determinare quali registri IVA siano da gestire nella stampa della Liquidazione IVA periodica.
 
-| Function | Meaning |
-| --- | --- |
-| Insert | Button to insert a new VAT register |
-| Insert Year | Button to insert a new year for VAT register, where the user is located |
-| Delete VAT Book | Button to delete the VAT register, where the user is located |
-| Delete Year | Button to delete the VAT register year, where the user is located |
-| Preview | Button to perform the preview |
-| Print  | Button to print |
-| Cancel Definitive Reports | Button to cancel definitive reports of registers. A dialog can be open where it is possible to select the register and period to cancel |
+**Rif. reg. acquisto**: il campo è attivo solo per i registri vendite/corrispettivi, al fine di indicare il registro iva acquisti d'origine della ventilazione dei corrispettivi.
 
+**Descrizione**: descrizione rif. reg. acquisto.
 
+**Numerazione**: consente di impostare per ogni registro un numeratore con le consuete opzioni standard comuni agli altri numeratori presenti nel gestionale, al posto della numerazione standard prevista per i registri iva. Nella localizzazione italiana questo campo non viene utilizzato.
 
+**Descrizione**: descrizione del numeratore associato
 
+**Tipo attività Iva**: la combo box rinvia alla tabella Tipo attività Iva dove è possibile codificare liberamente diverse tipologie di attività ai fini iva (a titolo di esempio "Produzione" ed "Immobiliare") ai quali associare una percentuale di *Pro Rata* di detraibilità iva. E' presenta anche un flag per definire quale sia l'attività principale prevalente sulla quale totalizzare i valori nella liquidazione iva.
 
+**Descrizione**: descrizione del tipo attività iva
 
+---
+
+**La seconda sezione** consente di impostare il contatore dei protocolli per ogni anno contabile nel campo 'Prot. IVA Iniziale'.
+
+**Anno**: anno di riferimento.
+
+**Prot. IVA iniziale**: protocollo IVA iniziale dell'anno di riferimento.
+
+**Ultimo prot. IVA**: consente di visualizzare qual'è l'ultimo protocollo IVA che è stato stampato in definitivo nel registro stesso.
+
+**Data ultima stampa**: data di esecuzione dell'ultima stampa definitiva.
+
+**Ultima pag. stampata**: ultimo numero di pagina stampata in definitiva.
+
+---
+
+:::tip nota
+la stampa di questa tabella consente di visualizzare l'ultimo periodo stampato in modo definitivo per ogni registro e anno
+:::
+
+:::important Vedi Anche
+[**VIDEO TUTORIALS SULLE TABELLE AMMINISTRATIVE**](/docs/video/finance/intro.md)
+:::

@@ -1,32 +1,23 @@
 ---
-title: Nomenclature Codes
+title: Codici nomenclatura
 sidebar_position: 12
 ---
 
-The table enables the user to define and manage the intra nomenclature codes list, that are in use in the company. Therefore it is possible to delete, add and edit the existing list
+La tabella consente di definire e gestire la lista dei codici di nomenclatura combinata Intrastat in uso nell'azienda. E' quindi possibile cancellare, aggiungere e modificare la lista esistente.
 
+**Codice nomenclatura**: rappresenta il codice della nomenclatura.
 
+**Descrizione breve**: campo non indispensabile utile per inserire una seconda descrizione o descrizione abbreviata.
 
-| Function | Meaning |
-| --- | --- |
-| Nomenclature Code | Nomenclature Code |
-| Description | Nomenclature description  |
-| Supp. UM | Supplementary unit of measurement |
+**Descrizione**: rappresenta la descrizione del codice nomenclatura.
 
-RIBBON BAR: the ribbon bar represents the Form menu, that is the area in which it is possible to operate on previous recordings or generate new ones. The possible features list is the following:
+**UM supp.**: rappresenta l'unità di misura supplementare (Cfr. istruzioni ufficiali dei modelli Intrastat sul sito dell'Agenzia delle Dogane).
 
+**Data fine validità**: per bloccare l'uso del codice corrispondente.
 
+**Servizio**: indica la codifica di una nomenclatura dei servizi, a 5 caratteri, da proporre in valorizzazione delle sezioni dei servizi nei modelli
 
-| Function | Meaning |
-| --- | --- |
-| Search | Button to look for a nomenclature code through the fields: code, description and U.M. |
-| New | Button to insert a new nomenclature code |
-| Delete  | Button to delete the nomenclature code, where the user is located |
-| Preview  | Button to perform the preview |
-| Print | Button to launch the print |
-
-
-
-
-
+:::tip Nota
+All'interno di Bizlink è prevista una procedura di import da foglio elettronico per aggiornare di anno in anno le nomenclature in modo massivo
+:::
 

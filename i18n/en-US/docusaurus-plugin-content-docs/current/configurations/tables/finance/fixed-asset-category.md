@@ -1,78 +1,115 @@
 ---
-title: Fixed Asset Category
+title: Categoria cespite
 sidebar_position: 5
 ---
 
-In this table it is possible to code the fixed assets category, that will be managed in the company.
+:::tip[FAst Start]
+La tabella è interessata dalla procedura di [**Fast Start**](/docs/guide/fast-start)
 
+Nel caso in cui si intenda configurare manualmente fare riferimento alla check list della pagina linkata
+:::
 
+All'interno di questa tabella si codificano le categorie dei cespiti gestiti nella società. 
 
-| Function | Meaning |
+### **Griglia superiore**
+
+**Categoria**: codice alfanumerico.
+
+**Descrizione categoria**: descrizione della categoria.
+
+**Conto**: il conto patrimoniale dell'immobilizzazione.
+
+**Sottoconto**: il sottoconto patrimoniale dell'immobilizzazione.
+
+**Descrizione**: descrizione del sottoconto patrimoniale dell'immobilizzazione.
+
+**Mat/Imm.**: indicazione della tipologia Materiale o Immateriale del bene.
+
+**Massimale amm.**: importo massimo dell'ammortamento raggiungibile per ogni cespite della categoria.
+
+**Perc. amm.**: la percentuale massima del valore del cespite che potrà essere ammortizzata.
+
+**Oper. incrementali**: se il flag non è impostato, così come di default, ogni riga di incremento del valore del cespite sarà gestita con un dettaglio d'ammortamento separato e autonomo Se il flag è impostato, al contrario, ogni incremento sarà attribuito alla riga d'acquisto iniziale, andando ad incrementare sempre il valore iniziale alla sua data d'origine.
+
+**Limite amm. totale**: quota limite per l'applicazione dell'ammortamento totale al 100% nell'anno d'acquisto.
+
+**Rivalutazioni**: flag di gestione dei dettagli delle rivalutazioni.
+
+**Cod. bilancio**: codice di bilancio per la stampa del prospetto delle rivalutazioni.
+
+**Gestione extra-contabile**: attiva la gestione dei dati extracontabili del cespite: questa prevede una duplicazione dei valori patrimoniali contabili al fine di applicare una logica d'ammortamento extracontabile separata
+
+**Giorni**: Attivando questo flag il calcolo della quota di ammortamento terrà conto dei giorni esatti di possesso del bene nell'anno in corso, anzichè riferirsi alla logica standard che calcola la quota intera indipendentemente dalla data di acquisto, eventualmente dimezzandola il primo anno se il flag *Amm. Primo anno* presente nella seconda griglia è stato attivato (vedi sotto).
+
+**Numerazione**: (Facoltativo) Permette di definire una numerazione delle schede cespite specifica per ogni singola categoria. Il campo si collega all'[**apposita tabella**](/docs/configurations/tables/fluentis-numerations) dove definire il numeratore. Se non viene definito, di default, continua ad essere utilizzata la numerazione generale dei cespiti eventualmente collegata al precodice (oppure unica).
+
+### Seconda griglia
+
+La seconda sezione  è dedicata all'impostazione dei dettagli di ammortamento applicabili alla categoria superiore selezionata.
+
+**Tipo amm.**: selezionare la tipologia di ammortamento fra ammortamento ordinario, ammortamento anticipato e ammortamento decelerato, quest'ultimo normalmente non utilizzato.
+
+**Conto**: conto di costo sul quale rilevare l'ammortamento periodico.
+
+**Sottoconto**: sottoconto di costo sul quale rilevare l'ammortamento periodico.
+
+**Descrizione conto**: descrizione sottoconto di costo.
+
+**Fondo conto**: conto di fondo sul quale accantonare l'ammortamento periodico.
+
+**Fondo sottoconto**: sottoconto di fondo sul quale accantonare l'ammortamento periodico che potrebbe essere anche lo stesso valore patrimoniale attivo per stornare direttamente da questo il valore.
+
+**Descrizione conto**: descrizione sottoconto di fondo.
+
+**Escludi**: il flag consente di escludere dal calcolo automatico degli ammortamenti il tipo ammortamento selezionato.
+
+**Percentuale**: la percentuale d'ammortamento da applicare per il tipo d'ammortamento impostato.
+
+**N. anno**: si attiva solo in corrispondenza degli ammortamenti anticipati, nel quale vanno inseriti i 3 anni di applicazione. In riferimento a questo valore, va ricordato che per i cespiti usati il numero di anni d'applicazione è impostato automaticamente sul solo anno d'acquisto.
+
+**Amm. primo anno**: viene proposto automaticamente per tutte le categorie materiali, andrà a dimezzare la percentuale d'ammortamento nell'anno di inizio attività del cespite.
+
+**Fiscale**: potrà essere impostato per le righe di ammortamento anticipato per gestirlo come ammortamento fiscale non contabilizzabile.
+
+**Tipo deducibilità**: consente di assegnare al tipo di ammortamento un codice di deducibilità ai fini fiscali.
+
+**Descr. deducibilità**: descrizione del tipo di deducibilità.
+
+---
+
+| Bottone della Ribbon Bar | Significato |
 | --- | --- |
-| Code | Alphanumeric code   |
-| Description | Category description |
-| Account | Immobilization patrimonial account |
-| Detail Account | The immobilization patrimonial detail account  |
-| Description | Description of the immobilization patrimonial detail account |
-| Mat/Imm | Information about the material or immaterial asset typology |
-| Max. Depreciation | Maximum amount of the achievable depreciation for every category fixed asset |
-| Perc. Depr. | Maximum percentage of the fixed asset value, that could be amortized |
-| Incremental Oper. | If the flag is not set up as a default flag, every increase line of the fixed asset value will be managed with a distinct and autonomous depreciation detailOn the contrary, if the flag is set up, every increase will be assigned to the initial purchase line, in order to increase the initial value in the original date |
-| Tot. Depr. Limit | Limit amount for 100% total depreciation application on the purchase year |
-| Revaluations | Management flag of revaluations details  |
-| Balance Code | Balance code for the revaluations prospect print |
-| Objective Depr. | It activates the management of the fixed asset objective data: this causes a duplication of the accounting patrimonial values in order to use a non-accounting distinct depreciation logic |
-| Days of Use Calculation | It is a flag, that is necessary in order to activate the calculation of fixed asset days of use |
+| Cerca nella tabella superiore | Pulsante per effettuare la ricerca nella tabella superiore attraverso i campi di filtro categoria e descrizione. |
+| Inserisce nella tabella superiore | Pulsante per inserire una nuova categoria cespite. |
+| Inserisce nella tabella dettaglio | Pulsante per inserire il dettaglio della tabella superiore selezionata. |
+| Inserisce nella tabella Cdc | Pulsante per inserire i Cdc della tabella superiore selezionata. OBSOLETO |
+| Cancella righe selezionate | Pulsante per effettuare la cancellazione delle righe selezionate  (categoria cespite). |
+| Cancella righe selezionate dalla tabella inferiore | Pulsante per effettuare la cancellazione delle righe selezionate di tabella inferiore ( dettaglio del tipo ammortamento). |
+| Cancella righe selezionate dalla tabella Cdc | Pulsante per effettuare la cancellazione delle righe selezionate di tabella centri di costo. OBSOLETO |
+| Salva | Pulsante per salvare le modifiche. |
 
-The second section deals with the setting of depreciation details, which can be applicable to the selected upper category.
+---
 
+### GRIGLIA DEI CENTRI DI COSTO (RIMOSSA SE ATTIVO IL MODULO CONTROLLING COMPLETO IN TABELLA SOCIETA', SENZA IL PARAMETRO DI USO CENTRI CONTABILI)
 
+:::note NOTA
+Nonostante la gestione dei centri di costo per i cespiti possa essere elaborata con delle logiche più sofisticate di gestione dell'ammortamento oggettivo, utili alle esigenze di un controllo di gestione approfondito, è comunque possibile agganciare un centro di costo specifico per il singolo cespite, **nella tab Dettaglio**, (oppure direttamente sulla categoria cespite ma in tal caso occorre disattivare il Flag Gestione controlling nell'anagrafica della società in uso) da valorizzare con la quota annuale calcolata ai fini fiscali e contabili.
+:::
 
-| Function | Meaning |
-| --- | --- |
-| Depr. Type | It's necessary to select the depreciation typology between: standard depreciation, anticipated depreciation and decelerated depreciation, the last is not very used normally. |
-| Account Cost | In the account cost it is possible to find the periodic depreciation  |
-| Detail Acc. Cost | In the detail account cost it is possible to find the periodic depreciation |
-| Account Description | Detail account cost description |
-| Fund Account | In the fund account it is possible to put aside the periodic depreciation  |
-| Fund Detail Account  | In the fund detail account it is possible to put aside the periodic depreciation, that could correspond to the same patrimonial asset value in order to charge off directly from this value |
-| Account Description | Fund detail account description |
-| Exclude | The flag enables the user to exclude the selected depreciation type from the automatic calculation |
-| Percentage | It is the applicable depreciation percentage for the set depreciation type |
-| Year Number | It can be activate only in correspondence to the anticipated depreciations, where the user has to record the 3 application years. According to this value, it's important to remember that, for the used fixed assets, the application years number is automatically set only on the purchase year |
-| Depr. First Year | Depr. First Year	It is proposed automatically for all material categories and it will have the depreciation percentage in the first year activity of fixed asset |
-| Fiscal | It could be inserted for the anticipated depreciation lines in order to manage it as a non-accounting fiscal depreciation  |
-| Deductibility Type | It enables the user to assign a deductibility code to the depreciation type for taxation |
-| Deductibility Description | Deductibility type description |
+All'interno della scheda cespite nella griglia centri di costo della tab **Operazioni patrimoniali** è possibile assegnare, in riferimento alla **singola riga d'ammortamento**, la valorizzazione percentuale di default a centro di costo per i cespiti collegati alla categoria. Tale impostazione è secondaria rispetto all'assegnazione dei centri di costo all'interno della singola anagrafica cespite (quella della tab Dettaglio).
 
-In the third section it is possible to assign the default percentage valorization with cost center and for the category fixed assets, always with reference to every depreciation line. This setting is not so important as the cost centers assignment in the fixed asset register.
+**CDC**: centro di costo a cui assegnare la valorizzazione dei cespiti appartenenti alla categoria.
 
+**Descrizione**: Descrizione centro di costo.
 
+**Percentuale**: Impostazione della percentuale di valorizzazione al centro di costo.
 
-| Function | Meaning |
-| --- | --- |
-| C.C. | It is the cost center to which assign the category fixed assets valorization |
-| Description | Cost center description |
-| Percentage | This is the valorization percentage setting for cost center |
+---
 
-RIBBON BAR: the ribbon bar represents the Form menu, that is the area in which it is possible to operate on previous recordings or generate new ones. The possible features list is the following:
-
-
-
-| Function | Meaning |
-| --- | --- |
-| Search on Table above | It is a command, that is necessary in order to search information on table above and through the description and category filter fields |
-| Insert on Table above | It is a command, that is necessary in order to insert a new fixed asset category |
-| Insert on Detail Table  | It is a command, that is necessary in order to insert the detail of the selected table above  |
-| Insert on Table C.C. | It is a command, that is necessary in order to insert cost centers of the selected table above |
-| Delete Selected Lines | It is a command, that is necessary in order to delete the selected lines (fixed asset category) |
-| Delete Selected Lines from Table below | It is a command, that is necessary in order to delete the selected lines of the table below (depreciation type detail) |
-| Delete Selected Lines from C.C Table  | It is a command, that is necessary in order to delete the selected lines of the cost centers table |
-| Preview | It is a preview command  |
-| Print | It is a print command |
-
-
-
+### **VIDEO TUTORIALS**
+:::important Vedi Anche
+[**VIDEO TUTORIALS SULLE TABELLE CESPITI**](/docs/video/finance/intro.md)
+:::
 
 
 

@@ -1,22 +1,10 @@
 ---
-title: Dunning Letters - Search
+title: Ricerca tipi solleciti
 sidebar_position: 1
 ---
 
-RIBBON BAR: the ribbon bar represents the Form menu, that is the area in which it is possible to operate on previous recordings or generate new ones. The possible features list is the following:
+Consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
 
+La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
 
-
-| Function | Meaning |
-| --- | --- |
-| Search | It is a command that is necessary in order to look for a dunning letter type through the fields: code and description |
-| New Type | It is a command to create a new dunning letter type |
-| Edit Type | It is a command that is necessary in order to edit the dunning letter type, where the user is located |
-| View Type | It is a command that is necessary in order to view the dunning letter type, where the user is located |
-| Delete Type | It is a command that is necessary in order to delete the dunning letter type, where the user is located |
-
-
-
-
-
-
+Per poter inserire nuovi record è necessario cliccare sulla prima riga vuota della griglia oppure premere il pulsante **Nuovo**.
