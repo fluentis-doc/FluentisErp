@@ -1,33 +1,38 @@
 ---
-title: Activity Types
-sidebar_label: Activity Types
+title: Tipi di Attività
+sidebar_label: Tipi di Attività
 sidebar_position: 2
 ---
 
-The *types of Activity* currently available are:
+I tipi di **Attività** disponibili sono:
 
 **Generate Script**
-> Lets you create a generic script in C#, thanks to the script editor widget (previously mentioned in the *scripting* article).  
+> Consente di creare uno script generico, utilizzando la libreria **Blockly** oppure scrivendo direttamente del codice **C#**.
 
 **Data Source**
-> Lets you select a Data Source - under the *Activity Configuration* tab - from an existing collection of Data Sources previously created by the user (from the *Application Resource Manager* application).
+> Consente di selezionare un Data Source - dal tab **Configurazione Attività** - da una collezione esistente di Data Sources precedentemente creata dall'utente (da Fluentis).   
+> Un'attività di tipo Data Source permette di creare un'attività utilizzabile in un task che ritorna il record-set di un datasource realizzato in Fluentis gestendo eventuali parametri di input.
 
-:::success video tutorial
-At this link you can find the **[video](https://youtu.be/egDCFGZOu14)** explaining the aforementioned activity type.
-:::
+
+<!-- :::success Video Tutorial
+A questo link **[video](https://youtu.be/egDCFGZOu14)** troverai la spiegazione su questo tipo di attività.
+::: -->
 
 **Run Report**
-> Allows to create a report based on parameters selected in the <i>Activity Configuration</i> tab, such as: business object, type of print report, export format and various attached report parameters.
+> L'attività di tipo Run Report permette di creare e salvare un'attività che andrà a generare un report con un possibile set di parametri di input.
 
 **SQL Query**
-> Allows to execute queries created under the **Activity Configuration > Script** tab, with a set of predefined parameters - made available in case you need to query against an external database - and optionally custom parameters.
+> L'attività di tipo SQL Query permette di creare e salvare un'attività che andrà ad eseguire una query SQL e a ritornarne il record set. Supervisor permetterà di eseguire due tipi di attività SQL Query:
+> Basata su una Linked Query, ovvero una query creata in Fluentis tramite il Fluentis Query Studio.
+> Basata su uno script, ovvero una query SQL scritta manualmente in questo contesto.
 
-:::success video tutorial
-At this link you can find the **[video](https://youtu.be/bzyelPIs9tk)** explaining the aforementioned activity type.
-:::
+<!-- :::success Video Tutorial
+A questo link **[video](https://youtu.be/bzyelPIs9tk)** troverai la spiegazione su questo tipo di attività.
+::: -->
 
 **Stored Procedure**
-> Executes a stored procedure previously created in the Fluentis database, with the values of defined in the *Linked Parameters* tab. It is important to verify the parameters used in the stored procedure, with the parameters defined in the *Linked Parameters* tab.
+> L'attività di tipo Stored Procedure permette di creare e salvare un'attività che andrà ad eseguire una Stored Procedure con un po ssibile set di parametri di input e un possibile set di parametri di output.
 
 **Mail Template**
-> Returns a document - of different formats (i.e. Pdf, HTML, Docx, Doc) that can be selected in the *Document Generation Setting* tab - formatted in the *Template Document* tab, with data taken from the input parameters of the *Linked Parameters* tab.
+> L'attività di tipo Mail template permette di creare e salvare un'attività che andrà a generare un template per l'eventuale e-mail da inviare basata sui tempalte word e di inviare e-mail multiple tramite i parametri preconfigurati tra cui ToFieldFormula.
+

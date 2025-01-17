@@ -1,11 +1,26 @@
 ---
-title: Distribution List
-sidebar_label: Distribution List
+title: Liste di Distribuzione
+sidebar_label: Liste di Distribuzione
 sidebar_position: 0
 ---
 
-A *Distribution List* is a list made of members, that are arbitrary added by the user. It is used in a context of e-mails sending.
+La funzionalità di Supervisor riguardante le **Liste di Distribuzione** permette di definire delle liste contenenti una serie di contatti, identificati da campi obbligatori e/o facoltativi:
+- Nome
+- Cognome
+- Username in Fluentis
+- <mark>Email (campo obbligatorio)</mark>
+- Indirizzo civico
+- Città
+- Provincia
+- Partita Iva
+- Sito Web
+- Note
 
-The **Distribution List** form opens via the path **Application > Supervisor > Distribution List**.
+Queste liste si rivelano molto utili nell'invio massivo di Email da **Supervisor**, permettendo di operare un invio multiplo ad ogni destinatario incluso nella lista.  
+La form Liste di Distribuzione si apre dal menu complementare **Strumenti** > **Fluentis Supervisor** > **Liste di Distribuzione**.
 
-Some of the functionalities inside the form refer to a standard use, therefore for anything not detailed in this document on the standard functions of the form, refer to the following link [functionalities, buttons and common entries](/docs/guide/common).
+![alt text](/img/it-it/applications/supervisor/supervisor16.png)
+
+Alcune delle funzionalità all'interno della form si riferiscono ad un utilizzo standard. Per qualsiasi dettaglio sull'utilizzo di questa form non esplicitato qui, riferirsi a questo [articolo](/docs/guide/common).
+
+
