@@ -21,13 +21,13 @@ U ovom dijelu automatski se predlaže trenutni **Datum** koji se može promijeni
 
 Obrazac sadrži niz kartica:
 
--  [Zaglavlje](/docs/purchase/purchase-delivery-note/insert-purchase-delivery-note/header) i pripadajući [Postupci](/docs/purchase/purchase-delivery-note/insert-purchase-delivery-note/header-procedures/execution-from-purchase-order) 
+-  [Zaglavlje] i pripadajući [Postupci]
 
--  [Artikli](/docs/purchase/purchase-delivery-note/insert-purchase-delivery-note/items) 
+-  [Artikli] 
 
--  [Sažeci](/docs/purchase/purchase-delivery-note/insert-purchase-delivery-note/summaries) 
+-  [Sažeci]
 
--  [Prijevoz](/docs/purchase/purchase-delivery-note/insert-purchase-delivery-note/transport) 
+-  [Prijevoz]
 
 
 Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
