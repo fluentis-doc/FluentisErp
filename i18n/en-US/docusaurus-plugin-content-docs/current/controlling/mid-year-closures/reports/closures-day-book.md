@@ -1,9 +1,9 @@
 ---
-title: Closures Day-Book
+title: Brogliaccio chiusure
 sidebar_position: 2
 ---
 
-The report enables the user to print the off-balance records associated to a certain mid-year closure.
+La stampa può essere lanciata dalla maschera di Ricerca registrazioni extracontabili di chiusura e consente di stampare, appunto, le registrazioni extracontabili associate ad una determinata chiusura infrannuale.
 
 
 
