@@ -1,26 +1,26 @@
 ---
-title: VAT 74ter Settlement
+title: Liquidazione iva 74 ter
 sidebar_position: 6
 ---
 
-Thanks to this report procedure it is possible to calculate the credit/debit VAT of the period of reference, both for ordinary system and 74 ter system.
+Con questa procedura di stampa si procede al calcolo dell'IVA a credito/debito del periodo di riferimento sia del regime ordinario IVA che del regime 74 ter.
 
-Once that the period and the year of reference are set (the period depends on the frequency of the periodic VAT settlement set in the accounting parameters) the user can decide on which register print the settlement; normally, this operation is made at the end of the selling register or on a dedicated summary register (suggested option).
+Una volta impostato il periodo e l'anno di riferimento (dove il periodo sarà mensile o trimestrale a seconda della periodicità della liquidazione IVA periodica impostata nei parametri di contabilità) sarà possibile definire su quale registro la liquidazione vada stampata: normalmente l'operazione viene effettuata in coda al registro vendite o su un registro riepilogativo dedicato (opzione consigliata).
 
-**Definitive print**: it changes the period of reference and makes it correspond to the one that just follows the last one that is definitive. The number of copies to be printed is disabled;
+**Stampa definitiva**: andrà a modificare il periodo di riferimento per farlo corrispondere a quello successivo all'ultimo stampato in definitivo e sarà inoltre disabilitato il numero di copie da stampare;
 
-**Execution of definitive print preview**: it does not block the period and update counters; 
+**Esecuzione dell'anteprima di stampa** **in definitivo**: non si andrà a bloccare il periodo e aggiornare i contatori;
 
-**Execution of the print process**: it can block the accounting period and update the pages counter of the VAT registers Tab. (It is not necessary that the print process reaches a good conclusion, it can be a print on a file).
+**Esecuzione del processo di stampa**: fisica andrà ad operare il blocco del periodo in contabilità e ad aggiornare il contatore delle pagine della tabella Registri IVA (e non è rilevante che il processo di stampa vada a buon fine o meno, potrebbe essere anche una stampa su file).
 
-RIBBON BAR: it represents the form menu, that is the area in which it is possible to perform actions. The list of features is the following:
+RIBBON BAR: rappresenta il menu della Form in oggetto, ossia l'area nella quale è possibile effettuare delle azioni. La lista delle funzionalità possibili, nel tab corrente, è di seguito rappresentata:
 
 
 
-| Function | Meaning |
+| Funzione | Significato |
 | --- | --- |
-| Preview | Button to start the print preview of VAT 74 ter settlement. |
-| Print | Button to start the concrete print of the VAT 74 ter settlement. |
+| Anteprima | Pulsante per eseguire l'anteprima di stampa della liquidazione IVA 74 ter. |
+| Stampa | Pulsante per eseguire la stampa fisica della liquidazione IVA 74 ter. |
 
 
 
