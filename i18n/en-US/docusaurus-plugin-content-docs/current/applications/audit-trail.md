@@ -3,34 +3,41 @@ title: Audit Trail
 sidebar_position: 2
 ---
 
-**Audit Trail** represents an application component that allows configuring a sort of LOG capable of tracking any operations within Fluentis by any operator.
 
-Very useful and sometimes mandatory in certain business sectors where it is necessary to produce documents related to “who performed,” “what activity,” and especially “when,” that is, in what time frame.
 
-It is possible to produce logs highlighting which values have been modified regarding any data.
+**Audit Trail** rappresenta una parte applicativa che permette di configurare una sorta di LOG in grado di tracciare qualsiasi operatività all'interno di Fluentis, da parte di qualsiasi operatore.
 
-Two useful log forms are already available without any configuration:
+Molto utile e talvolta obbligatoria in taluni settori aziendali nei quali si renda necessario produrre documenti relativi a “chi ha svolto”, “quale attività” e soprattutto “quando”, ovvero in che lasso temporale.
 
-**Activity Monitoring (Monitoraggio attività)** which displays in real-time the users connected to the system and the forms they are opening. The refresh of the form can occur manually by pressing the button **Refresh (Aggiorna)**, or automatically after pressing **Automatic Data Update (Aggiornamento automatico dati)**.
+E' possibile produrre dei log evidenziando anche quali valori sono stati modificati relativamente a qualsiasi dato.
 
-**Activity Log (Cronologia delle attività)**: this panel automatically tracks and stores all accesses to all forms by any user.
+Sono già disponibili, senza eseguire alcuna configurazione due utili form di log: 
 
-### SPECIFIC LOGS (LOG SPECIFICI)
+**Monitoraggio attività** che visualizza in tempo reale gli utenti collegati al sistema e le form che stanno aprendo, il refresh della form può avvenire manualmente premendo il bottone **Aggiorna**, oppure in automatico dopo aver premuto **Aggiornamento automatico dati**.
 
-It is possible to configure a log to keep track of changes or deletions of particular data. For example, we can monitor the changes made to accounting records.
+**Cronologia delle attività**: questo pannello traccia e memorizza in automatico tutti gli accessi a tutte le form da parte di qualsiasi utente. 
 
-Open Configuration -> **Audit Trail Configuration (Configurazione Audit Trail)** and press **New (Nuovo)**.
 
-Define a code and a description for the new specific log and then, in the underlying grid, set the relevant business object (and optionally, if necessary, its parent object).
+### LOG SPECIFICI
 
-By defining the object, the related properties will be displayed, and those to be monitored in order to track changes or deletions can be selected with the flag.
+E' possibile configurare un log per tenere sotto controllo le modifiche o le cancellazioni di dati particolari. Ad esempio possiamo monitorare le modifiche che vengono fatte sulle registrazioni contabili.
+
+Aprire Configurazione -> **Configurazione Audit Trail** e premere **Nuovo**
+
+Definire un codice ed una descrizione per il nuovo log specifico e quindi, nella griglia sottostante impostare il business object di riferimento (ed eventualmente, se necessario il suo oggetto padre).
+
+Definendo l'oggetto verranno visualizzate le proprietà relative e potranno essere selezionate con il flag quelle da tenere monitorate al fine di tracciare le modifiche o le cancellazioni.
 
 ![](/img/it-it/applications/audittrail/audittrail.png)
 
-To **query the LOG**, open **Audit Trail**:
 
-In the form, if **Search** is simply pressed, all operations subject to monitoring will be displayed, and the type of operation will be visible: Insertion, modification, deletion.
+Per **interrogare il LOG** aprire **Audit Trail**:
 
-In order to view the details and thus the data before and after the modification, **it is necessary to select** in the header area both the type of LOG previously configured through the **Event Log** field and the **Object**.
+Nella form se viene premuto semplicemente **Ricerca** saranno visualizzate tutte le operazioni soggette e monitoraggio e sarà visibile i tipo di operazione: Inserimento, modifica, cancellazione.
+
+Al fine di visualizzare il dettaglio e dunque il dato prima e dopo la modifica, **occorre selezionare** nella zona di testata, sia il tipo di LOG precedentemente configurato attraverso il campo **Registro eventi**, sia l'**Oggetto**.
+
 
 ![](/img/it-it/applications/audittrail/audittrail2.png)
+
+
