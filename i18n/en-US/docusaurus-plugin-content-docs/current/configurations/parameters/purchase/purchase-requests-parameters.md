@@ -1,29 +1,29 @@
 ---
-title: Purchase Requests Parameters
-sidebar_position: 4
+title: Parametri richieste di acquisto
+sidebar_position: 5
 ---
 
-The purchase requests parameters allow the basic setting in order to manage correctly and according to specific requests of every single company.
+I parametri delle richieste di acquisto permettono l'impostazione di base per gestire correttamente e secondo le specifiche richieste da ogni singola società.
 
-The ribbon bar represents the Form menu, that is the area in which it is possible to perform actions. The possible features list is the following: 
+*Pulsanti*:
 
+> **Salva**: permette di salvare i parametri impostati.  
+> **Ripristina**: permette di ripristinare i parametri ai valori iniziali.
 
+### Generale
 
-| Function | Meaning |
-| --- | --- |
-| Restore Default Parameters | It enables the user to restore the initial data. |
+**Costo zero in assenza di listini**: il prezzo è ricercato nei listini; se non viene trovato ed è attivo questo flag nella riga di richiesta viene messo prezzo 0. Se non è attivo e non è attivo neanche l'altro parametro e non trova il prezzo in listino, cerca il costo ultimo in anagrafica articolo e se non lo trova mette 0.
 
-#1.1 General Tab
+**Costo ultimo in assenza di listini**: quando è attivo, se non trova il prezzo nel listino e non trova il costo ultimo in anagrafica articoli prende il massimo tra i prezzi presenti nelle richieste di acquisto dello stesso fornitore e articolo.
 
-| Function | Meaning |
-| --- | --- |
-| Cost Zero if Price Lists Are Missing | The price is searched on price lists; if it is not found and this flag is active in request line, it will be necessary to assign 0 value price. If both this parameter and the other one are active and there is no price on list, it will be necessary to search for the last cost in item register and if this is not found, it will be necessary to assign 0 value.  |
-| Last Cost if Price Lists Are Missing | When this flag is active, if it does not find the price in price list and it does not find the last cost on items register, it has to take the maximum price among those on purchase requests of the same vendor and item. |
+**Esplodi distinta base**: se attivo, all'inserimento di un articolo verrà sostituito dal primo livello della sua distinta base, se esiste. Quindi invece dell'articolo “prodotto finito” l'ordine sarà popolato con la distinta base dell'articolo inserito.
 
-#1.2 Tab AnalyticThese parameters indicates the priority for searching cost or profit centres in order to be attributed to items of purchase request. When the Recalculate flag is set, cost or profit centres are inserted/updated on items through the chosen priority.
+### Analitica
 
+In questo tab si specifica con che priorità recuperare il centro di costo (CdC) o centro di profitto (CdP) nella riga documento.
 
+È possibile modificare le priorità utilizzando i pulsanti:
 
+> **Sposta su** e **Sposta giù**
 
-
-
+*Valori di default*: il CDC o CDP viene recuperato dal tipo fatturato qualora presente. Per approfondimenti fare riferimento a tabella [Tipo Fatturato Acquisti](/docs/configurations/tables/purchase/purchase-invoices-type). Qualora non fosse presente nel tipo fatturato il sistema lo cercherà in *Anagrafica fornitore*. Se non presente verrà cercato in *Anagrafica articolo*

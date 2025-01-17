@@ -1,50 +1,57 @@
 ---
-title: Purchase Orders Parameters
-sidebar_position: 5
+title: Parametri ordini fornitori
+sidebar_position: 2
 ---
 
-The purchase orders parameters allow the basic setting in order to manage correctly and according to specific requests of every single company.
+I parametri degli ordini fornitori permettono l'impostazione di base per gestire gli Ordini fornitori correttamente e secondo le specifiche richieste da ogni singola società.   
 
-The ribbon bar represents the Form menu, that is the area in which it is possible to perform actions. The possible features list is the following: 
+La finestra si compone di pulsanti e tre diversi tab: *Generale*, *Carico* e *Analitica*. 
 
+### Generale
 
+**Gestione doppia unità misura**: solo se attivato, il sistema può gestire l'unità di misura alternativa nell'ordine fornitore.
 
-| Function | Meaning |
-| --- | --- |
-| Restore Parameters | It enables the user to restore parameters to the initial values. |
+**Proposta automatica UM alternativa:** se attivato, fa in modo che venga proposta la quantità relativa all'unità di misura alternativa, a patto che sull'anagrafica dell'articolo ne sia stata impostata una di default. È possibile attivare questo flag solo se il flag precedente è stato attivato.
 
-#1.1 General Tab
+**Costo zero in assenza di listini**: se attivo, in assenza di un listino valido popola il prezzo con il valore zero. Nel caso in cui questa voce non fosse spuntata, il campo sarebbe valorizzato con il costo ultimo dell'articolo, se presente.
 
-| Function | Meaning |
-| --- | --- |
-| Double Unit of Measure Management | When it is set, it is possible to enable the Alternative UM combo box and the alternative Quantity Column on Items grid of order. |
-| Automatic Proposal of Alternative Unit of Measure | This check can be enabled only if “Double Unit of Measure Management” is active. When an item, that has the default alternative UM on its alternative UM tab register, is inserted, the UM is automatically proposed as item Alternative UM and it is possible to calculate even the alternative quantity by using the related conversion factor. |
-| Recover Only for Current Date | When it is set, the recovery of numbers is performed automatically during the day. If during the day it has been possible to create orders number 7,8,11,12 and flag is set, the next number proposed will be 10, that corresponds to the first free number lower than the one inserted by the user.  |
-| Auto Insert Variant in Variants Attributes | When it is set, on items tab of orders management the variant code and description become 2 fields that can be edited and as regards data inserted into the 2 fields, it is necessary to save on variants register. In this way by inserting the order lines there is the possibility to create also items variants.  |
-| Not Allow to Execute a Greater Quantity | If it is set, when a Goods Receipt is created by an order, the user cannot insert an higher quantity compared to the one that is in order. |
-| Control the Sequence of Date and Number | If it is set, it will possible to have progressiveness between document number and date. In this way, if on 11/21/2011 there are 3 orders with number 7, 8, 10 and on 11/22/2011 there is the order number 11 and the user wants to insert an order on 11/22/2011, the only one possible number on that date will be 12 in order to maintain the progressiveness between number and date. |
-| Cost Zero if Price Lists Are Missing | When it is set and it does not exist price lists for items inserted into Order, the proposed price will be 0, on the contrary, if it is not set, the last cost of items register will be proposed. |
-| View Dimensions  | When it is active on item tab of purchase delivery note management there is the possibility to view the following 3 columns: “Height”,”Width”,”Depth”  (MGAD_Hight, MGAS_Width, MGAS_Depth from MG_DataReg – Weights/Dimensions Tab of Items register). |
-| Block Document Insertion in Public Holidays  | When it is active, it is not possible to insert documents with the holiday date of calendar of company holidays. |
-| Execute Only Authorized Orders | If it is active, during the reception of goods the orders are executed and it is possible to  view only the authorized orders. |
-| Propose Brand with Priority Price List/Sales Order | If it is active, during the insertion of orders items, it is possible to save item mark on order list. Through this check set, the purchase orders creation from sales orders copies the mark of sales order to purchase order. |
-| Allow VAT Modification | If it is active, during the automatic Orders Creation from Purchase Requests, the VAT code can be proposed on orders. |
-| Mandatory User Code | If it is active, during the Orders Management, it is obligatory to insert the operator/employee.  |
-| Search Item Price in All Default Price Lists | 1.	If it is active, this parameter is used for searching price on vendor price lists, the search occurs on default price lists in vendor register even if the price lists are not valid (the valid price lists are those that have validity start date null or >= to the current date). |
+**Blocca inserimento documento in date festive:** se attivo, il sistema non permette l'inserimento dell'ordine in date festive (sabato, domenica e festività). Se non attivo, il sistema non effettua nessun controllo e lascia inserire l'ordine.
 
-#1.2 Import Tab from BarcodeIn this tab the user has to specify parameters to import data contained on OF_ImpBCAll table. The import form can be opened from toolbar of goods receipt management in items tab.
+**Proponi marca con priorità listino fornitore/ordine cliente**: non più utilizzato.
 
-#1.3 Load Tab
+**Permetti modifica IVA:** se attivo, in caso di [Creazione automatica Ordini da Richieste di acquisto](/docs/purchase/purchase-orders/procedures/create-purchase-orders-from-purchase-requests) viene proposto il codice IVA dall'anagrafica del fornitore.
 
-| Function | Meaning |
-| --- | --- |
-| Create Record with Document Date | When it is set, the stock record is performed with the same date as Goods Receipt one, and it will not necessary to specify the record date within load form. |
-| Invoice Parameters Priority | When this parameter is set, the load warehouse and template are read by goods receipt lines and if they do not exist, they are read by load form; otherwise if it is not set, it is possible to use warehouse and template inserted into this parameters form. |
+**Codice operatore obbligatorio**: se attivo, è necessario specificare il codice dell'operatore in testata, sotto la voce *Nazione*, altrimenti non sarà possibile salvare l'ordine. Quando il flag non è attivo questo dato è facoltativo.
 
-#1.4 Tab AnalyticThese parameters indicate the search priority of cost or profit centres in order to be attributed to purchase order items. When Recalculate flag is set, cost or profit centres are inserted/updated on items through the chosen priority.
+**Ricerca prezzi articoli in tutti i listini predefiniti**: se attivo, il prezzo dell'articolo inserito nella riga ordine fornitore verrà ricercato in tutti i listini predefiniti dell'anagrafica fornitore, oltre al listino di default. Se non attivo, il prezzo dell'articolo verrà ricercato solo nel listino di default presente nella testata dell'ordine, ma non negli altri listini per lo stesso fornitore aventi date di validità diverse.
 
+**Uso articolo fornitore**: se attivo, nella griglia articoli dell'ordine fornitore viene proposto anche il campo per inserire e ricercare il codice articolo fornitore. Se non attivo questo campo non sarà visibile.
 
+**Verifica articoli in esaurimento**: se attivato, il sistema fa un controllo sulla disponibilità degli articoli in riga ordine ed avvisa qualora l'articolo fosse in esaurimento, ovvero se nell'[anagrafica dell'articolo](/docs/erp-home/registers/items/create-new-items/item-registry/generality) è stato attivato il flag *In esaurimento*.
 
+**Contabilizzazione imballi**: consente di poter contabilizzare, in contabilità generale, anche le righe con articoli di natura imballo che solitamente vengono gestiti per avere la verifica delle giacenze degli [Imballi a rendere](/docs/configurations/tables/logistics/package-to-be-returned).
 
+### Carico
 
+In questo tab vengono definiti i parametri utilizzati per il [Carico ricevimento merci](/docs/purchase/goods-reception/procedures/good-receipt-load).
 
+**Crea registrazione con la data del documento**: se attivo, la registrazione di magazzino viene fatta con la stessa data dell'ordine e non sarà necessario specificare la data registrazione nella form di carico. Se non attivo, sarà necessario specificare la data nella form di carico.
+
+**Priorità magazzino e causale di carico**: se attivo, fa in modo che il carico di magazzino venga effettuato utilizzando il **Magazzino** e la **Causale** definiti in questo tab. Se invece il flag non è settato utilizza il magazzino e la causale definita nelle righe del ricevimento merci, se presenti, altrimenti vengono considerati i parametri impostati nella procedura di carico ricevimento merci.
+
+### Analitica
+
+In questo tab si specifica con che priorità recuperare il centro di costo (CdC) o centro di profitto (CdP) nella riga documento.
+
+È possibile modificare le priorità utilizzando i seguenti pulsanti nella ribbon bar:
+
+> **Sposta su**       
+> **Sposta giù**.
+
+*Valori di default*: il CDC o CDP viene recuperato dal tipo fatturato qualora presente. Per approfondimenti fare riferimento a tabella [Tipo Fatturato Acquisti](/docs/configurations/tables/purchase/purchase-invoices-type). Qualora non fosse presente nel tipo fatturato il sistema lo cercherà in *Anagrafica fornitore*. Se non presente verrà cercato in *Anagrafica articolo* e successivamente a livello di *Magazzino*.
+
+**Ricalcolo**: se attivo, questo flag, ricalcola i centri di costo/profitto secondo la priorità scelta.
+
+**Centro di costo/ricavo obbligatori**: se attivo, questo flag, rende obbligatoria l'imputazione dei centri di costo/profitto.
+
+**Valuta la priorità su ogni dimensione**: se attivo, questo flag permette di valutare ogni priorità inserita nella parte superiore per capire se ci sono ulteriori dimensioni non ancora valorizzate. Ad esempio, supponiamo di avere nell'Anagrafica articolo il centro di costo della dimensione *Business unit* e nel Tipo fatturato acquisti la dimensione *Direzionale*. Se il flag non è attivo il sistema valuta solo il CdC presente nell'Anagrafica articolo; se il flag è attivo, dopo aver caricato il CdC presente nell'Anagrafica articolo il sistema valuta anche la dimensione presente nel Tipo fatturato acquisti (nel nostro esempio la dimensione *Direzionale*) e se è diversa da quelle che ha già gestito (*Business Unit*) carica il centro e prosegue con la verifica delle altre priorità.
