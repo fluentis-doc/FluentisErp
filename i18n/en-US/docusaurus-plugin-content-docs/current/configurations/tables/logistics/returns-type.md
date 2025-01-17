@@ -1,42 +1,38 @@
 ---
-title: Returns Type
-sidebar_position: 4
+title: Tipo rientri
+sidebar_position: 35
 ---
 
-The Returns Type table can be opened through the following path Tables > Logistic > Returns Type, and it sets the subcontractor returns types in order to transfer material from and for specific warehouses according to the return type.
+La tabella serve per impostare i tipi dei rientri di conto lavoro, in modo da poter veicolare il materiale da e per determinati magazzini, a seconda del tipo rientro.
 
-The window, that enables the user to filter per code and description of the inserted return type, is made up of a grid where user can insert the return types to manage.
+La tabella consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
 
-Here the grid columns:
+**Ricerca Tipo Rientri**
 
+La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
 
- 1. Code: through this column it is possible to insert the return type code
- 2. Description: through this column it is possible to insert the return type description
- 3. Warehouse: through this column and through the specific combo box it is possible to choose the warehouse on which the material, produced and sent by the subcontractor through a subcontractor return, will be loaded
- 4. Warehouse Description: through this column it is possible to view the warehouse description inserted in the previous column
- 5. Template: through this column and through the specific combo box user can choose which template has to load the material produced and sent by subcontrator through a subcontractor return created with the already inserted type
- 6. Template Description: through this column it is possible to view the description of template inserted in the previous column
- 7. Ware. Maturity: through this colum and through the specific combo box user can choose the warehouse from which the material, used by subcontractor and inserted in subcontractor return Materials tab created with the already inserted type, will be unloaded
- 8. Description Ware. Maturity: through this column it is possible to view the description of warehouse inserted in the previous column
- 9. Temp. Maturity: through this column and through the proper combo box the user can choose which template has to unload the material used by subcontrator and inserted in subcontrator return Material type created with the already inserted type
- 10. Description Temp. Maturity: through this column it is possible to view the template description inserted in the previous column
+**Inserimento Tipo Rientri**
 
- 
+Per poter inserire nuove codifiche è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.
 
-Hereinafter the list of actions that can be performed through the RIBBON BAR:
+**Codice**: rappresenta il codice del tipo rientro;
 
+**Descrizione**: rappresenta la descrizione del tipo rientro;
 
+**Magazzino**: in questa colonna l'utente può scegliere il magazzino su cui dovrà essere caricato il materiale prodotto dal terzista e spedito dallo stesso tramite un rientro di conto lavoro creato con il tipo appena inserito;
 
-| Function | Meaning |
-| --- | --- |
-| Search  | Button to apply search filters to the whole inserted Subcontractor Return Types database. |
-| Insert | It refers to the procedure to insert a new Subcontractor Return Type. |
-| Delete | It refers to the procedure to delete a Subcontractor Return Type inserted previously. |
-| Preview  | It shows a Subcontractor Return Types preview. |
-| Print  | It launches the print of Subcontrator Return Types report. |
+**Descrizione magazzino**: rappresenta la descrizione del magazzino inserito nella colonna precedente;
 
+**Causale**: in questa colonna l'utente può scegliere la causale con la quale deve essere caricato il materiale prodotto dal terzista e spedito dallo stesso tramite un rientro di conto lavoro creato con il tipo appena inserito;
 
+**Descrizione causale**: rappresenta la descrizione della causale inserita nella colonna precedente;
 
+**Sc. mag.**: in questa colonna l'utente può scegliere il magazzino da cui dovrà essere scaricato il materiale utilizzato dal terzista ed inserito nel tab Materiali del rientro di conto lavoro creato con il tipo appena inserito;
 
+**Sc. mag. descrizione**: rappresenta la descrizione del magazzino inserito nella colonna precedente;
 
+**Sc. caus.** ****: in questa colonna l'utente può scegliere la causale con la quale deve essere scaricato il materiale utilizzato dal terzista ed inserito nel tab Materiali del rientro di conto lavoro creato con il tipo appena inserito;
 
+**Sc. caus. descrizone**: rappresenta la descrizione della causale inserita nella colonna precedente.
+
+Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
