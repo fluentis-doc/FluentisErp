@@ -1,69 +1,92 @@
 ---
-title: Invoices Type
-sidebar_position: 16
+title: Tipi fatture di vendita
+sidebar_position: 20
 ---
 
-The invoices type is used in order to determine properties of an invoice.
+:::tip[FAst Start]
+La tabella è interessata dalla procedura di [**Fast Start**](/docs/guide/fast-start)
 
-The ribbon bar represents the Form menu, that is the area in which it is possible to perform actions linked to the procedure in use. The possible features list is the following:
+Nel caso in cui si intenda configurare manualmente fare riferimento alla check list della pagina linkata
+:::
 
+La tabella si apre tramite il percorso **Tabelle > Vendite > Tipi fatture di vendita** ed è utilizzata per determinare le proprietà di una fattura;
 
+Consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli;
 
-| Function | Meaning |
-| --- | --- |
-| Search | Button to search a document type.  |
-| Insert | Button to insert a new document type.  |
-| Delete | Button to delete the document type.  |
-| Print Preview | Button to perform the print preview. |
-| Print | Button to print according to the filters set and to the printer configuration. |
+La form si compone di un'area di filtro e da una di risultato; Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato;
 
+Per poter inserire nuovi record è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**; 
 
+**Tipo/Descrizione**: tipo fattura e descrizione del tipo fattura; il codice inserito deve essere univoco;
 
-| Function | Meaning |
-| --- | --- |
-| Type  | Invoice Type. |
-| Description  | Invoice type description. |
-| Invoice Nature | Numeration type associated to the invoice type. |
-| Num. Type / Description | Numeration type associated to the invoice type. |
-| From Order | If it is set, it means that the DN can be created by executing a sales order. |
-| Direct Invoice | If it is set, it means that the invoice has a direct type and it would be necessary to insert data for transport. |
-| Tran. Code | Transaction code used for the intrastat declaration. |
-| In Statistic | If it is set, it means that this invoice type is considered according to statistics. |
-| Proforma | If it is set, the invoice type is pro-forma and it cannot be accounted. |
-| Template / Template Description | Ledger template used in order to account the invoice. |
-| Cost Template / Cost Template Description | Cost template used in order to account the invoice within analytical accounting. |
-| Notes | It is possible to insert some descriptive notes of invoice type. |
-| Customer Control | During the order detail account insertion the account type is obligatory the customer. |
-| Block Printed Doc. | If it is set, it is not possible to edit an already printed invoice. |
-| Intracomunitar | If it is set, it occurs when customer nation is CEE; on the contrary, it occurs in case that the invoice and customer type have not the same type, it is necessary to give a warning message. |
-| Exec. Proforma Invoice | If it is set and the invoice is pro-forma, there is the order execution. Otherwise the order is not executed. |
-| Transport Template | Transport template description. |
-| Credit | If it is set, this invoice type returns into the credit control. |
-| Exclude Block | If it is set, it means that if the user goes over the credit and document is blocked, it is possible however to insert and print the document. |
-| Stock Template / Stock Template Description | It is the movement template of used goods that is contained in this invoices type. |
-| Warehouse / Warehouse Description | It is a warehouse for goods contained in this invoices type. |
-| Group Maturity Val. | If it is set, it is possible to group maturity values within the invoices accounting. |
-| Without Add up Quantities | If it is set, and after the execution of this orders type, the executed quantities are reported in the execution document as regards single execution lines. |
-| VAT Sales Agr. | If it is set, it is necessary to search the agricultural VAT code for item. If it does not exist it is necessary to consider the normal VAT code. |
-| Ctrl Unloaded PK | If it is set, when the user creates a delivery note from an unloaded PK, a flag unloaded for the delivery note can be automatically activated. |
-| Block PK Qty | It blocks the quantity and the alternative quantity into the delivery note created from pallet list. |
-| Calculate Commissions | If it is set, it is possible to calculate the agents' commissions in case of invoices of this type. |
-| Disconnect DN | If it is set, it is possible to unload even the deferred invoices. |
-| EDI Management | If it is set, it is possible to create an EDI file as regards invoices of this type. |
-| Not Execute PK | If it is set, by creating the invoice from picking, the same picking is executed. |
-| Price with VAT | If it is set, prices of this invoices type will include VAT. |
-| Econ. Accrual | If it is set, the invoice type has economic accrual. |
-| Econ. Accrual Template | This economic accrual template is used in order to account invoices. |
+**Numerazione:** in questo campo va inserito il codice della numerazione appropriato; Per approfondimenti fare riferimento all'articolo relativo alle [numerazioni fluentis](/docs/configurations/tables/fluentis-numerations); 
 
+**Natura fattura**: in questo campo va inserita la natura associata al tipo fattura; il valore verrà selezionato da un elenco tra Fattura, Nota di credito, ecc;
 
+**Ordine**: se attivo, la fattura potrà essere creata dall'evasione dell'ordine tramite l'apposita procedura; altrimenti, il bottone 'Evasione da ordini' sarà disattivato;
 
-| Function | Meaning |
-| --- | --- |
-| Print Report | It is possible to define some reports to be used according to the order typology. |
-| Number of Copies | It is possible to define the number of copies to be printed according to the invoice typology. |
+**Immediata**: se attivo, significa che la fattura è di tipo immediato e dovranno essere compilati, nella fattura, anche i dati per il trasporto; se non attivo la fattura sarà di tipo differito e i dati del trasporto saranno recuperati dal DDT;
 
+**Natura della Transazione Intrastat**: in questo campo va inserito il codice transazione utilizzato per la dichiarazione intrastat; Per approfondimenti fare riferimento alla [Natura transazioni intrastat](/docs/configurations/tables/finance/nature-of-intrastat-transaction); 
 
+**In statistica**: se attivo, la fattura con questo tipo verrà riportata nelle statistiche quindi sarà visibile nelle stampe *Fatturato*;
 
+**Proforma**: se attivo, la fattura è di tipo proforma e non può essere contabilizzata;
 
+**Causale**: in questo campo va inserita la causale contabile utilizzata per la contabilizzazione della fattura; Per approfondimenti fare riferimento alle [causali di contabilità generale](/docs/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates/recording-detail);
 
+**Tipo documento**: in questo campo va inserita la causale analitica utilizzata pe la contabilizzazione della fattura in contabilità analitica;
 
+**Note**: campo di testo libero in cui è possibile inserire delle note descrittive del tipo fattura;
+
+**Controllo cliente**: se attivo, questo flag consente al sistema di effettuare un controllo sul tipo anagrafica del conto/sottoconto che si è inserito nel documento per verificare che sia obbligatoriamente un cliente; Se così non fosse il sistema avviserà l'utente riportando un messaggio di errore; Sarebbe *obbligatorio* attivarlo su tutte le tipologie di fattura di vendita;
+
+**Blocca doc; stampato**: se attivo, questo flag non permette di modificare una fattura che risulti essere già con il flag *Stampato* settato in testata;
+
+**Intracomunitaria**: se attivo, il sistema verifica che la nazione del cliente sia una *nazione CEE*; Questo flag andrà *impostato solo su tipi fattura Intracomunitari*; Qualora non ci fosse il link tra cliente e tipo fattura intracomunitaria, il sistema ritornerà un messaggio di avviso;
+
+**Evasione fattura proforma**: se settato, e la fattura è proforma, l'evasione evade l'ordine altrimenti l'ordine rimane non evaso;
+
+**Causale trasporto**: Campo di testo libero in cui va indicata una causale di trasporto da poter stampare in fattura;
+
+**Fido**: se attivo, la fattura con questo tipo rientrerà nel controllo del fido;
+
+**Escludi blocco:** si riferisce al blocco per superamento del fido e perciò inserito nella gestione Lock Manager presente nell’area tesoreria tra le procedure dell’Utilizzo Fidi. Se attivo, il sistema per questo tipo fattura non considererà il blocco del documento dovuto al superamento del fido ma lascerà all'utente la possibilità di inserire e stampare il documento; se non attivo, il tipo fattura verrà bloccato qualora si superi il fido e all'utente verrà impedito la stampa del documento; 
+
+**Magazzino/Descrizione magazzino**: in questi campi si andrà ad indicare il [magazzino](/docs/configurations/tables/logistics/warehouses) di impegno degli articoli presenti in quel determinato tipo di fattura; il magazzino qui specificato viene riportato in tutte le righe articolo inserite nella fattura di questa tipologia; 
+
+**Causale /Descrizione causale magazzino**: in questi campi si andrà invece ad indicare la [causale di movimentazione](/docs/configurations/tables/logistics/warehouse-templates) degli articoli impegnati contenuti in quel determinato tipo di ordine; la causale qui specificata viene riportato in tutte le righe articolo inserite nell’ordine di questa tipologia; 
+
+**Raggruppamento partite**: se attivo, nella contabilizzazione fatture vengono raggruppate le partite; Per approfondimenti fare riferimento a [raggruppamento partite](/docs/finance-area/maturity-values/maturity-values/maturity-value-grouping); 
+
+**Iva agricola per vendite**: se attivo, in fase di creazione DDT, il sistema andrà a verificare se per l'articolo utilizzato è presente un codice dell'IVA agricola altrimenti verrà utilizzato il codice IVA presente nell'anagrafica dell'articolo;
+
+**Controlla Picking scaricato**: se attivo, quando si crea una fattura da un Picking scaricato, si attiva in automatico il flag scaricato per la DDT; Se non attivo, il flag non viene attivato; 
+
+**Blocca quantità Picking**: se attivo, blocca la quantità e la quantità alternativa nella fattura  creata da lista UDC; Se non attivo non blocca la quantità ma la lascia libera; Si consiglia di attivare sempre questo flag qualora si utilizzi la gestione picking e UDC;
+
+**Calcola provvigioni**: se attivo, le fatture appartenenti a questa tipologia, verranno conteggiate nel il calcolo delle provvigioni agenti;
+
+**Scollega DDT**: se attivo, è possibile scaricare da magazzino anche le fatture differite (Normalmente lo scarico magazzino avviene tramite DDT);
+
+**Non evade Picking**: se attivo, non farà evadere il picking qualora venga generata una fattura;
+
+**Prezzo Ivato**: la gestione dei prezzi ivati si attiva tramite questo parametro presente in tutti i documenti dell’area vendita a partire dai listini di vendita. Nella ripresa prezzi di un documento con tipologia Prezzo Ivato, si cerca nei listini, con lo stesso flag Prezzo Ivato settato, e si calcolano gli sconti partendo sempre dal prezzo ivato. Dal prezzo ivato utilizzando l’aliquota iva dell’anagrafica cliente o dell’anagrafica articolo  viene calcolato il prezzo non ivato.Nei documenti sono visibili le colonne Prezzo e Prezzo Ivato Attenzione! se non esiste un listino valido con settato il flag Prezzo Ivato e in anagrafica articoli c’è un prezzo di vendita, viene proposto come Prezzo Ivato il prezzo di vendita. Per capire il funzionamento della ripresa Prezzi e dei prezzi ivati e non ivati seguire l’articolo Ripresa Prezzi e Sconti nei documenti di vendita.  
+
+**Competenza economica**: se attivo, il tipo fattura ha competenza economica e quindi sarà necessario impostare le date del periodo di competenza;
+
+**Causale Competenza Economica**: in questo campo va indicata la causale di competenza economica utilizzata in contabilizzazione delle fatture; Questo valore potrà essere scelto da un elenco; Per approfondimenti fare riferimento alle [Causali di contabilità generale](/docs/configurations/tables/finance/ledger-records-templates/search-ledger-records-templates);
+
+**Gestione matrici Extra Data**: se attivo, permette di visualizzare nel caso di gestione articoli con matrice, un tab aggiuntivo per l'imputazione dei valori della quantità per singola cella di matrice; Se non attivo, non viene visualizzato questo TAB e la conseguente matrice;
+
+**Stampa**: in questo campo è possibile impostare la stampa di default da utilizzare per questa tipologia di documento; ricordiamo che, in fase di stampa documento, sarà necessario selezionare il report 'Stampe multiple' per utilizzare in automatico la stampa di default;
+
+**Numero di copie**: in questo campo vengono impostate il numero di copie documento da stampare; 
+
+**Gestione Conai**: questo bottone abilita la gestione CONAI (Consorzio Nazionale Imballaggi) per il tipo fattura;
+
+**Gestione cespiti**: questo flag abilita la gestione dei cespiti nel tipo fattura e nel campo successivo va specificato il tipo di operazione dei cespiti;
+
+**Tipo operazione**: in questa combo box è possibile selezionare il tipo di operazione dei cespiti tra diverse opzioni (rivalutazione, distruzione, plusvalenza, ecc.).       
+
+**Tipo sconto/Descrizione**: in questa colonna è possibile associare la tipologia di sconto da proporre quando gli sconti vengono inseriti direttamente nella colonna *Sconti articolo* della griglia articoli dei documenti (per maggiori dettagli vedi l'articolo [Gestione Widget sconti semplificato](/docs/sales/sales-flow/discount-widget)).

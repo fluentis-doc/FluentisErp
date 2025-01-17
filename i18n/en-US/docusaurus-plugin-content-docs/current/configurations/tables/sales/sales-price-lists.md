@@ -1,24 +1,10 @@
 ---
-title: Sales Price Lists
+title: Tipi listini di vendita
 sidebar_position: 17
 ---
 
-The sales price lists table is used for the codification of generic sales price lists that can be distinguish according to this code, that has personal price lists for customer and that have a code corresponding to the customer account detail account.
+La tabella si apre tramite il percorso **Tabelle > Vendite > Tipi listini di vendita** ed è utilizzata per la codifica di listini generici di vendita che si differenziano proprio per questo codice dai listini personalizzati per cliente, che riportano come codice il conto sottoconto del cliente.
 
-RIBBON BAR: the ribbon bar represents the Form menu, that is the area on which it is possible to perform actions linked to the procedure in use. The list of the possible functions is the following:
-
-
-
-| Function | Meaning |
-| --- | --- |
-| Search | Command to search a document type. |
-| Insert | Command to insert a new type document. |
-| Delete | Command to cancel a document type |
-| Print preview | Command to launch print preview |
-| Print | Command to launch the print according to the set filters and printer configuration. |
-
-
-
-
-
-
+Per inserire nuovi record è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**. I campi da compilare sono:     
+- **Codice/Descrizione**: codice e descrizione del listino generale. Il codice inserito deve essere univoco.
+- **Prezzo Ivato**: se attivo, questo flag indica che il listino sarà creato con prezzo ivato, quindi nei suoi articoli non sarà presente la colonna Prezzo, ma solo la colonna Prezzo ivato che riporterà direttamente la somma tra Prezzo e Iva.      
