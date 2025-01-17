@@ -1,134 +1,134 @@
 ---
-title: Taratura strumenti
+title: Calibration Tools
 sidebar_position: 2
 ---
 
-La gestione si trova sul percorso **Qualità > Taratura strumenti > Taratura strumenti > Nuovo taratura strumento** oppure è possibile eseguirla dalla **Ricerca Taratura strumenti**.   
+Management can be found on the path **Quality > Calibration Tools > Calibration Tools > New Calibration Tools** or it can be performed from **Calibration Tools Search**.
 
 
-:::important A cosa serve
-Nella gestione Taratura strumenti è possibile la registrazione delle Tarature interne e dei Certificati di taratura.   
-Se lo strumento è soggetto a taratura e la taratura è interna, è possibile inserire, per le posizioni previste, i valori rilevati. Fluentis assegnerà automaticamente un esito positivo o negativo, per singola posizione e generale.   
-Se lo strumento è soggetto a taratura e la taratura è esterna, è possibile allegare il Certificato di taratura ricevuto dall'ente terzo che ha effettuato la taratura. L'esito, in questo caso, verrà attribuito manualmente dall'operatore.   
-A standard sono disponibili le reportistiche di: Registro tarature strumenti raggruppati per: Rapporto, Strumento e Operatore.   
+:::important What is it for
+In the Calibration Tools management, it is possible to register Internal Calibrations and Calibration Certificates.   
+If the instrument is subject to calibration and the calibration is internal, it is possible to enter the recorded values for the specified positions. Fluentis will automatically assign a positive or negative result for each individual position and overall.   
+If the instrument is subject to calibration and the calibration is external, it is possible to attach the Calibration Certificate received from the third party that performed the calibration. The result will be manually attributed by the user in this case.   
+Standard reports available include: Instrument Calibration Log grouped by: Report, Instrument, and User.   
 
-A standard è disponibile la reportistica di:   
-> **Registro Tarature Strumenti**: elenco delle *Tarature strumenti* raggruppabili per: *Rapporto*, *Strumento* e *Effettuata da*.   
+Standard reporting is available for:   
+> **Instrument Calibration Log**: list of *Calibration Tools* groupable by: *Report*, *Instrument*, and *Carried out by*.   
 :::
 
 
-## Pulsanti di comando
+## Command Buttons
 
 
-### ![](/img/neutral/common/save.png) Salva
+### ![](/img/neutral/common/save.png) Save
 
-Premendo questo pulsante si memorizzano tutte le informazioni modificate della *Taratura strumento* visualizzata.   
-
-
-## Gestione dati
+By pressing this button, all modified information of the displayed *Calibration Tool* is saved.
 
 
-### Dati di testata
+## Data Management
 
-Le informazioni gestite sono:   
-> **Tipo taratura**: è il *Tipo taratura* (dato obbligatorio).   
-> All'inserimento manuale di una nuova *Taratura* viene proposto il *Tipo taratura manuale* indicato nei *Parametri Taratura strumenti*.   
+
+### Header Data
+
+The managed information includes:   
+> **Calibration Type**: it is the *Calibration Type* (mandatory data).   
+> When manually entering a new *Calibration*, the *Manual Calibration Type* indicated in the *Calibration Tools Parameters* is proposed.   
 >
-> **Anno/Numero**: sono l'*Anno* e *Numero* della *Taratura strumento* (dati entrambe obbligatori).   
->  All'inserimento di una nuova *Taratura strumento*:   
-> - la *Data taratura effettiva* viene proposta pari alla data odierna;   
-> - l'*Anno* e il *Numero* vengono proposti in base alla *Data taratura effettiva* e alla *Numerazione* associata al *Tipo taratura*.   
+> **Year/Number**: these are the *Year* and *Number* of the *Calibration Tool* (both mandatory data).   
+> When entering a new *Calibration Tool*:   
+> - the *Effective Calibration Date* is proposed as today’s date;   
+> - the *Year* and *Number* are proposed based on the *Effective Calibration Date* and the *Numeration* associated with the *Calibration Type*.   
 >
-> **Taratura effettuata da**: expander dove è possibile inserire:   
+> **Calibration carried out by**: expander where it is possible to enter:   
 >
->> **Taratura interna**: indica che lo *Strumento di misura* viene tarato da un soggetto interno all'azienda.   
->> **Laboratorio esterno**: è la ragione sociale del *Fornitore* che effettua la taratura esterna.   
->> **Funzione**: è la *Funziona aziendale* che effettua la taratura interna.   
->> **Dipendente**: è il *Dipendente* che effettua la taratura interna.   
+>> **Internal Calibration**: indicates that the *Measurement Tool* is calibrated by an internal subject of the company.   
+>> **External Laboratory**: it is the business name of the *Supplier* that performs the external calibration.   
+>> **Function**: it is the *Business Function* that performs the internal calibration.   
+>> **Employee**: it is the *Employee* who performs the internal calibration.   
 >
-> **Schedulata**: indica che la *Taratura strumento* è stata pianificata.   
-> **Esito taratura**: è il l'*Esito* complessivo della taratura.   
-> E' calcolato automaticamente, sulla base degli *Esiti* dei *Valori rilevati*, se è una *Taratura interna*.
-> Viene attribuito manualmente se è una *Taratura esterna*.   
-> **Osservazioni**: annotazioni libere sull'argomento.   
-> **Note**: annotazioni libere.   
+> **Scheduled**: indicates that the *Calibration Tool* has been planned.   
+> **Calibration Result**: it is the overall *Result* of the calibration.   
+> It is automatically calculated based on the *Results* of the *Detected Values*, if it is an *Internal Calibration*.   
+> It is manually assigned if it is an *External Calibration*.   
+> **Remarks**: free notes on the subject.   
+> **Notes**: free notes.   
 >
-> **Data taratura prevista**: è la data di prevista taratura.   
-> Viene proposta dalla *Pianifica nuove tarature* e non è modificabile.   
-> **Data taratura effettiva**: è la data di effettiva taratura.   
-> All'inserimento manuale di una nuova taratura viene proposta pari alla data odierna.
-> Viene proposta dalla *Pianifica nuove tarature* pari alla *Data taratura prevista* ed è successivamente modificabile.   
-> **Strumento di misura**: è il rifermento allo *Strumento di misura* soggetto alla *Taratura*.   
+> **Scheduled Calibration Date**: it is the planned calibration date.   
+> It is proposed by the *Schedule New Calibrations* and is not modifiable.   
+> **Effective Calibration Date**: it is the date of the effective calibration.   
+> When manually entering a new calibration, it is proposed as today’s date. 
+It is proposed by the *Schedule New Calibrations* as the *Scheduled Calibration Date* and is subsequently modifiable.   
+> **Measurement Tool**: it is the reference to the *Measurement Tool* subject to *Calibration*.   
 >
-> **Proprietà dello strumento**: expander dove è possibile visualizzare:   
+> **Properties of the Tool**: expander where it is possible to view:   
 >
->> **Proprietà dello strumento**: è il *Modello* dello *Strumento di misura*.   
->> **Attivo**: indica che lo *Strumento di misura* è ancora *attivo*.   
->> **Classificazione**: è la *Classificazione*; esempi: Meccanico, Elettrico, Elettronico, ecc.   
->> **Unità di misura**: è l'*Unità di misura* dei valori rilevati dallo *Strumento di misura*.   
->> **Intervallo di misura**: è il range misurabile dallo *Strumento di misura*.   
->> **Precisione**: è la *Precisione di misura* minima.   
->> **Limiti**: sono i *Limiti di accettabilitò* dello *Strumento di misura* per poterlo utilizzare; esempi: eventuali limiti di precisione, ambienti dove non utilizzarlo, ecc.   
+>> **Properties of the Tool**: it is the *Model* of the *Measurement Tool*.   
+>> **Active**: indicates that the *Measurement Tool* is still *active*.   
+>> **Classification**: it is the *Classification*; examples: Mechanical, Electrical, Electronic, etc.   
+>> **Unit of Measure**: it is the *Unit of Measure* of the values recorded by the *Measurement Tool*.   
+>> **Range of Measurement**: it is the measurable range of the *Measurement Tool*.   
+>> **Accuracy**: it is the minimum *Measurement Precision*.   
+>> **Limits**: these are the *Acceptance Limits* of the *Measurement Tool* for use; examples: potential precision limits, environments where it should not be used, etc.   
 >
-> **Audit Trail**: expander di sola lettura dove sono visibili le seguenti informazioni:   
+> **Audit Trail**: read-only expander where the following information is visible:   
 >
->> **Data creazione/Nome**: è la data e l'*Utente A.R.M.* che ha inserito l'*Azione correttiva*.   
->> **Data ultima modifica/Nome**: è la data e l'*Utente A.R.M.* che ha apportato l'ultima modifica all'*Azione correttiva*.   
+>> **Creation Date/Name**: it is the date and the *User A.R.M.* who entered the *Corrective Action*.   
+>> **Last Edit Date/Name**: it is the date and the *User A.R.M.* who made the last edit to the *Corrective Action*.   
 
 
-### Valori rilevati
-Il tabulatore è visibile solamente se lo *Strumento di misura* è soggetto a *Taratura interna*
-In questo elenco è possibile indicare i valori da rilevati durante le attività di *Taratura interna*.   
-Se lo *Strumento di misura* è *Attivo*, è *Soggetto a taratura* e se è di *Taratura interna* questi valori vengono ereditati dall'anagrafica dello *Strumento di misura*.   
-Tutte le informazioni sono disabilitate ad esclusione di: *Dato rilevato*, *Esito*, *Osservazioni* e *Note*
-L'elenco si compone delle seguenti informazioni:   
-> **Sequenza**: è la sequenza di rilevazione.   
-> **Posizione**: annotazioni libere sull'argomento.   
-> **Intervallo lettura**: annotazioni libere sull'argomento.   
-> **Dato richiesto**: è il valore nominale richiesto.   
-> **Incertezza (-)**: è il valore dell'incertezza negativa (espressa in percentuale) che verrà applicata al *Dato rilevato*.   
-> **Incertezza (+)**: è il valore dell'incertezza positiva (espressa in percentuale) che verrà applicata al *Dato rilevato*.   
-> **Dato rilevato**: è il valore rilevato dalla lettura dello strumento fatta nella *posizione* indicata.   
-> **Scostamento**: è il valore calcolato dalla differenza tra *Dato rilevato* e *Dato richiesto*.   
-Se lo scostamento è superiore al *Dato richiesto* sommato all'*Incertezza (±)* (applicazione in percentuale) l'*Esito* della rilevazione sarà negativo.   
-Al primo valore negativo dell'*Esito* nell'elenco dei *Valori rilevati* anche l'*Esito* complessivo della *Taratura* sarà negativo.   
-> **Osservazioni**: annotazioni libere sull'argomento.   
-> **Nota**: annotazioni libere.   
+### Detected Values
+The tab is only visible if the *Measurement Tool* is subject to *Internal Calibration*.
+In this list, it is possible to indicate the values to be detected during *Internal Calibration* activities.   
+If the *Measurement Tool* is *Active*, *Subject to calibration*, and if it is *Internal Calibration*, these values are inherited from the item register of the *Measurement Tool*.   
+All information is disabled except for: *Data detected*, *Result*, *Remarks*, and *Notes*.
+The list consists of the following information:   
+> **Sequence**: it is the recording sequence.   
+> **Position**: free notes on the subject.   
+> **Reading Interval**: free notes on the subject.   
+> **Required Data**: it is the typical required value.   
+> **Uncertainty (-)**: it is the negative uncertainty value (expressed as a percentage) that will be applied to the *Data detected*.   
+> **Uncertainty (+)**: it is the positive uncertainty value (expressed as a percentage) that will be applied to the *Data detected*.   
+> **Data Detected**: it is the value detected from the reading of the instrument made in the indicated *position*.   
+> **Variance**: it is the value calculated from the difference between *Data detected* and *Required Data*.   
+If the deviation is greater than the *Data detected* plus the *Uncertainty (±)* (application in percentage), the *Result* of the detection will be negative.   
+At the first negative *Result* value in the list of *Detected Values*, the overall *Calibration Result* will also be negative.   
+> **Remarks**: free notes on the subject.   
+> **Note**: free notes.   
 
 
-### Storico Rapporti e Certificati di taratura
-In questo elenco è possibile visualizzare lo storico delle *Tarature* e dei *Certificati di taratura* pienificati ed effettuati per lo *Strumento di misura* associato alla *Taratura* visualizzata.   
-Tramite un doppio click del mouse sulla riga desiderata è possibile eseguire la gestione della *Taratura* selezionata.   
-L'elenco si compone delle seguenti informazioni:   
-> **Tipo taratura**: è il codice del *Tipo taratura*.   
-> **Descrizione tipo taratura**: è la descrizione del *Tipo taratura*.   
-> **Anno**: è l'*Anno* del documento.   
-> **Numero**: è il *Numero* del documento.   
-> **Taratura interna**: indica se è stato emesso una *Taratura interna*.   
-> **Schedulata**: indica se il documento è stato schedulato (pianificato).   
-> **Data prevista**: è la data di prevista taratura.   
-> **Data taratura**: è la data di effettiva taratura.   
-> **Esito**: è il codice dell'*Esito* della taratura.   
-> **Descrizione esito**: è la descrizione dell'*Esito* della taratura.   
-> **Categoria**: è il codice della *Categoria strumento*.   
-> **Descrizione categoria**: è la descrizione della *Categoria strumento*.   
-> **Codice**: è il codice dello *Strumento di misura*.   
-> **Matricola**: è la matricola dello *Strumento di misura*.   
-> **Modello**: è il modello dello *Strumento di misura*.   
-> **Laboratorio esterno**: è la ragione sociale del *Fornitore* che effettua la taratura esterna.   
-> **Funzione**: è il codice della *Funziona aziendale* che effettua la taratura interna.   
-> **Descrizione funzione**: è la descrizione della *Funziona aziendale* che effettua la taratura interna.   
-> **Codice**: è il codice del *Dipendente* che effettua la taratura interna.   
-> **Cognome**: è il cognome del *Dipendente* che effettua la taratura interna.   
-> **Nome**: è il nome del *Dipendente* che effettua la taratura interna.   
+### Reports and Calibration Certificates History
+In this list, it is possible to view the history of *Calibrations* and *Calibration Certificates* planned and performed for the *Measurement Tool* associated with the displayed *Calibration*.   
+By double-clicking the desired line, it is possible to manage the selected *Calibration*.   
+The list consists of the following information:   
+> **Calibration Type**: it is the code of the *Calibration Type*.   
+> **Calibration Type Description**: it is the description of the *Calibration Type*.   
+> **Year**: it is the *Year* of the document.   
+> **Number**: it is the *Number* of the document.   
+> **Internal Calibration**: indicates if an *Internal Calibration* has been issued.   
+> **Scheduled**: indicates if the document has been scheduled (planned).   
+> **Scheduled Date**: it is the planned calibration date.   
+> **Calibration Date**: it is the date of the effective calibration.   
+> **Result**: it is the code of the *Calibration Result*.   
+> **Result Description**: it is the description of the *Calibration Result*.   
+> **Category**: it is the code of the *Category Tool*.   
+> **Category Description**: it is the description of the *Category Tool*.   
+> **Code**: it is the code of the *Measurement Tool*.   
+> **Serial Number**: it is the serial number of the *Measurement Tool*.   
+> **Model**: it is the model of the *Measurement Tool*.   
+> **External Laboratory**: it is the business name of the *Supplier* that performs the external calibration.   
+> **Function**: it is the code of the *Business Function* that performs the internal calibration.   
+> **Function Description**: it is the description of the *Business Function* that performs the internal calibration.   
+> **Code**: it is the code of the *Employee* who performs the internal calibration.   
+> **Surname**: it is the last name of the *Employee* who performs the internal calibration.   
+> **Name**: it is the first name of the *Employee* who performs the internal calibration.   
 
 
-### Extra data
-E' possibile inserire degli [Extra Data](/docs/configurations/utility/extra-data/extradata/new-extradata-simple) per ogni *Taratura strumento*.   
+### Extra Data
+It is possible to enter [Extra Data](/docs/configurations/utility/extra-data/extradata/new-extradata-simple) for each *Calibration Tool*.   
 
 
-### Immagine
-Viene riportata l'immagine associata nella gestione dello *Strumento di misura*.   
+### Picture
+The picture associated with the management of the *Measurement Tool* is displayed.   
 
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).   
+For anything not detailed in this document regarding the common operation of forms, please refer to the following link [Custom features, buttons, and fields](/docs/guide/common).

@@ -1,22 +1,22 @@
 ---
-title: Ricerca Taratura strumenti
+title: Calibration Tools Search
 sidebar_position: 1
 ---
 
-Il filtro si trova sul percorso **Qualità > Taratura strumenti > Taratura strumenti**.   
+The filter is located along the path **Quality > Calibration Tools > Calibration Tools**.
 
-Il filtro dati consente di inserire nuove *Tarature strumenti* o di ricercare quelle già esistenti per visualizzarle, modificarle oppure cancellarle.   
+The data filter allows you to enter new *Calibration Tools* or to search for existing ones to view, modify, or delete them.
 
-### ![](/img/neutral/common/search.png) Ricerca Taratura strumenti
+### ![](/img/neutral/common/search.png) Calibration Tools Search 
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.   
+The form consists of a filter area and a results area. Once all desired filters are set, simply click the **Search** button to display the results within the results grid.
 
-### ![](/img/neutral/common/new.png) Inserimento Taratura strumento
+### ![](/img/neutral/common/new.png) Insert Calibration Tools
 
-Per poter inserire nuove *Tarature strumenti* è necessario premere il pulsante **Nuovo**.   
+To enter new *Calibration Tools*, you need to press the **New** button.
 
-### ![](/img/neutral/common/edit.png) Modifica o ![](/img/neutral/common/view.png) Visualizzazione Taratura strumenti
+### ![](/img/neutral/common/edit.png) Modify or ![](/img/neutral/common/view.png) View Calibration Tools
 
-Per aprire la gestione, della griglia di risultato, è necessario fare doppio click sulla riga di nostro interesse oppure, selezionando una o più righe, premere i pulsanti **Modifica** o **Visualizza**.   
+To open the management of the results grid, you need to double-click on the row of interest or, by selecting one or more rows, press the **Modify** or **View** buttons.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+For everything not detailed in this document regarding the common functionality of forms, please refer to the following link [Custom Features, Buttons, and Fields](/docs/guide/common).
