@@ -1,56 +1,50 @@
 ---
-title: Movement Types
+title: Tipi movimento
 sidebar_position: 2
 ---
 
-The movement types set which function is enabled. Hereinafter all the details about the linked function for each movement:
+I tipi movimento determinano qual è la funzione abilitata. Di seguito si specifica per ogni tipo movimento la funzione collegata:
 
-- Load: it is a function of WMS Mobile that enables the user to create a load warehouse record
+**Carico**: funzione di WMS Mobile che permette di creare una registrazione di magazzino di carico;
 
-- Unload: it is a function of WMS Mobile that enables the user to create an unload warehouse record
+**Scarico**: funzione di WMS Mobile che permette di creare una registrazione di magazzino di scarico;
 
-- Production Paying-in: function of WMS Mobile that enables the user to declare the production of a finished or unfinished product
+**Versamento Produzione**: funzione di WMS Mobile che permette di dichiarare la produzione di un prodotto finito o semilavorato;
 
-- Production Picking: it is a function of WMS Mobile that enables the user to unload materials, necessary for production, from warehouse
+**Prelievo produzione**: funzione di WMS Mobile che permette di scaricare da magazzino i materiali necessari per la produzione;
 
-- Production Return: it is a function of WMS Mobile that enables the user to determine the production returns through a warehouse load record
+**Reso Produzione**: funzione di WMS Mobile che permette di dichiarare i resi di produzione con una registrazione di carico a magazzino;
 
-- Load Adjustment: it is a function of WMS Mobile that enables the user to perform a positive warehouse adjustment
+**Rettifica di carico**: funzione di WMS Mobile che permette di effettuare una rettifica di magazzino positiva;
 
-- Unload Adjustment: it is a function of WMS Mobile that enables the user to perform a negative warehouse adjustment
+**Rettifica di scarico**: funzione di WMS Mobile che permette di effettuare una rettifica di magazzino negativa;
 
-- Pallet Load: it is a function of WMS Mobile and of the ERP, that enables the user to perform the pallet warehouse load
+**Carico Pallet**: funzione di WMS Mobile e di ERP che permette di effettuare il carico a magazzino dell'UDC;
 
-- Pallet Unload: it is a function of WMS Mobile and of the ERP, that enables the user to perform the pallet warehouse unload
+**Scarico Pallet**: funzione di WMS Mobile e di ERP che permette di effettuare lo scarico da magazzino dell'UDC;
 
-- Returns: it is a function of WMS Mobile in order to manage the materials return
+**Rientri**: funzione di WMS Mobile per la gestione del rientro materiale;
 
-- Confirm Transfer: it is a function of WMS Mobile for transfer picking confirmation
+**Conferma trasferimento**: funzione di WMS Mobile per la conferma dei Picking di trasferimento;
 
-- Assign Location: it is a function of WMS Mobile that unloads the item from a default location and loads the item into the desired location
+**Assegna ubicazione**: funzione di WMS Mobile che scarica l'articolo da un'ubicazione di default e carica l'articolo nell'ubicazione desiderata;
 
-- Move Items: function of WMS Mobile that enables the user to move items from another location. The warehouse templare to be linked should be an unload template with detail account
+**Spostamento articoli**: funzione di WMS Mobile che permette di spostare gli articoli da un'ubicazione ad un'altra. La causale di magazzino da agganciare dovrà essere di scarico con contropartita;
 
-- Purchase: it is a function of WMS Mobile in order to create purchase delivery note after a sales order and the related items warehouse load
+**Acquisto**: funzione di WMS Mobile per creare il DDT di acquisto a fronte di un ordine cliente e il relativo carico a magazzino degli articoli;
 
-- Move expired lot: it is a function of WMS Mobile that enables the user to move the expired lots
+**Sposta lotto non buono**: funzione di WMS Mobile che permette lo spostamento di lotti scaduti;
 
-- Accept materials managed per lots: it is a function of WMS Mobile for the purchase delivery note creation after a sales order and the related warehouse load of items managed per lots
+**Accettazione materiali gestiti a lotti**: funzione di WMS Mobile per creare il DDT di acquisto a fronte di un ordine cliente e il relativo carico a magazzino degli articoli gestiti a lotti;
 
-- Cut from pallet: it is a function of WMS Mobile that enables the user to cut items from a previously created pallet
+**Togli da UDC**: funzione di WMS Mobil che permette di togliere articoli da un UDC precedentemente creata;
 
-- Sales: it is a function of WMS Mobile that is necessary in order to create the sales delivery note after a sales order or manual order and the related items unload from warehouse
+**Vendite**: funzione di WMS Mobile per creare il DDT di vendita a fronte di un ordine cliente o manuale e il relativo scarico da magazzino degli articoli;
 
-- Picking: it is a function of WMS Mobile in order to create a new picking or to confirm a previously created one
+**Picking**: funzione di WMS Mobile per creare un nuovo picking o per confermarne uno creato precedentemente;
 
-- Pallet Inventory: it is a function of WMS Mobile that is necessary in order to create a pallet inventory
+**Inventario UDC**: funzione di WMS Mobile per la creazione di un inventario UDC;
 
-- Pallet Transfer: it is a function of WMS Mobile that is necessary in order to create or confirm the pallet transfer lists
+**Trasferimento UDC**: funzione di WMS Mobile per la creazione o la conferma delle liste di trasferimento UDC;
 
-- Pallet Load from Pallet Creation: it is a function of WMS Mobile and of the ERP, that is necessary in order to create pallet and the related warehouse load
-
-
-
-
-
-
+**Carico UDC da creazione UDC**: funzione di WMS Mobile e ERP per la creazione delle UDC e relativo carico a magazzino.

@@ -1,25 +1,13 @@
 ---
-title: Load/Unload Parameters
+title: Parametri Carico/Scarico
 sidebar_position: 1
 ---
 
-The load/unload parameters management procedure consists as follows:
+La form permette di attribuire i diritti ad un utente per effettuare alcune movimentazioni di magazzino.  Le procedure che vengono gestite da questa finestra sono la gestione UDC per quanto riguarda l'ERP e tutti i moduli di WMS Mobile.
 
-RIBBON BAR: the ribbon bar represents the Form menu, that is the area on which it is possible to perform actions. The possible features list is the following:
+**Inserimento nuovo parametro**
 
+Per inserire un *Nuovo parametro carico/scarico* è necessario posizionarsi sul record libero oppure premere il pulsante **Inserisci** dalla ribbon bar.  
+Specificare quindi l'**Utente** desiderato, il [Tipo movimento](/docs/configurations/parameters/logistics/load-unload-parameters/movement-types), il **Magazzino** dove dovrà operare e la **Causale** utilizzata nelle registrazioni di magazzino.
 
-
-| Function | Meaning |
-| --- | --- |
-| Search | Button to apply search filters within database of load/unload parameters. |
-| Insert | It refers to the procedure to insert a new load/unload parameter. |
-
-FILTER AREA: The filter area contains the list of the possible data types thanks to which it is possible to perform a selection, a research on the total of sales order lines inserted in system. Typically Filters have “AND” condition and it is possible to specify more filter criteria at the same time. In this case it is possible to filter per employee and warehouse.
-
-RESULT GRID: the result grid represents the picking list which corresponds to the filter data, above mentioned. After having specified the values through which it is possible to obtain a picking search, the user can push [Search] button on the related Ribbon and will obtain the list of the desired load/unload parameters on the result grid.
-
-
-
-
-
-
+Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
