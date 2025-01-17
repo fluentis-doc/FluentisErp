@@ -1,15 +1,24 @@
 ---
-title: Overview
-sidebar_label: Overview
+title: Panoramica
+sidebar_label: Panoramica
 sidebar_position: 0
 ---
 
-*Supervisor* is a tool that allows us to create scripts that can be executed programmatically. In particular *Supervisor* is composed by three core components (they are not necessarily used together), which are:  
-**Activity** (i.e. script of different types created by the user), **Task** (i.e. a sort of container that store single or multiple **activity**/ies), **Event** (i.e. scheduled actions). 
+**Supervisor** è uno strumento che consente di creare scripts che possono essere eseguiti in maniera schedulata.  
+In particolare, è composto da quattro componenti distinti - i quali possono essere creati e riutilizzati dall'utente - che sono: 
 
-*Supervisor* application opens via the right side complementary menu **Tools** > **Fluentis Supervisor**.
+- [x] Attività
 
-:::caution
-The *Supervisor* application will be visibile in the complementary applications menu only if the **Fluentis Universal** menu is selected.
+- [x] Tasks
+
+- [x] Eventi
+
+- [x] Liste di Distribuzione
+
+Il modulo di *Supervisor* si apre dal menu complementare (posizionato sulla parte destra dell'interfaccia) **Strumenti** > **Fluentis Supervisor**.
+
+:::danger Attenzione
+Il modulo di Supervisor è visibile nel menù complementare *Strumenti* solo se il menù **Fluentis Universal** è selezionato.
 :::
 
+![alt text](/img/it-it/applications/supervisor/supervisor1.png)
