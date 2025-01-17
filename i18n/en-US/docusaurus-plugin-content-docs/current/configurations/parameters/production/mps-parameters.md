@@ -1,47 +1,68 @@
 ---
-title: MPS Parameters
+title: Parametri MS
 sidebar_position: 3
+tags: [MS]
 ---
 
-MPS Parameters window can be opened through the following path Home > Parameters > Production > MPS Parameters. Through this window it is possible to set all parameters regarding the production job order management and the way in which steps after job orders generation have to be managed.
+Attraverso questa finestra vengono settati tutti i parametri che riguardano la gestione delle commesse di produzione ed il modo in cui devono essere gestite le fasi successive alla generazione delle commesse stesse.
 
-In the “Method of job order generation” section, the Job order type (Mono/multiproduct), suggested in the MPS Definition Parameters tab, has to be set . While generating the job order from the MPS Definition, it is possible to edit this setting as well as the one related to the following combo called “Grouping Products for”, through which it is possible to indicate how the items must be grouped in the same mono/multiproduct job order.
+**Metodo generazione commessa**  
+In questa sezione deve essere impostato il **Tipo di Commessa** (Monoprodotto / Multiprodotto) che deve essere proposto nella procedura **Generazione commesse di produzione**, tab [Parametri](/docs/planning/mps-master-production-scheduling/job-order-creation).  
+Nel momento della generazione della commessa dalla [Generazione commesse di produzione](/docs/planning/mps-master-production-scheduling/job-order-creation) è comunque possibile modificare questa impostazione, così come quella relativa alla combo successiva chiamata **Raggruppamento per**, tramite la quale è possibile indicare come devono essere eventualmente raggruppati gli articoli all'interno della stessa commessa *Monoprodotto* o *Multiprodotto*.
 
+Se il *Tipo commessa* è:  
+- *Monoprodotto*, l'unico raggruppamento ammesso è quello per Articolo: questo tipo di gestione permette all'utente di far generare automaticamente dal sistema una serie di commesse monoprodotto, selezionando una lista di righe di ordini clienti, righe provenienti da Previsioni di Vendita o dal Piano Principale di Produzione o provenienti dal Sottoscorta, facendo in modo che ciascuna commessa che verrà generata presenti la somma delle quantità richieste per lo stesso articolo. La data di fine di una commessa raggruppata è sempre uguale a quella del fabbisogno più vicino alla data in cui si lancia l'elaborazione.  
+- *Multiprodotto* i raggruppamenti possono essere effettuati per cliente, commessa di vendita,  cliente/commessa, e consentono all'utente di inserire nella stessa commessa Multiprodotto più articoli provenienti da righe d'ordine cliente legate allo stesso cliente, alla stessa commessa di vendita oppure alla stessa commessa di vendita dello stesso cliente.
 
- 1. If the job order type is Monoproduct, the only possible grouping type is the “Grouping for Item” one: this management type enables the system to automatically generate a series of monoproduct job orders by selecting a list of customers' orders lines coming from “Sales Forecast”, “Production Main Plan” or “Sub-stocks”. Every job order that is generated has the total sum of the amounts requested for the same item. The end date of a grouped job order always coincides to the one of the requirement closest to the date in which the elaboration is launched.
- 2. If the job order type is Multiproduct, the groupings can be made by customer, sales job order, customer/job order. These groupings enable the user to insert in the same Multiproduct job order several items coming from customer order lines related to the same customer, to the same sales job order or to the same sales job order of the same customer. In the “Generation of Job order from” section, the user, by the means of the dedicated flags, can set if the job order must be generated from Sales Order  or from a forecast plan (Sales Forecast, Production Main Plan). These parameters can be edited from the MPS definition window. In case that the Production job order is generated from the Forecast Plan, it must be specified if the job order should be generated with a weekly or monthly term.
- 3. The “Compute qty. According to item LeadTime” flag is activated in case that the user does not want to use working cycles in order to determine the duration of a production job order; in this case, in order to determine the duration of the job order, the user can refer to the  “Production Lead Time”  field, within the MRP parameters of the item. The “Last number of the inserted job order” field shows the last progressive number of the production job order inserted.
+La **Priorità approvvigionamento** sarà il default per quando verranno generate le commesse.
 
-The “Automatic generation of job order from sales order” flag, if active, makes the procedure automatically create the production job order as soon as a sales order line is inserted. In this case, the job order is created in the “Not examined” status. Generally it is activated when the “MRP” procedure (and not the “General Schedule”) is used to schedule.
+**Generazione commessa da**   
+In questa sezione l'utente può impostare con gli appositi flag se la commessa debba essere generata da *Ordini clienti* o da un *Previsionale* (nello specifico poi può selezionare se da *Previsioni di vendita*, e/o da *Piano principale di produzione*).  
+Questi parametri sono poi modificabili dalla finestra di [Generazione commesse di produzione](/docs/planning/mps-master-production-scheduling/job-order-creation).  
+Nel caso di *Generazione commessa di produzione dal Previsionale*, deve essere specificato se si preferisce che la commessa di produzione venga generata con scadenza settimanale o mensile.
 
-The “Job Order automatic Issue” flag, if active, makes the procedure automatically create the production job order as soon as the consolidation of an annual Sales forecast is made. Even in this case, the job order is created with the “Not examined” status.
+**Considera le disponibilità provenienti da**   
+In questa sezione l'utente può decidere di impostare la considerazione della disponibilità dei prodotti finiti in sede di generazione commessa di produzione da: *Conto Lavoro*, *Acquisti*, *Vendite*, *Produzione*, *Magazzino*.
 
- “Update estimated delivery date” flag, if active, shows the “Previewed Delivery date” automatically updated. The delivery refers to the line of the sales order linked to the production job order line whose “estimated end date” is manually modified.
+Ci sono poi una serie di flag:
 
-The flags “Consider availabilities from” Subcontracting, Purchases, Sales, Production, Warehouse, enable the user to set the consideration of the availability of the finished products while generating a production job order.
+**Calcolo quantità in base al Lead Time dell'articolo**: viene attivato nel caso non si vogliano utilizzare i cicli di lavorazione per calcolare la durata di una commessa di produzione; in questo caso, ai fini del calcolo della durata della commessa si fa riferimento al campo Lead time di produzione presente nei [Parametri MRP](/docs/configurations/parameters/production/mrp-parameters/search-mrp-parameters)  dell'articolo. 
 
-The “Warehouses of job order scheduling” grid, refers to the simple visualization of the list of warehouses, whose availability should be controlled while generating a job order. This list is set in the mask called “Calculate Availability” , within the Utilities.
+**Generazione commessa da Ordini clienti in automatico**: se attivo, permette di fare in modo che la procedura crei automaticamente la commessa di produzione non appena venga inserita una riga ordine cliente. La commessa in questo caso viene creata nello stato di *Non Esaminata*. Generalmente viene attivato quando per schedulare si utilizza la procedura *MRP* anziché la *Schedulazione Generale*.
 
-In the “Scheduling last date” section, it is possible to find some summary data related to the last scheduling (time of beginning, number of errors, end hour, progressive scheduling).
+**Aggiornamento data merce pronta**: se attivo, quando viene cambiata la data di fine prevista lavorazione in una commessa (manualmente o da una procedura), la nuova data viene riportata anche sul campo *Data merce pronta* della commessa stessa e anche dell’ordine cliente collegato. Inoltre, è stata creata anche la tabella di log chiamata **MS_ProductionJobOrderItemReadyGoodsDateLogs** che tiene traccia di tutte le modifiche fatte. Questa è consultabile solo tramite SQL.           
 
-The “First Day of the week visualized in the factory calendar” enables the user to insert the day that is identified as the first one of the work week of the factory calendar.
+**Generazione automatica Flusso di produzione**: se attivo, l'utente può decidere di attivare il flag **Schedulazione**, che permette di vedere già schedulate le commesse di produzione non appena generate dalla **Generazione commesse di produzione**. L'attivazione del flag *Schedulazione* consente poi di attivare il flag **Rilascio**, che permette di decidere se dopo la schedulazione automatica gli ordini pianificati di acquisto, produzione e/o conto lavoro debbano essere rilasciati anch'essi in automatico. In quest'ultimo caso, per gli ordini pianificati di produzione si può attivare anche il flag **Rilascio OP esecutivi**, che permette di generare direttamente ordini di produzione esecutivi, saltando quindi anche la procedura di Rilascio ordini di produzione.  
 
-In the “Job order colors” it is possible to set the background and the text colors of job orders according to their status (not examined, launched etc.).
+**Costificazione commessa**      
+In questa sezione è possibile indicare dei parametri che saranno proposti come defualt per la costificazione delle commesse di produzione.    
 
-In the “Automatic generation of production flow” section, that depends on the activation of the related flag, the user can activate the “Scheduling” flag that enables the same one to view  as already scheduled those job orders just generated by the MSP definition. The activation of the “Scheduling” flag enables the activation of the “Release” flag that lets the user decide if the scheduled purchase, production and/or subcontracting job orders have to be automatically released after the automatic scheduling. In this case, regarding Production Planned orders, the user can activate the “Release ex.” Flag that directly generates executive production orders, avoiding the “Works Order Release” procedure.
+> **Tipo di costo**: permette di indicare il tipo di costo da utilizzare per la costificazione delle materie prime tra costo *Ultimo*, *Medio* e *Standard*;    
+> **Tipo di ricarico**: permette di indicare il tipo di ricarico tra *Costo* (a valore) e *Percentuale*; nel campo accanto è possibile inserire il valore corrispondente;      
+> **Costo del lotto**: attivando questo flag, la procedura valorizzerà il costo del materiale in base al tipo costo selezionato considerando i valori solo di quello specifico lotto;     
+> **Costo della commessa**: attivando questo flag, la procedura valorizzerà il costo del materiale in base al tipo costo selezionato considerando i valori solo di quella specifica commesa.     
 
-Finally, by activating the “Release ex,” flag the user can decide to activate the “Signal” and the “Eliminate mat. Without stock” flags. Their task is, regarding the generated production order, the opening/closing of the order steps signal is automatically inserted, recorded in the warehouse and the materials that should be used but do not have available stock are eliminated by the “Materials of the Production Signal” tab belonging to the phase during which the materials are unloaded.
+:::note Nota
+Se **Costo del lotto** e **Costo della commessa** sono attivati entrambi, la procedura valorizzerà il costo del materiale in base al tipo costo selezionato considerando i valori solo di quella specifica commesa e per quello specifico lotto.
+::: 
 
-Hereinafter the list of actions that can be performed through the RIBBON BAR:
+**Magazzini di schedulazione commesse**   
+Questa griglia è la semplice visualizzazione della lista di magazzini su cui deve essere controllata la disponibilità in sede di generazione commessa di produzione. Questa lista viene impostata nella form chiamata *Calcolo disponibilità* che si trova in *Home > Articoli >  [Calcolo disponibilità](/docs/erp-home/registers/items/calculate-availability)*.
 
+**Dati ultima schedulazione**   
+Questa sezione contiene alcuni dati riepilogativi dell'ultima schedulazione (data e ora inizio, numero di errori generati, data e ora fine, progressivo di schedulazione).
 
+**Parametri proposti schedulazione**: permette di definire quali parametri proporre per la schedulazione, può riproporre i parametri dell’ultima schedulazione effettuata, oppure proporre i parametri utilizzati per la schedulazione dal singolo operatore.
 
-| Function | Meaning |
-| --- | --- |
-| Save | Button to save the changes on MPS Parameters. |
+**Giorni prossima schedulazione**: indica il numero di giorni che verranno usati per incrementare la data inizio della schedulazione a capacità finita (campo *Dalla data*), nel tab *Parametri schedulazione a capacità finita* della form *Schedulazione a capacità finita*.
 
+**Numero massimo di mesi per la schedulazione**: indica il numero di mesi da aggiungere alla data odierna per determinare la data di fine schedulazione *Schedulare fino al* presente nei parametri della *Schedulazione generale*.        
 
+**Numero massimo di mesi per il calcolo della disponibilità materiali**: è possibile definire l’orizzonte temporale per il calcolo della disponibilità, nello specifico viene inserito il numero di mesi in cui verranno considerati i documenti; invece, i documenti con data successiva ai mesi presi in considerazione non saranno considerati nella schedulazione.   
 
+**Primo giorno della settimana visualizzato nel Calendario di fabbrica**: consente di inserire il giorno che si vuol far comparire come primo giorno della settimana lavorativa nel [Calendario di Fabbrica](/docs/configurations/tables/production/factory-calendar). Di solito si inserisce il lunedì.
 
+**Colori delle commesse**   
+In questa sezione è possibile impostare i colori dello sfondo e del testo delle commesse di produzione in base al loro stato (non esaminate, lanciate...ecc).
 
-
+Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
