@@ -26,7 +26,7 @@ To open the management of the results grid, double-click on the row of interest 
 The button is enabled only if, from the results grid, a single *Measurement Tool* is selected and the *Instrument* must be:   
 > *Active*;   
 > *Subject to calibration*;   
-> periodic calibration and of a temporal type (expanding *Calibration Properties* with *Calibration Period (Periodo di taratura)* different from *zero* and *Measurement Unit* of type *Day* or *Month*).   
+> periodic calibration and of a temporal type (expanding *Calibration Properties* with *Calibration Period* different from *zero* and *Measurement Unit* of type *Day* or *Month*).   
 
 To schedule new *Scheduled Tool Calibrations* from a *Measurement Tool*, click on the tool in the grid from which you wish to schedule the *Calibrations* and press the **Schedule New Calibrations** button. You can only schedule one *Measurement Tool* at a time.   
 A prompt will be displayed for:   
