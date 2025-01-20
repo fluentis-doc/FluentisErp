@@ -20,7 +20,7 @@ The form consists of a filter area and a results area. Once all desired filters 
 
 To enter new *Data Sheets*, it is necessary to press the **New** button.
 
-### ![](/img/neutral/common/edit.png) Edit or ![](/img/neutral/common/view.png) View Data Sheets 
+### ![](/img/neutral/common/edit.png) Modify or ![](/img/neutral/common/view.png) View Data Sheets 
 
 To open the management of the results grid, it is necessary to double-click on the row of interest or, by selecting one or more rows, press the **Modify** or **View** buttons.
 
