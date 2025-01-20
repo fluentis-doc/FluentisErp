@@ -78,7 +78,7 @@ Method used for the calculation of: **Total computed score**, **Residual Bonus**
 
 ### Extra Data
 
-It is possible to enter general [Extra Data (Dati Extra)](/docs/configurations/utility/extra-data/extradata/search-extradata) for the *Periodic Ratings on Non-Compliance*.   
+It is possible to enter general [Extra Data](/docs/configurations/utility/extra-data/extradata/search-extradata) for the *Periodic Ratings on Non-Compliance*.   
 
 
 For everything that is not detailed in this document regarding the common functionality of forms, please refer to the following link [Custom features, Buttons, and Fields](/docs/guide/common).
