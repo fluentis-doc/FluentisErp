@@ -7,7 +7,7 @@ The management can be found at the path **Quality > Item Controls > Data Sheets 
 
 
 :::important What it is for
-This management allows for the handling of many of the *Data Sheets* information without having to manually enter each *Technical Data Sheet*.   
+This management allows for the handling of many of the *Data Sheets* information without having to manually enter each *Data Sheet*.   
 :::
 
 
