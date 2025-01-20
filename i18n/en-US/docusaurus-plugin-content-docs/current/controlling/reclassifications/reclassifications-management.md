@@ -1,27 +1,26 @@
 ---
-title: Riclassificazioni
+title: Reclassifications 
 sidebar_position: 4
 ---
 
-Le riclassificazioni sono sostanzialmente l'applicazione dei dati di una *Chiusura conti infrannuale* (o di un *Consolidato*) ad un [*Modello di riclassificazione*](/docs/controlling/reclassifications/create-reclassification-model).
+Reclassifications are essentially the application of the data from an *Mid-Year Accounts Closures* (or a *Consolidated*) to a [*Reclassification Pattern*](/docs/controlling/reclassifications/create-reclassification-model).
 
-Nel caso di inserimento di una nuova riclassificazione, all'apertura della maschera è necessario impostare il codice univoco di *5* caratteri alfanumerici, la descrizione della riclassificazione e inserire il modello di riclassificazione: a questo punto avremo la possibilità di richiamare una *Chiusura conti infrannuale* da utilizzare oppure utilizzare il pulsante di creazione di una nuova *Chiusura conti infrannuale*. In questo secondo caso si aprirà la maschera di creazione della chiusura, una volta completata la procedura ***FluentisERP*** assegnerà automaticamente la nuova creazione alla riclassificazione in elaborazione.
+In the case of inserting a new reclassification, upon opening the form it is necessary to set the unique code of *5* alphanumeric characters, the description of the reclassification, and enter the reclassification model: at this point we will have the option to recall an *Mid-Year Accounts Closures* to use or to use the button to create a new *Mid-Year Accounts Closures*. In this second case, the creation screen will open, and once the procedure is completed, ***FluentisERP*** will automatically assign the new creation to the reclassification being processed.
 
-:::tip Nota
-Questa possibilità è utilizzabile nelle situazioni più semplici, dove non si ritiene necessario applicare le procedure attualmente escluse dalla gestione automatica della chiusura stessa
+:::tip Note
+This option can be used in simpler situations, where it is not deemed necessary to apply the procedures currently excluded from the automated management of the closing itself.
 :::
 
-Nel caso in cui sia stato impostato il flag di ***Consolidato*** sarà possibile richiamare il codice del *Consolidamento* intersocietario da gestire nel riclassificato.
+If the ***Consolidated*** flag has been set, it will be possible to recall the code of the *Consolidation* to be managed in the reclassified version.
 
-Per riclassificazioni su modelli di contabilità, nella testata del Riclassificato sono presenti, inoltre, un campo di collegamento con le commesse di vendita, uno per i centri di costo e un ultimo per i centri di profitto: una volta impostata uno di questi, il gestionale ricalcolerà tutta la struttura del riclassificato riprendendo i dati dalle registrazioni infrannuali collegate al filtro impostato.
+For reclassifications on accounting models, there are also fields in the header of the Reclassified section that link to sales orders, cost centers, and profit centers: once one of these is set, the management software will recalculate the entire structure of the reclassified version by referring to the data from the interim registrations linked to the set filter.
 
-Ultimo campo della testata della riclassificazione è denominato **Chiusura di rif. per calcolo ad incrementi**: si tratta in sostanza del valore iniziale sul quale il programma andrà a calcolare le differenze per valorizzare i dettagli dei sottoconti con tipo saldo *Incrementale* (si veda la documentazione di dettaglio dei tipi di livello sottoconti e commesse).
+The last field of the reclassification header is called **Incremental closing**: this is essentially the initial value upon which the program will calculate the differences to value the details of the detail accounts with a *Incremental* balance type (see the detailed documentation on detail account levels and orders).
 
-Al di sotto di questa sezione, sul lato sinistro della maschera sarà riproposta la struttura del [*Modello di riclassificazione*](/docs/controlling/reclassifications/create-reclassification-model) valorizzato dai dati della chiusura/consolidato impostato. Selezionando da questa parte un nodo di tipo differente da *Somma dei figli* o *Espressione*, ***FluentisERP*** mostrerà sul lato di destra due griglie: in quella superiore sarà visualizzata la lista dei saldi della chiusura (o consolidato) coerente con le impostazioni del livello stesso, in quella inferiore la lista dei dati che hanno valorizzato effettivamente il livello. Attraverso i pulsante presenti nella ribbon sarà possibile apportare una modifica direttamente al riclassificato senza modificare il modello di riferimento. È consentito anche l'intervento manuale sui dati presenti nella griglia sottostante, con anche la possibilità di inserire nuove righe manuali.
+Below this section, on the left side of the form, the structure of the [*Reclassification Pattern*](/docs/controlling/reclassifications/create-reclassification-model) will be displayed, populated with the data from the set closing/consolidation. Selecting from this part a node of a type different from *Children Sum* or *Expression*, ***FluentisERP*** will show two grids on the right side: in the upper grid, the list of balances from the closing (or consolidation) consistent with the settings of that level will be displayed, and in the lower grid, the list of data that actually populated the level. Through the buttons present in the ribbon, it will be possible to make a change directly to the reclassified version without modifying the reference model. Manual intervention on the data in the lower grid is also allowed, including the possibility of inserting new manual rows.
 
-:::tip Nota
-Se un nodo di tipo *Espressione* è stato impostato con valore fisso 0, allora nel riclassificato sarà disponibile sul lato destro un campo per settare manualmente il valore da utilizzare nell'elaborazione corrente
+:::tip Note
+If a node of type *Expression* has been set with a fixed value of 0, then in the reclassified version on the right side a field will be available to manually set the value to be used in the current processing.
 :::
 
-Nella maschera (come anche nella ricerca delle Riclassificazioni) è disponibile una stampa del Riclassificato: in alternativa, è disponibile la stampa ***Valorizzazione riclassificazioni*** che consente di comparare due riclassificazioni già memorizzate a sistema.
-
+In the form (as well as in the search for Reclassifications), a printout of the Reclassified version is available: alternatively, the ***Reclassification Valorization*** printout is available, which allows for comparing two reclassifications already stored in the system.

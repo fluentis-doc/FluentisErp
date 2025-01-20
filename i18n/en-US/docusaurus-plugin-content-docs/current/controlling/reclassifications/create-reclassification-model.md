@@ -1,175 +1,175 @@
 ---
-title: Crea modello di riclassificazione
+title: Create Reclassification Pattern
 sidebar_position: 2
 ---
 
-:::note Percorso
-**Controlling > Riclassificazioni > Modelli di riclassificazione>Crea modello di riclassificazione**
+:::note Path 
+**Controlling > Reclassifications > Reclassification Patterns > Create Reclassification Patterns**
 
-Nota:
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Note:
+For everything not detailed in this document about the common functioning of forms, refer to the following link [Custom features, buttons, and fields](/docs/guide/common).
 
 :::
 
 ---
 
-### INSERIMENTO NUOVO MODELLO - TESTATA
+### INSERT NEW PATTERN - HEADER 
 
-I modelli di riclassificazione sono elementi comuni a tutte le società caricate nello stesso database: la struttura del riclassificato, quindi, sarà visibile in tutte le società mentre quello che sarà specifico in ognuna di queste sarà l'assegnazione della propria struttura di piano dei conti (cdc/cdp ecc.) ai vari modelli. In questo modo sarà possibile anche creare un riclassificato consolidato di gruppo.
+Reclassification patterns are common elements across all companies loaded in the same database: the structure of the reclassification will therefore be visible in all companies, while what will be specific in each of these will be the assignment of its own chart of accounts structure (cdc/cdp, etc.) to the various models. In this way, it will also be possible to create a consolidated reclassification for the group.
 
-:::tip Nota
-Sono comuni a tutte le società, o a tutte le società della stessa localizzazione geografica assegnata al *Tipo riclassificazione* tramite la sua proprietà *Nazione*
+:::tip Note 
+They are common to all companies or to all companies in the same geographical location assigned to the *Reclassification Type* via its *Country* property.
 :::
 
-Gli elementi necessari per poter creare un nuovo modello sono: 
+The necessary elements to create a new model are:
 
-- **Tipo riclassificazione** di appartenenza, 
+- **Reclassification Type**,
 
-- **Codice del modello** (alfanumerico di 10 caratteri), 
+- **Pattern Code** (alphanumeric 10 characters),
 
-- **Descrizione** dello stesso.
+- **Description** of the same.
 
-- **Inversione segno**, disponibile solo in tipi riclassificazione legati al *Controlling*, consente di forzare l'inversione +- su tutti i nodi del modello
+- **Sign Reversal**, available only in reclassification types related to *Controlling*, allows the forced reversal +- on all nodes of the model.
 
-- **Indice in valore assoluto**, disponibile solo in tipi riclassificazione legati al *Controlling*, imposta il calcolo degli indici percentuali in valore assoluto appunto.
+- **Absolute Value Index**, available only in reclassification types related to *Controlling*, sets the calculation of percentage indices in absolute value, indeed.
 
-Attribuiti questi valori si attiveranno i vari pulsanti di definizione della struttura di riclassificazione: con il pulsante **Inserimento nodo radice** si andranno a creare i primi livelli della struttura, mentre con il successivo **Inserimento nodo** si aggiungeranno sottolivelli a quello selezionato nella struttura. 
+Once these values are assigned, the various buttons for defining the reclassification structure will be activated: with the button **Insert Root Node**, the first levels of the structure will be created, while with the subsequent **Insert Node**, sub-levels will be added to the selected structure.
 
-Ogni livello della struttura, a sua volta, sarà definito attraverso un codice (alfanumerico di 8 caratteri) e una descrizione: l'univocità in questo caso particolare è data dalla combinazione di entrambi i valori, codice e descrizione insieme (questo perché in un riclassificato UE, ad esempio, sono presenti più livelli ‘A' nelle varie sezioni del modello, con descrizioni differenti). Vediamo nei punti successivi in dettaglio i *Tipi di livello* che si possono assegnare a questi codici, tenendo conto che la cancellazione dei vari livelli è consentita solo se questi non sono valorizzati in una formula ('somma dei figli' o 'espressione').
-
-
-### UTILITY NELLA RIBBON BAR
+Each level of the structure, in turn, will be defined through a code (alphanumeric 8 characters) and a description: uniqueness in this particular case is given by the combination of both values, code and description together (this is because in a EU reclassification, for example, there are multiple levels ‘A’ in the various sections of the model, with different descriptions). In the following points, we will detail the *Types of Level* that can be assigned to these codes, bearing in mind that the deletion of the various levels is allowed only if they are not valued in a formula ('children sum' or 'expression').
 
 
- 1. La maschera **ricerca sottoconti mancanti** consente di ricercare e stampare i sottoconti non inseriti in nessun punto del modello di riclassificazione: nel filtro di ricerca sono disponibili i flag *Visualizza conti scaduti - con data fine validità*, il flag *Visualizza il conto non utilizzato nella griglia dei centri di costo* e il flag *Visualizza il conto non utilizzato nella griglia dei conti*, questi ultimi due che consentono di definire se ricercare nei nodi di tipo *Centi di costo* o *Sottoconti*
- In particolare, se è stato inserito il generico conto, non saranno visualizzati i suoi sottoconti pur se questi non sono specificatamente inseriti nel modello stesso
- 2. La maschera **ricerca sottoconti doppi** consente di ricercare e stampare la lista dei sottoconti che sono stati inseriti in più punti del modello, considerando solo i nodi dei conti o i nodi dei centri tramite i due flag *Visualizza il conto duplicato nella griglia centri di costo* e *Visualizza il conto duplicato nella griglia dei conti* presenti nel filtro. In particolare, se è stato inserito il generico conto e un suo sottoconto, questo sarà visualizzato in quanto considerato sia nel totale che come dettaglio
+### UTILITIES IN THE RIBBON BAR
 
 
-### CAMPI DI TESTATA
+1. The **Search Missing Detail Accounts** form allows searching and printing the sub-accounts not inserted at any point in the reclassification model: in the search filter, the flags *View expired accounts - with end date validity*, the flag *View account not used in cost centers grid*, and the flag *View account not used in account grid* are available, the latter two allowing you to define whether to search in nodes of type *Cost Centers* or *Detail accounts*.
+   In particular, if the generic account has been entered, its detail accounts will not be displayed even if they are not specifically inserted in the model itself.
+2. The **Search Double Detail Accounts** form allows searching and printing the list of detail accounts that have been entered in multiple points of the model, considering only the account nodes or cost center nodes through the two flags *View account doubled in cost centers grid* and *View account doubled in account grid* present in the filter. In particular, if the generic account and a detail account of it have been entered, it will be displayed as it is considered both in total and as detail.
 
-**Tipo del nodo** - Rappresenta il tipo di riga del modello di riclassificazione. Sono disponibili le seguenti tipologie:
 
-- ***Sottoconti*** è dedicato alla valorizzazione dei dati di contabilità generale, secondo i dettagli della struttura del piano dei conti della società.
+### HEADER FIELDS 
 
-- ***Centri di costo***  dedicato alla valorizzazione dei dati dell'analitica. Nel caso in cui il modello sia legato al controlling avrà disponibili alcune caratteristiche specifiche.
+**Node Type** - Represents the type of row in the reclassification model. The following types are available:
 
-- ***Centri di profitto*** (presente per retro-compatibilità, solo se la società non ha il flag *Controlling*) dedicato alla valorizzazione dei dati della contabilità per centro di profitto/ricavo
+- ***Detail accounts*** is dedicated to the valuation of general accounting data, according to the details of the company's chart of accounts structure.
 
-- ***Somma dei figli***: è un nodo che valorizzato automaticamente con la somma dei nodi presenti nel primo livello sottostante.
+- ***Cost Centers*** dedicated to the valuation of analytical data. If the model is related to controlling, it will have some specific characteristics available.
 
-- ***Espressione***: in questo caso la sezione di compilazione dell'espressione è liberamente configurabile. Sono consentite le parentesi, la gestione dei 4 segni matematici principali, l'inserimento di numeri. Per riportare nella formula un nodo del modello è consigliato l'uso del pulsante 'Formula', che aprirà un help di selezione dei nodi del modello: in questa maschera, i nodi in rosso identificano quelli non ancora salvati e quindi non ancora utilizzabili in una formula.
+- ***Profit Centres*** (present for backward compatibility, only if the company does not have the *Controlling* flag) dedicated to the valuation of accounting data by profit/revenue center.
 
-- ***Commesse*** (presente per retro-compatibilità, solo se la società non ha il flag *Controlling*) dedicato alla valorizzazione dei dati della contabilità per commesse, secondo i dettagli della commessa.
+- ***Children Sum***: it is a node automatically valued with the sum of the nodes present in the first underlying level.
 
-- **Tipo del dato**, il campo è attivo solo in nodi di tipo *Espressione* e ha le opzioni *Valuta* o *Numero*: nel primo caso il livello visualizzerà un valore monetario con il simbolo e relativi decimali dalla divisa della società; nel secondo caso, il livello visualizzerà un generico valore numerico arrotondato al numero di decimali impostato nel campo successivo.
+- ***Expression***: in this case, the section for filling in the expression is freely configurable. Parentheses, the management of the 4 main mathematical signs, and the insertion of numbers are allowed. To include a model node in the formula, it is recommended to use the 'Formula' button, which will open a help for selecting model nodes: in this form, the nodes in red identify those not yet saved and therefore not yet usable in a formula.
 
-- **Inversione del segno del nodo selezionato** consente di invertire i segni negativi in positivi e viceversa: nei riclassificati di ***FluentisERP*** qualsiasi dato con saldo dare sarà visualizzato con segno positivo, l'avere con segno negativo. Attraverso questo flag, quindi, si potranno visualizzare totali positivi per livelli che per natura hanno saldo avere (passività, ricavi). Attenzione che questa impostazione ha un'influenza determinante sul risultato delle sommatorie e delle espressioni in genere. L'inversione del segno è applicato al risultato del livello, non ai dettagli (sottoconti, cdc, cdp, commesse) che lo valorizzano: questi continueranno ad avere il segno del saldo (vedi oltre in questo documento per l'inversione dei segni di specifici sottoconti).
+- ***Job Orders*** (present for backward compatibility, only if the company does not have the *Controlling* flag) dedicated to the valuation of accounting data for job orders, according to job order details.
 
-- **Da stampare**: indica se il livello va riportato in stampa o meno.
+- **Data Type**, the field is active only in nodes of type *Expression* and has options *Currency* or *Number*: in the first case, the level will display a monetary value with the symbol and corresponding decimals from the company's currency; in the second case, the level will display a generic numerical value rounded to the number of decimals set in the following field.
 
-:::tip Nota
-L'uso di questo flag dipende chiaramente dalla sua gestione nella visibilità all'interno dei report di stampa
+- **Sing Reversal of Selected Node** allows for reversing negative signs to positive and vice versa: in ***FluentisERP*** reclassifications, any data with a debit balance will be displayed with a positive sign, and credit with a negative sign. Through this flag, therefore, totals can be displayed as positive for levels that by nature have a credit balance (passivity, revenues). Be careful that this setting has a decisive impact on the result of summations and expressions in general. The sign reversal is applied to the level result, not to the details (detail accounts, cdc, cdp, projects) that value it: these will continue to have the balance sign (see below in this document for the sign reversal of specific detail accounts).
+
+- **To Print**: indicates whether the level should be printed or not.
+
+:::tip Note 
+The use of this flag clearly depends on how it is managed in visibility within the print reports.
 :::
 
-- **Mostra dettagli**: abilita la possibilità di evidenziare, nei comparati, i dettagli interni del nodo (cioè la lista di sottoconti o centri)
+- **Show Details**: enables the possibility to highlight, in comparatives, the internal details of the node (i.e., the list of detail accounts or centers).
 
-- **Gestione divisa**: l'opzione è valida per i nodi di tipo *Sottoconto*, indica a ***FluentisERP*** di valorizzare eventuali saldi in divisa per i sottoconti che hanno il flag *Gestione divisa* nel piano dei conti (tipicamente tutte le anagrafiche clienti/fornitori/agenti/banche). In questo caso, quindi, nei riclassificati di questo modello potremo avere N righe per ogni sottoconto, una per ogni divisa di movimentazione nella chiusura infrannuale utilizzata.
+- **Currency Management**: the option is valid for nodes of type *Detail account*, indicating to ***FluentisERP*** to value any balances in foreign currency for detail accounts that have the flag *Currency Management* in the chart of accounts (typically all customer/supplier/agent/bank registers). In this case, therefore, in the reclassifications of this model, we could have N rows for each detail account, one for each currency of movement in the half-yearly closure used.
 
-- La sezione **Natura raggruppamento** consente di impostare i tipi di conto che si potranno assegnare a questo livello, ed è visibile solo quando siamo in un nodo di tipo *Sottoconti*: in sostanza, all'atto dell'inserimento del sottoconto sarà applicato un filtro per tipo conto già limitato a quanti presentano flag coerenti con l'impostazione stessa. 
+- The **Grouping Nature** allows you to set the types of accounts that can be assigned to this level and is visible only when in a node of type *Detail accounts*: essentially, at the time of inserting the detail account, a filter for account type will be applied already limited to those presenting flags consistent with this setting.
 
-:::tip Esempi
-Ad esempio, se la natura è ‘Patrim. attivo', sarà possibile inserire i tipi conto che hanno questo flag in tabella: tipicamente l'attivo, i clienti e le banche. Nel caso in cui si modifichi questa impostazione con sottoconti già presenti nel livello, all'atto del salvataggio della modifica sarà richiesto se cancellare o meno i sottoconti non coerenti.
+:::tip Examples 
+For example, if the nature is ‘Active Patrimonial', it will be possible to insert account types that have this flag in the table: typically assets, customers, and banks. If this setting is modified with already present detail accounts at the level, upon saving the modification, it will be asked whether to delete non-consistent detail accounts.
 :::
 
-Con il flag **Considera c.d.c./c.d.p. figli** (per modelli non legati a tipi del *Controlling*) si potrà inserire nel livello il centro di costo X e ***FluentisERP*** riporterà nel riclassificato tutti i suoi centri di costo interni che abbiano un valore. Il flag consente, quindi, di evitare di riportare e manutenere tutto il possibile dettaglio dei centri di costo ma solo il centro di costo superiore che li raggruppa.
+With the flag **Consider Child c.d.c./c.d.p.** (for models not linked to *Controlling* types), you can insert the cost center X in the level, and ***FluentisERP*** will report in the reclassification all its internal cost centers that have a value. The flag allows avoiding reporting and maintaining all possible detail of the cost centers but only the upper cost center that groups them.
 
-### GRIGLIA AGGANCIO CONTI 
+### ACCOUNTS ATTACHMENT GRID 
 
-La griglia **Conti** consente di definire la lista dei conti e/o sottoconti che andranno a valorizzare questo livello del modello. Non è consentito l'inserimento dello stesso conto o sottoconto con lo stesso tipo saldo nello stesso livello, mentre questo può essere inserito in altri punti del riclassificato senza alcun vincolo. È consentito l'inserimento del solo conto (mastro) generico: il caso tipico è il conto generico che contiene i sottoconti di anagrafica, senza dettagliare la lista dei clienti/fornitori nel modello che causerebbe la necessità di un continuo allineamento dei vari modelli.
+The **Accounts** grid allows defining the list of accounts and/or detail accounts that will value this level of the model. The insertion of the same account or detail account with the same balance type in the same level is not allowed, whereas it can be inserted at other points in the reclassification without any constraint. The insertion of only the generic account (master) is allowed: the typical case is the generic account that contains the detail accounts of the register, without detailing the list of customers/suppliers in the model, which would create the need for continuous alignment of the various models.
 
-Il **tipo di saldo** della singola riga di conto o sottoconto prevede le seguenti possibilità: 
+The **balance type** of the single line of account or detail account includes the following possibilities:
 
-**Generale** (sarà inserito il saldo del sottoconto indipendentemente dal suo segno; nel caso di conto generico, sarà inserita la somma dei saldi dei sottoconti appartenenti a quel conto), 
+**General** (the balance of the detail account will be inserted regardless of its sign; in the case of a generic account, the sum of the balances of the detail accounts belonging to that account will be entered),
 
-**Dare** (sarà inserito il saldo del sottoconto solo se questo ha segno dare; nel caso di conto generico, sarà inserita la somma dei saldi dare dei sottoconti appartenenti a quel conto), 
+**Debit** (the balance of the detail account will be inserted only if it has a debit sign; in the case of a generic account, the sum of the debit balances of the detail accounts belonging to that account will be entered),
 
-**Avere** (sarà inserito il saldo del sottoconto solo se questo ha segno avere; nel caso di conto generico, sarà inserita la somma dei saldi avere dei sottoconti appartenenti a quel conto), 
+**Credit** (the balance of the detail account will be inserted only if it has a credit sign; in the case of a generic account, the sum of the credit balances of the detail accounts belonging to that account will be entered),
 
-**Incremento** (per il sottoconto o conto sarà calcolato il valore come differenza tra la chiusura infrannuale del riclassificato e un'altra chiusura di riferimento: questa tipologia è utile in caso di analisi per flussi).
+**Increment** (for the detail account or account, the value will be calculated as the difference between the half-yearly closure of the reclassification and another reference closure: this type is useful in the case of flow analysis).
 
-L'ultimo flag presente in griglia è denominato **Inv. col.**: significa che, sul sottoconto selezionato, il segno del saldo sarà invertito.
+The last flag present in the grid is called **Col. rev.**: it means that, on the selected sub-account, the balance sign will be inverted.
 
-:::tip Nota
-Può tornare utile, ad esempio, per detrarre dal saldo di un conto il valore di un suo sottoconto: ad esempio, togliere un cliente intercompany che è stato codificato all'interno del mastro clienti standard, per poterlo gestire in un nodo separato senza duplicare valori
+:::tip Note 
+This can be useful, for example, to deduct from the balance of an account the value of one of its detail accounts: for example, to remove an intercompany customer that has been coded within the standard customer master to manage it in a separate node without duplicating values.
 :::
 
-L'inserimento, in questa griglia, può essere effettuato con due metodologie: il caricamento direttamente in griglia, digitando il codice o attraverso l'help conti che consente la selezione di un unico record, oppure l'uso del pulsante ‘Inserimento multiplo sottoconti' per avere un help conti con la selezione multipla attiva.
+Insertion in this grid can be done using two methods: directly loading in the grid by typing the code or through the account help that allows the selection of a single record, or using the ‘Multiple insertion of detail accounts’ button to have an account help with multi-selection active.
 
-### GRIGLIA AGGANCIO CENTRI AZIENDALI
+### CORPORATE CENTERS ATTACHMENT GRID
 
-Nella griglia dei centri di costo si vanno a caricare i centri di costo che valorizzeranno il livello. I campi disponibili sono i seguenti:
+In the cost centers grid, the cost centers that will value the level are loaded. The available fields are as follows:
 
-- **Tipo riga**: il campo è legato alla gestione dei *Cost driver* nel *Controlling* ed è quindi in uso solo nei modelli di tipi legati alla contabilità gestionale del controlling, la selezione possibile è fra
-    - *Sorgente* le righe di analitica assegnate direttamente al centro o attribuite al primo ciclo dei driver
-    - *Ceduta* ad altri Centri di costo, che saranno indicati in griglia
-    - *Ricevuta* da altri Centri di costo, che saranno indicati in griglia
+- **Row Type**: the field is linked to the management of *Cost drivers* in *Controlling* and is therefore in use only in models of types related to managerial accounting of controlling; the possible selection includes:
+    - *Source* the analytical lines directly assigned to the center or attributed to the first cycle of drivers
+    - *Sold* to other Cost Centers, which will be indicated in the grid
+    - *Received* from other Cost Centers, which will be indicated in the grid
 
-- **Conto-Sottoconto-Descrizione**: serve per indicare con quale conto (o conto-sottoconto) contabile filtrare i dati dell'analitica o della gestionale
+- **Account-Detail account-Description**: used to indicate which account (or account-detail account) to filter the analytical or managerial data.
 
-- [**Centro di costo**](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-centers): il campo è facoltativo nei modelli di tipo legato al Controlling, mentre è obbligatorio negli altri casi. E' il centro da utilizzare per filtrare i dati dell'analitica o della gestionale.
+- [**Cost Center**](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-centers): the field is optional in models of type related to Controlling, while it is mandatory in other cases. It is the center to be used to filter the data of the analytical or managerial.
 
-- **Inversione colonne**: significa che, sulla riga selezionata, il segno del saldo sarà invertito
+- **Column Reversal**: means that, on the selected row, the balance sign will be inverted.
 
-- **Variabili**: il campo è visibile solo nei modelli di tipo legato al Controlling, consente di definire se utilizzare la 
-    - quota *variabile* 
-    - quota *fissa*
-    - *generale* (dare o avere), che è il default quando non indicato
+- **Variables**: the field is visible only in models of type related to Controlling, it allows you to define whether to use the 
+    - *variable quota* 
+    - *fixed quota*
+    - *general* (debit or credit), which is the default when not indicated.
 
-**Tipo saldo**: viene sempre gestito il saldo di tipo *Generale*, solo nei modelli di tipo legato al Controlling dovremo utilizzare i tipi saldo 
-    - *Iniziale*
-    - *Finale* 
+**Balance Type**: the balance is always of type *General*, only in models of type related to Controlling we will need to use the balance types 
+    - *Opening balance*
+    - *Final balance* 
     
-per le righe dei sottoconti delle rimanenze iniziali/finali
+for the rows of the detail accounts of initial/final inventories.
 
 
-### PARTICOLARITA' DEL TIPO NODO CENTRI DI COSTO PER MODELLI DEL CONTROLLING
-Nei modelli con tipo legato al Controlling, abbiamo disponibilità di alcune opzioni specifiche nei nodi dei Centri di costo. In particolare:
+### SPECIFICITY OF THE COST CENTER NODE TYPE FOR CONTROLLING MODELS
+In models with types related to Controlling, we have specific options available in the Cost Centers nodes. In particular:
 
-- **Riferimento percentuale**: serve per capire, nelle comparazioni, qual è il nodo di riferimento per calcolare una percentuale 'verticale' nel modello
+- **Percentage Reference**: serves to understand, in comparisons, what is the reference node for calculating a ‘vertical’ percentage in the model.
 
-:::tip Nota
-ad esempio lo imposteremo sul totale ricavi in modo da poter capire quanto incide, in percentuale, ogni nodo di costo rispetto ad esso
+:::tip Note
+For example, we will set it on total revenues to understand how much each cost node contributes, in percentage, to it.
 :::
 
-- **Numeratore per calcolo indici**: in un modello di totalizzazione costi dei centri, indica il nodo che totalizza i costi per usarlo come numeratore per il calcolo delle tariffe dei centri
+- **Numerator for calculate indices**: in a cost totalization model of the centers, indicates the node that totals the costs to use it as a numerator for calculating the centers' tariffs.
 
-- **Variabili**: consente di definire se utilizzare la 
-    - quota *variabile* 
-    - quota *fissa*
-    - *generale* (dare o avere), che è il default quando non indicato
+- **Variables**: allows defining whether to use the 
+    - *variable quota* 
+    - *fixed quota*
+    - *general* (debit or credit), which is the default when not indicated.
+    
+The indication at the node level is applied if not indicated at the individual line level in the grid.
 
-l'indicazione a livello di nodo viene applicata se non è indicata a livello di singola riga in griglia
+- **Node Index**: not used.
 
-- **Indice del nodo**: non utilizzato
+### SPECIFICITY OF THE COST CENTER NODE TYPE FOR PROJECT/JOB ORDER CONSOLIDATION MODELS
 
-### PARTICOLARITA' DEL TIPO NODO CENTRI DI COSTO PER MODELLI DI CONSOLIDATO DI PROGETTO/COMMESSA
+- **Numerator for profitability calculation**: indicates the node that totals the project/job order margin.
 
-- **Numeratore per calcolo redditività**: indica il nodo che totalizza il margine di progetto/commessa
-
-- **Tipo sorgente**: indica che tipo di origine dati andrà a valorizzare il nodo. Sono possibili le seguenti origini:
-    - *Contabile*: utilizzato tipicamente per il nodo che totalizza i ricavi diretti di commessa, il dato arriva nella gestionale dalla contabilità
-    - *Manuale*: per dati che arrivano da registrazioni extracontabili di area
-    - *Formula*: per dati che arrivano dalle formule di calcolo
-    - *Ammortamenti*: per dati che arrivano dal calcolo tecnico degli ammortamenti nel controlling
-    - *Stanziamenti residui*: per i conguagli di fine periodo, solitamente non utilizzato
-    - *Reversione a tariffa*: solitamente non utilizzato
-    - *Rimanenze*: per dati che arrivano dalla contabilizzazione delle rimanenze nel controlling
-    - *Materiali*: per evidenziare i consumi degli articoli (materiali) in produzione
-    - *Lavorazioni esterne*: per evidenziare i costi delle lavorazioni esterne (dal conto lavoro)
-    - *Trasformazione*: per evidenziare i costi delle lavorazioni interne (dalla produzione)
-    - *Tempo macchina*: per mostrare i tempi macchina impiegati nella produzione
-    - *Tempo uomo*: per mostrare i tempi uomo impiegati nella produzione
-    - *Tempo macchina attrezzaggio*: per mostrare i tempi attrezzaggio macchina
-    - *Tempo uomo attrezzaggio*: per mostrare i tempi attrezzaggio uomo
-    - *Consolidamento*: per le registrazioni di consolidamento intercompany, solitamente non utilizzato
+- **Source Type**: indicates what type of data source will value the node. The following sources are possible:
+    - *Accounting*: typically used for the node that totals the direct revenues from job orders, the data comes from accounting into the management.
+    - *Manual*: for data coming from extrabudgetary area recordings.
+    - *Formula*: for data coming from calculation formulas.
+    - *Depreciation*: for data coming from the technical calculation of depreciation in controlling.
+    - *Residual appropriations*: for end-of-period adjustments, usually not used.
+    - *Reversal at the Rate*: usually not used.
+    - *Oddments*: for data coming from the accounting of stocks in controlling.
+    - *Materials*: to highlight the consumption of items (materials) in production.
+    - *External Workings*: to highlight the costs of external working (from labor account).
+    - *Transformation*: to highlight the costs of internal working (from production).
+    - *Machine Time*: to show the machine hours used in production.
+    - *Manpower Timing*: to show the man hours used in production.
+    - *Setup Machine Time*: to show the setup machine hours.
+    - *Equipment Man Time*: to show the setup man hours.
+    - *Consolidation*: for intercompany consolidation postings, usually not used.

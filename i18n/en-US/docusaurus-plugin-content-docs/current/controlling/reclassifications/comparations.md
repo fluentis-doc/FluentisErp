@@ -1,85 +1,85 @@
 ---
-title: Comparazione riclassificazioni
+title: Reclassification Comparisons 
 sidebar_position: 5
 ---
 
-Le comparazioni delle riclassificazioni consentono, a partire da un determinato [*Modello di riclassificazione*](/docs/controlling/reclassifications/create-reclassification-model), di elaborare dei confronti tra le varie riclassificazioni memorizzate in ***FluentisERP***.
+Reclassification comparisons allow, starting from a certain [*Reclassification Model*](/docs/controlling/reclassifications/create-reclassification-model), to process comparisons among the various reclassifications stored in ***FluentisERP***.
 
 
-## COMPARAZIONI SU DATI DEI RICLASSIFICATI DI CHIUSURE INFRANNUALI
-Imposteremo il modello, inseriremo una Descrizione identificativa della comparazione, sulla destra non andremo ad impostare il flag **Dati del controlling** in modo che ***FluentisERP*** vada a leggere i dati dei riclassificati elaborati dai dati della *Chiusura infrannuale* o dal *Consolidamento*.
+## COMPARISONS ON DATA FROM MID-YEAR CLOSING RECLASSIFICATIONS
+We will set the model, insert an identifying Description for the comparison, and on the right, we will not set the flag **Controlling Data** so that ***FluentisERP*** will read the reclassified data processed from the *Mid-year closing* or from the *Consolidation*.
 
-Nella griglia sottostanti dei ***Dettagli*** avremo i seguenti campi:
-- *Progressivo* di riga, sarà l'elemento identificativo del dato nella scheda successiva degli ***Scostamenti***
-- *Codice/Chiusura* (con la relativa Descrizione e Data)
+In the underlying grid of ***Details***, we will have the following fields:
+- *Progressive*: this will be the identifying element of the data in the next ***Variances*** tab.
+- *Code/Closing* (with the related Description and Date).
 
-Una volta salvate queste impostazioni, nella Scheda degli ***Scostamenti*** vedremo il risultato della comparazione. In particolare avremo le seguenti opzioni:
+Once these settings are saved, in the ***Variances*** tab, we will see the result of the comparison. In particular, we will have the following options:
 
-- *Visualizzazione degli scostamenti*: consente di vedere lo scostamento percentuale tra le riclassificazioni inserite. Sul lato destrosi attiverà la possibilità di impostare su quale quale colonna (quella vicina o su una fissa) calcolare lo scostamento
+- *View variances*: allows you to see the percentage variance between the entered reclassifications. On the left side, it will activate the ability to set which column (the adjacent or a fixed one) to calculate the variance on.
 
-- *Visualizza dati di dettaglio*: mostrerà il dettaglio dei sottoconti, o centri, che valorizzano il singolo nodo del modello
+- *View Detail Data*: will show the details of the detail accounts or centers that value the individual node of the model.
 
-- *Visualizza centri*: non attivo su comparati non del controlling
+- *Show centers*: not active on comparisons not from controlling.
 
-- *Cifre decimali*: decimali da utilizzare per la colonna sostamenti
-
-
-## COMPARAZIONI SU DATI DELLA CONTABILITA' GESTIONE DEL CONTROLLING
-Imposteremo il modello, inseriremo una Descrizione identificativa della comparazione, sulla destra andremo ad impostare il flag **Dati del controlling** in modo che ***FluentisERP*** vada a leggere i dati della *Contabilità gestionale* del controlling.
-
-Nella griglia sottostanti dei ***Dettagli*** avremo i seguenti campi:
-- *Progressivo* di riga, sarà l'elemento identificativo del dato nella scheda successiva degli ***Scostamenti***
-- *Area*, obbligatorio, sarà l'area dalla quale leggere i dati
-- [*Dimensione*](/docs/controlling/controlling-parametrization/controlling-specific-settings/dimension), obbligatorio, cioè da quale dimensione leggere i dati
-- [*Centro aziendale*](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-centers), opzionale, cioè di quale centro si vuole visualizzare i dati
-- *Progetto*, non in uso
-- *Periodo inizio* e *Periodo fine*, obbligatori, è il range di periodi da considerare
-- *Anno inizio* e *Anno fine*, obbligatori, è il range di anni da considerare
-- *Visualizza dettagli periodo*: significa che per la riga, si richiede l'esplosione di N colonne una per ogni periodo del range definito
-- *Centro/Commessa su colonna*: significa che il codice del *Centro* impostato sulla riga sarà riportato nel nome della colonna
-- *Calcola indici*: questa opzione forzerà un calcolo 'al volo' degli indici di costo dei centri. Questa opzione è valida quando si sta eseguendo un comparato sul codice modello utilizzato per la misurazione dei centri, in tabella dei *Centri di costo*
+- *Decimal digits*: decimals to be used for the variance column.
 
 
-Una volta salvate queste impostazioni, nella Scheda degli ***Scostamenti*** vedremo il risultato della comparazione. In particolare avremo le seguenti opzioni:
+## COMPARISONS ON MANAGEMENT ACCOUNTING CONTROLLING DATA
+We will set the model, insert an identifying Description for the comparison, and on the right, we will set the flag **Controlling Data** so that ***FluentisERP*** will read the *Managerial accounting* data of controlling.
 
-- *Visualizzazione degli scostamenti*: consente di vedere lo scostamento percentuale tra le riclassificazioni inserite. Sul lato destrosi attiverà la possibilità di impostare su quale quale colonna (quella vicina o su una fissa) calcolare lo scostamento
+In the underlying grid of ***Details***, we will have the following fields:
+- *Progressive*: this will be the identifying element of the data in the next ***Variances*** tab.
+- *Area*: mandatory, this will be the area from which to read the data.
+- [*Dimension*](/docs/controlling/controlling-parametrization/controlling-specific-settings/dimension): mandatory, meaning which dimension to read the data from.
+- [*Business Center*](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-centers): optional, meaning which center you want to view data from.
+- *Project*: not in use.
+- *Start of Period* and *End of Period*: mandatory, this is the range of periods to consider.
+- *Start Year* and *End Year*: mandatory, this is the range of years to consider.
+- *View Period Details*: means that for the row, there is a request to explode N columns, one for each period in the defined range.
+- *Center/Job Column*: means that the code of the *Center* set on the row will be reported in the name of the column.
+- *Index Calculation*: this option will force an 'on-the-fly' calculation of the cost indices of the centers. This option is valid when performing a comparison on the model code used for measuring the centers in the *Cost Centers* table.
 
-- *Visualizza dati di dettaglio*: mostrerà il dettaglio dei sottoconti, o centri, che valorizzano il singolo nodo del modello
 
-- *Visualizza centri*: mostrerà anche il dettaglio dei centri associati ai sottoconti del nodo
+Once these settings are saved, in the ***Variances*** tab, we will see the result of the comparison. In particular, we will have the following options:
 
-- *Visualizza totali*: aggiungerà una colonna finale di totalizzazione di tutte le colonne visualizzate nella griglia sottostante
+- *View Variances*: allows you to see the percentage variance between the entered reclassifications. On the left side, it will activate the ability to set which column (the adjacent or a fixed one) to calculate the variance on.
 
-- *Cifre decimali*: decimali da utilizzare per la colonna sostamenti
+- *View Detail Data*: will show the details of the detail accounts or centers that value the individual node of the model.
 
-In caso di visualizzazione degli scostamenti, avremo le seguenti colonne di scostamento:
-- *%*: si tratta della *percentuale verticale* tra il nodo che ha il flag 'Riferimento percentuale' (che quindi avrà 100%) e tutti gli altri
-- *Scostamento*: si tratta dello scostamento in valore assoluto
-- *Scost.%': si tratta dello scostamento in percentuale
-- *Scost.% su %': mette a confronto le *percentuali verticali* delle due colonne
+- *View Centers*: will also show the details of the centers associated with the detail accounts of the node.
 
-Nel caso in cui si fosse nel comparato del modello di attribuzione costi ai centri per il calcolo degli indici, se nel dettaglio di impostazione abbiamo filtrato per i vari centri produttivi misurati avremo la possibilità di vedere, all'interno del sottostante expander, i totali di elaborazione dell'indice di costo per ognuno di questi. I campi visualizzati sono:
+- *Show Totals*: will add a final totalization column of all displayed columns in the underlying grid.
 
-- *UM1-F NUMERATORE*: numeratore per il calcolo indice fisso sulla UM1 del centro
-- *UM1-F DENOMINATORE*: denominatore per il calcolo indice fisso sulla UM1 del centro
-- *UM1-F VALORE INDICE*: valore dell'indice fisso sulla UM1 del centro
-- *UM1-V NUMERATORE*: numeratore per il calcolo indice variabile sulla UM1 del centro
-- *UM1-V DENOMINATORE*: denominatore per il calcolo indice variabile sulla UM1 del centro
-- *UM1-V VALORE INDICE*: valore dell'indice variabile sulla UM1 del centro
-- *UM1 TOTALE*: indice totale della UM1 del centro
+- *Decimal Digits*: decimals to be used for the variance column.
 
-- *UM2-F NUMERATORE*: numeratore per il calcolo indice fisso sulla UM2 del centro
-- *UM2-F DENOMINATORE*: denominatore per il calcolo indice fisso sulla UM2 del centro
-- *UM2-F VALORE INDICE*: valore dell'indice fisso sulla UM2 del centro
-- *UM2-V NUMERATORE*: numeratore per il calcolo indice variabile sulla UM2 del centro
-- *UM2-V DENOMINATORE*: denominatore per il calcolo indice variabile sulla UM2 del centro
-- *UM2-V VALORE INDICE*: valore dell'indice variabile sulla UM2 del centro
-- *UM2 TOTALE*: indice totale della UM2 del centro
+In case of variance display, we will have the following variance columns:
+- *%*: this is the *vertical percentage* between the node that has the 'Reference Percentage' flag (which will thus have 100%) and all the others.
+- *Variance*: this is the absolute value variance.
+- *Variance %*: this is the variance in percentage.
+- *Variance % on %*: compares the *vertical percentages* of the two columns.
 
-- *% NUMERATORE* numeratore per il calcolo indice percentuale
-- *% DEMONIMATORE* denominatore per il calcolo indice percentuale
-- *% PERCENTUALE* valore dell'indice percentuale
+In the case where you are in the cost assignment model comparison for the calculation of indices, if in the detail settings we have filtered for the various measured production centers, we will have the possibility to see, within the underlying expander, the totals of the processing cost index for each of these. The displayed fields are:
 
-:::tip NOTA
-Quando si elaborano le comparazioni del controlling, ***FluentisERP*** creerà automaticamente tante riclassificazioni sul modello quante sono le combinazioni di centro, anno,mese e dettagli richiesti, prima di rendere disponibile il risultato dell'elaborazione. Più è complessa la lista, più sarà lunga l'elaborazione.
+- *UM1-F NUMERATOR*: numerator for the fixed index calculation on UM1 of the center.
+- *UM1-F DENOMINATOR*: denominator for the fixed index calculation on UM1 of the center.
+- *UM1-F INDEX VALUE*: value of the fixed index on UM1 of the center.
+- *UM1-V NUMERATOR*: numerator for the variable index calculation on UM1 of the center.
+- *UM1-V DENOMINATOR*: denominator for the variable index calculation on UM1 of the center.
+- *UM1-V INDEX VALUE*: value of the variable index on UM1 of the center.
+- *UM1 TOTAL*: total index of UM1 of the center.
+
+- *UM2-F NUMERATOR*: numerator for the fixed index calculation on UM2 of the center.
+- *UM2-F DENOMINATOR*: denominator for the fixed index calculation on UM2 of the center.
+- *UM2-F INDEX VALUE*: value of the fixed index on UM2 of the center.
+- *UM2-V NUMERATOR*: numerator for the variable index calculation on UM2 of the center.
+- *UM2-V DENOMINATOR*: denominator for the variable index calculation on UM2 of the center.
+- *UM2-V INDEX VALUE*: value of the variable index on UM2 of the center.
+- *UM2 TOTAL*: total index of UM2 of the center.
+
+- *% NUMERATOR*: numerator for the percentage index calculation.
+- *% DENOMINATOR*: denominator for the percentage index calculation.
+- *% PERCENTAGE*: value of the percentage index.
+
+:::tip NOTE
+When processing comparisons for controlling, ***FluentisERP*** will automatically create as many reclassifications on the model as there are combinations of center, year, month, and requested details, before making the processing result available. The more complex the list, the longer the processing time will be.
 :::

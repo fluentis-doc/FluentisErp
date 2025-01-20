@@ -1,5 +1,5 @@
 ---
-title: Riclassificazione di Bilancio formato CEE Video Tutorial
+title: CEE Format Financial Statement Reclassification Video Tutorial 
 sidebar_position: 3
 ---
 
