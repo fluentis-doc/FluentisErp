@@ -1,14 +1,14 @@
 ---
-title: Ricerca chiusura conti infrannuale
+title: Mid-Year Accounts Closures Search
 sidebar_position: 2
 ---
 
-La form viene utilizzata per ricercare le chiusure elaborate ed eventualmente cancellarle.
+The form is used to search for processed closures and potentially delete them.
 
-Da questa maschera sarà possibile cercare e visualizzare i parametri utilizzati in ogni singola chiusura, così come creare nuove chiusure o cancellare (operazione consentita solo se sulla chiusura non sono state gestite procedure automatiche).
-Il flag 'Definitiva' presente in griglia consente di rendere non più modificabile la chiusura stessa.
+From this interface, it will be possible to search and view the parameters used in each individual closure, as well as create new closures or delete (an operation allowed only if no automatic procedures have been managed on the closure).
+The flag 'Definitive' present in the grid allows the closure itself to become unmodifiable.
 
 
-:::danger ATTENZIONE
-Non è possibile riaprire una chiusura una volta che questa è stata resa definitiva!
+:::danger ATTENTION
+It is not possible to reopen a closure once it has been made final!
 :::

@@ -1,168 +1,166 @@
 ---
-title: Crea Chiusure infrannuali
+title: Create Mid-Year Closures 
 sidebar_position: 3
 ---
 
-La procedura permettere di creare nuove simulazioni di bilancio infrannuale.
+The procedure allows creating new mid-year balance sheet simulations.
 
-L'origine dei dati di partenza è sempre la Contabilità generale al momento della creazione della chiusura stessa: il programma riprende i saldi dei vari sottoconti, secondo i parametri di creazione della chiusura impostati nella presente form, per consentire poi l'aggiunta extracontabile di tutte le operazioni di ratei, risconti, ammortamenti e registrazioni manuali per arrivare ad una simulazione di bilancio comprensiva degli assestamenti e rettifiche necessarie. L'operazione non ha alcun effetto sui dati di contabilità generale ai fini della chiusura contabile di fine anno: il modulo chiusure infrannuali è infatti gestito in tabelle del database completamente separate dalla contabilità generale.
-
-
-## Tab *Generale*
-
-Flag **Seleziona dati per divisione**: se impostato, il campo precedente della divisione diventa un filtro con il quale prelevare dalla contabilità i soli dati della divisione impostata.
-
-**Anno contabile**: l'anno di riferimento dei dati, serve per identificare i conti di default delle scritture di assestamento e i periodi contabili relativi.
-
-**Escludi causale**: nel caso in cui si stiano prelevando i dati di un intero anno contabile già chiuso, consente di escludere le registrazioni di chiusura conti e così ottenere i dati di bilancio dell'esercizio.
-
-**Area**: il campo è visibile solo in società che gestiscono lo Controlling, si selezionerà l'area dei Consuntivi da associare al set di dati in elaborazione.
+The source of the starting data is always the General Ledger at the time of creating the closure itself: the program retrieves the balances of the various detail accounts, according to the closure creation parameters set in this form, to then allow the off-balance addition of all accruals, deferred charge, depreciations, and manual records to arrive at a balance sheet simulation including the necessary adjustments and corrections. The operation has no effect on general ledger data for the purpose of year-end closure: the mid-year closures module is, in fact, managed in database tables completely separate from general ledger.
 
 
+## Tab *General*
 
-### Sezione **Ripresa valori patrimoniali**
+Flag **Select data for department**: if set, the previous field for the division becomes a filter to retrieve only the data of the set division from accounting.
 
-Il flag di **Ripresa dei movimenti di natura patrimoniale**, presente di default, abilita la sezione sottostante di filtro. Con questa opzione, ERP andrà ad inserire nella chiusura infrannuale anche i saldi dei sottoconti collegati ai tipi conto che presentano il flag **Patrimoniale attivo** o **Patrimoniale passivo.**
+**Accounting year**: the reference year of the data, used to identify the default accounts for adjustment records and the related accounting periods.
 
-La sezione dei filtri per data registrazione e data competenza sottostanti consente di definire i range di date che saranno utilizzati per recuperare i dati patrimoniali dalle registrazioni del periodo impostato. 
+**Exclude causal**: in the case of retrieving data for an entire closed fiscal year, allows excluding closure account records and thus obtaining the financial data for the year.
 
-:::tip NOTA
-In particolare, nel caso in cui non sia ancora stata registrata in contabilità la chiusura e riapertura dei conti, la data di inizio deve essere retrodatata alla data di ultima apertura conti rilevata in contabilità, in modo da avere un dato patrimoniale corretto. 
+**Area**: the field is visible only in companies that manage Controlling. The area of Finals to associate with the dataset being processed will be selected.
 
-Da considerare che, in questo caso, ci sarà una differenza tra saldo patrimoniale e saldo economico dell'esercizio in corso, corrispondente all'utile/perdita dell'esercizio precedente non ancora rilevato nella chiusura/riapertura dei conti di contabilità generale: al lancio della creazione, Fluentis chiederà se si vuole valorizzare tale differenza sui conti dell'utile o perdita predefiniti nei parametri di contabilità, ottenendo una registrazione bilanciata, mentre se questa opzione non viene utilizzata ci sarà uno sbilancio nella registrazione e quindi, per il buon fine dell'operazione di chiusura stessa, la causale dovrà consentire il salvataggio di registrazioni sbilanciate.
+
+
+### Section **Retrieve of Asset Values**
+
+The flag for **Retrieve of movements with patrimonial nature**, which is present by default, enables the underlying filter section. With this option, the ERP will also include the balances of the detail accounts linked to account types that have the flag **Active Patrimonial** or **Passive Assets** in the mid-year closure.
+
+The section of filters for registration date and maturity date allows defining the date ranges that will be used to retrieve asset data from the records of the set period.
+
+:::tip NOTE
+In particular, if the closure and re-opening of accounts have not yet been registered in accounting, the start date must be retrodated to the last account opening date recorded in accounting, to ensure a correct asset figure.
+
+It should be noted that, in this case, there will be a difference between the asset balance and the economic balance of the current year, corresponding to the profit/loss of the previous year not yet recorded in the general ledger closure/re-opening: upon launching the creation, Fluentis will ask if you want to value this difference on the predefined profit or loss accounts in the accounting parameters, obtaining a balanced record; whereas if this option is not used, there will be an imbalance in the record, and thus, for the proper execution of the closure operation itself, the template must allow saving imbalanced records.
 :::
 
 
-Nel caso in cui la chiusura non preveda la ripresa patrimoniale, nuovamente la registrazione di chiusura infrannuale (della sola sezione economica) sbilancerà per l'utile/perdita del periodo.
+If the closure does not foresee the asset retrieve, again, the registration of mid-year closure (of the economic section only) will imbalance for the profit/loss of the period.
 
-### Sezione **Ripresa valori economici**
+### Section **Retrieve of Economic Values **
 
-Il flag di **Ripresa dei movimenti di natura economica**, presente di default, abilita la sezione sottostante di filtro. Con questa opzione, vengono inseriti nella chiusura infrannuale i saldi dei sottoconti collegati ai tipi conto che presentano il flag **Economico costi** o **Economico ricavi**.
+The flag for **Retrieve of movements with economic nature**, which is present by default, enables the underlying filter section. With this option, the balances of the detail accounts linked to account types that have the flag **Economic Costs** or **Economic Revenues** are included in the mid-year closure.
 
-La sezione dei filtri per data registrazione, competenza e documento sottostanti consente di definire i range di date che saranno utilizzati per recuperare i dati dalle registrazioni del periodo impostato.
+The section of filters for registration date, maturity, and document allows defining the ranges of dates that will be used to retrieve data from the records of the set period.
 
-:::tip NOTA
-Il range di date documento, non proposto di default, normalmente non viene impostato: non tutte le registrazioni contabili, infatti, presentano le date documento in testata (solitamente solo le registrazioni di fatture di acquisto/vendita).
+:::tip NOTE
+The document date range, which is not set by default, is usually not specified: not all ledger records have document dates in the header (typically only the records for purchase/sale invoices).
 :::
 
 
-Nel caso in cui la chiusura non preveda la ripresa economica, la registrazione di chiusura infrannuale (della sola sezione patrimoniale) sbilancerà per l'utile/perdita del periodo.
+If the closure does not foresee the economic recovery, the registration of the interim closure (of the asset section only) will imbalance for the profit/loss of the period. 
 
-### Sezione **Dati chiusura conti**
+### Section **Data for accounts closing**
 
-La sezione presenta gli elementi identificativi che saranno attribuiti a questa simulazione di bilancio.
+The section presents the identifying elements that will be attributed to this balance sheet simulation.
 
-**Causale chiusura conti**: è la causale da utilizzare per creare la registrazione di ripresa saldi. Si ricorda che tale causale deve avere i flag cdc/cdp/progetti affinchè questi elementi siano considerati nella Chiusura infrannuale stessa.
+**Temp. of acc. closing**: it is the template to be used to create the balance retrieve record. It is noted that this template must have the flags for CDC/CDP/projects so that these elements are considered in the mid-year closure itself.
 
-**Data chiusura**: è la data di creazione di questa simulazione, che sarà utilizzata come data della registrazione extracontabile di chiusura stessa e per le altre registrazioni. Non ha nessuna valenza particolare.
+**Closed date**: it is the creation date of this simulation, which will be used as the date of the off-balance closure record and for other records. It has no particular significance.
 
-**Numero chiusura**: è il numero progressivo della chiusura, proposto automaticamente dal sistema.
+**Closing Number**: it is the progressive number of the closure, automatically proposed by the system.
 
-**Descrizione chiusura**: è la descrizione che apparirà in tutte le maschere del modulo Chiusure infrannuali, in quello del Bilancio e del Budget. Si consiglia di descrivere in modo chiaro i range di date impostati in modo da capire il periodo simulato quando si andrà a selezionare la chiusura nelle varie procedure dell'area Controlling.
+**Closing descr.**: it is the description that will appear in all screens of the Mid-Year Closures module, in the Balance Sheet and Budget modules. It is advisable to clearly describe the date ranges set so that one understands the simulated period when selecting the closure in the various procedures in the Controlling area.
 
-**Competenza economica dal/al**: questo range di date è obbligatorio per poter procedere alla creazione della chiusura infrannuale. Indica il periodo  di competenza economica che interessa: sarà quindi preso come riferimento per il calcolo delle scritture di rettifica/integrazione, per il calcolo della ripresa ammortamenti del periodo e in generale le varie procedure a valle. Per esemplificare, se sono state riprese le registrazioni del primo semestre dell'esercizio X e si è inserito lo stesso semestre come range di date competenza economica, con le procedure di rettifica il programma verificherà se sono presenti righe di contabilità con range di competenza al di fuori di questo semestre al fine di rilevarne il risconto relativo.
+**Economic Competence From/To**: this date range is mandatory to proceed with the creation of the mid-year closure. It indicates the period of economic competence of interest: it will thus be taken as a reference for the calculation of adjustment/integration records, for the calculation of the retrieve of the current period's depreciations, and generally for the various downstream procedures. To exemplify, if the records of the first half of the year X have been retrieved and the same semester has been entered as the range of economic competence, the adjustment procedures will check if there are any accounting lines with competence ranges outside of this semester in order to record their related deferral.
 
-### Sezione **Opzioni chiusura**
+### Section **Closure Options**
 
 
-**Chiusura per commessa**: con questo flag, il programma andrà a creare una registrazione di chiusura infrannuale per ogni commessa di vendita che è stata valorizzata nelle registrazioni contabili del periodo di filtro impostato. Si ricorda che la causale di chiusura infrannuale deve prevedere la gestione delle commesse (progetti) per gestirne i dati.
+**Closure for Job Order**: with this flag, the program will create an mid-year closure record for each sales order that was recorded in the ledger records of the set filter period. It is noted that the mid-year closure template must foresee the management of the job orders (projects) to manage their data.
 
-**Considera registrazioni provvisorie**: con questo flag, la ripresa dei dati dalla contabilità andrà a considerare anche le registrazioni contabili con stato 'provvisorie'.
+**Consider temporary recordings**: with this flag, the retrieve of data from accounting will also consider ledger records with the status 'temporary'.
 
-### Valori calcolati 
+### Calculated Values 
 
-questa sezione propone i totali patrimoniali/economici calcolati dalla prima registrazione di chiusura effettuata. 
+This section offers the total asset/economic values calculated from the first closure record made. 
 
-(con flag **Chiusura per commessa**  questa sezione visualizzerà solamente i dati dalla prima commessa individuata nel periodo).
+(with flag **Closure for Job Order**, this section will only display data from the first identified order in the period).
 
-### Rettifiche e integrazioni
+### Rectification and Integrations
 
-La sezione consente di gestire automaticamente, in coda alla registrazione di ripresa dati infrannuale, le relative registrazioni di rettifica e integrazione.
+The section allows managing automatically, at the end of the mid-year data retrieve record, the related adjustment and integration records.
 
-:::note Nota
-Questo tipo di registrazioni di assestamento viene effettuata in automatico solo relativamente ai movimenti dei sottoconti economici legati ad un tipo conto che presenta il flag *Servizio* impostato. 
+:::note Note
+This type of adjustment records is done automatically only for movements of the economic detail accounts linked to an account type that has the *Service* flag set. 
 :::
 
-il riferimento delle rettifiche/integrazioni è al **range di date competenza** inserite nei movimenti di prima nota (e nei centri di costo/profitto per la parte di analitica).
+The reference for adjustments/integrations is to the **competence date range** entered in the journal records (and in the cost/profit centers for the analytical part).
 
-**Scritture di rettifica in automatico**: impostando il flag si attiverà la sezione delle rettifiche automatiche, è necessario impostare la causale che andrà a rilevare l'operazione. Anche qui, per rettificare anche i movimenti di cdc/cdp, sarà necessario che la causale ne preveda la gestione. 
+**Automatic adjustment entries (Scritture di rettifica in automatico)**: setting the flag will activate the section for automatic adjustments. It is necessary to set the reason that will identify the operation. Also here, to adjust the CDC/CDP movements, it will be necessary for the reason to foresee their management.
 
-Le impostazioni consigliate prevedono l'opzione **raggruppa per registrazione** e soprattutto l'uso del **calendario solare**. 
+The recommended settings are to use the **group by registration** option and, above all, the **solar calendar**.
 
-:::tip Nota
-I sottoconti di risconto da utilizzare saranno quelli inseriti nel piano dei conti in corrispondenza del singolo sottoconto di costo/ricavo oppure il sottoconto generico inserito nei parametri di contabilità dell'anno della chiusura infrannuale stessa. 
+:::tip Note
+The sub-accounts of deferral to be used will be those entered in the chart of accounts corresponding to the individual cost/revenue sub-account or the generic sub-account entered in the accounting parameters for the year of the interim closure itself.
 :::
 
-Questo flag crea automaticamente quello che l'utente può gestire separatamente anche dopo l'elaborazione dei saldi di chiusura nella procedura dedicata *Scritture di rettifica* sempre riferita al menu delle chiusure infrannuali (*procedure*).
+This flag automatically creates what the user can also manage separately after processing the closure balance in the dedicated *Adjustment Entries* procedure always referred to the interim closures menu (*procedure*).
 
-**Scritture di integrazione in automatico**: impostando il flag si attiverà la sezione delle integrazioni automatiche, è necessario impostare la causale che andrà a rilevare l'operazione **e della data di inizio competenza**. 
+**Automatic integration entries (Scritture di integrazione in automatico)**: setting the flag will activate the section for automatic integrations. It is necessary to set the reason that will identify the operation **and the maturity start date**. 
 
-Anche qui, per integrare anche i movimenti di cdc/cdp, sarà necessario che la causale ne preveda la gestione. 
+Also here, to integrate the CDC/CDP movements, it will be necessary for the reason to foresee their management.
 
-L'impostazione di default del calendario solare è quello che si consiglia di utilizzare. 
+The default setup of the solar calendar is what is recommended to use.
 
-Con questo flag il programma verificherà, **a partire dalla *Data di inizio competenza per le scritture di integrazione***, le righe di costo/ricavo presenti in contabilità e non inserite nella chiusura (cioè registrazioni al di fuori dei range di date registrazione/competenza impostate), per creare i ratei dei giorni all'interno del range di date competenza impostate per la chiusura. 
+With this flag, the program will verify, **starting from the *Maturity Start Date for Integration Entries*,** the cost/revenue lines present in accounting and not included in the closure (i.e., entries outside the set registration/maturity dates), to create accruals for the days within the set maturity date ranges for the closure.
 
-:::tip Nota
-I sottoconti di rateo da utilizzare saranno quelli inseriti nel piano dei conti in corrispondenza del singolo sottoconto di costo/ricavo oppure il sottoconto generico inserito nei parametri di contabilità dell'anno della chiusura infrannuale stessa.
-Se il costo/ricavo ha una competenza economica **totalmente inserito nel range d'interesse della chiusura* ed è in una registrazione contabile con il sottoconto di testata valorizzato, allora Fluentis presuppone si sia in una registrazione di una fattura da ricevere/emettere ed utilizzerà questi sottoconti prelevandoli dall'anagrafica cliente/fornitore o dai parametri di contabilità dell'anno selezionato, al posto dei sottoconto di rateo.
+:::tip Note
+The sub-accounts of accrual to be used will be those entered in the chart of accounts corresponding to the individual cost/revenue sub-account or the generic sub-account entered in the accounting parameters for the year of the interim closure itself. 
+If the cost/revenue has economic maturity **entirely included in the interest range of the closure** and is in an accounting entry with the header sub-account valued, then Fluentis assumes it is an entry of an invoice to be received/sent and will use these sub-accounts taking them from the customer/supplier registry or the accounting parameters of the selected year, instead of the accrual sub-account.
 :::
 
-Questo flag crea automaticamente quello che l'utente può gestire separatamente anche dopo l'elaborazione dei saldi di chiusura nella procedura dedicata *Scritture di integrazione*.
+This flag automatically creates what the user can also manage separately after processing the closure balances in the dedicated *Integration Entries* procedure.
 
-:::danger IMPORTANTE
-Merita un'attenzione particolare la **data di inizio competenza** da impostare. 
+:::danger IMPORTANT
+Particular attention must be given to the **maturity start date** to be set. 
 
-Normalmente questa data sarà impostata uguale alla data dell'ultima apertura conti rilevata in contabilità. 
+Normally, this date will be set equal to the date of the last account opening recorded in accounting. 
 
-Esempio: se stiamo creando la chiusura del primo trimestre dell'esercizio, il range di date per la sezione economica sarà tipicamente 01/01/anno X – 31/03/anno X e se è presente la riapertura conti dell'esercizio precedente allora all'interno di questo range ci sarà direttamente il giroconto a costo/ricavo dei ratei rilevati nel bilancio 'anno X-1' e quindi la data inizio per le integrazioni sarà da impostare come 01/01/anno X in modo che il software verifichi se dopo del 31/03 ci sono righe con competenza nel trimestre precedente. 
+Example: if we are creating the closure for the first quarter of the year, the date range for the economic section will typically be 01/01/year X – 31/03/year X, and if the account re-opening of the previous year is present, then within this range there will directly be the transfer to the cost/revenue of the accruals recorded in the 'year X-1' balance and therefore the start date for the integrations will be set as 01/01/year X so that the software checks if there are records with maturity in the previous quarter after 31/03.
 
-**Se la riapertura NON è presente**, invece, sarà necessario impostare la data inizio come 01/01/**anno X-1** **includere anche, per competenza, i movimenti che sarebbero stati oggetto di riapertura (ratei e risconti) dall'anno precedente.** 
+**If the re-opening is NOT present**, however, it will be necessary to set the start date as 01/01/**year X-1** **to include as well, for maturity, the movements that would have been subject to re-opening (accruals and deferrals) from the previous year.** 
 :::
 
-:::danger ATTENZIONE
-Il modulo controlling ragiona in modo più flessibile, in alcune situazioni, rispetto al modulo amministrativo.
-Infatti è in grado di rettificare automaticamente qualsiasi costo ricavo (con tipo conto compatibile) sia per quote di competenza economica nel passato che nel futuro, in quanto procede a mensilizzare i costi/ricavi di competenza e quindi toglie automaticamente i valori anteriori e posteriori al range della chiusura. Ad esempio se il costo registrato nell'anno X ha competenza parzialmente (o totalmente) nell'anno X-1, eseguendo l'elaborazione periodi sui dati consuntivi della chiusura dell'anno X andrà comunque a considerare solo il periodo di competenza richiesto.
+:::danger WARNING
+The controlling module operates in a more flexible manner, in some situations, compared to the administrative module.
+In fact, it is able to automatically adjust any cost or revenue (with compatible account types) for either economic maturity shares in the past or future, as it proceeds to monthly allocate the costs/revenues and thus automatically removes values before and after the range of closure. For instance, if the cost recorded in year X has partial (or total) maturity in year X-1, processing the period calculations on the actual data of the closure of year X will still only consider the requested maturity period.
 
-Occorre porre particolare attenzione alla **gestione degli assestamenti eseguiti nel modulo amministrativo**.
-**Si raccomanda di eseguire il calcolo e contabilizzazione assestamenti e la chiusura e riapertura conti con riapertura assestamento tramite le procedure automatiche evitando di eseguire scritture manualmente**.
+Particular attention should be given to the **management of adjustments made in the administrative module**. 
+**It is recommended to perform the calculation and posting of adjustments and the closure and re-opening of accounts with re-opening adjustment through the automatic procedures, avoiding manual entries.**
 
-La procedura automatica impone, infatti, alle scritture di riapertura degli assestamenti la data pari alla scrittura originaria oggetto di rettifica e la competenza economica di tale scrittura pari all'anno X-1. In tale modo si evita infatti che elaborando le chiusure di periodo dell'anno X il software vada a calcolare ulteriori rettifiche, avendosi già nel saldo dell'anno X (o periodo infrannuale dell'anno X) il risultato corretto di competenza per effetto della corretta riapertura dell'assestamento precedente.  
+The automatic procedure imposes, in fact, on the re-opening entries of adjustments the date equal to the original entry subject to correction and the economic maturity of that entry equal to year X-1. This way, it avoids that when processing period closures of year X, the software calculates further adjustments, already having the correct maturity result in the balance of year X (or interim period of year X) due to the proper re-opening of the previous adjustment.  
 :::
 
-### Ripresa ammortamento cespiti
+### Recovery of Depreciation of Assets (Ripresa ammortamento cespiti)
 
-La sezione consente di gestire automaticamente, in coda alla registrazione di ripresa dati infrannuale, la rilevazione degli ammortamenti civilistici/fiscali del periodo di competenza: si utilizza quindi la stessa logica della procedura *Ammortamento cespiti* del modulo Cespiti, ma per i soli giorni di competenza economica d'interesse nella chiusura.
-Una volta abilitato il calcolo si dovrà impostare la causale contabile da utilizzare e scegliere se creare una *singola registrazione* cumulativa o dettagliata cespite per cespite.
-Il flag 'Operazioni incrementali', per il quale si rimanda al modulo cespiti, consente di filtrare il tipo di categorie cespiti da gestire.
-Questo flag crea automaticamente quello che l'utente può gestire separatamente anche dopo l'elaborazione dei saldi di chiusura nella procedura dedicata *Ripresa ammortamento cespiti*.
+The section allows automatically managing, at the end of the interim data recovery entry, the recognition of civil/fiscal amortizations for the maturity period: it therefore uses the same logic as the *Depreciation of Assets* procedure in the Assets module, but only for the days of economic maturity of interest in the closure. 
+Once the calculation has been enabled, the accounting reason to use must be set, and it must be chosen whether to create a *single cumulative entry* or detailed entry for each asset.
+The flag 'Incremental Operations', for which it refers to the assets module, allows filtering the type of asset categories to manage.
+This flag automatically creates what the user can manage separately after processing the closure balances in the dedicated *Recovery of Depreciation of Assets* procedure.
 
-:::tip Nota
-Se in azienda fossero presenti sia categorie cespiti incrementali che non, si suggerisce di utilizzare la procedura dedicata *Ripresa ammortamento cespiti*, in modo da poter lanciare entrambe le combinazioni in sequenza.
+:::tip Note
+If both incremental and non-incremental asset categories are present in the company, it is advisable to use the dedicated *Recovery of Depreciation of Assets* procedure, so that both combinations can be launched in sequence.
 :::
 
+### Accounting for Inventories (Contabilizzazione rimanenze)
 
-### Contabilizzazione rimanenze
+The section allows automatically managing, at the end of the interim data recovery entry, the recognition of beginning/end inventories for the maturity period.
+Once the management is enabled, we will manage the date range to be used, the type of inventory to consider (*Positive/Negative*), the type of cost calculation (*Average Cost, Last Cost, FIFO by Annual Installments, LIFO by Annual Installments, Managerial Area, Actual Lot Cost*) and the accounting reason to be used for the entries to be created.
+The presence or absence of the Controlling flag will manage the operations in two different ways:
+- If the flag *is not present*, **FluentisERP** will create the entries for the beginning and end inventories on the start and end dates of the Interim Closure period, and will insert them at the end of the other adjustment entries of the closure itself.
+- If the flag *is present*, **FluentisERP** will create the entries for beginning and end inventories for each single month within the maturity date range of the Interim Closure, and will insert them as Off-Balance Entries in the Area associated with the closure itself (thus they will not be closure entries, but entries valid only for Controlling).
 
-La sezione consente di gestire automaticamente, in coda alla registrazione di ripresa dati infrannuale, la rilevazione delle rimanenze iniziali/finali del periodo di competenza.
-Una volta abilitata la gestione, andremo a gestire il range di date da utilizzare, il tipo di giacenza da considerare (*Positiva/Negativa*), il tipo di calcolo costo (*Costo medio, Costo ultimo, FIFO a Scatti Annuali, LIFO a Scatti Annuali, Area Gestionale, Da costo effettivo lotti*) e la causale contabile da utilizzare per le registrazioni da creare.
-La presenza o meno del flag Controlling andrà a gestire le operazioni in due modi differenti:
-- Se il flag *non è presente*, **FluentisERP** creerà le scritture delle rimanenze iniziali e quelle finali alle date di inizio e fine periodo della Chiusura infrannuale, e le inserirà in coda alle altre scritture di assestamento della chiusura stessa.
-- Se il flag *è presente*, **FluentisERP** creerà le registrazioni delle rimanenze iniziali e finali di ogni singolo mese all'interno del range di date di competenza della Chiusura infrannuale, e le inserirà come Scritture extracontabili dell'Area associata alla chiusura stessa (quindi non saranno scritture della chiusura, ma scritture valide solo per il Controlling)
-
-:::tip Nota
-L'elaborazione effettua un test sulla presenza o meno di questo tipo di scritture e quindi, se le trova già presenti, chiede se le si vuole eliminare e ricreare o se le si vuole aggiungere (come nel caso in cui si dovessero selezionare solo alcuni magazzini e non tutti, attraverso la tendina disponibile). Nel caso in cui si volessero creare sia le registrazioni di Area per il controlling che quelle di assestamento nella Chiusura, è necessario lanciare la procedura *prima* con il flag Controlling attivo e *poi* con il flag disattivato.
+:::tip Note
+The processing performs a test for the presence or absence of this type of entries, and therefore, if they are already present, it will ask if you want to delete and recreate them or if you want to add them (as in the case where only some warehouses are selected and not all through the available dropdown). If both the Controlling Area entries and the closure adjustment entries should be created, it is necessary to launch the procedure *first* with the Controlling flag active and *then* with the flag deactivated.
 :::
 
+## Tab *Parameters (Parametri)*
 
-## Tab *Parametri*
+The ‘Parameters’ tab allows setting, for certain account types or for individual account/sub-account, the type of balance to calculate. In detail:
 
-La scheda ‘Parametri' consente di impostare, per determinati tipi conto oppure per singolo conto/sottoconto, il tipo di saldo da calcolare. Nel dettaglio:
+**General (Generale)**: it is the normal default situation. With this option, the ERP will calculate a debit or credit balance and a general balance.
 
-**Generale**: è la situazione normale di default. Con questa opzione l'ERP calcolerà un saldo dare o avere e un saldo generale.
+**Debit/Credit (Dare/avere):** with this option, the program will calculate both a total of debit movements, a total credit, and the related final balance.
 
-**Dare/avere:** con questa opzione, il programma calcolerà sia un totale dei movimenti dare, un totale avere e il saldo finale relativo.
+The reference is to the various options of the reclassification models present in the *Reporting > Reclassifications* module: in these, it is possible to set only the value ‘Debit' or ‘Credit' or general.
 
-Il riferimento è alle varie opzioni dei modelli di riclassificazioni presenti nel modulo *Reporting > Riclassificazioni*: in questi è possibile impostare solo il valore ‘Dare' oppure ‘Avere' oppure generale. 
-
-Ad esempio, rilevare in un riclassificato un costo (cioè il totale dei movimenti dare del sottoconto X) e le sue rettifiche (cioè il totale dei movimenti avere del sottoconto X) in due punti separati del riclassificato può dare un'informazione in più del semplice saldo algebrico ‘dare' - 'avere' generale.
+For example, recording a cost in a reclassification (i.e., the total debit movements of sub-account X) and its adjustments (i.e., the total credit movements of sub-account X) in two separate points of the reclassification may provide additional information beyond the simple algebraic balance ‘debit’ - ‘credit’ general.

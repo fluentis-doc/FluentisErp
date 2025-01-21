@@ -1,11 +1,10 @@
 ---
-title: Ricerca registrazioni extracontabili
+title: Off-balance Records Search
 sidebar_position: 4
 ---
 
-La ricerca delle registrazioni extracontabili consente di visualizzare tutti i movimenti associati ad una determinata ***Chiusura infrannuale***. La maschera avrà tutti i pulsanti disabilitati fino a che non si imposterà su quale chiusura infrannuale si vuole operare.
+The search for off-balance records allows you to view all movements associated with a specific ***Mid-year closing***. The interface will have all buttons disabled until the specific mid-year closing you wish to operate on is set.
 
-Da questa maschera sarà possibile: trovare e modificare le registrazioni associate alla chiusura infrannuale; cancellare le registrazioni associate alla chiusura infrannuale; aggiungere registrazioni manuali alla chiusura infrannuale (es.: rilevare gli accantonamenti di competenza delle paghe);  duplicare una registrazione manuale (non quelle automatiche create con le procedure del modulo) selezionata in griglia in un'altra chiusura già presente nel modulo.
+From this interface, it will be possible to: find and modify the records associated with the mid-year closing; delete the records associated with the mid-year closing; add manual records to the mid-year closing (e.g., record the accruals of payroll expenses); duplicate a selected manual record (not those automatically created with the module procedures) in another already existing closing in the module.
 
-La creazione di una registrazione extracontabile è del tutto simile alla creazione di una registrazione di prima nota: si selezionerà sempre una causale di contabilità generale e da qui si procederà alla registrazione (l'unica differenza è che non esiste il concetto di protocollo iva nell'infrannuale: il modulo, comunque, è una copia che prevede le stesse tabelle logiche della contabilità, pur essendo fisicamente differenti per non sporcare in alcun modo i dati ufficiali di contabilità). Sono consentite registrazioni extracontabili di soli movimenti per centro di costo/profitto.
-
+Creating an off-balance record is very similar to creating a journal record: you will always select a general ledger template, and from there, you will proceed with the record (the only difference is that there is no concept of VAT protocol in the interim period: the module, however, is a copy that provides the same logical tables as accounting, although physically different to avoid contaminating the official accounting data in any way). Off-balance records are only allowed for movements by cost/profit center.
