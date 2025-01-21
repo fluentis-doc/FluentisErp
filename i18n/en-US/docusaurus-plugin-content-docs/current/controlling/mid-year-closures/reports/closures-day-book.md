@@ -1,12 +1,6 @@
 ---
-title: Brogliaccio chiusure
+title: Day-Book Closures
 sidebar_position: 2
 ---
 
-La stampa può essere lanciata dalla maschera di Ricerca registrazioni extracontabili di chiusura e consente di stampare, appunto, le registrazioni extracontabili associate ad una determinata chiusura infrannuale.
-
-
-
-
-
-
+The print report can be launched from the Extracontable Registrations Search mask for closures and allows printing, in fact, the extracontable registrations associated with a specific mid-year closing.
