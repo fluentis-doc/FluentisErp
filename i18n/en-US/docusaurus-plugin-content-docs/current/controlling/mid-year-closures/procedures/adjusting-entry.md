@@ -1,13 +1,12 @@
 ---
-title: Scritture di rettifica
+title: Adjustment Records
 sidebar_position: 6
 ---
 
-Siamo all'interno del modulo Chiusure infrannuali e selezioniamo la procedura ‘Scritture di rettifica'. La maschera consente di gestire separatamente le operazioni di rettifica che si possono eseguire contestualmente alla creazione di una nuova chiusura infrannuale.
+We are within the Mid-Year Closures module and selecting the procedure 'Adjustment Records'. The form allows for the separate management of adjustment operations that can be executed simultaneously with the creation of a new mid-year closing.
 
-Per gestire la procedura è sufficiente impostare la chiusura di riferimento, il tipo di calendario da utilizzare (si consiglia di lasciare il calendario solare e il raggruppamento per registrazione) e la causale da utilizzare (che deve avere il flag cdc/cdp per gestire la rettifica dei centri di costo/profitto).
+To manage the procedure, it is sufficient to set the reference closure, the type of calendar to be used (it is recommended to leave the solar calendar and the grouping by registration), and the reason to be used (which must have the CDC/CDP flag to manage the adjustments of cost/profit centers).
 
-Con questa procedura il programma verificherà le righe di costo/ricavo riprese dalla contabilità secondo i range di date registrazione/competenza impostate, per creare i risconti dei giorni al di fuori del range di date competenza impostate per la chiusura. I sottoconti di risconto da utilizzare saranno quelli inseriti nel piano dei conti in corrispondenza del singolo sottoconto di costo/ricavo oppure il sottoconto generico inserito nei parametri di contabilità dell'anno della chiusura infrannuale stessa. Nella maschera è presente un pulsante di ripristino/cancellazione dei movimenti già registrati da questa maschera.
+With this procedure, the program will verify the cost/revenue lines retrieved from accounting according to the set registration/competence date ranges, to create the accruals for the days outside the established competence date ranges for the closure. The accrual detail accounts to be used will be those entered in the chart of accounts corresponding to the individual cost/revenue detail account or the generic detail account entered in the accounting parameters of the year of the mid-year closing itself. The form includes a restore/delete button for movements already registered from this form.
 
-Le griglie alla base della maschera presentano la lista delle righe di costo/ricavo, presenti nella chiusura infrannuale, che saranno oggetto di rettifica.
-
+The grids at the bottom of the form present the list of cost/revenue lines present in the mid-year closing that will be subject to adjustment.

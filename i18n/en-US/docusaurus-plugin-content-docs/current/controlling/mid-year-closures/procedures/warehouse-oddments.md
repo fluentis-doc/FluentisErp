@@ -1,15 +1,15 @@
 ---
-title: Contabilizzazione rimanenze
+title: Inventory accounting
 sidebar_position: 2
 ---
 
-All'interno del modulo chiusure infrannuali, dopo aver creato una chiusura infrannuale è possibile valorizzare automaticamente le rimanenze iniziali/finali di magazzino.
+Within the mid-year closing module, after creating a mid-year closing, it is possible to automatically value the initial/final inventory balances.
 
-Una volta aperta la maschera, andremo a gestire il range di date da utilizzare, il tipo di giacenza da considerare (*Positiva/Negativa*), il tipo di calcolo costo (*Costo medio, Costo ultimo, FIFO a Scatti Annuali, LIFO a Scatti Annuali, Area Gestionale, Da costo effettivo lotti*) e la causale contabile da utilizzare per le registrazioni da creare.
-La presenza o meno del flag Controlling andrà a gestire le operazioni in due modi differenti:
-- Se il flag *non è presente*, **FluentisERP** creerà le scritture delle rimanenze iniziali e quelle finali alle date di inizio e fine periodo della Chiusura infrannuale, e le inserirà in coda alle altre scritture di assestamento della chiusura stessa.
-- Se il flag *è presente*, **FluentisERP** creerà le registrazioni delle rimanenze iniziali e finali di ogni singolo mese all'interno del range di date di competenza della Chiusura infrannuale, e le inserirà come Scritture extracontabili dell'Area associata alla chiusura stessa (quindi non saranno scritture della chiusura, ma scritture valide solo per il Controlling)
+Once the form is opened, we will manage the date range to use, the type of stock to consider (*Positive/Negative*), the cost calculation type (*Average cost, Latest cost, FIFO yearly rise, LIFO yearly rise, Management Area, By effective cost batches*), and the ledger template to use for the records to be created. The presence or absence of the Controlling flag will manage the operations in two different ways:
 
-:::tip Nota
-L'elaborazione effettua un test sulla presenza o meno di questo tipo di scritture e quindi, se le trova già presenti, chiede se le si vuole eliminare e ricreare o se le si vuole aggiungere (come nel caso in cui si dovessero selezionare solo alcuni magazzini e non tutti, attraverso la tendina disponibile). Nel caso in cui si volessero creare sia le registrazioni di Area per il controlling che quelle di Assestamento nella Chiusura, è sufficiente lanciare la procedura *prima* con il flag Controlling attivo e *poi* con il flag disattivato.
+- If the flag *is not present*, **FluentisERP** will create the records for the initial and final balances on the start and end dates of the Mid-Year Closing, and will insert them at the end of the other adjusting records of the closure itself.
+- If the flag *is present*, **FluentisERP** will create the records for the initial and final balances of each individual month within the date range relevant to the Mid-Year Closing, and will insert them as Off-balance Records of the Area associated with the closure itself (therefore, these will not be records of the closure, but records valid only for Controlling).
+
+:::tip Note 
+The processing performs a test on the presence or absence of this type of records, and thus, if they are already present, it asks whether to delete and recreate them or if they should be added (as in the case where only some warehouses are selected and not all, through the available dropdown). If both Area records for controlling and Adjustment records in the Closure are desired, it is sufficient to run the procedure *first* with the Controlling flag active and *then* with the flag deactivated.
 :::

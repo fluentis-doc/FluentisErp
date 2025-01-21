@@ -1,28 +1,28 @@
 ---
-title: Ripresa ammortamento cespiti
+title: Fixed Assets Depreciation Retrieve
 sidebar_position: 3
 ---
 
-All'interno del modulo chiusure infrannuali, dopo aver creato una chiusura infrannuale è possibile valorizzare automaticamente gli ammortamenti di competenza del periodo economico impostato in essa.
+Within the mid-year closing module, after creating a mid-year closing, it is possible to automatically value the depreciations relevant to the economic period set within it.
 
-## Ammortamento
+## Depreciation 
 
-All'apertura della maschera, in basso saranno da impostare obbligatoriamente:
+Upon opening the form, the following must be set at the bottom:
 
-- la **Chiusura di riferimento** (dalla quale viene letto il range di date competenza economica);
+- the **Incremental Closing** (from which the range of economic competence dates is read);
 
-- la **Data di registrazione** del movimento nelle registrazioni extracontabili;
+- the **Registration Date** of the movement in the extra-accounting records;
 
-- la **Causale** da utilizzare (anche qui è necessario che la causale preveda la gestione dei cdc/job-orders per valorizzarli nella registrazione).
+- the **Template** to be used (it is also necessary that the template allows for the management of cost centers/job orders to value them in the registration).
 
-Il flag **Singola registrazione** per creare un'unica registrazione extracontabile con all'interno i vari sottoconti di ammortamento/fondo.
+The flag **Single Recording** is used to create a single extra-accounting registration containing the various depreciation/funds detail accounts. 
 
-È interessante segnalare che all'interno dei filtri di ricerca superiori è presente un flag di ricerca dei cespiti appartenenti alle categorie 'incrementali' o meno.
+It is interesting to note that within the upper search filters, there is a flag to search for assets belonging to the 'incremental' categories or not.
 
-Lanciando la ricerca dei dati, il programma valorizzerà la griglia della maschera con i dati degli ammortamenti da calcolare, proporzionati sul numero di giorni di competenza della chiusura. In particolare, per ogni cespite sarà verificato se l'ammortamento dell'anno (dall'anno impostato come parametro della chiusura) è già presente nella sua scheda e questo valore sarà riproporzionato sul numero di giorni: se questo non è presente, sarà simulato un calcolo (sulla base dei parametri della categoria di appartenenza e dei residui a disposizione) e poi questo valore sarà proporzionato sul numero di giorni di competenza.
+When the data search is launched, the program will populate the form grid with the data of the depreciations to be calculated, proportional to the number of days of the closing's competence. In particular, for each asset, it will be checked if the depreciation of the year (from the year set as the closing parameter) is already present in its record, and this value will be recalibrated to the number of days: if it is not present, a calculation will be simulated (based on the parameters of the category of belonging and available residuals) and then this value will be proportioned to the number of days of competence.
 
-Si ricorda di selezionare tutte le righe presenti nella griglia per valorizzarle nella chiusura.
+Remember to select all the rows present in the grid to value them in the closing.
 
-## Precedenti
+## Previous 
 
-In questa è possibile annullare l'operazione eseguita nella tab precedente, *Ammortamento*.
+In this tab, it is possible to cancel the operation performed in the previous tab, *Depreciation*.

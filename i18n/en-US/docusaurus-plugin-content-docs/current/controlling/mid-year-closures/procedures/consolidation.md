@@ -1,31 +1,31 @@
 ---
-title: Consolidamento
+title: Consolidation 
 sidebar_position: 1
 ---
 
-La procedura consente innanzi tutto di legare le chiusure infrannuali delle varie società presenti nel database, al fine di creare un **bilancio consolidato di gruppo** da stampare o valorizzare in un riclassificato di bilancio, ma andrà anche a creare una registrazione di consolidamento nella quale **si andranno ad elidere i movimenti** economici **intercompany** e i crediti e debiti intercompany.
+The procedure primarily allows you to link the mid-year closures of various companies present in the database to create a **consolidated group balance sheet** to print or evaluate in a reclassified balance sheet. It will also create a consolidation record in which **the intercompany economic movements**, as well as intercompany receivables and payables, will be eliminated.
 
-Nella testata della maschera è possibile filtrare il range di date delle chiusure da considerare ma anche impostare, opzionalmente, la società capogruppo d'interesse: in questo modo nella griglia della maschera saranno visualizzate le società che non hanno impostato una società capogruppo o quelle che fanno capo alla capogruppo selezionata; per ogni società, poi, sarà visualizzata l'ultima chiusura conti creata all'interno del range di filtro impostatato (E' possibile selezionare una chiusura infrannuale differente dall'ultima proposta). Il flag ‘Sel.' andrà a individuare su quali eseguire l'operazione di consolidamento, mentre nella colonna 'Cambio' è possibile impostare un cambio specifico da utilizzare per la conversione dei saldi provenienti da società con divisa differente da quelle della capogruppo.
+In the header of the form, it is possible to filter the date range of closures to consider, but also to optionally set the parent company of interest: in this way, the grid of the form will display the companies that have not set a parent company or those that fall under the selected parent company; for each company, the last account closure created within the set filter range will be displayed (It is possible to select a mid-year closing different from the last proposed one). The flag ‘Sel.' will identify which ones to execute the consolidation operation on, while in the 'Exchange' column, it is possible to set a specific exchange rate to use for converting balances from companies with a currency different from that of the parent company.
 
-Al di sotto della griglia si andranno a inserire alcuni parametri da utilizzare: la descrizione da attribuire al consolidamento, una causale di registrazione, l'utente dell'operazione (proposto già come l'utente attivo) e infine un flag di conversione dei codici di sottoconto su quelli della società capogruppo.
+Below the grid, some parameters will be entered for use: the description to be attributed to the consolidation, a registration template, the user of the operation (already proposed as the active user), and finally a flag for the conversion of detail account codes to those of the parent company.
 
-All'interno della tabella società, riga per riga, è possibile associare un'anagrafica: da questa anagrafica si andranno a individuare i sottoconti clienti/fornitori del gruppo (ad es. nella società X si andrà a vedere se l'anagrafica legata alla società Y è codificata come cliente e/o fornitore). Dalle registrazioni intestate a questi sottoconti valorizzate nelle chiusure selezionate, si andranno a inserire con segno inverso i costi/ricavi nella nuova registrazione; per gli stessi sottoconti si andranno a verificare le partite aperte, al momento del consolidamento, e si andranno a stornare i saldi anche di questi.
+Within the company table, line by line, it is possible to associate a register: from this register, the customer/supplier detail accounts of the group will be identified (e.g., in company X, it will be checked if the register linked to company Y is coded as a customer and/or supplier). From the records related to these detail accounts valued in the selected closures, costs/revenues will be entered with an inverse sign in the new registration; for the same detail accounts, the open items will be verified at the time of consolidation, and their balances will also be offset.
 
-:::tip Nota
-Nel piano dei conti delle società che hanno in tabella una società capogruppo, sono visibili i campi per assegnare i codici di conto/sottoconto della capogruppo.
+:::tip Note
+In the chart of accounts of companies that have a parent company in the table, fields are visible to assign the account/detail account codes of the parent company.
 :::
 
-## Procedura
+## Procedure
 
 :::important[]
-Procedura passo passo di attivazione ed esecuzione (supponiamo due aziende)
+Step-by-step activation and execution procedure (let's assume two companies)
 
-- Nella tabella [**società**](/docs/configurations/tables/general-settings/company#dettaglio-anagrafica-societa) di ognuna delle aziende in questione compilare il campo ***Anagrafica associata*** per collegare un Contatto che contraddistingua l'azienda stessa nel consolidamento, ad esempio se l'azienda si chiama Alfa, nella sua tabella società colleghiamo un contatto (precedentemente creato) che si chiama ad es. "Alfa Spa". 
-- Nel piano conti di ognuna delle società sarà stato creato il sottoconto (attraverso la gestione **dati contabili** dell'anagrafica) di tipo cliente o fornitore dell'altra azienda del gruppo e saranno stati registrati degli scambi incrociati, ad esempio acquisto da parte dell'azienda 1 e vendita da parte dell'azienda 2 (ognuno dal suo punto di vista). 
-- Ognuna delle aziende lancia una chiusura conti infrannuale per il medesimo periodo 
-- Nella procedura *Consolidamento* selezionerò le due chiusure delle due società di cui generare le scritture di rettifica per consolidamento che vanno a neutralizzare costi e ricavi e crediti e debiti reciproci aggregando invece i movimenti verso l'esterno
+- In the table [**company**](/docs/configurations/tables/general-settings/company#dettaglio-anagrafica-societa) of each of the companies in question, fill in the ***Associated Register*** field to link a Contact that distinguishes the company itself in the consolidation; for example, if the company is called Alfa, we link a contact (previously created) in its company table that is named, for example, "Alfa Spa".
+- In the chart of accounts of each company, a detail account (through the **accounting data management** of the register) of type customer or supplier of the other company in the group will have been created, and some cross-exchanges will have been recorded, for example, a purchase by company 1 and a sale by company 2 (each from its own perspective).
+- Each company runs a mid-year account closure for the same period.
+- In the *Consolidation* procedure, I will select the two closures from the two companies for which to generate the adjustment records for consolidation that will neutralize costs and revenues and mutual receivables and payables while aggregating the movements towards the outside.
 :::
 
-## Precedenti
+## Previous
 
-Dalla scheda precedenti è possibile procedere alla cancellazione delle procedure di consolidamento eseguite.
+From the previous tab, it is possible to delete the executed consolidation procedures.
