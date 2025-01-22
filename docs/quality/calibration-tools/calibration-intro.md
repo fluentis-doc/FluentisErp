@@ -35,13 +35,13 @@ import Link from '@docusaurus/Link';
 ## Per iniziare ad utilizzare   
 
 gli **Strumenti di misura**:
-- definire una [*Categoria Strumenti di misura*](/docs/configurations/tables/quality/calibration-tools/measurement-tool-categories)   
-- inserire un nuovo [*Strumento di misura*](/docs/quality/calibration-tools/measurement-tools/measurement-tool-management)   
+- devi definire una [*Categoria Strumenti di misura*](/docs/configurations/tables/quality/calibration-tools/measurement-tool-categories)   
+- devi inserire un nuovo [*Strumento di misura*](/docs/quality/calibration-tools/measurement-tools/measurement-tool-management)   
 
 la **Taratura strumenti**:
-- definire: un [*Tipo taratura*](/docs/configurations/tables/quality/calibration-tools/calibration-type) e uno [*Strumento di misura*](/docs/quality/calibration-tools/measurement-tools/measurement-tool-management)   
+- devi definire: un [*Tipo taratura*](/docs/configurations/tables/quality/calibration-tools/calibration-type), relativa *Numerazione* e uno [*Strumento di misura*](/docs/quality/calibration-tools/measurement-tools/measurement-tool-management)   
 - per agevolare la gestione delle *Taratura strumenti* impostare i [*Parametri Taratura strumenti*](/docs/configurations/parameters/quality/calibration-tools)   
-- inserire una nuova [*Taratura strumento*](/docs/quality/calibration-tools/calibration-tool/calibration-tool-management)   
+- devi inserire una nuova [*Taratura strumento*](/docs/quality/calibration-tools/calibration-tool/calibration-tool-management)   
 
 
 ## Collegamenti con altri moduli

@@ -29,12 +29,12 @@ import Link from '@docusaurus/Link';
 ## Per iniziare ad utilizzare   
 
 i **Documenti di origine esterna**:
-- definire una [*Categoria Documento di orgine esterna*](/docs/configurations/tables/quality/documents/external-document-category)   
-- inserire un nuovo [*Documento di orgine esterna*](/docs/quality/external-origin-documents/external-origin-document/external-origin-document-management)   
+- devi definire una [*Categoria Documento di orgine esterna*](/docs/configurations/tables/quality/documents/external-document-category)   
+- devi inserire un nuovo [*Documento di orgine esterna*](/docs/quality/external-origin-documents/external-origin-document/external-origin-document-management)   
 
 le **Norme e Leggi**:
-- definire un [*Tipo Norma e Legge*](/docs/configurations/tables/quality/documents/norms-and-lows-type)   
-- inserire una nuova [*Norma e Legge*](/docs/quality/external-origin-documents/norms-and-lows)   
+- devi definire un [*Tipo Norma e Legge*](/docs/configurations/tables/quality/documents/norms-and-lows-type)   
+- devi inserire una nuova [*Norma e Legge*](/docs/quality/external-origin-documents/norms-and-lows)   
 
 
 ## Collegamenti con altri moduli

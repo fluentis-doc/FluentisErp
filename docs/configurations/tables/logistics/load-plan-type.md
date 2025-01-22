@@ -21,4 +21,4 @@ Per poter inserire nuove codifiche è necessario cliccare nella griglia sulla pr
 > **Descrizione**: indica la descrizione del Tipo Piano di carico;   
 > **Predefinito**: indica il Piano di carico di default da creare;       
 > **Numerazione**: indica la [Numerazione](/docs/configurations/tables/fluentis-numerations);       
-> **Automezzo**: indica l'[Automezzo](/docs/configurations/tables/logistics/motorvehicle) configurato per questa tipologia di piano di carico.
+> **Automezzo**: indica l'[Automezzo](/docs/logistics/motorvehicles/motorvehicle) configurato per questa tipologia di piano di carico.

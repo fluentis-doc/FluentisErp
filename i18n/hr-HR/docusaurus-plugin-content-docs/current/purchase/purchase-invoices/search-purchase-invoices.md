@@ -18,7 +18,7 @@ Dodavanje novih polja u obrasce pretraživanja
 
 > *Posebni gumbi*:
 
-**Nova**: gumb omogućuje [Stvaranje novog računa](/docs/purchase/purchase-invoices/insert-purchase-invoice/insert-purchase-invoice-intro).  
+**Nova**: gumb omogućuje [Stvaranje novog računa].  
 **Dupliciraj**: gumb omogućuje stvaranje kopije dokumenta, prenoseći sve uvjete izvornog dokumenta, ali s trenutačnim podacima.
 Koristi se za česte otpreme sličnih roba od istog subjekta dokumenta.
 
