@@ -29,7 +29,7 @@ La form si apre tramite il percorso **Parametri > Produzione > Parametri Ordini 
 
 **Registrazione automatica segnalazioni**: se attivo, questo flag indica che appena inserisco la segnalazione questa viene anche registrata automaticamente;
 
-**Associa lotto per lista prelievo**: se attivo, questo flag indica che quando si crea una lista di prelievo tramite la relativa procedura, per i materiali gestiti a lotti il sistema va a scegliere i materiali che sono da prelevare per quel/quegli ordini di produzione che ho selezionato; se non viene attivato vuol dire che l'utente dovrà andare a dichiarare manualmente quali sono i lotti che sono stati prelevati;
+**Associa lotto per lista prelievo**: se attivo, questo flag indica che quando si crea una lista di prelievo tramite la relativa procedura, per i materiali gestiti a lotti il sistema va a scegliere i lotti che sono da prelevare per quel/quegli ordini di produzione che ho selezionato; se non viene attivato vuol dire che l'utente dovrà andare a dichiarare manualmente nel picking quali sono i lotti che sono stati prelevati;
 
 **Aggiorna materiali utilizzati nell’ordine di produzione**: se attivo, al variare della quantità dichiarata in una dichiarazione di produzione, verrà mostrato un messaggio che chiede di ricalcolare o meno le quantità utilizzate dei materiali; se non è attivo, il ricalcolo dei materiali avviene automaticamente;
 
@@ -56,20 +56,44 @@ Ci sono infine altre quattro sezioni: **Fogli di lavoro Gestiti per**, **Periodo
 
 ### Magazzini
 
-La form è dedicata all'inserimento dei magazzini  e delle relative causali che regolano le movimentazioni degli articoli tramite le procedure legate alla produzione; la stessa schermata viene riproposta nei *Parametri MRP* dell'articolo nel tab [Magazzini](/docs/configurations/parameters/production/mrp-parameters/search-mrp-parameters), con la differenza che i magazzini impostati nei *Parametri di produzione* sono considerati dati generali validi di default per gli articoli; se si vanno ad impostare per un articolo in particolare dei magazzini diversi nei *Parametri MRP* dell' articolo, il sistema andrà a dare <u>priorità ai parametri</u> che trova settati in quest'ultima finestra per i carichi e scarichi dei materiali legati alla produzione di questo articolo.
+La form è dedicata all'inserimento dei magazzini  e delle relative causali che regolano le movimentazioni degli articoli tramite le procedure legate alla produzione; la stessa schermata viene riproposta nei *Parametri MRP* dell'articolo nel tab [Magazzini](/docs/configurations/parameters/production/mrp-parameters/search-mrp-parameters), con la differenza che i magazzini impostati nei *Parametri di produzione* sono considerati dati generali validi di default per gli articoli; se si vanno ad impostare per un articolo in particolare dei magazzini diversi nei *Parametri MRP* dell' articolo, il sistema andrà a dare <u>priorità ai parametri</u> che trova settati in quest'ultima finestra per i carichi e scarichi dei materiali legati alla produzione di questo articolo.        
+Inoltre, è possibile settare gli stessi parametri anche per uno specifico Sito di produzione.       
+
+Quindi la priorità per il **carico** sarà presa nel seguente ordine:
+- Magazzino e casuale se sono indicati nella testata dell'ordine di produzione
+- [Parametri del sito produttivi](/docs/configurations/parameters/production/production-orders-parameters/production-site) indicato nella commessa collegata all'ordine di produzione
+- [Parametri MRP dell'articolo](/docs/configurations/parameters/production/mrp-parameters/mrp-parameters-intro)
+- Dal sito di produzione collegato alla macchina che è inserita nella dichiarazione di produzione; se la macchina non è stata indicata nella dichiarazione, i parametri sono presi dal sito di produzione collegato alla macchina indicata nella fase dell'ordine di produzione
+- [Parametri degli ordini di produzione](/docs/configurations/parameters/production/production-orders-parameters/production-orders-parameters-intro)
+
+La priorità per lo **scarico** sarà data nell'ordine da:
+
+- [Parametri del sito produttivi](/docs/configurations/parameters/production/production-orders-parameters/production-site) indicato nella commessa collegata all'ordine di produzione
+- [Parametri MRP dell'articolo](/docs/configurations/parameters/production/mrp-parameters/mrp-parameters-intro)
+- Dal sito di produzione collegato alla macchina che è inserita nella dichiarazione di produzione; se la macchina non è stata indicata nella dichiarazione, i parametri sono presi dal sito di produzione collegato alla macchina indicata nella fase dell'ordine di produzione
+- [Parametri degli ordini di produzione](/docs/configurations/parameters/production/production-orders-parameters/production-orders-parameters-intro)
 
 In questo tab quindi, si potranno impostare i magazzini relativi alle *Materie Prime*, ai *Semilavorati*, ai *Prodotti finiti* e ad eventuali *Scarti* con le relative causali di carico e scarico.
 
-Per poter impostare uno di quest magazzini sarà sufficiente selezionare tramite le relative combo box il magazzino e le causali (precodificati nelle rispettive tabelle *Magazzini* e *Causali*) che si vogliono impostare.
+Per poter impostare uno di questi magazzini sarà sufficiente selezionare tramite le relative combo box il magazzino e le causali (precodificati nelle rispettive tabelle [Magazzini](/docs/configurations/tables/logistics/warehouses) e [Causali](/docs/configurations/tables/logistics/warehouse-templates)) che si vogliono impostare.
 
-Oltre a questi magazzini principali vi sono i magazzini W.I.P. (gestione non molto utilizzata) che si attivano selezionando la voce W.I.P. e procedendo alla selezione all'interno della combo box dei magazzini e delle causali come viene fatto per gli altri magazzini.
+Oltre a questi magazzini principali vi sono i magazzini W.I.P. che si attivano selezionando la voce W.I.P. e procedendo alla selezione all'interno della combo box dei magazzini e delle causali come viene fatto per gli altri magazzini.
 
-Per magazzini *W.I.P.* (Work in Progress) si intendono dei magazzini di transizione, in cui la merce transita nel momento in cui l'ordine di produzione del prodotto finito o del semilavorato viene rilasciato. Quando vengono settati questi magazzini il tipo di prelievo del materiale deve essere *Manuale*, altrimenti se fosse un tipo di prelievo *Automatico* lo scarico dei materiali avverrebbe in automatico nel momento del rilascio dell'ordine di produzione. Nel caso dei magazzini W.I.P. il materiale al momento del rilascio viene quindi spostato in questi magazzini e viene scaricato durante la segnalazione di produzione dell'ultima fase di lavorazione dell'articolo dell'ordine di produzione oppure durante la fase di lavorazione a cui il materiale è associato.
+Per magazzini *W.I.P.* (Work in Progress) si intendono dei magazzini di transizione, in cui la merce transita nel momento in cui l'ordine di produzione del prodotto finito o del semilavorato viene rilasciato. Quando vengono settati questi magazzini il tipo di prelievo del materiale deve essere *Manuale*, altrimenti se fosse un tipo di prelievo *Automatico* lo scarico dei materiali avverrebbe in automatico nel momento del rilascio dell'ordine di produzione. Nel caso dei magazzini W.I.P. il materiale al momento del rilascio viene quindi spostato in questi magazzini (tramite la [Lista di prelievo materiali](/docs/production/pp-production-in-progress/picking-materials-list)) e viene scaricato durante la segnalazione di produzione dell'ultima fase di lavorazione (produttiva e movimentabile) dell'articolo dell'ordine di produzione oppure durante la fase di lavorazione a cui il materiale è associato.
 
-Diversamente, se il tipo di prelievo del materiale è *Con Lista*, allora mentre lo spostamento del materiale al magazzino W.I.P. avviene nello stesso modo rispetto al tipo di prelievo manuale, lo scarico dal W.I.P. avviene tramite la procedura della Lista di prelievo.     
+Diversamente, se il tipo di prelievo del materiale è *Con Lista*, allora mentre lo spostamento del materiale al magazzino W.I.P. avviene nello stesso modo rispetto al tipo di prelievo manuale, lo scarico dal W.I.P. avviene tramite la procedura della [Lista di prelievo materiali](/docs/production/pp-production-in-progress/picking-materials-list).     
 
-Nello specifico, i magazzini e le causali inserite nella sezione *W.I.P.* vengono impiegati nei movimenti di carico e scarico delle segnalazioni di tutte le fasi di un ciclo di lavoro tranne che per l'ultima fase.     
-Nel caso dell'ultima fase vengono usate magazzini e causali della sezione *Prodotti finiti* se l'ordine di produzione è di livello 1 (quindi relativo al prodotto finito), oppure vengono usate quelle della sezione *Semilavorati* se l'ordine di produzione non è di livello 1 (quindi è un semilavorato) e il flag *W.I.P.* è disabilitato; altrimenti se il flag *W.I.P.* è attivo e l'ordine di produzione non è di livello 1 vengono usate quelle della sezione *Semilavorati W.I.P.*     
+**Funzionamento Magazzini e Causali**
+
+Per quanto riguarda il **carico** di prodotti finiti e semilavorati:
+
+- Se si considera l'**ultima fase produttiva e movimentabile** del ciclo, vengono usati magazzini e causali della sezione **Prodotti finiti**, se l'ordine di produzione è di **livello 1** (quindi relativo al prodotto finito), invece vengono usate quelle della sezione **Semilavorati**, se l'ordine di produzione **non è di livello 1** (quindi è un semilavorato). Se la sezione **Semilavorati** non è valorizzata vengono usate quelle della sezione **Prodotti finiti**.
+- Nel caso in cui **non sia l'ultima fase produttiva e movimentabile** del ciclo e la **gestione WIP** **non è stata attivata**, vengono usati magazzini e causali della sezione **Semilavorati WIP**. Invece, se **è attiva** la **gestione WIP** vengono usate quelle della **sezione WIP** e quelle della sezione **Semilavorati WIP** non vengono più considerate.
+
+Per lo **scarico** dei materiali invece:
+
+- Se la **gestione WIP** **non è stata attivata**, vengono usati magazzini e causali presenti nella sezione **Materie prime** se l'articolo ha **tipo approvvigionamento Acquisto** nei [Parametri MRP](/docs/configurations/parameters/production/mrp-parameters/mrp-parameters-intro), mentre se ha **tipo approvvigionamento Produzione o Conto lavoro**, vengono usati per lo scarico magazzini e causali presenti nella sezione **Semilavorati**.       
+- Invece, se **è attiva la gestione WIP**, vengono usati magazzini e causali presenti nella **sezione WIP** (nel caso in cui questi non fossero valorizzate vengono utilizzate quelle della sezione Materie prime). Quindi, se l'articolo ha **tipo approvvigionamento Acquisto**, viene usata la causale **Consumo materiali**. Invece, se ha **tipo approvvigionamento Produzione o Conto lavoro**, viene usata la causale consumo **semilavorati**.
 
 :::note Nota
 Quando viene attivato il flag *W.I.P.* nei *Parametri ordini produzione*, automaticamente nella creazione degli ordini di conto lavoro (dal *Rilascio ordini pianificati* o direttamente dall'ordine di produzione), vengono considerate per i materiali da inviare al terzista il magazzino e la causale presenti nei  [Parametri conto lavoro](/docs/configurations/parameters/production/subcontractor-parameters) alla sezione *Consegne materiali a terzisti W.I.P.*; quindi in questo caso i materiali da inviare ai terzisti saranno prelevati direttamente dal magazzino *W.I.P.*    

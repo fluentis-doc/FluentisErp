@@ -1,5 +1,6 @@
 ---
 title: Introducere
+title: Introducere
 sidebar_position: 1
 ---
 

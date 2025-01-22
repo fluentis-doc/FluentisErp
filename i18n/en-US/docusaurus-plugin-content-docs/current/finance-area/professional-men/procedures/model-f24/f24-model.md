@@ -1,26 +1,20 @@
 ---
-title: F24 Model
+title: F24 Model 
 sidebar_position: 1
 ---
 
-The procedure is dedicated to the creation of ministerial tracing of F24 declaration in order to send it electronically. This model is dedicated to the communication of various tributes that are paid monthly to the company.
+The procedure is dedicated to the creation of the F24 model. This model is dedicated to the payment of various taxes paid monthly by the company.
 
-The basic setting is to codify the subject of the declaration within the employee module of the finance area. In particular, it is necessary to indicate the load code and the references of residence, address, tax code, name and surname.
+To enter a new F24 model, press the **New** button in the ribbon bar.
 
-RIBBON BAR: it represents the Form menu, that is the area in which it is possible to perform actions linked to the compensation in management. The list of features is the following:
+For details on the new model during the entry phase, see [**F24 Model Management**](/docs/finance-area/professional-men/procedures/model-f24/f24-management)
 
 
 
-| Function | Meaning |
+| Function | Extended Description |
 | --- | --- |
-| Search | Button to apply search filters within database of the inserted models. |
-| New | It refers to the procedure to insert a new model. |
-| Edit | It refers to the procedure to edit a previously inserted model. |
-| View | It refers to the procedure to view a previously inserted model. |
-| Delete | It performs the procedure to delete a previously inserted model. |
-
-
-
-
-
-
+| Search | Button to apply search filters to the entire database of entered models. |
+| New | Calls the procedure to enter a new model. |
+| Modify | Calls the procedure to modify a previously entered model. |
+| View | Calls the procedure to view a previously entered model. |
+| Delete | Executes the procedure to delete a previously entered model. |

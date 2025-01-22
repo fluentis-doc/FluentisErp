@@ -33,8 +33,8 @@ La procedura della ricerca effetti è stata disegnata per permettere all'utente 
 |  [Contabilizzazione effetti a fornitore](/docs/treasury/bills-holding/accounting/bills-accounting-by-vendor/accounting)  | Richiama la procedura per effettuare la contabilizzazione effetti a fornitore e chiudere il conto fornitore. | |
 |  [Contabilizzazione distinte](/docs/treasury/bills-holding/accounting/lists-accounting/accounting)  | Richiama la procedura per effettuare la contabilizzazione della distinta e valorizzare il conto di presentazione. | <a href="https://youtu.be/pWgf3bowpMQ&amp;t=05m05s" target="_blank" rel="noopener noreferrer">Link al Video Tutorial</a> |
 |  Contabilizzazione accrediti  | Richiama la procedura per effettuare la contabilizzazione dell'accredito in conto. | <a href="https://youtu.be/pWgf3bowpMQ&amp;t=07m51s" target="_blank" rel="noopener noreferrer">Link al Video Tutorial</a> |
-|  [Generazione file Riba](/docs/treasury/bills-holding/cash-order-rid-lcr/cash-order-rid-lcr-creation/cash-order-files-creation)  | Richiama la procedura per generare il tracciato telematico Riba. | |
-|  [Generazione file Rid](/docs/treasury/bills-holding/cash-order-rid-lcr/cash-order-rid-lcr-creation/rid-file-creation)  | Richiama la procedura per generare il tracciato telematico Rid. | |
+|  [Generazione file Riba]  | Richiama la procedura per generare il tracciato telematico Riba. | |
+|  [Generazione file Rid]  | Richiama la procedura per generare il tracciato telematico Rid. | |
 |  [Importazione insoluti](/docs/treasury/bills-holding/procedures/import-unpaids)  | Richiama la procedura di importazione del tracciato telematico Insoluti. |
 |  [Contabilizzazione insoluti](/docs/treasury/bills-holding/accounting/unpaid-accounting/unpaids)  | Richiama la procedura di contabilizzazione insoluti, con contestuale riapertura della partita cliente secondo i parametri del modulo. | |
 |  Contabilizzazione insoluti su cessione | Richiama la procedura di contabilizzazione insoluti, con contestuale riapertura delle partite cliente e fornitore secondo i parametri del modulo. | |

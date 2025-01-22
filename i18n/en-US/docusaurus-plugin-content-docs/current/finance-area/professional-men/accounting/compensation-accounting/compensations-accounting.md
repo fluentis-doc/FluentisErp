@@ -1,12 +1,20 @@
 ---
-title: Compensations Accounting
+title: Commissions Accounting
 sidebar_position: 1
 ---
 
-Through this procedure it will be possible to move definitive compensations to the financial accounting in order to record invoice into the VAT register. Then in order to go on to the operation it is necessary that the compensation has definitive document number and date (even if the template linked to the withholding-tax type corresponds to a not VAT template) as well as a maturity. If the definitive references miss, it is possible to edit the compensation directly starting from this mask and through the related management button.
+LINK:
 
+**[Filter](/docs/finance-area/professional-men/accounting/compensation-accounting/filter)**
 
+**[Rollback](/docs/finance-area/professional-men/accounting/compensation-accounting/rollback)**
 
+ 
 
+ 
 
+With this procedure, the compensation amounts that have become definitive are recorded in the general ledger and in the VAT register.
 
+To proceed with the operation, it is **mandatory that the compensation has the number and the date of the definitive document** (even if the template connected to the type of withholding is a non-VAT template), as well as **at least one deadline** to be recorded.
+
+If the definitive references are missing, it is possible to edit the compensation directly from this screen, through the corresponding button ![](/img/it-it/finance-area/professional-men/accounting/compensation-accounting/compensations-accounting/image01.png).

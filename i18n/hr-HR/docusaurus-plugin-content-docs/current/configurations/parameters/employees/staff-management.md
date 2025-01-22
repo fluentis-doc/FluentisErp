@@ -16,7 +16,7 @@ Kako biste mogli pohraniti izmijenjene podatke morate pritisnuti gumb **Spremi**
 
 *Posebna polja*: 
     
-> expander **Tečajevi obuke**
+> expander Tečajevi obuke
 >> **Vrsta osnovnog tečaja**: *Vrsta osnovnog tečaja* koju treba predložiti prilikom umetanja *Osnovnog tečaja*.   
 >> **Vrsta tečaja obuke**: *Vrsta tečaja obuke* koju treba predložiti prilikom umetanja *Tečaja obuke*.   
 

@@ -5,6 +5,10 @@ sidebar_position: 2
 
 ## Gestione spunta
 
+:::important A cosa serve
+La gestione spunta del WMS di Fluentis è uno strumento progettato per confermare le righe del picking effettivamente prelevate dall'operatore in magazzino. Se almeno una riga è spuntata, le procedure di creazione del Documento di Trasporto (DDT) e della fattura considerano solo queste righe; in caso contrario, si considerano tutte le righe del picking. Questo sistema semplifica e velocizza la creazione dei documenti di trasporto e fatturazione, permettendo anche l'inserimento manuale di nuove righe di articoli. Inoltre, la gestione spunta permette di creare le Unità di Carico (UDC) durante la conferma delle righe del picking, raggruppando gli articoli in unità di carico. Una volta selezionata una riga e inseriti i dati necessari, è possibile creare e gestire nuove UDC con gli articoli confermati.
+:::
+
 A partire da un Picking esistente, si ha la possibilità di leggere gli articoli presenti e raggrupparli in UDC.    
 Da wpf è poi possibile procedere alla creazione del DDT o della fattura.
 
@@ -63,16 +67,17 @@ Nel caso in cui sia necessario avere la possibilità di sovra evadere la quantit
 | WM | Fluentis.FluentisErp.Mvvm.WM.ReadWrite.Views | CheckRowManagement |
 | WM | Fluentis.FluentisErp.Mvvm.WM.ReadWrite.Views | CheckRowManagement |
 
-I parametri sono ripetuti poiché la form utilizza una causale di scarico (senza contropartita), per scaricare gli articoli prelevati, ed una di carico per caricarli all’interno delle unità di carico appena create.     
+I parametri sono ripetuti poiché la form utilizza una causale di scarico (senza contropartita), per scaricare gli articoli prelevati, ed una di carico per caricarli all’interno delle unità di carico appena create. Per la causale di carico è importarte indicare anche una ubicazione di default che verrà utilizzata per caricare l'unità di carico appena creata.    
                                          
 Per tutte le informazioni su come codificare i barcode da leggere nel campo **Codice barcode** consultare la pagina relativa al [Barcode tokenizer](/docs/configurations/tables/general-settings/barcode-tokenizer).
 
 
 ## Conferma Picking
 
+:::important A cosa serve
 A partire da un Picking esistente, senza l’utilizzo però delle unità di carico, che invece vengono create utilizzando la form di [Gestione spunta](/docs/logistics/wms/sales/check-row-menagement), con la form di **Conferma Picking** è possibile confermare le singole righe del picking, per movimentare gli articoli tra due magazzini o ubicazioni, creando direttamente i movimenti di magazzino di spostamento.
-
 Successivamente, da wpf, è poi possibile procedere alla creazione del DDT o della fattura.
+:::
 
 :::note Nota
 Nella form di **Conferma Picking** verranno visualizzati solamente i picking creati con un *tipo picking* con il flag *Unità di carico obbligatoria* disattivato nella tabella [Tipi picking](/docs/configurations/tables/logistics/picking-type/).

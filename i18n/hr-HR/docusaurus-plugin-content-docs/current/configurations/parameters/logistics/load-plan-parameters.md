@@ -12,7 +12,7 @@ Parametri plana utovara sastoje se od jedne kartice, Općenito. Oznake koje dopu
 **Razmotrite raspoloživosti iz**: ove zastavice možete odabrati ako je zastavica;  
 **Provjeri raspoloživost** aktivna; omogućuje vam da razmotrite dostupnost koja dolazi iz različitih modula;             
 **Automatski kreirajte otpremnu listu iz planova utovara**: zastarjelo polje;           
-**Ne koriste se dimenzije**: ova oznaka ne provjerava dimenzije artikala i utovarne jedinice za usporedbu s [Vozilom](/docs/configurations/tables/logistics/motorvehicle), izbjegavajući blokove u pošiljci. Bez ove oznake, ako je obujam predmeta veći od obujma vozila, program će nas natjerati da koristimo više vozila.              
+**Ne koriste se dimenzije**: ova oznaka ne provjerava dimenzije artikala i utovarne jedinice za usporedbu s [Vozilom](/docs/logistics/motorvehicles/motorvehicle), izbjegavajući blokove u pošiljci. Bez ove oznake, ako je obujam predmeta veći od obujma vozila, program će nas natjerati da koristimo više vozila.
 **Prikaz linija stavki prisutnih u otvorenim planovima utovara**: ova vam zastavica omogućuje pregled (s **bojom postavljenom u boji retka u drugom polju otvorenog plana utovara**) linija koje je preuzeo drugi kolega u spremljenim i nespremljenim otvorenim planovima opterećenja;        
 **Prijedlog za pretraživanje za datum isporuke**: ovo polje postavlja, u filtru pretraživanja plana opterećenja, datume isporuke koje treba provjeriti, dajući mogućnost odabira između: tekućeg tjedna, od danas nadalje ili bez predloženog datuma;          
 **Dostupna boja crte**: u ovo polje moguće je unijeti boju kojom će se prikazati reci artikala koji imaju dostupnost;        
