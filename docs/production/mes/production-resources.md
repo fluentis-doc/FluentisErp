@@ -1,6 +1,6 @@
 ---
 title: Risorse di produzione
-sidebar_position: 3
+sidebar_position: 4
 ---
 
 :::important A cosa serve

@@ -17,8 +17,8 @@ Za nastavak stvaranja računa za kupnju, korisnik mora unijeti obavezna polja:
 
 Obrazac sadrži niz kartica:
 
-- [Zaglavlje](/docs/purchase/purchase-invoices/insert-purchase-invoice/header) i pripadajući Postupci;
+- [Zaglavlje] i pripadajući Postupci;
 
-- [Artikli](/docs/purchase/purchase-invoices/insert-purchase-invoice/items);
+- [Artikli];
 
-- [Sažeci](/docs/purchase/purchase-invoices/insert-purchase-invoice/summary).
+- [Sažeci].

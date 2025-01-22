@@ -1,68 +1,115 @@
 ---
-title: Compensations Management
+title: Remunerations Management
 sidebar_position: 1
 ---
 
-Through this mask it is possible to load/edit document received by professional man or by agent, both in case of temporary fee and definitive invoice: the difference between them will concern only the immediate or following insertion (by editing a temporary fee) of fields related to the definitive number and document date.
+### **LINK TO THE TABS AT THE BOTTOM OF THE FORM**:
 
-The first field of compensation regards the insertion of the compensation detail account: it is possible to insert on this field only detail accounts with agent account type or vendors that have withholding-tax flag set on register.
+**[Withholding-tax Total](/docs/finance-area/professional-men/compensations-management/total-withholding-tax)**
 
-The following status flags are: accounted, managed automatically by the application at the moment of the compensations accounting. Once having set this flag the compensation will not be edited. The paid withholding-tax will be applied at the compensation manually or through the 'Withholding-Tax Paying-In' procedure that can be performed by 'search compensations' mask. The 'certified' flag is set automatically by the program during the definitive print procedure of withholding-tax certifications.
+**[Payment List](/docs/finance-area/professional-men/compensations-management/total-withholding-tax)**
 
-Linked to the agent or vendor detail account, it is possible to set the withholding-tax type to be proposed at the moment of compensation load.
+**[Withholding tax paying-in](/docs/finance-area/professional-men/compensations-management/withholding-tax-paying-in)**
 
-The following notes field enables the user to note a reference text about compensation: it regards a note that will be reported into detail notes of all accounting movements linked to this compensation. Immediately afterwards there is a field called 'Movement Description' that will be used during the compensations accounting procedure for the same field of ledger record.
+**[VAT Summaries](/docs/finance-area/professional-men/compensations-management/vat-summaries)**
 
-On the right there is the number and year of compensation: it regards an automatic internal numeration of program that must be univocal for company. The date field is proposed as the current date but it can be set as date of the temporary withholding-tax fee.
+**[Cost/Profit Centers](/docs/finance-area/professional-men/compensations-management/cost-profit-centres)**
 
-The fields about date and definitive document number regard reference to definitive invoice: they are obligatory fields to account compensations, even if the reference template has not to be a VAT template. These two fields will be the only ones that could be edited in case that payment has been already recorded in accounting.
+**[Social Security](/docs/finance-area/professional-men/compensations-management/national-insurance)**
 
-The job order/year field is necessary in order to link compensation to a sales job order: as for example a survey on a construction site managed per job order. If the reference accounting template manages the job orders, it means that charges inserted into this compensation will be assigned to this.
-
-Currency date and exchange are linked to the management of currency and of the related exchange data taken by exchanges table (currency is set by the agent/vendor register).
-
-Within the compensation details there will be the possibility to load all compensation detail lines: starting from the 'service cost' line type the application will propose the amount origin and withholding tax percentage read by withholding tax type, cost detail account will be reported by the offset cost of agent/vendor (there could be the cost detail account of offset and analytical accounting data as defined on the linked cost template), cost in currency and in euro, Vat rate to be applied (proposed even this according to register), the social insurance fund to be calculated on line (proposed by withholding-tax type) and reference economic accrual dates. These are managed for the connected user according to the related management parameters (that can be set thanks to the specific button on this mask): the following lines will propose automatically the range set on the previous line.
-
-The following line types are: insurance fund, for which the application will propose 0% application percentage of withholding-tax and value calculated automatically according to the percentage that is on service charges line, previously loaded.
-
-The **enasarco** line type has not to be used.
-
-The 'other' line type is managed as amount subject to withholding-tax (but the user can force that setting): it concerns usually the expenses refunded inserted into compensation list, that can be or not subject to withholding-tax and thay are not usually VAT taxable.
-
-During the saving of compensation there will be the possibility to perform control messages in case in which maturity value does not correspond the total to be paid, as well as the non-balancing data per cost/profit centre.
-
-Once having performed the compensations accounting it will not possible to edit compensation data: in case that the pyaments accounting or enasarco have not been performed, it will be edited the references to defintive document number/date, movement description and detail account inserted into the details grid.
-
-In conclusion, it is possible to create a new compensation directly from the previous one that has just been saved through the specific management button: the new compensation will have some elements taken by the previous one, according to user settings loaded. In case that a compensation is saved and has definitive document date and number, it will be possible to go on to the accounting procedure through the related button: for this reason a mask will be opened on which proposed dates will be the last valid ones for the VAT register associated to the withholding-tax type template.
-
-There is also a print button about the compensation in use.
-
-RIBBON BAR: itr represents the Form menu, that is the area in which it is possible to perform actions linked to the fixed asset in management. The list of features is the following:
+ 
 
 
 
-| Function | Meaning |
-| --- | --- |
-| Save | It saves the compensation in management. |
-| New Compensation | It creates a new compensation starting from the current one. |
-| It creates a new compensation starting from the current one | It enables the user to define the user parameters for the compensation management. See application a. |
-| Accounting and Close | It is active with the insertion of definitive date and document number, it enables the user to perform the compensation accounting. |
-| New Detail | It activates the cursor at the insertion of a new compensation detail line. |
-| Delete Detail | It deletes the detail lines selected on compensation. |
+From this mask, you proceed to load/edit the document received from the professional or the agent, **both in the case of a provisional note and a final invoice: the difference between the two will only involve the immediate or subsequent entry (thus modifying an already recorded provisional) of the fields related to the number and date of the final document.**
+
+![](/img/it-it/finance-area/professional-men/compensations-management/compensations-management/image01.png)
+
+ 
+
+### **HEADER FIELDS**:
+
+**Professional man**: refers to the entry of the detail account for the compensation: only detail accounts with agent account type or suppliers with the withholding tax flag set in the register can be entered in this field.
+
+The subsequent status flags (open the expander) are:
+
+**accounted**: automatically managed by the application at the time of compensation accounting. Once this flag is set, the compensation will no longer be modifiable. **withholding paid-up**: will be applied to the compensation manually or through the procedure **[Withholding tax paying-in](/docs/finance-area/professional-men/search-compensations/withholding-tax-paying-in)** executable from the compensation search mask.
+
+**certified**: automatically set by the program at the time of printing the final withholding certifications.
+
+![](/img/it-it/finance-area/professional-men/compensations-management/compensations-management/image02.png)
+
+ 
+
+Connected to the agent or supplier deatil account, the **Withholding Tax Type** can be predefined to propose at the time of loading the compensation (the connection is defined in the register of the agent or supplier).
+
+The subsequent **notes** field allows you to annotate a reference text for the compensation: this is a note that will then be included in the detailed notes of all accounting movements related to this compensation.
+
+**Movement description**: will be used in the compensation accounting for the same field in the accounting record.
+
+ 
+
+On the right side:
+
+**Payment Code**: this field, automatically proposed (calling the compensation the applicable withholding tax type) if the corresponding field in the **[Withholding Tax Type Management](/docs/configurations/tables/finance/withholding-tax-types)** form is filled, refers to the code related to the payment reason to be indicated in the Unique Certification of the payees (see ministerial instructions).
+
+Example: code A = services performed as a self-employed worker; Q = commissions paid to a single-mandate agent or representative; R = commissions paid to a multi-mandate agent or representative; U = commissions paid to a business finder.... 
+
+ 
+
+**Reference Number and Year of Compensation**: this is an internal automatic numbering of the program that must be unique for the company.
+
+**Document date**: proposed as the current date but can be set to the date of the received provisional note.
+
+**Definitive document no./date**: refer to the references of the final invoice: these are mandatory fields for proceeding with the compensation accounting, even if the reference template may not necessarily be a VAT-related template. These two fields will be the only modifiable ones in case a payment has already been recorded in accounting.
+
+**Reception date**: field to note the date of receipt of the final invoice (not mandatory for accounting).
+
+ 
+
+**Project** (ex job order): serves to link the compensation to a project (sales job order): this could be the case of an appraisal on a job site managed per contract. If the **[ledger template](/docs/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates/recording-detail)** used in the compensation accounting has the projects (ex jobs order) flag active, then the costs entered in this compensation will be assigned to the project (job order) entered in this field.
+
+**Currency exchange/Currencye exchange/Currency**: linked to the management of the currency and relevant exchange data retrieved from the exchange rate table (the currency is set in the agent/supplier register).
+
+ 
+
+### DETAIL LINES
+
+ 
+
+**Line Type**: fundamental data that allows the automatic management of the application of withholding on the service cost portion and its non-application on the portion related to the payee's pension fund. It can be of three types:
 
 
 
-| Function | Meaning |
-| --- | --- |
-| Document Manager | Button to connect to the document management.  |
+**Service cost**: to enter the portion subject to withholding for which Fluentis will propose the taxable percentage and the withholding rate read from the withholding tax type, the cost detail account will be reported from the corresponding cost of the agent/supplier, the cost in currency and euros, the VAT rate to be applied (also proposed based on the register), the pension fund percentage to be calculated on the line (proposed by the withholding tax type), and the reference economic competence dates. These are managed, for the connected user, according to the entry parameters (which can be set with the button available in the ribbon bar): the lines following the first will automatically propose the range set in the previous line.
 
-APPLICATIONS:
+**Social insurance fund**: Fluentis will propose Taxable withholding 0% and the taxable VAT value calculated automatically based on the percentage present in the service cost line previously entered.
+
+**Other**: managed as an amount subject to withholding (but the user can force this setting): normally refers to reimbursements included in the compensation, which may or may not be subject to withholding and are usually VAT exempt.
+
+Upon saving the compensation, control messages will be executed in case the value of the item does not correspond with the total to pay, as well as in the case of non-balancing the data to cost/profit center.
+
+Once the compensation accounting has been executed, it will no longer be allowed to modify the compensation data: in case payment accounting or Enasarco accounting has been executed, however, the references to the final document number/date, movement description, and the detail account entered in the details grid will be modifiable.
+
+In case the compensation is saved and has a final document date and number, it will be possible to proceed with the accounting through the **Accounting and Close** button in the ribbon bar: a mask will open in which the proposed dates will be the most recent valid ones for the VAT register associated with the template linked to the withholding type used.
+
+Some prints are available that can be executed with the commands placed in the ribbon bar.
+
+![](/img/it-it/finance-area/professional-men/compensations-management/compensations-management/image03.png)
 
 
- 1. Within user parameters it is possible to set if the new compensation has to consider the same detail account as the current one, the same withholding-tax type, as well as to manage the new document date and lastly to manage the range of economic accrual dates (accounting period end – that refers to the same end date as the start one, no date regarding the services account type. For this reason there will be necessary to insert both dates, in case that the inserted detail account is set as 'service').
+*Specific buttons*:  
+> **Insertion Parameters**: in the user parameters, it is possible to define whether the new compensation should propose the same detail account as the current one, the same withholding tax type, how to handle the new document date, and finally how to manage the economic competence date range (end of the fiscal year – i.e., the end date will be equal to the end of the fiscal year, daily – i.e., final date equal to the start date, no date for service type accounts – i.e., it will require the entry of both dates if the type of the entered detail account is set as 'Service');  
+> **Accounting and Close**: active when final document date and number have been entered, allows for the accounting of the compensation;  
+> **New Detail**: activates the cursor for entering a new detail line for the compensation;  
+> **Delete Detail**: deletes the selected detail lines within the compensation;  
+> **Compute Values**: recalculates the values related to the withholdings based on the data entered in the detail lines.  
 
+---
+### **VIDEO TUTORIALS**
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/k7abmzqf6Bk" title="YouTube video player" frameborder="0" allowfullscreen="true"></iframe>
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/8sdFGMDVIFc" title="YouTube video player" frameborder="0" allowfullscreen="true"></iframe>
 
-
-
+<iframe width="560" height="315" src="https://www.youtube.com/embed/DVXhUdwqBS4" title="YouTube video player" frameborder="0" allowfullscreen="true"></iframe>

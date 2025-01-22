@@ -3,6 +3,27 @@ title: Patch notes Versione 545
 sidebar_position: 1
 ---
 
+### Patch 545.1-0111- 18/12/2024
+> - SH - Errore in fase di apertura "Regime Fiscale" ( TT05028/24)
+> - Scm: Errore della nota di consegna dell'acquisto durante il caricamento e il rollback #TT05306/24
+> - SCS – Se la Società prevede la Gestione Controlling (con l’omonimo flag nella tabella Società), l’Evasione di un DDT o di un Rientro all’interno di una fattura riporta per date di competenza le date dello scarico documento, se non presente le date del documento (#TT05126/24)
+> - FI - problemi in fase di annullamento stampa definitiva liquidazione ( TT04859/24)
+> - FI - la stampa definitiva della liquidazione iva periodica ora memorizza il saldo a credito nel campo del credito precedente della form di Dichiarazione iva periodica, non più in quello delle Variazioni iva periodo precedente. (#TT03694/24)
+
+
+### Patch 545.1-0110- 28/10/2024
+> - MES – Corretto bug negli ordini di produzione in merito al pulsante completamento dati ordine. Il problema si verificava nel caso in cui in distinta base ci fossero più righe dello stesso articolo tra i materiali di un articolo padre senza indicazione della priorità. (#TT05019/24)
+> - PR - nel modulo Anticipi Incassi, procedura di contabilizzazione incassi, gestione del parametro di descrizione movimento (#TT04923/24)
+
+### Patch 545.1-0109- 21/10/2024
+> - ARM - Workflow: Passaggio di stato condizionato(#TT04384/24)
+> - SD - Ottimizzazione della griglia 'Note articolo-cliente' del tab Varie dell'anagrafica cliente (#TT01967/24)
+> - MPS - Corretto bug in schedulazione generale nel caso in cui si schedulasse un articolo con in distinta base un materiale alternativo con quantità null. (#TT04639/24)
+> - Nell’evasione ordini fornitori in bolle e fatture acquisto senza ricalcolo analitica, revisione assegnazione centri su priorità magazzini (#TT01624/24)
+> - Revisione import excel delle fatture di vendita, fix del lookup del campo ‘Cedente’
+> - SH – autorefresh dashboards (TT04763/24)
+> - Bizlink – esportazione Piteco – filtro per pagamenti contabilizati
+
 ### Patch 545.1-0108- 24/10/2024
 > - SD - nella contabilizzazione fatture di vendita, esclusione righe con spese incasso 0 (#TT01642/24)
 > - Add new fields on rollback dunning letters

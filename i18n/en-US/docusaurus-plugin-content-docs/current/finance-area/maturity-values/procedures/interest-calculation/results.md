@@ -3,20 +3,12 @@ title: Results
 sidebar_position: 4
 ---
 
-In “Results” tabulator it is possible to view and to delete the result of calculations performed, together with the possibility also to filter the query for accounts/detail account and payment type.
-
-RIBBON BAR: the ribbon bar represents the Form menu, that is the area on which it is possible to perform actions linked to the procedure in use. The possible features list is the following:
+In the 'Results' tab, it is possible to view and delete the results of the calculations performed, with the option to filter the query by account/detail account and payment type.
 
 
 
-| Function | Meaning |
+| Function | Extended Description |
 | --- | --- |
-| Search Results | The button searches the calculation results performed. |
-| Delete Results | The button deletes the calculation results performed. |
-| Delete Selected Details | The button deletes only the selected details of a specific calculation. |
-
-
-
-
-
-
+| Search results | The button searches for the results of the calculations performed. |
+| Delete | The button deletes the results of the calculations performed. |
+| Delete detail | The button deletes only the selected details of a specific calculation. |

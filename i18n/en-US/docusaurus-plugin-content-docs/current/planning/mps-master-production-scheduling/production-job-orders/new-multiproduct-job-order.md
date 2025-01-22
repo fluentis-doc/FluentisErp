@@ -1,132 +1,42 @@
 ---
 title: New Multiproduct Job Order
-sidebar_position: 4
+sidebar_position: 5
 ---
 
-The window that enables the user to insert a New Multiproduct Job Order can be opened through the following path Planning à Job Orders à New Multiproduct Job Order, or by clicking on the Ribbon icon from Job Orders window called exactly 'New Monoproduct Job Order'.
+The form opens via the path **Planning > Production Job Orders** by clicking on the **Insert Multiproduct Job Order** button in the **Production Job Orders** form.
 
-First of all the application needs the insertion of the Production Job Order Type, even if it proposes the predefined type as a default type into the specific combo box. After having indicating the job order type the user has to save the Multiproduct Job Order Header and then insert the item to be produced into the specific box through help or by typing class and code manually. After having inserted the item to be produced the application enables the user to choose the item Variant and insert the quantity to be produced and the Job Order Estimated End Date. In this way the first line of the New Multiproduct Job Order grid is completed automatically with also the item Description, the procurement type of the job order line (that is taken from the procurement type of the same item and can be of production, purchase or subcontractor type), the job order status, the item unit of measure, the quantity produced and the estimated start date.
+## Specific Buttons
 
-Hereinafter all the details related the Multiproduct Job Order header window:
+> [MRP Parameters](/docs/configurations/parameters/production/mrp-parameters/search-mrp-parameters): this button allows you to open the screen related to the MRP parameters of the item;  
+> [Bill of Materials](/docs/erp-home/registers/production/bill-of-materials/search-and-insert-assemblies): allows you to open the screen related to the bill of materials of the item;  
+> [Work Cycles](/docs/erp-home/registers/production/routes/new-route): allows you to view the work cycle and the related production phases of the item.
 
-**Year / Number**: in these fields it is possible to insert automatically the job order year and number that the user is creating, according to the numbering type linked to the job order type inserted into the specific field. These data can be edited manually by the user
+## Multiproduct Job Order Management
 
-**Status**: through this field it is possible to view and edit the Multiproduct Production Job Order header status. The job order status can be:
+This tab is the same as the one present in the [Monoproduct Job Orders Insertion](/docs/planning/mps-master-production-scheduling/production-job-orders/new-monoproduct-job-order).
 
-**Not Examined**: it concerns the job order creation and it means that the job order has just been inserted or created
+The *substantial difference* lies in the fact that there is no section where the item with its related data is entered, as occurs for the creation of a monoproduct job order; instead, this space is replaced by a grid that allows the entry of not one, but multiple items as it is indeed a multiproduct job order.
 
-**Scheduled**: the job order is scheduled after the General Schedule process
+The fields present in the grid are the same as those of the [Monoproduct Job Order](/docs/planning/mps-master-production-scheduling/production-job-orders/new-monoproduct-job-order); the only difference is the **Progressive** field which is editable by the user, where a progressive line number of the *MultiProduct Production Job Order* is proposed, and the estimated start/end dates, suggested date, and start and end forecast dates are specified for each item present in the multiproduct job order (the sections Estimated Date and Effective Date referring to the overall status of the multiproduct job order remain).
 
-**Launched**: in case that at least one of the planned production or purchase orders has been issued during the General Schedule
+### Sales Order References
 
-**Executive**: in case that at least one of the production orders or one of the subcontractor planned orders is issued or when one of the Purchase Request lines is transformed into vendor order line
+The tab contains a read-only grid, where the sales orders linked to the reference production job order appear when the job order has been generated from one or more lines of sales orders.  
+**Type/Year/Number**: in these columns, the *Type/Year/Number* of the sales order containing the detailed line is displayed;  
+**N./Quantity/*MU**: in this column, the quantity of the sales order line of which the detail is displayed is shown;  
+**Goods Ready Date**: in this column, the date of the ready goods set in the sales order line of which the detail is displayed is shown;  
+**Account**: in this column, the account and sub-account of the customer to whom the sales order containing the detailed line is addressed are displayed.
 
-**Executed**: the job order assumes this status after that the generated production job order for job order item has been 'Executed'
+### Extra Data
 
-**Historicized**: the job order can be inserted in this status manually in order not to be viewed during the search of Executed Job Orders
+This tab is also composed of a grid where all the extra data related to the item present in the production job order will be reported.
 
-**Canceled**: in order to indicate that the initially planned job order wasn't processed, the user can set this status manually instead of delete the job order
+## Costing
 
-**Compulsory** (flag): it is a descriptive flag that enables the user to indicate the importance or not of this job order
+All information related to **Costing** can be consulted on the [Costing page](/docs/planning/mps-master-production-scheduling/production-job-orders/valorization).
 
-**Priority**: through this combo it is possible to set the job order priority and this datum is simply informational
+## Extra Data
 
-**Procurement**: this combo box shows the Production Job Order that user is creating or has already been creating (Production, Purchase, Subcontractor). In general it corresponds to the procurement type of the first item inserted into the same Production Job Order. It consists on a generic little element in case of Multiproduct Job Order
+This tab, which runs alongside the *Multiproduct Job Order Management* tab, contains the entire set of [extra data](/docs/configurations/utility/extra-data/extradata/search-extradata) linked to the production job order.
 
-**Insertion Date/Last Modification**: in these not edited fields the user can view the insertion date and the last modification date of the job order
-
-**Estimated Start/End Working Date**: in these fields it is possible to view: the Start/End Effective Working Dates, considering the oldest the furthest date among the job order lines dates.
-
-**Effective Start/End Working Date**: in these fields it is possible to view: the Start/End Effective Working Dates, that is the date of the first production signal of a production order generated by one of the job order lines; and the date of the last production signal that has caused the definitive closing of the last production order generated by one of the job order lines. Obviously the effective end date can be viewed only in case that the job order has the 'Executed' status
-
-**Description**: in this field it is possible to type a Production Job Order description manually. It consists of a not compulsory and descriptive field
-
-**Job Order**: in this field it is possible to view the link with the Sales Job Order, if available. The user can use this field in order to link the Production Job Order manually to an header or to an existing Production Job Order line
-
-**Customer**: in this 3 fields the Customer data are specified: 'account', 'detail account', 'customer company name'. Through a double click on the first field it is possible to open a 'Accounts Help' from which to select the customer in question. If the Multiproduct Production Job Order has been generated through grouping of more sales order lines of the same Customer, it is possible to find this customer into the field to which Sales Order is addressed and on which order lines are contained, on the contrary the field is free. It can be edited by the user anyway
-
-**Notes**: through this field it is possible to insert a note related to the Production Job Order manually
-
-**Prod. Site**: in this field it is possible to specify which production site has to be considered in order to schedule the Production Job Order items
-
-Hereinafter all the details related the Multiproduct Job Order items grid:
-
-**Procurement Type**: this combo shows the Production Job Order line type that the user is creating or has already created (Production, Purchase, Subcontractor). In general it corresponds to the procurement type of the same Production Job Order item
-
-**Status**: through this field it is possible to view and edit the Production Job Order line status. The job order line status can be:
-
-**Not Examined**: it concerns the job order creation and it means that the job order has just been inserted or created
-
-**Scheduled**: the job order is scheduled after the General Schedule process
-
-**Launched**: in case that at least one of the planned production or purchase orders has been issued during the General Schedule
-
-**Executive**: in case that at least one of the production orders or one of the subcontractor planned orders is issued or when one of the Purchase Request lines is transformed into vendor order line
-
-**Executed**: the job order assumes this status after that the generated production job order for job order item has been 'Executed'
-
-**Historicized**: the job order can be inserted in this status manually in order not to be viewed during the search of Executed Job Orders
-
-**Canceled**: in order to indicate that the initially planned job order wasn't processed, the user can set this status manually instead of delete the job order
-
-**Progr** **.**: in this field, that can be edited by user, it is possible to view a line progressive of the Multiproduct Production Job Order
-
-**Route**: in this field it is possible to specify which number of the working route has to be considered to schedule the job order item
-
-**Class**: in this column it is possible to specify the item class to be inserted into the job order line
-
-**Item Code**: in this column it is possible to insert manually the item to be produced or through a double click on the yellow box it is possible to access to 'items help' in order to inser item code. The item description is automatically inserted
-
-**Variant**: through this combo it is possible to select the item variant
-
-**Option**: through this combo it is possible to view the Option that has to be used to schedule the job order item
-
-**UM Used**: in this column it is possible to insert the precodified alternative unit of measure that has to be considered for that item
-
-**Used Quantity to Be Produced**: in this field it is possible to insert the quantity to be produced in the alternative item unit of measure. If item has no alternative unit of measure or if user wants to insert the quantity to be produced into the operational unit of measure, it is necessary simply to insert the quantity to be produced without update the 'UM Used' field. Lastly remember that in case of manual insertion of the Production Job Order line, the user has to insert this data manually, otherwise it will not be possible to save the job order line
-
-**UM**: through this column it is possible to view the item operational unit of measure
-
-**Oper. Quantity to Be Produced**: through this field it is possible to insert quantity to be produced in the operation unit of measure. The field 'Oper. Quantity to Be Produced' is updated automatically by inserting the quantity to be produced into the 'j' field
-
-**Quantity Produced**: through this field it is possible to view the already produced quantity within the item operational unit of measure
-
-**Estimated Start Date**: in this column there is the estimated start date of the Production Job Order line. If the Production Job Order has the 'Not Examined' status, this date will be always the same as the estimated end date and as the ready goods date of the Sales Order line from which the customer line has been generated, or it will be the same of the Sales Forecast start date from which the job order line has been generated. After that the Production Job Order line has been scheduled, the job order estimated start date will be the same as the estimated start date of the first planned order that is generated by scheduling of job order line
-
-**Estimated End Date**: in this column there is the estimated end date of the Production Job Order line. Until the Production Job Order has the 'Not Examined' status, this date will be the same as the estimated start date and the ready goods date of the Sales Order line from which the job order line was generated or it will be the same as the Sales Forecast end date from which the job order line was generated. After that the Production Job Order line has been scheduled, the job order estimated end date is the same as the estimated end date of the first planned order that is generated through the scheduling of the job order line. Lastly, remember that through the manual insertion of Production Job Order line, the user has to insert this element manually, otherwise it will not be possible to save the job order line
-
-**Suggested Date**: in this column there is the date that system has suggested in case that the user has scheduled the job order line by using the 'Control Documents in Delay with ATP' parameter and by having set, into the General Schedule parameters, a 'MS (Master Scheduling) Start Date'. The suggested date is the one that the user can decide to use as the estimated end date of the job order line
-
-**Forecast Start Date**: in this column there is the start date of the Operative Sales Forecast from which the Production Job Order line has been generated
-
-**Forecast End Date**: in this column there is the end date of the Operative Sales Forecast from which the Production Job Order line has been generated
-
-**Job Order**: through this field it is possible to view the link with the Sales Job Order, if available. The user can use this field in order to link manually the Production Job Order line to an header or to an existing Sales Job Order line
-
-**Year**: through this column it is possible to view the sales job order year possibily linked to the previously mentioned field
-
-**Customer Account/Customer Detail Account/ Customer Description**: in these 3 fields it is possible to specify the Customer data: 'account', 'detail account', 'customer company name'. Through a double click on the first or second field it is possible to open a 'Account Help' from which to select the customer in question. If the Production Job Order line has been generated from a Sales Order line, in this field it is possible to find the customer to whom the Sales Order of that line is addressed
-
-**Item Description**: in this column there is the item description related to the Production Job Order line
-
-At the bottom of the window there are 3 different tabs: Job Order Attributes, Reference of Sales and Variants Orders, that refer to the job order line selected in the grid and that have been detailed in this document section of the 'New Monoproduct Job Order'.
-
-RIBBON BAR: it represents the Form Menu, that is the area in which it is possible to perform actions linked to the procedure in use. The list of features is the following:
-
-
-
-| Function | Meaning |
-| --- | --- |
-| Save | Button to save the modifications performed on the Production Job Order. |
-| Insert Multiproduct Job Order | It refers to the procedure to insert a new Multiproduct Production Job Order: the application has the task to save the just inserted job order automatically and cleans up all the fields making window available for a new job order insertion. |
-| Duplicate Job Order | It refers to the procedure to generate a new Multiproduct Production Job Order, that consists of the same items of the starting job order. Before the user opens the new window, the application needs the saving of staring job order data. |
-| Insert Item | It moves the mouse focus automatically on the first column of the first available grid line, in order to enables the user to insert a new job order line. |
-| Delete Item | It deletes the selected line into the items grid of the Multiproduct Production Job Order. |
-| Preview | It refers to the 'Verify Job Orders' window, mentioned in the following sections of this document, that has been already prefiltered for the Production Job Order from which user is started. |
-| Print | It refers to the 'Verify Job Orders' window, mentioned in the following sections of this document, that has been already prefiltered for the Production Job Order from which user is started. |
-
-
-
-
-
-
+For details on the common functionality of the forms, please refer to the link [Custom Features, Buttons, and Fields](/docs/guide/common).
