@@ -33,7 +33,12 @@ Le informazioni si aggregano a livello superiore, quindi il Root Node conterrà 
 
 Nella tab Articolo troviamo poi la **tab Pianificazione servizio**, i cui dati da riportare per la riga articolo selezionata sono:
 
-**Data inizio/Data fine**: indicano le date pianificate per l’attività;          
+**Data inizio/Data fine**: indicano le date pianificate per l’attività; 
+>Le date verranno aggiornate in automatico a condizione di:
+- flag attivo "Ricalcolo data inizio-fine" nella tabella dei tipi progetto
+- se l'unità di misura utilizzata corrisponde all'unità di misura giorni nei parametri progetto, e si modifica la quantità di riga, la data fine verrà ricalcolata
+- inserendo nuove risorse con data anteriore a quella di inizio o successiva a quella di fine, le date di inizio-fine verranno aggiornate in automatico in base alla data minima e massima presente nella tab risorse.   
+
 **Da data Milestone/A Data Milestone**:               
 **Lavoro completato(perc.)/Stima**: è possibile indicare una percentuale di avanzamento lavori o una relativa stima;              
 **Tipo richiesta intervento**: è possibile indicare una tipologia di richiesta intervento collegata che verrà usata nella generazione di nuove richieste intervento legate alla riga progetto;              
@@ -52,7 +57,29 @@ Nella **tab Risorse** è possibile allocare le risorse per la riga articolo sele
 **Centro aziendale**: viene assegnato il centro aziendale collegato alla risorsa, ma è possibile modificarlo;               
 **Unità di misura**: contiene l’unità di misura per la quantificazione del tempo giornaliero della risorsa;                
 **Quantità**: indica le ore giornaliere;             
-**Costo unitario**: indica il costo della risorsa per singola unità di misura;              
+**Costo unitario**: indica il costo della risorsa per singola unità di misura;    
+:::note[Nota]
+Assegnando la risorsa nella riga di progetto, viene proposto il costo orario della risorsa nell’apposito campo. 
+Il costo dipenderà anche dall’unità di misura: 
+-	se l’UM è ora, il valore rimane invariato.
+-	Se l’UM corrisponde ai giorni (impostazione nei Parametri Progetti), verrà fatta la conversione sulla base dell’Orario di lavoro impostato in anagrafica risorse. 
+-	Se l’UM è diversa dai due casi precedenti, si cercherà il fattore di conversione, che se non presente darà messaggio di errore all’utente “Impossibile effettuare conversione del costo orario unitario risorsa con l’unità di misura della risorsa nel progetto. Costo della risorsa nel progetto non calcolato”
+:::
+
+:::note[Criteri ottenimento costi specifici in riga progetto]
+Se la risorsa prevede un costo differenziato per le giornate di straordinario/festività etc, la ricerca del costo corrispondente verrà fatta con la seguente logica: 
+1. La data di inizio inserita nella riga di progetto rientra in una delle giornate segnate nel Calendario dei giorni non lavorativi? 
+>Se sì, verrà assegnato il valore impostato nel “Tipo costo: Festività” - Verrà comunque richiesta una notifica di conferma all’utente
+2.	Se la data di inizio non dovesse rientrate nel Calendario dei giorni non lavorativi, si prosegue il controllo nella griglia di Giorni lavorativi previsti per la risorsa
+>Se la data di inizio non rientra né nei festivi né nei giorni lavorativi per la risorsa, verrà chiesto di aggiornare con il costo marcato come “Default giorno non lavorativo” se presente. Nel caso non ci fosse un costo così marcato, verrà preso in alternativa il costo “Straordinario”. 
+3. Se la data di inizio rientra in una di quelle lavorative ordinarie, viene verificato se: 
+>rientra nel turno principale. 
+>>Se il turno principale è marcato come “notturno”, viene chiesto di aggiornare con il costo notturno; nel caso non fosse notturno, viene considerato il costo di testata risorsa;
+4. Se non rientra nel turno principale, viene verificato se rientra nel turno alternativo.
+>se il turno alternativo ha un costo dedicato, viene considerato questo valore
+>>se il turno alternativo è marcato come “notturno”, viene chiesto di aggiornare con il costo notturno; nel caso non fosse notturno, viene considerato il costo di testata risorsa;
+:::
+
 **Data inizio**: contiene la data nella quale verrà stanziata la risorsa, con l’orario di inizio lavorativo;                 
 **Ora inizio pausa**: contiene l’eventuali data e ora di inizio della pausa;             
 **Ora fine pausa**: contiene l’eventuali data e ora di fine della pausa;                 

@@ -40,7 +40,7 @@ L'elenco si compone delle seguenti informazioni:
 >  
 > **Categoria**
 >> **Codice**: è il codice della *Categoria*.   
->> **Descrizione**: è la descrizione della *Categoria**.   
+>> **Descrizione**: è la descrizione della *Categoria*.   
 >> **Distruttiva**: indica se la prova è di tipo distruttiva.   
 >
 > **Laboratorio interno**: indica se la prova viene effettuata internamente.   

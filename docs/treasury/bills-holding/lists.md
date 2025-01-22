@@ -1,51 +1,47 @@
 ---
-title: Ricerca Distinte
+title: Distinte
 sidebar_position: 5
 ---
 
-La procedura della ricerca distinte è stata disegnata per permettere all'utente di ricercare facilmente distinte di presentazione emesse precedentemente con lo scopo di visualizzarle, modificarle ed eventualmente cancellarle. Dalla ricerca distinte è possibile fare tutte le operazioni necessarie nell'ambito del documento, previa la presenza dei diritti utente necessari.
+La form della ricerca distinte 
+- si trova in Tesoreria > Portafoglio Effetti > Effetti > Distinte
 
-La procedura della ricerca distinte è costituita nel seguente modo:
-
-RIBBON BAR: rappresenta il menu della Form in oggetto, ossia l'area nella quale è possibile effettuare delle azioni sia nel merito di un documento preesistente, piuttosto che generarne uno nuovo. La lista delle funzionalità possibili è di seguito rappresentata:
-
+- permette all'utente di ricercare le distinte di presentazione emesse precedentemente con lo scopo di visualizzarle, modificarle ed eventualmente cancellarle.
 
 
-| Funzione | Significato |
-| --- | --- |
-| Ricerca distinte | Pulsante per applicare i filtri di ricerca all'intero database degli effetti inseriti. |
-| Nuovo distinte | Richiama la procedura per inserire un nuovo effetto. |
-| Modifica distinte | Richiama la procedura per modificare un effetto precedentemente inserito. |
-| Visualizzazione distinte | Richiama la procedura per visualizzare un effetto precedentemente inserito. |
-| Cancella distinte | Esegue la procedura per cancellare un effetto precedentemente inserito. |
+## Pulsanti della Ribbon Bar
+
+> - **Ricerca distinte:** Pulsante per ricercare le distinte secondo i filtri di ricerca impostati nella testata della form.
+> - **Nuovo distinte:** Richiama la form per inserire una nuova distinta.
+> - **Modifica distinte:** Permette di modificare una distinta precedentemente inserita.
+> - **Visualizzazione distinte:** Visualizza una distinta precedentemente inserita.
+> - **Cancella distinte:** Cancella una distinta precedentemente inserita.
+
+> Esecuzione della **stampa** (*Anteprima* oppure *Stampa*) *Distinta di presentazione*: lancia, relativamente alle distinte selezionate con il mouse, (tenendo premuto Ctrl si possono selezionare più distinte contemporaneamente) l'omonima stampa presente nel [**menu stampe**](/docs/treasury/bills-holding/reports/print-presentation-lists) del modulo
+
+## Filtri nella testata della form
+
+- **Tipo:** filtra per tipo di distinta, dato a sua volta definito nella tabella [***Tipi presentazione distinte effetti***](/docs/configurations/tables/treasury/bills-portfolio-module-tables/bills-list-presentation-types)
+
+- **Banca:** filtra per conto **Banca Conto Corrente** impostato sulla testata distinta
+
+- **DA - A Numero distinta:** filtra per numero distinta, dato impostato al numeratore automatico in fase di creazione della distinta
+
+- **DA / A data presentazione:** filtra per data di presentazione, campo ella testata distinta proposto generalmente pari ad "*oggi*" ma può essere variato dall'utente
+
+- **Divise:** filtra per divisa, dato di testata che si riferisce alla divisa degli effetti contenuti in distinta, ad esempio per estrarre solo le divise denominate in dollari.
+
+- **Stampato:** se attivato, questo flag estrae solo distinte stampate (o comunque con flag *stampato* "true")
+
+- **Contabilizzata:** se attivato, questo flag estrae solo distinte contabilizzate attraverso [l'apposita procedura](/docs/treasury/bills-holding/accounting/lists-accounting/accounting) (o comunque con flag *contabilizzata* "true")
 
 
+## Griglia dei risultati
 
-| Funzione | Significato |
-| --- | --- |
-|  [Stampa distinte di presentazione](/docs/treasury/bills-holding/reports/print-presentation-lists)  | Richiama la procedura per stampare le Distinte di presentazione in banca degli effetti. |
-|  [Stampa Situazione portafoglio effetti](/docs/treasury/bills-holding/reports/bill-holding-situation)  | Richiama la procedura per stampare la statistica della Situazione del portafoglio effetti. |
-|  [Stampa Lista insoluti](/docs/treasury/bills-holding/reports/print-unpaid-list)  | Richiama la procedura per stampare la lista degli insoluti presente. |
+In questa from presenta gli stessi campi presenti nei filtri già dettagliati qui sopra.
 
+Presenta inoltre il **Totale** della distinta (somma gli importi degli effetti in distinta)
 
-
-| Funzione | Significato |
-| --- | --- |
-|  [Acquisizione effetti dalle fatture](/docs/treasury/bills-holding/procedures/bills-acquisition-from-invoices/acquisition)  | Richiama la procedura per creare in automatico gli effetti dalle scadenze fatture. |
-|  [Acquisizione effetti dalle partite](/docs/treasury/bills-holding/procedures/bills-acquisition-from-maturity-values/bills-acquisition-from-maturity-values-intro)  | Richiama la procedura per creare in automatico gli effetti dalle partite aperte. |
-|  [Contabilizzazione effetti](/docs/treasury/bills-holding/accounting/bills-accounting/accounting)  | Richiama la procedura per effettuare la contabilizzazione effetti e chiudere il conto cliente. |
-|  [Contabilizzazione effetti a fornitore](/docs/treasury/bills-holding/accounting/bills-accounting-by-vendor/accounting)  | Richiama la procedura per effettuare la contabilizzazione effetti a fornitore e chiudere il conto fornitore. |
-|  [Contabilizzazione distinte](/docs/treasury/bills-holding/accounting/lists-accounting/accounting)  | Richiama la procedura per effettuare la contabilizzazione della distinta e valorizzare il conto di presentazione. |
-|  Contabilizzazione accrediti  | Richiama la procedura per effettuare la contabilizzazione dell'accredito in conto. |
-|  [Generazione file Riba](/docs/treasury/bills-holding/cash-order-rid-lcr/cash-order-rid-lcr-creation/cash-order-files-creation)  | Richiama la procedura per generare il tracciato telematico Riba. |
-|  [Generazione file Rid](/docs/treasury/bills-holding/cash-order-rid-lcr/cash-order-rid-lcr-creation/rid-file-creation)  | Richiama la procedura per generare il tracciato telematico Rid. |
-|  [Importazione insoluti](/docs/treasury/bills-holding/procedures/import-unpaids)  | Richiama la procedura di importazione del tracciato telematico Insoluti. |
-|  [Contabilizzazione insoluti](/docs/treasury/bills-holding/accounting/unpaid-accounting/unpaids)  | Richiama la procedura di contabilizzazione insoluti, con contestuale riapertura della partita cliente secondo i parametri del modulo. |
-|  Contabilizzazione insoluti su cessione | Richiama la procedura di contabilizzazione insoluti, con contestuale riapertura delle partite cliente e fornitore secondo i parametri del modulo. |
-
-AREA DI FILTRO: l'area di filtro è quella dedicata ad ospitare l'elenco dei possibili tipi di dati grazie ai quali è possibile effettuare una selezione, una ricerca sul totale delle distinte inserite. I Filtri sono tipicamente sempre in condizione 'AND' ed è possibile specificare più criteri di filtro contemporanei.
-
-GRIGLIA DI RISULTATO: la griglia di risultato rappresenta l'elenco delle distinte che corrispondono ai dati di filtro sopra specificati. L'utente, dopo aver specificato i valori attraverso i quali desidera ottenere una ricerca delle distinte, premendo il pulsante [Ricerca Distinte] presente nella relativa Ribbon, otterrà nella griglia di risultato l'elenco delle distinte desiderate.
 
 
 

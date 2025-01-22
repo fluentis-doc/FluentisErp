@@ -37,8 +37,8 @@ sidebar_position: 5
 |  [供应商账单结账](/docs/treasury/bills-holding/accounting/bills-accounting-by-vendor/accounting)  | 用于供应商账单结账，以及供应商账户结账 |
 |  [清单记账](/docs/treasury/bills-holding/accounting/lists-accounting/accounting)  | 用于清单记账，以及说明账户的计价 |
 |  贷方记账  | 用于账户中的贷方记账 |
-|  [生成现金汇票文件](/docs/treasury/bills-holding/cash-order-rid-lcr/cash-order-rid-lcr-creation/cash-order-files-creation)  | 用于生成现金汇票跟踪 |
-|  [生成RID文件](/docs/treasury/bills-holding/cash-order-rid-lcr/cash-order-rid-lcr-creation/rid-file-creation)  | 用于生成RID跟踪 |
+|  [生成现金汇票文件]  | 用于生成现金汇票跟踪 |
+|  [生成RID文件]  | 用于生成RID跟踪 |
 |  [未付导入](/docs/treasury/bills-holding/procedures/import-unpaids)  | 用于导入未付跟踪 |
 |  [未付记账](/docs/treasury/bills-holding/accounting/unpaid-accounting/unpaids)  | 用于未付记账，以及根据模块参数对客户到期值再次开账。 |
 |  转让未付记账 | 用于未付记账，以及根据模块参数对客户到期值再次开账 |
