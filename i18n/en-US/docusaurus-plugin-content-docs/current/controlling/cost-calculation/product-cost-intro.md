@@ -1,6 +1,6 @@
 ---
-title: Introduzione
+title: Introduction 
 sidebar_position: 1
 ---
 
-La procedura di **Calcolo costo** presente nel Controlling permette di calcolare i costi degli articoli in base alla distinta base e ai cicli di lavoro.
+The **Cost Calculationss** procedure present in Controlling allows for the calculation of item costs based on the bill of materials and productioin cycles.

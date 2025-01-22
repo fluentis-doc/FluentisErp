@@ -1,11 +1,11 @@
 ---
-title: Ricalcolo costo
+title: Recompute Costs 
 sidebar_position: 3
 ---
 
-La procedura di **Ricalcolo costo** presente nel Controlling permette di ricalcolare i costi ultimo e medio degli articoli in base ai movimenti di magazzino.
-Nella parte superiore della maschera è presente il filtro, nel quale è possibile effettuare una ricerca più mirata per gli articoli da considerare nella procedura; nella griglia con i risultati di ricerca è possibile selezionare gli articoli da considerare. La procedura viene effettuata con il pulsante della ribbon bar **Ricalcolo costi**; i risultati della procedura di calcolo saranno riportati direttamente nella griglia degli articoli.
+The **Recompute Costs** procedure present in Controlling allows for the recalculation of the last and average costs of items based on warehouse movements. 
+At the top of the mask, there is a filter where you can perform a more targeted search for items to be considered in the procedure; in the grid with the search results, it is possible to select the items to be included. The procedure is executed with the **Recompute Costs** button on the ribbon bar; the results of the calculation procedure will be reported directly in the items grid.
 
-:::note Nota
-È importante tenere presente che i movimenti di magazzino considerati dalla procedura per il calcolo del *Costo ultimo* o del *Costo medio* sono tutti quelli a partire dalla data di ultima chiusura più un giorno ad oggi; inoltre, i movimenti devono essere effettuati con causali che hanno i seguenti flag abilitati: *Aggiorna costo ultimo* e/o *Aggiorna costo medio* e *Interesse fiscale*.
+:::note Note
+It is important to keep in mind that the warehouse movements considered by the procedure for calculating the *Latest Cost* or *Average Cost* are all those starting from the date of the last closing plus one day to today; furthermore, the movements must be carried out with templates that have the following flags enabled: *Update Latest Cost* and/or *Update Average Cost* and *Fiscal Interest*.
 :::
