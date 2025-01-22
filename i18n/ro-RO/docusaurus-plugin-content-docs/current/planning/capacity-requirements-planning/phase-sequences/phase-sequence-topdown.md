@@ -1,60 +1,54 @@
 ---
-title: Sequenza Fasi - TopDown grid
+title: Secvență faze - TopDown grid
 sidebar_position: 2
 ---
 
-:::important A cosa serve
-La procedura di **Sequenza fasi** in Fluentis, tramite la funzionalità "Sequenza Fasi - TopDown grid", consente di ottimizzare la gestione delle fasi di produzione assemblando sequenze manuali o basate su regole personalizzate.      
-Dopo un'accurata selezione dei filtri, tra cui centro di lavoro, periodo d'ordine e commessa, le fasi non ancora ordinate sono elencate in una griglia superiore. Da qui, le fasi vengono spostate nella griglia inferiore per attribuire una sequenza.      
-La form include strumenti per modificare dati associati alle fasi, calcolare tempi e aggiornare date, garantendo un preciso controllo sulla pianificazione della produzione. Pulsanti specifici facilitano il calcolo delle sequenze, la gestione delle giacenze e l'aggiornamento dello stato degli ordini, assicurando un flusso produttivo efficiente.
+:::important Utilizare
+Funcționalitatea "Secvența faze - TopDown grid", permite optimizarea gestionării fazelor de producție prin asamblarea secvențelor manual sau pe baza regulilor personalizate.      
+După selectarea filtrelor, fazele care nu sunt încă ordonate sunt listate în tabelul superior. De aici, fazele sunt mutate în tabelul inferior pentru a atribui o secvență.      
+Form-ul include instrumente pentru modificarea datelor asociate fazelor, calcularea timpilor și actualizarea datelor, asigurând un control precis al planificării producției. Butoane specifice facilitează calculul secvențelor, gestionarea stocurilor și actualizarea stării comenzilor, asigurând un flux productiv eficient.
 :::
 
-Dà la possibilità di sequenziare le fasi manualmente o secondo regole decise dall’operatore.
+Oferă posibilitatea de a secvenția fazele manual sau conform regulilor stabilite de operator.
 
-La form si compone di una prima area di filtro dove è possibile selezionare:
-> **Centro di lavoro**       
-> **Macchina**        
-> **Da data inizio ordine**         
-> **A data fine ordine**      
-> **Commessa di produzione**     
+Form-ul este compus dintr-o primă zonă de filtre.
 
-Espandendo quest'area è possibile filtrare, ad esempio, anche per *Articolo*, *Sequenza*, *Tipo commessa produzione*, *Gruppi manodopera*, inoltre vi è anche la possibilità di scegliere le tipologie di ordini da visualizzare tra ordini pianificati, ordini di produzione in stato lanciato e/o esecutivo.
+Partea centrală a form-ului este constituită din două tabele.           
+Primul prezintă toate fazele de lucrări cărora nu le-a fost încă atribuită o secvență. Astfel, selectând o fază sau mai multe faze din primul tabel și apăsând butonul *Mută faze*, acestea sunt mutate în al doilea tabel (de mai jos) unde va fi posibil să se atribuie o secvență manual sau automat.          
 
-La parte centrale della form è costituita da due griglie.           
-La prima presenta tutte le fasi di lavorazioni alle quali non è ancora stata data una sequenza. Quindi selezionando una fase o più fasi dalla prima griglia e premendo il pulsante *Spostare fasi*, queste vengono spostate nella seconda griglia (sottostante) dove sarà poi possibile attribuire una sequenza manualmente o automaticamente.          
-
-:::note Nota
-Non è possibile modificare le informazioni di una fase già dichiarata in produzione.
+:::note Notă
+Nu este posibil să modificați informațiile unei faze deja declarate în producție.
 :::
 
-Nella parte inferiore della form sono presenti i seguenti campi:
-> **Quantità impegno**: riporta il totale delle quantita impegno delle righe selezionate dall'autente;         
-> **Unità di misura Tempi**: indica l'unità di misura del tempo con la quale si vuole visualizzare il valore presente in **Totale tempo**;     
-> **Totale tempo**: riporta il totale del tempo (Tempo macchina + Tempo manodopera + Tempo attrezzaggio) delle righe selezionate dall'autente.
+În partea inferioară a form-ului sunt prezente următoarele câmpuri:
+> **Cantitate utilizare**: raportează totalul cantităților utilizate ale rândurilor selectate de utilizator;         
+> **Unitate de măsură Timp**: indică unitatea de măsură a timpului cu care se dorește vizualizarea valorii prezente în **Timp total**;     
+> **Timp total**: raportează totalul timpului (Timp mașină + Timp manoperă + Timp montaj) al rândurilor selectate de utilizator.
 
-Inoltre, espandendo questa parte vengono visualizzati in sola lettura i dati di dettaglio relativi a:
-> **Quantità**
-> **Tempo manodopera**
-> **Tempo macchina**
-> **Tempo attrezzaggio**
+În plus, extinzând această parte sunt vizualizate în mod read-only detaliile referitoare la:
+> **Cantitate**
+> **Timp manoperă**
+> **Timp mașină**
+> **Timp montaj**
 
-*Pulsanti specifici*:  
+#### Butoane specifice 
 
-> **Ricerca**: permette di visualizzare le fasi in base ai filtri inseriti;           
-> **Ricerca e considera giacenze**: effettua la stessa funzione del pulsante **Ricerca**, ma, allo stesso tempo, permette di visualizzare in rosso tutte le fasi dove non c'è giacenza disponibile ad oggi;                   
-> **Spostare fasi**: permette di spostare la o le fasi selezionate dalla prima gliglia alla seconda griglia dove sarà poi possibile assegnare una sequenza;         
-> **Cambia fasi**: una volta selezionata una fase, questo comando permette di *Aggiornare* la fase stessa variando: fase, macchina, centro di lavoro, totale del tempo macchina, del tempo operaio e del tempo di attrezzaggio. Inoltre, selezionado la voce *Inserisci* è possibile aggiungere una nuova fase oppure, tramite la voce *Cancella* di eliminarla definitivamente;            
-> **Cambia ciclo/Versione**: permette di variare ciclo e / o versione in quell'ordine di produzione;            
-> **Cambio date**: permette di variare la data di inizio della fase selezionata;         
-permette di variare la *Data inizio* per tutti gli ordini pianificati o di produzione selezionati con la data indicata nel pop-up; successivamente in base alla fasi e al *Calendario capacità produttive* viene ricalcolata anche la *Data fine* ordine e le date inizio e fine di ciascuna fase. In base alle nuove date vengono anche ricalcolate le date di utilizzo dei materiali.
-Oltre ad aggiornare le date nell'ordine vengono aggiornate quelle nella commessa collegata;        
-> **Calcola tempo**: permette di effettuare il ricalcolo dei tempi dopo aver assegnato la nuova sequenza oppure dopo aver variato qualche dato tramite la funziona **Cambia fasi**;          
-> **Calcola sequenza**: dopo aver riordinato le righe della seconda griglia in base alla necessità, questo pulsante permette di dare una sequenza alle fasi che abbiamo selezionato in base all'ordinamento dato;       
-> **Aggiornamento data merce pronta**: permette di aggiornare la *Data merce pronta* degli ordini cliente collegati con la *Data fine ordine*;      
-> **Ricalcola disponibilità**: permette di ricalcolare la disponibilità, mostrando la disponibilità della giacenza in base alla sequenza che è stata data;         
-> **Rilascio ordini pianificati**: permette di rilasciare gli ordini pianificati di produzione in ordini di produzione per le fasi selezionate;                     
-> **Rilascio ordini**: permette di variare lo stato degli ordini di produzione da lanciato ad esecutivo della o delle fasi selezionate.         
-> **Espandi la dimensione della griglia**: permette di nascondere l'area di filtro della form per lavorare più agevolmente sulle griglie;         
-> **Doppia griglia**: permette di nascondere la prima griglia per poter lavorare più agevolmente sulla seconda.          
+> **Căută**: permite vizualizarea fazelor pe baza filtrelor inserate;           
+> **Căută și consideră stocuri**: efectuează aceeași funcție ca butonul **Căută**, dar, în același timp, permite vizualizarea în roșu a tuturor fazelor fără stoc disponibil în acel moment;                   
+> **Mută faze**: permite mutarea fazei sau fazelor selectate din primul tabel în al doilea tabel unde va fi posibil să se atribuie o secvență;         
+> **Schimbă faze**: odată selectată o fază, această comandă permite *Actualizarea* fazei în sine modificând: faza, mașina, centrul de lucru, totalul timpului mașină, al timpului operator și al timpului de montaj. De asemenea, selectând opțiunea *Inserează* este posibil să adăugați o nouă fază sau, cu opțiunea *Șterge* să o eliminați definitiv;            
+> **Schimbă ciclu/Versiune**: permite modificarea ciclului și/sau versiunii în acel ordin de producție;            
+> **Schimbă date**: permite modificarea datei de început a fazei selectate;         
+permite modificarea *Datei început* pentru toate ordinele planificate sau de producție selectate cu data indicată în pop-up. Ulterior, în baza fazei și a *Calendarului capacităților productive*, este recalculată și *Data sfârșit* a comenzii și datele de început și sfârșit ale fiecărei faze. Pe baza noilor date sunt recalculate și datele de utilizare ale materialelor.
+Pe lângă actualizarea datelor în ordin, sunt actualizate și cele din comanda legată;        
+> **Calculează timp**: permite recalcularea timpilor după ce a fost atribuită noua secvență sau după ce au fost modificate date cu procedura **Schimbă faze**;          
+> **Calculează secvența**: după reordonarea rândurilor în al doilea tabel, acest buton permite asocierea secvenței la fazele selectate pe baza ordonării date;       
+> **Actualizare dată marfă pregătită**: permite actualizarea *Datei marfii pregătite* a ordinelor client asociate cu *Data sfârșit comandă*;      
+> **Recalculează disponibilitate**: permite recalcularea disponibilității, arătând disponibilitatea stocului în funcție de secvența care a fost dată;         
+> **Eliberare ordine planificate**: permite eliberarea ordinelor planificate de producție în ordine de producție pentru fazele selectate;                     
+> **Lansare ordine**: permite modificarea stării ordinelor de producție din lansat 
+în executiv al fazei sau fazelor selectate.         
+> **Extinde dimensiunile gridului**: permite ascunderea zonei de filtru a form-ului;         
+> **Grid dublu**: permite ascunderea primului tabel pentru a putea lucra mai ușor în al doilea.          
 
-Per dettagli sul funzionamento comune delle form fare riferimento al link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Pentru detalii despre funcționarea comună a form-urilor citiți [Funcționalități, butoane și câmpuri comune (Funzionalità, pulsanti e campi comuni)](/docs/guide/common).

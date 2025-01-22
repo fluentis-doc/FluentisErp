@@ -1,8 +1,8 @@
 ---
-title: Sequenza Fasi
+title: Secvență faze
 sidebar_position: 1
 ---
 
-Dà la possibilità di sequenziare le fasi manualmente o secondo regole decise dall’operatore.
-Funziona esattamente come [Sequenza Fasi - TopDown grid](/docs/planning/capacity-requirements-planning/phase-sequences/phase-sequence-topdown) tranne che per il fatto che le *Fasi non ordinate* e le *Fasi ordinate* si trovano, in questo caso, su due tab differenti.
+Oferă posibilitatea de a secvenția fazele manual sau conform regulilor stabilite de operator.
+Funcționează ca [Secvență faze - TopDown grid](/docs/planning/capacity-requirements-planning/phase-sequences/phase-sequence-topdown) cu excepția faptului că *Fazele neordonate* și *Fazele ordonate* se află, în acest caz, pe două tab-uri diferite.
 
