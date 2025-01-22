@@ -1,52 +1,52 @@
 ---
-title: Capacità centri di lavoro
+title: Capacitate centre de lucru
 sidebar_position: 2
 ---
 
-:::important A cosa serve
-La funzione **Capacità centri di lavoro** in Fluentis offre un panorama chiaro e immediato dei carichi di lavoro nei centri produttivi, evidenziando picchi di sovraccarico o inefficienze. Attraverso una form organizzata in quattro sezioni, gli operatori possono filtrare e visualizzare gli ordini per reparto, data o stato (pianificato, lanciato, esecutivo) e intervenire con facilità tramite il drag & drop per spostare, posticipare o modificare le lavorazioni.     
-La visualizzazione grafica illustra la capacità massima e l'impegno giornaliero dei centri, consentendo una gestione visiva e interattiva delle fasi produttive. Pulsanti specifici rendono possibile modificare le fasi, cambiare date e navigare attraverso il dettaglio temporale del carico di lavoro, ottimizzando in tal modo l'efficienza operativa dell'intero processo produttivo.
+:::important Utilizare
+Funcționalitatea **Capacitate centre de lucru** în Fluentis oferă un cadru clar și imediat al încărcărilor de lucru în centrele productive, evidențiind vârfurile de supraîncărcare sau ineficiențele. Cu ajutorul form-ului organizat în patru secțiuni, operatorii pot filtra și vizualiza ordinele pe secție, dată sau stare (planificat, lansat, executiv) și pot interveni cu ușurință utilizând drag & drop pentru a muta, amâna sau modifica lucrările.     
+Vizualizarea grafică ilustrează capacitatea maximă și angajamentul zilnic al centrelor, permițând o gestionare vizuală și interactivă a fazelor productive. Butoane specifice fac posibilă modificarea fazelor, schimbarea datelor și navigarea prin detaliul temporal al încărcării de lucru, optimizând astfel eficiența operațională a întregului proces productiv.
 :::
 
-L’operatore può ottenere una visualizzazione immediata dei carichi di ciascun centro di lavoro attivo nell’ambito dei singoli reparti per un determinato periodo temporale, permettendogli di conoscere in modo immediato gli eventuali picchi di sovraccarico o di inefficienza produttiva. 
-Con un semplice *drag & drop* l’operatore può anticipare, posticipare o cambiare centro di lavoro ad una lavorazione, e con un doppio click nell’ambito della singola barra di capacità, è possibile conoscere nel dettaglio le informazioni relative a quali ordini di lavoro impegnano il centro nella specifica data selezionata.
+Operatorul poate obține vizualizarea imediată a încărcărilor fiecărui centru de lucru activ în cadrul fiecărei secții pentru o anumită perioadă de timp, permițându-i să cunoască imediat eventualele vârfuri de supraîncărcare sau de ineficiență productivă. 
+Cu un simplu *drag & drop* operatorul poate anticipa, amâna sau schimba centrul de lucru al unei lucrări, iar cu un dublu clickpe bara capacitate, poate avea informații referitoare la ce ordine de lucru ocupă centrul în data specifică selectată.
 
-Questa form, è costituita da 4 sezioni: 
+Acest form este constituit din 4 secțiuni:
 
-- la prima permette di filtrare per *Reparto* e/o per *Centro di lavoro* e di visualizzare i risultati nella griglia sottostante;  
+- prima permite filtrarea pe *Secții* și/sau pe *Centru de lucru* și vizualizarea rezultatelor în tabelul inferior;
 
-- nella seconda è possibile filtrare gli ordini per *Data inizio* e *Data fine* ed inoltre, decidere se visualizzare gli ordini: 
+- a doua permite filtrarea ordinelor după *Dată început* și *Data sfârșit* și, de asemenea, să decideți dacă să vizualizați ordinele:
 
-> *Pianificati*: mostra gli ordini pianificati di produzione;              
-> *Lanciati*: mostra gli ordini di produzione in stato lanciato;                
-> *Esecutivi*: mostra gli ordini di produzione in stato esecutivo.          
+> *Planificate*: arată ordinele planificate de producție;              
+> *Lansate*: arată ordinele de producție în stare lansată;                
+> *Executive*: arată ordinele de producție în stare executivă.          
 
-Inoltre, è possibile visualizzare tutti i dati relativi ai centri di lavoro selezionati nella prima sezione.
+De asemenea, permite să vizualizați toate datele referitoare la centrele de lucru selectate în prima secțiune.
 
-- nella terza sezione è possibile visualizzare una riga per ogni fase degli ordini pianificati e/o di produzione filtrati corrispondenti ai centri di lavoro selezionati nella prima sezione con tutti i dettagli relativi.
+- a treia secțiune permite să vizualizați un rând pentru fiecare fază a ordinelor planificate și/sau de producție filtrate corespunzătoare centrelor de lucru selectate în prima secțiune cu toate detaliile aferente.
 
-- nella quarta sezione denominata **Dati di dettaglio Fase selezionata** è possibile visualizzare graficamente i carichi di lavoro relativi ai centri di lavoro selezionati nella prima sezione. 
+- a patra secțiune, denumită **Detalii fază selectată** permite să vizualizați grafic încărcările de lucru referitoare la centrele de lucru selectate în prima secțiune.
 
-**Dati di dettaglio Fase selezionata**
+**Detalii fază selectată**
 
-All'interno della parte grafica, la linea arancione rappresenta la capacità produttiva massima giornaliera del centro di lavoro, mentre in blu viene rappresentato l'impegno del centro di lavoro in una certa giornata. In rosso, invece, viene eviidenziata la sovrallocazione del centro stesso.
-Selezionando una fase nella terza sezione, questa viene visualizzata in giallo all'interno della sezione grafica.
+În partea grafică, linia portocalie reprezintă capacitatea productivă maximă zilnică a centrului de lucru, în timp ce în albastru este reprezentat angajamentul centrului de lucru într-o anumită zi. În roșu, în schimb, este evidențiată supraîncărcarea centrului însuși.
+Selectând o fază în a treia secțiune, aceasta este vizualizată în galben în cadrul secțiunii grafice.
 
-Inoltre, tramite drag & drop è possibile selezionare una fase dalla griglia e trascinarla all'interno della sezione grafica e rilasciarla per variarne la data di inizio e di conseguenza quella di fine. Selezionando più centri di lavoro alternativi vi è la possibilità di spostare le fasi da un centro ad un altro in modo da ottimizzare la produzione.
+De asemenea, utilizând drag & drop puteți să selectați o fază din tabel, să o trageți în  secțiunea grafică și să o eliberați pentru a-i modifica data de început și apoi cea de sfârșit. Selectând mai multe centre de lucru alternative există posibilitatea de a muta fazele de la un centru la altul pentru a optimiza producția.
 
-Esercitando un semplice doppio click sulla riga della griglia delle fasi, l'utente entra direttamente nel documento (ordine pianificato o ordine di produzione) che contiene la fase rappresentata nella riga da cui si è partiti, con la possibilità, subordinata alla presenza dei diritti utente, di modificare il documento e vedere, dopo aver dato un refresh della visualizzazione, la situazione aggiornata anche dal punto di vista grafico.
-Invece, con un doppio click su un elemento del grafico viene aperto un pop-up contenente l'elenco della fasi di lavoro che contribuiscono a determinarne l'impegno.
+Cu dublu click pe rândul tabelului fazelor, se intră direct în documentul (ordin planificat sau ordin de producție) care conține faza reprezentată în rândul de la care s-a pornit, cu posibilitatea, în baza drepturilor deținute de utilizator, de a modifica documentul și de a vedea, după un refresh al vizualizării, situația actualizată și din punct de vedere grafic.
+În schimb, cu dublu click pe un element al graficului se deschide un pop-up care conține lista fazelor de lucru care contribuie la determinarea ocupării sale.
 
-*Pulsanti specifici*:  
+#### Butoane specifice
 
-> **Cambia fasi**: una volta selezionata una fase, questo comando permette di *Aggiornare* la fase stessa variando: fase, macchina, centro di lavoro, totale del tempo macchina, del tempo operaio e del tempo di attrezzaggio. Inoltre, selezionado la voce *Inserisci* è possibile aggiungere una nuova fase oppure, tramite la voce *Cancella* di eliminarla definitivamente;            
-> **Cambio date**: permette di variare la data di inizio della fase selezionata;         
-> **Zoom in**: permette di diminuire il dettaglio temporale nel grafico;          
-> **Zoom alla finestra**: permette di visualizzare il dettaglio temporale nel grafico sulla base delle *Date Inizio/Fine* indicate nei filtri;                    
-> **Zoom out**: permette di aumentare il dettaglio temporale nel grafico;              
-> **Zoom settimana**: permette di visualizzare un arco temporale di una settimana nel grafico a partire dalla *Data Inizio*;              
-> **Zoom 2 settimane**: permette di visualizzare un arco temporale di due settimane nel grafico a partire dalla *Data Inizio*;     
-> **Zoom mese**: permette di visualizzare un arco temporale di un mese nel grafico a partire dalla *Data Inizio*;     
-> **Zoom data**: permette di visualizzare un arco temporale indicando *Date Inizio* e *Data fine* dello stesso.
+- > **Schimbă faze**: odată selectată o fază, această comandă permite *Actualizarea* fazei în sine variind: faza, mașina, centrul de lucru, totalul timpului mașină, al timpului muncitor și al timpului de montaj. De asemenea, cu opțiunea *Inserează* puteți să adăugați o nouă fază sau, cu opțiunea *Șterge* să o eliminați definitiv;            
+- > **Schimbă dată**: permite modificarea datei de început a fazei selectate;         
+- > **Zoom in**: permite diminuarea detaliului temporal în grafic;          
+- > **Zoom fereastră**: permite vizualizarea detaliului temporal în grafic pe baza *Datelor Început/Sfârșit* indicate în filtre;                    
+- > **Zoom out**: permite creșterea detaliului temporal în grafic;              
+- > **Zoom săptămână**: permite vizualizarea unui arc temporal de o săptămână în grafic începând de la *Dată început*;              
+- > **Zoom 2 săptămâni**: permite vizualizarea unui arc temporal de două săptămâni în grafic începând de la *Dată început*;     
+- > **Zoom lună**: permite vizualizarea unui arc temporal de o lună în grafic începând de la *Dată început*;     
+- > **Zoom dată**: permite vizualizarea unui arc temporal indicând *Dată început* și *Data sfârșit* a aceleiași.
 
-Per dettagli sul funzionamento comune delle form fare riferimento al link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Pentru detalii despre funcționarea comună a form-urilor faceți referire la linkul [Funcționalități, butoane și câmpuri comune (Funzionalità, pulsanti e campi comuni)](/docs/guide/common).
