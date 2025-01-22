@@ -1,6 +1,5 @@
 ---
 title: Introducere
-title: Introducere
 sidebar_position: 1
 ---
 
@@ -15,7 +14,7 @@ import Link from '@docusaurus/Link';
 <div className="cardContainer">
     <div className="card">
 ###     <Link to="/docs/planning/mps-master-production-scheduling/job-orders-intro">Comenzi de producție</Link>
-        <p><Link to="/docs/planning/mps-master-production-scheduling/job-order-creation" className="bold-link">Generare comenzi de producție)</Link></p>
+        <p><Link to="/docs/planning/mps-master-production-scheduling/job-order-creation" className="bold-link">Generare comenzi de producție</Link></p>
         <p>Permite crearea comenzilor de producție bazate pe ordinele clienților, previziuni, substoc și necesar de gestiune.</p>
         <p><Link to="/docs/planning/mps-master-production-scheduling/production-job-orders/new-monoproduct-job-order" className="bold-link">Comenzi monoprodus</Link></p>
         <p>Permite gestionarea comenzilor de producție dedicate unui singur articol.</p>
