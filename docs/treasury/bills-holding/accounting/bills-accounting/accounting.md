@@ -3,7 +3,7 @@ title: Contabilizzazione
 sidebar_position: 1
 ---
 
-Da questa maschera si procede alla contabilizzazione effetti: la procedura, secondo le impostazioni della causale contabile impostata, andrà a chiudere le partite clienti associate agli effetti selezionati.
+Da questa maschera si procede alla contabilizzazione effetti: la procedura, secondo le impostazioni della causale contabile impostata, chiuderà le partite clienti associate agli effetti selezionati.
 
 La parte superiore della maschera è dedicata all'impostazione dei filtri di ricerca.
 
@@ -16,8 +16,6 @@ Il flag di **gestione provvisoria** andrà a generare registrazioni contabili di
 Se la causale contabile prevede il flag di apertura partite e l'effetto è stato creato manualmente senza associare una partita (o il suo importo è superiore all'importo delle partite collegate), allora sarà create una partita cliente in avere da compensare in seguito.
 
 Si ricorda che non sarà possibile contabilizzare effetti creati da fatture stampate quando queste non sono state ancora contabilizzate.
-
-RIBBON BAR: rappresenta il menu della Form in oggetto, ossia l'area nella quale è possibile effettuare delle azioni collegate alla procedura in uso. La lista delle funzionalità possibili è di seguito rappresentata:
 
 
 

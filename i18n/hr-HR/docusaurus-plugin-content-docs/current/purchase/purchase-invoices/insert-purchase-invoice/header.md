@@ -22,7 +22,7 @@ Unoseći **Dobavljača** automatski se *predlažu* svi specifični podaci iz kar
 **Status računa**: kada se račun stvori, nema aktivnih zastava. Ovaj odjeljak uključuje sljedeća polja:  
 > **Kontrolirano**: aktivna zastava omogućuje knjiženje računa;  
 > **Knjiženo**: zastava se automatski aktivira kada račun podržava  [postupak knjiženja](/docs/purchase/purchase-invoices/accounting/purchase-invoices-accounting);  
-> **Utovareno**: zastava postaje aktivna kada račun podržava [postupak učitavanja](/docs/purchase/purchase-invoices/insert-purchase-invoice/header-procedures/automatic-loading-on-warehouse). U slučaju da je račun stvoren iz već učitanog prijevoznog dokumenta, prisutan je opći parametar VE-PurchaseInvoices_VerifyLoadStatusDDT koji blokira zastavu Učitano i na računu.   
+> **Utovareno**: zastava postaje aktivna kada račun podržava [postupak učitavanja]header-procedures/automatic-loading-on-warehouse). U slučaju da je račun stvoren iz već učitanog prijevoznog dokumenta, prisutan je opći parametar VE-PurchaseInvoices_VerifyLoadStatusDDT koji blokira zastavu Učitano i na računu.   
 > **Otkazano**: aktivna zastava omogućuje poništenje računa.
 
 :::NAPOMENA

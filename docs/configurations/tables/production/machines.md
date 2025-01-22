@@ -24,18 +24,16 @@ Per il nuovo record, nella griglia *Macchine*, si devono inserire almeno i campi
 **Macchina**: codice macchina;  
 **Descrizione**: descrizione della macchina;  
 **Attiva**: indica se la macchina è attiva o meno, quindi se sia utilizzabile e pianificabile;  
-**Segn. oper. obblig.**: se attivo, indica che è possibile fare l’avanzamento delle lavorazioni, altrimenti, se disattivato per quella fase non sarà possibile fare l’avanzamento;   
-**Dichiarazione materiale mobile**: se attivo, il centro sarà proposto nella dichiarazione dei tempi di Fluentis Mobile; nel caso in cui i dati siano trasmessi dalla macchina a Fluentis con altri automatismi questo flag sarà disattivato;  
+**Dichiarazione materiale mobile**: se attivo, il centro sarà proposto nella dichiarazione dei tempi di Fluentis Mobile; nel caso in cui i dati siano trasmessi dalla macchina a Fluentis con altri automatismi questo flag sarà disattivato. Utilizzato solo per le personalizzazioni;  
 **Stampa etichetta**: se attivo permette di stampare un’etichetta;  
-**Produzioni contempor.**: indica la molteplicità di produzione, cioè il numero di macchine con gli stessi parametri e quindi equivalenti;  
-**Segnalazioni operai**:   
 **Centri di lavoro**: indica su quale centro di lavoro è collocata la macchina;  
 **Centro aziendale**: indica il centro di costo a cui si riferisce la macchina;  
 **Reparti**: indica il codice del reparto in cui è inserita la macchina;  
 **Classe macchina**: indica la classe della macchina (nel caso in cui la macchina sia codificata come articolo);  
 **Codice articolo macchina**: indica il codice articolo (nel caso in cui la macchina sia codificata come articolo);  
 **Sito Produzione**: nel caso di più stabilimenti indica il codice del sito produttivo in cui si trova la macchina;  
-**Descrizione sito prod.**: indica la descrizione del sito produttivo;   
+**Descrizione sito produttivo**: indica la descrizione del sito produttivo; 
+**Ubicazione**:           
 **Data acquisto**: indica la data di acquisto della macchina;  
 **Precodice cespite**: indica il precodice del cespite;  
 **Numero**: indica il numero del cespite;  

@@ -3,16 +3,47 @@ title: Fluentis Fast Start - roadmap startup nuovo ambiente operativo
 sidebar_position: 2
 ---
 
-Il **Fast Start** è una procedura progettata per semplificare e velocizzare l'inizializzazione del software gestionale, consentendo di popolare automaticamente il sistema con parametri e tabelle di base. Questa funzionalità riduce notevolmente il tempo e lo sforzo richiesto per la configurazione iniziale, evitando l'inserimento manuale di ogni singola impostazione.
+Il **Fast Start** è una funzionalità progettata per rendere rapida e semplice l'inizializzazione del gestionale Fluentis, eliminando la necessità di configurazioni manuali estese.  
+
+### Configurazione con Fast Start
+
+**Valutazione iniziale**  
+- Decidi se adottare il **Fast Start** per avviare il sistema con impostazioni preconfigurate. Questa scelta condizionerà il setup iniziale.
+
+**Funzionalità del Fast Start**  
+- Popolazione automatica di parametri di base.  
+- Configurazione semplificata per avviare rapidamente il sistema.  
+
+**Vantaggi principali**  
+- Efficienza nella configurazione iniziale.  
+- Minore rischio di errori manuali e risparmio di tempo e risorse.  
+
+**Lanciare la procedura**  
+- Avvia il **Fast Start** per applicare le impostazioni predefinite.  
+- Verifica successivamente i parametri generati per garantirne la conformità con le esigenze aziendali.
+
+
+:::tip[Dove si attiva]
+**Per lanciare la procedura**, accedere alla [**tabella Società**](/docs/configurations/tables/general-settings/company#pulsante-impostazioni-generali), entrare nella specifica società interessata e premere il tasto *Impostazioni Generali* presente nella ribbon bar.
+:::
+
+
+:::note[Info]
+La procedura è disponibile relativamente ad **ogni singola società** presente nella base dati, pertanto ad esempio la società 1 potrebbe essere inizializzata con la procedura di Fast Start, mentre la società 2 potrebbe essere configurata manualmente. 
+
+Ecco perchè il **bottone** di attivazione è posto **all'interno della singola società**.
+:::
+
+:::danger[ATTENZIONE]
+non deve essere già stato popolato il piano dei conti (in nessuna parte) e nemmeno altre tabelle coinvolte dalla procedura. Si consiglia di decidere subito ed eseguire come prima cosa questa procedura dopo l'installazione.
+
+:::
 
 ---
 <details>
 
   <summary>Fast Start (Click to expand)</summary>
   
-  Per lanciare la procedura, accedere alla tabella Società e premere il tasto *Impostazioni Generali*.
-
-  ATTENZIONE: non deve essere già stato popolato il piano dei conti (in nessuna parte) e nemmeno altre tabelle coinvolte dalla procedura. Si consiglia di decidere subito ed eseguire come prima cosa questa procedura dopo l'installazione.
 
 Tabelle coinvolte (Stored Procedure Fluentis.SH_CreateNewYear_IT):
     

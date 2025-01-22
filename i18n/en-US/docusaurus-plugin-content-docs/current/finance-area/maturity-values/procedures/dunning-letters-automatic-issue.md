@@ -1,31 +1,24 @@
 ---
-title: Automatic Dunning Letters Issue
+title: Dunning Letters Automatic Issue
 sidebar_position: 2
 ---
 
-Through this mask it is possible to set a list of customer not to be dunned, a list of maturity values excluded from dunning letters and the default dunning letter type to be created.
-
-Once having saved these settings it will be possible to activate the automatic creation button: this application will go on to create dunning letters as regards all the maturity values that fulfill specific selection criteria set.
-
-RIBBON BAR: it represents the Form menu, that is the area in which it is possible to perform actions linked to the procedure in use. The list of features is the following:
+This procedure, an alternative to the similar *Dunning Letters Issue*, acts massively by generating dunned values for all overdue items according to the parameters (days of delay, etc.) established by the type of dunned value that is selected. Therefore, there is no detailed control and selection of the mat. values, as is the case with the *Dunning Letters Issue* procedure.
 
 
+In this interface, it is possible to set up a list of customers not to be dunned, a list of mat. values excluded from dunned values, and the default type of dunned value to create.
 
-| Function | Meaning |
+Once these settings are saved, the automatic creation button will be activated: with this, the application will proceed to create dunned values for all mat. values that meet the established selection criteria.
+
+These criteria are set in the Parameters section through the use of flags. It is also possible to filter customers by ***Finance Category*** (a field present in the registers to create groupings).
+
+At the end of the creation, the dunned maturity values are visible in the relevant form, while the dunning letters can be printed and sent using the specific print option (Finance > Mat. Values > Prints > DUnning Letters)
+
+| Function | Extended Description |
 | --- | --- |
-| Save | Button to save the dunning letters generation. |
-| Dunning Letters Generation | Button to perform the dunning letters generation of maturity values that fulfill the specific selection criteria set. |
-| Search Customer to Be Ignored | Button to search customers that have to be excluded from the automatic generation of dunning letters. |
-| Delete Customers | Button to delete customers from section of customers list, excluded from dunning letters. |
-| Search Maturity Values to be Ignored | Button to search maturity values that have to be excluded. |
-| Delete Maturity Values | Button to delete previously inserted maturity values to be excluded. |
-
-FILTER AREA: the filter area contains the list of possible data types thanks to which it is possible to perform a selection, a research on total of the inserted dunning letters, typically filters have always 'AND' condition and it is possible to specify more search filters at the same time.
-
-RESULT GRID: the result grid represents the list of possible dunned maturity values which correspond to filter data, above mentioned. After having specified values through which to obtain a search on dunned maturity values, the user, by clicking on [Search] button on the related Ribbon, will obtain the list of the desired dunned maturity values on the result grid.
-
-
-
-
-
-
+| Save | Button to save the Dunning Letters Issue. |
+| Dunning Letters Issue | Button to perform the Dunning Letters Issue for mat. values that meet the established selection criteria. |
+| Search customer to be Ignored | Button to search for customers intended to be ignored from automatic Dunning Letters Issue. |
+| Delete customers | Button to delete customers from the excluded customer list for dunned values. |
+| Search maturity values to be ignored | Button to search for mat. values intended to be ignored. |
+| Delete maturity values | Button to delete previously selected mat. values to exclude. |

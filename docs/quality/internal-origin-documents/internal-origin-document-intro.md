@@ -29,11 +29,11 @@ import Link from '@docusaurus/Link';
 ## Per iniziare ad utilizzare   
 
 i **Documenti di origine interna**:
-- definire una [*Categoria Documento di orgine interna*](/docs/configurations/tables/quality/documents/internal-document-category)   
-- inserire un nuovo [*Documento di orgine interna*](/docs/quality/internal-origin-documents/internal-origin-document/internal-origin-document-management)   
+- devi definire una [*Categoria Documento di orgine interna*](/docs/configurations/tables/quality/documents/internal-document-category)   
+- devi inserire un nuovo [*Documento di orgine interna*](/docs/quality/internal-origin-documents/internal-origin-document/internal-origin-document-management)   
 
 le **Check-list**:
-- inserire una nuova [*Check-list*](/docs/quality/internal-origin-documents/check-list)   
+- devi inserire una nuova [*Check-list*](/docs/quality/internal-origin-documents/check-list)   
 
 
 ## Collegamenti con altri moduli

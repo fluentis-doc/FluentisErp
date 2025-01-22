@@ -1,12 +1,8 @@
 ---
-title: Deduction Paying-in
+title: Withholding Tax Paying-in
 sidebar_position: 2
 ---
 
-In the current mask it is possible to filter payments, performed month by month, in order to assign them the references of the paying-in through a F24 italian model, without entering into each compensation with the task to insert them one to one. Once having filtered and selected compensations, it is necessary to set data in the 'paying-in' section and then to assign them thanks to the use of 'Set paying-in' button.
+In this form, it is possible to filter the payments made in the month in order to assign, in bulk, to the selected ones the references of the payment with model F24, without having to enter each payment to insert them one by one. Once the payments are filtered and selected, the data is set in the 'payment' section, and then assigned with the 'Set Payment' button.
 
-
-
-
-
-
+![](/img/it-it/finance-area/professional-men/search-compensations/withholding-tax-paying-in/image01.png)

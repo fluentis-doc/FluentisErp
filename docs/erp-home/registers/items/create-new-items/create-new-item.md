@@ -22,7 +22,7 @@ oppure
 
 Si aprirà la form **Anagrafica articolo** composta da una sezione nella quale si andranno a definire le *caratteristiche obbligatorie* dell'articolo e da una sezione inferiore composta da diversi Tab che ne raggruppano le *caratteristiche specifiche*.
 
-Le caratteristiche fondamentali e obbligatorie che ogni articolo deve avere e che troviamo nella prima parte della form sono: la [**Classe**](/docs/guide/common/glossary/glossary-intro#item-class), il [**Codice**](/docs/guide/common/glossary/glossary-intro#item-code), una breve **Descrizione** e l'[**Unità di misura**](/docs/guide/common/glossary/glossary-intro#unit-of-measurement).
+Le caratteristiche fondamentali e obbligatorie che ogni articolo deve avere e che troviamo nella prima parte della form sono: la [**Classe**](/docs/guide/common/glossary/glossary-intro#item-class) (massimo 3 caratteri), il [**Codice**](/docs/guide/common/glossary/glossary-intro#item-code) (massimo 50 caratteri), una breve **Descrizione** e l'[**Unità di misura**](/docs/guide/common/glossary/glossary-intro#unit-of-measurement).
 
 :::note
 L'insieme della classe e del codice deve essere univoco per quello specifico articolo.
