@@ -1,28 +1,26 @@
 ---
-title: Visualizzazione Gantt
+title: Vizualizare Gantt (Visualizzazione Gantt)
 sidebar_position: 1
 ---
 
-:::important A cosa serve
-La funzione del **diagramma di Gantt** in Fluentis è uno strumento essenziale per la pianificazione e il monitoraggio dei progetti. Essa consente di visualizzare graficamente le attività programmate, evidenziando le tempistiche e le relazioni tra le varie fasi del progetto.     
-Gli utenti possono gestire le risorse, regolare le scadenze e ottimizzare i processi produttivi, migliorando l'efficienza e l'efficacia operativa. Grazie a un'interfaccia intuitiva, il diagramma di Gantt facilita l'identificazione di eventuali ritardi o colli di bottiglia, supportando una gestione proattiva e strategica dei progetti.
+:::important Utilizare (A cosa serve)
+Funcționalitatea **diagramului de Gantt (diagramma di Gantt)** în Fluentis este un instrument esențial pentru planificarea și monitorizarea proiectelor. Aceasta permite vizualizarea grafică a activităților programate, evidențiind timpii și relațiile dintre diferitele faze ale proiectului.     
+Utilizatorii pot gestiona resursele, regla termenele și optimiza procesele productive, îmbunătățind eficiența și eficacitatea operațională. Datorită unei interfețe intuitive, diagramul de Gantt facilitează identificarea eventualelor întârzieri sau blocaje, susținând o gestionare proactivă și strategică a proiectelor.
 :::
 
-Il **diagramma di Gantt** permette di rappresentare graficamente il posizionamento nel tempo della commessa di produzione fino al dettaglio di ogni singola fase di lavorazione ed il suo avanzamento.
-Lo strumento permette di gestire più simulazioni senza intaccare le informazioni dei documenti operativi, fino al momento della conferma di una di esse.
+**Diagramul de Gantt (diagramma di Gantt)** permite reprezentarea grafică a poziționării în timp a comenzii de producție până la detaliul fiecărei faze de lucru și avansarea acesteia.
+Instrumentul permite gestionarea mai multor simulări fără a afecta informațiile documentelor operative, până la momentul confirmării uneia dintre ele.
 
-Nella griglia di ricerca è possibile filtrare e visualizzare le simulazioni generate in una struttura ad albero, dove il padre è la simulazione principale, mentre i rami sono gli snapshot, quindi delle sotto-simulazioni nate dalla modifica della simulazione principale.
+În tabelul de căutare este posibil să filtrați și să vizualizați simulările generate într-o structură de arbore, unde părintele este simularea principală, iar ramurile sunt snapshot-urile, deci sub-simulări născute din modificarea simulării principale.
 
-*Campi specifici*:
+*Campuri specifice*:
 
-> **Numero**: indica il numero associata alla simulazione Gantt;     
-> **Nome**: indica il nome associato alla simulazione Gantt (di default viene proposto il nome dell'utente e data ed ora di creazione);    
-> **Data inserimento**: indica la data di inserimento della simulazione Gantt;      
-> **Tipo**: indica il codice del [Tipo Simulazione Gantt](/docs/configurations/tables/production/crp-gantt-simulation-type);           
-> **Descrizione** tipo: indica la descrizione del [Tipo Simulazione Gantt](/docs/configurations/tables/production/crp-gantt-simulation-type);        
-> **Blocca documento**: indica che tutti documenti che sono inclusi nella creazione della simulazione Gantt vengono bloccati;  
-> **Valida**: indica che la simulazione sia è stata confermata e quindi le modifiche effettuate nel Gantt sono state riportate nei documenti collegati;      
-> **Snapshot**: se attivo, indica the questo è un *Tipo Simulazione Gantt* di tipologia Snapshot;
-> **Operatore**: indica l'utente della simulazione Gantt.
-
-
+> **Număr (Numero)**: indică numărul asociat simulării Gantt;     
+> **Nume (Nome)**: indică numele asociat simulării Gantt (implicit este propus numele utilizatorului și data și ora creării);    
+> **Data inserării (Data inserimento)**: indică data inserării simulării Gantt;      
+> **Tip (Tipo)**: indică codul [Tip Simulare Gantt (Tipo Simulazione Gantt)](/docs/configurations/tables/production/crp-gantt-simulation-type);           
+> **Descriere tip (Descrizione tipo)**: indică descrierea [Tip Simulare Gantt (Tipo Simulazione Gantt)](/docs/configurations/tables/production/crp-gantt-simulation-type);        
+> **Blochează document (Blocca documento)**: indică faptul că toate documentele incluse în crearea simulării Gantt sunt blocate;  
+> **Validă (Valida)**: indică faptul că simularea a fost confirmată și, prin urmare, modificările efectuate în Gantt au fost raportate în documentele legate;      
+> **Snapshot**: dacă este activ, indică faptul că acesta este un *Tip Simulare Gantt* de tipologie Snapshot;
+> **Operator (Operatore)**: indică utilizatorul simulării Gantt.
