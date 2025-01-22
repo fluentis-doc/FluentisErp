@@ -1,37 +1,37 @@
 ---
-title: Definizione piano dei centri aziendali
+title: Definition of Corporate Center Plan 
 sidebar_position: 2.1
 ---
 
-Il piano dei [***Centri aziendali***](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-centers) è il primo punto da affrontare ed anche quello fondamentale per una corretta impostazione della contabilità analitica/gestionale: per poter codificare i centri dovremo definire innanzi tutto le ***Dimensioni*** di analisi e poi le ***Categorie dei centri aziendali***.
+The plan of [***Corporate Centers***](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-centers) is the first point to address and also fundamental for a correct setup of analytic/managerial accounting: to code the centers, we must first define the ***Dimensions*** of analysis and then the ***Categories of corporate centers***.
 
-:::tip Nota
-In società senza l'opzione *Controlling* attiva è consentita la creazione di Centri di costo senza una dimensione di riferimento e senza una categoria di centro
+:::tip Note
+In companies without the *Controlling* option active, it is allowed to create Cost Centers without a reference dimension and without a center category.
 :::
 
-La [***Dimensione***](/docs/controlling/controlling-parametrization/controlling-specific-settings/dimension) è sostanzialmente un criterio coerente di suddivisione di COSTI e RICAVI all’interno dell’azienda. La contabilità analitica avrà tipicamente *sempre* una dimensione INDUSTRIALE/DIREZIONALE, che è tipica di tutte le aziende, dove andiamo a suddividere l’azienda nelle varie entità funzionali: in questa dimensione, in sostanza, avremo CENTRO AZIENDALE AMMINISTRATIVO, IL CENTRO DIREZIONE, IL CENTRO DELL’UFFICIO TECNICO, IL CENTRO DEL COMMERCIALE e poi i vari CENTRI PRODUTTIVI ovvero i centri che identificano le singole macchine o raggruppamenti di macchine piuttosto che i gruppi manodopera.
-Caso tipico di dimensione alternativa sono i PROGETTI ovvero le aziende che lavorano su PROGETTO o commessa; i progetti sono una dimensione parallela alla dimensione direzionale, e questa dimensione dei progetti accoglierà tutti i costi e ricavi DIRETTI di progetto, mentre riceverà dalla dimensione industriale/direzionale quelli che sono i centri ausiliari e generici come quelli citato poco fa (direzione, amministrazione ecc.): possiamo infatti, attraverso i cost driver, ribaltare i dati da una dimensione all’altra. 
-Possiamo anche definire dimensioni alternative dove l’azienda vuole assegnare valori separandoli dalle logiche normali, perché vuole tenere nota di alcuni tipi di costi: es. una dimensione fiere piuttosto che investimenti, o budget d'acquisto.
+The [***Dimension***](/docs/controlling/controlling-parametrization/controlling-specific-settings/dimension) is essentially a coherent criterion for dividing COSTS and REVENUES within the company. Analytic accounting typically will *always* have an INDUSTRIAL/MANAGERIAL dimension, which is typical of all companies, where we divide the company into various functional entities: in this dimension, we essentially have ADMINISTRATIVE CORPORATE CENTER, MANAGEMENT CENTER, TECHNICAL OFFICE CENTER, COMMERCIAL CENTER, and then the various PRODUCTION CENTERS or the centers that identify individual machines or groupings of machines rather than labor groups. 
+A typical alternative dimension is PROJECTS, for companies working on PROJECT or assignment; projects are a dimension parallel to the managerial dimension, and this dimension of projects will encompass all DIRECT costs and revenues of the project, while receiving from the industrial/managerial dimension those that are auxiliary and generic centers such as those mentioned earlier (management, finance, etc.): we can, in fact, through cost drivers, shift data from one dimension to another. 
+We can also define alternative dimensions where the company wants to assign values separating them from normal logics, as it wants to keep track of certain types of costs: e.g., a fair dimension rather than investments, or purchase budgets.
 
-:::tip Nota
-Queste dimensioni alternative, che non impattano nelle logiche del modello industriale/direzionale piuttosto che di progetto, sono normalmente elementi a se stante che possono nascere anche in seguito alla configurazione iniziale.
+:::tip Note
+These alternative dimensions, which do not impact the logics of the industrial/managerial model or project, are normally standalone elements that can also arise after the initial configuration.
 :::
 
 
-La seconda caratteristica obbligatoria dei centri di costo è quella della ***Categoria dei centri aziendali***: a livello di *dimensione industriale/direzioneale*, le tipologie che possiamo classificare per l’impostazione dei centri sono sostanzialmente cinque
+The second obligatory characteristic of cost centers is the ***Category of corporate centers***: at the level of *industrial/managerial dimension*, the types that we can classify for the setup of centers are essentially five:
 
-***1)	CENTRI PRODUTTIVI O DIRETTI:*** sono centri che intervengono direttamente nella lavorazione del prodotto e/o servizio quindi sono i centri di trasformazione veri e propri. Fondamentale è una corretta individuazione di questi centri in quanto se noi sbagliamo l’aggregazione dei costi di questi centri produttivi corriamo il rischio di ottenere delle tariffe parametriche degli indici di costo dei relativi centri tramite le quali andiamo poi a “costificare” i nostri prodotti o le nostre commesse e a determinarne la relativa marginalità che può fuorviare nell’analisi della redditività. Non possiamo ad esempio aggregare macchine o impianti di costo molto diverso in quanto andremo a creare delle medie ponderate. Allo stesso modo non possiamo mettere nello stesso centro macchine e impianti presidiate dall’uomo insieme a macchine e impianti parzialmente presidiate dalla manodopera poiché anche questo andrebbe a generare delle medie che poi ci porterebbero ad ottenere delle marginalità alterate;
+***1) PRODUCTIVE OR DIRECT CENTERS:*** these are centers that are directly involved in the processing of the product and/or service, thus they are the actual transformation centers. It is fundamental to correctly identify these centers, as if we mistakenly aggregate the costs of these productive centers, we run the risk of obtaining parametric rates for the cost indices of the relevant centers through which we then “cost” our products or our assignments and determine their corresponding marginality, which can mislead in profitability analysis. For example, we cannot aggregate machines or plants with very different costs, as we would create weighted averages. Similarly, we cannot put in the same center machines and plants manned by humans together with machines and plants partially manned by labor, as this would also generate averages that would then lead us to obtain altered marginality.
 
-***2)	CENTRI INDIRETTI AUSILIARI:*** sono quelli necessari al funzionamento dei centri principali quindi raccolgono tutti quei costi che non sono imputabili in modo oggettivo ai centri produttivi ma sono indispensabili per il loro funzionamento. Avranno l'aggancio a ***Cost driver*** di ribaltamento sui centri produttivi/diretti, identificando un criterio adeguato di gestione;
+***2) AUXILIARY INDIRECT CENTERS:*** these are necessary for the functioning of the main centers, thus collecting all those costs that cannot be objectively attributed to the productive centers but are indispensable for their operation. They will have an attachment to ***Cost drivers*** for shift to the productive/direct centers, identifying an adequate management criterion;
 
-***3)	CENTRI INDIRETTI COMUNI:*** sono i centri di struttura detti anche centri funzionali ( ad es. commerciale, tecnico, qualità, ecc…);
+***3) COMMON INDIRECT CENTERS:*** these are structural centers also called functional centers (e.g., commercial, technical, quality, etc.);
 
-***4)	CENTRI DI PROFITTO O DI REDDITO, O DI RISULTATO ECONOMICO:*** sono i centri tramite i quali possiamo mettere in relazione RICAVI e COSTI relativi a una tipologia di reddito, che potrebbe essere una famiglia di prodotti, oppure, un canale di vendita;
+***4) PROFIT OR INCOME CENTERS, OR CENTERS OF ECONOMIC RESULT:*** these are the centers through which we can relate REVENUES and COSTS related to a type of income, which could be a family of products, or a sales channel;
 
-***5)	CENTRI VIRTUALI/COMODO:*** ci servono per gestire tutto il modello, sono centri di appoggio ai driver di ribaltamento piuttosto che centri dove scaricare dati contabili da non utilizzare nel modello.
+***5) VIRTUAL/COMFORT CENTERS:*** we use these to manage the entire model; they are support centers for the shift drivers rather than centers where to unload accounting data not to be used in the model.
 
-:::tip Nota
-La categorizzazione dei centri, oltre che avere valenza teorica sulla struttura del modello di analisi, ha anche un risvolto operativo: quando si definiscono gli agganci dei centri a livello di piano dei conti, è possibile associare ad ogni sottoconto i vari centri che possono essere valorizzati oppure più velocemente si può indicare una categoria di centri, in modo da rendere visibili all’utente nel menù a tendina di selezione solo quelli facenti parte della categoria stessa.
+:::tip Note
+The categorization of centers, in addition to having theoretical value on the structure of the analysis model, also has an operational aspect: when defining the links of the centers at the level of the chart of accounts, it is possible to associate to each detail account the various centers that may be valued, or more quickly, one can indicate a category of centers, so as to make visible to the user in the drop-down selection menu only those belonging to the same category. 
 :::
 
-Dovremo poi identificare per quali di questi centri ci serve o ci interessa calcolare una tariffa di costo, tramite l'aggancio ad ognuno di un [*Modello di riclassificazione*](/docs/controlling/reclassifications/create-reclassification-model) di cumulo dei costi e una logica di calcolo a quantità su due possibili [*Unità di misura*](/docs/controlling/controlling-parametrization/controlling-specific-settings/measure-units) o in percentuale.
+We then need to identify which of these centers require us or interest us to calculate a cost rate, by linking to each of them a [*Reclassification Model*](/docs/controlling/reclassifications/create-reclassification-model) for cumulative costs and a calculation logic based on quantity on two possible [*Units of Measure*](/docs/controlling/controlling-parametrization/controlling-specific-settings/measure-units) or as a percentage.

@@ -1,30 +1,30 @@
 ---
-title: Introduzione
+title: Introduction 
 sidebar_position: 2.0
 ---
 
-L'area Controlling si compone di una serie di moduli che possono assolvere obiettivi differenti: 
+The Controlling area consists of a series of modules that can serve different objectives: 
 
-- un primo obiettivo potrebbe essere quello di simulare, in pochi passaggi automatici, un bilancio contabile infrannuale attraverso il modulo delle *Chiusure infrannuali*. Per far questo non c'è niente di particolare da configurare in ***FluentisERP*** : basta entrare nel modulo e creare una nuova Chiusura conti infrannuale che calcola i saldi extracontabili riprendendoli dalla contabilità, per poi aggiungere  con le varie procedure automatiche ratei, risconti, ammortamenti, rimanenze, fatture da ricevere, ed infine eventuali ulteriori operazioni manuali di completamento del bilancio. Non resterà altro che procedere alla stampa del Bilancio ottenuto, magari consolidando più
- società in un unico prospetto intercompany tramite la procedura di *Consolidamento*.
+- a primary objective could be to simulate, in a few automatic steps, a mid-year balance sheet through the *Mid-Year Closures* module. To do this, there is nothing special to configure in ***FluentisERP***: just enter the module and create a new Mid-Year Closure that calculates the off-balance sheet balances by retrieving them from accounting, then adding various automatic procedures for accruals, deferrals, depreciation, inventory, invoices to be received, and finally any further manual operations to complete the balance sheet. The only thing left to do is to print the obtained Balance Sheet, perhaps consolidating multiple companies into a single intercompany statement through the *Consolidation* procedure.
 
-- ma possiamo estendere l'uso di questi dati aggregandoli e riclassificandoli attraverso il modulo delle *Riclassificazioni*, all'interno del quale l'utente può sfruttare alcuni modelli preinstallati tramite il [***Fast start***](/docs/guide/fast-start) piuttosto che costruirsi i propri [*modelli*](/docs/controlling/reclassifications/create-reclassification-model) liberamente. Avremo qui a disposizione sia le stampe di questi riclassificati, che una potente funzione di comparazione dove mettere a confronto liberamente gli N riclassificati memorizzati, anche di anni precedenti, al fine di valutarne gli scostamenti. L'utente dovrà fare solo attenzione ad allineare i modelli già preconfigurati con gli eventuali codici di Piano dei conti che dovesse aver personalizzato rispetto al [***Fast start***](/docs/guide/fast-start) iniziale.
-Ma siamo ancora ad un livello *contabile* di controlling.
 
-- possiamo poi andare a configurare un vero e proprio sistema di Controllo di gestione, basato sulla struttura multilivello e [*multidimensionale*](/docs/controlling/controlling-parametrization/controlling-specific-settings/dimension) dei [***Centri aziendali***](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-centers). Anche qui, però, si aprono più strade:
-    - Potremo limitarci a configurare un'unica dimensione di analisi con una lista di centri da collegare alle sole anagrafiche d'uso contabile e quindi sostanzialmente utilizzare nuovamente solo i due moduli già citati delle *Chiusure infrannuali* e i *Riclassificati* (questa volta con un modello personalizzato basato sui centri aziendali specifici definiti in azienda), limitando quindi l'impatto della configurazione alle sole tabelle *Dimensione*, *Centri aziendali*, *Tipi area* e *Area*;
-    - piuttosto che spingerci a integrare nelle nostre analisi dati quantitativi extracontabili o di produzione (*ore* e *quantità*), ammortamenti tecnici, definendo magari anche più dimensioni di analisi (per linea di business, piuttosto che per progetto/commessa) ed ottenere sia tariffe consuntive dei centri produttivi che un conto economico a margine di contribuzione, o magari una consuntivazione a full costing dei vari progetti/commesse di vendita.
-A seconda della complessità aziendali e dei risultati richiesti, entreranno quindi in gioco le tabelle dei [*Cost driver*](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-drivers), degli agganci dei centri aziendali nelle *macchine* e *gruppi manodopera* piuttosto che nelle varie wbs di progetto e attività del personale.
+- but we can extend the use of this data by aggregating and reclassifying it through the *Reclassifications* module, within which the user can utilize some pre-installed templates via the [***Fast start***](/docs/guide/fast-start) or build their own [*models*](/docs/controlling/reclassifications/create-reclassification-model) freely. Here we will have both the prints of these reclassifications available, as well as a powerful comparison function where we can freely compare the N reclassifications stored, even from previous years, in order to evaluate their deviations. The user will just need to be careful to align the already pre-configured models with any account plan codes they may have customized compared to the initial [***Fast start***](/docs/guide/fast-start).
+But we are still at an *accounting* level of controlling.
 
-- a questi risultati poi 
-    - potremo agganciare la gestione di un *Budget* per centro di costo, al fine di valutare gli scostamenti tra il previsionale e il consuntivo simulato del periodo d'interesse
-    - potremo allineare le simulazioni di *Costo prodotto*, basate normalmente sugli standard di costo agganciate alle distinte base.
+- we can then configure a real Management Control system, based on the multi-level and [*multidimensional*](/docs/controlling/controlling-parametrization/controlling-specific-settings/dimension) structure of the [***Corporate Centers***](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-centers). Here, too, however, multiple paths open up:
+    - We can limit ourselves to configuring a single analysis dimension with a list of centers to connect to the accounting usage records and thus essentially use again only the two modules already mentioned, *Mid-Year Closures* and *Reclassifications* (this time with a customized model based on the specific corporate centers defined in the company), thus limiting the impact of the configuration to only the tables *Dimension*, *Corporate Centers*, *Area Types*, and *Area*;
+    - or we can push ourselves to integrate off-balance sheet or production quantitative data (*hours* and *quantities*), technical depreciation, perhaps defining more analysis dimensions (for line of business, or for project/job order) and obtaining both actual rates of production centers and a contribution margin income statement, or perhaps a full costing of the various sales projects/job orders.
+Depending on the complexity of the company and the required results, the tables of [*Cost drivers*](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-drivers), the connections of the business centers in *machines* and *labor groups*, or in the various project WBS and personnel activity will come into play.
 
-Completa l'area il modulo delle *Previsioni di vendita*
+- to these results then 
+    - we can attach the management of a *Budget* for cost center, in order to evaluate the deviations between the projected and the simulated actual of the period of interest
+    - we can align the simulations of *Product Cost*, normally based on the cost standards linked to the bill of materials.
 
-In questa sezione di panoramica generale andremo a dare le indicazioni logiche dei passi da seguire per chi vuole implementare un sistema di controllo di gestione ***completo***.
+Completing the area is the *Sales Forecast* module.
 
-:::tip Nota
-Non è quindi facile definire un percorso formativo lineare ed univoco dell'area, visto che magari nella stessa azienda due utenti differenti potrebbero utilizzare moduli e opzioni differenti fra loro.
-Cercheremo quindi, dove necessario, di dettagliare i vari possibili obiettivi d'uso delle varie procedure.
+In this general overview section, we will provide logical indications of the steps to follow for those who want to implement a ***complete*** management control system.
+
+:::tip Note
+It is therefore not easy to define a linear and univocal training path for the area, as perhaps in the same company two different users might use different modules and options among themselves.
+We will therefore try, where necessary, to detail the various possible usage objectives of the various procedures.
 :::

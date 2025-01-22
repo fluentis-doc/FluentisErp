@@ -1,23 +1,23 @@
 ---
-title: Analisi costo prodotto/progetto
+title: Product/Project Cost Analysis
 sidebar_position: 2.8
 ---
 
 ![](/img/it-it/controlling/analysis.png)
 
 
-L’ultimo punto, che rappresenta l’obiettivo finale del nostro controllo almeno per quanto riguarda la parte di contabilità industriale è l’identificazione delle varie marginalità dei nostri prodotti o dei nostri progetti/commessse. Generalmente si impiegano quattro configurazioni di costo: 
+The last point, which represents the final objective of our control at least regarding the industrial accounting part, is the identification of the various margins of our products or our projects/orders. Generally, four cost configurations are employed: 
 
-***COSTO PRIMO:*** che prende in considerazione solamente quei costi di diretta imputazione al prodotto o alla commessa. Generalmente sono materiali, manodopera, lavorazioni esterne, ammortamenti specifici quindi tutto ciò che oggettivamente si riesce ad attribuire all’oggetto di calcolo che sia prodotto o commessa.
+***FIRST COST:*** which considers only those costs directly attributable to the product or project. Generally, these are materials, labor, external processing, specific depreciation, thus everything that can objectively be attributed to the calculation object, whether it be product or project.
 
-***COSTO INDUSTRIALE:*** rappresenta la seconda configurazione attraverso la quale al costo primo aggiungiamo le quote di costi generali industriali, i quali, rappresentano quei costi che non sono di diretta imputazione ma ci servono per far funzionare correttamente la produzione stessa.
+***INDUSTRIAL COST:*** represents the second configuration through which we add general industrial cost shares to the first cost, which are those costs that are not directly allocatable but are necessary for the proper functioning of production itself.
 
-***COSTO COMPLESSIVO:*** aggiunge al costo industriale i cosiddetti costi di struttura che sono quelli generali, amministrativi, commerciali, finanziari.
+***TOTAL COST:*** adds to the industrial cost the so-called structural costs, which are general, administrative, commercial, and financial.
 
-***COSTO ECONOMICO TECNICO:*** rappresenta l’ultima configurazione. Il costo economico tecnico non sempre viene utilizzato. La differenza tra il costo complessivo e il costo economico tecnico sta nel fatto che noi aggiungiamo degli oneri figurativi. Ad esempio invece di considerare la quota di ammortamento del mio immobile tecnico considero una quota di locazione di affitto di mercato, anche se, è di proprietà dell’azienda stessa. Altro esempio è quello della prestazione del proprietario della ditta che generalmente non viene quantificata in quanto rientra nel capitolo utili ma in questo caso viene quantificata perché considerata come se fosse un dipendente a tutti gli effetti (quindi si da uno stipendio per la prestazione che lo stesso svolge nell’ambito aziendale).
+***TECHNICAL ECONOMIC COST:*** represents the last configuration. The technical economic cost is not always used. The difference between the total cost and the technical economic cost lies in the fact that we add imputed charges. For example, instead of considering the depreciation charge of my technical property, I consider a market rental amount, even though it is owned by the company itself. Another example is the performance of the owner of the company, which is generally not quantified as it falls under the profit chapter, but in this case, it is quantified because it is considered as if he were an employee in all respects (thus providing a salary for the performance he carries out within the company).
 
-In questo senso potremo creare liberamente gli N [*Modelli di riclassificazione*](/docs/controlling/reclassifications/create-reclassification-model) per il controlling, con le configurazioni di costo che si ritengono più consone alla realtà aziendale.
+In this sense, we can freely create N [*Reclassification Models*](/docs/controlling/reclassifications/create-reclassification-model) for controlling, with the cost configurations deemed most suitable for the business reality.
 
-:::tip Nota
-Per creare modelli alternativi è facile procedere alla duplicazione di uno già esistente per estenderlo e considerare costi aggiuntivi
+:::tip Note 
+To create alternative models, it is easy to duplicate an already existing one to extend it and consider additional costs.
 :::

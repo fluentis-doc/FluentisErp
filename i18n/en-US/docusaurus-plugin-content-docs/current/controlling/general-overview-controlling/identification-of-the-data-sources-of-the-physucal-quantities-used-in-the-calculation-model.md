@@ -1,15 +1,15 @@
 ---
-title: Individuazione delle fonti dati delle grandezze fisiche utilizzate nel modello di calcolo 
+title: Identification of Data Sources for Physical Quantities Used in the Calculation Model 
 sidebar_position: 2.4
 ---
 
-:::tip Nota
-questa sezione è strettamente legata all'applicazione dei driver estesi del controlling
+:::tip Note
+This section is closely related to the application of extended controlling drivers
 :::
 
-Una volta che abbiamo identificato la necessità di gestire driver di ribaltamento su quantità fisiche sorgerà la necessità di individuare, come quinto step, le fonti da cui possiamo attingere i valori di queste grandezze fisiche: se parliamo di ore macchina, ore uomo, piuttosto che di tonnellate o altre unità dobbiamo anche individuare dove andiamo ad estrapolarle, così come le [*Unità di misura*](/docs/controlling/controlling-parametrization/controlling-specific-settings/measure-units) che si vogliono utilizzare. Generalmente l’ambiente è quello di produzione e, se parliamo di ore macchina ed ore uomo, la fonte sono gli avanzamenti di produzione attraverso i quali siamo in grado mensilmente di andare a rilevare a consuntivo le ore uomo e le ore macchina impiegate per i nostri centri. Ma potrebbe anche essere un dato disponibile in un sistema esterno, dal quale ottenere un file excel da importare facilmente in ***FluentisERP*** tramite l'apposita procedura; oppure potrebbe essere ottenuta tramite la rilevazione delle ore del personale degli uffici tramite il caricamento delle ore nella Dichiarazione ore di progetto; oppure un caricamento generico manuale di inizio anno, da replicare o spalmare in modo proporzionato a seconda della *distribuzione periodi* associata al movimento fisico.
+Once we have identified the need to manage rollover drivers on physical quantities, the necessity will arise, as a fifth step, to identify the sources from which we can draw the values of these physical quantities: whether we are talking about machine hours, man hours, or tons, we must also identify where we will extract them, as well as the [*Units of Measure*](/docs/controlling/controlling-parametrization/controlling-specific-settings/measure-units) that we want to use. Generally, the environment is that of production and, when we talk about machine hours and man hours, the source is the progress reports through which we can capture the man hours and machine hours used for our centers on a monthly basis. But it could also be data available in an external system, from which we can obtain an Excel file to easily import into ***FluentisERP*** via the appropriate procedure; or it could be obtained through the recording of office personnel hours by entering the hours in the Project Hours Declaration; or a generic manual entry at the beginning of the year, to be replicated or proportionally distributed according to the *period distribution* associated with the physical movement.
 
-:::tip Nota
-L'elaborazione dei [*Cost driver*](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-drivers) basati sulle quantità, come tutti i cost driver, prevede di default il blocco dell'elaborazione quando la quantità necessaria per la ripartizione del dato d'origine non è presente in uno dei periodi che si sta elaborando. Questo settaggio è utile per non dimenticare la valorizzazione del dato d'origine, soprattutto quando questo è legato ad un inserimento manuale e non da ripresa dati da produzione.
-E' comunque possibile disabilitare il blocco per applicare una media dei valori esistenti (si veda la *gestione errori* nei cost driver) quando ci si trovasse in casi dove può effettivamente mancare una quantità in un periodo (ad es. in periodi di chiusura aziendale tipo agosto)
+:::tip Note
+The processing of [*Cost Drivers*](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-drivers) based on quantities, like all cost drivers, by default blocks processing when the necessary quantity for the allocation of the source data is not present in one of the periods being processed. This setting is useful to ensure the source data is valued, especially when it is linked to a manual entry and not data retrieval from production. 
+However, it is possible to disable the block to apply an average of the existing values (see *error management* in cost drivers) when facing cases where a quantity may actually be missing in a period (e.g., during company closure periods like August).
 :::

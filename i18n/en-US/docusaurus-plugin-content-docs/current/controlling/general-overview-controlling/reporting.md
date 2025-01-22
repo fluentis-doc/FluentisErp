@@ -1,13 +1,13 @@
 ---
-title: Reportistica
+title: Reporting 
 sidebar_Position: 2.9
 --- 
 
-Possiamo suddividere la reportistica in due tipologie: 
+We can divide reporting into two types:
 
-***RENDICONTO ECONOMICO AZIENDALE (REPORTISTICA AZIENDALE):*** il classico conto economico a margine di contribuzione piuttosto che a valore aggiunto o a valore di produzione ottenuta o venduta;  
-***RENDICONTO ECONOMICO DI CENTRO:*** tramite il quale in funzione del cost driver di misurazione del centro siamo in grado di determinare la nostra tariffa parametrica che, per quanto riguarda i centri produttivi è quasi sempre euro/ora. Questa tariffa la andremo ad impiegare per la costificazione a livello di commessa o di prodotto dei tempi impiegati per la trasformazione medesima.
+***CORPORATE INCOME STATEMENT (REPORTING CORPORATE):*** the classic income statement based on contribution margin rather than added value or produced/sold value;   
+***CENTER INCOME STATEMENT:*** through which, based on the cost driver for measuring the center, we are able to determine our parametric rate which, regarding production centers, is almost always euro/hour. We will use this rate for cost allocation at the level of job orders or product regarding the time spent for the transformation.
 
-Naturalmente questa reportistica dovrà avere anche la possibilità di confrontare periodi o orari diversi per poter fare un minimo di analisi degli scostamenti. Per esempio, per aree diverse potremmo confrontare un consuntivo rispetto a un budget.
+Naturally, this reporting should also have the ability to compare different periods or times to enable a minimum analysis of variances. For example, for different areas, we could compare actual results against a budget.
 
-Per le aziende che valorizzano la [*dimensione progetti/commesse*](/docs/controlling/controlling-parametrization/controlling-specific-settings/dimension) sarà disponibile la procedura di stampa del consuntivo di progetto, sempre basato su un [*Modello di riclassificazione*](/docs/controlling/reclassifications/create-reclassification-model) specifico.
+For companies that value the [*project/job orders dimension*](/docs/controlling/controlling-parametrization/controlling-specific-settings/dimension), the procedure for printing the project report, always based on a specific [*Reclassification Model*](/docs/controlling/reclassifications/create-reclassification-model), will be available.
