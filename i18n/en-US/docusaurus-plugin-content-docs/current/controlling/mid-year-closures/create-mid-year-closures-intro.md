@@ -85,82 +85,82 @@ This type of adjustment records is done automatically only for movements of the 
 
 The reference for adjustments/integrations is to the **competence date range** entered in the journal records (and in the cost/profit centers for the analytical part).
 
-**Automatic adjustment entries (Scritture di rettifica in automatico)**: setting the flag will activate the section for automatic adjustments. It is necessary to set the reason that will identify the operation. Also here, to adjust the CDC/CDP movements, it will be necessary for the reason to foresee their management.
+**Automatic adjusting entry**: setting the flag will activate the section for automatic adjustments. It is necessary to set the template that will identify the operation. Also here, to adjust the CDC/CDP movements, it will be necessary for the template to foresee their management.
 
 The recommended settings are to use the **group by registration** option and, above all, the **solar calendar**.
 
 :::tip Note
-The sub-accounts of deferral to be used will be those entered in the chart of accounts corresponding to the individual cost/revenue sub-account or the generic sub-account entered in the accounting parameters for the year of the interim closure itself.
+The detail accounts of deferral to be used will be those entered in the chart of accounts corresponding to the individual cost/revenue detail account or the generic detail account entered in the accounting parameters for the year of the mid-year closure itself.
 :::
 
-This flag automatically creates what the user can also manage separately after processing the closure balance in the dedicated *Adjustment Entries* procedure always referred to the interim closures menu (*procedure*).
+This flag automatically creates what the user can also manage separately after processing the closure balance in the dedicated *Adjustment Records* procedure always referred to the mid-year closures menu (*procedure*).
 
-**Automatic integration entries (Scritture di integrazione in automatico)**: setting the flag will activate the section for automatic integrations. It is necessary to set the reason that will identify the operation **and the maturity start date**. 
+**Automatic integration entry**: setting the flag will activate the section for automatic integrations. It is necessary to set the template that will identify the operation **and the accrual start date**. 
 
-Also here, to integrate the CDC/CDP movements, it will be necessary for the reason to foresee their management.
+Also here, to integrate the CDC/CDP movements, it will be necessary for the template to foresee their management.
 
 The default setup of the solar calendar is what is recommended to use.
 
-With this flag, the program will verify, **starting from the *Maturity Start Date for Integration Entries*,** the cost/revenue lines present in accounting and not included in the closure (i.e., entries outside the set registration/maturity dates), to create accruals for the days within the set maturity date ranges for the closure.
+With this flag, the program will verify, **starting from the *Accrual start date for ledger integration*,** the cost/revenue lines present in accounting and not included in the closure (i.e., records outside the set registration/accrual dates), to create accruals for the days within the set acrrual date ranges for the closure.
 
 :::tip Note
-The sub-accounts of accrual to be used will be those entered in the chart of accounts corresponding to the individual cost/revenue sub-account or the generic sub-account entered in the accounting parameters for the year of the interim closure itself. 
-If the cost/revenue has economic maturity **entirely included in the interest range of the closure** and is in an accounting entry with the header sub-account valued, then Fluentis assumes it is an entry of an invoice to be received/sent and will use these sub-accounts taking them from the customer/supplier registry or the accounting parameters of the selected year, instead of the accrual sub-account.
+The detail accounts of accrual to be used will be those entered in the chart of accounts corresponding to the individual cost/revenue detail account or the generic detail account entered in the accounting parameters for the year of the mid-year closure itself. 
+If the cost/revenue has economic competence **entirely included in the interest range of the closure** and is in a ledger record with the header detail account valued, then Fluentis assumes it is an record of an invoice to be received/sent and will use these detail accounts taking them from the customer/supplier register or the accounting parameters of the selected year, instead of the accrual detail account.
 :::
 
-This flag automatically creates what the user can also manage separately after processing the closure balances in the dedicated *Integration Entries* procedure.
+This flag automatically creates what the user can also manage separately after processing the closure balances in the dedicated *Integration Records* procedure.
 
 :::danger IMPORTANT
-Particular attention must be given to the **maturity start date** to be set. 
+Particular attention must be given to the **accrual start date** to be set. 
 
 Normally, this date will be set equal to the date of the last account opening recorded in accounting. 
 
-Example: if we are creating the closure for the first quarter of the year, the date range for the economic section will typically be 01/01/year X – 31/03/year X, and if the account re-opening of the previous year is present, then within this range there will directly be the transfer to the cost/revenue of the accruals recorded in the 'year X-1' balance and therefore the start date for the integrations will be set as 01/01/year X so that the software checks if there are records with maturity in the previous quarter after 31/03.
+Example: if we are creating the closure for the first quarter of the year, the date range for the economic section will typically be 01/01/year X – 03/31/year X, and if the account re-opening of the previous year is present, then within this range there will directly be the transfer to the cost/revenue of the accruals recorded in the 'year X-1' balance and therefore the start date for the integrations will be set as 01/01/year X so that the software checks if there are records with competence in the previous quarter after 03/31.
 
-**If the re-opening is NOT present**, however, it will be necessary to set the start date as 01/01/**year X-1** **to include as well, for maturity, the movements that would have been subject to re-opening (accruals and deferrals) from the previous year.** 
+**If the re-opening is NOT present**, however, it will be necessary to set the start date as 01/01/**year X-1** **to include as well, for competence, the movements that would have been subject to re-opening (accruals and deferrals) from the previous year.** 
 :::
 
 :::danger WARNING
 The controlling module operates in a more flexible manner, in some situations, compared to the administrative module.
-In fact, it is able to automatically adjust any cost or revenue (with compatible account types) for either economic maturity shares in the past or future, as it proceeds to monthly allocate the costs/revenues and thus automatically removes values before and after the range of closure. For instance, if the cost recorded in year X has partial (or total) maturity in year X-1, processing the period calculations on the actual data of the closure of year X will still only consider the requested maturity period.
+In fact, it is able to automatically adjust any cost or revenue (with compatible account types) for either economic competence shares in the past or future, as it proceeds to monthly allocate the costs/revenues and thus automatically removes values before and after the range of closure. For instance, if the cost recorded in year X has partial (or total) competence in year X-1, processing the period calculations on the actual data of the closure of year X will still only consider the requested competence period.
 
 Particular attention should be given to the **management of adjustments made in the administrative module**. 
-**It is recommended to perform the calculation and posting of adjustments and the closure and re-opening of accounts with re-opening adjustment through the automatic procedures, avoiding manual entries.**
+**It is recommended to perform the calculation and posting of adjustments and the closure and re-opening of accounts with re-opening adjustment through the automatic procedures, avoiding manual records.**
 
-The automatic procedure imposes, in fact, on the re-opening entries of adjustments the date equal to the original entry subject to correction and the economic maturity of that entry equal to year X-1. This way, it avoids that when processing period closures of year X, the software calculates further adjustments, already having the correct maturity result in the balance of year X (or interim period of year X) due to the proper re-opening of the previous adjustment.  
+The automatic procedure imposes, in fact, on the re-opening records of adjustments the date equal to the original record subject to correction and the economic competence of that record equal to year X-1. This way, it avoids that when processing period closures of year X, the software calculates further adjustments, already having the correct competence result in the balance of year X (or mid-year period of year X) due to the proper re-opening of the previous adjustment.  
 :::
 
-### Recovery of Depreciation of Assets (Ripresa ammortamento cespiti)
+### Fixed Assets Depreciation Retrieve
 
-The section allows automatically managing, at the end of the interim data recovery entry, the recognition of civil/fiscal amortizations for the maturity period: it therefore uses the same logic as the *Depreciation of Assets* procedure in the Assets module, but only for the days of economic maturity of interest in the closure. 
-Once the calculation has been enabled, the accounting reason to use must be set, and it must be chosen whether to create a *single cumulative entry* or detailed entry for each asset.
-The flag 'Incremental Operations', for which it refers to the assets module, allows filtering the type of asset categories to manage.
-This flag automatically creates what the user can manage separately after processing the closure balances in the dedicated *Recovery of Depreciation of Assets* procedure.
+The section allows automatically managing, at the end of the mid-year data retrieve record, the recognition of civil/fiscal depreciation for the competence period: it therefore uses the same logic as the *Fixed Assets Depreciation* procedure in the Assets module, but only for the days of economic competence of interest in the closure. 
+Once the calculation has been enabled, the ledger template to use must be set, and it must be chosen whether to create a *single cumulative record* or detailed record for each asset.
+The flag 'Incremental Oerations', for which it refers to the assets module, allows filtering the type of asset categories to manage.
+This flag automatically creates what the user can manage separately after processing the closure balances in the dedicated *Fixed Assets Depreciation Retrieve* procedure.
 
 :::tip Note
-If both incremental and non-incremental asset categories are present in the company, it is advisable to use the dedicated *Recovery of Depreciation of Assets* procedure, so that both combinations can be launched in sequence.
+If both incremental and non-incremental asset categories are present in the company, it is advisable to use the dedicated *Fixed Assets Depreciation Retrieve* procedure, so that both combinations can be launched in sequence.
 :::
 
-### Accounting for Inventories (Contabilizzazione rimanenze)
+### Inventory Accounting
 
-The section allows automatically managing, at the end of the interim data recovery entry, the recognition of beginning/end inventories for the maturity period.
-Once the management is enabled, we will manage the date range to be used, the type of inventory to consider (*Positive/Negative*), the type of cost calculation (*Average Cost, Last Cost, FIFO by Annual Installments, LIFO by Annual Installments, Managerial Area, Actual Lot Cost*) and the accounting reason to be used for the entries to be created.
+The section allows automatically managing, at the end of the mid-year data retrieve record, the recognition of beginning/end inventories for the competence period.
+Once the management is enabled, we will manage the date range to be used, the type of inventory to consider (*Positive/Negative*), the type of cost calculation (*Average Cost, Latest Cost, FIFO yearly rise, LIFO yearly rise, Management Area, By effective cost batches*) and the ledger template to be used for the records to be created.
 The presence or absence of the Controlling flag will manage the operations in two different ways:
-- If the flag *is not present*, **FluentisERP** will create the entries for the beginning and end inventories on the start and end dates of the Interim Closure period, and will insert them at the end of the other adjustment entries of the closure itself.
-- If the flag *is present*, **FluentisERP** will create the entries for beginning and end inventories for each single month within the maturity date range of the Interim Closure, and will insert them as Off-Balance Entries in the Area associated with the closure itself (thus they will not be closure entries, but entries valid only for Controlling).
+- If the flag *is not present*, **FluentisERP** will create the records for the beginning and end inventories on the start and end dates of the Mid-Year Closure period, and will insert them at the end of the other adjustment records of the closure itself.
+- If the flag *is present*, **FluentisERP** will create the records for beginning and end inventories for each single month within the competence date range of the Mid-Year Closure, and will insert them as Off-Balance Records in the Area associated with the closure itself (thus they will not be closure records, but records valid only for Controlling).
 
 :::tip Note
-The processing performs a test for the presence or absence of this type of entries, and therefore, if they are already present, it will ask if you want to delete and recreate them or if you want to add them (as in the case where only some warehouses are selected and not all through the available dropdown). If both the Controlling Area entries and the closure adjustment entries should be created, it is necessary to launch the procedure *first* with the Controlling flag active and *then* with the flag deactivated.
+The processing performs a test for the presence or absence of this type of records, and therefore, if they are already present, it will ask if you want to delete and recreate them or if you want to add them (as in the case where only some warehouses are selected and not all through the available dropdown). If both the Controlling Area records and the closure adjustment records should be created, it is necessary to launch the procedure *first* with the Controlling flag active and *then* with the flag deactivated.
 :::
 
-## Tab *Parameters (Parametri)*
+## Tab *Parameters*
 
-The ‘Parameters’ tab allows setting, for certain account types or for individual account/sub-account, the type of balance to calculate. In detail:
+The ‘Parameters’ tab allows setting, for certain account types or for individual account/detail account, the type of balance to calculate. In detail:
 
-**General (Generale)**: it is the normal default situation. With this option, the ERP will calculate a debit or credit balance and a general balance.
+**General**: it is the normal default situation. With this option, the ERP will calculate a debit or credit balance and a general balance.
 
-**Debit/Credit (Dare/avere):** with this option, the program will calculate both a total of debit movements, a total credit, and the related final balance.
+**Debit/Credit:** with this option, the program will calculate both a total of debit movements, a total credit, and the related final balance.
 
 The reference is to the various options of the reclassification models present in the *Reporting > Reclassifications* module: in these, it is possible to set only the value ‘Debit' or ‘Credit' or general.
 
-For example, recording a cost in a reclassification (i.e., the total debit movements of sub-account X) and its adjustments (i.e., the total credit movements of sub-account X) in two separate points of the reclassification may provide additional information beyond the simple algebraic balance ‘debit’ - ‘credit’ general.
+For example, recording a cost in a reclassification (i.e., the total debit movements of detail account X) and its adjustments (i.e., the total credit movements of detail account X) in two separate points of the reclassification may provide additional information beyond the simple algebraic balance ‘debit’ - ‘credit’ general.
