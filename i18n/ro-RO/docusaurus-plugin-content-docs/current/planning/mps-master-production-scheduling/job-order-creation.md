@@ -1,204 +1,204 @@
 ---
-title: Generazione commesse di produzione
+title: Generare comenzi de producție
 sidebar_position: 2
 ---
 
-La procedura **Generazione commesse di produzione** permette di generare commesse di produzione da ordini clienti, dal previsionale e/o dal Sottoscorta.
+Procedura **Generare comenzi de producție** permite generarea comenzilor de producție din ordine clienți, din previziuni și/sau din Substoc.
 
-### Ordini Clienti {#sales-orders}
+### Ordine clienți {#sales-orders}
 
-In questo tab si possono filtrare le righe d'ordine cliente che si vogliono far analizzare dalla procedura **Generazione commesse di produzione**. 
+În acest tab se pot filtra liniile de ordine client care vor fi analizate de procedura **Generare comenzi de producție**.
 
-Per poter essere visualizzate all'interno di questo tab, le righe d'ordine devono rispondere ai seguenti **requisiti**:
+Pentru a putea fi vizualizate în acest tab, liniile de ordine trebuie să îndeplinească următoarele **cerințe**:
 
-- l'articolo oggetto della riga ordine cliente deve avere il flag *Generazione commesse di produzione* abilitato nei suoi [Parametri MRP](/docs/configurations/parameters/production/mrp-parameters/search-mrp-parameters);  
-- la riga non deve essere stata evasa tramite *Picking list*, o *DDT di vendita*, o *Fattura di vendita*;  
-- la riga non deve essere stata messa *Forzatamente evasa* e quindi deve risultare in stato *Non Evasa* oppure *Parzialmente evasa*;  
-- dalla riga non devono ancora essere state generate *Commesse di produzione*;  
-- la riga deve avere la *Data merce pronta* inserita nell'*Ordine cliente* all'interno del tab *Articoli* da cui proviene;  
-- l'ordine cliente da cui proviene la riga deve essere *Stampato* e *Confermato*.
-
-:::note Nota
-La non presenza di UNA SOLA di queste condizioni provoca l'impossibilità di visualizzare la riga ordine cliente nella griglia.
-:::
-
-Nell'area di filtro in cui è possibile filtrare solamente le righe ordine che si vogliono visualizzare in base ai filtri presenti. Una volta impostati i filtri necessari, cliccando sul pulsante **Ricerca** verranno visualizzate nella griglia di risultato tutte le righe ordine corrispondenti ai filtri indicati. 
-
-*Campi*    
-
-**Tipo**: rappresenta il tipo di ordine cliente;       
-**Numero**: rappresenta il numero dell'ordine cliente;     
-**Anno**: rappresenta l'anno dell'ordine cliente;     
-**Data ordine cliente**: rappresenta la data dell'ordine cliente;     
-**Numero riga**: rappresenta il numero di riga dell'ordine cliente;     
-**Classe** e **Codice articolo**: rappresentano la classe e il codice dell'articolo;             
-**Variante**: rappresenta la variante dell'articolo;          
-**Data OC**: rappresenta la data inserimento ordine;     
-**Quantità**: rappresenta la quantità ancora da evadere della riga d'ordine;   
-**Disponibilità**: rappresenta la quantità disponibile dell'articolo nella data di merce pronta della riga d'ordine;           
-**UM**: rappresenta l'unità di misura;        
-**Consegna**: rappresenta data di merce pronta della riga d'ordine;  
-**Tipo commessa** e **Decrizione commessa**: rappresentano il codice e la descrizione del tipo commessa;    
-**Descrizione articolo**: rappresenta la descriozione dell'articolo;          
-**Descrizione conto**: rappresenta la ragione sociale del cliente.  
+- articolul obiect al liniei de ordin client trebuie să aibă opțiunea *Generare comenzi de producție* activată în [Parametrii MRP](/docs/configurations/parameters/production/mrp-parameters/search-mrp-parameters);
+- linia nu fie deja executată prin *Dispoziția de livrare*, sau *Aviz de vânzare*, sau *Factură de vânzare*;
+- linia nu fie deja *Executată forțat*, deci trebuie să fie cu statusul *Neexecutată* sau *Parțial executată*;
+- din linie nu trebuie să fie deja generate *Comenzi de producție*;
+- linia trebuie să aibă *Data marfă pregătită* inserată în *Ordinul client* în tabul *Articole* din care provine;
+- ordinul client din care provine linia trebuie să fie *Listat* și *Confirmat*.
 
 :::note Nota
-La colonna **Disponibilità** risulta uguale a zero per tutte le righe nel caso in cui il flag *Considera la disponibilità dell'articolo* presente nel tab **Parametri** sia disattivato. 
+Lipsa UNEI SINGURE dintre aceste condiții provoacă imposibilitatea de a vizualiza linia de ordine client în tabel.
 :::
 
-*Pulsanti specifici*  
+În zona de filtru se pot filtra doar liniile de ordine care vor fi afișate. Pe baza filtrelor prezente și cu ajutorul butonului **Căutare** vor fi afișate în tabelul de rezultate toate liniile de ordine corespunzătoare filtrelor indicate.
 
-> **Considera per commesse**: permette di spostare le righe d'ordine selezionate nel tab **Riepilogo** dove potranno essere prese in esame dalla procedura di generazione della commessa di produzione.  
+#### Câmpuri specifice
 
-> **Generazione flusso**: il pulsante viene abilitato solo nel caso in cui nei [Parametri MRP](/docs/configurations/parameters/production/mrp-parameters/mrp-parameters-intro) sia stato abilitato il flag *Generazione automatica flusso di produzione*. Con questo tasto è possibile lanciare direttamente l'esecuzione del flusso di produzione completo e quindi la *creazione* delle *Commesse di produzione* che verrebbero direttamente schedulate e, a seconda dei flag successivi impostati sempre nei [Parametri MPS](/docs/configurations/parameters/production/mps-parameters), verrebbero eventualmente generati anche *Ordini pianificati* e *Ordini di produzione*.
-
-
-### Previsionale {#forecast}
-
-In questo tab si possono filtrare le righe di *Previsioni di vendita* o del *Piano principale di produzione* che si vogliono far analizzare dalla procedura **Generazione commesse di produzione**, utilizzando i filtri per articolo e per variante.
-
-Le righe delle *Previsioni di vendita* che possono essere visualizzate in questo tab devono rispondere ai seguenti **requisiti**:
-
-- la previsione di vendita annuale deve essere in stato di *Consolidata*;  
-- la previsione di vendita annuale deve essere stata generata con una *Versione* valida;  
-- dalla riga di previsione non devono ancora essere state generate *Commesse di produzione*;  
-- dalle righe del *Piano principale di produzione* che possono essere visualizzate in questo tab non devono ancora essere state generate *Commesse di produzione*.
-
-Nell'area di filtro è possibile filtrare solamente le righe ordine che si vogliono visualizzare in base ai *filtri* inseriti.  
-**Vedi variante**: il flag attivo permette di visualizzare la variante;  
-**Mese di fine schedulazione**: serve per visualizzare nella griglia solo le previsioni di vendita che arrivano fino alla data indicata;  
-**Tipo commessa**: rappresenta il tipo di commessa di produzione da generare;    
-**Tipi ordine**: la griglia consente di impostare i *Tipi ordini cliente* che devono essere considerati contemporaneamente alle quantità presenti nelle previsioni di vendita, in modo tale che la procedura di creazione commessa generi la commessa di produzione con una quantità pari al maggiore, al minore o alla somma delle quantità presenti, per lo stesso articolo, in riga ordine cliente e/o in previsione di produzione o piano principale.
-
-Una volta impostati i filtri necessari, cliccando sul pulsante **Ricerca** verranno visualizzate nella griglia di risultato tutte le righe di previsione corrispondenti ai filtri indicati.  
-
-*Campi* 
-
-**Classe**, **Codice** e **Descrizione articolo**;  
-**Variante**: viene visualizzato se il flag omonimo è stato selezionato; se si è deciso nell'area di filtro che venga visualizzata; 
-**Anno**: rappresenta l'anno della previsione di vendita;  
-**Mese/Sett**: rappresenta il numero del mese o della settimana della previsione di vendita;  
-**Data gen. commessa**: rappresenta la data di generazione della commessa di produzione;  
-**Date inizio / fine previsione**: per esempio, se la previsione è stata impostata per il mese di maggio, la data inizio sarà il 01/05 e la data fine sarà il 31/05;   
-**Quantità**: rappresenta la quantità relativa alla singola riga di previsione;  
-**Conto/Sottoconto/Descrizione conto**: rappresenta il conto del cliente relativo alla riga di previsione di vendita (ove presente).  
-
-*Pulsante specifico*  
-
-> **Considera per commesse**: permette di spostare le righe selezionate nel tab **Riepilogo** dove potranno essere prese in esame dalla procedura di generazione della commessa di produzione.
-
-
-### Sottoscorta {#safety-stock}
-
-Attraverso questo tab si possono filtrare le righe di articoli gestiti a Scorta che si vogliono far analizzare dalla procedura *Generazione commesse di produzione*.  
-L'unico **requisito** che consente all'articolo di essere visualizzabile in questa griglia è rappresentato dal fatto che abbia, nel suoi [Parametri MRP](/docs/configurations/parameters/production/mrp-parameters/mrp-parameters-intro), il *Tipo di gestione* a *Scorta*.
-
-Nell'area di filtro è possibile filtrare solamente le righe ordine che si vogliono visualizzare in base ai *filtri* inseriti.  
-**Vedi variante**: il flag attivo permette di visualizzare la variante;  
-**Tipo commessa di produzione**: consente di decidere il tipo di commessa di produzione da generare;  
-**Sotto punto di riordino al**: rappresenta la data fino alla quale non si vuole che gli articoli della griglia finiscano sottoscorta.  
-
-Una volta impostati i filtri necessari, cliccando sul pulsante **Ricerca** verranno visualizzate nella griglia di risultato tutte le righe articolo corrispondenti ai filtri indicati.
-
-I dati che si possono visualizzare all'interno della griglia sono:  
-**Classe**, **Codice** e **Descrizione articolo**;  
-**Variante**: viene visualizzato se il flag omonimo è stato selezionato; se si è deciso nell'area di filtro che venga visualizzata;  
-**Punto di riordino**, **Scorta minima** e **Giorni di riordino**: vengono ripersi dall'*Anagrafica articolo* > tab *Approvvigionamento*;   
-**Consumo medio giornaliero**: viene calcolato sottraendo la scorta minima dal punto di riordino e dividendo il risultato ottenuto per i giorni di riordino;   
-**Lotto economico di produzione** e i suoi **Multipli**: vengono ripresi dai [parametri MRP](/docs/configurations/parameters/production/mrp-parameters/search-mrp-parameters) dell'articolo;  
-**Giacenza**: riporta la giacenza dell'articolo alla data corrente; 
-**Disponibilità iniziale**: rappresenta la disponibilità dell'articolo al giorno in cui si lancia l'elaborazione;  
-**Disponibilità finale**: rappresenta la disponibilità dell'articolo al giorno indicato nella casella **Sotto punto di riordino alla data** presente nell'area di filtro;   
-**Disponibilità minima**: rappresenta la disponibilità minima che l'articolo presenta nel lasso di tempo che intercorre tra la data di disponibilità inizio e la data di disponibilità finale.  
+**Tip**: reprezintă tipul de ordin client;       
+**Număr**: reprezintă numărul ordinului client;     
+**An**: reprezintă anul ordinului client;     
+**Dată ordin client**: reprezintă data ordinului client;     
+**Număr linie**: reprezintă numărul de linie al ordinului client;     
+**Clasă** și **Cod articol**: reprezintă clasa și codul articolului;             
+**Variantă**: reprezintă varianta articolului;          
+**Data OC**: reprezintă data inserării ordinului;     
+**Cantitate**: reprezintă cantitatea încă de executat din linia ordinului;   
+**Disponibilitate**: reprezintă cantitatea disponibilă a articolului la data marfă pregătită din linia ordinului;           
+**UM**: reprezintă unitatea de măsură;        
+**Livrare**: reprezintă data marfă pregătită din linia ordinului;  
+**Tip comandă** și **Descriere comandă**: reprezintă codul și descrierea tipului de comandă;    
+**Descriere articol**: reprezintă descrierea articolului;          
+**Descriere cont**: reprezintă numele societății clientului.  
 
 :::note Nota
-Per i documenti privi della Data Consegna viene considerato il parametro *Se non è specificata la data di consegna* presente nel tab Parametri.
+Coloana **Disponibilitate** este egală cu zero pentru toate liniile în cazul în care opțiunea *Consideră disponibilitatea articolului* prezentă în tabul **Parametri** este dezactivată.
 :::
 
-La *griglia inferiore* visualizza il dettaglio della disponibilità dell'articolo selezionato nella griglia principale.
+#### Butoane specifice  
+
+- > **Consideră pentru comenzi**: permite mutarea liniilor de ordine selectate în tabul **Rezumat** unde pot fi luate în considerare de procedura de generare a comenzii de producție.
+
+- > **Generare flux**: butonul este activat doar dacă în [Parametrii MRP](/docs/configurations/parameters/production/mrp-parameters/mrp-parameters-intro) a fost activată opțiunea *Generare automată flux de producție*. Cu acest buton este posibilă lansarea directă a execuției fluxului de producție complet și astfel *crearea* comenzilor de producție care vor fi direct programate și, în funcție de opțiunile ulterioare setate tot în [Parametrii MPS](/docs/configurations/parameters/production/mps-parameters); ar fi eventual generate și *Ordine planificate* și *Ordine de producție*.
+
+
+### Prognoze {#forecast}
+
+În acest tab se pot filtra liniile cu *Previziuni de vânzare* sau *Plan principal de producție* care vor fi analizate de procedura **Generare comenzi de producție**, utilizând filtrele pentru articol și pentru variantă.
+
+Liniile de *Previziuni de vânzare* care pot fi vizualizate în acest tab trebuie să îndeplinească următoarele **cerințe**:
+
+- previziunea de vânzare anuală trebuie să fie cu statusul *Consolidată*;  
+- previziunea de vânzare anuală trebuie să fi fost generată cu o *Versiune* validă;  
+- din linia de previziune nu trebuie să fi fost deja generate *Comenzi de producție*;  
+- din liniile *Planului principal de producție* care pot fi vizualizate în acest tab nu trebuie să fi fost deja generate *Comenzi de producție*.
+
+În zona de filtre se pot filtra doar liniile de ordine care vor fi afișate pe baza *filtrelor* inserate.  
+**Vizualizează variantă**: opțiunea activă permite vizualizarea variantei;  
+**Luna sfârșit programare**: servește pentru a vizualiza în tabel doar previziunile de vânzare care ajung până la data indicată;  
+**Tip comandă**: reprezintă tipul de comandă de producție de generat;    
+**Tipuri ordine**: tabelul permite setarea *Tipurilor de ordine client* care trebuie să fie considerate simultan cu cantitățile prezente în previziunile de vânzare, astfel încât procedura de creare comandă să genereze comanda de producție cu o cantitate egală cu cea mai mare, cea mai mică sau suma cantităților prezente, pentru același articol, în linia ordinului client și/sau în previziunea de producție sau în planul principal.
+
+Cu butonul **Căutare** vor fi afișate în tabelul rezultatelor toate liniile de previziune corespunzătoare filtrelor indicate.
+
+#### Câmpuri specifice
+
+**Clasă**, **Cod** și **Descriere articol**;  
+**Variantă**: este vizualizată dacă opțiunea omonimă a fost selectată; 
+**An**: reprezintă anul previziunii de vânzare;  
+**Lună/Săptămână**: reprezintă numărul lunii sau al săptămânii previziunii de vânzare;  
+**Data gen. comandă**: reprezintă data generării comenzii de producție;  
+**Date început/sfârșit previziune**: de exemplu, dacă previziunea a fost setată pentru luna mai, data de început va fi 01/05 și data de sfârșit va fi 31/05;   
+**Cantitate**: reprezintă cantitatea relativă fiecărei linii de previziune;  
+**Cont sintetic/analitic/Descriere cont**: reprezintă contul clientului relativ la linia previziunii de vânzare (unde este prezent).  
+
+#### Buton specific   
+
+- > **Consideră pentru comenzi**: permite mutarea liniilor selectate în tabul **Rezumat** unde pot fi luate în considerare de procedura de generare a comenzii de producție.
+
+
+### Substoc {#safety-stock}
+
+În acest tab se pot filtra liniile de articole *gestionate pe stoc* care vor fi analizate de procedura *Generare comenzi de producție*.  
+Singura **cerință** care permite articolului să fie afișat în acest tabel este ca în [Parametrii MRP](/docs/configurations/parameters/production/mrp-parameters/mrp-parameters-intro), *Tipul de gestionare* să fie *Pe stoc*.
+În zona de filtre se pot filtra doar liniile de ordin care vor fi afișate pe baza *filtrelor* inserate.  
+**Vizualizează variantă**: opțiunea activă permite vizualizarea variantei;   
+**Tip comandă de producție**: permite deciderea tipului de comandă de producție de generat;  
+**Sub moment de reaprovizionare în data**: reprezintă data până la care articolele din tabel nu trebuie să ajungă sub stoc.
+
+Cu butonul **Căutare** vor fi afișate în tabelul rezultatelor toate liniile articol corespunzătoare filtrelor indicate.
+
+#### Câmpuri tabel
+
+**Clasă**, **Cod** și **Descriere articol**;  
+**Variantă**: este vizualizată dacă opțiunea omonimă a fost selectată (dacă s-a decis în zona de filtre să fie vizualizată);  
+**Moment reaprovizionare**, **Stoc minim** și **Zile reordonare**: sunt preluate din *Registrul articolului* - > tab *Aprovizionare*;   
+**Consum mediu zilnic**: este calculat scăzând *Stocul minim* din *Moment reaprovizionare* și împărțind rezultatul obținut la *Zile reordonare*;   
+**Lot economic de producție** și **Multiplii** săi: sunt preluați din [Parametrii MRP](/docs/configurations/parameters/production/mrp-parameters/search-mrp-parameters) ai articolului;  
+**Stoc**: raportează stocul articolului la data curentă; 
+**Disponibilitate inițială**: reprezintă disponibilitatea articolului în ziua în care se lansează elaborarea;  
+**Disponibilitate finală**: reprezintă disponibilitatea articolului în ziua indicată în câmpul **Sub moment de reaprovizionare în data** prezent în zona de filtre;   
+**Disponibilitate minimă**: reprezintă disponibilitatea minimă pe care articolul o prezintă în intervalul de timp care intervine între data de disponibilitate început și data de disponibilitate finală.
 
 :::note Nota
-Nella prima riga della griglia, la disponibilità è data dalla somma della giacenza e di tutti i documenti scaduti (con data antecedente ad oggi).
+Pentru documentele fără *Data livrare* este considerat parametrul *Dacă nu este specificată data livrării* în tab Parametri.
 :::
 
-*Pulsante specifico*  
+*Tabelul inferioar* vizualizează detaliul disponibilității articolului selectat în tabelul principal.
 
-> **Considera per commesse**: permette di spostare le righe selezionate nel tab **Riepilogo** dove potranno essere prese in esame dalla procedura di generazione della commessa di produzione.
+:::note Nota
+În prima linie a tabelului, disponibilitatea este dată de suma stocului și a tuturor documentelor expirate (cu data anterioară zilei de azi).
+:::
 
-Solo le righe per le quali la procedura ritiene di poter creare una commessa di produzione saranno trasferite nel tab *Riepilogo*. La procedura propone per ogni articolo una commessa di produzione e cerca di fare in modo che nel giorno in cui l'articolo abbia il rischio di scendere sotto il livello di scorta minima, venga reintegrato tramite una commessa di produzione avente data identica alla data sottoscorta. La quantità di questa commessa dovrà consentire di sopravvivere fino alla data di **Sotto punto di riordino** indicata nell'area di filtro: ovviamente se l'articolo presenta dei lotti economici di produzione o di acquisto e dei multipli essi vengono rispettati.
+#### Buton specific  
 
-### Riepilogo
+- > **Consideră pentru comenzi**: permite mutarea liniilor selectate în tabul **Rezumat** unde pot fi luate în considerare de procedura de generare a comenzii de producție.
 
-Questo tab presenta le righe che sono state spostate dagli tab precedenti e che devono essere trasformate in commesse di produzione.
+Doar liniile pentru care procedura consideră că poate crea o comandă de producție vor fi transferate în tabul *Rezumat*. Procedura propune pentru fiecare articol o comandă de producție și încearcă să facă în așa fel încât în ziua în care articolul prezintă riscul să meargă sub nivelul de stoc minim, să fie reîntregit printr-o comandă de producție având data identică cu *data sub stoc*. Cantitatea acestei comenzi trebuie să fie disponibilă până la data inserată în **Sub moment reaprovizionare** indicată în zona de filtre. Evident, dacă articolul prezintă loturi economice de producție sau de achiziție și multiplii acestora, acestea sunt respectate.
 
-Il tab contiene:  
-- la sezione **Commessa di produzione proposta** in cui l'utente può impostare il **Tipo**, l'**Anno** e il **Numero** della commessa di produzione a cui devono essere aggiunte le righe selezionate nello stesso tab **Riepilogo**.  
-- la griglia di risultato dove verranno visualizzate le righe articolo che sono state spostate dagli altri tab.
+### Rezumat
 
-*Campi griglia*:  
+Acest tab prezintă liniile care au fost mutate din taburile anterioare și care trebuie să fie transformate în comenzi de producție.
 
-**Dati da**: rappresenta il tab di provenienza della riga;     
-**Classe**, **Codice articolo** e **Descrizione**: rappresentano la classe, il codice e la descrizione dell'articolo;             
-**Variante**: rappresenta la variante dell'articolo;     
-**Quantità**: rappresenta la quantità della commessa che viene proposta dalla procedura;
-**Disponibilità**: rappresenta la quantità disponibile dell'articolo alla *Data consegna*;            
-**Data di consegna**: rappresenta la data di fine della commessa di produzione proposta (che è modificabile manulamente dall'utente);                
-**Data inizio previsione**: rappresenta la data di inizio previsione;      
-**Codice tipo**: rappresenta il codice dell'ordine cliente;        
-**Numero ordine cliente**: rappresenta il numero dell'ordine cliente;  
-**Conto/Sottoconto/Descrizione conto**: rappresentano il conto del cliente relativo alla riga di previsione di vendita (ove presente);      
-**Tipo commessa** e **Descrizione commessa**: rappresentano il codice e la descrizione del tipo commessa.       
+#### Comandă de producție propusă
 
-Dopo aver selezionato le righe desiderate, l'utente ha la possibilità di creare le commesse di produzione in base ai criteri impostati nel tab **Parametri**, utilizzando il tasto **Formazione automatica commesse**. La procedura presenta, al termine dell'elaborazione, una finestra in cui vengono specificati i numeri delle commesse generate, finestra sulla quale l'utente deve solo cliccare su OK e chiudere.
+Secțiune în care utilizatorul poate seta **Tipul**, **Anul** și **Numărul** comenzii de producție la care trebuie să fie adăugate liniile selectate în tab **Rezumat**.  În tabelul de rezultate vor fi vizualizate liniile articolului care au fost mutate din celelalte taburi.
 
-*Pulsante specifico*   
-> **Formazione automatica commesse**: richiama la procedura che genera le commesse di produzione dalle righe selezionate.  
+#### Câmpuri specifice  
+
+**Date din**: reprezintă tabul de proveniență al liniei;     
+**Clasă**, **Cod articol** și **Descriere**: reprezintă clasa, codul și descrierea articolului;             
+**Variantă**: reprezintă varianta articolului;     
+**Cantitate**: reprezintă cantitatea comenzii care este propusă de procedură;
+**Disponibilitate**: reprezintă cantitatea disponibilă a articolului la *Dată livrare*;            
+**Dată livrare**: reprezintă data de sfârșit a comenzii de producție propuse (care este modificabilă manual de către utilizator);                
+**Dată început previziune**: reprezintă data de început previziune;      
+**Cod tip**: reprezintă codul ordinului client;        
+**Număr ordin client**: reprezintă numărul ordinului client;  
+**Cont sintetic/analitic/Descriere cont**: reprezintă contul clientului relativ la linia previziunii de vânzare (unde este prezent);      
+**Tip comandă** și **Descriere comandă**: reprezintă codul și descrierea tipului comandă.       
+
+După ce au fost selectate liniile dorite, utilizatorul are posibilitatea de a crea comenzile de producție în baza opțiunilor setate în tabul **Parametri**, utilizând butonul **Formare automată comenzi**. La finalul elaborării, procedura afișează o fereastră în care sunt specificate numerele comenzilor generate(clic pe OK pentru a o închide).
+
+#### Buton specific   
+- > **Formare automată comenzi**: apelează procedura care generează comenzile de producție din liniile selectate.
 
 ### Parametri
 
-Attraverso questo tab vengono settati tutti i parametri che riguardano la gestione della creazione delle commesse di produzione ed il modo in cui devono essere gestite le fasi successive alla generazione delle commesse stesse. Alcune impostazioni presente in questo tab vengono riprese dalla finestra [Parametri MPS](/docs/configurations/parameters/production/mps-parameters).
+În acest tab sunt configurați toți parametrii care se referă la gestionarea creării comenzilor de producție și modul în care trebuie să fie gestionate fazele ulterioare generării comenzilor în sine. Unele setări prezente în acest tab sunt preluate din fereastra [Parametri MPS](/docs/configurations/parameters/production/mps-parameters).
 
-**Metodo generazione commessa**:  
-- **Tipo commessa** (Monoprodotto / Multiprodotto): viene riproposto il dato che era stato settato nel tab  [Parametri MPS.](/docs/configurations/parameters/production/mps-parameters)  Nel momento della generazione della commessa dalla *Generazione commesse di produzione* è comunque possibile modificare questa impostazione all'interno di questa finestra, così come quella relativa alla combo successiva;  
-- **Raggruppamento prodotti per**: combo tramite la quale è possibile indicare come devono essere eventualmente raggruppati gli articoli all'interno della stessa commessa *Monoprodotto* o *Multiprodotto*.  
+#### Metodă generare comandă    
+- **Tip comandă** (Monoprodus / Multiprodus): este propusă data care a fost setată în tabul [Parametri MPS](/docs/configurations/parameters/production/mps-parameters). În momentul generării comenzii din *Generare comenzi de producție* este totuși posibil să se modifice această setare în acest form, precum și cea referitoare la combo-ul următor;  
+- **Grupare produse pentru**: permite selectarea grupării articolelor în aceeași comendă *Monoprodus* sau *Multiprodus*.
 
-> Se il tipo commessa è *Monoprodotto*, l'unico raggruppamento ammesso è quello per *Articolo*; questo tipo di gestione permette all'utente di far generare automaticamente dal sistema una serie di commesse *Monoprodotto*, selezionando una lista di righe di *Ordini clienti*, righe provenienti da   *Previsioni di vendita* o dal *Piano principale di produzione* o provenienti dal *Sottoscorta* facendo in modo che ciascuna commessa che verrà generata presenti la somma delle quantità richieste per lo stesso articolo. La data di fine di una commessa raggruppata è sempre uguale a quella del fabbisogno più vicino alla data in cui si lancia l'elaborazione.  
-> Se il tipo commessa è *Multiprodotto* i raggruppamenti possono essere effettuati per cliente o progetto e consentono all'utente di inserire nella stessa commessa *Multiprodotto* più articoli provenienti da righe d'ordine cliente legate allo stesso cliente, alla stessa commessa di vendita oppure alla stessa commessa di vendita dello stesso cliente.
+- > Dacă tipul comandă este *Monoprodus*, singura grupare admisă este cea pe *Articol*; acest tip de gestionare permite utilizatorului să ceară să fie generate automat de sistem o serie de comenzi *Monoprodus*, selectând o listă de linii de *Ordine clienți*, linii provenite din *Previziuni de vânzare* sau din *Planul principal de producție* sau provenite din *Substoc* făcând astfel încât fiecare comandă care va fi generată să prezinte suma cantităților cerute pentru același articol. Data de sfârșit a unei comenzi grupate este întotdeauna egală cu cea a necesarului cel mai apropiat de data la care se lansează elaborarea.  
+- > Dacă tipul comandă este *Multiprodus* grupările pot fi efectuate pe client sau proiect și permit utilizatorului să introducă în aceeași comandă *Multiprodus* mai multe articole provenite din linii ordine client asociate aceluiași client, de aceeași comandă de vânzare sau de aceeași comandă de vânzare a aceluiași client.
 
-**Priorità approvvigionamento**: la combo riporta la priorità di approvvigionamento che era stata impostata nei  [Parametri MPS](/docs/configurations/parameters/production/mps-parameters) selezionando una priorità tra quelle codificate all'interno della tabella *Priorità approvvigionamento* che si trova tra le tabelle della sezione *Impostazioni Generali*.
+**Prioritate aprovizionare**: combo-ul raportează prioritatea de aprovizionare care a fost setată în [Parametri MPS](/docs/configurations/parameters/production/mps-parameters) selectând o prioritate dintre cele codificate în tabelul *Prioritate aprovizionare* care se află în tabelele din *Setări generale*.
 
-**Aggiornamento commesse già esistenti**: le commesse selezionate nel tab riepilogativo vengono aggiunte ad una commessa già esistente (indicata nel box *Commessa di produzione propost* del tab **Riepilogativo**), se e solo se è abilitato il flag **Aggiornamento commesse già esistenti** nel tab parametri. In automatico verrà proposta una commessa già salvata dove aggiungere le righe, se ne esiste già una con quel tipo e data.         
+**Actualizare comenzi deja existente**: comenzile selectate în tabul *Rezumat* sunt adăugate la o comandă deja existentă (indicată în box *Comandă de producție propusă* din tabul **Rezumat**), dacă și numai dacă este activată opțiunea **Actualizare comenzi deja existente** în tabul *Parametri*. În mod automat va fi propusă o comandă deja salvată unde să fie adăugate liniile, dacă există deja una cu acel tip și dată.
 
-Di seguito, attraverso degli appositi flag, si può indicare se la commessa debba essere generata da **Ordini clienti** o da un **Previsionale** (e nel caso del previsionale se da **Previsioni di vendita** o dal **Piano principale di produzione**), oppure, in ultima analisi, dal **Sottoscorta**. In quest'ultimo caso viene utilizzato un algoritmo particolare spiegato nel paragrafo dedicato al tab [Sottoscorta](#safety-stock).
+În continuare, prin intermediul unor opțiuni specifice, comanda poate fi generată din **Ordine clienți** sau din **Previziuni** (mai precis, dacă din **Previziuni de vânzare** sau din **Planul principal de producție**), sau, în ultimă instanță, din **Substoc**. În acest ultim caz este utilizat un algoritm particular explicat în paragraful dedicat tabului [Substoc](#safety-stock).
 
-**Previsionale**: se il flag è attivo, si può poi decidere con quale modalità temporale debbano essere generate le commesse di produzione, tra le opzioni seguenti:  
-> **Mensile**: in questo caso la commessa di produzione verrà generata nel mese in cui cade la data della fine della Previsione di Vendita oppure nel mese in cui è stata inserita la quantità nel Piano Principale di Produzione. L'utente può anche impostare il giorno del mese in cui deve essere impostata dalla procedura automatica di creazione commessa la data di prevista fine della commessa stessa;  
-> **Settimanale**: in questo caso verrà generata una commessa di produzione per ogni settimana del mese in cui cade la data della fine della Previsione di Vendita oppure del mese in cui è stata inserita la quantità nel Piano Principale di Produzione. L'utente può anche impostare il giorno della settimana in cui deve essere impostata dalla procedura automatica di creazione commessa la data di prevista fine della commessa stessa;  
-> **Reali**: in questo caso verrà generata una commessa di produzione per ogni settimana del mese in cui cade la data della fine della *Previsione di Vendita* oppure del mese in cui è stata inserita la quantità nel *Piano Principale di Produzione*, ma considerando esattamente la data di fine della singola riga della *Previsione di Vendita*;  
-> **Settimanale considerando gg di produzione della zona di consegna**: in questo caso verrà generata una commessa di produzione tenendo conto dei giorni di produzione della zona di consegna legata al cliente per cui è stata creata la *Previsione di Vendita*;  
-> **Raggruppamento previsioni per clienti**: il flag serve per fare in modo che le commesse di produzione vengano generate raggruppando le righe di previsione degli stessi clienti.
+**Previziuni**: dacă opțiunea este activă, se poate apoi alege modalitatea temporală cu care să fie generate comenzile de producție:  
+- > **Lunar**: în acest caz comanda de producție va fi generată în luna datei de sfârșit a Previziunii de Vânzare sau în luna în care a fost introdusă cantitatea în Planul Principal de Producție. Utilizatorul poate de asemenea să insereze ziua lunii în care trebuie să fie setată de procedura automată de creare comandă data de sfârșit prevăzută a comenzii;  
+- > **Săptămânal**: în acest caz va fi generată o comandă de producție pentru fiecare săptămână a lunii datei de sfârșit a Previziunii de Vânzare sau a lunii în care a fost introdusă cantitatea în Planul Principal de Producție. Utilizatorul poate de asemenea să insereze ziua săptămânii în care trebuie să fie setată de procedura automată de creare comandă data de sfârșit prevăzută a comenzii;  
+- > **Reale**: în acest caz va fi generată o comandă de producție pentru fiecare săptămână a lunii datei de sfârșit a *Previziunii de Vânzare* sau a lunii în care a fost introdusă cantitatea în *Planul Principal de Producție*, dar luând în considerare exact data de sfârșit a fiecărei linii a *Previziunii de Vânzare*;  
+- > **Săptămânal considerând zilele de producție ale zonei de livrare**: în acest caz va fi generată o comandă de producție ținând cont de zilele de producție ale zonei de livrare asociate clientului pentru care a fost creată *Previziunea de Vânzare*;  
+- > **Grupare previziuni pentru clienți**: opțiunea permite generarea comenzilor de producție grupând liniile de previziune ale acelorași clienți.
 
-**Se non è specificata la data di consegna** la sezione riguarda esclusivamente il tab *Ordini Clienti* e il tab *Sottoscorta* della *Generazione commesse di produzione*. Qui l'utente può decidere se, nel caso in cui manchi la *Data merce pronta* nella riga dell'ordine cliente che deve essere analizzata dalla procedura, debba essere ignorata la riga priva di data, oppure debba essere accettata una certa data come prevista fine della commessa che verrà generata, oppure debba essere accettata una certa data come previsto inizio della commessa che verrà generata (in questi ultimi due casi le date vanno selezionate nelle due combo dedicate).
+**Dacă nu este specificată data de livrare** secțiunea se referă exclusiv la tabul *Ordine clienți* și la tabul *Substoc* al *Generării comenzilor de producție*. Aici utilizatorul poate decide dacă, în cazul în care nu este completat câmpul *Data marfă pregătită* în linia ordinului client care trebuie să fie analizată de procedură, trebuie să fie ignorată linia fără dată, sau trebuie să fie acceptată o anumită dată ca sfârșit prevăzut al comenzii care va fi generată, sau trebuie să fie acceptată o anumită dată ca început prevăzut al comenzii care va fi generată (în aceste ultime două cazuri datele trebuie selectate în cele două combo-uri dedicate).
 
-**Considera la disponibilità dell'articolo**: il flag consente, se attivato, di fare in modo che in tutti i tabs della *Generazione commesse di produzione* venga esposta la disponibilità dell'articolo alla *Data di prevista fine* della commessa di produzione che dovrà essere creata. Lo stesso avviene anche nel tab *Riepilogo*. La disponibilità viene presa in considerazione sulla base dei flag attivati nei *Parametri MPS* (Conto Lavoro, Acquisti, Vendite, Produzione, Magazzino). In questo caso, quando si andrà a creare la commessa la procedura andrà a tenere conto della disponibilità creando la commessa per la differenza tra la domanda e la disponibilità di quell'articolo.
+**Consideră disponibilitatea articolului**: dacă este activată, opțiunea permite, în toate taburile *Generării comenzilor de producție*, să fie expusă disponibilitatea articolului la *Data sfârșit prevăzută* a comenzii de producție care trebuie să fie creată. Același lucru se întâmplă și în tabul *Rezumat*. Disponibilitatea este luată în considerare pe baza opțiunilor activate în *Parametrii MPS* (Sistem lohn, Achiziții, Vânzări, Producție, Gestiune). În acest caz, când se va crea comanda, procedura va ține cont de disponibilitate creând comanda pentru diferența dintre cerere și disponibilitatea acelui articol.
 
-**Magazzini di schedulazione commesse**: nella griglia compaiono i magazzini che sono stati inseriti nella finestra del [Calcolo Disponibilità](/docs/erp-home/registers/items/calculate-availability). Da questo tab *Parametri* possono solo essere visualizzato e non modificati.
+**Gestiuni pentru planificare comenzi**: în tabel apar depozitele care au fost introduse în [Calcul disponibilitate](/docs/erp-home/registers/items/calculate-availability). În acest tab *Parametri* pot fi doar vizualizate și nu modificate.
 
-**Sito Produttivo:** questa informazione, se indicata, viene utilizzata per far considerare alla procedura di generazione commessa da ordine cliente le sole righe ordine cliente confermate, dove il magazzino di prelievo previsto è associato a quel sito produttivo.
+**Locație producție**: dacă este indicată, procedura de generare comandă din ordin client va considera doar liniile de ordin client confirmate, acolo unde gestiunea de ieșire prevăzută este asociată acestei locații.
 
-**Calcolo quantità in base al lotto economico**: se attivato, questo flag, fa in modo che la procedura generi la commessa di produzione considerando il lotto economico di acquisto inserito nel tab [Fornitori preferenziali](/docs/erp-home/registers/items/create-new-items/item-registry/preferential-vendors) sul fornitore designato come di default se l'articolo analizzato in *Generazione commesse di produzione* ha come *Tipo approvvigionamento*: *Acquisto* o *Conto Lavoro*, e il lotto economico di produzione inserito nei [Parametri MRP](/docs/configurations/parameters/production/mrp-parameters/search-mrp-parameters) se l'articolo oggetto della commessa ha come *Tipo Approvvigionamento* 'Produzione'.       
+**Calcul cantitate în funcție de lotul economic**: dacă este activat, procedura va genera comanda de producție considerând lotul economic de achiziție introdus în tabul [Furnizori preferențiali](/docs/erp-home/registers/items/create-new-items/item-registry/preferential-vendors) pe furnizorul desemnat ca implicit dacă articolul analizat în *Generare comenzi de producție* are ca *Tip aprovizionare*: *Achiziție* sau *Sistem lohn*, și lotul economic de producție introdus în [Parametrii MRP](/docs/configurations/parameters/production/mrp-parameters/search-mrp-parameters) dacă articolul obiect al comenzii are ca *Tip Aprovizionare* 'Producție'.
 
-**Calcolo quantità in base ai multipli dell'articolo**: se attivato, questo flag fa in modo che la procedura generi la commessa di produzione considerando anche i multipli del lotto economico di acquisto inserito nel tab fornitori preferenziali sul fornitore designato come di default degli articoli se l'articolo oggetto della commessa ha come *Tipo Approvvigionamento* *Acquisto* o *Conto Lavoro*, e i multipli del lotto economico di produzione inserito nei  [Parametri MRP](/docs/configurations/parameters/production/mrp-parameters/search-mrp-parameters)  se l'articolo analizzato in G*enerazione commesse di produzione* ha come *Tipo Approvvigionamento*: *Produzione*. Ovviamente questo flag può essere attivato solo se risulti attivo il flag di cui al paragrafo precedente.              
+**Calcul cantitate în funcție de multiplii articolului**: dacă este activat, procedura va genera comanda de producție considerând și multiplii lotului economic de achiziție introdus în tabul furnizori preferențiali pe furnizorul desemnat ca implicit al articolelor dacă articolul obiect al comenzii are ca *Tip Aprovizionare* *Achiziție* sau *Cont Lohn*, și multiplii lotului economic de producție introduși în [Parametrii MRP](/docs/configurations/parameters/production/mrp-parameters/search-mrp-parameters) dacă articolul analizat în *Generare comenzi de producție* are ca *Tip Aprovizionare*: *Producție*. Evident, această opțiune poate fi activată doar dacă este activată opțiunea din paragraful precedent.
 
-**Reintegro scorta minima dell'articolo**: se attivato, questo flag permette all'utente di fare in modo che per l'articolo analizzato in *DGenerazione commesse di produzione* sia reintegrata la scorta minima inserita nell'*Anagrafica articolo > tab Approvvigionamento*.    
+**Completare stoc minim articol**: dacă este activat, permite ca pentru articolul analizat în *Generare comenzi de producție* să fie reîntregit stocul minim introdus în *Registrul articolului - > tab Aprovizionare*.
 
-**Reintegro punto di riordino dell'articolo**: se attivato, questo flag permette all'utente di fare in modo che per l'articolo analizzato in *Generazione commesse di produzione* sia reintegrato il punto di riordino inserito nell'*Anagrafica articolo > tab Approvvigionamento*.
+**Completare moment reaprovizionare articol**: dacă este activat, permite ca pentru articolul analizat în *Generare comenzi de producție* să fie completat momentul de reaprovizionare introdus în *Registrul articolului - > tab Aprovizionare*.
 
-**Escludi ordini in ritardo**: se attivato, questo flag permette all'utente di fare in modo che la procedura di generazione della commessa di produzione escluda dal calcolo della disponibilità dell'articolo analizzato le quantità provenienti dalle righe d'ordine cliente la cui *Data merce pronta* risulta essere precedente alla data corrente.
+**Exclude ordine in întârziere**: dacă este activat, permite ca procedura de generare a comenzii de producție să excludă din calculul disponibilității articolului analizat cantitățile provenite din liniile ordin client a căror *Data marfă pregătită* este anterioară datei curente.
 
-Una volta impostati i parametri, si potrà procedere con la creazione delle commesse, nei rispettivi tab degli [Ordini clienti](#sales-orders), del [Previsionale](#forecast) e del [Sottoscorta](#safety-stock).
+După ce parametrii au fost setați, se va putea continua cu crearea comenzilor, în taburile [Ordinelor clienți](#sales-orders), [Previziunilor](#forecast) și [Substocului](#safety-stock).
 
-*Pulsante specifico*  
-> **Formazione automatica commesse**: richiama la procedura che genera le commesse di produzione dalle righe selezionate.  
+#### Buton specific  
+- > **Formare automată comenzi**: apelează procedura care generează comenzile de producție din liniile selectate.
 
-Per dettagli sul funzionamento comune delle form fare riferimento al link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Pentru detalii despre funcționarea comună a form-urilor, consultați linkul [Funcționalități, butoane și câmpuri comune](/docs/guide/common).
