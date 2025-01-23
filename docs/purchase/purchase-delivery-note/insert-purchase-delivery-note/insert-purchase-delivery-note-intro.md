@@ -1,6 +1,8 @@
 ---
 title: Crea DDT - Sezione superiore
 sidebar_position: 1
+slug: /purchase/purchase-delivery-note/insert-purchase-delivery-note/insert-purchase-delivery-note-intro
+lastUpdated: true
 ---
 
 
@@ -15,12 +17,11 @@ Questo campo determina il range di numerazione del documento che si sta inserend
 - **Data inserimento**: viene proposta automaticamente la data corrente, ma può essere modificata manualmente sempre rispettando la regola di progressione tra data e numero;  
 - **Numero**: in questo campo è possibile inserire un numero documento che può essere diverso rispetto a quello proposto nel campo precedente.   
 
- La form contiene una serie di tab:  
-
-> -  [Testata ](/docs/purchase/purchase-delivery-note/insert-purchase-delivery-note/header) e le sue  [Procedure](/docs/purchase/purchase-delivery-note/insert-purchase-delivery-note/header-procedures/execution-from-purchase-order) 
-> -  [Articoli](/docs/purchase/purchase-delivery-note/insert-purchase-delivery-note/items) 
-> -  [Riepiloghi](/docs/purchase/purchase-delivery-note/insert-purchase-delivery-note/summaries) 
-> -  [Trasporto](/docs/purchase/purchase-delivery-note/insert-purchase-delivery-note/transport) 
+ La form contiene una serie di tab:   
+> -  [Testata ] e le sue  [Procedure](/docs/purchase/purchase-delivery-note/insert-purchase-delivery-note/header-procedures/execution-from-purchase-order) 
+> -  [Articoli]
+> -  [Riepiloghi] 
+> -  [Trasporto]
 
 
 Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
