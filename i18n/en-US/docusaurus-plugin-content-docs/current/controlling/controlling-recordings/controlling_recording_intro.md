@@ -1,37 +1,37 @@
 ---
-title: Introduzione
+title: Introduction 
 sidebar_position: 1
 ---
 
-All'interno del modulo della Contabilità gestionale abbiamo tutte le procedure di inserimento ed elaborazione dati della contabilità per centro aziendale sulle aree di analisi diverse dall'area di budget: avremo la prima nota dei movimenti fisici o le registrazioni extracontabili di area, lo storico dei dati elaborati (sia fisici che a valore) per l'anno/periodo, le varie visualizzazioni di controllo e di estrazione dati, la visualizzazione del rendiconto consuntivo dei dati per la dimensione di analisi di progetto.
+Within the Managerial Accounting module, we have all the procedures for data entry and processing of accounting for corporate centers in areas of analysis different from the budget area: we will have the first entry of physical movements or off-balance sheet records for the area, the history of processed data (both physical and valued) for the year/period, various control and data extraction views, and the visualization of the final financial report of the data for the project analysis dimension.
 
-## Per iniziare ad utilizzare
-Suggeriamo di fare riferimento alla sezione della [*Panoramica Generale Controlling*](/docs/controlling/general-overview-controlling/general-overview) per una overview delle tabelle e degli step logici della configurazione, che deve partire da una analisi precisa della struttura produttiva aziendale e degli obiettivi che si vogliono ottenere implementando il Controllo di Gestione.
+## To get started
+We suggest referring to the section of the [*General Overview of Controlling*](/docs/controlling/general-overview-controlling/general-overview) for an overview of the tables and logical steps of the configuration, which should start from a precise analysis of the company's productive structure and the objectives to be achieved by implementing Management Control.
 
-Il modulo è strutturato dalle seguenti sezioni:
-- **Prima nota**: una prima nota di entry di dati fisici o di registrazioni dell'area di analisi
-    - *Registrazione movimenti fisici*: valorizzata da produzione/progetto o manualmente
-    - *Registrazioni extracontabili di area*: valorizzate in automatico da ammortamenti o rimanenze, piuttosto che manuali
-    - *Tariffe standard dei centri*: a gestione manuale
+The module is structured into the following sections:
+- **Journal entry**: a first entry for data or area analysis registrations
+    - *Physical movements record*: valued by production/project or manually
+    - *Off-balance records for area*: automatically valued from depreciation or inventory, rather than manually
+    - *Standard rates of centers*: manually managed
 
-- **Storico gestionale**
-In questa sezione abbiamo tutti gli storici delle varie base dati elaborate
-    - *Storico flusso fisico*: la base dati storica dei movimenti fisici
-    - *Storico ammortamenti*: la base dati storica degli ammortamenti elaborati
-    - *Storico registrazioni gestionali*: la base dati mensilizzata e rielaborata da tutti i driver
-    - *Storico indici*: la base dati storica degli indici di costo elaborati sui vari centri
+- **History management**
+In this section, we have all the historical data bases processed
+    - *Physical flow history*: the historical data base of physical movements
+    - *Historical depreciation*: the historical data base of processed depreciations
+    - *Historical records management*: the monthly and reprocessed data base from all drivers
+    - *Index history*: the historical data base of cost indices processed across various centers
 
-- **Procedure**
-In questa sezione troviamo le varie procedure di ripresa e elaborazione dati
-    - *Ripresa dati da produzione*: per riprendere tempi e costi dai progetti, tempi dalla produzione, costi dalle lavorazioni interne/esterne
-    - *Ripresa dati da fatture di vendita*: per riprendere provvigioni e sconti applicati
-    - *Elaborazione periodi*: per elaborare dati fisici, ammortamenti, ed elaborare la base dati applicando driver
-    - *Aggiornamento tariffe di produzione*: per allineare le tariffe dei centri produttivi
-    - *Consolidamento master*: per creare un controlling unificato di gruppo
+- **Procedures**
+In this section, we find various data recovery and processing procedures
+    - *Data retrieve from production*: to retrieve times and costs from projects, times from production, costs from internal/external processes
+    - *Data retrieve from Sales invoices*: to retrieve commissions and applied discounts
+    - *Process periods*: to process physical data, depreciations, and process the data base by applying drivers
+    - *Update production rates*: to align the rates of production centers
+    - *Master consolidation*: to create a unified group controlling
 
-- **Storico di progetto**
-In questa sezione abbiamo tutti gli storici delle varie base dati elaborate per chi lavora a progetto/commessa
-    - *Storico movimenti fisici di commessa*: la base dati storica dei tempi e quantità lavorate su progetto/commessa
-    - *Registrazioni gestionali*: la base dati storica dei costi e ricavi diretti di progetto
-    - *Valori da produzione*: materiali e lavorazioni direttamente utilizzati su progetto/commessa
-    - *Consolidato di commessa*: la base dati risultante con costi diretti, indiretti e driver di ribaltamento di costi generali
+- **Project history**
+In this section, we have all the historical data bases processed for those working on project/job order
+    - *Historical physical job order movements*: the historical data base of the times and quantities worked on the project/job order
+    - *Management Records*: the historical data base of direct project costs and revenues
+    - *Production values*: materials and processes directly used on the project/job order
+    - *Job order consolidation*: the resulting data base with direct, indirect costs, and cost allocation driver
