@@ -1,28 +1,28 @@
 ---
-title: Ripresa dati da fatture di vendita
+title: Data Retrieve from Sales Invoices 
 sidebar_position: 2
 ---
 
-La procedura ***Ripresa dati da fatture di vendita*** consente di integrare i nostri dati di area con due tipi di dati presenti in fatturazione vendite: le provvigioni e gli sconti.
+The procedure ***Data Retrieve from Sales Invoices*** allows us to integrate our data area with two types of data present in sales invoicing: commissions and discounts.
 
-## RIPRESA PROVVIGIONI
-Per le provvigioni, l’esigenza è rilevare nel periodo i costi delle provvigioni che invece la contabilità rileverà solo alla maturazione della provvigione, cioè magari solo al momento dell’incasso totale della fattura. Imposteremo come sempre 
-- l’[***Area***](/docs/controlling/controlling-parametrization/controlling-specific-settings/area-types-areas)
-- la ***Data*** 
-- l’***Anno***
-poi sulla destra inseriremo 
-- la ***Causale*** 
-- il range ***Da data*** e ***A data*** di date fattura da filtrare per prelevare i dati.
+## RETRIEVE COMMISSIONS 
+For commissions, the need is to detect in the period the costs of the commissions that accounting will only record at the maturation of the commission, that is, maybe only at the time of the total collection of the invoice. We will set, as always: 
+- the [***Area***](/docs/controlling/controlling-parametrization/controlling-specific-settings/area-types-areas)
+- the ***Date*** 
+- the ***Year***  
+Then on the right side we will enter: 
+- the ***Template*** 
+- the range ***By Date*** and ***To date*** of invoice dates to filter for data extraction.
 
 
-## RIPRESA SCONTI
-Gli sconti, invece, sono un valore che normalmente la contabilità analitica non trova dalle rilevazioni contabili, che tipicamente valorizzano il netto del ricavo e non il lordo meno il costo dello sconto applicato. In determinate analisi potrebbe essere interessare mettere in evidenza questo costo nascosto che l’azienda sostiene per vendere, da qui l’elaborazione di questi dati.
+## RETRIEVE DISCOUNTS
+Discounts, on the other hand, are a value that analytic accounting normally does not find from accounting records, which typically value the net revenue and not the gross minus the cost of the applied discount. In certain analyses, it may be important to highlight this hidden cost that the company bears to sell, hence the elaboration of this data.
 
-Imposteremo come sempre 
-- l’[***Area***](/docs/controlling/controlling-parametrization/controlling-specific-settings/area-types-areas)
-- il ***Conto*** sul quale rilevare questi costi commerciali
-- la ***Data***
-- l’***Anno***
-poi sulla destra inseriremo 
-- la ***Causale*** 
-- il range ***Da data*** e ***A data*** di date fattura da filtrare per prelevare i dati.
+We will set, as always: 
+- the [***Area***](/docs/controlling/controlling-parametrization/controlling-specific-settings/area-types-areas)
+- the ***Account*** on which to record these commercial costs
+- the ***Date*** 
+- the ***Year***  
+Then on the right side we will enter: 
+- the ***Template*** 
+- the range ***By Date*** and ***To date*** of invoice dates to filter for data extraction.

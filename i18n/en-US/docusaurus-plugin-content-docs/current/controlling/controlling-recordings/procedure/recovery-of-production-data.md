@@ -1,55 +1,55 @@
 ---
-title: Ripresa dati da produzione
+title: Data Retrieve from Production 
 sidebar_position: 1 
 ---
 
-La ripresa dati da produzione legge i dati per attribuire i movimenti fisici (quindi la movimentazione dei materiali ma anche i tempi) su commessa ed i costi delle lavorazioni
+Data retrieve from production reads the data to assign physical movements (both the handling of materials and timing) to the job order and the costs of processing.
 
-La maschera si divide in 3 procedure differenti
+The interface is divided into 3 different procedures.
 
-## RIPRESA ORE/COSTI DI PROGETTO
-Con questa procedura andiamo a recuperare i dati delle ore del personale di produzione (nella ***Gestione ore dichiarate***) ma anche dell'area Progetti, in particolare dalla ***Dichiarazione attività*** e dagli ***Interventi***, per inserirli nelle ***Registrazioni movimenti fisici*** e nelle tabelle dei ***Movimenti di progetto/commessa***. Vediamo le varie opzioni disponibili:
-- Andremo ad indicare su che [***Area***](/docs/controlling/controlling-parametrization/controlling-specific-settings/area-types-areas) rilevare i movimenti
-- in che ***Data***
-- su che ***Anno*** del controlling 
-- a destra imposteremo coerentemente il range ***Da data*** e ***A data***
-- e qual è il ***Tipo misurazione***, cioè se la prima o la seconda UM impostata nei centri
-sul lato sinistro poi avremo la scelta del 
-- ***Tipo progetto***, che consente di definire qual è il progetto che ci interessa riportare nei dati fisici di progetto:
-    - ***Tutti i progetti in dichiarazione ore***, rileveremo ogni singolo progetto che è stato referenziato nelle dichiarazioni ore
-    - ***Ore ai progetti collegati***, andremo ad attribuire sempre il progetto padre di quelli specifici dichiarati
-    - L’opzione ***Valorizza ore da intercompany***, invece, consente di portare nella società attiva le ore che i dipendenti potrebbero aver inserito in una differente società del database, ma che sono da considerare in questa.
-Sul lato destro possiamo aggiungere anche una valorizzazione economica alle nostre considerazioni finora quantitative dei tempi: 
-- possiamo impostare il ***Valorizza oneri viaggio dell'attività/intervento*** per considerare gli oneri viaggio legati alle attività/interventi 
-- il flag ***‘***Gestione dell’orario di lavoro per progetto***, invece, fa considerare a Fluentis solo le ore che sono state legate ad un progetto, anche per la valorizzazione della prima nota movimenti fisici, dove normalmente invece finiscono tutte le ore indicate indipendentemente dal collegamento a progetto.
-- possiamo impostare il ***Valorizza extracontabilmente i costi delle risorse*** applicando il costo della stessa al numero delle ore del periodo, applicando eventualmente un correttivo di ***Efficienza*** nel campo più in basso.
-- Chiude questa sezione l’opzione ***Valorizza di costi/ricavi intercompany delle risorse***: significa valorizzare nella società attiva i costi o i ricavi per prestazioni intercompany rilevate dai dipendenti in dichiarazione ore.
+## DATA RETRIEVE FOR PROJECT HOURS/COSTS 
+With this procedure, we go to retrieve the data on the hours of production personnel (in ***Declared Hours Management***), as well as from the Projects area, particularly from ***Activities by Project*** and ***Service Activities***, to input them into ***Physical Movement Posting*** and in the ***Project/Job Order Movements***. Let's see the various available options:
+- We will indicate on which [***Area***](/docs/controlling/controlling-parametrization/controlling-specific-settings/area-types-areas) to record the movements.
+- On what ***Date***.
+- On what ***Year*** of controlling.
+- On the right, we will consistently set the range ***By date*** and ***To Date***.
+- And what the ***Measurement Type*** is, that is whether it is the first or the second unit of measure set in the centers. 
+On the left side, we will then choose the 
+- ***Project Type***, which allows us to define which project we are interested in reporting in the physical project data:
+    - ***All projects in hour declaration***, we will record each individual project referenced in the hour declarations.
+    - ***Hours to connected projects***, we will always attribute the parent project of the specific declared ones.
+    - The option ***Valorize intercompany hours***, allows the hours entered by employees in a different company in the database, which need to be considered in this one.
+On the right side, we can also add an economic valorization to our previous quantitative considerations of times: 
+- We can set the ***Enhance travel expenses of the activity / intervention*** to consider the travel charges related to the activities/interventions.
+- The flag ***Project working time management***, instead, makes Fluentis consider only the hours linked to a project, even for the valuation of the first note of physical movements, where normally all indicated hours end up, regardless of the link to a project.
+- We can set the ***Values resource costs out of account*** by applying the cost to the number of hours for the period, possibly applying a correction for ***Efficiency*** in the lower field.
+- Closing this section is the option ***Value intercompany costs/revenues of resources***: this means valuing in the active company the costs or revenues for intercompany performances recorded by employees in hour declarations.
 
-## RIPRESA MOVIMENTI FISICI
-La ***Ripresa movimenti fisici*** va a leggere le segnalazioni di produzione e valorizza i tempi macchina, piuttosto che i tempi uomo, e i tempi di attrezzaggio uomo e macchina: li andrà a valorizzare sia nella tabella delle ***Registrazioni movimenti fisici***, che nella tabella dei ***movimenti fisici di progetto/commessa***. Questi dati vengono verificati in riferimento al centro di costo associato alla macchina e al gruppo manodopera, se questo centro viene misurato per i tempi macchina o uomo o attrezzaggio così come impostato nella tabella delle ***Unità di misura dei centri nel controlling***.
-I dati da impostare sono 
-- l’[***Area***](/docs/controlling/controlling-parametrization/controlling-specific-settings/area-types-areas) di riferimento
-- la ***Data*** della rilevazione 
-- l’***Anno*** 
-- il range di date di filtro ***Da data*** e ***A data*** a destra.
-Sono previste 3 opzioni sui tempi utilizzati: 
-- di default andremo a valorizzare i ***Tempi consuntivi*** nella segnalazione di produzione stessa
-- nel secondo caso andremo a leggere i ***Tempi ciclo*** legato alla segnalazione per valorizzare il dato teorico di ciclo (cioè proporzionando la quantità prodotta nella segnalazione rispetto a quella del ciclo)
-- mentre nell’ultimo caso ***Tempi fase standard*** andremo a leggere la fase standard della segnalazione per utilizzare il suo valore, sempre proporzionato rispetto alla quantità segnalata.
-Se ci sono macchine o attrezzature collegate ad un’anagrafica cespite, questa stessa procedura andrà anche a valorizzare le ***Registrazioni movimenti fisici*** (e quella per progetto) delle quantità che il cespite ha prodotto nel periodo, al fine di poterne calcolare gli ammortamenti su quantità.
+## RETRIEVE PHYSICAL MOVEMENT 
+The ***Retrieve Physical Movement Retrieval*** reads the production reports and values machine times, as well as man hours, and equipment setup times for both man and machine: it will value them in both the ***Physical Movement Posting*** table and the ***Project/Job Order Physical Movements*** table. This data is verified concerning the cost center associated with the machine and the labor group, whether this center is measured for machine or man timing or rig, as set in the ***Units of Measure of Centers in Controlling*** table.
+The data to be set are 
+- the [***Area***](/docs/controlling/controlling-parametrization/controlling-specific-settings/area-types-areas) of reference,
+- the ***Date*** of the detection,
+- the ***Year***, 
+- the date range filter ***By Date*** and ***To Date*** on the right.
+Three options are provided for the times used: 
+- by default we will value the ***Final Times*** in the production report itself,
+- in the second case, we will read the ***Production Cycle Times*** related to the reporting to value the theoretical cycle data (that is proportioning the quantity produced in the report compared to that of the cycle),
+- while in the last case, ***Standard Phase Times*** we will read the standard phase of the report to use its value, always proportionate to the reported quantity.
+If there are machines or equipment connected to an asset register, this same procedure will also value the ***Physical Movement Posting*** (and that for the project) of the quantities that the asset has produced in the period, in order to calculate its depreciation on quantities.
 
-## RIPRESA COSTI DI COMMESSA
-La procedura della ***Ripresa costi di commessa***, infine, è dedicata alla rilevazione dei costi delle trasformazioni interne ed esterne.
-Imposteremo anche qui 
-- l’[***Area***](/docs/controlling/controlling-parametrization/controlling-specific-settings/area-types-areas)
-- la ***Data*** della rilevazione
-- l’***Anno***
-- la ***Causale*** da utilizzare nella registrazione di area
-- il range di date ***Da data*** e ***A data*** da utilizzare 
-- infine il ***Conto lavorazioni esterne*** da utilizzare per valorizzare le lavorazioni esterne che leggeremo dal conto lavoro.
-Per quelli che sono i dati ripresi dal conto lavoro, utilizzeremo il conto impostato nella maschera al prezzo rilevato nella fattura di acquisto collegata al rientro, oppure a quello del rientro stesso se non ancora fatturata dal terzista, valorizzando il centro di costo associato al conto di costo stesso.
-Per le lavorazioni interne, invece, potremo valorizzare al ***Costo standard***, ***Costo ultimo*** o ***Costo medio*** le quantità che arrivano nelle segnalazioni di produzione del periodo, piuttosto che i materiali utilizzati negli interventi presso terzi.
+## RETRIEVE JOB ORDER COST
+Finally, the ***Retrieve Job Order Cost*** procedure is dedicated to the detection of the costs of internal and external transformations.
+Here we will also set 
+- the [***Area***](/docs/controlling/controlling-parametrization/controlling-specific-settings/area-types-areas),
+- the ***Date*** of the detection,
+- the ***Year***,
+- the ***Template*** to be used in the area registration,
+- the date range ***By Date*** and ***To Date*** to be used, 
+- finally the ***External processing account*** to be used to value the external processing that we will read from the work account.
+For the data retrieved from the work account, we will use the account set in the mask at the price recorded in the linked purchase invoice for the return, or that of the return itself if not yet invoiced by the third-party provider, valuing the cost center associated with the cost account itself.
+For internal processing, however, we will be able to value the ***Standard Cost***, ***Latest Cost***, or ***Average Cost*** of the quantities that come in the production reports of the period, rather than the materials used in third-party interventions.
 
-Il risultato dell’elaborazione viene inserito nei ***Valori da produzione***, maschera della sezione della gestione di progetto: questa procedura, infatti, filtra i dati che sono collegati ai progetti e gestisce **solo questi** al fine della consuntivazione di progetto.
+The result of the processing is inserted into the ***Production Values***, mask in the project management section: this procedure, in fact, filters the data that are linked to the projects and manages **only these** for the project accounting.
 
-Ultima nota è quella del secondo tab ***Progetti***, che è legato proprio a questa ultima procedura: in questa sezione possiamo andare a selezionare su quali commesse siamo interessati a rilevare i costi di commessa, se non filtriamo nulla andremo a valorizzare tutti i movimenti di commessa che troveremo nel periodo.
+A final note is that of the second tab ***Projects***, which is directly linked to this last procedure: in this section, we can select the jobs we are interested in recording project costs on; if we filter nothing, we will value all the job order movements that we find in the period.

@@ -1,7 +1,6 @@
 ---
-title: Aggiornamento tariffe di produzione
+title: Update Production Center Rates 
 sidebar_position: 4 
 ---
 
-La procedura di ***Aggiornamento tariffe centri di produzione*** consente di indicare da quale area e periodi calcolare la tariffa da memorizzare nelle tariffe dei [***Centri di produzione***](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-centers). Nel caso in cui, quindi, analizzando i consuntivi ci si sia accorti che le tariffe consuntive discostano in modo significativo da quelle che la produzione utilizza per i proprio elaborati di costo prodotto, sarà possibile procedere ad un allineamento automatico dei dati stessi.
-
+The procedure for ***Update Production Center Rates*** allows you to indicate from which area and periods to calculate the rate to be stored in the rates of [***Production Centers***](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-centers). In the event that, therefore, upon analyzing the finals, it has been noticed that the final rates significantly deviate from those that production uses for its produced cost calculations, it will be possible to proceed with an automatic alignment of the data.
