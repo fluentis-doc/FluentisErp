@@ -1,29 +1,29 @@
 ---
-title: Valori di controllo
+title: Control Values 
 sidebar_position: 3
 ---
 
-Questa form è destinata ad ospitare la riconciliazione tra i valori contabili ed i valori del controlling e risulta utilissima per tenere traccia delle attribuzioni e ribaltamenti avvenuti e dei conguagli calcolati dal sistema in relazione alle modalità previste per questa operazione.
+This form is intended to host the reconciliation between accounting values and controlling values and is extremely useful for keeping track of the allocations and transfers that have taken place and the adjustments calculated by the system in relation to the methods provided for this operation.
 
-Prima di lanciare la ricerca dei dati sarà necessario impostate, in testata della maschera, i seguenti campi:
-- l'***Area*** dei dati da ricercare, obbligatoria
-- la ***Dimensione*** dei dati da ricercare, campo opzionale
-- l'***Anno***, obbligatorio
-- il range del ***Periodo da*** e ***Periodo a***, opzionale
+Before launching the data search, it will be necessary to set the following fields in the header of the form:
+- the ***Area*** of the data to be searched, mandatory 
+- the ***Dimension*** of the data to be searched, optional 
+- the ***Year***, mandatory 
+- the range of ***From period*** and ***To period***, optional 
 
 
-I dati sono organizzati su cinque tab distinti:
+The data is organized into five distinct tabs:
 
-***Valori sorgenti da attribuire:*** rappresenta i movimenti contabili associati al centro aziendale contraddistinto dal flag *Conti da riassegnare* (specifico per costi che la contabilità generale non è in grado di attribuire direttamente). L'ultima colonna *Importo* consente di verificare che tutte la attribuzioni si siano chiuse correttamente, senza lasciate dati aperti.
+***Source Values  to Assign:*** represents the accounting movements associated with the corporate center marked by the flag *Accounts to be assigned* (specific for costs that general accounting cannot directly assign). The last column *Value* allows verification that all allocations have been closed correctly, without leaving any open data.
 
-***Valori sorgenti attribuiti:*** simile nella struttura al precedente, evidenzia i dati effettivamente attribuiti dal centro aziendale destinato ai costi da riassegnare e i centri riceventi. Anche qui l'ultima colonna *Importo* consente di verificare che tutte la attribuzioni si siano chiuse correttamente, senza lasciate dati aperti.
+***Assigned source values:*** similar in structure to the previous one, highlights the data actually assigned by the corporate center intended for costs to be reassigned and the receiving centers. Here too, the last column *Value* allows verification that all allocations have been closed correctly, without leaving any open data.
 
-**Valori revertiti:** evidenzia i ribaltamenti tra centri gestita dai cost driver. Il dato è rappresentato raggruppando per ogni Cost driver il quale ha gestito i centri aziendali e per ogni centro il movimento connesso al conto contabile che è stato ribaltato. Anche qui l'ultima colonna *Differenza* consente di verificare che tutti i ribaltamenti si siano chiuse correttamente, senza lasciate dati aperti a livello di *Cost driver*.
+**Revised values:** highlights the transfers between centers managed by the cost drivers. The data is represented by grouping each Cost driver that has managed the corporate centers and for each center the movement connected to the accounting account that has been transferred. Again, the last column *Difference* allows verification that all transfers have been closed correctly, without leaving any open data at the *Cost driver* level.
 
-**Valori commessa:** In questo tab si evidenziano i ribaltamenti della dimensione Progetti/Commesse, avvenute sempre tramite cost driver
+**Order values:** In this tab, the transfers of the Projects/Job Orders dimension are highlighted, always occurring through cost drivers.
 
-**Valori di conguaglio:** nell'ultimo tab si evidenziano le differenze tra il dato contabile e il dato del controlling, raggruppando i conti secondo l’impostazione del *Gruppo di conguaglio* di appartenenza inserito nel piano dei conti. La presenza di valori nella colonna *Differenza* su gruppi di conti che non prevedono una gestione extracontabile separata anticipata rispetto al dato contabile, sarà indice di una qualche assegnazione di valori a livello di registrazioni extracontabili di area, che richiederà un approfondimento per capirne l'origine ed eventualmente adattare il modello di analisi.
+**Adjustment values:** in the last tab, the differences between the accounting data and the controlling data are highlighted, grouping the accounts according to the *Adjustment Group* to which they belong as inserted in the chart of accounts. The presence of values in the *Difference* column on groups of accounts that do not provide for a separate off-balance management in advance of the accounting data will indicate some assignment of values at the level of off-balance registrations in the area, which will require further investigation to understand the origin and possibly adapt the analysis model.
 
-:::tip Esempio
-Quest'ultimo tab è importante per verificare, in particolare, quei conti (es. gli emolumenti del collegio sindacale) che la contabilità rileva posticipatamente e che quindi sono soggetti a rilevazione previsionale extracontabile nel controlling, al fine di controllarne il conguaglio infrannuale/annuale nella procedura di **Elaborazione periodi** dove è presente, nella sezione *Elaborazione dati contabili*, il campo **Tempi di bilanciamento** il quale permette di selezionare la logica *Infrannuale* piuttosto che *Annuale*.
+:::tip Example 
+This last tab is important to verify, in particular, those accounts (e.g., fees of the board of statutory auditors) that accounting records after the fact and are therefore subject to forecast off-balance recording in controlling, in order to check their mid-year/yearly adjustment in the **Process periods** procedure where, in the *Process accounting data* section, the field **Balancing timing** allows selecting the logic *Mid-Year* rather than *Yearly*.
 :::

@@ -1,8 +1,8 @@
 ---
-title: Visualizzazione movimenti dei centri nell'area
+title: View Movements of Centers in the Area 
 sidebar_position: 2
 ---
 
-Questa maschera è dedicata alla visualizzazione dei dati presenti nell'analitica delle registrazioni create all'interno della *Contabilità gestionale*.
+This screen is dedicated to viewing the data present in the analytics of the records created within *Managerial Accounting*.
 
-Una volta impostata l'area per la quale visualizzare i dati, si potranno quindi chiedere i movimenti dei centri filtrandoli per conto/sottoconto o per codice di centro di costo.
+Once the area for which to view the data is set, it will be possible to request the movements of the centers by filtering them by account/detail account or by cost center code.
