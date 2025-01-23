@@ -1,32 +1,32 @@
 ---
-title: Storico movimenti fisici di commessa
+title: Historical Physical Job Order Movements
 sidebar_position: 2
 ---
 
-Nello ***Storico movimenti fisici di commessa*** abbiamo visibilità delle quantità di produzione collegate ai progetti/commesse. In particolare abbiamo:
+In the ***Historical Physical Job Order Movements***, we have visibility of the production quantities linked to projects/job orders. In particular, we have:
 
-- [***Area***](/docs/controlling/controlling-parametrization/controlling-specific-settings/area-types-areas) di riferimento
+- [***Area***](/docs/controlling/controlling-parametrization/controlling-specific-settings/area-types-areas)
 
-- ***Anno*** e ***Periodo***
+- ***Year*** and ***Date Range***
 
-- ***Progetto*** di riferimento
+- ***Reference Project***
 
-- [***Centro aziendale***](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-centers) di origine del movimento
+- [***Corporate Center***](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-centers) of the movement
 
-- ***Classe*** e ***Codice*** dell'articolo prodotto/lavorato
+- ***Class*** and ***Code*** of the produced/worked item
 
-- ***Fase*** e ***Sottofase*** di produzione
+- ***Production Phase*** and ***Subphase***
 
-- [***Unità di misura***](/docs/controlling/controlling-parametrization/controlling-specific-settings/measure-units) del movimento
+- [***Unit of Measure***](/docs/controlling/controlling-parametrization/controlling-specific-settings/measure-units) of the movement
 
-- ***Quantità da produzione***, cioè il consuntivo rilevato dalle dichiarazioni di produzione
+- ***Production Quantity***, that is the expenditure recorded from production declarations
 
-- ***Quantità da fase ciclo***, cioè la quantità rispetto al teorico di ciclo
+- ***Production cycle Phase Quantity***, that is the quantity compared to the theoretical cycle
 
-- ***Quantità da fase standard***, cioè la quantità rispetto alla fase standard
+- ***Standard Phase Quantity***, that is the quantity compared to the standard phase
 
-- ***Lista tempi*** va di pari passo con il tipo di quantità rilevato nei campi precedenti
+- ***Time List*** goes hand in hand with the type of quantity recorded in the previous fields
 
-- ***Sorgente*** indica qual è l'origine del dato rilevato, tipicamente la *Produzione*
+- ***Source*** indicates the origin of the recorded data, typically *Production*
 
-Non è consentita la cancellazione nè la modifica o l'inserimento dati in griglia.
+Deleting, modification, or data insertion in the grid is not allowed.

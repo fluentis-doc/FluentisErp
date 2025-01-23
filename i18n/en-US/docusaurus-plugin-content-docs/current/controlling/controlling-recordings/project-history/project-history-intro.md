@@ -1,18 +1,16 @@
 ---
-title: Introduzione
+title: Introduction 
 sidebar_position: 1
 ---
 
-In questa sezione della ***Contabilità gestionale*** abbiamo le varie voci di visualizzazione dei dati elaborati sulla dimensione *Progetti/commesse*.
+In this section of ***Managerial Accounting***, we have various items for displaying data processed on the *Projects/Job Orders* dimension.
 
-Abbiamo a disposizione le seguenti voci:
+We have the following items available:
 
-- ***Storico movimenti fisici di commessa**, per vedere il dettaglio dei tempi (macchina/uomo/attrezzaggio) legati ai progetti
+- ***Historical physical job order movements**, to view the details of times (machine/man/rig) related to projects
 
-- ***Registrazioni gestionali***, per vedere costi e ricavi direttamente imputati a progetto/commessa dalla Chiusura infrannuale
+- ***Management Records***, to see costs and revenues directly attributed to the project/job order from the mid-year closing
 
-- ***Valori da produzione***, per vedere i costi di materiali e lavorazioni imputati a progetto/commessa
+- ***Production values***, to see the costs of materials and processes charged to the project/job order
 
-- ***Consolidato di progetto***, per vedere il risultato dell'elaborazione del consuntivo di progetto, che accoglierà costi diretti e indiretti attribuiti tramite Cost driver della dimensione progetti.
-
-
+- ***Project consolidation***, to see the result of the processing of the project budget, which will include direct and indirect costs allocated through Cost drivers of the project dimension.

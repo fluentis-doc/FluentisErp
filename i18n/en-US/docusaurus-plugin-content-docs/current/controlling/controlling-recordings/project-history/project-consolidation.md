@@ -1,54 +1,54 @@
 ---
-title: Consolidato di commessa
+title: Job Order Consolidation 
 sidebar_position: 5
 ---
 
-Ad ogni Elaborazione di un ***Consolidato di progetto*** creato dalla maschera di ***Elaborazione periodi*** troveremo qui dentro la relativa registrazione che ne contiene il dettaglio di tutti i costi e ricavi assegnati a progetti, siano questi diretti o indiretti da ribaltamento di cost driver applicati sui dati della dimensione direzionale.
+For each processing of a ***Job Order Consolidation*** created from the ***Process Periods*** screen, we will find the corresponding registration here that contains the details of all costs and revenues assigned to projects, whether direct or indirect from the allocation of cost drivers applied to the directional dimension data.
 
-I campi visualizzati sono:
+The displayed fields are:
 
-- ***Sottoconto***
+- ***Detail Account***
 - [***Area***](/docs/controlling/controlling-parametrization/controlling-specific-settings/area-types-areas)
-- [***Centro aziendale***](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-centers): si tratta in questo caso del *Centro di progetto/commessa*, cioè del centro che ha il flag 'Default per dimensione progetti* piuttosto che del centro assegnato al progetto tramite la tabella di ***Associazione centri progetti/commesse***.
-- [***Centro cedente***](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-centers), che sarà valorizzato dal centro di origine del movimento, sia esso derivato da un cost driver o meno
-- ***Anno***
-- ***Periodo***
-- ***Dare***
-- ***Avere***
-- ***Valore fisso***, che sommato al successivo valore variabile darà il valore Dare o Avere precedente
-- ***Valore variabile***, che sommato al precedente valore fisso darà il valore Dare o Avere precedente
-- ***Divisione***
-- ***Divisa***, sempre uguale alla divisa della società
-- ***Tipo riga***, che possono essere
-    - *0* cioè righe di origine: si usa sia per le righe che nascono dalle chiusure o dalle registrazioni manuali di chiusura o di area, ma anche per le righe dei driver di attribuzione
-    - *2* cioè righe ricevute: per i driver di ribaltamento, sono le righe che ribaltano il valore dal *Centro cedente* al *Centro aziendale*
-:::tip Nota
-Le righe di *attribuzione* sono sostanzialmente le righe di ribaltamento dei *Cost driver* che dal Centro di comodo *Conti da riassegnare* valorizzano i *Centri aziendali* effettivi della direzionale. I driver di *ribaltamento* sono sostanzialmente tutti gli altri.
+- [***Corporate Center***](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-centers): in this case, it refers to the *Project/Job Order Center*, which is the center that has the flag 'Default for project dimension' rather than the center assigned to the project via the ***Project/Job Order Center Association*** table.
+- [***Assignor Center***](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-centers), which will be populated by the origin center of the movement, whether derived from a cost driver or not.
+- ***Year***
+- ***Date Range***
+- ***Debit***
+- ***Credit***
+- ***Fixed value***, which, when added to the subsequent variable value, will give the previous Debit or Credit value.
+- ***Variable value***, which, when added to the previous fixed value, will give the previous Debit or Credit value.
+- ***Division***
+- ***Currency***, always the same as the company's currency.
+- ***Type line***, which can be:
+    - *0*, that is, source lines: used for both lines that arise from closures or manual closure or area registrations, but also for attribution driver lines.
+    - *2*, that is, received lines: for allocation drivers, they are the lines that allocate the value from the *Assignor Center* to the *Corporate Center*.
+:::tip Note
+The *attribution* lines are essentially the allocation lines of the *Cost drivers*, which from the convenient *Accounts to be assigned* populate the actual *Corporate Centers* of the directional. The *rollover drivers* are essentially all the others.
 :::
-- ***Tipo distribuzione*** del driver applicato
-- [***Cost driver***](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-drivers) applicato
-- ***Sorgente***, cioè l'origine del dato, che può essere:
-    - *Contabile* (1), cioè proveniente direttamente dalla *Chiusura infrannuale*
-    - *Manuale* (2), cioè proveniente dalle *Registrazioni extracontabili di area*
-    - *Formula* (3), cioè proveniente da registrazioni create dalle *Formule di calcolo*
-    - *Ammortamenti* (4), cioè proveniente da registrazioni create dall'elaborazione degli ammortamenti del controlling
-    - *Conguagli* (5), cioè proveniente da registrazioni dei conguagli infrannuali o annuali
-    - *Driver delle tariffe* (6), cioè proveniente dai driver di applicazione delle tariffe 
-    - *Rimanenze* (7), cioè proveniente da registrazioni delle rimanenze nel controlling
-    - *Materiali produzione* (8), cioè proveniente da costi per i materiali di produzione
-    - *Lavorazioni esterne* (9), cioè proveniente da costi del conto lavoro
-    - *Trasformazioni di produzione* (10), cioè dalle lavorazioni interne in produzione
-    - *tempo macchina* (11)
-    - *tempo uomo* (12)
-    - *attrezzaggio macchina* (13)
-    - *attrezzaggio uomo* (14)
-    - *Consolidamento controlling* (15), cioè dalla procedura di *Consolidamento master* del controlling, in installazioni multisocietarie
-:::
+- ***Distribution type*** of the applied driver
+- [***Cost driver***](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-drivers) applied
+- ***Source***, that is, the origin of the data, which can be:
+    - *Accounting (1)*, that is, directly from the *Mid-Year Closing*
+    - *Manual (2)*, that is, coming from *Off-balance records for area*
+    - *Formula (3)*, that is, coming from registrations created by *Formula*
+    - *Depreciation (4)*, that is, coming from registrations created from the processing of controlling depreciation
+    - *Adjustments (5)*, that is, coming from registrations of interim or annual adjustments
+    - *Rate drivers (6)*, that is, coming from the rate application drivers
+    - *Inventory (7)*, that is, coming from inventory registrations in controlling
+    - *Material Production (8)*, that is, coming from costs for production materials
+    - *External Processing (9)*, that is, coming from costs of labor accounts
+    - *Production Transformations (10)*, that is, from internal processing in production
+    - *Machine time (11)*
+    - *Manpower timing (12)*
+    - *Machine rig time (13)*
+    - *Worker rig time (14)*
+    - *Controlling Consolidation (15)*, that is, from the *Master Consolidation* procedure of controlling in multi-company installations.
+::: 
 
-- ***Tipo costo*** applicato alla riga, per le righe con ogirine *Materiali*
+- ***Cost type*** applied to the line, for lines with origins from *Materials*
 
-- ***Numero***, ***Anno***, ***Riga***, ***Wbs***: riferimenti ai progetti, non valorizzati
+- ***Number***, ***Year***, ***Row***, ***WBS***: references to projects, not populated.
 
-- [***Unità di misura***](/docs/controlling/controlling-parametrization/controlling-specific-settings/measure-units), ***Articolo***, ***Descrizione articolo***, ***Fase***, ***Sottofase***, ***Numero***, ***Descrizione*** e ***Quantità*** dell'articolo prodotto o lavorato
+- [***Unit of Measure***](/docs/controlling/controlling-parametrization/controlling-specific-settings/measure-units), ***Item***, ***Item Description***, ***Phase***, ***Subphase***, ***Number***, ***Description***, and ***Quantity*** of the produced or processed item.
 
-Non è consentita la cancellazione nè la modifica o l'inserimento dati in griglia.
+Deleting, modification, or data insertion in the grid is not allowed.

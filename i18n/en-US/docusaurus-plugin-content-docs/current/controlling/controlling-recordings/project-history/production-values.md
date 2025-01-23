@@ -1,26 +1,26 @@
 ---
-title: Valori da produzione
+title: Production Values 
 sidebar_position: 4
 ---
 
-In questa maschera possiamo visualizzare i costi dei materiali collegati a progetto/commessa, sia quelli lavorati internamente che esternamente.
+In this interface, we can visualize the costs of materials related to projects/job orders, both those processed internally and externally.
 
-I campi disponibili sono i seguenti:
+The available fields are as follows:
 
-- il ***Sottoconto*** di costo, che sarà tipicamente il Fatturato acquisti collegato all'articolo piuttosto che il conto delle lavorazioni esterne
+- the ***Detail account***, which will typically be the Purchase Revenue linked to the item rather than the account of external processing
 
-- il [***Centro aziendale***](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-centers) collegato alla riga, che arriva tipicamente dell'impostazione nel piano dei conti del sottoconto precedente
+- the [***Corporate Center***](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-centers) linked to the line, which typically comes from the setting in the chart of accounts for the previous detail account
 
-- l'***Anno*** e il ***Periodo*** di riferimento
+- the ***Year*** and the ***Date Range***
 
-- ***Numero progetto***, ***Anno progetto***, ***Riga***, ***Numero Wbs***: saranno sempre valorizzati dai riferimenti ai progetti
+- ***Project Number***, ***Project Year***, ***Row***, ***WBS Number***: these will always be populated by references to projects
 
-- ***Articolo*** e ***Descrizione articolo*** i dati dell'articolo movimentato
+- ***Item*** and ***Item Description*** are the data of the item in motion
 
-- l'[***Unità di misura***](/docs/controlling/controlling-parametrization/controlling-specific-settings/measure-units) del movimento
+- the [***Unit of Measure***](/docs/controlling/controlling-parametrization/controlling-specific-settings/measure-units) of the movement
 
-- la ***Quantità*** del movimento
+- the ***Quantity*** of the movement
 
-- il ***Costo medio***, piuttosto che ***Costo standard*** o ***Costo ultimo*** per la riga
+- the ***Average Cost***, or ***Standard Cost*** or ***Latest Cost*** for the line
 
-Non è consentita la cancellazione nè la modifica o l'inserimento dati in griglia.
+Deleting or modification, as well as data input in the grid, is not allowed.
