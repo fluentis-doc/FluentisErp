@@ -31,7 +31,7 @@ In questa sezione si può indicare il periodo per il quale si vuole verificare l
 
 **Visualizza righe senza disponibilità**
 
-Se attivo, questo flag indica che si vogliono visualizzare anche le righe che non hanno disponibilità in quel momento, scegliendo di visualizzare tra queste:
+- *Visualizza righe senza disponibilità*: se attivo, questo flag indica che si vogliono visualizzare anche le righe senza nessun valore in ognuno dei campi della disponibilità in quel momento; se invece l'articolo ha carichi e scarichi con  somma pari a zero, questo viene visualizzato anche senza flag; 
 
 - *Solo in ritardo*: quindi le righe la cui quantità alla data presa in esame dovrebbe essere già prodotta, ma a causa di ritardi produttivi ancora non lo è;
 

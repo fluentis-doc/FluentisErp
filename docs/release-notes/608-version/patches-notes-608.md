@@ -3,6 +3,50 @@ title: Patch notes Versione 608
 sidebar_position: 2
 ---
 
+### Patch 608.1-0064 - 18/12/2024
+> - FI - la stampa di verifica delle dichiarazioni di intento totalizza ora anche i dati dei rientri del conto lavoro non fatturati (#TT05290/24)
+> - FI - la stampa definitiva della liquidazione iva periodica ora memorizza il saldo a credito nel campo del credito precedente della form di Dichiarazione iva periodica, non più in quello delle Variazioni iva periodo precedente. (#TT03694/24 e TT05230/24)
+> - FI - problemi in fase di annullamento stampa definitiva liquidazione ( TT04859/24 )
+> - MS - In Capacità centri lavoro migliorata e ottimizzata la visualizzazione degli orari di inizio e fine delle fasi. (#TT04350/24)
+> - SH – corretto errore calcolo livello distinta base nell’analisi disponibilità (#TT05376/24)
+> - SD - Risoluzione errore che indicava l'apertura del listino dal proprio utente nel caso di precedente utilizzo della procedura di Duplica e Manutenzione Listini (#TT05236/24)
+> - CO - Revisione procedura di valorizzazione area acquisti/vendite, esclusione test sulla stampa definitiva iva delle liquidazioni e dei registri (#TT04436/24)
+> - FI - stampa controllo dettaglio dichiarazione intento fornitori ( TT05290/24)
+> - FI - partial sale and depreciation ( TT05469/24)
+
+
+### Patch 608.1-0063 - 12/12/2024
+> - SCM – Durante la creazione di un Ordine Fornitore a partire da una RDA, se l'articolo nella RDA è stato inserito con un'unità di misura alternativa, sulla riga articolo dell'ordine verranno riportate l'unità di misura principale e la relativa quantità. L'unità di misura alternativa e la sua quantità saranno inserite nell'apposito campo (#TT04650/24).
+> - PR - aggiunti alla form Distinte di anticipo i campi per il totale distinta e totale anticipato. ( TT04711/24)
+> - SCM – Contabilizzazione fatture di acquisto – Corretta anomalia in fase di contabilizzazione fatture di acquisto (#TT01625/24)
+> - SD - Migliorato campo Percentuale/ Valore nella riga articolo dei documenti di vendita, Tab Agente, che non riportava correttamente il dato in tutte le condizioni di calcolo della provvigione. (#TT5075/24)
+> - SCS – Form Rientri – Corretta anomalia che in caso di workflow alla prima apertura del documento dava errore (#TT04944/24)”
+> - FI - nel caso di contabilizzazione fatture di acquisto in divisa estera con integrazione iva reverse charge, revisione gestione arrotondamento importo iva convertita in euro (#TT03221/24).
+> - Scm: Errore della nota di consegna dell'acquisto durante il caricamento e il rollback #TT05306/24
+> - FI - generazione file Dichiarazione di intento, revisione campo ‘Codice fiscale società dichiarante’ (posizione 296 del record B), ora viene valorizzata dal codice fiscale dell’anagrafica dichiarante impostata in testata e non più con il codice fiscale della società attiva (#TT05167/24)
+> - SCS – Se la Società prevede la Gestione Controlling (con l’omonimo flag nella tabella Società), l’Evasione di un DDT o di un Rientro all’interno di una fattura riporta per date di competenza le date dello scarico documento, se non presente le date del documento (#TT05126/24)
+> - SCM, SCS - Corretto errore nella registrazione di un Rientro di conto lavoro o di un DDT di Acquisto dall’interno del documento (#TT04754/24).
+> - CO - modifica manuale delle registrazioni extracontabili del controlling, revisione valorizzazione dei centri di costo per valorizzazione campi importo in divisa e società (#TT05235/24)
+
+
+### Patch 608.1-0062 - 05/12/2024
+> - WMS – In gestione spunta viene correttamente valorizzato il campo WMM_LoadingUnitItem_WMLUI_Id delle UDC create con più righe. (#TT05104/24)
+> - FI - revisione aggiornamento flag di chiusura Sollecito al variare della chiusura dei singoli movimenti al suo interno. (#TT02651/24)
+> - SD-Revisione assegnazione dichiarazione di intento su righe di storno acconto, ora si legge la dichiarazione valida per la data fattura. Cancellando il riferimento assegnato sarà visibile la dich intento della riga originale acconto o quella valida sui riferimenti fattura impostati per la testata (#TT04907/24)
+> - SD – La Duplica fattura riporta il campo LedgerAccountForStatisticReport.Id nel nuovo documento (#TT05040/24)
+> - FI - revisione contabilizzazione fatture da ricevere per valorizzazione stringhe descrittive dentro la registrazione creata. Attenzione che in causale: 1 il tipo importo del costo deve essere ‘imponibile sottoconto + imposta indetraibile sottoconto’ 2 se si vuole riportare numero e data documento di trasporto servirà l’obbligo del tipo/numero e data documento (#TT05044/24)
+> - CO - revisione gestione modelli di riclassificazione per livelli con codice/descrizione null (#TT05055/24)
+> - MES – Corretto bug che azzerava la Quantità prodotta di un Ordine di produzione quando veniva eseguito il Ricalcolo Costi ordine di Produzione (#TT05094/24).
+> - MES - Corretto bug nel Calcolo costi Ordini di Produzione con valorizzazione dei materiali al costo del lotto (#TT04509/24).
+
+### Patch 608.1-0061 - 28/11/2024
+> - Sales Fix IndirectExchangeRate at migration (#TT04919/24)
+> - SH – Corretto errore nel Navigatore articoli che, se usato in modalità ridotta, talvolta perdeva il focus del puntatore aprendo un documento diverso rispetto a quello selezionato (#TT01033/24).
+> - Purchase/Project/Subcontractor - fix Indirect echange rate at migration (#TT04930/24)
+> - PR, FI - L’import dei file bancari per la riconciliazione ora assegna in testata la divisa dall’anagrafica banca. Revisione dell’assegnazione per movimenti (#TT04525/24)
+> - FI, PR, CO - update IndirectExchangeRate in administrative area ( TT05095/24)  
+> - MPS - Corretto bug in pianificazione generale nel caso fosse presente una attrezzatura nel ciclo senza l’articolo associato. (#TT05077/24)
+
 ### Patch 608.1-0060 - 21/11/2024
 > - Revisione calcolo residuo per partite in valuta (#TT04613/24)
 > - FI - stampa controllo cespiti, revisione segni conti dei fondi ammortamento (#TT04667/24)

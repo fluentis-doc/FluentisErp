@@ -46,7 +46,7 @@ Ako postoje dostavnice s različitim rješenjima plaćanja i ako nije postavljen
 
 *Reference otpremnice*
 
-**Umetni referente otpremnice**: ako je ova zastava postavljena, na kartici [Artikli](/docs/purchase/purchase-invoices/insert-purchase-invoice/items) računa bit će prikazan *napomena Artikla* koja će sadržavati reference dostavnica iz kojih je račun stvoren. Sadržaj ove napomene mora se unijeti u polje *Opis*, prema parametrima opisanim u oznaci.
+**Umetni referente otpremnice**: ako je ova zastava postavljena, na kartici [Artikli] računa bit će prikazan *napomena Artikla* koja će sadržavati reference dostavnica iz kojih je račun stvoren. Sadržaj ove napomene mora se unijeti u polje *Opis*, prema parametrima opisanim u oznaci.
 
 *Primjer*: ![](/img/it-it/purchase/purchase-invoices/procedures/purchase-delivery-note-valorization/image06.png). Ako otpremnica ima broj 5 i datum 11.09.2018., Artikl napomena na računu bit će: 'Otpremnica broj 5 od 11.09.2018.'.
 
