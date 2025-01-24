@@ -1,22 +1,16 @@
 ---
-title: Ricerca Taratura strumenti
+title: Caută Calibrare instrumente
 sidebar_position: 1
 ---
 
-Il filtro si trova sul percorso **Qualità > Taratura strumenti > Taratura strumenti**.   
+Permite introducerea noilor *Calibrări instrumente* sau căutarea celor deja existente pentru a le vizualiza, modifica sau șterge.
 
-Il filtro dati consente di inserire nuove *Tarature strumenti* o di ricercare quelle già esistenti per visualizzarle, modificarle oppure cancellarle.   
+Form-ul se compune dintr-o zonă de filtru și una de rezultat. După ce toate filtrele dorite sunt setate, va fi suficient să faci clic pe butonul **Caută** pentru a vizualiza rezultatele în tabelul rezultatelor.
 
-### ![](/img/neutral/common/search.png) Ricerca Taratura strumenti
+Pentru a introduce *Calibrări instrumente* noi apăsați butonul **Nou**.
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.   
+### Modificare sau Vizualizare Calibrare instrumente 
 
-### ![](/img/neutral/common/new.png) Inserimento Taratura strumento
+Pentru a modifica sau vizualiza calibrările, efectuați dublu clic pe rândul care va interesează din tabelul rezultatelor sau, selectând unul sau mai multe rânduri, apăsați butoanele **Modifică** sau **Vizualizează**.
 
-Per poter inserire nuove *Tarature strumenti* è necessario premere il pulsante **Nuovo**.   
-
-### ![](/img/neutral/common/edit.png) Modifica o ![](/img/neutral/common/view.png) Visualizzazione Taratura strumenti
-
-Per aprire la gestione, della griglia di risultato, è necessario fare doppio click sulla riga di nostro interesse oppure, selezionando una o più righe, premere i pulsanti **Modifica** o **Visualizza**.   
-
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Pentru tot ceea ce nu este detaliat în acest document despre funcționarea comună a form-urilor, consultați [Funcționalități, butoane și câmpuri comune](/docs/guide/common).

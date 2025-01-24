@@ -1,48 +1,46 @@
 ---
-title: Introduzione
+title: Introducere
 sidebar_position: 1
 ---
 
-Questo modulo permette la catalogazione e la manutenzione periodica e straordinaria degli strumenti di monitoraggio e misurazione utilizzati per garantire l’idoneità dei prodotti e l’erogazione dei servizi offerti.   
+Acest modul permite catalogarea și întreținerea periodică și extraordinară a instrumentelor de monitorizare și măsurare utilizate pentru a asigura adecvarea produselor și furnizarea serviciilor oferite.
 
-
-## I documenti gestiti
+## Documente gestionate
 
 import Link from '@docusaurus/Link';
 
 <div className="cardContainer">
     <div className="card">
-###     <Link to="/docs/quality/calibration-tools/measurement-tools/measurement-tool-management">Strumenti di misura</Link>
-        <p>In questa anagrafica vengono memorizzati gli strumenti di misura utilizzati per garantire l’idoneità dei prodotti e l’erogazione dei servizi offerti.</p>
-        <p>Allo strumento di misura è possibile associare le informazioni di acquisto, di responsabilità, le proprietà tecniche/meccaniche, di ubicazione e di taratura.</p>
-        <p>Se lo strumento è soggetto a taratura e la taratura è interna, è possibile definire quali sono le attività che devono essere fatte e i valori da rilevare affinché la taratura dia esito positivo.</p>
-        <p>Se lo strumento è soggetto a taratura e la taratura è esterna, è possibile definire qual e l'ente terzo che effettuerà la taratura.</p>
-        <p>Se inserita una periodicità temporale di taratura il pulsante di "Pianifica nuove tarature" permette la creazione automatica, per un periodo desiderato, delle tarature pianificate.</p>
-        <p>A standard sono disponibili le reportistiche di: *Registro strumenti* raggruppati per: *Strumento*, *Categoria*, *Fornitore*, *Ubicazione*, *Utilizzatore*, *Scadenza garanzia* e *Scadenza taratura*, *Registro Strumenti non soggetti a taratura* e *Scheda Strumento di misura*.</p>
+###     <Link to="/docs/quality/calibration-tools/measurement-tools/measurement-tool-management">Instrumente de măsură</Link>
+        <p>În această listă sunt memorate instrumentele de măsură utilizate pentru a asigura adecvarea produselor și furnizarea serviciilor oferite.</p>
+        <p>Instrumentului de măsură îi pot fi asociate informațiile de achiziție, de responsabilitate, proprietățile tehnice/mecanice, de locație și de calibrare.</p>
+        <p>Dacă instrumentul este supus calibrării iar calibrarea este internă, se pot defini activitățile care trebuie efectuate și valorile de identificat astfel încât calibrarea să aibă un rezultat pozitiv.</p>
+        <p>Dacă instrumentul este supus calibrării iar calibrarea este externă, se poate defini entitatea terță care va efectua calibrarea.</p>
+        <p>Dacă este introdusă o periodicitate temporală de calibrare, butonul de *Programare calibrări noi* permite crearea automată, pentru o perioadă dorită, a calibrărilor planificate.</p>
+        <p>Sunt disponibile rapoartele standard: *Registru instrumente* grupate pe: *Instrument*, *Categorie*, *Furnizor*, *Locație*, *Utilizator*, *Scadență garanție* și *Scadență calibrare*, *Registru instrumente nesupuse calibrării* și *Fișă instrument de măsură*.</p>
     </div>
 </div>
 <div className="cardContainer">
     <div className="card">
-###     <Link to="/docs/quality/calibration-tools/calibration-tool/calibration-tool-management">Taratura strumenti</Link>
-        <p>Nella gestione Taratura strumenti è possibile la registrazione delle Tarature interne e dei Certificati di taratura.</p>
-        <p>Se lo strumento è soggetto a taratura e la taratura è interna, è possibile inserire, per le posizioni previste, i valori rilevati. Fluentis assegnerà automaticamente un esito positivo o negativo, per singola posizione e generale.</p>
-        <p>Se lo strumento è soggetto a taratura e la taratura è esterna, è possibile allegare il Certificato di taratura ricevuto dall'ente terzo che ha effettuato la taratura. L'esito, in questo caso, verrà attribuito manualmente dall'operatore.</p>
-        <p>A standard sono disponibili le reportistiche di: *Registro tarature strumenti* raggruppati per: *Rapporto*, *Strumento* e *Operatore*.</p>
+###     <Link to="/docs/quality/calibration-tools/calibration-tool/calibration-tool-management">Calibrare instrumente</Link>
+        <p>În *Calibrare instrumente* este posibilă înregistrarea Calibrărilor interne și a Certificatelor de calibrare.</p>
+        <p>Dacă instrumentul este supus calibrării iar calibrarea este internă, se pot insera, pentru pozițiile prevăzute, valorile detectate. Fluentis va atribui automat un rezultat pozitiv sau negativ, pentru fiecare poziție și în general.</p>
+        <p>Dacă instrumentul este supus calibrării iar calibrarea este externă, se poate atașa Certificatul de calibrare primit de la terțul care a efectuat calibrarea. Rezultatul, în acest caz, va fi atribuit manual de operator.</p>
+        <p>Sunt disponibile rapoartele standard: *Registru calibrări instrumente* grupate pe: *Raport*, *Instrument* și *Operator*.</p>
     </div>
 </div>
 
+## Pentru a începe să utilizezi
 
-## Per iniziare ad utilizzare   
+**Instrumentele de măsură**:
+- inserați o [*Categorie instrumente de măsură*](/docs/configurations/tables/quality/calibration-tools/measurement-tool-categories)
+- inserați un nou [*Instrument de măsură*](/docs/quality/calibration-tools/measurement-tools/measurement-tool-management)
 
-gli **Strumenti di misura**:
-- devi definire una [*Categoria Strumenti di misura*](/docs/configurations/tables/quality/calibration-tools/measurement-tool-categories)   
-- devi inserire un nuovo [*Strumento di misura*](/docs/quality/calibration-tools/measurement-tools/measurement-tool-management)   
+**Calibrarea instrumentelor**:
+- inserați: un [*Tip calibrare*](/docs/configurations/tables/quality/calibration-tools/calibration-type), relativa *Numerare* și un [*Instrument de măsură*](/docs/quality/calibration-tools/measurement-tools/measurement-tool-management)
+- pentru a facilita gestionarea *Calibrării instrumentelor* setează [*Parametrii Calibrare instrumente*](/docs/configurations/parameters/quality/calibration-tools)
+- inserați o nouă [*Calibrare instrument*](/docs/quality/calibration-tools/calibration-tool/calibration-tool-management)
 
-la **Taratura strumenti**:
-- devi definire: un [*Tipo taratura*](/docs/configurations/tables/quality/calibration-tools/calibration-type), relativa *Numerazione* e uno [*Strumento di misura*](/docs/quality/calibration-tools/measurement-tools/measurement-tool-management)   
-- per agevolare la gestione delle *Taratura strumenti* impostare i [*Parametri Taratura strumenti*](/docs/configurations/parameters/quality/calibration-tools)   
-- devi inserire una nuova [*Taratura strumento*](/docs/quality/calibration-tools/calibration-tool/calibration-tool-management)   
+## Legături cu alte module
 
-
-## Collegamenti con altri moduli
-Il modulo della *Taratura strumenti* non è collegato ad alcun altro modulo.   
+Modulul de *Calibrare instrumente* nu este asociat niciunui alt modul.
