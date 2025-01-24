@@ -1,34 +1,34 @@
 ---
-title: Storico indici
+title: Index History
 sidebar_position: 4
 ---
 
-Lo storico indici è il punto dove troviamo tutti i dati storici delle nostre tariffe di costo, che otterremo dal rapporto tra i totali dei numeratori e i denominatori. La griglia infatti presenta gli importi, non direttamente l'indice del singolo periodo
+The index history is the point where we find all the historical data of our cost rates, which we obtain from the ratio between the totals of the numerators and denominators. The grid indeed presents the amounts, not directly the index of the single period.
 
-:::tip Nota
-Quando poi utilizziamo gli indici per i cost driver di ribaltamento, prenderemo il singolo periodo per i driver della *Dimensione* direzionale piuttosto che un indice elaborato magari dalle somme dei numeratori e denominatori degli ultimi dodici mesi quando siamo in un driver per la *dimensione* progetti/commesse
+:::tip Note
+When we use the indices for the cost drivers of allocation, we will take the single period for the *Dimension* directional drivers rather than an index elaborated perhaps from the sums of the numerators and denominators of the last twelve months when we are using a driver for the *projects/job orders* dimension.
 :::
 
-In particolare abbiamo:
+In particular, we have:
 
-- l'[***Area***](/docs/controlling/controlling-parametrization/controlling-specific-settings/area-types-areas) di riferimento dell'indice
+- the [***Area***](/docs/controlling/controlling-parametrization/controlling-specific-settings/area-types-areas) of the index
 
-- il [***Centro aziendale***](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-centers)
+- the [***Corporate Center***](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-centers)
 
-- l'***Anno*** e il ***Periodo*** di riferimento
+- the ***Year*** and the ***Date Range*** of reference
 
-- il ***Valore fisso*** e il ***Valore variabile***: sono le due parti del totale costi attribuiti al centro tramite il *Modello di riclassificazione* associato al centro stesso
+- the ***Fixed Value*** and the ***Variable Value***: these are the two parts of the total costs attributed to the center through the *Reclassification Model* associated with the center itself
 
-- le quattro [*unità di misura*](/docs/controlling/controlling-parametrization/controlling-specific-settings/measure-units) possibili per ogni centro: l'***Unità di misura fissa***, la ***Seconda unità di misura fissa***, l'***Unità di misura variabile*** e la ***Seconda unità di misura variabile***. I campi saranno valorizzati sugli indici fisici e a seconda delle impostazioni del singolo centro
+- the four [*units of measure*](/docs/controlling/controlling-parametrization/controlling-specific-settings/measure-units) possible for each center: the ***Fixed Unit of Measure***, the ***Second Fixed Unit of Measure***, the ***Variable Unit of Measure***, and the ***Second Variable Unit of Measure***. The fields will be populated based on the physical indices and according to the settings of the individual center.
 
-- la ***Prima unità di misura quantità fissa*** Il campo sarà valorizzato sugli indici fisici e a seconda delle impostazioni del singolo centro, è il denominatore per l'indice fisso, è il denominatore per l'indice fisso per la prima unità di misura
+- the ***First Fixed Quantity Unit of Measure***: this field will be populated based on the physical indices and according to the settings of the individual center, it is the denominator for the fixed index, and the denominator for the fixed index for the first unit of measure.
 
-- la ***Prima unità di misura quantità variabile*** Il campo sarà valorizzato sugli indici fisici e a seconda delle impostazioni del singolo centro, è il denominatore per l'indice variabile della prima unità di misura
+- the ***First Variable Quantity Unit of Measure***: this field will be populated based on the physical indices and according to the settings of the individual center, it is the denominator for the variable index of the first unit of measure.
 
-- la ***Seconda unità di misura quantità fissa*** Il campo sarà valorizzato sugli indici fisici e a seconda delle impostazioni del singolo centro, è il denominatore per l'indice fisso della seconda unità di misura
+- the ***Second Fixed Quantity Unit of Measure***: this field will be populated based on the physical indices and according to the settings of the individual center, it is the denominator for the fixed index of the second unit of measure.
 
-- la ***Seconda unità di misura quantità variabile*** Il campo sarà valorizzato sugli indici fisici e a seconda delle impostazioni del singolo centro, è il denominatore per l'indice variabile della seconda unità di misura
+- the ***Second Variable Quantity Unit of Measure***: this field will be populated based on the physical indices and according to the settings of the individual center, it is the denominator for the variable index of the second unit of measure.
 
-- il ***Denominatore***, valorizzato per gli indici percentuali
+- the ***Denominator***, populated for percentage indices.
 
-Non è consentita la cancellazione nè la modifica o l'inserimento dati in griglia.
+Deleting, modification, or entry of data in the grid is not allowed.

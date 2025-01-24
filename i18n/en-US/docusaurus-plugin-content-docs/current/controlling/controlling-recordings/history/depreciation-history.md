@@ -1,28 +1,28 @@
 ---
-title: Storico ammortamenti
+title: Historical Amortization
 sidebar_position: 2
 ---
 
-La maschera dello ***Storico ammortamenti*** consente di visualizzare il dettaglio, cespite per cespite, del risultato di elaborazione degli ammortamenti tecnici specifici del *Controlling*. Nella maschera abbiamo visibilità dei seguenti campi:
+The ***Historical Amortization*** mask allows you to view the details, asset by asset, of the processing result of the technical depreciations specific to *Controlling*. In the mask, we have visibility of the following fields:
 
-- L'[***Area***](/docs/controlling/controlling-parametrization/controlling-specific-settings/area-types-areas) di riferimento
+- The [***Area***](/docs/controlling/controlling-parametrization/controlling-specific-settings/area-types-areas) of reference
 
-- Il [***Centro aziendale***](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-centers) di attribuzione dell'ammortamento
+- The [***Corporate Center***](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-centers) to which the depreciation is attributed
 
-- L'***Anno*** e il ***Periodo*** di riferimento
+- The ***Year*** and the ***Date Range*** of reference
 
-- La ***Percentuale*** utilizzata, se il calcolo è a percentuale
+- The ***Percentage*** used if the calculation is based on percentage
 
-- La ***Quantità*** del periodo, se il calcolo è a quantità
+- The ***Quantity*** of the period, if the calculation is based on quantity
 
-- L'***Importo*** dell'ammortamento
+- The ***Value*** of the depreciation
 
-- Il ***Costo unitario***, se il calcolo è a quantità
+- The ***Cost per unit*** if the calculation is based on quantity
 
-- Il ***Sottoconto*** di costo utilizzato
+- The ***Deatil account*** used
 
-- i riferimenti al ***Numero*** e ***Descrizione*** del cespite di riga
+- References to the ***Number*** and ***Description*** of the asset line
 
-A partite da questo dettaglio calcolato dalla form di ***Elaborazione periodi***, ***FluentisERP*** avrà creato una ***Registrazione extracontabile di area*** che presenterà l'analitica valorizzata dai totali di conto/centro e range di date di competenza di questa origine dati.
+Starting from this detail calculated by the ***Process Periods*** form, ***FluentisERP*** will have created an ***Off-balance Area Registration*** that will present the analytical values from the totals of account/center and date range related to this data source.
 
-Non è consentita la cancellazione nè la modifica o l'inserimento dati in griglia.
+Deleting, modification, or data entry in the grid is not allowed.

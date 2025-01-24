@@ -1,25 +1,25 @@
 ---
-title: Storico flusso fisico
+title: Physical Flow History 
 sidebar_position: 1
 ---
 
-Da questa form è possibile interrogare, in sola modalità visualizzazione, lo storico delle registrazioni gestionali espresse in grandezze fisiche non economiche.
+From this form, it is possible to query, in view-only mode, the history of management records expressed in non-economic physical quantities.
 
-La griglia presenta i seguenti campi:
-- l'[***Area***](/docs/controlling/controlling-parametrization/controlling-specific-settings/area-types-areas) di analisi
+The grid presents the following fields:
+- the [***Area***](/docs/controlling/controlling-parametrization/controlling-specific-settings/area-types-areas) of analysis
 
-- il [***Centro aziendale di origine***](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-centers) della quantità
+- the [***Origin corporate center***](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-centers) of the quantity
 
-- il [***Centro di destinazione***](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-centers) della quantità
+- the [***Destination center***](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-centers) of the quantity
 
-- l'***Anno*** e il ***Periodo*** di riferimento
+- the ***Year*** and the ***Date Range*** of reference
 
-- l'[***Unità di misura*** ](/docs/controlling/controlling-parametrization/controlling-specific-settings/measure-units)
+- the [***Unit of measure*** ](/docs/controlling/controlling-parametrization/controlling-specific-settings/measure-units)
 
-- la ***Quantità***
+- the ***Quantity***
 
-- nel campo ***Calcolato*** abbiamo la vizualizzaione dell'origine del dato: solitamente sarà la *Registrazione movimenti fisici*, ma potrebbe anche essere il *Flusso movimenti fisici*
+- in the ***Calculated*** field, we have the visualization of the data source: it will usually be the *Physical Movement Registration*, but it could also be the *Physical Movement Flow*
 
-- i campi ***Codice***, ***Numero*** e ***Descrizione*** del cespite di riferimento della riga
+- the ***Code***, ***Number***, and ***Description*** fields of the reference asset of the line
 
-Non è consentita la cancellazione nè la modifica o l'inserimento dati in griglia.
+Deleting, modification, or data insertion in the grid is not allowed.
