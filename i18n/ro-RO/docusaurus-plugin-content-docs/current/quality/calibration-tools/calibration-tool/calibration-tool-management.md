@@ -15,26 +15,21 @@ Tot ca standard este disponibil:
 > **Registru calibrări instrumente**: listă a *Calibrărilor instrumente* grupabile pe: *Raport*, *Instrument* și *Efectuat de*.   
 :::
 
-## Butoane de comandă
-
-### ![](/img/neutral/common/save.png) Salvează (Salva)
-
-Apăsând acest buton se memorează toate informațiile modificate ale *Calibrării instrument (Taratura strumento)* afișate.
-
 ## Gestionare date
 
-### Date de antet
+### Antet
 
-Informațiile gestionate sunt:   
-> **Tip calibrare (Tipo taratura)**: este *Tipul de calibrare (Tipo taratura)* (dat obligatoriu).   
-> La introducerea manuală a unei noi *Calibrări (Taratura)* se propune *Tipul de calibrare manuală (Tipo taratura manuale)* indicat în *Parametrii Calibrare instrumente (Parametri Taratura strumenti)*.   
+#### Câmpuri specifice   
+
+> **Tip calibrare**: este *Tipul de calibrare*.   
+> La introducerea manuală a unei noi *Calibrări* este propus *Tipul de calibrare manuală* indicat în *Parametrii Calibrare instrumente*.   
 >
-> **An/Număr (Anno/Numero)**: sunt *Anul (Anno)* și *Numărul (Numero)* *Calibrării instrument (Taratura strumento)* (date ambele obligatorii).   
-> La introducerea unei noi *Calibrări instrument (Taratura strumento)*:   
-> - *Data calibrare efectivă (Data taratura effettiva)* este propusă egală cu data curentă;   
-> - *Anul (Anno)* și *Numărul (Numero)* sunt propuse în funcție de *Data calibrare efectivă (Data taratura effettiva)* și *Numerotarea (Numerazione)* asociată *Tipului de calibrare (Tipo taratura)*.   
+> **An/Număr**: reprezintă *Anul* și *Numărul* *Calibrării instrumentului*.   
+> La introducerea unei noi *Calibrări instrument*:   
+> - *Dată calibrare efectivă* este propusă egală cu data curentă;   
+> - *An* și *Număr* sunt propuse în funcție de *Dată calibrare efectivă* și *Numerotarea* asociată *Tipului de calibrare*.   
 >
-> **Calibrare efectuată de (Taratura effettuata da)**: expander unde este posibil să se introducă:   
+> **Calibrare efectuată de**: expander în care se poate insera:   
 >
 >> **Calibrare internă (Taratura interna)**: indică faptul că *Instrumentul de măsură (Strumento di misura)* este calibrat de un subiect intern al companiei.   
 >> **Laborator extern (Laboratorio esterno)**: este denumirea socială a *Furnizorului (Fornitore)* care efectuează calibrarea externă.   
