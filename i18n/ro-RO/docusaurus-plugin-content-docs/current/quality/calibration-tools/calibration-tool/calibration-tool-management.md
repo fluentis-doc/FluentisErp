@@ -1,134 +1,124 @@
 ---
-title: Taratura strumenti
+title: Calibrare instrumente
 sidebar_position: 2
 ---
 
-La gestione si trova sul percorso **Qualità > Taratura strumenti > Taratura strumenti > Nuovo taratura strumento** oppure è possibile eseguirla dalla **Ricerca Taratura strumenti**.   
+Form-ul se află pe calea **Calibrare instrumente > Nou calibrare instrument** sau poate fi executată din **Căutare Calibrare instrumente**.
 
+:::important Utilizare
+În Calibrare instrumente este posibilă înregistrarea Calibrărilor interne și a Certificatelor de calibrare.   
+Dacă instrumentul este supus calibrării iar calibrarea este internă, este posibil să se introducă, pentru pozițiile prevăzute, valorile înregistrate. Fluentis va atribui automat un rezultat pozitiv sau negativ, pentru fiecare poziție și general.   
+Dacă instrumentul este supus calibrării iar calibrarea este externă, este posibil să se atașeze Certificatul de calibrare primit de la terțul care a efectuat calibrarea. Rezultatul, în acest caz, va fi atribuit manual de operator.   
+Sunt disponibile rapoartele standard: Registru calibrări instrumente grupate pe: Raport, Instrument și Operator.   
 
-:::important A cosa serve
-Nella gestione Taratura strumenti è possibile la registrazione delle Tarature interne e dei Certificati di taratura.   
-Se lo strumento è soggetto a taratura e la taratura è interna, è possibile inserire, per le posizioni previste, i valori rilevati. Fluentis assegnerà automaticamente un esito positivo o negativo, per singola posizione e generale.   
-Se lo strumento è soggetto a taratura e la taratura è esterna, è possibile allegare il Certificato di taratura ricevuto dall'ente terzo che ha effettuato la taratura. L'esito, in questo caso, verrà attribuito manualmente dall'operatore.   
-A standard sono disponibili le reportistiche di: Registro tarature strumenti raggruppati per: Rapporto, Strumento e Operatore.   
-
-A standard è disponibile la reportistica di:   
-> **Registro Tarature Strumenti**: elenco delle *Tarature strumenti* raggruppabili per: *Rapporto*, *Strumento* e *Effettuata da*.   
+Tot ca standard este disponibil:   
+> **Registru calibrări instrumente**: listă a *Calibrărilor instrumente* grupabile pe: *Raport*, *Instrument* și *Efectuat de*.   
 :::
 
+## Butoane de comandă
 
-## Pulsanti di comando
+### ![](/img/neutral/common/save.png) Salvează (Salva)
 
+Apăsând acest buton se memorează toate informațiile modificate ale *Calibrării instrument (Taratura strumento)* afișate.
 
-### ![](/img/neutral/common/save.png) Salva
+## Gestionare date
 
-Premendo questo pulsante si memorizzano tutte le informazioni modificate della *Taratura strumento* visualizzata.   
+### Date de antet
 
-
-## Gestione dati
-
-
-### Dati di testata
-
-Le informazioni gestite sono:   
-> **Tipo taratura**: è il *Tipo taratura* (dato obbligatorio).   
-> All'inserimento manuale di una nuova *Taratura* viene proposto il *Tipo taratura manuale* indicato nei *Parametri Taratura strumenti*.   
+Informațiile gestionate sunt:   
+> **Tip calibrare (Tipo taratura)**: este *Tipul de calibrare (Tipo taratura)* (dat obligatoriu).   
+> La introducerea manuală a unei noi *Calibrări (Taratura)* se propune *Tipul de calibrare manuală (Tipo taratura manuale)* indicat în *Parametrii Calibrare instrumente (Parametri Taratura strumenti)*.   
 >
-> **Anno/Numero**: sono l'*Anno* e *Numero* della *Taratura strumento* (dati entrambe obbligatori).   
->  All'inserimento di una nuova *Taratura strumento*:   
-> - la *Data taratura effettiva* viene proposta pari alla data odierna;   
-> - l'*Anno* e il *Numero* vengono proposti in base alla *Data taratura effettiva* e alla *Numerazione* associata al *Tipo taratura*.   
+> **An/Număr (Anno/Numero)**: sunt *Anul (Anno)* și *Numărul (Numero)* *Calibrării instrument (Taratura strumento)* (date ambele obligatorii).   
+> La introducerea unei noi *Calibrări instrument (Taratura strumento)*:   
+> - *Data calibrare efectivă (Data taratura effettiva)* este propusă egală cu data curentă;   
+> - *Anul (Anno)* și *Numărul (Numero)* sunt propuse în funcție de *Data calibrare efectivă (Data taratura effettiva)* și *Numerotarea (Numerazione)* asociată *Tipului de calibrare (Tipo taratura)*.   
 >
-> **Taratura effettuata da**: expander dove è possibile inserire:   
+> **Calibrare efectuată de (Taratura effettuata da)**: expander unde este posibil să se introducă:   
 >
->> **Taratura interna**: indica che lo *Strumento di misura* viene tarato da un soggetto interno all'azienda.   
->> **Laboratorio esterno**: è la ragione sociale del *Fornitore* che effettua la taratura esterna.   
->> **Funzione**: è la *Funziona aziendale* che effettua la taratura interna.   
->> **Dipendente**: è il *Dipendente* che effettua la taratura interna.   
+>> **Calibrare internă (Taratura interna)**: indică faptul că *Instrumentul de măsură (Strumento di misura)* este calibrat de un subiect intern al companiei.   
+>> **Laborator extern (Laboratorio esterno)**: este denumirea socială a *Furnizorului (Fornitore)* care efectuează calibrarea externă.   
+>> **Funcție (Funzione)**: este *Funcția companiei (Funziona aziendale)* care efectuează calibrarea internă.   
+>> **Angajat (Dipendente)**: este *Angajatul (Dipendente)* care efectuează calibrarea internă.   
 >
-> **Schedulata**: indica che la *Taratura strumento* è stata pianificata.   
-> **Esito taratura**: è il l'*Esito* complessivo della taratura.   
-> E' calcolato automaticamente, sulla base degli *Esiti* dei *Valori rilevati*, se è una *Taratura interna*.
-> Viene attribuito manualmente se è una *Taratura esterna*.   
-> **Osservazioni**: annotazioni libere sull'argomento.   
-> **Note**: annotazioni libere.   
+> **Programată (Schedulata)**: indică faptul că *Calibrarea instrument (Taratura strumento)* a fost planificată.   
+> **Rezultat calibrare (Esito taratura)**: este *Rezultatul (Esito)* general al calibrării.   
+> Este calculat automat, pe baza *Rezultatelor (Esiti)* *Valorilor înregistrate (Valori rilevati)*, dacă este o *Calibrare internă (Taratura interna)*.
+> Este atribuit manual dacă este o *Calibrare externă (Taratura esterna)*.   
+> **Observații (Osservazioni)**: adnotări libere pe subiect.   
+> **Note (Note)**: adnotări libere.   
 >
-> **Data taratura prevista**: è la data di prevista taratura.   
-> Viene proposta dalla *Pianifica nuove tarature* e non è modificabile.   
-> **Data taratura effettiva**: è la data di effettiva taratura.   
-> All'inserimento manuale di una nuova taratura viene proposta pari alla data odierna.
-> Viene proposta dalla *Pianifica nuove tarature* pari alla *Data taratura prevista* ed è successivamente modificabile.   
-> **Strumento di misura**: è il rifermento allo *Strumento di misura* soggetto alla *Taratura*.   
+> **Data calibrare prevăzută (Data taratura prevista)**: este data de calibrare prevăzută.   
+> Este propusă de *Planifică noi calibrări (Pianifica nuove tarature)* și nu este modificabilă.   
+> **Data calibrare efectivă (Data taratura effettiva)**: este data de calibrare efectivă.   
+> La introducerea manuală a unei noi calibrări este propusă egală cu data curentă.
+> Este propusă de *Planifică noi calibrări (Pianifica nuove tarature)* egală cu *Data calibrare prevăzută (Data taratura prevista)* și este ulterior modificabilă.   
+> **Instrument de măsură (Strumento di misura)**: este referința la *Instrumentul de măsură (Strumento di misura)* supus *Calibrării (Taratura)*.   
 >
-> **Proprietà dello strumento**: expander dove è possibile visualizzare:   
+> **Proprietăți ale instrumentului (Proprietà dello strumento)**: expander unde este posibil să se vizualizeze:   
 >
->> **Proprietà dello strumento**: è il *Modello* dello *Strumento di misura*.   
->> **Attivo**: indica che lo *Strumento di misura* è ancora *attivo*.   
->> **Classificazione**: è la *Classificazione*; esempi: Meccanico, Elettrico, Elettronico, ecc.   
->> **Unità di misura**: è l'*Unità di misura* dei valori rilevati dallo *Strumento di misura*.   
->> **Intervallo di misura**: è il range misurabile dallo *Strumento di misura*.   
->> **Precisione**: è la *Precisione di misura* minima.   
->> **Limiti**: sono i *Limiti di accettabilitò* dello *Strumento di misura* per poterlo utilizzare; esempi: eventuali limiti di precisione, ambienti dove non utilizzarlo, ecc.   
+>> **Proprietăți ale instrumentului (Proprietà dello strumento)**: este *Modelul (Modello)* *Instrumentului de măsură (Strumento di misura)*.   
+>> **Activ (Attivo)**: indică faptul că *Instrumentul de măsură (Strumento di misura)* este încă *activ (attivo)*.   
+>> **Clasificare (Classificazione)**: este *Clasificarea (Classificazione)*; exemple: Mecanic, Electric, Electronic, etc.   
+>> **Unitate de măsură (Unità di misura)**: este *Unitatea de măsură (Unità di misura)* a valorilor înregistrate de *Instrumentul de măsură (Strumento di misura)*.   
+>> **Interval de măsură (Intervallo di misura)**: este intervalul măsurabil de *Instrumentul de măsură (Strumento di misura)*.   
+>> **Precizie (Precisione)**: este *Precizia de măsură (Precisione di misura)* minimă.   
+>> **Limite (Limiti)**: sunt *Limitele de acceptabilitate (Limiti di accettabilitò)* ale *Instrumentului de măsură (Strumento di misura)* pentru a putea fi utilizat; exemple: eventuale limite de precizie, medii unde nu trebuie utilizat, etc.   
 >
-> **Audit Trail**: expander di sola lettura dove sono visibili le seguenti informazioni:   
+> **Audit Trail**: expander doar pentru citire unde sunt vizibile următoarele informații:   
 >
->> **Data creazione/Nome**: è la data e l'*Utente A.R.M.* che ha inserito l'*Azione correttiva*.   
->> **Data ultima modifica/Nome**: è la data e l'*Utente A.R.M.* che ha apportato l'ultima modifica all'*Azione correttiva*.   
+>> **Data creare/Nume (Data creazione/Nome)**: este data și *Utilizatorul A.R.M. (Utente A.R.M.)* care a introdus *Acțiunea corectivă (Azione correttiva)*.   
+>> **Data ultima modificare/Nume (Data ultima modifica/Nome)**: este data și *Utilizatorul A.R.M. (Utente A.R.M.)* care a efectuat ultima modificare la *Acțiunea corectivă (Azione correttiva)*.   
 
+### Valori înregistrate (Valori rilevati)
+Tabulatorul este vizibil doar dacă *Instrumentul de măsură (Strumento di misura)* este supus *Calibrării interne (Taratura interna)*.
+În această listă este posibil să se indice valorile înregistrate în timpul activităților de *Calibrare internă (Taratura interna)*.   
+Dacă *Instrumentul de măsură (Strumento di misura)* este *Activ (Attivo)*, este *Supus calibrării (Soggetto a taratura)* și dacă este de *Calibrare internă (Taratura interna)* aceste valori sunt moștenite din registrul *Instrumentului de măsură (Strumento di misura)*.   
+Toate informațiile sunt dezactivate cu excepția: *Date înregistrate (Dato rilevato)*, *Rezultat (Esito)*, *Observații (Osservazioni)* și *Note (Note)*.
+Lista este compusă din următoarele informații:   
+> **Secvență (Sequenza)**: este secvența de înregistrare.   
+> **Poziție (Posizione)**: adnotări libere pe subiect.   
+> **Interval citire (Intervallo lettura)**: adnotări libere pe subiect.   
+> **Date solicitate (Dato richiesto)**: este valoarea nominală solicitată.   
+> **Incertitudine (-) (Incertezza (-))**: este valoarea incertitudinii negative (exprimată în procente) care va fi aplicată la *Datele înregistrate (Dato rilevato)*.   
+> **Incertitudine (+) (Incertezza (+))**: este valoarea incertitudinii pozitive (exprimată în procente) care va fi aplicată la *Datele înregistrate (Dato rilevato)*.   
+> **Date înregistrate (Dato rilevato)**: este valoarea înregistrată din citirea instrumentului făcută în *poziția (posizione)* indicată.   
+> **Abatere (Scostamento)**: este valoarea calculată din diferența dintre *Datele înregistrate (Dato rilevato)* și *Datele solicitate (Dato richiesto)*.   
+Dacă abaterea este mai mare decât *Datele solicitate (Dato richiesto)* adăugate la *Incertitudine (±) (Incertezza (±))* (aplicare în procente) *Rezultatul (Esito)* înregistrării va fi negativ.   
+La prima valoare negativă a *Rezultatului (Esito)* în lista *Valorilor înregistrate (Valori rilevati)* și *Rezultatul (Esito)* general al *Calibrării (Taratura)* va fi negativ.   
+> **Observații (Osservazioni)**: adnotări libere pe subiect.   
+> **Notă (Nota)**: adnotări libere.   
 
-### Valori rilevati
-Il tabulatore è visibile solamente se lo *Strumento di misura* è soggetto a *Taratura interna*
-In questo elenco è possibile indicare i valori da rilevati durante le attività di *Taratura interna*.   
-Se lo *Strumento di misura* è *Attivo*, è *Soggetto a taratura* e se è di *Taratura interna* questi valori vengono ereditati dall'anagrafica dello *Strumento di misura*.   
-Tutte le informazioni sono disabilitate ad esclusione di: *Dato rilevato*, *Esito*, *Osservazioni* e *Note*
-L'elenco si compone delle seguenti informazioni:   
-> **Sequenza**: è la sequenza di rilevazione.   
-> **Posizione**: annotazioni libere sull'argomento.   
-> **Intervallo lettura**: annotazioni libere sull'argomento.   
-> **Dato richiesto**: è il valore nominale richiesto.   
-> **Incertezza (-)**: è il valore dell'incertezza negativa (espressa in percentuale) che verrà applicata al *Dato rilevato*.   
-> **Incertezza (+)**: è il valore dell'incertezza positiva (espressa in percentuale) che verrà applicata al *Dato rilevato*.   
-> **Dato rilevato**: è il valore rilevato dalla lettura dello strumento fatta nella *posizione* indicata.   
-> **Scostamento**: è il valore calcolato dalla differenza tra *Dato rilevato* e *Dato richiesto*.   
-Se lo scostamento è superiore al *Dato richiesto* sommato all'*Incertezza (±)* (applicazione in percentuale) l'*Esito* della rilevazione sarà negativo.   
-Al primo valore negativo dell'*Esito* nell'elenco dei *Valori rilevati* anche l'*Esito* complessivo della *Taratura* sarà negativo.   
-> **Osservazioni**: annotazioni libere sull'argomento.   
-> **Nota**: annotazioni libere.   
+### Istoric Rapoarte și Certificate de calibrare (Storico Rapporti e Certificati di taratura)
+În această listă este posibil să se vizualizeze istoricul *Calibrărilor (Tarature)* și *Certificatelor de calibrare (Certificati di taratura)* planificate și efectuate pentru *Instrumentul de măsură (Strumento di misura)* asociat *Calibrării (Taratura)* afișate.   
+Prin dublu click al mouse-ului pe rândul dorit este posibil să se execute gestionarea *Calibrării (Taratura)* selectate.   
+Lista este compusă din următoarele informații:   
+> **Tip calibrare (Tipo taratura)**: este codul *Tipului de calibrare (Tipo taratura)*.   
+> **Descriere tip calibrare (Descrizione tipo taratura)**: este descrierea *Tipului de calibrare (Tipo taratura)*.   
+> **An (Anno)**: este *Anul (Anno)* documentului.   
+> **Număr (Numero)**: este *Numărul (Numero)* documentului.   
+> **Calibrare internă (Taratura interna)**: indică dacă a fost emisă o *Calibrare internă (Taratura interna)*.   
+> **Programată (Schedulata)**: indică dacă documentul a fost programat (planificat).   
+> **Data prevăzută (Data prevista)**: este data de calibrare prevăzută.   
+> **Data calibrare (Data taratura)**: este data de calibrare efectivă.   
+> **Rezultat (Esito)**: este codul *Rezultatului (Esito)* calibrării.   
+> **Descriere rezultat (Descrizione esito)**: este descrierea *Rezultatului (Esito)* calibrării.   
+> **Categorie (Categoria)**: este codul *Categoriei instrumentului (Categoria strumento)*.   
+> **Descriere categorie (Descrizione categoria)**: este descrierea *Categoriei instrumentului (Categoria strumento)*.   
+> **Cod (Codice)**: este codul *Instrumentului de măsură (Strumento di misura)*.   
+> **Matricolă (Matricola)**: este matricola *Instrumentului de măsură (Strumento di misura)*.   
+> **Model (Modello)**: este modelul *Instrumentului de măsură (Strumento di misura)*.   
+> **Laborator extern (Laboratorio esterno)**: este denumirea socială a *Furnizorului (Fornitore)* care efectuează calibrarea externă.   
+> **Funcție (Funzione)**: este codul *Funcției companiei (Funziona aziendale)* care efectuează calibrarea internă.   
+> **Descriere funcție (Descrizione funzione)**: este descrierea *Funcției companiei (Funziona aziendale)* care efectuează calibrarea internă.   
+> **Cod (Codice)**: este codul *Angajatului (Dipendente)* care efectuează calibrarea internă.   
+> **Nume (Cognome)**: este numele *Angajatului (Dipendente)* care efectuează calibrarea internă.   
+> **Prenume (Nome)**: este prenumele *Angajatului (Dipendente)* care efectuează calibrarea internă.   
 
+### Date suplimentare (Extra data)
+Este posibil să se introducă [Date Suplimentare (Extra Data)](/docs/configurations/utility/extra-data/extradata/new-extradata-simple) pentru fiecare *Calibrare instrument (Taratura strumento)*.
 
-### Storico Rapporti e Certificati di taratura
-In questo elenco è possibile visualizzare lo storico delle *Tarature* e dei *Certificati di taratura* pienificati ed effettuati per lo *Strumento di misura* associato alla *Taratura* visualizzata.   
-Tramite un doppio click del mouse sulla riga desiderata è possibile eseguire la gestione della *Taratura* selezionata.   
-L'elenco si compone delle seguenti informazioni:   
-> **Tipo taratura**: è il codice del *Tipo taratura*.   
-> **Descrizione tipo taratura**: è la descrizione del *Tipo taratura*.   
-> **Anno**: è l'*Anno* del documento.   
-> **Numero**: è il *Numero* del documento.   
-> **Taratura interna**: indica se è stato emesso una *Taratura interna*.   
-> **Schedulata**: indica se il documento è stato schedulato (pianificato).   
-> **Data prevista**: è la data di prevista taratura.   
-> **Data taratura**: è la data di effettiva taratura.   
-> **Esito**: è il codice dell'*Esito* della taratura.   
-> **Descrizione esito**: è la descrizione dell'*Esito* della taratura.   
-> **Categoria**: è il codice della *Categoria strumento*.   
-> **Descrizione categoria**: è la descrizione della *Categoria strumento*.   
-> **Codice**: è il codice dello *Strumento di misura*.   
-> **Matricola**: è la matricola dello *Strumento di misura*.   
-> **Modello**: è il modello dello *Strumento di misura*.   
-> **Laboratorio esterno**: è la ragione sociale del *Fornitore* che effettua la taratura esterna.   
-> **Funzione**: è il codice della *Funziona aziendale* che effettua la taratura interna.   
-> **Descrizione funzione**: è la descrizione della *Funziona aziendale* che effettua la taratura interna.   
-> **Codice**: è il codice del *Dipendente* che effettua la taratura interna.   
-> **Cognome**: è il cognome del *Dipendente* che effettua la taratura interna.   
-> **Nome**: è il nome del *Dipendente* che effettua la taratura interna.   
+### Imagine (Immagine)
+Este afișată imaginea asociată în gestionarea *Instrumentului de măsură (Strumento di misura)*.
 
-
-### Extra data
-E' possibile inserire degli [Extra Data](/docs/configurations/utility/extra-data/extradata/new-extradata-simple) per ogni *Taratura strumento*.   
-
-
-### Immagine
-Viene riportata l'immagine associata nella gestione dello *Strumento di misura*.   
-
-
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).   
+Pentru tot ceea ce nu este detaliat în acest document despre funcționarea comună a form-urilor, faceți referire la următorul link [Funcționalități, butoane și câmpuri comune (Funzionalità, pulsanti e campi comuni)](/docs/guide/common).
