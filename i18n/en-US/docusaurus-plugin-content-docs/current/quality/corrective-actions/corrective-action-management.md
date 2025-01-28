@@ -354,7 +354,7 @@ The list consists of the following information:
 
 ### Extra Data 
 
-It is possible to enter [Extra Data (Extra Data)](/docs/configurations/utility/extra-data/extradata/new-extradata-simple) for the *Corrective Action Program*.   
+It is possible to enter [Extra Data](/docs/configurations/utility/extra-data/extradata/new-extradata-simple) for the *Corrective Action Program*.   
 
 
 ### Attached Documents 

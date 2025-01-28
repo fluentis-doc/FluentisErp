@@ -56,6 +56,8 @@ jobs:
           git push origin $BRANCH_NAME
           echo "website-edits successfully rebased and synced with main."
 
+          gh auth status
+          
           # Create the pull request
           PR_URL=$(gh pr create --title "Automated PR: Sync website-edits with main" \
                                 --body "This pull request was created automatically to merge updates from website-edits into main." \
@@ -75,7 +77,7 @@ jobs:
               echo "Cleanup completed. Aborting."
               exit 1
           fi
-
+          
           echo "Pull request created: $PR_URL"
 
           # Automatically merge the PR once checks pass
@@ -92,5 +94,18 @@ jobs:
       # Step 6: Log if no changes
       - name: No changes detected
         if: env.has_changes == 'false'
-        run: echo "No changes detected in website-edits. No pull request needed."
+        env:
+          GH_TOKEN: ${{ secrets.FG_PAT }}
+        run: |
+          echo "No changes detected in website-edits. No pull request needed."
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
 
+          git checkout website-edits
+           # Pull the latest changes from origin/website-edits
+          git pull origin website-edits
+          
+          git pull --rebase origin main
+          git push --force-with-lease origin website-edits
+
+          echo "website-edits successfully rebased and synced with main."

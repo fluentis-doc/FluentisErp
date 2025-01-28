@@ -12,11 +12,11 @@ The different colors of the rows can be set in **Item Control Parameters > Item 
 
 The form consists of a filter area and a results area. Once all desired filters are set, simply click the **Search** button to display the results within the results grid.
 
-### ![](/img/neutral/common/new.png) Item Controls Insert
+### ![](/img/neutral/common/new.png) Insert Item Controls 
 
 To enter new *Item Controls*, it is necessary to press the **Import Items to Check** button.
 
-### ![](/img/neutral/common/edit.png) Edit or ![](/img/neutral/common/view.png) View Item Controls 
+### ![](/img/neutral/common/edit.png) Modify or ![](/img/neutral/common/view.png) View Item Controls 
 
 To open the management of the results grid, you need to double-click on the row of interest or, by selecting one or more rows, press the **Modify** or **View** buttons.
 
