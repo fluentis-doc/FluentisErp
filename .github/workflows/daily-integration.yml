@@ -75,6 +75,8 @@ jobs:
               echo "Cleanup completed. Aborting."
               exit 1
           fi
+          
+          gh auth status
 
           echo "Pull request created: $PR_URL"
 
