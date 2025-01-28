@@ -1,13 +1,11 @@
 ---
-title: Elenco Tarature strumenti
+title: Lista Calibrare instrumente
 sidebar_position: 1
 ---
 
-Il filtro di esecuzione report si trova sul percorso **Qualità > Taratura strumenti > Taratura strumenti > Procedure > Elenco Tarature strumenti**.   
+Acest form pentru lansarea raportului permite căutarea *Calibrării instrumentelor* pentru a le putea imprima.
 
-Il filtro di esecuzione report consente di ricercare le *Tarature strumenti* per poterle stampare.   
+În standard este disponibil raportul:   
+> **Registru Calibrare instrumente**: reprezintă lista *Calibrării instrumentelor* care se pot grupa după: *Raport *, *Instrument* și *Efectuat de*.
 
-A standard è disponibile la reportistica di:   
-> **Registro Tarature Strumenti**: elenco delle *Tarature strumenti* raggruppabili per: *Rapporto*, *Strumento* e *Effettuata da*.   
-
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Pentru tot ceea ce nu este detaliat în acest document referitor la funcționarea comună a form-urilor, consultați următorul link [Funcționalități, butoane și câmpuri comune](/docs/guide/common).

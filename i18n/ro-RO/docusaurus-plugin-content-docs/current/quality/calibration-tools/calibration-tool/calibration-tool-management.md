@@ -110,7 +110,7 @@ Lista este compusă din următoarele informații:
 > **Nume**: este numele *Angajatului* care efectuează calibrarea internă.   
 > **Prenume**: este prenumele *Angajatului* care efectuează calibrarea internă.   
 
-### Date suplimentare (Extra data)
+### Extra data
 
 Permite inserarea [Datelor suplimentare](/docs/configurations/utility/extra-data/extradata/new-extradata-simple) pentru fiecare *Calibrare instrument*.
 
