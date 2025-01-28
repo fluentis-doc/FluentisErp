@@ -1,27 +1,27 @@
 ---
-title: Tariffe standard centri aziendali
+title: Standard Cost Centers Rates
 sidebar_position: 3
 ---
 
-In questa form è possibile inserire (tramite il tasto **Nuovo**) delle tariffe standard fisse, non calcolate tramite quozienti definiti tra il risultato di un modello di riclassificazione ed il risultato di un centro aziendale.
+In this form, it is possible to enter (via the **New** button) fixed standard rates that are not calculated through defined ratios between the result of a reclassification model and the result of a corporate center.
 
-Tali tariffe saranno poi utilizzate dai cost driver (in particolare dal criterio di distribuzione *Reversione su produzione a tariffa standard*) per valorizzare i movimenti ed i risultati dei centri tipicamente movimentati a grandezze fisiche e quindi non economiche.
+These rates will then be used by the cost drivers (in particular by the distribution criterion *Reversion to standard rate*) to value the movements and results of the centers typically moved at physical quantities and thus not economic.
 
-Per codificare una tariffa fissa dovremo inserire:
-- una [***Area***](/docs/controlling/controlling-parametrization/controlling-specific-settings/area-types-areas) di analisi (ad esempio *Consuntivo*, piuttosto che *Budget*) 
-- il [***Centro aziendale***](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-centers) di riferimento (tipicamente un centro valorizzato a grandezze fisiche)
-- un ***Codice*** della tariffa
-- una ***Descrizione*** della tariffa.
+To code a fixed rate, we need to enter:
+- an [***Area***](/docs/controlling/controlling-parametrization/controlling-specific-settings/area-types-areas) of analysis (for example, *Final*, rather than *Budget*)
+- the [***Corporate Center***](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-centers) of reference (typically a center valued at physical quantities)
+- a ***Code*** for the rate
+- a ***Description*** of the rate.
 
-Nella griglia sottostante andremo poi ad inserire i dettagli della tariffa:
-- L'***Anno*** di riferimento
-- il range ***Periodo da*** e ***Periodo a***
-- il ***Valore fisso*** della tariffa
-- il ***Valore variabile*** della tariffa
+In the grid below we will then enter the details of the rate:
+- The reference ***Year***
+- the ***From Period*** and ***To Period*** range
+- the ***Fixed value*** of the rate
+- the ***Variable value*** of the rate
 
-La quota fissa e variabile fa riferimento alla ripartizione dei dati del controlling in costi fissi e costi variabili, che si imposta già a partire dal *Piano dei conti* tramite il campo **Variabilità** e la tabella **Variabilità centri di costo**.
+The fixed and variable quota refers to the distribution of controlling data into fixed and variable costs, which is set starting from the *Chart of Accounts* through the **Variability** field and the **Variability Cost Centers** table.
 
 
-:::tip Approfondimento
-In base alla definizione della percentuale di variabilità ogni movimento economico che viene ripreso da una chiusura infrannuale viene suddiviso in quota fissa e/o variabile. Potrebbe essere dunque al 100% fisso, oppure al 100% variabile, oppure ad esempio al 40% fisso e 60% variabile. Le tariffe valorizzeranno dunque separatamente la componente fissa e variabile del costo.
+:::tip Insights 
+Based on the definition of the variability percentage, each economic movement taken from an mid-year closing is divided into fixed and/or variable quota. It could thus be 100% fixed, or 100% variable, or for example 40% fixed and 60% variable. The rates will therefore separately value the fixed and variable components of the cost.
 :::
