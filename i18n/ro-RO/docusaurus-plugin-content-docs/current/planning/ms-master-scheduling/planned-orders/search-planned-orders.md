@@ -1,5 +1,5 @@
 ---
-title: Căutare ordine planificate
+title: Caută ordine planificate
 sidebar_position: 3
 ---
 
@@ -10,10 +10,10 @@ import SearchForm from './../../../import/sections/search-form.md'
 *Butoane specifice*:
 
 > [Parametri MRP](/docs/configurations/parameters/production/mrp-parameters/search-mrp-parameters): permite deschiderea form-ul referitor la parametrii MRP ai articolului;             
-> [Lista componente (Distinta base)](/docs/erp-home/registers/production/bill-of-materials/search-and-insert-assemblies): permite deschiderea form-ului referitor la lista de componente a articolului;  
+> [Lista componente](/docs/erp-home/registers/production/bill-of-materials/search-and-insert-assemblies): permite deschiderea form-ului referitor la lista de componente a articolului;  
 > [Cicluri de lucru](/docs/erp-home/registers/production/routes/new-route): permite vizualizarea ciclului de lucru și a fazelor de producție corespunzătoare articolului.
 
-*Câmpuri specifice*
+#### Câmpuri specifice
 
 **Dată început**: pentru ordinele planificate de achiziție sau în sistem lohn reprezintă data în care trebuie trimis furnizorului ordinul de achiziție care va fi generat ulterior cu eliberarea ordinului respectiv. Pentru ordinele planificate de producție, această dată reprezintă data de început prevăzută a primei faze de prelucrare a ciclului articolului;  
 **Dată FOB**: reprezintă data care este calculată adunând *Data de început prevăzută* cu *Timpul de aprovizionare* introdus în tab-ul [Furnizori preferențiali](/docs/erp-home/registers/items/create-new-items/item-registry/procurement) al articolului ordinului planificat și este gestionată doar pentru articolele cu tipul de aprovizionare *Achiziție*;  
