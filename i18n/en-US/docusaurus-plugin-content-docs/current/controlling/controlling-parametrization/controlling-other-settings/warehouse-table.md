@@ -1,13 +1,13 @@
 ---
-title: Tabella Magazzini
+title: Warehouse Table 
 sidebar_position: 6
 ---
 
 
-All'interno della tabella **MAGAZZINI** abbiamo la possibilità di associare una lista di [***CENTRI DI COSTO***](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-centers) ad ogni magazzino.
+Within the **WAREHOUSES** table, we have the option to associate a list of [***COST CENTERS***](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-centers) with each warehouse.
 
-In particolare, le società che **non** hanno il *Controlling* attivo avranno a disposizione una griglia dove caricare una lista di centri da valorizzare; mentre per quelle con la gestione **attiva** la griglia consentirà di associare una molteplicità di centri, anche di [*dimensioni*](/docs/controlling/controlling-parametrization/controlling-specific-settings/dimension) differenti, replicando sostanzialmente la logica già dettagliata nel [*Piano dei conti*](/docs/erp-home/registers/accounting/analytic-chart-of-accounts) (quindi anche lasciando il centro vuoto e la sola dimensione attiva da valorizzare).
+In particular, companies that **do not** have *Controlling* active will have a grid available to load a list of centers to be valued; while for those with **active** management, the grid will allow associating multiple centers, even with different [*dimensions*](/docs/controlling/controlling-parametrization/controlling-specific-settings/dimension), essentially replicating the logic already detailed in the [*Chart of Accounts*](/docs/erp-home/registers/accounting/analytic-chart-of-accounts) (thus also allowing the center to be left empty and only the active dimension to be valued).
 
-:::tip Nota
-Il centro di profitto è visibile per retrocompatibilità, nelle società con il *Controlling* attivo si consiglia di sostituire i centri di profitto con una dimensione specifica da valorizzare nei centri aziendali
+:::tip Note 
+The profit center is visible for backward compatibility; in companies with *Controlling* active, it is recommended to replace profit centers with a specific dimension to be valued in the corporate centers.
 :::

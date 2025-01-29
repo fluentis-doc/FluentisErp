@@ -1,14 +1,14 @@
 ---
-title: Anagrafica articolo 
+title: Item Registry 
 sidebar_position: 5
 --- 
 
-All'interno dell'articolo, nel tab **AMMINISTRAZIONE**, abbiamo la possibilità di associare all'articolo i [***CENTRI DI COSTO***](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-centers).
+Within the item, in the **FINANCE** tab, we have the opportunity to associate the item with [***COST CENTERS***](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-centers).
 
-In particolare, le società che **non** hanno il *Controlling* attivo avranno a disposizione un unico campo di associazione di un singolo centro, mentre per quelle con la gestione **attiva** si abiliterà una griglia nella quale poter valorizzare una molteplicità di centri, anche di dimensioni differenti, replicando sostanzialmente la logica già dettagliata nel *Piano dei conti* (quindi anche lasciando il centro vuoto e la sola dimensione attiva da valorizzare).
+In particular, companies that **do not** have *Controlling* active will have a single association field for one center, while for those with **active** management a grid will be enabled where multiple centers can be valued, even with different dimensions, essentially replicating the logic already detailed in the *Chart of Accounts* (thus also allowing the center to be left empty and only the active dimension to be valued).
 
-:::tip Nota
-Il centro di profitto è visibile per retrocompatibilità, nelle società con il *Controlling* attivo si consiglia di sostituire i centri di profitto con una dimensione specifica da valorizzare nei centri aziendali
+:::tip Note
+The profit center is visible for backward compatibility; in companies with *Controlling* active, it is recommended to replace the profit centers with a specific dimension to be valued in the corporate centers.
 :::
 
-Per la procedura di ***Contabilizzazione rimanenze*** presente all'interno delle simulazioni di bilancio del modulo ***Chiusure infrannuali***, inoltre, è di fondamentale importanza l'assegnazione ad ogni articolo (rilevante per la valorizzazione di magazzino) della sua relativa ***Categoria fiscale***: da questa tabella, infatti, ***FluentisERP*** andrà a recuperare i sottoconti da utilizzare per valorizzare le rimanenze iniziali e finali
+For the ***Inventory Accounting*** procedure present within the budget simulations of the ***Mid-Year Closures*** module, it is also crucial to assign to each item (relevant for warehouse valuation) its related ***Fiscal Category***: from this table, in fact, ***FluentisERP*** will retrieve the detail accounts to be used for valuing the initial and final inventories.

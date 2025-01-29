@@ -1,12 +1,12 @@
 ---
-title: Dipendenti e Categorie attività
+title: Employees and Task Categories
 sidebar_position: 10
 ---
 
-All'interno del singolo ***Dipendente*** è possibile associare il [***CENTRO DI COSTO***](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-centers) di riferimento, che sarà utilizzato per le importazioni dei movimenti delle paghe ma anche all'interno della ***Dichiarazione attività*** dell'area progetti, in combinazione con la ***Categoria attività***.
+Within each ***Employee***, it is possible to associate the [***COST CENTER***](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-centers) of reference, which will be used for importing payroll movements but also within the ***Activities by Project*** of the projects area, in combination with the ***Task Category***.
 
-:::tip Nota
-All'interno della *Dichiarazione attività*, in particolare, il Centro di origine sarà impostato dal centro del dipendente/risorsa mentre il centro di destinazione dalla categoria attività.
+:::tip Note 
+Within the *Activities by Project*, in particular, the source center will be set by the employee/resource's center, while the destination center will be set by the task category.
 
-In questo modo si riescono a gestire casi nei quali, ad esempio, il personale dell'ufficio tecnico lavora per il commerciale, ribaltando quindi i costi del centro di appartenenza al centro di destinazione delle attività
+In this way, cases can be managed where, for example, technical office personnel work for sales, thereby transferring the costs from the belonging center to the destination center of the activities.
 :::

@@ -1,44 +1,44 @@
 ---
-title: Anagrafiche Cespiti
+title: Fixed Asset Master Data 
 sidebar_position: 7
 ---
 
-Per prima cosa dobbiamo definire se ci è sufficiente applicare le logiche contabili, o se il nostro controllo di gestione deve svincolarsi da queste per applicare criteri più o meno differenti.
+First, we need to determine if it is sufficient for us to apply accounting logic, or if our management control needs to detach from this to apply different criteria.
 
-Nel primo caso andremo ad aprire i ***Parametri del modulo cespiti*** per attivare il flag *Abilitazione centro contabilità*. Con questa opzione, all’interno delle categorie cespiti avremo visibilità della griglia dei default dei *Centri di costo* da utilizzare, così come in testata del cespite avremo la griglia che valorizza sul singolo cespite i *Centri di costo*: in entrambe le griglie, sostanzialmente, posso indicare la lista dei centri da valorizzare con la relativa percentuale. Quando andremo a creare i nostri consuntivi contabili attraverso la ***Chiusura infrannuale***, entreremo nella *Ripresa ammortamento cespiti*, selezioneremo la nostra chiusura e ***FluentisERP*** proporrà il calcolo degli ammortamenti sul numero dei giorni di competenza della chiusura stessa, applicando le percentuali di categoria per valorizzarle sui centri con questa priorità: per primo i centri inseriti in testata del cespite, per poi andare a livello di categoria cespite e infine quelli del conto di costo nel piano dei conti.
+In the first case, we will open the ***Fixed Asset Module Parameters*** to activate the flag *Accounting Center Enable*. With this option, within the fixed asset categories, we will have visibility of the grid of defaults for *Cost Centers* to use, as well as in the header of the fixed asset, where we will have the grid that specifies the *Cost Centers* for each individual fixed asset: in both grids, essentially, I can indicate the list of centers to be valued with the corresponding percentage. When we create our accounting statements through the ***Mid-Year Closing***, we will enter the *Fixed Assets Depreciation Retrieve*, select our closing, and ***FluentisERP*** will propose the calculation of depreciation based on the number of days relevant to the closing itself, applying the category percentages to evaluate them on the centers with this priority: first, the centers entered in the fixed asset header, then moving to the fixed asset category level, and finally those of the cost account in the chart of accounts.
 
-Se invece siamo in una società con il *Controlling* attivo e vogliamo svincolarci dalle logiche contabili, non imposteremo il flag *Abilitazione centro contabilità* e a questo punto spariranno i centri nelle categorie e in testata cespite, e diventerà obbligatoria la scheda delle ***Impostazioni per il controlling*** per poter salvare un cespite.
+If we are in a company with active *Controlling*, and we want to detach from the accounting logic, we will not set the *Accounting Center Enable* flag, and at this point, the centers will disappear in the categories and in the fixed asset header, and the ***Controlling Settings*** sheet will become mandatory to save a fixed asset.
 
-Se entriamo in un'anagrafica cespiti e andiamo alla scheda Ammortamento per controlling, abbiamo a disposizione i seguenti campi:
+If we enter a fixed asset master file and go to the Depreciation for controlling tab, we have the following fields available:
 
-- la ***CATEGORIE CESPITI PER IL CONTROLLING***, campo obbligatorio, che valorizzerà con i suoi default i campi seguenti comuni
+- the ***FIXED ASSETS CATEGORIES FOR CONTROLLING***, a mandatory field, which will populate the following common fields with its defaults
 
-- l’eventuale ***VALORE DI RIACQUISTO*** da valorizzare se la base di calcolo lo prevede
+- any ***BUY BACK VALUE*** to populate if the calculation base requires it
 
-- la ***QUANTITA' TOTALE*** che il cespite può gestire nella sua vita utile 
+- the ***TOTAL QUANTITY*** that the fixed asset can manage over its useful life
 
-- la relativa ***UNITA' DI MISURA***
+- the related ***UNIT OF MEASURE***
 
-:::tip Nota
-Il calcolo a quantità, in sostanza, prenderà la base di calcolo dell’ammortamento, lo suddividerà per la quantità totale in modo da ottenere un ammortamento unitario e poi, leggendo le quantità prodotte nel singolo periodo dal cespite (valori che ci arriveranno tipicamente dalla ***Ripresa dati da produzione***), si otterrà il valore dell’ammortamento del periodo.
+:::tip Note
+The quantity calculation will essentially take the depreciation calculation base, divide it by the total quantity to obtain a unit depreciation, and then, reading the quantities produced in the single period from the fixed asset (values that we typically receive from the ***Data Retrieve from Production***), we will get the depreciation value of the period.
 :::
 
-- la ***BASE DI CALCOLO***, ripresa dalla categoria di appartenenza cui si rimanda per le spiegazioni del caso, può essere modificata nel singolo cespite
+- the ***CALCULATION BASE***, retrieved from the corresponding category, which can be modified in the single fixed asset
 
-- il ***TIPO DI CALCOLO***, ripreso dalla categoria di appartenenza cui si rimanda per le spiegazioni del caso, può essere modificata nel singolo cespite
+- the ***CALCULATION TYPE***, taken from the corresponding category, which can also be modified in the single fixed asset
 
-- il campo della ***PERCENTUALE PER IL CONTROLLING*** da valorizzare quando il tipo calcolo è legato a logiche percentuali, viene proposta dalla categoria di appartenenza ma può essere modificata
+- the ***PERCENTAGE FOR CONTROLLING*** field to be populated when the calculation type is related to percentage logic, proposed by the corresponding category but can be modified
 
-- il flag ***USA ATTUALIZZAZIONE PERCENTUALE***
+- the flag ***USE ACTUALIZATION PERCENTAGE***
 
-- il flag ***RICREARE I VALORI DI CONTROLLO***
+- the flag ***RECREATE CONTROLLING VALUES***
 
-Gli ultimi due flag riprendono quelli che sono nella categoria di appartenenza (cui si rimanda per le spiegazioni del caso), ma come i precedenti campi l’impostazione della categoria serve solo per proporre il relativo default del singolo cespite, perché poi ogni cespite può potenzialmente differenziarsi dall’impostazione della categoria.
+The last two flags refer to those present in the corresponding category (which should be referred to for the explanations), but like the previous fields, the category setting serves only to propose the respective default of the single fixed asset, because each fixed asset can potentially differ from the category's setting.
 
-Nella griglia in basso, infine, andremo a definire quali sono i ***CENTRI DI COSTO*** ai quali attribuire l’ammortamento del cespite, o potenzialmente anche il ***PROGETTO*** sul quale scaricarlo come ammortamento diretto.
+Finally, in the grid below, we will define which ***COST CENTERS*** to attribute the fixed asset depreciation to, or potentially also the ***PROJECT*** onto which it will be charged as direct depreciation.
 
-I campi ***PERIODO*** e ***ANNO*** si abiliteranno, invece, solo nel caso in cui sia stato impostato l’ammortamento totale nell’anno e serve, appunto, per definire in che anno spesarlo completamente o in che specifico periodo dell’anno.
+The ***DATE RANGE*** and ***YEAR*** fields will be enabled only if the total depreciation in the year has been set, and it is indeed to define in which year to fully expense it or in which specific period of the year.
 
-:::tip Nota
-Nel modulo cespiti abbiamo a disposizione la form di *Verifica dati per il controlling*: questa maschera, molto simile alla ricerca cespiti normale, consente di ricercare i cespiti che non hanno collegamenti validi ai centri di costo nella scheda degli ammortamenti per il *Controlling*. Se apriamo il primo della lista, ad esempio, possiamo vedere che ha percentuale 0 e quindi non avrà nessun ammortamento risultante; l’errore potrebbe altrimenti essere che non c’è nessun centro di costo inserito, oppure che il moltiplicatore è 0.
+:::tip Note
+In the fixed asset module, we have the *Data Check for Controlling* form available: this form, very similar to the normal fixed asset search, allows searching for fixed assets that do not have valid links to cost centers in the depreciation tab for *Controlling*. If we open the first one on the list, for example, we can see that it has a percentage of 0 and therefore will not result in any depreciation; the error could otherwise be that there is no cost center entered, or that the multiplier is 0.
 :::

@@ -1,14 +1,14 @@
 ---
-title: Tabella Società
+title: Company Table 
 sidebar_position: 1
 ---
 
-La prima decisione da prendere è sul tipo di controlling che l'azienda vuole gestire: se l'obiettivo è quello di costruire un sistema di centri aziendali, tra loro collegati da logiche di ribaltamento di valori di costo/ricavo, al fine di valorizzare la contabilità analitica in tutte le sue caratteristiche è necessario entrare nella ***Tabella società*** e impostare il flag di gestione del *Controlling*, presente nella scheda *Altre impostazioni*.
+The first decision to make is about the type of controlling that the company wants to manage: if the goal is to build a system of corporate centers, interconnected by cost/revenue value reversal logics, in order to enhance analytic accounting in all its characteristics, it is necessary to enter the ***Company Table*** and set the controlling management flag (*Controlling*), which is present in the *Other settings* tab.
 
-Continueremo la configurazione spostandoci nella griglia *Divisioni* in alto a destra, nella quale andremo ad impostare la periodicità *mensile* (che è l'opzione di default) o *settimanale*.
+We will continue the configuration by moving to the *Divisions* grid in the upper right corner, where we will set the frequency to *monthly* (which is the default option) or *weekly*.
 
-Generalmente nel controlling valorizziamo solo i movimenti economici dei costi e ricavi, se volessimo portare anche il patrimoniale possiamo impostare il flag 'Importa patrimoniale in controlling'.
+Generally, in controlling, we only value the economic movements of costs and revenues; if we want to include the asset, we can set the flag 'Import asset in controlling'.
 
-:::tip Nota
-Se l'azienda è interessata alla sola gestione dei bilanci infrannuali contabili o ad una configurazione di base dei centri aziendali che non preveda driver di ribaltamento fra loro, la gestione *Controlling* in tabella società può essere omessa.
+:::tip Note 
+If the company is only interested in managing mid-year accounting balance sheets or a basic configuration of corporate centers that does not involve reversal drivers among them, the *Controlling* management in the company table can be omitted.
 :::

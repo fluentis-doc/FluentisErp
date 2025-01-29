@@ -1,89 +1,89 @@
 ---
-title: Parametri nei moduli dell'area Acquisti e Vendite
+title: Parameters in the Purchase and Sales Area Modules 
 sidebar_position: 35
 ---
 
-I documenti del ciclo passivo e attivo prevedono le loro impostazioni specifiche di valorizzazione dei *Centri aziendali*
+The documents of the passive and active cycle provide their specific settings for valuing the *Corporate Centers*
 
-## Area acquisti
-Nell'area acquisti le configurazioni sono disponibili per le Richieste di acquisto, gli Ordini fornitori, le Bolle di acquisto e le Fatture di acquisto.
+## Purchase Area 
+In the purchase area, configurations are available for Purchase Requests, Purchase Orders, Purchase Delivery Notes, and Purchase Invoices.
 
-### Richieste di acquisto
-Nei parametri del modulo, tab *Analitica*, abbiamo la possibilità di definire la priorità di valorizzazione dei centri tra
-    - *Tipo fatturato* cioè rispetto al piano dei conti associato al fatturato acquisti dell'articolo
-    - *Anagrafica articoli* cioè rispetto all'articolo selezionato
-    - *Anagrafica* cioè fornitore associato alla riga di Richiesta
-    - *Magazzino* cioè il magazzino legato alla riga articolo
+### Purchase Requests
+In the module parameters, *Analytic* tab, we have the possibility to define the priority of valuing the centers among
+- *Turnover Type*: regarding the chart of accounts associated with the item's purchase revenue
+- *Items Register*: regarding the selected item
+- *Register*: supplier associated with the request line
+- *Warehouse*: the warehouse linked to the item line
 
-### Ordini fornitori
-Nei parametri del modulo, tab *Analitica*, abbiamo la possibilità di definire la priorità di valorizzazione dei centri tra
-    - *Tipo fatturato* cioè rispetto al piano dei conti associato al fatturato acquisti dell'articolo
-    - *Anagrafica articoli* cioè rispetto all'articolo selezionato
-    - *Anagrafica* fornitore intestatario dell'ordine
-    - *Magazzino* cioè il magazzino legato alla riga articolo
-Sono inoltre presenti i seguenti flag:
-- *Ricalcolo*: quando si crea l'ordine da un documento precedente (es. richiesta di acquisto), questo flag imposta il ricalcolo dell'analitica secondo i parametri propri del modulo di destinazione
-- *Centri di costo/ricavo obbligatori*: vincola l'utente a valorizzare al 100% l'analitica della singola riga articolo
-- *Valuta la priorità su ogni dimensione*: il flag è disponibile solo per le società con il *Controlling* attivo. Se **non** è presente, ***FluentisERP*** applicherà la priorità di ricerca e fermerà la sua valutazione alla prima entità che consente una qualsiasi valorizzazione dei centri aziendali. **Se è presente**, invece, ***FluentisERP*** applicherà la priorità per valorizzare tutte le possibili dimensioni che si hanno impostate nelle varie entità di origine (cioè il conto contabile, dall'articolo, dal magazzino, dal fornitore)
+### Purchase Orders 
+In the module parameters, *Analytic* tab, we have the possibility to define the priority of valuing the centers among
+- *Turnover Type*: regarding the chart of accounts associated with the item's purchase revenue
+- *Items Register*: regarding the selected item
+- *Register*: supplier of the order
+- *Warehouse*: the warehouse linked to the item line
+The following flags are also present:
+- *Recompute*: when creating the order from a previous document (e.g., purchase request), this flag sets the recalculation of the analytics according to the parameters of the destination module
+- *Cost/revenue centers compulsory*: requires the user to fully value the analytics of each item line
+- *Evaluate priority by dimension*: this flag is only available for companies with *Controlling* active. If **not** present, ***FluentisERP*** will apply the search priority and stop its evaluation at the first entity that allows any valuation of the corporate centers. **If present**, ***FluentisERP*** will apply the priority to value all possible dimensions set in the various source entities (i.e., the account, from the item, from the warehouse, from the supplier)
 
-### Bolle di acquisto
-Nei parametri del modulo, tab *Analitica*, abbiamo la possibilità di definire la priorità di valorizzazione dei centri tra
-    - *Tipo fatturato* cioè rispetto al piano dei conti associato al fatturato acquisti dell'articolo
-    - *Anagrafica articoli* cioè rispetto all'articolo selezionato
-    - *Anagrafica* fornitore intestatario dell'ordine
-    - *Magazzino* cioè il magazzino legato alla riga articolo
-Sono inoltre presenti i seguenti flag:
-- *Ricalcolo*: quando si crea l'ordine da un documento precedente (es. ordine fornitore), questo flag imposta il ricalcolo dell'analitica secondo i parametri propri del modulo di destinazione
-- *Valuta la priorità su ogni dimensione*: il flag è disponibile solo per le società con il *Controlling* attivo. Se **non** è presente, ***FluentisERP*** applicherà la priorità di ricerca e fermerà la sua valutazione alla prima entità che consente una qualsiasi valorizzazione dei centri aziendali. **Se è presente**, invece, ***FluentisERP*** applicherà la priorità per valorizzare tutte le possibili dimensioni che si hanno impostate nelle varie entità di origine (cioè il conto contabile, dall'articolo, dal magazzino, dal fornitore)
+### Purchase Delivery Notes 
+In the module parameters, *Analytic* tab, we have the possibility to define the priority of valuing the centers among
+- *Turnover Type*: regarding the chart of accounts associated with the item's purchase revenue
+- *Items Register*: regarding the selected item
+- *Register*: supplier of the order
+- *Warehouse*: the warehouse linked to the item line
+The following flags are also present:
+- *Recompute*: when creating the order from a previous document (e.g., supplier order), this flag sets the recalculation of the analytics according to the parameters of the destination module
+- *Evaluate priority by dimension*: this flag is only available for companies with *Controlling* active. If **not** present, ***FluentisERP*** will apply the search priority and stop its evaluation at the first entity that allows any valuation of the corporate centers. **If present**, ***FluentisERP*** will apply the priority to value all possible dimensions set in the various source entities (i.e., the account, from the item, from the warehouse, from the supplier)
 
-Nella procedura ***Creazione DDT da Ricevimento Merci*** è disponibile il parametro di ***Ricalcolo centri di costo/ricavo***, che imposta il ricalcolo dell'analitica secondo i parametri propri del modulo di destinazione
+In the procedure ***Create Delivery Note from Goods Receipt***, the parameter ***Cost/revenue centers recalculation*** is available, which sets the recalculation of the analytics according to the parameters of the destination module.
 
-### Fatture di acquisto
-Nei parametri del modulo, tab *Analitica*, abbiamo la possibilità di definire la priorità di valorizzazione dei centri tra
-    - *Tipo fatturato* cioè rispetto al piano dei conti associato al fatturato acquisti dell'articolo
-    - *Anagrafica articoli* cioè rispetto all'articolo selezionato
-    - *Anagrafica* fornitore intestatario dell'ordine
-    - *Magazzino* cioè il magazzino legato alla riga articolo
-Sono inoltre presenti i seguenti flag:
-- *Ricalcolo*: quando si crea l'ordine da un documento precedente (es. bolla di acquisto), questo flag imposta il ricalcolo dell'analitica secondo i parametri propri del modulo di destinazione
-- *Valuta la priorità su ogni dimensione*: il flag è disponibile solo per le società con il *Controlling* attivo. Se **non** è presente, ***FluentisERP*** applicherà la priorità di ricerca e fermerà la sua valutazione alla prima entità che consente una qualsiasi valorizzazione dei centri aziendali. **Se è presente**, invece, ***FluentisERP*** applicherà la priorità per valorizzare tutte le possibili dimensioni che si hanno impostate nelle varie entità di origine (cioè il conto contabile, dall'articolo, dal magazzino, dal fornitore)
+### Purchase Invoices 
+In the module parameters, *Analytic* tab, we have the possibility to define the priority of valuing the centers among
+- *Turnover Type*: regarding the chart of accounts associated with the item's purchase revenue
+- *Items Register*: regarding the selected item
+- *Register*: supplier of the order
+- *Warehouse*: the warehouse linked to the item line
+The following flags are also present:
+- *Recompute*: when creating the order from a previous document (e.g., purchase delivery note), this flag sets the recalculation of the analytics according to the parameters of the destination module
+- *Evaluate priority by dimension*: this flag is only available for companies with *Controlling* active. If **not** present, ***FluentisERP*** will apply the search priority and stop its evaluation at the first entity that allows any valuation of the corporate centers. **If present**, ***FluentisERP*** will apply the priority to value all possible dimensions set in the various source entities (i.e., the account, from the item, from the warehouse, from the supplier)
 
-Nella procedura ***Creazione Fatture da Ricevimento Merci*** è disponibile il parametro di ***Ricalcolo centri di costo/ricavo***, che imposta il ricalcolo dell'analitica secondo i parametri propri del modulo di destinazione
+In the procedure ***Create Invoices from Goods Receipt***, the parameter ***Cost/revenue centers recalculation*** is available, which sets the recalculation of the analytics according to the parameters of the destination module.
 
-Nella procedura ***Valorizzazione DDT di acquisto*** è disponibile il parametro di ***Ricalcolo centri di costo/ricavo***, che imposta il ricalcolo dell'analitica secondo i parametri propri del modulo di destinazione
+In the procedure ***Valorization Purchase Delivery Notes***, the parameter ***Cost/revenue centers recalculation*** is available, which sets the recalculation of the analytics according to the parameters of the destination module.
 
-Nella procedura ***Valorizzazione DDT di acquisto e di rientro*** è disponibile il parametro di ***Ricalcolo centri di costo/ricavo***, che imposta il ricalcolo dell'analitica secondo i parametri propri del modulo di destinazione
+In the procedure ***DDT and return valorization***, the parameter ***Cost/revenue centers recalculation*** is available, which sets the recalculation of the analytics according to the parameters of the destination module.
 
-## Area vendite
-Nell'area vendite le configurazioni sono disponibili per gli Ordini clienti, le Bolle di vendita e le Fatture di vendita.
+## Sales Area 
+In the sales area, configurations are available for Sales Orders, Sales Delivery Notes, and Sales Invoices.
 
-### Offerte di vendita
+### Sales Offers 
 
-### Ordini clienti
-Nei parametri del modulo, tab *Analitica*, abbiamo la possibilità di definire la priorità di valorizzazione dei centri tra
-    - *Tipo fatturato* cioè rispetto al piano dei conti associato al fatturato acquisti dell'articolo
-    - *Anagrafica articoli* cioè rispetto all'articolo selezionato
-    - *Anagrafica* fornitore intestatario dell'ordine
-    - *Magazzino* cioè il magazzino legato alla riga articolo
-Sono inoltre presenti i seguenti flag:
-- *Valuta la priorità su ogni dimensione*: il flag è disponibile solo per le società con il *Controlling* attivo. Se **non** è presente, ***FluentisERP*** applicherà la priorità di ricerca e fermerà la sua valutazione alla prima entità che consente una qualsiasi valorizzazione dei centri aziendali. **Se è presente**, invece, ***FluentisERP*** applicherà la priorità per valorizzare tutte le possibili dimensioni che si hanno impostate nelle varie entità di origine (cioè il conto contabile, dall'articolo, dal magazzino, dal cliente)
+### Sales Orders 
+In the module parameters, *Analytic* tab, we have the possibility to define the priority of valuing the centers among
+- *Turnover Type*: regarding the chart of accounts associated with the item's purchase revenue
+- *Items Register*: regarding the selected item
+- *Register*: supplier of the order
+- *Warehouse*: the warehouse linked to the item line
+The following flags are also present:
+- *Evaluate priority by dimension*: this flag is only available for companies with *Controlling* active. If **not** present, ***FluentisERP*** will apply the search priority and stop its evaluation at the first entity that allows any valuation of the corporate centers. **If present**, ***FluentisERP*** will apply the priority to value all possible dimensions set in the various source entities (i.e., the account, from the item, from the warehouse, from the customer)
 
-### Bolle di vendita
-Nei parametri del modulo, tab *Analitica*, abbiamo la possibilità di definire la priorità di valorizzazione dei centri tra
-    - *Tipo fatturato* cioè rispetto al piano dei conti associato al fatturato acquisti dell'articolo
-    - *Anagrafica articoli* cioè rispetto all'articolo selezionato
-    - *Anagrafica* fornitore intestatario dell'ordine
-    - *Magazzino* cioè il magazzino legato alla riga articolo
-Sono inoltre presenti i seguenti flag:
-- *Valuta la priorità su ogni dimensione*: il flag è disponibile solo per le società con il *Controlling* attivo. Se **non** è presente, ***FluentisERP*** applicherà la priorità di ricerca e fermerà la sua valutazione alla prima entità che consente una qualsiasi valorizzazione dei centri aziendali. **Se è presente**, invece, ***FluentisERP*** applicherà la priorità per valorizzare tutte le possibili dimensioni che si hanno impostate nelle varie entità di origine (cioè il conto contabile, dall'articolo, dal magazzino, dal cliente)
+### Sales Delivery Notes 
+In the module parameters, *Analytic* tab, we have the possibility to define the priority of valuing the centers among
+- *Turnover Type*: regarding the chart of accounts associated with the item's purchase revenue
+- *Items Register*: regarding the selected item
+- *Register*: supplier of the order
+- *Warehouse*: the warehouse linked to the item line
+The following flags are also present:
+- *Evaluate priority by dimension*: this flag is only available for companies with *Controlling* active. If **not** present, ***FluentisERP*** will apply the search priority and stop its evaluation at the first entity that allows any valuation of the corporate centers. **If present**, ***FluentisERP*** will apply the priority to value all possible dimensions set in the various source entities (i.e., the account, from the item, from the warehouse, from the customer)
 
-### Fatture di vendita
-Nei parametri del modulo, tab *Analitica*, abbiamo la possibilità di definire la priorità di valorizzazione dei centri tra
-    - *Tipo fatturato* cioè rispetto al piano dei conti associato al fatturato acquisti dell'articolo
-    - *Anagrafica articoli* cioè rispetto all'articolo selezionato
-    - *Anagrafica* fornitore intestatario dell'ordine
-    - *Magazzino* cioè il magazzino legato alla riga articolo
-Sono inoltre presenti i seguenti flag:
-- *Valuta la priorità su ogni dimensione*: il flag è disponibile solo per le società con il *Controlling* attivo. Se **non** è presente, ***FluentisERP*** applicherà la priorità di ricerca e fermerà la sua valutazione alla prima entità che consente una qualsiasi valorizzazione dei centri aziendali. **Se è presente**, invece, ***FluentisERP*** applicherà la priorità per valorizzare tutte le possibili [*dimensioni*](/docs/controlling/controlling-parametrization/controlling-specific-settings/dimension) che si hanno impostate nelle varie entità di origine (cioè il conto contabile, dall'articolo, dal magazzino, dal cliente)
+### Sales Invoices
+In the module parameters, *Analytic* tab, we have the possibility to define the priority of valuing the centers among
+- *Turnover Type*: regarding the chart of accounts associated with the item's purchase revenue
+- *Items Register*: regarding the selected item
+- *Register*: supplier of the order
+- *Warehouse*: the warehouse linked to the item line
+The following flags are also present:
+- *Evaluate priority by dimension*: this flag is only available for companies with *Controlling* active. If **not** present, ***FluentisERP*** will apply the search priority and stop its evaluation at the first entity that allows any valuation of the corporate centers. **If present**, ***FluentisERP*** will apply the priority to value all possible [*dimensions*](/docs/controlling/controlling-parametrization/controlling-specific-settings/dimension) set in the various source entities (i.e., the account, from the item, from the warehouse, from the customer)
 
-Nella procedura ***Creazione da DDT*** è disponibile il parametro di ***Ricalcolo centri di costo/ricavo***, che imposta il ricalcolo dell'analitica secondo i parametri propri del modulo di destinazione
+In the procedure ***Creation from Delivery Notes***, the parameter ***Cost/revenue centers recalculation*** is available, which sets the recalculation of the analytics according to the parameters of the destination module.

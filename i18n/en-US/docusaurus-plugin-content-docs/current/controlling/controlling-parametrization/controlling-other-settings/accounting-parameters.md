@@ -1,15 +1,15 @@
 ---
-title: Parametri di Contabilità
+title: Accounting Parameters 
 sidebar_position: 30
----
+--- 
 
-Dato che possiamo collegare i Centri aziendali a più anagrafiche di Fluentis, dobbiamo definire in che priorità andare a valorizzarle quando stiamo registrando manualmente in contabilità (o stiamo eseguendo una contabilizzazione da un modulo che non gestisce l'analitica).
+Since we can link Corporate Centers to multiple Fluentis registers, we need to define the priority for valuing them when we are manually recording in accounting (or when performing a booking from a module that does not manage analytics).
 
-All'interno del parametri di contabilità, in basso a Destra, troviamo la **PROPOSTA CENTRI DI COSTO/PROFITTO**, le cui opzioni sono:
-- *Costo contabile*: significa leggere la configurazione dei centri dal sottoconto del *Piano dei conti*
-- *Anagrafica*: significa leggere la configurazione dall'*Anagrafica cliente/fornitore/agente* intestataria della registrazione contabile che si sta inserendo
-- *Costo industriale*: non attivo
+Within the accounting parameters, at the bottom right, we find the **PROPOSE COST/PROFIT CENTERS FROM**, with the following options:
+- *Accounting Cost*: means reading the configuration of the centers from the detail account of the *Chart of Accounts*
+- *Register*: means reading the configuration from the *Customer/Supplier/Agent Register* named in the ledger record being entered
+- *Industrial Cost*: not active
 
-Utilizzando i pulsanti *Sposta su* e *Sposta giù*, presenti all'interno della ribbon, andremo a mettere le opzioni nell'ordine desiderato.
+Using the *Move Up* and *Move Down* buttons, present in the ribbon, we will arrange the options in the desired order.
 
-La logica di attribuzione è sempre legata al piano dei conti e quindi, consigliamo di avere come priorità il COSTO CONTABILE. 
+The assignment logic is always related to the chart of accounts, and therefore, we recommend prioritizing the ACCOUNT COST.

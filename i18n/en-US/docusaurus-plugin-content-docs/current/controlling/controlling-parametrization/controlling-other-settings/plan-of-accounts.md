@@ -1,75 +1,75 @@
 ---
-title: Piano dei Conti  
+title: Chart of Accounts
 sidebar_position: 3
 ---
 
-La tabella del [***Piano dei conti***](/docs/erp-home/registers/accounting/analytic-chart-of-accounts) presenta una serie di caratteristiche molto importanti a livello di logiche del Controlling, sia questo inteso come simulazioni di bilancio infrannuali che di contabilità analitica/gestionale vera e propria. Andiamo a vedere punto per punto le caratteristiche specifiche.
+The table of the [***Chart of Accounts***](/docs/erp-home/registers/accounting/analytic-chart-of-accounts) presents a series of very important characteristics at the level of Controlling logic, both understood as simulations of mid-year balance sheets and actual managerial/analytic accounting. Let's look at the specific characteristics point by point.
 
-## GRIGLIA DEI SOTTOCONTI
+## GRID OF DETAIL ACCOUNTS
 
-- ***TIPO CONTO***: il collegamento al tipo conto è di fondamentale importanza: in particolar modo il tipo conto che prevede il flag 'Servizio' attivo (nel ***FastStart*** sono i *Costi da rettificare* e i *Ricavi da rettificare*) sarà quello che attiverà la gestione automatica dei ratei/risconti, sia a livello di contabilità generale (procedura delle ***Scritture di assestamento*** che per i bilanci infrannuali e le relative ***Scritture di rettifica*** e ***Scritture di integrazione***)
+- ***ACCOUNT TYPE***: the connection to the account type is of fundamental importance: in particular, the account type that has the 'Service' flag active (in ***FastStart*** these are *Costs to be adjusted* and *Revenues to be adjusted*) will be the one that activates the automatic management of accruals/prepayments, both at the level of general accounting (procedure for ***Adjustment Records*** for mid-year balance sheet and the related ***Adjustment Records*** and ***Integration Records***).
 
-- flag ***GESTIONE CENTRI AZIENDALI***: se tutti associati a tipi conto economici hanno automaticamente la valorizzazione dell'analitica (se la causale contabile a sua volta ne prevede la gestione), questa può essere abilitata anche per Sottoconti patrimoniali tramite questo flag.
+- flag ***ENABLE CORPORATE CENTERS***: if all associated with economic account types automatically have analytical valuation (if the ledger template also provides for management), this can also be enabled for balance sheet Detail Accounts via this flag.
 
-- ***VARIABILITA'***: quando la società ha il flag *Controlling* attivo, la contabilità gestionale che si valorizza dall'analitica prevede la suddivisione degli importi in *quota fissa* e *quota variabile*, che può essere definita con questo valore di default quando non è valorizzata la griglia di ***VARIABILITA' CENTRI DI COSTO*** presente sulla destra della maschera.
+- ***VARIABILITY***: when the company has the *Controlling* flag active, the managerial accounting that is valued from the analytical aspect requires the division of amounts into *fixed portion* and *variable portion*, which can be defined with this default value when the grid of ***VARIABILITY COST CENTER*** present on the right side of the mask is not valued.
 
-:::tip Nota
-Quando il campo non è valorizzato, si intende che il sottoconto è al 100% un costo fisso
+:::tip Note
+When the field is not valued, it means that the detail account is 100% a fixed cost.
 :::
 
-- ***NON UTILIZZARE IN CONTROLLING*** quando la società ha il flag *Controlling* attivo, con questo campo possiamo indicare che il dato che la contabilità fornisce non è da utilizzare nelle elaborazioni del controlling, perché sostituito ad esempio da un dato stimato previsionale di inizio anno (es. Compensi collegio sindacale) o da una logica extracontabile (es. ammortamenti)
+- ***DO NOT USE IN CONTROLLING*** when the company has the *Controlling* flag active, with this field we can indicate that the data provided by accounting should not be used in controlling calculations, because it is replaced, for example, by an estimated budgeted figure from the beginning of the year (e.g., Compensation for the Board of Statutory Auditors) or by an off-balance logic (e.g., depreciation).
 
-- ***TEMPI DI BILANCIAMENTO*** il campo si attiva se il precedente flag è stato attivato e consente di dire, se impostato, *quando* si vuole eseguire il conguaglio tra gestionale e dato contabile. Le opzioni disponibili sono
-    - *Annuale*
-    - *Infrannuale*
+- ***BALANCING TIMING*** the field is activated if the previous flag has been activated and allows us to specify, if set, *when* we want to perform the adjustment between managerial and accounting data. The available options are:
+    - *Yearly*
+    - *Periodical*
 
-- ***TIPO DI BILANCIAMENTO*** il campo si attiva se il precedente flag è stato attivato e consente di dire, se impostato, *come* si vuole conguagliare il dato contabile. Le opzioni disponibili sono
-    - *Riproporziona gestionale*: si andranno ad inserire delle righe automatiche per portare il totale del controlling ai valori contabili
-    - *Differenze analitica*: si andrà ad annullare il dato del controlling per sostituirlo con i valori e i centri effettivamente utilizzati in contabilità
+- ***BALANCING TYPE*** the field is activated if the previous flag has been activated and allows us to specify, if set, *how* we want to balance the accounting data. The available options are:
+    - *Readjust managerial*: automatic lines will be inserted to bring the total of controlling to accounting values.
+    - *Analytic differences*: the controlling data will be canceled and replaced with the values and centers actually used in accounting.
 
-:::tip Nota
-La prima opzione ha senso quando la rilevazione nel controlling può differire solo per l'importo rispetto a quanto viene registrato in contabilità
-La seconda opzione ha senso quando,al momento della rilevazione reale contabile, non solo l'importo ma anche il centro di movimentazione può essere differente rispetto all'ipotesi precaricata nel controlling
+:::tip Note
+The first option makes sense when the recording in controlling can differ only by amount from what is recorded in accounting.
+The second option makes sense when, at the time of actual accounting entry, not only the amount but also the movement center can be different from the preloaded hypothesis in controlling.
 :::
 
-- ***PERCENTUALI DI VARIAZIONE***: quando la società ha il flag *Controlling* attivo, con questo campo possiamo dire la logica di variazione percentuale da poter applicare quando si duplicano i valori gestionali di questo sottoconto (nella duplicazione delle registrazioni dello ***Storico registrazioni gestionali***)
+- ***CHANGE OF PERCENTAGE***: when the company has the *Controlling* flag active, with this field we can specify the logic of percentage change to be applied when duplicating the managerial values of this detail account (in the duplication of records of the ***Historical Records Management***).
 
-- ***DISTRIBUZIONE PERIODI***: quando la società ha il flag *Controlling* attivo, con questo campo possiamo definire come ripartire questo sottoconto nei periodi della contabilità gestionale nel corso dell'*elaborazione periodi*. Se non impostato ***FluentisERP*** utilizzerà i giorni di calendario di competenza della riga.
+- ***PERIODS DISTRIBUTION***: when the company has the *Controlling* flag active, with this field we can define how to allocate this detail account across the periods of managerial accounting during *process periods*. If not set, ***FluentisERP*** will use the calendar days relevant to the line.
 
-- ***GRUPPI DI CONGUAGLIO***: quando la società ha il flag *Controlling* attivo, il campo è di fondamentale importanza per i sottoconti economici delle rimanenze iniziali e finali, mentre ha valenza di raggruppamento dei dati omogenei nella maschera di controllo denominata ***Valori di controllo***
+- ***GROUPS OF ADJUSTMENT***: when the company has the *Controlling* flag active, the field is of fundamental importance for economic detail accounts of initial and final inventories, while it serves to group homogeneous data in the control mask called ***Control Values***.
 
-## GRIGLIA DI ATTRIBUZIONE DEI CENTRI
-Per ogni sottoconto selezionato, nella scheda *Assegnazione centri* presente sul lato destro, avremo la possibilità di predefinire una lista di centri da valorizzare quando si movimenta questo sottoconto in contabilità, o lo si valorizza tramite il fatturato acquisti/vendite della riga articolo nel ciclo documentale passivo/attivo, a seconda delle priorità del singolo modulo.
+## GRID OF CENTERS ATTRIBUTION
+For each selected detail account, in the *Centers Attribution* tab on the right side, we will have the possibility to predefine a list of centers to be valued when moving this detail account in accounting, or valuing it through the purchases/sales turnover of the item line in the passive/active document cycle, depending on the priorities of the individual module.
 
-In questa griglia abbiamo i seguenti campi:
-- ***NUMERO*** progressivo di riga
+In this grid we have the following fields:
+- ***NUMBER*** progressive line number.
 
-- [***CENTRO DI COSTO***](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-centers) in questo campo si associa il centro aziendale. La proprietà è obbligatoria nelle società che **non** gestiscono il *Controlling*, mentre è opzionale in quelle con la gestione **attiva**. In questo secondo caso, infatti, si potrà indicare solo la *dimensione* da valorizzare e la *categoria* del centro predefinita.
+- [***COST CENTER***](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-centers) in this field, the corporate center is associated. This property is mandatory in companies that **do not** manage *Controlling*, while it is optional in those with **active** management. In this second case, indeed, only the *dimension* to be valued and the predefined *category* of the center can be indicated.
 
-- ***PERCENTUALE %*** la percentuale d'attribuzione, obbligatoria da valorizzare all'interno del range 0-100
+- ***PERCENTAGE %*** the percentage of attribution, mandatory to be valued within the range 0-100.
 
-- ***DIVISIONE*** la divisione da assegnare di default al movimento di analitica
-:::tip Nota
-In installazioni multidivisionali, è possibile gestire la divisione in due modi rispetto ai centri: vincolare l'uso dei centri legati alla divisione attiva/selezionata nella riga, piuttosto che consentire la valorizzazione del singolo centro su tutte le divisioni aziendali, indipendentemente dalla divisione di appartenenza del centro stesso
+- ***DIVISION*** the division to be assigned by default to the analytical movement.
+:::tip Note
+In multidivisional installations, it is possible to manage the division in two ways concerning centers: either restrict the use of centers tied to the active/selected division in the line, or allow the valuation of a single center across all business divisions, regardless of the center's belonging division.
 :::
 
-- ***DATA INIZIO VALIDITA'*** e ***DATA FINE VALIDITA'*** questo range attualmente **non** viene testato
+- ***STARTING VALIDITY DATE*** and ***END VALIDITY DATE*** this range is currently **not** tested.
 
-- [***DIMENSIONE***](/docs/controlling/controlling-parametrization/controlling-specific-settings/dimension) il campo è specifico per le società con il *Controlling* attivo, viene valorizzato secondo il centro selezionato nella riga ma può anche essere inserito manualmente quando il centro non è previsto nella riga. In questo caso serve nei casi in cui questa dimensione sia a quadratura obbligatoria (com'è tipicamente la *dimensione direzionale* dei centri), in modo da vincolare l'utente a valorizzarla in quadratura alla generale.
+- [***DIMENSION***](/docs/controlling/controlling-parametrization/controlling-specific-settings/dimension) this field is specific for companies with *Controlling* active, it is valued according to the center selected in the line but can also be entered manually when the center is not provided in the line. In this case, it is necessary in cases where this dimension is mandatory for balancing (as is typically the *managerial dimension* of the centers) to constrain the user to value it in line with the general.
 
-- ***CATEGORIA CENTRI DI COSTO*** il campo è specifico per le società con il *Controlling* attivo, viene valorizzato secondo il centro selezionato nella riga ma può anche essere inserito manualmente quando il centro non è previsto nella riga. Serve per limitare la visibilità dei centri selezionabili, in questa dimensione, quando si valorizza questo sottoconto.
+- ***COST CENTER CATEGORY*** the field is specific for companies with *Controlling* active, it is valued according to the center selected in the line but can also be entered manually when the center is not provided in the line. It is used to limit the visibility of selectable centers in this dimension when valuing this detail account.
 
-:::tip Nota
-Nel caso in cui si decida una valorizzazione puntuale caso per caso da parte dell'utente in contabilità, nel Piano dei conti possiamo scegliere di
-- inserire più centri con percentuale 0: l'utente troverà queste righe nella registrazione e potrà valorizzare manualmente la singola riga con il valore del caso e ***FluentisERP*** al salvataggio cancellerà quelle rimanenti con importo zero. Se la dimensione dei centri e la causale non consentono registrazioni sbilanciate, non si potranno avere squadrature.
-- inserire più centri con percentuale 100: l'utente troverà queste righe valorizzare nella registrazione e potrà eliminare quelle che non sono da valorizzare, piuttosto che modificare i valori prima di salvare. Se la dimensione dei centri e la causale non consentono registrazioni sbilanciate, non si potranno avere squadrature.
-- Per chi utilizza la gestione del Controlling della Contabilità gestionale, è possibile inserire una riga di impostazione senza uno specifico centro, ma con solo la dimensione dei centri e, opzionalmente, anche la categoria dei centri che si vuole far valorizzare per quel conto: l'utente troverà nella registrazione la riga valorizzata con il centro vuoto ed aprendo la tendina avrà visibilità solo dei centri della dimensione (e della categoria, se impostata) del caso
+:::tip Note
+In the event that a specific valuation on a case-by-case basis by the user in accounting is decided, in the Chart of Accounts we can choose to:
+- insert multiple centers with a percentage of 0: the user will find these lines in the record and can manually value each line with the case value, and ***FluentisERP*** will delete the remaining lines with a zero amount upon saving. If the center dimension and accounting reason don't allow for unbalanced records, there cannot be any discrepancies.
+- insert multiple centers with a percentage of 100: the user will find these lines already valued in the record and can delete those that are not to be valued, rather than modify the values before saving. If the center dimension and accounting reason don't permit unbalanced records, there cannot be any discrepancies.
+- For those using the management of Controlling in managerial accounting, it is possible to insert a setup line without a specific center, but only with the center's dimension and, optionally, also the category of centers that should be valued for that account: the user will find in the record the line valued with an empty center and by opening the dropdown will only have visibility of the centers of the dimension (and the category, if set) in question.
 :::
 
 
-## GRIGLIA DI ATTRIBUZIONE DELLA VARIABILITA'
-Questa sezione è specifica delle società con il *Controlling* attivo, e serve per legare la variabilità della movimentazione del sottoconto selezionato a seconda del centro che lo valorizza. Potrebbero esserci casi, infatti, nei quali certi sottoconto sono variabili a seconda della funzione che li valorizzi. Questa griglia è prioritaria rispetto al campo *Variabilità* generico che si può valorizzare nella riga del sottoconto
+## GRID OF VARIABLE ATTRIBUTE  
+This section is specific to companies with *Controlling* active and is used to tie the variability of the movement of the selected detail account depending on the center that values it. There may indeed be cases where certain detail accounts are variable depending on the function that values them. This grid takes precedence over the generic *Variability* field that can be valued in the line of the detail account.
 
-:::tip Nota
-Ad esempio, l'energia elettrica potrebbe essere al 100% variabile quando la si associa alla produzione (perché se non produco non consumo) mentre essere totalmente fissa (cioè variabilità 0%) quando la valorizza sull'amministrazione, che si presuppone consumi energia indipendentemente dal volume produttivo
+:::tip Note
+For example, electricity may be 100% variable when associated with production (because if I do not produce, I do not consume) while being completely fixed (i.e., 0% variability) when valued against finance, which is assumed to consume energy regardless of production volume.
 :::
