@@ -16,6 +16,7 @@
   "dependencies": {
     "@cmfcmf/docusaurus-search-local": "^1.2.0",
     "@docusaurus/core": "^3.6.3",
+    "@docusaurus/faster": "^3.7.0",
     "@docusaurus/preset-classic": "^3.6.3",
     "@mdx-js/react": "^3.0.0",
     "bootstrap-icons": "^1.11.3",

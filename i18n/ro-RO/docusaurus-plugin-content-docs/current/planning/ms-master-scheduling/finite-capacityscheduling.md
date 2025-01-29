@@ -4,19 +4,20 @@ sidebar_position: 4
 ---
 
 :::important Utilizare
-Funcționalitatea **Planificare la capacitate finită** din Fluentis este un instrument avansat, conceput pentru a optimiza gestionarea resurselor productive într-o companie de producție. Acest modul este integrat în sistemul ERP al Fluentis și permite planificarea și gestionarea activităților productive, având în vedere capacitățile reale ale resurselor disponibile, cum ar fi forța de muncă, utilajele și materialele. Datorită acestei funcționalități, companiile pot minimiza timpii de nefuncționare, îmbunătăți eficiența operațională și răspunde cu o flexibilitate mai mare la variațiile cererii.
-
+Funcționalitatea **Planificare la capacitate finită** din Fluentis este un instrument avansat, conceput pentru a optimiza gestionarea resurselor productive într-o companie de producție.  
+Acest modul este integrat în sistemul ERP al suitei Fluentis și permite planificarea și gestionarea activităților productive, având în vedere capacitățile reale ale resurselor disponibile, cum ar fi forța de muncă, utilajele și materialele.  
+Datorită acestei funcționalități, companiile pot minimiza timpii de nefuncționare, îmbunătăți eficiența operațională și răspunde cu o flexibilitate mai mare la variațiile cererii.  
 Planificarea la capacitate finită ia în considerare limitările fizice ale resurselor, permițând crearea planurilor de producție realiste și realizabile. În plus, oferă instrumente analitice pentru a prezice eventualele blocaje și permite optimizarea alocării sarcinilor, integrându-se cu alte funcționalități ale ERP-ului pentru o viziune completă a operațiunilor de afaceri. Acest sistem ajută companiile să echilibreze eficient cererea clienților cu capacitățile de producție, îmbunătățind în cele din urmă rentabilitatea și satisfacția clientului.
 :::
 
-Planificarea producției la capacitate finită permite înțelegerea orelor de lucru care poate fi realizată într-o perioadă de timp definită, având în vedere limitările unor resurse. Obiectivul final este de a asigura cea mai mare eficiență a ritmurilor de producție pe întreaga linie internă a fabricii, optimizând timpii și reducând costurile centrelor de lucru.  
+Planificarea producției la capacitate finită permite monitorizarea orelor de lucru care poate fi realizată într-o perioadă de timp definită, având în vedere limitările unor resurse. Obiectivul final este de a asigura cea mai mare eficiență a ritmurilor de producție pe întreaga linie internă a fabricii, optimizând timpii și reducând costurile centrelor de lucru.  
 Cu această modalitate de planificare, este posibil să se creeze secvențe optime de procesare pe fiecare *Centru de lucru*, obținând astfel o saturație maximă a acestora.
 
 ## Comenzi
 
 Acest tabel afișează doar comenzile care sunt cu statusul *neplanificată*.
 
-*Butoane specifice*:
+#### Butoane specifice
 
 > **Planificare F.C.S.**: permite sistemului să planifice la capacitate finită etapele de procesare ale documentelor prevăzute;  
 > **Modifică dată comandă**: permite modificarea datei comenzii;  
@@ -25,20 +26,20 @@ Acest tabel afișează doar comenzile care sunt cu statusul *neplanificată*.
 > **Lista componente**: permite deschiderea listelor de componente ale comenzilor selectate;    
 > **Ciclul de lucru**: permite deschiderea ciclurilor de lucru ale comenzilor selectate.        
 
-*Filtre specifice*:
+#### Filtre specifice
 
 **Tip comandă**: permite selectarea tipul de comandă care va fi afișat: monoprodus, multiprodus sau ambele;
 
 **Locație producție**: afișează comenzile în baza locului unde se produc, după selectarea acestuia din combo-box;
 
-*Câmpuri specifice*
+#### Câmpuri specifice
 
 **Data sugerată**: cum am precizat în documentul *Parametrii generali de planificare*, activând parametrul [Verifică document în întârziere cu ATP](/docs/planning/ms-master-scheduling/general-schedule), planificatorul va verifica dacă chiar și unul dintre ordinele care sunt planificate și generate este întârziat față de data prevăzută și va șterge toate ordinele create, apoi le va genera de la data MS care este inserată întotdeauna în parametrii (care se activează setând opțiunea *Verifică document în întârziere cu ATP*) și va propune data nouă pentru comenzi în câmpul *Data sugerată* din tabelul rezultatelor.
 
 ### Procedură planificare F.C.S.    
 
 În tab-ul **Comenzi** puteți selecta comenzile neplanificate pe care doriți să le considerați. 
-Cu butonul **Planificare F.C.S.**, procedura va efectua o primă planificare la capacitate infinită asupra comenzilor neplanificate recent selectate, utilizând parametrii prezenți în tab **Parametri generali** și apoi va efectua o planificare la capacitate finită asupra tuturor documentelor indicate în **Parametrii planificare la capacitate finită**.
+Cu butonul **Planificare F.C.S.**, procedura va efectua o primă planificare la capacitate infinită asupra comenzilor neplanificate recent selectate, utilizând parametrii prezenți în tab **Parametrii generali** și apoi va efectua o planificare la capacitate finită asupra tuturor documentelor indicate în **Parametrii planificare la capacitate finită**.
 
 Ca în cazul planificării generale, ordinele planificate vor putea fi vizualizate în form [Caută ordine planificate](/docs/planning/ms-master-scheduling/planned-orders/search-planned-orders).
 
@@ -80,7 +81,7 @@ Este important să se seteze în acest tab parametrii de respectat pentru a efec
 
 Din tabelul **Opţiuni prioritate planificare**, se pot muta elementele cu drag & drop în tabelul **Prioritate planificare** pentru a le modifica prioritatea. În cazul în care sunt selectate elementele *Clienți critici* sau *C.d.L critici*, se va activa și tabelul **Detaliu prioritate planificare**, unde se vor putea insera clienții sau centrele de lucru, putând modifica și în acest caz prioritatea.   
 
-*Buton specific*:
+#### Buton specific
 
 > **Restaurare prioritate**: permite restabilirea priorităților implicite în tabelul *Prioritate planificare*.    
 

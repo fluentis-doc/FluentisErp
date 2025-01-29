@@ -10,18 +10,3 @@ sidebar_position: 4
 **Descriere**: reprezintă descrierea variantei selectate;
 
 **Cantitate**: se poate insera cantitatea de produs pentru fiecare variantă a articolului de produs în comanda de producție.
-
-RIBBON BAR: reprezinta meniul cu butoanele de executie, pentru fiecare operatie în partea aferentă fiecărei ferestre din aria in care se lucreaza. Lista functionalitatiilor contine:
-
-
-
-| Functie | Functionalitate |
-| --- | --- |
-| Salvează | Buton pentru salvarea modificărilor efectuate. |
-| Inserează comandă nouă | Aplează procedura pentru inserarea unei comenzi noi de producție; aplicația va salva automat comanda tocmai inserată și va șterge toate câmpurile pentru a insera noua comandă; |
-
-
-
-
-
-
