@@ -1,12 +1,11 @@
 ---
-title: Introduzione
+title: Introduction 
 sidebar_position: 0
 ---
 
-In questa sezione della guida andiamo a spiegare nel dettaglio le varie configurazioni presenti nelle tabelle collegate all'uso del Controlling.
-Riprenderemo quindi la lista delle tabelle specifiche del controlling, già presenti nella sezione generale delle [***Configurazioni***](/docs/configurations/configuration) di ***Fluentis ERP***, ordinandole per il processo logico di definizione passo passo per quanto riguarda quelle specifiche del Controlling, per poi richiamare e focalizzare l'attenzione alle specificità del Controlling presenti nelle tabelle e parametrizzazioni delle varie aree e moduli del sistema.
+In this section of the guide, we will explain in detail the various configurations present in the tables related to the use of Controlling. We will then review the list of specific controlling tables, already present in the general section of [***Configurations***](/docs/configurations/configuration) of ***Fluentis ERP***, ordering them by the logical process of step-by-step definition for those specific to Controlling, and then call attention to the specificities of Controlling present in the tables and parameterizations of the various areas and modules of the system.
 
-:::tip Nota
-Dove necessario andremo a specificare le eventuali differenze d'utilizzo tra società con Controlling attivo o meno
+
+:::tip Note 
+Where necessary, we will specify any differences in usage between companies with Controlling active or not.
 :::
-
