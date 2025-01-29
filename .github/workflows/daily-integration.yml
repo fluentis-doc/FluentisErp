@@ -81,7 +81,7 @@ jobs:
           echo "Pull request created: $PR_URL"
 
           # Automatically merge the PR once checks pass
-          gh pr merge "$PR_URL" --auto --squash --delete-branch
+          gh pr merge "$PR_URL" --auto --squash
 
           # Sync website-edits with main using rebase
           #echo "Syncing website-edits with main using rebase..."
