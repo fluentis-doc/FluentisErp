@@ -44,7 +44,7 @@ import Link from '@docusaurus/Link';
 ###     <Link to="/docs/planning/capacity-requirements-planning/capacity-requirements-planning-intro">CRP – Capacity Requirements Planning</Link>
         <p><Link to="/docs/planning/capacity-requirements-planning/work-center-capacity" className="bold-link">Capacitate Centre de Lucru</Link></p>
         <p>Permite monitorizarea și gestionarea încărcărilor de lucru ale centrelor productive, evidențiind eventualele supraîncărcări sau ineficiențe.</p>
-        <p><Link to="/docs/planning/capacity-requirements-planning/gantt-visualization/gantt-visualization-intro" className="bold-link">Simularea Gantt</Link></p>
+        <p><Link to="/docs/planning/capacity-requirements-planning/gantt-visualization/gantt-visualization-intro" className="bold-link">Simulare Gantt</Link></p>
         <p>Permite planificarea și monitorizarea eficientă a activităților, optimizând gestionarea timpului și a resurselor.</p>
         <p><Link to="/docs/planning/capacity-requirements-planning/phase-sequences/phase-sequence-topdown" className="bold-link">Secvență faze</Link></p>
         <p>Permite organizarea fazelor productive printr-o secvență manuală sau bazată pe reguli definite de utilizator.</p>

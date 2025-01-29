@@ -9,7 +9,7 @@ Form-ul permite crearea și modificarea unei simulări Gantt.
 
 Permite introducerea datelor de antet ale simulării Gantt.
 
-### Câmpuri specifice
+#### Câmpuri specifice
 
 > **Nume simulare**: indică numele asociat simulării Gantt (implicit este propus numele utilizatorului, data și ora creării);     
 > **Tip** și **Descriere**: reprezintă codul și descrierea [Tip simulare Gantt](/docs/configurations/tables/production/crp-gantt-simulation-type) (se văd doar cele care nu sunt de tip Snapshot);        
@@ -19,7 +19,7 @@ Permite introducerea datelor de antet ale simulării Gantt.
 > **Dată inserare**: indică data inserării simulării Gantt;     
 > **Utilizator**: indică utilizatorul simulării Gantt.     
 
-#### Filtru
+### Filtru
 
 Permite căutarea documentelor care vor fi utilizate pentru crearea **Gantt**.     
 Form-ul este compus dintr-o zonă în care sunt inserate filtrele pentru căutarea diverselor documente, iar în partea inferioară o listă care vizualizează toate documentele corespunzătoare filtrelor inserate și alta cu documentele care vor fi inserate în **Gantt**.       
