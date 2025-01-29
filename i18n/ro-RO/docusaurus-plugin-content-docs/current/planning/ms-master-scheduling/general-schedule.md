@@ -18,7 +18,7 @@ Ordinele planificate create se pot vizualiza în form-ul [Caută ordine planific
 
 ## 1. Comenzi
 
-*Butoane specifice*:
+#### Butoane specifice
 
 > - **Planificare generală**: permite sistemului să programeze comenzile selectate;  
 > - **Deschide căutare ordine planificate**: acest buton permite deschiderea form-ului [Căutare ordine planificate](/docs/planning/ms-master-scheduling/planned-orders/search-planned-orders). Dacă, înainte de a apăsa acest buton, este selectat un rând de comandă, form-ul ordinelor planificate se va deschide deja pre-filtrat pe acea comandă;               
