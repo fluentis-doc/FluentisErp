@@ -99,7 +99,7 @@ The manageable information includes:
 > This data is inherited from the *External Origin Document category* and is modifiable.   
 >
 > **Categories of interest**: free notes on the subject.   
-> **Notes (Note)**: free notes.
+> **Notes**: free notes.
 
 
 ### Distribution List 
@@ -112,7 +112,7 @@ The list consists of the following information:
 >> **Description**: this is the description of the recipient *Business function*.   
 >
 > **Employee**   
->> **Code**: this is the code of the recipient *employee (dipendente)*.   
+>> **Code**: this is the code of the recipient *employee*.   
 >> **Surname**: this is the surname of the recipient *employee*.   
 >> **Name**: this is the name of the recipient *employee*.   
 >
@@ -154,4 +154,4 @@ The list consists of the following information:
 It is possible to enter [Extra Data](/docs/configurations/utility/extra-data/extradata/new-extradata-simple) for each *External Origin Document*.   
 
 
-For everything not detailed in this document regarding the common operation of forms, please refer to the following link [Custom featuress, buttons, and fields](/docs/guide/common).
+For everything not detailed in this document regarding the common operation of forms, please refer to the following link [Custom features, buttons, and fields](/docs/guide/common).

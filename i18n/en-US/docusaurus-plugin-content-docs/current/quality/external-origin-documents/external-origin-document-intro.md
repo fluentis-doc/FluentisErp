@@ -10,7 +10,7 @@ import Link from '@docusaurus/Link';
 
 <div className="cardContainer">
     <div className="card">
-###     <Link to="/docs/quality/external-origin-documents/external-origin-document/external-origin-document-management">External Origin Documents (Documenti di origine esterna)</Link>
+###     <Link to="/docs/quality/external-origin-documents/external-origin-document/external-origin-document-management">External Origin Documents</Link>
         <p>The management of external origin documents allows for: cataloging, managing editions/revisions, and their distribution (both in paper and electronic format) to the business functions interested in viewing such documents.</p>
         <p>We list some examples of external origin documents that can be cataloged: *User manuals and machinery and plant maintenance*, *Regulations*, *Laws*, *Specific magazines*, etc.</p>
         <p>The information on where the originals are stored and the ability to attach electronic copies allows for immediate traceability and consultation with a simple mouse click.</p>
@@ -38,4 +38,4 @@ import Link from '@docusaurus/Link';
 
 
 ## Links to Other Modules
-*Norms and Laws (Norme e Leggi)* are used in the [*Data Sheets*](/docs/quality/item-control/data-sheets/data-sheet-management) of the [*Items Control*](/docs/quality/item-control/item-control-intro).
+*Norms and Laws* are used in the [*Data Sheets*](/docs/quality/item-control/data-sheets/data-sheet-management) of the [*Items Control*](/docs/quality/item-control/item-control-intro).

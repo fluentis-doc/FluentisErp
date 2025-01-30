@@ -18,7 +18,7 @@ Ordinele planificate create se pot vizualiza în form-ul [Caută ordine planific
 
 ## 1. Comenzi
 
-*Butoane specifice*:
+#### Butoane specifice
 
 > - **Planificare generală**: permite sistemului să programeze comenzile selectate;  
 > - **Deschide căutare ordine planificate**: acest buton permite deschiderea form-ului [Căutare ordine planificate](/docs/planning/ms-master-scheduling/planned-orders/search-planned-orders). Dacă, înainte de a apăsa acest buton, este selectat un rând de comandă, form-ul ordinelor planificate se va deschide deja pre-filtrat pe acea comandă;               
@@ -60,15 +60,18 @@ Comenzile create manual sunt întotdeauna produse independent de disponibilitate
 - **Ordini planificate de**: prin cele 3 opțiuni se indică dacă se dorește ca sistemul să genereze toate cele trei tipuri de ordine prevăzute, deci producție, achiziție și sistem lohn; în acest mod, aceste tipuri de ordine vor avea legătura directă cu comanda; (de exemplu, dacă nu se pune flag-ul pe Achiziție, dar se menține flag-ul pe Execuție MRP, sistemul va crea totuși și ordinele de achiziție, dar acestea vor fi neslegate de comandă);
 
 - **Generează doar ordine planificate pe nivele**: în acest caz se vor indica nivelurile (1-2...) pentru care se dorește generarea ordinelor planificate;  
+
 - **Ordini furnizori** sau **Cereri de achiziție** și **Ordine client**: în acest caz, dacă există documente în sistem fără dată de angajament și disponibilitate, se poate spune sistemului să considere ca dată cea care se poate indica în câmpul corespunzător, sau să spună sistemului să nu ia în considerare acest tip de documente;  
+
 - **Grupare ordine planificate după**: în cazul în care se lucrează pe comandă, în acest câmp trebuie setată opțiunea *Nici o grupare*; altfel, se poate selecta prin combo-ul corespunzător tipul de grupare care se intenționează a fi aplicat, dar în acest caz legătura între ordinele planificate și comandă s-ar pierde;  
+
 - **Grupare cel mai târziu** sau **Cel mai devreme**: în acest caz se poate alege dacă se va grupa ordinele cel mai târziu (deci în funcție de ultimul) sau cel mai devreme (care este cel mai recomandat) și în câmpul următor numit **Pentru o perioadă de zile** se va indica numărul de zile în care se va face gruparea;  
 
-- **Consideră cantitățile în funcție de lotul economic/Consideră multiplii lotului economic**: setând primul parametru se indică că în timpul planificării se dorește să se țină cont și de lotul economic al articolului, și în consecință se va activa flag-ul care va permite să se decidă dacă se doresc a fi luate în considerare și multiplii lotului economic (ambele aceste date sunt setate în cadrul [Parametrii MRP](/docs/configurations/parameters/production/mrp-parameters/search-mrp-parameters) ai articolului);
+- **Consideră cantitățile în funcție de lotul economic/Consideră multiplii lotului economic**: setând primul parametru se relevă că în timpul planificării se dorește să se țină cont și de lotul economic al articolului, și în consecință se va activa flag-ul care va permite să se decidă dacă se doresc a fi luate în considerare și multiplii lotului economic (ambele aceste date sunt setate în cadrul [Parametrii MRP](/docs/configurations/parameters/production/mrp-parameters/search-mrp-parameters) ai articolului);
 
 - **Compacteză/separă ordine**: în acest caz se alege dacă se dorește să se păstreze sau nu o zi de marjă între finalizarea producției ordinii de 1 nivel și cea a nivelului următor;  
 
-- **Execuție MRP după planificare** și **Articole pe stoc**: în acest caz se indică că se dorește ca sistemul să analizeze totuși cu MRP toate codurile de articol care sunt gestionate pe baza cererii pentru acest produs finit. MRP rulează pe toate articolele din *Lista de componente* a acestui articol, care au o politică de gestionare diferită de cea pe comandă, deoarece pentru toate acele articole se poate dori verificarea acoperirii sau se pot genera ordinele planificate fără legătură cu comanda; în acest caz, MRP ia în considerare parametrii indicați în tab-ul *Parametrii generali* al **planificării**;      
+- **Execuție MRP după planificare** și **Articole pe stoc**: în acest caz se relevă că se dorește ca sistemul să analizeze totuși cu MRP toate codurile de articol care sunt gestionate pe baza cererii pentru acest produs finit. MRP rulează pe toate articolele din *Lista de componente* a acestui articol, care au o politică de gestionare diferită de cea pe comandă, deoarece pentru toate acele articole se poate dori verificarea acoperirii sau se pot genera ordinele planificate fără legătură cu comanda; în acest caz, MRP ia în considerare parametrii indicați în tab-ul *Parametrii generali* al **planificării**;      
 
 - **Planificare pe zona de livrare**: setând acest flag, sistemul va verifica când comanda trebuie livrată în funcție de zona sa de livrare și va programa comanda mai întâi în raport cu ziua livrării;
 
@@ -78,25 +81,25 @@ Comenzile create manual sunt întotdeauna produse independent de disponibilitate
 
 - **Planificare cel mai devreme** sau **Cel mai târziu:**: cu aceste opțiuni se poate stabili dacă planificarea trebuie să fie efectuată pe baza ultimei date de producție a ordinelor care trebuie programate, deci pe baza ultimei comenzi de produs, sau cel mai devreme pe baza primei comenzi de produs;
 
-- **Planificare comenzi lansate sau executive**: în mod implicit, atunci când o comandă este programată, aceasta este încă vizibilă în tab-ul comenzi și de acolo, fiind în stare programată, este posibil să fie reselectată și reprogramată de câte ori se dorește; cu toate acestea, atunci când începe lansarea ordinelor planificate, comenzile își schimbă starea din programate în lansate sau executive și nu mai sunt vizibile în tab-ul comenzi; pentru a putea continua să le vezi în tab-ul comenzi și după ce au devenit lansate sau executive, este suficient să activezi acest flag pentru a le putea vedea și reprograma exact așa cum se întâmplă pentru comenzile în stare programată;
+- **Planificare comenzi lansate sau executive**: în mod implicit, atunci când o comandă este programată, aceasta este încă vizibilă în tab-ul comenzi și de acolo, fiind în stare programată, este posibil să fie reselectată și reprogramată de câte ori se dorește; cu toate acestea, atunci când începe lansarea ordinelor planificate, comenzile își schimbă starea din programate în lansate sau executive și nu mai sunt vizibile în tab-ul comenzi; pentru a putea continua să le vezi în tab-ul comenzi și după ce au devenit lansate sau executive, este suficient să activezi această opțiune pentru a le putea vedea și reprograma exact așa cum se întâmplă pentru comenzile în stare programată;
 
 - **Versiune**: programatorul va programa într-o versiune care este setată în acest câmp, dacă în comanda de producție nu găsește o versiune definită;
 
-- **Consideră disponibilitatea**: dacă acest flag este activ, indică programatorului că în procesul de planificare trebuie să țină cont de disponibilitatea provenită din gestiunile indicate în tabelul de mai jos, care sunt cele definite anterior în [Parametrii MS](/docs/configurations/parameters/production/mps-parameters);  
+- **Consideră disponibilitatea**: dacă această opțiune este activ, indică programatorului că în procesul de planificare trebuie să țină cont de disponibilitatea provenită din gestiunile indicate în tabelul de mai jos, care sunt cele definite anterior în [Parametrii MS](/docs/configurations/parameters/production/mps-parameters);  
 
 - **Gestiune**: conține gestiunile se activează doar dacă este setat flag-ul **Consideră disponibilitatea**; în tabel apar gestiunile care au fost introduse în fereastra de [Calcul Disponibilitate](/docs/erp-home/registers/items/calculate-availability);         
 
 - **Consideră disponibilitatea la data cererii sau minimul în perioada**: aceste flag-uri se activează doar dacă este activ flag-ul **Consideră disponibilitatea**; la data cererii înseamnă că programatorul trebuie să considere disponibilitatea în momentul în care trebuie să producă comanda, în timp ce consideră minimul în perioada, programatorul va lua în considerare disponibilitatea minimă în perioada până la data setată inițial în parametrul Programare până la;
 
-- **Consideră loturi cu status nedisponibil**: și acest flag se activează doar dacă este activ flag-ul **Consideră disponibilitatea**; dacă este activ, programatorul va trebui să considere loturile în stare indisponibilă la data respectivă;      
+- **Consideră loturi cu status nedisponibil**: și această opțiune se activează doar dacă este activ flag-ul **Consideră disponibilitatea**; dacă este activ, programatorul va trebui să considere loturile în stare indisponibilă la data respectivă;      
 
-- **Consideră disponibilitatea și pentru primul nivel**: și acest flag se activează doar dacă este activ flag-ul **Consideră disponibilitatea**; dacă este activ, programatorul va trebui să considere disponibilitatea și pentru primul nivel (deci pentru articolul prezent în comanda de producție);
+- **Consideră disponibilitatea și pentru primul nivel**: și această opțiune se activează doar dacă este activ flag-ul **Consideră disponibilitatea**; dacă este activ, programatorul va trebui să considere disponibilitatea și pentru primul nivel (deci pentru articolul prezent în comanda de producție);
 
-- **Consideră și disponibilitatea negativă**: dacă este activ, programatorul va trebui să considere și disponibilitățile negative în momentul planificării pentru articolul de prim nivel; de fapt, acest flag poate fi activat doar dacă este activ flag-ul **Consideră disponibilitatea și pentru primul nivel**;      
+- **Consideră și disponibilitatea negativă**: dacă este activ, programatorul va trebui să considere și disponibilitățile negative în momentul planificării pentru articolul de prim nivel; de fapt, această opțiune poate fi activat doar dacă este activ flag-ul **Consideră disponibilitatea și pentru primul nivel**;      
 
 - **Consideră disponibilitatea provenind din**: aceste flag-uri devin activabile doar dacă este activ flag-ul **Consideră disponibilitatea** și permit programatorului să considere disponibilitățile provenind din achiziții, vânzări, din gestiune, din sistem lohn și din producție;
 
-- **Reintegrare stoc minim articol** și **Reintegrare punct de reordonare articol**: primul flag se activează doar dacă se setează al doilea; aceste două flag-uri indică că programatorul va trebui să prevadă reintegrarea punctului de reordonare stabilit pentru acel articol și dacă se dorește și reintegrarea stocului minim al articolului; ambele aceste date sunt introduse în momentul creării articolului în tab-ul [Aprovizionare](/docs/erp-home/registers/items/create-new-items/item-registry/procurement);
+- **Reintegrare stoc minim articol** și **Reintegrare punct de reordonare articol**: primul flag se activează doar dacă se setează al doilea; aceste două flag-uri relevă că programatorul va trebui să prevadă reintegrarea punctului de reordonare stabilit pentru acel articol și dacă se dorește și reintegrarea stocului minim al articolului; ambele aceste date sunt introduse în momentul creării articolului în tab-ul [Aprovizionare](/docs/erp-home/registers/items/create-new-items/item-registry/procurement);
 
 - **Consideră indice de acoperire**: dacă flag-ul este activ, programatorul va trebui să țină cont de indicele de acoperire care este stabilit întotdeauna în tab-ul *Aprovizionare* al articolului;
 
@@ -108,7 +111,7 @@ Comenzile create manual sunt întotdeauna produse independent de disponibilitate
 Materialele alternative sunt introduse în tab-ul **Alternative**, referitor la materialul principal, prezent în [Lista de componente](/docs/erp-home/registers/production/bill-of-materials/assemblies/structure-management).
 :::
 
-- **Consideră etapele alternative**: dacă este activ, acest flag indică că în momentul planificării trebuie să se considere și etapele de lucru alternative; activând acest flag se va activa câmpul editabil următor numit **Toleranță pentru ocuparea C.d.L. %**, în care se va putea indica toleranța de ocupare a centrului de lucru în %, peste care programatorul va trebui să considere etapele alternative față de etapa implicită.
+- **Consideră faze alternative**: dacă este activ, această opțiune relevă că în momentul planificării trebuie să se considere și fazele de lucru alternative; activând această opțiune se va activa câmpul editabil următor numit **Toleranță pentru ocuparea C.d.L. %**, în care se va putea indica toleranța de ocupare a centrului de lucru în %, peste care programatorul va trebui să considere fazele alternative față de cea implicită.
 
 ## 3. Monitor
 
@@ -116,7 +119,7 @@ Materialele alternative sunt introduse în tab-ul **Alternative**, referitor la 
 
 Se poate decide dacă să se vizualizeze **Calendarele** luate în considerare (Calendarul de *Fabrică* și calendarul *Capacităților productive*); se poate decide ca să fie semnalat dacă în planificare au fost prezente **Articole fără** *Parametri MRP*, fără *Listă de componente* sau *Ciclul de lucru*, fără *Furnizor preferențial* (în cazul ordinelor de achiziție), fără *Terț preferențial* (pentru ordonările de sistem lohn) și fără indicația stocului minim pentru toate acele articole care sunt gestionate pe stoc. Pentru fiecare **Comandă de producție** se poate alege să se vizualizeze în istoric, *Numărul de rânduri programate* și detaliul acestor rânduri, comenzile întârziate și comenzile expirate.
 
-În ceea ce privește **Ordinele planificate**, se poate alege să se vizualizeze în istoric, *Numărul de ordine generate* și *Detaliul* acestora, ordinele *Întârziate* și *Expirate*, *Alternativele materialelor*; se poate alege de asemenea să se fie avertizat în cazul în care există **Ordine planificate fără** *Material*, fără *Etape de lucru*, fără *Furnizor* (pentru achiziție) și fără *Terț* (pentru sistem lohn).
+În ceea ce privește **Ordinele planificate**, se poate alege să se vizualizeze în istoric, *Numărul de ordine generate* și *Detaliul* acestora, ordinele *Întârziate* și *Expirate*, *Alternativele materialelor*; se poate alege de asemenea să se fie avertizat în cazul în care există **Ordine planificate fără** *Material*, fără *Faze de lucru*, fără *Furnizor* (pentru achiziție) și fără *Terț* (pentru sistem lohn).
 
 - **Legendă**: flag-urile active permit primirea avertizării și detaliilor referitoare la elementele selectate.
 
@@ -144,7 +147,7 @@ Se poate decide dacă să se vizualizeze **Calendarele** luate în considerare (
 
 Toate celelalte coloane ale grilei vizualizează setările utilizate în tab-ul **Parametri** al *Planificării generale* referitoare la rândul selectat.
 
-### Rezultat planificare**
+### Rezultat planificare
 
 În funcție de rândul selectat în tabel, în această secțiune vor apărea detaliile solicitate de utilizator în tab-ul **Monitor**.
 

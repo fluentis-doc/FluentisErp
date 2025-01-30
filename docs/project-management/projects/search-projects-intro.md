@@ -3,7 +3,7 @@ title: Ricerca Progetti
 sidebar_position: 1
 ---
 
-La ricerca **Progetti** permette di ricercare i progetti già inseriti.
+La ricerca **Progetti** permette di ricercare i progetti già inseriti e di aggiungere progetti nuovi.
 
 import SearchForm from './../../import/sections/search-form.md'
 
