@@ -1,14 +1,14 @@
 ---
-title: Documenti degli acquisti e vendite
+title: Purchase and Sales Documents 
 sidebar_position: 20
 ---
 
-All'interno dei vari documenti del ciclo attivo e passivo abbiamo a disposizione, sostanzialmente, due elementi d'interesse per le valorizzazioni del *Controlling*: i collegamenti ai *Progetti* e il dettaglio di valorizzazione della scheda *Analitica* di ogni articolo movimentato.
+Within the various documents of the active and passive cycle, we essentially have two elements of interest for valuation in *Controlling*: the links to *Projects* and the detailed valuation information in the *Analytic* tab for each item moved.
 
-Per quanto riguarda i *Progetti*, in testata dei documenti avremo la possibilità di associare un progetto di riferimento, che sarà utilizzato per valorizzare con lo stesso riferimento tutti gli articoli che saranno inseriti al suo interno: nel caso in cui si modifichi il riferimento di testata con articoli già presenti, ***FluentisERP*** chiederà conferma della sostituzione o meno in tutti i dettagli. Viene consentita la modifica manuale del riferimento del progetto sulla singola riga articolo, con un unico campo di collegamento a disposizione.
+Regarding the *Projects*, in the header of the documents, we will have the opportunity to associate a reference project, which will be used to value all the items inserted within it with the same reference: in the case of modifying the header reference with items already present, ***FluentisERP*** will ask for confirmation to replace them in all the details. Manual modification of the project reference is allowed at the individual item line, with a single connection field available.
 
-Per quanto riguarda la scheda *Analitica* di dettaglio, sottostante alla sezione degli articoli, questa ci consentirà di attribuire liberamente il valore di riga su N centri aziendali: ***FluentisERP*** assegnerà automaticamente i dati ai centri secondo le logiche di priorità e le configurazioni disponibili, ma è sempre data libertà all'utente di procedere ad una modifica manuale. Nel caso in cui la società abbia attivo il *Controlling*, questa scheda analitica presenterà le stesse caratteristiche di gestione multidimensionale e di progetto della scheda analitica delle registrazioni contabili: dato che il documento e la riga articolo, come detto al paragrafo precedente, sono già potenzialmente associate ad un *Progetto*, la sezione analitica valorizzerà automaticamente l'eventuale dimensione *Progetti* dei centri aziendali.
+As for the detailed *Analytic* tab, located below the item section, it allows us to freely attribute the line value to N corporate centers: ***FluentisERP*** will automatically assign the data to the centers according to the priority logic and available configurations, but users are always free to make manual modifications. If the company has *Controlling* activated, this analytic tab will present the same characteristics of multidimensional and project management as the analytic tab of ledger records: since the document and the item line, as mentioned in the previous paragraph, are already potentially associated with a *Project*, the analytic section will automatically populate the potential *Projects* dimension of the corporate centers.
 
-:::tip Nota
-Dato che la scheda analitica è l'origine dati di valorizzazione della dimensione *Progetti* e dato che la scheda è liberamente modificabile, anche se la riga articolo prevede l'aggancio ad un unico *Progetto* l'utente ha modo di intervenire a livello di analitica per spezzare l'attribuzione su più *Progetti*, senza dover moltiplicare le righe articolo del documento
+:::tip Note 
+Since the analytic tab is the data source for valuing the *Projects* dimension and since the tab is freely modifiable, even if the item line requires linking to a single *Project*, the user can intervene at the analytic level to break down the assignment across multiple *Projects*, without needing to multiply the item lines of the document.
 :::

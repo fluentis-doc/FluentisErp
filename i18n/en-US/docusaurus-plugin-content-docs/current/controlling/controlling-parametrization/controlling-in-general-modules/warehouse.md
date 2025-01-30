@@ -1,10 +1,10 @@
 ---
-title: Registrazioni di magazzino
+title: Stock Records
 sidebar_position: 30
 ---
 
-Normalmente le registrazioni di magazzino non prevedono una valorizzazione automatica dei centri di costo, anche se ogni riga di movimentazione prevede la sezione di dettaglio della valorizzazione dei centri: questo perché normalmente è sufficiente valorizzarli quando si contabilizzano le rimanenze iniziali e rimanenze finali nell'area controlling.
+Normally, stock records do not provide for automatic valuation of cost centers, although each movement line includes the detail section of cost center valuation: this is because it is usually sufficient to value them when accounting for initial and final inventory in the controlling area.
 
-:::tip nota
-Nel caso in cui si voglia valorizzare automaticamente il dato dell'analitica nel corso della registrazione dei carichi/scarichi dai documenti, è possibile abilitare il flag *Centri di costo* nelle causali di magazzino relative.
+:::tip note
+If you want to automatically value the analytic data during the recording of loads/unloads from documents, you can enable the *Cost Centers* flag in the related warehouse templates.
 :::
