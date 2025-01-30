@@ -1,36 +1,37 @@
 ---
-title: Warehouses
-sidebar_position: 8
+title: Magazzini
+sidebar_position: 15
 ---
 
-The warehouses insertion table is necessary in order to use correctly all system functions that concern material movement.
+:::important A cosa serve
+La tabella Magazzini di Fluentis consente di creare, modificare e gestire i record dei magazzini, assicurando un'efficace movimentazione dei materiali all'interno del sistema. 
+Nella tabella, gli utenti trovano un'interfaccia intuitiva che include strumenti di ricerca e filtri per una rapida accessibilità ai dati. È possibile inserire nuovi magazzini specificando almeno il codice e la descrizione, oltre a dettagli come l'area gestionale e la data di fine validità.      
+Ogni magazzino può essere assegnato a uno specifico sito produttivo, facilitando così l'organizzazione delle risorse e il monitoraggio delle scorte.     
+Il collegamento di ogni magazzino a un determinato sito produttivo rappresenta un valore aggiunto, poiché permette di ottimizzare la distribuzione delle risorse e migliorare la pianificazione logistica aziendale.
+:::
 
-The warehouses table consists as follows:
+La tabella si trova sul percorso **Tabelle > Logistica > Magazzini**.
 
-RIBBON BAR: it represents the Form menu, that is the area on which it is possible to perform actions. The list of features is the following:
+La tabella di inserimento magazzini è necessaria per poter utilizzare in modo corretto tutte le funzioni del sistema che hanno a che vedere con la movimentazione dei materiali.
 
+La tabella consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
 
+**Ricerca magazzini**
 
-| Function | Meaning |
-| --- | --- |
-| Search | Button to apply search filters within database of the inserted warehouses. |
-| Insert | It enables the user to insert a new warehouse. |
-| Delete | It deletes the selected warehouse. |
-| Delete Cost Centres | It deletes the selected cost centre. |
-| Delete Profit Centre | It deletes the selected profit centre. |
-| Print Preview | It performs the print preview. |
-| Print | It prints the report. |
+La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
 
-FILTER AREA: The filter area contains the list of the possible data types thanks to which it is possible to perform a selection. In this case the search filter works according to warehouse description.
+**Inserimento magazzino**
 
-RESULT GRID: the result grid represents the warehouses list which correspond to the filter data, above mentioned. After having specified the values through which it is possible to perform a warehouses search, the user can push [Search] button on the related Ribbon and will obtain the list of the desired wareouses.
+Per poter inserire nuove codifiche è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Inserimento**.
+Per il nuovo record si devono inserire almeno i campi obbligatori richiesti dal programma: il Codice del **Magazzino** e la **Descrizione**.
 
-Apart from searching warehouses on system it is possible even to add one or more warehouses. In order to do this, it is necessary to click on the first free record (or to push the [insertion] button on toolbar). In this way it is possible to indicate warehouse code and description. Possibly it is possible to indicate production site, management area, end validity date of warehouse, destination (taken from contacts register) and/or point of sale.
+*Campi specifici*: 
 
-For each warehouse it is possible even to insert the related cost and/or profit centres.
+> **Sito produzione**: indica il [Sito Produzione](/docs/configurations/parameters/production/production-orders-parameters/production-site) a cui appartiene il magazzino;   
+> **Area gestionale**: indica l'[Area gestionale](/docs/configurations/tables/logistics/management-area) a cui appartiene il magazzino;     
+> **Data fine validità**: indica la data di fine validità del magazzino;  
+> **Nomignolo** e **Ragione sociale**: indica la destinazione (ripresa dall'*Anagrafica contatti*).   
 
+Per ogni magazzino è poi possibile inserire i relativi **Centri di costo** e/o i **Centri di ricavo**. 
 
-
-
-
-
+Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).

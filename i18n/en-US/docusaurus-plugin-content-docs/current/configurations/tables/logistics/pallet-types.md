@@ -1,26 +1,20 @@
 ---
-title: Pallet Types
-sidebar_position: 10
+title: Tipi UDC
+sidebar_position: 37
 ---
 
-The Pallet types table consists as follows:
+La tabella di inserimento dei tipi UDC è una tabella di base per l'utilizzo delle unità di carico. Nello specifico vengono definiti i tipi imballo e relativi dati che serviranno per la creazione e l'ottimizzazione dei piani di carico (come per esempio pesi e dimensioni).
 
-RIBBON BAR: the ribbon bar represents the Form menu, that is the area on which it is possible to perform actions. The possible features list is the following:
+La tabella consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
 
+**Ricerca Tipi gruppo UDC**
 
+La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
 
-| Function | Meaning |
-| --- | --- |
-| Search | Button to apply search filters within database of Pallet types on system. |
-| Insert | It enables the user to insert a new Pallet type. |
-| Delete | It deletes the selected Pallet type. |
+**Inserimento tipi UDC**
 
-FILTER AREA: The filter area contains the list of the possible data types thanks to which it is possible to perform a selection. In this case the search filter corresponds to Pallet type and description.
+Per poter inserire nuove codifiche è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**. 
 
-RESULT GRID: the result grid represents the list of Pallet types which correspond to the filter data, above mentioned. After having specified the values through which it is possible to perform a Pallet types search, the user can push [Search] button on the related Ribbon and will obtain the list of Pallet types on the result grid.
+Per il nuovo record si devono inserire almeno i campi obbligatori richiesti dal programma: Tipo, Descrizione, Tipo gruppo (proposto dalla tabella *Tipi gruppo UDC*), Numerazione. 
 
-
-
-
-
-
+Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).

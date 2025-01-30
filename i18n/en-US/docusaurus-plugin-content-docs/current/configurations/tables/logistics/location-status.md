@@ -1,35 +1,21 @@
 ---
-title: Location Status
+title: Stato ubicazione
+sidebar_position: 23
 ---
 
-This table manages the codification of different conditions of location to be managed in order to be available in the specific modules.
+La tabella si trova sul percorso **Tabelle > Logistica > Stato ubicazione**.
 
-RIBBON BAR: it represents the form menu that is the area in which it is possible to perform actions linked to the procedure in use. The list of possible features is the following: 
+In questa tabella è possibile gestire la codifica degli stati dell’[Ubicazione](/docs/logistics/warehouse/location/locations/) di magazzino.    
 
+Consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
 
+**Ricerca Stato ubicazione**
 
+La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
 
+**Inserimento Stato ubicazione**
 
-| Function | Meaning |
-| --- | --- |
-| Search | Button to apply search filters within database of the inserted location conditions.  |
-| Insert | Button to insert a new location status.  |
-| Delete | Button to delete the selected location.  |
-| Print Preview | Button to perform the print preview. |
-| Print | Button to print the report. |
+Per poter inserire nuove codifiche è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.    
+Per il nuovo record si devono inserire i campi obbligatori richiesti dal programma: il **Codice** e la **Descrizione**.
 
-FILTER AREA: it contains the list of possible data types, thanks to which it is possible to perform a selection. In this case the search filter refers to the status and description of the location status.
-
-RESULT GRID: it represents the list of location status, which refer to the filter data above mentioned. After having specified the values, through which obtain a research of location status, the user, by clicking on the [Search] button on the related Ribbon, will obtain a list of the location status in the result grid. 
-
-**Insert Location Status
-
-**
-
-In order to insert new codifications of the Location Status, it is necessary to click on the first empty record (or on the [insert] button in the related ribbon bar). So it is possible to specify the alphanumeric code for the Type and its description. 
-
-
-
-
-
-
+Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
