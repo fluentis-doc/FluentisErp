@@ -1,24 +1,22 @@
 ---
-title: Bills Types
+title: Tipi effetti
 sidebar_position: 3
 ---
 
-The table is compiled through the setting of a user code and description, to which it is necessary to assign reference numerator, predefined bill typology and handling detail account: this detail account will be used in offset during the customer closing within bills accounting procedure. The bill type can be associated to the payment type in the related table. Lastly remember that, only bills of promissory type will be managed in the accouting of unpaids  on load procedure of unpaid module.
+:::tip[FAst Start]
+La tabella è interessata dalla procedura di [**Fast Start**](/docs/guide/fast-start)
 
-RIBBON BAR: it represents the Form Menu, that is the area in which it is possible to perform actions linked to the procedure in use. The list of features is the following:
+Nel caso in cui si intenda configurare manualmente fare riferimento alla check list della pagina linkata
+:::
 
+La tabella viene compilata attraverso l'imposizione di un codice e di una descrizione utente, ai quali va assegnato poi un numeratore di riferimento, una tipologia di effetto tra quelle predefinite e infine un sottoconto di movimentazione: tale sottoconto sarà utilizzato in contropartita alla chiusura cliente all'interno della procedura di contabilizzazione effetti.
 
+Il tipo effetto può poi essere associato al tipo di pagamento nella tabella omonima.
 
-| Function | Meaning |
-| --- | --- |
-| Search | Button to perform the search of bills types according to filters set. |
-| New | Button to place the cursor during the insertion of a new line. |
-| Delete | Button to delete the selected advance type. |
-| Preview | Button to perform the print preview of table in use. |
-| Print | Button to print the table in use. |
+Da segnalare, infine, che solo gli effetti di tipo cambiario potranno essere gestiti nelle procedura di contabilizzazione insoluti su cessione del modulo Insoluti.
 
+Il flag **Gestione importo parziale** consente di creare effetti che consumano *parzialmente* le partite, indicandone l'importo. Prevede una gestione manuale all'interno dell'effetto.
 
+Il link **Cassa** non è in uso per la localizzazione italiana, serve per registrare negli effetti dai registratori di cassa.
 
-
-
-
+<iframe width="560" height="315" src="https://www.youtube.com/embed/pnRACKqZqvM" title="YouTube video player" frameborder="0" allowfullscreen= "true"></iframe>

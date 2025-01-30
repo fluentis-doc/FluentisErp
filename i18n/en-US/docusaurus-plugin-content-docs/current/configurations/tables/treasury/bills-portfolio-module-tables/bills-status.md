@@ -1,40 +1,29 @@
 ---
-title: Bills Status
+title: Stati effetti
 sidebar_position: 5
 ---
+:::tip[FAst Start]
+La tabella è interessata dalla procedura di [**Fast Start**](/docs/guide/fast-start)
 
-The table is compiled through the setting of a user code and description for necessary bills management status of company, by setting one of the predefined status among:
+Nel caso in cui si intenda configurare manualmente fare riferimento alla check list della pagina linkata
+:::
 
-**Emitted bill;**
+La tabella viene compilata attraverso l'imposizione di un codice e di una descrizione utente per gli stati necessari alla gestione effetti della società, impostando uno degli stati predefiniti fra:
 
-**Bill presented to discount;**
+**Effetto emesso;**
 
-**Bill presented subject to collection;**
+**Effetto presentato allo sconto;**
 
-**Bill presented after collection;**
+**Effetto presentato salvo buon fine;**
 
-**Bill returned as credited;**
+**Effetto presentato al dopo incasso;**
 
-**Bill returned as arrear;**
+**Effetto ritornato accreditato;**
 
-**Bill endorsed;**
+**Effetto ritornato insoluto;**
 
-**General effect.**
+**Effetto girato;**
 
-RIBBON BAR: it represents the Form Menu, that is the area in which it is possible to perform actions linked to the procedure in use. The list of features is the following:
+**Effetto generale.**
 
-
-
-| Function | Meaning |
-| --- | --- |
-| Search | Button to perform the bills status search according to filters set. |
-| New | Button to place the cursor during the insertion of a new line. |
-| Delete | Button to delete the selected advance type. |
-| Preview | Button to perform the print preview of table in use. |
-| Print | Button to print the table in use. |
-
-
-
-
-
-
+<iframe width="560" height="315" src="https://www.youtube.com/embed/pnRACKqZqvM" title="YouTube video player" frameborder="0" allowfullscreen= "true"></iframe>
