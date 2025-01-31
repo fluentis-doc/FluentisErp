@@ -1,142 +1,142 @@
 ---
-title: Costificazione
+title: Estimare cost 
 sidebar_position: 6
 ---
 
-**Parametrizzazioni preliminari**   
+## Parametrizări preliminare
 
-Prima di procedere vedasi quando indicato nelle seguenti pagine in merito alla *Costificazione delle commesse di produzione*:    
+Înainte de a începe, consultați informațiile din următoarele pagini referitoare la *Estimare cost comenzi de producție*:
 
-> [Parametri MS -> tab costificazione commessa](/docs/configurations/parameters/production/mps-parameters)     
-> [Tipi documenti](/docs/configurations/tables/production/documents-types)     
-> [Tipo costificazione commessa](/docs/configurations/tables/production/production-job-order-cost-type)      
-> [Parametri conto lavoro -> Valor. lavorazione materiali a costo](/docs/configurations/parameters/production/subcontractor-parameters/)       
+> [Parametri MS -> tab Estimare cost comandă ](/docs/configurations/parameters/production/mps-parameters)
+> [Tipuri documente ](/docs/configurations/tables/production/documents-types)
+> [Tip estimare cost comandă ](/docs/configurations/tables/production/production-job-order-cost-type)
+> [Parametri sistem lohn -> Valor. lucrare materiale la cost ](/docs/configurations/parameters/production/subcontractor-parameters/)
 
-*Pulsanti specifici*:
- 
-> **Costi aggiuntivi**: permette di inserire dei costi aggiuntivi che possono essere proposti di default in ogni successiva costificazione (questi costi non sono legati alla singola commessa, ma sono globali). Tali costi si dividono in *Costi diretti*, *Costi generali* e *Altri costi*. Questi verranno riportati di default nelle corrispondenti sezioni di costi preventivi e consuntivi nel tab *Costi totali*;     
-> **Esegui costificazione**: permette di lanciare la procedura di costificazione commesse;    
-> **Inserisci costificazione**: permette di inserire una nuova costificazione; in automatico verrnno inseriti tutti i dati di default inseriti nella fase di parametrizzazione preliminare, che ovviamente possono essere variati manualmente per la singola costificazione;     
-> **Cancella costificazione**: permette di cancellare una costificazione già creata;     
-> **Esplodi costificazione**: permette di esplodere l'albero dei documenti di una costificazione già creata. 
+#### Butoane specifice 
 
-:::note Nota
-Il tab **Costificazione** (realtavio alla costificazione) è presente nella gestione sia delle commesse monoprodotto che in quella delle multiprodotto; nel caso delle multiprodotto la costificazione perderà in esame tutti gli articoli presenti in quella commessa.
-::: 
+> **Costuri adiționale **: permite introducerea unor costuri adiționale care pot fi propuse implicit în fiecare *Estimare cost* ulterioară (aceste costuri nu sunt legate de comanda individuală, ci sunt globale). Aceste costuri sunt împărțite în *Costuri directe*, *Costuri generale* și *Alte costuri*. Acestea vor fi raportate implicit în secțiunile corespunzătoare de costuri prevăzute și efective în tab-ul *Costuri totale*;
+> **Execută estimare cost**: permite lansarea procedurii de Estimare cost comenzi;
+> **Inserează Estimare cost**: permite introducerea unei noi estimări de cost: Automat vor fi introduse toate datele implicite introduse în faza de parametrizare preliminară, care e pot fi modificate manual pentru fiecare *Estimare cost*;
+> **Șterge Estimare cost**: permite ștergerea unei estimări de cost deja create;
+> **Extinde Estimare cost**: permite extinderea arborelui documentelor unei estimări de cost deja create.
 
-Nella parte superiore della form è presente una griglia contenente l'elenco di tutte le valorizzazioni lanciate per quella commessa, mentre nella parte destra vengono mostrate le informazioni generali relative alla commessa selezionata.
-La parte inferiore della form, invece, si compone dei seguenti tab:
+:::note Notă
+Tab-ul **Estimare cost** este prezent atât în gestionarea comenzilor monoprodus, cât și în cea pentru comenzile multiprodus. Pentru cele multiprodus, *Estimare cost* va lua în considerare toate articolele prezente în acea comandă.
+:::
 
-## Dettaglio costi
+În partea superioară a form-ului este prezent un tabel care conține lista tuturor valorificărilor lansate pentru acea comandă, în timp ce în partea dreaptă sunt afișate informațiile generale referitoare la comanda selectată.
+Partea inferioară a form-ului, în schimb, se compune din următoarele tab-uri:
 
-In questo tab vengono mostrate le informazioni di dettglio dei costi relativi alla costificazione selezionata nella parte superiore della form.
-Nella tabella di sinistra è possibile visualizzare l'albero dei documenti che compongono la costificazione con le seguenti informazioni:
-**Tipo documento**: indica la tipologia del documento;    
-**Anno**: indica l'anno del documento;     
-**Numero**: indica il numero del documento;     
-**Lotto**: indica il numero di lotto del documento (se presente);     
-**Tipo**: indica il codice della tipologia del documento;    
-**Classe**: indica la classe dell'articolo presente nel documento;     
-**Codice articolo**: indica il codice dell'articolo presente nel documento;    
-**Variante**: indica la variante dell'articolo presente nel documento;      
-**U.M.**: indica l'unità di misura dell'articolo presente nel documento;      
-**Quantità**: indica la quantità dell'articolo presente nel documento;      
-**Cst. tot. previsto**: indica il costo totale previsto (preventivo) dell'articolo presente nel documento;      
-**Cst. tot. effettivo**: indica il costo totale effettivo (consuntivo) dell'articolo presente nel documento;      
-**Descrizione articolo**: indica la descrizione dell'articolo presente nel documento;      
-**Descrizione variante**: indica la descrizione della variante dell'articolo presente nel documento.      
+## Detaliu costuri
 
-Una volta selezionato un documento dall'albero, nella parte destra della form vengono visualizzate tutte le informazioni di dettaglio relative allo stesso, suddivise per:
+În acest tab sunt afișate informațiile detaliate ale costurilor referitoare la *Estimarea cost* selectată în partea superioară a form-ului.
+În tabelul din stânga este afișat arborele documentelor care compun *Estimarea cost* cu următoarele informații:
+**Tip document**: reprezintă tipologia documentului;
+**An**: reprezintă anul documentului;
+**Număr**: reprezintă numărul documentului;
+**Lot**: reprezintă numărul de lot al documentului (dacă este prezent);
+**Tip**: reprezintă codul tipologiei documentului;
+**Clasă**: reprezintă clasa articolului prezent în document;
+**Cod articol**: reprezintă codul articolului prezent în document;
+**Variantă**: reprezintă varianta articolului prezent în document;
+**U.M.**: reprezintă unitatea de măsură a articolului prezent în document;
+**Cantitate**: reprezintă cantitatea articolului prezent în document;
+**Cost total prevăzut**: reprezintă costul total prevăzut al articolului prezent în document;
+**Cost total efectiv**: reprezintă costul total efectiv al articolului prezent în document;
+**Descriere articol**: reprezintă descrierea articolului prezent în document;
+**Descriere variantă**: reprezintă descrierea variantei articolului prezent în document.
 
-#### *Lavorazioni interne*  
+Odată selectat un document din arbore, în partea dreaptă a form-ului sunt afișate toate informațiile detaliate referitoare la acesta, împărțite în:
 
-**C.D.L.**: indica il codice del centro di lavoro;    
-**Macchina**: indica il codice della macchina;     
-**Grp MDO**: indica il codice del gruppo manodopera;     
-**Rif. Documento**: indica il riferimento del documento;    
-**U.M. Tempi**: indica l'unità di misura dei tempi;    
-**T. Setup previsto**: indica il tempo di setup previsto;     
-**T. Setup effettivo**: indica il tempo di setup effettivo;    
-**T. Macchina previsto**: indica il tempo macchina previsto;    
-**T. Macchina effettivo**: indica il tempo macchina effettivo;     
-**T. MDO previsto**: indica il tempo manodopera previsto;    
-**T. MDO effettivo**: indica il tempo manodopera effettivo;    
-**Descrizione C.D.L.**: indica la descrizione dell'articolo del centro di lavoro; 
-**Descrizione macchina**: indica la descrizione dalla macchina;     
-**Descrizione Grp. MDO**: indica la descrizione del gruppo manodopera;        
-**Cst. tot. previsto**: indica il costo totale previsto;    
-**Cst. tot. effettivo**: indica il costo totale previsto. 
+### Lucrări interne
 
-:::note Nota
-Nel caso in cui il centro di lavoro effettivo sia diverso da quello previsto, in questa tabella verranno visualizzate due righe, una con il centro di lavoro previsto con i relativi costi ed una con il centro di lavoro effettivo. 
-::: 
+**CdL**: reprezintă codul centrului de lucru;
+**Mașină**: reprezintă codul mașinii;
+**Grp manoperă**: reprezintă codul grupului manoperă;
+**Ref. document**: reprezintă referința documentului;
+**U.M. Timpuri**: reprezintă unitatea de măsură a timpilor;
+**T. Setup prevăzut**: reprezintă timpul de setup prevăzut;
+**T. Setup efectiv**: reprezintă timpul de setup efectiv;
+**T. Mașină prevăzut**: reprezintă timpul mașină prevăzut;
+**T. Mașină efectiv**: reprezintă timpul mașină efectiv;
+**T. manoperă prevăzut**: reprezintă timpul manoperă prevăzut;
+**T. manoperă efectiv**: reprezintă timpul manoperă efectiv;
+**Descriere CdL**: reprezintă descrierea articolului centrului de lucru;
+**Descriere mașin**: reprezintă descrierea mașinii;
+**Descriere grup manoperă**: reprezintă descrierea grupului manoperă;
+**Cost total prevăzu**: reprezintă costul total prevăzut;
+**Cost total efectiv**: reprezintă costul total prevăzut.
 
-#### *Lavorazioni esterne*
+:::note Notă
+În cazul în care centrul de lucru efectiv este diferit de cel prevăzut, în acest tabel vor fi afișate două rânduri, unul cu centrul de lucru prevăzut cu costurile aferente și unul cu centrul de lucru efectiv.
+:::
 
-**Terzista**: indica il terzista; 
-**Rif. Documento**: indica il riferimento del documento;    
-**U.M.**: indica l'unità di misura gestionale;    
-**Q.tà prevista**: indica la quantità prevista da produrre;    
-**Q.tà effettiva**: indica la quantità effettiva prodotta;    
-**Prz. unit. previsto**: indica il prezzo unitario previsto;    
-**Prz. Unit. effettivo**: indica il prezzo unitario effettivo;    
-**Cst. tot. previsto**: indica il costo totale previsto;    
-**Cst. tot. effettivo**: indica il costo totale previsto.    
+### Lucrări externe
 
-#### *Materiali*    
+**Terţ**: reprezintă subcontractorul;
+**Ref. document**: reprezintă referința documentului;
+**U.M.**: reprezintă unitatea de măsură gestionară;
+**Cantitate prevăzută**: reprezintă cantitatea prevăzută de produs;
+**Cantitate efectivă**: reprezintă cantitatea efectivă produsă;
+**Preț unit. prevăzut**: reprezintă prețul unitar prevăzut;
+**Preț unit. efectiv**: reprezintă prețul unitar efectiv;
+**Cost total prevăzut**: reprezintă costul total prevăzut;
+**Cost total efectiv**: reprezintă costul total prevăzut.
 
-**Classe**: indica la classe dell'articolo;     
-**Codice articolo**: indica il codice dell'articolo;    
-**Descrizione articolo**: indica la descrizione dell'articolo;      
-**Rif. Documento**: indica il riferimento del documento;    
-**U.M.**: indica l'unità di misura gestionale;    
-**Q.tà prevista**: indica la quantità prevista da acquistare;    
-**Q.tà effettiva**: indica la quantità effettiva acquistata;    
-**Prz. unit. previsto**: indica il prezzo unitario previsto;    
-**Prz. Unit. effettivo**: indica il prezzo unitario effettivo;     
-**Variante**: indica la variante dell'articolo;     
-**Descrizione variante**: indica la descrizione della variante dell'articolo;   
-**Cst. tot. previsto**: indica il costo totale previsto;    
-**Cst. tot. effettivo**: indica il costo totale previsto.   
+### Materiale
 
-Nella parte inferiore della form è presente un expander denominato **Dettaglio costo documento** nel quale vengono riportate le seguenti informazioni:
+**Clasăî**: reprezintă clasa articolului;
+**Cod articol**: reprezintă codul articolului;
+**Descriere articol**: reprezintă descrierea articolului;
+**Ref. document**: reprezintă referința documentului;
+**U.M.**: reprezintă unitatea de măsură gestionară;
+**Cantitate prevăzută**: reprezintă cantitatea prevăzută de achiziționat;
+**Cantitate efectivă**: reprezintă cantitatea efectivă achiziționată;
+**Preț unit. prevăzut**: reprezintă prețul unitar prevăzut;
+**Preț unit. efectiv**: reprezintă prețul unitar efectiv;
+**Variantă**: reprezintă varianta articolului;
+**Descriere variantă**: reprezintă descrierea variantei articolului;
+**Cost total prevăzut**: reprezintă costul total prevăzut;
+**Cost total efectiv**: reprezintă costul total prevăzut.
 
-**Costo materiali preventivo / effettivo unitario**: indica il costo unitario dei materiali preventivo / effettivo relativo al documento selezionato;    
-**Costo lavorazione preventivo / effettivo unitario**: indica il costo unitario delle lavorazioni (interne ed esterne) preventivo / effettivo relativo al documento selezionato;  
-**Totale costo preventivo / effettivo unitario**: indica il totale costo unitario (materiali e lavorazioni) preventivo / effettivo relativo al documento selezionato;    
-**Costo materiali preventivo / effettivo totale**: indica il costo unitario dei materiali preventivo / effettivo relativo al documento selezionato;    
-**Costo lavorazione preventivo / effettivo totale**: indica il costo unitario delle lavorazioni (interne ed esterne) preventivo / effettivo relativo al documento selezionato;  
-**Totale costo preventivo / effettivo totale**: indica il totale costo unitario (materiali e lavorazioni) preventivo / effettivo relativo al documento selezionato;  
+În partea inferioară a form-ului este prezent un expander denumit **Detaliu cost document** în care sunt raportate următoarele informații:
 
-## Costi totali
+**Cost materiale estimat / efectiv unitar**: reprezintă costul unitar al materialelor estimat / efectiv referitor la documentul selectat;
+**Cost lucrare estimat / efectiv unitar**: reprezintă costul unitar al lucrărilor (interne și externe) estimat / efectiv referitor la documentul selectat;
+**Total cost estimat / efectiv unitar**: reprezintă totalul costului unitar (materiale și lucrări) estimat / efectiv referitor la documentul selectat;
+**Cost materiale estimat / efectiv total**: reprezintă costul unitar al materialelor estimat / efectiv referitor la documentul selectat;
+**Cost lucrări estimat / efectiv total**: reprezintă costul unitar al lucrărilor (interne și externe) estimat / efectiv referitor la documentul selectat;
+**Total cost estimat / efectiv total**: reprezintă totalul costului unitar (materiale și lucrări) estimat / efectiv referitor la documentul selectat.
 
-In questo tab sono riportati in maniera riepilogativa i costi preventivi e consuntivi relativi alla costificazione selezionata.     
-Nello specifico, per ciascuna sezione (preventivo e consuntivo), sono riportati i seguenti campi:     
-**Costo industriale**: totale dei costi materiali e costo lavorazioni (interne ed esterne);     
-**Totale costi diretti**: totale dei costi inseriti nella sezione **Costi diretti**;    
-**Totale costo diretto comm.**: totale del *Costo industriale* e del *Totale costi diretti*;     
-**Ricarco**: permette di indicare il tipo di ricarico se a percentuale o a valore ed anche il valore stesso;    
-**Totale costo ricaricato**: totale del *Totale costo diretto comm.* e del *Ricarico*;     
-**Totale costi generali**: totale dei costi inseriti nella sezione **Costi generali**;      
-**Totale altri costi**: totale dei costi inseriti nella sezione **Altri costi**;     
-**Correzione**: permette di inserire un valore per correggere il *Totale costo ricaricato*;      
-**Arrotondamento**: permette di decidere se arrotondare per eccesso o difetto e l'ordine di grandezza;     
-**Totale costo commesa**: totale del *Totale costo ricaricato*, *Totale costi generali*, *Totale altri costi*, *Correzione* ed *Arrotondamento*. Il *Totale costo commesa* viene evidenziato in rosso nella sezione dei *Costi consuntivi* quando questo è superiore quello presente nella sezione dei *Costi preventivi*.           
+## Costuri totale
 
-:::note Nota
-I campi che vengono riportati ed allineati in automatico, tra la sezione dei *Costi preventivi* e quella dei *Costi consuntivi*, sono: il *Ricarco* (tipo di ricarico e valore), *Correzione* ed *Arrotondamento* (tipo di arrotondamento e valore). In ogni caso nella sezione dei *Costi consuntivi* è possibile variarli manualmente per diversificarli dai valori inseriti nella sezione dei *Costi preventivi*.
-::: 
+În acest tab sunt raportate în mod sumar costurile estimate și efective referitoare la *Estimarea cost*  selectată.
+În mod specific, pentru fiecare secțiune (estimat și efectiv), sunt raportate următoarele câmpuri:
+**Cost gestiune**: totalul costurilor materiale și costul lucrărilor (interne și externe);
+**Total costuri directe**: totalul costurilor introduse în secțiunea **Costuri directe**;
+**Total cost direct comandă**: totalul *Costului de gestiune* și al *Totalului costurilor directe*;
+**Marja de profit**: permite indicarea tipului de ricarco dacă este procentual sau la valoare și chiar valoarea însăși;
+**Total cost ricarcat (Totale costo ricaricato)**: totalul *Totalului cost direct comandă* și al *Ricarco*;
+**Total costuri generale**: totalul costurilor introduse în secțiunea **Costuri generale**;
+**Total alte costuri**: totalul costurilor introduse în secțiunea **Alte costuri**;
+**Corecție**: permite introducerea unei valori pentru a corecta *Totalul cost ricarcat*;
+**Rotunjire**: permite alegerea rotunjirii: superioară sau inferioară și ordinea de mărime;
+**Total cost comandă**: reprezintă suma dintre *Total cost ricarcat*, *Total costuri generale*, *Total alte costuri*, *Corecții* și *Rotunjiri*. *Total cost comandă* este evidențiat în roșu în secțiunea *Costuri efective* când acesta este superior celui prezent în secțiunea de *Costuri estimate*.
 
-Tramite il punlsante **Costi aggiuntivi** è possibile inserire dei *Costi diretti*, *Costi generali* e *Altri costi* che possono essere proposti di default, sia nei costi preventivi che nei costi consuntivi.      
-Per ciascuno di questi costi è possibile definire se sia di tipo percerntuale o a valore, indicandone anche il valore stesso.    
+:::note Notă
+Câmpurile care sunt raportate și aliniate automat, între secțiunea *Costuri estimate* și secțiunea *Costuri efective*, sunt: *Ricarco* (tipul de ricarco și valoarea), *Corecții* și *Rotunjiri* (tipul de rotunjire și valoarea). În orice caz, în secțiunea *Costuri efective* se pot face modificări manuale pentru a le diferenția de valorile introduse în secțiunea *Costuri estimate*.
+:::
 
-Per tutte le informazioni necessarie alla creazione di questi costi, consultare la pagina relativa a [Voci di costo](/docs/configurations/tables/general-settings/cost-elements).         
+Utilizând butonul **Costuri adiționale** este posibilă introducerea *Costurilor directe*, *Costurilor generale* și *Alte costuri* care pot fi propuse implicit, atât în costurile estimate, cât și în costurile efective.
+Pentru fiecare dintre aceste costuri se poate defini dacă sunt de tip procentual sau valoaric, indicând valoarea însăși.
 
-## Analisi costi
+Pentru toate informațiile necesare creării acestor costuri, consultați pagina referitoare la [Elemente de cost](/docs/configurations/tables/general-settings/cost-elements).
 
-In questo tab vengono messe in evidenza tutte le componenti di costo per quanto rigaurda i costi preventivi e consuntivi, utilizzando due tipi di analisi:      
+## Analiză costuri
 
-> **Sintetica**: in questa tipologia di analisi viene riportato il *Costo industriale*, quindi come somma dei costi materiali e dei costi di lavorazione, inoltre sono riportati i *Costi diretti*, *Costi generali* e *Altri costi* ed infine il totale di *Ricarichi* e *Correzioni*;     
-> **Analitica**: in questa tipologia, invece, vengono riportate nel grafico tutte le voci singolarmente, quindi il *Costo industriale* viene suddiviso in *Costo materiali*, *Costo lavorazione interne* e *Costo lavorazioni esterne*; anche le voci relative a *Ricarichi* e *Correzioni* vengono riportate separatamente; ovviamente vengono poi riportati anche i Costi diretti*, *Costi generali* e *Altri costi*.       
+În acest tab sunt evidențiate toate componentele de cost care se referă la costurile estimate și efective, utilizând două tipuri de analiză:
 
-Per i dettagli sul funzionamento comune delle form fare riferimento al link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+> **Sintetică**: în acest tip de analiză este raportat *Costul industrial*, deci ca sumă a costurilor materiale și a costurilor de lucrări, în plus sunt raportate *Costuri directe*, *Costuri generale* și *Alte costuri* și în final totalul de *Ricarichi* și *Corecții*;
+> **Analitică**: în acest tip, în schimb, sunt raportate în grafic toate fiecare element, deci *Costul industrial* este împărțit în *Cost materiale*, *Cost lucrări interne* și *Cost lucrări externe*. De asemenea, vocile referitoare la *Ricarichi* și *Corecții* sunt raportate separat. Sunt apoi raportate și *Costuri directe*, *Costuri generale* și *Alte costuri*.
+
+Pentru detalii despre funcționarea comună a form-urilor, faceți referire la paginile [Funcționalitate, butoane și câmpuri comune](/docs/guide/common).
