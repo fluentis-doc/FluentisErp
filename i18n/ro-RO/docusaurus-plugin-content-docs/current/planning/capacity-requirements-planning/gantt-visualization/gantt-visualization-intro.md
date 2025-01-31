@@ -13,7 +13,7 @@ Instrumentul permite gestionarea mai multor simulări fără a afecta informați
 
 În tabelul de căutare este posibil să filtrați și să vizualizați simulările generate într-o structură de tip arbore, unde părintele este simularea principală, iar ramurile sunt snapshot-urile, deci sub-simulări născute din modificarea simulării principale.
 
-#### Campuri specifice
+#### Câmpuri specifice
 
 > **Număr**: indică numărul asociat simulării Gantt;     
 > **Nume**: indică numele asociat simulării Gantt (implicit este propus numele utilizatorului, data și ora creării);    
