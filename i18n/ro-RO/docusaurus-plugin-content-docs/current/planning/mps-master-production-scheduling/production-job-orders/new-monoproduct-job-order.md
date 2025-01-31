@@ -68,7 +68,7 @@ Tab-ul conține un tabel care afișează ordinele clienți asociate comenzii de 
 **Dată marfă pregătită**: afișează data mărfii pregătite care a fost setată în linia ordinului client pentru care este afișat detaliul;
 **Cont**: în această coloană sunt vizualizate contul sintetic și analitic al clientului căruia îi este destinat ordinul client în care se află linia pentru care este afișat detaliul.
 
-### Date suplimentare
+### Extra data
 
 Acest tab este constituit dintr-un tabel în care vor fi raportate toate datele suplimentare asociate articolului prezent în comanda de producție.
 
