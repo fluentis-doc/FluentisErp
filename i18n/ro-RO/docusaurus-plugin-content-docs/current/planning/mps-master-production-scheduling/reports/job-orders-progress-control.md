@@ -1,40 +1,36 @@
 ---
-title: Verifica avanzamento commesse
+title: Verifică avansarea comenzilor
 sidebar_position: 6
 ---
 
-Questa form permette di lanciare il report che consente di visualizzare un prospetto di tutti i documenti legati ad una stessa commessa.
+Acest form permite lansarea raportului care permite vizualizarea unui rezumat al tuturor documentelor asociate aceleași comenzi.
 
-Per ciascun documento è anche indicato lo stato di avanzamento dello stesso, tramite un quadratino colorato con il seguente significato:
+Pentru fiecare document este indicat stadiul de avansare al acestuia, prin colorarea unei câmp cu următoarea semnificație:
 
-- **Nero** se la commessa è in stato *Evasa*;
-- **Giallo** se la commessa è in stato *Esecutiva*;
-- **Verde** se la commessa è in stato *Lanciata*;
-- **Verde chiaro** se la commessa è in stato *Schedulata*;
-- **Bianco** in tutti gli altri casi.
+- **Negru** când **comanda** este în stare *Executată*;
+- **Galben** când **comanda** este în stare *Executivă*;
+- **Verde** când **comanda** este în stare *Lansată*;
+- **Verde deschis** când **comanda** este în stare *Planificată*;
+- **Alb** în toate celelalte cazuri.
 
-**Filtri**
+#### Filtre
 
-In questa sezione è possibile inserire filtrare per: tipo di commessa di produzione, priorità approvvigionamento, data inizio e/o fine della commessa, ecc. 
+În această secțiune se pot insera filtre pentru: tipul comenzii de producție, prioritatea aprovizionării, data de început și/sau sfârșit a comenzii, etc.
 
-**Tipo di stampa**
+**Detalii**
 
-In questa sezione è possibile filtrare a seconda che la commessa sia in ritardo o scaduta, ed è possibile decidere il livello di dettaglio a cui scendere nella stampa (Analitica o Sintetica).
+În această secțiune se poate alege dacă să fie afișate detaliile referitoare la ariile de achiziție, producție și sistem lohn, precum și la comenzile de vânzare și ordinele planificate.
 
-**Dettagli**
+**Tip aprovizionare**
 
-In questa sezione è possibile decidere se visualizzare o meno i dettagli relativi all'area acquisto, produzione e conto lavoro, oltre che decidere se visualizzare o meno le commesse di vendita e gli ordini pianificati. 
+În această secțiune se poate filtra în funcție de tipul de aprovizionare al articolului obiect al comenzii prezent în parametrii MRP (Achiziție, Producție, Sistem lohn).
 
-**Tipo approvvigionamento**
+**Stare comandă**
 
-In questa sezione è possibile filtrare in base al tipo di approvvigionamento dell'articolo oggetto di commessa presente nei parametri MRP (Acquisto, Produzione, Conto lavoro).
-
-**Stato commessa**
-
-In questa sezione è possibile filtrare in base allo stato della commessa di produzione (non esaminata, schedulata, lanciata, esecutiva, evasa, chiusa, annullata);
+În această secțiune se poate filtra în funcție de starea comenzii de producție (neexaminată, planificată, lansată, executivă, efectuată, închisă, anulată);
 
 **Ordine**
 
-In questa sezione si può impostare l'ordine di raggruppamento delle informazioni da visualizzare nella stampa, scegliendo tra l'ordine in base alla commessa, al progetto, al conto, all'articolo,  alla data di inizio della commessa.
+În această secțiune se poate seta ordinea de grupare a informațiilor la afișare, alegând între ordinea în funcție de comandă, proiect, cont, articol, data de început a comenzii.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Pentru tot ceea ce nu este detaliat în acest document privind funcționarea comună a form-urilor, consultați paginile [Funcționalități, butoane și câmpuri comune](/docs/guide/common).
