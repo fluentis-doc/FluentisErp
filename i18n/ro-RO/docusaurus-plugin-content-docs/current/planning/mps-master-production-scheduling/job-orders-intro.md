@@ -1,43 +1,42 @@
 ---
-title: Introduzione
+title: Introducere
 sidebar_position: 1
 ---
 
-La gestione della **Generazione delle commesse** di produzione consente di creare ordini di lavoro basati su diversi input come ordini clienti, previsioni di vendita, sottoscorta e necessità di magazzino.    
-L'utente può configurare vari parametri per ottimizzare il processo, selezionando gli ordini rilevanti e impostando criteri specifici per la produzione.         
-Questo sistema facilita la pianificazione delle attività produttive, permettendo di scegliere tra diverse modalità operative, come commesse mono o multi prodotto, e di organizzare il lavoro in base a priorità definite. È anche possibile aggiornare commesse esistenti o creare nuove commesse basate su esigenze specifiche di approvvigionamento e distribuzione.        
-L'approccio flessibile alla **Generazione delle commesse** aiuta a garantire che la produzione corrisponda alle esigenze di mercato e alle priorità aziendali, ottimizzando la gestione delle risorse e migliorando l'efficienza operativa complessiva.
+Form-ul **Generare comenzi** de producție permite crearea comenzilor bazate pe diferite inputuri, cum ar fi ordine clienți, previziuni de vânzare, sub-stoc și necesar de gestiune.    
+Utilizatorul poate configura diferiți parametri pentru a optimiza procesul, selectând ordinele relevante și stabilind criterii specifice pentru producție.         
+Acest sistem facilitează planificarea activităților de producție, permițând alegerea între diferite moduri operative, cum ar fi comenzi mono sau multi produs, și organizarea muncii în funcție de prioritățile definite. De asemenea, este posibil să actualizați comenzi existente sau să creați noi comenzi bazate pe cerințe specifice de aprovizionare și distribuție.        
+Abordarea flexibilă a **Generării comenzilor** permite ca producția să corespundă cerințelor pieței și priorităților companiei, optimizând gestionarea resurselor și îmbunătățind eficiența operațională generală.
 
-## Moduli dell'area 
+## Module arie
 
 import Link from '@docusaurus/Link';
 
 <div className="cardContainer">
     <div className="card">
-###     Commesse di produzione
-        <p><Link to="/docs/planning/mps-master-production-scheduling/job-order-creation" className="bold-link">Generazione commesse di produzione</Link></p>
-        <p>Consente di creare commesse di produzione basate su ordini clienti, previsioni, sottoscorta e necessità di magazzino.</p>
-        <p><Link to="/docs/planning/mps-master-production-scheduling/production-job-orders/job-orders" className="bold-link">Commesse di produzione</Link></p>
-        <p>Permette di visualizzare i dati di testata di tutte le commesse di produzione.</p>
-        <p><Link to="/docs/planning/mps-master-production-scheduling/production-job-orders/job-orders-detail" className="bold-link">Commesse di produzione (dettagli)</Link></p>
-        <p>Consente visualizzare i dati di testata e anche quelli relativi gli articoli presenti all'interno delle commessa di produzione.</p>
-        <p><Link to="/docs/planning/mps-master-production-scheduling/production-job-orders/new-monoproduct-job-order" className="bold-link">Commesse monoprodotto</Link></p>
-        <p>Consente gestire commesse di produzione dedicate ad un unico articolo.</p>
-        <p><Link to="/docs/planning/mps-master-production-scheduling/production-job-orders/new-multiproduct-job-order" className="bold-link">Commesse multiprodotto</Link></p>
-        <p>Consente gestire commesse di produzione con il raggruppamento di più articoli legati allo stesso cliente o progetto.</p>
-        <p><Link to="/docs/planning/mps-master-production-scheduling/production-job-orders/valorization" className="bold-link">Costificazione</Link></p>
-        <p>Permette di calcolare i costi associati alla produzione, evidenziando costi preventivi e consuntivi. </p>
+###     Comenzi de producție
+        <p><Link to="/docs/planning/mps-master-production-scheduling/job-order-creation" className="bold-link">Generare comenzi de producție</Link></p>
+        <p>Permite crearea comenzilor de producție bazate pe ordine clienți, previziuni, sub-stoc și necesar de gestiune.</p>
+        <p><Link to="/docs/planning/mps-master-production-scheduling/production-job-orders/job-orders" className="bold-link">Comenzi de producție</Link></p>
+        <p>Permite vizualizarea datelor de antet ale tuturor comenzilor de producție.</p>
+        <p><Link to="/docs/planning/mps-master-production-scheduling/production-job-orders/job-orders-detail" className="bold-link">Comenzi de producție (detalii)</Link></p>
+        <p>Permite vizualizarea datelor de antet și, de asemenea, a celor referitoare la articolele prezente în comanda de producție.</p>
+        <p><Link to="/docs/planning/mps-master-production-scheduling/production-job-orders/new-monoproduct-job-order" className="bold-link">Comenzi monoprodu</Link></p>
+        <p>Permite gestionarea comenzilor de producție dedicate unui singur articol.</p>
+        <p><Link to="/docs/planning/mps-master-production-scheduling/production-job-orders/new-multiproduct-job-order" className="bold-link">Comenzi multiprodus</Link></p>
+        <p>Permite gestionarea comenzilor de producție cu gruparea mai multor articole asociate aceluiași client sau proiect.</p>
+        <p><Link to="/docs/planning/mps-master-production-scheduling/production-job-orders/valorization" className="bold-link">Estimare costuri</Link></p>
+        <p>Permite calcularea costurilor asociate producției, evidențiind costurile estimate și efective.</p>
     </div>
 </div> 
 
-## Per iniziare ad utilizzare   
+## Pentru a începe să utilizați
 
-le **Commesse di produzione**:
-- creare degli articoli nell'[*Anagrafica articoli*](/docs/erp-home/registers/items/create-new-items/create-new-item) 
-- definire i [*Tipi documento*](/docs/configurations/tables/production/documents-types/)  
-- definire i [*Parametri MS*](/docs/configurations/parameters/production/mps-parameters/)   
+comenzile de producție:
+- creați articole în [*Registrul articolelor*](/docs/erp-home/registers/items/create-new-items/create-new-item) 
+- definiți [*Tipurile de documente*](/docs/configurations/tables/production/documents-types/)  
+- definiți [*Parametrii MS*](/docs/configurations/parameters/production/mps-parameters/)   
 
-## Collegamenti con altri moduli 
-Questi sono strettamente collegati all'[*Anagrafica articoli*](/docs/erp-home/registers/items/create-new-items/create-new-item), agli [*Ordini clienti*](/docs/sales/sales-orders/settings) e alle **Previsioni di vendita**.
+## Conexiuni cu alte module
 
-
+Acestea sunt strâns legate de [*Registrul articolelor*](/docs/erp-home/registers/items/create-new-items/create-new-item), de [*Ordinele clienților*](/docs/sales/sales-orders/settings) și de **Previziunile de vânzare**.
