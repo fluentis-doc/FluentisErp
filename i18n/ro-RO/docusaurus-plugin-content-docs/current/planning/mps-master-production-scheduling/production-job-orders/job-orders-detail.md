@@ -1,5 +1,5 @@
 ---
-title: Commesse di produzione (dettagli)
+title: Comenzi de producție (detalii)
 sidebar_position: 3
 ---
 
@@ -7,22 +7,22 @@ import SearchForm from './../../../import/sections/search-form.md'
 
 <SearchForm />
 
-In base allo stato della commessa (quindi schedulata, esecutiva etc), la riga della commessa avrà un colore diverso. I colori che si possono abbinare allo stato della commessa, vengono stabiliti all'interno dei [Parametri MPS](/docs/configurations/parameters/production/mps-parameters), nella sezione *Colori Commesse*.  
+În funcție de starea comenzii (programată, executivă etc.), linia comenzii va avea o culoare diferită. Culorile care pot fi asociate stării comenzii sunt stabilite în [Parametrii MPS](/docs/configurations/parameters/production/mps-parameters), în secțiunea *Culori comenzi*.  
 
-Sempre da questa form è possibile *creare nuove commesse*, sia **monoprodotto** che **multiprodotto** cliccando sui rispettivi pulsanti presenti nella *Ribbon Bar*: [Inserisci commessa](/docs/planning/mps-master-production-scheduling/production-job-orders/new-monoproduct-job-order) e [Inserisci commessa multiprodotto](/docs/planning/mps-master-production-scheduling/production-job-orders/new-multiproduct-job-order).
+De asemenea, din acest form se pot *crea noi comenzi*, atât **monoprodus** cât și **multiprodus**, făcând clic pe butoanele corespunzătoare din *ribbon bar*: [Inserare comandă](/docs/planning/mps-master-production-scheduling/production-job-orders/new-monoproduct-job-order) și [Inserare comandă multiprodus](/docs/planning/mps-master-production-scheduling/production-job-orders/new-multiproduct-job-order).
 
-Facendo doppio clic su una delle commesse presenti nella griglia di risultato si entrerà nel dettaglio della commessa, i cui dati verranno approfonditi negli articoli Inserimenti nuova commessa monoprodotto e Inserimento nuova commessa multiprodotto.
+Cu dublu clic pe una dintre comenzile prezente în tabelul de rezultate, se va accesa detaliul comenzii (consultați documentele *Inserarea unei noi comenzi monoprodu*s și *Inserarea unei noi comenzi multiprodus*).
 
-La colonna *Costificata*, se il flag è attivo, indica che la commessa ha già almeno una costificazione al suo interno.
+**Estimare cost**: dacă opțiunea este activă, indică faptul că deja comanda conține cel puțin o o estimare de cost.
 
-:::note **Nota bene**
-La differenza tra la form **Commesse di produzione** e la form **Commesse di produzione (dettagli)**, è  che in quest'ultima è possibile visualizzare in griglia anche gli articoli presenti all'interno della commessa, mentre in quella senza dettagli sono visualizzati solo i dati di testata delle commesse di produzione.     
+:::note **Notă**
+Diferența dintre form-ul **Comenzi de producție** și form-ul **Comenzi de producție (detalii)** este că în acesta din urmă pot fi vizualizate în tabel și articolele prezente în comandă, în timp ce în cel fără detalii sunt afișate doar datele din antetul comenzilor de producție.     
 :::
 
-*Pulsanti specifici*:
+#### Butoane specifice
 
-> **Duplica commessa**: permette di duplicare la commessa selezionata;  
-> **Cambia priorità**: consente di cambiare la priorità assegnata alla commessa;  
-> [Parametri MRP](/docs/configurations/parameters/production/mrp-parameters/search-mrp-parameters): tramite questo pulsante è possibile aprire la schermata relativa ai parametri MRP dell'articolo;    
-> [Distinta base](/docs/erp-home/registers/production/bill-of-materials/search-and-insert-assemblies): permette di aprire la schermata relativa alla distinta base dell'articolo;  
-> [Cicli di lavoro](/docs/erp-home/registers/production/routes/new-route): permette di visualizzare il ciclo di lavoro e le relative fasi di produzione dell'articolo.
+> **Duplicare comandă**: permite duplicarea comenzii selectate;  
+> **Schimbă prioritate**: permite schimbarea priorității atribuite comenzii;  
+> [Parametri MRP](/docs/configurations/parameters/production/mrp-parameters/search-mrp-parameters): permite deschiderea form-ului referitor la parametrii MRP ai articolului;    
+> [Lista de materiale](/docs/erp-home/registers/production/bill-of-materials/search-and-insert-assemblies): permite deschiderea form-ului referitor la lista de materiale a articolului;  
+> [Cicluri de lucru](/docs/erp-home/registers/production/routes/new-route): permite vizualizarea ciclului de lucru și a fazelor de producție ale articolului.
