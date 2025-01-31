@@ -1,83 +1,84 @@
 ---
-title: Commessa Monoprodotto
+title: Comandă Monoprodus
 sidebar_position: 4
 ---
 
-La form si apre tramite il percorso **Pianificazione > Commesse di produzione** cliccando nella form **Commesse di produzione** sull'pulsante **Inserisci commessa**.  
+Form-ul se află pe calea **Planificare > Comenzi de producție** făcând clic în formularul **Comenzi de producție** pe butonul **Inserare comandă**.
 
-## Pulsanti specifici
+## Butoane specifice
 
-> [Parametri MRP](/docs/configurations/parameters/production/mrp-parameters/search-mrp-parameters): tramite questo pulsante è possibile aprire la schermata relativa ai parametri MRP dell'articolo;      
-> [Distinta base](/docs/erp-home/registers/production/bill-of-materials/search-and-insert-assemblies): permette di aprire la schermata relativa alla distinta base dell'articolo;  
-> [Cicli di lavoro](/docs/erp-home/registers/production/routes/new-route): permette di visualizzare il ciclo di lavoro e le relative fasi di produzione dell'articolo.
+> [Parametrii MRP](/docs/configurations/parameters/production/mrp-parameters/search-mrp-parameters): permite deschiderea parametrilor MRP ai articolului;      
+> [Listă componente](/docs/erp-home/registers/production/bill-of-materials/search-and-insert-assemblies): permite deschiderea listei care compune articolul;  
+> [Cicluri de lucru](/docs/erp-home/registers/production/routes/new-route): permite vizualizarea ciclului de lucru și a fazelor de producție corespunzătoare articolului.
 
-## Gestione commesse monoprodotto
+## Gestionare comenzi monoprodus
 
-All'interno di questo tab si vanno ad indicare i dati principali che deve contenere la commessa di produzione.
+În acest tab se inserează datele principale pe care trebuie să le conțină comanda de producție.
 
-**Tipo commessa**: viene proposto il tipo predefinito come tipo di default;    
+**Tip comandă**: propune tipul pimplicit;    
 
-**Numero**: indica il numero progressivo della commessa, che viene proposto in automatico;     
+**Număr**: reprezintă numărul progresiv al comenzii, propus automat;     
 
-**Anno**: viene proposto in automatico quello corrente;   
+**An**: este propus automat cel curent;   
 
-**Cliente**: indica i riferimenti di conto/sottoconto e descrizione del cliente;    
+**Client**: reprezintă referințele contului sintetic/analitic și descrierea clientului;    
 
-**Data**: viene proposta in automatico quella corrente;        
+**Dată**: este propusă automat cea curentă;        
 
-**Tassativa**: se attivo, indica se questa commessa sia di importanza fondamentale;    
+**Obligatoriu**: dacă este activ, această comandă este de importanță fundamentală;    
 
-**Stato commessa**: il sistema in automatico propone come *Non esaminata*, stato che la commessa assume appena creata;   
+**Stare comandă**:sistemul propune automat *Neexaminate*, stare pe care comanda o asumă imediat după crearea sa;   
 
-Gli altri stati che può assumere sono:
+Celelalte stări pe care le poate adopta sunt:
 
-- **Schedulata**: la commessa passa in questo stato dopo che ha subito il processo di Schedulazione Generale;  
-- **Lanciata**: la commessa passa in questo stato dopo che almeno uno degli ordini pianificati di produzione da essa generati durante la Schedulazione Generale sono stati rilasciati (non devono essere stati rilasciati altri ordini pianificati di tipo acquisto o conto lavoro altrimenti la commessa passa in stato esecutivo);      
-- **Esecutiva**: la commessa passa in questo stato dopo che almeno uno degli ordini di produzione da essa generati è stato rilasciato ed è diventato esecutivo, oppure dopo che almeno uno degli ordini pianificati di acquisto o conto lavoro da essa generati è stato rilasciato;   
-- **Evasa**: la commessa passa in questo stato dopo che l'ordine di produzione generato per l'articolo oggetto della commessa è passato in stato *Evaso*;   
-- **Storicizzata**: la commessa può essere messa in questo stato manualmente per fare in modo che non esca più quando si effettua una ricerca delle commesse *Evase*;  
-- **Annullata**: la commessa può essere messa in questo stato manualmente, anziché eliminarla del tutto, per indicare che la commessa, che inizialmente era stata prevista, non è poi stata portata in produzione.
+- **Planificată**: comanda trece în această stare după procesul de *Planificare generală*;
+- **Lansată**: comanda trece în această stare după ce cel puțin unul dintre ordinele planificate de producție generate de aceasta în timpul *Planificării generale* a fost lansat (nu trebuie să fie lansate alte ordine planificate de tip achiziție sau sistem lohn, altfel comanda trece în stare executivă);
+- **Executivă**: comanda trece în această stare după ce cel puțin unul dintre ordinele de producție generate de aceasta a fost lansat și a devenit executiv, sau după ce cel puțin unul dintre ordinele planificate de achiziție sau sistem lohn generate de aceasta a fost lansat;
+- **Execiutată**: comanda trece în această stare după ce ordinul de producție generat pentru articolul obiect al comenzii a trecut în stare *Executat*;
+- **Arhivată**: comanda poate fi pusă în această stare manual ca să nu mai apară atunci când se efectuează o căutare a comenzilor *Executate*;
+- **Anulată**: comanda poate fi pusă în această stare manual, în loc să fie eliminată complet. Indica faptul că, deși inițial a fost prevăzută, comanda nu a fost dusă în producție.
 
-**Descrizione**: permette di inserire una descrizione relativa alla commessa;        
+**Descriere**: permite introducerea unei descrieri referitoare la comandă;
 
-**Tipo approvvigionamento**: generalmente coincide con il tipo di approvvigionamento dell'articolo inserito nella commessa di produzione. Il tipo di approvvigionamento dell'articolo viene indicato all'interno dei [Parametri MRP](/docs/configurations/parameters/production/mrp-parameters/search-mrp-parameters) di quest'ultimo;     
+**Tip aprovizionare**: în general coincide cu tipul de aprovizionare al articolului introdus în comanda de producție. Tipul de aprovizionare al articolului este indicat în [Parametri MRP](/docs/configurations/parameters/production/mrp-parameters/search-mrp-parameters) ai acestuia;
 
-**Priorità approvvigionamento**: indica la priorità dell'approvvigionamento;           
-       
-**Progetti**: indica il progetto in cui è inserita la commessa;       
+**Prioritate aprovizionare**: indică prioritatea aprovizionării;
 
-**Sito Produzione**: indica il sito di produzione in cui verrà prodotta la commessa. Su questo campo è presente un controllo che, nel caso in cui la commessa nasca da un ordine cliente, verifica che il magazzino indicato sulla riga dell’ordine cliente appartenga allo stesso sito produttivo indicato nella commessa di produzione.  
+**Proiecte**: indică proiectul în care este inserată comanda;
 
-**Data merce pronta**: in questa colonna viene visualizzata la data della merce pronta che è stata impostata nella riga dell'ordine cliente di cui viene esposto il dettaglio;      
+**Locație Producție**: indică locația de producție în care va fi produsă comanda. În acest câmp este prezent un control care, în cazul în care comanda provine dintr-un ordin client, verifică dacă gestiunea indicată pe linia ordinului client aparține aceleiași locații de producție indicate în comanda de producție.
 
-**Data suggerita**: un campo in cui compare la data suggerita dal sistema nel caso in cui l'utente abbia schedulato la commessa utilizzando il parametro *Controlla documenti in ritardo con ATP* e avendo impostato, sempre nei parametri di *Schedulazione generale*, una *Data Inizio MS* (Master Scheduling). La data suggerita è quella che poi l'utente ha la facoltà di decidere che diventi la data di prevista fine della commessa;
+**Dată marfă pregătită**: în această coloană este vizualizată data mărfii pregătite care a fost setată pe linia ordinului client pentru care este afișat detaliul;
 
-**Data lavorazione prevista Inizio/Fine**: in questi campi compaiono le date di previsto inizio/fine della *Commessa di produzione*. Fino a quando la Commessa di Produzione resta in stato *Non esaminata*, queste date sono identiche tra loro ed uguali alla data di merce pronta della riga dell'Ordine Cliente da cui la commessa è stata generata, oppure uguali alla data di fine della Previsione di Vendita da cui la commessa è stata generata. Dopo che la Commessa di Produzione è stata schedulata, la data di previsto inizio della commessa coincide con la data di previsto inizio del primo ordine pianificato che viene generato dalla schedulazione della commessa. Infine, si ricorda che in caso di inserimento manuale della Commessa di Produzione, l'utente è tenuto ad inserire questo dato manualmente, pena l'impossibilità di salvare la commessa stessa;
+**Dată sugerată**: este sugerată de sistem în cazul în care utilizatorul a planificat comanda utilizând parametrul *Verifică documente întârziate cu ATP* și a setat, tot în parametrii de *Planificare generală*, o *Dată început MS*. Data sugerată este cea pe care utilizatorul poate decide să o transforme în data prevăzută pentru finalizarea comenzii;
 
-**Data Lavorazione effettiva Inizio/Fine**: in questi campi compaiono le date di Inizio/Fine della lavorazione effettiva, cioè rispettivamente la data della prima segnalazione di produzione di un ordine di produzione generato dalla commessa e la data dell'ultima segnalazione di produzione che ha causato la chiusura definitiva dell'ordine di produzione il cui articolo è lo stesso della Commessa di Produzione. Ovviamente la data di effettiva fine è presente solo nel caso in cui la commessa si trovi nello stato di *Evasa*;
+**Dată lucrare prevăzută început/sfârşit**: reprezintă datele de început/sfârşit prevăzute pentru *Comanda de producție*. Până când Comanda de Producție rămâne în stare *Neexaminată*, aceste date sunt identice și egale cu *data mărfii pregătite* din liniei *Ordinului client* din care comanda a fost generată, sau egale cu *data sfârșit* a *Previziunii de vânzare* de care comanda a fost generată. După ce *Comanda de Producție* a fost planificată, data de început prevăzută a comenzii coincide cu data de început prevăzută a primului ordin planificat care este generat de planificarea comenzii. Reamintim că, în cazul inserării manuale a Comenzii de Producție, utilizatorul trebuie să introducă această dată manual, altfel nu va putea salva comanda;
 
-*Campi obbligatori per la generazione della commessa di produzione*: **Articolo** (con il suo relative classe, codice e descrizione), **Versione**, **Quantità** della commessa e la relativa **Unità di misura**.  
-Infine vi sono una serie di campi che vengono tutti ripresi dai [Parametri MRP](/docs/configurations/parameters/production/mrp-parameters/search-mrp-parameters)  dell'artcolo selezionato quali: il **Ciclo**, il **Lotto economico** con i relativi **Multipli**, il **Lead time**, la **Percentuale di scarto** sulla quantità e il **Tipo approvvigionamento**.
-I campi **Inizio / Fine previsione** indicano l'inizio e fine del periodo preso in considerazione della previsione di vendita che ha generato quella commessa. 
+**Dată lucrare efectivă început/sfârşit**: reprezintă datele de început/sfârşit ale lucrării efective, și anume data primei semnalări de producție a unui ordin de producție generat de comandă și data ultimei semnalări de producție care a determinat închiderea definitivă a ordinului de producție al cărui articol este identic cu cel al comenzii de producție. Evident, *data sfârșit efectivă* este prezentă doar în cazul în care comanda se află în starea de *Executată*;
 
-### Riferimenti ordini clienti
+*Campuri obligatorii pentru generarea comenzii de producție*: **Articol** (cu clasa, codul și descrierea sa), **Versiune**, **Cantitatea** comenzii și **Unitatea de măsură** corespunzătoare.  
+În final, există o serie de câmpuri care sunt toate preluate din [Parametri MRP](/docs/configurations/parameters/production/mrp-parameters/search-mrp-parameters) ai articolului selectat, cum ar fi: **Cicl**, **Lot economic** cu **Multiplii** corespunzători, **Lead time**, **Procent de deșeuri** pe cantitate și **Tip aprovizionare**.
+Câmpurile **Început/Sfârșit previziune** indică începutul și sfârșitul perioadei luate în considerare de previziunea de vânzare care a generat acea comandă.
 
-Il tab contiene una griglia di sola lettura, in cui compaiono gli ordini clienti collegati alla commessa di produzione di riferimento quando la commessa è stata generata da una o più righe ordini clienti.  
-**Tipo/Anno/Numero**: in queste colonne vengono visualizzati il *Tipo/Anno/Numero* dell'ordine cliente in cui è contenuta la riga di cui viene esposto il dettaglio;  
-**N./Quantità/Unità di misura**: in questa colonna viene visualizzata la quantità della riga dell'ordine cliente di cui viene esposto il dettaglio;  
-**Data merce pronta**: in questa colonna viene visualizzata la data della merce pronta che è stata impostata nella riga dell'ordine cliente di cui viene esposto il dettaglio;  
-**Conto**: in questa colonna vengono visualizzati conto e sottoconto del cliente a cui è intestato l'ordine cliente in cui è contenuta la riga di cui viene esposto il dettaglio.
+### Referințe ordine clienți
 
-### Extra data
+Tab-ul conține un tabel care afișează ordinele clienți asociate comenzii de producție de referință atunci când comanda a fost generată din una sau mai multe linii ordine clienți.
+**Tip/An/Număr**: afișează *Tipul/Anul/Numărul* ordinului client în care se află linia pentru care este afișat detaliul;
+**N./Cantitate/Unitatea de măsură**: afișează cantitatea liniei ordinului client pentru care este afișat detaliul;
+**Dată marfă pregătită**: afișează data mărfii pregătite care a fost setată în linia ordinului client pentru care este afișat detaliul;
+**Cont**: în această coloană sunt vizualizate contul sintetic și analitic al clientului căruia îi este destinat ordinul client în care se află linia pentru care este afișat detaliul.
 
-Anche questo tab è costituito da una griglia in cui verranno riportati tutti gli extra data collegati all'articolo presente nella commessa di produzione.
+### Date suplimentare
 
-##  Costificazione
+Acest tab este constituit dintr-un tabel în care vor fi raportate toate datele suplimentare asociate articolului prezent în comanda de producție.
 
-Tutte le informazioni relative alla **Costificazione** si possono consultare nella pagina [Costificazione](/docs/planning/mps-master-production-scheduling/production-job-orders/valorization).
+## Estimare cost
+
+Toate informațiile referitoare la **Estimare cost** pot fi consultate la pagina [Estimare cost](/docs/planning/mps-master-production-scheduling/production-job-orders/valorization).
 
 ## Extra data
 
-Questo tab, che affianca il tab *Gestione commesse monoprodotto*, contiene tutto l'insieme degli [extra data](/docs/configurations/utility/extra-data/extradata/search-extradata) collegati alla commessa di produzione.
+Acest tab, care însoțește tab-ul *Gestionare comenzi monoprodus*, conține întregul set de [Extra data
+](/docs/configurations/utility/extra-data/extradata/search-extradata) asociate comenzii de producție.
 
-Per i dettagli sul funzionamento comune delle form fare riferimento al link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Pentru detalii despre funcționarea comună a form-urilor, faceți referire la paginile [Funcționalitate, butoane și câmpuri comune](/docs/guide/common).
