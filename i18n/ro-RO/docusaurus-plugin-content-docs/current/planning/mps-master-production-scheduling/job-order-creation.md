@@ -24,7 +24,7 @@ La non presenza di UNA SOLA di queste condizioni provoca l'impossibilità di vis
 
 Nell'area di filtro in cui è possibile filtrare solamente le righe ordine che si vogliono visualizzare in base ai filtri presenti. Una volta impostati i filtri necessari, cliccando sul pulsante **Ricerca** verranno visualizzate nella griglia di risultato tutte le righe ordine corrispondenti ai filtri indicati. 
 
-*Campi*    
+#### Campi specifici 
 
 **Tipo**: rappresenta il tipo di ordine cliente;       
 **Numero**: rappresenta il numero dell'ordine cliente;     
@@ -46,7 +46,7 @@ Nell'area di filtro in cui è possibile filtrare solamente le righe ordine che s
 La colonna **Disponibilità** risulta uguale a zero per tutte le righe nel caso in cui il flag *Considera la disponibilità dell'articolo* presente nel tab **Parametri** sia disattivato. 
 :::
 
-*Pulsanti specifici*  
+#### Pulsanti specifici   
 
 > **Considera per commesse**: permette di spostare le righe d'ordine selezionate nel tab **Riepilogo** dove potranno essere prese in esame dalla procedura di generazione della commessa di produzione.  
 
@@ -72,7 +72,7 @@ Nell'area di filtro è possibile filtrare solamente le righe ordine che si vogli
 
 Una volta impostati i filtri necessari, cliccando sul pulsante **Ricerca** verranno visualizzate nella griglia di risultato tutte le righe di previsione corrispondenti ai filtri indicati.  
 
-*Campi* 
+#### Campi specifici 
 
 **Classe**, **Codice** e **Descrizione articolo**;  
 **Variante**: viene visualizzato se il flag omonimo è stato selezionato; se si è deciso nell'area di filtro che venga visualizzata; 
@@ -135,7 +135,7 @@ Il tab contiene:
 - la sezione **Commessa di produzione proposta** in cui l'utente può impostare il **Tipo**, l'**Anno** e il **Numero** della commessa di produzione a cui devono essere aggiunte le righe selezionate nello stesso tab **Riepilogo**.  
 - la griglia di risultato dove verranno visualizzate le righe articolo che sono state spostate dagli altri tab.
 
-*Campi griglia*:  
+#### Campi specifici griglia*:  
 
 **Dati da**: rappresenta il tab di provenienza della riga;     
 **Classe**, **Codice articolo** e **Descrizione**: rappresentano la classe, il codice e la descrizione dell'articolo;             
@@ -151,7 +151,7 @@ Il tab contiene:
 
 Dopo aver selezionato le righe desiderate, l'utente ha la possibilità di creare le commesse di produzione in base ai criteri impostati nel tab **Parametri**, utilizzando il tasto **Formazione automatica commesse**. La procedura presenta, al termine dell'elaborazione, una finestra in cui vengono specificati i numeri delle commesse generate, finestra sulla quale l'utente deve solo cliccare su OK e chiudere.
 
-*Pulsante specifico*   
+#### Pulsante specifico  
 > **Formazione automatica commesse**: richiama la procedura che genera le commesse di produzione dalle righe selezionate.  
 
 ### Parametri

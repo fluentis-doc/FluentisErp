@@ -115,16 +115,16 @@ Odată selectat un document din arbore, în partea dreaptă a form-ului sunt afi
 **Cost gestiune**: totalul costurilor materiale și costul lucrărilor (interne și externe);
 **Total costuri directe**: totalul costurilor introduse în secțiunea **Costuri directe**;
 **Total cost direct comandă**: totalul *Costului de gestiune* și al *Totalului costurilor directe*;
-**Marja de profit**: permite indicarea tipului de ricarco dacă este procentual sau la valoare și chiar valoarea însăși;
-**Total cost ricarcat (Totale costo ricaricato)**: totalul *Totalului cost direct comandă* și al *Ricarco*;
-**Total costuri generale**: totalul costurilor introduse în secțiunea **Costuri generale**;
-**Total alte costuri**: totalul costurilor introduse în secțiunea **Alte costuri**;
-**Corecție**: permite introducerea unei valori pentru a corecta *Totalul cost ricarcat*;
+**Adaos**: permite indicarea tipului de adaos, procentual sau valoric, și valoarea însăși;
+**Total cost majorat**: reprezintă suma dintre *Total cost direct comandă* și al *Adaos*;
+**Total costuri generale**: reprezintă totalul costurilor introduse în secțiunea **Costuri generale**;
+**Total alte costuri**: reprezintă totalul costurilor introduse în secțiunea **Alte costuri**;
+**Corecție**: permite introducerea unei valori pentru a corecta *Total cost majorat*;
 **Rotunjire**: permite alegerea rotunjirii: superioară sau inferioară și ordinea de mărime;
-**Total cost comandă**: reprezintă suma dintre *Total cost ricarcat*, *Total costuri generale*, *Total alte costuri*, *Corecții* și *Rotunjiri*. *Total cost comandă* este evidențiat în roșu în secțiunea *Costuri efective* când acesta este superior celui prezent în secțiunea de *Costuri estimate*.
+**Total cost comandă**: reprezintă suma dintre *Total cost majorat*, *Total costuri generale*, *Total alte costuri*, *Corecții* și *Rotunjiri*. *Total cost comandă* este evidențiat în roșu în secțiunea *Costuri efective* când acesta este superior celui prezent în secțiunea de *Costuri estimate*.
 
 :::note Notă
-Câmpurile care sunt raportate și aliniate automat, între secțiunea *Costuri estimate* și secțiunea *Costuri efective*, sunt: *Ricarco* (tipul de ricarco și valoarea), *Corecții* și *Rotunjiri* (tipul de rotunjire și valoarea). În orice caz, în secțiunea *Costuri efective* se pot face modificări manuale pentru a le diferenția de valorile introduse în secțiunea *Costuri estimate*.
+Câmpurile care sunt raportate și aliniate automat, între secțiunea *Costuri estimate* și secțiunea *Costuri efective*, sunt: *Adaos* (tipul de adaos și valoarea), *Corecții* și *Rotunjiri* (tipul de rotunjire și valoarea). În orice caz, în secțiunea *Costuri efective* se pot face modificări manuale pentru a le diferenția de valorile introduse în secțiunea *Costuri estimate*.
 :::
 
 Utilizând butonul **Costuri adiționale** este posibilă introducerea *Costurilor directe*, *Costurilor generale* și *Alte costuri* care pot fi propuse implicit, atât în costurile estimate, cât și în costurile efective.
@@ -136,7 +136,7 @@ Pentru toate informațiile necesare creării acestor costuri, consultați pagina
 
 În acest tab sunt evidențiate toate componentele de cost care se referă la costurile estimate și efective, utilizând două tipuri de analiză:
 
-> **Sintetică**: în acest tip de analiză este raportat *Costul industrial*, deci ca sumă a costurilor materiale și a costurilor de lucrări, în plus sunt raportate *Costuri directe*, *Costuri generale* și *Alte costuri* și în final totalul de *Ricarichi* și *Corecții*;
-> **Analitică**: în acest tip, în schimb, sunt raportate în grafic toate fiecare element, deci *Costul industrial* este împărțit în *Cost materiale*, *Cost lucrări interne* și *Cost lucrări externe*. De asemenea, vocile referitoare la *Ricarichi* și *Corecții* sunt raportate separat. Sunt apoi raportate și *Costuri directe*, *Costuri generale* și *Alte costuri*.
+> **Sintetic**: în acest tip de analiză este raportat *Costul de gestiune*, deci ca sumă dintre costurile materialelor și costurile lucrărilor, în plus sunt raportate *Costuri directe*, *Costuri generale* și *Alte costuri* și în final totalul *Adaosurilor* și *Corecțiilor*;
+> **Analitic**: în acest tip, în schimb, sunt afișate grafic fiecare element, deci *Costul de gestiune* este împărțit în *Cost materiale*, *Cost lucrări interne* și *Cost lucrări externe*. Elementele referitoare la *Adaosuri* și *Corecții* sunt raportate separat. Sunt apoi raportate *Costurile directe*, *Costurile generale* și *Alte costuri*.
 
 Pentru detalii despre funcționarea comună a form-urilor, faceți referire la paginile [Funcționalitate, butoane și câmpuri comune](/docs/guide/common).
