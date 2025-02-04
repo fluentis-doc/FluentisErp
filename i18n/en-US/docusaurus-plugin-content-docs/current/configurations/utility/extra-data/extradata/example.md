@@ -1,42 +1,42 @@
 ---
-title: Esempio
+title: Example 
 sidebar_position: 6
 ---
 
-## Creazione di un Extra Data "Colore" Attivato in Anagrafica articolo e Ordine fornitore, ma non negli altri documenti
+## Creating an Extra Data "Color" Activated in Item Registry and Purchase Order, but not in other documents
 
-La creazione di un **Extra Data** inizia dalla testata in cui è necessario inserire:                
-**Codice**: identificativo;            
-**Tipo contenuto**: a scelta tra [Oggetto](/docs/configurations/utility/extra-data/extradata/new-extradata-object), [Semplice](/docs/configurations/utility/extra-data/extradata/new-extradata-simple) o Data source;       
-**Tipo Widget**: si può scegliere tra un widget a combo box, oppure con codice o descrizione a completamento automatico;        
-**Nome**: inseriamo "Colore chiaro", che è presente a dizionario;            
-**Descrizione**: inseriamo "Colore chiaro";                        
-**Oggetto business**: quindi inseriamo FSColor perchè da qui prendiamo i vari colori.         
-E' possibile inserire dei **Diritti** di visualizzazione e/o modifica e delle **Date di validità**.       
+The creation of an **Extra Data** begins with the header where it is necessary to insert:                
+**Code**: identifier;            
+**Content Type**: choose between [Object](/docs/configurations/utility/extra-data/extradata/new-extradata-object), [Simple](/docs/configurations/utility/extra-data/extradata/new-extradata-simple), or Data source;       
+**Widget Type**: you can choose between a combo box widget, or with code or description autocomplete;        
+**Name**: we enter "Highlight Color", which is present in the dictionary;            
+**Description**: we enter "Highlight Color";                        
+**Business Object**: we then enter FSColor because we take various colors from here.         
+It is possible to insert **Rights** for viewing and/or modification and **Validity Dates**.       
 
 ![](/img/it-it/configurations/utility/extradata/example/header.png) 
 
-Nella griglia **Attivazioni** inseriamo:            
-**Oggetto padre**: vogliamo che l'Extra Data si attivi in FSPurchaseOrderItem ed in FSItem;           
-**Proprietà**: ExtraData.        
+In the **Activations** grid, we insert:            
+**Parent Object**: we want the Extra Data to be activated in FSPurchaseOrderItem and FSItem;           
+**Property**: ExtraData.        
 
 ![](/img/it-it/configurations/utility/extradata/example/active.png) 
 
-Nella griglia **Propagazione**, selezionando l'Oggetto padre FSPurchaseOrderItem inseriamo:          
-**Percorso proprietà**: Item, perchè l'ordine fornitore prende l'Extra Data dall'articolo;      
-**Proprietà collezione**: ExtraData.
+In the **Propagation** grid, selecting the parent object FSPurchaseOrderItem we insert:          
+**Property Path**: Item, because the purchase order takes the Extra Data from the item;      
+**Collection Property**: ExtraData.
 
 ![](/img/it-it/configurations/utility/extradata/example/prop.png) 
 
-Possiamo salvare e chiudere l'Extra Data.
-Passiamo all'**Anagrafica articolo** nella quale inserire l'Extra Data nel tab **Extra Data**. 
-Per aggiunere l'Extra data posizionarsi sulla griglia > tasto destro > Aggiungi Extra Data.
+We can save and close the Extra Data.
+Now we go to the **Item Registry** where we insert the Extra Data in the **Extra Data** tab. 
+To add the Extra Data, position yourself on the grid > right-click > Add Extra Data.
 
 ![](/img/it-it/configurations/utility/extradata/example/item.png) 
 
-A questo punto passiamo alla creazione di una **Richiesta di acquisto** nella quale inseriamo l'articolo.   
-Apriamo poi la procedura di **Creazione automatica ordini**, selezioniamo la RDA e creiamo da essa un Ordine fornitore.
-Apriamo l'Ordine fornitore creato.
-Nel tab **Articoli** > **Extra Data** è visibile l'Extra Data creato.   
+At this point, we move on to creating a **Purchase Request** in which we insert the item.   
+Then we open the **Automatic Order Generation** procedure, select the PD, and create a Purchase Order from it.
+We open the created Purchase Order.
+In the **Items** > **Extra Data** tab, the created Extra Data is visible.   
 
-![](/img/it-it/configurations/utility/extradata/example/order.png) 
+![](/img/it-it/configurations/utility/extradata/example/order.png)

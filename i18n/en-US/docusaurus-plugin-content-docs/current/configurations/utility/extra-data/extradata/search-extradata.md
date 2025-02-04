@@ -1,12 +1,12 @@
 ---
-title: Ricerca Extra data
+title: Extra Data Search 
 sidebar_position: 1
 ---
 
-La form si apre tramite il percorso **Utilità > Extra data > Extra data**.
+The form opens through the path **Utilities > Extra data > Extra data**.
 
 import SearchForm from './../../../../import/sections/search-form.md'
 
 <SearchForm />
 
-Sempre da questa form è possibile creare un nuovo Extradata, cliccando sul pulsante **Nuovo**.
+From this form, it is also possible to create a new Extra Data by clicking the **New** button.
