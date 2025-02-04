@@ -1,15 +1,13 @@
 ---
-title: Registrazioni di budget
+title: Budget Records
 sidebar_position: 3
 ---
 
-Dalla form di ricerca è possibile ricercare ed inserire, tramite il tasto **Nuovo**, le registrazioni di Budget per i singoli periodi.
+From the search form, it is possible to search and insert, via the **New** button, the Budget records for the individual periods.
 
-Per inserire una nuova registrazione è obbligatorio selezionare un'[***Area***](/docs/controlling/controlling-parametrization/controlling-specific-settings/area-types-areas) di analisi, che può essere solo una di quelle associate ad un [***Tipo area***](/docs/controlling/controlling-parametrization/controlling-specific-settings/area-types-areas) di Budget.
+To insert a new record, it is mandatory to select an [***Area***](/docs/controlling/controlling-parametrization/controlling-specific-settings/area-types-areas) of analysis, which can only be one of those associated with a [***Area type***](/docs/controlling/controlling-parametrization/controlling-specific-settings/area-types-areas) of Budget.
 
-Si procede selezionando una causale contabile (analogamente a quanto previsto per i movimenti contabili) ed una data.
-E' prevista l'indicazione della valuta di riferimento, Euro o altra divisa.
+The next step is to select an ledger template (similarly to the provisions for accounting movements) and a date. 
+The reference currency must also be indicated, either Euro or another currency.
 
-Nella griglia dei dettagli si potrà poi andare ad inserire, come di consueto, i sottoconti contabili, i relativi centri aziendali connessi alla relativa Dimensione, l'eventuale progetto / commessa associato e i valori dare / avere.
-I movimenti dovranno essere collegati alla divisione aziendale.
-
+In the details grid, it will then be possible to enter, as usual, the bub-accounts, the related corporate centers connected to the respective Dimension, any associated project or job order, and the debit/credit values. The movements must be linked to the business division.

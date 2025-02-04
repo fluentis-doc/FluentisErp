@@ -1,14 +1,14 @@
 ---
-title: Registrazioni extra-contabili di Budget
+title: Off-Balance Budget Records
 sidebar_position: 2
 ---
 
-Dalla form di ricerca è possibile ricercare ed inserire, tramite il tasto **Nuovo**, le registrazioni extra-contabili di Budget.
+From the search form, it is possible to search for and insert, via the **New** button, off-balance budget records.
 
-Per inserire un nuovo movimento è obbligatorio selezionare un [**Area**](/docs/controlling/controlling-parametrization/controlling-specific-settings/area-types-areas) di analisi (che si consiglia di codificare adeguatamente, ad esempio *Budget* per distinguerla, ad esempio, dal *Consuntivo* o *Simulazione* ecc....)
+To insert a new movement, it is mandatory to select an [**Area**](/docs/controlling/controlling-parametrization/controlling-specific-settings/area-types-areas) for analysis (it is recommended to code it appropriately, for example *Budget* to distinguish it, for instance, from *Final* or *Simulation*, etc....)
 
-Si procede selezionando una causale contabile (analogamente a quanto previsto per i movimenti contabili) ed una data.
-E' prevista l'indicazione della valuta di riferimento, Euro o altra divisa.
+The next step is to select a ledger template (similarly to what is required for accounting movements) and a date. 
+The reference currency, Euro or another currency, is to be indicated.
 
-Si procede quindi inserendo, come di consueto, i sottoconti contabili, l'eventuale progetto / commessa associato e i valori dare / avere.
-I movimenti sono associati alla divisione aziendale (elemento fondamentale in particolare in presenza di più divisioni).
+You then proceed by entering, as usual, the bub-accounts, any associated project/job order, and the debit/credit values. 
+The movements are associated with the business division (a fundamental element, especially in the presence of multiple divisions).

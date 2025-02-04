@@ -1,35 +1,33 @@
 ---
-title: Importazione excel delle registrazioni extracontabili di Budget
+title: Excel Import of Off-Balance Sheet Recordings
 sidebar_position: 3
 ---
 
-Nel menù degli strumenti, all'interno del gruppo **Bizlink**, troviamo le ***Importazioni on demand*** e quindi le ***Importazioni excel***: fra queste abbiamo a disposizione l'import con codice **OffBalanceRecordsForArea**, che consente di importare facilmente le registrazioni Extracontabili di Area, quindi sia registrazioni dell'area gestionale che saranno utilizzati in integrazione all'area dei consuntivi di periodo (ad esempio, registrazioni dei compensi collegio sindacale che si caricano ad inizio anno, piuttosto che valorizzazioni extracontabili delle paghe del singolo mese) che registrazioni da utilizzare per elaborare il dettaglio del Budget di periodo.
+In the tools menu, within the **Bizlink** group, we find the ***On-Demand Imports*** and therefore the ***Excel Imports***: among these, we have the import with code **OffBalanceRecordsForArea**, which allows for easy import of Area Off-Balance records, including both management area records that will be used in integration with the periodic actuals area (for example, records of the compensation for the board of auditors that are loaded at the beginning of the year, or off-balance valuations of payroll for the individual month) and records to be used for processing the details of the periodic Budget.
 
-I campi disponibili sono i seguenti:
-- ***Data registrazione***: obbligatorio, è la data registrazione da assegnare
+The available fields are as follows:
+- ***Posting Date***: mandatory, it is the posting date to be assigned.
 
-- ***Data competenza***: obbligatorio, è la data competenza della registrazione, sarà sempre uguale alla data precedente
+- ***Competence Date***: mandatory, it is the competence date of the record, it will always be equal to the previous date.
 
-- ***Numero registrazione***: obbligatorio, si consiglia di impostare un numero registrazione alto, in modo da non rischiare di sovrapporsi con eventuali registrazioni già presenti alla data, create magari automaticamente da procedure di contabilizzazione (es. l'elaborazione degli ammortamenti del controlling, piuttosto che la Contabilizzazione rimanenze delle Chiusure infrannuali)
+- ***Recording Number***: mandatory, it is advisable to set a high recording number, in order to avoid overlapping with any existing records on that date, which may have been created automatically by accounting procedures (e.g., the processing of controlling amortizations, or the accounting of remaining balances for mid-year closures).
 
-- ***Causale***: la causale del movimento, obbligatoria, che deve gestire i centri di costo
+- ***Causal***: the causal for the movement, mandatory, which must manage the cost centers.
 
-- ***Conto e SottoConto***: obbligatorio, il conto/sottoconto da assegnare al movimento
+- ***Account and detail account***: mandatory, the account/detail account to be assigned to the movement.
 
-- [***CENTRO AZIENDALE***](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-centers): obbligatorio, il centro aziendale da assegnare 
+- [***COST CENTER***](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-centers): mandatory, the cost center to be assigned.
 
-- ***Tipo-Numero interno-Anno-Numero WBS***: opzionalmente l'eventuale aggancio ad un progetto
+- ***Type-Internal Number-Year-WBS Number***: optionally, any link to a project.
 
-- ***Importo dare***: da valorizzare (magari a zero) obbligatoriamente
+- ***Amount Debit***: must be assigned (possibly to zero) and is mandatory.
 
-- ***Importo avere***: da valorizzare (magari a zero) obbligatoriamente
+- ***Amount Credit***: must be assigned (possibly to zero) and is mandatory.
 
-- ***Da data competenza***: la data iniziale di competenza economica della riga, non obbligatoria ma da valorizzare sempre quando si tratta di movimenti economici
+- ***From Accrual Date***: the initial date of economic competence for the line, not mandatory but should always be assigned when dealing with economic movements.
 
-- ***A data competenza***: la data finale di competenza economica della riga, non obbligatoria ma da valorizzare sempre quando si tratta di movimenti economici
+- ***To Accrual Date***: the final date of economic competence for the line, not mandatory but should always be assigned when dealing with economic movements.
 
-- ***Divisione***: non obbligatoria, se non indicata sarà utilizzata quella dei parametri d'importazione, di default quella attiva
+- ***Division***: not mandatory, if not indicated, the one from the import parameters will be used, by default the active one.
 
-Una volta inseriti tutti i campi necessari, si potrà validare il range dei dati inseriti al fine di verificare eventuali codici mancanti o errati (pulsante ***Valida range di dati***), piuttosto che lanciare direttamente l'import con il pulsante ***Importa foglio excel***: verrà richiesta la valorizzazione dell'**Area** da utilizzare e della divisa di riferimento dell'operazione.
-
-
+Once all the necessary fields have been entered, the range of the entered data can be validated to check for any missing or incorrect codes (***Valid Data Range*** button), or the import can be launched directly with the ***Import Excel Sheet*** button: it will ask for the **Area** to be used and the currency of reference for the operation.
