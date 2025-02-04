@@ -1,5 +1,5 @@
 ---
-title: MRP (MRP)
+title: MRP
 sidebar_position: 3
 ---
 

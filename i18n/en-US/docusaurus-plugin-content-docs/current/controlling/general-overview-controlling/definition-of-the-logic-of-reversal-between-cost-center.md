@@ -1,0 +1,22 @@
+---
+title: Definition of Cost Drivers 
+sidebar_position: 2.3
+---
+
+![](/img/it-it/controlling/definition-logic.png)
+
+The third step, once we have defined the [***business centers***](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-centers) and connected them to the chart of accounts (or more generally to the various registers available), is to analyze and define the relationships between the production/support centers and the general centers, also defining the logical order of cascading application.
+To define a [***Cost Driver***](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-drivers), we first need to define the [***Areas***](/docs/controlling/controlling-parametrization/controlling-specific-settings/area-types-areas) of analysis (and thus also the [***Area Types***](/docs/controlling/controlling-parametrization/controlling-specific-settings/area-types-areas)) that will be necessary in Controlling: we must first create a Type and an area *Rule Set* that will contain all the standard rules for allocation between centers, and then we will also necessarily have a Type and an area *Finals* which will be populated with end-of-period accounting value data rather than with quantities (*man-hours and machine hours* but also *quantities produced*) from production or projects. We can also have a Budget area, or any alternative area that may be useful to test what happens if different allocation rules than those officially in the 'Rule Set' area are applied.
+
+:::tip Note
+The need to define *Cost Drivers* is closely related to the use of managerial accounting in Controlling: it is true that a simplified version of cost drivers for allocations between centers, at a single level and only with fixed/annual percentages and without *Areas* to link, is also available for companies without 'Controlling' active, but enabling the complete version allows for achieving the same type of result with minimal additional effort, leaving the door open for a progressive extension of the complexity of the analysis model.
+:::
+
+A simple example can better clarify the logic to follow in defining ***Cost Drivers***.
+Let’s assume that the company has defined two production centers "turning center" and "welding center," with a support center "maintenance center" and is interested in calculating the hourly cost rate of the two production centers, considering also the distribution of the auxiliary center's costs. The auxiliary center, in turn, has personnel costs directly related to it but also, in part, general rental costs for the building where the centers are located. The rates from the production centers are used to allocate costs to production sales projects.
+
+In this simple scenario, it is clear that the starting point will be the rental cost, which we will account for at 100% on a generic virtual center, which will then be linked to a cost driver (with calculation cycle 1) in order to distribute it among the turning center, welding center, and maintenance center, perhaps based on the square meters associated with each center (in the ***first note physical movements***).
+Then, the maintenance center, which will also have been populated with direct costs (such as personnel costs, which we will probably already receive allocated by the payroll office for their respective centers) as well as these indirect costs of rent, will in turn be allocated with a different driver (with calculation cycle 2) to the turning and welding centers, maybe concerning the machine hours recorded from production reports (linking the center to the specific machine) of the period.
+At this point, for the turning or welding center, on which both direct and indirect costs will have been loaded, the cost rate for the period will be calculated (as total costs divided by total production hours, for example), and this period cost will be applied, via another driver with cycle 3, to the hours of the center utilized on the individual project/sales order worked on during the period.
+
+The greater the complexity of the structure of the centers to be managed and the number of [***dimensions***](/docs/controlling/controlling-parametrization/controlling-specific-settings/dimension) of analysis, the more delicate the definition of the appropriate drivers and their related application cycles will be.
