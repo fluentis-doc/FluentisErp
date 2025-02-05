@@ -1,29 +1,29 @@
 ---
-title: Stati effetti
+title: Bill Status
 sidebar_position: 5
 ---
-:::tip[FAst Start]
-La tabella è interessata dalla procedura di [**Fast Start**](/docs/guide/fast-start)
+:::tip[Fast Start]
+The table is affected by the [**Fast Start**](/docs/guide/fast-start) procedure.
 
-Nel caso in cui si intenda configurare manualmente fare riferimento alla check list della pagina linkata
+If you intend to configure manually, refer to the checklist on the linked page.
 :::
 
-La tabella viene compilata attraverso l'imposizione di un codice e di una descrizione utente per gli stati necessari alla gestione effetti della società, impostando uno degli stati predefiniti fra:
+The table is filled in by imposing a code and a user description for the status necessary for managing bills of the company, setting one of the predefined status among:
 
-**Effetto emesso;**
+**Issued bill;**
 
-**Effetto presentato allo sconto;**
+**Bill presented to discount;**
 
-**Effetto presentato salvo buon fine;**
+**Bill presented 'subject to collection';**
 
-**Effetto presentato al dopo incasso;**
+**Bill presented after collection;**
 
-**Effetto ritornato accreditato;**
+**Returned credited effect (Effetto ritornato accreditato);**
 
-**Effetto ritornato insoluto;**
+**Returned unpaid effect (Effetto ritornato insoluto);**
 
-**Effetto girato;**
+**Bill endorsed;**
 
-**Effetto generale.**
+**General bill**
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/pnRACKqZqvM" title="YouTube video player" frameborder="0" allowfullscreen= "true"></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/pnRACKqZqvM" title="YouTube video player" frameborder="0" allowfullscreen="true"></iframe>

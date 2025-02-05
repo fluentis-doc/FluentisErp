@@ -1,41 +1,41 @@
 ---
-title: Tipi presentazione distinte effetti
+title: Bills List Presentation Types
 sidebar_position: 4
 ---
 
-:::tip[FAst Start]
-La tabella è interessata dalla procedura di [**Fast Start**](/docs/guide/fast-start)
+:::tip[Fast Start]
+The table is affected by the [**Fast Start**](/docs/guide/fast-start) procedure.
 
-Nel caso in cui si intenda configurare manualmente fare riferimento alla check list della pagina linkata
+If you intend to configure manually, refer to the checklist of the linked page.
 :::
 
-La tabella è collegata al campo *Tipo* presente nella testata della distinta di presentazione effetti. 
+The table is linked to the *Type* field present in the header of the effect presentation list.
 
-Viene compilata attraverso l'imposizione di un codice e di una descrizione, ai quali va assegnato poi un numeratore di riferimento.
+It is filled in by imposing a code and a description, to which a corresponding reference number must be assigned.
 
-Le opzioni ulteriori previste nella maschera offrono la possibilità di definire:
+The additional options provided in the mask offer the possibility to define:
 
-- **Giro a Fornitore:** se il tipo distinta sia da gestire come distinta di giro effetti/titoli a fornitore;
+- **Giro to vendor:** whether the type of list should be managed as a transfer list of bills/titles to the supplier;
 
-- **Utenze:** se il tipo distinta sia da gestire come distinta RID attualmente sostituita dal tipo SDD (Sepa Direct Debit - a livello europero) nella creazione del file telematico nel modulo RIBA. Attivando il flag viene abilitato il pulsante di esportazione del tracciato corrispondente nella ribbon bar della form relativa alla distinta di presentazione.
+- **Consumption:** whether the type of list should be managed as a DD list currently replaced by the SDD type (Sepa Direct Debit - at the European level) in creating the telematic file in the C.Ord module. Activating the flag enables the export button for the corresponding trace in the ribbon bar of the relevant presentation list form.
 
-- **LCR:** il corrispondente francese delle nostre Riba. Impostando questo flag, nella distinta sarà attivo il pulsante di export LCR e non l’export normale
+- **LCR:** the French equivalent of the C.Ord. By setting this flag, the export LCR button will be active in the list and not the normal export.
 
-- **Accredito Immediato:** quando impostato la contabilizzazione distinte registra in DARE il conto banca e in AVERE il conto transitorio banca (esempio *Banca X C/ S.B.F.*) mentre
-la contabilizzazione accrediti avrà in dare il conto transitorio banca e in avere il conto del tipo effetto (esempio il conto *Effetti attivi in portafoglio*). 
+- **Directly Credited:** when set, the accounting of lists records the bank account in the Debit and the transitory bank account in the Credit (for example, *Bank X C/ S.B.F.*), while 
+the credit accounting will have in debit the transitory bank account and in credit the account of the type of effect (for example, the account *Active bills in portfolio*).
 
-Quando il flag è disattivato si torna alla logica standard: in DARE il conto transitorio e in avere il conto preso dal tipo effetto (esempio il conto *Effetti attivi in portafoglio*),mentre la contabilizzazione accrediti prevede com’è sempre stato in dare il conto banca e in avere il conto transitorio banca.
+When the flag is deactivated, it reverts to the standard logic: in Debit the transitory account and in Credit the account taken from the type of effect (for example, the account *Active bills in portfolio*), while the credit accounting has, as it has always been, in debit the bank account and in credit the transitory bank account.
 
-Questa impostazione non è compatibile con altre due logiche attivabile dalla form Parametri portafoglio effetti: il flag di *Chiusura cliente in contabilizzazione distinta* non andrà impostato (perché fa saltare il passaggio sul conto effetti, con il presente flag del tipo distinta attivo andrebbe di fatto a impedire la chiusura del cliente). Anche utilizzare le opzioni di contabilizzazione distinte alla data maturazione risulta poco logico con il presente flag attivo.
+This setting is not compatible with two other logics activated from the Bills Portfolio Parameters form: the flag of *Close client in lists accounting* should not be set (because it skips the passage on the actual statement; with the active type list flag, it would effectively prevent client closure). Using the list accounting options on the maturity date also seems illogical with the active flag.
 
-- **Codice esterno:** campo utilizzato nel tracciato SDD per definire se è la distinta è di tipo *CORE* o *B2B*. Fare  riferimento alla documentazione tecnica dei tracciati SDD.
+- **Extern Code:** field used in the SDD trace to define whether the list is of type *CORE* or *B2B*. Refer to the technical documentation of SDD traces.
 
 
-- **I conti**
+- **The Accounts**
 
-- Conto / Sottoconto / Descrizione **Banca**
-- Conto / Sottoconto / Descrizione **Transitorio Banca**
+- Account / Detail account / Description **Bank**
+- Account / Detail account / Description **Bank transitory account**
 
-possono essere associati al tipo di distinta per automatizzare e definire la movimentazione contabile all'atto della creazione di una nuova distinta: si tratta del sottoconto di anagrafica banca sulla quale avverrà l'accredito finale effetti e del transitorio di presentazione per la contabilizzazione distinte (tipicamente ad esempio *Banca X C/ S.B.F.*).
+can be associated with the type of list to automate and define the accounting movement at the time of creating a new list: this refers to the detail account of the bank register on which the final effect credit will occur and the transient presentation for the accounting of lists (typically for example *Banca X C/ S.B.F.*).
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/pnRACKqZqvM" title="YouTube video player" frameborder="0" allowfullscreen= "true"></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/pnRACKqZqvM" title="YouTube video player" frameborder="0" allowfullscreen="true"></iframe>

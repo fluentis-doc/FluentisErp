@@ -1,22 +1,22 @@
 ---
-title: Tipi effetti
+title: Bills Types
 sidebar_position: 3
 ---
 
-:::tip[FAst Start]
-La tabella è interessata dalla procedura di [**Fast Start**](/docs/guide/fast-start)
+:::tip[Fast Start]
+The table is affected by the [**Fast Start**](/docs/guide/fast-start) procedure.
 
-Nel caso in cui si intenda configurare manualmente fare riferimento alla check list della pagina linkata
+If you intend to configure manually, refer to the checklist on the linked page.
 :::
 
-La tabella viene compilata attraverso l'imposizione di un codice e di una descrizione utente, ai quali va assegnato poi un numeratore di riferimento, una tipologia di effetto tra quelle predefinite e infine un sottoconto di movimentazione: tale sottoconto sarà utilizzato in contropartita alla chiusura cliente all'interno della procedura di contabilizzazione effetti.
+The table is compiled by entering a code and a user description, to which a reference numerator, a type of effect from the predefined ones, and finally a detail account for movement must be assigned: this detail account will be used in counterpart to the customer closure within the bills accounting procedure.
 
-Il tipo effetto può poi essere associato al tipo di pagamento nella tabella omonima.
+The type of bill can then be associated with the type of payment in the corresponding table.
 
-Da segnalare, infine, che solo gli effetti di tipo cambiario potranno essere gestiti nelle procedura di contabilizzazione insoluti su cessione del modulo Insoluti.
+Finally, it is noteworthy that only effects of the bill type can be managed in the unpaid accounting procedure on the Unpaid module disposal.
 
-Il flag **Gestione importo parziale** consente di creare effetti che consumano *parzialmente* le partite, indicandone l'importo. Prevede una gestione manuale all'interno dell'effetto.
+The flag **Manage Partial Amount** allows creating bills that partially consume the items, indicating the amount. It requires manual management within the bill.
 
-Il link **Cassa** non è in uso per la localizzazione italiana, serve per registrare negli effetti dai registratori di cassa.
+The link **Counter** is not used for the Italian localization; it is used for registering bills from cash registers.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/pnRACKqZqvM" title="YouTube video player" frameborder="0" allowfullscreen= "true"></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/pnRACKqZqvM" title="YouTube video player" frameborder="0" allowfullscreen="true"></iframe>

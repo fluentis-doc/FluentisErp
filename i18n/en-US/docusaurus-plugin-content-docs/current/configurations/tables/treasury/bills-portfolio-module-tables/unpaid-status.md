@@ -1,39 +1,33 @@
 ---
-title: Stati insoluti
+title: Unpaid Status
 sidebar_position: 6
 ---
-:::tip[FAst Start]
-La tabella è interessata dalla procedura di [**Fast Start**](/docs/guide/fast-start)
+:::tip[Fast Start]
+The table is subject to the [**Fast Start**](/docs/guide/fast-start) procedure.
 
-Nel caso in cui si intenda configurare manualmente fare riferimento alla check list della pagina linkata
+If you intend to configure manually, refer to the checklist on the linked page.
 :::
 
-La tabella viene compilata attraverso l'imposizione di un codice e di una descrizione utente per gli stati necessari alla gestione insoluti della società, impostando uno degli stati predefiniti fra:
+The table is compiled by imposing a code and a user description for the status necessary for managing the company's unpaid, setting one of the predefined status among:
 
-**Insoluto;**
+**Unpaid;**
 
-**Contabilizzato;**
+**Accounted;**
 
-**Emesso note debito (non utilizzato);**
+**Issued debit notes (not used);**
 
-**Contabilizzato note debito (non utilizzato);**
+**Accounted debit notes (not used);**
 
-**Incassato;**
+**Collected;**
 
-**Autorizzato (non utilizzato).**
+**Authorized (not used)**
 
 
 
-| Funzione | Significato |
+| Function | Extended Description |
 | --- | --- |
-| Ricerca | Con questo pulsante si esegue la ricerca stati insoluti secondo i filtri impostati. |
-| Nuovo | Posiziona il cursore all'inserimento di una nuova riga. |
-| Cancella | Cancella il tipo anticipo selezionato. |
-| Anteprima | Esegue l'anteprima di stampa della tabella in uso. |
-| Stampa | Esegue la stampa della tabella in uso. |
-
-
-
-
-
-
+| Search | With this button, you execute the search for unpaid status according to the set filters. |
+| New | Positions the cursor for the insertion of a new row. |
+| Cancel | Deletes the selected advance type. |
+| Preview | Executes the print preview of the currently used table. |
+| Print Report | Executes the printing of the currently used table. |

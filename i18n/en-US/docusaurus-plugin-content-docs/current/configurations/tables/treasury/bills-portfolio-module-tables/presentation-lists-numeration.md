@@ -1,18 +1,16 @@
 ---
-title: Numerazione distinte di presentazione
+title: Presentation Lists Numeration
 sidebar_position: 2
 ---
 
-:::tip[FAst Start]
-La tabella è interessata dalla procedura di [**Fast Start**](/docs/guide/fast-start)
+:::tip[Fast Start]
+The table is affected by the [**Fast Start**](/docs/guide/fast-start) procedure.
 
-Nel caso in cui si intenda configurare manualmente fare riferimento alla check list della pagina linkata
+If you intend to configure manually, refer to the checklist on the linked page.
 :::
 
-Per definire una numerazione è sufficiente impostare l'anno di riferimento, il codice della numerazione, la sua descrizione e il numero di partenza.
+To define a numeration, it is sufficient to set the reference year, the numeration code, its description, and the starting number.
 
-La tabella è fra quelle gestite automaticamente nella procedura di generazione dei contatori del nuovo esercizio contabile, che si trova all'interno degli ‘Strumenti'-‘Utilità'.
+The table is among those managed automatically in the procedure for generating counters for the new accounting year, which is found within ‘Tools’ - ‘Utilities’.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/pnRACKqZqvM" title="YouTube video player" frameborder="0" allowfullscreen= "true"></iframe>
-
-
+<iframe width="560" height="315" src="https://www.youtube.com/embed/pnRACKqZqvM" title="YouTube video player" frameborder="0" allowfullscreen="true"></iframe>
