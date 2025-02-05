@@ -1,34 +1,23 @@
 ---
-title: Budget Period Types
+title: Tipi periodo budget
 sidebar_position: 2
 ---
 
-The mask consists of more grids: budget periods definition can be performed in the first grid on the left, where it is possible to assign code, description and a flag for multiyear management of the same budget period. Once having saved code, it will be possible to insert details of periods on the right grid: in case that the period is multiyear it will be possible to view even the reference year as well as day/month.
+La maschera si compone di più griglie: la definizione dei** periodi budget** si effettua nella prima griglia a sinistra, dove si attribuisce un 'codice', una 'descrizione' e un flag per la gestione 'pluriannuale' dello stesso. Una volta salvato il codice si attiverà la possibilità di inserirne, nella griglia a destra, i dettagli dei periodi: nel caso in cui il periodo sia pluriannuale sarà visualizzato anche l'anno di riferimento e non solo giorno/mese.
 
-This details setting can be defined in two different ways: the first one gives the possibility to set, as start date of all periods, the first day on January, while the second one will correspond to the 'last' day of the related month. The percentage, to be set, will correspond always to a value increase of the previous period and the last period will have 100% of yearly value (e.g. for a quarterly period it will be possible to have 4 periods with 25/50/75/100%). This setting is recommended aboveall not only for economic budget but also for budget based on balance detail accounts, that have to be recorded month by month.
+L'impostazione di questi dettagli può essere definita in due modi: il primo, consigliato, prevede che sia impostato sempre come data di partenza di tutti i periodi il primo giorno di gennaio, mentre la fine del singolo sarà il giorno ‘last' del mese relativo. La percentuale da impostare, quindi, sarà sempre un incremento di valore del periodo precedente e l'ultimo periodo avrà il 100% del valore annuale (ad es. per un periodo trimestrale avremo 4 periodi con 25/50/75/100%). Questa impostazione è consigliata soprattutto per budget non solo di tipo economico ma anche basati su sottoconti patrimoniali, che hanno una ripresa saldi iniziale da riportare di mese in mese.
 
-The second setting type loads period and in that case every period will have a general specific percentage. Percentages loaded in this point pertain to standard percentage to be automatically used during data loading, but the user will go on in order to force values according to the necessity.
+Il secondo tipo di impostazione, invece, prevede il caricamento di periodi tra loro separati, nel qual caso ognuno avrà una sua percentuale specifica generale. Le percentuali caricate in questo punto sono percentuali standard da utilizzare come default al caricamento dati, ma l'utente potrà procedere a forzare i valori caso per caso secondo necessità.
 
-Under this basic setting there is a list of alternative periods: after having selected the higher 'father' period, it will be possible to establish other N alternative periods to be associated to specific detail accounts of chart of accounts, in order to predetermine specific percentages to be used in particular cases: their detail will be proposed with the same percentages of start period, but the user will have the possibility to edit them freely.
-
-RIBBON BAR: it represents the Form Menu, that is the area in which it is possible to perform actions linked to the procedure in use. The list of possible features is the following:
+Al di sotto di questa impostazione base sono presenti una lista di periodi alternativi: selezionato il periodo ‘padre' superiore, si potranno definire N altri suoi periodi alternativi da associare a specifici sottoconti del piano dei conti, al fine di predefinire le percentuali specifiche da utilizzare in determinati casi: il dettaglio di questi sarà proposto con le stesse percentuali del periodo di partenza, ma l'utente sarà libero di modificarle liberamente.
 
 
+*Pulsanti specifici*
 
-| Function | Meaning |
-| --- | --- |
-| Search  | Button to perform the search of budget periods types according to filters set. |
-| Insert New Period | It sets the cursor in the grid at the top left of budget periods. |
-| Insert New Period  | Button to set the cursor in the grid on the right for the selected budget period. |
-| Insert New Alternative Budget | Button to set the cursor in the grid at the bottom left of alternative budget periods. |
-| Delete Period Budget | Button to delete the selected budget period. |
-| Delete Period Budget Details | Button to delete the selected budget period detail. |
-| Delete Alternative Budget | Button to delete the selected alternative budget period. |
-| Delete Alternative Budget Detail | Button to delete the selected alternative budget period detail. |
-| Insert New Detail Period | Button to set the cursor in the grid on the right for the selected budget period.  |
-
-
-
-
-
-
+**Inserisce nuovo periodo**: imposta il cursore nella griglia in alto a sinistra dei periodi budget.  
+**Inserisce nuovo periodo dett**: imposta il cursore nella griglia a destra per il periodo budget selezionato.  
+**Inserisce nuovo budget alternativo**: imposta il cursore nella griglia in basso a sinistra dei periodi budget alternativi.  
+**Elimina budget periodo**: Cancella il periodo budget selezionato.  
+**Elimina dettagli del budget periodo**: Cancella il dettaglio del periodo budget selezionato.  
+**Elimina budget alternativo**: Cancella il periodo budget alternativo selezionato.  
+**Elimina dettaglio budget alternativo**: Cancella il dettaglio del periodo alternativo budget selezionato.  
