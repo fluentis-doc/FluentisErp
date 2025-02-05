@@ -29,16 +29,10 @@ Per continuare la creazione del DDT di acquisto, l'utente deve inserire i campi 
 
  La form contiene una serie di tab:
 
--  [Testata ](/docs/purchase/purchase-delivery-note/insert-purchase-delivery-note/header) e le sue  [Procedure](/docs/purchase/purchase-delivery-note/insert-purchase-delivery-note/header-procedures/execution-from-purchase-order) 
+-  [Testata ] e le sue  [Procedure]
 
--  [Articoli](/docs/purchase/purchase-delivery-note/insert-purchase-delivery-note/items) 
+-  [Articoli]
 
--  [Riepiloghi](/docs/purchase/purchase-delivery-note/insert-purchase-delivery-note/summaries) 
+-  [Riepiloghi]
 
--  [Trasporto](/docs/purchase/purchase-delivery-note/insert-purchase-delivery-note/transport) 
-
-
-
-
-
-
+-  [Trasporto]

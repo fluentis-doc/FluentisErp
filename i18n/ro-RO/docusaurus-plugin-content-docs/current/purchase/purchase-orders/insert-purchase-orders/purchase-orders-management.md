@@ -3,7 +3,7 @@ title: Nou ordin furnizor
 sidebar_position: 2
 ---
  
-Form-ul se află în **Achiziții > Ordine furnizori** și conține detalii referitoare la produsele sau serviciile de achiziționat, inclusiv cantități, prețuri, termeni de livrare, condiții de plată și alte specificații contractuale.
+Form-ul conține detalii referitoare la produsele sau serviciile de achiziționat, inclusiv cantități, prețuri, termeni de livrare, condiții de plată și alte specificații contractuale.
  
 Din form-ul de căutare al ordinelor puteți să creați un nou document folosind butonul **Nou** sau să deschideți unul existent pentru a-l vizualiza și/sau modifica.
  

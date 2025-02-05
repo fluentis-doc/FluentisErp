@@ -1,62 +1,22 @@
 ---
-title: Articole
+title: Articoli
 sidebar_position: 3
 ---
 
-Fereastra Articole conține un grid în care se pot insera manual produsele cerute terțului. Acest grid este deja completat în cazul în care ordinul provine din planificarea generală sau din elaborare MRP. În cazul în care ordinul este inserat manual este necesară inserarea cantității, a eventualului preț lucrare, a datei prevăzute pentru reintrare, a datei utilizării materialului.
+La form è costituita da una griglia, all'interno della quale l'utente può inserire manualmente i prodotti che sono richiesti al terzista. 
+E' possibile inserire articoli codificati e note.
 
-Secțiunea situată sub grid conține detaliile fiecărei linii selectate în grid.
+Essa risulta già compilata nel caso in cui l'ordine provenga da *Schedulazione generale* o da *Elaborazione MRP*, lasciando comunque la facoltà all'utente di modificarla e/o aggiungere ulteriori materiali alla lista componenti dell'ordine pianificato. Da notare che se l'ordine pianificato è di acquisto il tab Materiali risulta non attivo. 
 
-Trebuie evidențiat faptul că, în cazul completării automate a acestui grid, toate datele indicate anterior sunt actualizate automat, lasând oricum posibilitatea utilizatorului să le modifice sau să adauge ulterioare materiale la lista de componente a ordinului planificat. Observație: în cazul în care ordinul planificat este de achiziții, tabul Materiale ramâne dezactivat.
+## Dati articolo
 
-**Grid articole**
+In questo tab vengono visualizzate le informazioni relative alla riga selezionata nella griglia degli articoli, tra quali:
 
-**Executat**: indică dacă linia este executată, este valorizată automat de sistem sau dacă poate fi modificată de utilizator;
-
-**Listat**: indică dacă linia a fost deja listată; acest lucru pentru a controla eventuale modificări și pentru a le putea lista pe fiecare în parte;
-
-**Cod articol**: cu dubluc clic se apelează help articole cu ajutorul căruia se selectează codul articolui;
-
-**Curs lucrare**: în acest câmp este preluat flag-ul prezent în parametrii MRP ai articolului numit “Curs lucrare”;
-
-**UM**: reprezintă unitatea de măsură a articolului;
-
-**UMA**: reprezintă eventuala unitatea de măsură alternativă a articolului;
-
-**Cantitate de produs**: reprezintă cantitatea ordinului inițial comunicată terțului;
-
-****Cantitate **reintrată**: totalul cantității prelucrate primite;
-
-**Preț unitar lucrare**: prețul din ofertă sau inserat manual;
-
-**Dată prevăzută reintrare**: data sosirii materialelor prelucrate;
-
-**Dată utilizare material**: data la care eventualul material trebuie să fie disponibil pentru a fi expediat terțului către prelucrare.
-
-**Detaliu articol**
-
-Pentru fiecare linie de articol din grid sunt prezente alte date:
-
-**Comandă**: preia comanda de vânzare pentru care face referire necesarul;
-
-**Note lucrare**: sunt controlate de utilizator. Poate fi parametrizat și pot fi preluate date din sistem, cum ar fi descrierea fazei de lucru care a generat necesarul pentru lucrare;
-
-**Ordin/Fază**: cu dubluc clic se apelează help faze de lucru din care se poate selecta relativa fază și subfază și deci să fie atribuit materialul selectat la o anumită fază de lucru a articolului;
-
-**Gestiune**: reprezintă gestiunea de primire a produsului prelucrat; 
-
-RIBBON BAR: reprezintă meniul cu butoanele de executie, pentru fiecare operatie in parte aferentă fiecarei ferestre din aria in care se lucreaza. Lista functionalitatiilor posibile conține:
-
-
-
-| Functie | Functionalitate |
-| --- | --- |
-| Inserează | Permite inserarea unei noi linii în grid. |
-| Șterge | Permite ștergerea liniei din grid (și datele ‘materiale' asociate). |
-| Diverse - Caută | Caută în lista de articole din grid. |
-
-
-
-
-
-
+**Corso lavorazione**: in questo campo è ripreso il flag presente nei parametri MRP dell'articolo chiamato *Corso Lavorazione*;  
+**Quantità da produrre**: quantità dell'ordine iniziale comunicata al terzista;  
+**Quantità già rientrata**: totale della quantità ricevuta e lavorata;  
+**Data previsto rientro**: data di arrivo merce lavorata;  
+**Note lavorazione**: sono gestite dall'utente. Può essere parametrizzato e possono essere riportati dei dati sensibili del sistema, ad esempio la descrizione della fase di lavoro che ha generato il fabbisogno di lavorazione;  
+**Fase**: con un doppio click si apre un help fasi di lavorazione dal quale si può selezionare la relativa fase e sottofase, e quindi assegnare il materiale selezionato ad una determinata fase di lavorazione dell'articolo;  
+**Magazzino**: magazzino di destinazione del prodotto lavorato;  
+**Pesi**: vengono riportati il Peso netto e il Peso lordo totali delle righe articolo. Vengono riportati i pesi di anagrafica articolo moltiplicati per la quantità di riga.
