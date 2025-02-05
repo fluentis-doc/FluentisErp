@@ -1,11 +1,11 @@
 ---
-title: Customer/Vendor/Agent Register
+title: Anagrafica cliente/fornitore/agente
 sidebar_position: 5
 ---
 
-In register header it is possible to set payment detail account: this account will be associated to the account maturity values in register and from here it will be used on cash flow in order to manage the flux canalization.
+In testata delle anagrafiche è possibile impostare il sottoconto di pagamento: questo conto sarà associato alle partite contabili intestate all'anagrafica e da qui utilizzate nel cash flow per gestire la canalizzazione dei flussi.
 
-In addition the “Delay Days” field is used in order to calculate the estimated collection/payment date with this number of standard delay days of the register.
+Inoltre, il campo ‘Giorni ritardo' viene utilizzato per calcolare, a partire dalla data scadenza, la data d'incasso/pagamento prevista con questo numero di giorni di ritardo standard dell'anagrafica.
 
 
 

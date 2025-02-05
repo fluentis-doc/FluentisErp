@@ -1,33 +1,36 @@
 ---
-title: Arrears Status
+title: Stati insoluti
 sidebar_position: 6
 ---
+:::tip[FAst Start]
+La tabella è interessata dalla procedura di [**Fast Start**](/docs/guide/fast-start)
 
-The table is compiled through the setting of a user code and description for necessary arrear management status of company, by setting one of the predefined status among:
+Nel caso in cui si intenda configurare manualmente fare riferimento alla check list della pagina linkata
+:::
 
-**Arrears;**
+La tabella viene compilata attraverso l'imposizione di un codice e di una descrizione utente per gli stati necessari alla gestione insoluti della società, impostando uno degli stati predefiniti fra:
 
-**Accounted;**
+**Insoluto;**
 
-**Emitted debit notes (not used);**
+**Contabilizzato;**
 
-**Accounted debit notes (not used);**
+**Emesso note debito (non utilizzato);**
 
-**Collected;**
+**Contabilizzato note debito (non utilizzato);**
 
-**Authorized (not used).**
+**Incassato;**
 
-RIBBON BAR: it represents the Form Menu, that is the area in which it is possible to perform actions linked to the procedure in use. The list of features is the following:
+**Autorizzato (non utilizzato).**
 
 
 
-| Function | Meaning |
+| Funzione | Significato |
 | --- | --- |
-| Search | Button to perform the search of arrear status according to filters set. |
-| New | Button to place the cursor during the insertion of a new line. |
-| Delete | Button to delete the selected advance type. |
-| Preview | Button to perform the print preview of table in use. |
-| Print | Button to print the table in use. |
+| Ricerca | Con questo pulsante si esegue la ricerca stati insoluti secondo i filtri impostati. |
+| Nuovo | Posiziona il cursore all'inserimento di una nuova riga. |
+| Cancella | Cancella il tipo anticipo selezionato. |
+| Anteprima | Esegue l'anteprima di stampa della tabella in uso. |
+| Stampa | Esegue la stampa della tabella in uso. |
 
 
 

@@ -1,22 +1,14 @@
 ---
-title: Due Date Types
+title: Tipi scadenza
 sidebar_position: 3
 ---
 
-In this table it is possible to view the extra-accounting due dates typologies that will managed manually within cash flow. It is possible to associate a bank detail account canalization of flux to every typology.
+:::tip[FAst Start]
+La tabella è interessata dalla procedura di [**Fast Start**](/docs/guide/fast-start)
 
-RIBBON BAR: it represents the Form Menu, that is the area in which it is possible to perform actions linked to the procedure in use. The list of features is the following:
+Nel caso in cui si intenda configurare manualmente fare riferimento alla check list della pagina linkata
+:::
 
+In questa tabella si definiscono le tipologie di scadenze extacontabili che saranno gestite manualmente all'interno del cash flow. Ad ogni tipologia può essere associato un sottoconto bancario di canalizzazione del flusso.
 
-
-| Function | Meaning |
-| --- | --- |
-| Search | Button to perform the search of due date types according to filters set. |
-| New | Button to place the cursor during the insertion of a new line. |
-| Delete | Button to delete the selected due date type. |
-
-
-
-
-
-
+Le tipologie qui codificate rappresentano, più che altro, un raggruppamento o un'etichetta per l'inserimento effettivo del dettaglio che viene fatto attraverso la form [**Scadenze Extracontabili**](/docs/treasury/cash-flow/off-balance-due-dates).

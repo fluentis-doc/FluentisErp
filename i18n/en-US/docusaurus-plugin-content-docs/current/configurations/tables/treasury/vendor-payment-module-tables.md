@@ -1,12 +1,10 @@
 ---
-title: Vendors Payments Module Tables
+title: Tabelle modulo Pagamenti fornitori
 sidebar_position: 5
 ---
 
-There are no specific tables of this module.
+:::tip[FAst Start]
+La tabella è interessata dalla procedura di [**Fast Start**](/docs/guide/fast-start)
 
-
-
-
-
-
+Nel caso in cui si intenda configurare manualmente fare riferimento alla check list della pagina linkata
+:::
