@@ -1,34 +1,34 @@
 ---
-title: Generazione contatori nuovo anno
+title: New Year Counter Generation
 sidebar_position: 3
 ---
 
-La form permette di gestire i numeratori presenti in Fluentis, in particolare nel momento del cambio d'anno.
+The form allows for managing the counters present in Fluentis, particularly at the start of the new year.
 
-All'apertura della form, Fluentis visualizza l'**Ultimo anno gestionale esistente** (preso dai parametri di contabilità) e il filtro per i *contatori non validi per il prossimo anno*.
+Upon opening the form, Fluentis displays the **Last existing managed year** (taken from accounting parameters) and the filter for *counters not valid for the next year*.
 
-La griglia presenta la lista dei numeratori non definiti (o non definiti correttamente) per l'anno prossimo permettendo all'utente, con un doppio click, di identificare il motivo: generalmente il problema risiede nella configurazione del numeratore con una data di fine validità senza un motivo valido, costringendo (prima della creazione del presente automatismo) a creare una nuova riga ogni anno, anziché impostare il numeratore con l'opzione Annuale che riparte da capo ogni anno automaticamente, tuttavia potrebbe essere che il numeratore sia stato bloccato per un motivo preciso (cambio di politica della numerazione ecc.).
+The grid presents a list of counters that are not defined (or not defined correctly) for the upcoming year, allowing the user, with a double click, to identify the reason: generally, the issue lies in the configuration of the counter with an end date that lacks a valid reason, forcing (before the creation of this automation) the creation of a new line every year, instead of setting the counter with the Annual option that automatically restarts every year. However, it could be that the counter has been blocked for a specific reason (change in number policy, etc.).
 
-*Pulsanti specifici*: 
+*Specific buttons*:
 
-> **Creazione**: il pulsante mostra un messaggio di conferma della correzione automatica dei numeratori per le righe selezionate nella griglia.  
-> **Rollback**: esegue il ripristino della procedura.
+> **Creation**: the button shows a confirmation message regarding the automatic correction of counters for the rows selected in the grid.  
+> **Rollback**: performs the restoration of the procedure.
 
-*Esempio*  
-Se al messaggio si risponde in modo:  
-- affermativo, saranno tolte le date fine validità dei numeratori che sono stati (si suppone) erroneamente chiusi nell'anno 2017 dell'esempio (non si sbloccheranno quindi numeratori chiusi negli anni precedenti), impostandoli inoltre come ‘annuali' in modo da renderli validi per sempre.
+*Example*  
+If the message is responded to as follows:  
+- affirmative, the end validity dates of the counters that have been (presumably) mistakenly closed in the year 2017 of the example will be removed (counters closed in previous years will not be unlocked), and they will also be set as ‘annual’ to make them valid forever.
 
-- negativo, i numeratori Fluentis resteranno come sono.
+- negative, the Fluentis counters will remain as they are.
 
 
-Facciamo qualche esempio:
+Let's consider a few examples:
 
-A) supponiamo ultimo anno 2017, numeratore fatture Fluentis con codice ‘1' impostato con data di fine validità 2020 e quindi valido per il 2018, la procedura andrà a creare anche il numeratore ex-Ideale2010 con codice 1 per il 2018.
+A) let's assume the last year is 2017, the Fluentis invoice counter with code ‘1’ is set with an end validity date of 2020 and thus valid for 2018, the procedure will also create the counter ex-Ideale2010 with code 1 for 2018.
 
-B) supponiamo ultimo anno 2017, numeratore fatture Fluentis con codice ‘2' impostato con data di fine validità 2017 e quindi NON valido per il 2018, se l'utente conferma la sistemazione del numeratore Fluentis allora nel numeratore sarà tolta la data fine validità e impostato il tipo come annuale e poi sarà ricreato il corrispondente numeratore ex-Ideale2010 con codice ‘2'; in caso il numeratore Fluentis non venga sistemato, questo numeratore non sarà valido per il 2018 e quindi anche il numeratore ex-Ideale2010 con codice ‘2' resterà bloccato.
+B) let's assume the last year is 2017, the Fluentis invoice counter with code ‘2’ is set with an end validity date of 2017 and thus NOT valid for 2018. If the user confirms the adjustment of the Fluentis counter, then the end validity date will be removed from the counter, it will be set as annual, and then the corresponding counter ex-Ideale2010 with code ‘2’ will be recreated; if the Fluentis counter is not adjusted, this counter will not be valid for 2018, and thus the counter ex-Ideale2010 with code ‘2’ will remain blocked.
 
-C) supponiamo ultimo anno 2017, numeratore fatture Fluentis con codice ‘3' senza data fine validità e quindi valido per il 2018, la procedura andrà a creare anche il numeratore ex-Ideale2010 con codice 3 per il 2018 (indipendentemente da come l'utente risponde al messaggio di conferma della sistemazione Fluentis).
+C) let's assume the last year is 2017, the Fluentis invoice counter with code ‘3’ has no end validity date and is thus valid for 2018; the procedure will also create the counter ex-Ideale2010 with code 3 for 2018 (regardless of how the user responds to the Fluentis adjustment confirmation message).
 
-:::tip NOTA
-Questa utilità permette di creare anche i parametri di contabilità per il nuovo anno. Verrà visualizzato un apposito messaggio che chiede di confermare. Si consiglia di accettare la creazione, diversamente i parametri di contabilità, **necessari** per eseguire qualsiasi registrazione contabile dovranno essere creati, per il nuovo anno dalla [**apposita form**](/docs/configurations/parameters/finance/accounting-parameters).
+:::tip NOTE 
+This utility also allows for the creation of accounting parameters for the new year. A specific message will be displayed asking for confirmation. It is recommended to accept the creation; otherwise, the accounting parameters, **necessary** to perform any ledger record, must be created for the new year from the [**appropriate form**](/docs/configurations/parameters/finance/accounting-parameters).
 :::
