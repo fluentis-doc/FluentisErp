@@ -1,35 +1,28 @@
 ---
-title: Discount Range
-sidebar_position: 12
+title: Range sconto
+sidebar_position: 17
 ---
 
-The “Discount Range” table enables the user to determine which element is necessary in order to define the variability of discounts application brackets, on which define agents commissions.
+La tabella si apre tramite il percorso **Tabelle > Vendite > Range sconto** e consente di definire l'elemento sul quale definire la variabilità degli scaglioni di applicazione degli sconti, sui quali definire le provvigioni agenti.
 
+Consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
 
+La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
 
-| Function | Meaning |
-| --- | --- |
-| Search | Identification numeric code of discount range |
-| Insert | Command to insert a new discount range |
-| Delete | Command to delete a discount range, unless this has not already been used |
-| Print Preview | Command to perform the print preview of discount range |
-| Print | Command to print discount range |
+Per poter inserire nuovi record è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**. 
 
+**Range/Descrizione**: in questi campi vanno inseriti un codice ed una descrizione per identificare il range dello sconto;
 
+**Unico**: con questo flag le fasce provvigionali di sconto saranno applicate su tutti gli articoli indifferenziatamente;
 
-| Function | Meaning |
-| --- | --- |
-| Range | Discount range Identification numeric code  |
-| Description | Discount range description |
-| Unique | Through this flag the discount commissions interval will be applied on all items without any differences |
-| Item Class | Through this flag it will be possible to define as commissions interval as item class |
-| Price Lists | Through this flag it will be possible to define as commissions interval as sales lists (not customized) |
-| Item Type | Through this flag it will be possible to define as commissions interval as item types |
-| Characteristic | Through this flag it will be possible to define as commissions interval as item characteristics |
-| Prod. Category | Through this flag it will be possible to define as commissions interval as items product category |
+**Classi art-**: con questo flag si potranno definire tante fasce provvigionali di sconto quante sono le classi articolo;
 
+**Listini**: con questo flag si potranno definire tante fasce provvigionali di sconto quanti sono i listini di vendita (non personalizzati) definiti;
 
+**Tipo art.**: con questo flag si potranno definire tante fasce provvigionali di sconto quante sono i tipi articolo;
 
+**Caratteristica**: con questo flag si potranno definire tante fasce provvigionali di sconto quante sono le caratteristiche articolo;
 
-
-
+**Cat. merceologica**: con questo flag si potranno definire tante fasce provvigionali di sconto quante sono le categorie merceologiche degli articoli.
+ 
+Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
