@@ -1,6 +1,8 @@
 ---
 title: Crea DDT - Sezione superiore
 sidebar_position: 1
+slug: /purchase/purchase-delivery-note/insert-purchase-delivery-note/insert-purchase-delivery-note-intro
+lastUpdated: true
 ---
 
 
