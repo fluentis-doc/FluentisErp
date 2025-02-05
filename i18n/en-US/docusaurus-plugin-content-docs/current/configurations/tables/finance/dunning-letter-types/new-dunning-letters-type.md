@@ -1,47 +1,43 @@
 ---
-title: Dunning Letters - New Type
+title: Nuovo tipo solleciti
 sidebar_position: 3
 ---
 
+I campi di questa form sono:
 
+**Codice**: codice identificativo del tipo sollecito.
 
-| Function | Meaning |
-| --- | --- |
-| Code | Identification code of dunning letter type |
-| Description  | Description of the dunning letter type |
-| Dunning Letters for Maturity Value Group | In particular the management flag for maturity values group will manage a dunning letter (standard management), on the contrary without flag every maturity value would have its dunning letter that would be separate from the others |
-| Interest Type | The link to the interest rate type for the application to the payment delay is optional, in order to obtain a calculation to the confirmation date of the dunning letter |
+**Descrizione**: descrizione del tipo sollecito.
 
-With the save of dunning letter type it is possible to create different levels with the command ‘New'
+**Tipo interesse**: opzionale, è il collegamento al tipo di tasso di interesse da applicare al ritardo di pagamento, per ottenere un calcolo alla data di emissione del sollecito.
 
+**Sollecito per gruppo partite**: il flag di gestione per gruppo di partite, in particolare, andrà a gestire una lettera di sollecito per un gruppo di partite contemporaneamente (gestione standard), mentre senza flag ogni partita contabile avrebbe il suo sollecito separato dalle altre.
 
+Una volta salvato il tipo di sollecito è possibile crearne i vari livelli con il pulsante ‘nuovo'.
 
-| Function | Meaning |
-| --- | --- |
-| Code  | Identification code of the dunning letter  |
-| Description | Description of the dunning letter type |
-| Priority | Creation priority from 1 to N levels |
-| Late Days | It indicates the late days that have to accrue until the maturity value dunning letter |
-| Days | It refers to the number of late days of the dunning letter and to the fact if those have to be counted from the creation date or from the due date of the previous dunning letter |
-| From Previous Movement | Reference date for levels after the first |
-| From Creation Date  | Reference date that is usually used for first level |
-| Credit | The connection to a customer credit control type is not managed  |
+**Codice**: codice identificativo del sollecito.
 
-For every dunning letter number it will be possible to proceed, if saved, to the insertion of different texts: the first to upload will be the default one, above all when the customer register has no predefined language. 
+**Descrizione**: descrizione del tipo sollecito.
 
-Texts can be devided into 4 sections: object of the letter, header, conclusion and references section (that is active only for dunning letters on maturity values groups). In the section references, in particular, it is possible to insert a text using codes of the mask base: e.g. “Ref. (3) n. (4) on (5), (9) of (8) (10) with due date on (6)”. 
+**Priorità**: priorità di creazione da 1 a N livelli.
 
-RIBBON BAR: the ribbon bar represents the Form menu, that is the area in which it is possible to operate on previous recordings or generate new ones. The possible features list is the following:
+**Descrizione tipo fido**: il collegamento ad un tipo di controllo fido cliente non è gestito.
 
+**Giorni di ritardo**: indicazione dei giorni di ritardo che devono decorrere prima di sollecitare la partita.
 
+**Giorni**: il numero di giorni di scadenza del sollecito e se questi siano da conteggiare dalla data di creazione o dalla data di scadenza del sollecito precedente.
 
-| Function | Meaning |
-| --- | --- |
-| Search | It is a command that is necessary in order to look for a dunning letter type through the fields: code and description |
-| New Type | It is a command to create a new dunning letter type |
-| Edit Type | It is a command that is necessary in order to edit the dunning letter type, where the user is located |
-| View Type | It is a command that is necessary in order to view the dunning letter type, where the user is located |
-| Delete Type | It is a command that is necessary in order to delete the dunning letter type, where the user is located |
+**Da data movimento precedente**: data di riferimento per i livelli successivi al primo.
+
+**Da data creazione**: data di riferimento solitamente utilizzata per il primo livello.
+
+:::danger ATTENZIONE
+I valori dei campi "**giorni di ritardo**" e "**giorni**" , in particolare per i solleciti successivi al primo, vengono sommati e pertanto nel caso del secondo, terzo sollecito ecc.. in genere non è necessario aggiungere un valore nel parametro *giorni di ritardo*, è possibile invece riferirsi all'ulteriore tempo intercorso dalla data del primo sollecito  tramite il parametro *giorni*.
+:::
+
+Per ogni numero di sollecito si potrà procedere, una volta salvato, all'inserimento dei vari testi in lingua: il primo che si andrà a caricare è quello che sarà utilizzato di default quando l'anagrafica cliente non ha una lingua assegnata.
+
+I testi sono divisi in 4 sezioni: l'oggetto della lettera, la testata, la conclusione e la sezione riferimenti (attiva solo per solleciti su gruppi di partite). Nella sezione riferimenti, in particolare, si può inserire un testo utilizzando i codici previsti alla base della maschera: ad es. “Rif. (3) nr. (4) del (5), (9) di (8) (10) con scadenza al (6)”.
 
 
 
