@@ -1,14 +1,14 @@
 ---
-title: Ricerca template
+title: Template Search 
 sidebar_position: 1
 ---
 
-La form si apre tramite il percorso **Utilità > Extra data > Template**. 
+The form opens via the path **Utilities > Extra data > Template**. 
 
 import SearchForm from './../../../../import/sections/search-form.md'
 
 <SearchForm />
 
-Sempre da questa form è possibile creare un nuovo Extradata, cliccando sul pulsante **Nuovo**.
+From this form, it is also possible to create a new Extradata by clicking the **New** button.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+For everything not detailed in this document regarding the common functioning of forms, refer to the following link [Custom Features, Buttons, and Fields](/docs/guide/common).

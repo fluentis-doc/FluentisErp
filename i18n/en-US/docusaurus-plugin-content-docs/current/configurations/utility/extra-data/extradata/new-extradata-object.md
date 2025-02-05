@@ -1,77 +1,77 @@
 ---
-title: Nuovo ExtraData Oggetto
+title: New ExtraData Object 
 sidebar_position: 3
 ---
 
-Gli extradata è che si dividono in due categorie:
+ExtraData is divided into two categories:
 
-- **Semplici**: sono delle proprietà agganciate agli oggetti
+- **Simple**: these are properties attached to objects.
 
-- **Oggetti**: sono dei veri e propri oggetti a sé stanti
+- **Objects**: these are standalone objects.
 
-Ognuno dei due ha una procedura, partiamo analizzando gli extradata oggetto.
+Each of the two has a procedure; let’s start by analyzing the extra data object.
 
 
-### Creazione Extradata
+### Creating ExtraData
 
-Andare in **Home > Utilità > ExtraData > ExtraData** e cliccare sul pulsante **Nuovo** extradata.
+Go to **Home > Utilities > ExtraData > ExtraData** and click on the **New** extra data button.
 
-Nelle immagini sottostanti si vede la prima parte della creazione.
+In the images below, you can see the first part of the creation.
 
-![](/img/it-it/configurations/utility/extradata/new-extradata-object/image01.png) 
+![](/img/it-it/configurations/utility/extradata/new-extradata-object/image01.png) 
 
-1. selezionare come prima cosa il radio button corrispondente a **Oggetto**.
+1. First, select the radio button corresponding to **Object**.
 
-2. inserire il **Codice** che identificherà l'extradata.
+2. Enter the **Code** that will identify the extra data.
 
-3. inserire il **Nome** geo localizzato dell'extradata (deve essere quindi una parola presente nel dizionario altrimenti dovremmo aggiungerla).
+3. Enter the geo-localized **Name** of the extra data (it must be a word present in the dictionary; otherwise, we will need to add it).
 
-4. inserire l'**Oggetto Business** geo localizzato che si vuole dare al nuovo oggetto, corrisponde al nome dell'oggetto. 
+4. Enter the geo-localized **Business Object** that you want to assign to the new object; it corresponds to the name of the object.
 
-5. inserire una **Descrizione** che spesso corrisponde al **Nome**.
+5. Enter a **Description** that often corresponds to the **Name**.
 
-6. se ha una scadenza inserire **Data inizio/fine validità** altrimenti non serve inserirli.
+6. If it has an expiration, enter the **Start/End Validity Date**; otherwise, it is not necessary to include it.
 
-7. se necessario, inserire i **Diritti di modifica e visualizzazione**.
+7. If necessary, enter the **Editing and Viewing Rights**.
 
-Nella griglia **Attivazioni, **si vede l'elenco degli oggetti nei quali l'extradata sarà possibile vederlo e valorizzarlo.
+In the **Activations** grid, you can see the list of objects where the extra data can be viewed and populated.
 
-Per aggiungerne uno Nuovo basta andare a scrivere nell'ultima riga presente nella tabella.
+To add a new one, just start typing in the last row present in the table.
 
-I flag **Obbligatorio** e **Da stampare** identificano se rispetto all'oggetto in cui è visibile l'extradata, è obbligatorio l'inserimento e può essere stampato.  
+The **Mandatory** and **To Print** flags identify whether the entry is mandatory concerning the object where the extra data is visible and if it can be printed.
 
-L'**Ordinamento** serve semplicemente per la visualizzazione, quando aggiungiamo l'extradata; l'ordine con cui poi ci appariranno gli extradata all'interno dell'oggetto è deciso da questo campo.
+The **Ordering** is simply for display; when we add the extra data, the order in which it will appear within the object is determined by this field.
 
-![](/img/it-it/configurations/utility/extradata/new-extradata-object/image02.png) 
+![](/img/it-it/configurations/utility/extradata/new-extradata-object/image02.png) 
 
-8. Aggiungere extradata nella form Fluentis
+8. Add extra data in the Fluentis form.
 
-Per poter aggiungere l'extradata direttamente da uno di questi oggetti, nell'apposita maschera di Fluentis premere tasto dx sulla riga blu (con  ![](/img/neutral/common/filter.png)) e cliccare su **Aggiungi extradata di primo livello**. Questo procedimento va eseguito per ogni extradata che vogliamo aggiungere. Una volta aggiunto uno, potremmo anche **Aggiungere degli extradata figli**.
+To be able to add extra data directly from one of these objects, in the specific Fluentis mask, right-click on the blue row (with ![](/img/neutral/common/filter.png)) and click on **Add first level extra data**. This procedure needs to be performed for each extra data we want to add. Once one is added, we could also **Add child extra data**.
 
-![](/img/it-it/configurations/utility/extradata/new-extradata-object/image04.png) 
+![](/img/it-it/configurations/utility/extradata/new-extradata-object/image04.png) 
 
-Nel menu a tendina come in figura selezionare l'extradata desiderato. È possibile quindi valorizzare l'extradata.
+In the dropdown menu, as shown in the figure, select the desired extra data. You can then valorize the extra data.
 
- ![](/img/it-it/configurations/utility/extradata/new-extradata-object/image05.png) 
+![](/img/it-it/configurations/utility/extradata/new-extradata-object/image05.png) 
 
-9. Infine si può inserire la **Propagazione**.
+9. Finally, you can enter the **Propagation**.
 
-![](/img/it-it/configurations/utility/extradata/new-extradata-object/image06.png) 
+![](/img/it-it/configurations/utility/ex Extradata/new-extradata-object/image06.png) 
 
-Nella propagazione va inserita la proprietà esatta in cui se valorizzato lì l'extradata verrà riportato automaticamente nell'oggetto selezionato in **Attivazioni**. C'è la possibilità di inserire più propagazioni.
+In propagation, enter the exact property that, if valorized, will automatically bring the extra data into the selected object in **Activations**. There is the possibility to enter multiple propagations.
 
-### Esempio
+### Example
 
-Prendiamo l'immagine con la propagazione sopra, ossia se nel conto viene valorizzata la lingua (“Propagazione”), inserendo tale conto nella creazione di una nuova fattura, la lingua verrà importata in modo automatico all'interno della sezione extradata della testata della fattura (“Attivazioni”).
+Taking the image with the propagation above, if the language is valorized in the account (“Propagation”), when inserting this account into the creation of a new invoice, the language will be automatically imported into the extra data section of the invoice header (“Activations”).
 
-![](/img/it-it/configurations/utility/extradata/new-extradata-object/image07.png) 
+![](/img/it-it/configurations/utility/extradata/new-extradata-object/image07.png) 
 
-Nell'immagine sopra si vede come nella sezione extradata si stia impostando il valore di lingua. Salvare il tutto una volta terminate le modifiche.
+In the image above, you can see how the language value is being set in the extra data section. Save everything once the modifications are complete.
 
-Ora creare una nuova fattura e come cliente/fornitore inserire lo stesso dell'immagine vista in precedenza e si nota che in automatico viene importata la lingua.
+Now create a new invoice and as a customer/supplier enter the same one seen in the previous image, and you will notice that the language is automatically imported.
 
-![](/img/it-it/configurations/utility/extradata/new-extradata-object/image08.png) 
+![](/img/it-it/configurations/utility/extradata/new-extradata-object/image08.png) 
 
-Vedi anche [Inserimento Extradata Oggetto in Xtrareport](/docs/configurations/utility/extra-data/extradata/insert-extradata-object-in-xtrareport).
+See also [Insert ExtraData Object in Xtrareport](/docs/configurations/utility/extra-data/extradata/insert-extradata-object-in-xtrareport).
 
-Vedi anche [Nuovo ExtraData Semplice](/docs/configurations/utility/extra-data/extradata/new-extradata-simple).
+See also [New ExtraData Simple](/docs/configurations/utility/extra-data/extradata/new-extradata-simple).
