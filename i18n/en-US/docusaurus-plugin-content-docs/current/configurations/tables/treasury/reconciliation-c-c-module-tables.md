@@ -1,6 +1,6 @@
 ---
-title: Tabelle modulo Riconciliazione C/C
+title: Reconciliation C/C Form Tables 
 sidebar_position: 6
 ---
 
-Non sono presenti tabelle specifiche del modulo in oggetto.
+There are no specific tables for the form in question.

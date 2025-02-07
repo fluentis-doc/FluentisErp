@@ -1,10 +1,10 @@
 ---
-title: Tabelle modulo Pagamenti fornitori
+title: Vendors Payment Form Tables 
 sidebar_position: 5
 ---
 
-:::tip[FAst Start]
-La tabella è interessata dalla procedura di [**Fast Start**](/docs/guide/fast-start)
+:::tip[Fast Start]
+The table is affected by the [**Fast Start**](/docs/guide/fast-start) procedure.
 
-Nel caso in cui si intenda configurare manualmente fare riferimento alla check list della pagina linkata
+In case you intend to configure manually, refer to the checklist on the linked page.
 :::

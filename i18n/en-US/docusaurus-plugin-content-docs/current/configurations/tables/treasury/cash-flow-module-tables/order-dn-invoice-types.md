@@ -1,10 +1,10 @@
 ---
-title: Tipi ordine/DDT/fattura
+title: Order Types/Delivery Notes/Invoices
 sidebar_position: 4
 ---
 
-Per ogni record presente nelle tabelle dei [*Tipi ordine cliente*](/docs/configurations/tables/sales/sales-order-types),  [*Tipi ordine fornitore*](/docs/purchase/purchase-orders/general-overview), *Tipi DDT di vendita* e *Tipi DDT d'acquisto* è possibile specificare con il flag *Cash flow* se sia da considerare nelle simulazioni del modulo o meno.
+For each record present in the tables of [*Sales Order Types*](/docs/configurations/tables/sales/sales-order-types), [*Purchase Order Types*](/docs/purchase/purchase-orders/general-overview), *Sales Delivery Note Types*, and *Purchase Delivery Note Types*, it is possible to specify with the *Cash flow* flag whether it should be considered in the module simulations or not.
 
-:::note Nota
-I tipi fattura di vendita sono tutti considerati nel cash flow ad eccezione di quelle proforma.
+:::note Note
+The sales invoice types are all considered in the cash flow except for proforma invoices.
 :::

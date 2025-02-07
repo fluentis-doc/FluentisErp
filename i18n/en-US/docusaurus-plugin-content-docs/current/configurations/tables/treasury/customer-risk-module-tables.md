@@ -1,34 +1,28 @@
 ---
-title: Tabelle modulo Rischio cliente
+title: Customer Risk Form Tables 
 sidebar_position: 7
 ---
 
-Non sono presenti tabelle specifiche del modulo in oggetto, ma va segnalato che vari tipi documento in acquisto e vendita presentano impostazioni collegate al rischio cliente.
+There are no specific tables for the module in question, but it should be noted that various document types in purchases and sales have settings related to customer risk.
 
-Il fido cliente preleva i dati dai seguenti documenti dell'area vendita:
+The customer credit retrieves data from the following documents in the sales area:
 
-**[Tipo ordine cliente](/docs/configurations/tables/sales/sales-order-types)**: il ‘flag fido' indica che se il documento (stampato e confermato) viene considerato nel calcolo del fido cliente o meno. Il flag ‘Escludi blocco' esclude questo tipo documento dal blocco cliente;
+**[Sales Order Type](/docs/configurations/tables/sales/sales-order-types)**: the ‘credit flag' indicates whether the document (printed and confirmed) is considered in the calculation of the customer credit or not. The ‘Exclude lock' flag excludes this document type from the customer lock;
 
-**Tipi DDT**: il ‘flag fido' indica che se il documento (stampato, non valorizzato in fattura) viene considerato nel calcolo del fido cliente o meno. Il flag ‘Escludi blocco' esclude questo tipo documento dal blocco cliente;
+**Delivery note types**: the ‘credit flag' indicates whether the document (printed and not valued in the invoice) is considered in the calculation of the customer credit or not. The ‘Exclude lock' excludes this document type from the customer lock;
 
-**[Tipi fattura](/docs/configurations/tables/purchase/purchase-invoices-type)**: il ‘flag fido' indica che se il documento (stampato, non contabilizzato) viene considerato nel calcolo del fido cliente o meno. Il flag ‘Escludi blocco' esclude questo tipo documento dal blocco cliente.
+**[Invoice Types](/docs/configurations/tables/purchase/purchase-invoices-type)**: the ‘credit flag' indicates whether the document (printed and not accounted for) is considered in the calculation of the customer credit or not. The ‘Exclude lock' flag excludes this document type from the customer lock.
 
-Infine, ogni anagrafica cliente presenta due impostazioni collegate al modulo in oggetto:
+Finally, each customer contact has two settings related to the module in question:
 
-**Il tipo controllo fido:** 
+**Credit-control Type:**
 
-**Blocco doc. e monitor fido**: il documento dell'area vendita che va a sforare il fido sarà bloccato e quindi ci sarà la necessità di autorizzarlo per procedere alle fasi successivo del flusso documentale;
+**Document lock and reliance monitor**: the document in the sales area that exceeds the credit will be blocked, and therefore there will be a need to authorize it to proceed to the subsequent phases of the document flow;
 
-**Monitor fido**: sarà semplicemente effettuato un controllo del fido con eventuale messaggio all'utente dell'avvenuto sforamento;
+**Reliance monitor**: a check of the credit will simply be performed with a potential message to the user indicating that the limit has been exceeded;
 
-**Blocco di gruppo**: come per il primo, ma il calcolo è cumulativo per tutte le società del database facenti capo alla stessa anagrafica cliente;
+**Group lock**: similar to the first, but the calculation is cumulative for all companies in the database associated with the same customer contact;
 
-**Monitor di gruppo**: come per il secondo, ma il calcolo è cumulativo per tutte le società del database facenti capo alla stessa anagrafica cliente.
+**Group monitor**: similar to the second, but the calculation is cumulative for all companies in the database associated with the same customer contact.
 
-La seconda impostazione è il check ‘controllo esposizione', che rende visibile il cliente nella maschera dell'esposizione clienti.
-
-
-
-
-
-
+The second setting is the ‘exposure control’ check, which makes the customer visible in the customer exposure form.

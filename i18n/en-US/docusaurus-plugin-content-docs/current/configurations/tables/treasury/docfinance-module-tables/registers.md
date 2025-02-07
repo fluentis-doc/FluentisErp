@@ -1,20 +1,14 @@
 ---
-title: Anagrafici
+title: Nomenclature Data
 sidebar_position: 1
 ---
 
-La tabella ‘Anagrafici' si compone di 4 sezioni:
+The 'Nomenclature Data' table consists of 4 sections:
 
-**[Piano dei conti](/docs/erp-home/registers/accounting/analytic-chart-of-accounts)**: in questa sezione è necessario indicare, per i sottoconti delle anagrafiche banca, i campi ‘Banca' e ‘RBN'. Il primo indica l'istituto di credito di riferimento, mentre il secondo il tipo di conto (conto ordinario, sbf, …) associato al sottoconto stesso: questi due campi sono visibili e modificabili anche all'interno dell'anagrafica banca. Per quanto riguarda i sottoconti di tipo cliente/fornitore, inoltre, è possibile gestire da questa maschera anche il campo della ‘Derogabilità', campo che si può gestire anche dalla maschera principale dell'anagrafica contatti, per la singola riga di sottoconto;
+**[Chart of Accounts](/docs/erp-home/registers/accounting/analytic-chart-of-accounts)**: in this section, it is necessary to indicate, for the bank detail accounts, the fields 'Bank' and 'RBN'. The first indicates the relevant credit institution, while the second indicates the type of account (current account, subject to collection, ...) associated with the detail account itself: these two fields are visible and editable also within the bank register. For customer/supplier type detail accounts, it is also possible to manage the 'Deregulation' field from this mask, which can also be managed from the main mask of the register printing for each single detail account line;
 
-**Flussi scadenziario**: in questa sezione va attribuito ad ogni flusso di cash flow (riferirsi alla documentazione di base del modulo omonimo) il relativo codice per DocFinance. È consentita l'attribuzione dello stesso codice su più righe flusso;
+**Due Register Flows**: in this section, a code for DocFinance must be assigned to each cash flow stream (refer to the basic documentation of the corresponding module). The same code can be assigned to multiple flow lines;
 
-**[Tipi pagamento](/docs/configurations/tables/treasury/bills-portfolio-module-tables/payment-types)**: in questa sezione va indicato, per ogni tipo di pagamento, il relativo codice di corrispondenza in DocFinance (è consentita l'attribuzione dello stesso codice su più righe). È possibile poi indicare un codice di derogabilità del tipo di pagamento, che sarà utilizzato nell'esportazione dati per DocFinance;
+**[Payment Types](/docs/configurations/tables/treasury/bills-portfolio-module-tables/payment-types)**: in this section, the relevant corresponding code in DocFinance must be indicated for each payment type (the same code can be assigned to multiple lines). It is also possible to indicate a deregulation code for the payment type, which will be used in the data export for DocFinance;
 
-**Società**: per ogni società è obbligatorio indicare il codice corrispondente per DocFinance. Le società che non hanno codice saranno escluse dalle procedure di esportazione/importazione dati per/da DocFinance.
-
-
-
-
-
-
+**Company**: for each company, it is mandatory to specify the corresponding code for DocFinance. Companies without a code will be excluded from the data export/import procedures to/from DocFinance.

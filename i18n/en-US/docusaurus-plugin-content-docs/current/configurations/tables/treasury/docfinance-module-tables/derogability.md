@@ -1,15 +1,8 @@
 ---
-title: Derogabilità
+title: Deregulation
 sidebar_position: 2
 ---
 
-Consente di definire i codici di derogabilità dei flussi finanziari, cioè sostanzialmente il grado di priorità/importanza dei debiti, così come gestiti in DocFinance (il codice del gestionale deve essere lo stesso di DocFinance).
+Allows defining the codes for deregulation of financial flows, meaning essentially the degree of priority/importance of debts, as managed in DocFinance (the code in the management software must be the same as in DocFinance).
 
-Va inteso pertanto come un dato necessario e specifico del software DocFinance.
-
-
-
-
-
-
-
+It should therefore be understood as a necessary and specific data of the DocFinance software.

@@ -1,37 +1,31 @@
 ---
-title: Tipi anticipo
+title: Advance Types 
 sidebar_position: 4
 ---
 
-:::tip[FAst Start]
-La tabella è interessata dalla procedura di [**Fast Start**](/docs/guide/fast-start)
+:::tip[Fast Start]
+The table is affected by the [**Fast Start**](/docs/guide/fast-start) procedure.
 
-Nel caso in cui si intenda configurare manualmente fare riferimento alla check list della pagina linkata
+If you intend to configure manually, please refer to the checklist on the linked page.
 :::
 
-In questa tabella sono definite le possibili tipologie di [**distinta di anticipo**](/docs/treasury/advance/advances-collections) fatture ed i relativi parametri.
+In this table, the possible types of [**advance list**](/docs/treasury/advance/advances-collections) invoices and the related parameters are defined.
 
 
-**Codice / Descrizione:** Liberamente assegnabili dall'utente per qualificare la tipologia.
+**Code / Description:** Freely assignable by the user to qualify the type.
 
-**Tipo calcolo (codice / descrizione):** le opzioni possibili sono Imponibile / Tot: Documento. Indica se la percentuale anticipata dalla banca debba essere calcolata con riferimento al totale fattura oppure al solo imponibile.
+**Calculation Type:** the possible options are Taxable / Total: Document. It indicates whether the percentage advanced by the bank should be calculated with reference to the total invoice or only the taxable amount.
 
-**Percentuale fatture anticipata:** inserire qui il valore della percentuale della fattura che sarà anticipata dalla banca.
+**Advance Invoice Percent:** enter the value of the percentage of the invoice that will be advanced by the bank here.
 
-**Tipo Acquisizione:** le possibili operazioni sono Scadenze / Fatture. Questa opzione controlla soltanto il modo in cui sono visualizzati i dati nella maschera di ricerca per la creazione della nuova distinta, ovvero se sarà selezionabile l'intera fattura oppure le singole scadenze della fattura. In ogni caso dal punto di vista della base dati sono comunque gestite le scadenze (tutte) anche nel caso della modalità Fatture.
+**Acquisition Type:** the possible operations are Due Dates / Invoices. This option only controls how the data is displayed in the search mask for creating a new note, whether the entire invoice or individual due dates of the invoice will be selectable. In any case, from the database point of view, all due dates are managed even in the Invoices mode.
 
-**Numerazione:** è necessario impostare una numerazione dalla relativa tabella dei numeratori per questo tipo di documento.
+**Numeration:** it is necessary to set a numeration from the relevant numeration table for this type of document.
 
-**Banca C/C:** (conto / sottoconto descrizione): inserire qui il sottoconto che sarà utilizzato nelle registrazioni contabili relativo al conto corrente bancario.
+**Bank c/c:** (account / detail account description): enter here the detail account that will be used in the ledger records related to the bank current account.
 
-**Conto bancario anticipi:** inserire il conto d'appoggio utilizzato per contabilizzare l'anticipo bancario.
+**Advance Bank Account:** enter the supporting account used to account for the bank advance.
 
-**Conto interessi passivi:** inserire il conto da utilizzare per la contabilizzazione interessi
+**Passive Interest Account:** enter the account to be used for accounting interest.
 
-**Conto commissioni:** inserire il conto da utilizzare per la contabilizzazione commissioni bancarie.
-
-
-
-
-
-
+**Charges Bank Account:** enter the account to be used for accounting bank commissions.

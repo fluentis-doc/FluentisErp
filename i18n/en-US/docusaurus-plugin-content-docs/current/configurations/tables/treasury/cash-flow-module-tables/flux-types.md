@@ -1,48 +1,48 @@
 ---
-title: Tipi flusso
+title: Flow Types
 sidebar_position: 2
 ---
 
-:::tip[FAst Start]
-La tabella è interessata dalla procedura di [**Fast Start**](/docs/guide/fast-start)
+:::tip[Fast Start]
+The table is affected by the [**Fast Start**](/docs/guide/fast-start) procedure.
 
-Nel caso in cui si intenda configurare manualmente fare riferimento alla check list della pagina linkata
+In case you intend to configure manually, refer to the checklist on the linked page.
 :::
 
-La tabella, propedeutica all'utilizzo del modulo, prevede la codifica delle tipologie di flusso di cash flow che l'azienda intende abilitare per le simulazioni. 
+The table, which is a prerequisite for using the module, provides for the coding of the types of cash flow that the company intends to enable for simulations.
 
-Si consiglia di codificate comunque tutte le tipologie previste: la procedura di *generazione automatica cashflow* consente di definire, volta per volta, quali di queste considerare e quali no.
+It is recommended to encode all the types provided: the *cash flow automatic generation* procedure allows you to define, from time to time, which of these to consider and which not.
 
-La codifica del tipo flusso è libera nel codice e descrizione, a piacere, e va poi ricondotta tramite i flag corrispondenti, ai dati che possono essere gestiti.
+The coding of the flow type is free in code and description, as desired, and must then be related through the corresponding flags to the data that can be managed.
 
 
 
-Sono previste le seguenti origini dati:
+The following data sources are provided:
 
-**Codice**: codice del tipi flusso;
+**Code**: code of the flow types;
 
-**Descrizione**: descrizione del tipi flusso;
+**Description**: description of the flow types;
 
-**Partite**: l'origine dati sono le partite aperte di contabilità generale;
+**Mat. values**: the data source is the open maturity values from general ledger;
 
-**Saldo contabile**: da questo tipo flusso si ottengono le disponibilità finanziarie iniziali, rispetto ai *tipi conti finanziari* codificati;
+**Ledger balance**: from this flow type, the initial financial availabilities are obtained, with respect to the *financial account types* coded;
 
-**Ordini clienti/ordini fornitori**: ordini clienti, delle tipologie con flag *cash flow*, stampati e confermati, non evasi;
+**Sales orders/purchase orders**: sales orders, of the types with the *cash flow* flag, printed and confirmed, not yet fulfilled;
 
-**Fatture di acquisto/vendita**: fatture stampate/controllate ma non ancora contabilizzate (non di tipo pro-forma);
+**Purchase/Sale invoices**: invoices printed/checked but not yet accounted (not pro-forma type);
 
-**Extracontabile**: scadenze manuali extracontabili definite nel modulo cash flow stesso tramite la form *Scadenze extracontabili*;
+**Off-balance**: manual off-balance deadlines defined in the cash flow module itself through the *Off-balance Due Dates* form;
 
-**Percipienti**: compensi professionisti non ancora contabilizzati (se contabilizzati rientrano nelle partite aperte);
+**Professional Men**: professional fees not yet accounted (if accounted, they fall under open mat. values);
 
-**DDT di acquisto/vendita**: DDT delle tipologie con flag *cash flow*, stampati e confermati, non valorizzate (se valorizzate rientrano nelle fatture);
+**Purchase/Sale delivery note**: delivery note of the types with the *cash flow* flag, printed and confirmed, not valued (if valued, they fall under invoices);
 
-**Ordini e rientri di conto lavoro**: ordini di conto lavoro da evadere e rientri di conto lavoro non ancora fatturati;
+**Subcontractor orders and returns**: subcontractor orders to be fulfilled and subcontractor returns not yet invoiced;
 
-**RDA**: richieste di acquisto;
+**PD**: purchase requests;
 
-**Ordine pianificato**: ordini di produzione con fasi esterne pianificati o ordini di produzione che prevedono una richiesta d'acquisto.
+**Planned order**: production orders with planned external phases or production orders that foresee a purchase request.
 
-**Portafoglio effetti**: Effetti emessi (e presentati, a seconda dell'impostazione del flag *Usa in scad. nel castelletto* presente nella maschera di *Generazione automatica cashflow*)
+**Bills portfolio**: Bills issued (and presented, depending on the setting of the *Use on time in the headframe* flag present in the *cash flow automatic generation* mask)
 
-**Anticipi**: Distinte di anticipo fattura create. L'elaborazione del cash flow, se per questo tipo è impostato il flag 'Usa in scad. nel castelletto' (nella maschera *Generazione automatica Cashflow*) va a rilevare gli importi delle distinte contabilizzate per l'importo anticipato sul conto bancario, e nei flussi alle date scadenza. Quando el fatture vengono incassate (elaborando un nuovo cashflow) i flussi in scadenza vengono eliminati e l'importo del conto bancario viene aggiornato con la quota residua non già anticipata al netto di eventuali commissioni e interessi.
+**Advances**: Invoice advance statements created. The processing of the cash flow, if this type has the 'Use on time in the headframe' flag set (in the *Cash Flow Automatic Generation* mask), will record the amounts of the statements accounted for the amount advanced on the bank account, and in the flows on the due dates. When invoices are collected (by processing a new cash flow), the due flows are deleted, and the bank account amount is updated with the remaining amount not yet advanced minus any commissions and interest.

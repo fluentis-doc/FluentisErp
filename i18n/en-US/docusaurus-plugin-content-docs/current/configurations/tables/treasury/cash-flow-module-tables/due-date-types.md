@@ -1,14 +1,14 @@
 ---
-title: Tipi scadenza
+title: Due Date Types
 sidebar_position: 3
 ---
 
-:::tip[FAst Start]
-La tabella è interessata dalla procedura di [**Fast Start**](/docs/guide/fast-start)
+:::tip[Fast Start]
+The table is affected by the [**Fast Start**](/docs/guide/fast-start) procedure.
 
-Nel caso in cui si intenda configurare manualmente fare riferimento alla check list della pagina linkata
+In case you wish to configure manually, refer to the checklist on the linked page.
 :::
 
-In questa tabella si definiscono le tipologie di scadenze extacontabili che saranno gestite manualmente all'interno del cash flow. Ad ogni tipologia può essere associato un sottoconto bancario di canalizzazione del flusso.
+In this table, the types of off-balance due dates that will be managed manually within the cash flow are defined. Each type can be associated with a bank detail account for directing the flow.
 
-Le tipologie qui codificate rappresentano, più che altro, un raggruppamento o un'etichetta per l'inserimento effettivo del dettaglio che viene fatto attraverso la form [**Scadenze Extracontabili**](/docs/treasury/cash-flow/off-balance-due-dates).
+The types coded here represent, more than anything else, a grouping or a label for the actual insertion of the details that is done through the form [**Off-Balance Due Dates**](/docs/treasury/cash-flow/off-balance-due-dates).
