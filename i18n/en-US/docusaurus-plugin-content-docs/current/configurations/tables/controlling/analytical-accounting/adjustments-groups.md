@@ -1,30 +1,30 @@
 ---
-title: Gruppi di conguaglio
+title: Groups of Adjustment
 sidebar_position: 6
 ---
 
-:::note Percorso
-**Tabelle > Controlling > Contabilità analitica > Gruppi di conguaglio**
+:::note Path 
+**Tables > Controlling > Analytic Accounting > Groups of Adjustment**
 
-Nota:
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Note:
+For everything not detailed in this document regarding the common operation of forms, please refer to the following link [Custom features, buttons, and common fields](/docs/guide/common).
 
 :::
 
 ---
 
-:::tip Nota
-Questa tabella è ad uso esclusivo delle società che hanno impostato il *Controlling*
+:::tip Note 
+This table is for the exclusive use of companies that have set up *Controlling*.
 :::
 
-All'interno della presente tabella è possibile codificare dei raggruppamenti di conti utili per la gestione della reportistica specifica per il controlling.
-Alcuni conti contabili non vengono utilizzati in prima battuta, direttamente, dal controlling ma soltanto indirettamente ed a posteriori: I gruppi di conguaglio servono quindi per identificare dei gruppi logici a cui assegnare i singoli costi per i conguagli che faremo infra-annualmente oppure solo a fine esercizio, in modo da raggrupparli in modo opportuno nella maschera dei ***Valori di controllo*** e verificarne la quadratura con la contabilità a fine periodo.
+Inside this table, it is possible to code groupings of accounts useful for managing the specific reporting for controlling. 
+Some accounts are not used directly by controlling at first, but only indirectly and subsequently: The groups of adjustment serve to identify logical groups to which individual costs for the adjustments made twice a year or only at the end of the fiscal year can be assigned, in order to group them appropriately in the ***Control Values*** mask and verify their balance with accounting at the end of the period.
 
-I campi disponibili sono:
-- ***CODICE***
-- ***DESCRIZIONE***
-- ***TIPO SALDO***: quest'ultimo è di fondamentale importanza per i sottoconti delle rimanenze iniziali/finali, per i quali saranno da definire obbligatoriamente due categorie specifiche.
+The available fields are:
+- ***CODE***
+- ***DESCRIPTION***
+- ***BALANCE TYPE***: the latter is crucial for the detail accounts of initial/final inventories, for which two specific categories must be strictly defined.
 
-:::tip Nota
-In particolare, la procedura di ***Contabilizzazione rimanenze*** per il Controlling valorizza nelle registrazioni extracontabili di area le rimanenze iniziali e finali di ogni singolo periodo (mese) che si sta elaborando nell'anno. Quando poi si richiederà, nel modulo del Reporting, gli importi delle rimanenze iniziali e finali del primo semestre dell'anno YYYY, ***FluentisERP*** **deve** sapere per quali conti leggere solo il dato del periodo iniziale di Gennaio e per quali leggere solo il periodo finale di Giugno, altrimenti si avrebbero le somme di 6 mesi di rimanenze iniziali e 6 di rimanenze finali, inficiando completamente l'elaborazione!
+:::tip Note 
+In particular, the ***Inventory Accounting*** procedure for Controlling values the initial and final inventories of each single period (month) being processed in the year in the off-balance records area. When requesting, in the Reporting module, the amounts of the initial and final inventories for the first half of the year YYYY, ***FluentisERP*** **must** know which accounts to read only the data from the initial period of January and which to read only from the final period of June; otherwise, there would be sums of 6 months of initial inventories and 6 of final inventories, completely affecting the processing!
 :::

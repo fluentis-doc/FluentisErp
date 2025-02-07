@@ -1,46 +1,46 @@
 ---
-title: Unità di misura dei centri aziendali per il controlling
+title: Measure Units of Corporate Centers for Controlling
 sidebar_position: 8
 ---
 
-:::note Percorso
-**Tabelle > Controlling > Contabilità analitica > Unità di misura dei centri aziendali per il controlling**
+:::note Path
+**Tables > Controlling > Analytic Accounting > Measure Units of Corporate Centers for Controlling**
 
-Nota:
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Note:
+For everything not detailed in this document regarding the common functioning of forms, refer to the following link [Custom features, buttons, and fields](/docs/guide/common).
 
 :::
 
 ---
 
-In questa tabella possiamo specificare, ad esempio, che nell’ area di ANALISI *CONSUNTIVO*, il macchinario *X*, legge i dati di produzione, per costi diretti e costi di commessa, sulla base dell’ unità di misura specificata, per ogni centro aziendale, relativamente a: 
+In this table, we can specify, for example, that in the *FINAL* ANALYSIS area, machine *X* reads production data for direct costs and job order costs based on the specified unit of measure for each corporate center, regarding:
 
--	IL TEMPO DI RI-ATTREZZAGGIO
--	IL TEMPO UOMO 
--	IL TEMPO MACCHINA 
+-	RE-RIG TIME 
+-	MANPOWER TIMING 
+-	MACHINE TIME 
 
 
-Le tre misure non sono tutte obbligatorie ma, a seconda del centro, si valorizzerà una, due o tre dimensioni.
+The three measures are not all mandatory, but depending on the center, one, two, or three dimensions will be valued.
 
-E' presente anche un' indicazione di validità della regola. 
+There is also an indication of the validity of the rule.
 
-Per un’ area di analisi diversa, ad esempio *BUDGET*, è possibile ragionare con altre regole ed altre date di validità.
+For a different analysis area, such as *BUDGET*, it is possible to work with other rules and different validity dates.
 
-:::note Campi tabella
+:::note Table Fields
 
-**AREA / DESCRIZIONE:** Necessari per  definire a quale area di analisi le varie logiche che si stanno codificando si riferiranno
+**AREA / DESCRIPTION:** Necessary to define which analysis area the various logics being coded will refer to.
 
-**CENTRO AZIENDALE / DESCRIZIONE:** Necessari per definire a quale centro aziendale le varie logiche che si stanno codificando si riferiranno
+**CORPORATE CENTER / DESCRIPTION:** Necessary to define which corporate center the various logics being coded will refer to.
 
-**TEMPO DI RI-ATTREZZAGGIO:** Combo box che permette di selezionare l'unità di misura da utilizzare. Il campo è collegato alla Tabella generale Unità di misura
+**RE-RIG TIME:** Combo box that allows you to select the unit of measure to use. The field is linked to the General Unit of Measure Table.
 
-**TEMPO UOMO:** Combo box che permette di selezionare l'unità di misura da utilizzare. Il campo è collegato alla Tabella generale Unità di misura
+**MANPOWER TIMING:** Combo box that allows you to select the unit of measure to use. The field is linked to the General Unit of Measure Table.
 
-**TEMPO MACCHINA:** Combo box che permette di selezionare l'unità di misura da utilizzare. Il campo è collegato alla Tabella generale Unità di misura
+**MACHINE TIME:** Combo box that allows you to select the unit of measure to use. The field is linked to the General Unit of Measure Table.
 
-**DA DATA / A DATA:** range di date di validità della regola che si sta impostando
+**FROM DATE / TO DATE:** range of validity dates for the rule you are setting.
 
-**FLAG Usa Riattrezzaggio / Tempo Uomo / Tempo macchina in calcolo produttività:** Agiscono come degli "interruttori" per abilitare o disabilitare la logica impostata nella riga corrispondente ai fini del calcolo di produttività del centro.
+**FLAG Use Retooling / Manpower Timing / Machine Time in Productivity Calculation:** Act as "switches" to enable or disable the logic set in the corresponding line for the purpose of calculating the productivity of the center.
 
 :::
 

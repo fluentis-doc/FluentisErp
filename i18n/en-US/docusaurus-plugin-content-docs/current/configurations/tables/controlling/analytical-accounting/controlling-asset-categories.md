@@ -1,63 +1,63 @@
 ---
-title: Categorie cespiti per il controllo
+title: Fixed Asset Category for Controlling
 sidebar_position: 2
 ---
 
-:::note Percorso
-**Tabelle > Controlling > Contabilità analitica > Categorie cespiti per il controllo**
+:::note Path
+**Tables > Controlling > Analytic Accounting > Fixed Asset Category for Controlling**
 
-Nota:
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Note:
+For anything not detailed in this document regarding the common functionality of forms, please refer to the following link [Custom features, Buttons, and Common Fields](/docs/guide/common).
 
 :::
 
 ---
 
-:::tip Nota
-Questa tabella è dedicata alle società che hanno attivato la gestione del *Controlling*, ma non è obbligatoria nel caso in cui si vogliano applicare logiche contabili di valorizzazione degli ammortamenti nel controllo di gestione
+:::tip Note
+This table is dedicated to companies that have activated the *Controlling* management, but it is not mandatory if one wishes to apply accounting logic for the valuation of depreciation in management control.
 :::
 
-In questa tabella andiamo ad identificare le varie tipoligie di calcolo che vogliamo utilizzare nelle elaborazioni degli ammortamenti tecnici per il controlling: le logiche del controllo di gestione, relativamente ai cespiti, si discostano da quelle contabili al fine di utilizzare delle logiche legate, ad esempio, alle quantità prodotte da un determinato macchinario, piuttosto che ad un valore di riacquisto. Facendo questo si evitano le distorsioni legate, ad esempio, ai criteri di ammortamento contabili che sono fortemente influenzati dalle logiche fiscali. 
+In this table, we will identify the various types of calculations we want to use in the processing of technical depreciation for controlling: the management control logic, relating to fixed assets, diverges from accounting logic in order to utilize principles linked, for example, to the quantities produced by a certain machine, rather than to a buy back value. By doing this, distortions related, for example, to accounting depreciation criteria, which are heavily influenced by tax logic, are avoided.
 
-Campi tabella
+Table Fields
 
-- ***CODICE*** della categoria
+- ***CODE*** of agent category 
 
-- ***DESCRIZIONE*** della categoria
+- ***DESCRIPTION*** of agent category 
 
-- ***SOTTOCONTO DI COSTO*** e ***SOTTOCONTO DEL FONDO*** da utilizzare: potrebbero essere gli stessi sottoconti associati alle categorie cespiti contabili, al fine di operare a fine anno i conguagli tra le due logiche di calcolo, piuttosto che sottoconti specifici del controlling che non sono utilizzati in contabilità.
+- ***COST DETAIL ACCOUNT*** and ***FUND DETAIL ACCOUNT*** to use: these could be the same detail accounts associated with accounting fixed asset categories, in order to operate end-of-year reconciliations between the two calculation logics, rather than specific controlling detail accounts that are not used in accounting.
 
-:::tip nota
-Nel caso in cui si vogliano utilizzare nel controlling, in determinati casi, degli specifici sottoconti separati da quelli di contabilità generale, si consiglia di definire un *Tipo conto* specifico con il flag *Controlling* impostato, in quanto questi sottoconti non potranno essere utilizzati neanche erroneamente nelle registrazioni di contabilità generale
+:::tip note
+In case specific detail accounts separate from those of general ledger are to be used in controlling, it is advisable to define a specific *Account Type* with the *Controlling* flag set, as these detail accounts cannot be used even mistakenly in general ledger records.
 :::
 
 
-- ***BASE DI CALCOLO*** possiamo scegliere tra
-    - *Valore patrimoniale*, cioè lo stesso di contabilità
-    - *Valore oggettivo*, dato extracontabile
-    - *Valore di riacquisto*, campo specifico per il controlling
+- ***CALCULATION BASE*** we can choose between:
+    - *Asset value*, which is the same as accounting
+    - *Objective value*, an off-balance sheet value
+    - *Buy back value*, a specific field for controlling
 
-- ***TIPO DI CALCOLO*** può essere di 5 tipologie differenti: 
-    - *Percentuale*: secondo la percentuale per il controlling impostata nel singolo cespite
-    - *Percentuale perpetua*: come la precedente ma senza verifiche sul residuo da ammortizzare
-    - *Quantità*: per i cespiti che hanno una vita utile legata ad una quantità teorica prodotta (es. uno stampo che può fare tot battute)
-    - *Quantità perpetua*: come la precedente, ma senza verificare se la quantità totale teorica è stata raggiunta
-    - *Totale nell’anno*: per ammortizzare il cespite totalmente nell’anno di acquisto.
+- ***CALCULATION TYPE*** can be one of 5 different types:
+    - *Percentage*: according to the percentage for controlling set for the individual fixed asset
+    - *Perpetual percentage*: like the previous one but without checks on the balance to be depreciated
+    - *Quantity*: for fixed assets that have a useful life tied to a theoretical produced quantity (e.g., a mold that can produce a certain number of units)
+    - *Perpetual quantity*: like the previous one, but without checking if the total theoretical quantity has been reached
+    - *Completely in the year*: to fully depreciate the fixed asset in the year of purchase.
 
-- ***PERCENTUALE*** possiamo impostare la percentuale di questa categoria, che sarà riportato sul singolo cespite, oppure lasciare in bianco il campo per inserirla di volta in volta all’interno del cespite
+- ***PERCENTAGE*** we can set the percentage of this category, which will be reported on the individual fixed asset, or leave the field blank to enter it each time within the fixed asset
 
-- ***USA ATTUALIZZAZIONE PERCENTUALE*** Il flag, riportato anche nella corrispondente tab *Ammortamento per controlling* presente nella scheda cespite, se attivato, fa si che il valore del cespite venga incrementato di anno in anno in base al valore impostato nel campo *Fattore di attualizzazione* nei ** [*Parametri di contabilità* ](/docs/configurations/parameters/finance/accounting-parameters) **.
+- ***USE ACTUALIZATION PERCENTAGE*** The flag, also reflected in the corresponding tab *Depreciation for Controlling* present in the fixed asset sheet, if activated, causes the fixed asset value to be increased year by year based on the value set in the *Actualization Percentage* field in the ** [*Accounting Parameters*](/docs/configurations/parameters/finance/accounting-parameters) **.
 
-- ***RICREARE I VALORI DI CONTROLLO*** serve tipicamente nel caso in cui non si sia certi dei criteri extracontabili da applicare al calcolo degli ammmortamenti tecnici. Dato che l'elaborazione degli ammortamenti partirà da un anno YYYY, ***FluentisERP*** dovrà calcolare innanzi tutto i residui a fine anno YYYY-1. Nel caso in cui si cambino percentuali o logiche, quindi, può essere necessario resettare questi dati di partenza per ripartire da capo nelle elaborazioni.
+- ***RECREATE CONTROLLING VALUES*** is typically needed if there is uncertainty about the off-balance sheet criteria to apply to the calculation of technical depreciation. Since the processing of depreciation will start from year YYYY, ***FluentisERP*** will first have to calculate the leftovers as of the end of year YYYY-1. If percentages or logics are changed, it may then be necessary to reset this starting data to restart the processing from scratch.
 
-:::danger ATTENZIONE
-Attenzione alle modifiche apportate a queste categorie: se ad esempio impostiamo un flag e salviamo la riga per confermare, ***FluentisERP*** ci chiederà se vogliamo aggiornare i cespiti di questa categoria. Dobbiamo fare attenzione che se confermiamo l’operazione e siamo in una categoria con calcolo percentuale ma *senza la percentuale impostata*, il sistema andrà a resettare anche le percentuali nei cespiti
+:::danger ATTENTION
+Be cautious with the changes made to these categories: for example, if we set a flag and save the row to confirm, ***FluentisERP*** will ask if we want to update the fixed assets of this category. We must be careful that if we confirm the operation and we are in a category with percentage calculation but *without the percentage set*, the system will also reset the percentages in the fixed assets.
 :::
 
 ---
 
-:::tip Nota
+:::tip Note
 
-Le categorie inserite in questa tabella, con i relativi settaggi, saranno poi richiamate all'interno delle [**schede cespite**](/docs/finance-area/fixed-assets/fixed-assets-management) nella tab *Ammortamento per controlling*, per associare il singolo cespite alla categoria.
+The categories entered in this table, with their respective settings, will then be called within the [**fixed asset sheets**](/docs/finance-area/fixed-assets/fixed-assets-management) in the *Depreciation for Controlling* tab, to associate each individual fixed asset with the category.
 
 :::

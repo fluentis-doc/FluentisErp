@@ -1,51 +1,50 @@
 ---
-title: Dimensione
+title: Dimension .
 sidebar_position: 5
 ---
 
-:::note Percorso
-**Tabelle > Controlling > Contabilità analitica > Dimensione**
+:::note Path 
+**Tables > Controlling > Analytic Accounting > Dimension**
 
-Nota:
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Note:
+For anything not detailed in this document regarding the common functioning of forms, refer to the following link [Custom features, buttons, and fields](/docs/guide/common).
 
 :::
 
 ---
 
-:::tip Nota
-La tabella è d'interesse solo nelle società con il flag *Controlling* attivo.
+:::tip Note 
+The table is of interest only in companies with the *Controlling* flag active.
 :::
 
 
-Il concetto di Dimensione è spiegabile come un criterio di analisi e coerente suddivisione di COSTI e RICAVI all’ interno dell’ azienda.
+The concept of Dimension can be explained as a criterion for analysis and coherent subdivision of COSTS and REVENUES within the company.
 
-E' possibile creare e movimentare molteplici dimensioni di analisi contemporaneamente.
+It is possible to create and manage multiple analysis dimensions simultaneously.
 
-![Immagine](/img/it-it/configurations/tables/controlling/analytical-accounting/dimension.png)
+![Image](/img/it-it/configurations/tables/controlling/analytical-accounting/dimension.png)
 
-**ESEMPIO:** Tipicamente alla contabilità analitica viene associata la dimensione *INDUSTRIALE*, dove l’ azienda viene suddivisa nelle varie entità o funzioni aziendali, ovvero il CENTRO AZIENDALE AMMINISTRATIVO, IL CENTRO DIREZIONALE, IL CENTRO DEL COMMERCIALE e poi i CENTRI PRODUTTIVI. 
+**EXAMPLE:** Typically, the analytic accounting is associated with the dimension *COST*, where the company is divided into various entities or business functions, namely the FINANCE CORPORATE CENTER, the MANAGEMENT CENTER, the COMMERCIAL CENTER, and then the PRODUCTION CENTERS.
 
-Relativamente a questa dimensione tutti i costi e ricavi aziendali vengono assegnati per arrivare ad un' analisi di FULL COSTING. 
+For this dimension, all company costs and revenues are assigned to achieve a FULL COSTING analysis.
 
-Parallelamente abbiamo le *COMMESSE*, ovvero le aziende che lavorano su COMMESSA/PROGETTO; le commesse sono dimensioni parallele e quindi saranno collegati tutti i ricavi DIRETTI di commessa e saranno trasferiti dalla dimensione industriale i movimenti relativi ai centri ausiliari e generici (direzione, amministrazione ecc.). 
+In parallel, we have the *JOB ORDERS*, meaning companies that work on JOB ORDER/ASSIGNMENT; the job orders are parallel dimensions, and therefore all DIRECT revenues from the job order will be linked, and movements related to auxiliary and generic centers (management, finance, etc.) will be transferred from the cost dimension.
 
-Abbiamo poi la possibilità di definire dimensioni **specifiche** dove l’ azienda vuole identificare certi valori, separandoli dalle logiche normali, perché vuole tenere nota di alcuni tipi di costi. 
+We also have the possibility to define **details** dimensions where the company wants to identify certain values, separating them from normal logic, because it wants to keep track of certain types of costs.
 
-**ESEMPIO:** l’ azienda vuole tenere traccia delle varie FIERE a cui partecipa, che rappresentano un investimento importante e definisce una dimensione *FIERE* assegnando il centro FIERA MILANO (esempio) e attribuendo non solo il costo della  fiera alla dimensione industriale ma anche alla dimensione FIERA poiché vuole suddividere ed analizzare **parallelamente** un dato di quell’ entità specifica. Non imposta in questo caso il flag di quadratura obbligatoria perché vuole solo un ulteriore elemento di analisi.
+**EXAMPLE:** The company wants to keep track of the various FAIRS it participates in, which represent a significant investment. It defines a dimension *FAIRS* assigning the MILAN FAIR center (for example) and attributing not only the cost of the fair to the cost dimension but also to the FAIR dimension as it wants to divide and analyze **in parallel** a piece of data from that specific entity. It does not set the mandatory balancing flag because it only wants an additional element of analysis.
 
-La dimensione dunque può essere vista anche come un' ETICHETTA che andiamo ad agganciare ai centri. 
+The dimension can therefore also be seen as a LABEL that we attach to the centers.
 
-Possiamo, attraverso i cost driver, ribaltare i dati (costi e profitti) da una dimensione all’ altra. 
+We can, through cost drivers, allocate data (costs and profits) from one dimension to another.
 
 
 ---
 
-:::note CAMPI DELLA TABELLA
+:::note TABLE FIELDS 
 
-- Il flag **QUADRATURA OBBLIGATORIA** va ad identificare che questa deve avere quadratura con la contabilità. Non è più la contabilità generale che va quadrata al centro di costo/profitto o commessa ma va quadrata rispetto alla singola dimensione d’analisi che prevede quadratura. Il test di quadratura sarà effettuato solo se la causale contabile di movimentazione prevede a sua volta il blocco al salvataggio di movimenti non quadrati a livello di valorizzazione dei centri;
-- Il flag **COMMESSA** indica che la riga dell’analitica viene associata in via prioritaria al progetto per il quale il costo o ricavo è movimentato in modo diretto, e da questo progetto si deriverà un centro di costo da valorizzare, centro che potrà essere un codice generico uguale per tutti i progetti oppure magari un centro legato ad una caratteristica specifica del progetto selezionato;
-- Il flag **VINCOLO CONTO/CENTRO** va a dire che si vuole limitare quello che l’utente può fare quando registra in contabilità un centro di questa dimensione: dato che nel piano dei conti possiamo agganciare ad ogni sottoconto di costo e di ricavo uno o più centri aziendali, con questa opzione dico che quello che è inserito nel piano dei conti non può essere modificato dall’utente. In sostanza, un costo di produzione non mi può diventare un costo assegnato al centro direzionale. Il vincolo può essere legato al singolo centro, piuttosto che sulle categorie dei centri;
-- Il flag **ABILITA COMMESSA**, invece, serve per poter collegare una commessa di riferimento anche nelle righe della dimensione industriale/direzionale normale, per evitare di gestire due dimensioni differenti.
+- The **FLAG BALANCED** flag identifies that this must have a balance with accounting. It is no longer the general ledger that needs to balance with the cost/profit center or job order but must balance with the individual analysis dimension that requires a balance. The balance test will be performed only if the accounting movement template also includes the block for saving unbalanced movements at the level of center valuation;
+- The **JOB ORDER** flag indicates that the line of the analysis is primarily associated with the project for which the cost or revenue is moved directly, and from this project, a cost center will be derived for valuation, a center that can be a generic code common to all projects or perhaps a center linked to a specific characteristic of the selected project;
+- The **FLAG MANDATORY CHART OF ACCOUNTS** flag indicates that the user’s actions are limited when registering a center of this dimension in accounting: since in the chart of accounts we can link to each cost and revenue detail account one or more corporate centers, with this option, I indicate that what is entered in the chart of accounts cannot be modified by the user. Essentially, a production cost cannot become an expense assigned to the management center. The bond can be related to the individual center, rather than to the categories of centers;
+- The **ENABLE JOB ORDER** flag, on the other hand, is used to link a reference job order even in the lines of the standard cost/directional dimension, to avoid managing two different dimensions.
 :::
-

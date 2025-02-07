@@ -1,72 +1,72 @@
 ---
-title: Associazione centri / commesse
+title: Association Centers / Projects 
 sidebar_position: 1
 ---
 
-:::note Percorso
-**Tabelle > Controlling > Contabilità analitica > Associazione centri / commesse**
+:::note Path
+**Tables > Controlling > Analytic Accounting > Association of Centers / Projects**
 
-Nota:
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Note:
+For everything not detailed in this document regarding the common functionality of forms, refer to the following link [Custom features, buttons, and common fields](/docs/guide/common).
 
 :::
 
 ---
 
-:::tip Nota
-Questa tabella è ad uso esclusivo delle società che hanno impostato il *Controlling*
+:::tip Note
+This table is for the exclusive use of companies that have set up *Controlling* 
 :::
 
-Quando l'aziendale produce su progetto/commessa, l'interesse dell'analisi consuntiva potrebbe essere di due tipi:
-- un interesse puntuale, sul singolo progetto/commessa, in particolar modo quando questi non hanno fra loro caratteristiche comuni;
-- un interesse su un gruppo di progetti/commesse prodotti in un certo periodo di tempo, quando questi progetti/commesse hanno delle caratteristiche che consentono di generalizzarne la tipologia.
+When the company produces on project/job order, the interest of the actual analysis could be of two types:
+- a specific interest, on the single project/job order, particularly when these do not have common characteristics among them;
+- an interest in a group of projects/job orders produced within a certain period, when these projects/job orders have characteristics that allow for generalization of their type.
 
-In questo secondo caso diventa essenziale questa tabella, che consente di collegare i centri aziendali della *dimensione* Progetti/Commesse ad una caratteristica di questi, al fine di poter valutare i dati totali secondo questi *centri progetto/commessa* senza entrare nel dettaglio di ogni singolo lavoro.
+In this second case, this table becomes essential, as it allows linking the corporate centers of the *dimension* Projects/Job Orders to a characteristic of these, in order to evaluate the total data according to these *project/job order centers* without going into detail for each single job.
 
-:::tip Nota
-se l'azienda non è interessata ad una analisi di tipo macro, si può saltare la configurazione di questa tabella ed utilizzare un unico *centro progetto/commessa* identificandolo con il flag *Centro di default per i progetti*, dettagli in tabella [***CENTRO DI COSTO***](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-centers)
+:::tip Note
+If the company is not interested in macro analysis, the configuration of this table can be skipped and a single *project/job order center* can be used, identifying it with the flag *Default center for projects*, details in the table [***COST CENTER***](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-centers)
 :::
 
-I campi di configurazione disponibili sono i seguenti:
-- il ***CODICE*** dell'associazione
+The available configuration fields are as follows:
+- the ***CODE*** of the association
 
-:::tip Nota
-***FluentisERP*** valuterà le associazioni in ordine di Codice: quando si selezionerà il progetto X, quindi, si valuterà se la prima associazione consente di determinare il centro da assegnare alla riga, se non viene individuato si andrà a verificare la seconda associazione e via di seguito, fino alla prima occorrenza valida
+:::tip Note
+***FluentisERP*** will evaluate the associations in the order of Code: therefore, when project X is selected, it will check if the first association allows determining the center to be assigned to the line; if not found, it will check the second association, and so forth, until the first valid occurrence.
 :::
 
-- la ***DESCRIZIONE*** dell'associazione
+- the ***DESCRIPTION*** of the association
 
-- il ***TIPO*** di associazione, cioè l'oggetto all'interno del quale trovare l'elemento distintivo
-- la ***PROPRIETA'*** da considerare, che dipende dalla selezione effettuata nel campo precedente. Le opzioni sono
+- the ***TYPE*** of association, that is, the object within which to find the distinguishing element
+- the ***PROPERTY*** to be considered, which depends on the selection made in the previous field. The options are:
 
-Per questi ultimi due campi le opzioni sono:
-    - *Progetto*
-        - *Tipo progetto*
-        - *Anno progetto*
-        - *Zona progetto*
-        - *Nazione progetto*
-    - *Cliente*
-        - *Tipo conto*
-        - *Conto cliente*
-        - *Zona cliente*
-        - *Nazione cliente*
-        - *Categoria amministrativa*
-        - *Categoria commerciale*
-        - *Voce spesa*
-    - *Articolo*
-        - *Classe*
-        - *Categoria merceologica*
-        - *Unità di Misura*
-        - *Categoria fiscale*
-        - *Caratteristica*
-        - *Tipo Articolo*
+For these last two fields, the options are:
+    - *Project*
+        - *Project Type*
+        - *Project Year*
+        - *Project Zone*
+        - *Project Country*
+    - *Client*
+        - *Account Type*
+        - *Customer Account*
+        - *Customer Zone*
+        - *Customer Country*
+        - *Finance Category*
+        - *Commercial Category*
+        - *Expense Entry*
+    - *Item*
+        - *Class*
+        - *Product Category*
+        - *Unit of Measure*
+        - *Fiscal Category*
+        - *Characteristic*
+        - *Item Type*
 
-A seconda dell'impostazione, quindi, nella griglia in basso si abiliterà l'associazione del Centro all'elemento corrispondente impostato.
+Depending on the setting, the association of the Center to the corresponding set element will be enabled in the grid below.
 
-:::danger ATTENZIONE
-La definizione di una associazione legata agli *Articoli* richiederà chiaramente che
-    - all'interno di ogni progetto ci sia almeno una riga articolo codificato
-    - l'assegnazione di una riga d'acquisto o vendita, o in generale di una riga dell'analitica in contabilità, come costo/ricavo diretto di progetto/commessa, dovrà necessariamente essere assegnata ad una riga articolo codificato interna al progetto, altrimenti ***FluentisERP*** non avrà nessun modo di valorizzare questa associazione e cercherà una associazione successiva
+:::danger ATTENTION
+Defining an association related to *Items* will clearly require that:
+    - within each project, there is at least one coded item line
+    - the assignment of a purchase or sales line, or in general a line of analytics in accounting, as a direct cost/revenue of the project/job order, must necessarily be assigned to a coded item line within the project; otherwise, ***FluentisERP*** will have no way to value this association and will seek a subsequent association.
 
-Se ad esempio ogni progetto fosse caratterizzato da un prodotto finito di vendita di *classe* differente, probabilmente è più semplice gestire *Tipi progetto* differenti a seconda di ogni classe piuttosto che richiedere la valorizzazione di un articolo dentro il singolo progetto e selezionarlo in ogni documento a valle.
+If, for example, each project were characterized by a finished product for sale of a different *class*, it would probably be easier to manage different *project types* according to each class rather than requiring the valuation of an item within the single project and selecting it in every document downstream.
 :::
