@@ -5,10 +5,12 @@ sidebar_position: 2
 
 Per poter installare Fluentis MES è necessario eseguire i seguenti passaggi:
 
-- creare un file di testo contenente le seguenti stringhe:      
+- creare un file di testo contenente le seguenti stringhe:     
 
+```csharp
 <?xml version="1.0" encoding="utf-8" ?>
 <Settings applicationStyle="Fluent"></Settings>
+```
 
 - rinominare il file appena creato in "MobileSettings.xml";        
 - copiare il file "MobileSettings.xml" all'interno della cartella in cui è contenuta la WPF di Fluentis;
