@@ -3,24 +3,14 @@ title: Bills Numeration
 sidebar_position: 1
 ---
 
-In order to establish a numeration it is necessary to set reference year, numeration code, its description and start number.
+:::tip[Fast Start]
+The table is affected by the [**Fast Start**](/docs/guide/fast-start) procedure.
 
-The table is automatically managed in the generation procedure of counters of the new accounting year, that is located within 'Tools-Utility'.
+If you intend to configure manually, refer to the checklist on the linked page.
+:::
 
-RIBBON BAR: it represents the Form Menu, that is the area in which it is possible to perform actions linked to the procedure in use. The list of features is the following:
+To define a numeration, it is sufficient to set the reference year, the numeration code, its description, and the starting number.
 
+The table is among those automatically managed in the procedure for generating counters for the new accounting period, which can be found under ‘Tools’ - ‘Utilities’.
 
-
-| Function | Meaning |
-| --- | --- |
-| Search | Button to perform the search of bills numeration according to filters set. |
-| New | Button to place the cursor during the insertion of a new line. |
-| Delete | Button to delete the selected advance type. |
-| Print Preview | Button to perform the print preview of table in use. |
-| Print | Button to print the table in use. |
-
-
-
-
-
-
+<iframe width="560" height="315" src="https://www.youtube.com/embed/pnRACKqZqvM" title="YouTube video player" frameborder="0" allowfullscreen="true"></iframe>
