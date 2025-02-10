@@ -1,4 +1,4 @@
 ---
-title: Famiglie articoli
+title: Items Family
 sidebar_position: 1
 ---

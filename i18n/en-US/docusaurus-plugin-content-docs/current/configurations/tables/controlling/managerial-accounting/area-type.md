@@ -1,20 +1,20 @@
 ---
-title: Tipi Area
-sidebar position: 1
+title: Area Types 
+sidebar_position: 1
 --- 
 
 
 ![](/img/it-it/controlling/type-area.png)
 
 
-:::tip Nota
-La tabella è d'interesse solo nelle società con il flag *Controlling* attivo.
+:::tip Note 
+The table is of interest only in companies with the *Controlling* flag active.
 :::
 
-In questa tabella andiamo a definire i tipi di **Aree** di analisi, che distinguiamo in 3 tipologie:
-- il *tipo budget*, con il flag omonimo impostato
-- il *tipo del set di regole generali*, con il flag omonimo impostato
-- la terza tipologia è quella che non è una di queste due precedenti, senza flag impostati
+In this table, we define the types of **Areas** of analysis, which we distinguish into 3 types:
+- the *budget type*, with the corresponding flag set
+- the *general rule set type*, with the corresponding flag set
+- the third type is one that is neither of these two, without any flags set
 
-E' obbligatorio definire un'area di tipo **Set di regole** e un'area generica da valorizzare con i dati dei **Consuntivi** di periodo.
-Opzionale è la definizione di un'area di tipo **Budget**, se l'azienda è interessata ad inserire un Budget per centro di costo.
+It is mandatory to define an area of type **Rule Set** and a generic area to be populated with the **Finals** data of the period. 
+Defining an area of type **Budget** is optional, if the company is interested in entering a budget for the cost center.

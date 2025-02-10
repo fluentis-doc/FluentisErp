@@ -1,13 +1,6 @@
 ---
-title: Tipi Periodo
+title: Period Types 
 sidebar_position: 5
 ---
 
-La form permette di inserire dei periodi per ogni anno. Per ogni periodo si possono impostare le settimane necessarie. La form contiene tre zone: la prima con i filtri di ricerca, la seconda con i periodi e la terza con i dettagli della settimana.
-
-
-
-
-
-
-
+The form allows you to enter periods for each year. For each period, you can set the necessary weeks. The form contains three areas: the first with the search filters, the second with the periods, and the third with the week details.

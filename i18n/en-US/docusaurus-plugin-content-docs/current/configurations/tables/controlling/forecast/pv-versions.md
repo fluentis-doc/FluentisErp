@@ -1,10 +1,6 @@
 ---
-title: Versioni P. V.
+title: Versions S.F.
 sidebar_position: 4
 ---
 
-Questa form permette: di inserire più versioni per le previsioni; di stabilire una o più versioni attive (quelle non attive non potranno essere utilizzate per creare nuove previsioni ma possono essere utilizzate per filtrare le previsioni esistenti); di stabilire la versione di default tra quelle attive; di accettare il collegamento con la previsione settimanale; di modificare le previsioni storiche.
-
-
-
-
+This form allows: to enter multiple versions for forecasts; to establish one or more active versions (inactive ones cannot be used to create new forecasts but can be used to filter existing forecasts); to set the default version among those active; to accept the connection with the weekly forecast; to modify historical forecasts.
