@@ -109,13 +109,13 @@ C'è poi una terza sezione in cui si andranno ad indicare i dati più precisi in
 
 **Controllo qualità**: se è stato attivato il flag **Controllo qualità** relativo alla fase selezionata, in questo tab si andrà a selezionare il *Piano di controllo*. In automatico verranno proposte le *Prove pianificate* da effettuare per il controllo dell'articolo. Per la comprensione delle colonne di questa griglia si rimanda alla documentazione relativa ai Piani controllo;     
 
-**Disegni**: in questo tab si andranno ad inserire eventuali disegni relativi a questa fase;
-
+**Disegni**: in questo tabulatore si andranno ad inserire eventuali disegni tecnici dell'articolo relativi alle lavorazioni specifiche della fase;
+ 
 **Annotazioni**: in questi campi si potranno inserire eventuali annotazioni tecniche o di altro genere relative alla fase;
 
 **Istruzioni operative**: permette di caricare documenti di vario genere legati alla fase, i quali saranno poi visualizzati anche all'interno di Fluentis MES;
 
-**Alternative**: in questo tab potranno essere inserite delle fasi alternative alla fase di riferimento; 
+**Alternative**: in questo tabulatore potranno essere inserite delle fasi alternative che verranno considerate, in base alla priorità assegnata, dalle procedure della [Pianificazione generale](/docs/planning/ms-master-scheduling/general-schedule) o dall'[M.R.P.](/docs/planning/ms-master-scheduling/mrp/), se i relativi flag **Considera la fasi alternative**, presenti nei parametri delle procedure sono attivi durante la loro esecuzione;      
 
 **Extra data fasi / Extra data:** in questi due tab si andranno ad inserire, rispettivamente, gli extra data per ogni fase e gli extra data legati al ciclo stesso, selezionandoli tramite combo tra quelli precodificati nella relativa tabella *Extradata* (Utility > Extradata). Per inserire un extra data bisognerà cliccare il tasto destro del mouse e selezionare la voce aggiungi nuovo extra data con la possibilità di scegliere se inserirlo al primo livello, oppure se ci sono già extra data inseriti scegliere se si vuole inserire un extra data figlio all'extra data già esistente; in questo modo comparirà una nuova riga in cui poter procedere con l'inserimento.
 
