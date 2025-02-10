@@ -13,7 +13,7 @@ The table is compiled by entering a code and a user description, to which a refe
 
 The type of bill can then be associated with the type of payment in the corresponding table.
 
-Finally, it is noteworthy that only effects of the bill type can be managed in the unpaid accounting procedure on the Unpaid module disposal.
+Finally, it is noteworthy that only bills of exchange type can be managed in the unpaid accounting procedure on the Unpaid module disposal.
 
 The flag **Manage Partial Amount** allows creating bills that partially consume the items, indicating the amount. It requires manual management within the bill.
 

@@ -18,9 +18,9 @@ The table is filled in by imposing a code and a user description for the status 
 
 **Bill presented after collection;**
 
-**Returned credited effect (Effetto ritornato accreditato);**
+**Returned credited bill;**
 
-**Returned unpaid effect (Effetto ritornato insoluto);**
+**Returned unpaid bill;**
 
 **Bill endorsed;**
 
