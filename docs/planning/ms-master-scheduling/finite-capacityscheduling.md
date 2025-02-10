@@ -68,17 +68,21 @@ Prima di procedere con la schedulazione F.C.S., è importante settare all'intern
 
 **Blocca gli ordini tassativi**: permette selezionare le tipologie di ordini tra *Pianificati*, *Lanciati* ed *Esecutivi*, che nel caso abbiano il flag *Tassativo* abilitato non saranno modificati dalla procedura di schedulazione F.C.S.;    
 
-**Inizia lavori su disponibilità materiale**: se attivo, la schedulazione F.C.S. verificherà anche la disponibilità di materiale fino alla data indicata nel campo **Controllo disponibilità fino al**, oltre a quella data la schedulazione proseguira senza prendere in considerazione la disponibilità di materiale. Attivando il flag **Controllo disponibilità solo sui Materiali critici** la procedura verificherà la diposnibilità solamente per i materiali che in disitinta base hanno il flag *Critico* attivo;   
+**Inizia lavori su disponibilità materiale**: se attivo, la schedulazione F.C.S. verificherà anche la disponibilità di materiale fino alla data indicata nel campo **Controllo disponibilità fino al**, oltre a quella data la schedulazione proseguira senza prendere in considerazione la disponibilità di materiale. Attivando il flag **Controllo disponibilità solo sui Materiali critici** la procedura verificherà la disponibilità solamente per i materiali che in distinta base hanno il flag *Critico* attivo;   
 
 **Considera disponibiltà Materiale**: permetterà di selezionare la modalità con cui considerare la disponibilità del materiale tra *Generale* (indipendentemente dalla commessa di produzione ch elo impegna) e *Per Commessa Prod.*; attualmente è prevista solamente la regola *Generale*.
 
-Nella parte sottostante della form è possibile indicare con quali criteri, a paratià di documento, la scheduazione a capacità finita deve operare.
+Nella parte sottostante della form è possibile indicare con quali criteri, a parità di documento, la schedulazione a capacità finita deve operare.
 
 :::note Nota
 In accordo con i flag precedentemente attivati o meno, la schedulazione F.C.S. schedulerà i vari documenti nel seguente ordine: Fasi già iniziate, Fasi non ancora iniziate, Ordini di produzione in stato esecutivo e poi lanciato ed in fine Ordini pianificati. 
 ::: 
 
 Dalla tabella **Scelte priorità schedulazione** è possibile trascinare con il drag & drop le singole voci all'interno della tabella **Piorità schedulaizone**, dove in quest'ultima è possibile variarne la priorità. Nel caso in cui vengano selezionare le voci *Clienti critici* oppure *C.d.L critici* si abiliterà anche la tabella **Dettaglio priorità schedulazione** dove sarà possibile inserire rispettivamente i clienti o i centri di lavoro, potendo variare anche in questo caso la priorità.   
+
+:::note Attenzione
+La priorità per *Sequenza fasi* e *CDL critici* non viene utilizzata nello standard ed è stata inserita per poter schedulare solo con delle procedure custom.
+::: 
 
 *Pulsanti specifici*:
 

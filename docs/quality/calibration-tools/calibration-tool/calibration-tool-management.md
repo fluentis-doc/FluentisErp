@@ -20,7 +20,7 @@ A standard è disponibile la reportistica di:
 ## Pulsanti di comando
 
 
-### ![](/img/neutral/common/save.png) Salva
+### Salva
 
 Premendo questo pulsante si memorizzano tutte le informazioni modificate della *Taratura strumento* visualizzata.   
 
