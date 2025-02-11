@@ -1,40 +1,40 @@
 ---
-title: Formule di Calcolo
-sidebar position: 3
+title: Formula
+sidebar_position: 3
 --- 
 
-:::tip Nota
-Questa tabella è ad uso esclusivo delle società che hanno impostato il *Controlling*
+:::tip Note 
+This table is for the exclusive use of companies that have set up *Controlling*.
 :::
 
-Nelle Formule di calcolo possiamo definire come creare automaticamente delle registrazioni extracontabili di area a partire da dei valori di origine. In generale, l’idea è cercare di automatizzare, magari approssimandole, alcune registrazioni che in contabilità sarebbero rilevate posticipatamente, o che sarebbe dispendioso inserire su ogni periodo come registrazioni extracontabili di Area manuali.
+In Formula, we can define how to automatically create off-balance records from source values. In general, the idea is to try to automate, perhaps approximating, certain records that in accounting would be recorded later, or that would be cumbersome to enter for each period as manual off-balance Area records.
 
-:::tip Esempio
-Ad esempio, potremmo valorizzare automaticamente i costi dei premi di risultato, che magari rileviamo a fine anno tramite l’applicazione del 3% sul fatturato dei ricambi Italia, attraverso una formula che rileva questa percentuale sul saldo del conto d’interesse valorizzato sul centro di costo dei ricavi di vendita, assegnando questo costo al centro del Commerciale.
+:::tip Example 
+For example, we could automatically value the costs of performance bonuses, which we might record at the end of the year by applying 3% on the turnover of Italy's spare parts, through a formula that calculates this percentage on the balance of the interest account valued on the cost center of sales revenue, assigning this cost to the Commercial center.
 
-Oppure potremmo applicare delle formule sulle quantità rilevate di un’unità di misura, se magari si presuppone che determinati costi siano di un tot. a pezzo
+Alternatively, we could apply formulas on the quantities recorded for a unit of measure, if it is assumed that certain costs are a certain amount per piece.
 :::
 
-Per inserire una nuova *Formula*, dalla maschera di ricerca si premerà sul pulsante *Nuovo* in modo da aprire la maschera di gestione, che prevede i seguenti campi:
-- la ***DATA INIZIO*** e ***DATA FINE*** validità della regola
+To insert a new *Formula*, from the search screen, press the *New* button to open the management screen, which has the following fields:
+- the ***START DATE*** and ***END DATE*** of the rule's validity
 
-- l'[***AREA***](/docs/controlling/controlling-parametrization/controlling-specific-settings/area-types-areas) di applicazione della regola stessa
+- the [***AREA***](/docs/controlling/controlling-parametrization/controlling-specific-settings/area-types-areas) of application of the rule itself
 
-- il ***CONTO DI DESTINAZIONE***, cioè il sottoconto da utilizzare per rilevare il movimento automatico nell'analitica della registrazione extracontabile di area
+- the ***DESTINATION ACCOUNT***, i.e., the detail account to use to record the automatic movement in the analytic part of the off-balance area record
 
-- il [***CENTRO DI DESTINAZIONE***](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-centers), cioè il centro da utilizzare nella riga stessa
+- the [***DESTINATION CENTER***](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-centers), i.e., the center to use in the line itself
 
-- il [***CENTRO DI ORIGINE UM***](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-centers), opzionale, che serve come centro di filtro dei movimenti fisici quando la formula prevede delle quantità gestite da un'unità di misura
+- the [***MU SOURCE CENTER***](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-centers), optional, which serves as a center to filter physical movements when the formula involves quantities managed by a unit of measure
 
-- il ***CENTRO ORIGINE CONTI***(/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-centers), opzionale, che serve come centro di filtro dei valori dei sottoconti inseriti nella formula
+- the ***ACCOUNT CENTER ORIGIN*** (/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-centers), optional, which serves as a center to filter the values of the detail accounts included in the formula
 
-Al di sotto avremo due griglie, a sinistra la lista dei conti del piano dei conti, a destra le[* Unità di misura*](/docs/controlling/controlling-parametrization/controlling-specific-settings/measure-units) disponibili.
-Alla base della maschera c'è la sezione con la formula, che può essere gestita trascinando con il mouse le entità (*conti* e/o *UM*) che si vogliono inserire nella formula stessa
+Below we will have two grids, on the left the list of accounts from the chart of accounts, on the right the [*Units of Measure*](/docs/controlling/controlling-parametrization/controlling-specific-settings/measure-units) available.
+At the bottom of the screen, there is a section with the formula, which can be managed by dragging the entities (*accounts* and/or *MU*) that you want to include in the formula itself with the mouse.
 
-:::tip Esempio
-Una formula potrebbe essere, ad esempio, "40001-004-Ricavi di Vendita ricambi ITA"*0.03
+:::tip Example 
+One formula could be, for example, "40001-004-Sales Revenue Spare Parts ITA"*0.03.
 :::
 
-:::tip Nota
-Nella maschera di ricerca è presente un pulsante di duplicazione della formula selezionata.
+:::tip Note
+In the search screen, there is a button to duplicate the selected formula.
 :::

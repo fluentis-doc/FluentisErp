@@ -1,55 +1,55 @@
 ---
-title: Flusso Movimenti Fisici
-sidebar position: 4
+title: Physical Movements Flow
+sidebar_position: 4
 ---
 
-:::tip Nota
-Questa tabella è ad uso esclusivo delle società che hanno impostato il *Controlling*
+:::tip Note 
+This table is for the exclusive use of companies that have set up *Controlling*.
 :::
 
-Il Flusso movimenti fisici consente di interagire con i movimenti caricati nella prima nota movimenti fisici, consentendo di replicarli o convertirli applicando un moltiplicatore o una percentuale.
+The physical movements flow allows interaction with the movements entered in the physical movements journal, enabling them to be replicated or converted by applying a multiplier or a percentage.
 
-I campi disponibili sono i seguenti
+The available fields are as follows:
 
-- il ***CODICE*** del flusso
+- the ***CODE*** of the flow
 
-- la ***DESCRIZIONE*** del flusso
+- the ***DESCRIPTION*** of the flow
 
-- l'[***AREA***](/docs/controlling/controlling-parametrization/controlling-specific-settings/area-types-areas) di riferimento
+- the [***AREA***](/docs/controlling/controlling-parametrization/controlling-specific-settings/area-types-areas) of reference
 
-- il [***CENTRO AZIENDALE***](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-centers) per il quale ricercare i dati quantitativi da gestire
+- the [***COST CENTER***](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-centers) for which to search for the quantitative data to manage
 
-- la [***DIMENSIONE CENTRI DESTINAZIONE***](/docs/controlling/controlling-parametrization/controlling-specific-settings/dimension) per definire la dimensione dei centri da valorizzare
+- the [***SIZE DESTINATION CENTERS***](/docs/controlling/controlling-parametrization/controlling-specific-settings/dimension) to define the dimension of the centers to be valued
 
-- la ***DATA INIZIO*** e ***DATA FINE*** validità della regola
+- the ***START DATE*** and ***END DATE*** of the rule's validity
 
-- il ***TIPO DISTRIBUZIONE*** da applicare, che può essere solo *01 Percentuale*
+- the ***DISTRIBUTION TYPE*** to be applied, which can only be *01 Percentage*
 
-- l'[***UNITA' DI MISURA DI ORIGINE***](/docs/controlling/controlling-parametrization/controlling-specific-settings/measure-units) e l'[***UNITA' DI MISURA DI DESTINAZIONE***](/docs/controlling/controlling-parametrization/controlling-specific-settings/measure-units), per eventuali conversioni tra UM
+- the [***ORIGIN UNIT OF MEASURE***](/docs/controlling/controlling-parametrization/controlling-specific-settings/measure-units) and the [***DESTINATION UNIT OF MEASURE***](/docs/controlling/controlling-parametrization/controlling-specific-settings/measure-units), for possible conversions between MUs
 
-- il ***MOLTIPLICATORE*** da applicare alle quantità di origine
+- the ***MULTIPLIER*** to be applied to the origin quantities
 
-Nella griglia sottostante andremo ad inserire la lista dei centri di destinazione da valorizzare, valorizzando i seguenti campi:
-- il [***CENTRO AZIENDALE***](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-centers)  di destinazione appunto
+In the grid below, we will enter the list of destination centers to be valued, filling in the following fields:
+- the [***COST CENTER***](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-centers) of destination
 
-- la ***PERCENTUALE*** da applicare
+- the ***PERCENTAGE*** to be applied
 
-- il ***VALORE*** da utilizzare
+- the ***VALUE*** to be used
 
-- il flat ***PERCENTUALE / VALORE***: se è spuntato significa che si digiterà direttamente la percentuale, altrimenti si potrà inserire una quantità di riga (il campo precedente) che ***FluentisERP*** utilizzerà per derivare una percentuale relativa
+- the flat ***PERCENTAGE / VALUE***: if checked, it means that the percentage will be typed directly; otherwise, a line quantity (the previous field) can be entered, which ***FluentisERP*** will use to derive a relative percentage
 
-- un eventuale ***PROGETTO*** da valorizzare
+- any ***PROJECT*** to be valued
 
-:::tip Esempi
- Una prima necessità potrebbe essere quella di attribuire delle quantità fisiche ad un centro per il quale non si rilevano i tempi, al fine di poterne calcolare una sua tariffa di costo derivandola dal totale delle ore replicate da altri centri: un ausiliario di produzione, per esempio, potrebbe ricevere i totali delle ore di altri centri utilizzati in produzione, per derivarne una quantità da sfruttare per un suo calcolo di tariffa.
+:::tip Examples 
+ One primary need could be to assign physical quantities to a center for which time is not recorded, in order to calculate a cost rate derived from the total hours replicated from other centers: a production auxiliary, for example, could receive the totals of the hours from other centers used in production, to derive a quantity to be used for its rate calculation.
  
- Un’altra necessità potrebbe essere quella di replicare dei movimenti fisici della dimensione direzionale nelle altre dimensioni, al fine di utilizzarli per applicare dei driver specifici di queste.
+ Another need could be to replicate physical movements from the directional dimension to other dimensions, in order to use them to apply specific drivers for these.
+
+A third need could be to convert hours received from production into minutes, to calculate a rate in a second unit of measure without having to calculate it externally by hand.
  
- Una terza necessità potrebbe essere quella di convertire le ore che si ricevono dalla produzione in minuti, per calcolare una tariffa in una seconda unità di misura senza doverla calcolare a mano esternamente.
- 
- Se da un unico dato d’origine dovessimo duplicare la quantità su due altri centri, si potrebbe applicare una regola che duplica con un moltiplicatore il valore di partenza e poi attribuisce metà ad uno e metà all’altro ad esempio.
+If a single origin data point needs to duplicate the quantity across two other centers, a rule could be applied that duplicates the starting value with a multiplier and then attributes half to one and half to the other, for example.
 :::
 
-:::tip Nota
-Nella maschera è presente un pulsante di duplicazione del flusso selezionato.
+:::tip Note 
+In the form, there is a button to duplicate the selected flow.
 :::

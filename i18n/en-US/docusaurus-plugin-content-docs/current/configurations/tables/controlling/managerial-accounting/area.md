@@ -1,34 +1,33 @@
 ---
 title: Area
-sidebar position: 2
+sidebar_position: 2
 ---
 
 
-:::tip Nota
-La tabella è d'interesse solo nelle società con il flag *Controlling* attivo.
+:::tip Note 
+The table is of interest only in companies with the *Controlling* flag active.
 :::
 
-I Dati del Controlling vengono sempre gestiti con un’area di analisi collegata che identifica che tipi di dati ci sono dentro: Possiamo immaginarla come una scatola fisica, dove ogni scatola viene alimentata con valori contabili e valori quantitativi e ogni scatola può avere un suo modello di calcolo diverso e a sé stante. Un’area comprende i dati di tutte le *dimensioni* dei centri.
-I campi disponibili sono:
-- ***Codice***
-- ***Descrizione***
-- [***Tipo Area***](/docs/configurations/tables/controlling/managerial-accounting/area-type)
-- ***Commessa di quadratura***, non gestito
+The Controlling Data is always managed with a related analysis area that identifies what types of data are inside: We can think of it as a physical box, where each box is filled with accounting values and quantitative values, and each box can have its own different and independent calculation model. An area includes the data of all the *dimensions* of the centers.
+The available fields are:
+- ***Code***
+- ***Description***
+- [***Area Type***](/docs/configurations/tables/controlling/managerial-accounting/area-type)
+- ***Reconciliation project (Commessa di quadratura)***, not managed
 
 
 
-***TIPOLOGIE DI AREE***
-Avremo tipicamente 3 aree:
-- *BUDGET*: avremo il budget per l’anno successivo;
+***TYPES OF AREAS***
+We typically have 3 areas:
+- *BUDGET*: we will have the budget for the following year;
 
-- *CONSUNTIVO*: quando andiamo ad elaborare le chiusure infrannuali; 
+- *FINAL*: when we process the mid-year closures; 
 
-- *SET DI REGOLE*: area che non ha valori, se non qualche misura fisica. E’ l’area depositaria delle regole *standard* dei cost driver: se sto elaborando, ad esempio, l’area dei consuntivi e sto cercando di ripartire il mio costo per gli affitti tramite un cost driver, se trovo un Cost driver specifico per i consuntivi Fluentis userà quel driver, altrimenti andrà a ricercare nelle regole generali valide di default collegandole all'area *set di regole*
+- *SET OF RULES*: an area that has no values, except for some physical measurement unit. It is the area that holds the *standard* rules of cost drivers: if I am processing, for example, the area of finals and I'm trying to allocate my rent cost through a cost driver, if I find a specific cost driver for finals, Fluentis will use that driver; otherwise, it will look for the general rules that are valid by default connecting them to the *set of rules* area.
 
-:::tip Nota
-Possiamo definire liberamente quante aree di analisi vogliamo. L'obiettivo tipico è quello di simulare *cosa succede se* cambio le regole dei cost driver aziendali, o magari con il fine di applicare configurazioni di costo differenziate.
+:::tip Note 
+We can freely define how many analysis areas we want. The typical goal is to simulate *what happens if* I change the rules of company cost drivers, or perhaps with the aim of applying differentiated cost configurations.
 
-Altro utilizzo è quello di 'cristallizzare' le elaborazioni del controlling: come avremo modo di spiegare parlando dei cost driver, le elaborazioni del controlling cancellano e ricreano i dati dell'anno che si sta elaborando. Se si vuole storicizzare, ad esempio, il primo *trimestre* per poterlo poi confrontare con i primi 3 mesi di quanto calcolato nell'elaborazione del primo *semestre*, possiamo ottenere questo risultato creando aree consuntive differenti.
-:::
+Another use is to 'crystallize' the controlling processes: as we will explain when discussing cost drivers, the controlling processes delete and recreate the data of the year being processed. If we want to historicize, for example, the first *quarter* to later compare it with the first 3 months of what was calculated in the processing of the first *semester*, we can achieve this result by creating different final areas.
 
 
