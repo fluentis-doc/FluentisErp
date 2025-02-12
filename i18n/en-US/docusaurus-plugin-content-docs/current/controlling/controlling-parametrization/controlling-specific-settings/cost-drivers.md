@@ -1,5 +1,5 @@
 ---
-title: Cost driver
+title: Cost Driver
 sidebar_position: 6
 ---
 

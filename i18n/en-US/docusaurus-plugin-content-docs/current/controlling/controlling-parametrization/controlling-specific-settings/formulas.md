@@ -1,5 +1,5 @@
 ---
-title: Formule di calcolo
+title: Formula
 sidebar_position: 9
 ---
 

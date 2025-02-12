@@ -1,5 +1,5 @@
 ---
-title: Associazione centri-progetti
+title: Association Centers/Projects
 sidebar_position: 14
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: Gruppi di conguaglio
+title: Groups of Adjustment
 sidebar_position: 12
 ---
 

@@ -1,23 +1,23 @@
 ---
-title: Tipi riclassificazione
+title: Reclassification Types 
 sidebar_position: 1
 ---
 
-La tabella dei ***Tipi riclassificazione*** è già precompilata dal [***Fast start***](/docs/guide/fast-start) con le tipologie
-- *IV - Riclassificazione IV direttiva UE*
-- *EC - Riclassificazione economico*
-- *BEP - Break even point*
+The table of ***Reclassification Types*** is already pre-filled by the [***Fast start***](/docs/guide/fast-start) with the following types:
+- *IV - Reclassification IV Directive EU (Riclassificazione IV direttiva UE)*
+- *EC - Economic Reclassification (Riclassificazione economico)*
+- *BEP - Break Even Point (Break even point)*
 
-Tali tipologie sono utilizzate per i modelli contabili che il ***Fast start*** precarica, in particolare per il modello del *Bilancio IV direttiva*.
+These types are used for the accounting models that the ***Fast start*** pre-loads, particularly for the *Balance IV Directive (Bilancio IV direttiva)* model.
 
-Nel caso in cui la società abbia la gestione *Controlling* attiva, suggeriamo di impostare un tipo
-- *COGE - Controllo di gestione* con flag *Controlling* attivo, da utilizzare per i modelli che valorizzano lo ***Storico registrazioni gestionali*** tramite una ***Comparazione*** del controlling
-- *PRO - Riclassificazione di progetto/commessa* con flag *Consolidato di commessa*, da utilizzare se la società ha impostato una *dimensione* di gestione dei progetti e vuole elaborare un *Consolidato di progetto*
+In the event that the company has *Controlling* management active, we suggest setting up a type:
+- *COGE - Management Control (Controllo di gestione)* with the *Controlling* flag active, to be used for models that value the ***Historical Records Management*** through a ***Comparison*** of controlling
+- *PRO - Project/Order Reclassification (Riclassificazione di progetto/commessa)* with the *Job Order Consolidation* flag, to be used if the company has set up a *dimension* for managing projects and wants to process a *Project Consolidation*
 
-:::tip Nota
-Il tipo riclassificazione con flag ***Costo prodotto*** prevede caratteristiche specifiche all'interno dei Modelli di riclassificazione, ma attualmente deve essere valorizzato con procedure custom
+:::tip Note 
+The reclassification type with the ***Product Cost*** flag has specific characteristics within the Reclassification Patterns, but currently must be valued with custom procedures.
 :::
 
-:::tip Nota
-E' possibile, tramite *Object navigator*, rendere visibile in griglia la proprietà *Nazione*, che non è obbligatoria per i Tipi riclassificazione: se si imposta una nazione in un tipo riclassificazione, i ***Modelli di riclassificazione*** collegati a questa tipologia saranno visibili sono nelle società della localizzazione geografica impostata
+:::tip Note 
+It is possible, through *Object Navigator*, to make the *Country* property visible in the grid, which is not mandatory for Reclassification Types: if a country is set in a reclassification type, the ***Reclassification Patterns*** linked to this type will only be visible in the companies of the set geographical location.
 :::

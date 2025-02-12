@@ -1,5 +1,5 @@
 ---
-title: Categorie cespiti per il controllo
+title: Fixed Asset Category for Controlling
 sidebar_position: 7
 ---
 

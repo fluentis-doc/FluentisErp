@@ -1,5 +1,5 @@
 ---
-title: Tipi riclassificazione
+title: Reclassification Types
 sidebar_position: 15
 ---
 

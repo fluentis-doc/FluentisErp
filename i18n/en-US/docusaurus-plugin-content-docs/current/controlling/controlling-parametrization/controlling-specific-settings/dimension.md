@@ -1,5 +1,5 @@
 ---
-title: Dimensioni
+title: Dimensions
 sidebar_position: 2
 ---
 

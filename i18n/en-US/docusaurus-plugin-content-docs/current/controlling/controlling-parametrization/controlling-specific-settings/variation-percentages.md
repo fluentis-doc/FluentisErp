@@ -1,5 +1,5 @@
 ---
-title: Percentuali di variazione
+title: Change of Percentage
 sidebar_position: 11
 ---
 

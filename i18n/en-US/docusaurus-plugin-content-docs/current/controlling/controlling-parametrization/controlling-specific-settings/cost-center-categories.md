@@ -1,5 +1,5 @@
 ---
-title: Categorie dei centri aziendali
+title: Corporate Centers Categories
 sidebar_position: 3
 ---
 

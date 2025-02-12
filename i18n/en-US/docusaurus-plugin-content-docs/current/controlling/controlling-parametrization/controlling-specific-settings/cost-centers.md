@@ -1,5 +1,5 @@
 ---
-title: Centri aziendali
+title: Corporate Centers
 sidebar_position: 4
 ---
 

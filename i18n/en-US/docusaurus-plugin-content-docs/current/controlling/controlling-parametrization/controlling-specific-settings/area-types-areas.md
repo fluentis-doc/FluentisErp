@@ -1,5 +1,5 @@
 ---
-title: Tipi area - Area
+title: Area Types - Area
 sidebar_position: 5
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: Distribuzione periodi
+title: Periods Distribution
 sidebar_position: 10
 ---
 

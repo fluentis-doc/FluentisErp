@@ -1,30 +1,29 @@
 ---
-title: Unità di misura
+title: Units of Measure 
 sidebar_position: 13
 ---
 
-All'interno della tabella delle ***Unità di misura*** dovremo innanzi tutto andare a codificare tutte quelle unità di misura che si dovessero rendere necessarie per la gestione del *Controlling*: andremo a codificare, tipicamente, le ore uomo e le ore macchina per riprendere i dati da produzione, piuttosto che le unità che servono alle registrazioni manuali della ***Prima nota movimenti fisici*** (kww, mq, nr teste, nr postazioni telefoniche, ecc. ecc.). Per ognuna di queste UM dovremo in particolare andare a definire la proprietà ***Tipo valutazione del tempo***, che prevede due opzioni:
+Within the ***Units of Measure*** table, we must first code all those units of measure that may be necessary for the management of *Controlling*: we will typically code man-hours and machine hours to capture data from production, as well as the units needed for the manual recording of ***First note of physical movements*** (kww, sqm, number of heads, number of telephone stations, etc.). For each of these MUs, we will particularly need to define the property ***Time evaluation type***, which includes two options:
 
-- ***Stato***: quando le quantità rilevate sono sostanzialmente fisse, cioè si replicano ad ogni periodo
-- ***Flusso***: quando sono specifiche del singolo periodo
+- ***State***: when the recorded quantities are essentially fixed, i.e., they are replicated every period
+- ***Flow***: when they are specific to the individual period
 
-:::tip nota
-L'impostazione è determinante per la gestione che ***FluentisERP*** richiederà nell'inserimento delle quantità nella maschera della ***Prima nota movimenti fisici***: l'inserimento di una UM di *Stato* ***non richiederà***  l'indicazione obbligatoria di un ***Periodo di distribuzione***, in quanto la quantità indicata sarà replicata per ogni periodo del range inserito, mentre al contrario una UM di *Flusso* ***richiederà*** obbligatoriamente un ***Periodo di distribuzione*** per spalmare la quantità su ogni periodo del range inserito
+:::tip note
+The setting is crucial for the management that ***FluentisERP*** will require in entering quantities in the ***First note of physical movements*** form: entering a MU of *State* ***will not require*** the mandatory indication of a ***Distribution Period***, as the specified quantity will be replicated for each period of the entered range, while conversely, a MU of *Flow* ***will require*** a ***Distribution Period*** to spread the quantity over each period of the entered range.
 :::
 
-Per la ripresa da produzione dei tempi, inoltre, è necessario tener conto che le *dichiarazioni di produzione* rilevano sempre i tempi in *minuti*, e quindi abbiamo necessità di configuare come ***FluentisERP*** deve gestire la conversione nelle Unità di misura utilizzate per rilevare i tempi dei centri.
-Dovremo innanzi tutto definire la conversione tra i minuti della produzione e la UM dei tempi che utilizzeremo nel *Controlling*: se abbiamo ad esempio una UM 'ore uomo', allora all'interno della tabella ***Unità di misura***, quindi, indicheremo nel tab ***Conversioni tra altre UM***
-- *UM alternativa*: 'Min' (cioè la UM che ha i flag ***UM tempo***  e ***Minuti*** settati)
-- *Fatt. Conv.*: 60
-- *Da moltiplicare*: flag settato
+For the retrieval of production times, it is also necessary to consider that *production declarations* always record times in *minutes*, and therefore we need to configure how ***FluentisERP*** should handle the conversion to the units of measure used to record the times of the centers.
+We need to first define the conversion between production minutes and the MU of the times that we will use in *Controlling*: for example, if we have a MU 'man-hours', then within the ***Unit of Measure*** table, we will indicate in the ***Conversions with other MUs*** tab:
+- *Alternative MU*: 'Min' (i.e., the MU that has the flags ***MU time*** and ***Minutes*** set)
+- *Conv. Fact.*: 60
+- *To multiply*: flag set
 
-In secondo luogo, dovremo agganciare queste UM del Controlling ai nostri *Centri aziendali produttivi*, cosa che si esegue nella tabella ***Unità di misura dei centri aziendali per il controlling***. In questa maschera andremo a configurare:
+Secondly, we will need to link these Controlling MUs to our *Production corporate centers*, which is done in the ***Unit of Measure of corporate centers for controlling*** table. In this form, we will configure:
 
-- l'[***Area***](/docs/controlling/controlling-parametrization/controlling-specific-settings/area-types-areas) di riferimento della configurazione
-- il [***Centro aziendale***](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-centers) produttivo che avrà una valorizzazione dei tempi da produzione
-- l'unità di misura da utilizzare se per questo Centro si vuole rilevare il ***Tempo attrezzaggio***
-- l'unità di misura da utilizzare se per questo Centro si vuole rilevare il ***Tempo uomo***
-- l'unità di misura da utilizzare se per questo Centro si vuole rilevare il ***Tempo macchina***
-- il range ***Da data*** e ***A data*** di validità della configurazione
-- i flag che indicano se considerare o meno i vari tempi nel calcolo della produttività del centro
-
+- the [***Area***](/docs/controlling/controlling-parametrization/controlling-specific-settings/area-types-areas) for configuration
+- the [***Corporate Center***](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-centers) that will have a valuation of production times
+- the unit of measure to be used if for this Center we want to record ***Setup Time***
+- the unit of measure to be used if for this Center we want to record ***Manpower Timing***
+- the unit of measure to be used if for this Center we want to record ***Machine Time***
+- the ***From date*** and ***To date*** range of validity for the configuration
+- the flags indicating whether or not to consider the various times in the calculation of the productivity of the center
