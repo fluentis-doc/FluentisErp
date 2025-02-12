@@ -16,7 +16,6 @@ Attraverso questa finestra vengono settati i parametri che riguardano alcune del
 In questa sezione l'utente può impostare il tipo richiesta d'acquisto e il tipo ordine di conto lavoro (se chiuso quindi non modificabile ulteriormente o aperto e quindi modificabile) che devono essere generati automaticamente durante il rilascio degli ordini pianificati rispettivamente di acquisto e di conto lavoro.
 
 **Controllo terzista obbligatorio per le fasi esterne**: se attivo, nel caso non sia indicato il terzista in una fase esterna, questo verrà segnalato con il **Colore testo riga ordine** sotto indicato. 
-**Controllo materiale obbligatorio**: abilita il controllo della presenza o meno dei materiali a magazzino e a seconda della disponibilità verranno evidenziati con differenti colori (**Colore sfondo riga ordine**: *Completa / Parziale / Assente*); inoltre, è possibile anche indicare in **Tipo controllo su** se questo debba essere fatto sulla giacenza o sulla disponibilità del materiale.
 
 **Gestione semplificata della produzione**: è obsoleto e viene utilizzato solo nelle vecchie versioni.  
 
