@@ -1,31 +1,16 @@
 ---
-title: Agent Characteristics
-sidebar_position: 2
+title: Caratteristiche agente
+sidebar_position: 7
 ---
 
-The related table is available for all companies that are in database and has the list of agents characteristics. It is a simple code/description table in order to assign a type to agents in customized report/statistics.
+E' una tabella descrittiva per l'agente e può essere utilizzata nella sua anagrafica. E' comune a tutte le società presenti nella base dati ed è costituita da una semplice tabella codice/descrizione, al fine di codificare gli agenti in report/statistiche personalizzate.
 
-RIBBON BAR: the ribbon bar represents the Form menu, that is the area on which it is possible to perform actions linked to the procedure in use. The possible features list is the following:
+La tabella si apre tramite il percorso **Tabelle > Vendite > Caratteristiche agente**.
 
+Consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
 
+La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
 
-| Function | Meaning |
-| --- | --- |
-| Search | Button to perform a search of an agent characteristic through filter fields. |
-| Insert | Button to insert a new agent characteristic. |
-| Delete | Button to delete an agent characteristic, unless this has not already been used. |
-| Print Preview | Button to perform the print preview of agents characteristics. |
-| Print | Button to print the agents characteristics. |
+Per inserire nuovi record è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**. 
 
-
-
-| Function | Meaning |
-| --- | --- |
-| Code | Alphanumeric identification code of agent characteristic. |
-| Description   | Agent Characteristic Description. |
-
-
-
-
-
-
+Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
