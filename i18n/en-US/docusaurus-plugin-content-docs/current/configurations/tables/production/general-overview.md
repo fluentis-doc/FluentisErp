@@ -1,12 +1,6 @@
 ---
-title: General Overview
+title: Generalità
 sidebar_position: 1
 ---
 
-The Tables section within the Production Area can be looked through the following path Home > Tables > Production and it is necessary in order to insert all the most important data that are managed within the Production Area.
-
-
-
-
-
-
+Le tabelle dell'area produzione si trovano sul percorso **Tabelle > Produzione** e permettono l'inserimento di tutti i dati principali che vengono gestiti all'interno dell'intera Area Produzione. 
