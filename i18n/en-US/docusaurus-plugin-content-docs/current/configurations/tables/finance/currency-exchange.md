@@ -1,35 +1,34 @@
 ---
-title: Currency Exchanges
+title: Cambi valute
 sidebar_position: 4
 ---
 
-The currency exchanges table, common to all companies of the same database, enables the user to insert day by day the official exchanges in order to use them in different procedures of the management software: in particular the program will take the last valid exchange from the document/recording date in the present table.
+La tabella dei Cambi valute, comune a tutte le società della stessa base dati, consente di impostare giorno per giorno i cambi ufficiali da utilizzare nelle varie procedure del gestionale: in particolare si segnala che il programma andrà a recuperare da questa tabella l'ultimo cambio valido a ritroso dalla data del documento/registrazione che si sta inserendo.
+
+:::note Nota
+La tabella può essere valorizzata manualmente inserendo direttamente il tasso di cambio relativo alla divisa ed al giorno anch'essi impostati manualmente, oppure può essere eseguito un aggiornamento automatico scaricando i tassi di cambio tramite l'apposito bottone posto nella ribbon bar ***Scarica tassi di cambio***.
+
+ Premendo il bottone apparirà un **popup** che richiede l'inserimento delle **date Da / A** all'interno delle quali ricercare i tassi di cambio ed il **flag Inserimento automatico** che va direttamente a popolare la tabella (e che si consiglia di lasciare attivo).
+
+**ATTENZIONE:** vengono scaricati i tassi di cambio relativi solamente alle divise che hanno il flag Scarica cambi nella tabella [**Divisa**](/docs/configurations/tables/general-settings/currencies).
+:::
 
 
+Nella griglia si trovano i seguenti campi:
 
-| Function | Meaning |
-| --- | --- |
-| Exchange | Normally it is necessary to insert the company currency (euro) |
-| Description | Currency description |
-| In | It is the reference currency |
-| Description | Reference currency description |
-| Currency Date | It is the reference exchange date |
-| Exchange Value | It is the 'price exchange system', really used by program in order to calculate the similar values. In case of euro, the exchange value is the reverse value in respect to official daily exchange. |
-| Direct Value | It is the 'volume exchange system', not obligatory |
+**Cambio**: normalmente va inserita la divisa della società (euro).
 
-RIBBON BAR: the ribbon bar represents the Form menu, that is the area in which it is possible to operate on previous recordings or generate new ones. The possible features list is the following:
+**Descrizione**: descrizione della divisa.
 
+**In**: divisa di riferimento.
 
+**Descrizione**: descrizione divisa di riferimento.
 
-| Function | Meaning |
-| --- | --- |
-| Search | It is a command, that is necessary in order to perform the search of an exchange and even with the possibility to filter information according to the currency and from date to date fields. |
-| Insertion | It is a command, that is necessary in order to insert a new exchange |
-| Exchanges Update | It is a command, that is necessary in order to update exchanges and it has got a dialog also with the list of the last exchanges in table  |
-| Import from File | It is a command, that is necessary in order to import from file, when home banking file is coherently structured |
-| Delete | It is a command, that is necessary in order to delete exchanges |
-| Preview | It is a command, that is necessary in order to perform the exchanges preview |
-| Print | It is a command, that is necessary in order to perform the exchanges print  |
+**Data valuta**: data di riferimento del cambio.
+
+**Valore cambio**: si tratta del cambio 'incerto per certo', effettivamente utilizzato dal programma nei calcoli dei controvalori. Nel caso dell'euro, quindi, è il valore inverso al cambio ufficiale del giorno.
+
+**Valore diretto**: si tratta del cambio 'certo per incerto'. Nel caso dell'euro, quindi, è il valore de cambio ufficiale del giorno.
 
 
 
