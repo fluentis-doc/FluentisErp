@@ -1,42 +1,36 @@
 ---
-title: Purchase Orders Type
-sidebar_position: 10
+title: Tipi ordine fornitore
+sidebar_position: 3
 ---
 
-The purchase order type is used in order to set the property of an order.
+Questa tabella è fondamentale per definire le varie tipologie di ordini fornitori disponibili, ognuna con le proprie caratteristiche. E' raggiungibile da *Configurazione > Tabelle > Acquisti > Tipi ordine fornitore*.   
 
-RIBBON BAR: it represents the Form menu, that is the area in which it is possible to perform actions linked to the procedure in use. The list of the features is the following:
+I campi presenti sono:    
 
+**Codice/Descrizione**: campi obbligatori per definire il tipo e la descrizione dell'ordine di acquisto.
 
+**Numerazione\Descrizione**: campo obbligatorio per la [Numerazione](/docs/configurations/tables/fluentis-numerations) da associare al tipo ordine.
 
-| Function | Meaning |
-| --- | --- |
-| Search | Button to search document type. |
-| Insert | Button to insert a new document type. |
-| Delete | Button to delete document type. |
-| Preview | Button to launch print preview. |
-| Print | Button to perform the print according to the filters set and to the printer configurations. |
+**Conferma ordine automatica**: se settato, al momento della creazione di un ordine con questo *Tipo ordine* viene compilato anche il campo *Data conferma ordine* presente nella testata dell'ordine, con la data odierna.
 
-**Type**: Sales order type.
+**Cash Flow**: se settato, il tipo ordine concorre al calcolo del cash flow.
 
-**Description**: Order type description.
+**Magazzino/Descrizione magazzino**: è il magazzino di arrivo della merce che viene settato in automatico sulle righe articolo degli ordini creati con questo tipo ordine.
 
-**Num. Type / Description**: Numeration type associated to the order type.
+**Causale/Descrizione causale**: è la [Causale](/docs/configurations/tables/logistics/warehouse-templates) di movimentazione della merce in arrivo che viene settata in automatico sulle righe articolo degli ordini creati con questo tipo.
 
-**Auto Execution**: If set, the order can be executed from purchase delivery note documents, goods receipt and purchase invoices.
+**Controlla disponibilità**: se settato, gli ordini di questo tipo concorrono al calcolo della disponibilità e sono visibili nella form di [Analisi disponibilità](/docs/erp-home/registers/items/availability-analysis).
 
-**Cash Flow**: If set, the order type contributes the cash flow calculation.
+**Agricola acquisti IVA**: se attivo, in fase di creazione ordine, il sistema controlla se per l'articolo utilizzato è presente un codice dell'IVA agricola, se non esiste viene preso il codice IVA normale.
 
-**Ware. / Warehouse Description**: Warehouse of receipt of goods contained on orders belonging of this order type.
+**Gestione matrici extra data**: se attivo, permette di visualizzare, nel caso di gestione articoli con matrice, un tab aggiuntivo per l'imputazione dei valori della quantità per singola cella di matrice.
 
-**Template / Template Description**: Movement template of incoming goods contained on orders of this order type.
+**Listini da aggiornare**: serve per far aggiornare in automatico i prezzi di listino in base ai prezzi specificati in ordine. Se tale flag non è selezionato, sarà comunque possibile, sulle righe dell'ordine, far aggiornare manualmente il valore del listino in  base al prezzo indicato sulla riga.
 
-**Control Availability**: If set, this type of orders contribute to the availability calculation.
+**Tipo bolla consegna**: è la tipologia di DDT di acquisto da creare quando si utilizza la procedura di [Evasione da ordini](/docs/purchase/purchase-delivery-note/procedures/create-delivery-notes-from-orders).
 
-**VAT Purch. Agr.**: If set, it is searched for item if there is the agricultural VAT code, if it does not exist there is the possibility to consider the normal VAT code.
+**Stampa**: in questo campo è possibile scegliere la stampa da utilizzare di default (si ricorda che, per stampare il report di default, in fase di stampa sarà necessario selezionare l'opzione *Stampe multiple*); nel campo successivo è possibile indicare un **Numero di copie** da stampare.    
 
+**Controllo fornitore**: serve ad attivare un controllo per il quale, in fase di selezione del soggetto intestatario dell'ordine, la procedura ci permetterà di selezionare solo conti di tipo fornitore e non di tipo cliente.      
 
-
-
-
-
+**Gestione cespiti**: questo flag permette di abilitare la [Gestione cespiti](/docs/finance-area/fixed-assets/general-overview) per quel tipo ordine e di selezionare il **Tipo operazione** che si vuole effettuare.
