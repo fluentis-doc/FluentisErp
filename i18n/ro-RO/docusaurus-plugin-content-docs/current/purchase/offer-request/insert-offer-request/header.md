@@ -38,6 +38,7 @@ Alte câmpuri opționale sunt:
 - **Valabilitate ofertè**: permite setarea unei date de expirare pentru cererea de ofertă. 
 
 *Butoane specifice*
+
 > **Substituie data prevăzută pentru livrare din linii**: după ce a fost specificată data estimată de livrare în antet, este posibil să o înlocuiți în masă în liniile articolului deja introduse.
 
 ### Pagamenti

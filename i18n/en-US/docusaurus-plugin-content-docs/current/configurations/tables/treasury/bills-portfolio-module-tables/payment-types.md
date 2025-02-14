@@ -1,12 +1,6 @@
 ---
-title: Payment Types
+title: Payment Types 
 sidebar_position: 7
 ---
 
-In payment type table it is possible (but not obligatory) to link the payment type to the bill type to be created in bills portfolio module.
-
-
-
-
-
-
+In the payment types table, it is possible (but not mandatory) to link the payment type to the type of bill to be created in the bills portfolio module.

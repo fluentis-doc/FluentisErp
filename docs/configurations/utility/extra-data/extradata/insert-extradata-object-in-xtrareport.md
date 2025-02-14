@@ -8,32 +8,32 @@ Per poter inserire un extradata in Xtrareport va utilizzato uno script che asseg
 Per prima cosa aprire il report corretto, creare un nuovo campo calcolato, all'interno dello script di GetValue inserire il seguente script e sostituire a ciò che c'è tra parentesi quadre i valori corretti:
 
 
-```csharp
+```shell
  //INIZIO SCRIPT PER EXTRADATA OGGETTO
 
 private void calcDiameter_GetValue(object sender, DevExpress.XtraReports.UI.GetValueEventArgs e)
 
 {
 
-  [OggettoReport] row = OggettoReporte.Row;
+  [ReportObject] row = ReportObject.Row;
 
   if (row != null)
 
   {
 
-    var extraData = [OggettoReport].ExtraData.Where(x => x.ExtraDataObject != null && x.ExtraDataObject.Code == [OggettoExtraData]).FirstOrDefault();
+    var extraData = [ReportObject].ExtraData.Where(x => x.ExtraDataObject != null && x.ExtraDataObject.Code == [ExtraDataObject]).FirstOrDefault();
 
     if (extraData != null)
 
     {
 
-      var record = GetReport().DataProvider.Linq<[OggettoExtraData]>().Where(x => x.Id == extraData.ExtraDataId).FirstOrDefault();
+      var record = GetReport().DataProvider.Linq<[ExtraDataObject]>().Where(x => x.Id == extraData.ExtraDataId).FirstOrDefault();
 
       if (record != null)
 
       {
 
-        e.Value = [OggettoExtraData].[Proprieta]
+        e.Value = [ExtraDataObject].[Property]
 
       }
 
@@ -44,9 +44,11 @@ private void calcDiameter_GetValue(object sender, DevExpress.XtraReports.UI.GetV
 }
 
 //FINE SCRIPT PER EXTRADATA OGGETTO
+```
 
 Lo script utilizzato per l'esempio visto durante la creazione dell'extradata “lingua” nella fattura, è il seguente:
 
+```shell
 //INIZIO SCRIPT
 
 private void CalcLanguage_GetValue(object sender, DevExpress.XtraReports.UI.GetValueEventArgs e)
@@ -83,8 +85,8 @@ private void CalcLanguage_GetValue(object sender, DevExpress.XtraReports.UI.GetV
 
 //FINE SCRIPT
 ```
-AVVERTENZE GENERALI:
 
-- Se nell'inserimento degli oggetti e/o delle proprietà, nella parte di attivazioni e propagazione abbiamo difficolta nell'inserire l'oggetto, cliccare due volte nell'apposita casella. Questo è utile anche per vedere se tale oggetto può avere l'extradata.
-
-- Se non si riesce a trovare l'oggetto, vanno contatti i programmatori i quali ci implementeranno questa funzionalità perché non tutti gli oggetti sono programmati per avere degli extradata.
+:::note Osservazioni
+- Se nell'inserimento degli oggetti e/o delle proprietà, nella parte di attivazioni e propagazione abbiamo difficolta nell'inserire l'oggetto, cliccare due volte nell'apposita casella. Questo è utile anche per vedere se tale oggetto può avere l'extradata.  
+- Se non si riesce a trovare l'oggetto, va contattat l'assistenza la quale verificherà con gli sviluppatori se si potrà implementare questa funzionalità perché non tutti gli oggetti sono programmati per avere degli extradata.
+:::

@@ -1,32 +1,28 @@
 ---
-title: Customer Risk Module Tables
+title: Customer Risk Form Tables 
 sidebar_position: 7
 ---
 
-There are no specific tables of this module, but it is necessary to mark that different purchase and sales document type have settings linked to the customer risk.
+There are no specific tables for the module in question, but it should be noted that various document types in purchases and sales have settings related to customer risk.
 
-The customer credit collects data from the following sales area documents:
+The customer credit retrieves data from the following documents in the sales area:
 
- [**Sales Order Type**](/docs/configurations/tables/sales/sales-order-types) : the credit flag indicates if document (printed and confirmed) is considered during the customer credit calculation or not. The 'Exclude Block' flag excludes this document type from customer block.
+**[Sales Order Type](/docs/configurations/tables/sales/sales-order-types)**: the ‘credit flag' indicates whether the document (printed and confirmed) is considered in the calculation of the customer credit or not. The ‘Exclude lock' flag excludes this document type from the customer lock;
 
-**Delivery Note Type**: the 'credit' flag indicated if document (printed and confirmed) is considered during the customer credit calculation or not. The 'Exclude Block' flag excludes this document type from customer block.
+**Delivery note types**: the ‘credit flag' indicates whether the document (printed and not valued in the invoice) is considered in the calculation of the customer credit or not. The ‘Exclude lock' excludes this document type from the customer lock;
 
-**Invoice Types**: the 'credit' flag indicated if document (printed and confirmed) is considered during the customer credit calculation or not. The 'Exclude Block' flag excludes this document type from customer block. Lastly, every  customer register has two settings linked to this module:
+**[Invoice Types](/docs/configurations/tables/purchase/purchase-invoices-type)**: the ‘credit flag' indicates whether the document (printed and not accounted for) is considered in the calculation of the customer credit or not. The ‘Exclude lock' flag excludes this document type from the customer lock.
 
-**Credit Control Type**:
+Finally, each customer contact has two settings related to the module in question:
 
-**Doc. Block and Credit Monitor**: the sales area document, that overruns the credit, will be blocked and for this reason there will be the necessity to authorize it in order to move along the next phase of documental flow;
+**Credit-control Type:**
 
-**Credit Monitor**: a credit control will be performed together with a message to the user for the occured overrun;
+**Document lock and reliance monitor**: the document in the sales area that exceeds the credit will be blocked, and therefore there will be a need to authorize it to proceed to the subsequent phases of the document flow;
 
-**Group Block**: this is like the first one, except for the calculation, which is cumulative for all database companies referred to the same customer register;
+**Reliance monitor**: a check of the credit will simply be performed with a potential message to the user indicating that the limit has been exceeded;
 
-**Group Monitor**: this is like the second one, except for the calculation, which is cumulative for all database companies referred to the same customer register;
+**Group lock**: similar to the first, but the calculation is cumulative for all companies in the database associated with the same customer contact;
 
-The second setting is 'Statement Control' check that make mask customer visible of customers statement.
+**Group monitor**: similar to the second, but the calculation is cumulative for all companies in the database associated with the same customer contact.
 
-
-
-
-
-
+The second setting is the ‘exposure control’ check, which makes the customer visible in the customer exposure form.

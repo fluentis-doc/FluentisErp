@@ -53,14 +53,19 @@ In questo tab è possibile impostare e salvare i parametri che servono per il ri
 
 ### Ordini di Produzione
 
-In questa sezione è possibile, tramite l'attivazione del flag **Generazione ordini di conto lavoro per operazioni esterne**, decidere che, se nella lista fasi dell'ordine pianificato di produzione che si sta rilasciando è presente una fase esterna, venga generato di conseguenza un ordine di conto lavoro per la fase esterna. Solitamente questo flag viene lasciato attivo.
+In questa sezione è possibile:
+
+- tramite l'attivazione del flag **Generazione ordini di conto lavoro per operazioni esterne**, decidere che, se nella lista fasi dell'ordine pianificato di produzione che si sta rilasciando è presente una fase esterna, venga generato di conseguenza un ordine di conto lavoro per la fase esterna. Solitamente questo flag viene lasciato attivo.
+
+- **Rilascio ordini di produzione esecutivi**; se attivo, permette di fare in modo che gli *ordini di produzione* generati tramite il rilascio degli *ordini pianificati di produzione* siano creati già nello stato di *Esecutivi* e quindi non richiedano un'ulteriore procedura di Rilascio.
 
 ### Richieste d'acquisto
 
 Nella sezione è possibile:
 
 - impostare, tramite l'apposita combo box, il **Tipo di richiesta di acquisto** che deve essere generata dal rilascio ordine pianificati di acquisto. In questa combo box viene proposto automaticamente il tipo richiesta di acquisto già impostato nei [Parametri Fabbisogno Materiali](/docs/configurations/parameters/production/resource-requirements-parameters) nella sezione Parametri per il rilascio degli ordini pianificati;      
-- attivando il flag **Proprietà approvvigionamento da Parametri MRP articolo** la procedura creerà le *richieste di acquisto* inserendo la priorità indicata nei [Parametri MRP](/docs/configurations/parameters/production/mrp-parameters/mrp-parameters-intro) del singolo articolo; mentre se non è attivo le *richieste di acquisto* verranno create con la priorità incata nella commessa a cui sono legate;      
+- attivando il flag **Proprietà approvvigionamento da Parametri MRP articolo** la procedura creerà le *richieste di acquisto* inserendo la priorità indicata nei [Parametri MRP](/docs/configurations/parameters/production/mrp-parameters/mrp-parameters-intro) del singolo articolo; mentre se non è attivo le *richieste di acquisto* verranno create con la priorità incata nella commessa a cui sono legate; 
+- **Rilascio richieste d'acquisto autorizzate**: se attivo, permette di fare in modo che le richieste di acquisto generate tramite il rilascio degli ordini pianificati di acquisto siano create con il flag di *Autorizzato* attivato automaticamente. Diversamente, l'utente che deve generare ordini fornitori da RDA sarà costretto ad autorizzare tutte le righe della richiesta di acquisto prima di poter generare un ordine da essa. È possibile comunque autorizzare solo alcune delle righe della RdA e quindi procedere alla generazione ordini fornitori partendo solo dalle righe autorizzate;    
 - fare in modo, attivando il flag **Arrotonda richiesta di acquisto**',che la procedura di rilascio ordine pianificato di acquisto arrotondi all'intero superiore la quantità che viene inserita nella riga della richiesta di acquisto che viene generata dal rilascio degli ordini pianificati di acquisto, nel caso in cui siano presenti quantità con decimali;  
 - decidere il metodo di raggruppamento: attivando infatti il flag **Raggruppa al più presto**, la procedura di rilascio effettua un raggruppamento di ordini pianificati di acquisto generati per lo stesso articolo; nella casella **Per un periodo in giorni di** si imposta il numero di giorni di range entro il quale può essere effettuato il raggruppamento, considerando le date di previsto ricevimento degli articoli, quindi le date di fine ordine pianificato di acquisto;  
 - decidere, nel caso non sia presente il fornitore nell'ordine pianificato di acquisto, se **Accettare gli ordini senza il fornitore**, **Tralasciare gli ordini senza il  fornitore** oppure **Accettare come fornitore il seguente conto** specificato nelle apposite caselle.
