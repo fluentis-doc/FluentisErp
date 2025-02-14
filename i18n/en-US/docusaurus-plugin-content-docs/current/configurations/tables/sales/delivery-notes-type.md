@@ -1,72 +1,72 @@
 ---
-title: Tipi DDT di vendita
+title: Delivery Note Types
 sidebar_position: 18
 ---
 
-:::tip[FAst Start]
-La tabella è interessata dalla procedura di [**Fast Start**](/docs/guide/fast-start)
+:::tip[Fast Start]
+The table is affected by the [**Fast Start**](/docs/guide/fast-start) procedure.
 
-Nel caso in cui si intenda configurare manualmente fare riferimento alla check list della pagina linkata
+If you intend to configure manually, refer to the checklist of the linked page.
 :::
 
-La tabella si apre tramite il percorso **Tabelle > Vendite > Tipi DDT di vendita** ed è utilizzata per determinare le proprietà di un DDT.
+The table opens through the path **Tables > Sales > Delivery Note Types** and is used to determine the properties of a delivery note .
 
-Consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+It allows for the insertion of new records or for searching existing ones to view, modify, or delete them.
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+The form consists of a filter area and a results area. Once all desired filters are set, simply click the **Search** button to display the results within the results grid.
 
-Per poter inserire nuovi record è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**. 
+To insert new records, click on the first empty row in the grid or press the **New** button.
 
-**Tipo DDT /Descrizione tipo DDT**: tipo e descrizione del tipo DDT. Il codice del DDT deve essere univoco;
+**DN Type / Description of DN Type**: type and description of the DN type. The DN code must be unique;
 
-**Numerazione:** in questo campo va inserito il codice della numerazione appropriato. Per approfondimenti fare riferimento all'articolo relativo alle [numerazioni Fluentis](/docs/configurations/tables/fluentis-numerations);
+**Numeration**: this field should contain the appropriate numbering code. For more details, refer to the article concerning [Fluentis Numeration](/docs/configurations/tables/fluentis-numerations);
 
-**Natura DDT**: in questo campo va inserita la natura del DDT: consegna, reso, c/visione e reso c/visione. Questo valore dovrà essere selezionato da un elenco;
+**DN Nature**: this field should contain the nature of the DN: delivery, return, for viewing, and return for viewing. This value must be selected from a list;
 
-**Ordine**: se attivo, questo flag indica che il DDT può essere evaso da un ordine cliente;
+**Order**: if active, this flag indicates that the DN can be fulfilled by a sales order;
 
-**Valori**: se attivo, questo flag farà si che nella stampa DDT vengano mostrati i valori delle righe articolo presenti nel documento;
+**Values**: if active, this flag will ensure that the values of the item lines present in the document are shown in the DDT print;
 
-**Tipo fattura/Descrizione tipo fattura**: in questi campi verrà definito il tipo fattura che si vorrà venga utilizzato per creare la fattura da DDT tramite l'apposita [procedura](/docs/sales/sales-invoices/procedures/create-invoices-from-delivery-notes). E' possibile creare la fattura dal DDT solo se questo campo è valorizzato con il tipo fattura;
+**Invoice Type/Invoice Type Description**: in these fields, the type of invoice that you want to be used to create the invoice from the DN via the specific [procedure](/docs/sales/sales-invoices/procedures/create-invoices-from-delivery-notes) will be defined. The invoice can only be created from the DN if this field is filled with the invoice type;
 
-**Causale Trasporto**: in questi campo andrà inserita la descrizione della causale di trasporto; si tratta di un campo di testo libero su cui indicare la causale che verrà proposta nel DDT;
+**Reason for Transport**: this field should contain the description of the transport reason; it is a free text field where the reason to be proposed in the DN should be indicated;
 
-**Controllo Cliente**: se attivo,  questo flag consente al sistema di effettuare un controllo sul tipo anagrafica del conto/sottoconto che si è inserito nel documento per verificare che sia obbligatoriamente un cliente. Se così non fosse il sistema avviserà l'utente riportando un messaggio di errore. Sarebbe Obbligatorio attivarlo su tutte le tipologie di DDT di Vendita;
+**Customer Ctrl.**: if active, this flag allows the system to perform a check on the customer account/detail account type that has been entered in the document to verify that it is necessarily a customer. If not, the system will notify the user with an error message. It is advisable to activate it on all types of Sales DN;
 
-**Blocca Doc. Stampato**: se attivo, questo flag non permette di modificare un DDT che risulti essere già con il flag Stampato settato in testata;
+**Block Listed Document**: if active, this flag does not allow modification of a DN that is already marked as Printed at the header;
 
-**Fido**: se attivo, il DDT con questo tipo rientrerà nel controllo del fido;
+**Credit**: if active, the DN of this type will be subject to credit control;
 
-**Escludi blocco**: se attivo, il sistema per questo tipo DDT non andrà a considerare il blocco del documento dovuto all'eventuale superamento fido ma permetterà comunque all'utente di poterlo inserire e stampare;
+**Exclude Lock**: if active, the system for this DN type will not consider the document lock due to potential credit limit excess but will still allow the user to enter and print it;
 
-**Cash flow**: se attivo, il tipo DDT concorre al calcolo del [cash flow](/docs/treasury/cash-flow/cash-flow/search-cash-flow).
+**Cash flow**: if active, the DDT type contributes to the calculation of [cash flow](/docs/treasury/cash-flow/cash-flow/search-cash-flow).
 
-**Magazzino/Descrizione magazzino**: in questi campi di dovrà inserire il magazzino di arrivo della merce contenuta nelle DDT appartenenti a questa tipologia. Questo valore verrà utilizzato come valore di default;
+**Warehouse/Warehouse Description**: in these fields, the receiving warehouse of the goods contained in DN belonging to this type should be entered. This value will be used as the default value;
 
-**Causale magazzino/Descrizione causale magazzino**: in questi campi invece si dovrà andare ad indicare la casuale di movimentazione della merce in arrivo contenuta nelle DDT appartenenti a questa tipologia;
+**Warehouse Template/Warehouse Template Description**: in these fields, the template for the movement of incoming goods contained in DDT belonging to this type must be indicated;
 
-**Evasione quantità articolo non sommata**: se settato questo flag consentirà, nel momento in cui si andranno ad evadere queste tipologie di DDT, di riportare le quantità evase del documento di evasione suddivise per riga articolo senza sommare le quantità;
+**Unsumed Item Quantity Order**: if this flag is set, it will allow for fulfillment of these types of DN to report the quantities fulfilled in the fulfillment document divided by item line without summing the quantities;
 
-**Agr. Acq. IVA**: se attivo, in fase di creazione DDT, il sistema andrà a verificare se per l'articolo utilizzato è presente un codice dell'IVA agricola altrimenti verrà utilizzato il codice IVA presente nell'anagrafica dell'articolo;
+**VAT Purch. Agr.**: if active, at the time of creating the DN, the system will check if there is an agricultural VAT code for the item used, otherwise it will use the VAT code present in the item register;
 
-**Controlla Picking Scaricato**: se attivo, quando si crea una DDT da un Picking scaricato, si attiva in automatico il flag scaricato per la DDT. Si consiglia di attivare sempre questo flag qualora si utilizzi la gestione picking;
+**Check Downloaded Picking**: if active, when creating a DN from a downloaded Picking, the downloaded flag for the DN is automatically activated. It is advisable to always activate this flag if using picking management;
 
-**Blocca Quantità Picking**: se attivo, blocca la quantità e la quantità alternativa nel DDT creata da lista UDC. Si consiglia di attivare sempre questo flag qualora si utilizzi la gestione picking e UDC;
+**Block Picking Quantity**: if active, it blocks the quantity and alternative quantity in the DN created from the Loading Unit list. It is advisable to always activate this flag if using picking and Loading Unit management;
 
-**Permetti scarico lotti non disponibili** se attivo, permette anche lo scarico dei lotti non disponibili;
+**Allow unload not available batches**: if active, it also allows downloading of unavailable batches;
 
-**Gestione EDI**: se attivo, per il DDT di questo tipo è possibile creare un file EDI;
+**EDI Management**: if active, it is possible to create an EDI file for this type of DN;
 
-**Prezzo Ivato**: se attivo, il sistema recupera il prezzo di vendita da listini o dall'anagrafica articolo e lo riporta con l'aggiunta dell'IVA. Se non trova il listino (nel caso per esempio di listino scaduto o listino in valuta non compatibile) recupera i costi o i prezzi dall'anagrafica articolo e li riporta comprensivi di IVA.
+**Price Including VAT**: if active, the system retrieves the selling price from price lists or from the item register and reports it with the addition of VAT. If it cannot find the price list (for example, due to an expired price list or a price list in a non-compatible currency), it retrieves costs or prices from the item register and reports them including VAT.
 
-I costi e i prezzi in anagrafica sono in EUR, quindi il sistema li andrà anche a convertire nella valuta del cliente.
+The costs and prices in the register are in EUR, so the system will also convert them into the client's currency.
 
-**Verifica lotti:** se attivo, controlla che i lotti siano congrui per gli articoli;
+**Check Batches**: if active, it checks that the batches are congruent for the items;
 
-**Gestione matrici Extra Data**: se attivo, permette di visualizzare nel caso di gestione articoli con matrice, un tab aggiuntivo per l'imputazione dei valori della quantità per singola cella di matrice. Se non attivo, non viene visualizzato questo TAB e la conseguente matrice.
+**Extra Data Matrix Management**: if active, allows for the display of an additional tab for inputting quantity values for each cell of the matrix in case of managing items with a matrix. If not active, this TAB and the corresponding matrix will not be displayed.
 
-**Gestione cespiti**: questo flag abilita la gestione dei cespiti nel tipo fattura e nel campo successivo va specificato il tipo di operazione dei cespiti;
+**Fixed Asset Management**: this flag enables the management of fixed assets in the invoice type, and in the subsequent field, the type of asset operation must be specified;
 
-**Tipo operazione**: in questa combo box è possibile selezionare il tipo di operazione dei cespiti tra diverse opzioni (rivalutazione, distruzione, plusvalenza, ecc.).       
+**Operation Type**: in this combo box, it is possible to select the type of asset operation from various options (revaluation, destruction, capital gain, etc.).
 
-**Tipo sconto/Descrizione**: in questa colonna è possibile associare la tipologia di sconto da proporre quando gli sconti vengono inseriti direttamente nella colonna *Sconti articolo* della griglia articoli dei documenti (per maggiori dettagli vedi l'articolo [Gestione Widget sconti semplificato](/docs/sales/sales-flow/discount-widget)).
+**Discount Type/Description**: in this column, it is possible to associate the type of discount to be proposed when discounts are entered directly in the *Item Discounts* column of the document's item grid (for further details see the article [Simplified Discount Widget Management](/docs/sales/sales-flow/discount-widget)). 

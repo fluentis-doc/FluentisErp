@@ -1,16 +1,16 @@
 ---
-title: Categorie sconti gestione prezzi
+title:Category Discounts Price Management
 sidebar_position: 3
 ---
 
-La tabella si apre tramite il percorso **Tabelle > Vendite > Categorie sconti gestione prezzi** e permette di definire le diverse tipologie di sconto.
+The table can be accessed via the path **Tables > Sales > Category Discounts Price Management** and allows you to define the different types of discounts.
 
-Consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+It enables the insertion of new records or the search for existing ones to view, modify, or delete them.
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+The form consists of a filter area and a result area. Once all desired filters are set, simply click the **Search** button to display the results within the result grid.
 
-Per poter inserire nuovi record è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**. 
+To insert new records, you need to click on the first empty row in the grid or press the **New** button.
 
-I dati che vanno inseriti sono il codice della categoria che deve essere univoco e la sua descrizione.
+The data that must be entered includes a unique category code and its description.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+For everything not detailed in this document regarding the common operation of forms, please refer to the following link [Custom features, buttons, and common fields](/docs/guide/common).

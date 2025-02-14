@@ -1,63 +1,62 @@
 ---
-title: Categorie agenti
+title: Agent Category
 sidebar_position: 2
 ---
 
-La tabella si apre tramite il percorso **Tabelle > Vendite > Categorie agenti**.
+The table opens via the path **Tables > Sales > Agent Category**.
 
-Consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+It allows the insertion of new records or the search for existing ones to view, modify, or delete them.
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+The form consists of a filter area and a results area. Once all desired filters are set, simply click the **Search** button to display the results within the results grid.
 
-Per poter inserire nuovi record è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**. 
+To insert new records, you must click on the first empty row in the grid or press the **New** button.
 
-La tabella **Categorie agenti**, unica per le società presenti nel database, è la tabella di base per i calcoli enasarco/firr degli agenti.
+The **Agent Category** table, unique for companies present in the database, is the base table for the Enasarco/FIRR calculations of the agents.
 
-### Categorie agente
+### Agent Category
 
-La griglia contiene le categorie per la specifica dell'Enasarco, quali:
+The grid contains the categories for the specification of Enasarco, such as:
 
-**Codice/Descrizione**: codice e descrizione che indica il codice di riferimento agente. Il codice deve essere univoco;
+**Code/Description**: code and description that indicates the agent reference code. The code must be unique;
 
-**Min Enasarco**: valore in base trimestrale. È l'importo minimo dell'enasarco;
+**MinEnasarco**: value on a quarterly basis. It is the minimum amount of the Enasarco;
 
-**Max Enasarco:** valore in base annuale. È l'importo massimo dell'enasarco (massimale) e una volta raggiunto, non è più possibile fare versamenti previdenziali in favore dell'agente;
+**MaxEnasarco:** value on an annual basis. It is the maximum amount of the Enasarco (maximal), and once reached, no further social security payments can be made on behalf of the agent;
 
-**Tipo ritenuta**: è il tipo di ritenuta da applicare all'agente. Per ulteriori approfondimenti fare riferimento alla sezione della parte amministrativa [Tipi Ritenuta](/docs/configurations/tables/finance/withholding-tax-types). Si consiglia di impostare questo codice in anagrafica agente.
+**Withholding Tax Type**: this is the type of withholding to apply to the agent. For further details, refer to the administrative section [Withholding Tax Types](/docs/configurations/tables/finance/withholding-tax-types). It is advisable to set this code in the agent contact.
 
-**Perc Enasarco**: percentuale dell'Enasarco a carico dell'agente;
+**Perc Enasarco**: percentage of the Enasarco borne by the agent;
 
-**Perc Enasarco Ditta:** percentuale dell'Enasarco a carico della ditta;
+**Percentage Insurance fund company:** percentage of the Enasarco borne by the company;
 
-**Imp Enasarco**: la percentuale (100%) di applicazione delle percentuali Enasarco sul totale provvigionale;
+**Base amount insurance fund**: the percentage (100%) of the application of the Enasarco percentages on the total commission;
 
-**Monomandatario:** Flag che identifica le categoria monomandatarie;
+**One-firm:** Flag that identifies the one-firm categories;
 
-**Plurimandatario:** Flag che identifica le categoria plurimandatarie;
+**Multifirm:** Flag that identifies the multifirm categories;
 
-**Generico:** Flag che identifica le categorie generiche;
+**Generic:** Flag that identifies the generic categories;
 
-### Firr
+### FIRR
 
-La griglia viene utilizzata per il calcolo del FIRR (Fondo indennità risoluzione rapporto):
+The grid is used for the calculation of the FIRR (Termination Indemnity Fund for Trade Agents – Italy):
 
 ![](/img/it-it/configurations/tables/sales/agent-category/image03.png)
 
-**Riga**: identifica il numero di riga. Deve essere univoco su tutti le categorie agenti;
+**Row**: identifies the row number. It must be unique across all agent categories;
 
-**Percentuale**: percentuale del tributo;
+**Percentage**: percentage of the tax;
 
-**DA provvigioni/A provvigioni**: limite inferiore e limite superiore di questo tributo;
+**From commissions/To commissions**: lower limit and upper limit of this tax;
 
-Questa griglia dovrà essere popolata seguendo le indicazioni previste per questo trattamento
+This grid must be populated following the instructions provided for this treatment.
 
-Aliquote per agenti monomandatari
+Rates for one-firm agents
 
 ![](/img/it-it/configurations/tables/sales/agent-category/image04.png) 
 
-Aliquote per agenti plurimandatari
+Rates for multifirm agents
 
- ![](/img/it-it/configurations/tables/sales/agent-category/image05.png)
+![](/img/it-it/configurations/tables/sales/agent-category/image05.png)
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
-
+For all that is not detailed in this document regarding the common functioning of the forms, please refer to the following link [Custom features, buttons, and fields](/docs/guide/common).

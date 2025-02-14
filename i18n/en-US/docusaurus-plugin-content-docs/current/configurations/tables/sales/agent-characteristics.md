@@ -1,16 +1,16 @@
 ---
-title: Caratteristiche agente
+title: Agent Features 
 sidebar_position: 7
 ---
 
-E' una tabella descrittiva per l'agente e può essere utilizzata nella sua anagrafica. E' comune a tutte le società presenti nella base dati ed è costituita da una semplice tabella codice/descrizione, al fine di codificare gli agenti in report/statistiche personalizzate.
+It is a descriptive table for the agent and can be used in its register. It is common to all companies present in the database and consists of a simple code/description table, in order to encode agents in customized reports/statistics.
 
-La tabella si apre tramite il percorso **Tabelle > Vendite > Caratteristiche agente**.
+The table can be accessed through the path **Tables > Sales > Agent Features**.
 
-Consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+It allows you to insert new records or to search for existing ones to view, modify, or delete them.
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+The form consists of a filter area and a results area. Once all desired filters are set, simply click the **Search** button to view the results within the results grid.
 
-Per inserire nuovi record è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**. 
+To insert new records, you need to click on the first empty row in the grid or press the **New** button.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+For anything not detailed in this document regarding the common functionality of forms, please refer to the following link [Custom features, buttons, and fields](/docs/guide/common).
