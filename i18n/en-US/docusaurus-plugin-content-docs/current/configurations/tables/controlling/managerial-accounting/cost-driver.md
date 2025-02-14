@@ -84,7 +84,7 @@ Essentially, for reallocations, this field defines whether or not to consider th
 :::
 
 
-- ***REVERSAL FLAG (FLAG STORNO)***: this flag answers the question of whether to keep the data from the origin dimension or to *move* them to the destination dimension.
+- ***REVERSAL FLAG***: this flag answers the question of whether to keep the data from the origin dimension or to *move* them to the destination dimension.
 
 :::tip Note
 When the driver is linked to the project/job order dimension, I must definitely keep the value also in the origin, which is the management; otherwise, I would miss some costs, and any economic accounts would be inaccurate.
