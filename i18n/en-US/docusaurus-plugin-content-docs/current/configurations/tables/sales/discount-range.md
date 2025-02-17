@@ -1,28 +1,28 @@
 ---
-title: Range sconto
+title: Discount Range 
 sidebar_position: 17
 ---
 
-La tabella si apre tramite il percorso **Tabelle > Vendite > Range sconto** e consente di definire l'elemento sul quale definire la variabilità degli scaglioni di applicazione degli sconti, sui quali definire le provvigioni agenti.
+The table opens via the path **Tables > Sales > Discount Range** and allows you to define the element on which to set the variability of the discount application brackets, on which to establish the agent commissions.
 
-Consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+It allows you to insert new records or search for existing ones to view, modify, or delete them.
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+The form consists of a filter area and a result area. Once all desired filters are set, simply click the **Search** button to display the results within the result grid.
 
-Per poter inserire nuovi record è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**. 
+To insert new records, you must click in the grid on the first empty row or press the **New** button. 
 
-**Range/Descrizione**: in questi campi vanno inseriti un codice ed una descrizione per identificare il range dello sconto;
+**Range/Description**: in these fields, a code and a description should be entered to identify the discount range;
 
-**Unico**: con questo flag le fasce provvigionali di sconto saranno applicate su tutti gli articoli indifferenziatamente;
+**Unique**: with this flag, the discount commission brackets will be applied to all items indiscriminately;
 
-**Classi art-**: con questo flag si potranno definire tante fasce provvigionali di sconto quante sono le classi articolo;
+**Item Class**: with this flag, you can define as many discount commission brackets as there are item classes;
 
-**Listini**: con questo flag si potranno definire tante fasce provvigionali di sconto quanti sono i listini di vendita (non personalizzati) definiti;
+**Price Lists**: with this flag, you can define as many discount commission brackets as there are defined (non-customized) sales price lists;
 
-**Tipo art.**: con questo flag si potranno definire tante fasce provvigionali di sconto quante sono i tipi articolo;
+**Item Type**: with this flag, you can define as many discount commission brackets as there are item types;
 
-**Caratteristica**: con questo flag si potranno definire tante fasce provvigionali di sconto quante sono le caratteristiche articolo;
+**Characteristic**: with this flag, you can define as many discount commission brackets as there are item characteristics;
 
-**Cat. merceologica**: con questo flag si potranno definire tante fasce provvigionali di sconto quante sono le categorie merceologiche degli articoli.
+**Product cat.**: with this flag, you can define as many discount commission brackets as there are product categories of the items.
  
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+For everything not detailed in this document regarding the common functions of the forms, refer to the following link [Custom features, buttons, and fields](/docs/guide/common).

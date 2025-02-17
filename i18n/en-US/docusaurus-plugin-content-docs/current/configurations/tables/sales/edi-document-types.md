@@ -1,28 +1,28 @@
 ---
-title: Tipi Documento EDI
+title: EDI Document Types 
 sidebar_position: 19
 ---
 
-La tabella si apre tramite il percorso **Tabelle > Vendite > Tipi Documento EDI** ed è utilizzato per determinare le proprietà di un documento EDI.
+The table is accessed via the path **Tables > Sales > EDI Document Types** and is used to determine the properties of an EDI document.
 
-Consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+It allows for the entry of new records or searching for existing ones to view, modify, or delete them.
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+The form consists of a filter area and a results area. Once all desired filters are set, simply click the **Search** button to display the results within the results grid.
 
-Per poter inserire nuovi record è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.
+To insert new records, you must click on the first empty row in the grid or press the **New** button.
 
-**Tipo**: codice tipo EDI.
+**Type**: EDI type code.
 
-**Descrizione**: descrizione Tipo EDI.
+**Description**: EDI type description.
 
-**Tipo num.**: tipo numerazione EDI associato al tipo EDI.
+**Num. type**: EDI numeration type associated with the EDI type.
 
-**Tipo ordine**: tipo ordine cliente per la creazione del documento EDI.
+**Order type**: sales order type for creating the EDI document.
 
-**Tipo previsione di vendita**: è settato in automatico la previsione settimanale per la creazione del documento EDI.
+**Sales forecast type**: automatically set to the weekly forecast for creating the EDI document.
 
-**Default**: se settato, contrassegna il tipo EDI di default per la creazione automatica di documenti EDI.
+**Default**: if set, marks the EDI type as the default for automatic creation of EDI documents.
 
-**Note**: note relative al tipo EDI.
+**Notes**: notes related to the EDI type.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+For everything not detailed in this document about the common functionality of forms, refer to the following link [Custom features, buttons, and fields](/docs/guide/common).

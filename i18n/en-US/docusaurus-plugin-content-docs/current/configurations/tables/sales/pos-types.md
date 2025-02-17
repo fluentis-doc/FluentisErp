@@ -1,76 +1,76 @@
 ---
-title: Tipi POS
+title: POS Types 
 sidebar_position: 25
 ---
 
 :::tip[FAst Start]
-La tabella è interessata dalla procedura di [**Fast Start**](/docs/guide/fast-start)
+The table is affected by the [**Fast Start**](/docs/guide/fast-start) procedure.
 
-Nel caso in cui si intenda configurare manualmente fare riferimento alla check list della pagina linkata
+If you intend to configure manually, refer to the checklist on the linked page.
 :::
 
-La tabella si apre tramite il percorso **Tabelle > Vendite > Tipi POS**.
+The table opens via the path **Tables > Sales > POS Types**.
 
-### Ricerca POS
+### Search POS
 
-Consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+Allows for the insertion of new records or to search for already existing ones to view, modify, or delete them.
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+The form consists of a filter area and a result area. Once all desired filters are set, simply click the **Search** button to display the results within the result grid.
 
-Per modificare/visualizzare un tipo POS basta fare doppio click sulla riga desiderata oppure premere il pulsante **Modifica**.
+To modify/view a POS type, double-click the desired row or press the **Modify** button.
 
-Per inserire nuovi record è necessario premere il pulsante **Nuovo** che aprirà una nuova form di inserimento. 
+To insert new records, you need to press the **New** button, which will open a new entry form.
 
-### Inserimento/Modifica POS
+### POS Insertion/mMdification
 
-In questa form si andranno ad inserire tutti i dati relativi al nuovo tipo di POS che si vuole inserire, quali:
+In this form, all data related to the new type of POS to be inserted will be entered, such as:
 
-**Tipo e descrizione**: in questi campi di dovrà andare a definire il tipo e la descrizione del POS;
+**Type and description**: in these fields, the type and description of the POS must be defined;
 
-**Numerazione**: in questo campo si andrà ad inserire il codice della numerazione appropriato. Per approfondimenti sulle numerazioni del gestionale riferimento all'articolo  [Numerazioni Fluentis](/docs/configurations/tables/fluentis-numerations); 
+**Numeration**: in this field, the appropriate numeration code will be entered. For further details on management numerations, refer to the article [Fluentis Numerations](/docs/configurations/tables/fluentis-numerations);
 
-**Default**: se attivo, questo flag indica il tipo POS di default che viene proposto alla creazione di un nuovo POS;
+**Default**: if active, this flag indicates the default POS type that is proposed when creating a new POS;
 
-**Note**: questo è un campo di testo libero nel quale si potranno andare ad inserire eventuali note descrittive che verranno poi visualizzate nelle relative stampe;
+**Notes**: this is a free text field where any descriptive notes can be entered, which will then be displayed in the respective prints;
 
-**Prezzo Ivato**: se attivo, i prezzi presenti nell'offerta verranno riportati comprendendo l'IVA;
+**Price including VAT**: if active, the prices present in the offer will be displayed including VAT;
 
-**Acconto**: se attivo, questo flag indica che il POS è di tipo acconto e potrà essere stornato con una transazione con un tipo di POS ordinario;
+**On-account**: if active, this flag indicates that the POS is of deposit type and can be canceled with a transaction using an ordinary POS type;
 
-**Server P.O.S/Database/Tabella**: in questi campi si andrà a selezionare il Server, il Database e la Tabella dove leggere e/o scrivere i dati dei POS;
+**Server name/Database/Table**: in these fields, the Server, Database, and Table from which to read and/or write POS data will be selected;
 
-**Tabella coll. documenti**: tabella dove leggere e/o scrivere i dati dei documenti collegati ai POS;
+**Document Collection Table**: table to read and/or write data of documents linked to the POS;
 
-**UM arr.**: UM utilizzata nella creazione di DDT e fatture da POS;
+**MU Arrival**: MU used in the creation of DN and invoices from the POS;
 
-**IVA arr./Descrizione IVA**: codice IVA utilizzato nella creazione di DDT e fatture da POS;
+**VAT Arrival/VAT Description**: VAT code used in the creation of DN and invoices from the POS;
 
-**Punto vendita**: punto vendita in cui vengono creati i POS;
+**POS description**: point of sale where the POS are created;
 
-**Cassa**:  in questo campo va indicato il codice della cassa da collegare ai POS;
+**Counter**: in this field, the code of the counter to be linked to the POS must be indicated;
 
-**Cat. merc.**: in questo campo viene riportata la categoria merceologica riportata sull'ordine;
+**Prod. cat.**: in this field, the mercantile category reported on the order is indicated;
 
-**IVA**: codice IVA da utilizzare nei POS;
+**VAT**: VAT code to be used in the POS;
 
-**Magazzino**: in questo campo va indicato il magazzino di impegno della merce contenuta in POS di questo tipo;
+**Warehouse**: in this field, the warehouse of the goods commitment contained in this type of POS must be indicated;
 
-**Causale**: in questo campo va indicata la causale di movimentazione della merce impegnata contenuta in POS di questo tipo;
+**Causal**: in this field, the reason for the movement of the committed goods contained in this type of POS must be indicated;
 
-**Tipo pagamento**: in questo campo viene proposto il tipo pagamento proposto nei POS di questo tipo;
+**Payment Type**: in this field, the payment type proposed in the POS of this type is offered;
 
-**Soluzione di pagamento**: in questo campo va indicata la soluzione di pagamento proposta nei POS di questo tipo;
+**Payment Term**: in this field, the payment solution proposed in the POS of this type is indicated;
 
-**Listino**: in questo campo viene indicato il codice listino generale da cui vengono ripresi i prezzi degli articoli da inserire nel POS;
+**Price List**: in this field, the general price list code from which the prices of the items to be inserted into the POS are taken is indicated;
 
-**Data validità**: qui verrà riportata la data validità del listino generale;
+**Validity Date**: here the validity date of the general price list will be reported;
 
-**Scarico automatico alla chiusura del corrispettivo**: se attivo, quando il POS viene stampato viene automaticamente anche scaricato da magazzino, altrimenti bisognerà procedere con lo scarico manuale;
+**Automatic unload when closing consideration**: if active, when the POS is printed, it is also automatically allocated from the warehouse; otherwise, manual allocation must be carried out;
 
-**E' necessario il registratore di cassa**: se attivo, questo flag indica che per utilizzare i POS è necessario il collegamento con un registratore di cassa per la stampa dello scontrino fiscale;
+**Need cash register**: if active, this flag indicates that it is necessary to connect to a cash register to print the receipt;
 
-**Visualizza varianti**: se attivo, possono essere utilizzate anche le varianti articolo;
+**View variants**: if active, item variants can also be used;
 
-**Visualizza attributi**: se attivo, possono essere utilizzati anche gli attributi articolo.
+**View attributes**: if active, item attributes can also be used.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+For everything not detailed in this document regarding the common functionality of the forms, refer to the following link [Custom features, buttons, and fields](/docs/guide/common).

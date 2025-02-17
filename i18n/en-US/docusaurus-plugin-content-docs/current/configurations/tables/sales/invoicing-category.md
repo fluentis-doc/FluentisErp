@@ -1,16 +1,16 @@
 ---
-title: Categoria fatturazione
+title: Invoicing Category
 sidebar_position: 6
 ---
 
-La tabella si apre tramite il percorso **Tabelle > Vendite > Categoria fatturazione** e serve per indicare la frequenza di fatturazione per ogni cliente. Questo dato viene inserito in anagrafica cliente ed è utilizzato come filtro per la fatturazione.
+The table opens via the path **Tables > Sales > Invoicing Category** and is used to indicate the invoicing frequency for each customer. This data is entered in the customer contact and is used as a filter for invoicing.
 
-Consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+It allows the insertion of new records or the search for existing ones to view, modify, or delete them.
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+The form consists of a filter area and a results area. Once all desired filters are set, simply click the **Search** button to display the results within the results grid.
 
-Per poter inserire nuovi record è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**. 
+To insert new records, you need to click on the first empty row in the grid or press the **New** button. 
 
-I dati che devono essere inseriti per ogni categoria sono il **Codice** della nuova categoria che deve essere univoco, e la sua **Descrizione**.
+The data that must be entered for each category are the **Code** of the new category, which must be unique, and its **Description**.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+For anything not detailed in this document about the common functioning of forms, please refer to the following link [Custom features, Buttons, and Common Fields](/docs/guide/common).
