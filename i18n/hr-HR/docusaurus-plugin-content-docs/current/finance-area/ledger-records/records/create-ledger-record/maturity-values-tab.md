@@ -4,16 +4,11 @@ sidebar_position: 3
 ---
 
 La scheda Partite è presente **solo se la causale ha il flag 'Apertura partite'** impostato.
-
  
 
-![](/img/it-it/finance-area/ledger-records/records/create-ledger-record/maturity-values-tab/image01.png)
+### **La prima sezione** della scheda **Partite** 
 
- 
-
- 
-
-**La prima sezione** della scheda ‘Partite' è dedicata alla gestione dei dati di calcolo delle partite sottostanti e ricalca le condizioni di pagamento per una registrazione manuale di tipo IVA troveremo la griglia compilata con i dati di default così come inseriti all'interno dell'anagrafica cliente/fornitore/agente assegnata come sottoconto intestatario della registrazione stessa. Per altri tipi di registrazione (ad esempio, per i pagamenti anticipati è possibile codificare una causale che apra la partita, nel segno opposto, invece di chiuderla visto che il documento non è stato ancora rilevato): in questo caso la gestione di questa sezione diventa manuale, cosicché l'utente potrà inserire i dati essenziali del tipo di pagamento, della soluzione di pagamento e del sottoconto di riferimento, con il 100% inserito nel campo 'Percentuale'.
+è dedicata alla gestione dei dati di calcolo delle partite sottostanti e ricalca le condizioni di pagamento per una registrazione manuale di tipo IVA troveremo la griglia compilata con i dati di default così come inseriti all'interno dell'anagrafica cliente/fornitore/agente assegnata come sottoconto intestatario della registrazione stessa. Per altri tipi di registrazione (ad esempio, per i pagamenti anticipati è possibile codificare una causale che apra la partita, nel segno opposto, invece di chiuderla visto che il documento non è stato ancora rilevato): in questo caso la gestione di questa sezione diventa manuale, cosicché l'utente potrà inserire i dati essenziali del tipo di pagamento, della soluzione di pagamento e del sottoconto di riferimento, con il 100% inserito nel campo 'Percentuale'.
 
 Per questa sezione è da segnalare che:
 
@@ -31,13 +26,15 @@ Per questa sezione è da segnalare che:
 
 - nel caso di registrazione derivante dalla **contabilizzazione insoluti**, la griglia superiore NON ha nessuna rilevanza per il calcolo delle partite sottostanti (tipicamente l'anagrafica prevede partite per RB, ma gli insoluti vengono gestiti come BB e non si devono riemettere in automatico altre riba): viene letta unicamente nel caso serva il dato degli appoggi bancari.
 
-**La griglia sottostante** presenta la lista delle partite calcolate secondo le impostazioni della sezione sopra: l'utente può forzare il tipo di pagamento, la data scadenza e gli importi delle varie rate (avendo cura di rispettare i totali). La griglia delle partite NON consente l'inserimento manuale di una nuova rata. 
+### **La griglia sottostante** 
+
+presenta la lista delle partite calcolate secondo le impostazioni della sezione sopra: l'utente può forzare il tipo di pagamento, la data scadenza e gli importi delle varie rate (avendo cura di rispettare i totali). La griglia delle partite NON consente l'inserimento manuale di una nuova rata. 
 
 Nel caso in cui la causale preveda sia l'apertura partite, che la chiusura per compensazione e sia stato attivato anche il flag 'Avviso', al momento del salvataggio della registrazione verrà restituito all'utente un messaggio di avviso della presenza di partite da poter compensare.
 
  
 
-I dati riportati per ogni partita creata sono:
+### I dati riportati per ogni partita creata sono:
 
 **Descrizione**: viene indicato lo stato della partita (aperta, parzialmente aperta, chiusa);
 
@@ -67,7 +64,7 @@ I dati riportati per ogni partita creata sono:
 
 E' inoltre possibile bloccare il pagamento della partita (Flag **Non Pagabile**): la procedura memorizzerà la data e l'utente che ha bloccato il pagamento con un'eventuale nota esplicativa (**Inizio Blocco, Utente Blocco, Note Blocco**) così come data e utente sbloccante (**Utente Sblocco, Fine Blocco**), per entrambe le operazioni sono previsti specifici diritti utente nell'ARM. 
 
-Ulteriori elementi:
+### Ulteriori elementi:
 
 **Numero / anno partita**: assegnati automaticamente per identificare la partita;
 
@@ -76,8 +73,6 @@ Ulteriori elementi:
 **Posizione partita**: combo box collegata ad una una tabella libera definibile dall'utente, consente di classificare le partite contabili fin dal momento della loro creazione; 
 
 **Note** (della partita): note libere che si possono anche legare automaticamente in causale contabile alla descrizione di dettaglio del sottoconto così come inserite in contabilità. 
-
-![](/img/it-it/finance-area/ledger-records/records/create-ledger-record/maturity-values-tab/image02.png)
 
  
 
@@ -93,28 +88,13 @@ Ulteriori elementi:
 
 
 
-
-
-RIBBON BAR: rappresenta il menu della Form in oggetto, ossia l'area nella quale è possibile effettuare delle azioni. La lista delle funzionalità possibili nel tab corrente è di seguito rappresentata:
-
-
-
 | Funzione | Significato |
 | --- | --- |
-| Salva | Pulsante per salvare la registrazione. |
-| Nuova registrazione | Pulsante per creare una nuova registrazione. |
-| Parametri di inserimento | Richiama i parametri di inserimento della prima nota. |
-| Apri anagrafica | Pulsante per richiamare, la gestione anagrafica del sottoconto selezionato, o in assenza, la ricerca di un'altra anagrafica. |
 | Cancella le partite | Pulsante per cancellare la partita creata in automatico in base alla tipologia di pagamento inserita. |
 | Cancellazione dalla griglia dei pagamenti | Pulsante per cancellare la soluzione di pagamento, proposta in automatico dall'anagrafica, o inserita manualmente. |
 | Ricalcola partite | Pulsante per ricalcolare la partita forzata manualmente. |
 | Raggruppa partite | Pulsante per raggruppare le partite in presenza di più partite con stessa data scadenza. |
 
-
-
-| Funzione | Significato |
-| --- | --- |
-|  [Document Manager](/docs/guide/common/operations-with-data/document-manager)  | Pulsante per il collegamento alla gestione documentale. |
 
 
 
