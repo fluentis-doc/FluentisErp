@@ -108,9 +108,9 @@ jobs:
             # Define mappings of languages to team member usernames
             declare -A team_usernames
             team_usernames=( 
-                ["en-US"]="adi-fluentis" 
+                ["en-US"]="alba-fluentis" 
                 ["ro-RO"]="rodica1234" 
-                ["hr-HR"]="adi-fluentis" 
+                ["hr-HR"]="Federica-fluentis" 
             )
             
             # get last commit message for use in issue title

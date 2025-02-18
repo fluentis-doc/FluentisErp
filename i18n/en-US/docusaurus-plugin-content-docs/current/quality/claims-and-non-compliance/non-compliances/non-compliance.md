@@ -57,7 +57,7 @@ It is possible to specify various fields with the **Notes** next to them.
 ## Materials Used 
 This tab contains materials possibly used to remedy the defect. The materials data are accompanied by their respective costs.
 
-## Defective objects (Oggetti difettosi)
+## Defective objects 
 Contains all the items in which the defect from the main grid was detected. The data entered in this tab will populate the **Values** of the header.
 
 ## Subjects involved

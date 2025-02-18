@@ -1,0 +1,14 @@
+{
+    "siteConfig.title":{
+        "message":"Fluentis ERP Documentation",
+        "description":"Homepage title"
+     },
+     "siteConfig.tagline":{
+        "message":"La guida progettata per supportarti nell’utilizzo quotidiano di Fluentis ERP",
+        "description":"Homepage subtitle"
+     },
+     "siteConfig.introductionButton":{
+        "message":"Introduzione",
+        "description":"Label for the introduction button on the homepage"
+     }
+   }

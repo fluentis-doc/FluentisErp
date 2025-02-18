@@ -1,12 +1,6 @@
 ---
-title: Closures Day-Book
+title: Day-Book Closures
 sidebar_position: 2
 ---
 
-The report enables the user to print the off-balance records associated to a certain mid-year closure.
-
-
-
-
-
-
+The print report can be launched from the Extracontable Registrations Search mask for closures and allows printing, in fact, the extracontable registrations associated with a specific mid-year closing.

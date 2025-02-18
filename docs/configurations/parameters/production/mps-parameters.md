@@ -14,7 +14,7 @@ Se il *Tipo commessa* è:
 - *Monoprodotto*, l'unico raggruppamento ammesso è quello per Articolo: questo tipo di gestione permette all'utente di far generare automaticamente dal sistema una serie di commesse monoprodotto, selezionando una lista di righe di ordini clienti, righe provenienti da Previsioni di Vendita o dal Piano Principale di Produzione o provenienti dal Sottoscorta, facendo in modo che ciascuna commessa che verrà generata presenti la somma delle quantità richieste per lo stesso articolo. La data di fine di una commessa raggruppata è sempre uguale a quella del fabbisogno più vicino alla data in cui si lancia l'elaborazione.  
 - *Multiprodotto* i raggruppamenti possono essere effettuati per cliente, commessa di vendita,  cliente/commessa, e consentono all'utente di inserire nella stessa commessa Multiprodotto più articoli provenienti da righe d'ordine cliente legate allo stesso cliente, alla stessa commessa di vendita oppure alla stessa commessa di vendita dello stesso cliente.
 
-La **Priorità approvvigionamento** sarà il default per quando verranno generate le commesse.
+Il campo **Priorità approvvigionamento**, permette di inserire un valore di default per la priorità delle commesse create; questa verrà considerata dalla procedura di [Schedulazione a capacità finita](/docs/planning/ms-master-scheduling/finite-capacityscheduling/).
 
 **Generazione commessa da**   
 In questa sezione l'utente può impostare con gli appositi flag se la commessa debba essere generata da *Ordini clienti* o da un *Previsionale* (nello specifico poi può selezionare se da *Previsioni di vendita*, e/o da *Piano principale di produzione*).  
@@ -32,7 +32,13 @@ Ci sono poi una serie di flag:
 
 **Aggiornamento data merce pronta**: se attivo, quando viene cambiata la data di fine prevista lavorazione in una commessa (manualmente o da una procedura), la nuova data viene riportata anche sul campo *Data merce pronta* della commessa stessa e anche dell’ordine cliente collegato. Inoltre, è stata creata anche la tabella di log chiamata **MS_ProductionJobOrderItemReadyGoodsDateLogs** che tiene traccia di tutte le modifiche fatte. Questa è consultabile solo tramite SQL.           
 
-**Generazione automatica Flusso di produzione**: se attivo, l'utente può decidere di attivare il flag **Schedulazione**, che permette di vedere già schedulate le commesse di produzione non appena generate dalla **Generazione commesse di produzione**. L'attivazione del flag *Schedulazione* consente poi di attivare il flag **Rilascio**, che permette di decidere se dopo la schedulazione automatica gli ordini pianificati di acquisto, produzione e/o conto lavoro debbano essere rilasciati anch'essi in automatico. In quest'ultimo caso, per gli ordini pianificati di produzione si può attivare anche il flag **Rilascio OP esecutivi**, che permette di generare direttamente ordini di produzione esecutivi, saltando quindi anche la procedura di Rilascio ordini di produzione.  
+**Generazione automatica Flusso di produzione**: se attivo, l'utente può decidere di attivare il flag **Schedulazione**, il quale permette all’utente di definire il livello di automatizzazione che desidera nella generazione del flusso di produzione; questo flusso verrà avviato direttamente con il pulsante **Generazione flusso** presente in [Generazione commesse di produzione](/docs/planning/mps-master-production-scheduling/job-order-creation).       
+Quindi ad esempio, l'utente può attivare il flag **Schedulazione**, che permette di vedere già schedulate le commesse di produzione non appena generate dalla [Generazione commesse di produzione](/docs/planning/mps-master-production-scheduling/job-order-creation). A sua volta l'attivazione del flag **Schedulazione** consente poi di attivare il flag **Rilascio**, che permette di decidere se dopo la schedulazione automatica gli ordini pianificati di acquisto, produzione e/o conto lavoro debbano essere rilasciati anch'essi in automatico. In quest'ultimo caso, per gli **ordini pianificati di produzione** si può attivare anche il flag **Rilascio ordini di produzione esecutivi**, che permette di generare direttamente ordini di produzione esecutivi, saltando quindi anche la procedura di [Rilascio ordini di produzione](/docs/planning/ms-master-scheduling/planned-orders/procedures/release-planned-orders). 
+
+:::note Importante
+Questo automatismo può essere attivato anche alla conferma dell’ordine cliente solo se nella tabella dei [Tipi ordine cliente](/docs/configurations/tables/sales/sales-order-types/) è stato inserito il **Tipo commessa di produzione** e attivato il flag **Generazione commessa di produzione**.     
+Si ricorda che per scatenare l’automatismo, l’ordine cliente deve essere *confermato*, *stampato* e devono essere presenti le *date di consegna* e *merce pronta* in tutte le righe articolo.
+:::
 
 **Costificazione commessa**      
 In questa sezione è possibile indicare dei parametri che saranno proposti come defualt per la costificazione delle commesse di produzione.    
@@ -40,23 +46,20 @@ In questa sezione è possibile indicare dei parametri che saranno proposti come 
 > **Tipo di costo**: permette di indicare il tipo di costo da utilizzare per la costificazione delle materie prime tra costo *Ultimo*, *Medio* e *Standard*;    
 > **Tipo di ricarico**: permette di indicare il tipo di ricarico tra *Costo* (a valore) e *Percentuale*; nel campo accanto è possibile inserire il valore corrispondente;      
 > **Costo del lotto**: attivando questo flag, la procedura valorizzerà il costo del materiale in base al tipo costo selezionato considerando i valori solo di quello specifico lotto;     
-> **Costo della commessa**: attivando questo flag, la procedura valorizzerà il costo del materiale in base al tipo costo selezionato considerando i valori solo di quella specifica commesa.     
+> **Costo della commessa**: attivando questo flag, la procedura valorizzerà il costo del materiale in base al tipo costo selezionato considerando i valori solo di quella specifica commessa.     
 
 :::note Nota
-Se **Costo del lotto** e **Costo della commessa** sono attivati entrambi, la procedura valorizzerà il costo del materiale in base al tipo costo selezionato considerando i valori solo di quella specifica commesa e per quello specifico lotto.
+Se **Costo del lotto** e **Costo della commessa** sono attivati entrambi, la procedura valorizzerà il costo del materiale in base al tipo costo selezionato considerando i valori solo di quella specifica commessa e per quello specifico lotto.
 ::: 
 
-**Magazzini di schedulazione commesse**   
+**Magazzini di pianificazione commesse**   
 Questa griglia è la semplice visualizzazione della lista di magazzini su cui deve essere controllata la disponibilità in sede di generazione commessa di produzione. Questa lista viene impostata nella form chiamata *Calcolo disponibilità* che si trova in *Home > Articoli >  [Calcolo disponibilità](/docs/erp-home/registers/items/calculate-availability)*.
 
-**Dati ultima schedulazione**   
-Questa sezione contiene alcuni dati riepilogativi dell'ultima schedulazione (data e ora inizio, numero di errori generati, data e ora fine, progressivo di schedulazione).
+**Parametri proposti pianificazione**: permette di definire quali parametri proporre per la pianificazione, può riproporre i parametri dell’ultima pianificazione effettuata, oppure proporre i parametri utilizzati per la pianificazione dal singolo operatore.
 
-**Parametri proposti schedulazione**: permette di definire quali parametri proporre per la schedulazione, può riproporre i parametri dell’ultima schedulazione effettuata, oppure proporre i parametri utilizzati per la schedulazione dal singolo operatore.
+**Giorni prossima pianificazione**: indica il numero di giorni che verranno usati per incrementare la data inizio della schedulazione a capacità finita (campo *Dalla data*), nel tab *Parametri schedulazione a capacità finita* della form *Schedulazione a capacità finita*.
 
-**Giorni prossima schedulazione**: indica il numero di giorni che verranno usati per incrementare la data inizio della schedulazione a capacità finita (campo *Dalla data*), nel tab *Parametri schedulazione a capacità finita* della form *Schedulazione a capacità finita*.
-
-**Numero massimo di mesi per la schedulazione**: indica il numero di mesi da aggiungere alla data odierna per determinare la data di fine schedulazione *Schedulare fino al* presente nei parametri della *Schedulazione generale*.        
+**Numero massimo di mesi per la pianificazione**: indica il numero di mesi da aggiungere alla data odierna per determinare la data di fine schedulazione *Pianificazione fino al* presente nei parametri della *Pianificazione generale*.        
 
 **Numero massimo di mesi per il calcolo della disponibilità materiali**: è possibile definire l’orizzonte temporale per il calcolo della disponibilità, nello specifico viene inserito il numero di mesi in cui verranno considerati i documenti; invece, i documenti con data successiva ai mesi presi in considerazione non saranno considerati nella schedulazione.   
 

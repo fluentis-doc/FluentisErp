@@ -24,9 +24,9 @@ The form is composed of a filter area and a results area. Once all desired filte
 To enter new *Control Plans*, it is necessary to press the **New** button.   
 
 
-### ![](/img/neutral/common/edit.png) Edit or ![](/img/neutral/common/view.png) View Control Plans 
+### ![](/img/neutral/common/edit.png) Modify or ![](/img/neutral/common/view.png) View Control Plans 
 
-To open the management of the results grid, you must double-click on the row of interest or, by selecting one or more rows, press the **Edit** or **View** buttons.   
+To open the management of the results grid, you must double-click on the row of interest or, by selecting one or more rows, press the **Modify** or **View** buttons.   
 
 
 *Specific buttons*:  

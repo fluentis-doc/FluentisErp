@@ -15,7 +15,7 @@ Per poter essere visualizzate all'interno di questo tab, le righe d'ordine devon
 - la riga non deve essere stata evasa tramite *Picking list*, o *DDT di vendita*, o *Fattura di vendita*;  
 - la riga non deve essere stata messa *Forzatamente evasa* e quindi deve risultare in stato *Non Evasa* oppure *Parzialmente evasa*;  
 - dalla riga non devono ancora essere state generate *Commesse di produzione*;  
-- la riga deve avere la *Data merce pronta* inserita nell'*Ordine cliente* all'interno del tab *Articoli* da cui proviene;  
+- la riga deve avere la *Data merce pronta* e *Data consegna* inserite nell'*Ordine cliente* all'interno del tab *Articoli* da cui proviene;  
 - l'ordine cliente da cui proviene la riga deve essere *Stampato* e *Confermato*.
 
 :::note Nota
@@ -30,16 +30,16 @@ Nell'area di filtro in cui è possibile filtrare solamente le righe ordine che s
 **Numero**: rappresenta il numero dell'ordine cliente;     
 **Anno**: rappresenta l'anno dell'ordine cliente;     
 **Data ordine cliente**: rappresenta la data dell'ordine cliente;     
-**Numero riga**: rappresenta il numero di riga dell'ordine cliente;     
+**Numero riga**: rappresenta il numero di riga dell'ordine cliente;        
+**Cliente**: rappresenta il conto e sottoconto del cliente dell'ordine cliente;         
 **Classe** e **Codice articolo**: rappresentano la classe e il codice dell'articolo;             
 **Variante**: rappresenta la variante dell'articolo;          
-**Data OC**: rappresenta la data inserimento ordine;     
 **Quantità**: rappresenta la quantità ancora da evadere della riga d'ordine;   
 **Disponibilità**: rappresenta la quantità disponibile dell'articolo nella data di merce pronta della riga d'ordine;           
-**UM**: rappresenta l'unità di misura;        
+**Unità di misura**: rappresenta l'unità di misura;        
 **Consegna**: rappresenta data di merce pronta della riga d'ordine;  
-**Tipo commessa** e **Decrizione commessa**: rappresentano il codice e la descrizione del tipo commessa;    
-**Descrizione articolo**: rappresenta la descriozione dell'articolo;          
+**Tipo commessa** e **Descrizione commessa**: rappresentano il codice e la descrizione del tipo commessa associato al *tipo ordine cliente*;    
+**Descrizione articolo**: rappresenta la descrizione dell'articolo;          
 **Descrizione conto**: rappresenta la ragione sociale del cliente.  
 
 :::note Nota
@@ -48,10 +48,49 @@ La colonna **Disponibilità** risulta uguale a zero per tutte le righe nel caso 
 
 *Pulsanti specifici*  
 
-> **Considera per commesse**: permette di spostare le righe d'ordine selezionate nel tab **Riepilogo** dove potranno essere prese in esame dalla procedura di generazione della commessa di produzione.  
+> **Considera per commesse**: permette di spostare le righe d'ordine selezionate nel tab **Riepilogo prototipi commesse** dove potranno essere prese in esame dalla procedura di generazione della commessa di produzione.  
 
-> **Generazione flusso**: il pulsante viene abilitato solo nel caso in cui nei [Parametri MRP](/docs/configurations/parameters/production/mrp-parameters/mrp-parameters-intro) sia stato abilitato il flag *Generazione automatica flusso di produzione*. Con questo tasto è possibile lanciare direttamente l'esecuzione del flusso di produzione completo e quindi la *creazione* delle *Commesse di produzione* che verrebbero direttamente schedulate e, a seconda dei flag successivi impostati sempre nei [Parametri MPS](/docs/configurations/parameters/production/mps-parameters), verrebbero eventualmente generati anche *Ordini pianificati* e *Ordini di produzione*.
+> **Generazione flusso**: il pulsante viene abilitato solo nel caso in cui nei [Parametri MS](/docs/configurations/parameters/production/mps-parameters/) sia stato abilitato il flag *Generazione automatica flusso di produzione*. Con questo tasto è possibile lanciare direttamente l'esecuzione del flusso di produzione completo e quindi la *creazione* delle *Commesse di produzione* che verrebbero direttamente schedulate e, a seconda dei flag successivi impostati sempre nei [Parametri MS](/docs/configurations/parameters/production/mps-parameters/), verrebbero eventualmente anche generati gli *Ordini pianificati di acquisto, conto lavoro e produzione*, con anche la possibilità di definire quali rilasciare in automatico.     
+Quindi tramite l’utilizzo di questo pulsante potremo trovarci con già tutti gli ordini pianificati rilasciati e gli ordini di produzione in stato esecutivo, saltando così tutte le fasi intermedie.
 
+### Sottoscorta {#safety-stock}
+
+Attraverso questo tab si possono filtrare le righe di articoli gestiti a Scorta che si vogliono far analizzare dalla procedura *Generazione commesse di produzione*.  
+L'unico **requisito** che consente all'articolo di essere visualizzabile in questa griglia è rappresentato dal fatto che ha, nel suoi [Parametri MRP](/docs/configurations/parameters/production/mrp-parameters/mrp-parameters-intro), il *Tipo di gestione* a *Scorta*.
+
+Nell'area di filtro è possibile filtrare solamente le righe ordine che si vogliono visualizzare in base ai *filtri* inseriti.  
+**Vedi variante**: il flag attivo permette di visualizzare la variante;  
+**Tipo commessa di produzione**: consente di decidere il tipo di commessa di produzione da generare;  
+**Sotto punto di riordino al**: rappresenta la data fino alla quale non si vuole che gli articoli della griglia finiscano sottoscorta.  
+
+Una volta impostati i filtri necessari, cliccando sul pulsante **Ricerca** verranno visualizzate nella griglia di risultato tutte le righe articolo corrispondenti ai filtri indicati.
+
+I dati che si possono visualizzare all'interno della griglia sono:  
+**Classe**, **Codice** e **Descrizione articolo**;  
+**Variante**: viene visualizzato se il flag omonimo è stato selezionato; se si è deciso nell'area di filtro che venga visualizzata;  
+**Punto di riordino**, **Scorta minima** e **Giorni di riordino**: vengono ripersi dall'*Anagrafica articolo* > tab *Approvvigionamento*;   
+**Consumo medio giornaliero**: viene calcolato sottraendo la scorta minima dal punto di riordino e dividendo il risultato ottenuto per i giorni di riordino;   
+**Lotto economico di produzione** e i suoi **Multipli**: vengono ripresi dal tab produzione dei [parametri MRP](/docs/configurations/parameters/production/mrp-parameters/search-mrp-parameters) dell'articolo se è di *tipo approvvigionamento di produzione*, mentre vengono presi dal *fornitore predefinito* del tab *fornitori preferenziali* dell’*anagrafica articolo* nel caso in cui sia *tipo approvvigionamento di acquisto*;           
+**Giacenza**: riporta la giacenza dell'articolo alla data corrente;       
+**Disponibilità iniziale**: rappresenta la disponibilità dell'articolo al giorno in cui si lancia l'elaborazione;     
+**Disponibilità finale**: rappresenta la disponibilità dell'articolo al giorno indicato nella casella **Sotto punto di riordino alla data** presente nell'area di filtro;   
+**Disponibilità minima**: rappresenta la disponibilità minima che l'articolo presenta nel lasso di tempo che intercorre tra la data di disponibilità inizio e la data di disponibilità finale.  
+
+:::note Nota
+Per i documenti privi della Data Consegna viene considerato il parametro *Se non è specificata la data di consegna* presente nel tab Parametri.
+:::
+
+La *griglia inferiore* visualizza il dettaglio della disponibilità dell'articolo selezionato nella griglia principale.
+
+:::note Nota
+Nella prima riga della griglia, la disponibilità è data dalla somma della giacenza e di tutti i documenti scaduti (con data antecedente ad oggi).
+:::
+
+*Pulsante specifico*  
+
+> **Considera per commesse**: permette di spostare le righe selezionate nel tab **Riepilogo prototipi commesse** dove potranno essere prese in esame dalla procedura di generazione della commessa di produzione.
+
+Solo le righe per le quali la procedura ritiene di poter creare una commessa di produzione saranno trasferite nel tab *Riepilogo prototipi commesse*. La procedura propone per ogni articolo una commessa di produzione e cerca di fare in modo che nel giorno in cui l'articolo abbia il rischio di scendere sotto il livello di scorta minima, venga reintegrato tramite una commessa di produzione avente data identica alla data sottoscorta. La quantità di questa commessa dovrà consentire di sopravvivere fino alla data di **Sotto punto di riordino** indicata nell'area di filtro: ovviamente se l'articolo presenta dei lotti economici di produzione o di acquisto e dei multipli essi vengono rispettati.
 
 ### Previsionale {#forecast}
 
@@ -85,54 +124,14 @@ Una volta impostati i filtri necessari, cliccando sul pulsante **Ricerca** verr
 
 *Pulsante specifico*  
 
-> **Considera per commesse**: permette di spostare le righe selezionate nel tab **Riepilogo** dove potranno essere prese in esame dalla procedura di generazione della commessa di produzione.
+> **Considera per commesse**: permette di spostare le righe selezionate nel tab **Riepilogo prototipi commesse** dove potranno essere prese in esame dalla procedura di generazione della commessa di produzione.
 
-
-### Sottoscorta {#safety-stock}
-
-Attraverso questo tab si possono filtrare le righe di articoli gestiti a Scorta che si vogliono far analizzare dalla procedura *Generazione commesse di produzione*.  
-L'unico **requisito** che consente all'articolo di essere visualizzabile in questa griglia è rappresentato dal fatto che abbia, nel suoi [Parametri MRP](/docs/configurations/parameters/production/mrp-parameters/mrp-parameters-intro), il *Tipo di gestione* a *Scorta*.
-
-Nell'area di filtro è possibile filtrare solamente le righe ordine che si vogliono visualizzare in base ai *filtri* inseriti.  
-**Vedi variante**: il flag attivo permette di visualizzare la variante;  
-**Tipo commessa di produzione**: consente di decidere il tipo di commessa di produzione da generare;  
-**Sotto punto di riordino al**: rappresenta la data fino alla quale non si vuole che gli articoli della griglia finiscano sottoscorta.  
-
-Una volta impostati i filtri necessari, cliccando sul pulsante **Ricerca** verranno visualizzate nella griglia di risultato tutte le righe articolo corrispondenti ai filtri indicati.
-
-I dati che si possono visualizzare all'interno della griglia sono:  
-**Classe**, **Codice** e **Descrizione articolo**;  
-**Variante**: viene visualizzato se il flag omonimo è stato selezionato; se si è deciso nell'area di filtro che venga visualizzata;  
-**Punto di riordino**, **Scorta minima** e **Giorni di riordino**: vengono ripersi dall'*Anagrafica articolo* > tab *Approvvigionamento*;   
-**Consumo medio giornaliero**: viene calcolato sottraendo la scorta minima dal punto di riordino e dividendo il risultato ottenuto per i giorni di riordino;   
-**Lotto economico di produzione** e i suoi **Multipli**: vengono ripresi dai [parametri MRP](/docs/configurations/parameters/production/mrp-parameters/search-mrp-parameters) dell'articolo;  
-**Giacenza**: riporta la giacenza dell'articolo alla data corrente; 
-**Disponibilità iniziale**: rappresenta la disponibilità dell'articolo al giorno in cui si lancia l'elaborazione;  
-**Disponibilità finale**: rappresenta la disponibilità dell'articolo al giorno indicato nella casella **Sotto punto di riordino alla data** presente nell'area di filtro;   
-**Disponibilità minima**: rappresenta la disponibilità minima che l'articolo presenta nel lasso di tempo che intercorre tra la data di disponibilità inizio e la data di disponibilità finale.  
-
-:::note Nota
-Per i documenti privi della Data Consegna viene considerato il parametro *Se non è specificata la data di consegna* presente nel tab Parametri.
-:::
-
-La *griglia inferiore* visualizza il dettaglio della disponibilità dell'articolo selezionato nella griglia principale.
-
-:::note Nota
-Nella prima riga della griglia, la disponibilità è data dalla somma della giacenza e di tutti i documenti scaduti (con data antecedente ad oggi).
-:::
-
-*Pulsante specifico*  
-
-> **Considera per commesse**: permette di spostare le righe selezionate nel tab **Riepilogo** dove potranno essere prese in esame dalla procedura di generazione della commessa di produzione.
-
-Solo le righe per le quali la procedura ritiene di poter creare una commessa di produzione saranno trasferite nel tab *Riepilogo*. La procedura propone per ogni articolo una commessa di produzione e cerca di fare in modo che nel giorno in cui l'articolo abbia il rischio di scendere sotto il livello di scorta minima, venga reintegrato tramite una commessa di produzione avente data identica alla data sottoscorta. La quantità di questa commessa dovrà consentire di sopravvivere fino alla data di **Sotto punto di riordino** indicata nell'area di filtro: ovviamente se l'articolo presenta dei lotti economici di produzione o di acquisto e dei multipli essi vengono rispettati.
-
-### Riepilogo
+### Riepilogo prototipi commesse
 
 Questo tab presenta le righe che sono state spostate dagli tab precedenti e che devono essere trasformate in commesse di produzione.
 
 Il tab contiene:  
-- la sezione **Commessa di produzione proposta** in cui l'utente può impostare il **Tipo**, l'**Anno** e il **Numero** della commessa di produzione a cui devono essere aggiunte le righe selezionate nello stesso tab **Riepilogo**.  
+- la sezione **Commessa di produzione proposta** in cui l'utente può impostare il **Tipo**, l'**Anno** e il **Numero** della commessa di produzione a cui devono essere aggiunte le righe selezionate nello stesso tab **Riepilogo prototipi commesse**.  
 - la griglia di risultato dove verranno visualizzate le righe articolo che sono state spostate dagli altri tab.
 
 *Campi griglia*:  
@@ -142,11 +141,11 @@ Il tab contiene:
 **Variante**: rappresenta la variante dell'articolo;     
 **Quantità**: rappresenta la quantità della commessa che viene proposta dalla procedura;
 **Disponibilità**: rappresenta la quantità disponibile dell'articolo alla *Data consegna*;            
-**Data di consegna**: rappresenta la data di fine della commessa di produzione proposta (che è modificabile manulamente dall'utente);                
+**Data di consegna**: rappresenta la data di fine della commessa di produzione proposta (che è modificabile manualmente dall'utente);                
 **Data inizio previsione**: rappresenta la data di inizio previsione;      
 **Codice tipo**: rappresenta il codice dell'ordine cliente;        
 **Numero ordine cliente**: rappresenta il numero dell'ordine cliente;  
-**Conto/Sottoconto/Descrizione conto**: rappresentano il conto del cliente relativo alla riga di previsione di vendita (ove presente);      
+**Conto / Sottoconto / Descrizione conto**: rappresentano il conto del cliente relativo alla riga di previsione di vendita (ove presente);      
 **Tipo commessa** e **Descrizione commessa**: rappresentano il codice e la descrizione del tipo commessa.       
 
 Dopo aver selezionato le righe desiderate, l'utente ha la possibilità di creare le commesse di produzione in base ai criteri impostati nel tab **Parametri**, utilizzando il tasto **Formazione automatica commesse**. La procedura presenta, al termine dell'elaborazione, una finestra in cui vengono specificati i numeri delle commesse generate, finestra sulla quale l'utente deve solo cliccare su OK e chiudere.
@@ -180,7 +179,7 @@ Di seguito, attraverso degli appositi flag, si può indicare se la commessa debb
 
 **Se non è specificata la data di consegna** la sezione riguarda esclusivamente il tab *Ordini Clienti* e il tab *Sottoscorta* della *Generazione commesse di produzione*. Qui l'utente può decidere se, nel caso in cui manchi la *Data merce pronta* nella riga dell'ordine cliente che deve essere analizzata dalla procedura, debba essere ignorata la riga priva di data, oppure debba essere accettata una certa data come prevista fine della commessa che verrà generata, oppure debba essere accettata una certa data come previsto inizio della commessa che verrà generata (in questi ultimi due casi le date vanno selezionate nelle due combo dedicate).
 
-**Considera la disponibilità dell'articolo**: il flag consente, se attivato, di fare in modo che in tutti i tabs della *Generazione commesse di produzione* venga esposta la disponibilità dell'articolo alla *Data di prevista fine* della commessa di produzione che dovrà essere creata. Lo stesso avviene anche nel tab *Riepilogo*. La disponibilità viene presa in considerazione sulla base dei flag attivati nei *Parametri MPS* (Conto Lavoro, Acquisti, Vendite, Produzione, Magazzino). In questo caso, quando si andrà a creare la commessa la procedura andrà a tenere conto della disponibilità creando la commessa per la differenza tra la domanda e la disponibilità di quell'articolo.
+**Considera la disponibilità dell'articolo**: il flag consente, se attivato, di fare in modo che in tutti i tabs della *Generazione commesse di produzione* venga esposta la disponibilità dell'articolo alla *Data di prevista fine* della commessa di produzione che dovrà essere creata. Lo stesso avviene anche nel tab *Riepilogo prototipi commesse*. La disponibilità viene presa in considerazione sulla base dei flag attivati nei *Parametri MPS* (Conto Lavoro, Acquisti, Vendite, Produzione, Magazzino). In questo caso, quando si andrà a creare la commessa la procedura andrà a tenere conto della disponibilità creando la commessa per la differenza tra la domanda e la disponibilità di quell'articolo.
 
 **Magazzini di schedulazione commesse**: nella griglia compaiono i magazzini che sono stati inseriti nella finestra del [Calcolo Disponibilità](/docs/erp-home/registers/items/calculate-availability). Da questo tab *Parametri* possono solo essere visualizzato e non modificati.
 
@@ -188,7 +187,7 @@ Di seguito, attraverso degli appositi flag, si può indicare se la commessa debb
 
 **Calcolo quantità in base al lotto economico**: se attivato, questo flag, fa in modo che la procedura generi la commessa di produzione considerando il lotto economico di acquisto inserito nel tab [Fornitori preferenziali](/docs/erp-home/registers/items/create-new-items/item-registry/preferential-vendors) sul fornitore designato come di default se l'articolo analizzato in *Generazione commesse di produzione* ha come *Tipo approvvigionamento*: *Acquisto* o *Conto Lavoro*, e il lotto economico di produzione inserito nei [Parametri MRP](/docs/configurations/parameters/production/mrp-parameters/search-mrp-parameters) se l'articolo oggetto della commessa ha come *Tipo Approvvigionamento* 'Produzione'.       
 
-**Calcolo quantità in base ai multipli dell'articolo**: se attivato, questo flag fa in modo che la procedura generi la commessa di produzione considerando anche i multipli del lotto economico di acquisto inserito nel tab fornitori preferenziali sul fornitore designato come di default degli articoli se l'articolo oggetto della commessa ha come *Tipo Approvvigionamento* *Acquisto* o *Conto Lavoro*, e i multipli del lotto economico di produzione inserito nei  [Parametri MRP](/docs/configurations/parameters/production/mrp-parameters/search-mrp-parameters)  se l'articolo analizzato in G*enerazione commesse di produzione* ha come *Tipo Approvvigionamento*: *Produzione*. Ovviamente questo flag può essere attivato solo se risulti attivo il flag di cui al paragrafo precedente.              
+**Calcolo quantità in base ai multipli dell'articolo**: se attivato, questo flag fa in modo che la procedura generi la commessa di produzione considerando anche i multipli del lotto economico di acquisto inserito nel tab fornitori preferenziali sul fornitore designato come di default degli articoli se l'articolo oggetto della commessa ha come *Tipo Approvvigionamento* *Acquisto* o *Conto Lavoro*, e i multipli del lotto economico di produzione inserito nei  [Parametri MRP](/docs/configurations/parameters/production/mrp-parameters/search-mrp-parameters)  se l'articolo analizzato in *Generazione commesse di produzione* ha come *Tipo Approvvigionamento*: *Produzione*. Ovviamente questo flag può essere attivato solo se risulti attivo il flag di cui al paragrafo precedente.              
 
 **Reintegro scorta minima dell'articolo**: se attivato, questo flag permette all'utente di fare in modo che per l'articolo analizzato in *DGenerazione commesse di produzione* sia reintegrata la scorta minima inserita nell'*Anagrafica articolo > tab Approvvigionamento*.    
 
