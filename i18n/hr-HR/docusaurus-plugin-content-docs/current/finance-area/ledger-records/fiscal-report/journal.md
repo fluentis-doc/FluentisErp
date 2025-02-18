@@ -1,39 +1,40 @@
 ---
-title: Libro giornale
+title: Dnevnik knjiženja
 sidebar_position: 3
 ---
 
-All'apertura della finestra viene proposto l'esercizio contabile attuale ed il filtro per le registrazioni è settato di default per coprire l'esercizio contabile corrispondente (la data di competenza contabile non viene compilata per default supponendo di voler operare per data "formale"); 
+Kada se prozor otvori, predložena je tekuća obračunska godina, a filtar za zapise postavljen je prema zadanim postavkama da pokriva odgovarajuću obračunsku godinu (datum obračuna računovodstva nije popunjen prema zadanim postavkama pod pretpostavkom da se želi raditi prema "formalnom" datumu); 
 
-vengono riportati i dati iniziali di numero pagina, riga e saldo dare e saldo avere: il programma propone il filtro delle registrazioni tenendo conto anche della data dell'ultima stampa in definitivo.
+prijavljuju se početni podaci o broju stranice, saldu retka dugovne i potražne strane: program predlaže filtar snimaka također uzimajući u obzir datum posljednjeg definitivnog ispisa.
 
 ![](/img/it-it/finance-area/ledger-records/fiscal-report/journal/image01.png)
 
- 
+ 
 
-POSSIBILI OPZIONI: 
+MOGUĆE OPCIJE: 
 
-**Visualizza intestazione**: per gestire eventuali moduli DDTti già stampati;
+**Prikaži zaglavlje**: za upravljanje bilo kojim obrascima koji su već ispisani;
 
-**Definitiva**: attiva la modalità di stampa definitiva che, una volta eseguita, blocca successive modifiche nelle registrazioni contabili del periodo;
-
-
-
-All'esecuzione della stampa in via definitiva il programma effettua un controllo sulla presenza di registrazioni antecedenti non stampate e sulla presenza all'interno del range di date già riportati in stampa. Una volta lanciato il processo di stampa (quindi la semplice anteprima non opera alcuna operazione, ma si dovrà eseguire la stampa fisica, anche su file, indipendentemente dal buon fine del processo) le registrazioni relative saranno bloccate in tutta la parte fiscale mentre saranno aggiornati i contatori memorizzati nella tabella  **[Parametri di contabilità:](/docs/configurations/parameters/finance/accounting-parameters)** all'interno di questa tabella è presente il pulsante per la cancellazione delle stampe definitive (può essere posto sotto specifici diritti utente): una volta premuto bisognerà indicare il range di date da sbloccare, dare conferma dell'operazione e poi aggiornare manualmente tutti i relativi contatori;
-
-**Divisione**: permette di gestire la stampa specificando una delle divisioni presenti nel database;
-
-**Da n. registrazione / A nr. registrazione**: permette di filtrare la stampa per numero di registrazione (meno significativo in caso di stampa definitiva).
+**Definitivno**: ktivira način konačnog ispisa koji, nakon što se izvrši, blokira naknadne promjene u računovodstvenim evidencijama razdoblja;  
 
 
-| Funzione | Significato |
+
+Prilikom konačnog ispisa program provjerava prisutnost prethodnih neispisanih zapisa i prisutnost unutar raspona već ispisanih datuma. Nakon pokretanja procesa ispisa (dakle, jednostavni pregled ne provodi nikakvu operaciju, ali morat će se izvršiti fizički ispis, čak i u datoteci, bez obzira na uspjeh procesa) relevantna knjiženja bit će blokirana sve dok su zapisi pohranjeni u tablici **[Računovodstvenih parametara:](/docs/configurations/parameters/finance/accounting-parameters)**; unutar ove tablice nalazi se tipka za brisanje definitivnih ispisa (može se staviti pod određena korisnička prava): nakon pritiska mora se naznačiti raspon datuma koji će se otključati, potvrditi operacija i 
+zatim ručno ažurirati sve relevantne brojače;
+
+
+**Odjel**: omogućuje upravljanje ispisom određivanjem jednog od odjela prisutnih u poduzeću;
+
+**Od broja knjiženja / Do broja knjiženja**: omogućuje filtriranje ispisa prema broj knjiženja (manje značajan u slučaju konačnog ispisa).
+
+
+| Funkcija | Značenje |
 | --- | --- |
-| Anteprima | Pulsante per eseguire l'anteprima di stampa del libro giornale. |
-| Stampa | Pulsante per eseguire la stampa fisica del libro giornale. |
+| Prethodnih pregled | Gumb za pokretanje pregleda ispisa. |
+| Ispiši | Gumb za fizički ispis dnevnika. |
 
 
 
-:::important Vedi Anche
-[**VIDEO TUTORIALS SULLE STAMPE FISCALI**](/docs/video/finance/intro.md)
+:::important VIDI TAKOĐER
+[**VIDEO TUTORIJALI O FISKALNIM ISPISIMA**](/docs/video/finance/intro.md)
 :::
-

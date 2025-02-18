@@ -1,49 +1,39 @@
 ---
-title: Registri iva
+title: Knjige PDV-a
 sidebar_position: 9
 ---
 
-La stampa dei registri IVA deve essere effettuata singolarmente per ogni registro: non è consentita la stampa complessiva di tutti i registri del periodo.
+Ispis knjiga PDV-a mora se provoditi pojedinačno za svaku knjigu računa: nije dopušten ukupni ispis svih knjiga za razdoblje.
 
-**Periodo IVA**: All'apertura della maschera questo potrà essere il mese precedente all'attuale nel caso di periodo mensile oppure il trimestre nel caso in cui la periodicità della liquidazione impostata nei parametri di contabilità sia appunto trimestrale;
+**Period ispisa**: prilikom otvaranja obrasca, ovo može biti prethodni mjesec u odnosu na trenutni ako je razdoblje mjesečno ili prethodni kvartal ako je učestalost obračuna postavljena u parametrima računovodstva kvartalna;
 
-**Anno di riferimento**: viene proposto di default l'anno in corso;
+**Referentna godina**: prema zadanim postavkama predložena je tekuća godina;
 
-**Registro IVA da stampare**: selezionare il registro da stampare;
+**Knjiga računa**: odabir knjige računa za ispis;
 
-**Divisione**: non è normalmente da utilizzare, a maggior ragione se non sono presenti varie divisioni;
+**Odjel**: obično se ne koristi, posebice više ako poduzeće nema raznih oragnizacijskih podjela;
 
-**Riepilogativo**: il flag permette di stampare, sul registro selezionato tramite l'apposito campo, un riepilogo dei registri e dei relativi codici iva movimentati nel mese o trimestre selezionato;
+**Sažetak zapisa**: zastavica omogućuje ispis sažetka knjiga i pripadajućih PDV zapisa u odabranom mjesecu ili tromjesečju;
 
+Sljedeća polja prikazuju koji je posljednji broj stranice ispisan za postavljeni registar: ova informacija preuzeta je iz tablice Knjige PDV-a.
 
-
-I campi successivi visualizzano qual è l'ultimo numero della pagina stampata per il registro impostato: questo dato viene ripreso dalla tabella Registri IVA.
-
-Il flag **Visualizza intestazione** è già impostato di default: si toglieva quando si dovevano far vidimare i moduli DDTti sui quali stampare i registri, obbligo che non è più previsto. Con questo flag viene riportato il nome del registro IVA, della società e il numero/anno delle pagine.
-
-Il flag **Visualizza tipo documento** farà aggiungere, nei riferimenti dei documenti, anche il tipo del documento: può servire nel caso in cui le fatture di vendita abbiano più numerazioni che fanno capo allo stesso registro IVA.
-
-**Registrazione titolo**: quando il flag Riepilogativo non è attivo è possibile imporre un titolo alla stampa differente rispetto al nome del registro iva che compare per default
-
-Il titolo del registro viene ripreso dal nome del registro IVA e sarà quello riportato in stampa con l'opzione 'Visualizza intestazione'.
-
-**Mensile / Trimestrale**: i due flag riprendono l'impostazione della periodicità iva definità nei parametri di contabilità per memoria ma il settaggio non è modificabile da qui;
-
- 
-
-Attivando il flag **Definitiva** la procedura andrà a stampare i registri in definitivo bloccando il periodo selezionato per ulteriori modifiche: sarà inoltre disabilitato il filtro per divisione. L'esecuzione dell'anteprima di stampa in definitivo non andrà a bloccare il periodo e aggiornare i contatori: solo l'esecuzione del processo di stampa fisica andrà ad operare il blocco del periodo/registro in contabilità e ad aggiornare il contatore delle pagine della tabella Registri IVA (e non è rilevante che il processo di stampa vada a buon fine o meno, potrebbe essere anche una stampa su file). Eseguendo la stampa o l'anteprima, l'applicativo andrà a verificare se ci sono buchi nella protocollazione e se l'ordine cronologico è stato rispettato, bloccandone la stampa definitiva a meno che per il registro IVA non sia stato disabilitato il flag di controllo in tabella. La stampa definitiva NON è necessaria per procedere alla stampa della liquidazione IVA periodica.
+Oznaka **Prikaži zaglavlje** već je postavljena prema zadanim postavkama. Ova zastavica prikazuje naziv PDV registra, tvrtku i broj/godinu stranica.
 
 
 
-| Funzione | Significato |
+**Naziv knjige**: kada zastavica Sažetak zapisa nije aktivna, moguće je nametnuti naslov na ispisu koji se razlikuje od naziva knjiga PDV-a koji se pojavljuje prema zadanim postavkama.
+
+Naziv je preuzet iz naziva knjige računa i bit će onaj koji se ispisuje uz opciju 'Prikaži zaglavlje'.
+
+**Mjesečno / Kvartalno**: dvije zastavice odražavaju postavku periodičnosti PDV-a definiranu u računovodstvenim parametrima, ali se ta postavka ne može mijenjati ovdje;
+
+Aktiviranjem zastavice **Definitivno**, procedura će ispisati registre u definitivan način onemogućavajući odabrano razdoblje za daljnje izmjene: također će se onemogućiti filter za podjelu. Izvršavanje pregleda ispisa u definitivan način neće onemogućiti razdoblje i ažurirati brojače: samo će izvršavanje procesa fizičkog ispisa onemogućiti razdoblje/registar u računovodstvu i ažurirati brojač stranica u tablici Registar PDV-a (i nije važno je li proces ispisa uspješan ili ne, može biti čak i ispis u datoteku). Izvodeći ispis ili pregled, aplikacija će provjeriti postoje li praznine u protokolu i je li redoslijed poštovan, onemogućavajući konačni ispis osim ako za registar PDV-a nije onemogućena oznaka provjere u tablici. Konačni ispis NIJE potreban za nastavak ispisa periodične PDV obrnutosti.
+
+| Funkcija | Značenje |
 | --- | --- |
-| Anteprima | Pulsante per eseguire l'anteprima di stampa del registro IVA. |
-| Stampa | Pulsante per eseguire la stampa fisica del registro IVA. |
+| Prethodni pregled | Gumb za pregled ispisa kniga PDV-a. |
+| Ispiši | Gumb za fizički ispis knjiga PDV-a. |
 
-
-:::important Vedi Anche
-[**VIDEO TUTORIALS SULLE STAMPE FISCALI**](/docs/video/finance/intro.md)
+:::important Vidi Također
+[**VIDEO TUTORIJALI O POREZNIM ISPISIMA**](/docs/video/finance/intro.md)
 :::
-
-
-
