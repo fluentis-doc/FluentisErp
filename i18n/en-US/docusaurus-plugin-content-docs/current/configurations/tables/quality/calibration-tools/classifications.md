@@ -1,28 +1,28 @@
 ---
-title: Classificazioni strumento di misura
+title: Classifications Measurement Tools 
 sidebar_position: 2
 ---
 
-La tabella si trova sul percorso **Tabelle > Qualità > Taratura strumenti > Classificazioni strumento**.
+The table is located at **Tables > Quality > Calibration Tools > Classifications Measurement Tools**.
 
-In questa tabella è possibile codificare le *Classificazioni strumento di misura* che sono utilizzate per categorizzare gli *Strumenti di misura*.   
-Un esempio di utilizzo lo troviamo nella gestione **Strumenti di misura**.
+In this table, it is possible to encode the *Classifications Measurement Tools* that are used to categorize *Measurement Tools*.   
+An example of usage can be found in the management of **Measurement Tools**.
 
-La tabella consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+The table allows for the insertion of new records or for searching existing ones to view, modify, or delete them.
 
-**Ricerca Classificazioni strumento di misura**
+**Search Classifications Measurement Tools**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+The form consists of a filter area and a results area. Once all desired filters are set, just click on the **Search** button to view the results in the results grid.
 
-**Inserimento Classificazioni strumento di misura**
+**Insert Classifications Measurement Tools**
 
-Per poter inserire nuove *Classificazioni strumento di misura* è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.   
-Per il nuovo record si devono inserire almeno i campi obbligatori richiesti dal programma: il **Codice** e la **Descrizione**.
+To insert new *Classifications Measurement Tools*, it is necessary to click on the first empty row in the grid or press the **New** button.   
+For the new record, at least the required mandatory fields must be entered: **Code** and **Description**.
 
-*Campi specifici*: 
-    
-> **Codice**: è il codice della *Classificazione strumento di misura*.   
-> **Descrizione**: è la descrizione della *Classificazione strumento di misura*.   
-> **Note**: annotazioni libere.
+*Specific fields*: 
+   
+> **Code**: is the code of the *Classifications Measurement Tools*.   
+> **Description**: is the description of the *Classifications Measurement Tools*.   
+> **Notes**: free annotations.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+For everything not detailed in this document about the common functioning of the forms, please refer to the following link [Custom features, buttons, and fields](/docs/guide/common).

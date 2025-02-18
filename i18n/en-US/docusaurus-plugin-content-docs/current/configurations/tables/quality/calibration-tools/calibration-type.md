@@ -1,45 +1,45 @@
 ---
-title: Tipi taratura
+title: Calibration Types 
 sidebar_position: 3
 ---
 
-La tabella si trova sul percorso **Tabelle > Qualità > Taratura strumenti > Tipi taratura**.
+The table can be found at the path **Tables > Quality > Calibration Tools > Calibration Types**.
 
-In questa tabella è possibile codificare i *Tipi taratura*.   
-Alcuni esempi di utilizzo di *Tipi taratura* li troviamo nelle gestioni:
-> **Taratura strumenti** - nei *dati di testata*;   
-> **Parametri Taratura strumenti** - nei *dati di testata*.
+In this table, it is possible to codify the *Calibration Types*.  
+Some examples of the use of *Calibration Types* can be found in the management:
+> **Calibration Tools** - in the *header info*;   
+> **Calibration Tools Parameters** - in the *header info*.
 
-La tabella consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+The table allows you to enter new records or search for existing ones to view, modify, or delete them.
 
-**Ricerca Tipi taratura**
+**Search Calibration Types**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+The form consists of a filter area and a result area. Once all desired filters are set, simply click the **Search** button to view the results within the result grid.
 
-**Inserimento Tipi taratura**
+**Insert Calibration Types**
 
-Per poter inserire nuove *Tipi taratura* è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.   
-Per il nuovo record si devono inserire almeno i campi obbligatori richiesti dal programma: il **Codice** e la **Descrizione**.
+To enter new *Calibration Types*, you must click on the first empty row in the grid or press the **New** button.   
+For the new record, at least the mandatory fields required by the program must be filled in: the **Code** and the **Description**.
 
-## Tipi taratura
+## Calibration Types 
 
-E' l'elenco dove vengono inserite le informazioni principali dei *Tipi taratura*.   
-L'elenco si compone delle seguenti informazioni:   
-> **Tipo taratura**   
->> **Codice**: è il codice del *Tipo taratura*.   
->> **Descrizione**: è la descrizione del *Tipo taratura*.   
->> **Taratura interna**: indica se il *Tipo taratura* viene utilizzato per registrare *Tarature interne*.   
+This is the list where the main information of the *Calibration Types* is entered.   
+The list consists of the following information:   
+> **Calibration Type**   
+>> **Code**: this is the code of the *Calibration Type*.   
+>> **Description**: this is the description of the *Calibration Type*.   
+>> **Internal Calibration**: indicates whether the *Calibration Type* is used to record *Internal Calibrations*.   
 >
-> **Numerazione**
->> **Codice**: è il codice della *Numerazione*.   
->> **Descrizione**: è la descrizione della *Numerazione*.   
->> **Tipo oggetto**: è la descrizione del tipo di oggetto sulla quale si basa la *Numerazione*.   
+> **Numeration**
+>> **Code**: this is the code of the *Numeration*.   
+>> **Description**: this is the description of the *Numeration*.   
+>> **Object Type**: this is the description of the type of object on which the *Numeration* is based.   
 >
-> **Note**: annotazioni libere.
+> **Notes**: free annotations.
 
 ### Extra data
 
-E' possibile inserire degli [Extra Data](/docs/configurations/utility/extra-data/extradata/search-extradata) generali per il *Tipo taratura*.   
-Questi *Extra data* vengono ereditati nella *Taratura strumento* di quella determinata tipologia.   
+It is possible to enter general [Extra Data](/docs/configurations/utility/extra-data/extradata/search-extradata) for the *Calibration Type*.   
+These *Extra Data* are inherited in the *Calibration Tool* of that specific type.   
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+For everything not detailed in this document regarding the common functioning of the forms, please refer to the following link [Custom features, buttons, and fields](/docs/guide/common).

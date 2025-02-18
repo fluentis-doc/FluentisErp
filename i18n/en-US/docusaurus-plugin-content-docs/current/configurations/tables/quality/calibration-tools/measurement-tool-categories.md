@@ -1,39 +1,39 @@
 ---
-title: Categorie strumenti di misura
+title: Measurement Tools Categories
 sidebar_position: 1
 ---
 
-La tabella si trova sul percorso **Tabelle > Qualità > Taratura strumenti > Categorie strumenti di misura**.
+The table is located at **Tables > Quality > Calibration Tools > Measurement Tools Categories**.
 
-In questa tabella è possibile codificare le *Categorie strumenti di misura*.   
-La *Categoria strumento di misura* è parte integrante, assieme al *Codice* e *Matricola*, del codice univoco dello *Strumento di misura*.
-Alcuni esempi di utilizzo delle *Categorie strumenti di misura* li troviamo nelle gestioni:
-> **Strumenti di misura** - nei *dati di testata*;   
-e in tutte le gestioni dove viene ultilizzato lo *Strumento di misura*.
+In this table, it is possible to code the *Measurement Tools Categories*.   
+The *Measurement Tools Category* is an integral part, along with the *Code* and *Code*, of the unique code of the *Measurement Tool*.  
+Some examples of the use of *Measurement Tools Categories* can be found in the management:
+> **Measurement Tools** - in the *header info*;   
+and in all managements where the *Measurement Tool* is used.
 
-La tabella consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+The table allows for the insertion of new records or searching for existing ones to view, modify, or delete them.
 
-**Ricerca Categorie strumenti di misura**
+**Search Measurement Tools Categories**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+The form consists of a filter area and a results area. Once all desired filters are set, simply click the **Search** button to view the results within the results grid.
 
-**Inserimento Categorie strumenti di misura**
+**Insert Measurement Tools Categories**
 
-Per poter inserire nuove *Categorie strumenti di misura* è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.   
-Per il nuovo record si devono inserire almeno i campi obbligatori richiesti dal programma: il **Codice** e la **Descrizione**.
+To insert new *Measurement Tools Categories*, it is necessary to click on the first empty row in the grid or press the **New** button.   
+For the new record, at least the mandatory fields required by the program must be entered: the **Code** and the **Description**.
 
-## Categorie strumenti di misura
+## Measurement Tools Categories
 
-E' l'elenco dove vengono inserite le informazioni principali delle *Categorie strumenti di misura*.   
-L'elenco si compone delle seguenti informazioni:   
-> **Codice**: è il codice della *Categoria strumento di misura*.   
-> **Descrizione**: è la descrizione della *Categoria strumento di misura*.   
-> **Unità di misura**: è l'*Unità di misura* con la quale vengono rilevati i valori degli strumenti facenti parte della categoria.   
-> **Note**: annotazioni libere.
+This is the list where the main information of the *Measurement Tools Categories* is entered.   
+The list consists of the following information:   
+> **Code**: this is the code for the *Measurement Tools Category*.   
+> **Description**: this is the description of the *Measurement Tools Category*.   
+> **Unit of Measure**: this is the *Unit of Measure* used to record the values of the tools belonging to the category.   
+> **Notes**: free annotations.
 
-### Extra data
+### Extra Data
 
-E' possibile inserire degli [Extra Data](/docs/configurations/utility/extra-data/extradata/search-extradata) generali per la *Categoria strumento di misura*.   
-Questi *Extra data* vengono ereditati nello *Strumento di misura* di quella determinata categoria.   
+It is possible to enter general [Extra Data](/docs/configurations/utility/extra-data/extradata/search-extradata) for the *Measurement Tools Category*.  
+These *Extra Data* are inherited by the *Measurement Tool* of that specific category.   
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+For everything not detailed in this document regarding the common operation of forms, please refer to the following link [Custom features, buttons, and fields](/docs/guide/common).
