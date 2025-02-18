@@ -1,5 +1,5 @@
 ---
-title:Category Discounts Price Management
+title: Category Discounts Price Management
 sidebar_position: 3
 ---
 
