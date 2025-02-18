@@ -1,43 +1,42 @@
 ---
-title: Tipi offerte cliente
+title: Sales Offer Types 
 sidebar_position: 23
 ---
 
-:::tip[FAst Start]
-La tabella è interessata dalla procedura di [**Fast Start**](/docs/guide/fast-start)
+:::tip[Fast Start]
+The table is subject to the [**Fast Start**](/docs/guide/fast-start) procedure.
 
-Nel caso in cui si intenda configurare manualmente fare riferimento alla check list della pagina linkata
+If you intend to configure manually, refer to the checklist on the linked page.
 :::
 
-La tabella si apre tramite il percorso **Tabelle > Vendite > Tipi offerte cliente**.
+The table opens via the path **Tables > Sales > Sales Offer Types**.
 
-Consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+It allows you to insert new records or search for existing ones to view, modify, or delete them.
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+The form consists of a filter area and a result area. Once all desired filters are set, simply click the **Search** button to display the results within the result grid.
 
-Per inserire nuovi record è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**. 
+To insert new records, you need to click on the first empty row in the grid or press the **New** button.
 
-**Codice/Descrizione:** campi in cui viene indicato il codice e la descrizione della tipologia del documento (il codice che si inserisce deve essere univoco).
+**Code/Description:** fields where the code and description of the document type are indicated (the code entered must be unique).
 
-**Struttura gerarchica**: inserendo questo flag, gli articoli dell'offerta seguiranno una struttura gerarchica; per maggiori dettagli si rimanda alla relativa [documentazione](/docs/sales/offers/new-offer/group-items).
+**Hierarchical structure:** by enabling this flag, the items in the offer will follow a hierarchical structure; for more details, refer to the related [documentation](/docs/sales/offers/new-offer/group-items).
 
-**Modifica versione**: questo flag indica le tipologie di offerta per le quali gestire le versioni.
+**Modify version:** this flag indicates the types of offer for which to manage versions.
 
-**Prezzo Ivato**: permette al sistema di recuperare il prezzo di vendita dai listini o dall'anagrafica articolo e lo riporta con l'aggiunta dell'IVA. Se non trova il listino, nel caso, per esempio, di listino scaduto o listino in valuta non compatibile, recupera i costi o i prezzi dall'anagrafica articolo e li riporta comprensivi di IVA. I costi e i prezzi in anagrafica sono in EUR, quindi il sistema li andrà anche a convertire nella valuta del cliente.
+**Price including VAT:** allows the system to retrieve the selling price from price lists or from the item registry and displays it with the addition of VAT. If it does not find the price list, for example, in case of an expired price list or a price list in an incompatible currency, it retrieves the costs or prices from the item registry and reports them including VAT. The costs and prices in the registry are in Euro, so the system will also convert them into the customer's currency.
 
-**Numerazione**: in questo campo va inserito il codice della numerazione appropriato. Per approfondimenti sulla numerazione dei documenti si rimanda all'articolo [Numerazioni Fluentis](/docs/configurations/tables/fluentis-numerations).
+**Numeration:** in this field, the appropriate numeration code should be entered. For more information on document numeration, refer to the article [Fluentis Numerations](/docs/configurations/tables/fluentis-numerations).
 
-**Tipo ordine cliente**: in questo campo viene indicata la [tipologia di Ordine di vendita](/docs/configurations/tables/sales/sales-order-types) da creare al momento della Conversione dell'offerta con l'apposita procedura.    
+**Sales order type:** in this field, the [type of Sales Order](/docs/configurations/tables/sales/sales-order-types) to be created at the time of converting the offer with the appropriate procedure is indicated.
 
-**Listino di vendita**: questo tipo listino, di tipo  generico, viene utilizzato per la ricerca dei prezzi nel caso in cui nel tab listini dell’anagrafica del cliente o contatto non ci sia nessuna tipologia di listino inserita. Solitamente si utilizza quando si fanno offerte a contatti CRM che non sono ancora stati acquisiti come clienti e per i quali non siano stati inseriti i tipi listini nel tab Listini dell’anagrafica.
+**Sales price list:** this type of price list, which is generic, is used for price searches if no type of price list is entered in the price lists tab of the customer or contact registry. It is usually used when making offers to CRM contacts that have not yet been acquired as customers and for which price list types have not been entered in the Price Lists tab of the registry.
 
-**Stampa e numero di copie**: attraverso questi campi viene definita la stampa di default e il numero di copie da stampare; ricordiamo che per stampare la stampa di default è necessario selezionare *Stampe multiple* al momento della stampa.
+**Print report and number of copies:** through these fields, the default print report and number of copies to print are defined; remember that to print the default print report, it is necessary to select *Multiple reports* at the time of printing.
 
-**Tipo prototipo articolo**: questo campo contiene la tipologia di prototipo articolo da creare nella procedura di creazione prototipo dall'interno dell'offerta. 
+**Item Prototype Type:** this field contains the type of item prototype to be created in the prototype creation procedure from within the offer.
 
-**Tipo opportunità**: se nel Tipo Offerta viene collegato un [Tipo opportunità](/docs/configurations/tables/crm/opportunities/opportunity-type), al salvataggio dell’Offerta viene creata una [Nuova Opportunità](/docs/crm/chance/new-chance) se in testata Offerta non ne viene inserita una preesistente; se inserita, l’Opportunità preesistente viene aggiornata.
+**Opportunity type:** if a [Opportunity Type](/docs/configurations/tables/crm/opportunities/opportunity-type) is linked in the Offer Type, upon saving the Offer a [New Opportunity](/docs/crm/chance/new-chance) will be created if there is no existing one entered in the Offer header; if one is entered, the existing Opportunity will be updated.
 
-**Gestione cespiti e Tipo operazione**: il flag permette di gestire i cespiti per questa tipologia di documento. Nel campo successivo viene indicata la tipologia di operazione dei cespiti, che nel caso delle vendite potrà esere un’alienazione totale, parziale oppure una distruzione.      
+**Fixed assets management and Operation type:** the flag allows for the management of fixed assets for this type of document. In the next field, the type of fixed asset operation is indicated, which in the case of sales can be a total sale, partial sale, or destruction.
 
-**Tipo sconto/Descrizione**: in questa colonna è possibile associare la tipologia di sconto da proporre quando gli sconti vengono inseriti direttamente nella colonna *Sconti articolo* della griglia articoli dei documenti (per maggiori dettagli vedi l'articolo [Gestione Widget sconti semplificato](/docs/sales/sales-flow/discount-widget)).
-
+**Discount type/Description:** in this column, you can associate the type of discount to propose when discounts are entered directly in the *Item Discounts* column of the document item grid (for more details see the article [Simplified Discount Widget Management](/docs/sales/sales-flow/discount-widget)).

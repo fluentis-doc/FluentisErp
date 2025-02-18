@@ -1,39 +1,38 @@
 ---
-title: Fatturato vendite
+title: Sales Turnover 
 sidebar_position: 10
 ---
 
-Consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+Allows you to enter new records or search for existing ones to view, modify, or delete them.
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+The form consists of a filter area and a results area. Once all desired filters are set, simply click the **Search** button to display the results within the results grid.
 
-Per poter inserire record è necessario cliccare sulla prima riga vuota della griglia oppure premere il pulsante **Nuovo**.
+To insert records, it is necessary to click on the first empty row of the grid or press the **New** button.
 
-*Campi specifici*
+*Specific fields*
 
-**Tipo**: codice di identificazione del fatturato vendite;
+**Type**: identification code of the sales turnover;
 
-**Descrizione**: descrizione del fatturato vendite;
+**Description**: description of the sales turnover;
 
-**Conto/Sottoconto/Descrizione sottoconto**: Conto di costo utilizzato in contabilizzazione dei documenti di vendita;
+**Account/Detail Account/Detail Account Description**: Cost account used in the accounting of sales documents;
 
-**Tipo IVA**: utilizzato nella registrazione della contabilizzazione del documento. Solitamente è impostatato a generico, per altri dettagli verificarne l'utilizzo nelle causali contabili e nelle registrazioni contabili in area amministrativa;
+**VAT Type**: used in the registration of the document’s accounting. It is usually set to generic; for further details, check its usage in ledger templates and ledger records in the finance area;
 
-**Conto e sottoconto analitico e relativa Descrizione**: (obsoleto) conto utilizzato per contabilizzare il documento in contabilità analitica.
+**Analytic account and detail account and relative Description**: (obsolete) account used to record the document in analytic accounting.
 
-**Tipo/Descrizione**: utilizzato nella registrazione della contabilizzazione del documento. Per altri dettagli verificarne l' [utilizzo](/docs/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates/attributes-detail)  contabile nelle registrazioni contabili in area amministrativa.
+**Type/Description**: used in registering the document’s accounting. For more details, verify its [use](https://docs/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates/attributes-detail) in ledger records in the finance area.
 
-**Dettaglio per nazioni**: questi dati sono utilizzati solo per lo scambio dati con programmi esterni. In futuro sarà possibile definire conti di costo diversi per nazione e tipo contabilizzazione articolo, associato in anagrafica cliente.
+**Detail by countries**: this data is used only for data exchange with external programs. In the future, it will be possible to define different cost accounts for country and item accounting type, associated in the customer contact.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+For anything not detailed in this document about the common functioning of the forms, refer to the following link [Custom features, buttons, and fields](/docs/guide/common).
 
 :::note Note
-Se il *Tipo fatturato* viene inserito nell'*Anagrafica articoli* questo codice viene proposto nelle righe articolo del documento di acquisti e automatizza la contabilizzazione dei documenti su un determinato conto di contropartita.
+If the *Turnover Type* is entered in the *Item Registry*, this code will be proposed in the item lines of the purchase document and will automate the accounting of documents to a specific offset account.
 :::
 
-*Esempio di una fattura di vendita*:
+*Example of a sales invoice*:
 
-Se quindi, il *Tipo fatturato* fosse presente già nell'*Anagrafica articolo*, nei documenti di vendita lo troveremo riportato nel nel tab *Articoli*, nel campo *Fatturato vendite*; nel caso in cui non sia presente in anagrafica articolo, è possibile andarlo a selezionare direttamente all'interno del documento di vendita tramite l'apposita combo box.
+If the *Turnover Type* is already present in the *Item Registry*, in the sales documents, we will find it listed in the *Items* tab, in the *Sales Turnover* field; if it is not present in the item registry, it can be selected directly within the sales document via the appropriate combo box.
 
-Nel caso in cui non venga inserito nell'anagrafica articolo e non ci si ricordi di andarlo ad inserire manualmente nel documento di vendita, il sistema per non bloccare la contabilizzazione dei documenti, permette (se questa scelta risulta opportuna) di riprendere il sottoconto di contropartita di default che si è deciso di impostare nell'Anagrafica contatto > tab Dati Contabili > tab Amministrazione nel campo **Costo/Ricavo di contropartita predefinito**.
-
+If it is not entered in the item registry and there is no memory of manually entering it in the sales document, the system will allow (if this choice is deemed appropriate) to take the default offset detail account that has been decided to set in the Contact Register > Accounting Data tab > Finance tab in the **Offset Cost/Revenue (defined)** field.

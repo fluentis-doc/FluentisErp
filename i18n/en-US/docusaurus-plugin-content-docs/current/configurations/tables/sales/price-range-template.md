@@ -1,22 +1,22 @@
 ---
-title: Configurazione fasce di prezzo
+title: Price Range Configuration 
 sidebar_position: 8
 ---
 
-La tabella si apre tramite il percorso **Tabelle > Vendite > Configurazione fasce di prezzo** e serve per configurare i prezzi al variare di alcuni attributi (esempio: nel settore dell'abbigliamento, dove ci sono articoli che hanno un costo diverso a seconda della taglia).
+The table is opened via the path **Tables > Sales > Price Range Configuration** and is used to configure prices based on the variation of certain attributes (for example: in the clothing sector, where there are items that have different costs depending on the size).
 
-### Ricerca la configurazione
+### Search the Configuration
 
-Consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+This allows you to enter new records or search for existing ones to view, modify, or delete them.
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+The form consists of a filter area and a result area. Once all desired filters are set, simply click the **Search** button to display the results in the result grid.
 
-Per modificare/visualizzare una configurazione basta fare doppio click sulla riga desiderata oppure premere il pulsante **Modifica**.
+To modify/view a configuration, just double-click on the desired row or press the **Modify** button.
 
-Per inserire nuovi record è necessario premere il pulsante **Nuovo** che aprirà una nuova form di inserimento. 
+To insert new records, it is necessary to press the **New** button, which will open a new entry form.
 
-### Modifica/Inserimento configurazione
+### Modify/Insert Configuration
 
-Nella prima parte vanno inseriti il **Codice** e la **Descrizione** della configurazione e di seguito vanno impostate le versioni, ognuna con i suoi dati specifici, da inserire nei tab inferiori.
+In the first part, the **Code** and **Description** of the configuration must be entered, and then the versions must be set, each with its specific data to be filled in the lower tabs.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+For everything not detailed in this document regarding the common functionality of forms, please refer to the following link [Custom Features, Buttons, and Fields](/docs/guide/common).

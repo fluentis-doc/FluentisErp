@@ -1,10 +1,10 @@
 ---
-title: Tipi listini di vendita
+title: Sales Price List Types
 sidebar_position: 17
 ---
 
-La tabella si apre tramite il percorso **Tabelle > Vendite > Tipi listini di vendita** ed è utilizzata per la codifica di listini generici di vendita che si differenziano proprio per questo codice dai listini personalizzati per cliente, che riportano come codice il conto sottoconto del cliente.
+The table opens via the path **Tables > Sales > Sales Price List Types** and is used for coding generic sales price lists that differ from custom sales price lists, which use the customer's detail account as the code.
 
-Per inserire nuovi record è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**. I campi da compilare sono:     
-- **Codice/Descrizione**: codice e descrizione del listino generale. Il codice inserito deve essere univoco.
-- **Prezzo Ivato**: se attivo, questo flag indica che il listino sarà creato con prezzo ivato, quindi nei suoi articoli non sarà presente la colonna Prezzo, ma solo la colonna Prezzo ivato che riporterà direttamente la somma tra Prezzo e Iva.      
+To insert new records, you need to click on the first empty row in the grid or press the **New** button. The fields to be filled in are:     
+- **Code/Description**: code and description of the general price list. The code entered must be unique.
+- **Price including VAT**: if active, this flag indicates that the price list will be created with a price including VAT; therefore, its items will not have the Price column but only the Price including VAT column, which will directly show the sum of Price and VAT.

@@ -1,78 +1,78 @@
 ---
-title: Tipi ordine cliente
+title: Sales Order Types
 sidebar_position: 23
 ---
 
-:::tip[FAst Start]
-La tabella è interessata dalla procedura di [**Fast Start**](/docs/guide/fast-start)
+:::tip[Fast Start]
+The table is affected by the [**Fast Start**](/docs/guide/fast-start) procedure.
 
-Nel caso in cui si intenda configurare manualmente fare riferimento alla check list della pagina linkata
+If you intend to configure manually, please refer to the checklist on the linked page.
 :::
 
-La tabella si apre tramite il percorso **Tabelle > Vendite > Tipi ordine cliente**.
+The table can be accessed via the path **Tables > Sales > Sales Order Types**.
 
-Consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+It allows you to insert new records or search for existing ones to view, modify, or delete them.
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
- 
-Per inserire nuovi record è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.  
+The form consists of a filter area and a result area. Once all desired filters are set, simply click the **Search** button to view the results within the result grid.
 
-**Tipo/Descrizione:** campi in cui viene indicato il codice e la descrizione della tipologia di ordine cliente. Importante: il codice deve essere univoco per società e dvisione; 
+To insert new records, you need to click in the grid on the first empty row or press the **New** button.  
 
-**Numerazione**: in questo campo va inserito il codice della numerazione appropriato. Per approfondimenti sulla numerazione dei documenti si rimanda all'articolo  [Numerazioni Fluentis](/docs/configurations/tables/fluentis-numerations); 
+**Type/Description:** fields where the code and description of the sales order type are indicated. Important: the code must be unique for each company and division;
 
-**Creazione Progetto Automatico** e **Tipo Progetto**: se attivo, il sistema provvederà, in fase di inserimento ordine cliente, a creare un progetto del tipo specificato nella colonna Tipo Progetto presente sempre nel tipo ordine e con lo stesso numero dell'ordine cliente, il progetto verrà automaticamente inserito in testata dell’ordine cliente per creare la relazione. Il progetto creato è considerato come un contenitore per collezionare i documenti collegati al progetto e alle sue righe. Il progetto creato dall’ordine cliente viene tenuto aggiornato in base alle modifiche fatte nell’ordine e viene mantenuto il legame riga progetto per ogni riga ordine. 
+**Numeration:** in this field, the appropriate numeration code should be entered. For further details on document numeration, refer to the article [Fluentis Numerations](/docs/configurations/tables/fluentis-numerations); 
 
-**Conferma ordine automatica**: se attivo, all’inserimento di un nuovo ordine viene settata la data conferma ordine automaticamente uguale alla data inserimento ordine; 
+**Automatic Project Creation** and **Project Type**: if active, the system will create a project of the type specified in the Project Type column during the sales order insertion phase, with the same number as the sales order; the created project will be automatically inserted in the header of the sales order to create the relationship. The project created is considered as a container for collecting documents related to the project and its lines. The project created from the sales order is kept updated based on the changes made in the order and maintains the project line link for each order line.
 
-**Escludi blocco:** si riferisce al blocco per superamento del fido e perciò inserito nella gestione Lock Manager presente nell’area tesoreria tra le procedure dell’Utilizzo Fidi. Se attivo, il sistema per questo tipo ordine non considererà il blocco del documento dovuto al superamento del fido ma lascerà all'utente la possibilità di inserire e stampare il documento; se non attivo, il tipo ordine verrà bloccato qualora si superi il fido e all'utente verrà impedito la stampa del documento; 
+**Automatic Order Confirmation**: if active, when entering a new order, the order confirmation date is automatically set to the date of order entry; 
 
-**Evasione tipo DDT**: contiene il tipo DDT che si vuole venga generato al lancio della procedura automatica di Evasione DDT presente nella ribbon button della Ricerca Ordini Clienti; 
+**Esclude Lock:** refers to the lock due to exceeding the credit limit and therefore included in the Lock Manager management present in the treasury area among the procedures for Credit Utilization. If active, the system will not consider the document lock due to exceeding the credit limit for this order type but will allow the user to enter and print the document; if not active, the order type will be blocked if the credit limit is exceeded, and the user will be prevented from printing the document; 
 
-**Evasione tipo fattura**: contiene il tipo fattura  che si vuole venga generato al lancio della procedura automatica di Evasione Fatture presente nella ribbon button della Ricerca Ordini Clienti; 
+**Execution of Delivery Note Type:** contains the DN type that you want to be generated when the automatic DN Execution procedure is launched from the ribbon button in Search Sales Orders; 
 
-**Evasione tipo picking**: contiene il tipo picking che si vuole venga generato al lancio della procedura di creazione del picking dalle [Spedizioni](/docs/logistics/shipping/shippings); 
+**Execution of Invoice Type:** contains the invoice type that you want to be generated when the automatic Invoice Execution procedure is launched from the ribbon button in Search Sales Orders; 
 
-**Blocca Doc. Stampato**: se attivo, non permette la modifica dell'ordine cliente che abbia il flag “Stampato” attivo in testata; 
+**Execution Picking Type:** contains the picking type that you want to be generated when launching the procedure to create picking from [Shippings](/docs/logistics/shipping/shippings); 
 
-**Fido**: se attivo, l'ordine con questo tipo viene considerato per il calcolo del superamento del fido; 
+**Block Listed Document:** if active, it does not allow modification of the sales order that has the "Printed" flag active in the header; 
 
-**Cash flow**: se attivo, il tipo ordine concorre al calcolo del [cash flow](/docs/treasury/cash-flow/cash-flow/search-cash-flow); 
+**Credit:** if active, orders of this type are considered for calculating exceeding the credit limit; 
 
-**Magazzino/Descrizione magazzino**: in questi campi si andrà ad indicare il [magazzino](/docs/configurations/tables/logistics/warehouses)  di impegno degli articoli presenti in quel determinato tipo di ordine; il magazzino qui specificato viene riportato in tutte le righe articolo inserite nell’ordine di questa tipologia. 
+**Cash Flow:** if active, the order type contributes to the calculation of [cash flow](/docs/treasury/cash-flow/cash-flow/search-cash-flow); 
 
-**Causale /Descrizione causale magazzino**: in questi campi si andrà invece ad indicare la *causale di movimentazione* degli articoli impegnati contenuti in quel determinato tipo di ordine; la causale qui specificata viene riportato in tutte le righe articolo inserite nell’ordine di questa tipologia. 
+**Warehouse/Warehouse Description:** in these fields, the [warehouse](/docs/configurations/tables/logistics/warehouses) for the commitment of the items present in that particular order type is indicated; the warehouse specified here is reported in all item lines inserted in orders of this type. 
 
-**Evasione Quantità Articolo non sommata**: se attivo, evadendo in momenti diversi la stessa riga ordine nello stesso documento di evasione (DDT, Fattura, ..) vengono riportate nel documento di evasione le singole righe articolo senza sommare le quantità. Esempio ho una riga ordine di 10 pz faccio una prima evasione in DDT di 2 pezzi, poi una seconda evasione della stessa riga di altri 2 pz, nel ddt compariranno 2 righe articolo con quantità 2 ciascuna, mentre senza il flag la seconda evasione avrebbe incrementato la riga DDT portando a 4 la quantità; 
+**Template/Warehouse Template Description:** in these fields, the *movement template* for the committed items contained in that specific order type is indicated; the template specified here is reported in all item lines inserted in orders of this type. 
 
-**Controllo disponibilità**: se attivo, questi tipi ordine verranno considerati nel [calcolo della disponibilità](/docs/erp-home/registers/items/calculate-availability); 
+**Unsumed Item Quantity Order:** if active, when executing the same order line in different moments in the same evasion document (DN, Invoice, ..) the individual item lines are reported in the evasion document without summing the quantities. For example, I have an order line of 10 pieces; I execute 2 pieces in the first DN and then execute another 2 pieces of the same line in the second execution, the DN will show 2 item lines with 2 quantities each, while without the flag, the second execution would have increased the DN line bringing the quantity to 4; 
 
-**Agr. Acq. IVA**: se attivo, in fase di creazione dell'ordine, il sistema andrà a controllare se per l'articolo utilizzato è presente un codice dell'IVA agricola, altrimenti verrà utilizzato il codice IVA presente nell'[anagrafica articolo](/docs/erp-home/registers/items/create-new-items/item-registry/generality); 
+**Check availability:** if active, these order types will be considered in the [availability calculation](/docs/erp-home/registers/items/calculate-availability); 
 
-**Prezzo Ivato**: la gestione dei prezzi ivati si attiva tramite questo parametro presente in tutti i documenti dell’area vendita a partire dai listini di vendita. Nella ripresa prezzi di un documento con tipologia Prezzo Ivato, si cerca nei listini, con lo stesso flag Prezzo Ivato settato, e si calcolano gli sconti partendo sempre dal prezzo ivato. Dal prezzo ivato utilizzando l’aliquota iva dell’anagrafica cliente o dell’anagrafica articolo  viene calcolato il prezzo non ivato.Nei documenti sono visibili le colonne Prezzo e Prezzo Ivato Attenzione! se non esiste un listino valido con settato il flag Prezzo Ivato e in anagrafica articoli c’è un prezzo di vendita, viene proposto come Prezzo Ivato il prezzo di vendita. Attenzione! è possibile evadere un ordine con flag prezzo ivato in un ddt con tipologia non a prezzo ivato, i totali di riga vengono calcolati in modo diverso tra un documento con flag prezzo ivato e un documento senza flag prezzo ivato. Attenzione! è possibile duplicare un ordine con flag prezzo ivato in un ordine con tipologia non a prezzo ivato, i totali di riga vengono calcolati in modo diverso tra un documento con flag prezzo ivato e un documento senza flag prezzo ivato. Per capire il funzionamento della ripresa Prezzi e dei prezzi ivati e non ivati seguire l’articolo Ripresa Prezzi e Sconti nei documenti di vendita.       
+**VAT Purch. Agr.:** if active, at the time of order creation, the system will check if an agricultural VAT code is present for the item used; otherwise, the VAT code present in the [item registry](/docs/erp-home/registers/items/create-new-items/item-registry/generality) will be used; 
 
-**Tipo commessa produzione**: in questo campo è possibile indicare il tipo di commessa di produzione che si vuole venga generata da questo tipo di ordine all'interno della *Definizione MPS* nel momento della generazione delle commesse di produzione da ordine cliente; nel caso in cui sia settato il successivo flag *Generazione commessa di produzione*, la generazione della commessa avverrà automaticamente quando l'ordine viene confermato.     
+**Price including VAT:** the management of prices including VAT is activated through this parameter present in all documents in the sales area starting from sales price lists. In the price retrieval of a document with the VAT Price type, it searches in the price lists with the same VAT Price flag set, and discounts are calculated starting from the VAT price. From the VAT price using the VAT rate from the customer contact or item registry, the non-VAT price is calculated. In the documents, the columns Price and Price including VAT are visible. Attention! If there is no valid price list set with the VAT Price flag and there is a sales price in the item registry, the sales price will be proposed as the VAT Price. Attention! It is possible to execute an order with the VAT price flag in a DN with a non-VAT price type; the line totals are calculated differently between a document with a VAT price flag and a document without a VAT price flag. Attention! It is possible to duplicate an order with a VAT price flag into an order with a non-VAT price type; the line totals are calculated differently between a document with a VAT price flag and a document without a VAT price flag. To understand the functioning of Price Retrieval and VAT and non-VAT prices, follow the article Price Retrieval and Discounts in Sales Documents. 
 
-**Tipo ordini fornitori/Descrizione tipo OF**: va indicato il codice del tipo ordine fornitore che si vuole venga generato, nel caso si scelga di generare l'ordine fornitore partendo dall'ordine cliente, tramite l'apposita procedura; 
+**Production Job Order Type:** in this field, you can indicate the type of production job order that you want to be generated from this type of order within the *MPS Definition* at the time of generating production job orders from the sales order; if the subsequent flag *Production Job Order Generation* is set, the generation of the job order will occur automatically when the order is confirmed. 
 
-**Controllo cliente**: se attivo, nel momento in cui viene inserito il cliente all'interno dell'ordine, il sistema andrà a fare un controllo sulle anagrafiche, andando a verificare che il codice inserito corrisponda obbligatoriamente al codice di un'anagrafica cliente. Se così non fosse il sistema avviserà l'utente; senza questo flag è possibile creare Ordini anche per tipi conto Fornitore. 
+**Purchase Order Types/Purchase Order Type Description:** the code for the purchase order type to be generated should be indicated in case you choose to generate the purchase order from the sales order, through the appropriate procedure; 
 
-**Gestione Matrici Extra Data**: se attivo, permette di visualizzare, nel caso di gestione articoli con matrice, un tab aggiuntivo per l'imputazione dei valori della quantità per singola cella di matrice. Se non attivo, non viene visualizzato questo TAB e la conseguente matrice. Per saperne di più della gestione Matrici leggere l’articolo Gestione Matrici Extra-Data. 
+**Customer Ctrl.:** if active, when inserting the customer within the order, the system will perform a check on the registries, verifying that the entered code corresponds to a customer contact code. If not, the system will notify the user; without this flag, it is possible to create orders even for vendor account types. 
 
-**Configurazione**: in questo campo di andrà ad inserire un codice per l'impostazione automatica degli Extradata nella testata dell'ordine cliente. 
+**Extra Data Matrix Management:** if active, it allows the display, in the case of managing items with matrices, an additional tab for entering the values of the quantity for each matrix cell. If not active, this TAB and the subsequent matrix will not be displayed. To learn more about Matrix Management, read the article Extra-Data Matrix Management. 
 
-**Stampa**: in questo campo è possibile impostare la stampa di default da utilizzare per questa tipologia di documento; ricordiamo che, in fase di stampa documento, sarà necessario selezionare il report 'Stampe multiple' per utilizzare in automatico la stampa di default;
+**Configuration:** in this field, a code for the automatic setting of Extra Data in the header of the sales order should be entered. 
 
-**Numero di copie**: in questo campo vengono impostate il numero di copie documento da stampare; 
+**Print Report:** in this field, it is possible to set the default print to be used for this document type; remember that, during document printing, it will be necessary to select the 'Multiple Prints' report to automatically use the default print report;
 
-**Generazione Commessa di Produzione**: se attivo, indica che la commessa di produzione del tipo specificato nella colonna *Tipo Produzione Commessa* verrà creata automaticamente una volta che l'ordine viene confermato. 
+**Number of Copies:** this field sets the number of document copies to print; 
 
-:::note
-Quando viene aggiunta una nuova riga all’interno di un Ordine Cliente per cui vengono generate automaticamente le Commesse di Produzione, la nuova riga nella commessa assume stato *Non esaminato*.
+**Production Job Order Generation:** if active, indicates that the production job order of the specified type in the *Production Job Order Type* column will be automatically created once the order is confirmed. 
+
+:::notes
+When a new line is added within a Sales Order for which Production Job Orders are automatically generated, the new line in the job order assumes the status *Not examined*.
 :::
 
-**Gestione Cespiti**: se attivo, nel tab articoli dell’ordine viene attivato il tab Cespiti per collegare l’ordine alla vendita di un cespite 
+**Fixed Assets Management:** if active, in the items tab of the order, the Fixed Assets tab is activated to link the order to the sale of a fixed asset.
 
-**Tipo Operazione**: è sempre collegata alla gestione cespiti, se indicata viene proposta automaticamente nel widget Tipo Operazione presente nel tab Cespiti del tab Articoli dell’ordine.      
+**Operation Type:** is always connected to fixed asset management, if indicated, it is automatically proposed in the Operation Type widget present in the Fixed Assets tab of the Items tab of the order. 
 
-**Tipo sconto/Descrizione**: in questa colonna è possibile associare la tipologia di sconto da proporre quando gli sconti vengono inseriti direttamente nella colonna *Sconti articolo* della griglia articoli dei documenti (per maggiori dettagli vedi l'articolo [Gestione Widget sconti semplificato](/docs/sales/sales-flow/discount-widget)).
+**Discount Type/Description:** in this column, it is possible to associate the discount type to be proposed when discounts are entered directly in the *Item Discounts* column of the item grid of the documents (for more details see the article [Simplified Discount Widget Management](/docs/sales/sales-flow/discount-widget)).
