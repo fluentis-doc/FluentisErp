@@ -1,32 +1,32 @@
 ---
-title: Tipi azione correttiva
+title: Corrective Action Type
 sidebar_position: 2
 ---
 
-La tabella si trova sul percorso **Tabelle > Qualità > Azioni correttive > Tipi azione correttiva**.
+The table can be found on the path **Tables > Quality > Corrective Actions > Corrective Action Type**.
 
-In questa tabella è possibile codificare i *Tipi azione correttiva*.   
-Alcuni esempi di utilizzo di *Tipi azione correttiva* li troviamo nelle gestioni:
-> **Azioni correttive** - nei *dati di testata*;   
-> **Parametri Azioni correttive** - nei *dati di testata*.
+In this table, it is possible to encode the *Corrective Action Type*.  
+Some examples of using *Corrective Action Type* can be found in the management sections:
+> **Corrective Actions** - in the *header info*;   
+> **Corrective Action Parameters** - in the *header info*.
 
-La tabella consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+The table allows for the insertion of new records or searching for existing ones to view, modify, or delete them.
 
-**Ricerca Tipi azione correttiva**
+**Corrective Action Type Search**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+The form consists of a filter area and a results area. Once all desired filters are set, just click the **Search** button to display the results within the results grid.
 
-**Inserimento Tipi azione correttiva**
+**Insert Corrective Action Type**
 
-Per poter inserire nuovi *Tipi azione correttiva* è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.   
-Per il nuovo record si devono inserire almeno i campi obbligatori richiesti dal programma: il **Codice** e la **Descrizione**.
+To insert new *Corrective Action Type*, it is necessary to click on the first empty row in the grid or press the **New** button.   
+For the new record, at least the mandatory fields required by the program must be filled in: the **Code** and the **Description**.
 
-*Campi specifici*: 
-    
-> **Codice**: è il codice del *Tipo azione correttiva*.   
-> **Descrizione**: è la descrizione del *Tipo azione correttiva*.   
-> **Numerazione**: è il codice della *Numerazione*.   
-> **Descrizione numerazione**: è la descrizione della *Numerazione*.   
-> **Note**: annotazioni libere.
+*Specific fields*: 
+   
+> **Code**: is the code of the *Corrective Action Type*.   
+> **Description**: is the description of the *Corrective Action Type*.   
+> **Numeration**: is the code for *Numeration*.   
+> **Numeration Description**: is the description for *Numeration*.   
+> **Notes**: free annotations.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+For anything not detailed in this document regarding the common operation of forms, please refer to the following link [Custom features, buttons, and fields](/docs/guide/common).

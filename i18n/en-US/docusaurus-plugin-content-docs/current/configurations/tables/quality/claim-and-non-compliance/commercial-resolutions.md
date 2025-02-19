@@ -1,31 +1,31 @@
 ---
-title: Risoluzioni commerciali
+title: Commercials Resolutions 
 sidebar_position: 7
 ---
 
-La tabella si trova sul percorso **Tabelle > Qualità > Reclami e Non conformità > Risoluzioni commerciali**.
+The table is located along the path **Tables > Quality > Complaints and Non-Compliance > Commercials Resolutions**.
 
-In questa tabella è possibile codificare le *Risoluzioni commerciali* intraprese per risolvara i *Difetti riscontrati*.   
-Alcuni esempi di utilizzo di *Risoluzioni commerciali* li troviamo nelle gestioni:
-> **Reclami** - nel tabulatore *Gestione difetti > Dati difetto*.
+In this table, it is possible to encode the *Commercials Resolutions* undertaken to resolve the *Defects Detected*.   
+Some examples of the use of *Commercials Resolutions* can be found in the management of:
+> **Claims** - in the tab *Defect Management > Defective Data*.
 
-La tabella consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+The table allows users to enter new records or search for existing ones to view, modify, or delete them.
 
-**Ricerca Risoluzioni commerciali**
+**Commercials Resolutions Search**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+The form consists of a filter area and a results area. Once all desired filters are set, simply click on the **Search** button to view the results within the results grid.
 
-**Inserimento Risoluzioni commerciali**
+**Insert Commercials Resolutions**
 
-Per poter inserire nuove *Risoluzioni commerciali* è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.   
-Per il nuovo record si devono inserire almeno i campi obbligatori richiesti dal programma: il **Codice** e la **Descrizione**.
+To enter new *Commercials Resolutions*, you must click on the first empty row in the grid or press the **New** button.   
+For the new record, you must enter at least the mandatory fields required by the program: **Code** and **Description**.
 
-*Campi specifici*: 
+*Specific fields*: 
     
-> **Codice**: è il codice della *Risoluzione commerciale*.   
-> **Descrizione risoluzione commerciale**: è la descrizione della *Risoluzione commerciale*.   
-> **Punteggio calcolo indice di qualificazione fornitore**: è il punteggio di decurtazione del *Bonus* utilizzato durante la *Valutazione periodica fornitori su Non conformità*.   
-> **Attiva**: indica se la risoluzione è ancora valida e utilizzabile.   
-> **Note**: annotazioni libere.
+> **Code**: is the code of the *Commercial Resolution*.   
+> **Commercial Resolution Description**: is the description of the *Commercial Resolution*.   
+> **Score for Supplier Qualification Index Calculation**: is the score of deduction of the *Bonus* used during the *Periodic supplier non-compliance rating*.   
+> **Active**: indicates whether the resolution is still valid and usable.   
+> **Notes**: free annotations.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+For all matters not detailed in this document regarding the common functionality of the forms, please refer to the following link [Custom Features, Buttons, and Fields](/docs/guide/common).

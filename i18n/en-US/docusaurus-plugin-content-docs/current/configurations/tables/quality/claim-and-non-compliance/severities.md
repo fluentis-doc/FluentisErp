@@ -1,34 +1,34 @@
 ---
-title: Gravità
+title: Severity
 sidebar_position: 3
 ---
 
-La tabella si trova sul percorso **Tabelle > Qualità > Reclami e Non conformità > Gravità**.
+The table is located on the path **Tables > Quality > Complaints and Non-Compliance > Severity**.
 
-In questa tabella è possibile codificare le *Gravità* delle situazioni non conformi riscontrate.   
-Alcuni esempi di utilizzo di *Gravità* li troviamo nelle gestioni:
-> **Reclami** - nel tabulatore *Gestione difetti*;   
-> **Non conformità** - nel tabulatore *Gestione difetti*.
+In this table, it is possible to code the *Severities* of non-compliance situations encountered.   
+Some examples of the use of *Severity* can be found in the management of:
+> **Claims** - in the *Defect Management* tab;   
+> **Non-Compliance** - in the *Defect Management* tab.
 
-La tabella consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+The table allows for the insertion of new records or the searching of existing ones to view, modify, or delete them.
 
-**Ricerca Gravità**
+**Severity Search**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+The form consists of a filter area and a results area. Once all desired filters are set, simply click the **Search** button to display the results in the results grid.
 
-**Inserimento Gravità**
+**Insert Severity**
 
-Per poter inserire nuove *Gravità* è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.   
-Per il nuovo record si devono inserire almeno i campi obbligatori richiesti dal programma: il **Codice** e la **Descrizione**.
+To insert new *Severities*, it is necessary to click on the first empty row in the grid or press the **New** button.   
+For the new record, at least the fields required by the program must be filled in: **Code** and **Description**.
 
-*Campi specifici*: 
+*Specific fields*: 
     
-> **Sequenza**: è la sequenza di visualizzazione negli elenchi delle *Gravità*.   
-> **Codice**: è il codice della *Gravità*.   
-> **Descrizione gravità**: è la descrizione della *Gravità*.   
-> **Punteggio calcolo indice di qualificazione fornitore**: è il punteggio di decurtazione del *Bonus* utilizzato durante la *Valutazione periodica fornitori su Non conformità*.   
-> **Eliminabile**: indica se la *Gravità* è eliminabile.   
-> **Attiva**: indica se la *Gravità* è ancora valida e utilizzabile.   
-> **Note**: annotazioni libere.
+> **Sequence**: is the display sequence in the lists of *Severities*.   
+> **Code**: is the code of the *Severity*.   
+> **Severity Description**: is the description of the *Severity*.   
+> **Score for Supplier Qualification Index Calculation**: is the score for the deduction of the *Bonus* used during the *Periodic supplier non-compliance rating*.   
+> **Eliminable**: indicates whether the *Severity* can be deleted.   
+> **Active**: indicates whether the *Severity* is still valid and usable.   
+> **Notes**: free annotations.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+For anything not detailed in this document regarding the common functionality of forms, please refer to the following link [Custom features, buttons, and fields](/docs/guide/common).

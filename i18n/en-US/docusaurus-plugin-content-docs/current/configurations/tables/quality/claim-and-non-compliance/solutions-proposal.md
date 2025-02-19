@@ -1,47 +1,47 @@
 ---
-title: Proposte di soluzione
+title: Solution Proposals 
 sidebar_position: 8
 ---
 
-La tabella si trova sul percorso **Tabelle > Qualità > Reclami e Non conformità > Proposte di soluzione**.
+The table is located in the path **Tables > Quality > Complaints and Non-Compliance > Solution Proposals**.
 
-In questa tabella è possibile codificare le *Decisioni* tecniche/gestionali che sono state intraprese per risolvere i *Difetti riscontrati*.   
-Alcuni esempi di utilizzo di *Proposte di soluzione* li troviamo nelle gestioni:
-> **Reclami** - nel tabulatore *Gestione difetti > Dati difetto*;   
-> **Non conformità** - nel tabulatore *Gestione difetti > Dati difetto*.
+In this table, it is possible to codify the Technical/Management *Decisions* that have been made to resolve the *Defects Detected*.   
+Some examples of using *Solution Proposals* can be found in the management of:
+> **Claims** - in the tab *Defect Management > Defective Data*;   
+> **Non-compliance** - in the tab *Defect Management > Defective Data*.
 
-La tabella consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+The table allows for inserting new records or searching for existing ones to view, modify, or delete them.
 
-**Ricerca Proposte di soluzione**
+**Solution Proposals Search**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+The form consists of a filtering area and a results area. Once all desired filters are set, simply click the **Search** button to display the results in the results grid.
 
-**Inserimento Proposte di soluzione**
+**Insert Solution Proposals**
 
-Per poter inserire nuove *Proposte di soluzione* è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.   
-Per il nuovo record si devono inserire almeno i campi obbligatori richiesti dal programma: il **Codice** e la **Descrizione**.
+To insert new *Solution Proposals*, you must click on the first empty row in the grid or press the **New** button.   
+For the new record, at least the mandatory fields required by the program must be entered: **Code** and **Description**.
 
-## Proposte di soluzione
+## Solution Proposals 
 
-E' l'elenco dove vengono inserite le informazioni principali della *Proposta di soluzione*.   
-L'elenco si compone delle seguenti informazioni:   
-> **Codice**: è il codice della *Proposta di soluzione*.   
-> **Descrizione proposta di soluzione**: è la descrizione della *Proposta di soluzione*.   
-> **Punteggio calcolo indice di qualificazione fornitore**: è il punteggio di decurtazione del *Bonus* utilizzato durante la *Valutazione periodica fornitori su Non conformità*.   
-> **Attiva**: indica se la decisione è ancora valida e utilizzabile.   
-> **Note**: annotazioni libere.
+It is the list where the main information of the *Solution Proposal* is entered.   
+The list consists of the following information:   
+> **Code**: it is the code of the *Solution Proposal*.   
+> **Solution Proposal Description**: it is the description of the *Solution Proposal*.   
+> **Score for Supplier Qualification Index Calculation**: it is the deduction score of the *Bonus* used during the *Periodic supplier non-compliance rating*.   
+> **Active**: indicates whether the decision is still valid and usable.   
+> **Notes**: free notes.
 
-### Coinvolgimento soggetti
+### Subjects Involved
 
-In questo elenco è possibile associare le *Funzioni aziendali* e/o *Dipendenti* per il loro coinvolgimento nelle gestioni dei *Reclami* e *Non conformità*.   
-All'indicazione della *Proposta di soluzione* questi soggetti verranno proposti nell'elenco dei *Soggetti coinvolti* delle suddette gestioni.
-L'elenco si compone delle seguenti informazioni:   
-> **Sequenza**: è la sequenza di coinvolgimento del soggetto per la "Proposta di soluzione" selezionata.   
-> **Funzione aziendale**: è il codice della *Funzione aziendale* da coinvolgere.   
-> **Descrizione funzione aziendale**: è la descrizione della *Funzione aziendale* da coinvolgere.   
-> **Dipendente**: è il codice del *Dipendente* da coinvolgere.   
-> **Nome completo**: è il cognome e il nome del Dipendente* da coinvolgere.   
-> **Descrizione soggetto**: è la libera descrizione di un soggetto non codificato da coinvolgere.   
-> **Motivo del coinvolgimento**: è la libera descrizione del motivo che verrà proposto nell'elenco dei *Soggetti coinvolti* nelle gestioni dei *Reclami* e *Non conformità*.   
+In this list, it is possible to associate *Company functions* and/or *Employees* for their involvement in the management of *Claims* and *Non-compliance*.   
+Upon indicating the *Solution Proposal*, these stakeholders will be proposed in the list of *Subjects involved* in the aforementioned managements.
+The list consists of the following information:   
+> **Sequence**: it is the sequence of involvement of the subject for the selected "Solution Proposal".   
+> **Company Function**: it is the code of the *Company Function* to be involved.   
+> **Company Function Description**: it is the description of the *Company Function* to be involved.   
+> **Employee**: it is the code of the *Employee* to be involved.   
+> **Full Name**: it is the surname and first name of the *Employee* to be involved.   
+> **Subject Description**: it is the free description of a non-coded subject to be involved.   
+> **Reason for Involvement**: it is the free description of the reason that will be proposed in the list of *Subjects involved* in the management of *Claims* and *Non-compliance*.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+For all that is not detailed in this document regarding the common operation of the forms, please refer to the following link [Custom Features, Buttons, and Fields](/docs/guide/common).

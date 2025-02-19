@@ -1,32 +1,32 @@
 ---
-title: Decisioni intraprese
+title: Decisions Taken
 sidebar_position: 9
 ---
 
-La tabella si trova sul percorso **Tabelle > Qualità > Reclami e Non conformità > Decisioni intraprese**.
+The table is located on the path **Tables > Quality > Complaints and Non-Compliance > Decisions Taken**.
 
-In questa tabella è possibile codificare le *Decisioni intraprese* per la risoluzione dei *Difetti riscontrati*.   
-Alcuni esempi di utilizzo di *Decisioni intraprese* li troviamo nelle gestioni:
-> **Reclami** - nel tabulatore *Gestione difetti > Dati difetto*;   
-> **Non conformità** - nel tabulatore *Gestione difetti > Dati difetto*.
+In this table, it is possible to code the *Decisions Taken* for resolving the *Defects Detected*.   
+Some examples of using *Decisions Taken* can be found in the management of:
+> **Claims** - in the tab *Defect Management > Defective Data*;   
+> **Non-Compliance** - in the tab *Defect Management > Defective Data*.
 
-La tabella consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+The table allows for the insertion of new records or to search for existing ones to view, modify, or delete them.
 
-**Ricerca Decisioni intraprese**
+**Decisions Taken Search**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+The form consists of a filter area and a results area. Once all desired filters are set, simply click the **Search** button to display the results within the results grid.
 
-**Inserimento Decisioni intraprese**
+**Insert Decisions Taken**
 
-Per poter inserire nuove *Decisioni intraprese* è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.   
-Per il nuovo record si devono inserire almeno i campi obbligatori richiesti dal programma: il **Codice** e la **Descrizione**.
+To insert new *Decisions Taken*, it is necessary to click on the first empty row in the grid or press the **New** button.   
+For the new record, at least the mandatory fields required by the program must be filled in: **Code** and **Description**.
 
-*Campi specifici*: 
-    
-> **Codice**: è il codice della *Decisione intrapresa*.   
-> **Descrizione decisione intrapresa**: è la descrizione della *Decisione intrapresa*.   
-> **Punteggio calcolo indice di qualificazione fornitore**: è il punteggio di decurtazione del *Bonus* utilizzato durante la *Valutazione periodica fornitori su Non conformità*.   
-> **Attiva**: indica se la decisione è ancora valida e utilizzabile.   
-> **Note**: annotazioni libere.
+*Specific fields*: 
+   
+> **Code**: this is the code for the *Decision Taken*.   
+> **Decisions Taken Description**: this is the description of the *Decision Taken*.   
+> **Score for Supplier Qualification Index Calculation**: this is the score for the deduction of the *Bonus* used during the *Periodic supplier non-compliance rating*.   
+> **Active**: indicates whether the decision is still valid and usable.   
+> **Notes**: free annotations.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+For everything not detailed in this document regarding the common operation of forms, please refer to the following link [Custom Features, Buttons, and Fields](/docs/guide/common).

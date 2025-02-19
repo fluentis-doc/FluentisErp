@@ -1,30 +1,30 @@
 ---
-title: Classi strumento
+title: Tool Classes 
 sidebar_position: 5
 ---
 
-La tabella si trova sul percorso **Tabelle > Qualità > Taratura strumenti > Classi strumento**.
+The table can be found along the path **Tables > Quality > Calibration Tools > Tool Classes**.
 
-:::important A cosa serve
-In questa tabella è possibile codificare le *Classi strumento* che sono utilizzate per determinare il livello di conformità degli *Strumenti di misura*.   
-Un esempio di utilizzo lo troviamo nella gestione **Strumenti di misura**.
+:::important What it is for
+In this table, you can code the *Tool Classes* that are used to determine the level of compliance of *Measurement Tools*.   
+An example of its use can be found in the management of **Measurement Tools**.
 :::
 
-La tabella consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+The table allows you to insert new records or search for existing ones to view, modify, or delete them.
 
-**Ricerca Classi strumento**
+**Tool Classes Search**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+The form consists of a filter area and a results area. Once all desired filters are set, simply click the **Search** button to display the results in the results grid.
 
-**Inserimento Classi strumento**
+**Insert Tool Classes**
 
-Per poter inserire nuove *Classi strumento* è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.   
-Per il nuovo record si devono inserire almeno i campi obbligatori richiesti dal programma: il **Codice** e la **Descrizione**.
+To insert new *Tool Classes*, you need to click on the first empty row in the grid or press the **New** button.   
+For the new record, at least the mandatory fields required by the program must be filled in: **Code** and **Description**.
 
-*Campi specifici*: 
-    
-> **Codice**: è il codice della *Classe strumento*.   
-> **Descrizione**: è la descrizione della *Classe strumento*.   
-> **Note**: annotazioni libere.
+*Specific fields*: 
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+> **Code**: this is the code of the *Tool Class*.   
+> **Description**: this is the description of the *Tool Class*.   
+> **Notes**: free annotations.
+
+For everything not detailed in this document regarding the common functionality of forms, please refer to the following link [Custom Features, Buttons, and Fields](/docs/guide/common).

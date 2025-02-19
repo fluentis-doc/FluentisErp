@@ -1,32 +1,32 @@
 ---
-title: Fasi di rilevamento
+title: Detecting Steps
 sidebar_position: 4
 ---
 
-La tabella si trova sul percorso **Tabelle > Qualità > Reclami e Non conformità > Fasi di rilevamento**.
+The table is located at the path **Tables > Quality > Complaints and Non-compliance > Detecting Steps**.
 
-In questa tabella è possibile codificare le *Fasi di rilevamento*, cioè il momento della fase produttiva/gestionale nel quale si sono rilevati i difetti.   
-Alcuni esempi di utilizzo di *Fasi di rilevamento* li troviamo nelle gestioni:
-> **Reclami** - nel tabulatore *Gestione difetti > Dati difetto*;   
-> **Non conformità** - nel tabulatore *Gestione difetti > Dati difetto*.
+In this table, it is possible to encode the *Detecting Steps*, which refer to the moment in the production/management phase when defects were detected.   
+Some examples of using *Detecting Steps* can be found in the management sections:
+> **Claims** - in the tab *Defect Management > Defective Data*;   
+> **Non-compliance** - in the tab *Defect Management > Defective Data*.
 
-La tabella consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+The table allows the insertion of new records or searching for existing ones to view, modify, or delete them.
 
-**Ricerca Fasi di rilevamento**
+**Detecting Steps Search**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+The form consists of a filter area and a results area. Once all desired filters are set, simply click the **Search** button to display the results within the results grid.
 
-**Inserimento Fasi di rilevamento**
+**Insert Detecting Steps**
 
-Per poter inserire nuove *Fasi di rilevamento* è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.   
-Per il nuovo record si devono inserire almeno i campi obbligatori richiesti dal programma: il **Codice** e la **Descrizione**.
+To insert new *Detecting Steps*, it is necessary to click on the first empty row in the grid or press the **New** button.   
+For the new record, at least the mandatory fields required by the program must be filled in: **Code** and **Description**.
 
-*Campi specifici*: 
+*Specific fields*: 
     
-> **Codice**: è il codice della *Fase di rilevamento*.   
-> **Descrizione fase di rilevamento**: è la descrizione della *Fase di rilevamento*.   
-> **Punteggio calcolo indice di qualificazione fornitore**: è il punteggio di decurtazione del *Bonus* utilizzato durante la *Valutazione periodica fornitori su Non conformità*.   
-> **Attiva**: indica se la fase è ancora valida e utilizzabile.   
-> **Note**: annotazioni libere.
+> **Code**: this is the code for the *Detecting Step*.   
+> **Detecting Steps Description**: this is the description of the *Detecting Step*.   
+> **Score for Supplier Qualification Index Calculation**: this is the score reduction of the *Bonus* used during the *Periodic supplier non-compliance rating*.   
+> **Active**: indicates if the phase is still valid and usable.   
+> **Notes**: free annotations.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+For anything not detailed in this document regarding the common functioning of forms, please refer to the following link [Custom features, buttons, and fields](/docs/guide/common).

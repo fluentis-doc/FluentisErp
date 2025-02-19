@@ -1,41 +1,41 @@
 ---
-title: Difetti riscontrati
+title: Defects Detected
 sidebar_position: 5
 ---
 
-La tabella si trova sul percorso **Tabelle > Qualità > Reclami e Non conformità > Difetti riscontrati**.
+The table can be found at the path **Tables > Quality > Complaints and Non-compliance > Defects Detected**.
 
-In questa tabella è possibile codificare i *Difetti riscontrati* in prodotti, materiali e servizi.   
-Alcuni esempi di utilizzo dei *Difetti riscontrati* li troviamo nelle gestioni:
-> **Reclami** - nel tabulatore *Gestione difetti*;   
-> **Non conformità** - nel tabulatore *Gestione difetti*;   
-> **M.E.S.** - nel tabulatore *Produzione*.
+In this table, it is possible to code the *Defects Detected* in products, materials, and services.   
+Some examples of using the *Defects Detected* can be found in the management sections:
+> **Claims** - in the *Defect Management* tab;   
+> **Non-compliance** - in the *Defect Management* tab;   
+> **M.E.S.** - in the *Production* tab.
 
-La tabella consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+The table allows for the insertion of new records or the search for existing ones to view, modify, or delete them.
 
-**Ricerca Difetti riscontrati**
+**Defects Detected Search**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+The form consists of a filter area and a results area. Once all desired filters are set, simply click the **Search** button to display the results within the result grid.
 
-**Inserimento Difetti riscontrati**
+**Insert Defects Detected**
 
-Per poter inserire nuovi *Difetti riscontrati* è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.   
-Per il nuovo record si devono inserire almeno i campi obbligatori richiesti dal programma: il **Codice** e la **Descrizione**.
+To insert new *Defects Detected*, click on the first empty row in the grid or press the **New** button.   
+For the new record, at least the mandatory fields required by the program must be filled in: **Code** and **Description**.
 
-*Campi specifici*: 
+*Specific fields*: 
 
-> **Codice**: è il codice del *Difetto riscontrato*.   
-> **Descrizione difetto riscontrato**: è la descrizione del *Difetto riscontrato*.   
-> **Categoria**: è il codice della *Categoria difetto riscontrato*.   
-> **Descrizione categoria**: è la descrizione della *Categoria difetto riscontrato*.   
-> **Classe**: è la *Classificazione del difetto*.   
-> **Reclami**: indica l'attivazione del difetto nella gestione dei *Reclami*.   
-> **Non conformità interne**: indica l'attivazione del difetto nella gestione delle *Non conformità interne*.   
-> **Non conformità a fornitore**: indica l'attivazione del difetto nella gestione delle *Non conformità a fornitore*.   
-> **Non conformità a cliente**: indica l'attivazione del difetto nella gestione delle *Non conformità a cliente*.   
-> **Dichiarazioni di produzione**: indica l'attivazione del difetto nella gestione delle *Dichiarazioni di produzione*.   
-> **Punteggio calcolo indice di qualificazione fornitore**: è il punteggio di decurtazione del *Bonus* utilizzato durante la *Valutazione periodica fornitori su Non conformità*.   
-> **Attivo**: indica se il difetto è ancora valido e utilizzabile.   
-> **Note**: annotazioni libere.
+> **Code**: is the code of the *Defects Detected*.   
+> **Defects Detected Description**: is the description of the *Defects Detected*.   
+> **Category**: is the code of the *Defects Detected Category*.   
+> **Category Description**: is the description of the *Defects Detected Category*.   
+> **Class**: is the *Defect Classification*.   
+> **Claims**: indicates the activation of the defect in the management of *Claims*.   
+> **Internal Non-compliance**: indicates the activation of the defect in the management of *Internal Non-compliance*.   
+> **Supplier Non-compliance**: indicates the activation of the defect in the management of *Supplier Non-compliance*.   
+> **Customer Non-compliance**: indicates the activation of the defect in the management of *Customer Non-compliance*.   
+> **Production Declarations**: indicates the activation of the defect in the management of *Production Declarations*.   
+> **Score for Supplier Qualification Index Calculation**: is the deduction score of the *Bonus* used during *Periodic supplier non-compliance rating*.   
+> **Active**: indicates whether the defect is still valid and usable.   
+> **Notes**: free annotations.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+For everything not detailed in this document regarding the common operation of forms, please refer to the following link [Custom features, buttons, and fields](/docs/guide/common).

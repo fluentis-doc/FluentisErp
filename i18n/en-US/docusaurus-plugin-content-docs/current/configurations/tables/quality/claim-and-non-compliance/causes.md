@@ -1,38 +1,38 @@
 ---
-title: Cause
+title: Causes 
 sidebar_position: 6
 ---
 
-La tabella si trova sul percorso **Tabelle > Qualità > Reclami e Non conformità > Cause**.
+The table is located along the path **Tables > Quality > Complaints and Non-compliance > Causes**.
 
-In questa tabella è possibile codificare le *Cause*, previste ed effettive, che hanno causato una situazione non conforme.   
-Alcuni esempi di utilizzo dei *Difetti riscontrati* li troviamo nelle gestioni:
-> **Reclami** - nei tabulatori *Gestione difetti*, *Gestione 8D > Cause* e *Gestione 8D > Azioni permanenti*;   
-> **Non conformità** - nel tabulatore *Gestione difetti*.
+In this table, it is possible to encode the *Causes*, both expected and actual, that led to a nonconforming situation.   
+Some examples of the use of *Defects Detected* can be found in the management of:
+> **Complaints** - in the tabs *Defects Management*, *8D Management > Causes*, and *8D Management > Permanent Actions*;   
+> **Non-compliance** - in the *Defects Management* tab.
 
-La tabella consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+The table allows for the entry of new records or the search for existing ones to view, modify, or delete them.
 
-**Ricerca Cause**
+**Search Causes**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+The form consists of a filter area and a results area. Once all desired filters are set, it is sufficient to click the **Search** button to display the results in the results grid.
 
-**Inserimento Cause**
+**Insert Causes**
 
-Per poter inserire nuove *Cause* è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.   
-Per il nuovo record si devono inserire almeno i campi obbligatori richiesti dal programma: il **Codice** e la **Descrizione**.
+To enter new *Causes*, it is necessary to click on the first empty row in the grid or press the **New** button.   
+For the new record, at least the required mandatory fields in the program must be filled: **Code** and **Description**.
 
-*Campi specifici*: 
-    
-> **Codice**: è il codice della *Causa*.   
-> **Descrizione causa**: è la descrizione della *Causa*.   
-> **Presunta**: indica l'attivazione della causa nelle *Cause presunta*.   
-> **Effettiva**: indica l'attivazione della causa nelle *Cause effettive*.   
-> **Reclami**: indica l'attivazione della causa presunta e/o effettiva nella gestione dei *Reclami*.   
-> **Non conformità interne**: indica l'attivazione della causa presunta e/o effettiva nella gestione delle *Non conformità interne*.   
-> **Non conformità a fornitore**: indica l'attivazione della causa presunta e/o effettiva nella gestione delle *Non conformità a fornitore*.   
-> **Non conformità a cliente**: indica l'attivazione della causa presunta e/o effettiva nella gestione delle *Non conformità a cliente*.   
-> **Punteggio calcolo indice di qualificazione fornitore**: è il punteggio di decurtazione del *Bonus* utilizzato durante la *Valutazione periodica fornitori su Non conformità*.   
-> **Attiva**: indica se la causa è ancora valida e utilizzabile.   
-> **Note**: annotazioni libere.
+*Specific fields*: 
+   
+> **Code**: this is the code of the *Cause*.   
+> **Cause Description**: this is the description of the *Cause*.   
+> **Presumed**: indicates the activation of the cause in the *Presumed Causes*.   
+> **Effective**: indicates the activation of the cause in the *Effective Causes*.   
+> **Complaints**: indicates the activation of the presumed and/or effective cause in the management of *Complaints*.   
+> **Internal Non-compliance**: indicates the activation of the presumed and/or effective cause in the management of *Internal Non-compliance*.   
+> **Supplier Non-compliance**: indicates the activation of the presumed and/or effective cause in the management of *Supplier Non-compliance*.   
+> **Customer Non-compliance**: indicates the activation of the presumed and/or effective cause in the management of *Customer Non-compliance*.   
+> **Score for supplier qualification index calculation**: this is the penalty score of the *Bonus* used during the *Periodic supplier non-compliance*.   
+> **Active**: indicates whether the cause is still valid and usable.   
+> **Notes**: free annotations.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+For anything not detailed in this document regarding the common functioning of forms, please refer to the following link [Custom Features, Buttons, and Fields](/docs/guide/common).

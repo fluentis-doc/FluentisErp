@@ -1,28 +1,28 @@
 ---
-title: Categorie difetto riscontrato
+title: Defect Detected Category
 sidebar_position: 10
 ---
 
-La tabella si trova sul percorso **Tabelle > Qualità > Generale > Categorie difetto riscontrato**.
+The table is located along the path **Tables > Quality > General > Defect Detected Category**.
 
-In questa tabella è possibile codificare i metodi utilizzati per la ricezione o l'invio di documenti.   
-Un esempio di utilizzo lo troviamo nella tabella **Difetti riscontrati**.   
+In this table, it is possible to codify the methods used for receiving or sending documents.   
+An example of usage can be found in the **Defects Detected** table.   
 
-La tabella consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+The table allows for the insertion of new records or for searching existing ones to view, modify, or delete them.
 
-**Ricerca Categorie difetto riscontrato**
+**Defect Detected Category Search**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+The form consists of a filter area and a results area. Once all desired filters are set, simply click the **Search** button to display the results within the results grid.
 
-**Inserimento Categorie difetto riscontrato**
+**Insert Defect Detected Category**
 
-Per poter inserire nuove *Categorie difetto riscontrato* è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.   
-Per il nuovo record si devono inserire almeno i campi obbligatori richiesti dal programma: il **Codice** e la **Descrizione**.
+To insert new *Defect Detected Category*, you need to click on the first empty row in the grid or press the **New** button.   
+For the new record, at least the mandatory fields required by the program must be entered: the **Code** and the **Description**.
 
-*Campi specifici*: 
+*Specific fields*:
 
-> **Codice**: è il codice della *Categoria difetto riscontrato*.   
-> **Descrizione**: è la descrizione della *Categoria difetto riscontrato*.   
-> **Note**: annotazioni libere.
+> **Code**: is the code of the *Defect Detected Category*.   
+> **Description**: is the description of the *Defect Detected Category*.   
+> **Notes**: free annotations.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+For everything not detailed in this document regarding the common functionality of forms, please refer to the following link [Custom Features, Buttons, and Fields](/docs/guide/common).

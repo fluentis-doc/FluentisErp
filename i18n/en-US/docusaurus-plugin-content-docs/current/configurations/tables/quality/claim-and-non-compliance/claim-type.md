@@ -1,62 +1,62 @@
 ---
-title: Tipi di reclamo
+title: Claim Types
 sidebar_position: 1
 ---
 
-La tabella si trova sul percorso **Tabelle > Qualità > Reclami e Non conformità > Tipi di reclamo**.
+The table is located at **Tables > Quality > Complaints and Non-Compliance > Claim Types**.
 
-In questa tabella è possibile codificare i *Tipi di reclamo*.   
-Il *Tipo di reclamo* è parte integrante, assieme all'*Anno* e *Numero*, del codice univoco del *Reclamo*.
-Alcuni esempi di utilizzo di *Tipi di reclamo* li troviamo nelle gestioni:
-> **Reclami** - nei *dati di testata*;   
-> **Parametri Reclami e Non conformità** - nel tabulatore *Generale*;   
-e in tutte le gestioni dove viene ultilizzato il *Reclamo*.
+In this table, it is possible to encode *Claim Types*.   
+The *Claim Type* is an integral part, along with the *Year* and *Number*, of the unique code of the *Claim*.  
+Some examples of the use of *Claim Types* can be found in the managements:
+> **Claims** - in the *header info*;   
+> **Complaints and Non-compliance Parameters** - in the *General* tab;   
+and in all managements where the *Claim* is used.
 
-La tabella consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+The table allows for the insertion of new records or for searching existing ones to view, modify or delete them.
 
-**Ricerca Tipi di reclamo**
+**Claim Types Search**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+The form consists of a filter area and a results area. Once all desired filters are set, simply click the **Search** button to view the results within the results grid.
 
-**Inserimento Tipi di reclamo**
+**Insert Claim Types**
 
-Per poter inserire nuovi *Tipi di reclamo* è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.   
-Per il nuovo record si devono inserire almeno i campi obbligatori richiesti dal programma: il **Codice** e la **Descrizione**.
+To insert new *Claim Types*, it is necessary to click on the first empty row in the grid or press the **New** button.   
+For the new record, at least the mandatory fields required by the program must be filled: the **Code** and the **Description**.
 
-## Tipi di reclamo
+## Claim Types
 
-E' l'elenco dove vengono inserite le informazioni principali dei *Tipi di reclamo*.   
-L'elenco si compone delle seguenti informazioni:   
-> **Tipo di reclamo**
->> **Codice**: è il codice del *Tipo di reclamo*.   
->> **Descrizione**: è la descrizione del *Tipo di reclamo*.
+It is the list where the main information of *Claim Types* is entered.   
+The list consists of the following information:   
+> **Claim Type**
+>> **Code**: is the code of the *Claim Type*.   
+>> **Description**: is the description of the *Claim Type*.
 >   
-> **Modello reclamo**
-> è un elenco di valori predefiniti dal sistema che identificano il modello di gestione del *Reclamo*; I valori predefiniti sono:   
+> **Complaint Model**
+> is a list of predefined values from the system that identify the management model of the *Claim*; The predefined values are:   
 > - *CL - Classic*;   
 > - *8D - 8D Problem Solving*.   
 >>
->> **Codice**: è il codice del *Modello di reclamo*;      
->> **Descrizione**: è la descrizione del *Modello di reclamo*.
+>> **Code**: is the code of the *Complaint Model*;      
+>> **Description**: is the description of the *Complaint Model*.
 >   
-> **Numerazione**
->> **Codice**: è il codice della *Numerazione*.   
->> **Descrizione**: è la descrizione della *Numerazione*.
->> **Oggetto**: è il tipo di oggetto sulla quale si basa la *Numerazione*.
+> **Numeration**
+>> **Code**: is the code of the *Numeration*.   
+>> **Description**: is the description of the *Numeration*.
+>> **Object**: is the type of object on which the *Numeration* is based.
 >   
-> **Tipo fattura**
->> **Codice**: è il codice del *Tipo fattura* che viene utilizzato per la *Valorizzazione* del *Reclamo* per la creazione delle *Note di accredito*.   
->> **Descrizione**: è la descrizione del *Tipo fattura*.
+> **Invoice Type**
+>> **Code**: is the code of the *Invoice Type* that is used for the *Valorization* of the *Claim* for the creation of *Credit Notes*.   
+>> **Description**: is the description of the *Invoice Type*.
 >   
-> **Tipo IVA**
->> **Codice**: è il codice del *Tipo IVA* che viene utilizzato per la *Valorizzazione* del *Reclamo* per la creazione delle *Note di accredito* qualora il cliente ne fosse sprovvisto.   
->> **Descrizione**: è la descrizione del *Tipo IVA*.
+> **VAT Type**
+>> **Code**: is the code of the *VAT Type* that is used for the *Valorization* of the *Claim* for the creation of *Credit Notes* if the customer is lacking it.   
+>> **Description**: is the description of the *VAT Type*.
 >   
-> **Note**: annotazioni libere.
+> **Notes**: free annotations.
 
-### Attributi Tipo di reclamo
+### Complaint Type Attributes
 
-E' possibile inserire degli [Extra Data](/docs/configurations/utility/extra-data/extradata/search-extradata) generali per il *Tipo di reclamo*.   
-Questi *Extra data* vengono ereditati nei *Reclami* di quella determinata tipologia.   
+It is possible to enter [Extra Data](/docs/configurations/utility/extra-data/extradata/search-extradata) for the *Claim Type*.  
+These *Extra Data* are inherited in the *Claims* of that specific type.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+For everything not detailed in this document regarding the common functionality of the forms, please refer to the following link [Custom features, buttons, and fields](/docs/guide/common).

@@ -1,32 +1,32 @@
 ---
-title: Unità di misura strumenti
+title: Measurement Unit Calibration Tools
 sidebar_position: 4
 ---
 
-La tabella si trova sul percorso **Tabelle > Qualità > Taratura strumenti > Unità di misura strumenti**.
+The table is located along the path **Tables > Quality > Tools Calibration > Measurement Unit Calibration Tools**.
 
-:::important A cosa serve
-In questa tabella è possibile codificare le *Unità di misura* che sono utilizzate per determinare la periodicità di taratura degli *Strumenti di misura*.   
-Un esempio di utilizzo lo troviamo nella gestione **Strumenti di misura**.
+:::important What it is for
+In this table, it is possible to encode the *Measurement Units* that are used to determine the calibration frequency of the *Measurement Tools*.   
+An example of use can be found in the management of **Measurement Tools**.
 :::
 
-La tabella consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+The table allows adding new records or searching for existing ones to view, modify, or delete them.
 
-**Ricerca Unità di misura strumenti**
+**Measurement Unit Calibration Tools Search**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+The form consists of a filter area and a result area. Once all desired filters are set, simply click the **Search** button to display the results within the result grid.
 
-**Inserimento Unità di misura strumenti**
+**Insert Measurement Unit Calibration Tools**
 
-Per poter inserire nuove *Unità di misura strumenti* è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.   
-Per il nuovo record si devono inserire almeno i campi obbligatori richiesti dal programma: il **Codice** e la **Descrizione**.
+To input new *Measurement Unit Calibration Tools*, it is necessary to click on the first empty row in the grid or press the **New** button.   
+For the new record, at least the mandatory fields required by the program must be filled in: the **Code** and the **Description**.
 
-*Campi specifici*: 
-    
-> **Codice**: è il codice dell'*Unità di misura strumenti*.   
-> **Descrizione**: è la descrizione dell'*Unità di misura strumenti*.   
-> **Giorni**: indica se l'*Unità di misura strumenti* identifica i giorni; solo un'*Unità di misura* tra tutte quelle codificate, può identificare i giorni.   
-> **Mesi**: indica se l'*Unità di misura strumenti* identifica i mesi; solo un'*Unità di misura* tra tutte quelle codificate, può identificare i mesi.   
-> **Note**: annotazioni libere.
+*Specific fields*: 
+   
+> **Code**: this is the code of the *Measurement Unit Calibration Toolss*.   
+> **Description**: this is the description of the *Measurement Unit Calibration Tools*.   
+> **Days**: indicates if the *Measurement Unit Calibration Tools* identifies days; only one *Measurement Unit* among all those encoded can identify days.   
+> **Months**: indicates if the *Measurement Unit Calibration Tools* identifies months; only one *Measurement Unit* among all those encoded can identify months.   
+> **Notes**: free annotations.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+For everything not detailed in this document regarding the common functioning of forms, please refer to the following link [Custom features, Buttons, and Fields](/docs/guide/common).

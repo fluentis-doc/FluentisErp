@@ -1,59 +1,58 @@
 ---
-title: Tipi di non conformità
+title: Non-compliance Types
 sidebar_position: 2
 ---
 
-La tabella si trova sul percorso **Tabelle > Qualità > Reclami e Non conformità > Tipi di non conformità**.
+The table is located on the path **Tables > Quality > Complaints and Non-Compliance > Non-compliance Types**.
 
-In questa tabella è possibile codificare i *Tipi di non conformità*.   
-Il *Tipo di non conformità* è parte integrante, assieme all'*Anno* e *Numero*, del codice univoco della *Non conformità*.
-Alcuni esempi di utilizzo di *Tipi di non conformità* li troviamo nelle gestioni:
-> **Non conformità** - nei *dati di testata*;   
-> **Parametri Reclami e Non conformità** - nel tabulatore *Generale*;   
-e in tutte le gestioni dove viene ultilizzata la *Non conformità*.
+In this table, it is possible to code the *Non-compliance Types*.   
+The *Non-compliance Types* is an integral part, along with the *Year* and *Number*, of the unique code for *Non-compliance*. Some examples of the use of *Non-compliance Types* can be found in the managements:
+> **Non-compliance** - in the *header info*;   
+> **Complaints and Non-compliance Parameters** - in the *General* tab;   
+and in all managements where *Non-compliance* is utilized.
 
-La tabella consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+The table allows for the insertion of new records or searching for existing ones to view, modify, or delete them.
 
-**Ricerca Tipi di non conformità**
+**Non-compliance Types Search**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+The form consists of a filter area and a result area. Once all desired filters are set, just click the **Search** button to display the results within the result grid.
 
-**Inserimento Tipi di non conformità**
+**Insert Non-compliance Types**
 
-Per poter inserire nuovi *Tipi di non conformità* è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.   
-Per il nuovo record si devono inserire almeno i campi obbligatori richiesti dal programma: il **Codice** e la **Descrizione**.
+To insert new *Non-compliance Types*, it is necessary to click on the first empty row in the grid or press the **New** button.   
+For the new record, at least the mandatory fields required by the program must be entered: **Code** and **Description**.
 
-## Tipi di non conformità
+## Non-compliance Types
 
-E' l'elenco dove vengono inserite le informazioni principali dei *Tipi di non conformità*.   
-L'elenco si compone delle seguenti informazioni:   
-> **Tipo di non conformità**
->> **Codice**: è il codice del *Tipo di non conformità*.   
->> **Descrizione**: è la descrizione del *Tipo di non conformità*.
+This is the list where the main information of the *Non-compliance Types* is entered.   
+The list consists of the following information:   
+> **Non-compliance Type**
+>> **Code**: this is the code of the *Non-compliance Type*.   
+>> **Description**: this is the description of the *Non-compliance Type*.
 >   
-> **Utilizzo in**
->> **Non conformità interne**: indica l'attivazione della *Funzione/Area/Reparto* come soggetto destinatario della *Non conformità*.   
->> **Non conformità a fornitore**: indica l'attivazione del *Fornitore* come soggetto destinatario della *Non conformità*.   
->> **Non conformità a cliente**: indica l'attivazione del *Cliente* come soggetto destinatario della *Non conformità*.   
+> **Use in**
+>> **Internal Non-Compliance**: indicates the activation of the *Function/Area/Department* as the recipient of the *Non-compliance*.   
+>> **Supplier Non-Compliance**: indicates the activation of the *Supplier* as the recipient of the *Non-Compliance*.   
+>> **Customer Non-Compliance**: indicates the activation of the *Customer* as the recipient of the *Non-Compliance*.   
 >   
-> **Numerazione**
->> **Codice**: è il codice della *Numerazione*.   
->> **Descrizione**: è la descrizione della *Numerazione*.
->> **Oggetto**: è il tipo di oggetto sulla quale si basa la *Numerazione*.
+> **Numeration**
+>> **Code**: this is the code of the *Numeration*.   
+>> **Description**: this is the description of the *Numeration*.  
+>> **Object**: this is the type of object on which the *Numeration* is based.
 >   
-> **Tipo fattura**
->> **Codice**: è il codice del *Tipo fattura* che viene utilizzato per la *Valorizzazione* della *Non conformità* per la creazione delle *Note di addebito*.   
->> **Descrizione**: è la descrizione del *Tipo fattura*.
+> **Invoice Type**
+>> **Code**: this is the code of the *Invoice Type* that is used for the *Valorization* of the *Non-Compliance* for the creation of *Debitnote*.   
+>> **Description**: this is the description of the *Invoice Type*.
 >   
-> **Tipo IVA**
->> **Codice**: è il codice del *Tipo IVA* che viene utilizzato per la *Valorizzazione* della *Non conformità* per la creazione delle *Note di addebito* qualora il soggetto destinatario *Fornitore* o *Cliente* ne fosse sprovvisto.   
->> **Descrizione**: è la descrizione del *Tipo IVA*.
+> **VAT Type**
+>> **Code**: this is the code of the *VAT Type* that is used for the *Valorization* of the *Non-Compliance* for the creation of *Debitnote* if the recipient *Supplier* or *Customer* does not have it.   
+>> **Description**: this is the description of the *VAT Type*.
 >   
-> **Note**: annotazioni libere.
+> **Notes**: free annotations.
 
-### Attributi Tipo di non conformità
+###  Non-compliance Type Attributes
 
-E' possibile inserire degli [Extra Data](/docs/configurations/utility/extra-data/extradata/search-extradata) generali per il *Tipo di non conformità*.   
-Questi *Extra data* vengono ereditati nelle *Non conformità* di quella determinata tipologia.   
+It is possible to insert general [Extra Data](/docs/configurations/utility/extra-data/extradata/search-extradata) for the *Non-compliance Type*.   
+These *Extra Data* are inherited in the *Non-Compliance* of that specific type.   
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+For all that is not detailed in this document regarding the common functioning of the forms, please refer to the following link [Custom features, Buttons, and Fields](/docs/guide/common).
