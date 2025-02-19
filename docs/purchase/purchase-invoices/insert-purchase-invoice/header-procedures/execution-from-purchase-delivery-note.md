@@ -41,6 +41,3 @@ Per completare la procedura bisognerà poi cliccare sul pulsante *Trasferimento*
 > **Seleziona**: permette di attivare i flag per tutte le righe selezionate con il mouse.   
 > **Deseleziona**: permette di disattivare i flag per tutte le righe selezionate con il mouse.
 
-:::important Ricorda
-Nel caso di più evasioni parziali per una determinata riga articolo all'interno della stessa fattura è possibile scegliere se sommare le quantità in un'unica riga nella fattura oppure se mantenere righe distinte, rispettivamente disattivando o attivando il flag **Evasione quantità articolo non sommata** nella tabella dei [Tipi fatture di acquisto](/docs/configurations/tables/purchase/purchase-invoices-type).
-:::
