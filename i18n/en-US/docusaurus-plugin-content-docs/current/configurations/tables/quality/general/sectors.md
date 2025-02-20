@@ -1,38 +1,38 @@
 ---
-title: Settori qualità
+title: Sectors Quality
 sidebar_position: 7
 ---
 
-La tabella si trova sul percorso **Tabelle > Qualità > Generale > Settori qualità**.
+The table is located at the path **Tables > Quality > General > Sectors Quality**.
 
-In questa tabella è possibile codificare i *Settori qualità* di interesse del documento.   
-Alcuni esempi di utilizzo dei *Settori qualità* li troviamo nelle gestioni:
-> **Azioni correttive** - nei *dati di testata*;   
-> **Corsi base** - nei *dati di testata*;   
-> **Corsi di formazione** - nei *dati di testata*.   
+In this table, it is possible to encode the *Sectors Quality* of interest for the document.   
+Some examples of using *Sectors Quality* can be found in the management of:
+> **Corrective Actions** - in the *header info*;   
+> **Basic Courses** - in the *header info*;   
+> **Training Courses** - in the *header info*.   
 
-La tabella contiene dei valori predefiniti dal sistema; i valori predefiniti sono:
-| Codice |   
+The table contains default values set by the system; the default values are:
+| Code |   
 |:--|
-| Ambiente |   
-| Etica |   
-| Qualità |   
-| Sicurezza |   
+| Environment |   
+| Ethics |   
+| Quality |   
+| Security |   
 
-La tabella consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+The table allows you to insert new records or search for existing ones to view, modify, or delete them.
 
-**Ricerca Settori qualità**
+**Search Sectors Quality**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+The form consists of a filter area and a results area. Once all desired filters are set, just click the **Search** button to display the results within the results grid.
 
-**Inserimento Settori qualità**
+**Insert Sectors Quality**
 
-Per poter inserire nuovi *Settori qualità* è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.   
-Per il nuovo record si deve inserire almeno il campo obbligatoro richiesto dal programma: il **Codice**.
+To insert new *Sectors Quality*, you need to click on the first empty row in the grid or press the **New** button.   
+For the new record, you must fill in at least the mandatory field required by the program: **Code**.
 
-*Campi specifici*: 
+*Specific fields*: 
 
-> **Codice**: è il codice del *Settore qualità*.   
-> **Note**: annotazioni libere.
+> **Code**: is the code of the *Sectors Quality*.   
+> **Notes**: free annotations.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+For everything not detailed in this document regarding the common operation of forms, refer to the following link [Custom features, buttons, and fields](/docs/guide/common).

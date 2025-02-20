@@ -1,31 +1,31 @@
 ---
-title: Mezzi di notifica
+title: Notification Types
 sidebar_position: 2
 ---
 
-La tabella si trova sul percorso **Tabelle > Qualità > Generale > Mezzi di notifica**.
+The table is located at **Tables > Quality > General > Notification Types**.
 
-In questa tabella è possibile codificare i metodi utilizzati per la ricezione o l'invio di documenti.   
-Alcuni esempi di utilizzo dei *Mezzi di notifica* li troviamo nelle gestioni:
-> **Categorie documenti e Documenti di origine esterna** - nel tabulatore *liste di distribuzione*;   
-> **Categorie documenti e Documenti di origine interna** - nel tabulatore *liste di distribuzione*;   
-> **Reclami** - nel tabulatore *Testata*.
+In this table, it is possible to encode the methods used for receiving or sending documents.  
+Some examples of using the *Notification Types* can be found in the management sections:
+> **Document Categories and External Origin Documents** - in the *distribution lists* tab;  
+> **Document Categories and Internal Origin Documents** - in the *distribution lists* tab;  
+> **Claims** - in the *Header* tab.
 
-La tabella consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+The table allows you to insert new records or search for existing ones to view, modify, or delete them.
 
-**Ricerca Mezzi di notifica**
+**Search Notification Types**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+The form consists of a filter area and a results area. Once all desired filters are set, simply click the **Search** button to display the results within the results grid.
 
-**Inserimento Mezzi di notifica**
+**Insert Notification Types**
 
-Per poter inserire nuovi *Mezzi di notifica* è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.   
-Per il nuovo record si devono inserire almeno i campi obbligatori richiesti dal programma: il **Codice** e la **Descrizione**.
+To insert new *Notification Types*, you need to click on the first empty row in the grid or press the **New** button.  
+For the new record, at least the mandatory fields required by the program must be filled out: **Code** and **Description**.
 
-*Campi specifici*: 
+*Specific Fields*: 
 
-> **Codice**: è il codice del *Mezzo di notifica*.   
-> **Descrizione mezzo di notifica**: è la descrizione del *Mezzo di notifica*.   
-> **Note**: annotazioni libere.
+> **Code**: is the code of the *Notification Types*.  
+> **Notification Type Description**: is the description of the *Notification Type*.  
+> **Notes (Note)**: free annotations.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+For everything that is not detailed in this document regarding the common functioning of forms, please refer to the following link [Custom features, Buttons, and Fields](/docs/guide/common).

@@ -1,94 +1,94 @@
 ---
-title: Categorie Documenti di origine esterna
+title: Document Categories of External Origin
 sidebar_position: 1
 ---
 
-La tabella si trova sul percorso **Tabelle > Qualità > Documenti > Categorie Documenti di origine esterna**.
+The table is located at **Tables > Quality > Documents > Document Categories of External Origin**.
 
-:::important A cosa serve
-I dati presenti in questa tabella sono utilizzati per catalogare le diverse tipologie dei Documenti di origine esterna.   
-I dati inseriti in queste griglie verranno riportati nella creazione dei Documenti di origine esterna.   
-Un esempio di utilizzo lo troviamo nella gestione **Documenti di origine esterna**.
+:::important What it is for
+The data present in this table is used to categorize the different types of External Origin Documents.   
+The data entered in these grids will be reported in the creation of External Origin Documents.   
+An example of use can be found in the management of **External Origin Documents**.
 :::
 
-La tabella consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+The table allows for the insertion of new records or the search of existing ones to view, modify, or delete them.
 
-**Ricerca Categorie Documenti di origine esterna**
+**Document Categories of External Origin Search**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+The form consists of a filter area and a results area. Once all desired filters are set, simply click the **Search** button to display the results in the results grid.
 
-**Inserimento Categorie Documenti di origine esterna**
+**Insert Document Categories of External Origin**
 
-Per poter inserire nuovi *Categorie Documenti di origine esterna* è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.   
-Per il nuovo record si devono inserire almeno i campi obbligatori richiesti dal programma: il **Codice** e la **Descrizione**.
+To insert new *Document Categories of External Origin*, you need to click on the first empty row in the grid or press the **New** button.   
+For the new record, it is necessary to enter at least the mandatory fields required by the program: the **Code** and the **Description**.
 
-**Duplica Categorie Documenti di origine esterna**
+**Duplicate Document Categories of External Origin**
 
-Per poter duplicare una *Categoria Documento* esistente in una nuova *Categoria Documento* è necessario cliccare nella griglia sulla *Categoria Documento* da cui si desidera duplicare e premere il pulsante **Duplica**.   
-Verrà visualizzata una richiesta di **Codice** e **Descrizione** della nuova *Categoria Documento* (dati entrambe obbligatori).   
-Premere successivamente il pulsante **OK** o il pulsante **Cancel** se si desidera proseguire nell'attività di duplica o meno. 
+To duplicate an existing *Document Category* into a new *Document Category*, you must click on the *Document Category* in the grid that you want to duplicate and press the **Duplicate** button.   
+A request for the **Code** and **Description** of the new *Document Category* will be displayed (both data are mandatory).   
+Then press the **OK** button or the **Cancel** button if you wish to proceed with the duplication or not.
 
-## Categorie Documenti di origine esterna
+## Document Categories of External Origin
 
-E' l'elenco dove vengono inserite le informazioni principali della *Categoria Documento*.   
-L'elenco si compone delle seguenti informazioni:   
-> **Categoria**: è il codice della *Categoria Documento*.   
-> **Descrizione categoria**: è la descrizione della *Categoria Documento*.   
-> **Archivio**: in questo campo viene assegnato il magazzino dove trovare la categoria specifica.   
-> **Ubicazione**: indica la posizione fisica abituale della *Categoria*; è possibile scegliere solo le *Ubicazioni* facenti parte dell'*Archivio* selezionato.   
-> **Ubicazione descrittiva**: se la posizione non è codificata, è possibile inserirla manualmente in questo campo libero.   
-> **Periodo di conservazione**: contiene un periodo di conservazione da inserire manualmente.   
-> **Funzione responsabile**: contiene la *Funzione aziendale* responsabile della *Categoria*.   
-> **Note**: annotazioni libere.
+It is the list where the main information of the *Document Category* is entered.   
+The list consists of the following information:   
+> **Category**: is the code of the *Document Category*.   
+> **Category Description**: is the description of the *Document Category*.   
+> **Archive**: in this field, the warehouse where the specific category can be found is assigned.   
+> **Location**: indicates the usual physical location of the *Category*; it is possible to choose only the *Locations* that are part of the selected *Archive*.   
+> **Descriptive location**: if the location is not coded, it can be manually entered in this free field.   
+> **Retention period**: contains a retention period to be entered manually.   
+> **Responsible function**: contains the *Company Function* responsible for the *Category*.   
+> **Notes**: free annotations.
 
-### Lista di distribuzione
+### Distribution List
 
-In questo elenco è possibile associare: *Funzioni aziendali*, *Dipendenti*, *Clienti/Fornitori* e *Contatti* che abitualmente ricevono copia della *Categoria Documento* selezionata ed indicare le metodologie abituali di ricezione del documento.   
-L'elenco si compone delle seguenti informazioni:   
-> **Funzione aziendale**   
->> **Codice**: è il codice della *Funzione aziendale* destinataria.   
->> **Descrizione**: è la descrizione della *Funzione aziendale* destinataria.   
+In this list, it is possible to associate: *Company Functions*, *Employees*, *Customers/Suppliers*, and *Contacts* who regularly receive a copy of the selected *Document Category* and specify the usual methods of receiving the document.   
+The list consists of the following information:   
+> **Company Function**   
+>> **Code**: is the code of the receiving *Company Function*.   
+>> **Description**: is the description of the receiving *Company Function*.   
 >
-> **Dipendente**   
->> **Codice**: è il codice del dipendente* destinatario.   
->> **Cognome**: è il cognome del dipendente* destinatario.   
->> **Nome**: è il nome del dipendente* destinatario.   
+> **Employee**   
+>> **Code**: is the code of the receiving *Employee*.   
+>> **Surname**: is the surname of the receiving *Employee*.   
+>> **Name**: is the name of the receiving *Employee*.   
 >
-> **Cliente/Fornitore**   
->> **Descrizione**: è la ragione sociale del *Cliente/Fornitore* destinatario.   
+> **Customer/Supplier**   
+>> **Description**: is the business name of the receiving *Customer/Supplier*.   
 >
-> **Contatto**   
->> **Codice**: è il codice del *Contatto* destinatario.   
->> **Descrizione**: è la descrizione del *Contatto* destinatario.   
+> **Contact**   
+>> **Code**: is the code of the receiving *Contact*.   
+>> **Description**: is the description of the receiving *Contact*.   
 >
-> **Altro destinatario**   
->> **Descrizione**: è la libera descrizione di un destinatario non codificato.   
+> **Other recipient**   
+>> **Description**: is the free description of an uncoded recipient.   
 >
-> **Dati per la consegna**   
->> **Cartacea**: indica che al momento della distribuzione (procedura interna alla gestione *Documenti di origine esterna*) il soggetto desidera ricevere copia *Cartacea* del documento o in allegato tramite *Email*.   
->> **Metodo di consegna**: indica la metodologia di consegna abituale della *Categoria Documento*.   
->> **Email**: indica una email di destinazione, se non codificata nell'anagrafica del destinatario.   
->> **Numero di copie**: indica il numero di copie cartacee che il destinatario desidera ricevere.   
->> **Note**: annotazioni libere.   
+> **Data for delivery**   
+>> **On paper**: indicates that at the time of distribution (internal procedure within the management of *External Origin Documents*), the subject wishes to receive a paper copy of the document or as an attachment via *Email*.   
+>> **Delivery method**: indicates the usual delivery method of the *Document Category*.   
+>> **Email**: indicates a destination email if not coded in the recipient's registry.   
+>> **Number of copies**: indicates the number of paper copies that the recipient wishes to receive.   
+>> **Notes**: free annotations.   
 
-*Pulsanti specifici*:      
-**Nuovo destinatario**: inserisce una nuova riga in elenco.   
-**Cancella destinatario**: cancella la riga selezionata dall'elenco.   
+*Specific buttons*:      
+**New recipient**: inserts a new row in the list.   
+**Delete recipient**: deletes the selected row from the list.   
 
-### Accesso consentito alle funzioni
-In questa elenco è possibile inserire le *Funzioni aziendali* a cui dare i diritti di accesso.   
-Se non vengono inserite righe in questa tabella, allora l'accesso è consentito a tutti.   
-L'elenco si compone delle seguenti informazioni:   
-> **Funzione**: è il codice della *Funzione aziendale*.   
-> **Descrizione funzione**: è la descrizione della *Funzione aziendale*.   
-> **Note**: annotazioni libere.
+### Access Allowed to the Functions 
+In this list, it is possible to enter the *Compnay Functions* to grant access rights.   
+If no rows are entered in this table, then access is allowed to everyone.   
+The list consists of the following information:   
+> **Function**: is the code of the *Company Function*.   
+> **Function description**: is the description of the *Company Function*.   
+> **Notes**: free annotations.
 
-*Pulsanti specifici*:      
-**Nuova funzione di accesso**: inserisce una nuova riga in elenco.   
-**Cancella funzione di accesso**: cancella la riga selezionata dall'elenco.   
+*Specific buttons*:      
+**New access function**: inserts a new row in the list.   
+**Delete access function**: deletes the selected row from the list.   
 
-### Extra data
-E' possibile inserire degli [Extra Data](/docs/configurations/utility/extra-data/extradata/new-extradata-simple) per ogni *Documento di origine esterna*.   
-Questi *Extra data* vengono ereditati nel *Documento esterno* di quella determinata categoria.   
+### Extra Data 
+It is possible to enter [Extra Data](/docs/configurations/utility/extra-data/extradata/new-extradata-simple) for each *External Origin Document*.   
+These *Extra Data* are inherited in the *External Document* of that particular category.   
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+For everything not detailed in this document regarding the common functioning of forms, please refer to the following link [Custom features, buttons, and fields](/docs/guide/common).

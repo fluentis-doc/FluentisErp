@@ -1,64 +1,64 @@
 ---
-title: Funzioni aziendali
+title: Company Functions 
 sidebar_position: 1
 ---
 
-La tabella si trova sul percorso **Tabelle > Qualità > Generale > Funzioni aziendali**.
+The table is located at **Tables > Quality > General > Company Functions**.
 
-Per funzione aziendale si intende un gruppo di *dipendenti/utenti* o *centri di lavoro* che eseguono attività omogenee.   
-In questa tabella è possibile codificare le *Funzioni aziendale* utilizzate nella maggior parte delle gestioni dell'area Qualità per indicare: la funzione responsabile del documento; la funzione che può effettuare o che effettua determinati tipi di attività, ecc.   
+A company function refers to a group of *employees/users* or *work centers* that perform homogeneous activities.   
+In this table, it is possible to codify the *Company Functions* used in most management processes in the Quality area to indicate: the function responsible for the document; the function that can perform or that performs certain types of activities, etc.
 
-La tabella consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+The table allows for the entry of new records or the search for existing ones to view, modify, or delete them.
 
-**Ricerca Funzioni aziendali**
+**Search Company Functions**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+The form consists of a filter area and a result area. Once all desired filters are set, simply click the **Search** button to display the results within the result grid.
 
-**Inserimento Funzioni aziendali**
+**Insert Company Functions**
 
-Per poter inserire nuove *Funzioni aziendali* è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.   
-Per il nuovo record si devono inserire almeno i campi obbligatori richiesti dal programma: il **Codice** e la **Descrizione**.
+To enter new *Company Functions*, it is necessary to click in the grid on the first empty row or press the **New** button.   
+For the new record, at least the required mandatory fields must be filled in: **Code** and **Description**.
 
-## Funzioni aziendali
+## Company Functions 
 
-E' l'elenco dove vengono inserite le informazioni principali della *Funzione aziendale*.   
-L'elenco si compone delle seguenti informazioni:   
-> **Codice**: è il codice della *Funzione aziendale*.   
-> **Descrizione funzione aziendale**: è la descrizione della *Funzione aziendale*.   
-> **Ruolo**: è il codice del *Ruolo A.R.M.*   
-> **Descrizione ruolo**: è la descrizione del *Ruolo A.R.M.*   
-> **Motivo del coinvolgimento nei Reclami**: è possibile indicare eventuali coinvolgimenti nei *Reclami* specifici/caratteristici della *Funzione aziendale*; questi verranno riportati in automatico nei *Reclami* all'atto del coinvolgimento della *Funzione aziendale*.   
-> **Motivo del coinvolgimento nelle Non conformità**: è possibile indicare eventuali coinvolgimenti nelle *Non conformità* specifici/caratteristici della *Funzione aziendale*; questi verranno riportati in automatico nelle *Non conformità* all'atto del coinvolgimento della *Funzione aziendale*.   
-> **Note**: annotazioni libere.
+This is the list where the main information of the *Company Function* is entered.   
+The list consists of the following information:   
+> **Code**: is the code of the *Company Function*.   
+> **Company Function Description**: is the description of the *Company Function*.   
+> **Role**: is the code of the *A.R.M. Role*   
+> **Role Description**: is the description of the *A.R.M.*   
+> **Reason for involvement in Claims**: it is possible to indicate any involvement in specific/characteristic *Claims* of the *Company Function*; these will be automatically reported in the *Claims* upon the involvement of the *Company Function*.   
+> **Reason for involvement in Non-compliance**: it is possible to indicate any involvement in specific/characteristic *Non-compliance* of the *Company Function*; these will be automatically reported in the *Non-compliance* upon the involvement of the *Company Function*.   
+> **Notes**: free annotations.
 
-### Dipendenti e Utenti collegati alla funzione
+### Employees and Users Associated with the Function
 
-In questo elenco è possibile associare i *Dipendenti* e/o *Utenti* che fanno parte della *Funzione aziendale* selezionata.   
-L'elenco si compone delle seguenti informazioni:   
-> **Dipendente**   
->> **Operatore**: è il codice del *Dipendente*.   
->> **Cognome**: è il cognome del *Dipendente*.   
->> **Nome**: è il nome del *Dipendente*.   
+In this list, it is possible to associate the *Employees* and/or *Users* that are part of the selected *Company Function*.   
+The list consists of the following information:   
+> **Employee**   
+>> **User**: is the code of the *Employee*.   
+>> **Surname**: is the surname of the *Employee*.   
+>> **Name**: is the name of the *Employee*.   
 >
-> **Utente**   
->> **Nome**: è il codice dell'*Utente A.R.M.*   
->> **Descrizione**: è la descrizione dell'*Utente A.R.M.*   
+> **User**   
+>> **Name**: is the code of the *A.R.M. User*   
+>> **Description**: is the description of the *A.R.M. User*   
 >
-> **Validità**   
->> **Predefinito**: un solo soggetto può essere il soggetto predefinito; il *soggetto predefinito* sarà quello che verrà proposto, ove previsto, come referente per la *Funzione aziendale* .   
->> **Attivo**: indica se il soggetto fa ancora parte della *Funzione aziendale*.   
->> **Inizio validità**: è la data dalla quale il soggetto entra a far parte della *Funzione aziendale*.   
->> **Fine validità**: è la data dalla quale il soggetto cessa di far parte della *Funzione aziendale*.   
+> **Validity**   
+>> **Default**: only one subject can be the default subject; the *default subject* will be the one proposed, where expected, as the contact person for the *Company Function*.   
+>> **Active**: indicates whether the subject is still part of the *Company Function*.   
+>> **Validity start**: is the date from which the subject becomes part of the *Company Function*.   
+>> **Validity end**: is the date from which the subject ceases to be part of the *Company Function*.   
 >
-> **Note**: annotazioni libere.
+> **Notes**: free annotations.
 
-### Centri di lavoro
+### Work Centers
 
-Le *Funzioni aziendali* possono ricoprire anche ruoli di tipo produttivo e identificare *Centri di lavoro* o loro gruppi.   
-In questo elenco è possibile associare i *Centri di lavoro* che fanno parte della *Funzione aziendale* selezionata.   
-L'elenco si compone delle seguenti informazioni:   
-> **Centro di lavoro**: è il codice del *Centro di lavoro*.   
-> **Descrizione centro di lavoro**: è la descrizione del *Centro di lavoro*.   
-> **Note**: annotazioni libere.
+The *Company Functions* can also take on productive roles and identify *Work Centers* or their groups.   
+In this list, it is possible to associate the *Work Centers* that are part of the selected *Company Function*.   
+The list consists of the following information:   
+> **Work Center**: is the code of the *Work Center*.   
+> **Work Center Description**: is the description of the *Work Center*.   
+> **Notes**: free annotations.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+For anything not detailed in this document regarding the common functioning of forms, please refer to the following link [Custom features, buttons, and common fields](/docs/guide/common).

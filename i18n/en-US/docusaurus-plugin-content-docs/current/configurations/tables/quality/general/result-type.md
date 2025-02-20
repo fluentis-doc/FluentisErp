@@ -1,36 +1,36 @@
 ---
-title: Tipi esito
+title: Result Types 
 sidebar_position: 5
 ---
 
-La tabella si trova sul percorso **Tabelle > Qualità > Generale > Tipi esito**.
+The table is located on the path **Tables > Quality > General > Result Types**.
 
-In questa tabella è possibile codificare i *Tipi esito* ottenuti successivamente a rilevazioni o ad attività.   
-Alcuni esempi di utilizzo dei *Tipi esito* li troviamo nelle gestioni:
-> **Tipi prova** - nel tabulatore *Esiti possibili*;   
-> **Controllo articoli** - nel tabulatore *Prove*;   
-> **Certificati di analisi** - nel tabulatore *Controlli e valori rilevati > Valori rilevati*;   
-> **M.E.S.** - nel tabulatore *Controlli qualità > Prove*;   
-> **Taratura strumento** - nei *dati di testata* e nel tabulatore *Valori rilevati*;   
-> **Azioni correttive** - nei tabulatori *Verifiche prossimo audit* e *Programmi azione correttiva*.   
+In this table, it is possible to encode the *Result Types* obtained subsequent to surveys or activities.   
+Some examples of using *Result Types* can be found in the management:
+> **Test Types** - in the *Possible Results* tab;   
+> **Items Control** - in the *Tests* tab;   
+> **Certificates of Analysis** - in the *Controls and Detected Values > Detected Values* tab;   
+> **M.E.S.** - in the *Quality Controls > Tests* tab;   
+> **Calibration Tool** - in the *header info* and in the *Detected Values* tab;   
+> **Corrective Actions** - in the *Verifications Next Audit* and *Corrective Action Programs* tabs.   
 
-La tabella consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+The table allows you to insert new records or to search for existing ones to view, modify, or delete them.
 
-**Ricerca Tipi esito**
+**Search Result Types**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+The form consists of a filter area and a result area. Once all desired filters are set, simply click the **Search** button to display the results in the result grid.
 
-**Inserimento Tipi esito**
+**Insert Result Types**
 
-Per poter inserire nuovi *Tipi esito* è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.   
-Per il nuovo record si devono inserire almeno i campi obbligatori richiesti dal programma: il **Codice** e la **Descrizione**.
+To be able to insert new *Result Types*, you must click on the first empty row in the grid or press the **New** button.   
+For the new record, at least the mandatory fields required by the program must be entered: **Code** and **Description**.
 
-*Campi specifici*: 
+*Specific Fields*:
 
-> **Esito**: è il codice del *Tipo esito*.   
-> **Descrizione esito**: è la descrizione del *Tipo esito*.   
-> **Esito positivo**: indica se l'esito deve essere riconosciuto come *positivo* o *negativo* dal sistema.   
-> **Sequenza**: è la sequenza di visualizzazione negli elenchi dei *Tipi esito*.   
-> **Note**: annotazioni libere.
+> **Result**: is the code of the *Result Type*.   
+> **Result Description**: is the description of the *Result Type*.   
+> **Positive Result**: indicates whether the outcome should be recognized as *positive* or *negative* by the system.   
+> **Sequence**: is the order of display in the lists of *Result Types*.   
+> **Notes**: free annotations.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+For everything not detailed in this document on the common functioning of forms, please refer to the following link [Custom Features, Buttons, and Fields](/docs/guide/common).

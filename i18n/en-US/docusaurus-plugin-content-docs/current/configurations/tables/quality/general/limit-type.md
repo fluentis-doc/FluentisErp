@@ -1,50 +1,50 @@
 ---
-title: Tipi limite
+title: Limit Types 
 sidebar_position: 4
 ---
 
-La tabella si trova sul percorso **Tabelle > Qualità > Generale > Tipi limite**.
+The table can be found at the path **Tables > Quality > General > Limit Types**.
 
-In questa tabella è possibile codificare i *Tipi limite*.   
-Il *Tipo limite* lo troviamo associato sempre al *Tipo valore* (solamente per *Tipi valore* numerici).   
-Alcuni esempi di utilizzo dei *Tipi limite* li troviamo nelle gestioni:
-> **Schede tecniche** - nel tabulatore *Proprietà*;   
-> **Piani di controllo** - nel tabulatore *Prove pianificate*;   
-> **Controllo articoli** - nel tabulatore *Prove*;   
-> **Certificati di analisi** - nel tabulatore *Controlli e valori rilevati > Valori rilevati*;   
-> **M.E.S.** - nel tabulatore *Controlli qualità > Prove*.
+In this table, it is possible to code the *Limit Types*.   
+The *Limit Type* is always associated with the *Value Type* (only for numeric *Value Types*).   
+Some examples of the use of *Limit Types* can be found in the management:
+> **Data Sheets** - in the *Property* tab;   
+> **Control Plans** - in the *Planned Tests* tab;   
+> **Items Control** - in the *Tests* tab;   
+> **Certificates of Analysis** - in the *Controls and Detected Values > Detected Values* tab;   
+> **M.E.S.** - in the *Quality Controls > Tests* tab.
 
-La tabella contiene dei valori predefiniti dal sistema e non è possibile inserirne di nuovi, eliminarli o modificarli; i valori predefiniti sono:   
-| Codice | Descrizione |
+The table contains default values from the system, and it is not possible to insert new values, delete them, or modify them; the default values are:   
+| Code | Description |
 |:-:|:--|
-| N.L. | Nessun limite richiesto |   
-| = | Uguale |   
-| x\> | Maggiore |   
-| x\< | Minore |   
-| x \<\> | Diverso |   
-| x\<= | Minore o uguale |   
-| x\>= | Maggiore o uguale |   
-| \<;x;\> | Al di fuori di |   
-| \<;x;\>= | Minore o Maggiore/Uguale |   
-| \<=;x;\> | Minore/uguale o Maggiore |   
-| \<=;x;\>= | Minore/Uguale o Maggiore/Uguale |   
-| \>;x;\< | Strettamente compreso |   
-| \>;x;\<= | Maggiore e Minore o uguale |   
-| \>=;x;\< | Maggiore o uguale e Minore |   
-| \>=;x;\<= | Compreso |   
+| N.L. | No limit required |   
+| = | Equal |   
+| x\> | Greater |   
+| x\< | Less |   
+| x \<\> | Different |   
+| x\<= | Less than or equal |   
+| x\>= | Greater than or equal |   
+| \<;x;\> | Outside of |   
+| \<;x;\>= | Less than or Greater/Equal |   
+| \<=;x;\> | Less/equal or Greater |   
+| \<=;x;\>= | Less/Equal or Greater/Equal |   
+| \>;x;\< | Strictly between |   
+| \>;x;\<= | Greater and Less than or equal |   
+| \>=;x;\< | Greater than or equal and Less than |   
+| \>=;x;\<= | Between |   
 
-**Ricerca Tipi limite**
+**Limit Type Search**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+The form consists of a filter area and a result area. Once all desired filters are set, simply click the **Search** button to display the results in the result grid.
 
-*Campi specifici*: 
+*Specific fields*: 
 
-> **Tipo limite**: informazione di sola lettura, è il codice del *Tipo limite*.   
-> **Descrizione tipo**: informazione di sola lettura, è la descrizione del *Tipo limite*.   
-> **Richiede limite minimo**: informazione di sola lettura, indica se è richiesto un limite minimo o inferiore e abilita la colonna *Carattere limite minimo*.   
-> **Richiede limite massimo**: informazione di sola lettura, indica se è richiesto un limite massimo o superiore e abilita la colonna *Carattere limite massimo*.   
-> **Carattere limite minimo**: è possibile indicare un testo per identificare un intervallo tra limite minimo e valore nominale; esempio: *< ≤ > ≥ ≠ =*.   
-> **Carattere limite massimo**: è possibile indicare un testo per identificare un intervallo tra valore nominale e limite massimo; esempio: *< ≤ > ≥ ≠ =*.   
-> **Note**: annotazioni libere.
+> **Limit Type**: read-only information, it is the code of the *Limit Type*.   
+> **Type Description**: read-only information, it is the description of the *Limit Type*.   
+> **Needs Minimum Value**: read-only information, indicates whether a minimum or lower limit is required and enables the *Minimum Limit Character* column.   
+> **Needs Maximum Value**: read-only information, indicates whether a maximum or upper limit is required and enables the *Maximum Limit Character* column.   
+> **Minimum Limit Character**: it is possible to indicate text to identify a range between the minimum limit and nominal value; example: *< ≤ > ≥ ≠ =*.   
+> **Maximum Limit Character**: it is possible to indicate text to identify a range between nominal value and maximum limit; example: *< ≤ > ≥ ≠ =*.   
+> **Notes**: free annotations.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+For everything not detailed in this document regarding the common functioning of the forms, please refer to the following link [Custom features, buttons, and fields](/docs/guide/common).

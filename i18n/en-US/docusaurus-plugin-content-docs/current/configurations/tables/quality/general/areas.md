@@ -1,30 +1,30 @@
 ---
-title: Aree qualità
+title: Areas Quality
 sidebar_position: 6
 ---
 
-La tabella si trova sul percorso **Tabelle > Qualità > Generale > Aree qualità**.
+The table is located at **Tables > Quality > General > Areas Quality**.
 
-In questa tabella è possibile codificare le *Aree qualità* di azione dei documenti.   
-Alcuni esempi di utilizzo dei *Aree qualità* li troviamo nelle gestioni:
-> **Azioni correttive** - nei *dati di testata*;   
-> **Corsi base** - nei *dati di testata*;   
-> **Corsi di formazione** - nei *dati di testata*.   
+In this table, it is possible to encode the *Areas Quality* of action for the documents.   
+Some examples of the use of *Areas Quality* can be found in the management of:
+> **Corrective Actions** - in the *header info*;   
+> **Basic Courses** - in the *header info*;   
+> **Training Courses** - in the *header info*.   
 
-La tabella consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+The table allows for the entry of new records or the search for existing ones to view, modify, or delete them.
 
-**Ricerca Aree qualità**
+**Search Areas Quality**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+The form consists of a filter area and a results area. Once all desired filters are set, simply click the **Search** button to display the results within the results grid.
 
-**Inserimento Aree qualità**
+**Insert Areas Quality**
 
-Per poter inserire nuovi *Aree qualità* è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.   
-Per il nuovo record si deve inserire almeno il campo obbligatoro richiesto dal programma: il **Codice**.
+To insert new *Areas Quality*, you must click on the first empty row in the grid or press the **New** button.   
+For the new record, you must enter at least the mandatory field required by the program: the **Code**.
 
-*Campi specifici*: 
+*Specific Fields*: 
 
-> **Codice**: è il codice dell'*Area qualità*.   
-> **Note**: annotazioni libere.
+> **Code**: this is the code of the *Areas Quality*.   
+> **Notes**: free annotations.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+For anything not detailed in this document regarding the common functionality of forms, refer to the following link [Custom Features, Buttons, and Fields](/docs/guide/common).

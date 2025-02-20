@@ -1,35 +1,35 @@
 ---
-title: Ispettori
+title: Auditors
 sidebar_position: 8
 ---
 
-La tabella si trova sul percorso **Tabelle > Qualità > Generale > Ispettori**.
+The table is located in the path **Tables > Quality > General > Auditors**.
 
-In questa tabella è possibile codificare gli *Ispettori* che effettueranno valutazioni interne o a fornitori.   
-Un esempio di utilizzo lo troviamo nella gestione **Valutazioni iniziali e periodiche fornitori**.
+In this table, it is possible to encode *Auditors* who will carry out internal evaluations or evaluations of suppliers.   
+An example of use can be found in the management of **Initial and periodic suppliers ratings**.
 
-La tabella consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+The table allows for the insertion of new records or the search for existing ones to view, modify, or delete them.
 
-**Ricerca Ispettori**
+**Search Auditors**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+The form consists of a filter area and a results area. Once all desired filters are set, simply click the **Search** button to display the results within the results grid.
 
-**Inserimento Ispettori**
+**Insert Auditors**
 
-Per poter inserire nuovi *Ispettori* è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.   
-Per il nuovo record si devono inserire almeno i campi obbligatori richiesti dal programma: il **Codice** e la **Descrizione**.
+To insert new *Auditors*, it is necessary to click on the first empty row in the grid or press the **New** button.   
+For the new record, at least the mandatory fields required by the program must be filled in: **Code** and **Description**.
 
-*Campi specifici*: 
+*Specific fields*: 
 
-> **Ispettore - Codice**: è il codice dell'*Ispettore*.   
-> **Ispettore - Descrizione**: è la descrizione dell'*Ispettore*.   
-> **Ispettore interno - Codice**: è il codice del dipendente ispettore*.   
-> **Ispettore interno - Cognome**: è il cognome del dipendente ispettore*.   
-> **Ispettore interno - Nome**: è il nome del dipendente ispettore*.   
-> **Ispettore esterno - Descrizione**: è la ragione sociale del fornitore ispettore*.   
-> **Attivo**: indica se l'ispettore è ancora in carica.   
-> **Inizio validità**: è la data dalla quale l'ispettore entra in carica.   
-> **Fine validità**: è la data dalla quale l'ispettore cessa di essere in carica.   
-> **Note**: annotazioni libere.
+> **Auditor - Code**: this is the code of the *Auditor*.   
+> **Auditor - Description**: this is the description of the *Auditor*.   
+> **Internal Auditor - Code**: this is the code of the employee auditor*.    
+> **Internal Auditor - Surname**: this is the last name of the employee auditor*.    
+> **Internal Auditor - Name**: this is the first name of the employee auditor*.    
+> **External Auditor - Description**: this is the company name of the supplier auditor*.    
+> **Active**: indicates whether the auditor is still in office.   
+> **Validity Start**: this is the date from which the auditor is in office.   
+> **validity End**: this is the date from which the auditor ceases to be in office.   
+> **Notes**: free annotations.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+For everything not detailed in this document regarding the common functioning of forms, refer to the following link [Custom featuress, buttons, and fields](/docs/guide/common).

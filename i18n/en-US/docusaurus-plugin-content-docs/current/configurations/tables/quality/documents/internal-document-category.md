@@ -1,111 +1,111 @@
 ---
-title: Categorie Documenti di origine interna
+title: Document Categories of Internal Origin
 sidebar_position: 2
 ---
 
-La tabella si trova sul percorso **Tabelle > Qualità > Documenti > Categorie Documenti di origine interna**.
+The table is located on the path **Tables > Quality > Documents > Document Categories of Internal Origin**.
 
-:::important A cosa serve
-I dati presenti in questa tabella sono utilizzati per catalogare le diverse tipologie dei Documenti di origine interna.   
-I dati inseriti in queste griglie verranno riportati nella creazione dei Documenti di origine interna.   
-Un esempio di utilizzo lo troviamo nella gestione **Documenti di origine interna**.
+:::important What it is for
+The data present in this table are used to catalog the different types of Internal Origin Documents.   
+The data entered in these grids will be replicated in the creation of Internal Origin Documents.   
+An example of use can be found in the management of **Internal Origin Documents**.
 :::
 
-La tabella consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+The table allows for the insertion of new records or the search for existing ones to view, modify, or delete them.
 
-**Ricerca Categorie Documenti di origine interna**
+**Document Categories of Internal Origin Search**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+The form consists of a filter area and a results area. Once all the desired filters are set, simply click the **Search** button to view the results in the results grid.
 
-**Inserimento Categorie Documenti di origine interna**
+**Insert Document Categories of Internal Origin**
 
-Per poter inserire nuovi *Categorie Documenti di origine interna* è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.   
-Per il nuovo record si devono inserire almeno i campi obbligatori richiesti dal programma: il **Codice** e la **Descrizione**.
+To insert new *Document Categories of Internal Origin*, it is necessary to click on the first empty row in the grid or press the **New** button.   
+For the new record, at least the mandatory fields required by the program must be filled: **Code** and **Description**.
 
-**Duplica Categorie Documenti di origine interna**
+**Duplicate Document Categories of Internal Origin**
 
-Per poter duplicare una *Categoria Documento* esistente in una nuova *Categoria Documento* è necessario cliccare nella griglia sulla *Categoria Documento* da cui si desidera duplicare e premere il pulsante **Duplica**.   
-Verrà visualizzata una richiesta di **Codice** e **Descrizione** della nuova *Categoria Documento* (dati entrambe obbligatori).   
-Premere successivamente il pulsante **OK** o il pulsante **Cancel** se si desidera proseguire nell'attività di duplica o meno. 
+To duplicate an existing *Document Category* into a new *Document Category*, click on the *Document Category* you wish to duplicate in the grid and press the **Duplicate** button.   
+You will be prompted for the **Code** and **Description** of the new *Document Category* (both fields are mandatory).   
+Press the **OK** button to proceed with the duplication or the **Cancel** button if you wish to cancel the duplication activity.
 
-## Categorie Documenti di origine interna
+## Document Categories of Internal Origin
 
-E' l'elenco dove vengono inserite le informazioni principali della *Categoria Documento*.   
-L'elenco si compone delle seguenti informazioni:   
-> **Categoria**: è il codice della *Categoria Documento*.   
-> **Descrizione categoria**: è la descrizione della *Categoria Documento*.   
-> **Sequenza**: è la sequenza di visualizzazione negli elenchi delle *Categorie Documento*.   
-> **Documento obbligatorio**: indica se è obbligatorio allegare il documento.   
-> **Codifica automatica**: indica se si desidera abilitare la codifica automatica del documento; la codifica sarà composta da: *Codice categoria* più un progressivo di un numero di cifre indicato in *Numero di cifre progressive* a partire nal numero indicato in *Progressivo iniziale*.   
-> **Numero di cifre progressive**: abilitato se richiesta la *Codifica automatica*, è il numero di cifre del progressivo che comporranno il codice del documento.   
-> **Progressivo iniziale**: abilitato se richiesta la *Codifica automatica* è il numero di progressivo che verrà proposto all'inserimento del primo documento.   
-> **Funzione di verifica/approvazione**: è la *Funzione aziendale* responsabile della verifica/approvazione del documento.   
-> **Funzione di redazione/emissione**: è la *Funzione aziendale* responsabile della redazione/emissione del documento.   
-> **Tipo documento**: è il codice del *Tipo documento* proposto per la codifica del documento allegato per la codifica nel *Documentale*.   
-> **Descrizione tipo documento**: è la descrizione del *Tipo documento* proposto per la codifica del documento allegato per la codifica nel *Documentale*.   
-> **Archivio**: in questo campo viene assegnato il magazzino dove trovare la categoria specifica.   
-> **Ubicazione**: indica la posizione fisica abituale della *Categoria*; è possibile scegliere solo le *Ubicazioni* facenti parte dell'*Archivio* selezionato.   
-> **Ubicazione descrittiva**: se la posizione non è codificata, è possibile inserirla manualmente in questo campo libero.   
-> **Periodo di conservazione**: contiene un periodo di conservazione da inserire manualmente.   
-> **Funzione responsabile**: contiene la *Funzione aziendale* responsabile della *Categoria*.   
-> **Note**: annotazioni libere.
+This is the list where the main information of the *Document Category* is entered.   
+The list consists of the following information:   
+> **Category**: it is the code of the *Document Category*.   
+> **Category Description**: it is the description of the *Document Category*.   
+> **Sequence**: it is the visual sequence in the *Document Categories* lists.   
+> **Obligation Document**: indicates whether it is mandatory to attach the document.   
+> **Document automatic encoding**: indicates whether to enable automatic coding of the document; the coding will consist of: *Category Code* plus a progressive number of digits indicated in *Number of Progressive Digits* starting from the number indicated in *Initial Progressive*.   
+> **Number of Progressive Digits**: enabled if *Document automatic encoding* is required, it is the number of digits in the progressive that will make up the document code.   
+> **Initial Progressive**: enabled if *Document automatic encoding* is required, it is the number that will be proposed upon entering the first document.   
+> **Verification/Approval Function**: it is the *Company Function* responsible for the verification/approval of the document.   
+> **Editing/Issuing Function**: it is the *Company Function* responsible for the editing/issuing of the document.   
+> **Document Type**: it is the code of the *Document Type* proposed for coding the attached document for coding in the *Document Management*.   
+> **Document Type Description**: it is the description of the *Document Type* proposed for coding the attached document for coding in the *Document Management*.   
+> **Archive**: in this field, the warehouse where the specific category can be found is assigned.   
+> **Location**: indicates the usual physical location of the *Category*; only *Locations* belonging to the selected *Archive* can be chosen.   
+> **Descriptive Location**: if the location is not coded, it can be manually entered in this free field.   
+> **Retention Period**: contains a retention period to be manually entered.   
+> **Responsible Function**: contains the *Company Function* responsible for the *Category*.   
+> **Notes**: free annotations.
 
-### Lista di distribuzione
+### Distribution List 
 
-In questo elenco è possibile associare: *Funzioni aziendali*, *Dipendenti*, *Clienti/Fornitori* e *Contatti* che abitualmente ricevono copia della *Categoria Documento* selezionata ed indicare le metodologie abituali di ricezione del documento.   
-L'elenco si compone delle seguenti informazioni:   
-> **Gruppo**   
->> **Codice**: è il codice del *Ruolo A.R.M.* destinatario.   
->> **Descrizione**: è la descrizione del *Ruolo A.R.M.* destinatario.   
+In this list, you can associate: *Company Functions*, *Employees*, *Customers/Suppliers*, and *Contacts* who usually receive a copy of the selected *Document Category* and indicate the usual methods of receiving the document.   
+The list consists of the following information:   
+> **Group**   
+>> **Code**: it is the code of the recipient *A.R.M. Role*.   
+>> **Description**: it is the description of the recipient *A.R.M. Role*.   
 >
-> **Utente**   
->> **Codice**: è il codice dell'*Utente A.R.M.* destinatario.   
->> **Descrizione**: è la descrizione dell'*Utente A.R.M.* destinatario.   
+> **User**   
+>> **Code**: it is the code of the recipient *A.R.M. User*.   
+>> **Description**: it is the description of the recipient *A.R.M. User*.   
 >
-> **Funzione aziendale**
->> **Codice**: è il codice della *Funzione aziendale* destinataria.   
->> **Descrizione**: è la descrizione della *Funzione aziendale* destinataria.   
+> **Company Function**   
+>> **Code**: it is the code of the recipient *Company Function*.   
+>> **Description**: it is the description of the recipient *Company Function*.   
 >
-> **Dipendente**
->> **Codice**: è il codice del dipendente* destinatario.   
->> **Cognome**: è il cognome del dipendente* destinatario.   
->> **Nome**: è il nome del dipendente* destinatario.   
+> **Employee**   
+>> **Code**: it is the code of the recipient *employee*.   
+>> **Surname**: it is the surname of the recipient *employee*.   
+>> **Name**: it is the name of the recipient *employee*.   
 >
-> **Cliente/Fornitore**
->> **Descrizione**: è la ragione sociale del *Cliente/Fornitore* destinatario.   
+> **Customer/Supplier**   
+>> **Description**: it is the company name of the recipient *Customer/Supplier*.   
 >
-> **Contatto**
->> **Codice**: è il codice del *Contatto* destinatario.   
->> **Descrizione**: è la descrizione del *Contatto* destinatario.   
+> **Contact**   
+>> **Code**: it is the code of the recipient *Contact*.   
+>> **Description**: it is the description of the recipient *Contact*.   
 >
-> **Altro destinatario**
->> **Descrizione**: è la libera descrizione di un destinatario non codificato.   
+> **Other Recipient**   
+>> **Description**: it is the free description of an uncoded recipient.   
 >
-> **Dati per la consegna**
->> **Cartacea**: indica che al momento della distribuzione (procedura interna alla gestione *Documenti di origine interna*) il soggetto desidera ricevere copia *Cartacea* del documento o in allegato tramite *Email*.   
->> **Metodo di consegna**: indica la metodologia di consegna abituale della *Categoria Documento*.   
->> **Email**: indica una email di destinazione, se non codificata nell'anagrafica del destinatario.   
->> **Numero di copie**: indica il numero di copie cartacee che il destinatario desidera ricevere.   
->> **Note**: annotazioni libere.   
+> **Data for delivery**   
+>> **On paper**: indicates that at the time of distribution (internal procedure within the management of *Internal Origin Documents*), the entity wishes to receive a *On paper* copy of the document or as an attachment via *Email*.   
+>> **Delivery Method**: indicates the usual delivery method of the *Document Category*.   
+>> **Email**: indicates a destination email, if not coded in the recipient's registry.   
+>> **Number of Copies**: indicates the number of paper copies the recipient wishes to receive.   
+>> **Notes**: free annotations.   
 
-*Pulsanti specifici*:      
-**Nuovo destinatario**: inserisce una nuova riga in elenco.   
-**Cancella destinatario**: cancella la riga selezionata dall'elenco.   
+*Specific Buttons*:      
+**New Recipient**: inserts a new row in the list.   
+**Delete Recipient**: deletes the selected row from the list.   
 
-### Accesso consentito alle funzioni
-In questa elenco è possibile inserire le *Funzioni aziendali* a cui dare i diritti di accesso.   
-Se non vengono inserite righe in questa tabella, allora l'accesso è consentito a tutti.   
-L'elenco si compone delle seguenti informazioni:   
-> **Funzione**: è il codice della *Funzione aziendale*.   
-> **Descrizione funzione**: è la descrizione della *Funzione aziendale*.   
-> **Note**: annotazioni libere.
+### Access Allowed to the Functions 
+In this list, you can enter the *Company Functions* that will be granted access rights.   
+If no rows are inserted in this table, access is allowed to everyone.   
+The list consists of the following information:   
+> **Function**: it is the code of the *Company Function*.   
+> **Function Description**: it is the description of the *Company Function*.   
+> **Notes**: free annotations.
 
-*Pulsanti specifici*:      
-**Nuova funzione di accesso**: inserisce una nuova riga in elenco.   
-**Cancella funzione di accesso**: cancella la riga selezionata dall'elenco.   
+*Specific Buttons*:      
+**New Access Function**: inserts a new row in the list.   
+**Delete Access Function**: deletes the selected row from the list.   
 
-### Extra data
-E' possibile inserire degli [Extra Data](/docs/configurations/utility/extra-data/extradata/new-extradata-simple) per ogni *Documento di origine interna*.   
-Questi *Extra data* vengono ereditati nel *Documento interno* di quella determinata categoria.   
+### Extra Data 
+It is possible to enter [Extra Data](/docs/configurations/utility/extra-data/extradata/new-extradata-simple) for each *Internal Origin Document*.   
+These *Extra Data* are inherited in the *Internal Document* of that specific category.   
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+For anything not detailed in this document regarding the common functioning of the forms, please refer to the following link [Custom features, buttons, and fields](/docs/guide/common).

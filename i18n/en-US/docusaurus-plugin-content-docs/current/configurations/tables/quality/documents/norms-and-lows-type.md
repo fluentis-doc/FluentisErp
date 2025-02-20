@@ -1,31 +1,31 @@
 ---
-title: Tipi norme e leggi
+title: Norms & Lows Types
 sidebar_position: 3
 ---
 
-La tabella si trova sul percorso **Tabelle > Qualità > Documenti > Tipi norme e leggi**.
+The table is located on the path **Tables > Quality > Documents > Norms & Lows Types**.
 
-:::important A cosa serve
-In questa tabella è possibile codificare le diverse tipologie di Norme e Leggi.   
-Un esempio di utilizzo lo troviamo nella gestione **Norme e Leggi**.
+:::important What it is for
+In this table, it is possible to encode the different Norms & Lows Types.   
+An example of use can be found in the management of **Norms & Lows**.
 :::
 
-La tabella consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+The table allows for the insertion of new records or for searching existing ones to view, modify, or delete them.
 
-**Ricerca Tipi norme e leggi**
+**Norms & Lows Types Search**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+The form consists of a filter area and a results area. Once all desired filters have been set, simply click the **Search** button to display results in the results grid.
 
-**Inserimento Tipi norme e leggi**
+**Insert Norms & Lows Types**
 
-Per poter inserire nuovi *Tipi norme e leggi* è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.   
-Per il nuovo record si devono inserire almeno i campi obbligatori richiesti dal programma: il **Codice** e la **Descrizione**.
+To insert new *Norms & Lows Types*, it is necessary to click on the first empty row in the grid or press the **New** button.   
+For the new record, at least the mandatory fields required by the program must be filled in: **Code** and **Description**.
 
-*Campi specifici*: 
+*Specific fields:*
 
-> **Codice tipo**: è il codice del *Tipo norma o legge*.   
-> **Descrizione tipo**: è la descrizione del *Tipo norma o legge*.   
-> **Eliminabile**: indica che rende eliminabile o meno questa tipologia;   
-> **Note**: annotazioni libere.
+> **Type Code**: this is the code of the *Norms & Lows Type*.   
+> **Type Description**: this is the description of the *Norms & Lows Type*.   
+> **Eliminable**: indicates whether this type can be deleted or not;   
+> **Notes**: free annotations.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+For anything not detailed in this document regarding the common operation of forms, please refer to the following link [Custom Features, Buttons, and Fields](/docs/guide/common).
