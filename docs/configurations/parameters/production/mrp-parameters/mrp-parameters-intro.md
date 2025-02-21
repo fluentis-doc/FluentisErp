@@ -42,18 +42,20 @@ Inoltre, sono presenti i seguenti campi:
 
 **Generazione commesse di produzione**: se attivato, indica che le righe ordine cliente che presentano questo articolo devono essere visualizzate nel filtro del tab *Ordini Clienti* della *Generazione commesse di produzione*; inoltre, verrà anche considerato nel caso in cui fosse attiva la *Generazione automatica flusso di produzione* presente nei [Parametri MS](/docs/configurations/parameters/production/mps-parameters/). Nel caso in cui il flag fosse disattivato, l'articolo non verrà considerato in nessuna delle due procedure;
 
+**Escludi da pianificazione**: se attivo, l’articolo viene escluso dalla pianificazione generale.
+
 **% scarto**: consente all'utente di impostare una percentuale di scarto fissa per l'articolo. Questa percentuale viene impostata sempre con questo dato quando l'articolo viene ripreso all'interno di una distinta base.  
 *Esempio*: se viene indicato che per produrre quel materiale c'è uno scarto di solito del 10%, se l'ordine da produrre è di 100 pezzi lo schedulatore o l'MRP quando crea l'ordine pianificato invece di farlo da 100 pezzi, lo farà da 100 pezzi + il 10%.
 
-**Num. ciclo**: consente di indicare quale sia il ciclo definito come ciclo di default per l'articolo;
+**Numero ciclo**: consente di indicare quale sia il ciclo definito come ciclo di default per l'articolo;
 
 **Considera in CL**: se attivato, permette all'utente di fare in modo che l'articolo sia considerato nella compilazione automatica del tab *Materiali da Consegnare* e del tab *Materiali da Impiegare* dell'*Ordine di Conto Lavoro*;
 
 Ci sono poi una serie di flag che servono all'elaborazione della procedura MRP e che sono:
 
-**Considera le quantità in base al lotto economico**: se attivato, il flag consente di fare in modo che per l'articolo venga considerato il lotto economico (ovvero la quantità minima di produzione/acquisto) di produzione (impostato nella sezione Parametri di produzione sempre all'interno di questa form e che verrà dettagliata successivamente) o di acquisto (impostato nella sezione dei parametri di acquisto sempre in questa form e che verrà dettagliata successivamente);
+**Considera le quantità in base al lotto economico**: se attivato, il flag consente di fare in modo che per l'articolo venga considerato il lotto economico (ovvero la quantità minima di produzione/acquisto) di produzione (impostato nella sezione *Parametri di produzione* sempre all'interno di questa form e che verrà dettagliata successivamente) o di acquisto (impostato nella sezione dei parametri di acquisto sempre in questa form e che verrà dettagliata successivamente);
 
-**Considera i multipli del lotto economico**: se attivato, il flag consente di fare in modo che per l'articolo venga considerato il multiplo del lotto economico di produzione o di acquisto impostatoi nelle sezioni della form che verranno dettagliate successivamente;
+**Considera i multipli del lotto economico**: se attivato, il flag consente di fare in modo che per l'articolo venga considerato il multiplo del lotto economico di produzione o di acquisto impostati nelle sezioni della form che verranno dettagliate successivamente;
 
 **Reintegro scorta minima dell'articolo**: se attivato, il flag consente di fare in modo che per l'articolo venga reintegrata la scorta minima impostata nella sua anagrafica, tab *Approvvigionamento*;
 
