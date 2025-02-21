@@ -3,7 +3,7 @@ title: Commessa Multiprodotto
 sidebar_position: 5
 ---
 
-La form si apre tramite il percorso **Pianificazione > Commesse di produzione** cliccando nella form **Commesse di produzione** sull'pulsante **Inserisci commessa multiprodotto**.
+La form si apre tramite il percorso **Pianificazione > Commesse di produzione** cliccando nella form **Commesse di produzione** sul pulsante **Inserisci commessa multiprodotto**.
 
 ## Pulsanti specifici
 
