@@ -1,12 +1,6 @@
 ---
-title: General Overview
+title: Generalità
 sidebar_position: 1
 ---
 
-The sales area parameters allow the user to set the sales document flow according to necessary conditions belonging to each single company.
-
-
-
-
-
-
+I parametri dell'area vendita si trovano nel percorso **Parametri > Vendite** e consentono di definire il flusso dei documenti di acquisto secondo le logiche necessarie per ogni società.
