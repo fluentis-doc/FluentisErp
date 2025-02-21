@@ -35,7 +35,7 @@ Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **
 **Anno**: indica l'anno dell'ordine pianificato;     
 **Ordine**: indica il numero dell'ordine pianificato;           
 **Livello**: indica il livello dell'articolo oggetto dell'ordine all'interno della distinta base;  
-**Anno/Numero/Codice/Descrizione commessa di produzione**: i campi risulteranno essere vuoti se l'ordine pianificato è stato generato manulamente oppure tramite MRP;  
+**Anno/Numero/Codice/Descrizione commessa di produzione**: i campi risulteranno essere vuoti se l'ordine pianificato è stato generato manualmente oppure tramite MRP;  
 **Data di inizio prevista**: se si tratta di ordine pianificato di acquisto o di conto lavoro questa data rappresenta la data in cui deve essere inviato al fornitore l'ordine di acquisto che verrà successivamente generato con il rilascio dell'ordine stesso; se si tratta di ordine pianificato di produzione questa data rappresenta la data di previsto inizio della prima fase di lavorazione del ciclo dell'articolo;  
 **Data di fine prevista**: se si tratta di ordine pianificato di acquisto o di conto lavoro questa data rappresenta la data in cui deve essere ricevuta la fornitura e quindi coinciderà con la data di previsto ricevimento della riga dell'ordine fornitore che verrà successivamente generato con il rilascio dell'ordine stesso; se si tratta di ordine pianificato di produzione questa data rappresenta la data di prevista fine dell'ultima fase di lavorazione del ciclo dell'articolo;  
 **Quantità confermata**: sarà diversa da zero solamente se l'elaborazione è avvenuta tramite l'MRP; 

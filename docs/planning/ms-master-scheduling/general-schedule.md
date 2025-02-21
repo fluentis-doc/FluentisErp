@@ -6,25 +6,29 @@ sidebar_position: 2
 :::important A cosa serve
 La pianificazione generale in Fluentis è un processo che opera con il presupposto di capacità infinita, il che significa che la pianificazione non tiene conto di limitazioni fisiche nei centri di lavoro o nelle risorse disponibili. Questa metodologia permette di schedulare le operazioni produttive con una certa flessibilità.
 
-La pianificazione può essere eseguita utilizzando due logiche distinte: "al più presto" e "al più tardi". La logica "al più presto" mira a iniziare le operazioni non appena possibile, mentre la logica "al più tardi" pianifica le operazioni il più tardi possibile senza compromettere le scadenze. Questi approcci consentono un'analisi ottimizzata delle esigenze produttive e la gestione dei tempi di lavorazione in base alle priorità aziendali e alle necessità operative
+La pianificazione può essere eseguita utilizzando due logiche distinte: **al più presto** e **al più tardi**. La logica ***al più presto*** mira a iniziare le operazioni non appena possibile, mentre la logica **al più tardi** pianifica le operazioni il più tardi possibile senza compromettere le scadenze. Questi approcci consentono un'analisi ottimizzata delle esigenze produttive e la gestione dei tempi di lavorazione in base alle priorità aziendali e alle necessità operative
 :::
 
-Rappresenta l’algoritmo di Master Scheduling, ovvero lo schedulatore di produzione che si occupa di interessare le commesse selezionate e analizzarne la *fattibilità produttiva* in funzione della sua composizione strutturale. 
-Questo tipo di pianificazione, eseguibile con logiche di analisi *al più presto* o *al più tardi*, dà la possibilità di verificare la necessità di ulteriore capacità produttiva, evidenziando la sovra-allocazione dei centri di lavoro critici, permettendo all’operatore di decidere se aumentare la capacità interna, acquistare capacità esterna o spostare i carichi nel tempo, eventualmente accettando ritardi di consegna. 
-
-Da una o più commesse selezionate, in base ai parametri di pianificazione impostati nel tab relativo, la procedura va a creare gli ordini pianificati dei tre tipi previsti: produzione, acquisto e conto lavoro.
-
-Una volta creati, gli ordini pianificati si potranno visualizzare nella form [Ricerca ordini pianificati](/docs/planning/ms-master-scheduling/planned-orders/search-planned-orders).
+La form si compone di quattro tab: *Commesse*, *Parametri generali*, *Monitor* e *Storico*.         
 
 ## Commesse
+
+Il tab commesse, si compone di un’area di filtro che permette di filtrare le commesse che saranno poi visualizzate nella griglia dei risultati sottostante.       
+Oltre ai filtri per articolo, anno e numero commessa, sono presenti anche un filtro sul Tipo commessa: che permette di visualizzare le commesse monoprodotto, multiprodotto oppure entrambe.
+
+È presente anche il filtro per *Sito produzione* in modo tale da poter pianificare solo le commesse di un determinato sito produttivo, e una serie di flag: *In ritardo*, *Scadute*, *Lanciate* ed *Esecutive*, che consentono di scegliere se si vogliono visualizzare anche le commesse in ritardo rispetto alla data, oppure scadute, e solo se nei **Parametri generali della pianificazione** è stato attivato il flag *pianificazione commesse lanciate o esecutive*, verranno attivati a loro volta anche i flag *Lanciate* ed *Esecutive*; altrimenti questi due campi risultano sempre non essere attivi.          
+Se il flag *pianificazione commesse lanciate o esecutive* non è attivo, nella griglia verranno visualizzate solamente commesse in stato di *non esaminate* o *pianificate*.       
+Selezionando una o più commesse, in base ai parametri di pianificazione impostati nel relativo tab, tramite il pulsante pianificazione generale la procedura va a creare gli ordini pianificati dei tre tipi previsti: produzione, acquisto e conto lavoro, partendo dalle informazioni presenti nelle commesse e incrociando i dati con le relative distinte basi e cicli di lavoro.
+
+Una volta creati, gli ordini pianificati si potranno visualizzare nella form [Ricerca ordini pianificati](/docs/planning/ms-master-scheduling/planned-orders/search-planned-orders), oppure questa form può essere aperta tramite il pulsante **Apri ricerca ordini pianificati**. 
+Nel caso in cui sia selezionata una commessa nella griglia dei risultati e vengo poi premuto il pulsante **Apri ricerca ordini pianificati**, la form degli ordini pianificati verrà aperta filtrando già i risultati per quella commessa.
 
 *Pulsanti specifici*:
 
 > **Pianificazione generale**: consente al sistema di schedulare le commesse selezionate;  
 > **Apri ricerca ordini pianificati**: questo pulsante consente di aprire la schermata di  [Ricerca ordini pianificati](/docs/planning/ms-master-scheduling/planned-orders/search-planned-orders); nel caso in cui, prima di premere questo pulsante, venga selezionata una riga di commessa la form degli ordini pianificati si aprirà già pre filtrata su quella commessa;               
-> **Cambia data fine prevista con data suggerita**: questo pulsante consente di modificare la data suggerita, di cui si è parlato in questo articolo;  
+> **Cambia data fine prevista con data suggerita**: questo pulsante consente di aggiornare la *data fine prevista* con la *data suggerita* calcolata dalla pianificazione nel caso in cui fosse lanciata con il flag **Controlla documenti in ritardo con ATP** attivo;     
 > **Sequenza commesse**: tramite questa funzionalità si può accedere alla sequenza commesse, all'interno della quale si potranno visualizzare le commesse in base alla sequenza che gli è stata attribuita, anche tramite un grafico.
-
 
 *Filtri specifici*:
 
@@ -36,7 +40,7 @@ Una volta creati, gli ordini pianificati si potranno visualizzare nella form [Ri
 
 *Campi specifici nella griglia dei Risultati*
 
-**Data suggerita**: come spiegato nell'articolo relativo ai parametri generali di pianificazione , attivando un particolare flag chiamato  [Controlla doc in ritardo con ATP](/docs/planning/ms-master-scheduling/general-schedule) lo schedulatore andrà ad eseguire un ragionamento tale per cui se anche uno solo degli ordini che vengono schedulati e generati risulta essere in ritardo rispetto alla data prevista il sistema andrà a cancellare tutti gli ordini creati e ripartirà a generali dalla data MS che viene definita sempre nei parametri e che si attiva solo settando il flag controllo doc in ritardo con ATP e andrà a proporre la nuova data per le commesse proprio nel campo *Data suggerita* presente nella griglia di risultato.
+**Data suggerita**: come spiegato nell'articolo relativo ai parametri generali di pianificazione, attivando un particolare flag chiamato  [Controlla documenti in ritardo con ATP](/docs/planning/ms-master-scheduling/general-schedule) la procedura di pianificazione andrà ad eseguire un ragionamento tale per cui se anche uno solo degli ordini che vengono schedulati e generati risulta essere in ritardo rispetto alla data prevista il sistema andrà a cancellare tutti gli ordini creati e ripartirà a generali dalla **Data inizio MS** che viene definita sempre nei parametri e che si attiva solo settando il flag **Controllo documenti in ritardo con ATP** e andrà a proporre la nuova data per le commesse proprio nel campo *Data suggerita* presente nella griglia di risultato.
 
 ### Procedura Pianificazione generale
 
@@ -51,18 +55,18 @@ Le commesse create manualmente vengono sempre prodotte indipendentemente dalla d
 ## Parametri di Pianificazione generale
 
 :::note Nota
-Prima di procedere con la pianificazione , è importante settare all'interno di questo tab i parametri da seguire per eseguire la pianificazione .
+Prima di procedere con la pianificazione, è importante settare all'interno di questo tab i parametri da seguire per eseguire la pianificazione .
 ::: 
 
-**Schedulare fino al**: indicare la data entro la quale il sistema dovrà andare a considerare i documenti inseriti; è possibile inserire un valore di default in mesi nel campo **Numero massimo di mesi per la pianificazione ** presente nei [Parametri MS](/docs/configurations/parameters/production/mps-parameters);       
+**Pianificare fino al**: indicare la data entro la quale il sistema dovrà andare a considerare i documenti inseriti. Questa data è calcolata dal sistema come la data odierna più il valore in mesi inserito nel campo  **Numero massimo di mesi per la pianificazione** presente nei [Parametri MS](/docs/configurations/parameters/production/mps-parameters);       
 
-**Materiali/Risorse**: attraverso questi flag si decide se schedulare sia i materiali che le risorse, quindi sia la distinta base che il ciclo di lavoro; con il flag *Risorse* attivo verranno considerati, nella pianificazione , anche i centri di lavoro;
+**Materiali/Risorse**: attraverso questi flag si decide se pianificare sia i materiali che le risorse, quindi sia la distinta base che il ciclo di lavoro; con il flag *Risorse* attivo verranno considerati, nella pianificazione , anche i centri di lavoro;
 
 **Ordini pianificati di**: attraverso i 3 flag si va ad indicare se si vuole che il sistemare generi tutti e tre i tipi di ordini previsti quindi produzione, acquisto e conto lavoro; in questo modo questi tipi di ordine avranno il legame diretto con la commessa; (per esempio se non viene messo il flag su Acquisto, però viene mantenuto il flag su Esecuzione MRP, il sistema andrà comunque a creare anche gli ordini di acquisto ma questi risulteranno slegati dalla commessa);
 
 **Genera solo ordini pianificati per livelli**: in questo caso si andranno ad indicare i livelli (1-2...) per i quali si vuole vengano generati gli ordini pianificati;
 
-**Ordini fornitori o Richieste d'acquisto e ordini cliente**: in questo caso, se vi sono presenti a sistema documenti privi di data di impegno e disponibilità, si può dire al sistema che vada a considerare come data quella che si potrà indicare nel apposto campo, oppure dire al sistema che non vada a considerare questo tipo di documenti;
+**Ordini fornitori o Richieste d'acquisto e ordini cliente**: in questo caso, se vi sono presenti a sistema documenti privi di data di impegno e disponibilità, si può dire al sistema che vada a considerare come data quella che si potrà indicare nell'apposito campo, oppure dire al sistema che non vada a considerarli del tutto;
 
 **Raggruppamento ordini pianificati per**: nel caso in cui si lavori a commessa, in questo campo va impostata la voce *Nessun raggruppamento*; altrimenti si può andare a selezionare tramite l'apposita combo il tipo di raggruppamento che si intende applicare ma in questo caso il legame tra ordini pianificati e commessa si andrebbe a perdere;
 
@@ -72,11 +76,11 @@ Prima di procedere con la pianificazione , è importante settare all'interno di 
 
 **Compatta/separa ordini**: in questo caso si va a scegliere se si vuole venga tenuto o meno un giorno di lasco tra la fine della produzione dell'ordine di 1 livello e quello del livello successivo;
 
-**Esecuzione del MRP dopo pianificazione e Articoli a scorta**: in questo si va ad indicare che si vuole che il sistema vada ad analizzare comunque con l'MRP tutti i codici articolo che sono gestiti a fabbisogno per questo prodotto finito. L'MRP gira su tutti gli articoli della Distinta Base di questo articolo, che hanno politica di gestione diversa da quella a commessa, perchè su tutti quegli articoli si può voler verificare la copertura o si può voler generare gli ordini pianificati senza legame con la commessa; in questo caso l'MRP prende inconsiderazione i parametri indicati nel tab *Parametri generali* della **pianificazione **;      
+**Esecuzione del MRP dopo pianificazione e Articoli a scorta**: in questo si va ad indicare che si vuole che il sistema vada ad analizzare comunque con l'MRP tutti i codici articolo che sono gestiti a fabbisogno per questo prodotto finito. L'MRP gira su tutti gli articoli della Distinta Base di questo articolo, che hanno politica di gestione diversa da quella a commessa, perchè su tutti quegli articoli si può voler verificare la copertura o si può voler generare gli ordini pianificati senza legame con la commessa; in questo caso l'MRP prende inconsiderazione i parametri indicati nel tab *Parametri generali* della **Pianificazione generale**;      
 
 **pianificazione per zona consegna**: settando questo flag il sistema va a vedere quando l'ordine va consegnato in base alla sua zona di consegna e andrà a schedulare l'ordine per prima rispetto al giorno della consegna;
 
-**Controlla documenti in ritardo con ATP**: se si va ad abilitare questo flag si andrà ad abilitare contemporaneamente anche il campo successivo chiamato **Data inizio MS** e il sistema andrà ad eseguire il seguente ragionamento: se nella pianificazione degli ordini che genero, anche solo uno di questi risulta avere una data inizio inferiore ad oggi, cioè se sono in ritardo con la produzione di questa commessa, abilitando questo flag il sistema va a cancellare tutti gli ordini pianificati che ha generato e riparte dalla data che viene impostata dall'operatore nel campo **Data inizio MS** e riparte a schedulare al più presto da quella data;
+**Controlla documenti in ritardo con ATP**: se si va ad abilitare questo flag si andrà ad abilitare contemporaneamente anche il campo successivo chiamato **Data inizio MS**; a questo punto la procedura di pianificazione andrà ad eseguire un ragionamento tale per cui se anche uno solo degli ordini che vengono schedulati e generati risulta essere in ritardo rispetto alla data prevista il sistema andrà a cancellare tutti gli ordini creati e ripartirà a generali dalla **Data inizio MS** e andrà a proporre la nuova data per le commesse proprio nel campo *Data suggerita* presente nella griglia di risultato;
 
 **Rilascio automatico ordini pianificati**: se si decide di abilitare questo parametro, lo schedulatore oltre a generare gli ordini come pianificati, li va anche a rilasciare automaticamente e quindi gli ordini pianificati di produzione diventeranno ordini di produzione, gli ordini di acquisti diventeranno RDA (richieste d'acquisto) e il conto lavoro diventeranno ordini di conto lavoro;
 
