@@ -1,15 +1,15 @@
 ---
-title: Inserimento Extradata Oggetto in Xtrareport
+title: Insert ExtraData Object in Xtrareport 
 sidebar_position: 5
 ---
 
-Per poter inserire un extradata in Xtrareport va utilizzato uno script che assegna il valore a un campo calcolato.
+To insert extradata in Xtrareport, a script must be used that assigns the value to a calculated field.
 
-Per prima cosa aprire il report corretto, creare un nuovo campo calcolato, all'interno dello script di GetValue inserire il seguente script e sostituire a ciò che c'è tra parentesi quadre i valori corretti:
+First, open the correct report, create a new calculated field, and within the GetValue script, insert the following script and replace what is in square brackets with the correct values:
 
 
 ```shell
- //INIZIO SCRIPT PER EXTRADATA OGGETTO
+ //START SCRIPT FOR EXTRADATA OBJECT
 
 private void calcDiameter_GetValue(object sender, DevExpress.XtraReports.UI.GetValueEventArgs e)
 
@@ -43,13 +43,13 @@ private void calcDiameter_GetValue(object sender, DevExpress.XtraReports.UI.GetV
 
 }
 
-//FINE SCRIPT PER EXTRADATA OGGETTO
+//END SCRIPT FOR EXTRADATA OBJECT
 ```
 
-Lo script utilizzato per l'esempio visto durante la creazione dell'extradata “lingua” nella fattura, è il seguente:
+The script used for the example seen during the creation of the extra data “language” in the invoice is as follows:
 
 ```shell
-//INIZIO SCRIPT
+//START SCRIPT
 
 private void CalcLanguage_GetValue(object sender, DevExpress.XtraReports.UI.GetValueEventArgs e)
 
@@ -83,10 +83,10 @@ private void CalcLanguage_GetValue(object sender, DevExpress.XtraReports.UI.GetV
 
 }
 
-//FINE SCRIPT
+//END SCRIPT
 ```
 
-:::note Osservazioni
-- Se nell'inserimento degli oggetti e/o delle proprietà, nella parte di attivazioni e propagazione abbiamo difficolta nell'inserire l'oggetto, cliccare due volte nell'apposita casella. Questo è utile anche per vedere se tale oggetto può avere l'extradata.  
-- Se non si riesce a trovare l'oggetto, va contattat l'assistenza la quale verificherà con gli sviluppatori se si potrà implementare questa funzionalità perché non tutti gli oggetti sono programmati per avere degli extradata.
+:::note Remarks
+- If you have difficulty inserting the object in the activation and propagation section when entering objects and/or properties, click twice in the appropriate box. This is also useful to see if the object can have extradata.  
+- If you are unable to find the object, assistance should be contacted, which will verify with the developers if this functionality can be implemented because not all objects are programmed to have extradata.
 :::

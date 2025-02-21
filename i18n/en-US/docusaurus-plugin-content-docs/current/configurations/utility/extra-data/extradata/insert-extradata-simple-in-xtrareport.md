@@ -1,26 +1,26 @@
 ---
-title: Inserimento Extradata Semplice in Xtrareport
+title: Insert ExtraData Value in Xtrareport 
 sidebar_position: 4
 ---
 
-Per poter inserire un extradata in Xtrareport va utilizzato uno script che assegna il valore a un campo calcolato.
+To insert an extradata in Xtrareport, a script must be used that assigns the value to a calculated field.
 
-Per prima cosa aprire il report corretto, creare un nuovo campo calcolato, all'interno dello script di GetValue inserire il seguente script e sostituire a ciò che c'è tra parentesi quadre i valori corretti: 
+First, open the correct report, create a new calculated field, and within the GetValue script, insert the following script and replace what is between the square brackets with the correct values:
 
-```csharp
- //INIZIO SCRIPT PER EXTRADATA SEMPLICE
+```shell
+ //START SCRIPT FOR EXTRADATA VALUE
 
 private void calcRange_GetValue(object sender,  DevExpress.XtraReports.UI.GetValueEventArgs e)
 
 {
 
- [OggettoReport] row = (OggettoReport)e.Row;
+ [ReportObject] row = (ReportObject)e.Row;
 
  if (row != null)
 
  {
 
-  var extraData = [OggettoReport].ExtraData.Where(x => x.ExtraDataObject != null && x.ExtraDataObject.Code == “[OggettoExtraData]”).FirstOrDefault();
+  var extraData = [ReportObject].ExtraData.Where(x => x.ExtraDataObject != null && x.ExtraDataObject.Code == “[ExtraDataObject]”).FirstOrDefault();
 
   if (extraData != null)
 
@@ -34,13 +34,13 @@ private void calcRange_GetValue(object sender,  DevExpress.XtraReports.UI.GetVa
 
 }
 
-//FINE SCRIPT PER EXTRADATA SEMPLICE
-'''
+//END SCRIPT PER EXTRADATA VALUE
+```
 
-Lo script utilizzato per l'esempio visto durante la creazione dell'extradata “profondità” nella fattura, è il seguente:
+The script used for the example seen during the creation of the extradata “depth” in the invoice is as follows:
 
-```csharp
-//INIZIO SCRIPT
+```shell
+//START SCRIPT
 
 private void CalcDepth_GetValue(object sender, DevExpress.XtraReports.UI.GetValueEventArgs e) {
 
@@ -64,11 +64,10 @@ private void CalcDepth_GetValue(object sender, DevExpress.XtraReports.UI.GetValu
 
 }
 
-//FINE SCRIPT
-'''
+//END SCRIPT
+```
 
-Avvertenze: 
-
- - Questo script estrae un valore unico, nonostante il campo calcolato si possa trovare all'interno di detail report ecc.
-
-- Tale script è l'unico modo per poter visualizzare gli extradata all'interno del report, quindi per ogni extradata codificato che voglio stampare dovrò scrivere tale script.
+:::note Remarks
+ - This script extracts a unique value, even though the calculated field may be found within detail reports, etc.
+ - This script is the only way to view the extradata within the report, so for every coded extradata that I want to print, I will have to write this script.
+:::

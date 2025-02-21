@@ -3,8 +3,6 @@ title: Extra Data Search
 sidebar_position: 1
 ---
 
-The form opens through the path **Utilities > Extra data > Extra data**.
-
 import SearchForm from './../../../../import/sections/search-form.md'
 
 <SearchForm />
