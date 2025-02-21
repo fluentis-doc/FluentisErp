@@ -1,28 +1,18 @@
 ---
-title: Purchase Job Orders Parameters
-sidebar_position: 3
+title: Parametri commesse acquisto
+sidebar_position: 6
 ---
 
-The purchase job orders parameters allow the basic setting in order to manage correctly and according to specific request of every single company.
+I parametri delle commesse di acquisto permettono l'impostazione di base per gestire correttamente e secondo le specifiche richieste da ogni singola società.
 
-The ribbon bar represents the Form menu, that is the area in which it is possible to perform actions. The possible features list is the following: 
+*Campi*:
 
+- **Evasione obbligatoria**: quando è settato e l'utente si trova nella testata dell'ordine fornitore e passa al tab *Articoli* automaticamente si apre la form *Evasione da commessa*, perciò l'utente è obbligato ad evadere le commesse aperte per il fornitore s-pecificato nell'ordine.
 
+- **Evasione articoli da commessa obbligatoria**: quando è settato e sono inseriti degli articoli nel tab *Articoli* viene controllato che l'articolo sia presente in una commessa del fornitore prescelto.
 
-| Function | Meaning |
-| --- | --- |
-| Restore Parameters | It enables the user to restore parameters to the initial values. |
-
-#1.1 General Tab
-
-| Function | Meaning |
-| --- | --- |
-| Compulsory Execution | When it is set and the user is located on header of Purchase Order, the user can pass to items tab automatically and in this way it is possible to open an Execution from Job Order form. For this reason the user is obliged to execute opened job orders regarding the specified order. |
-| Compulsory Items Execution from Job Order | When it is set and some items are inserted on items tab, it is possible to control that the item is located in a predefined vendor job order. |
-| Fixed Quantity | When it is set, it is not possible to execute the job order for an higher quantity compared to the one inserted on job order. |
+- **Quantità fissa**: quando è settato non può essere evasa la commessa per una quantità maggiore a quella inserita nella commessa.
 
 
-
-
-
-
+*Pulsante specifico*
+> **Aggiorna**: permette di ripristinare i parametri ai valori iniziali.
