@@ -60,7 +60,7 @@ Prima di procedere con la pianificazione, è importante settare all'interno di q
 
 **Pianificare fino al**: indicare la data entro la quale il sistema dovrà andare a considerare i documenti inseriti. Questa data è calcolata dal sistema come la data odierna più il valore in mesi inserito nel campo  **Numero massimo di mesi per la pianificazione** presente nei [Parametri MS](/docs/configurations/parameters/production/mps-parameters);       
 
-**Materiali/Risorse**: attraverso questi flag si decide se pianificare sia i materiali che le risorse, quindi sia la distinta base che il ciclo di lavoro; con il flag *Risorse* attivo verranno considerati, nella pianificazione , anche i centri di lavoro;
+**Materiali / Risorse**: attivando il flag **Materiali**, all’interno degli ordini pianificati creati vengono riportati i materiali da consumare. Mentre, attivando il flag **Risorse**, all’interno degli ordini pianificati creati vengono riportate anche le fasi di lavorazione. Nel caso uno o entrambi i flag non fossero attivi, gli ordini pianificati verranno comunque creati ma senza rispettivamente i materiali o le fasi di lavorazione all’interno;
 
 **Ordini pianificati di**: attraverso i 3 flag si va ad indicare se si vuole che il sistemare generi tutti e tre i tipi di ordini previsti quindi produzione, acquisto e conto lavoro; in questo modo questi tipi di ordine avranno il legame diretto con la commessa; (per esempio se non viene messo il flag su Acquisto, però viene mantenuto il flag su Esecuzione MRP, il sistema andrà comunque a creare anche gli ordini di acquisto ma questi risulteranno slegati dalla commessa);
 
