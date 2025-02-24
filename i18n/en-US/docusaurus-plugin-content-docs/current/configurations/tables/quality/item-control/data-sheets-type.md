@@ -1,65 +1,65 @@
 ---
-title: Tipi scheda tecnica
+title: Data Sheet Types
 sidebar_position: 4
 ---
 
-La tabella si trova sul percorso **Tabelle > Qualità > Controlli articolo > Tipi scheda tecnica**.
+The table is located on the path **Tables > Quality > Item Controls > Data Sheet Types**.
 
-In questa tabella è possibile codificare i *Tipi scheda tecnica*.   
-Il *Tipo scheda tecnica* è parte integrante, assieme all'*Anno*, *Numero* e *Revisione*, del codice univoco della *Scheda tecnica*.
-Alcuni esempi di utilizzo di *Tipi scheda tecnica* li troviamo nelle gestioni:
-> **Schede tecniche** - nei *dati di testata*;   
-> **Parametri Controlli articolo** - nel tabulatore *Generale*;   
-e in tutte le gestioni dove viene ultilizzata la *Scheda tecnica*.
+In this table, it is possible to encode the *Data Sheet Types*.   
+The *Data Sheet Types* is an integral part, along with the *Year*, *Number*, and *Revision*, of the unique code of the *Data Sheet*. 
+Some examples of the use of *Data Sheet Types* can be found in the management sections:
+> **Data Sheets** - in the *header info*;   
+> **Item Controls Parameters** - in the *General* tab;   
+and in all management sections where the *Data Sheet* is used.
 
-La tabella consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+The table allows for inserting new records or searching for existing ones to view, modify, or delete them.
 
-**Ricerca Tipi scheda tecnica**
+**Search Data Sheet Types**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+The form consists of a filter area and a results area. Once all desired filters are set, simply click the **Search** button to display the results within the results grid.
 
-**Inserimento Tipi scheda tecnica**
+**Insert Data Sheet Types**
 
-Per poter inserire nuovi *Tipi scheda tecnica* è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.   
-Per il nuovo record si devono inserire almeno i campi obbligatori richiesti dal programma: il **Codice** e la **Descrizione**.
+To insert new *Data Sheet Types*, you must click on the first empty row in the grid or press the **New** button.   
+For the new record, at least the mandatory fields required by the program must be filled in: **Code** and **Description**.
 
-## Tipi scheda tecnica
+## Data Sheet Types
 
-E' l'elenco dove vengono inserite le informazioni principali dei *Tipi scheda tecnica*.   
-L'elenco si compone delle seguenti informazioni:   
-> **Codice**: è il codice del *Tipo scheda tecnica*.   
-> **Descrizione**: è la descrizione del *Tipo scheda tecnica*.   
-> **Note**: annotazioni libere.
+This is the list where the main information for *Data Sheet Types* is entered.   
+The list consists of the following information:   
+> **Code**: is the code of the *Data Sheet Type*.   
+> **Description**: is the description of the *Data Sheet Type*.   
+> **Notes**: free annotations.
 
-### Attributi Tipo scheda tecnica
+### Data Sheet Type Attributes
 
-E' possibile inserire degli [Extra Data](/docs/configurations/utility/extra-data/extradata/search-extradata) generali per il *Tipo scheda tecnica*.   
-Questi *Extra data* vengono ereditati nelle *Schede tecniche* di quella determinata tipologia.   
+It is possible to enter general [Extra Data](/docs/configurations/utility/extra-data/extradata/search-extradata) for the *Data Sheet Type*.   
+These *Extra Data* are inherited in the *Data Sheets* of that specific type.   
 
-### Metodo di codifica
+### Encoding Method 
 
-E' l'elenco dove vengono inserite le informazioni per la codifica del *Codice* e della *Descrizione* della *Scheda tecnica*.   
-L'elenco si compone delle seguenti informazioni:   
-> **Ordinamento**: è la sequenza di attuazione nella creazione del *Codice* e della *Descrizione* della *Scheda tecnica*.   
-> **Tipo**: è un elenco di valori predefiniti dal sistema che identificano l'oggetto con il quale creare la codifica della *Scheda tecnica*; I valori predefiniti sono:   
->> *ExtraData* - utilizzato solo per la creazione del codice e della descrizione, è un Extra data identificabile dalla colonna *Extradata*;   
->> *Anno* - utilizzato solo per la creazione del codice, è l'*Anno* di creazione della *Scheda tecnica*, impostabile a 2, 3 o 4 cifre impostabili nel campo *Lunghezza*;   
->> *Mese* - utilizzato solo per la creazione del codice, è il *Mese* di creazione della *Scheda tecnica*, valore fisso a 2 cifre;   
->> *Giorno* - utilizzato solo per la creazione del codice, è il *Giorno* di creazione della *Scheda tecnica*, valore fisso a 2 cifre;   
->> *Progressivo* - utilizzato solo per la creazione del codice, è il *Progressivo* di creazione della *Scheda tecnica*, valore iniziale, carattere di riempimento e dimensioni impostabili nel campo *Lunghezza*;   
->> *Codice Tipo* - utilizzato solo per la creazione del codice, è il *Codice* del *Tipo scheda tecnica*;   
->> *Descrizione Tipo* - utilizzato solo per la creazione della descrizione, è la *Descrizione* del *Tipo scheda tecnica*;   
->> *Valore fisso Codice* - utilizzato solo per la creazione del codice, sono dei caratteri fissi impostabili nella colonna *Valore fisso*;   
->> *Valore fisso Descrizione* - utilizzato solo per la creazione della descrizione, sono dei caratteri fissi impostabili nella colonna *Valore fisso*.   
+This is the list where information for coding the *Code* and the *Description* of the *Data Sheet* is entered.   
+The list consists of the following information:   
+> **Ordering**: is the sequence of implementation in the creation of the *Code* and the *Description* of the *Data Sheet*.   
+> **Type**: is a list of predefined values from the system that identify the object with which to create the coding of the *Data Sheet*; The predefined values are:   
+>> *ExtraData* - used only for creating the code and description, it is an Extra Data identifiable from the column *Extradata*;   
+>> *Year* - used only for creating the code, it is the *Year* of creation of the *Data Sheet*, which can be set to 2, 3, or 4 digits in the *Length* field;   
+>> *Month* - used only for creating the code, it is the *Month* of creation of the *Data Sheet*, a fixed value of 2 digits;   
+>> *Day* - used only for creating the code, it is the *Day* of creation of the *Data Sheet*, a fixed value of 2 digits;   
+>> *Progressive* - used only for creating the code, it is the *Progressive* of creation of the *Data Sheet*, an initial value, fill character, and dimensions that can be set in the *Length* field;   
+>> *Type Code* - used only for creating the code, it is the *Code* of the *Data Sheet Type*;   
+>> *Type Description* - used only for creating the description, it is the *Description* of the *Data Sheet Type*;   
+>> *Code Fixed Value* - used only for creating the code, these are fixed characters that can be set in the *Fixed Value* column;   
+>> *Fixed Value Description* - used only for creating the description, these are fixed characters that can be set in the *Fixed Value* column.   
 >
-> **Extradata**: abilitato se in *Tipo* è stato selezionato il valore *ExtraData*, è l'*ExtraData* da utilizzare per comporre *Codice* e/o *Descrizione* della *Scheda tecnica*.   
-> **Proprietà Codice**: abilitato se in *Tipo* è stato selezionato il valore *ExtraData*, è la proprietà *Codice* dell'*ExtraData* da utilizzare per comporre il *Codice* della *Scheda tecnica*.   
-> **Proprietà Descrizione**: abilitato se in *Tipo* è stato selezionato il valore *ExtraData*, è la proprietà *Descrizione* dell'*ExtraData* da utilizzare per comporre la *Descrizione* della *Scheda tecnica*.   
-> **Lunghezza**: abilitato se in *Tipo* è: *Anno* o *Progressivo*, è la lunghezza che verrà data al *Tipo*.   
-> **Spazio**: indica se verrà inserito uno spazio nel *Codice* tra questa componente di *Codice* e la successiva.   
-> **Separatore**: è il carattere utilizzato come separatore tra questa componente di *Codice* e la successiva.   
-> **Carattere riempimento**: è il carattere utilizzato per completare la lunghezza del *Progressivo*.   
-> **Valore iniziale progressivo**: è il valore iniziale del *Progressivo* all'inserimento della prima *Scheda tecnica*.   
-> **Valore fisso**: abilitato se in *Tipo* è: *Valore fisso Codice* o *Valore fisso Descrizione*.   
+> **Extradata**: enabled if in *Type* the value *ExtraData* has been selected, it is the *ExtraData* to use for composing the *Code* and/or *Description* of the *Data Sheet*.   
+> **Code Property**: enabled if in *Type* the value *ExtraData* has been selected, it is the *Code* property of the *ExtraData* to use for composing the *Code* of the *Data Sheet*.   
+> **Description Property**: enabled if in *Type* the value *ExtraData* has been selected, it is the *Description* property of the *ExtraData* to use for composing the *Description* of the *Data Sheet*.   
+> **Length**: enabled if in *Type* it is: *Year* or *Progressive*, it is the length that will be given to the *Type*.   
+> **Space**: indicates whether a space will be inserted in the *Code* between this component of the *Code* and the next.   
+> **Separator**: is the character used as a separator between this component of the *Code* and the next.   
+> **Fill Character**: is the character used to complete the length of the *Progressive*.   
+> **Progressive Start Value**: is the initial value of the *Progressive* when inserting the first *Data Sheet*.   
+> **Fixed Value**: enabled if in *Type* it is: *Code Fixed Value* or *Description Fixed Value*.   
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+For everything not detailed in this document regarding the common functioning of the forms, please refer to the following link [Custom Features, Buttons, and Fields](/docs/guide/common).

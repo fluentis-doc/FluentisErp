@@ -1,38 +1,38 @@
 ---
-title: Tipi Certificati di analisi
+title: Certificates of Analysis (C.O.A.) Types
 sidebar_position: 10
 ---
 
-La tabella si trova sul percorso **Tabelle > Qualità > Controlli articolo > Tipi taratura**.
+The table is located on the path **Tables > Quality > Item Controls > Calibration Types**.
 
-In questa tabella è possibile codificare i *Tipi Certificati di analisi*.   
-Alcuni esempi di utilizzo di *Tipi Certificati di analisi* li troviamo nelle gestioni:
-> **Certificati di analisi** - nei *dati di testata*;   
-> **Parametri Controlli articolo** - nel tabulatore *Generale*.
+In this table, it is possible to encode the *Certificates of Analysis (C.O.A.) Types*.   
+Some examples of the use of *Certificates of Analysis (C.O.A.) Types* can be found in the management of:
+> **Certificates of Analysis** - in the *header info*;   
+> **Item Controls Parameters** - in the *General* tab.
 
-La tabella consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+The table allows for the insertion of new records or the search for existing ones in order to view, modify, or delete them.
 
-**Ricerca Tipi Certificati di analisi**
+**Search Certificates of Analysis (C.O.A.) Types**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+The form consists of a filter area and a results area. Once all desired filters are set, simply click the **Search** button to display the results within the results grid.
 
-**Inserimento Tipi Certificati di analisi**
+**Insert Certificates of Analysis (C.O.A.) Types**
 
-Per poter inserire nuovi *Tipi Certificati di analisi* è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.   
-Per il nuovo record si devono inserire almeno i campi obbligatori richiesti dal programma: il **Codice** e la **Descrizione**.
+To insert new *Certificates of Analysis (C.O.A.) Types*, you need to click on the first empty row in the grid or press the **New** button.   
+For the new record, you must enter at least the mandatory fields required by the program: **Code** and **Description**.
 
-## Tipi Certificati di analisi
+## Certificates of Analysis (C.O.A.) Types
 
-E' l'elenco dove vengono inserite le informazioni principali dei *Tipi Certificati di analisi*.   
-L'elenco si compone delle seguenti informazioni:   
-> **Codice**: è il codice del *Tipo certificato di analisi*.   
-> **Descrizione**: è la descrizione del *Tipo certificato di analisi*.   
-> **Numerazione**: è il codice della *Numerazione*.   
-> **Note**: annotazioni libere.
+This is the list where the main information of the *Certificates of Analysis (C.O.A.) Types* is entered.   
+The list consists of the following information:   
+> **Code**: it is the code of the *Certificates of Analysis (C.O.A.) Type*.   
+> **Description**: it is the description of the *Certificates of Analysis (C.O.A.) Type*.   
+> **Numeration**: it is the code of the *Numeration*.   
+> **Notes**: free annotations.
 
-### Extra data
+### Extra Data 
 
-E' possibile inserire degli [Extra Data](/docs/configurations/utility/extra-data/extradata/search-extradata) generali per il *Tipo certificato di analisi*.   
-Questi *Extra data* vengono ereditati nei *Certificati di analisi* di quella determinata tipologia.   
+It is possible to enter general [Extra Data](/docs/configurations/utility/extra-data/extradata/search-extradata) for the *Certificates of Analysis (C.O.A.) Types*.   
+These *Extra Data* are inherited in the *Certificates of Analysis* of that specific type.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+For everything not detailed in this document about the common functioning of the forms, please refer to the following link [Custom Features, Buttons, and Fields](/docs/guide/common).

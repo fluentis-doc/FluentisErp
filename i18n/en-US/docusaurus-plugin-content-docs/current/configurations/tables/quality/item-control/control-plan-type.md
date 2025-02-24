@@ -1,64 +1,64 @@
 ---
-title: Tipi piano di controllo
+title: Control Plan Types
 sidebar_position: 8
 ---
 
-La tabella si trova sul percorso **Tabelle > Qualità > Controlli articolo > Tipi piano di controllo**.
+The table is located at **Tables > Quality > Item Controls > Control Plan Types**.
 
-In questa tabella è possibile codificare i *Tipi piano di controllo*.   
-Il *Tipo piano di controllo* è parte integrante, assieme all'*Anno*, *Numero* e *Revisione*, del codice univoco della *Piano di controllo*.
-Alcuni esempi di utilizzo di *Tipi piano di controllo* li troviamo nelle gestioni:
-> **Piani di controllo** - nei *dati di testata*;   
-> **Parametri Controlli articolo** - nel tabulatore *Generale*;   
-e in tutte le gestioni dove viene ultilizzato il *Piano di controllo*.
+In this table, it is possible to encode the *Control Plan Types*.   
+The *Control Plan Type* is an integral part, along with the *Year*, *Number*, and *Revision*, of the unique code of the *Control Plan*.   
+Some examples of the use of *Control Plan Types* can be found in the managements:
+> **Control Plans** - in the *header info*;   
+> **Item Controls Parameters** - in the *General* tab;   
+and in all the managements where the *Control Plan* is used.
 
-La tabella contiene dei valori predefiniti dal sistema e non è possibile modificarli ed eliminarli. I valori predefiniti sono:
-| Codice | Descrizione |   
+The table contains predefined values from the system and they cannot be modified or deleted. The predefined values are:
+| Code | Description |   
 |:--|:--|
-| MInt | Interno |   
-| MNNr | Non normalizzato |   
-| MNrm | Normalizzato |   
-| MUff | Ufficiale |   
+| MInt | Internal |   
+| MNNr | Non-normalized |   
+| MNrm | Normalized |   
+| MUff | Official |   
 
-La tabella consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli (se *Eliminabili*).
+The table allows you to insert new records or search for existing ones to view, modify, or delete them (if *Eliminable*).
 
-**Ricerca Tipi piano di controllo**
+**Search Control Plan Types**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+The form consists of a filter area and a results area. Once all desired filters are set, simply click the **Search** button to display the results within the results grid.
 
-**Inserimento Tipi piano di controllo**
+**Insert Control Plan Types**
 
-Per poter inserire nuovi *Tipi piano di controllo* è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.   
-Per il nuovo record si devono inserire almeno i campi obbligatori richiesti dal programma: il **Codice** e la **Descrizione**.
+To insert new *Control Plan Types*, you need to click in the grid on the first empty row or press the **New** button.   
+For the new record, at least the mandatory fields required by the program must be entered: **Code** and **Description**.
 
-## Tipi piano di controllo
+## Control Plan Types 
 
-E' l'elenco dove vengono inserite le informazioni principali dei *Tipi piano di controllo*.   
-L'elenco si compone delle seguenti informazioni:   
-> **Codice**: è il codice del *Tipo piano di controllo*.   
-> **Descrizione**: è la descrizione del *Tipo piano di controllo*.   
-> **Numerazione**: è il codice della *Numerazione*.   
-> **Eliminabile**: indica se il *Tipo piano di controllo* è eliminabile.   
-> **Note**: annotazioni libere.
+This is the list where the main information of the *Control Plan Types* is entered.   
+The list consists of the following information:   
+> **Code**: this is the code of the *Control Plan Type*.   
+> **Description**: this is the description of the *Control Plan Type*.   
+> **Numeration**: this is the code of the *Numeration*.   
+> **Eliminable**: indicates whether the *Control Plan Type* is deletable.   
+> **Notes**: free annotations.
 
-### Extra data
+### Extra Data 
 
-E' possibile inserire degli [Extra Data](/docs/configurations/utility/extra-data/extradata/search-extradata) generali per il *Tipi piano di controllo*.   
-Questi *Extra data* vengono ereditati nei *Piani di controllo* di quella determinata tipologia.   
+It is possible to input general [Extra Data](/docs/configurations/utility/extra-data/extradata/search-extradata) for the *Control Plan Types*.   
+These *Extra Data* are inherited in the *Control Plans* of that specific type.   
 
-### Prove pianificate
+### Planned Tests
 
-E' possibile inserire dei [Tipi prova](/docs/configurations/tables/quality/item-control/test-type) generali per il *Tipi piano di controllo*.   
-Questi *Tipi prova* vengono ereditati nei *Piani di controllo* di quella determinata tipologia.   
+It is possible to input general [Test Types](/docs/configurations/tables/quality/item-control/test-type) for the *Control Plan Types*.   
+These *Test Types* are inherited in the *Control Plans* of that specific type.   
 
-#### Attributi Prove Pianificate
+#### Planned Tests Attribute
 
-E' possibile inserire degli [Extra Data](/docs/configurations/utility/extra-data/extradata/search-extradata) generali per la *Prova pianificata*.   
-Questi *Extra data* vengono ereditati nelle *Prove* dei documenti dove è previsto l'utilizzo degli attributi.   
+It is possible to input general [Extra Data](/docs/configurations/utility/extra-data/extradata/search-extradata) for the *Planned Test*.   
+These *Extra Data* are inherited in the *Tests* of the documents where the attributes are used.   
 
-#### Configurazione Prove Pianificate
+#### Planned Tests Configuration
 
-Contiene gli [Extra Data](/docs/configurations/utility/extra-data/extradata/search-extradata) necessari agli operatori per preparare tutti gli strumenti necessari per poter iniziare una determinata prova. Possono essere considerate delle configurazioni necessarie, informazioni operative propedeutiche all'esecuzione della prova.   
-Questi *Extra data* vengono ereditati nelle *Prove* dei documenti dove è prevista una configurazione.   
+Contains the [Extra Data](/docs/configurations/utility/extra-data/extradata/search-extradata) necessary for operators to prepare all the necessary tools to begin a specific test. They can be considered necessary configurations, operational information preparatory to the execution of the test.   
+These *Extra Data* are inherited in the *Tests* of the documents where a configuration is required.   
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+For anything not detailed in this document about the common functioning of the forms, refer to the following link [Custom features, buttons, and fields](/docs/guide/common).

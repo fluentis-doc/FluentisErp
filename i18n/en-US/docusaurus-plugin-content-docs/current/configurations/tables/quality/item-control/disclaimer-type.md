@@ -1,28 +1,28 @@
 ---
-title: Tipi di dichiarazione
+title: Disclaimer Types
 sidebar_position: 5
 ---
 
-La tabella si trova sul percorso **Tabelle > Qualità > Controlli articolo > Tipi di dichirazione**.
+The table is located on the path **Tables > Quality > Item Controls > Disclaimer Types**.
 
-In questa tabella è possibile codificare le diverse tipologie di Dichiarazione di non responsabilità.   
-Alcuni esempi di utilizzo dei *Tipi di dichiarazione* lo troviamo nella gestione **Dichiarazione di non responsabilità**.
+In this table, it is possible to encode the different types of Disclaimer.   
+Some examples of the use of *Disclaimer Types* can be found in the management of **Disclaimer**.
 
-La tabella consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+The table allows the insertion of new records or the search of existing ones to view, modify, or delete them.
 
-**Ricerca Tipi di dichiarazione**
+**Search Disclaimer Types**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+The form consists of a filter area and a results area. Once all desired filters are set, simply click on the **Search** button to display the results within the results grid.
 
-**Inserimento Tipi di dichiarazione**
+**Insert Disclaimer Types**
 
-Per poter inserire nuovi *Tipi di dichiarazione* è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.   
-Per il nuovo record si devono inserire almeno i campi obbligatori richiesti dal programma: il **Codice** e la **Descrizione**.
+To insert new *Disclaimer Types*, you need to click in the grid on the first empty row or press the **New** button.   
+For the new record, at least the mandatory fields required by the program must be filled out: **Code** and **Description**.
 
-*Campi specifici*: 
+*Specific fields*: 
 
-> **Codice tipo**: è il codice del *Tipo di dichiarazione*.   
-> **Descrizione tipo**: è la descrizione del *Tipo di dichiarazione*.   
-> **Note**: annotazioni libere.
+> **Type Code**: is the code of the *Disclaimer Type*.   
+> **Type Description**: is the description of the *Disclaimer Type*.   
+> **Notes**: free annotations.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+For everything not detailed in this document about the common functionality of the forms, please refer to the following link [Custom features, buttons, and fields](/docs/guide/common).

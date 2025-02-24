@@ -1,33 +1,33 @@
 ---
-title: Tipi valore
+title: Value Types 
 sidebar_position: 3
 ---
 
-La tabella si trova sul percorso **Tabelle > Qualità > Generale > Tipi valore**.
+The table can be found under **Tables > Quality > General > Value Types**.
 
-In questa tabella è possibile codificare i *Tipi valore* richiesti nelle rilevazioni di valori.   
-Alcuni esempi di utilizzo dei *Tipi valore* li troviamo nelle gestioni:
-> **Schede tecniche** - nel tabulatore *Proprietà*;   
-> **Piani di controllo** - nel tabulatore *Prove pianificate*;   
-> **Controllo articoli** - nel tabulatore *Prove*;   
-> **Certificati di analisi** - nel tabulatore *Controlli e valori rilevati > Valori rilevati*;   
-> **M.E.S.** - nel tabulatore *Controlli qualità > Prove*.
+In this table, it is possible to code the *Value Types* required for value recordings.   
+Some examples of the use of *Value Types* can be found in the management areas:
+> **Data Sheets** - in the *Property* tab;   
+> **Control Plans** - in the *Planned Tests* tab;   
+> **Items Control** - in the *Tests* tab;   
+> **Certificates of Analysis** - in the *Controls and detected values > Detected Values* tab;   
+> **M.E.S.** - in the *Quality Controls > Tests* tab.
 
-La tabella contiene dei valori predefiniti dal sistema e non è possibile inserirne di nuovi, eliminarli o modificarli. I valori predefiniti sono:
-| Codice | Descrizione |   
+The table contains predefined values set by the system, and it is not possible to insert, delete, or modify them. The predefined values are:
+| Code | Description |   
 |:-:|:--|
-| 1 | Numerico |   
-| 2 | Si/No |   
-| 3 | Testo |   
+| 1 | Numeric |   
+| 2 | Yes/No |   
+| 3 | Foreground |   
 
-**Ricerca Tipi valore**
+**Search Value Types**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+The form consists of a filter area and a results area. Once all desired filters are set, it will be sufficient to click the **Search** button to view the results within the results grid.
 
-*Campi specifici*: 
+*Specific fields*: 
 
-> **Codice**: informazione di sola lettura, è il codice del *Tipo valore*.   
-> **Tipo valore**: informazione di sola lettura, è la descrizione del *Tipo valore*.   
-> **Note**: annotazioni libere.
+> **Code**: read-only information, it is the code of the *Value Type*.   
+> **Value Type**: read-only information, it is the description of the *Value Type*.   
+> **Notes**: free annotations.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+For everything not detailed in this document about the common operation of the forms, please refer to the following link [Custom features, buttons, and fields](/docs/guide/common).

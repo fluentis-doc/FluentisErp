@@ -1,30 +1,30 @@
 ---
-title: Categorie tipi prova
+title: Test Type Category
 sidebar_position: 2
 ---
 
-La tabella si trova sul percorso **Tabelle > Qualità > Controlli articolo > Categorie tipi prova**.
+The table is located on the path **Tables > Quality > Item Controls > Test Type Category**.
 
-:::important A cosa serve
-In questa tabella è possibile codificare le diverse tipologie di Prove.   
-Un esempio di utilizzo lo troviamo nella gestione **Tipi prova**.
+:::important What it is for
+In this table, it is possible to encode the different types of Tests.   
+An example of usage can be found in the management of **Test Types**.
 :::
 
-La tabella consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+The table allows you to enter new records or search for existing ones to view, modify, or delete them.
 
-**Ricerca Categorie tipi prova**
+**Search Test Type Category**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+The form consists of a filter area and a results area. Once all desired filters are set, simply click the **Search** button to display the results within the results grid.
 
-**Inserimento Categorie tipi prova**
+**Insert Test Type Category**
 
-Per poter inserire nuovi *Categorie tipi prova* è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.   
-Per il nuovo record si devono inserire almeno i campi obbligatori richiesti dal programma: il **Codice** e la **Descrizione**.
+To enter new *Test Type Category*, it is necessary to click on the first empty row in the grid or press the **New** button.   
+For the new record, at least the mandatory fields required by the program must be filled in: **Code** and **Description**.
 
-*Campi specifici*: 
+*Specific fields*:
 
-> **Codice**: è il codice della *Categoria tipo prova*.   
-> **Descrizione**: è la descrizione della *Categoria tipo prova*.   
-> **Note**: annotazioni libere.
+> **Code**: is the code of the *Test Type Category*.   
+> **Description**: is the description of the *Test Type Category*.   
+> **Notes**: free annotations.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+For everything not detailed in this document regarding the common functionality of forms, please refer to the following link [Custom features, buttons, and fields](/docs/guide/common).
