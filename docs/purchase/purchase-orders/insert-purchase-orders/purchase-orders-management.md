@@ -85,7 +85,7 @@ I seguenti flag indicano lo *stato dell'ordine*:
  
 #### Pulsanti specifici
  
-> **Evasione da progetto**: richiama la [procedura* per creare un ordine fornitore da una commessa di acquisto. Si attiva con l'inserimento del fornitore e del tipo ordine fornitore. Per poter evadere la commessa di acquisto è necessario che sia stampata e confermata.   
+> **Evasione da progetto**: richiama la procedura per creare un ordine fornitore da una commessa di acquisto. Si attiva con l'inserimento del fornitore e del tipo ordine fornitore. Per poter evadere la commessa di acquisto è necessario che sia stampata e confermata.   
 > **Sostituisci data prev. consegna nelle righe**: pemette, dopo aver specificato la *Data richiesta consegna* e/o la *Data consegna* in testata ordine, di sostituire in massa tali date nelle righe articolo già inserite.
  
 ### 2.3 Pagamenti
