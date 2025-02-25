@@ -1,113 +1,113 @@
 ---
-title: Tipi prova
+title: Test Types 
 sidebar_position: 1
 ---
 
-La tabella si trova sul percorso **Tabelle > Qualità > Controlli articolo > Tipi prova**.
+The table is located at **Tables > Quality > Item Controls > Test Types**.
 
-In questa tabella è possibile codificare le tipologie di Prove da effettuare, in accettazione merce e durante il processo produttivo, sugli articoli.   
-Alcuni esempi di utilizzo dei *Tipi prova* li troviamo nelle gestioni:
-> **Schede tecniche** - nel tabulatore *Proprietà*;   
-> **Piani di controllo** - nel tabulatore *Prove pianificate*;   
-> **Controllo articoli** - nel tabulatore *Prove*;   
-> **Certificati di analisi** - nel tabulatore *Controlli e valori rilevati > Valori rilevati*;   
-> **M.E.S.** - nel tabulatore *Controlli qualità > Prove*.
+In this table, it is possible to encode the types of Tests to be performed during goods acceptance and throughout the production process on the items.   
+Some examples of the use of *Test Types* can be found in the management:
+> **Data Sheets** - in the *Property* tab;   
+> **Control Plans** - in the *Planned Tests* tab;   
+> **Items Control** - in the *Tests* tab;   
+> **Certificates of Analysis** - in the *Controls and detected values > Detected values* tab;   
+> **M.E.S.** - in the *Quality Controls > Tests* tab.
 
-La tabella consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+The table allows for the insertion of new records or searching for existing ones to visualize, modify, or delete them.
 
-**Ricerca Tipi prova**
+**Search Test Types**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+The form consists of a filter area and a results area. Once all desired filters are set, click on the **Search** button to view the results in the results grid.
 
-**Inserimento Tipi prova**
+**Insert Test Types**
 
-Per poter inserire nuovi *Tipi prova* è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.   
-Per il nuovo record si devono inserire almeno i campi obbligatori richiesti dal programma: il **Codice** e la **Descrizione**.
+To insert new *Test Types*, click in the grid on the first empty row or press the **New** button.   
+For the new record, at least the mandatory fields required by the program must be entered: **Code** and **Description**.
 
-**Duplica Tipi prova**
+**Duplicate Test Types**
 
-Per poter duplicare un *Tipo prova* esistente in un nuovo *Tipo prova* è necessario cliccare nella griglia sul *Tipo prova* da cui si desidera duplicare e premere il pulsante **Duplica**.   
-Verrà visualizzata una richiesta di **Codice** del nuovo *Tipo prova* (dato obbligatorio) e dei flags che permettono di far scegliere se duplicare anche le informazioni di: *Configurazione*, *Esiti possibili*, *Funzione* e *Immagini*.   
-Premere successivamente il pulsante **OK** o il pulsante **Cancel** se si desidera proseguire nell'attività di duplica o meno. 
+To duplicate an existing *Test Type* into a new *Test Type*, click in the grid on the *Test Type* you want to duplicate and press the **Duplicate** button.   
+A request for the **Code** of the new *Test Type* (mandatory data) and flags will be displayed, allowing you to choose whether to also duplicate the information for: *Configuration*, *Possible results*, *Function*, and *Images*.   
+Then press the **OK** button or the **Cancel** button if you wish to proceed with duplication or not.
 
-## Tipi prova
+## Test Types 
 
-E' l'elenco dove vengono inserite le informazioni principali del *Tipo prova*.   
-L'elenco si compone delle seguenti informazioni:   
-> **Codice**: è il codice del *Tipo prova*.   
-> **Descrizione**: è la descrizione del *Tipo prova*.   
-> **Riferimento piano di controllo standard**: è un campo descrittivo che contiene i riferimenti a codifiche di prove riconosciute globalmente.   
+This is the list where the main information of the *Test Type* is entered.   
+The list consists of the following information:   
+> **Code**: the code of the *Test Type*.   
+> **Description**: the description of the *Test Type*.   
+> **Standard Control plan reference**: a descriptive field that contains references to globally recognized test codes.   
 >  
-> **Categoria**
->> **Codice**: è il codice della *Categoria*.   
->> **Descrizione**: è la descrizione della *Categoria*.   
->> **Distruttiva**: indica se la prova è di tipo distruttiva.   
+> **Category**
+>> **Code**: the code of the *Category*.   
+>> **Description**: the description of the *Category*.   
+>> **Destructive**: indicates whether the test is of a destructive type.   
 >
-> **Laboratorio interno**: indica se la prova viene effettuata internamente.   
+> **Internal laboratory**: indicates whether the test is performed internally.   
 >  
-> **Laboratorio esterno**
->> **Descrizione**: abilitato se il Laboratorio è esterno, è la ragione sociale del *laboratorio di analisi* (*fornitore*) esterno che effettuerà la prova.
+> **External laboratory**
+>> **Description**: enabled if the laboratory is external, it is the company name of the *analysis laboratory* that will perform the test.
 >  
-> **Strumento di misura**
->> **Codice**: è il codice della *Categoria di strumento di misura* da utilizzare per rilevare i valori del *Tipo prova*.   
->> **Descrizione**: è la descrizione della *Categoria di strumento di misura* da utilizzare per rilevare i valori del *Tipo prova*.
+> **Measurement tool**
+>> **Code**: the code of the *Measurement tool* to be used for detecting the values of the *Test Type*.   
+>> **Description**: the description of the *Measurement tool category* to be used for detecting the values of the *Test Type*.
 >  
-> **Valori**
->> **Da rilevare**: indica se la prova è da rilevare o è solamente una *Proprietà* e non è rilevabile e viene quindi utilizzato nelle *Schede tecniche*.   
->> **Unità di misura**: è l'*Unità di misura* dei valori da rilevare.   
->> **Tipo valore**: è il *Tipo valore* da rilevare: *Numerico*, *Si/No* o *Testo*.   
->> **Tipo limite**: abilitato se il *Tipo valore* è *Numerico*, è il *Tipo limite* da che verrà proposto nelle Prove.   
+> **Values**
+>> **To detect**: indicates whether the test is to be detected or is only a *Property* and is therefore not detectable and is used in the *Data Sheets*.   
+>> **Unit of measure**: the *Unit of measure* of the values to be detected.   
+>> **Value type**: the *Value type* to be detected: *Numeric*, *Yes/No*, or *Foreground*.   
+>> **Limit type**: enabled if the *Value type* is *Numeric*, it is the *Limit type* that will be proposed in the Tests.   
 >  
-> **Tipo controllo prova**
->> **Generico**: indica se la prova è comunemente attuata sulle tipologie di documento che si potranno specificare nelle successive colonne.   
->> **Tipo documento**: abilitato se il *Tipo valore* è *Generico*, è il documento dove il *Tipo prova* viene comunemente attuata.   
->> **Proposta in...**: abilitato se il *Tipo valore* è *Generico* e se il *Tipo documento* lo prevede, è il dettaglio (*Testata documento* o *Riga documento*) dove il *Tipo prova* viene comunemente attuata.   
->> **Codice**: è il codice del *Tipo controllo prova* da utilizzare.   
->> **Descrizione**: è la descrizione del *Tipo controllo prova* da utilizzare.
->> **Frequenza**: è la frequenza descrittiva con la quale effettuare il controllo.
+> **Test control type**
+>> **Generic**: indicates whether the test is commonly carried out on the types of documents that can be specified in the subsequent columns.   
+>> **Document type**: enabled if the *Value type* is *Generic*, it is the document where the *Test Type* is commonly carried out.   
+>> **Proposal in...**: enabled if the *Value type* is *Generic* and if the *Document type* provides for it, it is the detail (*Document header* or *Document row* ) where the *Test Type* is commonly carried out.   
+>> **Code**: the code of the *Test control type* to be used.   
+>> **Description**: the description of the *Test control type* to be used.
+>> **Frequency**: is the descriptive frequency with which to perform the control.
 >  
-> **Note**: annotazioni libere.
+> **Notes**: free annotations.
 
-### Attributi Tipo di prova
+### Attributes Type of test
 
-E' possibile inserire degli [Extra Data](/docs/configurations/utility/extra-data/extradata/search-extradata) generali per il *Tipo prova*.   
-Questi *Extra data* vengono ereditati nelle *Prove* dei documenti dove è previsto l'utilizzo degli attributi.   
+It is possible to insert [Extra Data](/docs/configurations/utility/extra-data/extradata/search-extradata) for the *Test Type*.   
+These *Extra data* are inherited in the *Tests* of documents where the use of attributes is expected.   
 
-### Parametri di configurazione Prova e strumento di misura
+### Configuration Parameters Test and Measuring instrument
 
-Contiene gli [Extra Data](/docs/configurations/utility/extra-data/extradata/search-extradata) necessari agli operatori per preparare tutti gli strumenti necessari per poter iniziare una determinata prova. Possono essere considerate delle configurazioni necessarie, informazioni operative propedeutiche all'esecuzione della prova.   
-Questi *Extra data* vengono ereditati nelle *Prove* dei documenti dove è prevista una configurazione.   
+Contains the necessary [Extra Data](/docs/configurations/utility/extra-data/extradata/search-extradata) for operators to prepare all necessary instruments to begin a specific test. These can be considered necessary configurations, operational information needed for the execution of the test.   
+These *Extra data* are inherited in the *Tests* of documents where a configuration is expected.   
 
-### Esiti possibili
+### Possible Results
 
-E' possibile personalizzare, per il *Tipo prova* selezionato, i *Tipi esito* possibili.   
-Quando verrà rilevata una singola prova, in base alla sua conformità, il sistema proporrà l'esito *positivo* oppure *negativo* di default.   
-L'elenco si compone delle seguenti informazioni:   
-> **Esito**: è il codice del *Tipo esito*.   
-> **Descrizione esito**: è la descrizione del *Tipo esito*.   
-> **Predefinito positivo**: indica che sarà proposto come esito positivo quando verrà rilevata una prova.   
-> **Predefinito negativo**: indica che sarà proposto come esito negativo quando verrà rilevata una prova.   
-> **Sequenza**: è la sequenza di visualizzazione negli elenchi dei *Tipi esito* per il "Tipo prova" selezionato.   
-> **Note**: annotazioni libere.
+It is possible to customize, for the selected *Test Type*, the possible *Result Types*.   
+When a single test is measured, based on its compliance, the system will propose the default result of *positive* or *negative*.   
+The list consists of the following information:   
+> **Result**: the code of the *Result Type*.   
+> **Result description**: the description of the *Result Type*.   
+> **Default positive**: indicates that it will be proposed as a positive result when a test is measured.   
+> **Default negative**: indicates that it will be proposed as a negative result when a test is measured.   
+> **Sequence**: the sequence of display in the lists of *Result Types* for the selected "Test Type".   
+> **Notes**: free annotations.
 
-### Funzioni di rilevamento ed approvazione
+### Detection and Approval Functions 
 
-E' un'attribuzione di diritti che elenca chi può rilevare e/o approvare i valori della prova.   
-L'elenco si compone delle seguenti informazioni:   
-> **Funzione**: è il codice della *Funzione aziendale*.   
-> **Descrizione funzione**: è la descrizione della *Funzione aziendale*.   
-> **Tipo attività**: è il diritto dato alla *Funzione aziendale* durante le attività di rilevamento e/o approvazione di una prova. I valori possibili sono:   
-> - *Può rilevare* - la *Funziona aziendale* ha i permessi di sola rilevazione dei valori;   
-> - *Può approvare* - la *Funziona aziendale* ha i permessi di sola approvazione della prova;   
-> - *Può rilevare e approvare* - la *Funziona aziendale* ha i permessi di rilevazione dei valori e approvazione della prova.   
+It is an attribution of rights that lists who can detect and/or approve the test values.   
+The list consists of the following information:   
+> **Function**: the code of the *Company Function*.   
+> **Function description**: the description of the *Company Function*.   
+> **Activity type**: the right given to the *Company Function* during the detection and/or approval activities of a test. Possible values are:   
+> - *Can detect* - the *Company Function* has permissions for value detection only;   
+> - *Can approve* - the *Company Function* has permissions for the approval of the test only;   
+> - *Can detect and approve* - the *Company Function* has permissions for value detection and test approval.   
 >
-> Le altre *Funzioni aziendali* non elencate non hanno alcun diritto di rilevazione valori e approvazione della prova.   
-> Se non vengono specificate *Funzioni aziendali* tutti gli operatori potranno rilevare valori e approvare la prova.
+> Other *Company Functions* not listed do not have any rights to detect values and approve the test.   
+> If no *Company Functions* are specified, all operators will be able to detect values and approve the test.
 >
-> **Note**: annotazioni libere.
+> **Notes**: free annotations.
 
-### Immagini
+### Images
 
-E' possibile associare delle immagini utili alla prova da rilevare. Per esempio, potrebbe servire ad indicare visivamente alcune caratteristiche o attività da fare durante la preparazione e l'attuazione della prova stessa.
+It is possible to associate useful images for the test to be measured. For example, it may help to visually indicate certain characteristics or activities to be carried out during the preparation and execution of the test itself.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+For everything not detailed in this document regarding the common operation of the forms, refer to the following link [Custom features, buttons, and fields](/docs/guide/common).

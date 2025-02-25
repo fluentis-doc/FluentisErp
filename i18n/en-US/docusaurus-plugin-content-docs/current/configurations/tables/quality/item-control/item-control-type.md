@@ -1,58 +1,58 @@
 ---
-title: Tipi controllo articolo
+title: Item Control Types 
 sidebar_position: 9
 ---
 
-La tabella si trova sul percorso **Tabelle > Qualità > Controlli articolo > Tipi Controllo articolo**.
+The table can be found in the path **Tables > Quality > Item Controls > Item Control Types**. 
 
-In questa tabella è possibile codificare i *Tipi controllo articolo*.   
-Il *Tipo controllo articolo* è parte integrante, assieme all'*Anno* e *Numero*, del codice univoco del *Controllo articolo*.
-Alcuni esempi di utilizzo di *Tipi controllo articolo* li troviamo nelle gestioni:
-> **Importa articoli da controllare** - nei *dati di testata*;   
-> **Controlli articolo** - nell'elenco dei *dati di testata*;   
-> **Certificati di analisi** - nel tabulatore *Controlli e valori rilevati*;   
-> **Parametri Controlli articolo** - nel tabulatore *Generale*;   
-e in tutte le gestioni dove viene ultilizzato il *Controllo articolo*.
+In this table, it is possible to code the *Item Control Types*.  
+The *Item Control Type* is an integral part, along with the *Year* and *Number*, of the unique code for the *Item Control*. 
+Some examples of the use of *Item Control Types* can be found in the managements:
+> **Import items to check** - in the *header info*;  
+> **Item controls** - in the list of *header info*;  
+> **Certificates of Analysis** - in the *Controls and detected values* tab;  
+> **Item Controls Parameters** - in the *General* tab;  
+and in all the managements where the *Item Control* is used. 
 
-La tabella consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+The table allows the insertion of new records or the search for existing ones to view, modify, or delete them.
 
-**Ricerca Tipi controllo articolo**
+**Search Item Control Types**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+The form consists of a filter area and a result area. Once all the desired filters are set, simply click the **Search** button to display the results in the result grid.
 
-**Inserimento Tipi controllo articolo**
+**Insert Item Control Types**
 
-Per poter inserire nuovi *Tipi controllo articolo* è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.   
-Per il nuovo record si devono inserire almeno i campi obbligatori richiesti dal programma: il **Codice** e la **Descrizione**.
+To insert new *Item Control Types*, it is necessary to click on the first empty row in the grid or press the **New** button.   
+For the new record, at least the mandatory fields required by the program must be filled out: **Code** and **Description**.
 
-## Tipi controllo articolo
+## Item Control Types 
 
-E' l'elenco dove vengono inserite le informazioni principali dei *Tipi controllo articolo*.   
-L'elenco si compone delle seguenti informazioni:   
-> **Tipo controllo**: è il codice del *Tipo controllo articolo*.   
-> **Descrizione tipo controllo**: è la descrizione del *Tipo controllo articolo*.   
-> **Magazzino**: è il codice del *Magazzino* che viene proposto in *Controllo articoli > Prove > Magazzino*;   
-è il *Magazzino* di controllo qualità utilizzato per movimentare gli articoli, una volta controllati, nel rispettivo *Magazzino* conforme e non conforme (se impostato come contropartita nella rispettiva *Causale*).   
-> **Causale scarico articoli non conformi**: è il codice della *Causale di magazzino* che viene proposta in *Controllo articoli > Prove > Causale scarico articoli non conformi*;   
-è la *Causale* di prelievo utilizzata per movimentare gli articoli non conformi, una volta controllati, nel rispettivo *Magazzino* non conforme;   
-la *Causale* di contropartita non è obbligatoria se non si desidera gestire un *Magazzino* scarti o di reintegro dopo successivo ricondizionamento o rilavorazione dell'articolo controllato.   
-> **Causale scarico articoli conformi**: è il codice della *Causale di magazzino* che viene proposta in *Controllo articoli > Prove > Causale scarico articoli conformi*;   
-è la *Causale* di prelievo utilizzata per movimentare gli articoli conformi, una volta controllati, nel rispettivo *Magazzino* conforme;   
-è auspicabile impostare la relativa *Causale* di contropartita per rendere nuovamente disponibile l'articolo conforme una volta controllato.   
-> **Causale scarico prove distruttive**: è il codice della *Causale di magazzino* che viene proposta in *Controllo articoli > Prove > Causale scarico articoli non conformi* se la *Prova* è di tipo *Distruttiva*;   
-è la *Causale* di prelievo utilizzata per movimentare gli articoli non conformi, una volta controllati;   
-non è prevista la *Causale* di contropartita in quanto la *Prova* è di tipo *Distruttiva* ed è impossibile effettuare un successivo ricondizionamento o rilavorazione dell'articolo controllato.   
-> **Tipo certificato proposto**: è il codice del *Tipo certificato di analisi* che viene proposto alla creazione di un nuovo *Certificato di analisi* da questo *Tipo controllo articolo*.   
-> **Descrizione magazzino**: è la descrizione del *Magazzino*;   
-> **Descrizione causale scarico articoli non conformi**: è la descrizione della *Causale scarico articoli non conformi*;   
-> **Descrizione causale scarico articoli conformi**: è la descrizione della *Causale scarico articoli conformi*;   
-> **Descrizione causale scarico prove distruttive**: è la descrizione della *Causale scarico prove distruttive*;   
-> **Descrizione tipo certificato proposto**: è la descrizione del *Tipo certificato proposto*;   
-> **Note**: annotazioni libere.
+This is the list where the main information of the *Item Control Types* is entered.  
+The list consists of the following information:   
+> **Control type**: this is the code of the *Item Control Type*.   
+> **Description Item Control Type**: this is the description of the *Item Control Type*.   
+> **Warehouse**: this is the code of the *Warehouse* proposed in *Item Control > Tests > Warehouse*; it is the quality control *Warehouse* used to move the items, once checked, to the respective compliant and non-compliant *Warehouse* (if set as an offset in the respective *Causal*).   
 
-### Extra data
+> **Template for unload non-compliant items**: this is the code of the *Warehouse template* proposed in *Item Control > Tests > Template for unload non-compliant items*; 
+it is the *Causal* for withdrawal used to move the non-compliant items, once checked, to the respective non-compliant *Warehouse*; 
+the offset *Causal* is not mandatory if one does not wish to manage a scrap *Warehouse* or replenishment after subsequent reconditioning or processing of the checked item.   
+> **Template for unload compliant items**: this is the code of the *Warehouse template* proposed in *Item Control > Tests > Template for unload compliant items*; 
+it is the *Causal* for withdrawal used to move the compliant items, once checked, to the respective compliant *Warehouse*; 
+it is advisable to set the related offset *Causal* to make the compliant item available again once checked.   
+> **Template for unload destructive tests**: this is the code of the *Warehouse template* proposed in *Item Control > Tests > Template for unload destructive tests* if the *Test* is of type *Destructive*; 
+it is the *Causal* for withdrawal used to move the non-compliant items, once checked; 
+no offset *Causal* is provided since the *Test* is of type *Destructive* and it is impossible to carry out subsequent reconditioning or processing of the checked item.   
+> **Proposed certificate type**: this is the code of the *Certificate of Analysis type* proposed when creating a new *Certificate of Analysis* from this *Item Control Type*.   
+> **Warehouse description**: this is the description of the *Warehouse*;   
+> **Template for unload non-compliant items description**: this is the description of the *Template for unload non-compliant items*;   
+> **Template for unload compliant items description**: this is the description of the *Template for unload compliant items*;   
+> **Template for unload destructive tests description**: this is the description of the *Template for unload destructive tests*;   
+> **Proposed certificate type description**: this is the description of the *Proposed Certificate Type*;   
+> **Notes**: free annotations.
 
-E' possibile inserire degli [Extra Data](/docs/configurations/utility/extra-data/extradata/search-extradata) generali per il *Tipi controllo articolo*.   
-Questi *Extra data* vengono ereditati nei *Controlli articolo* di quella determinata tipologia.   
+### Extra Data 
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+It is possible to insert general [Extra Data](/docs/configurations/utility/extra-data/extradata/search-extradata) for the *Item Control Types*.   
+These *Extra Data* are inherited in the *Item Controls* of that specific type.   
+
+For everything not detailed in this document regarding the common functionality of the forms, please refer to the following link [Custom features, buttons and fields](/docs/guide/common).
