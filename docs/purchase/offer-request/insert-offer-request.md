@@ -1,6 +1,6 @@
 ---
-title: Richieste di acquisto
-sidebar_position: 1
+title: Nuova Richiesta di offerta
+sidebar_position: 3
 ---
 
 ## Testata
