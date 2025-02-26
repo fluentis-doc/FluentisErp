@@ -1,37 +1,37 @@
 ---
-title: Valutazioni fornitore
+title: Vendor Ratings
 sidebar_position: 3
 ---
 
-La tabella si trova sul percorso **Tabelle > Qualità > Qualificazione fornitore > Valutazioni fornitore**.
+The table is located at **Tables > Quality > Vendor Qualification > Vendor Ratings**.
 
-I dati presenti in questa tabella sono utilizzati per attribuire una valutazione ai fornitori.   
-Alcuni esempi di utilizzo delle *Valutazioni fornitore* li troviamo nelle gestioni:
-> **Valutazioni iniziali e periodiche** - nell'elenco dei *dati di testata*;   
-> **Valutazioni periodiche su Non conformità** - nell'elenco dei *dati di testata*;   
-> **Parametri qualificazione fornitore**;   
-> **Anagrafiche contatti** - nel tabulatore *Dati contabili > Dati qualità*.   
+The data present in this table is used to assign a rating to vendors.   
+Some examples of the use of *Vendor Ratings* can be found in the management sections:
+> **Initial and periodic ratings** - in the list of *header info*;   
+> **Periodic ratings on non-compliance** - in the list of *header info*;   
+> **Vendor qualification parameters**;   
+> **Contacts Register** - in the tab *Accounting Data > Quality Data*.   
 
-La tabella consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+The table allows for the insertion of new records or searching for existing ones to view, modify, or delete them.
 
-**Ricerca Valutazioni fornitore**
+**Search Vendor Ratings**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+The form consists of a filter area and a results area. Once all desired filters are set, simply click the **Search** button to display the results within the results grid.
 
-**Inserimento Valutazioni fornitore**
+**Insert Vendor Ratings**
 
-Per poter inserire nuovi *Valutazioni fornitore* è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.   
-Per il nuovo record si devono inserire almeno i campi obbligatori richiesti dal programma: il **Codice** e la **Descrizione**.
+To insert new *Vendor Ratings*, it is necessary to click on the first empty row in the grid or press the **New** button.   
+For the new record, at least the mandatory fields required by the program must be filled in: **Code** and **Description**.
 
-*Campi specifici*: 
+*Specific fields*:
 
-> **Sequenza**: è la sequenza di visualizzazione negli elenchi delle *Valutazioni fornitore*.   
-> **Codice**: è il codice della *Valutazione fornitore*.   
-> **Descrizione**: è la descrizione della *Valutazione fornitore*.   
-> **Punteggio calcolo indice qualificazione fornitore**: valore decimale che verrà utilizzato per la valutazione dei fornitori.   
-> **Sospensione automatica**: indica se si desidera attivare la sospensione automatica del fornitore, se prevista anche nei *Parametri qualificazione fornitore*, all'attribuzione di questo tipo di valutazione.   
-> **Sfondo**: abilitato se la sospensione è automatica, è il colore che verrà applicato allo sfondo della cella se verrà attribuito questo tipo di valutazione per evidenziarne il valore negativo.   
-> **Testo**: abilitato se la sospensione è automatica, è il colore che verrà applicato al testo della cella se verrà attribuito questo tipo di valutazione per evidenziarne il valore negativo.   
-> **Note**: annotazioni libere.
+> **Sequence**: is the display sequence in the lists of *Vendor Ratings*.   
+> **Code**: is the code of the *Vendor Rating*.   
+> **Description**: is the description of the *Vendor Rating*.   
+> **Score for supplier qualification index calculation**: decimal value that will be used for rating vendors.   
+> **Automatic Suspension**: indicates whether to enable the automatic suspension of the supplier, if also provided in the *Vendor Qualification Parameters*, upon attribution of this type of evaluation.   
+> **Background**: enabled if the suspension is automatic, it is the color that will be applied to the background of the cell if this type of evaluation is assigned to highlight its negative value.   
+> **Foreground**: enabled if the suspension is automatic, it is the color that will be applied to the text of the cell if this type of evaluation is assigned to highlight its negative value.   
+> **Notes**: free annotations.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+For anything not detailed in this document regarding the common operation of forms, please refer to the following link [Custom features, buttons, and fields](/docs/guide/common).

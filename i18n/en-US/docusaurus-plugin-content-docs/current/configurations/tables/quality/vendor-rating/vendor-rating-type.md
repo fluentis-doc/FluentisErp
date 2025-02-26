@@ -1,31 +1,31 @@
 ---
-title: Tipi valutazione fornitore
+title: Vendor Rating Types 
 sidebar_position: 4
 ---
 
-La tabella si trova sul percorso **Tabelle > Qualità > Qualificazione fornitore > Tipi valutazione fornitore**.
+The table can be found along the path **Tables > Quality > Vendor Qualification > Vendor Rating Types**.
 
-I dati presenti in questa tabella sono utilizzati per categorizzare i tipi di valutazione fornitore.   
-Alcuni esempi di utilizzo dei *Tipi valutazione fornitore* li troviamo nelle gestioni:
-> **Valutazioni iniziali e periodiche** - nell'elenco dei *dati di testata*;   
-> **Valutazioni periodiche su Non conformità** - nell'elenco dei *dati di testata*;   
-> **Parametri qualificazione fornitore**.   
+The data in this table is used to categorize the types of vendor rating.  
+Some examples of the use of *Vendor Rating Types* are found in the management sections:
+> **Initial and periodic ratings** - in the list of *header info*;  
+> **Periodic ratings on non-compliance** - in the list of *header info*;  
+> **Vendor qualification parameters**.
 
-La tabella consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+The table allows you to insert new records or search for existing ones to view, modify, or delete them.
 
-**Ricerca Tipi valutazione fornitore**
+**Search Vendor Rating Types**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+The form consists of a filter area and a result area. Once you have set all the desired filters, simply click the **Search** button to display the results within the result grid.
 
-**Inserimento Tipi valutazione fornitore**
+**Insert Vendor Rating Types**
 
-Per poter inserire nuovi *Tipi valutazione fornitore* è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.   
-Per il nuovo record si devono inserire almeno i campi obbligatori richiesti dal programma: il **Codice** e la **Descrizione**.
+To insert new *Vendor Rating Types*, you need to click on the first empty row in the grid or press the **New** button.  
+For the new record, you must enter at least the mandatory fields required by the program: **Code** and **Description**.
 
-*Campi specifici*: 
+*Specific fields*:
 
-> **Tipo**: è il codice del *Tipo valutazione fornitore*.   
-> **Descrizione tipo**: è la descrizione del *Tipo valutazione fornitore*.   
-> **Note**: annotazioni libere.
+> **Type**: this is the code of the *Vendor Rating Type*.  
+> **Type Description**: this is the description of the *Vendor Rating Type*.  
+> **Notes**: free annotations.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+For everything not detailed in this document regarding the common functioning of forms, please refer to the following link [Custom features, buttons, and fields](/docs/guide/common).

@@ -1,39 +1,39 @@
 ---
-title: Livelli di criticità del fornitore
+title: Supplier Critical Levels 
 sidebar_position: 2
 ---
 
-La tabella si trova sul percorso **Tabelle > Qualità > Qualificazione fornitore > Livelli di criticità del fornitore**.
+The table is located on the path **Tables > Quality > Vendor Qualification > Supplier Critical Levels**.
 
-I dati presenti in questa tabella sono utilizzati per attribuire una valutazione ai fornitori.   
-Alcuni esempi di utilizzo dei *Livelli di criticità del fornitore* li troviamo nelle gestioni:
-> **Classi di fornitura** - nel tabulatore *Dati contabili > Dati qualità*.   
-> **Anagrafiche contatti** - nel tabulatore *Dati contabili > Dati qualità*.   
+The data present in this table is used to assign an evaluation to suppliers.   
+Some examples of using the *Supplier Critical Levels* can be found in the management sections:
+> **Supplying Classes** - in the *Accounting Data > Quality Data* tab.   
+> **Contacts Register** - in the *Accounting Data > Quality Data* tab.   
 
-La tabella consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+The table allows for the entry of new records or the search for existing ones to view, modify, or delete them.
 
-**Ricerca Livelli di criticità del fornitore**
+**Search Supplier Critical Levels**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+The form consists of a filter area and a results area. Once all desired filters are set, simply click the **Search** button to display the results in the results grid.
 
-**Inserimento Livelli di criticità del fornitore**
+**Insert Supplier Critical Levels**
 
-Per poter inserire nuovi *Livelli di criticità del fornitore* è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.   
-Per il nuovo record si devono inserire almeno i campi obbligatori richiesti dal programma: il **Codice** e la **Descrizione**.
+To enter new *Supplier Critical Levels*, you need to click on the first empty row in the grid or press the **New** button.   
+For the new record, at least the mandatory fields required by the program must be filled: **Code** and **Description**.
 
-*Campi specifici*: 
+*Specific fields*: 
 
-> **Livello di criticità del fornitore**   
->> **Codice**: è il codice della *Valutazione fornitore*.   
->> **Descrizione**: è la descrizione della *Valutazione fornitore*.   
->> **Sequenza**: è la sequenza di visualizzazione negli elenchi dei *Livelli di criticità*.   
+> **Supplier Critical Level**   
+>> **Code**: this is the code of the *Vendor Rating*.   
+>> **Description**: this is the description of the *Vendor Rating*.   
+>> **Sequence**: this is the display sequence in the *Critical Levels* lists.   
 >
-> **Tipo controllo**   
->> **Codice**: è il codice della *Tipo controllo* da effettuare per il *Livello di criticità*.   
->> **Descrizione**: è la descrizione della *Tipo controllo* da effettuare per il *Livello di criticità*.   
->> **Da controllare**: è il numero di articoli da controllare sul totale specificato in *Sul totale*.   
->> **Sul totale**: è il numero totale degli articoli sul quale basare quanti articoli devono essere controllati e specificato in *Da controllare*.   
+> **Control Type**   
+>> **Code**: this is the code of the *Control Type* to be performed for the *Critical Level*.   
+>> **Description**: this is the description of the *Control Type* to be performed for the *Critical Level*.   
+>> **To be controlled**: this is the number of items to be checked from the total specified in *About the total*.   
+>> **About the total**: this is the total number of items on which to base how many items need to be checked, specified in *To be controlled*.   
 >
-> **Note**: annotazioni libere.
+> **Notes**: free annotations.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+For everything not detailed in this document regarding the common functionality of the forms, refer to the following link [Custom features, buttons, and fields](/docs/guide/common).

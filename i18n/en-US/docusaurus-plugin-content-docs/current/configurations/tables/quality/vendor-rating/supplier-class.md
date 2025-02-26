@@ -1,53 +1,53 @@
 ---
-title: Classi di fornitura
+title: Supplying Classes 
 sidebar_position: 1
 ---
 
-La tabella si trova sul percorso **Tabelle > Qualità > Qualificazione fornitore > Classi di fornitura**.
+The table can be found along the path **Tables > Quality > Vendor Qualification > Supplying Classes**.
 
-I dati presenti in questa tabella sono utilizzati per catalogare le diverse *Classi di fornitura* dei fornitori.  
-Nella tabella si possono associare alcune informazioni che verranno poi proposte al fornitore. 
-Alcuni esempi di utilizzo dei *Classi di fornitura* li troviamo nelle gestioni:
-> **Anagrafiche contatti** - nel tabulatore *Dati contabili > Dati qualità*.   
+The data present in this table is used to catalog the different *Supplying Classes* of suppliers.  
+In the table, some information can be associated which will then be proposed to the supplier. 
+Some examples of the use of *Supplying Classes* can be found in management:
+> **Contacts Register** - in the *Accounting Data > Quality Data* tab.   
 
-La tabella consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+The table allows for the insertion of new records or searching for existing ones to view, modify, or delete them.
 
-**Ricerca Classi di fornitura**
+**Search Supplying Classes**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+The form consists of a filter area and a result area. Once all desired filters are set, just click on the **Search** button to display the results within the results grid.
 
-**Inserimento Classi di fornitura**
+**Insert Supplying Classes**
 
-Per poter inserire nuove *Classi di fornitura* è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.   
-Per il nuovo record si devono inserire almeno i campi obbligatori richiesti dal programma: il **Codice** e la **Descrizione**.
+To insert new *Supplying Classes*, you need to click in the grid on the first empty row or press the **New** button.   
+For the new record, at least the mandatory fields required by the program must be entered: **Code** and **Description**.
 
-*Campi specifici*: 
+*Specific fields*: 
 
-> **Classe fornitura**   
->> **Codice**: è il codice della *Classe di fornitura*.   
->> **Descrizione**: è la descrizione della *Classe di fornitura*.   
+> **Supplying Class**   
+>> **Code**: is the code of the *Supplying Class*.   
+>> **Description**: is the description of the *Supplying Class*.   
 >
 > **Check-list**   
-> la *Check-list* e la *Periodicità* vengono proposti ai fornitori associati alla *Classe di fornitura* e vengono utilizzati per la loro *Valutazione iniziale e periodica*.
->> **Codice**: è il codice della *Check-list*.   
->> **Descrizione**: è la descrizione della *Check-list*.   
->> **Periodicità (in mesi)**: è il periodo (espresso in mesi).   
+> the *Check-list* and the *Periodicity* are proposed to suppliers associated with the *Supplying Class* and are used for their *Initial and periodic rating*.
+>> **Code**: is the code of the *Check-list*.   
+>> **Description**: is the description of the *Check-list*.   
+>> **Periodicity (in months)**: is the period (expressed in months).   
 >
-> **Tipo controllo**   
->> **Codice**: è il codice della *Tipo controllo* da effettuare per la *Classe di fornitura*.   
->> **Descrizione**: è la descrizione della *Tipo controllo* da effettuare per la *Classe di fornitura*.   
->> **Da controllare**: è il numero di articoli da controllare sul totale specificato in *Sul totale*.   
->> **Sul totale**: è il numero totale degli articoli sul quale basare quanti articoli devono essere controllati e specificato in *Da controllare*.   
+> **Control Type**   
+>> **Code**: is the code of the *Control Type* to be performed for the *Supplying Class*.   
+>> **Description**: is the description of the *Control Type* to be performed for the *Supplying Class*.   
+>> **To be controlled**: is the number of items to check on the total specified in *About the total*.   
+>> **About the total**: is the total number of items on which to base how many items need to be checked and specified in *To be controlled*.   
 >
-> **Gestione bonus**   
-> il *Bonus* e la *Periodicità* vengono ai fornitori associati alla *Classe di fornitura* e vengono utilizzati per la loro *Valutazione periodica su Non conformità*.
->> **Valore proposto**: è il bonus (punteggio) iniziale dato ai fornitori della classe;   
->> il *Bonus* assegnato al fornitore potrà essere successivamente variato;   
->> durante la valutazione il punteggio verrà decrementato sulla base dei valori attribuiti alle Non conformità date al fornitore in un determinato periodo.   
->> **Periodicità (in mesi)**: è il periodo (espresso in mesi);   
->> la *Periodicità* assegnata al fornitore potrà essere successivamente variata;   
->> è il periodo di valutazione delle Non conformità date al fornitore per decrementare il *Bonus* iniziale.   
+> **Bonus Management**   
+> the *Bonus* and the *Periodicity* are given to suppliers associated with the *Supplying Class* and are used for their *Periodic non-compliance rating*.
+>> **Proposed value**: is the initial bonus (score) given to suppliers of the class;   
+>> the *Bonus* assigned to the supplier can be subsequently modified;   
+>> during the evaluation, the score will be decremented based on the values assigned to the Non-compliance attributed to the supplier in a given period.   
+>> **Periodicity (in months)**: is the period (expressed in months);   
+>> the *Periodicity* assigned to the supplier can be subsequently modified;   
+>> it is the period of evaluation of the Non-compliance attributed to the supplier for decreasing the initial *Bonus*.   
 >
-> **Note**: annotazioni libere.
+> **Notes**: free annotations.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+For everything not detailed in this document regarding the common functionality of the forms, refer to the following link [Custom features, buttons, and fields](/docs/guide/common).
