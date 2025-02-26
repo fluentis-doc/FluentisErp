@@ -9,7 +9,6 @@ Dalla form di ricerca degli ordini è possibile creare un nuovo documento median
  
 ## *Come creare un ordine fornitore*
 
-
 <details>
  
 <summary>Clicca per i passaggi fondamentali</summary>
@@ -30,7 +29,7 @@ In alternativa è possibile selezionare come *Tipo riga* un *Articolo non codifi
 </details>
  
  
-## 1. Dati obbligatori
+## **1. Dati obbligatori**
  
 Per creare l'ordine, l'utente deve inserire i campi obbligatori:
  
@@ -40,7 +39,7 @@ Per creare l'ordine, l'utente deve inserire i campi obbligatori:
 - **Data inserimento**: viene proposta automaticamente la data corrente, ma può essere modificata manualmente sempre rispettando la regola di progressione tra data e numero;  
 - **Fornitore**: può essere inserito usando l'[help di campo](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection#inserimento-con-il-help-di-campo) oppure [manualmente](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection#inserimento-manuale).
  
-## 2. Testata
+## **2. Testata**
  
 Continuare l'inserimento dei seguenti dati [manualmente](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection#inserimento-manuale) oppure con l'[help di campo](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection#inserimento-con-il-help-di-campo).
  
@@ -158,7 +157,7 @@ Per completare la procedura, bisognerà cliccare sul pulsante Evasione, che andr
 > **Seleziona/Deseleziona tutti**: permette di selezionare/deselezionare tutti gli articoli dalla lista;  
 > **Attiva/Disattiva solo righe selezionate**: utile soprattutto per l'evasione mediante griglia; permette di attivare/disattivare i flag di tutte le righe selezionate.  
  
-## 3. Articoli
+## **3. Articoli**
  
 In questo tab vengono inseriti tutti gli articoli con i relativi dati.
  
@@ -290,7 +289,7 @@ import SalesValuesSection from './../../../import/sections/item-values-section.m
  
 <SalesValuesSection />
  
-## 4. Riepiloghi
+## **4. Riepiloghi**
  
 Nelle diverse sezioni di questo tab sono presentate le informazioni principali dell'intero documento e alcuni pulsanti specifici.
  

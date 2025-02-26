@@ -8,6 +8,30 @@ Ovaj obrazac otvara se putem:
 ili putem  
 -  gumba **Novo** koji se nalazi u formi [Pretraživanje narudžbe od dobavljača](/docs/purchase/purchase-orders/insert-purchase-orders/search-purchase-orders).
 
+## *Come creare un ordine fornitore*
+
+<details>
+ 
+<summary>Clicca per i passaggi fondamentali</summary>
+ 
+1. **Inserisci i dati obbligatori**: *Tipo Ordine* e *Fornitore*. *Anno*, *Numero* e *Data Inserimento* saranno proposti in automatico.  
+ 
+2. **Inserisci o modifica i dati facoltativi** della testata: come date di consegna, eventuali *sconti*, la *destinazione*, ecc.  
+ 
+3. **Inserisci gli Articoli**: mediante doppio click nel campo *Codice articolo* si apre l’help articoli che permette di cercare e selezionare un articolo esistente. Tutti gli altri dati della riga, come *unità di misura*, *quantità*, *prezzo*, saranno proposti in automatico, ma possono essere modificati.
+In alternativa è possibile selezionare come *Tipo riga* un *Articolo non codificato* e inserire manualmente i dati successivi.
+ 
+4. **Inserisci eventuali sconti o altre informazioni aggiuntive** nei tab *Sconti/listini* e *Dati articolo*
+ 
+5. **Controlla la sezione dei Riepiloghi** ed inserisci eventuali spese o sconti finali.  
+ 
+6. Una volta controllato e confermato l’ordine, **inserisci una *Data conferma* e attiva il flag *Stampato* in testata** in modo da rendere l’ordine disponibile per le procedure di evasione.
+ 
+</details>
+ 
+ 
+## **1. Dati obbligatori**
+
 Da biste kreirali narudžbu, korisnik mora unijeti obavezna polja:
 
 **Vrsta narudžbe**: predefinirana u *Konfiguracija > Tablice > Nabava > Vrste narudžbi od dobavljača*.  
@@ -17,7 +41,7 @@ Ovo polje određuje raspon numeriranja dokumenta koji se unosi i automatski pred
 **Datum unosa**: automatski se predlaže trenutni datum, ali se može ručno mijenjati uvijek poštujući pravilo progresije između datuma i broja;  
 **Dobavljač**: korištenjem [polja za pomoć](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) ili[izravno](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) unosom podataka.
 
-## 2. Zaglavlje
+## **2. Zaglavlje**
 
 Nakon odabira obaveznih podataka u gornjem dijelu, korisnik može nastaviti unos sljedećih podataka [ručno](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) pomoću  [polja za pomoć](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) ili, prema odabranim postupcima, aplikacija *automatski* popunjava određena polja.
 
@@ -25,13 +49,15 @@ Nakon odabira obaveznih podataka u gornjem dijelu, korisnik može nastaviti unos
 Ako se dokument *kreira automatski*, ovi podaci preuzimaju se iz *izvornog dokumenta* iz kojeg je generiran.
 :::
 
+### 2.1 Dati fornitore
+
 Unosom **Dobavljača** automatski se *predlažu* svi specifični podaci s kartice **Zaglavlje**, prema podacima postavljenim prethodno u [šifarniku dobavljača](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/accounting-data-intro), u odgovarajućim poljima adrese i *odjeljcima*:  
 
 - **Valuta**: [Valuta](/docs/guide/common/glossary/glossary-intro#currency), [Kurs](/docs/guide/common/glossary/glossary-intro#currency-exchange), [Datum valute](/docs/guide/common/glossary/glossary-intro#currency-date).
 - **Država**: [Država](/docs/guide/common/glossary/glossary-intro#country), [Jezik](/docs/guide/common/glossary/glossary-intro#language), [Zona](/docs/guide/common/glossary/glossary-intro#zone).
 - **Isporuka**: [Isporuka](/docs/guide/common/glossary/glossary-intro#shipment), [Porto](/docs/guide/common/glossary/glossary-intro#carriage), [Pakiranje](/docs/guide/common/glossary/glossary-intro#packing), [Cjenik](/docs/guide/common/glossary/glossary-intro#sales-price-list) i njegov [vremenski okvir važenja](/docs/guide/common/glossary/glossary-intro#validity-date).
 
-*Drugi opcionalni podaci*:
+### 2.2 Drugi opcionalni podaci
 
 **Status narudžbe**: kada se kreira, nema aktivnih zastava, ali se kasnije može promijeniti u:    
 > **Printano**: kada se isprinta konačno;    
@@ -60,13 +86,12 @@ U slučaju stvaranja narudžbenice pomoću postupka *Dobiti iz naloga za posao*,
 
 **Prodajna mjesta**: upravlja se samo vertikalizacijom koja se odnosi na distribucijske lance. U slučaju narudžbenice dobivene prijenosom robe između maloprodajnih mjesta istog lanca, prikazuje se maloprodajno mjesto porijekla robe.
 
-*Posebni gumbi*
+#### Posebni gumbi
 
 > **Dobit iz naloga za posao**: poziva postupak za stvaranje narudžbenice iz radnog naloga. Aktivira se unosom dobavljača i vrste narudžbenice.   
 > **Zamijeni datume predviđene isporuke u redovima**: nakon što su određeni datumi zahtjeva za isporukom i/ili predviđene isporuke u zaglavlju narudžbenice, moguće je masovno zamijeniti te datume u već unesenim redovima stavki.
-
  
-### Plaćanja
+### 2.3 Plaćanja
 
 **Rješenja plaćanja** automatski su preuzeta iz *Šifarnik dobavljača > kartica Plaćanja* i mogu se mijenjati/brisati od strane korisnika.
 
@@ -74,12 +99,12 @@ Ako je s **Vrstom plaćanja** povezan financijski popust, iznos popusta uzima se
 
 Ako dokument potječe iz narudžbenice, vrste plaćanja mogu se preuzeti iz prvog dokumenta, iz šifarnika dobavljača ili se mogu vidjeti u formi dokumenata za obradu, a korisnik odabire željeni tip plaćanja.
 
-*Posebno dugme*
+#### Posebno dugme
 
 > **Otkaži plaćanja**: koristi se za brisanje odabranih redaka plaćanja.
 
 
-### Popusti
+### 2.4 Popusti
 
 Ponuđeni su samo predefinirani popusti preuzeti iz *Šifarnik klijenta > kartica Popusti* i ne oni koji su dodijeljeni uvjetima plaćanja ili određenim artiklima. Mogu se mijenjati/brisati od strane korisnika.
 
@@ -87,18 +112,18 @@ Popusti predloženi u zaglavlju dokumenta ponovno se prikazuju u svakom novom un
 
 Ako se nakon unosa stavki u dokument unese novi popust u zaglavlju, to se ne replicira u već unesenim stavkama dokumenta.
 
-*Posebno dugme*
+#### Posebno dugme
 
 > **Izbriši rabate**: koristi se za brisanje odabranih redaka popusta.
 
-### Odredište
+### 2.6 Odredište
 
 Ovdje se predstavljaju informacije unesene u *Šifarnik dobavljača > kartica Isporuke*, samo ako postoje zadane informacije. Padajući izbornik nudi sve primatelje, odredišta i prijevoznike unesene u šifarnik dobavljača.
 
 Adrese dostave (primatelj/odredište i prijevoznik) mogu se unijeti i samo opisno, bez prethodnog unosa među kontaktima.
 
 
-### 2.7  Dodatni podaci
+### 2.7 Dodatni podaci
 
 Ovdje se predstavljaju informacije unesene u *Šifarnik subjekta > kartica Dodatni podaci*, samo ako postoje zadane informacije.
 
@@ -110,7 +135,7 @@ U zaglavlju dokumenta, pritiskom na gumb **Izuzimanje radnog naloga** otvorit ć
 
 Moguće je zatim dodati stavke unutar narudžbenice, izvršavajući je potpuno ili djelomično, bilo za cijelu narudžbenicu ili pojedinačnu stavku.
 
-*Posebni gumbi*:
+#### Posebni gumbi*
 
 > **Pretraživanje**: omogućuje pretraživanje narudžbenica za kupovinu;   
 > **Prijenos**: omogućuje prijenos odabranih stavki/narudžbenica;   
@@ -127,7 +152,6 @@ Za dobavljača i sve druge filtre unesene u odjeljku Filter (**1**), u mreži ć
 Postupak preuzima sve podatke prisutne u narudžbenici i kao rezultat toga primjenjuju se uvjeti kupnje prisutni u narudžbenici, čak i ako su se od tada promijenili.
 ::: 
 
-
 ![](/img/it-it/purchase/purchase-orders/insert-purchase-orders/header-procedures/image08.png)
 
 Koristite gumbe (**2**) za proširenje ![](/img/neutral/common/minus.png) / stvaranje ![](/img/neutral/common/plus.png) željenih narudžbenica.
@@ -142,12 +166,12 @@ Za pojedinosti o zajedničkom funkcioniranju obrazaca pogledajte sljedeći link 
 
 Podaci se unose **ručno**, uz **pomoć polja** za pomoć ili ih mogu predložiti povezane procedure.
 
-### Artikli
+## **3. Artikli**
 
 Da biste unijeli **Novi artikl** u mrežu, dovoljno je postaviti se na red kako biste popunili različite **Novo** u traci s vrpcom.
 
 
-### Obavezni podaci
+### 3.1 Obavezni podaci
 
 **Broj linije**: ovo polje popunit će se automatski i postupno unosom podataka u redak.
 
@@ -183,7 +207,7 @@ Ako nema cjenika, predloženi podatak može se preuzeti iz *posljednje nabavne c
 **PDV**: prioritet ima podatak unesen u polje PDV *Šifarnik kontakta*. Ako toga nema, predložena je vrijednost iz *Šifarnik artikla*, ali korisnik ima mogućnost unosa drugog podatka. To je obavezno polje.
 
 
-####Nije obavezno unijeti sljedeće podatke
+#### Nije obavezno unijeti sljedeće podatke
 
 **Vrsta prometa nabave**: predloženi podatak je onaj unesen u kartici 'Generalno' u šifarniku artikla. Ako to nije dostupno, neće biti predložen nikakav podatak. Međutim, prilikom evidentiranja računa, uzet će se u obzir vrijednost unesena u polju 'Trošak/Primitak prema zadanim postavkama' u šifarnik kontakta.
 
@@ -201,24 +225,24 @@ Ako nema cjenika, predloženi podatak može se preuzeti iz *posljednje nabavne c
 
 **Godina/Broj/Opis narudžbenice za proizvodnju**: ako je narudžbenica dobavljača stvorena iz proizvodnog plana, prikazat će se referentna narudžbenica za proizvodnju (vidi *Automatsko stvaranje narudžbenice*).  
 
-*Specifični gumbi*
+#### Specifični gumbi
 
 > **Podijeli količinu u više datuma dostave**: koristi se za podjelu reda narudžbenice u više redova prema traženom datumu isporuke. Ovaj postupak otvorit će novi obrazac u kojem ćete morati unijeti novi datum isporuke i predviđenu količinu za taj datum.    
 > **Pakiranje**: omogućuje definiranje pakiranja za artikl.  
 
 
-### Popusti/Cjenici  
+### 3.3 Popusti/Cjenici  
 
 **Vrijednosti kataloga**: nudi se katalog iz kojeg je preuzet artikl, s datumom početka/završetka važenja te s posebnim uvjetima (npr. raspon popusta) dodijeljenim artiklu u katalogu;
 
 **Popusti**: nudi se svi popusti povezani s artiklom, svaki s vlastitom osnovom izračuna i dodjelom.         
 **Cjenik koji će biti ažuriran**: ako je ova zastava aktivna, odgovarajući katalog kupnje automatski se ažurira informacijama o artiklu prilikom spremanja.
 
-*Poseban gumb*
+#### Poseban gumb*
 
 > **Izbriši rabate**: omogućuje brisanje odabranog popusta iz odgovarajuće mreže.
 
-### Podaci o artiklu  
+### 3.4 Podaci o artiklu  
 
 Unutar ovog kartice navode/se unose dodatne informacije o artiklu.
 
@@ -240,7 +264,8 @@ Primjerice, na svakom retku artikla moguće je unijeti ukupnu količinu; zatim, 
 Ova operacija je moguća samo ako su sve varijante artikla jednake cijene kao i standardna konfiguracija artikla. 
 
 
-*Poseban gumb*
+#### Poseban gumb
+
 > **Otkaži**: omogućuje brisanje odabranog retka varijante.
 
 ### 3.5 Analitika
@@ -260,7 +285,7 @@ Prikazuje popis **Dodatnih podataka** povezanih s artiklom, s mogućnošću doda
 Prikazuje pojedinosti o mogućem **Dokumenti u privitku** (naziv, vrsta dokumenta, eventualne napomene, naš/vaša referenca). Upute o tome kako priložiti dokument potražite u artiklu *Priloži dokumente*.
 
 
-### Odjeljak s vrijednostima
+### 3.8 Odjeljak s vrijednostima
 
 Odjeljak prikazuje sažetak troškova koji doprinose formiranju konačne cijene odabranog artikla u mreži artikla.
 
@@ -278,7 +303,7 @@ Odjeljak prikazuje sažetak troškova koji doprinose formiranju konačne cijene 
 
 **Ukupno**: Osnovica + Porez.
 
-## 4. Sažeci
+## **4. Sažeci**
 
 U različitim sekcijama ovog taba prikazane su glavne informacije cijelog dokumenta i neki specifični gumbi.
 
@@ -312,7 +337,7 @@ Također postoji mogućnost unosa troškova koji se odnose samo na trenutni doku
 
 Prikazuje se PDV rezime dokumenta za svaki PDV kod.
 
-### Druga polja
+### 4.4 Druga polja
 
 **Završne napomene**: Ovo je opisno polje koje korisnik može popuniti i uz pomoć *pomoći kodiranih napomena*.
 

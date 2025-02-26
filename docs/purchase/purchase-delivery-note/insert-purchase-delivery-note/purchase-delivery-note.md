@@ -26,7 +26,7 @@ In alternativa è possibile selezionare come *Tipo riga* un *Articolo non codifi
  
 </details>
 
-## 1. Dati obbligatori
+## **1. Dati obbligatori**
 
 - **Tipo bolla cosegna acquisto**: predefinito in  *Configurazione > Tabelle > Acquisti > Tipi DDT di acquisto*.  
 Questo campo determina il range di numerazione del documento che si sta inserendo e propone automaticamente il *Numero* del DDT in base alla data inserimento e all'ultimo numero inserito;   
@@ -37,7 +37,7 @@ Questo campo determina il range di numerazione del documento che si sta inserend
 
 La form contiene una serie di tab.
 
-## 2. Testata
+## **2. Testata**
 
 Dopo aver selezionato i dati obbligatori nella sezione superiore, l'utente può continuare l'inserimento dei seguenti dati [manualmente](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) oppure con il [help di campo](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) oppure, in base alle procedure che sceglie, l'applicazione compila i campi *automaticamente*.
 
@@ -113,9 +113,9 @@ import TabExtraData from './../../../import/sections/tab-extra-data.md'
 
 <TabExtraData />
 
-### 2.6 Procedure testata
+## **Procedure testata:**
 
-> #### Carico automatico nel magazzino
+### *Carico automatico nel magazzino*
 
 Questa procedura viene lanciata con l'aiuto del pulsante omonimo che si trova nella testata del documento e rispetta una serie di parametri impostati precedentemente nel DDT (per dettagli consultare la procedura identica: [Registrazione DDT di acquisto in magazzino](/docs/purchase/purchase-delivery-note/procedures/load-delivery-notes-on-warehouse)).
 
@@ -125,7 +125,7 @@ Il risultato può essere visualizzato in Logistica > [Registrazioni](/docs/logis
 Se nei [Parametri DDT di acquisto](/docs/configurations/parameters/purchase/purchase-delivery-note-parameters#carico) è attivo il flag **Carico/Scarico automatico**, al momento dell'attivazione del flag *Controllata* nella testata del DDT sarà automaticamente proposto di effettuare il carico del DDT. Questo campo sarà editabile solo una volta attivato il campo *Controllato* e inserito il *Numero* documento.
 :::
 
-> #### Evasione da ordine
+### *Evasione da ordine*
 
 Nella testata del DDT, premendo il pulsante **Evasione da ordine** si aprirà la form dove è possibile filtrare gli ordini fornitori relativi al fornitore del documento.
 
@@ -138,7 +138,7 @@ Per poter utilizzare questa procedura vi sono delle condizioni iniziali che devo
 
 Si dovrà poi andare ad impostare nella testata del nuovo DDT, il *Tipo DDT* che si vuole creare e il *Fornitore*. Una volta inseriti questi dati, bisognerà cliccare sul pulsante *Evasione ordini* per aprire la form di evasione.
 
-*Procedimento*:
+#### Procedimento
 
 I filtri per fornitore e divisa verranno riportati in automatico in base al cliente selezionato nel DDT.
 
@@ -175,7 +175,7 @@ Per completare la procedura bisognerà poi cliccare sul pulsante *Evasione*, che
 Nel caso di più evasioni parziali per una determinata riga articolo all'interno dello stesso DDT è possibile scegliere se sommare le quantità in un'unica riga nel DDT oppure se mantenere righe distinte, rispettivamente disattivando o attivando il flag **Evasione quantità articolo non sommata** nella tabella dei [Tipi DDT di acquisto](/docs/configurations/tables/purchase/purchase-delivery-notes-type/).
 :::
 
-## 3. Articoli
+## **3. Articoli**
 
 In questo tab vengono inseriti tutti gli articoli con i relativi dati.
 
@@ -347,7 +347,7 @@ La sezione in basso, a destra, presenta il riassunto dei costi che concorrono al
 - **Imposta**: Importo * aliquota IVA dell'articolo; 
 - **Totale**: Importo + Imposta.
 
-## 4. Riepiloghi
+## **4. Riepiloghi**
 
 Nelle diverse sezioni di questo tab sono presentate le informazioni principali dell'intero documento e alcuni pulsanti specifici.
 
@@ -413,7 +413,7 @@ import SummariesDocumentTotal from './../../../import/sections/summaries-documen
 
 <SummariesDocumentTotal />
 
-## 5. Trasporto
+## **5. Trasporto**
 
 Il tab contiene informazioni riguardanti il trasporto degli articoli.
 

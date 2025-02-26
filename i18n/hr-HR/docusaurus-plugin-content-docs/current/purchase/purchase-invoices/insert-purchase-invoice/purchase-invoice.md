@@ -42,8 +42,19 @@ La form contiene una serie di tab.
 
 Dopo aver selezionato i dati obbligatori nella sezione superiore, l'utente può continuare l'inserimento dei seguenti dati manualmente oppure con il [help di campo](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) oppure, in base alle procedure che sceglie, l'applicazione compila i campi *automaticamente*.
 
+<<<<<<< HEAD
 :::note Ricorda
 Se il documento viene *creato automaticamente*, ad esempio mediante **Evasione da ordine fornitore** o **Evasione da DDT** questi dati vengono ripresi dal *documento d'origine* da cui è stata generata la fattura.
+=======
+Obrazac sadrži niz kartica.
+
+## 2. Zaglavlje
+
+Nakon odabira obveznih podataka u gornjem dijelu, korisnik može nastaviti [ručno](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) unos sljedećih podataka ili koristiti [pomoćno polje](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) ili, prema odabranim postupcima, aplikacija *automatski* popunjava polja.
+
+:::note NAPOMENA
+Ako se dokument *kreira automatski*, ovi podaci preuzimaju se iz *izvornog dokumenta* iz kojeg je generiran.
+>>>>>>> b3ea9dec (modificata struttura Comm. Acquisto x IT)
 :::
 
 ### 2.1 Dati fornitore
@@ -98,11 +109,15 @@ Nel caso in cui l'ordine viene completato con la procedura [Evasione da ordine](
 
 ### 2.3 Pagamenti
 
+<<<<<<< HEAD
 Le **Soluzioni di pagamento** sono riportate in automatico dall'*Anagrafica fornitore > tab Pagamenti* e possono essere modificate/cancellate dall'utente.
 
 Se al **Tipo pagamento** è associato uno sconto finanziario, l'importo dello sconto viene considerato solo ai fini contabili cioè nelle scadenze del documento e non nel totale fattura.
 
 #### Pulsante specifico
+=======
+### 2.3 Plaćanja
+>>>>>>> b3ea9dec (modificata struttura Comm. Acquisto x IT)
 
 > **Cancella pagamenti**: utilizzato per cancellare le righe di pagamento selezionate.
 

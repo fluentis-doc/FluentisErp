@@ -3,17 +3,21 @@ title: Unos upita za ponudu
 sidebar_position: 1
 ---
 
+## **1. Dati obbligatori**
+
 Ova značajka omogućuje unos novog upita za ponudu.
 
 **Vrsta**: obavezno polje. Ovisno o odabranoj **Vrsti RDO** aktivirat će se određene značajke. Pri unosu vrste, bit će automatski popunjeni  **Datum/Godina/Broj**;   
 **Dobavljač**: sadrži šifarnik kontakta.                
 **Verzija**: sadrži verziju ponude; moguće je stvoriti novu verziju pomoću gumba **Nova verzija** u ribbon traci.       
 
-### Kartica Zaglavlje 
-
 :::note NAPOMENA
 Ako se dokument *automatski generira* iz RDA, ovi podaci bit će preuzeti iz *izvornog dokumenta* iz kojeg je generiran.
 :::
+
+### **2. Zaglavlje**
+
+### 2.1 Dati fornitore
 
 Unosom **Dobavljača** automatski se *nude* svi specifični podaci na kartici **Zaglavlje**, prema podacima postavljenim unaprijed u [Šifarniku dobavljača](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/accounting-data-intro), u odgovarajućim poljima njegove adrese i u *odjeljcima*:  
 
@@ -21,6 +25,7 @@ Unosom **Dobavljača** automatski se *nude* svi specifični podaci na kartici **
 - **Država**: [Država](/docs/guide/common/glossary/glossary-intro#country), [Jezik](/docs/guide/common/glossary/glossary-intro#language), [Zona](/docs/guide/common/glossary/glossary-intro#zone)
 - **Dostava**: [Dostava](/docs/guide/common/glossary/glossary-intro#shipment), [Luka](/docs/guide/common/glossary/glossary-intro#carriage), [Pakiranje](/docs/guide/common/glossary/glossary-intro#packing), [Cjenik](/docs/guide/common/glossary/glossary-intro#sales-price-list) i njegovo [vrijeme važenja](/docs/guide/common/glossary/glossary-intro#validity-date)
 
+### 2.2 Dati facoltativi testata
 
 **Napomene**: ovo polje preuzima se iz šifarnika dobavljača, ali se može unijeti i ručno.            
 **Naša/Vaša referenca**: u ovim poljima obično se navodi interna referenca i referenca dobavljača za dokument.   
@@ -28,7 +33,7 @@ Unosom **Dobavljača** automatski se *nude* svi specifični podaci na kartici **
 **Operater**: omogućuje unos korisnika koji stvara dokument. Zaposlenici su prethodno uneseni u tablicu Zaposlenici koja se nalazi u putanji *Početna stranica > Zaposlenici*. Ova informacija postaje **obavezna** ako je opcija postavljena u parametrima samog dokumenta.
 
 
-*Posebni gumbi*
+#### Posebni gumbi
 
 > **Zamijeni prethodni datum isporuke u redovima**: nakon što ste odredili datum tražene isporuke i/ili datum predviđene isporuke u zaglavlju, moguće je masovno zamijeniti te datume u već unesenim redovima artikala.
 
@@ -36,11 +41,11 @@ Unosom **Dobavljača** automatski se *nude* svi specifični podaci na kartici **
 
 **Informacije o načinima plaćanja** automatski se prenose iz *Šifarnika dobavljača > kartica Plaćanja* i mogu se mijenjati/brisati od strane korisnika.
 
-*Posebni gumbi*
+#### Posebni gumbi*
 
 > **Otkaži plaćanja**: koristi se za brisanje odabranih redova plaćanja.
 
-## Popusti
+### 2.3 Popusti
 
 Ponuđeni su samo predefinirani popusti preuzeti iz *Šifarnik dobavljača > kartica Popusti*, a ne oni dodijeljeni uvjetima plaćanja ili određenim artiklima. Mogu se mijenjati/brisati od strane korisnika.
 
@@ -48,16 +53,17 @@ Ponuđeni popusti u zaglavlju dokumenta prenose se u svaki novi redak artikla un
 
 Ako nakon unosa redaka artikla dodate novi popust u zaglavlju, taj popust se neće replicirati u već unesenim redovima artikala.
 
-*Posebni gumbi*
+#### Posebni gumbi
+
 >  **Izbriši rabate**: koristi se za brisanje odabranih redova popusta.
 
 
-## Dodatni podaci 
+### 2.4 Dodatni podaci 
 
 Ovdje se prikazuju informacije unesene u *Šifarnik subjekata > kartica Dodatni podaci*, samo ako postoje zadani podaci.
 
 
-### Kartica artikli
+## **3. Artikli**
 
 Na ovoj kartici unose se svi artikli s pripadajućim podacima.
 
@@ -67,7 +73,7 @@ Podaci se unose [ručno](/docs/guide/common/operations-with-data/manual-entry-or
 
 Da biste unijeli **Novi artikl** u mrežu, dovoljno je postaviti kursor na redak i ispuniti razne podatke ili koristiti gumb **Novo** u traci vrpce.
 
-### Obavezni podaci
+### 3.1 Obavezni podaci
 
 **Broj linije**: ovo polje će se automatski i progresivno popunjavati pri unosu podataka u redak.
 
@@ -89,16 +95,15 @@ Nakon unosa artikla, njegov će se opis automatski preuzeti iz šifarnika. Ako a
 
 **Varijante**: ako odabrani artikl ima varijacije, trebat će odabrati željenu varijantu iz ovog padajućeg izbornika. Odabir varijante koristan je za artikle s ovom posebnom konfiguracijom koji mogu imati različitu cijenu od postavljene standardne cijene. Stoga, cijena artikla s varijacijama može biti različita od cijene artikla bez varijacija. To eventualno može zahtijevati upravljanje varijacijama artikla u referentnom cjeniku.
 
-
-## Popusti
+### Popusti
 
 **Popusti**: ponuđeni su svi popusti povezani s artiklom, svaki s vlastitom osnovom izračuna i dodjele.
 
-*Poseban gumb*
+#### Poseban gumb
 
 > **Izbriši rabate**: omogućuje brisanje odabranog popusta iz odgovarajuće mreže.
 
-## Podaci artikla 
+### Podaci artikla 
 
 Unutar ovog taba, prikazuju se/unose dodatne informacije koje se odnose na artikl.
 
@@ -112,7 +117,7 @@ Unutar ovog taba, prikazuju se/unose dodatne informacije koje se odnose na artik
 
 **Marka**: predstavlja marku artikla, preuzetu iz njezine evidencije ili iz cjenika artikla.
 
-## Dodatni podaci
+### Dodatni podaci
 
 Prikazuje popis povezanih **Dodatnih podataka** s artiklom, s mogućnošću dodavanja novih dodatnih podataka korisnih samo za trenutačni dokument, uz mogućnost odabira koje dodatne podatke želite isprintati putem odgovarajuće zastavice.
 
@@ -120,11 +125,11 @@ Prikazuje popis povezanih **Dodatnih podataka** s artiklom, s mogućnošću doda
 
 Prikazuje detalje eventualno **Priloženog Dokumenta** (naziv, vrsta dokumenta, eventualne napomene, naš/ vaš referentni broj). Upute o prilaženju dokumenta mogu se pronaći u artiklu **Prilaganje dokumenata**.
 
-### Kartica Sažeci
+## **4. Sažeci**
 
 U različitim sekcijama ovog taba prikazane su ključne informacije o cijelom dokumentu i neki specifični gumbi.
 
-**Konačni popusti artikala**:
+### 4.1 Konačni popusti artikala 
 
 Mogu se unijeti samo popusti izraženi u postotku, primjenjivi na ukupnu vrijednost dokumenta.
 

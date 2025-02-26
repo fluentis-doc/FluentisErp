@@ -3,7 +3,7 @@ title: Nuova Richiesta di offerta
 sidebar_position: 3
 ---
 
-## Testata
+## **1. Dati obbligatori**
 
 I campi obbligatori per l'inserimento di una richiesta di acquisto sono i seguenti:
 
@@ -17,6 +17,10 @@ I campi obbligatori per l'inserimento di una richiesta di acquisto sono i seguen
 Se il documento viene *creato automaticamente* da una RDA, questi dati vengono ripresi dal *documento d'origine* da cui è stata generato.
 :::
 
+## **2. Testata**
+
+### 2.1 Dati fornitore
+
 Inserendo il **Fornitore** vengono proposti in automatico tutti i dati specifici del tab **Testata**, secondo i dati impostati in precedenza nell'[anagrafica fornitore](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/accounting-data-intro) nei campi corrispondenti al suo indirizzo e nelle sezioni:    
 >- **Divisa**: sezione contenente i dati [Divisa](/docs/configurations/tables/general-settings/currencies), [Cambio](/docs/guide/common/glossary/glossary-intro#currency-exchange), [Data valuta](/docs/guide/common/glossary/glossary-intro#currency-date).     
 >- **Spedizione**: sezione contenente i dati [*Spedizioni*](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/delivery), [Porto](/docs/guide/common/glossary/glossary-intro#carriage), [Imballo](/docs/guide/common/glossary/glossary-intro#packing), [Listino](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/price-list#listini) predefinito e il suo [intervallo di validità](/docs/guide/common/glossary/glossary-intro#validity-date).   
@@ -25,7 +29,7 @@ Inserendo il **Fornitore** vengono proposti in automatico tutti i dati specifici
 
 Tutti questi campi possono essere cancellati oppure modificati manualmente dall'utente.
 
-Altri campi facoltativi sono: 
+### 2.2 Dati facoltativi testata 
 
 - **Annotazioni**: questo campo viene ripreso dall'anagrafica fornitore o eventualmente dalla RDA, ma può essere inserito anche manualmente.             
 - **Nostro/Vostro riferimento**: in questi campi solitamente viene indicato un riferimento interno ed un riferimento fornitore per il documento. Se presente, viene ripreso dall'anagrafica fornitore alrimenti può essere inserito manualmente.   
@@ -40,7 +44,7 @@ Altri campi facoltativi sono:
 
 > **Sostituisci data prev. consegna nelle righe**: dopo aver specificato la data prevista consegna in testata è possibile sostituirla in massa nelle righe articolo già inserite.
 
-### Pagamenti
+### 2.3 Pagamenti
 
 Le [Soluzioni di pagamento](/docs/configurations/tables/general-settings/payment-terms) sono riportate in automatico dall'*Anagrafica fornitore > tab Pagamenti* e possono essere modificate/cancellate dall'utente.   
 Se al [Tipo pagamento](/docs/configurations/tables/general-settings/payment-types) è associato uno sconto finanziario, l'importo dello sconto viene considerato solo ai fini contabili cioè nelle scadenze del documento e non nel totale DDT.
@@ -49,7 +53,7 @@ Se al [Tipo pagamento](/docs/configurations/tables/general-settings/payment-type
 
 > **Cancella pagamenti**: utilizzato per cancellare le righe di pagamento selezionate.
 
-### Sconti
+### 2.4 Sconti
 
 Vengono proposti solo gli sconti predefiniti ripresi dall'*Anagrafica fornitore> tab Sconti* e non quelli attribuiti alle condizioni di pagamento o a certi articoli. Possono essere modificati/cancellati dall'utente.   
 
@@ -64,11 +68,11 @@ Gli sconti proposti in testata del documento vengono riportati in ogni nuova rig
 
 Qui viene proposta l'informazione inserita nell'*Anagrafica del soggetto > tab Extra data*, solo se esistono dati di default.
 
-## Articoli
+## **3. Articoli**
 
 Per inserire un *Nuovo articolo* nella griglia basterà posizionarsi sulla riga per compilare i vari dati oppure utilizzare il pulsante **Nuovo articolo** presente nella ribbon bar.
 
-### Dati obbligatori
+### 3.1 Dati obbligatori
 
 import RowNumber from './../../../import/fields/row-number.md'
 
@@ -97,7 +101,7 @@ Se si parte direttamente con l'inserimento dell'articolo, la sua classe, il codi
 
 - **Importo unitario**: viene calcolato in automatico al netto degli sconti.
 
-### Dati non obbligatori
+### 3.2 Dati non obbligatori
 
 - **Fatturato acquisti**: viene proposto il dato inserito nel tab *Generalità* dell'anagrafica articoli.   
 
@@ -107,7 +111,7 @@ Se si parte direttamente con l'inserimento dell'articolo, la sua classe, il codi
 
 - **Periodo di prevista consegna**: campo descrittivo libero in cui è possibile indicare il periodo di tempo previsto per la consegna della merce.
 
-### Sconti
+### 3.3 Sconti
 
 - **Tipo scaglione**: riporta lo scaglione di sconto da utilizzare, che viene ripreso dall'anagrafica fornitore oppure dal listino.  
 
@@ -119,7 +123,7 @@ Nella griglia invece vengono proposti tutti gli sconti associati all'articolo, o
 
 > **Cancella sconti**: permette di cancellare lo sconto selezionato dalla griglia corrispondente. 
 
-### Dati articolo
+### 3.4 Dati articolo
 
 All'interno di questo tab vengono riportate/inserite ulteriori informazioni relative all'articolo.
 
@@ -138,23 +142,23 @@ All'interno di questo tab vengono riportate/inserite ulteriori informazioni rela
 >- **Richiesta di acquisto**: se l'offerta è stato creata da RDA viene riportata la [Richiesta d'acquisto](/docs/purchase/purchase-requests/insert-purchase-request) di riferimento.   
 
 
-### Extra data
+#### 3.4 Extra data
 
 import DocItemExtraData from './../../../import/sections/doc-item-extradata.md'
 
 <DocItemExtraData />
 
-### Documenti allegati
+#### 3.5 Documenti allegati
 
 import DocAttachDocument from './../../../import/sections/doc-attach-document.md'
 
 <DocAttachDocument />
 
-## Riepiloghi
+## **4. Riepiloghi**
 
 Nelle sezioni di questo tab sono presentate le informazioni principali dell'intero documento.
 
-### Sconti finali articoli
+### 4.1 Sconti finali articoli
 
 Gli sconti finali applicati a livello di singolo articolo vengono distribuiti (o "spalmati") su ciascuna riga articolo del documento. Questo significa che l'importo dello sconto è suddiviso proporzionalmente tra tutti gli articoli presenti nel documento, e lo sconto relativo sarà visibile nel tab Articoli per ogni singola riga.
 
@@ -166,7 +170,7 @@ Gli sconti finali applicati a livello di singolo articolo vengono distribuiti (o
 
 - **Valore**: valore numerico dello sconto finale da applicare.  
 
-### Totali documento
+### 4.2 Totali documento
 
 - **Importo lordo articoli**: rappresenta la somma dei valori di tutti gli articoli.
 

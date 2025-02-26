@@ -10,9 +10,30 @@ Putanje za stvaranje nove otpremnice:
 
 - ili putem gumba **Novo** koji se nalazi u obrascu [Pretraga primki](/docs/purchase/purchase-delivery-note/insert-purchase-delivery-note/search-delivery-note).
 
+## *Come creare un DDT di acquisto*
+
+<details>
+ 
+<summary>Clicca per i passaggi fondamentali-DA CONTROLLARE</summary>
+ 
+1. **Inserisci i dati obbligatori**: *Tipo Ordine* e *Fornitore*. *Anno*, *Numero* e *Data Inserimento* saranno proposti in automatico.  
+ 
+2. **Inserisci o modifica i dati facoltativi** della testata: come date di consegna, eventuali *sconti*, la *destinazione*, ecc.  
+ 
+3. **Inserisci gli Articoli**: mediante doppio click nel campo *Codice articolo* si apre l’help articoli che permette di cercare e selezionare un articolo esistente. Tutti gli altri dati della riga, come *unità di misura*, *quantità*, *prezzo*, saranno proposti in automatico, ma possono essere modificati.
+In alternativa è possibile selezionare come *Tipo riga* un *Articolo non codificato* e inserire manualmente i dati successivi.
+ 
+4. **Inserisci eventuali sconti o altre informazioni aggiuntive** nei tab *Sconti/listini* e *Dati articolo*
+ 
+5. **Controlla la sezione dei Riepiloghi** ed inserisci eventuali spese o sconti finali.  
+ 
+6. Una volta controllato e confermato l’ordine, **inserisci una *Data conferma* e attiva il flag *Stampato* in testata** in modo da rendere l’ordine disponibile per le procedure di evasione.
+ 
+</details>
+
 U ovom dijelu automatski se predlaže trenutni **Datum** koji se može promijeniti prema potrebi dokumenta.
 
-## 1. Obavezni podaci
+## **1. Obavezni podaci**
 
 **Vrsta dostavnice u nabavi** predefinirana u *Konfiguracija > Tablice > Nabava > Vrste dostavnica u nabavi*; 
 **Broj** i **Datum** dokumenta dodijeljeni od strane dobavljača.  
@@ -20,7 +41,7 @@ U ovom dijelu automatski se predlaže trenutni **Datum** koji se može promijeni
 
 Obrazac sadrži niz kartica.
 
-## 2. Zaglavlje
+## **2. Zaglavlje**
 
 Nakon odabira obveznih podataka u gornjem dijelu, korisnik može nastaviti [ručni](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) unos sljedećih podataka ili koristiti [pomoćno polje](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection)ili, prema odabranim postupcima, aplikacija *automatski* popunjava polja..
 
@@ -91,7 +112,7 @@ Popusti koji su ponuđeni u zaglavlju dokumenta prenose se u svaki novi redak č
 
 Ako nakon unosa redaka članka unesete novi popust u zaglavlje, to se ne replicira u već unesene retke članka.
 
-*Poseban gumb*
+#### Poseban gumb
 
 **Izbriši rabate**: koristi se za brisanje odabranih redaka popusta.
 
@@ -108,15 +129,15 @@ Adrese dostave (primatelj/odredište i prijevoznik) mogu se unijeti čak i samo 
 
 Ovdje se nudi informacija unesena u *Šifarnika subjekta > kartica Dodatni podaci*, samo ako postoje zadani podaci.
 
-### 2.6 Procedure testata
+## **Procedure testata:**
 
-#### Automatsko unošenje u skladište
+### *Automatsko unošenje u skladište*
 
 Ovaj postupak pokreće se pomoću istoimenog gumba smještenog u zaglavlju dokumenta i poštuje niz parametara postavljenih unaprijed u otpremnicu (za pojedinosti pogledajte isti postupak: [Zaduženje skladišta Primkom](/docs/purchase/purchase-delivery-note/procedures/load-delivery-notes-on-warehouse) ).
 
 Rezultat se može pregledati u odjelu Logistika > [Registracije](/docs/logistics/warehouse/stock-records/records) ili u postupku [Zaduženje skladišta Primkom](/docs/purchase/purchase-delivery-note/procedures/load-delivery-notes-on-warehouse).
 
-#### Izvršavanje narudžbe od dobavljača
+### *Izvršavanje narudžbe od dobavljača*
 
 U zaglavlju dostavnica, pritiskom na gumb **Izvršavanje od narudžbe** otvorit će se obrazac gdje je moguće filtrirati narudžbe dobavljača koje se odnose na dobavljača dokumenta.
 
@@ -130,7 +151,7 @@ Da biste koristili ovu proceduru, moraju se zadovoljiti određeni uvjeti:
 
 Zatim će trebati postaviti vrstu otpremnica koju želite stvoriti u zaglavlju nove otpremnice (koja se mora podudarati s onom postavljenom u tablici *Vrste narudžbi*) i *Dobavljača*. Nakon što se unesu ovi podaci, trebat će kliknuti na gumb *Izvršavanje narudžbi* kako bi otvorili obrazac za izvršavanje.
 
-*Postupak*:
+#### Postupak
 
 Filtri za dobavljača i valutu automatski će se prenijeti na temelju dobavljača odabranog u otpremnici.
 
@@ -148,7 +169,7 @@ U mreži rezultata, korisnik ima mogućnost:
 
 Da biste dovršili postupak, kliknite gumb *Prijenos*, koji će preuzeti sve podatke iz narudžbe i prenijeti ih u otpremnicu.
 
-*Posebni gumbi*:
+#### Posebni gumbi
 
 > **Traži**: omogućuje pretraživanje narudžbi dobavljača.  
 > **Prijenos**: prenosi podatke odabrane narudžbe u novu otpremnicu.  
@@ -159,7 +180,7 @@ Da biste dovršili postupak, kliknite gumb *Prijenos*, koji će preuzeti sve pod
 > **Označi sve**: odabire sve artikle s popisa.  
 > **Odznači sve**: poništava odabir svih artikala s popisa.  
 
-## 3. Artikli
+## **3. Artikli**
 
 Na ovom je kartici potrebno unijeti sve podatke o artiklima. 
 
@@ -222,7 +243,7 @@ Nedostatak ovih podataka može uzrokovati pogreške u knjiženju računa koje ć
 
 **Težine**: prikazane su ukupne neto i bruto težine redova članaka. Težine članaka u anagrafici pomnožene su količinom reda.
 
-*Posebni gumbi*
+#### Posebni gumbi
 
 > **Upravljanje pakiranjem**: otvora upravljanje pakiranjem koje će se koristiti u dokumentu kupnje. Gumb postaje aktivan kada je dokument spremljen, ali ne i knjižen. Klikom na ovaj gumb otvara se odgovarajući obrazac gdje se može unijeti količina, odabrati redak i izvršiti prijenos odabrane ambalaže u retke članaka pritiskom na gumb **Execute**. Na ovom se obrascu prikazuju članci koji su uneseni s ambalažom prirode i koji se nalaze u tablici Pakiranja za napraviti.  
 > **Ažuriraj Mjesto**: Koristi se za ažuriranje lokacije prema uzroku i prikazuje ga u retku. Gumb postaje aktivan ako se odabere barem dva članka i otvara pomoć lokacija gdje možete odabrati novu lokaciju za sve odabrane članke za ovu proceduru.  
@@ -255,7 +276,7 @@ Ova opcija omogućuje upravljanje varijacijama proizvoda na drugačiji način ne
 Na primjer, u svakom retku proizvoda moguće je unijeti ukupnu količinu; zatim, u istoj kartici, moguće je definirati različite količine za više varijacija odabranog proizvoda i to i za varijantu i atribut, tj. upravljanje veličinom/bojom.  
 Ova operacija je moguća samo ako sve varijante odabranog proizvoda imaju istu cijenu kao cijena proizvoda u standardnoj konfiguraciji.
 
-*Poseban gumb*
+#### Poseban gumb
 
 > **Otkaži**: omogućuje brisanje odabrane varijante.
 
@@ -310,7 +331,7 @@ Odjeljak prikazan u donjem desnom kutu pruža sažetak troškova koji doprinose 
 
 **Ukupno**: Osnovica + Porez.
 
-## 4. Sažeci
+## **4. Sažeci**
 
 U različitim sekcijama ove kartice prikazane su osnovne informacije o cijelom dokumentu i određeni posebni gumbi.
 
@@ -420,7 +441,7 @@ Detaljne deklaracije: referenca na izjavu o namjeri. PDV primijenjen na troškov
 
 **Ukupno**: *Osnovica + PDV*.
 
-## 5. Transport
+## **5. Transport**
 
 Ovo je odjeljak koji sadrži informacije o prijevozu artikala.
 

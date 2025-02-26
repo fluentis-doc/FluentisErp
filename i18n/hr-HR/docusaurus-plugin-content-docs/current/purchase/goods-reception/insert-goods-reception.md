@@ -10,7 +10,7 @@ Putanje za stvaranje novog **Primanja Robe**:
 - ili putem gumba **Novo** koji se nalazi u obrascu
 
 
-## Obavezni podaci
+## **1. Obavezni podaci**
 
 **Dobavljač**, koristeći [pomoćno polje](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) ili [ručno](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) unošenje podataka.
 
@@ -18,7 +18,7 @@ Putanje za stvaranje novog **Primanja Robe**:
 **Broj**: automatski se predlaže prema vrsti, ali se može ručno izmijeniti uvijek poštujući pravilo napretka između datuma i broja;   
 **Datum prijema**: automatski se predlaže trenutni datum, ali se može ručno izmijeniti uvijek poštujući pravilo napretka između datuma i broja.
 
-## Artikli
+## **1. Artikli**
 
 **Vrsta linije** pruža mogućnost odabira različitih artikala iz padajućeg izbornika.
 
@@ -52,30 +52,44 @@ Nakon unosa artikla, njegov će *Opis* automatski biti preuzet iz šifarnika. Ak
 **Referenca narudžbe**: ako je red stvoren isporukom reda narudžbe dobavljača, naveden je broj isporučene narudžbe;     
 **Lokacija**: ako uzrok ima zadanu lokaciju, predložena je ta lokacija, inače se može [ručno](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) unijeti ako se skladište upravlja lokacijama.
 
-*Posebni gumbi*:
+#### Posebni gumbi 
 
 > **Izvršavanje iz narudžbe**: omogućuje stvaranje primanja robe izvršavanjem redova iz narudžbe dobavljača pomoću postupka [Izvršavanje iz narudžbi dobavljača](/docs/purchase/purchase-delivery-note/insert-purchase-delivery-note/purchase-delivery-note).
 
 > **Upravljanje pakiranjem**: omogućuje otvaranje upravljanja pakiranjem koje će se koristiti u kupovinskom dokumentu. Gumb postaje aktivan ako je dokument spremljen, ali ne i učitan. Klikom na ovaj gumb otvara se odgovarajući obrazac gdje se može unijeti količina, odabrati redak i izvršiti prijenos odabranog pakiranja u redove artikala pritiskom na gumb **Izvrši**. Na ovom obrascu prikazani su artikli koji su uneseni kao Vrsta: Pakiranje i koji se nalaze u tablici **Pakiranja za napraviti**.
 
-### Lotovi
+### 2.1 Lotovi
 
 Prikazani su lotovi koji se moraju uvesti u skladište i koji su povezani s artiklom u Šifarnik artikala > kartica [Lotovi i serijski brojevi](/docs/erp-home/registers/items/create-new-items/item-registry/lots-and-serial-number) ili se mogu ručno unijeti.
 
-*Poseban gumb*:
+#### Poseban gumb 
 
 > **Izbriši lot**: omogućuje brisanje odabranog reda lota.
 
-### Analitika
+### 2.2 Dati articolo
+
+All'interno di questo tab vengono riportate/inserite ulteriori informazioni relative all'articolo.
+
+- **Articolo**: visualizza l'articolo selezionato nella griglia superiore.   
+
+- **Variante**: in questo campo è possibile selezionare una variante dell'articolo tra quelle precedentemente codificate nel tab [Varianti](/docs/erp-home/registers/items/create-new-items/item-registry/variants) dell'anagrafica articolo. Se nel listino sono stati inseriti prezzi e/o sconti diversi per ciascuna variante essi saranno aggiornati quando si sleziona una variante diversa dell'articolo.   
+
+- **Magazzino e causale**: permette di inserire il magazzino e la causale di riferimento da utilizzare per il carico degli articoli relativi in magazzino. Se la riga articolo è stata ripresa a un ordine di acquisto, saranno proposti il magazzino e la causale inseriti nell'ordine, altrimenti possono essere inseriti manualmente per ciascuna riga articolo. Se i campi non sono valorizzati, al momento del carico del ricevimento merci saranno utilizzati quelli inseriti nei parameti ordini fornitori, tab [Carico](/docs/configurations/parameters/purchase/purchase-orders-parameters#carico). 
+
+- **Progetto**: rappresenta il progetto da associare al documento. Se nella testata del documento è stato inserito un progetto, esso sarà riportato su tutte le righe articolo; in alternativa può essere selezionato tramite l'apposito help progetti.
+
+- **Unità di misura/Quantità alternativa**: se nell'[anagrafica dell'articolo](/docs/erp-home/registers/items/create-new-items/item-registry/alternative-um) è stata codificata un'unità di misura alternativa con il flag *Predefinito* e nei Parametri ordini fornitore è stato attivato il flag *Proposta automatica U.M. alternativa*, questi valori saranno proposti in automatico al momento dell'inserimento dell'articolo.
+
+### 2.3 Analitika
 
 **Izbriši profitne centre**: omogućuje brisanje odabranog reda centra dobiti.
 
-*Posebni gumbi*:
+#### Posebni gumbi
 
 > **Izbriši centar troška**: omogućuje brisanje odabranog reda centra troškova;   
 > **Izbriši profitne centre**: omogućuje brisanje odabranog reda centra dobiti.
 
 
-### Extra data
+### 2.4 Extra data
 
 Prikazuje popis **Dodatnih podataka** povezanih s artiklom, s mogućnošću dodavanja novih dodatnih podataka koji su korisni samo za taj dokument, uz mogućnost odabira, putem odgovarajuće oznake, koji dodatni podaci će se ispisati.
