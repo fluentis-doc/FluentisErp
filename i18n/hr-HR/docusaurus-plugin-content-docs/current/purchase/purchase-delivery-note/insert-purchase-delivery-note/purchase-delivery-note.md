@@ -1,5 +1,5 @@
 ---
-title: Unos Otpremnice dobavljača – fiksni dio
+title: Unos Otpremnice dobavljača
 sidebar_position: 1
 ---
 
