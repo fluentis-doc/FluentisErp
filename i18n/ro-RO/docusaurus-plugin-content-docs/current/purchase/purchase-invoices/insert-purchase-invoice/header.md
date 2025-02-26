@@ -56,7 +56,7 @@ RIBBON BAR: reprezinta meniul cu butoanele de executie, pentru fiecare operatie 
 | Functie | Functionalitate |
 | --- | --- |
 | Salvează | Permite salvarea facturii de achizitie. |
-|  [Creare din ordin furnizor](/docs/purchase/purchase-delivery-note/insert-purchase-delivery-note/header-procedures/execution-from-purchase-order)  | Procedura ofera posibilitatea crearii unui A.E dintr-un Ordin Furnizor.  |
+|  [Creare din ordin furnizor](/docs/purchase/purchase-delivery-note/insert-purchase-delivery-note/purchase-delivery-note)  | Procedura ofera posibilitatea crearii unui A.E dintr-un Ordin Furnizor.  |
 | Deschide registru | Permite vizualizarea  datelor din registrul partener. |
 | Sterge plati | Permite stergerea platii inserate in antet; plata este preluata din Registrul furnizorului. |
 

@@ -54,7 +54,7 @@ RIBBON BAR: it represents the Form menu, that is the area in which it is possibl
 | Function | Meaning |
 | --- | --- |
 | Save | Button to save the purchase invoices. |
-|  [Execute from Purchase Order](/docs/purchase/purchase-delivery-note/insert-purchase-delivery-note/header-procedures/execution-from-purchase-order)  | It refers to the procedure to create an invoice from purchase order. |
+|  [Execute from Purchase Order](/docs/purchase/purchase-delivery-note/insert-purchase-delivery-note/purchase-delivery-note)  | It refers to the procedure to create an invoice from purchase order. |
 | Open Register | It enables the user to view data of register. |
 | Delete Payments | It enables the user to delete payments inserted on header; payments are taken by register. |
 

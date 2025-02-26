@@ -9,7 +9,7 @@ sidebar_position: 1
 
 - Acquisti > DDT di acquisto > Crea DDT di acquisto 
 
-- oppure tramite il pulsante ![](/img/sr-Latn-CS/purchase/purchase-delivery-note/insert-purchase-delivery-note/insert-purchase-delivery-note/image01.png) che si trova nella form  [Ricerca DDT di acquisto](/docs/purchase/purchase-delivery-note/search-delivery-note).
+- oppure tramite il pulsante ![](/img/sr-Latn-CS/purchase/purchase-delivery-note/insert-purchase-delivery-note/insert-purchase-delivery-note/image01.png) che si trova nella form  [Ricerca DDT di acquisto](/docs/purchase/purchase-delivery-note/insert-purchase-delivery-note/search-delivery-note).
 
 
 

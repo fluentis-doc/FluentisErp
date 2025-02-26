@@ -47,7 +47,7 @@ Aceeași procedură poate fi utilizată pentru crearea comenzilor furnizor din c
 Procedura de execuție din comandă în Document de Transport este disponibilă în două moduri:
 
 - Din Meniul [Proceduri](/docs/purchase/purchase-delivery-note/procedures/create-delivery-notes-from-orders): mergând pe *Achiziții > DDT de Achiziție > Proceduri > Execuție din comenzi*.
-- Execuția din [Antet](/docs/purchase/purchase-delivery-note/insert-purchase-delivery-note/header) DDT: utilizând butonul *Execuție din Comandă* pentru a deschide o fereastră de selecție a comenzilor confirmate ale furnizorului care urmează să fie transferate în DDT.
+- Execuția din [Antet](/docs/purchase/purchase-delivery-note/insert-purchase-delivery-note/purchase-delivery-note) DDT: utilizând butonul *Execuție din Comandă* pentru a deschide o fereastră de selecție a comenzilor confirmate ale furnizorului care urmează să fie transferate în DDT.
 
 Această procedură permite transformarea uneia sau mai multor comenzi de achiziție în unul sau mai multe DDT. Înainte de a iniția procedura, este necesar să configurați tipul de DDT dorit în tabelul [Tipuri de comandă furnizor](/docs/configurations/tables/purchase/purchase-orders-type/). Procedura automată permite crearea de DDT doar dacă comanda este imprimată și confirmată.
 

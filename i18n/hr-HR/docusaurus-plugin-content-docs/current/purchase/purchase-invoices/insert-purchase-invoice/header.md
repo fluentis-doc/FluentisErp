@@ -58,7 +58,7 @@ Ovo udruživanje funkcionira samo na razini zaglavlja članka.
 
 *Posebni gumbi*
 
-> [Izuzimanje iz narudžbe](/docs/purchase/purchase-delivery-note/insert-purchase-delivery-note/header-procedures/execution-from-purchase-order): poziva postupak za stvaranje fakture iz narudžbenice dobavljača. Aktivira se unosom dobavljača i vrste fakture. Narudžbenica koja će se izvršiti mora imati postavljenu zastavu *Tiskano* i *Datum potvrde naloga*.  
+> [Izuzimanje iz narudžbe](/docs/purchase/purchase-delivery-note/insert-purchase-delivery-note/purchase-delivery-note): poziva postupak za stvaranje fakture iz narudžbenice dobavljača. Aktivira se unosom dobavljača i vrste fakture. Narudžbenica koja će se izvršiti mora imati postavljenu zastavu *Tiskano* i *Datum potvrde naloga*.  
 > [Automatsko punjenje u skladištu](/docs/purchase/purchase-invoices/procedures/purchase-invoices-load-on-warehouse): koristi se za automatsko punjenje skladišta odabranim artiklima. Ovo polje bit će uređivano samo jednom kada se aktivira polje *Provjereno* i unese *broj* dokumenta.
 
 ### Plaćanja

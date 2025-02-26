@@ -3,7 +3,7 @@ title: Nuovo DDT di acquisto
 sidebar_position: 1
 ---
 
-La form *Crea DDT di acquisto* si apre tramite il percorso **Acquisti > DDT di acquisto > Nuova DDT** oppure tramite il pulsante *Nuovo* che si trova nella form [Ricerca DDT di acquisto](/docs/purchase/purchase-delivery-note/search-delivery-note).
+La form *Crea DDT di acquisto* si apre tramite il percorso **Acquisti > DDT di acquisto > Nuova DDT** oppure tramite il pulsante *Nuovo* che si trova nella form [Ricerca DDT di acquisto](/docs/purchase/purchase-delivery-note/insert-purchase-delivery-note/search-delivery-note).
 
 ## *Come creare un DDT di acquisto*
 
@@ -175,8 +175,8 @@ Per completare la procedura bisognerà poi cliccare sul pulsante *Evasione*, che
 Nel caso di più evasioni parziali per una determinata riga articolo all'interno dello stesso DDT è possibile scegliere se sommare le quantità in un'unica riga nel DDT oppure se mantenere righe distinte, rispettivamente disattivando o attivando il flag **Evasione quantità articolo non sommata** nella tabella dei [Tipi DDT di acquisto](/docs/configurations/tables/purchase/purchase-delivery-notes-type/).
 :::
 
-> [Evasione da ordine](/docs/purchase/purchase-delivery-note/insert-purchase-delivery-note/header-procedures/execution-from-purchase-order): richiama la procedura per creare un DDT da un ordine fornitore. Si attiva con l'inserimento del fornitore e del tipo DDT. L'ordine da evadere dovrà aver impostato il flag *Stampato* e la *Data conferma ordine*.  
-> [Carico automatico nel magazzino](/docs/purchase/purchase-delivery-note/insert-purchase-delivery-note/header-procedures/automatic-loading-on-warehouse): utilizzato per caricare automaticamente il magazzino con gli articoli selezionati. Questo campo sarà editabile solo una volta attivato il campo *Controllato* e inserito il *Numero* documento.
+> [Evasione da ordine](/docs/purchase/purchase-delivery-note/insert-purchase-delivery-note/purchase-delivery-note): richiama la procedura per creare un DDT da un ordine fornitore. Si attiva con l'inserimento del fornitore e del tipo DDT. L'ordine da evadere dovrà aver impostato il flag *Stampato* e la *Data conferma ordine*.  
+> [Carico automatico nel magazzino](/docs/purchase/purchase-delivery-note/insert-purchase-delivery-note/purchase-delivery-note-procedures/automatic-loading-on-warehouse): utilizzato per caricare automaticamente il magazzino con gli articoli selezionati. Questo campo sarà editabile solo una volta attivato il campo *Controllato* e inserito il *Numero* documento.
 
 ## 3. Articoli
 

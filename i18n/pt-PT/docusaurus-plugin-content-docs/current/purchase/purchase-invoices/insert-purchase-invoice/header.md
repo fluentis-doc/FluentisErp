@@ -52,7 +52,7 @@ RIBBON BAR: representa o menu do módulo em questão, ou seja, a área na qual 
 | RibbonFunction | RibbonMeaning |
 | --- | --- |
 | Salvar | Botão para salvar as faturas de compra. |
-|  [Execução da ordem fornecedor](/docs/purchase/purchase-delivery-note/insert-purchase-delivery-note/header-procedures/execution-from-purchase-order)  | Refere-se ao procedimento para criar uma fatura duma ordem fornecedor. |
+|  [Execução da ordem fornecedor](/docs/purchase/purchase-delivery-note/insert-purchase-delivery-note/purchase-delivery-note)  | Refere-se ao procedimento para criar uma fatura duma ordem fornecedor. |
 | Abrir o registro | Permite visualizar os dados do registro. |
 | Cancelar os pagamentos | Permite cancelar os pagamentos inseridos no cabeçalho; os pagamentos são retomados pelo registro. |
 

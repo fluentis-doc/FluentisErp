@@ -54,7 +54,7 @@ RIBBON BAR: il représente le menu de la forme en objet, à savoir la zone dan
 | RibbonFunction | RibbonMeaning |
 | --- | --- |
 | Enregistrer | Bouton pour enregistrer les factures d'achat. |
-|  [Exécution par la commande fournisseur](/docs/purchase/purchase-delivery-note/insert-purchase-delivery-note/header-procedures/execution-from-purchase-order)  | Se réfère à la procédure pour créer une facture par une commande fournisseur. |
+|  [Exécution par la commande fournisseur](/docs/purchase/purchase-delivery-note/insert-purchase-delivery-note/purchase-delivery-note)  | Se réfère à la procédure pour créer une facture par une commande fournisseur. |
 | Ouvrir le registre | Il permet de visualiser les données du registre. |
 | Supprimer les paiements | Il permet de supprimer les paiements insérés dans l'en-tête; les paiements sont reprise par le registre. |
 

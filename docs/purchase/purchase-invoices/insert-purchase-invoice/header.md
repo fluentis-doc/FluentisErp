@@ -53,7 +53,7 @@ Nel caso in cui l'ordine viene completato con la procedura [Evasione da ordine](
 
 *Pulsanti specifici*
 
-> [Evasione da ordini](/docs/purchase/purchase-delivery-note/insert-purchase-delivery-note/header-procedures/execution-from-purchase-order): richiama la procedura per creare una fattura da un ordine fornitore. Si attiva con l'inserimento del fornitore e del tipo fattura. L'ordine da evadere dovrà aver impostato il flag *Stampato* e la *Data conferma ordine* valorizzata.    
+> [Evasione da ordini](/docs/purchase/purchase-delivery-note/insert-purchase-delivery-note/purchase-delivery-note): richiama la procedura per creare una fattura da un ordine fornitore. Si attiva con l'inserimento del fornitore e del tipo fattura. L'ordine da evadere dovrà aver impostato il flag *Stampato* e la *Data conferma ordine* valorizzata.    
 > [Evasione DDT](/docs/purchase/purchase-invoices/insert-purchase-invoice/header-procedures/execution-from-purchase-delivery-note): richiama la procedura per creare una fattura da un DDT. Si attiva con l'inserimento del fornitore e del tipo fattura. Il DDT da evadere dovrà aver impostato il flag *Controllata*.    
 > [Carico automatico nel magazzino](/docs/purchase/purchase-invoices/procedures/purchase-invoices-load-on-warehouse): utilizzato per caricare automaticamente il magazzino con gli articoli selezionati. Questo campo sarà editabile solo una volta attivato il campo *Controllata* e inserito il *Numero documento*.
 

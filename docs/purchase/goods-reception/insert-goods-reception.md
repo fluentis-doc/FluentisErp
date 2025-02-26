@@ -46,7 +46,7 @@ Se si parte direttamente con l'inserimento dell'articolo, la sua classe, il codi
 
 *Pulsanti specifici*:
 
-> **Evasione da ordine**: permette di di creare un ricevimento merci evadendo le righe di un ordine fornitore con la procedura [Evasione da ordini fornitori](/docs/purchase/purchase-delivery-note/insert-purchase-delivery-note/header-procedures/execution-from-purchase-order).   
+> **Evasione da ordine**: permette di di creare un ricevimento merci evadendo le righe di un ordine fornitore con la procedura [Evasione da ordini fornitori](/docs/purchase/purchase-delivery-note/insert-purchase-delivery-note/purchase-delivery-note).   
 >
 > **Gestione imballi**: permette l'apertura della gestione degli imballi a rendere usati nel documento di acquisto. Il pulsante diventa attivo se il documento è salvato, ma non caricato.   
 > Con clic su questo pulsante si apre la form corrispondente dove inserire la quantità, selezionare la riga ed eseguire il trasferimento dell'imballo selezionato nelle righe articolo cliccando sul pulsante *Execute*. In questa form vengono riportati gli articoli che sono stati inseriti con natura *Imballo* e che sono presenti nella tabella degli [Imballi a rendere](/docs/configurations/tables/logistics/package-to-be-returned).
