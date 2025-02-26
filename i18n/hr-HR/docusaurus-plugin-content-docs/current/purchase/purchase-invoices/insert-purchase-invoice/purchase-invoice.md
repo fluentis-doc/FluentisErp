@@ -3,7 +3,7 @@ title: Kreiraj ulazne račune - gornji odjeljak
 sidebar_position: 1
 ---
 
-Ovaj se obrazac otvara putem **Nabava > Ulazni računi > Kreiranje ulaznih računa** putem gumba **Novi** koji se nalazi u obrascu [Traži ulazne račune](/docs/purchase/purchase-invoices/search-purchase-invoices).
+Ovaj se obrazac otvara putem **Nabava > Ulazni računi > Kreiranje ulaznih računa** putem gumba **Novi** koji se nalazi u obrascu [Traži ulazne račune](/docs/purchase/purchase-invoices/insert-purchase-invoice/search-purchase-invoices).
 
 U obrascu za unos automatski se predlaže trenutni **Datum** ali ga korisnik može promijeniti.
 
@@ -66,7 +66,7 @@ Ovo udruživanje funkcionira samo na razini zaglavlja članka.
 
 **Status dokumenta**: odnosi se na tablicu stanja dokumenta; podatak mora unijeti korisnik i može se koristiti postupcima replikacije instaliranim u upravljanju poslovnicom s prodajnim mjestima.
 
-**Referenca**: nakon što stvori [storno](/docs/purchase/purchase-invoices/search-purchase-invoices) fakture, korisnik mora povezati dvije fakture unoseći *broj*, *datum* i *vrstu* izvorne fakture;
+**Referenca**: nakon što stvori [storno](/docs/purchase/purchase-invoices/insert-purchase-invoice/search-purchase-invoices) fakture, korisnik mora povezati dvije fakture unoseći *broj*, *datum* i *vrstu* izvorne fakture;
 
 **Račun potraživanja**: navodi broj, datum i protokol knjiženja koji proizlazi iz knjiženja fakture.
 
@@ -146,11 +146,11 @@ Za dobavljača i sve ostale filtre unesene u odjeljku *Filtriraj*, u donjoj mre�
 Postupak preuzima sve podatke prisutne u narudžbi, a kao posljedica primijenit će se trenutni uvjeti kupnje prisutni u narudžbi, iako su se možda u međuvremenu promijenili.
 :::
 
-![](/img/it-it/purchase/purchase-invoices/insert-purchase-invoice/header-procedures/header-procedures/image10.png)
+![](/img/it-it/purchase/purchase-invoices/insert-purchase-invoice/purchase-invoice-procedures/header-procedures/image10.png)
 
 Koristite gumbe (**2**) za proširenje ![](/img/neutral/common/minus.png) / skupljanje ![](/img/neutral/common/plus.png) željenih narudžbi.
 
-Koristite oznake (**3**) za označavanje  ![](/img/neutral/common/check.png) / odznačavanje ![](/img/it-it/purchase/purchase-invoices/insert-purchase-invoice/header-procedures/header-procedures/image14.png) pojedinačnih stavki ili cijele narudžbe.
+Koristite oznake (**3**) za označavanje  ![](/img/neutral/common/check.png) / odznačavanje ![](/img/it-it/purchase/purchase-invoices/insert-purchase-invoice/purchase-invoice-procedures/header-procedures/image14.png) pojedinačnih stavki ili cijele narudžbe.
 
 Izvršite ispunjenje pomoću gumba **Prijenos**.
 

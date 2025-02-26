@@ -3,7 +3,7 @@ title: Crea Fattura - sezione superiore
 sidebar_position: 1
 ---
 
-La form si apre tramite il percorso **Acquisti > Fatture di acquisto > Nuova fattura** oppure tramite il pulsante **Nuova** che si trova nella form [Ricerca fatture di acquisto](/docs/purchase/purchase-invoices/search-purchase-invoices).
+La form si apre tramite il percorso **Acquisti > Fatture di acquisto > Nuova fattura** oppure tramite il pulsante **Nuova** che si trova nella form [Ricerca fatture di acquisto](/docs/purchase/purchase-invoices/insert-purchase-invoice/search-purchase-invoices).
 
 *Dati obbligatori*:
 
@@ -41,7 +41,7 @@ Tutti questi campi possono essere cancellati oppure modificati manualmente dall'
 
     > **Controllata**: il flag attivo permette la contabilizzazione della fattura;  
     > **Contabilizzata**: il flag è automaticamente attivato quando la fattura supporta la procedura di [Contabilizzazione](/docs/purchase/purchase-invoices/accounting/purchase-invoices-accounting);  
-    > **Caricata**: il flag diventa attivo quando la fattura supporta la procedura di [Carico nel magazzino](/docs/purchase/purchase-invoices/insert-purchase-invoice/header-procedures/automatic-loading-on-warehouse). Nel caso di fattura creata da documento di trasporto già caricato, è presente il parametro generale VE-PurchaseInvoices_VerifyLoadStatusDDT che blocca il flag Caricata anche nella fattura.
+    > **Caricata**: il flag diventa attivo quando la fattura supporta la procedura di [Carico nel magazzino](/docs/purchase/purchase-invoices/insert-purchase-invoice/purchase-invoice-procedures/automatic-loading-on-warehouse). Nel caso di fattura creata da documento di trasporto già caricato, è presente il parametro generale VE-PurchaseInvoices_VerifyLoadStatusDDT che blocca il flag Caricata anche nella fattura.
     > **Storicizzata**: attivando questo flag il documento non sarà più visibile per la procedure successive.   
     > **Annullata**: il flag attivo permette di annullare la fattura.
 
@@ -57,7 +57,7 @@ I flag possono essere tolti mediante le procedure di ripristino operazione.
 
 - **Nostro/Vostro riferimento**: in questi campi solitamente viene indicato un riferimento interno ed un riferimento fornitore per il documento.    
 Se presente, viene ripreso dall'anagrafica fornitore altrimenti può essere inserito manualmente.
-Nel caso in cui l'ordine viene completato con la procedura [Evasione da ordine](/docs/purchase/purchase-invoices/insert-purchase-invoice/header-procedures/execution-from-purchase-order) o mediante [Valorizzazione DDT di acquisto](/docs/purchase/purchase-invoices/procedures/purchase-delivery-note-valorization), nei campi *Annotazioni fornitore* e *Nostro/Vostro riferimento* viene proposta l'informazione presente nei campi omonimi del documento di partenza (questo trasferimento è valido solo nel caso di fattura creata tramite il prelievo dei dati da un solo documento di partenza).
+Nel caso in cui l'ordine viene completato con la procedura [Evasione da ordine](/docs/purchase/purchase-invoices/insert-purchase-invoice/purchase-invoice-procedures/execution-from-purchase-order) o mediante [Valorizzazione DDT di acquisto](/docs/purchase/purchase-invoices/procedures/purchase-delivery-note-valorization), nei campi *Annotazioni fornitore* e *Nostro/Vostro riferimento* viene proposta l'informazione presente nei campi omonimi del documento di partenza (questo trasferimento è valido solo nel caso di fattura creata tramite il prelievo dei dati da un solo documento di partenza).
 
 - **Note iniziali**: nel caso di evasione verranno riproposte le informazioni presenti nell'ordine. In alternativa, si possono selezionare le note che sono state inserite in precedenza nella tabella omonima che si trova nel percorso *Configurazione > Utilità > Gestione note codificate*; per questo l'utente deve effettuare doppio click sul campo per aprire l'Help e selezionare i dati; altrimenti può inserirle manualmente.
 
@@ -65,14 +65,14 @@ Nel caso in cui l'ordine viene completato con la procedura [Evasione da ordine](
 
 - **CUP/CIG**: se nelle informazioni fiscali dell'[anagrafica fornitore](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/fiscal-information) esso è abilitato alla gestione di CIG e CUP, sarà possibile compilare questi dati nel documento. I campi sono posizionati sottola voce *Annotazioni fornitore*.
 
-- **Rif. FA**: posizionato sotto la voce *Nazione*. Viene usato dopo la creazione dello [storno](/docs/purchase/purchase-invoices/search-purchase-invoices) di una fattura per collegare manualmente le due fatture inserendo nella fattura di storno *numero*, *tipo* e *data* della fattura di origine.
+- **Rif. FA**: posizionato sotto la voce *Nazione*. Viene usato dopo la creazione dello [storno](/docs/purchase/purchase-invoices/insert-purchase-invoice/search-purchase-invoices) di una fattura per collegare manualmente le due fatture inserendo nella fattura di storno *numero*, *tipo* e *data* della fattura di origine.
 
 - **Reg. cont.**: osizionato sotto la voce *Nazione*. Riporta numero, data e protocollo della registrazione contabile derivata dalla contabilizzazione della fattura. 
 
 *Pulsanti specifici*
 
 > [Evasione da ordini](/docs/purchase/purchase-delivery-note/insert-purchase-delivery-note/purchase-delivery-note): richiama la procedura per creare una fattura da un ordine fornitore. Si attiva con l'inserimento del fornitore e del tipo fattura. L'ordine da evadere dovrà aver impostato il flag *Stampato* e la *Data conferma ordine* valorizzata.    
-> [Evasione DDT](/docs/purchase/purchase-invoices/insert-purchase-invoice/header-procedures/execution-from-purchase-delivery-note): richiama la procedura per creare una fattura da un DDT. Si attiva con l'inserimento del fornitore e del tipo fattura. Il DDT da evadere dovrà aver impostato il flag *Controllata*.    
+> [Evasione DDT](/docs/purchase/purchase-invoices/insert-purchase-invoice/purchase-invoice-procedures/execution-from-purchase-delivery-note): richiama la procedura per creare una fattura da un DDT. Si attiva con l'inserimento del fornitore e del tipo fattura. Il DDT da evadere dovrà aver impostato il flag *Controllata*.    
 > [Carico automatico nel magazzino](/docs/purchase/purchase-invoices/procedures/purchase-invoices-load-on-warehouse): utilizzato per caricare automaticamente il magazzino con gli articoli selezionati. Questo campo sarà editabile solo una volta attivato il campo *Controllata* e inserito il *Numero documento*.
 
 ## Pagamenti

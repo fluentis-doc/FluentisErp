@@ -68,7 +68,7 @@ L'evasione da ordine a DDT è completabile anche dalla testata della fattura ste
 La procedura di evasione da DDT a fattura può essere avviata in due modalità:
 
 - Dal Menù [Procedure](/docs/purchase/purchase-invoices/procedures/purchase-delivery-note-valorization): andando su *Acquisti > Fatture di acquisto > Procedure > Valorizzazione DDT di acquisto*. 
-- Dalla [Testata](/docs/purchase/purchase-invoices/insert-purchase-invoice/header) della Fattura di Vendita: utilizzando il pulsante *Evasione DDT* nella testata della fattura.
+- Dalla [Testata](/docs/purchase/purchase-invoices/insert-purchase-invoice/purchase-invoice) della Fattura di Vendita: utilizzando il pulsante *Evasione DDT* nella testata della fattura.
 
 Questa procedura permette di creare una o più fatture a partire da uno o più DDT. La procedura si compone di tre tab principali:
 
