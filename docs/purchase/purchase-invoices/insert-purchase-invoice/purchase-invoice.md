@@ -367,7 +367,7 @@ il pulsante **Crea nuovo listino con nuova validità** invece, aprirà un pop-up
 Quando si crea/aggiorna un listino mediante questa procedura vengono riportati nel listino solo gli sconti che sono stati inseriti manualmente nella fattura. 
 :::
 
-## Sconti/Listini
+### 3.3 Sconti/Listini
 
 - **Listino**: viene proposto il listino dal quale è stato ripreso il prezzo dell'articolo, con la data inizio/fine validità e con le condizioni particolari (ad es. **Tipo scaglione** di sconto) assegnate all'articolo nel listino.
 
@@ -375,7 +375,7 @@ Quando si crea/aggiorna un listino mediante questa procedura vengono riportati n
 
 - **Sconti**: vengono proposti tutti gli sconti associati all'articolo, ognuno con la propria base di calcolo e di assegnazione.        
 
-## Dati
+### 3.4 Dati articolo 
 
 All'interno di questo tab vengono riportate/inserite ulteriori informazioni relative all'articolo.
 
@@ -393,7 +393,7 @@ Questo flag assieme ai campi *Unità di misura alternativa* e *Quantità alterna
 - **Riferimento ordine**: nel caso in cui la fattura sia generata da un ordine, il riferimento all'ordine sarà riportato automaticamente in questo campo.
 - **Dettaglio dichiarazioni**: viene riportata la [Dichiarazione d'intento](/docs/finance-area/declarations/declarations/intent-declaration) usata per proporre l'iva dell'articolo; dalla combo box è possibile cambiare la dichiarazione d'intento di riferimento, se presenti più dichiarazioni valide.
 
-## Lotti e Serial number
+### 3.5 Lotti e Serial number
 
 Nelle due griglie possono essere inseriti i lotti e numeri seriali che devono essere caricati nel magazzino.   
 Se l'articolo non prevede la gestione dei [Lotti e Serial Number](/docs/erp-home/registers/items/create-new-items/item-registry/lots-and-serial-number), questo tab sarà disabilitato.
@@ -403,26 +403,26 @@ Se nei [Parametri fatture di acquisto](/docs/configurations/parameters/purchase/
 :::
 
 
-## Analitica
+### 3.6 Analitica
 
 import TabAnalytic from './../../../import/sections/tab-analytic.md'
 
 <TabAnalytic />
 
 
-## Extra data
+### 3.7 Extra data
 
 import DocItemExtraData from './../../../import/sections/doc-item-extradata.md'
 
 <DocItemExtraData />
 
-## Documenti allegati
+### 3.8 Documenti allegati
 
 import DocAttachDocument from './../../../import/sections/doc-attach-document.md'
 
 <DocAttachDocument />
 
-## Materiale Conai per l'articolo
+### 3.9 Materiale Conai per l'articolo
 
 Questo tab è visibile se per la società attiva è stata attivata la gestione Conai.
 
@@ -432,12 +432,12 @@ Al salvataggio del documento, o alla pressione del pulsante **Ricalcolo Conai**,
 Per maggiori informazioni sulla [Gestione Conai](/docs/purchase/purchase-flow/conai) in Fluentis vedere la pagina allegata.
 
 
-## Costi da ricevere 
+### 3.10 Costi da ricevere 
 
 I tab **Costi da ricevere** e **Spese** non sono gestiti nella versione corrente di Fluentis.
 
 
-## Sezione valori
+### 3.11 Sezione valori
 
 La sezione in basso, a destra, presenta il riassunto dei costi che concorrono alla formazione del prezzo finale di ciascun articolo selezionato nella griglia degli articoli. I campi presenti sono: 
 
@@ -449,20 +449,17 @@ La sezione in basso, a destra, presenta il riassunto dei costi che concorrono al
 - **Imposta**: Importo * aliquota IVA dell'articolo; 
 - **Totale**: Importo + Imposta.
 
-4. ---
-title: Riepiloghi
-sidebar_position: 5
----
+## 4. Riepiloghi
 
 Nelle diverse sezioni di questo tab sono presentate le informazioni principali dell'intero documento e alcuni pulsanti specifici.
 
-## Sconti finali
+### 4.1 Sconti finali
 
 import SummariesFinalDiscount from './../../../import/sections/summaries-final-discount.md'
 
 <SummariesFinalDiscount />
 
-## Spese
+### 4.2 Spese
 
 Sono proposte le spese inserite nell'anagrafica contatto, nel tab *Spese/Sconti*. In questa griglia eventuali spese devono essere inserite in positivo, eventuali sconti in negativo.      
 
@@ -480,12 +477,11 @@ Se il *Tipo spesa* inserito ha il flag [ripartito](/docs/configurations/tables/g
 2. Se tutti gli articoli hanno prezzo pari a 0: la spesa verrà distribuita equamente tra tutte le righe articolo e, a partire da questa distribuzione, sarà calcolato l'*importo movimento/importo gestionale* nella registrazione, tenendo conto delle quantità di ciascun articolo.   
 :::
 
-
-## Riepiloghi IVA
+### 4.3 Riepiloghi IVA
 
 Viene proposto il riepilogo IVA del documento, per ogni codice IVA.
 
-## Riepilogo scadenze
+### 4.4 Riepilogo scadenze
 
 Rappresenta il riepilogo delle scadenze del documento, per ogni *tipo* e *soluzione* di pagamento.  
 - **Numero**: valore progressivo della riga.  
@@ -504,12 +500,12 @@ Rappresenta il riepilogo delle scadenze del documento, per ogni *tipo* e *soluzi
 - **Valore sconto**: Valore dello sconto finanziario su incasso.
 
 
-## Altri campi
+### 4.5 Altri campi
 
 **Note finali**: è un campo libero che può essere compilato dall'utente anche con l'ausilio dell'*Help note codificate*.
 
 
-## Totali documento
+### 4.6 Totali documento
 
 import SummariesDocumentTotal from './../../../import/sections/summaries-document-total.md'
 

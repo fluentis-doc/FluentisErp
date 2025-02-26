@@ -148,8 +148,6 @@ Za dobavljača i sve ostale filtre unesene u odjeljku *Filtriraj*, u donjoj mre�
 Postupak preuzima sve podatke prisutne u narudžbi, a kao posljedica primijenit će se trenutni uvjeti kupnje prisutni u narudžbi, iako su se možda u međuvremenu promijenili.
 :::
 
-![](/img/it-it/purchase/purchase-invoices/insert-purchase-invoice/purchase-invoice)
-
 Koristite gumbe (**2**) za proširenje ![](/img/neutral/common/minus.png) / skupljanje ![](/img/neutral/common/plus.png) željenih narudžbi.
 
 Koristite oznake (**3**) za označavanje  ![](/img/neutral/common/check.png) / odznačavanje ![](/img/it-it/purchase/purchase-invoices/insert-purchase-invoice/purchase-invoice/header-procedures/image14.png) pojedinačnih stavki ili cijele narudžbe.
@@ -230,7 +228,7 @@ Moguće je da nedostatak te informacije uzrokuje pogreške u knjiženju računa 
 Klikom na padajući izbornik pored gumba, bit će moguće stvoriti novi cjenik ako još nije stvoren.
 
 
-## Popusti/Cjenici  
+### 3.3 Popusti/Cjenici  
 
 **Cjenik**: nudi se cjenik iz kojeg je preuzet artikl, s datumom početka/završetka važenja te s posebnim uvjetima (npr. raspon popusta) dodijeljenim artiklu u cjeniku;
 
@@ -266,7 +264,7 @@ Prikazuje se varijante odabranog artikla, kodirane u kartici **Varijante** šifa
 > **Otkaži**: omogućuje brisanje odabranog retka varijante.
 
 
-## Lotovi i Serijski broj
+### 3.5 Lotovi i Serijski broj
 
 U oba mrežna polja mogu se unijeti i partije i serijski brojevi koji se moraju učitati u skladište i koji su povezani s artiklom *Šifarnik artikla > kartica* [Lotovi i Serijski broj](/docs/erp-home/registers/items/create-new-items/item-registry/lots-and-serial-number) ili ih se može unijeti ručno. 
 
@@ -277,7 +275,7 @@ Ako artikl ne podržava upravljanje Partijama/Serijskim brojevima, ova će karti
 > **Izbriši serijski broj**: omogućuje brisanje odabrane linije serijskog broja
 
 
-## Analitika
+### 3.6 Analitika
 
 Može sadržavati informacije o troškovnim/profitnim centrima na koje su raspodijeljene vrijednosti artikla.
 
@@ -288,17 +286,17 @@ Ovi podaci se mogu unositi ručno ili *automatski* (u slučaju da su troškovni/
 > **Obriši profitna središta**: omogućuje brisanje odabrane linije profitnog središta.
 
 
-## Dodatni podaci
+### 3.7 Dodatni podaci
 
 Prikazuje popis **Dodatnih podataka** povezanih s artiklom, s mogućnošću dodavanja novih dodatnih podataka korisnih samo za trenutni dokument, uz mogućnost, putem odgovarajuće oznake, odabira koje dodatne podatke isprintati.
 
 
-## Dokumenti u privitku
+### 3.8 Dokumenti u privitku
 
 Prikazuje pojedinosti o mogućem **Dokumenti u privitku** (naziv, vrsta dokumenta, eventualne napomene, naš/vaša referenca). Upute o tome kako priložiti dokument potražite u artiklu **Priloži dokumente**.
 
 
-## Odjeljak s vrijednostima
+### 3.11 Odjeljak s vrijednostima
 
 Odjeljak prikazuje sažetak troškova koji doprinose formiranju konačne cijene odabranog artikla u mreži artikla.
 
@@ -316,14 +314,11 @@ Odjeljak prikazuje sažetak troškova koji doprinose formiranju konačne cijene 
 
 **Ukupno**: Osnovica + Porez.
 
-4 summury ---
-title: Sažeci
-sidebar_position: 5
----
+## 4. Sažeci
 
 U različitim sekcijama ovog taba prikazane su glavne informacije o cijelom dokumentu i neki posebni gumbi.
 
-## Završni popusti
+### 4.1 Završni popusti
 
 Mogu se unijeti samo popusti izraženi u postocima koji se primjenjuju na ukupan iznos dokumenta.
 
@@ -335,7 +330,7 @@ Popusti uneseni u ovoj sekciji izračunavaju se i prikazuju na svakom artiklu do
 **Vrijednost**: Numerička vrijednost završnog popusta za primjenu.
 
 
-## Troškovi
+### 4.2 Troškovi
 
 Prikazani su troškovi uneseni u osnovne podatke o kontaktu, u kartici *Troškovi/Popusti*.
 
@@ -346,11 +341,11 @@ Također postoji mogućnost unosa troškova koji se odnose samo na trenutačni d
 **Postotak**: Numerička vrijednost postotka troška.  
 
 
-## Sažeci PDV-a
+### 4.3 Sažeci PDV-a
 
 Prikazuje sažetak PDV-a dokumenta, za svaki PDV.
 
-## Pregled dospjeća plaćanja
+### 4.4 Pregled dospjeća plaćanja
 
 Prikazuje sažetak rokova plaćanja dokumenta, za svaki *tip* i *način plaćanja*. 
 
@@ -391,11 +386,11 @@ Prikazuje sažetak rokova plaćanja dokumenta, za svaki *tip* i *način plaćanj
 
 
 
-## Popratni račun
+### 4.5 Popratni račun
 
 Prikazuje mrežu u koju se može unijeti pripadajuća prateća faktura.
 
-## Ostala polja
+### 4.6 Ostala polja
 
 **Završne napomene**: to je slobodno polje koje korisnik može ispuniti, uključujući *Pomoć kod kodiranih napomena*.
 
