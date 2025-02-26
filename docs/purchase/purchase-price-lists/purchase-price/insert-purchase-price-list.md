@@ -21,7 +21,7 @@ Per rendere un listino valido per un fornitore, è necessario inserirlo nell'ana
 
 ### Campi opzionali
 
-- **A data validità**: viene utilizzato nel caso in cui si voglia definire una campagna promozionale o dare una data scadenza al listino. Può essere inserita massivamente su più listini dal filtro di [Ricerca listini](/docs/purchase/purchase-price-lists/search-purchase-price-list) mediante il pulsante *Chiudi*.   
+- **A data validità**: viene utilizzato nel caso in cui si voglia definire una campagna promozionale o dare una data scadenza al listino. Può essere inserita massivamente su più listini dal filtro di [Ricerca listini] mediante il pulsante *Chiudi*.   
 - **Sconto listino da anagrafica**: se nell'[anagrafica fornitore](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/price-list) è stata associata una struttura di scontistica aggiuntiva essa sarà riportata in questo campo di sola lettura.  
 - **Note**: per inserire eventuali note associate al listino.   
 

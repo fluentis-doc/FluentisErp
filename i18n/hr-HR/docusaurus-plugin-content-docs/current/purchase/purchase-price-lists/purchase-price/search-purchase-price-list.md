@@ -15,4 +15,4 @@ Za otvaranje pojedinosti o dokumentu, dovoljno ga je odabrati i dvaput kliknuti 
 Dodavanje novih polja u obrasce pretraživanja  
 
 
-Iz ove forme također je moguće [Stvoriti novi cjenik](/docs/purchase/purchase-price-lists/search-purchase-price-list), klikom na gumb  **Novo**.
+Iz ove forme također je moguće [Stvoriti novi cjenik], klikom na gumb  **Novo**.

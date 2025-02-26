@@ -35,7 +35,7 @@ Nella griglia articoli sono presenti i seguenti dati:
 - **Quantità**: rappresenta la quantità dell'U.M. principale.    
 
 - **Prezzo**: il prezzo viene proposto dal listino del fornitore preferenziale di default dell'articolo; il listino di riferimento per l'articolo stesso è visualizzato nel tab *Sconti/Listini*. Lo stesso documento potrebbe contenere articoli con prezzi presi da listini diversi. Attraverso il doppio click nel campo **Listini** (tab *Sconti/Listini*) l'utente ha la possibilità di selezionare un listino diverso da quello di default, dal quale sarà ripreso il prezzo dell'articolo inserito.   
-In assenza del listino, il dato proposto può essere ripreso dal *costo ultimo* di anagrafica articolo oppure può essere proposto a zero, in base ai parametri impostati nei [Parametri richieste di acquisto](/docs/configurations/parameters/purchase/purchase-requests-parameters/).   
+In assenza del listino, il dato proposto può essere ripreso dal *costo ultimo* di anagrafica articolo oppure può essere proposto a zero, in base ai parametri impostati nei **Parametri richieste di acquisto**.   
 
 - **Evaso forzatamente**: è possibile impostare l'evasione forzata per la riga selezionata. In questo modo, non verrà fatto il carico di magazzino.
 
@@ -57,7 +57,7 @@ Nella sezione sottostante la griglia vengono riportati i totali del documento:
 
 > **Autorizzazione RDA**: permette di autorizzare tutte le righe articolo selezionate; da questo momento il documento è considerato confermato.   
 
-> **Generatore RDO**: cliccando questo bottone verrà creata la [Richiesta di Offerta](/docs/purchase/offer-request/settings) per le righe presenti nel tan *Generatore RDO*. Per maggiori dettagli vedere il paragrafo [Generatore RDO](/docs/purchase/purchase-requests/insert-purchase-request#generatore-rdo).   
+> **Generatore RDO**: cliccando questo bottone verrà creata la [Richiesta di Offerta](/docs/purchase/offer-request/settings) per le righe presenti nel tan *Generatore RDO*. Per maggiori dettagli vedere il paragrafo [Generatore RDO](/docs/purchase/purchase-requests/purchase-request/insert-purchase-request#generatore-rdo).   
 
 > **Rollback RDO**: permette di annullare ed eliminare la richiesta di offerta creata precedentemente.   
 

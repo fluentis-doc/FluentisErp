@@ -111,7 +111,7 @@ Unutar ovog taba, prikazuju se/unose dodatne informacije koje se odnose na artik
 
 **Artikl/Varijanta**: prikazuje odabrani artikl u gornjoj mreži i njegovu varijantu;
 
-**Zahtjev za kupnju**: ako je ponuda stvorena iz zahtjeva, prikazuje se povezani [Zahtjev za kupnju](/docs/purchase/purchase-requests/insert-purchase-request);
+**Zahtjev za kupnju**: ako je ponuda stvorena iz zahtjeva, prikazuje se povezani [Zahtjev za kupnju](/docs/purchase/purchase-requests/purchase-request/insert-purchase-request));
 
 **Napomene**: napomene vezane uz redak artikla, mogu se unijeti i putem pomoći kodiranih napomena. Bit će prikazane u svim dokumentima generiranim iz ovoga.
 

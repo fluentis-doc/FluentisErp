@@ -16,4 +16,4 @@ Za otvaranje pojedinosti o dokumentu, dovoljno ga je odabrati i dvaput kliknuti 
 Dodavanje novih polja u obrasce pretraživanja
 
 
-Specifičan za obrazac je gumb  **Novo** koji omogućuje [Stvaranje novog RDA](/docs/purchase/purchase-requests/insert-purchase-request).
+Specifičan za obrazac je gumb  **Novo** koji omogućuje [Stvaranje novog RDA](/docs/purchase/purchase-requests/purchase-request/insert-purchase-request)).

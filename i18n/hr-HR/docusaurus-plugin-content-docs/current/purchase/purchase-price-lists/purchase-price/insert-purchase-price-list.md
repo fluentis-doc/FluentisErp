@@ -3,7 +3,7 @@ title: Unos cjenika dobavljača
 sidebar_position: 3
 ---
 
-Obrazac se otvara putem putanje **Nabava > Cjenici Dobavljača > Stvori Cjenik Dobavljača** ili putem gumba **Novo** koji se nalazi u obrascu [Pretraživanje Cjenika Dobavljača](/docs/purchase/purchase-price-lists/search-purchase-price-list).
+Obrazac se otvara putem putanje **Nabava > Cjenici Dobavljača > Stvori Cjenik Dobavljača** ili putem gumba **Novo** koji se nalazi u obrascu [Pretraživanje Cjenika Dobavljača.
 
 ## **1. Gornji odjeljak**
 

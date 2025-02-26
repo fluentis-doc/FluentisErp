@@ -133,7 +133,7 @@ All'interno di questo tab vengono riportate/inserite ulteriori informazioni rela
 >- **Prezzo unità di misura alternativa**: se attivo indica che il prezzo inserito sulla riga articolo è riferito all'unità di misura alternativa e non a quella principale.    
 
 >- **Marca**: rappresenta la marca dell'articolo, ripresa dalla sua anagrafica oppure dal listino dell'articolo.   
->- **Richiesta di acquisto**: se l'offerta è stato creata da RDA viene riportata la [Richiesta d'acquisto](/docs/purchase/purchase-requests/insert-purchase-request) di riferimento.   
+>- **Richiesta di acquisto**: se l'offerta è stato creata da RDA viene riportata la [Richiesta d'acquisto](/docs/purchase/purchase-requests/purchase-request/insert-purchase-request)) di riferimento.   
 
 
 ### Extra data
