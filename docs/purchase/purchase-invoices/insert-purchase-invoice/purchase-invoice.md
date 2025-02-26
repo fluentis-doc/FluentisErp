@@ -5,7 +5,29 @@ sidebar_position: 1
 
 La form si apre tramite il percorso **Acquisti > Fatture di acquisto > Nuova fattura** oppure tramite il pulsante **Nuova** che si trova nella form [Ricerca fatture di acquisto](/docs/purchase/purchase-invoices/insert-purchase-invoice/search-purchase-invoices).
 
-*Dati obbligatori*:
+## *Come creare una fattura di vendita*
+
+
+<details>
+ 
+<summary>Clicca per i passaggi fondamentali - DA CONTROLLARE!!!!</summary>
+ 
+1. **Inserisci i dati obbligatori**: *Tipo Ordine* e *Fornitore*. *Anno*, *Numero* e *Data Inserimento* saranno proposti in automatico.  
+ 
+2. **Inserisci o modifica i dati facoltativi** della testata: come date di consegna, eventuali *sconti*, la *destinazione*, ecc.  
+ 
+3. **Inserisci gli Articoli**: mediante doppio click nel campo *Codice articolo* si apre l’help articoli che permette di cercare e selezionare un articolo esistente. Tutti gli altri dati della riga, come *unità di misura*, *quantità*, *prezzo*, saranno proposti in automatico, ma possono essere modificati.
+In alternativa è possibile selezionare come *Tipo riga* un *Articolo non codificato* e inserire manualmente i dati successivi.
+ 
+4. **Inserisci eventuali sconti o altre informazioni aggiuntive** nei tab *Sconti/listini* e *Dati articolo*
+ 
+5. **Controlla la sezione dei Riepiloghi** ed inserisci eventuali spese o sconti finali.  
+ 
+6. Una volta controllato e confermato l’ordine, **inserisci una *Data conferma* e attiva il flag *Stampato* in testata** in modo da rendere l’ordine disponibile per le procedure di evasione.
+ 
+</details>
+
+## 1. Dati obbligatori
 
 - **Tipo fattura acquisto** predefinito in *Tabelle > Acquisti > [Tipo fattura di acquisto](/docs/configurations/tables/purchase/purchase-invoices-type)*;   
 Questo campo determina il range di numerazione del documento che si sta inserendo e propone automaticamente il *Numero interno* della fattura in base alla data inserimento e all'ultimo numero inserito;   
@@ -16,16 +38,15 @@ Questo campo determina il range di numerazione del documento che si sta inserend
 
 La form contiene una serie di tab.
 
-2. ---
-title: Testata
-sidebar_position: 2
----
+## 2. Testata
 
 Dopo aver selezionato i dati obbligatori nella sezione superiore, l'utente può continuare l'inserimento dei seguenti dati manualmente oppure con il [help di campo](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) oppure, in base alle procedure che sceglie, l'applicazione compila i campi *automaticamente*.
 
 :::note Ricorda
 Se il documento viene *creato automaticamente*, ad esempio mediante **Evasione da ordine fornitore** o **Evasione da DDT** questi dati vengono ripresi dal *documento d'origine* da cui è stata generata la fattura.
 :::
+
+### 2.1 Dati fornitore
 
 Inserendo il **Fornitore** vengono *proposti* in automatico tutti i dati specifici del tab **Testata**, secondo i dati impostati in precedenza nell'[anagrafica fornitore](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/accounting-data-intro) nei campi corrispondenti al suo indirizzo e nelle *sezioni*:  
 
@@ -35,7 +56,7 @@ Inserendo il **Fornitore** vengono *proposti* in automatico tutti i dati specifi
 
 Tutti questi campi possono essere cancellati oppure modificati manualmente dall'utente.
 
-*Campi facoltativi*:
+### 2.2 Dati facoltativi testata
 
 - **Stato fatture**: quando la fattura viene creata non ha nessun flag attivo. La sezione comprende i campi:
 
@@ -69,23 +90,23 @@ Nel caso in cui l'ordine viene completato con la procedura [Evasione da ordine](
 
 - **Reg. cont.**: osizionato sotto la voce *Nazione*. Riporta numero, data e protocollo della registrazione contabile derivata dalla contabilizzazione della fattura. 
 
-*Pulsanti specifici*
+#### Pulsanti specifici (dettagliati nella sezione *Procedure testata*)
 
-> [Evasione da ordini](/docs/purchase/purchase-delivery-note/insert-purchase-delivery-note/purchase-delivery-note): richiama la procedura per creare una fattura da un ordine fornitore. Si attiva con l'inserimento del fornitore e del tipo fattura. L'ordine da evadere dovrà aver impostato il flag *Stampato* e la *Data conferma ordine* valorizzata.    
-> [Evasione DDT](/docs/purchase/purchase-invoices/insert-purchase-invoice/purchase-invoice): richiama la procedura per creare una fattura da un DDT. Si attiva con l'inserimento del fornitore e del tipo fattura. Il DDT da evadere dovrà aver impostato il flag *Controllata*.    
-> [Carico automatico nel magazzino](/docs/purchase/purchase-invoices/procedures/purchase-invoices-load-on-warehouse): utilizzato per caricare automaticamente il magazzino con gli articoli selezionati. Questo campo sarà editabile solo una volta attivato il campo *Controllata* e inserito il *Numero documento*.
+> **Evasione da ordini**: richiama la procedura per creare una fattura da un ordine fornitore. Si attiva con l'inserimento del fornitore e del tipo fattura. L'ordine da evadere dovrà aver impostato il flag *Stampato* e la *Data conferma ordine* valorizzata.    
+> **Evasione DDT**: richiama la procedura per creare una fattura da un DDT. Si attiva con l'inserimento del fornitore e del tipo fattura. Il DDT da evadere dovrà aver impostato il flag *Controllata*.    
+> **Carico automatico nel magazzino**: utilizzato per caricare automaticamente il magazzino con gli articoli selezionati. Questo campo sarà editabile solo una volta attivato il campo *Controllata* e inserito il *Numero documento*.
 
-## Pagamenti
+### 2.3 Pagamenti
 
 Le **Soluzioni di pagamento** sono riportate in automatico dall'*Anagrafica fornitore > tab Pagamenti* e possono essere modificate/cancellate dall'utente.
 
 Se al **Tipo pagamento** è associato uno sconto finanziario, l'importo dello sconto viene considerato solo ai fini contabili cioè nelle scadenze del documento e non nel totale fattura.
 
-*Pulsante specifico*
+#### Pulsante specifico
 
 > **Cancella pagamenti**: utilizzato per cancellare le righe di pagamento selezionate.
 
-## Sconti
+### 2.4 Sconti
 
 Vengono proposti solo gli sconti predefiniti ripresi dall'*Anagrafica fornitore > tab Sconti* e possono essere modificate/cancellate dall'utente.
 
@@ -93,7 +114,7 @@ import TabDiscount from './../../../import/sections/tab-discount.md'
 
 <TabDiscount />
 
-## Spedizione
+### 2.5 Spedizione
 
 Qui viene proposta l'informazione inserita nell'anagrafica fornitore, tab [Consegna](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/delivery), solo se esistono dati di default.
 
@@ -102,24 +123,21 @@ Il combo box propone tutti i *Destinatari* e le *Destinazioni* inserite nell'ana
 Gli indirizzi di spedizione (destinatario/destinazione e vettore) possono essere inseriti anche solo descrittivi senza essere precedentemente inseriti tra i contatti. 
 
 
-## Vettore
+### 2.6 Vettore
 
 In questo campo è possibile inserire il Vettore che effettuerà la spedizione. Se questo è stato inserito nell'anagrafica fornitore, tab [Consegna](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/delivery) sarà possibile selezionarlo dal menù a tendina della seconda colonna, in alternativa sarà sufficiente fare doppio click sulla terza colonna (*Vettore*) per selezionare uno dei contatti della società.
 
 Opzionalmente si possono aggiungere i dettagli della *Targa* del vettore e la *Data/Ora trasporto*.
 
-## Extra Data
+### 2.7 Extra Data
 
 import TabExtraData from './../../../import/sections/tab-extra-data.md'
 
 <TabExtraData />
 
-### Procedure testata
+### 2.8 Procedure testata
 
----
-title: Carico automatico in magazzino
-sidebar_position: 3
----
+#### Carico automatico in magazzino
 
 Questa procedura viene lanciata con l'aiuto del pulsante **Carico automatico nel magazzino** che si trova nella testata del documento e rispetta una serie di parametri impostati precedentemente nella fattura. Per dettagli consultare la procedura identica: [Carico fatture di acquisto in magazzino](/docs/purchase/purchase-invoices/procedures/purchase-invoices-load-on-warehouse).
 
@@ -130,10 +148,7 @@ Il risultato può essere visualizzato in Logistica > [Registrazioni](/docs/logis
 Se nei *Parametri fatture di acquisto* è attivo il flag **Carico/Scarico automatico**, al momento dell'attivazione del flag *Controllata* nella testata della fattura sarà automaticamente proposto di caricare il documento a magazzino. 
 :::
 
----
-title: Evasione DDT
-sidebar_position: 2
----
+#### Evasione DDT
 
 La procedura permette la creazione di una fattura di acquisto mediante evasione di uno o più DDT di acquisto.
 
@@ -144,7 +159,7 @@ Per poter utilizzare questa procedura vi sono delle condizioni iniziali che devo
 - i/il fornitore dei DDT deve essere lo stesso della fattura;
 - il DDT che si vuole evadere deve avere attivo il flag *Controllato* e non deve essere già *Valorizzato*.
 
-*Procedimento*:
+#### Procedimento
 
 Si dovrà andare ad impostare nella testata della nuova fattura, il [Tipo fattura](/docs/configurations/tables/purchase/purchase-invoices-type) che si vuole creare e il *Fornitore*. Una volta inseriti questi dati, bisognerà cliccare sul pulsante *Evasione DDT* per aprire la form di evasione.
 
@@ -164,7 +179,7 @@ Nella griglia di risultati, l'utente ha poi la possibilità di:
 
 Per completare la procedura bisognerà poi cliccare sul pulsante *Trasferimento*, che andrà a riprendere tutti i dati presenti nei DDT seezionati e li riporterà nella fattura.
 
-*Pulsanti specifici*:
+#### Pulsanti specifici
 
 > **Ricerca**: permette di cercare i DDT disponibili per il trasferimento.  
 > **Trasferimento**: permette di trasferire gli articoli/ordini selezionati.  
@@ -173,10 +188,7 @@ Per completare la procedura bisognerà poi cliccare sul pulsante *Trasferimento*
 > **Seleziona**: permette di attivare i flag per tutte le righe selezionate con il mouse.   
 > **Deseleziona**: permette di disattivare i flag per tutte le righe selezionate con il mouse.
 
----
-title: Evasione da ordine
-sidebar_position: 1
----
+#### Evasione da ordine
 
 La procedura permette la creazione di una fattura di acquisto mediante evasione di uno o più ordini fornitore.
 
@@ -212,7 +224,7 @@ Nella griglia di risultati, l'utente ha poi la possibilità di:
 
 Per completare la procedura bisognerà poi cliccare sul pulsante *Evasione*, che andrà a riprendere tutti i dati presenti nell'ordine e li riporterà nella fattura.
 
-*Pulsanti specifici*:
+#### Pulsanti specifici 
 
 > **Ricerca**: permette di cercare gli ordini fornitore.  
 > **Evasione**: permette di trasferire gli articoli/ordini selezionati.  
@@ -226,10 +238,7 @@ Per completare la procedura bisognerà poi cliccare sul pulsante *Evasione*, che
 Nel caso di più evasioni parziali per una determinata riga articolo all'interno della stessa fattura è possibile scegliere se sommare le quantità in un'unica riga nella fattura oppure se mantenere righe distinte, rispettivamente disattivando o attivando il flag **Evasione quantità articolo non sommata** nella tabella dei [Tipi fatture di acquisto](/docs/configurations/tables/purchase/purchase-invoices-type).
 :::
 
----
-title: Sdi - Chiusura documenti
-sidebar_position: 4
----
+#### Sdi - Chiusura documenti
 
 Con il bottone **Sdi - Chiusura documenti** viene aperto il modulo per collegare manualmente eventuali ordini e DDT di acquisto alle fatture generate dagli xml ricevuti. Questa procedura viene inoltre avviata automaticamente quando viene effettuato questo collegamento dalla maschera [Documenti acquisti in entrata](/docs/finance-area/sdi-documents/incoming-purchase-documents).          
 Il modulo è suddiviso in due sezioni principali: una a sinistra, dedicata alla visualizzazione dei DDT e degli Ordini, e una a destra, che mostra gli articoli della fattura. 
@@ -282,8 +291,7 @@ Durante la fase di collegamento, il sistema esegue alcuni controlli per garantir
 
 Se uno o più di questi controlli falliscono, il collegamento non viene effettuato automaticamente e l'errore viene riportato nella griglia degli errori, con l'indicazione del numero di riga della fattura e la descrizione dell'errore.
 
-## 3. ---
-title: Articoli
+## 3. Articoli
 sidebar_position: 4
 ---
 
@@ -293,15 +301,13 @@ import InsertMode from './../../../import/sections/insert-mode.md'
 
 <InsertMode />
 
-## Griglia articoli
-
 Per inserire un nuovo articolo nella griglia basterà posizionarsi sulla riga per compilare i vari dati oppure utilizzare il pulsante *Nuovo articolo* presente nella ribbon bar.
 
 :::note Nota
 Se la fattura è stata creata mediante evasione di un ordine fornitoreo di un DDT di acquisto i seguenti dati saranno ripresi dal documento di partenza
 :::
 
-### Dati obbligatori
+### 3.1 Dati obbligatori
 
 import RowNumber from './../../../import/fields/row-number.md'
 
@@ -338,13 +344,13 @@ In assenza del listino, il dato proposto può essere ripreso dal *costo ultimo* 
 
 - **IVA**: è prioritario il dato inserito nel campo IVA dell'*Anagrafica contatto*. Se questo non è presente, viene proposto il valore presente nell'*Anagrafica articolo*, ma l'utente ha la possibilità di inserire un dato diverso.
 
-### Dati non obbligatori
+### 3.2 Dati facoltativi articoli
 
 - **Codice/Descrizione articolo fornitore**: in questa sezione si potrà aggiungere il codice e la descrizione che il fornitore utilizza per identificare l'articolo; questo dato viene proposto in automatico se nell'anagrafica dell'articolo, tab [Fornitori preferenziali](/docs/erp-home/registers/items/create-new-items/item-registry/preferential-vendors) è stato associato un articolo fornitore. 
 
 - **Tipo fatturato acquisti**: viene proposto il dato inserito nel tab [Generalità](/docs/erp-home/registers/items/create-new-items/item-registry/generality) dell'anagrafica articoli. Se questo non è presente, non viene proposto nessun dato e al momento della contabilizzazione della fattura, sarà considerato il valore inserito nel campo *Costo/Ricavo di contropartita predefinito* dell'anagrafica contatto.
 
-*Pulsanti specifici*
+#### Pulsanti specifici
 
 > **Ricalcolo Conai**: se la [Gestione Conai](/docs/purchase/purchase-flow/conai) è abilitata per il documento, è possibile ricalcolare i valori con questo bottone dopo eventuali modifiche.
 >

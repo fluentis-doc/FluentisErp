@@ -7,6 +7,8 @@ Ovaj se obrazac otvara putem **Nabava > Ulazni računi > Kreiranje ulaznih raču
 
 U obrascu za unos automatski se predlaže trenutni **Datum** ali ga korisnik može promijeniti.
 
+## 1. Dati obbligatori
+
 Za nastavak stvaranja računa za kupnju, korisnik mora unijeti obavezna polja:
 
 - **Tip računa** predefinirana u **Tablice > Nabava > [Tip ulaznog računa](/docs/configurations/tables/purchase/purchase-invoices-type)**;
@@ -25,13 +27,15 @@ Nakon odabira obveznih podataka u gornjem dijelu, korisnik može nastaviti [ruč
 Ako se dokument *kreira automatski*, ovi podaci preuzimaju se iz *izvornog dokumenta* iz kojeg je generiran.
 :::
 
+### 2.1 Dati fornitore
+
 Unoseći **Dobavljača** automatski se *predlažu* svi specifični podaci iz kartice **Zaglavlje**, prema prethodno postavljenim podacima u [šifarnik dobavljača](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/accounting-data-intro) u odgovarajućim poljima adrese i *odjeljcima*:  
 
 - **Valuta**: [Valuta](/docs/guide/common/glossary/glossary-intro#currency), [Tečaj](/docs/guide/common/glossary/glossary-intro#currency-exchange), [Datum valute](/docs/guide/common/glossary/glossary-intro#currency-date).
 - **Država**: [Država](/docs/guide/common/glossary/glossary-intro#country), [Dostava](/docs/guide/common/glossary/glossary-intro#language), [Zona](/docs/guide/common/glossary/glossary-intro#zone)
 - **Dostava**: [Način dostave](/docs/guide/common/glossary/glossary-intro#shipment), [Luka](/docs/guide/common/glossary/glossary-intro#carriage), [Pakiranje](/docs/guide/common/glossary/glossary-intro#packing), [Cjenik](/docs/guide/common/glossary/glossary-intro#sales-price-list) i njegov [vremenski interval važenja](/docs/guide/common/glossary/glossary-intro#validity-date)
 
-*Ostala opcionalna polja*:
+### 2.2 Ostala opcionalna polja
 
 **Status računa**: kada se račun stvori, nema aktivnih zastava. Ovaj odjeljak uključuje sljedeća polja:  
 > **Kontrolirano**: aktivna zastava omogućuje knjiženje računa;  
@@ -70,12 +74,12 @@ Ovo udruživanje funkcionira samo na razini zaglavlja članka.
 
 **Račun potraživanja**: navodi broj, datum i protokol knjiženja koji proizlazi iz knjiženja fakture.
 
-*Posebni gumbi*
+#### Posebni gumbi (dettagliati nella sezione *Procedure testata*)
 
-> [Izuzimanje iz narudžbe](/docs/purchase/purchase-delivery-note/insert-purchase-delivery-note/purchase-delivery-note): poziva postupak za stvaranje fakture iz narudžbenice dobavljača. Aktivira se unosom dobavljača i vrste fakture. Narudžbenica koja će se izvršiti mora imati postavljenu zastavu *Tiskano* i *Datum potvrde naloga*.  
-> [Automatsko punjenje u skladištu](/docs/purchase/purchase-invoices/procedures/purchase-invoices-load-on-warehouse): koristi se za automatsko punjenje skladišta odabranim artiklima. Ovo polje bit će uređivano samo jednom kada se aktivira polje *Provjereno* i unese *broj* dokumenta.
+> **Izuzimanje iz narudžbe**: poziva postupak za stvaranje fakture iz narudžbenice dobavljača. Aktivira se unosom dobavljača i vrste fakture. Narudžbenica koja će se izvršiti mora imati postavljenu zastavu *Tiskano* i *Datum potvrde naloga*.  
+> **Automatsko punjenje u skladištu**: koristi se za automatsko punjenje skladišta odabranim artiklima. Ovo polje bit će uređivano samo jednom kada se aktivira polje *Provjereno* i unese *broj* dokumenta.
 
-### Plaćanja
+### 2.3 Plaćanja
 
 **Rješenja za plaćanje** automatski se prenose iz *Šifarnik dobavljača > kartica Plaćanja* i mogu se mijenjati/brisati od strane korisnika.
 
@@ -87,11 +91,11 @@ Ako dokument potječe iz:
 
 - *Otpremnice*, plaćanja dobavljača mogu se zadržati ili pojedinačna plaćanja prisutna u svakoj otpremnici; u ovom slučaju, u računu se prikazuje tip plaćanja s osnovicom i PDV-om istim kao i otpremnici; nadalje, za eventualne redove artikala dodane u račun, a koje ne proizlaze iz otpremnice, dodaje se novi red.
 
-*Posebni gumb*
+#### Posebni gumb
 
 **Otkaži plaćanja**: koristi se za brisanje odabranih redova plaćanja.
 
-### Popusti
+### 2.4 Popusti
 
 Predlažu se samo predefinirani popusti preuzeti iz *Šifarnik dobavljača > kartica Popusti* i mogu se mijenjati/brisati od strane korisnika.
 
@@ -104,7 +108,7 @@ Ako nakon unosa redaka artikala unesete novi popust u zaglavlje, on se ne replic
 **Izbriši rabate**: koristi se za brisanje odabranih redova popusta.
 
 
-### Pošiljka
+### 2.5 Pošiljka
 
 Ovdje se predlaže informacija unesena u podaci dobavljača, kartica [Pošiljke](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/delivery), samo ako postoje zadani podaci.
 
@@ -113,15 +117,13 @@ Padajući izbornik nudi sve *Primatelje* i *Odredišta* unesena u  Šifarnik dob
 Adrese dostave (primatelj/odredište i prijevoznik) mogu se unijeti samo kao opis bez prethodnog unosa među kontaktima.
 
 
-### Dodatni podaci
+### 2.6 Dodatni podaci
 
 Ovdje se predlaže informacija unesena u *Šifarnik subjekta > kartica Dodatni podaci*, samo ako postoje zadani podaci.
 
 ### 2.8 Procedure testata
 
-title: Izuzimanje iz narudžbe od strane dobavljača
-sidebar_position: 2
----
+#### Izuzimanje iz narudžbe od strane dobavljača
 
 Na zaglavlju dokumenta, pritiskom na dugme **Izuzimanje iz narudžbe od strane dobavljača** otvorit će se obrazac gdje možete filtrirati narudžbe dobavljača koje se odnose na dobavljača u dokumentu.
 
@@ -146,7 +148,7 @@ Za dobavljača i sve ostale filtre unesene u odjeljku *Filtriraj*, u donjoj mre�
 Postupak preuzima sve podatke prisutne u narudžbi, a kao posljedica primijenit će se trenutni uvjeti kupnje prisutni u narudžbi, iako su se možda u međuvremenu promijenili.
 :::
 
-![](/img/it-it/purchase/purchase-invoices/insert-purchase-invoice/purchase-invoice/header-procedures/image10.png)
+![](/img/it-it/purchase/purchase-invoices/insert-purchase-invoice/purchase-invoice)
 
 Koristite gumbe (**2**) za proširenje ![](/img/neutral/common/minus.png) / skupljanje ![](/img/neutral/common/plus.png) željenih narudžbi.
 
@@ -154,32 +156,21 @@ Koristite oznake (**3**) za označavanje  ![](/img/neutral/common/check.png) / 
 
 Izvršite ispunjenje pomoću gumba **Prijenos**.
 
----
-title: Automatski utovar skladištda
-sidebar_position: 1
----
+#### Automatski utovar skladištda
 
 Ovaj postupak pokreće se pomoću gumba **Automatski utovar skladišta** koji se nalazi u zaglavlju dokumenta i poštuje niz prethodno postavljenih parametara na računu. Za detalje pogledajte identičan postupak: [Učitavanje računa o kupnji u skladište](/docs/purchase/purchase-invoices/procedures/purchase-invoices-load-on-warehouse).
 
 Rezultat se može vidjeti u Logistika > [Zapisi](/docs/logistics/warehouse/stock-records/records) ili u postupku [Učitavanje računa o kupnji u skladište](/docs/purchase/purchase-invoices/procedures/purchase-invoices-load-on-warehouse).
 
-3 ---
-title: Artikli
-sidebar_position: 4
----
+## 3. Artikli
 
 U ovoj kartici unose se svi artikli sa pripadajućim podacima.
 
-Za pojedinosti o zajedničkom funkcioniranju obrazaca pogledajte sljedeći link [Značajke, gumbe i zajednička polja](/docs/guide/common).
-
 Podaci se unose **ručno**, uz pomoć **polja za pomoć** ili ih mogu predložiti povezane procedure.
-
-## Artikli
 
 Da biste unijeli **Novi artikl** u mrežu, dovoljno je postaviti se na red kako biste popunili različite podatke ili koristiti gumb **Novo** u traci s vrpcom.
 
-
-### Obavezni podaci
+### 3.1 DObavezni podaci
 
 **Broj linije**: ovo polje popunit će se automatski i postupno unosom podataka u redak.
 
