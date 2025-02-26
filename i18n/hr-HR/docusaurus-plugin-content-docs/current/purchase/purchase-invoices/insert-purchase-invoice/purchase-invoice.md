@@ -150,7 +150,7 @@ Postupak preuzima sve podatke prisutne u narudžbi, a kao posljedica primijenit 
 
 Koristite gumbe (**2**) za proširenje ![](/img/neutral/common/minus.png) / skupljanje ![](/img/neutral/common/plus.png) željenih narudžbi.
 
-Koristite oznake (**3**) za označavanje  ![](/img/neutral/common/check.png) / odznačavanje ![](/img/it-it/purchase/purchase-invoices/insert-purchase-invoice/header-procedures/image14.png) pojedinačnih stavki ili cijele narudžbe.
+Koristite oznake (**3**) za označavanje  ![](/img/neutral/common/check.png) / odznačavanje ![](/img/it-it/purchase/purchase-invoices/insert-purchase-invoice/header-procedures/header-procedures/image14.png) pojedinačnih stavki ili cijele narudžbe.
 
 Izvršite ispunjenje pomoću gumba **Prijenos**.
 
