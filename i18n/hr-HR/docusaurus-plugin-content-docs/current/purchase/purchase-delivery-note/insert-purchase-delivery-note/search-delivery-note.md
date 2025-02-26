@@ -18,7 +18,7 @@ Dodavanje novih polja u obrasce pretraživanja
 
 *Posebni gumbi*:
 
-> **Novo**: omogućuje [Kreiranje nove primke](/docs/purchase/purchase-delivery-note/insert-purchase-delivery-note/insert-purchase-delivery-note-intro)  
+> **Novo**: omogućuje [Kreiranje nove primke](/docs/purchase/purchase-delivery-note/insert-purchase-delivery-note/purchase-delivery-note)  
 > **Dupliciraj**: omogućuje stvaranje kopije dokumenta, zadržavajući sve uvjete izvornog dokumenta, ali s trenutačnim podacima. Koristi se za česte isporuke sličnih roba od istog subjekta dokumenta.   
 
 

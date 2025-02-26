@@ -96,7 +96,7 @@ Se al [Tipo pagamento](/docs/configurations/tables/general-settings/payment-type
  
 Se il documento nasce da una commessa o da un'offerta fornitore, il tipo pagamento viene ripreso dal documento di origine.
  
-#### Pulsante specifico:
+#### Pulsante specifico
  
 **Cancella pagamenti**: utilizzato per cancellare le righe di pagamento selezionate.
  

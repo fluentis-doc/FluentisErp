@@ -122,7 +122,7 @@ Questa procedura viene lanciata con l'aiuto del pulsante omonimo che si trova ne
 Il risultato può essere visualizzato in Logistica > [Registrazioni](/docs/logistics/warehouse/stock-records/records) oppure nella procedura [Registrazione DDT di acquisto in magazzino](/docs/purchase/purchase-delivery-note/procedures/load-delivery-notes-on-warehouse), tab *Riepilogativo*.
 
 :::note Nota
-Se nei [Parametri DDT di acquisto](/docs/configurations/parameters/purchase/purchase-delivery-note-parameters#carico) è attivo il flag **Carico/Scarico automatico**, al momento dell'attivazione del flag *Controllata* nella testata del DDT sarà automaticamente proposto di effettuare il carico del DDT. 
+Se nei [Parametri DDT di acquisto](/docs/configurations/parameters/purchase/purchase-delivery-note-parameters#carico) è attivo il flag **Carico/Scarico automatico**, al momento dell'attivazione del flag *Controllata* nella testata del DDT sarà automaticamente proposto di effettuare il carico del DDT. Questo campo sarà editabile solo una volta attivato il campo *Controllato* e inserito il *Numero* documento.
 :::
 
 > #### Evasione da ordine
@@ -174,9 +174,6 @@ Per completare la procedura bisognerà poi cliccare sul pulsante *Evasione*, che
 :::important Ricorda
 Nel caso di più evasioni parziali per una determinata riga articolo all'interno dello stesso DDT è possibile scegliere se sommare le quantità in un'unica riga nel DDT oppure se mantenere righe distinte, rispettivamente disattivando o attivando il flag **Evasione quantità articolo non sommata** nella tabella dei [Tipi DDT di acquisto](/docs/configurations/tables/purchase/purchase-delivery-notes-type/).
 :::
-
-> [Evasione da ordine](/docs/purchase/purchase-delivery-note/insert-purchase-delivery-note/purchase-delivery-note): richiama la procedura per creare un DDT da un ordine fornitore. Si attiva con l'inserimento del fornitore e del tipo DDT. L'ordine da evadere dovrà aver impostato il flag *Stampato* e la *Data conferma ordine*.  
-> [Carico automatico nel magazzino](/docs/purchase/purchase-delivery-note/insert-purchase-delivery-note/purchase-delivery-note-procedures/automatic-loading-on-warehouse): utilizzato per caricare automaticamente il magazzino con gli articoli selezionati. Questo campo sarà editabile solo una volta attivato il campo *Controllato* e inserito il *Numero* documento.
 
 ## 3. Articoli
 

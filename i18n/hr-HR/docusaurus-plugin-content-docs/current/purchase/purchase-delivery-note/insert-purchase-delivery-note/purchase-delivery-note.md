@@ -68,8 +68,8 @@ Ovo povezivanje funkcionira samo na razini zaglavlja članka.
 
 **Specifični gumbi**
 
-> [Izuzimanje iz narudžbe](/docs/purchase/purchase-delivery-note/insert-purchase-delivery-note/purchase-delivery-note): poziva postupak za stvaranje otpremnice iz narudžbenice dobavljača. Aktivira se unosom dobavljača i vrste otpremnice. Narudžbenica koja se izvršava mora imati postavljenu zastavu *Ispisano* i *Datum potvrde narudžbe*.    
-> [Automatski zaduživanje skladišta](/docs/purchase/purchase-delivery-note/insert-purchase-delivery-note/purchase-delivery-note-procedures/automatic-loading-on-warehouse): koristi se za automatsko unošenje artikala u skladište. Ovo polje bit će uredno nakon što se aktivira polje *Provjereno* i unese *Broj* dokumenta.
+> **Izuzimanje iz narudžbe**: poziva postupak za stvaranje otpremnice iz narudžbenice dobavljača. Aktivira se unosom dobavljača i vrste otpremnice. Narudžbenica koja se izvršava mora imati postavljenu zastavu *Ispisano* i *Datum potvrde narudžbe*.    
+> **Automatski zaduživanje skladišta**: koristi se za automatsko unošenje artikala u skladište. Ovo polje bit će uredno nakon što se aktivira polje *Provjereno* i unese *Broj* dokumenta.
 
 ### 2.3 Plaćanja
 

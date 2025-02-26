@@ -68,7 +68,7 @@ Execuția din comandă în DDT poate fi finalizată de asemenea din antetul fact
 Procedura de execuție din DDT în factură poate fi inițiată în două moduri:
 
 - Din Meniul [Proceduri](/docs/purchase/purchase-invoices/procedures/purchase-delivery-note-valorization): mergând pe *Achiziții > Facturi de achiziție > Proceduri > Valorificare DDT de achiziție*. 
-- Din [Antet](/docs/purchase/purchase-invoices/insert-purchase-invoice/header) Facturii de Vânzare: utilizând butonul *Execuție DDT* în antetul facturii.
+- Din [Antet](/docs/purchase/purchase-invoices/insert-purchase-invoice/purchase-invoice) Facturii de Vânzare: utilizând butonul *Execuție DDT* în antetul facturii.
 
 
 Această procedură permite crearea uneia sau mai multor facturi pornind de la unul sau mai multe DDT. Procedura este compusă din trei tab-uri principale:
