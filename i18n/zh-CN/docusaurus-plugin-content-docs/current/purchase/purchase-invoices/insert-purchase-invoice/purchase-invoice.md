@@ -110,9 +110,6 @@ Se al **Tipo pagamento** è associato uno sconto finanziario, l'importo dello sc
 
 Vengono proposti solo gli sconti predefiniti ripresi dall'*Anagrafica fornitore > tab Sconti* e possono essere modificate/cancellate dall'utente.
 
-import TabDiscount from './../../../import/sections/tab-discount.md'
-
-<TabDiscount />
 
 ### 2.5 Spedizione
 
@@ -131,9 +128,7 @@ Opzionalmente si possono aggiungere i dettagli della *Targa* del vettore e la *D
 
 ### 2.7 Extra Data
 
-import TabExtraData from './../../../import/sections/tab-extra-data.md'
 
-<TabExtraData />
 
 ### 2.8 Procedure testata
 
@@ -297,9 +292,6 @@ sidebar_position: 4
 
 In questo tab vengono inseriti tutti gli articoli con i relativi dati.
 
-import InsertMode from './../../../import/sections/insert-mode.md'
-
-<InsertMode />
 
 Per inserire un nuovo articolo nella griglia basterà posizionarsi sulla riga per compilare i vari dati oppure utilizzare il pulsante *Nuovo articolo* presente nella ribbon bar.
 
@@ -309,9 +301,6 @@ Se la fattura è stata creata mediante evasione di un ordine fornitoreo di un DD
 
 ### 3.1 Dati obbligatori
 
-import RowNumber from './../../../import/fields/row-number.md'
-
-<RowNumber />
 
 - **Tipo riga** offre la possibilità di selezionare, dalla combo-box, articoli con caratteristiche diverse:
 > - *Articolo codificato*: sono gli articoli codificati in anagrafica e possono essere contabilizzati in contabilità analitica e registrati in magazzino. <br />
@@ -327,13 +316,6 @@ Se si parte direttamente con l'inserimento dell'articolo, la sua classe, il codi
 - **Classe/Codice/Descrizione articolo**: si possono inserire  [manualmente](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) oppure con l'ausilio dell'[help di campo](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) il quale proporrà tutti i dati relativi inseriti nell'*Anagrafica articolo*. 
 Dopo l'inserimento dell'articolo, la sua *Descrizione* sarà ripresa automaticamente dall'anagrafica. Se l'articolo ha *Varianti*, sarà possibile selezionare la variante desiderata dal tab *Dati*.
 
-import UM from './../../../import/fields/item-um.md'
-
-<UM />
-
-import Quantity from './../../../import/fields/item-quantity.md'
-
-<Quantity />
 
 - **Prezzo**: il prezzo viene proposto dal listino inserito nell'anagrafica contatto; il listino di riferimento per l'articolo stesso è visualizzato nel tab *Sconti/Listini*. Lo stesso documento potrebbe contenere articoli con prezzi presi da listini diversi, se nell'anagrafica soggetto sono associati più listini in cascata (vedi [Anagrafica contatti](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/price-list)). Attraverso il doppio click nel campo **Listini** (tab *Sconti/Listini*) l'utente ha la possibilità di selezionare un listino diverso da quello di default, dal quale sarà ripreso il prezzo dell'articolo inserito.    
 In assenza del listino, il dato proposto può essere ripreso dal *costo ultimo* di anagrafica articolo, se nei [Parametri fatture di acquisto](/docs/configurations/parameters/purchase/purchase-orders-parameters/) il flag *Costo a zero in assenza di listini* non è attivo.
@@ -405,22 +387,6 @@ Se nei [Parametri fatture di acquisto](/docs/configurations/parameters/purchase/
 
 ### 3.6 Analitica
 
-import TabAnalytic from './../../../import/sections/tab-analytic.md'
-
-<TabAnalytic />
-
-
-### 3.7 Extra data
-
-import DocItemExtraData from './../../../import/sections/doc-item-extradata.md'
-
-<DocItemExtraData />
-
-### 3.8 Documenti allegati
-
-import DocAttachDocument from './../../../import/sections/doc-attach-document.md'
-
-<DocAttachDocument />
 
 ### 3.9 Materiale Conai per l'articolo
 
@@ -455,9 +421,6 @@ Nelle diverse sezioni di questo tab sono presentate le informazioni principali d
 
 ### 4.1 Sconti finali
 
-import SummariesFinalDiscount from './../../../import/sections/summaries-final-discount.md'
-
-<SummariesFinalDiscount />
 
 ### 4.2 Spese
 
@@ -507,6 +470,3 @@ Rappresenta il riepilogo delle scadenze del documento, per ogni *tipo* e *soluzi
 
 ### 4.6 Totali documento
 
-import SummariesDocumentTotal from './../../../import/sections/summaries-document-total.md'
-
-<SummariesDocumentTotal />
