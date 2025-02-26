@@ -146,11 +146,11 @@ Za dobavljača i sve ostale filtre unesene u odjeljku *Filtriraj*, u donjoj mre�
 Postupak preuzima sve podatke prisutne u narudžbi, a kao posljedica primijenit će se trenutni uvjeti kupnje prisutni u narudžbi, iako su se možda u međuvremenu promijenili.
 :::
 
-![](/img/it-it/purchase/purchase-invoices/insert-purchase-invoice/purchase-invoice-procedures/header-procedures/image10.png)
+![](/img/it-it/purchase/purchase-invoices/insert-purchase-invoice/purchase-invoice/header-procedures/image10.png)
 
 Koristite gumbe (**2**) za proširenje ![](/img/neutral/common/minus.png) / skupljanje ![](/img/neutral/common/plus.png) željenih narudžbi.
 
-Koristite oznake (**3**) za označavanje  ![](/img/neutral/common/check.png) / odznačavanje ![](/img/it-it/purchase/purchase-invoices/insert-purchase-invoice/purchase-invoice-procedures/header-procedures/image14.png) pojedinačnih stavki ili cijele narudžbe.
+Koristite oznake (**3**) za označavanje  ![](/img/neutral/common/check.png) / odznačavanje ![](/img/it-it/purchase/purchase-invoices/insert-purchase-invoice/purchase-invoice/header-procedures/image14.png) pojedinačnih stavki ili cijele narudžbe.
 
 Izvršite ispunjenje pomoću gumba **Prijenos**.
 
