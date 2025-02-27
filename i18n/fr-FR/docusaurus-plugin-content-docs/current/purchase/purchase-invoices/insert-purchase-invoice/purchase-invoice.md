@@ -1,5 +1,5 @@
 ---
-title: Crea Fattura - sezione superiore
+title: Nuova Fattura di acquisti
 sidebar_position: 1
 ---
 
@@ -7,12 +7,11 @@ La form si apre tramite il percorso **Acquisti > Fatture di acquisto > Nuova fat
 
 ## *Come creare una fattura di vendita*
 
-
 <details>
  
-<summary>Clicca per i passaggi fondamentali - DA CONTROLLARE!!!!</summary>
+<summary>Clicca per i passaggi fondamentali</summary>
  
-1. **Inserisci i dati obbligatori**: *Tipo Ordine* e *Fornitore*. *Anno*, *Numero* e *Data Inserimento* saranno proposti in automatico.  
+1. **Inserisci i dati obbligatori**: *Tipo* e *Fornitore*. *Anno*, *Numero* e *Data Inserimento* saranno proposti in automatico.  
  
 2. **Inserisci o modifica i dati facoltativi** della testata: come date di consegna, eventuali *sconti*, la *destinazione*, ecc.  
  
@@ -23,11 +22,11 @@ In alternativa è possibile selezionare come *Tipo riga* un *Articolo non codifi
  
 5. **Controlla la sezione dei Riepiloghi** ed inserisci eventuali spese o sconti finali.  
  
-6. Una volta controllato e confermato l’ordine, **inserisci una *Data conferma* e attiva il flag *Stampato* in testata** in modo da rendere l’ordine disponibile per le procedure di evasione.
+6. Una volta controllato e confermato l’ordine, **inserisci una *Data conferma* e attiva il flag *Stampato* in testata** in modo da rendere il documento disponibile per le procedure di evasione.
  
 </details>
 
-## 1. Dati obbligatori
+## **1. Dati obbligatori**
 
 - **Tipo fattura acquisto** predefinito in *Tabelle > Acquisti > [Tipo fattura di acquisto](/docs/configurations/tables/purchase/purchase-invoices-type)*;   
 Questo campo determina il range di numerazione del documento che si sta inserendo e propone automaticamente il *Numero interno* della fattura in base alla data inserimento e all'ultimo numero inserito;   
@@ -38,7 +37,7 @@ Questo campo determina il range di numerazione del documento che si sta inserend
 
 La form contiene una serie di tab.
 
-## 2. Testata
+## **2. Testata**
 
 Dopo aver selezionato i dati obbligatori nella sezione superiore, l'utente può continuare l'inserimento dei seguenti dati manualmente oppure con il [help di campo](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) oppure, in base alle procedure che sceglie, l'applicazione compila i campi *automaticamente*.
 
@@ -90,12 +89,6 @@ Nel caso in cui l'ordine viene completato con la procedura [Evasione da ordine](
 
 - **Reg. cont.**: osizionato sotto la voce *Nazione*. Riporta numero, data e protocollo della registrazione contabile derivata dalla contabilizzazione della fattura. 
 
-#### Pulsanti specifici (dettagliati nella sezione *Procedure testata*)
-
-> **Evasione da ordini**: richiama la procedura per creare una fattura da un ordine fornitore. Si attiva con l'inserimento del fornitore e del tipo fattura. L'ordine da evadere dovrà aver impostato il flag *Stampato* e la *Data conferma ordine* valorizzata.    
-> **Evasione DDT**: richiama la procedura per creare una fattura da un DDT. Si attiva con l'inserimento del fornitore e del tipo fattura. Il DDT da evadere dovrà aver impostato il flag *Controllata*.    
-> **Carico automatico nel magazzino**: utilizzato per caricare automaticamente il magazzino con gli articoli selezionati. Questo campo sarà editabile solo una volta attivato il campo *Controllata* e inserito il *Numero documento*.
-
 ### 2.3 Pagamenti
 
 Le **Soluzioni di pagamento** sono riportate in automatico dall'*Anagrafica fornitore > tab Pagamenti* e possono essere modificate/cancellate dall'utente.
@@ -110,6 +103,9 @@ Se al **Tipo pagamento** è associato uno sconto finanziario, l'importo dello sc
 
 Vengono proposti solo gli sconti predefiniti ripresi dall'*Anagrafica fornitore > tab Sconti* e possono essere modificate/cancellate dall'utente.
 
+import TabDiscount from './../../../import/sections/tab-discount.md'
+
+<TabDiscount />
 
 ### 2.5 Spedizione
 
@@ -119,7 +115,6 @@ Il combo box propone tutti i *Destinatari* e le *Destinazioni* inserite nell'ana
 
 Gli indirizzi di spedizione (destinatario/destinazione e vettore) possono essere inseriti anche solo descrittivi senza essere precedentemente inseriti tra i contatti. 
 
-
 ### 2.6 Vettore
 
 In questo campo è possibile inserire il Vettore che effettuerà la spedizione. Se questo è stato inserito nell'anagrafica fornitore, tab [Consegna](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/delivery) sarà possibile selezionarlo dal menù a tendina della seconda colonna, in alternativa sarà sufficiente fare doppio click sulla terza colonna (*Vettore*) per selezionare uno dei contatti della società.
@@ -128,22 +123,23 @@ Opzionalmente si possono aggiungere i dettagli della *Targa* del vettore e la *D
 
 ### 2.7 Extra Data
 
+import TabExtraData from './../../../import/sections/tab-extra-data.md'
 
+<TabExtraData />
 
-### 2.8 Procedure testata
+## **Procedure testata:**
 
-#### Carico automatico in magazzino
+### *Carico automatico in magazzino*
 
 Questa procedura viene lanciata con l'aiuto del pulsante **Carico automatico nel magazzino** che si trova nella testata del documento e rispetta una serie di parametri impostati precedentemente nella fattura. Per dettagli consultare la procedura identica: [Carico fatture di acquisto in magazzino](/docs/purchase/purchase-invoices/procedures/purchase-invoices-load-on-warehouse).
 
 Il risultato può essere visualizzato in Logistica > [Registrazioni](/docs/logistics/warehouse/stock-records/records) oppure nella procedura [Carico fatture di acquisto in magazzino](/docs/purchase/purchase-invoices/procedures/purchase-invoices-load-on-warehouse), tab *Riepilogativo*.
 
-
 :::note Nota
-Se nei *Parametri fatture di acquisto* è attivo il flag **Carico/Scarico automatico**, al momento dell'attivazione del flag *Controllata* nella testata della fattura sarà automaticamente proposto di caricare il documento a magazzino. 
+Se nei *Parametri fatture di acquisto* è attivo il flag **Carico/Scarico automatico**, al momento dell'attivazione del flag *Controllata* nella testata della fattura sarà automaticamente proposto di caricare il documento a magazzino. Perciò, questo campo sarà editabile solo una volta attivato il campo *Controllata* e inserito il *Numero documento*.
 :::
 
-#### Evasione DDT
+### *Evasione DDT*
 
 La procedura permette la creazione di una fattura di acquisto mediante evasione di uno o più DDT di acquisto.
 
@@ -183,7 +179,7 @@ Per completare la procedura bisognerà poi cliccare sul pulsante *Trasferimento*
 > **Seleziona**: permette di attivare i flag per tutte le righe selezionate con il mouse.   
 > **Deseleziona**: permette di disattivare i flag per tutte le righe selezionate con il mouse.
 
-#### Evasione da ordine
+### *Evasione da ordine*
 
 La procedura permette la creazione di una fattura di acquisto mediante evasione di uno o più ordini fornitore.
 
@@ -194,7 +190,7 @@ Per poter utilizzare questa procedura vi sono delle condizioni iniziali che devo
 - i/il fornitore degli ordini deve essere lo stesso della fattura;
 - l'ordine che si vuole evadere deve avere attivo il flag *Stampato* e deve essere già stato *Confermato*.
 
-*Procedimento*:
+#### Procedimento  
 
 Si dovrà andare ad impostare nella testata della nuova fattura, il [Tipo fattura](/docs/configurations/tables/purchase/purchase-invoices-type) che si vuole creare e il *Fornitore*. Una volta inseriti questi dati, bisognerà cliccare sul pulsante *Evasione da ordini* per aprire la form di evasione.
 
@@ -233,7 +229,7 @@ Per completare la procedura bisognerà poi cliccare sul pulsante *Evasione*, che
 Nel caso di più evasioni parziali per una determinata riga articolo all'interno della stessa fattura è possibile scegliere se sommare le quantità in un'unica riga nella fattura oppure se mantenere righe distinte, rispettivamente disattivando o attivando il flag **Evasione quantità articolo non sommata** nella tabella dei [Tipi fatture di acquisto](/docs/configurations/tables/purchase/purchase-invoices-type).
 :::
 
-#### Sdi - Chiusura documenti
+### *Sdi - Chiusura documenti*
 
 Con il bottone **Sdi - Chiusura documenti** viene aperto il modulo per collegare manualmente eventuali ordini e DDT di acquisto alle fatture generate dagli xml ricevuti. Questa procedura viene inoltre avviata automaticamente quando viene effettuato questo collegamento dalla maschera [Documenti acquisti in entrata](/docs/finance-area/sdi-documents/incoming-purchase-documents).          
 Il modulo è suddiviso in due sezioni principali: una a sinistra, dedicata alla visualizzazione dei DDT e degli Ordini, e una a destra, che mostra gli articoli della fattura. 
@@ -286,13 +282,11 @@ Durante la fase di collegamento, il sistema esegue alcuni controlli per garantir
 
 Se uno o più di questi controlli falliscono, il collegamento non viene effettuato automaticamente e l'errore viene riportato nella griglia degli errori, con l'indicazione del numero di riga della fattura e la descrizione dell'errore.
 
-## 3. Articoli
-sidebar_position: 4
----
+## **3. Articoli**
 
 In questo tab vengono inseriti tutti gli articoli con i relativi dati.
 
-
+import InsertMode from './../../../import/sections/insert-mode.md'
 
 <InsertMode />
 
@@ -304,7 +298,7 @@ Se la fattura è stata creata mediante evasione di un ordine fornitoreo di un DD
 
 ### 3.1 Dati obbligatori
 
-
+import RowNumber from './../../../import/fields/row-number.md'
 
 <RowNumber />
 
@@ -322,7 +316,13 @@ Se si parte direttamente con l'inserimento dell'articolo, la sua classe, il codi
 - **Classe/Codice/Descrizione articolo**: si possono inserire  [manualmente](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) oppure con l'ausilio dell'[help di campo](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) il quale proporrà tutti i dati relativi inseriti nell'*Anagrafica articolo*. 
 Dopo l'inserimento dell'articolo, la sua *Descrizione* sarà ripresa automaticamente dall'anagrafica. Se l'articolo ha *Varianti*, sarà possibile selezionare la variante desiderata dal tab *Dati*.
 
+import UM from './../../../import/fields/item-um.md'
 
+<UM />
+
+import Quantity from './../../../import/fields/item-quantity.md'
+
+<Quantity />
 
 - **Prezzo**: il prezzo viene proposto dal listino inserito nell'anagrafica contatto; il listino di riferimento per l'articolo stesso è visualizzato nel tab *Sconti/Listini*. Lo stesso documento potrebbe contenere articoli con prezzi presi da listini diversi, se nell'anagrafica soggetto sono associati più listini in cascata (vedi [Anagrafica contatti](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/price-list)). Attraverso il doppio click nel campo **Listini** (tab *Sconti/Listini*) l'utente ha la possibilità di selezionare un listino diverso da quello di default, dal quale sarà ripreso il prezzo dell'articolo inserito.    
 In assenza del listino, il dato proposto può essere ripreso dal *costo ultimo* di anagrafica articolo, se nei [Parametri fatture di acquisto](/docs/configurations/parameters/purchase/purchase-orders-parameters/) il flag *Costo a zero in assenza di listini* non è attivo.
@@ -391,8 +391,22 @@ Se l'articolo non prevede la gestione dei [Lotti e Serial Number](/docs/erp-home
 Se nei [Parametri fatture di acquisto](/docs/configurations/parameters/purchase/purchase-invoices-parameters) il flag *Lotti e S.N. obbligatori* è disabilitato sarà possibile salvare il documento senza inserire i lotti/serial number. Inoltre, se la *Tipologia di prelievo* del lotto codificata nell'[anagrafica articolo](/docs/erp-home/registers/items/create-new-items/item-registry/lots-and-serial-number) è *FIFO* o *Data scadenza* al momento del carico a magazzino della fattura i lotti saranno proposti in automatico, se non sono già stati inseriti in precedenza.
 :::
 
+### 3.6 Analitica
+
+import TabAnalytic from './../../../import/sections/tab-analytic.md'
+
+<TabAnalytic />
 
 
+### 3.7 Extra data
+
+import DocItemExtraData from './../../../import/sections/doc-item-extradata.md'
+
+<DocItemExtraData />
+
+### 3.8 Documenti allegati
+
+import DocAttachDocument from './../../../import/sections/doc-attach-document.md'
 
 <DocAttachDocument />
 
@@ -405,15 +419,13 @@ Al salvataggio del documento, o alla pressione del pulsante **Ricalcolo Conai**,
 
 Per maggiori informazioni sulla [Gestione Conai](/docs/purchase/purchase-flow/conai) in Fluentis vedere la pagina allegata.
 
-
 ### 3.10 Costi da ricevere 
 
 I tab **Costi da ricevere** e **Spese** non sono gestiti nella versione corrente di Fluentis.
 
-
 ### 3.11 Sezione valori
 
-La sezione in basso, a destra, presenta il riassunto dei costi che concorrono alla formazione del prezzo finale di ciascun articolo selezionato nella griglia degli articoli. I campi presenti sono: 
+La sezione in basso, a destra, presenta il riassunto dei costi che concorrono alla formazione del prezzo finale di ciascun articolo selezionato nella griglia degli articoli. 
 
 - **Prezzo unitario**: il valore del campo *Prezzo*; 
 - **Quantità**: il valore del campo *Quantità* o *Quantità alternativa*, a seconda del flag *Prezzo unità di misura alternativa*;
@@ -423,12 +435,15 @@ La sezione in basso, a destra, presenta il riassunto dei costi che concorrono al
 - **Imposta**: Importo * aliquota IVA dell'articolo; 
 - **Totale**: Importo + Imposta.
 
-## 4. Riepiloghi
+## **4. Riepiloghi**
 
 Nelle diverse sezioni di questo tab sono presentate le informazioni principali dell'intero documento e alcuni pulsanti specifici.
 
 ### 4.1 Sconti finali
 
+import SummariesFinalDiscount from './../../../import/sections/summaries-final-discount.md'
+
+<SummariesFinalDiscount />
 
 ### 4.2 Spese
 
@@ -470,12 +485,12 @@ Rappresenta il riepilogo delle scadenze del documento, per ogni *tipo* e *soluzi
 - **Tipo sconto**: Tipo di sconto finanziario.
 - **Valore sconto**: Valore dello sconto finanziario su incasso.
 
-
 ### 4.5 Altri campi
 
 **Note finali**: è un campo libero che può essere compilato dall'utente anche con l'ausilio dell'*Help note codificate*.
 
-
 ### 4.6 Totali documento
 
+import SummariesDocumentTotal from './../../../import/sections/summaries-document-total.md'
 
+<SummariesDocumentTotal />
