@@ -14,13 +14,13 @@ Con questa modalità di pianificazione è possibile creare sequenze ottimali di 
 
 ## Commesse
 
-Il tab commesse mostra solamente le commesse che si trovano in stato non schedulato.
+Il tab commesse mostra solamente le commesse che si trovano in stato non esaminato.
 
 *Pulsanti specifici*:
 
 > **Schedulazione F.C.S.**: consente al sistema di schedulare a capacità finita le fasi di lavorazione dei documenti previsti;  
 > **Modifica data commessa**: questo pulsante consente di modificare la data commessa;  
-> **Cambia priorità**: tramite questa funzionalità si può variare la piorità delle commesse selezionate;    
+> **Cambia priorità**: tramite questa funzionalità si può variare la priorità delle commesse selezionate;    
 > **Parametri MRP**: consente di aprire i parametri MRP delle commesse selezionate;    
 > **Distinta base**: consente di aprire le distinte basi delle commesse selezionate;    
 > **Ciclo di lavoro**: consente di aprire i cicli di lavoro delle commesse selezionate.        
@@ -40,23 +40,23 @@ Il tab commesse mostra solamente le commesse che si trovano in stato non schedul
 Dal tab **Commesse** è possibile selezionare le commesse non schedulate che si vogliono prendere in considerazione. 
 Premendo il pulsante **Schedulazione F.C.S.** la procedura eseguirà una prima schedulazione a capacità infinita sulle commesse non schedulate appena selezionate, utilizzando i parametri presenti nel tab **Parametri generali** e di seguito eseguirà una schedulazione a capacità finita su tutti i documenti indicati nei **Parametri schedulazione a capacità finita**.
 
-Come nel caso della schedulazione generale, gli ordini pianificati si potranno visualizzare nella form [Ricerca ordini pianificati](/docs/planning/ms-master-scheduling/planned-orders/search-planned-orders).
+Come nel caso della pianificazione generale, gli ordini pianificati si potranno visualizzare nella form [Ricerca ordini pianificati](/docs/planning/ms-master-scheduling/planned-orders/search-planned-orders).
 
-Per visualizzare tutte le schedulazioni effettuate e i relativi errori / warning creati per ogni  commessa, basterà spostarsi nel tab **Storico**.    
+Per visualizzare tutte le pianificazione effettuate e i relativi errori / warning creati per ogni  commessa, basterà spostarsi nel tab **Storico**.    
 
 ## Parametri di schedulazione generale
 
-Tutti i parametri relativi alla fase di schedulazione generale posso essere consultati direttamente nell'articolo relativo alla [Schedulazione generale](/docs/planning/ms-master-scheduling/general-schedule) nella sezione **Parametri di schedulazione generale**.        
+Tutti i parametri relativi alla fase di Pianificazione generale possono essere consultati direttamente nell'articolo relativo alla [Pianificazione generale](/docs/planning/ms-master-scheduling/general-schedule) nella sezione **Parametri di pianificazione generale**.        
 
 ## Parametri schedulazione a capacità finita   
 
 :::note Nota
-Prima di procedere con la schedulazione F.C.S., è importante settare all'interno di questo tab i parametri  da seguire per eseguire la schedulazione a capacità finita.
+Prima di procedere con la schedulazione F.C.S., è importante settare all'interno di questo tab i parametri da seguire per eseguire la schedulazione a capacità finita.
 ::: 
 
 **Schedulazione al più presto o al più tardi**: questi flag sono disabilitati ed è attivo sempre e solo il flag *Al più presto*, in quanto la schedulazione a capacità finita cerca di saturare al più presto i centri di lavoro;        
 
-**Dalla data**: permette di definire la data da cui iniziare la schedulazione a capacità finita; è proposta come *Data odierna* ma può essere incrementata per un numero di giorni pari al valore che si può inserire dai *Parametri MPS* nel campo *Giorni prossima schedulazione*
+**Dalla data**: permette di definire la data da cui iniziare la schedulazione a capacità finita; di default è proposta la data odierna, ma può essere incrementata di un numero di giorni pari al valore che si può inserire dai [Parametri MS](/docs/configurations/parameters/production/mps-parameters) nel campo *Giorni prossima schedulazione*;
 
 **Operazione su ordini pianificati Ricalcolo tempo**: il flag è sempre attivo e permette di ricalcolare il tempo negli ordini pianificati;    
 
@@ -64,21 +64,25 @@ Prima di procedere con la schedulazione F.C.S., è importante settare all'intern
 
 **Ricalcolo fasi**: permette di selezionare quali fasi di produzione, *Non iniziate* e/o *Già iniziate*, deve prendere in considerazione la schedulazione F.C.S.;    
 
-**Modalità di ricalcolo fasi già iniziate**: permette di segliere la modalità con cui la procedura di schedulazione F.C.S. deve ricalcolare la parte rimanente da eseguire delle fasi già iniziate. Si tratta di definire se dare la priorità al tempo lavorato flaggando *Tempo già lavorato e poi Quantità già prodotte*, oppure dare la priorità alla quantità prodotta con il flag *Quantità già prodotte e poi Tempo già lavorato*;     
+**Modalità di ricalcolo fasi già iniziate**: permette di scegliere la modalità con cui la procedura di schedulazione F.C.S. deve ricalcolare la parte rimanente da eseguire delle fasi già iniziate. Si tratta di definire se dare la priorità al tempo lavorato flaggando *Tempo già lavorato e poi Quantità già prodotte*, oppure dare la priorità alla quantità prodotta con il flag *Quantità già prodotte e poi Tempo già lavorato*;     
 
 **Blocca gli ordini tassativi**: permette selezionare le tipologie di ordini tra *Pianificati*, *Lanciati* ed *Esecutivi*, che nel caso abbiano il flag *Tassativo* abilitato non saranno modificati dalla procedura di schedulazione F.C.S.;    
 
-**Inizia lavori su disponibilità materiale**: se attivo, la schedulazione F.C.S. verificherà anche la disponibilità di materiale fino alla data indicata nel campo **Controllo disponibilità fino al**, oltre a quella data la schedulazione proseguira senza prendere in considerazione la disponibilità di materiale. Attivando il flag **Controllo disponibilità solo sui Materiali critici** la procedura verificherà la diposnibilità solamente per i materiali che in disitinta base hanno il flag *Critico* attivo;   
+**Inizia lavori su disponibilità materiale**: se attivo, la schedulazione F.C.S. verificherà anche la disponibilità di materiale fino alla data indicata nel campo **Controllo disponibilità fino al**, oltre a quella data la schedulazione proseguirà senza prendere in considerazione la disponibilità di materiale. Attivando il flag **Controllo disponibilità solo sui Materiali critici** la procedura verificherà la disponibilità solamente per i materiali che in distinta base hanno il flag *Critico* attivo;   
 
-**Considera disponibiltà Materiale**: permetterà di selezionare la modalità con cui considerare la disponibilità del materiale tra *Generale* (indipendentemente dalla commessa di produzione ch elo impegna) e *Per Commessa Prod.*; attualmente è prevista solamente la regola *Generale*.
+**Considera disponibilità Materiale**: permetterà di selezionare la modalità con cui considerare la disponibilità del materiale tra *Generale* (indipendentemente dalla commessa di produzione ch elo impegna) e *Per Commessa Prod.*; attualmente è prevista solamente la regola *Generale*.
 
-Nella parte sottostante della form è possibile indicare con quali criteri, a paratià di documento, la scheduazione a capacità finita deve operare.
+Nella parte sottostante della form è possibile indicare con quali criteri, a parità di documento, la schedulazione a capacità finita deve operare.
 
 :::note Nota
 In accordo con i flag precedentemente attivati o meno, la schedulazione F.C.S. schedulerà i vari documenti nel seguente ordine: Fasi già iniziate, Fasi non ancora iniziate, Ordini di produzione in stato esecutivo e poi lanciato ed in fine Ordini pianificati. 
 ::: 
 
-Dalla tabella **Scelte priorità schedulazione** è possibile trascinare con il drag & drop le singole voci all'interno della tabella **Piorità schedulaizone**, dove in quest'ultima è possibile variarne la priorità. Nel caso in cui vengano selezionare le voci *Clienti critici* oppure *C.d.L critici* si abiliterà anche la tabella **Dettaglio priorità schedulazione** dove sarà possibile inserire rispettivamente i clienti o i centri di lavoro, potendo variare anche in questo caso la priorità.   
+Dalla tabella **Scelte priorità schedulazione** è possibile trascinare con il drag & drop le singole voci all'interno della tabella **Priorità schedulazione**, dove in quest'ultima è possibile variarne la priorità. Nel caso in cui vengano selezionare le voci *Clienti critici* oppure *C.d.L critici* si abiliterà anche la tabella **Dettaglio priorità schedulazione** dove sarà possibile inserire rispettivamente i clienti o i centri di lavoro, potendo variare anche in questo caso la priorità.   
+
+:::note Attenzione
+La priorità per *Sequenza fasi* e *CDL critici* non viene utilizzata nello standard ed è stata inserita per poter schedulare solo con delle procedure custom.
+::: 
 
 *Pulsanti specifici*:
 

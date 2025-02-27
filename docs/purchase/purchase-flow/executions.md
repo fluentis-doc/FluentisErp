@@ -47,7 +47,7 @@ La stessa procedura può essere utilizzata per la creazione Ordini fornitore da 
 La procedura di evasione da ordine a Documento di Trasporto è disponibile in due modalità:
 
 - Dal Menù [Procedure](/docs/purchase/purchase-delivery-note/procedures/create-delivery-notes-from-orders): andando su *Acquisti > DDT di Acquisto > Procedure > Evasione da ordini*.
-- Evasione dalla [Testata](/docs/purchase/purchase-delivery-note/insert-purchase-delivery-note/header) del DDT: utilizzando il pulsante *Evasione da Ordine* per aprire una finestra di selezione degli ordini confermati del fornitore da trasferire nel DDT.
+- Evasione dalla [Testata](/docs/purchase/purchase-delivery-note/insert-purchase-delivery-note/purchase-delivery-note) del DDT: utilizzando il pulsante *Evasione da Ordine* per aprire una finestra di selezione degli ordini confermati del fornitore da trasferire nel DDT.
 
 Questa procedura permette di trasformare uno o più ordini di acquisto in uno o più DDT. Prima di avviare la procedura, è necessario configurare il tipo di DDT desiderato nella tabella [Tipi ordine fornitore](/docs/configurations/tables/purchase/purchase-orders-type/). La procedura automatica consente la creazione di DDT solo se l'ordine è stampato e confermato.
 
@@ -68,7 +68,7 @@ L'evasione da ordine a DDT è completabile anche dalla testata della fattura ste
 La procedura di evasione da DDT a fattura può essere avviata in due modalità:
 
 - Dal Menù [Procedure](/docs/purchase/purchase-invoices/procedures/purchase-delivery-note-valorization): andando su *Acquisti > Fatture di acquisto > Procedure > Valorizzazione DDT di acquisto*. 
-- Dalla [Testata](/docs/purchase/purchase-invoices/insert-purchase-invoice/header) della Fattura di Vendita: utilizzando il pulsante *Evasione DDT* nella testata della fattura.
+- Dalla [Testata](/docs/purchase/purchase-invoices/insert-purchase-invoice/purchase-invoice) della Fattura di Vendita: utilizzando il pulsante *Evasione DDT* nella testata della fattura.
 
 Questa procedura permette di creare una o più fatture a partire da uno o più DDT. La procedura si compone di tre tab principali:
 

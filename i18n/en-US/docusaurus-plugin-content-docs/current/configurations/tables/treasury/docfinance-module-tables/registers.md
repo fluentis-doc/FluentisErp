@@ -1,26 +1,14 @@
 ---
-title: Registers
+title: Nomenclature Data
 sidebar_position: 1
 ---
 
-The Registers table consists of 4 sections:
+The 'Nomenclature Data' table consists of 4 sections:
 
-Chart of Accounts: in this section it is necessary to indicate Bank and RBN fields for bank registers detail accounts. The first field indicates the reference lending institution, while the second one the account type (ordinary account, under usual reserve, …) associated to the same detail account: these two fields can be viewed and edited event within the bank register. As regards the customer/vendor type detail account it is possible to managed even the “Derogability” field from this mask. This field can be managed even by the main contacts register mask, for single detail account line.
+**[Chart of Accounts](/docs/erp-home/registers/accounting/analytic-chart-of-accounts)**: in this section, it is necessary to indicate, for the bank detail accounts, the fields 'Bank' and 'RBN'. The first indicates the relevant credit institution, while the second indicates the type of account (current account, subject to collection, ...) associated with the detail account itself: these two fields are visible and editable also within the bank register. For customer/supplier type detail accounts, it is also possible to manage the 'Deregulation' field from this mask, which can also be managed from the main mask of the register printing for each single detail account line;
 
-Due Register Flux: in this section it is possible to attribute the DocFinance code to every cash flow flux (refer to the same module documentation). It is possible to assign the same code to more flux lines.
+**Due Register Flows**: in this section, a code for DocFinance must be assigned to each cash flow stream (refer to the basic documentation of the corresponding module). The same code can be assigned to multiple flow lines;
 
-Payment Types: in this section it is necessary to indicate the related DocFinance code for every payment type (it is possible to assign the same code to more flux lines). In addition it is possible to indicate a derogability code of payment type, that will be used during the Doc Finance data export.
+**[Payment Types](/docs/configurations/tables/treasury/bills-portfolio-module-tables/payment-types)**: in this section, the relevant corresponding code in DocFinance must be indicated for each payment type (the same code can be assigned to multiple lines). It is also possible to indicate a deregulation code for the payment type, which will be used in the data export for DocFinance;
 
-Company: for each company it is obligatory to indicate the DocFinance code. Companies that have no code will be excluded by export/import data procedures for/from DocFinance.
-
-
-
-| Function | Meaning |
-| --- | --- |
-| Search | Through this button it is possible to perform the search in all mask lines, according to filters set. |
-
-
-
-
-
-
+**Company**: for each company, it is mandatory to specify the corresponding code for DocFinance. Companies without a code will be excluded from the data export/import procedures to/from DocFinance.
