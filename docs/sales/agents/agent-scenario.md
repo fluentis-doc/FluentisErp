@@ -1,6 +1,6 @@
 ---
 title: Scenario gestione agente - esempi
-sidebar_position: 2
+sidebar_position: 5
 ---
 
 In questa pagina illustriamo alcuni esempi per comporre un possibile scenario di gestione agente.

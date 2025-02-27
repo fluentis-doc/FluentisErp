@@ -5,7 +5,7 @@ sidebar_position: 1
 
 La form si apre tramite il percorso **Acquisti > Fatture di acquisto > Nuova fattura** oppure tramite il pulsante **Nuova** che si trova nella form [Ricerca fatture di acquisto](/docs/purchase/purchase-invoices/insert-purchase-invoice/search-purchase-invoices).
 
-## *Come creare una fattura di vendita*
+## *Come creare una fattura di acquisti*
 
 <details>
  
