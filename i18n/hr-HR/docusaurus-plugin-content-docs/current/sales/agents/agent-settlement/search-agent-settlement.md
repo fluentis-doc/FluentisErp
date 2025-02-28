@@ -15,4 +15,4 @@ Za otvaranje detalja dokumenta, dovoljno ga je odabrati i dvaput kliknuti mišem
 [Zajedničke funkcionalnosti, gumbe i polja](/docs/guide/common)              
 Dodavanje novih polja u obrasce pretraživanja    
 
-Također, iz ovog obrasca moguće je  [Stvoriti novi obračun](/docs/sales/agents/insert-settlement), klikom na gumb **Novo**.
+Također, iz ovog obrasca moguće je  [Stvoriti novi obračun](/docs/sales/agents/agent-settlement/insert-settlement), klikom na gumb **Novo**.
