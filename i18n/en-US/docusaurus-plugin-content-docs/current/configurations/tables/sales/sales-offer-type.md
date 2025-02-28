@@ -19,7 +19,7 @@ To insert new records, you need to click on the first empty row in the grid or p
 
 **Code/Description:** fields where the code and description of the document type are indicated (the code entered must be unique).
 
-**Hierarchical structure:** by enabling this flag, the items in the offer will follow a hierarchical structure; for more details, refer to the related [documentation](/docs/sales/offers/new-offer/group-items).
+**Hierarchical structure:** by enabling this flag, the items in the offer will follow a hierarchical structure; for more details, refer to the related [documentation](/docs/sales/offers/insert-offer).
 
 **Modify version:** this flag indicates the types of offer for which to manage versions.
 

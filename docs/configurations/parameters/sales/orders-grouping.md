@@ -19,7 +19,7 @@ In questa maschera vengono decise le regole di raggruppamento per la procedura:
 > - anno: le offerte dello stesso anno creeranno un singolo ordine
 > - mese: le offerte dello stesso mese creeranno un singolo ordine
 > - cambio: le offerte con lo stesso cambio creeranno un singolo ordine
-> - progetto: le offerte con lo stesso progetto in [Testata](/docs/sales/offers/new-offer/header) creeranno un singolo ordine
+> - progetto: le offerte con lo stesso progetto in [Testata](/docs/sales/offers/insert-offer) creeranno un singolo ordine
 > - tipo e soluzione di pagamento: le offerte con le stesse condizioni di pagamento creeranno un singolo ordine
 > - destinazione: le offerte con la stessa destinazione e vettore creeranno un singolo ordine
  
