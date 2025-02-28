@@ -1,42 +1,36 @@
 ---
-title: Purchase Orders Type
-sidebar_position: 10
+title: Purchase Order Types 
+sidebar_position: 3
 ---
 
-The purchase order type is used in order to set the property of an order.
+This table is essential for defining the various types of purchase orders available, each with its own characteristics. It can be accessed from **Configuration > Tables > Purchases > Purchase Order Types**.
 
-RIBBON BAR: it represents the Form menu, that is the area in which it is possible to perform actions linked to the procedure in use. The list of the features is the following:
+The fields present are:
 
+**Code/Description**: mandatory fields to define the type and description of the purchase order.
 
+**Numeration/Description**: mandatory field for the [Numeration](/docs/configurations/tables/fluentis-numerations) to be associated with the order type.
 
-| Function | Meaning |
-| --- | --- |
-| Search | Button to search document type. |
-| Insert | Button to insert a new document type. |
-| Delete | Button to delete document type. |
-| Preview | Button to launch print preview. |
-| Print | Button to perform the print according to the filters set and to the printer configurations. |
+**Automatic Order Confirmation**: if set, at the time of creating an order with this *Order Type*, the *Order Confirmation Date* field present in the order header is also filled with the current date.
 
-**Type**: Sales order type.
+**Cash Flow**: if set, the order type contributes to the cash flow calculation.
 
-**Description**: Order type description.
+**Warehouse/Warehouse Description**: it is the receiving warehouse of the goods that is automatically set on the item lines of orders created with this order type.
 
-**Num. Type / Description**: Numeration type associated to the order type.
+**Template/Template Description**: it is the [Template](/docs/configurations/tables/logistics/warehouse-templates) for the movement of incoming goods, which is automatically set on the item lines of orders created with this type.
 
-**Auto Execution**: If set, the order can be executed from purchase delivery note documents, goods receipt and purchase invoices.
+**Control availability**: if set, orders of this type contribute to the availability calculation and are visible in the [Availability Analysis](/docs/erp-home/registers/items/availability-analysis) form.
 
-**Cash Flow**: If set, the order type contributes the cash flow calculation.
+**Agricultural VAT Purchases**: if active, at the time of order creation, the system checks if there is an agricultural VAT code for the item used; if it does not exist, the normal VAT code is used.
 
-**Ware. / Warehouse Description**: Warehouse of receipt of goods contained on orders belonging of this order type.
+**Extra Data Matrix Management**: if active, it allows displaying, in the case of managing items with matrices, an additional tab for entering the quantity values for each matrix cell.
 
-**Template / Template Description**: Movement template of incoming goods contained on orders of this order type.
+**Price list to be updated**: serves to automatically update the list prices based on the prices specified in the order. If this flag is not selected, it will still be possible to manually update the list price on the order lines based on the price indicated on the line.
 
-**Control Availability**: If set, this type of orders contribute to the availability calculation.
+**Delivery Note type**: it is the type of purchase DDT to create when using the [Get from Orders](/docs/purchase/purchase-delivery-note/procedures/create-delivery-notes-from-orders) procedure.
 
-**VAT Purch. Agr.**: If set, it is searched for item if there is the agricultural VAT code, if it does not exist there is the possibility to consider the normal VAT code.
+**Print Report**: in this field, you can choose the default print to use (it should be noted that to print the default report, during printing, it will be necessary to select the *Multiple Prints* option); in the next field, it is possible to indicate a **Number of copies** to print.
 
+**Vendor control**: serves to activate a control whereby, at the time of selecting the recipient of the order, the procedure will allow us to select only supplier-type accounts and not customer-type accounts.
 
-
-
-
-
+**Fixed Assets Management**: this flag enables the [Fixed Assets Management](/docs/finance-area/fixed-assets/general-overview) for that order type and allows you to select the **Operation type** that you want to perform.
