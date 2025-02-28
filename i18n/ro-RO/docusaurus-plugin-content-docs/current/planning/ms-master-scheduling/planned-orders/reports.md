@@ -1,30 +1,30 @@
 ---
-title: Raport comenzi planificate (Raport ordine planificate)
+title: Stampa Ordini Produzione
 sidebar_position: 6
 ---
 
-Această formulă permite imprimarea unei liste de comenzi de producție, cu posibilitatea de a detalia vizualizarea.
+Questa form consente di stampare una lista di ordini di produzione, con possibilità di dettagliare la visualizzazione.
 
-**Filtre**
+**Filtri**
 
-Pe lângă filtrele comune, se poate alege, prin intermediul unui indicator special, dacă se doresc vizualizate și *Comenzile de întreținere (Ordini di manutenzione)*.
+A parte i filtri comuni, si può scegliere, tramite l'apposito flag, se si vogliono visualizzare anche gli *Ordini di manutenzione*.
 
-**Prelucrări Lucrări()**
+**Lavorazioni**
 
-În această secțiune, este posibil să se indice prin intermediul unor indicatori dacă se doresc vizualizate toate comenzile de producție fără distincție sau se poate alege să se vizualizeze doar comenzile expirate sau întârziate.
+In questa sezione, è possibile andare ad indicare tramite dei flag, se si vogliono visualizzare tutti gli ordini di produzione indistintamente oppure si può scegliere se visualizzare solamente gli ordini scaduti o in ritardo.
 
-**Ordonare**
+**Ordinamento**
 
-În această secțiune, este posibil să se aleagă prin intermediul indicatorilor corespunzători pe ce bază să se ordoneze datele în cadrul imprimării. Se poate alege astfel să se ordoneze rezultatele în funcție de numărul comenzii, articol, descrierea acestuia, data început/data sfârșit sau în funcție de comanda;
+In questa sezione è possibile scegliere tramite gli appositi flag, su cosa basare l'ordinamento dei dati all'interno della stampa. Si potrà quindi scegliere se ordinare i risultati in base al numero d'ordine, all'articolo o alla sua descrizione, alla data inizio/data fine oppure in base alla commessa;
 
-**Detaliu**
+**Dettaglio**
 
-În această secțiune, este posibil să se decidă, prin intermediul indicatorilor corespunzători, dacă se dorește sau nu vizualizarea listei de materiale conținute în comandă și a etapelor preconizate; este de asemenea posibil să se vizualizeze personalul implicat și semnalările legate. Desigur, aceste detalii sunt prevăzute doar pentru comenzile planificate de producție și de lucru pe bază de comision.
+In questa sezione è possibile decidere, tramite gli appositi flag, se visualizzare o meno la lista dei materiali contenuti nell'ordine e delle fasi previste; è possibile anche visualizzare il personale coinvolto e le segnalazioni collegate. Ovviamente questi dettagli sono previsti solamente per gli ordini pianificati di produzione e di conto lavoro.
 
-**Stare ordin**
+**Stato ordine**
 
-În cele din urmă, în această secțiune este posibil să se aleagă, prin intermediul indicatorilor corespunzători, dacă se doresc vizualizate toate comenzile, indiferent de starea lor, sau dacă se doresc vizualizate doar cele cu anumite stări între Lansat, Executiv, Evas și Istoric.
+Infine in questa sezione è pssibile scegliere, tramite gli appositi flag, se visualizzare tutti gli ordini indipendentemente dal loro stato, oppure se visualizzare solamente quelli aventi determinati stati tra Lanciato, Esecutivo, Evaso e Storicizzato.
 
-După ce au fost setate diferitele parametrii de filtrare și vizualizare, va fi suficient să se selecteze din bara de ribbon tipul de imprimare pe care doresc să-l lanseze (doar în cazul în care există mai multe tipuri preconizate) prin intermediul combo-ului corespunzător, apoi să se lanseze previzualizarea imprimării sau direct imprimarea documentului.
+Una volta impostati i vari parametri di filtro e visualizzazione, basterà andare a selezionare nella ribbon bar tramite il tipo di stampa che si vuole lanciare (solo nel caso vi siano più tipologie previste) tramite l'apposita combo, e successivamente lanciare l'anteprima di stampa o direttamente la stampa del documento.
 
-Pentru detalii despre funcționarea comună a formularelor, consultați linkul [Funcționalități, butoane și câmpuri comune](/docs/guide/common).
+Per dettagli sul funzionamento comune delle form fare riferimento al link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).

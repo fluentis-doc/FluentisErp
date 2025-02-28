@@ -1,31 +1,16 @@
 ---
-title: Agent Characteristics
-sidebar_position: 2
+title: Agent Features 
+sidebar_position: 7
 ---
 
-The related table is available for all companies that are in database and has the list of agents characteristics. It is a simple code/description table in order to assign a type to agents in customized report/statistics.
+It is a descriptive table for the agent and can be used in its register. It is common to all companies present in the database and consists of a simple code/description table, in order to encode agents in customized reports/statistics.
 
-RIBBON BAR: the ribbon bar represents the Form menu, that is the area on which it is possible to perform actions linked to the procedure in use. The possible features list is the following:
+The table can be accessed through the path **Tables > Sales > Agent Features**.
 
+It allows you to insert new records or to search for existing ones to view, modify, or delete them.
 
+The form consists of a filter area and a results area. Once all desired filters are set, simply click the **Search** button to view the results within the results grid.
 
-| Function | Meaning |
-| --- | --- |
-| Search | Button to perform a search of an agent characteristic through filter fields. |
-| Insert | Button to insert a new agent characteristic. |
-| Delete | Button to delete an agent characteristic, unless this has not already been used. |
-| Print Preview | Button to perform the print preview of agents characteristics. |
-| Print | Button to print the agents characteristics. |
+To insert new records, you need to click on the first empty row in the grid or press the **New** button.
 
-
-
-| Function | Meaning |
-| --- | --- |
-| Code | Alphanumeric identification code of agent characteristic. |
-| Description   | Agent Characteristic Description. |
-
-
-
-
-
-
+For anything not detailed in this document regarding the common functionality of forms, please refer to the following link [Custom features, buttons, and fields](/docs/guide/common).

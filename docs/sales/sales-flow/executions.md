@@ -10,7 +10,7 @@ Il ciclo di evasione in Fluentis serve a gestire in modo strutturato e integrato
 La procedura di conversione da offerta a ordine di vendita può essere avviata in due modalità:
 
 - Dalla [Ricerca Offerte](/docs/sales/offers/search-offers): Selezionando una o più offerte e cliccando sul pulsante *Conversione* presente nella barra degli strumenti, è possibile eseguire una conversione massiva.
-- Dalla [Testata](/docs/sales/offers/new-offer/header) dell'Offerta: All'interno della singola offerta, il pulsante di *Conversione* nella testata consente di convertire l'offerta selezionata in un ordine di vendita.
+- Dalla [Testata](/docs/sales/offers/insert-offer) dell'Offerta: All'interno della singola offerta, il pulsante di *Conversione* nella testata consente di convertire l'offerta selezionata in un ordine di vendita.
 
 Questa procedura permette di trasformare un'offerta di vendita in un ordine di vendita effettivo. Per eseguire correttamente la conversione, è necessario configurare il [Tipo di ordine](/docs/configurations/tables/sales/sales-order-types) desiderato nella tabella [Tipo di offerta](/docs/configurations/tables/sales/sales-offer-type). Inoltre, l'offerta deve avere una *Data di Conferma* inserita nella testata; in caso contrario, il sistema visualizzerà un messaggio pop-up per richiedere la conferma dell'offerta prima di procedere.
 
@@ -18,7 +18,7 @@ Durante la procedura di conversione, appare un pop-up con diverse opzioni:
 
 - Gestione delle Righe Offerta: Se alcune righe dell'offerta sono già state convertite in ordine, il sistema chiede all'utente se vuole creare un nuovo ordine utilizzando tutte le righe dell'offerta o solo quelle non ancora referenziate.
 - Crea/Aggiorna Progetto: Questa opzione consente di creare o aggiornare un progetto. Sono disponibili le opzioni: *Crea Nuovo Progetto Vuoto*, *Crea Nuovo Progetto da Offerta*, o *Crea Nuovo Progetto da Offerta e Template Progetto*. È necessario specificare il [Tipo Progetto](/docs/configurations/tables/project-management/project-type) da creare. Se il progetto esiste già, bisogna inserire il nome del progetto da aggiornare.
-- Trasferimento Materiali/Risorse: Questa opzione consente di trasferire le risorse e i materiali dell'offerta, se [gerarchica](/docs/sales/offers/new-offer/group-items), come righe articolo nell'ordine.
+- Trasferimento Materiali/Risorse: Questa opzione consente di trasferire le risorse e i materiali dell'offerta, se [gerarchica](/docs/sales/offers/insert-offer), come righe articolo nell'ordine.
 
 Una volta confermata la conversione, il sistema genera un nuovo ordine cliente utilizzando i dati dell'offerta e avvisa l'utente con un messaggio pop-up riguardante il successo della conversione, il numero dell'offerta convertita, la versione e il numero dell'ordine cliente generato. Le informazioni modificate in anagrafica durante la creazione dell'offerta (ad es. Annotazioni Cliente, Spedizione, Pagamenti) saranno riportate anche nell'ordine generato.
 

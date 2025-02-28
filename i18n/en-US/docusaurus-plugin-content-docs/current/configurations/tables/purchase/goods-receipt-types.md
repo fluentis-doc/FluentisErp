@@ -1,30 +1,24 @@
 ---
 title: Goods Receipt Types
-sidebar_position: 13
+sidebar_position: 4
 ---
 
-The goods receipt type is used in order to set the property of a goods receipt.
+The table opens through the path **Tables > Purchases > Goods Receipt Types** and is used to determine the properties of a goods receipt.
 
-RIBBON BAR: it represents the Form menu, that is the area in which it is possible to perform actions linked to the procedure in use. The list of features is the following:
+The fields present are:
 
+**Code**: code of the type of goods receipt.
 
+**Description**: description of the type of goods receipt.
 
-| Function | Meaning |
-| --- | --- |
-| Search | Button to search the document type.  |
-| Insert | Button to insert a new document type.  |
-| Delete | Button to delete the document type.  |
-| Preview | Button to perform the print preview.  |
-| Print | Button to print according to the filters set and to the printer configuration.  |
+**Delivery Note**: if active, the system allows the generation of a Purchase Delivery Note from the goods receipt. If not active, it will not be possible to generate the Purchase Delivery Note from the goods receipt, so the warehouse loading operations and Purchase Delivery Note registration will remain unconnected.
 
-**Code**: goods receipt type code.
+**Invoice**: if active, the system allows the generation of an invoice from the goods receipt. If not active, it will not be possible to generate the invoice from the goods receipt, hence the warehouse loading operation will remain unconnected.
 
-**Description**: goods receipt type description.
+**Unsumed Item Quantity Order**: if set, when fulfilling order lines with partial quantities in the same goods receipt, this flag will allow reporting the fulfilled quantities of the order divided by item line without summing the quantities.
 
-**Without Add Quantities**: if it is set, during the execution of this orders type, the executed quantities can be saved into the execution document for single execution lines.
+**Numeration**: determines the [Numeration](/docs/configurations/tables/fluentis-numerations) and the related **Description** associated with the *Goods Receipt Types*.
 
+**Quality Control**: the *Goods Receipt Types* that have this flag active are visible in the [Import Items To Check](/docs/quality/item-control/items-control/item-control-import/) form located in the *Quality* area.
 
-
-
-
-
+**Fixed Assets Management**: this flag enables the [Fixed Assets Management](/docs/finance-area/fixed-assets/general-overview) for that type of receipt and allows selecting the **Operation Type** that one wants to perform, which in the case of purchases will be an *Original Cost*.

@@ -151,7 +151,7 @@ E' bene prestare attenzione alla compilazione del periodo inquanto, ad esempio (
 
 Eseguendo il calcolo il software ritorna un messaggio di conferma oppure un avviso riferito agli agenti per i quali non dovessero essere state trovate provvigioni da liquidare.
 
-Al termine, nel caso si voglia effettuare dei controlli, è possibile [**aprire la liquidazione**](/docs/sales/agents/insert-settlement) con doppio click dopo averla [**ricercata**](/docs/sales/agents/search-agent-settlement).
+Al termine, nel caso si voglia effettuare dei controlli, è possibile [**aprire la liquidazione**](/docs/sales/agents/agent-settlement/insert-settlement) con doppio click dopo averla [**ricercata**](/docs/sales/agents/agent-settlement/search-agent-settlement).
 
 All'interno è possibile ottenere la lista elle fatture considerate per la liquidazione, per fare questo spostarsi sul tab **Fatture** e premere il bottone nella ribbon bar **Ricerca**.
 
