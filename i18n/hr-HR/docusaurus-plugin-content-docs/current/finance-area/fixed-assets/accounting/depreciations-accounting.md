@@ -26,7 +26,6 @@ Affinché la procedura possa andare a buon fine è necessario che:
 - Sia definita la causale contabile che si desidera utilizzare per la contabilizzazione ammortamenti.
 
  
-<iframe width="560" height="315" src="https://www.youtube.com/embed/jD0qtQmqCIA" title="YouTube video player" frameborder="0" allowfullscreen= "true"></iframe>
 
 
 
