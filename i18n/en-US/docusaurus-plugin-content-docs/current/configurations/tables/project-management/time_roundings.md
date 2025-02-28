@@ -1,52 +1,52 @@
 ---
-title: Arrotondamenti temporali
+title: Time Roundings
 sidebar_position: 24
 ---
 
-La tabella è collocata in Configurazione > tabelle > Gestione progetti > Arrotondamenti temporali
+The table is located in Configuration > Tables > Project Management > Time Roundings 
 
-in questa tabella sono configurati gli arrotondamenti da applicare nel piano di fatturazione alle ore di servizio dichiarate negli interventi
+In this table, the rounding rules to be applied in the invoice plan to the service hours declared in the interventions are configured.
 
-**Minuti** indica lo scaglione da cui parte l'arrotondamento, utilizzato per trovare l'arrotondamento da applicare in base alle ore di servizio dell'intervento svolto. 
-**Arrotondamento** numero di minuti a cui arrotondare 
-**Tolleranza** minuti di tolleranza prima di far scattare l'arrotondamento o l'eventuale scaglione successivo
-
-
-La tabella ragiona in “scaglioni”.
+**Minutes** indicates the range from which the rounding starts, used to find the rounding to be applied based on the service hours of the intervention performed. 
+**Rounding** number of minutes to which to round 
+**Tolerance** minutes of tolerance before triggering the rounding or the next range
 
 
-Se ad es. si vuole arrotondare tutti gli interventi di 2 ore in 2 ore, è sufficiente configurare: 
+The table works in “ranges”.
 
 
->> minuti 0 > arrotondamento in minuti 120 > tolleranza 0
+For example, if you want to round all interventions of 2 hours to 2 hours, it is sufficient to configure:
 
 
->> questo indica che da 0 all’infinito le ore verranno sempre arrotondate di 2 in 2. Tolleranza indica il gap di tempo oltre al quale scatta lo scaglione successivo. 
+>> minutes 0 > rounding in minutes 120 > tolerance 0
 
 
->> Es. 
-- intervento A: 1 h e 30 minuti > fatturato 2 ore
-- Intervento B: 2h e 10 minuti > fatturato 4 ore
-- Intervento C: 8h e 30 minuti > fatturato 10 ore
+>> this indicates that from 0 to infinity, the hours will always be rounded by 2. Tolerance indicates the time gap beyond which the next range is triggered.
 
 
-Aggiungendo la tolleranza ad es. 15 minuti, l’intervento B verrà fatturato a 2 ore. 
-Aggiungendo un altro scaglione possiamo ad es. regolare l’arrotondamento per le ore successive alle 8 ad Es. 
-
->> minuti 0 > arrotondamento in minuti 120 > tolleranza 0
-
-
->> minuti 480 > arrotondamento in minuti 30 > tolleranza 0
-
-Per cui nell’esempio precedente l’intervento C verrà fatturato 8h e 30 minuti Se l’intervento C fosse stato 8h e 15 minuti, sarebbero stati fatturati comunque 8h e 30 minuti, essendo previsto l’arrotondamento alla mezz’ora. 
-
-Se si desidera fatturare ad es. o 4 o 8 ore , si può configurare 
+>> Example: 
+- Intervention A: 1 h and 30 minutes > invoiced 2 hours
+- Intervention B: 2h and 10 minutes > invoiced 4 hours
+- Intervention C: 8h and 30 minutes > invoiced 10 hours
 
 
->> Minuti 0 > arrotondamento 240 minuti > tolleranza 0
+By adding a tolerance of, for example, 15 minutes, Intervention B will be invoiced at 2 hours. 
+By adding another range, you can, for example, adjust the rounding for hours beyond 8 as follows:
+
+>> minutes 0 > rounding in minutes 120 > tolerance 0
 
 
->> Minuti 240 > arrotondamento 240 minuti > tolleranza 0
+>> minutes 480 > rounding in minutes 30 > tolerance 0
+
+Thus, in the previous example, Intervention C will be invoiced at 8h and 30 minutes. If Intervention C had been 8h and 15 minutes, it would still be invoiced at 8h and 30 minutes, as rounding to the nearest half hour is provided.
+
+If you want to invoice, for example, either 4 or 8 hours, you can configure:
 
 
->> Minuti 480 > arrotondamento 1 minuti > tolleranza 0 in modo che oltre alle 8 ore non effettui arrotondamenti
+>> Minutes 0 > rounding 240 minutes > tolerance 0
+
+
+>> Minutes 240 > rounding 240 minutes > tolerance 0
+
+
+>> Minutes 480 > rounding 1 minute > tolerance 0 to ensure that no rounding occurs beyond 8 hours.

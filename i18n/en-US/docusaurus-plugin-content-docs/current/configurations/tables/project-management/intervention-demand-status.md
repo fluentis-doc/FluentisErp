@@ -1,6 +1,6 @@
 ---
-title: Stato richieste intervento
+title: Intervention Request Status
 sidebar_position: 6
 ---
 
-Questa tabella è accessibile da **Tabelle > Gestione Progetti > Stato richieste interventi** e contiene le tipologie di stato che possono assumere le richieste nterventi. È possibile ricercare, inserire e cancellare gli stati.
+This table is accessible from **Tables > Project Management > Intervention Request Status** and contains the types of status that intervention requests can assume. It is possible to search, insert, and delete statuses.

@@ -1,57 +1,57 @@
 ---
-title: Tipo intervento
+title: Intervention Type 
 sidebar_position: 9
 ---
 
-La tabella è accesssibile da **Tabelle > Gestione Progetti > Tipi intervento**.
-La tabella contiene le possibili tipologie di intervento. E' composta da una parte di filtro in cui si può ricercare attraverso il codice e la descrizione, e da una griglia in cui verranno elencate tutte le tipologie di intervento (basterà cliccare sul pulsante di ![](/img/neutral/common/search.png) Ricerca nella ribbon bar per visualizzarle).
+The table is accessible from **Tables > Project Management > Intervention Types**. 
+The table contains the possible types of intervention. It consists of a filter section where you can search by code and description, and a grid where all the types of intervention will be listed (just click on the search button ![](/img/neutral/common/search.png) in the ribbon bar to display them).
 
 ![](/img/it-it/configurations/tables/projects/intervention.png)
 
-Sempre all'interno di questa form è possibile aggiungere nuove tipologie all'interno della griglia, cliccando sul pulsante ![](/img/neutral/common/new.png) Nuovo: in questo modo verrà aggiunta una nuova riga all'interno della griglia dove si potranno definire le seguenti informazioni:
+Also within this form, it is possible to add new types to the grid by clicking on the new button ![](/img/neutral/common/new.png) New: this will add a new row to the grid where the following information can be defined:
 
-**Tipo**: è il codice del tipo intervento;
+**Type**: it is the code of the intervention type;
 
-**Descrizione**: è la descrizione del tipo;
+**Description**: it is the description of the type;
 
-**Tipo fatt.**: indica la tipologia di fattura associata;
+**Invoice Type**: indicates the type of invoice associated;
 
-**Stato**: è possibile scegliere lo stato dell’intervento tra In Corso, Terminato, Controllato, In Contestazione, In Sospeso;
+**Status**: you can choose the status of the intervention between In Progress, Finished, Verified, In Dispute, Pending;
 
-**Descrizione**: contiene la descrizione dello stato;
+**Description**: contains the description of the status;
 
-**Tipo attività**: contiene la tipologia di attività associata;
+**Activity Type**: contains the type of associated activity;
 
-**Operatore**: è possibile indicare un operatore di default, con il relativo** Nome** e **Cognome**;
+**User**: you can indicate a default user, along with their **Name** and **Surname**;
 
-**Conto**: è possibile indicare un cliente di default se l’intervento viene creato da zero;
+**Account**: you can indicate a default customer if the intervention is created from scratch;
 
-**Sottoconto**: contiene il sottoconto del cliente;
+**Detail Account**: contains the detail account of the customer;
 
-**Prezzo ivato**: indica se l’intervento gestisce prezzi ivati;
+**Price including VAT**: indicates if the intervention manages prices including VAT;
 
-**Esterni**: indica se l’intervento è esterno;
+**External**: indicates if the intervention is external;
 
-**Materiali**: indica se il tipo gestisce i materiali;
+**Materials**: indicates if the type manages materials;
 
-**In attività**: indica se l’intervento andrà tra le attività;
+**In Activities**: indicates if the intervention will go among the activities;
 
-**Oneri viaggio**: indica se vengono gestiti gli oneri viaggio;
+**Travel Expenses**: indicates if travel costs are managed;
 
-**Crea attività automaticamente**: se flaggato, il cambio stato dell’Intervento (da Inserito a Controllato) genererà in automatico l’attività;
+**Create Activities Automatically**: if flagged, changing the status of the Intervention (from Inserted to Verified) will automatically generate the activity;
 
-**Progetto obbligatorio**: se flaggato, prevede di indicare sempre il progetto per questo tipo intervento;
+**Project is mandatory**: if flagged, it requires always indicating the project for this type of intervention;
 
-**Categoria attività obbligatoria**: se flaggato, prevede di indicare la categoria attività per questo tipo intervento;
+**Activity Category is mandatory**: if flagged, it requires always indicating the activity category for this type of intervention;
 
-**Anagrafica impianti obbligatoria**: se flaggato, prevede di indicare sempre l’anagrafica impianti per questo tipo intervento;
+**Main Asset is mandatory**: if flagged, it requires always indicating the plant registry for this type of intervention;
 
-**Risorsa obbligatoria**: se flaggato, prevede di indicare sempre la risorsa per questo tipo intervento;
+**Resource is mandatory**: if flagged, it requires always indicating the resource for this type of intervention;
 
-**% avanzamento obbligatorio**: se flaggato, prevede di indicare sempre % percentuale di avanzamento per questo tipo intervento;
+**% Progress is mandatory**: if flagged, it requires always indicating the % progress for this type of intervention;
 
-**Fatt. vend**: se flaggato, prevede di indicare sempre il fatturato per questo tipo intervento, a condizione che il servizio/materiale abbia flag Fatturabile attivo;
+**Sales inv.**: if flagged, it requires always indicating the sales revenue for this type of intervention, provided that the service/material has the Invoiceable flag active;
 
-**L’IVA obbligatoria**: se flaggato, prevede di indiccare sempre l’IVA per questo tipo intervento.
+**VAT compulsory**: if flagged, it requires always indicating the VAT for this type of intervention.
 
-**Colore**: colore per identificare gli interventi nei calendari dell'area progetti, come il [Planner](/docs/project-management/planned-interventions/planner) e [Assegnazione WBS risorse](/docs/project-management/planned-interventions/wbs-resource-assignation)
+**Color**: color to identify interventions in the project area calendars, such as the [Planner](/docs/project-management/planned-interventions/planner) and [WBS Resource Allocation](/docs/project-management/planned-interventions/wbs-resource-assignation).

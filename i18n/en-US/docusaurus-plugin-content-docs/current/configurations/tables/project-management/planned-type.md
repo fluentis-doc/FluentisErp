@@ -1,25 +1,25 @@
 ---
-title: Tipo pianificato
+title: Planned Type 
 sidebar_position: 11
 ---
 
-La tabella è accesssibile da **Tabelle > Gestione Progetti > Tipo pianificato**.
-La tabella contiene le possibili tipologie di pianificazione. E' composta da una parte di filtro in cui si può ricercare attraverso il codice e la descrizione, e da una griglia in cui verranno elencate tutte le tipologie di pianificato (basterà cliccare sul pulsante di ![](/img/neutral/common/search.png) Ricerca nella ribbon bar per visualizzarle).
+The table is accessible from **Tables > Project Management > Planned Type**.  
+The table contains the possible types of planning. It consists of a filter section where you can search by code and description, and a grid where all planned types will be listed (just click the ![](/img/neutral/common/search.png) Search button in the ribbon bar to view them).
 
 ![](/img/it-it/configurations/tables/projects/planned-type.png)
 
-Sempre all'interno di questa form è possibile aggiungere nuove tipologie all'interno della griglia, cliccando sul pulsante ![](/img/neutral/common/new.png) Nuovo: in questo modo verrà aggiunta una nuova riga all'interno della griglia dove si potranno definire le seguenti informazioni:
+Also within this form, it is possible to add new types within the grid by clicking the ![](/img/neutral/common/new.png) New button: this way, a new row will be added to the grid where the following information can be defined:
 
-**Codice**: è il codice del tipo pianificato;
+**Code**: this is the code of the planned type;
 
-**Descrizione**: è la descrizione del codice;
+**Description**: this is the description of the code;
 
-**Non previsto**: se flaggato, indica che stiamo trattando una tipologia non prevista;
+**Not planned**: if checked, it indicates that we are dealing with an unplanned type;
 
-**Numerazione**: indica la numerazione associata;
+**Numeration**: indicates the associated numeration;
 
-**Tipo intervento**: indica il tipo intervento associato di default, con la relatva descrizione;
+**Intervention Type**: indicates the default associated intervention type, along with the relevant description;
 
-**Esterno/Interno**: se flaggato, indica che è un’operazione esterna.
+**External/Internal**: if checked, indicates that it is an external operation.
 
-**Colore**: colore per identificare gli interventi pianificati nei calendari dell'area progetti, come il [Planner](/docs/project-management/planned-interventions/planner) e [Assegnazione WBS risorse](/docs/project-management/planned-interventions/wbs-resource-assignation)
+**Color**: color to identify planned interventions in the project area calendars, such as the [Planner](/docs/project-management/planned-interventions/planner) and [WBS Resource Allocation](/docs/project-management/planned-interventions/wbs-resource-assignation).

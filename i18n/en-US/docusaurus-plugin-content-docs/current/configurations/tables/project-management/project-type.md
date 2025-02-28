@@ -1,79 +1,79 @@
 ---
-title: Tipi progetto
+title: Project Types 
 sidebar_position: 12
 ---
 
-La tabella è accesssibile da **Tabelle > Gestione Progetti > Tipi progetto**
+The table is accessible from **Tables > Project Management > Project Types**.
 
-La tabella contiene le possibili tipologie di **Progetto**. E' composta da una parte di filtro in cui si può ricercare attraverso la descrizione del tipo, e da due griglie: una in cui verranno elencate tutte le tipologie di progetto inserite (basterà cliccare sul pulsante di ![](/img/neutral/common/search.png) ricerca nella ribbon bar per visualizzarle) ed una in cui potranno essere indicati i costi/ricavi predefiniti per ogni tipologia progetto da utilizzare nel calcolo SAL.
+The table contains the possible types of **Project (Progetto)**. It consists of a filter section where you can search through the description of the type, and two grids: one where all the project types entered will be listed (just click the ![](/img/neutral/common/search.png) search button in the ribbon bar to display them) and one where predefined costs/revenues for each project type to be used in the WIP calculation can be indicated.
 
 ![](/img/it-it/configurations/tables/projects/proj-type.png)
 
-Sempre all'interno di questa form è possibile aggiungere nuove tipologie di progetto all'interno della griglia, cliccando sul pulsante ![](/img/neutral/common/new.png) New: in questo modo verrà aggiunta una nuova riga all'interno della griglia dove si potranno definire le seguenti informazioni:
+Also within this form, it is possible to add new project types inside the grid by clicking the ![](/img/neutral/common/new.png) New button: this will add a new row in the grid where the following information can be defined:
 
-**Tipo**: è il codice del tipo progetto;
+**Type**: this is the code for the project type;
 
-**Descrizione Tipo Progetto**: è la descrizione del tipo progetto;
+**Project Type Description**: this is the description of the project type;
 
-**Numerazione**: è la numerazione associata al progetto configurata appositamente;
+**Numeration**: this is the numbering associated with the project configured specifically;
 
-**Struttura gerarchica**: questo flag se abilitato permette ai progetti di avere una struttura gerarchica, quindi multilivello; 
+**Hierarchical Structure**: this flag, if enabled, allows projects to have a hierarchical structure, thus multi-level; 
 
-**Tipo ordine**: è possibile indicare un tipo ordine associato;
+**Order Type**: an associated order type can be indicated;
 
-**Descrizione Tipo Ordine**: è la descrizione del tipo ordine associato; utilizzato nel caso di creazione progetti da ordine.
+**Order Type Descr.**: this is the description of the associated order type; used for creating projects from an order.
 
-**Tipo Fattura**: è possibile indicare un tipo fattura associato, necessario per la fatturazione dei progetti;
+**Invoice Type**: an associated invoice type can be indicated, necessary for invoicing projects;
 
-**Descrizione Tipo Fattura**: è la descrizione della fattura associata;
+**Invoice Type Description**: this is the description of the associated invoice;
 
-**Template**: questo flag indica che il tipo progetto è un template, quindi non potrà essere richiamato in altri documenti, ma utilizzato solamente come modello per la generazione di nuovi progetti.  
+**Template**: this flag indicates that the project type is a template, so it cannot be referenced in other documents, but only used as a model for generating new projects.
 
-**Sicurezza del Progetto abilitata**: se flaggato, abilita la possibilità di scegliere, nella tab Permessi Utente della Testata del Progetto, gli utenti che hanno il diritto di Read Only oppure Read Write sul progetto (gli altri utenti non potranno accedervi); se non flaggato, permette la modifica del Progetto a tutti gli utenti;
+**Project Security Enabled**: if checked, it enables the possibility to choose, in the User Permissions tab of the Project Header, the users who have Read Only or Read Write rights on the project (other users will not be able to access it); if not checked, it allows modification of the Project by all users;
 
-**Tipo richiesta d’acquisto**: è possibile associare un tipo di richiesta d’acquisto; in questo modo sarà possibile generare le richieste di acquisto direttamente da progetto. 
+**Purchase Request Type**: it is possible to associate a type of purchase request; in this way, it will be possible to generate purchase requests directly from the project. 
 
-Sono poi presenti alcuni flag nella griglia, che indicano le varie tab da mostrare per il tipo progetto.
+There are also some flags in the grid that indicate the various tabs to be shown for the project type.
 
-**Attività**: tab contenente tutti i dati principali ed obbligatori per la riga di progetto, come articolo, quantità e prezzo ed il riepilogo dei costi;
+**Activity**: tab containing all the main and mandatory data for the project line, such as item, quantity, price, and cost summary;
 
-**Pianificazione Servizio**: tab relativa alle date di inizio/fine previsti, la % di avanzamento, i tipi intervento da utilizzare ed eventuali legami con altre wbs;
+**Service Planning**: tab related to the expected start/end dates, percentage of completion, types of interventions to be used, and any links to other WBS;
 
-**Risorse**: tab di pianificazione risorse;
+**Resources**: resource planning tab;
 
-**Materiali**: tab contenente l'elenco materiali con il relativo costo;
+**Materials**: tab containing the list of materials with their cost;
 
-**Fasi**:
+**Phases**:
 
-**Dati**: tab contenente informazioni generiche relative ai codici per il calcolo SAL di progetto, riferimento a ticket, commesse di produzione, contatti crm. 
+**Data**: tab containing general information related to codes for the WIP calculation of the project, reference to tickets, production job orders, CRM contacts. 
 
-**Avanzamento**: 
+**Progress**: 
 
-**Agenti**: tab di inserimento Agenti relativi al progetto.
+**Agents**: tab for entering Agents related to the project.
 
-**Fatturazione**: tab per compilare la scaletta delle rate di fatturazione per la riga di progetto;
+**Invoicing**: tab for filling out the invoicing schedule for the project line;
 
-**Extra Data**: tab per gestire gli extra data;
+**Extra Data**: tab for managing extra data;
 
-**Documenti Allegati**: tab per gestire gli allegati.
+**Attached Documents**: tab for managing attachments.
 
-**Gannt**: tab generale che mostra il diagramma di Gannt relativo al progetto. 
+**Gantt**: general tab that shows the Gantt chart related to the project. 
 
-**Fattura di Anticipo**: tab per gestire le fatture di anticipo legate ai progetti.
+**Advance Invoice**: tab for managing advance invoices related to projects.
 
-**Fatturato Obbligatorio**: nel caso di riga progetto fatturabile e flag fatturato obbligatorio, verrà bloccato il salvataggio.
+**Mandatory Turnover**: in the case of a invoiceable project line and the mandatory turnover flag, saving will be blocked.
 
-**Ricalcolo data inizio-fine**: se abilitato, permette la modifica automatica della data di inzio e fine pianificazione nelle righe wbs di progetto. Le date si aggiorneranno in base alla quantità di riga se la UM corrisponde alla UM dei giorni impostata nei parametri progetto, oppure in inserimento nuove risorse nella tab risorse della riga progetto.
+**Recalculate Start-Finish Date**: if enabled, allows automatic modification of the start and finish date of planning in the WBS project lines. The dates will be updated based on the line quantity if the unit of measure matches the days set in the project parameters, or when new resources are added in the resources tab of the project line.
 
-Nella griglia sottostante è possibile costruire la valorizzazione del SAL nell’ambito dello stato avanzamento lavori. Per ogni progetto è possibile indicare una serie di codici, che rappresenteranno documenti da includere nel calcolo dello stato avanzamento lavori. Questi codici verranno poi proposti nelle singole righe di progetto. 
-Dopo aver selezionato una riga dalla prima griglia, i campi da compilare nella seconda sono:
+In the grid below, it is possible to construct the valuation of the WIP within the state of progress of works. For each project, a series of codes can be indicated, which will represent documents to be included in the calculation of the state of progress of works. These codes will then be proposed in the individual project lines. 
+After selecting a line from the first grid, the fields to be filled in the second are:
 
-**Tipo origine Costo/Ricavo**: contiene l'elenco dei codici di costi/ricavi previsti per il calcolo SAL per i progetti di quello specifico tipo;
+**Origin Type Cost/Revenue**: contains the list of codes of costs/revenues expected for the WIP calculation for projects of that specific type;
 
-**Descrizione**: è la descrizione dei costi/ricavi;
+**Description**: this is the description of the costs/revenues;
 
-**Tipo**: indica se è costo o un profitto.
+**Type**: indicates whether it is a cost or a profit.
 
-**Espressione filtro**: se il campo non è valorizzato, vengono considerati tutti i documenti previsti per il specifico codice. Se invece si vuole escludere determinati documenti (ad es. per tipologia, numerazione, etc) è possibile configurare un'espressione filtrante. 
+**Filter Expression**: if the field is not filled, all documents expected for the specific code are considered. If, instead, you want to exclude certain documents (e.g., by type, numeration, etc.), it is possible to configure a filtering expression. 
 
 ![](/img/it-it/configurations/tables/projects/revenue.png)

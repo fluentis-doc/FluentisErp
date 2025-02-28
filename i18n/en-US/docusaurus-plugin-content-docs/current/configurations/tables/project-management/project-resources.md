@@ -1,24 +1,24 @@
 ---
-title: Risorse Progetti
+title: Projects Resources
 sidebar_position: 10
 ---
 
-Questa tabella è accessibile da **Tabelle > Gestione Progetti > Risorse Progetti** e contiene alcuni dati di default delle risorse. L’area di filtro permette di ricercare i dati in maniera più mirata.
+This table is accessible from **Tables > Project Management > Projects Resources** and contains some default data of the resources. The filter area allows for a more targeted search of the data.
 
 ![](/img/it-it/configurations/tables/projects/resources.png)
 
-Una volta inseriti i filtri, con il tasto ![](/img/neutral/common/search.png) Ricerca compariranno i risultati in griglia. I dati sono:
+Once the filters are entered, clicking the ![](/img/neutral/common/search.png) Search button will display the results in a grid. The data includes:
 
-**Codice/Descrizione**: contiene il codice e la descrizione della risorsa;
+**Code/Description**: contains the code and description of the resource;
 
-**Tipo risorsa**: contiene il [Tipo risorsa](/docs/configurations/tables/project-management/resource-type);
+**Resource Type**: contains the [Resource Type](/docs/configurations/tables/project-management/resource-type);
 
-**Operatore**: contiene l’Operatore;
+**User**: contains the User;
 
-**Cognome/Nome**: contiene cognome e nome della risorsa;
+**Name/Surname**: contains the name and surname of the resource;
 
-**Conto/Sottoconto**: contiene gli eventuali conto e sottoconto associati alla risorsa;
+**Account/Detail Account**: contains any account and detail account associated with the resource;
 
-**Turno principale**: contiene il [turno di lavoro] solito della risorsa, con la relativa **Descrizione**;
+**Main Shift**: contains the usual [working shift] of the resource, along with the related **Description**;
 
-Sono presenti ulteriori dati liberamente modificabili, come **Centri di costo**, **Ore mensili disponibili**, **Società di riferimento**, ecc.
+There are additional freely modifiable data, such as **Cost Centers**, **Monthly Hours Available**, **Reference Company**, etc.

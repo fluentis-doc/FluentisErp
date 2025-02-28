@@ -1,11 +1,11 @@
 ---
-title: Calendario giorni festivi
+title: Non Working Days Calendar
 sidebar_position: 3
 ---
 
-In questa tabella vengono configurate le giornate festive o non lavorative aziendali. In fase di dichiarazione attività, le date qui inserite non verranno proposte, e nel calcolo cedolini paga la giornata verrà considerata festiva di default. 
-Inoltre se configurato nei parametri Progetti, il piano di fatturazione potrebbe subire delle variazioni di calcolo. 
+In this table, the company holidays or non-working days are configured. During the activity declaration phase, the dates entered here will not be proposed, and in the payroll calculation, the day will be considered a holiday by default. 
+Additionally, if configured in the Project parameters, the invoicing plan may undergo calculation variations.
 
-**Giorno Libero**: indicare la data della giornata festiva o non lavorativa aziendale. 
+**Day Off**: indicate the date of the holiday or non-working day.
 
-**Note**: eventuale nota o descrizione relativa alla data inserita. 
+**Notes**: any note or description related to the entered date.

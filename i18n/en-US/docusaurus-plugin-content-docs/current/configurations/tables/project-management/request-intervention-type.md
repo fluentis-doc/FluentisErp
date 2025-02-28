@@ -1,32 +1,31 @@
 ---
-title: Tipo richiesta intervento
+title: Request Intervention Type
 sidebar_position: 13
 ---
 
-La tabella è accessibile da **Tabelle > Gestione Progetti > Tipo richiesta intervento**.
-La tabella contiene le possibili tipologie di **Richiesta Intervento**. E' composta da una parte di filtro in cui si può ricercare attraverso il codice e la descrizione, e da una griglia in cui verranno elencate tutte le tipologie di richiesta inserite (basterà cliccare sul pulsante di ![](/img/neutral/common/search.png) Ricerca nella ribbon bar per visualizzarle).
+The table is accessible from **Tables > Project Management > Request Intervention Type**. The table contains the possible types of **Intervention Request**. It consists of a filter section where you can search through the code and description, and a grid where all the entered request types will be listed (just click on the ![](/img/neutral/common/search.png) Search button in the ribbon bar to view them).
 
 ![](/img/it-it/configurations/tables/projects/request.png)
 
-Sempre all'interno di questa form è possibile aggiungere nuove tipologie di progetto all'interno della griglia, cliccando sul pulsante ![](/img/neutral/common/new.png) Nuovo: in questo modo verrà aggiunta una nuova riga all'interno della griglia dove si potranno definire le seguenti informazioni, che verranno associate al documento:
+Also within this form, you can add new project types to the grid by clicking on the ![](/img/neutral/common/new.png) New button: this will add a new row in the grid where you can define the following information, which will be associated with the document:
 
-**Tipo**: contiene il codice del tipo richiesta;
+**Type**: contains the code of the request type;
 
-**Descrizione Tipo**: è la descrizione della tipologia;
+**Type Description**: is the description of the type;
 
-**Numerazione**: è la numerazione associata;
-**Severità Ticket**: contiene la Severità di default dei ticket per questa tipologia;
+**Numeration**: is the associated numeration;
+**Ticket Severity**: contains the default Severity of the tickets for this type;
 
-**SLA**: contiene la Service Level Agreement associata;
+**SLA**: contains the associated Service Level Agreement;
 
-**Descrizione**: contiene la descrizione della SLA;
+**Description**: contains the description of the SLA;
 
-**Tipo Intervento**: è il Tipo di intervento associato;
+**Intervention Type**: is the associated type of intervention;
 
-**Esterna/Interna**: questo flag indica se la richiesta d’intervento è interna o esterna.
+**External/Internal**: this flag indicates whether the intervention request is internal or external.
 
-**Tipo pianificato**: indica la tipologia di pianificazione predefinita;
+**Planned Type**: indicates the predefined planning type;
 
-**Descrizione**: contiene la descrizione del tipo pianificato.
+**Description**: contains the description of the planned type.
 
-**Colore**: colore per identificare le richieste di intervento nei calendari dell'area progetti, come il [Planner](/docs/project-management/planned-interventions/planner) e [Assegnazione WBS risorse](/docs/project-management/planned-interventions/wbs-resource-assignation)
+**Color**: color for identifying intervention requests in the project area calendars, such as [Planner](/docs/project-management/planned-interventions/planner) and [WBS Resource Allocation](/docs/project-management/planned-interventions/wbs-resource-assignation).
