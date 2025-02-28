@@ -39,9 +39,9 @@ I campi presenti in questa tab sono:
 
 **Riferimenti offerta**: se questo flag viene impostato, nel progetto creato da offerta verrà inserito il Riferimento dell'offerta nel titolo del progetto; la composizione di questa nota deve essere inserita nel campo *Descrizione* secondo i parametri descritti nella label.     
 
-**Costo predefinito materiali offerta**: in questo campo è possibile indicare il *Tipo costo origine* da usare come importo di partenza per il calcolo del ricavo dei *Materiali* di un'[offerta gerarchica](/docs/sales/offers/new-offer/group-items).       
+**Costo predefinito materiali offerta**: in questo campo è possibile indicare il *Tipo costo origine* da usare come importo di partenza per il calcolo del ricavo dei *Materiali* di un'[offerta gerarchica](/docs/sales/offers/insert-offer).       
 
-**Articolo ordine risorse da offerta**: in questo campo è possibile indicare quale articolo codificato associare alle risorse di un'Offerta, per la creazione delle righe dell'Ordine dall'[offerta gerarchica](/docs/sales/offers/new-offer/group-items).      
+**Articolo ordine risorse da offerta**: in questo campo è possibile indicare quale articolo codificato associare alle risorse di un'Offerta, per la creazione delle righe dell'Ordine dall'[offerta gerarchica](/docs/sales/offers/insert-offer).      
 
 **Riferimenti prototipo**: in questa sezione è possibile comporre la nota di riferimento al prototipo associato all'offerta; essa verrà riportata nel campo *Prototipo* del tab *Attività* dell'offerta gerarchica.     
 

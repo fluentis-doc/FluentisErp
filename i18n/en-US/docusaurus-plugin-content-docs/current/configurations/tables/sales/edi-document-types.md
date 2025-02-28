@@ -1,34 +1,28 @@
 ---
-title: EDI Document Types
-sidebar_position: 15
+title: EDI Document Types 
+sidebar_position: 19
 ---
 
-The EDI Type is used in order to determine EDI document properties.
+The table is accessed via the path **Tables > Sales > EDI Document Types** and is used to determine the properties of an EDI document.
 
-The ribbon bar represents the Form menu, that is the area in which it is possible to perform actions linked to the procedure in use. The possible features list is the following: 
+It allows for the entry of new records or searching for existing ones to view, modify, or delete them.
 
+The form consists of a filter area and a results area. Once all desired filters are set, simply click the **Search** button to display the results within the results grid.
 
+To insert new records, you must click on the first empty row in the grid or press the **New** button.
 
-| Function | Meaning |
-| --- | --- |
-| Search | Button to search a document type.  |
-| Insert | Button to insert a new document type. |
-| Delete | Button to delete the document type. |
+**Type**: EDI type code.
 
+**Description**: EDI type description.
 
+**Num. type**: EDI numeration type associated with the EDI type.
 
-| Function | Meaning |
-| --- | --- |
-| Type  | EDI type code. |
-| Description | EDI type description. |
-| Num. Type | EDI numeration type associated to EDI type. |
-| Order Type | Sales order type for EDI document creation. |
-| Sales Forecast Type | The weekly forecast is set automatically for EDI document creation. |
-| Default | If it is set, it indicates the default EDI type for the automatic EDI documents creation. |
-| Notes | EDI type notes. |
+**Order type**: sales order type for creating the EDI document.
 
+**Sales forecast type**: automatically set to the weekly forecast for creating the EDI document.
 
+**Default**: if set, marks the EDI type as the default for automatic creation of EDI documents.
 
+**Notes**: notes related to the EDI type.
 
-
-
+For everything not detailed in this document about the common functionality of forms, refer to the following link [Custom features, buttons, and fields](/docs/guide/common).

@@ -19,7 +19,7 @@ Per inserire nuovi record è necessario cliccare nella griglia sulla prima riga 
 
 **Codice/Descrizione:** campi in cui viene indicato il codice e la descrizione della tipologia del documento (il codice che si inserisce deve essere univoco).
 
-**Struttura gerarchica**: inserendo questo flag, gli articoli dell'offerta seguiranno una struttura gerarchica; per maggiori dettagli si rimanda alla relativa [documentazione](/docs/sales/offers/new-offer/group-items).
+**Struttura gerarchica**: inserendo questo flag, gli articoli dell'offerta seguiranno una struttura gerarchica; per maggiori dettagli si rimanda alla relativa [documentazione](/docs/sales/offers/insert-offer).
 
 **Modifica versione**: questo flag indica le tipologie di offerta per le quali gestire le versioni.
 

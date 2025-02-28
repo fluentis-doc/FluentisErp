@@ -24,8 +24,8 @@ Per il nuovo record, nella griglia *Macchine*, si devono inserire almeno i campi
 **Macchina**: codice macchina;  
 **Descrizione**: descrizione della macchina;  
 **Attiva**: indica se la macchina è attiva o meno, quindi se sia utilizzabile e pianificabile;  
-**Dichiarazione materiale mobile**: se attivo, il centro sarà proposto nella dichiarazione dei tempi di Fluentis Mobile; nel caso in cui i dati siano trasmessi dalla macchina a Fluentis con altri automatismi questo flag sarà disattivato. Utilizzato solo per le personalizzazioni;  
-**Stampa etichetta**: se attivo permette di stampare un’etichetta;  
+**Dichiarazione materiale mobile**: è utilizzato nella form delle dichiarazioni di produzione del WMS; se attivo, in fase di dichiarazione verrà richiesto anche di inserire i materiali consumati;      
+**Stampa etichetta**: è utilizzato nella form delle dichiarazioni di produzione del WMS; se attivo, alla conferma della dichiarazione di produzione permette di stampare le relative etichette;      
 **Centri di lavoro**: indica su quale centro di lavoro è collocata la macchina;  
 **Centro aziendale**: indica il centro di costo a cui si riferisce la macchina;  
 **Reparti**: indica il codice del reparto in cui è inserita la macchina;  

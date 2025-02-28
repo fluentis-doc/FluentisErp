@@ -1,12 +1,12 @@
 ---
-title: Nuovo Ricevimento Merci
+title: Nuovo Ricevimento merci
 sidebar_position: 3
 ---
 
 La form si apre tramite il percorso **Acquisti > Ricevimento merci > Crea ricevimento merci** oppure dal filtro di ricerca del Ricevimento merci, mediante il pulsante *Nuovo*.
 
 
-## Sezione superiore
+## **1. Dati obbligatori**
 
 Per creare il ricevimento merci, l'utente deve inserire i seguenti dati:
 
@@ -16,7 +16,7 @@ Per creare il ricevimento merci, l'utente deve inserire i seguenti dati:
 - **Data ricevimento**: viene proposta automaticamente la data corrente, ma può essere modificata manualmente sempre rispettando la regola di progressione tra data e numero.
 - **Progetto**: posizionato nella parte inferiore alla griglia articoli; rappresenta il progetto da associare al documento e può essere selezionato tramite l'apposito help progetti.
 
-## Articoli
+## **1. Articoli**
 
 - **Tipo riga** offre la possibilità di selezionare, dalla combo-box, articoli con caratteristiche diverse:
 > - *Articolo codificato*: sono gli articoli codificati in anagrafica e possono essere contabilizzati in contabilità analitica e registrati in magazzino. <br />
@@ -44,23 +44,23 @@ Se si parte direttamente con l'inserimento dell'articolo, la sua classe, il codi
 
 - **Ubicazione**: se la causale ha un'ubicazione di default viene proposta tale ubicazione altrimenti può essere inserita [manualmente ](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) se il magazzino è gestito ad ubicazioni.  
 
-*Pulsanti specifici*:
+#### Pulsanti specifici 
 
-> **Evasione da ordine**: permette di di creare un ricevimento merci evadendo le righe di un ordine fornitore con la procedura [Evasione da ordini fornitori](/docs/purchase/purchase-delivery-note/insert-purchase-delivery-note/header-procedures/execution-from-purchase-order).   
+> **Evasione da ordine**: permette di di creare un ricevimento merci evadendo le righe di un ordine fornitore con la procedura [Evasione da ordini fornitori](/docs/purchase/purchase-delivery-note/insert-purchase-delivery-note/purchase-delivery-note).   
 >
 > **Gestione imballi**: permette l'apertura della gestione degli imballi a rendere usati nel documento di acquisto. Il pulsante diventa attivo se il documento è salvato, ma non caricato.   
 > Con clic su questo pulsante si apre la form corrispondente dove inserire la quantità, selezionare la riga ed eseguire il trasferimento dell'imballo selezionato nelle righe articolo cliccando sul pulsante *Execute*. In questa form vengono riportati gli articoli che sono stati inseriti con natura *Imballo* e che sono presenti nella tabella degli [Imballi a rendere](/docs/configurations/tables/logistics/package-to-be-returned).
 
-### Lotti
+### 2.1 Lotti
 
 Nelle due griglie possono essere inseriti i lotti e numeri seriali che devono essere caricati nel magazzino. 
 Se l'articolo non prevede la gestione dei [Lotti e Serial Number](/docs/erp-home/registers/items/create-new-items/item-registry/lots-and-serial-number), questo tab sarà disabilitato.   
 
-*Pulsante specifico*:   
+#### Pulsante specifico*:   
 
 > **Cancella lotto**: permette di cancellare la riga lotto selezionata
 
-### Dati articolo
+### 2.2 Dati articolo
 
 All'interno di questo tab vengono riportate/inserite ulteriori informazioni relative all'articolo.
 
@@ -74,13 +74,13 @@ All'interno di questo tab vengono riportate/inserite ulteriori informazioni rela
 
 - **Unità di misura/Quantità alternativa**: se nell'[anagrafica dell'articolo](/docs/erp-home/registers/items/create-new-items/item-registry/alternative-um) è stata codificata un'unità di misura alternativa con il flag *Predefinito* e nei Parametri ordini fornitore è stato attivato il flag *Proposta automatica U.M. alternativa*, questi valori saranno proposti in automatico al momento dell'inserimento dell'articolo.
 
-### Analitica
+### 2.3 Analitica
 
 Può contenere informazioni sui centri di costo/profitto sui quali sono distribuiti i valori degli articoli.   
 
 Questi dati possono essere inseriti manualmente oppure automaticamente (nel caso in cui i centri di costo/profitto siano stati inseriti precedentemente nell'*anagrafica contatto*, *anagrafica articolo* oppure nel *piano dei conti*).   
 
-*Pulsanti specifici*
+#### Pulsanti specifici
 
 import DeleteCostCenter from './../../import/buttons/delete-cc.md'
 import DeleteProfitCenter from './../../import/buttons/delete-pc.md'
@@ -88,7 +88,7 @@ import DeleteProfitCenter from './../../import/buttons/delete-pc.md'
 > <DeleteCostCenter />
 > <DeleteProfitCenter />
 
-### Extra data
+### 2.4 Extra data
 
 import DocItemExtraData from './../../import/sections/doc-item-extradata.md'
 
