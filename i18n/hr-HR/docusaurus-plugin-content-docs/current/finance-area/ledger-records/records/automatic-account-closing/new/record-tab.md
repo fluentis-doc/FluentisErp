@@ -47,9 +47,8 @@ Eventuali errori che fossero rilevati in seguito possono essere risolti in quest
 
 - è possibile cancellare direttamente la chiusura conti effettuata e, alla richiesta del programma, cancellare anche le registrazioni ad essa collegate al fine di ripartire da zero nella procedura; 
 
-- in alternativa è presente un pulsante di **rollback** della contabilizzazione (nella tab Parametri). 
+- in alternativa è presente un pulsante di *rollback*  **Ripristina contabilizzazione** della contabilizzazione (nella tab Parametri). 
 
-![](/img/it-it/finance-area/ledger-records/records/automatic-account-closing/new/record-tab/image04.png)
 
 Esistono specifici permessi utente per la contabilizzazione e l'annullamento della stessa. 
 
