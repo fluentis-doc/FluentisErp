@@ -1,16 +1,16 @@
 ---
-title: Categorie sconti gestione prezzi
+title: Category Discounts Price Management
 sidebar_position: 11
 ---
 
-La tabella si apre tramite il percorso **Tabelle > Acquisti > Categorie sconti gestione prezzi** e viene utilizzata per assegnare la categoria di sconto agli articoli in anagrafica articolo.
+The table opens via the path **Tables > Purchases > Category Discounts Price Management** and is used to assign the discount category to items in the item registry.
 
-Consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+It allows for the addition of new records or searching for existing ones to view, modify, or delete them.
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+The form consists of a filter area and a results area. Once all desired filters are set, simply click the **Search** button to view the results within the results grid.
 
-Per poter inserire nuove codifiche è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**. 
+To enter new codes, it is necessary to click on the first empty row in the grid or press the **New** button.
 
-**Codice/Descrizione**: inserire un codice ed una descrizione per indicare una categoria sconti prezzi. Deve essere inserito un valore univoco e di lunghezza massima di 10 caratteri.
+**Code/Description**: enter a code and a description to indicate a price discount category. A unique value must be entered with a maximum length of 10 characters.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+For everything not detailed in this document regarding the common functionality of forms, please refer to the following link [Custom Features, Buttons, and Fields](/docs/guide/common).

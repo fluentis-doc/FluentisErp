@@ -1,17 +1,16 @@
 ---
-title: Tipi commesse di acquisto
+title: Purchase Job Order Types
 sidebar_position: 8
 ---
 
-La tabella si apre tramite il percorso **Tabelle > Acquisti > Tipi commessa di acquisto** e viene utilizzata per determinare le proprietà di una commessa.
+The table can be accessed through the path **Tables > Purchases > Purchase Job Order Types** and is used to determine the properties of a purchase job order.
 
-I campi presenti sono:
+The fields present are:
 
-**Tipo/Descrizione tipo commessa di acquisto**: sono campi obbligatori per definire il tipo della commessa.
+**Type/Description of purchase job order type**: these are mandatory fields to define the type of job order.
 
-**Struttura gerarchica**: se settato, la visualizzazione degli articoli in commessa è di tipo gerarchico.
+**Hierarchical structure**: if set, the display of items in the job order is hierarchical.
 
-**Numerazione**: per selezionare la [numerazione](/docs/configurations/tables/fluentis-numerations) appropriata. 
+**Numeration**: to select the appropriate [numeration](/docs/configurations/tables/fluentis-numerations).
 
-**Stampa** permette di indicare il modello di stampa che verrà utilizzato in fase di stampa della commessa, mediante il campo **Numero copie**, il numero di copie del documento che sarà proposto di default per la stampa.
-
+**Print Report** allows you to specify the print template that will be used during the printing of the job order, through the field **Number of copies**, which indicates the default number of copies of the document proposed for printing.

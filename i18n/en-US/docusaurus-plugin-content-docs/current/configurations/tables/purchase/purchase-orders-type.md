@@ -1,36 +1,36 @@
 ---
-title: Tipi ordine fornitore
+title: Purchase Order Types 
 sidebar_position: 3
 ---
 
-Questa tabella è fondamentale per definire le varie tipologie di ordini fornitori disponibili, ognuna con le proprie caratteristiche. E' raggiungibile da *Configurazione > Tabelle > Acquisti > Tipi ordine fornitore*.   
+This table is essential for defining the various types of purchase orders available, each with its own characteristics. It can be accessed from **Configuration > Tables > Purchases > Purchase Order Types**.
 
-I campi presenti sono:    
+The fields present are:
 
-**Codice/Descrizione**: campi obbligatori per definire il tipo e la descrizione dell'ordine di acquisto.
+**Code/Description**: mandatory fields to define the type and description of the purchase order.
 
-**Numerazione\Descrizione**: campo obbligatorio per la [Numerazione](/docs/configurations/tables/fluentis-numerations) da associare al tipo ordine.
+**Numeration/Description**: mandatory field for the [Numeration](/docs/configurations/tables/fluentis-numerations) to be associated with the order type.
 
-**Conferma ordine automatica**: se settato, al momento della creazione di un ordine con questo *Tipo ordine* viene compilato anche il campo *Data conferma ordine* presente nella testata dell'ordine, con la data odierna.
+**Automatic Order Confirmation**: if set, at the time of creating an order with this *Order Type*, the *Order Confirmation Date* field present in the order header is also filled with the current date.
 
-**Cash Flow**: se settato, il tipo ordine concorre al calcolo del cash flow.
+**Cash Flow**: if set, the order type contributes to the cash flow calculation.
 
-**Magazzino/Descrizione magazzino**: è il magazzino di arrivo della merce che viene settato in automatico sulle righe articolo degli ordini creati con questo tipo ordine.
+**Warehouse/Warehouse Description**: it is the receiving warehouse of the goods that is automatically set on the item lines of orders created with this order type.
 
-**Causale/Descrizione causale**: è la [Causale](/docs/configurations/tables/logistics/warehouse-templates) di movimentazione della merce in arrivo che viene settata in automatico sulle righe articolo degli ordini creati con questo tipo.
+**Template/Template Description**: it is the [Template](/docs/configurations/tables/logistics/warehouse-templates) for the movement of incoming goods, which is automatically set on the item lines of orders created with this type.
 
-**Controlla disponibilità**: se settato, gli ordini di questo tipo concorrono al calcolo della disponibilità e sono visibili nella form di [Analisi disponibilità](/docs/erp-home/registers/items/availability-analysis).
+**Control availability**: if set, orders of this type contribute to the availability calculation and are visible in the [Availability Analysis](/docs/erp-home/registers/items/availability-analysis) form.
 
-**Agricola acquisti IVA**: se attivo, in fase di creazione ordine, il sistema controlla se per l'articolo utilizzato è presente un codice dell'IVA agricola, se non esiste viene preso il codice IVA normale.
+**Agricultural VAT Purchases**: if active, at the time of order creation, the system checks if there is an agricultural VAT code for the item used; if it does not exist, the normal VAT code is used.
 
-**Gestione matrici extra data**: se attivo, permette di visualizzare, nel caso di gestione articoli con matrice, un tab aggiuntivo per l'imputazione dei valori della quantità per singola cella di matrice.
+**Extra Data Matrix Management**: if active, it allows displaying, in the case of managing items with matrices, an additional tab for entering the quantity values for each matrix cell.
 
-**Listini da aggiornare**: serve per far aggiornare in automatico i prezzi di listino in base ai prezzi specificati in ordine. Se tale flag non è selezionato, sarà comunque possibile, sulle righe dell'ordine, far aggiornare manualmente il valore del listino in  base al prezzo indicato sulla riga.
+**Price list to be updated**: serves to automatically update the list prices based on the prices specified in the order. If this flag is not selected, it will still be possible to manually update the list price on the order lines based on the price indicated on the line.
 
-**Tipo bolla consegna**: è la tipologia di DDT di acquisto da creare quando si utilizza la procedura di [Evasione da ordini](/docs/purchase/purchase-delivery-note/procedures/create-delivery-notes-from-orders).
+**Delivery Note type**: it is the type of purchase DDT to create when using the [Get from Orders](/docs/purchase/purchase-delivery-note/procedures/create-delivery-notes-from-orders) procedure.
 
-**Stampa**: in questo campo è possibile scegliere la stampa da utilizzare di default (si ricorda che, per stampare il report di default, in fase di stampa sarà necessario selezionare l'opzione *Stampe multiple*); nel campo successivo è possibile indicare un **Numero di copie** da stampare.    
+**Print Report**: in this field, you can choose the default print to use (it should be noted that to print the default report, during printing, it will be necessary to select the *Multiple Prints* option); in the next field, it is possible to indicate a **Number of copies** to print.
 
-**Controllo fornitore**: serve ad attivare un controllo per il quale, in fase di selezione del soggetto intestatario dell'ordine, la procedura ci permetterà di selezionare solo conti di tipo fornitore e non di tipo cliente.      
+**Vendor control**: serves to activate a control whereby, at the time of selecting the recipient of the order, the procedure will allow us to select only supplier-type accounts and not customer-type accounts.
 
-**Gestione cespiti**: questo flag permette di abilitare la [Gestione cespiti](/docs/finance-area/fixed-assets/general-overview) per quel tipo ordine e di selezionare il **Tipo operazione** che si vuole effettuare.
+**Fixed Assets Management**: this flag enables the [Fixed Assets Management](/docs/finance-area/fixed-assets/general-overview) for that order type and allows you to select the **Operation type** that you want to perform.

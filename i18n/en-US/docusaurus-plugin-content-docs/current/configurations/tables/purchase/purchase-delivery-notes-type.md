@@ -1,38 +1,38 @@
 ---
-title: Tipi DDT acquisto
+title: Purchase Delivery Note Types
 sidebar_position: 5
 ---
 
-Questa tabella è fondamentale per definire le varie tipologie di DDT di acquisto disponibili, ognuna con le proprie caratteristiche. E' raggiungibile da *Configurazione > Tabelle > Acquisti > Tipi DDT di acquisto*.
+This table is essential for defining the various types of purchase DDT available, each with its own characteristics. It can be accessed from **Configuration > Tables > Purchases > Purchase Delivery Note Types**.
 
-I campi presenti sono:
+The fields present are:
 
-**Codice\Descrizione**: campi obbligatori per definire il tipo e la descrizione della bolla di acquisto.
+**Code/Description**: mandatory fields to define the type and description of the purchase delivery note.
 
-**Numerazione\Descrizione**: campo obbligatorio per la [Numerazione](/docs/configurations/tables/fluentis-numerations) da associare al tipo DDT.
+**Numeration/Description**: mandatory field for the [Numeration](/docs/configurations/tables/fluentis-numerations) to be associated with the Purchase Delivery Note type.
 
-**Tipo/Descrizione fattura di acquisto**: in questo campo va definito il [Tipo fattura](/docs/configurations/tables/purchase/purchase-invoices-type) da creare quando si utilizza la procedura di [Valorizzazione DDT di acquisto](/docs/purchase/purchase-invoices/procedures/purchase-delivery-note-valorization). È possibile creare la fattura da DDT solo se questo campo è stato valorizzato.
+**Purchase Invoice Type/Description**: in this field, the [Purchase Invoice Type](/docs/configurations/tables/purchase/purchase-invoices-type) to be created when using the [Valorization Purchase Delivery Note](/docs/purchase/purchase-invoices/procedures/purchase-delivery-note-valorization) must be defined. It is possible to create the invoice from Purchase Delivery Note only if this field has been filled.
 
-**Natura DDT**: in questo campo va inserita la natura del DDT: consegna, reso, c/visione o reso c/visione. Questo valore dovrà essere selezionato da un elenco.         
+**DN Nature**: in this field, the nature of the DN must be entered: delivery, return, c/view, or return c/view. This value must be selected from a list.
 
-**Magazzino/Descrizione magazzino**: è il magazzino di arrivo della merce che viene settato in automatico sulle righe articolo dei DDT creati con questo tipo.
+**Warehouse/Warehouse Description**: the warehouse of arrival of the goods that is automatically set on the item lines of the Purchase Delivery Note created with this type.
 
-**Causale/Descrizione causale**: è la [Causale](/docs/configurations/tables/logistics/warehouse-templates) di movimentazione della merce in arrivo che viene settata in automatico sulle righe articolo dei DDT creati con questo tipo.
+**Template/Template Description**: this is the [Template](/docs/configurations/tables/logistics/warehouse-templates) for the movement of incoming goods that is automatically set on the item lines of the Purchase Delivery Note created with this type.
 
-**Controllo fornitore**: serve ad attivare un controllo per il quale, in fase di selezione del soggetto intestatario della bolla, la procedura ci permetterà di selezionare solo conti di tipo fornitore e non di tipo cliente.
+**Vendor Control**: this is used to activate a control whereby, during the selection of the addressee of the delivery note, the procedure will only allow the selection of accounts of type supplier and not of type customer.
 
-**Cash Flow**: se settato, il tipo ordine concorre al calcolo del cash flow.
+**Cash Flow**: if set, the order type contributes to the cash flow calculation.
 
-**Evasione quantità articolo non sommata**: se settato, nel momento in cui si andranno ad evadere righe ordine con quantità parziali nello stesso DDT questo flag consentirà di riportare le quantità evase dell'ordine suddivise per riga articolo senza sommare le quantità.
+**Unsumed Item Quantity Order**: if set, when fulfilling order lines with partial quantities in the same Purchase Delivery Note, this flag will allow the fulfilled quantities of the order to be reported per item line without summing the quantities.
 
-**Agricola acquisti IVA**: se attivo, in fase di creazione della bolla, il sistema controlla se per l'articolo utilizzato è presente un codice dell'IVA agricola, se non esiste viene preso il codice IVA normale.
+**Agricultural VAT Purchases**: if active, when creating the delivery note, the system checks if an agricultural VAT code is present for the item used; if it does not exist, the normal VAT code is taken.
 
-**Gestione matrici extra data**: se attivo, permette di visualizzare nel caso di gestione articoli con matrice, un tab aggiuntivo per l'imputazione dei valori della quantità per singola cella di matrice.
+**Extra Data Matrix Management**: if active, it allows for the visualization, in the case of managing items with matrices, an additional tab for entering the quantity values for each individual matrix cell.
 
-**Stampa**: in questo campo è possibile scegliere la stampa da utilizzare di default (si ricorda che, per stampare il report di default, in fase di stampa sarà necessario selezionare l'opzione *Stampe multiple*); nel campo successivo è possibile indicare un **Numero di copie** da stampare.    
+**Print Report**: in this field, you can choose the default printing to be used (please note that, to print the default report, during printing it will be necessary to select the *Multiple Prints* option); in the next field, it is possible to indicate a **Number of copies** to be printed.
 
-**Gestione Conai**: questo flag permette di attivare la gestione Conai per ciascun di tipo DDT. Per maggiori dettagli sulla gestione delle spese relative al [Conai](/docs/sales/sales-flow/conai) si rimanda all'apposita pagina della documentazione.
+**Recycle Management**: this flag allows for the activation of Conai management for each Purchase Delivery Note type. For more details on managing expenses related to [Recycle partner code](/docs/sales/sales-flow/conai), please refer to the appropriate page of the documentation.
 
-**Controllo qualità**: i tipi DDT che hanno questo flag attivo sono visibili nella form [Importa articoli da controllare](/docs/quality/item-control/items-control/item-control-import/) posta nell'area *Qualità*.
+**Quality Control**: Purchase Delivery Note types with this active flag are visible in the form [Import Items To Check](/docs/quality/item-control/items-control/item-control-import/) located in the *Quality* area.
 
-**Gestione cespiti**: questo flag permette di abilitare la [Gestione cespiti](/docs/finance-area/fixed-assets/general-overview) per quel tipo ordine e di selezionare il **Tipo operazione** che si vuole effettuare, che nel caso degli acquisti sarà un *Costo originario*.     
+**Fixed Assets Management**: this flag enables [Fixed Assets Management](/docs/finance-area/fixed-assets/general-overview) for that order type and allows selecting the **Operation Type** to be performed, which in the case of purchases will be an *Original Cost*.

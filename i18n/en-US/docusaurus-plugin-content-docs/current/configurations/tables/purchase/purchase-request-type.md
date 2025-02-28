@@ -1,24 +1,24 @@
 ---
-title: Tipi richiesta di acquisto
+title: Purchase Request Types
 sidebar_position: 1
 ---
 
-Questa tabella è fondamentale per definire le varie tipologie di RDA disponibili, ognuna con le proprie caratteristiche. E' raggiungibile da *Configurazione > Tabelle > Acquisti > Tipi richiesta di acquisto*.
+This table is essential for defining the various types of purchase requests available, each with its own characteristics. It can be accessed from **Configuration > Tables > Purchases > Purchase Request Types**.
 
-I campi presenti sono:    
+The fields present are:
 
-**Codice/Descrizione**: campi obbligatori per identificare il tipo di richiesta.
+**Code/Description**: mandatory fields to identify the type of request.
 
-**Numerazione**: selezionare la [Numerazione](/docs/configurations/tables/fluentis-numerations) da associare al tipo richiesta.
+**Numeration**: select the [Numeration](/docs/configurations/tables/fluentis-numerations) to associate with the request type.
 
-**Centro di costo**: centro di costo da proporre nella creazione della richiesta di acquisto. Può essere lasciato vuoto qualora non si usi il modulo di controllo di gestione.
+**Cost Center**: cost center to propose when creating the purchase request. It can be left empty if the management control module is not used.
 
-**Magazzino/Descrizione magazzino**: magazzino di default da utilizzare nella creazione della richiesta di acquisto.
+**Warehouse/Warehouse Description**: default warehouse to be used when creating the purchase request.
 
-**Controlla disponibilità**: se settato, le richieste di acquisto create con questo tipo vengono utilizzate per il calcolo della disponibilità e sono visibili nella form di [Analisi disponibilità](/docs/erp-home/registers/items/availability-analysis).         
+**Control Availability**: if set, purchase requests created with this type are used for the availability calculation and are visible in the [Availability Analysis](/docs/erp-home/registers/items/availability-analysis) form.
 
-**Stampa**: in questo campo è possibile scegliere la stampa da utilizzare di default (si ricorda che, per stampare il report di default, in fase di stampa sarà necessario selezionare l'opzione *Stampe multiple*); nel campo successivo è possibile indicare un **Numero di copie** da stampare.    
+**Print Report**: in this field, it is possible to choose the default print to use (it is reminded that, to print the default report, during printing it will be necessary to select the *Multiple Prints* option); in the next field, it is possible to indicate a **Number of copies** to print.
 
-**Cash flow**: se questo flag è attivo, questo tipo di RDA concorrà al calcolo del Cash Flow.      
+**Cash Flow**: if this flag is active, this type of purchase requests will contribute to the Cash Flow calculation.
 
-**Tipo richiesta di offerta**: in questo campo è necessario indicare quale [Tipo RDO](/docs/configurations/tables/purchase/purchase-offer-type) creare da questa tipologia di RDA.
+**Offer Request Type**: in this field, it is necessary to indicate which [Offer Request Type](/docs/configurations/tables/purchase/purchase-offer-type) to create from this type of purchase request.

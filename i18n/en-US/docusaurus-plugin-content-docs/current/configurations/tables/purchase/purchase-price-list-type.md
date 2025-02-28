@@ -1,16 +1,16 @@
 ---
-title: Tipi listino fornitori
+title: Purchase Price List Types 
 sidebar_position: 7
 ---
 
-La tabella si apre tramite il percorso **Tabelle > Acquisti > Tipi listino fornitori** e viene utilizzata per indicare le diverse tipologie di listini fornitori.
+The table opens via the path **Tables > Purchases > Purchase Price List Types** and is used to indicate the different types of purchase price lists.
 
-Consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+It allows for the insertion of new records or the search for existing ones to view, modify, or delete them.
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+The form consists of a filter area and a results area. Once all desired filters are set, simply click the **Search** button to display the results within the results grid.
 
-Per poter inserire nuove codifiche è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**. 
+To insert new codes, you need to click on the first empty row in the grid or press the **New** button. 
 
-**Codice/Descrizione**: campi obbligatori per definire il tipo di listino.
+**Code/Description**: mandatory fields to define the type of price list.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+For everything not detailed in this document regarding the common functionality of forms, please refer to the following link [Custom Features, Buttons, and Fields](/docs/guide/common).

@@ -1,20 +1,20 @@
 ---
-title: Tipo richiesta di offerta
+title: Offer Request Type
 sidebar_position: 2
 ---
 
-Questa tabella è fondamentale per definire le varie tipologie di richieste di offerta disponibili, ognuna con le proprie caratteristiche. E' raggiungibile da *Configurazione > Tabelle > Acquisti > Tipi richiesta di offerta*.     
+This table is essential for defining the various types of requests for quotations available, each with its own characteristics. It can be accessed from **Configuration > Tables > Purchases > Offer Request Type**.     
 
-I campi presenti sono:
+The fields present are:
 
-**Codice/Descrizione**: campi obbligatori per identificare il tipo di richiesta.
+**Code/Description**: mandatory fields to identify the type of request.
 
-**Numerazione**: contiene la [Numerazione](/docs/configurations/tables/fluentis-numerations) associata;      
+**Numeration**: contains the associated [Numeration](/docs/configurations/tables/fluentis-numerations);      
 
-**Tipo ordine fornitore**: contiene il [Tipo ordine fornitore](/docs/configurations/tables/purchase/purchase-orders-type) e la relativa **descrizione**da creare partendo dalla RDO, nella procedura di [Creazione ordine fornitore da offerta fornitore](/docs/purchase/offer-request/procedures/order-creation).         
+**Purchase Order Type**: contains the [Purchase Order Type](/docs/configurations/tables/purchase/purchase-orders-type) and the related **description** to be created starting from the RDO, in the procedure for [Purchase Order Creation from Purchase Offer](/docs/purchase/offer-request/procedures/order-creation).         
 
-**Prezzo ivato**: questo flag indica che nelle righe del documento sarà presente il Prezzo già ivato.    
+**Price including VAT**: this flag indicates that the price displayed on the document lines will already include tax.    
 
-**Stampa**: in questo campo è possibile scegliere la stampa da utilizzare di default (si ricorda che, per stampare il report di default, in fase di stampa sarà necessario selezionare l'opzione *Stampe multiple*); nel campo successivo è possibile indicare un **Numero di copie** da stampare.    
+**Print Report**: in this field, it is possible to choose the default print to use (it should be noted that to print the default report, it will be necessary to select the option *Multiple Print* during the print phase); in the following field, it is possible to indicate a **Number of copies** to print.    
 
-**Gestione cespiti**: questo flag indica che la tipologia di RDO deve gestire i cespiti; nel campo successivo è necessario indicare il **Tipo operazione**, che nel caso degli acquisti sarà sempre un *Costo originario*.     
+**Fixed Assets Management**: this flag indicates that the Offer Request Type must manage assets; in the following field, it is necessary to indicate the **Operation Type**, which in the case of purchases will always be an *Original Cost*.
