@@ -25,7 +25,7 @@ Nel caso di evasione di più documenti, è possibile raggrupparli in base alle s
 > - anno: i documenti di origine dello stesso anno creeranno un singolo DDT
 > - mese: i documenti di origine dello stesso mese creeranno un singolo DDT
 > - cambio: i documenti di origine con lo stesso cambio creeranno un singolo DDT
-> - progetto: i documenti di origine con lo stesso progetto in [Testata](/docs/sales/sales-orders/create-new-sales-orders/header) creeranno un singolo DDT
+> - progetto: i documenti di origine con lo stesso progetto in [Testata](/docs/sales/sales-orders/create-new-sales-orders/sales-order) creeranno un singolo DDT
 > - tipo e soluzione di pagamento: i documenti di origine con le stesse condizioni di pagamento creeranno un singolo DDT
 > - destinazione: i documenti di origine con la stessa destinazione e vettore creeranno un singolo DDT  
 > - cointestatari: i documenti di origine con lo stesso tipo operazione per la gestione dei cespiti creeranno un singolo DDT
