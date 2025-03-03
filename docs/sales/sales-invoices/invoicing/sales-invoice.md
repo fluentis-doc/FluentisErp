@@ -6,7 +6,7 @@ sidebar_position: 1
 La form si apre:  
 1. tramite il percorso **Vendite > Fatture > Crea fattura di vendita**  
 oppure 
-2. tramite il pulsante **Nuova** che si trova nella form [Ricerca fatture di vendita](/docs/sales/sales-invoices/search-sales-invoices).
+2. tramite il pulsante **Nuova** che si trova nella form [Ricerca fatture di vendita](/docs/sales/sales-invoices/invoicing/search-sales-invoices).
 
 ## **1. Dati obbligatori**
 

@@ -7,7 +7,7 @@ Obrazac se otvara putem putanja:
 
 1. **Prodaje > Fakture > Kreiraj prodajni račun**   
 ili   
-2. putem gumba **Nova** koji se nalazi u obrascu [Pretraživanje faktura prodaje](/docs/sales/sales-invoices/search-sales-invoices).
+2. putem gumba **Nova** koji se nalazi u obrascu [Pretraživanje faktura prodaje](/docs/sales/sales-invoices/invoicing/search-sales-invoices).
 
 :::note NAPOMENA
 U fakturi prodaje automatski se predlažu trenutni **Datum** i **Godina**, ali vrijednosti se mogu promijeniti.
