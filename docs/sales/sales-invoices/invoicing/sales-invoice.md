@@ -333,9 +333,9 @@ Sono poi presenti alcune tab che analizziamo di seguito.
 
 ### 3.1 Sconti/Listini
 
-import TabDiscount from './../../../import/sections/sales-tab-discount.md'
+import SalesTabDiscount from './../../../import/sections/sales-tab-discount.md'
 
-<TabDiscount />
+<SalesTabDiscount />
 
 ### 3.2 Dati articolo
 
