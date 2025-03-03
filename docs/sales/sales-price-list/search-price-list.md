@@ -14,4 +14,3 @@ Il pulsante specifico di questa maschera di ricerca è il **Chiudi listini**: co
 - Conto 
 - Data documento
 - Data di fine listino prezzi
-
