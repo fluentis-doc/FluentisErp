@@ -1,12 +1,6 @@
 ---
-title: General Overview
+title: Generalità
 sidebar_position: 1
 ---
 
-The section of Logistics Area Tables can be viewed through the following path Home > Tables > Logistics and it is necessary in order to insert all the main data that are managed within the Logistics Area.
-
-
-
-
-
-
+Le tabelle dell'Area Logistica servono ad inserire tutti i dati principali che vengono gestiti all'interno dell'intera Area Logistica. 
