@@ -22,7 +22,7 @@ Questo campo non è rilevante per la gestione della [**Contabilizzazione POS**](
 
 - **Anagrafica**: si tratta di un campo alternativo al precedente *Conto* che può essere utilizzato per inserire un *Contatto* che non è abbinato ad alcun sottoconto
 
-## **1.1 Totali documento**
+### 1.1 Totali documento
 
 Nella parte destra della form sono presenti i totali del documento.
 
@@ -35,7 +35,7 @@ import SummariesDocumentTotal from './../../../import/sections/summaries-documen
 > **Scarico POS**: permette lo scarico POS, se per ogni articolo sono state inserite il magazzino e la causale.
 
 
-## ** 2. Testata**
+## **2. Testata**
 
 Dopo aver selezionato i dati obbligatori nella sezione superiore, l'utente può continuare l'inserimento dei seguenti dati [manualmente](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) oppure con il [help di campo](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection).
 

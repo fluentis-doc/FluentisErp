@@ -5,6 +5,8 @@ sidebar_position: 1
 
 La form **Crea DDT di vendita** si apre tramite il percorso **Vendite > DDT > Crea DDT di vendita** oppure tramite il pulsante ![](/img/neutral/common/new.png) che si trova nella form [Ricerca DDT di vendita](/docs/sales/sales-delivery-notes/search-sales-dn).
 
+## **1. Dati obbligatori**
+
 Per continuare la creazione del DDT di vendita, l'utente deve inserire i campi obbligatori:
 - **Tipo DDT**: predefinito in  *Configurazione > Tabelle > Vendite> [Tipi DDT](/docs/configurations/tables/sales/delivery-notes-type)*.
 - **Numero**: ad ogni documento viene assegnato un numero secondo la numerazione specificata dall'utente e al tipo di documento che contiene la numerazione. La numerazione associata alla tipologia di DDT prevede generalmente una progressione automatica basata su data e numero, con una funzione di recupero che copre eventuali buchi nella sequenza (ad esempio, causati dalla cancellazione di documenti). Questo comportamento è regolato da due flag specifici nella tabella della numerazione. Se l'utente desidera inserire manualmente il numero, può disabilitare il flag di progressione data-numero (che garantisce l'incremento della numerazione nelle date future) e il flag di recupero numeri. Inoltre, dovrà abilitare il flag della numerazione esterna, segnalando così al sistema che la numerazione sarà gestita manualmente.    
@@ -13,12 +15,7 @@ Per continuare la creazione del DDT di vendita, l'utente deve inserire i campi o
 
 La form contiene una serie di tab.
 
----
-title: Testata
-sidebar_position: 2
----
-
-## Testata 
+## **2. Testata**
 
 Dopo aver selezionato i dati obbligatori nella sezione superiore, l'utente può continuare l'inserimento dei seguenti dati [manualmente](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) oppure con l' [help di campo](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) oppure, in base alle procedure che sceglie, l'applicazione compila i campi *automaticamente*.
 
@@ -31,7 +28,8 @@ Inserendo il **Cliente**, vengono *proposti* in automatico tutti i dati specific
 - **Nazione**: sezione contenente i dati [Nazione](/docs/guide/common/glossary/glossary-intro#country), [Lingua](/docs/guide/common/glossary/glossary-intro#language), [Zona](/docs/guide/common/glossary/glossary-intro#zone).
 - **Spedizione**: sezione contenente i dati [Spedizione](/docs/guide/common/glossary/glossary-intro#shipment), [Porto](/docs/guide/common/glossary/glossary-intro#carriage), [Imballo](/docs/guide/common/glossary/glossary-intro#packing), [Listino](/docs/guide/common/glossary/glossary-intro#sales-price-list) (in testata documento viene inserito il listino inserito in anagrafica cliente con il flag Default) con il tipo scaglione di sconto e il suo [intervallo di validità](/docs/guide/common/glossary/glossary-intro#validity-date).
 
-Elenchiamo gli altri campi disponibili nella testata del DDT:
+####  Altri campi testata
+
 - **Stampata**: si attiva quando viene lanciata la stampa del documento ed identifica che il documento è stato stampato; questo flag è importante anche per permettere l'evasione del DDT in altri documenti.      
 - **Scaricata**: questo flag si attiva automaticamente quando il documento viene movimentato a magazzino, con il bottone della barra degli strumenti *Scarico automatico* o con le procedure a disposizione.     
 - **Valorizzata**: questo flag si attiva quando il DDT viene valorizzato in fattura.   
@@ -55,7 +53,8 @@ I flag possono essere tolti con le procedure di ripristino operazione.
 - **Decorrenza** è la data di decorrenza per il calcolo delle scadenze di pagamento.      
 - **Audit Trail**: come in tutti i documenti, questa sezione riporta la data di creazione del documento con l'operatore, e la data di ultima modifica del documento con l'operatore.   
 
-I pulsanti presenti nella ribbon bar della testata del DDT sono:    
+#### Pulsanti specifici
+
 > [Evasione da ordini](/docs/sales/sales-delivery-notes/insert-delivery-notes/sales-dn-procedures/execution-from-order) (vedere la documentazione relativa).    
 > [Scarico automatico](/docs/sales/sales-delivery-notes/insert-delivery-notes/sales-dn-procedures/unload) (vedere la documentazione relativa)   
 > **Help destinatari/destinazioni**: questo bottone apre l'Help per poter scegliere il destinatario/destinazione per il documento, tra quelli disponibili per il cliente e quindi codificati nella sua anagrafica.      
@@ -65,15 +64,15 @@ I pulsanti presenti nella ribbon bar della testata del DDT sono:
 
 Nella testata sono poi presenti alcune tab che analizziamo di seguito. 
 
-## Pagamenti
+### 2.1 Pagamenti
 
 Le **Soluzioni di pagamento** sono riportate in automatico dal documento di origine o dall'*Anagrafica cliente > tab Pagamenti* e possono essere modificate/cancellate dall'utente.        
 Se al **Tipo pagamento** è associato uno sconto finanziario, l'importo dello sconto viene considerato solo ai fini contabili cioè nelle scadenze del documento e non nel totale ordine.
 
-*Pulsante specifico*
+#### Pulsante specifico*
 > **Cancella pagamenti**: utilizzato per cancellare le righe di pagamento selezionate.
 
-## Sconti
+### 2.2 Sconti
 
 Vengono proposti solo gli sconti predefiniti ripresi dall'*Anagrafica cliente > tab Sconti* e possono essere modificate/cancellate dall'utente.
 
@@ -81,25 +80,24 @@ import TabDiscount from './../../../import/sections/tab-discount.md'
 
 <TabDiscount />
 
-## Agenti
+### 2.3 Agenti
 
 Indica il codice agente e la sua provvigione per ogni riga articolo. Viene proposto il codice e la percentuale definiti nell'*Anagrafica cliente > tab Agenti*.
 Se la provvigione non è collegata al cliente nella sua anagrafica, comunque deve essere inserito l'agente ma con provvigione NULL perché se fosse con provvigione 0, significherebbe che l'agente è collegato all'agente ma non percepisce provvigione.
 La stessa sezione verrà riproposta per ogni riga articolo nel relativo tab *Agenti*.
 
-*Pulsante specifico*
+#### Pulsante specifico*
 > **Cancella agenti**: permette di cancellare gli agenti selezionati.
 
-## Extra Data
+### 2.4 Extra Data
 
 import TabExtraData from './../../../import/sections/tab-extra-data.md'
 
 <TabExtraData />
 
-h1---
-title: Evasione da ordine
-sidebar_position: 1
----
+## Procedure testata:
+
+### *Evasione da ordine*
 
 Nella testata del DDT, premendo il pulsante **Evasione da ordine** si aprirà la form dove è possibile filtrare gli ordini confermati del cliente del documento e trasferirli nel DDT. E' possibile eseguire l'operazione di creazione DDT da ordine anche dalla [Ricerca ordini](/docs/sales/sales-orders/search-sales-orders).
 
@@ -114,7 +112,7 @@ Per poter utilizzare questa procedura vi sono delle condizioni iniziali che devo
 
 Si dovrà poi andare ad impostare nella testata del nuovo DDT, il *Tipo DDT* che si vuole creare (che deve corrispondere a quello impostato nella tabella dei *Tipi ordini*) e il *Cliente*. Una volta inseriti questi dati, bisognerà cliccare sul pulsante *Evasione ordini* per aprire la form di evasione.
 
-*Procedimento*:
+#### Procedimento:
 
 I filtri per cliente e divisa verranno riportati in automatico in base al cliente selezionato nel DDT.
 
@@ -136,7 +134,7 @@ Nella griglia di risultati, l'utente ha poi la possibilità di:
 
 Per completare la procedura bisognerà poi cliccare sul pulsante *Trasferimento*, che andrà a riprendere tutti i dati presenti nell'ordine e li riporterà nel DDT.
 
-*Pulsanti specifici*:
+#### Pulsanti specifici
 
 > **Ricerca** permette di cercare gli ordini fornitore.  
 > **Trasferimento** permette di trasferire i dati dell'ordine selezionato all'interno del nuovo DDT.  
@@ -147,20 +145,14 @@ Per completare la procedura bisognerà poi cliccare sul pulsante *Trasferimento*
 > **Seleziona tutti** permette di selezionare tutti gli articoli dalla lista.  
 > **Deseleziona tutti** permette di deselezionare tutti gli articoli dalla lista.  
 
-h2 ---
-title: Scarico automatico
-sidebar_position: 2
----
+### *Scarico automatico*
 
 L'altra procedura presente in testata DDT è lo scarico automatico da magazzino. Il pulsante si abilita se il documento è Stampato.      
 Ricordiamo che se nei [Parametri DDT](/docs/configurations/parameters/sales/dn-parameters) è abilitato lo scarico automatico, questa procedura verrà avviata in automatico una volta Stampato il documento.      
 Una volta avviata la procedura, Fluentis controlla la presenza di magazzino e causale nelle righe DDT e l'eventuale presenza di lotti e serial number se richiesti; nel caso la procedura non vada a buon fine viene avvisato l'utente con un errore.      
 Se la procedura va a buon fine, viene creata la [Registrazione di magazzino](/docs/logistics/warehouse/stock-records/record) che movimenta gli articoli del documento e viene inserito il flag **Scaricato** nella testata DDT.      
 
----
-title: Articoli
-sidebar_position: 3
----
+## **3. Articoli**
 
 In questo tab vengono inseriti tutti gli articoli con i relativi dati.
 
@@ -169,8 +161,6 @@ Per tutto quanto non dettagliato in questo documento sul funzionamento comune de
 import InsertMode from './../../../import/sections/insert-mode.md'
 
 <InsertMode />
-
-## Griglia articoli
 
 Per inserire un **Nuovo articolo** nella griglia basterà posizionarsi sulla riga per compilare i vari dati oppure utilizzare il pulsante **Nuovo** presente nella ribbon bar. Le colonne disponibili sono le seguenti:   
 
@@ -231,7 +221,7 @@ import Vat from './../../../import/fields/item-vat.md'
 - **Peso lordo**: viene riportato il Peso lordo presente in anagrafica articolo, moltiplicato per la quantità articolo della riga.     
 
 
-*Pulsanti specifici*
+#### Pulsanti specifici
 
 > **Ricalcolo Conai**: se il [Conai](/docs/sales/sales-flow/conai) è abilitato per il documento, è possibile ricalcolare i valori con questo bottone dopo eventuali modifiche.       
 
@@ -246,13 +236,13 @@ Cliccando su questo pulsante si apre la form corrispondente dove: inserire la qu
 > **Mostra/Nascondi dettagli**: cliccando questo bottone si rendono o meno visibili le tab interne agli Articoli.   
 
 
-## Sconti/Listini
+### 3.1 Sconti/Listini
 
 import SalesTabDiscount from './../../../import/sections/sales-tab-discount.md'
 
 <SalesTabDiscount />
 
-## Dati
+### 3.2 Dati
 
 All'interno di questo tab vengono riportate/inserite ulteriori informazioni relative all'articolo.
 
@@ -273,20 +263,20 @@ import AlternativeUMQuantity from './../../../import/fields/alternative-um-quant
 - **Nota**: offre la possibilità di inserire note per ogni articolo.     
 - **Dettaglio dichiarazioni**: viene riportata la [Dichiarazione d'intento](/docs/finance-area/declarations/declarations/intent-declaration) usata per proporre l'iva dell'articolo; dalla combo box è possibile cambiare la dichiarazione d'intento di riferimento, se presenti più dichiarazioni valide.    
 
-## Agenti
+### 3.3 Agenti
 
 import SalesTabAgent from './../../../import/sections/sales-tab-agent.md'
 
 <SalesTabAgent />
 
-## Lotti e Serial number
+### 3.4 Lotti e Serial number
 
 Nelle due griglie possono essere inseriti i lotti e i numeri seriali che devono essere scaricati dal magazzino.     
 Questa operazione è condizionata dalla presenza dei lotti e dei numeri seriali nel magazzino. 
 
 Se l'articolo non prevede la gestione dei Lotti/Numeri seriali, questo tab sarà disabilitato.  
 
-*Pulsanti specifici*
+#### Pulsanti specifici
 
 import DeleteLot from './../../../import/buttons/delete-lot.md'
 
@@ -296,48 +286,45 @@ import DeleteSN from './../../../import/buttons/delete-sn.md'
 
 > <DeleteSN />
 
-## Analitica
+### 3.6 Analitica
 
 import TabAnalytic from './../../../import/sections/tab-analytic.md'
 
 <TabAnalytic />
 
-## Extra data
+### 3.7 Extra data
 
 import DocItemExtraData from './../../../import/sections/doc-item-extradata.md'
 
 <DocItemExtraData />
 
-## Documenti allegati
+### 3.8 Documenti allegati
 
 import DocAttachDocument from './../../../import/sections/doc-attach-document.md'
 
 <DocAttachDocument />
 
-## Sezione valori
+### 3.9 Sezione valori
 
 import SalesValuesSection from './../../../import/sections/item-values-section.md'
 
 <SalesValuesSection />
 
----
-title: Riepiloghi
-sidebar_position: 5
----
+## **4. Riepiloghi**
 
 Nei Riepiloghi sono presentate le informazioni principali dell'intero documento.
 
-## Sconti finali articoli
+### 4.1 Sconti finali articoli
 
 import SummariesFinalDiscount from './../../../import/sections/summaries-final-discount.md'
 
 <SummariesFinalDiscount />
 
-## Riepilogo provvigioni agenti
+### 4.2 Riepilogo provvigioni agenti
 
 In questo tab vengono riepilogate le provvigioni previste per ogni agente.     
 
-## Spese/Sconti/maggiorazioni finali 
+### 4.3 Spese/Sconti/maggiorazioni finali 
 
 import SummariesExpenses from './../../../import/sections/summaries-expenses.md'
 
@@ -345,26 +332,23 @@ import SummariesExpenses from './../../../import/sections/summaries-expenses.md'
 
 - **Dettaglio dichiarazioni**: viene inserita l'eventuale dichhiarazione d'intento valida per il cliente.    
 
-## Riepiloghi IVA
+### 4.4 Riepiloghi IVA
 
 Viene proposto il riepilogo IVA del documento, per ogni codice IVA.
 
-## Riepilogo scadenze
+### 4.5 Riepilogo scadenze
 
 import SummariesDueDate from './../../../import/sections/summaries-due-date.md'
 
 <SummariesDueDate />
 
-## Totali documento
+### 4.6 Totali documento
 
 import SummariesDocumentTotal from './../../../import/sections/summaries-document-total.md'
 
 <SummariesDocumentTotal />
 
----
-title: Trasporto
-sidebar_position: 6
----
+## **5. Trasporto**
 
 I dati presenti sono: 
 
@@ -381,13 +365,9 @@ I dati presenti sono:
 - **Ingresso/Uscita valico di frontiera**: campi utilizzati per l'eTrasport per la versione romena, che rimandanno alla tabella Valico di frontiera.      
 - **Trasporto**: è necessario selezionare la figura che si occuperà del trasporto, mettendo il flag in Mittente, Destinatario o Vettore; in base alla selezione, la sezione sottostante cambierà; se il trasporto è a carico del Mittente sarà possibile inserire Targa automezzo, Rimorchio, Data e Ora di Inizio trasporto; se è a carico del Destinatario sarà possibile inserire Targa automezzo, Rimorchio, Data e Ora di Inizio trasporto; se è a carico del Vettore invece i campi disponibili saranno Anagrafica contabile del Vettore, Targa, Rimorchio, Data e Ora trasporto, eventuale Committente, Caricatore, Proprietario, Luogo carico. 
 
----
-title: Documenti collegati
-sidebar_position: 7
----
+## **6. Documenti collegati**
 
 In questa tab è possibile consultare i documenti allegati.
 Per allegare i documenti è possibile procedere in due modi:
 - utilizzando il pulsante della barra degli strumenti **Documenti** si può scegliere se allegare un documento già codificato in Fluentis o se creare un nuovo Documento da allegare.       
 - utilizzando direttamente nella griglia il tasto destro e selezionando *Allega file* si va in creazione di un nuovo Documento da allegare.     
-

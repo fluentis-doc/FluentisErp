@@ -5,6 +5,8 @@ sidebar_position: 1
 
 Obrazac za **Stvaranje otpremnice** otvara se putem navigacije **Prodaja > Otpremnice > Stvori otpremnicu**ili putem gumba ![](/img/neutral/common/new.png) koji se nalazi u obrascu [Pretraži otpremnice](/docs/sales/sales-delivery-notes/search-sales-dn).
 
+## **1. Dati obbligatori**
+
 U obrascu za unos automatski se nude trenutni **Datum** i **Godina**, ali ih korisnik može promijeniti.
 
 Za nastavak stvaranja otpremnice, korisnik mora unijeti  **obavezna** polja:
@@ -17,12 +19,7 @@ Za nastavak stvaranja otpremnice, korisnik mora unijeti  **obavezna** polja:
 
 Obrazac sadrži niz kartica.
 
----
-title: Zaglavlje
-sidebar_position: 2
----
-
-## Zaglavlje
+## **2. Zaglavlje**
 
 Nakon što su odabrani obavezni podaci u gornjem dijelu, korisnik može nastaviti unos sljedećih podataka:
 
@@ -41,7 +38,7 @@ Unoseći **Klijenta** automatski se *nude* svi specifični podaci u **Zaglavlju*
 - **Dostava**: [Dostava](/docs/guide/common/glossary/glossary-intro#shipment), [Luka](/docs/guide/common/glossary/glossary-intro#carriage), [Pakiranje](/docs/guide/common/glossary/glossary-intro#packing), [Cjenik](/docs/guide/common/glossary/glossary-intro#sales-price-list) i njegov [vremenski interval](/docs/guide/common/glossary/glossary-intro#validity-date)
 - ostala polja koja se nude izborom klijenta, ali se mogu mijenjati: [Odredište](/docs/guide/common/glossary/glossary-intro#destination), [Primatelj](/docs/guide/common/glossary/glossary-intro#recipient).
 
-*Ostala opcionalna polja*:
+#### Ostala opcionalna polja
 
 **Stanje računa**: prilikom stvaranja, račun nema aktivnih oznaka.
 Ova sekcija uključuje sljedeća polja:  
@@ -78,7 +75,7 @@ U slučaju *Izvršenja putem narudžbenice*, informacije koje su bile navedene u
 
 **Primjeni iz**: je datum početka za izračun datuma dospijeća plaćanja.
 
-*Posebni gumbi*
+#### Posebni gumbi
 
 > **Obrada iz narudžbenice kupca**: pokreće postupak za stvaranje računa iz narudžbenice kupca. Aktivira se kada su uneseni klijent i tip računa.  
 > **Obrada iz otpremnice**: pokreće postupak za stvaranje računa iz otpremnice. Aktivira se kada su uneseni klijent i tip računa.  
@@ -90,7 +87,7 @@ U slučaju *Izvršenja putem narudžbenice*, informacije koje su bile navedene u
 > **Registar Sdi dokumenata**: Otvora SDI dokument koji se odnosi na račun, nakon Kontrolirano.
 
 
-### Plaćanja
+### 2.1 Plaćanja
 
 **Uvijeti plaćanja** automatski se prenose iz *Šifarnik kupca > kartica Plaćanje* i mogu se mijenjati/brisati od strane korisnika.
 
@@ -102,7 +99,7 @@ Ako dokument potječe iz:
 
 - Plaćanja mogu biti preuzeta iz klijentove kartice ili iz pojedinačnih plaćanja prisutnih u svakoj otpremnici. U ovom slučaju, u računu će se prikazati vrsta plaćanja s istim iznosom i PDV-om kao i u otpremnici, te će se dodati nova linija za bilo kakve stavke koje nisu proizašle iz otpremnice.
 
-## Popusti
+### 2.2 Popusti
 
 Ponuđeni su samo predefinirani popusti iz *Šifarnik kupca > kartica Popusti* a ne oni dodijeljeni uvjetima plaćanja ili određenim artiklima. Mogu se mijenjati/brisati od strane korisnika.
   
@@ -110,10 +107,10 @@ Popusti ponuđeni u zaglavlju dokumenta pojavit će se u svakom novom retku stav
 
 Nakon što se unesu nove stavke, u zaglavlje se unese novi popust, on neće biti primijenjen na već unesene stavke.
 
-*Posebni gumb*  
+#### Posebni gumb   
 > **Izbriši rabate**: koristi se za brisanje odabranih redova popusta.
 
-## Trgovački predstavnici
+### 2.3 Trgovački predstavnici
 
 Pokazuje kod agenta i njegovu proviziju za svaki redak članka. Kod i postotak definirani su u *Šifarnik kupca > kartica Predstavnici*.
 
@@ -123,41 +120,34 @@ U slučaju generiranja otpremnice iz narudžbe, ovi podaci naravno će se ponovi
 
 Ovaj odjeljak bit će ponovljen za svaki redak članka u pripadajućem odjeljku Trgovački predstavnici.
 
-## Dodatni podaci
+### 2.4 Dodatni podaci
 
 Ovdje se nudi informacija unesena u *Šifarnik subjekta > kartica Dodatni podaci*, samo ako postoje zadani podaci.
 
-h1 ---
-title: Stvaranje otpremnice iz packing list
-sidebar_position: 3
----
+## Procedure testata:
+
+### *Stvaranje otpremnice iz packing list*
 
 Omogućuje preuzimanje stavki iz popisa pakiranja. Nakon ovog postupka, popis pakiranja će imati status *Ispražnjen*. 
 
-*Posebni gumbi:*
+#### Posebni gumbi 
 
 > **Traži slaganje**: gumb za pretraživanje popisa pakiranja.  
 > **Označi sve**: gumb za odabir svih stavki iz popisa pakiranja.  
 > **Prebaci artikle**: gumb za prijenos odabranih stavki iz popisa pakiranja.
 
-h2 ---
-title: Stvaranje otprmenice iz odabira
-sidebar_position: 2
----
+### *Stvaranje otprmenice iz odabira*
 
 Proces omogućuje preuzimanje stavki iz odabira (Skladište/Odabir) u otpremnicu. Nakon ovog postupka, odabir će imati status **Isporučeno**.
 
 
-*Posebni gumbi*:
+#### Posebni gumbi
 
 > **Traži slaganje**: gumb za pretraživanje odabira.   
 > **Označi sve**: gumb za odabir svih stavki iz odabira.  
 > **Prebaci artikle**: gumb za prijenos odabranih stavki iz odabira.  
 
-h3---
-title: Izuzimanje iz narudžbe
-sidebar_position: 1
----
+### *Izuzimanje iz narudžbe*
 
 Na zaglavlju otpremnice, pritiskom na gumb **Izuzimanje iz narudžbe** otvorit će se obrazac gdje je moguće filtrirati narudžbe koje se odnose na klijenta dokumenta.
 
@@ -175,7 +165,7 @@ Trenutno se narudžbe koje sadrže grupirane stavke ne mogu izvršiti ovim postu
 
 Zatim će biti potrebno postaviti željenu *Vrstu otpremnice* (koja mora odgovarati onoj postavljenoj u tablici *Vrste narudžbi*) i *Klijenta* u zaglavlju nove otpremnice. Nakon unosa ovih podataka, trebat će kliknuti na gumb *Izvršavanje narudžbi* kako bi se otvorio obrazac za izvršavanje.
 
-*Postupak*:
+#### Postupak
 
 Filteri za klijenta i valutu bit će automatski postavljeni prema odabranom klijentu u otpremnici.
 
@@ -193,7 +183,7 @@ U prikazu rezultata, korisnik ima mogućnost:
 
 Kako bi se postupak dovršio, bit će potrebno kliknuti na gumb *Prijenos*, koji će preuzeti sve podatke iz narudžbe i prenijeti ih u otpremnicu.
 
-*Posebni gumbi*:
+#### Posebni gumbi
 
 > **Traži** omogućuje pretraživanje dobavljačkih narudžbi.   
 > **Prijenos** omogućuje prenošenje podataka odabrane narudžbe u novu otpremnicu.    
@@ -217,7 +207,7 @@ Za sve što nije detaljno objašnjeno u ovom dokumentu o zajedničkom radu obraz
 
 Podaci se mogu unositi [ručno](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection), uz [pomoćno polje](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) ili ih mogu predložiti povezane procedure.
 
-## Artikli
+## **3. Artikli**
 
 Da biste unijeli **Novi artikl** u mrežu, dovoljno je postaviti se na red kako biste ispunili različite podatke ili koristiti gumb **Novo** koji se nalazi na gornjem izborniku.
 
@@ -269,7 +259,7 @@ U odsutnosti cjenika, predloženi podatak je **prodajna cijena** preuzeta iz *Š
 
 **Težine**: prikazane su neto i bruto težine svih stavki. Težine artikala iz ankete pomnožene su s količinom stavke.
 
-*Posebni gumbi*
+#### Posebni gumbi  
 > **Upravljanje pakiranjem**: otvara upravljanje pakiranjem koje će se koristiti u dokumentu kupnje.
 Gumb postaje aktivan ako je dokument spremljen, ali nije učitan.
 Klikom na ovaj gumb otvara se odgovarajući obrazac gdje možete: unesite količinu, odaberite redak i izvršite prijenos odabranog pakiranja na retke artikla klikom na gumb **Izvrši**. U ovom obrascu prikazani su artikli koji su uneseni kao pakiranje i koji su prisutni u tablici **Pakiranja**.
@@ -277,13 +267,13 @@ Klikom na ovaj gumb otvara se odgovarajući obrazac gdje možete: unesite količ
 > **Ažurirajte cjenike**: omogućuje ažuriranje cijene artikla prema novom cjeniku (ako je unesen novi cjenik).
 Klikom na padajući izbornik pored gumba , moći ćete stvoriti novi cjenik ako ga još nema.
 
-## Popusti/Cjenici
+### 3.1 Popusti/Cjenici
 
 **Popusti**: ponuđeni su svi popusti povezani s artiklom, svaki s vlastitim izračunom i dodjelom. Popusti se mogu preuzeti: iz podataka o kupcu, iz rješenja plaćanja dodijeljenih dokumentu, iz cjenika iz asocijacije cjenika-kupac. Svi predloženi podaci mogu se mijenjati.
 
 **Vrijednosti cjenika**: ponuđen je cjenik iz kojeg je artikl preuzet, s datumom početka/završetka važenja i s posebnim uvjetima prodaje (npr. razrede popusta) dodijeljenim artiklu u cjeniku.
 
-*Posebni gumb*
+#### Posebni gumb
 
 > **Izbriši rabat**: omogućuje brisanje popusta povezanog s odabranim artiklom u gornjem izborniku.
 
@@ -303,11 +293,11 @@ Na ovoj kartici se unose dodatne informacije o artiklu.
 
 **Pravo naplate PDV-a**: ako je postavljeno, PDV za poklon se uzima u obzir za ukupni dokument.
 
-## Trgovački predstavnici
+### 3.3 Trgovački predstavnici
 
 **Trgovački predstavnici**: predstavnik povezan s odgovarajućim postotkom za odabrani artikl; podatak odgovara onome što je navedeno u Zaglavlju > kartica Predstavnici. Postotak se može promijeniti.
 
-*Posebni gumb*
+#### Posebni gumb
 > **Izbriši trgovačkog predstavnike**: omogućuje brisanje povezanog Predstavnikas odabranim artiklom.
 
 
@@ -317,11 +307,11 @@ Prikazuju se varijante odabranog artikla, kodirane u kartici **Varijante** šifa
 Na primjer, u svakom retku artikla možete unijeti ukupnu količinu; nakon toga, u istoj kartici, možete definirati različite količine za više varijanti odabranog artikla, uključujući i varijacije u veličini/boji.  
 Ova operacija je moguća samo ako sve varijante artikla imaju istu cijenu kao i cijena artikla u standardnoj konfiguraciji.
 
-*Posebni gumb*
+#### Posebni gumb  
 > **Obriši**: omogućuje brisanje odabrane varijante.
 
 
-## Lotovi i serijski brojevi
+### 3.4 Lotovi i serijski brojevi
 
 U dvije tablice mogu se unijeti serije i serijski brojevi koji se moraju skinuti iz skladišta i koji su povezani s artiklom u *Šifarnik artikla > kartica [Lotovi i serijski brojevi](/docs/erp-home/registers/items/create-new-items/item-registry/lots-and-serial-number)* ili se mogu unijeti ručno.
 
@@ -329,25 +319,25 @@ Ova operacija ovisi o prisutnosti serija i serijskih brojeva u skladištu.
 
 Ako artikl ne zahtijeva upravljanje lokotima/serijskim brojevima, ovaj će se tab onemogućiti.
 
-*Posebni gumbi*
+#### Posebni gumbi
 > **Izbriši lot**: omogućuje brisanje odabranog lota.  
 > **Izbriši serijski broj**: omogućuje brisanje odabranog serijskog broja.
 
-## Analitika
+### 3.6 Analitika
 
 Može sadržavati informacije o troškovima/profitu na koje su raspoređene vrijednosti artikala.   
 Ovi podaci mogu se unijeti ručno ili automatski (ako su centri troškova/profita prethodno uneseni u Šifarnik kontakata, Šifarnik artikala ili plan konta).
 
-## Dodatni podaci
+### 3.7 Dodatni podaci
 
 Prikazuje popis **Dodatnih podataka** povezanih s artiklom, s mogućnošću dodavanja novih dodatnih podataka korisnih samo za trenutni dokument, uz mogućnost odabira koje dodatne podatke želite ispisati putem odgovarajuće oznake.
 
 
-## Dokumenti u privitku
+### 3.8 Dokumenti u privitku
 
 Prikazuje pojedinosti o eventualnom **Priloženom dokumentu** (ime, vrsta dokumenta, eventualne bilješke, referenca na narudžbu/prodaju). Za upute o tome kako priložiti dokument, pogledajte članak **Priloži dokumente**.
 
-## Vrijednost odjeljka
+### 3.9 Vrijednost odjeljka
 
 Donji desni dio prikazuje sažetak troškova koji sudjeluju u formiranju konačne cijene odabranog artikla u tablici artikala.
 
@@ -365,14 +355,11 @@ Donji desni dio prikazuje sažetak troškova koji sudjeluju u formiranju konačn
 
 **Ukupno**: Poreska osnovica + Porez.
 
----
-title: Sažeci
-sidebar_position: 5
----
+## **4. Sažeci
 
 U Sažecima su prikazane osnovne informacije cijelog dokumenta.
 
-## Konačni rabati
+### 4.1 Konačni rabati
 
 Mogu se unijeti samo popusti izraženi u postocima, primijenjeni na ukupan iznos dokumenta.
 
@@ -383,7 +370,7 @@ Popusti uneseni u ovoj sekciji izračunavaju se i prikazuju na svakom artiklu do
 **Kaskada/Iznos**: za određivanje korištenja osnovice u izračunu popusta (cijena x količina) - (već izračunati popusti) ili (cijena x količina).  
 **Vrijednost**: numerička vrijednost konačnog popusta koji se primjenjuje.  
 
-## Troškovi
+### 4.2 Troškovi
 
 Ponuđeni su troškovi uneseni u registar kontakata, na kartici *Troškovi/Popusti*.
 
@@ -394,11 +381,11 @@ Također postoji mogućnost unosa troškova koji se odnose samo na trenutni doku
 **Postotak**: numerička vrijednost postotka troška.
 
 
-## Sažeci PDV-a
+### 4.3 Sažeci PDV-a
 
 Prikazuje se sažetak PDV dokumenta, za svaki PDV kod.
 
-## Pregled dospjeća plaćanja
+### 4.4 Pregled dospjeća plaćanja
 
 Prikazuje se sažetak rokova dospijeća dokumenta, za svaki tip i način plaćanja.
 
