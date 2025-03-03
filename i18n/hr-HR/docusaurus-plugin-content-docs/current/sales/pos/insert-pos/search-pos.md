@@ -15,4 +15,4 @@ Da biste otvorili detalje dokumenta, dovoljno je odabrati ga i dvaput kliknuti m
 [Zajedničke funkcionalnosti, gumbe i polja](/docs/guide/common)              
 Dodavanje novih polja u obrasce pretraživanja    
 
-Također, iz ovog obrasca moguće je [Kreirati novi POS](/docs/sales/pos/insert-pos/insert-pos-intro), klikom na gumb **Novo**.
+Također, iz ovog obrasca moguće je [Kreirati novi POS](/docs/sales/pos/insert-pos/pos), klikom na gumb **Novo**.
