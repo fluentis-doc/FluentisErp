@@ -1,171 +1,170 @@
 ---
-title: Nuovo ordine cliente
+title: Comandă nouă client (Nuovo ordine cliente)
 sidebar_position: 1
 ---
 
-La form **Crea ordine cliente** si apre tramite il percorso **Vendite > Ordini clienti > Nuovo ordine** oppure tramite il pulsante ![](/img/neutral/common/new.png) che si trova nella form [Ricerca ordini clienti](/docs/sales/sales-orders/search-sales-orders).
+Formularul **Creează comandă client** se deschide prin parcursul **Vânzări > Comenzi clienți > Comandă nouă** sau prin butonul ![](/img/neutral/common/new.png) care se află în formularul [Căutare comenzi clienți](/docs/sales/sales-orders/search-sales-orders).
 
-## *Come creare un ordine cliente*
+## *Cum să creezi o comandă client*
 
 <details>
- 
-<summary>Clicca per i passaggi fondamentali</summary>
- 
-1. **Inserisci i dati obbligatori**: *Tipo Ordine* e *Cliente*. *Anno*, *Numero* e *Data Inserimento* saranno proposti in automatico.  
- 
-2. **Inserisci o modifica i dati facoltativi** della testata: come date di consegna, eventuali *sconti*, la *destinazione*, ecc.  
- 
-3. **Inserisci gli Articoli**: mediante doppio click nel campo *Codice articolo* si apre l’help articoli che permette di cercare e selezionare un articolo esistente. Tutti gli altri dati della riga, come *unità di misura*, *quantità*, *prezzo*, saranno proposti in automatico, ma possono essere modificati.
-In alternativa è possibile selezionare come *Tipo riga* un *Articolo non codificato* e inserire manualmente i dati successivi.
- 
-4. **Inserisci eventuali sconti o altre informazioni aggiuntive** nei tab *Sconti/listini* e *Dati articolo*
- 
-5. **Controlla la sezione dei Riepiloghi** ed inserisci eventuali spese o sconti finali.  
- 
-6. Una volta controllato e confermato l’ordine, **inserisci una *Data conferma* e attiva il flag *Stampato* in testata** in modo da rendere l’ordine disponibile per le procedure di evasione.
- 
+
+<summary>Click pentru pașii fundamentali</summary>
+
+1. **Introdu datele obligatorii**: *Tip comandă* și *Client*. *Anul*, *Numărul* și *Data introducerii* vor fi propuse automat.
+
+2. **Introdu sau modifică datele opționale** ale antetului: cum ar fi datele de livrare, eventualele *discounturi*, *destinația*, etc.
+
+3. **Introdu articolele**: prin dublu clic în câmpul *Cod articol* se deschide ajutorul pentru articole care permite căutarea și selecția unui articol existent. Toate celelalte date ale liniei, cum ar fi *unitatea de măsură*, *cantitatea*, *prețul*, vor fi propuse automat, dar pot fi modificate.
+Alternativ, este posibil să selectezi ca *Tip linie* un *Articol necodificat* și să introduci manual datele ulterioare.
+
+4. **Introdu eventuale discounturi sau alte informații suplimentare** în tab-urile *Discounturi/listine* și *Date articol*.
+
+5. **Verifică secțiunea Rapoarte** și introdu eventuale cheltuieli sau discounturi finale.
+
+6. Odată verificată și confirmată comanda, **introdu o *Dată confirmare* și activează indicatorul *Tipărit* în antet** pentru a face comanda disponibilă pentru procedurile de executare.
+
 </details>
 
-## **1. Dati obbligatori**
+## **1. Date obligatorii**
 
-Per continuare la creazione del ordine cliente, l'utente deve inserire i campi **obbligatori**:
+Pentru a continua crearea comenzii client, utilizatorul trebuie să introducă câmpurile **obligatorii**:
 
-- **Tipo ordine**: predefinito in  Configurazione > Tabelle > Vendite > [Tipi ordini](/docs/configurations/tables/sales/sales-order-types); rimandiamo alla documentazione relativa alla tabella per lo studio delle varie configurazioni possibili, ma per poter inserire un ordine è necessario che il tipo Ordine abbiamo definito la tipologia di numerazione, dato obbligatorio. In base alla configurazione presente nel tipo Ordine si possono aprire scenari diversi per l’inserimento dell’ordine cliente, ad esempio avere la creazione automatica di un progetto, la gestione a prezzi ivati, la gestione delle matrici, ecc.   
-- **Numero**: ad ogni documento viene assegnato un numero secondo la numerazione specificata dall'utente nella tabella [Numerazione ordini clienti](/docs/configurations/tables/fluentis-numerations) e al tipo di documento che contiene la numerazione. La numerazione associata alla tipologia di ordine prevede generalmente una progressione automatica basata su data e numero, con una funzione di recupero che copre eventuali buchi nella sequenza (ad esempio, causati dalla cancellazione di documenti). Questo comportamento è regolato da due flag specifici nella tabella della numerazione. Se l'utente desidera inserire manualmente il numero, può disabilitare il flag di progressione data-numero (che garantisce l'incremento della numerazione nelle date future) e il flag di recupero numeri. Inoltre, dovrà abilitare il flag della numerazione esterna, segnalando così al sistema che la numerazione sarà gestita manualmente. 
-- **Cliente**: usando l'[help di campo](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) oppure tastando [direttamente](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection).  Inserendo il cliente, vengono automaticamente popolati, se presenti in anagrafia, i seguenti campi, che spiegheremo nelle sezioni successive: divisa, nazione, lingua, zona, spedizione, listino ed eventuali sconti, pagamenti, sconti, spese, agenti, destinazione, vettori, extra data.               
-- **Data ordine**: indica la data di creazione dell’ordine. Questa data è fondamentale per il calcolo delle scadenze e delle eventuali condizioni di pagamento. Viene proposta la data odierna, modificabile; nel caso in cui la numerazione preveda una progressione di data e numero, e io inserisca una data nel passato, Fluentis controllerà la disponibilità di numeri in quella data per garantire la progressione, e se non presente segnalerà l’utente che non ci sono numeri disponibili in quella data.      
-- **Tipo ritenuta**: questo campo è visibile solo se il cliente gestisce la ritenuta d’acconto, e quindi se in anagrafica presenta l’omonimo flag e il tipo di ritenuta, nel tab [informazioni fiscali](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/fiscal-information). La ritenuta d'acconto è una trattenuta fiscale applicata su pagamenti per prestazioni lavorative o professionali, anticipata al fisco dal committente e successivamente dedotta dall'imposta sul reddito del beneficiario. Per una gestione corretta di questa funzionalità, nella tabella tipi ritenuta deve essere codificato correttamente il codice per la fatturazione elettronica. il documento reperirà in automatico l'assoggettamento alla ritenuta per le righe sulle quali è possibile fare il calcolo, e in automatico calcolerà l'importo della ritenuta. 
+- **Tip comandă**: predefinit în Configurare > Tabele > Vânzări > [Tipuri comenzi](/docs/configurations/tables/sales/sales-order-types); facem referire la documentația referitoare la tabel pentru studierea diverselor configurații posibile, dar pentru a putea introduce o comandă este necesar ca tipul Comandă să fi definit tipologia de numerare, date obligatorii. În funcție de configurația prezentă în tipul Comandă se pot deschide scenarii diferite pentru introducerea comenzii client, de exemplu, crearea automată a unui proiect, gestionarea la prețuri cu TVA, gestionarea matricilor, etc.
+- **Număr**: fiecărui document îi este atribuit un număr conform numerării specificate de utilizator în tabelul [Numerare comenzi clienți](/docs/configurations/tables/fluentis-numerations) și tipului de document care conține numerarea. Numerația asociată tipologiei de comandă prevede de obicei o progresie automată bazată pe dată și număr, cu o funcție de recuperare care acoperă eventualele lacune în secvență (de exemplu, cauzate prin ștergerea documentelor). Acest comportament este reglementat de două indicatoare specifice în tabelul numerării. Dacă utilizatorul dorește să introducă manual numărul, poate dezactiva indicatorul de progresie dată-număr (care garantează creșterea numerării în datele viitoare) și indicatorul de recuperare a numerelor. În plus, va trebui să activeze indicatorul de numerare externă, semnalând astfel sistemului că numerarea va fi gestionată manual.
+- **Client**: utilizând [ajutorul de câmp](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) sau tastând [direct](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection). Introducând clientul, câmpurile următoare vor fi populate automat, dacă sunt prezente în registru: moneda, națiunea, limba, zona, livrare, listă de prețuri și eventualele discounturi, plăți, discounturi, cheltuieli, agenți, destinație, transportatori, date extra.
+- **Data comandă**: indică data creării comenzii. Această dată este esențială pentru calculul termenelor și eventualelor condiții de plată. Se propune data de astăzi, modificabilă; în cazul în care numerarea prevede o progresie a datei și numărului, și introduc o dată în trecut, Fluentis va verifica disponibilitatea numerelor în acea dată pentru a garanta progresia, iar, dacă nu este prezent, va semnala utilizatorului că nu există numere disponibile în acea dată.
+- **Tip reținere**: acest câmp este vizibil doar dacă clientul gestionează reținerea la sursă și, prin urmare, dacă în registru prezintă indicatorul omonim și tipul de reținere, în tab-ul [informații fiscale](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/fiscal-information). Reținerea la sursă este o reținere fiscală aplicată pe plăți pentru servicii de muncă sau profesionale, anticipată fiscului de către angajator și ulterior dedusă din impozitul pe venit al beneficiarului. Pentru o gestionare corectă a acestei funcționalități, în tabelul tipuri de reținere trebuie să fie codificat corect codul pentru facturarea electronică. Documentul va recupera automat supunerea la reținere pentru liniile pe care este posibil să se facă calculul și va calcula automat suma reținerii. 
 
-La form contiene una serie di tab.
+Formularul conține o serie de taburi.
 
-## **2. Testata**
+## **2. Antet**
 
-Dopo aver selezionato i dati obbligatori nella sezione superiore, l'utente può continuare l'inserimento dei seguenti dati [manualmente](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) oppure con l' [help di campo](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection).
+După ce utilizatorul a selectat datele obligatorii în secțiunea superioară, poate continua introducerea următoarelor date [manual](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) sau cu [ajutorul de câmp](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection).
 
-:::note Ricorda
-Se il documento viene *creato automaticamente*, questi dati vengono ripresi dal *documento d'origine* da cui è stata generato.
+:::note Ține minte
+Dacă documentul este *creat automat*, aceste date sunt preluate din *documentul de origine* din care a fost generat.
 :::
 
-### 2.1 Dati cliente
+### 2.1 Date client
 
-Inserendo il **Cliente**, vengono *proposti* in automatico tutti i dati specifici del tab **Testata**, secondo i dati impostati in precedenza nell'[anagrafica cliente](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/accounting-data-intro), nei campi corrispondenti al suo indirizzo e nelle *sezioni*:  
-- **Divisa**: sezione contenente i dati [Divisa](/docs/guide/common/glossary/glossary-intro#currency), [Cambio](/docs/guide/common/glossary/glossary-intro#currency-exchange), [Data valuta](/docs/guide/common/glossary/glossary-intro#currency-date).
-- **Nazione**: sezione contenente i dati [Nazione](/docs/guide/common/glossary/glossary-intro#country), [Lingua](/docs/guide/common/glossary/glossary-intro#language), [Zona](/docs/guide/common/glossary/glossary-intro#zone).
-- **Spedizione**: sezione contenente i dati [Spedizione](/docs/guide/common/glossary/glossary-intro#shipment), [Porto](/docs/guide/common/glossary/glossary-intro#carriage), [Imballo](/docs/guide/common/glossary/glossary-intro#packing), [Listino](/docs/guide/common/glossary/glossary-intro#sales-price-list) e il suo [intervallo di validità](/docs/guide/common/glossary/glossary-intro#validity-date)
-- altri campi proposti con la scelta del cliente, ma modificabili: [Destinazione](/docs/guide/common/glossary/glossary-intro#destination), [Destinatario](/docs/guide/common/glossary/glossary-intro#recipient).
+Introducând **Clientul**, toate datele specifice tab-ului **Antet** sunt *propuse* automat, conform datelor setate anterior în [registrul clientului](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/accounting-data-intro), în câmpurile corespunzătoare adresei sale și în *sețiile*:
+- **Monedă**: secțiune conținând date [Monedă](/docs/guide/common/glossary/glossary-intro#currency), [Curs](/docs/guide/common/glossary/glossary-intro#currency-exchange), [Data valutei](/docs/guide/common/glossary/glossary-intro#currency-date).
+- **Națiune**: secțiune conținând date [Națiune](/docs/guide/common/glossary/glossary-intro#country), [Limba](/docs/guide/common/glossary/glossary-intro#language), [Zona](/docs/guide/common/glossary/glossary-intro#zone).
+- **Livrare**: secțiune conținând date [Livrare](/docs/guide/common/glossary/glossary-intro#shipment), [Transport](/docs/guide/common/glossary/glossary-intro#carriage), [Ambalare](/docs/guide/common/glossary/glossary-intro#packing), [Listă de prețuri](/docs/guide/common/glossary/glossary-intro#sales-price-list) și intervalul său de [valabilitate](/docs/guide/common/glossary/glossary-intro#validity-date).
+- alte câmpuri propuse o dată cu alegerea clientului, dar modificabile: [Destinație](/docs/guide/common/glossary/glossary-intro#destination), [Destinatar](/docs/guide/common/glossary/glossary-intro#recipient).
 
-### 2.2 Dati facoltativi testata
+### 2.2 Date opționale antet
 
-- **Data consegna**: in questo campo è possibile inserire la data prevista di consegna della merce.
-- **Data merce pronta**: in questo campo è possibile inserire la data in cui la merce sarà pronta; questa data deve essere minore o uguale alla precedente.      
-- **Confermato**: questo flag indica che l'ordine è confermato e può essere quindi evaso; accanto è presente la **Data conferma**; questa condizione è obbligatoria se si vuole far procedere l’ordine sia per l’eventuale evasione nei documenti successivi (quali picking, ddt e fatture), sia per l’eventuale gestione della pianificazione di produzione.        
-- **Stampato**: si attiva quando viene lanciata la stampa dell'ordine ed identifica che il documento è stato stampato; questo flag è importante anche per permettere l'evasione dell'ordine in altri documenti.      
-- **Archiviato**: è necessario apporre questo flag se il documento deve essere archiviato.   
-- **Annullato**: il flag attivo permette di annullare l'ordine; lo stato di testata dell'ordine cambierà in forzatamente evaso, in quanto l'ordine non dovrà più essere trasferibile in altri documenti.    
-- **Codice Unico di Progetto/Codice Identificatico di Gara**: se nelle [informazioni fiscali](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/fiscal-information) dell'anagrafica cliente esso è abilitato alla gestione di CIG e CUP, sarà possibile compilare questi dati nel documento.    
-- **Annotazioni cliente**: questo campo viene ripreso dall'anagrafica cliente, ma può essere inserito anche manualmente.
-- **Nostro riferimento/vostro riferimento**: in questi campi solitamente viene indicato un riferimento interno ed un riferimento cliente per il documento; nel caso in cui l'ordine venga generato tramite una procedura di creazione automatica, questi campi verranno popolati con le indicazioni presenti nell'documento d'origine. Questo trasferimento è valido solo nel caso di ordine cliente creato tramite il prelievo dei dati da un solo documento.     
-- **Note iniziali**: si possono selezionare le note che sono state inserite in precedenza nella tabella omonima che si trova nel percorso *Configurazione > Utilità > Gestione note codificate*; per questo l'utente deve effettuare doppio click sul campo per aprire l'Help e selezionare i dati; altrimenti può inserirle manualmente.       
-- **Operatore**: permette di inserire l'utente che crea il documento. I dipendenti sono stati inseriti in precedenza nella tabella *Home > Dipendenti*; il dato diventa obbligatorio se l'opzione è impostata nei [Parametri](/docs/configurations/parameters/sales/sales-orders-parameters) del documento stesso.     
-- **Stato evasione**: quando l'ordine è evaso tramite i documenti DDT o fatture, il suo stato evasione cambia automaticamente da *Non evaso* a *Parzialmente evaso* o *Evaso*; l'utente può forzare l'evasione di un ordine non totalmente evaso e quando questo succede, viene salvata anche la data evasione.      
+- **Data livrare**: în acest câmp este posibil să introduci data estimată de livrare a mărfii.
+- **Data marfii gata**: în acest câmp este posibil să introduci data în care marfa va fi gata; această dată trebuie să fie mai mică sau egală cu cea anterioară.
+- **Confirmat**: acest indicator indică faptul că comanda este confirmată și poate fi astfel executată; lângă este prezent **Data confirmare**; această condiție este obligatorie dacă se dorește continuarea comenzii atât pentru eventualele execuții în documentele ulterioare (cum ar fi picking, ddt și facturi), cât și pentru eventuala gestionare a planificării producției.
+- **Tipărit**: se activează atunci când comanda este imprimată și identifică faptul că documentul a fost tipărit; acest indicator este important și pentru a permite execuția comenzii în alte documente.
+- **Arhivat**: este necesar să se aplice acest indicator dacă documentul trebuie arhivat.
+- **Anulat**: indicatorul activ permite anularea comenzii; starea antetului comenzii se va schimba în „forțat executat”, deoarece comanda nu trebuie să mai fie transferabilă în alte documente.
+- **Cod Unic Proiect/Cod Identificator Licitație**: dacă în [informațiile fiscale](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/fiscal-information) ale registrului client este activat pentru gestionarea CIG și CUP, va fi posibil să completezi aceste date în document.
+- **Note client**: acest câmp este preluat din registrul clientului, dar poate fi introdus și manual.
+- **Referința noastră/referința voastră**: în aceste câmpuri se indică de obicei o referință internă și o referință pentru client pentru document; în cazul în care comanda este generată printr-o procedură de creare automată, aceste câmpuri vor fi populate cu indicațiile prezente în documentul de origine. Această transferare este valabilă doar în cazul comenzii client create prin preluarea datelor dintr-un singur document.
+- **Note inițiale**: se pot selecta notele care au fost introduse anterior în tabela omonimă care se găsește în parcursul *Configurare > Utilități > Gestionarea notelor codificate*; pentru aceasta, utilizatorul trebuie să efectueze dublu clic pe câmp pentru a deschide Ajutorul și a selecta datele; altfel, poate să le introducă manual.
+- **Operator**: permite introducerea utilizatorului care creează documentul. Angajații au fost introduși anterior în tabelul *Acasă > Angajați*; acest câmp devine obligatoriu dacă opțiunea este setată în [Parametrii](/docs/configurations/parameters/sales/sales-orders-parameters) documentului respectiv.
+- **Starea execuției**: atunci când comanda este executată prin documentele DDT sau facturi, starea execuției sale se schimbă automat de la *Neexecutat* la *Parțial executat* sau *Executat*; utilizatorul poate forța execuția unei comenzi care nu este total executată și când se întâmplă acest lucru, se salvează și data execuției.
 
 :::note
-Se viene attivato lo stato *Evaso forzato*, viene mostrato il messaggio: “L'evasione forzata della riga comporta l'automatica eliminazione di eventuali ordini pianificati collegati a commesse in stato schedulata e l’evasione delle commesse in stato schedulata e non esaminata. Per quanto riguarda documenti generati a fronte di commesse in stato lanciato o esecutivo le commesse e documenti non verranno modificati.”
+Dacă este activat starea *Executare forțată*, va fi afișat mesajul: „Executarea forțată a liniei implică eliminarea automată a eventualelor comenzi planificate legate de comenzi în stare programată și executarea comenzilor în stare programată și neexaminată. În ceea ce privește documentele generate în raport cu comenzile în stare lansată sau executivă, comenzile și documentele nu vor fi modificate.”
 :::
 
-- **Decorrenza** è la data di decorrenza per il calcolo delle scadenze di pagamento.
+- **Data de începere** este data de începere pentru calculul termenelor de plată.
 
-#### Pulsanti specifiche  
-> **Evasione da progetto**: richiama la procedura per creare un'ordine da un progetto.        
-> **Sostituisci data prev. consegna nelle righe**: dopo aver specificato la data richiesta consegna e/o la data prevista consegna in testata ordine, è possibile sostituire in massa tali date nelle righe articolo già inserite.           
-> **Sostituisci agente nelle righe**: questo pulsante fa aprire un pop nel quale inserire un'anagrafica agente, che verrà spalmata in tutte le righe articolo, aggiungendosi eventualmente ad Agenti già presenti.         
-> **Sostituisci CIG/CUP nelle righe**: dopo aver specificato CIG e/o CUP in testata ordine, è possibile sostituire in massa tali dati nelle righe articolo già inserite.           
-> **Help destinatari/destinazioni**: questo bottone apre l'Help per poter scegliere il destinatario/destinazione per il documento, tra quelli disponibili per il cliente e quindi codificati nella sua anagrafica. 
+#### Butoane specifice  
+> **Execuție din proiect**: apelează procedura pentru a crea o comandă dintr-un proiect.
+> **Înlocuiește data livrării prevăzute în linii**: după ce ai specificat data dorită de livrare și/sau data estimată de livrare în antetul comenzii, este posibil să înlocuiești în masă aceste date în liniile de articol deja introduse.
+> **Înlocuiește agent în linii**: acest buton deschide un pop-up în care introduci un registru agent, care va fi aplicat în toate liniile de articol, adăugându-se eventual la agenții deja prezenți.
+> **Înlocuiește CIG/CUP în linii**: după ce ai specificat CIG și/sau CUP în antetul comenzii, este posibil să înlocuiești în masă aceste date în liniile de articol deja introduse.
+> **Ajutor destinatari/destinatii**: acest buton deschide Ajutorul pentru a putea alege destinatarii/destinatia pentru document, dintre cei disponibili pentru client și, prin urmare, codificați în registrul său.
 
-Nella testata sono poi presenti alcune tab che analizziamo di seguito.    
+În antet există, de asemenea, câteva tab-uri pe care le analizăm mai jos.    
 
-### 2.3 Pagamenti
+### 2.3 Plăți
 
-Le **Soluzioni di pagamento** sono riportate in automatico dall'*Anagrafica cliente > tab Pagamenti* e possono essere modificate/cancellate dall'utente.
+**Soluțiile de plată** sunt raportate automat din *Registrul clientului > tab Plăți* și pot fi modificate/șterse de utilizator.
 
-Se al **Tipo pagamento** è associato uno sconto finanziario, l'importo dello sconto viene considerato solo ai fini contabili cioè nelle scadenze del documento e non nel totale.
+Dacă **Tipul de plată** este asociat cu un discount financiar, suma discountului este considerată doar în scopuri contabile adică în termenele documentului și nu în total.
 
-Il pulsante specifico di questa tab è il **Cancella pagamenti**, utilizzato per cancellare le righe di pagamento selezionate.
+Butonul specific al acestui tab este **Șterge plăți**, utilizat pentru a șterge liniile de plată selectate.
 
-### 2.4 Sconti
+### 2.4 Discounturi
 
-Vengono proposti solo gli sconti predefiniti ripresi dall'*Anagrafica cliente > tab Sconti* e non quelli attribuiti alle condizioni di pagamento o a certi articoli. Possono essere modificate/cancellate dall'utente.
-  
-Gli sconti proposti in testata del documento vengono riportati in ogni nuova riga articolo inserita nel documento.
+Sunt propuse doar discounturile predefinite preluate din *Registrul clientului > tab Discounturi* și nu cele atribuite condițiilor de plată sau anumitor articole. Acestea pot fi modificate/șterse de utilizator.
 
-Se dopo aver inserito le righe articolo viene inserito un nuovo sconto in testata questo non viene replicato nelle righe articolo già inserite.
+Discounturile propuse în antetul documentului sunt raportate în fiecare nouă linie de articol introdusă în document.
 
-Il pulsante specifico di questa tab è il **Cancella sconti**, utilizzato per cancellare le righe di sconto selezionate.
+Dacă, după ce au fost introduse liniile de articol, se introduce un nou discount în antet, acesta nu este replicat în liniile de articol deja introduse.
 
+Butonul specific al acestui tab este **Șterge discounturi**, utilizat pentru a șterge liniile de discount selectate.
 
-### 2.5 Agenti
+### 2.5 Agenți
 
-Indica il codice agente e la sua provvigione per ogni riga articolo. Vengono proposti il codice e la percentuale definiti nell'*Anagrafica cliente > tab Agenti*.
+Indică codul agentului și comisionul său pentru fiecare linie de articol. Codul și procentul sunt propuse din *Registrul clientului > tab Agenți*.
 
-Se la provvigione non è collegata al cliente nella sua anagrafica, comunque deve essere inserito l'agente ma con provvigione NULL perché se fosse con provvigione 0, significherebbe che l'agente è collegato all'agente ma non percepisce provvigione.
+Dacă comisionul nu este legat de client în registrul său, agenții trebuie să fie totuși introduși, dar cu comision NULL, deoarece dacă ar fi cu comision 0, ar însemna că agentul este legat de acest agent, dar nu primește comision.
 
-Nel caso di generazione del DDT da ordine questo dato verrà ovviamente riportato uguale a quello dell'ordine cliente.
+În cazul generării DDT din comandă, aceste date vor fi evident raportate la fel ca și cele din comanda clientului.
 
-La stessa sezione verrà riproposta per ogni riga articolo nel relativo tab Agenti.
+Aceeași secțiune va fi repropusă pentru fiecare linie de articol în tab-ul său Agenți.
 
-Il Pulsante specifico di questa maschera è il **Cancella agenti**, che permette di cancellare gli agenti selezionati.
+Butonul specific al acestui formular este **Șterge agenți**, care permite ștergerea agenților selectați.
 
-### 2.6 Destinazione
+### 2.6 Destinație
 
-Qui viene proposta l'informazione inserita nell'*Anagrafica cliente > tab Consegne*, solo se esistono dati di default. Il combo box propone tutti i destinatari, le destinazioni e i vettori inseriti nell'anagrafica cliente.
+Aici este propusă informația introdusă în *Registrul clientului > tab Livrări*, doar dacă există date prestabilite. Combo box-ul propune toți destinatarii, destinațiile și transportatorii introduși în registrul clientului.
 
-Gli indirizzi di spedizione (destinatario/destinazione e vettore) possono essere inseriti anche solo descrittivi senza essere precedentemente inseriti tra i contatti. 
+Adresele de livrare (destinatar/destinație și transportator) pot fi introduse și descriptive, fără a fi prealabil introduse între contacte.
 
-Nel caso in cui in anagrafica non sia stato inserito questo dato di default, allora vengono proposti come destinatario e destinazione l’indirizzo inserito nei dati anagrafici. 
+În cazul în care în registru nu a fost introdus acest lucru ca dată prestabilită, se propun ca destinatar și destinație adresa introdusă în datele register-ului. 
 
-### 2.7 Vettori
+### 2.7 Transportatori
 
-Nella sezione Vettori vengono proposti i dati inseriti nel tab [Consegna](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/delivery) dell’anagrafica cliente. In particolare, viene proposto il soggetto a carico del quale sarà il trasporto, tra mittente, destinatario e vettore. In base alla selezione, la sezione sottostante cambierà; se il trasporto è a carico del Mittente sarà possibile inserire Targa automezzo, Data e Ora di Inizio trasporto, e verrà proposto l’indirizzo della società; se è a carico del Destinatario sarà possibile inserire Targa automezzo, Data e Ora di Inizio trasporto, con la proposta della destinazione; se è a carico del Vettore invece i campi disponibili saranno Anagrafica contabile del Vettore, Targa, Data e Ora trasporto.
+În secțiunea Transportatori sunt propuse datele introduse în tab-ul [Livrare](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/delivery) al registrului clientului. În special, este propus subiectul pe care va fi transportul, între expeditor, destinatar și transportator. În funcție de selecție, secțiunea de dedesubt se va schimba; dacă transportul este pe cheltuiala Expeditorului va fi posibil să se introducă Numărul de înmatriculare a vehiculului, Data și Ora de Începere a transportului, iar adresa companiei va fi propusă; dacă este pe cheltuiala Destinatarului va fi posibil să se introducă Numărul de înmatriculare a vehiculului, Data și Ora de Începere a transportului, cu propunerea destinației; dacă este pe cheltuiala Transportatorului, câmpurile disponibile vor fi Registrul contabil al Transportatorului, Numărul de înmatriculare, Data și Ora transportului.
 
-### 2.8 Extra Data
+### 2.8 Date Extra
 
 import TabExtraData from './../../../import/sections/tab-extra-data.md'
 
 <TabExtraData />
 
-### 2.9 Cointestatari
+### 2.9 Co-locuitori
 
-Questo tab è attivo solo se in anagrafica cliente, tab [informazioni fiscali](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/fiscal-information), sia stato inserito il flag per la gestione cointestatari. La gestione cointestatari permette a più persone di essere titolari congiunti dell’ordine. I cointestatari devono essere inseriti negli indirizzi alternativi dell’anagrafica, con un indirizzo che sia di [tipo](/docs/configurations/tables/general-settings/address-types), appunto, cointestatari. In questo modo, verranno proposti in questo tab, dove è necessario inserire a mano le percentuali di ripartizione della spesa.
+Acest tab este activ doar dacă în registrul clientului, tab-ul [informații fiscale](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/fiscal-information), a fost introdus indicatorul pentru gestionarea co-locuitorilor. Gestionarea co-locuitorilor permite mai multor persoane să fie co-proprietari ai comenzii. Co-locuitorii trebuie să fie introduși în adresele alternative ale registrului, cu o adresă de [tip](/docs/configurations/tables/general-settings/address-types), adică, co-locuitori. În acest mod, ei vor fi propusi în acest tab, unde este necesar să se introducă manual procentajele de împărțire a cheltuielilor.
 
-## **3. Articoli raggruppati**
+## **3. Articole grupate**
 
-Questo tab è attivo e visibile solo per i [Tipi ordine](/docs/configurations/tables/sales/sales-order-types) che abbiano impostati il flag di *Gestione matrici Extra Data* e la relativa *Configurazione*. Questo tab permette infatti di generare le varianti articolo per le varie combinazioni di attributi valide, che saranno trasferite nel successivo tab [Articoli](/docs/sales/sales-orders/create-new-sales-orders/sales-order).       
-Per tutti i campi non spiegati in questa pagina potete fare riferimento alla documentazione del tab [Articoli](/docs/sales/sales-orders/create-new-sales-orders/sales-order).       
-Inserendo un [articolo gestito a Matrice](/docs/erp-home/registers/items/create-new-items/item-registry/matrix) nella griglia articoli, infatti, nel tab Matrici verrà visualizzata la matrice associata all'anagrafica articolo. Nelle celle della matrice sarà possibile imputare le quantità ordinate per ogni combinazione; sarà possibile compilare solo le celle che abbiano una combinazione valida in anagrafica.       
-Una volta inserite quantità per ogni combinazione, è necessario cliccare il pulsante della barra degli strumenti *Conferma valori matrice* per generare tante varianti quante sono le combinazioni possibili. Ogni variante popolerà una riga del successivo tab Articoli, con la relativa quantità.
+Acest tab este activ și vizibil doar pentru [Tipuri de comandă](/docs/configurations/tables/sales/sales-order-types) care au activat indicatorul *Gestionare matrici Date Extra* și configurația corespunzătoare. Acest tab permite de fapt generarea variantelor de articol pentru diversele combinații de atribute valide, care vor fi transferate în tab-ul următor [Articole](/docs/sales/sales-orders/create-new-sales-orders/sales-order).       
+Pentru toate câmpurile care nu sunt discutate în această pagină, puteți face referire la documentația tab-ului [Articole](/docs/sales/sales-orders/create-new-sales-orders/sales-order).       
+Introducând un [articol gestionat prin matrice](/docs/erp-home/registers/items/create-new-items/item-registry/matrix) în grila de articole, astfel, în tab-ul Matrici va fi vizibilă matricea asociată cu registrul articolului. În celulele matricei va fi posibil să se introducă cantitățile comandate pentru fiecare combinație; va fi posibil să se completeze doar celulele care au o combinație valabilă în registru.       
+Odată introduse cantitățile pentru fiecare combinație, este necesar să faceți clic pe butonul din bara de instrumente *Confirmă valori matrice* pentru a genera atâtea variante cât sunt combinațiile posibile. Fiecare variantă va popula o linie din tab-ul următor Articole, cu cantitatea corespunzătoare.
 
-## **3. Articoli**
+## **3. Articole**
 
-In questo tab vengono inseriti tutti gli articoli con i relativi dati.
+În acest tab sunt introduse toate articolele cu datele lor corespunzătoare.
 
 import InsertMode from './../../../import/sections/insert-mode.md'
 
 <InsertMode />
 
-Per inserire un **Nuovo articolo** nella griglia basterà posizionarsi sulla riga per compilare i vari dati oppure utilizzare il pulsante **Nuovo** presente nella ribbon bar.
+Pentru a introduce un **Articol nou** în grilă, este suficient să te poziționezi pe linie pentru a completa diversele date sau să utilizezi butonul **Nou** prezent în bara de ribbon.
 
-Di seguito analizzati i campi *obbligatori* presenti nella griglia principale:
-- **Riga**: questo campo contiene il numro riga e si compilerà automaticamente e progressivamente all'inserimento dei dati nella riga.
+Mai jos analizăm câmpurile *obligatorii* care sunt prezente în grila principală:
+- **Linie**: acest câmp conține numărul liniei și se va completa automat și progresiv în timpul introducerii datelor în linie.
 
-- **Tipo riga**: offre la possibilità di selezionare, dalla combo-box, articoli con caratteristiche diverse:
->- *Articolo codificato*: sono gli articoli codificati in anagrafica e possono essere contabilizzati in contabilità analitica e registrati in magazzino.
->- *Articolo non-codificato*: sono articoli descrittivi che possono essere contabilizzati in contabilità analitica ma non possono essere movimentati a magazzino.
->- *Articolo spese*: sono articoli codificati o non-codificati e vengono riassunti in modo distinto nei riepiloghi dei documenti, se l'articolo spesa è codificato e di interesse fiscale verrà movimentato in magazzino, se è non codificato oppure non di interesse fiscale non verranno movimentati a magazzino.
->- *Articolo note*: sono note descrittive riportate nella stampa del documento; non incidono sulla contabilità e sul magazzino.
->- *Articolo omaggio*: l'articolo omaggio viene gestito come un articolo codificato o non codificato ai fini fiscali e di magazzino, ma essendo un omaggio viene conteggiato separatamente nei riepiloghi del documento e in base al flag Rivalsa iva viene calcolato l'importo dell'iva dell'omaggio a carico del soggetto oppure no.
+- **Tip linie**: oferă posibilitatea de a selecta, din combo-box, articole cu caracteristici diferite:
+>- *Articol codificat*: sunt articolele codificate în registru și pot fi contabilizate în contabilitatea analitică și înregistrate în magazin.
+>- *Articol necodificat*: sunt articole descriptive care pot fi contabilizate în contabilitatea analitică dar nu pot fi mișcate în magazin.
+>- *Articol cheltuieli*: sunt articole codificate sau necodificate și sunt rezumate distinct în rezumatele documentelor; dacă articolul cheltuială este codificat și de interes fiscal va fi mișcat în magazin, dacă este necodificat sau nu de interes fiscal nu vor fi mișcate în magazin.
+>- *Articol note*: sunt note descriptive raportate la imprimarea documentului; nu afectează contabilitatea și magazinul.
+>- *Articol cadou*: articolul cadou este gestionat ca un articol codificat sau necodificat în scopuri fiscale și contabilitate a magazinului, dar fiind un cadou, este raportat separat în rezumatele documentului și în funcție de indicatorul de Răspundere TVA se calculează suma TVA-ului cadoului pe seama subiectului sau nu.
 
-:::note[NOTA]
-Se si parte direttamente con l'inserimento dell'articolo, la sua classe, il codice e il tipo riga - Articolo codificato vengono inseriti automaticamente.
+:::note[NOTĂ]
+Dacă începi direct cu introducerea articolului, clasa acestuia, codul și tipul liniei - Articol codificat sunt introduse automat.
 :::
 
 import ItemClassDescription from './../../../import/sections/item-class-description.md'
@@ -184,56 +183,56 @@ import Price from './../../../import/fields/item-price.md'
 
 <Price />
 
-:::note[NOTA]
-In assenza del listino, il dato proposto è il **prezzo di vendita** ripreso dall'*Anagrafica articolo > tab [Costi](/docs/erp-home/registers/items/create-new-items/item-registry/costs)* oppure verrà recuperato in base alle impostazioni dei parametri del documento. In assenza anche di questo dato, verrà riportato il prezzo 0.
+:::note[NOTĂ]
+În absența listei de prețuri, datele propuse sunt **prețul de vânzare** preluat din *Registrul articolului > tab [Costuri](/docs/erp-home/registers/items/create-new-items/item-registry/costs)* sau vor fi recuperate în funcție de setările parametrilor documentului. În absența acestui date, va fi raportat prețul 0.
 :::
 
-- **Imponibile**: questo campo contiene il Prezzo unitario moltiplicato per la quantità, al netto degli sconti.
+- **Impozabil**: acest câmp conține Prețul unitar înmulțit cu cantitatea, net de discounturi.
 
-- **Sconti articolo**: contiene gli sconti validi per l'articolo, provenienti dalla testata, dal listino o dall'inserimento manuale.
+- **Discounturi articol**: conține discounturile valide pentru articol, provenind din antet, listă de prețuri sau din introducerea manuală.
 
-- **Sconti finali articolo**: contiene gli sconti finali articolo imputati nei riepiloghi del documenti, che hanno la caratteristica di venire spalmati in tutti gli articoli.   
+- **Discounturi finale articol**: conține discounturile finale ale articolului imputate în rezumatele documentului, care au caracteristica de a fi împărțite în toate articolele.
 
 import ItemVat from './../../../import/fields/item-vat.md'
 
 <ItemVat />
 
-#### Campi non obbligatori
+#### Câmpuri non-obligatorii
 
-- **Barcode/Articolo cliente e Descrizione articolo cliente**: questi dati verranno ripresi dalle informazioni presenti nell'*Anagrafica articoli*; per gestire i Barcode è necessario attivarne la gestione nei [Parametri ordine cliente](/docs/configurations/parameters/sales/sales-orders-parameters). Questa colonna permette la proposta dell’articolo ricercandolo per il suo barcode. Essendo il barcode univoco, una volta digitato il barcode inserito in anagrafica articolo, verrà proposto l’articolo.   
+- **Cod de bare/Articol client și Descriere articol client**: aceste date vor fi preluate din informațiile prezente în *Registrul articolelor*; pentru a gestiona codurile de bare este necesar să activezi gestionarea lor în [Parametrii comenzii client](/docs/configurations/parameters/sales/sales-orders-parameters). Această coloană permite propunerea articolului căutându-l după codul său de bare. Fiind codul de bare unic, o dată ce este tastat codul de bare introdus în registrul articolului, acesta va propune articolul.   
 
-- **Fatturato vendite**: viene proposto il dato inserito nell'*Anagrafica articoli > tab Generalità*; se non viene recuperato va inserito scegliendo una voce tra quelle proposte dalla relativa combo altrimenti la mancanza di questo dato potrebbe causare degli errori nella contabilizzazione della fattura che verrà generata dall'ordine, se in *Anagrafica cliente > Dati contabili > tab Amministrativa* non è stato impostato un valore nel campo *Ricavo di contropartita predefinito*.
+- **Vânzări facturate**: este propusă datele introduse în *Registrul articolelor > tab Generalități*; dacă nu este recuperată, trebuie introdusă alegând o voce dintre cele propuse de combo-ul corespunzător, altfel lipsa acestui date ar putea cauza erori în contabilizarea facturii care va fi generată din comandă, dacă în *Registrul clientului > Date contabile > tab Administrativ* nu a fost setat un valoare în câmpul *Venit de contra-partidă predefinit*.
 
-- **Evaso forzato**: se attivo, questo flag indica che la riga articolo è stata evasa forzatamente: perchè il cliente non vuole più quell'articolo, oppure la quantità prodotta e spedita è inferiore alla quantità ordinata ma non verrà prodotto il saldo e quindi si andrà ad evadere forzatamente la quantità. 
+- **Executat forțat**: dacă este activ, acest indicator indică că linia articolului a fost executată forțat: deoarece clientul nu mai dorește acel articol, sau cantitatea produsă și livrată este mai mică decât cantitatea comandată, dar nu se va produce soldul și astfel cantitatea va fi executată forțat.
 
-:::note[NOTA]
-Se viene gestita la produzione, quando il flag viene attivato, viene mostrato un messaggio che avvisa l'utente: “L'evasione forzata della riga comporta l'automatica eliminazione di eventuali ordini pianificati collegati a commesse in stato schedulata e l’evasione delle commesse in stato schedulata e non esaminata". Per quanto riguarda invece i documenti generati a fronte di commesse in stato lanciato o esecutivo, le commesse e documenti non verranno modificati.     
+:::note[NOTĂ]
+Dacă se gestionează producția, atunci când indicatorul este activat, va fi prezentat un mesaj care avertizează utilizatorul: „Executarea forțată a liniei implică eliminarea automată a eventualelor comenzi planificate legate de comenzi în stare programată și executarea comenzilor în stare programată și neexaminată”. În ceea ce privește documentele generate în raport cu comenzile în stare lansată sau executivă, comenzile și documentele nu vor fi modificate.
 :::
 
-- **Data Merce pronta e Data consegna**: queste date indicano la data in cui il materiale sarà pronto (quindi quando la produzione sarà terminata) e la data in cui si prevede di consegnare il materiale; la Data Merce Pronta deve essere minore o uguale alla Data consegna.
+- **Data Marfii gata și Data livrare**: aceste date indică data în care materialul va fi gata (deci când producția se va termina) și data în care se preconizează livrarea materialului; Data Marfii Gata trebuie să fie mai mică sau egală cu Data livrare.
 
-Nella sezione Articoli sono presenti i seguenti pulsanti, nella barra degli strumenti: 
+În secțiunea Articole sunt prezente următoarele butoane, în bara de instrumente: 
 
-> **Distinta Base**: permette di aprire la distinta base dell'articolo selezionato per poterne visualizzare i dettagli; (per maggiori informazioni su questo argomento si rimanda alll'articolo Albero della disinta base e gestione strutture).  
-> **Esplodi primo livello distinta**: permette di aggiungere nell'ordine cliente i materiali (materie prime e semilavorati) presenti nella distinta base dell'articolo; verranno quindi riportati nell'ordine i componenti di primo livello del prodotto finito. Questa opzione per esempio è molto utilizzata per i prodotti a Kit (quindi composti da più parti).  
-> **Aggiornamento listini**: permette di aggiornare il prezzo dell'articolo in un listino esistente (salvare il documento per abilitare questi bottoni), oppure di creare un nuovo listino con l'articolo e il relativo prezzo selezionato.       
-> **Suddividi quantità in più consegne**: consente di suddividere la quantità di una riga articolo in più righe in base alle date di consegna. Selezionando la riga e cliccando sul pulsante si aprirà la form **Consegne diverse** all'interno della quale verrà riportata la *Data merce pronta*, la *Data consegna* e la *Quantità* della riga. Nella riga successiva si dovrà andare ad indicare la *Data merce pronta* (che dovrebbe essere la stessa), la *Data di consegna* che sarà diversa e la *Quantità* che si andrà a spedire in quella data e poi bisognerà andare a modificare la data nella prima riga aggiornandola alla quantità rimanente in modo che la somma delle quantità delle due righe dia come risultato la quantità iniziale della riga prima dello sdoppiamento. Confermare l'operazione con il pulsante *OK*.  
-> **Confezionamento**: permette di creare una UDC a partire dalla riga selezionata. La riga deve essere un articolo codificato e salvato nel documento. L'utente deve avere i diritti all'interno dei [Parametri di carico/scarico](/docs/configurations/parameters/logistics/load-unload-parameters/load-unload-parameters-intro) per il caricamento del pallet. Inoltre l'articolo deve essere gestito a UDC ed in base alle impostazione del Tipo UDC inserite in anagrafica articolo, tab [Confezionamento](/docs/erp-home/registers/items/create-new-items/item-registry/packaging), verrà creato l'UDC rispettando i criteri.      
+> **Lista de Bază**: permite deschiderea listei de bază a articolului selectat pentru a-i vizualiza detaliile; (pentru informații suplimentare pe această temă, se face referire la articolul „Arborele listei de bază și gestionarea structurilor”).
+> **Explodare prim nivel listă**: permite adăugarea în comandă a materialelor (materii prime și semifabricate) din lista de bază a articolului; vor fi astfel raportate în comandă componentele de prim nivel ale produsului finit. Această opțiune, de exemplu, este foarte utilizată pentru produsele Kit (Deci compuse din piese multiple).
+> **Actualizare liste de prețuri**: permite actualizarea prețului articolului într-o listă existentă (salvează documentul pentru a activa aceste butoane), sau crearea unei noi liste cu articolul și prețul său selectat.       
+> **Împărțire cantitate în mai multe livrări**: permite împărțirea cantității unei linii de articol în mai multe linii în funcție de datele de livrare. Selectând linia și făcând clic pe buton se va deschide formularul **Livrări diferite** în care va fi raportată *Data marfii gata*, *Data livrare* și *Cantitatea* liniei. În linia următoare trebuie să se indice *Data marfii gata* (care ar trebui să fie aceeași), *Data de livrare* care va fi diferită și *Cantitatea* care va fi livrată în acea dată și apoi va trebui să se modifice data din prima linie, actualizând-o la cantitatea rămasă, astfel încât suma cantităților celor două linii să fie egală cu cantitatea inițială a liniei înainte de împărțire. Confirmă operațiunea cu butonul *OK*.  
+> **Ambalare**: permite crearea unei UDC bazate pe linia selectată. Linia trebuie să fie un articol codificat și salvat în document. Utilizatorul trebuie să aibă drepturile în [Parametrii de încărcare/descărcare](/docs/configurations/parameters/logistics/load-unload-parameters/load-unload-parameters-intro) pentru încărcarea palletului. În plus, articolul trebuie să fie gestionat la UDC și în funcție de setările Tipului UDC introduse în registrul articolului, tab-ul [Ambalare](/docs/erp-home/registers/items/create-new-items/item-registry/packaging), UDC-ul va fi creat respectând criteriile.      
 
-Analizziamo a questo punto le tab presenti sotto la griglia articoli. 
+Acum analizăm tab-urile prezente sub grila articole. 
 
-### 3.1 Sconti/Listini
+### 3.1 Discounturi/Listine
 
-Questa tab ha come primo campo l'eventuale **Listino** valido per il cliente e collegato all'articolo, altrimenti è un campo che si può compilare manualmente per prendere il prezzo dell'articolo da uno specifico listino. Accanto ai dati del listino assegnato è presente il campo **Tipo scaglione**: esso riporta lo scaglione di sconto da utilizzare, che viene ripreso dall'anagrafica cliente oppure dal listino stesso.
-Il flag **Prezzo manuale** permette di modificare il prezzo e gli sconti manualmente, e di mantenerli nei documenti che vengono creati dal documento dove la modifica è stata apportata.
+Acest tab are ca prim câmp eventualul **Listă de prețuri** validă pentru client și legată de articol, altfel este un câmp care poate fi completat manual pentru a prelua prețul articolului dintr-o listă specifică. Lângă datele listă asignată este prezent câmpul **Tip scutire**: acesta raportează scutirea de discount care trebuie utilizată, care este preluată din registrul clientului sau din lista de prețuri în sine.
+Indicatorul **Preț manual** permite modificarea prețului și discounturilor manual și păstrarea acestora în documentele generate din documentul în care a fost efectuată modificarea.
 
-Nella griglia invece vengono proposti tutti gli sconti associati all'articolo, ognuno con la propria base di calcolo e di assegnazione. Gli sconti possono essere ripresi: dall'anagrafica cliente, dalla soluzione di pagamento assegnata al documento, dal listino dall'associazione listino-cliente. Tutti i dati proposti sono modificabili.
+În grilă sunt propuse toate discounturile asociate articolului, fiecare cu baza sa de calcul și de asignare. Discounturile pot fi preluate: din registrul clientului, din soluția de plată atribuită documentului, din listă din asociația listă-client. Toate datele propuse sunt modificabile.
 
-Da questa griglia è possibile utilizzare il bottone **Cancell sconti** della barra degli strumenti. 
+Din această grilă este posibil să folosești butonul **Șterge discounturi** din bara de instrumente. 
 
-### 3.2 Dati articolo
+### 3.2 Date articol
 
-All'interno di questo tab vengono riportate/inserite ulteriori informazioni relative all'articolo.
+În cadrul acestui tab sunt raportate/inserate informații suplimentare referitoare la articol.
 
 import ItemVariant from './../../../import/fields/item-variant.md'
 
@@ -243,33 +242,33 @@ import AlternativeUMQuantity from './../../../import/fields/alternative-um-quant
 
 <AlternativeUMQuantity />
 
-- **Magazzino/descrizione/Causale**: in questi campi andrà indicato il magazzino di scarico del materiale con la relativa causale necessario per gli scarichi della merce al momento dell'emissione del DDT o della fattura; questi dati vengono impostati nella tabella dei [Tipi ordine](/docs/configurations/tables/sales/sales-order-types).
+- **Magazin/descriere/Cauză**: în aceste câmpuri trebuie să se indice magazinul de descărcare a materialului cu cauza corespunzătoare necesară pentru descărcările de mărfuri la momentul emiterii DDT-ului sau a facturii; aceste date sunt stabilite în tabelul [Tipurilor de comenzi](/docs/configurations/tables/sales/sales-order-types).
 
-- **Progetto**: è il progetto associato al documento; questo può essere assegnata, nel caso dell'ordine cliente, con l'ausilio della procedura *Evasione da commessa* oppure può essere assegnata con l'ausilio del help di campo.
+- **Proiect**: este proiectul asociat documentului; acesta poate fi asignat, în cazul comenzii client, cu ajutorul procedurii *Execuție din comandă* sau poate fi asignat cu ajutorul ajutorului de câmp.
 
-- **Rivalsa IVA**: se settato l'iva dell'omaggio viene considerata per il totale documento.
+- **Răspundere TVA**: dacă este setat, TVA-ul cadoului este considerat în totalul documentului.
 
-- **Offerta**: riporta il riferimento dell'offerta cliente se l'ordine proviene da [Offerta](/docs/sales/offers/search-offers).
+- **Ofertă**: raportează referința ofertei clientului dacă comanda provine din [Ofertă](/docs/sales/offers/search-offers).
 
-- **Marca**: rappresenta la marca dell'articolo, ripresa dalla sua anagrafica oppure dal listino dell'articolo;
+- **Marcă**: reprezintă marca articolului, preluată din registrul său sau din lista de prețuri a articolului;
 
-- **Note**: offre la possibilità di inserire note per ogni articolo che si vuole vengano riportate in tutti i documenti.  
+- **Note**: oferă posibilitatea de a introduce note pentru fiecare articol pe care dorești să fie raportate în toate documentele.  
 
-### 3.3 Agenti
+### 3.3 Agenți
 
 import SalesTabAgent from './../../../import/sections/sales-tab-agent.md'
 
 <SalesTabAgent />
 
-### 3.4 Lotti e Serial number
+### 3.4 Loturi și Numere de serie
 
-Nelle due griglie possono essere inseriti i lotti e i numeri seriali che devono essere scaricati dal magazzino e che sono collegati all'articolo nell'*Anagrafica articolo > tab [Lotti e Serial Number](/docs/erp-home/registers/items/create-new-items/item-registry/lots-and-serial-number)* oppure possono essere inserite manualmente.
+În cele două grile pot fi introduse loturile și numerele de serie care trebuie descărcate din magazin și care sunt legate de articol în *Registrul articolului > tab [Loturi și Numere de serie](/docs/erp-home/registers/items/create-new-items/item-registry/lots-and-serial-number)* sau pot fi introduse manual.
 
-Questa operazione è condizionata dalla presenza dei lotti e dei numeri seriali nel magazzino. 
+Această operațiune este condiționată de prezența loturilor și numerelor de serie în magazin.
 
-Se l'articolo non prevede la gestione dei Lotti/Numeri seriali, questo tab sarà disabilitato.  
+Dacă articolul nu prevede gestionarea Loturilor/Numerelor de serie, acest tab va fi dezactivat.
 
-#### Pulsanti specifici
+#### Butoane specifice
 
 import DeleteLot from './../../../import/buttons/delete-lot.md'
 import DeleteSN from './../../../import/buttons/delete-sn.md'
@@ -277,19 +276,19 @@ import DeleteSN from './../../../import/buttons/delete-sn.md'
 > <DeleteLot />
 > <DeleteSN />
 
-### 3.5 Analitica
+### 3.5 Analitic
 
 import TabAnalytic from './../../../import/sections/tab-analytic.md'
 
 <TabAnalytic />
 
-### 3.6 Extra data
+### 3.6 Date Extra
 
 import DocItemExtraData from './../../../import/sections/doc-item-extradata.md'
 
 <DocItemExtraData />
 
-### 3.7 Documenti allegati
+### 3.7 Documente atașate
 
 import DocAttachDocument from './../../../import/sections/doc-attach-document.md'
 
@@ -297,65 +296,65 @@ import DocAttachDocument from './../../../import/sections/doc-attach-document.md
 
 ### 3.8 Matrici
 
-Questo tab viene visualizzato esclusivamente per i [Tipi ordine](/docs/configurations/tables/sales/sales-order-types) che hanno il flag di gestione delle matrici Extra Data. 
+Acest tab este vizibil exclusiv pentru [Tipuri de comandă](/docs/configurations/tables/sales/sales-order-types) care au indicatorul activat pentru gestionarea matricilor Date Extra. 
 
-### 3.9 Sezione valori
+### 3.9 Secțiunea valori
 
 import SalesValuesSection from './../../../import/sections/item-values-section.md'
 
 <SalesValuesSection />
 
-Il campo **Stato** in cima a questa sezione riporta la situazione dell'articolo nell'eventuale ciclo di produzione e si aggiorna in automatico in base allo stato della commessa collegata.
-L'articolo può avere i seguenti stati:
-- *Inserito* quando viene inserito l'articolo;
-- *Confermato* quando l'ordine viene confermato, con i relativi flag e data in testata; 
-- *In produzione* quando viene generata la commessa, attraverso la procedura di [Generazione commesse di produzione](/docs/planning/ms-master-scheduling/general-schedule) o automaticamente se il tipo ordine lo prevede; 
-- *Prodotto* se la commessa collegata è in stato evaso;
-- *Annullato* se l'articolo viene evaso forzatamente. 
+Câmpul **Stare** în vârful acestei secțiuni raportează situația articolului în eventualul ciclu de producție și se actualizează automat în funcție de starea comenzii legate.
+Articolul poate avea următoarele stări:
+- *Introducere* când articolul este introdus;
+- *Confirmat* când comanda este confirmată, cu indicatorii și data corespunzători în antet; 
+- *În producție* când se generează comanda, prin procedura de [Generarea comenzilor de producție](/docs/planning/ms-master-scheduling/general-schedule) sau automat dacă tipul de comandă prevede acest lucru; 
+- *Produs* dacă comanda legată este în stare executată;
+- *Anulat* dacă articolul este executat forțat. 
 
-## **4. Riepiloghi**
+## **4. Rapoarte**
 
-Nelle diverse sezioni di questo tab sono presentate le informazioni principali dell'intero documento e alcuni pulsanti specifici.
+În diferitele secțiuni ale acestui tab sunt prezentate informațiile principale ale întregului document și câteva butoane specifice.
 
-### 4.1 Sconti finali
+### 4.1 Discounturi finale
 
 import SummariesFinalDiscount from './../../../import/sections/summaries-final-discount.md'
 
 <SummariesFinalDiscount />
 
-### 4.2 Riepilogo provvigioni agenti
+### 4.2 Rapoarte comisioane agenți
 
-In questa griglia vengono invece riepilogate le provvigioni totali maturate dall'agente per questo ordine, nel caso in cui vi sia l'agente collegato. Si troverà indicato l'agente e il valore della provvigione maturata.
+În această grilă sunt raportate comisioanele totale acumulate de agent pentru această comandă, în cazul în care există agent asociat. Va fi indicat agentul și valoarea comisionului acumulat.
 
-### 4.3 Spese/Sconti/maggiorazioni finali
+### 4.3 Cheltuieli/Discounturi/măritori finale
 
 import SummariesExpenses from './../../../import/sections/summaries-expenses.md'
 
 <SummariesExpenses />
 
-### 4.4 Riepiloghi IVA
+### 4.4 Rapoarte TVA
 
-Viene proposto il riepilogo IVA del documento, per ogni codice IVA.
+Se propune raportul TVA al documentului, pentru fiecare cod TVA.
 
-### 4.5  Riepilogo scadenze    
+### 4.5  Rapoarte termene    
 
-In questa griglia vengono riportate le scadenze calcolate in base alle soluzioni delle tipologie di pagamento inserite. 
+În această grilă sunt raportate termenele calculate în funcție de soluțiile tipurilor de plată introduse. 
 
-### 4.6 Altri campi 
+### 4.6 Alte câmpuri 
 
-**Note finali**: è un campo descrittivo che può essere compilato dall'utente anche con l'ausilio dell'*Help note codificate*. Possono essere inserite ulteriori note per il cliente riguardanti per esempio la consegna che verranno poi riportate nella stampa della Conferma d'Ordine nella parte finale della stampa.
+**Note finale**: este un câmp descriptiv care poate fi completat de utilizator și cu ajutorul *Ajutorului notelor codificate*. Se pot introduce note suplimentare pentru client referitoare, de exemplu, la livrare, care vor fi apoi raportate în imprimarea Confirmării Comenzii în partea finală a imprimării.
 
-### 4.6 Totali documento
+### 4.6 Totale document
 
-Nella sezione destra di questa tab si possono consultare i riepiloghi del documento:       
+În partea dreaptă a acestui tab se pot consulta rapoartele documentului:       
 
 import SummariesDocumentTotal from './../../../import/sections/summaries-document-total.md'
 
 <SummariesDocumentTotal />
 
-## **5. Documenti collegati**
+## **5. Documente legate**
 
-In questa tab è possibile consultare i documenti allegati.
-Per allegare i documenti è possibile procedere in due modi:
-- utilizzando il pulsante della barra degli strumenti **Documenti** si può scegliere se allegare un documento già codificato in Fluentis o se creare un nuovo Documento da allegare.       
-- utilizzando direttamente nella griglia il tasto destro e selezionando *Allega file* si va in creazione di un nuovo Documento da allegare.     
+În acest tab este posibil să consulți documentele atașate.
+Pentru a atașa documentele, poți proceda în două moduri:
+- utilizând butonul din bara de instrumente **Documente**, se poate alege dacă să atașezi un document deja codificat în Fluentis sau să creezi un nou Document de atașat.       
+- utilizând direct în grilă butonul din dreapta și selectând *Atașează fișier*, se va crea un nou Document de atașat.
