@@ -1,31 +1,31 @@
 ---
-title: Attrezzature
+title: Equipments
 sidebar_position: 2
 ---
 
-La tabella si trova sul percorso **Tabelle > Produzione > Attrezzature**.
+The table is located on the path **Tables > Production > Equipments**.
 
-I dati presenti in questa tabella sono utilizzati, ad esempio, nelle *fasi di lavorazione* delle gestioni:
-- **Cicli di lavoro**;   
-- **Ordini pianificati**;   
-- **Ordini di produzione**;
+The data present in this table is used, for example, in the *working phases* of management:
+- **Work cycles**;   
+- **Planned orders**;   
+- **Production orders**;
 
-in cui si può selezione l'attrezzatura da utilizzare.
+where the equipment to be used can be selected.
 
-La tabella consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+The table allows for the insertion of new records or the search for existing ones to view, modify, or delete them.
 
-**Ricerca Attrezzature**
+**Search Equipments**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+The form consists of a filter area and a result area. Once all desired filters are set, simply click the **Search** button to display the results within the result grid.
 
-**Inserimento Attrezzature**
+**Insert Equipments**
 
-Per poter inserire nuove codifiche è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**. 
+To insert new codes, it is necessary to click on the first empty row in the grid or press the **New** button. 
 
-Per il nuovo record si devono inserire almeno i campi obbligatori richiesti dal programma: il **Codice** e la **Descrizione** dell'attrezzatura.
+For the new record, at least the mandatory fields required by the program must be filled in: the **Code** and the **Description** of the equipment.
 
-*Campi specifici*: 
+*Specific fields*: 
 
-**Attiva**: si seleziona per indicare che l'attrezzatura può essere utilizzata.
+**Active**: is selected to indicate that the equipment can be used.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+For everything not detailed in this document regarding the common function of forms, please refer to the following link [Custom features, buttons, and fields](/docs/guide/common).

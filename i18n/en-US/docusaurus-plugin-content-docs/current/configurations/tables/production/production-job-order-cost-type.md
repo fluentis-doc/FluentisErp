@@ -1,22 +1,22 @@
 ---
-title: Tipo costificazione commessa
+title: Production Job Order Cost Type
 sidebar_position: 19
 ---
 
-La tabella permette di gestire la codifica delle diverse tipologie di *Tipo costificazione commessa*.
+The table allows for the management of the coding of the different types of *Production Job Order Cost Type*.
 
-Consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+It enables the insertion of new records or the search for existing ones to view, modify, or delete them.
 
-**Ricerca Tipo costificazione commessa**
+**Search Production Job Order Cost Type**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+The form consists of a filter area and a results area. Once all desired filters are set, simply click the **Search** button to display the results within the results grid.
 
-**Inserimento Tipo costificazione commessa**    
+**Insert Production Job Order Cost Type**    
 
-Per poter inserire nuove codifiche è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.    
+To insert new codings, it is necessary to click on the first empty row in the grid or press the **New** button.    
 
-:::note Nota
-Per ogni nuovo inserimento è necessario indicare un *Codice* e *Descrizione* del tipo costificazione e la relatva *Numerazione*; dopo di che in automatico vengono riportati i dati di *Tipo costo*, *Costo del lotto*, *Costo della commessa* e *Tipo ricarico* indicati nella sezione *costificazione commessa* dei **Parametri MPS**, ovvimanete possono essere poi modificati manualmente in base alle esigenze.     
+:::note Note
+For each new entry, it is necessary to specify a *Code* and *Description* of the costing type and the relevant *Numeration*; after that, the data for *Cost Type*, *Cost of the batch*, *Cost for production job order*, and *refill type* indicated in the *production job order cost* section of the **MPS Parameters** will be automatically populated, which can, of course, be manually modified based on needs.     
 :::    
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).     
+For anything not detailed in this document regarding the common functioning of forms, please refer to the following link [Custom features, buttons, and fields](/docs/guide/common).

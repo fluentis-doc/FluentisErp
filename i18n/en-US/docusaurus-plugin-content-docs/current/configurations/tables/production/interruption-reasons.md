@@ -1,38 +1,38 @@
 ---
-title: Causali di sospensione
+title: Interruption Reasons
 sidebar_position: 5
 ---
 
-La tabella permette di gestire la codifica delle diverse tipologie di *Causali di sospensione*.
+The table allows for the management of coding the different types of *Interruption Reasons*.
 
-Consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+It enables the insertion of new records or the search for existing ones to view, modify, or delete them.
 
-**Ricerca Causali di sospensione**
+**Search Interruption Reasons**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+The form consists of a filter area and a results area. Once all desired filters are set, simply click the **Search** button to display the results within the results grid.
 
-**Inserimento Causali di sospensione**
+**Insert Interruption Reasons**
 
-Per poter inserire nuove codifiche è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.
+To insert new codings, you need to click on the first empty row in the grid or press the **New** button.
 
-*Campi specifici*: 
+*Specific fields*: 
 
-> **Codice**: indica il codice della casuale di sospensione;           
-> **Descrizione**: indica la descrizione della casuale di sospensione;   
-> **Revisione ordinaria**: attualmente non implementato;                    
-> **Revisione straordinaria**: attualmente non implementato;            
-> **Generazione ordine di revisione**: attualmente non implementato;          
-> **Utenti**: utilizzato nella form gestione ore personale presente in *Produzione > Gestione ore Produzione > Gestione ore personale;          
-> **Assenza**: utilizzato nella form gestione ore personale presente in *Produzione > Gestione ore Produzione > Gestione ore personale;              
-> **Cessione**: utilizzato nella form gestione ore personale presente in *Produzione > Gestione ore Produzione > Gestione ore personale;               
-> **Predefinito**: utilizzato nella form gestione ore personale presente in *Produzione > Gestione ore Produzione > Gestione ore personale;               
-> **Predefinito cessione**: utilizzato nella form gestione ore personale presente in *Produzione > Gestione ore Produzione > Gestione ore personale;               
-> **Indiretto**: attualmente non implementato;     
-> **Macchina**: attualmente non implementato;     
-> **Tipo**: indica il tipo della causale di sospensione e può essere:
-> > **Produzione**: indica che il tempo the intercorre tra la *sospensione* e la successiva *ripresa* viene considerato come tempo di perso dovuto a cause esterne all'azienda (ad esempio materiale inviato dal fornitore/cliente non conforme);      
-> > **Attrezzaggio**: indica che il tempo the intercorre tra la *sospensione* e la successiva *ripresa* viene considerato come tempo di attrezzaggio;          
-> > **Perdita**: indica che il tempo the intercorre tra la *sospensione* e la successiva *ripresa* viene considerato come tempo di perso dovuto a cause intere all'azienda;         
-> > **Manutenzione**: indica che il tempo the intercorre tra la *sospensione* e la successiva *ripresa* viene considerato come tempo di manutenzione sull'impianto.
+> **Code**: indicates the code of the interruption reason;           
+> **Description**: indicates the description of the interruption reason;   
+> **Ordinary Overhaul**: currently not implemented;                    
+> **Extraordinary Overhaul**: currently not implemented;            
+> **Overhaul Order Generation**: currently not implemented;          
+> **Users**: used in the staff hours management form present in *Production > Production Hours Management > Staff Hours Management;*          
+> **Absence**: used in the staff hours management form present in *Production > Production Hours Management > Staff Hours Management;*              
+> **Disposal**: used in the staff hours management form present in *Production > Production Hours Management > Staff Hours Management;*               
+> **Default**: used in the staff hours management form present in *Production > Production Hours Management > Staff Hours Management;*               
+> **Default Disposal**: used in the staff hours management form present in *Production > Production Hours Management > Staff Hours Management;*               
+> **Indirect**: currently not implemented;     
+> **Machine**: currently not implemented;     
+> **Type**: indicates the type of the suspension reason and can be:
+> > **Production**: indicates that the time that elapses between the *suspension* and the subsequent *resumption* is considered as lost time due to external causes to the company (for example, non-compliant material sent by the supplier/customer);      
+> > **Rig**: indicates that the time that elapses between the *suspension* and the subsequent *resumption* is considered as setup time;          
+> > **Loss**: indicates that the time that elapses between the *suspension* and the subsequent *resumption* is considered as lost time due to internal causes to the company;         
+> > **Maintenance**: indicates that the time that elapses between the *suspension* and the subsequent *resumption* is considered as maintenance time on the plant.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+For all details not covered in this document about the common functionality of the forms, please refer to the following link [Custom features, buttons, and fields](/docs/guide/common).

@@ -1,61 +1,61 @@
 ---
-title: Macchine
+title: Machines 
 sidebar_position: 9
 ---
 
-In questa tabella vengono codificate tutte le macchine impiegate all'interno dei vari cicli di lavoro, ognuna collegata ad un centro di costo.
+In this table, all the machines used within the various work cycles are coded, each linked to a cost center.
 
-Le tabelle relative alle macchine e ai gruppi manodopera sono importanti per definire il costo delle varie fasi, in quanto il costo orario della macchina X tempo macchina sommato al costo orario del gruppo manodopera X il costo orario operaio avranno come risultato il costo della fase di lavorazione.
+The tables related to machines and labour groups are important for defining the cost of the various phases, as the hourly cost of the machine X machine time added to the hourly cost of the labour group X the hourly worker cost will yield the cost of the processing phase.
 
-La tabella consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+The table allows for the insertion of new records or the search for existing ones to view, modify, or delete them.
 
-**Ricerca Macchine**
+**Search Machines**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+The form consists of a filter area and a results area. Once all desired filters are set, simply click on the **Search** button to view the results within the results grid.
 
-**Inserimento Macchine**
+**Insert Machines**
 
-Per poter inserire nuove codifiche è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**. 
+To insert new codes, it is necessary to click on the first empty row in the grid or press the **New** button.
 
-Per il nuovo record, nella griglia *Macchine*, si devono inserire almeno i campi obbligatori richiesti dal programma: il **Codice** e la **Descrizione** della macchina. Si può specificare se la macchina risulta **Attiva** o meno, il centro aziendale collegato alla macchina, ecc.
+For the new record in the *Machines* grid, at least the mandatory fields required by the program must be filled in: the **Code** and the **Description** of the machine. You can specify whether the machine is **Active** or not, the business center linked to the machine, etc.
 
-*Campi specifici*: 
+*Specific fields*: 
 
-**Macchina**: codice macchina;  
-**Descrizione**: descrizione della macchina;  
-**Attiva**: indica se la macchina è attiva o meno, quindi se sia utilizzabile e pianificabile;  
-**Dichiarazione materiale mobile**: se attivo, il centro sarà proposto nella dichiarazione dei tempi di Fluentis Mobile; nel caso in cui i dati siano trasmessi dalla macchina a Fluentis con altri automatismi questo flag sarà disattivato. Utilizzato solo per le personalizzazioni;  
-**Stampa etichetta**: se attivo permette di stampare un’etichetta;  
-**Centri di lavoro**: indica su quale centro di lavoro è collocata la macchina;  
-**Centro aziendale**: indica il centro di costo a cui si riferisce la macchina;  
-**Reparti**: indica il codice del reparto in cui è inserita la macchina;  
-**Classe macchina**: indica la classe della macchina (nel caso in cui la macchina sia codificata come articolo);  
-**Codice articolo macchina**: indica il codice articolo (nel caso in cui la macchina sia codificata come articolo);  
-**Sito Produzione**: nel caso di più stabilimenti indica il codice del sito produttivo in cui si trova la macchina;  
-**Descrizione sito produttivo**: indica la descrizione del sito produttivo; 
-**Ubicazione**:           
-**Data acquisto**: indica la data di acquisto della macchina;  
-**Precodice cespite**: indica il precodice del cespite;  
-**Numero**: indica il numero del cespite;  
-**Descrizione**: indica la descrizione del cespite;  
-**Ordine di acquisto**: indica il numero del documento di acquisto del cespite;  
-**Data installazione**: indica la data di installazione della macchina;  
-**Data inserimento**: indica la data di inserimento della macchina;  
-**Data ultima modifica**: indica la data di ultima modifica della macchina;  
-**Descrizione centro di costo**: indica la descrizione del centro di costo a cui si riferisce la macchina;  
-**Descr. Reparto**: indica la descrizione del reparto in cui è inserita la macchina;  
-**Descrizione articolo macchina**: indica la descrizione articolo (nel caso in cui la macchina sia codificata come articolo);  
+**Machine**: machine code;  
+**Description**: description of the machine;  
+**Active**: indicates whether the machine is active or not, meaning if it is usable and schedulable;  
+**Mobile Material Declaration**: if active, the center will be proposed in the time declaration of Fluentis Mobile; if the data is transmitted from the machine to Fluentis with other automations, this flag will be deactivated. Used only for customizations;  
+**Print Label**: if active, allows printing a label;  
+**Work Centers**: indicates which work center the machine is located in;  
+**Corporate Center**: indicates the cost center to which the machine refers;  
+**Divisions**: indicates the code of the division in which the machine is placed;  
+**Machine Class**: indicates the class of the machine (if the machine is coded as an item);  
+**Machine Item Code**: indicates the item code (if the machine is coded as an item);  
+**Production Site**: in the case of multiple plants, indicates the code of the production site where the machine is located;  
+**Production Site Description**: indicates the description of the production site;  
+**Location**:           
+**Purchase Date**: indicates the purchase date of the machine;  
+**Fixed Asset Classification Code**: indicates the classification code of the fixed asset;  
+**Number**: indicates the number of the fixed asset;  
+**Description**: indicates the description of the fixed asset;  
+**Purchase Order**: indicates the number of the purchase document of the fixed asset;  
+**Installation Date**: indicates the installation date of the machine;  
+**Insert Date**: indicates the entry date of the machine;  
+**Last Edit Date**: indicates the last edit date of the machine;  
+**Cost Center Description**: indicates the description of the cost center to which the machine refers;  
+**Division Description**: indicates the description of the division in which the machine is placed;  
+**Item Machine Description**: indicates the item description (if the machine is coded as an item);  
 
-Nella seconda sezione invece si può andare a dettagliare la **Sequenze** delle macchine alternative.
- 
-*Campi specifici*:  
+In the second section, you can detail the **Sequences** of the alternative machines.
 
-**Sequenza**: indica la sequenza delle macchine alternative;   
-**Macchina**: indica il codice macchina;  
-**Descrizione macchina**: indica la descrizione della macchina;  
-**Attiva**: indica se la macchina è attiva o meno, quindi se sia utilizzabile e pianificabile;  
-**Centro aziendale**: indica il centro di costo a cui si riferisce la macchina;  
-**Descrizione centro di costo**: indica la descrizione del centro di costo a cui si riferisce la macchina;   
+*Specific fields*:  
+
+**Sequence**: indicates the sequence of alternative machines;  
+**Machine**: indicates the machine code;  
+**Machine Description**: indicates the description of the machine;  
+**Active**: indicates whether the machine is active or not, meaning if it is usable and schedulable;  
+**Corporate Center**: indicates the cost center to which the machine refers;  
+**Cost Center Description**: indicates the description of the cost center to which the machine refers;   
 
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+For anything not detailed in this document regarding the common functionality of the forms, please refer to the following link [Custom features, buttons, and fields](/docs/guide/common).

@@ -1,25 +1,25 @@
 ---
-title: Calendario capacità produttiva
+title: Production Capacity Calendar 
 sidebar_position: 3
 ---
 
-La finestra si presenta come una tabella all'interno della quale vengono visualizzate tante caselle quanti sono i giorni del mese selezionato in alto a destra.  
-Nel primo campo si troverà il **Mese** e l'**Anno** di riferimento, che potranno essere selezionati tramite la combo e il campo editabile a lato o cliccando sui pulsanti **Anno precedente/Successivo** e **Mese precedente/successivo**.
+The window appears as a table within which as many boxes are displayed as there are days in the selected month in the top right.  
+In the first field, you will find the **Month** and the **Year** of reference, which can be selected via the combo box and the editable field next to it or by clicking the **Previous/Next Year** and **Previous/Next Month** buttons.
 
-Di seguito ci sono una serie di combo, all'interno delle quali si andrà a selezionare il **Centro di lavoro** per il quale si vuole creare il calendario, la **Macchina**, il **Gruppo manodopera**.
+Below, there are a series of combos, within which you will select the **Work Center** for which you want to create the calendar, the **Machine**, and the **Labour Group**.
 
-In ogni casella è presente un flag, che, se attivato, indica che il giorno in questione è *Festivo*.  
-Il fatto che un determinato giorno sia designato come *Festivo* consente all'utente di fare in modo che quando esegua la generazione del *Calendario delle capacità produttive* l'applicazione generi in automatico una disponibilità della *Risorse produttiva* solo per i giorni che nel [Calendario di Fabbrica](/docs/configurations/tables/production/factory-calendar) sono identificati come non festivi.
+In each box, there is a flag that, if activated, indicates that the day in question is *Holiday*.  
+The designation of a specific day as *Holiday* allows the user to ensure that when generating the *Production Capacity Calendar*, the application automatically generates availability of the *Production Resources* only for the days identified as non-holidays in the [Factory Calendar](/docs/configurations/tables/production/factory-calendar).
 
-Oltre a questo flag, all'interno di ciascuna casella saranno visualizzabile e/o modificabile anche le *ore di capacità produttiva* di quel centro di lavoro (per quante ore al giorno lavora).
+In addition to this flag, within each box, the *productive capacity hours* of that work center (for how many hours per day it operates) will also be visible and/or modifiable.
 
-E' possibile stabilire che il centro di lavoro lavori tutti i giorni tranne i giorni festivi, e nel caso di **Eccezioni**, basterà posizionarsi nella giornata che si desidera modificare e aggiungere/togliere il flag e aggiungere/togliere le ore di lavoro.
+It is possible to establish that the work center operates every day except on holidays, and in the case of **Exceptions**, it will be enough to position yourself on the day you wish to modify and add/remove the flag and add/remove the working hours.
 
-Il calendario delle capacità produttive prevale sul calendario di fabbrica.
+The production capacity calendar takes precedence over the factory calendar.
 
-Una volta impostati i vari campi, basterà cliccare il pulsante **Salva**.
+Once the various fields are set, simply click the **Save** button.
 
-*Pulsante specifico*:  
-> **Generazione automatica**: permette di entrare nella finestra in cui settare i vari parametri per la generazione di un calendario comune per più centri di lavoro e con parametri fissi per tutti i mesi dell'anno. Sempre grazie a questo pulsante, una volta inseriti i parametri per il calendario comune, si potrà procedere alla sua effettiva creazione.
+*Specific button:*  
+> **Automatic Generation**: allows you to enter the window to set various parameters for generating a common calendar for multiple work centers with fixed parameters for all months of the year. Thanks to this button, once the parameters for the common calendar are entered, you can proceed to its actual creation.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+For everything not detailed in this document regarding the common functioning of the forms, refer to the following link [Custom Features, Buttons, and Fields](/docs/guide/common).

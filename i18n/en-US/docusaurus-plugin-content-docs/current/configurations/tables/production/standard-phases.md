@@ -1,68 +1,68 @@
 ---
-title: Fasi standard
+title: Standard Phases 
 sidebar_position: 7
 ---
 
-Questa tabella corrisponde all'anagrafica delle fasi che vengono utilizzate nei cicli di lavoro; in questa tabella vengono quindi codificate tutte le fasi con i relativi dati allo scopo poi di poter essere proposte e selezionate all'interno del ciclo di lavoro.
+This table corresponds to the registry of phases that are used in work cycles; in this table, all phases are encoded with their respective data so that they can be proposed and selected within the work cycle.
 
 
 
-La tabella consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+The table allows the insertion of new records or searching for existing ones to view, modify, or delete them.
 
-**Ricerca Fasi standard**
+**Search Standard Phases**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+The form consists of a filter area and a results area. Once all desired filters are set, simply click the **Search** button to view the results within the results grid.
 
-**Inserimento Fasi standard**
+**Insert Standard Phases**
 
-Per poter inserire nuove codifiche è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**. 
+To insert new codes, it is necessary to click on the first empty row in the grid or press the **New** button.
 
-Per il nuovo record si devono inserire almeno i campi obbligatori richiesti dal programma: il **Codice** e **Descrizione fase/sottofase**. Uno dei dati più importanti da inserire in questa tabella è il **Tipo di fase/sottofase**: *Interna* oppure *Esterna*.
+For the new record, at least the required mandatory fields must be filled in: **Code** and **Phase/Subphase Description**. One of the most important data to enter in this table is the **Phase/Subphase Type**: *Internal* or *External*.
 
 
-*Campi specifici*: 
+*Specific fields*:
 
-**Codice**: indica il codice della fase standard;  
-**Fase**: indica il numero progressivo di fase;  
-**Sottofase**: indica il numero di sottofase a parità di numero di fase;  
-**Descrizione fase/sottofase**: indica la descrizione della fase/sottofase;  
-**Tipo fase/sottofase**: indica se la fase/sottofase sia interna o esterna;  
-**Fase produttiva**: indica se si tratta di una fase di tipo produttivo;  
-**Movimentabile**: indica che la fase genererà dei movimenti di magazzino (scarichi e carichi);  
-**Ctrl qtà**: se attivato, questo flag indica che questa fase è soggetta a tutta una serie di analisi inerenti al controllo qualità;  
-**Centro di lavoro**: indica il codice del CdL;  
-**Tempo fisso**: indica che il CdL lavora a tempo fisso, il tempo di lavorazione dell’articolo non dipende dal numero di pezzi;  
-**U.M. tempi**: indica l’unità di misura dei tempi della fase;  
-**Tempo attesa/coda**: indica il tempo necessario che bisogna attendere alla fine della fase prima di poterla eseguire nuovamente;       
-**Tempo attrezzaggio**: indica il tempo di attrezzaggio;  
-**Tempo riattrezzaggio**: indica il tempo di riattrezzaggio, cioè il tempo necessario per riattrezzare la macchina tra la produzione di uno o più pezzi;  
-**Macchina**: indica il codice della macchina;  
-**Tempo macchina**: indica il tempo di impiego della macchina in questa fase;                       
-**Numero macchine**: indica il numero di macchine impegnate contemporaneamente dalla lavorazione;  
-**Numero pezzi**: indica il numero di pezzi prodotto ad ogni esecuzione di quella fase;              
-**Gruppi manodopera**: indica il codice del gruppo di manodopera;  
-**Tempo assegnato**: indica il tempo impiegato dalla manodopera in quella fase;            
-**Numero operai**: indica il numero di operai che stanno svolgendo la fase;           
-**Manutenzione**: indica se la fase è di tipo manutenzione;        
-**Costo**: indica il costo della fase per produrre i pezzi indicati nel campo Numero pezzi;    
-**Conto terzista**: indica il codice del conto terzista;  
-**Sottoconto terzista**: indica il codice del sottoconto terzista;  
-**Descrizione terzista**: indica la descrizione del terzista;  
-**Tipo piano di controllo**: indica il tipo di piano per il controllo qualità;  
-**Anno del piano di controllo**: indica l’anno del piano per il controllo qualità;  
-**Codice piano di controllo**: indica il codice del piano per il controllo qualità;  
-**Descrizione del piano di controllo**: indica la descrizione del piano per il controllo qualità;  
-**Data creazione**: indica la data di creazione del record;  
-**Data modifica**: indica la data di ultima modifica del record;  
-**Note**: Campo libero per l’inserimento di note;  
-**Descrizione centro di lavoro**: indica la descrizione del CdL;  
-**Descrizione macchina**: indica la descrizione della macchina;  
-**Descrizione gruppo MDO**: indica la descrizione del gruppo di manodopera;  
-**Ubicazione**: indica l'ubicazione di magazzino associata a quella fase; questo significa che tutti gli articoli impiegati in quella fase saranno presenti in quell'ubicazione.           
+**Code**: indicates the code of the standard phase;  
+**Phase**: indicates the progressive number of the phase;  
+**Subphase**: indicates the number of subphase for the same phase number;  
+**Phase/Subphase Description**: indicates the description of the phase/subphase;  
+**Phase/Subphase Type**: indicates whether the phase/subphase is internal or external;  
+**Production Phase**: indicates whether it is a production type phase;  
+**Movable**: indicates that the phase will generate warehouse movements (outflows and inflows);  
+**Quality Control**: if activated, this flag indicates that this phase is subject to a series of analyses related to quality control;  
+**Work Center**: indicates the code of the work center;  
+**Fixed Time**: indicates that the work center operates on fixed time, the processing time of the item does not depend on the number of pieces;  
+**Times MU**: indicates the unit of measure for the times of the phase;  
+**Wait/Queue Time**: indicates the time required to wait at the end of the phase before it can be executed again;       
+**Setup Time**: indicates the setup time;  
+**Retooling Time**: indicates the reset setup time, meaning the time required to reset the machine between the production of one or more pieces;  
+**Machine**: indicates the code of the machine;  
+**Machine Time**: indicates the usage time of the machine in this phase;                       
 
-:::note Nota
-Tutte le fasi esterne devono sempre avere i flag **Fase produttiva** e **Fase movimentabile** attivi.
+**Machines Number**: indicates the number of machines involved simultaneously in the processing;  
+**Pieces Number**: indicates the number of pieces produced at each execution of that phase;              
+**Labour Groups**: indicates the code of the labour group;  
+**Assigned Time**: indicates the time spent by the labour in that phase;            
+**Workers Number**: indicates the number of workers performing the phase;           
+**Maintenance**: indicates whether the phase is maintenance-type;        
+**Cost**: indicates the cost of the phase for producing the pieces indicated in the Number of Pieces field;    
+**Subcontractor Account**: indicates the code of the subcontractor account;  
+**Subcontractor Detail Account**: indicates the code of the subcontractor detail account;  
+**Subcontractor Description Account**: indicates the description of the subcontractor;  
+**Control Plan Type**: indicates the type of plan for quality control;  
+**Control Plan Year**: indicates the year of the quality control plan;  
+**Control Plan Code**: indicates the code of the quality control plan;  
+**Control Plan Description**: indicates the description of the quality control plan;  
+**Creation Date**: indicates the date of record creation;  
+**Date Modified**: indicates the date of the last modification of the record;  
+**Notes**: Free field for entering notes;  
+**Work Center Descriptio**: indicates the description of the work center;  
+**Machine Description**: indicates the description of the machine;  
+**Labour Group Description**: indicates the description of the labour group;  
+**Location**: indicates the warehouse location associated with that phase; this means that all items used in that phase will be present in that location.           
+
+:::note Note
+All external phases must always have the **Production Phase** and **Movable Phase** flags active.
 :::
 
-
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+For everything that is not detailed in this document about the common operation of forms, please refer to the following link [Custom Features, Buttons, and Fields](/docs/guide/common).

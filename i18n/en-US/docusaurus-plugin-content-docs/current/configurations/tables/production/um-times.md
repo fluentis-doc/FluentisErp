@@ -1,18 +1,18 @@
 ---
-title: UM Tempi
+title: Times MU
 sidebar_position: 14
 ---
 
-La tabella permette di gestire la codifica il numero di decimali per ogni unità di misura temporale (Giorni, Ore, Minuti, Secondi) *UM Tempi*.
+The table allows for the management of the coding of the number of decimals for each unit of time measurement (Days, Hours, Minutes, Seconds) *Times MU*.
 
-Consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+It enables the insertion of new records or searching for existing ones to view, modify, or delete them.
 
-**Ricerca UM Tempi**
+**Search Times MU**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+The form consists of a filter area and a results area. Once all desired filters are set, simply click the **Search** button to display the results within the results grid.
 
-**Inserimento UM Tempi**
+**Insert Times MU**
 
-Per poter inserire nuove codifiche è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.
+To insert new codes, it is necessary to click in the grid on the first empty row or press the **New** button.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+For anything not detailed in this document regarding the common operation of forms, please refer to the following link [Custom Features, Buttons, and Fields](/docs/guide/common).

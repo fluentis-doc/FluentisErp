@@ -1,26 +1,26 @@
 ---
-title: Centri di costo
+title: Cost Centers
 sidebar_position: 6
 ---
 
-Questa è la tabella in cui si inseriscono le tariffe da associare alla macchina e al gruppo manodopera per poter valorizzare le fasi di lavorazione dei vari centri di lavoro.
+This is the table where rates are entered to associate with the machine and the labor group to value the processing phases of various work centers.
 
-La tabella consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+The table allows the insertion of new records or the search for existing ones to view, modify, or delete them.
 
-**Ricerca Centri di costo**
+**Search Cost Centers**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+The form consists of a filter area and a results area. Once all desired filters are set, simply click the **Search** button to view the results within the results grid.
 
-**Inserimento Centri di costo**
+**Insert Cost Centers**
 
-Per poter inserire nuove codifiche è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo** e sarà è possibile selezionare dalla combo il centro di costo che si vuole aggiungere. Per crearne uno nuovo, invece, sarà necessario inserirlo nella tabella dei [Centri aziendali](/docs/configurations/tables/controlling/analytical-accounting/corporate-centers/) attivando il flag **Visibile in produzione**, altrimenti non sarà possibile visualizzarlo della combo di inserimento dei **Centri di costo**. 
+To be able to enter new codes, it is necessary to click on the first empty row in the grid or press the **New** button, and it will be possible to select the cost center you want to add from the combo. To create a new one, however, it will be necessary to enter it in the table of [Corporate Centers](/docs/configurations/tables/controlling/analytical-accounting/corporate-centers/) by activating the flag **Visible in production**; otherwise, it will not be possible to view it in the insertion combo of **Cost Centers**.
 
-Per il nuovo record si devono inserire almeno i campi obbligatori richiesti dal programma: il **Codice** del centro di costo e la **Versione**, perchè è possibile avere costi diversi per le varie versioni a parità di centro di costo.         
-A questo punto è possibile associare al centro il **Costo**, il quale sarà utilizzato per la costificazione. Se non si specifica nessuna **UM**, la tariffa inserita si intenderà come tariffa oraria.       
+For the new record, at least the mandatory fields required by the program must be entered: the **Code** of the cost center and the **Version**, as it is possible to have different costs for the various versions despite having the same cost center.         
+At this point, it is possible to associate the **Cost** with the center, which will be used for costing. If no **MU** is specified, the inserted rate will be understood as an hourly rate.
 
-I centri di costo possono essere associati alle seguenti risorse:
-- [Macchina](/docs/configurations/tables/production/machines)
-- [Gruppo manodopera](/docs/configurations/tables/production/labour-group)
-- [Singolo operatore del gruppo manodopera](/docs/configurations/tables/production/labour-group)
+Cost centers can be associated with the following resources:
+- [Machine](/docs/configurations/tables/production/machines)
+- [Labor group](/docs/configurations/tables/production/labour-group)
+- [Single operator of the labor group](/docs/configurations/tables/production/labour-group)
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+For everything not detailed in this document about the common functionality of forms, refer to the following link [Custom features, buttons, and fields](/docs/guide/common).

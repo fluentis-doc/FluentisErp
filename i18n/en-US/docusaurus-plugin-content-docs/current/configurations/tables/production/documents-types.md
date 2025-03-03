@@ -1,20 +1,20 @@
 ---
-title: Tipi documenti
+title: Document Types 
 sidebar_position: 13
 ---
 
-La tabella consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+The table allows for the insertion of new records or searching for existing ones to view, modify, or delete them.
 
-**Ricerca Tipi documento**
+**Search Document Types**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+The form consists of a filter area and a result area. Once all desired filters are set, simply click the **Search** button to display the results within the result grid.
 
-**Inserimento Tipi documento**
+**Insert Document Types**
 
-Per poter inserire nuove codifiche è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.
+To insert new codes, you need to click in the grid on the first empty row or press the **New** button.
 
-Per il nuovo record si devono inserire almeno i campi obbligatori richiesti dal programma: il **Codice** alfanumerico del tipo e la sua **Descrizione**, il **Codice standard** a cui corrisponde e il **Tipo numerazione**. Si può inserire anche il **Tipo di documento** generato (di acquisto, di produzione, di conto lavoro) e, tramite il flag, è possibile indicare se il documento serve per gli interventi di **Manutenzione** o solo per la produzione.
+For the new record, at least the mandatory fields required by the program must be filled out: the alphanumeric **Code** of the type and its **Description**, the corresponding **Standard Code**, and the **Numeration Type**. You can also enter the **Document Type** generated (purchase, production, work order), and via the flag, indicate whether the document is for **Maintenance** interventions or only for production.
 
-Per i **Tipi documenti** con codice standard *CP* (Commesse di produzione) è possibile inserire il **Tipo costificazione commessa** che verrà poi proposta di default ad ogni elaborazione della costificazione della commessa. 
+For **Document Types** with the standard code *PJO* (Production Job Orders), it is possible to insert the **Production job order cost type** that will then be proposed by default for each processing of the production job order costing.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+For anything not detailed in this document regarding the common functioning of forms, please refer to the following link [Custom features, Buttons, and Fields](/docs/guide/common).

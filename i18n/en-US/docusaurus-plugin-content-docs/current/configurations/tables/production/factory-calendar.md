@@ -1,32 +1,32 @@
 ---
-title: Calendario di fabbrica
+title: Factory Calendar 
 sidebar_position: 4
 ---
 
-Attraverso questa finestra è possibile generare e/o modificare il *Calendario di fabbrica* dell'azienda, elemento fondamentale che viene tenuto in considerazione dalle procedure di *Schedulazione Generale* ed *MRP*.
+Through this window, it is possible to generate and/or modify the *Factory Calendar* of the company, a fundamental element that is taken into account by the *General Schedule* and *MRP* procedures.
 
-La finestra si presenta come una tabella all'interno della quale vengono visualizzate tante caselle quanti sono i giorni del mese selezionato in alto a destra.  
-Nel primo campo si troverà il **Mese** e l'**Anno** di riferimento, che potranno essere selezionati tramite la combo e il campo editabile a lato o cliccando sui pulsanti **Anno precedente/Successivo** e **Mese precedente/successivo**.
+The window presents itself as a table within which the number of boxes displayed corresponds to the days of the selected month on the top right.  
+In the first field, the **Month** and **Year** of reference can be found, which can be selected through the dropdown and the editable field next to it, or by clicking on the **Previous/Next Year** and **Previous/Next Month** buttons.
 
-In ogni casella è presente un flag, che, se attivato, indica che il giorno in questione è *Festivo*.  
-Il fatto che un determinato giorno sia designato come *Festivo* consente all'utente di fare in modo che quando esegua la generazione del [Calendario delle capacità produttive](/docs/configurations/tables/production/productive-capacity-calendar)  l'applicazione generi in automatico una disponibilità della *Risorse produttiva* solo per i giorni che nel *Calendario di fabbrica* sono identificati appunto come non festivi.  
-Inoltre, l'indicazione relativa alla festività è importante anche quando si definiscono i *Tempi di approvvigionamento dei fornitori preferenziali*, che devono essere quindi indicati considerando il *Calendario di fabbrica*.  
-*Esempio*:
-Se vengono considerati festivi il sabato e la domenica, impostando un valore di 10 giorni come tempo di approvvigionamento si sottintende un tempo complessivo di circa 2 settimane, considerato il fatto che la settimana lavorativa è in questo caso composta di soli 5 giorni di calendario.
+In each box, there is a flag that, if activated, indicates that the day in question is *Holiday*.  
+The designation of a certain day as *Holiday* allows the user to ensure that when generating the [Production Capacity Calendar](/docs/configurations/tables/production/productive-capacity-calendar), the application automatically generates availability for the *Production Resources* only for the days that in the *Factory Calendar* are identified as non-holidays.  
+Additionally, the indication regarding the holiday is also important when defining the *Preferential Vendors Procurement Time*, which must therefore be indicated considering the *Factory Calendar*.  
+*Example*:  
+If Saturday and Sunday are considered holidays, setting a value of 10 days as lead time implies a total time of about 2 weeks, given that the working week consists in this case of only 5 calendar days.
 
-Una volta settati i vari campi, basterà cliccare il pulsante **Salva**.
+Once the various fields are set, it will be enough to click the **Save** button.
 
-I flag che indicano la festività possono essere impostati:
-- **manualmente** dall'utente  
-oppure, come di solito avviene,   
-- utilizzando il pulsante della ribbon chiamato **Generazione calendario di fabbrica**. Alla pressione di questo tasto si apre una finestra di pop up chiamata **Generazione calendario**.
+The flags indicating holiday status can be set:  
+- **manually** by the user  
+or, as is usually done,   
+- by using the ribbon button called **Factory Calendar Generation**. Upon pressing this button, a pop-up window called **Calendar Generation** opens.
 
-In questa finestra pop up l'utente può decidere di generare automaticamente il calendario di fabbrica per un determinato anno, che può impostare nell'apposito campo **Generazione calendario per l'anno**.  
-Dopo aver deciso quali dovranno essere i giorni festivi della settimana e se considerare o meno le impostazioni eseguite nella tabella *Festività annuali*, si può cliccare sul pulsante **OK** per eseguire in automatico la creazione del calendario di fabbrica per l'anno indicato.
+In this pop-up window, the user can decide to automatically generate the factory calendar for a specific year, which can be set in the appropriate field **Calendar Generation for Year**.  
+After deciding which days of the week should be treated as holidays and whether to consider the settings made in the *Annual Holidays* table, the user can click the **OK** button to automatically create the factory calendar for the indicated year.
 
-Una volta generato il calendario, l'utente dovrà cliccare di nuovo sul pulsante Salva e chiudere la finestra relativa al calendario di fabbrica.
+Once the calendar is generated, the user must click the **Save** button again and close the factory calendar window.
 
-*Pulsante specifico*:  
-> **Generazione calendario di fabbrica**: permette di aprire la finestra pop up per la generazione automatica del calendario di fabbrica per l'intero anno.
+*Specific button*:  
+> **Factory Calendar Generation**: allows opening the pop-up window for the automatic generation of the factory calendar for the entire year.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+For anything not detailed in this document regarding the common functionality of forms, please refer to the following link [Custom Features, Buttons, and Fields](/docs/guide/common).

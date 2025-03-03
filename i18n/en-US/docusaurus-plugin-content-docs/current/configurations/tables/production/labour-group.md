@@ -1,23 +1,23 @@
 ---
-title: Gruppi manodopera
+title: Labour Groups
 sidebar_position: 8
 ---
 
-In questa tabella vengono codificati tutti i gruppi manodopera che verranno poi impiegati nelle varie fasi dei cicli di lavoro.
+In this table, all labour groups that will be used in the various phases of work cycles are coded.
 
-La tabella consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+The table allows for the insertion of new records or the search for existing ones to view, modify, or delete them.
 
-**Ricerca Gruppi manodopera**
+**Search Labour Groups**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+The form consists of a filtering area and a results area. Once all desired filters are set, just click the **Search** button to display the results in the results grid.
 
-**Inserimento Gruppi manodopera**
+**Insert Labour Groups**
 
-Per poter inserire nuove codifiche è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**. 
+To insert new codes, it is necessary to click on the first empty row in the grid or press the **New** button.
 
-Per il nuovo record, nella griglia superiore, si devono inserire almeno i campi obbligatori richiesti dal programma: il **Codice** del gruppo MDO e la sua **Descrizione**.         
-Inoltre, è possibile associare a ciascun **gruppo manodopera** un [centro di costo](/docs/configurations/tables/production/cost-center).
+For the new record, in the upper grid, you must enter at least the mandatory fields required by the program: the **Code** of the labour group and its **Description**.         
+Furthermore, it is possible to associate each **labour group** with a [cost center](/docs/configurations/tables/production/cost-center).
 
-Nella griglia inferiore, in cui per ogni **gruppo manodopera**, si possono specificare i vari **Operatori** che ne fanno parte, indicando per ognuno anche il rispettivo [centro di costo](/docs/configurations/tables/production/cost-center).
+In the lower grid, for each **labour group**, you can specify the various **Users** that are part of it, indicating the respective [cost center](/docs/configurations/tables/production/cost-center) for each one.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+For everything that is not detailed in this document on the common functionality of forms, please refer to the following link [Custom Features, Buttons, and Fields](/docs/guide/common).

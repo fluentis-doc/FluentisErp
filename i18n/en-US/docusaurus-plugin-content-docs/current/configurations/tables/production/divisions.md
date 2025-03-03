@@ -1,28 +1,28 @@
 ---
-title: Reparti
+title: Divisions
 sidebar_position: 11
 ---
 
-Questa è una tabella non obbligatoria, all'interno della quale si possono andare a codificare i vari reparti di produzione.
+This is a non-mandatory table, within which various production divisions can be encoded.
 
-La tabella consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+The table allows for the insertion of new records or the search of already existing ones to view, modify, or delete them.
 
-**Ricerca Reparti**
+**Search Divisions**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+The form consists of a filter area and a results area. Once all desired filters are set, simply click the **Search** button to display the results within the results grid.
 
-**Inserimento Reparti**
+**Insert Divisions**
 
-Per poter inserire nuove codifiche è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**. 
+To enter new codes, you must click on the first empty row in the grid or press the **New** button.
 
-Per il nuovo record si devono inserire almeno i campi obbligatori richiesti dal programma: il **Codice** alfanumerico del reparto e la sua **Descrizione**. 
+For the new record, at least the mandatory fields required by the program must be entered: the **Code** and its **Description**.
 
-*Campi specifici*: 
+*Specific fields*:
 
-**Reparto**: indica il codice del reparto;  
-**Descrizione**: indica la descrizione del reparto;  
-**Data inserimento**: indica la data di inserimento del record;  
-**Data modifica**: indica la data di modifica del record.
+**Division**: indicates the division code;  
+**Description**: indicates the description of the division;  
+**Insert Date**: indicates the date the record was entered;  
+**Date Modified**: indicates the date the record was modified.
 
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+For all other aspects not detailed in this document regarding the common functionality of the forms, please refer to the following link [Custom features, buttons, and common fields](/docs/guide/common).

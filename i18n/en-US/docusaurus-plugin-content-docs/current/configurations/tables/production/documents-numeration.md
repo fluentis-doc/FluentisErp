@@ -1,8 +1,8 @@
 ---
-title: Numerazione documenti
+title: Documents Numeration
 sidebar_position: 10
 ---
 
-La tabella consente di definire, tramite un numeratore standard Fluentis la numerazione dei documenti.
+The table allows you to define, through a standard Fluentis counter, the numeration of documents.
 
-Per la definizione dei campi del numeratore si veda [**qui**](/docs/configurations/tables/fluentis-numerations).
+For the definition of the fields of the counter, see [**here**](/docs/configurations/tables/fluentis-numerations).
