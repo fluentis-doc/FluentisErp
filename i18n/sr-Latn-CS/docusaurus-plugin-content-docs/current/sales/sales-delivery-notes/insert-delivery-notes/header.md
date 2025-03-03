@@ -52,7 +52,7 @@ RIBBON BAR: rappresenta il menu della Form in oggetto, ossia l'area nella quale 
 | RibbonFunction | RibbonMeaning |
 | --- | --- |
 | Spasi | Pulsante per salvare le DDT/Bolle. |
-|  [Evasione da ordine](/docs/sales/sales-delivery-notes/insert-delivery-notes/header-procedures/execution-from-order)  | Richiama la procedura per creare una bolla da un ordine cliente. |
+|  [Evasione da ordine](/docs/sales/sales-delivery-notes/insert-delivery-notes/sales-dn-procedures/execution-from-order)  | Richiama la procedura per creare una bolla da un ordine cliente. |
 | Crea bolla da prelievo di magazzino  | Permette di riprendere gli articoli da una picking list. |
 | Trasferisci gli articoli dai listini di vendita | Permette di riprendere gli articoli dai listini di vendita. |
 | Crea bolla da packing list  | Permette di riprendere gli articoli dal packing list. |

@@ -52,7 +52,7 @@ sidebar_position: 2
 | RibbonFunction | RibbonMeaning |
 | --- | --- |
 | 保存 | 用于保存送货单/货单 |
-|  [从订单的履行](/docs/sales/sales-delivery-notes/insert-delivery-notes/header-procedures/execution-from-order)  | 从销售订单生成货单 |
+|  [从订单的履行](/docs/sales/sales-delivery-notes/insert-delivery-notes/sales-dn-procedures/execution-from-order)  | 从销售订单生成货单 |
 |  从仓库领货清单创建货单  | 用于利用在领货清单中的项目 |
 | 从销售价目表中，交换项目 | 用于利用在销售价目表中的项目 |
 | 从装箱单创建货单  | 用于利用在装箱单中的项目 |

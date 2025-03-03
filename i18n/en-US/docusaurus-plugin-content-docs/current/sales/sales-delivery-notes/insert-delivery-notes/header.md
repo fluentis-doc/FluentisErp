@@ -48,7 +48,7 @@ RIBBON BAR: it represents the Form menu, that is the area in which there is the
 | Function | Meaning |
 | --- | --- |
 | Save | Button to save delivery notes. |
-|  [Execute from Order](/docs/sales/sales-delivery-notes/insert-delivery-notes/header-procedures/execution-from-order)  | It refers to the procedure to create a delivery note from sales order. |
+|  [Execute from Order](/docs/sales/sales-delivery-notes/insert-delivery-notes/sales-dn-procedures/execution-from-order)  | It refers to the procedure to create a delivery note from sales order. |
 | Create Delivery Note from Picking | It enables the user to take items from a picking list. |
 | Transfer Items from Sales Price Lists | It enables the user to take items from sales price lists. |
 | Create DN from Packing List| It enables the user to take items from packing list. |
