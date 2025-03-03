@@ -9,7 +9,7 @@ I parametri delle fatture di vendita permettono l'impostazione di base per gesti
 
 **Proponi provvigioni per tutti gli articoli:** campo diventato OBSOLETO, in quanto la provvigione viene sempre gestita indipendentemente da questo flag.
 
-**Inserimento provvigioni nei tipi 6 e 7 (Acconto/Storno):** se attivo, permette l'inserimento e la gestione delle provvigioni anche per le i tipi riga 6 e 7 delle fatture. Per approfondimenti fare riferimento all'articolo relativo all' [inserimento della fattura](/docs/sales/sales-invoices/invoicing/invoicing-intro).
+**Inserimento provvigioni nei tipi 6 e 7 (Acconto/Storno):** se attivo, permette l'inserimento e la gestione delle provvigioni anche per le i tipi riga 6 e 7 delle fatture. Per approfondimenti fare riferimento all'articolo relativo all' [inserimento della fattura](/docs/sales/sales-invoices/invoicing/sales-invoice).
 
 **Gestione doppia unità misura**: questo flag, se attivo, consente al sistema di gestire l'unità di misura alternativa nella fattura di vendita; se non è attivo nella fattura si vedrà riportata solamente l'unità di misura gestionale dell'articolo;
 
@@ -48,7 +48,7 @@ In questa sezione è possibile andare ad indicare quali tipologie di movimenti d
 
 **Priorità magazzino e causale di scarico alle righe articoli dei DDT**: se attivo il magazzino e la causale di scarico vengono letti dalle righe della fattura mentre se non viene attivato, verranno utilizzati il magazzino e la causale inseriti nei campi successivi (Magazzino e Causale di magazzino);
 
-**Carico/Scarico Automatico**: se attivo, lo scarico del DDT verrà effettuato in automatico all'attivazione del flag Stampata. Se non attivo lo scarico dovrà essere fatto con l'apposito pulsante presente nella ribbon bar della form di inserimento fattura (vedi [Inserimento fatture di vendita](/docs/sales/sales-invoices/invoicing/header)) oppure con l'apposita procedura;
+**Carico/Scarico Automatico**: se attivo, lo scarico del DDT verrà effettuato in automatico all'attivazione del flag Stampata. Se non attivo lo scarico dovrà essere fatto con l'apposito pulsante presente nella ribbon bar della form di inserimento fattura (vedi [Inserimento fatture di vendita](/docs/sales/sales-invoices/invoicing/sales-invoice)) oppure con l'apposita procedura;
 
 **Avviso articoli fittizi**: se attivo, durante lo scarico della fattura il sistema andrà a controllare se sono presenti degli articoli fittizi e nel caso in cui ve ne siano comparirà un messaggio che permetterà all'utente di scegliere se completare lo stesso la procedura oppure no; in caso di risposta affermativa tutta la fattura verrà scaricata (ad eccezione degli articoli fittizi ), mentre in caso di risposta negativa la fattura NON verrà scaricata.
 

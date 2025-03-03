@@ -45,7 +45,7 @@ Dopo aver selezionato gli ordini e impostato i filtri, cliccando su *Trasferimen
 La procedura di evasione da DDT a fattura può essere avviata in due modalità:
 
 - Dal Menu [Procedure](/docs/sales/sales-invoices/procedures/create-invoices-from-delivery-notes): Andando su *Vendite > Fatture di Vendita > Procedure > Creazione da DDT*.
-- Dalla [Testata](/docs/sales/sales-invoices/invoicing/header) della Fattura di Vendita: Utilizzando il pulsante *Evasione DDT* nella testata della fattura.
+- Dalla [Testata](/docs/sales/sales-invoices/invoicing/sales-invoice) della Fattura di Vendita: Utilizzando il pulsante *Evasione DDT* nella testata della fattura.
 
 Questa procedura permette di creare una o più fatture a partire da uno o più DDT. La procedura si compone di tre tab principali:
 

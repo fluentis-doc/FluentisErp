@@ -25,7 +25,7 @@ I parametri delle fatture di vendita permettono l'impostazione di base per gesti
 
 **Proponi provvigione per gli articoli omaggio**: con questo flag verranno proposte le provvigioni agente anche per le righe articolo di tipo omaggio come avviene per le righe di tipo Articolo Codificato.     
 
-**Inserimento provvigioni nei tipi 6 e 7 (Acconto/Storno):** se attivo, permette l'inserimento e la gestione delle provvigioni anche per le i tipi riga 6 e 7 delle fatture. Per approfondimenti fare riferimento all'articolo relativo all' [inserimento della fattura](/docs/sales/sales-invoices/invoicing/invoicing-intro).
+**Inserimento provvigioni nei tipi 6 e 7 (Acconto/Storno):** se attivo, permette l'inserimento e la gestione delle provvigioni anche per le i tipi riga 6 e 7 delle fatture. Per approfondimenti fare riferimento all'articolo relativo all' [inserimento della fattura](/docs/sales/sales-invoices/invoicing/sales-invoice).
 
 **Consentire sconti per gli articoli omaggio**: con questo flag saranno calcolati gli sconti anche per gli articoli omaggio e incideranno sui totali.
 
@@ -43,7 +43,7 @@ I parametri delle fatture di vendita permettono l'impostazione di base per gesti
 
 **Blocca inserimento documento in date festive da calendario di fabbrica**: se attivo, il sistema non permette l'inserimento dell'offerta in date festive (viene controllato prima il Calendario di Fabbrica della società, poi il Calendario delle capacità produttive); se non attivo, il sistema non effettua nessun controllo e lascia inserire il documento.     
 
-**Ricalcola trasporto**: questo flag fa in modo che nel tab [Trasporto](/docs/sales/sales-invoices/invoicing/transport) della fattura vengano riportati i totali di peso, volume e colli delle righe del documento; senza questo flag, i campi non saranno compilati.        
+**Ricalcola trasporto**: questo flag fa in modo che nel tab [Trasporto](/docs/sales/sales-invoices/invoicing/sales-invoice) della fattura vengano riportati i totali di peso, volume e colli delle righe del documento; senza questo flag, i campi non saranno compilati.        
 
 **Riferimenti esterni ordine**: questo flag fa in modo che i campi *Nostro* e *Vostro riferimento* vengano trasferiti dalle righe ordine/DDT alle righe fattura.
 
@@ -67,7 +67,7 @@ I parametri delle fatture di vendita permettono l'impostazione di base per gesti
 
 **Priorità magazzino e causale di scarico alle righe articoli dei DDT**: se attivo il magazzino e la causale di scarico vengono letti dalle righe della fattura mentre se non viene attivato, verranno utilizzati il magazzino e la causale inseriti nei campi successivi (Magazzino e Causale di magazzino);
 
-**Carico/Scarico Automatico**: se attivo, lo scarico del DDT verrà effettuato in automatico all'attivazione del flag Stampata. Se non attivo lo scarico dovrà essere fatto con l'apposito pulsante presente nella ribbon bar della form di inserimento fattura (vedi [Inserimento fatture di vendita](/docs/sales/sales-invoices/invoicing/header)) oppure con l'apposita procedura;
+**Carico/Scarico Automatico**: se attivo, lo scarico del DDT verrà effettuato in automatico all'attivazione del flag Stampata. Se non attivo lo scarico dovrà essere fatto con l'apposito pulsante presente nella ribbon bar della form di inserimento fattura (vedi [Inserimento fatture di vendita](/docs/sales/sales-invoices/invoicing/sales-invoice)) oppure con l'apposita procedura;
 
 **Avviso articoli fittizi**: se attivo, durante lo scarico della fattura il sistema andrà a controllare se sono presenti degli articoli fittizi e nel caso in cui ve ne siano comparirà un messaggio che permetterà all'utente di scegliere se completare lo stesso la procedura oppure no; in caso di risposta affermativa tutta la fattura verrà scaricata (ad eccezione degli articoli fittizi ), mentre in caso di risposta negativa la fattura NON verrà scaricata.
 
