@@ -9,7 +9,7 @@ Na taj način osigurava se fleksibilno i prilagodljivo upravljanje ispunjavanjim
 
 U ovoj maski definiraju se pravila grupiranja za postupak:  
 
--  [**Kreiranje narudžbi dobavljača**](/docs/sales/sales-orders/search-sales-orders/) iz filtriranih Narudžbi kupaca.
+-  [**Kreiranje narudžbi dobavljača**](/docs/sales/sales-orders/create-new-sales-orders/search-sales-orders/) iz filtriranih Narudžbi kupaca.
 
 Međutim, za kreiranje narudžbi dobavljača iz narudžbi kupaca preporučuje se korištenje postupka [automatskog kreiranja narudžbi](/docs/purchase/purchase-orders/procedures/create-purchase-orders-from-purchase-requests) s odgovarajućim *Parametrima*.
 
