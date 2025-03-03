@@ -172,17 +172,17 @@ import ItemClassDescription from './../../../import/sections/item-class-descript
 
 <ItemClassDescription />
 
-import UM from './../../../import/fields/item-um.md'
+import ItemUM from './../../../import/fields/item-um.md'
 
-<UM />
+<ItemUM />
 
-import Quantity from './../../../import/fields/item-quantity.md'
+import ItemQuantity from './../../../import/fields/item-quantity.md'
 
-<Quantity />
+<ItemQuantity />
 
-import Price from './../../../import/fields/item-price.md'
+import ItemPrice from './../../../import/fields/item-price.md'
 
-<Price />
+<ItemPrice />
 
 :::note[NOTA]
 In assenza del listino, il dato proposto è il **prezzo di vendita** ripreso dall'*Anagrafica articolo > tab [Costi](/docs/erp-home/registers/items/create-new-items/item-registry/costs)* oppure verrà recuperato in base alle impostazioni dei parametri del documento. In assenza anche di questo dato, verrà riportato il prezzo 0.

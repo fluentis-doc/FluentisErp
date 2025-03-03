@@ -6,7 +6,7 @@ sidebar_position: 3
 Per creare un Nuovo Listino di vendita è necessario cliccare *Nuovo* dalla maschera di Ricerca listini.
 La form si compone di tre parti: Sezione superiore, Articoli e Dettagli. 
 
-## Sezione superiore
+## Dati obbligatori
 
 I campi di testata obbligatori per l'inserimento di un nuovo listino sono:
 - **Listino**: un listino può essere *Generico* (potenzialmente valido per tutti i clienti) oppure *Personalizzato* (valido per un cliente specifico); è necessario selezionare l'opzione appropriata per determinare il listino da creare.     
@@ -20,7 +20,7 @@ Per rendere un listino valido per un cliente, è necessario inserirlo in anagraf
 - **Divisa**: contiene la divisa da utilizzare; viene proposta di default la divisa della società.      
 - **Data inizio validità**: contiene la data a partire dalla quale il listino sarà considerato valido; viene proposta la data odierna.    
 
-I campi di testata non obbligatori sono:       
+#### Campi non obbligatori    
 - **Prezzo ivato**: se attivo, questo flag indica che il listino sarà creato con prezzo ivato, quindi nei suoi articoli non sarà presente la colonna Prezzo, ma solo la colonna Prezzo ivato che riporterà direttamente la somma tra Prezzo e Iva; questo flag viene proposto se presente nella tabella [Tipo listino](/docs/configurations/tables/sales/sales-price-lists) ma è modificabile. Per una gestione più flessibile, nei [Parametri Listini di Vendita](/docs/configurations/parameters/sales/price-list-parameters), è possibile forzare la visualizzazione sia del prezzo che del prezzo ivato tramite il flag visualizza prezzo e prezzo ivato, indipendentemente dall’impostazione del tipo listino.      
 - **Data fine validità**: se il listino non deve più essere valido dopo una certa data, la data va inserita in questo campo.       
 - **Listino minimo**: questo flag informativo indica che il listino è a prezzi minimi di tentata vendita.       
