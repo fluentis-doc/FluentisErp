@@ -3,7 +3,7 @@ title: Nuovo ordine cliente
 sidebar_position: 1
 ---
 
-La form **Crea ordine cliente** si apre tramite il percorso **Vendite > Ordini clienti > Nuovo ordine** oppure tramite il pulsante ![](/img/neutral/common/new.png) che si trova nella form [Ricerca ordini clienti](/docs/sales/sales-orders/search-sales-orders).
+La form **Crea ordine cliente** si apre tramite il percorso **Vendite > Ordini clienti > Nuovo ordine** oppure tramite il pulsante ![](/img/neutral/common/new.png) che si trova nella form [Ricerca ordini clienti](/docs/sales/sales-orders/create-new-sales-orders/search-sales-orders).
 
 ## *Come creare un ordine cliente*
 

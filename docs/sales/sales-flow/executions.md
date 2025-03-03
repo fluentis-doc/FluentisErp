@@ -26,7 +26,7 @@ Una volta confermata la conversione, il sistema genera un nuovo ordine cliente u
 
 La procedura di evasione da ordine a Documento di Trasporto è disponibile in due modalità:
 
-- Evasione Massiva dalla [Ricerca Ordini](/docs/sales/sales-orders/search-sales-orders): Nella Ricerca Ordini, selezionare uno o più ordini da evadere e cliccare su Evasione DDT nella barra degli strumenti.
+- Evasione Massiva dalla [Ricerca Ordini](/docs/sales/sales-orders/create-new-sales-orders/search-sales-orders): Nella Ricerca Ordini, selezionare uno o più ordini da evadere e cliccare su Evasione DDT nella barra degli strumenti.
 - Evasione dalla [Testata](/docs/sales/sales-delivery-notes/insert-delivery-notes/sales-dn) del DDT: Nella Testata del DDT, utilizzare il pulsante Evasione da Ordine per aprire una finestra di selezione degli ordini confermati del cliente da trasferire nel DDT.
 
 Questa procedura permette di trasformare uno o più ordini di vendita in uno o più DDT. Prima di avviare la procedura, è necessario configurare il tipo di DDT desiderato nella tabella [Tipo di ordine](/docs/configurations/tables/sales/sales-order-types). La procedura automatica consente la creazione di DDT solo se l'ordine è stampato e confermato.

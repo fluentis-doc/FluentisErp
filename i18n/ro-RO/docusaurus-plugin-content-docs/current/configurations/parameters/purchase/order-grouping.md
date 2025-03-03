@@ -8,7 +8,7 @@ Acești parametri generali de grupare trebuie configurați o singură dată și 
 În acest mod, se asigură o gestionare flexibilă a execuțiilor, permițând satisfacerea cerințelor specifice fiecărui client sau furnizor, menținând totodată o configurare centralizată și coerentă pentru majoritatea operațiunilor.
 
 Cu acești parametri se stabilesc regulile de grupare pentru procedurile: 
--  [**Creare ordine furnizori**](/docs/sales/sales-orders/search-sales-orders/) din form *Caută ordine clienți*.
+-  [**Creare ordine furnizori**](/docs/sales/sales-orders/create-new-sales-orders/search-sales-orders/) din form *Caută ordine clienți*.
 
 Pentru crearea *Ordinelor furnizori* din *Ordine clienți*, recomandăm utilizarea procedurii [Creare automată ordine](/docs/purchase/purchase-orders/procedures/create-purchase-orders-from-purchase-requests) cu *Parametrii* aferenți. 
 
