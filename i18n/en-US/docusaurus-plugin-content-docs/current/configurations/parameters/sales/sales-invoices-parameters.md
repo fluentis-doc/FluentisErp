@@ -1,107 +1,80 @@
 ---
-title: Sales Invoices Parameters
+title: Parametri fatture di vendita
 sidebar_position: 5
 ---
 
-The sales invoices parameters enable the basic setting in order to manage correctly and according to specific conditions belonging to each company.
+:::tip[FAst Start]
+La tabella è interessata dalla procedura di [**Fast Start**](/docs/guide/fast-start)
 
-The ribbon bar represents the Form menu, that is the area in which it is possible to perform actions. The list of the possible features is the following: 
+Nel caso in cui si intenda configurare manualmente fare riferimento alla check list della pagina linkata
+:::
 
+I parametri delle fatture di vendita permettono l'impostazione di base per gestire correttamente e secondo le specifiche richieste da ogni singola società. La finestra relativa a questi parametri si compone di 4 diversi tab: Generale, Evasione, Scarico e Analitica.
 
+### Generale
 
-| Function | Meaning |
-| --- | --- |
-| Restore Parameters | It enables the user to restore parameters to the initial values.  |
+**Gestione doppia unità misura**: se attivo, nelle righe fattura verranno visualizzate le due colonne UM Alternativa e Quantità Alternativa, sarà perciò possibile gestire la doppia unità di  misura, considerando sempre che è l’unità di misura principale sulla quale vengono fatti i controlli per l’evasione.      
 
-General Tab
+**Proposta automatica UM alternativa:** questo flag diventa editabile solo se è stato attivato il flag di gestione della doppia unità di misura e consente di riportare nel tab articoli della fattura l'unità di misura alternativa impostata nell'anagrafica articolo, nell’apposita colonna 'UM alternativa'; se non attivo, l'unità di misura non viene proposta.      
 
-| Function | Meaning |
-| --- | --- |
-| Propose Commission Inserted into Document Heading for all Items | No longer managed. |
-| Insert Comm. on Line Type 6 and 7 (on-account/reversal) | It indicates the fact that account and reversal item lines manage the agents' commissions. |
-| Management of Double UM | When it is set, it is possible to enable the Alternative UM combo box and the alternative Quantity column on grid related to Invoices Items Management. |
-| Automatic Proposal of Alternative UM | This check can be enabled only if “Management of Double Unit of Measure” is active. When an item, which has a default alternative UM within its alternative UM tab register, is inserted, the UM can be automatically proposed as an alternative UM of item and it is possible to calculate even the alternative quantity by using the conversion factor of the same one. |
-| Automatic Proposal of Transport Made by Carrier | If it is set, it means that the transport type will be Vector and the default vector will be proposed. |
-| Volume Def. U.M.  | If it is set, it refers to the default unit of measure for volume during the transport calculation of delivery note. |
-| Weights Def. U.M. | If it is set, it refers to the default unit of measure for weight during the transport calculation of delivery note. |
-| Recover Only for Current Date | If it is set, it means that there will be the possibility to recover available numbers only as regards the current date. |
-| Automatic Recover | If it is set, it means that the first available number will be proposed. |
-| Control Availability | If it is set, it means that there will be the possibility to verify the delivery note item availability. |
-| Negative Price on Credit Notes | If it is set, it means that the presence of positive prices will be notified into invoices with credit notes type. |
-| Exclude Sales Orders | If it is set, it means that the usage of sales orders will not be considered during the delivery note item availability calculation.  |
-| Compulsory Availability | If it is set, it means that the delivery note item availability will be obligatory. The quantity could not be higher than the availability.  |
-| View Availability | If it is set, it means that, by inserting the quantity into line, there will be the possibility to view the item availability.  |
-| Subcontractor | If it is set, it means that subcontractor documents will be considered during the availability calculation of delivery note item. |
-| Purchase | If it is set, it means that purchase documents will be considered during the availability calculation of delivery note item. |
-| Sales | If it is set, it means that sales documents will be considered during the availability calculation of delivery note item. |
-| Planned Prod. | If it is set, it means that documents regarding resources requirements and production job order will be considered during the availability calculation of delivery note item. |
-| Released Prod. | If it is set, it means that production orders will be considered during the availability calculation of delivery note item. |
-| Warehouse | If it is set, it means that stock records will be considered during the availability calculation of delivery note item. |
-| Check Next Price List | It indicates the fact that the item inserted into invoice line will be searched even on price lists specified on customer register, over the default price list. |
-| Control Intra-cee | It indicates the fact that there will be the possibility to verify if the invoice type and customer have the same Intra CEE type. |
-| Use Barcode | It indicates the fact that the item Barcode column of Items grid is managed. |
-| Size and Colour Management | It indicates the fact that Lot columns of Variants grid are managed. |
-| View Dimensions | If it is set, it means that the dimensions columns (Height, Width, Depth) of Items grid are managed. |
-| Allow Discounts for the Giveaways Items | It indicates the fact that the giveaways items can manage discounts. |
-| Control Integrity | It indicates the fact that it is possible to verify the invoice integrity. |
-| Recalculate Transport | It indicates the fact that the invoice transport can be automatically calculated. |
-| Without Collection Charges in Credit Note | It indicates the fact that collection charges will not be inserted into maturities of invoices with credit notes type. |
-| Block Document Insertion in Public Holidays | It indicates the fact that the public holidays are blocked in order to be used. |
-| Verify Sales Price Lots | It indicates the fact that there will be the possibility to verify the unit amount of invoice line. |
-| Mandatory User Code | It indicates the fact that the operator specification on invoice header is obligatory. |
-| External Order Reference | It indicates the fact that it is possible to manage the external reference of sales order linked to the invoice item line. |
-| Line Maxim No. | It specifies the maximum number allowed on Items grid. |
+**Controllo Disponibilità:** questo flag e gli altri relativi al controllo, visualizzazione e obbligorietà con la considerazion per area, nella versione attuale, non sono gestite.     
 
-Execution Tab
+**Unità di misura volume/pesi predefinita**: queste unità di misura vengono considerate come UM di default da proporre nel tab [Trasporto](/docs/sales/sales-delivery-notes/insert-delivery-notes/transport) del DDT, come unità di misura di volume e pesi; il dato è modificabile nei documenti. 
 
-| Function | Meaning |
-| --- | --- |
-| Payments | It specifies the value used in order to pay invoices as regards the multiple orders execution: First order, Register or Manual selection. |
-| Recipient | It specifies the value used for invoice recipient as regards the multiple orders execution: First Order, Register or Manual Selection.  |
+**Ricerca prezzi articoli in tutti i listini predefiniti**: quando si cercano il prezzo e gli sconti per un articolo all'interno di una fattura, il sistema segue delle regole basate sulle impostazioni configurate nell'anagrafica cliente, sotto la sezione *Listini*. Se è attivata l'opzione 'default' su un determinato tipo di listino, la ricerca di prezzi e sconti si concentrerà solo su quella specifica tipologia di listino; se il flag "default" non è attivo, il sistema estenderà la ricerca a tutti i tipi di listini presenti, seguendo un ordine di priorità. In pratica, con il flag 'default' attivo, il sistema cercherà prima un listino valido per la tipologia predefinita; se non trova risultati, passerà a controllare le altre tipologie di listino in ordine di priorità inserita. Tuttavia, se nell'anagrafica del cliente non è presente alcuna tipologia di listino impostata come 'default' e ci sono solo priorità, questo parametro non influenzerà la ricerca, anche se attivo.       
 
-Unload Tab
+**Proponi provvigione per gli articoli omaggio**: con questo flag verranno proposte le provvigioni agente anche per le righe articolo di tipo omaggio come avviene per le righe di tipo Articolo Codificato.     
 
-| Function | Meaning |
-| --- | --- |
-| Create Record with Document Date | When it is set, the stock record is performed through the same date of purchase invoice and it will not necessary to specify the record date on load form. |
-| Priority Warehouse and Load Template | When this parameter is set, load warehouse and template are read by invoices lines; on the contrary if it is not set, it is possible to use warehouse and template inserted into this parameters form. |
-| Warehouse | It specifies the warehouse to be used for unload of invoice when the following parameter Priority Warehouse and Load Template from items lines of DN is not active. |
-| Template | It specifies the template to be used for unload of invoice when the following parameter Priority Warehouse and Load Template from items lines of DN is not active. |
-| Warning Fictitious Items | If it is set, during the unload of invoice it is possible to control if there are fictitious items on invoice. A message is given in case in which the user wants to unload the invoice; answering yes, the invoice can be unloaded however.  |
+**Inserimento provvigioni nei tipi 6 e 7 (Acconto/Storno):** se attivo, permette l'inserimento e la gestione delle provvigioni anche per le i tipi riga 6 e 7 delle fatture. Per approfondimenti fare riferimento all'articolo relativo all' [inserimento della fattura](/docs/sales/sales-invoices/invoicing/invoicing-intro).
 
-Import TabIn this tab the user specifies name and path of file in order to import items from barcode. The import form can be opened from toolbar of invoices management on items tab. Through this import it is possible to insert items from file into invoice.
+**Consentire sconti per gli articoli omaggio**: con questo flag saranno calcolati gli sconti anche per gli articoli omaggio e incideranno sui totali.
 
-Import Barcode TabIn this tab the user can specify parameters in order to import data contained in FT_ImpBCAll table. The import form can be opened from invoices management toolbar on items tab. Through this import it is possible to insert items from a table configured on invoice.
+**Prezzi negativi delle note di credito**: se attivo, il sistema notificherà un avviso qualora ci fossero dei prezzi positivi all'interno di note di accredito. Se non attivo, il sistema non farà nessun controllo e non restituirà nessun avviso.
 
+**Verifica articoli in esaurimento**: con questo flag viene attivata la gestione degli articoli in esaurimento; se in anagrafica articolo è presente una Data esaurimento e il relativo flag, Fluentis avviserà l'utente con un pop up se l'articolo viene inserito nel documento.    
 
+**[Abilita Widget sconti semplificato](/docs/sales/sales-flow/discount-widget)**: attivando questo flag nella sezione Articoli verranno visualizzate due nuove colonne: *Sconti Articolo* e *Sconti Finali Articolo*. La colonna *Sconti Articolo* è modificabile e mostra gli sconti applicati automaticamente in base alle impostazioni relative al cliente, all'articolo, al listino o alla categoria di sconto. L'utente ha la possibilità di inserire, modificare o eliminare gli sconti direttamente in questa colonna. Per utilizzare questo widget è necessario che, oltre ad attivare il flag, sia specificato nel tipo di fattura quale tipo di sconto utilizzare.     
 
-| Function | Meaning |
-| --- | --- |
-| Alternative U.M.  | If it is set, it means that the alternative UM column of Barcode import grid is managed. |
-| Location | If it is set, it means that the Location column of Barcode import grid is managed. |
-| Customer/Vendor Account | If it is set, it means that the following column Account, Detail Account, Customer/Vendor Description of barcode import grid are managed. |
-| Item Price | If it is set, it means that the Price column of barcode import grid is managed. |
-| Option | If it is set, it means that the Option column of barcode import grid is managed. |
-| Variant | If it is set, it means that the Variant column of barcode import grid is managed. |
-| Item Pickup Type | It specifies the item pickup type: Item Class/Code, Lot, Serial Number |
+**Uso articolo cliente**: se settato, questo flag inserirà, nella griglia articoli della fattura, le colonne per il Codice e la Descrizione cliente inseriti in anagrafica articolo, tab Cliente.       
 
-Picking Tab
+**Uso barcode**: se settato, questo flag inserirà, nella griglia articoli della fattura, la colonna per riportare il barcode dell'articolo.     
 
-| Function | Meaning |
-| --- | --- |
-| Turnover Type | It specifies the turnover type to be used during the picking items import into invoice. |
-| VAT | It specifies the VAT code to be used during the picking items import into invoice. |
+**Codice operatore obbligatorio**: questo flag rende obbligatorio compilare il campo *Operatore* in testata.     
 
-Valorization Tab
+**Blocca inserimento documento in date festive da calendario di fabbrica**: se attivo, il sistema non permette l'inserimento dell'offerta in date festive (viene controllato prima il Calendario di Fabbrica della società, poi il Calendario delle capacità produttive); se non attivo, il sistema non effettua nessun controllo e lascia inserire il documento.     
 
-| Function | Meaning |
-| --- | --- |
-| Valorization Additional group by clauses | It specifies fields added for grouping of delivery notes into valorization procedure. |
+**Ricalcola trasporto**: questo flag fa in modo che nel tab [Trasporto](/docs/sales/sales-invoices/invoicing/transport) della fattura vengano riportati i totali di peso, volume e colli delle righe del documento; senza questo flag, i campi non saranno compilati.        
 
-Analytic TabThese parameters set the search priority of cost or profit centres in order to be attributed to invoice items. When recalculate flag is set, cost or profit centres are inserted/added on items through the chosen priority.
+**Riferimenti esterni ordine**: questo flag fa in modo che i campi *Nostro* e *Vostro riferimento* vengano trasferiti dalle righe ordine/DDT alle righe fattura.
 
+**Mantieni prezzi da ordini per gli scaglioni**: è utilizzato nell'evasione degli ordini in fattura nel caso in cui la quantità evasa sia diversa (solitamente parziale) della quantità ordinata per la quale è stato inserito un prezzo o uno sconto a scaglione di quantità. Se il prezzo o lo sconto non dipendono dalla quantità consegnata ma solo dalla quantità in ordine questo flag deve essere attivato, se invece il prezzo o sconto a scaglione non deve essere inserito nel documento di consegna nel caso in cui l'evasione non avvenga per la quantità totale dell'ordine il flag non deve essere attivato.
 
+### Evasione
 
+**Pagamento**: specifica il valore usato per il pagamento della fattura cliente nel caso dell'evasione multipla commessa vendita: *Primo ordine*, *Anagrafica* oppure *Selezione manuale*.
 
+**Destinatario**: specifica il valore usato per il destinatario dell'ordine cliente nel caso dell'evasione multipla commessa vendita: *Primo ordine*, *Anagrafica* oppure *Selezione manuale*.
 
+**Ricalcola CDC/CDP**: nel caso in cui si sia scelto di generare la fattura partendo dall'ordine cliente con l'apposta procedura, attivando questo flag, il sistema andrà a ricalcolare i centri di costo e di profitto nella fattura, non considerando quelli impostati nell'ordine di vendita. Se non attivo il sistema non ricalcolerà questi dati ma terrà quelli inseriti nell'ordine cliente;
 
+**Visualizzazione griglia evasione:** se attivo, il flag abilita la modalità griglia nella form di evasione ddt di vendita.      
+
+**Visualizzazione tree evasione:** se attivo, il flag abilita la modalità tree nella form di evasione ddt di vendita.
+
+### Scarico
+
+**Crea registrazione con la data del documento**: se attivo, la registrazione di magazzino viene fatta con la stessa data della fattura, e non sarà necessario specificare la data registrazione nella form di scarico. Se non attivo, sarà necessario specificare la data nella form di scarico della fattura;
+
+**Priorità magazzino e causale di scarico alle righe articoli dei DDT**: se attivo il magazzino e la causale di scarico vengono letti dalle righe della fattura mentre se non viene attivato, verranno utilizzati il magazzino e la causale inseriti nei campi successivi (Magazzino e Causale di magazzino);
+
+**Carico/Scarico Automatico**: se attivo, lo scarico del DDT verrà effettuato in automatico all'attivazione del flag Stampata. Se non attivo lo scarico dovrà essere fatto con l'apposito pulsante presente nella ribbon bar della form di inserimento fattura (vedi [Inserimento fatture di vendita](/docs/sales/sales-invoices/invoicing/header)) oppure con l'apposita procedura;
+
+**Avviso articoli fittizi**: se attivo, durante lo scarico della fattura il sistema andrà a controllare se sono presenti degli articoli fittizi e nel caso in cui ve ne siano comparirà un messaggio che permetterà all'utente di scegliere se completare lo stesso la procedura oppure no; in caso di risposta affermativa tutta la fattura verrà scaricata (ad eccezione degli articoli fittizi ), mentre in caso di risposta negativa la fattura NON verrà scaricata.
+
+### Analitica
+
+Questo TAB specifica con che priorità recuperare il Centro di costo(CDC) o Centro di profitto(CDP) nella riga documento.      
+È possibile modificare le priorità utilizzando i tasti **Sposta su**![](/img/neutral/common/move-up.png) e **Sposta Giù**![](/img/neutral/common/delete-cc.png).      
+*Valori di default*: il CDC o CDP viene recuperato dal tipo fatturato qualora presente. Per approfondimenti fare riferimento a tabella [Tipo Fatturato](/docs/configurations/tables/sales/sales-turnover);         
+Qualora non fosse presente nel tipo fatturato il sistema lo cercherà in anagrafica Cliente. Se non presente verrà cercato in anagrafica articolo e successivamente a livello di magazzino.      
+Il flag **Valuta la priorità di ogni dimensione** fa in modo che nei documenti i CDC/CDP vengano raggruppati per dimensione, nel tab Analitica. 
