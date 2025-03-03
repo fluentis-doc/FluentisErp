@@ -115,7 +115,7 @@ La Marca deve essere inserita nella griglia articoli dei listini di vendita per 
 Sì, con le <b>Restrizioni</b>. Esse impediscono agli utenti di creare, visualizzare o modificare determinate tipologie di documenti. Di seguito viene riportato l'esempio per impedire ad un utente di utilizzare il Tipo fattura con codice FVITDIF. Ricordiamo che è necessario aggiungere la Restrizione anche nel profilo Arm dell'utente, nell'appostia griglia.            
 
 
-![](/img/it-it/sales/sales-invoices/search-sales-invoices/restriction.png)
+![](/img/it-it/sales/sales-invoices/invoicing/search-sales-invoices/restriction.png)
 
 
 </details>

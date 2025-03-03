@@ -26,5 +26,5 @@ La procedura si apre tramite il percorso **Acquisti > DDT di acquisto > Procedur
     - scegliendo **Sì**, la procedura aprirà il DDT appena creato permettendone la modifica.
 
 :::note Ricorda
-L'evasione di ordini fornitore all'interno di un DDT di acquisto può essere eseguita anche mediante il pulsante [**Evasione da ordine**](/docs/purchase/purchase-delivery-note/insert-purchase-delivery-note/header-procedures/execution-from-purchase-order) dall'interno di un DDT.
+L'evasione di ordini fornitore all'interno di un DDT di acquisto può essere eseguita anche mediante il pulsante [**Evasione da ordine**](/docs/purchase/purchase-delivery-note/insert-purchase-delivery-note/purchase-delivery-note) dall'interno di un DDT.
 :::

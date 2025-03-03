@@ -27,7 +27,7 @@ RIBBON BAR: representa o menu do módulo em questão, ou seja, a área na qual 
 
 | RibbonFunction | RibbonMeaning |
 | --- | --- |
-|  [Test test test](/docs/sales/sales-invoices/search-sales-invoices)  | test test test |
+|  [Test test test](/docs/sales/sales-invoices/invoicing/search-sales-invoices)  | test test test |
 
 
 

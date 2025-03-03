@@ -1,50 +1,48 @@
 ---
-title: Flux Types
+title: Flow Types
 sidebar_position: 2
 ---
 
-The table provides only the encoding of cash flow flux typologies that company wants to use for simulations. There are the following data origins:
+:::tip[Fast Start]
+The table is affected by the [**Fast Start**](/docs/guide/fast-start) procedure.
 
-**Code**: code of the flux types;
+In case you intend to configure manually, refer to the checklist on the linked page.
+:::
 
-**Description**: description of the flux types;
+The table, which is a prerequisite for using the module, provides for the coding of the types of cash flow that the company intends to enable for simulations.
 
-**Maturity Value**: the data origin comes from general ledger maturity values
+It is recommended to encode all the types provided: the *cash flow automatic generation* procedure allows you to define, from time to time, which of these to consider and which not.
 
-**Ledger Balance**: from this flux type it is possible to obtain initial financial availabilities, compared to encoded financial account types
-
-**Sales Orders/Purchase Orders**: sales orders, of typologies with cash flow flag, printed and confirmed but not executed
-
-**Purchase/Sales Invoices**: printed/controlled but not recorded invoices (not pro-forma type)
-
-**Extra-accounting**: extra-accounting manual due dates defined on the same cash flow module (see the following document)
-
-**Professional Men**: not yet recorded professional men compensations
-
-**Purchase/Sales Delivery Not**e: printed, confirmed and not valorized delivery note of typologies with cash flow flag
-
-**Subcontractor Returns and Orders**: subcontractor orders to be executed and subcontractor returns not yet invoiced
-
-**P.D.**: purchase demands
-
-**Planned Order**s: production orders with planned external phases or production orders that provide for a purchase demand
-
-It is recommended to encode all the estimated typologies: the automatic generation enables the user to define which of them to consider or not.
-
-RIBBON BAR: it represents the Form menu, that is the area in which it is possible to perform actions linked to the procedure in use. The list of features is the following:
-
- 
+The coding of the flow type is free in code and description, as desired, and must then be related through the corresponding flags to the data that can be managed.
 
 
 
-| Function | Meaning |
-| --- | --- |
-| Search | Button to perform the search of flux types according to filters set. |
-| New  | Button to place the cursor at the insertion of a new line. |
-| Delete | Button to delete the selected flux type. |
+The following data sources are provided:
 
+**Code**: code of the flow types;
 
+**Description**: description of the flow types;
 
+**Mat. values**: the data source is the open maturity values from general ledger;
 
+**Ledger balance**: from this flow type, the initial financial availabilities are obtained, with respect to the *financial account types* coded;
 
+**Sales orders/purchase orders**: sales orders, of the types with the *cash flow* flag, printed and confirmed, not yet fulfilled;
 
+**Purchase/Sale invoices**: invoices printed/checked but not yet accounted (not pro-forma type);
+
+**Off-balance**: manual off-balance deadlines defined in the cash flow module itself through the *Off-balance Due Dates* form;
+
+**Professional Men**: professional fees not yet accounted (if accounted, they fall under open mat. values);
+
+**Purchase/Sale delivery note**: delivery note of the types with the *cash flow* flag, printed and confirmed, not valued (if valued, they fall under invoices);
+
+**Subcontractor orders and returns**: subcontractor orders to be fulfilled and subcontractor returns not yet invoiced;
+
+**PD**: purchase requests;
+
+**Planned order**: production orders with planned external phases or production orders that foresee a purchase request.
+
+**Bills portfolio**: Bills issued (and presented, depending on the setting of the *Use on time in the headframe* flag present in the *cash flow automatic generation* mask)
+
+**Advances**: Invoice advance statements created. The processing of the cash flow, if this type has the 'Use on time in the headframe' flag set (in the *Cash Flow Automatic Generation* mask), will record the amounts of the statements accounted for the amount advanced on the bank account, and in the flows on the due dates. When invoices are collected (by processing a new cash flow), the due flows are deleted, and the bank account amount is updated with the remaining amount not yet advanced minus any commissions and interest.

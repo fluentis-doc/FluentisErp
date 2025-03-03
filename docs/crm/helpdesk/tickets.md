@@ -5,7 +5,7 @@ sidebar_position: 1
 
 Dalla maschera di ricerca Ticket è possibile visualizzare i ticket già inseriti. Generalmente la Gestione ticket viene utilizzata dal servizio aziendale di helpdesk.
 Da questa maschera è possibile aprire in modifica o visualizzazione i ticket e crearne di nuovi.     
-Inoltre, il pulsante della ribbon bar **Creazione offerte da Ticket** permette di creare delle [Offerte](/docs/sales/offers/new-offer/header) direttamente dai ticket selezionati. L'articolo/servizio inserito nel ticket diventerà una riga articolo dell'offerta e verranno riportati nell'Offerta anche gli altri dati inseriti nel ticket: Progetto, Cliente, Importi di riga (fare attenzione in questo caso se esistono listini validi per il cliente: l'offerta modificherà gli importi in base al listino associato al cliente). Questa procedura è presente anche all'interno dei singoli ticket.         
+Inoltre, il pulsante della ribbon bar **Creazione offerte da Ticket** permette di creare delle [Offerte](/docs/sales/offers/insert-offer) direttamente dai ticket selezionati. L'articolo/servizio inserito nel ticket diventerà una riga articolo dell'offerta e verranno riportati nell'Offerta anche gli altri dati inseriti nel ticket: Progetto, Cliente, Importi di riga (fare attenzione in questo caso se esistono listini validi per il cliente: l'offerta modificherà gli importi in base al listino associato al cliente). Questa procedura è presente anche all'interno dei singoli ticket.         
 
 Cliccando *Nuovo* è possibile inserire un nuovo Ticket. La Gestione ticket si compone di due parti: la Testata e le tab Sottostanti, che andremo ad elencare.     
 

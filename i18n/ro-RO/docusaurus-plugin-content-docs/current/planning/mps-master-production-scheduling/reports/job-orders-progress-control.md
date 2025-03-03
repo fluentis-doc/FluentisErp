@@ -1,30 +1,36 @@
 ---
-title: Verifică avansare comandă
+title: Verifică avansarea comenzilor
 sidebar_position: 6
 ---
 
-Acest form generează raportul care permite vizualizarea unui tabel cu toate documentele asociate aceleași comenzi.
+Acest form permite lansarea raportului care permite vizualizarea unui rezumat al tuturor documentelor asociate aceleași comenzi.
 
-Fiecărui document i se evidențiază starea sa, cu un pătrat colorat cu următoarele semnificații:
+Pentru fiecare document este indicat stadiul de avansare al acestuia, prin colorarea unei câmp cu următoarea semnificație:
 
-- **Negru** când comanda este în starea *Executată*;  
-- **Galben** când comanda este în starea *Executivă*;  
-- **Verde** când comanda este în starea *Lansată*;  
-- **Verde deschis** când comanda este în starea *Programată*;  
+- **Negru** când **comanda** este în stare *Executată*;
+- **Galben** când **comanda** este în stare *Executivă*;
+- **Verde** când **comanda** este în stare *Lansată*;
+- **Verde deschis** când **comanda** este în stare *Planificată*;
 - **Alb** în toate celelalte cazuri.
 
 #### Filtre
 
-În această secțiune este posibil să se filtreze după: tipul comenzii de producție, prioritatea aprovizionării, data de început și/sau data de sfârșit a comenzii etc.
+În această secțiune se pot insera filtre pentru: tipul comenzii de producție, prioritatea aprovizionării, data de început și/sau sfârșit a comenzii, etc.
 
-- **Tip raport**: secțiunea permite filtrarea în funție de comandă: *întârziată* sau *expirată* și se poate decide nivelul de detaliu dorit la imprimare (Analitic sau Sintetic).
+**Detalii**
 
-- **Detalii**: secțiunea permite vizualizarea sau nu a detaliilor referitoare la aria achiziții, producție și sistem lohn, precum și vizualizarea sau nu a comenzile de vânzare și ordinelor planificate.
+În această secțiune se poate alege dacă să fie afișate detaliile referitoare la ariile de achiziție, producție și sistem lohn, precum și la comenzile de vânzare și ordinele planificate.
 
-- **Tipul de aprovizionare**: secțiunea permite filtrarea în funcție de tipul de aprovizionare al articolului comenzii prezente în parametrii MRP (Achiziție, Producție, Sistem lohn).
+**Tip aprovizionare**
 
-- **Stare comandă**: secțiunea permite filtrarea în funcție de starea comenzii de producție (neexaminată, programată, lansată, executivă, executată, închisă, anulată);
+În această secțiune se poate filtra în funcție de tipul de aprovizionare al articolului obiect al comenzii prezent în parametrii MRP (Achiziție, Producție, Sistem lohn).
 
-- **Ordine**: secțiunea permite stabilirea ordinii de grupare a informațiilor care urmează să fie vizualizate la listare, alegând între ordonarea pe baza comenzii, proiectului, contului, articolului, data de început a comenzii.
+**Stare comandă**
 
-Pentru toate aspectele care nu sunt detaliate în acest document referitoare la funcționarea comună a form-urilor, vă rugăm să consultați următorul link [Funcționalități, butoane și câmpuri comune](/docs/guide/common).
+În această secțiune se poate filtra în funcție de starea comenzii de producție (neexaminată, planificată, lansată, executivă, efectuată, închisă, anulată);
+
+**Ordine**
+
+În această secțiune se poate seta ordinea de grupare a informațiilor la afișare, alegând între ordinea în funcție de comandă, proiect, cont, articol, data de început a comenzii.
+
+Pentru tot ceea ce nu este detaliat în acest document privind funcționarea comună a form-urilor, consultați paginile [Funcționalități, butoane și câmpuri comune](/docs/guide/common).

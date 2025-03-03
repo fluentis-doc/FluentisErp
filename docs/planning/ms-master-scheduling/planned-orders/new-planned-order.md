@@ -20,9 +20,13 @@ oppure tramite
 
 ## Testata ordine pianificato 
 
+La form si compone di una parte contenente le informazioni di testata e da una serie di tab sottostanti.          
+In automatico vengono inseriti *numero*, *anno* e *data*, l’indicazione se si tratti di un *ordine di acquisto, di produzione o conto lavoro* ed il *tipo di ordine pianificato*. Quest’ultimo e la numerazione sono presi direttamente dai dati inseriti nella tabella [Tipo documenti](/docs/configurations/tables/production/documents-types/) presente tra le tabelle di produzione. Allo stesso tempo sono inseriti anche il *numero del ciclo di lavoro* di default e la *versione* da utilizzare.                   
+I dati obbligatori da inserire sono: l’*articolo* con eventuale variante, e la *data di inizio e fine*; dopo di che sarà sufficiente inserire la *quantità* da produrre / acquistare.            
+
 *Pulsante specifico*:  
 
-> **Completamento dati ordine**: richiama la procedura che consente di inserire e/o aggiornare, per l'articolo inserito nell'ordine pianificato, tutti i dati relativi a materiali, fasi, attrezzaggio, attrezzature, attributi e note varie, riprendendoli da distinta base e ciclo di lavorazione dell'articolo..
+> **Completamento dati ordine**: richiama la procedura che consente di inserire e/o aggiornare, per l'articolo inserito nell'ordine pianificato, tutti i dati relativi a materiali, fasi, attrezzaggio, attrezzature, attributi e note varie, riprendendoli da distinta base e ciclo di lavorazione dell'articolo. 
 > **Ricalcola data inizio**: Richiama la procedura che consente di eseguire un aggiornamento della data inizio dell'ordine pianificato ed eventualmente delle fasi di lavorazione dello stesso a seguito di una modifica dei tempi di lavorazione e/o della quantità da produrre dell'articolo oggetto di ordine pianificato;  
 > **[Parametri MRP](/docs/configurations/parameters/production/mrp-parameters/search-mrp-parameters)**: consente di aprire la finestra relativa ai parametri MRP dell'articolo;  
 > **Genera distinta base**: consente di generare la distinta base sulla base dei dati inseriti all'interno dell'ordine di produzione o di aggiornare i dati esistenti con quelli inseriti nell'ordine;  
@@ -116,7 +120,7 @@ Contiene le proprietà relative alla fase selezionata.
 **UM Tempi**: in questa combo box compare l'*Unità Misura Tempi* della Fase; si può decidere di gestire i tempi della fase in secondi, minuti, ore e giorni. Di solito si gestiscono a minuti i tempi delle fasi interne e a giorni quelli delle fasi esterne, ma ovviamente dipende molto dalla tipologia di azienda per cui si sta impostando il lavoro;  
 **Macchina**: in questa combo può essere selezionato il codice (e descrizione) della relativa macchina. Essa viene proposta in automatico, ripresa dal centro di lavoro che è stato precedentemente inserito nella griglia;  
 **Gruppo manodopera**: in questa combo può essere selezionato il codice (e descrizione) del relativo gruppo manodopera. Essa viene proposto in automatico, ripreso dal centro di lavoro che è stato precedentemente inserito nella griglia;  
-**Sovrapposiz. riferita alla fase/sottofase**: qui viene indicato il codice della fase e Sottofase che presentano una sovrapposizione con la fase in oggetto. Di solito si indica la fase successiva, ma anche qui si tratta solo di una consuetudine; 
+**Sovrapposizione riferita alla fase/sottofase**: qui viene indicato il codice della fase e Sottofase che presentano una sovrapposizione con la fase in oggetto. Di solito si indica la fase successiva, ma anche qui si tratta solo di una consuetudine; 
 **Valore**: qui si indica il valore dell'eventuale sovrapposizione, utilizzando i criteri specificati sopra;  
 **Utilizzo**: se il flag è attivato, significa che si vuole che il tempo di attesa/coda aumenti il tempo di impegno del Centro di Lavoro su quella fase;  
 **Tempo di attesa o coda**: indica l'eventuale tempo di attesa/coda prevista per questa macchina.  
@@ -169,7 +173,7 @@ In questo tab viene visualizzata la nota legata alla fase di lavorazione selezio
 
 ## Istruzioni operative
 
-In questo tab vengono visualizzate le note / documenti legate alla fase di lavorazione selezionata nel tab *Fasi*. Esse sono modificabili dall'utente contestualmente all'ordine pianificato in oggetto. Questi documenti sono visibili all'interno del MES nel tab *Documenti e Istruzioni opertive.
+In questo tab vengono visualizzate le note e i documenti legati alla fase di lavorazione selezionata nel tab *Fasi*. Esse sono modificabili dall'utente contestualmente all'ordine pianificato in oggetto. Questi documenti sono visibili all'interno del MES nel tab *Documenti e Istruzioni operative*.
 
 ## Extra Data
 

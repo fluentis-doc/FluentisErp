@@ -40,4 +40,4 @@ le **Spedizioni**:
 
 ## Collegamenti con altri moduli
 Questi sono strettamente collegati all'[*Anagrafica articoli*](/docs/erp-home/registers/items/create-new-items/create-new-item) e agli [*Ordini clienti*](/docs/sales/sales-orders/settings) dato che è possibile aggiungere gli articoli direttamente da un ordine.           
-Inoltre da una spedizione è possibile creare direttamente [*DDT*](/docs/sales/sales-delivery-notes/search-sales-dn), [*Fatture*](/docs/sales/sales-invoices/general-overview) di vendita ed anche [Picking](/docs/logistics/picking/picking-intro). 
+Inoltre da una spedizione è possibile creare direttamente [*DDT*](/docs/sales/sales-delivery-notes/insert-delivery-notes/search-sales-dn), [*Fatture*](/docs/sales/sales-invoices/general-overview) di vendita ed anche [Picking](/docs/logistics/picking/picking-intro). 
