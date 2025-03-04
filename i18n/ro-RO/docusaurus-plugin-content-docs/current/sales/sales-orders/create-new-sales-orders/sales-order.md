@@ -1,9 +1,9 @@
 ---
 title: Nuovo ordine cliente
-sidebar_position: 1
+sidebar_position: 2
 ---
 
-La form **Crea ordine cliente** si apre tramite il percorso **Vendite > Ordini clienti > Nuovo ordine** oppure tramite il pulsante ![](/img/neutral/common/new.png) che si trova nella form [Ricerca ordini clienti](/docs/sales/sales-orders/create-new-sales-orders/search-sales-orders).
+La form **Crea ordine cliente** si apre tramite il percorso **Vendite > Ordini clienti > Nuovo ordine** oppure tramite il pulsante che si trova nella form [Ricerca ordini clienti](/docs/sales/sales-orders/create-new-sales-orders/search-sales-orders).
 
 ## *Come creare un ordine cliente*
 
@@ -137,14 +137,14 @@ import TabExtraData from './../../../import/sections/tab-extra-data.md'
 
 Questo tab è attivo solo se in anagrafica cliente, tab [informazioni fiscali](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/fiscal-information), sia stato inserito il flag per la gestione cointestatari. La gestione cointestatari permette a più persone di essere titolari congiunti dell’ordine. I cointestatari devono essere inseriti negli indirizzi alternativi dell’anagrafica, con un indirizzo che sia di [tipo](/docs/configurations/tables/general-settings/address-types), appunto, cointestatari. In questo modo, verranno proposti in questo tab, dove è necessario inserire a mano le percentuali di ripartizione della spesa.
 
-## **3. Articoli raggruppati**
+## **3.a Articoli raggruppati**
 
-Questo tab è attivo e visibile solo per i [Tipi ordine](/docs/configurations/tables/sales/sales-order-types) che abbiano impostati il flag di *Gestione matrici Extra Data* e la relativa *Configurazione*. Questo tab permette infatti di generare le varianti articolo per le varie combinazioni di attributi valide, che saranno trasferite nel successivo tab [Articoli](/docs/sales/sales-orders/create-new-sales-orders/sales-order).       
-Per tutti i campi non spiegati in questa pagina potete fare riferimento alla documentazione del tab [Articoli](/docs/sales/sales-orders/create-new-sales-orders/sales-order).       
-Inserendo un [articolo gestito a Matrice](/docs/erp-home/registers/items/create-new-items/item-registry/matrix) nella griglia articoli, infatti, nel tab Matrici verrà visualizzata la matrice associata all'anagrafica articolo. Nelle celle della matrice sarà possibile imputare le quantità ordinate per ogni combinazione; sarà possibile compilare solo le celle che abbiano una combinazione valida in anagrafica.       
+Questo tab è attivo e visibile solo per i [Tipi ordine](/docs/configurations/tables/sales/sales-order-types) che abbiano impostati il flag di *Gestione matrici Extra Data* e la relativa *Configurazione*. Questo tab permette infatti di generare le varianti articolo per le varie combinazioni di attributi valide, che saranno trasferite nel successivo tab *Articoli*.      
+Per tutti i campi non spiegati in questa pagina potete fare riferimento alla documentazione del tab *Articoli*.       
+Inserendo un [articolo gestito a Matrice](/docs/erp-home/registers/items/create-new-items/item-registry/matrix) nella griglia articoli, infatti, nel tab *Matrici* verrà visualizzata la matrice associata all'anagrafica articolo. Nelle celle della matrice sarà possibile imputare le quantità ordinate per ogni combinazione; sarà possibile compilare solo le celle che abbiano una combinazione valida in anagrafica.       
 Una volta inserite quantità per ogni combinazione, è necessario cliccare il pulsante della barra degli strumenti *Conferma valori matrice* per generare tante varianti quante sono le combinazioni possibili. Ogni variante popolerà una riga del successivo tab Articoli, con la relativa quantità.
 
-## **3. Articoli**
+## **3.b Articoli**
 
 In questo tab vengono inseriti tutti gli articoli con i relativi dati.
 
@@ -222,7 +222,7 @@ Nella sezione Articoli sono presenti i seguenti pulsanti, nella barra degli stru
 
 Analizziamo a questo punto le tab presenti sotto la griglia articoli. 
 
-### 3.1 Sconti/Listini
+### 3.b.1 Sconti/Listini
 
 Questa tab ha come primo campo l'eventuale **Listino** valido per il cliente e collegato all'articolo, altrimenti è un campo che si può compilare manualmente per prendere il prezzo dell'articolo da uno specifico listino. Accanto ai dati del listino assegnato è presente il campo **Tipo scaglione**: esso riporta lo scaglione di sconto da utilizzare, che viene ripreso dall'anagrafica cliente oppure dal listino stesso.
 Il flag **Prezzo manuale** permette di modificare il prezzo e gli sconti manualmente, e di mantenerli nei documenti che vengono creati dal documento dove la modifica è stata apportata.
@@ -231,7 +231,7 @@ Nella griglia invece vengono proposti tutti gli sconti associati all'articolo, o
 
 Da questa griglia è possibile utilizzare il bottone **Cancell sconti** della barra degli strumenti. 
 
-### 3.2 Dati articolo
+### 3.b.2 Dati articolo
 
 All'interno di questo tab vengono riportate/inserite ulteriori informazioni relative all'articolo.
 
@@ -255,13 +255,13 @@ import AlternativeUMQuantity from './../../../import/fields/alternative-um-quant
 
 - **Note**: offre la possibilità di inserire note per ogni articolo che si vuole vengano riportate in tutti i documenti.  
 
-### 3.3 Agenti
+### 3.b.3 Agenti
 
 import SalesTabAgent from './../../../import/sections/sales-tab-agent.md'
 
 <SalesTabAgent />
 
-### 3.4 Lotti e Serial number
+### 3.b.4 Lotti e Serial number
 
 Nelle due griglie possono essere inseriti i lotti e i numeri seriali che devono essere scaricati dal magazzino e che sono collegati all'articolo nell'*Anagrafica articolo > tab [Lotti e Serial Number](/docs/erp-home/registers/items/create-new-items/item-registry/lots-and-serial-number)* oppure possono essere inserite manualmente.
 
@@ -277,29 +277,29 @@ import DeleteSN from './../../../import/buttons/delete-sn.md'
 > <DeleteLot />
 > <DeleteSN />
 
-### 3.5 Analitica
+### 3.b.5 Analitica
 
 import TabAnalytic from './../../../import/sections/tab-analytic.md'
 
 <TabAnalytic />
 
-### 3.6 Extra data
+### 3.b.6 Extra data
 
 import DocItemExtraData from './../../../import/sections/doc-item-extradata.md'
 
 <DocItemExtraData />
 
-### 3.7 Documenti allegati
+### 3.b.7 Documenti allegati
 
 import DocAttachDocument from './../../../import/sections/doc-attach-document.md'
 
 <DocAttachDocument />
 
-### 3.8 Matrici
+### 3.b.8 Matrici
 
 Questo tab viene visualizzato esclusivamente per i [Tipi ordine](/docs/configurations/tables/sales/sales-order-types) che hanno il flag di gestione delle matrici Extra Data. 
 
-### 3.9 Sezione valori
+### 3.b.9 Sezione valori
 
 import SalesValuesSection from './../../../import/sections/item-values-section.md'
 
@@ -345,7 +345,7 @@ In questa griglia vengono riportate le scadenze calcolate in base alle soluzioni
 
 **Note finali**: è un campo descrittivo che può essere compilato dall'utente anche con l'ausilio dell'*Help note codificate*. Possono essere inserite ulteriori note per il cliente riguardanti per esempio la consegna che verranno poi riportate nella stampa della Conferma d'Ordine nella parte finale della stampa.
 
-### 4.6 Totali documento
+### 4.7 Totali documento
 
 Nella sezione destra di questa tab si possono consultare i riepiloghi del documento:       
 
