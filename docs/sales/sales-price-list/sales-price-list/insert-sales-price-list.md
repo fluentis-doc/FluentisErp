@@ -102,12 +102,12 @@ Con questo parametro è possibile decidere se per una destinazione del cliente, 
 
 ## **3. Extra data**
 
-import DocItemExtraData from './../../import/sections/doc-item-extradata.md'
+import DocItemExtraData from './../../../import/sections/doc-item-extradata.md'
 
 <DocItemExtraData />
 
 ## **4. Documenti allegati**
 
-import DocAttachDocument from './../../import/sections/doc-attach-document.md'
+import DocAttachDocument from './../../../import/sections/doc-attach-document.md'
 
 <DocAttachDocument />
