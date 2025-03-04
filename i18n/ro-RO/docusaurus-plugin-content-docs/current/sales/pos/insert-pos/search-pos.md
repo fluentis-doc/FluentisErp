@@ -1,13 +1,13 @@
 ---
-title: Ricerca POS
+title: Caută POS
 sidebar_position: 1
 ---
 
-La form si apre tramite il percorso **Vendite > POS > Ricerca POS**.
+Formularul se deschide prin parcursul **Vânzări > POS > Caută POS** (Vendite > POS > Ricerca POS).
 
-Per la spiegazione delle funzionalità comuni ai documenti di vendita consultare la sezione [Vendite](/docs/sales/sales-intro).
+Pentru explicații despre funcționalitățile comune documentelor de vânzare, consultați secțiunea [Vânzări](/docs/sales/sales-intro).
 
-### Pulsanti specifici  
+### Butoane specifice  
 
-> - **Creazione DDT**: la procedura permette di creare un DDT direttamente da uno o più POS; uscirà un pop up nel quale inserire il Tipo DDT da creare e il cliente al quale intestare il documento.     
-> - **Creazione fatture**: la procedura permette di creare una fattura direttamente da uno o più POS; uscirà un pop up nel quale inserire il Tipo fattura da creare e il cliente al quale intestare il documento.     
+> - **Creare avize**: procedura permite crearea unui DDT direct din unul sau mai multe POS; va apărea o fereastră pop-up în care să introduceți tipul de DDT de creat și clientul pentru care se emite documentul.     
+> - **Creare facturi**: procedura permite crearea unei facturi direct din unul sau mai multe POS; va apărea o fereastră pop-up în care să introduceți tipul de factură de creat și clientul pentru care se emite documentul.
