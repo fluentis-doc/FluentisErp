@@ -5,6 +5,26 @@ sidebar_position: 3
 
 La form si apre tramite il percorso **Acquisti > Ricevimento merci > Crea ricevimento merci** oppure dal filtro di ricerca del Ricevimento merci, mediante il pulsante *Nuovo*.
 
+## *Come creare un ricevimento merci*
+
+<details>
+ 
+<summary>Clicca per i passaggi fondamentali</summary>
+ 
+1. **Inserisci i dati obbligatori**: *Tipo* e *Fornitore*. *Anno*, *Numero* e *Data Inserimento* saranno proposti in automatico.  
+ 
+2. **Inserisci o modifica i dati facoltativi** della testata: come date di consegna, eventuali *sconti*, la *destinazione*, ecc.  
+ 
+3. **Inserisci gli Articoli**: mediante doppio click nel campo *Codice articolo* si apre l’help articoli che permette di cercare e selezionare un articolo esistente. Tutti gli altri dati della riga, come *unità di misura*, *quantità*, *prezzo*, saranno proposti in automatico, ma possono essere modificati.
+In alternativa è possibile selezionare come *Tipo riga* un *Articolo non codificato* e inserire manualmente i dati successivi.
+ 
+4. **Inserisci eventuali sconti o altre informazioni aggiuntive** nei tab *Sconti/listini* e *Dati articolo*
+ 
+5. **Controlla la sezione dei Riepiloghi** ed inserisci eventuali spese o sconti finali.  
+ 
+6. Una volta controllato e confermato l’ordine, **inserisci una *Data conferma* e attiva il flag *Stampato* in testata** in modo da rendere il documento disponibile per le procedure di evasione.
+ 
+</details>
 
 ## **1. Dati obbligatori**
 
@@ -16,7 +36,7 @@ Per creare il ricevimento merci, l'utente deve inserire i seguenti dati:
 - **Data ricevimento**: viene proposta automaticamente la data corrente, ma può essere modificata manualmente sempre rispettando la regola di progressione tra data e numero.
 - **Progetto**: posizionato nella parte inferiore alla griglia articoli; rappresenta il progetto da associare al documento e può essere selezionato tramite l'apposito help progetti.
 
-## **1. Articoli**
+## **2. Articoli**
 
 - **Tipo riga** offre la possibilità di selezionare, dalla combo-box, articoli con caratteristiche diverse:
 > - *Articolo codificato*: sono gli articoli codificati in anagrafica e possono essere contabilizzati in contabilità analitica e registrati in magazzino. <br />
@@ -56,7 +76,7 @@ Se si parte direttamente con l'inserimento dell'articolo, la sua classe, il codi
 Nelle due griglie possono essere inseriti i lotti e numeri seriali che devono essere caricati nel magazzino. 
 Se l'articolo non prevede la gestione dei [Lotti e Serial Number](/docs/erp-home/registers/items/create-new-items/item-registry/lots-and-serial-number), questo tab sarà disabilitato.   
 
-#### Pulsante specifico*:   
+#### Pulsante specifico 
 
 > **Cancella lotto**: permette di cancellare la riga lotto selezionata
 

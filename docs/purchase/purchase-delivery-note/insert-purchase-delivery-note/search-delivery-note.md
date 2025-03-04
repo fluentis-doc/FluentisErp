@@ -1,7 +1,6 @@
 ---
 title: Ricerca DDT
-sidebar_position: 2
-description: DDT di acquisto
+sidebar_position: 1
 ---
 
 La form si apre tramite il percorso **Acquisti > DDT di acquisto > DDT di acquisto**.   

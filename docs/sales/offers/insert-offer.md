@@ -1,6 +1,6 @@
 ---
 title: Nuova offerta cliente
-sidebar_position: 1
+sidebar_position: 3
 ---
 
 La form **Nuova Offerta** si apre tramite il percorso **Vendite > Nuova Offerta** oppure tramite il pulsante **Nuovo** che si trova nella form di [Ricerca Offerte](/docs/sales/offers/search-offers).
@@ -11,7 +11,7 @@ La form **Nuova Offerta** si apre tramite il percorso **Vendite > Nuova Offerta*
  
 <summary>Clicca per i passaggi fondamentali-DA CONTROLLARE</summary>
  
-1. **Inserisci i dati obbligatori**: *Tipo Ordine* e *Fornitore*. *Anno*, *Numero* e *Data Inserimento* saranno proposti in automatico.  
+1. **Inserisci i dati obbligatori**: *Tipo Ordine* e *Cliente*. *Anno*, *Numero* e *Data Inserimento* saranno proposti in automatico.  
  
 2. **Inserisci o modifica i dati facoltativi** della testata: come date di consegna, eventuali *sconti*, la *destinazione*, ecc.  
  
@@ -78,7 +78,7 @@ Dopo aver inserito i dati nella sezione superiore, è possibile procedere con i 
 > - se almeno alcune righe dell'offerta sono già state convertite in ordine, verrà chiesto all'utente se vuole creare un nuovo ordine utilizzando tutte le righe offerta oppure solo le righe non ancora referenziate.             
 > - **Crea/Aggiorna progetto**: con questo flag indichiamo al sistema che oltre alla creazione dell'ordine deve procedere anche con la creazione o l'aggiornamento del progetto. Se il progetto deve essere creato, è necessario flaggare il comando *Crea Nuovo progetto vuoto*, *Crea Nuovo progetto da Offerta* oppure **Crea Nuovo progetto da Offerta e Template progetto**; in tutti i casi sarà necessario inserire il **[Tipo progetto](/docs/configurations/tables/project-management/project-type)** da creare nell'apposito campo, nell'ultimo caso verrà richiesto l'inserimento anche del  progetto **Template**. Se il progetto esiste già e deve essere aggiornato con i dati inseriti nell'offerta, invece, sarà necessario compilare il campo **Progetto**  con il progetto da aggiornare.     
 > - **Riporta Materiali/Risorse da righe Offerta come righe Ordine**: con questi flag vengono inserite nell'ordine delle righe articolo con le risorse e i materiali dell'offerta, se gerarchica.              
-Una volta confermato il pop-up, il sistema genererà quindi un nuovo Ordine cliente utilizzando i dati dell'offerta. Questo ordine può essere visualizzato e modificato nella sezione [Ricerca ordini clienti](/docs/sales/sales-orders/search-sales-orders). Inoltre, l'utente verrà informato tramite un messaggio pop-up riguardante il successo della conversione, il numero dell'offerta convertita e la versione, insieme a un messaggio contenente il numero dell'ordine cliente generato dalla conversione.        
+Una volta confermato il pop-up, il sistema genererà quindi un nuovo Ordine cliente utilizzando i dati dell'offerta. Questo ordine può essere visualizzato e modificato nella sezione [Ricerca ordini clienti](/docs/sales/sales-orders/create-new-sales-orders/search-sales-orders). Inoltre, l'utente verrà informato tramite un messaggio pop-up riguardante il successo della conversione, il numero dell'offerta convertita e la versione, insieme a un messaggio contenente il numero dell'ordine cliente generato dalla conversione.        
 Se nell'Offerta vengono modificati i dati proposti dall'anagrafica, essi vengono riportati nell'Ordine generato dalla conversione: Annotazioni cliente, Spedizione, Pagamenti, Sconti, Agenti, Destinazioni, Vettori.      
 
 Le tab sottostanti vengono popolate con i campi presi dall'anagrafica cliente/contatto, modificabili:  
@@ -90,9 +90,7 @@ Le tab sottostanti vengono popolate con i campi presi dall'anagrafica cliente/co
 - **Extra Data**
 - **Informazioni email**
 
-## **3. Articoli Offerta**
-
-Questa tab contiene gli articoli dell'Offerta.      
+## **3.a Articoli offerta**
 
 Nella griglia principale vengono inseriti gli articoli.    
 
@@ -110,14 +108,15 @@ Sono poi presenti le seguenti tab:
 - **Apri prototipo**: questo bottone è abilitato se la riga articolo selezionata ha un Prototipo associato, e permette di aprirlo.     
 - **Import da progetto**: questa funzione apre l'help *Articolo progetto*, nel quale è possibile selezionare gli articoli provenienti da un progetto che vogliamo inserire nell'offerta di vendita. Il pop up si apre direttamente con il filtro sul cliente intestatario dell'offerta, per permettere di visualizzarne i relativi progetti.    
 
-## **3. Articoli Offerta Gerarchica**
+## **3.b Articoli offerta gerarchica**
 
 Nel caso in cui l'Offerta sia di *tipo gerarchico*, la tab degli Articoli sarà diversa.      
 
 Nella griglia principale vengono inseriti gli articoli servendosi dei pulsanti della barra degli strumenti, che permettono di creare una struttura ad albero. Le caratteristiche degli articoli devono essere specificate nella tab *Attività*.    
+
 Elenchiamo ora le tab particolari di un'offerta gerarchica.        
 
-### 3.1 Attività 
+### 3.b.1 Attività 
 
 In questa tab è necessario inserire le caratteristiche degli articoli della griglia articoli. I campi presenti sono:     
 - **Numero riga/Livello**: contiene i numeri della riga e della WBS e viene impostato automaticamente, anche se è liberamente modificabile.          
@@ -143,7 +142,7 @@ In questa tab è necessario inserire le caratteristiche degli articoli della gri
 - **Fatturato vendite**: indica il [Fatturato vendite](/docs/configurations/tables/sales/sales-turnover) dell’articolo.                
 - **Data prevista consegna/Periodo di prevista consegna**: in questi campi è possibile inserire data/periodo previsti per la consegna dell'articolo selezionato.    
 
-### 3.2 Risorse
+### 3.b.2 Risorse
 
 In questa tab è possibile indicare i Ricavi ottenuti dalle varie Risorse. I campi presenti sono: 
 - **Risorsa**: richiede l'inserimento di una [Risorsa](/docs/project-management/registers/employee/new-employee) precodificata che ha svolto l'attività.     
@@ -154,7 +153,7 @@ In questa tab è possibile indicare i Ricavi ottenuti dalle varie Risorse. I cam
 - **Nota**: in questo campo è possibile inserire delle note libere.       
 - **Equivalente a tempo pieno**: in questo campo è possibile inserire a quanto corrispondono le giornate/ore della risorsa rispetto all'orario aziendale (ad esempio se una risorsa fa un orario part-time di 4 ore, 1 giornata di questa risorsa deve corrispondere a 0.5 giornate aziendali).     
 
-### 3.3 Materiali
+### 3.b.3 Materiali
 
 In questa tab è possibile indicare i Ricavi ottenuti dall'impiego di Materiali.      
 Nelle prime colonne della griglia è possibile inserire un Articolo codificato, Non codificato oppure Note, la sua eventuale Variante e l'iva. Le colonne successive sono:     

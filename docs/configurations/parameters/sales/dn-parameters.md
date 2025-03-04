@@ -19,7 +19,7 @@ I parametri dei DDT di vendita permettono l'impostazione di base per gestire cor
 
 **Controllo Disponibilità:** questo flag e gli altri relativi al controllo, visualizzazione e obbligorietà con la considerazion per area, nella versione attuale, non sono gestite.     
 
-**Unità di misura volume/pesi predefinita**: queste unità di misura vengono considerate come UM di default da proporre nel tab [Trasporto](/docs/sales/sales-delivery-notes/insert-delivery-notes/transport) del DDT, come unità di misura di volume e pesi; il dato è modificabile nei documenti. 
+**Unità di misura volume/pesi predefinita**: queste unità di misura vengono considerate come UM di default da proporre nel tab [Trasporto](/docs/sales/sales-delivery-notes/insert-delivery-notes/sales-dn) del DDT, come unità di misura di volume e pesi; il dato è modificabile nei documenti. 
 
 **Ricerca prezzi articoli in tutti i listini predefiniti**: quando si cercano il prezzo e gli sconti per un articolo all'interno di un DDT, il sistema segue delle regole basate sulle impostazioni configurate nell'anagrafica cliente, sotto la sezione *Listini*. Se è attivata l'opzione 'default' su un determinato tipo di listino, la ricerca di prezzi e sconti si concentrerà solo su quella specifica tipologia di listino; se il flag "default" non è attivo, il sistema estenderà la ricerca a tutti i tipi di listini presenti, seguendo un ordine di priorità. In pratica, con il flag 'default' attivo, il sistema cercherà prima un listino valido per la tipologia predefinita; se non trova risultati, passerà a controllare le altre tipologie di listino in ordine di priorità inserita. Tuttavia, se nell'anagrafica del cliente non è presente alcuna tipologia di listino impostata come 'default' e ci sono solo priorità, questo parametro non influenzerà la ricerca, anche se attivo.       
 
@@ -39,7 +39,7 @@ I parametri dei DDT di vendita permettono l'impostazione di base per gestire cor
 
 **Blocca inserimento documento in date festive da calendario di fabbrica**: se attivo, il sistema non permette l'inserimento dell'offerta in date festive (viene controllato prima il Calendario di Fabbrica della società, poi il Calendario delle capacità produttive); se non attivo, il sistema non effettua nessun controllo e lascia inserire il documento.     
 
-**Ricalcola trasporto**: questo flag fa in modo che nel tab [Trasporto](/docs/sales/sales-delivery-notes/insert-delivery-notes/transport) del DDT vengano riportati i totali di peso, volume e colli delle righe del documento; senza questo flag, i campi non saranno compilati.        
+**Ricalcola trasporto**: questo flag fa in modo che nel tab [Trasporto](/docs/sales/sales-delivery-notes/insert-delivery-notes/sales-dn) del DDT vengano riportati i totali di peso, volume e colli delle righe del documento; senza questo flag, i campi non saranno compilati.        
 
 **Riferimenti esterni ordine**: questo flag fa in modo che i campi *Nostro* e *Vostro riferimento* vengano trasferiti dalle righe ordine alle righe DDT.
 

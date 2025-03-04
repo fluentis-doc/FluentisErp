@@ -5,6 +5,27 @@ sidebar_position: 1
 
 La form si apre tramite il percorso **Acquisti > Commesse Acquisto > Nuova Commessa di Acquisto** oppure dal filtro di ricerca delle commesse di acquisto, mediante il pulsante *Nuova commessa*.
 
+## *Come creare una fattura di acquisti*
+
+<details>
+ 
+<summary>Clicca per i passaggi fondamentali</summary>
+ 
+1. **Inserisci i dati obbligatori**: *Tipo* e *Fornitore*. *Anno*, *Numero* e *Data Inserimento* saranno proposti in automatico.  
+ 
+2. **Inserisci o modifica i dati facoltativi** della testata: come date di consegna, eventuali *sconti*, la *destinazione*, ecc.  
+ 
+3. **Inserisci gli Articoli**: mediante doppio click nel campo *Codice articolo* si apre l’help articoli che permette di cercare e selezionare un articolo esistente. Tutti gli altri dati della riga, come *unità di misura*, *quantità*, *prezzo*, saranno proposti in automatico, ma possono essere modificati.
+In alternativa è possibile selezionare come *Tipo riga* un *Articolo non codificato* e inserire manualmente i dati successivi.
+ 
+4. **Inserisci eventuali sconti o altre informazioni aggiuntive** nei tab *Sconti/listini* e *Dati articolo*
+ 
+5. **Controlla la sezione dei Riepiloghi** ed inserisci eventuali spese o sconti finali.  
+ 
+6. Una volta controllato e confermato l’ordine, **inserisci una *Data conferma* e attiva il flag *Stampato* in testata** in modo da rendere il documento disponibile per le procedure di evasione.
+ 
+</details>
+
 ## **1. Dati obbligatori**
 
 Per creare una nuova commessa di acquisto l'utente deve inserire i seguenti dati:
@@ -46,7 +67,6 @@ Tutti questi campi possono essere cancellati oppure modificati manualmente dall'
 > **Stato evasione**: quando la commessa viene evasa tramite un ordine di acquisto il suo *Stato evasione* cambia automaticamente da *Non evaso* a *Parzialmente evaso* o *Evaso*. L'utente può forzare l'evasione di un ordine non totalmente evaso e quando questo succede, viene salvata anche la **Data evasione** nel campo omonimo.   
 > **Data conferma**: permette di inserire la data in cui la commessa è stata confermata.     
 > **Stampato**: questo flag viene attivato in automatico al momento di lancio della Stampa definitiva mediante il pulsante posto nella ribbon bar. In alternativa può essere attivato manualmente per poter effettuare l'evasione.    
-
     
 :::important Nota
 Per poter effettuare l'evasione di una commessa di acquisto all'interno di un Ordine fornitore è enecssario che la commessa abbia una *Data conferma* inserita e che il flag *Stampato* sia attivo.

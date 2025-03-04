@@ -10,7 +10,7 @@ In questa form troviamo i seguenti campi:
 **Posizione IVA**: è l'aliquota iva da proporre nel ciclo documentale attivo/passivo e nelle registrazioni contabili. 
 
 :::note Attenzione
-La priorità di valorizzazione del campo [IVA](/docs/sales/sales-invoices/invoicing/items) nei documenti prevede nell'ordine:  
+La priorità di valorizzazione del campo [IVA](/docs/sales/sales-invoices/invoicing/sales-invoice) nei documenti prevede nell'ordine:  
 1. verifica delle [Dichiarazioni di intento](/docs/finance-area/declarations/declarations/intent-declaration), se presenti, e sostituzione del codice iva in esse contenuto;  
 2. anagrafica cliente/fornitore;  
 3. anagrafica articolo.

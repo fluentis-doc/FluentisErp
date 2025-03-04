@@ -33,6 +33,5 @@ Sì, con le <b>Restrizioni</b>. Esse impediscono agli utenti di creare, visualiz
 
 ![](/img/it-it/sales/sales-invoices/search-sales-invoices/restriction.png)
 
-
 </details>
 
