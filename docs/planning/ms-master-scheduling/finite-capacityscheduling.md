@@ -70,7 +70,7 @@ Prima di procedere con la schedulazione F.C.S., è importante settare all'intern
 
 **Inizia lavori su disponibilità materiale**: se attivo, la schedulazione F.C.S. verificherà anche la disponibilità di materiale fino alla data indicata nel campo **Controllo disponibilità fino al**, oltre a quella data la schedulazione proseguirà senza prendere in considerazione la disponibilità di materiale. Attivando il flag **Controllo disponibilità solo sui Materiali critici** la procedura verificherà la disponibilità solamente per i materiali che in distinta base hanno il flag *Critico* attivo;   
 
-**Considera disponibilità Materiale**: permetterà di selezionare la modalità con cui considerare la disponibilità del materiale tra *Generale* (indipendentemente dalla commessa di produzione ch elo impegna) e *Per Commessa Prod.*; attualmente è prevista solamente la regola *Generale*.
+**Considera disponibilità Materiale**: permetterà di selezionare la modalità con cui considerare la disponibilità del materiale tra *Generale* (indipendentemente dalla commessa di produzione ch elo impegna) e *Per Commessa Prod.*; attualmente è prevista solamente la regola *Generale*. Da notare che per i materiali legati ad una certa fase, la disponibilità sarà verificata all'inizio della fase stessa, mentre per tutti i materiali non legati ad una fase, la disponibilità verrà verificata all'inizio della prima fase del ciclo. 
 
 Nella parte sottostante della form è possibile indicare con quali criteri, a parità di documento, la schedulazione a capacità finita deve operare.
 
