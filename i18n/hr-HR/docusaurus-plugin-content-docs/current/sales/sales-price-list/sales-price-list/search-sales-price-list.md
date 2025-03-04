@@ -15,4 +15,4 @@ Za otvaranje pojedinosti dokumenta, dovoljno je odabrati ga i dvaput kliknuti mi
 [Zajedničke funkcionalnosti, gumbe i polja](/docs/guide/common)            
 Dodavanje novih polja u obrasce pretraživanja    
 
-Iz ovog obrasca također je moguće  [Stvoriti novi cjenik](/docs/sales/sales-price-list/insert-sales-price-list), klikom na gumb **Novi**.
+Iz ovog obrasca također je moguće  [Stvoriti novi cjenik](/docs/sales/sales-price-list/sales-price-list/insert-sales-price-list), klikom na gumb **Novi**.
