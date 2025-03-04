@@ -1,6 +1,6 @@
 ---
 title: Nuova fattura di vendita
-sidebar_position: 1
+sidebar_position: 2
 ---
 
 La form si apre:  
