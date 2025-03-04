@@ -3,7 +3,7 @@ title: Unos narudžbe kupca
 sidebar_position: 2
 ---
 
-Obrazac za **Unos narudžbe kupca** otvara se putem **Prodaja > Narudžbe kupaca > Nova narudžba** ili putem tipke ![](/img/neutral/common/new.png) koji se nalazi u obrascu [Traži narudžbu prodaje](/docs/sales/sales-orders/search-sales-orders).
+Obrazac za **Unos narudžbe kupca** otvara se putem **Prodaja > Narudžbe kupaca > Nova narudžba** ili putem tipke ![](/img/neutral/common/new.png) koji se nalazi u obrascu [Traži narudžbu prodaje](/docs/sales/sales-orders/create-new-sales-orders/search-sales-orders).
 
 U obrascu za unos automatski se nude trenutni **Datum** i **Godina**, ali ih korisnik može promijeniti. 
 
