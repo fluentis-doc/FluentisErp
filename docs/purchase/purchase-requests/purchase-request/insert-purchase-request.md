@@ -5,7 +5,28 @@ sidebar_position: 2
 
 La form si apre tramite il percorso **Acquisti > Richieste di Acquisto > Nuova richiesta** oppure dal filtro di riceca *Richieste di Acquisto* mediante il pulsante *Nuovo*.   
 
-### Sezione superiore
+## *Come creare una richiesta di acquisto*
+
+<details>
+ 
+<summary>Clicca per i passaggi fondamentali</summary>
+ 
+1. **Inserisci i dati obbligatori**: *Tipo* e *Fornitore*. *Anno*, *Numero* e *Data Inserimento* saranno proposti in automatico.  
+ 
+2. **Inserisci o modifica i dati facoltativi** della testata: come date di consegna, eventuali *sconti*, la *destinazione*, ecc.  
+ 
+3. **Inserisci gli Articoli**: mediante doppio click nel campo *Codice articolo* si apre l’help articoli che permette di cercare e selezionare un articolo esistente. Tutti gli altri dati della riga, come *unità di misura*, *quantità*, *prezzo*, saranno proposti in automatico, ma possono essere modificati.
+In alternativa è possibile selezionare come *Tipo riga* un *Articolo non codificato* e inserire manualmente i dati successivi.
+ 
+4. **Inserisci eventuali sconti o altre informazioni aggiuntive** nei tab *Sconti/listini* e *Dati articolo*
+ 
+5. **Controlla la sezione dei Riepiloghi** ed inserisci eventuali spese o sconti finali.  
+ 
+6. Una volta controllato e confermato l’ordine, **inserisci una *Data conferma* e attiva il flag *Stampato* in testata** in modo da rendere il documento disponibile per le procedure di evasione.
+ 
+</details>
+
+## **1. Dati obbligatori**
 
 I campi obbligatori per l'inserimento di una richiesta di acquisto sono i seguenti:
 
@@ -13,13 +34,13 @@ I campi obbligatori per l'inserimento di una richiesta di acquisto sono i seguen
 - **Data/Anno**: di default viene proposta la data corrente, ma può essere modificata manualmente.   
 - **Numero**: poposto automaticamente in base al *Tipo RDA* scelto.
 
-Gli altri dati disponibili nella sezione superiore sono:
+#### Altri dati
 
 - **Storicizzata**: attivando questo flag la RDA non sarà più visibile nella procedura di [Creazione automatica ordini](/docs/purchase/purchase-orders/procedures/create-purchase-orders-from-purchase-requests).   
 - **Annotazioni**: permette di inserire note visibili a livello di RDA.   
 - **Stato richiesta**: campo non editabile; visualizza lo stato di evasione dell'intera richiesta considerando lo stato evasione di ogni singola riga articolo. Una RDA viene considerata *Evasa* o *Parzialmente evasa* quando è stato generato l'ordine fornitore per tutte o alcune delle righe articolo contenute in essa.       
 
-### Articoli
+## **2. Articoli**
 
 Nella griglia articoli sono presenti i seguenti dati: 
 
@@ -53,7 +74,7 @@ Nella sezione sottostante la griglia vengono riportati i totali del documento:
 - **Imposta**: riporta il valore dell'imposta calcolata sul totale imponibile, sulla base dell'aliquota IVA indicata per ciascun articolo nel tab *Dati articolo*.    
 - **Totale**: dato dalla somma di *Imponibile* e *Imposta*.
 
-### Pulsanti specifici
+#### Pulsanti specifici
 
 > **Autorizzazione RDA**: permette di autorizzare tutte le righe articolo selezionate; da questo momento il documento è considerato confermato.   
 
@@ -63,7 +84,7 @@ Nella sezione sottostante la griglia vengono riportati i totali del documento:
 
 > **Apri richiesta di offerta**: permette di aprire la RDO generata.
 
-### Dati Articolo{#items-data}
+### 2.1 Dati articolo{#items-data}
 
 Sono tutti campi informativi che vengono presi di default dall'articolo/fornitore. È possibile comunque sovrascrivere tali informazioni a livello di riga.   
 
@@ -73,8 +94,7 @@ Sono tutti campi informativi che vengono presi di default dall'articolo/fornitor
 - **IVA**: riporta l'aliquota IVA associata all'articolo.   
 - **Marca**: rappresenta la marca dell'articolo, ripresa dalla sua anagrafica oppure dal listino dell'articolo.
 - **Divisa**: di default viene proposta la [divisa](/docs/configurations/tables/general-settings/currencies) presente nell'[anagrafica](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/finance) del *Fornitore preferenziale*. 
-- **Cambio**: riporta la data e il tasso di cambio da utilizzare per la conversione valuta. 
-   
+- **Cambio**: riporta la data e il tasso di cambio da utilizzare per la conversione valuta.   
 
 - **Variante**: in questo campo è possibile selezionare una variante dell'articolo tra quelle precedentemente codificate nel tab [Varianti](/docs/erp-home/registers/items/create-new-items/item-registry/variants) dell'anagrafica articolo. Se nel listino sono stati inseriti prezzi e/o sconti diversi per ciascuna variante essi saranno aggiornati quando si sleziona una variante diversa dell'articolo.   
 - **Commesse di produzione**: se la richiesta di acquisto è stata generata dalla [pianificazione](/docs/planning/ms-master-scheduling/general-schedule/) di una commessa di produzione (con rilascio ordini automatico oppure mediante la [procedura](/docs/planning/ms-master-scheduling/planned-orders/procedures/release-planned-orders#richieste-dacquisto) di rilascio di un ordine pianificato di acquisto) in questo campo sarà riportato il riferimeto alla commessa. Per maggiori informazioni vedere anche la [sezione introduttiva](/docs/purchase/purchase-requests/general-overview).   
@@ -90,20 +110,19 @@ Sono tutti campi informativi che vengono presi di default dall'articolo/fornitor
 - **In data**: riporta la data in cui è stata autorizzata la riga articolo della RDA.   
 - **Dall'utente**: riporta il nome dell'utente che ha autorizzato la richiesta di acquisto.   
 
-
-### Analitica
+### 2.2 Analitica
 
 Contiene campi relativi alla contabilità analitica. Vengono riportati i centri di costo/profitto sui quali sono distribuiti i valori dei prodotti acquistati.    
 
 Questi dati possono essere inseriti: manualmente oppure automaticamente, nel caso in cui i centri di costo/profitti sono stati inseriti precedentemente nell'anagrafica del contatto, anagrafica articolo oppure nel piano dei conti.
 
-### Documenti allegati
+### 2.3 Documenti allegati
 
 Viene visualizzato il dettaglio di un eventuale documento allegato (nome, tipo di documento, eventuali note, ns/vs riferimento).    
 
 Per le istruzioni relative a come allegare un documento si rimanda all'articolo  [Allega documenti](/docs/guide/common/operations-with-data/attach-documents).
 
-### Generatore RDO
+### 2.4 Generatore RDO
 
 In questa tab vengono riportati i *Fornitori preferenziali* presenti nell'anagrafica dell'articolo selezionato in griglia con i relativi dati, listini e prezzi. Da questa tab è possibile quindi scegliere il miglior prezzo. In alternativa, è possibile inserire manualmente il fornitore da considerare per l'articolo.    
 
@@ -125,6 +144,6 @@ Gli altri campi presenti nella griglia sono:
 - **Listino di Acquisto**: riporta il listino da cui è stato ripreso il prezzo. 
 - **Sospseso**: questo flag viene attivato automaticamente quando la RDO è stata generata.
 
-La presenza di almeno una riga in questa tab fa attivare il bottone della ribbon bar **Generazione RDO**. Cliccando questo bottone, verrà creata la [Richiesta di Offerta](/docs/purchase/offer-request/settings) per le righe selezionate. Il documento creatò sarà consultabile nella ricerca RDO, oppure è possibile aprirlo direttamente col bottone **Apri richiesta di offerta** della ribbon bar.   
+La presenza di almeno una riga in questa tab fa attivare il bottone della ribbon bar **Generazione RDO**. Cliccando questo bottone, verrà creata la [Richiesta di Offerta](/docs/purchase/offer-request/settings) per le righe selezionate. Il documento creato sarà consultabile nella ricerca RDO, oppure è possibile aprirlo direttamente col bottone **Apri richiesta di offerta** della ribbon bar.   
 
 Per annullare una creazione effettuata, è possibile utilizzare il bottone della ribbon bar **Rollback RDO**, il quale cancellerà la *Richiesta di offerta* creata.

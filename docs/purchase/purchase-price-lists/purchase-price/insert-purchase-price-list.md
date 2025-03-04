@@ -1,5 +1,5 @@
 ---
-title: Nuovo Listino
+title: Nuovo Listino fornitore
 sidebar_position: 3
 ---
 
