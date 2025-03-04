@@ -1,6 +1,6 @@
 ---
 title: Ricerca Ordini
-sidebar_position: 2
+sidebar_position: 1
 ---
 
 La form si apre tramite il percorso **Vendite > Ordini > Ricerca Ordini**.

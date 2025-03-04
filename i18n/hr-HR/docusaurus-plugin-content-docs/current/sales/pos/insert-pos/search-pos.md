@@ -1,6 +1,6 @@
 ---
 title: Traži POS
-sidebar_position: 2
+sidebar_position: 1
 ---
 
 Obrazac se otvara putem putanje  **Prodaja > POS > Traži POS**.

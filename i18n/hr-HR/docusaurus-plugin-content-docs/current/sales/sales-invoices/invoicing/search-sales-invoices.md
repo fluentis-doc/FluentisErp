@@ -1,6 +1,6 @@
 ---
 title: Pretraga računa
-sidebar_position: 2
+sidebar_position: 1
 ---
 
 Obrazac se otvara putem **Prodaja > Računi > Pretraživanje računa**.

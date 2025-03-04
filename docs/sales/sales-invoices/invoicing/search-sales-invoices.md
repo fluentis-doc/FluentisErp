@@ -1,6 +1,6 @@
 ---
-title: Ricerca Fatture
-sidebar_position: 2
+title: Ricerca fatture di vendita
+sidebar_position: 1
 ---
 
 La form si apre tramite tramite il percorso **Vendite > Fatture > Ricerca Fatture**.     

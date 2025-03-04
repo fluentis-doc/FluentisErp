@@ -1,6 +1,6 @@
 ---
-title: Stvori POS – gornji dio
-sidebar_position: 1
+title: Stvori POS
+sidebar_position: 2
 ---
 
 Obrazac **Stvori POS** otvara se putem putanje **Prodaja > POS > Stvori POS** ili putem gumba **Novo** koji se nalazi u obrascu pretraživanja *POS-a*.

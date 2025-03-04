@@ -1,6 +1,6 @@
 ---
 title: Nuovo POS
-sidebar_position: 1
+sidebar_position: 2
 ---
 
 La form **Crea POS** si apre tramite il percorso **Vendite > POS > Crea POS** oppure tramite il pulsante **Nuovo** che si trova nella form di ricerca *POS*.

@@ -1,6 +1,6 @@
 ---
 title: Pretraživanje Ponuda
-sidebar_position: 1
+sidebar_position: 2
 ---
 
 Obrazac se otvara putem putanje **Prodaja > Ponude > Pretraživanje ponuda**.
