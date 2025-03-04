@@ -356,7 +356,7 @@ Donji desni odjeljak sadrži sažetak troškova koji doprinose formiranju konač
  
 **Ukupno**: Osnovica + Porez.
 
-## **Sažeci**
+## **4. Sažeci**
 
 U različitim dijelovima ove kartice prikazane su glavne informacije cijelog dokumenta i neki specifični gumbi. 
 

@@ -1,5 +1,5 @@
 ---
-title: Vendite
+title: VENDITE
 sidebar_position: 1
 ---
 

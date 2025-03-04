@@ -1,6 +1,6 @@
 ---
-title: Ricerca Fatture
-sidebar_position: 2
+title: Ricerca Fatture di acquisti
+sidebar_position: 1
 ---
 
 La form si apre tramite il percorso **Acquisti > Fatture > Fatture di acquisto**.

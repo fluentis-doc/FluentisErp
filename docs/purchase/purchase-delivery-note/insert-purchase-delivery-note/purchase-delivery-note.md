@@ -1,6 +1,6 @@
 ---
 title: Nuovo DDT di acquisto
-sidebar_position: 1
+sidebar_position: 2
 ---
 
 La form *Crea DDT di acquisto* si apre tramite il percorso **Acquisti > DDT di acquisto > Nuova DDT** oppure tramite il pulsante *Nuovo* che si trova nella form [Ricerca DDT di acquisto](/docs/purchase/purchase-delivery-note/insert-purchase-delivery-note/search-delivery-note).

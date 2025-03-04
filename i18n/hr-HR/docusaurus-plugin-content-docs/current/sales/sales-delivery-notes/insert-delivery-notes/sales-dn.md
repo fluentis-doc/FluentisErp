@@ -1,6 +1,6 @@
 ---
-title: Stvaranje otpremnice – gornji dio
-sidebar_position: 1
+title: Stvaranje otpremnice
+sidebar_position: 2
 ---
 
 Obrazac za **Stvaranje otpremnice** otvara se putem navigacije **Prodaja > Otpremnice > Stvori otpremnicu**ili putem gumba ![](/img/neutral/common/new.png) koji se nalazi u obrascu [Pretraži otpremnice](/docs/sales/sales-delivery-notes/insert-delivery-notes/search-sales-dn).
@@ -194,12 +194,7 @@ Kako bi se postupak dovršio, bit će potrebno kliknuti na gumb *Prijenos*, koji
 > **Odaberi sve** omogućuje odabir svih stavki s popisa.  
 > **Odznači sve** omogućuje poništenje odabira svih stavki s popisa.  
 
----
-title: Artikli
-sidebar_position: 3
----
-
-## Artikli
+## **3. Artikli**
 
 U ovoj se kartici unose svi artikli s pripadajućim podacima.
 
@@ -207,11 +202,9 @@ Za sve što nije detaljno objašnjeno u ovom dokumentu o zajedničkom radu obraz
 
 Podaci se mogu unositi [ručno](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection), uz [pomoćno polje](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) ili ih mogu predložiti povezane procedure.
 
-## **3. Artikli**
-
 Da biste unijeli **Novi artikl** u mrežu, dovoljno je postaviti se na red kako biste ispunili različite podatke ili koristiti gumb **Novo** koji se nalazi na gornjem izborniku.
 
-### Obvezni podaci
+#### Obvezni podaci
 
 **Broj linije**: ovo će se polje automatski popuniti progresivno prilikom unosa podataka u red.
 
@@ -247,7 +240,7 @@ U odsutnosti cjenika, predloženi podatak je **prodajna cijena** preuzeta iz *Š
 
 **PDV**: prvenstveno koristi PDV unesen u polje PDV u *Šifarnik kontakata*. Ako to nije dostupno, koristi se vrijednost iz *Šifarnika artikala*, ali korisnik ima mogućnost unosa druge vrijednosti. Ovo polje je obavezno.
 
-### Neobvezni podaci
+#### Neobvezni podaci
 
 **Promet prodaje**: predložena je vrijednost unesena u *Šifarnik artikala > kartica Općenito*. Ako se ne preuzme, unesite ga odabirom jedne od ponuđenih stavki iz odgovarajućeg izbornika, inače nedostatak ovih podataka može uzrokovati pogreške u knjiženju fakture koja će biti generirana iz narudžbe, ako u *Šifarnik klijenta > Računovodstveni podaci > kartica Administrativno* nije postavljena vrijednost u polju *Predefinirani prihod od kontrapartije*.
 
@@ -277,7 +270,7 @@ Klikom na padajući izbornik pored gumba , moći ćete stvoriti novi cjenik ako 
 
 > **Izbriši rabat**: omogućuje brisanje popusta povezanog s odabranim artiklom u gornjem izborniku.
 
-## Podaci
+### 3.2 Podaci
 
 Na ovoj kartici se unose dodatne informacije o artiklu.
 
@@ -300,8 +293,7 @@ Na ovoj kartici se unose dodatne informacije o artiklu.
 #### Posebni gumb
 > **Izbriši trgovačkog predstavnike**: omogućuje brisanje povezanog Predstavnikas odabranim artiklom.
 
-
-### Varijante
+#### Varijante
 
 Prikazuju se varijante odabranog artikla, kodirane u kartici **Varijante** šifarnika artikala ili se mogu unijeti ručno. Omogućuju upravljanje varijantama artikla na drugačiji način od onoga što je predloženo na retku artikla.   
 Na primjer, u svakom retku artikla možete unijeti ukupnu količinu; nakon toga, u istoj kartici, možete definirati različite količine za više varijanti odabranog artikla, uključujući i varijacije u veličini/boji.  
@@ -323,21 +315,21 @@ Ako artikl ne zahtijeva upravljanje lokotima/serijskim brojevima, ovaj će se ta
 > **Izbriši lot**: omogućuje brisanje odabranog lota.  
 > **Izbriši serijski broj**: omogućuje brisanje odabranog serijskog broja.
 
-### 3.6 Analitika
+### 3.5 Analitika
 
 Može sadržavati informacije o troškovima/profitu na koje su raspoređene vrijednosti artikala.   
 Ovi podaci mogu se unijeti ručno ili automatski (ako su centri troškova/profita prethodno uneseni u Šifarnik kontakata, Šifarnik artikala ili plan konta).
 
-### 3.7 Dodatni podaci
+### 3.6 Dodatni podaci
 
 Prikazuje popis **Dodatnih podataka** povezanih s artiklom, s mogućnošću dodavanja novih dodatnih podataka korisnih samo za trenutni dokument, uz mogućnost odabira koje dodatne podatke želite ispisati putem odgovarajuće oznake.
 
 
-### 3.8 Dokumenti u privitku
+### 3.7 Dokumenti u privitku
 
 Prikazuje pojedinosti o eventualnom **Priloženom dokumentu** (ime, vrsta dokumenta, eventualne bilješke, referenca na narudžbu/prodaju). Za upute o tome kako priložiti dokument, pogledajte članak **Priloži dokumente**.
 
-### 3.9 Vrijednost odjeljka
+### 3.8 Vrijednost odjeljka
 
 Donji desni dio prikazuje sažetak troškova koji sudjeluju u formiranju konačne cijene odabranog artikla u tablici artikala.
 
@@ -355,7 +347,7 @@ Donji desni dio prikazuje sažetak troškova koji sudjeluju u formiranju konačn
 
 **Ukupno**: Poreska osnovica + Porez.
 
-## **4. Sažeci
+## **4. Sažeci**
 
 U Sažecima su prikazane osnovne informacije cijelog dokumenta.
 

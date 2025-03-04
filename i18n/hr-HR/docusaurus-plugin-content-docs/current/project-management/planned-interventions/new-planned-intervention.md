@@ -51,7 +51,7 @@ Na ovoj kartici nalaze se dva opisna atributa sa slobodnim upisom: **Rješenje**
 **Kartica Procjena**
 Na ovoj kartici moguće je unijeti procjenu planirane intervencije putem sljedećih podataka: 
 **Mjerna jedinica**: sadrži MJ koju treba koristiti za kvantificiranje intervencije; 
-**Prodajni cjenik**: moguće je povezati [Cjenik](/docs/sales/sales-price-list/insert-sales-price-list/) prodaje iz kojeg treba uzeti informacije;
+**Prodajni cjenik**: moguće je povezati [Cjenik](/docs/sales/sales-price-list/sales-price-list/insert-sales-price-list/) prodaje iz kojeg treba uzeti informacije;
 **Količina**: moguće je izravno popuniti u ovoj kartici stvarno vrijeme, koje će se pojaviti u odgovarajućem polju na kartici Resursa; 
 **Neto jedinična cijena**: sadrži jediničnu cijenu prema MJ; 
 **Ukupni iznos**: to je polje izračunato prema prethodno unesenim podacima; 
