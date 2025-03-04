@@ -7,7 +7,7 @@ La form si apre tramite il percorso **Acquisti > Ordini > Ordini fornitori**.
 
 Per la spiegazione delle funzionalità comuni ai documenti di acquisto consultare la sezione [Acquisti](/docs/purchase/purchases-intro).
 
-I pulsanti specifici di questa maschera di ricerca sono i seguenti:   
+#### Pulsanti specifici  
 
 > **Proprietà evasione**: pulsante per visualizzare lo stato di evasione degli articoli. Nella griglia superiore, per ogni riga si visualizzerà la quantità ordinata e la quantità già consegnata. Se la riga è già stata evasa, nella griglia sottostante viene mostrato il documento di evasione collegato (DDT e fattura). 
 >  

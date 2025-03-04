@@ -15,5 +15,5 @@ Sopra la griglia dei risultati ci sono delle *tiles* che permettono di filtrare 
 > **Sciolto**: RDO non confermate e non collegate ad una RDA già convertita in ordine.  
 > **Scadute**: RDO scadute e non collegate ad una RDA già convertita in ordine.  
 
-Il pulsante specifico di questa maschera di ricerca è:     
+#### Pulsante specifico  
 > **Nuova versione**: permette la creazione di una nuova versione dell'offerta selezionata; questa funzionalità permette di mantenere lo storico delle offerte precedenti. 
