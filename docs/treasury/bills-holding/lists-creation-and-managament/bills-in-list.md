@@ -3,9 +3,14 @@ title: Effetti in distinta
 sidebar_position: 3
 ---
 
-Una volta salvata la distinta saranno attivati i vari pulsanti di gestione della stessa: in particolare l'acquisizione effetti andrà ad aprire una maschera di ricerca degli effetti emessi ma non ancora presentati in distinta. Da questa maschera sarà possibile inserire in distinta solo gli effetti completi dei riferimenti abi/cab necessari: eventualmente è disponibile un report di stampa della lista degli effetti incompleti. L'inserimento degli effetti in distinta andrà ad aggiornare il totale distinta visualizzato alla base della maschera: per eliminare dalla distinta un effetto sarà sufficiente selezionarlo e premere il pulsante di cancellazione relativo.
+Una volta salvata la distinta saranno attivati i vari pulsanti di gestione della stessa: in particolare l'acquisizione effetti apre una maschera di ricerca degli effetti emessi ma non ancora presentati in distinta. 
 
-RIBBON BAR: la ribbon bar rappresenta il menu della Form in oggetto, ossia l'area nella quale è possibile effettuare delle azioni collegate alla procedura in uso. La lista delle funzionalità possibili è di seguito rappresentata:
+Da questa maschera sarà possibile inserire in distinta solo gli effetti completi dei riferimenti abi/cab necessari.  
+
+E' disponibile un report di stampa della lista degli effetti incompleti. 
+
+L'inserimento degli effetti in distinta aggiorna il totale distinta visualizzato alla base della maschera: per eliminare dalla distinta un effetto sarà sufficiente selezionarlo e premere il pulsante di cancellazione relativo.
+
 
 
 

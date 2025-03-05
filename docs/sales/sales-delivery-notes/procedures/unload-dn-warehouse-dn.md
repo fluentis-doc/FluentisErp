@@ -6,7 +6,7 @@ sidebar_position: 1
 La procedura massiva si apre tramite il percorso **Vendite > DDT > Procedure > Scarico DDT da magazzino**. 
 
 Questa procedura permette di eseguire/ripristinare le operazioni di scarico automatico dal magazzino degli articoli presenti nel DDT.    
-Ricordiamo che la procedura può essere eseguita anche all'interno della [Testata](/docs/sales/sales-delivery-notes/insert-delivery-notes/header) del singolo DDT con il pulsante [Scarico automatico](/docs/sales/sales-delivery-notes/insert-delivery-notes/header-procedures/unload). 
+Ricordiamo che la procedura può essere eseguita anche all'interno della [Testata](/docs/sales/sales-delivery-notes/insert-delivery-notes/sales-dn) del singolo DDT con il pulsante [Scarico automatico](/docs/sales/sales-delivery-notes/insert-delivery-notes/sales-dn). 
 
 La procedura massiva è composta da tre tab che analizziamo di seguito. 
 

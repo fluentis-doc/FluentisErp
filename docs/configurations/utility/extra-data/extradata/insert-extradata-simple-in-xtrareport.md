@@ -7,20 +7,20 @@ Per poter inserire un extradata in Xtrareport va utilizzato uno script che asseg
 
 Per prima cosa aprire il report corretto, creare un nuovo campo calcolato, all'interno dello script di GetValue inserire il seguente script e sostituire a ciò che c'è tra parentesi quadre i valori corretti: 
 
-```csharp
+```shell
  //INIZIO SCRIPT PER EXTRADATA SEMPLICE
 
 private void calcRange_GetValue(object sender,  DevExpress.XtraReports.UI.GetValueEventArgs e)
 
 {
 
- [OggettoReport] row = (OggettoReport)e.Row;
+ [ReportObject] row = (ReportObject)e.Row;
 
  if (row != null)
 
  {
 
-  var extraData = [OggettoReport].ExtraData.Where(x => x.ExtraDataObject != null && x.ExtraDataObject.Code == “[OggettoExtraData]”).FirstOrDefault();
+  var extraData = [ReportObject].ExtraData.Where(x => x.ExtraDataObject != null && x.ExtraDataObject.Code == “[ExtraDataObject]”).FirstOrDefault();
 
   if (extraData != null)
 
@@ -35,11 +35,11 @@ private void calcRange_GetValue(object sender,  DevExpress.XtraReports.UI.GetVa
 }
 
 //FINE SCRIPT PER EXTRADATA SEMPLICE
-'''
+```
 
 Lo script utilizzato per l'esempio visto durante la creazione dell'extradata “profondità” nella fattura, è il seguente:
 
-```csharp
+```shell
 //INIZIO SCRIPT
 
 private void CalcDepth_GetValue(object sender, DevExpress.XtraReports.UI.GetValueEventArgs e) {
@@ -65,10 +65,9 @@ private void CalcDepth_GetValue(object sender, DevExpress.XtraReports.UI.GetValu
 }
 
 //FINE SCRIPT
-'''
+```
 
-Avvertenze: 
-
- - Questo script estrae un valore unico, nonostante il campo calcolato si possa trovare all'interno di detail report ecc.
-
+:::note Osservazioni
+ - Questo script estrae un valore unico, nonostante il campo calcolato si possa trovare all'interno di detail report ecc.  
 - Tale script è l'unico modo per poter visualizzare gli extradata all'interno del report, quindi per ogni extradata codificato che voglio stampare dovrò scrivere tale script.
+:::

@@ -1,12 +1,6 @@
 ---
-title: C/C Reconciliation Module Tables
+title: Reconciliation C/C Form Tables 
 sidebar_position: 6
 ---
 
-There are no specific tables of this module.
-
-
-
-
-
-
+There are no specific tables for the form in question.

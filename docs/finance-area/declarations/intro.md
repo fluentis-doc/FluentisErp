@@ -25,7 +25,7 @@ Stampe Disponibili
 
 - Stampa della Certificazione Unica: Fornisce un riepilogo dettagliato delle ritenute operate sui percipienti, conforme alle normative fiscali​
 
-- Stampa delle dichiarazioni di intento: Consente di monitorare e verificare i limiti ancora fatturabili per le dichiarazioni di intento​
+- Stampa delle dichiarazioni di intento: Consente di monitorare e verificare i limiti ancora fatturabili per le dichiarazioni di intento​.
 
 
 

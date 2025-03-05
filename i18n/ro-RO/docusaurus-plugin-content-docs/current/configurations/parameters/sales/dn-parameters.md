@@ -55,7 +55,7 @@ Parametrii avizelor de vânzare permit setarea de bază pentru gestionarea corec
 
 **Prioritate gestiune şi şablon de descărcare din liniile articol ale avizelor**: când acest parametru este setat, gestiunea şi şablonul de descărcare sunt citite din liniile avizului, iar dacă nu a fost setat sunt utilizate gestiunea şi şablonul inserate în acest  form de parametri. 
 
-**Încărcare/Descărcare automată**: dacă este activ, descărcarea avizului va fi efectuată automat la activarea opțiunii *Listat*. Dacă nu este activ, descărcarea se poate face cu butonul (vedeți [Inserare aviz](/docs/sales/sales-delivery-notes/insert-delivery-notes/insert-delivery-note)) sau cu procedura relativă.
+**Încărcare/Descărcare automată**: dacă este activ, descărcarea avizului va fi efectuată automat la activarea opțiunii *Listat*. Dacă nu este activ, descărcarea se poate face cu butonul (vedeți [Inserare aviz](/docs/sales/sales-delivery-notes/insert-delivery-notes/sales-dn)) sau cu procedura relativă.
 
 **Aviz articole fictive**: dacă este setat, în timpul descărcării avizului, programul controlează dacă în aviz sunt prezente articole fictive; dacă acestea există, este lansat un mesaj pentru confirmarea operației. În cazul confirmării, tot avizul va fi descărcat (cu excepția articolelor fictive), iar în cazul negării, avizul nu va fi descărcat.
 

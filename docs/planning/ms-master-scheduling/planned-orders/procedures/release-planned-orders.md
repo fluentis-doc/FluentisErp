@@ -4,7 +4,7 @@ sidebar_position: 1
 ---
 
 :::important A cosa serve
-La funzione di "Rilascio Ordini Pianificati" nel sistema Fluentis è progettata per facilitare il passaggio degli ordini pianificati ai loro rispettivi stati operativi. Una volta che gli ordini pianificati sono stati generati, è possibile procedere al loro rilascio utilizzando specifici pulsanti nella ribbon bar. Questo processo varia a seconda del tipo di ordine: produzione, acquisto o conto lavoro.
+La funzione di **Rilascio Ordini Pianificati** nel sistema Fluentis è progettata per facilitare il passaggio degli ordini pianificati ai loro rispettivi stati operativi. Una volta che gli ordini pianificati sono stati generati, è possibile procedere al loro rilascio utilizzando specifici pulsanti nella ribbon bar. Questo processo varia a seconda del tipo di ordine: produzione, acquisto o conto lavoro.
 
 Quando si rilascia un ordine pianificato di produzione, esso diventa un ordine di produzione operativo. Gli ordini pianificati di acquisto generano delle richieste d'acquisto (RDA), mentre gli ordini di conto lavoro pianificati vengono trasformati in ordini di conto lavoro operativi. 
 :::
@@ -15,7 +15,7 @@ La form permette la creazione di:
 - *ordini di conto lavoro* nel caso di ordini pianificati di conto lavoro, o nel caso in cui nella lista fasi di un ordine pianificato di produzione sia presente una fase esterna;  
 - *ordini di produzione*, *lanciati* o *esecutivi* a seconda dell'attivazione di un apposito parametro, nel caso di ordini pianificati di produzione.
 
-Il rilascio degli ordini comporta che questi non siano più visibili tra gli [Ordini pianificati](/docs/planning/ms-master-scheduling/planned-orders/search-planned-orders) e, di conseguenza, non può essere generata una nuova [Schedulazione](/docs/planning/ms-master-scheduling/general-schedule) della commessa di produzione da cui gli ordini pianificati erano stati eventualmente generati tramite schedulazione generale. Gli ordini pianificati presenti nella griglia generati manualmente o tramite elaborazione MPR non presentano alcun legame con le commesse di produzione.
+Il rilascio degli ordini comporta che questi non siano più visibili tra gli [Ordini pianificati](/docs/planning/ms-master-scheduling/planned-orders/search-planned-orders) e, di conseguenza, non può essere generata una nuova [Pianificazione](/docs/planning/ms-master-scheduling/general-schedule) della commessa di produzione da cui gli ordini pianificati erano stati eventualmente generati tramite pianificazione generale. Gli ordini pianificati presenti nella griglia generati manualmente o tramite elaborazione MPR non presentano alcun legame con le commesse di produzione.
 
 ## Filtro
 
@@ -25,9 +25,8 @@ Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **
 
 *Pulsanti specifici*: 
 
-> **Rilascio Ordini Pianificati di produzione**: questo pulsante si attiva solamente se nei filtri viene impostato, nel campo *Rilascio ordini pianificati a*, il tipo ordine di produzione e se nella griglia di risultato è stata selezionata almeno una riga ordine di produzione da rilasciare; cliccando su questa funzionalità il sistema eseguirà il rilascio generando ordini di produzione lanciati o esecutivi, a seconda di come siano stati impostati i parametri all'interno dei [Parametri Fabbisogno Materiali](/docs/configurations/parameters/production/resource-requirements-parameters);  
-> **Rilascio ordini pianificati di Acquisto**: questo pulsante si attiva solamente se nei filtri viene impostato, nel campo *Rilascio ordini pianificati a*, il tipo ordine di acquisto e se nella griglia di risultato è stata selezionata almeno una riga ordine di acquisto da rilasciare; cliccando su questa funzionalità il sistema eseguirà il rilascio generando Richieste d'Acquisto autorizzare oppure non autorizzate, a seconda di come si sia scelto di impostare il parametri all'interno dei  [Parametri Fabbisogno Materiali](/docs/configurations/parameters/production/resource-requirements-parameters);  
-> **Rilascio ordini pianificati di Conto Lavoro**: questo pulsante si attiva solamente se nei filtri viene impostato, nel campo *Rilascio ordini pianificati a*, il tipo ordine di conto lavoro e se nella griglia di risultato è stata selezionata almeno una riga ordine di conto lavoro da rilasciare; cliccando su questa funzionalità il sistema eseguirà il rilascio generando ordini di Conto Lavoro;   
+> **Rilascio**: questo pulsante si attiva solamente se viene selezionata almeno una riga nella griglia dei risultati da rilasciare; cliccando su questa funzionalità il sistema eseguirà:
+il rilascio degli *ordini pianificati di produzione* in *ordini di produzione lanciati o esecutivi*, a seconda di come siano stati impostati i parametri all'interno dei [Parametri Fabbisogno Materiali](/docs/configurations/parameters/production/resource-requirements-parameters); il rilascio degli *ordini pianificati di acquisto* in *Richieste d'Acquisto* *autorizzare* oppure *non autorizzate*, a seconda di come si sia scelto di impostare il parametri all'interno dei  [Parametri Fabbisogno Materiali](/docs/configurations/parameters/production/resource-requirements-parameters); il rilascio degli *ordini pianificati di conto lavoro* in *ordini di Conto Lavoro*.                  
 > **Apri ricerca ordini di produzione**: tramite questo pulsante sarà possibile aprire la Ricerca Ordini di Produzione filtrati con gli stessi criteri utilizzati nella sezione di filtro di questa finestra. Ad esempio se si filtrano gli ordini pianificati in questa schermata in base al numero di commessa 3 dell'anno 2018, la finestra di ricerca ordini di produzione di aprirà già filtrata per la commessa 3 dell'anno 2018.
 
 *Campi specifici*:
@@ -35,7 +34,7 @@ Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **
 **Anno**: indica l'anno dell'ordine pianificato;     
 **Ordine**: indica il numero dell'ordine pianificato;           
 **Livello**: indica il livello dell'articolo oggetto dell'ordine all'interno della distinta base;  
-**Anno/Numero/Codice/Descrizione commessa di produzione**: i campi risulteranno essere vuoti se l'ordine pianificato è stato generato manulamente oppure tramite MRP;  
+**Anno/Numero/Codice/Descrizione commessa di produzione**: i campi risulteranno essere vuoti se l'ordine pianificato è stato generato manualmente oppure tramite MRP;  
 **Data di inizio prevista**: se si tratta di ordine pianificato di acquisto o di conto lavoro questa data rappresenta la data in cui deve essere inviato al fornitore l'ordine di acquisto che verrà successivamente generato con il rilascio dell'ordine stesso; se si tratta di ordine pianificato di produzione questa data rappresenta la data di previsto inizio della prima fase di lavorazione del ciclo dell'articolo;  
 **Data di fine prevista**: se si tratta di ordine pianificato di acquisto o di conto lavoro questa data rappresenta la data in cui deve essere ricevuta la fornitura e quindi coinciderà con la data di previsto ricevimento della riga dell'ordine fornitore che verrà successivamente generato con il rilascio dell'ordine stesso; se si tratta di ordine pianificato di produzione questa data rappresenta la data di prevista fine dell'ultima fase di lavorazione del ciclo dell'articolo;  
 **Quantità confermata**: sarà diversa da zero solamente se l'elaborazione è avvenuta tramite l'MRP; 
@@ -53,14 +52,19 @@ In questo tab è possibile impostare e salvare i parametri che servono per il ri
 
 ### Ordini di Produzione
 
-In questa sezione è possibile, tramite l'attivazione del flag **Generazione ordini di conto lavoro per operazioni esterne**, decidere che, se nella lista fasi dell'ordine pianificato di produzione che si sta rilasciando è presente una fase esterna, venga generato di conseguenza un ordine di conto lavoro per la fase esterna. Solitamente questo flag viene lasciato attivo.
+In questa sezione è possibile:
+
+- tramite l'attivazione del flag **Generazione ordini di conto lavoro per operazioni esterne**, decidere che, se nella lista fasi dell'ordine pianificato di produzione che si sta rilasciando è presente una fase esterna, venga generato di conseguenza un ordine di conto lavoro per la fase esterna. Solitamente questo flag viene lasciato attivo.
+
+- **Rilascio ordini di produzione esecutivi**; se attivo, permette di fare in modo che gli *ordini di produzione* generati tramite il rilascio degli *ordini pianificati di produzione* siano creati già nello stato di *Esecutivi* e quindi non richiedano un'ulteriore procedura di Rilascio.
 
 ### Richieste d'acquisto
 
 Nella sezione è possibile:
 
 - impostare, tramite l'apposita combo box, il **Tipo di richiesta di acquisto** che deve essere generata dal rilascio ordine pianificati di acquisto. In questa combo box viene proposto automaticamente il tipo richiesta di acquisto già impostato nei [Parametri Fabbisogno Materiali](/docs/configurations/parameters/production/resource-requirements-parameters) nella sezione Parametri per il rilascio degli ordini pianificati;      
-- attivando il flag **Proprietà approvvigionamento da Parametri MRP articolo** la procedura creerà le *richieste di acquisto* inserendo la priorità indicata nei [Parametri MRP](/docs/configurations/parameters/production/mrp-parameters/mrp-parameters-intro) del singolo articolo; mentre se non è attivo le *richieste di acquisto* verranno create con la priorità incata nella commessa a cui sono legate;      
+- attivando il flag **Proprietà approvvigionamento da Parametri MRP articolo** la procedura creerà le *richieste di acquisto* inserendo la priorità indicata nei [Parametri MRP](/docs/configurations/parameters/production/mrp-parameters/mrp-parameters-intro) del singolo articolo; mentre se non è attivo le *richieste di acquisto* verranno create con la priorità indicata nella commessa a cui sono legate; 
+- **Rilascio richieste d'acquisto autorizzate**: se attivo, permette di fare in modo che le richieste di acquisto generate tramite il rilascio degli ordini pianificati di acquisto siano create con il flag di *Autorizzato* attivato automaticamente. Diversamente, l'utente che deve generare ordini fornitori da RDA sarà costretto ad autorizzare tutte le righe della richiesta di acquisto prima di poter generare un ordine da essa. È possibile comunque autorizzare solo alcune delle righe della RdA e quindi procedere alla generazione ordini fornitori partendo solo dalle righe autorizzate;    
 - fare in modo, attivando il flag **Arrotonda richiesta di acquisto**',che la procedura di rilascio ordine pianificato di acquisto arrotondi all'intero superiore la quantità che viene inserita nella riga della richiesta di acquisto che viene generata dal rilascio degli ordini pianificati di acquisto, nel caso in cui siano presenti quantità con decimali;  
 - decidere il metodo di raggruppamento: attivando infatti il flag **Raggruppa al più presto**, la procedura di rilascio effettua un raggruppamento di ordini pianificati di acquisto generati per lo stesso articolo; nella casella **Per un periodo in giorni di** si imposta il numero di giorni di range entro il quale può essere effettuato il raggruppamento, considerando le date di previsto ricevimento degli articoli, quindi le date di fine ordine pianificato di acquisto;  
 - decidere, nel caso non sia presente il fornitore nell'ordine pianificato di acquisto, se **Accettare gli ordini senza il fornitore**, **Tralasciare gli ordini senza il  fornitore** oppure **Accettare come fornitore il seguente conto** specificato nelle apposite caselle.
@@ -90,7 +94,7 @@ Per lanciare il ripristino, selezionare uno o più ordini e cliccare il pulsante
 
 *Condizioni per la procedura di ripristino*:
 
-Per l'**ordine pianificato di produzione**: solo se l'ordine di produzione generato si trova nello stato di *Lanciato*; nel caso in cui l'ordine di produzione sia *Esecutivo* è necessario eseguire il ripristino del rilascio dell'ordine di produzione, mentre nel caso in cui sia già *Evaso* non è più possibile eseguire il ripristino dell'ordine pianificato, a meno che non si proceda a ritroso partendo dal rollback della registrazione della segnalazione di produzione;  
+Per l'**ordine pianificato di produzione**: solo se l'ordine di produzione generato si trova nello stato di *Lanciato*; nel caso in cui l'ordine di produzione sia *Esecutivo* è necessario eseguire il ripristino del rilascio dell'ordine di produzione, mentre nel caso in cui sia già *Evaso* non è più possibile eseguire il ripristino dell'ordine pianificato, a meno che non si proceda a ritroso partendo dal rollback della registrazione della dichiarazione di produzione;  
 Per l'**ordine pianificato di acquisto**: solo se la riga di richiesta di acquisto generata si trova nello stato di *Non Evasa*; nel caso in cui la riga di richiesta di acquisto sia già stata evasa con la creazione di un ordine fornitore, sarà necessario procedere a ritroso partendo dal documento di acquisto fino al quale si è già arrivati;  
 Per l'**ordine pianificato di conto lavoro**: solo se la riga dell'ordine di conto lavoro generato non sia stata ancora evasa, oppure non sia stato generato una DDT di consegna per il materiale relativo a quella riga di ordine di conto lavoro.
 

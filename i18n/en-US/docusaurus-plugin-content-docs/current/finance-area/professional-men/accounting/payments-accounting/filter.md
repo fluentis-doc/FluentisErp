@@ -1,21 +1,23 @@
 ---
-title: Filter
+title: Filter 
 sidebar_position: 2
 ---
 
-On the first section the user identifies the list of compensations maturities to be paid: the manual modification, of amounts to be paid, is allowed.  This will cause a recalculation of the related share of withholding-tax.
+In the first tab, the deadlines for compensation payments are searched and selected: manual modification of the amounts to be paid is allowed, which will cause a recalculation of the related withholding share.
 
-RIBBON BAR: it represents the Form menu, that is the area in which it is possible to perform actions linked to the procedure in use. The list of features is the following:
+Upon the subsequent opening of the form, the remaining amount to be paid will be displayed in this case.
+
+ 
+
+WARNING: before executing the accounting command, check the parameters in the tab **[Parameters](/docs/finance-area/professional-men/accounting/payments-accounting/parameters)**.
+
+![](/img/it-it/finance-area/professional-men/accounting/payments-accounting/filter/image01.png)
 
 
 
-| Function | Meaning |
+
+
+| Function | Extended Description |
 | --- | --- |
-| Search Payments | It searches the list of payments to be performed. |
-| Payments Accounting | It performs the accounting of the selected payments. |
-
-
-
-
-
-
+| Search Payments | Searches the list of payments to be made. |
+| Payments Accounting | Executes the accounting of the selected payments. |

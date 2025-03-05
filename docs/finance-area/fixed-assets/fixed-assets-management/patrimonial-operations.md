@@ -3,9 +3,11 @@ title: Operazioni patrimoniali
 sidebar_position: 2
 ---
 
-All'interno della presente scheda si inseriscono i dettagli delle varie operazioni a libro cespite. 
+All'interno della presente scheda si inseriscono i dettagli delle varie operazioni a libro cespite.
 
- | Funzione | Significato |
+Rappresenta pertanto, assieme al tab Dettaglio, la sezione principale della scheda cespite.
+
+| Funzione | Significato |
 | --- | --- |
 | Nuova operazione | Attiva il cursore nella prima griglia delle operazioni patrimoniali. |
 | Cancella operazione | Cancella l'operazione selezionata nella griglia dell'operazione patrimoniale. |
@@ -23,7 +25,9 @@ All'interno della presente scheda si inseriscono i dettagli delle varie operazio
 
 ### GRIGLIA SUPERIORE
 
-La prima riga sarà sicuramente relativa all'acquisto iniziale del cespite: la **data dell'operazione**, il suo numero **progressivo** e il successivo **importo** inserito nella colonna relativa: 
+Questa griglia vien utilizzata sia per operazioni di acquisto (o incremento) del cespite , sia per operazioni di vendita (totale o parziale).
+
+La prima riga è sempre utilizzata per l'acquisto iniziale del cespite: la **data dell'operazione**, il suo numero **progressivo** e il successivo **importo** inserito nella colonna relativa: 
 
 **Costo originario**: se l'importo è relativo ad una operazione di acquisto e rappresenta dunque il costo storico;
 
@@ -177,3 +181,8 @@ scaricato dal libro cespiti per la metà.
 
 ![](/img/it-it/finance-area/fixed-assets/fixed-assets-management/patrimonial-operations/selling3.png)
 
+:::tip[Suggerimento]
+L'alienazione cespite, in particolare nei casi più semplici di alienazione totale, può essere gestita con maggiore automatismo attraverso la registrazione contabile della vendita effettuata con una causale che ha abilitato la funzionalità per i cespiti e con tipo operazione Alienazione totale (o parziale).
+
+Nella scrittura comparirà [**l'apposita sezione Cespite**](/docs/finance-area/ledger-records/records/create-ledger-record/fixed-assets-tab)
+:::

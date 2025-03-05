@@ -7,7 +7,7 @@ La procedura si apre tramite il percorso **Acquisti > Ricevimento merci > Carico
 
 La maschera si compone di tre tab: *Filtro*, *Parametro* e *Rollback*.     
 
-### Filtro
+### 1. Filtro
 
 In questo tab, l'utente ha la possibilità di inserire filtri per cercare il ricevimento merci da caricare in magazzino.   
 È possibile filtrare per: *Fornitore*, *Numero ricevimento*, *Da/A data ricevimento*.
@@ -19,13 +19,12 @@ Se nei [Parametri ordini fornitori](/docs/configurations/parameters/purchase/pur
 Se la *Data carico* non è valorizzata la registrazione di magazzino sarà creata con la *Data registrazione magazzino* inserita in questa form oppure con la data corrente, se il campo *Data registrazione* non è valorizzato.
 :::
 
-*Pulsanti specifici*:
-
+#### Pulsanti specifici  
 > **Ricerca**: permette di cercare i ricevimenti da registrare in magazzino.  
 > **Carico**: permette di eseguire il carico dei ricevimenti selezionati, in base ai parametri inseriti nel tab successivo.
 
 
-### Parametri
+### 2. Parametri
 
 Nel tab *Parametri* è possibile scegliere, con i relativi flag, come trattare eventuali articoli non codificati oppure senza magazzino e causale presenti all'interno del documento. Le opzioni disponibili sono:  
 
@@ -41,12 +40,12 @@ Nel tab *Parametri* è possibile scegliere, con i relativi flag, come trattare e
 Se nei [Parametri ordini fornitori](/docs/configurations/parameters/purchase/purchase-orders-parameters) > tab Carico il flag **Priorità magazzino e causale di carico** è attivo, saranno sempre utilizzati il *Magazzino* e la *Causale* inseriti nei parametri, ignorando quelli presenti nel ricevimento merci per ciascuna riga articolo, altrimenti avranno priorità quelli inseriti nel documento.  
 :::
 
-### Rollback
+### 3. Rollback
 
 In questo tab l'utente ha la possibilità di cercare, visualizzare e annullare le operazioni di registrazione eseguite.
 
 I dati nelle griglie in basso, **Ricevimento merci** e **Registrazione**, corrispondono alla registrazione di carico selezionata nella griglia superiore (dopo aver filtrato i dati). Inoltre, in queste ultime due griglie, c'è la possibilità di visualizzare il ricevimento merci e la sua registrazione di magazzino mediante doppio click sulla riga.
 
-*Pulsanti specifici*:
+#### Pulsanti specifici  
 > **Ricerca**: permette di cercare le fatture caricate. Il risultato di questa procedura viene visualizzato nelle griglie di risultato.  
 > **Rollback**: permette di cancellare l'intera registrazione di carico selezionata.  

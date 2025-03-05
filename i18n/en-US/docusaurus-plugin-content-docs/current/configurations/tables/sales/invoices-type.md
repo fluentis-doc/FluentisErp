@@ -1,69 +1,92 @@
 ---
-title: Invoices Type
-sidebar_position: 16
+title: Sales Invoice Types 
+sidebar_position: 20
 ---
 
-The invoices type is used in order to determine properties of an invoice.
+:::tip[Fast Start]
+The table is affected by the [**Fast Start**](/docs/guide/fast-start) procedure.
 
-The ribbon bar represents the Form menu, that is the area in which it is possible to perform actions linked to the procedure in use. The possible features list is the following:
+If you intend to configure manually, refer to the checklist of the linked page.
+:::
 
+The table opens through the path **Tables > Sales > Sales Invoice Types** and is used to determine the properties of an invoice;
 
+It allows you to insert new records or search for existing ones to view, modify, or delete them;
 
-| Function | Meaning |
-| --- | --- |
-| Search | Button to search a document type.  |
-| Insert | Button to insert a new document type.  |
-| Delete | Button to delete the document type.  |
-| Print Preview | Button to perform the print preview. |
-| Print | Button to print according to the filters set and to the printer configuration. |
+The form consists of a filter area and a result area; Once all desired filters are set, just click the **Search** button to view the results in the result grid;
 
+To insert new records, you need to click on the first empty row in the grid or press the **New** button;
 
+**Type/Description**: invoice type and description of the invoice type; the code entered must be unique;
 
-| Function | Meaning |
-| --- | --- |
-| Type  | Invoice Type. |
-| Description  | Invoice type description. |
-| Invoice Nature | Numeration type associated to the invoice type. |
-| Num. Type / Description | Numeration type associated to the invoice type. |
-| From Order | If it is set, it means that the DN can be created by executing a sales order. |
-| Direct Invoice | If it is set, it means that the invoice has a direct type and it would be necessary to insert data for transport. |
-| Tran. Code | Transaction code used for the intrastat declaration. |
-| In Statistic | If it is set, it means that this invoice type is considered according to statistics. |
-| Proforma | If it is set, the invoice type is pro-forma and it cannot be accounted. |
-| Template / Template Description | Ledger template used in order to account the invoice. |
-| Cost Template / Cost Template Description | Cost template used in order to account the invoice within analytical accounting. |
-| Notes | It is possible to insert some descriptive notes of invoice type. |
-| Customer Control | During the order detail account insertion the account type is obligatory the customer. |
-| Block Printed Doc. | If it is set, it is not possible to edit an already printed invoice. |
-| Intracomunitar | If it is set, it occurs when customer nation is CEE; on the contrary, it occurs in case that the invoice and customer type have not the same type, it is necessary to give a warning message. |
-| Exec. Proforma Invoice | If it is set and the invoice is pro-forma, there is the order execution. Otherwise the order is not executed. |
-| Transport Template | Transport template description. |
-| Credit | If it is set, this invoice type returns into the credit control. |
-| Exclude Block | If it is set, it means that if the user goes over the credit and document is blocked, it is possible however to insert and print the document. |
-| Stock Template / Stock Template Description | It is the movement template of used goods that is contained in this invoices type. |
-| Warehouse / Warehouse Description | It is a warehouse for goods contained in this invoices type. |
-| Group Maturity Val. | If it is set, it is possible to group maturity values within the invoices accounting. |
-| Without Add up Quantities | If it is set, and after the execution of this orders type, the executed quantities are reported in the execution document as regards single execution lines. |
-| VAT Sales Agr. | If it is set, it is necessary to search the agricultural VAT code for item. If it does not exist it is necessary to consider the normal VAT code. |
-| Ctrl Unloaded PK | If it is set, when the user creates a delivery note from an unloaded PK, a flag unloaded for the delivery note can be automatically activated. |
-| Block PK Qty | It blocks the quantity and the alternative quantity into the delivery note created from pallet list. |
-| Calculate Commissions | If it is set, it is possible to calculate the agents' commissions in case of invoices of this type. |
-| Disconnect DN | If it is set, it is possible to unload even the deferred invoices. |
-| EDI Management | If it is set, it is possible to create an EDI file as regards invoices of this type. |
-| Not Execute PK | If it is set, by creating the invoice from picking, the same picking is executed. |
-| Price with VAT | If it is set, prices of this invoices type will include VAT. |
-| Econ. Accrual | If it is set, the invoice type has economic accrual. |
-| Econ. Accrual Template | This economic accrual template is used in order to account invoices. |
+**Numeration:** in this field, the appropriate numeration code must be entered; For further details, refer to the item on [fluentis numerations](/docs/configurations/tables/fluentis-numerations);
 
+**Invoice nature**: in this field, the nature associated with the invoice type must be entered; the value will be selected from a list including Invoice, Credit note, etc.;
 
+**Order**: if active, the invoice can be created from the order execution through the appropriate procedure; otherwise, the 'get from orders' button will be deactivated;
 
-| Function | Meaning |
-| --- | --- |
-| Print Report | It is possible to define some reports to be used according to the order typology. |
-| Number of Copies | It is possible to define the number of copies to be printed according to the invoice typology. |
+**Direct**: if active, it means that the invoice is of direct type and the transportation data must also be filled in the invoice; if not active, the invoice will be of deferred type and the transportation data will be retrieved from the Delivery Note;
 
+**Intrastat Transaction Nature**: in this field, the transaction code used for the intrastat declaration must be entered; For further details, refer to [Nature of intrastat transactions](/docs/configurations/tables/finance/nature-of-intrastat-transaction);
 
+**In statistic**: if active, invoices of this type will be included in the statistics and will be visible in the *Invoiced* prints;
 
+**Proforma**: if active, the invoice is of proforma type and cannot be accounted for;
 
+**Template**: in this field, the ledger template used for the invoice's accounting must be entered; For further details, refer to [general ledger templates](/docs/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates/recording-detail);
 
+**Document Type**: in this field, the cost template used for the accounting of the invoice in analytic accounting must be entered;
 
+**Notes**: free text field where descriptive notes about the invoice type can be entered;
+
+**Customer ctrl.**: if active, this flag allows the system to check the type of register of the account/detail account that has been entered in the document to ensure that it is strictly a customer; If not, the system will notify the user with an error message; It is *mandatory* to activate it for all types of sales invoices;
+
+**Block listed document**: if active, this flag does not allow modifying an invoice that is already marked with the *Printed* flag set in the header;
+
+**Intracomunitar**: if active, the system checks that the customer's country is a *EEC country*; This flag should be *set only on intracomunitar invoice types*; If there is no link between the customer and the intracomunitar invoice type, the system will return a warning message;
+
+**Execution proforma invoice**: if set, and the invoice is proforma, the execution execute the order; otherwise, the order remains not executed;
+
+**Reason for transport**: Free text field where a reason for transportation that can be printed on the invoice should be indicated;
+
+**Credit**: if active, invoices of this type will fall under the credit limit control;
+
+**Esclude lock:** refers to the lock for exceeding the credit limit and is therefore included in the Lock Manager management present in the treasury area among the procedures for Using Credits. If active, the system for this invoice type will not consider the document lock due to exceeding the credit limit but will allow the user to insert and print the document; if not active, the invoice type will be blocked if the credit limit is exceeded, and the user will be prevented from printing the document;
+
+**Warehouse/Description of warehouse**: in these fields, the [warehouse](/docs/configurations/tables/logistics/warehouses) of commitment for the items present in that particular invoice type will be indicated; the specified warehouse is reported in all item lines included in invoices of this type; 
+
+**Template/Warehouse template description**: in these fields, the [movement template](/docs/configurations/tables/logistics/warehouse-templates) for the committed items contained in that specific type of order will be indicated; the specified reason will be reported in all item lines included in orders of this type; 
+
+**Maturity value grouping**: if active, in the accounting of invoices, the lines will be grouped; For further details, refer to [maturity value grouping](/docs/finance-area/maturity-values/maturity-values/maturity-value-grouping);
+
+**Agricultural VAT for sales**: if active, during the creation of delivery notes, the system will check if an agricultural VAT code is present for the item used; if not, the VAT code present in the item's register will be used;
+
+**Check unloaded Picking**: if active, when creating an invoice from a downloaded picking, the downloaded flag for the delivery note is automatically activated; If not active, the flag will not be activated;
+
+**Block Picking Quantity**: if active, it blocks the quantity and alternative quantity in the invoice created from the Loading Unit list; If not active, it does not block the quantity but leaves it free; It is recommended to always activate this flag if using picking and Loading Unit management;
+
+**Calculate Commissions**: if active, invoices belonging to this type will be counted in the calculation of agent commissions;
+
+**Disconnect D.N.**: if active, it is also possible to download deferred invoices from the warehouse (Normally, warehouse download occurs via D.N.);
+
+**Not execute Picking**: if active, will not execute the picking if an invoice is generated;
+
+**Price including VAT**: The management of VAT-included prices is activated through this parameter present in all documents in the sales area starting from sales price lists. In the price recovery of a document with the VAT Price type, it searches the price lists, with the same VAT Price flag set, and calculates discounts starting from the VAT-included price. From the VAT-included price, the non-VAT price is calculated using the VAT rate of either the customer contact or the item register. In the documents, the Price and VAT Price columns are visible. Attention! If there is no valid price list with the VAT Price flag set and there is a sales price in the item register, the sales price will be proposed as VAT Price. To understand how the Price Recovery and VAT and non-VAT prices function, refer to the item Price Recovery and Discounts in sales documents.
+
+**Economic competence**: if active, the invoice type has economic competence, and therefore, it will be necessary to set the dates of the competence period;
+
+**Economic accrual template**: in this field, the economic accrual template used in invoicing must be indicated; This value can be chosen from a list; For further details, refer to [general ledger templates](/docs/configurations/tables/finance/ledger-records-templates/search-ledger-records-templates);
+
+**Extra Data Matrix Management**: if active, it allows you to visualize, in the case of item management with a matrix, an additional tab for entering the quantity values for each matrix cell; If not active, this tab and the corresponding matrix are not displayed;
+
+**Print Report**: in this field, it is possible to set the default print to be used for this type of document; remember that, during the document printing phase, you will need to select the 'Multiple Prints' report to automatically use the default print;
+
+**Number of copies**: in this field, the number of document copies to be printed is set;
+
+**Recycle Management**: this button enables the Recycle Management for the invoice type;
+
+**Fixed Assets Management**: this flag enables the management of fixed assets in the invoice type, and the type of asset operation must be specified in the next field;
+
+**Operation Type**: in this combo box, you can select the type of fixed asset operation from various options (revaluation, destruction, gain, etc.).
+
+**Discount Type/Description**: in this column, the type of discount can be associated to be proposed when discounts are entered directly in the *Item Discounts* column of the document item grid (for more details see the article [Simplified Discount Widget Management](/docs/sales/sales-flow/discount-widget)).

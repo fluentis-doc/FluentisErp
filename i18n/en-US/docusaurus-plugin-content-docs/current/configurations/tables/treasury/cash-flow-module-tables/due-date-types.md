@@ -3,20 +3,12 @@ title: Due Date Types
 sidebar_position: 3
 ---
 
-In this table it is possible to view the extra-accounting due dates typologies that will managed manually within cash flow. It is possible to associate a bank detail account canalization of flux to every typology.
+:::tip[Fast Start]
+The table is affected by the [**Fast Start**](/docs/guide/fast-start) procedure.
 
-RIBBON BAR: it represents the Form Menu, that is the area in which it is possible to perform actions linked to the procedure in use. The list of features is the following:
+In case you wish to configure manually, refer to the checklist on the linked page.
+:::
 
+In this table, the types of off-balance due dates that will be managed manually within the cash flow are defined. Each type can be associated with a bank detail account for directing the flow.
 
-
-| Function | Meaning |
-| --- | --- |
-| Search | Button to perform the search of due date types according to filters set. |
-| New | Button to place the cursor during the insertion of a new line. |
-| Delete | Button to delete the selected due date type. |
-
-
-
-
-
-
+The types coded here represent, more than anything else, a grouping or a label for the actual insertion of the details that is done through the form [**Off-Balance Due Dates**](/docs/treasury/cash-flow/off-balance-due-dates).

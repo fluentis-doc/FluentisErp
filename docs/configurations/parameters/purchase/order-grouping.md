@@ -8,7 +8,7 @@ Questi parametri generali di raggruppamento devono essere configurati una sola v
 In questo modo, si garantisce una gestione flessibile e adattabile delle evasioni, permettendo di soddisfare le esigenze specifiche di ogni cliente o fornitore, pur mantenendo una configurazione centralizzata e coerente per la maggior parte delle operazioni.
 
 In questa maschera vengono decise le regole di raggruppamento per la procedura:  
--  [**Creazione Ordini fornitori**](/docs/sales/sales-orders/search-sales-orders/) dal filtro di Ricerca Ordini Clienti   
+-  [**Creazione Ordini fornitori**](/docs/sales/sales-orders/create-new-sales-orders/search-sales-orders/) dal filtro di Ricerca Ordini Clienti   
 
 Per la creazione di Ordini fornitori da Ordini clienti è tuttavia consigliato utilizzare la procedura di [creazione automatica ordini](/docs/purchase/purchase-orders/procedures/create-purchase-orders-from-purchase-requests) con i relativi *Parametri*. 
 

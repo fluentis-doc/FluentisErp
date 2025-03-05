@@ -5,7 +5,7 @@ sidebar_position: 3
 
 Il meccanismo di gestione dei resi e delle note di credito permette di amministrare i flussi di ritorno delle merci e i relativi aggiustamenti finanziari. Ecco come funziona tipicamente:
 
-**Registrazione del Reso**: Quando un cliente restituisce un prodotto, il processo inizia con la creazione di un documento di reso nel gestionale. Questo documento può essere creato manualmente (inserendo un DDT con Natura *Reso* o una fattura con Natura *Nota di credito*), oppure automaticamente con la procedura di **Storno** presente nella [Ricerca](/docs/sales/sales-delivery-notes/search-sales-dn) dei documenti. Nel caso in cui venga creato il DDT di reso, da esso potrà essere automaticamente creata la nota di credito con le apposite procedure.     
+**Registrazione del Reso**: Quando un cliente restituisce un prodotto, il processo inizia con la creazione di un documento di reso nel gestionale. Questo documento può essere creato manualmente (inserendo un DDT con Natura *Reso* o una fattura con Natura *Nota di credito*), oppure automaticamente con la procedura di **Storno** presente nella [Ricerca](/docs/sales/sales-delivery-notes/insert-delivery-notes/search-sales-dn) dei documenti. Nel caso in cui venga creato il DDT di reso, da esso potrà essere automaticamente creata la nota di credito con le apposite procedure.     
 
 **Aggiornamento delle Scorte**: una volta movimentato a magazzino il documento di storno, il sistema aggiorna automaticamente le scorte del magazzino per riflettere il rientro della merce, riportando i prodotti resi come disponibili.      
 

@@ -8,51 +8,79 @@ Attraverso questa finestra vengono settati tutti i parametri che riguardano la g
 
 ### Generale
 
-**Tipo DDT**  
-In questa sezione si imposta il tipo DDT di vendita che deve essere proposto di default quando si utilizza la procedura di creazione DDT di consegna di conto lavoro. Questo tipo DDT utilizzerà in automatico magazzino e causale impostati nelle apposite combo della voce 'Consegne materiali a terzisti' che si trova nella finestra dei parametri di conto lavoro.
+*Dati proposti negli ordini*:   
+
+> **Rigenerazione materiali nell'aggiornamento dell'articolo**: se il flag è attivato, ogniqualvolta si effettui una modifica sulla riga articolo presente nel tab *Articoli da produrre* dell'ordine di conto lavoro la procedura rigenera le informazioni relative ai materiali da consegnare e da impiegare da inserire nell'ultimo tab dell'ordine stesso.  
+>   
+> **Dati materiali proposti**: visualizza le 4 differenti possibilità che l'utente ha di far proporre automaticamente alla procedura i materiali nel tab Materiali da Consegnare dell'ordine di conto lavoro.  
+> Le possibilità sono le seguenti:  
+> 1. *Da ultima consegna effettuata presso lo stesso terzista*: si controlla l'ultimo ordine di conto lavoro generato per lo stesso terzista e in cui è presente lo stesso articolo da produrre.    
+> 2. *Esplosione livello da struttura distinta*: si controlla la distinta base dell'articolo inserito nel tab Articoli da Produrre.    
+> 3. *Consegna dello stesso articolo da produrre*: si inserisce nel tab Materiali da Consegnare lo stesso articolo inserito nel tab Articoli da Produrre.    
+> 4. *Nessun materiale*: nel tab Materiali da Consegnare non viene proposto alcun materiale.
+> 5. *Dall'ordine di produzione*: usato per gli ordini di conto lavoro generati mediante rilascio di un ordine pianificato di conto lavoro oppure da un ordine di produzione con fase esterna.   
+>
+> **Versione**: consentono di selezionare la versione della distinta base.
+
+*Considera le disponibilità provenienti da*:    
+
+> Questa sezione permette di decidere se considerare o no le disponibilità provenienti da **Conto Lavoro** / **Produzione** / **Acquisti** / **Magazzino** / **Vendite**; ciascuno di questi flag sta a indicare la volontà da parte dell'utente di fare in modo che la procedura di creazione dell'ordine di conto lavoro consideri la disponibilità dei materiali in base alle informazioni che provengono dalle singole aree applicative di ERP. Quindi per esempio se l'utente sceglie di attivare il flag solo su Acquisti e non su Vendite, significa che saranno considerate le disponibilità provenienti dagli ordini fornitori, dalle DDT e fatture di acquisto e dalle richieste di acquisto e non quelle provenienti da ordini clienti, DDT e fatture di vendita.   
+
+*Prodotti finiti*:   
+
+> **Proposta dell'ultimo prezzo di lavorazione effettuato**: se attivato, consente di far proporre nell'ordine di conto lavoro, nella casella del prezzo unitario di lavorazione del tab *Articoli da Produrre*, il prezzo dell'ultimo ordine di conto lavoro emesso per quell'articolo per lo stesso terzista.
+>   
+> **Considera le quantità in base al lotto economico** e **Considera i multipli del lotto economico**: permette di scegliere, al momento dell'inserimento di un articolo nel tab *Articoli da produrre* dell'ordine di conto lavoro, se considerare le quantità degli articoli stessi in base al lotto economico, e/o considerare eventualmente anche i multipli del lotto.  
+
+
+**Tipo DDT**: in questa sezione si imposta il [Tipo DDT di vendita](/docs/configurations/tables/sales/delivery-notes-type) che deve essere proposto di default quando si utilizza la procedura di creazione DDT di consegna di conto lavoro. Questo tipo DDT utilizzerà in automatico magazzino e causale impostati nelle apposite combo della voce "Consegne materiali a terzisti" che si trova nella finestra dei parametri di conto lavoro.
+
+**Unità di misura volume predefinita**: permette di indicare l'unità di misura da utilizzare di default per i volumi.   
+
+**Unità di misura pesi predefinita**: permette di indicare l'unità di misura da utilizzare di default per i pesi.   
+
+**Valor. lavorazione materiali a costo**: permette di definire se la valorizzazione della lavorazione dei materiali debba avvenire a costo ultimo o a costo medio. Quindi si tratta di un metodo per decidere se i materiali utilizzati dai terzisti debbano essere imputati alla lavorazione utilizzando il  costo ultimo oppure il  costo medio tra quelli inseriti nell'anagrafica dell'articolo stesso. Inoltre, è possibile, selezionando i flag **Lotti** e/o **Commessa di produzione**, andare a proporre come costo del materiale il costo ultimo/Medio/standard per il relativo lotto e/o commessa di produzione in base ai flag attivati.    
+
+*Evasione*:   
+
+> **Visualizzazione griglia di evasione**: se attivo, nelle procedure di evasione ordine in DDT di conesgna o nel rientro sarà visibile la griglia di evasione.   
+> 
+> **Visualizzazione tree evasione**: se attivo, nelle procedure di evasione ordine in DDT di conesgna o nel rientro sarà visibile la struttura gerarchica. Questi due flag posono essere attivati in concomitanza.    
+
 
 **Codice operatore obbligatorio**: se attivo, permette di decidere se sia necessario inserire il codice operatore nel momento in cui si inserisce la DDT di consegna di conto lavoro.
 
-**Dati materiali proposti**: visualizza le 4 differenti possibilità che l'utente ha di far proporre automaticamente alla procedura i materiali nel tab Materiali da Consegnare dell'ordine di conto lavoro.  
-Le possibilità sono le seguenti:  
-1. *Da ultima consegna effettuata presso lo stesso terzista*: si controlla l'ultimo ordine di conto lavoro generato per lo stesso terzista e in cui è presente lo stesso articolo da produrre;  
-2. *Esplosione livello da struttura distinta*: si controlla la distinta base dell'articolo inserito nel tab Articoli da Produrre;  
-3. *Consegna dello stesso articolo da produrre*: si inserisce nel tab Materiali da Consegnare lo stesso articolo inserito nel tab Articoli da Produrre;  
-4. *Nessun materiale*: nel tab Materiali da Consegnare non viene proposto alcun materiale.
+**Proposta automatica serial number per l'articolo rientrato se presente anche come materiale consumato**: nei rientri di conto lavoro questo flag attivo permette di far proporre in automatico il serial number per l'articolo.
 
 **Controlla disponibilità**: se attivo, permette di decidere se fare in modo che la procedura controlli o meno la disponibilità proveniente dai flag impostati nella sezione *Considera le disponibilità provenienti da*.
 
-**Nessun materiale in consegna**: se attivo, fa in modo che nel tab *Materiali da consegnare* non sia inserito alcun articolo per nessun articolo da produrre.
+**Disponibilità obbligatoria**: se attivo, impedisce l'inserimento di materiali in ordini di conto lavoro nel caso di mancata disponibilità alla data dell'eventuale consegna al terzista.
 
-**Disponibilità materiali**: se attivo, fa in modo che la procedura consideri anche la disponibilità dei materiali da impiegare nel corso dell'effettuazione del rientro da conto lavoro.
+**Nessun materiale in consegna**: se attivo, fa in modo che nel tab *Materiali da consegnare* non sia inserito alcun articolo per nessun articolo da produrre.
 
 **Carico/Scarico automatico**: se attivo, permette all'utente di fare in modo che le movimentazioni di magazzino in uscita avvengano automaticamente non appena la DDT di consegna venga stampata. Questo consente di saltare lo step dello scarico dei  DDT di consegna di conto lavoro
 
-**Blocca inserimento documento in date festive**: se attivo, impedisce l'inserimento di un ordine, di una DDT e di un rientro di conto lavoro in date festive.
+**Registrazioni di magazzino con data del documento**: 
+per la registrazione dei **DDT di consegna**, se questo flag è attivo, viene usata la *Data trasporto* (presente nel tab *Riepiloghi* > *Destinatario*), se valorizzata, altrimenti viene considerata la data di creazione del documento presente in testata. Se il flag non è attivo, lo scarico dall'interno del documento viene sempre effttuato con la data corrente.    
+Per la registrazione dei **Rientri di conto lavoro**: se il flag è attivo viene sempre utilizzata la *Data rientro* presente in testata; se non attivo la registrazione dall'interno del documento viene effettuata con la *Data documento def.* presente in testata.
 
-**Costo zero in assenza di listino**: se attivo, consente l'inserimento di un articolo nel tab *Articoli di Produrre* dell'ordine di conto lavoro senza che la procedura inserisca come prezzo unitario di lavorazione il costo ultimo dell'articolo preso dalla sua anagrafica; quindi viene inserito un prezzo unitario uguale a zero.
+**Blocca inserimento documento in date festive**: se attivo, impedisce l'inserimento di un ordine, di una DDT e di un rientro di conto lavoro in date festive.
 
 **Controllo terzista di riferimento per gli articoli**: se attivo, consente all'utente di fare in modo che la procedura di creazione degli ordini di conto lavoro controlli se l'articolo che si sta inserendo nel tab *Articoli da Produrre* abbia, come fornitore preferenziale, il terzista inserito nella testata dell'ordine stesso.
 
-**Disponibilità obbligatoria**: se attivo, impedisce l'inserimento di materiali in ordini di conto lavoro nel caso di mancata disponibilità alla data dell'eventuale consegna al terzista.
+**Lotti e numeri serali obbligatori**: se attivato, obbliga l'utente ad inserire in tutti i documenti il lotto dell'articolo inserito nel documento stesso, sempre che l'articolo sia gestito a lotti o a serial numbers.
 
-**Proposta dell'ultimo prezzo di lavorazione effettuato**: se attivato, consente di far proporre nell'ordine di conto lavoro, nella casella del prezzo unitario di lavorazione del tab *Articoli da Produrre*, il prezzo dell'ultimo ordine di conto lavoro emesso per quell'articolo per lo stesso terzista.
+**Ricalcola trasporto**: questo flag fa in modo che nel tab Trasporto del DDT vengano riportati i totali di peso, volume e colli delle righe del documento; senza questo flag, i campi non saranno compilati.
 
-**Valor. lavorazione materiali a costo**: permette di definire se la valorizzazione della lavorazione dei materiali debba avvenire a costo ultimo o a costo medio. Quindi si tratta di un metodo per decidere se i materiali utilizzati dai terzisti debbano essere imputati alla lavorazione utilizzando il  costo ultimo oppure il  costo medio tra quelli inseriti nell'anagrafica dell'articolo stesso. Inoltre, è possibile, selezionando i flag *Lotti* e/o *Commessa di produzione*, andare a proporre come costo del materiale il costo ultimo/Medio/standard per il relativo lotto e/o commessa di produzione in base ai flag attivati.    
+**Verifica articoli in esaurimento**: se attivato, il sistema fa un controllo sulla disponibilità degli articoli in riga ordine ed avvisa qualora l'articolo fosse in esaurimento, ovvero se nell'[anagrafica dell'articolo](/docs/erp-home/registers/items/create-new-items/item-registry/generality) è stato attivato il flag *In esaurimento*.
 
-**Versione**: consentono di selezionare la versione della distinta base.
+**Attiva il controllo qualità**: work in progress.
 
-**Dati dei materiali proposti negli ordini di conto lavoro** è costituita a sua volta da altre 4 sezioni:
+**Gestione doppia unità misura**: solo se attivato, il sistema può gestire l'unità di misura alternativa nei documenti di conto lavoro.
 
-1. **Considera le disponibilità provenienti da**: è possibile decidere se considerare o no le disponibilità provenienti da Conto Lavoro / Produzione / Acquisti / Magazzino / Vendite; ciascuno di questi flag sta a indicare la volontà da parte dell'utente di fare in modo che la procedura di creazione dell'ordine di conto lavoro consideri la disponibilità dei materiali in base alle informazioni che provengono dalle singole aree applicative di ERP. Quindi per esempio se l'utente sceglie di attivare il flag solo su Acquisti e non su Vendite, significa che saranno considerate le disponibilità provenienti dagli ordini fornitori, dalle DDT e fatture di acquisto e dalle richieste di acquisto e non quelle provenienti da ordini clienti, DDT e fatture di vendita;
+**Proposta automatica UM alternativa**: se attivato, fa in modo che venga proposta la quantità relativa all'unità di misura alternativa, a patto che sull'anagrafica dell'articolo ne sia stata impostata una di default. È possibile attivare questo flag solo se il flag precedente è stato attivato.
 
-2. **Prodotti finiti** (flag): permette di scegliere, al momento dell'inserimento di un articolo nel tab *Articoli da produrre* dell'ordine di conto lavoro, se considerare le quantità degli articoli stessi in base al lotto economico, e/o considerare eventualmente anche i multipli del lotto;
-
-3. **Materiali**: permette di scegliere, al momento dell'inserimento di un articolo nel tab *Articoli da produrre* dell'ordine di conto lavoro, se considerare per i materiali da consegnare le quantità degli articoli stessi in base al lotto economico, e/o considerare eventualmente anche i multipli del lotto;
-
-**Rigenerazione materiali nell'aggiornamento dell'articolo**: se il flag è attivato, ogniqualvolta si effettui una modifica sulla riga articolo presente nel tab *Articoli da produrre* dell'ordine di conto lavoro la procedura rigenera le informazioni relative ai materiali da consegnare e da impiegare da inserire nell'ultimo tab dell'ordine stesso;
-
-4. **Magazzini**: permette di scegliere se considerare i magazzini in base al tipo di DDT di rientro o al tipo di DDT consegna, invece che utilizzare le impostazioni inserite nelle apposite combo delle voci *Consegne materiali a terzisti* e *Rientro prodotto*.
+**Considera magazzini in base al tipo DDT rientro**: permette di scegliere se considerare i magazzini in base al tipo di DDT di rientro o al tipo di DDT consegna, invece che utilizzare le impostazioni inserite nelle apposite combo delle voci *Consegne materiali a terzisti* e *Rientro prodotto*.
 
 ### Magazzini
 

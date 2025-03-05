@@ -80,7 +80,7 @@ E' inoltre possibile bloccare il pagamento della partita (Flag **Non Pagabile**)
 
 **Data Rif / N. Rif**: Campi ripresi dalla data documento  e numero documento nella registrazione contabile (se presenti, altrimenti ripresi da data/numero registrazione), premettono di raggruppare e filtrare le partite/settlement riferite allo stesso documento (ad esempio una nota di credito che si riferisce ad una fattura, per visualizzare il partitario tutto insieme).
 
-**Cig** e **Cup**: ripresi dalla fattura di vendita, ma possono anche esser scritti a mano (tramite combo box) Si veda **[documentazione sui campi in fattura](/docs/sales/sales-invoices/invoicing/header).**
+**Cig** e **Cup**: ripresi dalla fattura di vendita, ma possono anche esser scritti a mano (tramite combo box) Si veda **[documentazione sui campi in fattura](/docs/sales/sales-invoices/invoicing/sales-invoice).**
 
 **Modelli di riferimento** e **Numero di riferimento**: campi solitamente non utilizzati in Italia, tipici della Croazia (dove quando l'azienda emette la fattura ad ogni scadenza associa un tipo/codice identificativo della rata, che il cliente poi riporta nel pagamento e la banca riporta nel movimento d'incasso: dall'estratto conto bancario, quindi, facilmente si può risalire alla rata chiusa. Il campi rappresentano un riferimento anche a seguito di una futura implementazione di importazione movimenti bancari).
 

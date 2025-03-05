@@ -1,20 +1,18 @@
 ---
-title: Vendite
+title: VENDITE
 sidebar_position: 1
 ---
 
+L’area **Vendite** di **Fluentis ERP** è progettata per garantire una gestione completa e ottimizzata delle attività commerciali, offrendo una struttura modulare e interconnessa che supporta l’intero processo di vendita, dalla creazione di offerte fino all’analisi dei margini. 
 
-L'area **Vendite** si distingue per la sua struttura modulare, progettata per gestire in modo completo e efficiente l'attività commerciale dell'azienda. Il flusso documentale è concepito per integrare le informazioni provenienti dal CRM, acquisendo le **Offerte** relative a clienti esistenti o potenziali, procedendo con la creazione di **Ordini Clienti**, dai quali è possibile creare automaticamente **DDT** (o Fatture), inoltre dai DDT è possibile, valorizzandoli, creare automaticamente le **Fatture di Vendita**.       
-Tramite il modulo **POS** è possibile gestire lo scontrino e creare DDT e Fatture per portare i valori in contabilità.      
-Tutti i valori degli articoli codificati possono essere gestiti tramite i **Listini di Vendita** che permettono di tenere storicizzati e aggiornati i prezzi e gli sconti.         
-Per tutti i moduli dell’area è possibile calcolare automaticamente le **Provvigioni Agenti** per la liquidazione automatica delle stesse.     
-Il collegamento con l’area Logistica garantisce l’aggiornamento delle giacenze contestualmente alla registrazione dei documenti e permette di creare Picking e Piani di carico collegati agli ordini clienti e di creare DDT e Fatture da Picking e Piani di Carico.     
-     
-Questa interconnessione tra i moduli favorisce una gestione sinergica con le aree di Pianificazione e Produzione, contribuendo alla definizione del Demand Planning, fondamentale per le aziende con processi di produzione su misura come Make To Order, Engineering to Order o Assembly To Order.     
-L'interfacciamento dell'area Vendite con l'Area Contabile facilita l'elaborazione amministrativa dei documenti di vendita, garantendo un flusso di lavoro senza interruzioni e una registrazione accurata delle transazioni.     
-Infine, l'integrazione con il Controllo di Gestione offre un'analisi dettagliata dei margini relativi a ciascun processo di vendita, fornendo preziose informazioni per ottimizzare le strategie commerciali e massimizzare i profitti.     
+## Configurazione preliminare dell'area
 
-### Moduli dell'area
+Prima di utilizzare le funzionalità disponibili occorre gestire una serie di dati di base: essi sono suddivisi in due macro gruppi, [**Tabelle**](/docs/configurations/tables/sales/agent-category) e [**Parametri**](/docs/configurations/parameters/sales/general-overview).
+
+In alternativa è disponibile la procedura di [**Fast Start**](/docs/guide/fast-start) per la quale sarà necessario unicamente gestire un set minimo di dati quali le [**Anagrafiche**](/docs/erp-home/registers/registers-intro).
+
+
+## Moduli Vendite
 
 import Link from '@docusaurus/Link';
 
@@ -59,26 +57,37 @@ import Link from '@docusaurus/Link';
     </div>
 </div>
 
-### Fast start
+## Integrazioni con altre aree
 
-Prima di cominciare ad utilizzare il gestionale, è necessario scegliere se lanciare o meno la procedura di **Fast start**.        
-Il Fast Start è una procedura progettata per semplificare e velocizzare l'inizializzazione del software gestionale, consentendo di popolare automaticamente il sistema con parametri e tabelle di base. Questa funzionalità riduce notevolmente il tempo e lo sforzo richiesto per la configurazione iniziale, evitando l'inserimento manuale di ogni singola impostazione. Consigliamo di consultare il relativo [articolo](/docs/guide/fast-start) prima di affrontare il modulo. 
+<div className="cardContainer">
+    <div className="card">
+###     <Link to="/docs/sales/pos/general-overview">Logistica</Link>
+        <p>Aggiornamento automatico delle **giacenze** in tempo reale durante la registrazione dei documenti di vendita.</p>
+        <p>Possibilità di generare **Picking** e **Piani di Carico** direttamente dagli ordini clienti, con ulteriore trasformazione in **DDT** e **Fatture** per una gestione ottimizzata delle spedizioni.</p>
+    </div>
+    <div className="card">
+###     <Link to="/docs/sales/agents/general-overview">Pianificazione e Produzione</Link>
+        <p>Supporto al **Demand Planning** tramite l’integrazione con i processi di vendita, particolarmente utile per modelli produttivi come: **Make to Order (MTO)**, **Engineering to Order (ETO)**, **Assembly to Order (ATO)**.</p> 
+        <p>Questa connessione garantisce un allineamento tra gli ordini di vendita e le attività produttive, migliorando la pianificazione delle risorse e l’efficienza operativa.</p>
+    </div>
+</div>
+<div className="cardContainer">
+    <div className="card">
+###     <Link to="/docs/sales/sales-price-list/general-overview">Contabilità</Link>
+        <p>L’integrazione garantisce una gestione fluida e accurata delle transazioni amministrative derivanti dai documenti di vendita, riducendo errori e automatizzando la registrazione contabile.</p>
+    </div>
+    <div className="card">
+###     <Link to="/docs/sales/price-control/definition">Controllo di Gestione</Link>
+        <p>Fornisce strumenti di analisi avanzata per monitorare i **margini di profitto** relativi a ciascun processo di vendita.</p>
+        <p>Consente un’analisi dettagliata delle performance commerciali, favorendo l’ottimizzazione delle strategie di vendita e il miglioramento della redditività aziendale.</p>
+    </div>
+</div>
 
-### Pulsanti comuni nelle Ricerche dei documenti di vendita
+## Flusso operativo tipico dell'area
 
-Tutte le form di Ricerca dei documenti di vendita consentono di ricercare i documenti con lo scopo di visualizzarli, modificarli, ed eventualmente cancellarli oppure procedere all'inserimento di un nuovo documento; le finestre si compongono di un'area di filtro e da una griglia di risultato.
-Nelle griglie di risultato possono essere aggiunte ulteriori colonne, trascinando gli appositi campi dall'Object navigator; è possibile inoltre eliminare le colonne con il trascinamento dell'intestazione di colonna fuori dalla griglia. Per rendere permanenti le modifiche, è necessario salvare il Profilo come predefinito.       
-I pulsanti della barra degli strumenti comuni alle form di ricerca sono i seguenti:       
-| Pulsante | Funzionalità |
-| :-- | :--|
-| *Ricerca* | Permette di visualizzare i risultati all'interno della griglia, dopo aver impostato tutti i filtri desiderati. |
-|*Modifica* | Consente di aprire il documento e modificarlo. |
-|*Visualizza* | Consente di aprire il documento in visualizzazione, senza poterlo modificare. |
-| *Elimina* | Consente di cancellare i documenti selezionati in griglia. |
-| *Duplica* | Questa funzionalità permette di duplicare i documenti selezionati nella griglia; il nuovo documento riporterà tutte le condizioni del documento di origine, ma con i dati attuali. Una volta duplicato il documento, uscirà un pop up di conferma con alcuni dati di sintesi. |
-| *Currency convert* | Permette il cambio della valuta del documento selezionato; questa funzionalità apre una form nella quale inserire la nuova Divisa da applicare al documento e un'eventuale [Arrotondamento](/docs/sales/sales-price-list/procedures/rounding) da applicare. |
-| *Strumenti - Ricalcola provvigioni agenti* | Consente di effettuare un ricalcolo delle provvigioni degli Agenti interni al documento selezionato; questa operazione è consigliata nel caso siano state modificate le provvigioni dopo la creazione del documento. |
-| *Apri diagramma* | Per ogni documento del modulo vengono messi a disposizione una serie di Diagrammi che permettono di avere una visione globale dei collegamenti che il documento ha. E' presente il Diagramma di evasione che illustra tutti i documenti che hanno in comune un'evasione, in un'unica maschera; è presente il Diagramma del magazzino per visualizzare tutti gli scarichi del documento; ecc. |
-| *Attività/Task* | In questa sezione è possibile assegnare un'attività da effettuare ad un Operatore o Ruolo aziendale; l'attività sarà visualizzata nel Task manager personale dell'utente e potrà essere gestita con il Supervisor di Fluentis nel caso sia necessaria la gestione delle notifiche agli operatori.   |
-| *Documenti* | Utilizzando il pulsante della barra degli strumenti Documenti si può scegliere se allegare un documento già codificato in Fluentis o se creare un nuovo Documento da allegare.|
-| *Gestione profili* | Ogni utente ha la possibilità di personalizzarsi graficamente la maschera andando ad aggiungere/cancellare/modificare i campi visibili; le modifiche apportate possono essere salvate nei *Profili*, a livello di singolo utente, di ruolo aziendale o per tutti; è possibile scegliere inoltre il Profilo predefinito da caricare ad ogni accesso.  |
+1. **Acquisizione opportunità**: le offerte vengono gestite tramite il modulo CRM, raccogliendo informazioni su clienti esistenti e potenziali.  
+2. **Conversione offerte in ordini**: le offerte accettate vengono trasformate in ordini, centralizzando le informazioni per proseguire con il processo.  
+3. **Creazione automatica dei documenti**: a partire dagli ordini, vengono generati automaticamente i DDT e le Fatture di vendita.  
+4. **Vendite al dettaglio (POS)**: le operazioni al punto cassa sono gestite tramite il modulo POS, che registra le vendite e aggiorna la contabilità in tempo reale.  
+5. **Gestione prezzi**: aggiornamento e storicizzazione dei prezzi e sconti associati agli articoli codificati.  
+6. **Liquidazione provvigioni**: le provvigioni per gli agenti vengono calcolate e liquidate automaticamente, semplificando la gestione delle commissioni.

@@ -57,7 +57,29 @@ Nella **tab Risorse** è possibile allocare le risorse per la riga articolo sele
 **Centro aziendale**: viene assegnato il centro aziendale collegato alla risorsa, ma è possibile modificarlo;               
 **Unità di misura**: contiene l’unità di misura per la quantificazione del tempo giornaliero della risorsa;                
 **Quantità**: indica le ore giornaliere;             
-**Costo unitario**: indica il costo della risorsa per singola unità di misura;              
+**Costo unitario**: indica il costo della risorsa per singola unità di misura;    
+:::note[Nota]
+Assegnando la risorsa nella riga di progetto, viene proposto il costo orario della risorsa nell’apposito campo. 
+Il costo dipenderà anche dall’unità di misura: 
+-	se l’UM è ora, il valore rimane invariato.
+-	Se l’UM corrisponde ai giorni (impostazione nei Parametri Progetti), verrà fatta la conversione sulla base dell’Orario di lavoro impostato in anagrafica risorse. 
+-	Se l’UM è diversa dai due casi precedenti, si cercherà il fattore di conversione, che se non presente darà messaggio di errore all’utente “Impossibile effettuare conversione del costo orario unitario risorsa con l’unità di misura della risorsa nel progetto. Costo della risorsa nel progetto non calcolato”
+:::
+
+:::note[Criteri ottenimento costi specifici in riga progetto]
+Se la risorsa prevede un costo differenziato per le giornate di straordinario/festività etc, la ricerca del costo corrispondente verrà fatta con la seguente logica: 
+1. La data di inizio inserita nella riga di progetto rientra in una delle giornate segnate nel Calendario dei giorni non lavorativi? 
+>Se sì, verrà assegnato il valore impostato nel “Tipo costo: Festività” - Verrà comunque richiesta una notifica di conferma all’utente
+2.	Se la data di inizio non dovesse rientrate nel Calendario dei giorni non lavorativi, si prosegue il controllo nella griglia di Giorni lavorativi previsti per la risorsa
+>Se la data di inizio non rientra né nei festivi né nei giorni lavorativi per la risorsa, verrà chiesto di aggiornare con il costo marcato come “Default giorno non lavorativo” se presente. Nel caso non ci fosse un costo così marcato, verrà preso in alternativa il costo “Straordinario”. 
+3. Se la data di inizio rientra in una di quelle lavorative ordinarie, viene verificato se: 
+>rientra nel turno principale. 
+>>Se il turno principale è marcato come “notturno”, viene chiesto di aggiornare con il costo notturno; nel caso non fosse notturno, viene considerato il costo di testata risorsa;
+4. Se non rientra nel turno principale, viene verificato se rientra nel turno alternativo.
+>se il turno alternativo ha un costo dedicato, viene considerato questo valore
+>>se il turno alternativo è marcato come “notturno”, viene chiesto di aggiornare con il costo notturno; nel caso non fosse notturno, viene considerato il costo di testata risorsa;
+:::
+
 **Data inizio**: contiene la data nella quale verrà stanziata la risorsa, con l’orario di inizio lavorativo;                 
 **Ora inizio pausa**: contiene l’eventuali data e ora di inizio della pausa;             
 **Ora fine pausa**: contiene l’eventuali data e ora di fine della pausa;                 

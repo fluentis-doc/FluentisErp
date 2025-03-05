@@ -28,4 +28,4 @@ il **Picking**:
 
 ## Collegamenti con altri moduli
 E' possibile generare un picking manualmente, ma anche da una [Liste prelievo materilali](/docs/production/pp-production-in-progress/picking-materials-list).
-Inoltre da un picking è possibile creare direttamente [DDT](/docs/sales/sales-delivery-notes/search-sales-dn) e [Fatture](/docs/sales/sales-invoices/general-overview) di vendita.   
+Inoltre da un picking è possibile creare direttamente [DDT](/docs/sales/sales-delivery-notes/insert-delivery-notes/search-sales-dn) e [Fatture](/docs/sales/sales-invoices/general-overview) di vendita.   

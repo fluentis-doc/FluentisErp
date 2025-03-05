@@ -11,7 +11,7 @@ Le fatture di acquisto sono documenti fiscali emessi dai fornitori a fronte dell
 
 Le fatture di acquisto possono essere inserite manualmente o generate automaticamente evadendo documenti esistenti, come:
 
-- **Ordini di acquisto**: la fattura può essere generata automaticamente dall'evasione di uno o più ordini di acquisto, cliccando il pulsante [Evasione da ordine](/docs/purchase/purchase-invoices/insert-purchase-invoice/header-procedures/execution-from-purchase-order) dall'interno di una nuova fattura.   
+- **Ordini di acquisto**: la fattura può essere generata automaticamente dall'evasione di uno o più ordini di acquisto, cliccando il pulsante [Evasione da ordine](/docs/purchase/purchase-invoices/insert-purchase-invoice/purchase-invoice) dall'interno di una nuova fattura.   
 - **DDT di acquisto**: l'evasione da DDT può essere effettuata sia dall'interno della fattura, mediante il pulsante *Evasione DDT*, sia dalla procedura di [valorizzazione DDT di Acquisto](/docs/purchase/purchase-invoices/procedures/purchase-delivery-note-valorization) da cui è possibile effettuare anche un ripristino delle operazioni. 
 - **Rientro di conto lavoro**: la procedura di *Valorizzazione DDT di rientro* consente di generare la fattura evadendo uno o più rientri di conto lavoro.   
 - **Ricevimento merce**: la fattura può essere creata anche da un *Ricevimento merci* attraverso la [Creazione fatture da Ricevimento merci](/docs/purchase/purchase-invoices/procedures/create-purchase-invoices-from-goods-receipt).    
