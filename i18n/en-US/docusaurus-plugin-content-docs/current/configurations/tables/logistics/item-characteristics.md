@@ -1,24 +1,24 @@
 ---
-title: Caratteristiche articolo
+title: Item Features
 sidebar_position: 5
 ---
 
-La tabella si trova sul percorso **Tabelle > Logistica > Caratteristiche articolo**
+The table can be found at the path **Tables > Logistics > Item Features**.
 
-La tabella di inserimento *Caratteristiche articolo* è necessaria per poter effettuare un raggruppamento degli articoli. Ai fini statistici è fondamentale poter raggruppare gli articoli in modo da poterli ricercare secondo un parametro.
+The *Item Features* input table is necessary to enable the grouping of items. For statistical purposes, it is essential to group items in order to search them based on a parameter.
 
-La tabella consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+The table allows for the entry of new records or the search for existing ones to view, modify, or delete them.
 
-**Ricerca Caratteristiche articolo**
+**Search Item Features**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+The form consists of a filter area and a results area. Once all desired filters are set, simply click the **Search** button to display the results within the results grid.
 
-**Inserimento Caratteristiche articolo**
+**Insert Item Features**
 
-Per poter inserire nuove codifiche è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**. 
+To enter new codes, you must click on the first empty row in the grid or press the **New** button.
 
-Per il nuovo record si devono inserire almeno i campi obbligatori richiesti dal programma: il **Codice** alfanumerico della caratteristica e la sua **Descrizione**. 
+For the new record, you must enter at least the mandatory fields required by the program: the **Code** alphanumeric character of the feature and its **Description**.
 
-Per ciascuna caratteristica è possibile inserire le **Descrizioni in lingua** nella griglia inferiore.
+For each feature, you can enter the **Descriptions in language** in the lower grid.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+For anything not detailed in this document regarding the common functioning of forms, please refer to the following link [Custom features, Buttons, and Fields](/docs/guide/common).

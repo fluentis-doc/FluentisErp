@@ -1,18 +1,18 @@
 ---
-title: Tipo Prototipo Articolo
+title: Item Prototype Type
 sidebar_position: 50
 ---
 
-La tabella permette di gestire la codifica delle diverse tipologie di *Tipo Prototipo Articolo*.
+The table allows for managing the coding of different types of *Item Prototype Type*.
 
-Consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+It enables the insertion of new records or searching for existing ones to view, modify, or delete them.
 
-**Ricerca Tipo Prototipo Articolo**
+**Search Item Prototype Type**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+The form consists of a filter area and a results area. Once all desired filters are set, simply click on the **Search** button to view the results within the results grid.
 
-**Inserimento Tipo Prototipo Articolo**
+**Insert Item Prototype Type**
 
-Per poter inserire nuove codifiche è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.
+To insert new codings, it is necessary to click on the first empty row in the grid or press the **New** button.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+For everything not detailed in this document regarding the common functionality of forms, please refer to the following link [Custom Features, Buttons, and Fields](/docs/guide/common).

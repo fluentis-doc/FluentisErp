@@ -1,6 +1,6 @@
 ---
-title: Generalità
+title: General Overview
 sidebar_position: 1
 ---
 
-Le tabelle dell'Area Logistica servono ad inserire tutti i dati principali che vengono gestiti all'interno dell'intera Area Logistica. 
+The tables of the Logistics Area are used to enter all the main data that are managed within the entire Logistics Area.

@@ -1,57 +1,57 @@
 ---
-title: Classi articolo
+title: Item Class
 sidebar_position: 12
 ---
 
-:::important A cosa serve
-La Classe Articolo in Fluentis è un elemento cruciale per la gestione efficiente degli articoli. Essa consente di raggruppare articoli omogenei, facilitandone la rintracciabilità e permettendo analisi dettagliate.        
-Ogni articolo viene identificato in modo univoco grazie alla combinazione tra la Classe, un dato precodificato, e un Codice alfanumerico. In alcuni casi, la classe articolo può essere configurata per generare automaticamente sia il codice che la descrizione degli articoli appartenenti a quella classe, agevolando così i processi di codifica.           
-Inoltre, è possibile gestire le classi articolo, personalizzandole in base alle esigenze operative. Questo approccio garantisce una maggiore efficienza nella classificazione e nella gestione dei prodotti.     
+:::important What it is for 
+The Item Class in Fluentis is a crucial element for the efficient management of items. It allows for the grouping of homogeneous items, facilitating traceability and enabling detailed analysis.        
+Each item is uniquely identified by the combination of the Class, a pre-coded data point, and an alphanumeric Code. In some cases, the item class can be configured to automatically generate both the code and the description of the items belonging to that class, thereby streamlining the coding processes.           
+Additionally, it is possible to manage the item classes, customizing them based on operational needs. This approach guarantees greater efficiency in the classification and management of products.     
 :::
 
-La tabella si trova sul percorso **Tabelle > Logistica > Classi articolo**.  
+The table is located along the path **Tables > Logistics > Item Class**.  
 
-La tabella permette di gestire la codifica delle diverse classi articolo per poter effettuare il raggruppamento degli articoli.
+The table allows for the management of the coding of different article classes in order to group the items.
 
-Consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+It enables the insertion of new records or searching for existing ones to view, modify, or delete them.
 
-**Ricerca Classi articolo**
+**Search Item Class**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+The form consists of a filter area and a results area. Once all desired filters are set, simply click the **Search** button to display the results within the results grid.
 
-**Inserimento Classi articolo**
+**Insert Item Class**
 
-Per poter inserire nuove codifiche è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.
+To insert new codes, it is necessary to click on the first empty row in the grid or press the **New** button.
 
-*Campi specifici*
+*Specific fields*
 
-> **Codice**: indica il codice della classe articoli;  
-> **Descrizione**: indica la descrizione della classe articoli;  
-> **Cambiamento classe**: se attivo, permette di modificare la classe articolo di un articolo anche se già movimentato;  
-> **Famiglia Prodotti**: indica il codice della famiglia prodotti che include la classe articolo;  
-> **Descrizione Famiglia Prodotti**: indica la descrizione della famiglia prodotti che include la classe articolo.  
+> **Code**: indicates the code of the item class;  
+> **Description**: indicates the description of the item class;  
+> **Change Item Class**: if active, allows for changing the item class of an item even if already moved;  
+> **Family Product**: indicates the code of the product family that includes the item class;  
+> **Family Product Description**: indicates the description of the product family that includes the item class.  
 
-*Nella parte destra della form invece, sono presenti tre ulteriori tab:*
+*On the right side of the form, there are three additional tabs:*
 
-- **Codificatore articolo**: permette di guidare l’operatore nella codifica di un nuovo articolo per quella classe articolo; sarà possibile definire delle regole di codifica utilizzando i seguenti campi:   
-> **Ordinamento**: indica l’ordinamento del singolo componente della codifica;   
-> **Tipo**: indica il tipo di dato da utilizzare nella codifica;   
-> **ExtraData**: indica il codice di extra data utilizzato nella codifica;   
-> **Utilizza in codice**: se attivo, questo elemento sarà impiegato nel codice articolo;  
-> **Utilizza in descrizione**: se attivo, questo elemento sarà impiegato nella descrizione dell’articolo;  
-> **Proprietà codice**: indica la proprietà dell'oggetto business;   
-> **Descrizione proprietà**: indica la descrizione della proprietà di oggetto business;  
-> **Lunghezza**: indica la lunghezza del componente del codice;   
-> **Separatore**: indica il carattere da usare come separatore;   
-> **Char Riempimento Progressivo**: indica il carattere da utilizzare come riempimento del progressivo;   
-> **Valore iniziale progressivo**: indica il valore iniziale del progressivo della codifica;   
-> **Valore Fisso**: Indica il valore fisso da inserire nella codifica;   
-> **Propagazione**: indica che è attiva la propagazione del dato;   
-> **Obbligatorio**: indica che il dato è obbligatorio.   
+- **Item Encoder**: guides the operator in coding a new item for that item class; it will be possible to define coding rules using the following fields:   
+> **Ordering**: indicates the ordering of the single component of the coding;   
+> **Type**: indicates the type of data to be used in the coding;   
+> **ExtraData**: indicates the code of extra data used in the coding;   
+> **Use in code**: if active, this element will be used in the item code;  
+> **Use in description**: if active, this element will be used in the item description;  
+> **Code property**: indicates the property of the business object;   
+> **Property description**: indicates the description of the business object property;  
+> **Length**: indicates the length of the code component;   
+> **Separator**: indicates the character to be used as a separator;   
+> **Progressive Fill Char**: indicates the character to be used as a filling of the progressive;   
+> **Progressive Start Value**: indicates the start value of the progressive in the coding;   
+> **Fixed Value**: indicates the fixed value to be inserted in the coding;   
+> **Propagation**: indicates that the propagation of the data is active;   
+> **Mandatory**: indicates that the data is mandatory.   
 
-- **Extra Data**: permette di gestire gli extra data legati a quella classe articolo;
-*Per quanto riguarda le funzionalità presenti negli Extradata si rimanda all'articolo Extradata.*
+- **Extra Data**: manages the extra data linked to that item class;
+*For custom features present in ExtraData, please refer to the article on ExtraData.*
 
-- **Descrizione in lingua**: permette di inserire la traduzione della descrizione della classe articolo in una nuova lingua.
+- **Description in language**: allows the insertion of the translation of the item class description into a new language.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+For everything not detailed in this document regarding the common functionality of forms, please refer to the following link [Custom features, buttons, and fields](/docs/guide/common).

@@ -1,18 +1,18 @@
 ---
-title: Tipo costo
+title: Cost Type 
 sidebar_position: 28
 ---
 
-La tabella permette di gestire la codifica delle diverse tipologie di *Tipo costo*.
+The table allows for managing the coding of the different types of *Cost Type*.
 
-Consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+It enables the insertion of new records or the search for existing ones to view, edit, or delete them.
 
-**Ricerca Tipo costo**
+**Search Cost Type**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+The form consists of a filter area and a results area. Once all desired filters are set, just click the **Search** button to display the results within the results grid.
 
-**Inserimento Tipo costo**
+**Insert Cost Type**
 
-Per poter inserire nuove codifiche è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.
+To insert new codings, it is necessary to click in the grid on the first empty row or press the **New** button.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+For everything that is not detailed in this document about the common functionality of forms, please refer to the following link [Custom features, buttons, and common fields](/docs/guide/common).

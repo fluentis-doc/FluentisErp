@@ -1,26 +1,26 @@
 ---
-title: Categorie fiscali articolo
+title: Item Fiscal Category
 sidebar_position: 8
 ---
 
-La tabella si trova sul percorso **Tabelle > Logistica > Categorie fiscali articolo**.  
+The table is located at **Tables > Logistics > Item Fiscal Category**.  
 
-In questa tabella è possibile codificare le diverse categorie secondo la logica fiscale che può essere a sua volta associata al prodotto e utilizzata come raggruppamento, come dato statistico o come funzionalità nei moduli competenti.   
+In this table, it is possible to encode the different categories according to the fiscal logic that can then be associated with the product and used as grouping, as statistical data, or as functionality in the relevant modules.  
 
-Un esempio di utiizzo lo troviamo all'interno dell'[Anagrafica articolo](/docs/erp-home/registers/items/create-new-items/item-registry/generality) alla voce *Categoria fiscale*.  
+An example of use can be found within the [Item Registry](/docs/erp-home/registers/items/create-new-items/item-registry/generality) under the entry *Fiscal Category*.  
 
-La tabella consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+The table allows for the insertion of new records or the search for existing ones to view, modify, or delete them.
 
-**Ricerca Categorie fiscali articolo**
+**Search Item Fiscal Category**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+The form consists of a filter area and a results area. Once all desired filters are set, simply click the **Search** button to display the results in the results grid.
 
-**Inserimento Categorie fiscali articolo**
+**Insert Item Fiscal Category**
 
-Per poter inserire nuove codifiche è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.  
+To insert new codes, it is necessary to click on the first empty row in the grid or press the **New** button.  
 
-La form è composta da due griglie: in quella a sinistra si possono codificare le varie *Categorie fiscali* inserendo il **Codice** e la **Descrizione**.  
+The form is composed of two grids: in the left grid, various *Fiscal Categories* can be coded by entering the **Code** and **Description**.  
 
-Nella griglia a destra è possibile impostare per ciascuna categoria i conti di contabilità che saranno usati per l'elaborazione delle scritture automatizzate delle rimanenze finali.
+In the right grid, it is possible to set the accounts for each category that will be used for the automated processing of final inventory entries.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+For everything not detailed in this document regarding the common operation of forms, refer to the following link [Custom features, buttons, and fields](/docs/guide/common).

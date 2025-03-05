@@ -1,32 +1,32 @@
 ---
-title: Tipi gruppo UDC
+title: Loading Unit Group Types
 sidebar_position: 30
 ---
 
-:::important A cosa serve
-La tabella Tipo Gruppo UDC di Fluentis rappresenta un altro elemento chiave per la categorizzazione e l'organizzazione delle Unità Di Carico all'interno della logistica. Questa tabella consente agli utenti di gestire i diversi gruppi di unità di carico, facilitando la loro classificazione e l'assegnazione a specifiche categorie di utilizzo.
+:::important What it is for 
+The Loading Unit Group Type table in Fluentis represents another key element for the categorization and organization of Loading Units within logistics. This table allows users to manage different groups of loading units, facilitating their classification and assignment to specific usage categories.
 
-La form di gestione offre un'area dedicata alla ricerca con filtri personalizzabili, che aiutano a identificare rapidamente i gruppi UDC di interesse. I campi principali includono un codice alfanumerico per il tipo gruppo, una descrizione e l'identificazione del gruppo stesso, che può riferirsi a numerazioni, commesse di produzione o ordini fornitori. 
+The management form offers a dedicated search area with customizable filters, helping quickly identify the Loading Unit Groups of interest. The main fields include an alphanumeric code for the group type, a description, and the identification of the group itself, which can refer to numeration, production job orders, or purchase orders. 
 :::
 
-La tabella si trova sul percorso **Tabelle** > **Logistica** > **Tipi gruppo UDC**.
+The table is located at **Tables** > **Logistics** > **Loading Unit Group Types**.
 
-La tabella di inserimento dei *Tipi gruppo UDC* è una tabella di base per l'utilizzo delle *Unità Di Carico* e viene utilizzata all'interno dei [Tipi UDC](/docs/configurations/tables/logistics/loading-unit-types).   
+The insertion table for *Loading Unit Group Types* is a base table for the use of *Loading Units* and is used within the [Loading Unit Types](/docs/configurations/tables/logistics/loading-unit-types).
 
-Consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+It allows for the insertion of new records or the search for existing ones to view, modify, or delete them.
 
-**Ricerca Tipi gruppo UDC**
+**Search Loading Unit Group Types**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+The form consists of a filter area and a results area. Once all desired filters are set, simply click the **Search** button to view results within the results grid.
 
-**Inserimento Tipi gruppo UDC**
+**Insert Loading Unit Group Types**
 
-Per poter inserire nuove codifiche è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.
+To insert new codes, you need to click on the first empty row in the grid or press the **New** button.
 
-*Campi specifici*:   
-> **Tipo**: codice alfanumerico che indica il *Tipo gruppo UDC*;   
-> **Descrizione**: è la descrizione del *Tipo gruppo UDC*;   
-> **Gruppo**: indica il gruppo che identifica l'UDC. Può essere un *Numero progressivo*, una *Commessa di produzione*, un *Ordine fornitore* oppure un *Ordine di produzione*;   
-> **Descrizione gruppo**: è la descrizione del *Gruppo* che identifica l'UDC.     
+*Specific fields*:  
+> **Type**: alphanumeric code indicating the *Loading Unit Group Types*;   
+> **Description**: description of the *Loading Unit Group Types*;   
+> **Group**: indicates the group identifying the Loading Units. It can be a *Progressive Number*, a *Production Job Order*, a *Purchase Order*, or a *Production Order*;   
+> **Group Description**: description of the *Group* identifying the Loading Units.     
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+For everything not detailed in this document about the common functionality of forms, please refer to the following link [Custom features, buttons, and common fields](/docs/guide/common).

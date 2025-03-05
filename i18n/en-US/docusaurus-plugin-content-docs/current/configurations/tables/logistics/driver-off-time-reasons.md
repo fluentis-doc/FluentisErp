@@ -1,29 +1,29 @@
 ---
-title: Motivi di assenza del conducente
+title: Driver Off Time Reasons
 sidebar_position: 59
 ---
 
-La tabella si trova sul percorso **Tabelle > Logistica > Motivi di assenza del conducente**.
+The table is located on the path **Tables > Logistics > Driver Off Time Reasons**.
 
-In questa tabella è possibile codificare i *Motivi di assenza del conducente*.
+In this table, it is possible to encode the *Driver Off Time Reasons*.
 
-La tabella consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+The table allows for the insertion of new records or searching for those already existing to view, modify, or delete them.
 
-**Ricerca Motivi di assenza del conducente**
+**Search Driver Off Time Reasons**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+The form consists of a filter area and a results area. Once all desired filters are set, simply click the **Search** button to display the results within the results grid.
 
-**Inserimento Motivi di assenza del conducente**
+**Insert Driver Off Time Reasons**
 
-Per poter inserire nuovi è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.     
-Per il nuovo record si devono inserire almeno i campi obbligatori richiesti dal programma: il **Codice** e la **Descrizione**.
-Con il pulsante **Cancella** è possibile eliminare il record selezionata.
+To insert new records, you need to click on the first empty row in the grid or press the **New** button.     
+For the new record, you need to enter at least the mandatory fields required by the program: **Code** and **Description**. 
+The **Cancel** button allows you to delete the selected record.
 
-*Campi specifici*: 
+*Specific fields*: 
 
-> **Codice**: è il codice del *Motivo di assenza del conducente*.   
-> **Descrizione**: è la descrizione del *Motivo di assenza del conducente*.   
-> **Colore di sfondo**: permette di definire il colore di sfondo dell'impegno dell'autista presente nel [Calendario](/docs/logistics/shipping/calendar).     
-> **Colore di primo piano**: permette di definire il colore del testo dell'impegno dell'autista presente nel [Calendario](/docs/logistics/shipping/calendar).     
+> **Code**: this is the code for the *Driver Off Time Reason*.   
+> **Description**: this is the description of the *Driver Off Time Reason*.   
+> **Background Color**: allows you to define the background color of the driver's commitment present in the [Calendar](/docs/logistics/shipping/calendar).     
+> **Foreground Color**: allows you to define the text color of the driver's commitment present in the [Calendar](/docs/logistics/shipping/calendar).     
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+For anything not detailed in this document regarding the common functioning of forms, please refer to the following link [Custom features, buttons, and fields](/docs/guide/common).

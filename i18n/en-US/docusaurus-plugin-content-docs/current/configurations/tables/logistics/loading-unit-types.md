@@ -1,24 +1,24 @@
 ---
-title: Tipi UDC
+title: Loading Unit Types
 sidebar_position: 37
 ---
 
-:::important A cosa serve
-La tabella Tipo UDC (Unità Di Carico) di Fluentis consente di codificare e definire le varie categorie di UDC, fornendo un framework strutturato che facilita la movimentazione e la tracciabilità dei materiali. Gli utenti possono creare nuovi record, modificare quelli esistenti o cancellarli, utilizzando un'interfaccia intuitiva.
+:::important What it is for 
+The Loading Unit Type table of Fluentis allows for the coding and definition of various categories of Loading Unit, providing a structured framework that facilitates the movement and traceability of materials. Users can create new records, modify existing ones, or delete them using an intuitive interface.
 
-La procedura di ricerca è semplice e consente di filtrare rapidamente i tipi di UDC desiderati, visualizzando i risultati in una griglia di facile lettura. Ogni record può contenere dettagli chiave, come un codice alfanumerico univoco e una descrizione, che identificano chiaramente il tipo di unità di carico. Questa gestione efficace delle UDC è essenziale per garantire una logistica fluida e organizzata, contribuendo così a migliorare l'efficienza operativa all'interno dell'azienda.
+The search procedure is simple and allows for quick filtering of the desired Loading Unit Types, displaying results in an easy-to-read grid. Each record can contain key details, such as a unique alphanumeric code and a description, which clearly identify the type of load unit. This effective management of UDC is essential to ensure smooth and organized logistics, thereby contributing to improving operational efficiency within the company.
 :::
 
-La tabella permette di gestire la codifica delle diverse tipologie di *Tipi UDC*.
+The table allows for the management of the coding of different types of *Loading Unit Types*.
 
-Consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+It enables users to enter new records or to search for existing ones to view, modify, or delete them.
 
-**Ricerca Tipi UDC**
+**Search Loading Unit Types**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+The form consists of a filter area and a results area. Once all desired filters are set, simply click the **Search** button to view the results within the results grid.
 
-**Inserimento Tipi UDC**
+**Insert Loading Unit Types**
 
-Per poter inserire nuove codifiche è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.
+To insert new codings, click on the first empty row in the grid or press the **New** button.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+For anything not detailed in this document regarding the common functionality of forms, please refer to the following link [Custom features, buttons, and fields](/docs/guide/common).

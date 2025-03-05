@@ -1,24 +1,24 @@
 ---
-title: Tipo Piano di Carico
+title: Load Plan Type 
 sidebar_position: 56
 ---
 
-La tabella permette di gestire la codifica delle diverse tipologie di *Tipo Piano di Carico*.
+The table allows for managing the coding of the different types of *Load Plan Type*.
 
-Consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+It enables the insertion of new records or searching for existing ones to view, modify, or delete them.
 
-**Ricerca Tipo Piano di Carico**
+**Search Load Plan Type**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+The form consists of a filter area and a results area. Once all desired filters are set, just click the **Search** button to display the results within the results grid.
 
-**Inserimento Tipo Piano di Carico**
+**Insert Load Plan Type**
 
-Per poter inserire nuove codifiche è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.
+To insert new codings, you need to click on the first empty row in the grid or press the **New** button.
 
-*Campi specifici*: 
+*Specific fields*: 
 
-> **Codice**: indica il codice del Tipo Piano di Carico;           
-> **Descrizione**: indica la descrizione del Tipo Piano di carico;   
-> **Predefinito**: indica il Piano di carico di default da creare;       
-> **Numerazione**: indica la [Numerazione](/docs/configurations/tables/fluentis-numerations);       
-> **Automezzo**: indica l'[Automezzo](/docs/logistics/motorvehicles/motorvehicle) configurato per questa tipologia di piano di carico.
+> **Code**: indicates the code of the Load Plan Type;           
+> **Description**: indicates the description of the Load Plan Type;   
+> **Default**: indicates the default Load Plan to create;       
+> **Numeration**: indicates the [Numeration](/docs/configurations/tables/fluentis-numerations);       
+> **Motorvehicle**: indicates the [Motorvehicle](/docs/logistics/motorvehicles/motorvehicle) configured for this type of load plan.

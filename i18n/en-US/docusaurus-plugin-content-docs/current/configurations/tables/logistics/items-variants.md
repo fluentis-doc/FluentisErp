@@ -1,18 +1,18 @@
 ---
-title: Varianti articoli
+title: Items Variants 
 sidebar_position: 38
 ---
 
-La tabella permette di gestire la codifica delle diverse tipologie di *Varianti articoli*.
+The table allows for the management of the coding of the different types of *Items Variants*.
 
-Consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+It enables the insertion of new records or the search for existing ones to view, modify, or delete them.
 
-**Ricerca Tipo Varianti articoli**
+**Search Items Variants Type**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+The form consists of a filter area and a results area. Once all the desired filters are set, simply click the **Search** button to display the results within the result grid.
 
-**Inserimento Tipo Varianti articoli**
+**Insert Items Variants Type**
 
-Per poter inserire nuove codifiche è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.
+To insert new codings, it is necessary to click on the first empty row in the grid or press the **New** button.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+For anything not detailed in this document regarding the common functionality of forms, please refer to the following link [Custom Features, Buttons, and Fields](/docs/guide/common).

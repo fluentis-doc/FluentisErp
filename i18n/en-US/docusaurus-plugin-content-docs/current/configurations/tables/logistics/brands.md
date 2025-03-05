@@ -1,19 +1,19 @@
 ---
-title: Marche
+title: Brands
 sidebar_position: 16
 ---
 
-La tabella si trova sul percorso **Tabelle > Logistica > Marche** e permette di gestire la codifica delle diverse *Marche*.
+The table is located at the path **Tables > Logistics > Brands** and allows for the management of the coding of different *Brands*.
 
-Consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+It enables the insertion of new records or the search for existing ones to display, modify, or delete them.
 
-**Ricerca Marche**
+**Search Brands**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+The form consists of a filter area and a results area. Once all desired filters are set, simply click the **Search** button to display the results within the results grid.
 
-**Inserimento Marche**
+**Insert Brands**
 
-Per poter inserire nuove codifiche è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.   
-Per il nuovo record si devono inserire i campi obbligatori richiesti dal programma: il **Codice** e la **Descrizione**.
+To insert new codings, it is necessary to click on the first empty row in the grid or press the **New** button.   
+For the new record, the mandatory fields required by the program must be filled in: **Code** and **Description**.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+For anything not detailed in this document regarding the common functioning of the forms, please refer to the following link [Custom features, Buttons, and Fields](/docs/guide/common).

@@ -1,19 +1,19 @@
 ---
-title: Marchi
+title: Brand
 sidebar_position: 44
 ---
 
-La tabella si trova sul percorso **Tabelle > Logistica > Marchi** e permette di gestire la codifica dei diversi *Marchi*.
+The table is located in the path **Tables > Logistics > Brand** and allows the management of the coding of different *Brand*.
 
-Consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+It allows you to insert new records or to search for existing ones to view, modify, or delete them.
 
-**Ricerca Marchi**
+**Search Brand**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+The form consists of a filter area and a results area. Once all desired filters are set, simply click the **Search** button to view the results within the results grid.
 
-**Inserimento Marchi**
+**Insert Brand**
 
-Per poter inserire nuove codifiche è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.  
-Per il nuovo record si devono inserire i campi obbligatori richiesti dal programma: il **Codice** e la **Descrizione** ed eventualmente si possono aggiungere delle **Note**.
+To insert new codes, you need to click on the first empty row in the grid or press the **New** button.  
+For the new record, the mandatory fields required by the program must be filled in: the **Code** and the **Description**, and you can optionally add **Notes**.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+For anything not detailed in this document regarding the common functioning of forms, please refer to the following link [Custom features, buttons, and fields](/docs/guide/common).

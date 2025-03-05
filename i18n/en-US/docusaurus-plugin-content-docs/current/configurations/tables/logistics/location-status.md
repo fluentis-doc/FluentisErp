@@ -1,21 +1,21 @@
 ---
-title: Stato ubicazione
+title: Location Status 
 sidebar_position: 23
 ---
 
-La tabella si trova sul percorso **Tabelle > Logistica > Stato ubicazione**.
+The table is located on the path **Tables > Logistics > Location Status**.
 
-In questa tabella è possibile gestire la codifica degli stati dell’[Ubicazione](/docs/logistics/warehouse/location/locations/) di magazzino.    
+In this table, it is possible to manage the coding of the states of the [Location](/docs/logistics/warehouse/location/locations/) in the warehouse.
 
-Consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+This allows for the insertion of new records or searching for existing ones to view, modify, or delete them.
 
-**Ricerca Stato ubicazione**
+**Search Location Status**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+The form consists of a filter area and a results area. Once all desired filters are set, simply click the **Search** button to display the results within the results grid.
 
-**Inserimento Stato ubicazione**
+**Insert Location Status**
 
-Per poter inserire nuove codifiche è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.    
-Per il nuovo record si devono inserire i campi obbligatori richiesti dal programma: il **Codice** e la **Descrizione**.
+To insert new codings, you must click on the first empty row in the grid or press the **New** button.    
+For the new record, you must fill in the mandatory fields required by the program: the **Code** and the **Description**.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+For everything not detailed in this document about the common functioning of the forms, refer to the following link [Custom features, buttons, and fields](/docs/guide/common).
