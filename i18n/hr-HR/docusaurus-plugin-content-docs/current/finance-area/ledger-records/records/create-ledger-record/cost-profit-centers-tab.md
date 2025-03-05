@@ -1,47 +1,35 @@
 ---
-title: Tab Centri di costo/profitto
+title: Tab Analitica
 sidebar_position: 5
 ---
 
  
 
-**La Tab ‘Costo-profitto'** è presente solo se la causale ha almeno uno dei due flag di gestione CDC/CDP.
+**La Tab Analitica** dedicata alla gestione a centro di costo/profitto (oggi centri aziendali), è presente solo se la causale ha almeno uno dei due flag di gestione Centri di costo / Centri di profitto.
 
-ATTENZIONE: La gestione dei centri di costo / profitto (oggi centri aziendali) sarà differente a seconda che siano attivate o meno le **funzionalità avanzate per il controllo di gestione** all'interno della tabella Società.
+:::danger ATTENZIONE
+La gestione dei centri di costo / profitto (oggi centri aziendali) sarà differente a seconda che siano attivate o meno le **funzionalità avanzate per il controllo di gestione** all'interno della tabella [**Società**](/docs/configurations/tables/general-settings/company).
 
-Queste funzionalità, recentemente sviluppate, permettono una gestione più evoluta e flessibile del controlling (ad esempio consentendo analisi di centri aziendali multi dimensionali e reversioni di qualsiasi centro uno sull'altro) rispetto al set di funzionalità standard, le quali sono comunque tutt'ora disponibili decidendo di non attivare il flag all'interno della tabella di cui sopra.
+Queste funzionalità, recentemente sviluppate, permettono una gestione più evoluta e flessibile del controlling (ad esempio consentendo analisi di centri aziendali multi dimensionali e reversioni di qualsiasi centro uno sull'altro) rispetto al set di funzionalità standard, le quali sono comunque tutt'ora disponibili decidendo di non attivare il **flag GESTIONE CONTROLLING** all'interno della tabella di cui sopra.
+:::
 
-![](/img/it-it/finance-area/ledger-records/records/create-ledger-record/cost-profit-centers-tab/image01.png)
 
- 
-
-**La Tab Costo-Profitto** è dedicata alla gestione a centro di costo/profitto (oggi centri aziendali) dei dati economici rilevati nella registrazione: a seconda delle impostazioni della causale sarà presente una sezione, l'altra o entrambe (in quest'ultimo caso con due opzioni: nel caso di ‘gestione separata cdc/cdp' entrambe saranno da valorizzare contemporaneamente, altrimenti la procedura attribuirà l'importo solo ad una delle due sezioni, i costi andranno sui centri di costo e i ricavi ai centri di profitto). 
+ a seconda delle impostazioni della causale sarà presente una sezione, l'altra, o entrambe (in quest'ultimo caso con due opzioni: nel caso di ‘gestione separata cdc/cdp' entrambe saranno da valorizzare contemporaneamente, altrimenti la procedura attribuirà l'importo solo ad una delle due sezioni, i costi andranno sui centri di costo e i ricavi ai centri di profitto). 
 
 Nel caso in cui si utilizzino le funzioni evolute per il controlling, sebbene sia possibile attivare nella causale contabile sia cdc che cdp, la valorizzazione di questi ultimi risulta superflua poiché si andrà a valorizzare unicamente i cdc (che assumono la nuova definizione di centri aziendali). I centri aziendali possono accogliere infatti sia componenti positivi (di profitto) che componenti negativi (di costo) e possono essere ribaltati a piacimento gli uni sugli altri secondo le logiche previste nel modulo conformemente al nuovo set di funzionalità in maniera totalmente flessibile.
 
 
 
-![](/img/it-it/finance-area/ledger-records/records/create-ledger-record/cost-profit-centers-tab/image02.png)
+Se nella causale contabile è stata attivata anche l'opzione **Gestione macchina** sarà presente anche una griglia di valorizzazione costi/ricavi agli automezzi aziendali (sotto alla griglia principale dei centri di costo)
 
-Se nella causale contabile è stata attivata anche l'opzione 'Gestione macchina'
 
-![](/img/it-it/finance-area/ledger-records/records/create-ledger-record/cost-profit-centers-tab/image03.png)
-
-sarà presente anche una griglia di valorizzazione costi/ricavi agli automezzi aziendali
-
-![](/img/it-it/finance-area/ledger-records/records/create-ledger-record/cost-profit-centers-tab/image04.png)
-
-![](/img/it-it/finance-area/ledger-records/records/create-ledger-record/cost-profit-centers-tab/image05.png)
-
-Richiamando l'automezzo tramite la combo box apposita sarà possibile attribuire anche i dati di dettaglio dell'automezzo.
+Richiamando l'automezzo tramite la combo box apposita sarà possibile attribuire anche i dati di dettaglio dello stesso.
 
 La combo box è collegata alla tabella Gestione automezzo (Logistica > Automezzi >Attività giornaliera > Gestione Automezzo)
 
  
 
-**CAMPI PRESENTI NELLA GRIGLIA PRINCIPALE**
-
-![](/img/it-it/finance-area/ledger-records/records/create-ledger-record/cost-profit-centers-tab/image06.png)
+### CAMPI PRESENTI NELLA GRIGLIA PRINCIPALE
 
 Se le funzionalità avanzate del controlling sono attive è presente una struttura tipo pivot table che raggruppa, sottoconto per sottoconto, le attribuzioni dei movimenti contabili ai centri per dimensione di analisi. Infatti secondo le metodologie avanzate di cui sopra i centri aziendali devono essere attribuiti ad una dimensione di analisi creando quindi dei sottoinsiemi funzionali a diverse configurazioni possibili nello sviluppo della contabilità analitica.
 
@@ -57,7 +45,12 @@ All'interno della stessa dimensione il movimento potrebbe poi essere ripartito (
 
 **Progetto**: Se nella causale contabile è abilitato il flag Progetti (ex Commesse) è visibile questo campo che permette di attribuire il movimento ad un progetto. Il widget fa riferimento alla tabella Progetti (Gestione Progetti > Progetti > Progetti)
 
-ATTENZIONE: se le funzioni avanzate del controlling sono attive, è previsto che il progetto possa essere attribuito soltanto agganciandolo ad un centro aziendale associato alla dimensione di tipo Commessa oppure alle dimensioni per le quali è stato attivato il flag 'Abilita commessa'. Tale dimensione (che può essere nominata a piacere, anche se si consiglia un nome chiaro, ad esempio "Commesse" o "Progetti") viene agganciata alla corretta tipologia tramite un flag presente nella tabella Dimensioni (Configurazione > Tabelle >Controlling > Contabilità analitica > Dimensione) 
+:::danger ATTENZIONE:
+se le funzioni avanzate del controlling sono attive, è previsto che il progetto possa essere attribuito soltanto agganciandolo ad un centro aziendale associato alla dimensione di tipo Commessa oppure alle dimensioni per le quali è stato attivato il flag **Abilita commessa**. 
+
+Tale dimensione (che può essere nominata a piacere, anche se si consiglia un nome chiaro, ad esempio "Commesse" o "Progetti") viene agganciata alla corretta tipologia tramite un flag presente nella tabella **Dimensioni** (Configurazione > Tabelle >Controlling > Contabilità analitica > Dimensione) 
+:::
+
 
 **Centri di costo / Descrizione centri di Costo**: campi per l'inserimento (tramite combo box posizionata sul campo Centri di costo) del centro sul quale attribuire il costo (o profitto). La combo box fa riferimento alla tabella **[Centri Aziendali](/docs/configurations/tables/controlling/analytical-accounting/corporate-centers)** (Configurazione > Tabelle >Controlling > Analitica > Centri Aziendali). 
 
@@ -77,7 +70,7 @@ ATTENZIONE: se le funzioni avanzate del controlling sono attive, è previsto che
 
  
 
-**Il caricamento dei dati nelle sezioni cdc/cdp può essere automatizzato in due modi**:
+### Il caricamento dei dati nelle sezioni cdc/cdp può essere automatizzato in due modi:
 
 - attraverso l'assegnazione dei centri nel piano dei conti, ai sottoconti di costo/ricavo, valorizzando la percentuale di attribuzione del valore di ogni conto ad uno o più centri. Per maggiori dettagli vedere **[Piano dei conti](/docs/erp-home/registers/accounting/analytic-chart-of-accounts)**. 
 
@@ -89,25 +82,14 @@ Sono consentite modifiche manuali agli importi calcolati, così come direttament
 
 Al momento del salvataggio della registrazione l'applicativo procederà a ritornare una maschera con i dettagli delle differenze di valorizzazione, bloccando eventualmente il salvataggio se così è impostato nella causale in uso.
 
-RIBBON BAR: rappresenta il menu della Form in oggetto, ossia l'area nella quale è possibile effettuare delle azioni. La lista delle funzionalità possibili nel tab corrente è di seguito rappresentata:
-
 
 
 | Funzione | Significato |
 | --- | --- |
-| Salva | Pulsante per salvare la registrazione. |
-| Nuova registrazione | Pulsante per creare una nuova registrazione. |
-| Parametri di inserimento | Richiama i parametri di inserimento della prima nota. |
-| Apri anagrafica | Pulsante per richiamare la gestione anagrafica del sottoconto selezionato, o in assenza, la ricerca di un'altra anagrafica. |
 | Cancella i centri di costo selezionati | Pulsante per cancellare i centri di costo selezionati. |
 | Cancella i centri di profitto selezionati | Pulsante per cancellare i centri di profitto selezionati. |
 | Espandi/riduci | Pulsante per ridurre la visualizzazione alla sola parte dei centri di costo o profitto e viceversa o espanderla ad entrambe. |
 
-
-
-| Funzione | Significato |
-| --- | --- |
-|  [Document Manager](/docs/guide/common/operations-with-data/document-manager)  | Pulsante per il collegamento alla gestione documentale. |
 
 
 

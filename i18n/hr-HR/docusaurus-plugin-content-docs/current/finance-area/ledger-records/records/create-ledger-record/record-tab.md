@@ -7,7 +7,6 @@ sidebar_position: 2
 
 La prima sezione "**Estremi IVA del documento**", è presente solo per registrazioni IVA (dove nella causale contabile è settato un registro IVA ed un tipo di movimento iva coerente). 
 
-![](/img/it-it/finance-area/ledger-records/records/create-ledger-record/record-tab/image01.png)
 
  
 
