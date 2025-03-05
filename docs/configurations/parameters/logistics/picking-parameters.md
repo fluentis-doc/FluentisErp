@@ -23,9 +23,13 @@ Nel caso si scelga di controllare la disponibilità è possibile determinare com
 
 Come impostazioni generali è possibile scegliere se al momento della creazione del picking è obbligatorio inserire il **Codice operatore**, se la **Numerazione deve essere progressiva per anno**, se il **Codice operatore che conferma il picking** è obbligatorio.
 
-Nel caso ci siano gestioni particolari degli articoli è attivabile la **Gestione taglia e colore** piuttosto che la **Gestione lotti e serial number**.
+Nel caso ci siano gestioni particolari degli articoli è attivabile la **Gestione taglia e colore**.
 
-In quest'ultimo caso si può prevedere che durante l'inserimento di un nuovo picking sia *obbligatorio* indicare i lotti e i serial number degli articoli.
+Nella sezione **Gestione lotti e serial number** è possibile attivare i seguenti flag:
+
+**Gestione Lotti / Serial number**: abilita la possibilità di gestire lotti e serial number tramite le relative griglie.
+
+**Proposta Lotti / Serial number**: se attivo, al variare di una quantità della riga picking, se l'articolo è gestito a lotti con tipologia prelievo FIFO o per data scadenza, vengono proposti in automatico i lotti nella relativa griglia.
 
 **Movimentazione spunta automatica**: se attivo, nella form *Gestione Spunta* fa lo scarico automatico della riga.   
 
@@ -33,7 +37,7 @@ In quest'ultimo caso si può prevedere che durante l'inserimento di un nuovo pic
 
 **Visualizzazione tree evasione**: se attivo, il flag abilita la modalità tree nella form di evasione picking.      
 
-### WMS Mobile
+### WMS Mobile  
 
 In questo tab si possono definire i parametri per il funzionamento dei Picking in WMS Mobile.
 

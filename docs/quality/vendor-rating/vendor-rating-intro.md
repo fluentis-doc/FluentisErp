@@ -25,14 +25,15 @@ import Link from '@docusaurus/Link';
 ## Per iniziare ad utilizzare   
 
 le **Valutazioni iniziali e periodiche**:
-- definire: un [*Tipo valutazione*](/docs/configurations/tables/quality/vendor-rating/vendor-rating-type), un conto [*Fornitore*](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/accounting-data-intro) e una [*Valutazione fornitore*](/docs/configurations/tables/quality/vendor-rating/vendor-ratings)   
-- per agevolare la gestione delle *Valutazioni iniziali e periodiche* impostare i [*Parametri Qualificazione fornitore*](/docs/configurations/parameters/quality/vendor-ratings)nella sessione *Valutazioni iniziali*   
-- inserire una nuova [*Valutazione iniziali*](/docs/quality/vendor-rating/initial-vendor-rating)   
+- devi definire: un [*Tipo valutazione*](/docs/configurations/tables/quality/vendor-rating/vendor-rating-type), un conto [*Fornitore*](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/accounting-data-intro) e una [*Valutazione fornitore*](/docs/configurations/tables/quality/vendor-rating/vendor-ratings)   
+- per agevolare la gestione delle *Valutazioni iniziali e periodiche* impostare i [*Parametri Qualificazione fornitore*](/docs/configurations/parameters/quality/vendor-ratings) nella sessione *Valutazioni iniziali*   
+- devi inserire una nuova [*Valutazione iniziali*](/docs/quality/vendor-rating/initial-vendor-rating)   
 
 le **Valutazioni periodiche su Non conformità**:
-- definire un [*Tipo valutazione*](/docs/configurations/tables/quality/vendor-rating/vendor-rating-type)   
-- per agevolare la gestione delle *Valutazioni periodiche su Non conformità* impostare i [*Parametri Qualificazione fornitore*](/docs/configurations/parameters/quality/vendor-ratings)nella sessione *Valutazioni periodiche Non conformità*   
-- elaborare una [*Valutazione periodica su Non conformità*](/docs/quality/vendor-rating/vendor-rating-on-nc)   
+- devi definire un [*Tipo valutazione*](/docs/configurations/tables/quality/vendor-rating/vendor-rating-type)   
+- per agevolare la gestione delle *Valutazioni periodiche su Non conformità* impostare i [*Parametri Qualificazione fornitore*](/docs/configurations/parameters/quality/vendor-ratings) nella sessione *Valutazioni periodiche Non conformità*   
+- devi inserire almeno una nuova [*Non conformità a fornitore*](/docs/quality/claims-and-non-compliance/non-compliances/non-compliance) con data compresa nel periodo che si desidera valutare   
+- devi elaborare una [*Valutazione periodica su Non conformità*](/docs/quality/vendor-rating/vendor-rating-on-nc)   
 
 
 ## Collegamenti con altri moduli

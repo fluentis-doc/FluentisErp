@@ -115,7 +115,7 @@ Nello specifico, per ciascuna sezione (preventivo e consuntivo), sono riportati 
 **Costo industriale**: totale dei costi materiali e costo lavorazioni (interne ed esterne);     
 **Totale costi diretti**: totale dei costi inseriti nella sezione **Costi diretti**;    
 **Totale costo diretto comm.**: totale del *Costo industriale* e del *Totale costi diretti*;     
-**Ricarco**: permette di indicare il tipo di ricarico se a percentuale o a valore ed anche il valore stesso;    
+**Ricarico**: permette di indicare il tipo di ricarico se a percentuale o a valore ed anche il valore stesso;    
 **Totale costo ricaricato**: totale del *Totale costo diretto comm.* e del *Ricarico*;     
 **Totale costi generali**: totale dei costi inseriti nella sezione **Costi generali**;      
 **Totale altri costi**: totale dei costi inseriti nella sezione **Altri costi**;     

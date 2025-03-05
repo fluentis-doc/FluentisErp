@@ -3,9 +3,10 @@ title: Precedenti
 sidebar_position: 3
 ---
 
-Eseguita la creazione, le righe spariranno dalla griglia e il risultato sarà visibile nella scheda ‘Ripristino' all'interno della quale è possibile annullare l'operazione. Non è possibile annullare la creazione di effetti se questi sono contabilizzati o presentati in distinta.
+Eseguita la creazione, le righe spariranno dalla griglia e il risultato sarà visibile nella scheda **Ripristino** all'interno della quale è possibile annullare l'operazione. 
 
-RIBBON BAR: rappresenta il menu della Form in oggetto, ossia l'area nella quale è possibile effettuare delle azioni collegate alla procedura in uso. La lista delle funzionalità possibili è di seguito rappresentata:
+Non è possibile annullare la creazione di effetti se questi sono contabilizzati o presentati in distinta.
+
 
 
 

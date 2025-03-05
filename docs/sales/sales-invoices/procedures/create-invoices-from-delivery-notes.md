@@ -51,7 +51,7 @@ Se ci sono DDT con soluzioni di pagamento diverse e se non è stato impostato il
 
 *Riferimenti DDT*
 
-**Metti riferimenti DDT**: se questo flag viene impostato, nel tab [Articoli](/docs/purchase/purchase-invoices/insert-purchase-invoice/items) della fattura verrà visualizzato un *Articolo nota* che riprenderà i riferimenti del DDT dal quale è stata creata la fattura. La composizione di questa nota deve essere inserita nel campo 'Descrizione' secondo i parametri descritti nella label.
+**Metti riferimenti DDT**: se questo flag viene impostato, nel tab [Articoli](/docs/purchase/purchase-invoices/insert-purchase-invoice/purchase-invoice) della fattura verrà visualizzato un *Articolo nota* che riprenderà i riferimenti del DDT dal quale è stata creata la fattura. La composizione di questa nota deve essere inserita nel campo 'Descrizione' secondo i parametri descritti nella label.
 
 *Pulsante specifico*: 
 

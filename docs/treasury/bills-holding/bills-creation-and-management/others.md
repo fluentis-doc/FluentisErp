@@ -3,10 +3,7 @@ title: Altri
 sidebar_position: 5
 ---
 
-In questa ultima sezione si possono memorizzare i riferimenti dei giranti e degli avallanti. Questa scheda non ha una gestione standard particolare.
-
-RIBBON BAR: la ribbon bar rappresenta il menu della Form in oggetto, ossia l'area nella quale è possibile effettuare delle azioni collegate al cespite in gestione. La lista delle funzionalità possibili è di seguito rappresentata:
-
+In questa sezione si possono memorizzare i riferimenti dei giranti e degli avallanti.
 
 
 | Funzione | Significato |

@@ -37,8 +37,8 @@ RIBBON BAR: it represents the Form menu, that is the area in which it is possibl
 |  [Bills Accounting by Vendor](/docs/treasury/bills-holding/accounting/bills-accounting-by-vendor/accounting)  | It refers to the procedure to perform the bills accounting by vendor and to close vendor account. |
 |  [Lists Accounting](/docs/treasury/bills-holding/accounting/lists-accounting/accounting)  | It refers to the procedure to perform the list accounting and to valorize presentation account. |
 |  Credits Accounting | It refers to the procedure to perform the credit accounting in account. |
-|  [Cash Order Files Creation](/docs/treasury/bills-holding/cash-order-rid-lcr/cash-order-rid-lcr-creation/rid-file-creation)  | It refers to the procedure to generate the cash order electronic tracing. |
-|  [RID Files Creation](/docs/treasury/bills-holding/cash-order-rid-lcr/cash-order-rid-lcr-creation/rid-file-creation)  | It refers to the procedure to generate the RID electronic tracing. |
+|  [Cash Order Files Creation]  | It refers to the procedure to generate the cash order electronic tracing. |
+|  [RID Files Creation]  | It refers to the procedure to generate the RID electronic tracing. |
 |  [Import Unpaid](/docs/treasury/bills-holding/procedures/import-unpaids)  | It refers to the procedure to import the unpaids electronic tracing. |
 |  [Accounting of Unpaid](/docs/treasury/bills-holding/accounting/unpaid-accounting/unpaids)  | It refers to the procedure to account unpaids, with the related opening of customer maturity value according to module parameters. |
 |  Accounting of Unpaid on loan procedure to account unpaids, with the related opening of customer and vendor maturity values according to module parameters. |

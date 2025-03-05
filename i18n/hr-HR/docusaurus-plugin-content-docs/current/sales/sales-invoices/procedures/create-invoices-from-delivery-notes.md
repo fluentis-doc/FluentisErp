@@ -47,7 +47,7 @@ Ako postoje otpremnice s različitim načinima plaćanja i ako nije postavljena 
 
 *Reference otpremnice*
 
-**Umetni referente otpremnice**: ako je postavljena ova oznaka, na kartici [Artikl](/docs/purchase/purchase-invoices/insert-purchase-invoice/items) računa bit će prikazan *Artikl s napomenama* koji će preuzeti reference otpremnice iz koje je račun stvoren. Sastav ovog članka treba biti unesen u polju 'Opis' prema parametrima opisanim na naljepnici.
+**Umetni referente otpremnice**: ako je postavljena ova oznaka, na kartici [Artikl] računa bit će prikazan *Artikl s napomenama* koji će preuzeti reference otpremnice iz koje je račun stvoren. Sastav ovog članka treba biti unesen u polju 'Opis' prema parametrima opisanim na naljepnici.
 
 *Posebni gumb*: 
 
