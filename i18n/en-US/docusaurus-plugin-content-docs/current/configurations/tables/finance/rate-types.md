@@ -1,44 +1,53 @@
 ---
-title: Rate Types
+title: Tipi tasso
 sidebar_position: 28
 ---
 
-This table enables the user to encode and set different typologies of types in order to be managed in active company.
+La definizione di questa tabella consente di codificare e impostare le varie tipologie di tipi tasso da gestire nella società attiva.
 
-It is connected to every type of rate. In the grill beneath the details of valid interest rates will be defined period by period. 
+ 
 
+Nella **Griglia superiore** sono presenti i seguenti campi:
 
+**Codice**: codice identificativo del tasso d'interesse.
 
-| Function | Meaning |
-| --- | --- |
-| Code | Identification code of the interest rate. |
-| Description  | Interest rate description. |
-| From Document Date | Document date from which the interests calculation (relay on DECRETO LEGISLATIVO 9 October 2002, n. 231) has to be managed. |
-| From Due Date | Due date from which the interests calculation (relay on DECRETO LEGISLATIVO 9 October 2002, n. 231) has to be managed. |
-| Min. Interest | Minimum amount of interests below which the user has no amount to valorize. |
-| Franchise Days | It is the number of franchise days, that will be deducted from the count of the late days. |
-| Calculate also the Discount | Management flag in rebates for pre-payement. |
+**Descrizione**: descrizione del tasso d'interesse.
 
+**Da data documento**: data documento a partire dalla quale va gestito il calcolo interessi (il rif. è al DECRETO LEGISLATIVO 9 ottobre 2002, n. 231). Lo scopo del campo è quello di impedire che siano calcolati interessi su documenti aventi data anteriore a quella di emanazione della legge.
 
+**Da data scadenza**: data scadenza a partire dalla quale va gestito il calcolo interessi (il rif. è al DECRETO LEGISLATIVO 9 ottobre 2002, n. 231). Lo scopo del campo è quello di impedire che siano calcolati interessi su documenti aventi scadenza anteriore a quella di emanazione della legge.
 
-| Function | Meaning |
-| --- | --- |
-| Code | Identification code of rate. |
-| From Date | Date from which the rate has to be managed. |
-| To Date | Date to which the rate has to be managed. |
-| Percentage | Percentage of applicable interest rate. |
+**Interesse min.**: importo minimo degli interessi al di sotto del quale non valorizzare alcun importo.
 
-RIBBON BAR: the ribbon bar represents the Form menu, that is the area in which it is possible to operate on previous recordings or generate new ones. The possible features list is the following:
+**Giorni franchigia**: numero di giorni di franchigia che saranno detratti dal conteggio dei giorni di ritardo.
 
+**Calcolo anche sconto**: flag di gestione anche in sconto in caso di pagamento anticipato. 
 
+:::tip nota
+ESEMPIO: in caso di pagamento anticipato da parte del cliente e successivo ritardo di pagamento, se l'importo dell'interesse calcolato sul ritardo è superiore al valore impostato nel campo Interesse min. , al valore dell'interesse calcolato sarà detratto il valore (negativo) calcolato in base ai giorni che intercorrono tra la data pagamento e la data scadenza. In ogni caso il risultato del calcolo non potrà mai essere un interesse negativo.
+:::
 
-| Function | Meaning |
-| --- | --- |
-| Search | It is a command that is necessary in order to look for rate type through the fields: code and description. |
-| New Rate Type | It is a command that is necessary in order to insert a new rate type. |
-| Delete Rate Type | It is a command that is necessary in order to delete the rate type, where the user is located. |
-| New Detail | It is a command that is necessary in order to insert the rate type detail, where the user is located. |
-| Delete Detail | It is a command that is necessary in order to delete the rate type detail, where the user is located. |
+Nella **Griglia inferiore** sono presente i seguenti campi:
+
+**Codice**: codice identificativo del tasso.
+
+**Da data**: data a partire dalla quale va gestito il tasso indicato nella riga.
+
+**A data**: data fino alla quale sarà gestito il tasso indicato nella riga
+
+**Percentuale**: percentuale di tasso d'interesse applicabile.
+
+I campi relativi alle date di validità riferiti alla percentuale permettono di definire l'andamento della politica del tasso di interesse che, come noto, è soggetta a periodiche revisioni relative al tasso legale.
+
+ 
+
+![](/img/it-it/configurations/tables/finance/rate-types/image01.png)
+
+ 
+
+RIBBON BAR: per quanto riguarda le funzionalità comuni a tutte le form si rimanda all'articolo ** [Pulsanti comuni](/docs/guide/common/common-buttons) ;**
+
+Si rimanda inoltre agli articoli generali realtivi all' [**Inserimento dati**](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection)  e all' [**Anteprima e Stampa**](/docs/guide/common/operations-with-data/reports).
 
 
 
