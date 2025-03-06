@@ -14,7 +14,7 @@ I dati presenti in questa gestione sono utilizzati per proporre informazioni nel
 
 Per poter memorizzare le informazioni modificate è necessario premere il pulsante **Salva**.   
 
-*Campi specifici*: 
+#### Campi specifici
     
 > expander **Corsi di formazione**
 >> **Tipo corso base**: *Tipo corso base* da proporre all'inserimento di un *Corso base*.   

@@ -7,7 +7,7 @@ I **Parametri magazzino carico/scarico per utente** permettono di introdurre del
 In assenza di questi parametri, l’utente può effettuare le operazioni di movimentazione su qualsiasi magazzino, ma questo implica il dover scegliere manualmente un magazzino all’interno delle singole form con relativa causale. 
 Ovviamente questa operatività non è corretta e non è gestibile dall’operatore, ma con questi parametri è possibile indicare per ciascuna form e ciascun operatore, il *magazzino* e la *casuale* di default che saranno precompilate all’apertura della form.
 
-La tabella si compone dei seguenti campi:
+#### Campi specifici
 
 > **Area**: indica l'area di appartenenza della form;      
 > **Modulo**: indica il modulo di appartenenza della form;       
