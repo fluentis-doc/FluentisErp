@@ -11,7 +11,7 @@ Nel caso in cui si intenda configurare manualmente fare riferimento alla check l
 
 All'interno di questa tabella si codificano le categorie dei cespiti gestiti nella società. 
 
-### **Griglia superiore**
+### Tabella superiore 
 
 **Categoria**: codice alfanumerico.
 
@@ -43,7 +43,7 @@ All'interno di questa tabella si codificano le categorie dei cespiti gestiti nel
 
 **Numerazione**: (Facoltativo) Permette di definire una numerazione delle schede cespite specifica per ogni singola categoria. Il campo si collega all'[**apposita tabella**](/docs/configurations/tables/fluentis-numerations) dove definire il numeratore. Se non viene definito, di default, continua ad essere utilizzata la numerazione generale dei cespiti eventualmente collegata al precodice (oppure unica).
 
-### Seconda griglia
+### Seconda Tabella
 
 La seconda sezione  è dedicata all'impostazione dei dettagli di ammortamento applicabili alla categoria superiore selezionata.
 
@@ -75,20 +75,16 @@ La seconda sezione  è dedicata all'impostazione dei dettagli di ammortamento a
 
 **Descr. deducibilità**: descrizione del tipo di deducibilità.
 
----
+#### Pulsanti specifici
 
-| Bottone della Ribbon Bar | Significato |
-| --- | --- |
-| Cerca nella tabella superiore | Pulsante per effettuare la ricerca nella tabella superiore attraverso i campi di filtro categoria e descrizione. |
-| Inserisce nella tabella superiore | Pulsante per inserire una nuova categoria cespite. |
-| Inserisce nella tabella dettaglio | Pulsante per inserire il dettaglio della tabella superiore selezionata. |
-| Inserisce nella tabella Cdc | Pulsante per inserire i Cdc della tabella superiore selezionata. OBSOLETO |
-| Cancella righe selezionate | Pulsante per effettuare la cancellazione delle righe selezionate  (categoria cespite). |
-| Cancella righe selezionate dalla tabella inferiore | Pulsante per effettuare la cancellazione delle righe selezionate di tabella inferiore ( dettaglio del tipo ammortamento). |
-| Cancella righe selezionate dalla tabella Cdc | Pulsante per effettuare la cancellazione delle righe selezionate di tabella centri di costo. OBSOLETO |
-| Salva | Pulsante per salvare le modifiche. |
-
----
+**Cerca nella tabella superiore**: permette di effettuare la ricerca nella tabella superiore attraverso i campi di filtro categoria e descrizione.  
+**Inserisce nella tabella superiore**: permette di inserire una nuova categoria cespite.  
+**Inserisce nella tabella dettaglio**: permette di inserire il dettaglio della tabella superiore selezionata.  
+**Inserisce nella tabella Cdc**: permette di inserire i Cdc della tabella superiore selezionata. OBSOLETO  
+**Cancella righe selezionate**: permette di effettuare la cancellazione delle righe selezionate  (categoria cespite).  
+**Cancella righe selezionate dalla tabella inferiore**: permette di effettuare la cancellazione delle righe selezionate di tabella inferiore ( dettaglio del tipo ammortamento).  
+**Cancella righe selezionate dalla tabella Cdc**: permette di effettuare la cancellazione delle righe selezionate di tabella centri di costo. OBSOLETO  
+**Salva**: permette di salvare le modifiche.  
 
 ### GRIGLIA DEI CENTRI DI COSTO (RIMOSSA SE ATTIVO IL MODULO CONTROLLING COMPLETO IN TABELLA SOCIETA', SENZA IL PARAMETRO DI USO CENTRI CONTABILI)
 
@@ -104,12 +100,7 @@ All'interno della scheda cespite nella griglia centri di costo della tab **Opera
 
 **Percentuale**: Impostazione della percentuale di valorizzazione al centro di costo.
 
----
-
 ### **VIDEO TUTORIALS**
 :::important Vedi Anche
 [**VIDEO TUTORIALS SULLE TABELLE CESPITI**](/docs/video/finance/intro.md)
 :::
-
-
-

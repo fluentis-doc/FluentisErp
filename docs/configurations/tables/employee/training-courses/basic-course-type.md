@@ -13,16 +13,16 @@ Alcuni esempi di utilizzo di *Tipi corso base* li troviamo nelle gestioni:
 
 La tabella consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
 
-**Ricerca Tipi corso base**
+### Ricerca Tipi corso base**
 
 La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
 
-**Inserimento Tipi corso base**
+### Inserimento Tipi corso base**
 
 Per poter inserire nuovi *Tipi corso base* è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.   
 Per il nuovo record si devono inserire almeno i campi obbligatori richiesti dal programma: il **Codice** e la **Descrizione**.
 
-*Campi specifici*: 
+#### Campi specifici  
     
 > **Tipo**: è il codice del *Tipo corso base*.   
 > **Descrizione tipo**: è la descrizione del *Tipo corso base*.   

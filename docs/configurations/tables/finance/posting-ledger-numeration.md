@@ -4,14 +4,7 @@ sidebar_position: 19
 ---
 
 
-:::note Percorso
-**Configurazione > Amministrazione > Numerazione registrazioni contabili**
-
-Nota:
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
-
-:::
-
+Percorso form: **Configurazione > Amministrazione > Numerazione registrazioni contabili**
 
 :::tip[FAst Start]
 La tabella è interessata dalla procedura di [**Fast Start**](/docs/guide/fast-start)

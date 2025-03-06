@@ -12,16 +12,16 @@ Alcuni esempi di utilizzo di *Tipi corso di formazione* li troviamo nelle gestio
 
 La tabella consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
 
-**Ricerca Tipi corso di formazione**
+### Ricerca Tipi corso di formazione**
 
 La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
 
-**Inserimento Tipi corso di formazione**
+### Inserimento Tipi corso di formazione**
 
 Per poter inserire nuovi *Tipi corso di formazione* è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.   
 Per il nuovo record si devono inserire almeno i campi obbligatori richiesti dal programma: il **Codice** e la **Descrizione**.
 
-*Campi specifici*: 
+#### Campi specifici 
     
 > **Tipo**: è il codice del *Tipo corso di formazione*.   
 > **Descrizione tipo**: è la descrizione del *Tipo corso di formazione*.   

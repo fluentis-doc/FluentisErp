@@ -14,7 +14,7 @@ La tabella può essere valorizzata manualmente inserendo direttamente il tasso d
 :::
 
 
-Nella griglia si trovano i seguenti campi:
+##### Campi specifici
 
 **Cambio**: normalmente va inserita la divisa della società (euro).
 
@@ -29,9 +29,3 @@ Nella griglia si trovano i seguenti campi:
 **Valore cambio**: si tratta del cambio 'incerto per certo', effettivamente utilizzato dal programma nei calcoli dei controvalori. Nel caso dell'euro, quindi, è il valore inverso al cambio ufficiale del giorno.
 
 **Valore diretto**: si tratta del cambio 'certo per incerto'. Nel caso dell'euro, quindi, è il valore de cambio ufficiale del giorno.
-
-
-
-
-
-

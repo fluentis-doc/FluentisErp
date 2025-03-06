@@ -5,15 +5,16 @@ sidebar_position: 44
 
 La tabella consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
 
-**Ricerca Voci di costo**
+### Ricerca Voci di costo
 
 La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
 
-**Inserimento Voci di costo**
+### Inserimento Voci di costo 
 
 Per poter inserire nuove codifiche è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.
 
-Per il nuovo record si devono inserire i seguenti campi:      
+#### Campi specifici
+    
 **Codice**: indica il codice della voce di costo;      
 **Descrizione**: indica la descrizione della voce di costo;      
 **Tipo di costo**: indica la tipologia della voce di costo tra *Costi diretti*, *Costi generali* e *Altri costi*;      

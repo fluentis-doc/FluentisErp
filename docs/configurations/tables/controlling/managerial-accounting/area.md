@@ -9,16 +9,16 @@ La tabella è d'interesse solo nelle società con il flag *Controlling* attivo.
 :::
 
 I Dati del Controlling vengono sempre gestiti con un’area di analisi collegata che identifica che tipi di dati ci sono dentro: Possiamo immaginarla come una scatola fisica, dove ogni scatola viene alimentata con valori contabili e valori quantitativi e ogni scatola può avere un suo modello di calcolo diverso e a sé stante. Un’area comprende i dati di tutte le *dimensioni* dei centri.
-I campi disponibili sono:
-- ***Codice***
-- ***Descrizione***
-- [***Tipo Area***](/docs/configurations/tables/controlling/managerial-accounting/area-type)
-- ***Commessa di quadratura***, non gestito
+
+#### Campi specifici  
+- **Codice**
+- **Descrizione**
+- [**Tipo Area**](/docs/configurations/tables/controlling/managerial-accounting/area-type)
+- **Commessa di quadratura**, non gestito
 
 
-
-***TIPOLOGIE DI AREE***
-Avremo tipicamente 3 aree:
+#### TIPOLOGIE DI AREE  
+Avremo tipicamente 3 aree:  
 - *BUDGET*: avremo il budget per l’anno successivo;
 
 - *CONSUNTIVO*: quando andiamo ad elaborare le chiusure infrannuali; 
@@ -30,5 +30,3 @@ Possiamo definire liberamente quante aree di analisi vogliamo. L'obiettivo tipic
 
 Altro utilizzo è quello di 'cristallizzare' le elaborazioni del controlling: come avremo modo di spiegare parlando dei cost driver, le elaborazioni del controlling cancellano e ricreano i dati dell'anno che si sta elaborando. Se si vuole storicizzare, ad esempio, il primo *trimestre* per poterlo poi confrontare con i primi 3 mesi di quanto calcolato nell'elaborazione del primo *semestre*, possiamo ottenere questo risultato creando aree consuntive differenti.
 :::
-
-

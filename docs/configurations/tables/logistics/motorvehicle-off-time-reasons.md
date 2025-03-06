@@ -19,7 +19,7 @@ Per poter inserire nuovi è necessario cliccare nella griglia sulla prima riga v
 Per il nuovo record si devono inserire almeno i campi obbligatori richiesti dal programma: il **Codice** e la **Descrizione**.
 Con il pulsante **Cancella** è possibile eliminare il record selezionata.
 
-*Campi specifici*: 
+#### Campi specifici  
 
 > **Codice**: è il codice del *Motivo di fermo autoveicolo*.   
 > **Descrizione**: è la descrizione del *Motivo di fermo autoveicolo*.   

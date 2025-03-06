@@ -11,6 +11,8 @@ La form si compone di un'area di filtro e da una di risultato. Una volta imposta
 
 Per poter inserire nuovi record è necessario cliccare nella griglia superiore sulla prima riga vuota oppure premere il pulsante **Nuovo**. 
 
+#### Campi specifici
+
 **Codice/Descrizione**: indicare un codice univoco per la tipologia di spedizione e relativa descrizione.
 
 **Cod Intra**: indicare il relativo codice ufficiale da utilizzare per la dichiarazione intrastat.

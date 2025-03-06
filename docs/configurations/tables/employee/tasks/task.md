@@ -15,16 +15,16 @@ Alcuni esempi di utilizzo delle *Mansioni* le troviamo nelle gestioni:
 
 La tabella consente di inserire nuove *Mansioni* o di ricercare quelle già esistenti per visualizzarle, modificarle oppure cancellarle.   
 
-**Ricerca Mansioni**   
+## Ricerca Mansioni   
 
 La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.   
 
-**Inserimento Mansioni**   
+## Inserimento Mansioni  
 
 Per poter inserire nuove *Mansioni* è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.   
 Per il nuovo record si devono inserire almeno i campi obbligatori richiesti dal programma: il **Codice** e la **Descrizione**.   
 
-## Mansioni   
+### Mansioni   
 
 E' l'elenco dove vengono inserite le informazioni principali della *Mansione*.   
 L'elenco si compone delle seguenti informazioni:   

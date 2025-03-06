@@ -10,9 +10,8 @@ La tabella è interessata dalla procedura di [**Fast Start**](/docs/guide/fast-s
 Nel caso in cui si intenda configurare manualmente fare riferimento alla check list della pagina linkata
 :::
 
----
-
 ### PREMESSA
+
 La tabella, da considerare come fondamentale e necessaria per poter poi gestire qualsiasi altro dato, permette di codificare le aziende riferite alla base dati alla quale si è collegati.
 
 E' possibile codificare un numero illimitato di società (aziende) che saranno sempre tutte in linea contemporaneamente all'interno dello stesso database.
@@ -34,6 +33,7 @@ La contabilità seppur unica a livello di azienda che redige un unico bilancio, 
 ---
 
 ### GESTIONE TABELLA
+
 La maschera che si apre rappresenta la lista delle società presenti nel database.
 Vengono riportati in griglia, per comodità, alcuni campi presenti nel dettaglio della società stessa, illustrato qui di seguito.
 
@@ -43,48 +43,45 @@ Vengono riportati in griglia, per comodità, alcuni campi presenti nel dettaglio
 Dopo la creazione della nuova società nella presente tabella è necessario gestirne i permessi di visibilità ai vari utenti tramite l'applicazione ARM e preliminarmente definire anche la società stessa anche su ARM (menu Società)
 :::
 
-
----
-
 ### DETTAGLIO ANAGRAFICA SOCIETA'
 
 il **codice** della Società (che deve corrispondere al codice definito nel portale Arm)
 
-**Descrizione:** ovvero la ragione sociale ufficiale della società
+**Descrizione**: ovvero la ragione sociale ufficiale della società
 
-**Partita IVA:** normalmente viene inserita senza il precodice nazione ad esempio IT per l’Italia)
+**Partita IVA**: normalmente viene inserita senza il precodice nazione ad esempio IT per l’Italia)
 
-**Codice fiscale della società:** che può corrispondere alla partita iva
+**Codice fiscale della società**: che può corrispondere alla partita iva
 
-**Codice Attività:** ovvero il codice Ateco dell’attività principale della società
+**Codice Attività**: ovvero il codice Ateco dell’attività principale della società
 
-**Nazione della società:** sulla base di questo campo Fluentis riconosce la localizzazione e le impostazioni fiscali da presentare di default nel sistema
+**Nazione della società**: sulla base di questo campo Fluentis riconosce la localizzazione e le impostazioni fiscali da presentare di default nel sistema
 
-**Divisa:** è la divisa nella quale è tenuta la contabilità ufficiale della società.
+**Divisa**: è la divisa nella quale è tenuta la contabilità ufficiale della società.
 
 :::note Nota
 La nazione e divisa della società sono già popolate inquanto richieste e impostate all’atto dell’installazione di Fluentis. Sono chiaramente dati fondamentali che implementano tutta una serie di altre impostazioni di carattere amministrativo e fiscale. La divisa, in particolare, è quella nella quale è denominata la nostra contabilità.
 :::
 
-**Lingua:** in questo campo, non obbligatorio ma molto importante, si indica la lingua ufficiale della società. È utilizzato come lingua di default da riportare nelle stampe, così come nella valorizzazione automatica delle stringhe descrittive in contabilità
+**Lingua**: in questo campo, non obbligatorio ma molto importante, si indica la lingua ufficiale della società. È utilizzato come lingua di default da riportare nelle stampe, così come nella valorizzazione automatica delle stringhe descrittive in contabilità
 
-**Anagrafica associata:** questo è un campo opzionale che serve per due tipi di utilizzo: il primo nel caso in cui l’azienda sia una ditta individuale, questo è il collegamento all’anagrafica che ci consente di riprendere i dati della persona fisica per le dichiarazioni fiscali
+**Anagrafica associata**: questo è un campo opzionale che serve per due tipi di utilizzo: il primo nel caso in cui l’azienda sia una ditta individuale, questo è il collegamento all’anagrafica che ci consente di riprendere i dati della persona fisica per le dichiarazioni fiscali
 Il secondo utilizzo: nel caso di due aziende appartenenti ad un gruppo che abbiano rapporti, e quindi documenti, intercompany, serve per il passaggio di dati da una società all’altra; ad esempio per fare in modo che la fattura di vendita della prima società diventi automaticamente fattura di acquisto per la seconda società: per far questo, quindi, la seconda società deve sapere in quale anagrafica andare a cercare il fornitore per intestare il documento correttamente.
 L'impostazione viene anche utilizzata per la procedura del modulo Controlling > Chiusure > Infrannuali > Consolidamento dove il sistema va a neutralizzare i costi e ricavi, crediti e debiti reciproci tra le due società facenti parte del gruppo ed aggregando invece costi e ricavi, crediti e debiti "esterni" al fine di ottenere un bilancio consolidato.
 
-**Campi indirizzo:** ovvero l’indirizzo della sede legale
+**Campi indirizzo**: ovvero l’indirizzo della sede legale
 
-**Ufficio IVA:** in questo campo si indica la città dove si trova l’ufficio iva di riferimento della società
+**Ufficio IVA**: in questo campo si indica la città dove si trova l’ufficio iva di riferimento della società
 
-**Ufficio REA/Numero di iscrizione REA:** codice della provincia e numero di iscrizione al registro delle imprese (necessari per la fatturazione elettronica)
+**Ufficio REA/Numero di iscrizione REA**: codice della provincia e numero di iscrizione al registro delle imprese (necessari per la fatturazione elettronica)
 
-**Capitale sottoscritto/Capitale versato:** testi relativi ai valori della situazione del capitale societario (necessari per la fatturazione elettronica)
+**Capitale sottoscritto/Capitale versato**: testi relativi ai valori della situazione del capitale societario (necessari per la fatturazione elettronica)
 
 Necessario pure il campo **Soci** e lo **Stato**, se in liquidazione o meno, sempre per la fatturazione elettronica.
 
-**Natura giuridica:** in questo campo si indica il codice che identifica il tipo di società. La tabella è fissa e predefinita
+**Natura giuridica**: in questo campo si indica il codice che identifica il tipo di società. La tabella è fissa e predefinita
 
-**Regime fiscale:** in questo campo si indica in che regime fiscale opera. La tabella è fissa e predefinita
+**Regime fiscale**: in questo campo si indica in che regime fiscale opera. La tabella è fissa e predefinita
 
 :::tip GRUPPO IVA
 Nella lista dei possibili regimi è stato aggiunto il codice 61 GRUPPO IVA. Selezionando questa voce (se la società che stiamo gestendo fa parte di un gruppo iva e dunque presenta il suo codice fiscale ma la partita iva della capogruppo), in fase di esportazione del file xml della fattura elettronica di vendita, sarà riportato sia la partita iva sia il codice fiscale. Infatti lo SDI controlla entrambi i campi (e non solo la partita iva) nel caso in cui la società dichiari di far parte di un gruppo iva.
@@ -92,7 +89,7 @@ Nella lista dei possibili regimi è stato aggiunto il codice 61 GRUPPO IVA. Sele
 Per quanto riguarda i file xml delle fatture d'acquisto in entrata, con questa impostazione viene effettuato il controllo sia sulla partita iva e poi, se all'interno del db ci sono più società con la stessa partita iva, anche del codice fiscale.
 :::
 
-**Numero decimali per i campi qtà:** che indica quanti decimali riportare nelle stampe per i campi quantità dei documenti
+**Numero decimali per i campi qtà**: che indica quanti decimali riportare nelle stampe per i campi quantità dei documenti
 Il flag **Mosta simbolo valuta** con il quale si indica se visualizzare o meno il simbolo della valuta (e i campi uguali a zero) nelle maschere di visualizzazione dei movimenti contabili
 
 Flag **Gestione controlling** che abilita le procedure "avanzate" (set completo delle funzioni) dell’ area controlling per la società che stiamo modificando
@@ -104,8 +101,7 @@ Dunque in fase di consolidamento il movimento contabile della società controlla
 Il dato che viene gestito in questa elaborazione, in ogni caso, è quello gestito nel modulo controlling e già elaborato dai cost driver relativi, non il dato di contabilità generale.
 Solo la parte di dato di natura contabile verrà transcodificato, mentre il movimento di centro di costo (centro aziendale) sarà riportato senza modifiche ed il prerequisito per il riporto è, infatti, quello che il codice del centro aziendale sia uguale sia nella società master sia nella società controllata.
 
-
----
+#### Sezione inferiore
 
 Nella parte bassa della finestra troviamo tre sezioni espandibili con ulteriori dati inseribili, in questo caso si tratta di dati di tipo opzionale che possono anche non essere presenti, quantomeno in fase iniziale:
 
@@ -115,9 +111,9 @@ Nella sezione **Spese bollo**, invece, si indica il valore delle spese bollo ed 
 
 **Expander Ri.Ba.** : trovano posto i dati identificativi della società per il sistema telematico bancario: il codice SIA (5 caratteri alfanumerici) e il codice CUC (8 caratteri) per il Sepa.
 
----
 
 ### Griglia delle divisioni, Banca d'appoggio di default e Logo
+
 Nella colonna di destra della maschera abbiamo tre griglie.
 
 Nella prima sono visibili le divisioni definite per la società. E’ bene ricordarsi sempre che per ogni società deve esistere all’interno del software almeno una divisione, anche se questa, come avviene in molti casi, corrisponde all’unica sede. Infatti viene spesso rinominata in divisione 1 o, ancora meglio, semplicemente sede. Su ogni divisione è possibile definire se il controllo di gestione avviene con cadenza settimanale o mensile.
@@ -132,7 +128,7 @@ Occorre previamente importare una o più immagini da utilizzare come logo tramit
 
 ### PULSANTE IMPOSTAZIONI GENERALI (PER IL LANCIO DELLA PROCEDURA DI FAST START)
 
-questo pulsante crea, in un database appena installato, oppure in una azienda aggiunta alla base dati tutta una serie di dati di base di default; ad esempio, un piano dei conti ed impostazioni di base di registri iva, causali contabili, tipi documenti quali ordini, bolle e fatture  ecc.
+Questo pulsante crea, in un database appena installato, oppure in una azienda aggiunta alla base dati tutta una serie di dati di base di default; ad esempio, un piano dei conti ed impostazioni di base di registri iva, causali contabili, tipi documenti quali ordini, bolle e fatture  ecc.
 
 Si tratta di una funzionalità molto utile in fase di definizione della strategia per l’ avvio di una nuova società e per la relativa impostazione del software, inquanto, in certi casi, potrebbe essere più conveniente, al fine di rendere il software completamente operativo in tempi contenuti, partire da una situazione di default, facendo poi delle modifiche per adattare ad esempio il piano dei conti, le causali contabili e le altre tabelle di default alla situazione concreta, piuttosto che partire da zero creando queste tabelle ed impostazioni. 
 

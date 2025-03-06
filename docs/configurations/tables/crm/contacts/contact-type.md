@@ -13,6 +13,7 @@ Per ogni contatto è inoltre possibile definire:
 Per ogni tipologia di contatto è inoltre possibile definire 
 
 ## Tipo di contatto Ruolo
+
 ossia per i singoli utenti Fluentis (o i gruppi di utenti definiti in base ai Ruoli) è possibile definire quali tab possano essere visualizzate. Per ogni Tipo di contatto Ruolo è necessario definire:
 **Data Creazione**: è la data di creazione del tipo contatto Ruolo;
 **Ruolo**: fa riferimento alla tabella dei ruoli degli utenti di Fluentis;
@@ -20,9 +21,11 @@ ossia per i singoli utenti Fluentis (o i gruppi di utenti definiti in base ai Ru
 **Tab abilitate per Ruolo/Operatore**: quali tab può visualizzare e gestire tra quelle presenti, come: Attività, Indirizzo, Agenti, Categoria commerciale, etc 
 
 ## Extra data
+
 È inoltre possibile definire per ogni tipo contatto anche degli [Extra data](/docs/configurations/utility/extra-data/extradata/search-extradata/), che dovranno essere proposti per i contatti che presentano tale tipologia (per ulteriori informazioni riguardo gli Extra data fare riferimento all’apposita sezione della presente guida).
 
 ## Pipeline Contatto
+
 Elenco degli stati disponibili per il tipo contatto, configurati dall'utente.
 Se il contatto ha un workflow associato, e lo stato del workflow corrisponde ad uno degli stati disponibili per il Tipo contatto, il campo "Pipeline contatto" nell'anagrafica contatto verrà aggiornato in automatico. 
 Quindi ad ogni cambio stato del workflow, se presente corrispondenza, verrà aggiornato in automatico il campo "Pipeline Contatto". In questo modo il workflow ed il campo Pipeline contatto in anagrafica contatto saranno sempre allineati. 

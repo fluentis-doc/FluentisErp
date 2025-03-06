@@ -11,8 +11,3 @@ Per la definizione dei campi del numeratore si veda [**qui**](/docs/configuratio
 La tabella è interessata dalla procedura di [**Fast Start**](/docs/guide/fast-start)
 :::
 
-
-
-
-
-

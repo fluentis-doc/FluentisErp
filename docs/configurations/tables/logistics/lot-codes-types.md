@@ -15,11 +15,11 @@ La tabella si trova sul percorso **Tabelle > Logistica > Tipo codice lotto**.
 
 In questa tabella è possibile codificare i *Tipi di codice lotto* personalizzandoli in base alle esigenze.
 
-**Ricerca Codici lotto**
+### Ricerca Codici lotto 
 
 La form si compone di un'area di filtro e da una di risultato. Una volta impostati i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati nell'aria di risultato.
 
-**Inserimento Codici lotto**
+### Inserimento Codici lotto 
 
 Per poter inserire nuove codifiche è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**. 
 
@@ -32,7 +32,8 @@ Al di sotto della tabella principale, sono presenti tre tab:
 - **Dettagli tipo codice lotto definizione progressivo**  
 - **Dettagli tipo codice lotto dei valori chiave progressivi**    
 
-**Dettagli tipo codice lotto**
+### Dettagli tipo codice lotto 
+
 nella tabella *Codice predefinito*, sono presenti tutti i valori che è possibile utilizzare per la composizione del lotto che stiamo creando, che nello specifico sono:
 
 > *Classe*: riporta la classe dell'articolo;    
@@ -60,19 +61,19 @@ nella tabella *Codice predefinito*, sono presenti tutti i valori che è possibil
 Ognuno di questi, a seconda delle esigenze, deve essere poi spostato nella tabella *Dettagli tipo codice lotto* tramite l'uso degli appositi pulsanti presenti nella ribbon bar. 
 Per ciascuna voce aggiunta, è possibile definire la *Lunghezza* e il *Carattere di riempimento*.
 
-*Pulsanti specifici*:
+#### Pulsanti specifici  
 > **Sposta: Predefinito -> Dettaglio**: permette di aggiungere una delle voci presenti nella tabella *Codice predefinito* alla tabella *Dettaglio tipo codice lotto*. Questo pulsante si abilita solamente dopo aver selezionato una riga nella tabella *Codice predefinito* del tab *Dettaglio tipo codice lotto*;          
 > **Sposta: Dettaglio -> Predefinito**: permette di rimuovere una delle voci presenti nella tabella *Dettaglio tipo codice lotto* riportandola nella tabella *Codice predefinito*. Questo pulsante si abilita solamente dopo aver selezionato una riga nella tabella *Dettaglio tipo codice lotto* del tab *Dettaglio tipo codice lotto*;               
 
-**Dettagli tipo codice lotto definizione progressivo** 
+#### Dettagli tipo codice lotto definizione progressivo 
 
 In questo tab è possibile definire quali delle voci presenti nella tabella *Codice predefinito* debbano comporre la radice del codice lotto, quindi quella parte del codice che rimarrà fissa mentre varierà il progressivo. In questo caso non è possibile selezionare le voci *Numero progressivo* e *Caratteri alfabetici* perchè essendo dei progressivi variano continuamente, mentre è possibile selezionare tutte le altre voci.
 
-*Pulsanti specifici*:
+#### Pulsanti specifici  
 > **Sposta: Predefinito -> Definizione progressivo**: permette di aggiungere una delle voci presenti nella tabella *Codice predefinito* alla tabella *Definizione progressivo*. Questo pulsante si abilita solamente dopo aver selezionato una riga nella tabella *Codice predefinito* del tab *Dettaglio tipo codice lotto definizione progressivo*;          
 > **Sposta: Definizione progressivo -> Predefinito**: permette di rimuovere una delle voci presenti nella tabella *Definizione progressivo* riportandola nella tabella *Codice predefinito*. Questo pulsante si abilita solamente dopo aver selezionato una riga nella tabella *Definizione progressivo* del tab *Dettaglio tipo codice lotto definizione progressivo*;  
 
-**Dettagli tipo codice lotto dei valori chiave progressivi**  
+#### Dettagli tipo codice lotto dei valori chiave progressivi 
 
 In questa tab vengono visualizzati tutti i valori degli ultimi progressivi relativi ad ogni singola radice del codice.
 

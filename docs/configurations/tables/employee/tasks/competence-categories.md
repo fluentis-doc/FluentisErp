@@ -10,16 +10,16 @@ Un esempio di utilizzo lo troviamo nella gestione **Competenze**.
 
 La tabella consente di inserire nuove *Categorie competenza* o di ricercare quelle già esistenti per visualizzarle, modificarle oppure cancellarle.
 
-**Ricerca Categorie competenza**
+#### Ricerca Categorie competenza 
 
 La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
 
-**Inserimento Categorie competenza**
+#### Inserimento Categorie competenza 
 
 Per poter inserire nuove *Categorie competenza* è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.   
 Per il nuovo record si devono inserire almeno i campi obbligatori richiesti dal programma: il **Codice** e la **Descrizione**.
 
-*Campi specifici*: 
+#### Campi specifici 
     
 > **Codice**: è il codice della *Categoria competenza*.   
 > **Descrizione**: è la descrizione della *Categoria competenza*.   

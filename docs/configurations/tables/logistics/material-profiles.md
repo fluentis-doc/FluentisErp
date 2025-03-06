@@ -19,7 +19,7 @@ La form si compone di un'area di filtro e da una di risultato. Una volta imposta
 Per poter inserire nuovi *Profili materiali* è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.   
 Per il nuovo record si devono inserire almeno i campi obbligatori richiesti dal programma: il **Codice** e la **Descrizione**.
 
-*Campi specifici*: 
+#### Campi specifici 
 
 > **Codice**: è il codice del *Profilo materiale*.   
 > **Descrizione**: è la descrizione del *Profilo materiale*.     

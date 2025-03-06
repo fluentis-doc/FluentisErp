@@ -15,18 +15,18 @@ Ad esempio, potremmo valorizzare automaticamente i costi dei premi di risultato,
 Oppure potremmo applicare delle formule sulle quantità rilevate di un’unità di misura, se magari si presuppone che determinati costi siano di un tot. a pezzo
 :::
 
-Per inserire una nuova *Formula*, dalla maschera di ricerca si premerà sul pulsante *Nuovo* in modo da aprire la maschera di gestione, che prevede i seguenti campi:
-- la ***DATA INIZIO*** e ***DATA FINE*** validità della regola
+Per inserire una nuova *Formula*, dalla maschera di ricerca si premerà sul pulsante *Nuovo* in modo da aprire la maschera di gestione, che prevede i seguenti campi:  
+- la **DATA INIZIO** e **DATA FINE** validità della regola
 
-- l'[***AREA***](/docs/controlling/controlling-parametrization/controlling-specific-settings/area-types-areas) di applicazione della regola stessa
+- l'[**AREA**](/docs/controlling/controlling-parametrization/controlling-specific-settings/area-types-areas) di applicazione della regola stessa
 
-- il ***CONTO DI DESTINAZIONE***, cioè il sottoconto da utilizzare per rilevare il movimento automatico nell'analitica della registrazione extracontabile di area
+- il **CONTO DI DESTINAZIONE**, cioè il sottoconto da utilizzare per rilevare il movimento automatico nell'analitica della registrazione extracontabile di area
 
-- il [***CENTRO DI DESTINAZIONE***](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-centers), cioè il centro da utilizzare nella riga stessa
+- il [**CENTRO DI DESTINAZIONE**](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-centers), cioè il centro da utilizzare nella riga stessa
 
-- il [***CENTRO DI ORIGINE UM***](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-centers), opzionale, che serve come centro di filtro dei movimenti fisici quando la formula prevede delle quantità gestite da un'unità di misura
+- il [**CENTRO DI ORIGINE UM**](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-centers), opzionale, che serve come centro di filtro dei movimenti fisici quando la formula prevede delle quantità gestite da un'unità di misura
 
-- il ***CENTRO ORIGINE CONTI***(/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-centers), opzionale, che serve come centro di filtro dei valori dei sottoconti inseriti nella formula
+- il **CENTRO ORIGINE CONTI**(/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-centers), opzionale, che serve come centro di filtro dei valori dei sottoconti inseriti nella formula
 
 Al di sotto avremo due griglie, a sinistra la lista dei conti del piano dei conti, a destra le[* Unità di misura*](/docs/controlling/controlling-parametrization/controlling-specific-settings/measure-units) disponibili.
 Alla base della maschera c'è la sezione con la formula, che può essere gestita trascinando con il mouse le entità (*conti* e/o *UM*) che si vogliono inserire nella formula stessa

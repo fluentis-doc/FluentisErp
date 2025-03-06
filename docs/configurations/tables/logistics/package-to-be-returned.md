@@ -20,14 +20,14 @@ Per poter inserire nuove codifiche è necessario cliccare nella griglia sulla pr
 Questa tabella contiene gli articoli che sono da considerarsi *Imballi a rendere* per la tracciabilità della giacenza. L’articolo inserito in questa tabella deve avere come Natura articolo: *Imballo* (la Natura articolo si inserisce in Anagrafica articolo, tab [Generalità](/docs/erp-home/registers/items/create-new-items/item-registry/generality)).     
 Attraverso i flag in griglia è possibile scegliere in quali aree l'articolo sarà gestibile per essere movimentato.    
 
-*Dati obbligatori*: 
+#### Dati obbligatori 
 
 > **Codice**: è il codice dell'*Imballo a rendere*;     
 > **Descrizione**: è la descrizione dell'*Imballo a rendere*;   
 > **Classe articolo**: indica la [Classe](/docs/configurations/tables/logistics/item-class) a cui appartiene l'articolo;   
 > **Codice articolo**: indica il codice dell'articolo.    
 
-*Campi specifici*: 
+#### Campi specifici  
 
 > **Utilizzo negli acquisti**:  attivando questo flag l'imballo sarà visibile nei documenti dell'area acquisti;     
 > **Utilizzo nel conto lavoro**: attivando questo flag l'imballo sarà visibile nei documenti dell'area conto lavoro;   

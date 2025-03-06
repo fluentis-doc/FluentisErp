@@ -34,6 +34,3 @@ I campi 'Utilizzo', 'Tipo', 'Rata','Anno', 'Ufficio' e 'Atto' sono rilevanti per
 
 
 La sezione CONTO permette di assegnare un sottoconto contabile al codice tributo che andrà a prevalere rispetto ai conti impostati nei parametri generali di contabilità nell'ambito della contabilizzazione del modello F24.
-
-
-

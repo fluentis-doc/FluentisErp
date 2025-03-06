@@ -21,7 +21,7 @@ La form si compone di un'area di filtro e da una di risultato. Una volta imposta
 
 Per poter inserire nuove codifiche è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.
 
-*Campi specifici*
+#### Campi specifici 
 
 > **Tipo**: indica il codice del tipo unità di carico;    
 > **Descrizione**: indica la descrizione del tipo unità di carico;    

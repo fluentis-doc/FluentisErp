@@ -20,4 +20,3 @@ La tabella consente di definire e gestire la lista dei codici di nomenclatura co
 :::tip Nota
 All'interno di Bizlink è prevista una procedura di import da foglio elettronico per aggiornare di anno in anno le nomenclature in modo massivo
 :::
-

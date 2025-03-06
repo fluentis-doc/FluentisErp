@@ -6,7 +6,7 @@ sidebar_position: 1
 La tabella si trova sul percorso **Tabelle > Dipendenti > Corsi di formazione > Docenti**.
 
 In questa tabella è possibile codificare i *Docenti*.   
-Alcuni esempi di utilizzo di *Docenti* li troviamo nelle gestioni:
+Alcuni esempi di utilizzo di *Docenti* li troviamo nelle gestioni:  
 > **Corsi di base** - nei *dati di testata*;   
 > **Corsi di formazione** - nei *dati di testata*.
 
@@ -21,7 +21,7 @@ La form si compone di un'area di filtro e da una di risultato. Una volta imposta
 Per poter inserire nuovi *Docenti* è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.   
 Per il nuovo record si devono inserire almeno i campi obbligatori richiesti dal programma: il **Codice** e la **Descrizione**.
 
-*Campi specifici*: 
+#### Campi specifici 
     
 > **Docente**   
 >> **Codice**: è il codice del *Docente*.   
