@@ -46,6 +46,7 @@ I parametri dei DDT di vendita permettono l'impostazione di base per gestire cor
 **Mantieni prezzi da OC per gli scaglioni**: questo flag garantisce che, durante l'evasione parziale di un ordine nel DDT, venga mantenuto lo stesso scaglione di prezzo presente nell'ordine originale, senza alcun ricalcolo. Ad esempio, se nell'ordine è specificata una quantità di 100 unità che attiva uno scaglione di prezzo specifico, ma nel DDT vengono evase solo 20 unità, con questo flag attivato il DDT conserverà il prezzo associato allo scaglione originale, senza modificarlo in base alla quantità effettivamente evasa.
 
 ### Evasione
+
 In questo tab sono presenti i seguenti campi:       
 
 **Pagamento**: specifica il valore usato per il pagamento del DDT cliente nel caso dell'evasione multipla di Ordini nel DDT: *Primo ordine*, *Anagrafica* oppure *Selezione manuale*.
@@ -73,6 +74,7 @@ In questo tab sono presenti i seguenti campi:
 **Avviso articoli fittizi**: se attivo, durante lo scarico del DDT il sistema andrà a controllare se sono presenti degli articoli fittizi e nel caso in cui ve ne siano comparirà un messaggio che permetterà all'utente di scegliere se completare lo stesso la procedura oppure no; in caso di risposta affermativa tutto il DDT verrà scaricato (ad eccezione degli articoli fittizi ), mentre in caso di risposta negativa il DDT NON verrà scaricato.
 
 ### Analitica
+
 Questo TAB specifica con che priorità recuperare il Centro di costo(CDC) o Centro di profitto(CDP) nella riga DDT.      
 È possibile modificare le priorità utilizzando i tasti **Sposta su**![](/img/neutral/common/move-up.png) e **Sposta Giù**![](/img/neutral/common/delete-cc.png).     
 *Valori di default*: il CDC o CDP viene recuperato dal tipo fatturato qualora presente.     

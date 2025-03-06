@@ -6,7 +6,8 @@ tags: [MS]
 
 Attraverso questa finestra vengono settati tutti i parametri che riguardano la gestione delle commesse di produzione ed il modo in cui devono essere gestite le fasi successive alla generazione delle commesse stesse.
 
-**Metodo generazione commessa**  
+## Metodo generazione commessa  
+
 In questa sezione deve essere impostato il **Tipo di Commessa** (Monoprodotto / Multiprodotto) che deve essere proposto nella procedura **Generazione commesse di produzione**, tab [Parametri](/docs/planning/mps-master-production-scheduling/job-order-creation).  
 Nel momento della generazione della commessa dalla [Generazione commesse di produzione](/docs/planning/mps-master-production-scheduling/job-order-creation) è comunque possibile modificare questa impostazione, così come quella relativa alla combo successiva chiamata **Raggruppamento per**, tramite la quale è possibile indicare come devono essere eventualmente raggruppati gli articoli all'interno della stessa commessa *Monoprodotto* o *Multiprodotto*.
 
@@ -16,7 +17,8 @@ Se il *Tipo commessa* è:
 
 Il campo **Priorità approvvigionamento**, permette di inserire un valore di default per la priorità delle commesse create; questa verrà considerata dalla procedura di [Schedulazione a capacità finita](/docs/planning/ms-master-scheduling/finite-capacityscheduling/).
 
-**Generazione commessa da**   
+## Generazione commessa da  
+
 In questa sezione l'utente può impostare con gli appositi flag se la commessa debba essere generata da *Ordini clienti* o da un *Previsionale* (nello specifico poi può selezionare se da *Previsioni di vendita*, e/o da *Piano principale di produzione*).  
 Questi parametri sono poi modificabili dalla finestra di [Generazione commesse di produzione](/docs/planning/mps-master-production-scheduling/job-order-creation).  
 Nel caso di *Generazione commessa di produzione dal Previsionale*, deve essere specificato se si preferisce che la commessa di produzione venga generata con scadenza settimanale o mensile.
@@ -40,7 +42,8 @@ Questo automatismo può essere attivato anche alla conferma dell’ordine client
 Si ricorda che per scatenare l’automatismo, l’ordine cliente deve essere *confermato*, *stampato* e devono essere presenti le *date di consegna* e *merce pronta* in tutte le righe articolo.
 :::
 
-**Costificazione commessa**      
+## Costificazione commessa  
+
 In questa sezione è possibile indicare dei parametri che saranno proposti come defualt per la costificazione delle commesse di produzione.    
 
 > **Tipo di costo**: permette di indicare il tipo di costo da utilizzare per la costificazione delle materie prime tra costo *Ultimo*, *Medio* e *Standard*;    
@@ -52,7 +55,8 @@ In questa sezione è possibile indicare dei parametri che saranno proposti come 
 Se **Costo del lotto** e **Costo della commessa** sono attivati entrambi, la procedura valorizzerà il costo del materiale in base al tipo costo selezionato considerando i valori solo di quella specifica commessa e per quello specifico lotto.
 ::: 
 
-**Magazzini di pianificazione commesse**   
+## Magazzini di pianificazione commesse  
+
 Questa griglia è la semplice visualizzazione della lista di magazzini su cui deve essere controllata la disponibilità in sede di generazione commessa di produzione. Questa lista viene impostata nella form chiamata *Calcolo disponibilità* che si trova in *Home > Articoli >  [Calcolo disponibilità](/docs/erp-home/registers/items/calculate-availability)*.
 
 **Parametri proposti pianificazione**: permette di definire quali parametri proporre per la pianificazione, può riproporre i parametri dell’ultima pianificazione effettuata, oppure proporre i parametri utilizzati per la pianificazione dal singolo operatore.
@@ -65,7 +69,8 @@ Questa griglia è la semplice visualizzazione della lista di magazzini su cui de
 
 **Primo giorno della settimana visualizzato nel Calendario di fabbrica**: consente di inserire il giorno che si vuol far comparire come primo giorno della settimana lavorativa nel [Calendario di Fabbrica](/docs/configurations/tables/production/factory-calendar). Di solito si inserisce il lunedì.
 
-**Colori delle commesse**   
+## Colori delle commesse  
+
 In questa sezione è possibile impostare i colori dello sfondo e del testo delle commesse di produzione in base al loro stato (non esaminate, lanciate...ecc).
 
 Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).

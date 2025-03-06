@@ -3,7 +3,7 @@ title: Parametri Rischio Cliente
 sidebar_position: 6
 ---
 
-**PREMESSA:**
+### PREMESSA
 
 Il modulo rischio cliente legge gli ordini clienti, DDT , fatture, partite, effetti a scadere (in pratica tutto quello che occupa fido e crea esposizione). 
 
@@ -14,7 +14,7 @@ Il flag da apporre per la lettura nello specifico dei vari tipi di documento è 
 E' presente anche il flag **Escludi blocco**: anche se il documento genera fido verrà escluso dal blocco. (anche se occupa fido non viene mai bloccato ma segnalato si)
 
 
-**LOGICA GENERALE:**
+### LOGICA GENERALE
 
 Gli ordini sono considerati se sono stampati e confermati + flag nel tipo (non evasi oppure evasi forzatamente)
 Evasi forzatamente = il residuo non sarà consegnato e l’ordine si considera chiuso anche se non lo sarebbe.
@@ -33,7 +33,7 @@ Nei **parametri** del modulo Rischio Clienti si possono pre-impostare gli elemen
 **Moltiplicatore valutazione fido**: valore utilizzato nella form [**Utilizzo fido**](/docs/treasury/customer-risk/use-credit). per determinare l'importo del campo *Fido Stimato*.
 
 
-*Base di calcolo per determinare il rischio cliente*:  
+#### Base di calcolo per determinare il rischio cliente  
 > **Saldo contabile**: con tale impostazione il calcolo del fido sarà effettuato sulla base del Saldo contabile del cliente.  
 > **Partite aperte**: con tale impostazione il calcolo del fido sarà effettuato sulla base delle partite aperte del cliente.  
 > **Considera partite da registrazioni provvisorie**: se attivo il flag precedente il calcolo considera anche eventuali movimenti derivanti da registrazioni provvisorie.  

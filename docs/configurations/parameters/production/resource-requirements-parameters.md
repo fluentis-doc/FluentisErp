@@ -12,7 +12,8 @@ Attraverso questa finestra vengono settati i parametri che riguardano alcune del
 
 **Colori tipologie documento**: permette di impostare il colore dello sfondo e del testo per le diverse tipologie di ordine: di Acquisto, di Produzione o di C/Lavoro, in ritardo e/o scaduti.
 
-**Parametri per il rilascio ordini pianificati**  
+## Parametri per il rilascio ordini pianificati  
+
 In questa sezione l'utente può impostare il tipo richiesta d'acquisto e il tipo ordine di conto lavoro (se chiuso quindi non modificabile ulteriormente o aperto e quindi modificabile) che devono essere generati automaticamente durante il rilascio degli ordini pianificati rispettivamente di acquisto e di conto lavoro.
 
 **Controllo terzista obbligatorio per le fasi esterne**: se attivo, nel caso non sia indicato il terzista in una fase esterna, questo verrà segnalato con il **Colore testo riga ordine** sotto indicato. 
@@ -29,13 +30,16 @@ In questa sezione l'utente può impostare il tipo richiesta d'acquisto e il tipo
 
 **Giorni storico M.R.P. da mantenere**: permette di indicare quale sia il periodo in giorni per il quale verranno mantenuti i risultati delle elaborazioni M R P all’interno dello storico. Quando un’elaborazione supera il numero di giorni inserito in questo campo, questa alla successiva elaborazione M R P verrà rimossa dallo storico. Lasciando il campo vuoto non verrà cancellata nessuna elaborazione dallo storico.
  
-**Magazzini di schedulazione ordini**  
+## Magazzini di schedulazione ordini  
+
 La griglia è la semplice visualizzazione della lista di magazzini si cui deve essere controllata la disponibilità. Questa lista viene impostata nella form chiamata *Calcolo disponibilità* che si trova tra le Utilità del gestionale.
 
-**Parametri Gantt**   
+## Parametri Gantt  
+
 Permette di inserire dei parametri di default per la gestione della form del Gantt (*Tipo simulazione Gantt* e *Tipo simulazione Snapshot*).
 
-**Parametri Calcolo Fattibilità**   
+## Parametri Calcolo Fattibilità  
+
 Permette di inserire le indicazioni per l'attivazione e la visualizzazione della **Fattibilità** delle Fasi di lavorazione.   
 
 Per la versione di prodotto attuale l'unica attivazione possibile è nelle gestioni di *Sequenza fasi*. Nelle prossime versioni verranno introdotte anche le altre procedure.  
@@ -45,7 +49,7 @@ E' possibile attivare il controllo della fattibilità:
 - **Considera Materiali**: abilità il pulsante *Dettaglio Fattibilità materiale* e il campo *Fattibilità materiali* nella griglia delle procedure attive nel box **Calcolo fattibilità da applicare in**;    
 - **Considera Fasi precedenti**: abilità il pulsante *Dettaglio Fattibilità fasi* e il campo *Fattibilità fasi* nella griglia delle procedure attive nel box **Calcolo fattibilità da applicare in**.      
 
-**Calcolo fattibilità da applicare in**
+## Calcolo fattibilità da applicare in  
 Permette di abilitare la fattibilità nelle singole procedure:
 - Sequenza fasi
 - Capacità centri di lavoro
@@ -53,7 +57,8 @@ Permette di abilitare la fattibilità nelle singole procedure:
 - Lista prelievo materiali
 - Filtro ordini di produzione
 
-**Colori calcolo fattibilità**
+## Colori calcolo fattibilità  
+
 Si possono impostare dei colori che evidenziano le diverse informazioni sulle disponibilità dei materiali da utilizzare:   
 - *Materiale non disponibile*: indica che non c'è nessun materiale disponibile nemmeno in quantità parziale;   
 - *Materiale disponibile parzialmente*: indica che abbiamo almeno una quantità parziale di uno dei materiali, ma non la disponibilità completa di tutti;   

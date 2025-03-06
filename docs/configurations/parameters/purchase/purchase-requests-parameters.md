@@ -5,7 +5,7 @@ sidebar_position: 5
 
 I parametri delle richieste di acquisto permettono l'impostazione di base per gestire correttamente e secondo le specifiche richieste da ogni singola società.
 
-*Pulsanti*:
+#### Pulsanti  
 
 > **Salva**: permette di salvare i parametri impostati.  
 > **Ripristina**: permette di ripristinare i parametri ai valori iniziali.
@@ -26,4 +26,4 @@ In questo tab si specifica con che priorità recuperare il centro di costo (CdC)
 
 > **Sposta su** e **Sposta giù**
 
-*Valori di default*: il CDC o CDP viene recuperato dal tipo fatturato qualora presente. Per approfondimenti fare riferimento a tabella [Tipo Fatturato Acquisti](/docs/configurations/tables/purchase/purchase-invoices-type). Qualora non fosse presente nel tipo fatturato il sistema lo cercherà in *Anagrafica fornitore*. Se non presente verrà cercato in *Anagrafica articolo*
+**Valori di default**: il CDC o CDP viene recuperato dal tipo fatturato qualora presente. Per approfondimenti fare riferimento a tabella [Tipo Fatturato Acquisti](/docs/configurations/tables/purchase/purchase-invoices-type). Qualora non fosse presente nel tipo fatturato il sistema lo cercherà in *Anagrafica fornitore*. Se non presente verrà cercato in *Anagrafica articolo*

@@ -11,7 +11,6 @@ Gli extradata è che si dividono in due categorie:
 
 Ognuno dei due ha una procedura, partiamo analizzando gli extradata semplici.
 
-
 ### Creazione Extradata
 
 Andare in **Home > Utilità > ExtraData > ExtraData** e cliccare sul pulsante **Nuovo** extradata.

@@ -9,15 +9,14 @@ All'apertura della form, Fluentis visualizza l'**Ultimo anno gestionale esistent
 
 La griglia presenta la lista dei numeratori non definiti (o non definiti correttamente) per l'anno prossimo permettendo all'utente, con un doppio click, di identificare il motivo: generalmente il problema risiede nella configurazione del numeratore con una data di fine validità senza un motivo valido, costringendo (prima della creazione del presente automatismo) a creare una nuova riga ogni anno, anziché impostare il numeratore con l'opzione Annuale che riparte da capo ogni anno automaticamente, tuttavia potrebbe essere che il numeratore sia stato bloccato per un motivo preciso (cambio di politica della numerazione ecc.).
 
-*Pulsanti specifici*: 
+#### Pulsanti specifici 
 
 > **Creazione**: il pulsante mostra un messaggio di conferma della correzione automatica dei numeratori per le righe selezionate nella griglia.  
 > **Rollback**: esegue il ripristino della procedura.
 
 *Esempio*  
 Se al messaggio si risponde in modo:  
-- affermativo, saranno tolte le date fine validità dei numeratori che sono stati (si suppone) erroneamente chiusi nell'anno 2017 dell'esempio (non si sbloccheranno quindi numeratori chiusi negli anni precedenti), impostandoli inoltre come ‘annuali' in modo da renderli validi per sempre.
-
+- affermativo, saranno tolte le date fine validità dei numeratori che sono stati (si suppone) erroneamente chiusi nell'anno 2017 dell'esempio (non si sbloccheranno quindi numeratori chiusi negli anni precedenti), impostandoli inoltre come ‘annuali' in modo da renderli validi per sempre.  
 - negativo, i numeratori Fluentis resteranno come sono.
 
 

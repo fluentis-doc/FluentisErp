@@ -5,7 +5,7 @@ sidebar_position: 1
 
 La form si apre tramite il percorso **Parametri > Produzione > Parametri Ordini di Produzione**. Attraverso questa finestra vengono settati tutti i parametri che riguardano la movimentazione degli articoli tramite le procedure legate all'area produzione, nonché alcuni parametri che permettono di decidere le modalità di gestione di alcune parti dell'area produzione.
 
-### Generale
+## 1. Generale
 
 **Gestione automatica dei lotti e dei serial number**: se attivo, propone automaticamente i lotti e/o i numeri di serie dei materiali che vengono utilizzati nel corso della produzione, direttamente all'interno delle apposite griglie poste in relazione alla griglia dei materiali utilizzati della segnalazione di produzione. Diversamente, l'utente dovrà impostare manualmente sia i lotti, sia i numeri di serie degli articoli utilizzati che abbiano questo tipo di gestione; ricordiamo che la gestione a lotti o SN viene impostata all'interno dell'*Anagrafica articolo* nel tab [Lotti e SN](/docs/erp-home/registers/items/create-new-items/item-registry/lots-and-serial-number) selezionando il tipo di gestione desiderata.
 
@@ -54,7 +54,7 @@ Ci sono infine altre quattro sezioni: **Fogli di lavoro Gestiti per**, **Periodo
 
 **Proposta sequenza fase**: la sezione consente di scegliere, durante la creazione di un ciclo di lavoro, il numero di sequenza della fase che viene proposto, che può essere preso dal numero di sequenza della fase standard oppure come progressivo dell’ordine di inserimento, indicando anche il valore di step.
 
-### Magazzini
+## 2. Magazzini
 
 La form è dedicata all'inserimento dei magazzini  e delle relative causali che regolano le movimentazioni degli articoli tramite le procedure legate alla produzione; la stessa schermata viene riproposta nei *Parametri MRP* dell'articolo nel tab [Magazzini](/docs/configurations/parameters/production/mrp-parameters/search-mrp-parameters), con la differenza che i magazzini impostati nei *Parametri di produzione* sono considerati dati generali validi di default per gli articoli; se si vanno ad impostare per un articolo in particolare dei magazzini diversi nei *Parametri MRP* dell' articolo, il sistema andrà a dare <u>priorità ai parametri</u> che trova settati in quest'ultima finestra per i carichi e scarichi dei materiali legati alla produzione di questo articolo.        
 Inoltre, è possibile settare gli stessi parametri anche per uno specifico Sito di produzione.       
@@ -83,7 +83,7 @@ Per magazzini *W.I.P.* (Work in Progress) si intendono dei magazzini di transizi
 
 Diversamente, se il tipo di prelievo del materiale è *Con Lista*, allora mentre lo spostamento del materiale al magazzino W.I.P. avviene nello stesso modo rispetto al tipo di prelievo manuale, lo scarico dal W.I.P. avviene tramite la procedura della [Lista di prelievo materiali](/docs/production/pp-production-in-progress/picking-materials-list).     
 
-**Funzionamento Magazzini e Causali**
+### Funzionamento Magazzini e Causali
 
 Per quanto riguarda il **carico** di prodotti finiti e semilavorati:
 
