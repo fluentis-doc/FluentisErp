@@ -28,9 +28,9 @@ Non è possibile modificare le informazioni di una fase già dichiarata in produ
 :::
 
 Nella parte inferiore della form sono presenti i seguenti campi:
-> **Quantità impegno**: riporta il totale delle quantita impegno delle righe selezionate dall'autente;         
+> **Quantità impegno**: riporta il totale delle quantita impegno delle righe selezionate dall'utente;         
 > **Unità di misura Tempi**: indica l'unità di misura del tempo con la quale si vuole visualizzare il valore presente in **Totale tempo**;     
-> **Totale tempo**: riporta il totale del tempo (Tempo macchina + Tempo manodopera + Tempo attrezzaggio) delle righe selezionate dall'autente.
+> **Totale tempo**: riporta il totale del tempo (Tempo macchina + Tempo manodopera + Tempo attrezzaggio) delle righe selezionate dall'utente.
 
 Inoltre, espandendo questa parte vengono visualizzati in sola lettura i dati di dettaglio relativi a:
 > **Quantità**
@@ -42,16 +42,16 @@ Inoltre, espandendo questa parte vengono visualizzati in sola lettura i dati di 
 
 > **Ricerca**: permette di visualizzare le fasi in base ai filtri inseriti;           
 > **Ricerca e considera giacenze**: effettua la stessa funzione del pulsante **Ricerca**, ma, allo stesso tempo, permette di visualizzare in rosso tutte le fasi dove non c'è giacenza disponibile ad oggi;                   
-> **Spostare fasi**: permette di spostare la o le fasi selezionate dalla prima gliglia alla seconda griglia dove sarà poi possibile assegnare una sequenza;         
-> **Cambia fasi**: una volta selezionata una fase, questo comando permette di *Aggiornare* la fase stessa variando: fase, macchina, centro di lavoro, totale del tempo macchina, del tempo operaio e del tempo di attrezzaggio. Inoltre, selezionado la voce *Inserisci* è possibile aggiungere una nuova fase oppure, tramite la voce *Cancella* di eliminarla definitivamente;            
+> **Spostare fasi**: permette di spostare la o le fasi selezionate dalla prima griglia alla seconda griglia dove sarà poi possibile assegnare una sequenza;         
+> **Cambia fasi**: una volta selezionata una fase, questo comando permette di *Aggiornare* la fase stessa variando: fase, macchina, centro di lavoro, totale del tempo macchina, del tempo operaio e del tempo di attrezzaggio. Inoltre, selezionando la voce *Inserisci* è possibile aggiungere una nuova fase oppure, tramite la voce *Cancella* di eliminarla definitivamente;            
 > **Cambia ciclo/Versione**: permette di variare ciclo e / o versione in quell'ordine di produzione;            
 > **Cambio date**: permette di variare la data di inizio della fase selezionata;         
 permette di variare la *Data inizio* per tutti gli ordini pianificati o di produzione selezionati con la data indicata nel pop-up; successivamente in base alla fasi e al *Calendario capacità produttive* viene ricalcolata anche la *Data fine* ordine e le date inizio e fine di ciascuna fase. In base alle nuove date vengono anche ricalcolate le date di utilizzo dei materiali.
 Oltre ad aggiornare le date nell'ordine vengono aggiornate quelle nella commessa collegata;        
-> **Calcola tempo**: permette di effettuare il ricalcolo dei tempi dopo aver assegnato la nuova sequenza oppure dopo aver variato qualche dato tramite la funziona **Cambia fasi**;          
-> **Calcola sequenza**: dopo aver riordinato le righe della seconda griglia in base alla necessità, questo pulsante permette di dare una sequenza alle fasi che abbiamo selezionato in base all'ordinamento dato;       
+> **Calcola tempo fase in base alla priorità**: permette di effettuare il ricalcolo dei tempi dopo aver assegnato la nuova sequenza oppure dopo aver variato qualche dato tramite la funziona **Cambia fasi**;          
+> **Calcolo ed inserimento sequenza di produzione**: dopo aver riordinato le righe della seconda griglia in base alla necessità, questo pulsante permette di dare una sequenza alle fasi che abbiamo selezionato in base all'ordinamento dato;       
 > **Aggiornamento data merce pronta**: permette di aggiornare la *Data merce pronta* degli ordini cliente collegati con la *Data fine ordine*;      
-> **Ricalcola disponibilità**: permette di ricalcolare la disponibilità, mostrando la disponibilità della giacenza in base alla sequenza che è stata data;         
+> **Ricalcola fattibilità**: permette di ricalcolare la fattibilità, mostrando la disponibilità della giacenza in base alla sequenza che è stata data;         
 > **Rilascio ordini pianificati**: permette di rilasciare gli ordini pianificati di produzione in ordini di produzione per le fasi selezionate;                     
 > **Rilascio ordini**: permette di variare lo stato degli ordini di produzione da lanciato ad esecutivo della o delle fasi selezionate.         
 > **Espandi la dimensione della griglia**: permette di nascondere l'area di filtro della form per lavorare più agevolmente sulle griglie;         

@@ -29,7 +29,7 @@ Inoltre, è possibile visualizzare tutti i dati relativi ai centri di lavoro sel
 
 **Dati di dettaglio Fase selezionata**
 
-All'interno della parte grafica, la linea arancione rappresenta la capacità produttiva massima giornaliera del centro di lavoro, mentre in blu viene rappresentato l'impegno del centro di lavoro in una certa giornata. In rosso, invece, viene eviidenziata la sovrallocazione del centro stesso.
+All'interno della parte grafica, la linea arancione rappresenta la capacità produttiva massima giornaliera del centro di lavoro, mentre in blu viene rappresentato l'impegno del centro di lavoro in una certa giornata. In rosso, invece, viene evidenziata la sovrallocazione del centro stesso.
 Selezionando una fase nella terza sezione, questa viene visualizzata in giallo all'interno della sezione grafica.
 
 Inoltre, tramite drag & drop è possibile selezionare una fase dalla griglia e trascinarla all'interno della sezione grafica e rilasciarla per variarne la data di inizio e di conseguenza quella di fine. Selezionando più centri di lavoro alternativi vi è la possibilità di spostare le fasi da un centro ad un altro in modo da ottimizzare la produzione.
@@ -39,7 +39,7 @@ Invece, con un doppio click su un elemento del grafico viene aperto un pop-up co
 
 *Pulsanti specifici*:  
 
-> **Cambia fasi**: una volta selezionata una fase, questo comando permette di *Aggiornare* la fase stessa variando: fase, macchina, centro di lavoro, totale del tempo macchina, del tempo operaio e del tempo di attrezzaggio. Inoltre, selezionado la voce *Inserisci* è possibile aggiungere una nuova fase oppure, tramite la voce *Cancella* di eliminarla definitivamente;            
+> **Cambia fasi**: una volta selezionata una fase, questo comando permette di *Aggiornare* la fase stessa variando: fase, macchina, centro di lavoro, totale del tempo macchina, del tempo operaio e del tempo di attrezzaggio. Inoltre, selezionando la voce *Inserisci* è possibile aggiungere una nuova fase oppure, tramite la voce *Cancella* di eliminarla definitivamente;            
 > **Cambio date**: permette di variare la data di inizio della fase selezionata;         
 > **Zoom in**: permette di diminuire il dettaglio temporale nel grafico;          
 > **Zoom alla finestra**: permette di visualizzare il dettaglio temporale nel grafico sulla base delle *Date Inizio/Fine* indicate nei filtri;                    

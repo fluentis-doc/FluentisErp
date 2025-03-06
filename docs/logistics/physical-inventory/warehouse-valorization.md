@@ -21,7 +21,9 @@ Inoltre, la procedura creerà anche un movimento di apertura con tutte le rimane
 > **Ripristina chiusura**: permette di ripristinare l'ultima chiusura effettuata;     
 > **Allineamento con la contabilità**: è utilizzato nelle localizzazioni estere tipo Romania/Croazia dove i movimenti di magazzino devono essere registrati anche in contabilità (vedasi documentazione sottostante).
 
-
+:::note CONSIGLIATO
+L’attività di chiusura del magazzino è consigliata in particolare nel caso in cui vi sia un elevato numero di movimenti, perchè questa permette di mantenere nell’archivio i movimenti per una consultazione, ma allo stesso tempo le elaborazioni di calcolo giacenza, disponibilità e costi vengono snellite in quanto i calcoli partiranno dal giorno successivo all’ultima chiusura effettuata.
+:::
 
 <u>Le seguenti procedure sono specifiche per localizzazioni estere come Romania e Croazia.</u> 
 
