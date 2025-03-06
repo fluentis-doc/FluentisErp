@@ -1,14 +1,47 @@
 ---
-title: Ricerca fatture di vendita
+title: Pretraga računa
 sidebar_position: 1
 ---
 
-La form si apre tramite tramite il percorso **Vendite > Fatture > Ricerca Fatture**.     
+Obrazac se otvara putem **Prodaja > Računi > Pretraživanje računa**.
 
-Per la spiegazione delle funzionalità comuni ai documenti di vendita consultare la sezione [Vendite](/docs/sales/sales-intro).
+### Filtriranje podataka
 
-#### Pulsanti specifici
+Omogućuje pretraživanje svih dokumenata radi pregleda, uređivanja ili brisanja, te eventualno unos novog dokumenta; prozor se sastoji od područja filtra i rezultatne mreže.
 
-> - **Storno fatturazione**: con questa procedura è possibile stornare parzialmente o totalmente le fatture. Una volta cliccato il pulsante, si aprirà un pop up dove  selezionare le righe articolo da stornare con le relative quantità, inserire il Tipo documento da creare (sarà possibile selezionare solo tipologie di Fatture con natura *Nota di credito*) e inserire la Causale di storno del magazzino (generalmente un carico). E' possibile stornare le righe di tipo 1, 2, 3, 4 e 5.   
-> - **Stato SDI**: in questa combo box viene riportato lo Stato SDI della fattura selezionata tra: Non Esaminata, Controllata, Da Spedire, Annullata, Esclusa, Generata. E' possibile modificare lo Stato SDI direttamente da questa maschera. Per approfondimenti consultare la [Gestione Fatturazione elettronica](/docs/finance-area/e-invoice/create-electronic-invoice).          
-> - **Fatturazione elettronica**: questa sezione contiene lo stato [Fatturazione elettronica](/docs/sales/sales-invoices/invoicing/sales-invoice) del documento selezionato, e il bottone **Registro dei documenti SDI** che si abilita se la fattura selezionata si trova dallo stato SDI *Controllata* in poi; permette di consultare lo storico dei rapporti del documento con lo SDI e la consultazione del file xml generato, senza dover passare per i [Documenti di vendita in uscita](/docs/finance-area/sdi-documents/outgoing-sales-documents)   
+Nakon što su postavljeni svi željeni filtri, jednostavno kliknite na gumb **Traži** u *gornjem izborniku* kako biste prikazali rezultate unutar prikazu rezultata.
+
+Za otvaranje pojedinosti o dokumentu, jednostavno ga odaberite i dvaput kliknite mišem ili kliknite na gumb **Uredi** (omogućuje ulazak u pojedinosti i uređivanje) ili gumb **Pregled** (omogućuje ulazak u pojedinosti i pregled, ali ne i uređivanje).
+
+*Vidi također*:   
+[Zajedničke funkcionalnosti, gumbe i polja](/docs/guide/common)            
+Dodavanje novih polja u obrasce pretraživanja    
+
+## Filtri za elektroničko fakturiranje
+
+U zaglavlju je moguće filtrirati fakture prema njihovom statusu.
+Status se odnosi kako na faze prije slanja na *Fluentis Business Hub* i/ili prije slanja na *Sustav razmjene podataka* Porezne uprave (SDI), tako i na one nakon toga (npr. neusklađeno, neisporučeno ili isporučeno).
+
+Moguće je također filtrirati prema svim ostalim informacijama vezanim uz SDI (koje su također prisutne u rezultatnoj mreži). Takve informacije automatski popunjava *Fluentis Business Hub* čim postanu dostupne.
+
+### Stvaranje, dupliciranje i storno faktura prodaje
+
+*Posebni gumbi*:
+
+> **Nova**: ovaj gumb omogućuje [Stvaranje nove fakture](/docs/sales/sales-invoices/invoicing/sales-invoice).  
+> **Dupliciraj**: ovaj gumb omogućuje stvaranje kopije dokumenta, zadržavajući sve uvjete originalnog dokumenta, ali s trenutnim podacima.
+Koristi se za česta slanja slične robe istom subjektu dokumenta.
+
+*Postupak*:
+
+> 1. odaberite dokument koji želite duplicirati i kliknite na gumb **Dupliciraj**;
+> 2.	aplikacija će započeti stvaranje dokumenta i otvoriti dijaloški okvir **Sažetak dupliciranja**, gdje ćete popuniti potrebne podatke;
+> 3.	kliknite na **OK** za potvrdu operacije.
+
+**Storno**: ovaj gumb omogućuje *djelomično* ili *potpuno poništenje dokumenta*. Pomoću ove funkcije možete stvoriti dokument o poništenju koji će *povećati* (u kupnji) / *smanjiti* (u prodaji) inventar.
+
+*Postupak*:
+
+> 1. odaberite dokument koji želite poništiti i kliknite na gumb **Storno**. Aplikacija će otvoriti dijaloški okvir sa svim stavkama artikala originalnog dokumenta;  
+> 2.	u ovom obrascu unesite: **Vrsta dokumenta o poništenju** koju želite stvoriti i, za svaki članak, navedite **Količinu za poništiti**, **Razlog poništenja** i aktivirajte parametar**Za poništiti**;
+> 3.	kliknite na **OK** za potvrdu operacije.

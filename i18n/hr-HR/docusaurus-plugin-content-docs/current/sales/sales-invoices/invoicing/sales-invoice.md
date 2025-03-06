@@ -1,511 +1,486 @@
 ---
-title: Nuova fattura di vendita
-sidebar_position: 2
+title: Kreiraj prodajni račun
+sidebar_position: 1
 ---
 
-La form si apre:  
-1. tramite il percorso **Vendite > Fatture > Crea fattura di vendita**  
-oppure 
-2. tramite il pulsante **Nuova** che si trova nella form [Ricerca fatture di vendita](/docs/sales/sales-invoices/invoicing/search-sales-invoices).
+Obrazac se otvara putem putanja:
 
-## *Come creare una fattura di vendita*
+1. **Prodaje > Fakture > Kreiraj prodajni račun**   
+ili   
+2. putem gumba **Nova** koji se nalazi u obrascu [Pretraživanje faktura prodaje](/docs/sales/sales-invoices/invoicing/search-sales-invoices).
 
-<details>
- 
-<summary>Clicca per i passaggi fondamentali</summary>
- 
-1. **Inserisci i dati obbligatori**: *Tipo Ordine* e *Cliente*. *Anno*, *Numero* e *Data Inserimento* saranno proposti in automatico.  
- 
-2. **Inserisci o modifica i dati facoltativi** della testata: come date di consegna, eventuali *sconti*, la *destinazione*, ecc.  
- 
-3. **Inserisci gli Articoli**: mediante doppio click nel campo *Codice articolo* si apre l’help articoli che permette di cercare e selezionare un articolo esistente. Tutti gli altri dati della riga, come *unità di misura*, *quantità*, *prezzo*, saranno proposti in automatico, ma possono essere modificati.
-In alternativa è possibile selezionare come *Tipo riga* un *Articolo non codificato* e inserire manualmente i dati successivi.
- 
-4. **Inserisci eventuali sconti o altre informazioni aggiuntive** nei tab *Sconti/listini* e *Dati articolo*
- 
-5. **Controlla la sezione dei Riepiloghi** ed inserisci eventuali spese o sconti finali.  
- 
-6. Una volta controllato e confermato l’ordine, **inserisci una *Data conferma* e attiva il flag *Stampato* in testata** in modo da rendere l’ordine disponibile per le procedure di evasione.
- 
-</details>
+:::note NAPOMENA
+U fakturi prodaje automatski se predlažu trenutni **Datum** i **Godina**, ali vrijednosti se mogu promijeniti.
+:::
 
 ## **1. Dati obbligatori**
 
-Per continuare la creazione del documento, l'utente deve inserire i campi *obbligatori*:
+Za nastavak stvaranja dokumenta, korisnik mora unijeti *obavezna* polja:
 
-- **Tipo fattura**: predefinito in *Configurazione > Tabelle >Vendite > [Tipo fattura di vendita](/docs/configurations/tables/sales/invoices-type)*.          
-- **Numero**: ad ogni documento viene assegnato un numero secondo la numerazione specificata dall'utente nella tabella [Numerazione](/docs/configurations/tables/fluentis-numerations) e al tipo di documento che contiene la numerazione. La numerazione associata alla tipologia di fattura prevede generalmente una progressione automatica basata su data e numero, con una funzione di recupero che copre eventuali buchi nella sequenza (ad esempio, causati dalla cancellazione di documenti). Questo comportamento è regolato da due flag specifici nella tabella della numerazione. Se l'utente desidera inserire manualmente il numero, può disabilitare il flag di progressione data-numero (che garantisce l'incremento della numerazione nelle date future) e il flag di recupero numeri. Inoltre, dovrà abilitare il flag della numerazione esterna, segnalando così al sistema che la numerazione sarà gestita manualmente.            
-- **Cliente**: usando l' [help di campo](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) oppure tastando [direttamente](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) i dati. Inserendo il cliente, vengono automaticamente popolati, se presenti in anagrafia, i seguenti campi, che spiegheremo nelle sezioni successive: divisa, nazione, lingua, zona, spedizione, listino ed eventuali sconti, pagamenti, sconti, spese, agenti, destinazione, vettori, extra data.               
-- **Data fattura**: indica la data di creazione della fattura. Questa data è fondamentale per il calcolo delle scadenze e delle eventuali condizioni di pagamento. Viene proposta la data odierna, modificabile; nel caso in cui la numerazione preveda una progressione di data e numero, e io inserisca una data nel passato, Fluentis controllerà la disponibilità di numeri in quella data per garantire la progressione, e se non presente segnalerà l’utente che non ci sono numeri disponibili in quella data. 
+- **Tip fakture** predefiniran u *Konfiguracija > Tabele > Prodaja >  [Tip fakture prodaje](/docs/configurations/tables/sales/invoices-type)*.
 
-Continuare la creazione inserendo almeno i dati obbligatori su ognuno dei tab sotto.
+- **Broj** svakom dokumentu dodijeljen je broj prema brojanju koje je korisnik odredio u tablici [Numeracija](/docs/configurations/tables/fluentis-numerations) i za tip dokumenta koji sadrži numeraciju.
 
-## **2. Testata**
+- **Klijent**, korištenjem [polja za pomoć](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) ili [izravno](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) unoseći podatke.
 
-Dopo aver selezionato i dati obbligatori nella sezione superiore, l'utente può continuare l'inserimento dei seguenti dati:  
-- [manualmente](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection)  
-- oppure con l'[help di campo](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) 
-- oppure, in base alle procedure che sceglie, l'applicazione compila i campi **automaticamente**.
+Nastavite s kreiranjem unoseći barem obavezne podatke na svakom od sljedećih tabova.
 
-:::note Ricorda
-Se il documento viene *creato automaticamente*, questi dati vengono ripresi dal *documento d'origine* da cui è stata generato.
+## **2. Zaglavlje**
+
+Nakon što su odabrani obavezni podaci u gornjem dijelu, korisnik može nastaviti unos sljedećih podataka:
+
+- [ručni unos](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection)  
+- [pomoćno polje](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection)
+
+- automatski unos: Na temelju odabrane procedure, aplikacija može **automatski** popuniti određena polja.
+
+:::note NAPOMENA
+Ako se dokument stvara *automatski*, ovi podaci se preuzimaju iz *izvornog dokumenta* iz kojeg je generiran.
 :::
 
-Inserendo il **Cliente**, vengono proposti in automatico tutti i dati specifici del tab **Testata**, secondo i dati impostati in precedenza nell'[anagrafica cliente](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/accounting-data-intro), nei campi corrispondenti al suo indirizzo e nelle *sezioni*:  
-- **Divisa**: sezione contenente i dati [Divisa](/docs/guide/common/glossary/glossary-intro#currency), [Cambio](/docs/guide/common/glossary/glossary-intro#currency-exchange), [Data valuta](/docs/guide/common/glossary/glossary-intro#currency-date).
-- **Nazione**: sezione contenente i dati [Nazione](/docs/guide/common/glossary/glossary-intro#country), [Lingua](/docs/guide/common/glossary/glossary-intro#language), [Zona](/docs/guide/common/glossary/glossary-intro#zone).
-- **Spedizione**: sezione contenente i dati [Spedizione](/docs/guide/common/glossary/glossary-intro#shipment), [Porto](/docs/guide/common/glossary/glossary-intro#carriage), [Imballo](/docs/guide/common/glossary/glossary-intro#packing), [Listino](/docs/guide/common/glossary/glossary-intro#sales-price-list) (in testata documento viene inserito il listino inserito in anagrafica cliente con il flag Default) con il tipo scaglione di sconto e il suo [intervallo di validità](/docs/guide/common/glossary/glossary-intro#validity-date).
+Unoseći **Klijenta** automatski se *nude* svi specifični podaci u **Zaglavlju**, prema prethodno postavljenim podacima u [Šifarnik klijenta](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/accounting-data-intro), u odgovarajućim poljima za adresu i u sljedećim *sekcijama*: 
 
-#### Altri campi
+- **Valuta**: [Valuta](/docs/guide/common/glossary/glossary-intro#currency), [Tečaj](/docs/guide/common/glossary/glossary-intro#currency-exchange), [Datum valute](/docs/guide/common/glossary/glossary-intro#currency-date).
+- **Država**: [Država](/docs/guide/common/glossary/glossary-intro#country), [Jezik](/docs/guide/common/glossary/glossary-intro#language), [Zona](/docs/guide/common/glossary/glossary-intro#zone)  
+- **Dostava**: [Dostava](/docs/guide/common/glossary/glossary-intro#shipment), [Luka](/docs/guide/common/glossary/glossary-intro#carriage), [Pakiranje](/docs/guide/common/glossary/glossary-intro#packing), [Cjenik](/docs/guide/common/glossary/glossary-intro#sales-price-list) i njegov [vremenski interval](/docs/guide/common/glossary/glossary-intro#validity-date)  
+- ostala polja koja se nude izborom klijenta, ali se mogu mijenjati: [Odredište](/docs/guide/common/glossary/glossary-intro#destination), [Primatelj](/docs/guide/common/glossary/glossary-intro#recipient).
 
-- **Stampata**: si attiva quando viene lanciata la stampa del documento ed identifica che il documento è stato stampato.      
-- **Scaricata**: questo flag si attiva automaticamente quando il documento viene movimentato a magazzino, con il bottone della barra degli strumenti *Scarico automatico* o con le procedure a disposizione.  
+#### Ostala opcionalna polja
 
-:::note Nota
-Nel caso di fattura creata da documento di trasporto già scaricato, è presente il parametro generale VE-PurchaseInvoices_VerifyLoadStatusDDT che blocca il flag *Scaricata* anche nella fattura. 
-:::  
+**Stanje računa**: prilikom stvaranja, račun nema aktivnih oznaka.  
+Ova sekcija uključuje sljedeća polja:  
+> **Ispisano** aktivira se kada se račun ispisa, označava da je račun isprintan.    
+> **Knjiženo**: automatski se označava kada se račun knjiži.  
+> **Otkazano**: aktivna oznaka omogućuje storno računa.   
+> **Otpremljeno**: označava da je račun otpremljen iz skladišta, ručno ili *automatski* putem postupka *automatskog otpreme*.  
 
-- **Annullata**: il flag attivo permette di annullare il documento; verranno inseriti automaticamente i flag *Scaricata* e *Valorizzata* per evitare che il documento sia visibile nelle procedure.      
-- **Contabilizzata**: il flag indica che la fattura è stata contabilizzata.    
-
-:::note
-I flag possono essere tolti con le procedure di ripristino operazione.
+:::note NAPOMENA
+U slučaju računa koji je stvoren iz već obrađenog dokumenta o prijevozu, prisutan je opći parametar VE-PurchaseInvoices_VerifyLoadStatusDDT koji blokira oznaku *Preuzeto* čak i u računu.
 :::
 
-- **Annotazioni cliente**: viene proposta l'informazione inserita nell'anagrafica cliente, mentre nel caso di creazione in automatico da un ordine/DDT verranno ripresi gli stessi dati contenuti nell'omonimo campo del documento di origine; può essere inserito anche manualmente. Con il tasto destro del mouse si può aprire una form per poter specificare un testo molto lungo di nota; se il campo contiene un valore viene cambiato il colore dello sfondo del campo.      
-- **Nostro riferimento/vostro riferimento**: in questi campi solitamente viene indicato un riferimento interno ed un riferimento cliente per la fattura in oggetto.   
-- **Riferimento al Numero Ordini Cliente**: in questo campo viene inserito in automatico l'ordine da cui deriva la fattura.     
-- **Riferimento alla Data Ordini cliente**: in questo campo viene inserito in automatico la data dell'ordine da cui deriva la fattura; insieme al campo precedente, crea i dati necessari al tag 2.1.2 del file xml della fattura elettronica, quando essa verrà creata; se non compilati verrà preso invece il campo Vostro Riferimento. Nel caso in cui la fattura venga generata tramite la procedura di:  
-> *Creazione da ordine cliente*, questi ultimi quattro campi verranno popolati con le indicazioni presenti nell'ordine cliente. Questo trasferimento è valido solo nel caso della fattura creata tramite il prelievo dei dati da un solo ordine;  
-> *Evasione DDT*, questi campi verranno popolati con le indicazioni presenti nel DDT. Questo trasferimento è valido solo nel caso della fattura creata tramite il prelievo dei dati da un solo DDT.          
+:::important VAŽNO
+Oznake se mogu ukloniti postupkom **Povrati** operacije.
+:::
 
-import InitialNote from './../../../import/fields/initial-note.md'
+**Bilješke kupaca**: nudi se informacija unesena u karticu klijenta, dok u slučaju automatskog stvaranja iz narudžbenice/otpremnice bit će preuzeti isti podaci iz odgovarajućeg polja izvornog dokumenta.
 
-<InitialNote />
+Moguće je i ručno unijeti podatke. Desnim klikom miša moguće je otvoriti formu kako bi se specificirao dugi tekst bilješke; ako polje sadrži vrijednost, boja pozadine polja se mijenja.
 
-import User from './../../../import/fields/user.md'
+**Naša referenca/vaša referenca**: u ovim se poljima obično navodi interna referenca i referenca klijenta za određeni račun.  
+U slučaju kada se račun generira putem:     
+> *Stvaranje iz narudžbenice kupca*, ova polja bit će popunjena informacijama koje su navedene u narudžbenici kupca. Ovaj prijenos vrijedi samo za račun stvoren uzimanjem podataka iz jedne narudžbenice;  
+> *Izvršenje otpremnice*, ova polja bit će popunjena informacijama koje su navedene u otpremnici. Ovaj prijenos vrijedi samo za račun stvoren uzimanjem podataka iz jedne otpremnice.
 
-<User />
+**Početna bilješka**: mogu se odabrati napomene koje su prethodno unesene u tablicu istog imena koja se nalazi u putanji *Konfiguracija > Alati > Upravljanje šifriranim napomenama* Korisnik mora dvaput kliknuti na polje **Početna bilješka** kako bi otvorio pomoć *šifriranim napomenama* i odabrao podatke ili desnim klikom miša može otvoriti prozor kako bi specificirao vrlo dug tekst bilješke. Ako polje sadrži vrijednost, promijenit će se boja pozadine polja.
 
-- **Progetto**: usando l'[help di campo](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) si può collegare il documento a un progetto.  
-Questa associazione funziona solo a livello della testata dell'articolo.
-- **Audit Trail**: come in tutti i documenti, questa sezione riporta la data di creazione del documento con l'operatore, e la data di ultima modifica del documento con l'operatore.      
-- **Tipo riferimento**: se la fattura proviene da un'altra fattura a causa di uno Storno del documento, qui viene riportato il tipo fattura del documento di origine.     
-- **Riferimento FT**: se la fattura è stata creata da un'altra fattura, qui vengono riportati il numero e la data del documento di origine.       
-- **Riferimento SDI id**: in questo campo vengono riportati i riferimenti della fattura se inviata allo SDI.      
-- **Registrazione contabile**: contiene l'identificativo della registrazione contabile se la fattura è stata contabilizzata.      
-- **Spedizione**: in questa sezione vengono riportati eventuali Porto, Imballo e Automezzo inseriti in anagrafica cliente; i campi sono modificabili.       
-- **Listino**: viene proposto il listino con il flag di default inserito in *Anagrafica cliente > Listini* che sarà utilizzato per il documento; è un dato modificabile.     
-- **Tipo scaglione**: riporta il tipo di scaglione di sconto inserito in *Anagrafica cliente > Listini* previsto per il tipo listino di default.       
-- **Decorrenza**: rappresenta la data di decorrenza per il calcolo delle scadenze di pagamento.
+U slučaju *Izvršenja putem narudžbenice*, informacije koje su bile navedene u narudžbenici kupca bit će automatski ponovno prikazane u polju **Početna bilješka**.
 
-#### Pulsanti specifici
+**Operater**: omogućuje unos korisnika koji stvara dokument. Zaposlenici su uneseni unaprijed u tablicu *Zaposlenici* koja se nalazi u putanji *Početna stranica > Zaposlenici*. Podatak postaje **obvezan** ako je opcija postavljena u parametrima samog dokumenta.
 
-> **[Evasione da ordine cliente](/docs/sales/sales-invoices/invoicing/sales-invoice)**: richiama la procedura per creare una fattura da un ordine cliente. Si attiva con l'inserimento del cliente e del tipo fattura.      
-> **Evasione da DDT**: richiama la procedura per creare una fattura da un documento di trasporto. Si attiva con l'inserimento del cliente e del tipo fattura;      
-> **[Scarico automatico](/docs/sales/sales-invoices/invoicing/sales-invoice)**: questa procedura permette di effettuare lo scarico di magazzino del documento, se *Stampato*.      
-> **Help destinatario/destinazione**: permette di visualizzare e inserire i destinatari/le destinazioni dall'anagrafica cliente.     
-> **Inserisci agente nelle righe**: spalma l'agente inserito in testata nelle righe articolo, nel tab *Agenti*.     
-> **Inserisci CIG/CUP nelle righe**: spalma i codici inseriti in testata nelle righe articolo, nella relative combo box.     
-> **Cancella pagamenti**: cancella i pagamenti di testata.    
-> **Registro dei documenti SDI**: apre il documento sdi riferito alla fattura, una volta *Controllata*.       
- 
-### 2.1 Pagamenti 
+**Projekt**: koristeći [pomoć u polju](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) dokument se može povezati s projektom. Ovo povezivanje funkcionira samo na razini zaglavlja artikla.
 
-Le **Soluzioni di pagamento** sono riportate in automatico dall'*Anagrafica cliente > tab Pagamenti* e possono essere modificate/cancellate dall'utente.
+**Status dokumenta**: ovaj podatak odnosi se na tablicu *Stanja dokumenta* i mora ga unijeti korisnik. Može se koristiti za postupke replikacije poslovanja, instalirane za upravljanje poslovnicom s prodajnim mjestima.
 
-Se al **Tipo pagamento** è associato uno sconto finanziario, l'importo dello sconto viene considerato solo ai fini contabili cioè nelle scadenze del documento e non nel totale fattura.  
+**EDI**: predstavlja datum prijenosa dokumenta iz EDI postupaka.
 
-Se il documento nasce da un:
+**Primjeni iz**: je datum početka za izračun datuma dospijeća plaćanja.
 
-- *Ordine cliente* i tipi pagamento possono essere ripresi dal primo documento, dall'anagrafica cliente oppure vengono visualizzati in una form tutti i pagamenti dei documenti da evadere e l'utente seleziona la tipologia di pagamento interessata.
+#### Posebni gumbi
 
-- *DDT* possono essere mantenuti i pagamenti di anagrafica del cliente oppure mantenuti i singoli pagamenti presenti in ogni DDT, in questo caso viene riportato in fattura il tipo pagamento con l'imponibile e l'iva uguale a quello del DDT e viene aggiunta una nuova riga per le eventuali righe articolo aggiunte in fattura non provenienti da DDT.
+> **Obrada iz narudžbenice kupca**: pokreće postupak za stvaranje računa iz narudžbenice kupca. Aktivira se kada su uneseni klijent i tip računa.  
+> **Obrada iz otpremnice**: pokreće postupak za stvaranje računa iz otpremnice. Aktivira se kada su uneseni klijent i tip računa.  
+> **Automatsk preuzimanje**: ovaj postupak omogućuje istovar zaliha dokumenta ako je označeno kao Ispisano.  
+> **Pomoć za primatelja/odredište**: omogućuje pregled i unos primatelja/odredišta iz evidencije klijenata.  
+> **Umetni agenta u linijama**: dodjeljuje Predstavnika unesenog u zaglavlje u retke stavki, u kartici Predstavnici.  
+> **Umetni CIG/CUP u linijama**: Dodjeljuje unesene kodove u zaglavlje u retke stavki, u odgovarajući padajući izbornik.  
+> **Otkaži plaćanja**: Briše plaćanja iz zaglavlja.  
+> **Registar Sdi dokumenata**: Otvora SDI dokument koji se odnosi na račun, nakon Kontrolirano.
 
-### 2.2 Sconti
+### 2.1 Plaćanja
 
-Vengono proposti solo gli sconti predefiniti ripresi dall'*Anagrafica cliente > tab Sconti* e possono essere modificate/cancellate dall'utente.
-  
-import TabDiscount from './../../../import/sections/tab-discount.md'
+**Uvijeti plaćanja** automatski se prenose iz *Šifarnik kupca > kartica Plaćanje* i mogu se mijenjati/brisati od strane korisnika.
 
-<TabDiscount />
+Ako je uz **Vrstu plaćanja** povezan financijski popust, iznos popusta uzima se u obzir samo u računovodstvenom smislu, odnosno u rokovima plaćanja dokumenta, a ne u ukupnom iznosu otprmenice. 
 
-### 2.3 Agenti
+Ako dokument potječe iz:
 
-Indica il codice agente e la sua provvigione per ogni riga articolo. Viene proposto il codice e la percentuale definiti nell'*Anagrafica cliente > tab Agenti*.
+- Narudžba kupca, vrste plaćanja mogu biti preuzete iz prvog dokumenta (narudžbenica), iz klijentovih podataka ili se mogu prikazati u obrascu sva plaćanja dokumenata za izvršenje, a korisnik odabire željeni način plaćanja.  
 
-Se la provvigione non è collegata al cliente nella sua anagrafica, comunque deve essere inserito l'agente ma con provvigione NULL perché se fosse con provvigione 0, significherebbe che l'agente è collegato all'agente ma non percepisce provvigione.
+- Plaćanja mogu biti preuzeta iz klijentove kartice ili iz pojedinačnih plaćanja prisutnih u svakoj otpremnici. U ovom slučaju, u računu će se prikazati vrsta plaćanja s istim iznosom i PDV-om kao i u otpremnici, te će se dodati nova linija za bilo kakve stavke koje nisu proizašle iz otpremnice.
 
-Nel caso di generazione della fattura da ordine questo dato verrà ovviamente riportato uguale a quello dell'ordine cliente.
+### 2.2 Popusti
 
-La stessa sezione verrà riproposta per ogni riga articolo nel relativo tab Agenti.
+Ponuđeni su samo predefinirani popusti iz *Šifarnik kupca > kartica Popusti* a ne oni dodijeljeni uvjetima plaćanja ili određenim artiklima. Mogu se mijenjati/brisati od strane korisnika.
 
-### 2.4 Extra Data
+Popusti ponuđeni u zaglavlju dokumenta pojavit će se u svakom novom retku stavke u dokumentu.
 
-import TabExtraData from './../../../import/sections/tab-extra-data.md'
+Nakon što se unesu nove stavke, u zaglavlje se unese novi popust, on neće biti primijenjen na već unesene stavke.
 
-<TabExtraData />
+#### Posebni gumb*  
+> **Izbriši rabate**: koristi se za brisanje odabranih redova popusta.
+
+### 2.3 Trgovački predstavnici
+
+Pokazuje kod agenta i njegovu proviziju za svaki redak članka. Kod i postotak definirani su u *Šifarnik kupca > kartica Predstavnici*.
+
+Ako provizija nije povezana s klijentom u njegovoj anagrafici, Predstavnik ipak mora biti unesen, ali s provizijom NULL, jer da je s provizijom 0, to bi značilo da je Predstavnik povezan s Predstavnikom, ali ne prima proviziju.
+
+U slučaju generiranja otpremnice iz narudžbe, ovi podaci naravno će se ponoviti isto kao u narudžbi klijenta.
+
+Ovaj odjeljak bit će ponovljen za svaki redak članka u pripadajućem odjeljku Trgovački predstavnici.
+
+### 2.4 Dodatni podaci
+
+Ovdje se nudi informacija unesena u *Šifarnik subjekta > kartica Dodatni podaci*, samo ako postoje zadani podaci.
 
 ## Procedure testata:  
 
-### *Fatturazione elettronica*
+### *Stvaranje prema picking listi*
 
-Da questa sezione presente nella barra degli strumenti della fattura è possibile gestire la creazione e l'invio della fattura elettronica allo SDI. Questa procedura si esegue con il cambio stato del documento; gli stati sono i seguenti:
-- *Non esaminata*: è lo stato di partenza in cui si trovano i documenti prima di comunicare con lo sdi; il documento è stato generato e ancora non sono 
-state fatte azioni relative alla gestione del documento elettronico; gli stati successivi possono essere Controllato, Annullata o Esclusa;             
-- *Controllato*: impostando questo stato vengono effettuati i controlli da parte di Fluentis sul documento; nel caso in cui manchino dei dati per la comunicazione con SDI verrà avvisato l'utente; da questo stato in poi si accenderà il bottone *Registro dei documenti sdi* dove consultare lo storico e il foglio di stile dell'xml; gli stati successivi possono essere Generata, Annullata, Esclusa;              
-- *Generato*: E’ stato creato il file XML relativo al documento elettronico. Da questo momento è possibile procedere con gli stati successivi per inviare il file al Fluentis Business Hub oppure scaricare il file XML per gestioni esterne; gli stati successivi possono essere Firmata, Da spedire, Annullata, Esclusa;       
-- *Firmata*: Il documento è stato firmato esternamente con certificato di firma Cadeso Xades e reimportato in Fluentis nel nuovo formato; gli stati succcessivi possono essere Da spedire, Annullata, Esclusa;      
-- *Da spedire*: Questo stato, da utilizzare nel caso in cui sia correttamente configurato il canale Fluentis Business Hub, accoda il documento alla lista documenti che BizLink dovrà processare per l’invio a Sdi; non sono previste altre azioni manuali in quanto sarà necessario attendere l'esito dello Sdi;           
-- *Annullata*: il documento non deve essere inviato al cliente finale ma resta comunque valido ai fini IVA;       
-- *Esclusa*: Il documento è stato creato ma non rientra tra quelli da inviare al SdI (es. nota di storno interna o cliente non residente in italia e non soggetto a fatturazione elettronica con invio a SdI).
+Postupak omogućuje preuzimanje artikla iz izbora (Skladište/Izbor) u fakturu. Nakon ovog postupka, izbor će imati status *Izuzeto*.
 
-### *Evasione da DDT*
+#### Posebni gumbi
 
-Nella testata della fattura, premendo il pulsante **Evasione da DDT** si aprirà la form dove è possibile filtrare i DDT relativi al cliente del documento.
+> **Pretraga izbora**: gumb za pretraživanje izbora;   
+> **Označi sve**: gumb za odabir svih članaka iz izbora;  
+> **Prebaci artikle**: gumb za prijenos odabranih članaka iz izbora.  
 
-Tramite questa procedura è possibile creare una fattura di vendita dall'evasione del relativo DDT. E' quindi possibile inserire gli articoli all'interno della fattura, evadendo totalmente o parzialmente un intero ordine o una riga.
+### *Stvaranje fakture iz packing list*
 
-Per poter utilizzare questa procedura vi sono delle condizioni iniziali che devono essere rispettate:
- -  i/il cliente deve essere lo stesso della fattura;
- -  il DDT che si vuole evadere deve avere impostato il flag *Stampato*;
+Omogućuje preuzimanje artikla iz popisa pakiranja. Popis pakiranja, nakon ovog postupka, će imati status *Učitaj*.
 
-#### Procedimento 
+#### Posebni gumbi
 
-I filtri per cliente e divisa verranno riportati in automatico in base al cliente selezionato nella fattura.
+> **Pretraga pakirna liste**: gumb za pretraživanje popisa pakiranja.  
+> **Označi sve**: gumb za odabir svih članaka iz popisa pakiranja.  
+> **Prebaci artikle**: gumb za prijenos odabranih članaka iz popisa pakiranja.  
 
-Una volta impostati tutti i *Filtri* desiderati, cliccando sul pulsante di *Ricerca* verrà visualizzata nella griglia una riga per ciascun DDT stampato, confermato e non evaso oppure evaso parzialmente.
+### *Izvršenje narudžbi kupaca*
 
-:::note Nota
-La procedura riprende tutti i dati presenti neL ddt e come conseguenza saranno applicate le condizioni di acquisto presenti, anche se queste attualmente sono cambiate(es: aggiornamento listini).
+U zaglavlju fakture, pritiskom na gumb **Izvršenje narudžbi kupaca** otvorit će se forma gdje je moguće filtrirati narudžbe koje se odnose na klijenta iz dokumenta.
+
+Kroz ovaj postupak moguće je kreirati prodajnu fakturu izvršenjem odgovarajuće narudžbe kupca. Moguće je unijeti artikle unutar fakture, potpuno ili djelomično ispunjavajući cijelu narudžbu ili red.
+
+Da bi se koristio ovaj postupak, potrebno je poštivati sljedeće početne uvjete:  
+ -  klijent narudžbi mora biti isti kao i na fakturi;
+ -  narudžba koju želite izvršiti mora imati postavljenu oznaku *Ispisano* i *Datum potvrde narudžbe*;
+ - vrste dokumenata moraju biti kompatibilne: u tablici  *Tipovi narudžbi* tip narudžbe koji želite izvršiti mora imati postavljenu odgovarajuću vrstu fakture, dok u tablici *Tipovi faktura* mora biti prisutna oznaka za *Narudžbu* (koja označava da faktura proizlazi iz narudžbe);
+
+Zatim je potrebno postaviti u zaglavlju nove fakture *Tip otpremnice* koji želite kreirati (koji se mora podudarati s onim postavljenim u tablici *Tipovi narudžbi*) i *Klijenta*. Nakon što su ovi podaci uneseni, trebat će kliknuti na gumb *Izvršenje narudžbi* kako biste otvorili obrazac za izvršenje.
+
+#### Postupak  
+
+Filtri za klijenta i valutu automatski će se popuniti prema odabranom klijentu na fakturi.
+
+Nakon što su svi željeni *Filtri* postavljeni, klikom na gumb *Traži* prikazat će se u rešetki jedan redak za svaku narudžbu koja je ispisana, potvrđena i neizvršena ili djelomično izvršena.
+
+:::note NAPOMENA
+Postupak preuzima sve podatke prisutne u narudžbi i kao rezultat će biti primijenjeni uvjeti kupnje koji su prisutni u narudžbi, čak i ako su se ti uvjeti promijenili (npr. ažuriranje cjenika).
 :::
 
-:::note Nota
-Le righe di tipo Nota saranno sempre visibili, anche se già evase, fino a quando tutte le righe delle altre tipologie saranno evase.
+U rešetki rezultata, korisnik ima mogućnost:
+
+ 1. odabrati *cijelu narudžbu*. Da biste to učinili, dovoljno je odabrati oznaku na početku reda narudžbe.
+ 2. odabrati samo *neke* od ponuđenih *artikla*. Da biste to učinili, dovoljno je odabrati oznaku na početku retka artikla.
+ 3. odabrati samo neke *artikle*, ali samo za *određenu količinu*. U tom slučaju, količinu za izvršenje treba promijeniti.
+
+Za dovršetak postupka, trebat će kliknuti na gumb *Prijenos*, koji će preuzeti sve podatke prisutne u narudžbi i prenijeti ih u fakturu.
+
+#### Posebni gumbi 
+
+> **Traži**: omogućuje pretraživanje narudžbi kupca.   
+> **Prijenos**: omogućuje prijenos podataka odabrane narudžbe unutar nove fakture.   
+> **Prisilno izvršenje narudžbe**: omogućuje prisilno izvršenje narudžbe.  
+> **Izvršenje narudžbi**: omogućuje izvršenje narudžbe.  
+> **Potpuno proširivanje**: omogućuje proširenje cijelog stabla narudžbi u donjoj rešetki kako bi se prikazali artikli unutar njih.  
+> **Sažmi**: omogućuje skraćivanje prikaza redova artikla i prikazivanje samo redova narudžbe.   
+> **Označi sve**: omogućuje odabir svih artikala s popisa.  
+> **Odznači sve**: omogućuje poništavanje odabira svih artikala s popisa.  
+
+### *Upravljanje avansima*
+
+Fluentis omogućuje upravljanje fakturama za akontaciju i njihovim poništenjem.
+
+**Stvaranje fakture za akontaciju**  
+Fakture za akontaciju mogu imati poseban [Vrsta dokumenta](/docs/configurations/tables/sales/invoices-type) ili ne, budući da se upravljanje akontacijama ne odvija na razini tablice, već na razini stavki. Upravljanje akontacijama stoga uključuje stvaranje obične prodajne fakture, za koju su potrebni **Tip**, **Klijent**, itd.
+Nakon što su podaci o zaglavlju popunjeni, možete prijeći na karticu *Stavke*. U prikazu stavki, unesite *Tip stavke 6 Faktura za akontaciju*, slobodan Opis, Cijenu, PDV, fakturirani iznos (koji bi trebao imati račun za Akontacije klijenata), i ostale podatke po potrebi. Dakle, ovaj tip stavke određuje iznos akontacije. Kada je faktura završena, možete je ispisati. Tada je faktura za akontaciju potvrđena. Prilikom stvaranja drugih dokumenata za ovog klijenta, Fluentis će vas obavijestiti o postojanju fakture za akontaciju.
+
+**Storno račun**  
+Za poništenje fakture za akontaciju potrebno je stvoriti novu prodajnu fakturu za istog klijenta. Na kartici Stavke, ako klijent ima barem jednu fakturu za akontaciju, gumb **Upravljanje avansima** na gornjem izborniku bit će aktivan. Klikom na njega otvara se odgovarajuća procedura.    
+Na kartici **Storno avansa** moguće je odabrati akontacije za poništavanje; nakon odabira, pritiskom na gumb **Izradite stavku za poništenje fakture** bit će stvoren storno, koji će biti prikazan u donjoj mreži. Pri zatvaranju prozora bit će zatraženo potvrđivanje novog iznosa poništenja u fakturi.   
+Ako je potvrđeno, moći ćete pregledati stavku poništenja na kartici Stavke fakture, koja će prikazivati podatke o prethodnoj fakturi za akontaciju.
+
+## **3. Artikli**
+
+U ovoj kartici unose se svi artikli s pripadajućim podacima.
+
+Za sve što nije detaljno opisano u ovom dokumentu o zajedničkom radu obrazaca, pogledajte sljedeći link [Funkcionalnosti, gumbe i zajednička polja](/docs/guide/common).
+
+Podaci se unose [ručno](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection), uz [pomoćno polje](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) ili ih može predložiti povezane procedure.
+
+Za unos **Novog artikla** u mrežu dovoljno je postaviti se na redak kako biste ispunili različite podatke ili koristiti gumb **Novo** prisutan na gornjem izborniku.
+
+
+### Obvezni podaci
+
+**Broj linije**: ovo polje automatski će se popuniti postupnim unosom podataka u redak.
+
+**Vrsta linije**: pruža mogućnost odabira, iz padajućeg izbornika, artikala s različitim karakteristikama.
+
+:::note BILJEŠKA
+Ako se krene izravno s unosom artikla, njegova *klasa*, *šifra* i *vrsta retka* - *Šifrirani artikl* automatski će se unijeti.
 :::
 
-Nella griglia di risultati, l'utente ha poi la possibilità di:
+> **Artikl sa klasom**: to su artikli šifrirani u evidenciji i mogu se knjižiti u analitičkom računovodstvu te evidentirati u skladištu.  
+> **Artikl bez klase**: to su opisni artikli koji se mogu knjižiti u analitičkom računovodstvu, ali ih nije moguće knjižiti u skladištu.  
+> **Trošak**: to su kodirani ili nekodirani artikli koji se zasebno sažimaju u pregledima dokumenata, ako je artikl trošak kodiran i od poreznog interesa, bit će knjižen u skladištu, ako nije kodiran ili nije od poreznog interesa, neće se knjižiti u skladištu.  
+> **Bilješka**: to su opisne bilješke koje se pojavljuju u ispisu dokumenta; ne utječu na knjiženje ili skladište.  
+> **Gratis artikl**: artikl poklon upravlja se kao kodirani ili nekodirani artikl u porezne i skladišne svrhe, ali budući da je to poklon, zasebno se broji u pregledima dokumenta i ovisno o zastupljenosti PDV-a, obračunava se iznos PDV-a poklona na teret subjekta ili ne.  
+> **Račun za predujam**: artikl depozita koristi se za izradu depozitnih faktura;  
+> **Storno račun**: linija artikla storno depozita zatvara liniju depozita i depoziti se mogu odabrati pomoću pomoći depozita. Ovi podaci mogu se automatski unijeti kada se unese klasa ili serija jer je automatski odabran tip reda *kodirani artikl*.
 
- 1. selezionare il *DDT per intero*. Per farlo basterà selezionare il flag presente all'inizio della riga.
- 2. selezionare solo *alcuni* degli *articoli* proposti. Per farlo basterà selezionare il flag presente all'inizio della riga articolo.
- 3. selezionare solo *alcuni articoli* ma solo per una *determinata quantità*. In questo caso dovrà andare a modificare la quantità da evadere.
+**Klasa/Šifra/Opis artikla**: mogu se unijeti [ručno](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) ili uz [pomoćno polje](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) koje će predložiti sve povezane podatke unesene u Šifarnik artikala.
 
-Per completare la procedura bisognerà poi cliccare sul pulsante *Trasferimento*, che andrà a riprendere tutti i dati presenti nel ddt e li riporterà nella fattura.
+Nakon unosa artikla, njegov će se *Opis* automatski preuzeti iz evidencije. Ako artikl ima varijante, bit će potrebno odabrati željenu varijantu iz padajućeg izbornika *Varijante*.
 
-#### Pulsanti specifici 
+**Jedinica mjere**: nudi se primarna jedinica mjere artikla, ali korisnik ima mogućnost odabrati drugu jedinicu mjere.
 
-> **Ricerca**: permette di cercare i documenti.  
-> **Trasferimento**: permette di trasferire i dati del documento selezionato all'interno della nuova fattura.  
-> **Evasione forzata dell'ordine**: permette l'evasione forzata dell DDT.  
-> **Evasione ordini**: permette l'evasione del DDT.  
-> **Espandi**: permette di espandere l'intero albero deI DDT nella griglia sottostante, per visualizzare gli articoli contenuti in essi.  
-> **Comprimi**: permette di comprimere la visualizzazione delle righe articolo, e di far visualizzare solamente le righe DDT.  
-> **Seleziona tutti**: permette di selezionare tutti gli articoli dalla lista.  
-> **Deseleziona tutti**: permette di deselezionare tutti gli articoli dalla lista. 
+**Količina**: predstavlja količinu osnovne mjere, a pretpostavljena vrijednost je 1; može se unijeti ručno ili se može preuzeti iz razmatranog dokumenta za izvršenje (npr. iz narudžbe dobavljača).
 
-### *Evasione da ordini clienti*
+**Cijena**: cijena se predlaže iz cjenika unesenog u evidenciju kontakta; cjenik koji se odnosi na sami artikl prikazan je u kartici *Popusti/Cjenici*.
 
-Nella testata della fattura, premendo il pulsante **Evasione da ordini clienti** si aprirà la form dove è possibile filtrare gli ordini relativi al cliente del documento.
+Isti dokument može sadržavati artikle s cijenama preuzetim iz različitih cjenika, ako su u evidenciji subjekta povezani više cjenika u kaskadi (vidi **Šifarnik kontakata**), isti dokument može sadržavati artikle iz različitih cjenika.
 
-Tramite questa procedura è possibile creare una fattura di vendita dall'evasione del relativo ordine cliente. E' quindi possibile inserire gli articoli all'interno della fattura, evadendo totalmente o parzialmente un intero ordine o una riga.
+Dvostrukim klikom u polje **Cjenici** (kartica *Popusti/Cjenici*), korisnik ima mogućnost odabrati drugu ponudu osim zadane, iz koje će biti preuzeta cijena unesenog artikla.
 
-Per poter utilizzare questa procedura vi sono delle condizioni iniziali che devono essere rispettate:
- -  i/il cliente degli ordini deve essere lo stesso della fattura;
- -  l'ordine che si vuole evadere deve avere impostato il flag *Stampato* e la *Data conferma ordine*;
- -  i tipi documento devono essere compatibili: nella tabella dei *Tipi ordini* il tipo ordine che si vuole evadere deve avere impostato il tipo fattura corrispondente, mentre nella tabella dei *Tipi fatture* deve essere presente il flag su *Ordine* (che indica che la fattura deriva da un ordine);
+U odsutnosti cjenika, predloženi podatak je **prodajna cijena** preuzeta iz *Šifarnik artikala > kartica [Troškovi](/docs/erp-home/registers/items/create-new-items/item-registry/costs)* ili će se povući prema postavkama parametara dokumenta. Ako ni to nije dostupno, bit će navedena cijena 0.
 
-Si dovrà poi andare ad impostare nella testata della nuovo DDT, il *Tipo DDT* che si vuole creare (che deve corrispondere a quello impostato nella tabella dei *Tipi ordini*) e il *Cliente*. Una volta inseriti questi dati, bisognerà cliccare sul pulsante *Evasione ordini* per aprire la form di evasione.
+**PDV**: prednost ima podatak unesen u polje PDV *Šifarnik kontakta*. Ako ovaj podatak nije prisutan, predložena je vrijednost iz *Šifarnika artikala*, ali korisnik ima mogućnost unosa drugog podatka. To je obavezno polje.
 
-#### Procedimento 
 
-I filtri per cliente e divisa verranno riportati in automatico in base al cliente selezionato nella fattura.
+### Neobvezni podaci
 
-Una volta impostati tutti i *Filtri* desiderati, cliccando sul pulsante di *Ricerca* verrà visualizzata nella griglia una riga per ciascun ordine stampato, confermato e non evaso oppure evaso parzialmente.
+**Promet prodaje**: predložena je vrijednost unesena u *Šifarnik artikala > kartica Općenito*. 
 
-:::note Nota
-La procedura riprende tutti i dati presenti nell'ordine e come conseguenza saranno applicate le condizioni di acquisto presenti nell'ordine, anche se queste attualmente sono cambiate(es: aggiornamento listini).
-:::
+Ako se ne preuzme, unesite ga odabirom jedne od ponuđenih stavki iz odgovarajućeg izbornika, inače nedostatak ovih podataka može uzrokovati pogreške u knjiženju fakture koja će biti generirana iz narudžbe, ako u *Podaci kupca > Računovodstveni podaci > kartica Administrativno* nije postavljena vrijednost u polju *Predefinirani prihod od kontrapartije*.
 
-:::note Nota
-Le righe di tipo Nota saranno sempre visibili, anche se già evase, fino a quando tutte le righe delle altre tipologie saranno evase.
-:::
+**Alternativna JMJ**: u ovim poljima bit će prikazana količina u alternativnoj jedinici mjere ako je u Šifarnik artikala ovaj podatak prisutan u kartici **Alternativne jedinice mjere** (uzima se ona koja ima postavljen zastavu **Zadano**) i ako su u postavkama dokumenta aktivirane zastave: **Upravljajte dvostrukom jedinicom mjere i Automatski prijedlog JM alternativa**.
 
-Nella griglia di risultati, l'utente ha poi la possibilità di:
+**Alternativna količina**: predložena je vrijednost u vezi s alternativnom JM, izračunata množenjem ili dijeljenjem *količine za upravljanje* (vezane uz glavnu JM) s *faktorom konverzije* postavljenim u *Šifarnik artikala > kartica Alternativne jedinice mjere*.
 
- 1. selezionare l'*ordine per intero*. Per farlo basterà selezionare il flag presente all'inizio della riga ordine.
- 2. selezionare solo *alcuni* degli *articoli* proposti. Per farlo basterà selezionare il flag presente all'inizio della riga articolo.
- 3. selezionare solo *alcuni articoli* ma solo per una *determinata quantità*. In questo caso dovrà andare a modificare la quantità da evadere.
+**Težine**: ukupna neto težina i ukupna bruto težina stavki artikla. Prikazane su težine artikala u evidenciji pomnožene s količinom retka.
 
-Per completare la procedura bisognerà poi cliccare sul pulsante *Trasferimento*, che andrà a riprendere tutti i dati presenti nell'ordine e li riporterà nella fattura.
+### 3.1 Popusti/Cjenici
 
-#### Pulsanti specifici 
+**Popusti**: Prikazuju se sva sniženja povezana s artiklom, svako s vlastitom osnovom i načinom dodjele. Sniženja se mogu preuzeti iz: podataka o klijentu, rješenja plaćanja dodijeljenog dokumentu, cjenika povezanog s klijentom. Svi prikazani podaci mogu se mijenjati
 
-> **Ricerca**: permette di cercare gli ordini.  
-> **Trasferimento**: permette di trasferire i dati dell'ordine selezionato all'interno della nuova fattura.  
-> **Evasione forzata dell'ordine**: permette l'evasione forzata dell'ordine.  
-> **Evasione ordini**: permette l'evasione dell'ordine.  
-> **Espandi**: permette di espandere l'intero albero degli ordini nella griglia sottostante, per visualizzare gli articoli contenuti in essi.  
-> **Comprimi**: permette di comprimere la visualizzazione delle righe articolo, e di far visualizzare solamente le righe ordine.  
-> **Seleziona tutti**: permette di selezionare tutti gli articoli dalla lista.  
-> **Deseleziona tutti**: permette di deselezionare tutti gli articoli dalla lista. 
+**Vrijednosti cjenika**: Prikazuje se cjenik iz kojeg je preuzet artikl, s datumom početka/kraja valjanosti i posebnim prodajnim uvjetima (npr. Razinama popusta) dodijeljenim artiklu u cjeniku. 
 
-### *Scarico automatico*
+#### Poseban gumb*   
+> **Izbriši rabat**: omogućuje brisanje popusta povezanog s odabranim artiklom u gornjem retku.
 
-Un'altra procedura presente in testata è lo scarico automatico da magazzino. Il pulsante si abilita se il documento è Stampato e se la fattura non è collegata ad un DDT già scaricato.      
-Ricordiamo che se nei [Parametri fattura](/docs/configurations/parameters/sales/sales-invoices-parameters) è abilitato lo scarico automatico, questa procedura verrà avviata in automatico una volta Stampato il documento.      
-Una volta avviata la procedura, Fluentis controlla la presenza di magazzino e causale nelle righe fattura e l'eventuale presenza di lotti e serial number se richiesti; nel caso la procedura non vada a buon fine viene avvisato l'utente con un errore.      
-Se la procedura va a buon fine, viene creata la [Registrazione di magazzino](/docs/logistics/warehouse/stock-records/record) che movimenta gli articoli del documento e viene inserito il flag **Scaricato** nella testata.      
+### 3.2 Podaci artikla
 
-## **3. Articoli**
+**Varijante**: sadrži eventualnu varijantu artikla;    
 
-In questo tab vengono inseriti tutti gli articoli con i relativi dati.
+**Skladište, uzrok i lokacija**: ponuđeno je skladište i uzrok koji će se automatski pojaviti prilikom pražnjenja artikala iz skladišta. Podaci su preuzeti iz tabele *Tipovi računa*;  
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+**Artikl**: prikazuje odabrani artikl;     
 
-import InsertMode from './../../../import/sections/insert-mode.md'
+**Projekt**: to je projekt povezan s dokumentom ili se može dodijeliti uz pomoć pomoći; 
 
-<InsertMode />
+**Pravo naplate PDV-a**: ako je postavljena, PDV na poklon bit će uzet u obzir za ukupni račun;   
 
-Per inserire un **Nuovo articolo** nella griglia basterà posizionarsi sulla riga per compilare i vari dati oppure utilizzare il pulsante **Nuovo** presente nella ribbon bar. Le colonne disponibili sono le seguenti:   
+**Detaljne deklaracije**: sadrži eventualnu [izjavu o namjeri ](/docs/finance-area/declarations/declarations/intent-declaration) klijenta;
 
-import RowNumber from './../../../import/fields/row-number.md'
+**Referenca naloga**: odnosi se na narudžbu iz koje je stvoren račun;
 
-<RowNumber />
+**Marka**: prikazuje marku artikla, preuzetu iz njegove ankete ili iz cjenika artikla;
 
-- **Tipo riga**: offre la possibilità di selezionare, dalla combo-box, articoli con caratteristiche diverse:
->- *Articolo codificato*: sono gli articoli codificati in anagrafica e possono essere contabilizzati in contabilità analitica e registrati in magazzino.
->- *Articolo non-codificato*: sono articoli descrittivi che possono essere contabilizzati in contabilità analitica ma non possono essere movimentati a magazzino.
->- *Articolo spese*: sono articoli codificati o non-codificati e vengono riassunti in modo distinto nei riepiloghi dei documenti, se l'articolo spesa è codificato e di interesse fiscale verrà movimentato in magazzino, se è non codificato oppure non di interesse fiscale non verranno movimentati a magazzino.
->- *Articolo note*: sono note descrittive riportate nella stampa del documento; non incidono sulla contabilità e sul magazzino.
->- *Articolo omaggio*: l'articolo omaggio viene gestito come un articolo codificato o non codificato ai fini fiscali e di magazzino, ma essendo un omaggio viene conteggiato separatamente nei riepiloghi del documento e in base al flag Rivalsa iva viene calcolato l'importo dell'iva dell'omaggio a carico del soggetto oppure no.
->- *Fattura d'acconto*: la riga articolo acconto viene utilizzata per creare delle fatture di acconto.  
->- *Storno fattura d'acconto*: la riga articolo storno acconto chiude la riga articolo acconto e gli acconti possono essere selezionati tramite un help acconti. Questi dati possono essere inseriti automaticamente quando si inserisce direttamente la classe o la matricola perché il tipo riga 'articolo codificato' viene selezionato in automatico.
-:::note[NOTA]
-Se si parte direttamente con l'inserimento dell'articolo, la sua classe, il codice e il tipo riga - Articolo codificato vengono inseriti automaticamente.
-:::
+**Bilješke**: omogućuje unos bilješki za svaki artikl;
 
-- **Barcode**: se nei [Parametri fattura](/docs/configurations/parameters/sales/sales-invoices-parameters) è stata abilitata la gestione dei Barcode, comparirà la colonna Barcode dove selezionare il dato per l'articolo tra i Barcode inseriti in *Anagrafica articolo > Barcode*. 
+### 3.3 Trgovački predstavnici
 
-import ItemClassDescription from './../../../import/sections/item-class-description.md'
+**Trgovački predstavnici**: predstavnik povezan s odgovarajućom provizijom za odabrani artikl; podatak odgovara onome što je navedeno u *Zaglavlje > kartica Trgovački predstavnici*. Postotak se može promijeniti. 
 
-<ItemClassDescription />
+#### Poseban gumb* 
+> **Izbriši trgovačkog predstavnike**: omogućuje brisanje povezanog predstavnika s artiklom.
 
-- **Articolo cliente**: se nei [Parametri fattura](/docs/configurations/parameters/sales/sales-invoices-parameters) è stata abilitata la gestione degli Articolo cliente, comparirà la colonna Articolo cliente, con il codice articolo valido per il cliente intestatario del documento e inserito in *Anagrafica articolo > Clienti*. 
+### Varijante 
 
-import UM from './../../../import/fields/item-um.md'
+Prikazuje se varijante odabranog artikla, kodirane u kartici **Varijante** u šifarnik artikla ili se mogu unijeti ručno.
+Omogućuje upravljanje varijantama artikla na način koji se razlikuje od onoga što je ponuđeno na retku s artiklima. 
+Na primjer, na svakom se retku s artiklima može unijeti ukupna količina; zatim, u istoj kartici mogu se definirati različite količine za više varijanti odabranog artikla i čak za varijantu i atribut, odnosno upravljanje veličinom/bojom. Ova operacija je moguća samo ako su sve varijante artikla cijenjene po istoj cijeni kao i standardna konfiguracija artikla.  
 
-<UM />
+### 3.4 Lotovi i serijski brojevi
 
-import Quantity from './../../../import/fields/item-quantity.md'
+U oba prikaza mogu se unijeti lotovi i serijski brojevi koji se moraju isprazniti iz skladišta, a koji su povezani s artiklom u *Šifarnik Artikla > kartici [Lotovi i serijski brojevi](/docs/erp-home/registers/items/create-new-items/item-registry/lots-and-serial-number)* ili ih se može unijeti ručno. 
 
-<Quantity />
+Ova operacija uvjetovana je prisustvom serija i serijskih brojeva u skladištu.  
 
-import Price from './../../../import/fields/item-price.md'
+Ako artikl ne podrazumijeva upravljanje lotovima/serijskim brojevima, ovaj će se karton onemogućiti.  
 
-<Price />
+#### Posebni gumbi
+> **Izbriši lot**: omogućuje brisanje odabranog retka lota.     
+> **Izbriši serijski broj**: omogućuje brisanje odabranog retka serijskog broja.
 
-:::note
-In assenza del listino, il dato proposto è il **prezzo di vendita** ripreso dall'*Anagrafica articolo > tab [Costi](/docs/erp-home/registers/items/create-new-items/item-registry/costs)* oppure verrà recuperato in base alle impostazioni dei parametri del documento. In assenza anche di questo dato, verrà riportato il prezzo 0.
-:::
+### 3.5 Analitika 
 
-- **Imponibile**: in questo campo viene riportato il Prezzo unitario, moltiplicato per la quantità articolo, al netto degli sconti.        
+Može sadržavati informacije o troškovima/odbitku na koje su raspoređeni iznosi artikala. 
 
-- **Sconti articolo**: viene riportata la somma degli sconti previsti per l'articolo.     
+Ovi se podaci mogu unijeti ručno ili *automatski* (u slučaju da su centri troškova/profita unaprijed uneseni u *šifarnik kontakata*, *šifarnik artikla* ili *kontni plan*). 
 
-- **Sconti finali articolo**: viene riportata la somma degli sconti finali inseriti articolo inseriti nei Riepiloghi del documento.     
+### 3.6 Dodatni podaci 
 
-import Vat from './../../../import/fields/item-vat.md'
+Prikazuje se popis **Dodatnih podataka** povezanih s artiklom, s mogućnošću dodavanja novih dodatnih podataka koji su korisni samo za trenutni dokument, s mogućnošću, putem odgovarajućeg okvira, odabira dodatnih podataka koje treba ispisati. 
 
-<Vat />
+### 3.7 Priloženi dokumenti 
 
-- **Fatturato vendite**: viene proposto il dato inserito nell'*Anagrafica articoli > tab Generalità*. Se questo non è presente, non viene proposto nessun dato ma al momento della contabilizzazione della fattura, sarà considerato il valore inserito nel campo *Costo/Ricavo di contropartita predefinito* dell'*Anagrafica cliente > Dati contabili > tab Amministrativa* oppure sarà generato un messaggio di errore.
-Se questo non è presente, non viene proposto nessun dato ma al momento della contabilizzazione della fattura, sarà considerato il valore inserito nel campo *Costo/Ricavo di contropartita predefinito* dell'*Anagrafica cliente > Dati contabili > tab Amministrativa* oppure sarà generato un messaggio di errore.
+Prikazuje se pojedinosti o eventualnom **Priloženom dokumentu** (naziv, vrsta dokumenta, eventualne napomene, naše/vaše referencije). Za upute o tome kako priložiti dokument, pogledajte članak u **Priloženim dokumentima**.
 
-#### Pulsanti specifici
+### 3.8 Odjeljak o vrijednostima  
 
-> **Ricalcolo Conai**: se il [Conai](/docs/sales/sales-flow/conai) è abilitato per il documento, è possibile ricalcolare i valori con questo bottone dopo eventuali modifiche.     
+Donji desni odjeljak sadrži sažetak troškova koji doprinose formiranju konačne cijene odabranog artikla u mreži artikala. 
 
-> **Aggiorna i dati Conai nell'anagrafica articolo**: se nel tab *Materiali Conai per l'articolo* vengono modificati Unità di misura e/o Peso, è possibile trasferire questi valori nella sezione Conai dell'anagrafica articolo.      
+**Jedinična cijena**: vrijednost polja *Cijena*; 
 
-> **Gestione imballi**: permette l'apertura della gestione degli imballi a rendere usati nel documento di acquisti.
-Il pulsante diventa attivo se il documento è salvato, ma non caricato.
-Cliccando su questo pulsante si apre la form corrispondente dove: inserire la quantità, selezionare la riga ed eseguire il trasferimento dell'imballo selezionato nelle righe articolo cliccando sul pulsante Execute. In questa form vengono riportati gli articoli che sono stati inseriti con natura Imballo e che sono presenti nella tabella degli Imballi a rendere.         
-  
-> **Aggiornamento listini**: cliccando sulla tendina accanto al pulsante si accede a due procedure. La prima procedura è **Aggiorna il listino corrente**, che permette di allineare il prezzo dell'articolo internamente al Listino, a seguito di una eventuale variazione di prezzo direttamente nella riga articolo. Invece con la seconda procedura, **Crea nuovo listino con nuova validità**, è possibile creare un nuovo listino personalizzato per il cliente intestatario del documento; verranno richiesti, in un pop-up, le date di inizio e fine validità del nuovo listino.      
+**Količina**: vrijednost polja *Količina*; 
 
-> **Mostra/Nascondi dettagli**: cliccando questo bottone si rendono o meno visibili le tab interne agli Articoli.   
+**Iznos u liniji**: Cijena artikla * *Količina artikla*; 
 
-> **Gestione acconti**: Fluentis permette di gestire le fatture di acconto e il relativo storno, procedure apribili cliccando questo pulsante.
-> - **Creazione fattura di acconto**
-Le fatture di acconto possono avere un [Tipo documento](/docs/configurations/tables/sales/invoices-type) dedicato o meno, in quanto la gestione degli acconti non avviene a livello di tabella, ma di articoli.
-La gestione degli acconti prevede quindi la creazione di una normale fattura di vendita, per la quale sono richiesti un **Tipo**, un **Cliente**, ecc.
-Dopo la compilazione dei dati di Testata, è possibile passare alla tab Articoli.
-Nella griglia articoli, inserire un *Tipo riga 6 Fattura d'acconto*, una Descrizione libera,  il Prezzo, l'IVA, un Fatturato (che dovrebbe avere come conto Anticipi clienti), ed eventuali altri dati. E' quindi la riga di questa tipologia a determinare l'ammontare dell'acconto.
-Una volta completata la fattura, è possibile stamparla. 
-A questo punto la fattura d'acconto risulta confermata.
-Al momento della creazione di altri documenti per questo cliente, Fluentis mi avviserà dell'esistenza di una fattura di acconto.
-> - **Storno fattura di acconto**
-Per stornare una fattura di acconto è necessario creare una nuova fattura di vendita intestata allo stesso cliente.
-Nel tab Articoli, se il cliente ha almeno una fattura di acconto, sarà attivo il bottone della ribbon bar **Gestione acconti**. Cliccandolo verrà aperta l'omonima procedura.    
-Nel tab **Storno acconti** è possibile selezionare gli acconti da stornare; dopo la selezione, con il bottone **Crea storno** verrà creato lo storno, il quale sarà riportato nella griglia in basso. 
-Alla chiusura della maschera verrà chiesto se inserire il nuovo valore di storno in fattura. In caso di conferma, sarà possibile consultare la riga storno nel tab Articoli della fattura, che riporterà i dati della fattura di acconto precedentemente creata.
+**Ukupno rabat**: zbroj popusta na artiklu, uključujući i konačne popuste; 
 
-Sono poi presenti alcune tab che analizziamo di seguito. 
+**Osnovica**: Brutalni iznos - Popusti; 
 
-### 3.1 Sconti/Listini
+**Porez**: Osnovica * stopa PDV-a na artiklu; 
 
-import SalesTabDiscount from './../../../import/sections/sales-tab-discount.md'
+**Ukupno**: Osnovica + Porez.
 
-<SalesTabDiscount />
+## **4. Sažeci**
 
-### 3.2 Dati articolo
+U različitim dijelovima ove kartice prikazane su glavne informacije cijelog dokumenta i neki specifični gumbi. 
 
-- **Variante**: contiene l'eventuale variante dell'articolo;    
+### 4.1 PDV/Rokovi 
 
-import AlternativeUMQuantity from './../../../import/fields/alternative-um-quantity.md'
+#### Sažetak PDV-a
 
-<AlternativeUMQuantity />
+Prikazan je pregled PDV-a dokumenta, za svaki PDV.
 
-- **Magazzino, causale e ubicazione**: vengono proposti il magazzino e la causale di riferimento che compariranno in automatico al momento dello scarico degli articoli relativi dal magazzino. I dati sono ripresi dalla tabella *Tipi fatture*;     
+#### Sažetak rokova
 
-- **Articolo**: riporta l'articolo selezionato;     
+Prikazuje pregled rokova dokumenta, za svaki *tip i način plaćanja*.
 
-- **Progetto**: è il progetto associato al documento oppure può essere assegnato con l'ausilio del help di campo; 
+**Broj**: progresivna vrijednost retka.    
+**Plaćanje**: predstavlja alfanumerički kod *Način plaćanja preuzet iz zaglavlja dokumenta > kartica Plaćanja*.
 
-- **Rivalsa IVA**: se settato l'iva dell'omaggio viene considerata per il totale fattura;     
+**Iznos**: izračunati iznos roka. Može se ručno postaviti, u kojem slučaju se automatski aktivira sljedeća oznaka *Ručno uređivanje*. (Automatski se provjeravaju i upozorenja o podudarnosti vrijednosti rokova i ukupnog računa)
 
-- **Dettaglio dichiarazioni**: contiene eventuale [dichiarazione d'intento](/docs/finance-area/declarations/declarations/intent-declaration) del cliente;
+**Datum dospijeća**: izračunati datum dospijeća. Može se ručno postaviti, u kojem slučaju se automatski aktivira sljedeća oznaka Ručno uređivanje.
 
-- **Riferimento ordine**: fa riferimento all'ordine dal quale è stata creata la fattura;
+**Troškovi naplate**: polje u kojem su prikazani izračunati troškovi inkasa.
 
-- **Marca**: rappresenta la marca dell'articolo, ripresa dalla sua anagrafica oppure dal listino dell'articolo;
+**PDV**: koji se primjenjuje na troškove inkasa (može se postaviti i ručno)
 
-- **Note**: offre la possibilità di inserire note per ogni articolo;
+**Predložak plaćanja**: moguće je izravno unijeti u račun računsku sljedivost koja rezultira automatskim zapisom naplate/plaćanja. Obratiti pažnju na predložak računske sljedivosti jer će koristiti prisutne račune čak i bez podračuna, zbog čega postoji sljedeće polje.
 
-### 3.3 Agenti
+**Račun s podračunom kupca/dobavljača** koji se koristi za naplatu/plaćanje (npr. gotovina ili banka) roka, što zamjenjuje prisutni račun u računskoj kauzalnosti plaćanja (ili inkasa)
 
-import SalesTabAgent from './../../../import/sections/sales-tab-agent.md'
+**Primka broj**: eventualni broj računa za primljene novce
 
-<SalesTabAgent />
+**Jed.**: aktivira računovodstvo zatvaranja rokova u automatskom zapisu
 
-### 3.4 Lotti e Serial number
+**Vrsta popusta**: vrsta financijskog popusta
 
-Nelle due griglie possono essere inseriti i lotti e i numeri seriali che devono essere scaricati dal magazzino e che sono collegati all'articolo nell'*Anagrafica articolo > tab [Lotti e Serial Number]*(/docs/erp-home/registers/items/create-new-items/item-registry/lots-and-serial-number) oppure possono essere inserite manualmente.
+**Dospjela vrijednost**: vrijednost financijskog popusta po naplati
 
-Questa operazione è condizionata dalla presenza dei lotti e dei numeri seriali nel magazzino. 
+**Detaljne deklaracije**: To je referenca na izjavu namjere. PDV primijenjen na troškove inkasa može uvijek biti PDV plafond, pa je stoga potrebno moći unijeti i povezanu izjavu namjere (kao kod redaka stavki i troškova)
 
-Se l'articolo non prevede la gestione dei Lotti/Numeri seriali, questo tab sarà disabilitato.
+**ULAZNI RAČUNI**:
 
-#### Pulsanti specifici
+**Znak**: samo rokovi s ovom oznakom kasnije se obrađuju u plaćanju s postavljenim računom i računom.
 
-import DeleteLot from './../../../import/buttons/delete-lot.md'
-import DeleteSN from './../../../import/buttons/delete-sn.md'
+**Modeli referentnog plaćanja**: model stvaranja kodova plaćanja. U nekim stranim lokalizacijama svaki rok u računu ima kod dodijeljen od strane fakturanta: ovaj se kod strukturira prema određenim specifičnim modelima (tablica MB_PaymentReferenceModels), kako bi se mogao izgraditi kod pomoću algoritma.
 
-> <DeleteLot />  
-> <DeleteSN />
+**Šifre modela plaćanja**: ovo je šifra (strukturirana kao prethodni model) koju treba navesti u stavci, a zatim u plaćanjima koje se šalju banci, kako bi ona obavijestila korisnika o tome koji je rok plaćen (i tako automatizirala uvoz iz bankovnih transakcija s zatvaranjem stavke). Odatle se ispunjava unutar stavke i u Sepa datoteci.
 
-### 3.5 Analitica
+**Ograničenje datuma plaćanja unaprijed**: Ovo je polje predviđeno u SDI formatu računa, rok do kojeg se može primijeniti financijski popust.
 
-import TabAnalytic from './../../../import/sections/tab-analytic.md'
+Općenito, rokovi dospijeća ponovno se izračunavaju ako se promijeni plaćanje u zaglavlju dokumenta. Slučajevi u kojima se rokovi dospijeća ne ažuriraju ako se promijeni plaćanje u zaglavlju su sljedeći:
 
-<TabAnalytic />
+- Kada je račun povezan s SDI poveznicom i ima status različit od NotExamined, Controlled, Canceled, Excluded;  
+- Kada postoji barem jedan rok dospijeća s aktivnom značajkom *Ručna izmjena*;  
+- Kada je račun povezan s jednim ili više efektima ili povezan s linijom FSAdvanceInvoiceMaturity;     
+- Kada postoji popust na rok dospijeća koji ne dolazi iz plaćanja;   
+- Kada je ukupan iznos u mreži Plaćanja veći od osnovice računa;   
+- Ili ako su računi mijenjani izvan Fluentisa.  
 
-### 3.6 Extra data
+### 4.2 Trgovački predstavnici/Rabati/Naknade
 
-import DocItemExtraData from './../../../import/sections/doc-item-extradata.md'
+#### Konačni popusti artikala 
 
-<DocItemExtraData />
+Mogu se unijeti samo konačna sniženja izražena u postotku, koja će se primijeniti na ukupni iznos dokumenta. 
 
-### 3.7 Documenti allegati
+Sniženja unesena u ovom dijelu izračunavaju se i prikazuju za svaki artikl u dokumentu, u *kartici Artikli > kartici Sniženja/Cjenici*.
 
-import DocAttachDocument from './../../../import/sections/doc-attach-document.md'
+**Vrsta/Opis sniženja**: omogućuje odabir vrsta popusta (predefinirane u *Vrstama sniženja*), dodjeljujući vrsti prioritet primjene popusta i određujući je li popust na osnovicu ili se kumulativno primjenjuje s prethodno primijenjenim popustima.  
+**Prioritet**: predstavlja prioritet primjene popusta; sortiranje se vrši uzlazno.  
+**Cijena prije sniženja**: određuje da li se popust izračunava na (*cijena x količina*) - (*prethodno izračunati popusti*) ili (*cijena x količina*).
+**Vrijednost**: numerička vrijednost završnog popusta koji se primjenjuje.  
 
-<DocAttachDocument />
+#### Troškovi/Popusti
 
-### 3.8 Sezione valori
+Prikazani su troškovi uneseni u šifarnik kontakta, u kartici *Troškovi/Sniženja*.
 
-import SalesValuesSection from './../../../import/sections/item-values-section.md'
+Također postoji mogućnost unosa troškova koji se odnose samo na trenutni dokument. 
 
-<SalesValuesSection />
+**Vrsta/Opis**: omogućuje odabir vrsta troškova (predefiniranih u Vrstama troškova), dodjeljujući vrsti postotak troškova koji se primjenjuje.   
+**Postotak/Vrijednost**: polje koje određuje treba li se troškovi izračunati postotkom ili unaprijed određenom novčanom vrijednošću.   
+**Postotak**: numerička vrijednost postotka troškova. 
 
-## **4. Riepiloghi**
+#### Ostala polja
 
-Nelle diverse sezioni di questo tab sono presentate le informazioni principali dell'intero documento e alcuni pulsanti specifici.
+**Završne napomene**: opisno polje koje korisnik može popuniti uz  *Pomoć za šifrirane napomene*.
 
-### 4.1 IVA/Scadenze
+### 4.3 Ukupni iznos dokumenta 
 
-#### Riepiloghi IVA
+**Iznos stavki bez popusta**: predstavlja zbroj vrijednosti svih artikala; 
 
-Viene proposto il riepilogo IVA del documento, per ogni codice IVA.
+**Zaduženje**: predstavlja vrijednost eventualne akontacije primljene za dokument;  
 
-#### Riepilogo scadenze
+**Poklonjeni iznos**: predstavlja iznos artikala tipa poklona unesenih u kartici *Artikli*. 
 
-import SummariesDueDate from './../../../import/sections/summaries-due-date.md'
+**Ukupni primjenjeni rabati**: predstavlja ukupnu vrijednost primijenjenih popusta na artikle, ali bez konačnih popusta. 
 
-<SummariesDueDate />
+**Neto iznos artikala**: *Bruto iznos artikala - Ukupni primijenjeni popusti*;  
 
-Generalmente le scadenze si ricalcolano se viene modificato il pagamento in testata del documento. Le casistiche nelle quali non vengono aggiornate le scadenze, se modifico il pagamento in testata, sono le seguenti:      
--	Quando la fattura ha il link SDI ed ha stato diverso da NotExamined, Controlled, Canceled, Excluded 
--	Quando c’è almeno una scadenza con il flag ‘Modifica manuale’ attivo 
--	Quando la fattura ha il collegamento con uno o più Effetti oppure è collegata con una riga FSAdvanceInvoiceMaturity
--	Quando c’è lo sconto nella scadenza che però non proviene dal pagamento
--	Quando la somma dell’Importo nella griglia Pagamenti è maggiore dell’Imponibile della fattura
--	Oppure se le fatture sono state modificate fuori da Fluentis
+**Ukupno konačnih rabata**: predstavlja vrijednost konačnih popusta izraženih u postotku na bruto iznos artikala;   
 
-In questi casi è necessario cliccare il bottone della barra degli strumenti 'Ricalcola e raggruppa scadenze'.    
+**Neto iznos s primijenjenim konačnim popustima**: *Neto iznos artikala - Ukupni primijenjeni konačni popusti*;  
 
+**Neregistrirani troškovi**: predstavlja vrijednost troškova unesenih u prethodnoj kartici kao artikli *Vrste troškova*;   
 
-### 4.2 Agenti/Sconti/Spese
+**Troškovi naplate**: predstavlja zbroj troškova naplate unesenih u kartici *Troškovi*;  
 
-#### Sconti finali articoli
+**Trošak ovjere**: predstavlja zbroj troškova pečata unesenih u kartici *Troškovi*;     
 
-import SummariesFinalDiscount from './../../../import/sections/summaries-final-discount.md'
+**Trošak dokumentacije**: predstavlja vrijednost troškova unesenih u kartici *Troškovi*; 
 
-<SummariesFinalDiscount />
+**Osnovica**: *Neto iznos artikala - Konačni popusti + Ukupni nepodmireni troškovi + Ukupni dokumentirani troškovi*;
 
-#### Spese/Sconti
+**PDV**: predstavlja zbroj vrijednosti sadržanih u sažecima PDV-a; 
 
-import SummariesExpenses from './../../../import/sections/summaries-expenses.md'
+**Ukupno**: *Osnovica + PDV*.
 
-<SummariesExpenses />
+## **5. Prijevoz**
 
-#### Altri campi 
+**Volumen**: prikazuje se ukupni volumen koji je rezultat zbroja volumena artikla (vrijednost se preuzima iz *Šifarnika artikla > Težine/dimenzije*), kada se jedinica mjere volumena artikla podudara s onom unesenom u parametrima računa. Razmatraju se samo artikli koji imaju ovaj polje ispunjeno;
 
-**Note finali**: è un campo libero che può essere compilato dall'utente con l'ausilio del 'Help note codificate'.
+**Neto težina**: prikazuje se ukupna neto težina koja je rezultat zbroja težina artikala (vrijednost se preuzima iz *Šifarnika artikla > Težine/dimenzije*), kada se jedinica mjere težine artikala podudara s onom unesenom u parametrima računa. Razmatraju se samo artikli koji imaju ovaj polje ispunjeno;
 
-### 4.3 Totali documento
+**Bruto težina**: prikazuje se ukupna bruto težina koja je rezultat zbroja težina artikala (vrijednost se preuzima iz *Šifarnika artikla > Težine/dimenzije*), kada se jedinica mjere težine artikala podudara s onom unesenom u parametrima računa. Razmatraju se samo artikli koji imaju ovaj polje ispunjeno;
 
-import SummariesDocumentTotal from './../../../import/sections/summaries-document-total.md'
+**Broj paketa**: prikazuje se broj paketa, na temelju podataka unesenih u šifarniku artikala, u kartici Težine/dimenzije, u poljima *Artikli prisutni u paketu* ili *paket za oblikovanje artikla*. Razmatraju se samo artikli koji imaju ovo polje ispunjeno.
 
-<SummariesDocumentTotal />
+**Prijevoz napravio**: automatski se prikazuje *Prijevoz putem* određenog kanala prisutan u registru kupca.
 
-- **Sconto totale percentuale**: è possibile inserire un ulteriore sconto finale in percentuale; inserendo questo campo si popola automaticamente anche il successivo.     
-
-- **Sconto totale valore**: è possibile inserire uno sconto finale in valore.      
-
-- **Arrotondamento**: è presente un ulteriore campo per arrotondare in eccesso il documento.     
-
-- **Totale a pagare**: viene infine riportato il totale definitivo ottenuto.     
-
-## **5. Trasporto**
-
-Se la fattura è accompagnatoria è necessaro compilare il tab Trasporto.       
-I dati presenti sono: 
-
-- **Destinatario**: viene proposto il destinatario di default inserito in anagrafica cliente; se non presente, viene preso l'indirizzo del cliente.    
-- **Destinazione**: viene proposta la destinazione di default del destinatario, see inserita in anagrafica cliente.        
-- **Numero Tracking**: campo libero. 
-- **Volume**: viene proposto il volume cumulativo, risultato dalla somma dei volumi degli articoli (il valore viene ripreso dall'Anagrafica articolo > tab Pesi/Dimensioni), quando l'unità di misura del volume degli articoli corrisponde a quella inserita nei parametri della fattura. 
-- **Peso netto**: viene proposto il peso netto cumulativo, risultato dalla somma dei pesi degli articoli (il valore viene ripreso dall'Anagrafica articolo > tab Pesi/Dimensioni), quando l'unità di misura del peso degli articoli corrisponde a quello inserito nei parametri della fattura. 
-- **Peso lordo**: viene proposto il peso lordo cumulativo, risultato dalla somma dei pesi degli articoli (il valore viene ripreso dall'Anagrafica articolo > tab Pesi/Dimensioni), quando l'unità di misura del peso degli articoli corrisponde a quella inserita nei parametri della fattura.     
-- **Aspetto esteriore dei beni**: combo box che rimanda all'omonima tabella.     
-- **Colli**: viene proposto il numero dei colli, sulla base dei dati inseriti nell'*Anagrafica articolo > tab Pesi/Dimensioni*, nei campi *Articoli presenti in un collo* oppure *Colli per formare l'articolo*. Sono presi in considerazione solo gli articoli che hanno questo campo compilato.     
-- **Valori modificati manualmente**: con questo flag rendiamo possibile la modifica dei campi Volume, Peso netto, Peso lordo e Colli, che altrimenti riportano i dati da anagrafica articolo senza possibilità di modifica.     
-- **Trasporto**: è necessario selezionare la figura che si occuperà del trasporto, mettendo il flag in Mittente, Destinatario o Vettore; in base alla selezione, la sezione sottostante cambierà; se il trasporto è a carico del Mittente sarà possibile inserire Targa automezzo, Rimorchio, Data e Ora di Inizio trasporto; se è a carico del Destinatario sarà possibile inserire Targa automezzo, Rimorchio, Data e Ora di Inizio trasporto; se è a carico del Vettore invece i campi disponibili saranno Anagrafica contabile del Vettore, Targa, Rimorchio, Data e Ora trasporto, eventuale Committente, Caricatore, Proprietario, Luogo carico. 
-
-## **6. Documenti collegati**
-
-In questa tab è possibile consultare i documenti allegati.
-Per allegare i documenti è possibile procedere in due modi:
-- utilizzando il pulsante della barra degli strumenti **Documenti** si può scegliere se allegare un documento già codificato in Fluentis o se creare un nuovo Documento da allegare.       
-- utilizzando direttamente nella griglia il tasto destro e selezionando *Allega file* si va in creazione di un nuovo Documento da allegare.     
+Napomena: Za ponovno izračunavanje vrijednosti prijevoza u sažetku dokumenta potrebno je postaviti oznaku **Ponovno izračunavanje prijevoza** u parametrima povezanog dokumenta.

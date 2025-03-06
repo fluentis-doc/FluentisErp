@@ -1,13 +1,18 @@
 ---
-title: Ricerca POS
+title: Traži POS
 sidebar_position: 1
 ---
 
-La form si apre tramite il percorso **Vendite > POS > Ricerca POS**.
+Obrazac se otvara putem putanje  **Prodaja > POS > Traži POS**.
 
-Per la spiegazione delle funzionalità comuni ai documenti di vendita consultare la sezione [Vendite](/docs/sales/sales-intro).
+Omogućuje pretraživanje svih dokumenata s ciljem pregleda, izmjene ili eventualnog brisanja ili unošenja novog dokumenta; prozor se sastoji od područja filtra i rezultatne mreže.
 
-### Pulsanti specifici  
+Nakon postavljanja svih željenih filtera, dovoljno je kliknuti na gumb **Traži** koji se nalazi na gornjem *izborniku* kako bi se rezultati prikazali unutar prikaza rezultata.
 
-> - **Creazione DDT**: la procedura permette di creare un DDT direttamente da uno o più POS; uscirà un pop up nel quale inserire il Tipo DDT da creare e il cliente al quale intestare il documento.     
-> - **Creazione fatture**: la procedura permette di creare una fattura direttamente da uno o più POS; uscirà un pop up nel quale inserire il Tipo fattura da creare e il cliente al quale intestare il documento.     
+Da biste otvorili detalje dokumenta, dovoljno je odabrati ga i dvaput kliknuti mišem ili kliknuti na gumb **Izmijeni** (omogućuje ulazak u detalje i njihovo uređivanje) ili na gumb **Pregled** (omogućuje ulazak u detalje i njihovo pregledavanje, ali bez mogućnosti uređivanja).
+
+*Vidi također*:     
+[Zajedničke funkcionalnosti, gumbe i polja](/docs/guide/common)              
+Dodavanje novih polja u obrasce pretraživanja    
+
+Također, iz ovog obrasca moguće je [Kreirati novi POS](/docs/sales/pos/insert-pos/pos), klikom na gumb **Novo**.
