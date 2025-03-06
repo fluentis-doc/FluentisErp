@@ -1,24 +1,24 @@
 ---
-title: Marchi automezzi
+title: Motorvehicle Brands
 sidebar_position: 56
 ---
 
-La tabella si trova sul percorso **Tabelle > Logistica > Marchi automezzi**.
+The table is located at **Tables > Logistics > Motorvehicle Brands**.
 
-In questa tabella è possibile codificare le *Marchi automezzi* che potranno essere selezionati nell'[Angrafica automezzi](/docs/logistics/motorvehicles/motorvehicle).
+In this table, it is possible to code the *Motorvehicle Brands* that can be selected in the [Motorvehicle Registry](/docs/logistics/motorvehicles/motorvehicle).
 
-La tabella consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+The table allows for the insertion of new records or for searching existing ones to view, modify, or delete them.
 
-**Ricerca Marchi automezzi**
+**Search Motorvehicle Brands**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+The form consists of a filter area and a results area. Once all desired filters are set, simply click the **Search** button to view the results within the results grid.
 
-**Inserimento Marchi automezzi**
+**Insert Motorvehicle Brands**
 
-Per poter inserire nuovi è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.     
-Per il nuovo record si devono inserire almeno i campi obbligatori richiesti dal programma: il **Codice** e la **Descrizione**.
-Con il pulsante **Cancella** è possibile eliminare il record selezionata.
+To insert new records, you need to click in the grid on the first empty row or press the **New** button.     
+For the new record, you must enter at least the mandatory fields required by the program: **Code** and **Description**. 
+With the **Cancel** button, it is possible to delete the selected record.
 
-Inoltre, è possibile indicare nella tabella sottostante una descrizione dei vari modelli di mezzi di quel marchio.
+Additionally, it is possible to indicate in the table below a description of the various models of vehicles of that brand.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+For everything not detailed in this document regarding the common operation of forms, please refer to the following link [Custom features, buttons, and fields](/docs/guide/common).

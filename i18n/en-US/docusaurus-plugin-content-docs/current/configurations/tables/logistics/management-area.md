@@ -1,20 +1,20 @@
 ---
-title: Area Gestionale
+title: Management Area 
 sidebar_position: 2
 ---
 
-La tabella si trova sul percorso **Tabelle > Logistica > Area Gestionale** e permette di gestire la codifica delle diverse *Aree Gestionali*.
+The table is located in the path **Tables > Logistics > Management Area** and allows you to manage the coding of different *Management Areas*.
 
-Consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+It enables the insertion of new records or the search for existing ones to view, modify, or delete them.
 
-Un esempio di utilizzo dell'*Area gestionale* lo troviamo nel [Calcolo costo](/docs/controlling/cost-calculation/cost/) o nella [Valorizzazione Distinta Base](/docs/erp-home/registers/production/bill-of-materials/assemblies-valorization/), in cui è possibile effettuare una *Valorizzazione da area gestionale*.
+An example of the use of the *Management Area* can be found in the [Cost Calculation](/docs/controlling/cost-calculation/cost/) or in the [Bill of Materials Valorization](/docs/erp-home/registers/production/bill-of-materials/assemblies-valorization/), where it is possible to perform a *Valorization from management area*.
 
-**Inserimento Area Gestionale**
+**Insert Management Area**
 
-La tabella è composta da due griglie: nella prima si inseriscono **Codice** e **Descrizione**; nella seconda è possibile imputare per ciascuna *Area gestionale* una serie di dati quali la *Categoria fiscale* o il *Tipo costo*. La tabella [Tipo costo](/docs/configurations/tables/logistics/cost-type/) può contenere a sua volta svariate tipologie di costo.
+The table consists of two grids: in the first, you enter **Code** and **Description**; in the second, you can enter a series of data for each *Management Area* such as *Fiscal Category* or *Cost Type*. The table [Cost Type](/docs/configurations/tables/logistics/cost-type/) can in turn contain various types of costs.
 
-Per poter inserire nuove codifiche nella griglia superiore è necessario cliccare sulla prima riga vuota oppure premere il pulsante **Nuovo**.
+To insert new codings in the upper grid, you need to click on the first empty row or press the **New** button.
 
-Per poter inserire nuove codifiche nella griglia inferiore è necessario selezionare prima l'area gestionale nella griglia superiore e successivamente inserire i dati richiesti sulla sulla prima riga vuota.
+To insert new codings in the lower grid, you must first select the management area in the upper grid and then enter the required data in the first empty row.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+For everything not detailed in this document regarding the common operation of forms, please refer to the following link [Custom Features, Buttons, and Fields](/docs/guide/common).

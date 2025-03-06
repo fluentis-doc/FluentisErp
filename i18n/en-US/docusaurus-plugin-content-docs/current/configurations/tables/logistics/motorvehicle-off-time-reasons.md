@@ -1,29 +1,29 @@
 ---
-title: Motivi di fermo autoveicolo
+title: Motorvehicle Off Time Reasons
 sidebar_position: 58
 ---
 
-La tabella si trova sul percorso **Tabelle > Logistica > Motivi di fermo autoveicolo**.
+The table can be found along the path **Tables > Logistics > Motorvehicle Off Time Reasons**.
 
-In questa tabella è possibile codificare i *Motivi di fermo autoveicolo*.
+In this table, it is possible to encode the *Motorvehicle Off Time Reasons*.
 
-La tabella consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+The table allows for the insertion of new records or searching for existing ones to view, modify, or delete them.
 
-**Ricerca Motivi di fermo autoveicolo**
+**Search Motorvehicle Off Time Reasons**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+The form consists of a filter area and a results area. Once all desired filters are set, simply click on the **Search** button to view the results within the results grid.
 
-**Inserimento Motivi di fermo autoveicolo**
+**Insert Motorvehicle Off Time Reasons**
 
-Per poter inserire nuovi è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.     
-Per il nuovo record si devono inserire almeno i campi obbligatori richiesti dal programma: il **Codice** e la **Descrizione**.
-Con il pulsante **Cancella** è possibile eliminare il record selezionata.
+To insert new records, you must click in the grid on the first empty row or press the **New** button.     
+For the new record, you must enter at least the mandatory fields required by the program: **Code** and **Description**.  
+With the **Cancel** button, you can delete the selected record.
 
-*Campi specifici*: 
+*Specific fields*: 
 
-> **Codice**: è il codice del *Motivo di fermo autoveicolo*.   
-> **Descrizione**: è la descrizione del *Motivo di fermo autoveicolo*.   
-> **Colore di sfondo**: permette di definire il colore di sfondo dell'impegno del mezzo presente nel [Calendario](/docs/logistics/shipping/calendar).      
-> **Colore di primo piano**: permette di definire il colore del testo dell'impegno del mezzo presente nel [Calendario](/docs/logistics/shipping/calendar).     
+> **Code**: this is the code of the *Motorvehicle Off Time Reasons*.  
+> **Description**: this is the description of the *Motorvehicle Off Time Reasons*.  
+> **Background Color**: allows you to define the background color of the motorvehicle's commitment present in the [Calendar](/docs/logistics/shipping/calendar).      
+> **Foreground Color**: allows you to define the text color of the motorvehicle's commitment present in the [Calendar](/docs/logistics/shipping/calendar).      
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+For everything that is not detailed in this document on the common functioning of forms, please refer to the following link [Custom Features, Buttons, and Fields](/docs/guide/common).

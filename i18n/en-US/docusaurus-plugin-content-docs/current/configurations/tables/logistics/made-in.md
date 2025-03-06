@@ -1,18 +1,18 @@
 ---
-title: Made in
+title: Made In 
 sidebar_position: 43
 ---
 
-La tabella permette di gestire la codifica delle diverse voci di *Made in*, utilizzate per indicare dove è stato prodotto l'articolo.
+The table allows for the management of the coding of different *Made in* entries, used to indicate where the item was produced.
 
-Consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+It allows for the insertion of new records or searching for existing ones to view, modify, or delete them.
 
-**Ricerca Made in**
+**Search Made In**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+The form consists of a filter area and a results area. Once all desired filters are set, simply click the **Search** button to display the results within the results grid.
 
-**Inserimento Made in**
+**Insert Made In**
 
-Per poter inserire nuove codifiche è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.
+To insert new codes, you need to click on the first empty row in the grid or press the **New** button.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+For everything that is not detailed in this document about the common functionality of forms, please refer to the following link [Custom features, Buttons, and Fields](/docs/guide/common).

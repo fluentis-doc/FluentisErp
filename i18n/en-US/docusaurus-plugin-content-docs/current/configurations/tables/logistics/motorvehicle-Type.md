@@ -1,22 +1,22 @@
 ---
-title: Tipi automezzi
+title: Motorvehicle Types 
 sidebar_position: 54
 ---
 
-La tabella si trova sul percorso **Tabelle > Logistica > Tipi automezzi**.
+The table can be found at the path **Tables > Logistics > Motorvehicle Types**.
 
-In questa tabella è possibile codificare le *Tipi automezzi* che potranno essere selezionati nell'[Angrafica automezzi](/docs/logistics/motorvehicles/motorvehicle).
+In this table, it is possible to code the *Motorvehicle Types* that can be selected in the [Motorvehicle Registry](/docs/logistics/motorvehicles/motorvehicle).
 
-La tabella consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+The table allows you to insert new records or search for existing ones to view, modify, or delete them.
 
-**Ricerca Tipi automezzi**
+**Search Motorvehicle Types**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+The form consists of a filter area and a result area. Once all the desired filters have been set, simply click the **Search** button to display the results within the result grid.
 
-**Inserimento Tipi automezzi**
+**Insert Motorvehicle Types**
 
-Per poter inserire nuovi è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.      
-Per il nuovo record si devono inserire almeno i campi obbligatori richiesti dal programma: il **Codice** e la **Descrizione**.        
-Con il pulsante **Cancella** è possibile eliminare il record selezionata.
+To insert new ones, you need to click on the first empty row in the grid or press the **New** button.       
+For the new record, at least the required mandatory fields must be filled in: **Code** and **Description**.        
+With the **Cancel** button, you can remove the selected record.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+For everything not detailed in this document about the common functionality of forms, please refer to the following link [Custom Features, Buttons, and Fields](/docs/guide/common).

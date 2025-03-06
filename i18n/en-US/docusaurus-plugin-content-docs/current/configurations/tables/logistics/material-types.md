@@ -1,32 +1,32 @@
 ---
-title: Tipi materiale
+title: Material Types 
 sidebar_position: 6
 ---
 
-La tabella si trova sul percorso **Tabelle > Logistica > Tipi materiale**.
+The table is located at **Tables > Logistics > Material Types**.
 
-In questa tabella è possibile gestire la codifica dei diversi *Tipi materiale* di imballaggio usati nella [Gestione Conai](/docs/sales/sales-flow/conai).
+In this table, it is possible to manage the coding of the various *Material Types* of packaging used in [Recycle Management](/docs/sales/sales-flow/conai).
 
-Consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+It allows you to insert new records or search for existing ones to view, modify, or delete them.
 
-**Ricerca Tipi materiale**
+**Search Material Types**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+The form consists of a filter area and a results area. Once all desired filters are set, simply click the **Search** button to display the results in the results grid.
 
-**Inserimento Tipi materiale**
+**Insert Material Types**
 
-Per poter inserire nuove codifiche è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.  
+To insert new codings, you need to click on the first empty row in the grid or press the **New** button.  
 
-Nella griglia superiore vengono codificati i *Tipi materiale*. I campi obbligatori richiesti dal programma sono il **Codice** e la **Descrizione**.  
+In the upper grid, the *Material Types* are coded. The mandatory fields required by the program are **Code** and **Description**.  
 
-*Campi specifici*: 
+*Specific fields*: 
 
-> **Codice materiale Conai**: codice alfanumerico che indica il tipo di materiale di cui è composto l'imballaggio (cioè Acciaio, Alluminio, Carta, Legno, Plastica, ecc.);     
-> **Classi articolo**: indica la [Classe](/docs/configurations/tables/logistics/item-class) a cui appartiene l'articolo;   
-> **Articolo per tassa di riciclo**: indica un codice articolo fittizio da utilizzare per l’inserimento della riga *Spesa Conai* in bolla/fattura (se non viene indicato un codice articolo, il materiale non sarà valido per la configurazione Conai negli articoli di vendita/acquisto);   
-> **Descrizione articolo**: indica la descrizione dell'*Articolo per tassa di riciclo*;    
-> **Note**: annotazioni libere.  
+> **Recycle material code**: alphanumeric code indicating the type of material that makes up the packaging (i.e., Steel, Aluminum, Paper, Wood, Plastic, etc.);     
+> **Item classes**: indicates the [Class](/docs/configurations/tables/logistics/item-class) to which the item belongs;   
+> **Item for recycle fee**: indicates a fictitious item code to be used for inserting the *Recycle Expense* line in the bill/invoice (if no item code is indicated, the material will not be valid for Recycle configuration in sales/purchase items);   
+> **Item description**: indicates the description of the *Item for recycle fee*;    
+> **Notes**: free annotations.  
 
-Nella griglia inferiore è possibile definire i *Costi di riciclo* associati a ciascun materiale inserito nella tabella superiore, ovvero le tariffe da applicare all’interno dei vari *range di date*, con l’**Unità di misura** da applicare: questa deve essere coerente con l’unità di misura che si utilizzerà all’interno degli articoli di vendita e degli articoli fittizi Conai.
+In the lower grid, you can define the *Recycle Costs* associated with each material entered in the upper table, that is, the rates to be applied within the various *date ranges*, with the **Unit of measure** to apply: this must be consistent with the unit of measure that will be used within the sales items and the fictitious Conai items.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento della *Gestione Conai* in Fluentis fare riferimento al seguente link [Gestione Conai](/docs/sales/sales-flow/conai).
+For everything not detailed in this document on the operation of *Recycle Management* in Fluentis, please refer to the following link [Recycle Management](/docs/sales/sales-flow/conai).

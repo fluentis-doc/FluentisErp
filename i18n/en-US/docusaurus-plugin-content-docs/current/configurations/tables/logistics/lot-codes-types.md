@@ -1,79 +1,79 @@
 ---
-title: Tipo codice lotto
+title: Batch Code Type 
 sidebar_position: 26
 ---
 
-:::important A cosa serve
-La tabella Tipi Codice Lotto di Fluentis rappresenta uno strumento fondamentale per la personalizzazione e la gestione dei codici lotto utilizzati nella logistica e nella tracciabilità dei prodotti. Questa tabella consente di definire vari tipi di codice lotto in base alle specifiche esigenze aziendali, con l'obiettivo di ottimizzare le operazioni di gestione dei materiali e garantire una corretta identificazione dei lotti.
+:::important What it is for
+The Batch Code Types table in Fluentis represents a fundamental tool for the customization and management of batch codes used in logistics and product traceability. This table allows for defining various batch code types based on specific business needs, with the goal of optimizing material management operations and ensuring proper identification of batches.
 
-All'interno di questa tabella, è possibile inserire nuovi codici lotto, specificando sia un codice identificativo che una descrizione associata. Inoltre, è possibile configurare parametri come il valore iniziale del numero progressivo e la gestione dei caratteri alfabetici, permettendo una maggiore flessibilità nella composizione dei codici lotto. È importante notare che ogni tipo di codice deve essere associato all'anagrafica articolo per garantire una corretta integrazione durante le procedure di creazione automatica del lotto.
+Within this table, it is possible to enter new batch codes, specifying both an identifying code and an associated description. Additionally, parameters such as the initial value of the progressive number and the management of alphabetical characters can be configured, allowing for greater flexibility in the composition of batch codes. It is important to note that each code type must be associated with the item registry to ensure proper integration during the automated batch code creation processes.
 
-La configurazione di questi codici lotto non solo facilita il controllo e la tracciabilità, ma si rivela essenziale anche in contesti di gestione multi-magazzino, dove la rintracciabilità delle giacenze diventa fondamentale. Gli utenti possono così navigare attraverso diverse sezioni della tabella per definire in dettaglio le caratteristiche, le associazioni e i progressivi dei lotti, contribuendo a una gestione più efficiente e accurata dei materiali all'interno dell'azienda.
+Configuring these batch codes not only facilitates control and traceability but is also essential in multi-warehouse management contexts, where inventory traceability becomes crucial. Users can navigate through different sections of the table to detail the characteristics, associations, and progressives of the batches, contributing to more efficient and accurate material management within the company.
 :::
 
-La tabella si trova sul percorso **Tabelle > Logistica > Tipo codice lotto**.
+The table is located on the path **Tables > Logistics > Batch Code Type**.
 
-In questa tabella è possibile codificare i *Tipi di codice lotto* personalizzandoli in base alle esigenze.
+In this table, it is possible to code *Batch Code Types* customizing them according to needs.
 
-**Ricerca Codici lotto**
+**Search Batch Codes**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati nell'aria di risultato.
+The form consists of a filter area and a results area. Once the desired filters are set, simply click the **Search** button to display the results in the results area.
 
-**Inserimento Codici lotto**
+**Insert Batch Codes**
 
-Per poter inserire nuove codifiche è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**. 
+To enter new codes, you must click on the first empty row in the grid or press the **New** button. 
 
-È necessario inserire **Codice** e **Descrizione** del tipo codice lotto, abilitare o meno il flag **Riempire valore progressivo** per riempire i valori mancanti nella numerazione, ed inserire il valore iniziale del progressivo numerico nel campo **Inizia valore progressivo** e quello alfabetico nel campo **Inizio valore carattere**. Ovviamente, il primo sarà il valore iniziale del **Numero progressivo**, mentre il secondo sarà il valore iniziale usato per i **Caratteri alfabetici**.
+You need to enter the **Code** and **Description** of the batch code type, enable or disable the **Fill progressive value** flag to fill in missing values in the numeration, and enter the initial value of the numeric progressive in the **Start progressive value** field and the alphabetical value in the **Start character value** field. Obviously, the first will be the initial value of the **Progressive Number**, while the second will be the initial value used for **Alphabetical Characters**.
 
-Il **Tipo codice lotto** deve poi essere agganciato all'*Anagrafica articolo* nell'apposito ed omonimo campo situato nel tab [Lotti e serial number](/docs/erp-home/registers/items/create-new-items/item-registry/lots-and-serial-number), in modo che nelle procedure che creano automaticamente il codice lotto per l'articolo in questione il lotto stesso venga generato secondo le regole impostate qui.
+The **Batch Code Type** must then be linked to the *Item Registry* in the appropriate and homonymous field located in the [Batches and Serial Number](/docs/erp-home/registers/items/create-new-items/item-registry/lots-and-serial-number) tab, so that in the procedures that automatically create the batch code for the item in question, the batch itself is generated according to the rules set here.
 
-Al di sotto della tabella principale, sono presenti tre tab:   
-- **Dettagli tipo codice lotto**
-- **Dettagli tipo codice lotto definizione progressivo**  
-- **Dettagli tipo codice lotto dei valori chiave progressivi**    
+Below the main table, there are three tabs:   
+- **Batch Code Type Details**
+- **Batch Code Type Progressive Definition Details**  
+- **Batch Code Type Progressive Key Values Details**    
 
-**Dettagli tipo codice lotto**
-nella tabella *Codice predefinito*, sono presenti tutti i valori che è possibile utilizzare per la composizione del lotto che stiamo creando, che nello specifico sono:
+**Batch Code Type Details**
+In the *Batch Code Default* table, all the values that can be used for the composition of the batch being created are present, specifically:
 
-> *Classe*: riporta la classe dell'articolo;    
-> *Matricola*: riporta il codice articolo;     
-> *Caratteristica*: riporta la caratteristica dell'anagrafica articolo;     
-> *Cat. Merceologica*: riporta la categoria merceologica dell'anagrafica articolo;    
-> *Tipo Articolo*: riporta il tipo articolo dell'anagrafica articolo;    
-> *Variante*: riporta la variante dell'articolo;    
-> *Numero progressivo*: è un progressivo di tipo numerico;          
-> *Caratteri alfabetici*: è un progressivo di tipo alfabetico, al contrario del *Numero progressivo* che è numerico;        
-> *Giorno Data Inserimento*: riporta il giorno della data inserimento;    
-> *Mese Data Inserimento*: riporta il mese della data inserimento;    
-> *Anno Data Inserimento*: riporta l'anno della data inserimento;    
-> *Giorno Data Scadenza*: riporta il giorno della data di scadenza;    
-> *Mese Data Scadenza*: riporta il mese della data di scadenza;    
-> *Anno Data Scadenza*: riporta l'anno della data di scadenza;     
-> *Tipo Lotto*: riporta il tipo lotto dell'articolo;     
-> *Associazione Anno Lettera*: riporta il valore associato all'anno nella tabella [Associazione anno - lettera](/docs/configurations/tables/general-settings/year-letter-association);    
-> *Associazione Mese Lettera*: riporta il valore associato al mese nella tabella [Associazione mese - lettera](/docs/configurations/tables/general-settings/month-letter-association);    
-> *Nomignolo fornitore*: riporta il nomignolo presente in anagrafica del fornitore;          
-> *Numero Bolla Acquisto*: riporta il numero della bolla di acquisto;     
-> *Numero Fattura Acquisto*: riporta il numero della fattura di acquisto;    
-> *Lotto Fornitore*: riporta il numero del lotto fornitore.    
+> *Class*: indicates the class of the item;    
+> *Code*: indicates the item code;     
+> *Characteristic*: indicates the characteristic of the item registry;     
+> *Product cat.*: indicates the merchandise category of the item registry;    
+> *Item Type*: indicates the item type of the item registry;    
+> *Variant*: indicates the variant of the item;    
+> *Progressive Number*: is a numerical progressive;          
+> *Alphabetical Characters*: is an alphabetical progressive, unlike the *Progressive Number* which is numeric;        
+> *Day of Insert Date*: indicates the day of the insert date;    
+> *Month of Insert Date*: indicates the month of the insert date;    
+> *Year of Insert Date*: indicates the year of the insert date;    
+> *Day of Expiry Date*: indicates the day of the expiry date;    
+> *Month of Expiry Date*: indicates the month of the expiry date;    
+> *Year of Expiry Date*: indicates the year of the expiry date;     
+> *Batch Type*: indicates the batch type of the item;     
+> *Year-Letter Association*: indicates the value associated with the year in the [Year-Letter Association](/docs/configurations/tables/general-settings/year-letter-association) table;    
+> *Month-Letter Association*: indicates the value associated with the month in the [Month-Letter Association](/docs/configurations/tables/general-settings/month-letter-association) table;    
+> *Supplier Code Name*: indicates the code name present in the supplier registry;          
+> *Purchase Invoice Number*: indicates the purchase invoice number;  
+> *Delivery Note Number*: indicates the purchase receipt number;     
+> *Vendor Batch*: indicates the vendor batch number.    
 
-Ognuno di questi, a seconda delle esigenze, deve essere poi spostato nella tabella *Dettagli tipo codice lotto* tramite l'uso degli appositi pulsanti presenti nella ribbon bar. 
-Per ciascuna voce aggiunta, è possibile definire la *Lunghezza* e il *Carattere di riempimento*.
+Each of these, depending on the needs, must then be moved to the *Batch Code Type Details* table using the appropriate buttons present in the ribbon bar.
+For each item added, it is possible to define the *Length* and the *Fill Character*.
 
-*Pulsanti specifici*:
-> **Sposta: Predefinito -> Dettaglio**: permette di aggiungere una delle voci presenti nella tabella *Codice predefinito* alla tabella *Dettaglio tipo codice lotto*. Questo pulsante si abilita solamente dopo aver selezionato una riga nella tabella *Codice predefinito* del tab *Dettaglio tipo codice lotto*;          
-> **Sposta: Dettaglio -> Predefinito**: permette di rimuovere una delle voci presenti nella tabella *Dettaglio tipo codice lotto* riportandola nella tabella *Codice predefinito*. Questo pulsante si abilita solamente dopo aver selezionato una riga nella tabella *Dettaglio tipo codice lotto* del tab *Dettaglio tipo codice lotto*;               
+*Specific Buttons*:
+> **Move: Default -> Detail**: allows adding one of the items present in the *Default Code* table to the *Batch Code Type Detail* table. This button is enabled only after selecting a row in the *Default Code* table of the *Batch Code Type Detail* tab;          
+> **Move: Detail -> Default**: allows removing one of the items present in the *Batch Code Type Detail* table, returning it to the *Default Code* table. This button is enabled only after selecting a row in the *Batch Code Type Detail* table of the *Batch Code Type Detail* tab;               
 
-**Dettagli tipo codice lotto definizione progressivo** 
+**Batch Code Type Progressive Definition Details** 
 
-In questo tab è possibile definire quali delle voci presenti nella tabella *Codice predefinito* debbano comporre la radice del codice lotto, quindi quella parte del codice che rimarrà fissa mentre varierà il progressivo. In questo caso non è possibile selezionare le voci *Numero progressivo* e *Caratteri alfabetici* perchè essendo dei progressivi variano continuamente, mentre è possibile selezionare tutte le altre voci.
+In this tab, it is possible to define which items present in the *Default Code* table should make up the root of the batch code, meaning that part of the code that will remain fixed while the progressive will vary. In this case, it is not possible to select the items *Progressive Number* and *Alphabetical Characters* because being progressives they vary continuously, while all other items can be selected.
 
-*Pulsanti specifici*:
-> **Sposta: Predefinito -> Definizione progressivo**: permette di aggiungere una delle voci presenti nella tabella *Codice predefinito* alla tabella *Definizione progressivo*. Questo pulsante si abilita solamente dopo aver selezionato una riga nella tabella *Codice predefinito* del tab *Dettaglio tipo codice lotto definizione progressivo*;          
-> **Sposta: Definizione progressivo -> Predefinito**: permette di rimuovere una delle voci presenti nella tabella *Definizione progressivo* riportandola nella tabella *Codice predefinito*. Questo pulsante si abilita solamente dopo aver selezionato una riga nella tabella *Definizione progressivo* del tab *Dettaglio tipo codice lotto definizione progressivo*;  
+*Specific Buttons*:
+> **Move: Default -> Progressive Definition**: allows adding one of the items present in the *Default Code* table to the *Progressive Definition* table. This button is enabled only after selecting a row in the *Default Code* table of the *Batch Code Type Progressive Definition Details* tab;          
+> **Move: Progressive Definition -> Default**: allows removing one of the items present in the *Progressive Definition* table, returning it to the *Default Code* table. This button is enabled only after selecting a row in the *Progressive Definition* table of the *Batch Code Type Progressive Definition Details* tab;  
 
-**Dettagli tipo codice lotto dei valori chiave progressivi**  
+**Batch Code Type Progressive Key Values Details**  
 
-In questa tab vengono visualizzati tutti i valori degli ultimi progressivi relativi ad ogni singola radice del codice.
+In this tab, all the values of the latest progressives related to each individual root of the code are displayed.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+For anything not detailed in this document regarding the common functionality of forms, refer to the following link [Custom Features, Buttons, and Fields](/docs/guide/common).

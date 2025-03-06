@@ -1,34 +1,34 @@
 ---
-title: Tipi carburanti autoveicolo
+title: Motorvehicle Gas Types 
 sidebar_position: 55
 ---
 
-La tabella si trova sul percorso **Tabelle > Logistica > Tipi carburanti autoveicolo**.
+The table is located on the path **Tables > Logistics > Motorvehicle Gas Types**.
 
-In questa tabella è possibile codificare i *Tipi carburanti autoveicolo* che potranno essere selezionati nell'[Angrafica automezzi](/docs/logistics/motorvehicles/motorvehicle).
+In this table, it is possible to code the *Motorvehicle Gas Types* that can be selected in the [Motorvehicle Registry](/docs/logistics/motorvehicles/motorvehicle).
 
-La tabella consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+The table allows for inserting new records or searching for existing ones to view, modify, or delete them.
 
-**Ricerca Tipi carburanti autoveicolo**
+**Search Motorvehicle Gas Types**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+The form consists of a filter area and a results area. Once all desired filters are set, simply click the **Search** button to view the results within the results grid.
 
-**Inserimento Tipi carburanti autoveicolo**
+**Insert Motorvehicle Gas Types**
 
-Per poter inserire nuovi è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.     
-Per il nuovo record si deve inserire un solo campo obbligatorio richiesto dal programma: la **Descrizione**.         
-Inoltre, per ogni tipologia è possibile indicare se sia:
-- **Carburante a metano**
-- **Carburante diesel**
-- **Carburante ibrido**
-- **Carburante elettrico**
-- **Carburante a GPL**
-- **Carburante organico**
-- **Carburante benzina**
-- **Carburante ibrido/benzina**
-semplicemente attivando il relativo flag.
-Questi flag sono usati per identificare il tipo di combustibile usato dall'automezzo ai fini dell'ESG.
+To insert new entries, you need to click on the first empty row in the grid or press the **New** button.     
+For the new record, only one mandatory field is required by the program: **Description**.         
+Additionally, for each type, it is possible to indicate whether it is:
+- **CNG fuel**
+- **Diesel fuel**
+- **Hybrid fuel**
+- **Electric**
+- **GPL fuel**
+- **Organic fuel**
+- **Petrol**
+- **Hybrid/Petrol fuel** 
+by simply activating the corresponding flag.  
+These flags are used to identify the type of fuel used by the vehicle for ESG purposes.
 
-Con il pulsante **Cancella** è possibile eliminare il record selezionata.
+With the **Cancel** button, you can delete the selected record.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common). 
+For everything not detailed in this document regarding the common functionality of forms, please refer to the following link [Custom Features, Buttons, and Fields](/docs/guide/common).
