@@ -19,7 +19,7 @@ Fereastra se compune din trei secțiuni: una superioară cu lista cotelor TVA, u
 **Plafond**: parametrul definește care cote trebuie gestionate, ca majorare sau diminuare (în vânzări sau achiziții), la calcularea plafonului TVA;  
 **În declar. TVA**: parametrul definește care cote trebuie gestionate în declarația TVA;  
 **Non Intra**: parametrul definește cotele care, chiar dacă sunt utilizate în documente (în modulele facturi achiziții/vânzări) sau în înregistrări de tip intra-cee, nu sunt considerate. Este considerat la crearea automată a rezumatelor intrastat;  
-**Permite TVA 0 în RJ**: permite înregistrarea liniilor TVA cu valoare 0 atât în credit, cât și în debit în registrul jurnal. [Șablonul contabil](/docs/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates/attributes-detail) utilizat trebuie să prevadă același tip de autorizare a liniilor cu valoare 0;  
+**Permite TVA 0 în RJ**: permite înregistrarea liniilor TVA cu valoare 0 atât în credit, cât și în debit în registrul jurnal. [Șablonul contabil](/docs/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates) utilizat trebuie să prevadă același tip de autorizare a liniilor cu valoare 0;  
 **Nu în clienți/furnizori**: parametrul permite excluderea din lista clienți/furnizori a înregistrărilor TVA asociate acestei cote.  
 
 Secțiunea centrală permite definirea, pentru fiecare cotă TVA, a mai multor conturi analitice achiziții/vânzări care vor fi utilizate pentru fiecare ‘Tip contabilizare TVA' atribuit clientului/furnizorului (sau prevăzut implicit în parametrii contabili; utilizarea depinde și de setările specifice ale șabloanelor în contabilitatea generală).

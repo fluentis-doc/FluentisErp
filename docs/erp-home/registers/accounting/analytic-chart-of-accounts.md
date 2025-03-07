@@ -35,7 +35,7 @@ Nel caso in cui si intenda configurare manualmente fare riferimento alla check l
 ---
 
 ### Collegamento con altre tabelle
-La codifica del piano dei conti coinvolge il completamento di una serie di tabelle:  [Tipi conto](/docs/configurations/tables/finance/account-types) ,  [Anagrafiche contatti](/docs/erp-home/registers/contacts/registers-management), [Voce di spesa](/docs/configurations/tables/finance/charge-item), Tipi periodicità budget, Centri di costo, Centri di profitto, Divisioni, Scritture di rettifica/integrazione, Scritture da diff. budget,  [Causali automatiche](/docs/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates/attributes-detail) , Tipo importo
+La codifica del piano dei conti coinvolge il completamento di una serie di tabelle:  [Tipi conto](/docs/configurations/tables/finance/account-types) ,  [Anagrafiche contatti](/docs/erp-home/registers/contacts/registers-management), [Voce di spesa](/docs/configurations/tables/finance/charge-item), Tipi periodicità budget, Centri di costo, Centri di profitto, Divisioni, Scritture di rettifica/integrazione, Scritture da diff. budget,  [Causali automatiche](/docs/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates) , Tipo importo
 
 
 ### Inserimento della struttura del piano dei conti

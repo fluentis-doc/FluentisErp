@@ -33,7 +33,7 @@ Per poter inserire nuovi record è necessario cliccare nella griglia sulla prima
 
 **Proforma**: se attivo, la fattura è di tipo proforma e non può essere contabilizzata;
 
-**Causale**: in questo campo va inserita la causale contabile utilizzata per la contabilizzazione della fattura; Per approfondimenti fare riferimento alle [causali di contabilità generale](/docs/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates/recording-detail);
+**Causale**: in questo campo va inserita la causale contabile utilizzata per la contabilizzazione della fattura; Per approfondimenti fare riferimento alle [causali di contabilità generale](/docs/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates);
 
 **Tipo documento**: in questo campo va inserita la causale analitica utilizzata pe la contabilizzazione della fattura in contabilità analitica;
 

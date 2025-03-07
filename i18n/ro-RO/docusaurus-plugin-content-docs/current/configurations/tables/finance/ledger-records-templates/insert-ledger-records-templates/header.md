@@ -3,7 +3,7 @@ title: Inserare șabloane contabilitate generală
 sidebar_position: 1
 ---
 
-Fereastra este compusă dintr-un antet și trei secțiuni: **[Detaliu atribute](/docs/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates/attributes-detail)**, **[Detaliu înregistrare](/docs/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates/recording-detail)** și **[Parametri](/docs/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates/parameters)**.
+Fereastra este compusă dintr-un antet și trei secțiuni: **[Detaliu atribute](/docs/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates)**, **[Detaliu înregistrare](/docs/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates)** și **[Parametri](/docs/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates)**.
 
 ### Antet
 

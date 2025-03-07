@@ -21,7 +21,7 @@ To insert records, it is necessary to click on the first empty row of the grid o
 
 **Analytic account and detail account and relative Description**: (obsolete) account used to record the document in analytic accounting.
 
-**Type/Description**: used in registering the document’s accounting. For more details, verify its [use](https://docs/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates/attributes-detail) in ledger records in the finance area.
+**Type/Description**: used in registering the document’s accounting. For more details, verify its [use](https://docs/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates) in ledger records in the finance area.
 
 **Detail by countries**: this data is used only for data exchange with external programs. In the future, it will be possible to define different cost accounts for country and item accounting type, associated in the customer contact.
 

@@ -30,7 +30,7 @@ RIBBON BAR: il représente le menu de la forme en objet, à savoir la zone dan
 | Code de trans. | Code de transaction utilisés pour la déclaration Intrastat. |
 | En statistique | S'il est étali, il signifie que la facture de ce type vient considérée pour les statistiques. |
 | Proforme | S'il est établi, la facture est de type proforme et ne peut pas être comptabilisée. |
-|  [Cause/Description cause](/docs/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates/header)  | Cause comptable utilisée pour la comptabilisation de la facture. |
+|  [Cause/Description cause](/docs/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates)  | Cause comptable utilisée pour la comptabilisation de la facture. |
 |  *Cause analytique/Description cause analytique*  | Cause analytique utilisée pour la comptabilisation de la facture en comptabilité analytique. |
 | Notes | Ils peuvent être insérées des notes descriptives du type facture. |
 | Contrôle client | Dans l'insertion du sous-compte titulaire de l'ordre vient vérifié que le type compte soit obligatoriement client. |

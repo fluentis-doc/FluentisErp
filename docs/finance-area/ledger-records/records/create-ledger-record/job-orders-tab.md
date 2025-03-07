@@ -17,7 +17,7 @@ In questo tab saranno assegnati ai vari Progetti (commesse di vendita) i dati ec
 
  
 
-Nell'inserimento manuale degli importi il software provvederà automaticamente ad attribuire il valore residuo al fine di quadrare il movimento contabile. Sono previsti controlli del bilanciamento degli importi con la contabilità generale e la possibilità di bloccare il salvataggio della registrazione in caso di differenze (vedere '** [parametri](/docs/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates/parameters)**' della causale).
+Nell'inserimento manuale degli importi il software provvederà automaticamente ad attribuire il valore residuo al fine di quadrare il movimento contabile. Sono previsti controlli del bilanciamento degli importi con la contabilità generale e la possibilità di bloccare il salvataggio della registrazione in caso di differenze (vedere '** [parametri](/docs/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates)**' della causale).
 
 
 
