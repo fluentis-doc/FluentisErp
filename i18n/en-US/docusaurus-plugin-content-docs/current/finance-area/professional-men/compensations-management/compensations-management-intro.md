@@ -67,7 +67,7 @@ Example: code A = services performed as a self-employed worker; Q = commissions 
 
  
 
-**Project** (ex job order): serves to link the compensation to a project (sales job order): this could be the case of an appraisal on a job site managed per contract. If the **[ledger template](/docs/configurations/tables/finance/ledger-records-templates/ledger-records-templates)** used in the compensation accounting has the projects (ex jobs order) flag active, then the costs entered in this compensation will be assigned to the project (job order) entered in this field.
+**Project** (ex job order): serves to link the compensation to a project (sales job order): this could be the case of an appraisal on a job site managed per contract. If the **[ledger template](/docs/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates)** used in the compensation accounting has the projects (ex jobs order) flag active, then the costs entered in this compensation will be assigned to the project (job order) entered in this field.
 
 **Currency exchange/Currencye exchange/Currency**: linked to the management of the currency and relevant exchange data retrieved from the exchange rate table (the currency is set in the agent/supplier register).
 

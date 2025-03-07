@@ -21,7 +21,7 @@ Per poter inserire record è necessario cliccare sulla prima riga vuota della gr
 
 **Conto e sottoconto analitico e relativa Descrizione**: (obsoleto) conto utilizzato per contabilizzare il documento in contabilità analitica.
 
-**Tipo/Descrizione**: utilizzato nella registrazione della contabilizzazione del documento. Per altri dettagli verificarne l' [utilizzo](/docs/configurations/tables/finance/ledger-records-templates/ledger-records-templates)  contabile nelle registrazioni contabili in area amministrativa.
+**Tipo/Descrizione**: utilizzato nella registrazione della contabilizzazione del documento. Per altri dettagli verificarne l' [utilizzo](/docs/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates)  contabile nelle registrazioni contabili in area amministrativa.
 
 **Dettaglio per nazioni**: questi dati sono utilizzati solo per lo scambio dati con programmi esterni. In futuro sarà possibile definire conti di costo diversi per nazione e tipo contabilizzazione articolo, associato in anagrafica cliente.
 

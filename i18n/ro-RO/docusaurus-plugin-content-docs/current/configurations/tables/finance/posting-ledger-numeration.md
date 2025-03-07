@@ -22,7 +22,7 @@ De asemenea, este posibil, în cazuri speciale sau cu necesități specifice, s�
 ![](/img/it-it/configurations/tables/finance/posting-ledger-numerations/posting-ledger-numerations-detail-provisory.png)
 
 :::danger Atenție
-În situații normale, nu recomandăm setarea mai multor numărători, respectiv pentru înregistrările finale și provizorii, simultan. Dacă apare această necesitate, consultați în *antetul șablonului contabil*, câmpul [**Numerotare*](/docs/configurations/tables/finance/ledger-records-templates/ledger-records-templates).  
+În situații normale, nu recomandăm setarea mai multor numărători, respectiv pentru înregistrările finale și provizorii, simultan. Dacă apare această necesitate, consultați în *antetul șablonului contabil*, câmpul [**Numerotare*](/docs/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates).  
 De asemenea, nu se recomandă introducerea unei date de sfârșit valabilitate pentru numerotarea curentă dacă acest lucru nu este motivat de o modificare reală a detaliilor procedurii în sine. Periodicitatea aleasă în numerotare face ca numărul să repornească în fiecare an sau în fiecare zi etc. Detalii [**aici**](/docs/configurations/utility/new-year-counter-generation).
 :::
 

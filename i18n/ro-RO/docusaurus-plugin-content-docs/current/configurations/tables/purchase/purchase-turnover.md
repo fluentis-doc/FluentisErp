@@ -19,7 +19,7 @@ Pentru a insera datele, efectuați clic pe primul rând gol din tabel sau apăsa
 
 **Cont sinteti/analitic/Descriere**: utilizate pentru contabilizarea documentului în contabilitatea analitică.
 
-**Tip/Descriere**: utilizat în contabilizarea documentului. Pentru alte detalii verificati [utilizarea](/docs/configurations/tables/finance/ledger-records-templates/ledger-records-templates) în *înregistrările contabile* din aria *Administrativă*.
+**Tip/Descriere**: utilizat în contabilizarea documentului. Pentru alte detalii verificati [utilizarea](/docs/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates) în *înregistrările contabile* din aria *Administrativă*.
 
 :::note Note
 Dacă *Tipul facturării* este inserat în *Registru articole*, acest cod este propus în liniile articolului documentului de achiziții și automatizează contabilizarea documentelor într-un cont de contrapartidă.

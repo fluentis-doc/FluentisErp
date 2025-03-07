@@ -30,7 +30,7 @@ sidebar_position: 1
 ---
 
 ### Povezanost s drugim tablicama
-Šifriranje kontnog plana uključuje popunjavanje niza tablica: [Vrsta konta](/docs/configurations/tables/finance/account-types), [Šifarnik kontakata](/docs/erp-home/registers/contacts/registers-management), [Troškovne stavke](/docs/configurations/tables/finance/charge-item), Tipovi periodičnosti proračuna, Troškovna središta, Profitna središta, Odjeli, Ispravci/integracije knjiženja, Knjiženja od razlike u proračunu, [Automatski predlošci](/docs/configurations/tables/finance/ledger-records-templates/ledger-records-templates), Vrsta iznosa.
+Šifriranje kontnog plana uključuje popunjavanje niza tablica: [Vrsta konta](/docs/configurations/tables/finance/account-types), [Šifarnik kontakata](/docs/erp-home/registers/contacts/registers-management), [Troškovne stavke](/docs/configurations/tables/finance/charge-item), Tipovi periodičnosti proračuna, Troškovna središta, Profitna središta, Odjeli, Ispravci/integracije knjiženja, Knjiženja od razlike u proračunu, [Automatski predlošci](/docs/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates), Vrsta iznosa.
 
 
 ### Unos strukture kontnog plana

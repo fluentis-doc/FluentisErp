@@ -33,7 +33,7 @@ To insert new records, you need to click on the first empty row in the grid or p
 
 **Proforma**: if active, the invoice is of proforma type and cannot be accounted for;
 
-**Template**: in this field, the ledger template used for the invoice's accounting must be entered; For further details, refer to [general ledger templates](/docs/configurations/tables/finance/ledger-records-templates/ledger-records-templates);
+**Template**: in this field, the ledger template used for the invoice's accounting must be entered; For further details, refer to [general ledger templates](/docs/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates);
 
 **Document Type**: in this field, the cost template used for the accounting of the invoice in analytic accounting must be entered;
 

@@ -17,5 +17,5 @@ Attraverso una corretta configurazione e applicazione di queste procedure, l'ute
 :::
 
 :::tip[Maggiori informazioni]
-Consultare la pagina sull' [**Inserimento di una nuova causale**](/docs/configurations/tables/finance/ledger-records-templates/ledger-records-templates)
+Consultare la pagina sull' [**Inserimento di una nuova causale**](/docs/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates)
 :::

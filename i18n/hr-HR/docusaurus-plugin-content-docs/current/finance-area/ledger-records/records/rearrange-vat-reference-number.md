@@ -65,7 +65,7 @@ Data / Numero Documento: sarà attribuito il numero di protocollo in relazione a
 
 Tipo / Data / Numero Documento: sarà attribuito il numero di protocollo in relazione al tipo documento (esempio fatture, poi note di accredito), a parità di tipo documento, in base alla progressione della data registrazione, e a parità di data del numero di documento.
 
-Il flag **Riscrivi descrizioni**, se attivo, in fase di rinumerazione aggiorna la descrizione del movimento laddove, in base alle impostazioni definite nella **[causale contabile](/docs/configurations/tables/finance/ledger-records-templates/ledger-records-templates)**, preveda la lettura automatica del protocollo IVA. 
+Il flag **Riscrivi descrizioni**, se attivo, in fase di rinumerazione aggiorna la descrizione del movimento laddove, in base alle impostazioni definite nella **[causale contabile](/docs/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates)**, preveda la lettura automatica del protocollo IVA. 
 
 
 

@@ -84,7 +84,7 @@ La fattura con numero ... tipo ... anno ... di AAA S.p.a. non può essere contab
 :::
 
 La contropartita contabile, nel contesto di una fattura di vendita o di acquisto, deve intendersi come l’indicazione del conto destinato ad accogliere il ricavo o il costo. 
-Quindi, più in generale, la registrazione contabile di una fattura poggia normalmente su tre elementi essenziali che possiamo ricontrollare aprendo la [**causale contabile**](/docs/configurations/tables/finance/ledger-records-templates/ledger-records-templates) con la quale stiamo tentando di contabilizzare questa fattura.
+Quindi, più in generale, la registrazione contabile di una fattura poggia normalmente su tre elementi essenziali che possiamo ricontrollare aprendo la [**causale contabile**](/docs/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates) con la quale stiamo tentando di contabilizzare questa fattura.
 Per verificare prima di tutto quale sia questa causale, passiamo dalla tabella dei [**tipi fattura**](/docs/configurations/tables/sales/invoices-type) dove è definito il collegamento.
 Ecco dunque i tre elementi, il cliente o fornitore, l’iva ed il costo o ricavo, se manca uno di questi elementi la registrazione non sta in piedi.
 
