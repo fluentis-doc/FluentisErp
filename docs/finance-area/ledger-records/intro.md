@@ -28,7 +28,7 @@ Prima di procedere all'introduzione o realizzazione di una registrazione è nece
 I dati contabili sono utilizzati dal modulo Controlling per elaborare le chiusure infrannuali e per elaborare tutti i movimenti dei centri di costo ad esse collegate.
 Il modulo è strettamente interconnesso con la tesoreria con cui interscambia i dati e riceve movimenti contabili dalle procedure automatiche di contabilizzazione dei vari fatti contabili connessi alle operazioni di tesoreria (bonifici , portafoglio attivo ecc....)
 
-Una delle caratteristiche fondamentali e caratterizzanti del modulo per le registrazioni contabili è la sua Logica basata su [**Causali contabili**](/docs/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates-intro) liberamente configurabili per definire i propri schemi contabili.
+Una delle caratteristiche fondamentali e caratterizzanti del modulo per le registrazioni contabili è la sua Logica basata su [**Causali contabili**](/docs/configurations/tables/finance/ledger-records-templates/ledger-records-templates-intro) liberamente configurabili per definire i propri schemi contabili.
 
 
 :::important Vedi Anche
