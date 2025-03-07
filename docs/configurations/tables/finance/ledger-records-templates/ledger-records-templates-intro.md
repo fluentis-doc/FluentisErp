@@ -9,6 +9,7 @@ La visione di questi video è raccomandata a tutti quelli che vogliono entrare n
 
 Mentre risulta del tutto necessaria per chi intende configurare un ambiente operativo su misura.
 
+Attraverso una corretta configurazione e applicazione di queste procedure, l'utente ERP può ottimizzare il flusso di contabilizzazione automatica, riducendo gli errori manuali e migliorando la tracciabilità delle operazioni contabili.
 
 
 :::important Vedi Anche
