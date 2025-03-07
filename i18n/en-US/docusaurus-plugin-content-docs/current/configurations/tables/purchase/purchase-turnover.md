@@ -17,7 +17,7 @@ The table opens via the path **Tables > Purchases > Purchases Turnover** and con
 
 **Analytic Account/Detail Account/Description**: account used to account for the document in analytic accounting.
 
-**Type/Description**: used in the registration of the accounting of the document. For other details, check its [using]( /docs/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates/attributes-detail) in ledger records in the finance area.
+**Type/Description**: used in the registration of the accounting of the document. For other details, check its [using]( /docs/configurations/tables/finance/ledger-records-templates/ledger-records-templates) in ledger records in the finance area.
 
 For everything not detailed in this document about the common functioning of forms, refer to the following link [Custom features, buttons, and common fields](/docs/guide/common).
 

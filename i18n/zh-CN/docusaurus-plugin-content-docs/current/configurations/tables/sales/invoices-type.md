@@ -30,7 +30,7 @@ sidebar_position: 16
 | 交易代码 | 交易代码 |
 | 统计中 | 如果激活的话，属于本类型的发票被统计考虑 |
 | 备考 | 如果激活的话，发票类型为备考，因此系统不能会计记录它 |
-|  [模板 /模板类型](/docs/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates/header)  | 会计模板，为发票的会计记录被利用 |
+|  [模板 /模板类型](/docs/configurations/tables/finance/ledger-records-templates/ledger-records-templates)  | 会计模板，为发票的会计记录被利用 |
 |  分析模板/分析模板的说明  | 在分析会计中，被发票会计记录利用 |
 | 票据 | 用户可以将发票类型的说明票据插入 |
 | 监控客户 | 插入标头订单明细账目的时候。系统监控账户类型是客户的 |

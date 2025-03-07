@@ -67,7 +67,7 @@ Esempio: codice A = prestazioni di lavoro autonomo esercitate abitualmente; Q = 
 
  
 
-**Progetto** (ex commessa): serve a collegare il compenso ad un progetto (commessa di vendita): potrebbe essere il caso di una perizia su un cantiere gestito a commessa. Se la ** [causale contabile](/docs/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates/recording-detail) ** utilizzata nella contabilizzazione del compenso ha il flag progetti (ex commesse) attivo allora i costi inseriti in questo compenso saranno assegnati al progetto (commessa) inserito in questo campo.
+**Progetto** (ex commessa): serve a collegare il compenso ad un progetto (commessa di vendita): potrebbe essere il caso di una perizia su un cantiere gestito a commessa. Se la ** [causale contabile](/docs/configurations/tables/finance/ledger-records-templates/ledger-records-templates) ** utilizzata nella contabilizzazione del compenso ha il flag progetti (ex commesse) attivo allora i costi inseriti in questo compenso saranno assegnati al progetto (commessa) inserito in questo campo.
 
 **Cambio valuta/Data valuta/Divisa**: collegati alla gestione della divisa e dei relativi dati del cambio prelevati dalla tabella cambi (la divisa viene impostata dall'anagrafica agente/fornitore).
 

@@ -18,7 +18,7 @@ Il tab è diviso in due griglie fondamentali, la prima, quella superiore, serve 
 
 - Tipicamente tutte le registrazioni di tipo IVA hanno il flag di 'apertura partite' e possono avere anche il flag di chiusura + compensazione partite; 
 
-- Le causali di **pagamento/incasso**, invece, prevedono sempre la chiusura partite **senza mai il flag di compensazione**, eventualmente possono avere il flag di apertura partite per gestire i casi di pagamento anticipato (in questo caso, mancando la chiusura di una partita, verrà aperta una partita di segno opposto mantenendo la quadratura con il movimento contabile - quadratura che può essere resa obbligatoria tramite i **[parametri](/docs/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates/parameters)** della causale contabile). 
+- Le causali di **pagamento/incasso**, invece, prevedono sempre la chiusura partite **senza mai il flag di compensazione**, eventualmente possono avere il flag di apertura partite per gestire i casi di pagamento anticipato (in questo caso, mancando la chiusura di una partita, verrà aperta una partita di segno opposto mantenendo la quadratura con il movimento contabile - quadratura che può essere resa obbligatoria tramite i **[parametri](/docs/configurations/tables/finance/ledger-records-templates/ledger-records-templates)** della causale contabile). 
 
 
 :::tip ATTENZIONE
@@ -80,9 +80,9 @@ Non è consentito di forzare il pagamento con un importo superiore al residuo de
 
 Nella lista dei pagamenti possono essere inserite note degli stessi: queste note possono essere collegate automaticamente, in causale, con la descrizione generica della registrazione contabile (flag *descrizione in giornale e pagamenti*, sconsigliato).
 
-Se il pagamento sarà gestito, secondo le **[impostazioni della causale](/docs/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates/recording-detail)**, al cambio storico della partita, non sarà rilevata nessuna differenza cambio in automatico e sarà gestirla manualmente in contabilità: l'opzione facilita inoltre, e la cosa è particolarmente utile, la gestione dell'uguaglianza tra partite aperte e saldo contabile. 
+Se il pagamento sarà gestito, secondo le **[impostazioni della causale](/docs/configurations/tables/finance/ledger-records-templates/ledger-records-templates)**, al cambio storico della partita, non sarà rilevata nessuna differenza cambio in automatico e sarà gestirla manualmente in contabilità: l'opzione facilita inoltre, e la cosa è particolarmente utile, la gestione dell'uguaglianza tra partite aperte e saldo contabile. 
 
-Diversamente, se l'opzione non è attiva, il controvalore euro sarà calcolato al cambio della data registrazione (e in questo caso, se impostato correttamente **[in causale](/docs/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates/attributes-detail)** - vedere tipo importo Utile/Perd. diff. cambi - e **[nelle divise](/docs/configurations/tables/general-settings/currencies)**, la procedura valorizzerà automaticamente i sottoconti di utile/perdita cambi divisa per divisa). 
+Diversamente, se l'opzione non è attiva, il controvalore euro sarà calcolato al cambio della data registrazione (e in questo caso, se impostato correttamente **[in causale](/docs/configurations/tables/finance/ledger-records-templates/ledger-records-templates)** - vedere tipo importo Utile/Perd. diff. cambi - e **[nelle divise](/docs/configurations/tables/general-settings/currencies)**, la procedura valorizzerà automaticamente i sottoconti di utile/perdita cambi divisa per divisa). 
 
 Attraverso il pulsante **Espandi/riduci** si può visualizzare una sola delle due griglie (ricerca partite o pagamenti). 
 

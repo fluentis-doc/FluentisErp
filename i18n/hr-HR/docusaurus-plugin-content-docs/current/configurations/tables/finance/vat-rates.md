@@ -41,7 +41,7 @@ Si tratta di una tabella precaricata sulla quale l'utente abilitato può operare
 
 **% IVA Agr. Detr.**: il campo imposta la percentuale di indetraibilità dell'aliquota in caso di movimento in regime agricolo.
 
-**Consenti IVA 0 in LG**: il flag impone la registrazione di righe IVA con importo 0 sia dare che avere nel Libro giornale. La [**causale contabile**](/docs/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates/attributes-detail) causale contabile d'utilizzo, comunque, deve prevedere lo stesso tipo di autorizzazione delle righe a 0.
+**Consenti IVA 0 in LG**: il flag impone la registrazione di righe IVA con importo 0 sia dare che avere nel Libro giornale. La [**causale contabile**](/docs/configurations/tables/finance/ledger-records-templates/ledger-records-templates) causale contabile d'utilizzo, comunque, deve prevedere lo stesso tipo di autorizzazione delle righe a 0.
 
 **Import oro argento**: il flag consente di impostare quali aliquote vadano riepilogate nei campi previsti nella Comunicazione IVA annuale. (Da considerare attualmente obsoleto)
 

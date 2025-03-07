@@ -5,7 +5,7 @@ sidebar_position: 7
 
  La tab Cespiti è dedicata alla gestione dei beni ad uso pluriennale: sarà utilizzato per rilevare acquisti, incrementi, alienazioni e distruzioni.
 
-ATTENZIONE: La tab è visibile solamente se la causale contabile che si sta utilizzando presenta al suo interno il flag '**cespiti**' attivo. Inoltre è opportuno impostare, sempre nella causale (tab **[Dettaglio registrazione](/docs/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates/recording-detail)**), il **tipo di operazione** da compiere, tramite la combo box accanto al flag di cui sopra (acquisizione, dismissione, distruzione ecc...). Pertanto sarà opportuno creare diverse causali dedicate ai cespiti ed adatte a compiere le diverse operazioni possibili.
+ATTENZIONE: La tab è visibile solamente se la causale contabile che si sta utilizzando presenta al suo interno il flag '**cespiti**' attivo. Inoltre è opportuno impostare, sempre nella causale (tab **[Dettaglio registrazione](/docs/configurations/tables/finance/ledger-records-templates/ledger-records-templates)**), il **tipo di operazione** da compiere, tramite la combo box accanto al flag di cui sopra (acquisizione, dismissione, distruzione ecc...). Pertanto sarà opportuno creare diverse causali dedicate ai cespiti ed adatte a compiere le diverse operazioni possibili.
 
 ![](/img/it-it/finance-area/ledger-records/records/create-ledger-record/fixed-assets-tab/image01.png)
 

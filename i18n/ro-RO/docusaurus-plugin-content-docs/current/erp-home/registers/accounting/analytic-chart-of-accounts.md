@@ -3,7 +3,7 @@ title: Planul de conturi
 sidebar_position: 1
 ---
 
-Codificarea planului de conturi implică și completarea unei serii de tabele:  [Tipuri cont](/docs/configurations/tables/finance/account-types), [Registre contacte](/docs/erp-home/registers/contacts/registers-management), [Element de cheltuieli](/docs/configurations/tables/finance/charge-item), Centre de cost, [Centre de profit](/docs/configurations/tables/controlling/cost-accounting/profit-centres), Departamente, Înregistrări de rectificare/integrare, [Șabloane automate](/docs/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates/attributes-detail), Tip sumă.
+Codificarea planului de conturi implică și completarea unei serii de tabele:  [Tipuri cont](/docs/configurations/tables/finance/account-types), [Registre contacte](/docs/erp-home/registers/contacts/registers-management), [Element de cheltuieli](/docs/configurations/tables/finance/charge-item), Centre de cost, [Centre de profit](/docs/configurations/tables/controlling/cost-accounting/profit-centres), Departamente, Înregistrări de rectificare/integrare, [Șabloane automate](/docs/configurations/tables/finance/ledger-records-templates/ledger-records-templates), Tip sumă.
 
 *Butoane comune*
 
@@ -139,6 +139,6 @@ Reamintim faptul că există puncte de codificare ulterioare ale centrelor de co
 
 În acest fel, pot fi modificate în mod „dinamic” conturile analitice utilizate de șablonul secundar, în funcție de contul analitic care substituie contul generic (de obicei inserat în șablonul principal) la crearea înregistrării contabile.
 
-În plus față de Codul contului analitic, este necesar să se introducă și *Tipul sumei* și secțiunea *Debit/Credit* (vezi și  [Șabloane contabile](/docs/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates/header)).
+În plus față de Codul contului analitic, este necesar să se introducă și *Tipul sumei* și secțiunea *Debit/Credit* (vezi și  [Șabloane contabile](/docs/configurations/tables/finance/ledger-records-templates/ledger-records-templates)).
 
 Pentru detalii despre tab-ul cu **Extra Data** consultați documentația referitoare la  [Extra Data](/docs/configurations/utility/extra-data/extradata/new-extradata-simple). 
