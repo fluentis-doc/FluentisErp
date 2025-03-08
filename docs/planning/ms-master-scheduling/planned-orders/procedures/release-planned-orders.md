@@ -75,7 +75,7 @@ Nella sezione è possibile:
 
 - impostare, tramite la combo box del **Tipo Ordine** e il campo **Anno**, se l'ordine di conto lavoro da generare debba essere di tipo *Chiuso* o *Aperto* e di che anno debba essere;  
 - decidere il metodo di raggruppamento: attivando infatti il flag **Raggruppare gli ordini dello stesso terzista**, la procedura di rilascio effettua un raggruppamento di ordini pianificati di conto lavoro, inserendo nello stesso ordine di conto lavoro gli articoli che devono essere lavorati dallo stesso terzista;   
-- decidere, nel caso non sia presente il terzista nell'ordine pianificato di conto lavoro, se **Accettare gli ordini senza il fornitore**, **Tralasciare gli ordini senza il terzista** oppure **Accettare come terzista il seguente conto** specificato nelle apposite caselle.
+- decidere, nel caso non sia presente il terzista nell'ordine pianificato di conto lavoro, se **Tralasciare gli ordini senza il terzista** oppure **Accettare come terzista il seguente conto** specificato nelle apposite caselle.
 
 *Pulsante specifico*:  
 > **Salva le modifiche**: consente di salvare  i parametri come sono stati impostati.
