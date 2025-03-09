@@ -3,25 +3,32 @@ title: Costificazione
 sidebar_position: 6
 ---
 
+:::important A cosa serve
+La **Costificazione** delle commesse di produzione rappresenta un elemento cruciale nella gestione efficace dei processi produttivi aziendali.         
+Questo sistema di gestione permette di stabilire, monitorare e confrontare i costi previsti ed effettivi associati a una commessa, fornendo un quadro chiaro e dettagliato delle risorse impiegate.         
+Attraverso un'interfaccia strutturata, il sistema consente di impostare parametri preliminari, gestire documenti e inserire o modificare costi aggiuntivi, sia a livello globale che specifico per ogni commessa.          
+La possibilità di analizzare i costi in maniera sintetica e analitica, e di apportare correzioni e risparmi, rende la **Costificazione** uno strumento essenziale per mantenere la competitività e l'efficienza produttiva.
+:::
+
 **Parametrizzazioni preliminari**   
 
 Prima di procedere vedasi quando indicato nelle seguenti pagine in merito alla *Costificazione delle commesse di produzione*:    
 
-> [Parametri MS -> tab costificazione commessa](/docs/configurations/parameters/production/mps-parameters)     
-> [Tipi documenti](/docs/configurations/tables/production/documents-types)     
+> [Parametri MS -> tab costificazione commessa](/docs/configurations/parameters/production/mps-parameters)  
 > [Tipo costificazione commessa](/docs/configurations/tables/production/production-job-order-cost-type)      
+> [Tipi documenti](/docs/configurations/tables/production/documents-types)     
 > [Parametri conto lavoro -> Valor. lavorazione materiali a costo](/docs/configurations/parameters/production/subcontractor-parameters/)       
 
 *Pulsanti specifici*:
  
 > **Costi aggiuntivi**: permette di inserire dei costi aggiuntivi che possono essere proposti di default in ogni successiva costificazione (questi costi non sono legati alla singola commessa, ma sono globali). Tali costi si dividono in *Costi diretti*, *Costi generali* e *Altri costi*. Questi verranno riportati di default nelle corrispondenti sezioni di costi preventivi e consuntivi nel tab *Costi totali*;     
 > **Esegui costificazione**: permette di lanciare la procedura di costificazione commesse;    
-> **Inserisci costificazione**: permette di inserire una nuova costificazione; in automatico verrnno inseriti tutti i dati di default inseriti nella fase di parametrizzazione preliminare, che ovviamente possono essere variati manualmente per la singola costificazione;     
+> **Inserisci costificazione**: permette di inserire una nuova costificazione; in automatico verranno inseriti tutti i dati di default inseriti nella fase di parametrizzazione preliminare, che ovviamente possono essere variati manualmente per la singola costificazione;     
 > **Cancella costificazione**: permette di cancellare una costificazione già creata;     
 > **Esplodi costificazione**: permette di esplodere l'albero dei documenti di una costificazione già creata. 
 
 :::note Nota
-Il tab **Costificazione** (realtavio alla costificazione) è presente nella gestione sia delle commesse monoprodotto che in quella delle multiprodotto; nel caso delle multiprodotto la costificazione perderà in esame tutti gli articoli presenti in quella commessa.
+Il tab **Costificazione** è presente nella gestione sia delle commesse monoprodotto che in quella delle multiprodotto; nel caso delle multiprodotto la costificazione perderà in esame tutti gli articoli presenti in quella commessa.
 ::: 
 
 Nella parte superiore della form è presente una griglia contenente l'elenco di tutte le valorizzazioni lanciate per quella commessa, mentre nella parte destra vengono mostrate le informazioni generali relative alla commessa selezionata.
@@ -29,7 +36,7 @@ La parte inferiore della form, invece, si compone dei seguenti tab:
 
 ## Dettaglio costi
 
-In questo tab vengono mostrate le informazioni di dettglio dei costi relativi alla costificazione selezionata nella parte superiore della form.
+In questo tab vengono mostrate le informazioni di dettaglio dei costi relativi alla costificazione selezionata nella parte superiore della form.
 Nella tabella di sinistra è possibile visualizzare l'albero dei documenti che compongono la costificazione con le seguenti informazioni:
 **Tipo documento**: indica la tipologia del documento;    
 **Anno**: indica l'anno del documento;     
@@ -121,20 +128,20 @@ Nello specifico, per ciascuna sezione (preventivo e consuntivo), sono riportati 
 **Totale altri costi**: totale dei costi inseriti nella sezione **Altri costi**;     
 **Correzione**: permette di inserire un valore per correggere il *Totale costo ricaricato*;      
 **Arrotondamento**: permette di decidere se arrotondare per eccesso o difetto e l'ordine di grandezza;     
-**Totale costo commesa**: totale del *Totale costo ricaricato*, *Totale costi generali*, *Totale altri costi*, *Correzione* ed *Arrotondamento*. Il *Totale costo commesa* viene evidenziato in rosso nella sezione dei *Costi consuntivi* quando questo è superiore quello presente nella sezione dei *Costi preventivi*.           
+**Totale costo commessa**: totale del *Totale costo ricaricato*, *Totale costi generali*, *Totale altri costi*, *Correzione* ed *Arrotondamento*. Il *Totale costo commessa* viene evidenziato in rosso nella sezione dei *Costi consuntivi* quando questo è superiore quello presente nella sezione dei *Costi preventivi*.           
 
 :::note Nota
-I campi che vengono riportati ed allineati in automatico, tra la sezione dei *Costi preventivi* e quella dei *Costi consuntivi*, sono: il *Ricarco* (tipo di ricarico e valore), *Correzione* ed *Arrotondamento* (tipo di arrotondamento e valore). In ogni caso nella sezione dei *Costi consuntivi* è possibile variarli manualmente per diversificarli dai valori inseriti nella sezione dei *Costi preventivi*.
+I campi che vengono riportati ed allineati in automatico, tra la sezione dei *Costi preventivi* e quella dei *Costi consuntivi*, sono: il *Ricarico* (tipo di ricarico e valore), *Correzione* ed *Arrotondamento* (tipo di arrotondamento e valore). In ogni caso nella sezione dei *Costi consuntivi* è possibile variarli manualmente per diversificarli dai valori inseriti nella sezione dei *Costi preventivi*.
 ::: 
 
-Tramite il punlsante **Costi aggiuntivi** è possibile inserire dei *Costi diretti*, *Costi generali* e *Altri costi* che possono essere proposti di default, sia nei costi preventivi che nei costi consuntivi.      
-Per ciascuno di questi costi è possibile definire se sia di tipo percerntuale o a valore, indicandone anche il valore stesso.    
+Tramite il pulsante **Costi aggiuntivi** è possibile inserire dei *Costi diretti*, *Costi generali* e *Altri costi* che possono essere proposti di default, sia nei costi preventivi che nei costi consuntivi.      
+Per ciascuno di questi costi è possibile definire se sia di tipo percentuale o a valore, indicandone anche il valore stesso.    
 
 Per tutte le informazioni necessarie alla creazione di questi costi, consultare la pagina relativa a [Voci di costo](/docs/configurations/tables/general-settings/cost-elements).         
 
 ## Analisi costi
 
-In questo tab vengono messe in evidenza tutte le componenti di costo per quanto rigaurda i costi preventivi e consuntivi, utilizzando due tipi di analisi:      
+In questo tab vengono messe in evidenza tutte le componenti di costo per quanto riguarda i costi preventivi e consuntivi, utilizzando due tipi di analisi:      
 
 > **Sintetica**: in questa tipologia di analisi viene riportato il *Costo industriale*, quindi come somma dei costi materiali e dei costi di lavorazione, inoltre sono riportati i *Costi diretti*, *Costi generali* e *Altri costi* ed infine il totale di *Ricarichi* e *Correzioni*;     
 > **Analitica**: in questa tipologia, invece, vengono riportate nel grafico tutte le voci singolarmente, quindi il *Costo industriale* viene suddiviso in *Costo materiali*, *Costo lavorazione interne* e *Costo lavorazioni esterne*; anche le voci relative a *Ricarichi* e *Correzioni* vengono riportate separatamente; ovviamente vengono poi riportati anche i Costi diretti*, *Costi generali* e *Altri costi*.       

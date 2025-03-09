@@ -38,7 +38,7 @@ Attraverso questa finestra vengono settati tutti i parametri che riguardano la g
 
 **Unità di misura pesi predefinita**: permette di indicare l'unità di misura da utilizzare di default per i pesi.   
 
-**Valor. lavorazione materiali a costo**: permette di definire se la valorizzazione della lavorazione dei materiali debba avvenire a costo ultimo o a costo medio. Quindi si tratta di un metodo per decidere se i materiali utilizzati dai terzisti debbano essere imputati alla lavorazione utilizzando il  costo ultimo oppure il  costo medio tra quelli inseriti nell'anagrafica dell'articolo stesso. Inoltre, è possibile, selezionando i flag **Lotti** e/o **Commessa di produzione**, andare a proporre come costo del materiale il costo ultimo/Medio/standard per il relativo lotto e/o commessa di produzione in base ai flag attivati.    
+**Valor. lavorazione materiali a costo**: permette di definire se la valorizzazione della lavorazione dei materiali debba avvenire a costo ultimo o a costo medio. Quindi si tratta di un metodo per decidere se i materiali utilizzati dai terzisti debbano essere imputati alla lavorazione utilizzando il  costo ultimo oppure il  costo medio tra quelli inseriti nell'anagrafica dell'articolo stesso. Inoltre, è possibile, selezionando i flag **Lotti** e/o **Commessa di produzione**, andare a proporre come costo del materiale il costo ultimo/Medio per il relativo lotto e/o commessa di produzione in base ai flag attivati.    
 
 #### Evasione  
 
