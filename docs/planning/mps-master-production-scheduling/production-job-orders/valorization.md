@@ -31,12 +31,18 @@ Prima di procedere vedasi quando indicato nelle seguenti pagine in merito alla *
 Il tab **Costificazione** è presente nella gestione sia delle commesse monoprodotto che in quella delle multiprodotto; nel caso delle multiprodotto la costificazione perderà in esame tutti gli articoli presenti in quella commessa.
 ::: 
 
-Nella parte superiore della form è presente una griglia contenente l'elenco di tutte le valorizzazioni lanciate per quella commessa, mentre nella parte destra vengono mostrate le informazioni generali relative alla commessa selezionata.
-La parte inferiore della form, invece, si compone dei seguenti tab:
+Questo tab si compone di una sezione di testata contenente le informazioni relative alla costificazione selezionata e da una serie di tab sottostanti: **Dettaglio costi**, **Costi totali** e **Analisi costi**.          
+Nella seziona di testata è presente una griglia contenente l'elenco di tutte le valorizzazioni lanciate per quella commessa, mentre nella parte destra vengono mostrate le informazioni generali relative alla costificazione selezionata.             
+Nella ribbon bar sono presenti i pulsanti che permettono di aprire i [Parametri MRP](/docs/configurations/parameters/production/mrp-parameters/mrp-parameters-intro) dell'articolo, la [Distinta base](/docs/erp-home/registers/production/bill-of-materials/search-and-insert-assemblies) e il [Ciclo di lavoro](/docs/erp-home/registers/production/routes/new-route). 
+Tramite il pulsante **Inserisci costificazione**, in automatico sarà creata una nuova costificazione e verranno inseriti tutti i dati di default inseriti nella fase di parametrizzazione preliminare, che ovviamente possono ancora essere variati manualmente per la singola riga.           
+Selezionando una riga di costificazione è possibile esplodere l'albero dei documenti tramite il pulsante **Esplodi costificazione**, oppure eliminarla con il pulsante **Cancella costificaizone**.        
+Tramite il pulsante **Costi aggiuntivi**, invece, è possibile inserire dei costi aggiuntivi che possono essere proposti di default in ogni successiva costificazione (questi costi non sono legati alla singola commessa, ma sono globali). Tali costi si dividono in *Costi diretti, Costi generali e Altri costi*. Questi verranno riportati di default nelle corrispondenti sezioni di costi preventivi e consuntivi nel tab **Costi totali**. Altrimenti sarà sempre possibile inserirli o modificarli manualmente nella relativa sezione del tab costi totali.           
+Una volta decisi tutti i parametri, per eseguire o rieseguire una costificazione, sarà sufficiente selezionarla e premere il pulsante **Esegue costificazione**.
 
 ## Dettaglio costi
 
-In questo tab vengono mostrate le informazioni di dettaglio dei costi relativi alla costificazione selezionata nella parte superiore della form.
+
+Nel tab dettaglio costi vengono mostrate le informazioni di dettaglio dei costi relativi alla costificazione selezionata nella parte superiore della form. 
 Nella tabella di sinistra è possibile visualizzare l'albero dei documenti che compongono la costificazione con le seguenti informazioni:
 **Tipo documento**: indica la tipologia del documento;    
 **Anno**: indica l'anno del documento;     
@@ -80,7 +86,7 @@ Nel caso in cui il centro di lavoro effettivo sia diverso da quello previsto, in
 
 #### *Lavorazioni esterne*
 
-**Terzista**: indica il terzista; 
+**Terzista**: indica il terzista;     
 **Rif. Documento**: indica il riferimento del documento;    
 **U.M.**: indica l'unità di misura gestionale;    
 **Q.tà prevista**: indica la quantità prevista da produrre;    
@@ -121,9 +127,9 @@ In questo tab sono riportati in maniera riepilogativa i costi preventivi e consu
 Nello specifico, per ciascuna sezione (preventivo e consuntivo), sono riportati i seguenti campi:     
 **Costo industriale**: totale dei costi materiali e costo lavorazioni (interne ed esterne);     
 **Totale costi diretti**: totale dei costi inseriti nella sezione **Costi diretti**;    
-**Totale costo diretto comm.**: totale del *Costo industriale* e del *Totale costi diretti*;     
+**Totale costo diretto commessa**: totale del *Costo industriale* e del *Totale costi diretti*;     
 **Ricarico**: permette di indicare il tipo di ricarico se a percentuale o a valore ed anche il valore stesso;    
-**Totale costo ricaricato**: totale del *Totale costo diretto comm.* e del *Ricarico*;     
+**Totale costo ricaricato**: totale del *Totale costo diretto commessa* e del *Ricarico*;     
 **Totale costi generali**: totale dei costi inseriti nella sezione **Costi generali**;      
 **Totale altri costi**: totale dei costi inseriti nella sezione **Altri costi**;     
 **Correzione**: permette di inserire un valore per correggere il *Totale costo ricaricato*;      
@@ -144,6 +150,8 @@ Per tutte le informazioni necessarie alla creazione di questi costi, consultare 
 In questo tab vengono messe in evidenza tutte le componenti di costo per quanto riguarda i costi preventivi e consuntivi, utilizzando due tipi di analisi:      
 
 > **Sintetica**: in questa tipologia di analisi viene riportato il *Costo industriale*, quindi come somma dei costi materiali e dei costi di lavorazione, inoltre sono riportati i *Costi diretti*, *Costi generali* e *Altri costi* ed infine il totale di *Ricarichi* e *Correzioni*;     
-> **Analitica**: in questa tipologia, invece, vengono riportate nel grafico tutte le voci singolarmente, quindi il *Costo industriale* viene suddiviso in *Costo materiali*, *Costo lavorazione interne* e *Costo lavorazioni esterne*; anche le voci relative a *Ricarichi* e *Correzioni* vengono riportate separatamente; ovviamente vengono poi riportati anche i Costi diretti*, *Costi generali* e *Altri costi*.       
+> **Analitica**: in questa tipologia, invece, vengono riportate nel grafico tutte le voci singolarmente, quindi il *Costo industriale* viene suddiviso in *Costo materiali*, *Costo lavorazione interne* e *Costo lavorazioni esterne*; anche le voci relative a *Ricarichi* e *Correzioni* vengono riportate separatamente; ovviamente vengono poi riportati anche i *Costi diretti*, *Costi generali* e *Altri costi*.       
+
+Queste due tipologie di analisi possono essere confrontate tramite una *ripartizione dei costi* con un diagramma a torta, oppure con un *raffronto dei costi* utilizzando un diagramma a barre.
 
 Per i dettagli sul funzionamento comune delle form fare riferimento al link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).

@@ -42,9 +42,9 @@ Attraverso questa finestra vengono settati tutti i parametri che riguardano la g
 
 #### Evasione  
 
-> **Visualizzazione griglia di evasione**: se attivo, nelle procedure di evasione ordine in DDT di conesgna o nel rientro sarà visibile la griglia di evasione.   
+> **Visualizzazione griglia di evasione**: se attivo, nelle procedure di evasione ordine in DDT di consegna o nel rientro sarà visibile la griglia di evasione.   
 > 
-> **Visualizzazione tree evasione**: se attivo, nelle procedure di evasione ordine in DDT di conesgna o nel rientro sarà visibile la struttura gerarchica. Questi due flag posono essere attivati in concomitanza.    
+> **Visualizzazione tree evasione**: se attivo, nelle procedure di evasione ordine in DDT di consegna o nel rientro sarà visibile la struttura gerarchica. Questi due flag possono essere attivati in concomitanza.    
 
 **Codice operatore obbligatorio**: se attivo, permette di decidere se sia necessario inserire il codice operatore nel momento in cui si inserisce la DDT di consegna di conto lavoro.
 
