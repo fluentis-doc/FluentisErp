@@ -84,6 +84,9 @@ Dalla tabella **Scelte priorità schedulazione** è possibile trascinare con il 
 La priorità per *Sequenza fasi* e *CDL critici* non viene utilizzata nello standard ed è stata inserita per poter schedulare solo con delle procedure custom.
 ::: 
 
+Se non viene inserita nessuna priorità di schedulazione l'ordinamento verrà effettuato come segue:
+*Level descending > StartDate ascending > EndDate ascending > Id ascending*
+
 *Pulsanti specifici*:
 
 > **Ripristina priorità**: permette di ripristinare le priorità di default all'interno della tabella *Priorità schedulazione*.    
