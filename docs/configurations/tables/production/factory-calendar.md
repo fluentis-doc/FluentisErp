@@ -3,7 +3,7 @@ title: Calendario di fabbrica
 sidebar_position: 4
 ---
 
-Attraverso questa finestra è possibile generare e/o modificare il *Calendario di fabbrica* dell'azienda, elemento fondamentale che viene tenuto in considerazione dalle procedure di *Schedulazione Generale* ed *MRP*.
+Attraverso questa finestra è possibile generare e/o modificare il *Calendario di fabbrica* dell'azienda, elemento fondamentale che viene tenuto in considerazione dalle procedure di **Pianificazione generale**, **Schedulazione a capacità finita** ed **MRP**.
 
 La finestra si presenta come una tabella all'interno della quale vengono visualizzate tante caselle quanti sono i giorni del mese selezionato in alto a destra.  
 Nel primo campo si troverà il **Mese** e l'**Anno** di riferimento, che potranno essere selezionati tramite la combo e il campo editabile a lato o cliccando sui pulsanti **Anno precedente/Successivo** e **Mese precedente/successivo**.
