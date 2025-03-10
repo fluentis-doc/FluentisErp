@@ -3,13 +3,29 @@ title: Esposizione clienti
 sidebar_position: 2
 ---
 
-La maschera ‘Esposizione clienti' consente di avere un quadro generale complessivo di tutta la situazione di rischio nei confronti dei vari clienti, con la possibilità di ottenere dati per agente, nazione, raggruppando anche per gruppi societari. Vediamo in dettaglio le impostazioni presenti e i valori restituiti, considerando che i clienti presentati nella maschera sono quelli per i quali in anagrafica è stato inserito il flag ‘Esposizione clienti'.
+La form si trova in Tesoreria > Rischio Cliente > Procedure > Esposizione clienti
 
-La sezione iniziale dei parametri rischio cliente ripropone gli stessi parametri di default di calcolo impostati per il modulo, con in più il range di date registrazione utilizzato per il controllo rimesse (per i dettagli si veda il documento successivo).
+Consente di avere un quadro generale complessivo di tutta la situazione di rischio nei confronti dei vari clienti, con la possibilità di ottenere dati per agente, nazione, raggruppando anche per gruppi societari. 
 
-Nella sezione successiva della testata è possibile filtrare per un determinato responsabile (il dipendente che è stato associato all'anagrafica cliente, primo tab ‘amministrazione'), filtrare i clienti ‘Esteri' o ‘Italia', visualizzare i dati raggruppati per ‘gruppo societario' (verrà visualizzato un solo totale per il sottoconto inserito nel campo del ‘gruppo societario' presente nel tab amministrazione dell'anagrafica cliente invece che i singoli sottoconti cliente di dettaglio) e infine raggruppare (e filtrare) i dati per agente o nazione. Sulla destra è prevista la possibilità di ordinare i dati per codice di conto/sottoconto o per descrizione (ragione sociale) del cliente.
+## Come verificare l'esposizione clienti
 
-Passiamo ora a dettagliare i dati visualizzati in griglia (nella quale saranno visualizzate in rosso le righe con scostamento):
+1. Espandere, se necessario, la sezione dei filtri per inserire l'intervallo di date di riferimento entro cui verificare ed il criterio di raggruppamento desiderato (Per nazione, per agente o per cliente).
+
+2. Premere il tasto **Ricerca**: i clienti presentati nella maschera sono quelli per i quali in anagrafica è stato inserito il flag *Esposizione clienti*.
+
+:::note[Nota]
+La sezione iniziale dei *parametri rischio cliente* ripropone gli stessi parametri di default di calcolo impostati per il modulo, con in più il range di date registrazione utilizzato per il controllo rimesse (per i dettagli si veda il documento successivo).
+:::
+
+:::note[Ulteriori filtri disponibili]
+E' possibile filtrare per un determinato responsabile (il dipendente che è stato associato all'anagrafica cliente, primo tab *Amministrazione*), filtrare i clienti *Esteri* o *Italia*, visualizzare i dati raggruppati per *gruppo societario* (verrà visualizzato un solo totale per il sottoconto inserito nel campo del *gruppo societario* presente nel tab *amministrazione* dell'anagrafica cliente invece che i singoli sottoconti cliente di dettaglio) e infine raggruppare (e filtrare) i dati per agente o nazione. 
+
+E' prevista la possibilità di ordinare i dati per codice di conto/sottoconto o per descrizione (ragione sociale) del cliente.
+:::
+
+### Dati visualizzati in griglia 
+
+Saranno visualizzate in rosso le righe con scostamento.
 
 **Insoluti**: viene qui visualizzato l'importo degli insoluti non contabilizzati, oppure (se il flag in testata è inserito) anche quelli già contabilizzati;
 
@@ -21,7 +37,7 @@ Passiamo ora a dettagliare i dati visualizzati in griglia (nella quale saranno v
 
 **Fatturato**: è il fatturato (dall'area vendita, fatture di vendita) dall'inizio dell'anno;
 
-**DSO**: Days of Sales Outstanding, i giorni di rotazione del credito. La formula di calcolo è 365 * (Partite Dare – Partite avere + Effetti in scadenza + Insoluti + Fatture da contabilizzare) / Fatt. Ultimi 12 Mesi. Nel caso in cui il fatturato degli ultimi 12 mesi sia 0 allora anche il DSO sarà 0;
+**Giorni medi incasso**: Equivale all'indicatore denominato DSO (Days of Sales Outstanding), i giorni di rotazione del credito. La formula di calcolo è 365 * (Partite Dare – Partite avere + Effetti in scadenza + Insoluti + Fatture da contabilizzare) / Fatt. Ultimi 12 Mesi. Nel caso in cui il fatturato degli ultimi 12 mesi sia 0 allora anche il DSO sarà 0;
 
 **Fido **e** Fido assicurato**: importo del fido gestionale e del fido assicurato;
 
@@ -47,12 +63,11 @@ Dalla maschera dell'esposizione clienti è possibile: effettuare una stampa dei 
 
 
 
-| Funzione | Significato |
-| --- | --- |
-| Calcola | Pulsante per calcolare il rischio clienti secondo i filtri e le impostazioni indicate. |
-| Anteprima | Richiama la procedura di anteprima di stampa per il calcolo effettuato. |
-| Stampa | Richiama la procedura di stampa per il calcolo effettuato. |
-| Controllo rimesse | Richiama la procedura per aprire la maschera di controllo rimesse. |
+**Pulsanti specifici**
+
+**Calcola** Pulsante per calcolare il rischio clienti secondo i filtri e le impostazioni indicate.
+
+**Controllo rimesse** Richiama la procedura per aprire la maschera di controllo rimesse.
 
 
 
