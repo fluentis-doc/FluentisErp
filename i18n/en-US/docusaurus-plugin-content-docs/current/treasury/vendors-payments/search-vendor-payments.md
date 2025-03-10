@@ -30,7 +30,7 @@ RIBBON BAR: it represents the Form menu, that is the area in which it is possibl
 |  [Block Passive Maturity Values](/docs/treasury/vendors-payments/procedures/block-passive-maturity-values)  | Button to go on to manage massively the passive maturity values blocks. |
 |  [Automatic Vendor Payments Creation](/docs/treasury/vendors-payments/procedures/automatic-vendor-payments-creation/parameters-filter)  | Button to create a vendor payment automatically. |
 |  [Button to create a vendor payment automatically ](/docs/treasury/vendors-payments/procedures/payments-support-management)  | Button to manage payment support. |
-|  [Accounting](/docs/treasury/vendors-payments/accounting/filter)  | Button to account vendor payments. |
+|  [Accounting](/docs/treasury/vendors-payments/accounting/vendor-payments-accounting)  | Button to account vendor payments. |
 
 FILTER AREA: The filter area contains the list of the possible data types thanks to which it is possible to perform a selection, a research on the total of data inserted in system. Typically Filters have 'AND' condition and it is possible to specify more filter criteria at the same time.
 

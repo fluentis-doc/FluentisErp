@@ -32,8 +32,8 @@ sidebar_position: 3
 | RibbonFunction | RibbonMeaning |
 | --- | --- |
 |  [从发票获取账单](/docs/treasury/bills-holding/procedures/bills-acquisition-from-invoices/acquisition)  | 用于从到期发票自动创建账单 |
-|  [从到期值获取账单](/docs/treasury/bills-holding/procedures/bills-acquisition-from-maturity-values/bills-acquisition-from-maturity-values-intro)  | 用于从未结到期值自动创建账单 |
-|  [账单记账](/docs/treasury/bills-holding/accounting/bills-accounting/accounting)  | 用于账单结账，以及对客户账户结账 |
+|  [从到期值获取账单](/docs/treasury/bills-holding/procedures/bills-acquisition-from-maturity-values)  | 用于从未结到期值自动创建账单 |
+|  [账单记账](/docs/treasury/bills-holding/accounting/bills-accounting)  | 用于账单结账，以及对客户账户结账 |
 |  [供应商账单记账](/docs/treasury/bills-holding/accounting/bills-accounting-by-vendor/accounting)  | 用于针对供应商的账单结账，以及对供应商账户结账 |
 |  [清单记账](/docs/treasury/bills-holding/accounting/lists-accounting/accounting)  | 用于清单记账，以及对说明账户计价 |
 | 贷方记账  | 用于账户贷方的记账 |

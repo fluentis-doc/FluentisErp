@@ -32,8 +32,8 @@ RIBBON BAR: rappresenta il menu della Form in oggetto, ossia l'area nella quale 
 | Funzione | Significato |
 | --- | --- |
 |  [Acquisizione effetti dalle fatture](/docs/treasury/bills-holding/procedures/bills-acquisition-from-invoices/acquisition)  | Richiama la procedura per creare in automatico gli effetti dalle scadenze fatture. |
-|  [Acquisizione effetti dalle partite](/docs/treasury/bills-holding/procedures/bills-acquisition-from-maturity-values/bills-acquisition-from-maturity-values-intro)  | Richiama la procedura per creare in automatico gli effetti dalle partite aperte. |
-|  [Contabilizzazione effetti](/docs/treasury/bills-holding/accounting/bills-accounting/accounting)  | Richiama la procedura per effettuare la contabilizzazione effetti e chiudere il conto cliente. |
+|  [Acquisizione effetti dalle partite](/docs/treasury/bills-holding/procedures/bills-acquisition-from-maturity-values)  | Richiama la procedura per creare in automatico gli effetti dalle partite aperte. |
+|  [Contabilizzazione effetti](/docs/treasury/bills-holding/accounting/bills-accounting)  | Richiama la procedura per effettuare la contabilizzazione effetti e chiudere il conto cliente. |
 |  [Contabilizzazione effetti a fornitore](/docs/treasury/bills-holding/accounting/bills-accounting-by-vendor/accounting)  | Richiama la procedura per effettuare la contabilizzazione effetti a fornitore e chiudere il conto fornitore. |
 |  [Contabilizzazione distinte](/docs/treasury/bills-holding/accounting/lists-accounting/accounting)  | Richiama la procedura per effettuare la contabilizzazione della distinta e valorizzare il conto di presentazione. |
 |  Contabilizzazione accrediti  | Richiama la procedura per effettuare la contabilizzazione dell'accredito in conto. |

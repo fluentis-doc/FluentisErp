@@ -34,8 +34,8 @@ RIBBON BAR: it represents the Form menu, that is the area in which it is possibl
 | Function | Meaning |
 | --- | --- |
 |  [Bills from Invoices Issue](/docs/treasury/bills-holding/procedures/bills-acquisition-from-invoices/acquisition)  | It refers to the procedure to create automatically bills from invoices issue. |
-|  [Bills from Maturity Value Issue](/docs/treasury/bills-holding/procedures/bills-acquisition-from-maturity-values/bills-acquisition-from-maturity-values-intro)  | It refers to the procedure to create automatically the opened maturity value bills. |
-|  [Bills Accounting](/docs/treasury/bills-holding/accounting/bills-accounting/accounting)  | It refers to the procedure to perform bills accounting and to close customer account. |
+|  [Bills from Maturity Value Issue](/docs/treasury/bills-holding/procedures/bills-acquisition-from-maturity-values)  | It refers to the procedure to create automatically the opened maturity value bills. |
+|  [Bills Accounting](/docs/treasury/bills-holding/accounting/bills-accounting)  | It refers to the procedure to perform bills accounting and to close customer account. |
 |  [Bills Accouting by Vendor](/docs/treasury/bills-holding/accounting/bills-accounting-by-vendor/accounting)  | It refers to the procedure to perform bills accounting by vendor and to close vendor account. |
 |  [Lists Accounting](/docs/treasury/bills-holding/accounting/lists-accounting/accounting)  | It refers to the procedure to perform list accounting and to valorize presentation account. |
 | Credits Accounting  | It refers to the procedure to perform credits accounting in account. |

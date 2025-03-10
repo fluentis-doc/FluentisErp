@@ -32,8 +32,8 @@ RIBBON BAR: representa o menu do módulo em questão, ou seja, a área na qual 
 | RibbonFunction | RibbonMeaning |
 | --- | --- |
 |  [Aquisição efeitos pelas faturas](/docs/treasury/bills-holding/procedures/bills-acquisition-from-invoices/acquisition)  | Refere-se ao procedimento para criar em automático os efeitos pelos prazos das faturas. |
-|  [Aquisição efeitos pelas partidas](/docs/treasury/bills-holding/procedures/bills-acquisition-from-maturity-values/bills-acquisition-from-maturity-values-intro)  | Refere-se ao procedimento para criar em automático os efeitos pelas partidas abertas. |
-|  [Contabilização efeitos](/docs/treasury/bills-holding/accounting/bills-accounting/accounting)  | Refere-se ao procedimento para efetuar a contabilização efeitos e fechar a conta cliente. |
+|  [Aquisição efeitos pelas partidas](/docs/treasury/bills-holding/procedures/bills-acquisition-from-maturity-values)  | Refere-se ao procedimento para criar em automático os efeitos pelas partidas abertas. |
+|  [Contabilização efeitos](/docs/treasury/bills-holding/accounting/bills-accounting)  | Refere-se ao procedimento para efetuar a contabilização efeitos e fechar a conta cliente. |
 |  [Contabilização efeitos ao forncedor](/docs/treasury/bills-holding/accounting/bills-accounting-by-vendor/accountingo procedimento para efetuar a contabilização dos efeitos ao fornecedor e fechar a conta fornecedor. |
 |  [Contabilização listas](/docs/treasury/bills-holding/accounting/lists-accounting/accounting)  | Refere-se ao procedimento para efetuar a contabilização da lista e valorizar a conta de apresentação. |
 |  Contabilização créditos  | Refere-se ao procedimento para efetuar a contabilização do crédito na conta. |

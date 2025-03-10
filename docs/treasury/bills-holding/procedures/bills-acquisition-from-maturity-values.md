@@ -30,8 +30,6 @@ Questo è un filtro a monte, attivo per sicurezza, che è possibile gestire dall
 
 2. Seleziona con il mouse dalla griglia centrale le partite che desideri acquisire negli effetti. In base all'impostazione del flag *Raggruppa scadenze / Raggruppa note di accredito in effetti*, presente nelle [**anagrafiche clienti**](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/payments), ed al flag *Raggruppa note di accredito per data scadenza*, presente nei [**parametri portafoglio effetti**](/docs/configurations/parameters/treasury/bills-portfolio-parameters), le partite saranno accorpate (**a parità di banca d'appoggio e data scadenza**) oppure creeranno in ogni caso effetti distinti.
 
-
-
 3. Nella parte bassa della maschera imposta la **data di emissione** degli effetti ed il **tipo effetto**.
 
 La sezione di **contabilizzazione** può essere impostata di default all'interno dei parametri del modulo Portafoglio effetti. Può comunque essere attivata e disattivata da qui, prima di procedere a lanciare l'acquisizione.
@@ -46,32 +44,24 @@ Il flag di **gestione provvisoria** andrà a generare registrazioni contabili di
 La **gestione dell'acquisizione effetti dalle partite** è alternativa all'acquisizione dalle fatture.
 :::
 
-4. Premi il bottone nella ribbon bar **Acquisizione** per avviare la procedura
+4. Premi il bottone nella ribbon bar **Acquisizione** per avviare la procedura.
 
+#### Pulsanti specifici
 
-**Pulsanti specifici:**
+> **Ricerca**: Ricerca la lista delle partite per le quali creare gli effetti.
 
-**Ricerca**: Ricerca la lista delle partite per le quali creare gli effetti.
+> **Acquisizione** Esegue la creazione degli effetti per le partite selezionate.
 
-**Acquisizione** Esegue la creazione degli effetti per le partite selezionate.
-
-### Tab Precedenti
+### Precedenti
 
 Eseguita la creazione, le righe spariranno dalla griglia del *filtro* e il risultato sarà visibile nella scheda **Precedenti** all'interno della quale è possibile annullare l'operazione. 
 
 Non è possibile annullare la creazione di effetti se questi sono contabilizzati o presentati in distinta.
 
+#### Pulsanti specifici
 
-**Pulsanti specifici:**
+> **Ricerca**: Ricerca la lista delle creazioni eseguite.
 
-**Ricerca**: Ricerca la lista delle creazioni eseguite.
+> **Rollback acquisizione**: Con questo pulsante sarà cancellata tutta l'acquisizione effettuata, con tutti gli effetti associati.
 
-**Rollback acquisizione**: Con questo pulsante sarà cancellata tutta l'acquisizione effettuata, con tutti gli effetti associati.
-
-**Rollback effetto**: Con questo pulsante sarà cancellata la creazione del singolo effetto selezionato.
-
-
-
-
-
-
+> **Rollback effetto**: Con questo pulsante sarà cancellata la creazione del singolo effetto selezionato.

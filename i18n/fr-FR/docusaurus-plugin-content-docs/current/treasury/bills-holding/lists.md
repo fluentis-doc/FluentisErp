@@ -32,8 +32,8 @@ RIBBON BAR: il représente le menu de la forme en objet, à savoir la zone dan
 | RibbonFunction | RibbonMeaning |
 | --- | --- |
 |  [Acquisition effets par les factures](/docs/treasury/bills-holding/procedures/bills-acquisition-from-invoices/acquisition)  | Il se réfère à la procédure pour créer en automatique les effets par les échéances factures. |
-|  [Acquisition effets par les comptes](/docs/treasury/bills-holding/procedures/bills-acquisition-from-maturity-values/bills-acquisition-from-maturity-values-intro)  | Il se réfère à la procédure pour créer en automatique les effets par les comptes ouverts. |
-|  [Comptabilisation effets](/docs/treasury/bills-holding/accounting/bills-accounting/accounting)  | Il se réfère à la procédure pour effectuer la comptabilisation effets et fermer le compte client. |
+|  [Acquisition effets par les comptes](/docs/treasury/bills-holding/procedures/bills-acquisition-from-maturity-values)  | Il se réfère à la procédure pour créer en automatique les effets par les comptes ouverts. |
+|  [Comptabilisation effets](/docs/treasury/bills-holding/accounting/bills-accounting)  | Il se réfère à la procédure pour effectuer la comptabilisation effets et fermer le compte client. |
 |  [Comptabilisation effets à fournisseur](/docs/treasury/bills-holding/accounting/bills-accounting-by-vendor/accounting)  | Il se réfère à la procédure pour effectuer la comptabilisation effets à fournisseur et fermer le compte fournisseur. |
 |  [Comptabilisation registres](/docs/treasury/bills-holding/accounting/lists-accounting/accounting)  | Il se réfère à la procédure pour effectuer la comptabilisation du registre et valoriser le compte de présentation. |
 |  Comptabilisation crédits  | Il se réfère à la procédure pour effectuer la comptabilisation du crédit en compte. |

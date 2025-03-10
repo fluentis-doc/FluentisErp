@@ -29,8 +29,8 @@ RIBBON BAR: reprezintă meniul Form-ului în discuţie. Mai precis, aria în car
 | Functie | Functionalitate |
 | --- | --- |
 |  [Preluare efecte din facturi](/docs/treasury/bills-holding/procedures/bills-acquisition-from-invoices/acquisition)  | Buton pentru crearea automată a efectelor din scadențe facturi. |
-|  [Preluare efecte din angajamente](/docs/treasury/bills-holding/procedures/bills-acquisition-from-maturity-values/bills-acquisition-from-maturity-values-intro)  | Buton pentru crearea automată a efectelor din angajamente deschise. |
-|  [Contabilizare efecte](/docs/treasury/bills-holding/accounting/bills-accounting/accounting)  | Buton pentru contabilizarea efectelor și pentru închiderea contului client. |
+|  [Preluare efecte din angajamente](/docs/treasury/bills-holding/procedures/bills-acquisition-from-maturity-values)  | Buton pentru crearea automată a efectelor din angajamente deschise. |
+|  [Contabilizare efecte](/docs/treasury/bills-holding/accounting/bills-accounting)  | Buton pentru contabilizarea efectelor și pentru închiderea contului client. |
 |  [Contabilizare efecte la furnizor](/docs/treasury/bills-holding/accounting/bills-accounting-by-vendor/accountingu contabilizarea efectelor la furnizor și pentru închiderea contului furnizor. |
 |  [Contabilizare liste](/docs/treasury/bills-holding/accounting/lists-accounting/accounting)  | Buton pentru contabilizarea listei și pentru valorizarea contului de prezentare. |
 |  Contabilizare acredite  | Buton pentru contabilizarea acredtului în cont. |
