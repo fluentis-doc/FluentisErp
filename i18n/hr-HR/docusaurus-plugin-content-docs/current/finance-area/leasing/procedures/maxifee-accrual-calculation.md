@@ -53,7 +53,7 @@ La procedura di contabilizzazione può essere eseguita dalla presente form attra
 
 Sempre da questa posizione è possibile eseguire anche il ripristino della procedura di contabilizzazione.
 
-Il risconto Maxicanone calcolato e contabilizzato come sopra illustrato può essere gestito automaticamente anche nella fase di riapertura automatica conti (attivabile dalla **[Chiusura automatica conti](/docs/finance-area/ledger-records/records/automatic-account-closing/new/parameters-tab)**) attivando il flag Giroconto scritture di assestamento.
+Il risconto Maxicanone calcolato e contabilizzato come sopra illustrato può essere gestito automaticamente anche nella fase di riapertura automatica conti (attivabile dalla **[Chiusura automatica conti](/docs/finance-area/ledger-records/records/automatic-account-closing/new-account-closing)**) attivando il flag Giroconto scritture di assestamento.
 
 In questo caso saranno eseguite automaticamente le consuete scritture di riapertura dei risconti per maxicanone, accodandole alle altre scritture automatiche di apertura saldi e giroconti degli altri ratei e risconti attivi e passivi.
 
