@@ -1,20 +1,20 @@
 ---
-title: Tipi imballo
+title: Packing Types 
 sidebar_position: 29
 ---
 
-La tabella si trova sul percorso **Tabelle > Logistica > Tipi imballo**.
+The table is located at **Tables > Logistics > Packing Types**.
 
-In questa tabella è possibile codificare i diversi *Tipi imballo*.
+In this table, it is possible to code the various *Packing Types*.
 
-Consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+It allows for the insertion of new records or searching for existing ones to view, modify, or delete them.
 
-**Ricerca Tipi imballo**
+**Search Packing Types**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+The form consists of a filter area and a results area. Once all desired filters are set, simply click the **Search** button to display the results within the results grid.
 
-**Inserimento Tipi imballo**
+**Insert Packing Types**
 
-Per poter inserire nuove codifiche è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.
+To insert new codes, click on the first empty row in the grid or press the **New** button.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+For anything not detailed in this document regarding the common functionality of the forms, please refer to the following link [Custom Features, Buttons, and Fields](/docs/guide/common).

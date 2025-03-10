@@ -1,21 +1,21 @@
 ---
-title: Tipi automezzo
+title: Motorvehicle Types 
 sidebar_position: 25
 ---
 
-La tabella si trova sul percorso **Tabelle > Logistica > Tipi automezzo**.
+The table is found at the path **Tables > Logistics > Motorvehicle Types**.
 
-In questa tabella è possibile gestire la codifica dei diversi *Tipi automezzo* utilizzati nella [Gestione automezzo](/docs/logistics/motorvehicles/motorvehicle-management).    
+In this table, it is possible to manage the coding of the different *Motorvehicle Types* used in [Motorvehicle Management](/docs/logistics/motorvehicles/motorvehicle-management).    
 
-Consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+It allows for the insertion of new records or the search for existing ones to view, modify, or delete them.
 
-**Ricerca Tipo automezzo**
+**Search Motorvehicle Type**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+The form consists of a filter area and a result area. Once all the desired filters are set, simply click the **Search** button to display the results within the result grid.
 
-**Inserimento Tipo automezzo**
+**Insert Motorvehicle Type**
 
-Per poter inserire nuove codifiche è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.   
-Per il nuovo record si devono inserire i campi obbligatori richiesti dal programma: il **Codice** e la **Descrizione**.
+To insert new codings, it is necessary to click on the first empty row in the grid or press the **New** button.   
+For the new record, the mandatory fields required by the program must be filled in: the **Code** and the **Description**.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+For anything not detailed in this document regarding the common operation of forms, please refer to the following link [Custom features, buttons, and fields](/docs/guide/common).

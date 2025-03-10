@@ -1,27 +1,27 @@
 ---
-title: Proprietà autoveicolo
+title: Motorvehicle Ownership
 sidebar_position: 57
 ---
 
-La tabella si trova sul percorso **Tabelle > Logistica > Proprietà autoveicolo**.
+The table is located on the path **Tables > Logistics > Motorvehicle Ownership**.
 
-In questa tabella è possibile codificare le tipologie di *Proprietà autoveicolo* che potranno essere selezionati nell'[Angrafica automezzi](/docs/logistics/motorvehicles/motorvehicle).
+In this table, it is possible to code the types of *Motorvehicle Ownership* that can be selected in the [Motorvehicle Registry](/docs/logistics/motorvehicles/motorvehicle).
 
-La tabella consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+The table allows you to insert new records or search for existing ones to view, modify, or delete them.
 
-**Ricerca Proprietà autoveicolo**
+**Search Motorvehicle Ownership**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+The form consists of a filter area and a results area. Once all desired filters are set, simply click on the **Search** button to display the results within the results grid.
 
-**Inserimento Proprietà autoveicolo**
+**Insert Motorvehicle Ownership**
 
-Per poter inserire nuovi è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.     
-Per il nuovo record si devono inserire almeno i campi obbligatori richiesti dal programma: il **Codice** e la **Descrizione**.          
-Inoltre, per ogni tipologia è possibile indicare se sia:
-- **Asset**: indica che il mezzo è di proprietà;
-- **Leasing**: indica che il mezzo è in leasing;
-- **Noleggio**: indica che il mezzo è a noleggio.
+To insert new records, you must click on the first empty row in the grid or press the **New** button.     
+For the new record, you must enter at least the mandatory fields required by the program: **Code** and **Description**.          
+Additionally, for each type, it is possible to indicate whether it is:
+- **Asset**: indicates that the vehicle is owned;
+- **Leasing**: indicates that the vehicle is leased;
+- **Rental**: indicates that the vehicle is for rent.
 
-Con il pulsante **Cancella** è possibile eliminare il record selezionata.
+With the **Cancel** button, you can delete the selected record.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common). 
+For anything not detailed in this document regarding the common functionality of the forms, please refer to the following link [Custom features, Buttons, and Fields](/docs/guide/common).

@@ -1,5 +1,5 @@
 ---
-title: Configurazione oggetto
+title: Object Configuration
 sidebar_position: 49
 ---
 

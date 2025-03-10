@@ -1,21 +1,21 @@
 ---
-title: Imballi
+title: Packings 
 sidebar_position: 14
 ---
 
-La tabella si trova sul percorso **Tabelle > Logistica > Imballi**.
+The table is located at **Tables > Logistics > Packings**.
 
-In questa tabella è possibile codificare le diverse tipologie di *Imballi* da inserire nella testata di un documento sotto la voce *Spedizioni*.
+In this table, it is possible to encode the different types of *Packings* to be included in the header of a document under the *Shippings* section.
 
-Consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+It allows you to insert new records or search for existing ones to view, modify, or delete them.
 
-**Ricerca Imballi**
+**Search Packings**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+The form consists of a filter area and a result area. Once all desired filters are set, simply click the **Search** button to display the results within the result grid.
 
-**Inserimento Imballi**
+**Insert Packings**
 
-Per poter inserire nuove codifiche è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.  
-Per il nuovo record si devono inserire i campi obbligatori richiesti dal programma: un **Codice** alfanumerico e la sua **Descrizione**.  
+To insert new codes, you need to click on the first empty row in the grid or press the **New** button.  
+For the new record, you must enter the mandatory fields required by the program: an alphanumeric **Code** and its **Description**.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+For anything not detailed in this document regarding the common operation of forms, please refer to the following link [Custom Features, Buttons, and Fields](/docs/guide/common).

@@ -1,20 +1,20 @@
 ---
-title: Tipi UDC
+title: Loading Unit Types
 sidebar_position: 37
 ---
 
-La tabella di inserimento dei tipi UDC è una tabella di base per l'utilizzo delle unità di carico. Nello specifico vengono definiti i tipi imballo e relativi dati che serviranno per la creazione e l'ottimizzazione dei piani di carico (come per esempio pesi e dimensioni).
+The Loading Unit types entry table is a base table for the use of loading units. Specifically, it defines the packaging types and related data that will be used for creating and optimizing loading plans (such as weights and dimensions).
 
-La tabella consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+The table allows for the insertion of new records or the search for existing ones to view, modify, or delete them.
 
-**Ricerca Tipi gruppo UDC**
+**Search Loading Unit Types**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+The form is composed of a filter area and a results area. Once all desired filters are set, simply click the **Search** button to view the results in the results grid.
 
-**Inserimento tipi UDC**
+**Insert Loading Unit Types**
 
-Per poter inserire nuove codifiche è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**. 
+To insert new codes, you need to click on the first empty row in the grid or press the **New** button.
 
-Per il nuovo record si devono inserire almeno i campi obbligatori richiesti dal programma: Tipo, Descrizione, Tipo gruppo (proposto dalla tabella *Tipi gruppo UDC*), Numerazione. 
+For the new record, you must enter at least the mandatory fields required by the program: Type, Description, Group Type (proposed by the *Loading Unit Group Types* table), Numeration.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+For everything not detailed in this document regarding the common functionality of the forms, please refer to the following link [Custom features, buttons, and fields](/docs/guide/common).

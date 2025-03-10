@@ -1,40 +1,40 @@
 ---
-title: Imballi a rendere
+title: Package To Be Returned
 sidebar_position: 15
 ---
 
-La tabella si trova sul percorso **Tabelle > Logistica > Imballi a rendere**.
+The table is located on the path **Tables > Logistics > Package To Be Returned**.
 
-In questa tabella è possibile codificare i diversi *Imballi a rendere* da utilizzare nella *Gestione imballi* nei documenti di acquisto, vendita e conto lavoro.
+In this table, it is possible to code the various *Package To Be Returned* to be used in *Packages Management* in purchase, sales, and job order documents.
 
-Consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+It allows for the insertion of new records or the search for existing ones to view, modify, or delete them.
 
-**Ricerca Imballi a rendere**
+**Search Package To Be Returned**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+The form consists of a filter area and a results area. Once all desired filters are set, simply click the **Search** button to display the results in the results grid.
 
-**Inserimento Imballi a rendere**
+**Insert Package To Be Returned**
 
-Per poter inserire nuove codifiche è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Inserimento**.  
+To insert new codes, it is necessary to click on the first empty row in the grid or press the **Insert** button.
 
-Questa tabella contiene gli articoli che sono da considerarsi *Imballi a rendere* per la tracciabilità della giacenza. L’articolo inserito in questa tabella deve avere come Natura articolo: *Imballo* (la Natura articolo si inserisce in Anagrafica articolo, tab [Generalità](/docs/erp-home/registers/items/create-new-items/item-registry/generality)).     
-Attraverso i flag in griglia è possibile scegliere in quali aree l'articolo sarà gestibile per essere movimentato.    
+This table contains the items that are to be considered *Package To Be Returned* for the traceability of inventory. The item inserted in this table must have as Item Nature: *Packing* (the Item Nature is entered in the Item Registry, [Generality tab](/docs/erp-home/registers/items/create-new-items/item-registry/generality)).     
+Through the flags in the grid, it is possible to choose in which areas the item will be manageable for movement.
 
-*Dati obbligatori*: 
+*Mandatory data*: 
 
-> **Codice**: è il codice dell'*Imballo a rendere*;     
-> **Descrizione**: è la descrizione dell'*Imballo a rendere*;   
-> **Classe articolo**: indica la [Classe](/docs/configurations/tables/logistics/item-class) a cui appartiene l'articolo;   
-> **Codice articolo**: indica il codice dell'articolo.    
+> **Code**: this is the code of the *Package To Be Returned*;     
+> **Description**: this is the description of the *Package To Be Returned*;   
+> **Item class**: indicates the [Class](/docs/configurations/tables/logistics/item-class) to which the item belongs;   
+> **Item code**: indicates the code of the item.
 
-*Campi specifici*: 
+*Specific fields*: 
 
-> **Utilizzo negli acquisti**:  attivando questo flag l'imballo sarà visibile nei documenti dell'area acquisti;     
-> **Utilizzo nel conto lavoro**: attivando questo flag l'imballo sarà visibile nei documenti dell'area conto lavoro;   
-> **Utilizzo nelle vendite**: attivando questo flag l'imballo sarà visibile nei documenti dell'area vendite.   
+> **Use in purchases**: by activating this flag, the packaging will be visible in the documents of the purchasing area;     
+> **Use in subcontracting**: by activating this flag, the packaging will be visible in the documents of the job order area;   
+> **Use in sales**: by activating this flag, the packaging will be visible in the documents of the sales area.    
 
-Infine è possibile inserire **Magazzino** e **Causale** da utilizzare per l'articolo per ciascuna area.
+Finally, it is possible to insert **Warehouse** and **Reason** to be used for the item for each area.
 
-Una volta parametrizzata questa tabella, nei documenti che lo prevedono sarà possibile aprire la form degli imballi a rendere con il ribbon button **Gestione Imballi**. Il bottone aprirà la procedura di *Gestione imballi*, già compilata con gli imballi definiti nella tabella *Imballi a rendere*, in modo che l’utente debba solo inserire le quantità.   
+Once this table is parameterized, in the documents that require it, it will be possible to open the package to be returned form with the ribbon button **Packages Management**. The button will open the *Packages Management* procedure, already filled in with the packagings defined in the *Package To Be Returned* table, so that the user only needs to enter the quantities.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+For anything not detailed in this document regarding the common functioning of the forms, refer to the following link [Custom features, buttons, and fields](/docs/guide/common).
