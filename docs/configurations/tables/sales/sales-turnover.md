@@ -19,7 +19,7 @@ Per poter inserire record è necessario cliccare sulla prima riga vuota della gr
 
 **Tipo IVA**: utilizzato nella registrazione della contabilizzazione del documento. Solitamente è impostatato a generico, per altri dettagli verificarne l'utilizzo nelle causali contabili e nelle registrazioni contabili in area amministrativa;
 
-**Tipo importo**: utilizzato nella registrazione della contabilizzazione del documento. Per altri dettagli verificarne l' [utilizzo](/docs/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates/attributes-detail)  contabile nelle registrazioni contabili in area amministrativa.
+**Tipo importo**: utilizzato nella registrazione della contabilizzazione del documento. Per altri dettagli verificarne l' [utilizzo](/docs/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates)  contabile nelle registrazioni contabili in area amministrativa.
 
 **Famiglia prodotti/Descrizione famiglia prodotti**: campo di assegnazione statistica della vendita per il Sales Forecast del Crm.
 
