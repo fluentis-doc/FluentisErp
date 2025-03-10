@@ -1,134 +1,143 @@
 ---
-title: Attributes Detail
+title: Dettaglio attributi
 sidebar_position: 2
 ---
 
-Fields of the **Attributes Detail** form are the following:
 
-**Automatic Template**: During the save of a template recording the program will automatically create a second recording, based on the template of this field. In order to compile the second recording properly, it is necessary to respect the following parameters, established between the two recordings:
+ 
 
+I campi del form **Dettaglio attributi** sono:
 
+**Causale automatica**: al momento del salvataggio di una registrazione basata sulla causale che è in modifica il programma andrà a creare automaticamente una seconda registrazione basata sulla causale indicata in questo campo. Affinché la seconda registrazione sia compilata correttamente si devono rispettare le seguenti logiche di relazione tra le due registrazioni:
 
-a) the first recording is with IntraCEE purchases VAT movement type und the second is with IntraCEE purchases VAT Giro, where the connection is established thanks to the purchases VAT survey even in sales register;
+a) il primo caso è quello in cui la prima registrazione è con tipo movimento IVA acquisti IntraCEE e la seconda con Giroconto IVA acquisti IntraCEE, nella quale il legame è dato dalla rilevazione dell'IVA Acquisti anche nel registro Vendite; (allo stesso modo si ha lil caso del reverse charge, utilizzando i tipi movimento IVA acquisti in reverse charge e Giroconto IVA acquisti reverse charge);
 
+b) il secondo caso è quello in cui la prima registrazione apre una partita mentre la seconda ne opera la chiusura immediata; 
 
+c) il terzo caso è relativo alla registrazione di chiusura di una partita nata con tipo movimento ‘IVA vendita a Enti pubblici' per la quale l'IVA è in sospensione, caso in cui si collega una registrazione di Giroconto IVA in sospensione;
 
-b) the first recording opens a maturity value, while the second one closes the maturity value immediately;
+d) il quarto caso è l'acquisto con IVA in sospensione, inverso al precedente 
 
+e) il quinto caso è quello in cui la prima registrazione è IVA, mentre la seconda è valorizzata con la logica dei sottoconti automatici impostati nel piano dei conti 
 
+f) quando non sono presenti i casi precedenti il programma cercherà di impostare i dati della seconda registrazione sulla base dei dati IVA della prima; in alternativa la seconda registrazione sarà generata riportando i sottoconti previsti senza alcun valore impostato.
 
-c) the present case is concerning the closing recording of a maturity value, that exists as a ‘Sales VAT to local governments' movement type and where the VAT is in suspension. This third situation creates a link with the recording of VAT Giro in suspencion; 
 
+**Tipo autofattura automatica**: vedere la sezione specifica alle [**configurazioni delle autofatture automatiche**](/docs/finance-area/e-invoice/auto-invoice/ledger-templates)
 
+**Inversione colonne se importo è minore di zero**: È possibile fare in modo che il programma inverta le colonne Dare/Avere di movimentazione sulla base del segno del movimento IVA, tipicamente nel caso di registrazione di note di accredito (di questo campo è consigliato la selezione per tutte le registrazioni IVA).
 
-d) the fourth case refers to the purchase with VAT in suspencion;
+**Avviso**: Il campo è attivo solo se il precedente è stato attivato, consiste nel ritornare all'utente un messaggio di avvertimento dell'inversione del segno. Il flag è ininfluente per causali utilizzate nelle procedure automatiche di contabilizzazione.
 
+**Consenti sottoconti con valori a zero**: con questo flag la procedura:
 
+a) consentirà di inserire manualmente righe con importo sia dare che avere uguale a zero 
 
-f) the first recording is VAT, while the second one is valorized with the logic of the automatic detail accounts in the chart of accounts;
+b) al momento del salvataggio della registrazione NON andrà a cancellare le righe riportate dalla causale e non valorizzate dall'utente nella registrazione 
 
+c) le righe che valorizzano nel libro giornale il debito/credito IVA questo flag comporterà comunque la cancellazione dell'importo a zero ma solo a condizione che non sia stato anche inserito il flag ‘Consenti Iva 0 in LG' nella tabella delle [Aliquote modalità IVA](/docs/configurations/tables/finance/vat-rates).
 
+ESEMPI:
 
-g) when there are not the previous cases, the program will attempt to set data of the second recording according to the VAT data of the first recording; as an alternative to that, the second recording will create by taking back the detail accounts without any defined value. 
+- segliendo di impostare il flag disattivato si può sfruttare la funzionalità per inserire nel modello di registrazione proposto dalla causale tutti i conti potenzialmente utili i quali, se non verranno movimentati, non saranno poi mantenuti al momento del salvataggio della registrazione. Si pensi ad esempio alle scritture dei dipendenti, buste paga ecc... per i quali non sempre si utilizzano gli stessi conti ogni mese benchè i conti possibili siano svariati.
 
-**Reverse Columns if the Amount Is Less than Zero**: it is possible to reverse debit/credit columns of movement according to mark of VAT movement (for this field it's recommended the selection for all VAT recordings).
+- scegliendo di mantenere il flag attivo potranno essere inseriti sottoconti con movimento a zero, situazione che si verifica spesso registrando le utenze telefoniche o elettriche, ad esempio.
 
-**Warning**: the field is active only if the previous one has been activated and consists to give user a warning about the sign inversion. The flag is non-influential as regards to templates used in the automatic accounting procedures.
+ 
 
-**Allow Detail Account with Zero Values**: thanks to this flag the procedure:
+**Prototipo della registrazione**: questa è la sezione fondamentale (ma non obbligatoria) della causale di contabilità, nella quale va caricato lo schema tipico del tipo di registrazione contabile da gestire. È possibile inserire anche codici generici di conto (es. il conto fornitori), che saranno aggiornati automaticamente dal programma sulla base della lista conti clienti/fornitori inseriti nei Parametri di contabilità generale. Questi sottoconti, così come le sezioni dare/avere, guideranno le valorizzazioni contabili, che saranno comunque modificabili nel corso del caricamento manuale della registrazione.
 
-a) will help user to enter lines manually with both debit and credit amount same as zero;
+![](/img/it-it/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates/attributes-detail/image02.png)
 
 
 
-b) at the moment of the recording save the procedure WILL NOT cancel lines from template, which are not valorized by user in recording;
+[Tipo importo](#amount-type)
 
 
+Meritano spiegazioni specifiche i codici di Tipo importo, fondamentali per valorizzare automaticamente il libro giornale sulla base dei dati iva e di partitario movimentati nella registrazione. In particolare:
 
-c) this flag will delete the zero amount in the lines, which valorize the debit/credit in journal, that only if there is not the insertion of the flag ‘Consent VAT 0 in journal' in table of ‘VAT rate mode'.
+**Manuale**: indica che la riga sarà valorizzata manualmente dall'utente all'atto della registrazione;
 
-**Recording Prototype**: this is the most important (but not obligatory) section of the ledger template, where it is necessary to upload the typical scheme of the ledger recording type to manage. It is possible also to enter account general codes (e.g. vendors account), that will update automatically by program according to the customers/vendors list in the general ledger parameters. These detail accounts, as well as debit/credit sections, will manage the accounting valorizations, that could be edited in the course of the recording hand loading. 
+**Imponibile sottoconto**: indica che la riga sarà aggiornata per ogni codice di sottoconto inserito nella sezione Iva con l'importo ottenuto dall'imponibile della/e riga/e stessa/e; l'uso di questo tipo importo è **consigliato tipicamente per tutti i ricavi inseriti nelle causali di vendita**;
 
-The amount type codes are fundamental in order to valorize journal automatically on the base of VAT data and ledger in recording movements.
+**Totale imponibile**: indica che la riga sarà aggiornata con il totale imponibile della registrazione: nessuna considerazione sarà effettuata sul codice di conto/sottoconto inserito. ESEMPI: Vendita con regime dello split payment o vendita intra comunitaria; 
 
-In particular:
+**Totale imposta**: indica che la riga sarà aggiornata con il totale imposta della registrazione: nessuna considerazione sarà effettuata sul codice di conto/sottoconto inserito;
 
+**Imposta detraibile**: indica che la riga sarà aggiornata con il totale dell'imposta detraibile della registrazione: nessuna considerazione sarà effettuata sul codice di conto/sottoconto inserito;
 
+**Tot. Doc/Registrazione**: indica che la riga sarà aggiornata con il codice del sottoconto intestatario della registrazione (se conforme alle combinazioni inserite nei Parametri di contabilità) per il valore totale del documento/registrazione;
 
-**Manual**: it indicates that line will valorize manually by user during the recording stage;
+**Imponibile+Imposta Indetraibile**: indica che la riga sarà aggiornata con il totale imponibile sommato del totale imposta indetraibile della registrazione: nessuna considerazione sarà effettuata sul codice di conto/sottoconto inserito; Tipo di movimento di scarsa applicazione - conviene utilizzare  **Imp. Sott.+Imposta indetr. Sott**.
 
 
 
-**Taxable income of the detail account**: it indicates that line will be update according to every detail account code in VAT section and with the amount of the same taxable income; the use of this amount is recommended especially for all revenues within the sales templates;  
+**50% Imponibile**: indica che la riga sarà aggiornata con il 50% del totale imponibile della registrazione: nessuna considerazione sarà effettuata sul codice di conto/sottoconto inserito;
 
+**50% Imponibile+Iva indetraibile**: indica che la riga sarà aggiornata con il 50% del totale imponibile della registrazione sommato del totale dell'iva indetraibile della stessa: nessuna considerazione sarà effettuata sul codice di conto/sottoconto inserito;
 
+**50% Impon.+ 50% Iva Indetraibile**: indica che la riga sarà aggiornata con il 50% del totale imponibile della registrazione sommato del 50% dell'iva indetraibile della stessa: nessuna considerazione sarà effettuata sul codice di conto/sottoconto inserito;
 
-**Total amount origin**: it indicates that line will be update with the total taxable income of the recording. No considerations will be made on the entered account/detail account code;
+CREATI PER RAGIONI FISCALI E DA CONSIDERARE OBSOLETI
 
 
 
-**Total VAT value**: it indicates that line will be update with the recording total VAT value. No considerations will be made on the entered account/detail account code;
+**Imp. Sott.+Imposta indetr. Sott**.: indica che la riga sarà aggiornata per ogni codice di sottoconto inserito nella sezione IVA con l'importo ottenuto dalla somma dell'imponibile della/e riga/e stessa/e e della relativa imposta indetraibile; **l'uso di questo tipo importo è consigliato tipicamente per tutti i costi inseriti nelle causali d'acquisto;**
 
+**Arrotondamenti Attivi**: indica che la riga sarà aggiornata con l'importo degli arrotondamenti attivi; l'uso è da collegarsi a causali di chiusura partite;
 
+**Arrotondamenti Passivi**: indica che la riga sarà aggiornata con l'importo degli arrotondamenti passivi; l'uso è da collegarsi a causali di chiusura partite;
 
-**Deductible VAT**: it indicates that line will be update with the total deductible VAT of the recording. No considerations will be made on the entered account/detail account code;
+**Importo Sottoconto**: indica che la riga sarà aggiornata con l'importo dei pagamenti partite inserite nella registrazione, secondo il segno del pagamento stesso;
 
+**Utile Diff. Cambi**: indica che la riga sarà aggiornata con il sottoconto di utile della divisa di riferimento della differenza cambi, per l'importo ottenuto secondo il differenziale di valorizzazione tra cambio storico e cambio di chiusura della partita; in caso sia stato impostato il flag di chiusura al cambio storico la riga non avrà valorizzazione alcuna;
 
+**Perd. Diff. Cambi**: indica che la riga sarà aggiornata con il sottoconto di perdita della divisa di riferimento della differenza cambi, per l'importo ottenuto secondo il differenziale di valorizzazione tra cambio storico e cambio di chiusura della partita; in caso sia stato impostato il flag di chiusura al cambio storico la riga non avrà valorizzazione alcuna;
 
-**Tot. Doc/Recording**: it indicates that line will be update with the detail account holder of the recording (if pursuant to ledger parameters) and according to the total value of the document/recording;
+**Automatico**: tipo importo utilizzato in alcune procedure di contabilizzazione automatica.
 
+ESEMPIO: Si imposta nelle causali di vendita cespite per gestire la plus-minusvalenza, per il resto è impostato dal sistema nelle procedure di contabilizzazione automatica.
 
+ 
 
-**Taxable income+deductible VAT**: indicate that line will be update with the total taxable income added to total deductible VAT of the recording. No considerations will be made on the entered account/detail account code;
+La griglia si completa con: 
 
+- un campo di codifica delle contropartite (ne è sconsigliato l'uso: in contabilità è già presente una stampa - "Estratto conto con contropartite" - che visualizza le contropartite indipendentemente da questa impostazione). Inoltre attivando il flag che permtte di visualizzare i sottoconti di contropartita (tab Dettaglio Registrazione)
 
+![](/img/it-it/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates/attributes-detail/image03.png)
 
-**50% Taxable income**: it indicates that line will be update with 50% total taxable income of the recording. No considerations will be made on the entered account/detail account code;
+questi campi saranno gestiti in automatico; per questo motivo non è consigliato gestirli manualmente imponendoli nella causale.
 
+In corripondenza dei conti iva a credito (o a debito) e costo (o ricavo), ad esempio, vengono riportate le indicazioni del fornitore (o cliente), mentre sul fornitore (o cliente) viene riportato il conto di contropartita del costo o ricavo, nel caso in cui ci siano più conti di contropartita viene riportato quello di importo maggiore (gli altri eventuali vengono ignorati).
 
+ 
 
-**50% Taxable income+Nondeductible VAT**: indicate that line will be update with 50% total taxable income of the recording added to total nondeductible VAT of the same one. No considerations will be made on the entered account/detail account code;
+- un campo di note di dettaglio: in questo campo è possibile utilizzare tutti i codici riportati alla base della maschera.  
 
+**Per causali di chiusura partite** inserire in corrispondenza del conto clienti/fornitori generico i **codici (8) o (9)** in concomitanza con il **flag ‘Rif. doc. partita in pag.'** (situato nel tab Dettaglio Registrazione) per annotare in contabilità i riferimenti dei documenti pagati/incassati.
 
+Prestare attenzione che il conto generico presente nella cusale (esempio "Fornitori Italia") sia effettivamente gestito nei  [Parametri di contabilità](/docs/configurations/parameters/finance/accounting-parameters)  in abbinamento al tipo conto corretto (es. FIT nel db standard Fluentis). Controllare inoltre che il tipo importo in corrispondenza della riga del cliente o fornitore sia correttamente settato su Importo sottoconto.
 
-**50% tax.inc.+ 50% Nondeductible VAT**: indicate that line will be update with 50% of recording total taxable income added to 50% of the nondeductible VAT of the same one. No considerations will be made on the entered account/detail account code;
+ 
 
+![](/img/it-it/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates/attributes-detail/image04.png)
 
+ 
 
-**Tax. Inc. of detail account+detail account nondeductible VAT**: indicate that line will be update according to every detail account in VAT section with the amount obtained through the taxable income and its nondeductible VAT. The use of this amount is recommended to all costs within the purchase templates;
+**Imposta detr. e sottoconto IVA**: tipo importo utilizzato per valorizzare la riga relativa all'IVA con l'importo detraibile dell'IVA e con il sottoconto individuato secondo il ‘Tipo contabilizzazione IVA' associato in via prioritaria all'anagrafica intestataria della registrazione o di default nei ‘Parametri di contabilità generale'.
 
+Impostazione non utilizzata in Italia, utile per localizzazioni estere, esempio Croazia, per legare il conto dell'iva all'aliquota utilizzata (esempio se viene utilizzata l'aliquota IVA 10% verrà associato il conto "iva acquisti al 10%", quindi specifico per quell'aliquota anzichè un conto, esempio "iva a credito", generico come in Italia per tutte le aliquote).
 
+ 
 
-**Actives roundings**: it indicates that line will be update with the amount of actives roundings. Its use is connectable with templates of maturity values closing;
+**Descrizione parametrica della registrazione contabile**: all'interno di questa si possono codificare delle descrizioni standard che vengono compilate dal programma attraverso i vari codici indicati nella legenda posta immediatamente sopra al compo, descrizioni che saranno riportate nelle stampe contabili e in particolare negli Estratti conto e nel Libro giornale. 
 
+Anche per ogni riga di movimentazione della sezione *Dettaglio conti / sottoconti - Prototipo registrazione* è possibile, come già illustrato sopra, codificare delle note preimpostate così come per la Descrizione generale. 
 
+ATTENZIONE: in particolare i codici (8) e (9) sono gestiti solo per la descrizione specifica di riga e non sono considerati nella descrizione generale della registrazione di cui al campo in commento.
 
-**Passives roundings**: it indicates that line will be update with the amount of passives roundings. Its use is connectable with templates of maturity values closing;
+![](/img/it-it/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates/attributes-detail/image05.png)
 
-
-
-**Detail account amount**: it indicates that line will be update with the amount of the maturity values payments within recording and according to the same payement sign;
-
-
-
-**Exchanges diff.profit**: it indicates that line will be update with profit detail account of the reference currency of the exchanges difference, for the amount obtained through the valorization differential between historical exchange and the closing exchange of the maturity value. If the flag is set with the historical exchange, the line will not have valorization;
-
-
-
-**Exchanges diff. loss**: it indicates that line will be update with loss detail account of the reference currency of the exchanges difference, for the amount obtained through the valorization differential between historical exchange and the closing exchange of the maturity value. If the flag is set with the historical exchange, the line will not have valorization;
-
-
-
-**Automatic**: it is an amount type, that is used in some automatic amounting procedures. The grid can be completed thanks both to a code field of the compensations (its use is not advised: in accounting there is a print, that shows the compensations regardless of this setting) and to a detail notes field: in this field it is possible to use all the codes, contained in the mask structure, and in particular for compensations closing templates, entered within the generic customers/vendors account, it is necessary to use the codes (8) or (9) in conjunction with the flag ‘Ref. doc. Maturity in payment' in order to record the information about paid/cashed documents in accounting. 
-
-
-
-**Deduct. VAT and VAT compensation**: it is a type of amount used in order to valorize the VAT line with the VAT deductible amount and with the right compensation for ‘VAT accounting type' in conjunction with the recording or default register in ‘General ledger account parameters'.
-
-**Parametric Description of Ledger Recording**: Within this description, some standard descriptions can be code and compile by program through different codes and then these descriptions will be reported in the accounting prints and in particular in the account statements and journal. For every movement line it is possible then to code some predefined note as well as the general description: in particular codes (8) and (9) are managed only in this specific line section. 
-
-
-
-
-
-
+:::important Vedi Anche
+[**VIDEO TUTORIALS SULLE CAUSALI CONTABILI**](/docs/video/finance/intro.md)
+:::

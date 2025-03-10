@@ -1,28 +1,22 @@
 ---
-title: Items Accounting Types
+title: Tipi contabilizzazione articoli
 sidebar_position: 23
 ---
 
+La tabella è d'appoggio alla procedura che definisce una o più contabilizzazioni alternative al conto di contropartita collegato direttamente alla voce di fatturato vendite nella tabella relativa.
 
+Esempi di codifica:
+XUE: Extra Ue -> sarà poi abbinato ad un conto di ricavo "Estero" ed abbinato alle anagrafiche dei clienti esteri per evitare di cambiare manualmente il fatturato vendite da "Italia" a estero per ogni articolo che riporta in automatico la voce di fatturato vendite principale (Ricavi Italia ad esempio).
 
-| Function | Meaning |
-| --- | --- |
-| Code | Identification code of articles accounting type |
-| Description  | Description of articles accounting type |
-| Customer | The possibility to activate the field of articles accounting on customer |
-| Vendor | The possibility to activate the field of articles accounting on vendor |
+Per maggiori dettagli vedere [**qui**](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/finance).
 
-RIBBON BAR: the ribbon bar represents the Form menu, that is the area in which it is possible to operate on previous recordings or generate new ones. The possible features list is the following:
+**Codice**: codice identificativo del tipo di contabilizzazione articoli.
 
+**Descrizione**: descrizione del tipo di contabilizzazione articoli.
 
+**Cliente**: per attivare il campo di contabilizzazione articoli sul Cliente.
 
-| Function | Meaning |
-| --- | --- |
-| Search | Button to look for the articles accounting type through the fields: code and description |
-| Insertion | Button to insert the articles accounting type |
-| Delete  | Button to delete the articles accounting type, where the user is located |
-| Preview  | Button to perform the preview |
-| Print  | Button to print |
+**Fornitore**: per attivare il campo di contabilizzazione articoli sul Fornitore.
 
 
 
