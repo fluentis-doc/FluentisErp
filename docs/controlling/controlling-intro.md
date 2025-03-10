@@ -82,7 +82,7 @@ import Link from '@docusaurus/Link';
 </div>
 <div className="cardContainer">
     <div className="card">
-###     <Link to="/docs/controlling/cost-calculation/product-cost-into">Costo prodotto</Link>
+###     <Link to="/docs/controlling/cost-calculation/product-cost-intro">Costo prodotto</Link>
         <p>In questo modulo valorizziamo i dati delle distinte basi di prodotto per verificarne la marginalità.</p>
     </div>
     <div className="card">

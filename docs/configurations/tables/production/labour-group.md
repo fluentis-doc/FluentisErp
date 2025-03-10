@@ -16,7 +16,7 @@ La form si compone di un'area di filtro e da una di risultato. Una volta imposta
 Per poter inserire nuove codifiche è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**. 
 
 Per il nuovo record, nella griglia superiore, si devono inserire almeno i campi obbligatori richiesti dal programma: il **Codice** del gruppo MDO e la sua **Descrizione**.         
-Inoltre, è possibile associare a ciascun **gruppo manodopera** un [centro di costo](/docs/configurations/tables/production/cost-center), che sarà molto importate in fase di [costificazione](/planning/mps-master-production-scheduling/production-job-orders/valorization), per determinare il costo della fase in cui è impiegato questo gruppo manodopera.
+Inoltre, è possibile associare a ciascun **gruppo manodopera** un [centro di costo](/docs/configurations/tables/production/cost-center), che sarà molto importate in fase di [costificazione](/docs/planning/mps-master-production-scheduling/production-job-orders/valorization), per determinare il costo della fase in cui è impiegato questo gruppo manodopera.
 
 Nella griglia inferiore, per ogni **gruppo manodopera**, si possono specificare i vari **Operatori** che ne fanno parte, indicando per ognuno anche il rispettivo [centro di costo](/docs/configurations/tables/production/cost-center), dato che i vari operatori possono avere costi diversi.
 
