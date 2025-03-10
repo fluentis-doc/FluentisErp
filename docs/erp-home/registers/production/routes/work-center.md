@@ -15,7 +15,9 @@ La form si compone di un'area di filtro e da una di risultato. Una volta imposta
 
 Per poter inserire nuove codifiche è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Inserisci**. 
 
-La griglia si compone di tre sezioni, dove nella prima parte vengono inseriti i seguenti dati relativi al centro di lavoro:
+Le informazioni obbligatorie per la creazione di un nuovo centro di lavoro sono: il codice, la descrizione e il tipo.
+
+La form si compone di una sezione principale, dove vengono inseriti i seguenti dati relativi al centro di lavoro:
 
 **Centri di lavoro**: indica il codice del CdL;  
 **Descrizione centro di lavoro**: indica la descrizione del CdL;  
@@ -40,8 +42,8 @@ La griglia si compone di tre sezioni, dove nella prima parte vengono inseriti i 
 **Data inserimento**: indica la data di inserimento del record;  
 **Data ultima modifica**: indica la data di ultima modifica del record;  
 **Descrizione macchina**: indica la descrizione della macchina;  
-**Descrizione gruppo MDO**: indica la descrizione del gruppo di manodopera;  
-**Descr. reparto**: indica la descrizione del reparto;  
+**Descrizione gruppo Manodopera**: indica la descrizione del gruppo di manodopera;  
+**Descrizione reparto**: indica la descrizione del reparto;  
 
 Nella seconda sezione è possibile inserire delle eccezioni per quanto riguarda gli orari di lavoro del centro di lavoro selezionato.
 

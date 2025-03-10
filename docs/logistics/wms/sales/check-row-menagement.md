@@ -67,7 +67,7 @@ Nel caso in cui sia necessario avere la possibilità di sovra evadere la quantit
 | WM | Fluentis.FluentisErp.Mvvm.WM.ReadWrite.Views | CheckRowManagement |
 | WM | Fluentis.FluentisErp.Mvvm.WM.ReadWrite.Views | CheckRowManagement |
 
-I parametri sono ripetuti poiché la form utilizza una causale di scarico (senza contropartita), per scaricare gli articoli prelevati, ed una di carico per caricarli all’interno delle unità di carico appena create. Per la causale di carico è importarte indicare anche una ubicazione di default che verrà utilizzata per caricare l'unità di carico appena creata.    
+I parametri sono ripetuti poiché la form utilizza una causale di scarico (senza contropartita), per scaricare gli articoli prelevati, ed una di carico per caricarli all’interno delle unità di carico appena create. Per la causale di carico è importante indicare anche una ubicazione di default che verrà utilizzata per caricare l'unità di carico appena creata.    
                                          
 Per tutte le informazioni su come codificare i barcode da leggere nel campo **Codice barcode** consultare la pagina relativa al [Barcode tokenizer](/docs/configurations/tables/general-settings/barcode-tokenizer).
 
