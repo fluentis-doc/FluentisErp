@@ -59,7 +59,7 @@ Il tab, attivo solo se l'articolo selezionato nella griglia è gestito a lotti, 
 
 La sezione Numeri di serie, attivo solo se l'articolo selezionato nella griglia è gestito a serial number, permette l'inserimento del numero di serie da attribuire all'articolo in questione.
 
-### Extra Data Articolo**
+### Extra Data Articolo
 
 Permette di inserire e visualizzare gli *Extra data* relativi alla singola riga.           
 Per una descrizione approfondita sugli extra data si rimanda all'articolo [Extra data](/docs/configurations/utility/extra-data/extradata/new-extradata-simple).
