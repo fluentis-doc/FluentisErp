@@ -39,10 +39,14 @@ Il Flag **Fatturazione elettronica** determina l'adattamento dei campi di dettag
 
 **Nome ufficio / Descrizione destinatario**: descrizione del campo codice ufficio / codice destinatario da compilare con il nome dell'ufficio pubblico o del soggetto privato
 
-**Ragione sociale**: in questo campo è possibile collegare un'anagrafica già codificata in Fluentis e riferita, ad esempio, all'uffico pubblico che dipende dall'anagrafica principale che stiamo utilizzando (esempio: ufficio lavori pubblici del comune di ..., oppure Azienda sanitaria ....... che dipende dall'anagrafica principale "Comune di ....") Tale anagrafica collegata dovrà essere impostata come destinazione per l'anagrafica principale nel tab  [**consegna**](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/delivery), in questo modo la destinazione (esempio ufficio lavori pubblici ....) sarà riportata nel tracciato del file .xml completa di codice ufficio e degli altri dati quale indirizzo ecc...
+**Ragione sociale**: in questo campo è possibile collegare un'anagrafica già codificata in Fluentis e riferita, ad esempio, all'uffico pubblico che dipende dall'anagrafica principale che stiamo utilizzando (esempio: ufficio lavori pubblici del comune di ..., oppure Azienda sanitaria ....... che dipende dall'anagrafica principale "Comune di ....") Tale anagrafica collegata **dovrà** essere impostata come **destinazione** per l'anagrafica principale nel tab  [**consegna**](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/delivery), in questo modo la destinazione (esempio ufficio lavori pubblici ....) sarà riportata nel tracciato del file .xml completa di codice ufficio e degli altri dati quale indirizzo ecc...
 
-Per la corretta gestione di più codici ufficio (e quindi più soggetti) riferiti alla stessa anagrafica principale si raccomanda quindi di gestire e compilare anche questo campo (comunque non obbligatorio e non necessario in caso di singolo codice ufficio direttamente legato all'anagrafica in questione).
+:::danger[ATTENZIONE: campo Ragione sociale, anagrafica semplice con singolo codice]
+Per la corretta gestione di **più codici** ufficio / codici SDI (e quindi più soggetti) riferiti alla stessa anagrafica principale è quindi **necessario** compilare anche questo campo. 
 
+**ATTENZIONE:**  nel caso di **singolo codice** ufficio / codice SDI direttamente legato all'anagrafica in questione (senza la presenza di destinazioni collegate e riferite a specifici codici ufficio / codici SDI) **il campo NON DEVE essere compilato**. 
+Diversamente verrà restituito un messaggio di errore in fase di generazione del file xml. (Messaggio: la fattura... non può essere generata perchè... il codice destinatario non è stato valorizzato, oppure la data inizio servizio....) da interpretare come "non è stato valorizzato *correttamente*".
+:::
 
 **Data inizio servizio**: definisce la data di inserimento della riga o comunque la data dalla quale è attivo il rapporto di fornitura con la pubblica amministrazione in questione.
 

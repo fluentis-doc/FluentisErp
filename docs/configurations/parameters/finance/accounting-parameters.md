@@ -144,19 +144,19 @@ In questa tab si impostano nel dettaglio i conti del piano dei conti che saranno
 - **Conto corrispettivi**: consente di impostare il sottoconto del cliente fittizio di rilevazione patrimoniale dei corrispettivi.  
 - **Contropartita corrispettivi**: attivo se il precedente conto corrispettivi è attivato, consente di impostare il sottoconto di contropartita economica dei corrispettivi da ventilare.  
 - **Aliquota IVA corrispettivi**: attivo se il precedente conto corrispettivi è attivato, consente di impostare l'aliquota IVA di rilevazione dei corrispettivi da ventilare.  
-- **Fatture da ricevere**: consente di impostare il sottoconto generico da utilizzare nella procedura di 'Contabilizzazione fatture da ricevere' presente nel modulo 'Fatture d'acquisto', oppure nella contabilizzazione delle fatture di acquisto di un [tipo](/docs/configurations/tables/purchase/purchase-invoices-type) che preveda la gestione della competenza.  
-- **Fatture da emettere**: consente di impostare il sottoconto generico da utilizzare nella contabilizzazione delle fatture di vendita di un [tipo](/docs/configurations/tables/sales/invoices-type) che preveda la gestione della competenza.
-- **Note di accredito da ricevere**: consente di impostare il sottoconto generico da utilizzare nella procedura di 'Contabilizzazione fatture da ricevere' presente nel modulo 'Fatture d'acquisto', oppure nella contabilizzazione delle Note di accredito ricevute dal fornitore di un [tipo](/docs/configurations/tables/purchase/purchase-invoices-type) che preveda la gestione della competenza.  
-- **Note di accredito da emettere**: consente di impostare il sottoconto generico da utilizzare nella contabilizzazione delle Note di accredito a clienti di un [tipo](/docs/configurations/tables/sales/invoices-type) che preveda la gestione della competenza.
-- **Risconti attivi**: consente di impostare il sottoconto generico da utilizzare nella procedura delle rettifiche automatiche del modulo 'Chiusure infrannuali'.  
-- **Ratei attivi**: consente di impostare il sottoconto generico da utilizzare nella procedura delle rettifiche automatiche del modulo 'Chiusure infrannuali'.  
-- **Risconti passivi**: consente di impostare il sottoconto generico da utilizzare nella procedura delle rettifiche automatiche del modulo 'Chiusure infrannuali'.  
-- **Ratei passivi**: consente di impostare il sottoconto generico da utilizzare nella procedura delle rettifiche automatiche del modulo 'Chiusure infrannuali'.  
-- **Conto INAIL**: consente di impostare il sottoconto generico da utilizzare nella procedura di contabilizzazione del Modello F24.  
-- **Conto INPS / Previdenza sociale**: consente di impostare il sottoconto generico da utilizzare nella procedura di contabilizzazione del Modello F24.  
-- **Conto altre imposte**: consente di impostare il sottoconto generico da utilizzare nella procedura di contabilizzazione del Modello F24.  
-- **SottoConto autofattura**: consente di impostare il sottoconto per la creazione dell'autofattura dalle registrazioni contabili per la comunicazione dati sugli acquisti allo SDI. [**Cfr. Parametri specifici** ](/docs/finance-area/e-invoice/auto-invoice/parameters).
-- **Contropartita interessi trimestrali liquidazione iva:**  consente di automatizzare la contabilizzazione degli interessi passivi derivanti da liquidazione iva trimestrale inserendo il conto di contropartita (costo) desiderato.
+**Fatture da ricevere**: consente di impostare il sottoconto generico da utilizzare nella procedura di 'Contabilizzazione fatture da ricevere' presente nel modulo 'Fatture d'acquisto', oppure nella contabilizzazione delle fatture di acquisto di un [tipo](/docs/configurations/tables/purchase/purchase-invoices-type) che preveda la gestione della competenza.  
+**Fatture da emettere**: consente di impostare il sottoconto generico da utilizzare nella contabilizzazione delle fatture di vendita di un [tipo](/docs/configurations/tables/sales/invoices-type) che preveda la gestione della competenza.
+**Note di accredito da ricevere**: consente di impostare il sottoconto generico da utilizzare nella procedura di 'Contabilizzazione fatture da ricevere' presente nel modulo 'Fatture d'acquisto', oppure nella contabilizzazione delle Note di accredito ricevute dal fornitore di un [tipo](/docs/configurations/tables/purchase/purchase-invoices-type) che preveda la gestione della competenza.  
+**Note di accredito da emettere**: consente di impostare il sottoconto generico da utilizzare nella contabilizzazione delle Note di accredito a clienti di un [tipo](/docs/configurations/tables/sales/invoices-type) che preveda la gestione della competenza.
+**Risconti attivi**: consente di impostare il sottoconto generico da utilizzare nella procedura delle rettifiche automatiche del modulo 'Chiusure infrannuali'.  
+**Ratei attivi**: consente di impostare il sottoconto generico da utilizzare nella procedura delle rettifiche automatiche del modulo 'Chiusure infrannuali'.  
+**Risconti passivi**: consente di impostare il sottoconto generico da utilizzare nella procedura delle rettifiche automatiche del modulo 'Chiusure infrannuali'.  
+**Ratei passivi**: consente di impostare il sottoconto generico da utilizzare nella procedura delle rettifiche automatiche del modulo 'Chiusure infrannuali'.  
+**Conto INAIL**: consente di impostare il sottoconto generico da utilizzare nella procedura di contabilizzazione del Modello F24.  
+**Conto INPS / Previdenza sociale**: consente di impostare il sottoconto generico da utilizzare nella procedura di contabilizzazione del Modello F24.  
+**Conto altre imposte**: consente di impostare il sottoconto generico da utilizzare nella procedura di contabilizzazione del Modello F24.  
+**SottoConto autofattura**: consente di impostare il sottoconto per la creazione dell'autofattura dalle registrazioni contabili per la comunicazione dati sugli acquisti allo SDI. [**Cfr. Parametri specifici** ](/docs/finance-area/e-invoice/auto-invoice/parameters).
+**Contropartita interessi trimestrali liquidazione iva:**  consente di automatizzare la contabilizzazione degli interessi passivi derivanti da liquidazione iva trimestrale inserendo il conto di contropartita (costo) desiderato.
 
 ## 3. Video tutorials Parametri
 

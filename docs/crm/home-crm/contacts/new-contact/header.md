@@ -10,9 +10,9 @@ La schermata del Contatto CRM si compone di tre parti:
 
 ## Dati obbligatori di testata
 
-**Nome**: serve per indicare la ragione sociale o, più in generale, il nominativo del contatto;    
-
 **Tipo Contatto**: rimanda all'omonima tabella [Tipo contatto](/docs/configurations/tables/crm/contacts/contact-type); usata per distinguere tra loro i vari contatti CRM (Contatto, Prospect, Lead, ecc.); il **Tipo contatto** contiene inoltre le tab da visualizzare sull’anagrafica.        
+
+**Nome Contatto**: serve per indicare la ragione sociale o, più in generale, il nominativo del contatto;    
 
 ## Dati non obbligatori di testata 
 

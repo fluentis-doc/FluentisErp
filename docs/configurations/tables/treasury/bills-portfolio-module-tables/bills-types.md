@@ -17,6 +17,12 @@ Da segnalare, infine, che solo gli effetti di tipo cambiario potranno essere ges
 
 Il flag **Gestione importo parziale** consente di creare effetti che consumano *parzialmente* le partite, indicandone l'importo. Prevede una gestione manuale all'interno dell'effetto.
 
+:::danger[Attenzione]
+Attivando questo flag, la procedura di generazione automatica effetto dalla partite (/ fatture) non inserirà nell'effetto il riferimento alla partita, di conseguenza, in fase di contabilizzazione effetto non avverrà la chiusura della partita la quale rimarrà aperta.
+
+Infatti l'attivazione del flag comporta (è pensata per) una gestione manuale
+:::
+
 Il link **Cassa** non è in uso per la localizzazione italiana, serve per registrare negli effetti dai registratori di cassa.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/pnRACKqZqvM" title="YouTube video player" frameborder="0" allowfullscreen= "true"></iframe>
