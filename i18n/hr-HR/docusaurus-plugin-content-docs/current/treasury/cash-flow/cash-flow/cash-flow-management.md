@@ -32,7 +32,7 @@ Da questa maschera è anche possibile visualizzare il documento d'origine per va
  4. Fatture (acquisto/vendita): da queste maschere si selezionano i dati delle scadenze fatture di acquisto/vendita ;
  5. Ordini (clienti/fornitori): da queste maschere si selezionano le simulazioni dei dati residui degli ordini clienti/fornitori (stampati e confermati). Si consiglia di lasciare l'impostazione di default della maschera;
  6. Percipienti non contabilizzati: la maschera consente di inserire nel cash flow i dati dei compensi percipienti non contabilizzati;
- 7. Bolle (vendita/acquisto): le maschere consentono di riprendere i dati dei  DDT non valorizzate in fattura;
+ 7. DDT (vendita/acquisto): le maschere consentono di riprendere i dati dei  DDT non valorizzate in fattura;
  8. Conto lavoro (ordini/rientri): le maschere consentono di riprendere i dati dagli ordini di conto lavoro e dai relativi rientri non fatturati (lasciare le impostazioni di default di entrambe la maschere).
 
 

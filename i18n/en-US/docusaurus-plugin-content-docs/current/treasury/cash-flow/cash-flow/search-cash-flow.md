@@ -1,40 +1,43 @@
 ---
-title: Search Cash Flow
+title: Ricerca cash flow
 sidebar_position: 1
 ---
 
-The cash flow search procedure has been created in order to enable the user to search easily the simulations inserted previously with the task to view, edit and delete them. From the cash flow search it is possible to perform necessary document operations, after having obtained necessary user rights. It is recommended to create the cash flow from 'Automatic cash flow Creation' procedure instead of 'Create cash flow' procedure
+LINK:
 
-The search cash flow procedure consists as follows:
+** [Tabelle preliminari da gestire](/docs/treasury/cash-flow/general-overview) **
 
-RIBBON BAR: it represents the Form menu, that is the are in which it is possible to perform actions about a pre-existing document rather than to create a new one. The list of features is the following:
+** [Elaborazione automatica](/docs/treasury/cash-flow/procedures) **
+
+** [Stampa](/docs/treasury/cash-flow/reports) **
+
+ 
+
+ 
+
+Dalla presente form è possibile ricercare e modificare elaborazioni inserite precedentemente. 
+
+E' anche possibile inserire una nuova elaborazione che risulterebbe, in questo caso, completamente manuale (e quindi di scarso utilizzo pratico).
+
+Si consiglia di creare il cash flow dalla procedura ** [Generazione automatica cash flow](/docs/treasury/cash-flow/procedures) **.
 
 
 
-| Function | Meaning |
+
+
+| Funzione | Significato |
 | --- | --- |
-| Search | Button to apply search filters within database of the inserted cash flow. |
-| New | It refers to the procedure to insert a new cash flow. |
-| Edit | It refers to the procedure to edit a previously inserted cash flow. |
-| View | It refers to the procedure to view a previously inserted cash flow. |
-| Delete | It refers to the procedure to delete a previously inserted cash flow. |
+| Ricerca | Pulsante per applicare i filtri di ricerca all'intero database dei cash flow inseriti. |
+| Nuovo | Richiama la procedura per inserire un nuovo cash flow. |
+| Modifica | Richiama la procedura per modificare un cash flow precedentemente inserito. |
+| Visualizza | Richiama la procedura per visualizzare un cash flow precedentemente inserito. |
+| Cancella | Esegue la procedura per cancellare un cash flow precedentemente inserito. |
 
 
 
-| Function | Meaning |
+| Funzione | Significato |
 | --- | --- |
-| Cash Flow Analysis | It refers to the procedure to print a cash flow. |
-
-
-
-| Function | Meaning |
-| --- | --- |
-| Automatic Cash Flow Generation | It refers to the procedure to manage the automatic cash flow creation. |
-| Global Cash Flow Analysis | It refers to the procedure to view a cash flow graphic. |
-
-FILTER AREA: The filter area contains the list of the possible data types thanks to which it is possible to perform a selection, a research on the total of data inserted in system. Typically Filters have 'AND' condition and it is possible to specify more filter criteria at the same time.
-
-RESULT GRID: the result grid represents the import list that belongs to the filter data above mentioned. After having specified values through which to obtain a search of inventory items the user, by clicking on the [Search] button in the related Ribbon, will obtain the list of desired inventory items in the result grid.
+| Analisi cash flow | Richiama la procedura per stampare un cash flow. |
 
 
 

@@ -1,50 +1,48 @@
 ---
-title: Edit – Recalculate Customer Risk
+title: Modifica - Ricalcola rischio cliente
 sidebar_position: 1
 ---
 
-The two masks manage the visualization of total status of risk towards a specific customer: 'Recalculate Customer Risk' is a simple spot request of the current customer situation, while the modification mask of procedure 'Credit Situation' enables the user to record every performed calculation and to view history.
+Le due maschere sostanzialmente gestiscono la visualizzazione dello stato complessivo del rischio nei confronti di un determinato cliente: il ‘Ricalcola rischio cliente' è una semplice richiesta spot della situazione attuale del cliente, mentre la maschera di modifica della procedura ‘Utilizzo fidi' consente di memorizzare ogni calcolo effettuato e visualizzarne quindi una serie storica.
 
-Let's see the viewed fields list in details, that corresponds to the same one located in customer statement mask.
+Vediamo in dettaglio la lista dei campi visualizzata, che è sostanzialmente la stessa presente anche nella maschera dell'esposizione clienti.
 
-On header there are some calculation parameters: customer code, calculation start date (set automatically from parameters of customer risk module), reference end date (set to the present), number of delay days for bills under usual reserve and bills after collection (set from module parameters), flag of maturity values linked to temporary records. By clicking on the calculation button it will be possible to view the following values:
+In testata sono presenti i parametri di calcolo: il codice del cliente, la data di inizio calcolo (impostata di default dai parametri del modulo rischio cliente), la data finale di riferimento (impostata ad oggi), il numero di giorni di ritardo per gli effetti sbf e effetti al dopo incasso (impostati dai parametri del modulo, cui si rimanda), il flag di considerazione delle partite collegate a registrazioni provvisorie. Premendo il pulsante di calcolo appariranno i seguenti valori:
 
-**Turnover 12M**: it is the turnover (from sales area, sales invoices) about the 12 months previous than the reference date;
+**Fatt. 12M**: è il fatturato (dall'area vendita, fatture di vendita) dei 12 mesi precedenti alla data di riferimento;
 
-**Turnover Year**: it is the turnover (from sales area, sales invoices) from the start of the year;
+**Fatturato anno**: è il fatturato (dall'area vendita, fatture di vendita) dall'inizio dell'anno;
 
-in section **Status of Opened Maturity Value** it will be possible to view the total credit/debit and the related balance of opened maturity value;
+Nella sezione **Situazione partite aperte** saranno visibili i totali dare/avere e il saldo relativo alle partite aperte;
 
-in section **Paym. from Temp. Rec.** it will be possible to view the possible payment amounts inserted into the temporary records;
+Nella sezione **Pagam da reg. provv.** saranno visualizzati gli eventuali importi di pagamento inseriti in registrazioni provvisorie;
 
-in section **Status of Ledger Balance** it will be possible to view the total debit/credit and general ledger balance;
+Nella sezione **Situazione saldo contabile** saranno visibili i totali dare/avere e il saldo del mastrino di contabilità generale;
 
-**Mat. Value/Ledger Balance**: it proposes again the total debit/credit of maturity value or balance as mentioned before;
+**Saldo partite/contabile**: ripropone i totali dare/avere calcolati dalle partite o dal saldo così come visualizzato nelle sezioni precedenti;
 
-**Invoices to be accounted**: it correspond to the invoices amounts (of invoice types linked to credit) that are printed but not yet accounted;
+**Fatture da contabilizzare**: sono gli importi delle fatture (dei Tipi fattura collegati al fido) stampate ma non ancora contabilizzate;
 
-**DN to be invoiced**: it regards the DN amounts (of delivery note type linked to the credit) that have been printed but not yet invoiced;
+**Ddt da fatturare**: sono gli importi dei  DDT (dei Tipi DDT collegati al fido) stampate ma non ancora fatturate;
 
-**Orders to be Executed**: it regards the orders amounts (of order Type linked to the credit) that have been printed, confirmed but not yet executed;
+**Ordini da evadere**: sono gli importi degli ordini (dei Tipi ordine collegati al fido) stampate, confermati ma non ancora evasi;
 
-**Bills Issued**: it regards the bills amounts (of bills portfolio module) that have been issued and accounted, but not yet shown;
+**Effetti emessi**: sono gli importi degli effetti (del modulo portafoglio effetti) emessi e contabilizzati, ma non ancora presentati
 
-**Bills presented to discount, to uur, to collection**: it regards the bills amount presented but that have higher due date than the reference date (with days of parameters inserted into the calculation header);
+**Effetti presentati allo sconto-al sbf-all'incasso**: sono gli importi degli effetti presentati ma che hanno data scadenza (più i giorni dei parametri inseriti in testata del calcolo) superiore alla data di riferimento;
 
-Unpaids **Section**: here it is possible to view the not accounted unpaids, or (if flag is inserted) even the already accounted ones, both as amount and related number;
+Sezione** insoluti**: sono qui visualizzati gli insoluti non contabilizzati, oppure (se il flag è inserito) anche quelli già contabilizzati, sia come importo che relativo numero;
 
-Starting from the previous values amount it is possible to calculate the 'Customer Risk', that, compared to the granted credit, will be necessary to obtain a credit overdraft.
+Dalla somma dei valori precedenti viene calcolato il ‘Rischio cliente', che comparato al fido concesso, darà lo sconfinamento del fido.
 
-The **Expired** field shows the amount of opened but already expired maturity values, as a further element of analysis of customer situation.
-
-RIBBON BAR: it represents the Form menu, that is the area in which it is possible to perform actions about a pre-existing document, rather than to create a new one. The list of features is the following:
+Il campo **Scaduto** visualizza l'importo delle partite aperte ma già scadute, quale ulteriore elemento di analisi della situazione del cliente.
 
 
 
-| Function | Meaning |
+| Funzione | Significato |
 | --- | --- |
-| Save | The button, that regards the modification of an already calculated credit9 enables the user to record the obtained result |
-| Calculate | It refers to the procedure to calculate the total situation for customer risk |
+| Salva | Il pulsante, presente in modifica di un fido già calcolato, consente di memorizzare il risultato ottenuto. |
+| Calcola | Richiama la procedura per calcolare la situazione complessiva di rischio per il cliente. |
 
 
 

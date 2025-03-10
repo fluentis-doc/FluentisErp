@@ -7,9 +7,7 @@ Normalmente la simulazione di cash flow viene creata attraverso questa maschera,
 
 Ogni nuova elaborazione andrà a salvare il calcolo associato al campo **Numero**, assegnato automaticamente. E' possibile inoltre associare una **Descrizione** di dettaglio.
 
----
-
-### Campi della griglia
+*Campi specifici*
 
 **Tipo / Descrizione flusso:** ripresi dalla tabella Tipi flusso
 
@@ -39,9 +37,7 @@ Se abilitato in relazione al tipo flusso **Anticipi**, va a rilevare gli importi
 Se viene scelta questa opzione NON devono essere inseriti anche i conti d'appoggio utilizzati per il s.b.f. nella consistenza finanziaria iniziale (tramite la gestione dei *tipi conto finanziario*,) altrimenti il dato (in termini di flusso di cassa positivo) verrà duplicato e dunque il risultato sarà falsato e non attendibile.
 
 
----
-
-### Dettaglio delle logiche applicate ai tipi flusso:
+*Dettaglio delle logiche applicate ai tipi flusso*:
 
 **Saldo contabile**: il range di date viene utilizzato per calcolare il saldo contabile secondo la data registrazione contabile;
 
@@ -49,7 +45,7 @@ Se viene scelta questa opzione NON devono essere inseriti anche i conti d'appogg
 
 **Ordini clienti/fornitori**: il range di date filtra sulla data ordine. Sono considerati solo le tipologie con flag *cash flow* impostato, stampate e confermate. Si consiglia di impostare il flag *usa Qta residue* in modo da simulare un ordine secondo la quantità residua da consegnare/ricevere. Vengono calcolate le scadenze ipotetiche sulla base delle impostazioni di tipo/soluzione pagamento impostate in testata, prendendo come data di partenza la data di consegna della riga (se mancante la data consegna di testata dell'ordine) o la data odierna se questa è antecedente a oggi;
 
-**Bolle di acquisto/vendita**: il range di date filtra sulla data DDT. Sono considerati solo le tipologie impostate di ‘cash flow', stampate o controllate, non già valorizzate in fattura. Vengono calcolate le scadenze ipotetiche sulla base delle impostazioni di tipo/soluzione pagamento impostate in testata, a partire dalla data DDT;
+**DDT di acquisto/vendita**: il range di date filtra sulla data DDT. Sono considerati solo le tipologie impostate di ‘cash flow', stampate o controllate, non già valorizzate in fattura. Vengono calcolate le scadenze ipotetiche sulla base delle impostazioni di tipo/soluzione pagamento impostate in testata, a partire dalla data DDT;
 
 **Fatture di acquisto/vendita**: il range di date filtra sulla data scadenza in fattura. Sono considerati i documenti non proforma, stampate o controllate, non già contabilizzate;
 
@@ -69,9 +65,3 @@ I parametri di esecuzione sono memorizzati: solo la data finale del tipo flusso 
 | --- | --- |
 | Creazione | Esegue la procedura di generazione del cash flow secondo le impostazioni inserite nella maschera. |
 | Modifica | Apre in modifica il cash flow creato. |
-
-
-
-
-
-

@@ -1,42 +1,39 @@
 ---
-title: Cash Flow Management
+title: Gestione Cash flow
 sidebar_position: 2
 ---
 
-In this mask it is possible to load/edit the cash flow.
+Da questa maschera si procede al caricamento/modifica del cash flow.
 
-In these menu items it is possible to create/edit cash flow simulation calculations. Thanks to the manual management it is possible to insert lines manually or to recall data through the acquisition button located on header, by selecting the interest flow type that will open the related selection and search mask.
+Da queste voci di menù è possibile creare/modificare i calcoli di simulazione del cash flow. Con la gestione manuale è possibile inserire righe manualmente oppure richiamare i dati attraverso il pulsante di acquisizione presente in testata, selezionando il tipo di flusso d'interesse che aprirà la maschera di ricerca e selezione relativa.
 
-In this mask it is possible even to view the original document in order to estimate data.
-
-RIBBON BAR: it represents the Form menu, that is the are in which it is possible to perform actions linked to the procedure in use. The list of features is the following:
+Da questa maschera è anche possibile visualizzare il documento d'origine per valutarne i dati.
 
 
 
-| Function | Meaning |
+| Funzione | Significato |
 | --- | --- |
-| Save | It saves the cash flow in management. |
-| Search All | It searches flow for financial accounts. |
-| Search Cash Flow Movements | It searches movements for previsional flow types movements. |
-| Acquisition | Through this button the user can select the flow type from which to obtain previsional data to be inserted into cash flow in use. Every detail of this button will open a specific help for flow types, see application a. |
-| New Acc. Mov. | It activates the cursor during the insertion of a new detail line in financial accounts movements. |
-| New Flow Mov. | It activates the cursor during the insertion of a new detail line into previsional movements. |
-| Restore All | It deletes all inserted movements. |
-| Restore Accounting | It deletes financial accounts movements. |
-| Restore Cash Flow | It deletes previsional movements. |
-| View Original Document | It shows the originale document of the selected previsional flow. |
+| Salva | Salva il cash flow in gestione. |
+| Ricerca tutti | Esegue la ricerca dei flussi per i conti finanziari. |
+| Ricerca movimenti cash flow | Esegue la ricerca dei movimenti per i tipi di flusso previsionale. |
+| Acquisizione | Da questo pulsante l'utente può selezionare il tipo di flusso dal quale riprendere i dati previsionali da inserire nel cash flow in uso. Ogni dettaglio di questo pulsante aprirà un help contestuale specifico per il tipo di flusso, vedi applicazione a. |
+| Nuovo mov. cont. | Attiva il cursore nell'inserimento di una nuova riga di dettaglio nei movimenti dei conti finanziari. |
+| Nuovo mov. flow | Attiva il cursore nell'inserimento di una nuova riga di dettaglio nei movimenti previsionali. |
+| Ripristino tutti | Cancella tutti i movimenti inseriti. |
+| Ripristino contabilità | Cancella i movimenti dei conti finanziari. |
+| Ripristino cash flow | Cancella i movimenti previsionali. |
+| Visualizza doc. orig. | Visualizza il documento d'origine del flusso previsionale selezionata. |
 
-APPLICATIONS:
+**PULSANTE (lista) *ACQUISIZIONE*:**
 
-
- 1. Maturity Values: the mask enables the user to obtain the accounting maturity values [IDD_HELP_PARTITE]
- 2. Accounting: the mask enables the user to obtain financial account types balances [IDD_HELP_CONT]
- 3. Off-Balance: the mask enables the user to obtain data about cash flow off-balance due dates [IDD_HELP_EXTRA]
- 4. Invoices (purchase/sales): thanks to these masks it is possible to select data of purchase/sales invoices due dates [IDD_HELP_FATT_ACQUISTO], [IDD_HELP_FATT_VENDITA]
- 5. Orders (sales/purchase): thanks to these masks it is possible to select simulation of residual data of sales/purchase orders (printed and confirmed). It is recommended to mantain the automatic mask setting [IDD_HELP_ORD_CLIENTI], [IDD_HELP_ORD_FORNITORI]
- 6. Not accounted Professional Men: the mask enables the user to insert data of not accounted professional men compensations into cash flow [IDD_HELP_PERCIP]
- 7. Delivery Note (sales/purchase): masks enable the user to get delivery notes data that have not been valorized on invoice [IDD_HELP_BL_ACQ], [IDD_HELP_BL_VEND]
- 8. Subcontractor (orders/returns): masks enable the user to get data from subcontractor orders and from the related returns not invoiced (it is important not to cut the automatic settings of both masks) [IDD_HELP_CL]
+ 1. Partite: la maschera consente di riprendere la partite contabili dalla contabilità;
+ 2. Contabilità: la maschera consente di riprendere i saldi dei tipi conto finanziari;
+ 3. Extra contabile: la maschera consente di riprendere i dati delle scadenze extracontabili di cash flow;
+ 4. Fatture (acquisto/vendita): da queste maschere si selezionano i dati delle scadenze fatture di acquisto/vendita ;
+ 5. Ordini (clienti/fornitori): da queste maschere si selezionano le simulazioni dei dati residui degli ordini clienti/fornitori (stampati e confermati). Si consiglia di lasciare l'impostazione di default della maschera;
+ 6. Percipienti non contabilizzati: la maschera consente di inserire nel cash flow i dati dei compensi percipienti non contabilizzati;
+ 7. DDT (vendita/acquisto): le maschere consentono di riprendere i dati dei  DDT non valorizzate in fattura;
+ 8. Conto lavoro (ordini/rientri): le maschere consentono di riprendere i dati dagli ordini di conto lavoro e dai relativi rientri non fatturati (lasciare le impostazioni di default di entrambe la maschere).
 
 
 
