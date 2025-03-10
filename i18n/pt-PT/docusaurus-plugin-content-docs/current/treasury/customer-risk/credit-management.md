@@ -1,36 +1,21 @@
 ---
-title: Gestão créditos
+title: Gestione fidi
 sidebar_position: 2
 ---
 
-Esta máscara permite verificar e gerir as impostações dos créditos dos registros cliente, sem ter que entrar em cada gestão contatos do tab 'Home' - 'Registros' - 'Registros contatos'.
+Questa maschera consente di verificare e gestire le impostazioni dei fidi delle anagrafiche cliente, senza dover entrare ad una ad una dalla gestione contatti del tab ‘Home'-‘Anagrafici'-‘Anagrafiche contatti'.
 
-São previstos quatro tipos de controle do crédito:
+Sono previsti quattro tipi di controllo fido:
 
-**Bloqueio doc. e monitor crédito**: o documento da área de venda que superou o crédito vai ser bloqueado e portanto precisa autorizá-lo para proceder com as fases sucessivas do flusso documental;
+**Blocco doc. e monitor fido**: il documento dell'area vendita che va a sforare il fido sarà bloccato e quindi ci sarà la necessità di autorizzarlo per procedere alle fasi successivo del flusso documentale;
 
-**Monitor crédito**: vai ser simplesmente efetuado um controle do crédito com uma eventual mensagem ao usuário do acontecido superamento;
+**Monitor fido**: sarà semplicemente effettuato un controllo del fido con eventuale messaggio all'utente dell'avvenuto sforamento;
 
-**Bloqueio de grupo**: como para o primeiro, mas o cálculo é cumulativo para todas as sociedades do banco de dados que fazem parte do mesmo registro cliente;
+**Blocco di gruppo**: come per il primo, ma il calcolo è cumulativo per tutte le società del database facenti capo alla stessa anagrafica cliente;
 
-**Monitor de grupo**: como para o segundo, mas o cálculo é cumulativo para todas as sociedades do banco de dados que fazem parte do mesmo registro cliente.
+**Monitor di gruppo**: come per il secondo, ma il calcolo è cumulativo per tutte le società del database facenti capo alla stessa anagrafica cliente.
 
-O campo **Crédito segurado** é só uma referência não gerida em maneira ativa pelo programa, assim como as notas crédtio.
-
-O procedimento da gestão crédito é constituída na seguinte maneira:
-
-RIBBON BAR: representa o menu do módulo em questão, ou seja, a área na qual efetuar algumas ações. A lista de possíveis funcionalidades é sucessivamente representada:
-
-
-
-| RibbonFunction | RibbonMeaning |
-| --- | --- |
-| Procurar | Botão para aplicar os filtros de pesquisa dentro do banco de dados dos créditos cliente. |
-
-ÁREA DE FILTRO: a área de filtro é dedicada à hospedagem na lista de possíveis tipos de dados através do qual é possível fazer uma seleção e uma pesquisa sobre o total dos créditos inseridos. Os filtros são em condição 'E' e é possível especificar mais critérios de filtro contemporâneos.
-
-GRELHA DE RESULTADO: a grelha de resultado é uma lista dos créditos que correspondem aos dados de filtro especificados acima. O usuário, depois de especificar os valores pelos quais deseja obter uma pesquisa dos créditos, pressionando o botão [Pesquisa] presente na relativa Ribbon, resultará na grelha a lista dos créditos que quiser. 
-
+Il campo del **fido assicurato** è solo un riferimento non gestito in modo attivo dal programma, così come le note fido.
 
 
 

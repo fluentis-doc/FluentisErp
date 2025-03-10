@@ -1,52 +1,47 @@
 ---
-title: Procurar efeitos
+title: Effetti
 sidebar_position: 3
 ---
 
-O procedimento Procurar efeitos foi desinhado para permitir ao usuário procurar facilmente os efeitos ativos emitidos precedentemente com o objetivo de visualizá-los, modificá-los e eventualmente cancelá-los. A partir da pesquisa dos efeitos é possível fazer todas as operações necessárias no âmbito do documento, após a presença dos direitos do usuário necessários.
+La form della ricerca effetti 
+- si trova in Tesoreria > Portafoglio Effetti > Effetti > Effetti
 
-RIBBON BAR: representa o menu do módulo em questão, ou seja, a área na qual efetuar algumas ações. A lista de possíveis funcionalidades é sucessivamente representada:
+- permette all'utente di ricercare gli effetti emessi precedentemente con lo scopo di visualizzarli, modificarli ed eventualmente cancellarli.
 
-
-
-| RibbonFunction | RibbonMeaning |
-| --- | --- |
-| Procurar efeitos | Botão para aplicar os filtros de pesquisa dentro do banco de dados dos efeitos inseridos. |
-| Novo efeito | Refere-se ao procedimento para inserir um novo efeito. |
-| Modificar efeito | Refere-se ao procedimento para modificar um efeito precedentemente inserido. |
-| Visualização efeito | Refere-se ao procedimento para visualizar um efeito precedentemente inserido. |
-| Cancelar efeito | Executa o procedimento para cancelar um efeito precedentemente inserido. |
+Da questa form è possibile anche inserire manualmente un nuovo effetto, ma questa modalità è scarsamente utilizzata nella pratica. Solitamente si procede tramite le procedure di creazione automatica effetti (dalle partite o dalle fatture).
 
 
+## Pulsanti della Ribbon Bar
 
-| RibbonFunction | RibbonMeaning |
-| --- | --- |
-|  [Imprimir listas de apresentação](/docs/treasury/bills-holding/reports/print-presentation-lists)  | Refere-se ao procedimento para imprimir as listas de apresentação no banco dos efeitos. |
-|  [Imprimir a situação carteira efeitos](/docs/treasury/bills-holding/reports/bill-holding-situation)  | Refere-se ao procedimento para imprimir a estatística da situação da carteira efeitos. |
-|  [Imprimir a lista não pagos](/docs/treasury/bills-holding/reports/print-unpaid-list)  | Refere-se ao procedimento para imprimir a lista dos não pagos presentes. |
+> - **Ricerca effetti:** Pulsante per ricercare gli effetti secondo i filtri di ricerca impostati nella testata della form.
+> - **Nuovo effetto:** Richiama la form per inserire un nuovo effetto.
+> - **Modifica effetto:** Permette di modificare un effetto precedentemente inserito.
+> - **Visualizzazione effetto:** Permette di visualizzare un effetto precedentemente inserito.
+> - **Cancella effetto:** Cancella un effetto precedentemente inserito.
 
+> Esecuzione delle **stampe** (*Anteprima* oppure *Stampa*) lancia, relativamente agli effetti selezionati con il mouse, (tenendo premuto Ctrl si possono selezionare più effetti contemporaneamente) l'omonima stampa presente nel [**menu stampe**](/docs/treasury/bills-holding/reports/bill-holding-situation) del modulo
 
-
-| RibbonFunction | RibbonMeaning |
-| --- | --- |
-|  [Aquisição efeitos das faturas](/docs/treasury/bills-holding/procedures/bills-acquisition-from-invoices/acquisition)  | Refere-se ao procedimento para criar em automático os efeitos dos vencimentos das faturas. |
-|  [Aquisição efeitos das partidas](/docs/treasury/bills-holding/procedures/bills-acquisition-from-maturity-values)  | Refere-se ao procedimento para criar em automático os efeitos das partidas abertas. |
-|  [Contabilização efeitos](/docs/treasury/bills-holding/accounting/bills-accounting)  | Refere-se ao procedimento para efetuar a contabilização efeitos e fechar a conta cliente. |
-|  [Contabilização efeitos ao fornecedor](/docs/treasury/bills-holding/accounting/bills-accounting-by-vendor/accounting)  | Refere-se ao procedimento para efetuar a contabilização efeitos ao fornecedor e fechar a conta fornecedor. |
-|  [Contabilização listas](/docs/treasury/bills-holding/accounting/lists-accounting/accounting)  | Refere-se ao procedimento para efetuar a contabilização da lista e valorizar a conta de apresentação. |
-|  Contabilização créditos  | Refere-se ao procedimento para efetuar a contabilização do crédito na conta. |
-|  [Geração arquivo recibo bancário]  | Refere-se ao procedimento para gerar o traçado telemático do recibo bancário. |
-|  [Geração arquivo DDA]  | Refere-se ao procedimento para gerar o traçado telemático debito direto autorisado. |
-|  [Importação não pagos](/docs/treasury/bills-holding/procedures/import-unpaids)  | Refere-se ao procedimento de importação do traçado telemático Não pago. |
-|  [Contabilização não pagos](/docs/treasury/bills-holding/accounting/unpaid-accounting/unpaids)  | Refere-se ao procedimento de contabilização não pagos, com contextual reabertura da partida cliente em relação os parâmetros do módulo. |
-|  Contabilização não pagos sobre a cessão  | Refere-se ao procedimento de contabilização não pagos, com contextual reabertura das partidas cliente e fornecedor em relação os parâmetros do módulo. |
-
-ÁREA DE FILTRO: a área de filtro é dedicada à hospedagem na lista de possíveis tipos de dados através do qual é possível fazer uma seleção e uma pesquisa sobre o total dos efeitos inseridos. Os filtros são em condição 'E' e é possível especificar mais critérios de filtro contemporâneos.
-
-GRELHA DE RESULTADO: a grelha de resultado é uma lista dos efeitos que correspondem aos dados de filtro especificados acima. O usuário, depois de especificar os valores pelos quais deseja obter uma pesquisa dos efeitos, pressionando o botão [Pesquisa] presente na relativa Ribbon, resultará na grelha a lista dos efeitos que quiser. 
+> - *Avviso scadenza effetti*: Lettera indirizzata al cliente (una pagina per ogni effetto selezionato) che evidenzia gli effetti in scadenza con relativi riferimenti
+> - *Lettera di cumulo*:  Lettera indirizzata al cliente che evidenzia le partite o fatture acquisite in ogni singolo effetto 
+> - *Portafoglio effetti:* Stampa una lista di effetti con evidenza dei dati principali relativi
+> - *Situazione castelletti:* Stampa per ogni banca (relativa agli effetti selezionati) la situazione del castelletto concesso, utilizzato e residuo
 
 
+## Filtri di ricerca
 
+- **Conto:** filtro riferito al campo ***Debitore*** presente all'interno dell'effetto
+- **Anno / Tipo effetto:** filtri riferiti agli omonimi campi presenti all'interno dell'effetto 
+- **DA / A / data scadenza / Dat emissione / Numero**: riferiti agli omonimi campi presenti all'interno dell'effetto
+- **Stati effetti:** filtro riferito allo *Stato effetto* presente all'interno delle'effetto, lo stato viene automaticamente modificato a seconda delle procedure che sono state eseguite, ad esempio nasce come Emesso , poi diventa presentato, Accreditato, insoluto ecc...
+- **Divisa:** per filtrare solo effetti denominati ad esempio in dollari ecc...
+- **Piazza / ABI / CAB / Descrizione Banca:** riferiti alla banca d'appoggio del debitore
+- **Flag della sezione Stato Effetto:** Di default è attivo *Tutti*, ma può essere cambiato selezionando le varie condizioni di ricerca che se attivate contemporaneamente andranno ad allargare la base di ricerca, ad esempio quelli stampati + quelli contabilizzati + quelli NON stampati .....
+
+## Griglia dei risultati
+
+In questa from presenta gli stessi campi presenti nei filtri già dettagliati qui sopra.
+
+Presenta inoltre gli **Importi** (in valuta, esempio dollari, e in Euro) dell'effetto (coincidenti se l'effetto è denominato in euro).
 
 
 

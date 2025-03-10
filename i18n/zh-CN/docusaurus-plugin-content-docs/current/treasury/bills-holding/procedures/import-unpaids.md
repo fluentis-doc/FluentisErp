@@ -1,24 +1,29 @@
 ---
-title: 导入未付
+title: Importazione insoluti
 sidebar_position: 3
 ---
 
-该掩码用于从标准的银行通知文件导入未付。一般来说，可以激活列表跟踪的接收，接收会部分考虑有说明、用户已插入账单标识的同一个银行的通知文件：通过该数据的读取，可以自动创建未付列表，并直接收集银行费用数据。
+Da questa maschera si procede all'importazione della lista insoluti dal file telematico standard di comunicazione bancaria. 
 
-“执行导入”是程序的开始按钮，它将开启系统文件的打开掩码：在正确目录中确定文件后，只需打开文件，就可以执行列表导入。部分没有找到的账单，将被放入一个错误掩码中：这些账单必须手动创建未付。
+È possibile, normalmente, attivare il ricevimento di un tracciato di questa lista, che riprende in parte lo stesso file inviato con la presentazione, all'interno del quale abbiamo inserito l'identificativo dell'effetto: attraverso la lettura di questo dato, quindi, possiamo creare la lista degli insoluti automaticamente, con la rilevazione diretta anche delle spese bancarie su ognuno.
 
-从掩码还可以删除已执行的导入：与导入一同创建的未付列表也将被删除。
+La procedura inizia con il pulsante **Esegui importazione**, che aprirà la maschera di apertura file del sistema: una volta individuato il file nella directory corretta si dovrà semplicemente aprire il file per procedere all'importazione della lista. 
 
-功能导航栏：功能导航栏为菜单窗体，包含该程序中可能需要的操作。当前选项卡的功能如下：
+L'eventuale lista di effetti non trovati sarà riportata in una maschera d'errore: per questi sarà quindi necessario procedere alla creazione manuale dell'insoluto.
+
+Dalla maschera è possibile cancellare l'importazione eseguita: questa andrà ad annullare la lista degli insoluti creati con l'importazione stessa.
 
 
 
-| RibbonFunction | RibbonMeaning |
-| --- | --- |
-| 搜索导入 | 搜索已导入的未付 |
-| 执行导入 | 用于打开跟踪文件的选择掩码，以执行导入 |
-| 查看未付文件 | 查看导入的未付跟踪文件 |
-| 删除导入 | 删除已执行的导入 |
+**Pulsanti specifici**
+
+**Ricerca importazioni:** Ricerca la lista delle importazioni insoluti già eseguite.
+
+**Esegui import**: Con questo pulsante si apre la maschera di selezione del file telematico per il quale eseguire la procedura di importazione.
+
+**Visualizza file insoluti**: Visualizza il file telematico dell'insoluto importato.
+
+**Cancella importazione**: Cancella l'importazione eseguita.
 
 
 

@@ -1,9 +1,9 @@
 ---
-title: Impression des registres de présentation
+title: Stampa Distinte di presentazione
 sidebar_position: 1
 ---
 
-À partir par cette fenêtre est possible d'imprimer les registres de présentation effets selon le filtre établi. L'impression du registre (la présence du flag d'état 'Imprimée') est obligatoire pour pouvoir comptabiliser le même registre.
+Da questa finestra è possibile stampare le distinte di presentazione effetti secondo il filtro impostato. La stampa della distinta (la presenza del flag di stato ‘Stampata') è obbligatoria per poter contabilizzare la distinta stessa.
 
 
 

@@ -1,36 +1,21 @@
 ---
-title: 透支的管理
+title: Gestione fidi
 sidebar_position: 2
 ---
 
-该模块用于检查和管理客户登记中的透支设置，而无须逐个从“主页-登记-联系人登记”进入进行检查和管理。
+Questa maschera consente di verificare e gestire le impostazioni dei fidi delle anagrafiche cliente, senza dover entrare ad una ad una dalla gestione contatti del tab ‘Home'-‘Anagrafici'-‘Anagrafiche contatti'.
 
-该模块包含四种透支监控类型：
+Sono previsti quattro tipi di controllo fido:
 
-**冻结文件和透支监控器**：销售区域内超过透支的文档将被冻结，因此为了进入下一个文档流程需要对文档授权；
+**Blocco doc. e monitor fido**: il documento dell'area vendita che va a sforare il fido sarà bloccato e quindi ci sarà la necessità di autorizzarlo per procedere alle fasi successivo del flusso documentale;
 
-**信用额度监控器**：监控透支，并通知超过透支的用户；
+**Monitor fido**: sarà semplicemente effettuato un controllo del fido con eventuale messaggio all'utente dell'avvenuto sforamento;
 
-**按组冻结**：与第一种监控类型相似，但对数据库内拥有相同客户登记的所有公司进行累加计算；
+**Blocco di gruppo**: come per il primo, ma il calcolo è cumulativo per tutte le società del database facenti capo alla stessa anagrafica cliente;
 
-**按组监控器**：与第二种监控类型相似，但对数据库内拥有相同客户登记的所有公司进行累加计算。
+**Monitor di gruppo**: come per il secondo, ma il calcolo è cumulativo per tutte le società del database facenti capo alla stessa anagrafica cliente.
 
-**担保透支**字段和信用额度通知单一样仅为参考，不由程序主动管理。
-
-搜索现金流的过程如下：
-
-功能导航栏：功能导航栏为菜单窗体，包含对已有文档而不是新建文档进行的操作。当前选项卡的功能如下：
-
-
-
-| RibbonFunction | RibbonMeaning |
-| --- | --- |
-| 搜索 | 用于在客户信用额度数据库内按筛选条件搜索 |
-
-筛选区域：筛选区域包含可以对所有插入的信用额度进行搜索的数据类型。筛选器具有高级筛选功能，可以同时指定多个筛选条件。
-
-结果网格：结果网格包含按照指定条件筛选出的信用额度。首先用户指定对信用额度进行搜索的条件，然后在功能导航栏中单击“搜索”，最后在网格中将以列表形式显示筛选出的信用额度。
-
+Il campo del **fido assicurato** è solo un riferimento non gestito in modo attivo dal programma, così come le note fido.
 
 
 

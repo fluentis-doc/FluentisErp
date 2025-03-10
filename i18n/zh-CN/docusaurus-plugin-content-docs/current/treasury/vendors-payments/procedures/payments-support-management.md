@@ -1,24 +1,15 @@
 ---
-title: 支付银行管理
+title: Gestione appoggio pagamenti
 sidebar_position: 2
 ---
 
-该掩码用于管理支付（或进款）的银行数据。在客户/供应商登记中可以定义支付的银行明细账目：根据该设置，每个到期值，在创建时，就会有相应的银行信息，而银行数据可以由支付银行管理程序进行管理或者修改。
+Da questa maschera si procede alla gestione dei dati degli appoggi bancari previsti per i pagamenti (ed eventualmente per gli incassi). All'interno delle anagrafiche clienti/fornitori è possibile definire il sottoconto banca di pagamento predefinito: sulla base di questo ogni partita, all'atto della sua creazione, viene canalizzata su questo conto, ma il dato può essere modificato dalla presente maschera.
 
-除此之外，该掩码还可以用于查看到期值支付清单，手动保存通过网格中相关标记执行的支付通知的接收、检查和发送。
+Oltre a questa funzione, la maschera consente di visualizzare la distinta all'interno della quale la partita è stata pagata, così come consente di memorizzare manualmente la ricezione dell'avviso di pagamento, del suo controllo e dell'avvenuto invio dello stesso attraverso i flag relativi in griglia.
 
-功能导航栏：功能导航栏为菜单窗体，包含可能需要的操作。当前选项卡的功能如下：
+La gestione puntuale dell'appoggio pagamenti è molto utile per ottenere successivamente una elaborazione del **[*Cash Flow*](/docs/treasury/cash-flow/reports)** raggruppata per banca, in modo da conoscere l'andamento e la consistenza, non solo del cash flow generale, ma anche di valutare la situazione e l'eventuale possibile scopertura di ogni singolo conto bancario aziendale.
 
-
-
-| RibbonFunction | RibbonMeaning |
-| --- | --- |
-| 搜索 | 用于搜索交易 |
-
-筛选区域：筛选区域包含可以对某一选中进行搜索的多种数据类型。筛选器具有高级筛选功能，可以同时指定多个筛选条件。
-
-结果网格：结果网格包含按照指定条件筛选出的到期值。首先用户必须指定对到期值进行搜索的条件，然后在功能导航栏中单击“搜索”，最后在网格中将以列表形式显示筛选出的到期值。
-
+**<a href="https://youtu.be/DkxoWgTkvUg&amp;t=5m37s" target="_blank" rel="noopener noreferrer">Si rinvia al Tutorial - Link YouTube </a>**
 
 
 

@@ -1,30 +1,51 @@
 ---
-title: Utilização crédito
+title: Utilizzo fidi
 sidebar_position: 3
 ---
 
-A máscara Utilização créditos permite memorizar cada cálculo efetuado e visualizar portanto uma série histórica. Na lista dos cálculos visualizada na máscara Utilização créditos vão ser visualizados em vermelho as linhas com a variação.
+La maschera **Utilizzo fidi** consente di creare e memorizzare un calcolo di utilizzo del fido cliente per ogni conto cliente e visualizzarne quindi una serie storica. Nella lista dei calcoli visualizzata nella maschera saranno visualizzate in rosso le righe con scostamento.
 
-RIBBON BAR: representa o menu do módulo em questão, ou seja, a área na qual efetuar algumas ações. A lista de possíveis funcionalidades é sucessivamente representada:
+Per elaborare un nuovo calcolo premere il tasto **Nuovo**.
 
+All'apertura della maschera di dettaglio inserire il conto del cliente da analizzare.
 
+Inserire o modificare la data di inizio calcolo che rappresentala data dalla quale vengono letti i dati utilizzati nel calcolo.
 
-| RibbonFunction | RibbonMeaning |
-| --- | --- |
-| Procurar | Botão para aplicar os filtros de pesquisa dentro do banco de dados dos cálculos créditos. |
-| Novo | Refere-se ao procedimento para inserir um novo crédito. |
-| Modificar | Refere-se ao procedimento para modificar um cálculo créditos precedentemente inserido. |
-| Visualizar | Refere-se ao procedimento para visualizar um cálculo créditos precedentemente inserido. |
-| Cancelar | Executa o procedimento para cancelar um cálculo créditos precedentemente inserido. |
-| Pré-visualização | Refere-se ao procedimento para imprimir o detalhe dos cálculos evidenciados na grelha dos resultados. |
-| Imprimir | Refere-se ao procedimento para imprimir o detalhe dos cálculos evidenciados na grela dos resultados. |
+Premere quindi il pulsante **Calcola**.
 
-ÁREA DE FILTRO: a área de filtro é dedicada à hospedagem na lista de possíveis tipos de dados através do qual é possível fazer uma seleção e uma pesquisa sobre o total dos cálculos inseridos. Os filtros são em condição 'E' e é possível especificar mais critérios de filtro contemporâneos.
+Il calcolo può essere salvato con il comando **Salva**.
 
-GRELHA DE RESULTADO: a grelha de resultado é uma lista que corresponde aos dados de filtro especificados acima. O usuário, depois de especificar os valores pelos quais deseja obter uma pesquisa dos créditos, pressionando o botão [Pesquisa] presente na relativa Ribbon, resultará na grelha a lista que quiser. 
+La **data di riferimento** costituisce il gorno in riferimento al quale viene calcolato il fido disponibile.
+
+ATTENZIONE: nel caso, ad esempio did ricevute bancarie emesse e presentate al salvo buon fine, anche laddove queste siano state accreditate con l'apposita procedura contabile, ai fini del fido cliente l'importo si considera ancora impegnato fino alla data di scadenza della partita che ha generato la ricevuta bancaria. Pertanto modificando la data di riferimento del calcolo oltre detta data si potrà notare che il valore del fido viene liberato per l'importo corrispondente.
+
+All'interno dei documenti di vendita, ad esempio l'ordine cliente, invece, il calcolo del fido disponibile (visibile sulla testata) è sempre vincolato alla data odierna, senza poter effettuare modifiche della data di riferimento, pertanto un nuovo ordine, se fuori fido, ,non sarà evadibile (salvo percorso autorizzativo) fino al giorno della scadenza dell'ipotetico effetto che nel ibera un valore sufficiente.
 
 
+Il Pulsante **Aggiorna fido cliente** va ad aggiornare l'anagrafica del cliente inserito nella testata del calcolo e imposta in anagrafica il valore che legge nel campo **Fido stimato**.
 
+Questo campo, a sua volta viene popolato dal comando Calcola applicando il valore del campo **Moltiplicatore valutazione fido** (ad es. 1) ad un calcolo (ponderato) basato sul fatturato del periodo considerato per quel cliente.
 
+In dettaglio il calcolo è così sviluppato:
+
+Fatturato 12M” / 365 * “Moltiplicatore” * “Giorni dilazione medi”, dove questi ultimi sono a loro volta calcolati sulle scadenze delle fatture degli ultimi 12 mesi, come “(somma(Importo scadenza *GiorniDilazione))/(somma totale scadenze).
+
+**ALTRI CAMPI DELLA FORM:**
+
+**Fatt 12 m**. = fatturato dei dodici mesi precedenti
+
+**Partite** dare avere e relativo saldo
+
+**Dare / avere** = movimenti di incasso da registrazioni provvisorie (dato informativo)
+
+**Saldo dare / avere** = movimento contabile se è stata scelta la modalità contabile
+
+**Fatt. da contabilizzare** = non ancora contabilizzate,  (avere perché ci sono le Note di Credito) Acconti è un di cui per fatture con righe acconti
+
+**DDT da fatturare** (avere se DDT di reso)
+
+**Valore e nr insoluti** (statistico non entra nel calcolo)
+
+**Scaduto** = quanto delle partite aperte sono scadute 
 
 

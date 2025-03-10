@@ -1,24 +1,15 @@
 ---
-title: Gestão apoio pagamentos
+title: Gestione appoggio pagamenti
 sidebar_position: 2
 ---
 
-A partir desta máscara se procede com a gestão dos dados dos apoios bancários previstos para os pagamentos (e eventualmente para as cobranças). Dentro dos registros clientes/fornecedores é possível definir a subconta do banco de pagamento predefinido: em relação a isso cada partida, no ato da sua criação, vai ser canalizada nesse instituto mas o dado pode ser gerido e modificado a partir desse procedimento.
+Da questa maschera si procede alla gestione dei dati degli appoggi bancari previsti per i pagamenti (ed eventualmente per gli incassi). All'interno delle anagrafiche clienti/fornitori è possibile definire il sottoconto banca di pagamento predefinito: sulla base di questo ogni partita, all'atto della sua creazione, viene canalizzata su questo conto, ma il dato può essere modificato dalla presente maschera.
 
-Além dessa função, a máscara permite visualizar a lista dentro da qual a partida foi paga, assim como permite memorizar manualmente a recessão do aviso de pagamento, do seu controle e do acontecido envio do mesmo através dos flag relativos na grelha.
+Oltre a questa funzione, la maschera consente di visualizzare la distinta all'interno della quale la partita è stata pagata, così come consente di memorizzare manualmente la ricezione dell'avviso di pagamento, del suo controllo e dell'avvenuto invio dello stesso attraverso i flag relativi in griglia.
 
-RIBBON BAR: representa o menu do módulo em questão, ou seja, a área na qual efetuar algumas ações. A lista de possíveis funcionalidades é sucessivamente representada:
+La gestione puntuale dell'appoggio pagamenti è molto utile per ottenere successivamente una elaborazione del **[*Cash Flow*](/docs/treasury/cash-flow/reports)** raggruppata per banca, in modo da conoscere l'andamento e la consistenza, non solo del cash flow generale, ma anche di valutare la situazione e l'eventuale possibile scopertura di ogni singolo conto bancario aziendale.
 
-
-
-| RibbonFunction | RibbonMeaning |
-| --- | --- |
-| Procurar | Botão para a pesquisa das partidas. |
-
-ÁREA DE FILTRO: a área de filtro é dedicada à hospedagem na lista de possíveis tipos de dados através do qual é possível fazer uma seleção. Os filtros são em condição 'E' e é possível especificar mais critérios de filtro contemporâneos.
-
-GRELHA DE RESULTADO: a grelha de resultado é uma lista das partidas que correspondem aos dados de filtro especificados acima. O usuário, depois de especificar os valores pelos quais deseja obter uma pesquisa das partidas, pressionando o botão [Pesquisa] presente na relativa Ribbon, resultará na grelha a lista das partidas que quiser.
-
+**<a href="https://youtu.be/DkxoWgTkvUg&amp;t=5m37s" target="_blank" rel="noopener noreferrer">Si rinvia al Tutorial - Link YouTube </a>**
 
 
 

@@ -1,25 +1,49 @@
 ---
-title: 新未付
+title: Insoluti
 sidebar_position: 4
 ---
 
-该掩码用于手动创建新未付，但是必须有已发布账单。
+La form della ricerca insoluti 
 
-掩码标头不是必须，但其中可以包含未付参考日期的设置、每项未付的费用金额和参考货币日期（未使用）。未付必须通过“获取”按钮创建，该按钮将在已发布的账单内打开搜索掩码。在每一年的开始，请特别注意账单年份的筛选条件，因为账单年份可能会被建议为系统的当前年份。
+- si trova in Tesoreria > Portafoglio Effetti > Effetti > Insoluti
 
-将未付列表放入创建网格后，可以手动逐行收集银行费用，或者在标头中重新设置数据，并通过相关按钮把这些数据分配到选中账单。
+- permette all'utente di ricercare gli insoluti emessi precedentemente con lo scopo di visualizzarli, modificarli ed eventualmente cancellarli.
 
-恢复按钮可以取消选中未付的创建。
-
-功能导航栏：功能导航栏为菜单窗体，包含该程序中可能需要的操作。当前选项卡的功能如下：
+Da questa form è possibile anche inserire manualmente un nuovo insoluto tramite il bottone **Nuovo**.
 
 
+## Pulsanti della Ribbon Bar
 
-| RibbonFunction | RibbonMeaning |
-| --- | --- |
-| 获取账单 | 打开账单搜索掩码，指出未付账单 |
-| 数据属性 | 将标头数据分配到选中未付行 |
-| 恢复 | 删除网格中的未付 |
+> - **Ricerca:** Pulsante per ricercare gli insoluti secondo i filtri di ricerca impostati nella testata della form.
+> - **Nuovo:** Richiama la form per inserire un nuovo insoluto.
+> - **Modifica:** Permette di modificare un insoluto precedentemente inserito.
+> - **Visualizzazione:** Permette di visualizzare un insoluto precedentemente inserito.
+> - **Elimina:** Cancella un insoluto precedentemente inserito.
+> - **Creazione multipla insoluti:** esegue il comando per creare più di un insoluto contemporaneamente
+
+> Esecuzione delle **stampe** (*Anteprima* oppure *Stampa*) lancia, relativamente agli insoluti selezionati con il mouse, (tenendo premuto Ctrl si possono selezionare più insoluti contemporaneamente) le omonime stampa presente nel [**menu stampe**](/docs/treasury/bills-holding/reports/print-unpaid-list) del modulo
+
+> - *Insoluti*: evidenza degli effetti insoluti con relativi riferimenti e importi, maggiorati di eventuali interessi e spese
+> - *Lettera di sollecito*:  Lettera indirizzata al debitore che evidenzia gli effetti insoluti e ne sollecita il pagamento 
+
+
+## Filtri di ricerca
+
+- **Tipi Effetti:** Filtra sulla tipologia di effetto che è stato inserito nell'insoluto in fase di creazione, ad esempio Ricevuta bancaria, Cambiale ecc...
+- **Debitore:** filtro riferito al campo ***Debitore*** presente all'interno dell'effetto
+- **DA / A / data insoluto / Data scadenza / Data emissione / Numero**: riferiti agli omonimi campi presenti all'interno dell'insoluto e in particolare riferiti alla data creazione insoluto, alla data scadenza della partita che si riapre con l'insoluto, alla data emissione dell'effetto andato insoluto e al numero dell'effetto insoluto
+- **Stato insoluto:** filtro riferito allo *Stato insoluto* presente all'interno dell'insoluto, lo stato viene automaticamente modificato a seconda delle procedure che sono state eseguite, ad esempio nasce come Insoluto , poi diventa incassato, oppure emessa nota di addebito ecc...
+- **Flag di filtro:** Di default è attivo *Tutti*, ma può essere cambiato selezionando le varie condizioni di ricerca che se attivate contemporaneamente andranno ad allargare la base di ricerca, ad esempio quelli stampati + quelli contabilizzati + quelli NON stampati ..... E' inoltre presente l'ulteriore sezione espandibile per filtrare insoluti che provengono da effetti generati dalle partite o dalle fatture con relativi riferimenti data / numero. Questo aiuta la ricerca inquanto le due procedure di creazione dell'effetto sono tra loro alternative.
+
+## Griglia dei risultati
+
+In questa from presenta gli stessi campi presenti nei filtri già dettagliati qui sopra.
+
+Presenta inoltre 
+- l'importo dell'effetto insoluto e  **Spese Bancarie** presente nella testata insoluto che viene riaddebitato al cliente e contabilizzato
+- la **data** e **numero** Importazione riferiti alla procedura di **Importazione insoluti**
+- il **Numero di fattura** che ha generato l'effetto andato insoluto
+- la **Banca di presentazione** dell'effetto insoluto
 
 
 
