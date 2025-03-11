@@ -3,16 +3,14 @@ title: Parametri gestionare angajați
 sidebar_position: 1
 ---
 
-Parametrii de gestionare a personalului se găsesc pe calea **Parametri > Angajați > Parametri gestionare angajați**.   
-Aceste date sunt esențiale pentru diverse gestiuni ale companiei, în special pentru gestionarea cursurilor de formare și gestionarea echipamentelor individuale de protecție (EIP).
-
+Parametrii de gestionare a personalului se găsesc pe calea **Parametri > Angajați > Parametri gestionare angajați**.  
 
 Informațiile prezente în parametrii de gestionare a personalului sunt utilizate pentru:  
 - **Cursuri de bază**: în datele din antet.
 - **Cursuri de formare**: în datele din antet.
 - **Livrări/Returnări EIP**: în raportul *Fișă livrare EIP* și *Fișă retur EIP*.
 
-*Câmpuri specifice*
+#### Câmpuri specifice
 
  **Cursuri de formare**   
 - **Tip curs de bază**: reprezintă tipul de curs de bază care va fi propus la introducerea unui *Curs de bază*.

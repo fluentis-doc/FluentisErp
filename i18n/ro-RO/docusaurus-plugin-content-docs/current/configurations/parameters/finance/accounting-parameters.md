@@ -11,7 +11,7 @@ Trebuie să existe o înregistrare care conține diferiți parametri detaliați 
 Când se creează noul record de parametri, programul întreabă dacă se dorește și crearea altor [contori pentru noul an](/docs/configurations/utility/new-year-counter-generation).
 :::
 
-*Butoane specifice*
+#### Butoane specifice
 
 > **Inserează cont**: buton pentru inserarea tipurilor de conturi pentru fiecare cont inserat. Setarea autorizează substituirea automată a contului generic în șablon cu contul din documentul fiscal. Deasemenea, blochează sau semnalează conturile incompatibile.  
 > **Anulează raporte definitive**: buton pentru anularea rapoartelor definitive ale registrului jurnal, doar în cazul în care utilizatorul are acest drept în l'ARM. După anularea raportului definitiv, utilizatorul trebuie să reseteze contoarele contorul corespunzător câmpului **Dată ultimă listare registru jurnal**, din secțiunea **Date an**, compusă din trei câmpuri care conțin data, ultima linie și ultima pagină a raportului final.  
