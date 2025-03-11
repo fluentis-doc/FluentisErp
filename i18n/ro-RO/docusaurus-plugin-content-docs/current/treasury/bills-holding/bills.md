@@ -1,50 +1,47 @@
 ---
-title: Caută efecte
+title: Effetti
 sidebar_position: 3
 ---
 
-Această procedura permite utilizatorului să caute efectele active emise anterior cu scopul de a le vizualiza, modifica, şterge sau pentru a insera o nouă înregistrare. În această fereastră utilizatorul poate efectua toate operaţiile necesare în cadrul documentului, cu condiţia sa aibă drepturile necesare.
+La form della ricerca effetti 
+- si trova in Tesoreria > Portafoglio Effetti > Effetti > Effetti
 
-RIBBON BAR: reprezintă meniul Form-ului în discuţie. Mai precis, aria în care se pot efectua acţiuni asupra unei înregistrări preexistente. Prezentăm în continuare lista cu funcţionalităţile posibile:
+- permette all'utente di ricercare gli effetti emessi precedentemente con lo scopo di visualizzarli, modificarli ed eventualmente cancellarli.
 
-
-
-| Functie | Functionalitate |
-| --- | --- |
-| Caută efecte | Buton pentru căutarea în baza de date aefectelor inserate. |
-| Efect nou | Buton pentru inserarea unui efect nou. |
-| Modifică efect | Buton pentru modificarea unui efect inserat anterior. |
-| Vizualizează efect | Buton pentru vizualizarea unui efect inserat anterior. |
+Da questa form è possibile anche inserire manualmente un nuovo effetto, ma questa modalità è scarsamente utilizzata nella pratica. Solitamente si procede tramite le procedure di creazione automatica effetti (dalle partite o dalle fatture).
 
 
+## Pulsanti della Ribbon Bar
 
-| Functie | Functionalitate |
-| --- | --- |
-|  [Raport liste de prezentare](/docs/treasury/bills-holding/reports/print-presentation-lists)  | Buton pentru listarea Listelor de prezentare în banca efectelor. |
-|  [Raport Situație portofoliu efecte](/docs/treasury/bills-holding/reports/bill-holding-situation)  | Buton pentru listarea situației portafoliului efectelor. |
-|  [Raport Lista efecte neîncasate](/docs/treasury/bills-holding/reports/print-unpaid-list)  | Buton pentru listarea listei efectelor neîncasate. |
+> - **Ricerca effetti:** Pulsante per ricercare gli effetti secondo i filtri di ricerca impostati nella testata della form.
+> - **Nuovo effetto:** Richiama la form per inserire un nuovo effetto.
+> - **Modifica effetto:** Permette di modificare un effetto precedentemente inserito.
+> - **Visualizzazione effetto:** Permette di visualizzare un effetto precedentemente inserito.
+> - **Cancella effetto:** Cancella un effetto precedentemente inserito.
 
+> Esecuzione delle **stampe** (*Anteprima* oppure *Stampa*) lancia, relativamente agli effetti selezionati con il mouse, (tenendo premuto Ctrl si possono selezionare più effetti contemporaneamente) l'omonima stampa presente nel [**menu stampe**](/docs/treasury/bills-holding/reports/bill-holding-situation) del modulo
 
-
-| Functie | Functionalitate |
-| --- | --- |
-|  [Preluare efecte din facturi](/docs/treasury/bills-holding/procedures/bills-acquisition-from-invoices/acquisition)  | Buton pentru crearea automată a efectelor din scadențe facturi. |
-|  [Preluare efecte din angajamente](/docs/treasury/bills-holding/procedures/bills-acquisition-from-maturity-values)  | Buton pentru crearea automată a efectelor din angajamente deschise. |
-|  [Contabilizare efecte](/docs/treasury/bills-holding/accounting/bills-accounting)  | Buton pentru contabilizarea efectelor și pentru închiderea contului client. |
-|  [Contabilizare efecte la furnizor](/docs/treasury/bills-holding/accounting/bills-accounting-by-vendor/accountingu contabilizarea efectelor la furnizor și pentru închiderea contului furnizor. |
-|  [Contabilizare liste](/docs/treasury/bills-holding/accounting/lists-accounting/accounting)  | Buton pentru contabilizarea listei și pentru valorizarea contului de prezentare. |
-|  Contabilizare acredite  | Buton pentru contabilizarea acredtului în cont. |
-|  [Generare file incsso documentar]  | Buton pentru generarea fișierului telematic incsso documentar. |
-|  [Generare file Rid]  | Buton pentru generarea fișierului telematic Rid. |
-|  [Import efecte neîncasate](/docs/treasury/bills-holding/procedures/import-unpaids)  | Buton pentru importarea fișierukui telematic efecte neîncasate. |
-|  [Contabilizare efecte neîncasate](/docs/treasury/bills-holding/accounting/unpaid-accounting/unpaids)  | Buton pentru contabilizarea efectelor neîncasate cu redeschiderea angajamentului client pe baza parametrilor modulului. |
-
-ARIA DE FILTRE: aria de filtre conţine lista cu posibilele tipuri de date cu ajutorul cărora se poate efectua o selecţie sau o căutare în totalul efectelor inserate. În general, filtrele sunt în condiţie “AND” şi există posibilitatea inserării simultane a mai multor criterii de filtrare.
-
-GRID REZULTATE: reprezintă lista cu efectele care corespund datelor din filtrele indicate anterior. Utilizatorul, după ce a inserat valorile cu ajutorul cărora doreşte să caute efectele, dacă apasă butonul [Caută ] prezent în Ribbon, obţine în gridul rezultatelor lista cu efectele dorite.
+> - *Avviso scadenza effetti*: Lettera indirizzata al cliente (una pagina per ogni effetto selezionato) che evidenzia gli effetti in scadenza con relativi riferimenti
+> - *Lettera di cumulo*:  Lettera indirizzata al cliente che evidenzia le partite o fatture acquisite in ogni singolo effetto 
+> - *Portafoglio effetti:* Stampa una lista di effetti con evidenza dei dati principali relativi
+> - *Situazione castelletti:* Stampa per ogni banca (relativa agli effetti selezionati) la situazione del castelletto concesso, utilizzato e residuo
 
 
+## Filtri di ricerca
 
+- **Conto:** filtro riferito al campo ***Debitore*** presente all'interno dell'effetto
+- **Anno / Tipo effetto:** filtri riferiti agli omonimi campi presenti all'interno dell'effetto 
+- **DA / A / data scadenza / Dat emissione / Numero**: riferiti agli omonimi campi presenti all'interno dell'effetto
+- **Stati effetti:** filtro riferito allo *Stato effetto* presente all'interno delle'effetto, lo stato viene automaticamente modificato a seconda delle procedure che sono state eseguite, ad esempio nasce come Emesso , poi diventa presentato, Accreditato, insoluto ecc...
+- **Divisa:** per filtrare solo effetti denominati ad esempio in dollari ecc...
+- **Piazza / ABI / CAB / Descrizione Banca:** riferiti alla banca d'appoggio del debitore
+- **Flag della sezione Stato Effetto:** Di default è attivo *Tutti*, ma può essere cambiato selezionando le varie condizioni di ricerca che se attivate contemporaneamente andranno ad allargare la base di ricerca, ad esempio quelli stampati + quelli contabilizzati + quelli NON stampati .....
+
+## Griglia dei risultati
+
+In questa from presenta gli stessi campi presenti nei filtri già dettagliati qui sopra.
+
+Presenta inoltre gli **Importi** (in valuta, esempio dollari, e in Euro) dell'effetto (coincidenti se l'effetto è denominato in euro).
 
 
 

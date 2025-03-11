@@ -1,42 +1,65 @@
 ---
-title: Creează
-sidebar_position: 6
+title: Crea pagamenti fornitore
+sidebar_position: 2
+---
+La form si trova in **Tesoreria > Pagamenti > Crea pagamenti fornitore** e consente la creazione di una nuova distinta di pagamento. La stessa maschera viene utilizzata anche per l'apertura in modifica o visualizzazione di una distinta già salvata.
+
+Dalla form di ricerca è possibile creare un nuovo documento mediante il pulsante **> Nuovo pagamento** oppure aprirne uno esistente per visualizzarlo e/o modificarlo.
+
+## Come creare una distinta di pagamento
+
+Clicca per i passaggi fondamentali:
+
+1. Seleziona il **Tipo di pagamento** della distinta dal primo campo a discesa.
+2. I campi seguenti vengono compilati automaticamente:
+   - **Anno**: propone l'anno attuale del sistema.
+   - **Numero distinta**: numerazione progressiva della distinta.
+   - **Data emissione**: propone la data odierna.
+3. Compila i campi obbligatori della testata:
+   - **Banca**: inserire il codice di sottoconto dell'anagrafica banca sulla quale emettere la distinta.
+   - **Conto corrente**: compilato automaticamente sulla base dell'anagrafica banca collegata al sottoconto.
+   - **Note iniziali**: campo libero per eventuali annotazioni (non utilizzato nello standard).
+   - **Note finali**: utilizzato nella contabilizzazione per valorizzare la descrizione del movimento contabile della banca.
+4. Imposta eventuali opzioni aggiuntive:
+   - **Imponi questa data valuta beneficiario**: definisce la data valuta del beneficiario nel tracciato telematico.
+5. Controlla i flag di stato della distinta:
+   - **Stampato**: non gestito automaticamente dal programma.
+   - **File emesso**: aggiornato automaticamente dopo la creazione del file telematico.
+6. Seleziona le partite da pagare:
+   - Premi il pulsante **> Crea un pagamento dalle partite** per selezionare le partite contabili da chiudere.
+   - Attenzione all'uso del flag *visualizzazione partite percipienti*: la gestione del pagamento deve avvenire dal modulo percipienti.
+   - Il flag *Imponi banca d'appoggio dall'anagrafica del fornitore* permette di utilizzare la banca predefinita nel fornitore.
+7. Modifica, se necessario, i valori di pagamento in griglia.
+   - È possibile inserire pagamenti parziali o aggiungere righe manuali.
+   - Attenzione: l'aggiunta manuale può causare discrepanze nel saldo contabile se non gestita correttamente.
+8. Controlla le **Note** in griglia: vengono compilate automaticamente con i riferimenti delle partite pagate e saranno riportate in contabilità generale.
+
+:::tip ATTENZIONE
+Sulla testata della distinta è presente un flag **Autorizzato** per consentire la creazione del tracciato XML ed eseguire il pagamento. Il flag memorizza l'utente e la data di autorizzazione. Può essere attivato di default accedendo alla form **Parametri pagamenti fornitori** e attivando il flag *Autorizzato di default*.
+:::
+
+9. **Premi il pulsante Creazione file SEPA** per generare automaticamente un tracciato .xml della lista dei pagamenti ed archiviarlo automaticamente nel documentale. Puoi scaricare il file dal documentale per la successiva impostazione sui sistemi corporate banking, anzichè dover reinserire i pagamenti manualmente.
+
+10. Premi il bottone **Documenti**, nel gruppo Document manager per accedere al documentale con l'allegato .xml Da dentro la form del documentale premi poi il bottone **Salva allegato** per scaricare la copia sul PC locale.
+
+#### Pulsanti specifici
+
+> **Nuovo pagamento**: Inserisce manualmente una riga di pagamento fornitore.
+
+> **Salva**: Salva la testata della distinta dopo aver inserito il tipo di pagamento e il sottoconto di banca.
+
+> **Cancella pagamenti selezionati**: Cancella i pagamenti fornitori creati manualmente o da creazione pagamento da partite.
+
+> **Crea un pagamento dalle partite**: Attivabile dopo il salvataggio della testata, acquisisce i dati dall'archivio partite.
+
+> **Documenti**: Pulsante per il collegamento alla gestione documentale.
+
+
 ---
 
-Această fereastră este utilă inserării unei noi liste plăți; este aceeași fereastră care se deschide în momentul în care doriți să modificați/vizualizați o listă deja salvată.
+### **VIDEO TUTORIALS**
 
-În primul combo se selectează **tipul plății** de referință al listei. În următoarele câmpuri, procedura propune anul actual al sistemului și numerotarea progresivă a listei: pentru data emiterii este propusă data actuală.
-
-În câmpul **banca** se inserează, în mod normal, codul contului analitic al băncii pentru care se va emite lista: obligativitatea asocierii la un registru bănci este legată de necesitatea de a avea referințe cin/abi/cab/cont curent necesare pentru expedierea telematică a directorului transferurilor Italia. Din punctul de vedere al contabilizării plăților, în schimb, nu există nici o necesitate particulară: acest cont analitic ar putea fi orice cont analitic din planul de conturi.
-
-Câmpul **contului curent** este completat automat pe baza registrului băncii asociate la contul analitic inserat: eventual poate fi inserat și/sau modificat manual.
-
-Câmpul **note inițiale** este un câmp liber pentru inserarea notelor plății, neutilizat în standard.
-
-Câmpul **note finale** este utilizat la contabilizarea plății pentru a avea descrierea detaliată a mișcării contabile a contului analitic al băncii.
-
-Flag-ul **Inserează această dată valută beneficiar** permite definirea, în directorul telematic, a datei care va fi atribuită beneficiarului plății: în cazul în care data nu este inserată, va fi utilizată data curentă. Dacă flag-ul nu este setat, data valutei va fi egală cu data scadenței.
-
-În partea dreaptă sunt prezente două flag-uri de stare a listei: flag **Listat **nu este gestionat automat de program, în timp ce flag-ul **Fișier emis** este actualizat pe baza creării fișierului telematic. Este posibilă recrearea fișierului și fără resetarea acestui flag în listă.
-
-Gestiunea detaliilor plăților se efectuează în mod normal cu ajutorul butonului plăți din angajamente: deci trebuie selectată lista angajamentelor contabile care vor fi închise cu plata în listă. În această fereastră de selectare a angajamentelor, printre diversele filtre și flag-uri disponibile, semnalăm că nu recomandăm utilizarea flag-ului **Vizualizează angajamente liber profesioniști** (pentru că gestionarea plății trebuie să fie realizată în modulul liber profesioniști pentru ca apoi să poată fi obținută certificarea reținerilor; flag-ul ‘Inserează banca principală din registrul furnizorului' înseamnă ca banca beneficiară a plății va fi banca implicită inserată în registrul furnizorului, în secțiunea plăți, grid bănci principale; acest lucru este independent de banca principală asociată angajamentului în înregistrarea sa contabilă. Acest al doilea flag poate fi predefinit implicit în parametrii modulului.
-
-Este permisă modificarea valorilor plății inserate în grid, cu scopul de a obține, de exemplu, plăți parțiale, ca și adăugarea manuală a plăților.
-
-Câmpul **Note** este completat automat,  pe baza angajamentelor plătite pe baza referințelor documentului care se închide. Aceste note vor fi preluate în liniile plății inserate în contabilitatea generală, în corespondență cu contul analitic relativ.
-
-RIBBON BAR: reprezintă meniul Forum-ului în discuţie, mai precis aria în care se pot efectua acţiuni asociate la procedura utilizată. Prezentăm în continuare lista cu funcţionalităţile posibile:
-
-
-
-| Functie | Functionalitate |
-| --- | --- |
-| Plată nouă | Buton pentru inserarea manuală a unei noi plăți furnizor; |
-| Salvează | Buton pentru salvarea antetului noii plăți furnizor, activ după inserarea tipului plății și a contului analitic al băncii; |
-| Șterge plățile selectate | Buton pentru ștergerea plăților furnizori create manual sau din angajamente; |
-| Creează o plată din angajamente  | Buton pentru crearea unei plăți, activ după salvarea antetului, pentru a crea o plată, achiziționând datele din arhiva de angajamente.  |
-| Numerotare din |  |
-| Documente | Procedura da posibilitatea de a atașa documente. |
+<iframe width="560" height="315" src="https://www.youtube.com/embed/CDCVq0iC29s" title="YouTube video player" frameborder="0" allowfullscreen= "true"></iframe>
 
 
 

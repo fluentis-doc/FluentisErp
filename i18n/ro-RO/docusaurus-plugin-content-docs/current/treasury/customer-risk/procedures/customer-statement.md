@@ -1,61 +1,73 @@
 ---
-title: Expunere clienți
+title: Esposizione clienti
 sidebar_position: 2
 ---
 
-Această fereastră permite obținerea unui cadru general al întregii situații de risc față de diverși clienți, cu posibilitatea de a obține date pe agent, țară sau grupuri de societăți.
+La form si trova in Tesoreria > Rischio Cliente > Procedure > Esposizione clienti
 
-Descriem în continuare setările prezente și valorile (clienții prezenți în fereastră sunt cei care în registru au activ flag-ul Expunere clienți).
+Consente di avere un quadro generale complessivo di tutta la situazione di rischio nei confronti dei vari clienti, con la possibilità di ottenere dati per agente, nazione, raggruppando anche per gruppi societari. 
 
-Secțiunea inițială a parametrilor Risc client propune din nou parametrii impliciți de calcul setați pentru modul.
+## Come verificare l'esposizione clienti
 
-În secțiunea succesivă antetului, este posibilă filtrarea după un anumit responsabil (angajatul care a fost asociat registrului client, primul tab Administrativ), filtrarea clienților ‘Externi' sau ‘Italia', vizualizarea datelor grupate după ‘grup societăți' (va fi afișat doar un total pe contul analitic inserat în câmpul ‘grup societăți' prezent în tabul Administrativ din registrul clientului și nu pe fiecare analitic client) și, în sfârșit, gruparea (și filtrarea) datelor pe agent sau țară. În partea dreaptă este prevăzută posibilitatea de a ordona datele după codul contului sintetic/analitic sau descriere a clientului.
+1. Espandere, se necessario, la sezione dei filtri per inserire l'intervallo di date di riferimento entro cui verificare ed il criterio di raggruppamento desiderato (Per nazione, per agente o per cliente).
 
-Datele afișate în grid (în care vor fi vizualizate cu roșu liniile variațiilor):
+2. Premere il tasto **Ricerca**: i clienti presentati nella maschera sono quelli per i quali in anagrafica è stato inserito il flag *Esposizione clienti*.
 
-**Documente neîncasate**: este afișată suma documentelor neîncasate necontabilizate sau (dacă flag-ul în antet este inserat) și cele deja contabilizate;
+:::note[Nota]
+La sezione iniziale dei *parametri rischio cliente* ripropone gli stessi parametri di default di calcolo impostati per il modulo, con in più il range di date registrazione utilizzato per il controllo rimesse (per i dettagli si veda il documento successivo).
+:::
 
-**Fact. ultimele 12 luni**: este facturarea (din aria vânzări, facturi de vânzări) a celor 12 luni precedente datei de referință;
+:::note[Ulteriori filtri disponibili]
+E' possibile filtrare per un determinato responsabile (il dipendente che è stato associato all'anagrafica cliente, primo tab *Amministrazione*), filtrare i clienti *Esteri* o *Italia*, visualizzare i dati raggruppati per *gruppo societario* (verrà visualizzato un solo totale per il sottoconto inserito nel campo del *gruppo societario* presente nel tab *amministrazione* dell'anagrafica cliente invece che i singoli sottoconti cliente di dettaglio) e infine raggruppare (e filtrare) i dati per agente o nazione. 
 
-**Variație zile scad**: indică numărul de zile de variație medie a datei scadenșei față de data documentului;
+E' prevista la possibilità di ordinare i dati per codice di conto/sottoconto o per descrizione (ragione sociale) del cliente.
+:::
 
-**Facturat**: este facturarea (din aria vânzări, facturi de vânzări) de la începutul anului;
+### Dati visualizzati in griglia 
 
-DSO: Days of Sales Outstanding, zilele de rotație ale creditului. Formula de calcul este 365 * (Angajamente debit – Angajamente credit + Efecte în scadență + Documente neîncasate+ Facturi de contabilizat) / Fact. ultimelor 12 luni. În cazul în care facturarea ultimelor 12 luni este 0 atunci și DSO va fi 0;
+Saranno visualizzate in rosso le righe con scostamento.
 
-**Credit **și **Credit asigurat**: suma creditului gestional și a creditului asigurat;
+**Insoluti**: viene qui visualizzato l'importo degli insoluti non contabilizzati, oppure (se il flag in testata è inserito) anche quelli già contabilizzati;
 
-**Sold**: afișează totalurile debit/credit calculate din angajamente sau din soldul contabil;
+**Fatt. ultimi 12 mesi**: è il fatturato (dall'area vendita, fatture di vendita) dei 12 mesi precedenti alla data di riferimento;
 
-**Plăți din înreg. prov.**: valoarea plăților angajamentelor asociate înregistrărilor provizorii;
+**Scostamento giorni**: indica il numero di giorni di scostamento tra la scadenza media e la data valuta d'incasso media, secondo quanto calcolato con la logica della maschera ‘Controllo rimesse' cui si rinvia per dettagli; La particolarità è che è una media pesata sull’importo della partita. Infatti il dato è espresso in numeri creditori (come in estratto conto scalare bancario)
 
-**Efecte în scadență**: valoarea efectelor acumulate (efecte emise + prezentate);
+**Scostamento GG scad.**: indica i giorni di scostamento medi della data scadenza rispetto alla data documento; considera solo le partite scadute = SOMMA (residuo partita * giorni ad oggi di ritardo dalla data scadenza) / somma dei residui partite. Calcola dunque un valore medio dei ritardi
 
-**De contabilizat**: sunt sumele facturilor (a Tipurilor factură asociate creditului) listate dar necontabilizate;
+**Fatturato**: è il fatturato (dall'area vendita, fatture di vendita) dall'inizio dell'anno;
 
-**De facturat**: sunt sumele avizelor (a Tipurilor avizelor asociate creditului) listate dar nefacturate;
+**Giorni medi incasso**: Equivale all'indicatore denominato DSO (Days of Sales Outstanding), i giorni di rotazione del credito. La formula di calcolo è 365 * (Partite Dare – Partite avere + Effetti in scadenza + Insoluti + Fatture da contabilizzare) / Fatt. Ultimi 12 Mesi. Nel caso in cui il fatturato degli ultimi 12 mesi sia 0 allora anche il DSO sarà 0;
 
-**Tot. expunere**: suma ordinelor deschise + avize de facturat + facturi de contabilizat + sold angajamente/cont. + documente neîncasate necontabilizate;
+**Fido **e** Fido assicurato**: importo del fido gestionale e del fido assicurato;
 
-**Expirat**: valoarea angajamentelor deschise și deja expirate;
+**Saldo partitario**: ripropone i totali dare/avere calcolati dalle partite o dal saldo contabile;
 
-****Expirat din înreg. prov.****: ca cel precedent, dar derivate din înregistrări provizorii;
+**Pagam. da reg. provv.**: importo dei pagamenti partite collegati a registrazioni provvisorie;
 
-**Ordin**: valorile ordinelor (tipurilor de ordine asociate creditului) listate, confermate dar neexecutate încă.
+**Effetti in scadenza**: importo degli effetti in maturazione (effetti emessi + presentati);
 
-RIBBON BAR: reprezinta meniul cu butoanele de executie, pentru fiecare operatie in parte aferentă fiecarei ferestre din aria in care se lucreaza. Lista functionalitatilor posibile conține:
+**Da contabilizzare**: sono gli importi delle fatture (dei Tipi fattura collegati al fido) stampate ma non ancora contabilizzate;
+
+**Da fatturare**: sono gli importi dei  DDT (dei Tipi DDT collegati al fido) stampate ma non ancora fatturate;
+
+**Tot. Esposizione**: somma di ordini aperti + ddt da fatt. +fatt. da cont. + saldo partite/cont + effetti a scadere + insoluti non contab.;
+
+**Scaduto**: importo delle partite aperte e già scadute;
+
+**Scaduto da reg. provv.**: come il precedente, ma derivanti da registrazioni provvisorie;
+
+**Ordini**: sono gli importi degli ordini (dei Tipi ordine collegati al fido) stampati, confermati ma non ancora evasi.
+
+Dalla maschera dell'esposizione clienti è possibile: effettuare una stampa dei dati visualizzati, oppure passare alla maschera del ‘Controllo rimesse' relativamente alla riga del cliente selezionato, attraverso il relativo pulsante di gestione.
 
 
 
-| Functie | Functionalitate |
-| --- | --- |
-| Calculează | Buton pentru calcularea riscului clienți pe baza filtrelor și setărilor inserate. |
-| Vizualizează | Buton pentru vizualizarea raportului pentru calculul efectuat. |
-| Listează | Buton pentru listarea calculului efectuat. |
+**Pulsanti specifici**
 
-ARIA DE FILTRE: aria de filtre conţine lista cu posibilele tipuri de date cu ajutorul cărora se poate efectua o selecție. În general, filtrele sunt în condiţie “AND” şi există posibilitatea inserării simultane a mai multor criterii de filtrare.
+**Calcola** Pulsante per calcolare il rischio clienti secondo i filtri e le impostazioni indicate.
 
-GRID REZULTATE: reprezintă lista cu calculele care corespund datelor din filtrele indicate anterior. Utilizatorul, după ce a inserat valorile, cu ajutorul cărora dorește să obțină calculul expunerii, dacă apasă butonul [Caută] prezent în Ribbon, va obţine în gridul rezultatelor lista cu expunerile.
+**Controllo rimesse** Richiama la procedura per aprire la maschera di controllo rimesse.
 
 
 

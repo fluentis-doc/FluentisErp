@@ -1,40 +1,39 @@
 ---
-title: Gestiune cash flow
+title: Gestione Cash flow
 sidebar_position: 2
 ---
 
-În această fereastră se poate insera/modifică un cash flow.
+Da questa maschera si procede al caricamento/modifica del cash flow.
 
-Liniile pot fi inserate manual sau cu ajutorul butonului de preluare din antet, selectând tipul de flux care va deschide fereastra de căutare relativă.
+Da queste voci di menù è possibile creare/modificare i calcoli di simulazione del cash flow. Con la gestione manuale è possibile inserire righe manualmente oppure richiamare i dati attraverso il pulsante di acquisizione presente in testata, selezionando il tipo di flusso d'interesse che aprirà la maschera di ricerca e selezione relativa.
 
-Din această fereastră se poate vedea documentul inițial pentru a-i controla datele.
-
-RIBBON BAR: reprezintă meniul Form-ului în discuţie. Mai precis, aria în care se pot efectua acţiuni asociate la procedura curentă. Prezentăm în continuare lista cu funcţionalităţile posibile:
+Da questa maschera è anche possibile visualizzare il documento d'origine per valutarne i dati.
 
 
 
-| Functie | Functionalitate |
+| Funzione | Significato |
 | --- | --- |
-| Salvează | Buton pentru salvarea cash flow-ului curent; |
-| Caută toate | Buton pentru căutarea fluxurilor după conturile financiare; |
-| Caută mișcările cash flow | Buton pentru căutarea mișcărilor pe tipuri de flux previzional; |
-| Preluare | Când este apăsat acest buton se deschide o fereastră din care utilizatorul poate selecta tipul de flux din care vor fi preluate datele previzionale care vor fi inserate în cash flow-ul curent. Fiecare detaliu al acestui buton va deschide un help contextual specific pentrue tipul de flux (vezi aplicație 1). |
-| Nouă mișc. cont. | Plasează cursorul pe o nouă linie din gridul cu detaliile conturilor financiare; |
-| Nouă mișc. flow | Plasează cursorul pe o nouă linie din gridul cu detaliile mișcărilor previzionale; |
-| Restaurează tot | Șterge toate mișcările inserate; |
-| Restaurează contabilitate | Șterge mișcările conturilor financiare; |
-| Restaurează cash flow | Șterge mișcările previzionale; |
-| Vizualizează doc. orig. | Vizualizează documentul inițial al fluxului previzional selectat. |
+| Salva | Salva il cash flow in gestione. |
+| Ricerca tutti | Esegue la ricerca dei flussi per i conti finanziari. |
+| Ricerca movimenti cash flow | Esegue la ricerca dei movimenti per i tipi di flusso previsionale. |
+| Acquisizione | Da questo pulsante l'utente può selezionare il tipo di flusso dal quale riprendere i dati previsionali da inserire nel cash flow in uso. Ogni dettaglio di questo pulsante aprirà un help contestuale specifico per il tipo di flusso, vedi applicazione a. |
+| Nuovo mov. cont. | Attiva il cursore nell'inserimento di una nuova riga di dettaglio nei movimenti dei conti finanziari. |
+| Nuovo mov. flow | Attiva il cursore nell'inserimento di una nuova riga di dettaglio nei movimenti previsionali. |
+| Ripristino tutti | Cancella tutti i movimenti inseriti. |
+| Ripristino contabilità | Cancella i movimenti dei conti finanziari. |
+| Ripristino cash flow | Cancella i movimenti previsionali. |
+| Visualizza doc. orig. | Visualizza il documento d'origine del flusso previsionale selezionata. |
 
+**PULSANTE (lista) *ACQUISIZIONE*:**
 
- 1. Angajamente: fereastra permite preluarea angajamentelor din contabilitate
- 2. Contabilitate: fereastra permite preluarea soldurilor tipurilor de cont financiar 
- 3. Extras contabil: fereastra permite preluarea datelor scadențelor extracontabile ale cash flow-ului
- 4. Facturi (achiziții/vânzări): din aceste ferestre se selectează datele scadențelor facturilor de achiziții/vânzări
- 5. Ordine (clienți/furnizori): din aceste ferestre se selectează simulările datelor rămase ale ordinelor clienți/furnizori (listate și confirmate). Recomandăm să fie lăsată setarea implicită a ferestrei
- 6. Liber profesioniști necontabilizați: fereastra permite inserarea în cash flow a datelor compensărilor liber profesioniștilor necontabilizați
- 7. Avize (achiziții/vânzări): ferestrele permit preluarea datelor din avizele nevalorizate în factură
- 8. Sistem lohn (ordine/reintrări): ferestrele permit preluarea datelor din ordine în sistem lohn și din datele relative la reintrările nefacturate (lăsați setările implicite ale ambelor ferestre)
+ 1. Partite: la maschera consente di riprendere la partite contabili dalla contabilità;
+ 2. Contabilità: la maschera consente di riprendere i saldi dei tipi conto finanziari;
+ 3. Extra contabile: la maschera consente di riprendere i dati delle scadenze extracontabili di cash flow;
+ 4. Fatture (acquisto/vendita): da queste maschere si selezionano i dati delle scadenze fatture di acquisto/vendita ;
+ 5. Ordini (clienti/fornitori): da queste maschere si selezionano le simulazioni dei dati residui degli ordini clienti/fornitori (stampati e confermati). Si consiglia di lasciare l'impostazione di default della maschera;
+ 6. Percipienti non contabilizzati: la maschera consente di inserire nel cash flow i dati dei compensi percipienti non contabilizzati;
+ 7. DDT (vendita/acquisto): le maschere consentono di riprendere i dati dei  DDT non valorizzate in fattura;
+ 8. Conto lavoro (ordini/rientri): le maschere consentono di riprendere i dati dagli ordini di conto lavoro e dai relativi rientri non fatturati (lasciare le impostazioni di default di entrambe la maschere).
 
 
 
