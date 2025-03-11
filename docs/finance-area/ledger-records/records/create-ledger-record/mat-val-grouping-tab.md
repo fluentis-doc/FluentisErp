@@ -65,7 +65,7 @@ E' obbligatorio indicare il tipo pagamento corrispondente nella combo box adiace
 
 ![](/img/it-it/finance-area/ledger-records/records/create-ledger-record/mat-val-grouping-tab/image07.png)
 
- A questo punto l'operatività dell'utente nelle registrazioni di incasso/pagamento è completamente differente da quella di una chiusura partite normale: in questo caso, infatti, l'utente inizierà la registrazione dalla scheda **[Registrazione](/docs/finance-area/ledger-records/records/create-ledger-record/record-tab)**, imputando direttamente un valore al pagamento/incasso (tramite la compilazione delle sezioni della prima nota), sul quale l'applicativo creerà comunque una partita dare/avere che l'utente procederà poi ad assegnare manualmente (se vuole) ad un gruppo dalla scheda ‘Pagamenti gruppi'.
+ A questo punto l'operatività dell'utente nelle registrazioni di incasso/pagamento è completamente differente da quella di una chiusura partite normale: in questo caso, infatti, l'utente inizierà la registrazione dalla scheda **[Registrazione](/docs/finance-area/ledger-records/records/ledger-record)**, imputando direttamente un valore al pagamento/incasso (tramite la compilazione delle sezioni della prima nota), sul quale l'applicativo creerà comunque una partita dare/avere che l'utente procederà poi ad assegnare manualmente (se vuole) ad un gruppo dalla scheda ‘Pagamenti gruppi'.
 
 ![](/img/it-it/finance-area/ledger-records/records/create-ledger-record/mat-val-grouping-tab/image08.png)
 

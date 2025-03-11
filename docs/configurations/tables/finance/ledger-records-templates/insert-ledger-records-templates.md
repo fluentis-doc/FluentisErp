@@ -231,7 +231,7 @@ Il flag si può attivare solo per causali non iva (esempio apertura conti) per o
 
 **Progetti**: (ex Commesse): l'attivazione di questo flag farà comparire il campo *Progetto* nella testata della registrazione oltre ai campi di dettaglio el corpo della registrazione per il collegamento dei progetti (commesse) con i movimenti contabili di dettaglio.
 
-Per ulteriori dettagli vedere **[qui](/docs/finance-area/ledger-records/records/create-ledger-record/header-and-total-movements-description#campo_progetto)**
+Per ulteriori dettagli vedere **[qui](/docs/finance-area/ledger-records/records/ledger-record#campo_progetto)**
 
 **Centri di costo**: la presenza di questo flag farà comparire il tabulatore di gestione della valorizzazione centri di costo nelle registrazioni contabili.
 

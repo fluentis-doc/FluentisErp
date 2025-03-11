@@ -117,7 +117,7 @@ Korisnik može prilagoditi računovodstvene sheme, porezne kodove, registre itd.
 
 Fleksibilnost modula omogućava unos podataka na različite načine: 
 
-- **Ručni unos**, putem [**direktnog unosa računovodstvenih unosa**](/docs/finance-area/ledger-records/records/create-ledger-record/header-and-total-movements-description). Ovom metodom uglavnom se unose ispravci koji NISU uključeni u automatske procedure (odgode i obračuni) kao što su **rezerviranja za rizike i troškove, otpisi potraživanja** itd., osim knjiženja kao što su **obračun plaća zaposlenika** itd.
+- **Ručni unos**, putem [**direktnog unosa računovodstvenih unosa**](/docs/finance-area/ledger-records/records/ledger-record). Ovom metodom uglavnom se unose ispravci koji NISU uključeni u automatske procedure (odgode i obračuni) kao što su **rezerviranja za rizike i troškove, otpisi potraživanja** itd., osim knjiženja kao što su **obračun plaća zaposlenika** itd.
  
 - **Automatski unos** zahvaljujući **interkonekciji s drugim modulima poslovnog softvera**, kao što su blagajna, kontroling i aktivni i pasivni ciklusi. Obično se automatski registriraju **aktivne i pasivne fakture, plaćanja putem bankovnog transfera i pasivnih Ri.Ba., naplate putem izdavanja aktivnih Ri.Ba. ili mjenica, leasing rata, otplate kredita** itd.
 

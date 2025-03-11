@@ -5,7 +5,7 @@ sidebar_position: 5
 
 Ultima scheda standard è quella relativa alle 'Proprietà del cespite': è possibile assegnare una lista di proprietà differenti al cespite in uso, con un'eventuale nota esplicativa aggiuntiva.
 
-Vedere l'articolo sulla **[registrazione contabile](/docs/finance-area/ledger-records/records/create-ledger-record/fixed-assets-tab)**.
+Vedere l'articolo sulla **[registrazione contabile](/docs/finance-area/ledger-records/records/ledger-record)**.
 
 
 

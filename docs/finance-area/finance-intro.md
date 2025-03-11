@@ -117,7 +117,7 @@ L'utente può configurare comunque in ogni momento a suo piacimento schemi conta
 
 La flessibilità del modulo consente l'inserimento del dato in diversi modi: 
 
-- **Manualmente**, attraverso [**l'immissione diretta di scritture contabili**](/docs/finance-area/ledger-records/records/create-ledger-record/header-and-total-movements-description). Con questa modalità vengono generalmente inserire le scritture di assestamento NON comprese nelle procedure automatiche (Ratei e Risconti ed Ammortamenti) quali **stanziamenti a fondi rischi ed oneri, svalutazione crediti** ecc... oltre a scritture quali **rilevazioni paghe dipendenti** ecc.
+- **Manualmente**, attraverso [**l'immissione diretta di scritture contabili**](/docs/finance-area/ledger-records/records/ledger-record). Con questa modalità vengono generalmente inserire le scritture di assestamento NON comprese nelle procedure automatiche (Ratei e Risconti ed Ammortamenti) quali **stanziamenti a fondi rischi ed oneri, svalutazione crediti** ecc... oltre a scritture quali **rilevazioni paghe dipendenti** ecc.
  
 - **Automaticamente** grazie all'**interconnessione con gli altri moduli del gestionale**, quali la tesoreria, il controlling e i cicli attivo e passivo. Tipicamente vengono registrati in automatico le **fatture attive e passive, i pagamenti tramite bonifico e Ri.Ba. passive, gli incassi tramite emissione di Ri.Ba. attive o cambiali, i canoni leasing, le rate mutuo** ecc.
 

@@ -32,7 +32,7 @@ ili uklanjanjem za otključavanje (u tom trenutku će se pojaviti i korisnik koj
 
 **Očekivani datum:** ovo polje se može ispuniti kao pomoć pri obradi **[Novčanog tijeka](/docs/treasury/cash-flow/cash-flow/cash-flow-management)** (funkcionalnost prisutna u području riznice). Stoga se može naznačiti očekivani datum preuzimanja ili plaćanja koji se razlikuje od datuma isteka stavke i koji će biti prijavljen u izračunima novčanog toka (na koje se referencira). Treba imati na umu da će se u nedostatku određene naznake definirane u dotičnom polju, očekivani datum valorizirati u obradi novčanog toka počevši od datuma isteka, dodajući podatke (ako postoje) sadržane u polje **Prosječno kašnjenje dana plaćanja** prisutno u detaljima kupca ili dobavljača.  
 
-Za ostala polja pogledati **[Pojmovnik](/docs/guide/common/glossary/glossary-intro)** i pogledati upute koje se odnose na **[Karticu stavki u računovodstvenom zapisu](/docs/finance-area/ledger-records/records/create-ledger-record/maturity-values-tab)**.
+Za ostala polja pogledati **[Pojmovnik](/docs/guide/common/glossary/glossary-intro)** i pogledati upute koje se odnose na **[Karticu stavki u računovodstvenom zapisu](/docs/finance-area/ledger-records/records/ledger-record)**.
 
 **BILJEŠKA:**
 

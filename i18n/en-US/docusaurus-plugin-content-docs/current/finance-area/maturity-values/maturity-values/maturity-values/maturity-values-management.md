@@ -32,7 +32,7 @@ or removing it to unblock (at this point, the user who unblocked it will also ap
 
 **Scheduled date**: this field can be filled to support the processing of **[Cash Flow](/docs/treasury/cash-flow/cash-flow/cash-flow-management)** (a feature present in the treasury area). Thus, an expected collection or payment date can be indicated that differs from the due date of the maturity and will be reported in the cash flow processing (to which reference is made). In particular, it is noted that in the absence of a specific indication defined in the field in the comment, the expected date will be set in the cash flow processing, starting from the due date, adding the value (if present) contained in the **Late Days** field present in the customer or vendor register.
 
-For other fields, see the **[Glossary](/docs/guide/common/glossary/glossary-intro)** and refer to the instructions related to the **[Mat. values Tab in the Ledger Record](/docs/finance-area/ledger-records/records/create-ledger-record/maturity-values-tab)**.
+For other fields, see the **[Glossary](/docs/guide/common/glossary/glossary-intro)** and refer to the instructions related to the **[Mat. values Tab in the Ledger Record](/docs/finance-area/ledger-records/records/ledger-record)**.
 
 **NOTE:**
 

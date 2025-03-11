@@ -34,7 +34,7 @@ In particular, for each row corresponding to the maturity, there is a command (+
 
 **Accounted**: indicates that the maturity is linked to an accounting entry.
 
-**Not payable**: indicates that the line has been blocked by the user so that it cannot be paid. The block can be set directly at the time of creation or later from either the **[Mat. Values Tab](/docs/finance-area/ledger-records/records/create-ledger-record/maturity-values-tab)** of the accounting entry that generates the maturity or by entering edit mode on the line itself from the comment form.
+**Not payable**: indicates that the line has been blocked by the user so that it cannot be paid. The block can be set directly at the time of creation or later from either the **[Mat. Values Tab](/docs/finance-area/ledger-records/records/ledger-record)** of the accounting entry that generates the maturity or by entering edit mode on the line itself from the comment form.
 
 **Ribbon bar**:
 
