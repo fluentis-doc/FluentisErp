@@ -227,9 +227,9 @@ Se in testata della registrazione è stato inserito un sottoconto intestatario, 
 
   <summary>Click per visualizzare l'esempio</summary>
 
-![](/img/it-it/finance-area/ledger-records/records/create-ledger-record/payments-tab/image02.png)
+![](/img/it-it/finance-area/ledger-records/records/create-ledger-record/record-tab/image02.png)
 
-</details> 
+</details>
 
 per tutte le registrazioni IVA, quindi, l'applicativo proporrà qui le partite del solo cliente/fornitore inserito in testata, per procedere alla compensazione fattura/nota di credito; 
 
@@ -243,8 +243,7 @@ Da segnalare, in particolare, il campo del sottoconto **Banca**: non si tratta d
 
 ![](/img/it-it/finance-area/ledger-records/records/create-ledger-record/payments-tab/image03.png)
 
-</details> 
-
+</details>
 
 (se i **[parametri di contabilità](/docs/configurations/parameters/finance/accounting-parameters)**, nella lista dei conti clienti/fornitori, autorizzano la sostituzione, ovvero deve essere presente una associazione tra il tipo conto banche ed il relativo mastro nel piano dei conti affinché possa avvenire la sostituzione).
 
@@ -254,8 +253,7 @@ Da segnalare, in particolare, il campo del sottoconto **Banca**: non si tratta d
 
 ![](/img/it-it/finance-area/ledger-records/records/create-ledger-record/payments-tab/image04.png)
 
-</details> 
-
+</details>
 
 ### Esecuzione della chiusura partita 
 
@@ -273,7 +271,7 @@ Un altro pulsante utile in questa sezione è il **Crea pagamenti estesi**:
 
 ![](/img/it-it/finance-area/ledger-records/records/create-ledger-record/payments-tab/image08.png)
 
-</details> 
+</details>
 
 si aprirà una maschera intermedia di impostazione dell'importo del pagamento con un eventuale importo di abbuono, con relativo sottoconto per la rilevazione contabile. 
 
