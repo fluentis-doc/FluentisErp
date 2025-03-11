@@ -13,7 +13,7 @@ sidebar_position: 3
 
 The entry that will be opened upon saving the compensation (even in the form of a notice of invoice) can be blocked for payment by activating the **Not pay flag** and a related note can be added.
 
-The functionality is quite similar to the grid present in the **[ledger records](/docs/finance-area/ledger-records/records/create-ledger-record/maturity-values-tab)** to which it refers.
+The functionality is quite similar to the grid present in the **[ledger records](/docs/finance-area/ledger-records/records/ledger-record)** to which it refers.
 
 
 

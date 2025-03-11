@@ -1,42 +1,65 @@
 ---
-title: Criar
-sidebar_position: 6
+title: Crea pagamenti fornitore
+sidebar_position: 2
+---
+La form si trova in **Tesoreria > Pagamenti > Crea pagamenti fornitore** e consente la creazione di una nuova distinta di pagamento. La stessa maschera viene utilizzata anche per l'apertura in modifica o visualizzazione di una distinta già salvata.
+
+Dalla form di ricerca è possibile creare un nuovo documento mediante il pulsante **> Nuovo pagamento** oppure aprirne uno esistente per visualizzarlo e/o modificarlo.
+
+## Come creare una distinta di pagamento
+
+Clicca per i passaggi fondamentali:
+
+1. Seleziona il **Tipo di pagamento** della distinta dal primo campo a discesa.
+2. I campi seguenti vengono compilati automaticamente:
+   - **Anno**: propone l'anno attuale del sistema.
+   - **Numero distinta**: numerazione progressiva della distinta.
+   - **Data emissione**: propone la data odierna.
+3. Compila i campi obbligatori della testata:
+   - **Banca**: inserire il codice di sottoconto dell'anagrafica banca sulla quale emettere la distinta.
+   - **Conto corrente**: compilato automaticamente sulla base dell'anagrafica banca collegata al sottoconto.
+   - **Note iniziali**: campo libero per eventuali annotazioni (non utilizzato nello standard).
+   - **Note finali**: utilizzato nella contabilizzazione per valorizzare la descrizione del movimento contabile della banca.
+4. Imposta eventuali opzioni aggiuntive:
+   - **Imponi questa data valuta beneficiario**: definisce la data valuta del beneficiario nel tracciato telematico.
+5. Controlla i flag di stato della distinta:
+   - **Stampato**: non gestito automaticamente dal programma.
+   - **File emesso**: aggiornato automaticamente dopo la creazione del file telematico.
+6. Seleziona le partite da pagare:
+   - Premi il pulsante **> Crea un pagamento dalle partite** per selezionare le partite contabili da chiudere.
+   - Attenzione all'uso del flag *visualizzazione partite percipienti*: la gestione del pagamento deve avvenire dal modulo percipienti.
+   - Il flag *Imponi banca d'appoggio dall'anagrafica del fornitore* permette di utilizzare la banca predefinita nel fornitore.
+7. Modifica, se necessario, i valori di pagamento in griglia.
+   - È possibile inserire pagamenti parziali o aggiungere righe manuali.
+   - Attenzione: l'aggiunta manuale può causare discrepanze nel saldo contabile se non gestita correttamente.
+8. Controlla le **Note** in griglia: vengono compilate automaticamente con i riferimenti delle partite pagate e saranno riportate in contabilità generale.
+
+:::tip ATTENZIONE
+Sulla testata della distinta è presente un flag **Autorizzato** per consentire la creazione del tracciato XML ed eseguire il pagamento. Il flag memorizza l'utente e la data di autorizzazione. Può essere attivato di default accedendo alla form **Parametri pagamenti fornitori** e attivando il flag *Autorizzato di default*.
+:::
+
+9. **Premi il pulsante Creazione file SEPA** per generare automaticamente un tracciato .xml della lista dei pagamenti ed archiviarlo automaticamente nel documentale. Puoi scaricare il file dal documentale per la successiva impostazione sui sistemi corporate banking, anzichè dover reinserire i pagamenti manualmente.
+
+10. Premi il bottone **Documenti**, nel gruppo Document manager per accedere al documentale con l'allegato .xml Da dentro la form del documentale premi poi il bottone **Salva allegato** per scaricare la copia sul PC locale.
+
+#### Pulsanti specifici
+
+> **Nuovo pagamento**: Inserisce manualmente una riga di pagamento fornitore.
+
+> **Salva**: Salva la testata della distinta dopo aver inserito il tipo di pagamento e il sottoconto di banca.
+
+> **Cancella pagamenti selezionati**: Cancella i pagamenti fornitori creati manualmente o da creazione pagamento da partite.
+
+> **Crea un pagamento dalle partite**: Attivabile dopo il salvataggio della testata, acquisisce i dati dall'archivio partite.
+
+> **Documenti**: Pulsante per il collegamento alla gestione documentale.
+
+
 ---
 
-A partir dessa máscara se procede com a criação de uma nova lista de pagamento: a máscara é a mesma também para a abertura em mudança/visualização de uma lista já salva.
+### **VIDEO TUTORIALS**
 
-Na primeira caixa de combinação se seleciona o tipo de pagamento de referência da lista. Nos campos sucessivos o procedimento propõe o ano atual do sistema e a numeração progressiva da lista: como data de emissão é proposta a data atual.
-
-**Banco**: dentro deste campo se insere normalmente o código da subconta do registro banco pela qual emitir a lista: a obrigatoriedade da ligação com um registro bancos é associado com a necessidade de ter as referências CIN/ABI/CAB/conta corrente necessários para o envio telemático do traçado das transferências bancárias Itália. Pelo ponto de vista da contabilização dos pagamentos, ao contrario, não tem nenhuma necessidade particular: essa subconta poderia ser uma qualquer subconta do plano das contas;
-
-**Conta corrente**: é compilada automaticamente em relação o registro banco associado com a subconta inserida: eventualmente pode ser inserida e/ou modificada manualmente;
-
-**Notas iniciais**: é um campo livre de notas do pagamento, não utilizado no padrão;
-
-**Notas finais**: é utilizado na contabilidade pagamentos para valorizar a descrição de detalhe do movimento contábil da subconta banco.
-
-O flag **Impor essa data moeda beneficiário** permite definir, no traçado telemático, qual é a data moeda a atribuir ao beneficiário do pagamento: se a data não foi especificada vai ser utilizada a data atual. Se o flag não foi estabelecido a data moeda vai ser igual a data vencimento.
-
-Na direita estão presentes dois flag de estado da lista: o flag Imprimido não é gerido automaticamente pelo programa, ao contrário, o flag Arquivo emitido é atualizado em relação a criação do arquivo telemático. É possível procurar o arquivo mesmo sem retornar esse flag na lista.
-
-A gestão dos detalhes dos pagamentos se efetua normalmente através do botão de 'Pagamentos das partidas': se trata de selecionar portanto a lista das partidas contábeis a fechar com o pagamento na lista. Nessa máscara de seleção das partidas, entre os vários filtros e flag disponíveis, é util avisar que: não se aconselha o utilizo do flag de visualização das partidas beneficiários, isso por que a gestão do pagamento tem de ser efetuada pelo módulo beneficiários para poder depois obter a certificação das retenções; o flag 'Impor banco de apoio pelo registro do fornecedor' significa ir a utilizar como banco beneficiário do pagamento o banco de default inserido no registro fornecedor na seção pagamentos, grelha dos bancos de apoio, isso independentemente do banco de apoio associado com a partida na sua registração contábil de criação. Esse segundo flag pode ser predefinido de default nos parâmetros do módulo.
-
-Permite a mudança dos valores de pagamento inserido na grelha, com o objetivo de obter por exemplo pagamentos parciais, assim como o acréscimo de linhas pagamento manual: nesse segundo caso refere-se a uma forçatura que pode ir a criar uma diferença entre o saldo contábil da subconta inserida e o saldo do partitário, por que o procedimento de contabilização pagamentos não vai a gerir uma eventual abertura partida de sinal contrário de balançamento das seções se não foi estabelecido o flag 'Abertura partidas' na causal. O campo Bonificação permite relevar só Bonificações ativas.
-
-Um último detalhe na gestão da grelha, refere-se ao campo **Notas**: esse é compilado automaticamente em relação as partidas pagadas em relação as referencias do documento que está fechado. Essas notas vão ser reportadas nas linhas de pagamento inseridas na contabilidade geral, em correspondência da subconta relativa.
-
-RIBBON BAR: representa o menu do módulo em questão, ou seja, a área na qual efetuar algumas ações. A lista de possíveis funcionalidades é sucessivamente representada:
-
-
-
-| RibbonFunction | RibbonMeaning |
-| --- | --- |
-| Novo pagamento | Botão para inserir, manualmente, uma linha de pagamento fornecedor. |
-| Salvar | Botão para salvar o cabeçalho do novo pagamento fornecedor, ativável depois de ter inserido, o tipo pagamento e a subconta do banco. |
-| Cancelar os pagamentos selecionados | Botão para cancelar os pagamentos fornecedores criados manualmente ou pela criação pagamento das partidas. |
-| Criar um pagamento pelas partidas | Botão, ativável depois de ter salvado o cabeçalho, para criar um pagamento, comprando os dados pelo arquivo partidas. |
-| Numeração da |  |
-|  [Documentos](/docs/guide/common/operations-with-data/document-manager)  | Botão para a ligação da gestão documental. |
+<iframe width="560" height="315" src="https://www.youtube.com/embed/CDCVq0iC29s" title="YouTube video player" frameborder="0" allowfullscreen= "true"></iframe>
 
 
 

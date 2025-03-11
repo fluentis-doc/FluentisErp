@@ -1,42 +1,65 @@
 ---
-title: Create
-sidebar_position: 6
+title: Crea pagamenti fornitore
+sidebar_position: 2
+---
+La form si trova in **Tesoreria > Pagamenti > Crea pagamenti fornitore** e consente la creazione di una nuova distinta di pagamento. La stessa maschera viene utilizzata anche per l'apertura in modifica o visualizzazione di una distinta già salvata.
+
+Dalla form di ricerca è possibile creare un nuovo documento mediante il pulsante **> Nuovo pagamento** oppure aprirne uno esistente per visualizzarlo e/o modificarlo.
+
+## Come creare una distinta di pagamento
+
+Clicca per i passaggi fondamentali:
+
+1. Seleziona il **Tipo di pagamento** della distinta dal primo campo a discesa.
+2. I campi seguenti vengono compilati automaticamente:
+   - **Anno**: propone l'anno attuale del sistema.
+   - **Numero distinta**: numerazione progressiva della distinta.
+   - **Data emissione**: propone la data odierna.
+3. Compila i campi obbligatori della testata:
+   - **Banca**: inserire il codice di sottoconto dell'anagrafica banca sulla quale emettere la distinta.
+   - **Conto corrente**: compilato automaticamente sulla base dell'anagrafica banca collegata al sottoconto.
+   - **Note iniziali**: campo libero per eventuali annotazioni (non utilizzato nello standard).
+   - **Note finali**: utilizzato nella contabilizzazione per valorizzare la descrizione del movimento contabile della banca.
+4. Imposta eventuali opzioni aggiuntive:
+   - **Imponi questa data valuta beneficiario**: definisce la data valuta del beneficiario nel tracciato telematico.
+5. Controlla i flag di stato della distinta:
+   - **Stampato**: non gestito automaticamente dal programma.
+   - **File emesso**: aggiornato automaticamente dopo la creazione del file telematico.
+6. Seleziona le partite da pagare:
+   - Premi il pulsante **> Crea un pagamento dalle partite** per selezionare le partite contabili da chiudere.
+   - Attenzione all'uso del flag *visualizzazione partite percipienti*: la gestione del pagamento deve avvenire dal modulo percipienti.
+   - Il flag *Imponi banca d'appoggio dall'anagrafica del fornitore* permette di utilizzare la banca predefinita nel fornitore.
+7. Modifica, se necessario, i valori di pagamento in griglia.
+   - È possibile inserire pagamenti parziali o aggiungere righe manuali.
+   - Attenzione: l'aggiunta manuale può causare discrepanze nel saldo contabile se non gestita correttamente.
+8. Controlla le **Note** in griglia: vengono compilate automaticamente con i riferimenti delle partite pagate e saranno riportate in contabilità generale.
+
+:::tip ATTENZIONE
+Sulla testata della distinta è presente un flag **Autorizzato** per consentire la creazione del tracciato XML ed eseguire il pagamento. Il flag memorizza l'utente e la data di autorizzazione. Può essere attivato di default accedendo alla form **Parametri pagamenti fornitori** e attivando il flag *Autorizzato di default*.
+:::
+
+9. **Premi il pulsante Creazione file SEPA** per generare automaticamente un tracciato .xml della lista dei pagamenti ed archiviarlo automaticamente nel documentale. Puoi scaricare il file dal documentale per la successiva impostazione sui sistemi corporate banking, anzichè dover reinserire i pagamenti manualmente.
+
+10. Premi il bottone **Documenti**, nel gruppo Document manager per accedere al documentale con l'allegato .xml Da dentro la form del documentale premi poi il bottone **Salva allegato** per scaricare la copia sul PC locale.
+
+#### Pulsanti specifici
+
+> **Nuovo pagamento**: Inserisce manualmente una riga di pagamento fornitore.
+
+> **Salva**: Salva la testata della distinta dopo aver inserito il tipo di pagamento e il sottoconto di banca.
+
+> **Cancella pagamenti selezionati**: Cancella i pagamenti fornitori creati manualmente o da creazione pagamento da partite.
+
+> **Crea un pagamento dalle partite**: Attivabile dopo il salvataggio della testata, acquisisce i dati dall'archivio partite.
+
+> **Documenti**: Pulsante per il collegamento alla gestione documentale.
+
+
 ---
 
-Through this mask it is possible to create a new payment list: the mask is the same even for the opening of a list already saved in order to be edited/viewed.
+### **VIDEO TUTORIALS**
 
-In the first combo it is possible to select the reference payment type of list. In the following fields the procedure shows the current system and the list progressive numeration: the current date is proposed as an issue date.
-
-**Bank**: within this field it is necessary to insert, usually, the detail account code of bank register on which to issue list. The obligatory connection to a bank register is linked to the necessity to have cin/abi/cab/current account in order to send Italy bank transfers tracing electronically. According to payments accounting, on the contrary, there is no particular necessity: this detail account could be any detail account of chart of accounts.
-
-**Current Account**: this field is compiled automatically according to the bank register linked to the inserted detail account: in case, it is possible to insert and/or edit it manually.
-
-**Initial Note**: this field is a free payment notes field, not used on standard version.
-
-**Final Notes**: this field is used for payments accounting in order to valorize the detail description of a bank detail account accounting movement.
-
-The **Set this beneficiary currency date** flag enables the user to set, into the telematic tracing, the currency date to be attributed to payment beneficiary: in case that date is not specified, current date will be used. If flag is not set, the currency date will be the same as due date.
-
-On the right there are two status flag of list: the 'printed' flag is not managed automatically by the program, on the contrary the 'issued file' one is updated according to the telematic file creation. It is possible to recreate the electronic file without resetting this flag in list.
-
-The payments details management can be performed usually through payments button from maturity values: it is necessary to select the accounting maturity values list to be closed with payment in list. In this mask it is necessary to signal among different filters and available flags: it is not recommended the use of View professional men maturity values flag because payment management has to be performed from the professional men module in order to obtain the deduction certification. The 'Insert the bank present on vendor register' flag is necessary in order to use the automatic bank inserted into vendor register of payments section as a beneficiary payment bank, this is free of bank linked to maturity value on its creation accounting record. This second flag can be automatic for module parameters.
-
-It is possible to edit the payment values inserted into grid, in order to get partial payments, as well as manual payment lines: in this second case it is possible to create a difference between account balance of the inserted detail account and ledger balance, because payments accounting procedure does not manage a maturity value opening with a different balance of sections if 'opening maturity values' flag is not set on template. Allowance field enables the user to obtain only active allowances.
-
-At the end it is important to remember a detail about the management of **Notes**: this field can be automatically compiled according to the paid maturity values following the document references that is going to be closed. These notes will be recorded within the payment lines, inserted into the general ledger and in correspondence to the related detail account.
-
-RIBBON BAR: it represents the Form menu, that is the area in which it is possible to perform actions. The list of features is the following:
-
-
-
-| Function | Meaning |
-| --- | --- |
-| New Payment | Button to insert manually a vendor payment line. |
-| Save | Button to save the header of a new vendor payment, that can be activated only after having inserted payment type and bank detail account. |
-| Delete Selected Payments | Button to delete vendor payments created manually or through payment creation from maturity values. |
-| Create a Payment from Maturity Value | Button, that can be activated after having saved the header, in order to create a payment by obtaining data from maturity value file. |
-| Numeration From |  |
-| Documents | Button for documents management connection. |
+<iframe width="560" height="315" src="https://www.youtube.com/embed/CDCVq0iC29s" title="YouTube video player" frameborder="0" allowfullscreen= "true"></iframe>
 
 
 

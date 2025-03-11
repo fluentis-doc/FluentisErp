@@ -7,7 +7,7 @@ La ricerca effettuata dalla presente form deve essere utilizzata, in luogo della
 
 La gestione delle partite tramite i raggruppamenti rappresenta infatti una metodologia alternativa e particolare rispetto alla classica, e richiede una visualizzazione specifica per ottenere una situazione chiaramente leggibile.
 
-Per ulteriori ** [dettagli sul raggruppamento partite vedere qui.](/docs/finance-area/ledger-records/records/create-ledger-record/mat-val-grouping-tab) **
+Per ulteriori ** [dettagli sul raggruppamento partite vedere qui.](/docs/finance-area/ledger-records/records/ledger-record) **
 
 La stampa  che corrisponde alla presente funzionalità di ricerca è denominata anch'essa** [ Raggruppamento partite.](/docs/finance-area/maturity-values/reports/maturity-value-grouping) **
 

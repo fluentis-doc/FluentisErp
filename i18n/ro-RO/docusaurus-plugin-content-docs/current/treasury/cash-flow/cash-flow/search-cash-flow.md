@@ -1,38 +1,43 @@
 ---
-title: Caută cash flow
+title: Ricerca cash flow
 sidebar_position: 1
 ---
 
-Procedura Caută cash flow a fost concepută pentru a permite utilizatorului căutarea simplă a simulărilor inserate anterior, cu scopul de a le vizualiza, modifică sau şterge. În caută cash flow pot fi efectuate toate operaţiile necesare documentului, cu condiţia ca utilizatorul sa aibă drepturile necesare. Recomandăm crearea cash flow din procedura ‘Crează automată cash flow' și nu din ‘Crează cash flow'
+LINK:
 
-RIBBON BAR: reprezintă meniul Form-ului în discuţie. Mai precis, aria în care se pot efectua acţiuni asupra unui document preexistent, în locul generării unuia nou. Prezentăm în continuare lista cu funcţionalităţile posibile:
+** [Tabelle preliminari da gestire](/docs/treasury/cash-flow/general-overview) **
+
+** [Elaborazione automatica](/docs/treasury/cash-flow/procedures) **
+
+** [Stampa](/docs/treasury/cash-flow/reports) **
+
+ 
+
+ 
+
+Dalla presente form è possibile ricercare e modificare elaborazioni inserite precedentemente. 
+
+E' anche possibile inserire una nuova elaborazione che risulterebbe, in questo caso, completamente manuale (e quindi di scarso utilizzo pratico).
+
+Si consiglia di creare il cash flow dalla procedura ** [Generazione automatica cash flow](/docs/treasury/cash-flow/procedures) **.
 
 
 
-| Functie | Functionalitate |
+
+
+| Funzione | Significato |
 | --- | --- |
-| Caută | Buton pentru aplicarea filtrelor de căutare în baza de date a cash flow-urilor  inserate. |
-| Nou | Apelează procedura pentru inserarea unui nou cash flow. |
-| Modifică | Apelează procedura pentru modificarea unui cash flow inserat anterior. |
-| Vizualizează | Apelează procedura pentru vizualizarea unui cash flow inserat anterior. |
-| Șterge | Execută procedura pentru ștergerea unui cash flow inserat anterior. |
+| Ricerca | Pulsante per applicare i filtri di ricerca all'intero database dei cash flow inseriti. |
+| Nuovo | Richiama la procedura per inserire un nuovo cash flow. |
+| Modifica | Richiama la procedura per modificare un cash flow precedentemente inserito. |
+| Visualizza | Richiama la procedura per visualizzare un cash flow precedentemente inserito. |
+| Cancella | Esegue la procedura per cancellare un cash flow precedentemente inserito. |
 
 
 
-| Functie | Functionalitate |
+| Funzione | Significato |
 | --- | --- |
-| Analize cash flow | Apelează procedura pentru listarea unui cash flow. |
-
-
-
-| Functie | Functionalitate |
-| --- | --- |
-| Generare automată cash flow | Apelează procedura pentru crearea automată a cash flow-ului. |
-| Analize cash flow globale | Apelează procedura pentru vizualizarea graficului cash flow-ului. |
-
-ARIA DE FILTRE: aria de filtre conţine lista cu posibilele tipuri de date cu ajutorul cărora se poate efectua selecţia sau căutarea cash flow-urilor inserate. În general, filtrele sunt în condiţie “AND” şi există posibilitatea inserării simultane a mai multor criterii de filtrare.
-
-GRID REZULTATE: reprezintă lista cu cash flow-urile care corespund datelor din filtrele indicate anterior. Utilizatorul, după ce a inserat valorile cu ajutorul cărora doreşte să caute cash flow-urile, dacă apasă butonul [Caută Mijloace fixe] prezent în Ribbon, va obţine în gridul rezultatelor lista cu cash flow-urile dorite.
+| Analisi cash flow | Richiama la procedura per stampare un cash flow. |
 
 
 

@@ -3,15 +3,6 @@ title: Movimenti Bancari
 sidebar_position: 1
 ---
 
-:::note Percorso
-**Tesoreria>C/C Bancari>Movimenti Bancari**
-
-Nota:
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
-
-:::
-
----
 
 Il modulo conti correnti consente all'operatore di controllare e riconciliare i movimenti bancari in contabilità con l'estratto conto (o lista movimenti) che è possibile scaricare come file telematico da molti siti di Corporate banking. 
 
@@ -47,6 +38,21 @@ Per visualizzare il dettaglio della descrizione del movimento contenuta nel file
 
 - ***Contabilizza***: premendo il bottone, al fine di creare automaticamente la scrittura contabile, compare un popup dove selezionare la caudale contabile desiderata, procedendo viene aperta automaticamente la maschera della registrazione contabile dove sono preimpostati tutti i dati rilevabili dal file importato e non resta che compilare gli eventuali dati aggiuntivi (quali ad esempio le partite da chiudere nel caso di incassi o pagamenti ecc...) e quindi salvare la registrazione contabile.
 
+:::important[Dettaglio procedura di contabilizzazione: aggancio automatico delle partite aperte]
+A seconda della banca che rende disponibili i file telematici, esistono file più o meno dettagliati.
 
-[*Categorie cespiti per il controlling* ](/docs/configurations/tables/controlling/analytical-accounting/controlling-asset-categories)
+La logica secondo la quale Fluentis riesce a gestire automaticamente, nella scrittura generata (ad esempio di incasso o pagamento), la chiusura della partita aperta eventualmente presente a sistema, è la seguente:
 
+- Se nel file telematico importato è presente il campo *Riferimento Creditore Rimessa* (visibile su Fluentis aprendo il dettaglio delle righe del file con il bottoncino + a sinistra) il codice di riferimento presente in questo campo sarà usato per cercare le partite aperte. Il dato dovrà corrispondere nel campo *Numero di riferimento* presente nella partita (quello adiacente al campo *Modello riferimento pagamento*).
+- Se non viene soddisfatta la prima condizione, la procedura leggerà nel file telematico il campo *Creditore conto IBAN* (visibile sempre aprendo il dettaglio delle righe come spiegato al punto precedente) e cercherà se esiste un conto contabile con anagrafica Cliente / Fornitore che riporti lo stesso IBAN. Tale IBAN **deve** essere trovato nel campo IBAN della **griglia Banca d'appoggio** ovvero quella inferiore in anagrafica nel tab pagamenti, destinata esclusivamente a coordinate bancarie di clienti e fornitori, ovvero le "controparti" e mai della nostra azienda. Non deve dunque essere confuso con il medesimo campo presente nella griglia superiore, cioè la griglia principale denominata *Tipi pagamento*.
+Se l'IBAN corrisponde, sarà cercata una partita aperta per quel conto che abbia il medesimo importo, se ve ne sono più di una con il medesimo importo verrà presa quella con data scadenza più vecchia.
+- Se non viene trovata nessuna partita che corrisponde ai criteri precedenti, ma viene comunque trovato il conto del cliente o fornitore con IBAN corrispondente, Fluentis inserirà soltanto la riga in contabilità senza generare automaticamente il pagamento.
+- Se non viene trovato alcun conto cliente / fornitore attraverso il codice IBAN, Fluentis inserirà nella scrittura contabile, solo la riga relativa alla banca e rimarrà da completare la scrittura con la riga cliente / fornitore
+:::
+
+:::danger[Attenzione]
+La **causale contabile** utilizzata per generare le scritture di incasso e pagamento automaticamente come sopra descritto **deve essere modificata** rispetto ai settaggi consueti.
+In particolare dovrà essere modificata la riga, ad esempio quella relativa alla banca che solitamente è associata al tipo importo *Totale documento / registrazione*. Questo tipo importo dovrà essere variato ad esempio ponendo **Importo sottoconto**, come per la riga del cliente / fornitore.
+
+**Se questo non viene fatto la procedura inserirà due volte la riga banca e la scrittura non quadrerà automaticamente**.
+:::

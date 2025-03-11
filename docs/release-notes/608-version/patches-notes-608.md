@@ -3,89 +3,151 @@ title: Patch notes Versione 608
 sidebar_position: 2
 ---
 
+### Patch 608.1-0070 - 28/02/2025
+> - FI – Stampa liquidazione IVA annuale: risolto errore nella stampa della liquidazione IVA annuale quando veniva attivato il flag nei parametri ‘Memorizza il numero dell'ultima pagina’ (TT00200/25)
+> - PR - Campo "Progresso" nel modulo Gestione della liquidità ( TT02060/24). Changes were made to field progressive of form Gestione della liquidità. The profile can be affected by the changes.
+> - MS – Corretto bug sul funzionamento del pulsante Rilascio ordini pianificati presente nella procedura MRP. (#TT00837/25)
+> - SD – Ottimizzata la ricerca nelle form di Evasione ordini e DDT nei documenti di Vendita (#TT00797/25 and TT01016/25).
+> - FI - revisione generazione file CU per carriage return finale errato (#TT00965/25)
+> - FI - Unlimited digit number on currency adjustment procedure ( TT00991/25). Changes were made in exchange field of form CurrencyAdjustmentAccounting.The profile can be affected by the changes.
+> - SCS – Nei Rientri di Conto lavoro il prezzo dell’articolo viene ripreso dal Listino di Conto lavoro, se presente, altrimenti viene sempre proposto pari a zero (#TT00986/25).
+> - modificata la stampa della comunicazione trimestrale iva, ordinamento dei periodi (#TT00981/25)
+> - FI - revisione gestione visualizzazione/memorizzazione/esportazione dati della Comunicazione iva periodica (lipe) nel caso in cui sia stato cancellato un periodo in dichiarazione iva periodica. (#TT00981/25)
+> - FI - Corretto problema del mancato riporto dei campi dl paese d’origine, paese di provenienza e provincia di destinazione negli elenchi intrastat. Corretto mancato riporto del campo modo trasporto nella stampa. Rif. #TT05326/24
+> - FI - Riconciliazione movimenti c/c: risolto problema in contabilizzazione da riconciliazione movimenti c/c (TT05601/24)
+
+### Patch 608.1-0069 - 21/02/2025
+> - FI - revisione calcolo ammortamenti su categorie con flag ‘Incrementale’ (#TT00113/25)
+> - SCS – Se attivo nell’Ordine di Conto lavoro, il flag Prezzo manuale viene riportato anche nel Rientro creato mediante evasione da ordine (#TT05336/24).
+> - SCM - Risoluzione dell'errore che impediva la Valorizzazione di un DDT di acquisto di natura Reso, a seguito di un precedente Rollback della procedura (#TT00052/25)
+> - FI - Stampa Enasarco - Revisione somma in stampa Enasarco (#TT00766/25)
+> - FI - revisione filtro stampa liquidazione iva periodica con periodicità trimestrale e calcolo acconto trimestrale (#TT00866/25).
+> - SCS - Corretto errore generico in fase di registrazione di un Rientro di Conto lavoro (#TT00656/25). 
+
+### Patch 608.1-0068 - 06/02/2025
+> - Rilascio stampa Certificazioni Uniche 2025
+> -   SH - Corretto errore nella procedura di Duplica Articoli che si verificava in presenza di Extra Data custom (#TT00247/25) .
+> - WM - Corretti bug nella procedura di valorizzazione magazzino inerenti alla chiusura con UDC (#TT00535/25)
+> - WM - In analisi disponibilità, ora il flag "Solo negativi" presente nell'expander "Visualizza righe senza disponibiltà" filtra correttamente solo le righe con disponibilità negativa (#TT00613/25)
+> - WM- Corretto bug nella procedura di calcolo costi che in alcuni casi generava un exception (#TT00231/25)
+> - WM - Corretto errore nella procedura di Calcolo Costi che in alcuni casi resettava il valore del costo ultimo elaborato (#TT05527/24)
+> - MPS - Migliorata la generazione delle commesse di produzione da Sottoscorta per garantire il corretto funzionamento anche con molte righe (#TT00572/25)
+> - FI - Withholding tax declaration for 2025, alignment ( TT00236/25)
+> - SH - Fix new numeration from Numeration widget combobox context menu (#TT03655/23)
+
+### Patch 608.1-0067 - 30/01/2025
+> - WM - Corretto bug nella procedura di Sottoscorta (#TT05117/24)
+> - FI - revisione gestione segni centri di costo in contabilizzazione fatture di acquisto (#TT00013/25)
+> - FI - gestione assestamento form issues ( TT04549/24)
+> - SD - Le numerazioni con periodo 'Nessuno' non vengono più resettate all'inizio dell'anno; la numerazione dei documenti nel nuovo anno partirà dal numero più alto registrato nel periodo precedente (#TT00000/25)
+> - MES - Corretto bug in fase di registrazione delle segnalazioni di produzione nel caso di una fase intermedia successiva ad una fase esterna (#TT05515/24)
+> - MPS - In fase di creazione delle commesse dall’ordine cliente, l’unità di misura alternativa che viene ereditata nella commessa dall’ordine cliente (sempre se questa è tra quelle indicate nel tab UM alternative dell’anagrafica dell’articolo) (#TT05068/24)
+> - FI - revisione arrotondamenti centri di profitto nelle contabilizzazioni (#TT00186/25)
+> - SCM, SCS - Le numerazioni con periodo 'Nessuno' non vengono più resettate a inizio anno; la numerazione dei documenti nel nuovo anno partirà dal numero maggiore inserito nell'anno precedente (#TT00020/25)
+> - WM - fix verifica giacenza per ogni scarico tra data scarico e data corrente (#TT02878/23)
+> - WM - Corretto bug nella rollback della procedura Scarico da spunta (#TT00286/25)
+> - FI - Vat settlement with flag 'calcola acconto' ( TT00414/25)
+> - Caricamento NIR - risolvere il problema quando la registrazione ha contrapartita di carico - proporre lotti(#TT00472/25)
+> - FI - la contabilizzazione degli assestamenti ora valorizza nei centri di costo il campo della divisione (#TT00314/25)
+> - FI - la contabilizzazione automatica degli storni fatture da ricevere ora gestisce i range di date competenza dall’operazione di origine (#TT00309/25)
+> - SH - Province Table conversion code from 4char to 4varchar ( TT00298/25)
+> - MPS - Corretti bug nella procedura di schedulazione a capacità finita che creavano una discrepanza tra le date indicate nelle fasi e quanto riportato nel grafico sottostante, inoltre corretto anche il calcolo della data ora fine delle singole fasi (#TT00325/25 - #TT04638/24) 
+> - MPS - Corretta la procedura MRP che generava ordini pianificati per articoli non validi nella distinta base (#TT05478/24 and #TT00376/25)
+> - FI - Stampa liquidazione iva periodica - Rivisto il calcolo degli interessi derivanti da liquidazioni iva trimestrali (#TT00302/25)
+
+### Patch 608.1-0066 - 15/01/2025
+> - SCS - Corretto errore nei Rientri e negli Ordini di Conto lavoro che, all’aggiunta di un’unità di misura alternativa, modificava il prezzo dell’articolo anche in presenza del flag “Prezzo manuale” (#TT05336/24)
+> - FI - gestione del nuovo parametro generale "FS-FI-Posting-BlockPostingBeforeReceiveDate", se impostato a true si va a bloccare la possibilità di registrare documenti Sdi in data antecedente alla data ricezione (#TT00847/24)
+> - FI - nelle registrazioni di pagamento con divisa estera in testata, revisione gestione totali in valuta per considerare anche righe manuali nella stessa divisa (#TT05254/24)
+> - FI - revisione contabilizzazione compensi per gestione compensi occasionali senza iva (#TT05321/24)
+> - MPS - Corretto bug in schedulazione a capacità finita che non generava correttamente l’occupazione degli ordini con il flag tassativo attivo (#TT05445/24)
+
+### Patch 608.1-0065 - 20/12/2024
+> - FI - revisione esportazione file per flag ‘Esportazioni’ impostato nelle righe e non in testata. All’impostazione del flag ‘dettagli del file’, ora nella riga il link all’anagrafica contatto non viene più resettato (#TT05510/24)
+
 ### Patch 608.1-0064 - 18/12/2024
 > - FI - la stampa di verifica delle dichiarazioni di intento totalizza ora anche i dati dei rientri del conto lavoro non fatturati (#TT05290/24)
-> - FI - la stampa definitiva della liquidazione iva periodica ora memorizza il saldo a credito nel campo del credito precedente della form di Dichiarazione iva periodica, non più in quello delle Variazioni iva periodo precedente. (#TT03694/24 e TT05230/24)
-> - FI - problemi in fase di annullamento stampa definitiva liquidazione ( TT04859/24 )
-> - MS - In Capacità centri lavoro migliorata e ottimizzata la visualizzazione degli orari di inizio e fine delle fasi. (#TT04350/24)
-> - SH – corretto errore calcolo livello distinta base nell’analisi disponibilità (#TT05376/24)
+> - FI - la stampa definitiva della liquidazione iva periodica ora memorizza il saldo a credito nel campo del credito precedente della form di Dichiarazione iva periodica, non più in quello delle Variazioni iva periodo precedente (#TT03694/24 e #TT05230/24)
+> - FI - problemi in fase di annullamento stampa definitiva liquidazione (#TT04859/24)
+> - MS - In Capacità centri lavoro migliorata e ottimizzata la visualizzazione degli orari di inizio e fine delle fasi (#TT04350/24)
+> - SH - corretto errore calcolo livello distinta base nell’analisi disponibilità (#TT05376/24)
 > - SD - Risoluzione errore che indicava l'apertura del listino dal proprio utente nel caso di precedente utilizzo della procedura di Duplica e Manutenzione Listini (#TT05236/24)
 > - CO - Revisione procedura di valorizzazione area acquisti/vendite, esclusione test sulla stampa definitiva iva delle liquidazioni e dei registri (#TT04436/24)
-> - FI - stampa controllo dettaglio dichiarazione intento fornitori ( TT05290/24)
-> - FI - partial sale and depreciation ( TT05469/24)
+> - FI - stampa controllo dettaglio dichiarazione intento fornitori (#TT05290/24)
+> - FI - partial sale and depreciation (#TT05469/24)
 
 
 ### Patch 608.1-0063 - 12/12/2024
-> - SCM – Durante la creazione di un Ordine Fornitore a partire da una RDA, se l'articolo nella RDA è stato inserito con un'unità di misura alternativa, sulla riga articolo dell'ordine verranno riportate l'unità di misura principale e la relativa quantità. L'unità di misura alternativa e la sua quantità saranno inserite nell'apposito campo (#TT04650/24).
-> - PR - aggiunti alla form Distinte di anticipo i campi per il totale distinta e totale anticipato. ( TT04711/24)
-> - SCM – Contabilizzazione fatture di acquisto – Corretta anomalia in fase di contabilizzazione fatture di acquisto (#TT01625/24)
-> - SD - Migliorato campo Percentuale/ Valore nella riga articolo dei documenti di vendita, Tab Agente, che non riportava correttamente il dato in tutte le condizioni di calcolo della provvigione. (#TT5075/24)
-> - SCS – Form Rientri – Corretta anomalia che in caso di workflow alla prima apertura del documento dava errore (#TT04944/24)”
-> - FI - nel caso di contabilizzazione fatture di acquisto in divisa estera con integrazione iva reverse charge, revisione gestione arrotondamento importo iva convertita in euro (#TT03221/24).
+> - SCM - Durante la creazione di un Ordine Fornitore a partire da una RDA, se l'articolo nella RDA è stato inserito con un'unità di misura alternativa, sulla riga articolo dell'ordine verranno riportate l'unità di misura principale e la relativa quantità. L'unità di misura alternativa e la sua quantità saranno inserite nell'apposito campo (#TT04650/24)
+> - PR - aggiunti alla form Distinte di anticipo i campi per il totale distinta e totale anticipato (#TT04711/24)
+> - SCM - Contabilizzazione fatture di acquisto - Corretta anomalia in fase di contabilizzazione fatture di acquisto (#TT01625/24)
+> - SD - Migliorato campo Percentuale/ Valore nella riga articolo dei documenti di vendita, Tab Agente, che non riportava correttamente il dato in tutte le condizioni di calcolo della provvigione (#TT5075/24)
+> - SCS - Form Rientri - Corretta anomalia che in caso di workflow alla prima apertura del documento dava errore (#TT04944/24)”
+> - FI - nel caso di contabilizzazione fatture di acquisto in divisa estera con integrazione iva reverse charge, revisione gestione arrotondamento importo iva convertita in euro (#TT03221/24)
 > - Scm: Errore della nota di consegna dell'acquisto durante il caricamento e il rollback #TT05306/24
 > - FI - generazione file Dichiarazione di intento, revisione campo ‘Codice fiscale società dichiarante’ (posizione 296 del record B), ora viene valorizzata dal codice fiscale dell’anagrafica dichiarante impostata in testata e non più con il codice fiscale della società attiva (#TT05167/24)
-> - SCS – Se la Società prevede la Gestione Controlling (con l’omonimo flag nella tabella Società), l’Evasione di un DDT o di un Rientro all’interno di una fattura riporta per date di competenza le date dello scarico documento, se non presente le date del documento (#TT05126/24)
-> - SCM, SCS - Corretto errore nella registrazione di un Rientro di conto lavoro o di un DDT di Acquisto dall’interno del documento (#TT04754/24).
+> - SCS - Se la Società prevede la Gestione Controlling (con l’omonimo flag nella tabella Società), l’Evasione di un DDT o di un Rientro all’interno di una fattura riporta per date di competenza le date dello scarico documento, se non presente le date del documento (#TT05126/24)
+> - SCM, SCS - Corretto errore nella registrazione di un Rientro di conto lavoro o di un DDT di Acquisto dall’interno del documento (#TT04754/24)
 > - CO - modifica manuale delle registrazioni extracontabili del controlling, revisione valorizzazione dei centri di costo per valorizzazione campi importo in divisa e società (#TT05235/24)
 
 
 ### Patch 608.1-0062 - 05/12/2024
-> - WMS – In gestione spunta viene correttamente valorizzato il campo WMM_LoadingUnitItem_WMLUI_Id delle UDC create con più righe. (#TT05104/24)
-> - FI - revisione aggiornamento flag di chiusura Sollecito al variare della chiusura dei singoli movimenti al suo interno. (#TT02651/24)
+> - WMS - In gestione spunta viene correttamente valorizzato il campo WMM_LoadingUnitItem_WMLUI_Id delle UDC create con più righe (#TT05104/24)
+> - FI - revisione aggiornamento flag di chiusura Sollecito al variare della chiusura dei singoli movimenti al suo interno (#TT02651/24)
 > - SD-Revisione assegnazione dichiarazione di intento su righe di storno acconto, ora si legge la dichiarazione valida per la data fattura. Cancellando il riferimento assegnato sarà visibile la dich intento della riga originale acconto o quella valida sui riferimenti fattura impostati per la testata (#TT04907/24)
-> - SD – La Duplica fattura riporta il campo LedgerAccountForStatisticReport.Id nel nuovo documento (#TT05040/24)
+> - SD - La Duplica fattura riporta il campo LedgerAccountForStatisticReport.Id nel nuovo documento (#TT05040/24)
 > - FI - revisione contabilizzazione fatture da ricevere per valorizzazione stringhe descrittive dentro la registrazione creata. Attenzione che in causale: 1 il tipo importo del costo deve essere ‘imponibile sottoconto + imposta indetraibile sottoconto’ 2 se si vuole riportare numero e data documento di trasporto servirà l’obbligo del tipo/numero e data documento (#TT05044/24)
 > - CO - revisione gestione modelli di riclassificazione per livelli con codice/descrizione null (#TT05055/24)
-> - MES – Corretto bug che azzerava la Quantità prodotta di un Ordine di produzione quando veniva eseguito il Ricalcolo Costi ordine di Produzione (#TT05094/24).
-> - MES - Corretto bug nel Calcolo costi Ordini di Produzione con valorizzazione dei materiali al costo del lotto (#TT04509/24).
+> - MES - Corretto bug che azzerava la Quantità prodotta di un Ordine di produzione quando veniva eseguito il Ricalcolo Costi ordine di Produzione (#TT05094/24)
+> - MES - Corretto bug nel Calcolo costi Ordini di Produzione con valorizzazione dei materiali al costo del lotto (#TT04509/24)
 
 ### Patch 608.1-0061 - 28/11/2024
 > - Sales Fix IndirectExchangeRate at migration (#TT04919/24)
-> - SH – Corretto errore nel Navigatore articoli che, se usato in modalità ridotta, talvolta perdeva il focus del puntatore aprendo un documento diverso rispetto a quello selezionato (#TT01033/24).
+> - SH - Corretto errore nel Navigatore articoli che, se usato in modalità ridotta, talvolta perdeva il focus del puntatore aprendo un documento diverso rispetto a quello selezionato (#TT01033/24)
 > - Purchase/Project/Subcontractor - fix Indirect echange rate at migration (#TT04930/24)
 > - PR, FI - L’import dei file bancari per la riconciliazione ora assegna in testata la divisa dall’anagrafica banca. Revisione dell’assegnazione per movimenti (#TT04525/24)
-> - FI, PR, CO - update IndirectExchangeRate in administrative area ( TT05095/24)  
-> - MPS - Corretto bug in pianificazione generale nel caso fosse presente una attrezzatura nel ciclo senza l’articolo associato. (#TT05077/24)
+> - FI, PR, CO - update IndirectExchangeRate in administrative area (#TT05095/24)  
+> - MPS - Corretto bug in pianificazione generale nel caso fosse presente una attrezzatura nel ciclo senza l’articolo associato (#TT05077/24)
 
 ### Patch 608.1-0060 - 21/11/2024
 > - Revisione calcolo residuo per partite in valuta (#TT04613/24)
 > - FI - stampa controllo cespiti, revisione segni conti dei fondi ammortamento (#TT04667/24)
-> - MES – Corretto bug in registrazione segnalazioni di produzione. (#TT04825/24)
-> - MES – Corretto bug nella registrazione delle dichiarazioni di produzione. (#TT04826/24)
+> - MES - Corretto bug in registrazione segnalazioni di produzione (#TT04825/24)
+> - MES - Corretto bug nella registrazione delle dichiarazioni di produzione (#TT04826/24)
 
 ### Patch 608.1-0059 - 13/11/2024
-> - MPS – In Definizione MPS,  le commesse selezionate nel tab riepilogativo vengono aggiunte ad una commessa già esistente (indicata nel box Commessa di produzione proposto nel tab Riepilogativo), se e solo se è abilitato il flag Aggiornamento commesse già esistenti nel tab parametri. In automatico verrà proposta una commessa già salvata dove aggiungere le righe, se ne esiste già una con quel tipo e data. (#TT04762/24)
-> - SH – Modifica del filtro di sola lettura per la classe Extra data dell’oggetto FSItemMaterialProfile, per abilitare la selezione dei ‘Valori ammessi’ basati su questo oggetto durante la creazione di una matrice in Anagrafica Articolo (#TT04490/24)
-> - MES – Corretto bug nella procedura di completamento dati ordine degli ordini di produzione. (#TT04741/24)
-> - WM – Corretto bug in analisi disponibilità inerente alla visualizzazione con dettaglio distinta base nel caso di varianti. (#TT04602/24)
-> - FI - repository method ComputeCheckDeclarationOfExemptionAmounts ( TT02373/23)
+> - MPS - In Definizione MPS,  le commesse selezionate nel tab riepilogativo vengono aggiunte ad una commessa già esistente (indicata nel box Commessa di produzione proposto nel tab Riepilogativo), se e solo se è abilitato il flag Aggiornamento commesse già esistenti nel tab parametri. In automatico verrà proposta una commessa già salvata dove aggiungere le righe, se ne esiste già una con quel tipo e data (#TT04762/24)
+> - SH - Modifica del filtro di sola lettura per la classe Extra data dell’oggetto FSItemMaterialProfile, per abilitare la selezione dei ‘Valori ammessi’ basati su questo oggetto durante la creazione di una matrice in Anagrafica Articolo (#TT04490/24)
+> - MES - Corretto bug nella procedura di completamento dati ordine degli ordini di produzione (#TT04741/24)
+> - WM - Corretto bug in analisi disponibilità inerente alla visualizzazione con dettaglio distinta base nel caso di varianti (#TT04602/24)
+> - FI - repository method ComputeCheckDeclarationOfExemptionAmounts (#TT02373/23)
 
 
 ### Patch 608.1-0058 - 07/11/2024
 > - FI - revisione assegnazione date competenza economica in contabilizzazione fatture di acquisto (#TT02138/24)
-> - FI - Add checks for migration (TT04710/24)
+> - FI - Add checks for migration (#TT04710/24)
 > - Nell’evasione ordini fornitori in bolle e fatture acquisto senza ricalcolo analitica, revisione assegnazione centri su priorità magazzini (#TT01624/24)
 > - SD - Corretto errore nella ricerca delle Fatture di Vendita collegato alla presenza di fatture inviate allo SDI RSM (#TT04740/24)
 
 ### Patch 608.1-0057 - 31/10/2024
-> - WMS - Implementato nel Barcode tokenizer anche la possibilità di gestire le collections e non solo le references. (#TT04232/24)
-> - SD – Stampa CMR - Corretta stampa del CMR, non riportava sempre i dati del Mittente e i Pesi (#TT04342/24).
+> - WMS - Implementato nel Barcode tokenizer anche la possibilità di gestire le collections e non solo le references (#TT04232/24)
+> - SD - Stampa CMR - Corretta stampa del CMR, non riportava sempre i dati del Mittente e i Pesi (#TT04342/24)
 > -   SD - Corretto problema nel calcolo delle provvigioni maturate per agenti con criterio del pagamento avvenuto ed in presenza di pagamenti parziali di partite (#TT03435/24 & #TT04483/2)
-> - MS – Corretto bug nel rilascio degli ordini pianificati di conto lavoro nel caso in cui fosse utilizzata la UM utilizzo in un materiale. (#TT04603/24)
-> - CO - add currency in unique key of CO_ConsolidationListCostCenters and CO_InternalClosureModelListCostCenters ( TT04649/24)
+> - MS - Corretto bug nel rilascio degli ordini pianificati di conto lavoro nel caso in cui fosse utilizzata la UM utilizzo in un materiale (#TT04603/24)
+> - CO - add currency in unique key of CO_ConsolidationListCostCenters and CO_InternalClosureModelListCostCenters (#TT04649/24)
 > - FI - Nella contabilizzazione fatture di acquisto, quando c’è uno storno del movimento delle fatture da ricevere è stato aggiunto un messaggio che segnala la squadratura dei centri di costo in questa seconda: la fattura diventa in stato contabilizzata, ma si avvisa del mancato storno del fatture da ricevere (#TT04275/24)
-> - SCS – Corretto errore nella registrazione di un Rientro di conto lavoro dall’interno del documento (#TT04578/24).
-> - SD – L’ordinamento dei valori (Extra Data) nelle righe e nelle colonne di una Matrice in anagrafica articolo, viene mantenuto quando si creano i documenti (#TT04599/24)
-> - SCM – Corretto errore che non aggiornava correttamente lo stato evasione dell’Ordine fornitore nel caso in cui una parte fosse evasa in un DDT e la restante in una Fattura (#TT04612/24).
-> - FI - Modificata procedura controlling Valorizzazione area acquisti vendite della chiusura infrannuale. Il rollback della procedura non è più bloccato dalla stampa della liquidazione iva in definitiva per il periodo in questione, accadeva se la causale utilizzata per la valorizzazione era una causale IVA. ( TT04436/24)
-> - SH – Document Manager - Fix blocking app when shared folder document type used (TT02202/24)
+> - SCS - Corretto errore nella registrazione di un Rientro di conto lavoro dall’interno del documento (#TT04578/24)
+> - SD - L’ordinamento dei valori (Extra Data) nelle righe e nelle colonne di una Matrice in anagrafica articolo, viene mantenuto quando si creano i documenti (#TT04599/24)
+> - SCM - Corretto errore che non aggiornava correttamente lo stato evasione dell’Ordine fornitore nel caso in cui una parte fosse evasa in un DDT e la restante in una Fattura (#TT04612/24)
+> - FI - Modificata procedura controlling Valorizzazione area acquisti vendite della chiusura infrannuale. Il rollback della procedura non è più bloccato dalla stampa della liquidazione iva in definitiva per il periodo in questione, accadeva se la causale utilizzata per la valorizzazione era una causale IVA (#TT04436/24)
+> - SH - Document Manager - Fix blocking app when shared folder document type used (#TT02202/24)
 > - Nei documenti di acquisto, al cambio del magazzino nelle righe, il ricalcolo dei centri di costo viene eseguito ora solo se almeno uno dei due magazzini (iniziale e nuovo assegnato) hanno impostato i centri di costo
 
 ### Patch 608.1-0056 - 24/10/2024
 > - BI - cruscotti - Fix problema apertura dettagli (#TT03539/24)
-> - WM - Corretto bug nella stampa di Sottoscorta che andava in loop nel caso di un articolo con Scorta massima uguale al Punto di riordino (#TT03980/24).
+> - WM - Corretto bug nella stampa di Sottoscorta che andava in loop nel caso di un articolo con Scorta massima uguale al Punto di riordino (#TT03980/24)
 > - MPS - Corretto bug in Definizione MPS nel tab Previsionale che si verificava nel caso in cui fossero processate molte righe (#TT04485/24)
-> - FI - Stampa libro cespiti ammortizzabili: risolto errore in fase di stampa in definitivo del libro cespiti ammortizzabile ( TT04500/24)
+> - FI - Stampa libro cespiti ammortizzabili: risolto errore in fase di stampa in definitivo del libro cespiti ammortizzabile (#TT04500/24)
 > - MES - Corretto bug nello scarico delle dichiarazioni di produzione inerente al consumo del semilavorato prodotto nella fase precedente nel caso in cui questa fosse la prima ed esterna (#TT03883/24)
 > - MS - Migliorata e ottimizzata la procedura di generazione commesse di produzione da previsionale (#TT04513/24)
 > - CO - Corretto bug nel filtro della classe articolo della procedura Calcolo costi (#TT04512/24)

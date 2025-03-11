@@ -3,7 +3,7 @@ title: Dettaglio
 sidebar_position: 1
 ---
 
-**Stato cespite**: viene gestito automaticamente sulla base delle operazioni collegate al cespite e non va forzato. In caso di cespite pregresso inserendo anche il fondo ammortamento lo stato passerà a Parzialmente/Totalmente ammortizzato. Per il corretto inserimento di un cespite pregresso vedere  [**l'allegato all'articolo sulla registrazione contabile di un cespite**.](/docs/finance-area/ledger-records/records/create-ledger-record/fixed-assets-tab) 
+**Stato cespite**: viene gestito automaticamente sulla base delle operazioni collegate al cespite e non va forzato. In caso di cespite pregresso inserendo anche il fondo ammortamento lo stato passerà a Parzialmente/Totalmente ammortizzato. Per il corretto inserimento di un cespite pregresso vedere  [**l'allegato all'articolo sulla registrazione contabile di un cespite**.](/docs/finance-area/ledger-records/records/ledger-record) 
 
 
 

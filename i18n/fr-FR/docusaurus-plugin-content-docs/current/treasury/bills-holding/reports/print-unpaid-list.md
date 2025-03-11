@@ -1,9 +1,9 @@
 ---
-title: Impression liste des impayés
+title: Stampa Lista insoluti
 sidebar_position: 3
 ---
 
-A partir par cette fenetre est possible d'imprimer la liste des impayés présents dans le système selon le filtre établi. En particulier, il est d'intéret le filtre pour les impayés 'N'encaissés pas' et le critère de regroupement pour le client ou pour l'agent.
+Da questa finestra è possibile stampare la lista degli insoluti presenti nel sistema secondo il filtro impostato. In particolare, è d'interesse il filtro per insoluti ‘Non incassati' e il criterio di raggruppamento per cliente o per agente.
 
 
 

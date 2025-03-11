@@ -1,36 +1,21 @@
 ---
-title: Credit Management
+title: Gestione fidi
 sidebar_position: 2
 ---
 
-This mask enables the user to verify and manage settings of customer register credits, without entering every one of them from contacts management of 'Home'-'Registers'-'Contacts Registers' tab.
+Questa maschera consente di verificare e gestire le impostazioni dei fidi delle anagrafiche cliente, senza dover entrare ad una ad una dalla gestione contatti del tab ‘Home'-‘Anagrafici'-‘Anagrafiche contatti'.
 
-There are four credit control types:
+Sono previsti quattro tipi di controllo fido:
 
-**Doc. Block and credit monitor**: the sales area document, that overruns the credit, will be blocked and for this reason there will be the necessity to authorize it in order to go on to the following phases of documental flow;
+**Blocco doc. e monitor fido**: il documento dell'area vendita che va a sforare il fido sarà bloccato e quindi ci sarà la necessità di autorizzarlo per procedere alle fasi successivo del flusso documentale;
 
-**Credit Monitor**: it will be necessary to perform a credit control with possible message to the user of the overrunning occured;
+**Monitor fido**: sarà semplicemente effettuato un controllo del fido con eventuale messaggio all'utente dell'avvenuto sforamento;
 
-**Group Block**: as the first one, but the calculation is cumulative for all companies of database that refer to the same customer register;
+**Blocco di gruppo**: come per il primo, ma il calcolo è cumulativo per tutte le società del database facenti capo alla stessa anagrafica cliente;
 
-**Group Monitor**: as the second one, but the calculation is cumulative for all companies of database that refer to the same customer register;
+**Monitor di gruppo**: come per il secondo, ma il calcolo è cumulativo per tutte le società del database facenti capo alla stessa anagrafica cliente.
 
-The field of **insured credit** is only a reference not managed actively by the program, as well as the credit notes.
-
-the credit management procedure consists as follows:
-
-RIBBON BAR: it represents the Form menu, that is the area in which it is possible to perform actions about a pre-existing document rather than to create a new one. The list of features is the following:
-
-
-
-| Function | Meaning |
-| --- | --- |
-| Search | Button to apply search filter within database of customer credit |
-
-FILTER AREA: The filter area contains the list of the possible data types thanks to which it is possible to perform a selection, a research on the total of data inserted in system. Typically Filters have 'AND' condition and it is possible to specify more filter criteria at the same time.
-
-RESULT GRID: the result grid represents the import list that belongs to the filter data above mentioned. After having specified values through which to obtain a search of inventory items the user, by clicking on the [Search] button in the related Ribbon, will obtain the list of desired inventory items in the result grid.
-
+Il campo del **fido assicurato** è solo un riferimento non gestito in modo attivo dal programma, così come le note fido.
 
 
 

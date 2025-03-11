@@ -1,51 +1,47 @@
 ---
-title: Procurar listas
-sidebar_position: 5
+title: Distinte
+sidebar_position: 3
 ---
 
-O procedimento Procurar listas foi desinhado para permitir ao usuário procurar facilmente listas de apresentação emitidas precedentemente com o objetivo de visualizá-las, modificá-las e eventualmente cancelá-las. A partir da pesquisa das listas é possível fazer todas as operações necessárias no âmbito do documento, após a presença dos direitos do usuário necessários.
+La form della ricerca distinte 
+- si trova in Tesoreria > Portafoglio Effetti > Effetti > Distinte
 
-O procedimento é constituído na seguinte maneira:
-
-RIBBON BAR: representa o menu do módulo em questão, ou seja, a área na qual efetuar algumas ações. A lista de possíveis funcionalidades é sucessivamente representada:
-
+- permette all'utente di ricercare le distinte di presentazione emesse precedentemente con lo scopo di visualizzarle, modificarle ed eventualmente cancellarle.
 
 
-| RibbonFunction | RibbonMeaning |
-| --- | --- |
-| Procurar listas | Botão para aplicar os filtros de pesquisa dentro do banco de dados dos efeitos inseridos. |
-| Novas listas | Refere-se ao procedimento para inserir um novo efeito. |
-| Modificar as listas | Refere-se ao procedimento para modificar um efeito precedentemente inserido. |
-| Visualização listas | Refere-se ao procedimento para visualizar um efeito precedentemente inserido. |
-| Cancelar as listas | Executa o procedimento para cancelar um efeito precedentemente inserido. |
+## Pulsanti della Ribbon Bar
+
+> - **Ricerca distinte:** Pulsante per ricercare le distinte secondo i filtri di ricerca impostati nella testata della form.
+> - **Nuovo distinte:** Richiama la form per inserire una nuova distinta.
+> - **Modifica distinte:** Permette di modificare una distinta precedentemente inserita.
+> - **Visualizzazione distinte:** Visualizza una distinta precedentemente inserita.
+> - **Cancella distinte:** Cancella una distinta precedentemente inserita.
+
+> Esecuzione della **stampa** (*Anteprima* oppure *Stampa*) *Distinta di presentazione*: lancia, relativamente alle distinte selezionate con il mouse, (tenendo premuto Ctrl si possono selezionare più distinte contemporaneamente) l'omonima stampa presente nel [**menu stampe**](/docs/treasury/bills-holding/reports/print-presentation-lists) del modulo
+
+## Filtri nella testata della form
+
+- **Tipo:** filtra per tipo di distinta, dato a sua volta definito nella tabella [***Tipi presentazione distinte effetti***](/docs/configurations/tables/treasury/bills-portfolio-module-tables/bills-list-presentation-types)
+
+- **Banca:** filtra per conto **Banca Conto Corrente** impostato sulla testata distinta
+
+- **DA - A Numero distinta:** filtra per numero distinta, dato impostato al numeratore automatico in fase di creazione della distinta
+
+- **DA / A data presentazione:** filtra per data di presentazione, campo ella testata distinta proposto generalmente pari ad "*oggi*" ma può essere variato dall'utente
+
+- **Divise:** filtra per divisa, dato di testata che si riferisce alla divisa degli effetti contenuti in distinta, ad esempio per estrarre solo le divise denominate in dollari.
+
+- **Stampato:** se attivato, questo flag estrae solo distinte stampate (o comunque con flag *stampato* "true")
+
+- **Contabilizzata:** se attivato, questo flag estrae solo distinte contabilizzate attraverso [l'apposita procedura](/docs/treasury/bills-holding/accounting/lists-accounting) (o comunque con flag *contabilizzata* "true")
 
 
+## Griglia dei risultati
 
-| RibbonFunction | RibbonMeaning |
-| --- | --- |
-|  [Imprimir as listas de apresentação](/docs/treasury/bills-holding/reports/print-presentation-lists)  | Refere-se ao procedimento para imprimir as listas de apresentação no banco dos efeitos. |
-|  [Imprimir a situação da carteira efeitos](/docs/treasury/bills-holding/reports/bill-holding-situation)  | Refere-se ao procedimento para imprimir a estatística da situação da carteira efeitos. |
-|  [Imprimir a lista dos não pagos](/docs/treasury/bills-holding/reports/print-unpaid-list)  | Refere-se ao procedimento para imprimir a lista dos não pagos presentes. |
+In questa from presenta gli stessi campi presenti nei filtri già dettagliati qui sopra.
 
+Presenta inoltre il **Totale** della distinta (somma gli importi degli effetti in distinta)
 
-
-| RibbonFunction | RibbonMeaning |
-| --- | --- |
-|  [Aquisição efeitos pelas faturas](/docs/treasury/bills-holding/procedures/bills-acquisition-from-invoices/acquisition)  | Refere-se ao procedimento para criar em automático os efeitos pelos prazos das faturas. |
-|  [Aquisição efeitos pelas partidas](/docs/treasury/bills-holding/procedures/bills-acquisition-from-maturity-values/bills-acquisition-from-maturity-values-intro)  | Refere-se ao procedimento para criar em automático os efeitos pelas partidas abertas. |
-|  [Contabilização efeitos](/docs/treasury/bills-holding/accounting/bills-accounting/accounting)  | Refere-se ao procedimento para efetuar a contabilização efeitos e fechar a conta cliente. |
-|  [Contabilização efeitos ao forncedor](/docs/treasury/bills-holding/accounting/bills-accounting-by-vendor/accountingo procedimento para efetuar a contabilização dos efeitos ao fornecedor e fechar a conta fornecedor. |
-|  [Contabilização listas](/docs/treasury/bills-holding/accounting/lists-accounting/accounting)  | Refere-se ao procedimento para efetuar a contabilização da lista e valorizar a conta de apresentação. |
-|  Contabilização créditos  | Refere-se ao procedimento para efetuar a contabilização do crédito na conta. |
-|  [Geração arquivo Recibo bancário]  | Refere-se ao procedimento para gerar o traçado telemático recibo bancário. |
-|  [Geração arquivo DDA]  | Refere-se ao procedimento para gerar o traçado telemático debito direto autorisado. |
-|  [Importação não pagos](/docs/treasury/bills-holding/procedures/import-unpaids)  | Refere-se ao procedimento de importação do traçado telemático não pagos. |
-|  [Contabilização não pagos](/docs/treasury/bills-holding/accounting/unpaid-accounting/unpaids)  | Refere-se ao procedimento de contabilização não pagos, com a contextual reabertura da partida cliente em relação os parâmetros do módulo. |
-|  Contabilização não pagos sobre a cessão  | Refere-se ao procedimento de contabilização não pagos, com contextual reabertura das partidas cliente e fornecedor em relação os parâmetros do módulo. |
-
-ÁREA DE FILTRO: a área de filtro é dedicada à hospedagem na lista de possíveis tipos de dados através do qual é possível fazer uma seleção e uma pesquisa sobre o total das listas inseridas. Os filtros são em condição 'E' e é possível especificar mais critérios de filtro contemporâneos.
-
-GRELHA DE RESULTADO: a grelha de resultado é uma lista das listas que correspondem aos dados de filtro especificados acima. O usuário, depois de especificar os valores pelos quais deseja obter uma pesquisa das listas, pressionando o botão [Pesquisa] presente na relativa Ribbon, resultará na grelha a lista das listas que quiser. 
 
 
 

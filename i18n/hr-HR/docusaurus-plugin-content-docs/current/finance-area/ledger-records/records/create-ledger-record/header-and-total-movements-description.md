@@ -5,21 +5,21 @@ sidebar_position: 1
 
 LINK:
 
-**[TAB REGISTRAZIONE](/docs/finance-area/ledger-records/records/create-ledger-record/record-tab)**
+**[TAB REGISTRAZIONE](/docs/finance-area/ledger-records/records/ledger-record)**
 
-**[TAB PARTITE](/docs/finance-area/ledger-records/records/create-ledger-record/maturity-values-tab)**
+**[TAB PARTITE](/docs/finance-area/ledger-records/records/ledger-record)**
 
-**[TAB PAGAMENTI](/docs/finance-area/ledger-records/records/create-ledger-record/payments-tab)**
+**[TAB PAGAMENTI](/docs/finance-area/ledger-records/records/ledger-record)**
 
-**[TAB CENTRI DI COSTO / PROFITTO](/docs/finance-area/ledger-records/records/create-ledger-record/cost-profit-centers-tab)**
+**[TAB CENTRI DI COSTO / PROFITTO](/docs/finance-area/ledger-records/records/ledger-record)**
 
-**[TAB PROGETTO (Ex Commesse)](/docs/finance-area/ledger-records/records/create-ledger-record/job-orders-tab)**
+**[TAB PROGETTO (Ex Commesse)](/docs/finance-area/ledger-records/records/ledger-record)**
 
-**[TAB CESPITI](/docs/finance-area/ledger-records/records/create-ledger-record/fixed-assets-tab)**
+**[TAB CESPITI](/docs/finance-area/ledger-records/records/ledger-record)**
 
-**[TAB PARAMETRI](/docs/finance-area/ledger-records/records/create-ledger-record/parameters-tab)**
+**[TAB PARAMETRI](/docs/finance-area/ledger-records/records/ledger-record)**
 
-**[TAB RAGGRUPPAMENTO PARTITE](/docs/finance-area/ledger-records/records/create-ledger-record/mat-val-grouping-tab)**
+**[TAB RAGGRUPPAMENTO PARTITE](/docs/finance-area/ledger-records/records/ledger-record)**
 
 Campi presenti nella **testata della registrazione**, nell'ordine di caricamento:
 
@@ -53,7 +53,7 @@ Il campo del protocollo viene disabilitato in caso di registrazione provvisoria;
 
 **Numero documento**: è un campo alfanumerico di 20 caratteri: a seconda delle impostazioni della causale viene bloccato l'inserimento dello stesso numero/anno (preso dalla data documento) / tipo (campo tipo documento) per lo stesso codice inserito nel campo sottoconto della testata della registrazione (questo blocco è inserito di default su ogni causale contabile, ma può essere disabilitato). In caso che sia lo stesso numero/anno/sottoconto ma il tipo sia differente viene invece restituito un semplice messaggio di avvertimento all'utente. Allo stesso modo, il messaggio di avvertimento viene restituito anche se lo stesso riferimento è salvato in una registrazione provvisoria;
 
-**Campo Progetto** (ex commessa): è attivo solo se la causale di contabilità prevede la gestione progetti (ex flag 'Commessa'): questo progetto è quello di riferimento per tutta la registrazione, ma sarà possibile riattribuire i valori all'interno della scheda ‘**[Progetto](/docs/finance-area/ledger-records/records/create-ledger-record/job-orders-tab)**' della stessa. La compilazione del campo prevede di utilizzare sempre l'help progetto (maschera di ricerca che si attiva con doppio click all'interno del campo) per filtrare quelli attivi all'interno dell'area **Progetti**;
+**Campo Progetto** (ex commessa): è attivo solo se la causale di contabilità prevede la gestione progetti (ex flag 'Commessa'): questo progetto è quello di riferimento per tutta la registrazione, ma sarà possibile riattribuire i valori all'interno della scheda ‘**[Progetto](/docs/finance-area/ledger-records/records/ledger-record)**' della stessa. La compilazione del campo prevede di utilizzare sempre l'help progetto (maschera di ricerca che si attiva con doppio click all'interno del campo) per filtrare quelli attivi all'interno dell'area **Progetti**;
 
 
 :::danger ATTENZIONE

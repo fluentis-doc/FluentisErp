@@ -184,5 +184,5 @@ scaricato dal libro cespiti per la metà.
 :::tip[Suggerimento]
 L'alienazione cespite, in particolare nei casi più semplici di alienazione totale, può essere gestita con maggiore automatismo attraverso la registrazione contabile della vendita effettuata con una causale che ha abilitato la funzionalità per i cespiti e con tipo operazione Alienazione totale (o parziale).
 
-Nella scrittura comparirà [**l'apposita sezione Cespite**](/docs/finance-area/ledger-records/records/create-ledger-record/fixed-assets-tab)
+Nella scrittura comparirà [**l'apposita sezione Cespite**](/docs/finance-area/ledger-records/records/ledger-record)
 :::

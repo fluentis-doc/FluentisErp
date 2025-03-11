@@ -7,7 +7,7 @@ La stampa che viene lanciata dalla presente form deve essere utilizzata, in luog
 
 La gestione delle partite tramite i raggruppamenti rappresenta infatti una metodologia alternativa e particolare rispetto alla classica, e richiede una visualizzazione specifica per ottenere una situazione chiaramente leggibile.
 
-Per ulteriori** [dettagli sul raggruppamento partite vedere qui.](/docs/finance-area/ledger-records/records/create-ledger-record/mat-val-grouping-tab) **
+Per ulteriori** [dettagli sul raggruppamento partite vedere qui.](/docs/finance-area/ledger-records/records/ledger-record) **
 
 La stampa corrisponde alla funzione di ** [visualizzazione a video dei gruppi partite.](/docs/finance-area/maturity-values/maturity-values/maturity-value-grouping) **
 

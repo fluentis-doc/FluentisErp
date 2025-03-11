@@ -1,9 +1,9 @@
 ---
-title: Raport Liste de prezentare
+title: Stampa Distinte di presentazione
 sidebar_position: 1
 ---
 
-Această fereastră permite listarea listelor de prezentare efecte pe baza filtrului inserat. Listarea raportului (prezența flagului de stare ‘listată') este obligatorie pentru contabilizarea listei.
+Da questa finestra è possibile stampare le distinte di presentazione effetti secondo il filtro impostato. La stampa della distinta (la presenza del flag di stato ‘Stampata') è obbligatoria per poter contabilizzare la distinta stessa.
 
 
 

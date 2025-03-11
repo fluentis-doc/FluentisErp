@@ -1,48 +1,39 @@
 ---
-title: Gestion flux de trésorerie
+title: Gestione Cash flow
 sidebar_position: 2
 ---
 
-À partir de ce masque s'avance au chargement/modification du flux de trésorerie.
+Da questa maschera si procede al caricamento/modifica del cash flow.
 
-À partir de ces voix de menu est possible de créer/modifier les calculs de simulation du flux de trésorerie. Avec la gestion manuelle est possible d'insérer lignes manuellement ou rappeler les données à travers le bouton d'acquisition présente dans l'en-tête, en sélectionnant le type de flux d'intérêt qui ouvrira le masque de recherche et sélection relative.
+Da queste voci di menù è possibile creare/modificare i calcoli di simulazione del cash flow. Con la gestione manuale è possibile inserire righe manualmente oppure richiamare i dati attraverso il pulsante di acquisizione presente in testata, selezionando il tipo di flusso d'interesse che aprirà la maschera di ricerca e selezione relativa.
 
-À partir de ce masque est aussi possible de visualiser le document d'origine pour évaluer les données.
-
-RIBBON BAR: il représente le menu de la forme en objet, à savoir la zone dans laquelle est possible d'effectuer des actions. La liste des fonctionnalités possibles est représentée de suite:
+Da questa maschera è anche possibile visualizzare il documento d'origine per valutarne i dati.
 
 
 
-| RibbonFunction | RibbonMeaning |
+| Funzione | Significato |
 | --- | --- |
-| Enregistrer | Enregistrer le flux de trésorerie de gestion. |
-| Rechercher tous | Exécuter la recherche des flux de trésorerie pour les comptes financiers. |
-| Rechercher mouvements flux de trésorerie | Exécuter la recherche des mouvements pour les types de flux prévisionnel. |
-| Acquisition | À partir par ce bouton l'utilisateur peut sélectionner le type de flux par lequel reprendre les données de prévision à insérer dans le flux de trésorerie en utilisation. Chaque détail de ce bouton ouvrira un aide contextuel spécifique pour le type de flux, voir l'application 1. |
-| Nouveau mouv. compt. | Activer le curseur dans l'insertion d'une nouvelle ligne de détail dans les mouvements des comptes financiers. |
-| Nouveau mouv. Flow | Activer le curseur dans l'insertion d'une nouvelle ligne de détail dans les mouvements de prévision. |
-| Restaurer tous | Supprimer tous les mouvements insérés. |
-| Restaurer comptabilité | Supprimer les mouvements des comptes financiers. |
-| Restaurer Cash Flow | Supprimer les mouvements de prévision. |
-| Visualiser doc. d'orig. | Visualiser le document d'origine du flux de prévision sélectionnée. |
+| Salva | Salva il cash flow in gestione. |
+| Ricerca tutti | Esegue la ricerca dei flussi per i conti finanziari. |
+| Ricerca movimenti cash flow | Esegue la ricerca dei movimenti per i tipi di flusso previsionale. |
+| Acquisizione | Da questo pulsante l'utente può selezionare il tipo di flusso dal quale riprendere i dati previsionali da inserire nel cash flow in uso. Ogni dettaglio di questo pulsante aprirà un help contestuale specifico per il tipo di flusso, vedi applicazione a. |
+| Nuovo mov. cont. | Attiva il cursore nell'inserimento di una nuova riga di dettaglio nei movimenti dei conti finanziari. |
+| Nuovo mov. flow | Attiva il cursore nell'inserimento di una nuova riga di dettaglio nei movimenti previsionali. |
+| Ripristino tutti | Cancella tutti i movimenti inseriti. |
+| Ripristino contabilità | Cancella i movimenti dei conti finanziari. |
+| Ripristino cash flow | Cancella i movimenti previsionali. |
+| Visualizza doc. orig. | Visualizza il documento d'origine del flusso previsionale selezionata. |
 
-APPLICATIONS:
+**PULSANTE (lista) *ACQUISIZIONE*:**
 
-1. **Comptes**: le masque permet de reprendre les comptes comptables par la comptabilité;
-
-2. **Comptabilité**: le masque permet de reprendre les soldes des types compte financiers;
-
-3. **Extracomptable**: le masque permet de reprendre les données des échéances extracomptables du flux de trésorerie;
-
-4. **Factures (clients/fournisseurs)**: par ces masques si sélectionnent les données des échéances factures d'achat/vente;
-
-5. **Commandes (clients/fournisseurs)**: par ces masques si sélectionnent les simulations des données restantes des commandes clients/fournisseurs (imprimés et confirmés). On conseille de laisser le paramétrage par défaut du masque;
-
-6.** Receveurs ne comptabilisés pas**: le masque permet d'insérer dans le flux de trésorerie les données des rémunérations receveurs ne comptabilisés pas;
-
-7. **Bons de livraison (achat/vente)**: les masques permettent de reprendre les données des bons de livraisons ne valorisées pas en facture;
-
-8. **Sous-traitant (ordres/rentrées)**: les masques permettent de reprendre les données par les commandes de sous-traitant et par les relatives rentrées ne facturés pas (laisser les paramétrages par défaut des deux masques).
+ 1. Partite: la maschera consente di riprendere la partite contabili dalla contabilità;
+ 2. Contabilità: la maschera consente di riprendere i saldi dei tipi conto finanziari;
+ 3. Extra contabile: la maschera consente di riprendere i dati delle scadenze extracontabili di cash flow;
+ 4. Fatture (acquisto/vendita): da queste maschere si selezionano i dati delle scadenze fatture di acquisto/vendita ;
+ 5. Ordini (clienti/fornitori): da queste maschere si selezionano le simulazioni dei dati residui degli ordini clienti/fornitori (stampati e confermati). Si consiglia di lasciare l'impostazione di default della maschera;
+ 6. Percipienti non contabilizzati: la maschera consente di inserire nel cash flow i dati dei compensi percipienti non contabilizzati;
+ 7. DDT (vendita/acquisto): le maschere consentono di riprendere i dati dei  DDT non valorizzate in fattura;
+ 8. Conto lavoro (ordini/rientri): le maschere consentono di riprendere i dati dagli ordini di conto lavoro e dai relativi rientri non fatturati (lasciare le impostazioni di default di entrambe la maschere).
 
 
 

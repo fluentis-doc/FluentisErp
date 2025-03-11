@@ -1,24 +1,29 @@
 ---
-title: Importation impayés
+title: Importazione insoluti
 sidebar_position: 3
 ---
 
-À partir de ce masque s'avance au paramétrage de la liste impayée par le fichier télématique Standard de communication bancaire. Il est possible, normalement, d'activer la réception d'un tracé de cette liste, qui reprendre en partie le même fichier envoyé avec la présentation, à l'intérieur duquel on a inséré le coordonné de l'effet: à travers la lecture de cette donnée, donc, on peut créer la liste des impayés automatiquement, avec le relevé direct aussi des frais bancaires de chacun.
+Da questa maschera si procede all'importazione della lista insoluti dal file telematico standard di comunicazione bancaria. 
 
-La procédure commence avec le bouton 'Exécuter l'importation', qui ouvrira le masque d'ouverture fichier du système: une fois trouvé le fichier dans la Directory correcte se devra simplement ouvrir le fichier pour avancer au paramétrage de la liste. L'éventuelle liste d'effets ne trouvée pas sera ramenée en un masque d'erreur: pour ces sera donc nécessaire avancer à la création manuelle de l'impayé.
+È possibile, normalmente, attivare il ricevimento di un tracciato di questa lista, che riprende in parte lo stesso file inviato con la presentazione, all'interno del quale abbiamo inserito l'identificativo dell'effetto: attraverso la lettura di questo dato, quindi, possiamo creare la lista degli insoluti automaticamente, con la rilevazione diretta anche delle spese bancarie su ognuno.
 
-À partir du masque est possible de supprimer le paramétrage exécuté: s'ira à annuler la liste des impayés créée avec le même paramétrage.
+La procedura inizia con il pulsante **Esegui importazione**, che aprirà la maschera di apertura file del sistema: una volta individuato il file nella directory corretta si dovrà semplicemente aprire il file per procedere all'importazione della lista. 
 
-RIBBON BAR: il représente le menu de la forme en objet, à savoir la zone dans laquelle est possible d'effectuer des actions. La liste des fonctionnalités possibles est représentée de suite:
+L'eventuale lista di effetti non trovati sarà riportata in una maschera d'errore: per questi sarà quindi necessario procedere alla creazione manuale dell'insoluto.
+
+Dalla maschera è possibile cancellare l'importazione eseguita: questa andrà ad annullare la lista degli insoluti creati con l'importazione stessa.
 
 
 
-| RibbonFunction | RibbonMeaning |
-| --- | --- |
-| Rechercher importations | Rechercher la liste des importations impayés déjà exécutées. |
-| Exécuter l'importation | Avec ce bouton s'ouvre le masque de sélection du fichier télématique pour lequel exécuter la procédure d'importation. |
-| Visualiser le fichier impayé | Visualiser le fichier télématique de l'impayé importé. |
-| Supprimer l'importation | Supprimer l'importation exécutée. |
+**Pulsanti specifici**
+
+**Ricerca importazioni:** Ricerca la lista delle importazioni insoluti già eseguite.
+
+**Esegui import**: Con questo pulsante si apre la maschera di selezione del file telematico per il quale eseguire la procedura di importazione.
+
+**Visualizza file insoluti**: Visualizza il file telematico dell'insoluto importato.
+
+**Cancella importazione**: Cancella l'importazione eseguita.
 
 
 

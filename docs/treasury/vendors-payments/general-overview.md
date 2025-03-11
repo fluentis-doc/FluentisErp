@@ -31,7 +31,7 @@ Si procede alla creazione di una nuova distinta di pagamento andando a prelevare
 | Funzione | Significato | Link Video Tutorial |
 | --- | --- | --- |
 |  [Blocco partite passive](/docs/treasury/vendors-payments/procedures/block-passive-maturity-values)  | Pulsante per  procedere alla gestione massiva dei blocchi delle partite passive. | <a href="https://youtu.be/DkxoWgTkvUg&amp;t=05s" target="_blank" rel="noopener noreferrer">Link YouTube </a> |
-|  [Creazione automatica pagamento fornitori](/docs/treasury/vendors-payments/procedures/automatic-vendor-payments-creation/parameters-filter)  | Pulsante per la creazione automatica di un pagamento fornitore. | <a href="https://youtu.be/DkxoWgTkvUg&amp;t=2m25s" target="_blank" rel="noopener noreferrer">Link YouTube </a> |
+|  **Creazione automatica pagamento fornitori** | Pulsante per la creazione automatica di un pagamento fornitore. | <a href="https://youtu.be/DkxoWgTkvUg&amp;t=2m25s" target="_blank" rel="noopener noreferrer">Link YouTube </a> |
 |  [Gestione appoggi pagamenti](/docs/treasury/vendors-payments/procedures/payments-support-management)  | Pulsante per gestire gli appoggi bancari dei pagamenti. | <a href="https://youtu.be/DkxoWgTkvUg&amp;t=5m37s" target="_blank" rel="noopener noreferrer">Link YouTube </a> |
 |  [Contabilizzazione](/docs/finance-area/professional-men/accounting/payments-accounting/filter)  | Pulsante per procedere alla contabilizzazione dei pagamenti fornitore. | <a href="https://youtu.be/CDCVq0iC29s&amp;t=5m40s" target="_blank" rel="noopener noreferrer">Link YouTube </a> |
 

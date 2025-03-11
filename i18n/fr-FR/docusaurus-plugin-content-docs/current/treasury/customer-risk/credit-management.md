@@ -1,36 +1,21 @@
 ---
-title: Gestion crédit
+title: Gestione fidi
 sidebar_position: 2
 ---
 
-Ce masque permet de vérifier et gérer les paramétrages des crédits des registres client, sans devoir entrer à une à une par la gestion des contacts du tab 'Home' - 'Registres' - 'Registres contats'.
+Questa maschera consente di verificare e gestire le impostazioni dei fidi delle anagrafiche cliente, senza dover entrare ad una ad una dalla gestione contatti del tab ‘Home'-‘Anagrafici'-‘Anagrafiche contatti'.
 
-Sont prévus cuattre types de contrôle du crédit:
+Sono previsti quattro tipi di controllo fido:
 
-**Bloc** ** doc. et moniteur crédit**: le document de la zone de vente qui va à dépasser le crédit sera bloqué et donc il y aura la nécessité de l'autoriser pour avancer aux phases successives du flux de document;
+**Blocco doc. e monitor fido**: il documento dell'area vendita che va a sforare il fido sarà bloccato e quindi ci sarà la necessità di autorizzarlo per procedere alle fasi successivo del flusso documentale;
 
-**Moniteur** ** crédit**: il sera simplement effectué un contrôle du crédit avec éventuel message à l'utilisateur de l'avenu dépassement;
+**Monitor fido**: sarà semplicemente effettuato un controllo del fido con eventuale messaggio all'utente dell'avvenuto sforamento;
 
-**Bloc** ** du groupe**: comme pour le premier, mais le calcul est cumulatif pour toutes les sociétés de la base de données qui font partie au même registre client;
+**Blocco di gruppo**: come per il primo, ma il calcolo è cumulativo per tutte le società del database facenti capo alla stessa anagrafica cliente;
 
-**Moniteur du** ** groupe**: comme pour le deuxième, mais le calcul est cumulatif pour toutes les sociétés de la base de données qui font partie au même registre client;
+**Monitor di gruppo**: come per il secondo, ma il calcolo è cumulativo per tutte le società del database facenti capo alla stessa anagrafica cliente.
 
-Le champ du **Crédit** ** assuré** est seul une référence ne géré pas en façon active par le programme, ainsi comme les notes de crédit.
-
-La procédure de la gestion crédits est formée dans la façon suivante:
-
-RIBBON BAR: il représente le menu de la forme en objet, à savoir la zone dans laquelle est possible d'effectuer des actions. La liste des fonctionnalités possibles est représentée de suite:
-
-
-
-| RibbonFunction | RibbonMeaning |
-| --- | --- |
-| Rechercher | Bouton pour appliquer les filtres de recherche à l'intérieur de la base de données des crédits client. |
-
-ZONE DE FILTRE: la zone de filtre est celle dédiée à recevoir la liste des possibles types de données grâce à lesquelles est possible d'effectuer une sélection. Les filtres sont typiquement en condition 'AND' et est possible de spécifier plusieurs critères des filtres en même temps.
-
-GRILLE DE RÉSULTAT: la grille de résultat représente la liste des crédits qui correspondent aux données de filtre surspécifie. L'utilisateur, après avoir spécifié les valeurs par lesquelles désire obtenir une recherche des crédits, en appuyant le touche [Recherche] présent dans la rélative Ribbon, obtiendra dans la grille de résultat la liste des crédits désirés.
-
+Il campo del **fido assicurato** è solo un riferimento non gestito in modo attivo dal programma, così come le note fido.
 
 
 

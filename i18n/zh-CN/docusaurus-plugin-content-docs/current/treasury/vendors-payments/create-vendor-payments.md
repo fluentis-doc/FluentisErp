@@ -1,44 +1,65 @@
 ---
-title: 创建
-sidebar_position: 6
+title: Crea pagamenti fornitore
+sidebar_position: 2
+---
+La form si trova in **Tesoreria > Pagamenti > Crea pagamenti fornitore** e consente la creazione di una nuova distinta di pagamento. La stessa maschera viene utilizzata anche per l'apertura in modifica o visualizzazione di una distinta già salvata.
+
+Dalla form di ricerca è possibile creare un nuovo documento mediante il pulsante **> Nuovo pagamento** oppure aprirne uno esistente per visualizzarlo e/o modificarlo.
+
+## Come creare una distinta di pagamento
+
+Clicca per i passaggi fondamentali:
+
+1. Seleziona il **Tipo di pagamento** della distinta dal primo campo a discesa.
+2. I campi seguenti vengono compilati automaticamente:
+   - **Anno**: propone l'anno attuale del sistema.
+   - **Numero distinta**: numerazione progressiva della distinta.
+   - **Data emissione**: propone la data odierna.
+3. Compila i campi obbligatori della testata:
+   - **Banca**: inserire il codice di sottoconto dell'anagrafica banca sulla quale emettere la distinta.
+   - **Conto corrente**: compilato automaticamente sulla base dell'anagrafica banca collegata al sottoconto.
+   - **Note iniziali**: campo libero per eventuali annotazioni (non utilizzato nello standard).
+   - **Note finali**: utilizzato nella contabilizzazione per valorizzare la descrizione del movimento contabile della banca.
+4. Imposta eventuali opzioni aggiuntive:
+   - **Imponi questa data valuta beneficiario**: definisce la data valuta del beneficiario nel tracciato telematico.
+5. Controlla i flag di stato della distinta:
+   - **Stampato**: non gestito automaticamente dal programma.
+   - **File emesso**: aggiornato automaticamente dopo la creazione del file telematico.
+6. Seleziona le partite da pagare:
+   - Premi il pulsante **> Crea un pagamento dalle partite** per selezionare le partite contabili da chiudere.
+   - Attenzione all'uso del flag *visualizzazione partite percipienti*: la gestione del pagamento deve avvenire dal modulo percipienti.
+   - Il flag *Imponi banca d'appoggio dall'anagrafica del fornitore* permette di utilizzare la banca predefinita nel fornitore.
+7. Modifica, se necessario, i valori di pagamento in griglia.
+   - È possibile inserire pagamenti parziali o aggiungere righe manuali.
+   - Attenzione: l'aggiunta manuale può causare discrepanze nel saldo contabile se non gestita correttamente.
+8. Controlla le **Note** in griglia: vengono compilate automaticamente con i riferimenti delle partite pagate e saranno riportate in contabilità generale.
+
+:::tip ATTENZIONE
+Sulla testata della distinta è presente un flag **Autorizzato** per consentire la creazione del tracciato XML ed eseguire il pagamento. Il flag memorizza l'utente e la data di autorizzazione. Può essere attivato di default accedendo alla form **Parametri pagamenti fornitori** e attivando il flag *Autorizzato di default*.
+:::
+
+9. **Premi il pulsante Creazione file SEPA** per generare automaticamente un tracciato .xml della lista dei pagamenti ed archiviarlo automaticamente nel documentale. Puoi scaricare il file dal documentale per la successiva impostazione sui sistemi corporate banking, anzichè dover reinserire i pagamenti manualmente.
+
+10. Premi il bottone **Documenti**, nel gruppo Document manager per accedere al documentale con l'allegato .xml Da dentro la form del documentale premi poi il bottone **Salva allegato** per scaricare la copia sul PC locale.
+
+#### Pulsanti specifici
+
+> **Nuovo pagamento**: Inserisce manualmente una riga di pagamento fornitore.
+
+> **Salva**: Salva la testata della distinta dopo aver inserito il tipo di pagamento e il sottoconto di banca.
+
+> **Cancella pagamenti selezionati**: Cancella i pagamenti fornitori creati manualmente o da creazione pagamento da partite.
+
+> **Crea un pagamento dalle partite**: Attivabile dopo il salvataggio della testata, acquisisce i dati dall'archivio partite.
+
+> **Documenti**: Pulsante per il collegamento alla gestione documentale.
+
+
 ---
 
-该掩码用于创建新的支付清单，以及修改/查看已保存的清单。
+### **VIDEO TUTORIALS**
 
-在第一个组合框中用户必须选择清单的参考支付类型。对其他字段程序会建议系统的当前年份和清单的顺序编号：当前日期将作为发布日期。
-
-在**银行**字段中，一般需要输入执行清单的银行明细账目代码：必须具有与银行登记的关联，因为以电子形式发送意大利国内转账支付的跟踪时，需要参考CIN (意大利银行内部控制码)/ ABI（意大利银行协会编码）/CAB（意大利银行初始码）/往来账户。在支付记账方面，没有特别的要求：该明细账目可以是会计科目表中的任何一个明细账目。
-
-根据与插入的明细账目关联的银行登记，程序将自动填写往来**账户**字段：也可以手动插入/修改。
-
-**初始票据**字段是支付票据的选填字段，不是标准选项。
-
-**最终票据**字段用于支付记账，对银行明细账目的会计转移的详细说明进行计价。
-
-**收款人起息日**标记用于设定电子版跟踪中支付收款人的起息日：若没有指明日期，将使用当前日期。如果该标记中没有设置起息日，将使用到期日。
-
-右侧有两个有关清单状态的标记：“打印”标记不是由程序自动管理的，而“已发布的文件”标记将根据电子文件的创建而更新。在没有重新设置清单标记的情况下，也可以重新创建文件。
-
-到期值支付的按钮用于对支付详情进行管理：根据清单中的支付，选择待结账的到期值。该掩码对于从多种筛选条件和标记中选择到期值非常实用：但不建议使用“查看受益人到期值”标记，因为为了获得扣减证明，支付管理必须从受益人模块执行。“从供应商登记设置银行”标记的含义是把银行网格支付中供应商登记的默认银行作为支付的收款人银行，这与在分类账记录中创建的到期值银行无关。第二个标记可以在默认参数模块中预定义。
-
-可以修改网格中插入的支付，以获得部分支付以及手动添加支付行。在第二种情况下，插入的明细账目会计余额和分类账余额可能会产生差异，因为如果没有在模板中设置“开始到期值”标记，支付记账过程将忽略与开始到期值不同的余额部分。补贴字段只能是应收。
-
-最后，在网格中还有**票据**字段：根据已结账的参考文档中已支付的到期值，程序将自动填写该字段。票据将被放入总分类账的支付行中，与相关明细账目对应起来。
-
-功能导航栏：功能导航栏为菜单窗体，包含可能需要的操作。当前选项卡的功能如下：
-
- 
-
-
-
-| RibbonFunction | RibbonMeaning |
-| --- | --- |
-| 新支付  | 用于手动插入一个供应商支付行 |
-| 保存 | 插入支付方式和银行明细账目后，用于保存新供应商支付的标头 |
-| 删除选中支付 | 删除手动创建的供应商支付，或者由到期值创建的支付 |
-| 由到期值创建支付  | 标头保存后，用于收集到期值数据，创建支付 |
-| 从……编号 |  |
-| 文档 | 用于连接文档管理 |
+<iframe width="560" height="315" src="https://www.youtube.com/embed/CDCVq0iC29s" title="YouTube video player" frameborder="0" allowfullscreen= "true"></iframe>
 
 
 

@@ -1,6 +1,6 @@
 ---
 title: Distinte
-sidebar_position: 5
+sidebar_position: 3
 ---
 
 La form della ricerca distinte 
@@ -33,7 +33,7 @@ La form della ricerca distinte
 
 - **Stampato:** se attivato, questo flag estrae solo distinte stampate (o comunque con flag *stampato* "true")
 
-- **Contabilizzata:** se attivato, questo flag estrae solo distinte contabilizzate attraverso [l'apposita procedura](/docs/treasury/bills-holding/accounting/lists-accounting/accounting) (o comunque con flag *contabilizzata* "true")
+- **Contabilizzata:** se attivato, questo flag estrae solo distinte contabilizzate attraverso [l'apposita procedura](/docs/treasury/bills-holding/accounting/lists-accounting) (o comunque con flag *contabilizzata* "true")
 
 
 ## Griglia dei risultati
