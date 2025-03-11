@@ -1,11 +1,11 @@
 ---
-title: Ricerca dati nelle form lettura/scrittura
+title: Ricerca e inserimento dati
 sidebar_position: 3
 ---
 
-Queste form permettono di trovare i record inseriti precedentemente per *visualizzarli*, *modificarli* , *cancellarli*, ma anche di aggiungere record **Nuovi**, se l'utente ha i **diritti necessari** per queste operazioni.
+Le form permettono di trovare i record inseriti precedentemente per *visualizzarli*, *modificarli* , *cancellarli*, ma anche di aggiungere record **Nuovi**, se l'utente ha i **diritti necessari** per queste operazioni.
 
-Le form di ricerca di lettura/scrittura si suddividono in più sezioni:
+Una form si suddivide in più sezioni:
 
 ### 1. Barra di ricerca avanzata
 

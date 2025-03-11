@@ -93,7 +93,7 @@ In questa griglia è possibile impostare un automatismo che rinvia tutte le scad
 
 *Esempio*: compilando come nell'immagine tutte le scadenze del mese di agosto saranno posticipate al 5 settembre.
 
-Inserendo anche una riga Dicembre - 7 - Gennaio, le scadenze del mese di dicebre sarebbero posticipate al giorno 7 di gennaio.
+Inserendo anche una riga Dicembre - 7 - Gennaio, le scadenze del mese di dicembre sarebbero posticipate al giorno 7 di gennaio.
 
 ### Sezione inferiore
 

@@ -3,36 +3,61 @@ title: Patch notes Versione 545
 sidebar_position: 1
 ---
 
-### Patch 545.1-0111- 18/12/2024
-> - SH - Errore in fase di apertura "Regime Fiscale" ( TT05028/24)
-> - Scm: Errore della nota di consegna dell'acquisto durante il caricamento e il rollback #TT05306/24
-> - SCS – Se la Società prevede la Gestione Controlling (con l’omonimo flag nella tabella Società), l’Evasione di un DDT o di un Rientro all’interno di una fattura riporta per date di competenza le date dello scarico documento, se non presente le date del documento (#TT05126/24)
-> - FI - problemi in fase di annullamento stampa definitiva liquidazione ( TT04859/24)
-> - FI - la stampa definitiva della liquidazione iva periodica ora memorizza il saldo a credito nel campo del credito precedente della form di Dichiarazione iva periodica, non più in quello delle Variazioni iva periodo precedente. (#TT03694/24)
+### Patch 545.1-0115- 07/03/2025
+> - FI - revisione filtro stampa liquidazione iva periodica con periodicità trimestrale e calcolo acconto trimestrale (#TT00866/25)
+> - FI - Errato calcolo liquidazione iva  ( #TT03165/24)
+> - FI - Stampa Liquidazione Iva periodica - non viene riportato il registro iva acquisti nella stampa ( TT01236/25)
 
+### Patch 545.1-0114- 28/02/2025
+> - Bizlink – Import excel fatture – Resi non obbligatori prezzo, unità di misura e iva per poter importare le righe nota (#TT00639/25)
+> - FI - revisione filtro stampa liquidazione iva periodica con periodicità trimestrale e calcolo acconto trimestrale (#TT00866/25)
+> - FI - Errato calcolo liquidazione iva  ( #TT03165/24)
+> - Ottimizzazione stampa “Brogliaccio di magazzino”
+> - PR - Campo "Progresso" nel modulo Gestione della liquidità ( TT02060/24). Changes were made to field progressive of form Gestione della liquidità. The profile can be affected by the changes.
+> - FI - revisione contabilizzazione assestamenti con opzione ‘singola registrazione’, ripristino a null del campo di link ‘-1’ quando la registrazione non può essere salvata causa squadrature
+> - FI - Unlimited digit number on currency adjustment procedure ( TT00991/25). Changes were made in exchange field of form CurrencyAdjustmentAccounting.The profile can be affected by the changes.
+> - FI – partial payments for vat delayed ( TT01013/25)
+
+### Patch 545.1-0113- 14/02/2025
+> - FI - revisione stampa ‘Differenza partite aperte saldo contabile’, visualizzazione risultati anche per stampa ‘dettagliata’ (#TT00121/24)
+> - WM - fix verifica giacenza per ogni scarico tra data scarico e data corente (#TT02878/23)
+> - Aog -  fix per la finestra di creazione ordine di acquisto da richiesta di acquisto - quando si chiudeva la finestra e esisteva un prototipo ordine selezionato si creava cmq un ordine anche se la procedura non era lanciata(ref #TT00335/25)
+> - SCM - La creazione della fattura di acquisto da file Sdi non riporta più le impostazioni di pagamento dell’anagrafica fornitore (#TT04209/24)
+> - MPS - Corretto bug nel rilascio degli ordini pianificati di conto lavoro nei quali non veniva inserita correttamente l’UM di misura nel caso di articoli gestiti con UM alternativa (#TT05068/24)
+> - FI - F20215 - errore compensazione veloce (#TT00415/25)
+> - Caricamento NIR - risolvere il problema quando la registrazione ha contrapartita di carico - proporre lotti(#TT00472/25)
+> - MPS - Ora la data di consegna proposta negli ordini pianificati nati da articoli gestiti a scorta tramite la procedura MRP e schedulazione tiene conto correttamente del lead time di approvvigionamento (#TT03597/24)
+> - WM - Corretto errore nella generazione RDA da Sottoscorta che troncava la descrizione degli articoli se superiore a 20 caratteri (#TT00136/25)
+> - SCM - Corretto errore che non aggiornava correttamente lo stato di evasione della Richiesta di Acquisto a seguito dell’evasione forzata di alcune righe (#TT00397/25)
+> - Rilascio stampa Certificazioni Uniche 2025
+
+### Patch 545.1-0111- 18/12/2024
+> - SH - Errore in fase di apertura "Regime Fiscale" (#TT05028/24)
+> - SCM - Errore della nota di consegna dell'acquisto durante il caricamento e il rollback #TT05306/24
+> - SCS - Se la Società prevede la Gestione Controlling (con l’omonimo flag nella tabella Società), l’Evasione di un DDT o di un Rientro all’interno di una fattura riporta per date di competenza le date dello scarico documento, se non presente le date del documento (#TT05126/24)
+> - FI - problemi in fase di annullamento stampa definitiva liquidazione (#TT04859/24)
+> - FI - la stampa definitiva della liquidazione iva periodica ora memorizza il saldo a credito nel campo del credito precedente della form di Dichiarazione iva periodica, non più in quello delle Variazioni iva periodo precedente (#TT03694/24)
 
 ### Patch 545.1-0110- 28/10/2024
-> - MES – Corretto bug negli ordini di produzione in merito al pulsante completamento dati ordine. Il problema si verificava nel caso in cui in distinta base ci fossero più righe dello stesso articolo tra i materiali di un articolo padre senza indicazione della priorità. (#TT05019/24)
+> - MES - Corretto bug negli ordini di produzione in merito al pulsante completamento dati ordine. Il problema si verificava nel caso in cui in distinta base ci fossero più righe dello stesso articolo tra i materiali di un articolo padre senza indicazione della priorità (#TT05019/24)
 > - PR - nel modulo Anticipi Incassi, procedura di contabilizzazione incassi, gestione del parametro di descrizione movimento (#TT04923/24)
 
 ### Patch 545.1-0109- 21/10/2024
 > - ARM - Workflow: Passaggio di stato condizionato(#TT04384/24)
 > - SD - Ottimizzazione della griglia 'Note articolo-cliente' del tab Varie dell'anagrafica cliente (#TT01967/24)
-> - MPS - Corretto bug in schedulazione generale nel caso in cui si schedulasse un articolo con in distinta base un materiale alternativo con quantità null. (#TT04639/24)
+> - MPS - Corretto bug in schedulazione generale nel caso in cui si schedulasse un articolo con in distinta base un materiale alternativo con quantità null (#TT04639/24)
 > - Nell’evasione ordini fornitori in bolle e fatture acquisto senza ricalcolo analitica, revisione assegnazione centri su priorità magazzini (#TT01624/24)
 > - Revisione import excel delle fatture di vendita, fix del lookup del campo ‘Cedente’
-> - SH – autorefresh dashboards (TT04763/24)
-> - Bizlink – esportazione Piteco – filtro per pagamenti contabilizati
+> - Bizlink - esportazione Piteco - filtro per pagamenti contabilizati
 
 ### Patch 545.1-0108- 24/10/2024
 > - SD - nella contabilizzazione fatture di vendita, esclusione righe con spese incasso 0 (#TT01642/24)
-> - Add new fields on rollback dunning letters
-> - SCS – Corretto errore negli Ordini di Conto lavoro che moltiplicava le quantità dei materiali da impiegare (#TT03904/24). 
-> - SCM – Corretto errore che non permetteva l’inserimento multiplo di articoli nelle Richieste di Offerta (#TT04334/24).
-> - WM– Corretto bug nella procedura calcolo costo articolo nel caso in cui venisse inserito un movimento di magazzino con causale considera movimenti a zero e con un costo negativo. (#TT00305/24)
+> - SCS - Corretto errore negli Ordini di Conto lavoro che moltiplicava le quantità dei materiali da impiegare (#TT03904/24) 
+> - SCM - Corretto errore che non permetteva l’inserimento multiplo di articoli nelle Richieste di Offerta (#TT04334/24)
+> - WM- Corretto bug nella procedura calcolo costo articolo nel caso in cui venisse inserito un movimento di magazzino con causale considera movimenti a zero e con un costo negativo (#TT00305/24)
 > - PR - corretto errore in fase di contabilizzazione distinta anticipi incassi che raddoppiava i valori ( #TT01262/24)
-> - CO - skipping FA_Pagam rows with both importo than percentage 0 ( TT04477/24)
-> - MES – Corretto bug nello scarico delle dichiarazioni di produzione inerente al consumo del semilavorato prodotto nella fase precedente nel caso in cui questa fosse la prima ed esterna. (#TT03883/24)
+> - CO - skipping FA_Pagam rows with both importo than percentage 0 (#TT04477/24)
+> - MES - Corretto bug nello scarico delle dichiarazioni di produzione inerente al consumo del semilavorato prodotto nella fase precedente nel caso in cui questa fosse la prima ed esterna (#TT03883/24)
 
 ### Patch 545.1-0107- 26/09/2024
 
@@ -51,7 +76,6 @@ sidebar_position: 1
 > - CO - revisione cancellazione registrazioni rimanenze nelle chiusure infrannuali (#TT03976/24)
 > - CO - Aggiunta la Colonna costo variante nel calcolo costi. Questa riporta i valori presenti nel tab varianti dell’anagrafica articolo (#TT03057/24 - #TT03043/24)
 > - SCS - È possibile salvare il rientro di conto lavoro senza indicare i lotti nei materiali se il flag “Lotti e numeri seriali obbligatori” presente nei parametri di conto lavoro è disabilitato.  (#TT03989/24)
-> - WM - bug fix in item matrix dimension (#TT00607/24)
 
 ### Patch 545.1-0105- 05/09/2024
 
@@ -206,9 +230,9 @@ sidebar_position: 1
 
 > - SH - La colonna ‘Destinazione’ della griglia ‘Elenco destinazioni’ del tab ‘Consegna’ dell’Anagrafica contatto è stata adattata per contenere fino a 80 caratteri, uguale limite della ‘Ragione sociale’ del contatto (#TT03307/23) 
 
-> - SCM - Carico a Mazzino- risolto l'inserimento del valore del movimento di magazzino quando la riga documento ha l'unità di misura Alternativa ma quantità alternativa 0 (rif.ticket 1740/23) 
+> - SCM - Carico a Mazzino- risolto l'inserimento del valore del movimento di magazzino quando la riga documento ha l'unità di misura Alternativa ma quantità alternativa 0 (#TT01740/23) 
 
-> - SCM - Carico a Mazzino- risolto l'inserimento del valore del movimento di magazzino quando la riga documento ha l'unità di misura Alternativa ma quantità alternativa 0  (rif.ticket 3069/23) 
+> - SCM - Carico a Mazzino- risolto l'inserimento del valore del movimento di magazzino quando la riga documento ha l'unità di misura Alternativa ma quantità alternativa 0  (#TT03069/23) 
 
 > - CO - nella contabilizzazione rimanenze delle chiusure infrannuali, valorizzazione della descrizione movimento per tutte le registrazioni create (#TT03495/23) 
 
@@ -909,7 +933,7 @@ Revisione evasione ordine per ripristino iva ordinaria nel caso in cui non ci si
 
 ### Patch 545.1-0061- 28/10/2022 
 
-> - SD - Nello step Controllata della fatturazione elettronica, verifica della lunghezza della descrizione articolo per blocco se superiore ai 1000 caratteri disponibili (rif.ticket 2865/22) 
+> - SD - Nello step Controllata della fatturazione elettronica, verifica della lunghezza della descrizione articolo per blocco se superiore ai 1000 caratteri disponibili (#TT02865/22) 
 
 > - MPS  Corretto bug in schedulazione generale nel caso in cui venissero schedulati articoli di tipo fittizio (#TT02733/22)
 
@@ -1579,7 +1603,7 @@ Nelle fatture di vendita, in caso di creazione file Sdi a prezzi netti, disabili
 
 > - SD - Nel caso di inserimento di un Prezzo ivato negativo in riga Fattura, anche il Prezzo sarà negativo (#TT00944/22) 
 
-> - SD - Evasione- nella lista documenti da evadere si vedono anche i documenti aperti in modifica da altri utenti, se selezionati viene visualizzato il messaggio con l’utente che ha aperto il documento (rif.ticket 542/22) 
+> - SD - Evasione- nella lista documenti da evadere si vedono anche i documenti aperti in modifica da altri utenti, se selezionati viene visualizzato il messaggio con l’utente che ha aperto il documento (#TT0542/22) 
 
 > - MPS - Le commesse di produzione vengono generate mantenendo l'ordine delle righe dell'ordine cliente, nel caso in cui non vi sia nessun raggruppamento nei parametri MPS (#TT00911/22) 
 
@@ -1771,17 +1795,17 @@ Nelle fatture di vendita, in caso di creazione file Sdi a prezzi netti, disabili
 
 > - FI - manage the case when maturity remains locked in reservation 
 
-> - Storno DDT di acquisto- Data di arrivo e Data carico nello storno non sono valorizzate (rif.ticket 2791/21) 
+> - Storno DDT di acquisto- Data di arrivo e Data carico nello storno non sono valorizzate (#TT02791/21) 
 
-> - SD - in creazione file Sdi delle fatture di vendita, inserimento del numero ddt formattato (se presente) nel tag dei riferimenti ddt (rif.ticket 111/22) 
+> - SD - in creazione file Sdi delle fatture di vendita, inserimento del numero ddt formattato (se presente) nel tag dei riferimenti ddt (#TT0111/22) 
 
-> - Rientro Conto Lavoro- Migliorata procedura di calcolo dei materiali da consegnare (rif.ticket 87/22) 
+> - Rientro Conto Lavoro- Migliorata procedura di calcolo dei materiali da consegnare (#TT087/22) 
 
 > - SCS - Valorizzazione Rientri- Nei parametri della Valorizzazione Rientri il tipo fattura non filtrava per divisione. 
 
-> - SD - Fix error on cancellation of sales order when are rows in lots unloading link table (rif.ticket 121/22) 
+> - SD - Fix error on cancellation of sales order when are rows in lots unloading link table (#TT0121/22) 
 
-> - SD - Fix error on lots unloading when make transfer from sales delivery note to sales invoice (rif.ticket 122/22) 
+> - SD - Fix error on lots unloading when make transfer from sales delivery note to sales invoice (#TT0122/22) 
 
 > - SCS - Se un DDT di acquisto o un documento di trasporto hanno articoli con diversa causale di magazzino e vengono contabilizzati con la procedura di Contabilizzazione fatture da ricevere, creano correttamente la registrazione contabile (#TT00104/22) 
 
@@ -1797,7 +1821,7 @@ Nelle fatture di vendita, in caso di creazione file Sdi a prezzi netti, disabili
 
 > - MES - Gestione Segnalazioni- cambio della logica di valorizzazione del carico per produzione. Ora la valorizzazione viene calcolata in base al tipo costo proposto della causale di magazzino di carico per produzione (2895/21) 
 
-> - SCM - Evasione DDT in Fattura- modificando i prezzi in fattura la modifica viene riportata anche in DDT e nel movimento di magazzino (rif.ticket 1967/21) 
+> - SCM - Evasione DDT in Fattura- modificando i prezzi in fattura la modifica viene riportata anche in DDT e nel movimento di magazzino (#TT01967/21) 
 
 > - SCM - Fattura di Acquisto- Risolto il settaggio di magazzino e causale sulle righe articolo in caso di import DDT di Acq in una nuova fattura(#TT03269/21) 
 
@@ -1817,7 +1841,7 @@ Nelle fatture di vendita, in caso di creazione file Sdi a prezzi netti, disabili
 
 > - WM - Prototipi- Rivisto calcolo costo manodopera e macchina. Il costo manodopera è la somma dei costi uomo e dei costi di attrezzaggio uomo di tutte le fasi inserite nel prototipi, anche delle fasi inserite nei componenti di conto lavoro che non abbiano associato un terzista con un listino di conto lavoro.  
 
-Il costo macchina è la somma dei costi macchina e dei costi di attrezzaggio macchina di tutte le fasi inserite nel prototipi, anche delle fasi inserite nei componenti di conto lavoro che non abbiano associato un terzista con un listino di conto lavoro.  Il calcolo del costo di manodopera e macchina tengono conto delle quantità per fase, delle quantità di componente nella distinta base e dei lotti di produzione inseriti per la definizione del costo nel prototipo (rif.ticket 173/21) 
+Il costo macchina è la somma dei costi macchina e dei costi di attrezzaggio macchina di tutte le fasi inserite nel prototipi, anche delle fasi inserite nei componenti di conto lavoro che non abbiano associato un terzista con un listino di conto lavoro.  Il calcolo del costo di manodopera e macchina tengono conto delle quantità per fase, delle quantità di componente nella distinta base e dei lotti di produzione inseriti per la definizione del costo nel prototipo (#TT0173/21) 
 
 ### Patch 545.1-0031- 14/01/2022 
 
@@ -1929,7 +1953,7 @@ Il costo macchina è la somma dei costi macchina e dei costi di attrezzaggio mac
 
 > - WM - Extra Data- è stata implementata la propagazione degli Extra Data dalla testata dell'Ordine Cliente alla testata dei Picking (#TT02973/21) 
 
-> - SD - Note Codificate- Corretta importazione note codificate nelle righe documento che troncava a 255 caratteri (rif.ticket 2999/21) 
+> - SD - Note Codificate- Corretta importazione note codificate nelle righe documento che troncava a 255 caratteri (#TT02999/21) 
 
 > - SD - Risoluzione errore in fase di generazione commessa da ordine cliente (#TT02366/21) 
 
@@ -1949,7 +1973,7 @@ Il costo macchina è la somma dei costi macchina e dei costi di attrezzaggio mac
 
 ### Patch 545.1-0028- 08/11/2021 
 
-> - Fix SalesInvoice duplication problem (rif.ticket 2853/21) 
+> - Fix SalesInvoice duplication problem (#TT02853/21) 
 
 > - WM - Aggiunta la possibilità di filtrare per lotto con il simbolo '%' nella visualizzazione giacenza. Tale filtro è passato anche alla stampa (#TT02844/21) 
 
@@ -1997,7 +2021,7 @@ Il costo macchina è la somma dei costi macchina e dei costi di attrezzaggio mac
 
 > - WM - Item- Modificato comportamento web publishing in anagrafica articoli. Il campo è MGAA_WEBIsDispo, ogni volta che viene modificato ci permette ora di salvare (#TT02737/21 ) 
 
-> - PM - Risolto apertura del progetto che non visualizzava l'intera struttura WBS del progetto (rif.ticket 2525/21) 
+> - PM - Risolto apertura del progetto che non visualizzava l'intera struttura WBS del progetto (#TT02525/21) 
 
 ### Patch 545.1-0026- 14/10/2021 
 
@@ -2007,7 +2031,7 @@ Il costo macchina è la somma dei costi macchina e dei costi di attrezzaggio mac
 
 > - SD - è possibile inserire nuove righe con magazzino e causale diversa in ddt di vendita già scaricati (#TT01950/21) 
 
-> - Analisi Disponibilità- Risolto errata considerazione delle disponibilità in caso di documenti di fabbisgono e offerta con la stessa data (rif.ticket 2735/21) 
+> - Analisi Disponibilità- Risolto errata considerazione delle disponibilità in caso di documenti di fabbisgono e offerta con la stessa data (#TT02735/21) 
 
 > - WM - By creating a lot code with the DDT Number+Generic Field+ProgressiveNumber, the generated lot code does not have the DDT number inside (#TT02455/21) 
 
@@ -2238,7 +2262,7 @@ Il costo macchina è la somma dei costi macchina e dei costi di attrezzaggio mac
 
 >> - MRP- Correzione dell’errore di timeout uscente lanciando la procedura MRP dalla tab Commesse (#TT01900/21) 
 
-> - SD - Listini Vendita- Creazione Listini Vendita- Aggiornato filtro per data validità del listino di origine per le diverse Culture del database (rif.ticket 2107/21) 
+> - SD - Listini Vendita- Creazione Listini Vendita- Aggiornato filtro per data validità del listino di origine per le diverse Culture del database (#TT02107/21) 
 
 > - FI - fixed asset- Fix Project Filter on fixed assets reports for Controlling case (#TT02114/21) 
 
@@ -2318,7 +2342,7 @@ Il costo macchina è la somma dei costi macchina e dei costi di attrezzaggio mac
 
 >> - Se è specificata la  Data inizio validità \< = Al vengono visualizzati tutti i gli articoli dei listini con data inizio validità strettamente minore o uguale a  Data inizio validità \< = Al e con data fine validità NULL oppure maggiore uguale a  Data inizio validità \< = Al. 
 
->> - Se è specificata  data inizio validità \< = Al e  data fine validità \< = Al vengono visualizzati tutti i gli articoli dei listini con data inizio validità strettamente minore o uguale a Data inizio validità \< = Al e con data fine validità strettamente maggiore o uguale a  data finevalidità \< = Al.  (rif.ticket 2004/21) 
+>> - Se è specificata  data inizio validità \< = Al e  data fine validità \< = Al vengono visualizzati tutti i gli articoli dei listini con data inizio validità strettamente minore o uguale a Data inizio validità \< = Al e con data fine validità strettamente maggiore o uguale a  data finevalidità \< = Al.  (#TT02004/21) 
 
 ### Patch 545.1-0018- 28/06/2021 
 
@@ -2416,7 +2440,7 @@ Corretta creazione attività dichiarata come conferma del periodo richiesto come
 
 > - MPS - Ordini pianificati- Errore su dimensione campo superata su Utente (#TT01633/21) 
 
-> - Tabella Provincie- Aggiornato il codice di Imperia (rif.ticket 1570/21) 
+> - Tabella Provincie- Aggiornato il codice di Imperia (#TT01570/21) 
 
 > - MES - Correzione dell'errore presente nell'inserimento di una fase nella Modifica Segnalazione relativa ad un Ordine di Produzione (#TT01617/21) 
 
@@ -2596,7 +2620,7 @@ Corretta creazione attività dichiarata come conferma del periodo richiesto come
 
 ### Patch 545.1-0014- 23/04/2021 
 
-> - BizLink- Importazioni on Demand- Realizzata importazione degli ordini clienti da file Excel (rif.ticket 969/21) 
+> - BizLink- Importazioni on Demand- Realizzata importazione degli ordini clienti da file Excel (#TT0969/21) 
 
 > - FI - stampa liquidazione iva periodica- revisione calcolo saldo da riportare in tabella Versamenti iva per stampa definitiva gennaio, quando il credito dell'anno precedente è solo in tabella Dichiarazione iva 
 
@@ -2665,7 +2689,7 @@ Corretta creazione attività dichiarata come conferma del periodo richiesto come
 
 > - MPS - Schedulazione generale- Le commesse con Approvvigionamento di Acquisto non venivano schedulate (#TT974/21) 
 
-> - ARM - Restrizioni- Risolto exception all'apertura con doppio click della Filter Expression della restrizione (rif.ticket 2080/20) 
+> - ARM - Restrizioni- Risolto exception all'apertura con doppio click della Filter Expression della restrizione (#TT02080/20) 
 
 > - PR - -Cash flow- Revisione calcolo ordini fornitori per UM alternativa (#Ticket 611/21) 
 
@@ -2673,7 +2697,7 @@ Corretta creazione attività dichiarata come conferma del periodo richiesto come
 
 > - CRM - Newsletter -problem with newsletter when distribution list has more than 50 members- extend limitation 
 
-> - BizLink - Importazioni on Demand- Realizzata importazione degli ordini clienti da file Excel (rif.ticket 969/21) 
+> - BizLink - Importazioni on Demand- Realizzata importazione degli ordini clienti da file Excel (#TT0969/21) 
 
 > - SH - Fluentis Query Studio- Sql syntax highlight parser fix 
 
@@ -2729,25 +2753,25 @@ Corretta creazione attività dichiarata come conferma del periodo richiesto come
 
 > - Crm - Newsletter- merge fields of Newsletter Template are not working- when a template with merge fields was used in the Newsletter form, fields used in the template were not loaded 
 
-> - SD - Fatture di Vendita- XML della fatturazione elettronica, nel tag Allegati del file XML vengono inseriti tutti gli attachment che hanno prefisso Allegato_, è stato inserito questo vincolo per dare una regola di quali file mettere negli allegati tra tutti quelli collegati alla fattura. Importante non allegare file di dimensioni superiori ai 4.8 MB, meglio se molto più piccoli, in quanto lo SDI scarta i file con dimensioni superiori a 5 MB (rif.ticket 678/21) 
+> - SD - Fatture di Vendita- XML della fatturazione elettronica, nel tag Allegati del file XML vengono inseriti tutti gli attachment che hanno prefisso Allegato_, è stato inserito questo vincolo per dare una regola di quali file mettere negli allegati tra tutti quelli collegati alla fattura. Importante non allegare file di dimensioni superiori ai 4.8 MB, meglio se molto più piccoli, in quanto lo SDI scarta i file con dimensioni superiori a 5 MB (#TT0678/21) 
 
 > - WM / Registrazioni di magazzino legate al progetto- nel campo "progetto" della registrazione di magazzino, è possibile collegare la wbs del progetto. Il numero del progetto viene quindi visualizzato in tale campo e il dettaglio del progetto si visualizza del campo "progetto" in testata (#TT00881/21) 
 
 > - FI - EstrattoConto- Fix previous year balance calculation when stating period changement is performed without validation 
 
-> - SCS - Ordini di Conto Lavoro- Se l'ordine è di tipo Aperto, in evasione ordini nei rientri, verranno visualizzati gli ordini confermati con righe ordine stampate, mentre se l'ordine è di tipo Chiuso, in evasione ordini saranno visualizzati gli ordini stampati e confermati (rif.ticket 851/21) 
+> - SCS - Ordini di Conto Lavoro- Se l'ordine è di tipo Aperto, in evasione ordini nei rientri, verranno visualizzati gli ordini confermati con righe ordine stampate, mentre se l'ordine è di tipo Chiuso, in evasione ordini saranno visualizzati gli ordini stampati e confermati (#TT0851/21) 
 
 > - SD - risolto errore nella funzione di conferma della richiesta ferie 
 
 > - SCM - Correzione dell’inserimento della WBS di progetto nelle righe articolo di una richiesta di acquisto (#TT00780/21) 
 
-> - MPS Schedulazione Generale, I parametri vengono salvati dopo la prima esecuzione (rif.ticket 2239/20) 
+> - MPS Schedulazione Generale, I parametri vengono salvati dopo la prima esecuzione (#TT02239/20) 
 
 > - CO - scritture integrazione- add return after calling the custom stored 
 
 ### Patch 545.1-0010- 26/03/2021 
 
-> - SD - Fix SalesOrder- disabled tab Linked doucments (rif.ticket 2333/20) 
+> - SD - Fix SalesOrder- disabled tab Linked doucments (#TT02333/20) 
 
 > - FI - Estratto conto- Risolto problema stampa in cui le cross band line andavano da una pagina all'altra sovrascrivendo l'intestazione 
 
@@ -2755,7 +2779,7 @@ Corretta creazione attività dichiarata come conferma del periodo richiesto come
 
 > - SD - Offerte- Anomalie sulla generazione/associazione prototipi.(rif ticket 897/21) 
 
-> - WM - Scarico UDC- time optimization for loading unit unload (rif.ticket 246/21) 
+> - WM - Scarico UDC- time optimization for loading unit unload (#TT0246/21) 
 
 > - BI - Fix format field refresh 
 
@@ -2765,9 +2789,9 @@ Corretta creazione attività dichiarata come conferma del periodo richiesto come
 
 > - WM - Anagrafica Articoli (Pharma)- Fix visualizzazione Forma Galenica all'interno degli articoli (#TT828/21 ) 
 
-> - SCM - Creazione automatica Ordini- Creazione da Ordine Cliente, ora la descrizione riportata nell’ordine fornitore è la descrizione di anagrafica dell’articolo (rif.ticket 3156/20) 
+> - SCM - Creazione automatica Ordini- Creazione da Ordine Cliente, ora la descrizione riportata nell’ordine fornitore è la descrizione di anagrafica dell’articolo (#TT03156/20) 
 
-> - SD - Filtro di ricerca- risolto exception all'apertura della lista articoli nella lista della ricerca documenti (rif.ticket #TT00497/21) 
+> - SD - Filtro di ricerca- risolto exception all'apertura della lista articoli nella lista della ricerca documenti (#TT0#TT00497/21) 
 
 > - SD - Dichiarazione attività di progetto- modifica gestione data riferimento spese in inserimento manuale attività, revisione gestione flag ‘da rimborsare’ per ore viaggio nella creazione attività da interventi 
 
@@ -2775,7 +2799,7 @@ Corretta creazione attività dichiarata come conferma del periodo richiesto come
 
 > - Crm - Newsletter- Email Subject on newsletter- change the old load with the new load and also fix the business object name. TT00677/21 
 
-> - Scs - Ordini Conto Lavoro- nelle righe ordine il codice IVA viene proposto tenendo conto delle dichiarazioni di intento (rif.ticket 83/21) 
+> - Scs - Ordini Conto Lavoro- nelle righe ordine il codice IVA viene proposto tenendo conto delle dichiarazioni di intento (#TT083/21) 
 
 > - CO - make chiusure- When company works with controlling, then we add cdc rows at 0 for the accounts that are set 'not used in controlling' and have 'balancing timing' set (#To manage in balancing when running 'elaborazione periodi') 
 
@@ -2825,7 +2849,7 @@ Corretta creazione attività dichiarata come conferma del periodo richiesto come
 
 > - SD - Listini Vendita- Gestione listino, risolto ordinamento righe scaglioni in ordine crescente per quantità a valore (#TT#TT00396/21) 
 
-> - SD - Fatture di Vendita- Calcolo scadenze- Se l'imponibile degli articoli risulta minore alla somma degli imponibili riportati nelle righe pagamento di testata, viene bloccato il ricalcolo delle scadenze (che risulterebbero anche negative) e dato un messaggio che invita l'utente a cancellare le righe pagamento riferite ai DDT lasciando solo righe a % (rif.ticket 399/21) 
+> - SD - Fatture di Vendita- Calcolo scadenze- Se l'imponibile degli articoli risulta minore alla somma degli imponibili riportati nelle righe pagamento di testata, viene bloccato il ricalcolo delle scadenze (che risulterebbero anche negative) e dato un messaggio che invita l'utente a cancellare le righe pagamento riferite ai DDT lasciando solo righe a % (#TT0399/21) 
 
 > - WM - Duplica articoli- in fase di duplica articoli con i parametri MRP, viene riportato, se attivo, il flag "Proposta Ordini Pianificati senza crearli (#TT00776/21) 
 
@@ -2837,7 +2861,7 @@ Corretta creazione attività dichiarata come conferma del periodo richiesto come
 
 > - SD - export SDI- fix format in DatiTrasporto_DataOraRitiro- if in tag dataoraritiro the hour is with . change with -, so instead of 00.00.00 change in 00-00-00   
 
-> - SCM - Ordini fornitori e DDT di acquisto- Risolta eccezione generata muovendosi tra le righe di un ordine fornitore o di un DDT acquisto (Rif.ticket 473/21) 
+> - SCM - Ordini fornitori e DDT di acquisto- Risolta eccezione generata muovendosi tra le righe di un ordine fornitore o di un DDT acquisto (#TT0473/21) 
 
 > - PR - cash flow- changes for 'Gestione liquidità'- soluzione in patch 545.009 
 
@@ -2851,7 +2875,7 @@ Corretta creazione attività dichiarata come conferma del periodo richiesto come
 
 > - FI - advances accounting- value for this second automatic template is checking if template that opened partita had movement type 'split payment', in order to compare payment to invoice origin value (without vat) instead of looking at total invoice (with vat) Split payment invoices has maturities without vat inside  
 
-> - SCS - Listini Conto Lavoro- Risolta eccezione con le selezione multipla da help articoli (rif.ticket 680/21) 
+> - SCS - Listini Conto Lavoro- Risolta eccezione con le selezione multipla da help articoli (#TT0680/21) 
 
 > - FI - Calcolo interessi- modifica label  
 
@@ -2871,13 +2895,13 @@ Corretta creazione attività dichiarata come conferma del periodo richiesto come
 
 > - SD - Impostato formato europeo di data e ora per riferimento DDT dopo l’evasione in fattura (#TT00693/21) 
 
-> - SD - Fatture di Vendita- Calcolo scadenze- rivisto il calcolo delle scadenze e la proposta dei tipi pagamento nella creazione fatture da DDT. Se i DDT hanno tutti lo stesso tipo pagamento nella fattura non vengono riportati i pagamenti con imponibile, iva e spese, ma viene inserito il tipo pagamento a percentuale, in questo modo aggiungendo/cancellando/diminuendo valore nelle righe fattura (storno acconti, spese aggiuntive non di incasso, ecc..) il calcolo delle scadenze avviene sempre considerando il tipo pagamento in %. Se invece la fattura viene creata da DDT con pagamenti diversi viene aggiunta la riga con il pagamento di anagrafica del cliente e il 100% per tutte le modifiche fatte in fattura che porta l'imponibile degli articoli + spese ad essere maggiore alla somma degli imponibili riportati nelle righe pagamento di testata, se però l'imponibile degli articoli risulta minore alla somma degli imponibili riportati nelle righe pagamento di testata, viene bloccato il ricalcolo delle scadenze (che risulterebbero anche negative) e dato un messaggio che invita l'utente a cancellare le righe pagamento riferite ai DDT lasciando solo righe a % (rif.ticket 399/21) 
+> - SD - Fatture di Vendita- Calcolo scadenze- rivisto il calcolo delle scadenze e la proposta dei tipi pagamento nella creazione fatture da DDT. Se i DDT hanno tutti lo stesso tipo pagamento nella fattura non vengono riportati i pagamenti con imponibile, iva e spese, ma viene inserito il tipo pagamento a percentuale, in questo modo aggiungendo/cancellando/diminuendo valore nelle righe fattura (storno acconti, spese aggiuntive non di incasso, ecc..) il calcolo delle scadenze avviene sempre considerando il tipo pagamento in %. Se invece la fattura viene creata da DDT con pagamenti diversi viene aggiunta la riga con il pagamento di anagrafica del cliente e il 100% per tutte le modifiche fatte in fattura che porta l'imponibile degli articoli + spese ad essere maggiore alla somma degli imponibili riportati nelle righe pagamento di testata, se però l'imponibile degli articoli risulta minore alla somma degli imponibili riportati nelle righe pagamento di testata, viene bloccato il ricalcolo delle scadenze (che risulterebbero anche negative) e dato un messaggio che invita l'utente a cancellare le righe pagamento riferite ai DDT lasciando solo righe a % (#TT0399/21) 
 
 > - ARM- Fluentis Query Studio- use command timeout from configuration File 
 
 > - CRM - changes for Campaign 
 
-> - SD - Listini Vendita- Procedure- Creazione listini vendita- Modificando il tipo arrotondamento da utilizzare viene aggiornata la griglia degli articoli applicando l’arrotondamento corretto (rif.ticket 749/21) 
+> - SD - Listini Vendita- Procedure- Creazione listini vendita- Modificando il tipo arrotondamento da utilizzare viene aggiornata la griglia degli articoli applicando l’arrotondamento corretto (#TT0749/21) 
 
 > - Solved problem with ShiwftCode on Sepa Export 
 
@@ -2971,7 +2995,7 @@ Corretta creazione attività dichiarata come conferma del periodo richiesto come
 
 >> - è inserita la UM Prezzo viene utilizzata con priorità per la creazione dei listini  
 
-> - La categoria di sconto dell’articolo fornitore deve essere inserita obbligatoriamente nel file Excel (rif.ticket 605/21)  
+> - La categoria di sconto dell’articolo fornitore deve essere inserita obbligatoriamente nel file Excel (#TT0605/21)  
 
 > - FI - IBAN code- test del codice con un warning invece di un errore se non esiste un algoritmo di test per la nazione dell’iban stesso, es. Egitto (#TT00672/21) 
 
@@ -2983,7 +3007,7 @@ Corretta creazione attività dichiarata come conferma del periodo richiesto come
 
 > - FI - visualizzazione conti bug (#TT00323/21) 
 
-> - SCM - Creazione Ordini fornitori da ordini clienti- il filtro di ricerca degli ordini clienti considera correttamente lo stato degli ordini clienti (rif.ticket 2887/20) 
+> - SCM - Creazione Ordini fornitori da ordini clienti- il filtro di ricerca degli ordini clienti considera correttamente lo stato degli ordini clienti (#TT02887/20) 
 
 > - PR - filter in help scadenze in gestione anticipi and incassi (#TT03079/20) 
 
@@ -3005,7 +3029,7 @@ Corretta creazione attività dichiarata come conferma del periodo richiesto come
 
 > - SD - Modificato report lista fatture con spese bollo 
 
-> - SCM - Carico DDT e Fatture- Risolto calcolo costo articolo magazzino con spese ripartite (rif.ticket 55/21) 
+> - SCM - Carico DDT e Fatture- Risolto calcolo costo articolo magazzino con spese ripartite (#TT055/21) 
 
 > - SD - SalesOffer with Linked documents- convert into SalesOrder(ref ticket 279/21) 
 
@@ -3077,7 +3101,7 @@ Corretta creazione attività dichiarata come conferma del periodo richiesto come
 
 > - PR - fix crash creazione automatica pagamenti fornitori 
 
-> - Foundry- Rivisto esportazione prototipi (rif.ticket 513/21) 
+> - Foundry- Rivisto esportazione prototipi (#TT0513/21) 
 
 > - per localizzazione svizzera, gestione del regime iva in contabilizzazione fatt. Acquisto/vendita 
 
@@ -3091,13 +3115,13 @@ Corretta creazione attività dichiarata come conferma del periodo richiesto come
 
 > - SH - fix unique key exception in categoria cespiti 
 
-> - Form Evasione- Se si seleziona la riga da evadere propone la quantità da evadere se si toglie la selezione toglie la quantità da evadere (rif.ticket 454/21) 
+> - Form Evasione- Se si seleziona la riga da evadere propone la quantità da evadere se si toglie la selezione toglie la quantità da evadere (#TT0454/21) 
 
-> - SD - Duplicazione Offerte- risolto la duplica del check "Prezzo Manuale" (rif.ticket 178/21) 
+> - SD - Duplicazione Offerte- risolto la duplica del check "Prezzo Manuale" (#TT0178/21) 
 
 > - CRM - changes in Campaign 
 
-> - SD - Storno Fattura- Risolto la possibilità di modificare gli extradata nelle fatture di storno (rif.ticket 356/21) 
+> - SD - Storno Fattura- Risolto la possibilità di modificare gli extradata nelle fatture di storno (#TT0356/21) 
 
 > - SCS - Righe parzialmente evase- la riga non risulta essere evasa, il campo CLOA_FlgEv \= 0 
 
@@ -3245,11 +3269,11 @@ Corretta creazione attività dichiarata come conferma del periodo richiesto come
 
 > - CRM - Improve a advanced filter on Crm periodic Report (rif #TT00280/21) 
 
-> - File SDI in entrata- controllato che la lunghezza file non superi il valore presente in documentazione tecnica (rif.ticket 3112/20) 
+> - File SDI in entrata- controllato che la lunghezza file non superi il valore presente in documentazione tecnica (#TT03112/20) 
 
 > - Foundry - Prototipi Getti- risolto exception al salvataggio del prototipo 
 
-> - SD - risolto errata numerazione Fatture di vendita (rif.ticket 216/21) 
+> - SD - risolto errata numerazione Fatture di vendita (#TT0216/21) 
 
 > - SD - add green color for rows that are linked in request intervention or planned intervention (planned intervention must be linked to service or activities) 
 
