@@ -119,7 +119,8 @@ Il tipo conto idoneo verrà assegnato al sottoconto in questione direttamente ne
 
 <details>
 
-  <summary>Click per immagine</summary>
+  <summary>Click per visualizzare l'esempio</summary>
+
 ![](/img/it-it/finance-area/ledger-records/records/create-ledger-record/record-tab/image02.png)
 
 </details>
@@ -271,7 +272,6 @@ Un altro pulsante utile in questa sezione è il **Crea pagamenti estesi**:
   <summary>Click per visualizzare l'esempio</summary>
 
 ![](/img/it-it/finance-area/ledger-records/records/create-ledger-record/payments-tab/image08.png)
-
 
 </details> 
 
