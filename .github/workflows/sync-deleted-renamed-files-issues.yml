@@ -87,7 +87,7 @@ jobs:
             team_member=${team_usernames[$lang]}
             team_name="translation-team-${lang:0:2}"
 
-            if [ -n "$deleted_files" ]; then
+            if [ -n "$(echo -e "$deleted_files" | tr -d '[:space:]')" ]; then
               issue_body="The following files were deleted and need review for localization updates in **${lang}**:\n\n@fluentis-doc/${team_name}\n"
               for file in $deleted_files; do
                 issue_body+="- $file\n"
@@ -105,7 +105,7 @@ jobs:
               rm "$temp_file"
             fi
             
-            if [ -n "$renamed_files" ]; then
+            if [ -n "$(echo -e "$renamed_files" | tr -d '[:space:]')" ]; then
               issue_body="The following files were renamed/moved and need review for localization updates in **${lang}**:\n\n@fluentis-doc/${team_name}\n"
               for file in $renamed_files; do
                 issue_body+="- $file\n"
