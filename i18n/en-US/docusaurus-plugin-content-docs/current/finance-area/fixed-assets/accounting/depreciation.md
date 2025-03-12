@@ -1,22 +1,17 @@
 ---
-title: Depreciation
+title: Depreciation (Ammortamento)
 sidebar_position: 2
 ---
 
-At the opening of the mask it will be possible to go on to set reference year, record dates and accrual (the second one will correspond certainly to the end of accounting period of the reference year, while the first one could refer to the current year), accounting template of detection and grouping flag in a single record. Through this option all movements will be inserted into the same record and amounts, of the same detail account, will be grouped in an only one movement.
+Upon opening the form, you will proceed to set the reference year, the registration and competence dates (of which the second will certainly be the end of the fiscal year of the reference year while the first may be in the current year),
 
-RIBBON BAR: the ribbon bar represents the Form menu, that is the area on which it is possible to perform actions linked to the procedure in use. The possible features list is the following:
+the accounting reason for recording and the grouping flag into a single entry. With this option, all movements will be entered in the same entry and amounts pertaining to the same sub-account will be grouped into a single movement.
+
+![](/img/it-it/finance-area/fixed-assets/accounting/depreciation/image01.png)
 
 
 
-| Function | Meaning |
+| Function (Funzione) | Meaning (Significato) |
 | --- | --- |
-| Search | It searches the list of depreciation calculations performed. |
-| Depreciation | It performs the calculation for the selected lines. |
-| View Fixed Asset | It views the fixed asset register whose depreciation has been selected in grid. |
-
-
-
-
-
-
+| Search (Ricerca) | Searches the list of depreciation calculations performed. |
+| Depreciation (Ammortamento) | Performs the calculation for the selected lines. |

@@ -1,22 +1,16 @@
 ---
-title: Search
+title: Search (Ricerca)
 sidebar_position: 1
 ---
 
-RIBBON BAR: the ribbon bar represents the form menu, that is the area on which it is possible to perform actions. The possible features list is the following:
+In this form, it is possible to search for previously created account openings and proceed with the **insertion of a new closing (inserimento di una nuova chiusura).**
 
+For the detail fields of the header and the search grid, see **[Automatic Account Closing (Chiusura Automatica conti.)](/docs/finance-area/ledger-records/records/automatic-account-closing/search)**
 
+#### Specific buttons (Pulsanti specifici)
 
-| Function | Meaning |
-| --- | --- |
-| Search | Button to search a previous maturity value opening. |
-| New Opening | Button to create a new accounts opening. |
-| Edit Record | Button that enables the user to edit the opening record. It is active once that the user has selected an account opening. |
-| View | Button that enables the user to view the opening record. It is active once that the user has selected an account opening. |
-| Delete | Button that enables the user to delete the account opening. It is active once that the user has selected an account opening. |
-
-
-
-
-
-
+> **Search**: allows for the search of a previously made account opening.  
+> **New**: allows for the creation of a new account opening.  
+> **Modify**: enabled after selecting an account opening; allows the modification of the opening record.  
+> **View**: enabled after selecting an account opening; allows the viewing of the opening record.  
+> **Delete**: enabled after selecting an account opening; allows the deletion of the opening record.

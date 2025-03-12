@@ -1,29 +1,21 @@
 ---
-title: VAT 74ter Settlement
+title: VAT 74 ter settlement
 sidebar_position: 6
 ---
 
-Thanks to this report procedure it is possible to calculate the credit/debit VAT of the period of reference, both for ordinary system and 74 ter system.
+With this printing procedure, the calculation of the VAT credit/debit for the reference period is performed, both for the ordinary VAT regime and for the 74-ter regime.
 
-Once that the period and the year of reference are set (the period depends on the frequency of the periodic VAT settlement set in the accounting parameters) the user can decide on which register print the settlement; normally, this operation is made at the end of the selling register or on a dedicated summary register (suggested option).
+Once the reference period and year are set (where the period will be monthly or quarterly depending on the periodicity of the periodic VAT settlement set in the accounting parameters), it will be possible to define on which register the settlement should be printed: normally, the operation is carried out at the end of the sales register or on a dedicated summary register (recommended option).
 
-**Definitive print**: it changes the period of reference and makes it correspond to the one that just follows the last one that is definitive. The number of copies to be printed is disabled;
+**Definitive printed**: will modify the reference period to correspond to the one following the last one printed definitively and the number of copies to be printed will also be disabled;
 
-**Execution of definitive print preview**: it does not block the period and update counters; 
+**Execution of print preview (Esecuzione dell'anteprima di stampa) in definitive**: will not block the period and update the counters;
 
-**Execution of the print process**: it can block the accounting period and update the pages counter of the VAT registers Tab. (It is not necessary that the print process reaches a good conclusion, it can be a print on a file).
+**Execution of the printing process (Esecuzione del processo di stampa)**: physically will operate the block of the period in accounting and update the page counter of the VAT Registers table (and it is not relevant whether the printing process is successful or not, it could also be a print to file).
 
-RIBBON BAR: it represents the form menu, that is the area in which it is possible to perform actions. The list of features is the following:
+RIBBON BAR: represents the menu of the form in question, that is, the area where actions can be performed. The list of possible features in the current tab is outlined below:
 
-
-
-| Function | Meaning |
+| Function (Funzione) | Meaning (Significato) |
 | --- | --- |
-| Preview | Button to start the print preview of VAT 74 ter settlement. |
-| Print | Button to start the concrete print of the VAT 74 ter settlement. |
-
-
-
-
-
-
+| Preview (Anteprima) | Button to execute the print preview of the VAT settlement 74-ter. |
+| Print (Stampa) | Button to execute the physical print of the VAT settlement 74-ter. |

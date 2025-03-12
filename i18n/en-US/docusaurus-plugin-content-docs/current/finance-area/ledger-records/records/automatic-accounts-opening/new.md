@@ -1,43 +1,66 @@
 ---
-title: New
+title: New (Nuova)
 sidebar_position: 2
 ---
 
- 'Automatic Opening Accounts' procedure is one of the options that can be used to register activities starting balances: starting from the first balance closure, the following account openings are directly managed by the closing procedure. For this reason, the mask interest is low. This procedure only registers the opening ledger balances, not the re-opening of the related maturity values.
+The Automatic Account Opening procedure can be used as an alternative to a journal entry to be entered via the command **[Create Accounting Entry](/docs/finance-area/ledger-records/records/ledger-record)**, **to record the opening balances.**
 
-The procedure can create a 'new opening' whose functionalities are going to be explained in the following paragraphs.
+**Starting from the first closing of accounts, subsequent account openings can be managed directly from the closing procedure.**
 
-**Opening Date**: is the date of the operation. It does not have any link with the record date of the operation that is indicated at the bottom of the window.
+ 
 
-**Opening Number**: is a progressive number that is automatically managed.
+NOTE:
 
-**Description**: it enables the user to identify the operation as well as the notes.
+With this procedure, only the opening accounting balances are recorded, not the opening of the related accounting items.
 
-**Detail Account** and **Account Type**: they represent search-filters within the list of the chart of accounts.
-
-At the bottom of the mask it is necessary to set the **Record Date** and the **Accrual Date** that have to be assigned to the re-opening record.
-
-**Number**: it is assigned once that the accounting has been done.
-
-It is necessary to indicate the opening accounts template and the description of the movement to be assigned to the Journal.
-
-Once that these mandatory data has been set, it is possible to save the settings and to activate the whole list of the detail accounts: the next step is to start the detail account memorization for the re-opening accounts credit/debit detail account balance, with the re-opening amount in the currency, if it is necessary. Once that the credit/debit amounts correspond, it is possible to start the balance retrieve in the accounting: the user can open the same account opening in order to complete all data (this procedure is long and can last some days); it is possible even to create many different account openings, grouping them for active/passive or for customer/vendor.
-
-A rollback procedure is not included in the mask: it is simply necessary to delete the opening and the application asks delete confirmation of the related ledger record.
-
-RIBBON BAR: it represents the form menu, that is the area in which it is possible to perform actions. The list of features is the following:
+ 
 
 
 
-| Function | Meaning |
+
+
+**Opening Date (Data apertura)**: is the **processing date (data dell'elaborazione)**, it has no connection with the date of recording the operation to be indicated in the specific field at the bottom of the window;
+
+**Opening Number (Numero apertura)**: is a sequential number managed automatically;
+
+**Description**: allows the user to identify the operation, as well as the notes;
+
+**Account** and **Account type**: are search filters within the chart of accounts list;
+
+**Posting date** and **Competence date**: mandatory fields to be assigned to the opening entry;
+
+**Number**: will be assigned once the accounting is performed;
+
+**Account Opening Reason (Causale di apertura conti)** and **Movement due date**: to be assigned for the journal.
+
+Once these mandatory data are set, it will be possible to save the settings and activate the entire list of accounting subaccounts: the next phase will thus be to perform the memorization of each subaccount's opening debit or credit balance, with the potential opening amount in currency.
+
+![](/img/it-it/finance-area/ledger-records/records/automatic-accounts-opening/new/image01.png)
+
+ 
+
+Example (non-realistic)
+
+ 
+
+Only once the total debits and total credits match will it be possible to proceed with the recording of the balance recovery (otherwise, pressing the accounting command will display an error message).
+
+ 
+
+OPERATIONAL ADVICE:
+
+the user can reopen the same account opening process multiple times to complete all data (the operation might also be lengthy and take place over several days) before proceeding, or different account openings could be created, perhaps differentiating one for assets, another for liabilities, or for customers/suppliers, etc.
+
+The form does not provide a rollback procedure: you can simply delete the opening, and the application will ask for confirmation of the deletion of the related accounting entry.
+
+In the event that modifications are made to the details of the account opening AFTER its accounting, you can press the Create Opening Entry command again (in the ribbon bar) to update the previous accounting entry. A warning and confirmation message of the entry update will appear.
+
+
+
+| Function (Funzione) | Meaning (Significato) |
 | --- | --- |
-| Save | Button to save the header of the opening accounts; it is active once that the description and the accounting template has been inserted. |
-| Search | Button to search the list of accounts that the user wants to insert in the opening, through the 'detail account' and 'account type' fields. |
-| Create Accounts Opening Record | Button to create the opening accounts record. |
-| Open the Record of Accounts Opening | Button to open the opening record. |
-
-
-
-
-
-
+| Save (Salva) | Button to save the header of the account opening, activatable after entering the description and the accounting reason. |
+| Search (Cerca) | Button to search for the list of accounts intended to be included in the opening, using the subaccount and account type fields. |
+| Create Opening Entry (Crea registrazione apertura) | Button to create the opening accounts entry. |
+| Opens the Registration for Account Opening (Apre la registrazione per l'apertura conti) | Button that opens the account opening registration. |
+| Delete Detail (Elimina dettaglio) | Deletes the contents of the fields related to the selected line. WARNING: lines regarding the contents of the fields related to the account cannot be deleted, if left blank they will not be included in the opening accounting entry. |

@@ -1,22 +1,16 @@
 ---
-title: Objective Data Management
+title: Objective data management
 sidebar_position: 9
 ---
 
-If the fixed asset category shows the management of 'Objective Depreciations', there will be also the management tab: on this one, the upper grid will present the list of patrimonial operations that are in the fixed asset, taken by the grid and that can be edited partially in this section (cancellations and new lines independent from the official ones are allowed). On the contrary, the grid below will contain the objective calculations of depreciations, according to the fixed asset percentage or objective depreciation type inserted into the same fixed asset header.
+If the asset category has the management of objective Depreciation, the corresponding management tab will be present: in this tab, the upper grid will display the list of asset transactions present in the asset as they are added, but they can be partially modified in this section (deletions and new independent lines from the 'official' ones are allowed). The lower grid will instead contain the objective calculations of the depreciations, according to the percentage of the asset or the type of objective depreciation entered in the header of the asset itself.
 
-RIBBON BAR: it represents the Form menu, that is the area in which it is possible to perform actions linked to the fixed asset in management. The list of features  is the following:
+RIBBON BAR: represents the menu of the form in question, i.e., the area where actions related to the managed asset can be performed. The list of possible functionalities is represented below:
 
 
 
-| Function | Meaning |
+| Function (Funzione) | Meaning (Significato) |
 | --- | --- |
-| New Operation | It activates the cursor for the insertion of a new objective operation line. |
-| Delete Operation | It deletes the objective operation selected in the grid. |
-| Execute Objective Depreciation | It calculates the objective depreciation for year set in the field above the depreciations grid. |
-
-
-
-
-
-
+| New operation (Nuova operazione) | Activates the cursor for entering a new objective operation line. |
+| Delete operation (Cancella operazione) | Deletes the selected objective operation in the grid. |
+| Executes objective depreciation (Esegue ammortamento oggettivo) | Calculates the objective depreciation for the year set in the field above the depreciation grid. |

@@ -1,18 +1,30 @@
 ---
-title: General Overview
+title: Introduction (Introduzione)
 sidebar_position: 1
 ---
 
-The Intrastat module is dedicated to the creation of Intrastat statistical declarations: it is planed both a manual data management and an automatic insertion as regards data within purchase and sales invoices related to sales and purchase areas, as well as a data retrieve of services from the ledger records. The module is located within the Finance Area on Declarations Module.
+The Intrastat module is dedicated to the creation of Intrastat statistical declarations: it includes both manual data management and automatic insertion based on the data present in the purchase and sales invoices of the respective purchasing and sales areas, as well as a recovery of data from accounting records. The two modes are alternative and interdependent. By accounting for the invoices concerned with the appropriate settings (specifically activating the **flag** *Intrastat* within the **accounting reasons (causali)** involved), it is possible to manage the automatic creation also through accounting records, for both goods and services.
 
-The basic settings are linked to register and to sales and purchase document types: for this reason it is necessary that document corresponds to the intra-Community type and that its register has been set as intrastat subject. In order to get the maximum of automatisms it will be necessary to set, in the items registers, the nomenclature codes of each of them as well as the possible conversion factors for obtaining also the automatic valorization of the additional unit of measure. Obviously it is necessary to set data of transport type and delivery conditions within the various documents completely.
+The basic settings are linked to the **Registers** and **document types** in purchasing and sales: 
 
-The use of this module can be performed through the creation of a new intrastat1 declaration (for sales) and intrastat2 (for purchase): in this way there will be the possibility to complete data by taking them from purchase and sales invoices thanks also to the automatic procedure or from ledger records for services to be reported in quater/quinquies sections, or through the manual insertion in the related sections.
+**it is necessary that the document is of intracommunity type and that the registrant is defined as an Intrastat subject.**
 
-Once having completed data of models it will be possible to go on to print models or to send the same ones electronically with file creation.
+To maximize automation, it will be necessary to define, in the item registries, the nomenclature codes for each item as well as any conversion factors to obtain the automatic valuation of the complementary unit of measure. Clearly, it is necessary, as much as possible, to comprehensively define the transport type and delivery conditions within the various documents.
 
+The module is used by creating a new Intrastat1 declaration (for sales) and Intrastat2 (for purchases): the data will be completed by pulling from purchase and sales invoices, from accounting records, or by manual entry in the relevant sections.
 
+Once the data for the forms is completed, it will be possible to proceed with printing the forms or electronically sending them with the creation of the required file.
 
+**List of mandatory tables to use the module:**
 
+[Home>Tables>Administration] and [Home>Tables>General Settings] to identify the correct settings for Intrastat management.
 
+[Nature of Intrastat transaction](/docs/configurations/tables/finance/nature-of-intrastat-transaction), 
 
+[Intrastat numbering](/docs/configurations/tables/fluentis-numerations), 
+
+[Nomenclature codes](/docs/configurations/tables/finance/nomenclature-codes), 
+
+[Shipping (Porto)](/docs/configurations/tables/general-settings/carriages), 
+
+[Shipments (Spedizioni)](/docs/configurations/tables/general-settings/shipments).

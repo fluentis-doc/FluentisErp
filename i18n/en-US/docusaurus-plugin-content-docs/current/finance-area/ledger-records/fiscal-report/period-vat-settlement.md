@@ -1,29 +1,44 @@
 ---
-title: Period VAT Settlement
+title: Periodical VAT Settlement
 sidebar_position: 5
 ---
 
-Through this print procedure, it is possible to calculate credit/debit VAT of the reference period: for this report, printing the VAT registers of the period is not mandatory but VAT settlement definitive print  of the previous period is necessary (or a manual upload in the VAT transfer that has the same result of blocking the VAT period in the accounting)  in order to report the possible credit of the previous period.
+With this printing procedure, the calculation of the VAT credit/debit for the reference period is carried out: for this report, it is not mandatory that the VAT registers for the period have already been printed, but in order to report any credit from the previous period, there must have been a definitive print of the VAT settlement for the previous period (or a manual entry in the **[VAT Payments](/docs/finance-area/declarations/declarations/vat-payment)** table, which achieves the same result of blocking the VAT period in accounting). Otherwise, the printing can still be executed but without reporting the credit from the previous month or quarter.
 
-Once that the period and year of reference has been set (the period changes according to the VAT settlement frequency set in the accounting parameters. It can be one month, three months…), it is possible to decide on which settlement register it has to be printed: normally, this operation is made at the end of the selling register or on a dedicated summarizing register (suggested option). In case that the last period of the year has been selected, the user has the possibility to print/calculate VAT advanced amount. On this amount the report reports records to 12/20/yyyy. 
+Set the period and year of reference (where the period will be monthly or quarterly depending on the periodicity of the periodic VAT settlement set in the **[accounting parameters](/docs/configurations/parameters/finance/accounting-parameters)**); 
 
-“View Header” flag is suggested by default: it has to be removed just in case that the company keep on printing on stamped modules. The Definitive Report option changes the period of reference to make it correspond to the one after the last definitive printed one. The number of copies to be printed is disabled. The execution of the definitive print preview does not block the period nor updates counters: only the concrete print process can block accounting period and update pages counter of the VAT registers table. (it is not important that the print process reaches a successful conclusion, it can be a print on a file)
+select from the combo box the VAT register on which to print the settlement: 
 
-The definitive print enables the option “accounting of the period balance”: by setting this option the application makes the list of the accounts to be used active (by taking them from accounting parameters), the user just has to give template and the dates of references: once that the print process is over, two records are added in accounting: purchasing/selling VAT giro records to debit/credit VAT detail accounts.
+the print can be made either at the end of the sales register or on a dedicated summary register (recommended option). 
 
-Finally, the option of Report-Period VAT Declaration is not important since its abolition by the Italian fiscal system.
+In the event that the last period of the year has been selected, the option for printing/**calculating the VAT advance** will be enabled, based on which the report will include the records up to the date of 20/12/yyyy.
 
-RIBBON BAR: the ribbon bar represents the form menu, that is the area on which it is possible to perform actions. The possible features list is the following:
+**Payment Date / Payment Method (Data versamento / Modalità di versamento)**: these fields (a date that is then reported in the text string) allow the inclusion of a statement regarding the date and method of tax payment in the print (or, by modifying them, a free note).
+
+ 
+
+**View header**: default proposed flag: should only be removed if the company still proceeds to print on DDT forms. 
+
+**Definitive printed**: the active flag will make the print definitive, blocking the relevant VAT period and updating the page counters of the register on which the printing occurs. It also enables the following section for automatic re-entries. Additionally, it will modify the reference period to correspond to the one following the last definitively printed and will disable the number of copies to be printed. 
+
+![](/img/it-it/finance-area/ledger-records/fiscal-report/period-vat-settlement/image01.png)
+
+ 
+
+Executing the print preview in definitive mode is not enough to block the period and update the counters: only the execution of the physical printing process will operate the block of the period in accounting and update the page counter of the VAT Registers table (and it is not relevant whether the printing process is successful or not; it could even be a print to file).
+
+The definitive print will enable the option for **settlement accounting** (of the period balance): by setting this option, the application will activate the list of accounts to use (retrieving them from the accounting parameters), and the user will simply need to confirm the reason and reference dates: once the printing process is executed, two re-entry registrations of purchase and sales VAT will be added to the sub-accounts of debit/credit VAT on the treasury account C/VAT.
+
+![](/img/it-it/finance-area/ledger-records/fiscal-report/period-vat-settlement/image02.png)
 
 
 
-| Function | Meaning |
+| Function (Funzione) | Meaning (Significato) |
 | --- | --- |
-| Preview | Button to launch the preview of the settlement report. |
-| Print | Button to launch the concrete report of the settlement. |
+| Preview (Anteprima) | Button to execute the print preview of the settlement. |
+| Print (Stampa) | Button to execute the physical printing of the settlement. |
 
 
-
-
-
-
+:::important See Also (Vedi Anche)
+[**VIDEO TUTORIALS ON FISCAL PRINTS**](/docs/video/finance/intro)
+:::

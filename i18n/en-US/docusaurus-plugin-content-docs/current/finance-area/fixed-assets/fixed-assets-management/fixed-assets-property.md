@@ -1,21 +1,13 @@
 ---
-title: Fixed Assets Property
+title: Fixed assets property
 sidebar_position: 5
 ---
 
-The last “standard” tab is the one related to the fixed asset “Property”: it is possible to assign a list of property different to the fixed asset in use, together with a possible explication note added.
+The last standard tab is related to the 'Fixed assets property (Proprietà del cespite)': it is possible to assign a list of different properties to the asset in use, with an optional explanatory note.
 
-RIBBON BAR: the ribbon bar represents the Form menu, that is the area on which it is possible to perform actions linked to the fixed asset in management. The possible features list is the following:
+See the article on **[accounting registration (registrazione contabile)](/docs/finance-area/ledger-records/records/ledger-record)**.
 
-
-
-| Function | Meaning |
+| Function (Funzione) | Meaning (Significato) |
 | --- | --- |
-| New Property  | It activates the cursor for the insertion of a new fixed asset property. |
-| Delete Property | It deletes the selected property on grid. |
-
-
-
-
-
-
+| New property (Nuova proprietà) | Activates the cursor for entering an asset property. |
+| Delete property (Cancella proprietà) | Deletes the selected property in the grid. |

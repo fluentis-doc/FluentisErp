@@ -1,16 +1,56 @@
 ---
-title: Fixed Assets Management
-sidebar_position: 2
+title: Fixed assets management
+sidebar_position: 3
 ---
 
-On fixed assets management mask the first field corresponds to the setting related to the original fixed asset category, in order to establish that the fixed asset belongs to the company as proposed automatically: there are also fixed assets in leasing and hire, that are numbered separately by others and do not finish on reports of depreciable fixed assets journal. This management enables the user to simulate the depreciations calculation of the end of the year for comparing to leasing paid at the end of the tax calculation. In case of not property fixed asset it will be possible to insert some reference notes to the related contract.
+LINK:
 
-Subsequently, it is possible to attribute a pre-code to the fixed asset numbering (attributed at the moment of saving): if it is not inserted, the automatic numbering proposed on the following field will be the only one on all fixed assets of active company/department, while it could refer to a particular pre-code that usually refers to the category code of belonging fixed asset. After the fixed asset number there is the fixed asset description that will be viewed and reported on the various module reports and procedures. The department field can be set at the moment of the insertion of the new fixed asset, considering that then it cannot be edited.
+**[Detail (Dettaglio)](/docs/finance-area/fixed-assets/fixed-assets-management/detail)**
 
-According to the settings of fixed assets category and module parameters it is possible to view also the objective depreciation type assigned to the fixed asset, together with a specific percentage to be used for the same fixed asset rather than the type standard.
+**[Asset Operations (Operazioni Patrimoniali)](/docs/finance-area/fixed-assets/fixed-assets-management/patrimonial-operations)**
+
+**[Economic Operations (Operazioni Economiche)](/docs/finance-area/fixed-assets/fixed-assets-management/economical-operations)**
+
+**[Linked Assets (Cespiti collegati)](/docs/finance-area/fixed-assets/fixed-assets-management/linked-fixed-assets)**
+
+**[Asset Ownership (Proprietà cespiti)](/docs/finance-area/fixed-assets/fixed-assets-management/fixed-assets-property)**
+
+ 
+
+From this form, it is possible to manually enter a new asset card (this type of operation is not normally provided for, a practical example could be the addition of previous assets for which one does not intend to load the already existing accounting registration, perhaps from a previous software).
+
+This procedure is an alternative to entering the card directly from the accounting registration of the purchase invoice specifically configured for asset management (the latter procedure is recommended).
+
+ 
+
+**Header**
+
+Setting the **Fixed Asset Category** of belonging: select the category from the combo box (linked to the **[asset category table (tabella categoria cespite)](/docs/configurations/tables/finance/fixed-asset-category)**);
+
+**Property type**: normally owned as proposed by default; leasing and rental assets are also provided, which are numbered separately from others and do not appear in the prints of the depreciable asset book. This management allows simulating the year-end depreciation calculations for comparison to the leasing fee paid for tax calculations. In the case of a non-owned asset, it will be possible to enter some reference notes regarding the related contract.
+
+**Division**: set by default to the current division, can be changed if necessary. This field can only be set at the time of entering the new asset and cannot be modified afterward.
+
+**Accounting type**: (accounting type): field not typically filled during the manual entry of the card, it is populated during the accounting registration to impose a particular counterpart account (defined in the asset accounting types table) compared to that defined in the belonging asset category.
+
+ 
+
+**Classification code**: can be assigned to the asset numbering; if not entered, the proposed numbering will indeed be unique across all assets of the active company/division; by entering a precode, the asset number will be unique for each of the existing pre codes.
 
 
+**Material/Immaterial (Mat./Immat.)**: nature of the asset (material or immaterial); it is automatically proposed based on the data contained in the belonging asset category.
 
 
+**Propr. note**: free note field
+ 
+
+**Fixed asset number**: proposed automatically in consecutive order, can be manually forced while respecting uniqueness (also in relation to the precode).
 
 
+**Fixed assets description**: mandatory field, it will be displayed and reported in various prints and procedures of the module. 
+
+ 
+
+Depending on the settings of the asset categories and the module parameters, the specific type of objective depreciation assigned to the asset may also be visible, with a specific percentage to be used for the asset instead of the standard type.
+
+![](/img/it-it/finance-area/fixed-assets/fixed-assets-management/image01.png)

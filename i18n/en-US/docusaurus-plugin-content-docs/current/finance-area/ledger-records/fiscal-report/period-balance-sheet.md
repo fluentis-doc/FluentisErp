@@ -1,39 +1,36 @@
 ---
-title: Period Balance Sheet
+title: Financial Statement (Bilancio d'esercizio)
 sidebar_position: 1
 ---
 
-This report has the function to represent a basic prospect of the company balance. It divides by default the four typical sections active/passive/costs/profits. The report only works by accounting accrual date inserted in the record header, regardless of record date on the journal.
+This report serves to present a basic overview of the company’s balance sheet, dividing by default the four typical sections: assets/liabilities/costs/revenues. It is emphasized that the report works solely for the accounting competence date entered in the header of the record, regardless of the date of registration in the journal.
 
-Options within the mask:
+Furthermore, it should be noted that the dates of competence have been distinguished for the accounts of the balance sheet, as opposed to those of the income statement.
 
-**Negative Sign Amount View**: if it is set, the application enters every detail account in the appropriate section (according to the account type). The negative sign occurs when the balance is in the opposite direction. If the flag is not active, as by default, every detail account is viewed in the section related to its balance;
+![](/img/it-it/finance-area/ledger-records/fiscal-report/period-balance-sheet/image01.png)
 
-**Registers Details**: the application excludes by default the whole detail of the detail accounts linked to the customers/vendors/agents. Only through the related flag the details of these register detail accounts are visible.
+In this way, it is possible and recommended to keep the range of economic dates within the current year (e.g., 01/01/2018 - 31/12/2018) and extend the start date of the balance sheet accounting competence to the last account opening (e.g., 01/01/2017) in the case where the previous year (2017) has not yet been closed. This is necessary in this situation to obtain the correct current balance of the accounts in the absence of opening values for the current year that would otherwise be omitted filtering normally.
 
-**Exclude Interim Account**: interim accounts are viewed at the bottom of the active/passive section. Thanks to this flag, the interim accounts are not visible in the report. Interim accounts never are the object of closure/opening account in the automatic procedure of the application;
+Various layouts are available, including a representation with opposing sections and one with grouping in order to obtain totals by account and by level of the chart of accounts structure. The desired print can be selected from the dropdown at the top left.
 
-**Comparison with the Previous Year**: thanks to this option the report Previous Year Balances active. It includes a column of the current year and a balance column of the same period but of the previous year;
+**View amounts with negative sign**: if set, the application will insert each sub-account in the corresponding section (according to its account type) with a potential negative sign when the balance is in the opposite section. If the flag is not set, as by default, each sub-account will be displayed in the section relating to its balance;
 
-**Exclude Template**: in case that the account closure records are found, to get the balance data it is necessary to exclude the movements based on the template of the closure itself. Let the report run without excluding this template will result in a report with all balances=0 (except for Interim account as said above): this can be used as a control check of the good result of the accounts closure.
+**Detail of registries (Dettaglio della anagrafiche)**: by default, the application excludes all details of sub-accounts related to customers/suppliers and agents. Only with the corresponding flag will the details of these registry sub-accounts be displayed;
 
-In the report, it is possible to enter the movements that come from temporary registrations
+**Exclude memo account**: order accounts are displayed at the bottom of the asset and liability sections. With this flag, order accounts will not be displayed in the report. It is particularly noted that order accounts are never subject to closing/opening in the application’s automatic procedure;
 
-Last point regards other two files that can be associated through the report management: the report Section Balance displays the balance with opposed sections, the report Group Balance on the other hand displays the structure of the chart of accounts with the related results of the various accounts grouping.
+**Comparison with previous year**: with this option, the column for the current year will be displayed along with one for the balance of the same period but from the previous year set as the filter;
 
-The best flexibility of re-classification (for instance according to the EEC IV directive) can be got through the Balance module and the related reclassification models.
+**Exclude template**: if closing entries have been recorded, to obtain the balance sheet balances, it will be necessary to exclude movements based on the closing reason itself. Running the report without excluding this will yield a report with all balances at zero (except for order accounts as mentioned above): this can be used as a verification check of the successful completion of the closing operations;
 
-RIBBON BAR: it represents the form menu, that is the area in which it is possible to perform actions. The list of features is the following:
+It is also possible to include movements derived from provisional registrations in the print.
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/E_lIBlV2OXI" title="YouTube video player" frameborder="0" allowfullscreen= "true"></iframe>
 
+---
 
-| Function | Meaning |
-| --- | --- |
-| Preview | Button to start the preview of the accounting year balance. |
-| Print | Button to start the concrete print of the accounting year balance. |
+### Reclassification of balance for regulatory balance preparation (Riclassificazione di bilancio per elaborazione bilancio civilistico (schema CEE))
 
-
-
-
-
-
+:::important See Also (Vedi Anche)
+[**VIDEO TUTORIALS ON TAX PRINTS**](/docs/video/finance/intro.md)
+:::

@@ -1,12 +1,6 @@
 ---
-title: Objective Depreciations
+title: Objective Depreciationss
 sidebar_position: 1
 ---
 
-In this mask it is possible to go on to calculate the objective depreciations on all fixed assets that belong to the categories that manage them. The depreciations cannot be accounted.
-
-
-
-
-
-
+In this screen, it is possible to proceed with the bulk calculation of objective depreciation on all assets belonging to categories that manage them. Such depreciations cannot be accounted for.

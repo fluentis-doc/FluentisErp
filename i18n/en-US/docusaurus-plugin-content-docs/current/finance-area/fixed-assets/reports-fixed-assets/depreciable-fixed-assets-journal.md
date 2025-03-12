@@ -3,25 +3,36 @@ title: Depreciable Fixed Assets Journal
 sidebar_position: 4
 ---
 
-The report mask of fixed assets journal enables the user to set the search filters during data extraction.
+The print mask for the asset register allows for the definition of the usual search filters for data extraction.
 
-In particular it is important to notice that: usually the sold or destroyed fixed assets of the previous years compared to the reference year inserted will not be reported in report, whether not imposing the specific flag. At the same time it will be possible to exclude from report the fixed assets that have activity end date in register.
+![](/img/it-it/finance-area/fixed-assets/reports-fixed-assets/depreciable-fixed-assets-journal/image01.png)
 
-The definitive report flag will block header data of the various printed fixed assets registers, will block even the cancellation of the single printed line and will update the counter of pages for the reference year within financial accounting parameters. The cancellation of the definitive report can be performed by the enabled user from the “Financial Accounting Parameters” mask.
+The **Fixed Asset Category** flag, if active, allows you to select one or more categories (using the Ctrl key) from the grid below.
 
-It is important to notice some standard reports that can be linked to this procedure: report of “fiscal” fixed assets journal (to be used for customers who use the fiscal calculation) and report of fixed assets journal with initial values (that does not report all the historical detail of every fixed asset but a single initial summary line of start data of the required year and in addition the related detail).
+ 
 
-RIBBON BAR: the ribbon bar represents the Form menu, that is the area on which it is possible to perform actions linked to the procedure in use. The possible features list is the following:
+On the right side: normally, assets sold or destroyed in years prior to the reference year entered will no longer be shown in the printout unless the appropriate flag is imposed. 
 
+There is also a button for including 'Terminated' assets in the report. Similarly, assets with an end of activity date in their registry will be excluded from the printout.
 
+![](/img/it-it/finance-area/fixed-assets/reports-fixed-assets/depreciable-fixed-assets-journal/image02.png)
 
-| Function | Meaning |
-| --- | --- |
-| Preview | Button to perform the print preview. |
-| Print | Button to print a document. |
+The flags ![](/img/it-it/finance-area/fixed-assets/reports-fixed-assets/depreciable-fixed-assets-journal/image03.png)
 
+**Unamortized**
 
+**Partially depreciated**
 
+**Fully depreciated**
 
+are active by default to display all types of assets, and those related to the types you wish to hide can be deactivated.
 
+ 
 
+The **Definitive printed** flag will block the header data of the various printed asset registries, also preventing the deletion of individual printed lines and will update the page counter for the reference year within the general accounting parameters. The cancellation of the final print can be performed by an authorized user from the General Accounting Parameters mask.
+
+**Fiscal data**: displays additional columns with tax data related to depreciations.
+
+**View header**: if deactivated, it will not show the header in the printout, allowing you to print on pre-printed forms.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/0vMJpldI7fw" title="YouTube video player" frameborder="0" allowfullscreen="true"></iframe>

@@ -3,41 +3,38 @@ title: VAT Books
 sidebar_position: 9
 ---
 
-The VAT books report must be made register by register: the total report of the registers belonging to a period is not permitted.
+The printing of VAT registers must be done individually for each register: a total print of all registers for the period is not allowed.
 
-**VAT period**: at the opening of the mask this field can cover the previous month or quarter (it depends on the settlement settings in the accounting parameters). 
+**VAT period**: Upon opening the mask, this may be the month prior to the current one in the case of a monthly period, or the quarter if the liquidation periodicity set in the accounting parameters is quarterly;
 
-**Year of reference**: it corresponds to the second field;
+**Reference year**: the current year is proposed by default;
 
-**VAT book to be printed**: this field is not mandatory but the user has to request the summary register report.
+**VAT Register to Print (Registro IVA da stampare)**: select the register to print;
 
-**Division**: the VAT book must be printed by company, the user can set this filter only in case of temporary print.
+**Division**: normally not to be used, especially if there are no various divisions present;
 
-**VAT Register**: It must be printed per company. It is possible to set this filter only in case in which there is a temporary report.  
+**Summary**: the flag allows printing, on the register selected via the appropriate field, a summary of the registers and their corresponding VAT codes moved in the selected month or quarter;
 
-The following fields display which is the last number of printed page as regards the register set: then this element is used by the VAT Register table.
+The subsequent fields display what the last page number printed for the set register is: this data is taken from the VAT Books table.
 
-The **View Header** flag is already set by default: in the past it was removed when the user had to authenticate the stamped modules of the registers. Nowadays it is not obligatory anymore.  This flag reports the name of the VAT register, of the company and the number/year of the pages.
+The flag **View header** is already set by default: it was removed when the DDT forms needed to be stamped on which to print the registers, an obligation that is no longer required. With this flag, the name of the VAT register, the company, and the page number/year will be displayed.
 
-The **View Document type** flag adds, in the document references, the document type: it can be useful if the selling invoices have many numerations that rely on the same VAT register.
+The flag **View document type** will add, in the document references, the type of document: this can be useful in the case where sales invoices have multiple numbering that refer to the same VAT register.
 
-The title of the register is retaken by the name of the VAT register and it is the one reported in the report with the option 'View header'.
+**Register Title**: when the Summary flag is not active, it is possible to impose a printing title different from the name of the VAT register that appears by default.
 
-By selecting the option 'Definitive' the procedure changes the period of reference in order to make it correspond to the one immediately after the last definitively printed: the division filter and the number of pages to be printed are disabled. The execution of the definitive print preview does not block the period and update counters: it is only the execution of the print process that blocks the period/register in accounting and updates the counter of the pages of the VAT registers Tab (it is not necessary that the print process reaches a good conclusion, it can be a print on a file). By launching the print or the preview the application can verify if there are missing parts in the protocols and if the chronological order has been followed by blocking the definitive print  unless that the control flag of the VAT register has not be disabled. The definitive print does not need to go through the print of the periodic VAT settlement.
+The title of the register is taken from the name of the VAT register and will be displayed in the print with the 'Show Header' option.
 
-The print of the summary register launches the CA_RegistroRiep.rpt report: this kind of report groups the amounts of VAT rate amounts, register by register, with a final summary of all purchase and sales.
+**Monthly / Quarterly (Mensile / Trimestrale)**: the two flags refer to the VAT periodicity setting defined in the accounting parameters for reference, but the setting cannot be modified from here;
 
-RIBBON BAR: it represents the form menu, that is the area in which it is possible to perform actions. The list of features is the following:
+By activating the **Definitive** flag, the procedure will print the registers definitively, locking the selected period for further modifications: the filter for division will also be disabled. Executing the preview of the final print will not block the period and update the counters: only the execution of the physical printing process will operate the block of the period/register in accounting and update the page counter of the VAT Books table (and it is irrelevant whether the printing process is successful or not; it could even be a print to file). When executing the print or preview, the application will check if there are gaps in the protocol and whether the chronological order has been respected, blocking the final print unless the control flag has been disabled for the VAT register in the table. The final print is NOT necessary to proceed with the printing of the periodic VAT liquidation.
 
-
-
-| Function | Meaning |
+| Function (Funzione) | Meaning (Significato) |
 | --- | --- |
-| Preview | Button to launch the print preview of the VAT register. |
-| Print | Button to launch the print of the VAT register. |
+| Preview (Anteprima) | Button to execute the preview of the VAT register print. |
+| Print (Stampa) | Button to execute the physical print of the VAT register. |
 
 
-
-
-
-
+:::important See Also (Vedi Anche)
+[**VIDEO TUTORIALS ON TAX PRINTS**](/docs/video/finance/intro.md)
+:::

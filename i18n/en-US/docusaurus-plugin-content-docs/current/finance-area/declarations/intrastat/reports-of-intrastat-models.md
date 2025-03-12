@@ -1,21 +1,18 @@
 ---
-title: Reports of Intrastat Models
+title: Intrastat Models Printouts (Stampe modelli Intrastat)
 sidebar_position: 11
 ---
 
-Through this mask it is possible to print the created intrastat models, according to parameters set. As regards each header and **bis/ter/quater/quinquies** section it will be possible to create a divided print preview. The report does not influence the intrastat declarations (there are no blocks linked to this process).
+From the screen, it is possible to print the created Intrastat models according to the set parameters.
 
-RIBBON BAR: it represents the Form menu, that is the area in which it is possible to perform actions linked to the procedure in use. The list of features is the following:
+For each header and section **bis**/**ter**/**quater**/**quinquies**/**sexies**, a separate print preview will be created, selectable from the dropdown before pressing the *Preview* button.
 
+The print labeled **Details*** allows for printing all the aforementioned sections.
 
+Alongside the selection of printing based on the sections to be printed, filters present in the form enable or disable the visibility of models related to sales or purchases and the specific sections.
 
-| Function | Meaning |
-| --- | --- |
-| Preview | Button to perform the print preview. |
-| Print | Button to print. |
+There are also filters for number and date.
 
+The combination of all various filters and different print reports allows for the extraction of the desired data.
 
-
-
-
-
+The printing has no influence on the Intrastat declarations (there are no blocks related to this process).

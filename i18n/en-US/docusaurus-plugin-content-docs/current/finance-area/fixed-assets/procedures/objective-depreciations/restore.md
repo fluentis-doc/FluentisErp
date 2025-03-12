@@ -1,22 +1,14 @@
 ---
-title: Restore
+title: Restore (Ripristino)
 sidebar_position: 3
 ---
 
-It performs the calculation, the lines will disappear from the grid and the result will be visible in the 'Restore' tab within which it is possible to cancel the operation.
+After the calculation is performed, the rows will disappear from the grid, and the result will be visible in the 'Restore (Ripristino)' tab, where it is possible to undo the operation.
 
-RIBBON BAR: it represents the Form menu, that is the area in which it is possible to perform actions linked to the procedure in use. The list of features is the following:
+RIBBON BAR: represents the menu of the form in question, that is, the area where actions related to the current procedure can be performed. The list of possible functionalities is represented below:
 
-
-
-| Function | Meaning |
+| Function (Funzione) | Meaning (Significato) |
 | --- | --- |
-| Search | It performs the list of depreciation calculations performed. |
-| Restore | It performs the restore of the calculation for the selected lines. |
-| View Fixed Asset | It views the register of fixed asset whose depreciation is selected in the grid. |
-
-
-
-
-
-
+| Search (Ricerca) | Searches the list of completed amortization calculations. |
+| Restore (Ripristina) | Restores the calculation for the selected rows. |
+| View Asset (Visualizza cespite) | Opens the asset registry for the asset whose amortization is selected in the grid. |

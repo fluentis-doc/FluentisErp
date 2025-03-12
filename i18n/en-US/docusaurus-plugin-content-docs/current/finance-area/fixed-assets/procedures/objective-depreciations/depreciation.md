@@ -1,22 +1,16 @@
 ---
-title: Depreciation
+title: Depreciation (Ammortamento)
 sidebar_position: 2
 ---
 
-First of all, it is very important to manage the “incremental operations” flag: considering that the depreciation procedure is managed according to different logics, if the company uses the incremental option for its categories it will be necessary to import this flag in order to identify data. At the base of the mask, on the contrary, it is necessary to set the reference calculation year: usually it will be edited in order to insert the year previous than the current one.
+First of all, it is of fundamental importance to manage the flag **Incremental operations**: since the depreciation procedure is managed with different logics, if the company uses the incremental option for its categories, it will be necessary to import this flag to identify the data. At the bottom of the form, the reference year for the calculation must be set: it will normally need to be modified to enter the year prior to the current one.
 
-RIBBON BAR: the ribbon bar represents the Form menu, that is the area on which it is possible to perform actions linked to the procedure in use. The possible features list is the following:
+RIBBON BAR: represents the menu of the form in question, that is, the area where actions related to the procedure in use can be performed. The list of possible functionalities is represented below:
 
 
 
-| Function | Meaning |
+| Function (Funzione) | Meaning (Significato) |
 | --- | --- |
-| Search | It searches the list of depreciations to be calculated. |
-| Depreciation | It performs the calculation for the selected lines. |
-| View Fixed Asset | It views the fixed asset register whose depreciation is selected in the grid. |
-
-
-
-
-
-
+| Search (Ricerca) | Searches for the list of depreciations to be calculated. |
+| Depreciation (Ammortamento) | Executes the calculation for the selected lines. |
+| View Asset (Visualizza cespite) | Opens the asset registry for the asset whose depreciation is selected in the grid. |

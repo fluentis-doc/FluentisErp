@@ -1,21 +1,17 @@
 ---
-title: Intendo Declaration Register
+title: Intent Declaration Register (Registro dichiarazioni di intento)
 sidebar_position: 8
 ---
 
-The procedure enables the user to print the intendo declaration register both the the customer and the vendor one, according to the "Declarer" or the "Recipient" selection. There is the print option of the company header and the one of the definitive execution, that memorizes the last page printed  in the same register. 
+The procedure allows for printing the register of intent declarations, both for customers and suppliers, depending on the selection of **Declarant** or **Receiver**.
 
-RIBBON BAR: the ribbon bar represents the Form menu, that is the area in which it is possible to perform actions. The possible features list is the following: 
+![](/img/it-it/finance-area/ledger-records/fiscal-report/intent-declaration-register/image01.png)
 
+There are also filter fields for protocol or for customer or supplier registry.
 
+ 
 
-| Function | Meaning |
+| Function (Funzione) | Meaning (Significato) |
 | --- | --- |
-| Preview | Button to launch the print preview of the Intendo Declarations. |
-| Report | Button to launch the concrete print of the Intendo Declarations. |
-
-
-
-
-
-
+| Preview (Anteprima) | Button to execute the print preview of the intent declaration register. |
+| Print (Stampa) | Button to execute the physical printing of the intent declaration register. |
