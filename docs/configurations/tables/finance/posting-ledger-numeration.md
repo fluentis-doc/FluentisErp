@@ -4,14 +4,7 @@ sidebar_position: 19
 ---
 
 
-:::note Percorso
-**Configurazione > Amministrazione > Numerazione registrazioni contabili**
-
-Nota:
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
-
-:::
-
+Percorso form: **Configurazione > Amministrazione > Numerazione registrazioni contabili**
 
 :::tip[FAst Start]
 La tabella è interessata dalla procedura di [**Fast Start**](/docs/guide/fast-start)
@@ -36,7 +29,7 @@ E' anche possibile, in casi particolari o di specifica necessità, far partire l
 ![](/img/it-it/configurations/tables/finance/posting-ledger-numerations/posting-ledger-numerations-detail-provisory.png)
 
 :::danger ATTENZIONE
-Si sconsiglia di impostare, in situazioni normali, più di un numeratore, rispettivamente per le registrazioni definitive e provvisorie, contemporaneamente. Se emerge questa necessità si veda ** [*la testata della causale contabile* campo *Numerazione*](/docs/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates/header) **.
+Si sconsiglia di impostare, in situazioni normali, più di un numeratore, rispettivamente per le registrazioni definitive e provvisorie, contemporaneamente. Se emerge questa necessità si veda ** [*la testata della causale contabile* campo *Numerazione*](/docs/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates) **.
 Si sconsiglia altresì di inserire una data fine validità per la numerazione in corso se questo non è motivato da un effettivo cambio nei dettagli della politica stessa. La periodicità scelta nella numerazione stessa fa sì che il numero riparta ogni anno , oppure ogni giorno ecc... Si veda per ulteriori dettagli in merito al rinnovo dei numeratori al cambio d'anno [**qui**](/docs/configurations/utility/new-year-counter-generation).
 :::
 

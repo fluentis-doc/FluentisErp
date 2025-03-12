@@ -13,11 +13,11 @@ Alcuni esempi di utilizzo dei *D.P.I.* li troviamo nelle gestioni:
 
 La tabella consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
 
-**Ricerca D.P.I.**
+#### Ricerca D.P.I. 
 
 La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
 
-**Inserimento D.P.I.**
+#### Inserimento D.P.I. 
 
 Per poter inserire nuovi *D.P.I.* è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.   
 Per il nuovo record si devono inserire almeno i campi obbligatori richiesti dal programma: il **Codice** e la **Descrizione**.

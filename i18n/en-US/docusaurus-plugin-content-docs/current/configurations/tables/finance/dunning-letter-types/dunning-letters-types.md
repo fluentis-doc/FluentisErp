@@ -1,22 +1,10 @@
 ---
-title: Dunning Letters - Search
+title: Search Reminder Types (Ricerca tipi solleciti)
 sidebar_position: 1
 ---
 
-RIBBON BAR: the ribbon bar represents the Form menu, that is the area in which it is possible to operate on previous recordings or generate new ones. The possible features list is the following:
+Allows you to enter new records or search for existing ones to view, modify, or delete them.
 
+The form consists of a filter area and a results area. Once all the desired filters are set, simply click the **Search** button to display the results within the results grid.
 
-
-| Function | Meaning |
-| --- | --- |
-| Search | It is a command that is necessary in order to look for a dunning letter type through the fields: code and description |
-| New Type | It is a command to create a new dunning letter type |
-| Edit Type | It is a command that is necessary in order to edit the dunning letter type, where the user is located |
-| View Type | It is a command that is necessary in order to view the dunning letter type, where the user is located |
-| Delete Type | It is a command that is necessary in order to delete the dunning letter type, where the user is located |
-
-
-
-
-
-
+To insert new records, it is necessary to click on the first empty row of the grid or press the **New** button.

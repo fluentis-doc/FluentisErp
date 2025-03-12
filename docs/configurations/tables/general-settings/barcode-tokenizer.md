@@ -80,5 +80,3 @@ Esempio: ItemQta-MOB-ART-35
 
 Gli ultimi esempi non rientrano nella logica descritta per il barcode tokenizer, questo perché si voleva avere un modo per mappare nel barcode anche la quantità che però non è attribuibile a nessun Oggetto/Proprietà nel momento della lettura.
 Ovviamente questa logica va implementata nelle singole form.
-
-

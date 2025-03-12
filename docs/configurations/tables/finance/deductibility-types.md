@@ -22,9 +22,3 @@ La seconda sezione, Dettagli, contiene i seguenti campi:
 **Data fine**: data fine del tipo di deducibilità su cui si è posizionati.
 
 **Perc. deduc.**: percentuale di deducibilità da applicare al tipo di deducibilità su cui si è posizionati.
-
-
-
-
-
-

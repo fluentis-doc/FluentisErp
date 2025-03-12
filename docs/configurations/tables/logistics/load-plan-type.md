@@ -15,7 +15,7 @@ La form si compone di un'area di filtro e da una di risultato. Una volta imposta
 
 Per poter inserire nuove codifiche è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.
 
-*Campi specifici*: 
+#### Campi specifici
 
 > **Codice**: indica il codice del Tipo Piano di Carico;           
 > **Descrizione**: indica la descrizione del Tipo Piano di carico;   

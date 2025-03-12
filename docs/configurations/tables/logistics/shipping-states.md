@@ -18,7 +18,7 @@ La form si compone di un'area di filtro e da una di risultato. Una volta imposta
 Per poter inserire nuovi è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.   
 Per il nuovo record si devono inserire almeno i campi obbligatori richiesti dal programma: il **Codice** e la **Descrizione**.
 
-*Campi specifici*: 
+#### Campi specifici  
 
 > **Codice**: è il codice del *Stato di spedizione*.   
 > **Descrizione**: è la descrizione del *Stato di spedizione*.   

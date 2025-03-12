@@ -3,7 +3,9 @@ title: Tipi movimento
 sidebar_position: 2
 ---
 
-I tipi movimento determinano qual è la funzione abilitata. Di seguito si specifica per ogni tipo movimento la funzione collegata:
+I tipi movimento determinano qual è la funzione abilitata. 
+
+Di seguito si specifica per ogni tipo movimento la funzione collegata:
 
 **Carico**: funzione di WMS Mobile che permette di creare una registrazione di magazzino di carico;
 

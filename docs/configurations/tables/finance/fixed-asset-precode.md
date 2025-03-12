@@ -15,14 +15,8 @@ In particolare la gestione del precodice è utile laddove sia necessario ottener
 Un altro esempio di utilizzo è quello di raggruppare i cespiti per anno (e dunque i vari precodici corrisponderanno all'anno di acquisto) oppure per tipologia ecc...
 
 
-I campi presenti sono:
+#### Campi specifici
 
 **Codice**: codice alfanumerico del precodice.
 
 **Descrizione**: descrizione del precodice.
-
-
-
-
-
-

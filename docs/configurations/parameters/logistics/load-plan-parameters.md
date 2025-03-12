@@ -3,8 +3,7 @@ title: Parametri Piani di Carico
 sidebar_position: 5
 ---
 
-I Parametri dei Piani di carico si compongono di un solo tab, Generale.
-I flag che permettono la parametrizzazione sono i seguenti.        
+I flag che permettono la parametrizzazione sono:       
 
 **Controlla disponibilità**: questo flag permette di inserire una colonna per visualizzare la disponibilità degli articoli;      
 **Verifica disponibilità**: questo flag permette di verificare l'eventuale disponibilità;       

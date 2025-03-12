@@ -1,21 +1,32 @@
 ---
-title: 表外到期
+title: Scadenze Extracontabili
 sidebar_position: 3
 ---
 
-该掩码可用于管理影响现金流的表外到期，如税款、工资、贷款等预计支出。
-
-只需在网格中添加/修改新的预计到期，设置“结算”标记，就不会在下一个模拟中考虑该行。
-
-功能导航栏：功能导航栏为菜单窗体，包含该程序中可能需要的操作。当前选项卡的功能如下：
+La form si trova in Tesoreria > Cash Flow > Cash Flow > Scadenze extra-contabili
 
 
+Con questa maschera è possibile gestire le scadenze extracontabili che vengono lette nell'apposito flusso di cash flow (definito nella tabella [**Tipi Flusso**](/docs/configurations/tables/treasury/cash-flow-module-tables/flux-types) dal flag *Extra contabile*), come ad esempio prevedere le uscite per tributi, salari/stipendi, ecc. ecc..
 
-| RibbonFunction | RibbonMeaning |
-| --- | --- |
-| 搜索 | 用于在表外到期列表中按筛选条件搜索 |
-| 新建 | 将光标设置到插入新表外到期处 |
-| 删除 | 删除选中的表外到期 |
+## Come inserire una scadenza extra contabile per la lettura nel cashflow
+
+Inserire direttamente nella griglia le scadenze previste.
+
+- Il campo **Tipi scadenza** è collegato all'omonima tabella dove poter definire liberamente una "etichetta" per rappresentare la tipologia di scadenza
+- La Data scadenza definirà la rappresentazione nel cashflow (nel mese corrispondente) essendo da considerare come la data di manifestazione del flusso finanziario che stiamo inserendo
+- La Divisa sarà proposta pari a quella della società (es. L'Euro) e può essere variata per inserire un flusso in divisa estera, in questo caso si gestirà anche il cambio in base alla dat scadenza.
+- L'importo in valuta è quello denominato nella divisa selezionata nel campo precedente, mentre l'importo Dare (flusso finanziario positivo, esempio un credito) o Avere (flusso negativo esempio un debito) sono denominati in divisa della società (es. Euro)
+- il flag **chiusa** può essere usto per non considerare più la riga nelle prossime simulazioni senza dover cancellare la riga, nel caso si voglia conservarla e memorizzarla.
+
+
+
+**Pulsanti specifici**
+
+**Ricerca** Pulsante per applicare i filtri di ricerca sulla lista delle scadenze extracontabili.
+
+**Nuovo** Imposta il cursore all'inserimento di una nuova scadenza extracontabile.
+
+**Cancella** Cancella la scadenza extracontabile selezionata.
 
 
 

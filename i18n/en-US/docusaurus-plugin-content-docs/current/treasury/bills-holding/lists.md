@@ -1,51 +1,47 @@
 ---
-title: Search Lists
-sidebar_position: 5
+title: Distinte
+sidebar_position: 3
 ---
 
-The search lists procedure has been created in order to enable the user to search easily presentation lists issues previously in order to view, edit and delete them, if necessary. Through the search lists it is possible to perform all necessary operations about document, after having confirmed the presence of all necessary user's rights.
+La form della ricerca distinte 
+- si trova in Tesoreria > Portafoglio Effetti > Effetti > Distinte
 
-The search lists procedure consists as follows:
-
-RIBBON BAR: it represents the Form menu, that is the area in which it is possible to perform actions about a pre-existing document rather than to create a new one. The list of features is the following:
-
+- permette all'utente di ricercare le distinte di presentazione emesse precedentemente con lo scopo di visualizzarle, modificarle ed eventualmente cancellarle.
 
 
-| Function | Meaning |
-| --- | --- |
-| Search Lists | Button to apply search filters within database of the inserted bills. |
-| New Lists | It refers to the procedure to insert a new bill. |
-| Edit Lists | It refers to the procedure to edit a previously inserted bill. |
-| View Lists | It refers to the procedure to view a previously inserted bill. |
-| Delete Lists | It refers to the procedure to delete a previously inserted bill. |
+## Pulsanti della Ribbon Bar
+
+> - **Ricerca distinte:** Pulsante per ricercare le distinte secondo i filtri di ricerca impostati nella testata della form.
+> - **Nuovo distinte:** Richiama la form per inserire una nuova distinta.
+> - **Modifica distinte:** Permette di modificare una distinta precedentemente inserita.
+> - **Visualizzazione distinte:** Visualizza una distinta precedentemente inserita.
+> - **Cancella distinte:** Cancella una distinta precedentemente inserita.
+
+> Esecuzione della **stampa** (*Anteprima* oppure *Stampa*) *Distinta di presentazione*: lancia, relativamente alle distinte selezionate con il mouse, (tenendo premuto Ctrl si possono selezionare più distinte contemporaneamente) l'omonima stampa presente nel [**menu stampe**](/docs/treasury/bills-holding/reports/print-presentation-lists) del modulo
+
+## Filtri nella testata della form
+
+- **Tipo:** filtra per tipo di distinta, dato a sua volta definito nella tabella [***Tipi presentazione distinte effetti***](/docs/configurations/tables/treasury/bills-portfolio-module-tables/bills-list-presentation-types)
+
+- **Banca:** filtra per conto **Banca Conto Corrente** impostato sulla testata distinta
+
+- **DA - A Numero distinta:** filtra per numero distinta, dato impostato al numeratore automatico in fase di creazione della distinta
+
+- **DA / A data presentazione:** filtra per data di presentazione, campo ella testata distinta proposto generalmente pari ad "*oggi*" ma può essere variato dall'utente
+
+- **Divise:** filtra per divisa, dato di testata che si riferisce alla divisa degli effetti contenuti in distinta, ad esempio per estrarre solo le divise denominate in dollari.
+
+- **Stampato:** se attivato, questo flag estrae solo distinte stampate (o comunque con flag *stampato* "true")
+
+- **Contabilizzata:** se attivato, questo flag estrae solo distinte contabilizzate attraverso [l'apposita procedura](/docs/treasury/bills-holding/accounting/lists-accounting) (o comunque con flag *contabilizzata* "true")
 
 
+## Griglia dei risultati
 
-| Function | Meaning |
-| --- | --- |
-|  [Print Presentation Lists](/docs/treasury/bills-holding/reports/print-presentation-lists)  | It refers to the procedure to print the presentation lists in bank of bills. |
-|  [Report - Bill Holding Situation](/docs/treasury/bills-holding/reports/bill-holding-situation)  | It refers to the procedure to print statistic of bills portfolio situation. |
-|  [Report - Unpaid List](/docs/treasury/bills-holding/reports/print-unpaid-list)  | It refers to the procedure to print the current unpaids list. |
+In questa from presenta gli stessi campi presenti nei filtri già dettagliati qui sopra.
 
+Presenta inoltre il **Totale** della distinta (somma gli importi degli effetti in distinta)
 
-
-| Function | Meaning |
-| --- | --- |
-|  [Bills from Invoice Issue](/docs/treasury/bills-holding/procedures/bills-acquisition-from-invoices/acquisition)  | It refers to the procedure to create bills automatically from invoices maturities. |
-|  [Bills from Maturity Value Issue](/docs/treasury/bills-holding/procedures/bills-acquisition-from-maturity-values/bills-acquisition-from-maturity-values-intro)  | It refers to the procedure to create bills automatically from opened maturity values. |
-|  [Bills Accounting](/docs/treasury/bills-holding/accounting/bills-accounting/accounting)  | It refers to the procedure to perform the bills accounting and to close customer account. |
-|  [Bills Accounting by Vendor](/docs/treasury/bills-holding/accounting/bills-accounting-by-vendor/accounting)  | It refers to the procedure to perform the bills accounting by vendor and to close vendor account. |
-|  [Lists Accounting](/docs/treasury/bills-holding/accounting/lists-accounting/accounting)  | It refers to the procedure to perform the list accounting and to valorize presentation account. |
-|  Credits Accounting | It refers to the procedure to perform the credit accounting in account. |
-|  [Cash Order Files Creation]  | It refers to the procedure to generate the cash order electronic tracing. |
-|  [RID Files Creation]  | It refers to the procedure to generate the RID electronic tracing. |
-|  [Import Unpaid](/docs/treasury/bills-holding/procedures/import-unpaids)  | It refers to the procedure to import the unpaids electronic tracing. |
-|  [Accounting of Unpaid](/docs/treasury/bills-holding/accounting/unpaid-accounting/unpaids)  | It refers to the procedure to account unpaids, with the related opening of customer maturity value according to module parameters. |
-|  Accounting of Unpaid on loan procedure to account unpaids, with the related opening of customer and vendor maturity values according to module parameters. |
-
-FILTER AREA: The filter area contains the list of the possible data types thanks to which it is possible to perform a selection, a research on the total of data inserted in system. Typically Filters have 'AND' condition and it is possible to specify more filter criteria at the same time.
-
-RESULT GRID: the result grid represents the import list that belongs to the filter data above mentioned. After having specified values through which to obtain a search of inventory items the user, by clicking on the [Search Lists] button in the related Ribbon, will obtain the list of desired lists in the result grid.
 
 
 

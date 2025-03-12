@@ -3,22 +3,20 @@ title: Bills Types
 sidebar_position: 3
 ---
 
-The table is compiled through the setting of a user code and description, to which it is necessary to assign reference numerator, predefined bill typology and handling detail account: this detail account will be used in offset during the customer closing within bills accounting procedure. The bill type can be associated to the payment type in the related table. Lastly remember that, only bills of promissory type will be managed in the accouting of unpaids  on load procedure of unpaid module.
+:::tip[Fast Start]
+The table is affected by the [**Fast Start**](/docs/guide/fast-start) procedure.
 
-RIBBON BAR: it represents the Form Menu, that is the area in which it is possible to perform actions linked to the procedure in use. The list of features is the following:
+If you intend to configure manually, refer to the checklist on the linked page.
+:::
 
+The table is compiled by entering a code and a user description, to which a reference numerator, a type of effect from the predefined ones, and finally a detail account for movement must be assigned: this detail account will be used in counterpart to the customer closure within the bills accounting procedure.
 
+The type of bill can then be associated with the type of payment in the corresponding table.
 
-| Function | Meaning |
-| --- | --- |
-| Search | Button to perform the search of bills types according to filters set. |
-| New | Button to place the cursor during the insertion of a new line. |
-| Delete | Button to delete the selected advance type. |
-| Preview | Button to perform the print preview of table in use. |
-| Print | Button to print the table in use. |
+Finally, it is noteworthy that only bills of exchange type can be managed in the unpaid accounting procedure on the Unpaid module disposal.
 
+The flag **Manage Partial Amount** allows creating bills that partially consume the items, indicating the amount. It requires manual management within the bill.
 
+The link **Counter** is not used for the Italian localization; it is used for registering bills from cash registers.
 
-
-
-
+<iframe width="560" height="315" src="https://www.youtube.com/embed/pnRACKqZqvM" title="YouTube video player" frameborder="0" allowfullscreen="true"></iframe>

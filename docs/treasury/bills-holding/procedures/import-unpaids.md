@@ -15,12 +15,15 @@ Dalla maschera è possibile cancellare l'importazione eseguita: questa andrà ad
 
 
 
-| Funzione | Significato |
-| --- | --- |
-| Ricerca importazioni | Ricerca la lista delle importazioni insoluti già eseguite. |
-| Esegui importazione | Con questo pulsante si apre la maschera di selezione del file telematico per il quale eseguire la procedura di importazione. |
-| Visualizza file insoluto | Visualizza il file telematico dell'insoluto importato. |
-| Cancella importazione | Cancella l'importazione eseguita. |
+**Pulsanti specifici**
+
+**Ricerca importazioni:** Ricerca la lista delle importazioni insoluti già eseguite.
+
+**Esegui import**: Con questo pulsante si apre la maschera di selezione del file telematico per il quale eseguire la procedura di importazione.
+
+**Visualizza file insoluti**: Visualizza il file telematico dell'insoluto importato.
+
+**Cancella importazione**: Cancella l'importazione eseguita.
 
 
 

@@ -20,7 +20,7 @@ Prin efectuarea căutării (comanda Căută în bara de meniu), angajamentele vo
 
 **Contabilitate**: indică faptul că angajamentul este legat de o înregistrare contabilă;
 
-**Care nu pot fi plătite**: indică faptul că angajamentul a fost blocat de utilizator, astfel încât acesta să nu fie plătibil. Blocul poate fi setat direct în momentul creării sau ulterior atât din fila  [Angajemente](/docs/finance-area/ledger-records/records/create-ledger-record/maturity-values-tab)  a înregistrării contabile care generează angajamentul, cât și prin modificarea angajamentului însuși din formularul în cauză.
+**Care nu pot fi plătite**: indică faptul că angajamentul a fost blocat de utilizator, astfel încât acesta să nu fie plătibil. Blocul poate fi setat direct în momentul creării sau ulterior atât din fila  [Angajemente](/docs/finance-area/ledger-records/records/ledger-record)  a înregistrării contabile care generează angajamentul, cât și prin modificarea angajamentului însuși din formularul în cauză.
 
 
 
@@ -38,7 +38,7 @@ Prin efectuarea căutării (comanda Căută în bara de meniu), angajamentele vo
 
 Puteți consulata și urmatoarele articole:
 
--        [ Fila Angajamente](/docs/finance-area/ledger-records/records/create-ledger-record/maturity-values-tab)  din Înregistrări contabile;
+-        [ Fila Angajamente](/docs/finance-area/ledger-records/records/ledger-record)  din Înregistrări contabile;
 
 -         [Inserare manuală/help și Selecție date](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) ; 
 

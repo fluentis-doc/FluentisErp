@@ -47,7 +47,7 @@ Questa stampa corrisponde a ciò che, nella terminologia contabile, viene defini
 
 - **Visualizza contropartite**: il flag attivo visualizza i movimenti di contropartita riferiti ai movimenti del sottoconto selezionato (formato A4 orizzontale)
 
-- **No. righe**: in questo campo, attivo se il flag di cui sopra viene attivato, viene specificato quante righe di contropartita inserite nella sezione Libro giornale della **[registrazione contabile](/docs/finance-area/ledger-records/records/create-ledger-record/record-tab)** saranno visualizzate in estratto conto. Ad esempio in presenza di diversi conti di ricavo riferiti alla registrazione di una fattura emessa, il valore può essere aumentato se nella stampa non vengono riportati tutti i conti di contropartita così come inseriti nella registrazione.
+- **No. righe**: in questo campo, attivo se il flag di cui sopra viene attivato, viene specificato quante righe di contropartita inserite nella sezione Libro giornale della **[registrazione contabile](/docs/finance-area/ledger-records/records/ledger-record)** saranno visualizzate in estratto conto. Ad esempio in presenza di diversi conti di ricavo riferiti alla registrazione di una fattura emessa, il valore può essere aumentato se nella stampa non vengono riportati tutti i conti di contropartita così come inseriti nella registrazione.
 
 - **Annotazioni**: questo campo permette di inserire dati alfanumerici che saranno riportati nella stampa. Può essere utile per inserire un'annotazione veloce che rimane valida solo per la stampa elaborata in quel momento, il campo infatti si resetta chiudendo la form.
 

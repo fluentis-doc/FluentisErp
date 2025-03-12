@@ -1,5 +1,5 @@
 ---
-title: Căutare ordine planificate
+title: Ricerca Ordini Pianificati
 sidebar_position: 3
 ---
 
@@ -7,23 +7,23 @@ import SearchForm from './../../../import/sections/search-form.md'
 
 <SearchForm />
 
-*Butoane specifice*:
+*Pulsanti specifici*:
 
-> [Parametri MRP](/docs/configurations/parameters/production/mrp-parameters/search-mrp-parameters): permite deschiderea form-ul referitor la parametrii MRP ai articolului;             
-> [Lista componente (Distinta base)](/docs/erp-home/registers/production/bill-of-materials/search-and-insert-assemblies): permite deschiderea form-ului referitor la lista de componente a articolului;  
-> [Cicluri de lucru](/docs/erp-home/registers/production/routes/new-route): permite vizualizarea ciclului de lucru și a fazelor de producție corespunzătoare articolului.
+> [Parametri MRP](/docs/configurations/parameters/production/mrp-parameters/search-mrp-parameters): tramite questo pulsante è possibile aprire la schermata relativa ai parametri MRP dell'articolo;             
+> [Distinta base](/docs/erp-home/registers/production/bill-of-materials/search-and-insert-assemblies): permette di aprire la schermata relativa alla distinta base dell'articolo;  
+> [Cicli di lavoro](/docs/erp-home/registers/production/routes/new-route): permette di visualizzare il ciclo di lavoro e le relative fasi di produzione dell'articolo.
 
-*Câmpuri specifice*
+*Campi specifici*:
 
-**Dată început**: pentru ordinele planificate de achiziție sau în sistem lohn reprezintă data în care trebuie trimis furnizorului ordinul de achiziție care va fi generat ulterior cu eliberarea ordinului respectiv. Pentru ordinele planificate de producție, această dată reprezintă data de început prevăzută a primei faze de prelucrare a ciclului articolului;  
-**Dată FOB**: reprezintă data care este calculată adunând *Data de început prevăzută* cu *Timpul de aprovizionare* introdus în tab-ul [Furnizori preferențiali](/docs/erp-home/registers/items/create-new-items/item-registry/procurement) al articolului ordinului planificat și este gestionată doar pentru articolele cu tipul de aprovizionare *Achiziție*;  
-**Dată ETA**: reprezintă data care este calculată adunând *Data FOB* cu *Lead Time de Expediere* introdus în tab-ul *Furnizori preferențiali* al articolului ordinului planificat și este gestionată doar pentru articolele cu tipul de aprovizionare *Achiziție*;      
-**Dată sfârșit**: pentru ordinele planificate de achiziție sau în sistem lohn reprezintă data în care trebuie primită livrarea și va coincide cu data de primire prevăzută a liniei ordinului furnizor care va fi generat ulterior cu lansarea ordinului respectiv. Pentru ordinele planificate de producție, această dată reprezintă data de finalizare prevăzută a ultimei faze de prelucrare a ciclului articolului;  
-**Din disponibilitate minimă**: este activ doar dacă ordinul planificat a fost generat utilizând procedura de *Planificare generală* și dacă, în [Parametrii planificare](/docs/planning/ms-master-scheduling/general-schedule), parametrul care permite *Considerarea disponibilității minime în perioada* este activ. Acest parametru se activează atunci când *Data disponibilității minime* în perioada de planificare este ulterioară datei necesitate. În caz contrar, va fi dezactivat;            
-**Cantitate confirmată**: este diferită de zero doar dacă ordinul rezultă din elaborare MRP;  
-**Cantitate rezervată**: este cantitatea rezervată la data curentă a articolului;  
-**Obligatoriu**: dacă este activ, indică faptul că ordinul planificat de producție nu este modificabil în raport cu data de început setată în el.
+**Data inizio**: per gli ordini pianificati di acquisto o di conto lavoro rappresenta la data in cui deve essere inviato al fornitore l'ordine di acquisto che verrà successivamente generato con il rilascio dell'ordine stesso. Per gli ordini pianificati di produzione questa data rappresenta la data di previsto inizio della prima fase di lavorazione del ciclo dell'articolo);  
+**Data FOB**(free on Board): rappresenta la data che viene calcolata sommando alla *Data di inizio previsto* il *Tempo di Approvvigionamento* inserito nel tab [Fornitori Preferenziali](/docs/erp-home/registers/items/create-new-items/item-registry/procurement) dell'articolo oggetto dell'ordine pianificato, e viene gestita solo per gli articoli con tipo approvvigionamento *Acquisto*;  
+**Data ETA**(Estimated Time of Arrival): rappresenta la data che viene calcolata sommando alla *Data FOB* il *Lead Time di Spedizione* inserito sempre nel tab *Fornitori Preferenziali* dell'articolo oggetto dell'ordine pianificato, e viene gestita solo per gli articoli con tipo approvvigionamento *Acquisto*;      
+**Data fine**: per gli ordini pianificati di acquisto o di conto lavoro rappresenta la data in cui deve essere ricevuta la fornitura e quindi coinciderà con la data di previsto ricevimento della riga dell'ordine fornitore che verrà successivamente generato con il rilascio dell'ordine stesso. Per gli ordini pianificati di produzione questa data rappresenta la data di prevista fine dell'ultima fase di lavorazione del ciclo dell'articolo;  
+**Da disponibilità minima**: il flag è attivo solo se l'ordine pianificato è stato generato utilizzando la procedura di *Schedulazione generale* e se, nei [Parametri di Schedulazione](/docs/planning/ms-master-scheduling/general-schedule), il flag che consente di *Considerare la disponibilità minima nel periodo* è attivo. Questo flag si attiva quando la *Data della disponibilità minima* nel periodo di schedulazione è successiva alla data di fabbisogno; in caso contrario sarà disabilitato;            
+**Quantità confermata**: è diversa da zero solamente se l'ordine risulta generato dall'elaborazione dell'MRP;  
+**Quantità impegnata**: è la quantità che risulta essere impegnata alla data corrente dell'articolo;  
+**Tassativo**: se attivo, il flag indicherà che l'ordine pianificato di produzione non è spostabile rispetto alla data di inizio impostata al suo interno.
 
-În interiorul tabelului, ordinele vor fi vizualizate cu culori diferite în baza *Tipului ordinului planificat* (dacă este de achiziție, producție sau sistem lohn). Această setare se realizează în [Parametri necesar materiale](/docs/configurations/parameters/production/resource-requirements-parameters), în tabelul corespunzător unde se poate alege culoarea fundalului rândului sau a textului diferitelor ordine.
+All'interno della griglia, gli ordini verranno visualizzati con colori diversi in base al *Tipo di ordine pianificato* (se di acquisto, produzione e conto lavoro). Questa impostazione viene data all'interno dei [Parametri fabbisogno dei materiali](/docs/configurations/parameters/production/resource-requirements-parameters), nella relativa griglia dove si può scegliere il colore dello sfondo della riga o del testo dei diversi ordini.
 
-De asemenea, din acest form puteți să introduceți un nou ordin, făcând clic pe butonul [Inserează ordin](/docs/planning/ms-master-scheduling/planned-orders/new-planned-order).
+Sempre da questa form è possibile inserire un nuovo ordine, cliccando sul pulsante [Inserisci ordine](/docs/planning/ms-master-scheduling/planned-orders/new-planned-order).

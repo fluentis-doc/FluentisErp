@@ -1,0 +1,1 @@
+I dati si inseriscono [manualmente](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection), con l'ausilio dell'[help di campo](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) oppure possono essere proposti dalle procedure collegate.

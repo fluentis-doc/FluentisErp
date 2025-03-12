@@ -2,6 +2,7 @@
 title: Tipi ritenuta
 sidebar_position: 34
 ---
+
 :::tip[FAst Start]
 La tabella è interessata dalla procedura di [**Fast Start**](/docs/guide/fast-start)
 
@@ -10,7 +11,7 @@ Nel caso in cui si intenda configurare manualmente fare riferimento alla check l
 
 In questa tabella vengono ricercate ed inserite le tipologie di ritenuta d'acconto da associare ai compensi percipienti (gli agenti di commercio sono a loro volta anche dei percipienti) per la corretta gestione delle contabilizzazioni e degli altri adempimenti fiscali connessi.
 
-I campi della form sono:
+#### Campi specifici
 
 **Codice ritenuta**: codice alfanumerico di 5 caratteri di identificazione della ritenuta; normalmente si richiama il codice tributo ministeriale.
 
@@ -47,8 +48,9 @@ I campi della form sono:
 **Debito a carico ditta**: sottoconto da attribuire alla rilevazione contabile di debito Enasarco a carico ditta.
 
 
+### Percentuali 
 
-La sezione Percentuali contiene i seguenti campi (clic sulla freccia a destra di questa sezione):
+La sezione contiene i seguenti campi (clic sulla freccia a destra di questa sezione):
 
 % **Ritenuta**: percentuale di applicazione della ritenuta.
 

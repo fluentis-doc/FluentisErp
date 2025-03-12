@@ -1,50 +1,48 @@
 ---
-title: Modificar - Recalcular o risco cliente
+title: Modifica - Ricalcola rischio cliente
 sidebar_position: 1
 ---
 
-As duas máscaras geram a visualização do estado compressivo do risco para um determinado cliente: 'Recalcular o risco cliente' é um simples pedido da situação atual do cliente, enquanto a máscara de mudança do procedimento 'Utilização crédito' permite memorizar cada cálculo efetuado e visualizar portanto uma série histórica.
+Le due maschere sostanzialmente gestiscono la visualizzazione dello stato complessivo del rischio nei confronti di un determinato cliente: il ‘Ricalcola rischio cliente' è una semplice richiesta spot della situazione attuale del cliente, mentre la maschera di modifica della procedura ‘Utilizzo fidi' consente di memorizzare ogni calcolo effettuato e visualizzarne quindi una serie storica.
 
-Vamos ver em detalhe a lista dos campos visualizada, que é substancialmente a mesma presente na máscara da exposição clientes.
+Vediamo in dettaglio la lista dei campi visualizzata, che è sostanzialmente la stessa presente anche nella maschera dell'esposizione clienti.
 
-No cabeçalho estão presentes os parâmetros de cálculo: o código do cliente, a data de início cálculo (estabelecida de default pelos parâmetros do módulo risco cliente), a data final de referência (estabelecida hoje), o número de dias de atraso para os efeitos sbf e os efeitos depois da cobrança (estabelecidos pelos parâmetros do módulo) e o flag de consideração das partidas associadas com as registrações provisórias. Apertando o botão de cálculo vão aparecer os seguintes valores:
+In testata sono presenti i parametri di calcolo: il codice del cliente, la data di inizio calcolo (impostata di default dai parametri del modulo rischio cliente), la data finale di riferimento (impostata ad oggi), il numero di giorni di ritardo per gli effetti sbf e effetti al dopo incasso (impostati dai parametri del modulo, cui si rimanda), il flag di considerazione delle partite collegate a registrazioni provvisorie. Premendo il pulsante di calcolo appariranno i seguenti valori:
 
-**Fat. 12M**: é o faturado (da área de venda, faturas de venda) dos 12 meses precedentes a data de referência;
+**Fatt. 12M**: è il fatturato (dall'area vendita, fatture di vendita) dei 12 mesi precedenti alla data di riferimento;
 
-**Faturado ano**: é o faturado (da área de venda, faturas de venda) do início do ano;
+**Fatturato anno**: è il fatturato (dall'area vendita, fatture di vendita) dall'inizio dell'anno;
 
-Na seção **Situação partidas abertas** vão ser visíveis os totais débito/crédito e o saldo relativo as partidas abertas;
+Nella sezione **Situazione partite aperte** saranno visibili i totali dare/avere e il saldo relativo alle partite aperte;
 
-Na seção **Pag. da re. prov.** são visualizados as eventuais quantias de pagamento inseridas nas registrações provisórias;
+Nella sezione **Pagam da reg. provv.** saranno visualizzati gli eventuali importi di pagamento inseriti in registrazioni provvisorie;
 
-Na seção **Situação saldo contábil** vão ser visualizado os totais débito/crédito e o saldo do livro-razão da contabilidade geral;
+Nella sezione **Situazione saldo contabile** saranno visibili i totali dare/avere e il saldo del mastrino di contabilità generale;
 
-**Saldo partidas/contábil**: repropõe os totais débito/crédito calculados pelas partidas ou pelo saldo assim como visualizado nas seções precedentes;
+**Saldo partite/contabile**: ripropone i totali dare/avere calcolati dalle partite o dal saldo così come visualizzato nelle sezioni precedenti;
 
-**Faturas a contabilizar**: são as quantias das faturas (dos tipos fatura associados com o crédito) imprimidas mas ainda não contabilizadas;
+**Fatture da contabilizzare**: sono gli importi delle fatture (dei Tipi fattura collegati al fido) stampate ma non ancora contabilizzate;
 
-**CT-e a faturar**: são as quantias das notas de entrega (dos tipos notas de entrega associadas com o crédito) imprimidas mas ainda não faturadas;
+**Ddt da fatturare**: sono gli importi dei  DDT (dei Tipi DDT collegati al fido) stampate ma non ancora fatturate;
 
-**Ordens a executar**: são as quantias das ordens (dos tipos ordem associadas com o crédito) imprimidas, confirmadas mas ainda não executadas;
+**Ordini da evadere**: sono gli importi degli ordini (dei Tipi ordine collegati al fido) stampate, confermati ma non ancora evasi;
 
-**Efeitos emitidos**: são as quantias dos efeitos (do módulo carteira efeitos) emitidas e contabilizadas, mas ainda não apresentadas;
+**Effetti emessi**: sono gli importi degli effetti (del modulo portafoglio effetti) emessi e contabilizzati, ma non ancora presentati
 
-**Efeitos apresentados no desconto - ao sbf - da cobrança**: são as quantias dos efeitos apresentados mas que tem a data de vencimento (mais os dias dos parâmetros inseridos no cabeçalho do cálculo) superior a data de referência;
+**Effetti presentati allo sconto-al sbf-all'incasso**: sono gli importi degli effetti presentati ma che hanno data scadenza (più i giorni dei parametri inseriti in testata del calcolo) superiore alla data di riferimento;
 
-Seção **Não pagos**: se visualizam os não pagos não contabilizados, ou (se o flag é inserido) mesmo aqueles já contabilizados, como quantia que relativo número;
+Sezione** insoluti**: sono qui visualizzati gli insoluti non contabilizzati, oppure (se il flag è inserito) anche quelli già contabilizzati, sia come importo che relativo numero;
 
-A partir da soma dos valores precedentes se calcula o 'Risco cliente', que comparado com o crédito concedido, vai dar a ultrapassagem do crédito.
+Dalla somma dei valori precedenti viene calcolato il ‘Rischio cliente', che comparato al fido concesso, darà lo sconfinamento del fido.
 
-O campo **Vencido** visualiza a quantia das partidas abertas mas já vencidas, qual interior elemento de análise da situação do cliente.
-
-RIBBON BAR: representa o menu do módulo em questão, ou seja, a área na qual efetuar algumas ações. A lista de possíveis funcionalidades é sucessivamente representada:
+Il campo **Scaduto** visualizza l'importo delle partite aperte ma già scadute, quale ulteriore elemento di analisi della situazione del cliente.
 
 
 
-| RibbonFunction | RibbonMeaning |
+| Funzione | Significato |
 | --- | --- |
-| Salvar | O botão, presente na mudança de um crédito já calculado, permite memorizar o resultado obtido. |
-| Calcular | Refere-se ao procedimento para calcular a situação compressiva de risco para o cliente. |
+| Salva | Il pulsante, presente in modifica di un fido già calcolato, consente di memorizzare il risultato ottenuto. |
+| Calcola | Richiama la procedura per calcolare la situazione complessiva di rischio per il cliente. |
 
 
 

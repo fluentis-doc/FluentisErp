@@ -7,7 +7,6 @@ Le Tabelle dell'Area Amministrativa concernono i diversi moduli della suddetta A
 
 **Esse accolgono i dati di base e le configurazioni che saranno richiamate in tutte le procedure operative**. 
 
-
 :::danger[Attenzione]
 Una mancata gestione di questi dati di base potrebbe impedire l'utilizzo concreto dell'ERP nell'area interessata.
 :::
@@ -15,7 +14,6 @@ Una mancata gestione di questi dati di base potrebbe impedire l'utilizzo concret
 :::note[Esempio]
 Un esempio di dati di base è rappresentato dai Tipo Conto, ovvero le tipologie di conto contabile necessarie per definire poi il piano dei conti e tutti i suoi collegamenti, oppure le aliquote iva, necessarie per gestire le scritture contabili, ma anche i documenti di acquisto e vendita.
 :::
-
 
 Una opportuna e necessaria parametrizzazione consentirà sia la definizione della gestione del modulo relativo sia l'opportunità di poter usufruire di determinati automatismi.
 

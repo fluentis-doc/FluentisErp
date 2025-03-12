@@ -1,24 +1,15 @@
 ---
-title: Gestion d'appui de paiements
+title: Gestione appoggio pagamenti
 sidebar_position: 2
 ---
 
-À partir de ce masque s'avance à la gestion des données des appuis bancaires prévus pour les paiements (et éventuellement pour les encaissements). À l'intérieur des registres clients/fournisseurs sont possibles définir le sous-compte bancaire de paiement prédéfini: sur la base de ce chaque compte, à l'acte de sa création, ils viennent canalisés sur cet institut mais la donnée peut être géré et modifié par cette procédure de Gestion d'appui des paiements.
+Da questa maschera si procede alla gestione dei dati degli appoggi bancari previsti per i pagamenti (ed eventualmente per gli incassi). All'interno delle anagrafiche clienti/fornitori è possibile definire il sottoconto banca di pagamento predefinito: sulla base di questo ogni partita, all'atto della sua creazione, viene canalizzata su questo conto, ma il dato può essere modificato dalla presente maschera.
 
-Entre autres à cette fonction, le masque permet de visualiser le registre à l'intérieur duquel le compte a été payé, ainsi comme permise d'enregistrer manuellement la réception de l'avis de paiement, de son contrôle et de l'avenu envoie du même à travers les flag relatifs en grille.
+Oltre a questa funzione, la maschera consente di visualizzare la distinta all'interno della quale la partita è stata pagata, così come consente di memorizzare manualmente la ricezione dell'avviso di pagamento, del suo controllo e dell'avvenuto invio dello stesso attraverso i flag relativi in griglia.
 
-RIBBON BAR: il représente le menu de la forme en objet, à savoir la zone dans laquelle est possible d'effectuer des actions. La liste des fonctionnalités possibles est représentée de suite:
+La gestione puntuale dell'appoggio pagamenti è molto utile per ottenere successivamente una elaborazione del **[*Cash Flow*](/docs/treasury/cash-flow/reports)** raggruppata per banca, in modo da conoscere l'andamento e la consistenza, non solo del cash flow generale, ma anche di valutare la situazione e l'eventuale possibile scopertura di ogni singolo conto bancario aziendale.
 
-
-
-| RibbonFunction | RibbonMeaning |
-| --- | --- |
-| Rechercher | Bouton pour la recherche des comptes. |
-
-ZONE DE FILTRE: la zone de filtre est celle dédiée à recevoir la liste des possibles types de données grâce à lesquelles est possible d'effectuer une sélection. Les filtres sont typiquement en condition 'AND' et est possible de spécifier plusieurs critères des filtres en même temps.
-
-GRILLE DE RÉSULTAT: la grille de résultat représente la liste des comptes qui correspondent aux données de filtre surspécifie. L'utilisateur, après avoir spécifié les valeurs par lesquelles désire obtenir une recherche des comptes, en appuyant le touche [Recherche] présent dans la rélative Ribbon, obtiendra dans la grille de résultat la liste des comptes.
-
+**<a href="https://youtu.be/DkxoWgTkvUg&amp;t=5m37s" target="_blank" rel="noopener noreferrer">Si rinvia al Tutorial - Link YouTube </a>**
 
 
 

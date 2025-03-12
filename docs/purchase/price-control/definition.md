@@ -6,7 +6,8 @@ sidebar_position: 1
 In questa maschera vengono definite le politiche di sconto in base alle impostazioni inserite nelle altre maschere del gruppo 
 **Gestione prezzi**.     
 
-Nella prima griglia sono presenti le seguenti colonne:          
+Nella prima griglia sono presenti le seguenti colonne:  
+
 >- **Descrizione conto**: contiene l'anagrafica destinataria della politica di sconto.        
 >- **Classe**: riguarda la classe articolo destinataria della politica di sconto; è un campo facoltativo.        
 >- **Categoria sconto acquisti**: permette di scegliere la categoria sconto acquisti da associare all'anagrafica tra quelle codificate nella tabella [Categoria sconto acquisti](/docs/configurations/tables/purchase/category-discounts-price-management/).    

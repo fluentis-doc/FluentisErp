@@ -19,9 +19,9 @@ La griglia contiene le categorie per la specifica dell'Enasarco, quali:
 
 **Codice/Descrizione**: codice e descrizione che indica il codice di riferimento agente. Il codice deve essere univoco;
 
-**Min Enasarco**: valore in base trimestrale. È l'importo minimo dell'enasarco;
+**Min Enasarco**: valore in base trimestrale. È l'importo minimo del contributo enasarco (esempio 250,50 per monomandatario);
 
-**Max Enasarco:** valore in base annuale. È l'importo massimo dell'enasarco (massimale) e una volta raggiunto, non è più possibile fare versamenti previdenziali in favore dell'agente;
+**Max Enasarco:** valore in base annuale. È l'importo massimo dell'imponibile provvigionale ai fini del contributo enasarco (massimale) e una volta raggiunto, non è più possibile fare versamenti previdenziali in favore dell'agente (esempio 44.727,00 per monomandatario);
 
 **Tipo ritenuta**: è il tipo di ritenuta da applicare all'agente. Per ulteriori approfondimenti fare riferimento alla sezione della parte amministrativa [Tipi Ritenuta](/docs/configurations/tables/finance/withholding-tax-types). Si consiglia di impostare questo codice in anagrafica agente.
 

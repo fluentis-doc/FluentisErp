@@ -16,7 +16,7 @@ La form si compone di un'area di filtro e da una di risultato. Una volta imposta
 Per poter inserire nuove codifiche è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.    
 
 :::note Nota
-Per ogni nuovo inserimento è necessario indicare un *Codice* e *Descrizione* del tipo costificazione e la relatva *Numerazione*; dopo di che in automatico vengono riportati i dati di *Tipo costo*, *Costo del lotto*, *Costo della commessa* e *Tipo ricarico* indicati nella sezione *costificazione commessa* dei **Parametri MPS**, ovvimanete possono essere poi modificati manualmente in base alle esigenze.     
+Per ogni nuovo inserimento è necessario indicare un *Codice* e *Descrizione* del tipo costificazione e la relativa *Numerazione*; dopo di che in automatico vengono riportati i dati di *Tipo costo*, *Costo del lotto*, *Costo della commessa* e *Tipo ricarico* indicati nella sezione *costificazione commessa* dei [Parametri MS](/docs/configurations/parameters/production/mps-parameters), ovviamente possono essere poi modificati manualmente in base alle esigenze.     
 :::    
 
 Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).     

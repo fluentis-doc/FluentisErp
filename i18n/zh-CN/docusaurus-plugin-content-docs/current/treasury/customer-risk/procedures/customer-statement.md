@@ -1,64 +1,73 @@
 ---
-title: 导出客户
+title: Esposizione clienti
 sidebar_position: 2
 ---
 
-**导出客户**掩码用于管理多个客户的风险状况，为代理商或国家提供数据，为公司组分组。接下来将详细介绍其设置和值。掩码中的客户都在登记中插入了“客户说明”标记。
+La form si trova in Tesoreria > Rischio Cliente > Procedure > Esposizione clienti
 
-客户风险参数的初始部分与模块设置的默认计算参数相同，此外还包括使用的记录日期范围，以监控汇款（详细请参见下面的文档）。
+Consente di avere un quadro generale complessivo di tutta la situazione di rischio nei confronti dei vari clienti, con la possibilità di ottenere dati per agente, nazione, raggruppando anche per gruppi societari. 
 
-在标头接下来的部分可以筛选某一个责任人（与客户登记关联的员工，第一个选项卡“行政管理”），筛选“外国”或“意大利”的客户，查看用于“公司组”的分组数据（只可以查看客户登记行政管理选项卡中“公司组”字段插入的明细账目总计，而非单个详细的明细账目），以及为代理商或国家分组（和筛选）数据。在右侧，可以按账户/明细账目代码或按客户说明（公司名称）排序数据。
+## Come verificare l'esposizione clienti
 
-现在将详细介绍网格中显示的数据，其中将用红色显示差异行：
+1. Espandere, se necessario, la sezione dei filtri per inserire l'intervallo di date di riferimento entro cui verificare ed il criterio di raggruppamento desiderato (Per nazione, per agente o per cliente).
 
-**未付**：可以查看未记账的未付金额，或者已记账的未付金额（如果已在标头中，并插入了标记）；
+2. Premere il tasto **Ricerca**: i clienti presentati nella maschera sono quelli per i quali in anagrafica è stato inserito il flag *Esposizione clienti*.
 
-**最近12个月的营业额**：参考日期前12个月的营业额（来自销售区域或销售发票）；
+:::note[Nota]
+La sezione iniziale dei *parametri rischio cliente* ripropone gli stessi parametri di default di calcolo impostati per il modulo, con in più il range di date registrazione utilizzato per il controllo rimesse (per i dettagli si veda il documento successivo).
+:::
 
-**天数差异**：根据“检查汇款”掩码的逻辑计算结果，指出平均到期日和平均收款起息日的差异；
+:::note[Ulteriori filtri disponibili]
+E' possibile filtrare per un determinato responsabile (il dipendente che è stato associato all'anagrafica cliente, primo tab *Amministrazione*), filtrare i clienti *Esteri* o *Italia*, visualizzare i dati raggruppati per *gruppo societario* (verrà visualizzato un solo totale per il sottoconto inserito nel campo del *gruppo societario* presente nel tab *amministrazione* dell'anagrafica cliente invece che i singoli sottoconti cliente di dettaglio) e infine raggruppare (e filtrare) i dati per agente o nazione. 
 
-**到期日差异天数**：指出平均到期日与文档日期的差异；
+E' prevista la possibilità di ordinare i dati per codice di conto/sottoconto o per descrizione (ragione sociale) del cliente.
+:::
 
-**营业额**：从年初开始的营业额（来自销售区或销售发票）；
+### Dati visualizzati in griglia 
 
-**应收帐款周转天数**：计算公式是365*( 贷方到期值-借方到期值+到期账单+未付+待记账的发票/最近12个月的营业额。如果最近12个月的营业额为0，那么应收账款周转天数就为0；
+Saranno visualizzate in rosso le righe con scostamento.
 
-**信用额度** 和 **担保的信用额度**：管理的信用额度和担保的信用额度金额；
+**Insoluti**: viene qui visualizzato l'importo degli insoluti non contabilizzati, oppure (se il flag in testata è inserito) anche quelli già contabilizzati;
 
-**总分类账余额**：显示从到期值或分类账余额计算的贷方/借方总计；
+**Fatt. ultimi 12 mesi**: è il fatturato (dall'area vendita, fatture di vendita) dei 12 mesi precedenti alla data di riferimento;
 
-**临时记录的支付**：与临时记录关联的到期值支付金额；
+**Scostamento giorni**: indica il numero di giorni di scostamento tra la scadenza media e la data valuta d'incasso media, secondo quanto calcolato con la logica della maschera ‘Controllo rimesse' cui si rinvia per dettagli; La particolarità è che è una media pesata sull’importo della partita. Infatti il dato è espresso in numeri creditori (come in estratto conto scalare bancario)
 
-**到期账单**：应计账单金额（发布的账单+显示的账单）；
+**Scostamento GG scad.**: indica i giorni di scostamento medi della data scadenza rispetto alla data documento; considera solo le partite scadute = SOMMA (residuo partita * giorni ad oggi di ritardo dalla data scadenza) / somma dei residui partite. Calcola dunque un valore medio dei ritardi
 
-**待记账**：已打印但未记账的发票的金额（与信用额度关联的发票类型）；
+**Fatturato**: è il fatturato (dall'area vendita, fatture di vendita) dall'inizio dell'anno;
 
-**待开发票**：已打印但未开发票的送货单的金额（与信用额度关联的送货单类型）；
+**Giorni medi incasso**: Equivale all'indicatore denominato DSO (Days of Sales Outstanding), i giorni di rotazione del credito. La formula di calcolo è 365 * (Partite Dare – Partite avere + Effetti in scadenza + Insoluti + Fatture da contabilizzare) / Fatt. Ultimi 12 Mesi. Nel caso in cui il fatturato degli ultimi 12 mesi sia 0 allora anche il DSO sarà 0;
 
-**显示总计**：未结订单总和+待开发票的送货单+待记账的送货单+到期值/分类账余额+到期账单+未记账的未付；
+**Fido **e** Fido assicurato**: importo del fido gestionale e del fido assicurato;
 
-**已过期**：已过期的未结到期值的金额；
+**Saldo partitario**: ripropone i totali dare/avere calcolati dalle partite o dal saldo contabile;
 
-**来自临时记录的已过期**：与上一条相同，但来自临时记录；
+**Pagam. da reg. provv.**: importo dei pagamenti partite collegati a registrazioni provvisorie;
 
-**订单**：已打印并确认但未发布的订单的金额（与信用额度关联的订单类型）。
+**Effetti in scadenza**: importo degli effetti in maturazione (effetti emessi + presentati);
 
-从显示客户掩码可以：打印查看的数据，或者通过相关管理按钮，发送选中客户行的“汇款监控“掩码。
+**Da contabilizzare**: sono gli importi delle fatture (dei Tipi fattura collegati al fido) stampate ma non ancora contabilizzate;
 
-功能导航栏：功能导航栏为菜单窗体，包含对已有文档而不是新建文档进行的操作。当前选项卡的功能如下：
+**Da fatturare**: sono gli importi dei  DDT (dei Tipi DDT collegati al fido) stampate ma non ancora fatturate;
+
+**Tot. Esposizione**: somma di ordini aperti + ddt da fatt. +fatt. da cont. + saldo partite/cont + effetti a scadere + insoluti non contab.;
+
+**Scaduto**: importo delle partite aperte e già scadute;
+
+**Scaduto da reg. provv.**: come il precedente, ma derivanti da registrazioni provvisorie;
+
+**Ordini**: sono gli importi degli ordini (dei Tipi ordine collegati al fido) stampati, confermati ma non ancora evasi.
+
+Dalla maschera dell'esposizione clienti è possibile: effettuare una stampa dei dati visualizzati, oppure passare alla maschera del ‘Controllo rimesse' relativamente alla riga del cliente selezionato, attraverso il relativo pulsante di gestione.
 
 
 
-| RibbonFunction | RibbonMeaning |
-| --- | --- |
-| 计算 | 用于根据筛选条件和指定设置计算客户风险 |
-| 预览 | 用于计算结果的打印预览 |
-| 打印 | 用于打印计算结果 |
-| 汇款监控 | 用于打开汇款监控掩码 |
+**Pulsanti specifici**
 
-筛选区域：筛选区域包含可以对所有插入的信用额度进行搜索的数据类型。筛选器具有高级筛选功能，可以同时指定多个筛选条件。
+**Calcola** Pulsante per calcolare il rischio clienti secondo i filtri e le impostazioni indicate.
 
-结果网格：结果网格包含按照指定条件筛选出的计算。首先用户指定执行计算的值，然后在功能导航栏中单击“计算”，最后在网格中将以列表形式显示计算结果。
+**Controllo rimesse** Richiama la procedura per aprire la maschera di controllo rimesse.
 
 
 

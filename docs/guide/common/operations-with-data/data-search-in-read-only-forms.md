@@ -1,16 +1,16 @@
 ---
-title: Ricerca dati nelle form di sola lettura
+title: Ricerca dati
 sidebar_position: 2
 ---
 
-La ricerca nelle form di sola lettura permette di trovare i record inseriti precedentemente per *visualizzarli*, *modificarli* , *cancellarli*, ecc. se l'utente ha i **diritti necessari** per queste operazioni.
+Le form permettono di trovare i record inseriti precedentemente per *visualizzarli*, *modificarli* , *cancellarli*, ecc. se l'utente ha i **diritti necessari** per queste operazioni.
 
 Certe form di questo tipo contengono il pulsante di inserimento ![](/img/neutral/common/new.png) che, una volta premuto, apre la form di inserimento per i nuovi record.
 
 Nelle form di ricerca è possibile visualizzare: un solo record (filtro per numero documento), più record (filtro per data), i record inseriti in un anno (filtro per anno), i record inseriti per una certa anagrafica (filtro per conto/sottoconto), ecc.
 
 
-La **Ricerca per form di sola lettura** si suddivide in tre sezioni:
+Una form si suddivide in tre sezioni:
 
 ### 1. Barra di ricerca avanzata
 

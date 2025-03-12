@@ -1,9 +1,9 @@
 ---
-title: Print Presentation Lists
+title: Stampa Distinte di presentazione
 sidebar_position: 1
 ---
 
-Through this dialog it is possible to print the bills presentation lists according to filter set. The list report (with 'printed' flag) is obligatory in order to account the same list.
+Da questa finestra è possibile stampare le distinte di presentazione effetti secondo il filtro impostato. La stampa della distinta (la presenza del flag di stato ‘Stampata') è obbligatoria per poter contabilizzare la distinta stessa.
 
 
 

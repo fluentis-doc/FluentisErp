@@ -10,7 +10,7 @@ U ovom obrascu nalaze se sljedeća polja:
 **Stopa PDV-a**: to je stopa PDV-a koja će se predložiti u aktivnom/pasivnom ciklusu dokumentacije i u knjigovodstvenim zapisima.
 
 :::note VAŽNO 
-Prioritet valorizacije polja [PDV](/docs/sales/sales-invoices/invoicing/items) polja u dokumentima uključuje sljedeći redoslijed:  
+Prioritet valorizacije polja [PDV](/docs/sales/sales-invoices/invoicing/sales-invoice) polja u dokumentima uključuje sljedeći redoslijed:  
 1. provjera [Deklaracija namjere](/docs/finance-area/declarations/declarations/intent-declaration), ukoliko postoje, i promjena PDV broja unutar dokumenta;  
 2. šifarnik kupca/dobavljač;  
 3. šifarnik artikla.

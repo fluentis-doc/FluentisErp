@@ -5,7 +5,7 @@ sidebar_position: 3
 
 La tabella presenta la lista dei cambi fissi di conversione all'euro: impostando il valore dell'euro il programma procederà automaticamente al calcolo delle valore inverso che sarà utilizzato poi nei calcoli dei controvalori del gestionale.
 
-**Campi della griglia:**
+#### Campi specifici
 
 **Divisa**: rappresenta il codice della divisa (tabella di riferimento: ) 
 

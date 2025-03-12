@@ -3,8 +3,7 @@ title: Registri IVA
 sidebar_position: 20
 ---
 
-:::note Percorso
-**Configurazione > Tabelle > Amministrazione > Registri IVA**
+Percorso form: **Configurazione > Tabelle > Amministrazione > Registri IVA**
 
 
 :::tip[FAst Start]
@@ -22,23 +21,18 @@ I registri creati dal Fast Start sono già pronti per gestire
 - Riepilogativo per stampa liquidazioni iva
 :::
 
----
+### Pulsanti specifici
 
-Tabella di impostazione dei registri IVA da gestire nella società attiva. 
-
-:::note Pulsanti della Ribbon bar
-| Funzione | Significato |
-| --- | --- |
-| Nuovo | Pulsante per effettuare l'inserimento di un nuovo registro IVA. |
-| Inserimento anno | Pulsante per effettuare l'inserimento di un nuovo anno per il registro IVA su cui si è posizionati. |
-| Cancella | Pulsante per effettuare la cancellazione del registro IVA su cui si è posizionati. |
-| Cancella anno | Pulsante per effettuare la cancellazione dell'anno del registro IVA su cui si è posizionati. |
-| Anteprima | Pulsante per effettuare la stampa. |
-| Stampa | Pulsante per effettuare la stampa. |
-| Annulla stampe definitive | Pulsante per effettuare l'annullamento delle stampe definitive dei registri. Si apre un dialog nel quale selezionare il registro e il periodo che si intende annullare. |
+**Nuovo**: permette di effettuare l'inserimento di un nuovo registro IVA.  
+**Inserimento anno**: permette di effettuare l'inserimento di un nuovo anno per il registro IVA su cui si è posizionati.  
+**Cancella**: permette di effettuare la cancellazione del registro IVA su cui si è posizionati.  
+**Cancella anno**: permette di effettuare la cancellazione dell'anno del registro IVA su cui si è posizionati.  
+**Anteprima**: permette di effettuare la stampa.  
+**Stampa**: permette di effettuare la stampa.  
+**Annulla stampe definitive**: permette di effettuare l'annullamento delle stampe definitive dei registri. Si apre un dialog nel quale selezionare il registro e il periodo che si intende annullare.  
 :::
 
-I campi della **prima sezione**:
+### Prima sezione 
 
 **Codice**: codice alfanumerico identificativo del registro.
 
@@ -64,9 +58,9 @@ I campi della **prima sezione**:
 
 **Descrizione**: descrizione del tipo attività iva
 
----
+### Seconda sezione  
 
-**La seconda sezione** consente di impostare il contatore dei protocolli per ogni anno contabile nel campo 'Prot. IVA Iniziale'.
+Consente di impostare il contatore dei protocolli per ogni anno contabile nel campo 'Prot. IVA Iniziale'.
 
 **Anno**: anno di riferimento.
 
@@ -77,8 +71,6 @@ I campi della **prima sezione**:
 **Data ultima stampa**: data di esecuzione dell'ultima stampa definitiva.
 
 **Ultima pag. stampata**: ultimo numero di pagina stampata in definitiva.
-
----
 
 :::tip nota
 la stampa di questa tabella consente di visualizzare l'ultimo periodo stampato in modo definitivo per ogni registro e anno

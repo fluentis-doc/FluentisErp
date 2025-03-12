@@ -25,12 +25,12 @@ La form si compone di un'area di filtro e da una di risultato. Una volta imposta
 Per poter inserire nuove codifiche è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Inserimento**.
 Per il nuovo record si devono inserire almeno i campi obbligatori richiesti dal programma: il Codice del **Magazzino** e la **Descrizione**.
 
-*Campi specifici*: 
+#### Campi specifici 
 
-> **Sito produzione**: indica il [Sito Produzione](/docs/configurations/parameters/production/production-orders-parameters/production-site) a cui appartiene il magazzino;   
-> **Area gestionale**: indica l'[Area gestionale](/docs/configurations/tables/logistics/management-area) a cui appartiene il magazzino;     
-> **Data fine validità**: indica la data di fine validità del magazzino;  
-> **Nomignolo** e **Ragione sociale**: indica la destinazione (ripresa dall'*Anagrafica contatti*).   
+- **Sito produzione**: indica il [Sito Produzione](/docs/configurations/parameters/production/production-orders-parameters/production-site) a cui appartiene il magazzino;   
+- **Area gestionale**: indica l'[Area gestionale](/docs/configurations/tables/logistics/management-area) a cui appartiene il magazzino;     
+- **Data fine validità**: indica la data di fine validità del magazzino;  
+- **Nomignolo** e **Ragione sociale**: indica la destinazione (ripresa dall'*Anagrafica contatti*).   
 
 Per ogni magazzino è poi possibile inserire i relativi **Centri di costo** e/o i **Centri di ricavo**. 
 

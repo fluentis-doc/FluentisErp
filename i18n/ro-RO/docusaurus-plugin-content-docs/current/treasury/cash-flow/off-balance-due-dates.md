@@ -1,21 +1,32 @@
 ---
-title: Scadențe extracontabile
+title: Scadenze Extracontabili
 sidebar_position: 3
 ---
 
-Cu ajutorul acestei ferestre pot fi gestionate scadențele extracontabile care influențează fluxurile de cash flow, cum ar fi: salarii, împrumuturi etc.
-
-Se vor adăuga/modifica în grid noile scadențe prevăzute, inserând flag-ul ‘închisă' pentru a nu mai considera linia în următoarele simulări.
-
-RIBBON BAR: reprezintă meniul Form-ului în discuţie.Mai precis, aria în care se pot efectua acţiuni asociate la procedura curentă. Prezentăm în continuare lista cu funcţionalităţile posibile.
+La form si trova in Tesoreria > Cash Flow > Cash Flow > Scadenze extra-contabili
 
 
+Con questa maschera è possibile gestire le scadenze extracontabili che vengono lette nell'apposito flusso di cash flow (definito nella tabella [**Tipi Flusso**](/docs/configurations/tables/treasury/cash-flow-module-tables/flux-types) dal flag *Extra contabile*), come ad esempio prevedere le uscite per tributi, salari/stipendi, ecc. ecc..
 
-| Functie | Functionalitate |
-| --- | --- |
-| Caută | Buton pentru aplicarea filtrelor de căutare în baza de date a scadențelor extracontabile; |
-| Nou | Buton pentru inserarea unei noi scadențe extracontabile; |
-| Șterge | Buton pentru ștergerea scadenței extracontabile selectate; |
+## Come inserire una scadenza extra contabile per la lettura nel cashflow
+
+Inserire direttamente nella griglia le scadenze previste.
+
+- Il campo **Tipi scadenza** è collegato all'omonima tabella dove poter definire liberamente una "etichetta" per rappresentare la tipologia di scadenza
+- La Data scadenza definirà la rappresentazione nel cashflow (nel mese corrispondente) essendo da considerare come la data di manifestazione del flusso finanziario che stiamo inserendo
+- La Divisa sarà proposta pari a quella della società (es. L'Euro) e può essere variata per inserire un flusso in divisa estera, in questo caso si gestirà anche il cambio in base alla dat scadenza.
+- L'importo in valuta è quello denominato nella divisa selezionata nel campo precedente, mentre l'importo Dare (flusso finanziario positivo, esempio un credito) o Avere (flusso negativo esempio un debito) sono denominati in divisa della società (es. Euro)
+- il flag **chiusa** può essere usto per non considerare più la riga nelle prossime simulazioni senza dover cancellare la riga, nel caso si voglia conservarla e memorizzarla.
+
+
+
+**Pulsanti specifici**
+
+**Ricerca** Pulsante per applicare i filtri di ricerca sulla lista delle scadenze extracontabili.
+
+**Nuovo** Imposta il cursore all'inserimento di una nuova scadenza extracontabile.
+
+**Cancella** Cancella la scadenza extracontabile selezionata.
 
 
 

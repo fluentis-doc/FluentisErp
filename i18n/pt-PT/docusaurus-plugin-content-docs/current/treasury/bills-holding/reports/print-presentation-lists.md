@@ -1,9 +1,9 @@
 ---
-title: Imprimir lista de apresentação
+title: Stampa Distinte di presentazione
 sidebar_position: 1
 ---
 
-A partir desta janela é possível imprimir as listas de apresentação efeitos em relação com o filtro estabelecido. A imprensa da lista (a presença do flag de estado 'Imprimida') é obrigatória para poder contabilizar a mesma lista.
+Da questa finestra è possibile stampare le distinte di presentazione effetti secondo il filtro impostato. La stampa della distinta (la presenza del flag di stato ‘Stampata') è obbligatoria per poter contabilizzare la distinta stessa.
 
 
 

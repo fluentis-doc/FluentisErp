@@ -1,25 +1,28 @@
 ---
-title: Importation enregistrements
+title: Importazione registrazioni
 sidebar_position: 3
 ---
 
-À travers cette procédure s'exécute la procédure d'importation du fichier des enregistrements comptables créé par le DocFinance.
+Attraverso questa procedura si esegue la procedura di importazione del file delle registrazioni contabili creato da DocFinance.
 
-La procédure d'importation prévoit qu'on va à individuer le fichier avec le bouton 'Importation' (il sera proposé par défaut le dernier utilisé) et que cet est confirmé dans le masque de sélection du fichier. À ce point le système ira à créer les enregistrements comptables relatifs, en fermant les comptes indiqués par le DocFinance et en relevant comptablement les mouvements sur les comptes élaborés dans le système (les causes comptables doivent avoir le même code entre ERP et DocFinance).
+L'importazione avviene attraverso un flusso *Folder Monitor* di Bizlink.
 
-Le résultat de l'importation sera visible dans la grille inférieure (au contraire dans la supérieure seront visualisés les paramétrages exécutés) et avec les boutons du masque sera possible: ouvrir les enregistrements comptables, supprimer l'importation, visualiser le détail des erreurs trouvées dans le cours de l'importation.
+Pertanto il file con le registrazioni da importare sarà depositato nella cartella monitorata dal servizio il quale provvederà ad importarle n automatico.
 
-RIBBON BAR: il représente le menu de la forme en objet, à savoir la zone dans laquelle est possible d'effectuer des actions. La liste des fonctionnalités possibles est représentée de suite:
+A questo punto il sistema andrà a creare le registrazioni contabili relative, chiudendo le partite indicate da DocFinance e rilevando contabilmente i movimenti sui conti mappati nel sistema (le causali contabili devono avere lo stesso codice tra ERP e DocFinance).
+
+Il risultato dell'importazione sarà visibile nella griglia inferiore (mentre nella superiore saranno visualizzati le importazioni eseguite) e con i comandi della ribbon bar sarà possibile cancellare l'importazione e visualizzare il dettaglio degli errori riscontrati nel corso dell'importazione.
+
+:::danger ATTENZIONE
+L'importazione dei pagamenti prevede che nel tracciato Docfinance sia passato l'id della partita aperta da chiudere andando così a generare da parte di Fluentis un pagamento ad essa agganciato.
+
+Se per qualsiasi motivo l'id della partita non corrisponde a quello presente nel tracciato (modifiche manuali di qualsiasi genere effettuate dopo l'esportazione partite che sono state poi gestite in Docfinance) saranno generati dei pagamenti, ma essi non saranno correttamente agganciati alle partite le quali rimarranno aperte. E' possibile procedere a compensare tali partite oppure a ricercare i pagamenti importati in questa situazione, cancellarli e manualmente ricrearli agganciando correttamente la relativa partita. L'operazione si esegue, dopo aver cancellato il pagamento, premendo il tasto *Nuovo* e poi *Crea da partite / pagamenti* e selezionando la partita da chiudere.
+:::
 
 
-
-| RibbonFunction | RibbonMeaning |
-| --- | --- |
-| Rechercher | Avec ce bouton il est possible de rechercher les importations déjà exécutées. |
-| Importation | Exécuter la procédure d'importation des données. |
-| Visualiser | Visualiser le résultat comptable de l'importation. |
-| Supprimer | Supprimer l'importation sélectionnée. |
-| Visualiser les erreurs | Ouvrir un masque de visualisation des erreurs individuées dans le cours de l'importation. |
+:::note Info
+[Link alle specifiche tecniche **Docfinance**](/pdf/it-IT/TRACCIATI_DocFinance_28_Luglio_2021.pdf)
+:::
 
 
 

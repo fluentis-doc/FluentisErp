@@ -1,81 +1,60 @@
 ---
-title: Unpaids Parameters
+title: Parameters Unpaid
 sidebar_position: 2
 ---
 
-RIBBON BAR: the ribbon bar represents the Form menu, that is the area on which it is possible to perform actions linked to the procedure in use. The possible features list is the following:
+The parameters of the **Unpaid** module can be found in **Parameters > Treasury (Parametri > Tesoreria)**.
 
+In the default parameters for defaults, you can pre-set the default elements to propose in the module procedures.
 
+#### Type of registration (Tipo di registrazione)  
+- **Transitory account + protest costs (Conto transitorio + spese di protesto)**: with this setting, the customer invoice will be reopened on a transitory account for the same amount as the original bill and charge the costs to the bank account.   
+- **Customer + protest costs (Cliente + spese di protesto)**: it is recommended to set the choice to ‘Customer + protest costs' so that the customer invoice can be reopened for the same amount as the original bill and charge the costs to the bank account.  
 
-| Function | Meaning |
-| --- | --- |
-| Save | Button to save settings. |
+#### Handling invoices (Gestione partite)  
+- **Re-opening of invoice maturity value**: it is recommended to set the choice to ‘Reopening of the invoice-related item.' With this option, the procedure will open a new item but with the same references to the document number and date of the original invoice. In the case of a summary bill of several documents, the first in the list will be inserted, but the notes of the item will manage the list of all references.  
+- **Opening of new maturity value**: the alternative option, opening a new item, will create a new item with the number and document date assigned based on the number and date of the bill that went into default. 
 
-The Unpaids module parameters are located in the following path [Home>Parameters>Treasury]
+#### Costs (Spese)
 
-In Unpaids parameters it is possible to pre-set the automatic elements to be proposed within the module procedures. In particular:
+The section must be set if you want to have a default to propose for the creation of the customer invoice for default costs.
 
+- **Invoice type**: allows you to set the type of invoice to be used.  
+- **Pay. type**: allows you to set the type of payment to be used.  
+- **Units of Measure**: allows you to set the unit of measure for the item line.  
+- **Payment solution (Sol. pagamento)**: allows you to set the payment solution to generate the related deadline.  
 
+#### Recovery of expenses (Spese di rivalsa) 
+- **Accounting at cost of reimbursement expenses**: FluentisERP will account for the cost of reclaimed expenses charged to the customer.
+- **Invoicing type**: allows you to set the sales turnover or the income counterpart to be associated with the invoice line.  
+- **VAT rate**: allows you to set the VAT rate. 
 
-| Function | Meaning |
-| --- | --- |
-| Transitory Account + Protest Expenses | Through this setting it will be possible to open again the customer maturity value on a transitory account, for the same amount of the original bill and to debit the expenses to the bank account. |
-| Customer + Protest Expenses | It is recommended to choose “Customer + protest expenses” in order to open again the customer maturity value for the same amount of the original bill and to debit the expenses to the bank account. |
-| Re-Opening of Invoice Maturity Value | It is recommended to choose “Re-Opening of Invoice Maturity Value”. Through this option the procedure will open a new maturity value, but with the same document number and date compared to the original invoice.In case of summary bill of mode documents it will be possible to insert the first one of the list, but in maturity value notes there will be the possibility to manage the list of all references. |
-| Opening of a New Maturity Value | The alternative options, “Opening of a new maturity value” will create a new maturity value with document number and date attributed according to the number and date of the unpaid bill. |
-| Add Maturity Value to the Related Invoice | Field not managed. |
-| Opening of a New Maturity Value | Field not managed. |
+#### Stamp duty recovery (Recupero bolli) 
+- **Invoicing type**: allows you to set the sales turnover or the income counterpart to be associated with the invoice line.  
+- **VAT rate**: allows you to set the VAT rate. 
 
+#### Reclaimed expenses (Spese di rivalsa) 
+- **Invoicing type**: allows you to set the sales turnover or the income counterpart to be associated with the invoice line.
+- **VAT rate**: allows you to set the VAT rate. 
 
+#### Parameters (Parametri) 
+- **Ledger Records Template**: it is the cause to be proposed in the default accounting procedures.  
+- **Protest expenses account**: it is the account to be used to record the expenses charged by the bank.  
+- **Temporary account**: it is the transitory sub-account that would be used for accounting in case the management 'Transitory account + protest costs' has been set. It is still recommended to fill in this field (perhaps with the same account for expenses) as it will be required for the execution of the accounting procedure.  
+- **Bank transitory account**: it is the transitory bank account to be used in case the default relates to effects not presented with the procedure (e.g., in the case of using the DocFinance module). 
+ 
+:::danger Attention
+By filling in this field, the set account will be used, regardless of the setting of the flags described above in the section *Recording type*, with priority over the normally moved counterpart account (the effects account if the effect is *issued*, the s.b.f account at the header of the list if the effect is *presented*, and the C/C bank account if the effect is *credited*).
 
+**It is therefore advisable not to fill it in unless necessary.**
+:::
 
+- **Cost charging account to customer (Conto addebito spese a cliente)**: it is the income sub-account to be used in the default accounting procedure in case the option to charge costs to the customer has been chosen.  
+- **Interest type**: a reference interest rate may be linked to the default. In case of promissory notes, an initial interest calculation can be simulated between the expected due date of the bill and the date of recording the default.  
+- **Single mat. value creation**: this flag allows you to open a single item for the default of a bill created from N different items. It is generally not used to reopen the history of items with the original references.
 
-The section below has to be set only if the user wants to obtain a default to be proposed for the creation of customer invoice about unpaid charges.
+:::danger Attention
+Do not set if you manage Agents with accumulation upon payment made or total.
+:::
 
-
-
-| Function | Meaning |
-| --- | --- |
-| Invoice Type | It sets the invoice type to be used. |
-| Paym. Type | It sets the payment type to be used. |
-| Unit of Measure | It sets the unit of measure of item line. |
-| Payment Terms | It sets the payment solution in order to generate the related maturity. |
-
-
-
-| Function | Meaning |
-| --- | --- |
-| Invoicing Type | It sets the sales turnover that corresponds to the revenue offset with which it is possible to record the operation in the petty cash book. |
-| VAT Rate | It sets the VAT rate. |
-
-
-
-| Function | Meaning |
-| --- | --- |
-| Invoicing Type | Field not managed. |
-| VAT Rate | Field not managed. |
-
-
-
-| Function | Meaning |
-| --- | --- |
-| Invoicing Type | Field not managed. |
-| VAT Rate | Field not managed. |
-
-
-
-| Function | Meaning |
-| --- | --- |
-| Ledger Template | It is the template to be proposed in the unpaids accounting procedures. |
-| Protest Expenses Account | It is the account to be used in order to detect the expenses charged by the bank. |
-| Transitory Account | It is the transitory detail account that can be used in accounting in case that the “Transitory Account + protest expenses” management has been set. It is recommended to compile the field (with the same expenses account) because it will be required obligatory for the accounting procedure execution. |
-| Bank Transitory Account | It is the bank transitory account to be used in case that the unpaid refers to bills that have not been shown with the procedure (e.g. DocFinance module use). |
-| Account Charges at the Expense of Customer  | It is the revenue detail account to be used in the accounting procedure of unpaids on loan in case that the option has been chosen at the expense of the customer. |
-| Interest Type | It is possible to link a reference interest rate to the unpaid. As regards the bill of exchanges it is possible to simulate an initial calculation of interests between the estimated maturities date of title and the unpaid survey date. |
-| Single Maturity Value Creation | This flag enables the user to open a maturity value as regards the unpaid of a cash order, that has been created from a certain number of different maturity values. |
-
-
-
-
-
-
+- **Maturity date equal with bill maturity date**: by activating this parameter, the due date of the item reopened for the default is set equal to the due date of the effect, instead of the date of the default.

@@ -1,9 +1,9 @@
 ---
-title: Imprimir lista não pagos
+title: Stampa Lista insoluti
 sidebar_position: 3
 ---
 
-A partir desta janela é possível imprimir a lista dos não pagos presentes no sistema em relação com o filtro estabelecido. Em particular, é de interesse o filtro para os não pagos 'Não cobrados' e o critério de agrupamento para o cliente ou para o agente.
+Da questa finestra è possibile stampare la lista degli insoluti presenti nel sistema secondo il filtro impostato. In particolare, è d'interesse il filtro per insoluti ‘Non incassati' e il criterio di raggruppamento per cliente o per agente.
 
 
 

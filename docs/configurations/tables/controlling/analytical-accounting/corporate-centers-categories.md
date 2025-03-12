@@ -3,20 +3,12 @@ title: Categorie centri aziendali
 sidebar_position: 3
 ---
 
-:::note Percorso
-**Tabelle > Controlling > Contabilità analitica > Categorie centri aziendali**
 
-Nota:
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
-
-:::
-
----
+La form si trovo sul percorso: **Tabelle > Controlling > Contabilità analitica > Categorie centri aziendali**
 
 :::tip Nota
 La tabella è d'interesse solo nelle società con il flag *Controlling* attivo.
 :::
-
 
 La seconda caratteristica *obbligatoria* dei centri di costo è quella della ***Categoria dei centri aziendali***: questa tabella rappresenta un' "etichetta" associata ai centri aziendali per poterli gestire in gruppi logici omogenei tra loro.
 

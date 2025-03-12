@@ -1,24 +1,29 @@
 ---
-title: Import Unpaids
+title: Importazione insoluti
 sidebar_position: 3
 ---
 
-Starting from this mask it is possible to import the unpaids list from standard electronic file of bank communication. Usually it is possible to activate the receipt of this list tracing, that considers partially the same file sent with the presentation, within which user has inserted the bill identification: for this reason, through this data reading, it is possible to create the unpaids list automatically with the direct survey of bank cost on each of them.
+Da questa maschera si procede all'importazione della lista insoluti dal file telematico standard di comunicazione bancaria. 
 
-The procedure starts with the 'Execute Import' button, which will open the mask of system file opening: once having identified the file on the right directory the user will have simply to open file in order to import list. The possible list of not found bills will be reported in an error mask: for this reason it will be necessary to create unpaid manually.
+È possibile, normalmente, attivare il ricevimento di un tracciato di questa lista, che riprende in parte lo stesso file inviato con la presentazione, all'interno del quale abbiamo inserito l'identificativo dell'effetto: attraverso la lettura di questo dato, quindi, possiamo creare la lista degli insoluti automaticamente, con la rilevazione diretta anche delle spese bancarie su ognuno.
 
-Through the mask it is possible to delete the performed import: this will delete the list of unpaids created with the same import.
+La procedura inizia con il pulsante **Esegui importazione**, che aprirà la maschera di apertura file del sistema: una volta individuato il file nella directory corretta si dovrà semplicemente aprire il file per procedere all'importazione della lista. 
 
-RIBBON BAR: it represents the Form menu, that is the area in which it is possible to perform actions linked to the procedure in use. The list of features is the following:
+L'eventuale lista di effetti non trovati sarà riportata in una maschera d'errore: per questi sarà quindi necessario procedere alla creazione manuale dell'insoluto.
+
+Dalla maschera è possibile cancellare l'importazione eseguita: questa andrà ad annullare la lista degli insoluti creati con l'importazione stessa.
 
 
 
-| Function | Meaning |
-| --- | --- |
-| Search Import | It searches the list of unpaids import that have been already performed. |
-| Execute Import | Through this button it is possible to open the selection mask of electronic file for which to perform import procedure. |
-| View Unpaid File | It shows the electronic file of imported unpaid. |
-| Delete Import | It deletes the performed import. |
+**Pulsanti specifici**
+
+**Ricerca importazioni:** Ricerca la lista delle importazioni insoluti già eseguite.
+
+**Esegui import**: Con questo pulsante si apre la maschera di selezione del file telematico per il quale eseguire la procedura di importazione.
+
+**Visualizza file insoluti**: Visualizza il file telematico dell'insoluto importato.
+
+**Cancella importazione**: Cancella l'importazione eseguita.
 
 
 

@@ -11,6 +11,3 @@ I valori presenti vengono utilizzati sia nell'anagrafica risorse e dipendenti, s
 **Descrizione**: descrizione della riga.
 
 **Monte ore**: Ore previste per la riga.
-
-
-

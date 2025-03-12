@@ -1,0 +1,89 @@
+name: Localize New Pages
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'docs/**'
+  workflow_dispatch:
+
+jobs:
+  check-doc-changes:
+    runs-on: ubuntu-latest
+    outputs:
+      new_files: ${{ steps.detect-new-files.outputs.new-files }}
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Detect newly added Markdown files
+        id: detect-new-files
+        run: |
+          new_files=$(git diff --diff-filter=A --name-only HEAD~1 HEAD -- 'docs/**/*.md')
+          
+          if [ -z "$new_files" ]; then
+            echo "No new files to process."
+            echo "new-files=" >> $GITHUB_OUTPUT
+          else
+            echo "New files detected:"
+            echo "$new_files"
+            # Save output to a temp file to handle special characters
+            temp_file=$(mktemp)
+            echo "$new_files" > "$temp_file"
+            echo "new-files<<EOF" >> $GITHUB_OUTPUT
+            cat "$temp_file" >> $GITHUB_OUTPUT
+            echo "EOF" >> $GITHUB_OUTPUT
+            rm "$temp_file"
+          fi
+
+  create-issues:
+    needs: check-doc-changes
+    if: needs.check-doc-changes.outputs.new_files != ''
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Create issues for translation requests
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NEW_FILES: ${{ needs.check-doc-changes.outputs.new_files }}
+          LANGUAGES: "en-US ro-RO hr-HR"
+          REPO: ${{ github.repository }}
+        run: |
+          declare -A team_usernames
+          team_usernames=( 
+              ["en-US"]="alba-fluentis" 
+              ["ro-RO"]="rodica1234" 
+              ["hr-HR"]="Federica-fluentis" 
+          )
+
+          commit_message=$(git log -1 --pretty=%B)
+          new_files=$(echo "$NEW_FILES" | tr '\n' ' ')
+
+          for lang in $LANGUAGES; do
+            team_member=${team_usernames[$lang]}
+            team_name="translation-team-${lang:0:2}"
+
+            issue_body="The following new files need to be translated into **${lang}**:\n\n@fluentis-doc/${team_name}\n"
+            for file in $new_files; do
+              file_link="https://github.com/${REPO}/blob/main/${file}"
+              issue_body+="- [$file]($file_link)\n"
+            done
+
+            temp_file=$(mktemp)
+            echo -e "$issue_body" > "$temp_file"
+
+            gh issue create \
+              --title "New translation request: $commit_message" \
+              --assignee "$team_member" \
+              --label "new-translation,$lang" \
+              --body-file "$temp_file"
+
+            rm "$temp_file"
+          done

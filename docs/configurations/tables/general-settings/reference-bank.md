@@ -11,9 +11,7 @@ All'interno di questa tabella è possibile inserire sia la banche della società
 Si consiglia di utilizzare ad esempio una codifica alfabetica per le banche della società e le banche di clienti e fornitori con una codifica numerica in modo da differenziarle opportunamente.
 
 Inoltre è possibile inserire sia righe complete di codice IBAN e/o SWIFT (consigliato per le banche della società) sia righe complete di soli codice ABI e CAB (consigliato per le banche di controparte per le quali IBAN e SWIFT possono essere indicati nei campi della griglia presente in anagrafica).
-
 :::
-
 
 Se la riga presente nella tabella Banca d'appoggio è completa di IBAN e/o SWIFT, oltre che di ABI e CAB, richiamando tale riga tramite la combobox i dati saranno riportati nella griglia in anagrafica, diversamente, saranno riportati solo ABI e CAB, ma sarà sempre possibile aggiungere i dati mancanti direttamente nella griglia. 
 

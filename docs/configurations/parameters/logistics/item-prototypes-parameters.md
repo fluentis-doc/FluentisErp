@@ -23,7 +23,7 @@ Attraverso questa finestra vengono settati tutti i parametri che riguardano la g
 
 **Aggiornamento listino di vendita**: se abilitato, aggiorna in automatico il prezzo di vendita del listino del cliente preso in considerazione.     
 
-Calcolo automatico:
+**Calcolo automatico**:
 
 >**Peso netto**: se abilitato calcola in automatico il peso netto dell'articolo;    
 

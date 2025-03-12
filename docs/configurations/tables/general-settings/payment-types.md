@@ -8,14 +8,13 @@ La tabella è interessata dalla procedura di [**Fast Start**](/docs/guide/fast-s
 Nel caso in cui si intenda configurare manualmente fare riferimento alla check list della pagina linkata
 :::
 
-
 La tabella contiene le tipologie di pagamento da utilizzare nel gestionale.
 
 Consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
 
 Per inserire nuovi record cliccare nella griglia superiore sulla prima riga vuota oppure premere il pulsante **Nuovo**. 
 
-## Griglia Tipo pagamento
+## Tipo pagamento
 
 **Pagamento**: è il codice alfanumerico di riconoscimento;
 

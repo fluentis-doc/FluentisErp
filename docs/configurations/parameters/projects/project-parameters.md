@@ -2,7 +2,8 @@
 title: Parametri Progetti
 sidebar_position: 1
 ---
-### Generale
+
+## Generale
 
 Questi parametri vengono utilizzati di default se per il cliente o per il tipo documento non sono state effettuate configurazioni predefinite. 
 
@@ -33,7 +34,7 @@ Questi parametri vengono utilizzati di default se per il cliente o per il tipo d
 **Turno di lavoro**: indica il turno di lavoro specifico, codificato nella tabella **Turno di Lavoro**.
 
 
-### Interventi
+## Interventi
 
 **Tipo intervento interno**: tipologia di intervento identificata come intervento interno
 
@@ -58,7 +59,8 @@ Se il valore residuo della fattura di anticipo è sufficiente a coprire il valor
 **Proponi Fattura di Anticipo nelle spese di viaggio**: se abilitato, ad ogni salvataggio intervento effettua una verifica se presente una fattura di anticipo associata al progetto indicato nel documento.
 Se il valore residuo della fattura di anticipo è sufficiente a coprire la spesa di viaggio, verrà collegata in automatico alla riga di spesa di viaggio dell'intervento nell'apposito campo. 
 
-## Impostazioni valorizzazione interventi
+### Impostazioni valorizzazione interventi
+
 **Utilizza riferimenti intervento**: se abilitato, nella fattura generata dalla valorizzazione interventi verrà inserita una riga descrittiva prima della riga dell'intervento, contenente la descrizione configurata dall'utente. 
 
 **Aggiungi data intervento nella riga del servizio** se abilitato, inserisce la data del servizio nel campo descrizione della riga relativa al servizio. 
@@ -71,14 +73,14 @@ Se il valore residuo della fattura di anticipo è sufficiente a coprire la spesa
 
 **Raggruppa Servizi e Spese**: se abilitato, effettua il raggruppamento di servizi e spese nella fattura generata dalla valorizzazione interventi. 
 
-**Considera i giorni festivi come tempo extra**: se abilitato, nel piano di fatturazione verrà verificato se la giornata del servizio rientra in una delle date configurare come festive. Le date non lavorative possono essere configurate da Configurazione > Tabelle > Gestione Progetti > [Calendario giorni festivi](/docs/configurations/tables/project-management/not-working-days-calendar)
+**Considera i giorni festivi come tempo extra**: se abilitato, nel piano di fatturazione verrà verificato se la giornata del servizio rientra in una delle date configurare come festive. Le date non lavorative possono essere configurate da *Configurazione > Tabelle > Gestione Progetti* > [Calendario giorni festivi](/docs/configurations/tables/project-management/not-working-days-calendar)
 
 **Priorità di inserimento delle informazioni**: indicare l'ordine con cui inserire i dati nelle fatture generate dalla valorizzazione interventi. 
 
 ### PIANO DI FATTURAZIONE
 
-Le regole da applicare al piano di fatturazione dell'intervento possono essere stabilite nei parametri generali della Gestione Progetti, ed essere quindi valide per tutti i clienti, oppure specifiche per cliente. 
-La procedura di calcolo del piano di fatturazione controllerà prima la presenza di configurazioni specifiche per il cliente, e se non presenti, considererà quelle presenti nei parametri generali. 
+Le regole da applicare al piano di fatturazione dell'intervento possono essere stabilite nei parametri generali della Gestione Progetti, ed essere quindi valide per tutti i clienti, oppure specifiche per cliente.  
+La procedura di calcolo del piano di fatturazione controllerà prima la presenza di configurazioni specifiche per il cliente, e se non presenti, considererà quelle presenti nei parametri generali.  
 
 **Sede di Lavoro** e **Tipo intervento** : utilizzati come filtro; se vuoti vengono considerati validi per tutte le sedi di lavoro e per tutti i tipi interventi. Se invece configurati, verranno presi in considerazione solamente in corrispondenza della sede di lavoro configurata nell'anagrafica della risorsa che svolge l'intervento, e del tipo intervento utilizzato. 
 
@@ -104,6 +106,7 @@ La fascia verrà inoltre considerata per il calcolo del fuori orario da tariffar
 **Escludi calcolo Fuori Orario**: se abilitato, non verrà calcolato il fuori orario nel piano di fatturazione. Per la conversione tra diverse unità di misura temporali (es. da ore a giorni) verrà utilizzato il monte ore indicato nel campo "Turno di lavoro" nei parametri generali della Gestione Progetti. 
 
 **Considera tutte le fasce orarie calcolo fuori Orario**: se abilitato nel calcolo del fuori orario vengono prese in considerazione sia la fascia oraria diurna che la fascia oraria notturna. Verrà considerato fuori orario solo ciò che è al di fuori di entrambe le fasce o supera il monte ore giornaliero. Se disabilitato, verrà considerata solo una fascia oraria (notturna o diurna in base all'orario di inizio del servizio) e tutto ciò che è fuori da questa fascia oraria considerata, sarà tariffato fuori orario. 
+
 :::note[Esempio]
 Fascia diurna 7.00 - 18.00
 Fascia oraria notturna 20.00 - 5.00
@@ -122,7 +125,7 @@ con flag disabilitato il piano di fatturazione sarà:
 
 :::
 
-### Attività
+## Attività
 
 **Controlla attività mancanti negli ultimi: numero mesi**: indicare il numero di mesi, per i quali in fase di dichiarazione attività, verranno controllate eventuali dichiarazioni attività mancanti (ore/giorni) e verranno proposti in automatico in fase di dichiarazione. 
 

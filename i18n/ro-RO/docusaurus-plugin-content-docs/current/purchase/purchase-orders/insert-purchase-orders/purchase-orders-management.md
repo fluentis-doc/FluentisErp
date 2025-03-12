@@ -3,7 +3,7 @@ title: Nou ordin furnizor
 sidebar_position: 2
 ---
  
-Form-ul se află în **Achiziții > Ordine furnizori** și conține detalii referitoare la produsele sau serviciile de achiziționat, inclusiv cantități, prețuri, termeni de livrare, condiții de plată și alte specificații contractuale.
+Form-ul conține detalii referitoare la produsele sau serviciile de achiziționat, inclusiv cantități, prețuri, termeni de livrare, condiții de plată și alte specificații contractuale.
  
 Din form-ul de căutare al ordinelor puteți să creați un nou document folosind butonul **Nou** sau să deschideți unul existent pentru a-l vizualiza și/sau modifica.
  
@@ -43,7 +43,7 @@ Pentru a crea ordinul, utilizatorul trebuie să introducă câmpurile obligatori
 Continuați cu inserarea următoarelor date [manual](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection#inserimento-manuale) sau cu ajutorul [help-ului](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection#inserimento-con-il-help-di-campo).
 
 :::note Important
-Dacă documentul este *creat automat*, de exemplu din filtrul de căutare al [**Ordinelor clienți**](/docs/sales/sales-orders/search-sales-orders), din procedura de [**Creare automată ordine**](/docs/purchase/purchase-orders/procedures/create-purchase-orders-from-purchase-requests) sau din procedura de [**Creare ordin furnizor din ofertă furnizor**](/docs/purchase/offer-request/procedures/order-creation), aceste date sunt preluate din *documentul de origine* din care a fost generat. 
+Dacă documentul este *creat automat*, de exemplu din filtrul de căutare al [**Ordinelor clienți**](/docs/sales/sales-orders/create-new-sales-orders/search-sales-orders), din procedura de [**Creare automată ordine**](/docs/purchase/purchase-orders/procedures/create-purchase-orders-from-purchase-requests) sau din procedura de [**Creare ordin furnizor din ofertă furnizor**](/docs/purchase/offer-request/procedures/order-creation), aceste date sunt preluate din *documentul de origine* din care a fost generat. 
 :::
  
 ### 2.1 Date furnizor

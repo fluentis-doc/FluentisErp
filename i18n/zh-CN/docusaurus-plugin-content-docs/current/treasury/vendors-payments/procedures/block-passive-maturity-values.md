@@ -1,23 +1,20 @@
 ---
-title: 冻结应付账款
+title: Blocco partite passive
 sidebar_position: 1
 ---
 
-该掩码用于管理应付账款。Artinforesourcemanager(ARM)的用户可以冻结/解冻满足相应搜索条件的到期值列表。该过程可以保存冻结到期值以及授权冻结的用户和时间。
-
-功能导航栏：功能导航栏为菜单窗体，包含可能需要的操作。当前选项卡的功能如下：
+Da questa maschera si procede alla gestione massiva dei blocchi delle partite passive. L'utente abilitato (gestendo i diritti utente all'interno dell'applicazione ARM) potrà quindi procedere a bloccare e/o sbloccare la lista delle partite visualizzate secondo i filtri di ricerca impostati. La procedura andrà a memorizzare chi e quando ha bloccato la partita e chi e quando ha autorizzato lo stesso.
 
 
+**<a href="https://youtu.be/DkxoWgTkvUg&amp;t=05s" target="_blank" rel="noopener noreferrer">Si rinvia al Tutorial - Link YouTube </a>**
 
-| RibbonFunction | RibbonMeaning |
+| Funzione | Significato |
 | --- | --- |
-| 搜索交易 | 指定筛选条件后，激活交易搜索 |
-| 冻结交易 | 冻结结果网格中选中的交易 |
-| 解冻到交易 | 解冻结果网格中选中的到期值 |
+| Ricerca partite | Pulsante, per attivare la ricerca partite, dopo aver specificato i filtri attraverso i quali ottenere il dato. |
+| Blocco partite | Pulsante per bloccare le partite selezionate nella griglia risultato. |
+| Sblocco partite | Pulsante per sbloccare le partite selezionate nella griglia risultato. |
 
-**筛选区域**：筛选区域包含可以对某一选中进行搜索的多种数据类型。筛选器具有高级筛选功能，可以同时指定多个筛选条件。
 
-**结果网格**：结果网格包含按照指定条件筛选出的到期值。首先用户必须指定对到期值进行搜索的条件，然后在功能导航栏中单击“搜索”，最后在网格中将以列表形式显示筛选出的到期值。
 
 
 

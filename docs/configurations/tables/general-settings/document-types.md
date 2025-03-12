@@ -25,6 +25,8 @@ Per inserire un nuovo tipo documento premere il tasto **Nuovo** nella ribbon bar
 
 ![](/img/it-it/configurations/tables/general-settings/document-types/image02.png)
 
+#### Campi specifici
+
 **Dimensione massima (MByte)**: Definisce la dimensione massima del documento archiviabile (solitamente impostato a 10)
 
 **Compressione**: abilita il salvataggio di un file compresso (es. .zip)

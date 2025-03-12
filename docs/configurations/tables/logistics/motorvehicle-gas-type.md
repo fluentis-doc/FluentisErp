@@ -17,7 +17,7 @@ La form si compone di un'area di filtro e da una di risultato. Una volta imposta
 
 Per poter inserire nuovi è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.     
 Per il nuovo record si deve inserire un solo campo obbligatorio richiesto dal programma: la **Descrizione**.         
-Inoltre, per ogni tipologia è possibile indicare se sia:
+Inoltre, per ogni tipologia è possibile indicare se sia:  
 - **Carburante a metano**
 - **Carburante diesel**
 - **Carburante ibrido**

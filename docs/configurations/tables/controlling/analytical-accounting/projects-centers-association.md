@@ -3,15 +3,8 @@ title: Associazione centri / commesse
 sidebar_position: 1
 ---
 
-:::note Percorso
-**Tabelle > Controlling > Contabilità analitica > Associazione centri / commesse**
+La form si trovo sul percorso: **Tabelle > Controlling > Contabilità analitica > Associazione centri / commesse**
 
-Nota:
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
-
-:::
-
----
 
 :::tip Nota
 Questa tabella è ad uso esclusivo delle società che hanno impostato il *Controlling*
@@ -34,10 +27,9 @@ I campi di configurazione disponibili sono i seguenti:
 ***FluentisERP*** valuterà le associazioni in ordine di Codice: quando si selezionerà il progetto X, quindi, si valuterà se la prima associazione consente di determinare il centro da assegnare alla riga, se non viene individuato si andrà a verificare la seconda associazione e via di seguito, fino alla prima occorrenza valida
 :::
 
-- la ***DESCRIZIONE*** dell'associazione
-
-- il ***TIPO*** di associazione, cioè l'oggetto all'interno del quale trovare l'elemento distintivo
-- la ***PROPRIETA'*** da considerare, che dipende dalla selezione effettuata nel campo precedente. Le opzioni sono
+- la ***DESCRIZIONE*** dell'associazione  
+- il ***TIPO*** di associazione, cioè l'oggetto all'interno del quale trovare l'elemento distintivo  
+- la ***PROPRIETA'*** da considerare, che dipende dalla selezione effettuata nel campo precedente.  
 
 Per questi ultimi due campi le opzioni sono:
     - *Progetto*

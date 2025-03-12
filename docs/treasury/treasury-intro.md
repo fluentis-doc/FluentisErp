@@ -39,8 +39,8 @@ import Link from '@docusaurus/Link';
     <div className="card">
 ###   <Link to="/docs/treasury/bills-holding/general-overview">Portafoglio Effetti</Link>
         <p>per l'emissione, la presentazione , l'incasso di effetti e ricevute bancarie e le relative rilevazioni contabili, oltre alla gestione e relative scritture contabili degli effetti insoluti</p>
-        <p><Link to="/docs/treasury/bills-holding/procedures/bills-acquisition-from-invoices/acquisition" className="bold-link">Creazione effetti dalle Fatture</Link></p>
-        <p><Link to="/docs/treasury/bills-holding/procedures/bills-acquisition-from-maturity-values/bills-acquisition-from-maturity-values-intro" className="bold-link">Creazione effetti dalle Partite</Link></p>
+        <p><Link to="/docs/treasury/bills-holding/procedures/bills-acquisition-from-invoices/" className="bold-link">Creazione effetti dalle Fatture</Link></p>
+        <p><Link to="/docs/treasury/bills-holding/procedures/bills-acquisition-from-maturity-values/" className="bold-link">Creazione effetti dalle Partite</Link></p>
     </div>
     <div className="card">
 ###   <Link to="/docs/treasury/vendors-payments/general-overview">Pagamenti Fornitori</Link>
@@ -59,9 +59,9 @@ import Link from '@docusaurus/Link';
     <div className="card">
 ###   <Link to="/docs/treasury/customer-risk/general-overview">Rischio Cliente</Link>
         <p>per la gestione del fido sulle forniture a credito ed il monitoraggio o blocco a fronte del superamento del limite imposto, l'analisi dell'esposizione al rischio di credito tramite vari pannelli ed indici</p>
-        <p><Link to="/docs/treasury/customer-risk/procedures/lock-manager/lock-manager-intro" className="bold-link">Lock manager per autorizzare lo sconfinamento</Link></p>
+        <p><Link to="/docs/treasury/customer-risk/procedures/lock-manager" className="bold-link">Lock manager per autorizzare lo sconfinamento</Link></p>
         <p><Link to="/docs/treasury/customer-risk/procedures/customer-statement" className="bold-link">Esposizione clienti</Link></p>
-        <p><Link to="/docs/treasury/customer-risk/procedures/remittances-management" className="bold-link">Gestione Rimesse</Link></p>
+        <p><Link to="/docs/treasury/customer-risk/procedures/remittances-check" className="bold-link">Gestione Rimesse</Link></p>
         <p>Per il controllo tempi medi nel ritardo pagamenti</p>
     </div>
 </div>

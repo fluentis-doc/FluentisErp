@@ -9,13 +9,9 @@ A titolo di esempio: Contestata, sospesa, da verificare ec....
 
 La posizione viene assegnata alle partite (anche massivamente) dalla form *Partite* attraverso il pulsante (nella ribbon bar) *Cambia posizione partite*.
 
+#### Campi specifici
 
 **Codice**: codice della posizione delle partite.
 
 **Descrizione**: descrizione della posizione delle partite.
-
-
-
-
-
 

@@ -6,18 +6,17 @@ sidebar_position: 7
 La presente form permette di ricercare le registrazioni contabili precedentemente inserite ed eventualmente di entrare in modifica (o in visualizzazione) delle stesse selezionando la riga corrispondente ed effettuando un doppio click.
 
 
+#### Pulsanti specifici
 
-| Funzione | Significato |
-| --- | --- |
-| Ricerca | Pulsante per avviare la ricerca delle registrazioni contabili inserite secondo i filtri impostati  |
-| Nuovo | Pulsante per inserire una nuova registrazione contabile. |
-| Modifica | Pulsante per modificare una registrazione contabile precedentemente inserita. |
-| Visualizzazione | Pulsante per visualizzare una registrazione contabile precedentemente inserita. |
-| Elimina | Pulsante per cancellare una registrazione contabile precedentemente inserita. |
-| Documento origine	 | Pulsante attraverso il quale richiamare il documento di origine dal quale si è originata la registrazione contabile. |
-| Duplica | Pulsante che permette di creare un duplicato della registrazione contabile al fine di crearne una simile, modificando gli elementi opportuni, senza doverla inserire da capo. |
+> **Ricerca**: permette di avviare la ricerca delle registrazioni contabili inserite secondo i filtri impostati   
+> **Nuovo**: permette di inserire una nuova registrazione contabile.  
+> **Modifica**: permette di modificare una registrazione contabile precedentemente inserita.  
+> **Visualizzazione**: permette di visualizzare una registrazione contabile precedentemente inserita.  
+> **Elimina**: permette di cancellare una registrazione contabile precedentemente inserita.  
+> **Documento origine**: permette di richiamare il documento di origine dal quale si è originata la registrazione contabile.  
+> **Duplica**: permette di creare un duplicato della registrazione contabile al fine di crearne una simile, modificando gli elementi opportuni, senza doverla inserire da capo.  
 
-Filtri di ricercaI principali campi di filtro per la ricerca delle registrazioni contabili sono:
+### Filtri specifici
 
 **Causale contabile**: la combo box (come di consueto in Fluentis) consente di selezionare anche più di una causale alla volta tenendo premuto il tasto Ctrl.
 
@@ -50,9 +49,3 @@ La griglia di riepilogo risultati visualizza alcune colonne nelle quali viene ri
 -      **Data chiusura**: la data di chiusura del flusso di gestione (es. documento Consegnato).
 
 -      **Data ultimo evento**: la data dell'ultimo cambio stato avvenuto sul file o manualmente o per effetto dell'avanzamento dell'elaborazione sul SdI.
-
-
-
-
-
-

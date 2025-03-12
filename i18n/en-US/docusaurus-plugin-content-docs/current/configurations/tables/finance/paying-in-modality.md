@@ -1,31 +1,14 @@
 ---
-title: Paying-in Modality
+title: Paying-in modality
 sidebar_position: 13
 ---
 
-The table enables the user to define and manage the paying-in modality of taxes within commission settlement module.
+The table allows you to define and manage the payment methods for taxes in the Recipients module.
 
+#### Specific Fields (Campi specifici)
 
+**Code**: code for the payment method.
 
-| Function | Meaning |
-| --- | --- |
-| Code  | Paying-in code |
-| Description  | Paying-in description |
+**Description**: description of the payment method.
 
- RIBBON BAR: the ribbon bar represents the Form menu, that is the area in which it is possible to operate on previous recordings or generate new ones. The possible features list is the following:
-
-
-
-| Function | Meaning |
-| --- | --- |
-| Search | Button to look for a paying-in code through the fields: code and description |
-| New | Button to insert a new paying-in code |
-| Delete | Button to delete a paying-in code, where the user is located |
-| Preview  | Button to perform the preview |
-| Print | Button to launch the print |
-
-
-
-
-
-
+For example, a typical record to enter in this table to then recall it in order to update the payment data for withholding taxes for recipients is ***F24*** (tax payment form).

@@ -1,50 +1,48 @@
 ---
-title: Recalculează risc client
+title: Modifica - Ricalcola rischio cliente
 sidebar_position: 1
 ---
 
-Cele două ferestre afișează situația totală a riscului pentru un anumit client:**Recalculează risc client** este o simplă cerere a situației actuale a clientului, în timp ce fereastra pentru modificarea procedurii **Utilizare credite **permite memorizarea fiecărui calcul efectuat și afișarea istoricului său.
+Le due maschere sostanzialmente gestiscono la visualizzazione dello stato complessivo del rischio nei confronti di un determinato cliente: il ‘Ricalcola rischio cliente' è una semplice richiesta spot della situazione attuale del cliente, mentre la maschera di modifica della procedura ‘Utilizzo fidi' consente di memorizzare ogni calcolo effettuato e visualizzarne quindi una serie storica.
 
-Detaliem, în continuare, lista cu câmpurile prezente în fereastră, care este similară celei din fereastra Expunere clienți.
+Vediamo in dettaglio la lista dei campi visualizzata, che è sostanzialmente la stessa presente anche nella maschera dell'esposizione clienti.
 
-În antet sunt prezenți parametrii de calcul: codul clientului, data începerii calculului (setată implicit în parametrii modulului Risc client), data finală de referință (ziua curentă), numărul de zile de întârziere pentru efecte (setate în parametrii modulului), flag-ul cu care sunt considerate angajamentele asociate înregistrărilor provizorii. După ce utilizatorul apasă butonul pentru calcul, apar următoarele valori:
+In testata sono presenti i parametri di calcolo: il codice del cliente, la data di inizio calcolo (impostata di default dai parametri del modulo rischio cliente), la data finale di riferimento (impostata ad oggi), il numero di giorni di ritardo per gli effetti sbf e effetti al dopo incasso (impostati dai parametri del modulo, cui si rimanda), il flag di considerazione delle partite collegate a registrazioni provvisorie. Premendo il pulsante di calcolo appariranno i seguenti valori:
 
-**Fact. 12L**: reprezintă facturarea (din aria vânzări, facturi de vânzare) din cele 12 luni precedente datei de referință;
+**Fatt. 12M**: è il fatturato (dall'area vendita, fatture di vendita) dei 12 mesi precedenti alla data di riferimento;
 
-**Factuare an**: reprezintă facturarea (din aria vânzări, facturi de vânzare) de la începutul anului;
+**Fatturato anno**: è il fatturato (dall'area vendita, fatture di vendita) dall'inizio dell'anno;
 
-În secțiunea**Situație angajamente deschise  **vor fi vizibile totalurile debit/credit și soldul relativ la angajamentele deschise;
+Nella sezione **Situazione partite aperte** saranno visibili i totali dare/avere e il saldo relativo alle partite aperte;
 
-În secțiunea **Plăți din înregistrări prov**. vor fi vizibile eventualele sume de plată inserate în înregistrările provizorii;
+Nella sezione **Pagam da reg. provv.** saranno visualizzati gli eventuali importi di pagamento inseriti in registrazioni provvisorie;
 
-În secțiunea **Situație sold contabil** vor fi vizibile totalurile debit/credit și soldurile din contabilitatea generală;
+Nella sezione **Situazione saldo contabile** saranno visibili i totali dare/avere e il saldo del mastrino di contabilità generale;
 
-**Sold angajamente/contabil**: propune din nou totalurile debit/credit calculate din angajamente sau din sold, așa cum sunt afișate în secțiunile precedente;
+**Saldo partite/contabile**: ripropone i totali dare/avere calcolati dalle partite o dal saldo così come visualizzato nelle sezioni precedenti;
 
-**Facturi de contabilizat**: sunt sumele facturilor (a Tipurilor de factură asociate la credit) listate dar încă necontabilizate;
+**Fatture da contabilizzare**: sono gli importi delle fatture (dei Tipi fattura collegati al fido) stampate ma non ancora contabilizzate;
 
-**Avize de facturat**: sunt sumele avizelor (a Tipurilor de aviz asociate la credit) listate dar încă nefactuarate;
+**Ddt da fatturare**: sono gli importi dei  DDT (dei Tipi DDT collegati al fido) stampate ma non ancora fatturate;
 
-**Ordine de executat**: sunt sumele ordinelor (a Tipurilor de ordine asociate la credit) listate, confirmate dar încă neexecutate;
+**Ordini da evadere**: sono gli importi degli ordini (dei Tipi ordine collegati al fido) stampate, confermati ma non ancora evasi;
 
-**Efecte emise**: sunt sumele efectelor (din modulul portofoliu efecte) emise și contabilizate, dar încă neprezentate;
+**Effetti emessi**: sono gli importi degli effetti (del modulo portafoglio effetti) emessi e contabilizzati, ma non ancora presentati
 
-**Efecte **prezentate allo sconto-al sbf-all'incasso: sunt sumele efectelor prezentate dar care au data scadenței (plus zilele parametrilor inserați în antetul calculului) superior datei de referință;
+**Effetti presentati allo sconto-al sbf-all'incasso**: sono gli importi degli effetti presentati ma che hanno data scadenza (più i giorni dei parametri inseriti in testata del calcolo) superiore alla data di riferimento;
 
-Secțiunea **documente neîncasate**: sunt afișate documentele neîncasate necontabilizate, sau (dacă flag-ul este inserat) și cele deja contabilizate;
+Sezione** insoluti**: sono qui visualizzati gli insoluti non contabilizzati, oppure (se il flag è inserito) anche quelli già contabilizzati, sia come importo che relativo numero;
 
-Din suma valorilor precedente este calculat Riscul client, care comparat cu creditul acordat, va da depășirea creditului.
+Dalla somma dei valori precedenti viene calcolato il ‘Rischio cliente', che comparato al fido concesso, darà lo sconfinamento del fido.
 
-Câmpul **Scadent **afișează suma angajamentelor deschide dar deja scadente, ca ulterior element de analiză a situației clientului.
-
-RIBBON BAR: reprezinta meniul cu butoanele de executie, pentru fiecare operatie in parte aferentă fiecarei ferestre din aria in care se lucreaza. Lista functionalitatilor posibile conține:
+Il campo **Scaduto** visualizza l'importo delle partite aperte ma già scadute, quale ulteriore elemento di analisi della situazione del cliente.
 
 
 
-| Functie | Functionalitate |
+| Funzione | Significato |
 | --- | --- |
-| Salvează | Buton, prezent în fereastra de modificare a unui credit deja calculat, permite memorarea rezultatului obținut. |
-| Calculează | Buton pentru calcularea situației totale a riscului pe client. |
+| Salva | Il pulsante, presente in modifica di un fido già calcolato, consente di memorizzare il risultato ottenuto. |
+| Calcola | Richiama la procedura per calcolare la situazione complessiva di rischio per il cliente. |
 
 
 

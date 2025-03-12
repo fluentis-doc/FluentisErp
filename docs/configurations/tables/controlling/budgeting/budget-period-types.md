@@ -12,7 +12,7 @@ Il secondo tipo di impostazione, invece, prevede il caricamento di periodi tra l
 Al di sotto di questa impostazione base sono presenti una lista di periodi alternativi: selezionato il periodo ‘padre' superiore, si potranno definire N altri suoi periodi alternativi da associare a specifici sottoconti del piano dei conti, al fine di predefinire le percentuali specifiche da utilizzare in determinati casi: il dettaglio di questi sarà proposto con le stesse percentuali del periodo di partenza, ma l'utente sarà libero di modificarle liberamente.
 
 
-*Pulsanti specifici*
+#### Pulsanti specifici
 
 **Inserisce nuovo periodo**: imposta il cursore nella griglia in alto a sinistra dei periodi budget.  
 **Inserisce nuovo periodo dett**: imposta il cursore nella griglia a destra per il periodo budget selezionato.  

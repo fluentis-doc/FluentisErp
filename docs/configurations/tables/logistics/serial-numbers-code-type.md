@@ -19,7 +19,7 @@ Per ogni parametro utilizzato si può decidere da quanti caratteri deve essere f
 
 Il **Tipo codice serial number** deve poi essere agganciato all'*Anagrafica articolo* nel campo omonimo situato nel tab [Lotti e serial number](/docs/erp-home/registers/items/create-new-items/item-registry/lots-and-serial-number), in modo che nelle procedure che creano automaticamente il codice serial number per l'articolo in questione il SN stesso venga generato secondo le regole impostate qui.
 
-**Dettagli tipo codice serial number**
+#### Dettagli tipo codice serial number 
 
 > *Classe*: riporta la classe dell'articolo;    
 > *Matricola*: riporta il codice articolo;     

@@ -1,9 +1,9 @@
 ---
-title: 打印说明清单
+title: Stampa Distinte di presentazione
 sidebar_position: 1
 ---
 
-该对话用于根据设置的筛选条件设置账单说明清单。如果要记账清单，必须要打印清单（含有“已打印”标记）。
+Da questa finestra è possibile stampare le distinte di presentazione effetti secondo il filtro impostato. La stampa della distinta (la presenza del flag di stato ‘Stampata') è obbligatoria per poter contabilizzare la distinta stessa.
 
 
 

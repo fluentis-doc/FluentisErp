@@ -1,24 +1,29 @@
 ---
-title: Import efecte neîncasate
+title: Importazione insoluti
 sidebar_position: 3
 ---
 
-Din această fereastră se poate importa lista cu efectele neîncasate din fișierul telematic standard de comunicare bancară. În mod normal se poate activa recepția unui fișier din această listă, care preia parțial același fișier expediat cu prezentarea, în care a fost inserat identificativul efectului: cu această informație se poate crea automat lista efectelor neîncasate, cu relevarea directă și a cheltuielilor bancare pentru fiecare.
+Da questa maschera si procede all'importazione della lista insoluti dal file telematico standard di comunicazione bancaria. 
 
-Procedura începe cu butonul ‘Execută import', care deschide fereastra fișierului: după identificarea fișierului în folderul corect, acesta va trebui să fie deschis pentru a începe importul listei. Eventuala listă de efecte negăsite va fi preluată într-o fereastră pentru erori: pentru acestea va fi necesară crearea manuală a efectului neîncasat.
+È possibile, normalmente, attivare il ricevimento di un tracciato di questa lista, che riprende in parte lo stesso file inviato con la presentazione, all'interno del quale abbiamo inserito l'identificativo dell'effetto: attraverso la lettura di questo dato, quindi, possiamo creare la lista degli insoluti automaticamente, con la rilevazione diretta anche delle spese bancarie su ognuno.
 
-În fereastră se poate șterge importul efectuat: această operație va anula lista cu efectele neîncasate create cu importul.
+La procedura inizia con il pulsante **Esegui importazione**, che aprirà la maschera di apertura file del sistema: una volta individuato il file nella directory corretta si dovrà semplicemente aprire il file per procedere all'importazione della lista. 
 
-RIBBON BAR: reprezinta meniul cu butoanele de executie, pentru fiecare operatie in parte aferentă fiecarei ferestre din aria in care se lucreaza. Lista functionalitatilor posibile conține:
+L'eventuale lista di effetti non trovati sarà riportata in una maschera d'errore: per questi sarà quindi necessario procedere alla creazione manuale dell'insoluto.
+
+Dalla maschera è possibile cancellare l'importazione eseguita: questa andrà ad annullare la lista degli insoluti creati con l'importazione stessa.
 
 
 
-| Functie | Functionalitate |
-| --- | --- |
-| Caută importuri | Buton pentru căutarea listei cu importurile efectelor neîncasate deja executate. |
-| Execută import | Cu acest buton se deschide fereastra pentru selectarea fișierului telematic pentru care se execută procedura de import. |
-| Vizualizează file efect neîncasat | Vizualizează fișierul telematic al efectului neîncasat import. |
-| Șterge import | Buton pentru ștergerea importului selectat. |
+**Pulsanti specifici**
+
+**Ricerca importazioni:** Ricerca la lista delle importazioni insoluti già eseguite.
+
+**Esegui import**: Con questo pulsante si apre la maschera di selezione del file telematico per il quale eseguire la procedura di importazione.
+
+**Visualizza file insoluti**: Visualizza il file telematico dell'insoluto importato.
+
+**Cancella importazione**: Cancella l'importazione eseguita.
 
 
 

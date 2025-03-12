@@ -10,7 +10,7 @@ Il ciclo di evasione in Fluentis serve a gestire in modo strutturato e integrato
 La procedura di conversione da offerta a ordine di vendita può essere avviata in due modalità:
 
 - Dalla [Ricerca Offerte](/docs/sales/offers/search-offers): Selezionando una o più offerte e cliccando sul pulsante *Conversione* presente nella barra degli strumenti, è possibile eseguire una conversione massiva.
-- Dalla [Testata](/docs/sales/offers/new-offer/header) dell'Offerta: All'interno della singola offerta, il pulsante di *Conversione* nella testata consente di convertire l'offerta selezionata in un ordine di vendita.
+- Dalla [Testata](/docs/sales/offers/insert-offer) dell'Offerta: All'interno della singola offerta, il pulsante di *Conversione* nella testata consente di convertire l'offerta selezionata in un ordine di vendita.
 
 Questa procedura permette di trasformare un'offerta di vendita in un ordine di vendita effettivo. Per eseguire correttamente la conversione, è necessario configurare il [Tipo di ordine](/docs/configurations/tables/sales/sales-order-types) desiderato nella tabella [Tipo di offerta](/docs/configurations/tables/sales/sales-offer-type). Inoltre, l'offerta deve avere una *Data di Conferma* inserita nella testata; in caso contrario, il sistema visualizzerà un messaggio pop-up per richiedere la conferma dell'offerta prima di procedere.
 
@@ -18,7 +18,7 @@ Durante la procedura di conversione, appare un pop-up con diverse opzioni:
 
 - Gestione delle Righe Offerta: Se alcune righe dell'offerta sono già state convertite in ordine, il sistema chiede all'utente se vuole creare un nuovo ordine utilizzando tutte le righe dell'offerta o solo quelle non ancora referenziate.
 - Crea/Aggiorna Progetto: Questa opzione consente di creare o aggiornare un progetto. Sono disponibili le opzioni: *Crea Nuovo Progetto Vuoto*, *Crea Nuovo Progetto da Offerta*, o *Crea Nuovo Progetto da Offerta e Template Progetto*. È necessario specificare il [Tipo Progetto](/docs/configurations/tables/project-management/project-type) da creare. Se il progetto esiste già, bisogna inserire il nome del progetto da aggiornare.
-- Trasferimento Materiali/Risorse: Questa opzione consente di trasferire le risorse e i materiali dell'offerta, se [gerarchica](/docs/sales/offers/new-offer/group-items), come righe articolo nell'ordine.
+- Trasferimento Materiali/Risorse: Questa opzione consente di trasferire le risorse e i materiali dell'offerta, se [gerarchica](/docs/sales/offers/insert-offer), come righe articolo nell'ordine.
 
 Una volta confermata la conversione, il sistema genera un nuovo ordine cliente utilizzando i dati dell'offerta e avvisa l'utente con un messaggio pop-up riguardante il successo della conversione, il numero dell'offerta convertita, la versione e il numero dell'ordine cliente generato. Le informazioni modificate in anagrafica durante la creazione dell'offerta (ad es. Annotazioni Cliente, Spedizione, Pagamenti) saranno riportate anche nell'ordine generato.
 
@@ -26,8 +26,8 @@ Una volta confermata la conversione, il sistema genera un nuovo ordine cliente u
 
 La procedura di evasione da ordine a Documento di Trasporto è disponibile in due modalità:
 
-- Evasione Massiva dalla [Ricerca Ordini](/docs/sales/sales-orders/search-sales-orders): Nella Ricerca Ordini, selezionare uno o più ordini da evadere e cliccare su Evasione DDT nella barra degli strumenti.
-- Evasione dalla [Testata](/docs/sales/sales-delivery-notes/insert-delivery-notes/header) del DDT: Nella Testata del DDT, utilizzare il pulsante Evasione da Ordine per aprire una finestra di selezione degli ordini confermati del cliente da trasferire nel DDT.
+- Evasione Massiva dalla [Ricerca Ordini](/docs/sales/sales-orders/create-new-sales-orders/search-sales-orders): Nella Ricerca Ordini, selezionare uno o più ordini da evadere e cliccare su Evasione DDT nella barra degli strumenti.
+- Evasione dalla [Testata](/docs/sales/sales-delivery-notes/insert-delivery-notes/sales-dn) del DDT: Nella Testata del DDT, utilizzare il pulsante Evasione da Ordine per aprire una finestra di selezione degli ordini confermati del cliente da trasferire nel DDT.
 
 Questa procedura permette di trasformare uno o più ordini di vendita in uno o più DDT. Prima di avviare la procedura, è necessario configurare il tipo di DDT desiderato nella tabella [Tipo di ordine](/docs/configurations/tables/sales/sales-order-types). La procedura automatica consente la creazione di DDT solo se l'ordine è stampato e confermato.
 
@@ -45,7 +45,7 @@ Dopo aver selezionato gli ordini e impostato i filtri, cliccando su *Trasferimen
 La procedura di evasione da DDT a fattura può essere avviata in due modalità:
 
 - Dal Menu [Procedure](/docs/sales/sales-invoices/procedures/create-invoices-from-delivery-notes): Andando su *Vendite > Fatture di Vendita > Procedure > Creazione da DDT*.
-- Dalla [Testata](/docs/sales/sales-invoices/invoicing/header) della Fattura di Vendita: Utilizzando il pulsante *Evasione DDT* nella testata della fattura.
+- Dalla [Testata](/docs/sales/sales-invoices/invoicing/sales-invoice) della Fattura di Vendita: Utilizzando il pulsante *Evasione DDT* nella testata della fattura.
 
 Questa procedura permette di creare una o più fatture a partire da uno o più DDT. La procedura si compone di tre tab principali:
 

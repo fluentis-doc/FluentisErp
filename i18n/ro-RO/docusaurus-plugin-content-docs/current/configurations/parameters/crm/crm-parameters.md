@@ -18,3 +18,7 @@ Form-ul se află pe calea **Parametri > CRM > Parametri CRM** și permite defini
 **Unitate de măsură ore**: reprezintă unitatea de măsură implicită pe care Fluentis trebuie să o utilizeze pentru ore.
 
 **Referințe ticket**: reprezintă codul referinței care va fi preluat în Ofertă, legată de ticket și creată prin procedura *Creare oferte din ticket* (prezentă în modulul Tickets).
+
+- **Caută contact CRM și ca pe contact părinte**: dacă este activat, activează implicit același indicator în toate form-urile de căutare unde este prevăzut: Căutare oferte, Căutare contacte, Căutare raport vizite, tab-uri oferte și raport vizite în registrul contactului CRM.
+
+- **Creează contact CRM din nou registru clientului**: dacă este activat, la introducerea unui nou cont Client într-un contact, generează automat un nou contact CRM dacă nu este deja prezent.

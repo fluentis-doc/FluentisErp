@@ -3,9 +3,7 @@ title: Parametri planuri de încărcare
 sidebar_position: 5
 ---
 
-Form-ul se află pe calea **Configurări > Logistică > Parametri planuri de încărcare**.  
-
-*Câmpuri specifice*
+Opțiunile care permit parametrizarea sunt:
 
 **Control disponibilitate**: permite inserarea coloanei pentru afișarea disponibilității articolelor;      
 **Verifică disponibilitate**: permite verificarea eventualei disponibilități;  

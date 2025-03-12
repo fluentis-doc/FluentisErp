@@ -14,9 +14,3 @@ Questa tabella è richiamata all'interno dell'anagrafica clienti / fornitori all
 **Fornitore**: flag per specificare se la riga fa riferimento ad un fornitore.
 
 É possibile spuntare entrambi i flag quando la riga è sia cliente che fornitore.
-
-
-
-
-
-

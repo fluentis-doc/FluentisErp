@@ -1,0 +1,125 @@
+name: Sync Deleted and Renamed Files in Localization Folder
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'docs/**'
+  workflow_dispatch:
+
+jobs:
+  check-file-changes:
+    runs-on: ubuntu-latest
+    outputs:
+      deleted_files: ${{ steps.detect-changes.outputs.deleted-files }}
+      renamed_files: ${{ steps.detect-changes.outputs.renamed-files }}
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Detect deleted and renamed Markdown files
+        id: detect-changes
+        run: |
+          deleted_files=$(git diff --diff-filter=D --name-only HEAD~1 HEAD -- 'docs/**/*.md')
+          renamed_files=$(git diff --diff-filter=R --name-only HEAD~1 HEAD -- 'docs/**/*.md')
+          
+          if [ -z "$deleted_files" ]; then
+            echo "No deleted files to process."
+            echo "deleted-files=" >> $GITHUB_OUTPUT
+          else
+            echo "Deleted files detected:"
+            echo "$deleted_files"
+            temp_file=$(mktemp)
+            echo "$deleted_files" > "$temp_file"
+            echo "deleted-files<<EOF" >> $GITHUB_OUTPUT
+            cat "$temp_file" >> $GITHUB_OUTPUT
+            echo "EOF" >> $GITHUB_OUTPUT
+            rm "$temp_file"
+          fi
+          
+          if [ -z "$renamed_files" ]; then
+            echo "No renamed files to process."
+            echo "renamed-files=" >> $GITHUB_OUTPUT
+          else
+            echo "Renamed files detected:"
+            echo "$renamed_files"
+            temp_file=$(mktemp)
+            echo "$renamed_files" > "$temp_file"
+            echo "renamed-files<<EOF" >> $GITHUB_OUTPUT
+            cat "$temp_file" >> $GITHUB_OUTPUT
+            echo "EOF" >> $GITHUB_OUTPUT
+            rm "$temp_file"
+          fi
+
+  create-issues:
+    needs: check-file-changes
+    if: needs.check-file-changes.outputs.deleted_files != '' || needs.check-file-changes.outputs.renamed_files != ''
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Create issues for file changes
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          DELETED_FILES: ${{ needs.check-file-changes.outputs.deleted_files }}
+          RENAMED_FILES: ${{ needs.check-file-changes.outputs.renamed_files }}
+          LANGUAGES: "en-US ro-RO hr-HR"
+          REPO: ${{ github.repository }}
+        run: |
+          declare -A team_usernames
+          team_usernames=( 
+            ["en-US"]="alba-fluentis" 
+            ["ro-RO"]="rodica1234" 
+            ["hr-HR"]="Federica-fluentis" 
+          )
+
+          commit_message=$(git log -1 --pretty=%B)
+          deleted_files=$(echo "$DELETED_FILES" | tr '\n' ' ')
+          renamed_files=$(echo "$RENAMED_FILES" | tr '\n' ' ')
+
+          for lang in $LANGUAGES; do
+            team_member=${team_usernames[$lang]}
+            team_name="translation-team-${lang:0:2}"
+
+            if [ -n "$(echo -e "$deleted_files" | tr -d '[:space:]')" ]; then
+              issue_body="The following files were deleted and need review for localization updates in **${lang}**:\n\n@fluentis-doc/${team_name}\n"
+              for file in $deleted_files; do
+                issue_body+="- $file\n"
+              done
+
+              temp_file=$(mktemp)
+              echo -e "$issue_body" > "$temp_file"
+
+              gh issue create \
+                --title "Deleted file review: $commit_message" \
+                --assignee "$team_member" \
+                --label "deleted-review,$lang" \
+                --body-file "$temp_file"
+
+              rm "$temp_file"
+            fi
+            
+            if [ -n "$(echo -e "$renamed_files" | tr -d '[:space:]')" ]; then
+              issue_body="The following files were renamed/moved and need review for localization updates in **${lang}**:\n\n@fluentis-doc/${team_name}\n"
+              for file in $renamed_files; do
+                issue_body+="- $file\n"
+              done
+
+              temp_file=$(mktemp)
+              echo -e "$issue_body" > "$temp_file"
+
+              gh issue create \
+                --title "Renamed file review: $commit_message" \
+                --assignee "$team_member" \
+                --label "renamed-review,$lang" \
+                --body-file "$temp_file"
+
+              rm "$temp_file"
+            fi
+          done

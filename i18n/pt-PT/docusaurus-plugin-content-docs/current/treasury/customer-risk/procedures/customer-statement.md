@@ -1,64 +1,73 @@
 ---
-title: Exposição clientes
+title: Esposizione clienti
 sidebar_position: 2
 ---
 
-A máscara 'Exposição clientes' permite ter um quadro geral compressivo de toda a situação de risco para os vários clientes, com a possibilidade de obter dados para o agente, nação, agrupamento mesmo para grupos sociais. Vamos ver em detalhe as impostações presentes e os valores devolvidos, considerando que os clientes apresentados na máscara são aqueles pelas quais no registro foi inserido o flag 'Exposição clientes'.
+La form si trova in Tesoreria > Rischio Cliente > Procedure > Esposizione clienti
 
-A seção inicial dos parâmetros de risco cliente repropõe os mesmos parâmetros de default de cálculo estabelecidos para o módulo, com a mais a gama de datas de registração utilizada para o controle das remessas (para os detalhes ver o documento sucessivo).
+Consente di avere un quadro generale complessivo di tutta la situazione di rischio nei confronti dei vari clienti, con la possibilità di ottenere dati per agente, nazione, raggruppando anche per gruppi societari. 
 
-Na seção sucessiva do cabeçalho é possível filtrar por um determinado responsável (o empregado que foi associado com o registro cliente, primeiro tab 'Administração'), filtrar os clientes 'Estrangeiros' ou 'Itália', visualizar os dados agrupados para o 'grupo social' (vai ser visualizado só um total para a subconta inserida no campo do 'grupo social' presente no tab administração do registro cliente invés que cada subconta cliente de detalhe) e enfim agrupar (e filtrar) os dados por agente ou nação. A direita é prevista a possibilidade de ordenar os dados por código de conta/subconta ou por descrição (razão social) do cliente.
+## Come verificare l'esposizione clienti
 
-Abaixo se encontram os dados detalhados visualizados na grelha (pela qual serão visualizadas em vermelho as linhas com variação):
+1. Espandere, se necessario, la sezione dei filtri per inserire l'intervallo di date di riferimento entro cui verificare ed il criterio di raggruppamento desiderato (Per nazione, per agente o per cliente).
 
-**Não pagos**: se visualiza a quantia dos não pagos não contabilizados, ou (se o flag foi inserido no cabeçalho) mesmo aqueles já contabilizados;
+2. Premere il tasto **Ricerca**: i clienti presentati nella maschera sono quelli per i quali in anagrafica è stato inserito il flag *Esposizione clienti*.
 
-**Fat. últimos 12 meses**: é o faturado (da área venda, faturas de venda) dos 12 meses precedentes a data de referência;
+:::note[Nota]
+La sezione iniziale dei *parametri rischio cliente* ripropone gli stessi parametri di default di calcolo impostati per il modulo, con in più il range di date registrazione utilizzato per il controllo rimesse (per i dettagli si veda il documento successivo).
+:::
 
-**Variação dias**: indica o número de dias de variação entre o prazo médio e a data moeda de cobrança média, em relação com o calculado com a lógica da máscara 'Controle remessas';
+:::note[Ulteriori filtri disponibili]
+E' possibile filtrare per un determinato responsabile (il dipendente che è stato associato all'anagrafica cliente, primo tab *Amministrazione*), filtrare i clienti *Esteri* o *Italia*, visualizzare i dati raggruppati per *gruppo societario* (verrà visualizzato un solo totale per il sottoconto inserito nel campo del *gruppo societario* presente nel tab *amministrazione* dell'anagrafica cliente invece che i singoli sottoconti cliente di dettaglio) e infine raggruppare (e filtrare) i dati per agente o nazione. 
 
-**Variação dias venc.**: indica o número de dias de variação médios da data de vencimento em comparação com a data documento;
+E' prevista la possibilità di ordinare i dati per codice di conto/sottoconto o per descrizione (ragione sociale) del cliente.
+:::
 
-**Faturado**: é o faturado (da área venda, faturas de venda) do começo do ano;
+### Dati visualizzati in griglia 
 
-**DSO**: Days of Sales Outstanding, os dias de rotação do crédito. A fórmula de cálculo é 365 * (Partidas débito - Partidas crédito + Efeitos no vencimento + Não pagos + Faturas a contabilizar) / Fat. últimos 12 meses. Se o faturado dos últimos 12 meses for 0, o DSO vai ser também 0;
+Saranno visualizzate in rosso le righe con scostamento.
 
-**Crédito **e** Crédito assegurado**: quantia do crédito gestional e do crédito assegurado;
+**Insoluti**: viene qui visualizzato l'importo degli insoluti non contabilizzati, oppure (se il flag in testata è inserito) anche quelli già contabilizzati;
 
-**Saldo livro-razão**: repropõe os totais débito/crédito calculados pelas partidas ou pelo saldo contábil;
+**Fatt. ultimi 12 mesi**: è il fatturato (dall'area vendita, fatture di vendita) dei 12 mesi precedenti alla data di riferimento;
 
-**Pag. da reg. prov.**: quantia dos pagamentos das partidas associadas com as registrações provisórias;
+**Scostamento giorni**: indica il numero di giorni di scostamento tra la scadenza media e la data valuta d'incasso media, secondo quanto calcolato con la logica della maschera ‘Controllo rimesse' cui si rinvia per dettagli; La particolarità è che è una media pesata sull’importo della partita. Infatti il dato è espresso in numeri creditori (come in estratto conto scalare bancario)
 
-**Efeitos no vencimento**: quantia dos efeitos em maturação (efeitos emitidos + apresentados);
+**Scostamento GG scad.**: indica i giorni di scostamento medi della data scadenza rispetto alla data documento; considera solo le partite scadute = SOMMA (residuo partita * giorni ad oggi di ritardo dalla data scadenza) / somma dei residui partite. Calcola dunque un valore medio dei ritardi
 
-**A contabilizar**: são as quantias das faturas (dos tipos fatura associados com o crédito) imprimidas mas ainda não contabilizadas;
+**Fatturato**: è il fatturato (dall'area vendita, fatture di vendita) dall'inizio dell'anno;
 
-**A faturar**: são as quantias das notas de entrega (dos tipos nota de entrega associados com o crédito) imprimidas mas ainda não faturadas;
+**Giorni medi incasso**: Equivale all'indicatore denominato DSO (Days of Sales Outstanding), i giorni di rotazione del credito. La formula di calcolo è 365 * (Partite Dare – Partite avere + Effetti in scadenza + Insoluti + Fatture da contabilizzare) / Fatt. Ultimi 12 Mesi. Nel caso in cui il fatturato degli ultimi 12 mesi sia 0 allora anche il DSO sarà 0;
 
-**Tot. exposição**: soma das ordens abertas + CT-e do fat. + fat. a cont. + saldo partidas/cont. + efeitos a vencer + não pagos não cont.;
+**Fido **e** Fido assicurato**: importo del fido gestionale e del fido assicurato;
 
-**Vencido**: quantia das partidas abertas e já vencidas;
+**Saldo partitario**: ripropone i totali dare/avere calcolati dalle partite o dal saldo contabile;
 
-**Vencido da reg. prov.**: como o precedente, mas derivam da registrações provisórias;
+**Pagam. da reg. provv.**: importo dei pagamenti partite collegati a registrazioni provvisorie;
 
-**Ordens**: são as quantias das ordens (dos tipos ordem associados com o crédito) imprimidos, confirmados mas ainda não executados.
+**Effetti in scadenza**: importo degli effetti in maturazione (effetti emessi + presentati);
 
-A partir da máscara da exposição clientes é possível: efetuar uma imprensa dos dados visualizados, ou passar na máscara do 'Controle remessas' relativamente a linha do cliente selecionado, através do relativo botão de gestão.
+**Da contabilizzare**: sono gli importi delle fatture (dei Tipi fattura collegati al fido) stampate ma non ancora contabilizzate;
 
-RIBBON BAR: representa o menu do módulo em questão, ou seja, a área na qual efetuar algumas ações. A lista de possíveis funcionalidades é sucessivamente representada:
+**Da fatturare**: sono gli importi dei  DDT (dei Tipi DDT collegati al fido) stampate ma non ancora fatturate;
+
+**Tot. Esposizione**: somma di ordini aperti + ddt da fatt. +fatt. da cont. + saldo partite/cont + effetti a scadere + insoluti non contab.;
+
+**Scaduto**: importo delle partite aperte e già scadute;
+
+**Scaduto da reg. provv.**: come il precedente, ma derivanti da registrazioni provvisorie;
+
+**Ordini**: sono gli importi degli ordini (dei Tipi ordine collegati al fido) stampati, confermati ma non ancora evasi.
+
+Dalla maschera dell'esposizione clienti è possibile: effettuare una stampa dei dati visualizzati, oppure passare alla maschera del ‘Controllo rimesse' relativamente alla riga del cliente selezionato, attraverso il relativo pulsante di gestione.
 
 
 
-| RibbonFunction | RibbonMeaning |
-| --- | --- |
-| Calcular | Botão para calcular o risco clientes em relação com os filtros e as impostações indicadas. |
-| Pré-visualização | Refere-se ao procedimento de pré-visualização para o cálculo efetuado. |
-| Imprimir | Refere-se ao procedimento de imprensa para o cálculo efetuado. |
-| Controle remessas | Refere-se ao procedimento para abrir a máscara de controle das remessas. |
+**Pulsanti specifici**
 
-ÁREA DE FILTRO: a área de filtro é dedicada à hospedagem na lista de possíveis tipos de dados através do qual é possível fazer uma seleção e uma pesquisa sobre os dados da exposição dos clientes. Os filtros são em condição 'E' e é possível especificar mais critérios de filtro contemporâneos.
+**Calcola** Pulsante per calcolare il rischio clienti secondo i filtri e le impostazioni indicate.
 
-GRELHA DE RESULTADO: a grelha de resultado é uma lista dos cálculos que correspondem aos dados de filtro especificados acima. O usuário, depois de especificar os valores pelos quais deseja obter um cálculo exposição, pressionando o botão [Pesquisa] presente na relativa Ribbon, resultará na grelha a lista das exposições que quiser. 
+**Controllo rimesse** Richiama la procedura per aprire la maschera di controllo rimesse.
 
 
 

@@ -6,7 +6,7 @@ sidebar_position: 1
 La tabella permette di definire le tipologie di ticket che potranno essere utilizzate in fase di inserimento di un nuovo ticket, andando a definire a priori alcune caratteristiche dei ticket che verranno registrati con tale tipologia.
 E' composta da una parte di filtro in cui si può ricercare attraverso il codice o la descrizione della tipologia e da una griglia in cui appunto verranno elencati tutte le tipologie inserite.
 
-Sempre all'interno di questa form è possibile aggiungere nuove tipologie all'interno della griglia, cliccando sul pulsante ![](/img/neutral/common/new.png) Nuovo: in questo modo verrà aggiunta una nuova riga all'interno della griglia dove si andranno a definire i seguenti parametri:
+Sempre all'interno di questa form è possibile aggiungere nuove tipologie all'interno della griglia, cliccando sul pulsante **Nuovo**: in questo modo verrà aggiunta una nuova riga all'interno della griglia dove si andranno a definire i seguenti parametri:
 
 **Codice**: è il codice del tipo ticket;
 

@@ -3,30 +3,14 @@ title: Purchase Job Order Types
 sidebar_position: 8
 ---
 
-The purchase job order type is used in order to set the property of a job order.
+The table can be accessed through the path **Tables > Purchases > Purchase Job Order Types** and is used to determine the properties of a purchase job order.
 
-RIBBON BAR: the ribbon bar represents the Form menu, that is the area on which it is possible to perform actions linked to the procedure in use. The list of the possible functions is the following:
+The fields present are:
 
+**Type/Description of purchase job order type**: these are mandatory fields to define the type of job order.
 
+**Hierarchical structure**: if set, the display of items in the job order is hierarchical.
 
-| Function | Meaning |
-| --- | --- |
-| Search | Command to search document type |
-| Insert | Command to insert a new document type. |
-| Delete | Command to delete document type. |
-| Print Preview | Command to launch print preview. |
-| Print | Command to launch the print according to the set filters and printer configuration. |
+**Numeration**: to select the appropriate [numeration](/docs/configurations/tables/fluentis-numerations).
 
-
-
-| Function | Meaning |
-| --- | --- |
-| Type | It represents the job order code. |
-| Description | Job order code description. |
-| Hierarchical Structure | If set, the items visualization on job order is hierarchical. |
-
-
-
-
-
-
+**Print Report** allows you to specify the print template that will be used during the printing of the job order, through the field **Number of copies**, which indicates the default number of copies of the document proposed for printing.

@@ -25,4 +25,3 @@ Il vero e proprio Controllo di gestione, con la contabilità analitica e gestion
 Si invita a fare riferimento al link sopra per ulteriori dettagli.
 
 In particolare la pagina linkata fa riferimento al dettaglio delle tabelle interessate e nel caso in cui si intenda procedere con una configurazione manuale offre una check list per la configurazione.
-

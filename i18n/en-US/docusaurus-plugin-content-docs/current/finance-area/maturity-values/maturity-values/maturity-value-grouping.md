@@ -7,7 +7,7 @@ The search conducted by this form should be used instead of the Maturity Value s
 
 Managing maturity values through groupings represents, in fact, an alternative and specific method compared to the classical approach, and requires a specific visualization to obtain a clearly readable situation.
 
-For further **[details on maturity value grouping see here.](/docs/finance-area/ledger-records/records/create-ledger-record/mat-val-grouping-tab)**
+For further **[details on maturity value grouping see here.](/docs/finance-area/ledger-records/records/ledger-record)**
 
 The report corresponding to this search functionality is also called **[Maturity Value Grouping.](/docs/finance-area/maturity-values/reports/maturity-value-grouping)**
 

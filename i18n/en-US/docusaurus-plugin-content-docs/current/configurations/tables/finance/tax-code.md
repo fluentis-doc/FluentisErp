@@ -1,39 +1,36 @@
 ---
-title: Tax Code
+title: Tax Code (Codice tributo)
 sidebar_position: 10
 ---
+:::tip[Fast Start (FAst Start)]
+The table is affected by the [**Fast Start**](/docs/guide/fast-start) procedure.
 
-The preset ‘tax code' table stores all the tax codes of the F24 declaration, that is managed within the commission settlement modules: these are ministerial official codes.
+If you intend to configure manually, refer to the checklist on the linked page.
+:::
 
-The fields Use, Type, Instalment, Year, Office and Act concern the management of F24 module.
+The table 'Tax Code (Codice tributo)', pre-set, stores all the tax codes provided for the F24 declaration managed within the recipients module: these are official ministerial codes.
 
+The fields 'Use (Utilizzo)', 'Type (Tipo)', 'Installment (Rata)', 'Year (Anno)', 'Office (Ufficio)', and 'Act (Atto)' are relevant for managing the F24 model.
 
+**Code**: ministerial tax code;
 
-| Function | Meaning |
-| --- | --- |
-| Code | Ministerial tax code |
-| Description  | Tax code description |
-| Use | Use code |
-| Type | Tax type |
-| Installment | Tax Installment |
-| Year | Tax year |
-| Of. | Office  |
-| Act | Act |
+**Description**: tax code description;
 
-RIBBON BAR: the ribbon bar represents the Form menu, that is the area in which it is possible to operate on previous recordings or generate new ones. The possible features list is the following:
+**Using**: usage code;
 
+**Type**: type of tax (e.g., Revenue Section (Sez. Erario), Local Authorities Section (sez. Enti locali), etc.);
 
+**Instalment**: tax installment (see Instructions for F24 model);
 
-| Function | Meaning |
-| --- | --- |
-| Search | Button to look for a tax code through the fields of code and description |
-| Insertion | Button to insert a new tax code |
-| Delete  | Button to delete a tax code |
-| Preview | Button to perform the preview |
-| Print | Button to print |
+**Year**: tax year;
 
+**Of.**: office;
 
+**Act**: act;
+
+**Expiration Date**: allows blocking the use of the relevant code;
+
+**VAT**: qualifies the tax codes to be used in the management of VAT payments.
 
 
-
-
+The ACCOUNT section allows assigning a sub-account to the tax code, which will prevail over the accounts set in the general accounting parameters within the accounting of the F24 model.

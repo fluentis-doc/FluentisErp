@@ -1,26 +1,24 @@
 ---
-title: Exportations
+title: Esportazioni
 sidebar_position: 2
 ---
 
-À partir de ce masque s'exécutent les exportations données pourdocFinance, avec trois différentes options:
+Da questa maschera si eseguono le esportazioni dati per DocFinance, con tre diverse opzioni.
 
-**Exporter registre**: l'activation de ce flag imposera au système de créer le fichier d'alignement du plan des comptes et des registres. Une fois établi s'activeront les champs reliés successifs, où établir le prénom fichier et le parcours partagé de création (les deux données seront enregistrées pour être reproposés à la création successive). Le premier champ 'Date dernière exportation' permetde définir la date de référence pour l'exportation des seules données modifiées/ajoutée dans le plan des comptes: est permis de supprimer cette date en façon de créer un fichier complet de tous les paramétrages de plan des comptes/registre (ce a un impact significatif sur les temps nécessaires à l'alignement entre les deux systèmes);
+**Esporta anagrafica**: l'attivazione di questo flag imporrà al sistema di creare il file di allineamento del piano dei conti e delle anagrafiche. Una volta impostato si attiveranno i campi collegati successivi, dove impostare il nome file e il percorso condiviso di creazione (entrambi i dati saranno memorizzati per essere riproposti alla creazione successiva). Il primo campo ‘Data ultima esportazione' consente di definire la data di riferimento per l'esportazione dei soli dati modificati/aggiunti nel piano dei conti: è consentito cancellare questa data in modo da creare un file completo di tutte le impostazioni di piano dei conti/anagrafiche (la cosa ha chiaramente un impatto significativo sui tempi necessari all'allineamento tra i due sistemi)
 
-**Création automatique Flux de trésorerie**: avec ce flag le programme ira à créer un nouveau flux de trésorerie dans le formulaire homonyme, abord d'avancer à l'éventuelle exportation des données du point successif. La création arrivera avec les paramètres par défaut de la procédure 'Création automatique flux de trésorerie': on renvoie à la documentation spécifique pour ultérieurs détails;
+**Creazione automatica cash flow**: con questo flag il programma andrà a creare un nuovo cash flow nel modulo omonimo, prima di procedere all'eventuale esportazione dati del punto successivo. La creazione avverrà con i parametri di default della procedura ‘Creazione automatica cash flow': si rinvia alla documentazione specifica per ulteriori dettagli.
 
-**Exporter Flux de trésorerie**: avec ce flag le système ira à créer le fichier des flux financiers, soit comme comptes comptables qui comme prévisionnels. Au moment que le flag vient établi, s'active le successif flag 'Déductibilité par les registres/types paiement' et leschamps avec les prénoms et le parcours portagé de création du fichier (les deux enregistrés). En détail, selon qui a été établi leflag 'Déductibilité par les registres/types paiement' ou non, la logique d'assignation de la déductibilité change: en case n'est pasétablie, la déductibilité dérivera par le registre client/fournisseur et si ici n'est pas établie sera calculée avec codes fix ('01' pour les reçus bancaires, ou '01' - '02' - '03' - '04' si différence entre la date échéance et la date actuelle rendre une date échue, une différence inférieure aux 30 jours, par les 30 aux 90 ou plus de 90).
+**Esporta cash flow**: con questo flag il sistema andrà a creare il file dei flussi finanziari, sia come partite contabili che come previsionali. Quando il flag viene impostato, si attiva il successivo flag ‘Derogabilità da anagrafici/tipi pagamento' e i campi con i nomi e il percorso condiviso di creazione del file (entrambi memorizzati). In dettaglio, a seconda che sia stato impostato il flag ‘Derogabilità da anagrafici/tipi pagamento' o meno, la logica di assegnazione della derogabilità cambia: in caso non sia impostato, la derogabilità per i fornitori sarà rilevato dal tipo di pagamento e per i clienti dall'anagrafica; in caso sia impostato, la derogabilità deriverà dall'anagrafica cliente/fornitore e se qui non è impostata sarà calcolata con codici fissi (‘01' per le riba, oppure ‘01' – ‘02' – ‘03' – ‘04' a seconda che la differenza tra data scadenza e data attuale restituisca una data scaduta, una differenza inferiore ai 30 giorni, dai 30 ai 90, oltre i 90).
 
-Sur la base du masque va défini l'utilisateur qui ira à exécuter la création des fichiers. Il faut que ce ait accès aux dossiers portagés établis pour la création des fichiers.
-
-RIBBON BAR: il représente le menu de la forme en objet, à savoir la zone dans laquelle est possible d'effectuer des actions. La liste des fonctionnalités possibles est représentée de suite:
+Alla base della maschera va definito l'utente che andrà ad eseguire la creazione dei file. È necessario che questo abbia accesso alle cartelle condivise impostate per la creazione dei file.
 
 
 
-| RibbonFunction | RibbonMeaning |
+| Funzione | Significato |
 | --- | --- |
-| Enregistrer | Avec ce bouton est possible d'enregistrer les paramétrages à proposer par défaut dans le masque. |
-| Exportation | Exécuter la création du/des fichier/s ainsi comme établis dans le masque. |
+| Salva | Con questo pulsante è possibile salvare le impostazioni da proporre di default nella maschera. |
+| Esportazione | Esegue la creazione del/i file/s così come impostati nella maschera. |
 
 
 

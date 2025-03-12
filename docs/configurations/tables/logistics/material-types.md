@@ -19,7 +19,7 @@ Per poter inserire nuove codifiche è necessario cliccare nella griglia sulla pr
 
 Nella griglia superiore vengono codificati i *Tipi materiale*. I campi obbligatori richiesti dal programma sono il **Codice** e la **Descrizione**.  
 
-*Campi specifici*: 
+#### Campi specifici 
 
 > **Codice materiale Conai**: codice alfanumerico che indica il tipo di materiale di cui è composto l'imballaggio (cioè Acciaio, Alluminio, Carta, Legno, Plastica, ecc.);     
 > **Classi articolo**: indica la [Classe](/docs/configurations/tables/logistics/item-class) a cui appartiene l'articolo;   

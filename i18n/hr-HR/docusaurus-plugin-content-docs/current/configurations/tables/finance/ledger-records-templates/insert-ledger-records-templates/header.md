@@ -3,7 +3,7 @@ title: Inserimento causali di contabilità generale
 sidebar_position: 1
 ---
 
-Le causali contabili sono composte da una testata e da tre sezioni: **[Dettaglio attributi;](/docs/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates/attributes-detail)**, **[Dettaglio registrazione](/docs/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates/recording-detail)** e **[Parametri](/docs/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates/parameters)**.
+Le causali contabili sono composte da una testata e da tre sezioni: **[Dettaglio attributi;](/docs/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates)**, **[Dettaglio registrazione](/docs/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates)** e **[Parametri](/docs/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates)**.
 
 ![](/img/it-it/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates/header/image01.png)
 

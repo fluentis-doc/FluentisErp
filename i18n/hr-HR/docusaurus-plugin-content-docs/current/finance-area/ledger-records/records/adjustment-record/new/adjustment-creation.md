@@ -5,9 +5,9 @@ sidebar_position: 1
 
 LINK:
 
-**[Tab Gestione](/docs/finance-area/ledger-records/records/adjustment-record/new/management-tab)**
+**[Tab Gestione](/docs/finance-area/ledger-records/records/adjustment-record/adjustment-creation)**
 
-**[Tab Ripristina](/docs/finance-area/ledger-records/records/adjustment-record/new/restore-tab)**
+**[Tab Ripristina](/docs/finance-area/ledger-records/records/adjustment-record/adjustment-creation)**
 
  
 
@@ -41,7 +41,7 @@ Si ricorda che a livello del piano dei conti, sul singolo sottoconto di costo/ri
 
 3) Siano stati utilizzati correttamente i range di date per la competenza economica  nei movimenti di contabilità. 
 
-NOTA: si consiglia di impostare i **[parametri di inserimento](/docs/finance-area/ledger-records/records/create-ledger-record/header-and-total-movements-description)** utente con l'opzione ‘Nessuna data per tipo conto servizio' al fine di obbligare l'utente a inserire, volta per volta, il range di date economiche valide per il singolo movimento.
+NOTA: si consiglia di impostare i **[parametri di inserimento](/docs/finance-area/ledger-records/records/ledger-record)** utente con l'opzione ‘Nessuna data per tipo conto servizio' al fine di obbligare l'utente a inserire, volta per volta, il range di date economiche valide per il singolo movimento.
 
 
 

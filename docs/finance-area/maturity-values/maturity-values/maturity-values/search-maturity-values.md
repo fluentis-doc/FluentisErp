@@ -34,7 +34,7 @@ In particolare per ogni riga corrispondente alla partita è presente un comando 
 
 **Contab.**: indica che la partita è legata ad una registrazione contabile.
 
-**Non pagabile**: indica che la partita è stata bloccata dall'utente affinchè non sia pagabile. Il blocco può essere impostato direttamente all'atto della creazione oppure in un secondo tempo e sia dalla ** [tab Partite](/docs/finance-area/ledger-records/records/create-ledger-record/maturity-values-tab) ** della registrazione contabile che genera la partita, sia entrando in modifica nella partita stessa dalla form in commento.
+**Non pagabile**: indica che la partita è stata bloccata dall'utente affinchè non sia pagabile. Il blocco può essere impostato direttamente all'atto della creazione oppure in un secondo tempo e sia dalla ** [tab Partite](/docs/finance-area/ledger-records/records/ledger-record) ** della registrazione contabile che genera la partita, sia entrando in modifica nella partita stessa dalla form in commento.
 
 **Ribbon bar**:
 

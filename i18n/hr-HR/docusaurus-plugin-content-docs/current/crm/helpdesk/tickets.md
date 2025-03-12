@@ -4,7 +4,7 @@ sidebar_position: 1
 ---
 
 S ekrana pretrage Ticketa moguće je pregledati već unesene tickete. Općenito, upravljanje tiketima koristi se od strane internog tima korisničke podrške tvrtke. S ovog ekrana moguće je otvoriti postojeće tickete u načinu uređivanja ili pregleda, kao i stvarati nove tickete.      
-Osim toga, gumb **Izrada ponude iz Ticketa** na vrpci omogućava stvaranje [Ponuda](/docs/sales/offers/new-offer/header) izravno iz odabranih ticketa. Artikl/usluga unesena u ticket postat će stavka ponude, a u ponudi će se prikazati i ostali podaci uneseni u ticketu: Projekt, Klijent, Iznosi stavki (treba paziti u ovom slučaju ako postoje važeći cjenici za klijenta - ponuda će mijenjati iznose prema cjeniku povezanom s klijentom). Ovaj postupak također je dostupan unutar pojedinačnih ticketa.
+Osim toga, gumb **Izrada ponude iz Ticketa** na vrpci omogućava stvaranje [Ponuda](/docs/sales/offers/insert-offer) izravno iz odabranih ticketa. Artikl/usluga unesena u ticket postat će stavka ponude, a u ponudi će se prikazati i ostali podaci uneseni u ticketu: Projekt, Klijent, Iznosi stavki (treba paziti u ovom slučaju ako postoje važeći cjenici za klijenta - ponuda će mijenjati iznose prema cjeniku povezanom s klijentom). Ovaj postupak također je dostupan unutar pojedinačnih ticketa.
 
 Klikom na *Novo* moguće je unijeti novi Ticket. Upravljanje ticketima sastoji se od dva dijela: zaglavlja i donjih kartica, koje ćemo navesti.   
 

@@ -13,7 +13,7 @@ sidebar_position: 3
 
 La partita che verrà aperta al salvataggio del compenso (anche sotto forma di preavviso di parcella) può essere bloccata per il pagamento attivando il **flag Non pagabile** e può essere aggiunta una nota relativa.
 
-Il funzionamento è del tutto simile alla griglia presente nelle ** [registrazioni di prima nota](/docs/finance-area/ledger-records/records/create-ledger-record/maturity-values-tab) ** a cui si rinvia.
+Il funzionamento è del tutto simile alla griglia presente nelle ** [registrazioni di prima nota](/docs/finance-area/ledger-records/records/ledger-record) ** a cui si rinvia.
 
  
 

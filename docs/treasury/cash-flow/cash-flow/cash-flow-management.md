@@ -9,20 +9,18 @@ Da queste voci di menù è possibile creare/modificare i calcoli di simulazione 
 
 Da questa maschera è anche possibile visualizzare il documento d'origine per valutarne i dati.
 
+#### Pulsanti specifici
 
-
-| Funzione | Significato |
-| --- | --- |
-| Salva | Salva il cash flow in gestione. |
-| Ricerca tutti | Esegue la ricerca dei flussi per i conti finanziari. |
-| Ricerca movimenti cash flow | Esegue la ricerca dei movimenti per i tipi di flusso previsionale. |
-| Acquisizione | Da questo pulsante l'utente può selezionare il tipo di flusso dal quale riprendere i dati previsionali da inserire nel cash flow in uso. Ogni dettaglio di questo pulsante aprirà un help contestuale specifico per il tipo di flusso, vedi applicazione a. |
-| Nuovo mov. cont. | Attiva il cursore nell'inserimento di una nuova riga di dettaglio nei movimenti dei conti finanziari. |
-| Nuovo mov. flow | Attiva il cursore nell'inserimento di una nuova riga di dettaglio nei movimenti previsionali. |
-| Ripristino tutti | Cancella tutti i movimenti inseriti. |
-| Ripristino contabilità | Cancella i movimenti dei conti finanziari. |
-| Ripristino cash flow | Cancella i movimenti previsionali. |
-| Visualizza doc. orig. | Visualizza il documento d'origine del flusso previsionale selezionata. |
+> **Salva**: Salva il cash flow in gestione.  
+> **Ricerca tutti**: Esegue la ricerca dei flussi per i conti finanziari.  
+> **Ricerca movimenti cash flow**: Esegue la ricerca dei movimenti per i tipi di flusso previsionale.  
+> **Acquisizione**: Da questo pulsante l'utente può selezionare il tipo di flusso dal quale riprendere i dati previsionali da inserire nel cash flow in uso. Ogni dettaglio di questo pulsante aprirà un help contestuale specifico per il tipo di flusso, vedi applicazione a.  
+> **Nuovo mov. cont.**: Attiva il cursore nell'inserimento di una nuova riga di dettaglio nei movimenti dei conti finanziari.  
+> **Nuovo mov. flow**: Attiva il cursore nell'inserimento di una nuova riga di dettaglio nei movimenti previsionali.  
+> **Ripristino tutti**: Cancella tutti i movimenti inseriti.  
+> **Ripristino contabilità**: Cancella i movimenti dei conti finanziari.  
+> **Ripristino cash flow**: Cancella i movimenti previsionali.  
+> **Visualizza doc. orig.**: Visualizza il documento d'origine del flusso previsionale selezionata.  
 
 **PULSANTE (lista) *ACQUISIZIONE*:**
 

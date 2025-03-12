@@ -1,26 +1,24 @@
 ---
-title: 导出
+title: Esportazioni
 sidebar_position: 2
 ---
 
-该掩码用于执行DocFinance的导出，有三个选项。
+Da questa maschera si eseguono le esportazioni dati per DocFinance, con tre diverse opzioni.
 
-**导出登记**：激活该标记可以使系统创建会计科目表和登记的对齐文件。设置成功后，将激活之后的关联字段，设置文件名和创建路径（这两项数据将被保存，用于之后的创建）。第一个字段“导出最后的日期”用于定义仅在会计科目表中修改/添加的数据的导出参考日期。可以删除该日期以创建具有会计科目表/登记所有设置的完整文件。（这将非常有利于会计科目表和登记的对齐。）
+**Esporta anagrafica**: l'attivazione di questo flag imporrà al sistema di creare il file di allineamento del piano dei conti e delle anagrafiche. Una volta impostato si attiveranno i campi collegati successivi, dove impostare il nome file e il percorso condiviso di creazione (entrambi i dati saranno memorizzati per essere riproposti alla creazione successiva). Il primo campo ‘Data ultima esportazione' consente di definire la data di riferimento per l'esportazione dei soli dati modificati/aggiunti nel piano dei conti: è consentito cancellare questa data in modo da creare un file completo di tutte le impostazioni di piano dei conti/anagrafiche (la cosa ha chiaramente un impatto significativo sui tempi necessari all'allineamento tra i due sistemi)
 
-**自动创建现金流**：使用该标记程序可以在数据最终导出到下一步骤之前，在相同模块内创建新的现金流。创建将使用默认参数“自动创建现金流”：详细信息可以参考指定文档。
+**Creazione automatica cash flow**: con questo flag il programma andrà a creare un nuovo cash flow nel modulo omonimo, prima di procedere all'eventuale esportazione dati del punto successivo. La creazione avverrà con i parametri di default della procedura ‘Creazione automatica cash flow': si rinvia alla documentazione specifica per ulteriori dettagli.
 
-**导出现金流**：使用该标记，系统将创建财务流动文件，该文件将被视为会计到期值和预计到期值。标记设置成功后，将激活接下来的标记“从登记/支付方式废除”，以及创建名称和文件路径字段（这两项将被保存）。详细地来说，根据“从登记/支付方式废除”标记是否设置，废除的分配逻辑会有所不同：若没有设置，供应商将从支付方式废除，客户将从登记废除；若设置了标记，将从客户/供应商登记废除，若在登记中没有设置废除，则将按固定代码计算（“01”代表现金汇票，或者根据到期日和当前日期的差距使用“01”-“02”-“03”-“04”代表已过期的日期，它们分别表示小于30天，30天到90天，大于90天）。
+**Esporta cash flow**: con questo flag il sistema andrà a creare il file dei flussi finanziari, sia come partite contabili che come previsionali. Quando il flag viene impostato, si attiva il successivo flag ‘Derogabilità da anagrafici/tipi pagamento' e i campi con i nomi e il percorso condiviso di creazione del file (entrambi memorizzati). In dettaglio, a seconda che sia stato impostato il flag ‘Derogabilità da anagrafici/tipi pagamento' o meno, la logica di assegnazione della derogabilità cambia: in caso non sia impostato, la derogabilità per i fornitori sarà rilevato dal tipo di pagamento e per i clienti dall'anagrafica; in caso sia impostato, la derogabilità deriverà dall'anagrafica cliente/fornitore e se qui non è impostata sarà calcolata con codici fissi (‘01' per le riba, oppure ‘01' – ‘02' – ‘03' – ‘04' a seconda che la differenza tra data scadenza e data attuale restituisca una data scaduta, una differenza inferiore ai 30 giorni, dai 30 ai 90, oltre i 90).
 
-根据定义的掩码，用户可以创建文件。该操作要求用户有权访问用于创建文件的共享文件夹。 
-
-功能导航栏：功能导航栏为菜单窗体，包含该程序中可能需要的操作。当前选项卡的功能如下：
+Alla base della maschera va definito l'utente che andrà ad eseguire la creazione dei file. È necessario che questo abbia accesso alle cartelle condivise impostate per la creazione dei file.
 
 
 
-| RibbonFunction | RibbonMeaning |
+| Funzione | Significato |
 | --- | --- |
-| 保存 | 用于根据掩码中的默认保存设置 |
-| 导出 | 根据掩码中的设置创建文件 |
+| Salva | Con questo pulsante è possibile salvare le impostazioni da proporre di default nella maschera. |
+| Esportazione | Esegue la creazione del/i file/s così come impostati nella maschera. |
 
 
 

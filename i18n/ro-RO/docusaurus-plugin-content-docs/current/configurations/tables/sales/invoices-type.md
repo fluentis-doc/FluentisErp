@@ -21,7 +21,7 @@ Pentru a insera datele, efectuați clic pe primul rând gol din tabel sau apăsa
 **Natură tranzacție**: reprezintă codul tranzacție utilizat pentru declarația intrastat. Consultați [Natură tranzacții intrastat](/docs/configurations/tables/finance/nature-of-intrastat-transaction).  
 **În statistică**: dacă este setat, înseamnă că factura de acest tip este considerată în statistici și va fi vizibilă în rapoartele *Facturat*.  
 **Proformă**: dacă este setat, factura este de tip proforma și nu poate fi contabilizată.  
-**Șablon/Descriere șablon**: reprezintă șablonul contabil utilizat pentru contabilizarea facturii. Consultați [șabloane contabilitate generală](/docs/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates/recording-detail)
+**Șablon/Descriere șablon**: reprezintă șablonul contabil utilizat pentru contabilizarea facturii. Consultați [șabloane contabilitate generală](/docs/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates)
 **Șablon de gestiune/Descriere șablon de gestiune**: reprezintă șablonul de gestiune utilizat pentru contabilizarea facturii în contabilitatea de gestiune.  
 **Note**: permite inserarea notelor libere pentru tipul facturii.  
 **Control client**: dacă este setat, în momentul inserării contului analitic titular al documentului, aplicația verifică dacă tipul contului este obligatoriu client. Dacă nu este activ, aplicația va lansa un mesaj de eroare. Recomandăm activrea lui pentru toate tipurile de factură de vânzare.  

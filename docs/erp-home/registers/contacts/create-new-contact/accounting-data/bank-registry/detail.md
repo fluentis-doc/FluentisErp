@@ -9,7 +9,7 @@ Nella prima sezione ***Importo Commissioni*** si possono indicare:
 **Per massimo scoperto** (non utilizzato automaticamente), 
 **Varie** (non utilizzato automaticamente),
 **Per insoluto**: Utilizzato come rivalsa spese e contabilizzazione a costo nella procedura di creazione insoluto e inserita nella testata del nuovo insoluto nel campo apposito.
-**Anticipo Fattura** utilizzato per inserire automaticamente una commissione nel modulo [Anticipi&Incassi](/docs/treasury/advance/advances-collections.md)
+**Anticipo Fattura** utilizzato per inserire automaticamente una commissione nel modulo [Anticipi&Incassi](/docs/treasury/advance/advances-collections)
 
 Nelle griglie **Attivi**/**Passivi** ci sono gli scaglioni dei tassi di interessi attivi/passivi da applicare.
 

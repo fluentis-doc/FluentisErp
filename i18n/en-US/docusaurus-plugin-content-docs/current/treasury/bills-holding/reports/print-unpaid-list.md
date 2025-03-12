@@ -1,9 +1,9 @@
 ---
-title: Print Unpaid List
+title: Stampa Lista insoluti
 sidebar_position: 3
 ---
 
-Through this dialog it is possible to print the list of system unpaid according to filter set. In particular, it is very important the filter for 'not collected' unpaids and the grouping criteria for customer or agent.
+Da questa finestra è possibile stampare la lista degli insoluti presenti nel sistema secondo il filtro impostato. In particolare, è d'interesse il filtro per insoluti ‘Non incassati' e il criterio di raggruppamento per cliente o per agente.
 
 
 

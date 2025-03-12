@@ -1,31 +1,22 @@
 ---
-title: Fixed Asset Precode
+title: Fixed asset classification code
 sidebar_position: 18
 ---
+:::tip[Fast Start (FAst Start)]
+The table is affected by the [**Fast Start**](/docs/guide/fast-start) procedure.
 
-This table encodes the valid precodes for all database companies, which will be usable only if there will be the flag of codes management in module parameters. 
+If manual configuration is intended, refer to the checklist of the linked page.
+:::
 
+In this table, precodes are encoded, valid for the individual company or for all, depending on the **Fixed Assets Parameters** set, which will be usable in defining the numbering of asset sheets, if the *precode management (gestione precodici)* flag is activated in the [**Fixed Assets Parameters**](/docs/configurations/parameters/finance/fixed-assets-parameters).
 
+In particular, precode management is useful when it is necessary to obtain a non-unique or unique numbering; otherwise, for example, it is not possible to have two sheets with the number 1. If there are two precodes A and B, then it will be possible to have sheet number 1 related to precode A and number 1 related to precode B.
 
-| Function | Meaning |
-| --- | --- |
-| Code | Precode alphanumeric code  |
-| Description | Precode description  |
-
-RIBBON BAR: the ribbon bar represents the Form menu, that is the area in which it is possible to operate on previous recordings or generate new ones. The possible features list is the following:
-
-
-
-| Function | Meaning |
-| --- | --- |
-| Search | Button to look for the precode through the fields: code and description |
-| Insertion | Button to insert the precode |
-| Cancellazione  | Button to delete the precode where the user is located |
-| Preview  | Button to perform the preview |
-| Print | Button to print |
+Another example of use is to group assets by year (thus, the various precodes will correspond to the year of purchase) or by type, etc.
 
 
+#### Specific Fields (Campi specifici)
 
+**Code**: alphanumeric code of the precode.
 
-
-
+**Description**: description of the precode.

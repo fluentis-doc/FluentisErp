@@ -7,8 +7,6 @@ La tabella consente la definizione della struttura, anche su diversi livelli, e 
 
 La sezione generale presenta la struttura ramificata dei Centri di profitto definiti per la società attiva: in rosso sono visualizzati i CDP che non sono valorizzabili in contabilità, in grassetto quelli utilizzabili nella produzione.
 
-
-
 **Centro di profitto**: codice alfanumerico del CDP.
 
 **Descrizione**: descrizione del CDP.
@@ -32,7 +30,3 @@ La sezione generale presenta la struttura ramificata dei Centri di profitto defi
 la tabella è da considerarsi superata e viene gestita solo per retrocompatibilità.
 Si consiglia di definire piuttosto una *dimensione* ricavi da utilizzare nei *Centri aziendali*
 :::
-
-
-
-

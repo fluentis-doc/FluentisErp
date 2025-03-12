@@ -3,7 +3,7 @@ title: Nuova
 sidebar_position: 2
 ---
 
-La procedura Apertura automatica conti si può utilizzare, in alternativa ad una scrittura di prima nota da inserire tramite il comando **[Creazione Registrazione contabile](/docs/finance-area/ledger-records/records/create-ledger-record/header-and-total-movements-description),**  **per rilevare i saldi di inizio attività.**
+La procedura Apertura automatica conti si può utilizzare, in alternativa ad una scrittura di prima nota da inserire tramite il comando **[Creazione Registrazione contabile](/docs/finance-area/ledger-records/records/ledger-record),**  **per rilevare i saldi di inizio attività.**
 
 **A partire dalla prima chiusura di bilancio, le successive aperture conti potranno essere gestite direttamente dalla procedura di chiusura.**
 

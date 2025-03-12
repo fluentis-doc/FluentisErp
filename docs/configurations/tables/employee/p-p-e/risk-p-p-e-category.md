@@ -12,16 +12,16 @@ Un esempio di utilizzo lo troviamo nella gestione **D.P.I.**.
 
 La tabella consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
 
-**Ricerca Categorie rischio D.P.I.**
+#### Ricerca Categorie rischio D.P.I. 
 
 La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
 
-**Inserimento Categorie rischio D.P.I.**
+#### Inserimento Categorie rischio D.P.I. 
 
 Per poter inserire nuove *Categorie rischio D.P.I.* è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.   
 Per il nuovo record si devono inserire almeno i campi obbligatori richiesti dal programma: il **Codice** e la **Descrizione**.
 
-*Campi specifici*: 
+#### Campi specifici 
     
 > **Codice**: è il codice della *Categoria rischio D.P.I.*.   
 > **Descrizione**: è la descrizione della *Categoria rischio D.P.I.*.   

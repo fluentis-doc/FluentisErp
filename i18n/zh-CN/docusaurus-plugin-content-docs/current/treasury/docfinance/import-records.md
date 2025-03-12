@@ -1,25 +1,28 @@
 ---
-title: 导入记录
+title: Importazione registrazioni
 sidebar_position: 3
 ---
 
-该步骤用于从DocFinance导入已创建的分类账记录文件。
+Attraverso questa procedura si esegue la procedura di importazione del file delle registrazioni contabili creato da DocFinance.
 
-导入过程必须首先使用“导入”（默认设置）按钮指定文件，并在选中文件的掩码中确认。之后，系统将创建相关的分类账记录，关闭由DocFinance指定的到期值，指出系统中的账户转移（ERP和DocFinance的记账模板代码必须相同）。
+L'importazione avviene attraverso un flusso *Folder Monitor* di Bizlink.
 
-导入结果在下方网格可见（上方网格可以查看已执行的导入），使用掩码按钮可以：打开分类账记录，删除导入，查看导入中发现的错误。
+Pertanto il file con le registrazioni da importare sarà depositato nella cartella monitorata dal servizio il quale provvederà ad importarle n automatico.
 
-功能导航栏：功能导航栏包含格式菜单，在这里可以执行相关过程的操作。包含的功能如下表：
+A questo punto il sistema andrà a creare le registrazioni contabili relative, chiudendo le partite indicate da DocFinance e rilevando contabilmente i movimenti sui conti mappati nel sistema (le causali contabili devono avere lo stesso codice tra ERP e DocFinance).
+
+Il risultato dell'importazione sarà visibile nella griglia inferiore (mentre nella superiore saranno visualizzati le importazioni eseguite) e con i comandi della ribbon bar sarà possibile cancellare l'importazione e visualizzare il dettaglio degli errori riscontrati nel corso dell'importazione.
+
+:::danger ATTENZIONE
+L'importazione dei pagamenti prevede che nel tracciato Docfinance sia passato l'id della partita aperta da chiudere andando così a generare da parte di Fluentis un pagamento ad essa agganciato.
+
+Se per qualsiasi motivo l'id della partita non corrisponde a quello presente nel tracciato (modifiche manuali di qualsiasi genere effettuate dopo l'esportazione partite che sono state poi gestite in Docfinance) saranno generati dei pagamenti, ma essi non saranno correttamente agganciati alle partite le quali rimarranno aperte. E' possibile procedere a compensare tali partite oppure a ricercare i pagamenti importati in questa situazione, cancellarli e manualmente ricrearli agganciando correttamente la relativa partita. L'operazione si esegue, dopo aver cancellato il pagamento, premendo il tasto *Nuovo* e poi *Crea da partite / pagamenti* e selezionando la partita da chiudere.
+:::
 
 
-
-| RibbonFunction | RibbonMeaning |
-| --- | --- |
-| 搜索 | 用于搜索已执行的导入 |
-| 导入 | 执行数据导入 |
-| 查看 | 查看导入的会计结果 |
-| 删除 | 删除选中的导入 |
-| 查看错误 | 打开在导入过程中的错误查看掩码 |
+:::note Info
+[Link alle specifiche tecniche **Docfinance**](/pdf/it-IT/TRACCIATI_DocFinance_28_Luglio_2021.pdf)
+:::
 
 
 

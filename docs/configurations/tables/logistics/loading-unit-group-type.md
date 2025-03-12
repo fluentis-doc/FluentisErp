@@ -23,7 +23,7 @@ La form si compone di un'area di filtro e da una di risultato. Una volta imposta
 
 Per poter inserire nuove codifiche è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.
 
-*Campi specifici*:   
+#### Campi specifici  
 > **Tipo**: codice alfanumerico che indica il *Tipo gruppo UDC*;   
 > **Descrizione**: è la descrizione del *Tipo gruppo UDC*;   
 > **Gruppo**: indica il gruppo che identifica l'UDC. Può essere un *Numero progressivo*, una *Commessa di produzione*, un *Ordine fornitore* oppure un *Ordine di produzione*;   

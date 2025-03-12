@@ -1,32 +1,12 @@
 ---
-title: Intrastat Numeration
+title: Intrastat numeration
 sidebar_position: 15
 ---
 
-The table enables the user to define the starting number and the reference date for all different companies in database.
+The table allows for defining, through a standard Fluentis numbering system, the numbering of Intrastat models.
 
+For the definition of the fields of the numbering system, see [**here (qui)**](/docs/configurations/tables/fluentis-numerations).
 
-
-| Function | Meaning |
-| --- | --- |
-| Company | Company code |
-| Company Description | Company Description |
-| Type | Numeration type   |
-| Description  | Numeration description |
-| Starting Number | Starting Number |
-| Start Date | Start Date |
-
-RIBBON BAR: the ribbon bar represents the Form menu, that is the area in which it is possible to operate on previous recordings or generate new ones. The possible features list is the following:
-
-
-
-| Function | Meaning |
-| --- | --- |
-| Search | Button to look for an Intrastat numeration |
-| Delete | IButton to delete an Intrastat numeration |
-
-
-
-
-
-
+:::tip[Fast Start (FAst Start)]
+The table is affected by the [**Fast Start (Fast Start)**](/docs/guide/fast-start) procedure.
+:::

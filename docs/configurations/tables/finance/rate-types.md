@@ -7,7 +7,7 @@ La definizione di questa tabella consente di codificare e impostare le varie tip
 
  
 
-Nella **Griglia superiore** sono presenti i seguenti campi:
+### Griglia superiore
 
 **Codice**: codice identificativo del tasso d'interesse.
 
@@ -27,7 +27,7 @@ Nella **Griglia superiore** sono presenti i seguenti campi:
 ESEMPIO: in caso di pagamento anticipato da parte del cliente e successivo ritardo di pagamento, se l'importo dell'interesse calcolato sul ritardo è superiore al valore impostato nel campo Interesse min. , al valore dell'interesse calcolato sarà detratto il valore (negativo) calcolato in base ai giorni che intercorrono tra la data pagamento e la data scadenza. In ogni caso il risultato del calcolo non potrà mai essere un interesse negativo.
 :::
 
-Nella **Griglia inferiore** sono presente i seguenti campi:
+### Griglia inferiore  
 
 **Codice**: codice identificativo del tasso.
 
@@ -39,18 +39,4 @@ Nella **Griglia inferiore** sono presente i seguenti campi:
 
 I campi relativi alle date di validità riferiti alla percentuale permettono di definire l'andamento della politica del tasso di interesse che, come noto, è soggetta a periodiche revisioni relative al tasso legale.
 
- 
-
 ![](/img/it-it/configurations/tables/finance/rate-types/image01.png)
-
- 
-
-RIBBON BAR: per quanto riguarda le funzionalità comuni a tutte le form si rimanda all'articolo ** [Pulsanti comuni](/docs/guide/common/common-buttons) ;**
-
-Si rimanda inoltre agli articoli generali realtivi all' [**Inserimento dati**](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection)  e all' [**Anteprima e Stampa**](/docs/guide/common/operations-with-data/reports).
-
-
-
-
-
-

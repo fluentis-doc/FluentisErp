@@ -1,39 +1,38 @@
 ---
-title: Sales Turnover
-sidebar_position: 6
+title: Sales Turnover 
+sidebar_position: 10
 ---
 
-The turnover type table data are necessary at the moment of documents accounting.
+Allows you to enter new records or search for existing ones to view, modify, or delete them.
 
-The turnover code can be codified only in case that it is inserted even in the account and detail account, VAT type and amount type. If the turnover type is inserted in the items register, this code is proposed in the document lined and it is necessary for the document accounting; if the turnover type is not inserted into the item, the cost account of vendor register is taken again. The account-detail account in this table regards even cost centres in documents item lines
+The form consists of a filter area and a results area. Once all desired filters are set, simply click the **Search** button to display the results within the results grid.
 
-Detail for nations: these data are used just for  data exchange with external programmes. In the future will be possible to define different cost centres, by nation and accounting tyoe, associated in customer register. 
+To insert records, it is necessary to click on the first empty row of the grid or press the **New** button.
 
-RIBBON BAR: the ribbon bar represents the Form menu, that is the area on which it is possible to perform actions linked to the procedure in use. 
+*Specific fields*
 
+**Type**: identification code of the sales turnover;
 
+**Description**: description of the sales turnover;
 
-| Function | Meaning |
-| --- | --- |
-| Search | Command to search a document type. |
-| Insert | Command to insert a new document type. |
-| Delete | Command to delete document type. |
-| Print Preview | Command to launch print preview. |
-| Print | Command to launch the print according to the set filters and printer configuration. |
+**Account/Detail Account/Detail Account Description**: Cost account used in the accounting of sales documents;
 
+**VAT Type**: used in the registration of the document’s accounting. It is usually set to generic; for further details, check its usage in ledger templates and ledger records in the finance area;
 
+**Analytic account and detail account and relative Description**: (obsolete) account used to record the document in analytic accounting.
 
-| Function | Meaning |
-| --- | --- |
-| Tipo | Codice di identificazione del fatturato vendite. |
-| Description  | Sales turnover description |
-| Account /Detail Account Description | Cost account used for sales documents accounting |
-| VAT Type | It is used in document accounting record. Usually it is set in a generic mode, for more information it is necessary to check the related usage in accounting templates and records regarding the finance area |
-| Analytic Account/Analytic Detail Account Description | It is an account used in order to record the document on analytical accounting |
-| Type/Description | It is used in document accounting record. Usually it is set to 11 Amount Origin detail account + nondeductible VAT, for further information, it is necessary to check the related usage in accounting templates and records regarding the finance area. |
+**Type/Description**: used in registering the document’s accounting. For more details, verify its [use](https://docs/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates) in ledger records in the finance area.
 
+**Detail by countries**: this data is used only for data exchange with external programs. In the future, it will be possible to define different cost accounts for country and item accounting type, associated in the customer contact.
 
+For anything not detailed in this document about the common functioning of the forms, refer to the following link [Custom features, buttons, and fields](/docs/guide/common).
 
+:::note Note
+If the *Turnover Type* is entered in the *Item Registry*, this code will be proposed in the item lines of the purchase document and will automate the accounting of documents to a specific offset account.
+:::
 
+*Example of a sales invoice*:
 
+If the *Turnover Type* is already present in the *Item Registry*, in the sales documents, we will find it listed in the *Items* tab, in the *Sales Turnover* field; if it is not present in the item registry, it can be selected directly within the sales document via the appropriate combo box.
 
+If it is not entered in the item registry and there is no memory of manually entering it in the sales document, the system will allow (if this choice is deemed appropriate) to take the default offset detail account that has been decided to set in the Contact Register > Accounting Data tab > Finance tab in the **Offset Cost/Revenue (defined)** field.

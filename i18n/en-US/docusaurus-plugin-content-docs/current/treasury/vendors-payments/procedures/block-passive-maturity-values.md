@@ -1,23 +1,20 @@
 ---
-title: Block Passive Maturity Values
+title: Blocco partite passive
 sidebar_position: 1
 ---
 
-Starting from this mask it is possible to manage massively the passive maturity values blocks. The user who has been enabled within the Artinforesourcemanager (ARM) could go on to block and/or unblock the maturity values list viewed according to search filters set. The procedure will record who and when it has blocked the maturity value and who and when has authorized the same one.
-
-RIBBON BAR: it represents the Form menu, that is the area in which it is possible to perform actions on procedure in use. The list of features is the following:
+Da questa maschera si procede alla gestione massiva dei blocchi delle partite passive. L'utente abilitato (gestendo i diritti utente all'interno dell'applicazione ARM) potrà quindi procedere a bloccare e/o sbloccare la lista delle partite visualizzate secondo i filtri di ricerca impostati. La procedura andrà a memorizzare chi e quando ha bloccato la partita e chi e quando ha autorizzato lo stesso.
 
 
+**<a href="https://youtu.be/DkxoWgTkvUg&amp;t=05s" target="_blank" rel="noopener noreferrer">Si rinvia al Tutorial - Link YouTube </a>**
 
-| Function | Meaning |
+| Funzione | Significato |
 | --- | --- |
-| Search Maturity Values | After having specified filters through which to obtain data, this button activates the maturity value search. |
-| Block Maturity Values | Button to unblock maturity values selected in the result grid. |
-| Unblock Maturity Values | Button to unblock the maturity values selected in the result grid. |
+| Ricerca partite | Pulsante, per attivare la ricerca partite, dopo aver specificato i filtri attraverso i quali ottenere il dato. |
+| Blocco partite | Pulsante per bloccare le partite selezionate nella griglia risultato. |
+| Sblocco partite | Pulsante per sbloccare le partite selezionate nella griglia risultato. |
 
-FILTER AREA: The filter area contains the list of the possible data types thanks to which it is possible to perform a selection, a research on the total of data inserted in system. Typically Filters have 'AND' condition and it is possible to specify more filter criteria at the same time.
 
-RESULT GRID: the result grid represents the import list that belongs to the filter data above mentioned. After having specified values through which to obtain a search of inventory items the user, by clicking on the [Search] button in the related Ribbon, will obtain the list of desired inventory items in the result grid.
 
 
 

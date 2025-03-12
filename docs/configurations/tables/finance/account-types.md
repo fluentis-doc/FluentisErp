@@ -2,6 +2,7 @@
 title: Tipi conto
 sidebar_position: 30
 ---
+
 :::tip[FAst Start]
 La tabella è interessata dalla procedura di [**Fast Start**](/docs/guide/fast-start)
 
@@ -10,8 +11,6 @@ Nel caso in cui si intenda configurare manualmente fare riferimento alla check l
 
 
 Percorso: **Configurazione > Tabelle > Amministrazione > Tipi conto**
-
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
 
 ### Gestione tabella
 
@@ -23,7 +22,8 @@ La definizione della tabella tipo conto non è altro che una ‘qualifica' che v
 
 - può infine servire come criterio di filtro, tipicamente all'interno dell'help conti.
 
-:::note Campi tabella
+#### Campi specifici
+
 **Codice**: codice tipo conto.
 
 **Descrizione**: descrizione tipo conto.
@@ -52,19 +52,12 @@ La definizione della tabella tipo conto non è altro che una ‘qualifica' che v
 
 ---
 
-**Flag successivi (da *Tutti* a *Impostazioni Conai*)**: Con questi flag si abilita la visibilità dei corrispondenti tab all'interno delle anagrafiche contabili clienti / fornitori. Attivando *Tutti* i tab saranno tutti visibili.
+#### Flag successivi (da *Tutti* a *Impostazioni Conai*)**
 
-:::
+Con questi flag si abilita la visibilità dei corrispondenti tab all'interno delle anagrafiche contabili clienti / fornitori. Attivando *Tutti* i tab saranno tutti visibili.
 
----
 ### Video Tutorials
 
 :::important Vedi Anche
 [**VIDEO TUTORIALS SULLE TABELLE AMMINISTRATIVE**](/docs/video/finance/intro.md)
 :::
-
-
-
-
-
-

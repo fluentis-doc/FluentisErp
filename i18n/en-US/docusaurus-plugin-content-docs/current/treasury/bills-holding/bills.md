@@ -1,56 +1,47 @@
 ---
-title: Search Bills
+title: Effetti
 sidebar_position: 3
 ---
 
-The search bills procedure has been created in order to enable the user to search active bills issued before with the task to view, edit and delete them, if necessary.
+La form della ricerca effetti 
+- si trova in Tesoreria > Portafoglio Effetti > Effetti > Effetti
 
-Through the search bills procedure it is possible to perform all necessary document operations, after having confirmed the presence of necessary user's rights.
+- permette all'utente di ricercare gli effetti emessi precedentemente con lo scopo di visualizzarli, modificarli ed eventualmente cancellarli.
 
-The search bills procedure consists as follows:
-
-RIBBON BAR: it represents the Form menu, that is the area in which it is possible to perform actions about a pre-existing document rather than to create a new one. The list of features is the following:
-
+Da questa form è possibile anche inserire manualmente un nuovo effetto, ma questa modalità è scarsamente utilizzata nella pratica. Solitamente si procede tramite le procedure di creazione automatica effetti (dalle partite o dalle fatture).
 
 
-| Function | Meaning |
-| --- | --- |
-| Search Bills | Button to apply search filters within database of the inserted bills. |
-| New Bill | It refers to the procedure to insert a new bill. |
-| Edit Bill | It refers to the procedure to edit a previously inserted bill. |
-| View Bill | It refers to the procedure to view a previously inserted bill. |
-| Delete Bill | It deletes a previously inserted bill. |
+## Pulsanti della Ribbon Bar
+
+> - **Ricerca effetti:** Pulsante per ricercare gli effetti secondo i filtri di ricerca impostati nella testata della form.
+> - **Nuovo effetto:** Richiama la form per inserire un nuovo effetto.
+> - **Modifica effetto:** Permette di modificare un effetto precedentemente inserito.
+> - **Visualizzazione effetto:** Permette di visualizzare un effetto precedentemente inserito.
+> - **Cancella effetto:** Cancella un effetto precedentemente inserito.
+
+> Esecuzione delle **stampe** (*Anteprima* oppure *Stampa*) lancia, relativamente agli effetti selezionati con il mouse, (tenendo premuto Ctrl si possono selezionare più effetti contemporaneamente) l'omonima stampa presente nel [**menu stampe**](/docs/treasury/bills-holding/reports/bill-holding-situation) del modulo
+
+> - *Avviso scadenza effetti*: Lettera indirizzata al cliente (una pagina per ogni effetto selezionato) che evidenzia gli effetti in scadenza con relativi riferimenti
+> - *Lettera di cumulo*:  Lettera indirizzata al cliente che evidenzia le partite o fatture acquisite in ogni singolo effetto 
+> - *Portafoglio effetti:* Stampa una lista di effetti con evidenza dei dati principali relativi
+> - *Situazione castelletti:* Stampa per ogni banca (relativa agli effetti selezionati) la situazione del castelletto concesso, utilizzato e residuo
 
 
+## Filtri di ricerca
 
-| Function | Meaning |
-| --- | --- |
-|  [Print Presentation Lists](/docs/treasury/bills-holding/reports/print-presentation-lists)  | It refers to the procedure to print the Presentation Lists in bank of bills. |
-|  [Report - Bills Holding Situation](/docs/treasury/bills-holding/reports/bill-holding-situation)  | It refers to the procedure to print the statistics of bill portfolio situation. |
-|  [Report - Unpaid List](/docs/treasury/bills-holding/reports/print-unpaid-list)  | It refers to the procedure to print the unpaid list. |
+- **Conto:** filtro riferito al campo ***Debitore*** presente all'interno dell'effetto
+- **Anno / Tipo effetto:** filtri riferiti agli omonimi campi presenti all'interno dell'effetto 
+- **DA / A / data scadenza / Dat emissione / Numero**: riferiti agli omonimi campi presenti all'interno dell'effetto
+- **Stati effetti:** filtro riferito allo *Stato effetto* presente all'interno delle'effetto, lo stato viene automaticamente modificato a seconda delle procedure che sono state eseguite, ad esempio nasce come Emesso , poi diventa presentato, Accreditato, insoluto ecc...
+- **Divisa:** per filtrare solo effetti denominati ad esempio in dollari ecc...
+- **Piazza / ABI / CAB / Descrizione Banca:** riferiti alla banca d'appoggio del debitore
+- **Flag della sezione Stato Effetto:** Di default è attivo *Tutti*, ma può essere cambiato selezionando le varie condizioni di ricerca che se attivate contemporaneamente andranno ad allargare la base di ricerca, ad esempio quelli stampati + quelli contabilizzati + quelli NON stampati .....
 
+## Griglia dei risultati
 
+In questa from presenta gli stessi campi presenti nei filtri già dettagliati qui sopra.
 
-| Function | Meaning |
-| --- | --- |
-|  [Bills from Invoices Issue](/docs/treasury/bills-holding/procedures/bills-acquisition-from-invoices/acquisition)  | It refers to the procedure to create automatically bills from invoices issue. |
-|  [Bills from Maturity Value Issue](/docs/treasury/bills-holding/procedures/bills-acquisition-from-maturity-values/bills-acquisition-from-maturity-values-intro)  | It refers to the procedure to create automatically the opened maturity value bills. |
-|  [Bills Accounting](/docs/treasury/bills-holding/accounting/bills-accounting/accounting)  | It refers to the procedure to perform bills accounting and to close customer account. |
-|  [Bills Accouting by Vendor](/docs/treasury/bills-holding/accounting/bills-accounting-by-vendor/accounting)  | It refers to the procedure to perform bills accounting by vendor and to close vendor account. |
-|  [Lists Accounting](/docs/treasury/bills-holding/accounting/lists-accounting/accounting)  | It refers to the procedure to perform list accounting and to valorize presentation account. |
-| Credits Accounting  | It refers to the procedure to perform credits accounting in account. |
-|  [Cash Orders Files Creation]  | It refers to the procedure to generate cash order electronic tracing. |
-|  [RID Files Creation]  | It refers to the procedure to generate the RID electronic tracing. |
-|  [Import Unpaid](/docs/treasury/bills-holding/procedures/import-unpaids)  | It refers to the procedure to import unpaids electronic tracing. |
-|  [Accounting of Unpaid](/docs/treasury/bills-holding/accounting/unpaid-accounting/unpaids)  | It refers to the unpaids accounting procedure, with opening of customer maturity value according to module parameters. |
-|  Accounting of Unpaid on Loan unpaids accounting procedure, with opening of customer and vendor maturity value according to module parameters. |
-
-FILTER AREA: The filter area contains the list of the possible data types thanks to which it is possible to perform a selection, a research on the total of data inserted in system. Typically Filters have 'AND' condition and it is possible to specify more filter criteria at the same time.
-
-RESULT GRID: the result grid represents the import list that belongs to the filter data above mentioned. After having specified values through which to obtain a search of inventory items the user, by clicking on the [Search Bills] button in the related Ribbon, will obtain the list of desired bills in the result grid.
-
-
-
+Presenta inoltre gli **Importi** (in valuta, esempio dollari, e in Euro) dell'effetto (coincidenti se l'effetto è denominato in euro).
 
 
 

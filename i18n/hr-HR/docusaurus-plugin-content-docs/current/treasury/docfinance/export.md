@@ -13,8 +13,6 @@ Da questa maschera si eseguono le esportazioni dati per DocFinance, con tre dive
 
 Alla base della maschera va definito l'utente che andrà ad eseguire la creazione dei file. È necessario che questo abbia accesso alle cartelle condivise impostate per la creazione dei file.
 
-RIBBON BAR: rappresenta il menu della Form in oggetto, ossia l'area nella quale è possibile effettuare delle azioni nel merito della procedura. La lista delle funzionalità possibili è di seguito rappresentata:
-
 
 
 | Funzione | Significato |

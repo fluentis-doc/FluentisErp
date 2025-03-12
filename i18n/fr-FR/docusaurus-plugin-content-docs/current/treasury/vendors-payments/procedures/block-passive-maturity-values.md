@@ -1,23 +1,20 @@
 ---
-title: Bloc des comptes passifs
+title: Blocco partite passive
 sidebar_position: 1
 ---
 
-À partir de ce masque s'avance à la gestion massive des blocs des comptes passifs. L'utilisateur habilité à l'intérieur de ApplicationResourceManager (ARM) pourra donc avancer à bloquer et/ou débloquer la liste des comptes visualisés selon les filtres de recherche établie. La procédure ira à enregistrer qui et quand a bloqué le compte ey qui a autorisé le meme.
-
-RIBBON BAR: il représente le menu de la forme en objet, à savoir la zone dans laquelle est possible d'effectuer des actions. La liste des fonctionnalités possibles est représentée de suite:
+Da questa maschera si procede alla gestione massiva dei blocchi delle partite passive. L'utente abilitato (gestendo i diritti utente all'interno dell'applicazione ARM) potrà quindi procedere a bloccare e/o sbloccare la lista delle partite visualizzate secondo i filtri di ricerca impostati. La procedura andrà a memorizzare chi e quando ha bloccato la partita e chi e quando ha autorizzato lo stesso.
 
 
+**<a href="https://youtu.be/DkxoWgTkvUg&amp;t=05s" target="_blank" rel="noopener noreferrer">Si rinvia al Tutorial - Link YouTube </a>**
 
-| RibbonFunction | RibbonMeaning |
+| Funzione | Significato |
 | --- | --- |
-| Rechercher comptes | Bouton, pour activer la recherche des comptes, après avoir spécifié les filtres à travers lesquels obtenir la donnée. |
-| Bloquer les comptes | Bouton pour bloquer les comptes sélectionnés dans la grille de résultat. |
-| Débloquer les comptes | Bouton pour débloquer les comptes sélectionnés dans la grille de résultat. |
+| Ricerca partite | Pulsante, per attivare la ricerca partite, dopo aver specificato i filtri attraverso i quali ottenere il dato. |
+| Blocco partite | Pulsante per bloccare le partite selezionate nella griglia risultato. |
+| Sblocco partite | Pulsante per sbloccare le partite selezionate nella griglia risultato. |
 
-ZONE DE FILTRE: la zone de filtre est celle dédiée à recevoir la liste des possibles types de données grâce à lesquelles est possible d'effectuer une sélection. Les filtres sont typiquement en condition 'AND' et est possible de spécifier plusieurs critères des filtres en même temps.
 
-GRILLE DE RÉSULTAT: la grille de résultat représente la liste des comptes qui correspondent aux données de filtre surspécifie. L'utilisateur, après avoir spécifié les valeurs par lesquelles désire obtenir une recherche des comptes, en appuyant le touche [Recherche] présent dans la rélative Ribbon, obtiendra dans la grille de résultat la liste des comptes.
 
 
 

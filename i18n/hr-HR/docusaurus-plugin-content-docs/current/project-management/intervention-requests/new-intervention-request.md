@@ -65,7 +65,7 @@ U ovoj tablici nalazi se procjena povezana s povezanim Projektom Zahtjeva za Int
 
 **Jedinica mjere**: označava jedinicu mjere koja se treba uzeti u obzir za kvantifikaciju;
 
-**Prodajni cjenik**: sadrži eventualni [Cjenik](/docs/sales/sales-price-list/insert-sales-price-list/) koji treba uzeti u obzir;
+**Prodajni cjenik**: sadrži eventualni [Cjenik](/docs/sales/sales-price-list/sales-price-list/insert-sales-price-list/) koji treba uzeti u obzir;
 
 **Količina**: označava količinu potrebnu jedinica;
 

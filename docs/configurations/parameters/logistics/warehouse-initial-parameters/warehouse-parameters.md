@@ -15,13 +15,15 @@ Inoltre, è possibile impostare periodi specifici in cui le registrazioni posson
 
 Nella form di *Ricerca Parametri iniziali magazzino* selezionare la riga desiderata ed eseguire doppio click sulla riga o click sul pulsante *Nuovo*.
 
+## 1. Dati
+
 **Anno**: rappresenta l'anno per il quale si desidera impostare i parametri.
 
 **Data ultima chiusura esercizio**: rappresenta la data in cui è stata fatta l'ultima chiusura di magazzino con ripresa saldi (vedi [Valorizzazione magazzino](/docs/logistics/physical-inventory/warehouse-valorization)). Nella maggior parte dei casi essa corrisponde al 31-12 dell'anno precedente. Il giorno successivo, quindi solitamente il 1° gennaio, vengono inserite le registrazioni di magazzino di carico per inventario iniziale, create automaticamente dalla procedura di *Valorizzazione Magazzino*, tramite l'utilizzo della causale di carico *Rimanenze*; questa causale deve avere il flag *Rimanenze* attivato.
 
 Per ciascun magazzino presente nella società deve essere presente una e una sola causale di carico delle rimanenze iniziali. Le giacenze caricate con quella causale nel giorno di “apertura” del magazzino rappresentano le *giacenze iniziali* del magazzino stesso. Tutti i movimenti successivi a questa registrazione di carico saranno identificati come entrate o come uscite di magazzino a seconda che si tratti di carichi o di scarichi.
 
-## Generali
+## 2. Generali
 
 **Modifica registrazioni di magazzino collegati con altri documenti**: consente di modificare le registrazioni di magazzino collegate con DDT di acquisto, fatture di acquisto, DDT di vendita, fatture di vendita, ecc. L'assenza di questo flag comporta il fatto che i documenti di magazzino creati sulla base di documenti di acquisto o di vendita non possono essere modificati. In questo caso apparirà un messaggio che mostra il fatto che la modifica non è possibile.
 
@@ -41,7 +43,7 @@ Il movimento di contropartita nasce da una seconda causale di movimentazione col
 
 **Data inizio periodo e Data fine periodo**: permettono all'utente di definire il periodo entro il quale possono essere inserite e/o modificate e/o cancellate registrazioni di magazzino. Solitamente si imposta come data inizio periodo una data appena precedente rispetto alla data di ultima chiusura del magazzino, e come data fine periodo la fine dell'anno solare in corso. 
 
-### Gestione lotti e numeri seriali
+### 2.1 Gestione lotti e numeri seriali
 
 **Gestione lotti e numeri seriali**: permette di decidere se debbano essere consentiti movimenti di magazzino a lotti e/o a serial numbers. Se questo flag è disattivato, tutti gli altri flags presenti nel database che gestiscono opzioni relative a lotti e serial numbers risultano inefficaci.
 
@@ -53,7 +55,7 @@ Il movimento di contropartita nasce da una seconda causale di movimentazione col
 
 **Usa barcode movimenti**: se attivo, nelle righe dei movimenti di magazzino viene visualizzata la colonna **Barcode**.        
 
-## Parametri chiusura
+## 3. Parametri chiusura
 
 In questo tab è possibile decidere per quali **Magazzini** devono essere eseguite le chiusure per **Variante**, per **Ubicazione**, per **Lottie Serial Number**, per **Commesse di vendita** e per **Cliente/fornitore**. In pratica attivando uno di questi flag si decide che la registrazione di carico per inventario iniziale eseguita dalla procedura automatica di *Valorizzazione magazzino* deve essere creata tenendo conto dell'impostazione eseguita.
 
@@ -73,7 +75,7 @@ In questo tab è possibile decidere per quali **Magazzini** devono essere esegui
 Nel magazzino *Conto lavoro* solitamente si tiene attivato il flag sulla colonna *Cliente/Fornitore*, in quanto è utile che la procedura crei una registrazione di magazzino di carico per inventario iniziale sul magazzino conto lavoro per ciascun terzista; nei magazzini in cui vengono stoccate e movimentate merci gestite a lotti si consiglia di attivare il flag *Lotti e Serial Number*, così come sui magazzini in cui vengono stoccate e movimentati merci gestite a varianti si consiglia di attivare il relativo flag.
 
 
-## Parametri giacenza
+## 4. Parametri giacenza
 
 In questo tab è possibile decidere decidere per ciascun magazzino in che como debba essere gestita la *Giacenza*. 
 

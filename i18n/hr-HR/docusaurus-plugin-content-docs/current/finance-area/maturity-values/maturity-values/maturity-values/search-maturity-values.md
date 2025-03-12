@@ -33,7 +33,7 @@ Konkretno, za svaki redak koji odgovara dospijeću postoji naredba (+) koja vam 
 
 **Računovodstvo**: označava da je stavka povezana s knjigovodstvenim unosom.
 
-**Ne plaća se**: označava da je korisnik blokirao dospijeće tako da se ne plaća. Blokada se može postaviti izravno u trenutku kreiranja ili kasnije i to iz **[kartice Stavke](/docs/finance-area/ledger-records/records/create-ledger-record/maturity-values-tab)** računovodstvenog zapisa koji generira stavku ili uređivanjem same stavke iz obrasca u komentaru. 
+**Ne plaća se**: označava da je korisnik blokirao dospijeće tako da se ne plaća. Blokada se može postaviti izravno u trenutku kreiranja ili kasnije i to iz **[kartice Stavke](/docs/finance-area/ledger-records/records/ledger-record)** računovodstvenog zapisa koji generira stavku ili uređivanjem same stavke iz obrasca u komentaru. 
 
 **Traka Izbornika**:
 

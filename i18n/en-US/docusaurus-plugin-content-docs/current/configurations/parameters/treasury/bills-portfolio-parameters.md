@@ -3,63 +3,34 @@ title: Bills Portfolio Parameters
 sidebar_position: 4
 ---
 
-RIBBON BAR: the ribbon bar represents the Form menu, that is the area on which it is possible to perform actions linked to the procedure in use. The possible features list is the following:
+The parameters of the Effects Portfolio module can be found in **Parameters > Treasury (Parametri > Tesoreria)**.
 
+In the parameters of the Effects Portfolio module, you can pre-set the default elements to propose in the procedures of the module. In particular:
 
+#### Effects Acquisitions (Acquisizioni effetti)  
+- **Automatic accounting (Contabilizzazione automatica)**: allows you to predefine the accounting of effects directly at the time of effect acquisition from invoices or from items. 
+- **Acquisition only with due date beyond specified number of days (Acquisizione solo con scadenza oltre numero giorni)**: if a number of days is indicated, then ***FluentisERP*** will block the creation of an effect with a more recent due date that cannot be banked.
+- **Block bills creation without abi / cab**: if set, ***FluentisERP*** will block the creation of effects to which it is not possible to assign ABI/CAB supporting codes.
+- **Group credit notes by due date**: if set, the automatic cancellation of credit notes, which can be set for each customer, will operate only for dates uniform with invoice due dates.
 
-| Function | Meaning |
-| --- | --- |
-| Save | Button to save settings. |
-| Cancel Settings | Button to cancel settings. |
+#### Effects Accounting (Contabilizzazione effetti)  
+- **Ledger Records Template**: allows you to define the default accounting reason to propose in the identical procedure.  
+- **Grouping by bill account**: allows you to define the grouping parameter of effects to the records made with that procedure.  
+- **Provisional records (Registrazioni provvisorie)**: allows you to define the state of provisional registration for the records made with that procedure.  
 
-The Bills Portfolio module parameters are located in the following path [Home>Parameters>Treasury]
+#### Accounting of Lists (Contabilizzazione distinte)  
+- **Ledger Records Template**: allows you to define the default accounting reason to propose in the identical procedure.  
+- **Accounting on maturity date**: the first option will split the recording of the list to the various due dates of the effects, adding the bank days set in the bank registry for the established reason.  
+- **Account on due date with bank value date = maturation date (Contabilizza in data scadenza con data valuta banca = data di maturazione)**: the second option will register the various effects on their due dates but with the bank value date adjusted according to the bank days set in the bank registry for the established reason. 
+- **Close client in lists accounting**: with this setting, effects accounting will not be performed, therefore a support account *Bills in portfolio* will not be used, but the customer will be directly closed with the *Lists Accounting* with typically *sbf effects (effetti sbf)* as the counterpart, which is the transit account inserted in the header of the list itself.
 
-In the Bills Portfolio module parameters it is possible to pre-set the automatic elements to be proposed in module procedures. In particular:
+#### Accounting Effects to Supplier (Contabilizzazione Effetti a fornitore)  
+- **Bills Accounting by Vendor**: allows you to predefine the accounting reason to propose in the procedure for Accounting effects to the supplier, i.e., the turnover of credit titles in payment to suppliers.
 
+#### Accounting Credits (Contabilizzazione accrediti)  
+- **Ledger Records Template**: allows you to define the default accounting reason to propose in the identical procedure.  
+- **Commission charges**: allows you to define the sub-account for commission expenses for the records made with that procedure.  
+- **Passive expenses**: allows you to define the sub-account for passive charges for the records made with that procedure.  
 
-
-| Function | Meaning |
-| --- | --- |
-| Automatic Accounting | It enables the user to set the bills accounting directly at the moment of bills acquisition from invoices or maturity values. |
-
-
-
-| Function | Meaning |
-| --- | --- |
-| Ledger Template | It enables the user to set the automatic ledger template to be proposed in the same procedure. |
-| Grouping by Bill Account | It enables the user to set the bill grouping parameter to records carried out with that procedure. |
-| Temporary Records | It enables the user to set the temporary record status to records carried out with that procedure. |
-
-
-
-| Function | Meaning |
-| --- | --- |
-| Ledger Template | It enables the user to set the automatic ledger template to be proposed in the same procedure. |
-
-
-
-| Function | Meaning |
-| --- | --- |
-| Ledger Template | It enables the user to set the automatic ledger template to be proposed in the same procedure. |
-| Accounting on Maturity Date | The first option will cut the record of list according to the various bills dates together with the adding of bank days set into the bank register for the specific template. |
-| Account on Due Date with Currency Date = Maturity Date | On the contrary, the second option will record the various bills according to the various due dates but with bank currency date corrected according to bank days set in bank register for the specific template. |
-
-
-
-| Function | Meaning |
-| --- | --- |
-| Accounting Template | It enables the user to set the automatic ledger template to be proposed in the same procedure. |
-| Commissions Charges | It enables the user to set the detail account of commissions charges for the records performed with that procedure. |
-| Passive charges | It enables the user to set the detail account of passive charges for the records performed with that procedure. |
-
-
-
-| Function | Meaning |
-| --- | --- |
-| Group Values Smaller than | This field, if free and different to zero, establishes the threshold value of maturity values to be grouped. If, for example, the user sets ‘1000', it means that there will be the possibility to group the maturity values less than this number, up to 999,99. |
-
-
-
-
-
-
+#### Grouping (Raggrupamento)  
+- **Group values smaller than**: this field, if not empty and different from zero, determines the threshold value for items to be grouped. For example, if set to ‘1000', this means that items with amounts less than this figure will be grouped, i.e., up to 999.99.

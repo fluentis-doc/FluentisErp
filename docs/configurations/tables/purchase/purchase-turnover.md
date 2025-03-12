@@ -17,7 +17,7 @@ La tabella si apre tramite il percorso **Tabelle > Acquisti > Fatturato acquisti
 
 **Conto/Sottoconto analitico/Descrizione**: conto utilizzato per contabilizzare il documento in contabilità analitica.
 
-**Tipo/Descrizione**: utilizzato nella registrazione della contabilizzazione del documento. Per altri dettagli verificarne l'[utilizzo](/docs/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates/attributes-detail) contabile nelle registrazioni contabili in area amministrativa.
+**Tipo/Descrizione**: utilizzato nella registrazione della contabilizzazione del documento. Per altri dettagli verificarne l'[utilizzo](/docs/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates) contabile nelle registrazioni contabili in area amministrativa.
 
 Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
 

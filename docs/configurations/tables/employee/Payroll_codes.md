@@ -3,6 +3,8 @@ title: Codici Paghe
 sidebar_position: 4
 ---
 
+#### Campi specifici 
+
 **Codice** / **Descrizione** : codice e descrizione per identificare il codice paga
 
 **Intervento** : flag utilizzato in qualche tracciato file esportato dall'elaborazione paghe per gestioni esterne a Fluentis.
@@ -36,4 +38,3 @@ verrà utilizzato per identificare le giornate di trasferta nel riquadro "Movime
 **Non viene esportato**: blocca l'esportazione nel tracciato file per gestioni esterne a Fluentis
 
 **Codice Esportato**: codice utilizzato nel tracciato file per gestioni esterne a fluentis 
-

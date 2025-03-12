@@ -10,7 +10,7 @@ In questa form troviamo i seguenti campi:
 **Posizione IVA**: è l'aliquota iva da proporre nel ciclo documentale attivo/passivo e nelle registrazioni contabili. 
 
 :::note Attenzione
-La priorità di valorizzazione del campo [IVA](/docs/sales/sales-invoices/invoicing/items) nei documenti prevede nell'ordine:  
+La priorità di valorizzazione del campo [IVA](/docs/sales/sales-invoices/invoicing/sales-invoice) nei documenti prevede nell'ordine:  
 1. verifica delle [Dichiarazioni di intento](/docs/finance-area/declarations/declarations/intent-declaration), se presenti, e sostituzione del codice iva in esse contenuto;  
 2. anagrafica cliente/fornitore;  
 3. anagrafica articolo.
@@ -57,8 +57,10 @@ In questo modo l'utente dovrà poi impostare soltanto l'anagrafica e le impostaz
 Specularmente il settaggio opera sulla parte fornitori, mettendo il flag *Fornitori* nella tabella [Tipo contab. articolo](/docs/configurations/tables/finance/articles-accounting-types) ed aggiornando la tabella **Fatturato acquisti**.
 
 
-**Sottoconto fatture da ricevere**: indicare in questo campo il sottoconto patrimoniale (prioritario rispetto al default inserito nei parametri di contabilità) da utilizzare nella procedura dell'area acquisti **Contabilizzazione fatture da ricevere**, ma anche nelle procedure di calcolo degli assestamenti di bilancio o delle simulazioni di bilancio infrannuale nel caso in cui tutto il costo sia da inserire nel bilancio di periodo.
+**Sottoconto fatture da ricevere / emettere**: indicare in questo campo il sottoconto patrimoniale (prioritario rispetto al default inserito nei parametri di contabilità) da utilizzare nella procedura dell'area acquisti **Contabilizzazione fatture da ricevere**, ma anche nelle procedure di calcolo degli assestamenti di bilancio o delle simulazioni di bilancio infrannuale nel caso in cui tutto il costo sia da inserire nel bilancio di periodo. I campi sono alternativi e visibili a seconda se il tipo conto è *Fornitore* (fatture da *ricevere*) o *Cliente* (fatture da *emettere*)
 
+
+**Sottoconto della Nota d accredito da ricevere / emettere**: indicare in questo campo il sottoconto patrimoniale (prioritario rispetto al default inserito nei parametri di contabilità) da utilizzare nella procedura dell'area acquisti **Contabilizzazione fatture da ricevere**, ma anche nelle procedure di calcolo degli assestamenti di bilancio o delle simulazioni di bilancio infrannuale nel caso in cui tutto il costo sia da inserire nel bilancio di periodo. I campi sono alternativi e visibili a seconda se il tipo conto è *Fornitore* (note di accredito da *ricevere*) o *Cliente* (note di accredito da *emettere*)
 
 **Sottoconto di fatturazione**: il campo, gestito esclusivamente per le anagrafiche clienti, consente di definire per il sottoconto di anagrafica in uso, quale sia il sottoconto sul quale intestare la fattura nel corso della creazione delle fatture da DDT;
 

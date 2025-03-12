@@ -1,25 +1,28 @@
 ---
-title: Import înregistrări
+title: Importazione registrazioni
 sidebar_position: 3
 ---
 
-Cu ajutorul acestei ferestre se execută procedura pentru importul fișierului înregistrărilor contabile creat din DocFinance.
+Attraverso questa procedura si esegue la procedura di importazione del file delle registrazioni contabili creato da DocFinance.
 
-Procedura de import prevede identificarea fișierului cu butonului ‘Import' (va fi propus implicit ultimul utilizat) și că acesta este confirmat în fereastra de selecție a fișierului. În acest moment sistemul va crea înregistrările contabile relative, închizând angajamentele indicate de DocFinance și relevând în contabilitate mișcările în conturile inserate în aplicație (șabloanele contabile trebuie să aibă același cod în aplicație și DocFinance).
+L'importazione avviene attraverso un flusso *Folder Monitor* di Bizlink.
 
-Rezultatul importului va fi vizibil în gridul inferior (iar în partea superioară vor fi afișate importurile efectuate) iar cu butoanele ferestrei va fi posibilă: deschiderea înregistrărilor contabile, ștergerea importului, afișarea detaliului erorilor obținute în timpul importului.
+Pertanto il file con le registrazioni da importare sarà depositato nella cartella monitorata dal servizio il quale provvederà ad importarle n automatico.
 
-RIBBON BAR: reprezintă meniul Forum-ului în discuţie, mai precis aria în care se pot efectua acţiuni asociate la procedura utilizată. Prezentăm în continuare lista cu funcţionalităţile posibile:
+A questo punto il sistema andrà a creare le registrazioni contabili relative, chiudendo le partite indicate da DocFinance e rilevando contabilmente i movimenti sui conti mappati nel sistema (le causali contabili devono avere lo stesso codice tra ERP e DocFinance).
+
+Il risultato dell'importazione sarà visibile nella griglia inferiore (mentre nella superiore saranno visualizzati le importazioni eseguite) e con i comandi della ribbon bar sarà possibile cancellare l'importazione e visualizzare il dettaglio degli errori riscontrati nel corso dell'importazione.
+
+:::danger ATTENZIONE
+L'importazione dei pagamenti prevede che nel tracciato Docfinance sia passato l'id della partita aperta da chiudere andando così a generare da parte di Fluentis un pagamento ad essa agganciato.
+
+Se per qualsiasi motivo l'id della partita non corrisponde a quello presente nel tracciato (modifiche manuali di qualsiasi genere effettuate dopo l'esportazione partite che sono state poi gestite in Docfinance) saranno generati dei pagamenti, ma essi non saranno correttamente agganciati alle partite le quali rimarranno aperte. E' possibile procedere a compensare tali partite oppure a ricercare i pagamenti importati in questa situazione, cancellarli e manualmente ricrearli agganciando correttamente la relativa partita. L'operazione si esegue, dopo aver cancellato il pagamento, premendo il tasto *Nuovo* e poi *Crea da partite / pagamenti* e selezionando la partita da chiudere.
+:::
 
 
-
-| Functie | Functionalitate |
-| --- | --- |
-| Caută | Buton pentru căutarea importurilor deja executate; |
-| Import | Buton pentru executarea procedurii de import date; |
-| Vizualizează | Buton pentru vizualizarea rezultatului contabil al importului; |
-| Șterge | Buton pentru ștergerea importului selectat; |
-| Vizualizează erori | Buton pentru deschiderea ferestrei în care sunt afișate erorile identificate în timpul importului. |
+:::note Info
+[Link alle specifiche tecniche **Docfinance**](/pdf/it-IT/TRACCIATI_DocFinance_28_Luglio_2021.pdf)
+:::
 
 
 

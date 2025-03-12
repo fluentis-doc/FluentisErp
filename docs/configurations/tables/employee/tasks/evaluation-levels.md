@@ -12,16 +12,16 @@ Un esempio di utilizzo lo troviamo nella gestione **Competenze**.
 
 La tabella consente di inserire nuovi *Livelli di valutazione competenza* o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
 
-**Ricerca Livelli di valutazione competenza**
+#### Ricerca Livelli di valutazione competenza 
 
 La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
 
-**Inserimento Livelli di valutazione competenza**
+#### Inserimento Livelli di valutazione competenza 
 
 Per poter inserire nuovi *Livelli di valutazione competenza* è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.   
 Per il nuovo record si devono inserire almeno i campi obbligatori richiesti dal programma: il **Codice** e la **Descrizione**.
 
-*Campi specifici*: 
+#### Campi specifici 
     
 > **Codice**: è il codice del *Livello di valutazione competenza*.   
 > **Descrizione**: è la descrizione del *Livello di valutazione competenza*.   

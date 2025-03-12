@@ -1,38 +1,38 @@
 ---
-title: Parametri raggruppamento DDT di acquisto
+title: Purchase delivery note Grouping Parameters
 sidebar_position: 10
 ---
 
-I parametri di raggruppamento consentono di definire come suddividere i documenti durante le procedure di evasione. A tal fine, è possibile utilizzare specifici flag per raggruppare i documenti in base a diverse proprietà, come ad esempio la categoria, il tipo di documento, o altre caratteristiche rilevanti.            
-Questi parametri generali di raggruppamento devono essere configurati una sola volta e saranno applicati automaticamente a tutte le procedure, risultando validi per tutti i clienti e fornitori. Tuttavia, se un cliente o un fornitore richiede un comportamento diverso rispetto a quello impostato nei parametri generali, sarà necessario personalizzare i parametri di raggruppamento all'interno della loro specifica anagrafica.           
-In questo modo, si garantisce una gestione flessibile e adattabile delle evasioni, permettendo di soddisfare le esigenze specifiche di ogni cliente o fornitore, pur mantenendo una configurazione centralizzata e coerente per la maggior parte delle operazioni.
+The grouping parameters allow you to define how to split documents during fulfillment procedures. For this purpose, specific flags can be used to group documents based on various properties, such as category, document type, or other relevant characteristics.            
+These general grouping parameters only need to be configured once and will automatically apply to all procedures, remaining valid for all customers and suppliers. However, if a customer or supplier requires different behavior than what is set in the general parameters, it will be necessary to customize the grouping parameters within their specific registry.           
+This way, flexible and adaptable management of fulfillments is ensured, allowing for the specific needs of each customer or supplier to be met while maintaining a centralized and consistent configuration for most operations.
 
-In questa maschera vengono decise le regole di raggruppamento per la procedura di [**Evasione da ordini**](/docs/purchase/purchase-delivery-note/procedures/create-delivery-notes-from-orders).  
+In this mask, the grouping rules for the [**Order Fulfillment**](/docs/purchase/purchase-delivery-note/procedures/create-delivery-notes-from-orders) procedure are decided.  
 
-E' necessario flaggare le colonne che prevedono i raggruppamenti che si vogliono prevedere per queste evasioni. 
+It is necessary to select the columns that foresee the groupings you want to implement for these fulfillments. 
 
-:::note Nota
-Se nell'anagrafica del fornitore, nel tab *Parametri raggruppamento per cliente/fornitore*, sono state inserite delle condizioni di raggruppamento differenti, queste avranno priorità rispetto ai parametri generali.
+:::note Note
+If different grouping conditions have been entered in the supplier registry, in the *Grouping parameters for customer/supplier* tab, these will take priority over the general parameters.
 :::
 
-Quando il DDT viene creato a partire da un unico ordine vengono riportati tutti i dati di testata presenti nel documento di partenza. Per i DDT creati da più ordini invece, vengono riportati i dati dell'anagrafica fornitore.    
+When the DDT (Delivery Note Document) is created from a single order, all the header data present in the originating document is reported. For DDTs created from multiple orders, the supplier registry data is reported instead.    
 
-*Campi specifici*:
+#### Specific Fields
 
-> **Riepilogativa**: se attivo, al momento dell'evasione ordini sarà creato un unico DDT per fornitore. Se non è attivo sarà sempre creato un DDT per ciascun ordine evaso. Il raggruppamento funziona solo per i *Tipi ordine* (di Acquisto o di Vendita, a seconda dell'operazione selezionata) che hanno codificato lo stesso *Tipo DDT* da creare. Tutti i flag successivi devono essere utilizzati in concomitanta con questo flag.    
->
-> **Raggruppamento per tipo documento**: se attivo, saranno raggruppati in un unico DDT tutti i documenti che hanno lo stesso *Tipo ordine*.     
->
-> **Raggruppamento per anno**: attivando questo flag sarà effettuato un raggruppamento per anno di creazione degli ordini.   
->
-> **Raggruppamento per mese**: per poter effettuare un raggruppamento per mese di creazione degli ordini è necessario attivare anche il flag precedente.    
->
-> **Raggruppamento per cambio**: se attivo, i documenti con la stessa divisa e stesso cambio sranno raggruppati in un unico DDT.    
->
-> **Raggruppamento per ordine**: questo flag viene utilizzato solo per la *Creazione DDT e fatture di vendita da Picking* (vedi [Parametri raggruppamento DDT](/docs/configurations/parameters/sales/dn-grouping) e [fatture](/docs/configurations/parameters/sales/invoice-grouping)).    
->
-> **Raggruppamento per progetto**: attivando questo flag sarà effettuato un raggruppamento per progetto. Il raggruppamento funziona anche per i progetti inseriti a livello di riga articolo; se alcune delle righe articolo non hanno un progetto associato sarà creata un DDT diverso per tutti gli articoli che non lo contengono. Quando il progetto è stato inserito nella testata dei documenti di origine esso sarà riportato anche nella testata dei documenti di destinazione, in alternativa sarà mantenuto solo sulle righe articolo.    
->
-> **Raggruppamento per tipo e soluzione di pagamento**: attivando questo flag sarà effettuato un raggruppamento sulla base del tipo e della soluzione di pagamento inserito nell'ordine; tale dato sarà riportato nella testata del DDT creato.   
->
-> **Raggruppamento per destinazione**: attivando questo flag sarà effettuato un raggruppamento sulla base della destinazione inserita all'interno degli ordini; tale dato sarà riportato nella testata del DDT creato, nel tab *Trasporto*.     
+- **Summary**: if active, a single DDT will be created for each supplier at the time of order fulfillment. If not active, a DDT will always be created for each fulfilled order. Grouping only works for *Order Types* (Purchase or Sale, depending on the selected operation) that have coded the same *DDT Type* to be created. All subsequent flags must be used in conjunction with this flag.    
+
+- **Grouping by document type (Raggruppamento per tipo documento)**: if active, all documents with the same *Order Type* will be grouped into a single DDT.     
+
+- **Grouping by year (Raggruppamento per anno)**: activating this flag will group by year of order creation.   
+
+- **Grouping by month (Raggruppamento per mese)**: to enable grouping by order creation month, the previous flag must also be activated.    
+
+- **Grouping by exchange rate (Raggruppamento per cambio)**: if active, documents with the same currency and exchange rate will be grouped into a single DDT.    
+
+- **Grouping by order (Raggruppamento per ordine)**: this flag is only used for *Creating DDTs and sales invoices from Picking* (see [DDT Grouping Parameters](/docs/configurations/parameters/sales/dn-grouping) and [invoices](/docs/configurations/parameters/sales/invoice-grouping)).    
+
+- **Grouping by project (Raggruppamento per progetto)**: activating this flag will cause grouping by project. Grouping also works for projects entered at the item line level; if some item lines do not have an associated project, a separate DDT will be created for all articles that do not contain it. When the project has been entered in the headers of the source documents, it will also be reflected in the headers of the destination documents; alternatively, it will only be retained on item lines.    
+
+- **Grouping for payment type and terms**: activating this flag will group based on the type and payment solution entered in the order; this data will be reported in the header of the created DDT.   
+
+- **Grouping for destination**: activating this flag will result in grouping based on the destination specified within the orders; this data will be reported in the header of the created DDT, in the *Transport* tab.

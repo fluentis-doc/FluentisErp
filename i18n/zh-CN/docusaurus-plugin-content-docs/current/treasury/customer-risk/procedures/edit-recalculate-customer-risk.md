@@ -1,49 +1,47 @@
 ---
-title: 修改-重新计算客户风险
+title: Modifica - Ricalcola rischio cliente
 sidebar_position: 1
 ---
 
-这两个掩码用于查看指定客户的综合风险状态。“重算客户风险”仅用于查看客户的当前状态，而“使用信用额度”用于保存每项计算和历史查看。
+Le due maschere sostanzialmente gestiscono la visualizzazione dello stato complessivo del rischio nei confronti di un determinato cliente: il ‘Ricalcola rischio cliente' è una semplice richiesta spot della situazione attuale del cliente, mentre la maschera di modifica della procedura ‘Utilizzo fidi' consente di memorizzare ogni calcolo effettuato e visualizzarne quindi una serie storica.
 
-字段查看的列表实际上与客户掩码显示的相同。
+Vediamo in dettaglio la lista dei campi visualizzata, che è sostanzialmente la stessa presente anche nella maschera dell'esposizione clienti.
 
-标头中包含计算参数：客户代码、开始计算日期（客户风险模块参数的默认设置）、结束参考日期（当前日期）、因到期付款账单和收款后账单（在模块参数中设置）而延迟的天数和与临时记录关联的到期值标记。单击计算按钮，将显示下列值：
+In testata sono presenti i parametri di calcolo: il codice del cliente, la data di inizio calcolo (impostata di default dai parametri del modulo rischio cliente), la data finale di riferimento (impostata ad oggi), il numero di giorni di ritardo per gli effetti sbf e effetti al dopo incasso (impostati dai parametri del modulo, cui si rimanda), il flag di considerazione delle partite collegate a registrazioni provvisorie. Premendo il pulsante di calcolo appariranno i seguenti valori:
 
-**12个月的营业额**：是参考日期之前12个月的营业额（来自销售区和销售发票）；
+**Fatt. 12M**: è il fatturato (dall'area vendita, fatture di vendita) dei 12 mesi precedenti alla data di riferimento;
 
-**年销售额**：是从年初开始的营业额（来自销售区和销售发票）；
+**Fatturato anno**: è il fatturato (dall'area vendita, fatture di vendita) dall'inizio dell'anno;
 
-在区域**未结到期值**可以查看与其关联的借方/贷方总计和余额；
+Nella sezione **Situazione partite aperte** saranno visibili i totali dare/avere e il saldo relativo alle partite aperte;
 
-在区域**临时记录的支付**可以查看临时记录的支付金额；
+Nella sezione **Pagam da reg. provv.** saranno visualizzati gli eventuali importi di pagamento inseriti in registrazioni provvisorie;
 
-在区域**分类账余额状况**可以查看总分类账的贷方/借方总计和总分类账余额；
+Nella sezione **Situazione saldo contabile** saranno visibili i totali dare/avere e il saldo del mastrino di contabilità generale;
 
-**到期值/分类账余额**：显示从到期值或从余额计算的贷方/借方总计，以及之前部分查看过的余额；
+**Saldo partite/contabile**: ripropone i totali dare/avere calcolati dalle partite o dal saldo così come visualizzato nelle sezioni precedenti;
 
-**待记账的发票**：已打印但还未记账的发票（与信用额度关联的发票类型）的金额；
+**Fatture da contabilizzare**: sono gli importi delle fatture (dei Tipi fattura collegati al fido) stampate ma non ancora contabilizzate;
 
-**待开发票的送货单**：已打印但未开发票的送货单（与信用额度关联的送货单类型）的金额；
+**Ddt da fatturare**: sono gli importi dei  DDT (dei Tipi DDT collegati al fido) stampate ma non ancora fatturate;
 
-**待发布的订单**：已打印、已确认但未发布的订单（与信用额度关联的订单类型）的金额；
+**Ordini da evadere**: sono gli importi degli ordini (dei Tipi ordine collegati al fido) stampate, confermati ma non ancora evasi;
 
-**发布的账单**：已发布并记账但未显示的账单（属于账单公文包模块）的金额；
+**Effetti emessi**: sono gli importi degli effetti (del modulo portafoglio effetti) emessi e contabilizzati, ma non ancora presentati
 
-**按折扣-按到期付款-按收款显示的账单**：已显示，并且到期日（加上在计算标头中插入的参数天数）大于参考日期的账单金额；
+**Effetti presentati allo sconto-al sbf-all'incasso**: sono gli importi degli effetti presentati ma che hanno data scadenza (più i giorni dei parametri inseriti in testata del calcolo) superiore alla data di riferimento;
 
-**未付部分**：查看未记账的未付，或者（如果标记已插入）已记账未付的金额和编号；
+Sezione** insoluti**: sono qui visualizzati gli insoluti non contabilizzati, oppure (se il flag è inserito) anche quelli già contabilizzati, sia come importo che relativo numero;
 
-根据以上值的总和，计算“客户风险”，与允许的信用额度对比，指出超出信用额度。
+Dalla somma dei valori precedenti viene calcolato il ‘Rischio cliente', che comparato al fido concesso, darà lo sconfinamento del fido.
 
-“已过期”字段显示未结但已过期的到期值，作为下一步客户状况分析的数据。
-
-功能导航栏：功能导航栏为菜单窗体，包含对已有文档而不是新建文档进行的操作。当前选项卡的功能如下：
+Il campo **Scaduto** visualizza l'importo delle partite aperte ma già scadute, quale ulteriore elemento di analisi della situazione del cliente.
 
 
 
-| RibbonFunction | RibbonMeaning |
+| Funzione | Significato |
 | --- | --- |
-| 保存 | 用于对已计算的信用额度修改的保存 |
+| Salva | Il pulsante, presente in modifica di un fido già calcolato, consente di memorizzare il risultato ottenuto. |
 | Calcola | Richiama la procedura per calcolare la situazione complessiva di rischio per il cliente. |
 
 

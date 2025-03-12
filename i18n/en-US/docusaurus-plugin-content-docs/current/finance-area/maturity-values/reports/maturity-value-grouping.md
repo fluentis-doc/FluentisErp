@@ -7,7 +7,7 @@ The print that is launched from this form should be used instead of the other pr
 
 Managing mat. values through groupings represents indeed an alternative and particular methodology compared to the classic approach and requires specific visualization to obtain a clearly readable situation.
 
-For further **[details on mat. values grouping, see here.](/docs/finance-area/ledger-records/records/create-ledger-record/mat-val-grouping-tab)**
+For further **[details on mat. values grouping, see here.](/docs/finance-area/ledger-records/records/ledger-record)**
 
 The print corresponds to the function of **[screen visualization of groups matches.](/docs/finance-area/maturity-values/maturity-values/maturity-value-grouping)**
 

@@ -7,17 +7,17 @@ La tabella permette di gestire la codifica delle diverse tipologie di *Sito di p
 
 Consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
 
-**Ricerca Sito Produzione**
+## Ricerca Sito Produzione
 
 La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
 
-### Inserire nuovi siti di produzione
+## Inserire nuovi siti di produzione
 
 Per inserire un nuovo sito di produzione, nella form di ricerca usare il pulsante **Nuovo**.
 
 Nella form di inserimento, nella sezione superiore viene definito il sito produttivo tramite i campi **Codice** e **Descrizione**,  
 
-### Modificare i siti di produzione
+## Modificare i siti di produzione
 
 Per modificare i siti di produzione, nella form di ricerca selezionare il sito ed eseguire doppio clic sulla riga oppure usare il pulsante **Modifica**.
 

@@ -14,4 +14,3 @@ La testata presenta i seguenti campi:
 - **Versione**: viene assegnato un numero di versione alla configurazione, che parte da 1.
 - **Descrizione**: è possibile associare una descrizione libera.
 - **Data inizio/fine validità**: è possibile associare un intervallo di validità per la configurazione. 
-
