@@ -1,18 +1,18 @@
 ---
-title: Profit Centres Analysis
+title: Analisi Centri di Profitto
 sidebar_position: 2
 ---
 
-Through 'Profit Centres Analysis' Report, it is possible to get the accounting movements report (those whose every single profit centre has got valorization ), adding the amounts on the profit centre itself.
+Il report dell'analisi centri di profitto consente di stampare il dettaglio dei movimenti contabili che hanno valorizzato ogni singolo centro di profitto, totalizzando gli importi sul centro di profitto stesso.
 
-RIBBON BAR: it represents the Form menu, that is the area in which it is possible to perform actions. The list of features is the following:
+Vedere **[Analisi centri di costo](/docs/finance-area/ledger-records/analytic-reports/cost-centres-analysis)**
 
 
 
-| Function | Meaning |
+| Funzione | Significato |
 | --- | --- |
-| Preview | Command to launch profit centres analysis print preview. |
-| Print | Command to launch profit centres analysis print. |
+| Anteprima | Pulsante per eseguire l'anteprima di stampa dell'analisi centri di profitto. |
+| Stampa | Pulsante per eseguire la stampa fisica dell'analisi centri di profitto. |
 
 
 
