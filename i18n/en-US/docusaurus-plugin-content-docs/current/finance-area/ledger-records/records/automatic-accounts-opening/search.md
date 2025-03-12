@@ -1,19 +1,25 @@
 ---
-title: Search
+title: Ricerca
 sidebar_position: 1
 ---
 
-RIBBON BAR: the ribbon bar represents the form menu, that is the area on which it is possible to perform actions. The possible features list is the following:
+In questa form è possibile ricercare aperture dei conti precedentemente create e procedere all' **inserimento di una nuova chiusura.**
+
+Per i campi di dettaglio della testata e della griglia di ricerca vedere **[Chiusura Automatica conti.](/docs/finance-area/ledger-records/records/automatic-account-closing/search)**
+
+![](/img/it-it/finance-area/ledger-records/records/automatic-accounts-opening/search/image01.png)
 
 
 
-| Function | Meaning |
+
+
+| Funzione | Significato |
 | --- | --- |
-| Search | Button to search a previous maturity value opening. |
-| New Opening | Button to create a new accounts opening. |
-| Edit Record | Button that enables the user to edit the opening record. It is active once that the user has selected an account opening. |
-| View | Button that enables the user to view the opening record. It is active once that the user has selected an account opening. |
-| Delete | Button that enables the user to delete the account opening. It is active once that the user has selected an account opening. |
+| Ricerca | Pulsante per la ricerca di un'apertura conti effettuata precedentemente. |
+| Nuovo | Pulsante per creare una nuova apertura conti. |
+| Modifica | Pulsante, attivabile dopo aver selezionato un'apertura conti, che permette la modifica della registrazione di apertura. |
+| Visualizzazione | Pulsante, attivabile dopo aver selezionato un'apertura conti, che permette la visualizzazione della registrazione di apertura. |
+| Elimina | Pulsante, attivabile dopo aver selezionato un'apertura conti, che permette la cancellazione della registrazione di apertura. |
 
 
 

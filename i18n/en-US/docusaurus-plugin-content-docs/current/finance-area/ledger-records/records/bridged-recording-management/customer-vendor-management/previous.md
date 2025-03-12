@@ -1,23 +1,23 @@
 ---
-title: Previous
+title: Precedenti
 sidebar_position: 2
 ---
 
-The 'Previous' section enables the user to cancel definitive accounting performed by this mask and to restore the temporary status of records. There are two different buttons: 
+La scheda 'Precedenti' consente di annullare le contabilizzazioni definitive eseguite da questa maschera e ripristinare quindi lo stato provvisorio delle registrazioni. Sono presenti due pulsanti: 
 
-**Rollback Operation**: it cancels the selected accounting operation (and so all records inserted on it);
+**Rollback operazione**: annulla tutta l'operazione di contabilizzazione selezionata (e quindi tutte le registrazioni inserite al suo interno), mentre il secondo;
 
-**Rollback Record**: it restores the temporary status of the single record selected on grid below. 
+**Rollback registrazione**: ripristina lo stato provvisorio della singola registrazione selezionata nella griglia più in basso.
 
-RIBBON BAR: it represents the Form menu, that is the area in which it is possible to perform actions about a document in management. The list of features is the following:
+RIBBON BAR: rappresenta il menu della Form in oggetto, ossia l'area nella quale è possibile effettuare delle azioni nel merito del documento in gestione. La lista delle funzionalità possibili è di seguito rappresentata:
 
 
 
-| Function | Meaning |
+| Funzione | Significato |
 | --- | --- |
-| Search | This button performs the search of accounting performed |
-| Rollback Operation | It performs the restore of all records linked to the selected operation |
-| Rollback Record | It performs the restore of the single record selected on grid below |
+| Ricerca | Questo pulsante esegue la ricerca delle contabilizzazioni eseguite. |
+| Rollback operazione | Esegue il ripristino di tutte le registrazioni collegate all'operazione selezionata. |
+| Rollback registrazione | Esegue il ripristino della singola registrazione selezionata nella griglia inferiore. |
 
 
 

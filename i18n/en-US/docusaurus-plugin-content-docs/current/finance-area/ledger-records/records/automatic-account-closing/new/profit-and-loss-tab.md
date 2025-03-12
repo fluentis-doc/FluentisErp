@@ -1,18 +1,20 @@
 ---
-title: Profit and Loss Tab
+title: Tab Profitti e Perdite
 sidebar_position: 3
 ---
 
-In the Profit and Loss Tab are listed the negative and positive income components, with the evidence of the period result and the possibility to print, through the button at the bottom, the related situation.
-
-RIBBON BAR: it represents the form menu, that is the area in which it is possible to perform actions. The list of features is the following:
+Nel tab Profitti e Perdite verranno epilogati i componenti di reddito negativi e positivi con evidenza del risultato d'esercizio e la possibilità di filtrare i conti presenti nelle sezioni Componenti positivi di reddito e Componenti negativi di reddito tramite i campi Sottoconto costi, Sottoconto ricavi ed i pulsanti di ricerca posti nella ribbon bar (vedere tabella qui sotto).
 
 
 
-| Function | Meaning |
+![](/img/it-it/finance-area/ledger-records/records/automatic-account-closing/new/profit-and-loss-tab/image01.png)
+
+
+
+| Funzione | Significato |
 | --- | --- |
-| Search Positive Components of Income  | Button to search the profit accounts within the accounts closure. |
-| Search Positive Components of Detail Account Income | Button to search the cost accounts within the account closure. |
+| Ricerca componenti positivi di reddito sottoconti | Pulsante per cercare all'interno della chiusura i conti di ricavo desiderati. |
+| Ricerca componenti positivi di reddito sottoconti | Pulsante per cercare all'interno della chiusura i conti di costo desiderati. |
 
 
 
