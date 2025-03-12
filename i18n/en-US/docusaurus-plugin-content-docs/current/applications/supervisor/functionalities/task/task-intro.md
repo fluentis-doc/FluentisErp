@@ -4,10 +4,14 @@ sidebar_label: Task
 sidebar_position: 0
 ---
 
-In order to use the *Activities* you need a container, in this case, a **Task**. When a *Task* is created the script attached to it, is partially filled with some default code, necessary in order for the *Task* to work; the user has the possibility to add more code to the attached script, by using the *Script Editor* or the codeless platform *Blockly*.
+I task definiscono uno scenario di azione che potrà essere creato da zero o contenere delle attività. Il task potrà poi essere salvato, eseguito manualmente o schedulato.
 
-The **Task** form opens via the path **Application > Supervisor > Tasks**.
+Per utilizzare le *Attività* è necessario un contenitore, il **Task**. Quando viene creato un *Task*, lo script collegato ad esso ha del codice predefinito, necessario affinché funzioni; l'utente ha la possibilità di aggiungere codice allo script collegato, utilizzando lo *Script Editor* o la piattaforma codeless *Blockly*.
 
-Some of the functionalities inside the form refer to a standard use, therefore for anything not detailed in this document on the standard functions of the form, refer to the following link [functionalities, buttons and common entries](/docs/guide/common).
+Il form del **Task** si apre tramite il percorso **Strumenti** > **Fluentis Supervisor** > **Tasks**.
 
-The *Tasks* appeared are organized in groups (e.g. *Examples, Demo*) by context of use. A new group of *Tasks* can be created, refer to the following link [group creation](../../group-creation) for more.
+Alcune delle funzionalità all'interno della form si riferiscono ad un utilizzo standard. Per qualsiasi dettaglio sull'utilizzo di questa form non esplicitato qui, riferirsi a questo [articolo](/docs/guide/common).
+
+I *Tasks* sono organizzati in gruppi (come ad esempio *Utilità*, *Esempi*, *Demo*) in base al contesto di utilizzo. Per creare un nuovo gruppo di *Tasks* riferirsi all'articolo [creazioni gruppi](../../group-creation).
+
+![alt text](/img/it-it/applications/supervisor/supervisor8.png) 
