@@ -1,26 +1,20 @@
 ---
-title: Pallet Types
-sidebar_position: 10
+title: Loading Unit Types
+sidebar_position: 37
 ---
 
-The Pallet types table consists as follows:
+The Loading Unit types entry table is a base table for the use of loading units. Specifically, it defines the packaging types and related data that will be used for creating and optimizing loading plans (such as weights and dimensions).
 
-RIBBON BAR: the ribbon bar represents the Form menu, that is the area on which it is possible to perform actions. The possible features list is the following:
+The table allows for the insertion of new records or the search for existing ones to view, modify, or delete them.
 
+**Search Loading Unit Types**
 
+The form is composed of a filter area and a results area. Once all desired filters are set, simply click the **Search** button to view the results in the results grid.
 
-| Function | Meaning |
-| --- | --- |
-| Search | Button to apply search filters within database of Pallet types on system. |
-| Insert | It enables the user to insert a new Pallet type. |
-| Delete | It deletes the selected Pallet type. |
+**Insert Loading Unit Types**
 
-FILTER AREA: The filter area contains the list of the possible data types thanks to which it is possible to perform a selection. In this case the search filter corresponds to Pallet type and description.
+To insert new codes, you need to click on the first empty row in the grid or press the **New** button.
 
-RESULT GRID: the result grid represents the list of Pallet types which correspond to the filter data, above mentioned. After having specified the values through which it is possible to perform a Pallet types search, the user can push [Search] button on the related Ribbon and will obtain the list of Pallet types on the result grid.
+For the new record, you must enter at least the mandatory fields required by the program: Type, Description, Group Type (proposed by the *Loading Unit Group Types* table), Numeration.
 
-
-
-
-
-
+For everything not detailed in this document regarding the common functionality of the forms, please refer to the following link [Custom features, buttons, and fields](/docs/guide/common).

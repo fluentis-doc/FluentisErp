@@ -1,36 +1,37 @@
 ---
 title: Warehouses
-sidebar_position: 8
+sidebar_position: 15
 ---
 
-The warehouses insertion table is necessary in order to use correctly all system functions that concern material movement.
+:::important What it is for
+The Warehouses table in Fluentis allows for the creation, modification, and management of warehouse records, ensuring effective material handling within the system. 
+In the table, users find an intuitive interface that includes search tools and filters for quick data accessibility. It is possible to enter new warehouses specifying at least the code and the description, along with details such as the management area and the expiration date.      
+Each warehouse can be assigned to a specific production site, thus facilitating resource organization and inventory monitoring.     
+Linking each warehouse to a particular production site represents an added value, as it allows for optimizing resource distribution and improving corporate logistics planning.
+:::
 
-The warehouses table consists as follows:
+The table is located at **Tables > Logistics > Warehouses**.
 
-RIBBON BAR: it represents the Form menu, that is the area on which it is possible to perform actions. The list of features is the following:
+The warehouse entry table is necessary to correctly utilize all system functions that involve material handling.
 
+The table allows for the entry of new records or the search for existing ones to view, modify, or delete them.
 
+**Search Warehouse**
 
-| Function | Meaning |
-| --- | --- |
-| Search | Button to apply search filters within database of the inserted warehouses. |
-| Insert | It enables the user to insert a new warehouse. |
-| Delete | It deletes the selected warehouse. |
-| Delete Cost Centres | It deletes the selected cost centre. |
-| Delete Profit Centre | It deletes the selected profit centre. |
-| Print Preview | It performs the print preview. |
-| Print | It prints the report. |
+The form consists of a filter area and a results area. Once all desired filters are set, simply click the **Search** button to view the results in the results grid.
 
-FILTER AREA: The filter area contains the list of the possible data types thanks to which it is possible to perform a selection. In this case the search filter works according to warehouse description.
+**Insert Warehouse**
 
-RESULT GRID: the result grid represents the warehouses list which correspond to the filter data, above mentioned. After having specified the values through which it is possible to perform a warehouses search, the user can push [Search] button on the related Ribbon and will obtain the list of the desired wareouses.
+To enter new codes, you need to click in the grid on the first empty row or press the **Insert** button. 
+For the new record, at least the mandatory fields required by the program must be entered: the Code of the **Warehouse** and the **Description**.
 
-Apart from searching warehouses on system it is possible even to add one or more warehouses. In order to do this, it is necessary to click on the first free record (or to push the [insertion] button on toolbar). In this way it is possible to indicate warehouse code and description. Possibly it is possible to indicate production site, management area, end validity date of warehouse, destination (taken from contacts register) and/or point of sale.
+*Specific fields*: 
 
-For each warehouse it is possible even to insert the related cost and/or profit centres.
+> **Production site**: indicates the [Production Site](/docs/configurations/parameters/production/production-orders-parameters/production-site) to which the warehouse belongs;   
+> **Management area**: indicates the [Management Area](/docs/configurations/tables/logistics/management-area) to which the warehouse belongs;     
+> **End validity date**: indicates the expiration date of the warehouse;  
+> **Code name** and **Company name**: indicate the destination (taken from the *Register Printing*).   
 
+For each warehouse, it is then possible to enter the related **Cost Centers** and/or **Revenue Centers**. 
 
-
-
-
-
+For anything not detailed in this document regarding the common operation of forms, refer to the following link [Custom features, buttons, and fields](/docs/guide/common).
