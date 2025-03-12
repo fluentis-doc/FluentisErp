@@ -1,16 +1,59 @@
 ---
-title: Fixed Assets Management
-sidebar_position: 2
+title: Gestione Cespiti
+sidebar_position: 3
 ---
 
-On fixed assets management mask the first field corresponds to the setting related to the original fixed asset category, in order to establish that the fixed asset belongs to the company as proposed automatically: there are also fixed assets in leasing and hire, that are numbered separately by others and do not finish on reports of depreciable fixed assets journal. This management enables the user to simulate the depreciations calculation of the end of the year for comparing to leasing paid at the end of the tax calculation. In case of not property fixed asset it will be possible to insert some reference notes to the related contract.
+LINK:
 
-Subsequently, it is possible to attribute a pre-code to the fixed asset numbering (attributed at the moment of saving): if it is not inserted, the automatic numbering proposed on the following field will be the only one on all fixed assets of active company/department, while it could refer to a particular pre-code that usually refers to the category code of belonging fixed asset. After the fixed asset number there is the fixed asset description that will be viewed and reported on the various module reports and procedures. The department field can be set at the moment of the insertion of the new fixed asset, considering that then it cannot be edited.
+**[Dettaglio](/docs/finance-area/fixed-assets/fixed-assets-management/detail)**
 
-According to the settings of fixed assets category and module parameters it is possible to view also the objective depreciation type assigned to the fixed asset, together with a specific percentage to be used for the same fixed asset rather than the type standard.
+**[Operazioni Patrimoniali](/docs/finance-area/fixed-assets/fixed-assets-management/patrimonial-operations)**
+
+**[Operazioni Economiche](/docs/finance-area/fixed-assets/fixed-assets-management/economical-operations)**
+
+**[Cespiti collegati](/docs/finance-area/fixed-assets/fixed-assets-management/linked-fixed-assets)**
+
+**[Proprietà cespiti](/docs/finance-area/fixed-assets/fixed-assets-management/fixed-assets-property)**
+
+ 
+
+Dalla presente form è possibile inserire manualmente una nuova scheda cespite (questo tipo di operazione non è normalmente previsto, un esempio pratico può essere l'inserimento di cespiti pregressi di cui non si intende caricare la registrazione contabile già presente, magari, su un precedente software).
+
+Questa procedura è alternativa all'inserimento della scheda direttamente dalla registrazione contabile della fattura di acquisto configurata appositamente per la gestione cespiti (procedura, quest'ultima, consigliata).
+
+ 
+
+**Testata**
+
+Impostazione della **Categoria cespite** d'appartenenza: selezionare la categoria dalla combo box (collegata alla tabella **[categoria cespite](/docs/configurations/tables/finance/fixed-asset-category)**);
+
+**Tipo proprietà**: normalmente di proprietà come proposto di default; sono previsti anche i cespiti in leasing e a noleggio, che sono numerati separatamente dagli altri e non finiscono nelle stampe del libro cespiti ammortizzabili. Questa gestione consente di simulare il calcolo degli ammortamenti di fine anno per la comparazione al canone di leasing pagato al fine del calcolo delle imposte. In caso di cespite non di proprietà sarà possibile inserire qualche nota di riferimento al contratto relativo.
+
+**Divisione**: impostata di default sulla divisione in uso, può essere variata in caso di necessità. Il campo può essere impostato unicamente al momento dell'inserimento del nuovo cespite, non potendo poi più essere modificato.
+
+**Tipo contab. **: (tipo contabilizzazione): campo normalmente non valorizzato in fase di inserimento manuale della scheda, viene valorizzato nella registrazione contabile per imporre un conto di contropartita particolare (definito nella tabella Tipi contabilizzazione cespiti) rispetto a quello definito nella categoria cespite di appartenenza.
+
+ 
+
+**Precodice**: può essere attribuito alla numerazione del cespite; se non inserito, infatti, la numerazione proposta sarà unica su tutti i cespiti della società/divisione attiva, inserendo un precodice il numero del cespite sarà univoco per ognuno dei precodici esistenti.
 
 
+**Mat./Immat.**: natura del cespite (materiale o immateriale); viene proposto in automatico sulla base del dato contenuto nella categoria cespite di appartenenza.
 
+
+**Note propr.**: campo note libero
+ 
+
+**Numero cespite**: proposto automaticamente in ordine progressivo, può essere forzato manualmente nel rispetto dell'univocità (anche in relazione al precodice).
+
+
+**Descrizione del cespite**: campo obbligatorio, sarà visualizzata e riportata nelle varie stampe e procedure del modulo. 
+
+ 
+
+A seconda delle impostazioni delle categorie cespiti e dei parametri del modulo, può essere visibile anche il tipo di ammortamento oggettivo assegnato al cespite, con, eventualmente, una percentuale specifica da utilizzare per il cespite stesso al posto dello standard del tipo.
+
+![](/img/it-it/finance-area/fixed-assets/fixed-assets-management/image01.png)
 
 
 
