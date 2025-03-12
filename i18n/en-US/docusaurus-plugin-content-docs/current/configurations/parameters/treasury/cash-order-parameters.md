@@ -1,33 +1,16 @@
 ---
-title: Cash Order Parameters
+title: Parametri Ri.Ba
 sidebar_position: 5
 ---
 
-RIBBON BAR: the ribbon bar represents the Form menu, that is the area on which it is possible to perform actions linked to the procedure in use. The possible features list is the following:
+I parametri del modulo Ricevute bancarie si trovano in **Parametri > Tesoreria**
 
+Nei parametri relativi si possono pre-impostare gli elementi di default da proporre nelle procedure del modulo. In particolare:
 
-
-| Function | Meaning |
-| --- | --- |
-| Save  | Button to save settings. |
-
-The cash order module parameters are located in the following path [Home>Parameters>Treasury]
-
-In the related parameters it is possible to pre-set the automatic elements to be proposed in the module procedures. In particular:
-
-
-
-| Function | Meaning |
-| --- | --- |
-| Path of Cash Order Tracing | Setting of the standard directory of electronic tracing creation about cash orders. It is recommended to create directory shared within a server, in order to access to it from all procedure positions. |
-| Customer References | It refers to the company name. |
-| Standard Description of Credit | It is possible to encode, by using codes indicated, the text to be inserted on file as description of reference document of cash order. It is a text of invoice type N. (2) of (3). |
-| Insert Character of Final Control | As regards some remote banking programs it is necessary to obtain a return at the end of the file. Set this flag, if necessary. |
-| Without Reference for Unpaids Import | Within some remote banking programs it is possible to add automatically registers according to data inserted in cash order file. The field of unpaids import procedure can non-stop update registers. This situation can be avoided through this flag (and for this reason it is not necessary to use the unpaids import procedure). |
-| Description Maturity Management | Through this flag the customer description inserted on file will be composed of first description + second description. |
-
-
-
-
-
+**Percorso di creazione dei tracciati Riba**: Impostazione della  directory standard di creazione del tracciato telematico per le ricevute bancarie. Si consiglia di creare una directory condivisa di rete all'interno di un server, per poter accedere da tutte le postazioni della procedura.  
+**Riferimenti del cliente**: E' la ragione sociale della società attiva che sarà inserito nel file Cbi di presentazione.  
+**Descrizione standard del credito**: E' possibile codificare, sfruttando i codici indicati tra parentesi, il testo da inserire nel file quale descrizione del documento di riferimento dell'emissione riba. Si tratta di un testo del tipo Ft. Nr. (2) del (3).  
+**Inserisci carattere di controllo finale**: Per alcuni programmi di remote banking è necessario un ritorno a capo finale nel file, impostare questo flag se necessario.
+**Senza riferimento per importazione insoluti**: In alcuni programmi di remote banking è previsto un aggiornamento automatico delle anagrafiche sulla base dei dati inseriti nel file riba. Il campo che sfruttiamo per la procedura di importazione insoluti può causare un continuo aggiornamento delle anagrafiche che si può evitare con questo flag (cosa che comporta la non utilizzabilità della procedura di importazione insoluti stessa).
+**Gestione seconda descrizione**: Con questo flag la descrizione del cliente inserita nel file sarà composta come prima descrizione + seconda descrizione.
 
