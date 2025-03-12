@@ -1,22 +1,32 @@
 ---
-title: Sales Item Association
+title: Associazione di articolo vendita
 sidebar_position: 10
 ---
 
-Through this procedure it is possible to view the list of items to which a nomenclature code has not yet been assigned. Once having selected the list of these ones and defined, at the base of the mask, the nomenclature, to be assigned, it will be possible to attribute it simply by clicking on the related management button.
+Da questa form è possibile visualizzare la lista degli articoli ai quali non è stato ancora assegnato un codice nomenclatura (attivando il flag apposito) oppure la lista completa degli articoli. 
 
-RIBBON BAR: it represents the Form menu, that is the area in which it is possible to perform actions linked to the procedure in use. The list of features is the following:
+ Alla base della form è possibile assegnare, in maniera massiva, un codice di nomenclatura semplicemente premendo il pulsante di gestione relativo.
+
+![](/img/it-it/finance-area/declarations/intrastat/sales-item-association/image01.png)
+
+![](/img/it-it/finance-area/declarations/intrastat/sales-item-association/image02.png)
+
+![](/img/it-it/finance-area/declarations/intrastat/sales-item-association/image03.png)
+
+Ricordiamo che il campo **Codice nomenclatura da associare** è un widget di ricerca e pertanto, iniziando semplicemente a scrivere nel campo saranno proposti i dati (che iniziano per.... oppure che contengono.... se si utilizza il carattere % prima della lettera o parola digitata). Inoltre è possibile fare doppio click con il tasto sinistro del mouse per richiamare l'help di ricerca
+
+![](/img/it-it/finance-area/declarations/intrastat/sales-item-association/image04.png)
 
 
 
-| Function | Meaning |
+| Funzione | Significato |
 | --- | --- |
-| Search | It searches the items to which assign a nomenclature code. |
-| Vendor Item Association | Button to operate the association of nomenclature code to the selected items. |
+| Ricerca | Ricerca degli articoli a cui assegnare un codice nomenclatura. |
+| Associazione articolo fornitore | Pulsante per operare l'associazione del codice nomenclatura agli articoli selezionati. |
 
-FILTER AREA: the filter area contains the list of possible data type thanks to which it is possible to perform a selection. Typically filters have always 'AND' condition and it is possible to specify more search filters at the same time.
+AREA DI FILTRO: l'area di filtro è quella dedicata ad ospitare l'elenco dei possibili tipi di dati grazie ai quali è possibile effettuare una selezione. I Filtri sono tipicamente sempre in condizione 'AND' ed è possibile specificare più criteri di filtro contemporanei.
 
-RESULT GRID: the result grid represents the list of Intrastat declarations which correspond to filter data, above mentioned. After having specified values through which to obtain an items search, the user, by clicking on [Search] button on the related Ribbon, will obtain the list of desired items on result grid.
+GRIGLIA DI RISULTATO: la griglia di risultato rappresenta l'elenco degli articoli che corrispondono ai dati di filtro sopra specificati. L'utente, dopo aver specificato i valori attraverso i quali desidera ottenere una ricerca degli articoli, premendo il pulsante [Ricerca] presente nella relativa Ribbon, otterrà nella griglia di risultato l'elenco degli articoli desiderati.
 
 
 

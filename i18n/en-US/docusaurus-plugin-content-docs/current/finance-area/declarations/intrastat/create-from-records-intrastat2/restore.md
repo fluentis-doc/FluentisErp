@@ -1,23 +1,9 @@
 ---
-title: Restore
+title: Ripristino
 sidebar_position: 4
 ---
 
-Lastly, there is a restore tab: it is possible to use this one in order to cancel insertions on sections, but also the direct cancellation from these ones will open again the related document to be inserted on model.
-
-RIBBON BAR: it represents the Form menu, that is the area in which it is possible to perform actions linked to the procedure in use. The list of features is the following:
-
-
-
-| Function | Meaning |
-| --- | --- |
-| Search  | Button to delete the selected invoices belonging to the intra-Community type. |
-| Restore Intrastat | Button to restore the whole Intrastat declaration. |
-| Restore Invoice | Button to restore an only one invoice that is located within the Intrastat declaration. |
-
-FILTER AREA: the filter area contains the list of possible data type thanks to which it is possible to perform a selection. Typically filters have always 'AND' condition and it is possible to specify more search filters at the same time.
-
-RESULT GRID: the result grid represents the list of Intrastat declarations which correspond to filter data, above mentioned. After having specified values through which to obtain a search of Intrastat declaration, the user, by clicking on [Search] button on the related Ribbon, will obtain the list of desired Intrastat declarations on result grid.
+Vedere pagina corrispondente per ** [Intra 1](/docs/finance-area/declarations/intrastat/create-from-records-intrastat1/restore) **
 
 
 
