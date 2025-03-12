@@ -1,37 +1,37 @@
 ---
-title: Magazzini
+title: Warehouses
 sidebar_position: 15
 ---
 
-:::important A cosa serve
-La tabella Magazzini di Fluentis consente di creare, modificare e gestire i record dei magazzini, assicurando un'efficace movimentazione dei materiali all'interno del sistema. 
-Nella tabella, gli utenti trovano un'interfaccia intuitiva che include strumenti di ricerca e filtri per una rapida accessibilità ai dati. È possibile inserire nuovi magazzini specificando almeno il codice e la descrizione, oltre a dettagli come l'area gestionale e la data di fine validità.      
-Ogni magazzino può essere assegnato a uno specifico sito produttivo, facilitando così l'organizzazione delle risorse e il monitoraggio delle scorte.     
-Il collegamento di ogni magazzino a un determinato sito produttivo rappresenta un valore aggiunto, poiché permette di ottimizzare la distribuzione delle risorse e migliorare la pianificazione logistica aziendale.
+:::important What it is for
+The Warehouses table in Fluentis allows for the creation, modification, and management of warehouse records, ensuring effective material handling within the system. 
+In the table, users find an intuitive interface that includes search tools and filters for quick data accessibility. It is possible to enter new warehouses specifying at least the code and the description, along with details such as the management area and the expiration date.      
+Each warehouse can be assigned to a specific production site, thus facilitating resource organization and inventory monitoring.     
+Linking each warehouse to a particular production site represents an added value, as it allows for optimizing resource distribution and improving corporate logistics planning.
 :::
 
-La tabella si trova sul percorso **Tabelle > Logistica > Magazzini**.
+The table is located at **Tables > Logistics > Warehouses**.
 
-La tabella di inserimento magazzini è necessaria per poter utilizzare in modo corretto tutte le funzioni del sistema che hanno a che vedere con la movimentazione dei materiali.
+The warehouse entry table is necessary to correctly utilize all system functions that involve material handling.
 
-La tabella consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+The table allows for the entry of new records or the search for existing ones to view, modify, or delete them.
 
-**Ricerca magazzini**
+**Search Warehouse**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+The form consists of a filter area and a results area. Once all desired filters are set, simply click the **Search** button to view the results in the results grid.
 
-**Inserimento magazzino**
+**Insert Warehouse**
 
-Per poter inserire nuove codifiche è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Inserimento**.
-Per il nuovo record si devono inserire almeno i campi obbligatori richiesti dal programma: il Codice del **Magazzino** e la **Descrizione**.
+To enter new codes, you need to click in the grid on the first empty row or press the **Insert** button. 
+For the new record, at least the mandatory fields required by the program must be entered: the Code of the **Warehouse** and the **Description**.
 
-*Campi specifici*: 
+*Specific fields*: 
 
-> **Sito produzione**: indica il [Sito Produzione](/docs/configurations/parameters/production/production-orders-parameters/production-site) a cui appartiene il magazzino;   
-> **Area gestionale**: indica l'[Area gestionale](/docs/configurations/tables/logistics/management-area) a cui appartiene il magazzino;     
-> **Data fine validità**: indica la data di fine validità del magazzino;  
-> **Nomignolo** e **Ragione sociale**: indica la destinazione (ripresa dall'*Anagrafica contatti*).   
+> **Production site**: indicates the [Production Site](/docs/configurations/parameters/production/production-orders-parameters/production-site) to which the warehouse belongs;   
+> **Management area**: indicates the [Management Area](/docs/configurations/tables/logistics/management-area) to which the warehouse belongs;     
+> **End validity date**: indicates the expiration date of the warehouse;  
+> **Code name** and **Company name**: indicate the destination (taken from the *Register Printing*).   
 
-Per ogni magazzino è poi possibile inserire i relativi **Centri di costo** e/o i **Centri di ricavo**. 
+For each warehouse, it is then possible to enter the related **Cost Centers** and/or **Revenue Centers**. 
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+For anything not detailed in this document regarding the common operation of forms, refer to the following link [Custom features, buttons, and fields](/docs/guide/common).

@@ -1,29 +1,29 @@
 ---
-title: Tipi di spedizione
+title: Shipping Types 
 sidebar_position: 60
 ---
 
-La tabella si trova sul percorso **Tabelle > Logistica > Tipi di spedizione**.
+The table is located in the path **Tables > Logistics > Shipping Types**.
 
-In questa tabella è possibile codificare i *Tipi di spedizione* che potranno essere selezionati nella [spedizioni](/docs/logistics/shipping/shippings-intro)
+In this table, it is possible to codify the *Shipping Types* that can be selected in [shippings](/docs/logistics/shipping/shippings-intro).
 
-La tabella consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+The table allows you to insert new records or search for existing ones to view, modify, or delete them.
 
-**Ricerca Tipi di spedizione**
+**Search Shipping Types**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+The form consists of a filter area and a results area. Once all desired filters are set, simply click the **Search** button to display the results in the results grid.
 
-**Inserimento Tipi di spedizione**
+**Insert Shipping Types**
 
-Per poter inserire nuovi è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.      
-Per il nuovo record si devono inserire almeno i campi obbligatori richiesti dal programma: il **Codice**, la **Descrizione** e la **Numerazione**.
+To insert new records, you need to click on the first empty row in the grid or press the **New** button.      
+For the new record, you must enter at least the mandatory fields required by the program: **Code**, **Description**, and **Numeration**.
 
-*Campi specifici*: 
+*Specific fields*: 
 
-> **Codice**: è il codice del *Tipo di spedizione*.   
-> **Descrizione**: è la descrizione del *Tipo di spedizione*.   
-> **Nota**: annotazioni libere.   
-> **Numerazione**: è il codice della numerazione del *Tipo di spedizione*.   
-> **Descrizione**: è la descrizione della numerazione del *Tipo di spedizione*.   
+> **Code**: this is the code of the *Shipping Type*.   
+> **Description**: this is the description of the *Shipping Type*.   
+> **Note**: free annotations.   
+> **Numeration**: this is the code for the numeration of the *Shipping Type*.   
+> **Description**: this is the description of the numeration of the *Shipping Type*.   
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+For anything not detailed in this document about the common functionality of forms, please refer to the following link [Custom Features, Buttons, and Fields](/docs/guide/common).

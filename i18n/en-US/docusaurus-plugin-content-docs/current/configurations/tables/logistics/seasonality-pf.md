@@ -1,20 +1,20 @@
 ---
-title: Stagionalità
+title: Seasonality P.F.
 sidebar_position: 46
 ---
 
-Questa form permette di gestire le variazioni stagionali dell'approvvigionamento nei periodi precedenti, per articolo e periodo. Quest'operazione si può fare manualmente oppure in automatico con la procedura di *Ripresa dati* nella previsione corrente dall'approvvigionamento precedente; la procedura offre la possibilità di generare la stagionalità. 
+This form allows you to manage seasonal variations in supply during previous periods, by item and period. This operation can be done manually or automatically with the *Data Recovery* procedure from the previous supply in the current forecast; the procedure offers the possibility to generate seasonality.
 
-La tabella consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+The table allows you to enter new records or search for existing ones to view, modify, or delete them.
 
-**Ricerca Stagionalità**
+**Search Seasonality P.F.**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+The form consists of a filter area and a results area. Once all desired filters are set, simply click the **Search** button to view the results in the results grid.
 
-**Inserimento Stagionalità**
+**Insert Seasonality P.F.**
 
-Per poter inserire nuove codifiche è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**. 
+To insert new codes, you need to click on the first empty row in the grid or press the **New** button.
 
-Per il nuovo record si devono inserire almeno i campi obbligatori richiesti dal programma: il **Codice** e la **Descrizione**.
+For the new record, you must enter at least the mandatory fields required by the program: the **Code** and the **Description**.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+For everything that is not detailed in this document regarding the common functionality of the forms, please refer to the following link [Custom features, buttons, and fields](/docs/guide/common).

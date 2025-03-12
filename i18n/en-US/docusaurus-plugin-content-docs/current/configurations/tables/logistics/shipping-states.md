@@ -1,29 +1,29 @@
 ---
-title: Stati di spedizione
+title: Shipping States
 sidebar_position: 61
 ---
 
-La tabella si trova sul percorso **Tabelle > Logistica > Stati di spedizione**.
+The table is located on the path **Tables > Logistics > Shipping States**.
 
-In questa tabella è possibile codificare i *Stati di spedizione* che potranno essere selezionati nella [spedizioni](/docs/logistics/shipping/shippings-intro)
+In this table, it is possible to code *Shipping States* that can be selected in [shippings](/docs/logistics/shipping/shippings-intro).
 
-La tabella consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+The table allows for the entry of new records or the search of existing ones to view, modify, or delete them.
 
-**Ricerca Stati di spedizione**
+**Search Shipping States**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+The form consists of a filter area and a results area. Once all desired filters are set, simply click the **Search** button to display the results within the results grid.
 
-**Inserimento Stati di spedizione**
+**Insert Shipping States**
 
-Per poter inserire nuovi è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.   
-Per il nuovo record si devono inserire almeno i campi obbligatori richiesti dal programma: il **Codice** e la **Descrizione**.
+To enter new statuses, click on the first empty row in the grid or press the **New** button.   
+For the new record, at least the mandatory fields required by the program must be filled in: **Code** and **Description**.
 
-*Campi specifici*: 
+*Specific fields*: 
 
-> **Codice**: è il codice del *Stato di spedizione*.   
-> **Descrizione**: è la descrizione del *Stato di spedizione*.   
-> **Colore di sfondo**: permette di definire il colore di sfondo della riga presente nel [Filtro delle spedizioni](/docs/logistics/shipping/search-shippings). 
-> **Colore testo**: permette di definire il colore del testo della riga presente nel [Filtro delle spedizioni](/docs/logistics/shipping/search-shippings). 
-> **Voce del dizionario**: permette di definire la *Voce del dizionario*.   
+> **Code**: this is the code for the *Shipping State*.   
+> **Description**: this is the description of the *Shipping State*.   
+> **Background Color**: allows defining the background color of the row present in the [Shipping Filter](/docs/logistics/shipping/search-shippings). 
+> **Text Color**: allows defining the text color of the row present in the [Shipping Filter](/docs/logistics/shipping/search-shippings). 
+> **Dictionary Entry**: allows defining the *Dictionary Entry*.   
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+For everything not detailed in this document regarding the common functionality of the forms, refer to the following link [Custom features, buttons, and fields](/docs/guide/common).

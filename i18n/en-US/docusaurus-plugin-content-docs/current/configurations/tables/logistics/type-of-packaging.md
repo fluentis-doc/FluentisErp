@@ -1,19 +1,19 @@
 ---
-title: Aspetto Esteriore Beni
+title: Type Of Packaging
 sidebar_position: 4
 ---
 
-La tabella si trova sul percorso **Tabelle > Logistica > Aspetto Esteriore Beni**.
+The table is located on the path **Tables > Logistics > Type Of Packaging**.
 
-Consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+It allows for the insertion of new records or to search for existing ones to view, modify, or delete them.
 
-**Ricerca Aspetto Esteriore Beni**
+**Search Type Of Packaging**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+The form consists of a filter area and a results area. Once all desired filters are set, simply click the **Search** button to display the results within the results grid.
 
-**Inserimento Aspetto Esteriore Beni**
+**Insert Type Of Packaging**
 
-Per poter inserire nuove codifiche è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.  
-Per il nuovo record si devono inserire i campi obbligatori richiesti dal programma: il **Codice** e la **Descrizione**.
+To insert new codes, it is necessary to click on the first empty row in the grid or press the **New** button.  
+For the new record, you must enter the mandatory fields required by the program: the **Code** and the **Description**.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+For everything that is not detailed in this document about the common functionality of the forms, please refer to the following link [Custom Features, Buttons, and Fields](/docs/guide/common).

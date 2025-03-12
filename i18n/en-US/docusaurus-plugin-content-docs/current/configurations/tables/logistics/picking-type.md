@@ -1,63 +1,62 @@
 ---
-title: Tipi picking
+title: Picking Types 
 sidebar_position: 34
 ---
 
-:::important A cosa serve
-La tabella Tipo Picking di Fluentis consente di codificare e definire le diverse tipologie di picking che possono essere utilizzate durante la creazione delle liste di prelievo. Gli utenti possono inserire nuovi record, modificare quelli esistenti o eliminarli in base alle esigenze operative.
+:::important What it is for 
+The Picking Type table in Fluentis allows for the coding and definition of the different types of picking that can be used during the creation of picking lists. Users can insert new records, modify existing ones, or delete them based on operational needs.
 
-Ogni tipologia di picking può essere associata a parametri specifici, tra cui il codice alfanumerico univoco, la numerazione dei documenti, e le causali di movimentazione. È possibile stabilire anche il tipo di fattura o DDT da utilizzare e gestire configurazioni come lo stato iniziale del picking e la priorità delle ubicazioni di magazzino. Questa flessibilità consente alle aziende di adattare il sistema alle proprie necessità, migliorando così l'efficienza nelle operazioni di magazzino e contribuendo a una gestione ottimale dei flussi di materiali.
+Each type of picking can be associated with specific parameters, including a unique alphanumeric code, document numeration, and movement templates. It is also possible to establish the type of invoice or DN to be used and manage configurations such as the initial state of picking and the priority of warehouse locations. This flexibility allows companies to adapt the system to their needs, thereby improving efficiency in warehouse operations and contributing to optimal material flow management.
 :::
 
-La tabella si trova sul percorso **Tabelle > Logistica > Tipi picking**.
+The table is located at **Tables > Logistics > Picking Types**.
 
-In questa tabella è possibile codificare le diverse tipologie di picking da utilizzare quando si crea un [Nuovo Picking](/docs/logistics/picking/picking-management).
+In this table, it is possible to code the different types of picking to be used when creating a [New Picking](/docs/logistics/picking/picking-management).
 
-Consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+It allows for the insertion of new records or the search for existing ones to view, modify, or delete them.
 
-**Ricerca Tipo picking**
+**Search Picking Type**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+The form consists of a filter area and a result area. Once all desired filters are set, simply click the **Search** button to display the results within the result grid.
 
-**Inserimento Tipo picking**
+**Insert Picking Type**
 
-Per poter inserire nuove codifiche è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.
+To insert new codes, you need to click on the first empty row in the grid or press the **New** button.
 
-**Tipo/Descrizione**: codice alfanumerico univoco e descrizione del *Tipo picking*;   
+**Type/Description**: unique alphanumeric code and description of the *Picking Type*;   
 
-**Numerazione**: in questo campo va inserito il codice della numerazione appropriato. Per approfondimenti fare riferimento all'articolo relativo alle [Numerazioni Fluentis](/docs/configurations/tables/fluentis-numerations);
+**Numeration**: this field should contain the appropriate numeration code. For further details, refer to the article on [Fluentis Numerations](/docs/configurations/tables/fluentis-numerations);
 
-**Numerazione lista di prelievo**: indica la numerazione da utilizzare per le liste UDC create con questo tipo picking;   
+**Picking List Numeration**: indicates the numbering to be used for the Loading Unit lists created with this picking type;   
 
-**Evasione tipo fattura**: in questo campo va definito il tipo fattura che deve essere proposto per creare la fattura da picking tramite l'apposita procedura;
+**Execution of invoice type**: this field defines the type of invoice that should be proposed for creating the invoice from picking through the appropriate procedure;
 
-**Evasione tipo DDT**: in questo campo va definito il tipo DDT che deve essere proposto per creare la bolla da picking tramite l'apposita procedura;
+**Execution of delivery note type**: this field defines the type of DN that should be proposed for creating the bill from picking through the appropriate procedure;
 
-**Stato iniziale**: indica lo *Stato* di default con cui viene creato il picking;
+**Initial Status**: indicates the default *Status* with which the picking is created;
 
-**Magazzino/Descrizione magazzino**: in questi campi viene inserito il magazzino di movimentazione della merce da proporre in automatico sulle righe articolo inserite nel picking;   
+**Warehouse/Warehouse Description**: in these fields, the warehouse for the movement of goods should be automatically proposed on the item lines inserted in the picking;   
 
-**Causale/Descrizione causale**: in questi campi viene indicata la causale di movimentazione della merce contenuta nei picking appartenenti a questa tipologia;  
+**Movement Template/Description**: in these fields, the movement template for the goods contained in the pickings belonging to this type is indicated;  
 
-**Senza evasione**: al momento dell'evasione dell'ordine nel picking non viene cambiato lo stato evasione dell'ordine;
+**Without Execution**: at the time of the order's fulfillment in the picking, the order's fulfillment status is not changed;
 
-**Evasione quantità articolo non sommata**: se questo flag è attivo, nel momento in cui si andrà a creare un picking a partire da un altro documento le quantità delle righe articolo evase non saranno sommate; 
+**Unsumed Item Quantity Order**: if this flag is active, when creating a picking from another document, the quantities of the fulfilled item lines will not be summed; 
 
-**Trasferimento**: se attivo indica che si tratta di un picking di trasferimento tra magazzini interni; 
+**Transfer**: if active, indicates that it is a transfer picking between internal warehouses; 
 
-**Lista prelievo materiali**: i *Tipi picking* che hanno questo flag attivo saranno visibili nella *Lista prelievo materiali*;
+**Picking Materials List**: *Picking Types* with this flag active will be visible in the *Picking Materials List*;
 
-:::note Nota
-Per i *Tipi picking* che saranno utilizzati nelle *Liste di prelievo materiali*, quindi per quelli che avranno il flag *Lista prelievo materiali* attivo, è necessario inserire una causale di magazzino che abbia anche una contropartita.
+:::note Note
+For *Picking Types* that will be used in the *Picking Materials Lists*, therefore for those that will have the *Picking Materials List* flag active, it is necessary to enter a warehouse reason that also has a counterpart.
 :::
 
-**Evade ordini con commessa di produzione**: non più utilizzato;
+**Execute orders with production job order**: no longer used;
 
-**Unità di carico obbligatoria**: i tipi picking che hanno questo flag disattivato non potranno essere usati per il prelievo delle UDC e saranno visibili nella form di [Conferma picking](/docs/logistics/wms/sales/check-row-menagement#conferma-picking) del WMS. Viceversa, le tipologie di picking che hanno questo flag attivo saranno visualizzate nella [Gestione spunta](/docs/logistics/wms/sales/check-row-menagement#gestione-spunta) del WMS. 
+**Mandatory load unit**: picking types that have this flag deactivated cannot be used for the picking of UDCs and will be visible in the [Picking Confirmation](/docs/logistics/wms/sales/check-row-menagement#conferma-picking) form of the WMS. Conversely, picking types that have this flag active will be displayed in the [Check Row Management](/docs/logistics/wms/sales/check-row-menagement#gestione-spunta) of the WMS. 
 
-**Sovraevadibile**: se attivo, permette di sovra evadere la quantità indicata nel picking; è utilizzabile sia nella [Gestione spunta](/docs/logistics/wms/sales/check-row-menagement) che nella [Conferma picking](/docs/logistics/wms/sales/check-row-menagement) del WMS. Nel caso non sia attivo e si tenti di movimentare una quantità maggiore rispetto a quella indicata viene mostrato un messaggio di avviso che impedisce di proseguire.
+**Is over executed**: if active, allows over-fulfilling the quantity indicated in the picking; it can be used both in the [Check Row Management](/docs/logistics/wms/sales/check-row-menagement) and in the [Picking Confirmation](/docs/logistics/wms/sales/check-row-menagement) of the WMS. If it is not active and an attempt is made to move a quantity greater than that indicated, a warning message is displayed that prevents proceeding.
 
-**Stampa**: indica il nome della stampa associata e il **Numero di copie** da eseguire di default. 
+**Print report**: indicates the name of the associated printout and the **Number of copies** to be executed by default. 
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
-
+For everything not detailed in this document regarding the common functioning of the forms, refer to the following link [Custom features, buttons, and fields](/docs/guide/common).

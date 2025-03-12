@@ -1,18 +1,18 @@
 ---
-title: Tipo documento gestionale
+title: Type Of Operational Document
 sidebar_position: 54
 ---
 
-La tabella permette di gestire la codifica delle diverse tipologie di *Tipo documento gestionale* (documento per la dogana).
+The table allows for the management of the encoding of the different types of *Type Of Operational Document* (document for customs).
 
-Consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+It allows for the insertion of new records or the search of existing ones to view, modify, or delete them.
 
-**Ricerca Tipo documento gestionale**
+**Search Type Of Operational Document**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+The form consists of a filter area and a results area. Once all desired filters are set, simply click the **Search** button to display the results within the results grid.
 
-**Inserimento Tipo documento gestionale**
+**Insert Type Of Operational Document**
 
-Per poter inserire nuove codifiche è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.
+To insert new encodings, it is necessary to click on the first empty row in the grid or press the **New** button.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+For everything not detailed in this document regarding the common functionality of forms, please refer to the following link [Custom Features, Buttons, and Fields](/docs/guide/common).

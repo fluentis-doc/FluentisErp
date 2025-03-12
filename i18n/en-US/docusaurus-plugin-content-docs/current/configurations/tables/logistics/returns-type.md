@@ -1,38 +1,38 @@
 ---
-title: Tipo rientri
+title: Returns Types
 sidebar_position: 35
 ---
 
-La tabella serve per impostare i tipi dei rientri di conto lavoro, in modo da poter veicolare il materiale da e per determinati magazzini, a seconda del tipo rientro.
+The table is used to set up the types of work returns, so that material can be moved to and from certain warehouses, depending on the type of return.
 
-La tabella consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+The table allows for the insertion of new records or for searching existing ones to view, modify, or delete them.
 
-**Ricerca Tipo Rientri**
+**Search Returns Types**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+The form consists of a filter area and a result area. Once all desired filters are set, simply click on the **Search** button to view the results within the result grid.
 
-**Inserimento Tipo Rientri**
+**Insert Returns Types**
 
-Per poter inserire nuove codifiche è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.
+To insert new codes, it is necessary to click on the first empty row in the grid or press the **New** button.
 
-**Codice**: rappresenta il codice del tipo rientro;
+**Code**: represents the code of the return type;
 
-**Descrizione**: rappresenta la descrizione del tipo rientro;
+**Description**: represents the description of the return type;
 
-**Magazzino**: in questa colonna l'utente può scegliere il magazzino su cui dovrà essere caricato il materiale prodotto dal terzista e spedito dallo stesso tramite un rientro di conto lavoro creato con il tipo appena inserito;
+**Warehouse**: in this column, the user can choose the warehouse where the material produced by the subcontractor should be loaded and shipped by them through a work return created with the type just entered;
 
-**Descrizione magazzino**: rappresenta la descrizione del magazzino inserito nella colonna precedente;
+**Warehouse Description**: represents the description of the warehouse entered in the previous column;
 
-**Causale**: in questa colonna l'utente può scegliere la causale con la quale deve essere caricato il materiale prodotto dal terzista e spedito dallo stesso tramite un rientro di conto lavoro creato con il tipo appena inserito;
+**Template**: in this column, the user can choose the template for which the material produced by the subcontractor needs to be loaded and shipped by them through a work return created with the type just entered;
 
-**Descrizione causale**: rappresenta la descrizione della causale inserita nella colonna precedente;
+**Template Description**: represents the description of the template entered in the previous column;
 
-**Sc. mag.**: in questa colonna l'utente può scegliere il magazzino da cui dovrà essere scaricato il materiale utilizzato dal terzista ed inserito nel tab Materiali del rientro di conto lavoro creato con il tipo appena inserito;
+**Sc. ware.**: in this column, the user can choose the warehouse from which the material used by the subcontractor must be unloaded and inserted in the Materials tab of the work return created with the type just entered;
 
-**Sc. mag. descrizione**: rappresenta la descrizione del magazzino inserito nella colonna precedente;
+**Sc. Ware. Description**: represents the description of the warehouse entered in the previous column;
 
-**Sc. caus.** ****: in questa colonna l'utente può scegliere la causale con la quale deve essere scaricato il materiale utilizzato dal terzista ed inserito nel tab Materiali del rientro di conto lavoro creato con il tipo appena inserito;
+**Sc. Temp.**: in this column, the user can choose the template for which the material used by the subcontractor must be unloaded and inserted in the Materials tab of the work return created with the type just entered;
 
-**Sc. caus. descrizone**: rappresenta la descrizione della causale inserita nella colonna precedente.
+**Sc. Temp. Description**: represents the description of the template entered in the previous column.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+For everything not detailed in this document about the common functionality of the forms, please refer to the following link [Custom features, Buttons, and Common Fields](/docs/guide/common).

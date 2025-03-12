@@ -1,26 +1,26 @@
 ---
-title: Categorie merceologiche articolo
+title: Item Product Category
 sidebar_position: 10
 ---
 
-La tabella si trova sul percorso **Tabelle > Logistica > Categorie merceologiche articolo**.
+The table can be found at the path **Tables > Logistics > Item Product Category**.
 
-Questa tabella gestisce la codifica delle diverse categorie secondo la logica merceologica, la quale può essere poi associata al prodotto per poterla utilizzare come raggruppamento oppure come dato statistico oppure come funzionalità nei moduli competenti.  
+This table manages the coding of the various categories according to the product logic, which can then be associated with the product to be used as grouping, statistical data, or functionality in the respective modules.
 
-Un esempio di utiizzo lo troviamo all'interno dell'[Anagrafica articolo](/docs/erp-home/registers/items/create-new-items/item-registry/generality) alla voce *Categoria merceologica*.  
+An example of usage can be found within the [Item Registry](/docs/erp-home/registers/items/create-new-items/item-registry/generality) under the item *Product Category*.
 
-La tabella consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+The table allows for the insertion of new records or to search for existing ones to view, modify, or delete them.
 
-**Ricerca Categorie merceologiche articolo**
+**Search Item Product Category**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+The form consists of a filter area and a results area. Once all desired filters are set, simply click the **Search** button to display the results in the results grid.
 
-**Inserimento categoria merceologica**
+**Insert Item Product Category**
 
-Per poter inserire nuove codifiche è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.  
+To insert new codings, you need to click on the first empty row in the grid or press the **New** button.
 
-Per il nuovo record si devono inserire almeno i campi obbligatori richiesti dal programma: un **Codice** alfanumerico e la sua **Descrizione**. 
+For the new record, at least the mandatory fields required by the program must be filled in: an alphanumeric **Code** and its **Description**.
 
-Nella griglia inferiore è possibile inserire le **Descrizioni in lingua** per ciascuna *Categoria merceologica*.
+In the lower grid, you can enter the **Descriptions in Language** for each *Product Category*.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+For everything not detailed in this document on the common operation of forms, please refer to the following link [Custom Features, Buttons, and Fields](/docs/guide/common).

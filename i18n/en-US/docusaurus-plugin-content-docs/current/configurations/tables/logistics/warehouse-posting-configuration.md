@@ -1,18 +1,18 @@
 ---
-title: Configurazione Registrazione
+title: Warehouse Posting Configuration
 sidebar_position: 13
 ---
 
-La tabella si trova sul percorso **Tabelle > Logistica > Configurazione Registrazione**.
+The table is located at **Tables > Logistics > Warehouse Posting Configuration**.
 
-Consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+It allows you to insert new records or search for existing ones to display, modify, or delete them.
 
-**Ricerca Configurazione Registrazione**
+**Search Warehouse Posting Configuration**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+The form consists of a filter area and a results area. Once all the desired filters are set, simply click the **Search** button to view the results in the results grid.
 
-**Inserimento Configurazione Registrazione**
+**Insert Warehouse Posting Configuration**
 
-Per poter inserire nuove codifiche è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.
+To insert new codes, you need to click on the first empty row in the grid or press the **New** button.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+For everything not detailed in this document about the common functioning of forms, refer to the following link [Custom features, buttons, and common fields](/docs/guide/common).
