@@ -1,12 +1,6 @@
 ---
-title: General Overview
+title: Generality
 sidebar_position: 1
 ---
 
-The user can access Production Area Parameters section through the following path: Home > Parameters > Production. These parameters set the whole management of the Production Area.
-
-
-
-
-
-
+The section of parameters for the Production Area can be accessed through the path **Parameters > Production (Parametri > Produzione)** and is used to set up the entire management of the production area.

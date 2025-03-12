@@ -1,99 +1,83 @@
 ---
-title: DN Parameters
-sidebar_position: 3
+title: DDT Parameters (Parametri DDT)
+sidebar_position: 4
 ---
 
-The DN parameters allow the basic setting in order to manage correctly and according to specific conditions belonging to each single company.
+:::tip[Fast Start]
+The table is affected by the [**Fast Start**](/docs/guide/fast-start) procedure.
 
-The ribbon bar represents the Form menu, that is the area in which it is possible to perform actions. The list of possible features is the following: 
+If you intend to manually configure it, refer to the checklist on the linked page.
+:::
 
+The parameters of sales DDT (Delivery Notes) allow for basic settings to manage correctly and according to the specific requests of each individual company. The window related to these parameters is composed of 4 different tabs: General, Fulfillment, Shipping, and Analytical.
 
+### General
 
-| Function | Meaning |
-| --- | --- |
-| Restore Parameters | It enables the user to restore parameters to the initial values.  |
+**Management of double measurement unit**: if active, the two columns Alternative UM and Alternative Quantity will be displayed in the DDT lines, so it will be possible to manage the double unit of measure, always considering that it is the main unit of measure on which checks for fulfillment are made.
 
-#1.1 General Tab
+**Automatic proposal of alternative UM (Proposta automatica UM alternativa):** this flag becomes editable only if the double unit of measure management flag has been activated and allows the alternative unit of measure set in the item registry to be displayed in the DDT item tab, in the dedicated column 'Alternative UM'; if not active, the unit of measure is not proposed.
 
-| Function | Meaning |
-| --- | --- |
-| Propose the Commission for All Items | Not longer managed. |
-| Management of Double UM | If it is set, it indicates that the alternative unit of measure can be managed within delivery note. |
-| Automatic Proposal of Alternative UM | This check can be enabled only if “Double Unit of Measure Management” is active. During the insertion of an item which has an alternative default UM into its Alternatives UM tab register, this UM can be automatically proposed as Alt. Item UM and it is possible to calculate even the alternative quantity by using its conversion factor. |
-| Automatic Proposal of Transport Made by Carrier | If it is set, it means that the transport type will correspond to Vector and it will be possible to propose the default vector. |
-| Def. U.M. Volume   | If it is set, it means that it corresponds to the default unit of measure for volume during the transport calculation of delivery note. |
-| Def. U.M. Weights | If it is set, it means that it corresponds to the default unit of measure for weight during the transport calculation of delivery note. |
-| Control Document Sequence Number and Date | If it is set, it means that it will be possible to verify the date/number sequentiality for delivery notes. |
-| Recover Only for Current Date | If it is set, it indicates that it will be possible to recover the available numbers only regarding the current day. |
-| Automatic Recover | If it is set, it means that it will be possible to propose the first available number automatically.  |
-| Control Availability | If it is set, it means that there will be the possibility to verify the availability of delivery note item. |
-| Exclude Sales Orders | If it is set, it means that the sales order usage will not be considered during the availability calculation of delivery note item.  |
-| Compulsory Availability | If it is set, it means that the delivery note item availability will be obligatory. The quantity could not be higher than the availability.  |
-| View Availability | If it is set, it means that the item availability will be viewed by inserting the quantity on line. |
-| Subcontractor | If it is set, it means that subcontractor documents will be considered during the availability calculation of delivery note item. |
-| Purchase | If it is set, it means that purchase documents will be considered during the availability calculation of delivery note item. |
-| Sales | If it is set, it means that sales documents will be considered during the availability calculation of delivery note item. |
-| Planned Prod. | If it is set, it means that documents regarding resources requirements and production job order will be considered during the availability calculation of delivery note item. |
-| Released Prod. | If it is set, it means that production orders will be considered during the availability calculation of delivery note item. |
-| Warehouse | If it is set, it means that stock records will be considered during the availability calculation of delivery note item. |
-| Search Item Price in All the Default Price Lists | If it is set, it means that the item inserted on delivery note line will be searched even inside price lists specified on customer register, in addition to the default price list. |
-| Compulsory Oper. Code | If it is set, it means that the specification of operator on delivery note header is obligatory. |
-| Use Barcode | If it is set, it means that the item Barcode column of Items grid is managed. |
-| Size and Colour Management | If it is set, it means that the Lot columns of Variants grid are managed. |
-| View Dimensions | If it is set, it means that dimensions columns (Height, Width, Depth) of Items grid are managed. |
-| Recompute Transport | If it is set, it means that the delivery note transport is calculated automatically. |
-| Allow Discounts for the Giveaways Items | If it is set, it means that giveaways items can manage discounts. |
-| Control Integrity | If it is set, it means that it is possible to verify the delivery note integrity.  |
-| External Order Ref. | If it is set, it means that it is possible to manage external references of sales order linked to the delivery note item line. |
-| Block Document Insertion in Public Holidays | If it is set, it means that public holidays are blocked in order to be used. |
-| Line Maxim. No. | It specifies the maximum number allowed in Items grid. |
+**Availability Check (Controllo Disponibilità):** this flag and others related to control, visualization, and obligoriness with the consideration for area are not managed in the current version.
 
-#1.2 Execution Tab
+**Default volume/weight measurement unit (Unità di misura volume/pesi predefinita)**: these measurement units are considered as default UMs to propose in the [Transport](/docs/sales/sales-delivery-notes/insert-delivery-notes/sales-dn) tab of the DDT, as units of volume and weight; the data is modifiable in the documents.
 
-| Function | Meaning |
-| --- | --- |
-| Payments | It specifies the value used for paying the delivery note in case in which there is a multiple orders execution: First Order, Register or Manual Selection. |
-| Recipient | It specifies the value used for recipient of delivery note in case in which there is a multiple orders execution: First Order, Register or Manual Selection. |
-| Control Coherence Between DN Payments and Order | If it is set, it means that there will not possible to execute from orders with different payments. |
+**Search item price in all the defaults price list**: when searching for the price and discounts for an item within a DDT, the system follows rules based on the settings configured in the customer registry, under the *Price Lists* section. If the 'default' option is activated on a specific type of price list, the search for prices and discounts will focus only on that specific type of price list; if the "default" flag is not active, the system will extend the search to all types of price lists present, following an order of priority. In practice, with the 'default' flag active, the system will first look for a valid price list for the predefined type; if no results are found, it will check the other types of price lists in order of the established priority. However, if there is no type of price list set as 'default' in the customer registry and there are only priorities, this parameter will not influence the search, even if active.
 
-#1.3 Unload Tab
+**Propose the commission for the free items**: with this flag, agent commissions will also be proposed for gift item lines as they are for lines of the Coded Item type.
 
-| Function | Meaning |
-| --- | --- |
-| Create Record with Document Date | When it is set, the stock record is performed through the same DN date and it will not necessary to specify the record date into the unload form. |
-| Priority Warehouse and Unload Template from DN Items Lines | When this parameter is set, warehouse and unload template are read by DN lines, on the contrary if it is not set, there will be necessary to use warehouse and template inserted into this parameters form. |
-| Warehouse | It specifies warehouse to be used to unload delivery note when the following parameter Priority Warehouse and Unload Template from DN Items Lines is not active. |
-| Template | It specifies the template to be used in order to unload delivery note when the following parameter Priority Warehouse and Unload Template from DN Items Lines is not active. |
-| Automatic Load/Unload | If it is set, it means that the unload of delivery note will be performed automatically during the activation of Printed flag. |
-| Warning Fictitious Items | If during the delivery note unload this is set, it can be controlled only if on DN there are fictitious items. If there are this items type, a message is given in order to unload DN; by answering yes, DN can be unloaded however. |
+**Allow discounts for the giveaways items**: with this flag, discounts on the line amount will also be applied to gift item lines.
 
-#1.4 Import TabOn this tab the user can specify name and path of file in order to import items from barcode. The import form can be opened from toolbar of DN management into items tab. Through this import it is possible to insert items from file to DN.
+**Check items in exhaustion**: if set, this flag will cause a warning pop-up to appear if items that are set in the registry as Out of Stock and the date on which the item will run out are entered in the DDT; this check prevents selling items that will no longer be produced or restocked.
 
-#1.5 Barcode Import TabOn this tab the user can specify parameters to import data contained in BL_ImpBCAll table. The import form can be opened from toolbar of DN management into items tab. Through this import it is possible to insert items from a table configured on DN.
+**[Enable simplified discount widget](/docs/sales/sales-flow/discount-widget)**: by activating this flag in the Items section, two new columns will be displayed: *Item discounts* and *Item final discounts*. The *Item Discounts* column is editable and shows the discounts applied automatically based on configurations related to the customer, the item, the price list, or the discount category. The user has the ability to enter, modify, or delete discounts directly in this column. To use this widget, it is necessary to not only activate the flag but also specify in the type of DDT which type of discount to use.
 
+**Use customer item**: if set, this flag will insert, in the DDT item grid, the columns for the Code and Customer Description entered in the item registry, Customer tab.
 
+**Use barcode**: if set, this flag will insert, in the DDT item grid, the column to display the item's barcode.
 
-| Function | Meaning |
-| --- | --- |
-| Alternative U.M. | If it is set, it means that the alternative UM column of Import Barcode grid is managed. |
-| Location | If it is set, it means that the Location column of Import Barcode grid is managed. |
-| Customer/Vendor Account | If it is set, it means that the following columns Account, Detail Account, Customer/Vendor Description of Import barcode grid are managed. |
-| Item Price | If it is set, it means that the Price column of Import barcode grid is managed. |
-| Option | If it is set, it means that the Option column of Import barcode grid is managed. |
-| Variant | If it is set, it means that the Variant column of Import barcode grid is managed. |
-| Item Pickup Type | It specifies the item pickup type: Item Class/Code, Lot, Serial Number |
+**Mandatory user code**: this flag makes it mandatory to fill in the *User* field in the header.
 
-#1.6 Picking Tab
+**Block the document insertion in public holidays from the factory calendar**: if active, the system will not allow the entry of the offer on public holidays (the Company's Factory Calendar is checked first, then the Production Capacity Calendar); if not active, the system does not perform any checks and allows the document to be entered.
 
-| Function | Meaning |
-| --- | --- |
-| Turnover Type | It specifies the turnover type to be used during the picking items import within DN. |
-| VAT | It specifies the VAT code to be used during the picking items import within DN. |
+**Recompute transport**: this flag ensures that in the [Transport](/docs/sales/sales-delivery-notes/insert-delivery-notes/sales-dn) tab of the DDT, the totals of weight, volume, and packages of the document lines are shown; without this flag, the fields will not be filled.
 
-#1.7 Analytic TabThese parameters indicate the search priority of cost or profit centres in order to be attributed to DN items. When Recalculate flag is set, cost or profit centres are inserted/updated on items through the chosen priority.
+**External order references**: this flag ensures that the *Our* and *Your reference* fields are transferred from the order lines to the DDT lines.
 
+**Maintain price from SalesOrder for the brackets**: this flag ensures that during the partial fulfillment of an order in the DDT, the same price tier present in the original order is maintained, without any recalculation. For example, if the order specifies a quantity of 100 units that activates a specific price tier, but only 20 units are fulfilled in the DDT, with this flag activated, the DDT will keep the price associated with the original tier, without modifying it based on the quantity actually fulfilled.
 
+### Fulfillment
 
+In this tab, the following fields are present:       
 
+**Payment**: specifies the value used for the payment of the customer DDT in the case of multiple fulfillment of Orders in the DDT: *First order*, *Register*, or *Manual selection*.
 
+**Recipient**: specifies the value used for the recipient of the customer DDT in the case of multiple fulfillment of Orders in the DDT: *First order*, *Register*, or *Manual selection*.
 
+**Control concordance between DN payments and order**: if active, the system will not allow fulfillment from orders with different payments.
+
+**Recalculate CDC/CDP (Ricalcola CDC/CDP)**: in the case where the DDT is generated starting from the customer order with the specific procedure, activating this flag will cause the system to recalculate the cost centers and profit centers if the DDT has been generated from the order, not considering those set in the sales order. If not active, the system will not recalculate these data but retain those entered in the customer order.
+
+**Display fulfillment grid (Visualizzazione griglia evasione):** if active, the flag enables grid mode in the sales order fulfillment form.
+
+**Display tree fulfillment (Visualizzazione tree evasione):** if active, the flag enables tree mode in the sales order fulfillment form.
+
+**Propose Batches**: this flag ensures that at the time of fulfillment, if a different quantity to be fulfilled is entered compared to that present in the source document, the quantity of batches will equal the line quantity in the created document; this avoids the situation where the created document has a line quantity different from that of the batches.
+
+### Shipping
+
+**Create recording with document date**: if active, the stock registration is made with the same date as the DDT, and it will not be necessary to specify the registration date in the shipping form. If not active, it will be necessary to specify the date in the DDT shipping form.
+
+**Priority warehouse and shipping reason for item lines in DDT (Priorità magazzino e causale di scarico alle righe articoli dei DDT)**: if active, the warehouse and shipping reason are read from the DDT lines, while if not activated, the warehouse and reason entered in the subsequent fields (**Warehouse** and **Warehouse reason (Causale di magazzino)**) will be used.
+
+**Automatic load/unload**: if active, the unloading of the DDT will be done automatically upon activation of the Print flag. If not active, unloading must be done with the appropriate button.
+
+**Warning phantom items**: if active, during the unloading of the DDT the system will check if there are any fictitious items and if there are, a message will appear allowing the user to choose whether to complete the process or not; if the answer is affirmative, the entire DDT will be unloaded (except for fictitious items), while if the answer is negative, the DDT will NOT be unloaded.
+
+### Analytical
+
+This TAB specifies the priority for retrieving the Cost Center (CDC) or Profit Center (CDP) in the DDT line.      
+It is possible to modify the priorities using the buttons **Move Up**![](/img/neutral/common/move-up.png) and **Move Down**![](/img/neutral/common/delete-cc.png).     
+*Default values (Valori di default)*: the CDC or CDP is retrieved from the invoiced type if present.     
+For further details, refer to the table [Invoiced Type](/docs/configurations/tables/sales/sales-turnover).      
+If it is not present in the *Turnover type*, the system will look for it in the *Customer contact*. If not present, it will be searched in the item registry and subsequently at the warehouse level.       
+The flag **Evaluate the priority of each dimension (Valuta la priorità di ogni dimensione)** ensures that in the documents the CDC/CDP are grouped by dimension in the Analytical tab.

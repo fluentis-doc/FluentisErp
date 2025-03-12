@@ -1,85 +1,83 @@
 ---
 title: Sales Orders Parameters
-sidebar_position: 2
+sidebar_position: 3
 ---
 
-The sales orders parameters allow the basic setting in order to manage correctly and according to specific conditions belonging to each single company.
+:::tip[Fast Start]
+The table is affected by the [**Fast Start**](/docs/guide/fast-start) procedure.
 
-The ribbon bar represents the Form menu, that is the area in which it is possible to perform actions. The list of possible features is the following: 
+If you intend to configure manually, please refer to the checklist on the linked page.
+:::
 
+The parameters of customer orders allow for basic settings to manage correctly and according to the specific requests of each individual company. The window related to these parameters consists of 4 different tabs: General, Fulfillment, Shipping, and Analytical.
 
+### General
 
-| Function | Meaning |
-| --- | --- |
-| Restore Parameters | It enables the user to restore parameters to the initial values. |
+**Management of double measurement unit**: if active, in the order lines, the two columns Alternative UM and Alternative Quantity will be displayed, allowing the management of the double unit of measure, always considering that the checks for fulfillment are based on the main unit of measure.      
 
-#1.1 General Tab
+**Automatic proposal of alternative UM (Proposta automatica UM alternativa):** this flag becomes editable only if the double unit of measure management flag is activated and allows the alternative unit of measure set in the item registry to be displayed in the articles tab of the order, in the specific column 'Alternative UM'; if not active, the unit of measure will not be proposed.      
 
-| Function | Meaning |
-| --- | --- |
-| Propose the Commission for all Items | No longer managed. |
-| Management of Double UM | It signals the fact that the alternative unit of measure is managed within the sales order. |
-| Automatic Proposal of Alternative UM | If active, it is possible to manage the alternative unit of measure within sales order. |
-| Consider the Numeration Gaps | If active, it will be possible to recover available numbers. |
-| Mandatory User Code | If active, it is necessary to specify the operator on sales order header. |
-| Control Document Sequence, Number and Date | If active, it will be possible to verify date/number sequentiality for sales orders. |
-| Recover Only for Current Date | If active, it will be possible to recover available numbers only regarding the current day. |
-| Automatic Recover | It signals the fact that the first available number will be proposed automatically. |
-| Automatic Insertion of Variants on Variants Attributes | If active, variants of attributes will be inserted into register automatically. |
-| If active, variants of attributes will be inserted into register automatically. | If active, during the insertion of an item there will be the possibility to substitute it starting from the first level of its list, if the last one exists. |
-| Control Availability | If active, it will be possible to verify the availability of sales order item. |
-| Exclude Sales Orders | If active, the usage of sales orders will not be considered during the calculation of sales order item availability. |
-| Compulsory Availability | If active, the sales order item availability will be obligatory, that is, that the quantity could not be higher than the availability.  |
-| View Availability | If active, it will be possible to view the availability at the level of item line during the insertion of quantity. |
-| Subcontractor | If active, subcontractor documents will be considered during the calculation of sales order item availability.  |
-| Purchase | If active, purchase documents will be considered during the calculation of sales order item availability.  |
-| Sales | If active, sales documents will be considered during the calculation of sales order item availability.  |
-| Planned Prod. | If active, documents of resources requirements and production job order will be considered during the availability calculation of sales order item. |
-| Released Prod. | If active, the production order will be considered during the availability calculation of sales order item. |
-| Warehouse | If active, the stock records will be considered during the availability calculation of sales order item. |
-| Search Item Price in All the Default Price Lists | If active, the item inserted into sales order line will be searched even within price lists specified on customer register, in addition to the default price list. |
-| Use Barcode | If active, the item Barcode column of items grid can be viewed and managed. |
-| Use Customer Item | If active, Customer Item and Customer Item Description columns of the Items grid can be viewed and managed. |
-| Size and Colour Management | If active, Lot columns of Variants grid are managed. |
-| View Dimensions | If active, dimensions columns (Hight, Width, Depth) of Items grid are managed. |
-| Allow Discounts for the Giveaways Items | If active, giveaway items can manage discounts. |
-| Control Integrity | If active, it is possible to verify the data integrity of sales order. |
-| Obligatory Relation Between Packages and Qty | If active, it will be possible to verify the sales order line related to packages number of item register. |
-| Block Document Insertion in Public Holidays | If active, it is not possible to use public holidays. |
-| Propose Economic Lot | If active, it is possible to propose the economic lot of item register for quantity of sales order line. |
-| Link Cust./Prod. Order | If active, the quantity of sales order line will be the same as the production job order one, with which it is linked. |
-| Join Attributes | If active, it will be possible to insert both customer attributes and item register attributes as sales order line ones. |
-| Block Attributes | If active, it will be possible to block the grid about sales order item attributes. |
+**Availability Check (Controllo Disponibilità):** this flag and others related to control, visibility, and mandatory checks by area are not managed in the current version.     
 
-#1.2 Unload Tab
+**Order Reference (Riferimento Ordine):** if this flag is set, the Reference to the order will be inserted in the title of the project created from the order; the composition note must be specified in the *Description* field according to the parameters described in the label.     
 
-| Function | Meaning |
-| --- | --- |
-| Priority of Parameters Inserted for Each Order Line | No longer managed. |
-| Warehouse | No longer managed. |
-| Template | No longer managed. |
+**Price search for items in all predefined price lists (Ricerca prezzi articoli in tutti i listini predefiniti):** when searching for the price and discounts for an item within an order, the system follows rules based on the settings configured in the customer registry under the *Price Lists* section. If the 'default' option is activated on a specific type of price list, the search for prices and discounts will focus only on that specific type of price list; if the "default" flag is not active, the system will extend the search to all types of existing price lists, following a priority order. In practice, with the 'default' flag active, the system will first look for a valid price list for the predetermined type; if no results are found, it will check the other types of price lists in the order of priority entered. However, if there is no type of price list set as 'default' in the customer registry and there are only priorities, this parameter will not affect the search, even if active.       
 
-#1.3 Configurator Tab
+**Propose commission for promotional items (Proponi provvigione per gli articoli omaggio):** with this flag, agent commissions will also be proposed for promotional item lines as for Codified Article lines.     
 
-| Function | Meaning |
-| --- | --- |
-| Configurator | It specifies the Configurator HTTP address.  |
-| Sales Orders | It specifies the WSOC HTTP address |
-| Version | It specifies the configurator type used: Configurator or Visual Tailor. |
+**Allow discounts for promotional items (Consentire sconti per gli articoli omaggio):** with this flag, discounts will be applied to the line amount even for promotional item lines.     
 
-#1.4 Execution Tab
+**Check availability (Controlla disponibilità):** if activated, the system will check the availability of the item.       
 
-| Function | Meaning |
-| --- | --- |
-| Payments | It specifies the value used to pay the sales order in case of a multiple sales job order execution: First order, Register or Manual selection. |
-| Recipient | It specifies the value used for recipient of sales order in case of a multiple sales job order execution: First order, Register or Manual selection. |
-| Execution from Orders Search Group for Payment Type and Terms | It specifies the fact that the sales orders will be grouped per type and payment solution during the direct execution on delivery notes or invoices. |
-| Execution from Orders Search Group for Destination | It specifies the fact that sales orders will be grouped for recipient and destination of direct execution in delivery notes or invoices. |
+**Mandatory item pack count with quantity (Obbligo rapporto colli articolo con quantità):** if set, the flag forces the user to enter a quantity corresponding to or a multiple of the number of packs defined in the *Weights/Dimensions* tab of the item registry; if the quantity is not the pack count or a multiple, the message will appear: “Item not sellable in quantity less than or not a multiple of."      
 
-#1.5 Analytic TabIt specifies the priority for the CC/PC search: Turnover type, Register, Items register or Warehouse.
+**Propose economic batch (Proponi lotto economico):** if the flag is set, the economic batch is proposed as the quantity, and if the quantity is less than the economic batch, the message “The quantity cannot be less than...” is displayed.       
 
+**Check for items running out (Verifica articoli in esaurimento):** if set, this flag will show a warning pop-up if items that have the flag in Registry set to Running Out and the date when the item is running out are entered in the order; this check prevents selling items that will no longer be produced or restocked.      
 
+**[Enable simplified discount widget](/docs/sales/sales-flow/discount-widget):** by activating this flag in the Articles section, two new columns will be displayed: *Item discounts* and *Item final discounts*. The *Item Discounts* column is editable and shows discounts automatically applied based on the customer, item, price list, or discount category settings. The user has the ability to insert, modify, or delete discounts directly in this column. To use this widget, it is necessary to not only activate the flag but also specify which type of discount to use in the order type.     
 
+**Use customer item (Uso articolo cliente):** if set, this flag will insert, in the articles grid of the order, the columns for the Code and Customer Description entered in the item registry, Client tab.       
 
+**Use barcode (Uso barcode):** if set, this flag will insert, in the articles grid of the order, the column to show the item's barcode.     
 
+**Mandatory operator code (Codice operatore obbligatorio):** this flag makes it mandatory to fill in the *Operator* field in the header.     
 
+**Block document entry on holidays as per factory calendar (Blocca inserimento documento in date festive da calendario di fabbrica):** if active, the system does not allow the insertion of the offer on holidays (the Factory Calendar of the company is checked first, then the Production Capacity Calendar); if not active, the system does not perform any checks and allows for document entry.     
+
+**Explode bill of materials (Esplodi distinta base):** if active, when an item is entered, it will be replaced by the first level of its bill of materials, if it exists; thus instead of the “Finished product” item, the order will be populated with the bill of materials of this item.         
+
+**Propose commercial data for manually exploded bill of materials (Proponi Dati commerciali per distinta base esplosa manualmente):** if active, this flag indicates that for the first-level components entered through the flag “Explode bill of materials,” list prices, discounts, and commissions will be proposed as for coded items.         
+
+**Management of Bill of Materials Version (Gestione Versione Distinta Base):** if active, the flag enables the Version column of the bill of materials in the articles tab to allow the selection of a version different from the default one automatically used.        
+
+**Do not group lines when inserting from bill of materials (Non raggruppare le righe quando inserisci da distinta base):** if active, the flag allows inserting the first-level components of the bill of materials in different lines even if they have the same material code.        
+
+### Fulfillment
+
+In this tab, the following fields are present:       
+
+**Payment (Pagamento):** specifies the value used for the payment of the customer order in the case of multiple fulfillment of projects in Order: *First order*, *Register*, or *Manual selection*.
+
+**Recipient (Destinatario):** specifies the value used for the recipient of the customer order in the case of multiple fulfillment of projects in Order: *First order*, *Register*, or *Manual selection*.
+
+**Grouping by type and payment solution (Raggruppamento per tipo e soluzione pagamento):** specifies that customer orders will be grouped by type and payment solution when fulfilling from the Orders search form with the buttons Evasion DDT or Evasion invoices.       
+
+**Grouping by destination (Raggruppamento per destinazione):** specifies that customer orders will be grouped by recipient and destination when fulfilling from the Orders search form with the buttons Evasion DDT or Evasion invoices.       
+
+**Display fulfillment grid (Visualizzazione griglia evasione):** if active, the flag enables grid mode in the sales order fulfillment form.      
+
+**Display tree fulfillment (Visualizzazione tree evasione):** if active, the flag enables tree mode in the sales order fulfillment form.
+
+### Shipping
+
+**Priority of parameters entered for each order line (Priorità parametri inseriti per ogni riga ordine):** if active, the warehouse and the shipping reason are read from the order lines, while if not activated, the warehouse and the reason entered in the subsequent fields (*Warehouse* and *Warehouse reason (Causale di magazzino)*).
+
+### Analytical
+
+This TAB specifies the priority for retrieving the Cost Center (CDC) or Profit Center (CDP) in the order line.      
+It is possible to modify the priorities using the buttons **Move Up**![](/img/neutral/common/move-up.png) and **Move Down**![](/img/neutral/common/delete-cc.png).     
+*Default values (Valori di default)*: the CDC or CDP is retrieved from the invoiced type if present.     
+For further details, refer to the table [Invoiced Type (Tipo Fatturato)](/docs/configurations/tables/sales/sales-turnover).      
+If it is not present in the *Turnover type*, the system will look for it in the *Customer contact*. If not present, it will be searched in the item registry and subsequently at the warehouse level.       
+The flag **Evaluate the priority of each dimension (Valuta la priorità di ogni dimensione)** ensures that in documents, the CDC/CDP are grouped by dimension in the Analytical tab.

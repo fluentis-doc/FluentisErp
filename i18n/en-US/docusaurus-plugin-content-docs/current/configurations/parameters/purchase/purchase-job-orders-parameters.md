@@ -1,28 +1,19 @@
 ---
 title: Purchase Job Orders Parameters
-sidebar_position: 3
+sidebar_position: 6
 ---
 
-The purchase job orders parameters allow the basic setting in order to manage correctly and according to specific request of every single company.
+The parameters of purchase orders allow for basic settings to manage correctly and according to the specific requests of each individual company.
 
-The ribbon bar represents the Form menu, that is the area in which it is possible to perform actions. The possible features list is the following: 
+#### Specific Fields (Campi specifici)
 
+- **Mandatory evasion**: when set, and the user is on the header of the supplier order and switches to the *Items* tab, the *Fulfillment from order (Evasione da commessa)* form automatically opens, thus the user is required to fulfill the open orders for the specified supplier in the order.
 
+- **Escaping of obligatory orders**: when set, and items are entered in the *Items* tab, it checks that the item is present in an order from the selected supplier.
 
-| Function | Meaning |
-| --- | --- |
-| Restore Parameters | It enables the user to restore parameters to the initial values. |
-
-#1.1 General Tab
-
-| Function | Meaning |
-| --- | --- |
-| Compulsory Execution | When it is set and the user is located on header of Purchase Order, the user can pass to items tab automatically and in this way it is possible to open an Execution from Job Order form. For this reason the user is obliged to execute opened job orders regarding the specified order. |
-| Compulsory Items Execution from Job Order | When it is set and some items are inserted on items tab, it is possible to control that the item is located in a predefined vendor job order. |
-| Fixed Quantity | When it is set, it is not possible to execute the job order for an higher quantity compared to the one inserted on job order. |
+- **Fixed quantity**: when set, the order cannot be fulfilled for a quantity greater than that entered in the order.
 
 
+#### Specific Button (Pulsante specifico)  
 
-
-
-
+> **Refresh**: allows restoring the parameters to their initial values.
