@@ -28,8 +28,6 @@ Următoarele opțiuni pentru buffer și toleranță de timp pentru client sunt d
 > **Buffere min-max DDMRP**: folosesc doar zona roșie și zona verde.           
 >> **Toleranţă timp clienţi**: este timpul de livrare exprimat în zile pe care clienții îl consideră în general acceptabil (se activează doar după selectarea unui tip de buffer DDMRP).    
 
-
-
 **Tip aprovizionare**: permite diferențierea tipului ordinelor planificate care vor fi create iar utilizator poate alege unul din următoarele tipuri de aprovizionare a articolului:  
 > **Achiziții**: necesarul va crea un ordin planificat de achiziții pentru articolul ales;  
 > **Producție**: necesarul va crea un ordin planificat de producție pentru articolul ales;  
@@ -73,12 +71,9 @@ Următoarele opțiuni pentru buffer și toleranță de timp pentru client sunt d
 
 În această secțiune se poate insera articolul a cărui *listă de componente* trebuie să fie de referință pentru planificarea unei eventuale comenzi de producție pe articol/variantă. Deci, se va putea insera articolul (inclusiv clasa, codul și descrierea), unitatea de măsură și, eventual, varianta.
 
-**Parametrii producție**  
-Secțiunea este activă dacă politica gestională a articolul este *Producție*. Aici pot fi inserate următoarele câmpuri:
+#### Parametrii producție  
 
 > **Lead Time**: în acest câmp utilizatorul care nu utilizează ciclurile de producție poate insera un lead time de producție pentru articolul ales, timp calculat în zile lucrătoare bazat pe calendarul de fabrică și care nu variază atunci când este modificată cantitatea de produs;
-
-> **Unitate de capacitate productivă**: se inserează capacitatea productivă pentru care trebuie să fie considerat lead time-ul articolului;
 
 > **Lead Time Fix**: în acest câmp, utilizatorul poate decide să considere un timp de execuție fix și nu calculat pe baza ciclurilor de lucru (prin urmare, sistemul nu va considera lead time setat în ciclul de lucru, ci va lua în considerare această valoare), introducând valoarea în zile lucrătoare și activând această modalitate prin flag. 
 Dacă flagul este activ, timpul calculat va fi dat de suma valorii **Lead Time Fix** (introdusă lângă flag) și valoarea **Lead Time Analiză** din tabul [Calitate](/docs/erp-home/registers/items/create-new-items/item-registry/quality) al *Registrului articolului*, deci în acest caz timpul pe faze nu este considerat, iar data de început este recalculată pe baza *Calendarului de Fabrică*. Dacă flagul nu este activ, data de început va fi recalculată luând în considerare fazele, fazele alternative și *Calendarul centrelor de lucru*.
@@ -98,13 +93,13 @@ Dacă flagul este activ, timpul calculat va fi dat de suma valorii **Lead Time F
 > **Zile perioadă blocată**: protejează comenzile deja lansate în această perioadă de timp, în timp ce cele planificate sunt regenerate;
 
 > **Toleranță în zile/procent din lead time**: determină perioada de timp în care se poate anticipa sau posticipa (după această limită MRP propune eliminarea documentului) și până când se comunică eventuala depășire a unui articol. Se poate exprima în zile sau procent din leadtime. Dacă, de exemplu, pentru un articol sunt definite 90 de zile de toleranță, documentele relative acestui articol specific vor putea fi anticipate sau posticipate cu maxim 90 de zile, dacă excesul va depăși această limită, MRP va propune eliminarea documentului și crearea unuia nou în data în care a fost identificat excesul. În plus, pentru articolul specific, o eventuală disponibilitate în exces va putea fi disponibilă până la un maxim de 90 de zile.
-
+Dacă acest parametru este activ, MRP va modifica datele următoarelor tipuri de documente: comenzi planificate (dacă nu sunt obligatorii), comenzi de producție (doar cele care nu au semnalări), cereri de achiziție, ordine în sistem lohn (doar dacă nu au flagul *deja listat*), comenzi furnizor (dacă nu sunt deja confirmate), anticipându-le sau amânându-le cu o valoare maximă egală cu cea indicată.   
 > **Declarare material manual obligatorie**: este utilizată în Fluentis MES. Dacă este activată, împreună cu **Declarare cantitate material obligatorie** din  [Resurse de producție](/docs/production/mes/production-resources) prezent în MES, determină ca în tabul *Materiale* din Fluentis MES articolul să fie propus cu cantitatea zero, obligând astfel utilizatorul să introducă manual o valoare pentru a continua.
 
-**Citire liste/cicluri**  
+#### Citire liste/cicluri
 În secțiune utilizatorul poate insera versiunea listei și a ciclcului de producție care trebuie să fie considerată de procedura MRP pentru articolul ales.
 
-**Consideră disponibilitățile din**  
+#### Consideră disponibilitățile din  
 În secțiune utilizatorul are posibilitatea să decidă care sunt ariile gestionale în care documentele trebuie să fie luate în considerare în timpul elaborării procedurii MRP. Ariile sunt: Achiziții, Vânzări, Gestiune (și în acest caz se poate decide dacă trebuie să fie considerate sau nu stocurile loturilor cu statusul nedisponibil cu ajutorul flag-ului relativ), Sistem lohn, Planificare (deci Comenzi de producție, ordine planificate de achiziție, Sistem lohn și/sau Producție), Producție lansată (deci Ordine de producție).
 
 **Consideră loturi cu statusul nedisponibil**: dacă este activ (editabil doar dacă se alege ca disponibilitatea să provină din *Gestiune*), aplicația va considera și loturile care vor avea statusul *Nedisponibil*;
@@ -127,7 +122,4 @@ Deci, în acest tab, se vor putea seta gestiunile relative la *Materii prime*,  
 
 Gestiunile **W.I.P.** sunt depozite de tranziție, prin care mărfurile trec și apoi se mută în următorul depozit *General*.
 
-Aceleași gestiuni sunt și în [Parametri ordine de producție](/docs/configurations/parameters/production/production-orders-parameters/production-orders-parameters-intro).
-
-
-
+Pentru a putea seta unul dintre aceste depozite, va fi suficient să selectați din combo-box, gestiunea și șablonul (precodificate în tabelele respective *Gestiuni* și *Șabloane*) pe care doriți să le setați.  
