@@ -1,34 +1,14 @@
 ---
-title: Euro Fixed Exchange Rates
+title: Fixed Rate for EURO
 sidebar_position: 3
 ---
 
-The table has the euro conversion fixed exchanges: if the user sets the euro value, the program will continue automatically with the calculation of the reverse value, that will be used in similar values calculations of the management software. 
+The table presents the list of fixed exchange rates for conversion to the euro: by setting the value of the euro, the program will automatically proceed to calculate the inverse value, which will then be used in the calculations of the counter values in the management system.
 
+#### Specific Fields (Campi specifici)
 
+**Currency**: represents the currency code (reference table: );
 
-| Function | Meaning |
-| --- | --- |
-| Currency | Currency code |
-| Currency Description | Currency Description |
-| Currency Date | Currency Date |
-| 1 EURO = | 1 EURO value = reference currency |
-| Reverse Exchange | Calculation of the reverse exchange  |
+**1 EURO**: value of 1 EURO = reference currency.
 
-RIBBON BAR: the ribbon bar represents the Form menu, that is the area in which it is possible to operate on previous recordings or generate new ones. The possible features list is the following:
-
-
-
-| Function | Meaning |
-| --- | --- |
-| Search | It is a command, that is necessary in order to perform the search of an exchange and even with the possibility to filter information according to the currency and from date to date fields. |
-| Insertion | It is a command, that is necessary in order to insert a new euro fixed exchange |
-| Delete | It is a command, that is necessary in order to delete an exchange |
-| Preview | It is a command, that is necessary in order to perform the preview of the euro fixed exchanges |
-| Print | It is a command, that is necessary in order to perform the euro fixed exchanges print |
-
-
-
-
-
-
+**Reverse exchange**: calculation of the inverse exchange rate.

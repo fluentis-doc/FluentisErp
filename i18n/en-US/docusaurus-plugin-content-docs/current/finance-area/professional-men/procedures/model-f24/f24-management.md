@@ -33,7 +33,7 @@ In the header of the model, it is possible to fill in the fields for any **Bank 
 At this point, it is possible to press the **Accounting** button to automatically generate the entry that records the bank outflow and the reversal of the accounts (automatically fed) where the debt for withholding taxes to be paid and VAT to be paid has been loaded.
 
 :::tip[Note]
-The accounts automatically used to load VAT debt and debt for withholding taxes are set, respectively, in the [**accounting parameters**](/docs/configurations/parameters/finance/accounting-parameters#conti) regarding VAT, and in the [**Withholding tax Types**](/docs/configurations/tables/finance/withholding-tax-types.md) table for withholding taxes, with default accounts that may have been overwritten during [**payment accounting parameters**](/docs/finance-area/professional-men/accounting/payments-accounting/parameters).
+The accounts automatically used to load VAT debt and debt for withholding taxes are set, respectively, in the [**accounting parameters**](/docs/configurations/parameters/finance/accounting-parameters#conti) regarding VAT, and in the [**Withholding tax Types**](/docs/configurations/tables/finance/withholding-tax-types) table for withholding taxes, with default accounts that may have been overwritten during [**payment accounting parameters**](/docs/finance-area/professional-men/accounting/payments-accounting/parameters).
 :::
 
 | Function | Extended Description |

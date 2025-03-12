@@ -1,30 +1,21 @@
 ---
-title: Groups of Adjustment
+title: Groups of adjustment
 sidebar_position: 6
 ---
 
-:::note Path 
-**Tables > Controlling > Analytic Accounting > Groups of Adjustment**
+The form is located at the path: **Tables (Tabelle) > Controlling > Analytical Accounting (Contabilità analitica) > Groups of adjustment (Gruppi di conguaglio)**
 
-Note:
-For everything not detailed in this document regarding the common operation of forms, please refer to the following link [Custom features, buttons, and common fields](/docs/guide/common).
-
-:::
-
----
-
-:::tip Note 
+:::tip Note (Nota)
 This table is for the exclusive use of companies that have set up *Controlling*.
 :::
 
-Inside this table, it is possible to code groupings of accounts useful for managing the specific reporting for controlling. 
-Some accounts are not used directly by controlling at first, but only indirectly and subsequently: The groups of adjustment serve to identify logical groups to which individual costs for the adjustments made twice a year or only at the end of the fiscal year can be assigned, in order to group them appropriately in the ***Control Values*** mask and verify their balance with accounting at the end of the period.
+Within this table, it is possible to code groupings of accounts useful for managing reporting specific to controlling. Some accounts are not used directly in the first instance by controlling but only indirectly and retrospectively: Settlement groups serve to identify logical groups to which individual costs for settlements that we will do inter-annually or only at the end of the financial year should be assigned, in order to group them appropriately in the **Control Values** mask and verify their reconciliation with accounting at the end of the period.
 
-The available fields are:
-- ***CODE***
-- ***DESCRIPTION***
-- ***BALANCE TYPE***: the latter is crucial for the detail accounts of initial/final inventories, for which two specific categories must be strictly defined.
+#### Specific Fields:
+- **Code**
+- **Description**
+- **Balance type**: this is fundamentally important for the sub-accounts of opening/closing inventories, for which two specific categories must be defined.
 
-:::tip Note 
-In particular, the ***Inventory Accounting*** procedure for Controlling values the initial and final inventories of each single period (month) being processed in the year in the off-balance records area. When requesting, in the Reporting module, the amounts of the initial and final inventories for the first half of the year YYYY, ***FluentisERP*** **must** know which accounts to read only the data from the initial period of January and which to read only from the final period of June; otherwise, there would be sums of 6 months of initial inventories and 6 of final inventories, completely affecting the processing!
+:::tip Note (Nota)
+In particular, the **Inventory accounting** procedure for Controlling values the opening and closing inventories of each individual period (month) being processed in the year in the extrabudgetary records of the area. When later requesting, in the Reporting module, the amounts of the opening and closing inventories for the first half of the year YYYY, **FluentisERP** **must** know which accounts to read only the opening period data for January and which to read only the closing period data for June, otherwise you would get the sums of 6 months of opening inventories and 6 of closing inventories, completely compromising the processing!
 :::

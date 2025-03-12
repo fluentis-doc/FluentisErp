@@ -1,31 +1,16 @@
 ---
-title: Maturity Values Position
+title: Mat. Values Position
 sidebar_position: 17
 ---
 
-This table enables the user to assign a position to a maturity values list from the maturity values mask, selected through the command ‘Change maturity values position'.
+This table allows for freely defining entries to be attributed to items in order to mark, for example, a specific situation or status.
 
+For example: Disputed (Contestata), suspended (sospesa), to be verified (da verificare), etc.
 
+The position is assigned to the items (also in bulk) from the *Items* form through the button (in the ribbon bar) *Change Mat. Values Position (Cambia posizione partite)*.
 
-| Function | Meaning |
-| --- | --- |
-| Code  | Maturity values position code |
-| Description | Maturity values position description |
+#### Specific fields (Campi specifici)
 
-RIBBON BAR: the ribbon bar represents the Form menu, that is the area in which it is possible to operate on previous recordings or generate new ones. The possible features list is the following:
+**Code**: code for the position of the items.
 
-
-
-| Function | Meaning |
-| --- | --- |
-| Search | Button to look for the maturity values position through the fields: code and description |
-| Insertion | Button to insert a new maturity values position |
-| Delete | Button to delete the maturity values position, where the user is located |
-| Preview | Button to perform the preview |
-| Print | Button to print |
-
-
-
-
-
-
+**Description**: description of the position of the items.

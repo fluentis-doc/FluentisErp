@@ -1,12 +1,6 @@
 ---
-title: SFA Cash Register Template
+title: SFA Cash Register Templates
 sidebar_position: 6
 ---
 
-In this table it is possible to encode templates for Sales Force Automation management, that is a module no longer used.
-
-
-
-
-
-
+Within this table, the reasons for managing Sales Force Automation are codified, a module no longer in use.

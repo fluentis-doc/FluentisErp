@@ -1,31 +1,19 @@
 ---
-title: Items Accounting Types
+title: Items accounting types
 sidebar_position: 23
 ---
 
+The table supports the procedure that defines one or more alternative accounting entries to the counterpart account directly linked to the sales revenue item in the corresponding table.
 
+*Coding examples (Esempi di codifica)*:
+XUE: Extra UE -> it will then be matched with a revenue account "Foreign" and linked to the profiles of foreign customers to avoid manually changing the sales revenue from "Italy" to foreign for every item that automatically reports the main sales revenue item (Revenues Italy, for example).
 
-| Function | Meaning |
-| --- | --- |
-| Code | Identification code of articles accounting type |
-| Description  | Description of articles accounting type |
-| Customer | The possibility to activate the field of articles accounting on customer |
-| Vendor | The possibility to activate the field of articles accounting on vendor |
+For more details see [**here**](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/finance).
 
-RIBBON BAR: the ribbon bar represents the Form menu, that is the area in which it is possible to operate on previous recordings or generate new ones. The possible features list is the following:
+**Code**: identification code of the type of article accounting.
 
+**Description**: description of the type of article accounting.
 
+**Client**: to activate the article accounting field on the Customer.
 
-| Function | Meaning |
-| --- | --- |
-| Search | Button to look for the articles accounting type through the fields: code and description |
-| Insertion | Button to insert the articles accounting type |
-| Delete  | Button to delete the articles accounting type, where the user is located |
-| Preview  | Button to perform the preview |
-| Print  | Button to print |
-
-
-
-
-
-
+**Supplier**: to activate the article accounting field on the Supplier.

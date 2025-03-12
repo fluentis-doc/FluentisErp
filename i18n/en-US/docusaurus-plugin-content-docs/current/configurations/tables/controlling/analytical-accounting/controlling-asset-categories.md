@@ -1,63 +1,50 @@
 ---
-title: Fixed Asset Category for Controlling
+title: Fixed asset category for controlling
 sidebar_position: 2
 ---
 
-:::note Path
-**Tables > Controlling > Analytic Accounting > Fixed Asset Category for Controlling**
-
-Note:
-For anything not detailed in this document regarding the common functionality of forms, please refer to the following link [Custom features, Buttons, and Common Fields](/docs/guide/common).
-
-:::
-
----
+The form can be found at the path: **Tables > Controlling > Analytical Accounting > Fixed asset category for controlling (Tabelle > Controlling > Contabilità analitica > Categorie cespiti per il controllo)**
 
 :::tip Note
-This table is dedicated to companies that have activated the *Controlling* management, but it is not mandatory if one wishes to apply accounting logic for the valuation of depreciation in management control.
+This table is dedicated to companies that have activated *Controlling* management, but it is not mandatory if accounting logic for valuating depreciation in management control is to be applied.
 :::
 
-In this table, we will identify the various types of calculations we want to use in the processing of technical depreciation for controlling: the management control logic, relating to fixed assets, diverges from accounting logic in order to utilize principles linked, for example, to the quantities produced by a certain machine, rather than to a buy back value. By doing this, distortions related, for example, to accounting depreciation criteria, which are heavily influenced by tax logic, are avoided.
+In this table, we identify the various calculation types that we want to use in processing technical depreciations for controlling: the management control logics, regarding assets, differ from accounting logics in order to use logic related, for example, to the quantities produced by a specific machine, rather than a repurchase value. This avoids distortions related, for example, to accounting depreciation criteria that are heavily influenced by tax rules.
 
-Table Fields
+#### Specific Fields
 
-- ***CODE*** of agent category 
+- **Code** of the category
 
-- ***DESCRIPTION*** of agent category 
+- **Description** of the category
 
-- ***COST DETAIL ACCOUNT*** and ***FUND DETAIL ACCOUNT*** to use: these could be the same detail accounts associated with accounting fixed asset categories, in order to operate end-of-year reconciliations between the two calculation logics, rather than specific controlling detail accounts that are not used in accounting.
+- **COST SUBACCOUNT (SOTTOCONTO DI COSTO)** and **FUND SUBACCOUNT (SOTTOCONTO DEL FONDO)** to use: these could be the same subaccounts associated with accounting asset categories, in order to perform year-end adjustments between the two calculation logics, or specific controlling subaccounts that are not used in accounting.
 
-:::tip note
-In case specific detail accounts separate from those of general ledger are to be used in controlling, it is advisable to define a specific *Account Type* with the *Controlling* flag set, as these detail accounts cannot be used even mistakenly in general ledger records.
+:::tip Note
+In cases where it is desired to use specific subaccounts in controlling, separate from those of general accounting, it is recommended to define a specific *Account type* with the *Controlling* flag set, as these subaccounts cannot even mistakenly be used in general accounting entries.
 :::
 
-
-- ***CALCULATION BASE*** we can choose between:
+- **Calculation base** we can choose from:  
     - *Asset value*, which is the same as accounting
-    - *Objective value*, an off-balance sheet value
-    - *Buy back value*, a specific field for controlling
+    - *Objective value*, given off-book
+    - *Repurchase value*, a specific field for controlling
 
-- ***CALCULATION TYPE*** can be one of 5 different types:
-    - *Percentage*: according to the percentage for controlling set for the individual fixed asset
-    - *Perpetual percentage*: like the previous one but without checks on the balance to be depreciated
-    - *Quantity*: for fixed assets that have a useful life tied to a theoretical produced quantity (e.g., a mold that can produce a certain number of units)
-    - *Perpetual quantity*: like the previous one, but without checking if the total theoretical quantity has been reached
-    - *Completely in the year*: to fully depreciate the fixed asset in the year of purchase.
+- **CALCULATION TYPE (TIPO DI CALCOLO)** can be of 5 different types:  
+    - *Percent Completed*: according to the percentage for controlling set in the individual asset
+    - *Perpetual percentage*: like the previous one but without checks on the remaining balance to be depreciated
+    - *Quantity*: for assets that have a useful life related to a theoretical quantity produced (e.g. a mold that can produce a certain number of impressions)
+    - *Quantity perpetuates*: like the previous one, but without checking if the total theoretical quantity has been reached
+    - *Completely in the year*: to fully depreciate the asset in the year of purchase.
 
-- ***PERCENTAGE*** we can set the percentage of this category, which will be reported on the individual fixed asset, or leave the field blank to enter it each time within the fixed asset
+- **Percent Completed** we can set the percentage for this category, which will be indicated on the individual asset, or leave the field blank to enter it each time within the asset.
 
-- ***USE ACTUALIZATION PERCENTAGE*** The flag, also reflected in the corresponding tab *Depreciation for Controlling* present in the fixed asset sheet, if activated, causes the fixed asset value to be increased year by year based on the value set in the *Actualization Percentage* field in the ** [*Accounting Parameters*](/docs/configurations/parameters/finance/accounting-parameters) **.
+- **Use Actualization Percentage** The flag, also shown in the corresponding tab *Depreciation for controlling* in the asset sheet, when activated, allows the asset value to be increased year by year based on the value set in the *Actualization Percentage* field in the **[*Accounting Parameters*](/docs/configurations/parameters/finance/accounting-parameters)**.
 
-- ***RECREATE CONTROLLING VALUES*** is typically needed if there is uncertainty about the off-balance sheet criteria to apply to the calculation of technical depreciation. Since the processing of depreciation will start from year YYYY, ***FluentisERP*** will first have to calculate the leftovers as of the end of year YYYY-1. If percentages or logics are changed, it may then be necessary to reset this starting data to restart the processing from scratch.
+- **Recreate controlling values** is typically needed in cases where there is uncertainty about the extra-accounting criteria to be applied to the calculation of technical depreciations. Since the processing of depreciations will start from year YYYY, **FluentisERP** must first calculate the balances at the end of year YYYY-1. If percentages or logics are changed, it may therefore be necessary to reset this starting data to restart the calculations.
 
-:::danger ATTENTION
-Be cautious with the changes made to these categories: for example, if we set a flag and save the row to confirm, ***FluentisERP*** will ask if we want to update the fixed assets of this category. We must be careful that if we confirm the operation and we are in a category with percentage calculation but *without the percentage set*, the system will also reset the percentages in the fixed assets.
+:::danger WARNING
+Be cautious with the changes made to these categories: for example, if we set a flag and save the row to confirm, **FluentisERP** will ask us if we want to update the assets in this category. We must be careful that if we confirm the operation and are in a category with percentage calculation but *without the percentage set*, the system will also reset the percentages in the assets.
 :::
 
----
-
 :::tip Note
-
-The categories entered in this table, with their respective settings, will then be called within the [**fixed asset sheets**](/docs/finance-area/fixed-assets/fixed-assets-management) in the *Depreciation for Controlling* tab, to associate each individual fixed asset with the category.
-
+The categories entered in this table, along with their settings, will then be referenced within the [**asset sheets**](/docs/finance-area/fixed-assets/fixed-assets-management) in the *Depreciation for controlling* tab to associate the individual asset with the category.
 :::

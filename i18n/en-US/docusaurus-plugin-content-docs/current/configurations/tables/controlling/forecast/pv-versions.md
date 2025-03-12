@@ -1,6 +1,6 @@
 ---
-title: Versions S.F.
+title: P.V. Versions (Versioni P. V.)
 sidebar_position: 4
 ---
 
-This form allows: to enter multiple versions for forecasts; to establish one or more active versions (inactive ones cannot be used to create new forecasts but can be used to filter existing forecasts); to set the default version among those active; to accept the connection with the weekly forecast; to modify historical forecasts.
+This form allows: inserting multiple versions for forecasts; establishing one or more active versions (inactive ones cannot be used to create new forecasts but can be used to filter existing forecasts); setting the default version among the active ones; accepting the link to the weekly forecast; modifying historical forecasts.

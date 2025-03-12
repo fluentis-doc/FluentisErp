@@ -81,7 +81,7 @@ NOTA: in caso di errata attivazione del flag su codici di tipo Aliquota prevale 
 
 **Reverse charge**: vedere [**qui**](/docs/finance-area/particular-cases/mixed-reverse-charge)
 
-**Iva del margine / Iva del margine di riferimento**: vedere [**qui**](/docs/finance-area/particular-cases/VAT_regime-del-maine.md)
+**Iva del margine / Iva del margine di riferimento**: vedere [**qui**](/docs/finance-area/particular-cases/VAT_regime-del-maine)
 
 ###  Tipo contab IVA  
 

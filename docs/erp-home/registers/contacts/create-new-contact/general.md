@@ -85,7 +85,7 @@ Nella griglia **Sottoconti in tutte le società** si potrà vedere se per l'ana
 
 ### Indirizzi Alternativi
 
-Qui è possibile inserire alcuni indirizzi alternativi che dipendono dal [**Tipo indirizzo associato**](/docs/configurations/tables/general-settings/address-types.md) 
+Qui è possibile inserire alcuni indirizzi alternativi che dipendono dal [**Tipo indirizzo associato**](/docs/configurations/tables/general-settings/address-types) 
 
 **Attenzione:** non si tratta degli indirizzi di consegna della merce per i quali è stata sviluppata la tab [Consegna](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/delivery) nella sezione *Dati contabili* dove inserire i *Destinatari/Destinazioni* della merce per permettere la gestione completa nei documenti).
 

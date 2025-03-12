@@ -1,4 +1,4 @@
 ---
-title: Setting job order cost/margin
+title: Setting Cost / Margin for Job (Impostazione costo / margine commessa)
 sidebar_position: 2
 ---

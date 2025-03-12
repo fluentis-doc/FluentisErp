@@ -1,4 +1,4 @@
 ---
-title: Cost Type
+title: Cost type
 sidebar_position: 2
 ---

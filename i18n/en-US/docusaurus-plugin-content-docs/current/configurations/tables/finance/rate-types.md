@@ -1,47 +1,40 @@
 ---
-title: Rate Types
+title: Rate types
 sidebar_position: 28
 ---
 
-This table enables the user to encode and set different typologies of types in order to be managed in active company.
+The definition of this table allows for the coding and setting of various types of interest rates to be managed within the active company.
 
-It is connected to every type of rate. In the grill beneath the details of valid interest rates will be defined period by period. 
+### Upper Grid
 
+**Code**: identification code of the interest rate.
 
+**Description**: description of the interest rate.
 
-| Function | Meaning |
-| --- | --- |
-| Code | Identification code of the interest rate. |
-| Description  | Interest rate description. |
-| From Document Date | Document date from which the interests calculation (relay on DECRETO LEGISLATIVO 9 October 2002, n. 231) has to be managed. |
-| From Due Date | Due date from which the interests calculation (relay on DECRETO LEGISLATIVO 9 October 2002, n. 231) has to be managed. |
-| Min. Interest | Minimum amount of interests below which the user has no amount to valorize. |
-| Franchise Days | It is the number of franchise days, that will be deducted from the count of the late days. |
-| Calculate also the Discount | Management flag in rebates for pre-payement. |
+**From document date**: document date from which interest calculation is to be managed (reference is to LEGISLATIVE DECREE October 9, 2002, n. 231). The purpose of this field is to prevent interest from being calculated on documents with a date prior to the issuance of the law.
 
+**From due date**: expiration date from which interest calculation is to be managed (reference is to LEGISLATIVE DECREE October 9, 2002, n. 231). The purpose of this field is to prevent interest from being calculated on documents with an expiration date prior to the issuance of the law.
 
+**Min. interest (Interesse min.)**: minimum amount of interest below which no amount should be valued.
 
-| Function | Meaning |
-| --- | --- |
-| Code | Identification code of rate. |
-| From Date | Date from which the rate has to be managed. |
-| To Date | Date to which the rate has to be managed. |
-| Percentage | Percentage of applicable interest rate. |
+**Franchise days**: number of grace days that will be deducted from the count of late days.
 
-RIBBON BAR: the ribbon bar represents the Form menu, that is the area in which it is possible to operate on previous recordings or generate new ones. The possible features list is the following:
+**Calculate also the discount**: management flag for discounts in the case of early payment.
 
+:::tip note
+EXAMPLE: in the case of early payment by the customer and subsequent payment delay, if the amount of interest calculated on the delay is greater than the value set in the Min. interest field, the value of the calculated interest will have the (negative) value calculated based on the days between the payment date and the expiration date deducted from it. In any case, the result of the calculation can never be negative interest.
+:::
 
+### Lower Grid  
 
-| Function | Meaning |
-| --- | --- |
-| Search | It is a command that is necessary in order to look for rate type through the fields: code and description. |
-| New Rate Type | It is a command that is necessary in order to insert a new rate type. |
-| Delete Rate Type | It is a command that is necessary in order to delete the rate type, where the user is located. |
-| New Detail | It is a command that is necessary in order to insert the rate type detail, where the user is located. |
-| Delete Detail | It is a command that is necessary in order to delete the rate type detail, where the user is located. |
+**Code**: identification code of the rate.
 
+**From date**: date from which the rate indicated in the line is to be managed.
 
+**A date**: date until which the rate indicated in the line will be managed.
 
+**Percent Completed**: applicable interest rate percentage.
 
+The fields related to the validity dates for the percentage allow for defining the trend of the interest rate policy, which, as is known, is subject to periodic revisions regarding the legal rate.
 
-
+![](/img/it-it/configurations/tables/finance/rate-types/image01.png)

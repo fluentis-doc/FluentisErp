@@ -1,129 +1,124 @@
 ---
-title: Cost Driver 
+title: Cost Driver (Cost Driver)
 sidebar position: 6
 ---
 
-Within the ***Cost Driver*** table, we can encode all the logic for reallocating costs between centers. Let's take a closer look at the individual properties available.
+Within the **Cost Driver** table, we can code all the logic of redistribution between centers. Let's detail the individual properties available.
 
+:::tip note
+The Cost Driver table is also available in a *simplified* version for companies that do not have *Controlling* activated. In this case, *which is not detailed as it is of marginal interest*, the cost driver includes a Code and a Description, with only a list of recipient Centers valued solely as a percentage (optionally variable by fiscal year). The cost driver must then be linked to the business Centers to be redistributed according to this percentage logic, through the procedure **Entries for cost driver** present in the **Interim Closures** module. 
 
-:::tip Note
-The Cost Driver table is available, in a *simplified* version, even for companies that do not have *Controlling* activated. 
-In this case, *which is not detailed as it is of marginal interest*, the cost driver requires a Code and a Description, followed only by a list of beneficiary Centers valued solely in percentage (which can vary optionally by accounting year). The cost driver must then be linked to the corporate Centers to be allocated according to this percentage logic, through the ***Cost Driver Records*** procedure present in the ***Mid-Year Closures*** module. 
-
-For example, we can define a criterion 'square meters warehouse x', which provides for a distribution of 60%-40% on two production centers, and then connect this driver to a center 'Warehouse x' that sums all costs under its purview, to be reallocated to the target production centers.
+For example, we can define a criterion 'square meters warehouse x', which provides a 60%-40% distribution over two production centers, and then link this driver to a center 'Warehouse x' that sums all the costs under its responsibility to be redistributed to the recipient production centers.
 :::
 
-## GENERAL FIELDS
+## General Data
 
-- ***CODE*** of the rule we are entering. Within each processing cycle, ***FluentisERP*** evaluates the drivers in order of code.
+- **Code**: of the rule we are inserting. Within each processing cycle, **FluentisERP** evaluates the drivers in code order.
 
 :::tip Note
 To provide a coding criterion, we suggest:
-    -   A: for ATTRIBUTIONS. All As are those related to the general center ‘VALUES WITH ATTRIBUTION IN CONTROLLING’, which is the corporate center that has the FLAG on ACCOUNTS TO BE ASSIGNED. The first step in controlling processing is to attribute these generic accounts that accounting cannot manage or that need to be assigned with more variable logic than that known by an accountant. 
-    -   R for REALLOCATIONS; when I reallocate the values of one center to other centers.
-    -   P for PROJECTS; It must be noted that processes concerning projects will logically be applied at the end of all, because with these we will be assigning indirect costs already calculated in the 'industrial/direct' dimension.
+    -   A: for ATTRIBUTIONS. All A are those related to the generic center ‘VALUES WITH ATTRIBUTION IN CONTROLLING’, which is the business center that has the FLAG on ACCOUNTS TO REASSIGN. The first step of controlling processing is to attribute these generic accounts that accounting cannot manage, or that need to be assigned with more variable logic compared to what an accountant knows.
+    -   R for RE-ALLOCATIONS; when the values of a center are reallocated to other centers.
+    -   P for PROJECTS; it should be noted that the processes related to projects will logically be applied at the end of everything, because with these we will be assigning the indirect costs already calculated in the ‘industrial/managerial’ dimension.
 :::
 
+- **Description**: of the driver, which can be more or less explanatory of what it manages.
 
-- ***DESCRIPTION*** of the driver, which can be more or less explanatory of what it manages.
+- [**Area**](/docs/controlling/controlling-parametrization/controlling-specific-settings/area-types-areas): in Cost Drivers *the area is always mandatory*. We will have specific rules for certain areas (for a simulation perhaps) while the general rules will be those of the generic area of the set of rules.
 
-- [***AREA***](/docs/controlling/controlling-parametrization/controlling-specific-settings/area-types-areas): in Cost Drivers *the area is always mandatory*. We will have specific rules for certain areas (maybe for a simulation) while the general rules will be those of the generic area of the Rule Set.
+- **Production cycle number**: the controlling processing of **FluentisERP** must have a logical order. First of all, it starts with calculating the physical movements of the period, then there are the depreciations of assets, and then we move to the drivers, starting with attributions with cycle number 1 (because the first thing is to empty the *generic center to be reassigned*), then we will move on to reallocations according to their cycle order, and finally, for those who have valued a project/job dimension typically, the drivers of the last cycle of attribution from management to projects. With the same cycle number, drivers are then processed in the order of the driver code.
 
-- ***CYCLE NUMBER***: the controlling processing of ***FluentisERP*** must have a logical order. First of all, it starts with the calculation of physical movements of the period, then there are the depreciations of the assets, and then we move on to the drivers, for which we must start with the attributions with cycle number 1 (because first we must empty the *generic center to be reassigned*), then we will move on to reallocations in their order of cycle, and finally, for those who have valued a project/job order dimension typically, the drivers of the last attribution cycle given from the management to the projects. When the cycle numbers are the same, the drivers are processed in the order of the driver code.
+- **Account/Detail acc.**: means linking the driver to the subaccount-center combination, i.e., the total of the movements of this account and the center indicated subsequently will be taken and then the driver will specify where and how to reassign them to the destination centers listed in the lower left. The account/subaccount is a mandatory field only for cost drivers linked to the generic center to be reassigned; for others, it is optional.
 
-- ***ACCOUNT/DETAIL ACCOUNT***: means linking the driver to the detail account-center combination, that is, it will take the total movements of this account and the center indicated later, and then the driver will dictate where and how to reallocate them to the destination centers in the list on the lower left. The account/detail account is a mandatory field only for cost drivers related to the generic center to be reassigned, for others it is optional.
+- [**DIMENSION OF RECIPIENT CENTERS (DIMENSIONE DEI CENTRI DESTINATARI)**](/docs/controlling/controlling-parametrization/controlling-specific-settings/dimension); this dimension is what filters the recipient centers for the values of the grid in the lower left. In **FluentisERP**, we can indeed have drivers that move or copy data from one dimension to another of our centers: as already mentioned, the typical case is the assignment of direct/indirect costs to the analysis dimension of projects.
 
-- [***RECIPIENTS CENTERS SIZE***](/docs/controlling/controlling-parametrization/controlling-specific-settings/dimension); this dimension filters the recipients centers of the values in the grid on the lower left. In ***FluentisERP***, in fact, we can have drivers that move or copy data from one dimension to another of our centers: as previously mentioned, the typical case is the allocation of direct/indirect costs to the project analysis dimension.
-
-- ***START DATE*** and ***END DATE***: in these fields, we set from which date to which date the driver is valid. It is not allowed for two rules in the same area for the same center (and account, if valued) to overlap. If over time we notice that it is necessary to make changes to a rule, we can close it on a certain date to then apply a different one from the subsequent period.
+- **Start date** and **End date**: in these fields, you set from which date to which date the driver is valid. It is not allowed for two rules of the same area for the same center (and account, if valued) to overlap. If over time we realize it is necessary to make modifications to a rule, we can close it on a certain date to then apply a different one from the subsequent period.
 
 ## DISTRIBUTION TYPES
-- ***DISTRIBUTION TYPE***: defines how the attribution or the reallocation is managed. We have codes available from 01 to 09 to be used for attributions; there are 3 more for reallocations between centers, where we can also use center rates; we will instead have 6 different, specific to the project/job order destination dimension. In detail:
+
+- **Distribution type**: defines how attribution or reallocation is managed. We have codes from 01 to 09 available for attributions; an additional 3 are added for reallocations between centers, when we can also use the rates of the center; instead, we will have 6 different ones specifically for the project/job destination dimension. In detail:
     - distribution types for attributions and reallocations
-        - ***01 Percentage**: the source data, period by period, will be allocated based on the percentage of the individual recipient center.
-        - ***02 Total debit**: for each period, a percentage will be calculated based on the total debit of the individual recipient center compared to the total debit of all recipients centers.
-        - ***03 Total credit***: as for the previous one, but considering the total credit.
-        - ***04 Margins***: as for the previous one, but considering debit-credit (in absolute value).
-        - ***05 On selected detail account***: the percentage is obtained by considering the debit-credit (in absolute value) of the recipients centers, but filtered by the list of *detail accounts* in the right grid.
-        - ***06 On selected account***: the percentage is obtained by considering the debit-credit (in absolute value) of the recipients centers, but filtered by the list of *accounts* in the right grid.
-        - ***07 Excluding selected detail accounts***: the percentage is obtained by considering the debit-credit (in absolute value) of the recipients centers, but filtered by excluding the list of *detail accounts* from the right grid.
-        - ***08 Excluding selected accounts***: the percentage is obtained by considering the debit-credit (in absolute value) of the recipients centers, but filtered by excluding the list of *accounts* from the right grid.
-        - ***09 On physical dimension***: the percentage is obtained by considering the quantities (of the unit of measure set in the dedicated field) of the recipients centers compared to the total quantities of all recipients centers.
+        - **Percent Completed**: the source data, period by period, will be distributed based on the percentage of the single recipient center.
+        - **Total debit**: for each period, a percentage will be calculated based on the total debit of the single recipient center relative to the total debit of all recipient centers.
+        - **Total Credit**: as for the previous one, but considering the total credit.
+        - **04 Margins (Margini)**: as for the previous one, but considering debit-credit (in absolute value).
+        - **05 On selected subaccount (Su sottoconto selezionato)**: the percentage is obtained considering the debit-credit (in absolute value) of the recipient centers, but filtered by the list of *subaccounts* in the right grid.
+        - **06 On selected account (Su conto selezionato)**: the percentage is obtained considering the debit-credit (in absolute value) of the recipient centers, but filtered by the list of *accounts* in the right grid.
+        - **07 Excluding selected subaccounts (Ad esclusione dei sottoconti selezionati)**: the percentage is obtained considering the debit-credit (in absolute value) of the recipient centers, but filtered excluding the list of *subaccounts* in the right grid.
+        - **08 Excluding selected accounts (Ad esclusione dei conti selezionati)**: the percentage is obtained considering the debit-credit (in absolute value) of the recipient centers, but filtered excluding the list of *accounts* in the right grid.
+        - **09 On physical size (Su grandezza fisica)**: the percentage is obtained considering the quantities (of the unit of measure set in the dedicated field) of the recipient centers compared to the total quantities of all recipient centers.
     - specific distribution types for reallocations
-        - ***10 Reversion on production at standard rate***: we reallocate a Center to multiple Centers based on a flow of Physical Movements between the Origin Center (which is the center linked to the driver) and the recipients Centers (which are the destination centers of the driver): therefore, the Hours of the Origin Center will be equal to the Hours of the recipients Centers. The assignor Center is not completely emptied, so it will have a remaining value different from zero.
-        - ***11 Direct reversion at standard rate***: allows reallocating a Center to multiple Centers based on a Standard Rate of the Origin Center (the driver center) and on a flow of Physical Movements of the recipients Centers. The amount attributed to the recipients Centers will be the product of the Standard Rate of the Origin Center and the amount of the Physical Quantity of each recipient Center. Similarly, the assignor Center is not completely emptied, so it will have a remaining value different from zero.
-        - ***12 Reversion on production at calculated rate***: allows reallocating a Center to multiple Centers based on a Calculated Rate of the Origin Center and a flow of Physical Movements between the Origin Center and the recipients Centers, so the Hours of the Origin Center will be equal to the Hours of the recipients Centers. The amount attributed to the recipients Centers will be the product of the Calculated Rate of the Origin Center and the amount of the Physical Quantity of each recipient Center, thus the assignor Center is completely emptied and will have a remaining value equal to zero.
-    - specific distribution types for the project/job order dimension (detailed below)
-        - ***13 Reversion on production by project** 
-        - ***14 Reversion margins by project**
-        - ***15 Reversion of specific depreciations by project**
-        - ***16 Reversion on project revenues**
-        - ***17 Reversion on project costs**
-        - ***18 Reversion on project industrial cost**
+        - **10 Reversion to production at standard rate (Reversione su produzione a tariffa standard)**: we reallocate a Center to multiple Centers based on a flow of Physical Movements between the originating Center (which is the center linked to the driver) and the recipient Centers (which are the destination centers of the driver); therefore the Hours of the originating Center will equal the Hours of the destination Centers. The ceding Center is not completely emptied, so it will have a residual value different from zero.
+        - **11 Direct reversion at standard rate (Reversione diretta a tariffa standard)**: allows reallocating a Center to multiple Centers based on a Standard Rate of the originating Center (the driver center) and a flow of Physical Movements of the recipient Centers. The amount assigned to the recipient Centers will be the product of the Standard Rate of the originating Center and the value amount of the Physical Size of each recipient Center. Again, the ceding Center is not completely emptied, so it will have a residual value different from zero.
+        - **12 Reversion to production at calculated rate (Reversione su produzione a tariffa calcolata)**: allows reallocating a Center to multiple Centers based on a Calculated Rate of the originating Center and a flow of Physical Movements between the originating Center and the recipient Centers; therefore, the Hours of the originating Center will equal the Hours of the destination Centers. The amount assigned to the recipient Centers will be the product of the Calculated Rate of the originating Center and the value amount of the Physical Size of each recipient Center, so the ceding Center is completely emptied and will have a residual value of zero.
+    - specific distribution types for project/job dimensions (detailed later)
+        - **13 Reversion to production per project (Reversione su produzione per progetto)**
+        - **14 Reversion margins per project (Reversione margini per progetto)**
+        - **15 Reversion specific depreciations per project (Reversione ammortamenti specifici per progetto)**
+        - **16 Reversion on project revenues (Reversione sui ricavi di progetto)**
+        - **17 Reversion on project costs (Reversione sui costi di progetto)**
+        - **18 Reversion on industrial project costs (Reversione su costo industriale di progetto)**
 
-
-- [***UNITS OF MEASURE***](/docs/controlling/controlling-parametrization/controlling-specific-settings/measure-units): this field is activated for distribution types *09 - 10 - 11 - 12* and is used to select the unit of measure to be searched in physical movements.
-
+- [**MEASUREMENT UNIT (UNITA’ DI MISURA)**](/docs/controlling/controlling-parametrization/controlling-specific-settings/measure-units): the field is activated for distribution types *09 - 10 - 11 - 12* and is used to select the unit of measure to be searched in the physical movements.
 
 ## OTHER FIELDS
-- ***ERROR MANAGEMENT***: in this field, we can indicate how to handle cases where there is no data for applying the rule.
-    - *LOCK*: the lock clearly interrupts the processing if the necessary data for applying the driver is not there.
-    - *RESIDUAL VALUE*: Residual value cannot be used for attributions but only for reallocations, because it leaves in the origin center the remaining value that could not be assigned to the destination centers. The generic center must always be empty, and thus this type of error management cannot be used in attributions.
-    - *AVERAGE OF EXISTING VALUES*, instead, spreads in the current period, when there is no value, based on the average of existing values in other periods of the year being processed.
+
+- **Error management**: in this field we can indicate how to manage cases where no data is available for applying the rule.
+    - *Lock*: the block will clearly interrupt processing if there is no data necessary for the application of the driver.
+    - *RESIDUAL VALUE (VALORE DI RESIDUO)*: Residual value can be used only for reallocations, as it leaves the originating center with the residual value that could not be assigned to the destination centers. The generic center must always be empty, so this type of error management cannot be used for attributions.
+    - *AVERAGE OF EXISTING VALUES (MEDIA DEI VALORI ESISTENTI)*, on the other hand, spreads the current period, when there is no value, based on the average of existing values in other periods of the year being processed.
 
 :::tip Note
-For example, it can help avoid locks in periods such as August, during which the quantities or values to be used in the driver could be zero due to the company's closure for holidays.
+For example, it can help avoid blocks in periods, like August, when the quantities or values to be used in the driver could be zero due to the company's closure for holidays.
 :::
 
-- ***VALUES TO USE***: I indicate which data I must consider for the recipients centers. The choice is between
-    - ALL: reads all assigned movements (up to the specific cycle that I am processing) 
-    - ONLY SOURCE LINES: only the data that comes from the initial attributions.
+- **Values to use**: I indicate which data I need to consider for the recipient centers. The choice is between:
+    - ALL (TUTTI): reads all assigned movements (up to the specific cycle I am processing).
+    - ONLY ORIGIN LINES (SOLO RIGHE DI ORIGINE): only the data coming from the initial attributions.
 
 :::tip Note
-Essentially, for reallocations, this field defines whether or not to consider the values received from reallocations from other centers for the recipients Centers. Therefore, it is only relevant for Distribution Types from 02 to 08 inclusive, and is irrelevant for the remaining types that are based on rates.
+Essentially, for reallocations, this field defines whether to consider or not, for the Recipient Centers, also the values received from reallocations from other centers. Therefore, it is valid only for Distribution Types from 02 to 08 inclusive; it is irrelevant for the remaining types that are based on rates.
 :::
 
-
-- ***REVERSAL FLAG***: this flag answers the question of whether to keep the data from the origin dimension or to *move* them to the destination dimension.
+- **CANCELLATION FLAG (FLAG STORNO)**: this flag answers whether I need to keep the data from the origin dimension or *move* them to the destination dimension.
 
 :::tip Note
-When the driver is linked to the project/job order dimension, I must definitely keep the value also in the origin, which is the management; otherwise, I would miss some costs, and any economic accounts would be inaccurate.
+When the driver is linked to the project/job dimension, I certainly need to keep the value also in the origin, which is the managerial center; otherwise, I would be missing some costs, and any income statements would be inaccurate.
 :::
 
-- ***BY DEPARTMENT***: we enable the option to filter the source data to be reallocated based on the division set in the next field.
+- **By department**: we enable the possibility of filtering the origin data to be redistributed based on the division set in the next field.
 
-:::tip Note
-Regarding the division, it is also interesting to note that it is potentially possible to define drivers that operate a reallocation of costs/revenues from one division to another: it is necessary for the company to operate in multiple divisions and to have activated the *General Parameter* of *management centers by department*.
+:::tip note
+In terms of division, it is also interesting to note that it is potentially possible to define drivers that operate a reassignment of costs/revenues from one division to another: it is necessary for the company to work across multiple divisions and to have activated the *General parameter* of *management centers by division*.
 :::
 
-## SPECIFICITY FOR PROJECT/JOB ORDER DIMENSION
-Now let's turn our attention to fields related to project/job order drivers. First, let's look at the last three fields in the grid.
+## SPECIFICITIES FOR PROJECT/COMMITMENT DIMENSION
 
-- ***MEASUREMENT TYPE***: in this field, we must set which cost index (the rate) to use to value the center associated with the cost driver. The available options are:
-    - *MU1*: the index linked to the first unit of measure of the center will be used.
-    - *MU2*: the index linked to the second unit of measure of the center will be used.
+Now let's shift attention to fields related to project/job drivers. First, let's see the last three fields in the grid.
+
+- **Measurement Type**: in this field, we need to set what the cost index (the rate) is to use to value the center associated with the cost driver. The available options are:
+    - *UM1*: the index linked to the first unit of measure of the center will be used.
+    - *UM2*: the index linked to the second unit of measure of the center will be used.
     - *%*: the percentage index of the center will be used.
 
-- ***AREA FOR INDEX***: in this field, we can indicate in which *Area* to search for the previous cost index: essentially, for the project dimension, we can specify a specific area from which to read the indices, regardless of the area selected for the *Project Final Calculation*.
+- **Area for index**: in this field, we can specify in which *Area* to look for the previous cost index: essentially, for the project dimension, we can indicate a specific area from which to read the indices, regardless of the area selected for the *Project actual processing*.
 
-- ***INDEX CALCULATION TYPE***: in this field, I can define how to calculate the index, according to the following options:
-    - *Month*: the specific index for the single month will be used.
-    - *Up to period*: an index calculated with cumulative data from the beginning of the year being processed will be used.
-    - *Mobile year*: an index calculated with cumulative data from the 12 months preceding the single period being processed will be used.
-    - *Year*: an index calculated with the cumulative data of all available months in the year being processed will be used.
-    - *Standard rate*: the standard rate of the center, valid for the single period being processed, will be used.
+- **Index calculation type**: in this field, I can define how to calculate the index according to these options:
+    - *Month*: the specific month's index will be used.
+    - *Up to period*: an index will be used calculated with cumulative data from the start of the year being processed.
+    - *Mobile year*: an index will be used calculated with cumulative data from the 12 months prior to the specific period being processed.
+    - *Year*: an index will be used calculated with the cumulative data of all available months in the year being processed.
+    - *Standard rate*: the standard rate of the center valid for the specific period being processed will be used.
 
+- **PROJECT/COMMITMENT SPECIFIC DISTRIBUTION TYPES**: first of all, the driver always provides for destination centers, but for a project dimension, we will have not only these 'project' centers but also the specific project linked to them. The reference is to the possibility of having a single *project center* (via the flag *Default center for projects*), which will then be the only one entered as a recipient of the driver, rather than using the *Center/Job Association table* through which to link a list of center codes according to the specific characteristics of the projects. This last possibility allows, potentially, to have different drivers on different project types (for example, because they have different cost structures depending on the type of project). In detail, the distribution types are:
 
-- Project/job order specific ***DISTRIBUTION TYPES***: first of all, the driver always requires destination centers, but for a project dimension, we will have not only these 'project' centers but also the specific project linked to them. The reference is to the possibility of having a single *project center* (via the flag *Default center for projects*), which will thus be the only one inserted as the driver’s recipient, rather than using the *Center/Job Order Association Table* through which to link a list of center codes according to specific project characteristics. This last possibility potentially allows for different drivers on different project types (for example, due to different cost structures depending on the type of project). In detail, the types of distribution are:
-
-    - ***13 Reversion on production by project***: the cost index (for MU1 or 2, area, and calculation type set) of the driver center will be read and applied to the working hours of the center on the projects/job orders associated with the CdC in the lower left.
-    - ***14 Reversion margins by project***: the cost index (%) of the driver center will be read and applied to the margins of the projects/job orders associated with the CdC in the lower left.
-    - ***15 Reversion of specific depreciations by project***: the unit costs of technical depreciations of controlling of the individual asset will be searched, and multiplied by the quantities that the asset has produced on the individual project/job order associated with the CdC in the lower left.
-    - ***16 Reversion on project revenues***: the cost index (%) of the driver center will be read and applied to the revenues of the projects/job orders associated with the CdC in the lower left, potentially filtering the data on the accounts indicated in the right grid.
-    - ***17 Reversion on project costs***: the cost index (%) of the driver center will be read and applied to the costs of the projects/job orders associated with the CdC in the lower left, potentially filtering the data on the accounts indicated in the right grid.
-    - ***18 Reversion on project industrial cost***: in this case, the percentage index will be applied to the industrial cost calculated, project by project, through the types of *data origin* configured in the right grid. Thus, we can indicate *Materials*, *Internal processing*, *External workings*, and potentially the amounts of certain detail accounts drawn from the *Accounting* origin.
-
+    - **13 Reversion to production per project (Reversione su produzione per progetto)**: the cost index (for UM1 or 2, area, and calculation type set) of the driver's center will be read and valued on the working hours of the center on the projects/jobs associated with the Cdc in the lower left.
+    - **14 Reversion margins per project (Reversione margini per progetto)**: the cost index (%) of the driver's center will be read and valued on the margins of the projects/jobs associated with the Cdc in the lower left.
+    - **15 Reversion specific depreciations per project (Reversione ammortamenti specifici per progetto)**: the unit costs of the technical depreciations of controlling of the single asset will be searched and multiplied by the quantities produced by the asset on the specific project/job associated with the Cdc in the lower left.
+    - **16 Reversion on project revenues (Reversione sui ricavi di progetto)**: the cost index (%) of the driver's center will be read and valued on the revenues of the projects/jobs associated with the Cdc in the lower left, possibly filtering the data on the accounts indicated in the right grid.
+    - **17 Reversion on project costs (Reversione sui costi di progetto)**: the cost index (%) of the driver's center will be read and valued on the costs of the projects/jobs associated with the Cdc in the lower left, possibly filtering the data on the accounts indicated in the right grid.
+    - **18 Reversion on industrial project costs (Reversione su costo industriale di progetto)**: in this case, the percentage index will be applied to the calculated industrial cost, project by project, through the types of *data origin* configured in the right grid. We can therefore indicate *Materials*, *Internal Processing*, *External workings*, and perhaps the amounts of certain subaccounts taken from the *Accounting* origin.
 
 :::tip Note
-If we need to value the carpentry center, which is a production center, on the projects in progress in the period, for example, I will need a driver that takes that cost and reallocates it, perhaps through *Reversion on production by project*: I will then read the data taken from production, project by project, how much has been worked by this center, based on the measurement type of the center (i.e., MU1 or MU2 for production centers). The percentage index, on the other hand, is typically used when the distribution criterion is linked to project costs/revenues/margins.
+If we need to value the carpentry center, which is a production center, on the projects being worked on in the period, for example, I should have a driver that takes that cost and reallocates it perhaps for *Reversion to production per project*: I would then read the data retrieved from production, project by project, how much was worked by this center, based on the measurement type of the center (i.e., UM1 or UM2 for production centers). The percentage index, however, is typically used when the distribution criterion is related to project costs/revenues/margins.
 :::
