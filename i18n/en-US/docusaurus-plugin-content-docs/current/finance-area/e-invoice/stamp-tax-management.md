@@ -1,5 +1,5 @@
 ---
-title: Stamp Duty Management (Gestione imposta di bollo)
+title: Stamp Duty Management 
 sidebar_position: 2
 ---
 
