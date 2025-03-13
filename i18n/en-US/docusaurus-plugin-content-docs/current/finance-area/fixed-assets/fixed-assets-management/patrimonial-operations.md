@@ -7,23 +7,23 @@ Within this tab, the details of various asset transactions are entered.
 
 Thus, it represents, along with the Detail tab, the main section of the asset sheet.
 
-| Function | Meaning |
+| Function | Extended Description |
 | --- | --- |
-| New operation (Nuova operazione) | Activates the cursor in the first grid of asset transactions. |
-| Delete operation (Cancella operazione) | Deletes the selected operation in the asset transaction grid. |
-| New depreciation (Nuovo ammortamento) | Activates the cursor in the second grid of depreciations. |
-| Delete depreciation (Cancella ammortamento) | Deletes the selected depreciation in the depreciation grid. |
-| Execute automatic depreciation (Esegue ammortamento automatico) | Calculates the depreciation of the asset in use for the year set in the field immediately above the depreciation grid. |
-| Insert cost center (Inserimento cdc) | Activates the cursor in the cost center grid. |
-| Delete cost center (Cancella cdc) | Deletes the movement of the selected cost center in the grid. |
-| Calculate cost centers (Calcolo centri di costo) | Executes the calculation of cost centers for the value of the selected depreciation line. |
-| Insert projects (Inserimento commesse) | Activates the cursor in the projects grid. |
-| Delete projects (Cancella commesse) | Deletes the selected project calculation in the grid. |
-| Calculate projects (Calcolo commesse) | Executes the calculation of the project for the value of the selected depreciation line. |
-| Revaluation details (Dettagli rivalutazione) | Opens the management of revaluation details. The button is active only if the 'revaluations' flag is set for the category of the asset in use. See application a. |
-| Documents (Documenti) | Management of the document archiving associated with the mask in use. |
+| New operation | Activates the cursor in the first grid of asset transactions. |
+| Delete operation | Deletes the selected operation in the asset transaction grid. |
+| New depreciation | Activates the cursor in the second grid of depreciations. |
+| Delete depreciation | Deletes the selected depreciation in the depreciation grid. |
+| Execute automatic depreciation | Calculates the depreciation of the asset in use for the year set in the field immediately above the depreciation grid. |
+| Insert cost center | Activates the cursor in the cost center grid. |
+| Delete cost center | Deletes the movement of the selected cost center in the grid. |
+| Calculate cost centers | Executes the calculation of cost centers for the value of the selected depreciation line. |
+| Insert job orders | Activates the cursor in the job orders grid. |
+| Delete job orders | Deletes the selected job order calculation in the grid. |
+| Calculate job orders | Executes the calculation of the job order for the value of the selected depreciation line. |
+| Revaluation details | Opens the management of revaluation details. The button is active only if the 'revaluations' flag is set for the category of the asset in use. See application a. |
+| Documents | Management of the document archiving associated with the mask in use. |
 
-### UPPER GRID (GRIGLIA SUPERIORE)
+### UPPER GRID 
 
 This grid is used both for acquisition (or increase) operations of the asset and for sale operations (total or partial).
 
@@ -49,13 +49,13 @@ When entering a row related to an asset transaction (e.g., purchase, but also al
 
 **Book value**: Historical Cost - Accumulated Depreciation Fund;
 
-**Already depreciated (Già ammortizzato)**: Provisional value that will be updated at the time of depreciation calculation and will then be reset again by updating the total accumulated depreciation (at the time of depreciation posting).
+**Already depreciated**: Provisional value that will be updated at the time of depreciation calculation and will then be reset again by updating the total accumulated depreciation (at the time of depreciation posting).
 
-### CENTRAL GRID (GRIGLIA CENTRALE) Depreciations (Ammortamenti):
+### CENTRAL GRID Depreciations:
 
 Presents the list of depreciations calculated for the asset: entry can be manual or automatic. 
 
-- Manual entry requires indicating the reference year, the progressive line number (but only for non-incremental categories; for others, the field is hidden as depreciation will always be linked to progressive 1), and the type of depreciation to apply: at this point, the ERP will report the settings of the reference asset category, with a main account and sub-account for posting the quota, the percentage, and amounts (values that can be forced and modified at will). At the end of the grid, the reference date of the depreciation is proposed as the end of the financial year of reference for the row, and finally, the amounts of deductible and non-deductible depreciation quotas are shown.
+- Manual entry requires indicating the reference year, the progressive line number (but only for non-incremental categories; for others, the field is hidden as depreciation will always be linked to progressive 1), and the type of depreciation to apply: at this point, the ERP will report the settings of the reference asset category, with a main account and detail account for posting the quota, the percentage, and amounts (values that can be forced and modified at will). At the end of the grid, the reference date of the depreciation is proposed as the end of the financial year of reference for the row, and finally, the amounts of deductible and non-deductible depreciation quotas are shown.
 
 ![](/img/it-it/finance-area/fixed-assets/fixed-assets-management/patrimonial-operations/image02.png)
 
@@ -67,7 +67,7 @@ Presents the list of depreciations calculated for the asset: entry can be manual
 
 ![](/img/it-it/finance-area/fixed-assets/fixed-assets-management/patrimonial-operations/image05.png)
 
-The depreciation calculation will be reported in the ***Already depreciated (Già ammortizzato)*** column of the upper grid, which will serve to indicate a non-definitive amount: only with the indication of the **Accounted*** flag in the various rows, higher amounts will be allocated to the column of the fund related to the type of depreciation itself. 
+The depreciation calculation will be reported in the ***Already depreciated*** column of the upper grid, which will serve to indicate a non-definitive amount: only with the indication of the **Accounted*** flag in the various rows, higher amounts will be allocated to the column of the fund related to the type of depreciation itself. 
 
 ![](/img/it-it/finance-area/fixed-assets/fixed-assets-management/patrimonial-operations/image06.png)
 
@@ -85,24 +85,24 @@ The fiscal depreciation flag provides for the fiscal management of the depreciat
 
 In the last section, there is a detailed valuation by cost center of the depreciations selected in the second grid.
 
-### Loading a Pre-existing Asset (Caricamento di un cespite pregresso)
+### Loading a Pre-existing Fixed Asset 
 
 To insert existing assets into the system at the start of registrations, with the related depreciation fund situation, proceed as follows:
-1. Insert a new asset sheet with the demographic data of the asset: description, category, etc. (Detail tab *Dettaglio*) and pay attention to the **start date of activity (data inizio attività)** that must be the historical one.
+1. Insert a new asset sheet with the demographic data of the asset: description, category, etc. (Detail tab *Dettaglio*) and pay attention to the **start date of activity** that must be the historical one.
 
 2. In the *Patrimonial operations* tab, enter the historical cost indicating the purchase date and filling in the **Purchase value** field.
 
 3. **DO NOT** manually fill in the *Depreciation fund* field in the row (otherwise it would be overwritten in the next depreciation), but enter a row (below) in the Depreciation grid with the year equal to the year prior to the insertion year and the total of the already calculated depreciations. And set the posted flag. The depreciation must be entered in the cost field (imposing it regardless of the other previous fields.)
 
-### Management of Asset Alienation (Gestione dell'alienazione cespite) (cases of partial alienation)
+### Management of Asset Alienation (cases of partial alienation)
 
 #### Case of already depreciated asset
 This is a valid example if the asset has not been managed through components or increases but indivisibly.
 
 1. The automatic accounting entry is not managed, so the asset can also be managed from within the sheet and then make the entry Dep. Fund to Asset separately.
 2. To partially unload the asset, enter a negative amount in the fund column for an amount corresponding to the historical cost portion sold or destroyed.
-3. In the Partial alienation (Alienazione parziale) column, always indicate the value at which it is sold (or 0.00 if destroyed).
-4. The ceded original cost (costo originario ceduto) column will update automatically.
+3. In the Partial alienation column, always indicate the value at which it is sold (or 0.00 if destroyed).
+4. The original cost divested column will update automatically.
 
 
 #### Case of NOT fully depreciated asset
@@ -113,10 +113,10 @@ Initial situation
 
 To partially unload the asset, enter a negative amount in the fund column for an amount corresponding to the portion of the fund set aside proportional to the historical cost sold or destroyed.
 
-In the Partial alienation (Alienazione parziale) column, indicate the value at which it is sold (or 0.00 if destroyed; in this case, you can also indicate the value in the Destruction (Distruzione) column).
-The ceded original cost (costo originario ceduto) column will automatically calculate.
+In the Partial alienation column, indicate the value at which it is sold (or 0.00 if destroyed; in this case, you can also indicate the value in the Destruction column).
+The original cost divested column will automatically calculate.
 
-The calculation done in the ceded original cost (costo originario ceduto) column also takes into account the capital gain/loss on sale, which must be entered considering the portion of net book value that is ceded.
+The calculation done in the original cost divested column also takes into account the capital gain/loss on sale, which must be entered considering the portion of net book value that is ceded.
 
 **Example 1:** 
 Historical cost 1000, depreciated by 125.
@@ -127,7 +127,7 @@ I adjust the set-aside fund for half, thus -62.50, and have a sale value (be car
 Thus, I will need to calculate the loss to enter based on half of the net book value, thus 875 / 2 = 437.50.
 Loss = 437.50 – 200 = 237.50
 
-The ceded original cost (costo originario ceduto) field is automatically calculated to 500, which is the historical cost actually unloaded from the asset book for half.
+The original cost divested field is automatically calculated to 500, which is the historical cost actually unloaded from the asset book for half.
 
 ![](/img/it-it/finance-area/fixed-assets/fixed-assets-management/patrimonial-operations/selling2.png)
 
@@ -140,11 +140,11 @@ I adjust the set-aside fund for half, thus -62.50, and have a sale value (be car
 Thus, I will need to calculate the loss to enter based on half of the net book value, thus 875 / 2 = 437.50.
 Loss = 437.50 – 0 = 437.50.
 
-The ceded original cost (costo originario ceduto) field is automatically calculated to 500, which is the historical cost actually unloaded from the asset book for half.
+The original cost divested field is automatically calculated to 500, which is the historical cost actually unloaded from the asset book for half.
 
 ![](/img/it-it/finance-area/fixed-assets/fixed-assets-management/patrimonial-operations/selling3.png)
 
-:::tip[Suggerimento]
+:::tip[Tip]
 Asset alienation, particularly in simpler cases of total alienation, can be managed more automatically through the accounting entry of the sale made with a rationale that has enabled the functionality for assets and with operation type Total alienation (or partial).
 
 In the entry, the [**specific Asset section**](/docs/finance-area/ledger-records/records/ledger-record) will appear.

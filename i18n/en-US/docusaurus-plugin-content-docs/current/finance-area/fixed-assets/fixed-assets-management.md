@@ -5,15 +5,15 @@ sidebar_position: 3
 
 LINK:
 
-**[Detail (Dettaglio)](/docs/finance-area/fixed-assets/fixed-assets-management/detail)**
+**[Detail](/docs/finance-area/fixed-assets/fixed-assets-management/detail)**
 
-**[Asset Operations (Operazioni Patrimoniali)](/docs/finance-area/fixed-assets/fixed-assets-management/patrimonial-operations)**
+**[Patrimonial Operations](/docs/finance-area/fixed-assets/fixed-assets-management/patrimonial-operations)**
 
-**[Economic Operations (Operazioni Economiche)](/docs/finance-area/fixed-assets/fixed-assets-management/economical-operations)**
+**[Economic Operations](/docs/finance-area/fixed-assets/fixed-assets-management/economical-operations)**
 
-**[Linked Assets (Cespiti collegati)](/docs/finance-area/fixed-assets/fixed-assets-management/linked-fixed-assets)**
+**[Linked Fixed Assets](/docs/finance-area/fixed-assets/fixed-assets-management/linked-fixed-assets)**
 
-**[Asset Ownership (Proprietà cespiti)](/docs/finance-area/fixed-assets/fixed-assets-management/fixed-assets-property)**
+**[Fixed Assets Property](/docs/finance-area/fixed-assets/fixed-assets-management/fixed-assets-property)**
 
  
 
@@ -25,20 +25,20 @@ This procedure is an alternative to entering the card directly from the accounti
 
 **Header**
 
-Setting the **Fixed Asset Category** of belonging: select the category from the combo box (linked to the **[asset category table (tabella categoria cespite)](/docs/configurations/tables/finance/fixed-asset-category)**);
+Setting the **Fixed Asset Category** of belonging: select the category from the combo box (linked to the **[fixed asset category table](/docs/configurations/tables/finance/fixed-asset-category)**);
 
 **Property type**: normally owned as proposed by default; leasing and rental assets are also provided, which are numbered separately from others and do not appear in the prints of the depreciable asset book. This management allows simulating the year-end depreciation calculations for comparison to the leasing fee paid for tax calculations. In the case of a non-owned asset, it will be possible to enter some reference notes regarding the related contract.
 
 **Division**: set by default to the current division, can be changed if necessary. This field can only be set at the time of entering the new asset and cannot be modified afterward.
 
-**Accounting type**: (accounting type): field not typically filled during the manual entry of the card, it is populated during the accounting registration to impose a particular counterpart account (defined in the asset accounting types table) compared to that defined in the belonging asset category.
+**Accounting type**: field not typically filled during the manual entry of the card, it is populated during the accounting registration to impose a particular counterpart account (defined in the asset accounting types table) compared to that defined in the belonging asset category.
 
  
 
-**Classification code**: can be assigned to the asset numbering; if not entered, the proposed numbering will indeed be unique across all assets of the active company/division; by entering a precode, the asset number will be unique for each of the existing pre codes.
+**Classification code**: can be assigned to the asset numeration; if not entered, the proposed numeration will indeed be unique across all assets of the active company/division; by entering a precode, the asset number will be unique for each of the existing pre codes.
 
 
-**Material/Immaterial (Mat./Immat.)**: nature of the asset (material or immaterial); it is automatically proposed based on the data contained in the belonging asset category.
+**Material/Immaterial**: nature of the asset (material or immaterial); it is automatically proposed based on the data contained in the belonging asset category.
 
 
 **Propr. note**: free note field

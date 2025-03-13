@@ -1,5 +1,5 @@
 ---
-title: Objective Depreciationss
+title: Objective Depreciations
 sidebar_position: 1
 ---
 

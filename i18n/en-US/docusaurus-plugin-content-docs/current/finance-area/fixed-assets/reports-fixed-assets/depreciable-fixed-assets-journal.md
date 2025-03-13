@@ -29,7 +29,7 @@ are active by default to display all types of assets, and those related to the t
 
  
 
-The **Definitive printed** flag will block the header data of the various printed asset registries, also preventing the deletion of individual printed lines and will update the page counter for the reference year within the general accounting parameters. The cancellation of the final print can be performed by an authorized user from the General Accounting Parameters mask.
+The **Definitive printed** flag will block the header data of the various printed asset registries, also preventing the deletion of individual printed lines and will update the page counter for the reference year within the general ledger parameters. The cancellation of the final print can be performed by an authorized user from the General Ledger Parameters mask.
 
 **Fiscal data**: displays additional columns with tax data related to depreciations.
 

@@ -1,5 +1,5 @@
 ---
-title: Amortization plans simulation
+title: Depreciation Plans Simulation
 sidebar_position: 3
 ---
 
@@ -15,8 +15,8 @@ RIBBON BAR: represents the menu of the form in question, that is, the area where
 
 
 
-| Function (Funzione) | Meaning (Significato) |
+| Function | Extended Description |
 | --- | --- |
-| Save (Salva) | Save the calculation settings for the active user. |
-| View last calculation (Visualizza ultimo calcolo) | View the result of the last calculation performed. |
-| Calculate (Calcola) | Execute the calculation according to the saved settings. |
+| Save | Save the calculation settings for the active user. |
+| View last calculation | View the result of the last calculation performed. |
+| Calculate | Execute the calculation according to the saved settings. |

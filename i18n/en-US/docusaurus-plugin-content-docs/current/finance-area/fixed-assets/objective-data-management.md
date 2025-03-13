@@ -1,5 +1,5 @@
 ---
-title: Objective data management
+title: Objective Data Management
 sidebar_position: 9
 ---
 
@@ -9,8 +9,8 @@ RIBBON BAR: represents the menu of the form in question, i.e., the area where ac
 
 
 
-| Function (Funzione) | Meaning (Significato) |
+| Function | Extended Description |
 | --- | --- |
-| New operation (Nuova operazione) | Activates the cursor for entering a new objective operation line. |
-| Delete operation (Cancella operazione) | Deletes the selected objective operation in the grid. |
-| Executes objective depreciation (Esegue ammortamento oggettivo) | Calculates the objective depreciation for the year set in the field above the depreciation grid. |
+| New operation | Activates the cursor for entering a new objective operation line. |
+| Delete operation | Deletes the selected objective operation in the grid. |
+| Execute objective depreciation | Calculates the objective depreciation for the year set in the field above the depreciation grid. |

@@ -1,5 +1,5 @@
 ---
-title: Depreciation (Ammortamento)
+title: Depreciation 
 sidebar_position: 2
 ---
 
@@ -21,7 +21,7 @@ An alternative option to use, if you want to apply different percentages among v
 
 
 
-| Function (Funzione) | Meaning (Significato) |
+| Function | Extended Description |
 | --- | --- |
-| Search (Ricerca) | Searches for the list of depreciations to be calculated. |
-| Depreciation (Ammortamento) | Executes the calculation for the selected lines. |
+| Search | Searches for the list of depreciations to be calculated. |
+| Depreciation | Executes the calculation for the selected lines. |

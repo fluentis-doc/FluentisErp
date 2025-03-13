@@ -11,7 +11,7 @@ For further information on the filter parameters of the form **[see here](/docs/
 
 
 
-| Function (Funzione) | Meaning (Significato) |
+| Function | Extended Description |
 | --- | --- |
-| Preview (Anteprima) | Button to execute the print preview. |
-| Print (Stampa) | Button to perform the physical printing of the document. |
+| Preview | Button to execute the print preview. |
+| Report | Button to perform the physical printing of the document. |

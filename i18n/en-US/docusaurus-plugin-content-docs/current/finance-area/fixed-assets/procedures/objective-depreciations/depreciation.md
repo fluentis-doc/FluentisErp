@@ -1,5 +1,5 @@
 ---
-title: Depreciation (Ammortamento)
+title: Depreciation 
 sidebar_position: 2
 ---
 
@@ -9,8 +9,8 @@ RIBBON BAR: represents the menu of the form in question, that is, the area where
 
 
 
-| Function (Funzione) | Meaning (Significato) |
+| Function | Extended Description |
 | --- | --- |
-| Search (Ricerca) | Searches for the list of depreciations to be calculated. |
-| Depreciation (Ammortamento) | Executes the calculation for the selected lines. |
-| View Asset (Visualizza cespite) | Opens the asset registry for the asset whose depreciation is selected in the grid. |
+| Search | Searches for the list of depreciations to be calculated. |
+| Depreciation | Executes the calculation for the selected lines. |
+| View Fixed Asset | Opens the asset registry for the asset whose depreciation is selected in the grid. |
