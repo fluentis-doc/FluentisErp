@@ -1,5 +1,5 @@
 ---
-title: Introduction (Introduzione)
+title: Introduction
 sidebar_position: 1
 ---
 
@@ -13,4 +13,4 @@ At the end of the financial year, it is typically necessary to allocate a deferr
 
 There is a specific procedure for this operation that calculates the amount of the deferral to be automatically accounted for, based on the exact days of competence and the related cost.
 
-**Tables needed to use the module:** Leasing Types (Tipi Leasing)
+**Tables needed to use the module:** Leasing Types 

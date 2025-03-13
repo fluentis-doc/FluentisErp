@@ -1,5 +1,5 @@
 ---
-title: Fees accounting
+title: Fees Accounting
 sidebar_position: 1
 ---
 

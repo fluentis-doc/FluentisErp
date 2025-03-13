@@ -1,5 +1,5 @@
 ---
-title: Maxifees accounting
+title: Maxifees Accounting
 sidebar_position: 2
 ---
 

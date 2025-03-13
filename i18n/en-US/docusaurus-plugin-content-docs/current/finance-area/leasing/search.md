@@ -1,5 +1,5 @@
 ---
-title: Leasing Search (Ricerca Leasing)
+title: Leasing Search 
 sidebar_position: 2
 ---
 
@@ -9,11 +9,11 @@ The search filters, in addition to the number, description, and date of stipulat
 
 Another fundamental filter field is the **Leasing type**.
 
-This field, also displayed in the results grid, refers to the **specific table (tabella specifica)** (accessible also with the right mouse button > Open form) that **must be filled out before entering a new leasing contract for the first time**.
+This field, also displayed in the results grid, refers to the **specific table** (accessible also with the right mouse button > Open form) that **must be filled out before entering a new leasing contract for the first time**.
 
 ![](/img/it-it/finance-area/leasing/search/image01.png)
 
-The other data displayed in the results grid are the **Date of stipulation (Data di stipula)** (of the contract, the date from which the calculation of the competent days begins),
+The other data displayed in the results grid are the **Contract date** (of the contract, the date from which the calculation of the competent days begins),
 
 **Expiration date** (the date until which to calculate the total days for the calculation of the competent days),
 
@@ -21,15 +21,15 @@ The other data displayed in the results grid are the **Date of stipulation (Data
 
 **Description** of the asset granted in leasing,
 
-**Account / sub-account (Conto / sottoconto)** of the payment bank and the granting company,
+**Account / Detail Account** of the payment bank and the granting company,
 
 **Initial installment** (if foreseen and entered in the contract data),
 
-**Processing fees (Spese di istruttoria)** (management fees of the contract if foreseen and entered),
+**Dossier cost** (management fees of the contract if foreseen and entered),
 
 **Residual debit**: a field calculated as the sum of the capital portions of the installments expected, net of those already accounted for as paid.
 
-**LEASING TYPES TABLE (TABELLA TIPI LEASING)**:
+**LEASING TYPES TABLE**:
 
 Table that defines all the mandatory attributes of the leasing type, which must be recalled when entering a new leasing contract.![](/img/it-it/finance-area/leasing/search/image02.png)
 
@@ -47,10 +47,10 @@ The Financial method corresponds to the international accounting principles IAS/
 
 **Posting template**: accounting cause that will be used in the accounting registrations related to the leasing installments invoiced by the granting company to be accounted.
 
-**Account / sub-account for interest (Conto / sottoconto interessi)**: indicate in these fields the account on which the interest portion of the expected installments will be accounted. This setting will be proposed in new contracts entered with this type.
+**Account / detail account for interest**: indicate in these fields the account on which the interest portion of the expected installments will be accounted. This setting will be proposed in new contracts entered with this type.
 
-**Account / sub-account for installments (Conto / sottoconto canoni)**: indicate in this field the account to be used for the capital portion of the installments that will be accounted. The account will be proposed in new leased contracts entered with this type.
+**Account / detail account for installments**: indicate in this field the account to be used for the capital portion of the installments that will be accounted. The account will be proposed in new leased contracts entered with this type.
 
-**Account / sub-account for costs (Conto / sottoconto costo)**: indicate the account to be used for the cost of collecting the individual installments (if foreseen).
+**Account / detail account for costs**: indicate the account to be used for the cost of collecting the individual installments (if foreseen).
 
 **VAT**: in the case of invoice registration of the installments, indicate the rate to be automatically proposed in the accounting registrations of the installments.
