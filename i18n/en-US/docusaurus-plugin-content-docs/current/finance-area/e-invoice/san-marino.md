@@ -17,13 +17,15 @@ Within the table, normally filled out for the configuration of the Fluentis Busi
 
 - **San Marino Token** to enter the credential for connecting with the San Marino tax office (instead of the Italian ES).
 
+![](/img/it-it/finance-area/sdi-documents/sanmarino/sdiconfig.png)
+
 :::tip INFO
 Although the fields in the table related to the connection with Fluentis Business Hub and the Italian ES are mandatory (such as username and password), for San Marino the call will be made directly to the web service of the San Marino financial administration. Therefore, it may be necessary to enter "dummy" Fluentis Business Hub credentials in order to save the form content and populate the fields actually needed for the connection, such as the Token for the San Marino web service.
 :::
 
 ### Bizlink Connectors to be Enabled
 
-![](/img/it-it/finance-area/ES-documents/sanmarino/bizlinkconnectors.png)
+![](/img/it-it/finance-area/sdi-documents/sanmarino/bizlinkconnectors.png)
 
 In the event that the connectors visible in the image are not already present in the system and it becomes necessary to manually add them, it is advisable to copy the codes and descriptions present and then select the types related to San Marino electronic invoicing in the various fields.
 
@@ -43,9 +45,9 @@ In the event that the connectors visible in the image are not already present in
     
   Flow document: select the items respectively for sending or receiving.
   
-![](/img/it-it/finance-area/ES-documents/sanmarino/bizlinkconnectors2.png)
+![](/img/it-it/finance-area/sdi-documents/sanmarino/bizlinkconnectors2.png)
 
-![](/img/it-it/finance-area/ES-documents/sanmarino/bizlinkconnectors3.png)
+![](/img/it-it/finance-area/sdi-documents/sanmarino/bizlinkconnectors3.png)
 
 </details>
 
@@ -65,13 +67,13 @@ For the company in question, the flag that activates the creation of purchase in
 
 The indication of the merchandise type is done directly through the purchase invoicing item definition table, where, in the VAT Type field (fixed table), the information will be contained to populate the appropriate tag.
 
-![](/img/it-it/finance-area/ES-documents/sanmarino/purchaseintegration.png)
+![](/img/it-it/finance-area/sdi-documents/sanmarino/purchaseintegration.png)
 
-![](/img/it-it/finance-area/ES-documents/sanmarino/purchaseintegration2.png)
+![](/img/it-it/finance-area/sdi-documents/sanmarino/purchaseintegration2.png)
 
-![](/img/it-it/finance-area/ES-documents/sanmarino/xmlpurchaseinvoice.png)
+![](/img/it-it/finance-area/sdi-documents/sanmarino/xmlpurchaseinvoice.png)
 
-![](/img/it-it/finance-area/ES-documents/sanmarino/vatintegration.png)
+![](/img/it-it/finance-area/sdi-documents/sanmarino/vatintegration.png)
 
 </details>
 
@@ -133,7 +135,7 @@ For each section 2.2.1 Line Detail of section 2.2 Goods and Services Data
 
 where the value of the Tag TipoDato *TM* is fixed and the value of the RiferimentoTesto tag is taken from the list of values in the **VAT Type** field linked to the **Sales Turnover** classes (Fluentis table) inserted in the invoice.
 
-![](/img/it-it/finance-area/ES-documents/sanmarino/salesturnover.png)
+![](/img/it-it/finance-area/sdi-documents/sanmarino/salesturnover.png)
 
 In the Summary Data section, for each value of the VAT Type field (above) linked to sales turnover found in the document, a specific tag *RiferimentoNormativo* is inserted where the value is obtained by concatenating the VAT Type code linked to turnover and the value of the VAT Category field present in the table [**VAT Rates**](/docs/configurations/tables/finance/vat-rates). 
 
@@ -249,7 +251,7 @@ For agency service purchases (commissions), San Marino legislation provides for 
 ### CONFIGURATION IN VAT RATES TABLE 
 The single-phase tax is essentially the VAT rate applied to various items, for the localization of San Marino we have visibility of the **Fixed value** field:
 
-![](/img/it-it/finance-area/ES-documents/sanmarino/SMMonofase1.png)
+![](/img/it-it/finance-area/sdi-documents/sanmarino/SMMonofase1.png)
 
 When a value is set in this field, the percentage field will be reset to zero and vice versa.
 
@@ -257,19 +259,19 @@ When a value is set in this field, the percentage field will be reset to zero an
 
 E.g., sale invoice: **first article line** with fixed single-phase tax, will be valued with the relative amount:
 
-![](/img/it-it/finance-area/ES-documents/sanmarino/SMMonofase2.png)
+![](/img/it-it/finance-area/sdi-documents/sanmarino/SMMonofase2.png)
 
 All other article lines (or charges) with the same fixed rate will instead have tax = 0:
 
-![](/img/it-it/finance-area/ES-documents/sanmarino/SMMonofase3.png)
+![](/img/it-it/finance-area/sdi-documents/sanmarino/SMMonofase3.png)
 
 Total in VAT summaries: regardless of the total tax base for this rate, the tax amount will be the one fixed in the table.
 
-![](/img/it-it/finance-area/ES-documents/sanmarino/SMMonofase4.png)
+![](/img/it-it/finance-area/sdi-documents/sanmarino/SMMonofase4.png)
 
 Result in accounting: only one line will have the fixed amount of €2.
 
-![](/img/it-it/finance-area/ES-documents/sanmarino/SMMonofase5.png)
+![](/img/it-it/finance-area/sdi-documents/sanmarino/SMMonofase5.png)
 
 In manual registrations, the fixed tax field will be non-modifiable: to be precise, it seems modifiable, but once the user exits the field, Fluentis will cancel the modification to restore the earlier amount taken from the VAT table.
 
