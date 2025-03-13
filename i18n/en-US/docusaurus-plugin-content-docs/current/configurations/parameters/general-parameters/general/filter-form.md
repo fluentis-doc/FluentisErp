@@ -1,5 +1,5 @@
 ---
-title: Business Areas - Filter Form Settings (Impostazioni del modulo filtri nelle Aree di Business)
+title: Business Areas - Filter Form Settings
 sidebar_position: 5
 ---
 

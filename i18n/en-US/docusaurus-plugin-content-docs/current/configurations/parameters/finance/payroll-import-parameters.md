@@ -3,7 +3,7 @@ title: Payroll import parameters
 sidebar_position: 3
 ---
 
-## Table Data (Dati tabella)
+## Table Data
 
 The parameters listed are necessary for managing the import functionality of accounting entries related to employee payroll through .csv files (Zucchetti format) acquired via the bizlink service.
 
@@ -11,11 +11,11 @@ Here, the **Day**, the **Template**, and the **User** to be used for creating th
 
 **Allow table lookup**: (always set) makes Fluentis search for the mapping (transcoding) of accounts in the specific transcoding table below;
  
-**Group by cost center / Group by Employee (Raggruppa per centro di costo / Raggruppa per Dipendente)**: indicates to Fluentis what type of file to expect (from Zucchetti, a file grouped by cost center or by employee can be created (they differ by the number and position of the columns to be read)).
+**Group by cost center / Group by Employee**: indicates to Fluentis what type of file to expect (from Zucchetti, a file grouped by cost center or by employee can be created (they differ by the number and position of the columns to be read)).
 
 Note: The last two fields are not related to this payroll import, but to the import for controlling, which is currently executed via import from Excel sheet and so they are not actually used.
 
-## Payroll Import General Information (Generalità Importazione paghe Bizlink)
+## Payroll Import General Information
 
 The functionality provides for the creation of a folder monitored by the Bizlink service where to deposit the files to be imported, achieving automatic processing and importation. 
 

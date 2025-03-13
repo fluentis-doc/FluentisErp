@@ -9,7 +9,7 @@ The table is affected by the [**Fast Start**](/docs/guide/fast-start) procedure.
 If you intend to configure manually, refer to the checklist on the linked page.
 :::
 
-The parameters of the Asset module can be found under **Parameters > Administration (Parametri > Amministrativa)**.
+The parameters of the Asset module can be found under **Parameters > Administration**.
 
 ## Form Data
 
@@ -26,7 +26,7 @@ The parameters of the Asset module can be found under **Parameters > Administrat
   
 - **Show quantity**: if the flag is set, the quantity will be displayed.  
 
-- **Default UM (Default UM)**: defines the default unit of measure if the previous flag is set.  
+- **Default UM**: defines the default unit of measure if the previous flag is set.  
 
 - **Percentage of individual asset**: with the flag set, a field will be activated in the asset header where a depreciation percentage can be set that will be prioritized over the percentage set in the asset's belonging category.  
 
@@ -38,8 +38,8 @@ The parameters of the Asset module can be found under **Parameters > Administrat
 
 - **Accounting center enable**: this flag enables the reading of the cost center entered in the **Detail** tab of the asset record, which refers to the depreciation quota calculated by accounting logic, and makes the alternative management of technical depreciation handled in the appropriate tab (Depreciation for controlling) non-mandatory.
 
-## 2. Video Tutorial Fixed Assets Parameters (Video tutorial Parrametri Cespiti)
+## 2. Video Tutorial Fixed Assets Parameters
 
-:::important See Also (Vedi Anche)
+:::important See Also
 [**VIDEO TUTORIALS ON ASSET PARAMETERS**](/docs/video/finance/intro.md)
 :::

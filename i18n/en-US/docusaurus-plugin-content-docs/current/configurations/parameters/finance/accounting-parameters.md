@@ -123,40 +123,40 @@ The possible criteria contained in the section can be moved using the *Move up*/
 
 In this tab you set in detail the accounts of the chart of accounts that will be used in the various automatic accounting procedures executed by the management system.
 
-- **Purchase VAT sub-account (Sottoconto IVA acquisti):** Allows you to set the sub-account to be proposed in the automatic recording of the VAT turnover at the time of the final print of the periodic VAT liquidation.  
-- **Sales VAT sub-account (Sottoconto IVA vendite):** Allows you to set the sub-account to be proposed in the automatic recording of the VAT turnover at the time of the final print of the periodic VAT liquidation.  
-- **Initial balance sheet (Stato patrimoniale iniziale):** Allows you to set the sub-account to be proposed for the automatic account opening operations.  
-- **Current operating profit (Utile d'esercizio corrente):** Allows you to set the sub-account to be proposed for the automatic account closure/opening operations.  
-- **Current operating loss (Perdita d'esercizio corrente):** Allows you to set the sub-account to be proposed for the automatic account closure/opening operations.  
-- **Previous operating profit (Utile d'esercizio precedente):** Allows you to set the sub-account to be proposed for the automatic account closure/opening operations.  
-- **Previous operating loss (Perdita d'esercizio precedente):** Allows you to set the sub-account to be proposed for the automatic account closure/opening operations.  
-- **Income statement (Conto economico):** Allows you to set the sub-account to be proposed for the automatic account closure operations.  
-- **Negative differences (Minusvalenze):** Allows you to set the sub-account to be used in the recording of negative economic differences from asset sales.  
-- **Positive differences (Plusvalenze):** Allows you to set the sub-account to be used in the recording of positive economic differences from asset sales.  
-- **Active provisions (Sopravvenienze attive):** Allows you to set the sub-account to be used in the recording of active provisions (also used in the management of discounts and allowances).  
-- **Passive provisions (Sopravvenienze passive):** Allows you to set the sub-account to be used in the recording of passive provisions (also used in the management of discounts and allowances).  
-- **Active insufficiencies (Insussistenze attive):** Allows you to set the sub-account to be used in the recording of active insufficiencies.  
-- **Passive insufficiencies (Insussistenze passive):** Allows you to set the sub-account to be used in the recording of passive insufficiencies.  
-- **Debts to the Treasury (Debiti v/erario):** Allows you to set the sub-account to be proposed in the automatic recording of the VAT turnover at the time of the final print of the periodic VAT liquidation.  
-- **Credits from the Treasury (Crediti v/erario):** Allows you to set the sub-account of credit towards the Treasury to be proposed in the automatic recording of the VAT turnover at the time of the final print of the periodic VAT liquidation.  
-- **Receivables account (Conto corrispettivi):** Allows you to set the sub-account of the fictitious customer for the asset recording of the revenues.  
-- **Counterpart revenue (Contropartita corrispettivi):** Active if the previous receivables account is activated, allows you to set the economic counterpart sub-account of the revenues to be ventilated.  
-- **VAT rate on revenue (Aliquota IVA corrispettivi):** Active if the previous receivables account is activated, allows you to set the VAT rate for the recording of the revenues to be ventilated.  
-**Invoices to receive (Fatture da ricevere):** Allows you to set the generic sub-account to be used in the 'Accounting of invoices to receive' procedure present in the 'Purchase Invoices' module, or in the accounting of purchase invoices of a [type](/docs/configurations/tables/purchase/purchase-invoices-type) that requires the management of competence.  
-**Invoices to issue (Fatture da emettere):** Allows you to set the generic sub-account to be used in the accounting of sales invoices of a [type](/docs/configurations/tables/sales/invoices-type) that requires the management of competence.
-**Credit notes to receive (Note di accredito da ricevere):** Allows you to set the generic sub-account to be used in the 'Accounting of invoices to receive' procedure present in the 'Purchase Invoices' module, or in the accounting of credit notes received from the supplier of a [type](/docs/configurations/tables/purchase/purchase-invoices-type) that requires the management of competence.  
-**Credit notes to issue (Note di accredito da emettere):** Allows you to set the generic sub-account to be used in the accounting of credit notes to customers of a [type](/docs/configurations/tables/sales/invoices-type) that requires the management of competence.
-**Active deferrals (Risconti attivi):** Allows you to set the generic sub-account to be used in the automatic adjustments procedure of the 'Interim closings' module.  
-**Active accruals (Ratei attivi):** Allows you to set the generic sub-account to be used in the automatic adjustments procedure of the 'Interim closings' module.  
-**Passive deferrals (Risconti passivi):** Allows you to set the generic sub-account to be used in the automatic adjustments procedure of the 'Interim closings' module.  
-**Passive accruals (Ratei passivi):** Allows you to set the generic sub-account to be used in the automatic adjustments procedure of the 'Interim closings' module.  
-**INAIL Account (Conto INAIL):** Allows you to set the generic sub-account to be used in the accounting of the F24 model.  
-**INPS / Social Security Account (Conto INPS / Previdenza sociale):** Allows you to set the generic sub-account to be used in the accounting of the F24 model.  
-**Other taxes account (Conto altre imposte):** Allows you to set the generic sub-account to be used in the accounting of the F24 model.  
-**Self-invoice sub-account (SottoConto autofattura):** Allows you to set the sub-account for creating the self-invoice from accounting records for the communication of purchase data to the SDI. [**See Specific Parameters**](/docs/finance-area/e-invoice/auto-invoice/parameters).
-**Counterpart of quarterly interest in VAT liquidation (Contropartita interessi trimestrali liquidazione iva):** Allows you to automate the accounting of interest expenses arising from quarterly VAT liquidation by inserting the desired counterpart account (cost).
+- **Purchase VAT sub-account:** Allows you to set the sub-account to be proposed in the automatic recording of the VAT turnover at the time of the final print of the periodic VAT liquidation.  
+- **Sales VAT sub-account:** Allows you to set the sub-account to be proposed in the automatic recording of the VAT turnover at the time of the final print of the periodic VAT liquidation.  
+- **Initial balance sheet:** Allows you to set the sub-account to be proposed for the automatic account opening operations.  
+- **Current operating profit:** Allows you to set the sub-account to be proposed for the automatic account closure/opening operations.  
+- **Current operating loss:** Allows you to set the sub-account to be proposed for the automatic account closure/opening operations.  
+- **Previous operating profit:** Allows you to set the sub-account to be proposed for the automatic account closure/opening operations.  
+- **Previous operating loss:** Allows you to set the sub-account to be proposed for the automatic account closure/opening operations.  
+- **Income statement:** Allows you to set the sub-account to be proposed for the automatic account closure operations.  
+- **Capital losses:** Allows you to set the sub-account to be used in the recording of negative economic differences from asset sales.  
+- **Capital gain:** Allows you to set the sub-account to be used in the recording of positive economic differences from asset sales.  
+- **Casual profits:** Allows you to set the sub-account to be used in the recording of active provisions (also used in the management of discounts and allowances).  
+- **Casual loss:** Allows you to set the sub-account to be used in the recording of passive provisions (also used in the management of discounts and allowances).  
+- **Contingent assets:** Allows you to set the sub-account to be used in the recording of active insufficiencies.  
+- **Contingent liabilities:** Allows you to set the sub-account to be used in the recording of passive insufficiencies.  
+- **VAT payable:** Allows you to set the sub-account to be proposed in the automatic recording of the VAT turnover at the time of the final print of the periodic VAT liquidation.  
+- **VAT receivable:** Allows you to set the sub-account of credit towards the Treasury to be proposed in the automatic recording of the VAT turnover at the time of the final print of the periodic VAT liquidation.  
+- **Considerations account:** Allows you to set the sub-account of the fictitious customer for the asset recording of the revenues.  
+- **Offset consideration account:** Active if the previous receivables account is activated, allows you to set the economic counterpart sub-account of the revenues to be ventilated.  
+- **Corrispettivi VAT rate:** Active if the previous receivables account is activated, allows you to set the VAT rate for the recording of the revenues to be ventilated.  
+**Invoices to be received:** Allows you to set the generic sub-account to be used in the 'Accounting of invoices to receive' procedure present in the 'Purchase Invoices' module, or in the accounting of purchase invoices of a [type](/docs/configurations/tables/purchase/purchase-invoices-type) that requires the management of competence.  
+**Invoices to be issued:** Allows you to set the generic sub-account to be used in the accounting of sales invoices of a [type](/docs/configurations/tables/sales/invoices-type) that requires the management of competence.
+**Credit notes to receive:** Allows you to set the generic sub-account to be used in the 'Accounting of invoices to receive' procedure present in the 'Purchase Invoices' module, or in the accounting of credit notes received from the supplier of a [type](/docs/configurations/tables/purchase/purchase-invoices-type) that requires the management of competence.  
+**Credit notes to issue:** Allows you to set the generic sub-account to be used in the accounting of credit notes to customers of a [type](/docs/configurations/tables/sales/invoices-type) that requires the management of competence.
+**Deferred charges:** Allows you to set the generic sub-account to be used in the automatic adjustments procedure of the 'Interim closings' module.  
+**Accrued income:** Allows you to set the generic sub-account to be used in the automatic adjustments procedure of the 'Interim closings' module.  
+**Deferred income:** Allows you to set the generic sub-account to be used in the automatic adjustments procedure of the 'Interim closings' module.  
+**Accrued cost:** Allows you to set the generic sub-account to be used in the automatic adjustments procedure of the 'Interim closings' module.  
+**F24 Model account:** Allows you to set the generic sub-account to be used in the accounting of the F24 model.  
+**INPS / Social Security Account:** Allows you to set the generic sub-account to be used in the accounting of the F24 model.  
+**Other tax account:** Allows you to set the generic sub-account to be used in the accounting of the F24 model.  
+**Selfbilling account:** Allows you to set the sub-account for creating the self-invoice from accounting records for the communication of purchase data to the SDI. [**See Specific Parameters**](/docs/finance-area/e-invoice/auto-invoice/parameters).
+**Counterparty of quarterly interest liquidation VAT:** Allows you to automate the accounting of interest expenses arising from quarterly VAT liquidation by inserting the desired counterpart account (cost).
 
-## 3. Video Tutorials on Parameters (Video tutorials Parametri)
+## 3. Video Tutorials on Parameters
 
 :::important See Also
 [**VIDEO TUTORIALS ON PARAMETERS**](/docs/video/finance/intro.md)

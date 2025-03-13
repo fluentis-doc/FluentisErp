@@ -1,5 +1,5 @@
 ---
-title: Business Areas - Controlling (Business Areas - Controlling)
+title: Business Areas - Controlling 
 sidebar_position: 3
 ---
 
