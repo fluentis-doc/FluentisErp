@@ -454,7 +454,7 @@ These elements are applied to the totality of the document and are not distribut
 - **Percent Completed**: numerical value of the expense percentage.  
 
 :::note Note (Nota)
-If the *Charge type* entered has the [split flag (ripartito)](/docs/configurations/tables/general-settings/expenses-types#flag-di-aggancio-alle-logiche) active, during the invoice loading into the warehouse, the expense will be divided among all items based on the total amounts of each item row. The result of the expense allocation is visible in the [warehouse registration (registrazione di magazzino)](/docs/logistics/warehouse/stock-records/record).    
+If the *Charge type* entered has the [split flag (ripartito)](/docs/configurations/tables/general-settings/expenses-types#link-to-logic) active, during the invoice loading into the warehouse, the expense will be divided among all items based on the total amounts of each item row. The result of the expense allocation is visible in the [warehouse registration (registrazione di magazzino)](/docs/logistics/warehouse/stock-records/record).    
 1. If the items have a price: the total expense will be proportionally divided among the net amounts of each item; the result will be added to the initial price of the item in the *Total amount* field of the registration. If for some rows the amount is 0, it will be considered as 1 to allow an expense allocation over all items.   
 2. If all items have a price equal to 0: the expense will be evenly distributed among all item rows, and based on this distribution, the *movement amount/management amount (importo movimento/importo gestionale)* will be calculated in the registration, taking into account the quantities of each item.   
 :::
