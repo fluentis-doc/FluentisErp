@@ -1,5 +1,5 @@
 ---
-title: Business Areas - Master Schedule (Aree di business - Programma master)
+title: Business Areas - Master Schedule
 sidebar_position: 4
 ---
 

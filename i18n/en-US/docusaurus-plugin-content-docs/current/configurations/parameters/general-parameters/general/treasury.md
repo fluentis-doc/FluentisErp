@@ -1,11 +1,11 @@
 ---
-title: Business Areas - Treasury (Business Areas - Tesoreria)
+title: Business Areas - Treasury 
 sidebar_position: 2
 ---
 
 **Creating file Sepa** (code FS-PR-SEPA-PaymentRequest): this parameter allows you to associate a specific Bizlink 'SEPA' flow for the export of Euro bank transfers. Each geographic location has its own generation default (currently the Italian format is 4.01), but in case of changes in the reference structure, it can be convenient to change the type of file to be created freely from a certain date.
 
-**SDD (Sepa Direct Debit) (SDD ( Debito Diretto Sepa))** (code FS-PR-SEPA-SDD): like the previous one, but for SDD files that can be created from the Effects Portfolio Statements (currently for Italy, the version is 1.01).
+**SDD (Sepa Direct Debit)** (code FS-PR-SEPA-SDD): like the previous one, but for SDD files that can be created from the Effects Portfolio Statements (currently for Italy, the version is 1.01).
 
 **Creation of Sepa files Abroad** (code FS-PR-SEPA-ForeignPaymentRequest): like the first, but for the layout of transfers in foreign currency.
 

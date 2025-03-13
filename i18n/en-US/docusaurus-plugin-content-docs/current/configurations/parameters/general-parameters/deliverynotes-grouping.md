@@ -18,4 +18,4 @@ Obviously, this operation is not correct and is not manageable by the operator, 
 > **Warehouse template**: indicates the code of the reason to be indicated by default in the form;        
 > **Template description**: indicates the description of the reason to be indicated by default in the form.
 
-In the sections dedicated to the forms of the [WMS](/docs/logistics/wms/wms-intro), the **User warehouse load/unload parameters (Parametri magazzino di carico/scarico per utente)** to be entered for each of them are indicated.
+In the sections dedicated to the forms of the [WMS](/docs/logistics/wms/wms-intro), the **User warehouse load/unload parameters** to be entered for each of them are indicated.
