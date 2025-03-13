@@ -1,5 +1,5 @@
 ---
-title: Create Intrastat2 (Crea Intrastat2)
+title: Create Intrastat2 
 sidebar_position: 1
 ---
 

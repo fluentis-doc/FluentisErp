@@ -1,5 +1,5 @@
 ---
-title: Intrastat Models Printouts (Stampe modelli Intrastat)
+title: Intrastat Models Printouts 
 sidebar_position: 11
 ---
 

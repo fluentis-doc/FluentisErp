@@ -1,19 +1,19 @@
 ---
-title: Create Intrastat1 (Crea Intrastat1)
+title: Create Intrastat1 
 sidebar_position: 1
 ---
 
 LINK:
 
-**[Frontispiece (Frontespizio)](/docs/finance-area/declarations/intrastat/create-intrastat1/intra1)**
+**[Frontispiece](/docs/finance-area/declarations/intrastat/create-intrastat1/intra1)**
 
-**[Bis (Bis)](/docs/finance-area/declarations/intrastat/create-intrastat1/intra1-bis)**
+**[Bis](/docs/finance-area/declarations/intrastat/create-intrastat1/intra1-bis)**
 
-**[Ter (Ter)](/docs/finance-area/declarations/intrastat/create-intrastat1/intra1-ter)**
+**[Ter](/docs/finance-area/declarations/intrastat/create-intrastat1/intra1-ter)**
 
-**[Quater (Quater)](/docs/finance-area/declarations/intrastat/create-intrastat1/intra1-quater)**
+**[Quater](/docs/finance-area/declarations/intrastat/create-intrastat1/intra1-quater)**
 
-**[Quinquies (Quinquies)](/docs/finance-area/declarations/intrastat/create-intrastat1/intra1-quinquies)**
+**[Quinquies](/docs/finance-area/declarations/intrastat/create-intrastat1/intra1-quinquies)**
 
 
 The header of the Intrastat models includes the indication of:

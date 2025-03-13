@@ -19,11 +19,11 @@ Please note that the field **Nomenclature code to be associated** is a search wi
 
 
 
-| Function (Funzione) | Meaning (Significato) |
+| Function | Extended Description |
 | --- | --- |
-| Search (Ricerca) | Search for items to assign a classification code. |
-| Supplier Item Association (Associazione articolo fornitore) | Button to perform the association of the classification code to the selected items. |
+| Search | Search for items to assign a classification code. |
+| Vendor Item Association | Button to perform the association of the classification code to the selected items. |
 
-FILTER AREA (AREA DI FILTRO): the filter area is dedicated to hosting the list of possible types of data through which a selection can be made. Filters are typically always in 'AND' condition and it is possible to specify multiple filtering criteria simultaneously.
+FILTER AREA: the filter area is dedicated to hosting the list of possible types of data through which a selection can be made. Filters are typically always in 'AND' condition and it is possible to specify multiple filtering criteria simultaneously.
 
-RESULT GRID (GRIGLIA DI RISULTATO): the result grid represents the list of items that match the above-specified filter data. The user, after specifying the values through which they wish to obtain a search of the items, pressing the [Search (Ricerca)] button present in the related Ribbon, will get the desired items listed in the result grid.
+RESULT GRID: the result grid represents the list of items that match the above-specified filter data. The user, after specifying the values through which they wish to obtain a search of the items, pressing the [Search] button present in the related Ribbon, will get the desired items listed in the result grid.

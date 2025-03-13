@@ -13,8 +13,8 @@ The selection is confirmed by pressing the **Forward** button present in the rib
 
 
 
-| Function (Funzione) | Meaning (Significato) |
+| Function | Extended Description |
 | --- | --- |
-| Search (Ricerca) | Button to search the list of intracommunity invoices. |
-| Select all (Seleziona tutti) | Allows you to select all lines present in the search grid. |
-| Deselect all (Deseleziona tutti) | Allows you to remove the selection from all lines in the search grid. |
+| Search | Button to search the list of intracommunity invoices. |
+| Select all | Allows you to select all lines present in the search grid. |
+| Deselect all | Allows you to remove the selection from all lines in the search grid. |

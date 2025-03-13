@@ -1,11 +1,11 @@
 ---
-title: Search (Ricerca)
+title: Search
 sidebar_position: 1
 ---
 
 LINK:
 
-**[Introduction (Introduzione)](/docs/finance-area/declarations/intrastat/general-overview)**
+**[Introduction](/docs/finance-area/declarations/intrastat/general-overview)**
 
  
 

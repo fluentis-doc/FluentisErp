@@ -7,8 +7,8 @@ Use this Tab to cancel entries in the model sections, making the related documen
 
 
 
-| Function (Funzione) | Meaning (Significato) |
+| Function | Extended Description |
 | --- | --- |
-| Search (Ricerca)  | Button to delete selected intra-community invoices. |
-| Restore Intrastat (Ripristina Intrastat) | Button to restore the entire Intrastat declaration. |
-| Restore invoice (Ripristina fattura) | Button to restore a single invoice present in the Intrastat declaration. |
+| Search  | Button to delete selected intra-community invoices. |
+| Restore Intrastat | Button to restore the entire Intrastat declaration. |
+| Restore invoice | Button to restore a single invoice present in the Intrastat declaration. |

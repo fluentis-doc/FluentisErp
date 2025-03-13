@@ -1,9 +1,9 @@
 ---
-title: Introduction (Introduzione)
+title: Introduction
 sidebar_position: 1
 ---
 
-The Intrastat module is dedicated to the creation of Intrastat statistical declarations: it includes both manual data management and automatic insertion based on the data present in the purchase and sales invoices of the respective purchasing and sales areas, as well as a recovery of data from accounting records. The two modes are alternative and interdependent. By accounting for the invoices concerned with the appropriate settings (specifically activating the **flag** *Intrastat* within the **accounting reasons (causali)** involved), it is possible to manage the automatic creation also through accounting records, for both goods and services.
+The Intrastat module is dedicated to the creation of Intrastat statistical declarations: it includes both manual data management and automatic insertion based on the data present in the purchase and sales invoices of the respective purchasing and sales areas, as well as a recovery of data from ledger records. The two modes are alternative and interdependent. By accounting for the invoices concerned with the appropriate settings (specifically activating the **flag** *Intrastat* within the **ledger templates** involved), it is possible to manage the automatic creation also through accounting records, for both goods and services.
 
 The basic settings are linked to the **Registers** and **document types** in purchasing and sales: 
 
@@ -17,14 +17,14 @@ Once the data for the forms is completed, it will be possible to proceed with pr
 
 **List of mandatory tables to use the module:**
 
-[Home>Tables>Administration] and [Home>Tables>General Settings] to identify the correct settings for Intrastat management.
+[Home>Tables>Finance] and [Home>Tables>General Settings] to identify the correct settings for Intrastat management.
 
 [Nature of Intrastat transaction](/docs/configurations/tables/finance/nature-of-intrastat-transaction), 
 
-[Intrastat numbering](/docs/configurations/tables/fluentis-numerations), 
+[Intrastat numerations](/docs/configurations/tables/fluentis-numerations), 
 
 [Nomenclature codes](/docs/configurations/tables/finance/nomenclature-codes), 
 
-[Shipping (Porto)](/docs/configurations/tables/general-settings/carriages), 
+[Carriage](/docs/configurations/tables/general-settings/carriages), 
 
-[Shipments (Spedizioni)](/docs/configurations/tables/general-settings/shipments).
+[Shippings](/docs/configurations/tables/general-settings/shipments).

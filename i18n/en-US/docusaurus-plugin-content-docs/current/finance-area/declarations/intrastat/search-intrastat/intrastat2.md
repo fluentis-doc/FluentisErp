@@ -9,10 +9,10 @@ In the ribbon bar, there are also commands for printing the model; it is necessa
 
 
 
-| Function (Funzione) | Meaning (Significato) |
+| Function | Extended Description |
 | --- | --- |
-| Search (Ricerca) | Button to apply search filters to the entire database of previously entered Intrastat2 declarations. Ability to search by summary type, period, year, and submission number. |
-| Create new (Creazione nuovo) | Calls the procedure to insert a new Intrastat 2 declaration. |
-| Edit (Modifica) | Calls the procedure to modify a previously entered Intrastat 2 declaration. |
-| Delete (Elimina) | Deletes a previously entered Intrastat 2 declaration. |
-| Export to file (Esporta su file) | Button for the creation and simultaneous export of the telematic file, saving the file in a directory chosen by the user and in Fluentis document management. |
+| Search | Button to apply search filters to the entire database of previously entered Intrastat2 declarations. Ability to search by summary type, period, year, and submission number. |
+| Create new | Calls the procedure to insert a new Intrastat 2 declaration. |
+| Edit | Calls the procedure to modify a previously entered Intrastat 2 declaration. |
+| Delete | Deletes a previously entered Intrastat 2 declaration. |
+| Export on file | Button for the creation and simultaneous export of the telematic file, saving the file in a directory chosen by the user and in Fluentis document management. |

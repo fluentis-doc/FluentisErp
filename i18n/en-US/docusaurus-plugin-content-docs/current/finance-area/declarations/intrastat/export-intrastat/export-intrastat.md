@@ -1,5 +1,5 @@
 ---
-title: Export of Telematic Track (Esportazione tracciato telematico)
+title: Export of Telematic Track 
 sidebar_position: 1
 ---
 
@@ -21,5 +21,5 @@ At the same time, an export to an external folder is also provided, controlled b
 The difference in the track between the Intraweb version and the Entratel version refers to the header record track, where it is noted that for the Entratel version, the initial code ZENT appears.
 The file name can also be different, typically scambi.cee for Intraweb.
 
-It is also possible to manage a **custom code (codice personalizzato)** for the header record track through the **Intrastat file sender identifier** field present within the [**General Accounting Parameters (Parametri generali di contabilità)**](/docs/configurations/parameters/finance/accounting-parameters), section *Intrastat*.
+It is also possible to manage a **custom code** for the header record track through the **Intrastat file sender identifier** field present within the [**General Accounting Parameters**](/docs/configurations/parameters/finance/accounting-parameters), section *Intrastat*.
 :::

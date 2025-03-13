@@ -17,8 +17,8 @@ finally, the selection regarding any changes in frequency present in the declara
 
 ![](/img/it-it/finance-area/declarations/intrastat/create-intrastat1/intra1/image04.png)
 
-| Function (Funzione) | Meaning (Significato) |
+| Function | Extended Description |
 | --- | --- |
-| Save (Salva) | Button through which to save the declaration. |
-| [Automatic creation (Creazione automatica)](/docs/finance-area/declarations/intrastat/automatic-creation-intrastat1/automatic-creation) | Button that calls the guided procedure for data retrieval from the sales area. |
-| [Creation from records (Creazione da registrazioni)](/docs/finance-area/declarations/intrastat/create-from-records-intrastat1/create-from-records-intrastat1-intro) | Button that calls the guided procedure for data retrieval from accounting records. |
+| Save | Button through which to save the declaration. |
+| [Automatic creation](/docs/finance-area/declarations/intrastat/automatic-creation-intrastat1/automatic-creation) | Button that calls the guided procedure for data retrieval from the sales area. |
+| [Creation from records](/docs/finance-area/declarations/intrastat/create-from-records-intrastat1/create-from-records-intrastat1-intro) | Button that calls the guided procedure for data retrieval from ledger records. |

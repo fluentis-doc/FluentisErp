@@ -1,5 +1,5 @@
 ---
-title: Parameters (Parametri)
+title: Parameters
 sidebar_position: 3
 ---
 

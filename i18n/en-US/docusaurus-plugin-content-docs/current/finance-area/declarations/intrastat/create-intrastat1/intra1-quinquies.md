@@ -1,5 +1,5 @@
 ---
-title: Intra1 Quinquies (Intra1 quinquies)
+title: Intra1 Quinquies 
 sidebar_position: 6
 ---
 
@@ -7,9 +7,9 @@ The 'quinquies' section of the Intrastat declarations contains corrections relat
 
 See section **[Intra 1 Quater](/docs/finance-area/declarations/intrastat/create-intrastat1/intra1-quater)**
 
-| Function (Funzione) | Meaning (Significato) |
+| Function | Extended Description |
 | --- | --- |
-| Save (Salva) | Button through which to save the declaration. |
+| Save | Button through which to save the declaration. |
 | **[Automatic Creation](/docs/finance-area/declarations/intrastat/automatic-creation-intrastat1/automatic-creation)** | Button that calls the guided procedure for data retrieval from the sales area. |
-| **[Creation from Records](/docs/finance-area/declarations/intrastat/create-from-records-intrastat1/create-from-records-intrastat1-intro)** | Button that calls the guided procedure for data retrieval from accounting records. |
-| Delete (Cancella) | Button to delete the selected detail line. |
+| **[Creation from Records](/docs/finance-area/declarations/intrastat/create-from-records-intrastat1/create-from-records-intrastat1-intro)** | Button that calls the guided procedure for data retrieval from ledger records. |
+| Delete | Button to delete the selected detail line. |
