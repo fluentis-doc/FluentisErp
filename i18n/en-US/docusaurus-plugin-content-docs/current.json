@@ -96,7 +96,7 @@
     "description": "The label for category Stampe analitica in sidebar financeArea"
   },
   "sidebar.financeArea.category.Partite": {
-    "message": "Mat. values",
+    "message": "Maturity values",
     "description": "The label for category Partite in sidebar financeArea"
   },
   "sidebar.financeArea.category.Procedure": {
@@ -228,7 +228,7 @@
     "description": "The label for category Leasing in sidebar financeArea"
   },
   "sidebar.financeArea.category.Contabilizzazioni": {
-    "message": "Contabilizations",
+    "message": "Postings",
     "description": "The label for category Contabilizzazioni in sidebar financeArea"
   },
   "sidebar.financeArea.category.Documenti SDI": {
@@ -316,11 +316,11 @@
     "description": "The label for category Dipendente in sidebar erpHome"
   },
   "sidebar.erpHome.category.Gestione ore produzione": {
-    "message": "Gestione ore produzione",
+    "message": "Production hours management",
     "description": "The label for category Gestione ore produzione in sidebar erpHome"
   },
   "sidebar.erpHome.category.Utilità": {
-    "message": "Utilità",
+    "message": "Utilities",
     "description": "The label for category Utilità in sidebar erpHome"
   },
   "sidebar.erpHome.category.ExtraData": {
@@ -932,7 +932,7 @@
     "description": "The label for category Acquisizione effetti dalle fatture in sidebar treasury"
   },
   "sidebar.treasury.category.Contabilizzazione": {
-    "message": "Contabilization",
+    "message": "Postings",
     "description": "The label for category Contabilizzazione in sidebar treasury"
   },
   "sidebar.treasury.category.Contabilizzazione accrediti": {
@@ -1156,7 +1156,7 @@
     "description": "The label for category Rientri in sidebar subcontractor"
   },
   "sidebar.subcontractor.category.Nuovo rientro": {
-    "message": "new return",
+    "message": "New return",
     "description": "The label for category Nuovo rientro in sidebar subcontractor"
   },
   "sidebar.subcontractor.category.stampe": {
@@ -1172,7 +1172,7 @@
     "description": "The label for category Gestione progetti in sidebar projectManagement"
   },
   "sidebar.projectManagement.category.Nuovi progetti": {
-    "message": "new Project",
+    "message": "New Project",
     "description": "The label for category Nuovi progetti in sidebar projectManagement"
   },
   "sidebar.projectManagement.category.Stampe": {
@@ -1296,7 +1296,7 @@
     "description": "The label for category Allineamento registrazioni periodiche in sidebar controlling"
   },
   "sidebar.controlling.category.Chiusure infrannuali": {
-    "message": "mid-year closure",
+    "message": "Mid-year closure",
     "description": "The label for category Chiusure infrannuali in sidebar controlling"
   },
   "sidebar.controlling.category.Crea chiusure infrannuali": {
@@ -1340,7 +1340,7 @@
     "description": "The label for category Registrazioni extracontabili di chiusura in sidebar controlling"
   },
   "sidebar.controlling.category.procedure": {
-    "message": "procedures",
+    "message": "Procedures",
     "description": "The label for category procedure in sidebar controlling"
   },
   "sidebar.controlling.category.contabilità gestionale": {
@@ -1348,11 +1348,11 @@
     "description": "The label for category contabilità gestionale in sidebar controlling"
   },
   "sidebar.controlling.category.Registrazioni": {
-    "message": "records",
+    "message": "Records",
     "description": "The label for category Registrazioni in sidebar controlling"
   },
   "sidebar.controlling.category.prima nota": {
-    "message": "journal entry",
+    "message": "Journal entry",
     "description": "The label for category prima nota in sidebar controlling"
   },
   "sidebar.controlling.category.storico": {
@@ -1368,11 +1368,11 @@
     "description": "The label for category Budgeting in sidebar controlling"
   },
   "sidebar.controlling.category.registrazioni extra contabili di budget": {
-    "message": "off-balance sheet recording",
+    "message": "Off-balance sheet recording",
     "description": "The label for category registrazioni extra contabili di budget in sidebar controlling"
   },
   "sidebar.controlling.category.registrazioni di budget": {
-    "message": "budget records",
+    "message": "Budget records",
     "description": "The label for category registrazioni di budget in sidebar controlling"
   },
   "sidebar.controlling.category.Reporting": {
@@ -1404,7 +1404,7 @@
     "description": "The label for category previsioni di vendita in sidebar controlling"
   },
   "sidebar.controlling.category.Famiglie prodotti": {
-    "message": "product family",
+    "message": "Product family",
     "description": "The label for category Famiglie prodotti in sidebar controlling"
   },
   "sidebar.controlling.category.Costo prodotto": {
@@ -1416,7 +1416,7 @@
     "description": "The label for category Avviamento applicazione in sidebar guide"
   },
   "sidebar.guide.category.Operare con i dati": {
-    "message": "Operare con i dati",
+    "message": "Data operations",
     "description": "The label for category Operare con i dati in sidebar guide"
   },
   "sidebar.guide.category.Glossario": {
