@@ -1,5 +1,5 @@
 ---
-title: Periodic VAT Declaration (Dichiarazione iva periodoca)
+title: Periodic VAT Declaration 
 sidebar_position: 6
 ---
 
@@ -17,7 +17,7 @@ When opening the new form, the current year and the month or quarter following t
 
 It is reminded that, if the line corresponding to the month or quarter of reference is not created manually (in order to manage the above values) using the New button, it will still be created during the final printing phase of the periodic settlement.
 
-**REMAINING CREDIT TO CARRY FORWARD (CREDITO RESIDUO DA RIPORTARE)**:
+**REMAINING CREDIT TO CARRY FORWARD**:
 
 Fill in the VP16 field WITHOUT INDICATING THE SIGN
 
@@ -25,7 +25,7 @@ Fill in the VP16 field WITHOUT INDICATING THE SIGN
 
 Similarly, other amounts can be entered to increase the resulting credit in the settlement, such as the deduction of the VAT advance paid in December (field VP20).
 
-**VAT CREDIT TO OFFSET IN F24 (CREDITO IVA DA COMPENSARE IN F24)**:
+**VAT CREDIT TO OFFSET IN F24**:
 
 Fill in the VP32 field WITHOUT INDICATING THE SIGN
 

@@ -1,11 +1,11 @@
 ---
-title: Online Withholding Certification (Certificazione ritenuta telematica)
+title: Online Withholding Certification 
 sidebar_position: 2
 ---
 
 From this form, it is possible to manage the Unique Certification of withholding taxes applied to recipients by generating the file for online submission.
 
-:::danger **WARNING (ATTENZIONE)**:
+:::danger **WARNING**:
  For correct data processing by the application, it is essential that both the payments to the recipients, **and the related payment**, have been registered using the functionalities of the recipient module, so that the withholding tax liability can be calculated correctly.
 :::
 
@@ -19,21 +19,21 @@ Double-clicking on the declaration allows you to enter edit mode for it.
 
 The **New** button will create a new declaration.
 
-### MANAGEMENT OF REGISTRIES (GESTIONE DELLE ANAGRAFICHE):
+### REGISTERS MANAGEMENT:
 
 ![](/img/it-it/finance-area/declarations/declarations/withholding-tax-certification/image01.png)
 
-Within the section related to contact information, there are (open the expander) fields for the recipient's data (date and place of birth). This information will be included in the unique certification. The two fields for **First Name** and **Surname** must also be filled out as the single field Business Name (Ragione sociale) does not suffice for tax purposes.
+Within the section related to contact information, there are (open the expander) fields for the recipient's data (date and place of birth). This information will be included in the unique certification. The two fields for **Name** and **Surname** must also be filled out as the single field Company Name does not suffice for tax purposes.
 
-### HEADER DATA ENTRY (INSERIMENTO DATI DI TESTATA):
+### HEADER DATA ENTRY:
 
 **Year**: automatically proposed to be equal to the current year;
 
-**Tax Code of Subject Obligated (Cod. Fiscale Sogg. Obbl.)**: enter the tax code of the company (withholding agent). This data will be reported in the online trace and on the header of the printed tax model.
+**NINO Sub. Oblig.**: enter the tax code of the company (withholding agent). This data will be reported in the online trace and on the header of the printed tax model.
 
-**Tax Code of Intermediary (Cod. Fiscale intermediario)**: if using an authorized intermediary to send the declaration (Caf, Accountant, etc.), indicate the related tax code here.
+**NINO Intermediary**: if using an authorized intermediary to send the declaration (Caf, Accountant, etc.), indicate the related tax code here.
 
-**Caf Registration Number (Nr. iscrizione Caf)**: this field allows you to enter the registration number of the intermediary authorized to submit online;
+**Caf Registration Number**: this field allows you to enter the registration number of the intermediary authorized to submit online;
 
 **Dispatch use date**: field to indicate the date of the commitment for electronic submission by the authorized intermediary;
 
@@ -45,17 +45,17 @@ Within the section related to contact information, there are (open the expander)
 
 **Aggregate / Detailed**: this field specifies whether the unique certification to be processed will be detailed (will report the distinct data for each single payment made to each recipient) or aggregated (will report the consolidated and totalized data for each single recipient). See ministerial instructions.
 
-**Subject Making the Declaration, Individual (Soggetto che effettua la dichiarazione, pers. fis.)**: the combo box, linked to the Employee table, allows you to insert the subject who signs the declaration (this data is mandatory).
+**Subject Making the Declaration, Individual**: the combo box, linked to the Employee table, allows you to insert the subject who signs the declaration (this data is mandatory).
 
 **Position code**: enter via the combo box the charge code of the subject who signs the declaration (e.g., legal representative), see ministerial instructions;
 
-**Subject Making the Declaration, Legal Entity (Soggetto che effettua la dichiaraz. pers. giuridica)**: in this field, you can enter the personal data (taken from the registries already present in the system) of a company that submits the declaration on behalf of the operating company (see ministerial instructions);
+**Subject Making the Declaration, Legal Entity**: in this field, you can enter the personal data (taken from the registries already present in the system) of a company that submits the declaration on behalf of the operating company (see ministerial instructions);
 
 **Date signature withholding**: it is necessary to indicate the date of the signature of the declaration;
 
 **Signature**: always activate the flag indicating that the declaration is signed and prints the name of the signing subject (see field Subject Making the Declaration...).
 
-### DETAILS GRID (GRIGLIA DETTAGLIO)
+### DETAILS GRID 
 
 The fields reflect the data present in the ministerial model, and therefore, for content illustration, reference is made to fiscal instructions.
 
@@ -65,8 +65,8 @@ To generate the file to be transmitted electronically, use the **Export** button
 
 ![](/img/neutral/common/document-manager.png)
 
-### LOWER GRID (GRIGLIA INFERIORE)
+### LOWER GRID 
 
-**AU Codes (Codici AU....)** is reserved for entering, for each row of the Detail grid, additional information required in particular situations, as referred to in the ministerial instructions.
+**Codes AU....** is reserved for entering, for each row of the Detail grid, additional information required in particular situations, as referred to in the ministerial instructions.
 
 ![](/img/it-it/finance-area/declarations/declarations/withholding-tax-certification/image05.png)

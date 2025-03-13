@@ -19,6 +19,6 @@ The Amount field, the final result of the VAT debt/credit calculation, is editab
 
 ![](/img/it-it/finance-area/declarations/declarations/vat-payment/image02.png)
 
-**Group VAT Settlement (Liquidazione iva di gruppo):** indicates that the settlement has been executed through the mode and functionality of the VAT group.
+**Vat settlement of Group:** indicates that the settlement has been executed through the mode and functionality of the VAT group.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/HWjgN0yehEc" title="YouTube video player" frameborder="0" allowfullscreen="true"></iframe>

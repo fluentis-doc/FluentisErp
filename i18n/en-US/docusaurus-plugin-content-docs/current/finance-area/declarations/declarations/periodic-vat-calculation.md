@@ -9,7 +9,7 @@ Using the **Search** button present in the ribbon bar, you can view the list of 
 
 To insert a new communication, press the **New** button.
 
-**INSERTION PROCEDURE**:
+**INSERT PROCEDURE**:
 
 - indicate the **Year** subject of communication and the number of the **Quarter** to be declared. At this point, the program will verify if there is already a declaration for this period, and if not (otherwise a warning is displayed), it will automatically create the name to be assigned to the telematic file and display the tabs related to the three months of the quarter with the corresponding lines according to the ministerial model.
 
@@ -17,15 +17,15 @@ To insert a new communication, press the **New** button.
 
   **Fiscal Code**: If the company is a capital company, it will be mandatory to indicate the tax code of the individual who signs the communication and the corresponding **Position code**;
 
-  **Declarant (Dichiarante):** alternatively to filling in the previous field (Tax code), it is possible to select the signing employee from the combo box linked to the Employee table, in which the employee (Administrator, Administrative Manager, etc.) in question must already have been entered, complete with tax code and charge code;
+  **Declarant:** alternatively to filling in the previous field (Tax code), it is possible to select the signing employee from the combo box linked to the Employee table, in which the employee (Administrator, Finance Manager, etc.) in question must already have been entered, complete with tax code and charge code;
 
   **Position code**: the combo box is linked to a fixed table with codes defined by the ministerial model;
 
   **Intermediary fiscal code**: if an authorized intermediary is used for submitting the declaration (Caf, Accountant, etc...), indicate the corresponding tax code here.
 
-  **Date of commitment (Data dell'impegno):** field to indicate the date of the commitment to the telematic presentation by the authorized intermediary;
+  **Commitment date:** field to indicate the date of the commitment to the telematic presentation by the authorized intermediary;
 
-  **Controlling VAT number (Partita IVA controllante):** (group VAT settlement) If the Communication is submitted by an entity or commercial company that has used the group VAT settlement procedure in the quarter, indicate the VAT number of the controlling entity or company (also in the Communication submitted by this subject for its individual position). The field must also be filled in if the entity or company with monthly periodic settlements has exited the group VAT settlement in the second or third month of the quarter.
+  **CVerified Vat reg. no.:** (group VAT settlement) If the Communication is submitted by an entity or commercial company that has used the group VAT settlement procedure in the quarter, indicate the VAT number of the controlling entity or company (also in the Communication submitted by this subject for its individual position). The field must also be filled in if the entity or company with monthly periodic settlements has exited the group VAT settlement in the second or third month of the quarter.
 
   **Group declaration**: check the box if the Communication refers to the group VAT settlement (see ministerial instructions). By activating this flag for companies belonging to the group, some fields such as VAT payable (since it is paid by the parent company) will not be calculated.
 
@@ -33,9 +33,9 @@ NOTE: the communication executed in this mode relies on the prior processing of 
 
   **Last month**: In case of the subsequent lack of requirements to use the group VAT settlement procedure, indicate the last month of control (e.g. “02” for the month of February - See ministerial instructions).
 
-  **Signature (Firma):** **MANDATORY** field, which must always be filled in.
+  **Signature:** **MANDATORY** field, which must always be filled in.
 
-  **Signature of the authorized person (Firma dell'incaricato):** to be affixed if the fields related to the authorized intermediary are filled in;
+  **Intermediary signature:** to be affixed if the fields related to the authorized intermediary are filled in;
 
   **Intermediary Commitment**: the combo box is connected to a fixed table and must be filled in; in case of presentation by an intermediary, select whether the model was prepared by the taxpayer or by the intermediary itself; otherwise, leave the option "none".
 
@@ -47,7 +47,7 @@ NOTE: the communication executed in this mode relies on the prior processing of 
 
 **ATTENTION**:
 
-The correct processing of the data proposed by the calculation procedure, so that they conform to the result of the various **[periodic VAT settlements](/docs/finance-area/ledger-records/fiscal-report/period-vat-settlement)**, particularly depends on the correct activation/authorization, for calculation purposes, of the various VAT codes used in accounting records.
+The correct processing of the data proposed by the calculation procedure, so that they conform to the result of the various **[periodic VAT settlements](/docs/finance-area/ledger-records/fiscal-report/period-vat-settlement)**, particularly depends on the correct activation/authorization, for calculation purposes, of the various VAT codes used in ledger records.
 
 To verify the correct setting, open the **[VAT rates / modalities](/docs/configurations/tables/finance/vat-rates)** table and check in particular the column related to the flag in VAT declaration.
 

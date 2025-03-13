@@ -3,7 +3,7 @@ title: Plafond management
 sidebar_position: 5
 ---
 
-The form is located at **Administration > Declarations > Ceiling > New** and allows for the creation of a *new* Ceiling Calculation.
+The form is located at **Finance > Declarations > Ceiling > New** and allows for the creation of a *new* Ceiling Calculation.
 
 ## How to Create a Ceiling Calculation
 
@@ -15,7 +15,7 @@ The form is located at **Administration > Declarations > Ceiling > New** and all
 
 **Year**: enter the starting year of the ceiling calculation being entered.
 
-:::tip[Note (Nota)]
+:::tip[Note]
 In managing the various calculations, we can block the period, for example, every year, and enter a new calculation for the following year; however, this is not necessary. It is recommended (for convenience as well) to continue within the same calculation year after year by continuing to press the *Propose Values* command.
 
 The need to enter a new calculation arises, instead, in the case of a change in calculation methodology, for example, from a fixed ceiling to a mobile ceiling.
@@ -28,17 +28,17 @@ The need to enter a new calculation arises, instead, in the case of a change in 
 
 **Start date plafond**: it is necessary to enter the month and year of the beginning of the ceiling, and in the case of an 'extension' ceiling, also the **month**, **year**, and **amount** of the last calculated period (Ceiling Properties section). 
 
-**Control Value (Valore di controllo)**: it is possible to set a value threshold in order to alert the user that they are about to use the total available ceiling. For example, if the ceiling available at the beginning of the year is one hundred thousand euros, if we set the threshold value to ten thousand, we will receive a warning upon exceeding ninety thousand, as we are using the last ten thousand.
+**Value of plafond control**: it is possible to set a value threshold in order to alert the user that they are about to use the total available ceiling. For example, if the ceiling available at the beginning of the year is one hundred thousand euros, if we set the threshold value to ten thousand, we will receive a warning upon exceeding ninety thousand, as we are using the last ten thousand.
 
 **Default**: flag that marks, particularly in the presence of multiple stored calculations, which calculation is "current".
 
-:::tip[Attention (Attenzione)]
-In the presence of a Ceiling calculation with this flag active, when creating the telematic track for submission to the Revenue Agency for the issued [**intent declarations (dichiarazioni di intento)**](/docs/finance-area/declarations/declarations/intent-declaration), the specific field will be populated.
+:::tip[Attention]
+In the presence of a Ceiling calculation with this flag active, when creating the telematic track for submission to the Revenue Agency for the issued [**intent declarations**](/docs/finance-area/declarations/declarations/intent-declaration), the specific field will be populated.
 :::
 
 2. Load the historical values to be used: it is necessary to report the data for the twelve months prior to the date (year) of the calculation start in the detail grid. 
 
-:::tip[Attention (Attenzione)]
+:::tip[Attention]
 In the case of a **mobile** ceiling, it will be necessary to enter precisely **month by month**, as each month the 12th outgoing month must be subtracted and the data of the new 12th must be added; 
 
 in the case of a **solar ceiling**, however, the first 11 months can be loaded with **all zero values** and directly provide the total sales in the ceiling of the year for the final period of **December**. 

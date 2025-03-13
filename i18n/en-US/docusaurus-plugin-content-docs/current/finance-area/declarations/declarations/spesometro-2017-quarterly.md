@@ -1,5 +1,5 @@
 ---
-title: Quarterly Spesometro 2017 (Spesometro 2017 trimestrale)
+title: Quarterly Spesometro 2017 
 sidebar_position: 8
 ---
 
@@ -13,7 +13,7 @@ Since 2017, the decree 193/2016 has introduced the obligation of quarterly commu
 
 **Documents that do not fall under the quarterly Spesometro:**
 
-- Data from electronic invoices, issued and received, that have transited through the Exchange System (SdI) do not need to be communicated. If not all issued and received invoices transit through the SdI, the taxpayer may limit themselves to electronically sending the data of the other invoices, or, if it is more convenient, may still send data regarding all invoices, including electronic ones;
+- Data from electronic invoices, issued and received, that have transited through the Exchange System (ES) do not need to be communicated. If not all issued and received invoices transit through the ES, the taxpayer may limit themselves to electronically sending the data of the other invoices, or, if it is more convenient, may still send data regarding all invoices, including electronic ones;
 
 - Data contained in documents other than invoices (such as fuel card data) should not be communicated.
 
@@ -21,15 +21,15 @@ Since 2017, the decree 193/2016 has introduced the obligation of quarterly commu
 
 In order to proceed with the correct generation of the file (in xml format to be uploaded to the specific portal for exchanges with the Revenue Agency), it is necessary to prepare some basic archives within the Fluentis tables.
 
-- **[Document Types (Tipi Documento)](/docs/configurations/tables/general-settings/document-types)**
+- **[Document Types](/docs/configurations/tables/general-settings/document-types)**
 
-- **[VAT Rates/Methods (Aliquote/Modalità Iva)](/docs/configurations/tables/finance/vat-rates)**
+- **[VAT Rates/Mode](/docs/configurations/tables/finance/vat-rates)**
 
 ![](/img/it-it/finance-area/declarations/declarations/spesometro-2017-quarterly/image01.png)
 
 ![](/img/it-it/finance-area/declarations/declarations/spesometro-2017-quarterly/image02.png)
 
-Within the above tables, it is particularly important to manage the fields **Public Administration Code (Codice P.A.)** (the same ones managed for electronic invoicing towards Public Administrations - as it is a similar exchange system).
+Within the above tables, it is particularly important to manage the fields **Public Administration Code** (the same ones managed for electronic invoicing towards Public Administrations - as it is a similar exchange system).
 
 The coding to be adopted has been published by the Revenue Agency in the technical documentation for creating the telematic file, and we report it below:
 
@@ -89,7 +89,7 @@ The data to be sent for the DTE section and customers are as follows (from 2018)
 
 - Country code of the VAT number (editable in the grid)
 - VAT number (or alternatively the tax code) (VAT number editable in the grid)
-- The relevant sub-account (and the connected registry) can be modified in the grid
+- The relevant detail account (and the connected registry) can be modified in the grid
 
 For each document, the following must be indicated:
 
