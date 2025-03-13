@@ -1,5 +1,5 @@
 ---
-title: Accounting Parameters (Parametri contabilità)
+title: Accounting Parameters
 sidebar_position: 2
 ---
 
@@ -35,64 +35,64 @@ When creating the new parameter record, the program asks if you also want to cre
 
 ## **General**
 
-### 1.1 Year Data (Dati dell'anno)
+### 1.1 Year Data
 
-- **(Start/End) Fiscal Year (Inizio/Fine Esercizio):** Defines the date range for recording the selected fiscal year. Each accounting entry, for the controls of the previous fields, is entered in the corresponding fiscal year relative to these dates, which must not overlap between different fiscal years.
+- **(Start/End) Fiscal Year:** Defines the date range for recording the selected fiscal year. Each accounting entry, for the controls of the previous fields, is entered in the corresponding fiscal year relative to these dates, which must not overlap between different fiscal years.
 
-- **(Start/End) Competence Line (Inizio/Fine Competenza in linea):** Optional recommended fields that define the date range of competence manageable within the recordings of the selected fiscal year.
+- **(Start/End) Competence Line:** Optional recommended fields that define the date range of competence manageable within the recordings of the selected fiscal year.
 
-- **(Start/End) Document Line Period (Inizio/Fine Periodo in linea):** Mandatory fields that define the date range of documents manageable within the recordings of the selected fiscal year.
+- **(Start/End) Document Line Period:** Mandatory fields that define the date range of documents manageable within the recordings of the selected fiscal year.
 
-- **Closure of the previous fiscal year (Chiusura esercizio precedente):** Defines the closure date of the previous fiscal year.
+- **Closure of the previous fiscal year:** Defines the closure date of the previous fiscal year.
 
-- **Last journal book print date (Data ultima stampa libro giornale):** Stores the last printed date in definitive for the current fiscal year. When opening a new fiscal year, this date must correspond to the closure date of the previous fiscal year.
+- **Last journal book print date:** Stores the last printed date in definitive for the current fiscal year. When opening a new fiscal year, this date must correspond to the closure date of the previous fiscal year.
 
-- **Debit/Credit balance (Saldo dare/avere):** Stores the last debit/credit balances of the journal book of the selected fiscal year printed in definitive. When creating a new fiscal year, these fields must be set to zero.
+- **Debit/Credit balance:** Stores the last debit/credit balances of the journal book of the selected fiscal year printed in definitive. When creating a new fiscal year, these fields must be set to zero.
 
-- **Date / Last line / Last printed page of the journal book (Data / Ultima riga / Ultima pagina libro giornale stampata):** Stores the date, last page, and last line of the journal book of the selected fiscal year printed in definitive. When creating a new fiscal year, this field must be set to zero.
+- **Date / Last line / Last printed page of the journal book:** Stores the date, last page, and last line of the journal book of the selected fiscal year printed in definitive. When creating a new fiscal year, this field must be set to zero.
 
-- **Last printed page of the asset book (Ultima pagina libro cespiti stampata):** Stores the last page of the asset book of the selected fiscal year printed in definitive. When creating a new fiscal year, this field must be set to zero.
+- **Last printed page of the asset book:** Stores the last page of the asset book of the selected fiscal year printed in definitive. When creating a new fiscal year, this field must be set to zero.
 
-- **Opening and closing reason for accounts (Causale apertura e chiusura conti):** The two fields, which are not mandatory, allow you to pre-set the reasons to be used in the account closure/opening procedures.
+- **Opening and closing reason for accounts:** The two fields, which are not mandatory, allow you to pre-set the reasons to be used in the account closure/opening procedures.
 
-- **Pro-rata percentage (Percentuale pro-rata):** The field allows you to set the percentage value of the pro-rata valid for the selected fiscal year. If it is not an option to use, leave the field empty or set to 100%.
+- **Pro-rata percentage:** The field allows you to set the percentage value of the pro-rata valid for the selected fiscal year. If it is not an option to use, leave the field empty or set to 100%.
 
 :::tip[Info]
 The management of the pro-rata can alternatively occur, in addition to this single field for all VAT registries, also specifically for each VAT registry, allowing the management of multiple activities for VAT purposes with different pro-rata percentages. See [**VAT Registries**](/docs/configurations/tables/finance/vat-books) and [**VAT Activity Type**](/docs/configurations/tables/finance/vat-activity-type).
 :::
 
-- **VAT Accrual Type (Tipo contabilizzazione IVA):** The field allows you to define the default type of accounting for VAT rates on various sub-accounts of the chart of accounts.
+- **VAT Accrual Type:** The field allows you to define the default type of accounting for VAT rates on various sub-accounts of the chart of accounts.
 
-- **Monthly closure (Chiusura mensile):** If active, modifies the operation of the *Automatic account closure* procedure so that it can be executed monthly as required in some foreign locations (particularly in Eastern Europe). **Setting not recommended for Italy**.
+- **Monthly closure:** If active, modifies the operation of the *Automatic account closure* procedure so that it can be executed monthly as required in some foreign locations (particularly in Eastern Europe). **Setting not recommended for Italy**.
 
 :::danger[Attention]
 This flag must be set to off for regular Italian accounting. If activated (for example, accidentally), in addition to noticing some differences in the form execution of account closures, it will be impossible to calculate and manage accruals and deferrals in the *Adjustment entries* form.
 :::
 
-- **Commission management (Gestione provvigioni):** Activates the functionality to calculate agent commissions from the Administration module.
+- **Commission management:** Activates the functionality to calculate agent commissions from the Administration module.
 
-- **Discounting factor (Fattore di attualizzazione):** Indicates the value of the annual increase of the assets for the purpose of depreciation calculated specifically within the Controlling module and managed in various other details within the *Depreciation for controlling* tab present in the asset record. The setting is also referenced in the [*Asset categories for controlling*](/docs/configurations/tables/controlling/analytical-accounting/controlling-asset-categories).  
+- **Discounting factor:** Indicates the value of the annual increase of the assets for the purpose of depreciation calculated specifically within the Controlling module and managed in various other details within the *Depreciation for controlling* tab present in the asset record. The setting is also referenced in the [*Asset categories for controlling*](/docs/configurations/tables/controlling/analytical-accounting/controlling-asset-categories).  
 **EXAMPLE:** By entering a value of 1.1, there will be a 10% increase in the depreciable value of the asset each year, so an asset with an initial value of 1000 will have a value of 1,100 in year x+1 and in year x+2, an additional increase will be added according to the same logic.
 
-- **Tax regime (Regime fiscale):** General data to be filled in order to manage any automation and reference to this data related to taxation and electronic invoicing.
+- **Tax regime:** General data to be filled in order to manage any automation and reference to this data related to taxation and electronic invoicing.
 
-- **Business volume (Volume d’affari):** It is used to calculate some indicators related to the balance sheet information aimed at preventing business crises.
+- **Business volume:** It is used to calculate some indicators related to the balance sheet information aimed at preventing business crises.
 
-- **VAT liquidation (Liquidazione IVA):** Sets the periodicity of periodic VAT liquidations. The flags are alternatives, the two main ones refer to monthly or quarterly periodicity based on turnover (refer to VAT regulations), and the third refers to quarterly "by nature" subjects under the special regime of Article 74 of DPR 633/72.
+- **VAT liquidation:** Sets the periodicity of periodic VAT liquidations. The flags are alternatives, the two main ones refer to monthly or quarterly periodicity based on turnover (refer to VAT regulations), and the third refers to quarterly "by nature" subjects under the special regime of Article 74 of DPR 633/72.
 
-- **Minimum debt for VAT payment (Debito minimo per il versamento iva):** Represents the value (subject to possible changes based on VAT regulations) below which any debt resulting from the periodic VAT liquidation is not due. This field impacts the prints of the periodic liquidation and on the processing of the quarterly communication (Li.Pe.).
+- **Minimum debt for VAT payment:** Represents the value (subject to possible changes based on VAT regulations) below which any debt resulting from the periodic VAT liquidation is not due. This field impacts the prints of the periodic liquidation and on the processing of the quarterly communication (Li.Pe.).
 
-- **VAT rounding type (Tipo rounding IVA):** Sets VAT rounding always upwards with the selection 'Lire' or according to Euro logic.
+- **VAT rounding type:** Sets VAT rounding always upwards with the selection 'Lire' or according to Euro logic.
 
-- **VAT Registries (Registri IVA):** Defines whether to print VAT registries by registration date or VAT competence date within the selected period. For those who do not use the possibility of deferred invoicing until the 15th of the following month, the result does not change.
+- **VAT Registries:** Defines whether to print VAT registries by registration date or VAT competence date within the selected period. For those who do not use the possibility of deferred invoicing until the 15th of the following month, the result does not change.
 
 - **Competence date ceiling equal to:** Defines whether the ceiling competence date to be assigned to VAT transactions with a rate linked to the ceiling should be set based on the registration date or the document date.
 
-- **Numbering (Numerazione):** Allows assigning to each selected year a numbering system for definitive accounting records and for those in "provisional" status. Useful in the case of periodic changes to numbering policies instead of the fixed definition of the numerator in the [Accounting Registration Numbering](https://docs/configurations/tables/fluentis-numerations) table. If numbering is not set in this form, it will still be sought by default in the *Accounting Registration Numbering* table. The numerator setting for definitive and provisional records is also present within each single accounting reason (to differentiate numbering for each type of entry, as requested by some foreign locations, typically the French one) **[*in the header of the reason*](/docs/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates)** and if not set in the reason it will read by default what is set in this general parameters form. If a numerator is not defined here, it will read, as mentioned above, the one present in the general table.
+- **Numbering:** Allows assigning to each selected year a numbering system for definitive accounting records and for those in "provisional" status. Useful in the case of periodic changes to numbering policies instead of the fixed definition of the numerator in the [Accounting Registration Numbering](https://docs/configurations/tables/fluentis-numerations) table. If numbering is not set in this form, it will still be sought by default in the *Accounting Registration Numbering* table. The numerator setting for definitive and provisional records is also present within each single accounting reason (to differentiate numbering for each type of entry, as requested by some foreign locations, typically the French one) **[*in the header of the reason*](/docs/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates)** and if not set in the reason it will read by default what is set in this general parameters form. If a numerator is not defined here, it will read, as mentioned above, the one present in the general table.
 
-- **Self-invoice (Autofattura):** The section contains parameters for the creation of the self-invoice from accounting records for the communication of purchase data to the SDI. [**See Specific Parameters**](/docs/finance-area/e-invoice/auto-invoice/parameters).
+- **Self-invoice:** The section contains parameters for the creation of the self-invoice from accounting records for the communication of purchase data to the SDI. [**See Specific Parameters**](/docs/finance-area/e-invoice/auto-invoice/parameters).
 
-- **Intrastat (Intrastat):** The section contains some fields related to the processing and exporting of intrastat models.
+- **Intrastat:** The section contains some fields related to the processing and exporting of intrastat models.
 
 - Display details of transaction nature: with a recent regulatory update, details regarding the nature of the transaction field has been introduced, which can be made visible by activating the flag. (It is noted that the detail field is filled by those who exceed the threshold of 20 million euros in sales under intra model 1 bis or purchases under intra model 2 bis during the year.) For details on the coding of the new column B related to the transaction nature detail, refer to the ministerial instructions.
 
