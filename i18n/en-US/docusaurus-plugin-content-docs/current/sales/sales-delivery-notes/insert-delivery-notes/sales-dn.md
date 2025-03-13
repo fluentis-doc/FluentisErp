@@ -1,211 +1,210 @@
 ---
-title: Nuovo DDT di vendita
+title: New Sales DDT (Nuovo DDT di vendita)
 sidebar_position: 2
 ---
 
-La form **Crea DDT di vendita** si apre tramite il percorso **Vendite > DDT > Crea DDT di vendita** oppure tramite il pulsante ![](/img/neutral/common/new.png) che si trova nella form [Ricerca DDT di vendita](/docs/sales/sales-delivery-notes/insert-delivery-notes/search-sales-dn).
+The form **Create Sales DDT (Crea DDT di vendita)** opens via the path **Sales > DDT > Create Sales DDT (Vendite > DDT > Crea DDT di vendita)** or by using the button ![](/img/neutral/common/new.png) found in the [Sales DDT Search (Ricerca DDT di vendita)](/docs/sales/sales-delivery-notes/insert-delivery-notes/search-sales-dn) form.
 
-## *Come creare un DDT di vendita*
+## *How to create a Sales DDT (Come creare un DDT di vendita)*
 
 <details>
  
-<summary>Clicca per i passaggi fondamentali</summary>
+<summary>Click for key steps (Clicca per i passaggi fondamentali)</summary>
  
-1. **Inserisci i dati obbligatori**: *Tipo Ordine* e *Cliente*. *Anno*, *Numero* e *Data Inserimento* saranno proposti in automatico.  
+1. **Enter the mandatory data (Inserisci i dati obbligatori)**: *Order Type* and *Client*. *Year*, *Number*, and *Insert date* will be proposed automatically.  
  
-2. **Inserisci o modifica i dati facoltativi** della testata: come date di consegna, eventuali *sconti*, la *destinazione*, ecc.  
+2. **Enter or modify optional header data (Inserisci o modifica i dati facoltativi)**: such as delivery dates, any *Discounts*, the *Destination*, etc.  
  
-3. **Inserisci gli Articoli**: mediante doppio click nel campo *Codice articolo* si apre l’help articoli che permette di cercare e selezionare un articolo esistente. Tutti gli altri dati della riga, come *unità di misura*, *quantità*, *prezzo*, saranno proposti in automatico, ma possono essere modificati.
-In alternativa è possibile selezionare come *Tipo riga* un *Articolo non codificato* e inserire manualmente i dati successivi.
+3. **Enter the Items (Inserisci gli Articoli)**: by double-clicking in the *Item code* field, the item help will open, allowing you to search and select an existing item. All other line data, such as *Units of Measure*, *Quantity*, *Price*, will be proposed automatically, but can be modified. Alternatively, you can select as *Line type* an *Not-Codified Item* and manually enter the subsequent data.
  
-4. **Inserisci eventuali sconti o altre informazioni aggiuntive** nei tab *Sconti/listini* e *Dati articolo*
+4. **Enter any discounts or additional information (Inserisci eventuali sconti o altre informazioni aggiuntive)** in the *Discounts/Price Lists* and *Item data* tabs.
  
-5. **Controlla la sezione dei Riepiloghi** ed inserisci eventuali spese o sconti finali.  
+5. **Check the Summary section (Controlla la sezione dei Riepiloghi)** and enter any final fees or discounts.  
  
-6. Una volta controllato e confermato l’ordine, **inserisci una *Data conferma* e attiva il flag *Stampato* in testata** in modo da rendere l’ordine disponibile per le procedure di evasione.
+6. Once the order is checked and confirmed, **enter a *Confirmation date* and activate the *Printed* flag in the header (testata)** to make the order available for fulfillment procedures.
  
 </details>
 
-## **1. Dati obbligatori**
+## **1. Mandatory Data (Dati obbligatori)**
 
-Per continuare la creazione del DDT di vendita, l'utente deve inserire i campi obbligatori:
-- **Tipo DDT**: predefinito in  *Configurazione > Tabelle > Vendite> [Tipi DDT](/docs/configurations/tables/sales/delivery-notes-type)*.
-- **Numero**: ad ogni documento viene assegnato un numero secondo la numerazione specificata dall'utente e al tipo di documento che contiene la numerazione. La numerazione associata alla tipologia di DDT prevede generalmente una progressione automatica basata su data e numero, con una funzione di recupero che copre eventuali buchi nella sequenza (ad esempio, causati dalla cancellazione di documenti). Questo comportamento è regolato da due flag specifici nella tabella della numerazione. Se l'utente desidera inserire manualmente il numero, può disabilitare il flag di progressione data-numero (che garantisce l'incremento della numerazione nelle date future) e il flag di recupero numeri. Inoltre, dovrà abilitare il flag della numerazione esterna, segnalando così al sistema che la numerazione sarà gestita manualmente.    
-- **Cliente**: digitabile usando l'[help di campo](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection), tastando [direttamente](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) i dati oppure usando la procedura automatica, se si sceglie di creare i documenti tramite l'[Evasione DDT da ordine cliente](/docs/sales/sales-delivery-notes/insert-delivery-notes/sales-dn).  Inserendo il cliente, vengono automaticamente popolati, se presenti in anagrafia, i seguenti campi, che spiegheremo nelle sezioni successive: divisa, nazione, lingua, zona, spedizione, listino ed eventuali sconti, pagamenti, sconti, spese, agenti, destinazione, vettori, extra data.               
-- **Data**: indica la data di creazione del DDT. Questa data è fondamentale per il calcolo delle scadenze e delle eventuali condizioni di pagamento. Viene proposta la data odierna, modificabile; nel caso in cui la numerazione preveda una progressione di data e numero, e io inserisca una data nel passato, Fluentis controllerà la disponibilità di numeri in quella data per garantire la progressione, e se non presente segnalerà l’utente che non ci sono numeri disponibili in quella data. 
+To continue creating the Sales DDT, the user must enter the required fields:
+- **Delivery note type**: default set in *Configuration > Tables > Sales > [DDT Types (Tipi DDT)](/docs/configurations/tables/sales/delivery-notes-type)*.
+- **Number**: each document is assigned a number according to the numbering specified by the user and the type of document that contains the numbering. The numbering associated with the DDT type generally includes an automatic progression based on date and number, with a retrieval function that covers any gaps in the sequence (for example, caused by the deletion of documents). This behavior is regulated by two specific flags in the numbering table. If the user wishes to manually enter the number, they can disable the date-number progression flag (which ensures the increment of numbering on future dates) and the number retrieval flag. Furthermore, they will need to enable the external numbering flag, indicating to the system that the numbering will be managed manually.    
+- **Client**: can be typed using the [field help (help di campo)](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection), typing it [directly (direttamente)](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection), or using the automatic procedure if they choose to create documents via the [DDT Fulfillment from Customer Order (Evasione DDT da ordine cliente)](/docs/sales/sales-delivery-notes/insert-delivery-notes/sales-dn). Upon entering the customer, the following fields, if present in the registry, will be automatically populated, which we will explain in the following sections: currency, country, language, region, shipping, price list, any discounts, payments, fees, agents, destination, carriers, extra data.               
+- **Date**: indicates the creation date of the DDT. This date is crucial for calculating deadlines and any payment conditions. The current date is proposed, which can be modified; if the numbering requires a progression of date and number, and a past date is entered, Fluentis will check the availability of numbers on that date to ensure progression, and if not present, will notify the user that there are no available numbers on that date. 
 
-La form contiene una serie di tab.
+The form contains a series of tabs.
 
-## **2. Testata**
+## **Header**
 
-Dopo aver selezionato i dati obbligatori nella sezione superiore, l'utente può continuare l'inserimento dei seguenti dati [manualmente](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) oppure con l' [help di campo](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) oppure, in base alle procedure che sceglie, l'applicazione compila i campi *automaticamente*.
+After selecting the mandatory data in the upper section, the user can continue entering the following data [manually (manualmente)](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) or with the [field help (help di campo)](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection); alternatively, depending on the procedures chosen, the application automatically fills in the fields.
 
-:::note Ricorda
-Se il documento viene *creato automaticamente*, questi dati vengono ripresi dal *documento d'origine* da cui è stata generato.
+:::note Remember (Ricorda)
+If the document is *created automatically* (creato automaticamente), these data will be retrieved from the *origin document (documento d'origine)* from which it was generated.
 :::
 
-Inserendo il **Cliente**, vengono *proposti* in automatico tutti i dati specifici del tab **Testata**, secondo i dati impostati in precedenza nell'[anagrafica cliente](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/accounting-data-intro), nei campi corrispondenti al suo indirizzo e nelle *sezioni*:  
-- **Divisa**: sezione contenente i dati [Divisa](/docs/guide/common/glossary/glossary-intro#currency), [Cambio](/docs/guide/common/glossary/glossary-intro#currency-exchange), [Data valuta](/docs/guide/common/glossary/glossary-intro#currency-date).
-- **Nazione**: sezione contenente i dati [Nazione](/docs/guide/common/glossary/glossary-intro#country), [Lingua](/docs/guide/common/glossary/glossary-intro#language), [Zona](/docs/guide/common/glossary/glossary-intro#zone).
-- **Spedizione**: sezione contenente i dati [Spedizione](/docs/guide/common/glossary/glossary-intro#shipment), [Porto](/docs/guide/common/glossary/glossary-intro#carriage), [Imballo](/docs/guide/common/glossary/glossary-intro#packing), [Listino](/docs/guide/common/glossary/glossary-intro#sales-price-list) (in testata documento viene inserito il listino inserito in anagrafica cliente con il flag Default) con il tipo scaglione di sconto e il suo [intervallo di validità](/docs/guide/common/glossary/glossary-intro#validity-date).
+Entering the **Customer**, all specific data of the **Header** tab are automatically *proposed* according to the data previously set in the [customer registry (anagrafica cliente)](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/accounting-data-intro), in the fields corresponding to their address and in the *sections*:  
+- **Currency**: section containing [Currency (Divisa)](/docs/guide/common/glossary/glossary-intro#currency), [Exchange rate (Cambio)](/docs/guide/common/glossary/glossary-intro#currency-exchange), [Value date (Data valuta)](/docs/guide/common/glossary/glossary-intro#currency-date).
+- **Country**: section containing [Country (Nazione)](/docs/guide/common/glossary/glossary-intro#country), [Language (Lingua)](/docs/guide/common/glossary/glossary-intro#language), [Zone (Zona)](/docs/guide/common/glossary/glossary-intro#zone).
+- **Delivery**: section containing [Shipping (Spedizione)](/docs/guide/common/glossary/glossary-intro#shipment), [Freight (Porto)](/docs/guide/common/glossary/glossary-intro#carriage), [Packing (Imballo)](/docs/guide/common/glossary/glossary-intro#packing), [Price List (Listino)](/docs/guide/common/glossary/glossary-intro#sales-price-list) (in the document header the price list entered in the customer registry with the Default flag will be inserted) with the discount type and its [validity interval (intervallo di validità)](/docs/guide/common/glossary/glossary-intro#validity-date).
 
-####  Altri campi testata
+#### Other header fields (Altri campi testata)
 
-- **Stampata**: si attiva quando viene lanciata la stampa del documento ed identifica che il documento è stato stampato; questo flag è importante anche per permettere l'evasione del DDT in altri documenti.      
-- **Scaricata**: questo flag si attiva automaticamente quando il documento viene movimentato a magazzino, con il bottone della barra degli strumenti *Scarico automatico* o con le procedure a disposizione.     
-- **Valorizzata**: questo flag si attiva quando il DDT viene valorizzato in fattura.   
-- **Valorizzata parzialmente**: questo flag indica che il DDT è staato valorizzato solo parzialmente in fattura. 
-- **Valorizzata forzatamente**: questo flag si attiva se il DDT è stato chiuso forzatamente con l'evasione forzata degli articoli; per esempio, quando il residuo non sarà consegnato e il documento viene considerato chiuso anche se non lo sarebbe.
-- **Annullata**: il flag attivo permette di annullare l'ordine.      
+- **Printed**: activated when the document is printed, indicating that the document has been printed; this flag is also important for allowing the fulfillment of the DDT in other documents.      
+- **Unloaded**: this flag is automatically activated when the document is moved to the warehouse, either with the *Automatic unload* button on the toolbar or with the available procedures.     
+- **Valorized**: this flag is activated when the DDT is valued in the invoice.   
+- **Partial Valorized**: this flag indicates that the DDT has been partially valued in the invoice. 
+- **Forced Valorized**: this flag is activated if the DDT has been forcefully closed with the forced fulfillment of the items; for example, when the remainder will not be delivered and the document is considered closed even if it would not be.
+- **Cancelled**: the active flag allows the order to be canceled.      
 
 :::note
-I flag possono essere tolti con le procedure di ripristino operazione.
+Flags can be removed with the operation recovery procedures.
 :::
 
-- **Codice Unico di Progetto/Codice Identificatico di Gara**: se nelle [informazioni fiscali](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/fiscal-information) dell'anagrafica cliente esso è abilitato alla gestione di CIG e CUP, sarà possibile compilare questi dati nel documento.    
-- **Annotazioni cliente**: questo campo viene ripreso dall'ordine che ha creato il DDT, ma può essere inserito anche manualmente.
-- **Nostro riferimento/vostro riferimento**: in questi campi solitamente viene indicato un riferimento interno ed un riferimento cliente per il documento; nel caso in cui il DDT venga generato tramite una procedura di creazione automatica, questi campi verranno popolati con le indicazioni presenti nell'documento d'origine (questo trasferimento è valido solo nel caso di DDT creato tramite il prelievo dei dati da un solo documento d'origine).   
-- **Riferimento al Numero Ordini Cliente**: in questo campo viene inserito in automatico l'ordine da cui deriva il DDT.
-- **Riferimento alla Data Ordini cliente**: in questo campo viene inserito in automatico la data dell'ordine da cui deriva il DDT; insieme al campo precedente, crea i dati necessari al tag 2.1.2 del file xml della fattura elettronica, quando essa verrà creata; se non compilati verrà preso invece il campo Vostro Riferimento.     
-- **Note iniziali DDT**: si possono selezionare le note che sono state inserite in precedenza nella tabella omonima che si trova nel percorso *Configurazione > Utilità > Gestione note codificate*; per questo l'utente deve effettuare doppio click sul campo per aprire l'Help e selezionare i dati; altrimenti può inserirle manualmente.       
-- **Progetto**: è possibile associare un progetto al documento.    
-- **Operatore**: permette di inserire l'utente che crea il documento. I dipendenti sono stati inseriti in precedenza nella tabella *Home > Dipendenti*; il dato diventa obbligatorio se l'opzione è impostata nei [Parametri](/docs/configurations/parameters/sales/dn-parameters) del documento stesso.     
-- **Stato evasione**: quando l'ordine è evaso tramite i documenti DDT o fatture, il suo stato evasione cambia automaticamente da *Non evaso* a *Parzialmente evaso* o *Evaso*; l'utente può forzare l'evasione di un ordine non totalmente evaso e quando questo succede, viene salvata anche la data evasione.
-- **Decorrenza** è la data di decorrenza per il calcolo delle scadenze di pagamento.      
-- **Audit Trail**: come in tutti i documenti, questa sezione riporta la data di creazione del documento con l'operatore, e la data di ultima modifica del documento con l'operatore.   
+- **Unique Project Code/Identifying Code for Bid (Codice Unico di Progetto/Codice Identificatico di Gara)**: if in the [fiscal information (informazioni fiscali)](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/fiscal-information) of the customer registry it is enabled for management of CIG and CUP, it will be possible to fill in these details in the document.    
+- **Customer note**: this field is retrieved from the order that created the DDT, but can also be entered manually.
+- **Our Reference/Your Reference (Nostro riferimento/vostro riferimento)**: in these fields usually an internal reference and a customer reference for the document is indicated; if the DDT is generated through an automatic creation procedure, these fields will be populated with the indications present in the origin document (this transfer is valid only for DDT created by retrieving data from a single origin document).   
+- **Reference to Customer Order Number (Riferimento al Numero Ordini Cliente)**: this field automatically inserts the order from which the DDT originates.
+- **Reference to Customer Order Date (Riferimento alla Data Ordini cliente)**: this field automatically inserts the date of the order from which the DDT originates; together with the previous field, it creates the data necessary for tag 2.1.2 of the electronic invoice xml file when it is created; if not filled, the Your Reference field will be taken instead.     
+- **D.N. initial note**: you can select the notes that have been previously entered in the homonymous table found in the path *Configuration > Utilities > Management of Coded Notes (Configurazione > Utilità > Gestione note codificate)*; for this, the user must double-click the field to open the Help and select the data; otherwise, they can enter them manually.       
+- **Project**: it is possible to associate a project with the document.    
+- **User**: allows you to enter the user creating the document. Employees were previously entered in the *Home > Employees* table; this data becomes mandatory if the option is set in the [Document Parameters (Parametri)](/docs/configurations/parameters/sales/dn-parameters).     
+- **Execution status**: when the order is fulfilled through DDT or invoices, its fulfillment status changes automatically from *Not executed* to *Partially executed* or *Closed*; the user can force the fulfillment of an order not fully fulfilled, and when this happens, the fulfillment date is also saved.
+- **Apply from** is the date for calculating payment deadlines.      
+- **Audit Trail**: as in all documents, this section shows the document creation date with the operator, and the last modification date of the document with the operator.   
 
-#### Pulsanti specifici
+#### Specific buttons (Pulsanti specifici)
 
-> [Evasione da ordini](/docs/sales/sales-delivery-notes/insert-delivery-notes/sales-dn) (vedere la documentazione relativa).    
-> [Scarico automatico](/docs/sales/sales-delivery-notes/insert-delivery-notes/sales-dn) (vedere la documentazione relativa)   
-> **Help destinatari/destinazioni**: questo bottone apre l'Help per poter scegliere il destinatario/destinazione per il documento, tra quelli disponibili per il cliente e quindi codificati nella sua anagrafica.      
-> **Inserisci agente nelle righe**: questo pulsante fa aprire un pop nel quale inserire un'anagrafica agente, che verrà spalmata in tutte le righe articolo, aggiungendosi eventualmente ad Agenti già presenti.           
-> **Sostituisci CIG/CUP nelle righe**: dopo aver specificato CIG e/o CUP in testata, è possibile sostituire in massa tali dati nelle righe articolo già inserite.      
-> **Cancella**: cancella gli sconti selezionati nel tab *Sconti* della Testata.          
+> [Fulfillment from Orders (Evasione da ordini)](/docs/sales/sales-delivery-notes/insert-delivery-notes/sales-dn) (see the relevant documentation).    
+> [Automatic Shipment (Scarico automatico)](/docs/sales/sales-delivery-notes/insert-delivery-notes/sales-dn) (see the relevant documentation)   
+> **Help recipients/destinations**: this button opens Help to select the recipient/destination for the document, among those available for the customer and thus coded in their registry.      
+> **Insert AgentAccount in the Items rows**: this button opens a pop-up in which to insert an agent registry, which will be spread across all item lines, optionally adding to already present Agents.           
+> **Replace CIG/CUP in Lines (Sostituisci CIG/CUP nelle righe)**: after specifying CIG and/or CUP in the header, it is possible to replace these data in bulk in the already entered item lines.      
+> **Cancel**: deletes the selected discounts in the *Discounts* tab of the Header.
 
-Nella testata sono poi presenti alcune tab che analizziamo di seguito. 
+In the header, there are also some tabs that we analyze below. 
 
-### 2.1 Pagamenti
+### 2.1 Payments (Pagamenti)
 
-Le **Soluzioni di pagamento** sono riportate in automatico dal documento di origine o dall'*Anagrafica cliente > tab Pagamenti* e possono essere modificate/cancellate dall'utente.        
-Se al **Tipo pagamento** è associato uno sconto finanziario, l'importo dello sconto viene considerato solo ai fini contabili cioè nelle scadenze del documento e non nel totale ordine.
+The **Payment Terms** are automatically reported from the origin document or from the *Customer Registry > Payments tab (Anagrafica cliente > tab Pagamenti)* and can be modified/deleted by the user.        
+If the **Payment type** is associated with a financial discount, the amount of the discount is only considered for accounting purposes, that is, in the deadlines of the document and not in the total order.
 
-#### Pulsante specifico*
-> **Cancella pagamenti**: utilizzato per cancellare le righe di pagamento selezionate.
+#### Specific button*
+> **Delete Payments**: used to delete the selected payment lines.
 
-### 2.2 Sconti
+### 2.2 Discounts (Sconti)
 
-Vengono proposti solo gli sconti predefiniti ripresi dall'*Anagrafica cliente > tab Sconti* e possono essere modificate/cancellate dall'utente.
+Only the pre-defined discounts taken from the *Customer Registry > Discounts tab (Anagrafica cliente > tab Sconti)* are proposed and can be modified/deleted by the user.
 
 import TabDiscount from './../../../import/sections/tab-discount.md'
 
 <TabDiscount />
 
-### 2.3 Agenti
+### 2.3 Agents (Agenti)
 
-Indica il codice agente e la sua provvigione per ogni riga articolo. Viene proposto il codice e la percentuale definiti nell'*Anagrafica cliente > tab Agenti*.
-Se la provvigione non è collegata al cliente nella sua anagrafica, comunque deve essere inserito l'agente ma con provvigione NULL perché se fosse con provvigione 0, significherebbe che l'agente è collegato all'agente ma non percepisce provvigione.
-La stessa sezione verrà riproposta per ogni riga articolo nel relativo tab *Agenti*.
+Indicates the agent code and their commission for each item line. The code and percentage defined in the *Customer Registry > Agents tab (Anagrafica cliente > tab Agenti)* are proposed.
+If the commission is not linked to the customer in their registry, the agent must still be entered but with a NULL commission because if it were with a 0 commission, it would mean that the agent is linked to the agent but receives no commission.
+The same section will be proposed for each item line in the corresponding *Agents* tab.
 
-#### Pulsante specifico*
-> **Cancella agenti**: permette di cancellare gli agenti selezionati.
+#### Specific button*
+> **Delete agents**: allows the deletion of selected agents.
 
-### 2.4 Extra Data
+### 2.4 Extra Data (Extra Data)
 
 import TabExtraData from './../../../import/sections/tab-extra-data.md'
 
 <TabExtraData />
 
-## Procedure testata:
+## Header Procedures (Procedure testata):
 
-### *Evasione da ordine*
+### *Fulfillment from Order (Evasione da ordine)*
 
-Nella testata del DDT, premendo il pulsante **Evasione da ordine** si aprirà la form dove è possibile filtrare gli ordini confermati del cliente del documento e trasferirli nel DDT. E' possibile eseguire l'operazione di creazione DDT da ordine anche dalla [Ricerca ordini](/docs/sales/sales-orders/create-new-sales-orders/search-sales-orders).
+In the header of the DDT, pressing the **Fulfillment from Order (Evasione da ordine)** button will open the form where it is possible to filter the confirmed orders of the document's customer and transfer them into the DDT. It is also possible to perform the DDT creation operation from the [Order Search (Ricerca ordini)](/docs/sales/sales-orders/create-new-sales-orders/search-sales-orders).
 
-Tramite questa procedura è possibile creare un DDT di vendita dall'evasione del relativo ordine cliente. E' quindi possibile inserire gli articoli all'interno del DDT, evadendo totalmente o parzialmente un intero ordine o una riga.
+Through this procedure, a sales DDT can be created from the fulfillment of the related customer order. It is thus possible to enter items within the DDT, fulfilling either the entire order or specific lines, either fully or partially.
 
-Per poter utilizzare questa procedura vi sono delle condizioni iniziali che devono essere rispettate:
+For this procedure to be usable, there are initial conditions that must be met:
 
- -  i/il cliente degli ordini deve essere lo stesso del DDT;
- -  l'ordine che si vuole evadere deve avere impostato il flag *Stampato* e la *Data conferma ordine*;
- -  nella tabella [Tipi DDT](/docs/configurations/tables/sales/delivery-notes-type) deve essere presente il flag su *Ordine* (che indica che il DDT può derivare da un ordine).    
- - solo se la procedura viene eseguita dalla Ricerca ordini, i tipi documento devono essere compatibili: nella tabella [Tipi ordine](/docs/configurations/tables/sales/sales-order-types) il tipo ordine che si vuole evadere deve avere impostato il tipo DDT corrispondente.        
+ - The customer of the orders must be the same as the DDT;
+ - The order you wish to fulfill must have the *Printed* flag and the *Order confirmation date* set;
+ - In the [DDT Types (Tipi DDT)](/docs/configurations/tables/sales/delivery-notes-type) table, the flag on *Order* (indicating that the DDT can derive from an order) must be present.    
+ - Only if the procedure is executed from the Order Search, the document types must be compatible: in the [Order Types (Tipi ordine)](/docs/configurations/tables/sales/sales-order-types) table, the order type you wish to fulfill must have the corresponding DDT type set.        
 
-Si dovrà poi andare ad impostare nella testata del nuovo DDT, il *Tipo DDT* che si vuole creare (che deve corrispondere a quello impostato nella tabella dei *Tipi ordini*) e il *Cliente*. Una volta inseriti questi dati, bisognerà cliccare sul pulsante *Evasione ordini* per aprire la form di evasione.
+You must then set in the header of the new DDT, the *Delivery note type* you wish to create (which must correspond to what is set in the order types table) and the *Client*. Once these data are entered, you need to click on the *Orders Processing* button to open the fulfillment form.
 
-#### Procedimento:
+#### Procedure:
 
-I filtri per cliente e divisa verranno riportati in automatico in base al cliente selezionato nel DDT.
+The filters for customer and currency will be automatically populated based on the customer selected in the DDT.
 
-Una volta impostati tutti i *Filtri* desiderati, cliccando sul pulsante di *Ricerca* verrà visualizzata nella griglia una riga per ciascun ordine stampato, confermato e non evaso oppure evaso parzialmente.
+Once all desired *Filters* are set, clicking the *Search* button will display a line in the grid for each printed, confirmed, and unfulfilled or partially fulfilled order.
 
-:::note Nota
-La procedura riprende tutti i dati presenti nell'ordine e come conseguenza saranno applicate le condizioni di acquisto presenti nell'ordine, anche se queste attualmente sono cambiate.
+:::note Note
+The procedure retrieves all data present in the order, and consequently, the purchasing conditions present in the order will be applied, even if they have currently changed.
 :::
 
-:::note Nota
-Le righe di tipo Nota saranno sempre visibili, anche se già evase, fino a quando tutte le righe delle altre tipologie saranno evase.
+:::note Note
+Lines of type Note will always be visible, even if already fulfilled, until all lines of other types have been fulfilled.
 :::
 
-Nella griglia di risultati, l'utente ha poi la possibilità di:
+In the results grid, the user then has the option to:
 
- 1. selezionare l'*ordine per intero*. Per farlo basterà selezionare il flag presente all'inizio della riga ordine.
- 2. selezionare solo *alcuni* degli *articoli* proposti. Per farlo basterà selezionare il flag presente all'inizio della riga articolo.
- 3. selezionare solo *alcuni articoli* per una *determinata quantità*. In questo caso dovrà andare a modificare la quantità da evadere.
+ 1. select the *entire order (ordine per intero)*. To do this, simply select the flag present at the beginning of the order line.
+ 2. select only *some* of the *Items* proposed. To do this, simply select the flag present at the beginning of the item line.
+ 3. select only *some items* for a *specific quantity (determinata quantità)*. In this case, they must modify the quantity to be fulfilled.
 
-Per completare la procedura bisognerà poi cliccare sul pulsante *Trasferimento*, che andrà a riprendere tutti i dati presenti nell'ordine e li riporterà nel DDT.
+To complete the procedure, the user must then click the *Transfer* button, which will retrieve all data present in the order and bring it back into the DDT.
 
-#### Pulsanti specifici
+#### Specific buttons
 
-> **Ricerca** permette di cercare gli ordini fornitore.  
-> **Trasferimento** permette di trasferire i dati dell'ordine selezionato all'interno del nuovo DDT.  
-> **Evasione forzata dell'ordine** permette l'evasione forzata dell'ordine; nel caso in cui vengano selezionate alcune righe dell'ordine, verranno evase forzatamente solo le righe selezionate (con l'aggiunta del flag *Evaso forzato* in corrispondenza della riga articolo); nel caso venga evaso l'ordine intero, esso cambierà lo stato anche in testata.  
-> **Evasione ordini** permette l'evasione dell'ordine.  
-> **Espandi** permette di espandere l'intero albero degli ordini nella griglia sottostante, per visualizzare gli articoli contenuti in essi.  
-> **Comprimi** permette di comprimere la visualizzazione delle righe articolo, e di far visualizzare solamente le righe ordine.  
-> **Seleziona tutti** permette di selezionare tutti gli articoli dalla lista.  
-> **Deseleziona tutti** permette di deselezionare tutti gli articoli dalla lista.  
+> **Search** allows searching supplier orders.  
+> **Transfer** allows transferring the data of the selected order into the new DDT.  
+> **Forced Oreder Execution** allows for the forced fulfillment of the order; if some lines of the order are selected, only the selected lines will be forcefully fulfilled (with the addition of the flag *Forcefully Fulfilled (Evaso forzato)* corresponding to the item line); if the entire order is fulfilled, its status will also change in the header.  
+> **Orders Processing** allows the fulfillment of the order.  
+> **Expand** allows expanding the entire tree of orders in the underlying grid, to view the items contained within them.  
+> **Collapse** allows collapsing the display of item lines, showing only the order lines.  
+> **Select all** allows selecting all items from the list.  
+> **Deselect all** allows deselecting all items from the list.  
 
-### *Scarico automatico*
+### *Automatic unload*
 
-L'altra procedura presente in testata DDT è lo scarico automatico da magazzino. Il pulsante si abilita se il documento è Stampato.      
-Ricordiamo che se nei [Parametri DDT](/docs/configurations/parameters/sales/dn-parameters) è abilitato lo scarico automatico, questa procedura verrà avviata in automatico una volta Stampato il documento.      
-Una volta avviata la procedura, Fluentis controlla la presenza di magazzino e causale nelle righe DDT e l'eventuale presenza di lotti e serial number se richiesti; nel caso la procedura non vada a buon fine viene avvisato l'utente con un errore.      
-Se la procedura va a buon fine, viene creata la [Registrazione di magazzino](/docs/logistics/warehouse/stock-records/record) che movimenta gli articoli del documento e viene inserito il flag **Scaricato** nella testata DDT.      
+The other procedure present in the DDT header is the automatic shipping from the warehouse. The button is enabled if the document is Printed.      
+Remember that if in the [DDT Parameters (Parametri DDT)](/docs/configurations/parameters/sales/dn-parameters) the automatic shipping is enabled, this procedure will be started automatically once the document is printed.      
+Once the procedure is initiated, Fluentis checks for the presence of warehouses and reasons in the DDT lines and the eventual presence of lots and serial numbers if required; if the procedure does not go well, the user will be notified with an error.      
+If the procedure is successful, a [Warehouse Registration (Registrazione di magazzino)](/docs/logistics/warehouse/stock-records/record) is created, which moves the items in the document, and the **Load** flag is inserted in the DDT header.      
 
-## **3. Articoli**
+## **Items**
 
-In questo tab vengono inseriti tutti gli articoli con i relativi dati.
+In this tab, all items with their respective data are entered.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+For everything not detailed in this document on the common functioning of forms, refer to the following link [Common Features, Buttons, and Fields (Funzionalità, pulsanti e campi comuni)](/docs/guide/common).
 
 import InsertMode from './../../../import/sections/insert-mode.md'
 
 <InsertMode />
 
-Per inserire un **Nuovo articolo** nella griglia basterà posizionarsi sulla riga per compilare i vari dati oppure utilizzare il pulsante **Nuovo** presente nella ribbon bar. Le colonne disponibili sono le seguenti:   
+To insert a **New Item** in the grid, simply position yourself on the row to fill in the various data or use the **New** button present on the ribbon bar. The available columns are as follows:   
 
 import RowNumber from './../../../import/fields/row-number.md'
 
 <RowNumber />
 
-- **Tipo riga**: offre la possibilità di selezionare, dalla combo-box, articoli con caratteristiche diverse:
->- *Articolo codificato*: sono gli articoli codificati in anagrafica e possono essere contabilizzati in contabilità analitica e registrati in magazzino.
->- *Articolo non-codificato*: sono articoli descrittivi che possono essere contabilizzati in contabilità analitica ma non possono essere movimentati a magazzino.
->- *Articolo spese*: sono articoli codificati o non-codificati e vengono riassunti in modo distinto nei riepiloghi dei documenti, se l'articolo spesa è codificato e di interesse fiscale verrà movimentato in magazzino, se è non codificato oppure non di interesse fiscale non verranno movimentati a magazzino.
->- *Articolo note*: sono note descrittive riportate nella stampa del documento; non incidono sulla contabilità e sul magazzino.
->- *Articolo omaggio*: l'articolo omaggio viene gestito come un articolo codificato o non codificato ai fini fiscali e di magazzino, ma essendo un omaggio viene conteggiato separatamente nei riepiloghi del documento e in base al flag Rivalsa iva viene calcolato l'importo dell'iva dell'omaggio a carico del soggetto oppure no.
-:::note[NOTA]
-Se si parte direttamente con l'inserimento dell'articolo, la sua classe, il codice e il tipo riga - Articolo codificato vengono inseriti automaticamente.
+- **Line type**: offers the option to select, from the combo box, items with different characteristics:
+>- *Codified Item*: these are items coded in the registry and can be accounted for in analytical accounting and recorded in the warehouse.
+>- *Uncoded Item (Articolo non-codificato)*: these are descriptive items that can be accounted for in analytical accounting but cannot be moved in the warehouse.
+>- *Charge Item*: these are coded or uncoded items and are summarized separately in the document summaries; if the expense item is coded and of fiscal interest, it will be moved in the warehouse; if it is uncoded or not of fiscal interest, it will not be moved in the warehouse.
+>- *Note Item*: these are descriptive notes included in the document print; they do not affect accounting and warehouse.
+>- *GiveAway Item*: the gift item is treated as a coded or uncoded item for fiscal and warehouse purposes, but being a gift, it is counted separately in the document summaries and based on the VAT reclaim flag (Rivalsa iva), the VAT amount of the gift will be calculated to be charged to the entity or not.
+:::note[NOTE]
+If starting directly with the item insertion, its class, code, and line type - Coded Item (Articolo codificato) will be automatically entered.
 :::
 
-- **Barcode**: se nei [Parametri DDT](/docs/configurations/parameters/sales/dn-parameters) è stata abilitata la gestione dei Barcode, comparirà la colonna Barcode dove selezionare il dato per l'articolo tra i Barcode inseriti in *Anagrafica articolo > Barcode*. 
+- **Barcode**: if the management of Barcodes is enabled in the [DDT Parameters (Parametri DDT)](/docs/configurations/parameters/sales/dn-parameters), the Barcode column will appear where you can select the data for the item from the Barcodes entered in *Item Registry > Barcode (Anagrafica articolo > Barcode)*. 
 
 import ItemClassDescription from './../../../import/sections/item-class-description.md'
 
 <ItemClassDescription />
 
-- **Articolo cliente**: se nei [Parametri DDT](/docs/configurations/parameters/sales/dn-parameters) è stata abilitata la gestione degli Articolo cliente, comparirà la colonna Articolo cliente, con il codice articolo valido per il cliente intestatario del documento e inserito in *Anagrafica articolo > Clienti*. 
+- **Customer item**: if the management of Customer Items is enabled in the [DDT Parameters (Parametri DDT)](/docs/configurations/parameters/sales/dn-parameters), the Customer Item column will appear, with the valid item code for the customer to whom the document is issued and entered in *Item Registry > Customers (Anagrafica articolo > Clienti)*. 
 
 import UM from './../../../import/fields/item-um.md'
 
@@ -220,84 +219,84 @@ import Price from './../../../import/fields/item-price.md'
 <Price />
 
 :::note
-In assenza del listino, il dato proposto è il **prezzo di vendita** ripreso dall'*Anagrafica articolo > tab [Costi](/docs/erp-home/registers/items/create-new-items/item-registry/costs)* oppure verrà recuperato in base alle impostazioni dei parametri del documento. In assenza anche di questo dato, verrà riportato il prezzo 0.
+In the absence of a price list, the proposed data is the **Sales price** retrieved from the *Item Registry > Cost tab (Anagrafica articolo > tab [Costi](/docs/erp-home/registers/items/create-new-items/item-registry/costs))* or it will be retrieved based on the document parameters settings. In the absence of this data, the price will be shown as 0.
 :::
 
-- **Imponibile**: in questo campo viene riportato il Prezzo unitario, moltiplicato per la quantità articolo, al netto degli sconti.        
+- **Origin amount**: this field shows the Unit Price, multiplied by the item quantity, net of discounts.        
 
-- **Sconti articolo**: viene riportata la somma degli sconti previsti per l'articolo.     
+- **Item discounts**: it reports the sum of the discounts provided for the item.     
 
-- **Sconti finali articolo**: viene riportata la somma degli sconti finali inseriti articolo inseriti nei Riepiloghi del documento.     
+- **Item final discounts**: it reports the sum of the final discounts entered for the item in the document summaries.     
 
 import Vat from './../../../import/fields/item-vat.md'
 
 <Vat />
 
-- **Fatturato vendite**: viene proposto il dato inserito nell'*Anagrafica articoli > tab Generalità*. Se questo non è presente, non viene proposto nessun dato ma al momento della contabilizzazione della fattura, sarà considerato il valore inserito nel campo *Costo/Ricavo di contropartita predefinito* dell'*Anagrafica cliente > Dati contabili > tab Amministrativa* oppure sarà generato un messaggio di errore.   
+- **Sales Turnover**: the data entered in the *Item Registry > General tab (Anagrafica articoli > tab Generalità)* is proposed. If this is not present, no data will be proposed, but at the time of invoicing the invoice, the value entered in the *Default Counterparty Cost/Revenue (Costo/Ricavo di contropartita predefinito)* field of the *Customer Registry > Accounting Data > Administrative tab (Anagrafica cliente > Dati contabili > tab Amministrativa)* will be considered, or an error message will be generated.   
 
-- **In fattura**: questo flag viene inserito di default, ma si può disabilitare se l'articolo non dovrà essere trasferito in fattura e quindi non dovrà comparire nelle procedure di evasione del DDT.     
+- **On invoice**: this flag is inserted by default, but can be disabled if the item should not be transferred to the invoice and therefore should not appear in the DDT fulfillment procedures.     
 
-- **Peso netto**: viene riportato il Peso netto presente in anagrafica articolo, moltiplicato per la quantità articolo della riga.     
+- **Net weight**: shows the net weight present in the item registry, multiplied by the item quantity of the line.     
 
-- **Peso lordo**: viene riportato il Peso lordo presente in anagrafica articolo, moltiplicato per la quantità articolo della riga.     
-
-
-#### Pulsanti specifici
-
-> **Ricalcolo Conai**: se il [Conai](/docs/sales/sales-flow/conai) è abilitato per il documento, è possibile ricalcolare i valori con questo bottone dopo eventuali modifiche.       
-
-> **Aggiorna i dati Conai nell'anagrafica articolo**: se nel tab *Materiali Conai per l'articolo* vengono modificati Unità di misura e/o Peso, è possibile trasferire questi valori nella sezione Conai dell'anagrafica articolo.      
-
-> **Gestione imballi**: permette l'apertura della gestione degli imballi a rendere usati nel documento di acquisti.
-Il pulsante diventa attivo se il documento è salvato, ma non caricato.
-Cliccando su questo pulsante si apre la form corrispondente dove: inserire la quantità, selezionare la riga ed eseguire il trasferimento dell'imballo selezionato nelle righe articolo cliccando sul pulsante Execute. In questa form vengono riportati gli articoli che sono stati inseriti con natura Imballo e che sono presenti nella tabella degli Imballi a rendere.         
-
-> **Aggiornamento listini**: cliccando sulla tendina accanto al pulsante si accede a due procedure. La prima procedura è **Aggiorna il listino corrente**, che permette di allineare il prezzo dell'articolo internamente al Listino, a seguito di una eventuale variazione di prezzo direttamente nella riga articolo. Invece con la seconda procedura, **Crea nuovo listino con nuova validità**, è possibile creare un nuovo listino personalizzato per il cliente intestatario del documento; verranno richiesti, in un pop-up, le date di inizio e fine validità del nuovo listino.      
-
-> **Mostra/Nascondi dettagli**: cliccando questo bottone si rendono o meno visibili le tab interne agli Articoli.   
+- **Gross Weight**: shows the gross weight present in the item registry, multiplied by the item quantity of the line.     
 
 
-### 3.1 Sconti/Listini
+#### Specific buttons (Pulsanti specifici)
+
+> **Recalculate Recycle**: if the [CONAI (Conai)](/docs/sales/sales-flow/conai) is enabled for the document, it is possible to recalculate the values with this button after any updates.       
+
+> **Update the Recycle values of the Item registry**: if the *CONAI Materials for the item* tab is modified with Units of Measure and/or Weight, these values can be transferred to the CONAI section of the item registry.      
+
+> **Packages management**: allows opening the management of packaging to be returned used in the purchase document.
+The button becomes active if the document is saved but not loaded.
+Clicking this button opens the corresponding form where: enter the quantity, select the line and transfer the selected packaging into the item lines by clicking the Execute button. In this form, the items that have been entered with the nature Packaging and that are present in the table of Packaging to return will be reported.         
+
+> **Update price lists**: by clicking on the dropdown next to the button, you have access to two procedures. The first procedure is **Refresh current price list**, which allows aligning the price of the item internally to the Listino, following a possible price variation directly in the item line. Instead, with the second procedure, **Create new price list with new validity**, it is possible to create a new customized price list for the customer to whom the document is issued; it will request, in a pop-up, the start and end dates of validity of the new price list.      
+
+> **Show/Hide details**: clicking this button will make the internal tabs of the Items visible or not.   
+
+
+### 3.1 Discounts/Price Lists (Sconti/Listini)
 
 import SalesTabDiscount from './../../../import/sections/sales-tab-discount.md'
 
 <SalesTabDiscount />
 
-### 3.2 Dati
+### 3.2 Data (Dati)
 
-All'interno di questo tab vengono riportate/inserite ulteriori informazioni relative all'articolo.
+This tab contains/entered additional information related to the item.
 
 import AlternativeUMQuantity from './../../../import/fields/alternative-um-quantity.md'
 
 <AlternativeUMQuantity />
 
-- **Magazzino e causale**: vengono proposti il magazzino e la causale di riferimento che compariranno in automatico al momento dello scarico degli articoli relativi dal magazzino. I dati sono ripresi dai *Tipi DDT* oppure si inseriscono manualmente.
-- **Variante**: è possibile scegliere una variante dell'articolo, se codificate all'interno dell'*Anagrafica articolo > Varianti*.    
-- **Stato evasione**: in questa sezione è possibile verificare se la riga articolo è stata Valorizzata, Valorizzata parzialmente o Valorizzata forzatamente.       
-- **Progetto**: è il progetto associato al documento oppure può essere assegnato con l'ausilio del help di campo.     
-- **Rivalsa IVA**: se settato l'iva dell'omaggio viene considerata per il totale documento.   
-- **Riferimento ordine**: fa riferimento all'ordine dal quale è stata creata la DDT.  
-- **Nostro riferimento/vostro riferimento**: in questi campi solitamente viene indicato un riferimento interno ed un riferimento cliente per il documento; nel caso in cui il DDT venga generato tramite una procedura di creazione automatica, questi campi verranno popolati con le indicazioni presenti nell'documento d'origine.      
-- **Numero/Data riferimento**: riportano il Riferimento al Numero e alla Data dell'Ordine cliente di origine.     
-- **Marca**: rappresenta la marca dell'articolo, ripresa dalla sua anagrafica oppure dal listino dell'articolo.    
-- **In fattura**: questo flag viene inserito di default, ma si può disabilitare se l'articolo non dovrà essere trasferito in fattura e quindi non dovrà comparire nelle procedure di evasione del DDT.     
-- **Nota**: offre la possibilità di inserire note per ogni articolo.     
-- **Dettaglio dichiarazioni**: viene riportata la [Dichiarazione d'intento](/docs/finance-area/declarations/declarations/intent-declaration) usata per proporre l'iva dell'articolo; dalla combo box è possibile cambiare la dichiarazione d'intento di riferimento, se presenti più dichiarazioni valide.    
+- **Warehouse and Reason (Magazzino e causale)**: the warehouse and cause of reference will be automatically proposed that will appear when the items are discharged from the warehouse. The data is retrieved from the *DDT Types (Tipi DDT)* or entered manually.
+- **Variant**: it is possible to choose a variant of the item, if coded within the *Item Registry > Variants (Anagrafica articolo > Varianti)*.    
+- **Execution status**: in this section, it is possible to verify whether the item line has been Valuated, Partially Valuated, or Forcefully Valuated.       
+- **Project**: it is the project associated with the document or can be assigned with the help of the field help.     
+- **VAT recourse**: if set, the VAT of the gift is considered for the document total.   
+- **Order reference**: refers to the order from which the DDT was created.  
+- **Our Reference/Your Reference (Nostro riferimento/vostro riferimento)**: in these fields, an internal reference and a customer reference for the document is usually indicated; if the DDT is generated through an automatic creation procedure, these fields will be populated with the indications present in the origin document.      
+- **Reference Number/Date**: refers to the Reference to the Number and the Date of the original Customer Order.     
+- **Brand**: represents the brand of the item, taken from its registry or from the item's price list.    
+- **On invoice**: this flag is inserted by default but can be disabled if the item should not be transferred to the invoice and therefore should not appear in the DDT fulfillment procedures.     
+- **Note**: allows entering notes for each item.     
+- **Detail declarations**: the [Intent Declaration (Dichiarazione d'intento)](/docs/finance-area/declarations/declarations/intent-declaration) used to propose the VAT of the item is reported; from the combo box, it is possible to change the reference intent declaration if more valid declarations are present.    
 
-### 3.3 Agenti
+### 3.3 Agents (Agenti)
 
 import SalesTabAgent from './../../../import/sections/sales-tab-agent.md'
 
 <SalesTabAgent />
 
-### 3.4 Lotti e Serial number
+### 3.4 Lots and Serial Numbers (Lotti e Serial number)
 
-Nelle due griglie possono essere inseriti i lotti e i numeri seriali che devono essere scaricati dal magazzino.     
-Questa operazione è condizionata dalla presenza dei lotti e dei numeri seriali nel magazzino. 
+In the two grids, lots and serial numbers that need to be discharged from the warehouse can be entered.     
+This operation is conditioned by the presence of lots and serial numbers in the warehouse. 
 
-Se l'articolo non prevede la gestione dei Lotti/Numeri seriali, questo tab sarà disabilitato.  
+If the item does not require the management of Lots/Serial Numbers, this tab will be disabled.  
 
-#### Pulsanti specifici
+#### Specific buttons
 
 import DeleteLot from './../../../import/buttons/delete-lot.md'
 
@@ -307,88 +306,88 @@ import DeleteSN from './../../../import/buttons/delete-sn.md'
 
 > <DeleteSN />
 
-### 3.5 Analitica
+### 3.5 Analytical (Analitica)
 
 import TabAnalytic from './../../../import/sections/tab-analytic.md'
 
 <TabAnalytic />
 
-### 3.6 Extra data
+### 3.6 Extra Data (Extra data)
 
 import DocItemExtraData from './../../../import/sections/doc-item-extradata.md'
 
 <DocItemExtraData />
 
-### 3.7 Documenti allegati
+### 3.7 Attached Documents (Documenti allegati)
 
 import DocAttachDocument from './../../../import/sections/doc-attach-document.md'
 
 <DocAttachDocument />
 
-### 3.8 Sezione valori
+### 3.8 Values Section (Sezione valori)
 
 import SalesValuesSection from './../../../import/sections/item-values-section.md'
 
 <SalesValuesSection />
 
-## **4. Riepiloghi**
+## **Summaries**
 
-Nei Riepiloghi sono presentate le informazioni principali dell'intero documento.
+In the Summaries, the main information of the entire document is presented.
 
-### 4.1 Sconti finali articoli
+### 4.1 Final Item Discounts (Sconti finali articoli)
 
 import SummariesFinalDiscount from './../../../import/sections/summaries-final-discount.md'
 
 <SummariesFinalDiscount />
 
-### 4.2 Riepilogo provvigioni agenti
+### 4.2 Agent Commission Summary (Riepilogo provvigioni agenti)
 
-In questo tab vengono riepilogate le provvigioni previste per ogni agente.     
+In this tab, the commissions expected for each agent are summarized.     
 
-### 4.3 Spese/Sconti/maggiorazioni finali 
+### 4.3 Fees/Discounts/Final Increases (Spese/Sconti/maggiorazioni finali)
 
 import SummariesExpenses from './../../../import/sections/summaries-expenses.md'
 
 <SummariesExpenses />
 
-- **Dettaglio dichiarazioni**: viene inserita l'eventuale dichhiarazione d'intento valida per il cliente.    
+- **Detail declarations**: the possible valid intent declaration for the customer is inserted.    
 
-### 4.4 Riepiloghi IVA
+### 4.4 VAT Summaries (Riepiloghi IVA)
 
-Viene proposto il riepilogo IVA del documento, per ogni codice IVA.
+The VAT summary of the document is proposed for each VAT code.
 
-### 4.5 Riepilogo scadenze
+### 4.5 Due Date Summary (Riepilogo scadenze)
 
 import SummariesDueDate from './../../../import/sections/summaries-due-date.md'
 
 <SummariesDueDate />
 
-### 4.6 Totali documento
+### 4.6 Document Totals (Totali documento)
 
 import SummariesDocumentTotal from './../../../import/sections/summaries-document-total.md'
 
 <SummariesDocumentTotal />
 
-## **5. Trasporto**
+## **Transport**
 
-I dati presenti sono: 
+The data present are: 
 
-- **Destinatario**: viene proposto il destinatario di default inserito in anagrafica cliente; se non presente, viene preso l'indirizzo del cliente.    
-- **Destinazione**: viene proposta la destinazione di default del destinatario, se inserita in anagrafica cliente.        
-- **Numero Tracking**: campo libero. 
-- **Volume**: viene proposto il volume cumulativo, risultato dalla somma dei volumi degli articoli (il valore viene ripreso dall'Anagrafica articolo > tab Pesi/Dimensioni), quando l'unità di misura del volume degli articoli corrisponde a quella inserita nei [parametri del DDT](/docs/configurations/parameters/sales/dn-parameters). 
-- **Peso netto**: viene proposto il peso netto cumulativo, risultato dalla somma dei pesi degli articoli (il valore viene ripreso dall'Anagrafica articolo > tab Pesi/Dimensioni), quando l'unità di misura del peso degli articoli corrisponde a quello inserito nei parametri del DDT. 
-- **Peso lordo**: viene proposto il peso lordo cumulativo, risultato dalla somma dei pesi degli articoli (il valore viene ripreso dall'Anagrafica articolo > tab Pesi/Dimensioni), quando l'unità di misura del peso degli articoli corrisponde a quella inserita nei parametri del DDT.     
-- **Aspetto esteriore dei beni**: combo box che rimanda all'omonima tabella.     
-- **Colli**: viene proposto il numero dei colli, sulla base dei dati inseriti nell'*Anagrafica articolo > tab Pesi/Dimensioni*, nei campi *Articoli presenti in un collo* oppure *Colli per formare l'articolo*. Sono presi in considerazione solo gli articoli che hanno questo campo compilato.     
-- **Valori modificati manualmente**: con questo flag rendiamo possibile la modifica dei campi Volume, Peso netto, Peso lordo e Colli, che altrimenti riportano i dati da anagrafica articolo senza possibilità di modifica.     
-- **Ingresso/Uscita dell'ufficio doganale**: campi utilizzati per l'eTrasport per la versione romena, che rimandano alla tabella Ufficio doganale.     
-- **Ingresso/Uscita valico di frontiera**: campi utilizzati per l'eTrasport per la versione romena, che rimandanno alla tabella Valico di frontiera.      
-- **Trasporto**: è necessario selezionare la figura che si occuperà del trasporto, mettendo il flag in Mittente, Destinatario o Vettore; in base alla selezione, la sezione sottostante cambierà; se il trasporto è a carico del Mittente sarà possibile inserire Targa automezzo, Rimorchio, Data e Ora di Inizio trasporto; se è a carico del Destinatario sarà possibile inserire Targa automezzo, Rimorchio, Data e Ora di Inizio trasporto; se è a carico del Vettore invece i campi disponibili saranno Anagrafica contabile del Vettore, Targa, Rimorchio, Data e Ora trasporto, eventuale Committente, Caricatore, Proprietario, Luogo carico. 
+- **Recipient**: the default recipient entered in the customer registry is proposed; if not present, the customer's address is taken.    
+- **Destination**: the default destination of the recipient is proposed, if entered in the customer registry.        
+- **Tracking Number (Numero Tracking)**: free field. 
+- **Volume**: the cumulative volume is proposed, resulting from the sum of the volumes of the items (the value is taken from the Item Registry > Weights/Dimensions tab (Anagrafica articolo > tab Pesi/Dimensioni)), when the unit of measure of the volume of items corresponds to that entered in the [DDT parameters (parametri del DDT)](/docs/configurations/parameters/sales/dn-parameters). 
+- **Net weight**: the cumulative net weight is proposed, resulting from the sum of the weights of the items (the value is taken from the Item Registry > Weights/Dimensions tab (Anagrafica articolo > tab Pesi/Dimensioni)), when the unit of measure of the weight of the items corresponds to that entered in the DDT parameters. 
+- **Gross Weight**: the cumulative gross weight is proposed, resulting from the sum of the weights of the items (the value is taken from the Item Registry > Weights/Dimensions tab (Anagrafica articolo > tab Pesi/Dimensioni)), when the unit of measure of the weight of the items corresponds to that entered in the DDT parameters.     
+- **Type of packaging**: combo box that refers to the homonymous table.     
+- **Packages**: the number of packages is proposed, based on the data entered in the *Item Registry > Weights/Dimensions tab (Anagrafica articolo > tab Pesi/Dimensioni)*, in the fields *Items present in one package* or *Packages for item*. Only items that have this field filled will be considered.     
+- **Values manually modified**: with this flag, we enable the modification of the Volume, Net Weight, Gross Weight, and Packages fields, which otherwise show the data from the item registry without the possibility of modification.     
+- **Customs Office Entry/Exit (Ingresso/Uscita dell'ufficio doganale)**: fields used for eTransport for the Romanian version, referring to the Customs Office table.     
+- **Border Crossing Entry/Exit (Ingresso/Uscita valico di frontiera)**: fields used for eTransport for the Romanian version, referring to the Border Crossing table.      
+- **Transport**: it is necessary to select the person responsible for the transport, setting the flag in Sender, Recipient, or Carrier; based on the selection, the section below will change; if the transport is at the Sender's expense, it will be possible to enter Vehicle License Plate, Trailer, Date and Time of Transport Start; if at the Recipient's expense, it will be possible to enter Vehicle License Plate, Trailer, Date and Time of Transport Start; if at the Carrier's expense, the available fields will be Accounting Registry of the Carrier, License Plate, Trailer, Date and Time of Transport, possible Client, Loader, Owner, Loading Place. 
 
-## **6. Documenti collegati**
+## **Linked documents**
 
-In questa tab è possibile consultare i documenti allegati.
-Per allegare i documenti è possibile procedere in due modi:
-- utilizzando il pulsante della barra degli strumenti **Documenti** si può scegliere se allegare un documento già codificato in Fluentis o se creare un nuovo Documento da allegare.       
-- utilizzando direttamente nella griglia il tasto destro e selezionando *Allega file* si va in creazione di un nuovo Documento da allegare.     
+In this tab, you can consult the attached documents.
+To attach documents, you can proceed in two ways:
+- using the button on the toolbar **Documents**, you can choose to attach a document already coded in Fluentis or create a new Document to attach.       
+- directly using the right button in the grid and selecting *Attach a file*, you go about creating a new Document to attach.

@@ -1,0 +1,10 @@
+---
+title: Simplified Discounts Widget Management (Gestione Widget sconti semplificato)
+sidebar_position: 6
+---
+
+From version 706, the ability to enter discounts directly in the item grid of sales documents has been implemented. To activate this functionality, it is necessary to enable the parameter **Enable Simplified Discounts Widget** found in the Parameters ([Offer Parameters (Parametri Offerte)](/docs/configurations/parameters/sales/offer-parameters), [Order Parameters (Parametri Ordini)](/docs/configurations/parameters/sales/sales-orders-parameters), [DDT Parameters (Parametri DDT)](/docs/configurations/parameters/sales/dn-parameters), [Invoice Parameters (Parametri Fatture)](/docs/configurations/parameters/sales/sales-invoices-parameters)) of the Sales Area. Additionally, it is necessary to specify the discount type in the relevant document type ([Offer Type (Tipo Offerta)](/docs/configurations/tables/sales/sales-offer-type), [Order Type (Tipo Ordine)](/docs/configurations/tables/sales/sales-order-types), [DDT Type (Tipo DDT)](/docs/configurations/tables/sales/delivery-notes-type), [Invoice Type (Tipo Fattura)](/docs/configurations/tables/sales/invoices-type)).
+
+Once these parameters are configured, discounts can be entered directly into the dedicated column of the item grid of sales documents, called **Item discounts**. Entry is possible using simple notation, such as "50+10+5": in this way, the discount grid will generate three rows with the same type of discount chosen but with increasing priority: a 50% discount will be applied first, then a 10% discount, and finally a 5% discount, sequentially. To enter surcharges, simply use the "-" (minus) sign, while to apply a fixed amount discount, the symbol "#" is used after the number (e.g., "5#" indicates a discount of 5 euros, not 5%).
+
+In the item grid, a **Final discounts** column has also been added, which displays (without modification capability) the final discounts on the items entered in the *Summaries* tab of the document.

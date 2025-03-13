@@ -1,21 +1,322 @@
 ---
-title: Fixed Section
-sidebar_position: 1
+title: New Supplier Order (Nuovo ordine fornitore)
+sidebar_position: 2
 ---
 
-The form opens via the path *Purchases > Purchase Order > Create Purchase Order*.  
+The form is located in the **Purchases > Supplier Orders** area and contains the details related to the products or services to be purchased, including quantities, prices, delivery terms, payment conditions, and other contractual specifications.
 
-To create the order, the user must fill in the mandatory fields:
+From the order search form, a new document can be created using the **New** button or an existing one can be opened to view and/or modify it.
 
-**Order Type**: predefined in *Configuration > Tables > Purchases > Purchase Order Types*.  
-This field determines the numbering range of the document being entered and automatically proposes the supplier order number based on the entry date and the last entered number. Additionally, if the *Automatic Order Confirmation* flag is set in the *Order Type* [configuration](/docs/configurations/tables/purchase/purchase-orders-type), the order confirmation date is automatically set to the order entry date.  
-**Year**: automatically enters the current year, but can be manually changed, always respecting the progression rule between date and number.  
-**Number**: automatically proposed based on the type, but can be manually changed, always respecting the progression rule between date and number.  
-**Entry Date**: automatically proposes the current date, but can be manually changed, always respecting the progression rule between date and number.  
-**Supplier**: can be entered using the [field help](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection#using-field-help) or [manually](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection#manual-entry).
+## *How to create a Supplier Order (Come creare un ordine fornitore)*
 
-The form contains several tabs:
+<details>
 
-> - [Header] and its [Procedures]
-> - [Items]
-> - [Summaries]
+<summary>Click for key steps (Clicca per i passaggi fondamentali)</summary>
+
+1. **Enter mandatory data (Inserisci i dati obbligatori)**: *Order Type* and *Supplier*. *Year*, *Number*, and *Insert date* will be automatically proposed.
+
+2. **Enter or modify optional header data (Inserisci o modifica i dati facoltativi della testata)**: such as delivery dates, any *Discounts*, the *Destination*, etc.
+
+3. **Enter Articles (Inserisci gli Articoli)**: double-clicking in the *Item code* field opens the articles help that allows searching and selecting an existing article. All other line data, such as *Units of Measure*, *Quantity*, and *Price*, will be automatically proposed but can be modified. Alternatively, you can select *Not-Codified Item* as the *Line type* and manually enter the subsequent data.
+
+4. **Insert any discounts or other additional information (Inserisci eventuali sconti o altre informazioni aggiuntive)** in the *Discounts/Price Lists* and *Item data* tabs.
+
+5. **Check the Summaries section (Controlla la sezione dei Riepiloghi)** and enter any additional expenses or final discounts.
+
+6. Once the order has been checked and confirmed, **insert a *Confirmation date* and activate the *Printed* flag in the header** to make the order available for fulfillment procedures.
+
+</details>
+
+
+## **1. Mandatory Data (Dati obbligatori)**
+
+To create the order, the user must enter the mandatory fields:
+
+- **Order Type**: defaulted in *Configuration > Tables > Purchases > Supplier Order Types (Configurazione > Tabelle > Acquisti > Tipi ordini fornitori)*. This field determines the numbering range of the document being entered and automatically proposes the supplier order number based on the entry date and the last inserted number. Also, if the *Order Type* has the flag [Automatic order confirmation (Conferma ordine automatica)](/docs/configurations/tables/purchase/purchase-orders-type) set, the order confirmation date is proposed equal to the order entry date;
+- **Year**: the current year is entered automatically, but it can be manually modified while respecting the progression rule between date and number;
+- **Number**: automatically proposed based on the type, but can be manually modified while respecting the progression rule between date and number;
+- **Insert date**: the current date is automatically proposed, but can be manually modified while respecting the progression rule between date and number;
+- **Supplier**: can be entered using the [field help (help di campo)](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection#inserimento-con-il-help-di-campo) or [manually (manualmente)](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection#inserimento-manuale).
+
+## **Header**
+
+Continue entering the following data [manually (manualmente)](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection#inserimento-manuale) or with the [field help (help di campo)](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection#inserimento-con-il-help-di-campo).
+
+:::note Remember (Ricorda)
+If the document is *automatically created*, for example from the search filter of [**Sales Orders**](/docs/sales/sales-orders/create-new-sales-orders/search-sales-orders), from the [**Automatic Orders Generation**](/docs/purchase/purchase-orders/procedures/create-purchase-orders-from-purchase-requests), or from the [**Purchase Order Creation from Purchase Offer**](/docs/purchase/offer-request/procedures/order-creation) procedure, this data is retrieved from the *source document* from which it was generated.
+:::
+
+### 2.1 Supplier Data (Dati fornitore)
+
+By entering the **Supplier**, all specific data from the **Header** tab are automatically proposed, according to the data previously set in the [supplier registry (anagrafica fornitore)](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/accounting-data-intro) in the fields corresponding to its address and in the sections:
+
+- **Currency**: section containing the data on [Currency (Divisa)](/docs/configurations/tables/general-settings/currencies), [Exchange (Cambio)](/docs/guide/common/glossary/glossary-intro#currency-exchange), [Currency date (Data valuta)](/docs/guide/common/glossary/glossary-intro#currency-date).
+- **Country**: section containing the data on [*Country*](/docs/guide/common/glossary/glossary-intro#country), [Language (Lingua)](/docs/guide/common/glossary/glossary-intro#language), [Zone (Zona)](/docs/guide/common/glossary/glossary-intro#zone).
+- **Delivery**: section containing the data on [*Shipments*](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/delivery), [Freight (Porto)](/docs/guide/common/glossary/glossary-intro#carriage), [Packing (Imballo)](/docs/guide/common/glossary/glossary-intro#packing), default [price list (Listino)](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/price-list#listini) and its [validity range (intervallo di validità)](/docs/guide/common/glossary/glossary-intro#validity-date).
+- **Payments**: section containing the data on [*Payments*](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/payments), *Discounts*, *Destination*, and *Carrier*.
+
+All these fields can be deleted or manually modified by the user.
+
+### 2.2 Optional Header Data (Dati facoltativi testata)
+
+- **Requested delivery date** and **Delivery date**: if set before entering the items in the order, they will also be reported on the individual article lines. Alternatively, it is sufficient to press the *Replace expected delivery date in lines (Sostituisci data prevista consegna nelle righe)* button in the ribbon bar to update the dates on the article lines.
+- **Order confirmation date**: for *Order types* that have the flag [Automatic order confirmation (Conferma ordine automatica)](/docs/configurations/tables/purchase/purchase-orders-type). The current date is automatically entered at the time the order is created. To fulfill a supplier order, a *Confirmation date* must be entered.
+- **Apply from**: it is the date of validity for the calculation of payment deadlines.
+- **Supplier notes (Annotazioni fornitore)**: this field is retrieved from the [supplier registry (anagrafica fornitore)](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/accounting-data-intro) but can also be entered manually.
+- **Our/Your reference**: in these fields, an internal reference and a supplier reference for the document are usually indicated. If present, it is retrieved from the supplier registry; otherwise, it can be entered manually.    
+In the event that the order is completed using the *Get from project* procedure, the information present in the corresponding fields of the purchasing job will be proposed in the *Supplier notes (Annotazioni fornitore)* and *Our/Your reference* fields. This transfer is valid only in the case of a supplier order created by retrieving data from a single source document.
+- **Order initial note**: notes that have been previously entered can be selected in the table found under *Configuration > Utilities > Management of coded notes (Configurazione > Utilità > Gestione note codificate)*. For this, the user must double-click the *Initial note* field to open the help for coded notes and select the data.
+- **Project**: using the field help, the document can be linked to a [project (progetto)](/docs/project-management/projects/search-projects-intro). This association only works at the article header level. The project is automatically entered if the supplier order arises from a document that contains it (e.g., from planned purchase orders).
+- **Production job order**: using the field help, the document can be linked to a [production job (commessa di produzione)](/docs/planning/mps-master-production-scheduling/production-job-orders/job-orders). If the order is created from the release of planned purchase orders, the job is automatically proposed.
+- **Country**, *Language*, *Zone* are retrieved from the supplier's registry if present; otherwise, they can be entered manually.
+- **User**: allows the user who creates the document to be entered. If the *Supplier Order Parameters* have the flag [Mandatory operator code (Codice operatore obbligatorio)](/docs/configurations/parameters/purchase/purchase-orders-parameters) active, it will be mandatory to enter the employee in this field to be able to save the order. [Employees (dipendenti)](/docs/project-management/registers/employee/new-employee) must be entered in advance in the *Employees (Dipendenti)* table.
+- **Shipments**, *Carriage*, and *Packing* are retrieved from the supplier's registry if present; otherwise, they can be manually entered.
+- **Price list**: if the supplier's registry has a price list with the *Default* flag, it will be proposed in this field along with its validity dates.
+- **Price lists to update (Listini di aggiornare)**: if this flag is active, the related purchase price list is automatically updated during saving with the information of the article. This flag can also be modified at the article line level.
+- **Point of Sale**: located under the *Shipments* menu and is managed only by the vertical concerning distribution chains. In the case of a supplier order created from the transfer of goods between stores of the same chain, this field displays the point of sale from which the goods originated.
+- **Execution status**: When the order is fulfilled through a DDT or an invoice, its *Execution status* automatically changes from *Not executed* to *Partially executed* or *Closed*. The user can force the fulfillment of a not fully fulfilled order, and when this occurs, the fulfillment date is also saved in the *on date* field.
+
+The following flags indicate the *status of the order (stato dell'ordine)*:
+- **Printed**: this flag is automatically activated when the definitive *Print Report* is launched using the button located in the ribbon bar. Alternatively, it can be manually activated to fulfill the order in a DDT or an invoice;
+- **Cancelled**: when the user wants to cancel a document instead of deleting it, the order is automatically forced as fulfilled in all its article lines;
+- **Historicized**: when the user archives it.
+
+#### Specific Buttons (Pulsanti specifici)
+
+> **Get from project**: calls the procedure to create a supplier order from a purchase job. It is activated by entering the supplier and the supplier order type. To fulfill the purchase job, it must be printed and confirmed.
+> **Replace expected delivery date in lines (Sostituisci data prev. consegna nelle righe)**: allows, after specifying the *Requested delivery date* and/or the *Delivery date* in the header order, to replace these dates in bulk in the already entered article lines.
+
+### 2.3 Payments (Pagamenti)
+
+The [Payment solutions (Soluzioni di pagamento)](/docs/configurations/tables/general-settings/payment-terms) are automatically retrieved from the *Supplier Registry - Payments tab (Anagrafica fornitore - tab Pagamenti)* and can be modified/deleted by the user.
+
+If a [Payment Type (Tipo pagamento)](/docs/configurations/tables/general-settings/payment-types) is associated with a financial discount, the discount amount is considered only for accounting purposes, that is, in the deadlines of the document and not in the total DDT.
+
+If the document originates from a job or a supplier's offer, the payment type is retrieved from the source document.
+
+#### Specific Button (Pulsante specifico)
+
+**Delete Payments**: used to delete selected payment lines.
+
+### 2.4 Discounts (Sconti)
+
+Only the predefined discounts retrieved from the *Supplier Registry > Discounts tab (Anagrafica fornitore > tab Sconti)* are proposed. They can be modified/deleted by the user.
+
+import TabDiscount from './../../../import/sections/tab-discount.md'
+
+<TabDiscount />
+
+### 2.5 Destination (Destinazione)
+
+The information entered in the *Supplier Registry > Deliveries tab (Anagrafica fornitore > tab Consegne)* is proposed only if there are default data. The combo box proposes all recipients, destinations, and carriers entered in the supplier registry.
+
+Shipping addresses (recipient/destination and carrier) can also be entered descriptively without being previously entered among the contacts.
+
+### 2.6 Carrier (Vettore)
+
+In this field, the *Carrier* that will carry out the order shipping can be entered. If this has been entered in the *Supplier Registry > Deliveries tab (Anagrafica fornitore > tab Consegne)*, it will be possible to select it from the dropdown menu in the second column. Alternatively, double-clicking in the third column (*Carrier*) allows selecting one of the company's contacts.
+
+Optionally, the *Number plate* of the carrier and the *Transport Date/Time (Data/Ora trasporto)* can be added.
+
+### 2.7 Extra Data (Extra Data)
+
+import TabExtraData from './../../../import/sections/tab-extra-data.md'
+
+<TabExtraData />
+
+### 2.8 Header Procedures - Project Fulfillment (Procedure testata - Evasione da progetto)
+
+The procedure for retrieving articles from the project allows partially fulfilling the purchase job as well. All unfulfilled, forcibly fulfilled, and partially fulfilled jobs are proposed. To fulfill a purchase job, it must be *Printed* and have a *Confirmation date*.
+
+Before proceeding with the fulfillment, the *Order Type (Tipo di ordine)* to be created and the *Supplier* must be entered in the document header. After that, pressing the **Get from project** button will open the form where it is possible to filter the jobs related to the document's supplier.
+
+In the filter area, it is possible to choose whether to display the data in a Grid, a Hierarchical Structure, or both.
+
+> - The **Hierarchical structure** allows for a clearer division of the various orders and the items contained in each, also facilitating the mass selection of items within a job.
+> - The **Grid (Griglia)** allows for greater customization of the form by adding fields from *Object navigator*. In this case, mass selection must be performed using the keyboard keys and clicking the *Activate/Deactivate only selected lines (Attiva/Disattiva solo righe selezionate)* button in the ribbon bar.
+
+Once all desired *Filters* are set, clicking the *Search* button will display below all printed, confirmed, and unfulfilled or partially fulfilled jobs.
+
+:::important NOTE (NOTA)
+The procedure retrieves all data present in the job, and as a consequence, the purchase conditions present in the job will apply, even if they have currently changed.
+:::
+
+In the results grid, the user has the option to:
+
+- Select all or some of the proposed items: to do this, simply select the flag present at the beginning of the article line. The Quantity to be fulfilled will be automatically set equal to the Remaining Quantity.
+- Select some items for a partial quantity. In this case, the Quantity to be fulfilled must be modified.
+
+To complete the procedure, click the Fulfillment button, which will retrieve all data present in the job and transfer it to the order.
+
+#### Specific Buttons (Pulsanti specifici)
+
+> **Search**: allows searching for purchasing jobs;
+> **Execution**: allows transferring the selected items;
+> **Select/Deselect all (Seleziona/Deseleziona tutti)**: allows selecting/deselecting all items from the list;
+> **Activate/Deactivate only selected lines (Attiva/Disattiva solo righe selezionate)**: useful especially for fulfillment via grid; allows activating/deactivating the flags of all selected lines.
+
+## **Items**
+
+In this tab, all items with their respective data are entered.
+
+import InsertMode from './../../../import/sections/insert-mode.md'
+
+<InsertMode />
+
+To insert a new item into the grid, simply position oneself on the line to fill in the various data or use the *New Item* button present in the ribbon bar.
+
+### 3.1 Mandatory Data (Dati obbligatori)
+
+import RowNumber from './../../../import/fields/row-number.md'
+
+<RowNumber />
+
+- **Line type**: offers the option to select, from the combo box, items with different characteristics:
+> - *Codified Item*: are articles coded in the registry and can be recorded in analytical accounting and stocked in inventory. <br />
+> - *Uncoded article (Articolo non-codificato)*: are descriptive items that can be recorded in analytical accounting but cannot be moved in inventory. <br />
+> - *Charge Item*: are coded or uncoded articles and are summarized distinctly in the document summaries; if the expense article is coded and of tax interest, it will be moved in inventory, if it is uncoded or not of tax interest, it will not move in inventory. <br />
+> - *Note Item*: are descriptive notes reported in the document print; they do not affect accounting and inventory.
+
+:::note Note (Nota)
+If one directly starts entering the article, its class, code, and line type (*Codified Item*) are automatically inserted.
+:::
+
+import ItemClassDescription from './../../../import/sections/item-class-description.md'
+
+<ItemClassDescription />
+
+import UM from './../../../import/fields/item-um.md'
+
+<UM />
+
+import Quantity from './../../../import/fields/item-quantity.md'
+
+<Quantity />
+
+import Price from './../../../import/fields/item-price.md'
+
+<Price />
+
+In the absence of a price list, the proposed data can be retrieved from the *Latest cost* of the item registry, if the flag *Zero cost in absence of price lists (Costo a zero in assenza di listini)* in [Supplier Order Parameters (Parametri ordini fornitori)](/docs/configurations/parameters/purchase/purchase-orders-parameters) is not active.
+
+import Vat from './../../../import/fields/item-vat.md'
+
+<Vat />
+
+- **Amount**: is automatically calculated net of discounts.
+- **Total discounts**: indicates the total amount of discounts present in the *Discounts/Price Lists* tab for each item line.
+
+### 3.2 Optional Item Data (Dati facoltativi articoli)
+
+- **Supplier article code/description (Codice/Descrizione articolo fornitore)**: in this section, you can add the code and description that the supplier uses to identify the article; this data is automatically proposed if a supplier article has been associated in the item's registry (tab [Preferred suppliers (Fornitori preferenziali)](/docs/erp-home/registers/items/create-new-items/item-registry/preferential-vendors)).
+
+- **Purchase turnover type**: the data entered in the tab [Generalities (Generalità)](/docs/erp-home/registers/items/create-new-items/item-registry/generality) of the item registry is proposed. If this is not present, no data is proposed, and at the time of invoice recording, the value entered in the *Default counterparty cost/revenue value (Costo/Ricavo di contropartita predefinito)* field of the contact registry will be considered.
+
+- **Requested delivery date** and **Delivery date**: indicate the requested and expected delivery dates. They can propose the dates entered in the header tab or can be modified manually.
+
+#### Specific Buttons (Pulsanti specifici)
+
+> **Split Quantity in More Delivery Dates**: used to split the order line into multiple lines depending on the requested delivery. This procedure will open a new form in which the new *Requested delivery date* and the expected quantities for each date must be entered.
+> **Packaging**: activates after the order is saved and allows creating a UDC starting from the selected line. The line must be a coded article and saved in the document. The user must have rights within [Loading/Unloading Parameters (Parametri di carico/scarico)](/docs/configurations/parameters/logistics/load-unload-parameters/load-unload-parameters-intro/) for loading the pallet. Additionally, the article must be managed in UDC, and based on the settings of the UDC Type entered in the item registry, tab [Packaging (Confezionamento)](/docs/erp-home/registers/items/create-new-items/item-registry/packaging) the UDC will be created according to the criteria.
+> **Update price lists**: the *Update current price list (Aggiorna listino corrente)* button allows updating the prices in the current price list for each selected item line;    
+the *Create new price list with new validity* button, on the other hand, will open a pop-up to enter the validity dates of the new price list, which will only contain the selected lines and will be addressed to the supplier entered in the order.
+
+:::note Remember (Ricorda)
+When creating/updating a price list using this procedure, only the discounts manually entered in the order are included in the list.
+:::
+
+### 3.3 Discounts/Price Lists (Sconti/Listini)
+
+- **Price list**: the price list from which the article price was retrieved is proposed, with the validity start/end date and the special conditions (e.g., **Discount tier type (Tipo scaglione di sconto)**) assigned to the article in the price list.
+
+- **Manual price**: automatically activates when the price of the article has been entered or manually modified.
+
+- **Price lists to update (Listini da aggiornare)**: if this flag is active, the price of the article is automatically updated in the corresponding purchase price list during saving.
+
+- **Discounts**: all discounts associated with the article are proposed, each with its own calculation and assignment base.
+
+#### Specific Button (Pulsante specifico)
+
+**Delete discounts**: allows deleting the selected discount from the corresponding grid.
+
+### 3.4 Item Data (Dati articolo)
+
+Additional information related to the item is reported/inserted within this tab.
+
+- **Variant**: in this field, it is possible to select a variant of the article from those previously coded in the tab [Variants (Varianti)](/docs/erp-home/registers/items/create-new-items/item-registry/variants) of the item registry. If different prices and/or discounts have been entered for each variant in the price list, they will be updated when a different variant of the article is selected.
+
+- **Project**: represents the project to associate with the document. If a project has been entered in the document header, it will be reported on all article lines; alternatively, it can be selected via the appropriate project help.
+
+- **Notes**: are the notes related to the article line and can also be entered through the help for coded notes. They will be reported in all generated documents.
+
+- **Brand**: represents the article's brand, pulled from its registry or from the article's price list.
+
+- **Production job order items**: if the supplier order is linked to a production job (via the release of a planned purchase order and creation of a supplier order from purchase request), the parent article contained in the job is reported in this field.
+
+- **Offer Request**: if the order was created from a request for offer, via the procedure [Supplier Order Creation from Supplier Offer (Creazione Ordine fornitore da Offerta fornitore)](/docs/purchase/offer-request/procedures/order-creation), the reference request is reported in this field.
+
+- **Warehouse and reason (Magazzino e causale)**: the warehouse and the reference reason are automatically proposed which will appear at the time of loading the relevant items into inventory. The data are retrieved from the [Order Types (Tipi ordine)](/docs/configurations/tables/purchase/purchase-orders-type), but can be manually modified for each article line.
+
+- **Production Job Order**: if the supplier order was created from production planning, the reference production job is reported (see *Automatic Orders Generation*).
+
+- **Alternative unit price (Prezzo unità di misura alternativa)**: if active, indicates that the price entered on the article line refers to the alternative unit of measure and not to the main one. This flag, along with the *Alternative Measurement Unit* and *Alternative quantity* fields, is visible only if the flag *Management of double UM* in [Supplier Order Parameters (Parametri ordini fornitori)](/docs/configurations/parameters/purchase/purchase-orders-parameters/) is active.
+
+- **Unit of measure/Alternative quantity (Unità di misura/Quantità alternativa)**: if an alternative unit of measure has been coded in the [item registry (anagrafica dell'articolo)](/docs/erp-home/registers/items/create-new-items/item-registry/alternative-um) with the *Default* flag and the flag *Automatic proposal of alternative U.M.* in Supplier Order Parameters is active, these values will automatically be proposed when entering the article.
+
+### 3.5 Analytical (Analitica)
+
+import TabAnalytic from './../../../import/sections/tab-analytic.md'
+
+<TabAnalytic />
+
+### 3.6 Extra Data (Extra data)
+
+import DocItemExtraData from './../../../import/sections/doc-item-extradata.md'
+
+<DocItemExtraData />
+
+### 3.7 Attached Documents (Documenti allegati)
+
+import DocAttachDocument from './../../../import/sections/doc-attach-document.md'
+
+<DocAttachDocument />
+
+### 3.8 Value Section (Sezione valori)
+
+import SalesValuesSection from './../../../import/sections/item-values-section.md'
+
+<SalesValuesSection />
+
+## **Summaries**
+
+In the different sections of this tab, the main information of the entire document and some specific buttons are presented.
+
+### 4.1 Final Discounts (Sconti finali)
+
+import SummariesFinalDiscount from './../../../import/sections/summaries-final-discount.md'
+
+<SummariesFinalDiscount />
+
+### 4.2 Expenses (Spese)
+
+import SummariesExpenses from './../../../import/sections/summaries-expenses.md'
+
+<SummariesExpenses />
+
+### 4.3 VAT Summaries (Riepiloghi IVA)
+
+The VAT summary of the document is proposed for each VAT code.
+
+### 4.4 Deadline Summaries (Riepiloghi scadenze)
+
+This grid contains deadlines calculated based on the payment solutions types inserted.
+
+### 4.5 Other Fields (Altri campi)
+
+**Final notes**: is a descriptive field that can be filled in by the user, even with the help of the *Help for coded notes (Help note codificate)*.
+
+### 4.6 Document Totals (Totali documento)
+
+import SummariesDocumentTotal from './../../../import/sections/summaries-document-total.md'
+
+<SummariesDocumentTotal />
