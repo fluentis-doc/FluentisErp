@@ -4,11 +4,11 @@
     "description": "The title in the navbar"
   },
   "item.label.Guida": {
-    "message": "Guida",
+    "message": "Guide",
     "description": "Navbar item with label Guida"
   },
   "item.label.Documenti": {
-    "message": "Documenti",
+    "message": "Documents",
     "description": "Navbar item with label Documenti"
   },
   "item.label.Area": {
@@ -16,15 +16,15 @@
     "description": "Navbar item with label Area"
   },
   "item.label.Acquisti": {
-    "message": "Acquisti",
+    "message": "Purchases",
     "description": "Navbar item with label Acquisti"
   },
   "item.label.Vendite": {
-    "message": "Vendite",
+    "message": "Sales",
     "description": "Navbar item with label Vendite"
   },
   "item.label.Conto Lavoro": {
-    "message": "Conto Lavoro",
+    "message": "Subcontractor",
     "description": "Navbar item with label Conto Lavoro"
   },
   "item.label.Home": {
@@ -32,11 +32,11 @@
     "description": "Navbar item with label Home"
   },
   "item.label.Amministrativa": {
-    "message": "Amministrativa",
+    "message": "Finance",
     "description": "Navbar item with label Amministrativa"
   },
   "item.label.Tesoreria": {
-    "message": "Tesoreria",
+    "message": "Treasury",
     "description": "Navbar item with label Tesoreria"
   },
   "item.label.Controlling": {
@@ -44,19 +44,19 @@
     "description": "Navbar item with label Controlling"
   },
   "item.label.Logistica": {
-    "message": "Logistica",
+    "message": "Logistics",
     "description": "Navbar item with label Logistica"
   },
   "item.label.Pianificazione": {
-    "message": "Pianificazione",
+    "message": "Planning",
     "description": "Navbar item with label Pianificazione"
   },
   "item.label.Produzione": {
-    "message": "Produzione",
+    "message": "Production",
     "description": "Navbar item with label Produzione"
   },
   "item.label.Gestione progetti": {
-    "message": "Gestione progetti",
+    "message": "Project management",
     "description": "Navbar item with label Gestione progetti"
   },
   "item.label.Quality": {
