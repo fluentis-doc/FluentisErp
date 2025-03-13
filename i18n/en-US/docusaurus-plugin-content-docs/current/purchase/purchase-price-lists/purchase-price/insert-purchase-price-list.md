@@ -21,7 +21,7 @@ To make a price list valid for a supplier, it must be entered in the contact reg
 
 ### Optional Fields (Campi opzionali)
 
-- **To validity date**: used if you want to define a promotional campaign or give an expiration date to the price list. It can be entered in bulk for multiple price lists via the [Price Lists Search (Ricerca listini)](filter) using the *Closed* button.   
+- **To validity date**: used if you want to define a promotional campaign or give an expiration date to the price list. It can be entered in bulk for multiple price lists via the [Price Lists Search (Ricerca listini)](/docs/purchase/purchase-price-lists/purchase-price/search-purchase-price-list) using the *Closed* button.   
 - **Discount price list from registry**: if an additional discount structure has been associated in the [supplier registry (anagrafica fornitore)](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/price-list), it will be displayed in this read-only field.  
 - **Notes**: to enter any notes associated with the price list.   
 

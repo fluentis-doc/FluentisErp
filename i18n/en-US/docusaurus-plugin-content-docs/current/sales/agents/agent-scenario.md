@@ -60,7 +60,7 @@ In the image, the 35% discount corresponds to a commission of 3%.
 
 ## Creation of Agent Registry and Related Configuration (Creazione anagrafica agente e relativa configurazione)
 
-In the creation of the agent registry, we will only revisit the most important fields for the example, referring to the [**related pages**](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/agent-registry/detail.md) for the basic phases of registry creation, after having set the [**commission accrual criteria**](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/agent-registry/settlement.md), such as confirmed order, issued invoice, or upon payment (definitely the most used as it recognizes the commission in proportion to the collected amount) and other fields of fiscal and social security interest such as **agent category and withholding tax** (or exemption regime), we focus on the calculation of the commission (the commission value) and thus match it with the criterion we mentioned.
+In the creation of the agent registry, we will only revisit the most important fields for the example, referring to the [**related pages**](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/agent-registry/detail) for the basic phases of registry creation, after having set the [**commission accrual criteria**](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/agent-registry/settlement), such as confirmed order, issued invoice, or upon payment (definitely the most used as it recognizes the commission in proportion to the collected amount) and other fields of fiscal and social security interest such as **agent category and withholding tax** (or exemption regime), we focus on the calculation of the commission (the commission value) and thus match it with the criterion we mentioned.
 
 In the tab [**Direct Commissions**](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/agent-registry/direct-commissions), in addition to the fields for a fixed salary and a general commission percentage for the specific agent, we have the right grid, where we will select the criterion of **Discount Brackets**.
 
@@ -127,7 +127,7 @@ To verify the accrual of commissions and therefore the possibility of liquidatin
 
 In fact, the print is capable of showing in advance how much has accrued and the liquidation value we will then generate and liquidate by converting it into a compensation for the agent (the agent is in itself a recipient against the withholding taxes).
 
-Other prints of the module are useful for verifying more in detail the amounts abstractly owed but not necessarily accrued, such as [**Agent Payslips**](//docs/sales/agents/reports/agents-payslip.md).
+Other prints of the module are useful for verifying more in detail the amounts abstractly owed but not necessarily accrued, such as [**Agent Payslips**](//docs/sales/agents/reports/agents-payslip).
 
 ## Agent Settlement (Liquidazione agenti)
 

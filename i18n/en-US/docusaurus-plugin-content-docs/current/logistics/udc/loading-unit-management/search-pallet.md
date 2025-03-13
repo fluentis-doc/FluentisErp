@@ -1,52 +1,54 @@
 ---
-title: Search Pallet
+title: UDC Search and UDC Transfer Visualization (Ricerca UDC e Visualizzazione trasferimenti UDC)
 sidebar_position: 2
 ---
 
-The pallet management procedure has been created in order to enable the user to search easily for pallet previously inserted with the task to view, edit and delete them. Starting from Pallet management it is possible perform all necessary operations, after having obtained the necessary rights.
+:::important Purpose (A cosa serve)
+The management of Load Units (UDC) in Fluentis allows operators to manage the entire life cycle of UDCs, from their creation to movement, and up to sales. UDCs can be created manually or through WMS Mobile, making the system versatile and adaptable to different operational needs.
 
-The pallet management procedure consists as follows:
+The management procedure offers a detailed filter to view all created UDCs, allowing for control over the loading and unloading status of the units. Each UDC is identified by a unique key consisting of the year, group, and number, and the information related to dimensions and weight can be modified based on specific needs.
 
-RIBBON BAR: the ribbon bar represents the Form menu, that is the area on which it is possible to perform actions as regards the preexistent pallet, rather than the generation of a new one. The list of features is the following:
+Moreover, the module allows for the management of item details within each UDC, facilitating the association with customer orders and the recording of warehouse movements. Operations such as loading, unloading, and transferring UDCs between locations are managed flexibly, ensuring that data is always up-to-date and accurate. Thanks to these features, Fluentis UDC management contributes to improving operational efficiency and inventory traceability.
+:::
 
+### UDC Search (Ricerca UDC)
 
+The form opens via the path **Logistics > UDC Management (Logistica > Gestione UDC)**.
 
-| Function | Meaning |
-| --- | --- |
-| Search | Button to apply search filters to the whole database of pallet in system. |
-| New Pallet | It refers to the procedure to insert a new pallet. |
-| Delete Pallet | It refers to the procedure to delete a pallet. |
-| New Pallet Item | It refers to the procedure to insert one or more items within the selected pallet. |
-| Delete Pallet Item | It refers to the procedure to delete one or more items within the selected Pallet. |
-| Multiple Pallet Insertion  | It performs the procedure to insert more items within a pallet (it regards a window that enables the user to insert items quickly). |
-| Insert Orders in Pallet | It enables the user to insert items of a sales order into a pallet. This procedure creates a link between Pallet and Sales Order. |
+import SearchForm from './../../../import/sections/search-form.md'
 
+<SearchForm />
 
+:::note Note
+When opening the form, the flags *Load* and *Unload*, present in the filter, are not checked, so only UDCs that have not yet been loaded will be displayed.
+When activating the *Loading* flag, only loaded UDCs will be shown, and enabling the *Unloading* flag will show only UDCs that have also been unloaded.
+:::
 
-| Function | Meaning |
-| --- | --- |
-| Sales Return | It performs the procedure to create delivery note document starting from a picking. |
-| Load Pallet | It performs the procedure to create invoice document starting from a picking. |
-| Unload Pallet | It performs the procedure to create POS document starting from a picking. |
-| View Load Record | It opens the pallet load stock record. |
-| View Unload Record | It opens the pallet unload stock record. |
-| Rollback Pallet Load | If the pallet is loaded it is possible to perform the rollback of load stock record. |
-| Rollback Pallet Unload | If the pallet is loaded and unloaded it is possible to performs the rollback of unload stock record. |
-| Add/Remove Items | After having inserted the user that has to have rights related to the 'remove pallet' procedure of an unload template, this function enables the user to remove a quantity by  pallet and to unload it directly or to unload and load the same quantity on another pallet. In that case the user will have rights related to the 'load pallet' procedure linked to a load template. |
-| Confirm Transfer |  |
-| Move Pallet | It enables the user to move pallet from a location to another one. |
-| Preview | It shows the print preview. |
-| Print | It prints the search result and activates the printed flag on pallet. |
-| Rollback Report | It disables the printed flag on pallet. |
+In case a *Load Unit* has been entered in a *delivery or transfer list*, the number and date of the list are displayed in the results grid.
 
-FILTER AREA: The filter area contains the list of the possible data types thanks to which it is possible to perform a selection, a research on the total of sales order lines inserted in system. Typically Filters have 'AND' condition and it is possible to specify more filter criteria at the same time.
+Additionally, it is noteworthy that UDCs can also be searched for by the customer order to which they are linked.
 
-RESULT GRID: the result grid represents the list of pallets that correspond to the filter data above mentioned. After having specified the values through which to obtain a pallet research the user, by clicking on the [Ricerca] button in the related Ribbon, will obtain the list of the desired pallet in the result grid. The information, that can be read by this grid, regard: pallet identification (through year, group, number and type field), pallet dimension, pallet status (moved or not), pallet number list, warehouse, the related load number and so on.
+From this form, it is possible to load the selected UDCs by pressing the **Load pallet** button and also unload them (only if already loaded and present in a list) through the **Unload pallet** button.
 
-DETAIL GRID: the detail grid shows the content of the pallet selected in the result grid. The information, that can be read by this grid, regard the item identification number or the one of items contained in the selected pallet, the quantity and possibly information about Starting Sales Order document.
+:::note ATTENTION
+If you want to transfer items from the warehouse directly into the load unit, using a loading reason to insert the items into the unit and a unloading counterpart to remove them from the warehouse, it is important to remember to first move the items to the location indicated in the counterpart reason.
+:::
 
+*Specific buttons (Pulsanti specifici)*:
 
+> **New**: the button allows you to [Create a new UDC](/docs/logistics/udc/loading-unit-management/insert-new-pallet);  
+> **Sales returns**: allows you to create a new *Load Unit*, using as *UDC Type (Tipo UDC)* the one with the *For Return* enabled, and all other properties are copied from the original *Load Unit*; this button is enabled only for lines that are loaded and delivered;  
+> **Insert orders in pallets**: allows you to insert the items of a customer order into a *Load Unit*; this procedure creates a link between the UDC and the Customer Order;  
+> **Load pallet**: executes the procedure for creating a record/movement of loading the *Load Unit*;          
+> **Unload pallet**: executes the procedure for creating a record/movement of unloading the *Load Unit*; this is enabled only if the *Load Unit* is present in a UDC picking list;            
+> **View Load Record (Visualizza registrazione di carico)**: opens the warehouse record of the UDC load;  
+> **View Unload Record (Visualizza registrazione di scarico)**: opens the warehouse record of the UDC unload;  
+> **Rollback Loading Unit Load**: if the UDC is loaded, it rolls back the warehouse loading record;  
+> **Rollback  Loading Unit Unload**: if the UDC is loaded and unloaded, it rolls back the warehouse unloading record;  
+> **Add/Remove items**: allows the user to add or remove an item from the selected *Load Unit*; furthermore, the user has the option to remove an item from another *Load Unit* and add it to the selected one. This button is enabled for loaded lines that are not delivered, not linked to *Picking* or *Transfer Lists* and not linked to production declarations;    
+> **Move pallet**: allows moving the UDC from one location to another;  
+> **Rollback report**: allows setting the print flag to "False"; this button is enabled only for unloaded lines and those not linked to production declarations.      
 
+### UDC Transfer Visualization (Visualizzazione trasferimenti UDC)
 
-
-
+The procedure has been designed to allow the user to easily query the UDC warehouse in order to keep track of inventory and to have all the information related to UDCs present in stock and that have been transferred or not between warehouses within a minimal query time.
