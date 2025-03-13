@@ -203,15 +203,21 @@ export default function Home() {
   const context = useDocusaurusContext();
   const { siteConfig = {} } = context;
   return (
-    <Layout
-      title={`${siteConfig.title}`}
-      description={`${siteConfig.title}`}>
-      <header className={clsx('hero hero--primary', styles.heroBanner)}>
+    <Layout title={`${siteConfig.title}`} description={`${siteConfig.title}`}>
+      <header className={clsx("hero hero--primary", styles.heroBanner)}>
         <div className="container">
-          <h1 className="hero__title">{siteConfig.title}</h1>
-          <p className="hero__subtitle">{siteConfig.tagline}</p>
+          <h1 className="hero__title">
+            <Translate>siteConfig.title</Translate>
+          </h1>{" "}
+          <p className="hero__subtitle">
+            <Translate>siteConfig.tagline</Translate>
+          </p>
           <div className={styles.buttons}>
-            <a className="button button--primary bottoneCustom bi bi-arrow-up-right-circle-fill" href="docs/guide/intro/intro-erp"> Introduzione
+            <a
+              className="button button--primary bottoneCustom bi bi-arrow-up-right-circle-fill"
+              href="docs/guide/intro/intro-erp"
+            >
+              <Translate>siteConfig.introductionButton</Translate>
             </a>
 
           </div>

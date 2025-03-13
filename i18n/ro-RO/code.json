@@ -647,5 +647,17 @@
   },
   "Spedizioni": {
     "message": "Transport"
+  },
+  "siteConfig.title":{
+     "message":"Fluentis ERP Documentation",
+     "description":"Homepage title"
+  },
+  "siteConfig.tagline":{
+     "message":"Documentația creată pentru a vă oferi suport la utilizarea suitei Fluentis ERP",
+     "description":"Homepage subtitle"
+  },
+  "siteConfig.introductionButton":{
+     "message":"Introducere",
+     "description":"Label for the introduction button on the homepage"
   }
 }

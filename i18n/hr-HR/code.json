@@ -670,5 +670,17 @@
   "theme.contentVisibility.draftBanner.message": {
     "message": "This page is a draft. It will only be visible in dev and be excluded from the production build.",
     "description": "The draft content banner message"
+  },
+  "siteConfig.title":{
+     "message":"Fluentis ERP Documentation",
+     "description":"Homepage title"
+  },
+  "siteConfig.tagline":{
+     "message":"The complete ERP solution for your business",
+     "description":"Homepage subtitle"
+  },
+  "siteConfig.introductionButton":{
+     "message":"Overview",
+     "description":"Label for the introduction button on the homepage"
   }
 }
