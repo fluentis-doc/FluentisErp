@@ -1,53 +1,53 @@
 ---
-title: MS Parameters (Parametri MS)
+title: MS Parameters 
 sidebar_position: 3
 tags: [MS]
 ---
 
 Through this window, all parameters regarding the management of production orders and how the subsequent phases after the generation of the orders themselves should be managed are set.
 
-## Order Generation Method (Metodo generazione commessa)  
+## Method of job order generation 
 
-In this section, the **Order Type (Tipo di Commessa)** (Single Product / Multi Product) must be set, which will be proposed in the procedure **Production Job Order generation**, tab [Parameters](/docs/planning/mps-master-production-scheduling/job-order-creation).  
+In this section, the **Job Order Type** (Single Product / Multi Product) must be set, which will be proposed in the procedure **Production Job Order generation**, tab [Parameters](/docs/planning/mps-master-production-scheduling/job-order-creation).  
 At the time of generating the order from the [Production Order Generation](/docs/planning/mps-master-production-scheduling/job-order-creation), it is possible to modify this setting, as well as the subsequent combo called **Grouping  for**, which allows you to indicate how items should be grouped within the same order *Monoproduct* or *Multiproduct*.
 
 If the *Job order type* is:  
 - *Monoproduct*, the only allowed grouping is by Item: this management type allows the user to automatically generate a series of single product orders by selecting a list of customer order lines, lines coming from Sales Forecasts, or the Master Production Plan, or from Stock Out, ensuring that each generated order presents the sum of the requested quantities for the same item. The end date of a grouped order is always equal to that of the requirement closest to the date when the processing is launched.  
 - *Multiproduct*, groupings can be made by customer, sales order, customer/order, allowing the user to include multiple items from customer order lines linked to the same customer, the same sales order, or the same sales order of the same customer in the same Multi Product order.
 
-The field **Procurement Priority** allows you to enter a default value for the priority of the created orders; this will be considered by the [Finite Capacity Scheduling (Schedulazione a capacità finita)](/docs/planning/ms-master-scheduling/finite-capacityscheduling/).
+The field **Procurement Priority** allows you to enter a default value for the priority of the created orders; this will be considered by the [Finite Capacity Scheduling](/docs/planning/ms-master-scheduling/finite-capacityscheduling/).
 
-## Order Generation From (Generazione commessa da)  
+## Order Generation From 
 
 In this section, the user can set with the appropriate flags whether the order should be generated from *Sales Orders* or from a *Forecast* (specifically, they can select whether from *Sales Forecast*, and/or from *Master Production Schedule*).  
 These parameters can then be modified from the [Production Order Generation](/docs/planning/mps-master-production-scheduling/job-order-creation) window.  
-In the case of *Production Order Generation from Forecast (Generazione commessa di produzione dal Previsionale)*, it must be specified whether the production order should be generated with a weekly or monthly deadline.
+In the case of *Production Order Generation from Forecast*, it must be specified whether the production order should be generated with a weekly or monthly deadline.
 
 **Consider availabilities from**   
 In this section, the user can decide to set the consideration of the availability of finished products during the generation of the production order from: *Subcontractor*, *Purchases*, *Sales*, *Production*, *Warehouse*.
 
 There are then several flags:
 
-**Compute qty. according to item LeadTime**: activated if the processing cycles are not to be used to calculate the duration of a production order; in this case, for the purpose of calculating the order duration, reference is made to the production lead time field present in the [MRP Parameters (Parametri MRP)](/docs/configurations/parameters/production/mrp-parameters/search-mrp-parameters) of the item.
+**Compute qty. according to item LeadTime**: activated if the processing cycles are not to be used to calculate the duration of a production order; in this case, for the purpose of calculating the order duration, reference is made to the production lead time field present in the [MRP Parameters](/docs/configurations/parameters/production/mrp-parameters/search-mrp-parameters) of the item.
 
-**Automatic Order Generation from Customer Orders (Generazione commessa da Ordini clienti in automatico)**: if active, this allows the procedure to automatically create the production order as soon as a customer order line is inserted. The order in this case is created in the *Not examined* state. Generally, it is activated when using the *MRP* procedure for scheduling instead of the *General Schedule*.
+**Automatic Order Generation from Customer Orders**: if active, this allows the procedure to automatically create the production order as soon as a customer order line is inserted. The order in this case is created in the *Not examined* state. Generally, it is activated when using the *MRP* procedure for scheduling instead of the *General Schedule*.
 
 **Update ready goods date**: if active, when the expected end date of processing in an order is changed (manually or through a procedure), the new date is also reflected in the *Ready goods date* field of the order itself and also of the connected customer order. Additionally, a log table named **MS_ProductionJobOrderItemReadyGoodsDateLogs** has been created to track all changes made. This can only be consulted via SQL.           
 
 **Automatic generation of production flow**: if active, the user can decide to activate the **Scheduling** flag, which allows the user to define the level of automation desired in the generation of the production flow; this flow will be started directly with the **Flow generation** button present in the [Production Order Generation](/docs/planning/mps-master-production-scheduling/job-order-creation).       
-For example, the user can activate the **Scheduling** flag, which allows the production orders to already be scheduled as soon as they are generated by the [Production Order Generation](/docs/planning/mps-master-production-scheduling/job-order-creation). Activating the **Scheduling** flag in turn allows the **Release** flag to be activated, which allows the user to decide whether the scheduled purchase, production, and/or work account orders should also be released automatically after the automatic scheduling. In this last case, for the **scheduled production orders (ordini pianificati di produzione)**, the **Release the executive production orders** flag can also be activated, which allows direct generation of executable production orders, thereby bypassing the [Release Production Orders (Rilascio ordini di produzione)](/docs/planning/ms-master-scheduling/planned-orders/procedures/release-planned-orders) procedure. 
+For example, the user can activate the **Scheduling** flag, which allows the production orders to already be scheduled as soon as they are generated by the [Production Order Generation](/docs/planning/mps-master-production-scheduling/job-order-creation). Activating the **Scheduling** flag in turn allows the **Release** flag to be activated, which allows the user to decide whether the scheduled purchase, production, and/or work account orders should also be released automatically after the automatic scheduling. In this last case, for the **scheduled production orders**, the **Release the executive production orders** flag can also be activated, which allows direct generation of executable production orders, thereby bypassing the [Release Production Orders](/docs/planning/ms-master-scheduling/planned-orders/procedures/release-planned-orders) procedure. 
 
 :::note Important
-This automation can also be activated upon confirmation of the customer order only if the **Production Order Type (Tipo commessa di produzione)** has been entered in the [Customer Order Types (Tipi ordine cliente)](/docs/configurations/tables/sales/sales-order-types/) table and the **Production Order Generation (Generazione commessa di produzione)** flag has been activated.     
-It is noted that to trigger the automation, the customer order must be *Confirmed*, *Printed*, and the *delivery dates (date di consegna)* and *Goods ready* must be present in all item lines.
+This automation can also be activated upon confirmation of the customer order only if the **Production Job Order Type** has been entered in the [Sales Order Types](/docs/configurations/tables/sales/sales-order-types/) table and the **Production Order Generation** flag has been activated.     
+It is noted that to trigger the automation, the customer order must be *Confirmed*, *Printed*, and the *delivery dates* and *Goods ready* must be present in all item lines.
 :::
 
-## Costing of the Order (Costificazione commessa)  
+## Production job order costing
 
 In this section, parameters can be indicated that will be proposed as defaults for the costing of production orders.    
 
-> **Cost Type (Tipo di costo)**: allows you to specify the type of cost to be used for costing raw materials among *Last*, *Average*, and *Standard*;    
-> **Markup Type (Tipo di ricarico)**: allows you to indicate the type of markup between *Cost* (value-based) and *Percent Completed*; the corresponding value can be entered in the adjacent field;      
+> **Cost Type**: allows you to specify the type of cost to be used for costing raw materials among *Last*, *Average*, and *Standard*;    
+> **Markup Type**: allows you to indicate the type of markup between *Cost* (value-based) and *Percent Completed*; the corresponding value can be entered in the adjacent field;      
 > **Cost of the batch**: activating this flag, the procedure will value the cost of the material based on the selected cost type considering the values only of that specific batch;     
 > **Cost for Production job order**: activating this flag, the procedure will value the cost of the material based on the selected cost type considering the values only of that specific order.     
 
@@ -55,21 +55,21 @@ In this section, parameters can be indicated that will be proposed as defaults f
 If both **Cost of the batch** and **Cost for Production job order** are activated, the procedure will value the cost of the material based on the selected cost type considering the values only of that specific order and for that specific batch.
 ::: 
 
-## Planning Warehouses for Orders (Magazzini di pianificazione commesse)  
+## Warehouses for job order planning   
 
 This grid is a simple visualization of the list of warehouses on which the availability must be checked during the generation of the production order. This list is set in the form called *Calculate Availability* found under *Home > Items > [Availability Calculation](/docs/erp-home/registers/items/calculate-availability)*.
 
 **Parameters proposed for planning**: allows you to define which parameters to propose for planning; it can re-propose the parameters from the last planning performed or propose the parameters used for planning by the individual operator.
 
-**Days for next planning**: indicates the number of days that will be used to increment the start date of the finite capacity scheduling (field *From the date*), in the *Finite capacity scheduling parameters* tab of the *Finite Capacity Scheduling (Schedulazione a capacità finita)* form.
+**Days for next planning**: indicates the number of days that will be used to increment the start date of the finite capacity scheduling (field *From the date*), in the *Finite capacity scheduling parameters* tab of the *Finite Capacity Scheduling* form.
 
 **Maximum number of months for planning**: indicates the number of months to add to the current date to determine the end scheduling date *Planning until* present in the parameters of the *General planning*.        
 
-**Maximum Number of Months for Material Availability Calculation (Numero massimo di mesi per il calcolo della disponibilità materiali)**: it is possible to define the time horizon for calculating availability, specifically the number of months in which documents will be considered; whereas, documents with dates later than the months taken into consideration will not be included in the scheduling.   
+**Maximum Number of Months for Material Availability Calculation**: it is possible to define the time horizon for calculating availability, specifically the number of months in which documents will be considered; whereas, documents with dates later than the months taken into consideration will not be included in the scheduling.   
 
-**First day of the week visualized in the factory calendar**: allows you to enter the day that you want to appear as the first day of the workweek in the [Factory Calendar (Calendario di Fabbrica)](/docs/configurations/tables/production/factory-calendar). Usually, Monday is entered.
+**First day of the week visualized in the factory calendar**: allows you to enter the day that you want to appear as the first day of the workweek in the [Factory Calendar](/docs/configurations/tables/production/factory-calendar). Usually, Monday is entered.
 
-## Order Colors (Colori delle commesse)  
+## Job order colors 
 
 In this section, you can set the background and text colors of production orders based on their status (unexamined, launched, etc.).
 

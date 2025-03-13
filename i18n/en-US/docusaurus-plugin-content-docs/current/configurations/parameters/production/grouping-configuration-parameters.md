@@ -1,6 +1,6 @@
 ---
-title: Grouping Configuration Parameters (Parametri Configurazione Raggruppamento)
+title: Grouping Configuration Parameters 
 sidebar_position: 5
 ---
 
-Work in progress (In corso)
+Work in progress
