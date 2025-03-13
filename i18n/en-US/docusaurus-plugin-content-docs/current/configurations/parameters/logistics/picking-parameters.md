@@ -1,15 +1,15 @@
 ---
-title: Picking Parameters (Parametri Picking)
+title: Picking Parameters
 sidebar_position: 6
 ---
 
-:::important What it's for (A cosa serve)
+:::important What it's for 
 Through this functionality, users can configure and adapt the system according to various operational needs, ensuring a smooth and consistent operation of logistics activities.
 
 In this section, it is possible to assign default warehouses and shipping reasons, decide whether to check the availability of items, and define whether entering information such as the operator code should be mandatory. Other options include managing items by batches or serial numbers and checking quantities at the time of creating the picking list. This parameterization module not only facilitates operations but also ensures that procedures comply with corporate policies and current regulations, allowing for effective and accurate inventory management.
 :::
 
-The form is opened via the path **Parameters > Logistics > Picking Parameters (Parametri > Logistica > Parametri Picking)** and allows for all parametrizations regarding the operation of pickings or picking lists. Only after properly parameterizing this mask is it possible to use the Picking module.
+The form is opened via the path **Parameters > Logistics > Picking Parameters** and allows for all parametrizations regarding the operation of pickings or picking lists. Only after properly parameterizing this mask is it possible to use the Picking module.
 
 #### Specific Button  
 > **Restore**: button to restore the previous state of the parameters.
@@ -17,25 +17,25 @@ The form is opened via the path **Parameters > Logistics > Picking Parameters (P
 ## General
 
 In this tab, the generalities of the Picking management can be parameterized. It is possible to assign a warehouse and a reason to be used by default for the picking discharge. To do this, simply check **Priority picking parameters** and indicate a **Warehouse** and a **Template**.  
-It is also possible to choose whether, at the time of discharge, to **Check availability (Controllare la disponibilità)**, **Exclude customer orders (Escludere gli ordini clienti)** from availability, and/or be blocked if availability does not meet the quantity to be moved (**Compulsory availability**).
+It is also possible to choose whether, at the time of discharge, to **Check availability**, **Exclude customer orders** from availability, and/or be blocked if availability does not meet the quantity to be moved (**Compulsory availability**).
 
 If you choose to check availability, you can determine how it should be calculated based on the **Subcontractor**, **Planned production**, **Purchases**, **Released production**, **Sales**, and/or **Warehouse**.
 
-As general settings, you can choose if entering the **User code** is mandatory when creating the picking, if the **Numbering must be progressive by year (Numerazione deve essere progressiva per anno)**, and if the **Operator code confirming the picking (Codice operatore che conferma il picking)** is mandatory.
+As general settings, you can choose if entering the **User code** is mandatory when creating the picking, if the **Numbering must be progressive by year**, and if the **Operator code confirming the picking** is mandatory.
 
 In case there are particular item managements, the **Management size and colour** can be activated.
 
-In the section **Batch and serial number management (Gestione lotti e serial number)**, the following flags can be activated:
+In the section **Batch and serial number management**, the following flags can be activated:
 
-**Batch/Serial number management (Gestione Lotti / Serial number)**: enables the possibility of managing batches and serial numbers through the relative grids.
+**Batch/Serial number management**: enables the possibility of managing batches and serial numbers through the relative grids.
 
-**Suggest Batches/Serial numbers (Proposta Lotti / Serial number)**: if active, when changing the quantity of the picking line, if the item is managed by batches with FIFO picking or expiration date, the batches will be automatically suggested in the relative grid.
+**Suggest Batches/Serial numbers**: if active, when changing the quantity of the picking line, if the item is managed by batches with FIFO picking or expiration date, the batches will be automatically suggested in the relative grid.
 
 **Automatic Movement Check**: if active, in the *Check row management* form, it automatically discharges the line.   
 
-**Display discharge grid (Visualizzazione griglia evasione)**: if active, the flag enables grid mode in the picking discharge form.
+**Display discharge grid**: if active, the flag enables grid mode in the picking discharge form.
 
-**Display discharge tree (Visualizzazione tree evasione)**: if active, the flag enables tree mode in the picking discharge form.      
+**Display discharge tree**: if active, the flag enables tree mode in the picking discharge form.      
 
 ## WMS Mobile  
 
@@ -47,7 +47,7 @@ Different types of pickings can also be chosen.
 
 It is also appropriate to specify the reasons that will be used for the following movements:
 
-- UDC discharge for transfer confirmation;
+- Loading unit discharge for transfer confirmation;
 
 - suggested reason for picking discharge;
 

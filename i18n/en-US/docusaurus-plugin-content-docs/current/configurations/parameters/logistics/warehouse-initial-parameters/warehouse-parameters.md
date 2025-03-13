@@ -19,13 +19,13 @@ In the *Search Warehouse Initials Parameters* form, select the desired row and d
 
 **Year**: represents the year for which you want to set the parameters.
 
-**Date of last closing of the fiscal year (Data ultima chiusura esercizio)**: represents the date when the last warehouse closing with balance recovery was made (see [Warehouse Valuation](/docs/logistics/physical-inventory/warehouse-valorization)). In most cases, it corresponds to December 31 of the previous year. The following day, usually January 1, warehouse entries for initial inventory are entered, automatically created by the *Warehouse Valuation* procedure, using the loading reason *Oddments*; this reason must have the *Remaining Inventory* flag activated.
+**Date of last closing of the fiscal year**: represents the date when the last warehouse closing with balance recovery was made (see [Warehouse Valuation](/docs/logistics/physical-inventory/warehouse-valorization)). In most cases, it corresponds to December 31 of the previous year. The following day, usually January 1, warehouse entries for initial inventory are entered, automatically created by the *Warehouse Valuation* procedure, using the loading reason *Oddments*; this reason must have the *Remaining Inventory* flag activated.
 
 For each warehouse present in the company, there must be one and only one loading reason for the initial remaining inventory. The quantities loaded with that reason on the "opening" day of the warehouse represent the *initial balances* of that warehouse. All movements subsequent to this loading record will be identified as warehouse entries or exits depending on whether they are loads or discharges.
 
 ## 2. General
 
-**Modify warehouse records linked to other documents (Modifica registrazioni di magazzino collegati con altri documenti)**: allows for the modification of warehouse records linked to purchase DDTs, purchase invoices, sales DDTs, sales invoices, etc. The absence of this flag means that warehouse documents created based on purchase or sales documents cannot be modified. In this case, a message will appear indicating that modification is not possible.
+**Modify warehouse records linked to other documents**: allows for the modification of warehouse records linked to purchase DDTs, purchase invoices, sales DDTs, sales invoices, etc. The absence of this flag means that warehouse documents created based on purchase or sales documents cannot be modified. In this case, a message will appear indicating that modification is not possible.
 
 Regarding the modification of warehouse records from documents, it should be noted that you can choose whether to modify the quantity, modify the price, modify both, or neither. This means that when a document already recorded in the warehouse, such as a purchase DDT, is modified, the application checks whether the Modify quantity flag and the Modify prices flag are active or not; if so, the modification made in the document is also transmitted to the warehouse record with which the document is linked, otherwise the modification of the document does not affect the related warehouse record. You can activate only one of the two flags. Moreover, it is also possible to activate the option to insert or delete movements directly from the document by entering or deleting individual lines.
 
@@ -35,13 +35,13 @@ The counterpart movement is derived from a second movement reason linked to the 
 
 **Valorize for warehouse**: allows you to decide whether the warehouse closing should take into account the average costs (or last costs, or standard costs, depending on which type of cost you want to use for the warehouse closing) related to movements carried out during the year on the individual warehouse. This means that if an item has undergone movements in 3 warehouses, for example, in the case of an active flag, it will have 3 different lines in the Warehouse History for the year in which the closing is executed, with probably 3 different average costs and last costs.
 
-**Allow modification of accounts of already used items (Permetti la modifica dei conti degli articoli già utilizzati)**: allows for the modification of "Purchase turnover" and "Sales turnover" data of items that have already undergone warehouse movements. If the flag is deactivated, this modification is, of course, prevented. 
+**Allow modification of accounts of already used items**: allows for the modification of "Purchase turnover" and "Sales turnover" data of items that have already undergone warehouse movements. If the flag is deactivated, this modification is, of course, prevented. 
 
 **Work cycle status management through Workflow**: if active, the work cycle status can only be modified via Workflow.
 
 **Item/Supplier relationship control through Workflow**: if active, the **Row Block** flag present in the **Preferred Suppliers** tab of the item registry can only be modified via Workflow.
 
-**Start Period Date and End Period Date (Data inizio periodo e Data fine periodo)**: allow the user to define the period during which warehouse records can be entered, modified, or deleted. Usually, the start period date is set to a date just before the date of the last warehouse closure, and the end period date is set to the end of the current calendar year. 
+**Start Period Date and End Period Date**: allow the user to define the period during which warehouse records can be entered, modified, or deleted. Usually, the start period date is set to a date just before the date of the last warehouse closure, and the end period date is set to the end of the current calendar year. 
 
 ### 2.1 Batch and Serial Number Management
 
@@ -49,11 +49,11 @@ The counterpart movement is derived from a second movement reason linked to the 
 
 **Batches and serial numbers required**: if activated, it requires the user to enter the batch of the item in all purchase and sales documents, as long as the item is managed by batches or serial numbers.
 
-**Enable uniqueness of batches (Abilitata unicità dei lotti)**: if active, enables the uniqueness of the batch for the company and division during the creation phase of the batch itself, so if multiple items use the same *batch code type*, the progressive number with which the batch will be created will continue to increase; if inactive, then the uniqueness is for item and variant, so when new batches are created for different items that use the same *batch code type*, the first suggested batch will be the same for all those items. 
+**Enable uniqueness of batches**: if active, enables the uniqueness of the batch for the company and division during the creation phase of the batch itself, so if multiple items use the same *batch code type*, the progressive number with which the batch will be created will continue to increase; if inactive, then the uniqueness is for item and variant, so when new batches are created for different items that use the same *batch code type*, the first suggested batch will be the same for all those items. 
 
 **Batch status management through Workflow**: if active, the **Batch Status**, the **Sellable Batch** flag, and the **Closed** flag present in the batch registry can only be modified via Workflow. The same applies to the **Canceled**, **Forced Closed**, and **Reserved** flags present in the serial number registry.
 
-**Use barcode movements (Usa barcode movimenti)**: if active, the **Barcode** column will be displayed in the warehouse movement rows.        
+**Use barcode movements**: if active, the **Barcode** column will be displayed in the warehouse movement rows.        
 
 ## 3. Closing Parameters
 
@@ -85,10 +85,10 @@ In this tab, you can decide how the *Inventory* should be managed for each wareh
 
 **Negative stock**: allows for negative inventory in that warehouse (only if the *Allow negative inventory* flag is also active in the *General Parameters*); 
 
-**Location Inventory (Giacenza Ubicazione)**: means checking the inventory also for the specified location in the movement (if the inventory for that location is not sufficient, the movement is not created); 
+**Location Inventory**: means checking the inventory also for the specified location in the movement (if the inventory for that location is not sufficient, the movement is not created); 
 
-**Project Inventory (Giacenza progetto)**: means checking the inventory also for the specified project in the movement (if the inventory for that project is not sufficient, the movement is not created); 
+**Project Inventory**: means checking the inventory also for the specified project in the movement (if the inventory for that project is not sufficient, the movement is not created); 
 
-**Customer/Supplier Inventory (Giacenza cliente/fornitore)**: means checking the inventory also for the customer/supplier specified in the record (if the inventory for that customer/supplier is not sufficient, the movement is not created. This can be used for third-party warehouses).
+**Customer/Supplier Inventory**: means checking the inventory also for the customer/supplier specified in the record (if the inventory for that customer/supplier is not sufficient, the movement is not created. This can be used for third-party warehouses).
 
 For everything not detailed in this document about the common functioning of forms, please refer to the following link [Common functionalities, buttons, and fields](/docs/guide/common).
