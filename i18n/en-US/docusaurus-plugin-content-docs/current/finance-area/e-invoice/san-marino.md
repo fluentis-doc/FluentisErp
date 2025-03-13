@@ -11,7 +11,7 @@ It therefore does NOT concern the aspects related to invoicing by Italian entiti
 
 ### Table *Configuration of electronic documents*
 
-Within the table, normally filled out for the configuration of the Fluentis Business Hub which connects with the Italian ES, it is necessary in this case to fill out, in addition to the usual fields for which reference is made [**here (video *Initial Configuration of Electronic Invoicing*)**](/docs/finance-area/ES-documents/ES-documents-intro/), two specific fields valid for San Marino:
+Within the table, normally filled out for the configuration of the Fluentis Business Hub which connects with the Italian ES, it is necessary in this case to fill out, in addition to the usual fields for which reference is made [**here (video *Initial Configuration of Electronic Invoicing*)**](/docs/finance-area/sdi-documents/sdi-documents-intro/), two specific fields valid for San Marino:
 
 - the flag **San Marino Test** (to identify the connection to the simulation tax environment) which prevails and bypasses the flag *Is it test* present in the header (which is irrelevant in this case)
 
