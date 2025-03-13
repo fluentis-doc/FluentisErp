@@ -16,7 +16,7 @@ To insert a new reason, click the **New** button.
 > **Duplicate the selected template**: allows duplicating the selected reason. Useful for creating a new reason based on one with similar characteristics. A window will open asking for a code to be assigned to the new reason you intend to create, and after confirming, you will be asked to enter the newly created reason to modify some characteristics. 
 
 :::important See Also
-[**VIDEO TUTORIALS ON ACCOUNTING REASONS (VIDEO TUTORIALS SULLE CAUSALI CONTABILI)**](/docs/video/finance/intro.md)
+[**VIDEO TUTORIALS ON ACCOUNTING REASONS (VIDEO TUTORIALS SULLE CAUSALI CONTABILI)**](/docs/video/finance/intro)
 :::
 
 :::tip[More Information (Maggiori informazioni)]

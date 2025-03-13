@@ -42,7 +42,7 @@ Attivando il flag **Definitiva** la procedura andrà a stampare i registri in de
 
 
 :::important Vedi Anche
-[**VIDEO TUTORIALS SULLE STAMPE FISCALI**](/docs/video/finance/intro.md)
+[**VIDEO TUTORIALS SULLE STAMPE FISCALI**](/docs/video/finance/intro)
 :::
 
 

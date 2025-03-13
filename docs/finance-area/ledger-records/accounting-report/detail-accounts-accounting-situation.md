@@ -48,7 +48,7 @@ E' possibile, in particolare, filtrare i sottoconti collegati ad uno specifico p
 
 
 :::important Vedi Anche
-[**VIDEO TUTORIALS SULLE STAMPE CONTABILI**](/docs/video/finance/intro.md)
+[**VIDEO TUTORIALS SULLE STAMPE CONTABILI**](/docs/video/finance/intro)
 :::
 
 

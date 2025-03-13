@@ -33,5 +33,5 @@ It is also not advisable to set an expiration date for the current numbering unl
 :::
 
 :::important See Also
-[**VIDEO TUTORIALS ON ADMINISTRATIVE TABLES**](/docs/video/finance/intro.md)
+[**VIDEO TUTORIALS ON ADMINISTRATIVE TABLES**](/docs/video/finance/intro)
 :::

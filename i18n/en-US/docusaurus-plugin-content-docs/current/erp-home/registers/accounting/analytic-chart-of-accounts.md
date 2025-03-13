@@ -203,5 +203,5 @@ please refer to the documentation related to [Extra Data](/docs/configurations/u
 ### VIDEO TUTORIALS
 
 :::important See Also (Vedi Anche)
-[**VIDEO TUTORIALS ON THE CHART OF ACCOUNTS**](/docs/video/finance/intro.md)
+[**VIDEO TUTORIALS ON THE CHART OF ACCOUNTS**](/docs/video/finance/intro)
 :::

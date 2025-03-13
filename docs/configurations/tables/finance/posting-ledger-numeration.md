@@ -34,5 +34,5 @@ Si sconsiglia altresì di inserire una data fine validità per la numerazione in
 :::
 
 :::important Vedi Anche
-[**VIDEO TUTORIALS SULLE TABELLE AMMINISTRATIVE**](/docs/video/finance/intro.md)
+[**VIDEO TUTORIALS SULLE TABELLE AMMINISTRATIVE**](/docs/video/finance/intro)
 :::

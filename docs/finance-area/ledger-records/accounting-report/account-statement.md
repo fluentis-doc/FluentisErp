@@ -90,5 +90,5 @@ Esempio: se l'utente filtra i movimenti dal 01/09/2017 al 31/12/2017 (sia come d
 
 
 :::important Vedi Anche
-[**VIDEO TUTORIALS SULLE STAMPE CONTABILI**](/docs/video/finance/intro.md)
+[**VIDEO TUTORIALS SULLE STAMPE CONTABILI**](/docs/video/finance/intro)
 :::

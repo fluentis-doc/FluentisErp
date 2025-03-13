@@ -118,5 +118,5 @@ In this section, you can parameterize the various VAT codes used in accounting r
 ### VIDEO TUTORIALS
 
 :::important See Also
-[**VAT RATES VIDEO TUTORIALS**](/docs/video/finance/intro.md)
+[**VAT RATES VIDEO TUTORIALS**](/docs/video/finance/intro)
 :::

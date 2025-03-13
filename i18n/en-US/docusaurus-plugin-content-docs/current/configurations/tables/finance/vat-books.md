@@ -75,5 +75,5 @@ Printing this table allows viewing the last period printed definitively for each
 :::
 
 :::important See Also
-[**VIDEO TUTORIALS ON ADMINISTRATIVE TABLES**](/docs/video/finance/intro.md)
+[**VIDEO TUTORIALS ON ADMINISTRATIVE TABLES**](/docs/video/finance/intro)
 :::

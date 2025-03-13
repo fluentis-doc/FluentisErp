@@ -30,7 +30,7 @@ Entrambi questi passaggi potrebbero essere gestiti tramite workflow customizzati
 
 ### Creazione partita all'ordine
 
-import FileName from '/docs/import/sections/advance-maturities-creation-order.md'
+import FileName from './../../../import/sections/advance-maturities-creation-order.md'
 
 <FileName />
 

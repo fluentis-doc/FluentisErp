@@ -13,7 +13,7 @@ Through a correct configuration and application of these procedures, the ERP use
 
 
 :::important See Also (Vedi Anche)
-[**VIDEO TUTORIALS ON ACCOUNTING CAUSES**](/docs/video/finance/intro.md)
+[**VIDEO TUTORIALS ON ACCOUNTING CAUSES**](/docs/video/finance/intro)
 :::
 
 :::tip[More information (Maggiori informazioni)]

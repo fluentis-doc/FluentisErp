@@ -41,5 +41,5 @@ The parameters of the Asset module can be found under **Parameters > Administrat
 ## 2. Video Tutorial Fixed Assets Parameters
 
 :::important See Also
-[**VIDEO TUTORIALS ON ASSET PARAMETERS**](/docs/video/finance/intro.md)
+[**VIDEO TUTORIALS ON ASSET PARAMETERS**](/docs/video/finance/intro)
 :::

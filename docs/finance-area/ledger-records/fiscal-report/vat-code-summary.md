@@ -27,7 +27,7 @@ Per ulteriori informazioni sul raggruppamento vedere **[Riepilogo movimenti per 
 
 
 :::important Vedi Anche
-[**VIDEO TUTORIALS SULLE STAMPE FISCALI**](/docs/video/finance/intro.md)
+[**VIDEO TUTORIALS SULLE STAMPE FISCALI**](/docs/video/finance/intro)
 :::
 
 

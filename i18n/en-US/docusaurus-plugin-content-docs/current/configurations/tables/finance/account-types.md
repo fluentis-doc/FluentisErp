@@ -59,5 +59,5 @@ With these flags, the visibility of the corresponding tabs within the customer/s
 ### Video Tutorials
 
 :::important See Also (Vedi Anche)
-[**VIDEO TUTORIALS ON ADMINISTRATIVE TABLES (VIDEO TUTORIALS SULLE TABELLE AMMINISTRATIVE)**](/docs/video/finance/intro.md)
+[**VIDEO TUTORIALS ON ADMINISTRATIVE TABLES (VIDEO TUTORIALS SULLE TABELLE AMMINISTRATIVE)**](/docs/video/finance/intro)
 :::

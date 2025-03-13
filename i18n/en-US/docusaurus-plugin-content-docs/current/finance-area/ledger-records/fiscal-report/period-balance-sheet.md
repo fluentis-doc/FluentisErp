@@ -32,5 +32,5 @@ It is also possible to include movements derived from provisional registrations 
 ### Reclassification of balance for regulatory balance preparation
 
 :::important See Also 
-[**VIDEO TUTORIALS ON FISCAL REPORTS**](/docs/video/finance/intro.md)
+[**VIDEO TUTORIALS ON FISCAL REPORTS**](/docs/video/finance/intro)
 :::

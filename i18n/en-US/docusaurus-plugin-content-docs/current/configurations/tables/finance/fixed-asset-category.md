@@ -102,5 +102,5 @@ Within the asset sheet in the cost centers grid of the **Asset Operations** tab,
 
 ### **VIDEO TUTORIALS**
 :::important See Also
-[**VIDEO TUTORIALS ON ASSET TABLES**](/docs/video/finance/intro.md)
+[**VIDEO TUTORIALS ON ASSET TABLES**](/docs/video/finance/intro)
 :::

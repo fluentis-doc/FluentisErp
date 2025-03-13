@@ -34,5 +34,5 @@ When the definitive print is executed, the program performs a check on the prese
 
 
 :::important See Also 
-[**VIDEO TUTORIALS ON FISCAL REPORTS**](/docs/video/finance/intro.md)
+[**VIDEO TUTORIALS ON FISCAL REPORTS**](/docs/video/finance/intro)
 :::

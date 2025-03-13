@@ -36,5 +36,5 @@ By activating the **Definitive** flag, the procedure will print the registers de
 
 
 :::important See Also 
-[**VIDEO TUTORIALS ON FISCAL REPORTS**](/docs/video/finance/intro.md)
+[**VIDEO TUTORIALS ON FISCAL REPORTS**](/docs/video/finance/intro)
 :::

@@ -25,5 +25,5 @@ The grouping criteria can then be removed or reorganized in position (remember t
 For more information on grouping, see **[Movements Summary for Template](/docs/finance-area/ledger-records/accounting-report/movements-summary-for-template).**
 
 :::important See Also
-[**VIDEO TUTORIALS ON FISCAL REPORTS**](/docs/video/finance/intro.md)
+[**VIDEO TUTORIALS ON FISCAL REPORTS**](/docs/video/finance/intro)
 :::

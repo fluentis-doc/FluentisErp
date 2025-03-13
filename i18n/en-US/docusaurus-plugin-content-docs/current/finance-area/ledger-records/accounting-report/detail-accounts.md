@@ -24,5 +24,5 @@ Show description: by activating this flag, the movement description column is di
 
 
 :::important Also See 
-[**VIDEO TUTORIALS ON ACCOUNTING REPORTS**](/docs/video/finance/intro.md)
+[**VIDEO TUTORIALS ON ACCOUNTING REPORTS**](/docs/video/finance/intro)
 :::

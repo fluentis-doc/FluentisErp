@@ -38,4 +38,4 @@ Il tab **Configurazione Attività** permette di configurare l'attività specific
 
 In base alla tipologia d'attività, ovvero su che tipologia è basata (Script, Datasource, Run Report, SQL Query, Stored Procedure, Mail Template), saranno disponibili diverse opzioni di parametrizzazione.
 
-Nel pagina [Tipi di attività](./activity-types.md) si analizzano tutte le tipologie.
+Nel pagina **Tipi di attività** si analizzano tutte le tipologie.

@@ -159,5 +159,5 @@ In this tab you set in detail the accounts of the chart of accounts that will be
 ## 3. Video Tutorials on Parameters
 
 :::important See Also
-[**VIDEO TUTORIALS ON PARAMETERS**](/docs/video/finance/intro.md)
+[**VIDEO TUTORIALS ON PARAMETERS**](/docs/video/finance/intro)
 :::

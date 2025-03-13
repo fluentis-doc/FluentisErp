@@ -44,5 +44,5 @@ Primjerice, pozitivan ukupni dugovni računovodstveni saldo (a time i pozitivan 
 ### **VIDEO TUTORIALI**
 
 :::important Pogledajte također
-[**VIDEO TUTORIALI O OTVORENIM STAVKAMA**](/docs/video/finance/intro.md)
+[**VIDEO TUTORIALI O OTVORENIM STAVKAMA**](/docs/video/finance/intro)
 :::

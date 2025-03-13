@@ -62,7 +62,7 @@ E' possibile includere anche le registrazioni provvisorie (di default sono attiv
 
 
 :::important Vedi Anche
-[**VIDEO TUTORIALS SULLE STAMPE CONTABILI**](/docs/video/finance/intro.md)
+[**VIDEO TUTORIALS SULLE STAMPE CONTABILI**](/docs/video/finance/intro)
 :::
 
 

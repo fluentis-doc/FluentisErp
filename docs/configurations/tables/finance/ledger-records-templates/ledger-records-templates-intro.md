@@ -13,7 +13,7 @@ Attraverso una corretta configurazione e applicazione di queste procedure, l'ute
 
 
 :::important Vedi Anche
-[**VIDEO TUTORIALS SULLE CAUSALI CONTABILI**](/docs/video/finance/intro.md)
+[**VIDEO TUTORIALS SULLE CAUSALI CONTABILI**](/docs/video/finance/intro)
 :::
 
 :::tip[Maggiori informazioni]

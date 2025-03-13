@@ -81,5 +81,5 @@ FILTER AREA: the filter area is dedicated to hosting the list of possible data t
 RESULT GRID: the result grid represents the list of records that correspond to the above-specified filter data. After specifying the values through which you want to search for records, if you press the [Search (Ricerca)] button present in the relevant Ribbon, you will get the desired list of records in the result grid.
 
 :::important See Also
-[**VIDEO TUTORIALS ON ACCOUNTING ENTRIES**](/docs/video/finance/intro.md)
+[**VIDEO TUTORIALS ON ACCOUNTING ENTRIES**](/docs/video/finance/intro)
 :::

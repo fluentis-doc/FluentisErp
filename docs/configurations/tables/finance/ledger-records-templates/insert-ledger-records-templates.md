@@ -329,7 +329,7 @@ E' dedicata all'impostazione dell'ordine con il quale presentare i tabulatori pr
 **Carattere grassetto**: impostare in questo campo la visualizzazione in grassetto dei caratteri per questa causale nelle ricerche a video: può essere utile per individuare il tipo di movimento senza dover leggere descrizioni o codici delle causali.
 
 :::important Vedi Anche
-[**VIDEO TUTORIALS SULLE CAUSALI CONTABILI**](/docs/video/finance/intro.md)
+[**VIDEO TUTORIALS SULLE CAUSALI CONTABILI**](/docs/video/finance/intro)
 :::
 
 ### 1.4 Controllo aliquote IVA

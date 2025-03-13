@@ -62,5 +62,5 @@ It is also possible to include provisional registrations (by default, only defin
 
 
 :::important See Also 
-[**VIDEO TUTORIALS ON ACCOUNTING REPORTS**](/docs/video/finance/intro.md)
+[**VIDEO TUTORIALS ON ACCOUNTING REPORTS**](/docs/video/finance/intro)
 :::

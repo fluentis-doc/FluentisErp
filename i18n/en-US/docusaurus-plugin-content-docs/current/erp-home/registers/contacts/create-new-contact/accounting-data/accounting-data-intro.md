@@ -63,5 +63,5 @@ This possible multiple matching optimizes and rationalizes the management of gen
 ## VIDEO TUTORIALS ON REGISTRIES
 
 :::important See Also
-[**VIDEO TUTORIALS ON REGISTRIES (VIDEO TUTORIALS SULLE ANAGRAFICHE)**](/docs/video/finance/intro.md)
+[**VIDEO TUTORIALS ON REGISTRIES (VIDEO TUTORIALS SULLE ANAGRAFICHE)**](/docs/video/finance/intro)
 :::

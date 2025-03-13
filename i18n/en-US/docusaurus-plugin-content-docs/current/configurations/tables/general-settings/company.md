@@ -180,5 +180,5 @@ Parent Company Registry (Anagrafica Capogruppo): serves to select an external pa
 ### VIDEO TUTORIALS
 
 :::important See Also
-[**VIDEO TUTORIALS ON GENERAL TABLES**](/docs/video/finance/intro.md)
+[**VIDEO TUTORIALS ON GENERAL TABLES**](/docs/video/finance/intro)
 :::

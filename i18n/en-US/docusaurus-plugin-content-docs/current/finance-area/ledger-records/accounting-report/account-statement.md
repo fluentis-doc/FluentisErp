@@ -67,5 +67,5 @@ Example: if the user filters movements from 09/01/2017 to 12/31/2017 (both as en
 | Report | Button to execute the physical print of the account statement document. |
 
 :::important See Also 
-[**VIDEO TUTORIALS ON ACCOUNTING REPORTS**](/docs/video/finance/intro.md)
+[**VIDEO TUTORIALS ON ACCOUNTING REPORTS**](/docs/video/finance/intro)
 :::

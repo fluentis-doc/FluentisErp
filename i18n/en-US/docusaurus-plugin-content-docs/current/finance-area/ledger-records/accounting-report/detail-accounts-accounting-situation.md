@@ -40,5 +40,5 @@ It is possible, in particular, to filter the detail account linked to a specific
 
 
 :::important See Also 
-[**VIDEO TUTORIALS ON ACCOUNTING REPORTS**](/docs/video/finance/intro.md)
+[**VIDEO TUTORIALS ON ACCOUNTING REPORTS**](/docs/video/finance/intro)
 :::

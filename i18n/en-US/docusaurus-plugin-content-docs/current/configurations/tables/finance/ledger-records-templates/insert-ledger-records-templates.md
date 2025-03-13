@@ -328,7 +328,7 @@ It is dedicated to setting the order in which to present the expected tabs, thro
 **Bold**: set in this field the displaying of characters in bold for this cause in video searches: it can be helpful to identify the type of movement without having to read descriptions or cause codes.
 
 :::important See Also
-[**VIDEO TUTORIALS ON ACCOUNTING CAUSES**](/docs/video/finance/intro.md)
+[**VIDEO TUTORIALS ON ACCOUNTING CAUSES**](/docs/video/finance/intro)
 :::
 
 ### 1.4 VAT Rate Control

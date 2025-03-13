@@ -719,5 +719,5 @@ Direttamente nella tab **Pagamenti gruppi** è possibile effettuare ulteriori mo
 ### VIDEO TUTORIALS
 
 :::important Vedi Anche
-[**VIDEO TUTORIALS SULLE REGISTRAZIONI CONTABILI**](/docs/video/finance/intro.md)
+[**VIDEO TUTORIALS SULLE REGISTRAZIONI CONTABILI**](/docs/video/finance/intro)
 :::

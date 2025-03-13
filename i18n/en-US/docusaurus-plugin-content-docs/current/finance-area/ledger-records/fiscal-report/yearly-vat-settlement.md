@@ -16,5 +16,5 @@ The report features a layout similar to the **[Periodic VAT Settlement](/docs/fi
 The report does NOT include a flag for the definitive version, as the settlements of the various months or quarters will be printed definitively and this report remains to support the drafting of the annual VAT declaration on the ministerial model: there is, however, a flag to store the number of the last page for those who wish to print it after the settlements of the year.
 
 :::important See Also 
-[**VIDEO TUTORIALS ON FISCAL REPORTS**](/docs/video/finance/intro.md)
+[**VIDEO TUTORIALS ON FISCAL REPORTS**](/docs/video/finance/intro)
 :::

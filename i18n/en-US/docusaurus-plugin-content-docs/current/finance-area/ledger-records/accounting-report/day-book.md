@@ -40,5 +40,5 @@ It is possible to filter by:
 
 
 :::important See Also
-[**VIDEO TUTORIALS ON ACCOUNTING REPORTS**](/docs/video/finance/intro.md)
+[**VIDEO TUTORIALS ON ACCOUNTING REPORTS**](/docs/video/finance/intro)
 :::

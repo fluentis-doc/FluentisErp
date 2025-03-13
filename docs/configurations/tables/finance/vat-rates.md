@@ -121,6 +121,6 @@ Occorre pertanto abbinare ad ogni codice iva il corretto rigo della dichiarazion
 ### VIDEO TUTORIALS
 
 :::important Vedi Anche
-[**VIDEO TUTORIALS ALIQUOTE IVA**](/docs/video/finance/intro.md)
+[**VIDEO TUTORIALS ALIQUOTE IVA**](/docs/video/finance/intro)
 :::
  

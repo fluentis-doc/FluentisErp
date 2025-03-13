@@ -59,5 +59,5 @@ Con questi flag si abilita la visibilità dei corrispondenti tab all'interno del
 ### Video Tutorials
 
 :::important Vedi Anche
-[**VIDEO TUTORIALS SULLE TABELLE AMMINISTRATIVE**](/docs/video/finance/intro.md)
+[**VIDEO TUTORIALS SULLE TABELLE AMMINISTRATIVE**](/docs/video/finance/intro)
 :::
