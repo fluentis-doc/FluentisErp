@@ -166,5 +166,391 @@
   "siteConfig.introductionButton":{
      "message":"Overview",
      "description":"Label for the introduction button on the homepage"
+  },
+  "Cespiti": {
+    "message": "Fixed Assets"
+  },
+  "Anagrafiche": {
+    "message": "Registers"
+  },
+  "Strumenti": {
+    "message": "Tools"
+  },
+  "Object navigator": {
+    "message": "Object navigator"
+  },
+  "Form navigator": {
+    "message": "Form navigator"
+  },
+  "Context panel": {
+    "message": "Context panel"
+  },
+  "Dichiarazioni & Intrastat": {
+    "message": "Declarations & Intrastat"
+  },
+  "Registrazioni contabili": {
+    "message": "Ledger Records"
+  },
+  "Partite": {
+    "message": "Maturity values"
+  },
+  "Percipienti": {
+    "message": "Professional Men"
+  },
+  "Fatturazione Elettronica": {
+    "message": "Electronic invoicing"
+  },
+  "Leasing": {
+    "message": "Leasing"
+  },
+  "Documenti SDI": {
+    "message": "ES Documents"
+  },
+  "Conti correnti": {
+    "message": "Bank account"
+  },
+  "DocFinance": {
+    "message": "DocFinance"
+  },
+  "Pagamenti fornitori": {
+    "message": "Vendors Payments"
+  },
+  "Rischio cliente": {
+    "message": "Customer Risk"
+  },
+  "Cash flow": {
+    "message": "Cash flow"
+  },
+  "Portafoglio effetti": {
+    "message": "Bills portfolio"
+  },
+  "Anticipi & Incassi": {
+    "message": "Advances&Collections"
+  },
+  "Chiusure infrannuali": {
+    "message": "Mid-Year Closures"
+  },
+  "Riclassificazioni": {
+    "message": "Reclassifications"
+  },
+  "Budgeting": {
+    "message": "Budgeting"
+  },
+  "Contabilità gestionale": {
+    "message": "Managerial accounting"
+  },
+  "Calcolo costo": {
+    "message": "Cost Calculation"
+  },
+  "Acquisti": {
+    "message": "Purchases"
+  },
+  "Richieste di acquisto": {
+    "message": "Purchase Requests"
+  },
+  "Richieste di offerta": {
+    "message": "Offer Requests"
+  },
+  "Ordini fornitori": {
+    "message": "Purchase Orders"
+  },
+  "Ricevimento merci": {
+    "message": "Goods Receipt"
+  },
+  "DDT di acquisto": {
+    "message": "Purchase Delivery Note"
+  },
+  "Fatture di acquisto": {
+    "message": "Purchase Invoices"
+  },
+  "Listini fornitori": {
+    "message": "Purchase Price Lists"
+  },
+  "Gestione prezzi": {
+    "message": "Price Management"
+  },
+  "Ordini cliente": {
+    "message": "Sales Orders"
+  },
+  "DDT di vendita": {
+    "message": "Sales Delivery Note"
+  },
+  "Fatture di vendita": {
+    "message": "Sales Invoices"
+  },
+  "POS": {
+    "message": "POS"
+  },
+  "Liquidazione agenti": {
+    "message": "Agent Settlement"
+  },
+  "Listini di vendita": {
+    "message": "Sales Price List"
+  },
+  "Articoli": {
+    "message": "Items"
+  },
+  "Magazzino": {
+    "message": "Warehouse"
+  },
+  "Lotti & Numeri di serie": {
+    "message": "Lots & Serial Numbers"
+  },
+  "Picking": {
+    "message": "Picking"
+  },
+  "Inventari fisici": {
+    "message": "Physical Inventory"
+  },
+  "UDC": {
+    "message": "Loading Unit"
+  },
+  "Piani di carico": {
+    "message": "Load Plans"
+  },
+  "MS - Master scheduling": {
+    "message": "MS - Master scheduling"
+  },
+  "Capacity requirements": {
+    "message": "Capacity requirements"
+  },
+  "MRP": {
+    "message": "MRP"
+  },
+  "PP - Production in progress": {
+    "message": "PP - Production in progress"
+  },
+  "Gestione ore produzione": {
+    "message": "Production hours management"
+  },
+  "Controllo produzione": {
+    "message": "Production Control"
+  },
+  "Ordini di conto lavoro": {
+    "message": "Subcontractor orders"
+  },
+  "DDT di consegna": {
+    "message": "Delivery note"
+  },
+  "Rientri": {
+    "message": "Returns"
+  },
+  "Listini di conto lavoro": {
+    "message": "Subcontractor price lists"
+  },
+  "Progetti": {
+    "message": "Projects"
+  },
+  "Richieste di intervento": {
+    "message": "Interventions Request"
+  },
+  "Interventi pianificati": {
+    "message": "Planned Interventions"
+  },
+  "Interventi": {
+    "message": "Interventions"
+  },
+  "Attività": {
+    "message": "Activities"
+  },
+  "Stato avanzamento lavori": {
+    "message": "Work project status"
+  },
+  "Pianificazione a calendario delle risorse": {
+    "message": "Calendar Planning of Resources"
+  },
+  "Documenti di origine esterna": {
+    "message": "External origin documents"
+  },
+  "Documenti di origine interna": {
+    "message": "Internal origin documents"
+  },
+  "Reclami e non conformità": {
+    "message": "Complaints and Non-compliance"
+  },
+  "Taratura strumenti": {
+    "message": "Calibration Tools"
+  },
+  "Impostazioni": {
+    "message": "Settings"
+  },
+  "Amministrativa": {
+    "message": "Finance"
+  },
+  "Tesoreria": {
+    "message": "Treasury"
+  },
+  "Controlling": {
+    "message": "Controlling"
+  },
+  "Vendite": {
+    "message": "Sales"
+  },
+  "Logistica": {
+    "message": "Logistics"
+  },
+  "Pianificazione": {
+    "message": "Planning"
+  },
+  "Produzione": {
+    "message": "Production"
+  },
+  "Conto lavoro": {
+    "message": "SSubcontractor"
+  },
+  "Gestione progetti": {
+    "message": "Project Management"
+  },
+  "Qualità": {
+    "message": "Quality"
+  },
+  "CRM": {
+    "message": "CRM"
+  },
+  "Budget and Marketing Automation": {
+    "message": "Budget and Marketing Automation"
+  },
+  "Contatti CRM": {
+    "message": "CRM Contacts"
+  },
+  "Opportunità": {
+    "message": "Opportunity"
+  },
+  "Tickets Management": {
+    "message": "Tickets Management"
+  },
+  "WMS": {
+    "message": "WMS"
+  },
+  "Commesse di produzione": {
+    "message": "Production Job Order"
+  },
+  "Fluentis MES": {
+    "message": "Fluentis MES"
+  },
+  "DDMRP": {
+    "message": "DDMRP"
+  },
+  "Procedure": {
+    "message": "Procedures"
+  },
+  "Forms e report": {
+    "message": "Forms and report"
+  },
+  "theme.NavBar.navAriaLabel": {
+    "message": "Main",
+    "description": "The ARIA label for the main navigation"
+  },
+  "theme.docs.sidebar.navAriaLabel": {
+    "message": "Docs sidebar",
+    "description": "The ARIA label for the sidebar navigation"
+  },
+  "cmfcmf/d-s-l.searchBar.placeholder": {
+    "message": "Search...",
+    "description": "Placeholder shown in the searchbar"
+  },
+  "cmfcmf/d-s-l.searchBar.clearButtonTitle": {
+    "message": "Clear",
+    "description": "Title of the button to clear the current search input"
+  },
+  "cmfcmf/d-s-l.searchBar.detachedCancelButtonText": {
+    "message": "Clear",
+    "description": "Text of the button to close the detached search window"
+  },
+  "cmfcmf/d-s-l.searchBar.submitButtonTitle": {
+    "message": "Search",
+    "description": "Title of the button to submit a new search"
+  },
+  "cmfcmf/d-s-l.searchBar.noResults": {
+    "message": "No results were found.",
+    "description": "message shown if no results are found"
+  },
+  "Automezzi": {
+    "message": "Vehicle"
+  },
+  "Controlli articolo": {
+    "message": "Item control"
+  },
+  "Azioni correttive": {
+    "message": "Corrective Actions"
+  },
+  "Qualificazione fornitore": {
+    "message": "Supplier qualification"
+  },
+  "theme.admonition.warning": {
+    "message": "warning",
+    "description": "The default label used for the Warning admonition (:::warning)"
+  },
+  "theme.DocSidebarItem.expandCategoryAriaLabel": {
+    "message": "Expand sidebar category '{label}'",
+    "description": "The ARIA label to expand the sidebar category"
+  },
+  "theme.DocSidebarItem.collapseCategoryAriaLabel": {
+    "message": "Collapse sidebar category '{label}'",
+    "description": "The ARIA label to collapse the sidebar category"
+  },
+  "theme.unlistedContent.title": {
+    "message": "Unlisted page",
+    "description": "The unlisted content banner title"
+  },
+  "theme.unlistedContent.message": {
+    "message": "This page is unlisted. Search engines will not index it, and only users having a direct link can access it.",
+    "description": "The unlisted content banner message"
+  },
+  "Anagrafiche/Impostazioni": {
+    "message": "Registre/Sertări"
+  },
+  "theme.docs.DocCard.categoryDescription.plurals": {
+    "message": "1 item|{count} items",
+    "description": "The default description for a category card in the generated index about how many items this category includes"
+  },
+  "theme.blog.author.pageTitle": {
+    "message": "{authorName} - {nPosts}",
+    "description": "The title of the page for a blog author"
+  },
+  "theme.blog.authorsList.pageTitle": {
+    "message": "Authors",
+    "description": "The title of the authors page"
+  },
+  "theme.blog.authorsList.viewAll": {
+    "message": "View all authors",
+    "description": "The label of the link targeting the blog authors page"
+  },
+  "theme.contentVisibility.unlistedBanner.title": {
+    "message": "Unlisted page",
+    "description": "The unlisted content banner title"
+  },
+  "theme.contentVisibility.unlistedBanner.message": {
+    "message": "This page is unlisted. Search engines will not index it, and only users having a direct link can access it.",
+    "description": "The unlisted content banner message"
+  },
+  "theme.contentVisibility.draftBanner.title": {
+    "message": "Draft page",
+    "description": "The draft content banner title"
+  },
+  "theme.contentVisibility.draftBanner.message": {
+    "message": "This page is a draft. It will only be visible in dev and be excluded from the production build.",
+    "description": "The draft content banner message"
+  },
+  "CRP-Capacity requirements": {
+    "message": "CRP-Capacity requirements"
+  },
+  "Newsletter": {
+    "message": "Newsletter"
+  },
+  "Campagne marketing": {
+    "message": "Marketing Campaigns"
+  },
+  "Previsioni di vendita": {
+    "message": "Sales Forecast"
+  },
+  "Helpdesk": {
+    "message": "Helpdesk"
+  },
+  "Offerte": {
+    "message": "Sales Offers"
+  },
+  "Spedizioni": {
+    "message": "Shippings"
   }
 }
