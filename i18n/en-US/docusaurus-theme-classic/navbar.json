@@ -1,6 +1,6 @@
 {
   "title": {
-    "message": " ACADEMY",
+    "message": "academy",
     "description": "The title in the navbar"
   },
   "item.label.Guida": {
@@ -66,5 +66,97 @@
   "item.label.EAM": {
     "message": "EAM",
     "description": "Navbar item with label EAM"
+  },
+  "item.label.Strumenti": {
+    "message": "Tools",
+    "description": "Navbar item with label Strumenti"
+  },
+  "item.label.Impostazioni": {
+    "message": "Settings",
+    "description": "Navbar item with label Impostazioni"
+  },
+  "item.label.Aree": {
+    "message": "Arii",
+    "description": "Navbar item with label Aree"
+  },
+  "item.label.Anagrafiche": {
+    "message": "Registers",
+    "description": "Navbar item with label Anagrafiche"
+  },
+  "item.label.Object Navigator": {
+    "message": "Object Navigator",
+    "description": "Navbar item with label Object Navigator"
+  },
+  "item.label.Context Panel": {
+    "message": "Context Panel",
+    "description": "Navbar item with label Context Panel"
+  },
+  "item.label.Form navigator": {
+    "message": "Form navigator",
+    "description": "Navbar item with label Form navigator"
+  },
+  "logo.alt": {
+    "message": "Logo",
+    "description": "The alt text of navbar logo"
+  },
+  "item.label.Release Notes": {
+    "message": "Release Notes",
+    "description": "Navbar item with label Release Notes"
+  },
+  "item.label.Formazione": {
+    "message": "Training",
+    "description": "Navbar item with label Formazione"
+  },
+  "item.label.FAQ": {
+    "message": "FAQ",
+    "description": "Navbar item with label FAQ"
+  },
+  "item.label.DDMRP": {
+    "message": "DDMRP",
+    "description": "Navbar item with label DDMRP"
+  },
+  "item.label.CRM": {
+    "message": "CRM",
+    "description": "Navbar item with label CRM"
+  },
+  "item.label.Introduzione": {
+    "message": "Overview",
+    "description": "Navbar item with label Introduzione"
+  },
+  "item.label.Video tutorial": {
+    "message": "Video tutorial",
+    "description": "Navbar item with label Video tutorial"
+  },
+  "item.label.Fluentis Fast Start": {
+    "message": "Fluentis Fast Start",
+    "description": "Navbar item with label Fluentis Fast Start"
+  },
+  "item.label.Avviamento Fluentis ERP": {
+    "message": "Start Fluentis ERP",
+    "description": "Navbar item with label Avviamento Fluentis ERP"
+  },
+  "item.label.Campi, funzionalità e pulsanti comuni": {
+    "message": "Fields, functionalities and common buttons",
+    "description": "Navbar item with label Campi, funzionalità e pulsanti comuni"
+  },
+  "item.label.Configurazioni (Tabelle, Parametri...)": {
+    "message": "Configurations (Tables, Parameters...)",
+    "description": "Navbar item with label Configurazioni (Tabelle, Parametri...)"
+  },
+  "item.label.Contatti": {
+    "message": "Contacts",
+    "description": "Navbar item with label Contatti"
+  },
+  "item.label.Piano dei conti": {
+    "message": "Chart of Accounts",
+    "description": "Navbar item with label Piano dei conti"
+  },
+  "item.label.Articoli": {
+    "message": "Items",
+    "description": "Navbar item with label Articoli"
+  },
+  "item.label.Dipendenti": {
+    "message": "Employees",
+    "description": "Navbar item with label Dipendenti"
   }
 }
