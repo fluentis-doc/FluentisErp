@@ -361,14 +361,14 @@ Expenses entered in the contact registry, in the *Charges/Discounts* tab are pro
 
 These elements are applied to the entirety of the document and are not distributed among the item rows. They may include additional costs, global discounts, or surcharges applied to the entire document. If set in the item registry, they are automatically proposed at the time of creating the document.
 
-- **Type/Description (Tipo/Descrizione)**: allows the selection of expense types (defaulted in the [Expense Types table (Tipi spese)](docs/configurations/tables/general-settings/expenses-types)); assigning the expense type a percentage to apply.  
+- **Type/Description (Tipo/Descrizione)**: allows the selection of expense types (defaulted in the [Expense Types table (Tipi spese)](/docs/configurations/tables/general-settings/expenses-types)); assigning the expense type a percentage to apply.  
 - **Charge amount**: indicates the value of the expense expressed in the document's currency.    
 - **VAT**: indicates the VAT rate to apply to the entered expenses.   
 - **Percentage/Value**: indicates whether to calculate expenses with a percentage or a predefined monetary value. If *value* is selected, the amount of the expense must be entered under the corresponding item.      
 - **Percent Completed**: numerical value of the expense percentage.  
 
 :::note Note
-If the *Charge type* entered has the [distributed flag (ripartito)](docs/configurations/tables/general-settings/expenses-types#flag-di-aggancio-alle-logiche) active, during the loading of the delivery note into the warehouse, the expense will be distributed across all items based on the total amounts of each item line. The result of the expense distribution is visible in the [warehouse registration (registrazione di magazzino)](/docs/logistics/warehouse/stock-records/record).    
+If the *Charge type* entered has the [distributed flag (ripartito)](/docs/configurations/tables/general-settings/expenses-types) active, during the loading of the delivery note into the warehouse, the expense will be distributed across all items based on the total amounts of each item line. The result of the expense distribution is visible in the [warehouse registration (registrazione di magazzino)](/docs/logistics/warehouse/stock-records/record).    
 1. If items have a price: the total expense will be proportionally distributed over the net amounts of each item; the result will be added to the initial price of the item in the *Total amount* field of the registration. If for some lines the amount is 0, it will be considered as 1 to allow for an expense distribution across all items.   
 2. If all items have a price of 0: the expense will be evenly distributed among all item lines, and from this distribution, the *movement amount/management amount (importo movimento/importo gestionale)* will be calculated in the registration, taking into account the quantities of each item.   
 :::
