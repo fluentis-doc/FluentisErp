@@ -20,7 +20,6 @@ Conține parametrii care se referă la setările principale din aria producției
 
 **Gestionare simplificată producție**: este obsolete și este utilizată doar în versiunile mai vechi.
 
-
 **Menține legătura între ordinele unei comenzi**: dacă este activ, permite, folosind și parametrii imediat succesivi, să se stabilească că atunci când se modifică manual data unui nou ordin planificat, procedura să efectueze modificarea și în ordinele planificate asociate.
 
 **Control materiale obligatoriu**: activează controlul prezenței sau nu a materialelor în gestiune și, în baza disponibilității, vor fi evidențiate cu culori diferite (**Coloare fond linie ordin**: *Complet/Parțial/Absent*). În plus, se poate insera în **Tip control pe** dacă acesta trebuie să fie făcut pe stoc sau pe disponibilitatea materialului.
@@ -32,7 +31,6 @@ Conține parametrii care se referă la setările principale din aria producției
 
 **Data utilizării materialelor în faza descărcării materialelor**: dacă este activ, data utilizării materialului indicată în ordinele planificate va fi egală cu cea mai mare dată de început dintre toate fazele, ceea ce înseamnă că va fi egală cu data de început a ultimei faze. Dacă acest flag nu este activ, data utilizării materialului indicată în ordinele planificate va fi egală cu data de început a ordinului, adică data de început a primei faze.
 
-
 **Zile avans rezervare materiale**: valoarea inserată permite anticiparea cu acest număr de zile a disponibilității materialului în ceea ce privește începerea prelucrării(atât în ordiniele planificate de producție, cât și în ordiniele de producție), pentru a permite logisticii să aducă materialul la timp în producție.  
 Acesta este luat înconsiderare de următoarele proceduri: toate planificările "cel mai devreme", "cel mai târziu", "pe capacitate finită", "MRP", "Completare date ordine" atât în ordiniele planificate, cât și în ordiniele de producție, "Recalculează dată începere" atât în ordiniele planificate de producție, cât și în ordiniele de producție, toate procedurile CRP ("Gantt", "Capacitate centre de lucru" și "Secvență faze") care operează la schimbarea datei început sau sfârșit a fazei ordinului.
 
@@ -41,7 +39,6 @@ Acesta este luat înconsiderare de următoarele proceduri: toate planificările 
 ## Gestiuni pentru programare comenzi 
 
 Tabelul este o simplă vizualizare a listei de gestiuni pentru care trebuie verificată disponibilitatea. Această listă este setată în *Calcul disponibilitate*, aflat în secțiunea *Utilități*.
-
 ## Parametri Gantt  
 
 Permite introducerea parametrilor impliciți pentru gestionarea form-ului Gantt (*Tip simulare Gantt* și *Tip simulare Snapshot*).  
@@ -80,4 +77,3 @@ De asemenea, culorile pot evidenția stadiul fazelor de producție anterioare ce
 - *Fază anterioară începută*: indică faptul că faza precedentă celei analizate a fost începută, dar nu finalizată;  
 - *Fază anterioară finalizată*: indică faptul că faza precedentă celei analizate a fost finalizată;  
 - *Fază începută*: indică faptul că faza analizată a fost începută.  
-
