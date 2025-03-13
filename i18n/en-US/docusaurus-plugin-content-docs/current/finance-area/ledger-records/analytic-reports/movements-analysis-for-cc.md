@@ -1,5 +1,5 @@
 ---
-title: Movement Analysis by Cost Center (Analisi movimenti per Cdc)
+title: Movements Analysis for Cost Centers
 sidebar_position: 3
 ---
 
@@ -9,7 +9,7 @@ RIBBON BAR: represents the menu of the form in question, that is, the area where
 
 
 
-| Function (Funzione) | Meaning (Significato) |
+| Function | Extended Description |
 | --- | --- |
-| Preview (Anteprima) | Button to execute the print preview of the movement analysis by cost center. |
-| Print (Stampa) | Button to execute the physical print of the movement analysis by cost center. |
+| Preview | Button to execute the print preview of the movement analysis by cost center. |
+| Report | Button to execute the physical print of the movement analysis by cost center. |

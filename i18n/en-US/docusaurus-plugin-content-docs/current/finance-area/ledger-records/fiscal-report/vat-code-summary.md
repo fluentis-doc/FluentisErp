@@ -1,5 +1,5 @@
 ---
-title: Summary by VAT Codes (Riepilogo per codici iva)
+title: VAT Codes Summary
 sidebar_position: 10
 ---
 
@@ -9,7 +9,7 @@ The form is divided into two areas: the filter area for data search and the area
 
 ![](/img/it-it/finance-area/ledger-records/fiscal-report/vat-code-summary/image01.png)
 
-Among the main filters related to the primary purpose of the report, the VAT code (to search for the related movements), From / To date of competence (VAT), the VAT register, and the date of the accounting record are noteworthy.
+Among the main filters related to the primary purpose of the report, the VAT code (to search for the related movements), From / To date of competence (VAT), the VAT register, and the date of the ledger record are noteworthy.
 
 To use one or more (in cascade) grouping criteria, perform a drag and drop from the right area to the left area.
 
@@ -17,13 +17,13 @@ The report will then display the data grouped according to the active criterion 
 
 The grouping criteria can then be removed or reorganized in position (remember that priority is from top to bottom) using the commands in the ribbon bar.
 
-- Delete (Cancella): removes the grouping criterion 
-- Remove Groupings (Rimuovi raggruppamenti): removes all groupings
-- Move Up (Sposta su): in the presence of multiple criteria, moves the selected one higher to give it greater priority
-- Move Down (Sposta giù): in the presence of multiple criteria, moves the selected one lower to give it lesser priority
+- Delete: removes the grouping criterion 
+- Clear Grouping: removes all groupings
+- Move Up: in the presence of multiple criteria, moves the selected one higher to give it greater priority
+- Move Down: in the presence of multiple criteria, moves the selected one lower to give it lesser priority
 
-For more information on grouping, see **[Movements Summary by Reason (Riepilogo movimenti per causale)](/docs/finance-area/ledger-records/accounting-report/movements-summary-for-template).**
+For more information on grouping, see **[Movements Summary for Template](/docs/finance-area/ledger-records/accounting-report/movements-summary-for-template).**
 
 :::important See Also
-[**VIDEO TUTORIALS ON FISCAL REPORTS (VIDEO TUTORIALS SULLE STAMPE FISCALI)**](/docs/video/finance/intro.md)
+[**VIDEO TUTORIALS ON FISCAL REPORTS**](/docs/video/finance/intro.md)
 :::

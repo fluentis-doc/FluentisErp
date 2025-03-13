@@ -3,9 +3,9 @@ title: Detail Accounts
 sidebar_position: 6
 ---
 
-The printout displays the details of the movements of the various accounting subaccounts.
+The printout displays the details of the movements of the various accounting detail accounts.
 
-The layout is similar to the **[Account Statement (Estratto conto)](/docs/finance-area/ledger-records/accounting-report/account-statement)** printout, which represents a simplified version of it and to which we refer.
+The layout is similar to the **[Account Statement](/docs/finance-area/ledger-records/accounting-report/account-statement)** printout, which represents a simplified version of it and to which we refer.
 
  
 
@@ -17,12 +17,12 @@ Show description: by activating this flag, the movement description column is di
 
 
 
-| Function (Funzione) | Meaning (Significato) |
+| Function | Extended Description |
 | --- | --- |
-| Preview (Anteprima) | Button to execute the print preview. |
-| Print (Stampa) | Button to execute the physical printing of the document. |
+| Preview | Button to execute the print preview. |
+| Report | Button to execute the physical printing of the document. |
 
 
-:::important Also See (Vedi Anche)
-[**VIDEO TUTORIALS ON ACCOUNTING PRINTS (VIDEO TUTORIALS SULLE STAMPE CONTABILI)**](/docs/video/finance/intro.md)
+:::important Also See 
+[**VIDEO TUTORIALS ON ACCOUNTING REPORTS**](/docs/video/finance/intro.md)
 :::

@@ -11,11 +11,11 @@ At the bottom area, there are grouping criteria.
 
 A typical useful grouping criterion is the business center to observe the movements of the various accounts distinguished by each center.
 
-Regarding the use of grouping criteria, see **[Movement Summary by Reason (Riepilogo movimenti per causale)](/docs/finance-area/ledger-records/accounting-report/movements-summary-for-template)**.
+Regarding the use of grouping criteria, see **[Movements Summary for Template](/docs/finance-area/ledger-records/accounting-report/movements-summary-for-template)**.
 
 
 
-| Function (Funzione) | Meaning (Significato) |
+| Function  | Extended Description |
 | --- | --- |
-| Preview (Anteprima) | Button to execute the print preview of the cost center analysis. |
-| Print (Stampa) | Button to execute the physical print of the cost center analysis. |
+| Preview | Button to execute the print preview of the cost center analysis. |
+| Report | Button to execute the physical print of the cost center analysis. |

@@ -13,7 +13,7 @@ the print can be made either at the end of the sales register or on a dedicated 
 
 In the event that the last period of the year has been selected, the option for printing/**calculating the VAT advance** will be enabled, based on which the report will include the records up to the date of 20/12/yyyy.
 
-**Payment Date / Payment Method (Data versamento / Modalità di versamento)**: these fields (a date that is then reported in the text string) allow the inclusion of a statement regarding the date and method of tax payment in the print (or, by modifying them, a free note).
+**Paying-in Date / Modality**: these fields (a date that is then reported in the text string) allow the inclusion of a statement regarding the date and method of tax payment in the print (or, by modifying them, a free note).
 
  
 
@@ -33,12 +33,12 @@ The definitive print will enable the option for **settlement accounting** (of th
 
 
 
-| Function (Funzione) | Meaning (Significato) |
+| Function | Extended Description |
 | --- | --- |
-| Preview (Anteprima) | Button to execute the print preview of the settlement. |
-| Print (Stampa) | Button to execute the physical printing of the settlement. |
+| Preview | Button to execute the print preview of the settlement. |
+| Report | Button to execute the physical printing of the settlement. |
 
 
-:::important See Also (Vedi Anche)
-[**VIDEO TUTORIALS ON FISCAL PRINTS**](/docs/video/finance/intro)
+:::important See Also 
+[**VIDEO TUTORIALS ON FISCAL REPORTS**](/docs/video/finance/intro)
 :::

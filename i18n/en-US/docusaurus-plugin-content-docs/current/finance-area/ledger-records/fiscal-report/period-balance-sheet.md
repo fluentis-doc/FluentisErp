@@ -1,5 +1,5 @@
 ---
-title: Financial Statement (Bilancio d'esercizio)
+title: Period Balance Sheet 
 sidebar_position: 1
 ---
 
@@ -13,9 +13,9 @@ In this way, it is possible and recommended to keep the range of economic dates 
 
 Various layouts are available, including a representation with opposing sections and one with grouping in order to obtain totals by account and by level of the chart of accounts structure. The desired print can be selected from the dropdown at the top left.
 
-**View amounts with negative sign**: if set, the application will insert each sub-account in the corresponding section (according to its account type) with a potential negative sign when the balance is in the opposite section. If the flag is not set, as by default, each sub-account will be displayed in the section relating to its balance;
+**View amounts with negative sign**: if set, the application will insert each detail account in the corresponding section (according to its account type) with a potential negative sign when the balance is in the opposite section. If the flag is not set, as by default, each detail account will be displayed in the section relating to its balance;
 
-**Detail of registries (Dettaglio della anagrafiche)**: by default, the application excludes all details of sub-accounts related to customers/suppliers and agents. Only with the corresponding flag will the details of these registry sub-accounts be displayed;
+**Nomenclature detail**: by default, the application excludes all details of detail accounts related to customers/suppliers and agents. Only with the corresponding flag will the details of these registry detail accounts be displayed;
 
 **Exclude memo account**: order accounts are displayed at the bottom of the asset and liability sections. With this flag, order accounts will not be displayed in the report. It is particularly noted that order accounts are never subject to closing/opening in the application’s automatic procedure;
 
@@ -29,8 +29,8 @@ It is also possible to include movements derived from provisional registrations 
 
 ---
 
-### Reclassification of balance for regulatory balance preparation (Riclassificazione di bilancio per elaborazione bilancio civilistico (schema CEE))
+### Reclassification of balance for regulatory balance preparation
 
-:::important See Also (Vedi Anche)
-[**VIDEO TUTORIALS ON TAX PRINTS**](/docs/video/finance/intro.md)
+:::important See Also 
+[**VIDEO TUTORIALS ON FISCAL REPORTS**](/docs/video/finance/intro.md)
 :::

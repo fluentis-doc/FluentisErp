@@ -1,5 +1,5 @@
 ---
-title: Declaration of exemption
+title: Intent Declaration 
 sidebar_position: 2
 ---
 
@@ -7,13 +7,13 @@ Upon opening the window, the current accounting period is proposed.
 
 It is possible to print all statements of intent or filter the print by:
 
-**Declaration type**: Customer (Cliente) or Supplier (Fornitore);
+**Declaration type**: Customer or Supplier;
 
-**Search for a Subaccount of customer or supplier registry (Ricercare un Sottoconto di anagrafica cliente o fornitore)**: based on what is selected in the previous field;
+**Search for a detail account of customer or supplier registry**: based on what is selected in the previous field;
 
-**Number of our protocol from / to (Numero di ns. protocollo da / a)**.
+**Number of our protocol from / to**.
 
-Among the items to be printed, it is possible to vary the description of the VAT Office field (campo Ufficio IVA) and the Operation Description field (campo Descrizione Operazione).
+Among the items to be printed, it is possible to vary the description of the VAT Office field and the Operation Description field.
 
 The proposed print date is today's system date.
 
@@ -23,7 +23,7 @@ There are several prints selectable from the dropdown in the upper left, to be c
 
 
 
-| Function (Funzione) | Meaning (Significato) |
+| Function | Extended Description |
 | --- | --- |
-| Preview (Anteprima) | Button to run the print preview of the statements of intent. |
-| Print (Stampa) | Button to carry out the physical printing of the statements of intent. |
+| Preview | Button to run the print preview of the statements of intent. |
+| Report | Button to carry out the physical printing of the statements of intent. |

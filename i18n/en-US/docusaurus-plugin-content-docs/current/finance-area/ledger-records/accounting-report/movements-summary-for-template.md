@@ -3,11 +3,11 @@ title: Movements Summary for Template
 sidebar_position: 4
 ---
 
-The printout allows you to view accounting movements filtered by accounting reason.
+The printout allows you to view accounting movements filtered by ledger template.
 
 ![](/img/it-it/finance-area/ledger-records/accounting-report/movements-summary-for-template/image01.png)
 
-There are also the usual filters on the main data of the accounting records, and in particular, a widget to search for records that contain the desired sub-account.
+There are also the usual filters on the main data of the ledger records, and in particular, a widget to search for records that contain the desired detail account.
 
 At the bottom of the form, there are two grids that allow for managing any grouping of data within the printout.
 
@@ -23,9 +23,9 @@ In the ribbon bar, there are some commands for managing the groupings:
 
 **Clear Grouping**: removes all present groupings (if more than one is active)
 
-**Move Up / Down (Sposta su /giù)**: moves the selected grouping up or down in order to change the grouping priority.
+**Move Up / Down**: moves the selected grouping up or down in order to change the grouping priority.
 
 
-:::important See Also (Vedi Anche)
-[**VIDEO TUTORIALS ON ACCOUNTING PRINTS (VIDEO TUTORIALS SULLE STAMPE CONTABILI)**](/docs/video/finance/intro.md)
+:::important See Also 
+[**VIDEO TUTORIALS ON ACCOUNTING REPORTS**](/docs/video/finance/intro.md)
 :::

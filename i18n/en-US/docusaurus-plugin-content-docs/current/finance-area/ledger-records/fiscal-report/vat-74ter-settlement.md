@@ -9,13 +9,13 @@ Once the reference period and year are set (where the period will be monthly or 
 
 **Definitive printed**: will modify the reference period to correspond to the one following the last one printed definitively and the number of copies to be printed will also be disabled;
 
-**Execution of print preview (Esecuzione dell'anteprima di stampa) in definitive**: will not block the period and update the counters;
+**Execution of print preview in definitive**: will not block the period and update the counters;
 
-**Execution of the printing process (Esecuzione del processo di stampa)**: physically will operate the block of the period in accounting and update the page counter of the VAT Registers table (and it is not relevant whether the printing process is successful or not, it could also be a print to file).
+**Execution of the printing process**: physically will operate the block of the period in accounting and update the page counter of the VAT Registers table (and it is not relevant whether the printing process is successful or not, it could also be a print to file).
 
 RIBBON BAR: represents the menu of the form in question, that is, the area where actions can be performed. The list of possible features in the current tab is outlined below:
 
-| Function (Funzione) | Meaning (Significato) |
+| Function | Extended Description |
 | --- | --- |
-| Preview (Anteprima) | Button to execute the print preview of the VAT settlement 74-ter. |
-| Print (Stampa) | Button to execute the physical print of the VAT settlement 74-ter. |
+| Preview | Button to execute the print preview of the VAT settlement 74-ter. |
+| Report | Button to execute the physical print of the VAT settlement 74-ter. |

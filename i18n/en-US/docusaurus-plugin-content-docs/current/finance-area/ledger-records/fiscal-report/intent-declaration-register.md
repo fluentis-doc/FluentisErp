@@ -1,5 +1,5 @@
 ---
-title: Intent Declaration Register (Registro dichiarazioni di intento)
+title: Intent Declaration Register 
 sidebar_position: 8
 ---
 
@@ -11,7 +11,7 @@ There are also filter fields for protocol or for customer or supplier registry.
 
  
 
-| Function (Funzione) | Meaning (Significato) |
+| Function | Extended Description |
 | --- | --- |
-| Preview (Anteprima) | Button to execute the print preview of the intent declaration register. |
-| Print (Stampa) | Button to execute the physical printing of the intent declaration register. |
+| Preview | Button to execute the print preview of the intent declaration register. |
+| Report | Button to execute the physical printing of the intent declaration register. |
