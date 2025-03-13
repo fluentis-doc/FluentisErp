@@ -158,5 +158,9 @@
   "item.label.Dipendenti": {
     "message": "Employees",
     "description": "Navbar item with label Dipendenti"
+  },
+  "item.label.Qualità": {
+    "message": "Quality",
+    "description": "Navbar item with label Qualità"
   }
 }
