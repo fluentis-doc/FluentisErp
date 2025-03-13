@@ -1,51 +1,48 @@
 ---
-title: Utilizzo fidi
+title: Credit Situation
 sidebar_position: 3
 ---
 
-La maschera **Utilizzo fidi** consente di creare e memorizzare un calcolo di utilizzo del fido cliente per ogni conto cliente e visualizzarne quindi una serie storica. Nella lista dei calcoli visualizzata nella maschera saranno visualizzate in rosso le righe con scostamento.
+The **Credit Situation** screen allows for the creation and storage of a calculation of customer credit limit usage for each customer account and thus visualize a historical series. In the list of calculations displayed in the screen, lines with discrepancies will be shown in red.
 
-Per elaborare un nuovo calcolo premere il tasto **Nuovo**.
+To process a new calculation, press the **New** button.
 
-All'apertura della maschera di dettaglio inserire il conto del cliente da analizzare.
+Upon opening the detail screen, enter the customer account to be analyzed.
 
-Inserire o modificare la data di inizio calcolo che rappresentala data dalla quale vengono letti i dati utilizzati nel calcolo.
+Insert or modify the start date of the calculation, which represents the date from which the data used in the calculation is read.
 
-Premere quindi il pulsante **Calcola**.
+Then press the **Calculate** button.
 
-Il calcolo può essere salvato con il comando **Salva**.
+The calculation can be saved with the **Save** command.
 
-La **data di riferimento** costituisce il gorno in riferimento al quale viene calcolato il fido disponibile.
+The **Referred date** constitutes the day to which the available credit limit is calculated.
 
-ATTENZIONE: nel caso, ad esempio did ricevute bancarie emesse e presentate al salvo buon fine, anche laddove queste siano state accreditate con l'apposita procedura contabile, ai fini del fido cliente l'importo si considera ancora impegnato fino alla data di scadenza della partita che ha generato la ricevuta bancaria. Pertanto modificando la data di riferimento del calcolo oltre detta data si potrà notare che il valore del fido viene liberato per l'importo corrispondente.
+WARNING: In the case, for example, of bank receipts issued and presented for collection, even if these have been credited with the appropriate accounting procedure, for the purposes of customer credit limits, the amount is still considered committed until the due date of the transaction that generated the bank receipt. Therefore, by modifying the reference date of the calculation beyond this date, you may notice that the value of the credit limit is released for the corresponding amount.
 
-All'interno dei documenti di vendita, ad esempio l'ordine cliente, invece, il calcolo del fido disponibile (visibile sulla testata) è sempre vincolato alla data odierna, senza poter effettuare modifiche della data di riferimento, pertanto un nuovo ordine, se fuori fido, ,non sarà evadibile (salvo percorso autorizzativo) fino al giorno della scadenza dell'ipotetico effetto che nel ibera un valore sufficiente.
+Within the sales documents, such as the customer order, the calculation of the available credit limit (visible in the header) is always tied to the current date, without the possibility of modifying the reference date. Therefore, a new order, if over the credit limit, will not be fulfillable (except through an authorization process) until the day of the expiration of the hypothetical effect that releases a sufficient amount.
 
+The **Update customer credit** button updates the registry of the customer entered in the calculation header and sets in the registry the value read in the **Credit evaluation** field.
 
-Il Pulsante **Aggiorna fido cliente** va ad aggiornare l'anagrafica del cliente inserito nella testata del calcolo e imposta in anagrafica il valore che legge nel campo **Fido stimato**.
+This field, in turn, is populated by the Calculate command, applying the value of the **Credit evaluation multiplier** field (e.g., 1) to a (weighted) calculation based on the revenue for the period considered for that customer.
 
-Questo campo, a sua volta viene popolato dal comando Calcola applicando il valore del campo **Moltiplicatore valutazione fido** (ad es. 1) ad un calcolo (ponderato) basato sul fatturato del periodo considerato per quel cliente.
+In detail, the calculation is developed as follows:
 
-In dettaglio il calcolo è così sviluppato:
+“12M Revenue (Fatturato 12M)” / 365 * “Multiplier (Moltiplicatore)” * “Average Payment Terms (Giorni dilazione medi)”, where the latter are in turn calculated based on the invoice due dates of the past 12 months, as “(sum(Due Amount * Payment Days))/(total sum of due dates).
 
-Fatturato 12M” / 365 * “Moltiplicatore” * “Giorni dilazione medi”, dove questi ultimi sono a loro volta calcolati sulle scadenze delle fatture degli ultimi 12 mesi, come “(somma(Importo scadenza *GiorniDilazione))/(somma totale scadenze).
+**OTHER FORM FIELDS (ALTRI CAMPI DELLA FORM):**
 
-**ALTRI CAMPI DELLA FORM:**
+**12M Revenue (Fatt 12 m)** = revenue for the previous twelve months
 
-**Fatt 12 m**. = fatturato dei dodici mesi precedenti
+**Mat. values** = amounts due and respective balances
 
-**Partite** dare avere e relativo saldo
+**Debits / Credits (Dare / avere)** = collection movements from provisional records (informational data)
 
-**Dare / avere** = movimenti di incasso da registrazioni provvisorie (dato informativo)
+**Debits / Credits Balance (Saldo dare / avere)** = accounting movement if the accounting mode has been chosen
 
-**Saldo dare / avere** = movimento contabile se è stata scelta la modalità contabile
+**To Be Accounted (Fatt. da contabilizzare)** = not yet accounted for (credit because there are Credit Notes); Advances are included for invoices with advance lines
 
-**Fatt. da contabilizzare** = non ancora contabilizzate,  (avere perché ci sono le Note di Credito) Acconti è un di cui per fatture con righe acconti
+**DDT to Invoice (DDT da fatturare)** = (credit if return DDT)
 
-**DDT da fatturare** (avere se DDT di reso)
+**Value and Number of Unpaid (Valore e nr insoluti)** = (statistical, not included in the calculation)
 
-**Valore e nr insoluti** (statistico non entra nel calcolo)
-
-**Scaduto** = quanto delle partite aperte sono scadute 
-
-
+**Expired** = how much of the open transactions are overdue

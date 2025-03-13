@@ -1,32 +1,26 @@
 ---
-title: Importazione insoluti
+title: Import Unpaid
 sidebar_position: 3
 ---
 
-Da questa maschera si procede all'importazione della lista insoluti dal file telematico standard di comunicazione bancaria. 
+From this form, the importation of the arrears list from the standard electronic banking communication file can be performed.
 
-È possibile, normalmente, attivare il ricevimento di un tracciato di questa lista, che riprende in parte lo stesso file inviato con la presentazione, all'interno del quale abbiamo inserito l'identificativo dell'effetto: attraverso la lettura di questo dato, quindi, possiamo creare la lista degli insoluti automaticamente, con la rilevazione diretta anche delle spese bancarie su ognuno.
+It is generally possible to activate the reception of a trail of this list, which partially replicates the same file sent during the submission, within which we have included the identifier of the effect: by reading this data, we can automatically create the arrears list, with direct detection of the bank fees on each one.
 
-La procedura inizia con il pulsante **Esegui importazione**, che aprirà la maschera di apertura file del sistema: una volta individuato il file nella directory corretta si dovrà semplicemente aprire il file per procedere all'importazione della lista. 
+The procedure begins with the **Execute Import** button, which will open the system's file opening mask: once the file is located in the correct directory, simply opening the file will proceed with the importation of the list.
 
-L'eventuale lista di effetti non trovati sarà riportata in una maschera d'errore: per questi sarà quindi necessario procedere alla creazione manuale dell'insoluto.
+Any list of missing effects will be displayed in an error mask: for these, it will be necessary to proceed with the manual creation of the arrears.
 
-Dalla maschera è possibile cancellare l'importazione eseguita: questa andrà ad annullare la lista degli insoluti creati con l'importazione stessa.
-
-
-
-**Pulsanti specifici**
-
-**Ricerca importazioni:** Ricerca la lista delle importazioni insoluti già eseguite.
-
-**Esegui import**: Con questo pulsante si apre la maschera di selezione del file telematico per il quale eseguire la procedura di importazione.
-
-**Visualizza file insoluti**: Visualizza il file telematico dell'insoluto importato.
-
-**Cancella importazione**: Cancella l'importazione eseguita.
+From the mask, it is possible to delete the executed import: this will cancel the list of arrears created with the import itself.
 
 
 
+**Specific Buttons (Pulsanti specifici)**
 
+**Search Imports (Ricerca importazioni):** Searches for the list of arrears imports that have already been executed.
 
+**Execute Import (Esegui import):** This button opens the electronic file selection mask for which to execute the import procedure.
 
+**View Arrears File (Visualizza file insoluti):** Views the electronic file of the imported arrears.
+
+**Delete Import (Cancella importazione):** Deletes the executed import.

@@ -1,47 +1,44 @@
 ---
-title: Effetti
+title: Bills
 sidebar_position: 3
 ---
 
-La form della ricerca effetti 
-- si trova in Tesoreria > Portafoglio Effetti > Effetti > Effetti
+The effects search form 
+- is located in Treasury > Bills Portfolio > Bills > Bills
 
-- permette all'utente di ricercare gli effetti emessi precedentemente con lo scopo di visualizzarli, modificarli ed eventualmente cancellarli.
+- allows the user to search for previously issued effects with the aim of viewing, modifying, and possibly deleting them.
 
-Da questa form è possibile anche inserire manualmente un nuovo effetto, ma questa modalità è scarsamente utilizzata nella pratica. Solitamente si procede tramite le procedure di creazione automatica effetti (dalle partite o dalle fatture).
-
-
-## Pulsanti della Ribbon Bar
-
-> - **Ricerca effetti:** Pulsante per ricercare gli effetti secondo i filtri di ricerca impostati nella testata della form.
-> - **Nuovo effetto:** Richiama la form per inserire un nuovo effetto.
-> - **Modifica effetto:** Permette di modificare un effetto precedentemente inserito.
-> - **Visualizzazione effetto:** Permette di visualizzare un effetto precedentemente inserito.
-> - **Cancella effetto:** Cancella un effetto precedentemente inserito.
-
-> Esecuzione delle **stampe** (*Anteprima* oppure *Stampa*) lancia, relativamente agli effetti selezionati con il mouse, (tenendo premuto Ctrl si possono selezionare più effetti contemporaneamente) l'omonima stampa presente nel [**menu stampe**](/docs/treasury/bills-holding/reports/bill-holding-situation) del modulo
-
-> - *Avviso scadenza effetti*: Lettera indirizzata al cliente (una pagina per ogni effetto selezionato) che evidenzia gli effetti in scadenza con relativi riferimenti
-> - *Lettera di cumulo*:  Lettera indirizzata al cliente che evidenzia le partite o fatture acquisite in ogni singolo effetto 
-> - *Portafoglio effetti:* Stampa una lista di effetti con evidenza dei dati principali relativi
-> - *Situazione castelletti:* Stampa per ogni banca (relativa agli effetti selezionati) la situazione del castelletto concesso, utilizzato e residuo
+From this form, it is also possible to manually enter a new effect, but this mode is rarely used in practice. Usually, creation procedures are followed through automatic effects creation (from transactions or invoices).
 
 
-## Filtri di ricerca
+## Ribbon Bar Buttons
 
-- **Conto:** filtro riferito al campo ***Debitore*** presente all'interno dell'effetto
-- **Anno / Tipo effetto:** filtri riferiti agli omonimi campi presenti all'interno dell'effetto 
-- **DA / A / data scadenza / Dat emissione / Numero**: riferiti agli omonimi campi presenti all'interno dell'effetto
-- **Stati effetti:** filtro riferito allo *Stato effetto* presente all'interno delle'effetto, lo stato viene automaticamente modificato a seconda delle procedure che sono state eseguite, ad esempio nasce come Emesso , poi diventa presentato, Accreditato, insoluto ecc...
-- **Divisa:** per filtrare solo effetti denominati ad esempio in dollari ecc...
-- **Piazza / ABI / CAB / Descrizione Banca:** riferiti alla banca d'appoggio del debitore
-- **Flag della sezione Stato Effetto:** Di default è attivo *Tutti*, ma può essere cambiato selezionando le varie condizioni di ricerca che se attivate contemporaneamente andranno ad allargare la base di ricerca, ad esempio quelli stampati + quelli contabilizzati + quelli NON stampati .....
+> - **Search Bills (Ricerca effetti):** Button to search for effects according to the search filters set in the header of the form.
+> - **New Effect (Nuovo effetto):** Calls the form to enter a new effect.
+> - **Modify Effect (Modifica effetto):** Allows modifying a previously entered effect.
+> - **View Effect (Visualizzazione effetto):** Allows viewing a previously entered effect.
+> - **Delete Effect (Cancella effetto):** Deletes a previously entered effect.
 
-## Griglia dei risultati
+> Performing **prints** (*Preview* or *Print Report*) launches, regarding the effects selected with the mouse (holding down Ctrl allows selecting multiple effects simultaneously), the corresponding print found in the [**print menu**](/docs/treasury/bills-holding/reports/bill-holding-situation) of the module.
 
-In questa from presenta gli stessi campi presenti nei filtri già dettagliati qui sopra.
-
-Presenta inoltre gli **Importi** (in valuta, esempio dollari, e in Euro) dell'effetto (coincidenti se l'effetto è denominato in euro).
-
+> - *Expiry Notice of Bills (Avviso scadenza effetti):* Letter addressed to the customer (one page for each selected effect) highlighting the effects that are about to expire with relevant references.
+> - *Accumulation Letter (Lettera di cumulo):* Letter addressed to the customer highlighting the transactions or invoices included in each individual effect.
+> - *Bills Portfolio (Portafoglio effetti):* Prints a list of effects highlighting the main related data.
+> - *Ledger Situation (Situazione castelletti):* Prints the situation of the granted, used, and remaining ledger for each bank (related to the selected effects).
 
 
+## Search Filters
+
+- **Account (Conto):** Filter referring to the **Debtor*** field present within the effect.
+- **Year / Effect Type (Anno / Tipo effetto):** Filters referring to the eponymous fields present within the effect.
+- **FROM / TO / Expiration Date (DA / A / data scadenza) / Issue Date (Dat emissione) / Number (Numero):** Referring to the eponymous fields present within the effect.
+- **Effect States (Stati effetti):** Filter referring to the *Bill status* present within the effect. The state is automatically modified depending on the procedures that have been performed; for example, it starts as Issued (Emesso), then becomes Presented (presentato), Credited (Accreditato), Unpaid (insoluto), etc.
+- **Currency (Divisa):** To filter only effects denominated in dollars, etc.
+- **Place / ABI / CAB / Bank Description (Piazza / ABI / CAB / Descrizione Banca):** Referring to the support bank of the debtor.
+- **Effect State Section Flag (Flag della sezione Stato Effetto):** By default, *All* is active, but it can be changed by selecting various search conditions that, if activated simultaneously, will broaden the search base, such as those printed + those accounted + those NOT printed...
+
+## Results Grid
+
+This form presents the same fields available in the filters detailed above.
+
+It also shows the **Amounts (Importi)** (in currency, e.g., dollars, and in Euros) of the effect (matching if the effect is denominated in euros).

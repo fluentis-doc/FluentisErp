@@ -1,108 +1,106 @@
 ---
-title: TESORERIA
+title: Treasury
 sidebar_position: 1
 ---
 
-## Funzionalità
+## Functionality (Funzionalità)
 
-L'area Tesoreria di **Fluentis ERP** presenta una serie di moduli e procedure che consentono all'azienda di analizzare l'andamento dei flussi finanziari previsti, valutarne la rischiosità, e gestirne la comunicazione con gli istituti di credito sia in entrata che in uscita.
+The Treasury area of **Fluentis ERP** features a series of modules and procedures that allow the company to analyze the trend of projected financial flows, assess their risk, and manage communication with credit institutions for both incoming and outgoing transactions.
 
-A queste funzionalità di monitoraggio ed analisi, si affiancano varie procedure per la gestione corrente e quotidiana delle operazioni di pagamento e incasso, di emissione e presentazione al salvo buon fine o all'incasso di effetti e ricevute bancarie, di anticipo fatture di vendita press la banca.
+Alongside these monitoring and analysis functionalities, there are various procedures for the ongoing and daily management of payment and collection operations, issuance, and presentation for collection or to be collected of effects and bank receipts, and advance requests for sales invoices with the bank.
 
-Il modulo dialoga strettamente con l'Amministrazione e permette pertanto di leggere le partite aperte dello scadenziario al fine di generare i pagamenti ed i bonifici da eseguire, oppure di emettere gli effetti e le ricevute bancarie.
+The module closely interacts with Administration and therefore allows reading the open items from the due date schedule to generate the payments and bank transfers to be executed, or to issue effects and bank receipts.
 
-Quando il dato viene elaborato, le stesse procedure premettono di generare in automatico le scritture contabili per la rilevazione dei vari incassi e pagamento oppure per l'emissione, presentazione ed incasso di effetti e Ri.Ba.
+Once the data is processed, the same procedures also allow for automatic generation of accounting entries for recording various collections and payments, as well as for the issuance, presentation, and collection of effects and Ri.Ba.
 
-
-### Dettaglio Funzionalità
-
+### Functionality Details (Dettaglio Funzionalità)
 
 import Link from '@docusaurus/Link';
 
 <div className="cardContainer">
     <div className="card">
-###   <Link to="/docs/treasury/cash-flow/general-overview/">Cash Flow</Link>
-        <p>per eseguire analisi preventive del flusso di cassa potenziale, consentendo di creare diversi scenari includendo o escludendo alcune tipologie di flusso finanziario (es. con o senza gli ordini clienti, per un CF più o meno consolidato)</p>
-        <p>Completo di</p>
-        <p><Link to="/docs/treasury/cash-flow/off-balance-due-dates" className="bold-link">Scadenze extracontabili</Link></p>
-        <p>per integrare manualmente il cahsflow con flussi previsionali extra sistema</p>
-        <p><Link to="/docs/treasury/cash-flow/reports" className="bold-link">Stampa analitica cashflow</Link></p>
-        <p>per la rappresentazione completa dei risultati futuri attesi</p>
+###   <Link to="/docs/treasury/cash-flow/general-overview/">Cash Flow (Flusso di Cassa)</Link>
+        <p>to perform preventive analyses of potential cash flow, allowing for the creation of various scenarios including or excluding certain types of financial flow (e.g., with or without customer orders, for a more or less consolidated CF)</p>
+        <p>Complete with</p>
+        <p><Link to="/docs/treasury/cash-flow/off-balance-due-dates" className="bold-link">Off-balance Due Dates (Scadenze extracontabili)</Link></p>
+        <p>to manually integrate the cash flow with extra-system projected flows</p>
+        <p><Link to="/docs/treasury/cash-flow/reports" className="bold-link">Analytical Cash Flow Print (Stampa analitica cashflow)</Link></p>
+        <p>for the complete representation of expected future results</p>
     </div>
     <div className="card">
-###   <Link to="/docs/treasury/advance/advances-collections">Anticipo Fatture</Link>
-        <p>Modulo specifico per l'anticipazione bancaria sulla fatturazione (solitamente estera)</p>
+###   <Link to="/docs/treasury/advance/advances-collections">Invoice Advances (Anticipo Fatture)</Link>
+        <p>Specific module for bank anticipation on invoicing (usually foreign)</p>
     </div>
 </div>
 
 <div className="cardContainer">
     <div className="card">
-###   <Link to="/docs/treasury/bills-holding/general-overview">Portafoglio Effetti</Link>
-        <p>per l'emissione, la presentazione , l'incasso di effetti e ricevute bancarie e le relative rilevazioni contabili, oltre alla gestione e relative scritture contabili degli effetti insoluti</p>
-        <p><Link to="/docs/treasury/bills-holding/procedures/bills-acquisition-from-invoices/" className="bold-link">Creazione effetti dalle Fatture</Link></p>
-        <p><Link to="/docs/treasury/bills-holding/procedures/bills-acquisition-from-maturity-values/" className="bold-link">Creazione effetti dalle Partite</Link></p>
+###   <Link to="/docs/treasury/bills-holding/general-overview">Effects Portfolio (Portafoglio Effetti)</Link>
+        <p>for the issuance, presentation, collection of effects and bank receipts, and related accounting entries, as well as the management and related accounting entries of overdue effects</p>
+        <p><Link to="/docs/treasury/bills-holding/procedures/bills-acquisition-from-invoices/" className="bold-link">Creation of Effects from Invoices (Creazione effetti dalle Fatture)</Link></p>
+        <p><Link to="/docs/treasury/bills-holding/procedures/bills-acquisition-from-maturity-values/" className="bold-link">Creation of Effects from Entries (Creazione effetti dalle Partite)</Link></p>
     </div>
     <div className="card">
-###   <Link to="/docs/treasury/vendors-payments/general-overview">Pagamenti Fornitori</Link>
-        <p>per la gestione delle distinte di Bonifico, SDD, e Avvisi Ri.Ba. passivi e la relativa rilevazione contabile in automatico</p>
-        <p><Link to="/docs/treasury/vendors-payments/procedures/block-passive-maturity-values" className="bold-link">Blocco partite passive</Link></p>
-        <p>gestione massiva del blocco autorizzazione al pagamento delle partite passive</p>
-        <p><Link to="/docs/treasury/vendors-payments/procedures/payments-support-management" className="bold-link">Gestione appoggio pagamenti</Link></p>
-        <p>gestione dei dati degli appoggi bancari previsti per i pagamenti</p>
+###   <Link to="/docs/treasury/vendors-payments/general-overview">Supplier Payments (Pagamenti Fornitori)</Link>
+        <p>for managing Transfer lists, SDD, and passive Ri.Ba. notices and automatic accounting records</p>
+        <p><Link to="/docs/treasury/vendors-payments/procedures/block-passive-maturity-values" className="bold-link">Block Passive Entries (Blocco partite passive)</Link></p>
+        <p>mass management of authorization block for payment of passive entries</p>
+        <p><Link to="/docs/treasury/vendors-payments/procedures/payments-support-management" className="bold-link">Payment Support Management (Gestione appoggio pagamenti)</Link></p>
+        <p>management of the expected bank support data for payments</p>
     </div>
 </div>
 <div className="cardContainer">
     <div className="card">
-###   <Link to="/docs/treasury/bank-account/bank-movements">Conti Correnti Bancari</Link>
-        <p>per l'importazione delle liste movimenti bancari telematiche e la loro riconciliazione con la contabilità, oppure per sfruttarli nella generazione delle scritture</p>
+###   <Link to="/docs/treasury/bank-account/bank-movements">Bank Accounts (Conti Correnti Bancari)</Link>
+        <p>for importing electronic lists of bank movements and reconciling them with accounting, or to utilize them in generating entries</p>
     </div>
     <div className="card">
-###   <Link to="/docs/treasury/customer-risk/general-overview">Rischio Cliente</Link>
-        <p>per la gestione del fido sulle forniture a credito ed il monitoraggio o blocco a fronte del superamento del limite imposto, l'analisi dell'esposizione al rischio di credito tramite vari pannelli ed indici</p>
-        <p><Link to="/docs/treasury/customer-risk/procedures/lock-manager" className="bold-link">Lock manager per autorizzare lo sconfinamento</Link></p>
-        <p><Link to="/docs/treasury/customer-risk/procedures/customer-statement" className="bold-link">Esposizione clienti</Link></p>
-        <p><Link to="/docs/treasury/customer-risk/procedures/remittances-check" className="bold-link">Gestione Rimesse</Link></p>
-        <p>Per il controllo tempi medi nel ritardo pagamenti</p>
+###   <Link to="/docs/treasury/customer-risk/general-overview">Customer Risk (Rischio Cliente)</Link>
+        <p>for managing credit limits on supplies and monitoring or blocking when exceeding imposed limits, analyzing credit risk exposure through various panels and indices</p>
+        <p><Link to="/docs/treasury/customer-risk/procedures/lock-manager" className="bold-link">Lock Manager for Authorizing Exceedance (Lock manager per autorizzare lo sconfinamento)</Link></p>
+        <p><Link to="/docs/treasury/customer-risk/procedures/customer-statement" className="bold-link">Customer Exposure (Esposizione clienti)</Link></p>
+        <p><Link to="/docs/treasury/customer-risk/procedures/remittances-check" className="bold-link">Remittance Management (Gestione Rimesse)</Link></p>
+        <p>For controlling average times in payment delays</p>
     </div>
 </div>
 <div className="cardContainer">
     <div className="card">
-###     <Link to="/docs/treasury/docfinance/general-overview">DocFinance e Piteco</Link>
-        <p>per la gestione dell'importazione ed esportazione dati verso i maggiori e più diffusi software verticali per la tesoreria.</p>
+###   <Link to="/docs/treasury/docfinance/general-overview">DocFinance and Piteco (DocFinance e Piteco)</Link>
+        <p>for managing the import and export of data to and from the major and most popular vertical treasury software.</p>
     </div>
 </div>
 
-## Dati di Base
-:::danger[Attenzione]
-Prima di utilizzare le funzionalità disponibili occorre gestire una serie di dati di base: essi sono suddivisi in due macro gruppi, [**Tabelle**](/docs/configurations/tables/finance/general-overview) e [**Parametri**](/docs/configurations/parameters/finance/general-overview).
+## Basic Data (Dati di Base)
+:::danger[Attention (Attenzione)]
+Before using the available functionalities, it is necessary to manage a series of basic data: these are divided into two macro groups, [**Tables**](/docs/configurations/tables/finance/general-overview) and [**Parameters**](/docs/configurations/parameters/finance/general-overview).
 
-In alternativa è disponibile la procedura di **Fast Start** descritta di seguito.
+Alternatively, a **Fast Start** procedure described below is available.
 :::
 
-## Procedura di Fast Start
+## Fast Start Procedure (Procedura di Fast Start)
 
 :::important[**Fast Start**]
-Anche l'area Tesoreria può essere configurata come [**ambiente *FastStart* totalmente pronto all'uso**](/docs/guide/fast-start) e permettere un utilizzo immediato.
+The Treasury area can also be configured as a [**fully ready-to-use *FastStart* environment**](/docs/guide/fast-start) and allow for immediate use.
 :::
 
-## Flusso di inserimento dei dati
+## Data Entry Flow (Flusso di inserimento dei dati)
 
-Benchè sia possibile l'inserimento manuale di dati quali ad esempio la creazione di una ricevuta bancaria o di una distinta di bonifico, solitamente si ricorre a **procedure automatiche** di creazione (esempio *creazione effetti dalle partite o dalle fatture*) o di predisposizione dei pagamenti a partire dalle partite aperte.
+Although manual entry of data such as creating a bank receipt or a transfer list is possible, it is usually resorted to **automatic creation procedures** (e.g., *creation of effects from entries or invoices*) or preparation of payments starting from the open entries.
 
-Si ricorre inoltre generalmente a procedure automatiche di contabilizzazione del portafoglio o dei bonifici eseguiti.
+Generally, automatic accounting procedures for the portfolio or executed transfers are also used.
 
-Altre funzionalità risultano invece elaborazioni del software a partire dai dati presenti, es. il Cashflow con la procedura dui creazione automatica, (benchè esista la possibilità di crearlo manualmente richiamando i flussi finanziari uno ad uno, raramente utilizzato) oppure i dati estratti dal modulo Rischio cliente.
+Other functionalities are instead software processes starting from the existing data, e.g., the Cash Flow with the automatic creation procedure, (although there is the possibility of creating it manually by recalling the financial flows one by one, which is rarely used) or data extracted from the Customer Risk module.
 
-## Flusso di lavoro tipico area tesoreria
+## Typical Workflow in the Treasury Area (Flusso di lavoro tipico area tesoreria)
 
-- Procedure "Correnti": 
-    - esecuzione dei pagamenti fornitori leggendo le partite aperte e contabilizzazione automatica del pagamento stesso con chiusura partite
-    - emissione di effetti attivi (frequentemente ricevute bancarie) leggendo le fatture o le partite aperte e contabilizzazione automatica dell'emissione
-    - creazione di distinte di presentazione effetti (Ri.Ba.) l salvo buon fine o all'incasso ed esportazione del file telematico per l'invio alla banca; contabilizzazione automatica della presentazione
-    - incasso degli effetti al salvo buon fine (giroconto automatico)
-    - eventuale emersione insoluto con riapertura del credito cliente, contabilizzazione automatica
-    - creazione di distinte di presentazione fatture allo sconto leggendo le scadenze delle fatture, contabilizzazione automatica dell'anticipo e del successivo incasso completo
+- "Current" Procedures:
+    - execution of supplier payments by reading the open entries and automatic accounting of the payment itself with closing of entries
+    - issuance of active effects (frequently bank receipts) by reading invoices or open entries and automatic accounting of the issuance
+    - creation of presentation lists for effects (Ri.Ba.) for collection or to be collected and export of the electronic file to be sent to the bank; automatic accounting of the presentation
+    - collection of effects for collection (automatic bank transfer)
+    - eventual emergence of default with reopening of customer credit, automatic accounting
+    - creation of lists for presentation of invoices for discount by reading invoice due dates, automatic accounting of the advance and subsequent full collection
 
-- Procedure "On demand":
-    - Elaborazione cashflow leggendo i dati presenti a sistema (saldi, partite, documenti ciclo attivo e passivo, effetti, documenti di conto lavoro e produzione)
-    - Elaborazione di statistiche di utilizzo fidi clienti o ritardo pagamenti
+- "On-demand" Procedures:
+    - Cash flow processing by reading the data present in the system (balances, entries, documents in the active and passive cycles, effects, job order documents, and production)
+    - Processing of statistics on customer credit usage or payment delays

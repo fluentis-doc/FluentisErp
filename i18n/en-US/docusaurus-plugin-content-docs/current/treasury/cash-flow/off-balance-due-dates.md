@@ -1,35 +1,26 @@
 ---
-title: Scadenze Extracontabili
+title: Off-balance Due Date
 sidebar_position: 3
 ---
 
-La form si trova in Tesoreria > Cash Flow > Cash Flow > Scadenze extra-contabili
+The form is located in Treasury > Cash Flow > Cash Flow > Off-balance Due Date (Scadenze extra-contabili).
 
+With this mask, it is possible to manage the extracontablen deadlines that are read in the appropriate cash flow stream (defined in the table [**Flow Types**](/docs/configurations/tables/treasury/cash-flow-module-tables/flux-types) by the *Extracontablen* flag), such as forecasting outflows for taxes, salaries/wages, etc.
 
-Con questa maschera è possibile gestire le scadenze extracontabili che vengono lette nell'apposito flusso di cash flow (definito nella tabella [**Tipi Flusso**](/docs/configurations/tables/treasury/cash-flow-module-tables/flux-types) dal flag *Extra contabile*), come ad esempio prevedere le uscite per tributi, salari/stipendi, ecc. ecc..
+## How to enter an extracontablen deadline for cash flow reading
 
-## Come inserire una scadenza extra contabile per la lettura nel cashflow
+Directly enter the expected deadlines in the grid.
 
-Inserire direttamente nella griglia le scadenze previste.
+- The **Due Date Types** field is linked to the corresponding table where you can freely define a "label" to represent the type of deadline.
+- The Deadline Date (Data scadenza) will define the representation in the cash flow (in the corresponding month) as it is considered the date of manifestation of the financial flow we are entering.
+- The Currency (Divisa) will be proposed as the one of the company (e.g., Euro) and can be changed to enter a flow in foreign currency; in this case, the exchange rate will also be managed based on the deadline date.
+- The amount in currency (importo in valuta) is that denominated in the selected currency in the previous field, while the Debit amount (Dare) (positive financial flow, e.g., a receivable) or Credit amount (Avere) (negative flow, e.g., a debt) are denominated in the company's currency (e.g., Euro).
+- The **closed** (chiusa) flag can be used to exclude the row from future simulations without needing to delete it, in case you wish to keep and archive it.
 
-- Il campo **Tipi scadenza** è collegato all'omonima tabella dove poter definire liberamente una "etichetta" per rappresentare la tipologia di scadenza
-- La Data scadenza definirà la rappresentazione nel cashflow (nel mese corrispondente) essendo da considerare come la data di manifestazione del flusso finanziario che stiamo inserendo
-- La Divisa sarà proposta pari a quella della società (es. L'Euro) e può essere variata per inserire un flusso in divisa estera, in questo caso si gestirà anche il cambio in base alla dat scadenza.
-- L'importo in valuta è quello denominato nella divisa selezionata nel campo precedente, mentre l'importo Dare (flusso finanziario positivo, esempio un credito) o Avere (flusso negativo esempio un debito) sono denominati in divisa della società (es. Euro)
-- il flag **chiusa** può essere usto per non considerare più la riga nelle prossime simulazioni senza dover cancellare la riga, nel caso si voglia conservarla e memorizzarla.
+**Specific buttons (Pulsanti specifici)**
 
+**Search**: Button to apply search filters to the list of extracontablen deadlines.
 
+**New**: Sets the cursor to enter a new extracontablen deadline.
 
-**Pulsanti specifici**
-
-**Ricerca** Pulsante per applicare i filtri di ricerca sulla lista delle scadenze extracontabili.
-
-**Nuovo** Imposta il cursore all'inserimento di una nuova scadenza extracontabile.
-
-**Cancella** Cancella la scadenza extracontabile selezionata.
-
-
-
-
-
-
+**Cancel**: Deletes the selected extracontablen deadline.

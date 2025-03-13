@@ -1,31 +1,25 @@
 ---
-title: Ricerca Distinta Anticipo
+title: Advance Statement Search (Ricerca Distinta Anticipo)
 sidebar_position: 2
 ---
 
-Da questa posizione vengono ricercate le distinte di anticipo già presenti a sistema, le quali possono essere aperte per visione o modifica con un doppio click.
+From this position, advance statements already present in the system are searched, which can be opened for viewing or modification with a double click.
 
-E' possibile anche procedere all'inserimento di una nuova distinta con il bottone ***Nuovo***.
+It is also possible to proceed with the insertion of a new statement using the **New*** button.
 
-Nella testata della form sono presenti i **filtri** per la ricerca relativi a: 
+In the header of the form, there are **filters** for searching related to:
 
-- conti correnti (ordinari) 
-- conti d'appoggio per l'anticipo da parte della banca 
-- numero distinta 
-- data presentazione 
-- tipo di calcolo 
-- stato della distinta.
+- ordinary current accounts (conti correnti (ordinari))
+- bank advance support accounts (conti d'appoggio per l'anticipo da parte della banca)
+- statement number (numero distinta)
+- submission date (data presentazione)
+- calculation type (tipo di calcolo)
+- statement status (stato della distinta).
 
-Il flag **Contabilizzata** contrassegna e filtra distinte per le quali è già stata lanciata la procedura di [**contabilizzazione**](/docs/treasury/advance/accounting/advances-list-accounting) o meno.
+The **Accounted** flag marks and filters statements for which the [**Accounting**](/docs/treasury/advance/accounting/advances-list-accounting) has already been launched or not.
 
-Nella form sono visibili anche:
+The form also displays:
 
-**Totale Distinta:** Campo calcolato che rappresenta la somma del totale delle fatture anticipate
+**Total Statement (Totale Distinta):** Calculated field that represents the sum of the total of the anticipated invoices.
 
-**Totale Anticipato:** Campo calcolato che rappresenta la somma della quota anticipata dalla banca per ogni fattura
-
-
-
-
-
-
+**Total Advanced (Totale Anticipato):** Calculated field that represents the sum of the amount advanced by the bank for each invoice.

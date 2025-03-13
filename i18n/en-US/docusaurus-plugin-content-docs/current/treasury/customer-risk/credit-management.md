@@ -1,23 +1,18 @@
 ---
-title: Gestione fidi
+title: Credit Management (Gestione fidi)
 sidebar_position: 2
 ---
 
-Questa maschera consente di verificare e gestire le impostazioni dei fidi delle anagrafiche cliente, senza dover entrare ad una ad una dalla gestione contatti del tab ‘Home'-‘Anagrafici'-‘Anagrafiche contatti'.
+This form allows you to verify and manage the credit settings of customer registries, without having to enter each one individually through the contact management in the 'Home' - 'Registers' - 'Contact Registries' tab.
 
-Sono previsti quattro tipi di controllo fido:
+There are four types of credit control implemented:
 
-**Blocco doc. e monitor fido**: il documento dell'area vendita che va a sforare il fido sarà bloccato e quindi ci sarà la necessità di autorizzarlo per procedere alle fasi successivo del flusso documentale;
+**Block documents and monitor credit (Blocco doc. e monitor fido)**: the document from the sales area that exceeds the credit limit will be blocked, and it will be necessary to authorize it to proceed to the subsequent phases of the document flow;
 
-**Monitor fido**: sarà semplicemente effettuato un controllo del fido con eventuale messaggio all'utente dell'avvenuto sforamento;
+**Reliance monitor**: a credit check will simply be performed with a potential message to the user indicating the occurrence of the exceeded limit;
 
-**Blocco di gruppo**: come per il primo, ma il calcolo è cumulativo per tutte le società del database facenti capo alla stessa anagrafica cliente;
+**Group lock**: similar to the first, but the calculation is cumulative for all companies in the database that belong to the same customer registry;
 
-**Monitor di gruppo**: come per il secondo, ma il calcolo è cumulativo per tutte le società del database facenti capo alla stessa anagrafica cliente.
+**Group monitor**: similar to the second, but the calculation is cumulative for all companies in the database that belong to the same customer registry.
 
-Il campo del **fido assicurato** è solo un riferimento non gestito in modo attivo dal programma, così come le note fido.
-
-
-
-
-
+The **insured credit (fido assicurato)** field is only a reference and is not actively managed by the program, as are the credit notes.

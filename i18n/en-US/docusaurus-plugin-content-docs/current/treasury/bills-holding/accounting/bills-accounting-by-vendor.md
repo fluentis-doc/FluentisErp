@@ -1,50 +1,48 @@
 ---
-title: Contabilizzazione Effetti girati al Fornitore
+title: Bills Accounting by Vendor
 sidebar_position: 4
 ---
 
-La form si trova in Tesoreria > Portafoglio Effetti > Contabilizzazione > Contabilizzazione effetti a fornitore
+The form is located in Treasury > Effect Portfolio > Accounting > Accounting effects to supplier.
 
-Da questa maschera si procede alla contabilizzazione del giro effetti a fornitore: la procedura andrà a chiudere il conto collegato al tipo degli effetti inseriti in distinta ed effettuerà la rilevazione dei pagamenti fornitore inseriti in distinta.
+From this mask, the accounting of the effects forwarded to the supplier is executed: the procedure will close the account linked to the type of effects inserted in the list and will record the supplier payments entered in the list.
 
-:::tip[Nota]
-La contabilizzazione distinte può essere effettuata solo per distinte di giro stampate nelle quali la sezione degli effetti è uguale alla sezione pagamenti.
+:::tip[Note (Nota)]
+The accounting of the lists can only be performed for printed forwarding lists where the effects section is equal to the payments section.
 :::
 
-## Come contabilizzare un effetto a fornitore
+## How to account for an effect to the supplier
 
-1. Utilizza la parte superiore della maschera per filtrare la ricerca delle distinte da contabilizzare.
-2. Seleziona dalla griglia centrale le distinte che desideri contabilizzare.
-3. Compila i parametri per la contabilizzazione quali la **Causale di contabilità**, la **data registrazione** e la **data competenza**.
+1. Use the top part of the form to filter the search for the lists to be accounted for.
+2. Select from the central grid the lists you wish to account for.
+3. Fill in the parameters for accounting such as the **Ledger Records Template**, **Posting date**, and **Competence date**.
 
-:::note[Nota]
-Questa sezione può essere predefinita all'interno dei [**parametri**](/docs/configurations/parameters/treasury/bills-portfolio-parameters) del modulo Portafoglio effetti.
+:::note[Note (Nota)]
+This section can be predefined within the [**parameters**](/docs/configurations/parameters/treasury/bills-portfolio-parameters) of the Effect Portfolio module.
 :::
 
-4. Premi il bottone nella ribbon bar **Contabilizzazione distinte**.
+4. Press the button on the ribbon bar **Lists Accounting**.
 
-**Pulsanti specifici**
+**Specific buttons**
 
-**Ricerca**: Ricerca la lista degli effetti da contabilizzare.
+**Search**: Searches for the list of effects to be accounted for.
 
-**Contabilizzazione distinte**: Esegue la contabilizzazione per le righe selezionate.
+**Lists Accounting**: Executes the accounting for the selected lines.
 
-### Tab Precedenti
+### Previous Tab
 
-Dalla scheda *precedenti* è possibile procedere all'annullamento delle contabilizzazioni eseguite. 
+From the *Previous* tab, it is possible to proceed with the cancellation of the executed accountings.
 
-L'annullamento sarà possibile solo se il periodo è ancora modificabile (stampa libro giornale e chiusura conti non eseguite). 
+Cancellation will only be possible if the period is still modifiable (journal book print and account closing not executed).
 
-Un doppio click nella sezione delle registrazioni consentirà di visualizzare la registrazione contabile relativa. 
+A double click in the section of registrations will allow viewing the related accounting record.
 
-È presente un Tab di dettaglio di visualizzazione degli errori rilevati nel corso della contabilizzazione.
+There is a detail tab to view errors detected during the accounting process.
 
+**Specific buttons**
 
+**Search**: Searches for the list of executed accountings.
 
-**Pulsanti specifici**
+**Rollback accounting**: Restores the selected accountings.
 
-**Ricerca**: Ricerca la lista delle contabilizzazioni eseguite.
-
-**Rollback contabilizzazione**: Esegue il ripristino delle contabilizzazioni selezionate.
-
-**Rollback distinte**: Esegue il ripristino della registrazione contabile selezionata riferita alla singola distinta. 
+**Rollback lists**: Restores the accounting record related to the selected list.

@@ -1,81 +1,81 @@
 ---
-title:  Creazione e Gestione Distinta di Presentazione
+title: Creation and Management of Presentation List (Creazione e Gestione Distinta di Presentazione)
 sidebar_position: 6
 ---
 
-La form si trova sul percorso  **Tesoreria > Effetti > Crea Distinta** e permette la creazione di una *nuova* distinta oppure la *modifica/visualizzazione* di una distinta già esistente.
+The form is located on the path **Treasury > Effects > Create List** and allows for the creation of a *new* list or the *modification/viewing* of an already existing list.
 
-## Come creare una Distinta di presentazione
+## How to create a Presentation List
 
 <details>
 
-  <summary>Clicca per i passaggi fondamentali</summary>
+  <summary>Click for key steps</summary>
  
-  1. Richiama il **Tipo** (di distinta), se hai associato dei Sottoconti / Contropartite si caricheranno automaticamente anche questi campi, altrimenti inseriscili manualmente;  
-  2. **Salva** la testata appena creata;  
-  3. Usa il pulsante **Acquisizione effetti** (nella ribbon bar) per inserire in distinta effetti precedentemente creati;  
-  4. Usa il pulsante **Creazione file Ri.Ba.** (nella ribbon bar) per creare il file telematico da inviare alla banca;  
-  5. Apri la lista con il pulsante **Documenti** (nella ribbon br) per accedere al file telematico allegato;  
-  6. Dopo aver aperto il file telematico usa **Salva allegato** per scaricare una copia sul tuo PC da inviare alla banca;  
-  7. Stampa la distinta o attiva il flag **Stampato**;  
-  8. Usa **Contabilizza e chiudi** se vuoi contabilizzare la distinta.
+  1. Retrieve the **Type** (of list); if you have associated Subaccounts / Counterparts, these fields will automatically load as well; otherwise, enter them manually;  
+  2. **Save** the header just created;  
+  3. Use the **Capture effects** button (in the ribbon bar) to insert already created effects into the list;  
+  4. Use the **File Creation Ri.Ba.** button (in the ribbon bar) to create the electronic file to be sent to the bank;  
+  5. Open the list with the **Documents** button (in the ribbon bar) to access the attached electronic file;  
+  6. After opening the electronic file, use **Save attachment** to download a copy to your PC to send to the bank;  
+  7. Print the list or activate the **Printed** flag;  
+  8. Use **Post and close** if you want to post the list.
 
 </details>
 
-1. *Inserimento dati*:  
+1. *Data entry*:  
 
-> 1.1. Inserisci il *Tipo della distinta* con la combo box **Tipo**: il programma crea in automatico il numero progressivo della distinta secondo il **numeratore** collegato al tipo per **l'anno** di riferimento.  
->1.2. La **data di presentazione** è proposta come data *oggi* e può essere cambiata se necessario.  
->1.3. La **divisa** della distinta viene proposta sulla base della divisa della società attiva: nel caso in cui sia assegnata una divisa differente dall'euro questa obbliga ad inserire nella distinta solo effetti con la stessa divisa.  
-1.4. La sezione dei **Sottoconti / Contropartite** può essere valorizzata automaticamente sulla base dell'impostazione del [**tipo distinta**](/docs/configurations/tables/treasury/bills-portfolio-module-tables/bills-list-presentation-types) selezionato. Se non sono stati predefiniti i conti collegati al tipo distinta inseriscili manualmente nei due campi (widget): 
->> - **Banca conto corrente** (si tratta del sottoconto collegato all'anagrafica banca sul quale avverrà l'accredito finale al buon fine dell'operazione) e      
->> - **Contropartita presentato al salvo buon fine / sconto / dopo incasso** (conto transitorio di presentazione; in fase di *contabilizzazione della distinta* sarà stornato il *conto del portafoglio attivo* e accreditate le somme sul presente conto, successivamente, in fase di contabilizzazione accredito, da questo conto le somme saranno girocontate al conto *Banca conto corrente*).  
-> 1.5. Se hai definito nell'anagrafica della banca un valore limite per il castelletto, l'importo concesso e residuo utilizzabile saranno visualizzati nella sezione *Situazione castelletto bancario*.  
+> 1.1. Enter the *Type of list* with the combo box **Type**: the program automatically creates the progressive number of the list according to the **numbering** linked to the type for the **year** in question.  
+>1.2. The **presentation date** is proposed as today's date and can be changed if necessary.  
+>1.3. The **currency** of the list is proposed based on the currency of the active company: if a currency other than the euro is assigned, this requires entering only effects with the same currency in the list.  
+>1.4. The section for **Subaccounts / Counterparts** can be automatically populated based on the settings of the [**list type**](/docs/configurations/tables/treasury/bills-portfolio-module-tables/bills-list-presentation-types) selected. If the accounts linked to the list type have not been predefined, enter them manually in the two fields (widgets): 
+>> - **Bank current account** (this is the subaccount linked to the bank registry where the final credit will occur upon the successful completion of the operation) and      
+>> - **Counterpart presented at good outcome / discount / after collection** (transitional presentation account; during the *posting of the list*, the *active portfolio account* will be reversed and the amounts credited to this account, subsequently, during the credit posting, the amounts will be transferred from this account to the *Bank current account*).  
+> 1.5. If you have defined a limit value for the ceiling in the bank registry, the granted amount and residual usable will be displayed in the *Bank ceiling situation* section.  
 
-Se hai compilato il valore del castelletto nella sezione *Differenziato* (anzichè *Globale*) imposta la tipologia di distinta in creazione con i radio buttons nella sezione **Tipo presentazione** per gestire specificamente i valori del castelletto *Concesso* e *Residuo*.
+If you have filled in the ceiling value in the *Differentiated* section (instead of *Global*), set the type of list you are creating with the radio buttons in the **Presentation type** section to specifically manage the values of the *Granted* and *Residual* ceiling.
 
-2. **Salva** la testata della distinta appena creata. Una volta salvata la distinta saranno, infatti, attivati i vari pulsanti di gestione nella ribbon bar. 
+2. **Save** the header of the list just created. Once the list is saved, the various management buttons in the ribbon bar will be activated. 
 
-3. Usa il pulsante **Acquisizione effetti** (nella ribbon bar) per inserire gli effetti precedentemente creati nella distinta. In particolare questo comando apre una maschera di ricerca degli effetti emessi ma non ancora presentati in distinta. ATTENZIONE: Da questa maschera sarà possibile inserire in distinta solo gli effetti completi dei riferimenti abi/cab necessari.
+3. Use the **Capture effects** button (in the ribbon bar) to insert previously created effects into the list. In particular, this command opens a search mask for issued effects that have not yet been presented in the list. WARNING: From this mask, it will only be possible to insert complete effects with the necessary abi/cab references.
 
-L'inserimento degli effetti in distinta aggiorna il *Totale distinta* visualizzato in basso nella form: per eliminare dalla distinta un effetto sarà sufficiente selezionarlo e premere il pulsante *Canc* della tastiera, Oppure il bottone ***Cancella Effetti*** dalla ribbon bar.
+Inserting effects into the list updates the *Total list* displayed at the bottom of the form: to remove an effect from the list, simply select it and press the *Del* key on the keyboard, or the ***Delete Effects*** button from the ribbon bar.
 
-4. Usa il pulsante **Generazione file Ri.Ba.** per creare il tracciato telematico della distinta da inviare alla banca. In alternativa, a seconda del tipo di distinta creata, sono disponibili le esportazioni per tracciati SDD (ex RID ora a livello Sepa Europeo) ed LCR (Francese).
+4. Use the **Generation of Ri.Ba. file** button to create the electronic file of the list to be sent to the bank. Alternatively, depending on the type of list created, exports for SDD (formerly RID now at the European Sepa level) and LCR (French) are available.
 
-5. Apri il documentale con il pulsante **Documenti** (nella ribbon bar) per scaricare sul tuo PC il file da inviare alla banca.  
+5. Open the document with the **Documents** button (in the ribbon bar) to download the file to your PC to send to the bank.  
 
-6. Dopo aver aperto il documento nel documentale usa il pulsante **Salva allegato** per scaricare una copia sul tuo PC da inviare alla banca.
+6. After opening the document in the document section, use the **Save attachment** button to download a copy to your PC to send to the bank.
 
-7. Una volta completata la distinta sarà possibile procedere alla **stampa** diretta della stessa (oppure attivare il flag *Stampato*). 
+7. Once the list is completed, it will be possible to proceed with the **direct printing** of it (or activate the *Printed* flag). 
 
 :::tip[Info]
-Lo **stato di distinta stampata è necessaria per poter procedere alla sua contabilizzazione**, che può essere eseguita direttamente da questa maschera con il pulsante **Contabilizza e chiudi**: sarà necessario aver predefinito la causale contabile all'interno dei parametri del modulo.
+The **printed list status is necessary to proceed with its posting**, which can be done directly from this mask with the **Post and close** button: it will be necessary to have predefined the accounting reason within the parameters of the module.
 :::
 
-8. Usa il pulsante **Contabilizza e chiudi** se serve contabilizzare la distinta.
+8. Use the **Post and close** button if you need to post the list.
 
-:::note[Nota]
-La situazione del castelletto bancario propone i dati del castelletto sbf memorizzato in anagrafica banca *Conto corrente* e il residuo disponibile sulla base dell'importo degli effetti presentati ma non ancora accreditati.
+:::note[Note]
+The situation of the bank ceiling proposes the stored data of the sbf ceiling in the bank registry *Current account* and the available balance based on the amount of presented effects that have not yet been credited.
 
-Una serie di flag memorizza se la distinta è stata: 
-- stampata (questa condizione è obbligatoria per poter procedere alla sua contabilizzazione), 
-- se è stato **creato** un **File** telematico, 
-- se è stata **Contabilizzata** e 
-- se si tratta di una distinta **RID** relativa a **utenze** oppure LCR.
+A series of flags records whether the list has been: 
+- printed (this condition is mandatory to proceed with its posting), 
+- if a **File** has been **created**, 
+- if it has been **Posted** and 
+- if it is a **RID** list related to **utilities** or LCR.
 :::
 
-### La scheda **Pagamenti** 
+### The **Payments** tab 
 
-- è attiva **solo nel caso di** tipo distinta con flag ***Effetti a fornitore***
+- is active **only in the case of** list type with the ***Effects to Supplier*** flag
 
-- è dedicata all'individuazione delle partite fornitori da chiudere con il giro degli effetti presenti nella distinta stessa. 
+- is dedicated to identifying supplier items to be closed with the transfer of the effects present in the list itself. 
 
-Il totale della sezione **Pagamenti** dovrà essere uguale al totale degli effetti girati: per ottenere questa uguaglianza è consentito l'inserimento di una riga manuale di differenza, che sarà gestita come apertura partita in capo al fornitore se la causale contabile utilizzata prevede l'apertura partite stessa.
+The total of the **Payments** section must equal the total of the transferred effects: to achieve this equality, it is allowed to enter a manual difference line, which will be managed as opening an item to the supplier if the accounting reason used allows for the opening of such items.
 
-**Pulsanti specifici**:
+**Specific buttons**:
 
-*Nuovo pagamento*: Attiva il cursore in una nuova riga di pagamento.
+*New payment*: Activates the cursor in a new payment line.
 
-*Cancella pagamenti*: Cancella i pagamenti selezionati nella griglia.
+*Delete payments*: Deletes the selected payments in the grid.
 
-*Pagamenti da partite:* Apre la maschera di help partite, dalla quale selezionare le partite fornitore da chiudere.
+*Payments from items*: Opens the help mask for items, from which to select the supplier items to close.

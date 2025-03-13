@@ -1,67 +1,67 @@
 ---
-title: Generazione automatica CashFlow
+title: Cash Flow Automatic Generation
 sidebar_position: 4
 ---
 
-Normalmente la simulazione di cash flow viene creata attraverso questa maschera, che consente di definire i parametri di gestione per ogni tipo flusso. 
+Normally, the cash flow simulation is created through this screen, which allows defining management parameters for each type of flow. 
 
-Ogni nuova elaborazione andrà a salvare il calcolo associato al campo **Numero**, assegnato automaticamente. E' possibile inoltre associare una **Descrizione** di dettaglio.
+Each new processing will save the calculation associated with the **Number** field, which is assigned automatically. It is also possible to associate a detailed **Description**.
 
-*Campi specifici*
+*Specific fields (Campi specifici)*
 
-**Tipo / Descrizione flusso:** ripresi dalla tabella Tipi flusso
+**Type / Flow Description (Tipo / Descrizione flusso):** taken from the Types of Flow table
 
-**Da Data / A Data:** Range di date di filtro che agiscono secondo la logica specifica di ogni tipo flusso (vedere qui sotto)
+**From Date / To Date (Da Data / A Data):** Date range for filtering that works according to the specific logic of each type of flow (see below)
 
-**Abilitato:** flag che gestisce l'effettivo utilizzo del tipo flusso corrispondente nel calcolo che si sta per lanciare
+**Enabled (Abilitato):** flag that manages the actual use of the corresponding type of flow in the calculation that is about to be run
 
-**Registrazioni provvisorie:** considera o meno anche i dati collegati a registrazioni contabili in stato *Provvisorio*
+**Provisional records (Registrazioni provvisorie):** considers or not the data related to accounting records in *Provisional* status
 
-**Non pagabili:** considera i meno anche le partite aperte nello stato *Non pagabile*
+**Not payable (Non pagabili):** also considers open items in *Not payable* status
 
-**Usa q.ta residua:** permette di considerare gli ordini secondo la quantità residua da evadere
+**Use remaining qty (Usa q.ta residua):** allows considering the orders according to the remaining quantity to be fulfilled
 
-**Usa nella disp. attuale:** legge gli effetti in portafoglio PRESENTATI e non insoluti con scadenze superiori ad oggi e li espone alla data di oggi nel conto ORDINARIO presente nella distinta di presentazione (anche se contabilmente l’accredito sarà solo al dopo incasso)
+**Use in current availability (Usa nella disp. attuale):** reads the effects in the portfolio that are PRESENTED and not overdue with due dates later than today and displays them as of today in the CURRENT account present in the presentation list (even though the accounting credit will only be after collection)
 
-**Usa in scad. nel castelletto:** permette di considerare anche gli effetti presentati al salvo buon fine. In particolare usa il conto bancario di appoggio per il s.b.f. (salvo buon fine) inserito nella distinta di presentazione (anzichè il conto del cliente così come fa quando l'effetto è soltanto *Emesso*) e lo movimenta in dare in base a quanto presentato nelle varie date di scadenza degli effetti inseriti in distinta.
+**Use in due date in the report (Usa in scad. nel castelletto):** allows considering the effects presented with a good-end condition. In particular, it uses the supporting bank account for the good-end condition (s.b.f.) inserted in the presentation list (instead of the customer account as it does when the effect is only *Issued*) and moves it to debit based on what is presented on the various due dates of the effects included in the list.
 
-:::danger ATTENZIONE
-Gli effetti inseriti in distinta saranno visibili solo se hanno il flag **Contabilizzato** attivo al loro interno (inquanto è stata effettuata la contabilizzazione dell'emissione). Poichè è comunque possibile inserirli in distinta per la presentazione in banca anche se non stati contabilizzati si consiglia di fare attenzione.
+:::danger WARNING (ATTENZIONE)
+The effects inserted in the list will only be visible if they have the **Accounted** flag active internally (since the accounting of the issuance has been carried out). Since it is still possible to include them in the list for presentation to the bank even if not accounted for, caution is advised.
 
-Altra condizione importante è il filtro che esclude (indipendentemente dalla data di filtro impostata prima del lancio del calcolo) gli effetti con data scadenza precedente ad "oggi" ovvero la data di elaborazione del cashflow in questione
+Another important condition is the filter that excludes (regardless of the filtering date set before running the calculation) the effects with due dates earlier than "today" or the date of processing the cash flow in question.
 :::
 
-Se abilitato in relazione al tipo flusso **Anticipi**, va a rilevare gli importi delle distinte di anticipo fatture non contabilizzate per l'importo anticipato sul conto bancario, con data uguale alla data scadenza anticipata.
+If enabled in relation to the **Advance** flow type, it will detect the amounts of non-accounted advance invoice lists for the amount advanced on the bank account, with a date equal to the advanced due date.
 
-**ATTENZIONE:**
-Se viene scelta questa opzione NON devono essere inseriti anche i conti d'appoggio utilizzati per il s.b.f. nella consistenza finanziaria iniziale (tramite la gestione dei *tipi conto finanziario*,) altrimenti il dato (in termini di flusso di cassa positivo) verrà duplicato e dunque il risultato sarà falsato e non attendibile.
+**WARNING: (ATTENZIONE:)**
+If this option is selected, supporting accounts used for the good-end condition must NOT be included in the initial financial consistency (via the management of *financial account types*), otherwise the data (in terms of positive cash flow) will be duplicated, thus the result will be distorted and unreliable.
 
 
-*Dettaglio delle logiche applicate ai tipi flusso*:
+*Detail of the logics applied to flow types (Dettaglio delle logiche applicate ai tipi flusso)*:
 
-**Saldo contabile**: il range di date viene utilizzato per calcolare il saldo contabile secondo la data registrazione contabile;
+**Accounting balance (Saldo contabile):** the date range is used to calculate the accounting balance according to the accounting registration date;
 
-**Partite**: il range di date viene utilizzato per filtrare sulle date scadenza delle partite. Sono presenti poi flag per considerare le partite collegate a registrazioni provvisorie così come le partite non pagabili;
+**Items (Partite):** the date range is used to filter by due dates of the items. There are then flags to consider items linked to provisional records as well as non-payable items;
 
-**Ordini clienti/fornitori**: il range di date filtra sulla data ordine. Sono considerati solo le tipologie con flag *cash flow* impostato, stampate e confermate. Si consiglia di impostare il flag *usa Qta residue* in modo da simulare un ordine secondo la quantità residua da consegnare/ricevere. Vengono calcolate le scadenze ipotetiche sulla base delle impostazioni di tipo/soluzione pagamento impostate in testata, prendendo come data di partenza la data di consegna della riga (se mancante la data consegna di testata dell'ordine) o la data odierna se questa è antecedente a oggi;
+**Customer/Supplier Orders (Ordini clienti/fornitori):** the date range filters by order date. Only types with the *cash flow* flag set, printed and confirmed, are considered. It is recommended to set the *use remaining qty* flag to simulate an order based on the remaining quantity to deliver/receive. Hypothetical due dates are calculated based on the type/payment solution settings set in the header, taking as the start date the delivery date of the line (if the delivery date of the order header is missing) or today's date if this is before today;
 
-**DDT di acquisto/vendita**: il range di date filtra sulla data DDT. Sono considerati solo le tipologie impostate di ‘cash flow', stampate o controllate, non già valorizzate in fattura. Vengono calcolate le scadenze ipotetiche sulla base delle impostazioni di tipo/soluzione pagamento impostate in testata, a partire dalla data DDT;
+**Purchase/Sale DDT (DDT di acquisto/vendita):** the date range filters by DDT date. Only types set for 'cash flow', printed or checked, not already valued in the invoice are considered. Hypothetical due dates are calculated based on the type/payment solution settings set in the header, starting from the DDT date;
 
-**Fatture di acquisto/vendita**: il range di date filtra sulla data scadenza in fattura. Sono considerati i documenti non proforma, stampate o controllate, non già contabilizzate;
+**Purchase/Sale Invoices (Fatture di acquisto/vendita):** the date range filters by invoice due date. Non-proforma documents that are printed or checked and not already accounted for are considered;
 
-**Ordini di conto lavoro**: il range di date filtra sulla data ordine, solo ordini stampati non evasi. Vengono create scadenze ipotetiche sulla base del residuo non rientrato e il costo della lavorazione;
+**Job Orders (Ordini di conto lavoro):** the date range filters by order date, considering only printed unstamped orders. Hypothetical due dates are created based on the unreturned balance and the cost of work performed;
 
-**Rientri di conto lavoro**: il range di date filtra sulla data rientro, solo rientri stampati non fatturati.
+**Job Return (Rientri di conto lavoro):** the date range filters by return date, considering only printed un-invoiced returns.
 
-I rientri devono essere generati evadendo l'ordine di conto lavoro e non inseriti manualmente altrimenti non saranno visibili;
+Returns must be generated by fulfilling the job order and not inserted manually; otherwise, they will not be visible.
 
-**Extracontabile**: il range di date filtra sulla data scadenza extracontabile.
+**Extracontable (Extracontabile):** the date range filters by extracontable due date.
 
-I parametri di esecuzione sono memorizzati: solo la data finale del tipo flusso saldo contabile viene sempre riproposto come data odierna all'apertura. Una volta impostata la descrizione del cash flow sarà possibile premere il pulsante di calcolo. In considerazione dei movimenti degli ordini, per i quali il sistema deve fare una simulazione riga ordine per riga ordine, l'elaborazione può essere particolarmente lunga a seconda della numerosità dei dati presenti nel filtro impostato. Una volta completata l'elaborazione sarà possibile aprire il cash flow attraverso il pulsante di gestione relativo.
+The execution parameters are stored: only the final date of the accounting balance flow type is always proposed as today's date upon opening. Once the cash flow description is set, the calculation button can be pressed. Considering the movements of orders, for which the system must simulate line by line, the processing may be particularly long depending on the amount of data present in the set filter. Once the processing is complete, it will be possible to open the cash flow through the related management button.
 
-**Portafoglio attivo**: ATTENZIONE: in merito al flusso delle distinte SBF bisogna fare attenzione agli effetti presentati ma non contabilizzati (contabilizzazione dell'emissione), la situazione può generarsi ad esempio emettendoli dalle scadenze fatture e poi inserendoli in distinta senza contabilizzare l'emissione. In tale situazione gli effetti non saranno inseriti nel cashflow. Altra condizione di cui tenere conto è il fatto che indipendentemente dal filtro, la data scadenza effetto deve essere maggiore o uguale a "oggi" (data elaborazione cashflow)
+**Active Portfolio (Portafoglio attivo):** WARNING: regarding the flow of SBF lists, care must be taken with effects presented but not accounted for (accounting of issuance); the situation can arise, for example, by issuing them from invoice due dates and then including them in the list without accounting for the issuance. In this situation, the effects will not be included in the cash flow. Another condition to consider is that regardless of the filter, the effect due date must be greater than or equal to "today" (cash flow processing date).
 
-| Funzione | Significato |
+| Function (Funzione) | Meaning (Significato) |
 | --- | --- |
-| Creazione | Esegue la procedura di generazione del cash flow secondo le impostazioni inserite nella maschera. |
-| Modifica | Apre in modifica il cash flow creato. |
+| Creation (Creazione) | Executes the cash flow generation procedure according to the settings entered in the screen. |
+| Modification (Modifica) | Opens the created cash flow for modification. |

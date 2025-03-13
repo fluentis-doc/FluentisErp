@@ -1,24 +1,23 @@
 ---
-title: Stampa Situazione portafoglio effetti
+title: Report - Bills Portfolio situation
 sidebar_position: 2
 ---
 
-Da questa form è possibile stampare, secondo i filtri di ricerca impostati:
+From this form, it is possible to print, according to the set search filters:
 
-- **Avviso scadenza effetti**: Lettera indirizzata al cliente che evidenzia gli effetti in scadenza con relativi riferimenti
-- **Lettera di cumulo**:  Lettera indirizzata al cliente che evidenzia le partite o fatture acquisite in ogni singolo effetto 
-- **Portafoglio effetti:** Stampa una lista di effetti con evidenza dei dati principali relativi
-- **Situazione castelletti:** Stampa per ogni banca la situazione del castelletto concesso, utilizzato e residuo
+- **Alert bills to pay**: Letter addressed to the customer highlighting the effects that are about to expire with related references.
+- **Grouped Bills**: Letter addressed to the customer that highlights the items or invoices collected in each individual effect.
+- **Portfolio of Effects (Portafoglio effetti):** Prints a list of effects with emphasis on the main related data.
+- **Situation of Bank Accounts (Situazione castelletti):** Prints for each bank the situation of the granted, used, and remaining account balance.
 
+## Search Filters (Filtri di ricerca)
 
-## Filtri di ricerca
+These are the same filters present in the [**Effects**](/docs/treasury/bills-holding/bills) search form
 
-Sono i medesimi filtri presenti nella form di ricerca [**Effetti**](/docs/treasury/bills-holding/bills)
+and are supplemented by:
 
-ai quali si aggiungono:
+- **Bank (code) / Bank Description / ABI Code / CAB Code (Banca (codice) / Descrizione Banca / Codice ABI / Codice CAB):** fields referred to the *Bank Support* section present within the effect (bank of the debtor).
 
-- **Banca (codice) / Descrizione Banca / Codice ABI / Codice CAB:** campi riferito alla sezione *Appoggio bancario* presente all'interno dell'effetto (banca d'appoggio del debitore)
-
-- **Banca presentazione:** campo riferito alla sezione *Estremi presentazione*, campo *Banca presentazione*, presente all'interno dell'effetto
-- **Tipo distinta:** campo riferito all'omonimo campo *Tipo* presente nella testata della distinta di presentazione in cui è inserito l'effetto 
-- **DA / A / data / Numero Distinta**: riferiti alla distinta di presentazione in cui è inserito l'effetto
+- **Presentation Bank (Banca presentazione):** field referred to the *Presentation Details* section, *Presentation Bank* field, present within the effect.
+- **Type of Report (Tipo distinta):** field referred to the homonymous *Type* field present in the header of the presentation report in which the effect is included.
+- **FROM / TO / date / Report Number (DA / A / data / Numero Distinta):** related to the presentation report in which the effect is included.
