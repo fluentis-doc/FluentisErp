@@ -17,8 +17,6 @@ Within the table, normally filled out for the configuration of the Fluentis Busi
 
 - **San Marino Token** to enter the credential for connecting with the San Marino tax office (instead of the Italian ES).
 
-![](/img/it-it/finance-area/ES-documents/sanmarino/ESconfig.png)
-
 :::tip INFO
 Although the fields in the table related to the connection with Fluentis Business Hub and the Italian ES are mandatory (such as username and password), for San Marino the call will be made directly to the web service of the San Marino financial administration. Therefore, it may be necessary to enter "dummy" Fluentis Business Hub credentials in order to save the form content and populate the fields actually needed for the connection, such as the Token for the San Marino web service.
 :::
