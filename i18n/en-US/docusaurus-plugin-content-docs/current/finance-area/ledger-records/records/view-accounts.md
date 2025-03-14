@@ -3,11 +3,11 @@ title: Accounts Visualization
 sidebar_position: 2
 ---
 
-The form allows you to view the accounting movements of any account or subaccount, of any type (asset, liability, costs, revenues, or registry): all movements from all accounting periods are always online, but clearly they may be modified or not depending on the closure of the period following mandatory tax prints executed definitively or for account closing operations.
+The form allows you to view the accounting movements of any account or detail account, of any type (asset, liability, costs, revenues, or registry): all movements from all accounting periods are always online, but clearly they may be modified or not depending on the closure of the period following mandatory tax prints executed definitively or for account closing operations.
 
 ## Header:
 
-At the top, it is mandatory to enter an account code or directly a detailed subaccount: the subsequent filter fields are optional.
+At the top, it is mandatory to enter an account code or directly a detailed detail account: the subsequent filter fields are optional.
 
 ![](/img/it-it/finance-area/ledger-records/records/view-accounts/image01.png)
 
@@ -56,7 +56,7 @@ The *Current Balance* is represented in both sections to highlight analytically 
 :::
 
 
-In the grid, two series of displayed subaccounts are visible, the header subaccount (which is taken from the subaccount holder of the record from which the movement itself is taken) and the detailed subaccount which is indeed the subaccount for which the movements are being searched. For example, if viewing the movements of a generic cost account, we will have in the header subaccount the codes of the suppliers who have sent us invoices recorded to that cost account and in the detailed subaccount the specific individual cost subaccounts recorded.
+In the grid, two series of displayed detail accounts are visible, the header detail account (which is taken from the detail account holder of the record from which the movement itself is taken) and the detailed detail account which is indeed the detail account for which the movements are being searched. For example, if viewing the movements of a generic cost account, we will have in the header detail account the codes of the suppliers who have sent us invoices recorded to that cost account and in the detailed detail account the specific individual cost detail accounts recorded.
 
 ![](/img/it-it/finance-area/ledger-records/records/view-accounts/image02.png)
 
@@ -78,7 +78,7 @@ Additional operations that can be performed regarding the results grid:
 
 FILTER AREA: the filter area is dedicated to hosting the list of possible data types that allow for selection. The filters are typically always in 'AND' condition, and multiple filtering criteria can be specified simultaneously.
 
-RESULT GRID: the result grid represents the list of records that correspond to the above-specified filter data. After specifying the values through which you want to search for records, if you press the [Search (Ricerca)] button present in the relevant Ribbon, you will get the desired list of records in the result grid.
+RESULT GRID: the result grid represents the list of records that correspond to the above-specified filter data. After specifying the values through which you want to search for records, if you press the [Search] button present in the relevant Ribbon, you will get the desired list of records in the result grid.
 
 :::important See Also
 [**VIDEO TUTORIALS ON ACCOUNTING ENTRIES**](/docs/video/finance/intro)

@@ -1,5 +1,5 @@
 ---
-title: Previous (Precedenti)
+title: Previous 
 sidebar_position: 2
 ---
 
@@ -13,8 +13,8 @@ RIBBON BAR: represents the menu of the form in question, i.e., the area where ac
 
 
 
-| Function (Funzione) | Meaning (Significato) |
+| Function | Extended Description |
 | --- | --- |
-| Search (Ricerca) | This button performs a search of the executed accounting entries. |
-| Operation Rollback (Rollback operazione) | Restores all records linked to the selected operation. |
-| Record Rollback (Rollback registrazione) | Restores the individual record selected in the lower grid. |
+| Search | This button performs a search of the executed accounting entries. |
+| Operation Rollback | Restores all records linked to the selected operation. |
+| Record Rollback | Restores the individual record selected in the lower grid. |

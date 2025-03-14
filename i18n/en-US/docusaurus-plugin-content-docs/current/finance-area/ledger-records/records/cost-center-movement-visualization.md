@@ -3,7 +3,7 @@ title: Cost Center Movement visualization
 sidebar_position: 11
 ---
 
-This screen allows you to view, for each selected sub-account (mainly economic type), the related movements of the connected business centers.
+This screen allows you to view, for each selected detail account (mainly economic type), the related movements of the connected business centers.
 
 ![](/img/it-it/finance-area/ledger-records/records/cost-center-movement-visualization/image01.png)
 
@@ -17,8 +17,8 @@ The first two refer to the totals for the selected rows only (one or more throug
 
 **Ribbon bar:**
 
-| Function (Funzione) | Meaning (Significato) |
+| Function | Extended Description |
 | --- | --- |
-| Search (Ricerca) | Starts the search for results according to the data entered in the filter area. |
-| Edit (Modifica) | Directly enters editing of the accounting record that originated the movement of the selected business center. |
-| View (Visualizza) | Directly enters viewing of the accounting record that originated the movement of the selected business center. Changes will not be saved. |
+| Search | Starts the search for results according to the data entered in the filter area. |
+| Edit | Directly enters editing of the accounting record that originated the movement of the selected business center. |
+| View | Directly enters viewing of the accounting record that originated the movement of the selected business center. Changes will not be saved. |

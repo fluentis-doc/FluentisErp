@@ -1,5 +1,5 @@
 ---
-title: Search adjustment
+title: Search Adjustment
 sidebar_position: 1
 ---
 

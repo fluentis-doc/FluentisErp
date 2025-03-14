@@ -1,11 +1,11 @@
 ---
-title: Bridged recording management
+title: Bridged Recording Management
 sidebar_position: 1
 ---
 
 With this procedure, it is possible to modify the provisional records present in the general ledger to assign the definitive status without having to manually enter each one to change its status.
 
-## Records (Registrazioni)
+## Records 
 
 By performing the search according to the data set in the filter fields, the accounting entries in Provisional status will be displayed.
 
@@ -21,6 +21,6 @@ The management of the VAT protocol will occur consistently with the settings of 
 
 The registration number will also follow the consistency parameters and recovery of numbers based on the date.
 
-## Previous (Precedenti)
+## Previous 
 
 As usual, it is possible to restore the single record contained in the modification operation or the entire operation performed by the user on a specific date.

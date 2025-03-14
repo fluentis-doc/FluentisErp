@@ -1,5 +1,5 @@
 ---
-title: New Automatic Closing (Nuova chiusura automatica)
+title: New Automatic Closing 
 sidebar_position: 2
 ---
 
@@ -13,15 +13,15 @@ Once the new closing is initiated, upon opening the form, the closing date (curr
 
 It is necessary to enter a description and **fill in the mandatory fields present in the Parameters Tab before proceeding to Save the closing**.
 
-Saving is necessary to enable the commands present in the ribbon bar for processing the calculation, **Retrieve detail accounts values**, and accounting, **Create registration for account closing (Crea registrazione per la chiusura dei conti)**.
+Saving is necessary to enable the commands present in the ribbon bar for processing the calculation, **Retrieve detail accounts values**, and accounting, **Create registration for account closing**.
 
 ### Parameters
 
 In the ‘parameters’ tab, it is necessary to enter: 
 
-- data to filter the accounting movements that will be subject to account closures; the **recording and competency dates (date registrazione e competenza)** identify which entries to report in the accounting balance: in particular, the competency dates will be related to the financial period (1/1/….-31/12/….), while the ‘to recording date’ field may be shifted into the following fiscal year to include corrective entries: **it is recommended to simply not set the filter for recording dates**.
+- data to filter the accounting movements that will be subject to account closures; the **recording and competency dates** identify which entries to report in the accounting balance: in particular, the competency dates will be related to the financial period (1/1/….-31/12/….), while the ‘to recording date’ field may be shifted into the following fiscal year to include corrective entries: **it is recommended to simply not set the filter for recording dates**.
 
-- the sub-account codes, reason to be used, and recording and competency dates of the closing journal entries; this data (except for recording dates) is automatically populated if entered within the **[accounting parameters](/docs/configurations/parameters/finance/accounting-parameters)** (tab ‘Accounts’);
+- the detail account codes, reason to be used, and recording and competency dates of the closing journal entries; this data (except for recording dates) is automatically populated if entered within the **[accounting parameters](/docs/configurations/parameters/finance/accounting-parameters)** (tab ‘Accounts’);
 
 - (optional) the choice to also simultaneously manage the reopening of accounts rather than handling it separately with **[the appropriate command](/docs/finance-area/ledger-records/records/automatic-accounts-opening/new)**. 
 
@@ -29,13 +29,13 @@ In the ‘parameters’ tab, it is necessary to enter:
 
 **Accounting year**: calls up the corresponding year from the **[accounting parameters](/docs/configurations/parameters/finance/accounting-parameters)**, used for managing the reopening of adjustment entries, to be activated at the base of the mask with the flag **Giro account-adjustment records**: this involves managing, following the reopening of accounts, the movements of reallocation of accrued expenses and deferred income (provided these have already been processed with the **[Adjustment Entries](/docs/finance-area/ledger-records/records/adjustment-record/adjustment-creation)** procedure) to the relevant costs/incomes (the accruals will be recorded on the same date as the account reopening, while the deferrals will be recorded on the date of the original document registration).
 
-Flag **Manage Balance** (closing and reopening) **by currency of movement**: if activated, the program inserts a row for each currency of movement of the specific sub-account, clearly maintaining the total in the company currency correct. This possibility is necessary to ensure the accuracy of the opening balances in the ‘Account statement in currency’ printout.
+Flag **Manage Balance** (closing and reopening) **by currency of movement**: if activated, the program inserts a row for each currency of movement of the specific detail account, clearly maintaining the total in the company currency correct. This possibility is necessary to ensure the accuracy of the opening balances in the ‘Account statement in currency’ printout.
 
 **CAUTION:** Before starting the calculation, it is advisable to verify the settings of the **[Account Types](/docs/configurations/tables/finance/account-types)** table:
 
 in particular, the account types of customer-supplier-agent-bank registries must have a flag on the respective columns and must have a second one in one of the first two columns, related to asset and liability.
 
-It is then possible to start the **Retrieve detail accounts values** with the respective button, allowing the program to calculate the balance of each sub-account and present the related data in the Profit and Loss and Balance Sheet tabs. Once confident in the results, it is possible to proceed to the last phase of the procedure: returning to the parameters tab, we can click the button **Create Record for Accounts Closing**, which will create the relevant accounting entries and mark the **Accounted** flag.
+It is then possible to start the **Retrieve detail accounts values** with the respective button, allowing the program to calculate the balance of each detail account and present the related data in the Profit and Loss and Balance Sheet tabs. Once confident in the results, it is possible to proceed to the last phase of the procedure: returning to the parameters tab, we can click the button **Create Record for Accounts Closing**, which will create the relevant accounting entries and mark the **Accounted** flag.
 
 :::note
 If the flag **Giro account-adjustment records** has been activated, when the command **Retrieve detail accounts values** is launched, an additional tab **[Reopening Adjustment Entries](/docs/finance-area/ledger-records/records/automatic-account-closing/new-account-closing)** will become visible.
@@ -43,19 +43,19 @@ If the flag **Giro account-adjustment records** has been activated, when the com
 
 #### Specific Buttons  
 > **Save**: allows saving the header of the account closing, activatable after entering the description.  
-> **Retrieve detail accounts values**: allows the program to calculate the balance of each sub-account and present the related data in the ‘profit and loss’ and ‘balance sheet’ tabs.  
+> **Retrieve detail accounts values**: allows the program to calculate the balance of each detail account and present the related data in the ‘profit and loss’ and ‘balance sheet’ tabs.  
 > **Create Record for Accounts Closing**: allows creating the closing account registration.  
 > **Restore Accounting**: allows canceling and restoring the accounting of the account closing.  
 
 ### Profit and Loss
 
-In the Profit and Loss tab, the negative and positive income components will be summarized with an emphasis on the operating result and the ability to filter the accounts present in the sections Positive Income Components and Negative Income Components using the Cost Subaccount, Revenue Subaccount fields, and the search buttons located in the ribbon bar (see the table below).
+In the Profit and Loss tab, the negative and positive income components will be summarized with an emphasis on the operating result and the ability to filter the accounts present in the sections Positive Income Components and Negative Income Components using the Cost Detail Account, Revenue Detail Account fields, and the search buttons located in the ribbon bar (see the table below).
 
 ![](/img/it-it/finance-area/ledger-records/records/automatic-account-closing/new/profit-and-loss-tab/image01.png)
 
 #### Specific Buttons  
-> **Search Positive Income Components Subaccounts (Ricerca componenti positivi di reddito sottoconti)**: allows searching for the desired revenue accounts within the closing.  
-> **Search Negative Income Components Subaccounts (Ricerca componenti negativi di reddito sottoconti)**: allows searching for the desired cost accounts within the closing.  
+> **Search Positive Income Components Detail Accounts**: allows searching for the desired revenue accounts within the closing.  
+> **Search Negative Income Components Detail Accounts**: allows searching for the desired cost accounts within the closing.  
 
 ### Balance Sheet
 

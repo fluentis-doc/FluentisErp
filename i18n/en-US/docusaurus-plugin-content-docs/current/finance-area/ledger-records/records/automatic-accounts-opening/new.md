@@ -1,5 +1,5 @@
 ---
-title: New (Nuova)
+title: New
 sidebar_position: 2
 ---
 
@@ -19,9 +19,9 @@ With this procedure, only the opening accounting balances are recorded, not the 
 
 
 
-**Opening Date (Data apertura)**: is the **processing date (data dell'elaborazione)**, it has no connection with the date of recording the operation to be indicated in the specific field at the bottom of the window;
+**Open Date**: is the **processing date**, it has no connection with the date of recording the operation to be indicated in the specific field at the bottom of the window;
 
-**Opening Number (Numero apertura)**: is a sequential number managed automatically;
+**Opening Number**: is a sequential number managed automatically;
 
 **Description**: allows the user to identify the operation, as well as the notes;
 
@@ -31,9 +31,9 @@ With this procedure, only the opening accounting balances are recorded, not the 
 
 **Number**: will be assigned once the accounting is performed;
 
-**Account Opening Reason (Causale di apertura conti)** and **Movement due date**: to be assigned for the journal.
+**Opening account template** and **Movement due date**: to be assigned for the journal.
 
-Once these mandatory data are set, it will be possible to save the settings and activate the entire list of accounting subaccounts: the next phase will thus be to perform the memorization of each subaccount's opening debit or credit balance, with the potential opening amount in currency.
+Once these mandatory data are set, it will be possible to save the settings and activate the entire list of accounting detail acounts: the next phase will thus be to perform the memorization of each detail acount's opening debit or credit balance, with the potential opening amount in currency.
 
 ![](/img/it-it/finance-area/ledger-records/records/automatic-accounts-opening/new/image01.png)
 
@@ -57,10 +57,10 @@ In the event that modifications are made to the details of the account opening A
 
 
 
-| Function (Funzione) | Meaning (Significato) |
+| Function | Extended Description |
 | --- | --- |
-| Save (Salva) | Button to save the header of the account opening, activatable after entering the description and the accounting reason. |
-| Search (Cerca) | Button to search for the list of accounts intended to be included in the opening, using the subaccount and account type fields. |
-| Create Opening Entry (Crea registrazione apertura) | Button to create the opening accounts entry. |
-| Opens the Registration for Account Opening (Apre la registrazione per l'apertura conti) | Button that opens the account opening registration. |
-| Delete Detail (Elimina dettaglio) | Deletes the contents of the fields related to the selected line. WARNING: lines regarding the contents of the fields related to the account cannot be deleted, if left blank they will not be included in the opening accounting entry. |
+| Save | Button to save the header of the account opening, activatable after entering the description and the accounting reason. |
+| Search | Button to search for the list of accounts intended to be included in the opening, using the detail acount and account type fields. |
+| Create Opening Entry | Button to create the opening accounts entry. |
+| Opens the Registration for Account Opening | Button that opens the account opening registration. |
+| Delete Detail | Deletes the contents of the fields related to the selected line. WARNING: lines regarding the contents of the fields related to the account cannot be deleted, if left blank they will not be included in the opening accounting entry. |

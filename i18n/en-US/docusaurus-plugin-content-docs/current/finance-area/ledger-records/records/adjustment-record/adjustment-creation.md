@@ -1,9 +1,9 @@
 ---
-title: Adjustment creation
+title: Adjustment Creation
 sidebar_position: 2
 ---
 
-With this procedure, you can calculate and account for the **accruals and deferrals** related to the accounting records present in the database:
+With this procedure, you can calculate and account for the **accruals and deferrals** related to the ledger records present in the database:
 
 These include, for example, adjustments/additions (respectively, deferrals and accruals) related to insurance, rent, lease payments, or assistance, which are characterized by being related to a period straddling the year. Therefore, according to the accounting principle of economic competence, they are subject to adjustments.
 
@@ -13,12 +13,12 @@ These include, for example, adjustments/additions (respectively, deferrals and a
 
 ![](/img/it-it/finance-area/ledger-records/records/adjustment-record/new/adjustment-creation/image01.png) 
 
-The calculation is performed (as with interim financial statements) ONLY for the sub-accounts for which these particular account types have been assigned in the chart of accounts.
+The calculation is performed (as with interim financial statements) ONLY for the detail accounts for which these particular account types have been assigned in the chart of accounts.
 
-2) Standard sub-accounts for recording accrual/deferral movements must be defined in the **[Accounting Parameters](/docs/configurations/parameters/finance/accounting-parameters)**.
+2) Standard detail accounts for recording accrual/deferral movements must be defined in the **[Accounting Parameters](/docs/configurations/parameters/finance/accounting-parameters)**.
 
 :::note
-It is noted that at the chart of accounts level, specific accrual/deferral sub-accounts can be specified for each cost/revenue sub-account, which will be used primarily for the recording of adjustments or integrations.
+It is noted that at the chart of accounts level, specific accrual/deferral detail accounts can be specified for each cost/revenue detail account, which will be used primarily for the recording of adjustments or integrations.
 :::
 
 ![](/img/it-it/finance-area/ledger-records/records/adjustment-record/new/adjustment-creation/image02.png)
@@ -35,9 +35,9 @@ It is recommended to set the **[Entry Parameters](/docs/finance-area/ledger-reco
 
 - Indicate for which accounting year you want to proceed with the calculation and the calculation date (the current date is suggested by default);
 
-- Indicate the registration/competence date to be assigned to the accounting records to be created;
+- Indicate the registration/competence date to be assigned to the ledger records to be created;
 
-- Indicate the accounting reasons to be used for the adjustment and integration.
+- Indicate the ledger templates to be used for the adjustment and integration.
 
 The single record option will either summarize all adjustments into a single record or keep all integrations separate.
 
@@ -45,11 +45,11 @@ The single record option will either summarize all adjustments into a single rec
 
 Once these settings are saved, the **Calculate** button will be activated.
 
-This will populate the section below with the list of proposed adjustments: within these, the type of operation, references to the original record, the number of days of the adjustment will be indicated, and then the amount and the sub-account for recording will be editable.
+This will populate the section below with the list of proposed adjustments: within these, the type of operation, references to the original record, the number of days of the adjustment will be indicated, and then the amount and the detail account for recording will be editable.
 
-If the set reasons involve the management of CDC/CDP and the original movement has the corresponding data to be adjusted/integrated, the details of the related calculations will also be present in the section below.
+If the set reasons involve the management of CC/CP and the original movement has the corresponding data to be adjusted/integrated, the details of the related calculations will also be present in the section below.
 
-The next phase will be to confirm, line by line, that the calculated amount is correct and complete by checking the **Checked** flag, which will also activate the editability and the related control flags in the corresponding section for the CDC/CDP.
+The next phase will be to confirm, line by line, that the calculated amount is correct and complete by checking the **Checked** flag, which will also activate the editability and the related control flags in the corresponding section for the CC/CP.
 
 ![](/img/it-it/finance-area/ledger-records/records/adjustment-record/new/management-tab/image04.png)
 
@@ -61,7 +61,7 @@ The user can create multiple postings as details are defined, as well as recalcu
 All lines with the **Checked** flag activated will be posted.
 :::
 
-In the event that changes have been made to the accounting records after the adjustment calculation has been launched, it may be useful to use the **Check Adjustment Calculation** button:  
+In the event that changes have been made to the ledger records after the adjustment calculation has been launched, it may be useful to use the **Check Adjustment Calculation** button:  
 this button will recalculate line by line, showing any differences compared to what has already been proposed in the grid (specifically in the **Adjustment Debit / Credit** and **New Adjustment Debit / Credit** fields), with a button to align the differences or not, which will also delete adjustment/integration lines related to accounting movements that no longer exist (It will not be possible to book if lines with references to non-existent movements are present, and in this case, it will be necessary to go through this interface and delete them).
 
 :::danger Attention
@@ -134,7 +134,7 @@ Line 4 is the integration for case 4, where the cost recorded in year Y is only 
 
 ![](/img/it-it/finance-area/ledger-records/records/adjustment-record/new/management-tab/image18.png)
 
-Instead of the default sub-accounts, custom sub-accounts taken from the cost line or supplier are used.
+Instead of the default detail accounts, custom detail accounts taken from the cost line or supplier are used.
 
 ## Restoration
 
@@ -142,4 +142,4 @@ There is a final ‘**Restore**' tab to preview the entries made and to cancel t
 
 ![](/img/it-it/finance-area/ledger-records/records/adjustment-record/new/restore-tab/image01.png)
 
-You can use the filter fields for account / sub-account and the adjacent flags to select only integration entries or only adjustment entries before proceeding with the restoration.
+You can use the filter fields for account / detail account and the adjacent flags to select only integration entries or only adjustment entries before proceeding with the restoration.

@@ -1,9 +1,9 @@
 ---
-title: Rearrange VAT reference no.
+title: Rearrange VAT Reference no.
 sidebar_position: 10
 ---
 
-The functionality managed through this form allows for bulk modification of the VAT protocols assigned to accounting records (of VAT type, for example for received or issued invoices) in order to correct any errors or for specific needs.
+The functionality managed through this form allows for bulk modification of the VAT protocols assigned to ledger records (of VAT type, for example for received or issued invoices) in order to correct any errors or for specific needs.
 
 Initially, the data search possible with this form can also be useful for control purposes, for example checking for missing protocol numbers or discrepancies (regarding for instance sales invoices) between the protocol number and the document number, which obviously represent irregularities from a fiscal point of view.
 
@@ -24,9 +24,9 @@ Example:
 
 - with the flag activated, sorting by document number will yield 1, 2, 3, ... 10 ... 20 ... 100 ... 200
 
-By selecting a row from the results grid (Accounting records), the related details regarding the VAT register and the journal will be displayed in the two **additional grids below** (this data clearly constitutes the details of the accounting record entered by the user or by the automatic invoice accounting procedure).
+By selecting a row from the results grid (ledger records), the related details regarding the VAT register and the journal will be displayed in the two **additional grids below** (this data clearly constitutes the details of the ledger record entered by the user or by the automatic invoice accounting procedure).
 
-**POSSIBLE RENUMBERING / REORDERING MODES (POSSIBILI MODALITA' DI RINUMERAZIONE / RIORDINO)**:
+**POSSIBLE RENUMBERING / REORDERING MODES**:
 
 - Partial: for example, suppose you need to "shift" all records starting from number 3 forward by one protocol number (in order to create a "gap" in the numbering to insert perhaps a missing entry).
 
@@ -64,4 +64,4 @@ Document Date / Number: the protocol number will be assigned in relation to the 
 
 Type / Date / Document Number: the protocol number will be assigned in relation to the document type (e.g., invoices, then credit notes), for the same document type, based on the progression of the registration date, and for the same registration date as the document number.
 
-The flag **Rewrite descriptions**, if active, during the renumbering phase will update the description of the movement wherever, based on the settings defined in the **[accounting reason (causale contabile)](/docs/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates)**, automatic reading of the VAT protocol is expected.
+The flag **Rewrite descriptions**, if active, during the renumbering phase will update the description of the movement wherever, based on the settings defined in the **[ledger template](/docs/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates)**, automatic reading of the VAT protocol is expected.
