@@ -26,4 +26,4 @@ It is possible to modify the priorities using the buttons:
 
 > **Move Up** and **Move Down**
 
-**Default values (Valori di default)**: the CDC or CDP is retrieved from the invoiced type if present. For further details, refer to the table [Invoiced Type Purchases (Tipo Fatturato Acquisti)](/docs/configurations/tables/purchase/purchase-invoices-type). If it is not present in the invoiced type, the system will look for it in the *Supplier Registry (Anagrafica fornitore)*. If not present, it will be searched in the *Item registry*.
+**Default values**: the CDC or CDP is retrieved from the invoiced type if present. For further details, refer to the table [Purchase turnover type](/docs/configurations/tables/purchase/purchase-invoices-type). If it is not present in the invoiced type, the system will look for it in the *Supplier Registry*. If not present, it will be searched in the *Item registry*.

@@ -3,7 +3,7 @@ title: Complaints and Non-compliance parameters
 sidebar_position: 2
 ---
 
-The parameters can be found at **Parameters > Quality > Complaints and Non-compliance parameters (Parametri > Qualità > Parametri reclami e non conformità)**.   
+The parameters can be found at **Parameters > Quality > Complaints and Non-compliance parameters**.   
 
 The data present in this management is used to provide information in the management of:   
 - **Claims**;   
@@ -14,12 +14,12 @@ The data present in this management is used to provide information in the manage
 
 **Save**: allows you to save the modified information.  
 
-## Complaints and Non-compliance parameters (Parametri reclami e non conformità)      
+## Complaints and Non-compliance parameters   
 
 - **Year**: it is the *Year* of reference for the *Complaints and Non-compliance parameters*.   
 - **Notes**: free annotations.   
 
-### Complaints (Reclami)      
+### Complaints
 
 In this section, you can enter data to propose in the *Claim*.    
 
@@ -31,14 +31,14 @@ In the section, you can enter:
 - **Total automatic recalculation**: indicates whether to automatically recalculate the totals of the *Claim* based on the defects entered; otherwise, the values must be entered manually.   
 - **U.D.C. data grouping**: indicates whether to automatically report, among the *Defective objects* of a *Claim*, all the items contained in a U.D.C. when entering a defective item that is contained in the specified U.D.C.   
 
-**Return Authorization Section (Sezione Autorizzazione al rientro)**   
+**Return Authorization Section**   
 >- **Return authorization**: indicates whether the *Return authorization* should be managed in the *Claim* management.   
->- **Document header phrase (Frase di testa del documento)**: free annotations on the subject, proposed in the *Return authorization* print.   
->- **Document body phrase (Frase di corpo del documento)**: free annotations on the subject, proposed in the *Return authorization* print.   
+>- **Document header phrase**: free annotations on the subject, proposed in the *Return authorization* print.   
+>- **Document body phrase**: free annotations on the subject, proposed in the *Return authorization* print.   
 >- **Notes on accreditation**: free annotations on the subject, proposed in the *Return authorization* print.   
 >- **Return instructions**: free annotations on the subject, proposed in the *Return authorization* print.   
 
-### Non-Conformities (Non conformità)      
+### Non-Conformities  
 
 In this expander, you can enter data to propose in the *Non-compliance*.   
 In the expander, you can enter:   
