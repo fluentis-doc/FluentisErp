@@ -3,61 +3,196 @@ title: Nuova Registrazione contabile
 sidebar_position: 1
 ---
 
+La Registrazione contabile, e conseguentemente la form per il suo inserimento, è composta dai seguenti elementi:
 
-## **1. Dati obbligatori**
+- La **Testata** ("*Header*" che corrisponde alla zona più in alto nella form) la quale contiene elementi univoci per la registrazione quali:
+    > La data
 
-**Data di registrazione**: in una nuova registrazione questa viene impostata come data odierna di sistema, ma può essere spostata in avanti o indietro nel tempo fatti salvi l'ordinamento cronologico dei protocolli IVA e gli eventuali periodi stampati in definitivo e la presenza dei parametri. L'importanza di questa data è fondamentale in quanto non esiste la necessità di procedere ad un ‘Cambio esercizio': a partire dalla data di registrazione l'applicativo andrà a ricercare l'anno dei parametri di contabilità di riferimento (individuando all'interno di quale range di date esercizio si trovi) e da questo andrà a riprendere gli altri range di date di controllo (date competenza in linea e date periodo in linea). Questa data è quella base della stampa del libro giornale e degli estratti conto contabili. In caso sia premuto il pulsante di creazione di una ‘Nuova registrazione' da quella in gestione è possibile impostare i **parametri di inserimento**  (nella ribbon bar) in modo che questo campo sia proposto anche in quella nuova;
+    > Il numero
 
-**Data competenza**: è la data di riferimento per il bilancio di esercizio: normalmente è sempre uguale alla data registrazione, salvo che per le scritture di assestamento di bilancio e le relative chiusure/aperture conti, che possono essere datate anche giugno come data registrazione ma saranno come 31/12 – 01/01 come data competenza. Attenzione: questa data NON può essere utilizzata per rilevare le fatture da ricevere di fine anno. Si consiglia di lasciarla sempre uguale alla data registrazione: in contabilità ci sono stampe che lavorano per data registrazione, altre per data competenza, altre che danno libertà all'utente di filtrare per entrambe, chiaramente si otterrebbero risultati differenti a seconda dei filtri applicati. 
+    > Il totale
+
+    > Il registro iva e il numero di protocollo
+
+    > Altro
+    
+    > La **Causale contabile** che, in base alle relative impostazioni e parametri, attiva gli ulteriori elementi di cui sotto
+- Il **Piede** ("*Footer*") della form che contiene la descrizione generale della registrazione stessa, da riportare sul Libro giornale, oltre ad alcuni totali e il controllo di sbilancio tra sezioni Dare e Avere
+- Tab **Registrazione** che contiene le due sotto-sezioni ***IVA*** (dipende dalla causale) e ***Libro Giornale*** con i movimenti di contabilità
+- Tab **Partite**, se attivata, per l'apertura delle partite aperte che alimentano lo scadenzario
+- Tab **Pagamenti**, se attivata che gestisce la chiusura delle partite aperte
+- Tab **Analitica**, se attivata, che gestisce i movimenti dei centri aziendali (centri d costo / profitto)
+- Tab **Intrastat**, se attivata, che permette di compilare i dati per la successiva creazione automatica degli elenchi Intrastat
+- Tab **Cespiti**, se attivata, che permette di gestire acquisto o vendite cespiti
+- Tab **Provvigioni**,se attivata, che permette di gestire la creazione e memorizzazione delle Commissioni agenti
+- Tab **Progetti**, se attivata, che permette di movimentare i Progetti (commesse)
+- Tab Raggruppamenti partite, se attivata: una modalità particolare di gestione delle partite aperte.
+- Tab Parametri con ulteriori informazioni di dettaglio sulla registrazione
+
+## **1. Testata (Header)**
+
+**Data di registrazione**: in una nuova registrazione viene impostata come data odierna di sistema, può essere modificata in avanti o indietro nel tempo purchè sia rispettato l'ordinamento cronologico dei protocolli IVA e gli eventuali periodi già stampati in definitivo. 
+
+<details>
+
+  <summary>Ulteriori dettagli (Click to expand)</summary>
+  
+  L'importanza di questa data è fondamentale in quanto non esiste la necessità di procedere ad un Cambio esercizio: 
+
+a partire dalla data di registrazione l'applicativo ricerca  i parametri di contabilità per l'anno di riferimento (individuando all'interno di quale range di date esercizio si trovi) e da questo riprende gli altri range di date di controllo (date competenza in linea e date periodo in linea). 
+
+Questa data è quella base della stampa del libro giornale e degli estratti conto contabili. 
+
+In caso sia premuto il pulsante di creazione di una *Nuova registrazione* da dentro quella in gestione è possibile impostare, tramite i **parametri di inserimento**  (nella ribbon bar) che questo campo sia proposto anche in quella nuova;
+
+</details>
+
+
+**Data competenza**: è la data di riferimento per il bilancio di esercizio: **normalmente è sempre uguale alla data registrazione**. 
+Può essere utilizzata per le scritture di assestamento di bilancio e le relative scritture di chiusura/apertura conti, che possono essere impostate come data di registrazione nel periodi di approvazione e chiusura del bilancio (ad esempio aprile o giugno dell'ano successivo) ma saranno impostate con *data competenza* 31/12 – 01/01. 
+Questo anche al fine di permettere l'inserimento in un periodo probabilmente già stampato in definitivo nel Libro Giornale.
+
+:::important[Attenzione]
+questa data NON può essere utilizzata per rilevare le fatture da ricevere di fine anno. **Si consiglia di lasciarla sempre uguale alla data registrazione**: in contabilità ci sono stampe che lavorano per data registrazione, altre per data competenza, altre che danno libertà all'utente di filtrare per entrambe, chiaramente si otterrebbero risultati differenti a seconda dei filtri applicati. 
+:::
+
 
 Nei **parametri di inserimento** è possibile impostare che questa data sia allineata automaticamente rispetto alla data registrazione;
 
-**Numero di registrazione**: è un contatore giornaliero delle registrazioni; l'univocità della registrazione viene determinata sempre dalla combinazione ‘Data registrazione'+ ‘Numero registrazione'. La scelta di un contatore giornaliero è stata effettuata per dare massima libertà all'utente di registrare su più date. Questo numero di registrazione viene gestito automaticamente dalla procedura: in particolare, al momento del salvataggio viene attribuito il numero definitivo corretto, recuperando eventualmente un buco di numerazione alla data registrazione relativa. Cancellare una registrazione alla data X, infatti, lascerà un buco nella numerazione di questa data: solo intervenendo in inserimento/modifica di una delle registrazioni di questa data il numero sarà recuperato. In caso di registrazione provvisoria questo numero andrà in progressione negativa a partire dal numero -1000, in modo da rendere ben visibile all'utente che si tratta di una registrazione di questo stato: i report e le ricerche contabili sono impostate per filtrare di default solo sulle registrazioni definitive;
+**Numero di registrazione**: Viene attribuito in base ai settaggi della tabella [**Numerazione Registrazioni**](/docs/configurations/tables/finance/posting-ledger-numeration)
 
-**Sottoconto intestatario della registrazione**: questo campo è obbligatorio solo per registrazioni IVA, in quanto è legata all'anagrafica cliente/fornitore intestataria del documento registrato. Questo campo, normalmente, non va compilato in caso di registrazioni di pagamento/incasso, in quanto normalmente nella stessa registrazione si effettuano N pagamenti/incassi su soggetti differenti e viene utilizzato come filtro delle partite aperte il campo presente nella scheda ‘Pagamenti'. In caso sia premuto il pulsante di creazione di una ‘Nuova registrazione' da quella in gestione è possibile impostare i **parametri di inserimento** in modo che questo campo sia proposto anche in quella nuova. La causale contabile, infine, può prevedere un  **[controllo di coerenza](/docs/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates)** tra il tipo conto inserito in questo punto e quanto previsto in causale; 
+<details>
 
-**Causale**: questo campo è **obbligatorio**: ogni registrazione si basa infatti su una causale di riferimento che ne regola le caratteristiche e il funzionamento. Questo campo non è più modificabile una volta salvata la registrazione (chiaramente saranno bloccati altri campi nel caso in cui sia stato stampato in definitivo il registro IVA o il giornale o sia stata effettuata la chiusura automatica conti): nel caso in cui la causale sia errata bisogna necessariamente cancellare e reinserire la registrazione con il codice corretto. In caso sia premuto il pulsante di creazione di una ‘Nuova registrazione' da quella in gestione è possibile impostare i **parametri di inserimento** in modo che questo campo sia proposto anche in quella nuova;
+  <summary>Ulteriori dettagli (Click to expand)</summary>
+  
+  l'univocità della registrazione viene determinata sempre dalla combinazione *Data registrazione* + *Numero registrazione*. Il numero di registrazione viene gestito automaticamente dalla procedura in base ai settaggi del numeratore (contatore): in particolare, al momento del salvataggio viene attribuito il numero definitivo corretto, recuperando eventualmente un buco di numerazione alla data registrazione relativa. Cancellare una registrazione alla data X, infatti, lascerà un buco nella numerazione di questa data: solo intervenendo in inserimento/modifica di una delle registrazioni di questa data il numero sarà recuperato. In caso di registrazione provvisoria questo numero andrà in progressione negativa a partire dal numero -1000, in modo da rendere ben visibile all'utente che si tratta di una registrazione di questo stato: i report e le ricerche contabili sono impostate per filtrare di default solo sulle registrazioni definitive;
+
+</details>
+
+
+**Sottoconto intestatario della registrazione**: questo campo è **obbligatorio solo per registrazioni IVA,** in quanto è legato all'anagrafica cliente/fornitore intestataria del documento registrato. 
+
+<details>
+
+  <summary>Ulteriori dettagli (Click to expand)</summary>
+
+Questo campo, normalmente, non va compilato in caso di registrazioni di pagamento/incasso, in quanto normalmente nella stessa registrazione si effettuano vari pagamenti/incassi su soggetti differenti. In questa situazione viene utilizzato come filtro delle partite aperte il campo presente nella scheda *Pagamenti*. 
+
+In caso sia premuto il pulsante di creazione di una *Nuova registrazione* da quella in gestione è possibile impostare i **parametri di inserimento** in modo che questo campo sia proposto anche in quella nuova. La causale contabile, infine, può prevedere un  **[controllo di coerenza](/docs/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates)** tra il tipo conto inserito in questo punto e quanto previsto in causale; 
+
+</details>
+
+
+**Causale**: questo campo è **obbligatorio**: ogni registrazione si basa infatti su una causale di riferimento che ne regola le caratteristiche e il funzionamento. 
+
+Questo campo non è più modificabile una volta salvata la registrazione (chiaramente saranno bloccati altri campi nel caso in cui sia stato stampato in definitivo il registro IVA o il giornale o sia stata effettuata la chiusura automatica conti): nel caso in cui la causale sia errata bisogna necessariamente cancellare e reinserire la registrazione con il codice corretto. 
+
+In caso sia premuto il pulsante di creazione di una *Nuova registrazione* da quella in gestione è possibile impostare i **parametri di inserimento** in modo che questo campo sia proposto anche in quella nuova;
 
 **Registro IVA**: viene riportato dalla causale di contabilità selezionate non è modificabile manualmente: 
 
-**Protocollo IVA**: è un campo numerico che viene gestito automaticamente dalla procedura per ogni registro: all'apertura della maschera sarà proposto il max protocollo + 1 per il registro impostato, poi al salvataggio verrà confermato o meno a seconda del caso che siano stati effettuati altri salvataggi per quel registro o vi siano protocolli IVA da recuperare. 
+**Protocollo IVA**: è un campo numerico che viene gestito automaticamente dalla procedura per ogni registro: all'apertura della maschera sarà proposto il *max protocollo + 1* per il registro impostato, poi al salvataggio verrà confermato o meno a seconda del caso che siano stati effettuati altri salvataggi per quel registro o vi siano protocolli IVA da recuperare. 
+
+<details>
+
+  <summary>Ulteriori dettagli (Click to expand)</summary>
 
 Il recupero protocolli cambia a seconda che nella causale sia inserito o meno il blocco del salvataggio con numerazione non progressiva (trattasi di un controllo di coerenza tra data registrazione e numero di protocollo), con il blocco attivo sarà recuperato un protocollo libero solamente se la data registrazione è coerente, senza il blocco sarà proposto anche un protocollo non valido per quella data, con i relativi messaggi di avvertimento all'utente. 
 
 Il campo del protocollo viene disabilitato in caso di registrazione provvisoria;
 
-**Tipo documento**: viene proposto dalla procedura sulla base del valore impostato nelle causali di contabilità generale: è modificabile, ma si tratta di una modifica normalmente non necessaria (tipicamente serve specificare i documenti delle registrazioni IVA, esempio FV = Fatture di vendita o FA = Fatture di acquisto, mentre tutti gli altri movimenti avranno sempre un documento di tipo ‘generico');
+</details>
 
-**Data documento**: è un campo obbligatorio o meno a seconda delle  **[impostazioni delle causali di contabilità:](/docs/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates)** questa data non può essere superiore alla data di registrazione e deve essere all'interno del range di date di validità relativo al  **[periodo in linea per l'esercizio di riferimento](/docs/configurations/parameters/finance/accounting-parameters)** della registrazione. In caso sia premuto il pulsante di creazione di una ‘Nuova registrazione' da quella in gestione è possibile impostare i **parametri di inserimento** in modo che questo campo sia proposto anche in quella nuova;
+
+**Tipo documento**: viene proposto dalla procedura sulla base del valore impostato nelle causali di contabilità generale: è modificabile, ma si tratta di una modifica normalmente non necessaria (tipicamente serve specificare i documenti delle registrazioni IVA, esempio FV = Fatture di vendita o FA = Fatture di acquisto, mentre tutti gli altri movimenti avranno sempre un documento di tipo GEN = Generico);
+
+**Data documento**: è un campo obbligatorio o meno a seconda delle  **[impostazioni delle causali di contabilità:](/docs/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates)** questa data non può essere superiore alla data di registrazione e deve essere all'interno del range di date di validità relativo al  **[periodo in linea per l'esercizio di riferimento](/docs/configurations/parameters/finance/accounting-parameters)** della registrazione. In caso sia premuto il pulsante di creazione di una *Nuova registrazione* da quella in gestione è possibile impostare i **parametri di inserimento** in modo che questo campo sia proposto anche in quella nuova;
 
 <a id="campo_progetto" style={{ textDecoration: 'none' , color: 'inherit' , fontWeight: 'bold' }}></a> 
 
-**Numero documento**: è un campo alfanumerico di 20 caratteri: a seconda delle impostazioni della causale viene bloccato l'inserimento dello stesso numero/anno (preso dalla data documento) / tipo (campo tipo documento) per lo stesso codice inserito nel campo sottoconto della testata della registrazione (questo blocco è inserito di default su ogni causale contabile, ma può essere disabilitato). In caso che sia lo stesso numero/anno/sottoconto ma il tipo sia differente viene invece restituito un semplice messaggio di avvertimento all'utente. Allo stesso modo, il messaggio di avvertimento viene restituito anche se lo stesso riferimento è salvato in una registrazione provvisoria;
+**Numero documento**: Si inserisce in questo campo il numero della fattura per le scritture contabili IVA 
 
-**Campo Progetto** (ex commessa): è attivo solo se la causale di contabilità prevede la gestione progetti (ex flag 'Commessa'): questo progetto è quello di riferimento per tutta la registrazione, ma sarà possibile riattribuire i valori all'interno della scheda ‘**[Progetto](/docs/finance-area/ledger-records/records/ledger-record)**' della stessa. La compilazione del campo prevede di utilizzare sempre l'help progetto (maschera di ricerca che si attiva con doppio click all'interno del campo) per filtrare quelli attivi all'interno dell'area **Progetti**;
+<details>
+
+  <summary>Ulteriori dettagli (Click to expand)</summary>
+
+è un campo alfanumerico di 20 caratteri: a seconda delle impostazioni della causale viene bloccato l'inserimento dello stesso numero/anno (preso dalla data documento) / tipo (campo tipo documento) per lo stesso codice inserito nel campo sottoconto della testata della registrazione (questo blocco è inserito di default su ogni causale contabile, ma può essere disabilitato). In caso che sia lo stesso numero/anno/sottoconto ma il tipo sia differente viene invece restituito un semplice messaggio di avvertimento all'utente. Allo stesso modo, il messaggio di avvertimento viene restituito anche se lo stesso riferimento è salvato in una registrazione provvisoria;
+
+</details>
+
+**Campo Progetto** (ex commessa): è attivo solo se la causale di contabilità prevede la gestione progetti (ex flag 'Commessa'): questo progetto è quello di riferimento per tutta la registrazione, ma sarà possibile riattribuire i valori all'interno della scheda **Progetto** della stessa.
 
 :::danger ATTENZIONE
-il campo e la tab sopra descritti sono attivi solamente quando all'interno dell'anagrafica generale della società (Configurazione > Tabelle >Impostazioni generali > Società) il flag **Gestione Controlling** è disattivato. Ciò significa che non è attivo il modulo di gestione del controllo di gestione in modalità completa.  
-Nel caso in cui il flag **Gestione Controlling** sia attivo la gestione del progetto (o commessa, secondo la precedente dicitura) avverrà in maniera diversa, ovvero sarà necessario attribuire il progetto (commessa) attraverso un particolare centro di costo (oggi centro aziendale) avente come dimensione (si veda la documentazione dell'area controlling) quella adatta alla gestione delle commesse.
+la tab Progetti è attiva solamente quando all'interno dell'anagrafica generale della società (Configurazione > Tabelle >Impostazioni generali > Società) il flag **Gestione Controlling** è **disattivato**. Ciò significa che **non** è attivo il modulo di gestione del controllo di gestione in modalità **completa**.  
+Nel caso in cui il flag **Gestione Controlling** sia **attivo** la gestione del progetto (o commessa, secondo la precedente dicitura) avverrà in maniera diversa, ovvero sarà necessario attribuire il progetto (commessa) attraverso un particolare centro di costo (oggi centro aziendale) avente come [**dimensione**](/docs/configurations/tables/controlling/analytical-accounting/dimension) (si veda la documentazione dell'area controlling) quella adatta alla gestione delle commesse.
 :::
 
 **Divisa**: proposta in via prioritaria dall'anagrafica intestataria della registrazione, in alternativa dalla divisa della società: può essere comunque modificata di volta in volta. Una volta salvata la registrazione il campo non è più modificabile;
 
-**Data valuta**: è la data di riferimento del cambio, così come inserito nella tabella cambi valuta: la procedura andrà a leggere in questa tabella l'ultima data inserita precedente a questa. Nei parametri di gestione utente questa data può essere impostata come data registrazione (default) o come data documento. E' previsto un parametro utente di avviso quando non è impostata un cambio alla data della registrazione (e quindi viene utilizzato un cambio antecedente);
+**Data valuta**: è la data di riferimento del cambio, così come inserito nella tabella cambi valuta: la procedura legge in questa tabella la più recente data inserita con il relativo tasso di cambio rispetto al presente campo. 
 
-**Cambio**: è il valore del cambio così come inserito nella tabella cambi valute: si tratta del valore INVERSO rispetto a quello che normalmente si legge nei cambi valute (questo deriva dal fatto che la procedura ha mantenuto la logica ‘incerto per certo' derivante dalla gestione lire – quante lire per una unità della seconda divisa – mentre l'euro ha cambi ‘certo per incerto' – con 1 euro quante unità ottengo della seconda divisa –). Tale valore può essere forzato manualmente dall'utente (caso tipico: causali di pagamento/incasso in divisa, il valore del cambio applicato dalla banca non sarà mai quello ufficiale dei cambi internazionali);
+<details>
 
-**Totale divisa / Totale documento**: sono campi legati tra loro attraverso il cambio, per cui in registrazioni in euro sarà indifferente scrivere l'importo in uno o l'altro.  **[La causale contabile](/docs/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates)** può prevedere che questi siano aggiornati automaticamente al variare dei dati inseriti all'interno della griglia IVA, normalmente solo in incremento ma anche in decremento se impostato in causale. Il salvataggio della registrazione può essere bloccato se questo importo non è uguale ai dati IVA della registrazione;
+  <summary>Ulteriori dettagli (Click to expand)</summary>
 
-**Totale imposta**: viene aggiornato sempre automaticamente dalla procedura, non va inserito manualmente.
+Nei *parametri di inserimento* questa data può essere impostata come data registrazione (default) o come data documento. 
+E' previsto un parametro utente di avviso quando non è impostata un cambio alla data della registrazione (e quindi viene utilizzato un cambio antecedente);
 
-Alla base della registrazione contabile, nella scheda registrazione, è presente la descrizione della registrazione contabile: si tratta di una nota che si può impostare all'interno della causale di contabilità attraverso l'uso dei codici numerici (1) (2) … (10) (i codici (8) e (9) si utilizzano solo nelle descrizioni di dettaglio dei sottoconti nella sezione del libro giornale). Con un doppio click nel campo è possibile aprire una ricerca all'interno delle note codificate (procedura presente all'interno delle Utilità: la modifica manuale di questa descrizione sarà eventualmente resettata su conferma utente una volta modificato uno dei campi gestiti automaticamente nelle note.
+</details>
 
-Alla base della maschera sono presenti ulteriori campi di riepilogo dei dati IVA e della registrazione: meritano in particolare un'annotazione i campi dedicati alla visualizzazione dello sbilancio della registrazione, cosa normalmente non consentita (ma che si può abilitare nelle impostazioni della causale in uso). 
+**Cambio Diretto / Cambio inverso**: è il valore del cambio così come inserito nella tabella cambi valute: vengono esposti contemporaneamente sia il cambio DIRETTO (quello che normalmente si legge nei cambi valute), sia  il valore INVERSO. 
 
-Lo sbilancio sarà proposto come importo nelle nuove righe di contabilità che saranno inserite manualmente nella registrazione al fine di bilanciarla automaticamente.
+<details>
 
-#### Pulsanti specifici
+  <summary>Ulteriori dettagli (Click to expand)</summary>
+
+L'utilizzo del valore inverso  deriva dal fatto che la procedura ha mantenuto la logica *incerto per certo* derivante dalla gestione lire – quante lire per una unità della seconda divisa – mentre l'euro ha cambi *certo per incerto* – con 1 euro quante unità ottengo della seconda divisa. Tale valore può essere forzato manualmente dall'utente (caso tipico: causali di pagamento/incasso in divisa, il valore del cambio applicato dalla banca non sarà mai quello ufficiale dei cambi internazionali);
+
+</details>
+
+**Totale divisa / Totale documento**: sono campi legati tra loro attraverso il cambio, quindi, in registrazioni in euro sarà indifferente scrivere l'importo in uno o nell'altro.  
+In una registrazione in divisa estera, solitamente, si inserisce il valore nel campo del Totale in divisa ottenendo il controvalore in Euro.
+
+<details>
+
+  <summary>Ulteriori dettagli (Click to expand)</summary>
+
+**[La causale contabile](/docs/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates#13-parametri)** può prevedere che questi siano aggiornati automaticamente al variare dei dati inseriti all'interno della griglia IVA, solo in incremento oppure anche in decremento. Il salvataggio della registrazione può essere bloccato se questo importo non è uguale ai dati IVA della registrazione;
+
+</details>
+
+**Totale imposta**: Campo visualizzato alla base della griglia IVA, per visualizzarne l'importo complessivo, che viene aggiornato sempre automaticamente dalla procedura, non va inserito manualmente.
+
+### Piede (Footer)
+
+In basso nella form, nella scheda *Registrazione*, è presente la **descrizione movimento** della registrazione contabile: si tratta di una nota che si può impostare all'interno della causale di contabilità attraverso l'uso dei codici numerici parametrici (1) (2) … (10) 
+
+
+<details>
+
+  <summary>Ulteriori dettagli (Click to expand)</summary>
+
+i codici (8) e (9) si utilizzano solo nelle descrizioni di dettaglio dei sottoconti nella sezione del libro giornale. Con un doppio click nel campo è possibile aprire una ricerca all'interno delle note codificate (procedura presente all'interno delle Utilità: la modifica manuale di questa descrizione sarà eventualmente resettata su conferma utente una volta modificato uno dei campi gestiti automaticamente nelle note.
+
+Alla base della maschera, aprendo la sezione espandibile (expander), sono presenti ulteriori campi di riepilogo dei dati IVA e della registrazione: meritano in particolare un'annotazione i campi dedicati alla visualizzazione dello sbilancio della registrazione, cosa normalmente non consentita (ma che si può abilitare nelle impostazioni della causale in uso). 
+
+</details>
+
+Lo **sbilancio dare avere** serve per un controllo di quadrature al fine di poter salvare la registrazione. 
+
+<details>
+
+  <summary>Ulteriori dettagli (Click to expand)</summary>
+
+A meno che non venga disabilitato il controllo all'interno dei parametri della causale contabile, cosa che sconsigliamo caldamente a meno di esigenze del tutto particolari.
+
+Il valore dello sbilancio sarà proposto come importo nelle nuove righe di contabilità che saranno inserite manualmente nella registrazione al fine di bilanciarla automaticamente.
+
+
+</details>
+
+
+#### Pulsanti specifici della Ribbon Bar
 
 > **Parametri di inserimento**: richiama i parametri di inserimento della prima nota. 
 
@@ -66,54 +201,86 @@ Lo sbilancio sarà proposto come importo nelle nuove righe di contabilità che s
 - Avvisa data cambio: poiché il cambio proposto in automatico nella registrazione è l'ultimo cambio inserito nella tabella "cambi valute", verifica che la data del cambio in tabella "cambi valute" sia uguale a data registrazione;  
 - *Sottconto (Nessuno / Ultimo introdotto)*: riferito al sottoconto intestatario della registrazione inserito in testata.
 
+ > **Pulsanti di ricalcolo**: aggiornano i valori con un refresh / ricalcolo
+    - Iva
+    - Libro Giornale
+    - Centri di costo (se si è posizionati nella Tab Analitica)
+    - Partite (se si è posizionati nella Tab Partite)
+
 ## **2. Registrazione**
 
 ### 2.1 Estremi IVA del documento  
-La sezione è presente solo per registrazioni IVA (dove nella causale contabile è settato un registro IVA ed un tipo di movimento iva coerente).  
+La sezione è presente **solo per registrazioni IVA** (dove nella causale contabile è settato un **registro IVA** ed un tipo di movimento iva coerente).  
 
-In caso di inserimento manuale di una nuova registrazione la sezione può essere compilata in più modi:  
-- l'anagrafica cliente/fornitore/agente intestataria della registrazione non ha alcun sottoconto di contropartita predefinito e nemmeno l'aliquota iva standard: in questo caso l'utente procedere a scegliere il tipo di operazione IVA (vedi sotto il dettaglio) così come il sottoconto di riferimento della riga e l'aliquota IVA relativa. Una volta impostato anche questo la procedura provvederà a scorporare il totale del documento/registrazione inserito in testata per assegnare gli importi relativi alla riga. L'utente potrà modificare questi e procedere a nuovi inserimenti, che avranno sempre la stessa logica di inserimento e l'importo proposto sarà calcolato sulla base della differenza mancante a coprire il totale della registrazione;  
-- l'anagrafica cliente/fornitore/agente prevede il sottoconto di contropartita predefinito e/o l'aliquota IVA: una volta inserito il tipo di movimento IVA la procedura andrà a proporre il sottoconto di contropartita e/o l'aliquota così come predefinita, gli importi saranno inseriti come nel caso precedente scorporando il totale documento/registrazione e l'utente potrà modificarli manualmente: la prossima riga, nuovamente, proporrà sottoconto/aliquota dall'anagrafica e l'importo ottenuto dal residuo a copertura del totale documento/registrazione;  
-- l'anagrafica cliente/fornitore (non è gestito per gli agenti) prevede una lista di sottoconti di contropartita, nessun sottoconto di contropartita predefinito, ed è presente l'aliquota IVA predefinita: in questo caso l'applicativo proporrà direttamente nella sezione IVA la lista dei sottoconti di contropartita predefiniti, ognuno con la relativa aliquota IVA di dettaglio o con l'aliquota predefinita dell'anagrafica, e l'utente dovrà porre gli importi manualmente riga per riga. In questo caso l'aggiunta manuale di una nuova riga non andrà a proporre il sottoconto relativo ma la sola aliquota IVA, scorporando l'importo mancante a copertura del totale documento/registrazione.
+In caso di **inserimento manuale** di una nuova registrazione la sezione può essere compilata in più modi:  
 
-**Tipo IVA**: è una tabella fissa interna del sistema e contiene i campi:  
+- >*l'anagrafica cliente/fornitore/agente intestataria della registrazione non ha alcun sottoconto di contropartita predefinito e nemmeno l'aliquota iva standard*: in questo caso l'utente seleziona il **Tipo IVA** (vedi sotto il dettaglio) così come il **sottoconto** di contropartita per la riga e **l'aliquota IVA** relativa. Una volta impostato anche questo la procedura provvederà a scorporare il totale del documento/registrazione inserito in testata per assegnare gli importi relativi alle varie colonne della riga. L'utente potrà modificare questi valori e procedere a nuovi inserimenti, sempre con la stessa logica. L'importo proposto sarà calcolato sulla base della differenza mancante a coprire il totale della registrazione;  
+- >*l'anagrafica cliente/fornitore/agente prevede il sottoconto di contropartita predefinito e/o l'aliquota IVA*: una volta inserito il **Tipo IVA** la procedura propone il sottoconto di contropartita e/o l'aliquota predefinita, gli importi vengono inseriti come nel caso precedente scorporando il totale documento/registrazione e l'utente potrà modificarli manualmente: la prossima riga, nuovamente, proporrà sottoconto/aliquota dall'anagrafica e l'importo ottenuto dal residuo fino a copertura del totale documento/registrazione;  
+- >*l'anagrafica cliente/fornitore (non è gestito per gli agenti) prevede una lista di sottoconti di contropartita, nessun sottoconto di contropartita predefinito, ed è presente l'aliquota IVA predefinita*: in questo caso l'applicativo proporrà direttamente nella sezione IVA la lista dei sottoconti di contropartita predefiniti, ognuno con la relativa aliquota IVA di dettaglio o con l'aliquota predefinita dell'anagrafica, e l'utente dovrà inserire gli importi manualmente riga per riga. In questo caso l'aggiunta manuale di una nuova riga non proporrà il sottoconto relativo ma la sola aliquota IVA, scorporando l'importo mancante fino a copertura del totale documento/registrazione.
+
+**Tipo IVA**: è una tabella fissa interna del sistema e contiene i valori:  
 > - **Generico**: è il tipo **standard** di movimento IVA, sufficiente nella quasi totalità dei casi. Questo tipo riga viene considerato in alcune procedure IVA come movimento merce;  
 > - **Destinato alla rivendita**: è da utilizzare per gli acquisti che sono base di calcolo delle percentuali da applicare nella ventilazione dei corrispettivi (ad es. per supermercati o farmacie: questi dettaglianti non applicano l'IVA articolo per articolo, ma viene loro consentito di fare un totale unico delle vendite di fine periodo e suddividere gli importi secondo la proporzione degli articoli acquistati nel periodo);  
 > - **Arrotondamenti**: si tratta degli arrotondamenti fuori campo IVA, tipici ad esempio delle bollette telefoniche. L'utilità di questa indicazione è minima, comunque il sottoconto relativo viene inserito secondo la logica vista poco sopra;  
 > - **Vendita IVA 74Ter**: si tratta di un tipo movimento specifico per le agenzie di viaggio, per le quali la data competenza IVA slitta di 30 giorni rispetto alla data dell'operazione (vendo in data odierna, l'IVA sarà da versare nella liquidazione del prossimo mese). Su queste righe viene applicata la gestione IVA del 74Ter con la liquidazione IVA periodica relativa;  
 > - **Rivendita**: si tratta delle vendite sulle quali l'applicativo andrà ad applicare il calcolo della ventilazione dei corrispettivi;   
 > - **Operazione non agricola**: si tratta di un tipo movimento specifico per le società soggette a regime agricolo, serve per escludere da questo regime (impostato nella causale contabile) per la riga specifica;  
-> - **Servizio**: si tratta di un tipo movimento specifico per identificare che la riga deriva da un acquisto/vendita di servizi, elemento importante in alcune procedure IVA (ad esempio glie elenchi INTRASTAT).
+> - **Servizio**: si tratta di un tipo movimento specifico per identificare che la riga deriva da un acquisto/vendita di servizi, elemento importante in alcune procedure IVA (ad esempio glie elenchi **INTRASTAT**).
 
-**% Indetraibilità**: viene ripreso dall'aliquota IVA inserita nella riga. Se ne sconsiglia la forzatura manuale, l'operazione corretta è modificare l'aliquota IVA;  
+**% Indetraibilità**: viene ripreso dall'aliquota IVA inserita nella riga. Se ne sconsiglia la forzatura manuale, l'operazione corretta è modificare l'aliquota IVA;  DEtermina il calcolo della colonna (imposta) *indetraibile*
+
 **Imposta**: può essere forzato manualmente rispetto al calcolo effettuato  dalla procedura: può succedere, infatti, che il documento in acquisto abbia un arrotondamento non gestito correttamente, l'utente deve registrare il documento così come lo riceve;  
+
 **Totale valuta / totale**: sono campi calcolati e non memorizzati a livello di database;  
+
 **Da data competenza/A data competenza**: sono le date di **competenza economica**, fondamentali per i **calcoli** automatici delle **rettifiche e integrazioni** sia a livello di bilancio infrannuale che di bilancio contabile. Sulla base della loro indicazione saranno calcolati i ratei ed i risconti.  
 
-*Esempio*: siamo al 31/03/anno X. 
+<details>
+
+  <summary>**ESEMPIO** Click to expand!</summary>
+ 
+siamo al 31/03/anno X. 
 
 Se la registrazione di costo riporta date di competenza 31/03/X - 31/03/X+1, in data 31/12/X al lancio delle procedure di assestamento sarà calcolato un risconto attivo per la quota parte del costo di competenza 01/01/X+1 - 31/03/X+1.
 
 Se la registrazione di costo eseguita il 31/01/X riporta date di competenza 31/01/X-1 -31/01/X, al lancio delle procedure di assestamento in data 31/12//X-1 verrà calcolato un rateo passivo per la quota parte di costo di competenza 31/01/X-1 - 31/12/X-1
 
-Questo range di date può essere gestito automaticamente, a seconda dei **[Parametri di inserimento]**, in 3 modi alternativi: ‘Fine esercizio' (con la quale la data iniziale viene proposta sulla base della data documento e quella finale come data fine esercizio: opzione sconsigliata), ‘Giornaliera' (con la quale entrambe le date sono impostate sulla base della data documento) e ‘Nessuna data per tipo conto servizio' che è l'opzione consigliata. In questo caso, infatti, l'applicativo non proporrà nessuna data per i sottoconti economici che prevedono nel tipo conto il flag ‘servizio' ma obbligherà l'utente all'inserimento manuale del range corretto (mentre negli altri casi proporrà la stessa data documento su entrambe le date). In questo modo saremo più sicuri che l'utente vada a gestire il range di competenza correttamente, per esempio per i sottoconti delle assicurazioni, degli affitti, dei canoni periodici;
+</details>
 
-**Attenzione**: perché possano essere calcolati automaticamente i ratei e risconti dalla procedura di assestamento è necessario che il tipo conto utilizzato per i conti interessati dalle rettifiche sia definito nella tabella **[Tipi conto](/docs/configurations/tables/finance/account-types)** con il flag Servizio.
+Questo range di date può essere gestito automaticamente, a seconda dei ***Parametri di inserimento***, in 3 modi alternativi: 
 
-Esempio di tipi conto (nei database standard) "Costi da rettificare" e "Ricavi da rettificare" che hanno il flag servizio nella tabella Tipi conto.
+- >*Fine esercizio* con la quale la data iniziale viene proposta sulla base della data documento e quella finale come data fine esercizio 
+- >*Giornaliera* (con la quale entrambe le date sono impostate sulla base della data documento);
+- >*Nessuna data per tipo conto servizio* (opzione consigliata) l'applicativo non proporrà nessuna data per i sottoconti economici che prevedono nel tipo conto il flag *servizio* ma obbligherà l'utente all'inserimento manuale del range corretto (con gli altri tipi conto proporrà la stessa data documento su entrambe le date).
 
-Il tipo conto idoneo verrà assegnato al sottoconto in questione direttamente nel piano dei conti.
+:::important[Attenzione]
+perché possano essere calcolati automaticamente i ratei e risconti dalla procedura di assestamento è necessario che il tipo conto utilizzato per i conti interessati dalle rettifiche sia definito nella tabella **[Tipi conto](/docs/configurations/tables/finance/account-types)** con il flag Servizio.
 
-**Mese**: è il periodo di riferimento IVA per la registrazione, ottenuto rispetto al tipo di liquidazione e alla data di competenza IVA. Il campo utilizzato effettivamente nella liquidazione, comunque, è la data competenza IVA;  
-**Data competenza IVA**: il campo viene proposto rispetto all'impostazione della causale contabile, tipicamente come data registrazione per gli acquisti e data documento per le vendite (se il movimento è vendita 74Ter allora è data documento + 30gg). Questa è la **data di riferimento per la stampa della liquidazione IVA periodica**;  
+Esempio di tipi conto che hanno il flag servizio nella tabella Tipi conto (nei database standard) "Costi da rettificare" e "Ricavi da rettificare".
+
+Il tipo conto idoneo viene assegnato al sottoconto in questione direttamente nel piano dei conti.
+:::
+
+**Mese**: è il **periodo di riferimento IVA per la registrazione**, ottenuto rispetto al tipo di liquidazione e alla data di competenza IVA. Il campo utilizzato effettivamente nella liquidazione, comunque, è la data competenza IVA; 
+ 
+**Data competenza IVA**: il campo viene proposto rispetto all'impostazione della causale contabile, tipicamente come data registrazione per gli acquisti e data documento per le vendite (se il movimento è vendita 74Ter allora è data documento + 30gg). Questa è la **data di riferimento per la stampa della liquidazione IVA periodica**; 
+ 
 **Competenza plafond**: questa data viene presa come riferimento per il concorso della registrazione in questione al calcolo del plafond; viene proposta pari alla data documento per tutte le aliquote IVA che prevedono la gestione del plafond IVA;  
-**Nota variaz. anni prec.**: il campo è attivo solo per registrazioni con tipo documento che prevede il flag ‘Nota di variazione'. Serve ad indicare che la riga della nota di credito è riferita ad anni precedenti all'anno del documento, per il calcolo del relativo campo dell'elenco clienti/fornitori;  
-**Data rif. nota var.**: il campo è attivo solo per registrazioni con tipo documento che prevede il flag ‘Nota di variazione'. Serve ad indicare la data di riferimento della nota di variazione;  
+
+**Nota variazione anni precedenti**: il campo è attivo solo per registrazioni con tipo documento che prevede il flag *Nota di variazione*. Serve ad indicare che la riga della nota di credito è riferita ad anni precedenti rispetto all'anno del documento.
+  
+**Data riferimento nota di variazione**: il campo è attivo solo per registrazioni con tipo documento che prevede il flag *Nota di variazione*. Serve ad indicare la data di riferimento della fattura rettificata; 
+
 **Divisione**: il campo è visibile solo se la causale prevede la gestione delle divisioni. In questo caso sarà possibile suddividere la stessa registrazione IVA su più divisioni aziendali.
 
 #### Annotazioni ulteriori:  
-- non è possibile salvare righe IVA con imponibile 0 a meno che la causale contabile non lo consenta (flag ‘consenti sottoconti con valore 0');  
-- gli arrotondamenti dell'IVA sono gestiti riga per riga, mentre la normativa prescrive che il calcolo sia effettuato su un imponibile che raggruppa tutte le righe con stessa aliquota IVA: è possibile, quindi, che ci sia una differenza dovuta unicamente alla gestione arrotondamenti (il discorso vale per l'inserimento manuale di una registrazione contabile: le contabilizzazioni automatiche da acquisti e dalle vendite effettuano già il calcolo corretto) rispetto al documento in registrazione. Una volta rilevata la differenza le soluzioni sono: 1) forzare manualmente una riga IVA 2) premere il pulsante di ricalcolo imposta che si trova nella testata e far allineare automaticamente dall'applicativo l'ultima riga di ogni aliquota presente.
+- non è possibile salvare **righe IVA con imponibile 0** a meno che la causale contabile non lo consenta (flag *consenti sottoconti con valore 0*); 
+ 
+- gli **arrotondamenti dell'IVA** sono gestiti riga per riga, mentre la normativa prescrive che il calcolo sia effettuato su un imponibile che raggruppa tutte le righe con la stessa aliquota IVA: è possibile, quindi, che ci sia una differenza dovuta unicamente alla gestione arrotondamenti (il discorso vale solo per l'inserimento manuale di una registrazione contabile: le contabilizzazioni automatiche da acquisti e dalle vendite effettuano già il calcolo corretto) rispetto al documento in registrazione.
+ 
+    Una volta rilevata la differenza le soluzioni sono: 
+        1. forzare manualmente una riga IVA 
+        2. premere il pulsante di ricalcolo imposta che si trova nella testata e far allineare automaticamente dall'applicativo l'ultima riga di ogni aliquota presente.
 
 ### 2.2 Libro giornale
 
@@ -125,7 +292,9 @@ Il tipo conto idoneo verrà assegnato al sottoconto in questione direttamente ne
 
 </details>
 
-ogni registrazione di contabilità generale deve obbligatoriamente avere righe in questa sezione per poter essere salvata. In caso di registrazioni IVA questa parte viene calcolata, sulla base della logica dei tipi importo, secondo i dati caricati nelle righe della precedente parte IVA; in caso di registrazioni di pagamento/incasso, invece, gli importi dipendono dagli importi dei pagamenti caricati nella scheda ‘Pagamenti' stessa; negli altri casi, invece, le righe e gli importi saranno gestiti in generale manualmente dall'utente, tenendo conto che:  
+Ogni registrazione di contabilità generale deve obbligatoriamente avere righe in questa sezione per poter essere salvata.
+
+In caso di registrazioni IVA questa parte viene calcolata, sulla base della logica dei tipi importo, secondo i dati caricati nelle righe della precedente parte IVA; in caso di registrazioni di pagamento/incasso, invece, gli importi dipendono dagli importi dei pagamenti caricati nella scheda ‘Pagamenti' stessa; negli altri casi, invece, le righe e gli importi saranno gestiti in generale manualmente dall'utente, tenendo conto che:  
 - la causale può proporre una lista di sottoconti preimpostati (es.: causali delle paghe dipendenti): l'utente dovrà in questo caso entrare riga per riga a dare semplicemente gli importi nella sezione corretta (attenzione: i segni impostati nella causale NON vincolano l'inserimento dell'utente alla medesima sezione). Al momento del salvataggio, se la causale non lo autorizza, i sottoconti non valorizzati saranno cancellati automaticamente;  
 - in caso di registrazione semplice ‘dare/avere' è possibile codificare una causale specifica che preveda già i sottoconti da utilizzare con il tipo importo ‘Tot. Doc./Registrazione' per far si che l'utente scriva semplicemente l'importo nei campi dei totali di testata e la procedura li metta in dare/avere secondo la causale;  
 - ogni nuovo inserimento manuale delle righe andrà a coprire l'eventuale sbilancio presente nella registrazione: si ricorda che le registrazioni sbilanciate non possono essere salvate, se non abilitando la causale.
