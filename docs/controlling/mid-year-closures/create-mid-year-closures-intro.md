@@ -105,7 +105,7 @@ Con questo flag il programma verificherà, **a partire dalla *Data di inizio com
 
 :::tip Nota
 I sottoconti di rateo da utilizzare saranno quelli inseriti nel piano dei conti in corrispondenza del singolo sottoconto di costo/ricavo oppure il sottoconto generico inserito nei parametri di contabilità dell'anno della chiusura infrannuale stessa.
-Se il costo/ricavo ha una competenza economica **totalmente inserito nel range d'interesse della chiusura* ed è in una registrazione contabile con il sottoconto di testata valorizzato, allora Fluentis presuppone si sia in una registrazione di una fattura da ricevere/emettere ed utilizzerà questi sottoconti prelevandoli dall'anagrafica cliente/fornitore o dai parametri di contabilità dell'anno selezionato, al posto dei sottoconto di rateo.
+Se il costo/ricavo ha una competenza economica **totalmente inserito nel range d'interesse della chiusura* ed è in una registrazione contabile con il sottoconto di testata valorizzato, allora Fluentis presuppone si sia in una registrazione di una fattura (o nota di credito) da ricevere/emettere ed utilizzerà questi sottoconti prelevandoli dall'anagrafica cliente/fornitore o dai parametri di contabilità dell'anno selezionato, al posto dei sottoconti di rateo.
 :::
 
 Questo flag crea automaticamente quello che l'utente può gestire separatamente anche dopo l'elaborazione dei saldi di chiusura nella procedura dedicata *Scritture di integrazione*.
