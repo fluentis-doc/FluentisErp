@@ -15,7 +15,12 @@ In sostanza, attraverso gli algoritmi di questa funzione, l’MRP di Fluentis è
 
 ### M.R.P.
 
-In questo tab vengono visualizzati i risultati dell'elaborazioni MRP lanciate precedentemente. 
+In questo tab è possibile consultare i risultati selezionando l’elaborazione tra quelle presenti nello storico.      
+Si ricorda che le elaborazioni sono mantenute nello storico per il numero di giorni indicato nel campo **Giorni storico MRP da mantenere**, presente nei [Parametri fabbisogno materiali](/docs/configurations/parameters/production/resource-requirements-parameters).      
+Questa form si compone di un’area di filtro dove è possibile filtrare per articolo, tipo di approvvigionamento oppure anche per tipo di suggerimento dato dalla procedura.   
+Nella parte destra è presente un elenco di tutti gli articoli che la procedura ha elaborato e per ognuno dei quali sono riportati anche le azioni proposte.     
+Una volta selezionata una di queste righe, nella tabella centrale vengono riportate tutte le informazioni relative alle azioni da intraprendere, dove per ognuna è riportata la disponibilità, il fabbisogno e l’eventuale fabbisogno confermato se la procedura è stata lanciata con il flag **Differenza domanda di produzione confermata** attivo; mentre nella tabella inferiore, troviamo tutte le informazioni relative a tutti i documenti legati all’articolo, con l’indicazione di domanda, offerta e disponibilità alla data indicata.     
+Selezionando un ordine pianificato creato dalla procedura MRP è possibile rilasciarlo premendo il pulsante **Rilascio ordini pianificati**.
 
 ### Commessa
 
