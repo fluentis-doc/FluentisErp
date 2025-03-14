@@ -6,9 +6,9 @@ sidebar_position: 5
 The parameters can be found in the path **Vendor qualification parameters**.
 
 The data present in this management is used to propose information in the following areas:   
-- **Initial and periodic supplier evaluations (Valutazioni fornitori iniziali e periodiche)** - in the *Header info* list;   
-- **Periodic supplier evaluations on Non-conformities (Valutazioni fornitori periodiche su Non conformità)** - in the *Header info* list;   
-- **Contacts Register** - in the *Accounting Data > Quality Data (Dati contabili > Dati qualità)* tab.   
+- **Initial and periodic supplier evaluations** - in the *Header info* list;   
+- **Periodic supplier evaluations on Non-conformities** - in the *Header info* list;   
+- **Contacts Register** - in the *Accounting Data > Quality Data* tab.   
 
 #### Specific Button
 
@@ -16,26 +16,26 @@ The data present in this management is used to propose information in the follow
 
 **Propose Ratings**
 
-To propose *Vendor ratings* in the *Score Ranges for Evaluation (Intervalli punteggio per la valutazione)* list, press the **Propose Ratings** button.   
-All *Evaluations (Valutazioni)* not yet entered in the list will be reported; the values in *Score from* of the pre-existing *Evaluations (Valutazioni)* will not be modified.   
+To propose *Vendor ratings* in the *Score Ranges for Evaluation* list, press the **Propose Ratings** button.   
+All *Evaluations* not yet entered in the list will be reported; the values in *Score from* of the pre-existing *Evaluations* will not be modified.   
 
-## Initial Evaluations (Valutazioni iniziali)      
+## Initial Evaluations       
 
-In this expander, it is possible to enter data to propose in the *Initial and Periodic Evaluation (Valutazione iniziale e periodica)*.   
+In this expander, it is possible to enter data to propose in the *Initial and Periodic Evaluation*.   
 In the expander, it is possible to enter:   
-- **Rating type proposal**: *Type of evaluation (Tipo di valutazione)* to propose when entering an *Initial and Periodic Evaluation (Valutazione iniziale e periodica)*.   
-- **Auditor proposal**: *Auditor* to propose when entering an *Initial and Periodic Evaluation (Valutazione iniziale e periodica)*.   
-- **Automatic suspension**: indicates whether, upon recognition of a *Suspension Supplier Evaluation (Valutazione fornitore di sospensione)*, the supplier will be automatically *Stopped*.   
+- **Rating type proposal**: *Type of evaluation* to propose when entering an *Initial and Periodic Evaluation*.   
+- **Auditor proposal**: *Auditor* to propose when entering an *Initial and Periodic Evaluation*.   
+- **Automatic suspension**: indicates whether, upon recognition of a *Suspension Supplier Evaluation*, the supplier will be automatically *Stopped*.   
 
-## Periodic Non-conformity Evaluations (Valutazioni periodiche non conformità)      
+## Periodic Non-compliance ratings      
 
-In this expander, it is possible to enter data to propose in the *Periodic Evaluation on Non-conformities (Valutazione periodica su Non conformità)*.   
+In this expander, it is possible to enter data to propose in the *Periodic Evaluation on Non-conformities*.   
 In the expander, it is possible to enter:   
-- **Rating type proposal**: *Type of evaluation (Tipo di valutazione)* to propose when entering a *Periodic Evaluation on Non-conformities (Valutazione periodica su Non conformità)*.   
-- **Automatic suspension**: indicates whether, upon recognition of a *Suspension Supplier Evaluation (Valutazione fornitore di sospensione)*, the supplier will be automatically *Stopped*.   
+- **Rating type proposal**: *Type of evaluation* to propose when entering a *Periodic Evaluation on Non-conformities*.   
+- **Automatic suspension**: indicates whether, upon recognition of a *Suspension Supplier Evaluation*, the supplier will be automatically *Stopped*.   
 >
-- **Score Ranges for Evaluation (Intervalli punteggio per la valutazione)**   
-> In this list, it is possible to define the percentage ranges for the automatic assignment of *Periodic Evaluation on Non-conformities (Valutazione periodica su Non conformità)*.   
+- **Scoring ranges for rating:**   
+> In this list, it is possible to define the percentage ranges for the automatic assignment of *Periodic Evaluation on Non-conformities*.   
 > The table allows you to insert new records, modify them, or delete them. The list consists of the following information:   
 >- **Evaluation**: the code of the *Vendor rating*.   
 >- **Rating description**: the description of the *Vendor rating*.   

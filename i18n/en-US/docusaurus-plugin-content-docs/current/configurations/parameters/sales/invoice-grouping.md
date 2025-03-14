@@ -1,9 +1,9 @@
 ---
-title: Invoice Grouping Parameters (Parametri raggruppamento fatture)
+title: Invoice Grouping Parameters 
 sidebar_position: 9
 ---
 
-:::tip[Fast Start (FAst Start)]
+:::tip[Fast Start]
 The table is affected by the [**Fast Start**](/docs/guide/fast-start) procedure.
 
 If you intend to configure manually, refer to the checklist on the linked page.
@@ -26,7 +26,7 @@ In the case of fulfilling multiple documents, they can be grouped based on the f
 - **Month**: source documents from the same month will create a single invoice;  
 - **Exchange**: source documents with the same exchange rate will create a single invoice;  
 - **Project**: source documents with the same project in the header will create a single invoice;  
-- **payment type and solution (tipo e soluzione di pagamento)**: source documents with the same payment conditions will create a single invoice;  
+- **Payment type and solution**: source documents with the same payment conditions will create a single invoice;  
 - **Destination**: source documents with the same destination and carrier will create a single invoice;    
 - **Joint holders**: source documents with the same operation type for the management of assets will create a single invoice.  
 

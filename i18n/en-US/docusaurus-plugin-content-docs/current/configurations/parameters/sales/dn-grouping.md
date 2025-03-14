@@ -1,5 +1,5 @@
 ---
-title: DDT Grouping Parameters (Parametri raggruppamento DDT)
+title: DDT Grouping Parameters 
 sidebar_position: 8
 ---
 
@@ -18,15 +18,15 @@ In this mask, the grouping rules for the procedures are decided:
 - **Create SalesDeliveryNote from PickingList**;   
 - **Create SalesDeliveryNote from TransferPickingList**;   
 - **Create SalesDeliveryNote from Pos**;  
-- **Creation of sales DDT from customer order (Creazione DDT di vendita da ordine cliente)**.      
+- **Creation of sales DDT from customer order**.      
 
 In the case of fulfilling multiple documents, it is possible to group them based on the following properties by inserting the relevant flags:  
-- **Document type**: source documents with the same [Type (Tipo)](/docs/configurations/tables/sales/sales-order-types) will create a single DDT  
+- **Document type**: source documents with the same [Type](/docs/configurations/tables/sales/sales-order-types) will create a single DDT  
 - **Year**: source documents from the same year will create a single DDT  
 - **Month**: source documents from the same month will create a single DDT  
 - **Exchange**: source documents with the same exchange rate will create a single DDT  
-- **Project**: source documents with the same project in [Header (Testata)](/docs/sales/sales-orders/create-new-sales-orders/sales-order) will create a single DDT  
-- **payment type and solution (tipo e soluzione di pagamento)**: source documents with the same payment conditions will create a single DDT  
+- **Project**: source documents with the same project in [Header](/docs/sales/sales-orders/create-new-sales-orders/sales-order) will create a single DDT  
+- **Payment type and solution**: source documents with the same payment conditions will create a single DDT  
 - **Destination**: source documents with the same destination and carrier will create a single DDT   
 - **Joint holders**: source documents with the same operation type for the management of fixed assets will create a single DDT  
 

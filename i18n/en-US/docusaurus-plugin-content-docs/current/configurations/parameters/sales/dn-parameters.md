@@ -1,5 +1,5 @@
 ---
-title: DDT Parameters (Parametri DDT)
+title: DDT Parameters 
 sidebar_position: 4
 ---
 
@@ -15,11 +15,11 @@ The parameters of sales DDT (Delivery Notes) allow for basic settings to manage 
 
 **Management of double measurement unit**: if active, the two columns Alternative UM and Alternative Quantity will be displayed in the DDT lines, so it will be possible to manage the double unit of measure, always considering that it is the main unit of measure on which checks for fulfillment are made.
 
-**Automatic proposal of alternative UM (Proposta automatica UM alternativa):** this flag becomes editable only if the double unit of measure management flag has been activated and allows the alternative unit of measure set in the item registry to be displayed in the DDT item tab, in the dedicated column 'Alternative UM'; if not active, the unit of measure is not proposed.
+**Automatic proposal of alternative UM:** this flag becomes editable only if the double unit of measure management flag has been activated and allows the alternative unit of measure set in the item registry to be displayed in the DDT item tab, in the dedicated column 'Alternative UM'; if not active, the unit of measure is not proposed.
 
-**Availability Check (Controllo Disponibilità):** this flag and others related to control, visualization, and obligoriness with the consideration for area are not managed in the current version.
+**Availability Check:** this flag and others related to control, visualization, and obligoriness with the consideration for area are not managed in the current version.
 
-**Default volume/weight measurement unit (Unità di misura volume/pesi predefinita)**: these measurement units are considered as default UMs to propose in the [Transport](/docs/sales/sales-delivery-notes/insert-delivery-notes/sales-dn) tab of the DDT, as units of volume and weight; the data is modifiable in the documents.
+**Default volume/weight measurement unit**: these measurement units are considered as default UMs to propose in the [Transport](/docs/sales/sales-delivery-notes/insert-delivery-notes/sales-dn) tab of the DDT, as units of volume and weight; the data is modifiable in the documents.
 
 **Search item price in all the defaults price list**: when searching for the price and discounts for an item within a DDT, the system follows rules based on the settings configured in the customer registry, under the *Price Lists* section. If the 'default' option is activated on a specific type of price list, the search for prices and discounts will focus only on that specific type of price list; if the "default" flag is not active, the system will extend the search to all types of price lists present, following an order of priority. In practice, with the 'default' flag active, the system will first look for a valid price list for the predefined type; if no results are found, it will check the other types of price lists in order of the established priority. However, if there is no type of price list set as 'default' in the customer registry and there are only priorities, this parameter will not influence the search, even if active.
 
@@ -55,11 +55,11 @@ In this tab, the following fields are present:
 
 **Control concordance between DN payments and order**: if active, the system will not allow fulfillment from orders with different payments.
 
-**Recalculate CDC/CDP (Ricalcola CDC/CDP)**: in the case where the DDT is generated starting from the customer order with the specific procedure, activating this flag will cause the system to recalculate the cost centers and profit centers if the DDT has been generated from the order, not considering those set in the sales order. If not active, the system will not recalculate these data but retain those entered in the customer order.
+**Recalculate CDC/CDP**: in the case where the DDT is generated starting from the customer order with the specific procedure, activating this flag will cause the system to recalculate the cost centers and profit centers if the DDT has been generated from the order, not considering those set in the sales order. If not active, the system will not recalculate these data but retain those entered in the customer order.
 
-**Display fulfillment grid (Visualizzazione griglia evasione):** if active, the flag enables grid mode in the sales order fulfillment form.
+**Execution grid view:** if active, the flag enables grid mode in the sales order fulfillment form.
 
-**Display tree fulfillment (Visualizzazione tree evasione):** if active, the flag enables tree mode in the sales order fulfillment form.
+**Execution tree view:** if active, the flag enables tree mode in the sales order fulfillment form.
 
 **Propose Batches**: this flag ensures that at the time of fulfillment, if a different quantity to be fulfilled is entered compared to that present in the source document, the quantity of batches will equal the line quantity in the created document; this avoids the situation where the created document has a line quantity different from that of the batches.
 
@@ -67,7 +67,7 @@ In this tab, the following fields are present:
 
 **Create recording with document date**: if active, the stock registration is made with the same date as the DDT, and it will not be necessary to specify the registration date in the shipping form. If not active, it will be necessary to specify the date in the DDT shipping form.
 
-**Priority warehouse and shipping reason for item lines in DDT (Priorità magazzino e causale di scarico alle righe articoli dei DDT)**: if active, the warehouse and shipping reason are read from the DDT lines, while if not activated, the warehouse and reason entered in the subsequent fields (**Warehouse** and **Warehouse reason (Causale di magazzino)**) will be used.
+**Priority warehouse and shipping reason for item lines in DDT**: if active, the warehouse and shipping reason are read from the DDT lines, while if not activated, the warehouse and reason entered in the subsequent fields (**Warehouse** and **Warehouse Template**) will be used.
 
 **Automatic load/unload**: if active, the unloading of the DDT will be done automatically upon activation of the Print flag. If not active, unloading must be done with the appropriate button.
 
@@ -80,4 +80,4 @@ It is possible to modify the priorities using the buttons **Move Up**![](/img/ne
 *Default values (Valori di default)*: the CDC or CDP is retrieved from the invoiced type if present.     
 For further details, refer to the table [Invoiced Type](/docs/configurations/tables/sales/sales-turnover).      
 If it is not present in the *Turnover type*, the system will look for it in the *Customer contact*. If not present, it will be searched in the item registry and subsequently at the warehouse level.       
-The flag **Evaluate the priority of each dimension (Valuta la priorità di ogni dimensione)** ensures that in the documents the CDC/CDP are grouped by dimension in the Analytical tab.
+The flag **Evaluate the priority of each dimension** ensures that in the documents the CDC/CDP are grouped by dimension in the Analytical tab.
