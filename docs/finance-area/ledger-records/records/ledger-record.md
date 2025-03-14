@@ -2,6 +2,34 @@
 title: Nuova Registrazione contabile
 sidebar_position: 1
 ---
+La form si apre tramite il percorso **Amministrazione > Registrazioni contabili > Registrazioni > Nuova Registrazione** oppure tramite il pulsante **Nuova** che si trova nella form [Ricerca registrazioni contabili](/docs/finance-area/ledger-records/records/search-ledger-records).
+
+## *Come creare una Registrazione contabile di Acquisto o Vendita*
+
+<details>
+ 
+<summary>Clicca per i passaggi fondamentali</summary>
+ 
+1. **Inserisci i dati obbligatori nella Testata**: *Data Registrazione, se diversa da Oggi*, ***Causale contabile***, *Conto (cliente o fornitore)*, *Numero* e *Data Documento* *Totale della registrazione*.  
+ 
+2. **Inserisci i dati IVA**: Tipo IVA, Conto di contropartita ed aliquot IVA (se non già proposti dall'anagrafica cliente /fornitore)  
+ 
+3. **Gestisci le date di competenza economica**: se necessario in particolare per i servizi al fine di ottenere i ratei e risconti automatici in seguito.
+ 
+4. **Verifica e modifica la sezione Libro giornale** se necessario puoi variare i conti o suddividere il costo o ricavo inserendo nuove righe
+ 
+5. **Controlla la sezione dei Riepiloghi** verificando che la registrazione sia bilanciata.  
+ 
+6. **Controlla o gestisci la Tab delle Partite aperte** se non viene proposta dall'anagrafica cliente o fornitore inserisci i dati relativi al tipo e soluzione di pagamento per gestire le partite aperte iun maniera allineata rispetto al movimento contabile
+
+7. **Incassi o pagamenti** verranno gestiti dalla **Tab Pagamenti** che sarà utilizzata **per prima**, ricercando le partite da chiudere con il bottone **Ricerca Partite** e facendo doppio click sulle partite da chiudere, in questo modo i dati dei clienti o fornitori incassati o pagati saranno già riportati nella sezione Libro giornale.
+
+8. **Scritture semplici di prima nota** come giroconti cc... possono essere inseriti direttamente nella sezione Libro giornale, non prevedendo la relativa causale di movimentare la griglia IVA
+
+9. **Altre sezioni specifiche non obbligatorie**  a seconda sei parametri attivati nella causale contabile, verranno visualizzate altre sezioni specifiche, quali la Contabilità **analitica**, I cespiti, gli **Intrastat**, le provvigioni **Agenti** che è possibile gestire.
+ 
+</details>
+
 
 La Registrazione contabile, e conseguentemente la form per il suo inserimento, è composta dai seguenti elementi:
 
@@ -292,12 +320,33 @@ Il tipo conto idoneo viene assegnato al sottoconto in questione direttamente nel
 
 </details>
 
-Ogni registrazione di contabilità generale deve obbligatoriamente avere righe in questa sezione per poter essere salvata.
+Ogni registrazione di contabilità generale **deve obbligatoriamente avere righe in questa sezione** per poter essere salvata.
 
-In caso di registrazioni IVA questa parte viene calcolata, sulla base della logica dei tipi importo, secondo i dati caricati nelle righe della precedente parte IVA; in caso di registrazioni di pagamento/incasso, invece, gli importi dipendono dagli importi dei pagamenti caricati nella scheda ‘Pagamenti' stessa; negli altri casi, invece, le righe e gli importi saranno gestiti in generale manualmente dall'utente, tenendo conto che:  
-- la causale può proporre una lista di sottoconti preimpostati (es.: causali delle paghe dipendenti): l'utente dovrà in questo caso entrare riga per riga a dare semplicemente gli importi nella sezione corretta (attenzione: i segni impostati nella causale NON vincolano l'inserimento dell'utente alla medesima sezione). Al momento del salvataggio, se la causale non lo autorizza, i sottoconti non valorizzati saranno cancellati automaticamente;  
-- in caso di registrazione semplice ‘dare/avere' è possibile codificare una causale specifica che preveda già i sottoconti da utilizzare con il tipo importo ‘Tot. Doc./Registrazione' per far si che l'utente scriva semplicemente l'importo nei campi dei totali di testata e la procedura li metta in dare/avere secondo la causale;  
+- > In caso di **registrazioni IVA** questa parte viene **calcolata**, sulla base della logica dei ***tipi importo***, secondo i dati caricati nelle righe della precedente **griglia IVA**; 
+
+- > in caso di registrazioni di **pagamento/incasso**, invece, gli importi **dipendono dagli importi dei pagamenti caricati nella scheda *Pagamenti***; 
+
+- > negli **altri casi**, invece, le righe e gli importi saranno gestiti in generale **manualmente** dall'utente.  
+
+:::note[Nota]
+la causale può proporre una lista di sottoconti preimpostati: l'utente dovrà in questo caso inserire riga per riga soltanto gli importi nella sezione Dare / Avere corretta. 
+
+Al momento del salvataggio, se la causale non prevede il salvataggio di sottoconti a zero, le righe non valorizzate saranno cancellate automaticamente;
+
+Questa modalità di utilizzo è tipica, ad esempio, pr le scritture delle paghe dipendenti dove il template della causale propone tutti i possibili sottoconti utili, ma di volta in volt se ne utilizzano solo alcuni 
+:::
+
+<details>
+
+  <summary>Ulteriori dettagli (Click to expand)</summary>
+ 
+- in caso di registrazione semplice ‘dare/avere' è possibile codificare una causale specifica che preveda già i sottoconti da utilizzare con il tipo importo ‘Tot. Doc./Registrazione' per far si che l'utente scriva semplicemente l'importo nei campi dei totali di testata e la procedura li metta in dare/avere secondo la causale;
+  
 - ogni nuovo inserimento manuale delle righe andrà a coprire l'eventuale sbilancio presente nella registrazione: si ricorda che le registrazioni sbilanciate non possono essere salvate, se non abilitando la causale.
+
+</details>
+
+#### Campi specifici della griglia Libro Giornale
 
 **Valuta**: può prevedere i dettagli della valuta (data cambio, valore cambio e importo valuta): l'importo valuta va caricato sempre in valore assoluto (il segno dare/avere nella divisa della società definisce anche il suo segno); i campi in valuta e nella divisa della società possono essere svincolati tra loro non ricalcolando gli  importi ai messaggi di conferma che sono eseguiti in modifica degli stessi;  
 **Da data competenza/A data competenza**: questo range di date, come detto già per la sezione IVA, è fondamentale per la gestione delle scritture di assestamento sia per i bilanci infrannuali che per il bilancio contabile. Si rimanda alle note specifiche inserite sopra;  
@@ -311,7 +360,7 @@ In caso di registrazioni IVA questa parte viene calcolata, sulla base della logi
 #### Ulteriori annotazioni  
 
 l'utente può procedere a forzare manualmente le righe di libro giornale: normalmente si consiglia di allineare i dati a partire direttamente dall'IVA. Eventuali forzature possono essere resettate premendo il pulsante di ricalcolo libro giornale.  
-Nella causale contabile, in particolare per tutte le causali IVA, per la riga con il ‘Tot. Doc./registrazione' si inserisce il conto generico dei clienti/fornitori, che sarà sostituito di volta in volta con il sottoconto intestatario della registrazione: questa sostituzione sarà effettuata solo se nei **[parametri di contabilità](/docs/configurations/parameters/finance/accounting-parameters)**, sezione lista conti clienti/fornitori, viene autorizzata la tipologia di sottoconto relativa.
+Nella causale contabile, in particolare per tutte le causali IVA, per la riga con il *Tot. Doc./registrazione* si inserisce il conto generico dei clienti/fornitori, che sarà sostituito di volta in volta con il sottoconto intestatario della registrazione: questa sostituzione sarà effettuata solo se nei **[parametri di contabilità](/docs/configurations/parameters/finance/accounting-parameters)**, sezione lista conti clienti/fornitori, viene autorizzata (cioè inserita in griglia) la tipologia di sottoconto relativa associandola al conto mastro il quale dovrà corrispondere a quello presente nel template della causale contabile.
 
 ## 3. Partite
 
