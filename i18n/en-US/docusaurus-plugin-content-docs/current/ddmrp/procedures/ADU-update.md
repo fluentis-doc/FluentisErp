@@ -1,8 +1,8 @@
 ---
-title: Update Daily Average Consumption (ADU) (Aggiornamento consumo medio giornaliero (ADU))
+title: Update Daily Average Consumption (ADU)
 sidebar_position: 1
 ---
-This procedure updates the **Daily Average Consumption (Consumo medio giornaliero)** field of the DDMRP parameters for each item managed with a buffer.
+This procedure updates the **Daily Average Consumption** field of the DDMRP parameters for each item managed with a buffer.
 
 The update occurs according to the method indicated in the item's DDMRP parameters with the following modalities:
 

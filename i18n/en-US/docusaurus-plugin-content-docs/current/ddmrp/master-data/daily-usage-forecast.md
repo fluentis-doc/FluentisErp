@@ -1,5 +1,5 @@
 ---
-title: Consumption Forecasts (Previsioni di consumo)
+title: Consumption Forecasts 
 sidebar_position: 7
 ---
 This table contains the consumption forecasts of buffer items.

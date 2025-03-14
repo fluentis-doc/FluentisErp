@@ -1,12 +1,12 @@
 ---
-title: Buffer Status (Stato dei buffer)
+title: Buffer Status 
 sidebar_position: 1
 ---
 This report shows the status of the stock level of a buffer.
 
 Given a buffer (inventory in a given warehouse), the current and future stock levels are analyzed over a comparable period to the DLT of the item.
 
-Rows are displayed for various dates starting from today, and for each row, the actual stock value (valore effettivo) and the stock percentage value considered against the red zone of the item are indicated.
+Rows are displayed for various dates starting from today, and for each row, the actual stock value and the stock percentage value considered against the red zone of the item are indicated.
 
 A color system is used to draw attention to the criticality level of the stock.
 

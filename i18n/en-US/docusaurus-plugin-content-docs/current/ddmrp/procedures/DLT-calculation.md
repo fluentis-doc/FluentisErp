@@ -1,5 +1,5 @@
 ---
-title: Update Decoupled Lead Time (DLT) (Aggiornamento lead time disaccoppiato (DLT))
+title: Update Decoupled Lead Time (DLT) 
 sidebar_position: 2
 ---
 This procedure calculates the decoupled lead time (DLT) for all buffer items, whether they are in the factory or in distribution centers/hubs.

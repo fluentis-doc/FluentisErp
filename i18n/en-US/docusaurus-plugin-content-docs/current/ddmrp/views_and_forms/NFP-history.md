@@ -1,5 +1,5 @@
 ---
-title: Historical NFP Calculation Data (Dati storici calcoli NFP)
+title: Historical NFP Calculation Data 
 sidebar_position: 6
 ---
 This form displays the NFP calculation data performed so far.

@@ -1,5 +1,5 @@
 ---
-title: Red Zone Adjustment (Rettifica zona rossa)
+title: Red Zone Adjustment 
 sidebar_position: 10
 ---
 

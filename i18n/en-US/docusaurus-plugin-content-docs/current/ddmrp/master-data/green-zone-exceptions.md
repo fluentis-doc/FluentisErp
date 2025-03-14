@@ -1,5 +1,5 @@
 ---
-title: Adjustment of Green Zone (Rettifica zona verde)
+title: Adjustment of Green Zone 
 sidebar_position: 8
 ---
 

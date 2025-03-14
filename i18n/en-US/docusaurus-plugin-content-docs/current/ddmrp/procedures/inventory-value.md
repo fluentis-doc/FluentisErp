@@ -1,5 +1,5 @@
 ---
-title: Calculation of Invested Capital Value in Buffers (Calcolo valore capitale investito nei buffer)
+title: Calculation of Invested Capital Value in Buffers 
 sidebar_position: 4
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: Yellow Zone Adjustment (Rettifica zona gialla)
+title: Yellow Zone Adjustment 
 sidebar_position: 9
 ---
 
