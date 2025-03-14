@@ -21,7 +21,7 @@ Before proceeding, please refer to the information provided on the following pag
 > **Expand Costing**: allows you to expand the document tree of an already created costing. 
 
 :::note Note
-The **Costing** tab (realtavio alla costificazione) is present in the management of both single-product orders and multi-product orders; in the case of multiproduct, the costing will take into account all items present in that order.
+The **Costing** tab is present in the management of both single-product orders and multi-product orders; in the case of multiproduct, the costing will take into account all items present in that order.
 ::: 
 
 At the top of the form, there is a grid containing the list of all the valuations launched for that order, while on the right side, general information about the selected order is displayed.
@@ -41,8 +41,8 @@ In the left table, you can view the document tree that makes up the costing with
 **Variant**: indicates the variant of the item in the document;      
 **M.U.**: indicates the unit of measure of the item in the document;      
 **Quantity**: indicates the quantity of the item in the document;      
-**Total Estimated Cost**: indicates the total estimated (preventive) cost of the item in the document;      
-**Total Effective Cost**: indicates the total actual (consuntivo) cost of the item in the document;      
+**Total Estimated Cost**: indicates the total estimated cost of the item in the document;      
+**Total Effective Cost**: indicates the total actual cost of the item in the document;      
 **Item Description**: indicates the description of the item in the document;      
 **Variant Description**: indicates the description of the variant of the item in the document.      
 
@@ -139,4 +139,4 @@ In this tab, all cost components regarding estimated and effective costs are hig
 > **Synthetic**: in this type of analysis, the *Industrial Cost* is reported, thus as the sum of material costs and processing costs, in addition to *Direct Costs*, *General Costs*, and *Other Costs* with the total of *Refill* and *Corrections*;     
 > **Analytic**: in this type, all items are reported individually in the graph, so the *Industrial Cost* is divided into *Material Cost*, *Internal Work Cost*, and *External Work Cost*; items related to *Refill* and *Corrections* are also reported separately, and obviously, *Direct Costs*, *General Costs*, and *Other Costs* are also reported.       
 
-For details on the common functionality of the forms, refer to the link [Custom functionalities, buttons, and fields](/docs/guide/common).
+For details on the common functionality of the forms, refer to the link [Custom features, buttons, and fields](/docs/guide/common).

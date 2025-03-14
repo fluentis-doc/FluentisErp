@@ -39,7 +39,7 @@ On the other hand, double-clicking on an element of the graph opens a pop-up con
 
 *Specific buttons*:  
 
-> **Change phases**: once a phase is selected, this command allows to *Update (Aggiornare)* the phase by changing: phase, machine, work center, total machine time, worker time, and setup time. Additionally, by selecting the *Insert* option, it is possible to add a new phase or, through the *Delete* option, to remove it permanently;            
+> **Change phases**: once a phase is selected, this command allows to *Update* the phase by changing: phase, machine, work center, total machine time, worker time, and setup time. Additionally, by selecting the *Insert* option, it is possible to add a new phase or, through the *Delete* option, to remove it permanently;            
 > **Change dates**: allows changing the start date of the selected phase;         
 > **Zoom in**: allows decreasing the temporal detail in the graph;          
 > **Zoom to window**: allows viewing the temporal detail in the graph based on the *Start/End Dates* indicated in the filters;                    
@@ -49,4 +49,4 @@ On the other hand, double-clicking on an element of the graph opens a pop-up con
 > **Zoom month**: allows viewing a time span of one month in the graph starting from the *Start Date*;     
 > **Zoom date**: allows viewing a time span by indicating *Start Date* and *End Date*.
 
-For details on the common functioning of forms, refer to the link [Common functionalities, buttons, and fields](/docs/guide/common).
+For details on the common functioning of forms, refer to the link [Custom features, buttons, and fields](/docs/guide/common).

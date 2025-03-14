@@ -34,8 +34,8 @@ The other statuses that it can assume are:
 - **Scheduled**: the job moves to this status after undergoing the General Scheduling process;  
 - **Launched**: the job moves to this status after at least one of the planned production orders generated from it during the General Scheduling has been released (no other planned orders of purchase or job work should have been released; otherwise, the job moves to executive status);      
 - **Executive**: the job moves to this status after at least one of the production orders generated from it has been released and has become executive, or after at least one of the planned purchase orders or job work generated from it has been released;   
-- **Closed**: the job moves to this status after the production order generated for the item subject to the job has moved to *Executed (Evaso)*;   
-- **Historicized**: the job can be set to this status manually to ensure it no longer appears when searching for *Executed (Evase)* jobs;  
+- **Closed**: the job moves to this status after the production order generated for the item subject to the job has moved to *Executed*;   
+- **Historicized**: the job can be set to this status manually to ensure it no longer appears when searching for *Executed* jobs;  
 - **Cancelled**: the job can be set to this status manually, instead of deleting it entirely, to indicate that the job, which was initially planned, has not been brought into production.
 
 **Description**: allows entering a description related to the job;        
