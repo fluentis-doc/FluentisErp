@@ -3,7 +3,7 @@ title: Phase Sequence - TopDown Grid
 sidebar_position: 2
 ---
 
-:::important Purpose
+:::important What it is for
 The **Phase Sequence** procedure in Fluentis, through the "Phase Sequence - TopDown grid" functionality, allows for optimizing the management of production phases by assembling manual sequences or those based on custom rules.      
 After a careful selection of filters, including work center, order period, and job order, the phases not yet ordered are listed in an upper grid. From there, the phases are moved to the lower grid to assign a sequence.      
 The form includes tools to modify data associated with the phases, calculate times, and update dates, ensuring precise control over production scheduling. Specific buttons facilitate the calculation of sequences, inventory management, and order status updates, ensuring an efficient production flow.
@@ -57,7 +57,7 @@ In addition to updating the dates in the order, those in the connected job order
 > **Expand Grid**: allows hiding the filter area of the form for easier work on the grids;         
 > **Double Grid**: allows hiding the first grid for easier work on the second.          
 
-For details on the common functionality of the forms, please refer to the link [Custom functionalities, buttons, and fields](/docs/guide/common).
+For details on the common functionality of the forms, please refer to the link [Custom features, buttons, and fields](/docs/guide/common).
 =======
 ---
 title: Phase Sequence - TopDown Grid 
@@ -118,5 +118,5 @@ In addition to updating the dates in the order, those in the connected job are a
 > **Expand grid**: allows hiding the filter area of the form to work more easily on the grids;         
 > **Double grid**: allows hiding the first grid to work more easily on the second.          
 
-For details on the common operation of forms, refer to the link [Common functionalities, buttons, and fields](/docs/guide/common).
+For details on the common operation of forms, refer to the link [Custom features, buttons, and fields](/docs/guide/common).
 

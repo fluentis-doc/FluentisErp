@@ -1,5 +1,5 @@
 ---
-title: Net Flow Position Analysis (Analisi Net Flow Position)
+title: Net Flow Position Analysis 
 sidebar_position: 3
 ---
 This report shows the most relevant information related to the planning process for Ddmrp buffers.

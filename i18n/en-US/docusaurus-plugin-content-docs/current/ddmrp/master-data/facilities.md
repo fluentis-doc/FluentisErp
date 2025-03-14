@@ -11,7 +11,7 @@ In Fluentis, we refer to each node of the supply chain as a "Facility," and this
 
 A hierarchical structure is considered as described below.
 
-**Distribution Centers (Centri di distribuzione)**
+**Distribution Centers**
 
 These are the logistical units that serve end customers directly through the stocks they hold.
 

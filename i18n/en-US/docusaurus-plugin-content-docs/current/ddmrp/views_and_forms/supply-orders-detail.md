@@ -1,5 +1,5 @@
 ---
-title: Detail of Procurement Needs/Orders (Dettaglio ordini di approvvigionamento/fabbisogni)
+title: Detail of Procurement Needs/Orders 
 sidebar_position: 5
 ---
 

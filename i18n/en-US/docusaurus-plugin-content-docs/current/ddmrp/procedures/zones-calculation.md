@@ -1,5 +1,5 @@
 ---
-title: Update Value of Item Zones to Buffer (Aggiornamento valore zone articoli a buffer)
+title: Update Value of Item Zones to Buffer 
 sidebar_position: 3
 ---
 
@@ -19,6 +19,6 @@ The red zone is calculated as ADU x DLT x LTF (1 + VAF), which is average daily 
 
 This is why, as variability increases, the red zone increases as well, meaning the safety stock of the item, which is the portion of stock needed to deal with unforeseen events.
 
-This procedure takes into account any values of the **Average Daily Consumption Correction Factor (Fattore di rettifica del consumo giornaliero medio)** as well as any exceptions for the red, yellow, and green zones valid at the time of execution.
+This procedure takes into account any values of the **Average Daily Consumption Correction Factor** as well as any exceptions for the red, yellow, and green zones valid at the time of execution.
 
 The result is used to modify the values of the zones in the DDMRP parameters table.

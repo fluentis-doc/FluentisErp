@@ -1,5 +1,5 @@
 ---
-title: Introduction (Introduzione)
+title: Introduction
 sidebar_position: 1
 ---
 
@@ -7,7 +7,7 @@ sidebar_position: 1
 
 In Fluentis ERP, the application of the MES model has been designed by implementing a large number of parameters for the integrated management of data coming from production processes, which significantly influence the company's profitability. In the Fluentis MES software, we can notice how the documents related to production orders, which are actually launched but not necessarily executable, define the sequence by which, in each department, and even more specifically in each work center, all necessary information for carrying out the production activity is defined. The materials, phases and sub-phases, setups, and generally all supporting documentation are aimed at making the execution of the activity as automated, organized, and smooth as possible. The main algorithm of an ERP specialized in Production is defined by the MRP, the planning system that ensures the correct allocation of materials and resources needed to carry out production activities. The MRP algorithm is configured based on a substantial series of parameters to best adapt to the type of production reality represented by the company.
 
-## Modules of the area (Moduli dell'area)
+## Modules of the area 
 
 import Link from '@docusaurus/Link';
 

@@ -1,5 +1,5 @@
 ---
-title: Update Net Flow Position (NFP) Value (Aggiornamento valore Net Flow Position (NFP))
+title: Update Net Flow Position (NFP) Value 
 sidebar_position: 5
 ---
 

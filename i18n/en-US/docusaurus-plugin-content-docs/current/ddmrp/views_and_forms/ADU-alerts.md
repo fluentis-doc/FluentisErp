@@ -1,5 +1,5 @@
 ---
-title: Average Daily Consumption Alerts (Allarmi consumo medio giornaliero)
+title: Average Daily Consumption Alerts 
 sidebar_position: 7
 ---
 This report allows you to verify whether the average daily consumption (ADU) of any item has varied excessively during a specific time period.

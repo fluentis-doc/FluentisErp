@@ -1,5 +1,5 @@
 ---
-title: Introduction to DDMRP Data Records (Introduzione anagrafiche DDMRP)
+title: Introduction to DDMRP Data Records
 sidebar_position: 0
 ---
 

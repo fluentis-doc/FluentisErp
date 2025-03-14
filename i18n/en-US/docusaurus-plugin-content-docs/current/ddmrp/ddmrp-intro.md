@@ -1,6 +1,6 @@
 ---
 sidebar_position: 1
-title: DDMRP (DDMRP)
+title: DDMRP 
 ---
 
 :::important[Info]
@@ -23,7 +23,7 @@ Thanks to these functionalities, the DDMRP module enables companies to optimize 
 
 
 :::tip[Note]
-The **Ddmrp methodology (metodologia Ddmrp)** is natively implemented within Fluentis, so it is not an external module or software that interacts with the related database. 
+The **Ddmrp methodology** is natively implemented within Fluentis, so it is not an external module or software that interacts with the related database. 
 
 All Ddmrp Fluentis functionalities have been verified by the **Demand Driven Institute**, which has certified the Fluentis Ddmrp solution. 
 

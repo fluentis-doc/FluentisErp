@@ -1,5 +1,5 @@
 ---
-title: Buffer Profiles (Profili di buffer)
+title: Buffer Profiles 
 sidebar_position: 4
 ---
 
@@ -9,14 +9,14 @@ This way, each buffer item can be associated with its profile, making it easier 
 
 A profile is identified by the combination of three parameters:
 
-1. **part type (tipo parte)**
+1. **part type**
 
    - M = manufacturing, i.e., part produced in the factory (finished product or semi-finished product)
    - I = intermediate, i.e., semi-finished part produced in the factory (this distinction from M is optional)
    - P = purchase, purchased part
    - D = distributed, part stored in a distribution center (in this case, the record cannot have an empty warehouse field)
 
-2. **lead time category (categoria di lead time)**
+2. **lead time category**
 
    Comparing items with the same part type, a lower and an upper value of lead time can be defined, allowing items to be grouped into three groups with an associated coefficient between 0 and 1.
 
@@ -26,7 +26,7 @@ A profile is identified by the combination of three parameters:
 
    The coefficient value is inversely proportional to the procurement time, since for items with a long lead time, it is preferable to have more smaller orders than fewer large orders, thus reducing the risk arising from delivery issues.
 
-3. **variability category (categoria di variabiltà)**
+3. **variability category**
 
    Comparing items with the same part type, analyzing the variability on the demand and supply sides, it is determined whether a buffer is characterized by low, medium, or high variability.
    
@@ -34,8 +34,8 @@ A profile is identified by the combination of three parameters:
 
    Three levels of variability are considered, associated with a coefficient between 0 and 1, as follows:
 
-   - L = low variability (bassa variabilità) (coefficient between 0 and 0.4)
-   - M = mid variability (media variabilità) (coefficient between 0.41 and 0.6)
-   - H = high variability (alta variabilità) (coefficient between 0.61 and 1)
+   - L = low variability (coefficient between 0 and 0.4)
+   - M = mid variability (coefficient between 0.41 and 0.6)
+   - H = high variability (coefficient between 0.61 and 1)
 
    The higher the variability, the higher the level of safety stock for the buffer (red zone), which is indeed proportional to the variability coefficient.

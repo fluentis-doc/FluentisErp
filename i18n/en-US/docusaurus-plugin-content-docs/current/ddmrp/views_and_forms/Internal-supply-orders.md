@@ -1,5 +1,5 @@
 ---
-title: DDMRP internal orders
+title: DDMRP Internal Orders
 sidebar_position: 4
 ---
 

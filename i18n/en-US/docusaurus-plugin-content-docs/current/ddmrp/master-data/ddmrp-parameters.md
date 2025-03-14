@@ -1,5 +1,5 @@
 ---
-title: DDMRP Item Parameters (Parametri DDMRP articoli)
+title: DDMRP Item Parameters 
 sidebar_position: 5
 ---
 
@@ -36,17 +36,17 @@ The DDMRP parameters to be defined are as follows:
 
   is used to enforce a different value than that expected from the buffer profile associated with the record.
 
-- **Variability Factor (Fattore variabilità)**,
+- **Variability Factor**,
 
   is used to enforce a different value than that expected from the buffer profile associated with the record.
 
-- **Average Daily Consumption (ADU) (Consumo medio giornaliero)**, 
+- **Average Daily Consumption (ADU)**, 
 
   is the average quantity consumed daily at the logistic unit of the record (therefore varies for each logistic unit) and must consider a sufficiently long time period (multiple times the lead time of the item) over which to perform the average.
   
   This value strongly influences the stock level of the item and must be updated periodically [(see procedure)](/docs/ddmrp/procedures/ADU-update).
 
-- **Decoupled Lead Time (DLT) (Lead time disaccoppiato)**,
+- **Decoupled Lead Time (DLT)**,
 
   is a non-editable field resulting from the calculation of the relevant procedure.
 
@@ -54,19 +54,19 @@ The DDMRP parameters to be defined are as follows:
 
   In the case of a distribution center, it is given by the sum of the transport time from the supplying logistic unit and any production time if the supplying unit is the factory and the item is not a buffer in the factory (therefore there is no stock).
 
-- **Cumulative Lead Time (CLT) (Lead time cumulativo)**,
+- **Cumulative Lead Time (CLT)**,
 
   is a non-editable field resulting from the calculation of the DLT procedure.
 
   It is the time necessary to procure the item in the factory if none of the items in its bill of materials is a buffer, therefore it is the production time in the case of total absence of stock for its bill of materials.
 
-- **Desired Reorder Cycle (DOC) (Ciclo di riordino desiderato)**,
+- **Desired Reorder Cycle (DOC)**,
 
   must be expressed in days and represents the number of days you wish to have between one order and the next.
 
   Its value is taken into account in the calculation of the green zone of this item.
 
-- **Minimum Order Quantity (MOQ) (Quantità minima ordinabile)**,
+- **Minimum Order Quantity (MOQ)**,
 
   if there is a minimum order quantity imposed by the supplier or imposed internally (especially to minimize production setups) it must be indicated in this field.
 
@@ -93,7 +93,7 @@ The DDMRP parameters to be defined are as follows:
 
   Its size increases with the increasing variability associated with the buffer (see buffer profile).
 
-- **Order Peak Threshold (OST) (Soglia picco ordini)**,
+- **Order Peak Threshold (OST)**,
 
   is used in the NFP (Net Flow Position) calculation.
 
@@ -105,13 +105,13 @@ The DDMRP parameters to be defined are as follows:
 
   A value that is too large would often fail to recognize demand peaks (significant but not huge), causing stock to be lower than necessary, resulting in deep erosion of the red zone or even stockouts.
 
-  **Order Peak Horizon (OSH) (Orizzonte picchi ordini)**,
+  **Order Peak Horizon (OSH)**,
 
   is the time horizon from today within which to check for demand peaks (NFP calculation).
 
   This value must not be less than the value of the DLT (decoupled lead time) as it is necessary to notice any demand peaks with sufficient advance, at least equal to the time needed to procure the item.
 
-- **Average Daily Consumption Forecast Method (Metodo di previsione consumo medio giornaliero)**,
+- **Average Daily Consumption Forecast Method**,
 
   select one of the following methods that will be applied by the related ADU update procedure (average daily consumption):
 
@@ -131,7 +131,7 @@ The DDMRP parameters to be defined are as follows:
 
   time period in the future in which to carry out the average daily consumption forecast
 
-- **Stock Type (Tipo scorta)**
+- **Stock Type**
 
   defines the type of DDMRP stock
 
@@ -141,7 +141,7 @@ The DDMRP parameters to be defined are as follows:
 
 
 
-**Import Button (Pulsante importa)**
+**Import Button**
 
 Allows the entry of DDMRP parameters for an item-variant-warehouse combination where the warehouse code identifies a [**logistic unit**](/docs/ddmrp/master-data/facilities) as a distribution center or a hub or the factory (in this case the field is empty).
 
@@ -151,7 +151,7 @@ Then choose a buffer profile to associate with the new record in order to enable
 
 At this point, select the rows to import and press the "insert" button, then open the new records to complete the data entry.
 
-**Parameter Replacement Button (Pulante sostituzione parametri)**
+**Parameter Replacement Button**
 
 Works by selecting rows in the form with the same value in the Warehouse field.
 
@@ -161,7 +161,7 @@ Once multiple rows are selected, the button is enabled and opens a form through 
 
 The modification occurs only if the flag next to the parameter is activated.
 
-**Delete Button (Pulsante cancella)**
+**Delete Button**
 
 Allows the deletion of a row, thereby ensuring that the item in the indicated warehouse is no longer considered a DDMRP buffer.
 

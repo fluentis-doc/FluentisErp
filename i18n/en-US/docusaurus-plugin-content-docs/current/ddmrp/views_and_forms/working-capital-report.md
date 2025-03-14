@@ -1,5 +1,5 @@
 ---
-title: Working Capital Report (Working capital report)
+title: Working Capital Report 
 sidebar_position: 2
 ---
 This report shows the working capital typically invested in the inventory of items managed according to DDMRP logic.

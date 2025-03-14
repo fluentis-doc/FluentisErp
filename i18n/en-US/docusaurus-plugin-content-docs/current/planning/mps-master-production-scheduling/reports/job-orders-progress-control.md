@@ -37,4 +37,4 @@ In this section, you can filter based on the status of the production job (not r
 
 In this section, you can set the order of grouping of the information to be displayed in the print, choosing between the order based on the job, the project, the account, the item, or the start date of the job.
 
-For everything not detailed in this document on the common functioning of forms, please refer to the following link [Common Features, Buttons, and Fields](/docs/guide/common).
+For everything not detailed in this document on the common functioning of forms, please refer to the following link [Custom Features, Buttons, and Fields](/docs/guide/common).
