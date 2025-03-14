@@ -1,11 +1,11 @@
 ---
-title: Introduction (Introduzione)
+title: Introduction 
 sidebar_position: 1
 ---
 
 The MES (Manufacturing Execution System) of Fluentis is a software solution designed to optimize and manage production processes within manufacturing companies. The Fluentis MES integrates various functionalities, such as work order management, traceability of raw materials and finished products, machine data collection, and performance analysis. This system helps companies reduce downtime, optimize resource use, and improve the quality of the final product, ensuring greater competitiveness in the global market.   
 
-## Area Modules (Moduli dell'area)
+## Area Modules 
 
 import Link from '@docusaurus/Link';
 

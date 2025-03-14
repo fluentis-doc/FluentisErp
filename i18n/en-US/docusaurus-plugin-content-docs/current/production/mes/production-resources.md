@@ -1,5 +1,5 @@
 ---
-title: Production resources
+title: Production Resources
 sidebar_position: 4
 ---
 
@@ -49,12 +49,12 @@ In this tab, a number of pieces of information that influence the behavior of th
 If both **Mandatory Operator** and **Mandatory Password** flags are enabled, the operator will have to enter the employee first and then, upon the procedure's request, the password.
 :::
 **Mandatory team**: if active, it enables a check that requires the operator to enter at least one team member before proceeding with the declaration activity;     
-**Allow Overlapping Reporting (Consenti segnalazione sovrapposta)**: if active, it allows the phases of a production order to be declared without following the indicated sequence in the cycle; if not activated, overlapping phases or declaring phases without following the cycle's sequence is not possible;    
+**Allow Overlapping Reporting**: if active, it allows the phases of a production order to be declared without following the indicated sequence in the cycle; if not activated, overlapping phases or declaring phases without following the cycle's sequence is not possible;    
 **Enable multi-phase**: if active, it allows for declarations of multiple phases simultaneously;    
 **Maximum number of phases**: allows indicating the maximum number of phases that can be declared simultaneously;    
 **Manual time entry**: if active, it enables the operator to input working time;     
 **Time Proposed**: if active, it enables the automatic proposal of working time input;      
-**Time Allocation Method (Metodo di ripartizione tempo)**: indicates the method by which time is allocated in the case of simultaneous declarations of multiple processing phases. The active methods are: *Sequence*: time is allocated to the phases in work based on the planned or entered sequence, *Proportional*: time is allocated proportionally based on the produced quantity of the declaration and the quantities to be produced of the individual phases;       
+**Time Allocation Method**: indicates the method by which time is allocated in the case of simultaneous declarations of multiple processing phases. The active methods are: *Sequence*: time is allocated to the phases in work based on the planned or entered sequence, *Proportional*: time is allocated proportionally based on the produced quantity of the declaration and the quantities to be produced of the individual phases;       
 **Quantity distribution type**: indicates the method by which the quantity is allocated in the case of simultaneous declarations of multiple processing phases. The active methods are: *Sequence*: quantity is allocated to the phases in work based on the planned or entered sequence, *Proportional*: quantity is allocated proportionally based on the produced quantity of the declaration and the quantities to be produced of the individual phases; *Manual* allows for manually indicating the produced quantities in each individual phase;         
 **Mandatory manual material declaration**: if active, along with the flag **Mandatory manual material declaration** present in the [MRP Parameters](/docs/configurations/parameters/production/mrp-parameters/mrp-parameters-intro) of the item, ensures that in the *Materials* tab of the Production Declarations, the item is proposed with a quantity of zero, thus requiring the user to manually input a value before proceeding;    
 **Mandatory WorkSheet**: if active, it enables a check that prevents the operator from adding a phase that does not yet have the "Final Print" flag enabled. This "Final Print" flag can be enabled through the print procedure of the [Work Sheet](/docs/production/pp-production-in-progress/reports/worksheet);    
@@ -63,7 +63,7 @@ If both **Mandatory Operator** and **Mandatory Password** flags are enabled, the
 **Automatic registration**: if active, it allows for the automatic creation of stock registration upon declaration confirmation.    
 
 ### *Document Management*     
-**Document Origin Type to Exclude (Tipo origine documento da escludere)**: this table is linked to the *Documents and Operating Instructions* tab of Fluentis MES and allows defining which types of documents should be excluded; thus, files attached to these document types will not be displayed in the *Documents and Operating Instructions* tab.     
+**Document Origin Type to Exclude**: this table is linked to the *Documents and Operating Instructions* tab of Fluentis MES and allows defining which types of documents should be excluded; thus, files attached to these document types will not be displayed in the *Documents and Operating Instructions* tab.     
 The types of documents that can be excluded are: 
 > *None*: none of the document types is excluded;   
 > *ITEM*: all documents (files, images, ...) related to the item will not be displayed in the *Documents and Operating Instructions* tab;     
@@ -160,9 +160,9 @@ This section allows hiding various unnecessary information within Fluentis MES.
 *Analysis*      
 > *OEE*: if active, hides the OEE charts in the *Analysis* tab;    
 > *Charts*: if active, hides the bar charts (*Quantity analysis*, *Time analysis*) in the *Analysis* tab;    
-> *Grids*: if active, hides the tables (*Quantity values*, *Time Values (Valori tempo)*) in the *Analysis* tab.      
+> *Grids*: if active, hides the tables (*Quantity values*, *Time Values*) in the *Analysis* tab.      
 
 *Extra Data*
 > *Extra data list*: if active, hides the grid related to the *Extra Data List (select a phase)* in the *Extra Data* tab;     
 
-For all that is not detailed in this document regarding the common functioning of forms, please refer to the following link: [Common Features, Buttons, and Fields](/docs/guide/common).
+For all that is not detailed in this document regarding the common functioning of forms, please refer to the following link: [Custom Features, Buttons, and Fields](/docs/guide/common).

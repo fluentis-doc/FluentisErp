@@ -99,7 +99,7 @@ This table contains the following data:
 > *Variant*: indicates the variant of the item;    
 > *Detail of the item to consider*: indicates the maximum detail of the item being considered for testing (None, Lot, S.N., U.D.C.). This is selected in the *Quality Controls* tab of the management of [Production Resources](/docs/production/mes/production-resources);             
 > *Detail reference*: indicates the value of the *Detail of the item to consider*, for example, the lot number;          
-> *U.M.*: indicates the unit of measure of the item;    
+> *M.U.*: indicates the unit of measure of the item;    
 > *Quantity*: indicates the quantity of the item;    
 > *Scrap*: if active, indicates that the indicated quantity is of scrap type; if not active, it indicates that the quantity produced is not scrap;             
 > *Description of the item*: indicates the description of the item;          
