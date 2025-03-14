@@ -232,7 +232,7 @@
     "description": "The label for category Contabilizzazioni in sidebar financeArea"
   },
   "sidebar.financeArea.category.Documenti SDI": {
-    "message": "SDI Documents",
+    "message": "ES Documents",
     "description": "The label for category Documenti SDI in sidebar financeArea"
   },
   "sidebar.erpHome.category.Anagrafici": {
@@ -1680,11 +1680,11 @@
     "description": "The label for category Procedure comuni in sidebar sales"
   },
   "sidebar.sales.category.Documenti SDI e NSO": {
-    "message": "SDI and NSO Documents",
+    "message": "ES and NSO Documents",
     "description": "The label for category Documenti SDI e NSO in sidebar sales"
   },
   "sidebar.sales.category.Documenti SDI": {
-    "message": "SDI Documents",
+    "message": "ES Documents",
     "description": "The label for category Documenti SDI in sidebar sales"
   },
   "sidebar.sales.category.Documenti NSO": {
