@@ -21,6 +21,6 @@ E' possibile inserire alcuni dati utili per l'interazione con **DocFinance®** (
 
 **SIA** codice per l'invio dei file telematici italiani, es. per le Ricevute bancarie, (se non indicato viene utilizzato quello di default inserito nella tabella Società, Home>Tabelle>Generali).
 
-**Banca d'appoggio** consente di collegare l'anagrafica banca al relativo codice di [**banca d'appoggio**](/docs/configurations/tables/general-settings/reference-bank.md) generica. Questo può servire per canalizzare automaticamente i movimenti finanziari dei partitari e valutarli nelle analisi di cash flow.
+**Banca d'appoggio** consente di collegare l'anagrafica banca al relativo codice di [**banca d'appoggio**](/docs/configurations/tables/general-settings/reference-bank) generica. Questo può servire per canalizzare automaticamente i movimenti finanziari dei partitari e valutarli nelle analisi di cash flow.
 
 La sezione legata alla *Fatturazione elettronica* non è attualmente in uso.

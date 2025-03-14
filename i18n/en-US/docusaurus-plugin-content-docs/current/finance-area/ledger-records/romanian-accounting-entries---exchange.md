@@ -1,38 +1,42 @@
 ---
-title: Currency Adjustment
+title: Currency Adjustment 
 sidebar_position: 2
 ---
 
-This mask has been created in order to enable the user to calculate, automatically to a certain date, the change differences for currency accounts and in order to create maturity values and regularization accounting records. 
+This form allows you to automatically calculate, at a certain date, the exchange rate differences for currency accounts (such as receivables and payables or bank accounts) and to generate the entries and ledger records for the adjustment.
 
-Within the Parameters area there is a series of parameters with which it will be possible to realize the regularization accounting: 
+**First, you need to select a currency** (one at a time) for which the calculation will be performed, along with (using the radio buttons on the right) the type of 
+calculation:
 
-**Temporary**: it enables the user to create the change difference as a temporary accounting record;
+- Availability: considers balances (e.g., bank)
+- Transactions: reads receivables and payables towards customers / suppliers
+    - Active: customers
+    - Passive: suppliers
 
-**Change**: with which it is possible to calculate the updated value. It is possible to propose it automatically by the program (starting from the currency change table), but the user can edit it;
+The account / detail account and Division are optional filters to narrow down the search.
 
-**Date** and **Document Number** and **Accounting Template**: related to the accounting record to be regularized. The inserted date represents also the date up to which it is possible to select the accounting records;
+---
 
-**Costs and Revenues**: used in order to record the change differences;
+In the central grid that displays the details of the searched positions, the amount expressed in the foreign currency, the historical euro equivalent calculated as the algebraic sum of all movements, the current equivalent recalculated at the exchange rate shown further down in the form, and the positive or negative exchange difference are highlighted, account by account.
 
-Within the 'Restore' area it is possible to view the result of the regularization operations performed according to the filters set (From/To date, account). 
+---
 
-RIBBON BAR: the ribbon bar represents the Form menu, that is the area in which it is possible to perform actions. The list of features is the following: 
+In the *Parameters* area, a series of parameters are defined that will be used for the accounting of the adjustment:
 
+**Is Provisory**: allows generating the exchange difference as a provisional ledger record;
 
+**Exchange**: with which the updated value is calculated. It is automatically suggested by the program (from the currency exchange table) but can be changed by the user;
 
-| Function | Meaning |
+**Date** and **Document Number** and **Ledger template** related to the ledger record to be adjusted. **The entered date also represents the date until which the ledger records are selected;**
+
+**Revenue** and **Cost**: used to record exchange differences;
+
+---
+
+In the *Restore* tab, you can view and restore the results of the adjustment operations performed based on the set filters (From date/To date, the account).
+
+| Function | Extended Description |
 | --- | --- |
-| Search | Button to search accounts to be regularized according to the filters set.  |
-| To Be Accounted | Button to regularize the accounts selected within the filters area and in correspondence to the parameters inserted into the related area.  |
-| Restore Regularization | Button to delete the regularization operations selected into the result grid.  |
-
-FILTER AREA: in this area it is possible to select the accounts to be regularized thanks to the following filters. The currency is part of the accounts, the account type (active/passive or of availability/maturity values) and the account. 
-
-RESULT GRID: the result grid is located at the bottom of the window. It represents both the list of accounts, that correspond to filter data above mentioned, and values, that will be elaborated through the regularization procedure (historical value, tha value updated according to the change inserted into the parameters area, the change difference). 
-
-
-
-
-
-
+| Search | Button to search for accounts to be adjusted based on the entered filters. |
+| Accounting | Button to execute the adjustment operation for the selected accounts in the filter area and according to the parameters set in the related area. |
+| Restore Adjustment | Button to cancel the selected adjustment operations in the results grid. |

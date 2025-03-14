@@ -102,5 +102,5 @@ All'interno della scheda cespite nella griglia centri di costo della tab **Opera
 
 ### **VIDEO TUTORIALS**
 :::important Vedi Anche
-[**VIDEO TUTORIALS SULLE TABELLE CESPITI**](/docs/video/finance/intro.md)
+[**VIDEO TUTORIALS SULLE TABELLE CESPITI**](/docs/video/finance/intro)
 :::

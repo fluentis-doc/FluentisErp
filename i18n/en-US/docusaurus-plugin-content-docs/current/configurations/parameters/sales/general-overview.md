@@ -1,12 +1,6 @@
 ---
-title: General Overview
+title: Generality
 sidebar_position: 1
 ---
 
-The sales area parameters allow the user to set the sales document flow according to necessary conditions belonging to each single company.
-
-
-
-
-
-
+The parameters of the sales area can be found in the path **Parameters > Sales** and allow you to define the flow of purchase documents according to the necessary logic for each company.

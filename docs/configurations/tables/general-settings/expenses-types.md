@@ -20,7 +20,7 @@ Possono essere aggiunte poi direttamente nel documento , oppure nell'anagrafica 
 **Tipo IVA:** Tipo iva per gestire il riaddebito (Salvo casi o regimi iva particolari indicare Generico)
 
 
-### Flag di aggancio alle logiche
+### Flag di aggancio alle logiche {#link-to-logic}
 
 **Varie:** identifica una spesa varia ad addebito semplice. Le spese Varie presenti nei documenti vengono tutte riportate nel documento riepilogativo che evade i documenti stessi.
 

@@ -1,85 +1,40 @@
 ---
-title: Records
+title: Search Records
 sidebar_position: 2
 ---
 
-The 'Stock Records Search' window can be opened through the following path Logistics > Stock > Records > Records, and contains the list of database stock records, editing them and viewing a detail.
+This feature allows you to search for all warehouse records present in the database with the purpose of viewing, modifying, and possibly deleting them, or proceeding to insert a new record; the window consists of a filter area and a results grid.
 
-The window consists of a filter are and of a result grid.
+Once all desired filters are set, simply click the **Search** button to display the results within the results grid.
 
-The user can use the following filters:
+To open the details of a record, simply select it and double-click the mouse or click the **Modify** button (which allows you to enter the details and modify them) or the **View** button (which allows you to enter the details and view them but without the ability to modify).
 
-**Warehouse**: through this combo it is possible to set the warehouse code for which to filter records. In static next there is the description of the selected warehouse;
+From this form, you can also insert a new warehouse record using the **New** button.
 
-**Template**: through this combo it is possible to set the warehouse template code for which to filter records. In static next there is the description of the selected template;
+*The results grid consists of the following fields:*
 
-**From Number…To Number…**: through these 2 fields it is possible to set a numbers range in order to filter records according to their progressive number;
+**Warehouse**: the column displays the code of the warehouse for which the record was generated;   
 
-**From Date…To Date…**: through these 2 fields it is possible to set a dates range in order to filter records according to their insertion date;
+**Template**: the column displays the code of the warehouse reason that generated the movement and thus has been entered in the header of the record;  
 
-**Reference Document**: through this field it is possible to filter stock records according to this field where usually appears the reference document, that has generated the same record;
+**Date**: the column displays the date of entry of the warehouse record;   
 
-**Document Date**: through this field it is possible to filter stock records according to the date of the reference document, that has generated the same record;
+**Number**: the column displays the progressive number of the warehouse record;   
 
-**Customer / Vendor**: through this field it is possible to filter the stock records according to customer or vendor of document whose load and unload has generated the record;
+**Reference document**: the column displays what is present in the "Reference Document" field of the record header;   
 
-**Prod. J.O.**: through these 2 fields it is possible to insert year and number of the production job order from which the stock record has been generated thanks to following releases and signals;
+**Document date**: the column displays the date of the reference document present in the record header;   
 
-**Item**: the first combo enables the user to set the item class. Through a double click on the second field it is possible to open a “Items Help” through which to select the single item (code and description). By filtering per item it is possible to find all records within which there is an item movement;
+**Loading / Unloading (Carico / Scarico)**: the column displays the type of record. It can only be loading or unloading;   
 
-**Variant**: thanks to a double click it is possible to open a variants help, through which the user can select the item variant and filter records within which there is a movement for that item variant;
+**Counterparty Warehouse (Magazzino di Contropartita)**: the column displays the code of the counterparty warehouse record, if present;   
 
-**Lots**: through this field it is possible to filter records according to the Lot Code. In this way it is possible even to find all records within which there is a movement of that item lot;
+**Counterparty Reason (Causale di Contropartita)**: the column displays the code of the counterparty reason of the record, if present;   
 
-**Job Order**: through this field it is possible to filter records according to the sales job order linked to the header, by using the specific job orders help that can be exploded thanks to a double click on yellow field.
+**Counterparty Number (Numero contropartita)**: the column displays the progressive number of the counterparty record, if present;   
 
- 
+**Counterparty Reference Document (Documento Riferimento contropartita)**: the column displays what is present in the "Reference Document" field of the counterparty record header, if present;   
 
-Hereinafter the list of columns that can be viewed in the result grid:
+**Account / Subaccount / Account Description (Conto / Sottoconto / Descrizione conto)**: the column displays the account, subaccount, and the name of the client or supplier entered in the warehouse record header.
 
-**Warehouse**: the column shows the warehouse stock on which the record has been generated;
-
-**Template**: the column shows the warehouse template code that has performed movement and that has been inserted into the record header;
-
-**Date**: the column shows the insertion date of the warehouse record;
-
-**Number**: the column shows the progressive number of the warehouse record;
-
-**Reference Document**: the column shows what is contained in “Reference Document” field of record header;
-
-**Doc. Date**: the column shows the reference document date that is in the record header;
-
-**Load / Unload**: the column shows the record type. It can belong to a load or unload record;
-
-**Offset Ware.**: the column shows the stock code of offset record, if available;
-
-**Offset T.**: the column shows the stock code of offset record, if available;
-
-**Off. No.**: the column shows the progressive number of offset record, if available;
-
-**Detail Account Ref. Document**: the column shows what is located within the “Reference Document” field of the detail record header, if available;
-
-**Account / Detail Account / account/detail account description**: the column shows the account, detail account and company name of customer or vendor who is inserted into stock record header. 
-
-RIBBON BAR: it represents the Form menu, that is the area in which it is possible to perform actions linked to a procedure in use. The possible features list is the following: 
-
-
-
-| Function | Meaning |
-| --- | --- |
-| Search  | Button to apply search filter within database of the inserted Stock Records. |
-| Insert | It refers to the procedure to insert a new Stock Record. |
-| Edit | It refers to the procedure to edit a Stock Record. |
-| View | It refers to the procedure to view a Stock Record. |
-| Delete | It refers to the procedure to delete a Stock Record previously inserted. |
-| Edit Attributes Filter | It opens a window that enables the user to activate or not the Attributes Filter. In this way it is possible to filter the Stock Records according to attributes inserted through the encoder into items of the same Record. |
-
-FILTER AREA: the filter area contains the list of possible data types thanks to which is is possible to perform a selection, a research on the total warehouse records. Typically filters have 'AND' condition and it is possible to specify more search filters at the same time.
-
-RESULT GRID: in the result grid it is possible to view the list of stock records which correspond to filter data, above mentioned. After having specified values through which to obtain a records search the user, by clickin on Search button on the related Ribbon, will obtain the list of the desired records in the result grid.
-
-
-
-
-
-
+For all other details not specified in this document regarding the common operation of forms, please refer to the following link [Common Functions, Buttons, and Fields (Funzionalità, pulsanti e campi comuni)](/docs/guide/common).

@@ -1,24 +1,24 @@
 ---
-title: Search General Ledger Templates
+title: Search for General Accounting Reasons (Ricerca le causali di contabilità generale)
 sidebar_position: 2
 ---
 
-RIBBON BAR: the ribbon bar represents the Form menu, that is the area on which it is possible to perform actions linked to the procedure in use. The possible features list is the following: 
+Allows searching for all reasons in order to view, modify, and potentially delete them, or to proceed with the insertion of a new reason. The window consists of a filter area and a result grid.
 
+Once all desired filters are set, simply click on the **Search** button in the *Ribbon bar* to display the results within the result grid.
 
+To open the details of a reason, simply select it and double click with the mouse or click the **Modify** button (allows you to enter the details and modify them) or the **View** button (allows you to enter the details and view them but without being able to modify them).
 
-| Function | Meaning |
-| --- | --- |
-| Search | Button to search the previously inserted templates through the use of the following search fields: template, description, movement type and flag of valid or not templates.  |
-| Insert | Button to insert a new general ledger template. |
-| Edit the Selected Line | Button to edit the selected ledger template. |
-| Duplicate the Selected Template | Button to duplicate the selected template, that is necessary in order to create a new template by starting from a template with similar features. It will be possible to open a dialog on which to assign a code to the new template to be created, and after having confirmed this operation, it will be necessary to enter the just created template in order to edit some of its features.  |
-| Delete | Button to delete the selected ledger template. |
-| Preview | Button to perform the preview.  |
-| Print | Button to print. |
+To insert a new reason, click the **New** button.
 
+*Specific button*  
 
+> **Duplicate the selected template**: allows duplicating the selected reason. Useful for creating a new reason based on one with similar characteristics. A window will open asking for a code to be assigned to the new reason you intend to create, and after confirming, you will be asked to enter the newly created reason to modify some characteristics. 
 
+:::important See Also
+[**VIDEO TUTORIALS ON ACCOUNTING REASONS (VIDEO TUTORIALS SULLE CAUSALI CONTABILI)**](/docs/video/finance/intro)
+:::
 
-
-
+:::tip[More Information (Maggiori informazioni)]
+Consult the page on [**Inserting a New Reason (Inserimento di una nuova causale)**](/docs/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates)
+:::

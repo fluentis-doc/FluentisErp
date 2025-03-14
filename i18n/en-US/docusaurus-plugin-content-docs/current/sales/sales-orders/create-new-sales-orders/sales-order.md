@@ -1,171 +1,170 @@
 ---
-title: Nuovo ordine cliente
+title: New Customer Order (Nuovo ordine cliente)
 sidebar_position: 2
 ---
 
-La form **Crea ordine cliente** si apre tramite il percorso **Vendite > Ordini clienti > Nuovo ordine** oppure tramite il pulsante che si trova nella form [Ricerca ordini clienti](/docs/sales/sales-orders/create-new-sales-orders/search-sales-orders).
+The form **Create Customer Order** opens through the path **Sales > Customer Orders > New Order (Vendite > Ordini clienti > Nuovo ordine)** or via the button located in the [Customer Orders Search form](/docs/sales/sales-orders/create-new-sales-orders/search-sales-orders).
 
-## *Come creare un ordine cliente*
+## *How to Create a Customer Order (Come creare un ordine cliente)*
 
 <details>
  
-<summary>Clicca per i passaggi fondamentali</summary>
+<summary>Click for key steps (Clicca per i passaggi fondamentali)</summary>
  
-1. **Inserisci i dati obbligatori**: *Tipo Ordine* e *Cliente*. *Anno*, *Numero* e *Data Inserimento* saranno proposti in automatico.  
+1. **Enter required data (Inserisci i dati obbligatori)**: *Order Type* and *Client*. *Year*, *Number*, and *Insert date* will be proposed automatically.  
  
-2. **Inserisci o modifica i dati facoltativi** della testata: come date di consegna, eventuali *sconti*, la *destinazione*, ecc.  
+2. **Enter or modify optional data (Inserisci o modifica i dati facoltativi)** of the header: such as delivery dates, any *Discounts*, the *Destination*, etc.  
  
-3. **Inserisci gli Articoli**: mediante doppio click nel campo *Codice articolo* si apre l’help articoli che permette di cercare e selezionare un articolo esistente. Tutti gli altri dati della riga, come *unità di misura*, *quantità*, *prezzo*, saranno proposti in automatico, ma possono essere modificati.
-In alternativa è possibile selezionare come *Tipo riga* un *Articolo non codificato* e inserire manualmente i dati successivi.
+3. **Enter Items (Inserisci gli Articoli)**: by double-clicking in the *Item code* field, the item help will open, allowing you to search and select an existing item. All other line data, such as *Units of Measure*, *Quantity*, *Price*, will be proposed automatically but can be modified. Alternatively, you can select as *Line type* an *Not-Codified Item* and manually enter the subsequent data.
  
-4. **Inserisci eventuali sconti o altre informazioni aggiuntive** nei tab *Sconti/listini* e *Dati articolo*
+4. **Enter any discounts or additional information (Inserisci eventuali sconti o altre informazioni aggiuntive)** in the *Discounts/Price Lists* and *Item data* tabs.
  
-5. **Controlla la sezione dei Riepiloghi** ed inserisci eventuali spese o sconti finali.  
+5. **Check the Summary section (Controlla la sezione dei Riepiloghi)** and enter any final expenses or discounts.  
  
-6. Una volta controllato e confermato l’ordine, **inserisci una *Data conferma* e attiva il flag *Stampato* in testata** in modo da rendere l’ordine disponibile per le procedure di evasione.
+6. Once the order has been checked and confirmed, **enter a *Confirmation date* and activate the *Printed* flag in the header** to make the order available for fulfillment procedures.
  
 </details>
 
-## **1. Dati obbligatori**
+## **1. Required Data (Dati obbligatori)**
 
-Per continuare la creazione del ordine cliente, l'utente deve inserire i campi **obbligatori**:
+To continue creating the customer order, the user must enter the **required fields (campi obbligatori)**:
 
-- **Tipo ordine**: predefinito in  Configurazione > Tabelle > Vendite > [Tipi ordini](/docs/configurations/tables/sales/sales-order-types); rimandiamo alla documentazione relativa alla tabella per lo studio delle varie configurazioni possibili, ma per poter inserire un ordine è necessario che il tipo Ordine abbiamo definito la tipologia di numerazione, dato obbligatorio. In base alla configurazione presente nel tipo Ordine si possono aprire scenari diversi per l’inserimento dell’ordine cliente, ad esempio avere la creazione automatica di un progetto, la gestione a prezzi ivati, la gestione delle matrici, ecc.   
-- **Numero**: ad ogni documento viene assegnato un numero secondo la numerazione specificata dall'utente nella tabella [Numerazione ordini clienti](/docs/configurations/tables/fluentis-numerations) e al tipo di documento che contiene la numerazione. La numerazione associata alla tipologia di ordine prevede generalmente una progressione automatica basata su data e numero, con una funzione di recupero che copre eventuali buchi nella sequenza (ad esempio, causati dalla cancellazione di documenti). Questo comportamento è regolato da due flag specifici nella tabella della numerazione. Se l'utente desidera inserire manualmente il numero, può disabilitare il flag di progressione data-numero (che garantisce l'incremento della numerazione nelle date future) e il flag di recupero numeri. Inoltre, dovrà abilitare il flag della numerazione esterna, segnalando così al sistema che la numerazione sarà gestita manualmente. 
-- **Cliente**: usando l'[help di campo](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) oppure tastando [direttamente](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection).  Inserendo il cliente, vengono automaticamente popolati, se presenti in anagrafia, i seguenti campi, che spiegheremo nelle sezioni successive: divisa, nazione, lingua, zona, spedizione, listino ed eventuali sconti, pagamenti, sconti, spese, agenti, destinazione, vettori, extra data.               
-- **Data ordine**: indica la data di creazione dell’ordine. Questa data è fondamentale per il calcolo delle scadenze e delle eventuali condizioni di pagamento. Viene proposta la data odierna, modificabile; nel caso in cui la numerazione preveda una progressione di data e numero, e io inserisca una data nel passato, Fluentis controllerà la disponibilità di numeri in quella data per garantire la progressione, e se non presente segnalerà l’utente che non ci sono numeri disponibili in quella data.      
-- **Tipo ritenuta**: questo campo è visibile solo se il cliente gestisce la ritenuta d’acconto, e quindi se in anagrafica presenta l’omonimo flag e il tipo di ritenuta, nel tab [informazioni fiscali](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/fiscal-information). La ritenuta d'acconto è una trattenuta fiscale applicata su pagamenti per prestazioni lavorative o professionali, anticipata al fisco dal committente e successivamente dedotta dall'imposta sul reddito del beneficiario. Per una gestione corretta di questa funzionalità, nella tabella tipi ritenuta deve essere codificato correttamente il codice per la fatturazione elettronica. il documento reperirà in automatico l'assoggettamento alla ritenuta per le righe sulle quali è possibile fare il calcolo, e in automatico calcolerà l'importo della ritenuta. 
+- **Order Type**: defaulted in Configuration > Tables > Sales > [Order Types (Tipi ordini)](/docs/configurations/tables/sales/sales-order-types); refer to the documentation related to the table for studying the various possible configurations, but to enter an order, it is necessary for the Order type to have defined the numbering type, which is a required field. Based on the configuration present in the Order type, different scenarios can be opened for entering the customer order, such as automatic project creation, price management including VAT, matrix management, etc.   
+- **Number**: each document is assigned a number according to the numbering specified by the user in the [Customer Order Numbering (Numerazione ordini clienti)](/docs/configurations/tables/fluentis-numerations) table and the document type that contains the numbering. The numbering associated with the order type generally provides for an automatic progression based on date and number, with a retrieval function that covers any gaps in the sequence (for example, caused by document deletions). This behavior is governed by two specific flags in the numbering table. If the user wishes to manually enter the number, they can disable the date-number progression flag (which guarantees incrementing the numbering in future dates) and the number retrieval flag. Additionally, they must enable the external numbering flag, signaling to the system that the numbering will be managed manually. 
+- **Client**: using the [field help (help di campo)](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) or typing [directly (direttamente)](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection). By entering the customer, the following fields will be automatically populated, if present in the registry: currency, country, language, area, shipping, price list, and any discounts, payments, expenses, agents, destination, carriers, extra data.               
+- **Order date**: indicates the date of creation of the order. This date is crucial for calculating deadlines and any payment terms. The current date is proposed, which can be modified; if the numbering provides for a date and number progression, and I enter a date in the past, Fluentis will check the availability of numbers on that date to ensure progression, and if not present, will inform the user that there are no numbers available on that date.      
+- **Withholding-tax type**: this field is visible only if the customer manages the withholding tax, and therefore if in the registry it shows the same flag and the type of retention, in the [tax information (informazioni fiscali)](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/fiscal-information) tab. The withholding tax is a tax deduction applied on payments for work or professional services, advanced to the tax authorities by the client and later deducted from the beneficiary's income tax. For the correct management of this functionality, the withholding type must be correctly coded in the withholding types table. The document will automatically retrieve the subject to withholding for the lines on which it is possible to make the calculation, and it will automatically calculate the withholding amount. 
 
-La form contiene una serie di tab.
+The form contains a series of tabs.
 
-## **2. Testata**
+## **Header**
 
-Dopo aver selezionato i dati obbligatori nella sezione superiore, l'utente può continuare l'inserimento dei seguenti dati [manualmente](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) oppure con l' [help di campo](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection).
+After selecting the required data in the upper section, the user can continue entering the following data [manually (manualmente)](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) or with the [field help (help di campo)](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection).
 
-:::note Ricorda
-Se il documento viene *creato automaticamente*, questi dati vengono ripresi dal *documento d'origine* da cui è stata generato.
+:::note Remember (Ricorda)
+If the document is *automatically created*, this data is retrieved from the *originating document* from which it was generated.
 :::
 
-### 2.1 Dati cliente
+### 2.1 Customer Data (Dati cliente)
 
-Inserendo il **Cliente**, vengono *proposti* in automatico tutti i dati specifici del tab **Testata**, secondo i dati impostati in precedenza nell'[anagrafica cliente](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/accounting-data-intro), nei campi corrispondenti al suo indirizzo e nelle *sezioni*:  
-- **Divisa**: sezione contenente i dati [Divisa](/docs/guide/common/glossary/glossary-intro#currency), [Cambio](/docs/guide/common/glossary/glossary-intro#currency-exchange), [Data valuta](/docs/guide/common/glossary/glossary-intro#currency-date).
-- **Nazione**: sezione contenente i dati [Nazione](/docs/guide/common/glossary/glossary-intro#country), [Lingua](/docs/guide/common/glossary/glossary-intro#language), [Zona](/docs/guide/common/glossary/glossary-intro#zone).
-- **Spedizione**: sezione contenente i dati [Spedizione](/docs/guide/common/glossary/glossary-intro#shipment), [Porto](/docs/guide/common/glossary/glossary-intro#carriage), [Imballo](/docs/guide/common/glossary/glossary-intro#packing), [Listino](/docs/guide/common/glossary/glossary-intro#sales-price-list) e il suo [intervallo di validità](/docs/guide/common/glossary/glossary-intro#validity-date)
-- altri campi proposti con la scelta del cliente, ma modificabili: [Destinazione](/docs/guide/common/glossary/glossary-intro#destination), [Destinatario](/docs/guide/common/glossary/glossary-intro#recipient).
+By entering the **Client**, all specific data from the **Header** tab will be *automatically proposed*, according to the data previously set in the [customer registry (anagrafica cliente)](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/accounting-data-intro), in the fields corresponding to its address and in the *sections*:
 
-### 2.2 Dati facoltativi testata
+- **Currency**: section containing data on [Currency (Divisa)](/docs/guide/common/glossary/glossary-intro#currency), [Exchange Rate (Cambio)](/docs/guide/common/glossary/glossary-intro#currency-exchange), [Currency Date (Data valuta)](/docs/guide/common/glossary/glossary-intro#currency-date).
+- **Country**: section containing data on [Country (Nazione)](/docs/guide/common/glossary/glossary-intro#country), [Language (Lingua)](/docs/guide/common/glossary/glossary-intro#language), [Zone (Zona)](/docs/guide/common/glossary/glossary-intro#zone).
+- **Delivery**: section containing data on [Shipping (Spedizione)](/docs/guide/common/glossary/glossary-intro#shipment), [Carriage (Porto)](/docs/guide/common/glossary/glossary-intro#carriage), [Packing (Imballo)](/docs/guide/common/glossary/glossary-intro#packing), [Price List (Listino)](/docs/guide/common/glossary/glossary-intro#sales-price-list) and its [validity range (intervallo di validità)](/docs/guide/common/glossary/glossary-intro#validity-date).
+- other fields proposed with the customer choice, but modifiable: [Destination (Destinazione)](/docs/guide/common/glossary/glossary-intro#destination), [Recipient (Destinatario)](/docs/guide/common/glossary/glossary-intro#recipient).
 
-- **Data consegna**: in questo campo è possibile inserire la data prevista di consegna della merce.
-- **Data merce pronta**: in questo campo è possibile inserire la data in cui la merce sarà pronta; questa data deve essere minore o uguale alla precedente.      
-- **Confermato**: questo flag indica che l'ordine è confermato e può essere quindi evaso; accanto è presente la **Data conferma**; questa condizione è obbligatoria se si vuole far procedere l’ordine sia per l’eventuale evasione nei documenti successivi (quali picking, ddt e fatture), sia per l’eventuale gestione della pianificazione di produzione.        
-- **Stampato**: si attiva quando viene lanciata la stampa dell'ordine ed identifica che il documento è stato stampato; questo flag è importante anche per permettere l'evasione dell'ordine in altri documenti.      
-- **Archiviato**: è necessario apporre questo flag se il documento deve essere archiviato.   
-- **Annullato**: il flag attivo permette di annullare l'ordine; lo stato di testata dell'ordine cambierà in forzatamente evaso, in quanto l'ordine non dovrà più essere trasferibile in altri documenti.    
-- **Codice Unico di Progetto/Codice Identificatico di Gara**: se nelle [informazioni fiscali](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/fiscal-information) dell'anagrafica cliente esso è abilitato alla gestione di CIG e CUP, sarà possibile compilare questi dati nel documento.    
-- **Annotazioni cliente**: questo campo viene ripreso dall'anagrafica cliente, ma può essere inserito anche manualmente.
-- **Nostro riferimento/vostro riferimento**: in questi campi solitamente viene indicato un riferimento interno ed un riferimento cliente per il documento; nel caso in cui l'ordine venga generato tramite una procedura di creazione automatica, questi campi verranno popolati con le indicazioni presenti nell'documento d'origine. Questo trasferimento è valido solo nel caso di ordine cliente creato tramite il prelievo dei dati da un solo documento.     
-- **Note iniziali**: si possono selezionare le note che sono state inserite in precedenza nella tabella omonima che si trova nel percorso *Configurazione > Utilità > Gestione note codificate*; per questo l'utente deve effettuare doppio click sul campo per aprire l'Help e selezionare i dati; altrimenti può inserirle manualmente.       
-- **Operatore**: permette di inserire l'utente che crea il documento. I dipendenti sono stati inseriti in precedenza nella tabella *Home > Dipendenti*; il dato diventa obbligatorio se l'opzione è impostata nei [Parametri](/docs/configurations/parameters/sales/sales-orders-parameters) del documento stesso.     
-- **Stato evasione**: quando l'ordine è evaso tramite i documenti DDT o fatture, il suo stato evasione cambia automaticamente da *Non evaso* a *Parzialmente evaso* o *Evaso*; l'utente può forzare l'evasione di un ordine non totalmente evaso e quando questo succede, viene salvata anche la data evasione.      
+### 2.2 Optional Header Data (Dati facoltativi testata)
+
+- **Delivery date**: in this field, you can enter the expected delivery date of the goods.
+- **Ready goods date**: in this field, you can enter the date when the goods will be ready; this date must be less than or equal to the previous one.      
+- **Confirmed**: this flag indicates that the order is confirmed and can therefore be fulfilled; next to it is the **Confirmation date**; this condition is mandatory if you want to proceed with the order for potential fulfillment in subsequent documents (such as picking, DDT, and invoices), as well as for potential management of production planning.        
+- **Printed**: it activates when the order print is launched, indicating that the document has been printed; this flag is also important for allowing the fulfillment of the order in other documents.      
+- **Archived**: this flag must be applied if the document must be archived.   
+- **Cancelled**: the active flag allows you to cancel the order; the header status of the order will change to forcibly fulfilled, as the order will no longer be transferable to other documents.    
+- **Unique Project Code/Reference Code (Codice Unico di Progetto/Codice Identificatico di Gara)**: if in the [tax information (informazioni fiscali)](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/fiscal-information) of the customer registry it has been enabled for the management of CIG and CUP, it will be possible to fill in these data in the document.    
+- **Customer note**: this field is retrieved from the customer registry but can also be entered manually.
+- **Our reference/your reference (Nostro riferimento/vostro riferimento)**: in these fields, one usually indicates an internal reference and a customer reference for the document; if the order is generated through an automatic creation procedure, these fields will be populated with the indications present in the originating document. This transfer is valid only in the case of a customer order created by pulling data from a single document.     
+- **Initial note**: you can select the notes that have been entered previously in the corresponding table found in *Configuration > Utilities > Management of coded notes (Configurazione > Utilità > Gestione note codificate)*; for this, the user must double-click on the field to open the Help and select the data; otherwise, they can enter them manually.       
+- **User**: allows you to enter the user who creates the document. Employees have been previously entered in the table *Home > Employees (Home > Dipendenti)*; the data becomes mandatory if the option is set in the [Parameters (Parametri)](/docs/configurations/parameters/sales/sales-orders-parameters) of the document itself.     
+- **Execution status**: when the order is fulfilled through the DDT or invoices, its fulfillment state automatically changes from *Not executed* to *Partially executed* or *Closed*; the user can force the fulfillment of an order not fully fulfilled, and when this happens, the fulfillment date is also saved.      
 
 :::note
-Se viene attivato lo stato *Evaso forzato*, viene mostrato il messaggio: “L'evasione forzata della riga comporta l'automatica eliminazione di eventuali ordini pianificati collegati a commesse in stato schedulata e l’evasione delle commesse in stato schedulata e non esaminata. Per quanto riguarda documenti generati a fronte di commesse in stato lanciato o esecutivo le commesse e documenti non verranno modificati.”
+If the *Forced Fulfillment state (Evaso forzato)* is activated, the message will be displayed: “The forced fulfillment of the line leads to the automatic deletion of any planned orders linked to jobs in scheduled status and the fulfillment of jobs in scheduled and unchecked status. As for documents generated for jobs in launched or executive status, the jobs and documents will not be modified.”
 :::
 
-- **Decorrenza** è la data di decorrenza per il calcolo delle scadenze di pagamento.
+- **Apply from** is the start date for calculating payment deadlines.
 
-#### Pulsanti specifiche  
-> **Evasione da progetto**: richiama la procedura per creare un'ordine da un progetto.        
-> **Sostituisci data prev. consegna nelle righe**: dopo aver specificato la data richiesta consegna e/o la data prevista consegna in testata ordine, è possibile sostituire in massa tali date nelle righe articolo già inserite.           
-> **Sostituisci agente nelle righe**: questo pulsante fa aprire un pop nel quale inserire un'anagrafica agente, che verrà spalmata in tutte le righe articolo, aggiungendosi eventualmente ad Agenti già presenti.         
-> **Sostituisci CIG/CUP nelle righe**: dopo aver specificato CIG e/o CUP in testata ordine, è possibile sostituire in massa tali dati nelle righe articolo già inserite.           
-> **Help destinatari/destinazioni**: questo bottone apre l'Help per poter scegliere il destinatario/destinazione per il documento, tra quelli disponibili per il cliente e quindi codificati nella sua anagrafica. 
+#### Specific Buttons  
+> **Get from project**: calls the procedure to create an order from a project.        
+> **Replace previous delivery date in lines (Sostituisci data prev. consegna nelle righe)**: after specifying the requested delivery date and/or the expected delivery date in the order header, it is possible to batch replace these dates in the already entered item lines.           
+> **Replace agent in lines (Sostituisci agente nelle righe)**: this button opens a pop-up where you can enter an agent registry, which will be distributed across all article lines, possibly adding to already present Agents.         
+> **Replace CIG/CUP in lines (Sostituisci CIG/CUP nelle righe)**: after specifying CIG and/or CUP in the order header, it is possible to batch replace these data in the already entered item lines.           
+> **Help recipients/destinations**: this button opens the Help to choose the recipient/destination for the document, among those available for the customer and thus coded in their registry. 
 
-Nella testata sono poi presenti alcune tab che analizziamo di seguito.    
+The header also contains some tabs that we will analyze below.    
 
-### 2.3 Pagamenti
+### 2.3 Payments (Pagamenti)
 
-Le **Soluzioni di pagamento** sono riportate in automatico dall'*Anagrafica cliente > tab Pagamenti* e possono essere modificate/cancellate dall'utente.
+The **Payment Terms** are automatically reported from the *Customer Registry > Payments tab (Anagrafica cliente > tab Pagamenti)* and can be modified/deleted by the user.
 
-Se al **Tipo pagamento** è associato uno sconto finanziario, l'importo dello sconto viene considerato solo ai fini contabili cioè nelle scadenze del documento e non nel totale.
+If the **Payment type** is associated with a financial discount, the discount amount is considered only for accounting purposes, i.e., in the deadlines of the document and not in the total.
 
-Il pulsante specifico di questa tab è il **Cancella pagamenti**, utilizzato per cancellare le righe di pagamento selezionate.
+The specific button of this tab is **Delete Payments**, used to delete the selected payment lines.
 
-### 2.4 Sconti
+### 2.4 Discounts (Sconti)
 
-Vengono proposti solo gli sconti predefiniti ripresi dall'*Anagrafica cliente > tab Sconti* e non quelli attribuiti alle condizioni di pagamento o a certi articoli. Possono essere modificate/cancellate dall'utente.
+Only the predefined discounts retrieved from the *Customer Registry > Discounts tab (Anagrafica cliente > tab Sconti)* are proposed and not those assigned to payment conditions or certain items. They can be modified/deleted by the user.
   
-Gli sconti proposti in testata del documento vengono riportati in ogni nuova riga articolo inserita nel documento.
+The discounts proposed in the header of the document are carried over to every new item line inserted in the document.
 
-Se dopo aver inserito le righe articolo viene inserito un nuovo sconto in testata questo non viene replicato nelle righe articolo già inserite.
+If after entering the item lines a new discount is entered in the header, this will not be replicated in the already entered item lines.
 
-Il pulsante specifico di questa tab è il **Cancella sconti**, utilizzato per cancellare le righe di sconto selezionate.
+The specific button of this tab is **Delete discounts**, used to delete the selected discount lines.
 
+### 2.5 Agents (Agenti)
 
-### 2.5 Agenti
+Indicates the agent code and their commission for each item line. The code and percentage defined in the *Customer Registry > Agents tab (Anagrafica cliente > tab Agenti)* are proposed.
 
-Indica il codice agente e la sua provvigione per ogni riga articolo. Vengono proposti il codice e la percentuale definiti nell'*Anagrafica cliente > tab Agenti*.
+If the commission is not linked to the customer in their registry, the agent must still be entered but with a NULL commission, because if it were with a commission of 0, it would mean that the agent is linked to the agent but does not receive any commission.
 
-Se la provvigione non è collegata al cliente nella sua anagrafica, comunque deve essere inserito l'agente ma con provvigione NULL perché se fosse con provvigione 0, significherebbe che l'agente è collegato all'agente ma non percepisce provvigione.
+In case of generating the DDT from the order, this data will naturally be carried over as the same as that of the customer order.
 
-Nel caso di generazione del DDT da ordine questo dato verrà ovviamente riportato uguale a quello dell'ordine cliente.
+The same section will be repeated for each item line in the respective Agents tab.
 
-La stessa sezione verrà riproposta per ogni riga articolo nel relativo tab Agenti.
+The specific button of this mask is **Delete agents**, which allows you to delete the selected agents.
 
-Il Pulsante specifico di questa maschera è il **Cancella agenti**, che permette di cancellare gli agenti selezionati.
+### 2.6 Destination (Destinazione)
 
-### 2.6 Destinazione
+Here, the information entered in the *Customer Registry > Deliveries tab (Anagrafica cliente > tab Consegne)* is proposed, only if default data exists. The combo box offers all recipients, destinations, and carriers entered in the customer registry.
 
-Qui viene proposta l'informazione inserita nell'*Anagrafica cliente > tab Consegne*, solo se esistono dati di default. Il combo box propone tutti i destinatari, le destinazioni e i vettori inseriti nell'anagrafica cliente.
+Shipping addresses (recipient/destination and carrier) can also be entered descriptively without being previously entered among the contacts. 
 
-Gli indirizzi di spedizione (destinatario/destinazione e vettore) possono essere inseriti anche solo descrittivi senza essere precedentemente inseriti tra i contatti. 
+If this default data has not been entered in the registry, then the recipient and destination will be proposed as the address entered in the registry data. 
 
-Nel caso in cui in anagrafica non sia stato inserito questo dato di default, allora vengono proposti come destinatario e destinazione l’indirizzo inserito nei dati anagrafici. 
+### 2.7 Carriers (Vettori)
 
-### 2.7 Vettori
+In the Carriers section, the data entered in the [Delivery tab (Consegna)](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/delivery) of the customer registry is proposed. In particular, the party responsible for the transport is proposed, between sender, recipient, and carrier. Based on the selection, the section below will change; if the transport is covered by the Sender, it will be possible to enter Vehicle License Plate, Start Transport Date and Time, and the company's address will be proposed; if it is covered by the Recipient, it will be possible to enter Vehicle License Plate, Start Transport Date and Time, with the destination proposed; if it is covered by the Carrier, the available fields will be Carrier Accounting Registry, License Plate, Transport Date, and Time.
 
-Nella sezione Vettori vengono proposti i dati inseriti nel tab [Consegna](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/delivery) dell’anagrafica cliente. In particolare, viene proposto il soggetto a carico del quale sarà il trasporto, tra mittente, destinatario e vettore. In base alla selezione, la sezione sottostante cambierà; se il trasporto è a carico del Mittente sarà possibile inserire Targa automezzo, Data e Ora di Inizio trasporto, e verrà proposto l’indirizzo della società; se è a carico del Destinatario sarà possibile inserire Targa automezzo, Data e Ora di Inizio trasporto, con la proposta della destinazione; se è a carico del Vettore invece i campi disponibili saranno Anagrafica contabile del Vettore, Targa, Data e Ora trasporto.
-
-### 2.8 Extra Data
+### 2.8 Extra Data (Extra Data)
 
 import TabExtraData from './../../../import/sections/tab-extra-data.md'
 
 <TabExtraData />
 
-### 2.9 Cointestatari
+### 2.9 Co-owners (Cointestatari)
 
-Questo tab è attivo solo se in anagrafica cliente, tab [informazioni fiscali](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/fiscal-information), sia stato inserito il flag per la gestione cointestatari. La gestione cointestatari permette a più persone di essere titolari congiunti dell’ordine. I cointestatari devono essere inseriti negli indirizzi alternativi dell’anagrafica, con un indirizzo che sia di [tipo](/docs/configurations/tables/general-settings/address-types), appunto, cointestatari. In questo modo, verranno proposti in questo tab, dove è necessario inserire a mano le percentuali di ripartizione della spesa.
+This tab is active only if the customer registry, [tax information tab (informazioni fiscali)](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/fiscal-information), has the co-ownership management flag inserted. The co-ownership management allows multiple people to be joint holders of the order. Co-owners must be entered in the alternative addresses of the registry, with an address that is of [type (tipo)](/docs/configurations/tables/general-settings/address-types), indeed, co-owners. In this way, they will be proposed in this tab, where it is necessary to manually enter the percentages of expense sharing.
 
-## **3.a Articoli raggruppati**
+## **Grouped items**
 
-Questo tab è attivo e visibile solo per i [Tipi ordine](/docs/configurations/tables/sales/sales-order-types) che abbiano impostati il flag di *Gestione matrici Extra Data* e la relativa *Configurazione*. Questo tab permette infatti di generare le varianti articolo per le varie combinazioni di attributi valide, che saranno trasferite nel successivo tab *Articoli*.      
-Per tutti i campi non spiegati in questa pagina potete fare riferimento alla documentazione del tab *Articoli*.       
-Inserendo un [articolo gestito a Matrice](/docs/erp-home/registers/items/create-new-items/item-registry/matrix) nella griglia articoli, infatti, nel tab *Matrici* verrà visualizzata la matrice associata all'anagrafica articolo. Nelle celle della matrice sarà possibile imputare le quantità ordinate per ogni combinazione; sarà possibile compilare solo le celle che abbiano una combinazione valida in anagrafica.       
-Una volta inserite quantità per ogni combinazione, è necessario cliccare il pulsante della barra degli strumenti *Conferma valori matrice* per generare tante varianti quante sono le combinazioni possibili. Ogni variante popolerà una riga del successivo tab Articoli, con la relativa quantità.
+This tab is active and visible only for [Order Types (Tipi ordine)](/docs/configurations/tables/sales/sales-order-types) that have set the *Extra Data Matrix Management* flag and the related *Configuration*. This tab allows the generation of item variants for the various valid attribute combinations, which will be transferred to the subsequent *Items* tab.      
+For all the fields not explained on this page, you can refer to the documentation of the *Items* tab.       
+By entering a [matrix-managed item (articolo gestito a Matrice)](/docs/erp-home/registers/items/create-new-items/item-registry/matrix) in the item grid, indeed, in the *Matrices* tab, the matrix associated with the item registry will be displayed. In the cells of the matrix, it will be possible to input the ordered quantities for each combination; only the cells that have a valid combination in the registry can be filled.       
+Once quantities are entered for each combination, it is necessary to click the *Confirm stub values* button on the toolbar to generate as many variants as there are possible combinations. Each variant will populate a row in the subsequent *Items* tab, with the corresponding quantity.
 
-## **3.b Articoli**
+## **Items**
 
-In questo tab vengono inseriti tutti gli articoli con i relativi dati.
+This tab includes all items with their corresponding data.
 
 import InsertMode from './../../../import/sections/insert-mode.md'
 
 <InsertMode />
 
-Per inserire un **Nuovo articolo** nella griglia basterà posizionarsi sulla riga per compilare i vari dati oppure utilizzare il pulsante **Nuovo** presente nella ribbon bar.
+To insert a **New Item** into the grid, simply position yourself on the row to fill in the various data or use the **New** button present in the ribbon bar.
 
-Di seguito analizzati i campi *obbligatori* presenti nella griglia principale:
-- **Riga**: questo campo contiene il numro riga e si compilerà automaticamente e progressivamente all'inserimento dei dati nella riga.
+Below we analyze the *required* fields present in the main grid:
+- **Line**: this field contains the row number and will automatically fill and progress as data is entered in the row.
 
-- **Tipo riga**: offre la possibilità di selezionare, dalla combo-box, articoli con caratteristiche diverse:
->- *Articolo codificato*: sono gli articoli codificati in anagrafica e possono essere contabilizzati in contabilità analitica e registrati in magazzino.
->- *Articolo non-codificato*: sono articoli descrittivi che possono essere contabilizzati in contabilità analitica ma non possono essere movimentati a magazzino.
->- *Articolo spese*: sono articoli codificati o non-codificati e vengono riassunti in modo distinto nei riepiloghi dei documenti, se l'articolo spesa è codificato e di interesse fiscale verrà movimentato in magazzino, se è non codificato oppure non di interesse fiscale non verranno movimentati a magazzino.
->- *Articolo note*: sono note descrittive riportate nella stampa del documento; non incidono sulla contabilità e sul magazzino.
->- *Articolo omaggio*: l'articolo omaggio viene gestito come un articolo codificato o non codificato ai fini fiscali e di magazzino, ma essendo un omaggio viene conteggiato separatamente nei riepiloghi del documento e in base al flag Rivalsa iva viene calcolato l'importo dell'iva dell'omaggio a carico del soggetto oppure no.
+- **Line type**: offers the possibility to select, from the combo box, items with different characteristics:
+>- *Codified Item*: these are items coded in the registry and can be accounted for in analytical accounting and registered in the warehouse.
+>- *Uncoded Item (Articolo non-codificato)*: these are descriptive items that can be accounted for in analytical accounting but cannot be moved in the warehouse.
+>- *Charge Item*: these are coded or uncoded items that are summarized distinctly in the document summaries; if the expense item is coded and of fiscal interest, it will be moved in the warehouse; if it is uncoded or not of fiscal interest it will not be moved in the warehouse.
+>- *Note Item*: these are descriptive notes reported in the document print; they do not affect accounting and the warehouse.
+>- *GiveAway Item*: the free gift item is managed as a coded or uncoded item for tax and warehouse purposes, but as it is a free gift, it is counted separately in the document summaries and based on the VAT recovery flag, the VAT amount of the free gift is calculated to be borne by the subject or not.
 
-:::note[NOTA]
-Se si parte direttamente con l'inserimento dell'articolo, la sua classe, il codice e il tipo riga - Articolo codificato vengono inseriti automaticamente.
+:::note[NOTE]
+If you start directly with the item entry, its class, code, and row type - Coded item will be entered automatically.
 :::
 
 import ItemClassDescription from './../../../import/sections/item-class-description.md'
@@ -184,56 +183,56 @@ import ItemPrice from './../../../import/fields/item-price.md'
 
 <ItemPrice />
 
-:::note[NOTA]
-In assenza del listino, il dato proposto è il **prezzo di vendita** ripreso dall'*Anagrafica articolo > tab [Costi](/docs/erp-home/registers/items/create-new-items/item-registry/costs)* oppure verrà recuperato in base alle impostazioni dei parametri del documento. In assenza anche di questo dato, verrà riportato il prezzo 0.
+:::note[NOTE]
+In the absence of the price list, the proposed data is the **Sales price** taken from the *Item Registry > Costs tab (Anagrafica articolo > tab [Costi](/docs/erp-home/registers/items/create-new-items/item-registry/costs))* or will be retrieved based on the document parameter settings. In the absence of this data, the price 0 will be reported.
 :::
 
-- **Imponibile**: questo campo contiene il Prezzo unitario moltiplicato per la quantità, al netto degli sconti.
+- **Origin amount**: this field contains the Unit Price multiplied by the quantity, net of discounts.
 
-- **Sconti articolo**: contiene gli sconti validi per l'articolo, provenienti dalla testata, dal listino o dall'inserimento manuale.
+- **Item discounts**: contains the valid discounts for the item, coming from the header, price list, or manual input.
 
-- **Sconti finali articolo**: contiene gli sconti finali articolo imputati nei riepiloghi del documenti, che hanno la caratteristica di venire spalmati in tutti gli articoli.   
+- **Item final discounts**: contains the final item discounts allocated in the document summaries, which have the characteristic of being spread across all items.   
 
 import ItemVat from './../../../import/fields/item-vat.md'
 
 <ItemVat />
 
-#### Campi non obbligatori
+#### Non-Mandatory Fields (Campi non obbligatori)
 
-- **Barcode/Articolo cliente e Descrizione articolo cliente**: questi dati verranno ripresi dalle informazioni presenti nell'*Anagrafica articoli*; per gestire i Barcode è necessario attivarne la gestione nei [Parametri ordine cliente](/docs/configurations/parameters/sales/sales-orders-parameters). Questa colonna permette la proposta dell’articolo ricercandolo per il suo barcode. Essendo il barcode univoco, una volta digitato il barcode inserito in anagrafica articolo, verrà proposto l’articolo.   
+- **Barcode/Customer Item and Customer Item Description (Barcode/Articolo cliente e Descrizione articolo cliente)**: this data will be retrieved from the information present in the *Items register*; to manage Barcodes it is necessary to activate their management in the [Customer Order Parameters (Parametri ordine cliente)](/docs/configurations/parameters/sales/sales-orders-parameters). This column allows the proposal of the item by searching for it by its barcode. Being unique, once the barcode entered in the item registry is typed, the item will be proposed.   
 
-- **Fatturato vendite**: viene proposto il dato inserito nell'*Anagrafica articoli > tab Generalità*; se non viene recuperato va inserito scegliendo una voce tra quelle proposte dalla relativa combo altrimenti la mancanza di questo dato potrebbe causare degli errori nella contabilizzazione della fattura che verrà generata dall'ordine, se in *Anagrafica cliente > Dati contabili > tab Amministrativa* non è stato impostato un valore nel campo *Ricavo di contropartita predefinito*.
+- **Sales Turnover**: the data entered in the *Item Registry > Generalities tab (Anagrafica articoli > tab Generalità)* is proposed; if it is not retrieved, it must be entered by choosing an item from the proposed combo; otherwise, the lack of this data could cause errors in the accounting of the invoice that will be generated from the order, if in *Customer Registry > Accounting Data > Administrative tab (Anagrafica cliente > Dati contabili > tab Amministrativa)* no value has been set in the *Default Counterpart Revenue (Ricavo di contropartita predefinito)* field.
 
-- **Evaso forzato**: se attivo, questo flag indica che la riga articolo è stata evasa forzatamente: perchè il cliente non vuole più quell'articolo, oppure la quantità prodotta e spedita è inferiore alla quantità ordinata ma non verrà prodotto il saldo e quindi si andrà ad evadere forzatamente la quantità. 
+- **Forced Fulfillment (Evaso forzato)**: if active, this flag indicates that the item line has been forcibly fulfilled: because the customer no longer wants that item, or the quantity produced and shipped is less than the ordered quantity, but the balance will not be produced, and thus the quantity will be forcibly fulfilled. 
 
-:::note[NOTA]
-Se viene gestita la produzione, quando il flag viene attivato, viene mostrato un messaggio che avvisa l'utente: “L'evasione forzata della riga comporta l'automatica eliminazione di eventuali ordini pianificati collegati a commesse in stato schedulata e l’evasione delle commesse in stato schedulata e non esaminata". Per quanto riguarda invece i documenti generati a fronte di commesse in stato lanciato o esecutivo, le commesse e documenti non verranno modificati.     
+:::note[NOTE]
+If production is managed, when this flag is activated, a message is shown warning the user: “The forced fulfillment of the line leads to the automatic deletion of any planned orders linked to jobs in scheduled status and the fulfillment of jobs in scheduled and unchecked status." Regarding documents generated for jobs in launched or executive status, the jobs and documents will not be modified.     
 :::
 
-- **Data Merce pronta e Data consegna**: queste date indicano la data in cui il materiale sarà pronto (quindi quando la produzione sarà terminata) e la data in cui si prevede di consegnare il materiale; la Data Merce Pronta deve essere minore o uguale alla Data consegna.
+- **Goods Ready Date and Delivery Date (Data Merce pronta e Data consegna)**: these dates indicate when the material will be ready (when the production will be completed) and when the material is expected to be delivered; the Goods Ready Date must be less than or equal to the Delivery Date.
 
-Nella sezione Articoli sono presenti i seguenti pulsanti, nella barra degli strumenti: 
+In the Items section, the following buttons are present in the toolbar: 
 
-> **Distinta Base**: permette di aprire la distinta base dell'articolo selezionato per poterne visualizzare i dettagli; (per maggiori informazioni su questo argomento si rimanda alll'articolo Albero della disinta base e gestione strutture).  
-> **Esplodi primo livello distinta**: permette di aggiungere nell'ordine cliente i materiali (materie prime e semilavorati) presenti nella distinta base dell'articolo; verranno quindi riportati nell'ordine i componenti di primo livello del prodotto finito. Questa opzione per esempio è molto utilizzata per i prodotti a Kit (quindi composti da più parti).  
-> **Aggiornamento listini**: permette di aggiornare il prezzo dell'articolo in un listino esistente (salvare il documento per abilitare questi bottoni), oppure di creare un nuovo listino con l'articolo e il relativo prezzo selezionato.       
-> **Suddividi quantità in più consegne**: consente di suddividere la quantità di una riga articolo in più righe in base alle date di consegna. Selezionando la riga e cliccando sul pulsante si aprirà la form **Consegne diverse** all'interno della quale verrà riportata la *Data merce pronta*, la *Data consegna* e la *Quantità* della riga. Nella riga successiva si dovrà andare ad indicare la *Data merce pronta* (che dovrebbe essere la stessa), la *Data di consegna* che sarà diversa e la *Quantità* che si andrà a spedire in quella data e poi bisognerà andare a modificare la data nella prima riga aggiornandola alla quantità rimanente in modo che la somma delle quantità delle due righe dia come risultato la quantità iniziale della riga prima dello sdoppiamento. Confermare l'operazione con il pulsante *OK*.  
-> **Confezionamento**: permette di creare una UDC a partire dalla riga selezionata. La riga deve essere un articolo codificato e salvato nel documento. L'utente deve avere i diritti all'interno dei [Parametri di carico/scarico](/docs/configurations/parameters/logistics/load-unload-parameters/load-unload-parameters-intro) per il caricamento del pallet. Inoltre l'articolo deve essere gestito a UDC ed in base alle impostazione del Tipo UDC inserite in anagrafica articolo, tab [Confezionamento](/docs/erp-home/registers/items/create-new-items/item-registry/packaging), verrà creato l'UDC rispettando i criteri.      
+> **Bill of Materials**: allows you to open the bill of materials of the selected item to view the details; (for more information on this topic, please refer to the article on the Bill of Materials and structure management).  
+> **Explode First Level Bill (Esplodi primo livello distinta)**: allows you to add materials (raw materials and semi-finished products) present in the bill of materials of the item to the customer order; thus the first level components of the finished product will be reported in the order. This option is particularly used for Kit products (composed of multiple parts).  
+> **Update price lists**: allows you to update the price of the item in an existing price list (save the document to enable these buttons) or to create a new price list with the item and the selected price.       
+> **Split Quantity into Multiple Deliveries (Suddividi quantità in più consegne)**: allows you to split the quantity of an item line into multiple lines based on delivery dates. By selecting the row and clicking the button, the **Various deliveries** form will open, within which the *Ready goods date*, the *Delivery date*, and the *Quantity* of the line will be reported. In the next row, you should indicate the *Ready goods date* (which should be the same), the *Delivery Date (Data di consegna)* which will be different, and the *Quantity* to be shipped on that date and then you will need to modify the date in the first row, updating it to the remaining quantity so that the sum of the quantities of the two rows results in the initial quantity of the row before splitting. Confirm the operation with the *OK* button.  
+> **Packaging**: allows you to create a UDC starting from the selected row. The row must be a coded item and saved in the document. The user must have the rights within the [Loading/Unloading Parameters (Parametri di carico/scarico)](/docs/configurations/parameters/logistics/load-unload-parameters/load-unload-parameters-intro) for loading the pallet. Moreover, the item must be managed as UDC and based on the settings of the UDC Type specified in the item registry, tab [Packaging (Confezionamento)](/docs/erp-home/registers/items/create-new-items/item-registry/packaging), the UDC will be created respecting the criteria.      
 
-Analizziamo a questo punto le tab presenti sotto la griglia articoli. 
+At this point, let’s analyze the tabs present under the items grid. 
 
-### 3.b.1 Sconti/Listini
+### 3.b.1 Discounts/Price Lists (Sconti/Listini)
 
-Questa tab ha come primo campo l'eventuale **Listino** valido per il cliente e collegato all'articolo, altrimenti è un campo che si può compilare manualmente per prendere il prezzo dell'articolo da uno specifico listino. Accanto ai dati del listino assegnato è presente il campo **Tipo scaglione**: esso riporta lo scaglione di sconto da utilizzare, che viene ripreso dall'anagrafica cliente oppure dal listino stesso.
-Il flag **Prezzo manuale** permette di modificare il prezzo e gli sconti manualmente, e di mantenerli nei documenti che vengono creati dal documento dove la modifica è stata apportata.
+This tab has as its first field the eventual **Price list** valid for the customer and connected to the item; otherwise it is a field that can be manually filled to take the price of the item from a specific price list. Next to the assigned price list data, the **Bracket type** field is present: it reports the discount tier to be used, which is retrieved from the customer registry or from the price list itself.
+The **Manual price** allows manually modifying the price and discounts and keeping them in the documents created from the document where the modification has been made.
 
-Nella griglia invece vengono proposti tutti gli sconti associati all'articolo, ognuno con la propria base di calcolo e di assegnazione. Gli sconti possono essere ripresi: dall'anagrafica cliente, dalla soluzione di pagamento assegnata al documento, dal listino dall'associazione listino-cliente. Tutti i dati proposti sono modificabili.
+In the grid, all discounts associated with the item are proposed, each with its own calculation basis and assignment. Discounts can be retrieved: from the customer registry, from the payment solution assigned to the document, from the price list from the list-price association. All proposed data are modifiable.
 
-Da questa griglia è possibile utilizzare il bottone **Cancell sconti** della barra degli strumenti. 
+From this grid, you can use the **Delete Discounts (Cancell sconti)** button in the toolbar. 
 
-### 3.b.2 Dati articolo
+### 3.b.2 Item Data (Dati articolo)
 
-All'interno di questo tab vengono riportate/inserite ulteriori informazioni relative all'articolo.
+Within this tab, additional information related to the item is reported/entered.
 
 import ItemVariant from './../../../import/fields/item-variant.md'
 
@@ -243,33 +242,33 @@ import AlternativeUMQuantity from './../../../import/fields/alternative-um-quant
 
 <AlternativeUMQuantity />
 
-- **Magazzino/descrizione/Causale**: in questi campi andrà indicato il magazzino di scarico del materiale con la relativa causale necessario per gli scarichi della merce al momento dell'emissione del DDT o della fattura; questi dati vengono impostati nella tabella dei [Tipi ordine](/docs/configurations/tables/sales/sales-order-types).
+- **Warehouse/Description/Reason (Magazzino/descrizione/Causale)**: in these fields, the discharge warehouse for the material must be indicated with the corresponding reason necessary for the goods to be discharged at the time of the DDT or invoice issuance; this data is set in the table of [Order Types (Tipi ordine)](/docs/configurations/tables/sales/sales-order-types).
 
-- **Progetto**: è il progetto associato al documento; questo può essere assegnata, nel caso dell'ordine cliente, con l'ausilio della procedura *Evasione da commessa* oppure può essere assegnata con l'ausilio del help di campo.
+- **Project**: this is the project associated with the document; this can be assigned, in the case of the customer order, using the *Fulfillment from Job (Evasione da commessa)* procedure or can be assigned with the help of the field help.
 
-- **Rivalsa IVA**: se settato l'iva dell'omaggio viene considerata per il totale documento.
+- **VAT recourse**: if set, the VAT of the free gift is considered for the total document.
 
-- **Offerta**: riporta il riferimento dell'offerta cliente se l'ordine proviene da [Offerta](/docs/sales/offers/search-offers).
+- **Offer**: refers to the customer offer if the order comes from an [Offer (Offerta)](/docs/sales/offers/search-offers).
 
-- **Marca**: rappresenta la marca dell'articolo, ripresa dalla sua anagrafica oppure dal listino dell'articolo;
+- **Brand**: represents the brand of the item, retrieved from its registry or from the price list of the item;
 
-- **Note**: offre la possibilità di inserire note per ogni articolo che si vuole vengano riportate in tutti i documenti.  
+- **Notes**: offers the possibility to enter notes for each item that you want to be reported in all documents.  
 
-### 3.b.3 Agenti
+### 3.b.3 Agents (Agenti)
 
 import SalesTabAgent from './../../../import/sections/sales-tab-agent.md'
 
 <SalesTabAgent />
 
-### 3.b.4 Lotti e Serial number
+### 3.b.4 Lots and Serial Numbers (Lotti e Serial number)
 
-Nelle due griglie possono essere inseriti i lotti e i numeri seriali che devono essere scaricati dal magazzino e che sono collegati all'articolo nell'*Anagrafica articolo > tab [Lotti e Serial Number](/docs/erp-home/registers/items/create-new-items/item-registry/lots-and-serial-number)* oppure possono essere inserite manualmente.
+In the two grids, lots and serial numbers that must be discharged from the warehouse and are linked to the item in the *Item Registry > Lots and Serial Numbers tab (Anagrafica articolo > tab [Lotti e Serial Number](/docs/erp-home/registers/items/create-new-items/item-registry/lots-and-serial-number))* can either be inserted manually.
 
-Questa operazione è condizionata dalla presenza dei lotti e dei numeri seriali nel magazzino. 
+This operation is conditioned by the presence of lots and serial numbers in the warehouse. 
 
-Se l'articolo non prevede la gestione dei Lotti/Numeri seriali, questo tab sarà disabilitato.  
+If the item does not provide for the management of Lots/Serial Numbers, this tab will be disabled.  
 
-#### Pulsanti specifici
+#### Specific Buttons
 
 import DeleteLot from './../../../import/buttons/delete-lot.md'
 import DeleteSN from './../../../import/buttons/delete-sn.md'
@@ -277,85 +276,85 @@ import DeleteSN from './../../../import/buttons/delete-sn.md'
 > <DeleteLot />
 > <DeleteSN />
 
-### 3.b.5 Analitica
+### 3.b.5 Analytical (Analitica)
 
 import TabAnalytic from './../../../import/sections/tab-analytic.md'
 
 <TabAnalytic />
 
-### 3.b.6 Extra data
+### 3.b.6 Extra Data (Extra data)
 
 import DocItemExtraData from './../../../import/sections/doc-item-extradata.md'
 
 <DocItemExtraData />
 
-### 3.b.7 Documenti allegati
+### 3.b.7 Attached Documents (Documenti allegati)
 
 import DocAttachDocument from './../../../import/sections/doc-attach-document.md'
 
 <DocAttachDocument />
 
-### 3.b.8 Matrici
+### 3.b.8 Matrices (Matrici)
 
-Questo tab viene visualizzato esclusivamente per i [Tipi ordine](/docs/configurations/tables/sales/sales-order-types) che hanno il flag di gestione delle matrici Extra Data. 
+This tab is displayed exclusively for the [Order Types (Tipi ordine)](/docs/configurations/tables/sales/sales-order-types) that have the Extra Data matrix management flag enabled. 
 
-### 3.b.9 Sezione valori
+### 3.b.9 Value Section (Sezione valori)
 
 import SalesValuesSection from './../../../import/sections/item-values-section.md'
 
 <SalesValuesSection />
 
-Il campo **Stato** in cima a questa sezione riporta la situazione dell'articolo nell'eventuale ciclo di produzione e si aggiorna in automatico in base allo stato della commessa collegata.
-L'articolo può avere i seguenti stati:
-- *Inserito* quando viene inserito l'articolo;
-- *Confermato* quando l'ordine viene confermato, con i relativi flag e data in testata; 
-- *In produzione* quando viene generata la commessa, attraverso la procedura di [Generazione commesse di produzione](/docs/planning/ms-master-scheduling/general-schedule) o automaticamente se il tipo ordine lo prevede; 
-- *Prodotto* se la commessa collegata è in stato evaso;
-- *Annullato* se l'articolo viene evaso forzatamente. 
+The **State** field at the top of this section reports the situation of the item in the potential production cycle and updates automatically based on the state of the linked job.
+The item can have the following statuses:
+- *Inserted* when the item is entered;
+- *Confirmed* when the order is confirmed, with the relevant flags and date in the header; 
+- *On production* when the job is generated, through the procedure of [Production Job Generation (Generazione commesse di produzione)](/docs/planning/ms-master-scheduling/general-schedule) or automatically if the order type provides for it; 
+- *Product* if the linked job is in fulfilled status;
+- *Cancelled* if the item is forcibly fulfilled. 
 
-## **4. Riepiloghi**
+## **Summaries**
 
-Nelle diverse sezioni di questo tab sono presentate le informazioni principali dell'intero documento e alcuni pulsanti specifici.
+In the various sections of this tab, the main information of the entire document and some specific buttons are presented.
 
-### 4.1 Sconti finali
+### 4.1 Final Discounts (Sconti finali)
 
 import SummariesFinalDiscount from './../../../import/sections/summaries-final-discount.md'
 
 <SummariesFinalDiscount />
 
-### 4.2 Riepilogo provvigioni agenti
+### 4.2 Agent Commission Summary (Riepilogo provvigioni agenti)
 
-In questa griglia vengono invece riepilogate le provvigioni totali maturate dall'agente per questo ordine, nel caso in cui vi sia l'agente collegato. Si troverà indicato l'agente e il valore della provvigione maturata.
+In this grid, the total commissions accrued by the agent for this order are summarized, in case there is an agent linked. The agent and the accrued commission value will be indicated.
 
-### 4.3 Spese/Sconti/maggiorazioni finali
+### 4.3 Final Expenses/Discounts/Markups (Spese/Sconti/maggiorazioni finali)
 
 import SummariesExpenses from './../../../import/sections/summaries-expenses.md'
 
 <SummariesExpenses />
 
-### 4.4 Riepiloghi IVA
+### 4.4 VAT Summaries (Riepiloghi IVA)
 
-Viene proposto il riepilogo IVA del documento, per ogni codice IVA.
+The VAT summary of the document is proposed, for each VAT code.
 
-### 4.5  Riepilogo scadenze    
+### 4.5 Due Date Summary (Riepilogo scadenze)    
 
-In questa griglia vengono riportate le scadenze calcolate in base alle soluzioni delle tipologie di pagamento inserite. 
+In this grid, the deadlines calculated based on the solutions of the payment types entered are reported. 
 
-### 4.6 Altri campi 
+### 4.6 Other Fields (Altri campi)
 
-**Note finali**: è un campo descrittivo che può essere compilato dall'utente anche con l'ausilio dell'*Help note codificate*. Possono essere inserite ulteriori note per il cliente riguardanti per esempio la consegna che verranno poi riportate nella stampa della Conferma d'Ordine nella parte finale della stampa.
+**Final notes**: is a descriptive field that can be filled in by the user, also with the help of the *Help for coded notes (Help note codificate)*. Additional notes can be entered for the customer regarding, for example, the delivery, which will then be reported in the printout of the Order Confirmation at the end of the printout.
 
-### 4.7 Totali documento
+### 4.7 Document Totals (Totali documento)
 
-Nella sezione destra di questa tab si possono consultare i riepiloghi del documento:       
+In the right section of this tab, the document summaries can be consulted:       
 
 import SummariesDocumentTotal from './../../../import/sections/summaries-document-total.md'
 
 <SummariesDocumentTotal />
 
-## **5. Documenti collegati**
+## **Linked documents**
 
-In questa tab è possibile consultare i documenti allegati.
-Per allegare i documenti è possibile procedere in due modi:
-- utilizzando il pulsante della barra degli strumenti **Documenti** si può scegliere se allegare un documento già codificato in Fluentis o se creare un nuovo Documento da allegare.       
-- utilizzando direttamente nella griglia il tasto destro e selezionando *Allega file* si va in creazione di un nuovo Documento da allegare.     
+In this tab, it is possible to consult the attached documents.
+To attach documents, you can proceed in two ways:
+- using the **Documents** button on the toolbar, you can choose to attach a document already coded in Fluentis or to create a new Document to attach.       
+- by directly using the right mouse button in the grid and selecting *Attach a file*, you will create a new Document to attach.

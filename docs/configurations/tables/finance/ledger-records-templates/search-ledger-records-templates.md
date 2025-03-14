@@ -16,7 +16,7 @@ Per inserire una nuova causale, cliccare sul pulsante **Nuova**.
 > **Duplica la causale selezionata**: permette di duplicare la causale selezionata.  Utile per creare una nuova causale partendo da una con caratteristiche simili. Si aprirà una finestra nella quale verrà chiesto di attribuire un codice alla causale nuova che si intende creare e dopo aver confermato verrà chiesto di poter entrare nella causale appena creata per modificarne alcune caratteristiche. 
 
 :::important Vedi Anche
-[**VIDEO TUTORIALS SULLE CAUSALI CONTABILI**](/docs/video/finance/intro.md)
+[**VIDEO TUTORIALS SULLE CAUSALI CONTABILI**](/docs/video/finance/intro)
 :::
 
 :::tip[Maggiori informazioni]

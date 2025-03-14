@@ -1,20 +1,14 @@
 ---
-title: Contabilizzazione Distinta Anticipi
+title: Advances list accounting
 sidebar_position: 1
 ---
 
-Da questa posizione, dopo aver premuto Ricerca, è possibile contabilizzare le varie distinte inserite.
+From this position, after pressing Search, it is possible to account for the various entries made.
 
-Verrà effettuata una scrittura che accredita il conto corrente ed in contropartita rileva il debito verso la banca per anticipi.
+A transaction will be performed that credits the bank account and in return recognizes the debt to the bank for advances.
 
-Occorre selezionare la **causale conatbile** desiderata (lo schema della registrazione è comunque gestito dal programma indipendentemente dal template) ed eventualmente cambiare la data di registrazione se necessario.
+It is necessary to select the desired **accounting reason (causale conatbile)** (the recording scheme is managed by the program regardless of the template) and optionally change the recording date if necessary.
 
-La procedura di contabilizzazione può essere ripristinata come di consueto dal tab **Precedente**.
+The accounting procedure can be reverted as usual from the **Previous** tab.
 
 ![](/img/it-it/treasury/advance/accounting/advances-list-accounting/image01.png)
-
-
-
-
-
-

@@ -1,64 +1,61 @@
 ---
-title: Creazione e Gestione effetti
+title: Creation and Management of Bills (Creazione e Gestione effetti)
 sidebar_position: 5
 ---
 
-La form si trova sul percorso  **Tesoreria > Effetti > Crea Effetto** e permette la creazione *manuale* e la gestione, modifica/visualizzazione dell'effetto.
+The form can be found at **Treasury > Bills > Create Bill (Tesoreria > Effetti > Crea Effetto)** and allows for the *manual* creation and management, modification/viewing of the bill.
 
-## Come creare un Nuovo effetto
+## How to Create a New Bill
 
-:::tip[Attenzione]
-Stiamo per illustrare i passaggi per la creazione ***manuale*** di un effetto. Tuttavia **questa modalità è scarsamente utilizzata. Si consiglia di utilizzare le procedure automatiche:**
+:::tip[Attention (Attenzione)]
+We are about to outline the steps for the ***manual*** creation of a bill. However, **this method is rarely used. It is recommended to use the automated procedures:**
 
-[**Acquisizione effetti dalle partite**](/docs/treasury/bills-holding/procedures/bills-acquisition-from-maturity-values)
+[**Bills from Maturity Value Issue**](/docs/treasury/bills-holding/procedures/bills-acquisition-from-maturity-values)
 
-[**Acquisizione effetti dalle fatture**](/docs/treasury/bills-holding/procedures/bills-acquisition-from-invoices)
+[**Bills from Invoices Issue**](/docs/treasury/bills-holding/procedures/bills-acquisition-from-invoices)
 :::
 
-Da questa maschera:
+From this mask:
 
-1. Seleziona il **tipo effetto**: il programma procederà ad assegnare un **numero** secondo il numeratore collegato al tipo effetto e all'**anno** di riferimento, che propone come l'anno della data di sistema.
+1. Select the **Bill type**: the program will proceed to assign a **Number** according to the numerator linked to the type of bill and the **Year**, which it proposes as the year of the system date.
  
-2. Compila i campi **Debitore** (con il conto contabile del soggetto intestatario delle effetto) e **Scadenza** (con la data scadenza dell'effetto).
+2. Fill in the **Debtor** field (with the accounting account of the bill's addressee) and **Due date** field (with the due date of the bill).
 
-3. Salva la testata dell'effetto.
+3. Save the bill header.
 
-4. Compila i campi **importo valuta** e **importo effetto** manualmente o gestisci automaticamente sulla base delle partite/scadenze selezionate dalle tab dei **riferimenti scadenze/partite**. Importo bollo è in campo non utilizzato. Nelle tab dei riferimenti partite o scadenze puoi utilizzare i comandi **Inserimento partite o Inserimento scadenze** per ricercare e inserire partite / scadenze nell'effetto.
+4. Fill in the **Currency amount** and **Bill amount** manually or manage automatically based on the selected dues/maturities from the **references dues/maturities** tabs. The stamp duty amount is in an unused field. In the dues or maturities reference tabs, you can use the **Insert dues or Insert maturities (Inserimento partite o Inserimento scadenze)** commands to search for and insert dues/maturities into the bill.
 
-La **data valuta** è la data per il cambio nel caso di effetti in valuta. Viene proposta pari alla data effetto.
+The **Currency date** is the date for the exchange in the case of bills in foreign currency. It is proposed to be equal to the bill date.
 
-Gli elementi obbligatori da indicare sono la data scadenza, divisa e cambio, il cliente debitore e la piazza (compilata sulla base dell'anagrafica collegata al cliente).
+The mandatory elements to indicate are the due date, split, and exchange rate, the debtor customer, and the location (filled in based on the registry linked to the customer).
 
-L'**agente** è un semplice campo di riferimento dell'agente principale della fattura d'origine.
+The **Agent** is a simple reference field for the main agent of the original invoice.
 
-Lo **stato effetto** viene proposto come *emesso* e sarà aggiornato automaticamente sulla base delle operazioni che saranno eseguite per l'effetto.
+The **Bill status** is proposed as *Issued* and will be updated automatically based on the operations performed for the bill.
 
-Il flag **Stampato** non è gestito, mentre il *contabilizzato* e *accreditato* dipendono dalle procedure di contabilizzazione effetti e accrediti eseguite.
+The **Printed** flag is not managed, while the *Accounted* and *Credited* statuses depend on the procedures for accounting bills and credits performed.
 
-Il campo **riferimenti** è un campo note libero, che viene riportato nel file come riferimento dell'operazione.
+The **References** field is a free notes field, which is recorded in the file as a reference for the transaction.
 
-### La Tab Presentazione
+### The Submission Tab (La Tab Presentazione)
 
-Presenta due sezioni: 
+This tab presents two sections:
 
-**Appoggio bancario**, dove sono riportati gli estremi della banca d'appoggio quali **abi/cab** (obbligatori per poter inserire l'effetto in una distinta di presentazione) oltre a *conto corrente* (IBAN e SWIFT) e *CIN* che sono necessari solo in caso di effetti RID. 
+**Bank**, where the details of the supporting bank are reported such as **ABI/CAB** (mandatory for entering the bill in a submission list) along with *current account* (IBAN and SWIFT) and *CIN*, which are only necessary in case of RID bills.
 
-**Estremi Presentazione**
-riporta gli estremi della distinta con la quale è stato presentato in banca (ad esempio al salvo buon fine o all'incasso).
+**Presentation data**  
+This section reports the details of the list with which it was presented to the bank (for example, for collection or for safe custody).
 
-### La Tab Riferimenti scadenze
+### The Due References Tab (La Tab Riferimenti scadenze)
 
-In questa sezione si possono visualizzare i riferimenti della fattura d'origine (in caso di utilizzo della procedura *acquisizione effetti dalle scadenze*) oppure aggiungere manualmente scadenze attraverso il pulsante *inserimento scadenze*. In questo caso è possibile inserire anche scadenze non collegate a tipi pagamento da gestire con effetti (esempio *ricevute bancarie*), così come scadenze collegate a note di credito.
+In this section, you can view the references of the original invoice (in case of using the *acquisition of bills from maturities* procedure) or manually add due dates through the *Insert maturities* button. In this case, it is also possible to enter due dates not linked to payment types to be managed with bills (e.g., *Cash order*), as well as due dates linked to credit notes.
 
-### La Tab Riferimento partite
+### The Party References Tab (La Tab Riferimento partite)
 
-In questa sezione si possono visualizzare i riferimenti delle partite d'origine (in caso di acquisizione effetti dalle partite) oppure aggiungere manualmente partite attraverso il pulsante *inserimento partite*.
+In this section, you can view the references of the original parties (in case of acquisition of bills from parties) or manually add parties through the *Insert maturity values* button.
 
-In questo caso è possibile inserire anche partite non collegate a tipi pagamento da gestire con effetti (esempio *ricevute bancarie*), così come partite collegate a note di credito.
+In this case, it is also possible to enter parties not linked to payment types to be managed with bills (e.g., *Cash order*), as well as parties linked to credit notes.
 
-### La Tab Altro
-In questa sezione si possono memorizzare i riferimenti dei giranti e degli avallanti.
+### The Other Tab (La Tab Altro)
 
-
-
-
+In this section, you can store references for endorser and guarantors.

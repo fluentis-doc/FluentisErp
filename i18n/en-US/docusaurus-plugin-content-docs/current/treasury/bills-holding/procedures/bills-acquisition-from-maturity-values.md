@@ -1,67 +1,67 @@
 ---
-title: Acquisizione effetti dalle partite
+title: Bills from Maturity Value Issue
 sidebar_position: 2
 ---
 
-La form si trova in Tesoreria > Portafoglio Effetti > Procedure > Acquisizione effetti dalle partite
+The form can be found in Treasury > Effects Portfolio > Procedures > Bills from Maturity Value Issue.
 
-Da questa form è possibile eseguire un *wizard* che esegue contemporaneamente:
+From this form, it is possible to perform a *wizard* that simultaneously executes:
 
-- La ricerca delle partite aperte dei clienti idonee alla creazione degli effetti (ad esempio una ricevuta bancaria)
-- La creazione dell'effetto (esempio una ricevuta bancaria) leggendo i dati della partita
-- La contabilizzazione dell'effetto che,  sua volta, chiude la partita parta e crea la scrittura contabile di storno credito cliente e accredito conto associato alla tipologia di effetto utilizzato.
+- The search for customers' open transactions suitable for the creation of effects (for example, a bank receipt)
+- The creation of the effect (for example, a bank receipt) by reading the transaction data
+- The accounting of the effect which, in turn, closes the open transaction and creates the accounting entry for the customer credit reversal and the credit to the account associated with the type of effect used.
 
-## Come creare un nuovo effetto automaticamente dalle partite aperte
+## How to Automatically Create a New Effect from Open Transactions
 
-1. Utilizza la parte superiore della maschera per filtrare la ricerca delle partite aperte da trasformare in effetti (ad esempio Ricevute bancarie o cambiali). 
+1. Use the top part of the form to filter the search for open transactions to transform into effects (for example, Bank Receipts or promissory notes).
 
-:::note[Nota]
-Sono presenti, nella parte bassa della zona di filtro, alcuni flag di ricerca: 
+:::note[Note]
+There are some search flags present at the bottom of the filter area:
 
-- secondo l'impostazione del [**raggruppamento scadenze**](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/payments) delle anagrafiche clienti; di default sono attivi e quindi visibili entrambi i gruppi, con e senza raggruppamento scadenze negli effetti
--  Per visualizzare anche le partite attive dei fornitori (disattivata di default) oltre che quelle clienti (attiva di default)
+- according to the setting of the [**due date grouping**](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/payments) for customer registries; by default, both groups are enabled and therefore visible, with and without due date grouping in the effects
+- To also view active transactions of suppliers (disabled by default) in addition to those of customers (enabled by default)
 :::
 
-:::tip[Attenzione]
-Sono visibili in questa sezione **SOLO** le partite contabili collegate a tipi pagamento di natura ricevuta bancaria o cambiale.
+:::tip[Attention]
+Only the accounting transactions connected to payment types of a bank receipt or promissory note are **VISIBLE** in this section.
 
-Questo è un filtro a monte, attivo per sicurezza, che è possibile gestire dalla tabella [**Tipi pagamento**](/docs/configurations/tables/general-settings/payment-types) abbinando ad ogni tipo di pagamento il corrispondente tipo effetto.
+This is a preliminary filter, active for security reasons, which can be managed from the [**Payment Types**](/docs/configurations/tables/general-settings/payment-types) table by matching each payment type with the corresponding effect type.
 :::
 
-2. Seleziona con il mouse dalla griglia centrale le partite che desideri acquisire negli effetti. In base all'impostazione del flag *Raggruppa scadenze / Raggruppa note di accredito in effetti*, presente nelle [**anagrafiche clienti**](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/payments), ed al flag *Raggruppa note di accredito per data scadenza*, presente nei [**parametri portafoglio effetti**](/docs/configurations/parameters/treasury/bills-portfolio-parameters), le partite saranno accorpate (**a parità di banca d'appoggio e data scadenza**) oppure creeranno in ogni caso effetti distinti.
+2. Select with the mouse from the central grid the transactions you wish to acquire into the effects. Depending on the setting of the flag *Group due dates / Group credit notes into effects*, found in the [**customer registries**](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/payments), and the flag *Group credit notes by due date*, present in the [**effects portfolio parameters**](/docs/configurations/parameters/treasury/bills-portfolio-parameters), the transactions will be grouped (**with the same supporting bank and due date**) or will create separate effects in any case.
 
-3. Nella parte bassa della maschera imposta la **data di emissione** degli effetti ed il **tipo effetto**.
+3. In the lower part of the form, set the **issue date** of the effects and the **effect type**.
 
-La sezione di **contabilizzazione** può essere impostata di default all'interno dei parametri del modulo Portafoglio effetti. Può comunque essere attivata e disattivata da qui, prima di procedere a lanciare l'acquisizione.
+The **accounting** section can be set by default within the parameters of the Effects Portfolio module. However, it can still be enabled and disabled from here before proceeding to initiate the acquisition.
 
-La procedura di contabilizzazione, se non attivata contestualmente alla creazione in questa form, può essere lanciata successivamente [**dall'apposita form**](/docs/treasury/bills-holding/accounting/bills-accounting). La scrittura contabile generata provvederà a stornare il credito verso il cliente, chiudendo la relativa partita aperta e accreditando il conto relativo alla [**tipologia di effetto**](/docs/configurations/tables/treasury/bills-portfolio-module-tables/bills-types) selezionato.
+The accounting procedure, if not activated simultaneously with the creation in this form, can be launched later [**from the specific form**](/docs/treasury/bills-holding/accounting/bills-accounting). The accounting entry generated will reverse the credit towards the customer, closing the related open transaction and crediting the account related to the selected [**effect type**](/docs/configurations/tables/treasury/bills-portfolio-module-tables/bills-types).
 
-Il flag  **raggruppa per conto effetto**  esegue una registrazione unica, dove in questo saranno presenti tante righe quante sono gli effetti da contabilizzare.
+The flag **group by effect account** executes a single entry, with as many lines as there are effects to be accounted.
 
-Il flag di **gestione provvisoria** andrà a generare registrazioni contabili di tipo provvisorio.
+The **provisional management** flag will generate provisional accounting entries.
 
-:::danger[Attenzione]
-La **gestione dell'acquisizione effetti dalle partite** è alternativa all'acquisizione dalle fatture.
+:::danger[Attention]
+The **management of the acquisition of effects from transactions** is an alternative to the acquisition from invoices.
 :::
 
-4. Premi il bottone nella ribbon bar **Acquisizione** per avviare la procedura.
+4. Press the button in the ribbon bar **Acquisition** to start the procedure.
 
-#### Pulsanti specifici
+#### Specific Buttons
 
-> **Ricerca**: Ricerca la lista delle partite per le quali creare gli effetti.
+> **Search**: Searches the list of transactions for which to create the effects.
 
-> **Acquisizione** Esegue la creazione degli effetti per le partite selezionate.
+> **Transfer**: Executes the creation of effects for the selected transactions.
 
-### Precedenti
+### Previous
 
-Eseguita la creazione, le righe spariranno dalla griglia del *filtro* e il risultato sarà visibile nella scheda **Precedenti** all'interno della quale è possibile annullare l'operazione. 
+Once the creation is executed, the rows will disappear from the *filter* grid and the result will be visible in the **Previous** tab, where it is possible to cancel the operation.
 
-Non è possibile annullare la creazione di effetti se questi sono contabilizzati o presentati in distinta.
+It is not possible to cancel the creation of effects if they are accounted for or presented in the summary.
 
-#### Pulsanti specifici
+#### Specific Buttons
 
-> **Ricerca**: Ricerca la lista delle creazioni eseguite.
+> **Search**: Searches the list of executed creations.
 
-> **Rollback acquisizione**: Con questo pulsante sarà cancellata tutta l'acquisizione effettuata, con tutti gli effetti associati.
+> **Rollback acquisition**: This button will delete all the acquisitions made, along with all associated effects.
 
-> **Rollback effetto**: Con questo pulsante sarà cancellata la creazione del singolo effetto selezionato.
+> **Rollback Bill**: This button will delete the creation of the selected single effect.

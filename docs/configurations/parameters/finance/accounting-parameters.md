@@ -161,5 +161,5 @@ In questa tab si impostano nel dettaglio i conti del piano dei conti che saranno
 ## 3. Video tutorials Parametri
 
 :::important Vedi Anche
-[**VIDEO TUTORIALS SUI PARAMETRI**](/docs/video/finance/intro.md)
+[**VIDEO TUTORIALS SUI PARAMETRI**](/docs/video/finance/intro)
 :::

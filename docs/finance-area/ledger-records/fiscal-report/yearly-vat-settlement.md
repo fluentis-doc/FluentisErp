@@ -17,7 +17,7 @@ Nella stampa NON è previsto un flag per la versione in definitiva, in quanto fo
 
 
 :::important Vedi Anche
-[**VIDEO TUTORIALS SULLE STAMPE FISCALI**](/docs/video/finance/intro.md)
+[**VIDEO TUTORIALS SULLE STAMPE FISCALI**](/docs/video/finance/intro)
 :::
 
 

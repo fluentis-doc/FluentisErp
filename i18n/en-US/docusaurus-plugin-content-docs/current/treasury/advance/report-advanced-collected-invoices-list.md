@@ -1,13 +1,13 @@
 ---
-title: Stampa Lista Fatture Anticipate e Incassate
+title: Print List of Anticipated and Collected Invoices (Stampa Lista Fatture Anticipate e Incassate)
 sidebar_position: 4
 ---
 
-Da questa form è possibile lanciare la stampa che riepiloga le fatture anticipate.
+From this form, it is possible to initiate the printout that summarizes the anticipated invoices.
 
-Sono presenti i principali elementi di filtro quali il tipo fattura, la banca di anticipo, il cliente, nonchè i riferimenti alla distinta di antipo.
+The main filtering elements are present, such as the invoice type, the advance bank, the customer, as well as references to the advance document.
 
-Inoltre è possibile limitare la visione alle sole fatture già anticipate, incassate o da anticipare.
+Additionally, it is possible to limit the view to only those invoices that have already been anticipated, collected, or to be anticipated.
 
 ![](/img/it-it/treasury/advance/report-advanced-collected-invoices-list/image01.png)
 

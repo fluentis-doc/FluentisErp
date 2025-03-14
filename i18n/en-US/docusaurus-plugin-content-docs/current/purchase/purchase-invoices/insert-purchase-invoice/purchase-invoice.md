@@ -1,320 +1,318 @@
 ---
-title: Nuova Fattura di acquisti
-sidebar_position: 1
+title: New Purchase Invoice (Nuova Fattura di acquisti)
+sidebar_position: 2
 ---
 
-La form si apre tramite il percorso **Acquisti > Fatture di acquisto > Nuova fattura** oppure tramite il pulsante **Nuova** che si trova nella form [Ricerca fatture di acquisto](/docs/purchase/purchase-invoices/insert-purchase-invoice/search-purchase-invoices).
+The form opens via the path **Purchases > Purchase Invoices > New Invoice** or through the **New** button located in the [Purchase Invoice Search](/docs/purchase/purchase-invoices/insert-purchase-invoice/search-purchase-invoices) form.
 
-## *Come creare una fattura di vendita*
+## *How to create a purchase invoice (Come creare una fattura di acquisti)*
 
 <details>
  
-<summary>Clicca per i passaggi fondamentali</summary>
+<summary>Click for the main steps (Clicca per i passaggi fondamentali)</summary>
  
-1. **Inserisci i dati obbligatori**: *Tipo* e *Fornitore*. *Anno*, *Numero* e *Data Inserimento* saranno proposti in automatico.  
+1. **Enter mandatory data**: *Type* and *Supplier*. *Year*, *Number* and *Insert date* will be proposed automatically.  
  
-2. **Inserisci o modifica i dati facoltativi** della testata: come date di consegna, eventuali *sconti*, la *destinazione*, ecc.  
+2. **Enter or modify optional data** in the header: such as delivery dates, any *Discounts*, the *Destination*, etc.  
  
-3. **Inserisci gli Articoli**: mediante doppio click nel campo *Codice articolo* si apre l’help articoli che permette di cercare e selezionare un articolo esistente. Tutti gli altri dati della riga, come *unità di misura*, *quantità*, *prezzo*, saranno proposti in automatico, ma possono essere modificati.
-In alternativa è possibile selezionare come *Tipo riga* un *Articolo non codificato* e inserire manualmente i dati successivi.
+3. **Items**: by double-clicking in the *Item code* field, the item help will open allowing you to search and select an existing item. All other row data, such as *Units of Measure*, *Quantity*, *Price*, will be proposed automatically but can be modified. Alternatively, it is possible to select as *Line type* a *Not-Codified Item* and manually enter the subsequent data.
  
-4. **Inserisci eventuali sconti o altre informazioni aggiuntive** nei tab *Sconti/listini* e *Dati articolo*
+4. **Enter any discounts or additional information** in the *Discounts/Price Lists* and *Item data* tabs.
  
-5. **Controlla la sezione dei Riepiloghi** ed inserisci eventuali spese o sconti finali.  
+5. **Summaries** and enter any final expenses or discounts.  
  
-6. Una volta controllato e confermato l’ordine, **inserisci una *Data conferma* e attiva il flag *Stampato* in testata** in modo da rendere il documento disponibile per le procedure di evasione.
+6. Once the order has been checked and confirmed, **enter a *Confirmation date* and activate the *Printed* flag in the header** to make the document available for fulfillment procedures.
  
 </details>
 
-## **1. Dati obbligatori**
+## **1. Mandatory Data (Dati obbligatori)**
 
-- **Tipo fattura acquisto** predefinito in *Tabelle > Acquisti > [Tipo fattura di acquisto](/docs/configurations/tables/purchase/purchase-invoices-type)*;   
-Questo campo determina il range di numerazione del documento che si sta inserendo e propone automaticamente il *Numero interno* della fattura in base alla data inserimento e all'ultimo numero inserito;   
-- **Fornitore** può essere inserito usando l'[help di campo](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) oppure manualmente;
-- **Data**: viene proposta in automatico la data corrente ma può essere modificata manualmente rispettando la regola di progressione tra data e numero;
-- **Numero interno**: viene proposto automaticamente in base al tipo fattura, ma può essere modificato manualmente sempre rispettando la regola di progressione tra data e numero;
-- **Numero documento**: in questo campo è possibile inserire un numero documento che può essere diverso rispetto a quello proposto nel campo precedente.
+- **Purchase invoice type** in *Tables > Purchases > [Purchase Invoice Type (Tipo fattura di acquisto)](/docs/configurations/tables/purchase/purchase-invoices-type)*;   
+This field determines the numbering range of the document being entered and automatically proposes the *Internal number* of the invoice based on the inclusion date and the last number entered;   
+- **Supplier** can be entered using the [field help (help di campo)](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) or manually;
+- **Date**: the current date is proposed automatically but can be modified manually respecting the progression rule between date and number;
+- **Internal number**: automatically proposed based on the invoice type, but can be manually modified while always respecting the progression rule between date and number;
+- **Document Number**: in this field, it is possible to enter a document number that may differ from that proposed in the previous field.
 
-La form contiene una serie di tab.
+The form contains a series of tabs.
 
-## **2. Testata**
+## **Header**
 
-Dopo aver selezionato i dati obbligatori nella sezione superiore, l'utente può continuare l'inserimento dei seguenti dati manualmente oppure con il [help di campo](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) oppure, in base alle procedure che sceglie, l'applicazione compila i campi *automaticamente*.
+After selecting the mandatory data in the upper section, the user can continue entering the following data manually or with the [field help (help di campo)](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection), or, based on the procedures chosen, the application fills in the fields *automatically*.
 
-:::note Ricorda
-Se il documento viene *creato automaticamente*, ad esempio mediante **Evasione da ordine fornitore** o **Evasione da DDT** questi dati vengono ripresi dal *documento d'origine* da cui è stata generata la fattura.
+:::note Remember (Ricorda)
+If the document is *created automatically*, for example through **Fulfillment from Supplier Order (Evasione da ordine fornitore)** or **Fulfillment from DDT (Evasione da DDT)**, these data are taken from the *originating document* from which the invoice was generated.
 :::
 
-### 2.1 Dati fornitore
+### 2.1 Supplier Data (Dati fornitore)
 
-Inserendo il **Fornitore** vengono *proposti* in automatico tutti i dati specifici del tab **Testata**, secondo i dati impostati in precedenza nell'[anagrafica fornitore](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/accounting-data-intro) nei campi corrispondenti al suo indirizzo e nelle *sezioni*:  
+By entering the **Supplier**, all specific data from the **Header** tab will be *automatically proposed* according to the data previously set in the [supplier registry (anagrafica fornitore)](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/accounting-data-intro) in the fields corresponding to their address and in the *sections*:
 
-- **Divisa**: sezione contenente i dati [Divisa](/docs/configurations/tables/general-settings/currencies), [Cambio](/docs/guide/common/glossary/glossary-intro#currency-exchange), [Data valuta](/docs/guide/common/glossary/glossary-intro#currency-date).   
-- **Nazione**: sezione contenente i dati [*Nazione*](/docs/guide/common/glossary/glossary-intro#country), [Lingua](/docs/guide/common/glossary/glossary-intro#language), [Zona](/docs/guide/common/glossary/glossary-intro#zone).   
-- **Spedizione**: sezione contenente i dati [*Spedizioni*](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/delivery), [Porto](/docs/guide/common/glossary/glossary-intro#carriage), [Imballo](/docs/guide/common/glossary/glossary-intro#packing), [Listino](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/price-list#listini) predefinito e il suo [intervallo di validità](/docs/guide/common/glossary/glossary-intro#validity-date).
+- **Currency**: section containing [Currency (Divisa)](/docs/configurations/tables/general-settings/currencies), [Exchange Rate (Cambio)](/docs/guide/common/glossary/glossary-intro#currency-exchange), [Currency Date (Data valuta)](/docs/guide/common/glossary/glossary-intro#currency-date).   
+- **Country**: section containing [*Country*](/docs/guide/common/glossary/glossary-intro#country), [Language (Lingua)](/docs/guide/common/glossary/glossary-intro#language), [Zone (Zona)](/docs/guide/common/glossary/glossary-intro#zone).   
+- **Delivery**: section containing [*Shipments*](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/delivery), [Freight (Porto)](/docs/guide/common/glossary/glossary-intro#carriage), [Packing (Imballo)](/docs/guide/common/glossary/glossary-intro#packing), [Default Price List (Listino)](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/price-list#listini) and its [validity range (intervallo di validità)](/docs/guide/common/glossary/glossary-intro#validity-date).
 
-Tutti questi campi possono essere cancellati oppure modificati manualmente dall'utente.
+All these fields can be deleted or manually modified by the user.
 
-### 2.2 Dati facoltativi testata
+### 2.2 Optional Header Data (Dati facoltativi testata)
 
-- **Stato fatture**: quando la fattura viene creata non ha nessun flag attivo. La sezione comprende i campi:
+- **Invoices status**: when the invoice is created, no flags are active. The section includes the fields:
 
-    > **Controllata**: il flag attivo permette la contabilizzazione della fattura;  
-    > **Contabilizzata**: il flag è automaticamente attivato quando la fattura supporta la procedura di [Contabilizzazione](/docs/purchase/purchase-invoices/accounting/purchase-invoices-accounting);  
-    > **Caricata**: il flag diventa attivo quando la fattura supporta la procedura di [Carico nel magazzino](/docs/purchase/purchase-invoices/insert-purchase-invoice/purchase-invoice). Nel caso di fattura creata da documento di trasporto già caricato, è presente il parametro generale VE-PurchaseInvoices_VerifyLoadStatusDDT che blocca il flag Caricata anche nella fattura.
-    > **Storicizzata**: attivando questo flag il documento non sarà più visibile per la procedure successive.   
-    > **Annullata**: il flag attivo permette di annullare la fattura.
+    > **Controlled**: the active flag allows the invoicing of the invoice;  
+    > **Accounted**: the flag is activated automatically when the invoice supports the [Accountingt (Contabilizzazione)](/docs/purchase/purchase-invoices/accounting/purchase-invoices-accounting) procedure;  
+    > **Loaded**: the flag becomes active when the invoice supports the [Warehouse Loading (Carico nel magazzino)](/docs/purchase/purchase-invoices/insert-purchase-invoice/purchase-invoice) procedure. In the case of an invoice created from a transport document already loaded, the general parameter VE-PurchaseInvoices_VerifyLoadStatusDDT will block the Loaded flag even in the invoice.
+    > **Historicized**: activating this flag will make the document no longer visible for subsequent procedures.   
+    > **Cancelled**: the active flag allows the invoice to be canceled.
 
 :::note
-I flag possono essere tolti mediante le procedure di ripristino operazione.
+The flags can be removed through restoration operation procedures.
 :::
 
-- **Data di arrivo**: in questo campo si può inserire la data di arrivo della merce.
+- **Arrival date**: in this field, one can enter the date of arrival of the goods.
 
-- **Data carico**: questo campo viene compilato automaticamente con la data corrente al momento del carico oppure con la data usata per la registrazione di magazzino, a seconda della procedura utilizzata.   
+- **Load date**: this field is automatically filled with the current date at the time of loading or with the date used for warehouse registration, depending on the procedure used.   
 
-- **Annotazioni fornitore**: questo campo viene ripreso dall'anagrafica fornitore, mentre nel caso di creazione da un solo ordine/DDT verranno ripresi gli stessi dati contenuti nell'omonimo campo del documento di partenza. Può essere inserito anche manualmente. 
+- **Supplier Annotations (Annotazioni fornitore)**: this field is retrieved from the supplier registry, while in the case of creation from a single order/DDT, the same data contained in the corresponding field of the originating document will be retrieved. It can also be entered manually.
 
-- **Nostro/Vostro riferimento**: in questi campi solitamente viene indicato un riferimento interno ed un riferimento fornitore per il documento.    
-Se presente, viene ripreso dall'anagrafica fornitore altrimenti può essere inserito manualmente.
-Nel caso in cui l'ordine viene completato con la procedura [Evasione da ordine](/docs/purchase/purchase-invoices/insert-purchase-invoice/purchase-invoice) o mediante [Valorizzazione DDT di acquisto](/docs/purchase/purchase-invoices/procedures/purchase-delivery-note-valorization), nei campi *Annotazioni fornitore* e *Nostro/Vostro riferimento* viene proposta l'informazione presente nei campi omonimi del documento di partenza (questo trasferimento è valido solo nel caso di fattura creata tramite il prelievo dei dati da un solo documento di partenza).
+- **Our/Your reference**: in these fields, an internal reference and a supplier reference for the document are usually indicated.    
+If present, it is retrieved from the supplier registry; otherwise, it can be entered manually. If the order is completed using the [Fulfillment from Order (Evasione da ordine)](/docs/purchase/purchase-invoices/insert-purchase-invoice/purchase-invoice) procedure or through [Purchase DDT Valuation (Valorizzazione DDT di acquisto)](/docs/purchase/purchase-invoices/procedures/purchase-delivery-note-valorization), the fields *Supplier Annotations (Annotazioni fornitore)* and *Our/Your reference* will propose the information present in the corresponding fields of the originating document (this transfer is valid only in the case of invoices created by retrieving data from a single originating document).
 
-- **Note iniziali**: nel caso di evasione verranno riproposte le informazioni presenti nell'ordine. In alternativa, si possono selezionare le note che sono state inserite in precedenza nella tabella omonima che si trova nel percorso *Configurazione > Utilità > Gestione note codificate*; per questo l'utente deve effettuare doppio click sul campo per aprire l'Help e selezionare i dati; altrimenti può inserirle manualmente.
+- **Initial note**: in the case of fulfillment, the information present in the order will be re-proposed. Alternatively, notes previously entered in the corresponding table located in the path *Configuration > Tools > Management of Coded Notes (Configurazione > Utilità > Gestione note codificate)* can be selected; for this, the user must double-click on the field to open the Help and select the data; otherwise, they can be entered manually.
 
-- **Progetto**: usando l'help di campo si può collegare il documento a un progetto. Questa associazione funziona solo al livello della testata dell'articolo. Il progetto viene inserito automaticamente se il DDT è stato creato mediante evasione di un ordine che lo contiene.
+- **Project**: using the field help, the document can be linked to a project. This association only works at the item header level. The project is automatically entered if the DDT is created through the fulfillment of an order that contains it.
 
-- **CUP/CIG**: se nelle informazioni fiscali dell'[anagrafica fornitore](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/fiscal-information) esso è abilitato alla gestione di CIG e CUP, sarà possibile compilare questi dati nel documento. I campi sono posizionati sottola voce *Annotazioni fornitore*.
+- **CUP/CIG**: if in the tax information of the [supplier registry (anagrafica fornitore)](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/fiscal-information) it is enabled for the management of CIG and CUP, it will be possible to fill in this data in the document. The fields are located under the *Supplier Annotations (Annotazioni fornitore)* section.
 
-- **Rif. FA**: posizionato sotto la voce *Nazione*. Viene usato dopo la creazione dello [storno](/docs/purchase/purchase-invoices/insert-purchase-invoice/search-purchase-invoices) di una fattura per collegare manualmente le due fatture inserendo nella fattura di storno *numero*, *tipo* e *data* della fattura di origine.
+- **Ref. FA**: positioned under the *Country* section. It is used after creating the [Cancellation (storno)](/docs/purchase/purchase-invoices/insert-purchase-invoice/search-purchase-invoices) of an invoice to manually connect the two invoices by entering the invoice's *number*, *type*, and *date* of the originating invoice.
 
-- **Reg. cont.**: osizionato sotto la voce *Nazione*. Riporta numero, data e protocollo della registrazione contabile derivata dalla contabilizzazione della fattura. 
+- **Acc. rec.**: positioned under the *Country* section. Reports the number, date, and protocol of the accounting entry derived from the accounting of the invoice. 
 
-### 2.3 Pagamenti
+### 2.3 Payments (Pagamenti)
 
-Le **Soluzioni di pagamento** sono riportate in automatico dall'*Anagrafica fornitore > tab Pagamenti* e possono essere modificate/cancellate dall'utente.
+The **Payment Terms** are automatically reported from the *Supplier Registry > Payments tab (Anagrafica fornitore > tab Pagamenti)* and can be modified/removed by the user.
 
-Se al **Tipo pagamento** è associato uno sconto finanziario, l'importo dello sconto viene considerato solo ai fini contabili cioè nelle scadenze del documento e non nel totale fattura.
+If a financial discount is associated with the **Payment type**, the amount of the discount is considered only for accounting purposes, i.e., in the due dates of the document and not in the invoice total.
 
-#### Pulsante specifico
+#### Specific Button (Pulsante specifico)
 
-> **Cancella pagamenti**: utilizzato per cancellare le righe di pagamento selezionate.
+> **Delete Payments**: used to delete the selected payment lines.
 
-### 2.4 Sconti
+### 2.4 Discounts (Sconti)
 
-Vengono proposti solo gli sconti predefiniti ripresi dall'*Anagrafica fornitore > tab Sconti* e possono essere modificate/cancellate dall'utente.
+Only predefined discounts retrieved from the *Supplier Registry > Discounts tab (Anagrafica fornitore > tab Sconti)* are proposed and can be modified/removed by the user.
 
 import TabDiscount from './../../../import/sections/tab-discount.md'
 
 <TabDiscount />
 
-### 2.5 Spedizione
+### 2.5 Shipping (Spedizione)
 
-Qui viene proposta l'informazione inserita nell'anagrafica fornitore, tab [Consegna](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/delivery), solo se esistono dati di default.
+Here, the information entered in the supplier registry, the [Delivery tab (Consegna)](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/delivery), is proposed, only if there are default data.
 
-Il combo box propone tutti i *Destinatari* e le *Destinazioni* inserite nell'anagrafica fornitore.
+The combo box proposes all *Recipients* and *Destinations* entered in the supplier registry.
 
-Gli indirizzi di spedizione (destinatario/destinazione e vettore) possono essere inseriti anche solo descrittivi senza essere precedentemente inseriti tra i contatti. 
+Shipping addresses (recipient/destination and carrier) can also be entered descriptively without being previously inserted among the contacts. 
 
-### 2.6 Vettore
+### 2.6 Carrier (Vettore)
 
-In questo campo è possibile inserire il Vettore che effettuerà la spedizione. Se questo è stato inserito nell'anagrafica fornitore, tab [Consegna](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/delivery) sarà possibile selezionarlo dal menù a tendina della seconda colonna, in alternativa sarà sufficiente fare doppio click sulla terza colonna (*Vettore*) per selezionare uno dei contatti della società.
+In this field, it is possible to enter the Carrier that will carry out the shipment. If this has been entered in the supplier registry, tab [Delivery (Consegna)](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/delivery), it will be possible to select it from the dropdown menu of the second column; alternatively, it is sufficient to double-click on the third column (*Carrier*) to select one of the company's contacts.
 
-Opzionalmente si possono aggiungere i dettagli della *Targa* del vettore e la *Data/Ora trasporto*.
+Optionally, details of the *Number plate* and *Transportation Date/Time (Data/Ora trasporto)* can be added.
 
-### 2.7 Extra Data
+### 2.7 Extra Data (Extra Data)
 
 import TabExtraData from './../../../import/sections/tab-extra-data.md'
 
 <TabExtraData />
 
-## **Procedure testata:**
+## **Header Procedures: (Procedure testata)**
 
-### *Carico automatico in magazzino*
+### *Automatic Warehouse Loading (Carico automatico in magazzino)*
 
-Questa procedura viene lanciata con l'aiuto del pulsante **Carico automatico nel magazzino** che si trova nella testata del documento e rispetta una serie di parametri impostati precedentemente nella fattura. Per dettagli consultare la procedura identica: [Carico fatture di acquisto in magazzino](/docs/purchase/purchase-invoices/procedures/purchase-invoices-load-on-warehouse).
+This procedure is launched using the **Automatic load on warehouse** button found in the document header and respects a series of parameters previously set in the invoice. For details, refer to the identical procedure: [Loading Purchase Invoices into Warehouse (Carico fatture di acquisto in magazzino)](/docs/purchase/purchase-invoices/procedures/purchase-invoices-load-on-warehouse).
 
-Il risultato può essere visualizzato in Logistica > [Registrazioni](/docs/logistics/warehouse/stock-records/records) oppure nella procedura [Carico fatture di acquisto in magazzino](/docs/purchase/purchase-invoices/procedures/purchase-invoices-load-on-warehouse), tab *Riepilogativo*.
+The result can be viewed in Logistics > [Records (Registrazioni)](/docs/logistics/warehouse/stock-records/records) or in the [Loading Purchase Invoices into Warehouse (Carico fatture di acquisto in magazzino)](/docs/purchase/purchase-invoices/procedures/purchase-invoices-load-on-warehouse) procedure, *Summary* tab.
 
-:::note Nota
-Se nei *Parametri fatture di acquisto* è attivo il flag **Carico/Scarico automatico**, al momento dell'attivazione del flag *Controllata* nella testata della fattura sarà automaticamente proposto di caricare il documento a magazzino. Perciò, questo campo sarà editabile solo una volta attivato il campo *Controllata* e inserito il *Numero documento*.
+:::note Note (Nota)
+If in the *Purchase Invoice Parameters (Parametri fatture di acquisto)* the flag **Automatic load/unload** is active, at the moment the *Controlled* flag in the invoice header is activated, it will automatically propose to load the document into the warehouse. Therefore, this field will be editable only once the *Controlled* field is activated and the *Document Number* is entered.
 :::
 
-### *Evasione DDT*
+### *D.N. execution*
 
-La procedura permette la creazione di una fattura di acquisto mediante evasione di uno o più DDT di acquisto.
+This procedure allows the creation of a purchase invoice by fulfilling one or more purchase DDTs.
 
-Nella testata del documento, premendo il pulsante **Evasione DDT** si aprirà la form in cui è possibile filtrare i DDT intestati al fornitore del documento. È quindi possibile inserire gli articoli all'interno della fattura, evadendo totalmente o parzialmente i DDT.
+In the document header, by pressing the **D.N. execution** button, the form will open where it is possible to filter the DDTs addressed to the supplier of the document. It is then possible to insert items into the invoice, fully or partially fulfilling the DDTs.
 
-Per poter utilizzare questa procedura vi sono delle condizioni iniziali che devono essere rispettate:
+To use this procedure, certain initial conditions must be met:
 
-- i/il fornitore dei DDT deve essere lo stesso della fattura;
-- il DDT che si vuole evadere deve avere attivo il flag *Controllato* e non deve essere già *Valorizzato*.
+- the supplier of the DDTs must be the same as that of the invoice;
+- the DDT you want to fulfill must have the *Controled* flag active and must not already be *Valorized*.
 
-#### Procedimento
+#### Procedure
 
-Si dovrà andare ad impostare nella testata della nuova fattura, il [Tipo fattura](/docs/configurations/tables/purchase/purchase-invoices-type) che si vuole creare e il *Fornitore*. Una volta inseriti questi dati, bisognerà cliccare sul pulsante *Evasione DDT* per aprire la form di evasione.
+You must set in the header of the new invoice the [Invoice Type (Tipo fattura)](/docs/configurations/tables/purchase/purchase-invoices-type) you want to create and the *Supplier*. Once these data are entered, you should click on the *D.N. execution* button to open the fulfillment form.
 
-I filtri per fornitore e divisa verranno riportati in automatico in base al fornitore inserito nella fattura.
+The filters for supplier and currency will be automatically carried over based on the supplier entered in the invoice.
 
-Nell'area di filtro è possibile scegliere se visualizzare i dati in una *Griglia*, una *Struttura gerarchica* oppure entrambe le soluzioni.
+In the filter area, you can choose whether to view the data in a *Grid (Griglia)*, a *Hierarchical structure* or both solutions.
 
-> La **Struttura gerarchica** permette di avere una suddivisione più chiara dei DDT disponibili per l'evasione e degli articoli contenuti in ciascuno di essi. Permette inoltre la selezione massiva tutti gli articoli contenuti all'interno di un DDT semplicemente attivando il flag sulla riga del DDT.   
-> La **Griglia** permette una maggiore personalizzazione della form mediante aggiunta di campi da *Object navigator*. In questo caso la selezione massiva va effettuata mediante l'utilizzo dei tasti della tastiera e cliccando sul pulsante *Seleziona/Deseleziona* nella ribbon bar.
+> The **Hierarchical structure** allows for a clearer division of the DDTs available for fulfillment and the items contained in each. It also allows for mass selection of all items contained within a DDT simply by activating the flag on the DDT line.   
+> The **Grid (Griglia)** allows for greater customization of the form by adding fields from the *Object navigator*. In this case, mass selection must be done using the keyboard keys and clicking the *Select/Deselect (Seleziona/Deseleziona)* button in the ribbon bar.
 
-Una volta impostati tutti i filtri desiderati, cliccando sul pulsante di *Ricerca* verranno visualizzati nella parte sottostante tutti i DDT controllati e non ancora valorizzati oppure valorizzati parzialmente.
+Once all desired filters are set, clicking the *Search* button will display all checked DDTs that have not yet been valued or are partially valued in the lower part.
 
-Nella griglia di risultati, l'utente ha poi la possibilità di:
+In the result grid, the user then has the option to:
 
- - Selezionare tutti o alcuni degli articoli proposti: per farlo basterà selezionare il flag presente all'inizio della riga articolo. La *Quantità da evadere* sarà automaticamente impostata uguale alla *Quantità residua*.
- - Selezionare alcuni articoli per una *quantità parziale*. In questo caso si dovrà andare a modificare la *Quantità da evadere*.
+ - Select all or some of the proposed items: to do this, simply select the flag present at the start of the item line. The *Quantity to Fulfill (Quantità da evadere)* will automatically be set equal to the *Residual quantity*.
+ - Select some items for a *partial quantity (quantità parziale)*. In this case, the *Quantity to Fulfill (Quantità da evadere)* must be modified accordingly.
 
-Per completare la procedura bisognerà poi cliccare sul pulsante *Trasferimento*, che andrà a riprendere tutti i dati presenti nei DDT seezionati e li riporterà nella fattura.
+To complete the procedure, you will then need to click the *Transfer* button, which will retrieve all the data present in the selected DDTs and bring it back to the invoice.
 
-#### Pulsanti specifici
+#### Specific Buttons (Pulsanti specifici)
 
-> **Ricerca**: permette di cercare i DDT disponibili per il trasferimento.  
-> **Trasferimento**: permette di trasferire gli articoli/ordini selezionati.  
-> **Seleziona tutto**: permette di selezionare tutti gli articoli dalla lista.  
-> **Deseleziona tutti**: permette di deselezionare tutti gli articoli dalla lista.  
-> **Seleziona**: permette di attivare i flag per tutte le righe selezionate con il mouse.   
-> **Deseleziona**: permette di disattivare i flag per tutte le righe selezionate con il mouse.
+> **Search**: allows searching for available DDTs for transfer.  
+> **Transfer**: allows transferring the selected items/orders.  
+> **Select all**: allows selecting all items from the list.  
+> **Deselect all**: allows deselecting all items from the list.  
+> **Select**: allows activating flags for all rows selected with the mouse.   
+> **Deselect**: allows deactivating flags for all rows selected with the mouse.
 
-### *Evasione da ordine*
+### *Order Fulfillment (Evasione da ordine)*
 
-La procedura permette la creazione di una fattura di acquisto mediante evasione di uno o più ordini fornitore.
+This procedure allows the creation of a purchase invoice by fulfilling one or more supplier orders.
 
-Nella testata del documento, premendo il pulsante **Evasione da ordini** si aprirà la form in cui è possibile filtrare gli ordini relativi al fornitore del documento. È quindi possibile inserire gli articoli all'interno della fattura, evadendo totalmente o parzialmente un intero ordine o una riga.
+In the document header, by pressing the **Get from Orders** button, the form will open where it is possible to filter the orders related to the supplier of the document. It is then possible to insert items into the invoice, fully or partially fulfilling an entire order or a row.
 
-Per poter utilizzare questa procedura vi sono delle condizioni iniziali che devono essere rispettate:
+To use this procedure, certain initial conditions must be met:
 
-- i/il fornitore degli ordini deve essere lo stesso della fattura;
-- l'ordine che si vuole evadere deve avere attivo il flag *Stampato* e deve essere già stato *Confermato*.
+- the supplier of the orders must be the same as that of the invoice;
+- the order to be fulfilled must have the *Printed* flag active and must have already been *Confirmed*.
 
-#### Procedimento  
+#### Procedure  
 
-Si dovrà andare ad impostare nella testata della nuova fattura, il [Tipo fattura](/docs/configurations/tables/purchase/purchase-invoices-type) che si vuole creare e il *Fornitore*. Una volta inseriti questi dati, bisognerà cliccare sul pulsante *Evasione da ordini* per aprire la form di evasione.
+You must set in the header of the new invoice the [Invoice Type (Tipo fattura)](/docs/configurations/tables/purchase/purchase-invoices-type) you want to create and the *Supplier*. Once these data are entered, click the *Get from Orders* button to open the fulfillment form.
 
-I filtri per fornitore e divisa verranno riportati in automatico in base al fornitore inserito nella fattura.
+The filters for supplier and currency will be automatically carried over based on the supplier entered in the invoice.
 
-Nell'area di filtro è possibile scegliere se visualizzare i dati in una *Griglia*, una *Struttura gerarchica* oppure entrambe le soluzioni.
+In the filter area, you can choose whether to view the data in a *Grid (Griglia)*, a *Hierarchical structure*, or both solutions.
 
-> La **Struttura gerarchica** permette di avere una suddivisione più chiara dei vari ordini e degli articoli contenuti in ciascuno di essi. Permette inoltre la selezione massiva tutti gli articoli contenuti all'interno di un ordine semplicemente attivando il flag sull'ordine.   
-> La **Griglia** permette una maggiore personalizzazione della form mediante aggiunta di campi da *Object navigator*. In questo caso la selezione massiva va effettuata mediante l'utilizzo dei tasti della tastiera e cliccando sul pulsante *Attiva/Disattiva solo righe selezionate* nella ribbon bar.
+> The **Hierarchical structure** allows for a clearer division of the various orders and the items contained in each. It also allows for mass selection of all items contained within an order by simply activating the flag on the order.   
+> The **Grid (Griglia)** allows for greater customization of the form through the addition of fields from the *Object navigator*. In this case, mass selection must be performed by using the keyboard keys and clicking the *Activate/Deactivate Only Selected Rows (Attiva/Disattiva solo righe selezionate)* button in the ribbon bar.
 
-Una volta impostati tutti i Filtri desiderati, cliccando sul pulsante di *Ricerca* verranno visualizzati nella parte sottostante tutti gli ordini stampati, confermati e non evasi oppure evasi parzialmente.
+Once all desired filters are set, clicking the *Search* button will display all printed orders that have been confirmed and not yet fulfilled or are partially fulfilled below.
 
-:::note Nota
-La procedura riprende tutti i dati presenti nell'ordine e come conseguenza saranno applicate le condizioni di acquisto presenti nell'ordine, anche se queste attualmente sono cambiate.   
-Nel caso di evasione di più ordini aventi la stessa soluzione di pagamento e/o stessa destinazione, verranno riportate nella fattura le informazioni contenute nell'ordine; in alternativa saranno riprese quelle dell'anagrafica fornitore. 
+:::note Note (Nota)
+The procedure retrieves all data present in the order, and as a consequence, the purchasing conditions present in the order will be applied, even if they have currently changed.   
+In the event of fulfilling multiple orders with the same payment solution and/or same destination, the information contained in the order will be reported in the invoice; alternatively, those from the supplier registry will be retrieved. 
 :::
 
-Nella griglia di risultati, l'utente ha poi la possibilità di:
+In the result grid, the user then has the option to:
 
- - Selezionare tutti o alcuni degli articoli proposti: per farlo basterà selezionare il flag presente all'inizio della riga articolo. La *Quantità da evadere* sarà automaticamente impostata uguale alla *Quantità residua*.
- - Selezionare alcuni articoli per una *quantità parziale*. In questo caso si dovrà andare a modificare la *Quantità da evadere*.
+ - Select all or some of the proposed items: to do this, simply select the flag at the start of the item line. The *Quantity to Fulfill (Quantità da evadere)* will automatically be set equal to the *Residual quantity*.
+ - Select some items for a *partial quantity (quantità parziale)*. In this case, the *Quantity to Fulfill (Quantità da evadere)* must be modified accordingly.
 
-Per completare la procedura bisognerà poi cliccare sul pulsante *Evasione*, che andrà a riprendere tutti i dati presenti nell'ordine e li riporterà nella fattura.
+To complete the procedure, you must then click the *Execution* button, which will retrieve all the data present in the order and bring it back to the invoice.
 
-#### Pulsanti specifici 
+#### Specific Buttons (Pulsanti specifici)
 
-> **Ricerca**: permette di cercare gli ordini fornitore.  
-> **Evasione**: permette di trasferire gli articoli/ordini selezionati.  
-> **Evasione forzata ordine**: permette l'evasione forzata dell'ordine o delle righe articolo selezionate.  
-> **Seleziona tutto**: permette di selezionare tutti gli articoli dalla lista.  
-> **Deseleziona tutti**: permette di deselezionare tutti gli articoli dalla lista.  
-> **Attiva solo righe selezionate**: permette di attivare i flag per tutte le righe selezionate con il mouse.   
-> **Disattiva solo righe selezionate**: permette di disattivare i flag per tutte le righe selezionate con il mouse.
+> **Search**: allows searching for supplier orders.  
+> **Execution**: allows transferring the selected items/orders.  
+> **Forced Order Execution**: allows forced fulfillment of the selected order or item rows.  
+> **Select all**: allows selecting all items from the list.  
+> **Deselect all**: allows deselecting all items from the list.  
+> **Activate only selected rows**: allows activating flags for all rows selected with the mouse.   
+> **Deactivate only selected rows**: allows deactivating flags for all rows selected with the mouse.
 
-:::important Ricorda
-Nel caso di più evasioni parziali per una determinata riga articolo all'interno della stessa fattura è possibile scegliere se sommare le quantità in un'unica riga nella fattura oppure se mantenere righe distinte, rispettivamente disattivando o attivando il flag **Evasione quantità articolo non sommata** nella tabella dei [Tipi fatture di acquisto](/docs/configurations/tables/purchase/purchase-invoices-type).
+:::important Remember (Ricorda)
+In the case of multiple partial fulfillments for a given item line within the same invoice, it is possible to choose whether to sum the quantities into a single line in the invoice or to maintain separate lines by disabling or enabling the **Unsumed Item Quantity Order** flag in the table of [Purchase Invoice Types (Tipi fatture di acquisto)](/docs/configurations/tables/purchase/purchase-invoices-type).
 :::
 
-### *Sdi - Chiusura documenti*
+### *Sdi - Document Closure (Sdi - Chiusura documenti)*
 
-Con il bottone **Sdi - Chiusura documenti** viene aperto il modulo per collegare manualmente eventuali ordini e DDT di acquisto alle fatture generate dagli xml ricevuti. Questa procedura viene inoltre avviata automaticamente quando viene effettuato questo collegamento dalla maschera [Documenti acquisti in entrata](/docs/finance-area/sdi-documents/incoming-purchase-documents).          
-Il modulo è suddiviso in due sezioni principali: una a sinistra, dedicata alla visualizzazione dei DDT e degli Ordini, e una a destra, che mostra gli articoli della fattura. 
+With the **Sdi - Document Closure (Sdi - Chiusura documenti)** button, the module is opened for manually linking any orders and purchase DDTs to the invoices generated from the received XMLs. This procedure is also automatically initiated when this linking is performed from the [Incoming Purchase Documents (Documenti acquisti in entrata)](/docs/finance-area/sdi-documents/incoming-purchase-documents) screen.          
+The module is divided into two main sections: one on the left, dedicated to displaying DDTs and Orders, and one on the right, showing the items of the invoice.
 
-La griglia di ordini e DDT contiene le seguenti colonne:        
-- Numero Riga Fattura Collegata
-- Tipo Documento
-- Numero
-- Data
-- Numero Riga
-- Classe Articolo
-- Codici Articolo
-- Descrizione Articolo
-- Quantità
-- Prezzi
-- Sconto Totale
-- Importo Netto
-- Prezzo Unitario Netto        
+The grid of orders and DDTs contains the following columns:        
+- Invoice Linked Line Number (Numero Riga Fattura Collegata)
+- Document Type (Tipo Documento)
+- Number (Numero)
+- Date (Data)
+- Line Number (Numero Riga)
+- Item Class (Classe Articolo)
+- Item Codes (Codici Articolo)
+- Item Description (Descrizione Articolo)
+- Quantity (Quantità)
+- Prices (Prezzi)
+- Total Discount (Sconto Totale)
+- Net Amount (Importo Netto)
+- Net Unit Price (Prezzo Unitario Netto)        
 
-Le righe già collegate agli articoli della fattura saranno evidenziate in verde per facilitarne l'identificazione.
+The lines already linked to the invoice items will be highlighted in green for easier identification.
 
-La griglia delle fatture contiene le seguenti colonne:        
-- Numero riga
-- Classe Articolo
-- Codici Articolo
-- Descrizione Articolo
-- Quantità
-- Prezzi
-- Sconto Totale
-- Importo Netto
-- Prezzo Unitario Netto      
+The invoice grid contains the following columns:        
+- Line number (Numero riga)
+- Item Class (Classe Articolo)
+- Item Codes (Codici Articolo)
+- Item Description (Descrizione Articolo)
+- Quantity (Quantità)
+- Prices (Prezzi)
+- Total Discount (Sconto Totale)
+- Net Amount (Importo Netto)
+- Net Unit Price (Prezzo Unitario Netto)      
 
-Le righe già collegate agli articoli di DDT o Ordini saranno evidenziate per facilitare la verifica.
+The lines already linked to DDT or Orders items will be highlighted to facilitate verification.
 
-In queste griglie vengono visualizzate solo le righe dei DDT o degli Ordini che non sono state eseguite o forzate in precedenza. 
-Per eseguire il collegamento, è necessario inserire il numero di riga della fattura nella colonna *Numero Riga Fattura Collegata* e cliccare nella barra degli strumenti **Associa**. 
+In these grids, only the lines of DDTs or Orders that have not been executed or forced previously are displayed. 
+To execute the linking, it is necessary to enter the invoice line number in the *Linked Invoice Line Number* column and click the **Associate** button. 
 
 :::note
-Lo stesso numero di fattura non può essere collegato contemporaneamente a un DDT e a un Ordine. 
+The same invoice number cannot be simultaneously linked to a DDT and an Order. 
 :::
 
-Con il pulsante **Associa**, le righe con il "Numero Riga Fattura Collegata" verranno eseguite nei DDT o negli Ordini corrispondenti.        
-Il pulsante **Rollback Associa** permette di annullare il collegamento, ripristinando lo stato di esecuzione corretto per i DDT o gli Ordini.
+With the **Associate** button, the lines with the "Linked Invoice Line Number (Numero Riga Fattura Collegata)" will be executed in the corresponding DDTs or Orders.        
+The **Rollback Link** button allows for the cancellation of the linking, restoring the correct execution status for the DDTs or Orders.
 
-Durante la fase di collegamento, il sistema esegue alcuni controlli per garantire la congruenza dei dati:       
-- Prezzi: Differenze tra i prezzi riportati negli ordini/DDT e quelli della fattura generata automaticamente.
-- Sconti: Discrepanze tra i valori totali degli sconti.
-- Prezzo Netto Unitario: Differenze tra il prezzo netto unitario indicato nella fattura e quello riportato nei DDT/Ordini.
-- Importo Totale: Differenze tra l'importo totale della fattura e la somma degli importi totali delle righe eseguite nei DDT/Ordini.
+During the linking phase, the system performs several checks to ensure data consistency:       
+- Prices: Differences between the prices reported in the orders/DDTs and those of the automatically generated invoice.
+- Discounts: Discrepancies between the total discount values.
+- Net Unit Price: Differences between the net unit price indicated in the invoice and that reported in DDTs/Orders.
+- Total Amount: Differences between the total amount of the invoice and the sum of the total amounts of the lines executed in DDTs/Orders.
 
-Se uno o più di questi controlli falliscono, il collegamento non viene effettuato automaticamente e l'errore viene riportato nella griglia degli errori, con l'indicazione del numero di riga della fattura e la descrizione dell'errore.
+If one or more of these checks fail, the linking is not performed automatically, and the error is reported in the error grid, indicating the invoice line number and the description of the error.
 
-## **3. Articoli**
+## **Items**
 
-In questo tab vengono inseriti tutti gli articoli con i relativi dati.
+In this tab, all the articles with their related data are entered.
 
 import InsertMode from './../../../import/sections/insert-mode.md'
 
 <InsertMode />
 
-Per inserire un nuovo articolo nella griglia basterà posizionarsi sulla riga per compilare i vari dati oppure utilizzare il pulsante *Nuovo articolo* presente nella ribbon bar.
+To insert a new article into the grid, simply position yourself on the row to fill in the various data or use the *New Item* button present in the ribbon bar.
 
-:::note Nota
-Se la fattura è stata creata mediante evasione di un ordine fornitoreo di un DDT di acquisto i seguenti dati saranno ripresi dal documento di partenza
+:::note Note (Nota)
+If the invoice was created through the fulfillment of a supplier order or a purchase DDT, the following data will be retrieved from the originating document.
 :::
 
-### 3.1 Dati obbligatori
+### 3.1 Mandatory Data (Dati obbligatori)
 
 import RowNumber from './../../../import/fields/row-number.md'
 
 <RowNumber />
 
-- **Tipo riga** offre la possibilità di selezionare, dalla combo-box, articoli con caratteristiche diverse:
-> - *Articolo codificato*: sono gli articoli codificati in anagrafica e possono essere contabilizzati in contabilità analitica e registrati in magazzino. <br />
-> - *Articolo non-codificato*: sono articoli descrittivi che possono essere contabilizzati in contabilità analitica ma non possono essere movimentati a magazzino. <br />
-> - *Articolo spese*: sono articoli codificati o non-codificati e vengono riassunti in modo distinto nei riepiloghi dei documenti, se l'articolo spesa è codificato e di interesse fiscale verrà movimentato in magazzino, se è non codificato oppure non di interesse fiscale non verranno movimentati a magazzino. <br />
-> - *Articolo note*: sono note descrittive riportate nella stampa del documento; non incidono sulla contabilità e sul magazzino.
-> - *Articolo omaggio*: l'articolo omaggio viene gestito come un articolo codificato o non codificato ai fini fiscali e di magazzino, ma essendo un omaggio viene conteggiato separatamente nei riepiloghi del documento e in base al flag Rivalsa iva viene calcolato l'importo dell'iva dell'omaggio a carico del soggetto oppure no.
+- **Line type** offers the option to select from the combo-box articles with different characteristics:
+> - *Codified Item*: these are items coded in the registry and can be accounted for in analytical accounting and registered in the warehouse. <br />
+> - *Non-coding Item (Articolo non-codificato)*: these are descriptive articles that can be accounted for in analytical accounting but cannot be moved to the warehouse. <br />
+> - *Charge Item*: these are coded or non-coded items and are summed separately in document summaries; if the expense item is coded and of tax interest, it will be moved to the warehouse; if it is non-coded or not of tax interest, it will not be moved to the warehouse. <br />
+> - *Note Item*: these are descriptive notes reported in the document print; they do not affect accounting and storage.
+> - *GiveAway Item*: the gift item is managed as a coded or non-coded item for tax and warehouse purposes, but as it is a gift, it is counted separately in document summaries, and depending on the VAT recovery flag, the VAT amount of the gift may or may not be borne by the subject.
 
-:::note Nota
-Se si parte direttamente con l'inserimento dell'articolo, la sua classe, il codice e il tipo riga (*Articolo codificato*) vengono inseriti automaticamente.
+:::note Note (Nota)
+If you start directly with the insertion of the article, its class, code, and row type (*Codified Item*) will be automatically entered.
 :::
 
-- **Classe/Codice/Descrizione articolo**: si possono inserire  [manualmente](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) oppure con l'ausilio dell'[help di campo](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) il quale proporrà tutti i dati relativi inseriti nell'*Anagrafica articolo*. 
-Dopo l'inserimento dell'articolo, la sua *Descrizione* sarà ripresa automaticamente dall'anagrafica. Se l'articolo ha *Varianti*, sarà possibile selezionare la variante desiderata dal tab *Dati*.
+- **Class/Code/Item Description (Classe/Codice/Descrizione articolo)**: these can be entered [manually](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) or with the aid of the [field help (help di campo)](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) which will propose all the related data entered in the *Item registry*.
+After entering the article, its *Description* will be automatically retrieved from the registry. If the article has *Variants*, it will be possible to select the desired variant from the *Data* tab.
 
 import UM from './../../../import/fields/item-um.md'
 
@@ -324,172 +322,170 @@ import Quantity from './../../../import/fields/item-quantity.md'
 
 <Quantity />
 
-- **Prezzo**: il prezzo viene proposto dal listino inserito nell'anagrafica contatto; il listino di riferimento per l'articolo stesso è visualizzato nel tab *Sconti/Listini*. Lo stesso documento potrebbe contenere articoli con prezzi presi da listini diversi, se nell'anagrafica soggetto sono associati più listini in cascata (vedi [Anagrafica contatti](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/price-list)). Attraverso il doppio click nel campo **Listini** (tab *Sconti/Listini*) l'utente ha la possibilità di selezionare un listino diverso da quello di default, dal quale sarà ripreso il prezzo dell'articolo inserito.    
-In assenza del listino, il dato proposto può essere ripreso dal *costo ultimo* di anagrafica articolo, se nei [Parametri fatture di acquisto](/docs/configurations/parameters/purchase/purchase-orders-parameters/) il flag *Costo a zero in assenza di listini* non è attivo.
+- **Price**: the price is proposed from the price list entered in the contact registry; the reference price list for the article itself is displayed in the *Discounts/Price Lists* tab. The same document may contain articles with prices taken from different price lists, if multiple cascading price lists are associated in the subject registry (see [Contact Registry (Anagrafica contatti)](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/price-list)). By double-clicking in the **Price list** field (within the *Discounts/Price Lists* tab), the user has the option to select a different price list from the default one, from which the price of the entered article will be retrieved.    
+If there is no price list, the proposed data can be retrieved from the *last cost* of the item registry, if the flag *Zero Cost in the Absence of Price Lists (Costo a zero in assenza di listini)* in the [Purchase Invoice Parameters (Parametri fatture di acquisto)](/docs/configurations/parameters/purchase/purchase-orders-parameters/) is not active.
 
-- **Importo**: viene calcolato in automatico al netto degli sconti.
+- **Amount**: this is calculated automatically net of discounts.
 
-- **Totale sconti**: indica l'importo totale degli sconti presenti nel tab *Sconti/Listini* per ogni riga articolo.   
+- **Total discounts**: indicates the total amount of discounts present in the *Discounts/Price Lists* tab for each item row.
 
-- **IVA**: è prioritario il dato inserito nel campo IVA dell'*Anagrafica contatto*. Se questo non è presente, viene proposto il valore presente nell'*Anagrafica articolo*, ma l'utente ha la possibilità di inserire un dato diverso.
+- **VAT**: is primarily the data entered in the VAT field of the *Contact Registry (Anagrafica contatto)*. If this is not present, the value in the *Item registry* will be proposed, but the user has the option to enter a different value.
 
-### 3.2 Dati facoltativi articoli
+### 3.2 Optional Article Data (Dati facoltativi articoli)
 
-- **Codice/Descrizione articolo fornitore**: in questa sezione si potrà aggiungere il codice e la descrizione che il fornitore utilizza per identificare l'articolo; questo dato viene proposto in automatico se nell'anagrafica dell'articolo, tab [Fornitori preferenziali](/docs/erp-home/registers/items/create-new-items/item-registry/preferential-vendors) è stato associato un articolo fornitore. 
+- **Supplier Article Code/Description (Codice/Descrizione articolo fornitore)**: in this section, you can add the code and description that the supplier uses to identify the item; this data is proposed automatically if in the item registry, tab [Preferred Suppliers (Fornitori preferenziali)](/docs/erp-home/registers/items/create-new-items/item-registry/preferential-vendors) an item supplier has been associated. 
 
-- **Tipo fatturato acquisti**: viene proposto il dato inserito nel tab [Generalità](/docs/erp-home/registers/items/create-new-items/item-registry/generality) dell'anagrafica articoli. Se questo non è presente, non viene proposto nessun dato e al momento della contabilizzazione della fattura, sarà considerato il valore inserito nel campo *Costo/Ricavo di contropartita predefinito* dell'anagrafica contatto.
+- **Purchase turnover type**: the data entered in the tab [Generalities (Generalità)](/docs/erp-home/registers/items/create-new-items/item-registry/generality) of the item registry is proposed. If this is not present, no data is proposed, and at the time of accounting for the invoice, the value entered in the *Default Counterpart Cost/Revenue (Costo/Ricavo di contropartita predefinito)* field of the contact registry will be considered.
 
-#### Pulsanti specifici
+#### Specific Buttons (Pulsanti specifici)
 
-> **Ricalcolo Conai**: se la [Gestione Conai](/docs/purchase/purchase-flow/conai) è abilitata per il documento, è possibile ricalcolare i valori con questo bottone dopo eventuali modifiche.
+> **Recalculate Recycle**: if [Conai Management (Gestione Conai)](/docs/purchase/purchase-flow/conai) is enabled for the document, it is possible to recalculate the values with this button after any modifications.
 >
-> **Gestione imballi**: permette l'apertura della gestione degli imballi a rendere usati nel documento di acquisto.   
-Il pulsante diventa attivo se il documento è salvato, ma non caricato. Con clic su questo pulsante si apre la form corrispondente dove inserire la quantità, selezionare la riga ed eseguire il trasferimento dell'imballo selezionato nelle righe articolo cliccando sul pulsante **Execute**. In questa form vengono riportati gli articoli che sono stati inseriti con natura Imballo e che sono presenti nella tabella degli [Imballi a rendere](/docs/configurations/tables/logistics/package-to-be-returned).      
+> **Packages management**: allows opening the management of returnable packaging used in the purchase document.   
+This button becomes active if the document is saved but not loaded. Clicking this button opens the corresponding form where you can enter the quantity, select the row, and execute the transfer of the selected packaging into the item rows by clicking the **Execute** button. In this form, the items that have been entered with the nature of Packaging and that are present in the table of [Returnable Packaging (Imballi a rendere)](/docs/configurations/tables/logistics/package-to-be-returned) are reported.      
 >
-> **Storno ricevimenti**: il pulsante è attivo solo per i [Tipi fatture di acquisto](/docs/configurations/tables/purchase/purchase-invoices-type) che hanno la *Natura* di tipo *Nota accredito*. Nella form vengono visualizzate tutte le fatture intestate a quel fornitore. Dopo aver selezionato le righe articolo e le relative quantità da stornare sarà sufficiente premere il pulsante *Storno ricevimenti* per inserirli nella fattura.    
+> **Receptions reversal**: this button is active only for [Purchase Invoice Types (Tipi fatture di acquisto)](/docs/configurations/tables/purchase/purchase-invoices-type) that have the *Nature* of *Credit note*. In the form, all invoices addressed to that supplier will be displayed. After selecting the item rows and the respective quantities to be cancelled, simply press the *Receptions reversal* button to insert them into the invoice.    
 >
-> **Aggiornamento listini**: il pulsante **Aggiorna listino corrente** permette di aggiornare i prezzi nel listino corrente per ciascuna riga articolo selezionata.    
-il pulsante **Crea nuovo listino con nuova validità** invece, aprirà un pop-up in cui inserire le date di validità del nuovo listino, il quale conterrà solo le righe selezionate e sarà intestato al fornitore inserito nella fattura.   
+> **Update price lists**: the **Update Current Price List (Aggiorna listino corrente)** button allows updating prices in the current price list for each selected item row.    
+The button **Create new price list with new validity**, on the other hand, will open a pop-up to enter the validity dates of the new price list, which will contain only the selected rows and will be addressed to the supplier entered in the invoice.   
 
-
-:::important Ricorda   
-Quando si crea/aggiorna un listino mediante questa procedura vengono riportati nel listino solo gli sconti che sono stati inseriti manualmente nella fattura. 
+:::important Remember (Ricorda)   
+When creating/updating a price list through this procedure, only discounts that have been manually entered into the invoice are reported in the price list. 
 :::
 
-### 3.3 Sconti/Listini
+### 3.3 Discounts/Price Lists (Sconti/Listini)
 
-- **Listino**: viene proposto il listino dal quale è stato ripreso il prezzo dell'articolo, con la data inizio/fine validità e con le condizioni particolari (ad es. **Tipo scaglione** di sconto) assegnate all'articolo nel listino.
+- **Price list**: the price list from which the price of the item was retrieved is proposed, along with the validity start/end dates and any special conditions (e.g. **Discount Tier Type (Tipo scaglione di sconto)**) assigned to the item in the price list.
 
-- **Prezzo manuale**: si attiva automaticamente quando il prezzo dell'articolo è stato inserito o modificato manualmente.
+- **Manual price**: activates automatically when the price of the item has been entered or modified manually.
 
-- **Sconti**: vengono proposti tutti gli sconti associati all'articolo, ognuno con la propria base di calcolo e di assegnazione.        
+- **Discounts**: all discounts associated with the item are proposed, each with its own calculation base and assignment.        
 
-### 3.4 Dati articolo 
+### 3.4 Article Data (Dati articolo)
 
-All'interno di questo tab vengono riportate/inserite ulteriori informazioni relative all'articolo.
+In this tab, further information related to the article is reported/entered.
 
-- **Articolo**: riporta classe, codice e descrizione dell'articolo selezionato nella griglia.   
-- **Variante**: in questo campo è possibile selezionare una variante dell'articolo tra quelle precedentemente codificate nel tab [Varianti](/docs/erp-home/registers/items/create-new-items/item-registry/variants) dell'anagrafica articolo. Se nel listino sono stati inseriti prezzi e/o sconti diversi per ciascuna variante essi saranno aggiornati quando si sleziona una variante diversa dell'articolo.     
-- **Note**: sono le note relative alla riga articolo, possono essere inserite anche tramite l'help note codificate. Saranno riportate in tutti i documenti generati da questo.   
-- **Magazzino e causale**: vengono proposti il magazzino e la causale di riferimento che compariranno in automatico al momento del carico degli articoli relativi in magazzino. I dati sono ripresi dai [Tipi fatture di acquisto](/docs/configurations/tables/purchase/purchase-invoices-type) oppure dall'ordine fornitore o dal DDT, se la fattura deriva da evasione di un ordine o da valorizzazione DDT. Possono essere modificati manualmente per ciascuna riga articolo.   
-- **Ubicazione**: viene proposta in automatico se alla causale utilizzata è stata associata un'ubicazione nella tabella delle [Causali di magazzino](/docs/configurations/tables/logistics/warehouse-templates) oppure se l'articolo è stato inserito nella [Mappa ubicazioni per articolo](/docs/logistics/warehouse/location/item-location-map/). Può essere inserita o modificata manualmente.  
-- **Unità di misura/Quantità alternativa**: se nell'[anagrafica dell'articolo](/docs/erp-home/registers/items/create-new-items/item-registry/alternative-um) è stata codificata un'unità di misura alternativa con il flag *Predefinito* e nei Parametri ordini fornitore è stato attivato il flag *Proposta automatica U.M. alternativa*, questi valori saranno proposti in automatico al momento dell'inserimento dell'articolo, altrimenti è possibile selezionare una tra le unità di misura alternative codificate per l'articolo.   
-- **Prezzo unità di misura alternativa**: se attivo indica che il prezzo inserito sulla riga articolo è riferito all'unità di misura alternativa e non a quella principale.    
-Questo flag assieme ai campi *Unità di misura alternativa* e *Quantità alternativa* sono visibili solo se nei [Parametri fatture di acquisto](/docs/configurations/parameters/purchase/purchase-invoices-parameters) è stato attivato il flag *Gestione doppia unità di misura*.
-- **Progetto**: rappresenta il progetto da associare al documento. Se nella testata del documento è stato inserito un progetto, esso sarà riportato su tutte le righe articolo; in alternativa può essere selezionato tramite l'apposito help progetti.   
-- **Rivalsa IVA**: se settata, l'IVA dell'omaggio viene considerata per il totale fattura.
-- **Marca**: rappresenta la marca dell'articolo, ripresa dalla sua anagrafica oppure dal listino dell'articolo.
-- **Riferimento ordine**: nel caso in cui la fattura sia generata da un ordine, il riferimento all'ordine sarà riportato automaticamente in questo campo.
-- **Dettaglio dichiarazioni**: viene riportata la [Dichiarazione d'intento](/docs/finance-area/declarations/declarations/intent-declaration) usata per proporre l'iva dell'articolo; dalla combo box è possibile cambiare la dichiarazione d'intento di riferimento, se presenti più dichiarazioni valide.
+- **ITEM**: shows the class, code, and description of the selected item in the grid.   
+- **Variant**: in this field, it is possible to select a variant of the item among those previously coded in the tab [Variants (Varianti)](/docs/erp-home/registers/items/create-new-items/item-registry/variants) of the item registry. If different prices and/or discounts have been entered for each variant in the price list, they will be updated when a different variant of the article is selected.     
+- **Notes**: these are the notes related to the item row, which can also be entered through the coded notes help. They will be reported in all documents generated from this.   
+- **Warehouse and Reason (Magazzino e causale)**: the warehouse and the reference reason that will automatically appear at the time of loading the related items into the warehouse are proposed. The data are retrieved from the [Purchase Invoice Types (Tipi fatture di acquisto)](/docs/configurations/tables/purchase/purchase-invoices-type) or from the supplier order or the DDT, if the invoice derives from the fulfillment of an order or from DDT valuation. They can be modified manually for each item row.   
+- **Location**: is proposed automatically if the reason used has been associated with a location in the table of [Warehouse Reasons (Causali di magazzino)](/docs/configurations/tables/logistics/warehouse-templates) or if the item has been entered in the [Item Location Map (Mappa ubicazioni per articolo)](/docs/logistics/warehouse/location/item-location-map/). It can be entered or modified manually.  
+- **Unit of Measure/Alternative Quantity (Unità di misura/Quantità alternativa)**: if an alternative unit of measure has been coded in the [item registry (anagrafica dell'articolo)](/docs/erp-home/registers/items/create-new-items/item-registry/alternative-um) with the *Default* flag, and the *Automatic proposal of alternative U.M.* flag has been activated in the Supplier Order Parameters, these values will be automatically proposed upon entering the article; otherwise, it is possible to select one among the alternative units of measure coded for the article.   
+- **Alternative Unit Price (Prezzo unità di misura alternativa)**: if activated, indicates that the price entered on the item row refers to the alternative unit of measure and not to the main one.    
+This flag, along with the *Alternative Measurement Unit* and *Alternative quantity* fields, is visible only if the flag *Management of double UM* has been activated in the [Purchase Invoice Parameters (Parametri fatture di acquisto)](/docs/configurations/parameters/purchase/purchase-invoices-parameters).
+- **Project**: represents the project to associate with the document. If a project has been entered in the header of the document, it will be reported on all item rows; alternatively, it can be selected through the appropriate project help.   
+- **VAT recourse**: if set, the VAT of the gift is considered for the invoice total.
+- **Brand**: represents the brand of the item, retrieved from its registry or the price list of the item.
+- **Order reference**: in the case that the invoice is generated from an order, the reference to the order will automatically be reported in this field.
+- **Detail declarations**: the [Intent Declaration (Dichiarazione d'intento)](/docs/finance-area/declarations/declarations/intent-declaration) used to propose the VAT of the item is reported; from the combo box, it is possible to change the reference intent declaration if multiple valid declarations are present.
 
-### 3.5 Lotti e Serial number
+### 3.5 Lots and Serial Numbers (Lotti e Serial number)
 
-Nelle due griglie possono essere inseriti i lotti e numeri seriali che devono essere caricati nel magazzino.   
-Se l'articolo non prevede la gestione dei [Lotti e Serial Number](/docs/erp-home/registers/items/create-new-items/item-registry/lots-and-serial-number), questo tab sarà disabilitato.
+In these two grids, lots and serial numbers that must be loaded into the warehouse can be entered.   
+If the article does not require the management of [Lots and Serial Numbers (Lotti e Serial Number)](/docs/erp-home/registers/items/create-new-items/item-registry/lots-and-serial-number), this tab will be disabled.
 
-:::tip Ricorda
-Se nei [Parametri fatture di acquisto](/docs/configurations/parameters/purchase/purchase-invoices-parameters) il flag *Lotti e S.N. obbligatori* è disabilitato sarà possibile salvare il documento senza inserire i lotti/serial number. Inoltre, se la *Tipologia di prelievo* del lotto codificata nell'[anagrafica articolo](/docs/erp-home/registers/items/create-new-items/item-registry/lots-and-serial-number) è *FIFO* o *Data scadenza* al momento del carico a magazzino della fattura i lotti saranno proposti in automatico, se non sono già stati inseriti in precedenza.
+:::tip Remember (Ricorda)
+If in the [Purchase Invoice Parameters (Parametri fatture di acquisto)](/docs/configurations/parameters/purchase/purchase-invoices-parameters) the flag *Batches and S.N. compulsory* is disabled, it will be possible to save the document without entering lots/serial numbers. Furthermore, if the *Withdrawal Type (Tipologia di prelievo)* of the lot coded in the [item registry (anagrafica articolo)](/docs/erp-home/registers/items/create-new-items/item-registry/lots-and-serial-number) is *FIFO* or *Expiry date* at the time of loading the invoice into the warehouse, the lots will be proposed automatically if they have not already been entered previously.
 :::
 
-### 3.6 Analitica
+### 3.6 Analytical (Analitica)
 
 import TabAnalytic from './../../../import/sections/tab-analytic.md'
 
 <TabAnalytic />
 
-
-### 3.7 Extra data
+### 3.7 Extra Data (Extra data)
 
 import DocItemExtraData from './../../../import/sections/doc-item-extradata.md'
 
 <DocItemExtraData />
 
-### 3.8 Documenti allegati
+### 3.8 Attached Documents (Documenti allegati)
 
 import DocAttachDocument from './../../../import/sections/doc-attach-document.md'
 
 <DocAttachDocument />
 
-### 3.9 Materiale Conai per l'articolo
+### 3.9 Conai Materials for the Item (Materiale Conai per l'articolo)
 
-Questo tab è visibile se per la società attiva è stata attivata la gestione Conai.
+This tab is visible if Conai management has been activated for the active company.
 
-Questa sezione riporterà i materiali d’imballaggio che compongono l’articolo, con la relativa unità di misura, peso unitario (abbattuto dell’eventuale percentuale d’esenzione dell’anagrafica cliente) e il totale del peso ottenuto dalla moltiplicazione tra numero di articoli venduti per il peso unitario.    
-Al salvataggio del documento, o alla pressione del pulsante **Ricalcolo Conai**, Fluentis inserirà una o più righe spese recuperando l’articolo dei materiali, con quantità uguale alla somma delle quantità e prezzo uguale al costo conai per quel materiale.
+This section will report the packaging materials that make up the item, with the related unit of measure, unit weight (reduced by any exemption percentage of the customer registry) and the total weight obtained by multiplying the number of items sold by the unit weight.    
+Upon saving the document or pressing the **Recalculate Recycle** button, Fluentis will insert one or more expense lines retrieving the materials article, with quantity equal to the sum of the quantities and price equal to the Conai cost for that material.
 
-Per maggiori informazioni sulla [Gestione Conai](/docs/purchase/purchase-flow/conai) in Fluentis vedere la pagina allegata.
+For more information on [Conai Management (Gestione Conai)](/docs/purchase/purchase-flow/conai) in Fluentis, see the attached page.
 
-### 3.10 Costi da ricevere 
+### 3.10 Costs to Receive (Costi da ricevere)
 
-I tab **Costi da ricevere** e **Spese** non sono gestiti nella versione corrente di Fluentis.
+The **Values receivable** and **Charges** tabs are not managed in the current version of Fluentis.
 
-### 3.11 Sezione valori
+### 3.11 Value Section (Sezione valori)
 
-La sezione in basso, a destra, presenta il riassunto dei costi che concorrono alla formazione del prezzo finale di ciascun articolo selezionato nella griglia degli articoli. 
+The section at the bottom right presents a summary of the costs contributing to the formation of the final price of each selected item in the item grid. 
 
-- **Prezzo unitario**: il valore del campo *Prezzo*; 
-- **Quantità**: il valore del campo *Quantità* o *Quantità alternativa*, a seconda del flag *Prezzo unità di misura alternativa*;
-- **Importo di riga**: Prezzo articolo * Quantità articolo; 
-- **Totale sconti**: la somma degli sconti dell'articolo, inclusi anche gli sconti finali;
-- **Importo**: Importo di riga - Totale sconti;
-- **Imposta**: Importo * aliquota IVA dell'articolo; 
-- **Totale**: Importo + Imposta.
+- **Unit price**: the value of the *Price* field; 
+- **Quantity**: the value of the *Quantity* or *Alternative quantity* field, depending on the *Alternative Unit Price (Prezzo unità di misura alternativa)* flag;
+- **Line amount**: Item Price * Item Quantity; 
+- **Total discounts**: the sum of the discounts of the item, including final discounts;
+- **Amount**: Row Amount - Total Discounts;
+- **VAT**: Amount * VAT rate of the item; 
+- **Total**: Amount + Tax.
 
-## **4. Riepiloghi**
+## **Summaries**
 
-Nelle diverse sezioni di questo tab sono presentate le informazioni principali dell'intero documento e alcuni pulsanti specifici.
+In the various sections of this tab, the main information of the entire document and some specific buttons are presented.
 
-### 4.1 Sconti finali
+### 4.1 Final Discounts (Sconti finali)
 
 import SummariesFinalDiscount from './../../../import/sections/summaries-final-discount.md'
 
 <SummariesFinalDiscount />
 
-### 4.2 Spese
+### 4.2 Expenses (Spese)
 
-Sono proposte le spese inserite nell'anagrafica contatto, nel tab *Spese/Sconti*. In questa griglia eventuali spese devono essere inserite in positivo, eventuali sconti in negativo.      
+The expenses entered in the contact registry, in the *Charges/Discounts* tab, are proposed. In this grid, any expenses should be entered positively, while any discounts negatively.      
 
-Questi elementi vengono applicati alla totalità del documento e non sono distribuiti tra le righe degli articoli. Possono includere costi aggiuntivi, sconti globali, o maggiorazioni applicate all'intero documento. Se impostati nell'anagrafica articolo, vengono automaticamente proposti al momento della creazione del documento.
+These elements are applied to the totality of the document and are not distributed among the item rows. They may include additional costs, global discounts, or surcharges applied to the entire document. If set in the item registry, they are automatically proposed when creating the document.
 
-- **Tipo/Descrizione**: permette di scegliere le tipologie di spesa (predefiniti nella tabella [Tipi spese](/docs/configurations/tables/general-settings/expenses-types)), attribuendo alla tipologia la percentuale di spesa da applicare.  
-- **Importo spesa**: indica il valore della spesa espresso nella divisa del documento.    
-- **IVA**: indica l'aliquota IVA da applicare alle spese inserite.   
-- **Percentuale/Valore**: indica se calcolare le spese con una percentuale oppure con un valore monetario predefinito. Selezionando *valore* l'importo della spesa va inserito sotto la voce omonima.      
-- **Percentuale**: valore numerico della percentuale di spesa.  
+- **Type/Description (Tipo/Descrizione)**: allows you to choose the types of expense (predefined in the [Expense Types table (Tipi spese)](/docs/configurations/tables/general-settings/expenses-types)), assigning to the type the percentage of expense to apply.  
+- **Charge amount**: indicates the value of the expense expressed in the document’s currency.    
+- **VAT**: indicates the VAT rate to be applied to the entered expenses.   
+- **Percentage/Value**: indicates whether to calculate the expenses with a percentage or with a predefined monetary value. Selecting *value*, the expense amount must be entered under the corresponding heading.      
+- **Percent Completed**: numerical value of the expense percentage.  
 
-:::note Nota
-Se il *Tipo spesa* inserito ha il flag [ripartito](/docs/configurations/tables/general-settings/expenses-types#flag-di-aggancio-alle-logiche) attivo, durante il carico della fattura a magazzino la spesa sarà ripartita su tutti gli articoli in base agli importi totali di ogni riga articolo. Il risultato della ripartizione della spesa è visibile nella [registrazione di magazzino](/docs/logistics/warehouse/stock-records/record).    
-1. Se gli articoli hanno un prezzo: la spesa totale sarà ripartita proporzionalmente sugli importi netti di ciascun articolo; il risultato verrà aggiunto al prezzo iniziale dell'articolo nel campo *Totale importo* della registrazione. Se per alcune righe l'importo è 0, esso sarà considerato come 1 per consentire una ripartizione della spesa su tutti gli articoli.   
-2. Se tutti gli articoli hanno prezzo pari a 0: la spesa verrà distribuita equamente tra tutte le righe articolo e, a partire da questa distribuzione, sarà calcolato l'*importo movimento/importo gestionale* nella registrazione, tenendo conto delle quantità di ciascun articolo.   
+:::note Note (Nota)
+If the *Charge type* entered has the [split flag (ripartito)](/docs/configurations/tables/general-settings/expenses-types#link-to-logic) active, during the invoice loading into the warehouse, the expense will be divided among all items based on the total amounts of each item row. The result of the expense allocation is visible in the [warehouse registration (registrazione di magazzino)](/docs/logistics/warehouse/stock-records/record).    
+1. If the items have a price: the total expense will be proportionally divided among the net amounts of each item; the result will be added to the initial price of the item in the *Total amount* field of the registration. If for some rows the amount is 0, it will be considered as 1 to allow an expense allocation over all items.   
+2. If all items have a price equal to 0: the expense will be evenly distributed among all item rows, and based on this distribution, the *movement amount/management amount (importo movimento/importo gestionale)* will be calculated in the registration, taking into account the quantities of each item.   
 :::
 
-### 4.3 Riepiloghi IVA
+### 4.3 VAT Summaries (Riepiloghi IVA)
 
-Viene proposto il riepilogo IVA del documento, per ogni codice IVA.
+The VAT summary of the document is proposed for each VAT code.
 
-### 4.4 Riepilogo scadenze
+### 4.4 Due Date Summary (Riepilogo scadenze)
 
-Rappresenta il riepilogo delle scadenze del documento, per ogni *tipo* e *soluzione* di pagamento.  
-- **Numero**: valore progressivo della riga.  
-- **Pagamento**: rappresenta il codice alfanumerico del *Tipo pagamento* ripreso dalla *Testata del documento > tab Pagamenti*.  
-- **Importo**: Importo della scadenza calcolato. Può essere forzato manualmente, nel qual caso si attiva automaticamente il successivo flag *Modifica manuale*. (Scattano in automatico dei controlli e avvisi sulla quadratura tra i valori delle scadenze e il totale fattura)
-- **Data scadenza**: Data della scadenza calcolata. Può essere forzata manualmente, nel qual caso si attiva automaticamente il successivo flag *Modifica manuale*.
-- **Spese di incasso**: Campo in cui riportate le spese di incasso calcolate.
-- **IVA**: da applicare alle spese di incasso (può essere impostata anche manualmente)
-- **Causale pagamento**: è possibile inserire direttamente in fattura una causale contabile che da luogo ad una scrittura automatica di incasso / pagamento. NB prestare attenzione al template della causale perchè utilizzerà i conti presenti anche senza sottoconto, motivo per il quale è presente il campo seguente.
-- **Conto sottoconto cliente / fornitore** conto che usa per incassare/pagare (cassa o banca ad esempio) la scadenza andando a sovrascrivere il conto presente nella causale contabile di pagamento (o incasso).
-- **Segno**: solo le scadenze che hanno questo flag vengono poi gestite in pagamento con causale e conto impostato.
-- **Modelli riferimento pagamento**: Modello di creazione del codice di pagamento. In alcune localizzazioni estere ogni scadenza in fattura prevede un codice attribuito da chi fattura: questo codice è strutturato secondo alcuni modelli specifici (tabella MB_PaymentReferenceModels), in modo da poter costruire il codice con un algoritmo.
-- **Codici modelli pagamento**: Questo è il codice (strutturato come da modello precedente) da riportare nella partita e quindi poi nei pagamenti che si inviano alla banca, in modo che questa comunichi al beneficiario qual è la scadenza che è stata pagata (e così automatizzare l’import dai movimenti bancari con chiusura partita). Da qui viene compilato dentro la partita e nel file Sepa.
-- **Data limite pag anticipato** Questo è un campo previsto nel tracciato fatture Sdi, la data limite per poter applicare lo sconto finanziario.
-- **Tipo sconto**: Tipo di sconto finanziario.
-- **Valore sconto**: Valore dello sconto finanziario su incasso.
+Represents the summary of the document's due dates for each *type* and *payment solution*.  
+- **Number**: progressive value of the row.  
+- **Payment**: represents the alphanumeric code of the *Payment type* retrieved from the *Document Header > Payments tab (Testata del documento > tab Pagamenti)*.  
+- **Amount**: Amount of the calculated due date. Can be manually forced, in which case the subsequent *Manually edit* flag is automatically activated. (Automatic checks and warnings are triggered regarding the balancing of values of the due dates and the total invoice)
+- **Expiry date**: Date of the calculated due date. Can be manually forced, in which case the subsequent *Manually edit* flag is automatically activated.
+- **Collection charges**: Field in which the calculated collection charges are reported.
+- **VAT**: to be applied to collection charges (can also be set manually)
+- **Accounting Reason (Causale pagamento)**: it is possible to directly enter an accounting reason in the invoice that triggers an automatic accounting entry for collection/payment. NB pay attention to the template of the reason because it will use the accounts present even without a sub-account, which is why the following field is present.
+- **Client/Supplier Sub-account (Conto sottoconto cliente / fornitore)**: account used to collect/pay (cash or bank, for example) the due date, overwriting the account present in the accounting reason of payment (or collection).
+- **Sign**: only due dates that have this flag are then managed in payment with the reason and account set.
+- **Payment Reference Models (Modelli riferimento pagamento)**: Model for creating the payment code. In some foreign locations, each due date in the invoice requires a code assigned by the issuer: this code is structured according to specific models (table MB_PaymentReferenceModels), allowing you to create the code with an algorithm.
+- **Payment Reference Model Codes (Codici modelli pagamento)**: This is the code (structured as per the previous model) to be reported in the entry and therefore later in the payments sent to the bank, so that it communicates to the beneficiary which due date has been paid (and thus automate the import from bank transactions with batch closure). This is compiled inside the entry and in the Sepa file.
+- **Early Payment Deadline (Data limite pag anticipato)**: This is a field provided in the Sdi invoice trace, the deadline for applying the financial discount.
+- **Discount type**: Type of financial discount.
+- **Mat. value**: Value of the financial discount on collection.
 
-### 4.5 Altri campi
+### 4.5 Other Fields (Altri campi)
 
-**Note finali**: è un campo libero che può essere compilato dall'utente anche con l'ausilio dell'*Help note codificate*.
+**Final notes**: it's a free field that the user can fill in with the aid of *Coded Notes Help (Help note codificate)*.
 
-### 4.6 Totali documento
+### 4.6 Document Totals (Totali documento)
 
 import SummariesDocumentTotal from './../../../import/sections/summaries-document-total.md'
 

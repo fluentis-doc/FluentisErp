@@ -1,76 +1,70 @@
 ---
-title: Esposizione clienti
+title: Customer Statement
 sidebar_position: 2
 ---
 
-La form si trova in Tesoreria > Rischio Cliente > Procedure > Esposizione clienti
+The form is located in Treasury > Customer Risk > Procedures > Customer Statement (Tesoreria > Rischio Cliente > Procedure > Esposizione clienti)
 
-Consente di avere un quadro generale complessivo di tutta la situazione di rischio nei confronti dei vari clienti, con la possibilità di ottenere dati per agente, nazione, raggruppando anche per gruppi societari. 
+It provides an overall view of the entire risk situation concerning various customers, with the possibility of obtaining data by agent, country, and also grouping by corporate groups.
 
-## Come verificare l'esposizione clienti
+## How to Check Customer Statement (Come verificare l'esposizione clienti)
 
-1. Espandere, se necessario, la sezione dei filtri per inserire l'intervallo di date di riferimento entro cui verificare ed il criterio di raggruppamento desiderato (Per nazione, per agente o per cliente).
+1. Expand, if necessary, the filter section to enter the reference date range within which to check and the desired grouping criterion (By country, by agent, or by customer).
 
-2. Premere il tasto **Ricerca**: i clienti presentati nella maschera sono quelli per i quali in anagrafica è stato inserito il flag *Esposizione clienti*.
+2. Press the **Search** button: the customers displayed on the screen are those for whom the flag *Customer Statement* has been set in the registry.
 
-:::note[Nota]
-La sezione iniziale dei *parametri rischio cliente* ripropone gli stessi parametri di default di calcolo impostati per il modulo, con in più il range di date registrazione utilizzato per il controllo rimesse (per i dettagli si veda il documento successivo).
+:::note[Note]
+The initial section of the *Customer Risk Parameters* reproduces the same default calculation parameters set for the module, in addition to the registration date range used for remittance control (for details, see the following document).
 :::
 
-:::note[Ulteriori filtri disponibili]
-E' possibile filtrare per un determinato responsabile (il dipendente che è stato associato all'anagrafica cliente, primo tab *Amministrazione*), filtrare i clienti *Esteri* o *Italia*, visualizzare i dati raggruppati per *gruppo societario* (verrà visualizzato un solo totale per il sottoconto inserito nel campo del *gruppo societario* presente nel tab *amministrazione* dell'anagrafica cliente invece che i singoli sottoconti cliente di dettaglio) e infine raggruppare (e filtrare) i dati per agente o nazione. 
+:::note[Additional Available Filters (Ulteriori filtri disponibili)]
+It is possible to filter by a specific manager (the employee associated with the customer registry, first *Finance* tab), filter customers as *Foreign* or *Italy*, view data grouped by *corporate group (gruppo societario)* (only one total will be shown for the sub-account entered in the *corporate group (gruppo societario)* field present in the *Finance* tab of the customer registry instead of the detailed individual customer sub-accounts), and finally group (and filter) data by agent or country.
 
-E' prevista la possibilità di ordinare i dati per codice di conto/sottoconto o per descrizione (ragione sociale) del cliente.
+There is an option to sort the data by account/sub-account code or by customer description (ragione sociale).
 :::
 
-### Dati visualizzati in griglia 
+### Data Displayed in the Grid (Dati visualizzati in griglia)
 
-Saranno visualizzate in rosso le righe con scostamento.
+Rows with discrepancies will be displayed in red.
 
-**Insoluti**: viene qui visualizzato l'importo degli insoluti non contabilizzati, oppure (se il flag in testata è inserito) anche quelli già contabilizzati;
+**Unpaid**: this shows the amount of unaccounted outstanding debts, or (if the flag in the header is set) even those already accounted for;
 
-**Fatt. ultimi 12 mesi**: è il fatturato (dall'area vendita, fatture di vendita) dei 12 mesi precedenti alla data di riferimento;
+**Sales Last 12 Months (Fatt. ultimi 12 mesi)**: this is the revenue (from the sales area, sales invoices) for the 12 months prior to the reference date;
 
-**Scostamento giorni**: indica il numero di giorni di scostamento tra la scadenza media e la data valuta d'incasso media, secondo quanto calcolato con la logica della maschera ‘Controllo rimesse' cui si rinvia per dettagli; La particolarità è che è una media pesata sull’importo della partita. Infatti il dato è espresso in numeri creditori (come in estratto conto scalare bancario)
+**Days Discrepancy (Scostamento giorni)**: indicates the number of days of discrepancy between the average due date and the average collection value date, according to the logic calculated in the 'Remittance Control (Controllo rimesse)' form, which is referred to for details; the peculiarity is that it is a weighted average based on the amount of the item. In fact, the data is expressed in creditor numbers (as in a bank statement).
 
-**Scostamento GG scad.**: indica i giorni di scostamento medi della data scadenza rispetto alla data documento; considera solo le partite scadute = SOMMA (residuo partita * giorni ad oggi di ritardo dalla data scadenza) / somma dei residui partite. Calcola dunque un valore medio dei ritardi
+**Average Days Due Discrepancy (Scostamento GG scad.)**: indicates the average days of discrepancy of the due date concerning the document date; it only considers overdue items = SUM (remaining item * days overdue from due date) / sum of remaining items. Thus, it calculates an average value of delays.
 
-**Fatturato**: è il fatturato (dall'area vendita, fatture di vendita) dall'inizio dell'anno;
+**Invoiced**: is the revenue (from the sales area, sales invoices) since the beginning of the year;
 
-**Giorni medi incasso**: Equivale all'indicatore denominato DSO (Days of Sales Outstanding), i giorni di rotazione del credito. La formula di calcolo è 365 * (Partite Dare – Partite avere + Effetti in scadenza + Insoluti + Fatture da contabilizzare) / Fatt. Ultimi 12 Mesi. Nel caso in cui il fatturato degli ultimi 12 mesi sia 0 allora anche il DSO sarà 0;
+**Average Collection Days (Giorni medi incasso)**: equals the indicator known as DSO (Days of Sales Outstanding), the days of credit rotation. The calculation formula is 365 * (Receivables – Payables + Effects due + Outstanding + Invoices to be accounted for) / Sales Last 12 Months. If the sales of the last 12 months are 0, then the DSO will also be 0;
 
-**Fido **e** Fido assicurato**: importo del fido gestionale e del fido assicurato;
+**Credit Limit (Fido) and Insured Limit (Fido assicurato)**: amount of the management limit and the insured limit;
 
-**Saldo partitario**: ripropone i totali dare/avere calcolati dalle partite o dal saldo contabile;
+**Sub-account Balance (Saldo partitario)**: reproduces the total debits/credits calculated from the items or from the accounting balance;
 
-**Pagam. da reg. provv.**: importo dei pagamenti partite collegati a registrazioni provvisorie;
+**Payments from Provisional Registrations (Pagam. da reg. provv.)**: amount of payments linked to provisional registrations;
 
-**Effetti in scadenza**: importo degli effetti in maturazione (effetti emessi + presentati);
+**Effects Due (Effetti in scadenza)**: amount of effects in maturation (issued effects + presented);
 
-**Da contabilizzare**: sono gli importi delle fatture (dei Tipi fattura collegati al fido) stampate ma non ancora contabilizzate;
+**To be accounted**: these are the amounts of invoices (of Invoice Types linked to the credit limit) printed but not yet accounted for;
 
-**Da fatturare**: sono gli importi dei  DDT (dei Tipi DDT collegati al fido) stampate ma non ancora fatturate;
+**To be Invoiced**: these are the amounts of delivery notes (of Delivery Note Types linked to the credit limit) printed but not yet invoiced;
 
-**Tot. Esposizione**: somma di ordini aperti + ddt da fatt. +fatt. da cont. + saldo partite/cont + effetti a scadere + insoluti non contab.;
+**Total Exposure (Tot. Esposizione)**: sum of open orders + delivery notes to be invoiced + invoices to be accounted for + sub-account/account balance + effects due + unaccounted outstanding amounts;
 
-**Scaduto**: importo delle partite aperte e già scadute;
+**Expired**: amount of open and already overdue items;
 
-**Scaduto da reg. provv.**: come il precedente, ma derivanti da registrazioni provvisorie;
+**Overdue from Provisional Registrations (Scaduto da reg. provv.)**: like the previous one, but derived from provisional registrations;
 
-**Ordini**: sono gli importi degli ordini (dei Tipi ordine collegati al fido) stampati, confermati ma non ancora evasi.
+**Orders**: these are the amounts of orders (of Order Types linked to the credit limit) printed, confirmed but not yet fulfilled.
 
-Dalla maschera dell'esposizione clienti è possibile: effettuare una stampa dei dati visualizzati, oppure passare alla maschera del ‘Controllo rimesse' relativamente alla riga del cliente selezionato, attraverso il relativo pulsante di gestione.
-
-
-
-**Pulsanti specifici**
-
-**Calcola** Pulsante per calcolare il rischio clienti secondo i filtri e le impostazioni indicate.
-
-**Controllo rimesse** Richiama la procedura per aprire la maschera di controllo rimesse.
+From the customer exposure screen, it is possible to: print the displayed data or move to the ‘Remittance Control (Controllo rimesse)’ screen regarding the selected customer row, through the respective management button.
 
 
 
+**Specific Buttons (Pulsanti specifici)**
 
+**Calculate**: Button to calculate customer risk according to the indicated filters and settings.
 
-
+**Remittances Control**: Calls the procedure to open the remittance control screen.

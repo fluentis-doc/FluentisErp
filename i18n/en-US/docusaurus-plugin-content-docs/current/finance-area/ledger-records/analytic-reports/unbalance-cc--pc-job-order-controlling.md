@@ -1,21 +1,13 @@
 ---
-title: Unbalance CC /PC/Job order Controlling
+title: Control of Balance for CC/PC/Job Orders
 sidebar_position: 4
 ---
 
-Through this control report the user can extract accounting movements that are not in line with valorization equivalence among accounting and cost centres movements as well as profit or sales job order. According to the options set in the mask (at least one of the control flag), the report shows the unbalanced records list. Within ledger templates, it is possible to limit the users while saving accounting records in order to grant original data equivalence.
+With this control report, accounting movements are extracted that do not respect the equality of valuation between accounting movements and movements to cost center, profit, or sales order: for companies that have activated controlling management, it will be possible to analyze the balancing of each dimension of the business centers.
 
-RIBBON BAR: it represents the Form menu, that is the area in which it is possible to perform actions. The list of features is the following:
+It is reminded that it is possible, within the settings of **[general ledger templates](/docs/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates)**, to bind users at the time of saving accounting records to ensure the equality of data at the source.
 
-
-
-| Function | Meaning |
+| Function | Extended Description |
 | --- | --- |
-| Preview | Command to lauch the Unbalance CC /PC/Job order Controlling print preview. |
-| Print | Command to launch the Unbalance CC /PC/Job order Controlling print. |
-
-
-
-
-
-
+| Preview | Button to execute the print preview of the balance control for CDC/CDP/job orders. |
+| Report | Button to execute the physical print of the balance control for CDC/CDP/job orders. |

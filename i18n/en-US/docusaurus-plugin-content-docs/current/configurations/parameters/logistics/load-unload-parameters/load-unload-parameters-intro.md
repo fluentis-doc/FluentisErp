@@ -3,23 +3,15 @@ title: Load/Unload Parameters
 sidebar_position: 1
 ---
 
-The load/unload parameters management procedure consists as follows:
+The form allows assigning rights to a user to perform certain warehouse movements. The procedures managed by this window are the UDC management concerning the ERP and all modules of WMS Mobile.
 
-RIBBON BAR: the ribbon bar represents the Form menu, that is the area on which it is possible to perform actions. The possible features list is the following:
+## Inserting a New Parameter
 
+To insert a *New load/unload parameter*, you need to position yourself on the free record or press the **Insert** button from the ribbon bar.  
+Then specify:
+- **User**,  
+- [Movement type](/docs/configurations/parameters/logistics/load-unload-parameters/movement-types), 
+- **Warehouse** where the user will operate, 
+- **Template** used in warehouse registrations.
 
-
-| Function | Meaning |
-| --- | --- |
-| Search | Button to apply search filters within database of load/unload parameters. |
-| Insert | It refers to the procedure to insert a new load/unload parameter. |
-
-FILTER AREA: The filter area contains the list of the possible data types thanks to which it is possible to perform a selection, a research on the total of sales order lines inserted in system. Typically Filters have “AND” condition and it is possible to specify more filter criteria at the same time. In this case it is possible to filter per employee and warehouse.
-
-RESULT GRID: the result grid represents the picking list which corresponds to the filter data, above mentioned. After having specified the values through which it is possible to obtain a picking search, the user can push [Search] button on the related Ribbon and will obtain the list of the desired load/unload parameters on the result grid.
-
-
-
-
-
-
+For everything not detailed in this document about the common functioning of forms, please refer to the following link [Common functionalities, buttons, and fields](/docs/guide/common).

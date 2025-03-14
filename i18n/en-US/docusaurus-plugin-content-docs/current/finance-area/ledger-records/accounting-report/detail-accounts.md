@@ -3,19 +3,26 @@ title: Detail Accounts
 sidebar_position: 6
 ---
 
-The report enables the user to view the detail of the movements of various accounting detail accounts.
+The printout displays the details of the movements of the various accounting detail accounts.
 
-RIBBON BAR: it represents the Form menu, that is the area in which it is possible to perform actions. The list of features is the following:
+The layout is similar to the **[Account Statement](/docs/finance-area/ledger-records/accounting-report/account-statement)** printout, which represents a simplified version of it and to which we refer.
+
+ 
+
+SPECIFIC ELEMENTS:
+
+ 
+
+Show description: by activating this flag, the movement description column is displayed in the printout, which shows the content of the detail description line for that subaccount present in the accounting record.
 
 
 
-| Function | Meaning |
+| Function | Extended Description |
 | --- | --- |
-| Preview | Button to perform the print preview.  |
-| Print | Button to print document.  |
+| Preview | Button to execute the print preview. |
+| Report | Button to execute the physical printing of the document. |
 
 
-
-
-
-
+:::important Also See 
+[**VIDEO TUTORIALS ON ACCOUNTING REPORTS**](/docs/video/finance/intro)
+:::

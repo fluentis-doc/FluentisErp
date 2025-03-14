@@ -1,125 +1,125 @@
 ---
-title: Nuovo POS
+title: New POS (Nuovo POS)
 sidebar_position: 2
 ---
 
-La form **Crea POS** si apre tramite il percorso **Vendite > POS > Crea POS** oppure tramite il pulsante **Nuovo** che si trova nella form di ricerca *POS*.
+The **Create POS** form opens via the path **Sales > POS > Create POS** or through the **New** button found in the *POS* search form.
 
-## **1. Dati obbligatori**
-Nella form di inserimento vengono proposti automaticamente la **Data** e **Anno** corrente, ma possono essere modificati.
+## **1. Required Data (Dati obbligatori)**
 
-Per continuare la creazione della fattura di vendita, l'utente deve inserire i campi obbligatori:
+In the data entry form, the **Date** and **Year** are automatically proposed as the current values but can be modified.
 
-- **Tipo POS** predefinito in *Configurazione > Tabelle > Vendite > Tipi POS*.
+To continue creating the sales invoice, the user must enter the required fields:
 
-- **Numero** ad ogni documento viene assegnato un numero secondo la numerazione specificata dall'utente nella tabella [Numerazione POS](/docs/configurations/tables/fluentis-numerations) e al tipo di documento che contiene la numerazione.
+- **Pos type** as specified in *Configuration > Tables > Sales > POS Types*.
 
-- **Conto**, usando l' [help di campo](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) oppure digitando [direttamente](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) i dati.- 
+- **Number**: each document is assigned a number according to the numbering specified by the user in the [POS Numbering](/docs/configurations/tables/fluentis-numerations) table and based on the document type that contains the numbering.
 
-:::danger[Attenzione]
-Questo campo non è rilevante per la gestione della [**Contabilizzazione POS**](/docs/sales/pos/pos-accounting). La causale contabile associata alla contabilizzazione POS dovrà avere al suo interno la definizione di un conto Cliente **FISSO** e dettagliato con codice di **sottoconto** (ad esempio un conto "Cliente corrispettivi"). Il tipo importo sulla riga causale per il sottoconto clienti sarà impostato come *Totale Documento / registrazione*.
+- **Account**: using the [field help](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) or typing [directly](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) the data.
+
+:::danger[Attention (Attenzione)]
+This field is not relevant for managing [**POS accounting**](/docs/sales/pos/pos-accounting). The accounting reason associated with POS accounting must define a **FIXED** customer account detailed with a **sub-account** code (for example, a "Customer revenues" account). The amount type on the reason line for the customer sub-account will be set as *Total Document / registration*.
 :::
 
-- **Anagrafica**: si tratta di un campo alternativo al precedente *Conto* che può essere utilizzato per inserire un *Contatto* che non è abbinato ad alcun sottoconto
+- **Register**: this is an alternative field to the previous *Account* that can be used to enter a *Contact* that is not matched to any sub-account.
 
-### 1.1 Totali documento
+### 1.1 Document Totals (Totali documento)
 
-Nella parte destra della form sono presenti i totali del documento.
+On the right side of the form, the document totals are present.
 
 import SummariesDocumentTotal from './../../../import/sections/summaries-document-total.md'
 
 <SummariesDocumentTotal />
 
-#### Pulsanti specifici  
-> **Fiscale**: permette di lanciare la generazione dello scontrino fiscale interfacciandosi con un registratore di cassa (previa configurazione del collegamento mediante  campi appositi)  
-> **Scarico POS**: permette lo scarico POS, se per ogni articolo sono state inserite il magazzino e la causale.
+#### Specific Buttons (Pulsanti specifici)
+> **Fiscal**: allows for the generation of the fiscal receipt by interfacing with a cash register (after configuring the connection using the specific fields).  
+> **Unload POS**: allows for the POS download, if the warehouse and reason have been entered for each item.
 
+## **Header**
 
-## **2. Testata**
+After selecting the required data in the upper section, the user can continue entering the following data [manually](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) or with the [field help](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection).
 
-Dopo aver selezionato i dati obbligatori nella sezione superiore, l'utente può continuare l'inserimento dei seguenti dati [manualmente](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) oppure con il [help di campo](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection).
+When entering the **Account**, all data specific to the **Header** tab is automatically *proposed*, according to the data previously set in the [contact registry (anagrafica contatto)](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/accounting-data-intro), in the fields corresponding to its address and in the *sections*:  
 
-Inserendo il **Conto** vengono *proposti* in automatico tutti i dati specifici del tab **Testata**, secondo i dati impostati in precedenza nell'[anagrafica contatto](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/accounting-data-intro), nei campi corrispondenti al suo indirizzo e nelle *sezioni*:  
+- **Currency**: [Currency](/docs/guide/common/glossary/glossary-intro#currency), [Exchange Rate (Cambio)](/docs/guide/common/glossary/glossary-intro#currency-exchange), [Value Date (Data valuta)](/docs/guide/common/glossary/glossary-intro#currency-date).
+- **Country**: [Country](/docs/guide/common/glossary/glossary-intro#country), [Language (Lingua)](/docs/guide/common/glossary/glossary-intro#language), [Zone (Zona)](/docs/guide/common/glossary/glossary-intro#zone)
+- **Delivery**: [Shipping](/docs/guide/common/glossary/glossary-intro#shipment), [Carriage (Porto)](/docs/guide/common/glossary/glossary-intro#carriage), [Packing (Imballo)](/docs/guide/common/glossary/glossary-intro#packing), [Price List (Listino)](/docs/guide/common/glossary/glossary-intro#sales-price-list) and its [validity range (intervallo di validità)](/docs/guide/common/glossary/glossary-intro#validity-date)
 
-- **Divisa**: [Divisa](/docs/guide/common/glossary/glossary-intro#currency), [Cambio](/docs/guide/common/glossary/glossary-intro#currency-exchange), [Data valuta](/docs/guide/common/glossary/glossary-intro#currency-date).
-- **Nazione**: [Nazione](/docs/guide/common/glossary/glossary-intro#country), [Lingua](/docs/guide/common/glossary/glossary-intro#language), [Zona](/docs/guide/common/glossary/glossary-intro#zone)
-- **Spedizione**: [Spedizione](/docs/guide/common/glossary/glossary-intro#shipment), [Porto](/docs/guide/common/glossary/glossary-intro#carriage), [Imballo](/docs/guide/common/glossary/glossary-intro#packing), [Listino](/docs/guide/common/glossary/glossary-intro#sales-price-list) e il suo [intervallo di validità](/docs/guide/common/glossary/glossary-intro#validity-date)
+#### Other Fields (Altri campi)
 
-#### Altri campi 
-
-- **Stato POS**: in fase di creazione, il POS non presenta nessun flag attivo. La sezione comprende i campi:
-> - **Stampato** si attiva quando viene lanciata la stampa dello scontrino.  
-> - **Scaricato** indica che il POS è stato scaricato dal magazzino manualmente oppure tramite la procedura di scarico automatico.  
-> - **Contabilizzato**: viene automaticamente selezionato quando il POS viene contabilizzato.  
-> - **Annullato**: il flag attivo permette di annullare il POS.
+- **Pos status**: during creation, the POS does not have any active flags. The section includes the fields:
+> - **Printed** is activated when the printing of the receipt is launched.  
+> - **Load** indicates that the POS has been manually downloaded from the warehouse or through the automatic download procedure.  
+> - **Accounted**: is automatically selected when the POS is accounted for.  
+> - **Cancelled**: the active flag allows the POS to be canceled.
 
 :::note
-I flag possono essere tolti con la procedura di ripristino operazione.
+The flags can be removed with the restore operation procedure.
 :::
 
-- **Nostro riferimento/vostro riferimento**: in questi campi solitamente viene indicato un riferimento interno ed un riferimento cliente per il POS in oggetto.  
+- **Our reference/Your reference (Nostro riferimento/vostro riferimento)**: in these fields, an internal reference and a customer reference are usually indicated for the POS in question.  
 
 import InitialNote from './../../../import/fields/initial-note.md'
 
 <InitialNote />
 
-- **Operatore**: permette di inserire l'utente che crea il documento. I dipendenti sono stati inseriti in precedenza nella tabella *Dipendenti* che si trova nel percorso *Home > Dipendenti*. 
+- **User**: allows for the entry of the user who creates the document. Employees have been previously entered in the *Employees* table located in the path *Home > Employees*. 
 
-- **Progetto**: usando il [help di campo](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) si può collegare il documento a un progetto.  
-Questa associazione funziona solo al livello della testata dell'articolo.
+- **Project**: using the [field help](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) you can link the document to a project.  
+This association only works at the article header level.
 
-### 2.1 Pagamenti
+### 2.1 Payments (Pagamenti)
 
-Le **Soluzioni di pagamento** sono riportate in automatico dall'*Anagrafica cliente > tab Pagamenti* e possono essere modificate/cancellate dall'utente.
+The **Payment Terms** are automatically reported from the *Customer Registry > Payments tab* and can be modified/deleted by the user.
 
-#### Pulsante specifico
+#### Specific Button (Pulsante specifico)
 
-> **Cancella pagamenti**: utilizzato per cancellare le righe di pagamento selezionate.
+> **Delete Payments**: used to delete the selected payment lines.
 
-### 2.2  Sconti
+### 2.2 Discounts (Sconti)
 
-Vengono proposti solo gli sconti predefiniti ripresi dall'*Anagrafica cliente > tab Sconti* e possono essere modificate/cancellate dall'utente.
-  
+Only the predefined discounts fetched from the *Customer Registry > Discounts tab* are proposed and can be modified/deleted by the user.
+
 import TabDiscount from './../../../import/sections/tab-discount.md'
 
 <TabDiscount />
 
-### 2.3 Agenti
+### 2.3 Agents (Agenti)
 
-Indica il codice agente e la sua provvigione per ogni riga articolo. Viene proposto il codice e la percentuale definiti nell'*Anagrafica cliente > tab Agenti*.
+Indicates the agent code and their commission for each article line. The code and percentage defined in the *Customer Registry > Agents tab* are proposed.
 
-Se la provvigione non è collegata al cliente nella sua anagrafica, comunque deve essere inserito l'agente ma con provvigione NULL perché se fosse con provvigione 0, significherebbe che l'agente è associato, ma non percepisce provvigione.
+If the commission is not linked to the customer in their registry, the agent must still be inserted but with a NULL commission because if it were with a commission of 0, it would mean that the agent is associated but does not receive a commission.
 
-La stessa sezione verrà riproposta per ogni riga articolo nel relativo tab *Agenti*.
+The same section will be reapplied for each article line in the relevant *Agents* tab.
 
-#### Pulsante specifico
+#### Specific Button (Pulsante specifico)
 
-> **Cancella agenti**: permette di cancellare gli agenti selezionati.
+> **Delete agents**: allows for the deletion of selected agents.
 
-## **3. Articoli**
+## **Items**
 
-In questo tab vengono inseriti tutti gli articoli con i relativi dati.
+In this tab, all items with their corresponding data are entered.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+For everything not detailed in this document regarding the common functionality of the forms, please refer to the following link [Common Functions, Buttons, and Fields](/docs/guide/common).
 
 import InsertMode from './../../../import/sections/insert-mode.md'
 
 <InsertMode />
 
-Per inserire un **Nuovo articolo** nella griglia basterà posizionarsi sulla riga per compilare i vari dati oppure utilizzare il pulsante **Nuovo** presente nella ribbon bar.
+To insert a **New Item** into the grid, simply position the cursor on the row to fill in the various data or use the **New** button in the ribbon bar.
 
 
-### 3.1 Dati obbligatori
+### 3.1 Required Data (Dati obbligatori)
 
 import RowNumber from './../../../import/fields/row-number.md'
 
 <RowNumber />
 
-- **Tipo riga** offre la possibilità di selezionare gli articoli con caratteristiche diverse:
+- **Line type** offers the possibility to select items with different characteristics:
 
-> - **Articolo codificato**: sono gli articoli codificati in anagrafica e possono essere contabilizzati in contabilità analitica e registrati in magazzino; 
-> - **Articolo note**: è una semplice nota, non incide sulla contabilità e sul magazzino.
-> - **Articolo omaggio**: questo tipo di riga sta ad indicare che l'articolo inserito in quella riga sarà un articolo omaggio, e quindi non avrà un costo per il cliente;
+> - **Codified Item**: these are items coded in the registry and can be accounted in analytical accounting and registered in the warehouse; 
+> - **Note Item**: this is a simple note, does not affect accounting and warehouse.
+> - **GiveAway Item**: this type of line indicates that the item entered in that row will be a gift item, and therefore will have no cost to the customer;
 
 import ItemClassDescription from './../../../import/sections/item-class-description.md'
 
@@ -137,11 +137,11 @@ import Quantity from './../../../import/fields/item-quantity.md'
 
 <Quantity />
 
-- **Prezzo ivato**: rappresenta il prezzo con IVA e deve essere inserito in precedenza in *Anagrafica articoli > tab Costi* è può essere diverso per magazzini;
+- **Price including VAT**: represents the price with VAT and must be entered previously in *Item Registry > Costs tab* and can vary by warehouse;
 
-- **IVA** e **Imponibile** vengono calcolati in automatico, prelevando i valori dal prezzo ivato.
+- **VAT** and **Origin amount** are calculated automatically, taking values from the VAT inclusive price.
 
-#### Pulsanti specifici
+#### Specific Buttons (Pulsanti specifici)
 
 import PackagesManagement from './../../../import/procedure/packages-management.md'
 import UpdatePriceLists from './../../../import/buttons/update-price-lists.md'
@@ -149,73 +149,73 @@ import UpdatePriceLists from './../../../import/buttons/update-price-lists.md'
 > <PackagesManagement />
 > <UpdatePriceLists />
 
-### 3.2 Sconti/Listini
+### 3.2 Discounts/Price Lists (Sconti/Listini)
 
 import SalesTabDiscount from './../../../import/sections/sales-tab-discount.md'
 
 <SalesTabDiscount />
 
-### 3.3 Dettaglio articolo
+### 3.3 Item Details (Dettaglio articolo)
 
-All'interno di questo tab vengono riportarte/inserite ulteriori informazioni relative all'articolo.
+This tab contains additional information related to the item.
 
-- **Articolo**: riprende le informazioni dell'articolo selezionato nella griglia degli articoli.
+- **ITEM**: retrieves the information of the selected item in the item grid.
 
 import Vat from './../../../import/fields/item-vat.md'
 
 <Vat />
 
-- **Progetto**: è il progetto associato al documento oppure può essere assegnato con l'ausilio del help di campo.
+- **Project**: is the project associated with the document or can be assigned with the aid of the field help.
 
-- **Marca**: rappresenta la marca dell'articolo, ripresa dalla sua anagrafica oppure dal listino dell'articolo;
+- **Brand**: represents the brand of the item, retrieved from its registry or from the item price list;
 
-- **Fatturato vendite**: viene proposto il dato inserito nell'*Anagrafica articoli > tab Generalità*.
+- **Sales Turnover**: the data entered in the *Item Registry > Generalities tab* is proposed.
 
-Se questo non è presente, non viene proposto nessun dato ma al momento della contabilizzazione, sarà considerato il valore inserito nel campo *Costo/Ricavo di contropartita predefinito* dell'*Anagrafica cliente > Dati contabili > tab Amministrativa* 
+If this is not present, no data is proposed, but at the time of accounting, the value entered in the *Default Counterparty Cost/Revenue* field of the *Customer Registry > Accounting Data > Administrative tab* will be considered.
 
-- **Magazzino e causale**: vengono proposti il magazzino e la causale di riferimento che compariranno in automatico al momento dello scarico degli articoli relativi dal magazzino. I dati sono ripresi dalla tabella *Tipi POS*.
+- **Warehouse and Reason (Magazzino e causale)**: the warehouse and reason of reference are automatically proposed at the time of downloading the relevant items from the warehouse. The data is retrieved from the *POS Types* table.
 
-- **Note**: offre la possibilità di inserire note per ogni articolo.
+- **Notes**: offers the ability to enter notes for each item.
 
-### 3.4 Agenti
+### 3.4 Agents (Agenti)
 
 import SalesTabAgent from './../../../import/sections/sales-tab-agent.md'
 
 <SalesTabAgent />
 
-### 3.5 Analitica
+### 3.5 Analytical (Analitica)
 
 import TabAnalytic from './../../../import/sections/tab-analytic.md'
 
 <TabAnalytic />
 
-## **4. Riepiloghi**
+## **Summaries**
 
-### 4.1 Sconti finali articoli
+### 4.1 Final Item Discounts (Sconti finali articoli)
 
 import SummariesFinalDiscount from './../../../import/sections/summaries-final-discount.md'
 
 <SummariesFinalDiscount />
 
-### 4.2 Spese/Sconti/Maggiorazioni finali
+### 4.2 Final Expenses/Discounts/Increases (Spese/Sconti/Maggiorazioni finali)
 
 import SummariesExpenses from './../../../import/sections/summaries-expenses.md'
 
 <SummariesExpenses />
 
-### 4.3 Riepiloghi IVA
+### 4.3 VAT Summaries (Riepiloghi IVA)
 
-Viene proposto il riepilogo IVA del documento, per ogni codice IVA.
+The VAT summary of the document is proposed for each VAT code.
 
-### 4.4 Riepilogo scadenze
+### 4.4 Summary of Deadlines (Riepilogo scadenze)
 
-Rappresenta il riepilogo delle scadenze del documento, per ogni *tipo* e *soluzione* di pagamento. 
+Represents the summary of deadlines of the document, for each *type* and *Payment Term*. 
  
-- **Numero**: valore progressivo della riga.  
-- **Pagamento**: rappresenta il codice alfanumerico del *Tipo pagamento* ripreso dalla *Testata del documento > tab Pagamenti*.  
-- **Importo**: Importo della scadenza calcolato. Può essere forzato manualmente, nel qual caso si attiva automaticamente il successivo flag *Modifica manuale*. (Scattano in automatico dei controlli e avvisi sulla quadratura tra i valori delle scadenze e il totale fattura)
-- **Data scadenza**: Data della scadenza calcolata. Può essere forzata manualmente, nel qual caso si attiva automaticamente il successivo flag *Modifica manuale*.
-- **Spese di incasso**: Campo in cui riportate le spese di incasso calcolate.
-- **IVA**: da applicare alle spese di incasso (può essere impostata anche manualmente)
-- **Causale pagamento**: è possibile inserire direttamente in fattura una causale contabile che da luogo ad una scrittura automatica di incasso / pagamento. NB prestare attenzione al template della causale perchè utilizzerà i conti presenti anche senza sottoconto, motivo per il quale è presente il campo seguente.
-- **Conto/sottoconto cliente**: conto che usa per incassare/pagare (cassa o banca ad esempio) la scadenza andando a sovrascrivere il conto presente nella causale contabile di pagamento (o incasso)
+- **Number**: progressive value of the line.  
+- **Payment**: represents the alphanumeric code of the *Payment type* retrieved from the *Document Header > Payments tab*.  
+- **Amount**: calculated amount of the deadline. It can be manually forced, in which case the subsequent flag *Manually edit* is automatically activated. (Automatic checks and warnings regarding the alignment between the deadline values and the total invoice will trigger).
+- **Expiry date**: calculated due date. It can be manually forced, in which case the subsequent flag *Manually edit* is automatically activated.
+- **Collection charges**: Field in which the calculated collection expenses are reported.
+- **VAT**: to be applied to collection expenses (can also be set manually).
+- **Payment Reason (Causale pagamento)**: it is possible to directly enter a accounting reason in the invoice that gives rise to an automatic entry of collection/payment. NB pay attention to the reason template because it will use the accounts present even without sub-accounts, which is why the following field is present.
+- **Customer Account/Sub-account (Conto/sottoconto cliente)**: account used to collect/pay (cash or bank, for example) the deadline, overwriting the account present in the accounting payment (or collection) reason.

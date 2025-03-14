@@ -3,19 +3,11 @@ title: Profit Centres Analysis
 sidebar_position: 2
 ---
 
-Through 'Profit Centres Analysis' Report, it is possible to get the accounting movements report (those whose every single profit centre has got valorization ), adding the amounts on the profit centre itself.
+The profit center analysis report allows for printing the details of accounting movements that have valued each individual profit center, totaling the amounts on the profit center itself.
 
-RIBBON BAR: it represents the Form menu, that is the area in which it is possible to perform actions. The list of features is the following:
+See **[Cost Center Analysis](/docs/finance-area/ledger-records/analytic-reports/cost-centres-analysis)**
 
-
-
-| Function | Meaning |
+| Function | Extended Description |
 | --- | --- |
-| Preview | Command to launch profit centres analysis print preview. |
-| Print | Command to launch profit centres analysis print. |
-
-
-
-
-
-
+| Preview | Button to execute the print preview of the profit center analysis. |
+| Report | Button to execute the physical print of the profit center analysis. |

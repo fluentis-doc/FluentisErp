@@ -3,42 +3,40 @@ title: Parameters
 sidebar_position: 3
 ---
 
-Within **Parameters** section the procedure considers all the detail lines of items inserted into the selected documents, reporting to each of them data taken by document. In particular:
+Within the **Parameters** section, the procedure displays all the detailed lines of items entered in the selected documents, showing the data retrieved from each of them. In particular:
 
-**Status and Tax Code**: they are taken from the subject register;
+![](/img/it-it/finance-area/declarations/intrastat/automatic-creation-intrastat1/parameters/image01.png)
 
-**Value in Currency**: it has item amount data (price*quantity-discounts) in the purchase invoice currency (the field is present only for intra2);
+ 
 
-**Amount of Euro Operations**: it considers the item amount at the exchange inserted on invoice;
+**Status and VAT code**: are taken from the registry of the named subject;
 
-**Nature of Transaction:**it is taken by document type;
+**Same currency value**: presents the item amount data (price*quantity-discounts) in the currency of the purchase invoice (the field is only present for intra2);
 
-**Nomenclature Made by**: the item line in invoice and if it is free even by the items register;
+**Amount operation Euro**: takes the item amount at the exchange rate entered in the invoice;
 
-**Net Mass**: it is calculated according to the weight set on item register;
+**Intrastat transaction nature**: is taken from the document type;
 
-**Suppl. Unit of Measure**: it can be calculated automatically, if the nomenclature code provides for a second unit of measure, through the conversion between operational unit of measure and this one according to conversion factors set on item;
+**Combined nomenclature**: from the item line in the invoice and, if empty, from the item registry;
 
-**Statistical Value:**it is calculated in several ways according to the settings (percentage variation compared to the customer/vendor register, or increased from charges inserted on document specifically);
+**Net mass**: calculated based on the weight set in the item registry;
 
-**Transport Code and Modality:**they are inserted compared to carriage/delivery codes assigned to document;
+**Supl. M.U.**: can be automatically calculated if the nomenclature code provides for a second unit of measure, through the conversion between the management unit of measure and this one, according to the conversion factors set in the item;
 
-**Data related to origin/destination provinces** and **to the place of origin/destination:**they are identified by document register or company table.
+**Stat value** is calculated in multiple ways depending on the settings (percentage variation compared to the customer/supplier registry, or increased by expenses specifically entered in the document);
 
-At the end of the grid there are the origin document references of line.
+**Transport code and Transport mode** are entered regarding the port/shipping codes assigned to the document;
 
-Once having completed data necessary in model (and this depends on 'simplified' flag inserted on header of declaration but it depends also on summary period type) it is possible to go on to create the model, operation that will record details on bis/ter/quarter sections according to the Intrastat transaction nature (the 2 type is reported on Ter section related to adjustments, the 'S' type on quarter section). Before this movement, it is possible to go on to group amounts: this operation will be performed document by document, causing a first data rounding to the unit.
+**Data related to the provinces of origin/destination** and to the **country of origin/destination** are read from the registry of the named subject of the document or from the company table.
 
-RIBBON BAR: it represents the Form menu, that is the area in which it is possible to perform actions linked to the procedure in use. The list of features is the following:
+At the end of the grid, references to the original document of the line are displayed.
 
+Once the necessary data in the model is completed (this depends on the Simplified flag entered in the header of the declaration but also on the type of reporting period), it is possible to proceed with the creation of the model, an operation that will carry the details into sections bis/ter/quater depending on the nature of the Intrastat transaction (type 2 is reported in section Ter related to corrections, type "S" in section quater). It is possible to proceed, even before this movement, with a first grouping of amounts: this operation will, however, be performed document by document, causing a first rounding of data to the unit.
 
-
-| Function | Meaning |
+| Function | Extended Description |
 | --- | --- |
-| Delete | Button to delete the selected invoices belonging to the intra-Community type.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
-
-
-
-
-
-
+| Delete | Button to delete the selected intra-community invoices. |
+| Creation | Executes the creation of the Intrastat model reporting the data present in this Tab within the sections of the model |
+| Create | Executes the deletion of all lines from the grid |
+| Group | Executes the grouping of lines based on the subject receiving the invoices and other homogeneous data |
+| Save | Allows saving the data entered in order to, for example, continue at a later time |

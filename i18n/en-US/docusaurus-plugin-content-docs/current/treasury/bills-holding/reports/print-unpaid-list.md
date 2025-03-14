@@ -1,12 +1,6 @@
 ---
-title: Stampa Lista insoluti
+title: Print Outstanding List (Stampa Lista insoluti)
 sidebar_position: 3
 ---
 
-Da questa finestra è possibile stampare la lista degli insoluti presenti nel sistema secondo il filtro impostato. In particolare, è d'interesse il filtro per insoluti ‘Non incassati' e il criterio di raggruppamento per cliente o per agente.
-
-
-
-
-
-
+From this window, it is possible to print the list of outstanding items present in the system according to the set filter. In particular, the filter for outstanding items ‘Not Collected (Non incassati)’ and the grouping criterion by customer or by agent are of interest.

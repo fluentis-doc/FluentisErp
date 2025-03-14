@@ -1,43 +1,85 @@
 ---
-title: View Accounts
+title: Accounts Visualization
 sidebar_position: 2
 ---
 
-'View Accounts' mask enables the user to view accounting movements of any account or detail account  of different kinds ( active, passive, costs, profit or register): all the movements of every accounting period are always in line. They can be edited according to the closing of the period, mandatory fiscal reports or account closure operations. It is mandatory to insert an account code or a detail account in the upper part: the following filter fields are not mandatory. They include predefined filter of the current division movements and the definitive records flag.
+The form allows you to view the accounting movements of any account or detail account, of any type (asset, liability, costs, revenues, or registry): all movements from all accounting periods are always online, but clearly they may be modified or not depending on the closure of the period following mandatory tax prints executed definitively or for account closing operations.
 
-Data grid enables the user to view movements list (sorted by record date) according to set filters: for instance, if we have filtered for X account 'record date' 01/01/yyyy, in the upper fields of  'Previous Balance'  section, it is possible to see the total debit/credit of the previous records. In the records grid, the 'Progressive'   field displays the updated amount of the same line, then it is updated line by line (IMPORTANT:  this 'progressive' has got a meaning just in case that record date or accrual date are sorted following an ascending order, not in other cases). In the fields at the bottom of the mask we can find 'Sel. Balance' the debit/credit amounts selected in the grid, as 'Current Balance' the debit/credit amount of the grid lines, as 'Total' the debit/credit amount of the previous balance and current balance. Finally,  in the 'Balance' field we can find 'Final Balance', in the debit or credit section (the final balance always corresponds to the progressive one visible in the last line).
+## Header:
 
-Another element that should be considered in the management of the grid is the following: there are two series of visualized detailed accounts, heading detail account ( that is recalled by the holder detail account of the record related to the movement itself) and detail account of detail that is the detail account whose movements are searched. For instance, if we are viewing the movements of a generic account, in the heading detail account we can find the codes of the vendors that sent recorded invoices to that account and in the detail account specific costs.
+At the top, it is mandatory to enter an account code or directly a detailed detail account: the subsequent filter fields are optional.
 
-The possible 'Account View' operations:
+![](/img/it-it/finance-area/ledger-records/records/view-accounts/image01.png)
 
-- Double click on the viewed line: in this case, if the user has the authorization,  he can edit the record that belongs to the movement.
+ 
 
-- 'Edit' button has the same function of the double click described above.
+## The data grid:
 
-- 'Initial Doc.' button, if active, can open the visualization modality (if the user has the authorization) of the purchasing or selling invoice that, together with the accounting activities has created the selected accounting movement.
+It is ordered by default in descending registration date**, (the sorting criterion can be changed) and displays the list of movements according to the set filters: 
 
-- Select 'Details' button (active only in case that one line is selected) to view all ledger record movements within a separated grid. As soon as the pointer will be moved towards an upper record, the grid will be disabled.
+With this setting, the data should thus be interpreted with the awareness that:
 
-Accounts view procedure includes:
+-  assuming filtering with 'from registration date' 01/01/yyyy, we will have in the fields (at the top) **Previous balance** the total debits and credits of the records prior to 01/01/yyyy,
 
-RIBBON BAR: the ribbon bar represents the form menu, that is the area on which the user can operate. The list of the possible features list is the following:
+- in the movements grid, the data will be presented from the most recent to the oldest (temporally) reading from top to bottom. 
 
-
-
-| Function | Meaning |
-| --- | --- |
-| View Accounts | Button to view the ledger records previously inserted. |
-| Edit | Button to edit a new ledger record previously inserted. |
-| Original Document | Button to recall the original document from which the ledger record starts. |
-| Details | Let the user view, within the result grid, the details of the selected ledger record. |
-
-FILTER AREA: the Filter Area contains the list of necessary data types thanks to which it is possible to perform a selection. Typically, filters have always 'AND' condition and it is possible to specify more filter criteria at the same time.
-
-RESULT GRID: Result Grid represents the list of records which correspond to the filter data above mentioned. After having set search filters,  the user, by clicking on [Search] button on the related Ribbon, will obtain the list of the desired records.
+- the **Progressive** field will display in the last row the amount from the **Previous balance** field updated with the value of that row and will then be updated row by row from bottom to top.
 
 
+:::note[Note]
+The **Progressive** field is visible only if the default sorting set for the form is maintained; in other cases, the field disappears, and to make it reappear, it will be necessary to close and reopen the form and then re-execute the search. 
+:::
 
 
+ 
+
+## Totals at the bottom of the form:
+
+**Sel. balance**: sum of debits/credits of the rows selected in the grid with the mouse; selecting everything in the grid (with ctrl+a) this field will display the same result as the *Current balance*
+
+**Current balance**: sum of debits/credits of the rows displayed in the grid (always all regardless of the selection made with the mouse);  
+
+**Total**: sum of the previous balance and the current balance;  
+
+**Balance**: final balance, either in debits or credits (which will always correspond to the progressive displayed in the first row).
 
 
+:::tip[How to read and interpret the totals]
+**Previous Debits/Credits** (to the filtered range and from the last account opening) **+ Current Balance = Total** (both debit/credit columns are always valued in these 3 blocks).
+
+**Previous Balance + Current Balance** (as the difference between debits and credits) **= Balance** (current)
+
+The *Current Balance* is represented in both sections to highlight analytically the formation of the *Total* (as it is calculated by summing the current balance with the two distinct sections *Previous Debits / Credits*).
+
+![](/img/it-it/finance-area/ledger-records/records/view-accounts/image04.png)
+
+:::
+
+
+In the grid, two series of displayed detail accounts are visible, the header detail account (which is taken from the detail account holder of the record from which the movement itself is taken) and the detailed detail account which is indeed the detail account for which the movements are being searched. For example, if viewing the movements of a generic cost account, we will have in the header detail account the codes of the suppliers who have sent us invoices recorded to that cost account and in the detailed detail account the specific individual cost detail accounts recorded.
+
+![](/img/it-it/finance-area/ledger-records/records/view-accounts/image02.png)
+
+ 
+
+Additionally, it is possible to "expand" the row using the + command on the left to view the entire accounting entry.
+
+![](/img/it-it/finance-area/ledger-records/records/view-accounts/image03.png)
+
+ 
+
+Additional operations that can be performed regarding the results grid:
+
+- Double-clicking on the single displayed row: in this case, if the user has the relevant rights, the corresponding record of the movement will open for editing;
+
+- Pressing the **Modify** button located in the ribbon bar will have the same effect as the double-click just described;
+
+- Pressing the **Source doc.** button, when active, will open in Viewing (if the user has the right) the purchase or sales invoice that created the selected accounting movement;
+
+FILTER AREA: the filter area is dedicated to hosting the list of possible data types that allow for selection. The filters are typically always in 'AND' condition, and multiple filtering criteria can be specified simultaneously.
+
+RESULT GRID: the result grid represents the list of records that correspond to the above-specified filter data. After specifying the values through which you want to search for records, if you press the [Search] button present in the relevant Ribbon, you will get the desired list of records in the result grid.
+
+:::important See Also
+[**VIDEO TUTORIALS ON ACCOUNTING ENTRIES**](/docs/video/finance/intro)
+:::

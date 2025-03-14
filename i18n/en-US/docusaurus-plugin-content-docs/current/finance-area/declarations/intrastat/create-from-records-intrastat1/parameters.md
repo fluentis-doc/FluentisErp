@@ -1,30 +1,20 @@
 ---
-title: Parameters
+title: Parameters 
 sidebar_position: 3
 ---
 
-Within the parameters section the procedure shows all the lines of the inserted movements. In particular:
+Within the 'Parameters' section, the procedure lists all the rows of the movements entered. In particular:
 
-**Status and Tax Code**: they are taken from the subject register;
+**Status and VAT code** are taken from the registry of the registered entity;
 
-the possible **Value in Currency** according to what has been inserted on record (the field is present only for intra2);
+the optional **Same currency value** according to what has been entered in the registration (the field is only present for intra2);
 
-**Amount of Euro Operations** takes the amount in currency of company;
+**Amount operation Euro** takes the amount in the company's currency;
 
-**Document Number**, **Record Date** and **Service Code** taken from record register.
+**Document Number**, **Registration date**, and **Service code** are taken from the registrant's registry.
 
-Once having completed data it is possible to go on to the creation, operation that will bring details on quarter section.
+Once the data is completed, it is possible to proceed with the creation, an operation that will bring the details into sections two - three - four.
 
-RIBBON BAR: it represents the Form menu, that is the area in which it is possible to perform actions linked to the procedure in use. The list of features is the following:
+The correct automatic entry in the appropriate section of the model depends on the management, at the time of entering the accounting entry, of the **VAT type** field in the VAT grid. If set to *General*, the movement will be entered in section Two (Bis); if set to *Service*, it will be entered in section Four (quater). This data, in turn, will correctly value the ***BisTer*** field (to be understood as the section of the model) present in the *Intrastat* tab of the registration, which is then the factual data passed during model creation.
 
-
-
-| Function | Meaning |
-| --- | --- |
-| Delete | Button to delete the selected invoices belonging to the intra-Community type. |
-
-
-
-
-
-
+Section Three (Ter) is instead populated, still through the *Intrastat* tab of the registration, when registering a credit note, where the flag ***Credit note for previous years*** is activated in the VAT grid of the registration (which identifies in any case a variation not related to the month or quarter of registration and requires the completion of section Three). Next to this flag it is possible to enter the reference date of the invoice that is being corrected.

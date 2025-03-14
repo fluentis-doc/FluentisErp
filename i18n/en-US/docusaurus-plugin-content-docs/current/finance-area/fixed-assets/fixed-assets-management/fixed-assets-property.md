@@ -3,19 +3,11 @@ title: Fixed Assets Property
 sidebar_position: 5
 ---
 
-The last “standard” tab is the one related to the fixed asset “Property”: it is possible to assign a list of property different to the fixed asset in use, together with a possible explication note added.
+The last standard tab is related to the 'Fixed assets property': it is possible to assign a list of different properties to the asset in use, with an optional explanatory note.
 
-RIBBON BAR: the ribbon bar represents the Form menu, that is the area on which it is possible to perform actions linked to the fixed asset in management. The possible features list is the following:
+See the article on **[accounting registration](/docs/finance-area/ledger-records/records/ledger-record)**.
 
-
-
-| Function | Meaning |
+| Function | Extended Description |
 | --- | --- |
-| New Property  | It activates the cursor for the insertion of a new fixed asset property. |
-| Delete Property | It deletes the selected property on grid. |
-
-
-
-
-
-
+| New property | Activates the cursor for entering an asset property. |
+| Delete property | Deletes the selected property in the grid. |

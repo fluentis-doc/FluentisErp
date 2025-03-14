@@ -1,31 +1,16 @@
 ---
-title: VAT Accounting Types
+title: VAT Accounting Types (Tipi contabilizzazione IVA)
 sidebar_position: 24
 ---
+This table is referenced within the customer/supplier registry to which we refer, and then within the VAT Rates/methods to define the specific sub-accounts to be used for each type.
 
 
+**Code**: identification code of the VAT accounting type.
 
-| Function | Meaning |
-| --- | --- |
-| Code | Identification code of VAT accounting type |
-| Description | Description of VAT accounting type |
-| Customer |  |
-| Vendor |  |
+**Description**: description of the VAT accounting type.
 
-RIBBON BAR: the ribbon bar represents the Form menu, that is the area in which it is possible to operate on previous recordings or generate new ones. The possible features list is the following:
+**Client**: flag to specify whether the line refers to a customer.
 
+**Supplier**: flag to specify whether the line refers to a supplier.
 
-
-| Function | Meaning |
-| --- | --- |
-| Search | Button to look for VAT accounting type through the fields: code filter and description |
-| Insertion | Button to insert the VAT accounting type |
-| Delete  | Button to delete the VAT accounting type, where the user is located |
-| Preview  | Button to perform the preview |
-| Print | Button to print |
-
-
-
-
-
-
+It is possible to check both flags when the line is both a customer and a supplier.

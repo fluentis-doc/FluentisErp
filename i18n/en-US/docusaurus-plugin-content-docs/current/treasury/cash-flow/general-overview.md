@@ -1,45 +1,35 @@
 ---
-title: Introduzione
+title: Introduction (Introduzione)
 sidebar_position: 1
 ---
 
-Il modulo Cash Flow di Fluentis ERP è uno strumento utile per l'analisi dei flussi di cassa aziendali previsti. 
+The Cash Flow module of Fluentis ERP is a useful tool for analyzing expected business cash flows.
 
-Esso permette di monitorare in modo preciso l'entrata e l'uscita di denaro, aiutando le aziende a mantenere una visione chiara e aggiornata della propria liquidità. Il modulo si integra con i dati contabili e di tesoreria per fornire un'analisi accurata e previsioni dettagliate sui flussi di cassa futuri.
+It allows for precise monitoring of cash inflows and outflows, helping companies maintain a clear and up-to-date view of their liquidity. The module integrates with accounting and treasury data to provide an accurate analysis and detailed forecasts of future cash flows.
 
-Il modulo è completo della possibilità di inserire manualmente delle scadenze extra contabili riferiti a dati non presenti a sistema, quali ad esempio una proiezione futura degli stipendi dei dipendenti, un piano di rientro per un credito già stralciato dalla contabilità e così via.
+The module also includes the ability to manually enter extra-accounting deadlines related to data not present in the system, such as a future projection of employee salaries, a repayment plan for a debt already written off from accounting, and so on.
 
-**Funzionalità Principali**:
+**Main Features (Funzionalità Principali)**:
 
-- Generazione automatica del cashflow con possibilità di includere o escludere le tipologie di flusso finanziario abilitato manovrando un semplice flag.
-- Possibilità di filtro sulle date per ogni singolo flusso 
-- Visualizzazione di dettaglio dell'elaborazione del cashflow con possibilità di esportazione del dato in vari formati tra i quali excel
-- Esecuzione di una stampa analitica per la lettura dei risultati con evidenza dell'andamento del cashflow di ogni fine mese
-- Possibilità di lettura della stampa analitica raggruppando per banca d'appoggio
-- Possibilità di definire una data prevista per ogni flusso, parallela alla data di scadenza naturale
+- Automatic generation of cash flow with the ability to include or exclude types of financial flow enabled by toggling a simple flag.
+- Date filtering options for each individual flow.
+- Detailed visualization of cash flow processing with the option to export the data in various formats including Excel.
+- Execution of an analytical printout for reading results with emphasis on the trend of cash flow at the end of each month.
+- Option to read the analytical printout grouped by supporting bank.
+- Ability to define a due date for each flow, parallel to the natural due date.
 
-**Elenco tabelle necessarie per gestire il modulo:** 
+**List of tables necessary for managing the module (Elenco tabelle necessarie per gestire il modulo):**
 
-[Tipi conto finanziario](/docs/configurations/tables/treasury/cash-flow-module-tables/financial-account-types),  
+[Types of financial account (Tipi conto finanziario)](/docs/configurations/tables/treasury/cash-flow-module-tables/financial-account-types),  
 
-[Tipi flusso](/docs/configurations/tables/treasury/cash-flow-module-tables/flux-types),  
+[Types of flow (Tipi flusso)](/docs/configurations/tables/treasury/cash-flow-module-tables/flux-types),  
 
-[Tipi scadenza](/docs/configurations/tables/treasury/cash-flow-module-tables/due-date-types),  
+[Types of due date (Tipi scadenza)](/docs/configurations/tables/treasury/cash-flow-module-tables/due-date-types),  
 
-[Tipi ordine/bolla/fattura](/docs/configurations/tables/treasury/cash-flow-module-tables/order-dn-invoice-types)  
+[Types of order/note/invoice (Tipi ordine/bolla/fattura)](/docs/configurations/tables/treasury/cash-flow-module-tables/order-dn-invoice-types),  
 
-[Anagrafica cliente/fornitore/agente](/docs/configurations/tables/treasury/cash-flow-module-tables/customer-vendor-agent-register).
+[Customer/vendor/agent registry (Anagrafica cliente/fornitore/agente)](/docs/configurations/tables/treasury/cash-flow-module-tables/customer-vendor-agent-register).
 
-Inoltre, relativamente ad ogni tipologia di flusso finanziario che viene attivato, occorre gestire all'interno delle tabelle relative, quali ad esempio Tipi DDT, Tipi ordine (clienti e fornitori) ecc... quali tipologie specifiche di documento devono essere monitorate.
+Furthermore, for each type of financial flow that is activated, it is necessary to manage within the related tables, such as Types DDT, Types of orders (customers and suppliers), etc., which specific types of documents should be monitored.
 
-Ad esempio tipicamente si escluderà un DDT che non sia in conto vendita, quali ad esempio il conto deposito , conto visione ecc... inquanto non genereranno flusso di cassa.
-
- 
-
- 
-
-
-
-
-
-
+For example, a DDT that is not a sale consignment, such as a deposit account or sight account, will typically be excluded as it will not generate cash flow.

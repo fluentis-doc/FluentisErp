@@ -182,5 +182,5 @@ Anagrafica Capogruppo: serve per selezionare una capogruppo esterna, dunque non 
 ### VIDEO TUTORIALS
 
 :::important Vedi Anche
-[**VIDEO TUTORIALS SULLE TABELLE GENERALI**](/docs/video/finance/intro.md)
+[**VIDEO TUTORIALS SULLE TABELLE GENERALI**](/docs/video/finance/intro)
 :::

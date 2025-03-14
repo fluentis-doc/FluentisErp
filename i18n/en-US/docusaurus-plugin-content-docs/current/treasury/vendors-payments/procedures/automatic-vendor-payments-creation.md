@@ -1,69 +1,62 @@
 ---
-title: Creazione automatica pagamento fornitori
+title: Automatic Creation of Supplier Payments (Creazione automatica pagamento fornitori)
 sidebar_position: 1
 ---
-La form si trova in Tesoreria > Pagamenti fornitori > Procedure > Creazione automatica pagamenti fornitori
+The form is located in Treasury > Supplier Payments > Procedures > Automatic Creation of Supplier Payments (Creazione automatica pagamenti fornitori)
 
-Questa procedura è alternativa alla creazione di una nuova [distinta di pagamento](/docs/treasury/vendors-payments/create-vendor-payments) ed alla sua successiva contabilizzazione, permettendo di eseguire queste operazioni in maniera integrata direttamente da questa form.
+This procedure is an alternative to creating a new [payment list (distinta di pagamento)](/docs/treasury/vendors-payments/create-vendor-payments) and its subsequent accounting, allowing these operations to be performed in an integrated manner directly from this form.
 
-## Come creare automaticamente un pagamento fornitori
+## How to Automatically Create a Supplier Payment
 
+1. Use the first tab *Maturity value filter* to locate the items to be paid. (You can also filter by ABI/CAB codes of bank supports connected to the accounting entry, as well as by code/description of the supporting bank - by expanding the *Bank* section). 
 
-1. Utilizza la prima scheda *Filtro partite* localizzare le partite da pagare. (E' possibile filtrare anche per codici abi/cab degli appoggi bancari collegati alla partita contabile, oltre che per codice / descrizione della banca d'appoggio - espandendo la sezione *Banca*). 
+By expanding the *Maturity value type* section, **payments of recipient items (pagamenti delle partite percipienti)** are **excluded** by default, for which <u>**the operation must be carried out within the recipient module**</u> if you want to use the [certification of withholdings (certificazione ritenute)](/docs/finance-area/declarations/declarations/withholding-tax-certification) procedure. 
 
-Espandendo la sezione *Tipo partite* sono **esclusi** di default i **pagamenti delle partite percipienti**, per i quali <u>**l'operazione va effettuata dall'interno del modulo percipienti**</u> se si vuole poter utilizzare la procedura di [certificazione ritenute](/docs/finance-area/declarations/declarations/withholding-tax-certification). 
+The filter for *sub-account* of payment bank allows for the creation of the list based on what has been channeled to the various banks through the settings of the registry and the [Payment Support Management (Gestione Appoggio Pagamenti)](/docs/treasury/vendors-payments/procedures/payments-support-management) procedure of the module itself.
 
-Il filtro per *sottoconto* banca di *pagamento* consente di gestire la creazione della distinta sulla base di quello che è stato canalizzato sulle varie banche attraverso le impostazioni di anagrafica e della procedura di [Gestione Appoggio Pagamenti](/docs/treasury/vendors-payments/procedures/payments-support-management) del modulo stesso.
+2. Check, at the bottom, the totals of the selected lines.
 
-2. Controlla, in basso, i totali delle righe selezionate.
+3. Move to the second tab **Item Data** and set the various management elements of the procedure: first of all, the **payment bank** must be entered, which will be the main bank of the list. 
+This field unlocks the button **Start creation of payment from maturity values**.
 
+4. Manage the other parameters:
 
-3. Passa alla seconda scheda **Dati pagamento fornitore** e imposta i vari elementi di gestione della procedura: innanzi tutto va inserita la **banca di pagamento**, che sarà la banca intestataria della distinta. 
-Questo campo sblocca il pulsante **Inizia la creazione del pagamento da partite**.
+- The flag **Use the payment bank from the supplier's item, if absent from the registry (Utilizza la banca di pagamento dalla partita del fornitore, in assenza dall'anagrafica)** will instruct the procedure to create as many lists as there are payment banks assigned to the various items selected in the payment support management procedure, or entered in the supplier registry. In the absence of both, the payment will be entered in the list for the bank code set in the initial field.
 
+- The flag **Use the support bank present in the supplier's registry (Utilizza la banca d'appoggio presente in anagrafica del fornitore)** forces the assignment of the beneficiary bank codes by reading them from the default bank row entered in the bank support section of the supplier's payment tab. This flag can be preset within the module parameters.
 
-4. Gestisci gli altri parametri:
+- The **Payment type** allows you to define the type of payment to assign to the list: the field becomes mandatory only when the items to be paid require non-uniform payment types.
 
-- Il flag **Utilizza la banca di pagamento dalla partita del fornitore, in assenza dall'anagrafica** imporrà alla procedura di creare tante distinte quante sono le banche di pagamento assegnate alle varie partite selezionate nella procedura di gestione appoggio pagamento, oppure inserite in anagrafica del fornitore. In assenza di entrambe il pagamento sarà inserito nella distinta per il codice banca impostato nel campo iniziale.
+- The year and issue date are set by default based on the system date.
 
-- Il flag **Utilizza la banca d'appoggio presente in anagrafica del fornitore** forza l'assegnazione dei codici bancari del beneficiario leggendoli dalla riga banca di default inserita nella sezione banche d'appoggio della scheda pagamenti dell'anagrafica fornitore. Questo flag può essere predefinito all'interno dei parametri del modulo.
+- The **Enforce Beneficiary Value Date (Imponi data valuta beneficiario)** flag allows you to assign, within the telematic track, a value date for the payment beneficiary, which, if not set, will be assigned as the current date. If the flag is not set, the value date will be equal to the due date.
 
-- Il **Tipo pagamento** consente di definire la tipologia di pagamento da assegnare alla distinta: il campo diventa obbligatorio solo quando le partite da pagare prevedono tipologie di pagamento non uniforme.
+- The **Initial note** field is a free field for payment notes, not used in the standard.
 
-- L'anno e la data di emissione sono definiti di default sulla base della data di sistema.
+- The **Final notes** field is used in payment accounting to enhance the detailed description of the accounting movement of the bank sub-account.
 
-- Il flag di **Imponi data valuta beneficiario** consente di assegnare, all'interno del tracciato telematico, una data valuta per il beneficiario del pagamento, che se non è impostata viene assegnata come data odierna. Se il flag non è impostato la data valuta sarà uguale alla data scadenza.
+5. If you want to immediately account for the payments, activate the **Maturity value accounting** flag, which allows for the direct recording of the closure of the items and the related double entry movements of the payments being created: if not used, it will be possible to use the *separate accounting procedure* later.
 
-- Il campo **Note iniziali** è un campo libero di note del pagamento, non utilizzato nello standard.
+6. Fill in the accounting reason to be used for registration, the registration and accrual dates. The sub-accounts for recording active and passive discounts are proposed based on the *Casual profits* sub-account present in the accounting parameters. The date and document number to be entered as the references of the registration header are optional (it could be the list number/date).
 
-- Il campo **Note finali** viene utilizzato nella contabilizzazione pagamenti per valorizzare la descrizione di dettaglio del movimento contabile del sottoconto banca.
+On the right, there is a default flag for **Closure of Items (Chiusura della partite)** (proposed by default, do not remove) and the grouping management criterion in accounting **Grouping bank**, which allows for recording one entry for each outgoing bank sub-account. 
 
-5. Se desideri contabilizzare immediatamente i pagamenti attiva Il flag di **Contabilizzazione della partita** che consente di rilevare direttamente la chiusura delle partite e i relativi movimenti di partita doppia dei pagamenti in creazione: se non utilizzata sarà possibile utilizzare in seguito la *procedura separata di contabilizzazione*.
+Alternatively, a **Group by detail account** and an option for detailed payment registration for each payment (**No grouping**) are available.
 
-6. Compila la causale di contabilità da utilizzare per la registrazione, le date di registrazione e competenza. I sottoconti di rilevazione degli abbuoni attivi e passivi sono proposti sulla base del sottoconto *sopravvenienze attive* presente nei parametri di contabilità. La data e numero documento  da inserire come riferimenti della testata della registrazione sono opzionali (potrebbe essere il numero/data distinta).
+If the accounting reason involves the management of the bank value date and within the bank registry a number of days for its calculation in relation to the used accounting reason has been defined, the field will be automatically handled in the resulting registration.
 
-Sulla destra è presente un flag di default di **Chiusura della partite** (proposto di default, da non togliere) e il criterio di gestione del raggruppamento in contabilità **Raggruppa Banca** che consente di rilevare una registrazione per ogni sottoconto banca di uscita. 
+7. Press the **Start creation of payment from maturity values** button.
 
-In alternativa è disponibile un **Raggruppa per sottoconto** fornitore e un'opzione di registrazione dettagliata pagamento per pagamento (**Nessun raggruppamento**).
+**<a href="https://youtu.be/DkxoWgTkvUg&amp;t=2m25s" target="_blank" rel="noopener noreferrer">Refer to the Tutorial - YouTube Link  (Si rinvia al Tutorial - Link YouTube)</a>**
 
-Se la causale contabile prevede la gestione della data valuta banca e all'interno dell'anagrafica banche è stato definito un numero di giorni per il suo calcolo in relazione alla causale contabile utilizzata, il campo sarà gestito in automatico nella registrazione risultante.
+### Restoration Tab (La scheda di ripristino)
 
-7. Premi il pulsante **Inizia la creazione del pagamento da partite**
+allows you to view the accounting registration through a double click in the section related to registrations, as well as the partial/total cancellation of the selected payment operations. Cancellation will only be possible if the period is still modifiable (journal book printing and account closure not executed).
 
+**Specific Buttons**
 
-**<a href="https://youtu.be/DkxoWgTkvUg&amp;t=2m25s" target="_blank" rel="noopener noreferrer">Si rinvia al Tutorial - Link YouTube </a>**
+**Search Previous**: Searches the list of executed creations.
 
-### La scheda di ripristino 
+**Delete Creation**: With this button, all accounting performed will be deleted, along with all associated payments.
 
-consente di visualizzare la registrazione contabile attraverso un doppio click nella sezione relativa alle registrazioni, così come l'annullamento parziale/totale delle operazioni di pagamento selezionate. L'annullamento sarà possibile solo se il periodo è ancora modificabile (stampa libro giornale e chiusura conti non eseguite).
-
-
-
-**Pulsanti specifici**
-
-**Ricerca precedenti**: Ricerca la lista delle creazioni eseguite.
-
-**Cancella creazione**: Con questo pulsante sarà cancellata tutta la contabilizzazione effettuata, con tutti i pagamenti associati.
-
-**Cancella pagamenti**: Il pulsante esegue il ripristino del pagamento selezionato.
-
+**Delete Payments**: The button restores the selected payment.

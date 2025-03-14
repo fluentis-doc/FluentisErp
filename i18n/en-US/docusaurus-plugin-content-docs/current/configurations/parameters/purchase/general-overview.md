@@ -1,12 +1,6 @@
 ---
-title: General Overview
+title: Generality
 sidebar_position: 1
 ---
 
-The purchase area parameters enable the user to set the purchase document flow according to particular conditions necessary for each company. 
-
-
-
-
-
-
+The parameters of the purchasing area are located in the path **Parameters > Purchases** and allow defining the flow of purchase documents according to the necessary logic for each company.

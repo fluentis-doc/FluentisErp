@@ -3,105 +3,78 @@ title: Sales Invoices Parameters
 sidebar_position: 5
 ---
 
-The sales invoices parameters enable the basic setting in order to manage correctly and according to specific conditions belonging to each company.
+:::tip[FAst Start]
+The table is affected by the [**Fast Start**](/docs/guide/fast-start) procedure.
 
-The ribbon bar represents the Form menu, that is the area in which it is possible to perform actions. The list of the possible features is the following: 
+If you intend to configure manually, refer to the checklist on the linked page.
+:::
 
+The parameters for sales invoices allow for basic settings to manage correctly and according to the specific requests of each individual company. The window related to these parameters consists of 4 different tabs: General, Fulfillment, Shipping, and Analytical.
 
+### General
 
-| Function | Meaning |
-| --- | --- |
-| Restore Parameters | It enables the user to restore parameters to the initial values.  |
+**Management of double measurement unit**: if active, the invoice lines will display two columns: Alternative UM and Alternative Quantity, allowing for the management of the double unit of measure, always keeping in mind that it is the primary unit of measure on which fulfillment checks are made.      
 
-General Tab
+**Automatic proposal of alternative UM (Proposta automatica UM alternativa):** this flag becomes editable only if the double unit of measure management flag has been activated and allows the alternative unit of measure set in the item registry to be displayed in the invoice item tab, in the designated 'Alternative UM' column; if not active, the unit of measure will not be proposed.      
 
-| Function | Meaning |
-| --- | --- |
-| Propose Commission Inserted into Document Heading for all Items | No longer managed. |
-| Insert Comm. on Line Type 6 and 7 (on-account/reversal) | It indicates the fact that account and reversal item lines manage the agents' commissions. |
-| Management of Double UM | When it is set, it is possible to enable the Alternative UM combo box and the alternative Quantity column on grid related to Invoices Items Management. |
-| Automatic Proposal of Alternative UM | This check can be enabled only if “Management of Double Unit of Measure” is active. When an item, which has a default alternative UM within its alternative UM tab register, is inserted, the UM can be automatically proposed as an alternative UM of item and it is possible to calculate even the alternative quantity by using the conversion factor of the same one. |
-| Automatic Proposal of Transport Made by Carrier | If it is set, it means that the transport type will be Vector and the default vector will be proposed. |
-| Volume Def. U.M.  | If it is set, it refers to the default unit of measure for volume during the transport calculation of delivery note. |
-| Weights Def. U.M. | If it is set, it refers to the default unit of measure for weight during the transport calculation of delivery note. |
-| Recover Only for Current Date | If it is set, it means that there will be the possibility to recover available numbers only as regards the current date. |
-| Automatic Recover | If it is set, it means that the first available number will be proposed. |
-| Control Availability | If it is set, it means that there will be the possibility to verify the delivery note item availability. |
-| Negative Price on Credit Notes | If it is set, it means that the presence of positive prices will be notified into invoices with credit notes type. |
-| Exclude Sales Orders | If it is set, it means that the usage of sales orders will not be considered during the delivery note item availability calculation.  |
-| Compulsory Availability | If it is set, it means that the delivery note item availability will be obligatory. The quantity could not be higher than the availability.  |
-| View Availability | If it is set, it means that, by inserting the quantity into line, there will be the possibility to view the item availability.  |
-| Subcontractor | If it is set, it means that subcontractor documents will be considered during the availability calculation of delivery note item. |
-| Purchase | If it is set, it means that purchase documents will be considered during the availability calculation of delivery note item. |
-| Sales | If it is set, it means that sales documents will be considered during the availability calculation of delivery note item. |
-| Planned Prod. | If it is set, it means that documents regarding resources requirements and production job order will be considered during the availability calculation of delivery note item. |
-| Released Prod. | If it is set, it means that production orders will be considered during the availability calculation of delivery note item. |
-| Warehouse | If it is set, it means that stock records will be considered during the availability calculation of delivery note item. |
-| Check Next Price List | It indicates the fact that the item inserted into invoice line will be searched even on price lists specified on customer register, over the default price list. |
-| Control Intra-cee | It indicates the fact that there will be the possibility to verify if the invoice type and customer have the same Intra CEE type. |
-| Use Barcode | It indicates the fact that the item Barcode column of Items grid is managed. |
-| Size and Colour Management | It indicates the fact that Lot columns of Variants grid are managed. |
-| View Dimensions | If it is set, it means that the dimensions columns (Height, Width, Depth) of Items grid are managed. |
-| Allow Discounts for the Giveaways Items | It indicates the fact that the giveaways items can manage discounts. |
-| Control Integrity | It indicates the fact that it is possible to verify the invoice integrity. |
-| Recalculate Transport | It indicates the fact that the invoice transport can be automatically calculated. |
-| Without Collection Charges in Credit Note | It indicates the fact that collection charges will not be inserted into maturities of invoices with credit notes type. |
-| Block Document Insertion in Public Holidays | It indicates the fact that the public holidays are blocked in order to be used. |
-| Verify Sales Price Lots | It indicates the fact that there will be the possibility to verify the unit amount of invoice line. |
-| Mandatory User Code | It indicates the fact that the operator specification on invoice header is obligatory. |
-| External Order Reference | It indicates the fact that it is possible to manage the external reference of sales order linked to the invoice item line. |
-| Line Maxim No. | It specifies the maximum number allowed on Items grid. |
+**Availability Control (Controllo Disponibilità):** this flag and the others related to control, visualization, and obligation considering area are not managed in the current version.     
 
-Execution Tab
+**Default volume/weight unit of measure (Unità di misura volume/pesi predefinita):** these units of measure are considered as default UMs to be proposed in the [Transport](/docs/sales/sales-delivery-notes/insert-delivery-notes/sales-dn) tab of the DDT, as units of volume and weight; this data is modifiable in the documents.
 
-| Function | Meaning |
-| --- | --- |
-| Payments | It specifies the value used in order to pay invoices as regards the multiple orders execution: First order, Register or Manual selection. |
-| Recipient | It specifies the value used for invoice recipient as regards the multiple orders execution: First Order, Register or Manual Selection.  |
+**Search prices for items in all predefined price lists (Ricerca prezzi articoli in tutti i listini predefiniti):** when searching for the price and discounts for an item within an invoice, the system follows rules based on the settings configured in the customer registry, under the *Price Lists* section. If the 'default' option is activated on a specific type of price list, the search for prices and discounts will focus only on that specific type of price list; if the "default" flag is not active, the system will extend the search to all types of price lists present, following a priority order. In practice, with the 'default' flag active, the system will first look for a valid price list for the predefined type; if it finds no results, it will check the other types of price lists in order of priority. However, if there is no price list set as 'default' in the customer registry and there are only priorities, this parameter will not influence the search, even if active.
 
-Unload Tab
+**Propose commissions for free items (Proponi provvigione per gli articoli omaggio):** with this flag, agent commissions will also be proposed for the article lines of type gift just as they are for lines of type Coded Item.
 
-| Function | Meaning |
-| --- | --- |
-| Create Record with Document Date | When it is set, the stock record is performed through the same date of purchase invoice and it will not necessary to specify the record date on load form. |
-| Priority Warehouse and Load Template | When this parameter is set, load warehouse and template are read by invoices lines; on the contrary if it is not set, it is possible to use warehouse and template inserted into this parameters form. |
-| Warehouse | It specifies the warehouse to be used for unload of invoice when the following parameter Priority Warehouse and Load Template from items lines of DN is not active. |
-| Template | It specifies the template to be used for unload of invoice when the following parameter Priority Warehouse and Load Template from items lines of DN is not active. |
-| Warning Fictitious Items | If it is set, during the unload of invoice it is possible to control if there are fictitious items on invoice. A message is given in case in which the user wants to unload the invoice; answering yes, the invoice can be unloaded however.  |
+**Entry of commissions in types 6 and 7 (Deposit/Refund) (Inserimento provvigioni nei tipi 6 e 7 (Acconto/Storno))**: if active, it allows the entry and management of commissions also for row types 6 and 7 of invoices. For further information, refer to the article related to the [entry of the invoice](/docs/sales/sales-invoices/invoicing/sales-invoice).
 
-Import TabIn this tab the user specifies name and path of file in order to import items from barcode. The import form can be opened from toolbar of invoices management on items tab. Through this import it is possible to insert items from file into invoice.
+**Allow discounts for free items (Consentire sconti per gli articoli omaggio):** with this flag, discounts will also be calculated for free items and will affect the totals.
 
-Import Barcode TabIn this tab the user can specify parameters in order to import data contained in FT_ImpBCAll table. The import form can be opened from invoices management toolbar on items tab. Through this import it is possible to insert items from a table configured on invoice.
+**Negative prices in credit notes (Prezzi negativi delle note di credito):** if active, the system will notify a warning if there are positive prices within credit notes. If not active, the system will make no checks and will return no warnings.
 
+**Check items running low (Verifica articoli in esaurimento):** with this flag, the management of items running low is activated; if there is an Out of stock Date present in the item registry along with the relevant flag, Fluentis will notify the user with a pop-up if the item is inserted into the document.
 
+**[Enable Simplified Discount Widget](/docs/sales/sales-flow/discount-widget):** by activating this flag in the Items section, two new columns will be displayed: *Item Discounts* and *Final Item Discounts*. The *Item Discounts* column is editable and shows discounts applied automatically based on customer, item, price list, or discount category settings. The user has the option to enter, modify, or delete discounts directly in this column. To use this widget, it is necessary to activate the flag and specify in the invoice type which type of discount to use.
 
-| Function | Meaning |
-| --- | --- |
-| Alternative U.M.  | If it is set, it means that the alternative UM column of Barcode import grid is managed. |
-| Location | If it is set, it means that the Location column of Barcode import grid is managed. |
-| Customer/Vendor Account | If it is set, it means that the following column Account, Detail Account, Customer/Vendor Description of barcode import grid are managed. |
-| Item Price | If it is set, it means that the Price column of barcode import grid is managed. |
-| Option | If it is set, it means that the Option column of barcode import grid is managed. |
-| Variant | If it is set, it means that the Variant column of barcode import grid is managed. |
-| Item Pickup Type | It specifies the item pickup type: Item Class/Code, Lot, Serial Number |
+**Use customer item (Uso articolo cliente):** if set, this flag will insert, in the article grid of the invoice, columns for the Code and the Customer Description entered in the item registry, Customer tab.
 
-Picking Tab
+**Use barcode (Uso barcode):** if set, this flag will insert, in the article grid of the invoice, the column to display the item barcode.
 
-| Function | Meaning |
-| --- | --- |
-| Turnover Type | It specifies the turnover type to be used during the picking items import into invoice. |
-| VAT | It specifies the VAT code to be used during the picking items import into invoice. |
+**Operator code required (Codice operatore obbligatorio):** this flag makes it mandatory to fill in the *Operator* field in the header.
 
-Valorization Tab
+**Block document entry on holidays according to the factory calendar (Blocca inserimento documento in date festive da calendario di fabbrica):** if active, the system does not allow the entry of the offer on holidays (first checking the Company's Factory Calendar, then the Production Capacity Calendar); if not active, the system does not perform any checks and allows the document to be entered.
 
-| Function | Meaning |
-| --- | --- |
-| Valorization Additional group by clauses | It specifies fields added for grouping of delivery notes into valorization procedure. |
+**Recalculate transport (Ricalcola trasporto):** this flag ensures that in the [Transport](/docs/sales/sales-invoices/invoicing/sales-invoice) tab of the invoice, the totals for weight, volume, and packages of the document lines are reported; without this flag, the fields will not be filled.
 
-Analytic TabThese parameters set the search priority of cost or profit centres in order to be attributed to invoice items. When recalculate flag is set, cost or profit centres are inserted/added on items through the chosen priority.
+**External order references (Riferimenti esterni ordine):** this flag ensures that the *Our* and *Your reference* fields are transferred from the order/DDT lines to the invoice lines.
 
+**Maintain prices from orders for different ranges (Mantieni prezzi da ordini per gli scaglioni):** it is used in the fulfillment of orders in the invoice when the fulfilled quantity is different (usually partial) from the ordered quantity for which a price or a quantity range discount has been entered. If the price or discount does not depend on the delivered quantity but only on the quantity ordered, this flag should be activated; if the range price or discount should not be included in the delivery document in case the fulfillment does not occur for the total quantity of the order, the flag should not be activated.
 
+### Fulfillment
 
+**Payment (Pagamento):** specifies the value used for the payment of the customer invoice in the case of multiple fulfillment of the sales order: *First order*, *Register*, or *Manual selection*.
 
+**Recipient (Destinatario):** specifies the value used for the recipient of the customer order in the case of multiple fulfillment of the sales order: *First order*, *Register*, or *Manual selection*.
 
+**Recalculate CDC/CDP (Ricalcola CDC/CDP):** in the case that the invoice is generated from the customer order with the appropriate procedure, activating this flag will cause the system to recalculate the cost and profit centers in the invoice, not considering those set in the sales order. If not active, the system will not recalculate this data but will keep those entered in the customer order;
 
+**Grid display of fulfillment:** if active, the flag enables grid mode in the sales DDT fulfillment form.      
+
+**Tree view of fulfillment:** if active, the flag enables tree mode in the sales DDT fulfillment form.
+
+### Shipping
+
+**Create registration with the document date (Crea registrazione con la data del documento):** if active, the warehouse registration is done with the same date as the invoice, and it will not be necessary to specify the registration date in the shipping form. If not active, it will be necessary to specify the date in the invoice shipping form;
+
+**Priority of warehouse and shipping reason for item lines in DDT (Priorità magazzino e causale di scarico alle righe articoli dei DDT):** if active, the warehouse and shipping reason are read from the invoice lines; if not activated, the warehouse and reason inserted in the subsequent fields (Warehouse and Warehouse Reason) will be used.
+
+**Automatic Load/Unload (Carico/Scarico Automatico):** if active, the unloading of the DDT will be done automatically upon activation of the Print flag. If not active, unloading must be done with the appropriate button present in the ribbon bar of the invoice entry form (see [Invoice Entry](/docs/sales/sales-invoices/invoicing/sales-invoice)) or with the appropriate procedure.
+
+**Notice for fictitious items (Avviso articoli fittizi):** if active, during the unloading of the invoice, the system will check for the presence of fictitious items and, if there are any, a message will appear allowing the user to choose whether to complete the procedure or not; if the answer is affirmative, the entire invoice will be unloaded (except for the fictitious items), while if the answer is negative, the invoice will NOT be unloaded.
+
+### Analytical
+
+This TAB specifies the priority for retrieving the Cost Center (CDC) or Profit Center (CDP) in the document line.      
+It is possible to modify the priorities using the buttons **Move Up**![](/img/neutral/common/move-up.png) and **Move Down**![](/img/neutral/common/delete-cc.png).      
+*Default values (Valori di default)*: the CDC or CDP is retrieved from the invoiced type if present. For further details, refer to the table [Invoiced Type](/docs/configurations/tables/sales/sales-turnover);         
+If it is not present in the invoiced type, the system will look for it in the Customer registry. If not present, it will be searched in the item registry and subsequently at the warehouse level.      
+The flag **Evaluate the priority of each dimension (Valuta la priorità di ogni dimensione)** ensures that in the documents, the CDC/CDP are grouped by dimension in the Analytical tab.

@@ -1,26 +1,20 @@
 ---
-title: Previous
+title: Previous 
 sidebar_position: 2
 ---
 
-The 'Previous' section enables the user to cancel definitive accounting performed by this mask and to restore the temporary status of records. There are two different buttons: 
+The 'Previous' tab allows you to cancel the definitive accounting entries made from this form and thus restore the provisional status of the records. There are two buttons: 
 
-**Rollback Operation**: it cancels the selected accounting operation (and so all records inserted on it);
+**Rollback Operation**: cancels the entire accounting operation selected (and thus all records entered within it), while the second;
 
-**Rollback Record**: it restores the temporary status of the single record selected on grid below. 
+**Rollback Record**: restores the provisional status of the individual record selected in the grid below.
 
-RIBBON BAR: it represents the Form menu, that is the area in which it is possible to perform actions about a document in management. The list of features is the following:
+RIBBON BAR: represents the menu of the form in question, i.e., the area where actions can be taken regarding the document in management. The list of possible functionalities is represented below:
 
 
 
-| Function | Meaning |
+| Function | Extended Description |
 | --- | --- |
-| Search | This button performs the search of accounting performed |
-| Rollback Operation | It performs the restore of all records linked to the selected operation |
-| Rollback Record | It performs the restore of the single record selected on grid below |
-
-
-
-
-
-
+| Search | This button performs a search of the executed accounting entries. |
+| Operation Rollback | Restores all records linked to the selected operation. |
+| Record Rollback | Restores the individual record selected in the lower grid. |

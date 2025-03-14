@@ -213,5 +213,5 @@ si rinvia alla documentazione relativa agli [Extra Data](/docs/configurations/ut
 ### VIDEO TUTORIALS
 
 :::important Vedi Anche
-[**VIDEO TUTORIALS SUL PIANO DEI CONTI**](/docs/video/finance/intro.md)
+[**VIDEO TUTORIALS SUL PIANO DEI CONTI**](/docs/video/finance/intro)
 :::

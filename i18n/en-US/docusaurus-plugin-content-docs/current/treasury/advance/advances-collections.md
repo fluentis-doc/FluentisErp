@@ -1,48 +1,42 @@
 ---
-title: Introduzione
+title: Introduction (Introduzione)
 sidebar_position: 1
 ---
 
 :::note[Info]
-La pratica di anticipare le fatture in banca è un'operazione finanziaria comunemente utilizzata dalle aziende per ottenere liquidità immediata, anticipando l’incasso delle fatture emesse nei confronti dei clienti. Questa operazione, chiamata anche sconto fatture, consente di convertire crediti commerciali in denaro liquido, migliorando così la gestione della cassa aziendale e la capacità di far fronte a pagamenti o investimenti senza dover aspettare i tempi di pagamento dei clienti.
+The practice of advancing invoices in the bank is a financial operation commonly used by companies to obtain immediate liquidity by anticipating the collection of invoices issued to customers. This operation, also known as invoice discounting, allows for converting accounts receivable into cash, thus improving the company's cash management and its ability to meet payments or investments without having to wait for customer payment times.
 
-L’azienda presenta alla banca una o più fatture che non sono ancora state pagate dai clienti. La banca anticipa una parte del valore della fattura, solitamente tra il 70% e il 90%, trattenendo una quota come garanzia fino al saldo completo del pagamento. Una volta che il cliente paga la fattura, la banca trattiene una commissione e accredita il saldo residuo all’azienda.
+The company presents one or more invoices to the bank that have not yet been paid by the customers. The bank advances a portion of the invoice value, typically between 70% and 90%, withholding a share as a guarantee until the complete payment is settled. Once the customer pays the invoice, the bank retains a fee and credits the remaining balance to the company.
 
-Contabilmente l'azienda registra un debito verso la banca per l'importo anticipato, quando il cliente paga l'azienda chiude il debito con la banca e registra i costi per commissioni ecc..
+From an accounting perspective, the company records a liability to the bank for the amount advanced; when the customer pays, the company settles the debt with the bank and records the costs for fees, etc.
 :::
 
-Con questo modulo di Fluentis ERP, è possibile gestire le distinte di anticipo fatture da presentare alla banca al netto di commissioni e interessi, e contabilizzare sia la presentazione sia l'incasso finale.
+With this module of Fluentis ERP, it is possible to manage the invoices advance lists to be presented to the bank net of fees and interests, and to account for both the presentation and the final collection.
 
-Prima di inserire nuove distinte di anticipo, occorre preliminarmente gestire la Tabella TIPI ANTICIPO.
+Before entering new advance lists, it is necessary to first manage the ADVANCE TYPES Table (Tabella TIPI ANTICIPO).
 
-In questa tabella sono definite le possibili tipologie di distinta ed i relativi parametri.
+In this table, the possible types of lists and their related parameters are defined.
 
 ![](/img/it-it/treasury/advance/advances-collections/image01.png)
 
-**Codice / Descrizione**: Liberamente assegnabili dall'utente per qualificare la tipologia.
+**Code/Description**: Freely assignable by the user to qualify the type.
 
-**Tipo calcolo** (codice / descrizione): le opzioni possibili sono Imponibile / Tot: Documento. Indica se la percentuale anticipata dalla banca debba essere calcolata con riferimento al total efattura oppure al solo imponibile.
+**Calculation type** (code / description): possible options are Taxable / Total: Document. Indicates whether the percentage advanced by the bank should be calculated with reference to the total invoice or only to the taxable amount.
 
-**Percentuale fatture anticipata**: inserire qui il valore della percentuale della fattura che sarà anticipata dalla banca.
+**Advance invoice percent**: enter here the value of the percentage of the invoice that will be advanced by the bank.
 
 ![](/img/it-it/treasury/advance/advances-collections/image02.png)
 
-**Tipo Acquisizione**: le possibili opazioni sono Scadenze / Fatture. Questa opzione controlla soltanto il modo in cui sono visualizzati i dati nella maschera di ricerca per la creazione della nuova distinta, ovvero se sarà selezioanbile l'intera fattura oppure le singole scadenze della fattura. In ogni caso dal punto di vista della base dati sono comunque gestite le scadenze (tutte) anche nel caso della modalità Fatture.
+**Acquisition Type**: possible options are Due Dates / Invoices. This option only controls how the data is displayed in the search mask for creating the new list, that is, whether the entire invoice or the individual due dates of the invoice will be selectable. In any case, from a data perspective, all due dates are managed even in the Invoices mode.
 
-**Numerazione**: è necessario impostare una numerazione dalla relativa tabella dei numeratori per questo tipo di documento.
+**Numeration**: it is necessary to set a numbering from the relevant numbering table for this type of document.
 
-**Banca C/C**: (conto / sottoconto descrizione): inserire qui il sottoconto che sarà utilizzato nelle registrazioni contabili relativo al conto corrente bancario.
+**Bank c/c**: (account / sub-account description): enter here the sub-account that will be used in the accounting records related to the bank account.
 
-**Conto bancario anticipi**: inserire il conto d'appoggio utilizzato per contabilizzare l'antipo bancario.
+**Advance bank account**: enter the support account used to account for the bank advance.
 
 ![](/img/it-it/treasury/advance/advances-collections/image03.png)
 
-**Conto interessi passivi**: inserire il conto da utilizzare per la contabilizzazione interessi
+**Passive interest account**: enter the account to be used for accounting interests.
 
-**Conto commissioni**: inserire il conto da utilizzare per la contabilizzazione commissioni bancarie.
-
-
-
-
-
-
+**Commission account (Conto commissioni)**: enter the account to be used for accounting bank fees.

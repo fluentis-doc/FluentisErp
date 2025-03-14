@@ -1,50 +1,57 @@
 ---
 title: Purchase Orders Parameters
-sidebar_position: 5
+sidebar_position: 2
 ---
 
-The purchase orders parameters allow the basic setting in order to manage correctly and according to specific requests of every single company.
+The parameters of supplier orders allow for basic settings to manage supplier orders correctly and according to the specific requests of each individual company.    
 
-The ribbon bar represents the Form menu, that is the area in which it is possible to perform actions. The possible features list is the following: 
+The window consists of buttons and three different tabs: *General*, *Load*, and *Analytic*. 
 
+### General
 
+**Management of double measurement unit**: only if activated, the system can manage the alternative unit of measure in the supplier order.
 
-| Function | Meaning |
-| --- | --- |
-| Restore Parameters | It enables the user to restore parameters to the initial values. |
+**Automatic proposal for alternative UM:** if activated, it ensures that the quantity related to the alternative unit of measure is proposed, provided that a default one has been set on the item registry. This flag can only be activated if the previous flag has been activated.
 
-#1.1 General Tab
+**Cost zero if price lists are missing**: if active, in the absence of a valid price list, it populates the price with a value of zero. If this item is not checked, the field will be filled with the last cost of the item, if present.
 
-| Function | Meaning |
-| --- | --- |
-| Double Unit of Measure Management | When it is set, it is possible to enable the Alternative UM combo box and the alternative Quantity Column on Items grid of order. |
-| Automatic Proposal of Alternative Unit of Measure | This check can be enabled only if “Double Unit of Measure Management” is active. When an item, that has the default alternative UM on its alternative UM tab register, is inserted, the UM is automatically proposed as item Alternative UM and it is possible to calculate even the alternative quantity by using the related conversion factor. |
-| Recover Only for Current Date | When it is set, the recovery of numbers is performed automatically during the day. If during the day it has been possible to create orders number 7,8,11,12 and flag is set, the next number proposed will be 10, that corresponds to the first free number lower than the one inserted by the user.  |
-| Auto Insert Variant in Variants Attributes | When it is set, on items tab of orders management the variant code and description become 2 fields that can be edited and as regards data inserted into the 2 fields, it is necessary to save on variants register. In this way by inserting the order lines there is the possibility to create also items variants.  |
-| Not Allow to Execute a Greater Quantity | If it is set, when a Goods Receipt is created by an order, the user cannot insert an higher quantity compared to the one that is in order. |
-| Control the Sequence of Date and Number | If it is set, it will possible to have progressiveness between document number and date. In this way, if on 11/21/2011 there are 3 orders with number 7, 8, 10 and on 11/22/2011 there is the order number 11 and the user wants to insert an order on 11/22/2011, the only one possible number on that date will be 12 in order to maintain the progressiveness between number and date. |
-| Cost Zero if Price Lists Are Missing | When it is set and it does not exist price lists for items inserted into Order, the proposed price will be 0, on the contrary, if it is not set, the last cost of items register will be proposed. |
-| View Dimensions  | When it is active on item tab of purchase delivery note management there is the possibility to view the following 3 columns: “Height”,”Width”,”Depth”  (MGAD_Hight, MGAS_Width, MGAS_Depth from MG_DataReg – Weights/Dimensions Tab of Items register). |
-| Block Document Insertion in Public Holidays  | When it is active, it is not possible to insert documents with the holiday date of calendar of company holidays. |
-| Execute Only Authorized Orders | If it is active, during the reception of goods the orders are executed and it is possible to  view only the authorized orders. |
-| Propose Brand with Priority Price List/Sales Order | If it is active, during the insertion of orders items, it is possible to save item mark on order list. Through this check set, the purchase orders creation from sales orders copies the mark of sales order to purchase order. |
-| Allow VAT Modification | If it is active, during the automatic Orders Creation from Purchase Requests, the VAT code can be proposed on orders. |
-| Mandatory User Code | If it is active, during the Orders Management, it is obligatory to insert the operator/employee.  |
-| Search Item Price in All Default Price Lists | 1.	If it is active, this parameter is used for searching price on vendor price lists, the search occurs on default price lists in vendor register even if the price lists are not valid (the valid price lists are those that have validity start date null or >= to the current date). |
+**Block the document insertion in public holidays:** if active, the system does not allow the entry of the order on holidays (Saturday, Sunday, and holidays). If not active, the system does not perform any checks and allows the order to be entered.
 
-#1.2 Import Tab from BarcodeIn this tab the user has to specify parameters to import data contained on OF_ImpBCAll table. The import form can be opened from toolbar of goods receipt management in items tab.
+**Propose brand with priority Price list/Sales order:** no longer used.
 
-#1.3 Load Tab
+**Allow edit VAT:** if active, in the case of [Automatic Order Creation from Purchase Requests](/docs/purchase/purchase-orders/procedures/create-purchase-orders-from-purchase-requests), the VAT code is proposed from the supplier registry.
 
-| Function | Meaning |
-| --- | --- |
-| Create Record with Document Date | When it is set, the stock record is performed with the same date as Goods Receipt one, and it will not necessary to specify the record date within load form. |
-| Invoice Parameters Priority | When this parameter is set, the load warehouse and template are read by goods receipt lines and if they do not exist, they are read by load form; otherwise if it is not set, it is possible to use warehouse and template inserted into this parameters form. |
+**Mandatory user code:** if active, it is necessary to specify the operator code in the header, under the *Country* entry, otherwise it will not be possible to save the order. When the flag is not active, this data is optional.
 
-#1.4 Tab AnalyticThese parameters indicate the search priority of cost or profit centres in order to be attributed to purchase order items. When Recalculate flag is set, cost or profit centres are inserted/updated on items through the chosen priority.
+**Search item price in all the defaults price list**: if active, the price of the item entered in the supplier order line will be searched in all predefined price lists of the supplier registry, in addition to the default price list. If not active, the price of the item will be searched only in the default price list present in the order header, but not in other price lists for the same supplier with different validity dates.
 
+**Use vendor item**: if active, the item grid of the supplier order also proposes the field for entering and searching the supplier item code. If not active, this field will not be visible.
 
+**Check items in exhaustion**: if activated, the system checks the availability of the items in the order line and notifies if the item is about to run out, meaning the flag *In exhaustion* has been activated in the [item registry](/docs/erp-home/registers/items/create-new-items/item-registry/generality).
 
+**Packings accounting**: allows the accounting of rows with packaging items, which are usually managed for verifying the stock of [Package to be returned)](/docs/configurations/tables/logistics/package-to-be-returned).
 
+### Load
 
+In this tab, the parameters used for [Goods Receipt Load](/docs/purchase/goods-reception/procedures/good-receipt-load) are defined.
 
+**Create recording with document date**: if active, the warehouse registration is made with the same date as the order, and it will not be necessary to specify the registration date in the load form. If not active, it will be necessary to specify the date in the load form.
+
+**Priority warehouse and load template**: if active, it ensures that the warehouse load is performed using the **Warehouse** and **Template** defined in this tab. If the flag is not set, it uses the warehouse and reason defined in the goods receipt lines, if present; otherwise, it considers the parameters set in the goods receipt load procedure.
+
+### Analytical
+
+In this tab, the priority for retrieving the cost center (CdC) or profit center (CdP) in the document line is specified.
+
+It is possible to modify the priorities using the following buttons in the ribbon bar:
+
+> **Move Up**       
+> **Move Down**.
+
+*Default values (Valori di default)*: the CDC or CDP is retrieved from the invoiced type if present. For further details, refer to the table [Purchase turnover type](/docs/configurations/tables/purchase/purchase-invoices-type). If it is not present in the invoiced type, the system will look for it in *Supplier Registry (Anagrafica fornitore)*. If not present, it will be searched in *Item registry* and subsequently at the *Warehouse* level.
+
+**Recompute**: if active, this flag recalculates the cost/profit centers according to the chosen priority.
+
+**Mandatory cost/revenue center**: if active, this flag makes the entry of cost/profit centers mandatory.
+
+**Evaluate priority by dimension**: if active, this flag allows evaluating every priority entered at the top to see if there are additional dimensions not yet valued. For example, suppose we have in the Item Registry the cost center of the *Business unit* dimension and in the purchase invoiced type the *Directional* dimension. If the flag is not active, the system evaluates only the CdC present in the Item Registry; if the flag is active, after loading the CdC present in the Item Registry, the system also evaluates the dimension present in the purchase invoiced type (in our example, the *Directional* dimension) and if it is different from those already managed (*Business Unit*), it loads the center and continues with the verification of other priorities.

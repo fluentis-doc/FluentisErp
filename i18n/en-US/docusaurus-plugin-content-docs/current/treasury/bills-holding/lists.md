@@ -1,50 +1,43 @@
 ---
-title: Distinte
+title: Lists (Distinte)
 sidebar_position: 3
 ---
 
-La form della ricerca distinte 
-- si trova in Tesoreria > Portafoglio Effetti > Effetti > Distinte
+The form for searching lists 
+- can be found in Treasury > Portfolio Effects > Effects > Lists
 
-- permette all'utente di ricercare le distinte di presentazione emesse precedentemente con lo scopo di visualizzarle, modificarle ed eventualmente cancellarle.
-
-
-## Pulsanti della Ribbon Bar
-
-> - **Ricerca distinte:** Pulsante per ricercare le distinte secondo i filtri di ricerca impostati nella testata della form.
-> - **Nuovo distinte:** Richiama la form per inserire una nuova distinta.
-> - **Modifica distinte:** Permette di modificare una distinta precedentemente inserita.
-> - **Visualizzazione distinte:** Visualizza una distinta precedentemente inserita.
-> - **Cancella distinte:** Cancella una distinta precedentemente inserita.
-
-> Esecuzione della **stampa** (*Anteprima* oppure *Stampa*) *Distinta di presentazione*: lancia, relativamente alle distinte selezionate con il mouse, (tenendo premuto Ctrl si possono selezionare più distinte contemporaneamente) l'omonima stampa presente nel [**menu stampe**](/docs/treasury/bills-holding/reports/print-presentation-lists) del modulo
-
-## Filtri nella testata della form
-
-- **Tipo:** filtra per tipo di distinta, dato a sua volta definito nella tabella [***Tipi presentazione distinte effetti***](/docs/configurations/tables/treasury/bills-portfolio-module-tables/bills-list-presentation-types)
-
-- **Banca:** filtra per conto **Banca Conto Corrente** impostato sulla testata distinta
-
-- **DA - A Numero distinta:** filtra per numero distinta, dato impostato al numeratore automatico in fase di creazione della distinta
-
-- **DA / A data presentazione:** filtra per data di presentazione, campo ella testata distinta proposto generalmente pari ad "*oggi*" ma può essere variato dall'utente
-
-- **Divise:** filtra per divisa, dato di testata che si riferisce alla divisa degli effetti contenuti in distinta, ad esempio per estrarre solo le divise denominate in dollari.
-
-- **Stampato:** se attivato, questo flag estrae solo distinte stampate (o comunque con flag *stampato* "true")
-
-- **Contabilizzata:** se attivato, questo flag estrae solo distinte contabilizzate attraverso [l'apposita procedura](/docs/treasury/bills-holding/accounting/lists-accounting) (o comunque con flag *contabilizzata* "true")
+- allows the user to search for previously issued presentation lists in order to view, modify, and possibly delete them.
 
 
-## Griglia dei risultati
+## Ribbon Bar Buttons
 
-In questa from presenta gli stessi campi presenti nei filtri già dettagliati qui sopra.
+> - **Search Lists (Ricerca distinte):** Button to search for lists according to the search filters set in the header of the form.
+> - **New List (Nuovo distinte):** Opens the form to enter a new list.
+> - **Modify List (Modifica distinte):** Allows the modification of a previously entered list.
+> - **View List (Visualizzazione distinte):** Displays a previously entered list.
+> - **Delete List (Cancella distinte):** Deletes a previously entered list.
 
-Presenta inoltre il **Totale** della distinta (somma gli importi degli effetti in distinta)
+> Executing the **print** (*Preview* or *Print*) *Presentation list*: launches, for the selected lists with the mouse (holding Ctrl allows multiple lists to be selected simultaneously), the corresponding print available in the [**print menu**](/docs/treasury/bills-holding/reports/print-presentation-lists) of the module.
+
+## Filters in the Header of the Form
+
+- **Type (Tipo):** filters by type of list, this is defined in the table [***Types of Presentation Lists Effects***](/docs/configurations/tables/treasury/bills-portfolio-module-tables/bills-list-presentation-types)
+
+- **Bank (Banca):** filters by the **Current account bank** set on the list header.
+
+- **FROM - TO List Number (DA - A Numero distinta):** filters by list number, given by the automatic numbering during the creation of the list.
+
+- **FROM / TO Presentation Date (DA / A data presentazione):** filters by presentation date, a field in the list header generally set to "*today*" but can be changed by the user.
+
+- **Currencies (Divise):** filters by currency, a header data that refers to the currency of the effects contained in the list, for example to extract only items denominated in dollars.
+
+- **Printed (Stampato):** if activated, this flag extracts only printed lists (or those with the *printed* flag as "true").
+
+- **Accounted (Contabilizzata):** if activated, this flag extracts only lists that have been accounted through [the appropriate procedure](/docs/treasury/bills-holding/accounting/lists-accounting) (or those with the *accounted* flag as "true").
 
 
+## Results Grid
 
+This form presents the same fields present in the filters detailed above.
 
-
-
-
+It also displays the **Total** of the list (sums the amounts of the effects in the list).

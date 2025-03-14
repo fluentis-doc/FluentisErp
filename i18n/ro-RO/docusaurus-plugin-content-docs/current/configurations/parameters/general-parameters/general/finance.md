@@ -22,3 +22,8 @@ Query-ul de executat este:
         join fluentis.SH_LocalizationParameters on SHLP_Id = SHCP_Parameter_SHLP_Id
         	
         where SHLP_Code like 'IN-IntrastatRoundByOperation'
+        
+**Blochează contabilizarea atunci când data înregistrării este anterioară datei de recepție** (cod FS-FI-Posting-BlockPostingBeforeReceiveDate): activând acest parametru, înregistrarea facturilor de achiziție din fișierele Sdi nu va fi permisă cu o dată anterioară datei de recepție Sdi.
+
+**Permite crearea de solicitări din angajamente închise** (cod FS-FI-DunningLetters-AllowClosedMaturities): prin activarea acestui parametru, generarea solicitărilor poate crea și scrisori de confirmare a plății.
+

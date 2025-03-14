@@ -3,24 +3,15 @@ title: Intra1 bis
 sidebar_position: 3
 ---
 
-The bis section of intrastat declarations contains detail data of period related to the assignment of goods. The section is compiled by the procedure automatically, but it is possible to edit and to integrate it manually.
+The 'bis' section of the Intrastat declarations contains detailed data for the period related to the transfer of goods.
 
-At the base of the section there is the grouping button: the intrastat declaration has to be grouped by uniformity of line data.
+This section is filled in automatically by the procedure, but manual modification and supplementation are allowed.
 
-RIBBON BAR: it represents the Form menu, that is the area in which it is possible to perform actions linked to the procedure in use. The list of features is the following:
+In the ribbon bar, there is a button to group the lines based on the counterparty's data, with the same combined nomenclature and nature of the transaction, as well as code, transportation mode, destination country, and origin province (the last two are generally homogeneous in relation to the same counterparty).
 
-
-
-| Function | Meaning |
+| Function | Extended Description |
 | --- | --- |
-| Save | Button to save the declaration. |
-|  [Automatic Creation](/docs/finance-area/declarations/intrastat/automatic-creation-intrastat1/automatic-creation)  | Button to refer to the guided procedure of data retrieve from sales area. |
-|  [Create from Records](/docs/finance-area/declarations/intrastat/create-from-records-intrastat1/create-from-records-intrastat1-intro)  | Button to refer to the guided procedure of data retrieve from ledger records. |
-| Create New Detail  | Button to create a new detail line manually. |
+| Save | Button through which to save the declaration. |
+| [Automatic creation](/docs/finance-area/declarations/intrastat/automatic-creation-intrastat1/automatic-creation) | Button that calls the wizard procedure to retrieve data from the sales area. |
+| [Creation from records](/docs/finance-area/declarations/intrastat/create-from-records-intrastat1/create-from-records-intrastat1-intro) | Button that calls the wizard procedure to retrieve data from the ledger records. |
 | Delete | Button to delete the selected detail line. |
-
-
-
-
-
-

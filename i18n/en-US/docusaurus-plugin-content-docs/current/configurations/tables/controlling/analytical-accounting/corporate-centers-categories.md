@@ -1,40 +1,31 @@
 ---
-title: Corporate Center Categories 
+title: Corporate centers category
 sidebar_position: 3
 ---
 
-:::note Path 
-**Tables > Controlling > Analytic Accounting > Corporate Center Categories**
+The form can be found at the path: **Tables > Controlling > Analytical Accounting > Corporate centers category (Tabelle > Controlling > Contabilità analitica > Categorie centri aziendali)**
 
-Note:
-For anything not detailed in this document about the common functioning of forms, please refer to the following link [Custom Features, Buttons, and Common Fields](/docs/guide/common).
-
+:::tip Note (Nota)
+The table is only of interest in companies with the *Controlling* flag active.
 :::
 
----
+The second *mandatory* characteristic of cost centers is the ***Category of Business Centers (Categoria dei centri aziendali)***: this table represents a "label" associated with business centers to manage them in homogeneous logical groups.
 
-:::tip Note 
-The table is of interest only in companies with the *Controlling* flag active.
-:::
+![Image](/img/it-it/configurations/tables/controlling/analytical-accounting/corporate-centers-categories.png)
 
+The choice of categories and the "style" in which this table can be populated **can depend on many factors** and various **theories** on management control.
+Therefore, we can cite <u>only a few examples</u> for better understanding.
 
-The second *mandatory* feature of cost centers is the ***Category of corporate centers***: this table represents a "label" associated with corporate centers to manage them in homogeneous logical groups.
+***1) PRODUCTIVE OR DIRECT CENTERS (CENTRI PRODUTTIVI O DIRETTI):*** these are centers that directly participate in the processing of the product and/or service, so they are the actual transformation centers. It is essential to correctly identify these centers, as if we make a mistake in aggregating the costs of these production centers, we risk obtaining parameterized rates of cost indices for the related centers through which we then "cost" our products or jobs and determine their related marginality, which can mislead the profitability analysis. For example, we cannot aggregate machines or plants with very different costs, as we will create weighted averages. Similarly, we cannot put together machines and plants operated by humans with machines and plants partially operated by labor, as this would also generate averages that would then lead us to obtain altered marginalities;
 
-![Picture](/img/it-it/configurations/tables/controlling/analytical-accounting/corporate-centers-categories.png)
+***2) INDIRECT AUXILIARY CENTERS (CENTRI INDIRETTI AUSILIARI):*** these are necessary for the operation of the main centers and therefore collect all those costs that cannot be objectively attributed to the production centers but are essential for their functioning. They will have the link to **Cost Driver*** for allocation to production/direct centers, identifying an appropriate management criterion;
 
-The choice of categories and the "style" in which this table can be populated **can depend on many factors** and various **theories** regarding management control.
-Therefore, we can mention <u>only a few examples</u> for better understanding.
+***3) COMMON INDIRECT CENTERS (CENTRI INDIRETTI COMUNI):*** these are the structural centers also called functional centers (e.g., commercial, technical, quality, etc.);
 
-***1) PRODUCTION OR DIRECT CENTERS:*** these are centers that are directly involved in the processing of the product and/or service, thus they are the actual transformation centers. A correct identification of these centers is fundamental because if we make a mistake in aggregating the costs of these productive centers, we risk obtaining parameterized rates of the cost indices of the respective centers through which we then “cost” our products or job orders and determine their relative margins, which can mislead profitability analysis. For example, we cannot aggregate machines or plants with very different costs, as this would create weighted averages. Similarly, we cannot place in the same center machines and plants operated by humans along with machines and plants partially operated by labor, as this would also generate averages that would lead us to obtain distorted margins;
+***4) PROFIT OR INCOME CENTERS (CENTRI DI PROFITTO O DI REDDITO, O DI RISULTATO ECONOMICO):*** these are the centers through which we can relate REVENUES and COSTS related to a type of income, which could be a family of products or a sales channel;
 
-***2) INDIRECT AUXILIARY CENTERS:*** these are necessary for the operation of the main centers, thus they collect all those costs that cannot be objectively attributed to productive centers but are essential for their operation. They will have a connection to ***Cost drivers*** for chargeback to the productive/direct centers, identifying an appropriate management criterion;
+***5) VIRTUAL/COMFORT CENTERS (CENTRI VIRTUALI/COMODO):*** these are used to manage the entire model; they are support centers for cost driver allocation rather than centers where accounting data that are not used in the model can be offloaded.
 
-***3) INDIRECT COMMON CENTERS:*** these are structural centers also known as functional centers (e.g. commercial, technical, quality, etc.);
-
-***4) PROFIT OR INCOME CENTERS, OR ECONOMIC RESULT CENTERS:*** these are the centers through which we can relate REVENUE and COSTS related to a type of income, which could be a product family or a sales channel;
-
-***5) VIRTUAL/OFFSET CENTERS:*** we use them to manage the entire model, they are support centers for chargeback drivers rather than centers for unloading accounting data that are not used in the model.
-
-:::tip Note
-The categorization of centers, in addition to having theoretical significance on the structure of the analysis model, also has an operational aspect: when defining the links of the centers at the chart of accounts level, it is possible to associate various centers that can be valued with each detail account, or more quickly indicate a category of centers, so as to make visible to the user in the dropdown selection menu only those belonging to that category.
+:::tip Note (Nota)
+The categorization of centers, besides having theoretical significance on the structure of the analysis model, also has an operational aspect: when defining the links of the centers at the account plan level, it is possible to associate various centers to each sub-account that can be valued or more quickly indicate a category of centers, so that only those belonging to that category are visible to the user in the dropdown selection menu.
 :::

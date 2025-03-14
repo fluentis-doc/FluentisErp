@@ -1,26 +1,20 @@
 ---
-title: Contabilizzazione Anticipi Incassi
+title: Advances collections accounting
 sidebar_position: 2
 ---
 
-Da questa posizione vengono gestiti contabilmente gli incassi delle fatture o scadenze anticipate dalla banca.
+From this position, the collections of invoices or due dates anticipated by the bank are managed accounting-wise.
 
-Operando da qui verranno generate automaticamente le scritture contabili (due) che stornano il debito aperto per acconto e quindi vanno a rilevare l'incasso del credito al netto di commissioni e interessi.
+Operating from here, two accounting entries will be automatically generated that reverse the open debt for the down payment and thus record the collection of the receivable net of commissions and interest.
 
-Nella tab Parametri è necessario inserire i conti da utilizzare per l'incasso, per gl i eventuali abbuoni e gli importi di eventuali commissioni ed interessi, oltre alla causale contabile da utilizzare per l'incasso.
+In the Parameters tab, it is necessary to enter the accounts to be used for the collection, for any discounts, and the amounts of any commissions and interest, in addition to the accounting reason to be used for the collection.
 
-Anche in questo caso lo schema della scrittura è fisso indipendentemente dal template della causale selezionata.
+Again, the structure of the entry is fixed regardless of the template of the selected reason.
 
 ![](/img/it-it/treasury/advance/accounting/advances-collections-accounting/image01.png)
 
-Nel Tab scadenze è possibile ricercare e filtrare le scadenze da incassare selezionando con l'apposito flag se cercare scadenze già anticipate in distinta o meno, è inoltre possibile escludere o includere scadenze attive riferite a fornitori.
+In the Due Dates tab, it is possible to search and filter the due dates to be collected by selecting with the appropriate flag whether to look for already anticipated due dates in the list or not; it is also possible to exclude or include active due dates related to suppliers.
 
 ![](/img/it-it/treasury/advance/accounting/advances-collections-accounting/image02.png)
 
-La contabilizzazione può essere annullata e ripristinata, come di consueto, dal tab **Rollback**.
-
-
-
-
-
-
+The accounting can be canceled and restored, as usual, from the **Currency adjustment rollback** tab.

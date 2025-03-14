@@ -1,12 +1,6 @@
 ---
-title: Create from Records
+title: Create from records
 sidebar_position: 1
 ---
 
-The 'Create from Records' button opens a guided procedure dedicated to the data retrieve of services from the financial ledger records not generated from the purchase area.
-
-
-
-
-
-
+See the corresponding page for **[Intra 1](/docs/finance-area/declarations/intrastat/create-from-records-intrastat1/create-from-records-intrastat1-intro)**.

@@ -1,34 +1,18 @@
 ---
-title: Nature of Intrastat Transaction
+title: Nature of Intrastat Transaction (Natura transazione Intrastat)
 sidebar_position: 14
 ---
 
-The preloaded table defines the nature of transactions about Intrastat declarations.
+The preloaded table defines the nature of transactions for Intrastat declarations (as required by the official instructions).
 
-There is a fictitious typology ‘S – Services', that can identify what type of documents (if they are inserted as document of purchases/sales area) it is necessary to record in quarter/quinquies sections about declarations from year 2010.
+There is a *dummy* type **‘S – Services (Servizi)'** intended to identify which documents (if entered as documents in the purchases/sales area) should be reported in the quater/quinquies sections related to service performances, as well as **‘Z – Call of stock (Call of stock)'** to report from sales the operations of the corresponding intra sales section.
 
+#### Specific Fields (Campi specifici)
 
+**Code**: transaction nature code.
 
-| Function | Meaning |
-| --- | --- |
-| Code  | Code of transaction nature  |
-| Description  | Description of transaction nature  |
-| Triangulation | The flag called ‘triangular operations' enables the user to upload the list of the last column |
+**Description**: transaction nature description.
 
- RIBBON BAR: the ribbon bar represents the Form menu, that is the area in which it is possible to operate on previous recordings or generate new ones. The possible features list is the following:
+**Triangulation**: the 'triangular operations' flag allows loading the list of the last column of the table.
 
-
-
-| Function | Meaning |
-| --- | --- |
-| Search | Button to look for a transaction nature code through the fields: code and description |
-| New | Button to insert a transaction nature code |
-| Delete   | Button to delete a transaction nature code, where the user is located |
-| Preview  | Button to perform the preview |
-| Print | Button to print |
-
-
-
-
-
-
+In the grid below, the detailed natures of the aforementioned transactions are displayed.

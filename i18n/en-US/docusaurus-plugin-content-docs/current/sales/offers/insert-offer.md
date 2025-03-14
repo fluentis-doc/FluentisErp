@@ -1,196 +1,194 @@
 ---
-title: Nuova offerta cliente
-sidebar_position: 1
+title: New Customer Offer (Nuova offerta cliente)
+sidebar_position: 3
 ---
 
-La form **Nuova Offerta** si apre tramite il percorso **Vendite > Nuova Offerta** oppure tramite il pulsante **Nuovo** che si trova nella form di [Ricerca Offerte](/docs/sales/offers/search-offers).
+The **New Offer** form opens through the path **Sales > New Offer** or via the **New** button located in the [Offer Search](/docs/sales/offers/search-offers) form.
 
-## *Come creare un'offerta cliente*
+## *How to create a customer offer*
 
 <details>
  
-<summary>Clicca per i passaggi fondamentali-DA CONTROLLARE</summary>
+<summary>Click for the essential steps - TO CHECK</summary>
  
-1. **Inserisci i dati obbligatori**: *Tipo Ordine* e *Fornitore*. *Anno*, *Numero* e *Data Inserimento* saranno proposti in automatico.  
+1. **Enter mandatory data**: *Order Type* and *Customer*. *Year*, *Number*, and *Entry Date* will be proposed automatically.  
  
-2. **Inserisci o modifica i dati facoltativi** della testata: come date di consegna, eventuali *sconti*, la *destinazione*, ecc.  
+2. **Enter or modify optional header data**: such as delivery dates, any *discounts*, the *destination*, etc.  
  
-3. **Inserisci gli Articoli**: mediante doppio click nel campo *Codice articolo* si apre l’help articoli che permette di cercare e selezionare un articolo esistente. Tutti gli altri dati della riga, come *unità di misura*, *quantità*, *prezzo*, saranno proposti in automatico, ma possono essere modificati.
-In alternativa è possibile selezionare come *Tipo riga* un *Articolo non codificato* e inserire manualmente i dati successivi.
+3. **Enter Articles**: by double-clicking in the *Item Code* field, the item help appears, allowing you to search and select an existing item. All other line data, such as *unit of measure*, *quantity*, *price*, will be proposed automatically, but can be modified. Alternatively, you can select *Uncoded Article* as *Line Type* and manually enter the subsequent data.
  
-4. **Inserisci eventuali sconti o altre informazioni aggiuntive** nei tab *Sconti/listini* e *Dati articolo*
+4. **Enter any discounts or additional information** in the *Discounts/Price Lists* and *Item Data* tabs.
  
-5. **Controlla la sezione dei Riepiloghi** ed inserisci eventuali spese o sconti finali.  
+5. **Check the Summary section** and enter any additional expenses or final discounts.  
  
-6. Una volta controllato e confermato l’ordine, **inserisci una *Data conferma* e attiva il flag *Stampato* in testata** in modo da rendere l’ordine disponibile per le procedure di evasione.
+6. Once the order has been checked and confirmed, **enter a *Confirmation Date* and activate the *Printed* flag in the header** to make the order available for fulfillment procedures.
  
 </details>
 
-## **1. Dati obbligatori**     
+## **1. Mandatory Data**    
 
-- **Tipo offerta di vendita**: contiene la tipologia di offerta, tra quelle inserite nei [Tipi Offerte](/docs/configurations/tables/sales/sales-offer-type).
+- **Sales offer type**: contains the type of offer, among those entered in the [Offer Types](/docs/configurations/tables/sales/sales-offer-type).
 
-- **Numero**: ad ogni documento viene assegnato un numero secondo la numerazione specificata dall'utente nella tabella [Numerazione Offerte](/docs/configurations/tables/fluentis-numerations) e al tipo di documento che contiene la numerazione.     
+- **Number**: each document is assigned a number according to the numbering specified by the user in the [Offer Numbering](/docs/configurations/tables/fluentis-numerations) table and based on the document type that contains the numbering.     
 
-- **Cliente**: l'inserimento del cliente è possibile usando l'[help di campo](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) oppure inserendo [manualmente](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) i caratteri.
+- **Client**: entering the customer is possible using the [field help](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) or by [manually](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) entering the characters.
 
-- **Contatto CRM**: se l'Offerta è per una lead non ancora cliente, sarà possibile inserire un Contatto CRM invece di un cliente.    
+- **Crm Contact**: if the Offer is for a lead that is not yet a customer, a CRM Contact can be entered instead of a customer.    
 
-- **Anno**: viene proposto l'anno corrente.  
+- **Year**: the current year is proposed.  
 
-- **Data**: viene proposta la data odierna.     
+- **Date**: today's date is proposed.     
 
-- **Versione**: in questo campo viene riportato il numero di Versione dell'offerta; se nuova, la Versione proposta sarà la prima.    
+- **Version**: this field indicates the Version number of the offer; if new, the proposed Version will be the first.    
 
-#### Dati non obbligatori:
+#### Non-mandatory data:
 
-- **Opportunità contatto**: se il Tipo offerta creato ha una Tipo Opportunità associato nella tabella dei [Tipi Offerta](/docs/configurations/tables/sales/sales-offer-type), al salvataggio dell'Offerta verrà automaticamente creata una Opportunità per il cliente/contatto, che sarà riportata in questo campo e diventerà modificabile dall'utente. Se in questo campo viene inserita manualmente un'Opportunità preesistente, essa viene aggiornata.           
+- **Contact Opportunity**: if the created offer type has an associated Opportunity Type in the [Offer Types](/docs/configurations/tables/sales/sales-offer-type) table, an Opportunity for the customer/contact will be automatically created upon saving the Offer, which will be reported in this field and become editable by the user. If a pre-existing Opportunity is manually entered in this field, it is updated.           
 
-## **2. Testata**
+## **2. Header**
 
-Dopo aver inserito i dati nella sezione superiore, è possibile procedere con i dati di testata:      
+After entering data in the upper section, you can proceed with header data:      
 
-- **Divisa**: viene proposta la Divisa del cliente.
+- **Currency**: the Currency of the customer is proposed.
 
-- **Spedizione**: viene proposta la modalità di [Spedizione](/docs/configurations/tables/general-settings/shipments) dall'anagrafica cliente.      
+- **Delivery**: the mode of [Shipping](/docs/configurations/tables/general-settings/shipments) from the customer profile is proposed.      
 
-- **Listino di vendita**: viene proposto il listino di default presente in anagrafica cliente, con il relativo Tipo scaglione previsto per il cliente.     
+- **Sales price list**: the default price list present in the customer profile is proposed, along with the relevant Scale Type provided for the customer.     
 
-- **Annotazioni clienti**: in questa sezione è possibile inserire i Riferimenti del cliente, eventuali Note iniziali/finali; il campo *Annotazioni cliente* riporta le Note inserite nei [Dati anagrafici del cliente](/docs/erp-home/registers/contacts/create-new-contact/general).     
+- **Customer Annotations (Annotazioni clienti)**: in this section, you can enter Customer References, any Initial/Final Notes; the *Customer Annotations* field reports the Notes entered in the [Customer Profile Data](/docs/erp-home/registers/contacts/create-new-contact/general).     
 
-- **Data conferma offerta**: indica la data nella quale l'offerta è stata confermata e quindi potrà essere convertita in ordine.     
+- **Confirmation date estimation**: indicates the date on which the offer was confirmed and can therefore be converted into an order.     
 
-- **Data prevista consegna**: è la data nella quale è previsto che la merce verrà consegnata; questo dato viene riportato nell'ordine creato da offerta.     
+- **Estimated delivery date**: this is the date on which the goods are expected to be delivered; this data is reported in the order created from the offer.     
 
-- **Data chiusura**: indica la data in cui l'offerta è stata chiusa.
+- **Closing date**: indicates the date on which the offer was closed.
 
-- **Data annullamento**: la data nella quale l'Offerta verrà considerata nulla se non è diventata Ordine.
+- **Canceled date**: the date on which the Offer will be considered null if it has not become an Order.
 
-- **Validità Offerta**: data limite di validità dell'offerta; è un campo informativo.
+- **Offer validity**: deadline for the validity of the offer; this is an informational field.
 
-#### Pulsanti specifici    
+#### Specific buttons    
 
-> **Nuova versione**: genera una nuova versione dell'offerta, incrementando il campo *Versione*. Le versioni successive di un’Offerta ereditano i Documenti allegati.       
+> **New version**: generates a new version of the offer, incrementing the *Version* field. Subsequent versions of an Offer inherit the attached Documents.       
 
-> **Sostituisci data prevista consegna nelle righe**: sostituisce in tutte le righe articolo la Data prevista consegna inserita in testata.       
+> **Replace expected delivery date in lines (Sostituisci data prevista consegna nelle righe)**: replaces the Expected Delivery Date entered in the header in all article lines.       
 
-> **Conversione**:  permette di trasformare un'offerta di vendita in un ordine di vendita effettivo. Affinché il processo avvenga correttamente, è essenziale configurare il Tipo di ordine desiderato nella tabella dei [Tipi offerta](/docs/configurations/tables/sales/sales-offer-type). Inoltre, affinché l'offerta possa essere convertita con successo, è necessario che abbia una Data conferma in testata, altrimenti il sistema avviserà l'utente tramite un messaggio pop-up della necessità di confermare l'offerta prima di procedere. Una volta che tutti i dati richiesti sono stati inseriti, avviando la procedura uscirà un pop-up con i seguenti campi:     
-> - se almeno alcune righe dell'offerta sono già state convertite in ordine, verrà chiesto all'utente se vuole creare un nuovo ordine utilizzando tutte le righe offerta oppure solo le righe non ancora referenziate.             
-> - **Crea/Aggiorna progetto**: con questo flag indichiamo al sistema che oltre alla creazione dell'ordine deve procedere anche con la creazione o l'aggiornamento del progetto. Se il progetto deve essere creato, è necessario flaggare il comando *Crea Nuovo progetto vuoto*, *Crea Nuovo progetto da Offerta* oppure **Crea Nuovo progetto da Offerta e Template progetto**; in tutti i casi sarà necessario inserire il **[Tipo progetto](/docs/configurations/tables/project-management/project-type)** da creare nell'apposito campo, nell'ultimo caso verrà richiesto l'inserimento anche del  progetto **Template**. Se il progetto esiste già e deve essere aggiornato con i dati inseriti nell'offerta, invece, sarà necessario compilare il campo **Progetto**  con il progetto da aggiornare.     
-> - **Riporta Materiali/Risorse da righe Offerta come righe Ordine**: con questi flag vengono inserite nell'ordine delle righe articolo con le risorse e i materiali dell'offerta, se gerarchica.              
-Una volta confermato il pop-up, il sistema genererà quindi un nuovo Ordine cliente utilizzando i dati dell'offerta. Questo ordine può essere visualizzato e modificato nella sezione [Ricerca ordini clienti](/docs/sales/sales-orders/create-new-sales-orders/search-sales-orders). Inoltre, l'utente verrà informato tramite un messaggio pop-up riguardante il successo della conversione, il numero dell'offerta convertita e la versione, insieme a un messaggio contenente il numero dell'ordine cliente generato dalla conversione.        
-Se nell'Offerta vengono modificati i dati proposti dall'anagrafica, essi vengono riportati nell'Ordine generato dalla conversione: Annotazioni cliente, Spedizione, Pagamenti, Sconti, Agenti, Destinazioni, Vettori.      
+> **Conversion**: allows you to transform a sales offer into an actual sales order. For the process to occur correctly, it is essential to configure the desired Order Type in the [Offer Types](/docs/configurations/tables/sales/sales-offer-type) table. Additionally, for the offer to be successfully converted, it must have a Confirmation Date in the header; otherwise, the system will alert the user via a pop-up message indicating the need to confirm the offer before proceeding. Once all required data has been entered, a pop-up will appear with the following fields:     
+> - if some lines of the offer have already been converted into an order, the user will be asked if they want to create a new order using all offer lines or only those lines not yet referenced.             
+> - **Create/Update Project**: with this flag, we instruct the system that in addition to creating the order, it should also proceed with the creation or updating of the project. If the project needs to be created, it is necessary to tick the command *Create New Empty Project*, *Create New Project from Offer*, or **Create New Project from Offer and Project Template**; in all cases, it will be necessary to enter the **[Project Type](/docs/configurations/tables/project-management/project-type)** to be created in the appropriate field; in the latter case, the **Template Project** will also need to be entered. If the project already exists and needs to be updated with the data entered in the offer, the **Project** field must be filled with the project to be updated.     
+> - **Report Materials/Resources from Offer lines as Order lines (Riporta Materiali/Risorse da righe Offerta come righe Ordine)**: with these flags, items with the resources and materials from the offer are included in the order, if hierarchical.              
+Once the pop-up is confirmed, the system will then generate a new customer order using the data from the offer. This order can be viewed and modified in the [Customer Order Search](/docs/sales/sales-orders/create-new-sales-orders/search-sales-orders) section. Additionally, the user will be informed via a pop-up message regarding the success of the conversion, the number of the converted offer and its version, along with a message containing the number of the customer order generated from the conversion.        
+If the Offer data proposed by the profile are modified, they will be transferred to the Order generated from the conversion: Customer Annotations, Shipping, Payments, Discounts, Agents, Destinations, Carriers.      
 
-Le tab sottostanti vengono popolate con i campi presi dall'anagrafica cliente/contatto, modificabili:  
-- **Pagamenti**
-- **Sconti**
-- **Destinatari**
-- **Vettori**
-- **Agenti**
+The following tabs are populated with fields taken from the customer/contact profile, which can be modified:  
+- **Payments**
+- **Discounts**
+- **Recipients**
+- **Carriers**
+- **Agents**
 - **Extra Data**
-- **Informazioni email**
+- **Email Information**
 
-## **3. Articoli Offerta**
+## **3.a Offer Articles**
 
-Questa tab contiene gli articoli dell'Offerta.      
+Articles are entered in the main grid.    
 
-Nella griglia principale vengono inseriti gli articoli.    
-
-Sono poi presenti le seguenti tab:       
-- **Sconti**: questa tab riporta il Listino, se presente, da cui prendere il prezzo per l'articolo selezionato; riporta inoltre gli sconti, da listino o da anagrafica, e permette l'inserimento di nuovi sconti; infine, è presente il flag *Prezzo manuale*, che indica di mantenere i prezzi inseriti manualmente (questo flag viene riportato nella conversione dell'offerta in ordine).     
-- **Agenti**: in questa tab vengono riportati gli Agenti del cliente con le relative provvigioni.      
-- **Dati articolo**: sono presenti diversi dati riguardanti l'articolo, come eventuali Varianti, Magazzino, Unità di misura alternativa.    
+The following tabs are then present:       
+- **Discounts**: this tab reports the Price List, if present, from which to take the price for the selected article; it also reports discounts, from the price list or profile, and allows entering new discounts; finally, there is a *Manual price* flag, which indicates retaining prices entered manually (this flag is carried over when converting the offer into an order).     
+- **Agents**: this tab lists the customer’s Agents with their respective commissions.      
+- **Item data**: several data regarding the item are present, such as any Variants, Warehouse, Alternative unit of measure.    
 - **Extra Data**
-- **Documenti allegati**        
+- **Attached Documents**        
 
-#### Pulsanti specifici
+#### Specific buttons
 
-- **Crea nuovo prototipo**: questo bottone crea un [Prototipo](/docs/erp-home/registers/production/standardization/new-prototype) per la riga articolo selezionata; il riferimento al preventivo generato viene riportato nel tab Dati articolo, campo Preventivo. Sarà possibile modificare il prototipo generato dal relativo modulo.
-- **Associa prototipo**: con questo bottone è possibile associare l'offerta a un [Prototipo](/docs/erp-home/registers/production/standardization/new-prototype) già esistente; viene aperto un help nel quale poter scegliere tra i prototipi disponibili per quell'articolo.
-- **Apri prototipo**: questo bottone è abilitato se la riga articolo selezionata ha un Prototipo associato, e permette di aprirlo.     
-- **Import da progetto**: questa funzione apre l'help *Articolo progetto*, nel quale è possibile selezionare gli articoli provenienti da un progetto che vogliamo inserire nell'offerta di vendita. Il pop up si apre direttamente con il filtro sul cliente intestatario dell'offerta, per permettere di visualizzarne i relativi progetti.    
+- **Create new prototype**: this button creates a [Prototype](/docs/erp-home/registers/production/standardization/new-prototype) for the selected article line; the reference to the generated estimate is recorded in the Item Data tab, in the Estimate field. The generated prototype can be modified from the relevant module.
+- **Associate prototype**: with this button, it is possible to associate the offer with an existing [Prototype](/docs/erp-home/registers/production/standardization/new-prototype); help will open allowing you to choose from the prototypes available for that article.
+- **Open prototype**: this button is enabled if the selected article line has an associated Prototype, and allows you to open it.     
+- **Import from Projects**: this function opens the *Project Article* help, where it is possible to select items coming from a project to be included in the sales offer. The pop-up opens directly with a filter on the customer named in the offer, to allow visualizing their respective projects.    
 
-## **3. Articoli Offerta Gerarchica**
+## **3.b Hierarchical Offer Articles**
 
-Nel caso in cui l'Offerta sia di *tipo gerarchico*, la tab degli Articoli sarà diversa.      
+If the Offer is of *hierarchical type*, the Articles tab will be different.      
 
-Nella griglia principale vengono inseriti gli articoli servendosi dei pulsanti della barra degli strumenti, che permettono di creare una struttura ad albero. Le caratteristiche degli articoli devono essere specificate nella tab *Attività*.    
-Elenchiamo ora le tab particolari di un'offerta gerarchica.        
+Articles are entered in the main grid using the toolbar buttons, allowing you to create a tree structure. The characteristics of the articles must be specified in the *Activities* tab.    
 
-### 3.1 Attività 
+Let’s now list the special tabs of a hierarchical offer.        
 
-In questa tab è necessario inserire le caratteristiche degli articoli della griglia articoli. I campi presenti sono:     
-- **Numero riga/Livello**: contiene i numeri della riga e della WBS e viene impostato automaticamente, anche se è liberamente modificabile.          
-- **Tipo Nodo**: indica se la riga è un **Root Node** (nodo principale), un **Activity Node** (relativo alle attività) o un **Work Package Node** (nodo finale di progetto, l’unico che può contenere dei codici articolo codificati).       
-- **Tipo riga**: indica la tipologia di articolo tra Codificato, Non codificato, Spese o Note (quest’ultimo di default).            
-- **Codice Articolo**: questa sezione riporta Classe, Codice e Descrizione dell’articolo codificato eventualmente selezionato.             
-- **Codice Variante**: riporta un'eventuale [Variante](/docs/erp-home/registers/items/create-new-items/item-registry/variants) dell'articolo.       
-- **Descrizione articolo**: questa sezione riporta la Descrizione dell'articolo, se di tipo Nota o Non codificato.    
-- **Prototipo**: contiene l'eventuale [Prototipo](/docs/erp-home/registers/production/standardization/new-prototype) collegato.          
-- **Quantità/UM/Prezzo**: contiene quantità, unità di misura e prezzo dell’articolo selezionato.        
-- **Quantità alternativa**: contiene l'eventuale quantità alternativa, con accanto l'Unità di misura alternativa.     
-- **UM Prezzo**: se inserito, questo flag indica di moltiplicare il prezzo unitario per la quantità alternativa, per ottenere l'importo.   
-- **Listino**: è possibile associare un listino dal quale ottenere il prezzo dell'articolo, con accanto il **Tipo scaglione** da applicare per lo sconto.     
-- **Prezzo manuale**: questo flag indica che è stato inserito un prezzo a mano, e che quindi il prezzo di listino non deve essere considerato.          
-- **Aggiorna il prezzo dalle risorse**: questo flag, se settato, fa cambiare il campo *Prezzo* inserendo lo stesso importo della colonna *Ricavo* del tab *Risorse*; può essere usato per esempio quando l'importo di riga dipende interamente dal tempo impiegato dalle Risorse.        
-- **Aggiorna il prezzo dai materiali**: questo flag, se settato, fa cambiare il campo *Prezzo* inserendo lo stesso importo della colonna *Ricavo* del tab *Materiali*; può essere usato per esempio quando l'importo di riga dipende interamente dai Materiali impiegati.       
-- **Aggiorna il prezzo dal prototipo**: questo flag, se settato, fa cambiare il campo *Prezzo* inserendo lo stesso importo della colonna *Prezzo di vendita* del prototipo associato.     
-- **Escludi risorse in ordine cliente**: questo flag fa in modo che le Risorse della riga articolo selezionata non vengano riportate nell'Ordine cliente creato con la Conversione dell'offerta.     
-- **Escludi materiali in ordine cliente**: questo flag fa in modo che i Materiali della riga articolo selezionata non vengano riportate nell'Ordine cliente creato con la Conversione dell'offerta.     
-- **Sconti**: in questa griglia vengono riportati gli sconti previsti per il cliente ed è possibile aggiungerne altri.     
-- **Ricavi materiali/Ricavi risorse**: in questi campi vengono riportate le colonne *Ricavo** delle tab Risorse e Materiali; in questo modo è possibile capire direttamente da questa tab l'incidenza degli importi sul Prezzo totale.     
-- **IVA**: indica l’IVA da applicare.             
-- **Fatturato vendite**: indica il [Fatturato vendite](/docs/configurations/tables/sales/sales-turnover) dell’articolo.                
-- **Data prevista consegna/Periodo di prevista consegna**: in questi campi è possibile inserire data/periodo previsti per la consegna dell'articolo selezionato.    
+### 3.b.1 Activities 
 
-### 3.2 Risorse
+In this tab, it is necessary to enter the characteristics of the articles in the articles grid. The fields present are:     
+- **Line number/Level (Numero riga/Livello)**: contains the line and WBS numbers and is automatically set, although it can be freely modified.          
+- **Projects Node Type**: indicates whether the line is a **Root Node**, an **Activity Node**, or a **Work Package Node** (the final project node, the only one that can contain coded item numbers).       
+- **Line type**: indicates the type of article among Coded, Uncoded, Expenses, or Notes (the latter by default).            
+- **Item code**: this section reports Class, Code, and Description of the possibly selected coded article.             
+- **Variant code**: reports a possible [Variant](/docs/erp-home/registers/items/create-new-items/item-registry/variants) of the article.       
+- **Item description**: this section reports the Description of the article, if of type Note or Uncoded.    
+- **Prototype**: contains any linked [Prototype](/docs/erp-home/registers/production/standardization/new-prototype).          
+- **Quantity/UM/Price (Quantità/UM/Prezzo)**: contains quantity, unit of measure, and price of the selected item.        
+- **Alternative quantity**: contains any alternative quantity, with the Alternative Unit of Measure next to it.     
+- **Price MU**: if entered, this flag indicates to multiply the unit price by the alternative quantity to obtain the amount.   
+- **Price list**: it is possible to associate a price list from which to obtain the price of the article, along with the **Scale Type** to be applied for the discount.     
+- **Manual price**: this flag indicates that a price has been manually entered, and therefore, the list price should not be considered.          
+- **Update price from resources**: this flag, if set, changes the *Price* field by entering the same amount as the *Revenue* column in the *Resources* tab; it can be used, for example, when the line amount depends entirely on the time spent by Resources.        
+- **Update price from materials**: this flag, if set, changes the *Price* field by entering the same amount as the *Revenue* column in the *Materials* tab; it can be used, for example, when the line amount depends entirely on the Materials used.       
+- **Update price from item prototype**: this flag, if set, changes the *Price* field by entering the same amount as the *Sales Price* column of the associated prototype.     
+- **Exclude Resources in Sales Order**: this flag ensures that the Resources of the selected article line are not included in the customer order created from the conversion of the offer.     
+- **Exclude Materials in Sales Order**: this flag ensures that the Materials of the selected article line are not included in the customer order created from the conversion of the offer.     
+- **Discounts**: this grid displays the discounts provided for the customer and allows adding others.     
+- **Material revenues/Resources revenues**: these fields display the *Revenue* columns from the Resources and Materials tabs; this way, it is possible to directly see the impact of amounts on the total Price from this tab.     
+- **VAT**: indicates the VAT to be applied.             
+- **Sales Turnover**: indicates the [Sales turnover](/docs/configurations/tables/sales/sales-turnover) of the article.                
+- **Expected delivery date/Expected delivery period (Data prevista consegna/Periodo di prevista consegna)**: in these fields, expected date/period for delivering the selected article can be entered.    
 
-In questa tab è possibile indicare i Ricavi ottenuti dalle varie Risorse. I campi presenti sono: 
-- **Risorsa**: richiede l'inserimento di una [Risorsa](/docs/project-management/registers/employee/new-employee) precodificata che ha svolto l'attività.     
-- **Unità di misura**: contiene l'unità di misura da utilizzare per la Risorsa; viene proposta quella di default inserita in anagrafica risorsa, ma si può cambiare.      
-- **Quantità/Costo unitario/Costo totale**: per ottenere il Costo totale viene moltiplicata automaticamente la Quantità inserita con il Prezzo unitario.      
-- **Percentuale/Valore**: in questi campi è possibile inserire un eventuale ricarico da applicare al Costo totale, in percentuale o valore.     
-- **Ricavo**: in questa colonna verrà calcolato automaticamente il Costo totale ricaricato.        
-- **Nota**: in questo campo è possibile inserire delle note libere.       
-- **Equivalente a tempo pieno**: in questo campo è possibile inserire a quanto corrispondono le giornate/ore della risorsa rispetto all'orario aziendale (ad esempio se una risorsa fa un orario part-time di 4 ore, 1 giornata di questa risorsa deve corrispondere a 0.5 giornate aziendali).     
+### 3.b.2 Resources
 
-### 3.3 Materiali
+In this tab, it is possible to indicate the Revenues obtained from various Resources. The fields present are: 
+- **Asset**: requires the entry of a [Resource](/docs/project-management/registers/employee/new-employee) that has performed the activity.     
+- **Units of Measure**: contains the unit of measure to use for the Resource; the default one from the resource profile is proposed, but it can be changed.      
+- **Quantity/Unit Cost/Total Cost (Quantità/Costo unitario/Costo totale)**: the Total Cost is automatically calculated by multiplying the entered Quantity by the Unit Price.      
+- **Percentage/Value**: in these fields, any markup to be applied to the Total Cost can be entered, either as a percentage or as a value.     
+- **Revenue**: in this column, the Total Cost with markup will be automatically calculated.        
+- **Note**: in this field, free notes can be entered.       
+- **Full time equivalent**: in this field, it is possible to input how many days/hours of the resource correspond to the company hours (for example, if a resource works part-time for 4 hours, 1 day of this resource should correspond to 0.5 company days).     
 
-In questa tab è possibile indicare i Ricavi ottenuti dall'impiego di Materiali.      
-Nelle prime colonne della griglia è possibile inserire un Articolo codificato, Non codificato oppure Note, la sua eventuale Variante e l'iva. Le colonne successive sono:     
-- **Quantità/Costo unitario/Costo totale**: per ottenere il Costo totale viene moltiplicata automaticamente la Quantità inserita con il Costo unitario.      
-- **Tipo origine costo**: è possibile selezionare l'origine dalla quale popolare la colonna *Costo unitario* tra: Costo ultimo, Costo medio, Costo standard, Listino fornitore netto, Ordine fornitore o Fattura di acquisto; questo campo è parametrizzabile di default nei [Parametri offerta](/docs/configurations/parameters/sales/offer-parameters).    
-- **Percentuale/Valore**: in questi campi è possibile inserire un eventuale ricarico da applicare al Costo totale, in percentuale o valore.     
-- **Ricavo**: in questa colonna verrà calcolato automaticamente il Costo totale ricaricato.        
-- **Descrizione fornitore**: viene proposto il Fornitore preferenziale inserito in anagrafica articolo, ma è possibile modificarlo; se nella colonna *Tipo origine costo* è stato selezionato il listino fornitore, il listino considerato sarà quello valido per questo fornitore; inoltre, questo fornitore sarà l'intestatario della **Richiesta di offerta** generata dalla riga materiale.           
-- **Numero/Data richiesta**: contiene l'eventuale **Richiesta di offerta** creata per il Materiale; infatti, quando si è posizionati nel tab *Materiali*, nella barra degli strumenti compare il pulsante *Creazione Richiesta di offerta* che genererà la RDO per il materiale selezionato.    
-- **Nota**: in questo campo è possibile inserire delle note libere.   
+### 3.b.3 Materials
 
-Le altre tab presenti sono analoghe a quelle dell'offerta non gerarchica.     
+In this tab, it is possible to indicate the Revenues obtained from the use of Materials.      
+In the first columns of the grid, a Coded Item, Uncoded, or Notes can be entered, along with its possible Variant and VAT. The subsequent columns are:     
+- **Quantity/Unit Cost/Total Cost (Quantità/Costo unitario/Costo totale)**: the Total Cost is automatically calculated by multiplying the entered Quantity by the Unit Cost.      
+- **Origin type cost**: it is possible to select the origin from which to populate the *Unit Cost* column among: Last cost, Average cost, Standard cost, Net supplier price list, Supplier order, or Purchase invoice; this field is configurable by default in the [Offer Parameters](/docs/configurations/parameters/sales/offer-parameters).    
+- **Percentage/Value**: in these fields, any markup to be applied to the Total Cost can be entered, either as a percentage or value.     
+- **Revenue**: in this column, the Total Cost with markup will be automatically calculated.        
+- **Vendor description**: the preferred Supplier entered in the item profile is proposed, but it can be modified; if the supplier price list is selected in the *Cost origin type* column, the list considered will be the valid one for this supplier; additionally, this supplier will be the addressee of the **Request for Quotation** generated from the material line.           
+- **Request number/date (Numero/Data richiesta)**: contains the eventual **Request for Quotation** created for the Material; in fact, when in the *Materials* tab, the *Create Request for Quotation* button appears in the toolbar, which will generate the RFQ for the selected material.    
+- **Note**: in this field, free notes can be entered.   
 
-#### Pulsanti specifici
+Other tabs present are similar to those of the non-hierarchical offer.     
 
-> **Crea nuovo prototipo**: questo bottone crea un [Prototipo](/docs/erp-home/registers/production/standardization/new-prototype) per la riga articolo selezionata; il riferimento al preventivo generato viene riportato nel tab Dati articolo, campo Preventivo. Sarà possibile modificare il prototipo generato dal relativo modulo.      
-> **Associa prototipo**: con questo bottone è possibile associare l'offerta a un [Prototipo](/docs/erp-home/registers/production/standardization/new-prototype) già esistente; viene aperto un help nel quale poter scegliere tra i prototipi disponibili per quell'articolo.       
-> **Apri prototipo**: questo bottone è abilitato se la riga articolo selezionata ha un Prototipo associato, e permette di aprirlo.       
-> **Import da progetto**: questa funzione apre l'help Articolo progetto, nel quale è possibile selezionare gli articoli provenienti da un progetto che vogliamo inserire nell'offerta di vendita. Il pop up si apre direttamente con il filtro sul cliente intestatario dell'offerta, per permettere di visualizzarne i relativi progetti.     
-> **Nuovo figlio**: permette di inserire una riga progetto figlia della riga selezionata.        
-> **Nuovo fratello**: permette di inserire una riga progetto nello stesso livello della riga selezionata.       
-> **Sostituisci il numero WBS**: permette di incorporare al Numero WBS delle righe anche il Numero del progetto.       
-> **Implodi**: consente di nascondere le righe dell'albero.       
-> **Esplodi**: consente di visualizzare le righe dell'albero.
+#### Specific buttons
 
-## **4. Riepiloghi Offerta**
+> **Create new prototype**: this button creates a [Prototype](/docs/erp-home/registers/production/standardization/new-prototype) for the selected article line; the reference to the generated estimate is recorded in the Item Data tab, in the Estimate field. The generated prototype can be modified from the relevant module.      
+> **Associate prototype**: with this button, it is possible to associate the offer with an existing [Prototype](/docs/erp-home/registers/production/standardization/new-prototype); help will open allowing you to choose from the prototypes available for that article.       
+> **Open prototype**: this button is enabled if the selected article line has an associated Prototype, and allows you to open it.       
+> **Import from Projects**: this function opens the Project Article help, where it is possible to select items coming from a project that we want to insert into the sales offer. The pop-up opens directly with a filter on the client named in the offer, to allow visualizing its respective projects.     
+> **New Child**: allows inserting a project line as a child of the selected line.        
+> **New Brother**: allows inserting a project line at the same level as the selected line.       
+> **Replace WBS number**: allows incorporating the project Number into the WBS numbers of the lines.       
+> **Collapse**: allows hiding the tree lines.       
+> **Expand**: allows viewing the tree lines.
 
-In questa tab possono essere inseriti e sono validi per la totalità del documento:
+## **4. Offer Summaries**
 
-### 4.1 Sconti finali articoli
+In this tab, summaries can be entered and are valid for the entire document:
+
+### 4.1 Final discounts for articles
 
 import SummariesFinalDiscount from './../../import/sections/summaries-final-discount.md'
 
 <SummariesFinalDiscount /> 
 
-### 4.2 Spese/Sconti/maggiorazioni finali 
+### 4.2 Final expenses/discounts/increases 
 
 import SummariesExpenses from './../../import/sections/summaries-expenses.md'
 

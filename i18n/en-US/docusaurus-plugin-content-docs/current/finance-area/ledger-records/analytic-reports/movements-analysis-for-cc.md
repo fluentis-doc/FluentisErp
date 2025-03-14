@@ -1,21 +1,15 @@
 ---
-title: Movements Analysis for CC
+title: Movements Analysis for Cost Centers
 sidebar_position: 3
 ---
 
-Through the 'Cost Centres movements analysis' report, it is possible to get the report of the cost centres detail associated to the various accounting movements, adding the amounts on the total movement itself.
+The report for movement analysis by cost center allows for printing the details of the cost centers associated with various accounting movements, totaling the amounts on the overall movement itself.
 
-RIBBON BAR: it represents the Form menu, that is the area in which it is possible to perform actions. The list of features is the following:
+RIBBON BAR: represents the menu of the form in question, that is, the area where actions can be performed. The list of possible functionalities is represented below: 
 
 
 
-| Function | Meaning |
+| Function | Extended Description |
 | --- | --- |
-| Preview | Command to launch cost centres movements analysis print preview. |
-| Print | Command to launch cost centres movements analysis print. |
-
-
-
-
-
-
+| Preview | Button to execute the print preview of the movement analysis by cost center. |
+| Report | Button to execute the physical print of the movement analysis by cost center. |

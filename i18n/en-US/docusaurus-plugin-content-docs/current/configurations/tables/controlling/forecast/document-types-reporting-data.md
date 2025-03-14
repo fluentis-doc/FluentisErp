@@ -1,4 +1,4 @@
 ---
-title: Document Types For The Copy Of Historical Data
+title: Document types for the copy of historical data
 sidebar_position: 6
 ---

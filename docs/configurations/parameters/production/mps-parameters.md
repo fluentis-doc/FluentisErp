@@ -26,8 +26,7 @@ Nel caso di *Generazione commessa di produzione dal Previsionale*, deve essere s
 **Considera le disponibilità provenienti da**   
 In questa sezione l'utente può decidere di impostare la considerazione della disponibilità dei prodotti finiti in sede di generazione commessa di produzione da: *Conto Lavoro*, *Acquisti*, *Vendite*, *Produzione*, *Magazzino*.
 
-Ci sono poi una serie di flag:
-
+Ci sono poi una serie di flag:  
 **Calcolo quantità in base al Lead Time dell'articolo**: viene attivato nel caso non si vogliano utilizzare i cicli di lavorazione per calcolare la durata di una commessa di produzione; in questo caso, ai fini del calcolo della durata della commessa si fa riferimento al campo Lead time di produzione presente nei [Parametri MRP](/docs/configurations/parameters/production/mrp-parameters/search-mrp-parameters)  dell'articolo. 
 
 **Generazione commessa da Ordini clienti in automatico**: se attivo, permette di fare in modo che la procedura crei automaticamente la commessa di produzione non appena venga inserita una riga ordine cliente. La commessa in questo caso viene creata nello stato di *Non Esaminata*. Generalmente viene attivato quando per schedulare si utilizza la procedura *MRP* anziché la *Schedulazione Generale*.

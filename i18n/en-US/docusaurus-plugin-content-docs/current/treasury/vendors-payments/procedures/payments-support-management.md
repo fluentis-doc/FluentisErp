@@ -1,17 +1,12 @@
 ---
-title: Gestione appoggio pagamenti
+title: Payments Support Management
 sidebar_position: 2
 ---
 
-Da questa maschera si procede alla gestione dei dati degli appoggi bancari previsti per i pagamenti (ed eventualmente per gli incassi). All'interno delle anagrafiche clienti/fornitori è possibile definire il sottoconto banca di pagamento predefinito: sulla base di questo ogni partita, all'atto della sua creazione, viene canalizzata su questo conto, ma il dato può essere modificato dalla presente maschera.
+From this form, you manage the data of the bank supports provided for payments (and possibly for collections). Within the customer/supplier registries, it is possible to define the default payment bank sub-account: based on this, each entry, at the time of its creation, is channeled to this account, but the data can be modified from this form.
 
-Oltre a questa funzione, la maschera consente di visualizzare la distinta all'interno della quale la partita è stata pagata, così come consente di memorizzare manualmente la ricezione dell'avviso di pagamento, del suo controllo e dell'avvenuto invio dello stesso attraverso i flag relativi in griglia.
+In addition to this function, the form allows you to view the statement within which the entry has been paid, as well as to manually record the receipt of the payment notice, its verification, and the confirmation of its sending through the relevant flags in the grid.
 
-La gestione puntuale dell'appoggio pagamenti è molto utile per ottenere successivamente una elaborazione del **[*Cash Flow*](/docs/treasury/cash-flow/reports)** raggruppata per banca, in modo da conoscere l'andamento e la consistenza, non solo del cash flow generale, ma anche di valutare la situazione e l'eventuale possibile scopertura di ogni singolo conto bancario aziendale.
+The precise management of payment support is very useful for subsequently obtaining a processing of the **[*Cash Flow*](/docs/treasury/cash-flow/reports)** grouped by bank, in order to understand the trend and consistency, not only of the overall cash flow but also to evaluate the situation and the possible overdraft of each individual company bank account.
 
-**<a href="https://youtu.be/DkxoWgTkvUg&amp;t=5m37s" target="_blank" rel="noopener noreferrer">Si rinvia al Tutorial - Link YouTube </a>**
-
-
-
-
-
+**<a href="https://youtu.be/DkxoWgTkvUg&amp;t=5m37s" target="_blank" rel="noopener noreferrer">Refer to the Tutorial - YouTube Link (Si rinvia al Tutorial - Link YouTube)</a>**

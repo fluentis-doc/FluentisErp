@@ -1,29 +1,29 @@
 ---
 title: Purchase Requests Parameters
-sidebar_position: 4
+sidebar_position: 5
 ---
 
-The purchase requests parameters allow the basic setting in order to manage correctly and according to specific requests of every single company.
+The parameters for purchase requests allow for basic settings to manage correctly and according to the specific requests of each individual company.
 
-The ribbon bar represents the Form menu, that is the area in which it is possible to perform actions. The possible features list is the following: 
+#### Buttons  
 
+> **Save**: allows you to save the set parameters.  
+> **Restore**: allows you to restore the parameters to their initial values.
 
+### General
 
-| Function | Meaning |
-| --- | --- |
-| Restore Default Parameters | It enables the user to restore the initial data. |
+**Cost zero if price lists are missing**: the price is searched in the price lists; if not found and this flag is active, a price of 0 is set in the request line. If not active and the other parameter is also not active and the price is not found in the price list, it searches for the last cost in the item registry and if it's not found, it sets it to 0.
 
-#1.1 General Tab
+**Last cost if price lists are missing**: when active, if it does not find the price in the price list and does not find the last cost in the item registry, it takes the maximum price from the purchase requests for the same supplier and item.
 
-| Function | Meaning |
-| --- | --- |
-| Cost Zero if Price Lists Are Missing | The price is searched on price lists; if it is not found and this flag is active in request line, it will be necessary to assign 0 value price. If both this parameter and the other one are active and there is no price on list, it will be necessary to search for the last cost in item register and if this is not found, it will be necessary to assign 0 value.  |
-| Last Cost if Price Lists Are Missing | When this flag is active, if it does not find the price in price list and it does not find the last cost on items register, it has to take the maximum price among those on purchase requests of the same vendor and item. |
+**Expand BOM**: if active, when an item is entered it will be replaced by the first level of its bill of materials, if it exists. Thus, instead of the item “finished product,” the order will be populated with the bill of materials of the entered item.
 
-#1.2 Tab AnalyticThese parameters indicates the priority for searching cost or profit centres in order to be attributed to items of purchase request. When the Recalculate flag is set, cost or profit centres are inserted/updated on items through the chosen priority.
+### Analytical
 
+In this tab, you specify the priority for retrieving the cost center (CdC) or profit center (CdP) in the document line.
 
+It is possible to modify the priorities using the buttons:
 
+> **Move Up** and **Move Down**
 
-
-
+**Default values**: the CDC or CDP is retrieved from the invoiced type if present. For further details, refer to the table [Purchase turnover type](/docs/configurations/tables/purchase/purchase-invoices-type). If it is not present in the invoiced type, the system will look for it in the *Supplier Registry*. If not present, it will be searched in the *Item registry*.

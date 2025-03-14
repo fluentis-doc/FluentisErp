@@ -1,26 +1,26 @@
 ---
-title: Crea Distinta di Anticipo
+title: Create advances list
 sidebar_position: 3
 ---
 
-Accedendo alla form di inserimento della nuova distinta è necessario prima di tutto inserire il Tipo distinta tramite l'apposita combo box.
+Accessing the form for entering the new list requires first to insert the Type of list via the appropriate combo box.
 
-Tutti i dati collegati al tipo distinta saranno caricati di conseguenza.
+All data related to the type of list will be loaded accordingly.
 
-L'anno è proposto pari all'anno in corso, il numeor è incrementato in automatico dal sistema tramite il numeratore.
+The year is proposed as the current year, and the number is automatically incremented by the system via the numbering system.
 
-E' possibile inserire nuove fatture, o nuove scadenze (a seconda della modalità collegata al tipo distinta) con i bottoni posti nella ribbon bar.
+It is possible to enter new invoices or new deadlines (depending on the method connected to the type of list) using the buttons located in the ribbon bar.
 
 ![](/img/it-it/treasury/advance/create-advances-list/image01.png)
 
-Verrà aperto un help che peermette di filtrare le fatture o scdenze da acquisire
+An help window will open that allows filtering the invoices or deadlines to be acquired.
 
 ![](/img/it-it/treasury/advance/create-advances-list/image02.png)
 
-Dopo l'acquisizione della fattura o scadenza è possibile inserire manualmente sulla riga l'importo delle commissioni bancarie.
+After acquiring the invoice or deadline, it is possible to manually enter the amount of bank fees on the line.
 
-Questo dato può essere automatizzato inserendolo nell'anagrafica della banca utilizzata per l'operazione.
+This data can be automated by entering it in the registry of the bank used for the operation.
 
 ![](/img/it-it/treasury/advance/create-advances-list/image03.png)
 
-Per procedere a contabilizzare l'anticipo utilizzare l'apposita procedura Contabilizzazione Distinta anticipi.
+To proceed with accounting for the advance, use the appropriate procedure for Advance List Accounting (Contabilizzazione Distinta anticipi).

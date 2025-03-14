@@ -3,21 +3,15 @@ title: Revaluations Prospect
 sidebar_position: 4
 ---
 
-The printing mask of revaluations prospect enables the user to set the search filters during the data extraction.
+The print mask of the Revaluations Prospect allows you to define the usual search filters for data extraction.
 
-The report enables the user to summarize detail data of revaluations associated to the various fixed assets according to the grouping code set in fixed assets categories table.
+The report summarizes the detailed data of the revaluations associated with various assets, according to the grouping code set in the asset categories table.
 
-RIBBON BAR: the ribbon bar represents the Form menu, that is the area on which it is possible to perform actions linked to the procedure in use. The possible features list is the following:
+For further information on the filter parameters of the form **[see here](/docs/finance-area/fixed-assets/reports-fixed-assets/yearly-fixed-assets-purchase).**
 
 
 
-| Function | Meaning |
+| Function | Extended Description |
 | --- | --- |
-| Preview | Button to perform the print preview. |
-| Print | Button to print a document. |
-
-
-
-
-
-
+| Preview | Button to execute the print preview. |
+| Report | Button to perform the physical printing of the document. |

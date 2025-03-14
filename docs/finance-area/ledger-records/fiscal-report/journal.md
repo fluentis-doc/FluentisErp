@@ -36,6 +36,6 @@ All'esecuzione della stampa in via definitiva il programma effettua un controllo
 
 
 :::important Vedi Anche
-[**VIDEO TUTORIALS SULLE STAMPE FISCALI**](/docs/video/finance/intro.md)
+[**VIDEO TUTORIALS SULLE STAMPE FISCALI**](/docs/video/finance/intro)
 :::
 

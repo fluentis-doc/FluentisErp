@@ -41,5 +41,5 @@ I parametri del modulo Cespiti si trovano in **Parametri > Amministrativa**.
 ## 2. Video tutorial Parrametri Cespiti
 
 :::important Vedi Anche
-[**VIDEO TUTORIALS SUI PARAMETRI CESPITI**](/docs/video/finance/intro.md)
+[**VIDEO TUTORIALS SUI PARAMETRI CESPITI**](/docs/video/finance/intro)
 :::

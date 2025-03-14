@@ -1,61 +1,58 @@
 ---
-title: Contabilizzazione Distinte
+title: Lists Accounting
 sidebar_position: 2
 ---
 
-La form si trova in Tesoreria > Portafoglio Effetti > Contabilizzazione > Contabilizzazione distinte
+The form can be found in Treasury > Bills Portfolio > Accounting > Lists Accounting (Contabilizzazione distinte)
 
-Da questa maschera si procede alla contabilizzazione distinte: la procedura chiuderà il conto collegato al [**tipo**](/docs/configurations/tables/treasury/bills-portfolio-module-tables/bills-types) degli effetti inseriti in distinta e aprirà il conto transitorio della banca inserito nella distinta.
+From this interface, the accounting of lists is performed: the procedure will close the account associated with the [**type**](/docs/configurations/tables/treasury/bills-portfolio-module-tables/bills-types) of the bills included in the list and will open the transitional account of the bank entered in the list.
 
-::tip[Nota]
-Generalmente si può eseguire questa procedura direttamente **dentro la distinta** con l'apposito pulsante per la sua **Contabilizzazione**.
+::tip[Note]
+Generally, this procedure can be carried out directly **within the list** using the appropriate button for its **Accounting**.
 
-Dalla presente maschera risulta invece possibile eseguire una contabilizzazione massiva di più distinte.
+From this interface, it is possible to carry out a mass accounting of multiple lists.
 :::
 
-## Come contabilizzare una distinta
+## How to account for a list
 
-1. Utilizza la parte superiore della maschera per filtrare la ricerca delle distinte da contabilizzare. La contabilizzazione distinte può essere effettuata solo per distinte stampate.
+1. Use the upper part of the interface to filter the search for the lists to be accounted for. Accounting of lists can only be performed for printed lists.
 
-2. Seleziona dalla griglia centrale le distinte che desideri contabilizzare 
+2. Select from the central grid the lists you wish to account for.
 
-3. Compila i parametri per la contabilizzazione quali la **Causale di contabilità**, la **data registrazione** e la data competenza.
+3. Fill in the parameters for accounting such as the **Ledger Records Template**, the **Posting date**, and the maturity date (data competenza).
 
-:::note[Nota]
-Questa sezione può essere predefinita all'interno dei [**parametri**](/docs/configurations/parameters/treasury/bills-portfolio-parameters) del modulo Portafoglio effetti.  
+:::note[Note]
+This section can be predefined within the [**parameters**](/docs/configurations/parameters/treasury/bills-portfolio-parameters) of the Bills Portfolio module.  
 :::
 
-Il flag di **contabilizzazione in data maturazione**: spezzerà la registrazione della distinta alle varie date scadenza degli effetti con l'aggiunta dei giorni banca impostati in anagrafica banca per la causale impostata.
+The **accounting on the maturity date (contabilizzazione in data maturazione)** flag: will split the recording of the list into the various maturity dates of the bills, adding the bank days set in the bank registry for the specified reason.
 
-Il flag **data scadenza con data valuta uguale a data maturazione**: registrerà i vari effetti alle varie date scadenza ma con data valuta banca rettificata secondo i giorni banca impostati in anagrafica banca.
+The **maturity date with value date equal to maturity date (data scadenza con data valuta uguale a data maturazione)** flag: will record the various bills on the different maturity dates but with the value date of the bank adjusted according to the bank days set in the bank registry.
 
-4. Premi il bottone nella ribbon bar **Contabilizzazione distinte**
+4. Click on the button in the ribbon bar **Lists Accounting**.
 
+**Specific buttons**
 
-**Pulsanti specifici**
+**Search**: Searches the list of lists to be accounted for.
 
-**Ricerca**: Ricerca la lista delle distinte da contabilizzare.
-
-**Contabilizzazione**: Esegue la contabilizzazione per le righe selezionate.
-
-
-### Tab Precedenti
-
-Dalla scheda precedenti è possibile procedere all'annullamento delle contabilizzazioni eseguite. 
-
-L'annullamento sarà possibile solo se il periodo è ancora modificabile (stampa libro giornale e chiusura conti non eseguite). 
-
-Un doppio click nella sezione delle registrazioni consentirà di visualizzare la registrazione contabile relativa.
+**Accounting**: Executes the accounting for the selected rows.
 
 
-**Pulsanti specifici**
+### Previous Tab
 
-**Ricerca**: Ricerca la lista delle contabilizzazioni eseguite.
+From the previous tab, it is possible to cancel executed accountings.
 
-**Rollback contabilizzazione**: Esegue il ripristino delle contabilizzazioni selezionate.
+Cancellation will only be possible if the period is still modifiable (journal book printing and account closure not executed).
 
-**Rollback distinte**: Esegue il ripristino della registrazione contabile selezionata.
-
-E' presente un Tab di dettaglio di visualizzazione degli errori rilevati nel corso della contabilizzazione.
+A double click in the entry section will allow you to view the corresponding accounting entry.
 
 
+**Specific buttons**
+
+**Search**: Searches the list of executed accountings.
+
+**Rollback accounting**: Restores the selected accountings.
+
+**Rollback lists**: Restores the selected accounting entry.
+
+There is a details tab for viewing errors detected during the accounting process.

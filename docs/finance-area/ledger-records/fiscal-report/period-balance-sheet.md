@@ -40,7 +40,7 @@ Sono possibili vari layout tra i quali una rappresentazione a sezioni contrappos
 ### Riclassificazione di bilancio per elaborazione bilancio civilistico (schema CEE)
 
 :::important Vedi Anche
-[**VIDEO TUTORIALS SULLE STAMPE FISCALI**](/docs/video/finance/intro.md)
+[**VIDEO TUTORIALS SULLE STAMPE FISCALI**](/docs/video/finance/intro)
 :::
 
 

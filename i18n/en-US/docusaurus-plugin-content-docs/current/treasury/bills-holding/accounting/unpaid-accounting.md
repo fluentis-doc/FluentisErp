@@ -1,70 +1,62 @@
 ---
-title: Contabilizzazione Insoluti
+title: Unpaid accounting
 sidebar_position: 4
 ---
-La form si trova in Tesoreria > Portafoglio Effetti > Contabilizzazione > Contabilizzazione Insoluti
+The form is located in Treasury > Effects Portfolio > Accounting > Unpaid accounting (Contabilizzazione Insoluti)
 
+From this mask, you proceed with the accounting of defaults: the procedure reopens the customer accounts associated with the unpaid effects and, if necessary, generates an invoice for expense charges.
 
-Da questa maschera si procede alla contabilizzazione insoluti: la procedura riapre le partite clienti associate agli effetti insoluti ed eventualmente genera una fattura di addebito spese.
+**Specific Buttons**
 
-**Pulsanti specifici**
+**Search**: Searches for the list of unpaid items to be accounted for.
 
-**Ricerca**: Ricerca la lista degli insoluti da contabilizzare.
+**Accounting**: Executes the accounting for the selected rows.
 
-**Contabilizza**: Esegue la contabilizzazione per le righe selezionate.
+## How to account for a default
 
-## Come contabilizzare un insoluto
+1. Use the top part of the mask to filter the search for the unpaid items to be accounted for. WARNING: You must first proceed to their creation.
 
-1. Utilizza la parte superiore della maschera per filtrare la ricerca degli insoluti da contabilizzare. ATTENZIONE: Occorre prima procedere alla loro creazione.
+2. Select from the central grid the effects you wish to account for.
 
-2. Seleziona dalla griglia centrale gli effetti che desideri contabilizzare 
+3. Fill in the accounting parameters such as the **Ledger Records Template** and the **Posting date**.
 
-3. Compila i parametri per la contabilizzazione quali la **Causale di contabilità** e la **data registrazione**.
+:::note[Note (Nota)]
+This section can be pre-defined within the [**parameters**](/docs/configurations/parameters/treasury/unpaids-parameters) of the Defaults module. 
 
-:::note[Nota]
-Questa sezione può essere predefinita all'interno dei [**parametri**](/docs/configurations/parameters/treasury/unpaids-parameters) del modulo Insoluti. 
+In particular:
 
-In particolare:
+- the accounting reason is proposed based on the parameters of the module, 
+- the registration dates are suggested as today’s date; 
+- the sub-accounts for **Protest expenses** and the **Temporary account** are taken from the module parameters but can be modified or inserted as needed.
 
-- la causale contabile viene proposta sulla base dei parametri del modulo, 
-- le date di registrazione sono proposte come data odierna; 
-- i sottoconti per le **Spese di protesto** e il conto **Transitorio** sono ripresi dai parametri del modulo, ma possono essere modificati o inseriti di volta in volta.
+The flag **Summary accounting** captures all the defaults presented to the same credit institution (bank) in a single entry: normally this option is not used, especially if the requirement for the date and invoice number has been inserted in the accounting reason to be used.
 
-Il flag **Contabilizzazione riepilogativa** rileva in un'unica registrazione tutti gli insoluti presentati sullo stesso istituto di credito (banca): normalmente questa opzione non viene sfruttata, in particolare se è stata inserita l'obbligatorietà della data e numero fattura nella causale contabile da utilizzare.
+The flag **Charges recourse** requires the detection of the expense charges to the customer: with this option, the section for managing the invoice for these expenses will be activated (below) instead of registering them directly in accounting. In this section, all fields must be set in order to create the sales invoice.
 
-Il flag **Spese di rivalsa** impone la rilevazione del riaddebito spese al cliente: con questa opzione si attiverà (in basso) la sezione di gestione della fattura per queste spese, invece che registrarle direttamente in contabilità. In questa sezione tutti i campi dovranno essere impostati al fine di poter creare la fattura di vendita.
+Finally, you need to enter: 
+- the **payment type (tipo di pagamento)** and 
+- the **Expiry date** to be assigned for reopening the account. Alternatively, the flag **Due date equals the effect due date (Data scadenza uguale alla data scadenza effetto)** (gone unpaid) can be used.
 
-Infine resta da inserire: 
-- il **tipo di pagamento** e 
-- la **data scadenza** da assegnare per la riapertura della partita. In alternativa il flag **Data scadenza uguale alla data scadenza effetto** (andato insoluto)
-
-Anche in questo caso avviene la lettura dei parametri del modulo per la proposta di questi due dati.
+Here too, the reading of the module parameters occurs to propose these two data points.
  
-4. Premi il bottone nella ribbon bar **Contabilizzazione**
+4. Press the button in the ribbon bar **Accounting**.
 
-### Tab Precedenti
+### Previous Tab
 
-Dalla scheda precedenti è possibile procedere all'annullamento delle contabilizzazioni eseguite. 
+From the previous tab, you can proceed to cancel the completed accountings. 
 
-L'annullamento sarà possibile solo se il periodo è ancora modificabile (stampa libro giornale e chiusura conti non eseguite). 
+The cancellation will only be possible if the period is still modifiable (journal print and account closing not executed).
 
-Un doppio click nella sezione delle registrazioni consentirà di visualizzare la registrazione contabile relativa. 
+A double click in the recording section will allow you to view the related accounting entry. 
 
-E' presente un report di visualizzazione degli errori rilevati nel corso della contabilizzazione.
+There is a report for viewing errors detected during the accounting process.
 
+**Specific Buttons**
 
+**Search**: Searches for the list of completed accountings.
 
+**Rollback accounting**: Restores the selected accountings.
 
-**Pulsanti specifici**
+**Rollback defaults (Rollback insoluti)**: Restores the selected accounting entry.
 
-**Ricerca**: Ricerca la lista delle contabilizzazioni eseguite.
-
-**Rollback contabilizzazione**: Esegue il ripristino delle contabilizzazioni selezionate.
-
-**Rollback insoluti**: Esegue il ripristino della registrazione contabile selezionata.
-
-E' presente una tab per visualizzare gli errori memorizzati in fase di contabilizzazione.
-
-
-
-
+There is a tab to view the errors recorded during the accounting process.

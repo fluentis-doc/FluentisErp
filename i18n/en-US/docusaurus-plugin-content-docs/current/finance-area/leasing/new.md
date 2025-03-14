@@ -1,0 +1,106 @@
+---
+title: New Leasing 
+sidebar_position: 3
+---
+
+When entering a new leasing contract, it is necessary to define, in addition to the fields marked with a red cross, first of all, the **Leasing type**. This field refers to the **[Leasing Type](/docs/finance-area/leasing/search)** table (see details in the documentation of the Search form) where one or more types must have been defined previously.
+
+When calling a Leasing Type, the related data is proposed in the fields for the VAT rate and the accounts to be used for accounting the installments (principal portion), the interests (interest portion of the installments), and the costs (for example, collection expenses for the individual installments).
+
+![](/img/it-it/finance-area/leasing/new/image01.png)
+
+![](/img/it-it/finance-area/leasing/new/image02.png)
+
+## HEADER:
+
+The fields related to the following must be entered:
+
+**Bank Account/ Detail Account**: related to the bank that will be used in the payment entries of the installments;
+
+**Account / Detail Account Granting Company**: related to the account of the supplier (leasing company granting) that will be used in the entries related to the paid installments;
+
+**Contract date**: default proposed as today's date (modifiable) represents the date from which the days of competence of the leasing will be calculated;
+
+**Number**: internal number of the leasing contract managed by a Fluentis numerator;
+
+**Description**: description of the contract;
+
+**Expiration date**: enter the expected date for the discharge to enable automatic calculation of the total contract days and thus the days of competence for the adjustment of the max installment and the portions not due.
+
+:::danger Warning
+This date, even if entered by the user, should normally coincide with the final date of the amortization plan; therefore, a check has been placed with a warning message when using the automatic amortization calculation procedure. The misalignment of these dates could lead to an incorrect calculation of the annual adjustment of the max installment (and the portion not due).
+:::
+
+**Interest net rate**: allows the use of the indicated rate to automatically calculate the amortization plan of the leasing (constant installment amortization); enter the annual rate, this rate will be automatically calculated to determine the periodic rate based on the installment frequency and the duration of the leasing.
+
+**Value of the good**: Value of the asset granted in leasing.
+
+**Ransom**: Normally at the end of the leasing, a compensation for acquiring the final property of the asset is provided.
+
+**Ransom Cost**: Any ancillary costs for redemption.
+
+**Initial installment**: Normally, a large initial installment is provided in leasing contracts.
+
+**Dossier cost**: Ancillary to the max installment and possibly provided one-off at the beginning of the contract.
+
+## NON-EDITABLE FIELDS (calculated):
+
+**Residual debit**: Value of the asset net of the sum of the principal portions of the installments paid (takes into account the presence of the flag accounted for corresponding to the installment).
+
+**Total Contract Value**: Initial max installment + processing and practice fees + Sum of installments (principal portion + interest portion + collection costs / installment expenses).
+
+**Financed amount**: Value of the asset net (less) the initial max installment.
+
+## DETAIL GRID:
+
+In this section, it is possible to manually enter the amortization plan of the leasing installments (excluding the initial max installment already indicated in the header data). Alternatively, the specific procedure is available in the ribbon bar to automatically calculate the amortization plan based on the basic leasing data already entered in the header.
+
+![](/img/it-it/finance-area/leasing/new/image03.png)
+
+**Date**: the date to be entered is that expected for the expiration of the installment; it will be used to propose it in the accounting record that records the receipt of the invoice for the installment from the granting company;
+
+**Capital value**: represents the principal portion of the installment and will be accounted for in the account defined in the Leasing Types table;
+
+**Interest value**: represents the component of the interest related to the installment and will be accounted for in the specific account defined in the Leasing Types table;
+
+**Cost value**: represents, for example, the portion charged as collection expenses and will also be accounted for in the specific account defined in the Leasing Types table;
+
+**Total**: non-editable, calculates the total of the components of the installment;
+
+**Accounted**: the flag activates when the accounting of the installment is executed and affects both the calculation of the outstanding debt and the calculation of the adjustment of the max installment;
+
+**Registration Number / Date**: reports the references of the registration generated by the installment accounting procedure.
+
+## PROCEDURES ACTIVATABLE FROM THE RIBBON BAR:
+
+### Accounting procedures  
+
+That can be activated from within the Leasing Details form are the same as those accessible from the list of accounting procedures related to the Leasing module.
+
+The difference is that from this position, actions will be performed only on the specific leasing for which we have entered details, while in the case of accounting procedures of the module, in the relative dedicated form, all upcoming installments of all lease agreements in the database will be searchable and selectable.
+
+The accounting for the max installment is executed only once (even after and independently of the accounting of installments).
+
+For accounting installments, it is possible to select the installment to be accounted for and, once confirmed to proceed, you will be asked to fill out a dialog box with the document number and document date to enter the references to the invoice received for the upcoming installment.
+
+The ledger template to be used has been defined in the Leasing Types table, but the recording scheme is fixed and guided by the procedure’s logic.
+
+Both procedures can also be restored from this position with the usual rollback logic.
+
+### Calculate Depreciation Plan
+
+By pressing this button, the procedure, based on the main fields of the header, namely stipulation date, number of installments, value of the asset, interest rate (internal discount rate), will calculate the depreciation plan using the constant installment method (French depreciation).
+
+:::tip ATTENTION:
+It does not consider the max installment entered in the header, which should be considered as an additional advance installment (often equal to one or two installments in terms of value).
+:::
+
+A dialog opens in which to enter (again, if different from what was already entered in the header) the **date of the first installment**, the number of **months deviation** between one installment and another (which determines the frequency of the installment, e.g., 1 = monthly, 2 = bimonthly, 3= quarterly, etc.). NOTE: the frequency takes into account the time between installments and calculates as many installments as were entered in the header.
+
+The **Cost value**: for example, collection expenses, etc. which are added for each installment in the appropriate detail column.
+
+This button can also be used to recalculate, updating, the amortization plan, as long as the installments have not yet been accounted for.
+
+**Change Date Rate**: is used to change only the dates of the installments and/or their frequency without recalculating the entire plan (where manual variations may have been made to the values). Only the first installment date and the frequency are requested.
+
+**Update rate expenses**: is used to change the fee (for example, installment collection fees) on all lines without recalculating the entire plan or needing to manually update all lines (which is always possible). The dialog only requires the new value of the cost value.

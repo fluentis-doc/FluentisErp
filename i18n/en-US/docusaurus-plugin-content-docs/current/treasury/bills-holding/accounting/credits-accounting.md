@@ -1,78 +1,68 @@
 ---
-title: Contabilizzazione Accrediti
+title: Credits Accounting
 sidebar_position: 3
 ---
 
-La form si trova in Tesoreria > Portafoglio Effetti > Contabilizzazione > Contabilizzazione accrediti
+The form is located in Treasury > Bills Portfolio > Accounting > Credits Accounting (Contabilizzazione accrediti)
 
-Da questa maschera si procede all'ultima fase del portafoglio effetti: la procedura chiuderà il conto transitorio della banca di presentazione per accreditare il conto corrente effettivo dell'anagrafica banca in distinta.
+From this screen, the final phase of the bills portfolio is proceeded with: the procedure will close the transit account of the presenting bank to credit the actual current account of the bank registry in the summary.
 
-:::tip[Nota]
-**Risulta necessario accedere specificamente alla presente form per questa contabilizzazione, non essendo previsto alcun bottone dentro l'effetto o la distinta**. 
+:::tip[Note]
+**It is necessary to specifically access this form for this accounting, as no button is provided within the effect or the summary**. 
 :::
 
-## Come contabilizzare un accredito
+## How to account for a credit
 
-1. Utilizza la parte superiore della maschera per filtrare la ricerca degli effetti da accreditare: la contabilizzazione accrediti può essere effettuata solo per effetti contabilizzati. La selezione viene effettuata sul dettaglio degli effetti per poter individuare  gli importi accreditati per ogni data di scadenza.
+1. Use the upper part of the form to filter the search for effects to be credited: the accounting of credits can only be done for effects that have been accounted for. The selection is made on the details of the effects to identify the credited amounts for each due date.
 
-2. Seleziona dalla griglia centrale gli effetti che desideri gestire 
+2. Select from the central grid the effects you wish to manage.
 
-3. Compila i parametri per la contabilizzazione quali la **Causale di contabilità**, la **data registrazione** e la data competenza.
+3. Fill in the parameters for accounting such as the **Ledger Records Template**, the **Posting date**, and the due date (data competenza).
 
-:::note[Nota]
-Questa sezione può essere predefinita all'interno dei [**parametri**](/docs/configurations/parameters/treasury/bills-portfolio-parameters) del modulo Portafoglio effetti.
+:::note[Note]
+This section can be predefined within the [**parameters**](/docs/configurations/parameters/treasury/bills-portfolio-parameters) of the Bills Portfolio module.
 :::
 
-4. Compila inoltre gli altri campi per la gestione della contabilizzazione:
+4. Also fill in the other fields for accounting management:
 
-**Spese commissioni**: il sottconto dove saranno contabilizzate le spese per commissioni, da indicare nel campo successivo
+**Commission charges**: the sub-account where commission expenses will be accounted for, to be indicated in the next field.
 
-**Commissioni**: valore delle commissioni sull'accredito degli effetti che viene contabilizzato; può essere proposto, per ogni effetto, sulla base delle *commissioni* impostate nell'[***anagrafica banca***](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/bank-registry/detail).  
+**Commissions**: the value of commissions on the credit of the effects that is accounted for; it can be proposed, for each effect, based on the *commissions* set in the [***bank registry***](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/bank-registry/detail).  
 
-**Oneri passivi**: conto dove saranno contabilizzati gli interessi passivi calcolati per distinte allo sconto.
+**Passive expenses**: account where interest calculated for discount summaries will be accounted.
 
-:::note[Nota]
-In questa sezione sono presenti anche tre campi per la visualizzazione dei totali degli effetti selezionati nella grigli centrale:
+:::note[Note]
+In this section, there are also three fields for displaying the totals of the selected effects in the central grid:
 
-**Totale selezione oneri passivi**: sommatoria del valore Oneri passivi per tutti gli effetti selezionati;
+**Total selected passive comm.**: sum of the value of Passive Charges for all selected effects;
 
-**Totale selezione commissioni**: sommatoria del valore Commissioni per tutti gli effetti selezionati;
+**Total selected commissions**: sum of the value of Commissions for all selected effects;
 
-**Totale effetti selezionati**: sommatoria del valore degli effetti selezionati;
+**Total selected bills**: sum of the value of the selected effects;
 :::
 
-4. Premi il bottone nella ribbon bar **Contabilizzazione accrediti**
+4. Press the button in the ribbon bar **Credits Accounting**.
 
+**Specific buttons**
 
+**Search**: Searches the list of effects to account for the credit.
 
-**Pulsanti specifici**
+**Accounting**: Executes the accounting for the selected rows.
 
-**Ricerca**: Ricerca la lista degli effetti di cui contabilizzare l'accredito.
+### Previous Tab
 
-**Contabilizzazione**: Esegue la contabilizzazione per le righe selezionate.
+From the *Previous* tab, it is possible to proceed with the cancellation of executed accountings. 
 
+Cancellation will only be possible if the period is still modifiable (journal book print and account closure not executed). 
 
+Double-clicking in the registration section will allow you to view the related accounting entry. 
 
-### Tab Precedenti
+There is a detail tab to view errors detected during accounting.
 
-Dalla scheda *precedenti* è possibile procedere all'annullamento delle contabilizzazioni eseguite. 
+**Specific buttons**
 
-L'annullamento sarà possibile solo se il periodo è ancora modificabile (stampa libro giornale e chiusura conti non eseguite). 
+**Search**: Searches the list of executed accountings.
 
-Un doppio click nella sezione delle registrazioni consentirà di visualizzare la registrazione contabile relativa. 
+**Rollback accounting**: Restores the selected accountings for all documents contained therein.
 
-E' presente un Tab di dettaglio di visualizzazione degli errori rilevati nel corso della contabilizzazione.
-
-
-
-**Pulsanti specifici**
-
-**Ricerca**: Ricerca la lista delle contabilizzazioni eseguite.
-
-**Rollback contabilizzazione**: Esegue il ripristino delle contabilizzazioni selezionate per tutti i documenti in esse contenuti.
-
-**Rollback registrazioni**: Esegue il ripristino della singola registrazione contabile selezionata.
-
-
-
-
+**Rollback Records**: Restores the single selected accounting entry.

@@ -1,25 +1,14 @@
 ---
-title: Agents Payslip
+title: Agents Pay Slip
 sidebar_position: 1
 ---
 
-This report enables the user to extract the inserted commissions on agents from sales documents, independently from agent commission maturity.
+The form opens via the path *Sales > Agents > Agent Settlements > Prints (Vendite > Agenti > Liquidazioni agenti > Stampe)*.
 
-In the central radio button it is possible to perform the selection of document type to be considered: sales order (ordered), delivery note (delivered) or invoice (sold). According to this option the document type filter will change.
+The print allows you to extract from sales documents the commissions entered for various agents, regardless of the agent's commission accrual criterion.
 
-It is recommended to remember the print option with detail by item: this report version can be necessary in order to control the accuracy of commissions inserted by system and in order to identify settings errors of agent register.
+In the section **Print the commission of**, you select the type of document to consider: the customer order (ordered), the delivery note (delivered), or the invoice (sold). Depending on this option, the filter for **Document type** will change.
 
-RIBBON BAR: it represents the Form menu, that is the area in which it is possible to perform actions. The list of features is the following:
+It is worth noting the printing option with item detail: this version of the report can be useful for checking the accuracy of the commissions entered by the system and for identifying errors in the agent registry settings.
 
-
-
-| Function | Meaning |
-| --- | --- |
-| Preview | Button to perform the print preview. |
-| Print | Button to print according to filters set and printer configuration. |
-
-
-
-
-
-
+More details on this topic can be found in the articles: [Data Search in Read-Only Forms (Ricerca dati nelle form di sola lettura)](/docs/guide/common/operations-with-data/data-search-in-read-only-forms) and [Preview and Print (Anteprima e stampa)](/docs/guide/common/operations-with-data/reports)

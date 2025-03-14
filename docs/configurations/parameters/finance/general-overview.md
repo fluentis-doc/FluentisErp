@@ -22,5 +22,5 @@ A fronte della stretta interconnessione con l'area Tesoreria, in particolare per
 :::
 
 :::important[**Fast Start**]
-I parametri dell'area amministrativa sono interessati dalla possibilità di inizializzare un [**ambiente *FastStart***](/docs/guide/fast-start) e configurato permettere un utilizzo immediato.
+I parametri dell'area amministrativa possono essere configurati tramite l'inizializzazione di un [**ambiente *FastStart***](/docs/guide/fast-start) progettato per consentire una configurazione rapida e un utilizzo immediato del sistema.
 :::

@@ -1,24 +1,27 @@
 ---
-title: Depreciation
+title: Depreciation 
 sidebar_position: 2
 ---
 
-First of all, it is very important to manage the 'incremental operations' flag: considering that the depreciation procedure is managed according to different logics, if the company uses the incremental option for its categories it will be necessary to import this flag in order to identify data. On the contrary,  at the base of the mask, it is necessary to set the reference calculation year: usually it will be edited in order to insert year previous than the current one. The calculation of depreciations of X year will not be allowed when depreciations of X-1 year have not been accounted.
+First and foremost, it is crucial to manage the flag **Incremental operations**: since the depreciation procedure is handled with different logics, if the company uses the incremental option for its categories, this flag must be imported in order to identify the data.
 
- Once having performed the data search, it is possible, line by line, to force the number of application days as well as the depreciation percentage: it is recommended to calculate these particular cases directly within the single fixed asset tab or to edit directly table of fixed assets categories in order to perform a quick calculation with a total selection of lines. An alternative option to be used, if the user wants to use different percentages among fixed assets, can be the parameters definition of fixed assets module called 'Percentage on single fixed asset', which enables the user to set in header of each fixed asset a depreciation percentage to be used.
+Therefore, if there are both asset categories with the incremental option and categories without the option, the depreciation of the assets will need to be performed in two steps, following the search with and without the commented flag.
 
-RIBBON BAR: it represents the Form menu, that is the area in which it is possible to perform actions linked to the procedure in use. The list of features is the following:
+![](/img/it-it/finance-area/fixed-assets/procedures/fixed-asset-depreciation/depreciation/image01.png)
+
+At the bottom of the form, instead, the reference year for the calculation must be set: it will normally need to be modified to enter the year prior to the current one. The calculation of depreciations for year X is not permitted when the depreciations for year X-1 have not been accounted for.
+
+![](/img/it-it/finance-area/fixed-assets/procedures/fixed-asset-depreciation/depreciation/image02.png)
+
+Once the data search is performed, we can see that it is possible, line by line, to force the number of days of application as well as the depreciation percentage: it is actually recommended to calculate these particular cases directly within each asset sheet or to modify the asset categories table directly in order to perform a quick calculation with a total selection of lines.
+
+An alternative option to use, if you want to apply different percentages among various assets, can be the definition of the **[fixed asset module parameter](/docs/configurations/parameters/finance/fixed-assets-parameters)** called **Percentage of individual asset**, which allows defining a depreciation percentage to be used at the header of each asset.
+
+![](/img/it-it/finance-area/fixed-assets/procedures/fixed-asset-depreciation/depreciation/image03.png)
 
 
 
-| Function | Meaning |
+| Function | Extended Description |
 | --- | --- |
-| Search | It searches the list of depreciations to be calculated. |
-| Depreciation | It performs the calculations for the selected lines. |
-| View Fixed Asset | It views the fixed asset register whose depreciation is selected in the grid. |
-
-
-
-
-
-
+| Search | Searches for the list of depreciations to be calculated. |
+| Depreciation | Executes the calculation for the selected lines. |

@@ -3,53 +3,48 @@ title: Search Ledger Records
 sidebar_position: 7
 ---
 
-Search Ledger Records procedure has been created  in order to enable the user easily to search, to view, to change or to delete previous records or to go through a new one.
+This form allows you to search for previously entered ledger records and, if necessary, to modify (or view) them by selecting the corresponding row and double-clicking.
 
-Thanks to the Management of Ledger Records, it is possible  going through all the necessary related operations. The right to manage the data is, of course, the necessary requirement to do so. 
+#### Specific Buttons
 
-Ledger Record search procedure includes:
+> **Search**: allows you to start searching for entered ledger records according to the set filters.  
+> **New**: allows you to enter a new ledger record.  
+> **Modify**: allows you to modify a previously entered ledger record.  
+> **View**: allows you to view a previously entered ledger record.  
+> **Delete**: allows you to delete a previously entered ledger record.  
+> **Source Document**: allows you to recall the source document from which the ledger record originated.  
+> **Duplicate**: allows you to create a duplicate of the ledger record in order to create a similar one by modifying the appropriate elements, without needing to enter it from scratch.  
 
-RIBBON BAR: the ribbon bar represents the Form menu, that is the area on which it is possible to perform actions about a pre-existing record, rather than to create a new one. The possible features list is the following:
+### Specific Filters
 
+**Ledger template**: the combo box (as usual in Fluentis) allows you to select multiple reasons at once by holding down the Ctrl key.
 
+**From / To registration date + From / To competence date**: these are the reference dates of the ledger records; note that the filters operate with an AND condition, and thus the search refinement accumulates. In case of an unintentional misalignment between the registration date and the competence date (accounting), to find the desired record it is advisable to alternatively remove the filter for competence or that for registration date.
 
-| Function | Meaning |
-| --- | --- |
-| Search Record | Button to apply search filters within database of the inserted ledger records. |
-| New Record | Button to enter a new ledger record |
-| Edit Invoice | Button to edit a ledger record previously inserted. |
-| View Invoice | Button to view a ledger record previously inserted. |
-| Delete Invoice | Button to delete a ledger record previously inserted. |
-| Original Document | Button to recall the original document from which the ledger records has been created. |
+**Account**: this refers to the sub-account entered in the header of the record (Customer or supplier).
 
-**Regarding the information related to the following reports, please rely on the related section of the menu.**
+**Account type**: allows you to select one (or more by holding down Ctrl) of the account types (Costs / Revenues / Asset / Liability or account types such as Customers, Suppliers, Banks, and Agents). Additionally, by opening the expander, it is possible to exclude types of account data.
 
+![](/img/it-it/finance-area/ledger-records/records/search-ledger-records/image01.png)
 
+**Electronic invoicing** In the filter section, there is an expander related to the possible information regarding the status of the electronic invoice, referring to documents that interact with the Exchange System:
 
-| Function | Meaning |
-| --- | --- |
-|  [Report Analytic ](/docs/finance-area/ledger-records/analytic-reports/cost-centres-analysis)  | It refers to the analytical accounting procedure in order to print the various documentation related to:-	Cost centers analysis-	Profit centers analysis-	Movements analysis for CC-	Unbalance CC/PC/Job orders controlling |
-|  [Accounting Report](/docs/finance-area/ledger-records/accounting-report/trial-balance)  | It refers to the financial accounting procedure in order to print according to specific filter criteria, the situation related to:-	Account Statement-	Trial balance-	Daybook-	Offset Account Statement-	Movements Summary for template  -	 Movements Summary for document type-	 Detail accounts situation-	Detail accounts |
-|  [Fiscal Report](/docs/finance-area/ledger-records/fiscal-report/period-balance-sheet)  | It refers to the procedure to print according to specific filter criteria, the situation related to:-	Period Balance Sheet-	Intendo Declaration-	Journal-	Yearly VAT settlement-	Period VAT settlement-	VAT 74Ter settlement-	Stamped modules -	Intendo Declaration register-	Considerations VAT Register-	Vat books-	VAT codes summary |
-| Due Dates Reports | It refers to the procedure to print according to specific filter criteria, the situations related to:-	Difference between Maturity Value and Ledger balance-	Average Delay Collection Payments-	Account Statement to Open Maturity Value-	Maturity Value List-	Maturity Value Grouping-	Due Dates Summary-	Customer/Vendor Due Register |
+![](/img/it-it/finance-area/ledger-records/records/search-ledger-records/image02.png)
 
-**Regarding the information related to the following procedures, please rely on the related section of the menu.**
+In the ribbon menu, in the section dedicated to electronic invoicing, by using the button **ES Document Register**, you can view the actions performed on the selected document, and with the **Print Report** function, print the associated XML document. With the **Download attachment** or **Download log content** functions, execute the download of the XML file.
 
+The summary results grid displays several columns that show the status and outcome of the documents in relation to their transmission to the ES:
 
+![](/img/it-it/finance-area/ledger-records/records/search-ledger-records/image06.png)
 
-| Function | Meaning |
-| --- | --- |
-| Maturity Value Compensation | Button to manage the compensation of active/passive maturity values of detail accounts. |
-| Group Maturity Value  | Button to manage  the creation of one or more maturity value groups. |
-| Settle Account  | Button to manage active maturity values  money collection. |
-| Adjustment Records | Button to manage adjustment records at the end of the year. |
+- **ES status**: contains the description of the status of the document, reporting both the internal management status of Fluentis and the status reported by Fluentis Business Hub and directly acquired from the ES.
 
-FILTER AREA: the Filter Area contains the list of necessary data types thanks to which it is possible to perform a selection. Typically, filters have always “AND” condition and it is possible to specify more filter criteria at the same time.
+- **ES file name**: the name of the file that is created when the document is advanced to the GENERATED status; in the original format or after the application of a digital signature, this file represents the invoice to be sent to the ES.
 
-RESULT GRID: the Result Grid represents the list of records which correspond to filter data above mentioned. After having set search filters,  the user, by clicking on [Search] button on the related Ribbon, will obtain the list of the desired records.
+- **ES Id**: the unique identifier that the ES assigns to the document upon receipt.
 
+- **ES receive date**: the date on which the exchange system received the document sent to it. This information is obtained from the receipt notification that the ES issues upon receipt of the shipment and before proceeding with the formal checks of the file.
 
+- **Closing date**: the date of closure of the management flow (e.g., document Delivered).
 
-
-
-
+- **Last event date**: the date of the last status change that occurred on the file, either manually or due to advancement of processing on the ES.

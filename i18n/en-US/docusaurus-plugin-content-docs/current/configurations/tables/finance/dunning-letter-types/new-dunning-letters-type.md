@@ -1,50 +1,40 @@
 ---
-title: Dunning Letters - New Type
+title: New Reminder Type (Nuovo tipo solleciti)
 sidebar_position: 3
 ---
 
+The fields of this form are:
 
+**Code**: identification code of the reminder type.
 
-| Function | Meaning |
-| --- | --- |
-| Code | Identification code of dunning letter type |
-| Description  | Description of the dunning letter type |
-| Dunning Letters for Maturity Value Group | In particular the management flag for maturity values group will manage a dunning letter (standard management), on the contrary without flag every maturity value would have its dunning letter that would be separate from the others |
-| Interest Type | The link to the interest rate type for the application to the payment delay is optional, in order to obtain a calculation to the confirmation date of the dunning letter |
+**Description**: description of the reminder type.
 
-With the save of dunning letter type it is possible to create different levels with the command ‘New'
+**Interest type**: optional, it is the link to the type of interest rate to apply to the late payment, to obtain a calculation as of the date of issuance of the reminder.
 
+**Reminder for group of items (Sollecito per gruppo partite)**: the flag for managing a group of items, in particular, will manage a reminder letter for a group of items simultaneously (standard management), while without the flag each accounting item would have its reminder separate from the others.
 
+Once the reminder type is saved, it is possible to create its various levels using the ‘new’ button.
 
-| Function | Meaning |
-| --- | --- |
-| Code  | Identification code of the dunning letter  |
-| Description | Description of the dunning letter type |
-| Priority | Creation priority from 1 to N levels |
-| Late Days | It indicates the late days that have to accrue until the maturity value dunning letter |
-| Days | It refers to the number of late days of the dunning letter and to the fact if those have to be counted from the creation date or from the due date of the previous dunning letter |
-| From Previous Movement | Reference date for levels after the first |
-| From Creation Date  | Reference date that is usually used for first level |
-| Credit | The connection to a customer credit control type is not managed  |
+**Code**: identification code of the reminder.
 
-For every dunning letter number it will be possible to proceed, if saved, to the insertion of different texts: the first to upload will be the default one, above all when the customer register has no predefined language. 
+**Description**: description of the reminder type.
 
-Texts can be devided into 4 sections: object of the letter, header, conclusion and references section (that is active only for dunning letters on maturity values groups). In the section references, in particular, it is possible to insert a text using codes of the mask base: e.g. “Ref. (3) n. (4) on (5), (9) of (8) (10) with due date on (6)”. 
+**Priority**: priority of creation from 1 to N levels.
 
-RIBBON BAR: the ribbon bar represents the Form menu, that is the area in which it is possible to operate on previous recordings or generate new ones. The possible features list is the following:
+**Credit type description**: the link to a type of customer credit control is not managed.
 
+**Late days**: indication of the days of delay that must elapse before reminding about the item.
 
+**Days**: the number of days of expiration of the reminder and whether these are to be counted from the creation date or from the expiration date of the previous reminder.
 
-| Function | Meaning |
-| --- | --- |
-| Search | It is a command that is necessary in order to look for a dunning letter type through the fields: code and description |
-| New Type | It is a command to create a new dunning letter type |
-| Edit Type | It is a command that is necessary in order to edit the dunning letter type, where the user is located |
-| View Type | It is a command that is necessary in order to view the dunning letter type, where the user is located |
-| Delete Type | It is a command that is necessary in order to delete the dunning letter type, where the user is located |
+**From the date of previous transaction (Da data movimento precedente)**: reference date for levels following the first.
 
+**From creation date**: reference date usually used for the first level.
 
+:::danger ATTENTION (ATTENZIONE)
+The values of the fields "**Late days**" and "**Days**", particularly for reminders following the first, are summed and therefore in the case of the second, third reminder, etc., it is generally not necessary to add a value in the *Late days* parameter; instead, it is possible to refer to the additional time elapsed since the date of the first reminder via the *Days* parameter.
+:::
 
+For each reminder number, once saved, you can proceed to enter the various texts in the language: the first to be uploaded is the one that will be used by default when the customer registry does not have an assigned language.
 
-
-
+The texts are divided into 4 sections: the subject of the letter, the header, the conclusion, and the references section (active only for reminders on groups of items). In the references section, in particular, you can insert text using the codes provided at the bottom of the mask: e.g., “Ref. (3) no. (4) of (5), (9) of (8) (10) due on (6)”.

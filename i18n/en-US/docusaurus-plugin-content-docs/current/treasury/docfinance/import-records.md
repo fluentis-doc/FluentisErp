@@ -1,31 +1,25 @@
 ---
-title: Importazione registrazioni
+title: Import Records
 sidebar_position: 3
 ---
 
-Attraverso questa procedura si esegue la procedura di importazione del file delle registrazioni contabili creato da DocFinance.
+Through this procedure, the import process of the accounting records file created by DocFinance is executed.
 
-L'importazione avviene attraverso un flusso *Folder Monitor* di Bizlink.
+The import occurs through a *Folder Monitor* flow in Bizlink.
 
-Pertanto il file con le registrazioni da importare sarà depositato nella cartella monitorata dal servizio il quale provvederà ad importarle n automatico.
+Therefore, the file with the records to be imported will be deposited in the folder monitored by the service, which will automatically import them.
 
-A questo punto il sistema andrà a creare le registrazioni contabili relative, chiudendo le partite indicate da DocFinance e rilevando contabilmente i movimenti sui conti mappati nel sistema (le causali contabili devono avere lo stesso codice tra ERP e DocFinance).
+At this point, the system will create the corresponding accounting records, closing the items indicated by DocFinance and accounting for the movements on the accounts mapped in the system (the accounting reasons must have the same code between ERP and DocFinance).
 
-Il risultato dell'importazione sarà visibile nella griglia inferiore (mentre nella superiore saranno visualizzati le importazioni eseguite) e con i comandi della ribbon bar sarà possibile cancellare l'importazione e visualizzare il dettaglio degli errori riscontrati nel corso dell'importazione.
+The result of the import will be visible in the lower grid (while in the upper grid, the executed imports will be displayed), and with the commands on the ribbon bar, it will be possible to delete the import and view the details of any errors encountered during the import.
 
-:::danger ATTENZIONE
-L'importazione dei pagamenti prevede che nel tracciato Docfinance sia passato l'id della partita aperta da chiudere andando così a generare da parte di Fluentis un pagamento ad essa agganciato.
+:::danger WARNING (ATTENZIONE)
+The import of payments requires that the ID of the open item to be closed is passed in the DocFinance layout, thereby generating a payment linked to it by Fluentis.
 
-Se per qualsiasi motivo l'id della partita non corrisponde a quello presente nel tracciato (modifiche manuali di qualsiasi genere effettuate dopo l'esportazione partite che sono state poi gestite in Docfinance) saranno generati dei pagamenti, ma essi non saranno correttamente agganciati alle partite le quali rimarranno aperte. E' possibile procedere a compensare tali partite oppure a ricercare i pagamenti importati in questa situazione, cancellarli e manualmente ricrearli agganciando correttamente la relativa partita. L'operazione si esegue, dopo aver cancellato il pagamento, premendo il tasto *Nuovo* e poi *Crea da partite / pagamenti* e selezionando la partita da chiudere.
+If for any reason the ID of the item does not match that of the layout (manual modifications of any kind made after the export of items that were then handled in DocFinance), payments will be generated, but they will not be correctly linked to the items, which will remain open. It is possible to offset such items or to search for the imported payments in this situation, delete them, and manually recreate them by correctly linking the respective item. The operation is performed, after deleting the payment, by pressing the *New (Nuovo)* button and then *Create from items/payments (Crea da partite / pagamenti)* and selecting the item to be closed.
 :::
 
 
-:::note Info
-[Link alle specifiche tecniche **Docfinance**](/pdf/it-IT/TRACCIATI_DocFinance_28_Luglio_2021.pdf)
+:::note Info (Info)
+[Link to the technical specifications **Docfinance**](/pdf/it-IT/TRACCIATI_DocFinance_28_Luglio_2021.pdf)
 :::
-
-
-
-
-
-

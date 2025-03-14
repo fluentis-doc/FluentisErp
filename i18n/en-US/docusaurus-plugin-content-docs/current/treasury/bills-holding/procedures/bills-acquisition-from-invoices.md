@@ -1,45 +1,42 @@
 ---
-title: Acquisizione effetti dalle fatture
+title: Bills from Invoices Issue
 sidebar_position: 1
 ---
 
-La procedura di acquisizione effetti dalle fatture, ricalca quella relativa alle [**partite**](/docs/treasury/bills-holding/procedures/bills-acquisition-from-maturity-values), alla quale **si rinvia**.
+The procedure for acquiring effects from invoices mirrors that related to [**maturities**](/docs/treasury/bills-holding/procedures/bills-acquisition-from-maturity-values), to which **reference is made**.
 
-Il dato di origine sarà, anzichè le partite aperte, direttamente le **scadenze delle fatture del ciclo attivo**.
+The source data will be, instead of the open maturities, directly the **deadlines of invoices in the active cycle**.
 
 
-:::tip[Nota]
-Ciò consente di anticipare la creazione e la presentazione in banca degli effetti (ad esempio le ricevute bancarie da portare al salvo buon fine) ancora prima di aver contabilizzato le fatture attive.
+:::tip[Note (Nota)]
+This allows for the advance creation and presentation to the bank of effects (for example, the bank receipts to be brought for collection) even before the active invoices have been accounted for.
 
-Si raccomanda di contabilizzare le fatture attive prima di contabilizzare l'emissione degli effetti per poter gestire la chiusura automatica delle partite aperte tramite la prima registrazione.
+It is recommended to account for the active invoices before accounting for the issuance of effects in order to manage the automatic closure of open transactions through the first registration.
 :::
 
 
-:::danger[Attenzione]
-La **gestione dell'acquisizione effetti dalle fatture** è alternativa all'acquisizione dalle partite.
+:::danger[Warning (Attenzione)]
+The **management of the acquisition of effects from invoices** is an alternative to the acquisition from maturities.
 :::
 
-**Pulsanti specifici:**
+**Specific Buttons:**
 
-**Ricerca**: Ricerca la lista delle scadenze per le quali creare gli effetti.
+**Search**: Searches the list of deadlines for which to create effects.
 
-**Acquisizione** Esegue la creazione degli effetti per le scadenze selezionate.
-
-
-### Tab Precedenti
-
-Eseguita la creazione, le righe spariranno dalla griglia del *filtro* e il risultato sarà visibile nella scheda **Precedenti** all'interno della quale è possibile annullare l'operazione. 
-
-Non è possibile annullare la creazione di effetti se questi sono contabilizzati o presentati in distinta.
+**Transfer**: Executes the creation of effects for the selected deadlines.
 
 
-**Pulsanti specifici:**
+### Previous Tab (Tab Precedenti)
 
-**Ricerca**: Ricerca la lista delle creazioni eseguite.
+Once the creation is executed, the lines will disappear from the *filter* grid and the result will be visible in the **Previous** tab, within which it is possible to cancel the operation.
 
-**Rollback acquisizione**: Con questo pulsante sarà cancellata tutta l'acquisizione effettuata, con tutti gli effetti associati.
-
-**Rollback effetto**: Con questo pulsante sarà cancellata la creazione del singolo effetto selezionato.
+It is not possible to cancel the creation of effects if they have been accounted for or presented in the statement.
 
 
+**Specific Buttons:**
 
+**Search**: Searches the list of completed creations.
+
+**Rollback acquisition**: With this button, all acquisition performed will be deleted, along with all associated effects.
+
+**Rollback Bill**: With this button, the creation of the selected single effect will be deleted.

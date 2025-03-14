@@ -1,35 +1,29 @@
 ---
-title: Intendo Declaration
+title: Intent Declaration 
 sidebar_position: 2
 ---
 
-At the opening of the window, it is possible to see the current accounting year.
+Upon opening the window, the current accounting period is proposed.
 
-It is possible to print all the Intendo Declarations or filter the report by:
+It is possible to print all statements of intent or filter the print by:
 
-**Declaration type**: customer, vendor;
+**Declaration type**: Customer or Supplier;
 
-**It is possible to search a customer/vendor register detail account** according to what has been selected in the previous field;
+**Search for a detail account of customer or supplier registry**: based on what is selected in the previous field;
 
-**According to the VAT  ref.   From/to.**
+**Number of our protocol from / to**.
 
-Among the elements that have to be printed it is possible to diversify the description of the field 'VAT office of' and the field  and 'Operation Description'.
+Among the items to be printed, it is possible to vary the description of the VAT Office field and the Operation Description field.
 
-The date of print is the current date of the system.
+The proposed print date is today's system date.
 
-It is possible to set many copies of the declaration; the default value is 1.
+WARNING:
 
-RIBBON BAR: it represents the form menu, that is the area in which it is possible to perform actions. The list of features is the following:
+There are several prints selectable from the dropdown in the upper left, to be combined to obtain the different parts of the ministerial model (e.g., front page, details, plafond).
 
 
 
-| Function | Meaning |
+| Function | Extended Description |
 | --- | --- |
-| Preview | Button to launch the print preview of the Intendo Declarations. |
-| Report | Button to launch the concrete print of the Intendo Declarations. |
-
-
-
-
-
-
+| Preview | Button to run the print preview of the statements of intent. |
+| Report | Button to carry out the physical printing of the statements of intent. |

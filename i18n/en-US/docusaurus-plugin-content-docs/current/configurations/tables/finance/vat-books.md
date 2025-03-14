@@ -3,51 +3,77 @@ title: VAT Books
 sidebar_position: 20
 ---
 
-This is the setting table of VAT books to manage in active company.
+Form path: **Configuration > Tables > Administration > VAT Books (Configurazione > Tabelle > Amministrazione > Registri IVA)**
 
+:::tip[Fast Start (FAst Start)]
+The table is affected by the [**Fast Start**](/docs/guide/fast-start) procedure.
 
+If you intend to configure manually, refer to the checklist of the linked page.
 
-| Function | Meaning |
-| --- | --- |
-| Code | Alphanumeric code that identifies the register |
-| Description | Description of the register that is usually printed in official reports |
-| Register Type | Pre-encoded typology of register |
-| Description | Description of register type |
-| Protocols Control | The setting of this flag blocks the possibility to print a register in definitive, that could have deficits in the protocols or incongruities in the organization of them  |
-| To Allocate | This flag imposes the management of its register in the valuable consideration allotment procedure |
-| In VAT Settlement | It enables the user to determine which VAT registers to manage in the periodic VAT settlement print |
-| Ref. Rec. Purchase | This field is active only for valuable considerations/sales registers, in order to indicate the beginning purchases VAT register of the valuable considerations allotment  |
-| Description | Ref. rec. Purchase description |
+The registers created by the Fast Start are already ready to manage:
+- Purchases and sales in Italy
+- Purchases and sales Reverse Charge as well as a section for purchase offsetting
+- Purchases and sales EU as well as a section for purchase offsetting
+- Purchases and sales Extra EU
+- Revenue
+- Summary for VAT liquidation printing
+:::
 
-This section enables the user to organize the starting number of references for every accounting period in field ‘First VAT reference'. 
+### Specific Buttons
 
+**New**: allows for the entry of a new VAT register.  
+**Insert year**: allows for the entry of a new year for the VAT register on which you are positioned.  
+**Cancel**: allows for the deletion of the VAT register on which you are positioned.  
+**Delete year**: allows for the deletion of the year of the VAT register on which you are positioned.  
+**Preview**: allows for printing.  
+**Print Report**: allows for printing.  
+**Cancel definitive reports**: allows for the cancellation of the definitive prints of the registers. A dialog opens in which to select the register and the period you want to cancel.  
+:::
 
+### First Section
 
-| Function | Meaning |
-| --- | --- |
-| Year | Reference year |
-| First VAT Reference | First VAT reference number of the reference year |
-| Last VAT Reference | The field ‘Last VAT reference number' enables the user to visualize the last VAT reference number, that was printed in definitive in the same register |
-| Last Print Date | Execution date of the last definitive print |
-| Last Page Printed | Last page printed in definitive |
-|  |  |
+**Code**: alphanumeric code identifying the register.
 
-RIBBON BAR: the ribbon bar represents the Form menu, that is the area in which it is possible to operate on previous recordings or generate new ones. The possible features list is the following:
+**Description**: description of the register typically printed in official reports.
 
+**Nomenclature type**: pre-coded type of the register. Pay attention to the correct setting for registers that accommodate offsetting for intra or reverse charge purchases, which will be set to *Sales* and differentiate correctly between purchases/sales under tax suspension and the special regime ex art. 74 ter dpr 633/72.
 
+**Control VAT reference no.**: setting this flag blocks the ability to definitively print a register that has gaps in the protocols or inconsistencies in their ordering.
 
-| Function | Meaning |
-| --- | --- |
-| Insert | Button to insert a new VAT register |
-| Insert Year | Button to insert a new year for VAT register, where the user is located |
-| Delete VAT Book | Button to delete the VAT register, where the user is located |
-| Delete Year | Button to delete the VAT register year, where the user is located |
-| Preview | Button to perform the preview |
-| Print  | Button to print |
-| Cancel Definitive Reports | Button to cancel definitive reports of registers. A dialog can be open where it is possible to select the register and period to cancel |
+**To allocate**: this flag imposes management of the related register in the procedure for the allocation of revenues.
 
+**To settle**: allows determining which VAT registers are to be managed in the printing of the periodic VAT liquidation.
 
+**Ref. purchase reg. (Rif. reg. acquisto)**: the field is active only for sales/revenue registers, to indicate the originating purchase VAT register of the revenue allocation.
 
+**Description**: description of the ref. purchase register.
 
+**Numeration**: allows setting a numerator for each register with the usual standard options common to other numerators present in the management system, instead of the standard numbering provided for VAT registers. In the Italian localization, this field is not used.
 
+**Description**: description of the associated numerator.
 
+**Vat Activity Type**: the combo box refers to the VAT Activity Type table where various types of activities can be freely coded for VAT purposes (for example, "Production" and "Real Estate") to which a percentage of *Pro Rata* VAT deductibility can be associated. There is also a flag to define which is the main activity predominant on which to total the values in the VAT liquidation.
+
+**Description**: description of the VAT activity type.
+
+### Second Section  
+
+Allows setting the protocol counter for each fiscal year in the 'Initial VAT Prot. (Prot. IVA Iniziale)' field.
+
+**Year**: reference year.
+
+**Initial VAT Prot. (Prot. IVA iniziale)**: initial VAT protocol for the reference year.
+
+**Last VAT Prot. (Ultimo prot. IVA)**: allows viewing which is the last VAT protocol that has been definitively printed in the register itself.
+
+**Last print date**: date of execution of the last definitive print.
+
+**Last printed page (Ultima pag. stampata)**: last page number printed definitively.
+
+:::tip Note
+Printing this table allows viewing the last period printed definitively for each register and year.
+:::
+
+:::important See Also
+[**VIDEO TUTORIALS ON ADMINISTRATIVE TABLES**](/docs/video/finance/intro)
+:::

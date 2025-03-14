@@ -1,32 +1,22 @@
 ---
-title: Nomenclature Codes
+title: Nomenclature codes
 sidebar_position: 12
 ---
 
-The table enables the user to define and manage the intra nomenclature codes list, that are in use in the company. Therefore it is possible to delete, add and edit the existing list
+The table allows for defining and managing the list of combined nomenclature codes used in the company for Intrastat. It is therefore possible to delete, add, and modify the existing list.
 
+**Nomenclature code**: represents the code of the nomenclature.
 
+**Short description**: a non-essential field useful for entering a second description or abbreviated description.
 
-| Function | Meaning |
-| --- | --- |
-| Nomenclature Code | Nomenclature Code |
-| Description | Nomenclature description  |
-| Supp. UM | Supplementary unit of measurement |
+**Description**: represents the description of the nomenclature code.
 
-RIBBON BAR: the ribbon bar represents the Form menu, that is the area in which it is possible to operate on previous recordings or generate new ones. The possible features list is the following:
+**Supp MU**: represents the supplementary unit of measure (See the official instructions for Intrastat models on the Customs Agency website).
 
+**Expiration Date**: to block the use of the corresponding code.
 
+**Service**: indicates the coding of a nomenclature of services, consisting of 5 characters, to be proposed in the valuation of the sections of services in the models.
 
-| Function | Meaning |
-| --- | --- |
-| Search | Button to look for a nomenclature code through the fields: code, description and U.M. |
-| New | Button to insert a new nomenclature code |
-| Delete  | Button to delete the nomenclature code, where the user is located |
-| Preview  | Button to perform the preview |
-| Print | Button to launch the print |
-
-
-
-
-
-
+:::tip Note (Nota)
+Within Bizlink, there is a procedure for importing from a spreadsheet to update the nomenclatures en masse year by year.
+:::

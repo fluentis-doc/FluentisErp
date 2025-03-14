@@ -45,5 +45,5 @@ For example: A positive accounting debit total (and therefore a positive account
 ### **VIDEO TUTORIALS**
 
 :::important See Also
-[**VIDEO TUTORIALS ON OPEN MAT. VALUES**](/docs/video/finance/intro.md)
+[**VIDEO TUTORIALS ON OPEN MAT. VALUES**](/docs/video/finance/intro)
 :::

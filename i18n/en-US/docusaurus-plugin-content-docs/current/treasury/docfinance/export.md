@@ -1,27 +1,21 @@
 ---
-title: Esportazioni
+title: Exports (Esportazioni)
 sidebar_position: 2
 ---
 
-Da questa maschera si eseguono le esportazioni dati per DocFinance, con tre diverse opzioni.
+From this screen, data exports for DocFinance are executed, with three different options.
 
-**Esporta anagrafica**: l'attivazione di questo flag imporrà al sistema di creare il file di allineamento del piano dei conti e delle anagrafiche. Una volta impostato si attiveranno i campi collegati successivi, dove impostare il nome file e il percorso condiviso di creazione (entrambi i dati saranno memorizzati per essere riproposti alla creazione successiva). Il primo campo ‘Data ultima esportazione' consente di definire la data di riferimento per l'esportazione dei soli dati modificati/aggiunti nel piano dei conti: è consentito cancellare questa data in modo da creare un file completo di tutte le impostazioni di piano dei conti/anagrafiche (la cosa ha chiaramente un impatto significativo sui tempi necessari all'allineamento tra i due sistemi)
+**Export nomenclature**: activating this flag will compel the system to create the alignment file for the chart of accounts and registries. Once set, the subsequent related fields will be activated, where you can set the file name and the shared creation path (both pieces of data will be stored to be reused in future creations). The first field ‘Last export date (Data ultima esportazione)' allows you to define the reference date for exporting only modified/added data in the chart of accounts: it is allowed to clear this date in order to create a complete file of all chart of accounts/registries settings (this clearly has a significant impact on the time needed for alignment between the two systems).
 
-**Creazione automatica cash flow**: con questo flag il programma andrà a creare un nuovo cash flow nel modulo omonimo, prima di procedere all'eventuale esportazione dati del punto successivo. La creazione avverrà con i parametri di default della procedura ‘Creazione automatica cash flow': si rinvia alla documentazione specifica per ulteriori dettagli.
+**Automatic creation of cash flow**: with this flag, the program will create a new cash flow in the corresponding module before proceeding with the potential data export of the next point. The creation will happen with the default parameters of the ‘Automatic cash flow creation' procedure: please refer to the specific documentation for further details.
 
-**Esporta cash flow**: con questo flag il sistema andrà a creare il file dei flussi finanziari, sia come partite contabili che come previsionali. Quando il flag viene impostato, si attiva il successivo flag ‘Derogabilità da anagrafici/tipi pagamento' e i campi con i nomi e il percorso condiviso di creazione del file (entrambi memorizzati). In dettaglio, a seconda che sia stato impostato il flag ‘Derogabilità da anagrafici/tipi pagamento' o meno, la logica di assegnazione della derogabilità cambia: in caso non sia impostato, la derogabilità per i fornitori sarà rilevato dal tipo di pagamento e per i clienti dall'anagrafica; in caso sia impostato, la derogabilità deriverà dall'anagrafica cliente/fornitore e se qui non è impostata sarà calcolata con codici fissi (‘01' per le riba, oppure ‘01' – ‘02' – ‘03' – ‘04' a seconda che la differenza tra data scadenza e data attuale restituisca una data scaduta, una differenza inferiore ai 30 giorni, dai 30 ai 90, oltre i 90).
+**Export cash flow**: with this flag, the system will create the file of financial flows, both as accounting items and forecasts. When the flag is set, the subsequent flag ‘Derogability from registries/payment types (Derogabilità da anagrafici/tipi pagamento)' and the fields for the names and shared creation path of the file (both stored) will be activated. Specifically, depending on whether the ‘Derogability from registries/payment types' flag is set or not, the logic for assigning derogability changes: if it is not set, derogability for suppliers will be determined by the payment type and for customers from the registry; if it is set, derogability will derive from the customer/supplier registry, and if not set here, it will be calculated with fixed codes (‘01' for bills, or ‘01' – ‘02' – ‘03' – ‘04' depending on whether the difference between expiration date and current date returns an overdue date, a difference of less than 30 days, from 30 to 90, or over 90).
 
-Alla base della maschera va definito l'utente che andrà ad eseguire la creazione dei file. È necessario che questo abbia accesso alle cartelle condivise impostate per la creazione dei file.
+At the bottom of the screen, the user who will execute the file creation needs to be defined. This user must have access to the shared folders set for file creation.
 
 
 
-| Funzione | Significato |
+| Function (Funzione) | Meaning (Significato) |
 | --- | --- |
-| Salva | Con questo pulsante è possibile salvare le impostazioni da proporre di default nella maschera. |
-| Esportazione | Esegue la creazione del/i file/s così come impostati nella maschera. |
-
-
-
-
-
-
+| Save (Salva) | With this button, you can save the settings to be proposed by default in the screen. |
+| Export (Esportazione) | Executes the creation of the file(s) as set in the screen. |

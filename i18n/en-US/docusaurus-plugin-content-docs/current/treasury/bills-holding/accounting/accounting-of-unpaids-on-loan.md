@@ -1,51 +1,48 @@
 ---
-title: Contabilizzazione Insoluti su cessione
+title: Accounting of unpaid on disposal
 sidebar_position: 6
 ---
 
-La form si trova in Tesoreria > Portafoglio Effetti > Contabilizzazione > Contabilizzazione insoluti su cessione
+The form is located in Treasury > Portfolio Effects > Accounting > Accounting of unpaid on disposal.
 
-Da questa maschera si procede alla contabilizzazione degli insoluti girati in pagamento a fornitore: la procedura, secondo le impostazioni della causale contabile impostata, riaprirà le partite clienti associate ai titoli insoluti così come le partite fornitori chiuse con il giro del titolo.
+From this screen, you proceed to account for the bad debts assigned for payment to the supplier: the procedure, according to the settings of the accounting reason set, will reopen the customer accounts associated with the bad debt titles as well as the closed supplier accounts with the title assignment.
 
+## How to Account for a Bad Debt on Assignment
 
+1. Use the top part of the screen to filter the search for bad debts to be accounted for.
+2. Select from the central grid the bad debts you wish to account for.
+3. Fill in the parameters tab for accounting, entering data such as **Ledger Records Template**, **Posting date**, and **Competence date**.
 
-## Come contabilizzare un insoluto su cessione
-
-1. Utilizza la parte superiore della maschera per filtrare la ricerca degli insoluti da contabilizzare.
-2. Seleziona dalla griglia centrale gli insoluti che desideri contabilizzare.
-3. Compila la Tab parametri per la contabilizzazione, inserendo i dati quali la **Causale di contabilità**, la **data registrazione** e la **data competenza**.
-
-:::note[Nota]
-Questa sezione può essere predefinita all'interno dei [**parametri**](/docs/configurations/parameters/treasury/bills-portfolio-parameters) del modulo Portafoglio effetti.
+:::note[Note]
+This section can be predefined within the [**Parameters**](/docs/configurations/parameters/treasury/bills-portfolio-parameters) of the Portfolio Effects module.
 :::
 
-Il flag **Spese di Rivalsa** andrà a gestire l'addebito delle spese sul conto cliente, rilevando il relativo ricavo secondo il sottoconto inserito nella maschera stessa (**Conto / sottoconto addebito spese al cliente**) .
+The flag **Charges recourse** will manage the charge of expenses to the customer account, recording the related revenue according to the sub-account entered in the screen itself (**Account / sub-account for charging customer expenses (Conto / sottoconto addebito spese al cliente)**).
 
-i sottoconti per le **Spese di protesto** e il conto **Transitorio** sono ripresi dai parametri del modulo, ma possono essere modificati o inseriti di volta in volta.
+The sub-accounts for **Protest expenses** and the **Transitory (Transitorio)** account are taken from the module parameters, but they can be modified or entered each time.
 
-4. Premi il bottone nella ribbon bar **Contabilizzazione insoluti**.
+4. Press the button in the ribbon bar **Unpaid accounting**.
 
-**Pulsanti specifici**
+**Specific Buttons**
 
-**Ricerca**: Ricerca la lista degli insoluti da contabilizzare.
+**Search**: Searches for the list of bad debts to be accounted for.
 
-**Contabilizza**: Esegue la contabilizzazione per le righe selezionate.
+**Accounting**: Executes the accounting for the selected rows.
 
-### Tab Precedenti
+### Previous Tab
 
-Dalla scheda *precedenti* è possibile procedere all'annullamento delle contabilizzazioni eseguite. 
+From the *previous* tab, it is possible to cancel the accounting executed.
 
-L'annullamento sarà possibile solo se il periodo è ancora modificabile (stampa libro giornale e chiusura conti non eseguite). 
+Cancellation will only be possible if the period is still editable (journal book printing and account closure not executed).
 
-Un doppio click nella sezione delle registrazioni consentirà di visualizzare la registrazione contabile relativa. 
+A double click in the recording section will allow viewing the related accounting record.
 
-È presente un Tab di dettaglio di visualizzazione degli errori rilevati nel corso della contabilizzazione.
+There is a detail tab for viewing errors detected during the accounting process.
 
+**Specific Buttons**
 
-**Pulsanti specifici**
+**Search**: Searches for the list of executed accountings.
 
-**Ricerca**: Ricerca la lista delle contabilizzazioni eseguite.
+**Restore Accounting**: Restores the selected accountings.
 
-**Ripristina contabilizzazione**: Esegue il ripristino delle contabilizzazioni selezionate.
-
-**Ripristina insoluti**: Esegue il ripristino della registrazione contabile selezionata riferita al singolo insoluto.
+**Restore Bad Debts (Ripristina insoluti)**: Restores the selected accounting record related to the individual bad debt.

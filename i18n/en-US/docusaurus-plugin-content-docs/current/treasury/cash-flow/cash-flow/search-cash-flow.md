@@ -1,46 +1,32 @@
 ---
-title: Ricerca cash flow
+title: Search Cash Flow
 sidebar_position: 1
 ---
 
 LINK:
 
-** [Tabelle preliminari da gestire](/docs/treasury/cash-flow/general-overview) **
+**[Preliminary tables to manage (Tabelle preliminari da gestire)](/docs/treasury/cash-flow/general-overview)**
 
-** [Elaborazione automatica](/docs/treasury/cash-flow/procedures) **
+**[Automatic processing (Elaborazione automatica)](/docs/treasury/cash-flow/procedures)**
 
-** [Stampa](/docs/treasury/cash-flow/reports) **
-
- 
+**[Print (Stampa)](/docs/treasury/cash-flow/reports)**
 
  
 
-Dalla presente form è possibile ricercare e modificare elaborazioni inserite precedentemente. 
+ 
 
-E' anche possibile inserire una nuova elaborazione che risulterebbe, in questo caso, completamente manuale (e quindi di scarso utilizzo pratico).
+From this form, it is possible to search for and modify previous entries. 
 
-Si consiglia di creare il cash flow dalla procedura ** [Generazione automatica cash flow](/docs/treasury/cash-flow/procedures) **.
+It is also possible to enter a new processing, which in this case would be completely manual (and therefore of limited practical use).
 
-
-
-
-
-| Funzione | Significato |
-| --- | --- |
-| Ricerca | Pulsante per applicare i filtri di ricerca all'intero database dei cash flow inseriti. |
-| Nuovo | Richiama la procedura per inserire un nuovo cash flow. |
-| Modifica | Richiama la procedura per modificare un cash flow precedentemente inserito. |
-| Visualizza | Richiama la procedura per visualizzare un cash flow precedentemente inserito. |
-| Cancella | Esegue la procedura per cancellare un cash flow precedentemente inserito. |
+It is recommended to create the cash flow from the **[Automatic cash flow generation (Generazione automatica cash flow)](/docs/treasury/cash-flow/procedures)** procedure.
 
 
+#### Specific buttons
 
-| Funzione | Significato |
-| --- | --- |
-| Analisi cash flow | Richiama la procedura per stampare un cash flow. |
-
-
-
-
-
-
+> **Search**: Button to apply search filters to the entire database of entered cash flows.  
+> **New**: Calls the procedure to enter a new cash flow.  
+> **Modify**: Calls the procedure to modify a previously entered cash flow.  
+> **View**: Calls the procedure to view a previously entered cash flow.  
+> **Cancel**: Executes the procedure to delete a previously entered cash flow.  
+> **Cash Flow Analysis**: Calls the procedure to print a cash flow.

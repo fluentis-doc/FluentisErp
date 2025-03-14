@@ -3,26 +3,20 @@ title: Depreciation Plans Simulation
 sidebar_position: 3
 ---
 
-Every simulation is linked to the user that has calculated it: at the opening of the mask there will be the button to view the last calculation performed by the user (this elaboration can be quite demanding in terms of time and elaboration resources).
+Each simulation is linked to the user who calculated it: upon opening the form, the button to view the last calculation made by the user will be available (this processing can be quite demanding in terms of time and processing resources).
 
-The maximum years range provided for the simulation corresponds to 10 years. The following flags enable the user to set which types of property (property, leasing, hire) have to be considered in the simulation.
+The maximum range of years allowed for the simulation is a span of 10 years. The subsequent flags allow you to define which types of properties (property, leasing, rental) should be considered in the simulation.
 
-In the grid below it will be possible to indicate different depreciation plans to be calculated: for this reason it will be possible to calculate for each of them which depreciation types have to be simulated, together with fiscal option or not. The “calculate” flag identifies which plans will go on to simulate.
+In the list below, you will indicate the different amortization plans to be calculated: for each, it will be possible to define which types of amortization should be simulated, including the option for tax or not. The Calculate flag identifies for which plans the simulation will proceed.
 
-Once having saved the settings it will be possible to calculate through the specific button: at the end of the elaboration it will be viewed a summary mask of totals of category for each year/plan or for each plan/year. It is possible to change the visualization between both one and the other criterion thanks to the specific button. Starting from this mask there is an excel export.
+Once the settings are saved, the calculation will proceed with the appropriate button: at the end of the process, a summary mask of the totals by category for each year/plan or by plan/year will be displayed. You can switch the view between one criterion and the other with the appropriate button. From this mask, an Excel export is provided.
 
-RIBBON BAR: the ribbon bar represents the Form menu, that is the area on which it is possible to perform actions linked to the procedure in use. The possible features list is the following:
+RIBBON BAR: represents the menu of the form in question, that is, the area where you can perform actions related to the procedure in use. The list of possible functionalities is represented below:
 
 
 
-| Function | Meaning |
+| Function | Extended Description |
 | --- | --- |
-| Save | It saves the calculation settings for the active user. |
-| View the last Calculation | It views the result of the last calculation performed. |
-| Calculate | It performs the calculation according to settings saved. |
-
-
-
-
-
-
+| Save | Save the calculation settings for the active user. |
+| View last calculation | View the result of the last calculation performed. |
+| Calculate | Execute the calculation according to the saved settings. |

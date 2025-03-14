@@ -67,7 +67,7 @@ Questo possibile abbinamento multiplo ottimizza e razionalizza la gestione dei d
 ## VIDEO TUTORIALS SULLE ANAGRAFICHE
 
 :::important Vedi Anche
-[**VIDEO TUTORIALS SULLE ANAGRAFICHE**](/docs/video/finance/intro.md)
+[**VIDEO TUTORIALS SULLE ANAGRAFICHE**](/docs/video/finance/intro)
 :::
  
 

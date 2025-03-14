@@ -1,78 +1,106 @@
 ---
-title: Fixed Asset Category
+title: Fixed Fixed Asset Category
 sidebar_position: 5
 ---
 
-In this table it is possible to code the fixed assets category, that will be managed in the company.
+:::tip[FAst Start]
+The table is affected by the [**Fast Start**](/docs/guide/fast-start) procedure.
 
+If you intend to configure it manually, please refer to the checklist on the linked page.
+:::
 
+Within this table, the categories of assets managed within the company are encoded.
 
-| Function | Meaning |
-| --- | --- |
-| Code | Alphanumeric code   |
-| Description | Category description |
-| Account | Immobilization patrimonial account |
-| Detail Account | The immobilization patrimonial detail account  |
-| Description | Description of the immobilization patrimonial detail account |
-| Mat/Imm | Information about the material or immaterial asset typology |
-| Max. Depreciation | Maximum amount of the achievable depreciation for every category fixed asset |
-| Perc. Depr. | Maximum percentage of the fixed asset value, that could be amortized |
-| Incremental Oper. | If the flag is not set up as a default flag, every increase line of the fixed asset value will be managed with a distinct and autonomous depreciation detailOn the contrary, if the flag is set up, every increase will be assigned to the initial purchase line, in order to increase the initial value in the original date |
-| Tot. Depr. Limit | Limit amount for 100% total depreciation application on the purchase year |
-| Revaluations | Management flag of revaluations details  |
-| Balance Code | Balance code for the revaluations prospect print |
-| Objective Depr. | It activates the management of the fixed asset objective data: this causes a duplication of the accounting patrimonial values in order to use a non-accounting distinct depreciation logic |
-| Days of Use Calculation | It is a flag, that is necessary in order to activate the calculation of fixed asset days of use |
+### Upper Table
 
-The second section deals with the setting of depreciation details, which can be applicable to the selected upper category.
+**Category**: alphanumeric code.
 
+**Category Description**: description of the category.
 
+**Account**: the balance sheet account for the fixed asset.
 
-| Function | Meaning |
-| --- | --- |
-| Depr. Type | It's necessary to select the depreciation typology between: standard depreciation, anticipated depreciation and decelerated depreciation, the last is not very used normally. |
-| Account Cost | In the account cost it is possible to find the periodic depreciation  |
-| Detail Acc. Cost | In the detail account cost it is possible to find the periodic depreciation |
-| Account Description | Detail account cost description |
-| Fund Account | In the fund account it is possible to put aside the periodic depreciation  |
-| Fund Detail Account  | In the fund detail account it is possible to put aside the periodic depreciation, that could correspond to the same patrimonial asset value in order to charge off directly from this value |
-| Account Description | Fund detail account description |
-| Exclude | The flag enables the user to exclude the selected depreciation type from the automatic calculation |
-| Percentage | It is the applicable depreciation percentage for the set depreciation type |
-| Year Number | It can be activate only in correspondence to the anticipated depreciations, where the user has to record the 3 application years. According to this value, it's important to remember that, for the used fixed assets, the application years number is automatically set only on the purchase year |
-| Depr. First Year | Depr. First Year	It is proposed automatically for all material categories and it will have the depreciation percentage in the first year activity of fixed asset |
-| Fiscal | It could be inserted for the anticipated depreciation lines in order to manage it as a non-accounting fiscal depreciation  |
-| Deductibility Type | It enables the user to assign a deductibility code to the depreciation type for taxation |
-| Deductibility Description | Deductibility type description |
+**Detail account**: the balance sheet subaccount for the fixed asset.
 
-In the third section it is possible to assign the default percentage valorization with cost center and for the category fixed assets, always with reference to every depreciation line. This setting is not so important as the cost centers assignment in the fixed asset register.
+**Description**: description of the balance sheet subaccount for the fixed asset.
 
+**Mat/Immaterial (Mat/Imm.)**: indication of the type, Material or Immaterial, of the asset.
 
+**Max Depreciation Amount (Massimale amm.)**: maximum depreciation amount achievable for each asset in the category.
 
-| Function | Meaning |
-| --- | --- |
-| C.C. | It is the cost center to which assign the category fixed assets valorization |
-| Description | Cost center description |
-| Percentage | This is the valorization percentage setting for cost center |
+**Perc. Depr.**: the maximum percentage of the asset's value that can be depreciated.
 
-RIBBON BAR: the ribbon bar represents the Form menu, that is the area in which it is possible to operate on previous recordings or generate new ones. The possible features list is the following:
+**Incremental oper.**: if the flag is not set, as is default, each line of increment of the asset's value will be managed with a separate and autonomous depreciation detail. If the flag is set, on the contrary, each increment will be attributed to the initial purchase line, always increasing the initial value at its origin date.
 
+**Total Depreciation Limit (Limite amm. totale)**: limit for the application of total depreciation at 100% in the year of purchase.
 
+**Revaluations (Rivalutazioni)**: flag for managing the details of revaluations.
 
-| Function | Meaning |
-| --- | --- |
-| Search on Table above | It is a command, that is necessary in order to search information on table above and through the description and category filter fields |
-| Insert on Table above | It is a command, that is necessary in order to insert a new fixed asset category |
-| Insert on Detail Table  | It is a command, that is necessary in order to insert the detail of the selected table above  |
-| Insert on Table C.C. | It is a command, that is necessary in order to insert cost centers of the selected table above |
-| Delete Selected Lines | It is a command, that is necessary in order to delete the selected lines (fixed asset category) |
-| Delete Selected Lines from Table below | It is a command, that is necessary in order to delete the selected lines of the table below (depreciation type detail) |
-| Delete Selected Lines from C.C Table  | It is a command, that is necessary in order to delete the selected lines of the cost centers table |
-| Preview | It is a preview command  |
-| Print | It is a print command |
+**Budget Code (Cod. bilancio)**: budget code for printing the revaluation report.
 
+**Extra accounting values**: activates the management of the extracontable data of the asset: this involves a duplication of accounting balance sheet values in order to apply a separate extracontable depreciation logic.
 
+**Days**: By activating this flag, the calculation of the depreciation quota will take into account the exact days of possession of the asset in the current year, rather than referring to the standard logic that calculates the full quota regardless of the purchase date, possibly halving it in the first year if the flag *First Year Depreciation (Amm. Primo anno)* present in the second grid has been activated (see below).
 
+**Numeration**: (Optional) Allows defining a specific asset sheet numbering for each individual category. The field connects to the [**appropriate table**](/docs/configurations/tables/fluentis-numerations) where the numerator is defined. If not defined, by default, the general numbering of assets possibly linked to the precode (or unique) will continue to be used.
 
+### Second Table
 
+The second section is dedicated to setting up the depreciation details applicable to the selected upper category.
 
+**Depr. type**: select the type of depreciation between ordinary depreciation, accelerated depreciation, and decelerated depreciation, the latter normally not used.
+
+**Account**: cost account on which to record periodic depreciation.
+
+**Detail account**: cost subaccount on which to record periodic depreciation.
+
+**Account description**: description of the cost subaccount.
+
+**Fund account**: fund account to which periodic depreciation is allocated.
+
+**Fund det.acc.**: fund subaccount to allocate periodic depreciation, which could also be the same active balance sheet value to directly write off the amount.
+
+**Account description**: description of the fund subaccount.
+
+**Exclude**: the flag allows excluding the selected depreciation type from the automatic depreciation calculation.
+
+**Percent Completed**: the depreciation percentage to be applied for the set depreciation type.
+
+**Year no.**: activated only for accelerated depreciations, in which the 3 years of application must be entered. Regarding this value, it should be noted that for used assets, the number of application years is automatically set to the purchase year only.
+
+**First Year Depreciation (Amm. primo anno)**: automatically proposed for all material categories, it will halve the depreciation percentage in the asset's start activity year.
+
+**Fiscal**: can be set for accelerated depreciation rows to manage it as non-accountable fiscal depreciation.
+
+**Deductibility Type (Tipo deducibilità)**: allows assigning a deductibility code for tax purposes to the type of depreciation.
+
+**Deductibility Description (Descr. deducibilità)**: description of the deductibility type.
+
+#### Specific Buttons
+
+**Search in the Table Above**: allows searching in the upper table through the category and description filter fields.  
+**Insert in Upper Table (Inserisce nella tabella superiore)**: allows inserting a new asset category.  
+**Insert in Detail Table (Inserisce nella tabella dettaglio)**: allows inserting details of the selected upper table.  
+**Insert in Cdc Table (Inserisce nella tabella Cdc)**: allows inserting the Cdc of the selected upper table. OBSOLETE  
+**Delete selected lines**: allows deleting the selected rows (asset category).  
+**Delete Selected Lines from the Table Below**: allows deleting the selected rows from the lower table (details of the depreciation type).  
+**Delete Selected Rows from Cdc Table (Cancella righe selezionate dalla tabella Cdc)**: allows deleting the selected rows from the cost centers table. OBSOLETE  
+**Save**: allows saving changes.  
+
+### COST CENTERS GRID (REMOVED IF THE COMPLETE CONTROLLING MODULE IS ACTIVE IN THE COMPANY TABLE, WITHOUT THE COST CENTER USAGE PARAMETER)
+
+:::note NOTE
+Although the management of cost centers for assets can be processed with more sophisticated objective depreciation management logic, useful for the needs of in-depth management control, it is still possible to attach a specific cost center for each asset, **in the Detail tab** (or directly on the asset category, but in that case, it is necessary to deactivate the Controlling Management flag in the registry of the operating company) to value it with the annual quota calculated for fiscal and accounting purposes.
+:::
+
+Within the asset sheet in the cost centers grid of the **Asset Operations** tab, it is possible to assign, for the **single depreciation line**, the default percentage valuation to the cost center for assets linked to the category. This setting is secondary to the assignment of cost centers within the individual asset registry (that of the Detail tab).
+
+**CDC**: cost center to which to assign the valuation of the assets belonging to the category.
+
+**Description**: cost center description.
+
+**Percent Completed**: setting of the valuation percentage to the cost center.
+
+### **VIDEO TUTORIALS**
+:::important See Also
+[**VIDEO TUTORIALS ON ASSET TABLES**](/docs/video/finance/intro)
+:::

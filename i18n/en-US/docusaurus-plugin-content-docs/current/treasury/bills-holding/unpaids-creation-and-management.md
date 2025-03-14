@@ -1,44 +1,44 @@
 ---
-title: Creazione e gestione insoluti
+title: Creation and Management of Unpaid Items (Creazione e gestione insoluti)
 sidebar_position: 6
 ---
 
-La form si trova sul percorso  **Tesoreria > Effetti > Crea Insoluto** e permette la creazione di una *nuovo* insoluto.
+The form can be found at the path **Treasury > Effects > Create Unpaid (Tesoreria > Effetti > Crea Insoluto)** and allows for the creation of a *new* unpaid item.
 
-## Come creare un Insoluto
+## How to Create an Unpaid Item
 
-1. Dopo l'apertura della form, sebbene sia possibile compilare i campi manualmente, **utilizza** il comando ***Acquisizione dati*** (nella ribbon bar) per richiamare l'effetto che risulterà insoluto, tramite l'apposita finestra di dialogo e ricerca che viene aperta.
+1. After opening the form, although it is possible to fill in the fields manually, **use** the ***Data Acquisition*** command (in the ribbon bar) to recall the effect that will become unpaid, through the appropriate dialog and search window that opens.
 
-2. Dalla finestra di dialogo che è stata aperta, seleziona l'effetto, dopo aver utilizzato eventualmente i filtri presenti, e premi **Seleziona**. Tutti i dettagli dell'insoluto vengono compilati automaticamente, quali ad esempio importo, debitore, numero , tipo effetto ecc.... leggendoli dall'effetto stesso.
+2. From the dialog window that has opened, select the effect, after possibly using the present filters, and press **Select**. All the details of the unpaid item are automatically filled in, such as amount, debtor, number, effect type, etc., reading them from the effect itself.
 
-3. **Aggiungi** manualmente le **Spese** Bancarie e gli altri valori nel tab **Nota di addebito** per poter procedere successivamente alla contabilizzazione ed al riaddebito al debitore anche di questi importi. Alcuni di questi campi possono essere automatizzati, quali ad esempio gli interessi moratori e le spese bancarie, configurando opportunamente l'anagrafica della banca di presentazione e i [**parametri generali del modulo**](/docs/configurations/parameters/treasury/unpaids-parameters) insoluti (campo Tipo Interesse)
+3. **Add** manually the **Bank Expenses** and other values in the **Debit note** tab in order to proceed subsequently with accounting and recharging the debtor for these amounts as well. Some of these fields can be automated, such as late payment interest and bank fees, by appropriately configuring the profile of the presentation bank and the [**general parameters of the module**](/docs/configurations/parameters/treasury/unpaids-parameters) for unpaid items (field Interest Type).
 
-4. **Salva** l'insoluto creato
+4. **Save** the created unpaid item.
 
-La form **Gestione insoluto** presenta una testata fissa con i dati principali dell'insoluto e poi, nella parte inferiore, è suddivisa in 4 tab di dettaglio più un quinto per allegare documenti:
+The **Unpaid management** form presents a fixed header with the main data of the unpaid item and then, in the lower part, is divided into 4 detail tabs plus a fifth for attaching documents:
 
-## 1. Testata fissa
+## 1. Fixed Header (Testata fissa)
 
-Contiene i dati generali dell'insoluto, in particolare: 
+Contains the general data of the unpaid item, in particular: 
 
-- il campo delle **spese bancarie** per un'ulteriore modifica manuale 
-- il **numero** dell'insoluto che è uguale al numero dell'effetto d'origine. 
-- vari **flag di stato** a seconda delle operazioni effettuate sull'insoluto, quali ad esempio al contabilizzazione, la stampa , l'incasso definitivo delle somme dovute ecc...
+- the field for **Bank Expenses** for further manual modification 
+- the **Number** of the unpaid item, which is the same as the number of the original effect. 
+- various **status flags** depending on the operations carried out on the unpaid item, such as accounting, printing, the final collection of the amounts due, etc.
 
-### 1.1 Nota debito
+### 1.1 Debit Note (Nota debito)
 
-E' gestita per quanto riguarda: 
-- il calcolo interessi con relativo **tasso** e **interessi di mora** (sulla base del tipo tasso inserito nei parametri del modulo e il differenziale di **giorni** tra data scadenza e data creazione dell'insoluto).
-- **Spese amministrative** di rivalsa (da compilare manualmente) che saranno riaddebitate con l'emissione not di addebito
-- **Recupero bolli** (da compilare manualmente) che saranno riaddebitate con l'emissione not di addebito
+It is managed concerning: 
+- interest calculation with the related **Rate** and **late payment interest (interessi di mora)** (based on the type of rate entered in the module parameters and the differential of **Days** between the due date and the creation date of the unpaid item).
+- **Administrative fees (Spese amministrative)** for recovery (to be filled in manually) that will be recharged with the issuance of the debit note
+- **Stamps recovery** (to be filled in manually) that will be recharged with the issuance of the debit note
 
-### 1.2 Presentazione
-Visualizza gli estremi della distinta di presentazione associata all'effetto di origine.
+### 1.2 Presentation (Presentazione)
+Displays the details of the presentation list associated with the original effect.
 
-### 1.3 Riferimento insoluto
+### 1.3 Unpaid Item Reference (Riferimento insoluto)
 
-Questo tab visualizza le partite create con la contabilizzazione dell'insoluto, con i pagamenti associati.
+This tab displays the entries created with the accounting of the unpaid item, along with the associated payments.
 
-### 1.4 Rif. doc originale
+### 1.4 Ref. Original Document (Rif. doc originale)
 
-Visualizza i riferimenti dei documenti (partite/fatture) di origine degli effetti creati.
+Displays the references of the documents (entries/invoices) from which the created effects originate.

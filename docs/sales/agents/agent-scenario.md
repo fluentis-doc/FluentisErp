@@ -61,7 +61,7 @@ Nell'immagine il 35% di sconto corrisponde ad una provvigione del 3%
 
 ## Creazione anagrafica agente e relativa configurazione
 
-Nella creazione dell'anagrafica dell'agente, di cui riprendiamo solo i campi più importanti ai fini dell'esempio, rinviando alle [**pagine relative**](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/agent-registry/detail.md) per le fasi di base della creazione anagrafica, dopo aver impostato il [**criterio di maturazione delle provvigioni**](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/agent-registry/settlement.md), come ad esempio ad ordine confermato, oppure a fattura emessa, oppure ancora a pagamento avvenuto (decisamente il più utilizzato che riconosce la provvigione in proporzione all'incassato) e gli ltri campi di interesse fiscale e previdenziale quali la **categoria agente e la ritenuta d'acconto** (o regime di esenzione) ci occupiamo del calcolo della provvigione (il valore della provvigione) ed abbiniamo dunque al criterio di cui abbiamo detto.
+Nella creazione dell'anagrafica dell'agente, di cui riprendiamo solo i campi più importanti ai fini dell'esempio, rinviando alle [**pagine relative**](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/agent-registry/detail) per le fasi di base della creazione anagrafica, dopo aver impostato il [**criterio di maturazione delle provvigioni**](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/agent-registry/settlement), come ad esempio ad ordine confermato, oppure a fattura emessa, oppure ancora a pagamento avvenuto (decisamente il più utilizzato che riconosce la provvigione in proporzione all'incassato) e gli ltri campi di interesse fiscale e previdenziale quali la **categoria agente e la ritenuta d'acconto** (o regime di esenzione) ci occupiamo del calcolo della provvigione (il valore della provvigione) ed abbiniamo dunque al criterio di cui abbiamo detto.
 
 Nel tab [**Provvigioni dirette**](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/agent-registry/direct-commissions) oltre ai campi per un fisso retribuito ed una percentuale generale di provvigione per l'agente in questione, abbiamo la griglia di destra, dove andremo a selezionare il criterio delle **Fasce di sconto**.
 
@@ -128,7 +128,7 @@ Per la verifica della maturazione delle provvigioni e dunque la possibilità di 
 
 Infatti la stampa è in grado di rappresentare in anteprima quanto è maturato d il valore della liquidazione che andremo a generare e poi liquidare attraverso la conversione in un compenso percipiente (l'agente è di per se un percipiente a fronte delle ritenute d'acconto).
 
-Altre stampe del modulo invece sono utili per verificare più in dettaglio gli importi astrattamente dovuti ma non necessariamente maturati, quali [**Cedolini agenti**](//docs/sales/agents/reports/agents-payslip.md).
+Altre stampe del modulo invece sono utili per verificare più in dettaglio gli importi astrattamente dovuti ma non necessariamente maturati, quali [**Cedolini agenti**](//docs/sales/agents/reports/agents-payslip).
 
 ## Liquidazione agenti
 

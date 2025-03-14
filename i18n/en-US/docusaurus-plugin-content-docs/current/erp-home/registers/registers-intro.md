@@ -1,32 +1,30 @@
 ---
-title: Anagrafiche
+title: Registers
 sidebar_position: 1
 ---
 
-In un software ERP come Fluentis, dove esiste un collegamento ed una sinergia tra le varie aree e moduli e sussiste un'origine dati condivisa tra varie aziende gestite e le varie aree e funzionalità coinvolte, un ruolo fondamentale riveste un 'efficiente ed efficace gestione delle **anagrafiche**.
+In an ERP software like Fluentis, where there is a connection and synergy between various areas and modules and a shared data origin among various managed companies and the different areas and functionalities involved, efficient and effective management of **Registers** plays a fundamental role.
 
 :::tip[Info]
-Per un'introduzione generale e approfondimento sulla **struttura ERP** clicca **qui**
+For a general introduction and in-depth information on the **ERP structure**, click [**here**](/docs/guide/intro/intro-erp).
 :::
 
-Questi dati di base permettono di automatizzare notevolmente le procedure a valle tramite la lettura dei dati in esse contenute.
+This basic data significantly automates downstream procedures by reading the data contained within it.
 
-:::note[**Esempio**:]
-inserendo una nuova fattura di vendita otterremo automaticamente le condizioni di pagamento standard definite nell'anagrafica del cliente, l'aliquota iva la leggeremo dall'anagrafica dell'articolo fatturato, l'eventuale scontistica sempre dall'anagrafica cliente, oppure attraverso il listino prezzi dell'articolo al quale il cliente stesso è associato.
+:::note[**Example:**]
+When entering a new sales invoice, we will automatically obtain the standard payment conditions defined in the customer’s master data, the VAT rate will be pulled from the invoiced item’s master data, any discounts will come from the customer’s master data, or through the price list of the item to which the customer is associated.
 :::
 
-
-
-Attraverso questa sezione vengono gestite le seguenti tipologie di anagrafiche:
-- le anagrafiche dei **clienti**, **fornitori**, **banche** e **agenti**: che sono costituite a una parte generale definita **Contatto** che accoglie i dati di base quali il nome o ragione sociale, i dati fiscali, l'indirizzo ecc. ed una parte di dettaglio definita **Dati contabili** (in quanto connessa e dipendente dalla creazione di un conto nel piano dei conti). Tale sezione è suddivisa in sotto-sezioni per accogliere i dati relativi a:
-    - Dati amministrativi: quali conti da utilizzare ocn il soggetto in questione, aliquote iva relative ecc.
-    - Dati fiscali: es. regimi fiscali particolari ai quali il soggetto aderisce e dati per la fatturazione elettronica
-    - Pagamenti: condizioni standard da proporre a valle e banche d'appoggio
-    - Consegna: Destinatari e destinazioni
-    - Spese e sconti: scontistiche fisse e spese aggiuntive da fatturare
-    - Listini: associazione listini di vendita e acquisto all'anagrafica
-    - Agenti: associazione degli agenti ai clienti
-    - Altro
-- le anagrafe degli **articoli**: composte da diverse sezioni in base al tipo di dato ed all'utilizzo relativo (es. i dati amministrativi, le unità di misura ecc.)
-- piano dei **conti**: che pur inserito nel contesto delle anagrafiche (inquanto connesso alle anagrafiche clienti e fornitori) si presenta più simile ad una tabella dove definire i conti ed i loro raggruppamenti
-- **cicli di lavoro, distinte base,prototipi:** elementi relativi al contesto della produzione
+Through this section, the following types of master data are managed:
+- [the master data of **customers, suppliers, banks,** and **agents**:](/docs/erp-home/registers/contacts/registers-management), which consist of a general part defined as **Contact** that includes basic data such as name or business name, tax information, address, etc., and a detail part defined as **Accounting Data** (since it is connected to and dependent on the creation of an account in the chart of accounts). This section is divided into sub-sections to accommodate data related to:
+    - Administrative Data: such as accounts to be used with the subject in question, related VAT rates, etc.
+    - Tax Data: e.g., special tax regimes to which the subject adheres and data for electronic invoicing.
+    - Payments: standard conditions to propose downstream and supporting banks.
+    - Delivery: Recipients and destinations.
+    - Expenses and Discounts: fixed discounts and additional expenses to be invoiced.
+    - Price Lists: association of sales and purchase price lists to the master data.
+    - Agents: association of agents with customers.
+    - Other
+- [the master data of **items**:](/docs/erp-home/registers/items/master-item-intro) composed of various sections based on the type of data and its related use (e.g., administrative data, units of measure, etc.).
+- [chart of **accounts**:](/docs/erp-home/registers/accounting/analytic-chart-of-accounts) which, while included in the context of master data (as it is connected to customer and supplier master data), appears more like a table to define accounts and their groupings.
+- **[work cycles (cicli di lavoro),](/docs/erp-home/registers/production/routes/cycle-management-and-production-phases) [bills of materials (distinte base)](/docs/erp-home/registers/production/bill-of-materials/bom), [prototypes:](/docs/erp-home/registers/production/standardization/new-prototype)** elements related to the production context.

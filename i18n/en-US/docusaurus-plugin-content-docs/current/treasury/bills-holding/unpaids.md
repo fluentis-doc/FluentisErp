@@ -1,52 +1,46 @@
 ---
-title: Insoluti
+title: Unpaid
 sidebar_position: 4
 ---
 
-La form della ricerca insoluti 
+The unpaid invoice search form 
 
-- si trova in Tesoreria > Portafoglio Effetti > Effetti > Insoluti
+- can be found in Treasury > Portfolio Effects > Effects > Unpaid (Insoluti)
 
-- permette all'utente di ricercare gli insoluti emessi precedentemente con lo scopo di visualizzarli, modificarli ed eventualmente cancellarli.
+- allows the user to search for previously issued unpaid invoices in order to view, modify, and possibly delete them.
 
-Da questa form è possibile anche inserire manualmente un nuovo insoluto tramite il bottone **Nuovo**.
-
-
-## Pulsanti della Ribbon Bar
-
-> - **Ricerca:** Pulsante per ricercare gli insoluti secondo i filtri di ricerca impostati nella testata della form.
-> - **Nuovo:** Richiama la form per inserire un nuovo insoluto.
-> - **Modifica:** Permette di modificare un insoluto precedentemente inserito.
-> - **Visualizzazione:** Permette di visualizzare un insoluto precedentemente inserito.
-> - **Elimina:** Cancella un insoluto precedentemente inserito.
-> - **Creazione multipla insoluti:** esegue il comando per creare più di un insoluto contemporaneamente
-
-> Esecuzione delle **stampe** (*Anteprima* oppure *Stampa*) lancia, relativamente agli insoluti selezionati con il mouse, (tenendo premuto Ctrl si possono selezionare più insoluti contemporaneamente) le omonime stampa presente nel [**menu stampe**](/docs/treasury/bills-holding/reports/print-unpaid-list) del modulo
-
-> - *Insoluti*: evidenza degli effetti insoluti con relativi riferimenti e importi, maggiorati di eventuali interessi e spese
-> - *Lettera di sollecito*:  Lettera indirizzata al debitore che evidenzia gli effetti insoluti e ne sollecita il pagamento 
+From this form, it is also possible to manually enter a new unpaid invoice using the **New** button.
 
 
-## Filtri di ricerca
+## Ribbon Bar Buttons
 
-- **Tipi Effetti:** Filtra sulla tipologia di effetto che è stato inserito nell'insoluto in fase di creazione, ad esempio Ricevuta bancaria, Cambiale ecc...
-- **Debitore:** filtro riferito al campo ***Debitore*** presente all'interno dell'effetto
-- **DA / A / data insoluto / Data scadenza / Data emissione / Numero**: riferiti agli omonimi campi presenti all'interno dell'insoluto e in particolare riferiti alla data creazione insoluto, alla data scadenza della partita che si riapre con l'insoluto, alla data emissione dell'effetto andato insoluto e al numero dell'effetto insoluto
-- **Stato insoluto:** filtro riferito allo *Stato insoluto* presente all'interno dell'insoluto, lo stato viene automaticamente modificato a seconda delle procedure che sono state eseguite, ad esempio nasce come Insoluto , poi diventa incassato, oppure emessa nota di addebito ecc...
-- **Flag di filtro:** Di default è attivo *Tutti*, ma può essere cambiato selezionando le varie condizioni di ricerca che se attivate contemporaneamente andranno ad allargare la base di ricerca, ad esempio quelli stampati + quelli contabilizzati + quelli NON stampati ..... E' inoltre presente l'ulteriore sezione espandibile per filtrare insoluti che provengono da effetti generati dalle partite o dalle fatture con relativi riferimenti data / numero. Questo aiuta la ricerca inquanto le due procedure di creazione dell'effetto sono tra loro alternative.
+> - **Search (Ricerca):** Button to search for unpaid invoices according to the search filters set in the header of the form.
+> - **New (Nuovo):** Calls the form to enter a new unpaid invoice.
+> - **Edit (Modifica):** Allows editing of a previously entered unpaid invoice.
+> - **View (Visualizzazione):** Allows viewing of a previously entered unpaid invoice.
+> - **Delete (Elimina):** Deletes a previously entered unpaid invoice.
+> - **Multiple unpaid invoice creation (Creazione multipla insoluti):** Executes the command to create more than one unpaid invoice simultaneously.
 
-## Griglia dei risultati
+> Executing **Reports** (*Preview* or *Print Report*) launches, regarding the unpaid invoices selected with the mouse (holding Ctrl allows the selection of multiple unpaid invoices simultaneously), the corresponding print available in the [**prints menu (menu stampe)**](/docs/treasury/bills-holding/reports/print-unpaid-list) of the module.
 
-In questa from presenta gli stessi campi presenti nei filtri già dettagliati qui sopra.
-
-Presenta inoltre 
-- l'importo dell'effetto insoluto e  **Spese Bancarie** presente nella testata insoluto che viene riaddebitato al cliente e contabilizzato
-- la **data** e **numero** Importazione riferiti alla procedura di **Importazione insoluti**
-- il **Numero di fattura** che ha generato l'effetto andato insoluto
-- la **Banca di presentazione** dell'effetto insoluto
+> - *Unpaid (Insoluti):* Highlights of unpaid effects with their respective references and amounts, increased by any interests and fees.
+> - *Reminder Letter (Lettera di sollecito):* Letter addressed to the debtor that highlights the unpaid effects and urges payment.
 
 
+## Search Filters
 
+- **Types of Effects (Tipi Effetti):** Filters based on the type of effect that was entered in the unpaid invoice during creation, such as Bank Receipt, Bill of Exchange, etc.
+- **Debtor (Debitore):** Filter related to the ***Debtor*** field present within the effect.
+- **From / To / Date of Unpaid Invoice (DA / A / data insoluto) / Due Date (Data scadenza) / Issue Date (Data emissione) / Number (Numero):** Related to the corresponding fields present within the unpaid invoice, particularly concerning the creation date of the unpaid invoice, the due date of the installment that reopens with the unpaid invoice, the issue date of the effect that went unpaid, and the number of the unpaid effect.
+- **Unpaid Status (Stato insoluto):** Filter related to the *Unpaid Status* present within the unpaid invoice, which is automatically modified depending on the procedures that have been carried out. For example, it starts as Unpaid, then becomes Collected, or a debit note is issued, etc.
+- **Filter Flag (Flag di filtro):** By default, *All* is active, but it can be changed by selecting various search conditions that, if activated simultaneously, will broaden the search base, such as printed + accounted + NOT printed..... There is also an additional expandable section to filter unpaid invoices coming from effects generated by installments or invoices with respective references of date/number. This helps the search as the two procedures for creating the effect are alternative to each other.
 
+## Results Grid
 
+This form presents the same fields present in the filters detailed above.
 
+It also displays 
+- the amount of the unpaid effect and **Bank Expenses** present in the header of the unpaid invoice that is recharged to the customer and accounted for.
+- the **Date** and **Number** related to the **Import Unpaid**.
+- the **Invoice number** that generated the effect that went unpaid.
+- the **Presenting Bank (Banca di presentazione)** of the unpaid effect.

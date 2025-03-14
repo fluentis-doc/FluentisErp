@@ -1,21 +1,10 @@
 ---
-title: Print Commission Settlement
+title: Commission Settlement Print (Stampa liquidazioni provvigioni)
 sidebar_position: 3
 ---
 
-The 'print commissions settlement' procedure enables the user to obtain a report to be sent to the agent together with detail of documents that are accrued in settlement. It is possible to view even the accrued detail on the single item of settlement documents.
+The form opens via the path *Sales > Agents > Agent Settlements > Prints (Vendite > Agenti > Liquidazioni agenti > Stampe)*.
 
-RIBBON BAR: it represents the Form menu, that is the area in which it is possible to perform actions. The list of features is the following:
+The printout allows for obtaining a report to send to the agent with the details of the documents that have matured in the printed settlement. It is also possible to view the accrued details for each individual item of the documents present in the settlement.
 
-
-
-| Function | Meaning |
-| --- | --- |
-| Print Preview | Button to perform the print preview. |
-| Print | Button to print according to filters set and printer configuration. |
-
-
-
-
-
-
+More details on this topic can be found in the articles: [Data Search in Read-Only Forms (Ricerca dati nelle form di sola lettura)](/docs/guide/common/operations-with-data/data-search-in-read-only-forms) and [Preview and Print (Anteprima e stampa)](/docs/guide/common/operations-with-data/reports).

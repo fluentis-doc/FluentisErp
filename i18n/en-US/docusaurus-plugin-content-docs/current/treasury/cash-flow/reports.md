@@ -1,30 +1,23 @@
 ---
-title: Analisi Cashflow
+title: Cashflow Analysis (Analisi Cashflow)
 sidebar_position: 5
 ---
-La fom si trova in Tesoreria > Cash Flow > Stampa > Analisi Cash Flow
+The form can be found under Treasury > Cash Flow > Print > Cash Flow Analysis (Tesoreria > Cash Flow > Stampa > Analisi Cash Flow).
 
+From this screen, it is possible to obtain the printout of the cash flow calculations that have been calculated and are present in the system: the system, upon opening, suggests the last calculation performed by the current user as a filter.
 
-Da questa maschera è possibile ottenere la stampa delle elaborazioni di cash flow calcolate e presenti a sistema: il sistema all'apertura propone come filtro l'ultima elaborazione eseguita dall'utente attuale.
+The following filters can be set: 
 
-E' possibile impostare i seguenti filtri: 
-
-- quali tipi flusso riportare in stampa, disattivando il flag **Tutti i tipi flusso** e selezionando i tipi desiderati dalla griglia
+- which types of flow to include in the printout, by disabling the **All flux types** flag and selecting the desired types from the grid.
  
-- le 6 date di riferimento dei calcoli, modificando i relativi campi nella sezione **Riepilogo alle seguenti scadenze**
+- the 6 reference dates for the calculations, by modifying the corresponding fields in the **Summary to the following maturities** section.
 
-- il **tipo di Stampa** da visualizzare, raggruppando per tipo flusso o per tipo pagamento,
+- the **Report type** to be displayed, grouping by flow type or payment type.
 
-- la **visualizzazione del dato** canalizzato **per banca**, 
+- the **data display (visualizzazione del dato)** channeled **by bank (per banca)**, 
 
-- il filtro per **Progetto** (ex commessa), 
+- the filter for **Project** (e.g., job order), 
 
-- la visualizzazione dei **dettagli** di ogni singolo flusso (es. tutti gli ordini, tutti i DDT ecc.).
+- the display of **Details** for each single flow (e.g., all orders, all delivery notes, etc.).
 
-- Il flag **Data prevista** che espone i flussi rispetto alla data prevista anzichè rispetto al dto di default che è la *data scadenza* (se la data prevista non è stata variata, per default corrisponde alla data scadenza).
-
-
-
-
-
-
+- The **Expected date** flag that shows the flows concerning the expected date instead of the default date, which is the *Expiry date* (if the expected date has not been changed, by default it corresponds to the due date).

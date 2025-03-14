@@ -1,76 +1,68 @@
 ---
-title: Contabilizzazione Effetti
+title: Bills Accounting
 sidebar_position: 1
 ---
 
-La form si trova in Tesoreria > Portafoglio Effetti > Contabilizzazione > Contabilizzazione effetti
+The form is located in Treasury > Portfolio Effects > Accounting > Accounting of effects.
 
-Da questa maschera si procede alla contabilizzazione effetti: la procedura, secondo le impostazioni della causale contabile impostata, chiuderà le partite clienti associate agli effetti selezionati.
+From this screen, you proceed with the accounting of effects: the procedure, according to the settings of the accounting reason set, will close the customer entries associated with the selected effects.
 
-:::tip[Nota]
-Generalmente si può eseguire questa procedura direttamente eseguendo ***l'acquisizione automatica effetti dalle partite***
-dove, abilitando l'apposito flag, si esegue contemporaneamente anche la presente procedura.
+:::tip[Note]
+Generally, this procedure can be executed directly by performing ***automatic acquisition of effects from the entries*** where, by enabling the appropriate flag, this procedure is simultaneously executed.
 
-**Risulta invece necessario accedere specificamente alla presente form per il ripristino della contabilizzazione effetti**. 
+**It is necessary to specifically access this form for the restoration of the accounting of effects**. 
 :::
 
-## Come contabilizzare un effetto
+## How to Account for an Effect
 
-1. Utilizza la parte superiore della maschera per filtrare la ricerca degli effetti da contabilizzare.
+1. Use the upper part of the screen to filter the search for the effects to be accounted for.
 
-2. Seleziona dalla griglia centrale gli effetti che desideri contabilizzare 
+2. Select from the central grid the effects that you wish to account for.
 
-3. Compila i parametri per la contabilizzazione quali la **Causale di contabilità**, la **data registrazione** e la data competenza.
+3. Fill in the parameters for the accounting such as the **Ledger Records Template**, the **Posting date**, and the due date (data competenza).
 
-:::note[Nota]
-Questa sezione può essere predefinita all'interno dei [**parametri**](/docs/configurations/parameters/treasury/bills-portfolio-parameters) del modulo Portafoglio effetti. 
+:::note[Note]
+This section can be predefined within the [**parameters**](/docs/configurations/parameters/treasury/bills-portfolio-parameters) of the Effects Portfolio module. 
 
-Il flag di **raggruppamento per conto effetto** significa eseguire una registrazione unica dove saranno presenti tante righe quante sono gli effetti da contabilizzare ed in contropartita il conto associato alla tipologia di effetto (nella **tabella Tipi Effetti**).
+The **grouping by effect account (raggruppamento per conto effetto)** flag means executing a single entry where there will be as many lines as there are effects to be accounted for, and in counterpart, the account associated with the type of effect (in the **Types of Effects table (tabella Tipi Effetti)**).
 
-Il flag di **gestione provvisoria** andrà a generare registrazioni contabili di tipo provvisorio.
+The **temporary management (gestione provvisoria)** flag will generate temporary accounting entries.
 
-Se la causale contabile prevede il flag di apertura partite e l'effetto è stato creato manualmente senza associare una partita (o il suo importo è superiore all'importo delle partite collegate), allora sarà create una partita cliente in avere da compensare in seguito.
+If the accounting reason requires the open items flag and the effect has been created manually without associating an item (or its amount is greater than the amount of the linked items), then a customer entry will be created in credit to be offset later.
 
-Si ricorda che non sarà possibile contabilizzare effetti creati da fatture stampate quando queste non sono state ancora contabilizzate.
+Please note that it will not be possible to account for effects created from printed invoices when these have not yet been accounted for.
 :::
 
-4. Premi il bottone nella ribbon bar **Contabilizzazione effetti**
+4. Press the button in the ribbon bar **Bills Accounting**.
 
+**Specific buttons**
 
+**Search**: Searches the list of effects to be accounted for.
 
-**Pulsanti specifici**
+**Bills Accounting**: Executes the accounting for the selected lines.
 
-**Ricerca**: Ricerca la lista degli effetti da contabilizzare.
+### Previous Tab
 
-**Contabilizzazione effetti**: Esegue la contabilizzazione per le righe selezionate.
+From the *previous* tab, it is possible to proceed with the cancellation of the executed accountings. 
 
-### Tab Precedenti
+Cancellation will only be possible if the period is still editable (journal book printing and account closing not executed). 
 
-Dalla scheda *precedenti* è possibile procedere all'annullamento delle contabilizzazioni eseguite. 
+Double-clicking in the recording section will allow viewing the related accounting entry.
 
-L'annullamento sarà possibile solo se il periodo è ancora modificabile (stampa libro giornale e chiusura conti non eseguite). 
+There is a detail tab for viewing errors detected during the accounting process.
 
-Un doppio click nella sezione delle registrazioni consentirà di visualizzare la registrazione contabile relativa. 
+:::tip[Note]
+The restoration of the accounting of the effect must **necessarily** be performed from this form.
 
-E' presente un Tab di dettaglio di visualizzazione degli errori rilevati nel corso della contabilizzazione.
+At the time of creating the effect, it is indeed possible to launch its accounting simultaneously, but NOT the other way around. 
 
-:::tip[Nota]
-Il ripristino della contabilizzazione dell'effetto deve **necessariamente** essere eseguito dalla presente form.
-
-In fase di creazione dell'effetto è possibile, infatti, lanciare contestualmente la sua contabilizzazione, ma NON il contrario. 
-
-Pertanto si dovrà procedere prima ad annullarne la contabilizzazione da qui, e poi si potrà annullare la procedura di creazione, tornando ad una situazione precedente (partita cliente aperta e saldo cliente non ancora stornato).
+Therefore, it is necessary to first cancel its accounting from here, and then the creation procedure can be canceled, returning to a previous state (open customer entry and customer balance not yet offset).
 :::
 
-**Pulsanti specifici**
+**Specific buttons**
 
-**Ricerca**: Ricerca la lista delle contabilizzazioni eseguite.
+**Search**: Searches the list of executed accountings.
 
-**Rollback contabilizzazione**: Esegue il ripristino delle contabilizzazioni selezionate per tutti i documenti in esse contenuti.
+**Rollback accounting**: Restores the selected accountings for all documents contained in them.
 
-**Rollback effetti**: Esegue il ripristino della registrazione contabile selezionata riferita al singolo effetto. ATTENZIONE: questa modalità è possibile solo se in fase di contabilizzazione non è stata attivata l'opzione per raggruppare per tipo effetto (che genera registrazioni uniche per ogni tipo effetto).
-
-
-
-
-
+**Rollback bills**: Restores the selected accounting entry related to the individual effect. WARNING: this mode is only possible if during accounting the option to group by effect type was not activated (which generates unique entries for each type of effect).

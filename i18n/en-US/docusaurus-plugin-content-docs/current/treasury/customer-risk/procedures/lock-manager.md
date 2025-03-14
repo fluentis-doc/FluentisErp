@@ -1,47 +1,41 @@
 ---
-title: Lock manager
+title: Lock Manager (Lock manager)
 sidebar_position: 3
 ---
 
-La form si trova in Tesoreria > Rischio Cliente > Procedure > Lock Manager
+The form can be found in Treasury > Customer Risk > Procedures > Lock Manager.
 
-Attraverso questa procedura si gestisce l'autorizzazione dei documenti che sforano i fidi, così come il blocco diretto del cliente indipendentemente dal superamento del fido.
+Through this procedure, the authorization of documents that exceed credit limits is managed, as well as the direct blocking of the customer regardless of exceeding the limit.
 
-Ricordiamo che il blocco dei documenti presuppone la gestione [**dell'anagrafica cliente**](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/payments) (sui clienti da sottoporre a fido e secondo la modalità scelta) e delle vari tabelle relative ai [**tipi documenti di vendita**](/docs/configurations/tables/sales/sales-order-types) (es. Tipo Ordine, Tipo DDT ...) al fine di impostare quali tipologie siano sottoposte a controllo ed eventualmente a blocco.
+We remind you that the blocking of documents presupposes the management of the [**customer registry**](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/payments) (for customers subject to credit and according to the chosen mode) and the various tables related to [**types of sales documents**](/docs/configurations/tables/sales/sales-order-types) (e.g., Order Type, DDT Type, etc.) in order to set which types are subject to control and potentially to blocking.
 
+## Authorization Panel (Scheda Autorizzazione)
 
+The user with access rights has the ability to check the list of reported, blocked, authorized documents, etc.
 
-
-## Scheda Autorizzazione
-
-l'utente che ha i diritti di accesso ha la possibilità di verificare la lista dei documenti segnalati, bloccati, autorizzati ecc. 
-
-Nella griglia sarà possibile modificare lo stato da ***Doc. bloccato*** ad ***Autorizzazione rilasciata*** per consentire la continuazione del flusso documentale relativo al documento stesso. 
+In the grid, it will be possible to change the status from ***Blocked Doc. (Doc. bloccato)*** to **Authorization issued*** to allow the continuation of the document flow related to that document.
 
 :::tip Info
-Con un doppio click nella griglia sarà possibile visualizzare il documento stesso in tutti i suoi dettagli.
+With a double click in the grid, it will be possible to view the document itself in all its details.
 :::
 
-## Scheda **Blocco clienti**
+## Customer Blocking Panel (Scheda **Blocco clienti**)
 
-consente di forzare un ***Blocco ordini*** o ***Blocco ddt*** (o entrambi tramite i rispettivi flag) per una determinata lista di clienti, con un range di date blocco. 
+Allows you to force an ***Orders Block (Blocco ordini)*** or ***DDT Block (Blocco ddt)*** (or both via the respective flags) for a specific list of customers, with a blocking date range.
 
-### Come bloccare un cliente
+### How to block a customer (Come bloccare un cliente)
 
-Ad esempio, se il cliente ha mandato insoluta una riba, l'amministrazione potrebbe  e forzare il blocco di tutte le operazioni nei confronti del cliente. 
+For example, if the customer has sent a non-payable receipt, the administration could force the blocking of all operations with the customer.
 
-1. accedere a questa maschera
-2. compilare il campo Descrizione inserendo l'anagrafica del cliente da bloccare
-3. attivare i flag del Blocco ordini e/o del Blocco DDT e compilare le date di inizio e fine blocco
+1. Access this form.
+2. Fill in the Description field by entering the registry of the customer to be blocked.
+3. Activate the flags for Orders Block and/or DDT Block and fill in the start and end dates of the block.
 
 :::note[MNota]
-Per riabilitare il cliente sarà sufficiente impostare una **data di fine validità** (in modo da tenere una traccia storica del blocco) oppure direttamente eliminare la riga dal sistema. 
-Viene memorizzato **l'utente e la data di blocco e di sblocco**.
+To reactivate the customer, it will be sufficient to set an **end validity date** (to keep a historical record of the block) or to delete the line from the system directly. 
+**The user, block date, and unblock date are recorded.**
 :::
 
+The flags **Authorize Order (Autorizza Ordine)** and **Autorize Sales delivery notes** ensure that authorization is always required for the order or DDT, regardless of whether there is available credit or not.
 
-
-
-I flag **Autorizza Ordine** e **Autorizza Bolle** fanno in modo che sia richiesta sempre l’autorizzazione all’ordine o al ddt, indipendentemente dal fatto che ci sia disponibilità di fido o meno.
-
-**Note**: permette di aggiungere una nota libera all'operazione di blocco (o sblocco se viene mantenuta la riga).
+**Notes**: Allows adding a free note to the blocking (or unblocking operation if the line is maintained).
