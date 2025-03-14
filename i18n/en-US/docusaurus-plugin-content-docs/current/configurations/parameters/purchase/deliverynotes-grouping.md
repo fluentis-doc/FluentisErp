@@ -8,8 +8,8 @@ These general grouping parameters must be configured only once and will be autom
 In this way, flexible and adaptable management of fulfillments is ensured, allowing the specific needs of each customer or supplier to be met, while maintaining a centralized and consistent configuration for most operations.
 
 In this form, the grouping rules for the procedures are decided:  
--  **Creation of NIR from purchase invoice (Creazione NIR da fattura di acquisto)**;  
--  **Creation of NIR from purchase DDT (Creazione NIR da DDT di acquisto)**.  
+-  **Creation of NIR from purchase invoice**;  
+-  **Creation of NIR from purchase DDT**.  
 
 These procedures are used only in the case of Romanian localization.   
 

@@ -1,5 +1,5 @@
 ---
-title: Purchase Order Grouping Parameters (Parametri raggruppamento Ordini di acquisto)
+title: Purchase Order Grouping Parameters 
 sidebar_position: 8
 ---
 
@@ -20,19 +20,19 @@ When the supplier order is created from a single customer order, all header data
 
 #### Specific Fields  
 
-- **Summary**: if active, when creating supplier orders from multiple customer orders, a single document will be created for each supplier. If not active, a document will always be created for each customer order. Grouping only works for [Customer Order Types (Tipi ordine cliente)](/docs/configurations/tables/sales/sales-order-types/) that have codified the same *Supplier Order Type* to be created. All subsequent flags must be used in conjunction with this flag.    
+- **Summary**: if active, when creating supplier orders from multiple customer orders, a single document will be created for each supplier. If not active, a document will always be created for each customer order. Grouping only works for [Customer Order Types](/docs/configurations/tables/sales/sales-order-types/) that have codified the same *Supplier Order Type* to be created. All subsequent flags must be used in conjunction with this flag.    
 
-- **Grouping by Document Type (Raggruppamento per tipo documento)**: if active, all documents with the same *Customer Order Type* will be grouped into a single order.     
+- **Grouping by Document Type**: if active, all documents with the same *Customer Order Type* will be grouped into a single order.     
 
-- **Grouping by Year (Raggruppamento per anno)**: by activating this flag, a grouping by the year of entry of the customer order will be performed.   
+- **Grouping by Year**: by activating this flag, a grouping by the year of entry of the customer order will be performed.   
 
-- **Grouping by Month (Raggruppamento per mese)**: to perform a grouping by the month of order creation, the previous flag must also be activated.    
+- **Grouping by Month**: to perform a grouping by the month of order creation, the previous flag must also be activated.    
 
-- **Grouping by Exchange Rate (Raggruppamento per cambio)**: if active, documents with the same currency and exchange rate will be grouped into a single purchase order.    
+- **Grouping by Exchange Rate**: if active, documents with the same currency and exchange rate will be grouped into a single purchase order.    
 
-- **Grouping by Order (Raggruppamento per ordine)**: this flag is only used for *Creating DDT and sales invoices from Picking* (see [DDT Grouping Parameters (Parametri raggruppamento DDT)](/docs/configurations/parameters/sales/dn-grouping) and [invoices (fatture)](/docs/configurations/parameters/sales/invoice-grouping)), so in this procedure it holds no significance.    
+- **Grouping by Order**: this flag is only used for *Creating DDT and sales invoices from Picking* (see [DDT Grouping Parameters](/docs/configurations/parameters/sales/dn-grouping) and [invoices](/docs/configurations/parameters/sales/invoice-grouping)), so in this procedure it holds no significance.    
 
-- **Grouping by Project (Raggruppamento per progetto)**: by activating this flag, grouping by project will be performed. The grouping also functions for projects entered at the item line level; if some item lines do not have an associated project, a different order will be created for all items that do not contain one. When the project has been entered in the headers of the source documents, it will also be reported in the headers of the destination documents; otherwise, it will only be maintained on the item lines.    
+- **Grouping by Project**: by activating this flag, grouping by project will be performed. The grouping also functions for projects entered at the item line level; if some item lines do not have an associated project, a different order will be created for all items that do not contain one. When the project has been entered in the headers of the source documents, it will also be reported in the headers of the destination documents; otherwise, it will only be maintained on the item lines.    
 
 - **Grouping for payment type and terms**: by activating this flag, grouping will be performed based on the type and payment solution entered in the customer order; this data will be reported in the header of the created supplier order.   
 

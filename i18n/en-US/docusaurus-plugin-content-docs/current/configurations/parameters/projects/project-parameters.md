@@ -3,11 +3,11 @@ title: Project parameters
 sidebar_position: 1
 ---
 
-## General (Generale)
+## General
 
 These parameters are used by default if no predefined configurations have been made for the client or document type.
 
-**Default unit of measure for service (Unità di misura predefinita per il servizio)**: default UM to consider for services in interventions.
+**Default unit of measure for service**: default UM to consider for services in interventions.
 
 **Measurement unit for hours**: UM that identifies Hours in the project area. In case of conversion between UMs, it will be evident if the quantity refers to work hours.
 
@@ -29,11 +29,11 @@ These parameters are used by default if no predefined configurations have been m
 
 **Default planned intervention type**: type of planned intervention to use by default, for example, in the creation of new plans directly from WBS Resource Assignment.
 
-**Default Intervention Request Type (Tipo Richiesta intervento predefinita)**: type of intervention request to use by default, for example, in the creation of new intervention requests from WBS Resource Assignment.
+**Default Intervention Request Type**: type of intervention request to use by default, for example, in the creation of new intervention requests from WBS Resource Assignment.
 
 **Working Shift**: indicates the specific working shift, coded in the **Working Shift** table.
 
-## Interventions (Interventi)
+## Interventions
 
 **Internal intervention type**: type of intervention identified as an internal intervention.
 
@@ -55,9 +55,9 @@ These parameters are used by default if no predefined configurations have been m
 
 **Propose in travel expenses the Project Advance Invoice Reference**: if enabled, on each intervention save, it checks if there is an advance invoice associated with the project indicated in the document. If the remaining value of the advance invoice is sufficient to cover the travel expense, it will be automatically linked to the intervention travel expense line in the appropriate field.
 
-### Intervention Valuation Settings (Impostazioni valorizzazione interventi)
+### Intervention Valuation Settings 
 
-**Use Intervention References (Utilizza riferimenti intervento)**: if enabled, a descriptive line will be inserted in the invoice generated from the valuation of interventions before the intervention line, containing the description configured by the user.
+**Use Intervention References**: if enabled, a descriptive line will be inserted in the invoice generated from the valuation of interventions before the intervention line, containing the description configured by the user.
 
 **Add intervention date to the service line**: if enabled, inserts the service date in the description field of the service line.
 
@@ -73,7 +73,7 @@ These parameters are used by default if no predefined configurations have been m
 
 **Priority for entering information**: indicate the order in which to enter data in the invoices generated from the valuation of interventions.
 
-### BILLING PLAN (PIANO DI FATTURAZIONE)
+### BILLING PLAN 
 
 The rules to apply to the billing plan of the intervention can be established in the general parameters of Project Management and can be valid for all clients or specific to a client.  
 The billing plan calculation procedure will first check for specific configurations for the client, and if none are present, it will consider those in the general parameters.
@@ -95,7 +95,7 @@ The time slot will also be considered for calculating out of hours to bill at a 
 
 **Commercial category**: further filter for selecting the rule for the billing plan. If empty, it will be considered valid for all customer commercial categories. In the case of a specific indication, the corresponding one entered in the customer registry - Administration tab will be selected.
 
-**Include Travel Hours in Services (Includi ore viaggio nei servizi)**: allows for including travel hours present in the intervention in the "Expenses to be Billed" tab, as if they were service hours. Consequently, all billing rules (time slot, rounding, etc.) will also be applied to travel hours as if they were a service performed.
+**Include Travel Hours in Services**: allows for including travel hours present in the intervention in the "Expenses to be Billed" tab, as if they were service hours. Consequently, all billing rules (time slot, rounding, etc.) will also be applied to travel hours as if they were a service performed.
 
 **Exclude rounding**: if enabled, no rounding will be applied in the billing plan.
 
@@ -121,8 +121,7 @@ with flag disabled, the billing plan will be:
 
 :::
 
-## Activities (Attività)
-
+## Activities   
 **Check missing activities in the past: number of months**: indicate the number of months during which, in the activity declaration phase, any missing activity declarations (hours/days) will be checked, and these will be automatically proposed during declaration.
 
 Default value = 0, in the activity declaration the current date will always be proposed without checking for missing declarations in past months.

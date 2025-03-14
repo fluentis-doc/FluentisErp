@@ -21,17 +21,17 @@ When the DDT (Delivery Note Document) is created from a single order, all the he
 
 - **Summary**: if active, a single DDT will be created for each supplier at the time of order fulfillment. If not active, a DDT will always be created for each fulfilled order. Grouping only works for *Order Types* (Purchase or Sale, depending on the selected operation) that have coded the same *DDT Type* to be created. All subsequent flags must be used in conjunction with this flag.    
 
-- **Grouping by document type (Raggruppamento per tipo documento)**: if active, all documents with the same *Order Type* will be grouped into a single DDT.     
+- **Grouping by document type**: if active, all documents with the same *Order Type* will be grouped into a single DDT.     
 
-- **Grouping by year (Raggruppamento per anno)**: activating this flag will group by year of order creation.   
+- **Grouping by year**: activating this flag will group by year of order creation.   
 
-- **Grouping by month (Raggruppamento per mese)**: to enable grouping by order creation month, the previous flag must also be activated.    
+- **Grouping by month**: to enable grouping by order creation month, the previous flag must also be activated.    
 
-- **Grouping by exchange rate (Raggruppamento per cambio)**: if active, documents with the same currency and exchange rate will be grouped into a single DDT.    
+- **Grouping by exchange rate**: if active, documents with the same currency and exchange rate will be grouped into a single DDT.    
 
-- **Grouping by order (Raggruppamento per ordine)**: this flag is only used for *Creating DDTs and sales invoices from Picking* (see [DDT Grouping Parameters](/docs/configurations/parameters/sales/dn-grouping) and [invoices](/docs/configurations/parameters/sales/invoice-grouping)).    
+- **Grouping by order**: this flag is only used for *Creating DDTs and sales invoices from Picking* (see [DDT Grouping Parameters](/docs/configurations/parameters/sales/dn-grouping) and [invoices](/docs/configurations/parameters/sales/invoice-grouping)).    
 
-- **Grouping by project (Raggruppamento per progetto)**: activating this flag will cause grouping by project. Grouping also works for projects entered at the item line level; if some item lines do not have an associated project, a separate DDT will be created for all articles that do not contain it. When the project has been entered in the headers of the source documents, it will also be reflected in the headers of the destination documents; alternatively, it will only be retained on item lines.    
+- **Grouping by project**: activating this flag will cause grouping by project. Grouping also works for projects entered at the item line level; if some item lines do not have an associated project, a separate DDT will be created for all articles that do not contain it. When the project has been entered in the headers of the source documents, it will also be reflected in the headers of the destination documents; alternatively, it will only be retained on item lines.    
 
 - **Grouping for payment type and terms**: activating this flag will group based on the type and payment solution entered in the order; this data will be reported in the header of the created DDT.   
 
