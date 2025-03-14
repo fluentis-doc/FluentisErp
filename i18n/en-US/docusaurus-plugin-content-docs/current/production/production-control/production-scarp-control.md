@@ -1,5 +1,5 @@
 ---
-title: Production Scrap Control (Controllo scarti di produzione)
+title: Production Scrap Control 
 sidebar_position: 3
 ---
 
