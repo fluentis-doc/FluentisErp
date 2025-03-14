@@ -27,11 +27,11 @@ Se il flag non è impostato sarà invece utilizzato il *cambio presente in testa
 
 **Utilizzare la filiale aziendale per assegnare la divisione**: flag connesso al campo *Filiale aziendale di riferimento* presente nelle anagrafiche clienti e fornitori, dove è possibile associare il cliente/fornitore ad una filiale e, tramite questa, ad una *divisione* aziendale differente da quella in uso. Il presente flag fa scattare la verifica se nel cliente c’è una filiale di riferimento e, da questo link, verifica se c’è una divisione associata alla filiale in questione. In caso positivo registra la fattura attribuendola a quella divisione (anche se la fattura è attribuita alla divisione X la registrazione contabile sarà nella Y). Questa opzione agevola la redazione di bilanci per divisione in situazione dove la fatturazione avviene separatamente ma i risultati dal punto di vista di bilancio si vogliono aggregare presso una divisione principale.
 
-*Pulsanti specifici*: 
+#### Pulsanti specifici  
 > **Ricerca fattura**: per cercare le fatture; vengono proposte tutte le fatture stampate e non contabilizzate.  
 > **Contabilizzazione fatture**: esegue la contabilizzazione delle fatture selezionate, secondo le impostazioni definite.  
 
-### PARAMETRI
+### Parametri
 
 In questa form si impostano alcuni elementi generali della contabilizzazione fatture.
 
@@ -51,7 +51,7 @@ In questa form si impostano alcuni elementi generali della contabilizzazione fat
 
 **Sottoconto sconto finanziario**: questo campo viene utilizzato per registrare lo sconto finanziario collegato alla scadenza fattura.
 
-*Pulsante specifico*: 
+#### Pulsante specifico
 
 > **Salva parametri**: permette di salvare i parametri impostati per la contabilizzazione omaggi.
 
@@ -59,7 +59,7 @@ Dopo aver selezionato le fatture (dal tab *Contabilizzazione*) e impostato i par
 
 ### Precedenti
 
-a form presenta la lista delle operazioni di contabilizzazione eseguite, al fine di visualizzarle ed eventualmente annullarle attraverso gli appositi pulsanti.
+La form presenta la lista delle operazioni di contabilizzazione eseguite, al fine di visualizzarle ed eventualmente annullarle attraverso gli appositi pulsanti.
 
 L'annullamento sarà possibile solo se il periodo è ancora modificabile (stampa libro giornale, registro iva non stampato, liquidazione periodica non stampata, chiusura conti non eseguita, partite contabili chiuse in un incasso o in un effetto).
 
@@ -67,13 +67,13 @@ L'annullamento sarà possibile solo se il periodo è ancora modificabile (stampa
 
 I dati nelle griglie in basso, **Fatture** e **Registrazione contabile** corrispondono all'operazione selezionata nella griglia superiore. Un doppio click nella sezione delle fatture/registrazioni consentirà di visualizzare la fattura/la registrazione contabile relativa.
 
-*Pulsanti specifici*:
+#### Pulsanti specifici  
 > **Ricerca contabilizzazione**: ricerca la lista delle contabilizzazioni eseguite.  
 > **Anteprima contabilizzazione**: per visualizzare l'anteprima di stampa della contabilizzazione.  
 > **Ripristina contabilizzazione**: con questo pulsante sarà cancellata tutta la contabilizzazione effettuata, con tutte le fatture associate.  
 > **Ripristina fattura**: il pulsante esegue il ripristino della singola fattura selezionata.  
 
-### Messaggi di errore
+#### Messaggi di errore
 
 Questi errori possono derivare, in alcuni casi da una errata gestione dei dati da parte dell’utente, ovvero mancano delle informazioni essenziali, in altri casi possono derivare da configurazioni o settaggi errati a livello di parametri o dati di base.
 
