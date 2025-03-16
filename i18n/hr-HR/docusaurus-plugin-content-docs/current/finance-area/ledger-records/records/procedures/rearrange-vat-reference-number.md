@@ -63,7 +63,7 @@ Datum/broj dokumenta: broj protokola bit će dodijeljen u odnosu na napredovanje
 
 Vrsta dokumenta / datum / broj: broj protokola bit će dodijeljen u odnosu na vrstu dokumenta (npr. fakture, odobrenja), ako je vrsta dokumenta ista  (na temelju napredovanja datuma zapisa i ako je broj dokumenta isti).  
 
-Flag **Ponovo napiši opise**, ako je aktivna, ažurira opis kretanja tijekom faze prenumeriranja gdje, na temelju postavki definiranih u **[obračunskom predlošku](/docs/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates/attributes-detail)**, omogućuje automatsko očitavanje PDV protokola. 
+Flag **Ponovo napiši opise**, ako je aktivna, ažurira opis kretanja tijekom faze prenumeriranja gdje, na temelju postavki definiranih u **[obračunskom predlošku](/docs/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates)**, omogućuje automatsko očitavanje PDV protokola. 
 
 
 
