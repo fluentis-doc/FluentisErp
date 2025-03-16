@@ -58,7 +58,7 @@ La fase successiva sarà quella di confermare, riga per riga, che l'importo calc
 
 Tutte le righe con stato *controllato* saranno oggetto della rilevazione in contabilità che sarà eseguita premendo il pulsante di **Contabilizza**. 
 
-L'utente può procedere a creare più contabilizzazioni man mano che vengono definiti i dettagli, così come procedere a ricalcolare la lista per verificare che non siano state aggiunte altre operazioni (tipicamente di integrazione di registrazioni del nuovo esercizio con competenza antecedente) o creare assestamenti nuovi per questi. È comunque presente la **[scheda di ripristino](/docs/finance-area/ledger-records/records/adjustment-record/adjustment-creation)** della situazione precedente.
+L'utente può procedere a creare più contabilizzazioni man mano che vengono definiti i dettagli, così come procedere a ricalcolare la lista per verificare che non siano state aggiunte altre operazioni (tipicamente di integrazione di registrazioni del nuovo esercizio con competenza antecedente) o creare assestamenti nuovi per questi. È comunque presente la **[scheda di ripristino](/docs/finance-area/ledger-records/records/procedures/adjustment-record/adjustment-creation)** della situazione precedente.
 
 :::note
 Saranno contabilizzate tutte le righe con flag **Controllato** attivo.

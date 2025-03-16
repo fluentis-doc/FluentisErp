@@ -39,7 +39,7 @@ Tutte le righe con stato ‘controllato' saranno oggetto della rilevazione in co
 
 ![](/img/it-it/finance-area/ledger-records/records/adjustment-record/new/management-tab/image05.png)
 
-L'utente può procedere a creare più contabilizzazioni man mano che vengono definiti i dettagli, così come procedere a ricalcolare la lista per verificare che non siano state aggiunte altre operazioni (tipicamente di integrazione di registrazioni del nuovo esercizio con competenza antecedente) o creare assestamenti nuovi per questi. È comunque presente la **[scheda di ripristino](/docs/finance-area/ledger-records/records/adjustment-record/adjustment-creation)** della situazione precedente.
+L'utente può procedere a creare più contabilizzazioni man mano che vengono definiti i dettagli, così come procedere a ricalcolare la lista per verificare che non siano state aggiunte altre operazioni (tipicamente di integrazione di registrazioni del nuovo esercizio con competenza antecedente) o creare assestamenti nuovi per questi. È comunque presente la **[scheda di ripristino](/docs/finance-area/ledger-records/records/procedures/adjustment-record/adjustment-creation)** della situazione precedente.
 
 NOTA: saranno contabilizzate tutte le righe con flag **Controllato** attivo.
 

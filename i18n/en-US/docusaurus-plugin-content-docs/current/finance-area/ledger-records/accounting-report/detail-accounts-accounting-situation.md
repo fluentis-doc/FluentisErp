@@ -17,7 +17,7 @@ It is possible, in particular, to filter the detail account linked to a specific
 
 **View amounts in currency**: by activating this option, the detail account will be grouped by currency, and totals for each group will be displayed both in currency and in Euro (or in the company’s currency in use).
 
-**View opening values**: by activating this option, two additional columns will also be displayed showing the opening values for each individual detail account. The values reported are those related to the procedure **[Automatic Accounts Opening](/docs/finance-area/ledger-records/records/automatic-accounts-opening/search)**.
+**View opening values**: by activating this option, two additional columns will also be displayed showing the opening values for each individual detail account. The values reported are those related to the procedure **[Automatic Accounts Opening](/docs/finance-area/ledger-records/records/procedures/automatic-accounts-opening/search)**.
 
 **Print account with balance equal to zero**: option deactivated by default; therefore, detail account with a zero balance will not be displayed. It can be activated to include these detail account.
 

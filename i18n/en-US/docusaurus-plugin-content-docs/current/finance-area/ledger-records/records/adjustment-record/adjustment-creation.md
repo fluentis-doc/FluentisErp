@@ -55,7 +55,7 @@ The next phase will be to confirm, line by line, that the calculated amount is c
 
 All lines with a *checked* status will be subject to accounting that will be executed by pressing the **Book** button.
 
-The user can create multiple postings as details are defined, as well as recalculate the list to verify that no additional operations have been added (typically integration of new exercise records with prior competency) or create new adjustments for these. The **[Recovery Tab](/docs/finance-area/ledger-records/records/adjustment-record/adjustment-creation)** of the previous situation is still present.
+The user can create multiple postings as details are defined, as well as recalculate the list to verify that no additional operations have been added (typically integration of new exercise records with prior competency) or create new adjustments for these. The **[Recovery Tab](/docs/finance-area/ledger-records/records/procedures/adjustment-record/adjustment-creation)** of the previous situation is still present.
 
 :::note
 All lines with the **Checked** flag activated will be posted.

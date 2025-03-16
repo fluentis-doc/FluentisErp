@@ -42,7 +42,7 @@ La presente form permette di ricercare le registrazioni contabili precedentement
 
 In questa sezione è possibile ricercare anche: 
 
-- le [registrazioni in stato provvisorio](/docs/finance-area/ledger-records/records/bridged-recording-management/bridged-recording) (oltre che definitivo)
+- le [registrazioni in stato provvisorio](/docs/finance-area/ledger-records/records/procedures/bridged-recording-management/bridged-recording) (oltre che definitivo)
 - per descrizione della registrazione (sul giornale) e del singolo movimento di dettaglio (descrizione di contropartita)
 - in un intervallo numerico di valori riferiti alla sezione Dare / Avere
 - registrazioni automatiche di chiusura / apertura conti

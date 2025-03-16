@@ -5,9 +5,9 @@ sidebar_position: 1
 
 LINK:
 
-**[Tab Gestione](/docs/finance-area/ledger-records/records/adjustment-record/adjustment-creation)**
+**[Tab Gestione](/docs/finance-area/ledger-records/records/procedures/adjustment-record/adjustment-creation)**
 
-**[Tab Ripristina](/docs/finance-area/ledger-records/records/adjustment-record/adjustment-creation)**
+**[Tab Ripristina](/docs/finance-area/ledger-records/records/procedures/adjustment-record/adjustment-creation)**
 
  
 

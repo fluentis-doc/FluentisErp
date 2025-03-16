@@ -21,7 +21,7 @@ E' possibile, in particolare, filtrare i sottoconti collegati ad uno specifico p
 
 
 
-**Visualizza valori di apertura**: attivando questa opzione saranno visualizzate anche due ulteriori colonne che riportano i valori dell'apertura conti per ogni singolo sottoconto. I valori riportati sono quelli relativi alla procedura **[Apertura automatica conti](/docs/finance-area/ledger-records/records/automatic-accounts-opening/search)**.
+**Visualizza valori di apertura**: attivando questa opzione saranno visualizzate anche due ulteriori colonne che riportano i valori dell'apertura conti per ogni singolo sottoconto. I valori riportati sono quelli relativi alla procedura **[Apertura automatica conti](/docs/finance-area/ledger-records/records/procedures/automatic-accounts-opening/search)**.
 
 
 

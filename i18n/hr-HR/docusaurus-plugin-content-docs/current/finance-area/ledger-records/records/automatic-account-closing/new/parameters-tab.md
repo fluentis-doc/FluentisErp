@@ -11,7 +11,7 @@ Nel tab ‘parametri' è necessario inserire:
 
 - i codici di sottoconto, causale da utilizzare e data di registrazione e di competenza contabile delle scritture di chiusura del libro giornale; tali dati (tranne le date di registrazione) vengono riportati automaticamente se inseriti all'interno dei **[parametri di contabilità](/docs/configurations/parameters/finance/accounting-parameters)** (tab ‘Conti');
 
-- (opzionale) la scelta di gestire contestualmente anche la riapertura dei conti anziché gestirla separatamente con **[l'apposito comando](/docs/finance-area/ledger-records/records/automatic-accounts-opening/new)**.
+- (opzionale) la scelta di gestire contestualmente anche la riapertura dei conti anziché gestirla separatamente con **[l'apposito comando](/docs/finance-area/ledger-records/records/procedures/automatic-accounts-opening/new)**.
 
  
 
@@ -19,7 +19,7 @@ Nel tab ‘parametri' è necessario inserire:
 
 
 
-**Anno contabile**: richiama il corrispondente anno dei **[parametri di contabilità](/docs/configurations/parameters/finance/accounting-parameters)**, serve per la gestione della riapertura delle scritture di assestamento, da attivare alla base della maschera con il flag **Giroconto scritture di assestamento**: si tratta di gestire, in coda alla riapertura conti, i movimenti di riattribuzione dei risconti e dei ratei (a patto che questi siano già stati elaborati con la procedura **[Scritture di assestamento](/docs/finance-area/ledger-records/records/adjustment-record/adjustment-creation)**) ai costi/ricavi relativi (i risconti saranno registrati alla stessa data dell'apertura conti, i ratei invece alla data della registrazione del documento d'origine).
+**Anno contabile**: richiama il corrispondente anno dei **[parametri di contabilità](/docs/configurations/parameters/finance/accounting-parameters)**, serve per la gestione della riapertura delle scritture di assestamento, da attivare alla base della maschera con il flag **Giroconto scritture di assestamento**: si tratta di gestire, in coda alla riapertura conti, i movimenti di riattribuzione dei risconti e dei ratei (a patto che questi siano già stati elaborati con la procedura **[Scritture di assestamento](/docs/finance-area/ledger-records/records/procedures/adjustment-record/adjustment-creation)**) ai costi/ricavi relativi (i risconti saranno registrati alla stessa data dell'apertura conti, i ratei invece alla data della registrazione del documento d'origine).
 
  
 
