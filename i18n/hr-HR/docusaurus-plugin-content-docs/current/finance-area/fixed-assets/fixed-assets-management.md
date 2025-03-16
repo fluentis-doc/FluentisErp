@@ -55,9 +55,5 @@ A seconda delle impostazioni delle categorie cespiti e dei parametri del modulo,
 
 ![](/img/it-it/finance-area/fixed-assets/fixed-assets-management/image01.png)
 
----
 
-### **VIDEO TUTORIALS**
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/EumrLuAHXCk" title="YouTube video player" frameborder="0" allowfullscreen= "true"></iframe>
 

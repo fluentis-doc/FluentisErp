@@ -41,8 +41,11 @@ Nel caso in cui i connettori visibili nell'immagine non fossero già presenti a 
   2. Partner: Fluentis
   
   3. Flusso: San Marino
+   
+  4. Identificativo: Deve corrispondere al parametro *Globalidentifier* settato nelle configurazioni del servizio Bizlink, altrimenti i connettori in questione risulteranno inibiti.
+  Pertanto al momento dell'installazione e prima dell'utilizzo i connettori, per precauzione, potrebbero risultare inibiti ed occorre attivarli cancellando la stringa SANMARINO dai connettori se il parametro del servizio bizlink risulta impostato a NULL, oppure riportare nel parametro *Globalidentifier* del servizio la stringa SANMARINO lasciando i connettori come stanno; in questo caso, però, la stringa SANMARINO dovrà essere riportata in tutti gli altri connettori che risultano necessari per le funzionalità desiderate.
   
-  4. Operazione di Flusso: selezionare le voci rispettivamente per l'invio, la ricezione o cancellazione, rispettivamente per fatture di acquisto o vendita, le voci sono coerenti con i codici visibili nell'immagine (che sono i connettori necessari) 
+  5. Operazione di Flusso: selezionare le voci rispettivamente per l'invio, la ricezione o cancellazione, rispettivamente per fatture di acquisto o vendita, le voci sono coerenti con i codici visibili nell'immagine (che sono i connettori necessari) 
     
 Documento di flusso: selezionare le voci rispettivamente per l'invio o la ricezione
   

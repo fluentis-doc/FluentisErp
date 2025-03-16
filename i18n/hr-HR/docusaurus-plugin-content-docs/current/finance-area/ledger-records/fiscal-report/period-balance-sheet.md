@@ -35,5 +35,14 @@ Sono possibili vari layout tra i quali una rappresentazione a sezioni contrappos
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/E_lIBlV2OXI" title="YouTube video player" frameborder="0" allowfullscreen= "true"></iframe>
 
+---
+
+### Riclassificazione di bilancio per elaborazione bilancio civilistico (schema CEE)
+
+:::important Vedi Anche
+[**VIDEO TUTORIALS SULLE STAMPE FISCALI**](/docs/video/finance/intro)
+:::
+
+
 
 

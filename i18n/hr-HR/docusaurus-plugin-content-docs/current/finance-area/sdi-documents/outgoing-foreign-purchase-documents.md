@@ -1,45 +1,53 @@
 ---
-title: Dokumenti iz inostranstva na izlazu 
+title: Odlazni inozemni dokumenti o kupnji
 sidebar_position: 5
 ---
-:::tip[Nota]
-**Ispunjenje prošlo** u pogledu nabavki od trenutne dostave na sdi [**autofaktura **](/docs/finance-area/e-invoice/auto-invoice/auto-invoice-generation).
-Što se tiče prodaja, trenutno se direktno šalju fakture (vidi ispod)
+:::tip[Napomena]
+**Obveza ispunjena** u vezi s kupnjama od trenutne dostave za Sdi [**autofaktura**](/docs/finance-area/e-invoice/auto-invoice/auto-invoice-generation).
+Što se tiče prodaje, trenutno se provodi izravno slanje faktura (pogledajte dolje).
 :::
 
 
-Regulativa je predviđala slanje podataka Agenciji za prihode o operacijama prenosa dobara/usluga koje su EFFETTUATE i RICEVUTE od subjekata koji nisu identificirani/ne rezidenti na teritoriji države.
+Propisi su zahtijevali da se Poreznoj upravi šalju podaci o transakcijama prijenosa dobara/usluga OBAVLJENIM i PRIMLJENIM od subjekata koji nisu identificirani/nisu rezidenti na teritoriju države.
 
-- Za **IZDANE** dokumente moguće je koristiti istu šemu predviđenu za italijanske elektronske fakture; alternativno, mogu se poslati sa šemom predviđenom za strane nabavne dokumente o kojima je reč u sledećoj tački.
+- Za **IZDANE** dokumente može se koristiti isti format kao za elektroničke fakture u Italiji; alternativno, mogu se poslati u formatu predviđenom za strane dokumente o kupnji, kako je navedeno u sljedećem odjeljku.
 
-- Za slanje dokumenata nabavke od stranih dobavljača na SdI predviđena je **[posebna šema](/docs/finance-area/declarations/declarations/electronic-invoice-for-foreign)**.
+- Za slanje Sdi-u dokumenata o kupnji od stranih dobavljača predviđen je **[poseban format](/docs/finance-area/declarations/declarations/electronic-invoice-for-foreign)**.
 
-Digitalni potpis je obavezan za oba tipa datoteka.
+Digitalni potpis obvezan je za obje vrste datoteka.  
 
-Slanje ovih datoteka na SdI upravlja se u Fluentisu kroz operacije promene statusa dokumenata.
+Slanje ovih datoteka Sdi-u upravlja se u Fluentis-u putem promjena stanja dokumenata.  
 
-Dokument XML se zatim prenosi na SdI koji ga provjerava i preuzima, a zatim šalje obavijesti o eventualnom odbacivanju zbog neusklađenosti datoteke ili o uspješnom preuzimanju.
+XML dokument zatim se šalje Sdi-u, koji ga provjerava i preuzima, a zatim vraća obavijesti u vezi s mogućim odbijanjem zbog nepravilnosti datoteke ili uspješnim preuzimanjem.  
 
-**Iz ovog obrasca moguće je pojedinačno upravljati svakim dokumentom ili masovno za više dokumenata istovremeno, mijenjajući status za slanje na SDI, prateći istu shemu kao i za talijanske fakture.**
+**Iz ovog obrasca moguće je upravljati pojedinačnim ili masovnim promjenama stanja za slanje Sdi-u, slijedeći isti format kao za talijanske fakture.**
 
-U obrascu Dokumenti nabavke iz inozemstva na izlazu prikazani su svi dokumenti proizvedeni iz Knjigovodstvenih evidencija i povezani s ovom vrstom događaja. Obrazac je podijeljen na gornji dio u kojem su prikazani filteri za selekciju obrađenih datoteka, među kojima se nalaze:
+U obrascu Strani dokumenti o kupnji u izlazu prikazani su svi dokumenti proizvedeni iz računovodstvenih evidencija koji se odnose na ovu vrstu događaja. Obrazac je podijeljen u gornji dio u kojem su prikazani filtri za odabir upravljanih datoteka, među kojima su:  
 
- - Od datuma/ Do datuma prijema:
- - Od datuma/ Do datuma prijema kupca:
 
-U tablici rezultata prikazani su podaci koji se odnose na obrađene ili datoteke koje treba obraditi.
+ - Datum od/Datum do primitka:  
+ - Datum od/Datum do primitka od kupca:  
 
- - **Status SdI**: sadrži opis statusa dokumenta, prikazujući kako internu upravu Fluentisa, tako i stanje prikazano iz Fluentis Business Hub-a i preuzeto direktno od SdI.
- - **Naziv datoteke SdI**: naziv datoteke koja se kreira u trenutku kada dokument prijeđe u stanje GENERIRANO; u izvornom formatu ili nakon potpisa digitalnim potpisom, predstavlja datoteku računa koja se šalje na SdI.
- - **Sdi Id**: jedinstveni identifikator koji SdI dodeljuje dokumentu u trenutku prijema.
- - **Datum posljednjeg događaja**: datum posljednje promjene stanja na datoteci, bilo ručno ili kao rezultat napredovanja obrade na SdI.
+U mreži rezultata prikazani su podaci koji se odnose na upravljane ili datoteke koje treba upravljati.   
 
-Na traci izbornika prikazane su funkcije za upravljanje dokumentom ili odabranim dokumentima. 
 
-- Gumb ![](/img/neutral/common/view.png) **Prikaži** omogućuje pregled dokumenta, gdje je moguće pregledati događaje povezane s generiranom XML datotekom, izvršiti njezino preuzimanje ili promijeniti njezino stanje:  
+ - **Status e-dokumenta**: prikazuje opis statusa dokumenta, navodeći i status unutarnjeg upravljanja Fluentis-om, kao i status koji je prikazan na Fluentis Business Hub-u i koji je izravno preuzet od SdI.  
+ - **Naziv datoteke ES**: naziv datoteke koja se stvara kada dokument pređe u stanje GENERIRANO; u izvornom formatu ili nakon što je digitalno potpisana, predstavlja datoteku računa koja se šalje SdI.  
+ - **Sdi Id**: jedinstveni identifikator koji SdI dodjeljuje dokumentu prilikom njegovog primitka.  
+ - **Datum zadnjeg događaja**: datum posljednje promjene statusa na datoteci, bilo ručno ili zbog napredovanja obrade na SdI.
+
+Na traci izbornika prikazane su funkcije za upravljanje odabranim dokumentom ili dokumentima:
+
+tipka ![](/img/neutral/common/view.png) **Prikaži** omogućuje pregled, gdje možete pregledati događaje povezane s generiranom XML datotekom, preuzeti je ili promijeniti njezin status:
 
 ![](/img/it-it/finance-area/sdi-documents/outgoing-foreign-purchase-documents/image02.png)
 
-- Gumb ![](/img/it-it/finance-area/sdi-documents/outgoing-foreign-purchase-documents/image03.png)  **Preuzmi privitak** izvršava preuzimanje odabrane datoteke u odabranu mapu na datotečnom sustavu.
+- tipka ![](/img/it-it/finance-area/sdi-documents/outgoing-foreign-purchase-documents/image03.png)   **Preuzmi privitak** preuzima odabranu datoteku u odabranu mapu na vašem sustavu. 
 
-- Gumb ![](/img/it-it/finance-area/sdi-documents/outgoing-foreign-purchase-documents/image04.png) **Otvorite dokument** izvršava preuzimanje odabrane datoteke u odabranu mapu na datotečnom sustavu.  
+- tipka ![](/img/it-it/finance-area/sdi-documents/outgoing-foreign-purchase-documents/image04.png) **Otvori dokument** otvara računovodstveni zapis povezan s odabranom datotekom.  
+
+
+
+
+
+

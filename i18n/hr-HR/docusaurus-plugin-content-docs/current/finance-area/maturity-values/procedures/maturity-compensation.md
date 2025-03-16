@@ -1,38 +1,35 @@
 ---
-title: Compensazione partite
+title: Kompenzacija dospjelih plaćanja
 sidebar_position: 2
 ---
 
-:::note Percorso
-**Amministrazione>Partite>Procedure>Compensazione partite**
+:::note Put
+**Administracija>Dospijeća plaćanja>Procedure>Kompenazcija dospjelih plaćanja**
 
-Nota:
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Napomena:
+Za sve što nije detaljno objašnjeno u ovom dokumentu o uobičajenom funkcioniranju obrazaca, molimo se obratite sljedećoj poveznici:[Zajedničke funkcionalnosti, tipke i polja](/docs/guide/common).
 
 :::
 
 ---
 
-La presente procedura, simile alla analoga *Compensazione veloce* (quest'ultima è stata semplificata e, per certi aspetti è pertanto preferibile) presenta una form di ricerca nella quale poter anche ricercare e rivedere le manovre svolte (a differenza della *Compensazione veloce*).
+Ovaj postupak, sličan *Brzoj kompenzaciji* predstavlja obrazac za pretraživanje u kojem je također moguće pretraživati i pregledavati dospijeća plaćnja.
 
-Per eseguire una compensazione è pertanto necessario premere il tasto **Nuovo** per procedere.
+Za izvođenje kompenzacije potrebno je pritisnuti tipku **Novo** za nastavak.
 
-Il primo campo obbligatorio da impostare è il **Tipo compensazione**, da richiamare tramite la combo box che rinvia all'apposita tabella.
+Prvo obavezno polje koje treba postaviti je **Tip kompenzacije** iz padajućeg izbornika.
 
-In tale tabella, oltre al consueto codice e descrizione del tipo in questione, si può configurare una numerazione specifica ed altri parametri che sono fondamentali quando la compensazione interessa non solo le partite aperte, ma anche i saldi contabili (come ad esempio una posizione di cliente e fornitore nei confronti dello stesso soggetto).
-E' obbligatorio, inoltre, selezionare uno dei tre tipi possibili di compensazione dalla relativa combo box:
-- Fatture - note di accredito
-- Cliente - fornitore: (tipologia che, tipicamente, da luogo anche ad una compensazione di saldi contabili)
-- Pagamenti - documenti: utilizzata per chiudere posizioni di partitario aperte a fronte di incassi o pagamenti anticipati
+Moguće je konfigurirati specifično numeriranje i druge parametre koji su potrebni kada se kompenzacija ne odnosi samo na otvorene stavke, već i na računovodstvena stanja. 
+Dakle, obavezno je odabrati jedan od tri mogućih tipova kompenzacija iz padajućeg izbornika:
+- Računi - knjižna odobrenja  
+- Kupac - dobavljač: (tipologija koja obično dovodi do kompenzacije računovodstvenih stanja)  
+- Zatvaranje uplata: koristi se za zatvaranje otvorenih stavki u glavnoj knjizi s potvrdama ili avansnim plaćanjima.
 
 
-I parametri da impostare sono quelli della causale contabile che sarà utilizzata nella scrittura contabile generata automaticamente dalla compensazione egli eventuali conti da utilizzare per generare degli abbuoni attivi o passivi (nel casi si voglia gestire un residuo rispetto ad importi che non coincidono perfettamente).
+Parametri koji se postavljaju su oni iz predloška knjiženja koji će se koristiti u računovodstvenom unosu automatski generiranom kompenzacijom i svim kontima koji će se koristiti za generiranje dugovanja ili potraživanja.
 
-La procedura di selezione delle partite è molto simile alla *compensazione veloce* e pertanto si rinvia alle relative istruzioni.
+I ovdje postoje "ladice" tj. (bočne kartice/tabovi) u kojima se također prikazuju dospijeća i nakon odabira (dvostrukim klikom ili određenom tipkom na traci izbornika) prebacuju se na glavne prikaze i zatim se može još lakše raditi s kompenzacijama.
 
-Anche qui sono presenti i "cassetti" a scomparsa (tab laterali) dove vengono anche visualizzate le partite (a differenza dell'analoga procedura) ed una volta selezionate (con un doppio click o apposito tasto della ribbon bar) vengono riportate nelle griglie principali della form per poi procedere con la manovra di compensazione
+PAŽNJA, radnja s kompenzacijama je dovršena kada se obračuna. Tab/kartica Knjiženje je uključen kada se podudaraju vrijednosti stavki koje se kompenziraju. Stoga, u slučaju da se vrijednost (ili ostatak) stavki koje treba kompenzirati ne poklapa, potrebno je izmijeniti vrijednost stavke u stupcu **Iznos**, na taj način će stavka biti zatvorena za kompenzaciju samo za tu vrijednost (na primjer, od 2000 kompenzira se samo s 1000 što je vrijednost dospijeća suprotnog predznaka) i stoga će ostati otvoreno kao ostatak. Treba provjeravati je li polje **Razlika** na dnu obrasca na nuli.
 
-ATTENZIONE, la manovra viene finalizzata quando è contabilizzata. Il pulsante di contabilizzazione (che agirà solo sulla chiusura partite nel caso in cui il tipo di compensazione non preveda la parte contabile) si abilita quando i valori delle partite da compensare coincidono. Pertanto nel caso in cui il valore (o il residuo) delle partite da compensare non coincida, occorre modificare il valore della partita nella colonna **Importo**, in tal modo la partita sarà chiusa per compensazione soltanto per tale valore (ad esempio una partita da 2.000 viene compensata solo per 1.000 che è il valore della partita di segno opposto) e rimarrà dunque aperta per il residuo.
-Verificare che il campo **Differenza**, in basso nella form vada a zero.
-
-Premendo il bottone di contabilizzazione (con possibilità di eseguire il ripristino) saranno generati nella tab successiva (***Contabilizzazione***) i pagamenti a chiusura delle partite e, se il tipo lo prevede, le scritture contabili di compensazione.
+Pritiskom na tipku Knjiženje, generiraju se isplate.

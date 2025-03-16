@@ -41,7 +41,9 @@ Attivando il flag **Definitiva** la procedura andrà a stampare i registri in de
 | Stampa | Pulsante per eseguire la stampa fisica del registro IVA. |
 
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/HWjgN0yehEc" title="YouTube video player" frameborder="0" allowfullscreen= "true"></iframe>
+:::important Vedi Anche
+[**VIDEO TUTORIALS SULLE STAMPE FISCALI**](/docs/video/finance/intro)
+:::
 
 
 

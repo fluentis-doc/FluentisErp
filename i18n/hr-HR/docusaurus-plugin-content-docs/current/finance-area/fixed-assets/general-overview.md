@@ -1,5 +1,5 @@
 ---
-title: Generalità
+title: Introduzione
 sidebar_position: 1
 ---
 
@@ -23,14 +23,29 @@ Prima di procedere all'introduzione o alla realizzazione di un cespite è necess
 > [Contabilizzazione ammortamenti](/docs/finance-area/fixed-assets/accounting/depreciations-accounting): richiama la procedura per contabilizzare in automatico degli ammortamenti.  
 > [Simulazione piani di ammortamento](/docs/finance-area/fixed-assets/depreciation-plans-simulation): richiama la procedura per effettuare la simulazione dei piani di ammortamento.  
 
----
 
-### **VIDEO TUTORIALS**
+**Tabelle necessarie per gestire il modulo**: 
+[Piano dei conti](/docs/erp-home/registers/accounting/analytic-chart-of-accounts),  
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/EumrLuAHXCk" title="YouTube video player" frameborder="0" allowfullscreen= "true"></iframe>
+[Aliquote IVA](/docs/configurations/tables/finance/vat-rates),  
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/0vMJpldI7fw" title="YouTube video player" frameborder="0" allowfullscreen= "true"></iframe>
+[Cambi fissi euro](/docs/configurations/tables/finance/euro-fixed-exchanges),  
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/m_qhk6-JrVc" title="YouTube video player" frameborder="0" allowfullscreen= "true"></iframe>
+[Cambi valute](/docs/configurations/tables/finance/currency-exchange),  
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/jD0qtQmqCIA" title="YouTube video player" frameborder="0" allowfullscreen= "true"></iframe>
+[**Categoria cespite**](/docs/configurations/tables/finance/fixed-asset-category), 
+
+[Piani di ammortamento alternativi](/docs/configurations/tables/finance/alternative-depreciation-plans),  
+
+[Precodice cespite](/docs/configurations/tables/finance/fixed-asset-precode),  
+
+[Proprietà cespite](/docs/configurations/tables/finance/fixed-asset-property), Tipi contabilizzazione cespiti,  
+
+[Tipi ammortamenti oggetivi](/docs/configurations/tables/finance/objective-amortization-types),  
+
+[Tipi deducibilità](/docs/configurations/tables/finance/deductibility-types),  
+
+[Tipi rivalutazione](/docs/configurations/tables/finance/revaluation-types).
+
+
+**Parametri**:   [Parametri cespiti](/docs/configurations/parameters/finance/fixed-assets-parameters).

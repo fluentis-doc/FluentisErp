@@ -1,78 +1,76 @@
 ---
-title: Creazione fattura di acquisto da xml
+title: Kreiranje ulaznog računa iz XML-a
 sidebar_position: 4
 ---
 
-Il bottone **Creazione fattura di acquisto** è disponibile nella ribbon bar del Registro documenti Sdi, accessibile da Applications > BizLink > Documenti SDI > Documenti acquisto in entrata.
+**Kreiranje ulaznog računa** dostupno je na alatnoj traci unutar menija SDI (ES), kojem se može pristupiti putem Alati > BizLink > ES Dokumenti > Dokumenti za dolaznu kupnju.  
 
-:::note Nota
-Per attivare il bottone si deve settare da SQL nella tabella fluentis.SDI_CompanyConfiguration il flag SDICFC_PurchaseInvoiceCreation.
+:::note Napomena
+Za aktivaciju tipke potrebno je u SQL tablici fluentis.SDI_CompanyConfiguration postaviti flag SDICFC_PurchaseInvoiceCreation.
 :::
 
-Una volta selezionata una riga, esso permette di creare una fattura nei documenti del ciclo passivo dopo aver importato o ricevuto da FBH il documento sdi in formato xml. 
-E' quindi possibile procedere per poterla agganciare all’evasione di DDT e ordini ai quali fa riferimento.
+Nakon odabira retka, omogućeno je kreiranje ulaznih računa primitkom XML formata dookumenta. 
+Nakon toga moguće je povezati račun s izvršenjem skladišnog dokumenta ili narudžbi na koje se odnosi.  
 
-Una volta cliccato il bottone di Creazione fattura di acquisto, si aprirà una finestra in cui indicare il conto del fornitore da utilizzare. Se il conto non esiste, sarà possibile crearlo.
-Una volta confermato il conto, si aprirà un’ulteriore finestra Valori da utilizzare, nella quale vengono richiesti i seguenti dati:
+Klikom na tipku Izrada računa za kupnju otvara se prozor u kojem je potrebno odabrati račun dobavljača.   
+Ako račun ne postoji, moguće ga je kreirati. Nakon potvrde računa otvara se dodatni u kojem su potrebni sljedeći podaci:
 
 ![](/img/it-it/finance-area/e-invoice/purchase-invoice-creation/img1.png)
 
-**Tipo fattura di acquisto:** indicare la tipologia di documento da creare;
+**Vrsta ulaznog računa:** navesti tip dokumenta koji se kreira;
 
-**Articoli:** indicare gli articoli che andranno a far parte della fattura di acquisto;
+**Artikli:** navesti artikle koji će biti uključeni u ulazni račun;
 
-**IVA:** indicare l’aliquota da applicare;
+**PDV:** odrediti stopu PDV-a za primjenu;
 
-**Tipo pagamento:** contiene la tipologia di pagamento da inserire nel documento per il fornitore.
+**Tip plaćanja:** navesti vrstu plaćanja za dobavljača.
 
-Tutti questi dati possono essere impostati come default da proporre per le volte successive con il flag **Salva impostazioni**, presente accanto ad ogni dato da utilizzare.
+Svi ovi podaci mogu se postaviti kao zadane postavke za buduće korištenje označavanjem opcije **Spremi postavke**, koja je dostupna uz svaki podatak.  
 
-Una volta impostati tutti i campi e premuto OK, si aprirà la fattura di acquisto creata; essa avrà la tipologia, l’articolo e l’IVA prescelti. Se l’articolo non viene riconosciuto come codificato, verrà inserito un articolo non codificato. 
-Gli altri dati vengono presi di default dall’anagrafica del fornitore. È possibile modificare manualmente la fattura e salvarla.
+Nakon unosa svih podataka i potvrde pritiskom na OK, kreirani ulazni račun će se otvoriti. Račun će sadržavati odabrani tip, artikle i PDV. Ako šifra artikla nije prepoznata, bit će unesen bez šifre. Ostali podaci automatski se preuzimaju iz evidencije dobavljača, ali račun se može ručno uređivati i spremiti.  
 
 ---
 
-Per la creazione di fattura con **ARTICOLI CODIFICATI** (riconoscimento automatico delle anagrafiche articoli presenti su Fluentis) è necessario procedere come segue al fine di permettere il riconoscimento, diversamente sarà creata una fattura con righe di tipo 2 (non codificato).
+Kreiranje računa sa **ŠIFRIRANIM ARTIKLIMA** (automatsko prepoznavanje artikala u Fluentis sustavu) zahtijeva određene korake kako bi se osiguralo prepoznavanje. U protivnom će se kreirati račun s nešifriranim stavkama tipa 2.  
 
-Le anagrafiche articolo potranno avere una codifica interna anche diversa da quella usata dal fornitore che sta inviando la fattura.
+Šifarnik artikala može imati internu kodifikaciju koja se razlikuje od one koju koristi dobavljač.
 
-Esempio: Codice - MATCH1  Descrizione - PT 2,5 BU
-Dentro questa anagrafica dovrà essere valorizzata la sezione del *fornitore preferenziale* con indicazione del fornitore in questione e relativa codifica adottata dal fornitore per questo articolo.
+Primjer: Kod - MATCH1  Opis  - PT 2,5 BU
+Potrebno je postaviti sekciju *Preferirani dobavljač* s podacima o dobavljaču i pripadajućem šifriranju koje dobavljač koristi za taj artikl.
 
 ![](/img/it-it/finance-area/e-invoice/purchase-invoice-creation/img5.png)
 
-Il fornitore potrebbe adottare un tipo di codifica o anche più di uno come visibile nell'immagine.
+Dobavljač može koristiti jedan ili više tipova šifriranja, kao što je prikazano na slici.
 
 ![](/img/it-it/finance-area/e-invoice/purchase-invoice-creation/img3.png)
 
-Ad esempio una codifica EAN o di altro tipo.
+Na primjer, EAN šifra ili neki drugi tip šifriranja.
 
-:::danger Attenzione
-Verrà letta la prima codifica presente nel documento xml, nell'esempio la codifica di tipo SA mentre la codifica EAN sarà ignorata, dunque dovrà essere gestito questo primo riferimento
+:::danger Napomena
+U XML dokumentu čita se prva dostupna šifra, dok se ostale (npr. EAN) ignoriraju. 
 :::
 
-All'interno dell'anagrafica del fornitore dovrà dunque essere inserito il codice del tipo codifica valido per il fornitore stesso (tab *Informazioni fiscali*)
+Važno je upravljati ovim početnim referentnim kodom u šifarniku dobavljača (kartica *Porezne informacije*)
 
 ![](/img/it-it/finance-area/e-invoice/purchase-invoice-creation/img6.png)
 
-Se le configurazioni vengono fatte correttamente il risultato della creazione della fattura è il seguente, dove si può notare che è presente una riga non codificata per le spese di trasporto non previste a priori.
+Ako su konfiguracije pravilno postavljene, rezultat kreiranja računa prikazivat će i nešifriranu stavku za transportne troškove koji nisu bili unaprijed definirani.
 
 ![](/img/it-it/finance-area/e-invoice/purchase-invoice-creation/img4.png)
 
 ---
 
-Nella ribbon bar della testata è presente il bottone **Sdi – Chiusura documenti** che permette di agganciare un ddt di acquisto alla fattura di acquisto appena creata. 
+Na traci izbornika zaglavlja dostupna je tipka **SDI – Zatvaranje dokumenata** koji omogućuje povezivanje dokumenta nabave s kreiranim ulaznim računom.   
 
-Una volta cliccato il bottone si aprirà una finestra in cui sono presenti dei filtri da impostare per avere una ricerca più mirata dei ddt di acquisto da abbinare: è possibile inserire il Tipo DDT di acquisto, il numero, il Fornitore, ecc.
+Klikom na tipku, otvara se prozor s filtrima za preciznije pretraživanje dokumenta nabave za povezivanje. Moguće je unijeti tip dokumenta, broj, dobavljača i druge parametre. 
 
-Premendo il tasto Ricerca, nelle griglie sottostanti verranno presentati i ddt di acquisto sulla sinistra, e le fatture di acquisto sulla destra, che è possibile abbinare. 
+Pritiskom na Pretraži, u pregledima lijevo će se pojaviti dokumenti nabave, a desno ulazni računi, koji se mogu povezati. 
 
-Selezionando i documenti o le singole righe nella griglie e cliccando il tasto **Collegamenti** nella ribbon bar, verrà effettuato il collegamento tra i documenti. 
+Odabirom dokumenata ili pojedinačnih redaka u pregledima i pritiskom na tipku **Poveži** u traci izbornika, veza između dokumenata će biti uspostavljena. 
 
-Uscirà una finestra per avvisare l’Operazione completata ed un’altra finestra Riepilogo Sdi –
-Documenti di chiusura con i dettagli del collegamento
+Pojavit će se prozor s obavijesti da je operacija dovršena, kao i dodatni prozor sa sažetkom zatvaranja dokumenata i detaljima veze. 
 
 
 ![](/img/it-it/finance-area/e-invoice/purchase-invoice-creation/img2.png)
 
-Da questo momento il ddt di acquisto e la fattura sono collegati. È possibile verificare il collegamento all’interno della Fattura di acquisto, che contiene il riferimento al ddt nel tab Articoli
+Od tog trenutka, document nabave i ulazni račun su povezani. Poveznicu je moguće provjeriti unutar ulaznog računa u kartici Artikli, gdje je naveden dokument na koji se odnosi. 

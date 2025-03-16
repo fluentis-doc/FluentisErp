@@ -1,67 +1,83 @@
 ---
-title: Visualizzazione conti
+title: Prikaži konta
 sidebar_position: 2
 ---
 
-La form consente di visualizzare i movimenti contabili di qualsiasi conto o sottoconto contabile, di qualsivoglia tipologia (attivo, passivo, costi, ricavi o anagrafico): tutti i movimenti di tutti gli esercizi contabili sono sempre in linea, ma chiaramente potranno essere modificati o meno a seconda della chiusura del periodo a seguito di stampe fiscali obbligatorie eseguite in definitivo o per operazioni di chiusura conti.
+Ova forma omogućuje pregled računovodstvenih zapisa bilo kojeg konta ili podkonta, bez obzira na vrstu (aktiva, pasiva, troškovi, prihodi ili analitički konto). Pregled svih kretanja za sve računovodstvene godine uvijek je dostupan. Ovisno o zatvaranju razdoblja nakon obveznih poreznih izvještaja ili zbog operacija zatvaranja konta, zapisi se mogu i mijenjati.
 
-Nella parte superiore è obbligatorio inserire un codice di conto o direttamente un sottoconto di dettaglio: i campi di filtro successivi, invece, sono opzionali.
+## Testata:
+
+U gornjem dijelu obavezno je unijeti šifru konta ili izravno podračun, ostala polja filtra su opcionalna.
 
 ![](/img/it-it/finance-area/ledger-records/records/view-accounts/image01.png)
 
- 
 
-**La griglia dati risulta ordinata di default per data registrazione discendente**, (il criterio di ordinamento può essere comunque variato) e visualizza la lista dei movimenti secondo i filtri impostati: 
+## Prikaz podataka: 
 
-Con questa impostazione i dati vanno dunque letti tenendo presente che:
+Prema zadanim postavkama, popis je poredan po datumu knjiženja silazno (kriterij poretka može se promijeniti) i prikazuje kretanje prema postavljenim filtrima.
 
--  supponendo di filtrare con ‘da data registrazione' 01/01/yyyy, avremo nei campi (in alto) **Saldo precedente** i totali dare avere delle registrazioni antecedenti al 01/01/yyyy,
+S ovim postavkama podaci se čitaju uzimajući u obzir sljedeće:
 
-- nella griglia dei movimenti i dati saranno presentati dal più recente al più vecchio (temporalmente) procedendo a leggere dall'altro verso il basso 
+-  ako filtriramo prema 'od datuma knjiženja' 01/01/yyyy, u poljima (gore) **Saldo prethodnog stanja** prikazat će se ukupna dugovna i potražna strana za knjiženja prije 01/01/yyyy,
 
-- il campo **Progressivo** visualizzerà nell' ultima riga l'importo del campo **Saldo precedente** aggiornato del valore della riga stessa per poi essere aggiornato riga per riga dal basso verso l'alto.
+- U prikazu kretanja podaci će biti prikazani od najnovijih prema najstarijima (kronološki), 
 
-NOTA: il campo **Progressivo** è visibile solo nel caso in cui sia mantenuto l' ordinamento di default previsto per la form; negli altri casi il campo scompare e per farlo riapparire sarà necessario chiudere e riaprire la form e dunque rieseguire la ricerca. 
+- Polje **Progresivan** će u posljednjem retku prikazati iznos iz polja **Saldo prethodnog stanja** ažuriran vrijednošću iz istog retka, a zatim će se ažurirati redak po redak od dolje prema gore.
 
- 
+:::note[NAPOMENA]
+Polje **Progresivan** je vidljivo samo ako je zadržan zadani redoslijed prikaza u formi; u suprotnom slučaju, polje nestaje i da bi se ponovno prikazalo, potrebno je zatvoriti i ponovno otvoriti formu te ponovno izvršiti pretragu.
+:::
 
-**Totali alla base della maschera**:
 
-**Saldo selezione**: somma dare/avere delle righe che sono selezionate nella griglia; 
+## Ukupni iznosi na dnu forme:
 
-**Saldo corrente**: somma dare/avere delle righe visualizzate nella griglia; 
+**Odaberi stanje**: zbroj dugovnih/potražnih iznosa,  koji su odabrani u tablici mišem; ako odaberete sve retke u tablici (pomoću ctrl+a), ovo polje će prikazati isti rezultat kao i polje *Trenutni saldo*. 
 
-**Totale**: somma dare/avere del saldo precedente e del saldo corrente;  
+**Tekuće stanje**: zbroj dugovnih/potražnih iznosa za sve prikazane redove (uvijek sve, neovisno o selekciji napravljenoj mišem);  
 
-**Saldo**: saldo finale, o in dare o in avere (che corrisponderà sempre al progressivo visualizzato nella prima riga).
+**Ukupno**: zbroj dugovnih/potražnih iznosa prethodnog salda i trenutnog salda;  
 
-Nella griglia sono visibili due serie di sottoconti visualizzati, il sottoconto intestazione (che viene ripreso dal sottoconto intestatario della registrazione dal quale è ripreso il movimento stesso) e il sottoconto di dettaglio che è effettivamente il sottoconto di cui si stanno ricercando i movimenti. Ad esempio, nel caso in cui si stiano visualizzando i movimenti di un conto generico di costo, avremo nel sottoconto intestazione i codici dei fornitori che ci hanno inviato fatture registrate a quel conto di costo e nel sottoconto di dettaglio dei singoli sottoconto di costo specifici rilevati.
+**Saldo**: konačni saldo, bilo dugovni ili potražni (koji će uvijek odgovarati progresivnom saldu prikazanom u prvom retku).
+
+
+:::tip[Kako čitati i interpretirati ukupne iznose]
+**Dugovanje/Potraživanje prethodno** (prema filtriranom rasponu i posljednjem otvaranju računa) **+ Trenutni saldo = Ukupno** (obe kolone dugovanje/potraživanje uvijek su popunjene u ova 3 bloka).
+
+**Prethodni saldo + Trenutni saldo** (kao razlika dugovanje - potraživanje) **= Saldo** (trenutni)
+
+*Trenutni saldo* prikazan je u oba odjeljka kako bi se analitički prikazao izračun *Ukupnog* (jer se za njegov izračun na Trenutni saldo dodaju dvije odvojene sekcije *Dugovanje / Potraživanje prethodno*)
+
+![](/img/it-it/finance-area/ledger-records/records/view-accounts/image04.png)
+
+:::
+
+
+
+U prikazu su vidljive dviprikazanih podračuna: podračun zaglavlja (koji se preuzima iz podračuna nositelja knjiženja iz kojeg je preuzet pokret) i podračun detalja, koji je zapravo podračun za koji se pretražuju pokreti. Na primjer, ako pregledavamo pokrete generičkog troškovnog računa, u podračunu zaglavlja prikazat će se šifre dobavljača koji su nam poslali račune knjižene na taj troškovni račun, dok će u podračunu detalja biti prikazani pojedinačni specifični podračuni troškova.
 
 ![](/img/it-it/finance-area/ledger-records/records/view-accounts/image02.png)
 
  
-
-Inoltre è possibile "espandere" la riga tramite il comando + a sinistra per visualizzare l'intera scrittura contabile.
+Također je moguće "proširiti" redak pomoću klika na + s lijeve strane kako bi se prikazalo cijelo računovodstveno knjiženje.
 
 ![](/img/it-it/finance-area/ledger-records/records/view-accounts/image03.png)
 
- 
 
-Ulteriori operazioni che si possono effettuare con riferimento alla griglia dei risultati:
+Dodatne operacije koje se mogu izvršiti u pregledu podataka:
 
-- Doppio click sulla singola riga visualizzata: in questo caso, se l'utente ha i diritti relativi, si aprirà in modifica la registrazione di appartenenza del movimento;
+- Dvostruki klik na pojedini prikazani redak: U ovom slučaju, ako korisnik ima odgovarajuća prava, otvorit će se obrazac za uređivanje pripadajućih zapisa kretanja;
 
-- Premere il pulsante **Modifica** situato nella ribbon bar avrà lo stesso effetto del doppio click appena descritto;
+- Pritiskom na tipku **Izmijeni** smješten u traci izbornika: ima isti učinak kao i dvostruki klik na opisani redak;
 
-- Premere il pulsante **Doc. Origine**, quando è attivo, andrà ad aprire in Visualizzazione (se l'utente ne ha il diritto) la fattura di acquisto o di vendita che con la contabilizzazione ha creato il movimento di contabilità selezionato;
+- Pritiskom na tipku  **Dokument porijekla**, kada je aktivan: Otvorit će se pregled (ako korisnik ima odgovarajuća prava) ulaznih ili izlaznih računa koji su kreirali odabrani računovodstveni zapis prilikom knjiženja;
 
-AREA DI FILTRO: l'area di filtro è quella dedicata ad ospitare l'elenco dei possibili tipi di dati grazie ai quali è possibile effettuare una selezione. I Filtri sono tipicamente sempre in condizione 'AND' ed è possibile specificare più criteri di filtro contemporanei.
+PODRUČJE FILTRA: Područje filtra je namijenjeno za prikaz popisa mogućih uvjeta pomoću kojih je moguće izvršiti selekciju. Filtri su tipično uvijek u uvjetu 'AND', i moguće je specificirati više kriterija filtra istovremeno.
 
-GRIGLIA DI RISULTATO: la griglia di risultato rappresenta l'elenco delle registrazioni che corrispondono ai dati di filtro sopra specificati. L'utente, dopo aver specificato i valori attraverso i quali desidera ottenere una ricerca delle registrazioni, se preme il pulsante [Ricerca ] presente nella relativa Ribbon, otterrà nella griglia di risultato l'elenco delle registrazioni desiderate.
+PRIKAZ REZULTATA: Prikaz rezultata predstavlja popis računovodstvenih zapisa koji odgovaraju gore specificiranim uvjetima filtra. Korisnik, nakon što specificira vrijednosti pomoću kojih želi pretražiti zapise, pritiskom na tipku [Traži] u meniju, dobit će u prikazu rezultata popis željenih zapsia.
 
----
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/gS0i_G0O5ko" title="YouTube video player" frameborder="0" allowfullscreen= "true"></iframe>
+:::important Pogledaj također
+[**VIDEO TUTORIJALI O RAČUNOVODSTVENIM ZAPISIMA**](/docs/video/finance/intro.md)
+:::
 
 
 

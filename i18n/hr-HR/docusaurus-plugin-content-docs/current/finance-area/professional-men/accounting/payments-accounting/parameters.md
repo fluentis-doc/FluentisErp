@@ -3,21 +3,21 @@ title: Parametri
 sidebar_position: 3
 ---
 
-Glavni računovodstveni parametri postupka upravljaju se na ovoj stranici:
+Nella presente scheda si gestiscono i parametri contabili principali della procedura: 
 
-**datum registracije i obračuna**, **predložak** koji će se koristiti, **bankovni podračuni koji će se teretiti** i onaj za **evidentiranje duga poreza po odbitku (nije obavezno)**, ako ne postoji, koristit će se podračun upisan u vrstu poreza po odbitku.  
+le **date di registrazione e competenza**, la **causale** di pagamento da utilizzare, i s**ottoconti della banca da addebitare** e quello di **rilevazione del debito della ritenuta (non obbligatorio**, se non presente sarà utilizzato il sottoconto inserito nel tipo ritenuta). 
 
-Oznaka zatvaranja dospijeća, predložena prema zadanim postavkama, nikada se ne smije ukloniti (kako bi se upravljalo zatvaranjem dospijeća).
+Il flag di chiusura partite, proposto di default, non va mai tolto (al fine di gestire la chiusura partite).
 
  
 
-Dostupne opcije grupiranja su:
+Le opzioni di raggruppamento previste sono:
 
-Zadano **Pojedinačno zapisivanje** (bez oznake **Konta grupiranja**): u ovom slučaju jedinstvena registracija bit će kreirana s jednim bankovnim kretanjem (kako bi se olakšalo usklađivanje kretanja s bankovnim izvodom), dok će ostali podračuni biti detaljna kompenzacija po kompenzacijama (do veće kontrole kretanja na računu poreza po odbitku). Ako je također postavljena zastavica grupiranja računa, podaci drugih identičnih podračuna koji su premješteni također će biti grupirani zajedno;
+Il default **Singola registrazione** (senza flag **Raggruppa conti**): in questo caso sarà creata un'unica registrazione con un unico movimento banca (per facilitare la riconciliazione dei movimenti con l'estratto conto bancario) mentre gli altri sottoconti saranno dettagliati compenso per compenso (per un controllo maggiore dei movimenti sul conto delle ritenute). In caso sia impostato anche il flag di raggruppamento conti saranno raggruppati i dati anche degli altri sottoconti uguali movimentati;
 
-**Nema grupiranja**: u ovom će slučaju svaka naknada imati zasebnu registraciju.  
+**Nessun raggruppamento**: in questo caso ogni compenso avrà una registrazione separata.
 
-**Grupiraj po detaljnom kontu**: u ovom slučaju grupiranje će se izvršiti prema primatelju;  
+**Raggruppa per sottoconto**: in questo caso il raggruppamento sarà effettuato percipiente per percipiente;
 
  
 
@@ -25,7 +25,7 @@ Zadano **Pojedinačno zapisivanje** (bez oznake **Konta grupiranja**): u ovom sl
 
  
 
-Sljedeći odjeljak, aktiviran zastavicom **Automatsko generiranje plaćanja dobavljača**, omogućuje vam da kreirate uplatnicu u modulu **[Plaćanja dobavljačima](/docs/treasury/vendors-payments/create-vendor-payments)**, kako biste je ispisali i elektronički poslali praćenje bankovnog prijenosa putem homebankinga. Polja koja se postavljaju su: vrsta uplate slipa, polje tekućeg računa (predlaže ga registar povezan s gore umetnutim bankovnim podračunom), datum izdavanja uplate i mogući datum valute primatelja (ovisno o aktiviranju odgovarajuće zastavice) i moguću završnu bilješku koju treba prijaviti računovodstvu koja odgovara bankovnoj liniji.  
+La sezione successiva, attivata dal flag di **Creazione automatica pagamenti fornitori**, consente di creare una distinta di pagamento nel modulo ** [Pagamenti fornitori](/docs/treasury/vendors-payments/create-vendor-payments) **, al fine di stamparla e inviare telematicamente il tracciato dei bonifici bancari via homebanking. I campi da impostare sono: il tipo di pagamento della distinta, il campo conto corrente (viene proposto dall'anagrafica collegata al sottoconto banca inserito in alto), la data di emissione del pagamento ed una eventuale data valuta beneficiario (previa attivazione del flag corrispondente) ed un'eventuale nota finale da riportare in contabilità in corrispondenza della riga banca.
 
 ![](/img/it-it/finance-area/professional-men/accounting/payments-accounting/parameters/image02.png)
 
@@ -33,6 +33,12 @@ Sljedeći odjeljak, aktiviran zastavicom **Automatsko generiranje plaćanja doba
 
 
 
-| Funkcija | Značenje |
+| Funzione | Significato |
 | --- | --- |
-| Računovodstvo plaćanja | Izvodi računovodstvo odabranih plaćanja. |
+| Contabilizzazione pagamenti | Esegue la contabilizzazione dei pagamenti selezionati. |
+
+
+
+
+
+

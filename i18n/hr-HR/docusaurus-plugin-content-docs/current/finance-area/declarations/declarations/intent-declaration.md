@@ -9,8 +9,6 @@ Premere il tasto **Nuovo** nella ribbon bar per inserire un nuovo registro, oppu
 
  
 
-![](/img/it-it/finance-area/declarations/declarations/intent-declaration/image01.png)
-
  
 ### Testata Registro
 La zona superiore della form corrispondente al registro riporta i dati del registro stesso, la zona sottostante accoglie invece i dettagli di ogni dichiarazione di intento riferita al registro.
@@ -32,7 +30,7 @@ Con l’introduzione di tale norma, è stata prevista la possibilità, per le im
 :::note **FLAG Gruppo iva**: 
 abilita la possibilità di inserire dichiarazioni d'intento riferite ad un gruppo IVA. La sua attivazione non influenza l'inserimento di dichiarazioni ordinarie e se ne consiglia sempre l'attivazione.
 
-**CAMPO SETTATO DI DEFAULT COME ATTIVO E DA NON DISATTIVARE, NASCOSTO SULLE VERSIONI FLUENTIS 2021**
+**CAMPO SETTATO DI DEFAULT COME ATTIVO E DA NON DISATTIVARE, NASCOSTO SULLE VERSIONI FLUENTIS 2021 E SUCCESSIVE**
 :::
 
 
@@ -49,9 +47,9 @@ abilita la possibilità di inserire dichiarazioni d'intento riferite ad un grupp
 
 **Prot**: campo non obbligatorio attivo solo per le dichiarazioni del registro di tipo clienti, inserire il protocollo attribuito dal cliente nellla dichiarazione di intento;
 
-**Data Ns. Protocollo**: data protocollo attribuito internamente all'atto della registrazione della dichiarazione di intento nel registro, tale data vale come campo di riferimento per la validità iniziale per l'applicazione nei documenti di acquisto/vendita; (utilizzato anche se valorizzati i campi "rif identificativo e "rif progressivo")
+**Data Ns. Protocollo**: data protocollo attribuito internamente all'atto della registrazione della dichiarazione di intento nel registro, tale data vale come campo di riferimento per la validità iniziale per l'applicazione nei documenti di acquisto/vendita; (utilizzato anche se valorizzati i campi "rif identificativo e "rif progressivo") Si consiglia di valorizzarlo comunque anche nella gestione delle fatture clienti per la gestione tag della fattura elettronica.
 
-**Ns. Protocollo**: protocollo attribuito internamente all'atto della registrazione della dichiarazione di intento nel registro;
+**Ns. Protocollo**: protocollo attribuito internamente all'atto della registrazione della dichiarazione di intento nel registro (**ATTENZIONE:** NECESSARIO PER LA CORRETTA VALORIZZAZIONE DEL TAG DELLA LETTERA DI INTENTO NELLA FATTURA ELETTRONICA DI VENDITA);
 
 **Conto / Sottoconto / Descrizione**: inserire qui il conto del soggetto intestatario della dichirazione di intento (cliente o fornitore);
 
@@ -75,6 +73,8 @@ abilita la possibilità di inserire dichiarazioni d'intento riferite ad un grupp
 
 **Dogana**: attivare il flag se la dichiarazione di intento si riferisce ad una importazione ed è stata emessa nei confronti della dogana;
 
+**File Emesso**: flag popolato in automatico dalla procedura di esportazione del tracciato telematico delle dichiarazione emesse nei confronti dei fornitori. Seguito dai riferimenti del file creato (**Nome file** e **Cartella**)
+
 **Rif. identificativo**: inserire qui la prima parte del protocollo telematico di trasmissione all'agenzia delle entrate della dichiarazione d'intento;
 
 **Rif. progressivo**:  Inserire qui la seconda parte del protocollo telematico (progressivo di riga della dichiarazione all'interno della fornitura telematica; ad esempio 000001 nel caso in cui sia trasmessa un'unica dichiarazione d'intento);
@@ -86,18 +86,21 @@ La modifica riguardante il protocollo telematico ha interessato sia la dicitura 
 E' consigliato comunque continuare a valorizzare  tali campi, assieme al campo “Data ns protocollo”, in quanto in mancanza dell'inserimento del protocollo telematico tali campi, verranno riportati comunque 
 
 
+**Dettagli per il File**: abilita i successivi campi **Integrativa** (collegato a **Importo dichiarazione** - che viene integrata) e **Descrizione merce** che rappresentano possibili dati necessari per i tracciati emessi verso i fornitori. Si consiglia di fare riferimento alla normativa specifica sull'emissione delle dichiarazioni di intento.
+
 ### Creazione file telematico
 
-Per generare il file telematico al fine di trasmettere le dichiarazioni emesse premere il tasto ***Esporta*** presente nella ribbon bar. ![](/img/it-it/finance-area/declarations/declarations/intent-declaration/image02.png)
+Per generare il file telematico al fine di trasmettere le dichiarazioni emesse premere il tasto ***Esporta*** presente nella ribbon bar.
 
-Il file generato verrà memorizzato nel documentale e sarà possibile scaricarne una copia sul pc locale. ![](/img/neutral/common/document-manager.png)
+
+Il file generato verrà memorizzato nel documentale (aprire tramite il pulsante con la graffetta) e sarà possibile scaricarne una copia sul pc locale (tramite il comando ***Salva allegato***). 
 
  
 ### Gestione dichiarazioni multiple per singolo cliente / fornitore
 
 **POSSIBILITA' DI AGGANCIO DELLA SINGOLA DICHIARAZIONE DI INTENTO NEI DOCUMENTI DI ACQUISTO/VENDITA**
 
-Dalla versione 541 è possibile selezionare in modo specifico, soprattutto in presenza di più dichiarazioni valide contemporaneamente, quale dichiarazione agganciare al documento.
+E' possibile selezionare in modo specifico, soprattutto in presenza di più dichiarazioni valide contemporaneamente, quale dichiarazione agganciare al documento.
 
 E' possibile selezionare la dichiarazione d'intento a cui fare riferimento tra quelle inserite, per un determinato DDT o fattura richiamandola dalla combo box "Dettaglio dichiarazioni", gestendo di conseguenza specificatamente la stringa riportata in stampa fattura e nel tracciato xml.
 
@@ -108,10 +111,24 @@ E' possibile selezionare la dichiarazione d'intento a cui fare riferimento tra q
 
 **STAMPA DI CONTROLLO DEI VALORI RESIDUI DELLE DICHIARAZIONI DI INTENTO**
 
-Dalla form di ricerca dei registri presenti è possibile anche elaborare una stampa di controllo che riepiloga gli importi delle dichiarazioni di intento ricevute e il valore del fatturato per tenere sotto controllo i limiti ancora fatturabili per ogni dichiarazione.
+Sia dalla form di ricerca dei registri presenti, sia da dentro il registro selezionato (entrando in modifica) è possibile anche elaborare una stampa di controllo (denominata ***Verifica dichiarazioni di intento***) che riepiloga gli importi delle dichiarazioni di intento ricevute e il valore del fatturato per tenere sotto controllo i limiti ancora fatturabili per ogni dichiarazione.
 
-![](/img/it-it/finance-area/declarations/declarations/intent-declaration/image05.png)
+E' presente un'ulteriore versione della stampa (selezionabile dalla tendina) denominata ***Verifica dichiarazione di intento con dettagli*** che riporta i dettagli di ogni singolo documento collegato con la dichiarazione.
 
+
+### Gestione riferimento a lettere di intento anni precedenti
+
+Può capitare di gestire questo caso: emettere una nota di credito ad un cliente facendo riferimento alla dichiarazione di intento dell'anno (o di un anno) precedente. 
+
+Il Cliente può avere già emesso anche  una dichiarazione di intento nell'anno in corso. Ad esempio la nota di accredito può essere una correzione di una fattura dell'anno precedente per merce spedita sempre nell'anno precedente e quindi si deve inserire il riferimento alla dichiarazione di intento precedente.
+
+Nella testata della nota di credito utilizzare i campi per i riferimenti alla fattura che viene rettificata:
+
+Espandere la sezione **Tipo riferimento** e compilare **Riferimento FT** (un campo per il numero fattura e il successivo per la data fattura).
+
+Fatto questo, le dichiarazioni di intento selezionabili dall'apposita combo box saranno **anche** quelle del registro dell'anno precedente (o comunque quello indicato nella data del riferimento)
+
+![](/img/it-it/finance-area/declarations/declarations/intent-declaration/image06.png)
 
 ### **VIDEO TUTORIALS**
 

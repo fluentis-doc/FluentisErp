@@ -1,71 +1,69 @@
 ---
-title: Riordina protocolli IVA
+title: Ispravak rednih brojeva PDV obračuna
 sidebar_position: 10
 ---
 
-La funzionalità gestita tramite questa form consente di modificare massivamente i protocolli iva assegnati alle registrazioni contabili (di tipo IVA, ad esempio per fatture ricevute o emesse) al fine di correggere eventuali errori o per esigenze particolari.
+Funkcionalnost kojom se upravlja putem ovog obrasca omogućuje se masovna izmjena protokola PDV-a koji su dodijeljeni računovodstvenim evidencijama (vrste PDV-a, na primjer za ulazne ili izlazne fakture) kako bi se ispravile sve pogreške ili promijenilo za posebne potrebe.
 
-In prima battuta la ricerca dei dati possibile con questa form può essere utile anche come controllo ad esempio di numeri di protocollo mancanti o di sfasature (per quanto riguarda ad esempio le fatture di vendita) tra il numero di protocollo ed il numero del documento che rappresentano evidentemente delle irregolarità dal punto di vista fiscale.
+U prvom redu, pretraživanje podataka koje je moguće pomoću ovog obrasca također može biti korisno kao provjera, na primjer, za nedostajuće brojeve protokola ili odstupanja (na primjer u vezi s izlaznim fakturama) između broja protokola i broja dokumenta koji oni predstavljaju evidentne nepravilnosti s fiskalnog gledišta.
 
-All'apertura della form è necessario selezionare il registro IVA da controllare e/o modificare ed il range di date di interesse (per un controllo generale si consiglia di partire dall'inizio dell'anno). Tale selezione viene fatta nella parte più alta della form.
+Prilikom otvaranja obrasca potrebno je odabrati registar obveznika PDV-a za provjeru i/ili izmjenu te raspon datuma od interesa (za generalnu provjeru preporuča se od početka godine). Ovaj odabir se vrši na vrhu obrasca.
 
-![](/img/it-it/finance-area/ledger-records/records/rearrange-vat-reference-number/image01.png)
+U ovom trenutku može se započeti pretraživanje pomoću naredbe **Traži** na traci izbornika.
 
-A questo punto è possibile avviare la ricerca tramite il comando **Cerca** presente nella ribbon bar.
-
-I dati sono visualizzati nella prima griglia immediatamente sottostante rispetto all'area di filtro.
+Podaci se prikazuju u prvom prikazu odmah ispod područja filtra.
 
 ![](/img/it-it/finance-area/ledger-records/records/rearrange-vat-reference-number/image02.png)
 
-Poiché al fine di operare i controlli potrebbe essere interessante ordinare i dati non solo in base al numero di protocollo, ma ad esempio in base al numero di documento, ed essendo il numero di documento di per se una stringa alfanumerica, è presente nella zona di filtro il flag apposito **Considera numero documento come numero** che consente un corretto criterio di ordinamento.
+Budući da bi za provođenje provjera moglo biti zanimljivo sortirati podatke ne samo na temelju broja protokola, već na primjer na temelju broja dokumenta, a budući da je sam broj dokumenta alfanumerički niz, pomoću aktivacije oznake/flaga opcije **Razmotrite brojeve dokumenta poput broja** moguće je doraditi kriterije sortiranja.
 
-Esempio:
+Primjer:
 
-- con flag disattivato si avrà (ordinando per numero di documento) 1, 10, 100, 2, 20, 200 .....
+- s deaktiviranom flagom bit će (redoslijed po broju dokumenta) 1, 10, 100, 2, 20, 200 .....
 
-- con flag attivo si avrà (ordinando per numero di documento) 1, 2, 3, ... 10 ... 20 ... 100 ... 200
+- uz aktivnog flaga bit će (poredak po broju dokumenta) 1, 2, 3, ... 10 ... 20 ... 100 ... 200
 
-Selezionando una riga dalla griglia del risultato (Registrazioni contabili) saranno visualizzati i relativi dettagli riguardanti il registro IVA ed il libro giornale nelle due **ulteriori griglie sottostanti** (tali dati costituiscono chiaramente i dettagli della registrazione contabile inseriti dall'utente o dalla procedura automatica di contabilizzazione fatture).
+Odabirom retka iz tablice rezultata (Zapisi glavne knjige) relevantni detalji u vezi s registrom PDV-a i dnevnikom bit će prikazani u dva **daljnja dva prikaza u nastavku** (ovi podaci jasno predstavljaju detalje računovodstvene evidencije koje je unio korisnik ili postupak automatskog obračuna/knjiženja).
 
-**POSSIBILI MODALITA' DI RINUMERAZIONE / RIORDINO**:
+**MOGUĆE METODE PRENUMERACIJE / PROMJENE REDOSLIJEDA**:
 
-- Parziale: a titolo di esempio si supponga di dover "slittare" in avanti di un numero di protocollo tutte le registrazioni a partire dalla nr. 3 (in modo da creare un "buco" nella numerazione per inserire magari una scrittura mancante).
+- Djelomično: kao primjer, pretpostavka je da treba "pomaknuti" sve snimke unaprijed prema broju protokola počevši od br. 3 (kako bi se napravila "rupa" u numeriranju da bi se možda umetnuo zapis koji nedostaje).
 
 
- 1. Selezionare le righe interessate dalla rinumerazione (ad esempio dalla registrazione con nr. di protocollo 3 in poi), si può utilizzare il tasto Shift della tastiera o fare Click & drag col mouse;
- 2. Inserire il numero di protocollo di partenza nel apposito campo **Numero di partenza** situato nella parte bassa della form (ad esempio 4);
- 3. Premere il tasto **Numerazione automatica** situato nella ribbon bar;
- 4. Saranno proposti i nuovi protocolli come si vede nell'immagine;
- 5. Premere **Salva** (situato nella ribbon bar) per confermare la modifica.
+ 1. Odaberu se redovi na koje utječe prenumeriranje (na primjer od knjiženja s protokolom br. 3 nadalje), može se koristiti tipka Shift na tipkovnici ili kliknuti i povući mišem;
+ 2. Unese se broj startnog protokola u odgovarajuće polje **Početni broj** koje se nalazi na dnu obrasca (na primjer 4);
+ 3. Pritisne se tipka za **Automatsko numeriranje** koji se nalazi na traci izbornika;
+ 4. Novi protokoli bit će predloženi kao što se vidi na slici;
+ 5. Pritisne se **Spremi** (na traci izbornika) za potvrdu promjene.
 
 ![](/img/it-it/finance-area/ledger-records/records/rearrange-vat-reference-number/image03.png)  ![](/img/it-it/finance-area/ledger-records/records/rearrange-vat-reference-number/image04.png)
 
-In alternativa (consigliabile solo per modifiche a singole righe o poche righe)
+Alternativno (preporučuje se samo za izmjene pojedinačnih redaka ili nekoliko redaka):
 
 
- 1. Posizionarsi, in corrispondenza della riga relativa alla registrazione con protocollo nr. 3, sul campo Nuovo prot. IVA e digitare il nuovo protocollo (es. 4);
- 2. Premere **Salva** (situato nella ribbon bar) per confermare la modifica.
+ 1. Pozicionira se na red koji se odnosi na zapis s protokolom br. 3, na novom protokolu PDV-a i unese se novi protokol (npr. 4)  
+ 2. Pritisne se **Spremi** (nalazi se na traci izbornika) za potvrdu promjene.  
 
-- Totale: dovendo procedere a rinumerare tutte le registrazioni, ad esempio perché sfasata rispetto al numero documento o per mancanza di coerenza tra l'ordine di protocollo e la data registrazione (ad esempio perché non è stato attivato il controllo di coerenza data-protocollo).
+- Odaberu se svi redovi rezultata dobivenog zahvaljujući filtru (primjerice svi zapisi od početka godine do danas) pomoću miša ili kombinacijom Ctrl+A; 
 
 
- 1. Selezionare tutte le righe del risultato ottenuto grazie al filtro (ad esempio tutte le registrazioni dall'inizio dell'anno ad oggi) tramite il mouse oppure con la combinazione Ctrl A;
- 2. Inserire il numero di protocollo di partenza nel apposito campo **Numero di partenza** situato nella parte bassa della form (in questo caso 1);
- 3. Premere il tasto **Numerazione automatica** situato nella ribbon bar;
- 4. Saranno proposti i nuovi protocolli come si vede nell'immagine;
- 5. Premere **Salva** (situato nella ribbon bar) per confermare la modifica.
+ 1. Selezionare tutte le righe del risultato ottenuto grazie al filtro (ad esempio tutte le registrazioni dall'inizio dell'anno ad oggi) tramite il mouse oppure con la combinazione Ctrl A;  
+ 2. Unese se broj startnog protokola u odgovarajuće polje **Početni broj** koje se nalazi na dnu obrasca (u ovom slučaju 1);    
+ 3. Pritisne se tipka za **Automatsko numeriranje** koji se nalazi na traci izbornika;  
+ 4. Novi protokoli bit će predloženi kao što se vidi na slici;  
+ 5. Pritisne se **Spremi** (na traci izbornika) za potvrdu promjene.  
 
-E' possibile variare il criterio di ordinamento utilizzato nell'operazione di rinumerazione selezionando, in alternativa tra quelli proposti in basso nella form.
+Moguće je mijenjati kriterij sortiranja koji se koristi u operaciji ponovnog numeriranja odabirom, alternativno, između onih predloženih na dnu obrasca.
 
 ![](/img/it-it/finance-area/ledger-records/records/rearrange-vat-reference-number/image05.png)
 
-Data / Numero Registrazione: sarà attribuito il numero di protocollo in relazione alla progressione della data registrazione, e a parità di data del numero di registrazione.
+Datum/broj unosa: broj protokola bit će dodijeljen u odnosu na napredovanje datuma unosa, a broj zapisa je isti kao i datum.  
 
-Data / Numero Documento: sarà attribuito il numero di protocollo in relazione alla progressione della data registrazione, e a parità di data del numero di documento.
+Datum/broj dokumenta: broj protokola bit će dodijeljen u odnosu na napredovanje datuma dokumenta, a broj zapisa je isti  kao i datum.  
 
-Tipo / Data / Numero Documento: sarà attribuito il numero di protocollo in relazione al tipo documento (esempio fatture, poi note di accredito), a parità di tipo documento, in base alla progressione della data registrazione, e a parità di data del numero di documento.
+Vrsta dokumenta / datum / broj: broj protokola bit će dodijeljen u odnosu na vrstu dokumenta (npr. fakture, odobrenja), ako je vrsta dokumenta ista  (na temelju napredovanja datuma zapisa i ako je broj dokumenta isti).  
 
-Il flag **Riscrivi descrizioni**, se attivo, in fase di rinumerazione aggiorna la descrizione del movimento laddove, in base alle impostazioni definite nella **[causale contabile](/docs/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates)**, preveda la lettura automatica del protocollo IVA. 
+Flag **Ponovo napiši opise**, ako je aktivna, ažurira opis kretanja tijekom faze prenumeriranja gdje, na temelju postavki definiranih u **[obračunskom predlošku](/docs/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates/attributes-detail)**, omogućuje automatsko očitavanje PDV protokola. 
 
 
 

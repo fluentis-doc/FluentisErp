@@ -16,7 +16,9 @@ La stampa presenta un layout analogo alla **[Liquidazione periodica IVA](/docs/f
 Nella stampa NON è previsto un flag per la versione in definitiva, in quanto formalmente e legalmente saranno stampate in definitiva le liquidazioni dei vari mesi o trimestri e la presente stampa rimane a supporto della redazione della dichiarazione iva annuale su modello ministeriale: è presente comunque un flag per memorizzare il numero dell'ultimo numero di pagina per quanti volessero stamparlo in coda alle liquidazioni dell'anno.
 
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/HWjgN0yehEc" title="YouTube video player" frameborder="0" allowfullscreen= "true"></iframe>
+:::important Vedi Anche
+[**VIDEO TUTORIALS SULLE STAMPE FISCALI**](/docs/video/finance/intro)
+:::
 
 
 

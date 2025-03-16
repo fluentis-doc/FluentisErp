@@ -1,55 +1,55 @@
 ---
-title: Ricerca registrazioni contabili
+title: Pretraga računovodstvenih zapisa
 sidebar_position: 7
 ---
 
-La presente form permette di ricercare le registrazioni contabili precedentemente inserite ed eventualmente di entrare in modifica (o in visualizzazione) delle stesse selezionando la riga corrispondente ed effettuando un doppio click.
+Ovaj obrazac omogućuje pretraživanje prethodno unesenih računovodstvenih zapisa, a po potrebi i njihovo uređivanje (ili pregledavanje) odabirom odgovarajućeg retka i dvostrukim klikom.
 
 
 
-| Funzione | Significato |
+| Funkcija | Značenje |
 | --- | --- |
-| Ricerca | Pulsante per avviare la ricerca delle registrazioni contabili inserite secondo i filtri impostati  |
-| Nuovo | Pulsante per inserire una nuova registrazione contabile. |
-| Modifica | Pulsante per modificare una registrazione contabile precedentemente inserita. |
-| Visualizzazione | Pulsante per visualizzare una registrazione contabile precedentemente inserita. |
-| Elimina | Pulsante per cancellare una registrazione contabile precedentemente inserita. |
-| Documento origine	 | Pulsante attraverso il quale richiamare il documento di origine dal quale si è originata la registrazione contabile. |
-| Duplica | Pulsante che permette di creare un duplicato della registrazione contabile al fine di crearne una simile, modificando gli elementi opportuni, senza doverla inserire da capo. |
+| Traži | Tipka za pokretanje pretraživanja unesenih računovodstvenih zapisa prema postavljenim filtrima. |
+| Novo | Tipka za unos novog računovodstvenog zapisa. |
+| Izmjeni | Tipka za uređivanje prethodno unesenog računovodstvenog zapisa. |
+| Prikaži | Tipka za pregled prethodno unesenog računovodstvenog zapisa. |
+| Otkaži | Tipka za brisanje prethodno unesenog računovodstvenog zapisa. |
+| Izvorni dokument	 | Tipka za pozivanje izvornog dokumenta iz kojeg je nastao računovodstveni zapis. |
+| Dupliciraj | Tipka koji omogućuje stvaranje dupliciranog računovodstvenog zapisa kako bi se stvorio sličan zapis, uz izmjenu odgovarajućih elemenata, bez potrebe za unosom ispočetka. |
 
-Filtri di ricercaI principali campi di filtro per la ricerca delle registrazioni contabili sono:
+Glavna polja za filtriranje pri pretraživanju računovodstvenih zapisa su:  
 
-**Causale contabile**: la combo box (come di consueto in Fluentis) consente di selezionare anche più di una causale alla volta tenendo premuto il tasto Ctrl.
+**Tip temeljnice**: padajući izbornik, kao što je uobičajeno u Fluentisu, omogućuje odabir više od jedne stavke istovremenim pritiskom na tipku Ctrl.
 
-**Da / A data registrazione + Da / A data competenza**: sono le date di riferimento delle registrazioni contabili; attenzione, i filtri operano con una condizione AND e quindi il raffinamento della ricerca si somma. In caso di disallineamento involontario della data di registrazione e della data di competenza (contabile) per ritrovare la registrazione desiderata è opportuno togliere in alternativa il filtro per competenza oppure quello per data registrazione.
+**Od / Do datuma knjiženja i Od / Do datuma obračuna**: To su referentni datumi računovodstvenih zapisa; napomena: filteri rade s AND uvjetom, stoga se sužavanje pretrage “zbraja”. U slučaju nenamjernog nepodudaranja datuma registracije i datuma kompetencije (računovodstvene), kako bi se pronašao željeni zapis, preporučuje se uklanjanje filtera za datum obračuna ili filtera za datum knjiženja.
 
-**Conto**: si tratta del sottoconto inserito nella testata della registrazione (Cliente o fornitore).
+**Konto**: Riječ je o podkontu unesenom u zaglavlje zapisa (Kupac ili dobavljač).
 
-**Tipo conto**: permette di selezionare uno (o più di uno tenendo premuto Ctrl) de tipi conto (Costi / Ricavi / attivo / passivo o conti di anagrafica come Clienti, Fornitori, Banche ed Agenti). Inoltre aprendo l'expander è possibile escludere le tipologie di conti di anagrafica.
+**Vrsta konta**: omogućuje odabir jedne ili više vrsta konta (troškovi / prihodi / imovina / obveze ili konta iz šifarnika kao što su kupci, dobavljači, banke i agenti), držeći pritisnutu tipku Ctrl. Također, otvaranjem dodatnih opcija moguće je isključiti tipove konta iz šifarnika.
 
 ![](/img/it-it/finance-area/ledger-records/records/search-ledger-records/image01.png)
 
-Fatturazione elettronicaNella sezione dei filtri è presente un expander relativo alle possibili informazioni legate allo Stato della fattura elettronica, riferito ai documenti che hanno un'interazione con il Sistema di Interscambio:
+U sekciji filtara nalazi se expander koji se odnosi na moguće informacije povezane s državom elektroničkog računa, a koji se odnosi na dokumente koji imaju interakciju sa Sustavom razmjene:
 
 ![](/img/it-it/finance-area/ledger-records/records/search-ledger-records/image02.png)
 
-Nel ribbon Menu, nella sezione dedicata alla fatturazione elettronica, utilizzando la funzione ![](/img/neutral/common/legenda.png)  **Registro documenti Sdi** è possibile prendere visione delle azioni svolte sul documento selezionato, con la funzione ![](/img/neutral/common/print.png)**Stampa** stampare il documento XML abbinato, con le funzioni ![](/img/it-it/finance-area/ledger-records/records/search-ledger-records/image05.png)**Scarica allegato** o **Scarica il contenuto del registro** eseguire il download del file XML.
+U traci izbornika, u sekciji posvećenoj elektroničkom izdavanju računa, pomoću tipke **Registar dokumenata Sdi** moguće je pregledati radnje izvršene na odabranom dokumentu. Funkcija **Ispiši** omogućuje ispis XML dokumenta, dok funkcije **Preuzmi privitak** ili **Preuzmi sadržaj registra** omogućuju preuzimanje XML datoteke.
 
-La griglia di riepilogo risultati visualizza alcune colonne nelle quali viene riportato lo stato e l'esito dei documenti in riferimento alla trasmissione degli stessi al SdI:
+Pregled rezultata prikazuje nekoliko stupaca u kojima se navodi stanje i ishod dokumenata u odnosu na njihovu predaju Centralnoj platformi:
 
 ![](/img/it-it/finance-area/ledger-records/records/search-ledger-records/image06.png)
 
--      **Stato SdI**: accoglie la descrizione dello stato del documento, riportando sia lo stato di gestione interno di Fluentis sia lo stato riportato da Fluentis Business Hub e acquisito direttamente da SdI.
+-      **Stanje računa**: sadrži opis stanja dokumenta, navodeći kako interno stanje u Fluentisu, tako i stanje prikazano od Fluentis Business Hub-a i direktno preuzeto od Centralne platforme
 
--      **Nome file SdI**: il nome del file che viene creato nel momento in cui il documento viene avanzato nello stato GENERATA; nel formato originale o successivamente all'apposizione della firma digitale, rappresenta il file di fattura da inviare a Sdi.
+-      **Naziv datoteke**: ime datoteke koja se stvara kada dokument dosegne stanje GENERIRANA; u originalnom formatu ili nakon digitalnog potpisa, predstavlja fakturirani dokument koji treba poslati Centralnoj platformi.
 
--      **Sdi Id**: l'identificativo univoco che il SdI attribuisce al documento nel momento della ricezione
+-      **Id**: jedinstveni identifikator koji se dodjeljuje dokumentu u trenutku prijema.
 
--      **Data ricezione Sdi**: la data in cui il sistema di interscambio ha acquisto il documento inviatogli. Tale informazione viene reperita dalla notifica di ricezione che il SdI rilascia a fronte del recepimento della spedizione e prima di procedere con i controlli formali del file
+-      **Datum primanja dokumenta**: datum kada je sustav razmjene primio dokument. Ova informacija se dobiva iz obavijesti o prijemu koju Centralna platforma izdaje nakon prijema pošiljke i prije nego što nastavi s formalnim provjerama datoteke.
 
--      **Data chiusura**: la data di chiusura del flusso di gestione (es. documento Consegnato).
+-      **Datum zatvaranja**: datum zatvaranja tok računa (npr. dokument Dostavljen).
 
--      **Data ultimo evento**: la data dell'ultimo cambio stato avvenuto sul file o manualmente o per effetto dell'avanzamento dell'elaborazione sul SdI.
+-      **Datum posljednjeg događaja**: datum posljednje promjene stanja na datoteci, bilo ručno ili kao rezultat napredovanja.
 
 
 

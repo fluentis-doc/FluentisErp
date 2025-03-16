@@ -89,4 +89,6 @@ Esempio: se l'utente filtra i movimenti dal 01/09/2017 al 31/12/2017 (sia come d
 | Stampa | Pulsante per eseguire la stampa fisica del documento estratto conto. |
 
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/vQS47gLDe2M" title="YouTube video player" frameborder="0" allowfullscreen= "true"></iframe>
+:::important Vedi Anche
+[**VIDEO TUTORIALS SULLE STAMPE CONTABILI**](/docs/video/finance/intro)
+:::

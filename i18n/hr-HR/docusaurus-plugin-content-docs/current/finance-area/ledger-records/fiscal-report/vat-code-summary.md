@@ -17,19 +17,18 @@ La stampa mostrerà a quel punto i dati raggruppandoli a seconda del criterio o 
 
 I criteri di raggruppamento possono essere poi rimossi o riorganizzati nella posizione (si ricorda che la priorità è dall'alto verso il basso) con i comandi post nella ribbon bar.
 
-![](/img/it-it/finance-area/ledger-records/fiscal-report/vat-code-summary/image02.png)
+- Cancella: toglie il criterio di raggruppamento 
+- Rimuovi raggruppamenti: toglie tutti i raggruppamenti
+- Sposta su: in presenza di più criteri sposta quello selezionato più in alto in modo da dare maggiore priorità
+- Sposta giù: in presenza di più criteri sposta quello selezionato più in basso in modo da dare minore priorità
 
 Per ulteriori informazioni sul raggruppamento vedere **[Riepilogo movimenti per causale](/docs/finance-area/ledger-records/accounting-report/movements-summary-for-template).**
 
 
 
-| Funzione | Significato |
-| --- | --- |
-| Anteprima | Pulsante per eseguire l'anteprima di stampa del riepilogo per codici IVA. |
-| Stampa | Pulsante per eseguire la stampa fisica del riepilogo per codici IVA. |
-
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/HWjgN0yehEc" title="YouTube video player" frameborder="0" allowfullscreen= "true"></iframe>
+:::important Vedi Anche
+[**VIDEO TUTORIALS SULLE STAMPE FISCALI**](/docs/video/finance/intro)
+:::
 
 
 
