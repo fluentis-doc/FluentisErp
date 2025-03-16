@@ -57,7 +57,7 @@ questo pulsante andrà ad effettuare un ricalcolo riga per riga, mostrando event
 
 ATTENZIONE: nel caso in cui gli assestamenti siano già stati contabilizzati non è previsto alcun blocco alla modifica del movimento di origine che ha portato alla rettifica, l'unico blocco è alla cancellazione della registrazione che non è consentita. Si raccomanda quindi la massima attenzione nell'entrare in modifica di registrazioni che siano coinvolte nelle operazioni di assestamento di fine anno.
 
-NOTA relativa alla procedura di **[Chiusura automatica conti](/docs/finance-area/ledger-records/records/automatic-account-closing/new-account-closing)**: è presente un'opzione di giroconto automatico delle operazioni di assestamento in coda alle registrazioni di riapertura conti. Con questa opzione l'applicativo procederà a rilevare, alla data di riapertura, lo storno delle rettifiche mentre opererà il giroconto delle integrazioni alla data della registrazione d'origine dell'assestamento stesso.
+NOTA relativa alla procedura di **[Chiusura automatica conti](/docs/finance-area/ledger-records/records/procedures/automatic-account-closing/new-account-closing)**: è presente un'opzione di giroconto automatico delle operazioni di assestamento in coda alle registrazioni di riapertura conti. Con questa opzione l'applicativo procederà a rilevare, alla data di riapertura, lo storno delle rettifiche mentre opererà il giroconto delle integrazioni alla data della registrazione d'origine dell'assestamento stesso.
 
 
 ### GESTIONE FATTURE DA RICEVERE

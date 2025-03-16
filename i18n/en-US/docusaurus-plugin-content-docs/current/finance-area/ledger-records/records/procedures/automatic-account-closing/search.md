@@ -5,7 +5,7 @@ sidebar_position: 1
 
 This form allows you to search for previously calculated account closures present in the database.
 
-**From this position, you can process a new account closure through the command [New](/docs/finance-area/ledger-records/records/automatic-account-closing/new-account-closing).**
+**From this position, you can process a new account closure through the command [New](/docs/finance-area/ledger-records/records/procedures/automatic-account-closing/new-account-closing).**
 
 In the header area, there are some fields for filtering, in particular, the **version number** represents a progressive number that identifies the closure itself for each company present in the database. It must therefore be a unique number.
 

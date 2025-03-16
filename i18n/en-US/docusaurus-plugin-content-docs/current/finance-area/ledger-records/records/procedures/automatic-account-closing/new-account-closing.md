@@ -38,7 +38,7 @@ in particular, the account types of customer-supplier-agent-bank registries must
 It is then possible to start the **Retrieve detail accounts values** with the respective button, allowing the program to calculate the balance of each detail account and present the related data in the Profit and Loss and Balance Sheet tabs. Once confident in the results, it is possible to proceed to the last phase of the procedure: returning to the parameters tab, we can click the button **Create Record for Accounts Closing**, which will create the relevant accounting entries and mark the **Accounted** flag.
 
 :::note
-If the flag **Giro account-adjustment records** has been activated, when the command **Retrieve detail accounts values** is launched, an additional tab **[Reopening Adjustment Entries](/docs/finance-area/ledger-records/records/automatic-account-closing/new-account-closing)** will become visible.
+If the flag **Giro account-adjustment records** has been activated, when the command **Retrieve detail accounts values** is launched, an additional tab **[Reopening Adjustment Entries](/docs/finance-area/ledger-records/records/procedures/automatic-account-closing/new-account-closing)** will become visible.
 :::
 
 #### Specific Buttons  
@@ -59,7 +59,7 @@ In the Profit and Loss tab, the negative and positive income components will be 
 
 ### Balance Sheet
 
-In the **Balance Sheet** tab, the asset and liability components will be summarized with an emphasis on the operating result and the possibility to filter (similarly to what is provided for the **[Profit and Loss](/docs/finance-area/ledger-records/records/automatic-account-closing/new-account-closing)** tab) the accounts present in the two underlying sections using the appropriate fields and the search buttons located in the ribbon bar.
+In the **Balance Sheet** tab, the asset and liability components will be summarized with an emphasis on the operating result and the possibility to filter (similarly to what is provided for the **[Profit and Loss](/docs/finance-area/ledger-records/records/procedures/automatic-account-closing/new-account-closing)** tab) the accounts present in the two underlying sections using the appropriate fields and the search buttons located in the ribbon bar.
 
 #### Specific Buttons  
 > **Search Active Patrimonial**: allows searching for the desired active accounts within the closing.  

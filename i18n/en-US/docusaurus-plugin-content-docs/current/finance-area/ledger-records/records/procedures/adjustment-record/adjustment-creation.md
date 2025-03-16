@@ -68,7 +68,7 @@ this button will recalculate line by line, showing any differences compared to w
 If the adjustments have already been posted, there is no block on modifying the original movement that led to the adjustment, the only restriction is on deleting the record, which is not allowed. Therefore, utmost caution is recommended when modifying records that are involved in year-end adjustment operations.
 :::
 
-:::note Note regarding the **[Automatic Account Closing](/docs/finance-area/ledger-records/records/automatic-account-closing/new-account-closing)** procedure: there is an option for automatic transfer of adjustment operations following account reopening registrations. With this option, the application will record, on the reopening date, the reversal of adjustments while processing the transfer of integrations on the date of the original adjustment record.
+:::note Note regarding the **[Automatic Account Closing](/docs/finance-area/ledger-records/records/procedures/automatic-account-closing/new-account-closing)** procedure: there is an option for automatic transfer of adjustment operations following account reopening registrations. With this option, the application will record, on the reopening date, the reversal of adjustments while processing the transfer of integrations on the date of the original adjustment record.
 :::
 
 **SINGLE RECORD FLAG:** with this flag activated, the adjustment accounting occurs with a single accounting entry (single number) instead of multiple entries corresponding to the number of adjustments to be executed.  

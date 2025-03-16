@@ -38,7 +38,7 @@ in particolare i tipi conto di anagrafica cliente-fornitore-agente-banche oltre 
 E' quindi possibile dare il via alla **Ripresa valori sottoconti** con il pulsante relativo, in modo da far calcolare al programma il saldo di ogni sottoconto e di presentare nelle tab Profitti e perdite e Patrimoniale i dati relativi. Una volta sicuri dei risultati è possibile passare all'ultima fase della procedura: rientrando nella scheda parametri, infatti, possiamo cliccare il pulsante Crea registrazione per la chiusura conti, che creerà le registrazioni contabili relative e inserirà il flag su **Contabilizzata**.
 
 :::note
-Se il flag **Giroconto scritture di assestamento** è stato attivato, quando si lancia il comando **Ripresa valori sottoconti**, diventerà visibile una ulteriore tab **[Riapertura scritture di assestamento](/docs/finance-area/ledger-records/records/automatic-account-closing/new-account-closing)**.
+Se il flag **Giroconto scritture di assestamento** è stato attivato, quando si lancia il comando **Ripresa valori sottoconti**, diventerà visibile una ulteriore tab **[Riapertura scritture di assestamento](/docs/finance-area/ledger-records/records/procedures/automatic-account-closing/new-account-closing)**.
 :::
  
 #### Pulsanti specifici  
@@ -59,7 +59,7 @@ Nel tab Profitti e Perdite verranno epilogati i componenti di reddito negativi e
 
 ### Patrimoniale
 
-Nel Tab **Patrimoniale** verranno epilogati i componenti attivi e passivi  con evidenza del risultato d'esercizio e la possibilità di di filtrare (analogamente a quanto previsto per la tab **[Profitti e perdite](/docs/finance-area/ledger-records/records/automatic-account-closing/new-account-closing)**) i conti presenti nelle due sezioni sottostanti tramite i campi appositi ed i pulsanti di ricerca posti nella ribbon bar (vedere tabella qui sotto).
+Nel Tab **Patrimoniale** verranno epilogati i componenti attivi e passivi  con evidenza del risultato d'esercizio e la possibilità di di filtrare (analogamente a quanto previsto per la tab **[Profitti e perdite](/docs/finance-area/ledger-records/records/procedures/automatic-account-closing/new-account-closing)**) i conti presenti nelle due sezioni sottostanti tramite i campi appositi ed i pulsanti di ricerca posti nella ribbon bar (vedere tabella qui sotto).
 
 #### Pulsanti specifici  
 > **Ricerca patrimoniale attivo**: permette di cercare all'interno della chiusura i conti attivi desiderati.  

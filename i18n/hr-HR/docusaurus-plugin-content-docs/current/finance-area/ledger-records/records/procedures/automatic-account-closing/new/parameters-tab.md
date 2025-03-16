@@ -35,7 +35,7 @@ E' quindi possibile dare il via alla **Ripresa valori sottoconti** con il pulsan
 
  
 
-NOTA: se il flag **Giroconto scritture di assestamento** è stato attivato, quando si lancia il comando **Ripresa valori sottoconti**, diventerà visibile una ulteriore tab **[Riapertura scritture di assestamento](/docs/finance-area/ledger-records/records/automatic-account-closing/new-account-closing)**.
+NOTA: se il flag **Giroconto scritture di assestamento** è stato attivato, quando si lancia il comando **Ripresa valori sottoconti**, diventerà visibile una ulteriore tab **[Riapertura scritture di assestamento](/docs/finance-area/ledger-records/records/procedures/automatic-account-closing/new-account-closing)**.
 
  
 

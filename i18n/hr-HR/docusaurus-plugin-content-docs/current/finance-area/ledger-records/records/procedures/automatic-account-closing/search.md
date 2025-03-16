@@ -5,7 +5,7 @@ sidebar_position: 1
 
 Ovaj obrazac omogućuje pretraživanje prethodno izračunatih i prisutnih zatvaranja računa u bazi podataka. 
 
-**S ove pozicije moguće je izraditi novi završetak računa putem naredbe [Novo](/docs/finance-area/ledger-records/records/automatic-account-closing/new-account-closing).**
+**S ove pozicije moguće je izraditi novi završetak računa putem naredbe [Novo](/docs/finance-area/ledger-records/records/procedures/automatic-account-closing/new-account-closing).**
 
 U zaglavlju su prisutna polja za filtriranje, posebno **verzija broja** koji predstavlja progresivni broj koji identificira sam završetak za svako poduzeće prisutno u bazi podataka.  Stoga mora biti jedinstveni broj.
 

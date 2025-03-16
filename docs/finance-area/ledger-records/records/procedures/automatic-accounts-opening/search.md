@@ -5,7 +5,7 @@ sidebar_position: 1
 
 In questa form è possibile ricercare aperture dei conti precedentemente create e procedere all' **inserimento di una nuova chiusura.**
 
-Per i campi di dettaglio della testata e della griglia di ricerca vedere **[Chiusura Automatica conti.](/docs/finance-area/ledger-records/records/automatic-account-closing/search)**
+Per i campi di dettaglio della testata e della griglia di ricerca vedere **[Chiusura Automatica conti.](/docs/finance-area/ledger-records/records/procedures/automatic-account-closing/search)**
 
 #### Pulsanti specifici
 

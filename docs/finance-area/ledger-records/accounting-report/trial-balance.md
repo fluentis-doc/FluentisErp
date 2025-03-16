@@ -51,7 +51,7 @@ E' possibile includere anche le registrazioni provvisorie (di default sono attiv
 
 **Escludi causale**: tramite la combo box è possibile escludere i movimenti riferiti alla causale contabile selezionata. La possibilità è particolarmente utile quando si desidera ristampare un bilancio relativo ad un periodo per il quale è già intervenuta la chiusura dei conti e pertanto i saldi risultano a zero. Si inserirà allora nel campo in commento la causale utilizzata per la chiusura conti (esempio causale codice BILCH) per visualizzare nuovamente il bilancio con situazione saldi prima della chiusura.
 
-**Apertura**: flag che, se attivato, esclude dall'elaborazione del bilancio i movimenti di apertura conti generati dalla procedura di riapertura conti contestuale alla **[chiusura automatica conti](/docs/finance-area/ledger-records/records/automatic-account-closing/new-account-closing).**
+**Apertura**: flag che, se attivato, esclude dall'elaborazione del bilancio i movimenti di apertura conti generati dalla procedura di riapertura conti contestuale alla **[chiusura automatica conti](/docs/finance-area/ledger-records/records/procedures/automatic-account-closing/new-account-closing).**
 
 
 

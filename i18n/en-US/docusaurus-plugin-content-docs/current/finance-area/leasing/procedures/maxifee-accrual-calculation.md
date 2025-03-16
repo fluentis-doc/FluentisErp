@@ -53,7 +53,7 @@ The accounting procedure can be executed from this form through the buttons on t
 
 From this position, it is also possible to restore the accounting procedure.
 
-The calculated and accounted maxifee accrual as described above can also be managed automatically during the automatic account reopening phase (which can be activated from the **[Automatic Account Closure](/docs/finance-area/ledger-records/records/automatic-account-closing/new-account-closing)**) by activating the flag Journal Entry for adjusting entries.
+The calculated and accounted maxifee accrual as described above can also be managed automatically during the automatic account reopening phase (which can be activated from the **[Automatic Account Closure](/docs/finance-area/ledger-records/records/procedures/automatic-account-closing/new-account-closing)**) by activating the flag Journal Entry for adjusting entries.
 
 In this case, the usual reopening entries for maxifee accruals will be automatically executed, appending them to the other automatic entries for opening balances and journal entries of other accrued and deferred items.
  

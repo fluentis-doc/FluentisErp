@@ -5,7 +5,7 @@ sidebar_position: 1
 
 Questa form permette di ricercare le chiusure dei conti precedentemente calcolate e presenti nella base dati. 
 
-**Da questa posizione è possibile elaborare una nuova chiusura dei conti tramite il comando  [Nuovo](/docs/finance-area/ledger-records/records/automatic-account-closing/new-account-closing).**
+**Da questa posizione è possibile elaborare una nuova chiusura dei conti tramite il comando  [Nuovo](/docs/finance-area/ledger-records/records/procedures/automatic-account-closing/new-account-closing).**
 
 Nella zona di testata sono presenti alcuni campi per il filtro, in particolare il **numero di versione** rappresenta un numero progressivo che identifica la chiusura  stessa per ogni società presente nella base dati. Deve pertanto essere un numero univoco.
 

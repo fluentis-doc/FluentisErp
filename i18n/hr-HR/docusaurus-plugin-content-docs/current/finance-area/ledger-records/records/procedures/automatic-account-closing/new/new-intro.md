@@ -7,15 +7,15 @@ La procedura di Chiusura automatica conti gestisce la chiusura di bilancio e la 
 
 LINK:
 
-**[Tab Parametri](/docs/finance-area/ledger-records/records/automatic-account-closing/new-account-closing)**
+**[Tab Parametri](/docs/finance-area/ledger-records/records/procedures/automatic-account-closing/new-account-closing)**
 
-**[Tab Profitti e Perdite](/docs/finance-area/ledger-records/records/automatic-account-closing/new-account-closing)**
+**[Tab Profitti e Perdite](/docs/finance-area/ledger-records/records/procedures/automatic-account-closing/new-account-closing)**
 
 **[Tab Patrimoniale](/docs/finance-area/ledger-records/records/automatic-account-closing/new/patrimonial-tab)**
 
 **[Tab Registrazione](/docs/finance-area/ledger-records/records/automatic-account-closing/new/record-tab)**
 
-**[Tab Riapertura scritture di assestamento](/docs/finance-area/ledger-records/records/automatic-account-closing/new-account-closing)**
+**[Tab Riapertura scritture di assestamento](/docs/finance-area/ledger-records/records/procedures/automatic-account-closing/new-account-closing)**
 
  
 
