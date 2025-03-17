@@ -1,5 +1,5 @@
 ---
-title: Asset Location (Ubicazione cespiti)
+title: Asset Location
 sidebar_position: 35
 ---
 
