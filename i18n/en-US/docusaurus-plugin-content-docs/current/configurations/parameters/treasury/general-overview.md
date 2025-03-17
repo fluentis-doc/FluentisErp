@@ -11,15 +11,15 @@ The parameters of the **Treasury** area concern the modules:
 
 **Direct Debit Receipts (Ri.Ba.)**: specific and necessary for the creation of bank receipts (for the telematic format to be exported and sent to the bank)
 
-**Supplier Payments (Pagamenti Fornitore)**: specific parameters of the module for detailed settings
+**Supplier Payments**: specific parameters of the module for detailed settings
 
-**Customer Risk (Rischio Clienti)**: specific for managing customer risk but with some repercussions on the creation of agent commissions related to the issuance of bank receipts (parameters related to the number of days, safety, beyond the due date of effects)
+**Customer Risk**: specific for managing customer risk but with some repercussions on the creation of agent commissions related to the issuance of bank receipts (parameters related to the number of days, safety, beyond the due date of effects)
 
 
-:::important[**Fast Start (Fast Start)**]
+:::important[**Fast Start**]
 The parameters of the treasury area can be initialized for a [**FastStart environment**](/docs/guide/fast-start) configured to allow immediate use.
 :::
 
-:::important See Also (Vedi Anche)
-[**VIDEO TUTORIALS ON TREASURY (VIDEO TUTORIALS SULLA TESORERIA)**](/docs/video/treasury/video)
+:::important See Also
+[**VIDEO TUTORIALS ON TREASURY**](/docs/video/treasury/video)
 :::

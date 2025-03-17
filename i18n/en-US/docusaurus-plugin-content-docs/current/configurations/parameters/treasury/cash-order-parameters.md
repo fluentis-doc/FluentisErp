@@ -1,13 +1,13 @@
 ---
-title: Riba Parameters (Parametri Ri.Ba)
+title: Cash Order Parameters  
 sidebar_position: 5
 ---
 
-The parameters of the Bank Receipts module can be found in **Parameters > Treasury (Parametri > Tesoreria)**.
+The parameters of the Bank Receipts module can be found in **Parameters > Treasury**.
 
 In the related parameters, default elements can be pre-set to be proposed in the procedures of the module. In particular:
 
-**Path for creating Riba tracks (Percorso di creazione dei tracciati Riba)**: Setting the standard directory for creating the electronic track for bank receipts. It is recommended to create a shared network directory within a server, to be able to access it from all workstations of the procedure.  
+**Path for creating Riba tracks**: Setting the standard directory for creating the electronic track for bank receipts. It is recommended to create a shared network directory within a server, to be able to access it from all workstations of the procedure.  
 **Customer references**: It is the company name of the active company that will be entered in the CBI presentation file.  
 **Standard description of credit**: It is possible to code, using the codes indicated in parentheses, the text to be included in the file as a description of the document of reference for the Riba issuance. This is a text of the type Ft. Nr. (2) of (3).  
 **Insert character of final control**: For some remote banking programs, a final line break in the file is necessary; set this flag if needed.  
