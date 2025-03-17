@@ -1,11 +1,11 @@
 ---
-title: Items (Articoli)
+title: Items 
 sidebar_position: 4
 ---
 
 The form consists of a grid, within which the user can manually enter the returned items.
 
-## Data (Dati)
+## Data 
 
 In this tab, information related to the selected row in the item grid is displayed, including:
 
@@ -15,7 +15,7 @@ In this tab, information related to the selected row in the item grid is display
 
 **Weights**: the total Net Weight and Gross Weight of the item rows are reported. The weights from the item registry are multiplied by the row quantity.
 
-## Lots/SN (Lotti/SN)
+## Lots/SN 
 
 In this tab, there is the option to set, for the selected row in the grid, the lots or serial numbers to be loaded into the warehouse with the returned item quantity in case multiple different lots are returned with the same return row. Depending on whether the item is managed by lots or by serial numbers, the corresponding grid of this tab will be activated.
 

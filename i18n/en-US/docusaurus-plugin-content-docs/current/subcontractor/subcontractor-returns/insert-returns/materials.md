@@ -1,5 +1,5 @@
 ---
-title: Materials (Materiali)
+title: Materials 
 sidebar_position: 5
 ---
 
@@ -11,11 +11,11 @@ The *Item* section contains the information of the selected row in the *Items* t
 
 For each item displayed above, you can enter the materials and their details, or this data will be proposed.
 
-### Material Detail (Dettaglio materiale)
+### Material Detail 
 
 In this tab, the materials that have not been used by the subcontractor, either because they are in excess or discarded, are entered.
 
-*Specific Fields (Campi specifici)*:
+*Specific Fields*:
 
 **Warehouse**: in this column, the code of the Returns warehouse is displayed, taken from the job order parameters, automatically shown only if the returned quantity is entered on the material line, editable by the user;
 

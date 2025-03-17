@@ -1,9 +1,9 @@
 ---
-title: Delivery DDT Unloading (Scarico DDT di consegna)
+title: Delivery DDT Unloading 
 sidebar_position: 1
 ---
 
-The procedure opens through the path **Work Account > Delivery DDT > Procedures > Unloading DDT** and allows unloading printed delivery DDTs from the warehouse that have not yet been unloaded.
+The procedure opens through the path **Subcontractor > Delivery DDT > Procedures > Unloading DDT** and allows unloading printed delivery DDTs from the warehouse that have not yet been unloaded.
 
 ## Filter
 
