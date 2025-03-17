@@ -10,4 +10,4 @@ The values present are used both in the resource and employee registry and in th
 
 **Description**: description of the line.
 
-**Hours (Monte ore)**: Hours expected for the line.
+**Hours**: Hours expected for the line.

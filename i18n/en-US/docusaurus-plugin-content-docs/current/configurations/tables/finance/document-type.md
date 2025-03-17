@@ -1,5 +1,5 @@
 ---
-title: Document Types (Tipi documento)
+title: Document Types 
 sidebar_position: 25
 ---
 

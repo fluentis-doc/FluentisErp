@@ -14,7 +14,7 @@ one could envision a coding of the authorization levels as follows:
 
 ![](/img/it-it/configurations/tables/finance/authorization-levels.png)
 
-The level *00 – Initial Block (Blocco iniziale)* must be preconfigured in every **vendor record (anagrafica fornitore)**, in the tab [**Payments**](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/payments/), to ensure that its items are created blocked with this starting level.
+The level *00 – Initial Block* must be preconfigured in every **vendor record**, in the tab [**Payments**](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/payments/), to ensure that its items are created blocked with this starting level.
 
 ![](/img/it-it/configurations/tables/finance/authorization-levels-combo.png)
 
@@ -26,6 +26,6 @@ Finally, the item can reach the final level *03* only by the user XXXXXXX (the o
 
 Each step may require the entry of an authorization note, if the flag is set at the level.
 
-These state changes can be executed from the [**Cash Management (Gestione Liquidità)**](/docs/finance-area/maturity-values/procedures/cash-management/) screen, using the *Authorize maturity* button. 
+These state changes can be executed from the [**Cash Management**](/docs/finance-area/maturity-values/procedures/cash-management/) screen, using the *Authorize maturity* button. 
 
-After granting authorization, from the *Cash Management (Gestione liquidità)* screen, it is also possible to directly prepare the payment batches of the *Vendors Payments* module for authorized items (or those not blocked), as an alternative to the classic procedure of creating the payment batch and, from within the batch, searching for passive items to include.
+After granting authorization, from the *Cash Management* screen, it is also possible to directly prepare the payment batches of the *Vendors Payments* module for authorized items (or those not blocked), as an alternative to the classic procedure of creating the payment batch and, from within the batch, searching for passive items to include.

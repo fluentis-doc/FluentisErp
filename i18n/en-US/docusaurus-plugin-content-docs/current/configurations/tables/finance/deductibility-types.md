@@ -5,7 +5,7 @@ sidebar_position: 25
 
 The definition of the table allows the user to anticipate types of tax deductibility to associate with the asset category for the desired amortization type.
 
-The combo box that calls this table is in the [**asset tab (scheda cespite)**](/docs/finance-area/fixed-assets/fixed-assets-management/detail/).
+The combo box that calls this table is in the [**asset tab**](/docs/finance-area/fixed-assets/fixed-assets-management/detail/).
 
 The first section, **Deductibility types**, contains the following fields:
 
