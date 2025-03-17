@@ -41,7 +41,7 @@ import Link from '@docusaurus/Link';
 <div className="card">
 ###     <Link to="/docs/controlling/controlling-recordings/controlling_recording_intro">Controllo di gestione</Link>
         <p>In questo modulo abbiamo tutte le procedure del vero e proprio Controlling</p>
-<p>**Prima nota**: una prima nota di entry di dati fisici o di registrazioni dell'area di analisi.</p>
+        <p>**Prima nota**: una prima nota di entry di dati fisici o di registrazioni dell'area di analisi.</p>
         <p><Link to="/docs/controlling/controlling-recordings/first-note/recording-physical-movements" className="bold-link">Registrazione movimenti fisici</Link>: valorizzata da produzione/progetto o manualmente</p>
         <p><Link to="/docs/controlling/controlling-recordings/first-note/extra-accounting-records-of-area" className="bold-link">Registrazioni extracontabili di area</Link>: valorizzate in automatico da ammortamenti o rimanenze, piuttosto che manuali</p>
         <p><Link to="/docs/controlling/controlling-recordings/first-note/corporate-centers-std-rates" className="bold-link">Tariffe standard dei centri</Link>: a gestione manuale</p>
