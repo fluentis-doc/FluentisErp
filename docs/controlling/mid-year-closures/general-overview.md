@@ -6,21 +6,31 @@ sidebar_position: 1
 Il modulo **Chiusure infrannuali** consente all'operatore di gestire le simulazioni extracontabili dei dati di bilancio periodico: sono disponibili una serie di procedure automatiche di ripresa e valorizzazione delle tipiche registrazioni che consentono di creare un bilancio di competenza di periodo.
 Il modulo è presente nell'area *Controlling* e legge come dati di origine quelli della contabilità generale.
 
-## Per iniziare ad utilizzare
-Non vi sono tabelle specifiche di configurazione, se non quelle necessarie alla valorizzazione della varie aree di origine dei dati gestiti dalle procedure del modulo stesso.
+## Configurazione preliminare del modulo
+- [***Numerazione registrazioni extracontabili***](/docs/configurations/tables/controlling/managerial-accounting/managerial-accounting-numeration): per definire come numerare le registrazioni extracontabili associate alle operazioni del controlling.
 
-- Creare una *Nuova chiusura conti infrannuale*, riprendendo i saldi dei dati di generale ed analitica dalla Contabilità generale
+- Non vi sono altre tabelle specifiche di configurazione, se non quelle necessarie alla valorizzazione della varie aree di origine dei dati gestiti dalle procedure del modulo stesso.
 
-- applicare le *Scritture di rettifica*, per valorizzare i risconti dei costi/ricavi fuori del periodo di competenza della simulazione di bilancio
+## Documenti gestiti
+import Link from '@docusaurus/Link';
 
-- aggiungere le *Scritture di integrazione*, per valorizzare i ratei dei costi/ricavi di registrazioni fuori della chiusura, ma che hanno valori economici di competenza del periodo 
-
-- fare la *Valorizzazione area acquisti e vendite*, per aggiungere i documenti in transito nel ciclo attivo e passivo
-
-- eseguire la *Ripresa ammortamento cespiti*, per inserire gli ammortamenti del periodo della chiusura, secondo le logiche civilistiche/fiscali contabili
-
-- gestire la *Contabilizzazione rimanenze*, per valorizzare automaticamente le rimanenze iniziali e finali del periodo di competenza
-
-- per installazioni multisocietarie, elaborare il *Consolidamento di bilancio*, per creare un consolidato delle chiusure infrannuali valorizzate nelle varie società gestite nell'installazione
-
-
+<div className="cardContainer">
+    <div className="card">
+###     <Link to="/docs/controlling/mid-year-closures/create-mid-year-closures-intro">Crea chiusure conti infrannuale</Link>
+        <p>- per portare nel controlling i saldi di generale e analitica del periodo d'interesse</p>
+###     <Link to="/docs/controlling/mid-year-closures/procedures/adjusting-entry" className="bold-link">Scritture di rettifica</Link>
+        <p>- per gestire i risconti</p>
+###     <Link to="/docs/controlling/mid-year-closures/procedures/integration-records" className="bold-link">Scritture di integrazione</Link>
+        <p>- per gestire i ratei</p>
+###     <Link to="/docs/controlling/mid-year-closures/procedures/purchase-and-sales-area-valorization" className="bold-link">Valorizzazione area acquisti e vendite</Link>
+        <p>- gestisce le e da ricevere/emettere dai documenti in transito nel ciclo attivo/passivo</p>
+###     <Link to="/docs/controlling/mid-year-closures/procedures/warehouse-oddments" className="bold-link">Contabilizzazione rimanenze</Link>
+        <p>- per rilevare le iniziali e finali</p>
+###     <Link to="/docs/controlling/mid-year-closures/procedures/fixed-assets-depreciation-retrieve" className="bold-link">Ripresa ammortamento cespiti</Link>
+        <p>- per aggiungere gli ammortamenti del periodo</p>
+###     <Link to="/docs/controlling/mid-year-closures/procedures/consolidation" className="bold-link">Consolidamento</Link>
+        <p>- per le installazioni multisocietarie</p>
+###     <Link to="/docs/controlling/mid-year-closures/search-off-balance-sheet-records" className="bold-link">Scritture extracontabili di chiusura</Link>
+        <p>- per registrazioni manuali</p>
+    </div>
+</div>

@@ -1,5 +1,5 @@
 ---
-title: Introduction (Introduzione)
+title: Introduction 
 sidebar_position: 1
 ---
 
@@ -13,7 +13,7 @@ From an accounting perspective, the company records a liability to the bank for 
 
 With this module of Fluentis ERP, it is possible to manage the invoices advance lists to be presented to the bank net of fees and interests, and to account for both the presentation and the final collection.
 
-Before entering new advance lists, it is necessary to first manage the ADVANCE TYPES Table (Tabella TIPI ANTICIPO).
+Before entering new advance lists, it is necessary to first manage the ADVANCE TYPES Table.
 
 In this table, the possible types of lists and their related parameters are defined.
 
@@ -31,7 +31,7 @@ In this table, the possible types of lists and their related parameters are defi
 
 **Numeration**: it is necessary to set a numbering from the relevant numbering table for this type of document.
 
-**Bank c/c**: (account / sub-account description): enter here the sub-account that will be used in the accounting records related to the bank account.
+**Bank c/c**: (account / detail account description): enter here the detail account that will be used in the ledger records related to the bank account.
 
 **Advance bank account**: enter the support account used to account for the bank advance.
 
@@ -39,4 +39,4 @@ In this table, the possible types of lists and their related parameters are defi
 
 **Passive interest account**: enter the account to be used for accounting interests.
 
-**Commission account (Conto commissioni)**: enter the account to be used for accounting bank fees.
+**Charges bank account**: enter the account to be used for accounting bank fees.

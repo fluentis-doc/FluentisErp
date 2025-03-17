@@ -1,5 +1,5 @@
 ---
-title: Print List of Anticipated and Collected Invoices (Stampa Lista Fatture Anticipate e Incassate)
+title: Advance/Collected Invoices Report
 sidebar_position: 4
 ---
 

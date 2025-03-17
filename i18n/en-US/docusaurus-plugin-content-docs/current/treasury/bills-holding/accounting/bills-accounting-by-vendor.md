@@ -3,11 +3,11 @@ title: Bills Accounting by Vendor
 sidebar_position: 4
 ---
 
-The form is located in Treasury > Effect Portfolio > Accounting > Accounting effects to supplier.
+The form is located in Treasury > Bills Holdingo > Accounting > Bills Accounting by Vendor.
 
 From this mask, the accounting of the effects forwarded to the supplier is executed: the procedure will close the account linked to the type of effects inserted in the list and will record the supplier payments entered in the list.
 
-:::tip[Note (Nota)]
+:::tip[Note]
 The accounting of the lists can only be performed for printed forwarding lists where the effects section is equal to the payments section.
 :::
 
@@ -17,7 +17,7 @@ The accounting of the lists can only be performed for printed forwarding lists w
 2. Select from the central grid the lists you wish to account for.
 3. Fill in the parameters for accounting such as the **Ledger Records Template**, **Posting date**, and **Competence date**.
 
-:::note[Note (Nota)]
+:::note[Note]
 This section can be predefined within the [**parameters**](/docs/configurations/parameters/treasury/bills-portfolio-parameters) of the Effect Portfolio module.
 :::
 
@@ -35,7 +35,7 @@ From the *Previous* tab, it is possible to proceed with the cancellation of the 
 
 Cancellation will only be possible if the period is still modifiable (journal book print and account closing not executed).
 
-A double click in the section of registrations will allow viewing the related accounting record.
+A double click in the section of registrations will allow viewing the related ledger record.
 
 There is a detail tab to view errors detected during the accounting process.
 
@@ -45,4 +45,4 @@ There is a detail tab to view errors detected during the accounting process.
 
 **Rollback accounting**: Restores the selected accountings.
 
-**Rollback lists**: Restores the accounting record related to the selected list.
+**Rollback lists**: Restores the ledger record related to the selected list.

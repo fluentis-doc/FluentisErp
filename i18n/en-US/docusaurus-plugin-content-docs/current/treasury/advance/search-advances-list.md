@@ -1,5 +1,5 @@
 ---
-title: Advance Statement Search (Ricerca Distinta Anticipo)
+title: Advance List Search 
 sidebar_position: 2
 ---
 
@@ -9,17 +9,17 @@ It is also possible to proceed with the insertion of a new statement using the *
 
 In the header of the form, there are **filters** for searching related to:
 
-- ordinary current accounts (conti correnti (ordinari))
-- bank advance support accounts (conti d'appoggio per l'anticipo da parte della banca)
-- statement number (numero distinta)
-- submission date (data presentazione)
-- calculation type (tipo di calcolo)
-- statement status (stato della distinta).
+- ordinary current accounts 
+- bank advance support accounts 
+- list number 
+- presentation date 
+- calculation type 
+- list status.
 
 The **Accounted** flag marks and filters statements for which the [**Accounting**](/docs/treasury/advance/accounting/advances-list-accounting) has already been launched or not.
 
 The form also displays:
 
-**Total Statement (Totale Distinta):** Calculated field that represents the sum of the total of the anticipated invoices.
+**Total List:** Calculated field that represents the sum of the total of the anticipated invoices.
 
-**Total Advanced (Totale Anticipato):** Calculated field that represents the sum of the amount advanced by the bank for each invoice.
+**Total Advanced:** Calculated field that represents the sum of the amount advanced by the bank for each invoice.

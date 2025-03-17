@@ -8,14 +8,14 @@ The procedure for acquiring effects from invoices mirrors that related to [**mat
 The source data will be, instead of the open maturities, directly the **deadlines of invoices in the active cycle**.
 
 
-:::tip[Note (Nota)]
+:::tip[Note]
 This allows for the advance creation and presentation to the bank of effects (for example, the bank receipts to be brought for collection) even before the active invoices have been accounted for.
 
 It is recommended to account for the active invoices before accounting for the issuance of effects in order to manage the automatic closure of open transactions through the first registration.
 :::
 
 
-:::danger[Warning (Attenzione)]
+:::danger[Warning]
 The **management of the acquisition of effects from invoices** is an alternative to the acquisition from maturities.
 :::
 
@@ -26,7 +26,7 @@ The **management of the acquisition of effects from invoices** is an alternative
 **Transfer**: Executes the creation of effects for the selected deadlines.
 
 
-### Previous Tab (Tab Precedenti)
+### Previous Tab 
 
 Once the creation is executed, the lines will disappear from the *filter* grid and the result will be visible in the **Previous** tab, within which it is possible to cancel the operation.
 

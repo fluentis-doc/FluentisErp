@@ -1,9 +1,9 @@
 ---
-title: Accounting of unpaid on disposal
+title: Accounting of Unpaid on Disposal
 sidebar_position: 6
 ---
 
-The form is located in Treasury > Portfolio Effects > Accounting > Accounting of unpaid on disposal.
+The form is located in Treasury > Bills Holding > Accounting > Accounting of unpaid on disposal.
 
 From this screen, you proceed to account for the bad debts assigned for payment to the supplier: the procedure, according to the settings of the accounting reason set, will reopen the customer accounts associated with the bad debt titles as well as the closed supplier accounts with the title assignment.
 
@@ -17,9 +17,9 @@ From this screen, you proceed to account for the bad debts assigned for payment 
 This section can be predefined within the [**Parameters**](/docs/configurations/parameters/treasury/bills-portfolio-parameters) of the Portfolio Effects module.
 :::
 
-The flag **Charges recourse** will manage the charge of expenses to the customer account, recording the related revenue according to the sub-account entered in the screen itself (**Account / sub-account for charging customer expenses (Conto / sottoconto addebito spese al cliente)**).
+The flag **Charges recourse** will manage the charge of expenses to the customer account, recording the related revenue according to the detail account entered in the screen itself (**Account / detail account for charging customer expenses**).
 
-The sub-accounts for **Protest expenses** and the **Transitory (Transitorio)** account are taken from the module parameters, but they can be modified or entered each time.
+The detail accounts for **Protest expenses** and the **Transitory** account are taken from the module parameters, but they can be modified or entered each time.
 
 4. Press the button in the ribbon bar **Unpaid accounting**.
 
@@ -45,4 +45,4 @@ There is a detail tab for viewing errors detected during the accounting process.
 
 **Restore Accounting**: Restores the selected accountings.
 
-**Restore Bad Debts (Ripristina insoluti)**: Restores the selected accounting record related to the individual bad debt.
+**Restore Unpaid**: Restores the selected accounting record related to the individual bad debt.
