@@ -1,5 +1,5 @@
 ---
-title: Accounting Causes VIDEO TUTORIALS (Causali contab. VIDEO TUTORIALS)
+title: Accounting Templates VIDEO TUTORIALS
 sidebar_position: 1
 ---
 
@@ -12,10 +12,10 @@ It is entirely necessary for those intending to configure a tailored operational
 Through a correct configuration and application of these procedures, the ERP user can optimize the flow of automatic accounting, reducing manual errors and improving the traceability of accounting operations.
 
 
-:::important See Also (Vedi Anche)
-[**VIDEO TUTORIALS ON ACCOUNTING CAUSES**](/docs/video/finance/intro)
+:::important See Also
+[**VIDEO TUTORIALS ON ACCOUNTING TEMPLATES**](/docs/video/finance/intro)
 :::
 
-:::tip[More information (Maggiori informazioni)]
+:::tip[More information]
 Refer to the page on [**Entering a New Cause**](/docs/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates)
 :::

@@ -3,9 +3,9 @@ title: Groups of adjustment
 sidebar_position: 6
 ---
 
-The form is located at the path: **Tables (Tabelle) > Controlling > Analytical Accounting (Contabilità analitica) > Groups of adjustment (Gruppi di conguaglio)**
+The form is located at the path: **Tables > Controlling > Analytical Accounting > Groups of adjustment**
 
-:::tip Note (Nota)
+:::tip Note
 This table is for the exclusive use of companies that have set up *Controlling*.
 :::
 
@@ -16,6 +16,6 @@ Within this table, it is possible to code groupings of accounts useful for manag
 - **Description**
 - **Balance type**: this is fundamentally important for the sub-accounts of opening/closing inventories, for which two specific categories must be defined.
 
-:::tip Note (Nota)
+:::tip Note
 In particular, the **Inventory accounting** procedure for Controlling values the opening and closing inventories of each individual period (month) being processed in the year in the extrabudgetary records of the area. When later requesting, in the Reporting module, the amounts of the opening and closing inventories for the first half of the year YYYY, **FluentisERP** **must** know which accounts to read only the opening period data for January and which to read only the closing period data for June, otherwise you would get the sums of 6 months of opening inventories and 6 of closing inventories, completely compromising the processing!
 :::

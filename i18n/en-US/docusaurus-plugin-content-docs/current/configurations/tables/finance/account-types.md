@@ -10,9 +10,9 @@ If you intend to configure manually, please refer to the checklist on the linked
 :::
 
 
-Path: **Configuration > Tables > Administration > Account types (Configurazione > Tabelle > Amministrazione > Tipi conto)**
+Path: **Configuration > Tables > Administration > Account types**
 
-### Table Management (Gestione tabella)
+### Table Management
 
 The definition of the account type table is nothing more than a ‘qualification' that indicates to the procedure how to manage the sub-account code assigned to it:
 
@@ -22,21 +22,21 @@ The definition of the account type table is nothing more than a ‘qualification
 
 - it can finally serve as a filtering criterion, typically within the account help.
 
-#### Specific Fields (Campi specifici)
+#### Specific Fields
 
 **Code**: account type code.
 
 **Description**: account type description.
 
-**A. Active (P. Attivo)**: with flag on active.
+**A. Active**: with flag on active.
 
-**A. Passive (P. Passivo)**: with flag on passive.
+**A. Passive**: with flag on passive.
 
-**C. Costs (E. Costi)**: with flag on costs.
+**C. Costs**: with flag on costs.
 
-**C. Revenues (E. Ricavi)**: with flag on revenues.
+**C. Revenues**: with flag on revenues.
 
-**O. Order (C. Ordine)**: with flag on order accounts.
+**O. Order**: with flag on order accounts.
 
 **Client**: with flag on customers + active.
 
@@ -52,12 +52,12 @@ The definition of the account type table is nothing more than a ‘qualification
 
 ---
 
-#### Subsequent Flags (from *All* to *Conai Settings*) (Flag successivi (da *Tutti* a *Impostazioni Conai*))**
+#### Subsequent Flags (from *All* to *Conai Settings*)**
 
 With these flags, the visibility of the corresponding tabs within the customer/supplier accounting registries is enabled. Activating *All* will make all tabs visible.
 
 ### Video Tutorials
 
-:::important See Also (Vedi Anche)
-[**VIDEO TUTORIALS ON ADMINISTRATIVE TABLES (VIDEO TUTORIALS SULLE TABELLE AMMINISTRATIVE)**](/docs/video/finance/intro)
+:::important See Also
+[**VIDEO TUTORIALS ON ADMINISTRATIVE TABLES**](/docs/video/finance/intro)
 :::

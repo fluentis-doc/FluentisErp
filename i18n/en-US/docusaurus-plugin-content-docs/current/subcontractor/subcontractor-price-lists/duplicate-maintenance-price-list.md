@@ -1,5 +1,5 @@
 ---
-title: Duplicate and Maintenance of Work Order Price Lists (Duplica e Manutenzione listini di conto lavoro)
+title: Duplicate and Maintenance of Subcontractor Price Lists 
 sidebar_position: 2
 ---
 
@@ -14,12 +14,12 @@ Once the desired updates are set, to execute the procedure, click **OK**. We not
 With the **Close price lists** button, it is possible to enter an end validity date for the selected price list items. In fact, clicking the Close button will open a mask in which to enter an End Validity Date, from which the item will no longer be considered valid in the price list.
 
 With the **Duplicate price lists** button, it is possible to create a new price list starting from the selected item line. Clicking the duplicate price lists button will prompt for the mandatory data required to create a price list, namely:
-- The Supplier (Fornitore);
+- The Supplier;
 - The start validity date and a possible end validity date;
-- The Currency (Divisa).
+- The Currency.
 Clicking OK will generate the price list with the entered data. We can see that now the search results present one more line, which is exactly the line of the newly created price list.
 
-Clicking **Discounts** on the ribbon bar, on the other hand, allows for managing the discounts related to the selected item line. The flag **Delete previous discounts (Cancella gli sconti precedenti)** deletes any pre-existing discounts in the price list for that item. In the grid, it is then possible to enter discounts to be included in the source price list corresponding to the selected item. To enter the discounts, it is necessary to input pre-coded discounts, to allow the application to derive the type of discount and related properties.
+Clicking **Discounts** on the ribbon bar, on the other hand, allows for managing the discounts related to the selected item line. The flag **Delete previous discounts** deletes any pre-existing discounts in the price list for that item. In the grid, it is then possible to enter discounts to be included in the source price list corresponding to the selected item. To enter the discounts, it is necessary to input pre-coded discounts, to allow the application to derive the type of discount and related properties.
 So, we enter the type and value.
 
 Finally, the button on the ribbon bar **Price list re-opening** allows reopening a previously closed price list, one that has an End validity date. Clicking this button will delete the end validity date.

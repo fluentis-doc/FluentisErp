@@ -3,7 +3,7 @@ title: P.P.E. risk categories
 sidebar_position: 2
 ---
 
-The table can be found at the path **Tables > Employees > PPE > Risk Categories of PPE (Tabelle > Dipendenti > D.P.I. > Categorie rischio D.P.I.)**.
+The table can be found at the path **Tables > Employees > PPE > Risk Categories of PPE**.
 
 :::important Purpose
 In this table, it is possible to code the *P.P.E. risk categories* which are used to categorize the risk levels of *P.P.E.*.   
@@ -23,8 +23,8 @@ For the new record, at least the mandatory fields required by the program must b
 
 #### Specific Fields 
     
-> **Code**: this is the code of the *Risk Category of PPE (Categoria rischio D.P.I.)*.   
-> **Description**: this is the description of the *Risk Category of PPE (Categoria rischio D.P.I.)*.   
+> **Code**: this is the code of the *Risk Category of PPE*.   
+> **Description**: this is the description of the *Risk Category of PPE*.   
 > **Notes**: free annotations.
 
-For everything not detailed in this document regarding the common functioning of forms, please refer to the following link [Common functionalities, buttons, and fields (Funzionalità, pulsanti e campi comuni)](/docs/guide/common).
+For everything not detailed in this document regarding the common functioning of forms, please refer to the following link [Common functionalities, buttons, and fields](/docs/guide/common).

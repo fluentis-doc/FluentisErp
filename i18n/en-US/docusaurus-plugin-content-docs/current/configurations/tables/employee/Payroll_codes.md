@@ -3,7 +3,7 @@ title: Payroll codes
 sidebar_position: 4
 ---
 
-#### Specific Fields (Campi specifici) 
+#### Specific Fields 
 
 **Code** / **Description**: code and description to identify the payroll code
 

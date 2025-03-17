@@ -3,7 +3,7 @@ title: Periods distribution
 sidebar_position: 1
 ---
 
-The form is located at the path: **Tables > Controlling > Management Accounting > Periods distribution (Tabelle > Controlling > Contabilità gestionale > Distribuzione periodi)**
+The form is located at the path: **Tables > Controlling > Management Accounting > Periods distribution**
 
 :::tip Note
 This table is for exclusive use by companies that have set up *Controlling*.
@@ -31,7 +31,7 @@ We could divide the year into twelfths, or into elevenths, appropriately weighin
 
 The *Periods distribution* is associated in two points:  
 - In the [*Chart of Accounts*](/docs/erp-home/registers/accounting/analytic-chart-of-accounts): I can specify that sub-account X, for which a range of dates is valued, is to be allocated via a specific period distribution instead of the exact days of the set date range, which is the default logic when period distribution is not set.
-- In the *Journal of Physical Movements (Prima nota movimenti fisici)*, mandatorily for *Units of Measure* that are defined as *Flow* and not as *State*
+- In the *Journal of Physical Movements*, mandatorily for *Units of Measure* that are defined as *Flow* and not as *State*
 
 
 :::tip Note

@@ -1,5 +1,5 @@
 ---
-title: Search Reminder Types (Ricerca tipi solleciti)
+title: Search Reminder Types 
 sidebar_position: 1
 ---
 

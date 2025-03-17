@@ -1,4 +1,4 @@
 ---
-title: Returns List (Lista rientri)
+title: Returns List 
 sidebar_position: 1
 ---

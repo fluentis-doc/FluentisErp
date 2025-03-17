@@ -1,9 +1,9 @@
 ---
-title: Customer Risk Parameters (Parametri Rischio Cliente)
+title: Customer Risk Parameters 
 sidebar_position: 6
 ---
 
-### INTRODUCTION (PREMESSA)
+### INTRODUCTION
 
 The customer risk module reads customer orders, delivery notes (DDT), invoices, open items, and effects due (essentially everything that occupies credit and creates exposure). 
 
@@ -11,9 +11,9 @@ Open items and effects are read in any case; the documents (purchase orders, del
 
 The flag to be applied for the reading of the various document types is the flag **Credit**
 
-There is also the flag **Exclude Block (Escludi blocco)**: even if the document generates credit, it will be excluded from the block. (even if it occupies credit, it is never blocked but simply flagged).
+There is also the flag **Exclude Block**: even if the document generates credit, it will be excluded from the block. (even if it occupies credit, it is never blocked but simply flagged).
 
-### GENERAL LOGIC (LOGICA GENERALE)
+### GENERAL LOGIC 
 
 Orders are considered if they are printed and confirmed + a flag in the type (not fulfilled or forcibly fulfilled). 
 Forcibly fulfilled = the remainder will not be delivered, and the order is considered closed even if it would not be.
@@ -23,15 +23,15 @@ Invoices, whether printed or not, depend on the parameter and must not be accoun
 
 In the **parameters** of the Customer Risk module, default items can be preset to be proposed in the procedures of the module.
 
-> **N. days past due for effects presented as good until received (N. giorni oltre la scadenza per effetti presentati al salvo buon fine)**: this field allows you to define how many days to consider the effect presented as good until received, not collected after its due date.  
-> **N. days past due for effects presented after collection (N. giorni oltre la scadenza per effetti presentati al dopo incasso)**: this field allows you to define how many days to consider the effect presented after collection, not collected after its due date.  
-> **From calculation date (Da data calcolo) (accounting balances, invoices, delivery notes)**: this is the starting date for the calculation. Documents with a date prior to this will not be considered.  
+> **N. days past due for effects presented as good until received**: this field allows you to define how many days to consider the effect presented as good until received, not collected after its due date.  
+> **N. days past due for effects presented after collection**: this field allows you to define how many days to consider the effect presented after collection, not collected after its due date.  
+> **From calculation date (accounting balances, invoices, delivery notes)**: this is the starting date for the calculation. Documents with a date prior to this will not be considered.  
 > **View accounted unpaid bills**: setting this flag will also show accounted amounts of insolvents in the module, regardless of their collected status. It has purely informational value.  
 
-**Credit evaluation multiplier**: value used in the form [**Credit Usage (Utilizzo fido)**](/docs/treasury/customer-risk/use-credit) to determine the amount of the *Credit evaluation* field.
+**Credit evaluation multiplier**: value used in the form [**Credit Usage**](/docs/treasury/customer-risk/use-credit) to determine the amount of the *Credit evaluation* field.
 
 
-#### Calculation Base to Determine Customer Risk (Base di calcolo per determinare il rischio cliente)  
+#### Calculation Base to calculate the Customer Risk     
 > **Ledger balance**: with this setting, the credit calculation will be based on the customer's accounting balance.  
 > **Open maturity values**: with this setting, the credit calculation will be based on the customer's open items.  
 > **Consider maturity values from temporary recordings**: if the previous flag is active, the calculation also considers any movements resulting from provisional registrations.  

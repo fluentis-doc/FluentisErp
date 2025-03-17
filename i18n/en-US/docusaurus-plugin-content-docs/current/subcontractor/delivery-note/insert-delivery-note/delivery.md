@@ -1,5 +1,5 @@
 ---
-title: Delivery (Consegna)
+title: Delivery 
 sidebar_position: 4
 ---
 
@@ -12,7 +12,7 @@ In this tab, the materials that must be delivered to the subcontractor are enter
 
 *Specific fields*:
 
-**Order C/L number and year (Ordine C/L numero e anno)**: the number and year of the work order from which the item line was taken are displayed. If the line was inserted manually, this column remains blank;
+**Order C/L number and year**: the number and year of the work order from which the item line was taken are displayed. If the line was inserted manually, this column remains blank;
 
 **Estimated delivery date**: represents the expected delivery date of the material, taken from the *Materials to Deliver* tab of the work order from which the item line of the DDT was generated;
 

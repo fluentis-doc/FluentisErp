@@ -1,5 +1,5 @@
 ---
-title: Severity (Severità)
+title: Severity 
 sidebar_position: 3
 ---
 

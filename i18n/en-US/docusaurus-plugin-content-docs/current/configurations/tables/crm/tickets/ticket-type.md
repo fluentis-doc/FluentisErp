@@ -1,5 +1,5 @@
 ---
-title: Ticket Type (Tipo Ticket)
+title: Ticket Type
 sidebar_position: 1
 ---
 
@@ -13,11 +13,11 @@ Also within this form, it is possible to add new types to the grid by clicking t
 
 **Numeration**: is the numbering of the ticket type and refers to the *Type numeration* table;
 
-**Offer type**: contains the [Offer Type (Tipo offerta)](/docs/configurations/tables/sales/sales-offer-type) to be created with the *Ticket Offer Creation (Creazione offerta da ticket)* procedure;
+**Offer type**: contains the [Offer Type](/docs/configurations/tables/sales/sales-offer-type) to be created with the *Ticket Offer Creation* procedure;
 
-**Class and Item Code (Classe e Codice Articolo)**: 
+**Class and Item Code**: 
 
-**Ticket template (Template ticket)**: contains the [Template (Template)](/docs/configurations/tables/crm/tickets/template-ticket) to be proposed for this Ticket Type;   
+**Ticket template**: contains the [Template](/docs/configurations/tables/crm/tickets/template-ticket) to be proposed for this Ticket Type;   
 
 
 Flags to make fields mandatory
@@ -26,9 +26,9 @@ Flags to make fields mandatory
 
 **Subject**: 
 
-**Reference Subject (Soggetto di Riferimento)**: if enabled, indicates the requirement to fill in the reference subject field in the ticket;
+**Reference Subject**: if enabled, indicates the requirement to fill in the reference subject field in the ticket;
 
-**Reference Subject Email (Email soggetto di Riferimento)**: if enabled, indicates the requirement to fill in the reference subject email field in the ticket;
+**Reference Subject Email**: if enabled, indicates the requirement to fill in the reference subject email field in the ticket;
 
 **Project**: if enabled, indicates the requirement to fill in the Project field in the ticket;
  

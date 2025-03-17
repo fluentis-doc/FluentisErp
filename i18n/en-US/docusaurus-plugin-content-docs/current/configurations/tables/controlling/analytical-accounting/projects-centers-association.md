@@ -1,9 +1,9 @@
 ---
-title: Association of Centers / Jobs (Associazione centri / commesse)
+title: Association of Centers / Jobs
 sidebar_position: 1
 ---
 
-The form can be found at the path: **Tables > Controlling > Analytical Accounting > Association of Centers / Jobs (Tabelle > Controlling > Contabilità analitica > Associazione centri / commesse)**
+The form can be found at the path: **Tables > Controlling > Analytical Accounting > Association of Centers / Jobs**
 
 :::tip Note
 This table is for the exclusive use of companies that have set up *Controlling*.

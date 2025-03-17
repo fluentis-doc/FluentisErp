@@ -1,5 +1,5 @@
 ---
-title: Asset Numbering (Numerazione cespite)
+title: Asset Numbering
 sidebar_position: 28
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: Asset Accounting Types (Tipi contabilizzazione cespite)
+title: Asset Accounting Types
 sidebar_position: 28
 ---
 

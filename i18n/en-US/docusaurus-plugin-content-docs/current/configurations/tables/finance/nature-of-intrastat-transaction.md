@@ -1,13 +1,13 @@
 ---
-title: Nature of Intrastat Transaction (Natura transazione Intrastat)
+title: Nature of Intrastat Transaction 
 sidebar_position: 14
 ---
 
 The preloaded table defines the nature of transactions for Intrastat declarations (as required by the official instructions).
 
-There is a *dummy* type **‘S – Services (Servizi)'** intended to identify which documents (if entered as documents in the purchases/sales area) should be reported in the quater/quinquies sections related to service performances, as well as **‘Z – Call of stock (Call of stock)'** to report from sales the operations of the corresponding intra sales section.
+There is a *dummy* type **‘S – Services'** intended to identify which documents (if entered as documents in the purchases/sales area) should be reported in the quater/quinquies sections related to service performances, as well as **‘Z – Call of stock'** to report from sales the operations of the corresponding intra sales section.
 
-#### Specific Fields (Campi specifici)
+#### Specific Fields
 
 **Code**: transaction nature code.
 

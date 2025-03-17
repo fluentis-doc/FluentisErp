@@ -1,5 +1,5 @@
 ---
-title: Search for General Accounting Reasons (Ricerca le causali di contabilità generale)
+title: Search for General Accounting Templates
 sidebar_position: 2
 ---
 
@@ -16,9 +16,9 @@ To insert a new reason, click the **New** button.
 > **Duplicate the selected template**: allows duplicating the selected reason. Useful for creating a new reason based on one with similar characteristics. A window will open asking for a code to be assigned to the new reason you intend to create, and after confirming, you will be asked to enter the newly created reason to modify some characteristics. 
 
 :::important See Also
-[**VIDEO TUTORIALS ON ACCOUNTING REASONS (VIDEO TUTORIALS SULLE CAUSALI CONTABILI)**](/docs/video/finance/intro)
+[**VIDEO TUTORIALS ON ACCOUNTING TEMPLATES**](/docs/video/finance/intro)
 :::
 
-:::tip[More Information (Maggiori informazioni)]
-Consult the page on [**Inserting a New Reason (Inserimento di una nuova causale)**](/docs/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates)
+:::tip[More Information]
+Consult the page on [**Inserting a New Template**](/docs/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates)
 :::

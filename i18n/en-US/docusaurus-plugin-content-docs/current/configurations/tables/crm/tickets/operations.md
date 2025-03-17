@@ -1,5 +1,5 @@
 ---
-title: Ticket Operation (Operazione ticket)
+title: Ticket Operation 
 sidebar_position: 2
 ---
 

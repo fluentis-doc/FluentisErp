@@ -1,5 +1,5 @@
 ---
-title: General Ledger Cause Entries (Inserimento causali di contabilità generale)
+title: General Ledger Cause Entries 
 sidebar_position: 3
 ---
 
@@ -38,7 +38,7 @@ The causes created by the Fast Start procedure allow you to perform:
 
 **Movement Type**: represents the type of movement of the registration. This is an internal fixed table, not editable by the user, that categorizes non-VAT causes from various VAT movement types.
 
-**Document Type**: the table is preloaded but can be modified/expanded by the user. In this table, particularly important are the rows that include the flags **‘Credit Note'** and **‘Variation Note'**: for the Credit Note, the procedure checks that the VAT section is populated with negative amounts (a consistency check of the signs is also performed on the accounting of the credit notes from the sales/purchase area: it means that there cannot be rows with positive amounts and simultaneously others for another sub-account with negative amounts); for the ‘Variation Note', the procedure will activate, again in the VAT section of the registration, a flag to identify the rows related to variation notes and a reference date of the document to be corrected for VAT purposes. Do not confuse this date with the **Tax Comp. (Comp. IVA)** field: the credit note (or any variation note) will correct the VAT for the period indicated in this last field.
+**Document Type**: the table is preloaded but can be modified/expanded by the user. In this table, particularly important are the rows that include the flags **‘Credit Note'** and **‘Variation Note'**: for the Credit Note, the procedure checks that the VAT section is populated with negative amounts (a consistency check of the signs is also performed on the accounting of the credit notes from the sales/purchase area: it means that there cannot be rows with positive amounts and simultaneously others for another sub-account with negative amounts); for the ‘Variation Note', the procedure will activate, again in the VAT section of the registration, a flag to identify the rows related to variation notes and a reference date of the document to be corrected for VAT purposes. Do not confuse this date with the **Tax Comp.** field: the credit note (or any variation note) will correct the VAT for the period indicated in this last field.
 
 ![](/img/it-it/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates/header/image02.png)
 
@@ -50,7 +50,7 @@ The causes created by the Fast Start procedure allow you to perform:
 
 **Expiration Date**: you can block the use of an accounting cause starting from this date. It will not be visible in the list of causes from this date onwards.
 
-**Collection and Payment Register (Registro incassi e pagamenti)**: NOT ACTIVE (identifies the causes to be reported in the simplified professional collection/payment register).
+**Collection and Payment Register**: NOT ACTIVE (identifies the causes to be reported in the simplified professional collection/payment register).
 
 **Professionals (Professionisti)**: NOT ACTIVE (identifies a cause for the accounting of professionals).
 
@@ -74,11 +74,11 @@ f) when none of the above cases are present, the program will try to set the dat
 
 **Automatic selfbilling type**: see the specific section on [**automatic self-invoice configurations**](/docs/finance-area/e-invoice/auto-invoice/ledger-templates).
 
-**Invert columns if the amount is less than zero (Inversione colonne se importo è minore di zero)**: It is possible to make the program invert the Debit/Credit columns based on the sign of the VAT movement, typically in the case of recording credit notes (it is recommended to select this field for all VAT registrations).
+**Invert columns if the amount is less than zero**: It is possible to make the program invert the Debit/Credit columns based on the sign of the VAT movement, typically in the case of recording credit notes (it is recommended to select this field for all VAT registrations).
 
 **Warning**: This field is active only if the previous one has been activated; it consists in returning to the user a warning message about the sign inversion. The flag is irrelevant for causes used in the automatic accounting procedures.
 
-**Allow sub-accounts with zero values (Consenti sottoconti con valori a zero)**: with this flag, the procedure:
+**Allow sub-accounts with zero values**: with this flag, the procedure:
 
 a) will allow the manual entry of rows with amounts both debit and credit equal to zero;
 
@@ -96,13 +96,13 @@ c) the rows that populate the journal with the VAT debit/credit will lead to the
 
 - by choosing to keep the flag active, sub-accounts with a zero movement can be entered, a situation that often occurs when recording telephone or electricity utilities, for example.
 
-**Prototype of the Registration (Prototipo della registrazione)**: this is the fundamental (but not mandatory) section of the accounting cause, where the typical scheme of the type of accounting registration to be managed should be loaded. It is possible to also input generic account codes (e.g., the supplier account), which will be automatically updated by the program based on the list of customer/supplier accounts entered in the General Accounting Parameters. These sub-accounts, as well as the debit/credit sections, will guide the accounting values, which will still be modifiable during the manual loading of the registration.
+**Prototype of the Registration**: this is the fundamental (but not mandatory) section of the accounting cause, where the typical scheme of the type of accounting registration to be managed should be loaded. It is possible to also input generic account codes (e.g., the supplier account), which will be automatically updated by the program based on the list of customer/supplier accounts entered in the General Accounting Parameters. These sub-accounts, as well as the debit/credit sections, will guide the accounting values, which will still be modifiable during the manual loading of the registration.
 
 ![](/img/it-it/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates/attributes-detail/image02.png)
 
 </details>
 
-#### [Amount Type (Tipo importo)]( #amount-type)
+#### [Amount Type]( #amount-type)
 
 Specific codes of Amount Type merit explanation, fundamental for automatically valuing the journal based on the VAT data and subdivision involved in the registration. Specifically:
 
@@ -124,11 +124,11 @@ Specific codes of Amount Type merit explanation, fundamental for automatically v
 
 **50% Taxable Non-deductible VAT**: indicates that the row will be updated with 50% of the total taxable amount of the registration plus the total of the undeductible VAT of the same: no consideration will be made on the account/sub-account code entered;
 
-**50% Taxable + 50% Undeductible VAT (50% Impon.+ 50% Iva Indetraibile)**: indicates that the row will be updated with 50% of the total taxable amount of the registration plus 50% of the undeductible VAT of the same: no consideration will be made on the account/sub-account code entered;
+**50% Taxable + 50% Undeductible VAT**: indicates that the row will be updated with 50% of the total taxable amount of the registration plus 50% of the undeductible VAT of the same: no consideration will be made on the account/sub-account code entered;
 
 CREATED FOR TAX REASONS AND TO BE CONSIDERED OBSOLETE
 
-**Taxable Sub.+Undeductible Tax Sub. (Imp. Sott.+Imposta indetr. Sott)**: indicates that the row will be updated for each sub-account code entered in the VAT section with the amount obtained from the sum of the taxable amount(s) of the row(s) and the corresponding undeductible tax; **the use of this amount type is typically recommended for all costs entered in purchase causes;**
+**Taxable Sub.+Undeductible Tax Sub.**: indicates that the row will be updated for each sub-account code entered in the VAT section with the amount obtained from the sum of the taxable amount(s) of the row(s) and the corresponding undeductible tax; **the use of this amount type is typically recommended for all costs entered in purchase causes;**
 
 **Rounding Active**: indicates that the row will be updated with the amount of active rounding; its use is to be linked to closing causes of accounts;
 
@@ -138,7 +138,7 @@ CREATED FOR TAX REASONS AND TO BE CONSIDERED OBSOLETE
 
 **Net Change Diff**: indicates that the row will be updated with the sub-account of profit from the reference currency of the currency difference, for the amount obtained according to the valuation differential between historical exchange rate and closing exchange rate of the account; if the historical exchange flag has been set, the row will have no valuation;
 
-**Loss Currency (Perd. Diff. Cambi)**: indicates that the row will be updated with the sub-account of loss from the reference currency of the currency difference, for the amount obtained according to the valuation differential between historical exchange rate and closing exchange rate of the account; if the historical exchange flag has been set, the row will have no valuation;
+**Loss Currency**: indicates that the row will be updated with the sub-account of loss from the reference currency of the currency difference, for the amount obtained according to the valuation differential between historical exchange rate and closing exchange rate of the account; if the historical exchange flag has been set, the row will have no valuation;
 
 **Automatic**: amount type used in some automatic accounting procedures.
 
@@ -162,7 +162,7 @@ Be careful that the generic account present in the cause (e.g., "Italian Supplie
 
 ![](/img/it-it/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates/attributes-detail/image04.png)
 
-**Deductible Tax and VAT Sub-account (Imposta detr. e sottoconto IVA)**: amount type used to value the row relating to VAT with the deductible VAT amount and with the sub-account identified according to the ‘VAT Accounting Type’ associated primarily with the account holder of the registration or by default in the ‘General Accounting Parameters’.
+**Deductible Tax and VAT Sub-account**: amount type used to value the row relating to VAT with the deductible VAT amount and with the sub-account identified according to the ‘VAT Accounting Type’ associated primarily with the account holder of the registration or by default in the ‘General Accounting Parameters’.
 
 Setting not used in Italy, useful for foreign localizations, example Croatia, to link the VAT account to the rate used (example, if VAT rate of 10% is used, it will associate the account "Purchases VAT at 10%", therefore specific for that rate instead of a general account, e.g., "credit VAT", which is generic like in Italy for all rates).
 
@@ -184,13 +184,13 @@ It is fundamental, in fact, to check that the two causes, for purchase and giroc
 
 #### Document Type Options
 
-**Type/N. Document (Tipo/N. documento)**: setting this flag makes the document number field mandatory for saving the registration based on this cause.
+**Type/N. Document**: setting this flag makes the document number field mandatory for saving the registration based on this cause.
 
 **Document date**: setting this flag makes the document date field mandatory for saving the registration based on this cause.
 
-**Doc. No. = VAT Protocol (N. Doc. = Prot. IVA)**: setting this flag implies that the program will suggest the document number based on the progressive VAT protocol number. The field, therefore, should not be set for purchase registrations for which the document number and protocol have no reciprocal link; regarding sales, however, its use is recommended only for causes of registrations made manually directly in general accounting: setting this flag is discouraged for causes set in sales invoice types and used in invoice accounting.
+**Doc. No. = VAT Protocol**: setting this flag implies that the program will suggest the document number based on the progressive VAT protocol number. The field, therefore, should not be set for purchase registrations for which the document number and protocol have no reciprocal link; regarding sales, however, its use is recommended only for causes of registrations made manually directly in general accounting: setting this flag is discouraged for causes set in sales invoice types and used in invoice accounting.
 
-**VAT Protocol = Doc. No. (Prot. IVA = N. doc)**: setting this flag implies that the program will try to assign the VAT protocol based on the document number. The field should not be set for purchase registrations for which the document number and protocol have no reciprocal link; regarding sales, however, **the use is suggested for all causes set in sales invoice types and thus used in automatic invoice accounting**: the ability to use this setting depends on the certainty that the numbering of the invoice types is the same for all documents to be registered in the same VAT Register; otherwise, "gaps" (or "duplicates" leading to a save rejection) would be created in the protocol.
+**VAT Protocol = Doc. No.**: setting this flag implies that the program will try to assign the VAT protocol based on the document number. The field should not be set for purchase registrations for which the document number and protocol have no reciprocal link; regarding sales, however, **the use is suggested for all causes set in sales invoice types and thus used in automatic invoice accounting**: the ability to use this setting depends on the certainty that the numbering of the invoice types is the same for all documents to be registered in the same VAT Register; otherwise, "gaps" (or "duplicates" leading to a save rejection) would be created in the protocol.
 
 The utility of this function in the automatic accounting of invoices lies in the ability to account without paying attention to the protocol numbering order: for example, I can account for invoice no. 2 and then invoice no. 1 obtaining a correct protocol that associates invoice no. 1 to protocol 1, etc...
 
@@ -200,11 +200,11 @@ At the end of the VAT period (month or quarter), it will therefore be sufficient
 
 **Opening mat. val.**: the presence of this flag will cause the accounts creation tab to appear in the accounting registration that will use this cause; setting this flag is recommended for all VAT-type registrations and in general for managing the client/supplier aging report. The flag can also be set for causes that record a prepayment: in this case, an opposite-sign entry will be opened to be compensated later with the entries that will be created at the time of the accounting recording of the subsequent tax document.
 
-**Detail Movement in Accounts (Dett. mov. in partite)**: with this flag, the program will insert into the **notes of the accounts** the texts entered in the 'Movement Detail' field of the original accounting row of the account.![](/img/it-it/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates/recording-detail/image02.png)
+**Detail Movement in Accounts**: with this flag, the program will insert into the **notes of the accounts** the texts entered in the 'Movement Detail' field of the original accounting row of the account.![](/img/it-it/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates/recording-detail/image02.png)
 
 The flag is only active when the previous *Opening Accounts* flag has been set.
 
-**Opening for Each Movement Row (Apertura per ogni riga mov.)**: with this flag, the program will insert an account for each movement row where there is a sub-account with the open accounts management flag set. The flag is only active when the previous *Opening Accounts* flag has been set.
+**Opening for Each Movement Row**: with this flag, the program will insert an account for each movement row where there is a sub-account with the open accounts management flag set. The flag is only active when the previous *Opening Accounts* flag has been set.
 
 The flag can only be activated for non-VAT causes (e.g., opening accounts) for each movement row supplier or customer opens an account and reports the payment details taken from the registry (needed in case multiple rows are opened for a single customer or supplier).
 
@@ -212,21 +212,21 @@ The flag can only be activated for non-VAT causes (e.g., opening accounts) for e
 
 **Use historical change**: with this flag, available only if the closing accounts has been set, the application will proceed to close the accounts with the historical opening exchange rate, without any automatic recording of exchange differences (allowing therefore to manage them possibly manually).
 
-**Group payments in journal (Ragg. pag. in libro giornale)**: with this flag, available only if the closing accounts have been set, the application will group in a single accounting movement all the closing account amounts linked to the same sub-account (in particular, it will group movements of the same sign and same currency).
+**Group payments in journal**: with this flag, available only if the closing accounts have been set, the application will group in a single accounting movement all the closing account amounts linked to the same sub-account (in particular, it will group movements of the same sign and same currency).
 
-**Exclude from accrued commissions (Escludi da provv. maturate)**: with this flag, available only if the closing accounts have been set, the closures made with this accounting cause will not be considered valid for the calculation of accrued commissions for agents with 'Payment made' calculation type.
+**Exclude from accrued commissions**: with this flag, available only if the closing accounts have been set, the closures made with this accounting cause will not be considered valid for the calculation of accrued commissions for agents with 'Payment made' calculation type.
 
-**Document Reference for Account in Payment (Rif. doc. partita in pag.)**: with this flag, available only if the closing accounts have been set, the application will proceed to manage codes (8) and (9) for recording the references of account closures in the detail descriptions of the movements.
+**Document Reference for Account in Payment**: with this flag, available only if the closing accounts have been set, the application will proceed to manage codes (8) and (9) for recording the references of account closures in the detail descriptions of the movements.
 
-**Account Compensation (Compens. partite)**: with this flag, available only if both opening and closing accounts flags have been set, the procedure will activate the possibility of proceeding with an account compensation within the registration based on this cause: this combination of flags is recommended for all causes linked to credit note-type documents.
+**Account Compensation**: with this flag, available only if both opening and closing accounts flags have been set, the procedure will activate the possibility of proceeding with an account compensation within the registration based on this cause: this combination of flags is recommended for all causes linked to credit note-type documents.
 
-**Compensation Warning (Avviso comp.)**: with this flag, when saving the accounting registration, a control will be activated that warns the user about the presence of accounts to be compensated.
+**Compensation Warning**: with this flag, when saving the accounting registration, a control will be activated that warns the user about the presence of accounts to be compensated.
 
 **Group mat. val.**: the flag activates the management of account groupings instead of the standard opening/closing account management, through a specific registration tab for recording in accounting.
 
 **Create group**: the flag, if active and in combination with the previous flag, automatically creates an account group in the account groupings, into which the entries of the registration flow (to be activated in the purchase/sale invoice causes).
 
-**Account Grouping – Payment Type (Ragg. partite – tipo pagamento)**: it is the type of payment to be assigned to the movements of the account groupings recorded with this cause.
+**Account Grouping – Payment Type**: it is the type of payment to be assigned to the movements of the account groupings recorded with this cause.
 
 **Projects**: (ex Commitments): activating this flag will display the *Project* field in the header of the registration in addition to the detail fields in the body of the registration for linking projects (commitments) with the detailed accounting movements.
 
@@ -244,7 +244,7 @@ For further details see **[here](/docs/finance-area/ledger-records/records/ledge
 
 **Update balances**: flag set by default.
 
-**Description movement in journal and payments (Descr. mov. in giornale e pagamenti)**: with this flag, the procedure will copy the general description of the registration into all detail descriptions of movements and also into payment notes.
+**Description movement in journal and payments**: with this flag, the procedure will copy the general description of the registration into all detail descriptions of movements and also into payment notes.
 
 **Commissions**: the flag activates a specific tab within the accounting registrations for managing commission calculation data from the administration module (this recently introduced module operates as an alternative to commission management from the sales module but does not replace it, as the latter remains active).
 
@@ -268,9 +268,9 @@ For further details see **[here](/docs/finance-area/ledger-records/records/ledge
 
 **Progressive number**: the presence of this flag will display the Row Number field in the journal section: it is advisable to include this flag for particularly long causes, in order to allow the user to sort the records in a fixed manner as per the cause (e.g., payroll recording).
 
-**Manual Account Reference (Rif. manuale partite)**: the presence of this flag will display the Manual Account Reference field in the journal section. The field is indicated for manually linking accounting movements without going through account management. In practice, it is a free notes field.
+**Manual Account Reference**: the presence of this flag will display the Manual Account Reference field in the journal section. The field is indicated for manually linking accounting movements without going through account management. In practice, it is a free notes field.
 
-**Extraordinary Operations (Operazioni straordinarie)**: the presence of this flag will display the eponymous field (of type bit or flag) to highlight certain accounting movements (particularly, for example, a cost) as *extraordinary* and then allow easy searching or extraction within a print of the same.
+**Extraordinary Operations**: the presence of this flag will display the eponymous field (of type bit or flag) to highlight certain accounting movements (particularly, for example, a cost) as *extraordinary* and then allow easy searching or extraction within a print of the same.
 This capability proves useful following the changes to the budget schemes introduced with Directive 2013/34 (Legislative Decree 139/2015). These changes had eliminated the "extraordinary" area of the Income Statement. As a result, all "exceptional" components cannot be represented by accounts such as extraordinary income but must be recorded directly in the account to which they refer, e.g., the expense (by nature). However, the need arises to highlight such cost/revenue components for necessary detail in notes and for other potential fiscal reasons, such as fiscal reductions of costs in income tax declarations, etc.
 
 **Fiscal operation type**: makes visible a combo box with which to mark the accounting row to support a subsequent (external) processing of the annual VAT declaration, where it is required to indicate whether the operation corresponds to:
@@ -297,7 +297,7 @@ It is dedicated to setting the order in which to present the expected tabs, thro
 
 **Lock deleting of records with paid maturity values**: with this flag, it will not be possible to delete registrations that have at least one account with a linked payment.
 
-**Block registration if the value of the accounts is not equal to the accounting movement (Blocca registrazione se il valore delle partite non è uguale al movimento contabile)**: the presence of this flag will require the procedure to block the saving of registrations for which the value of the accounting movements does not match the movement values of the accounts (when opening and closing accounts): if not set, the procedure will still issue a warning message about the presence of a difference. The check is performed on all sub-accounts that have set the *Opening accounts* flag in the chart of accounts.
+**Block registration if the value of the accounts is not equal to the accounting movement**: the presence of this flag will require the procedure to block the saving of registrations for which the value of the accounting movements does not match the movement values of the accounts (when opening and closing accounts): if not set, the procedure will still issue a warning message about the presence of a difference. The check is performed on all sub-accounts that have set the *Opening accounts* flag in the chart of accounts.
 
 **Block record if the document total is different from the total of VAT data**: the presence of this flag will require the procedure to block the saving of registrations for which the total value of the VAT movements does not match the totals set in the header of the registration: if not set, the procedure will still issue a warning message.
 
@@ -307,23 +307,23 @@ It is dedicated to setting the order in which to present the expected tabs, thro
 
 **Block recording if the VAT reference no. order is not respected**: the presence of this flag will require the procedure to block the saving of registrations for which the chronological order of protocol is not respected: in particular, with this flag, the procedure will retrieve protocol numbers only if a valid registration date has been set for the number itself. If the flag is not set, the procedure will still issue a warning message about the lack of protocol order: it is also important to remember that the default VAT register print does not allow printing definite VAT registers that have gaps in numbering or do not follow the correct protocol order.
 
-**Separate Management of Cdc/Cdp (Gestione separata Cdc/Cdp)**: this flag, active only if the cause manages both cost centers and profit centers, will allow economic accounting movements to be assigned to both cost centers and profit centers. If not set, instead, the movement can only be assigned to one of the two sections.
+**Separate Management of Cdc/Cdp**: this flag, active only if the cause manages both cost centers and profit centers, will allow economic accounting movements to be assigned to both cost centers and profit centers. If not set, instead, the movement can only be assigned to one of the two sections.
 
-**Automatic recalculation of CdC, CdP, and projects (Ricalcolo automatico CdC, CdP e commesse)**: the flag will also be reflected in the accounting registrations based on this cause: the meaning is to either perform or not perform automatic recalculation of the analytical sections of cost centers, profit centers, and the projects once editing a previously saved accounting registration. At the time of entering a new registration, until its first saving, updating of these sections will always be automatic in accordance with the default settings defined.
+**Automatic recalculation of CdC, CdP, and projects**: the flag will also be reflected in the accounting registrations based on this cause: the meaning is to either perform or not perform automatic recalculation of the analytical sections of cost centers, profit centers, and the projects once editing a previously saved accounting registration. At the time of entering a new registration, until its first saving, updating of these sections will always be automatic in accordance with the default settings defined.
 
-**Block registration if the value of the Cdc/Cdp is not equal to the accounting movement (Blocca registrazione se il valore dei Cdc/Cdp non è uguale al movimento contabile)**: the presence of this flag will require the procedure to block the saving of registrations for which the total value of the analytical movements of cost and profit centers does not match the economic amounts recorded in the general accounting section: if the flag is not set, a warning message will still be executed indicating the mismatch of values.
+**Block registration if the value of the Cdc/Cdp is not equal to the accounting movement**: the presence of this flag will require the procedure to block the saving of registrations for which the total value of the analytical movements of cost and profit centers does not match the economic amounts recorded in the general accounting section: if the flag is not set, a warning message will still be executed indicating the mismatch of values.
 
-**Group VAT in the journal (Raggruppa Iva in libro giornale)**: the presence of this flag will require the procedure to group in the journal the VAT rows assigned to the same accounting sub-account (and to the same division).
+**Group VAT in the journal**: the presence of this flag will require the procedure to group in the journal the VAT rows assigned to the same accounting sub-account (and to the same division).
 
-**Block saving with duplicate document number (Blocca salvataggio con numero documento duplicato)**: the presence of this flag, set by default, will require the procedure to block the saving of accounting registrations with the same document number, same year, same document type, and account holder in the header of the registration.
+**Block saving with duplicate document number**: the presence of this flag, set by default, will require the procedure to block the saving of accounting registrations with the same document number, same year, same document type, and account holder in the header of the registration.
 
-**Background Colour (Background colour)**: set in this field the background color to display in video searches based on this cause. The use of colors can be useful to identify the type of movement without having to read descriptions or cause codes.
+**Background Colour**: set in this field the background color to display in video searches based on this cause. The use of colors can be useful to identify the type of movement without having to read descriptions or cause codes.
 
-**Foreground Colour (Foreground colour)**: set in this field the color of the text to display in video searches based on this cause. The use of colors can be useful to identify the type of movement without having to read descriptions or cause codes.
+**Foreground Colour**: set in this field the color of the text to display in video searches based on this cause. The use of colors can be useful to identify the type of movement without having to read descriptions or cause codes.
 
 **Sample text**: the field displays the result of the color combination set.
 
-**Italic Font (Carattere corsivo)**: set in this field the displaying of characters in italics for this cause in video searches: it can be helpful to identify the type of movement without having to read descriptions or cause codes.
+**Italic Font**: set in this field the displaying of characters in italics for this cause in video searches: it can be helpful to identify the type of movement without having to read descriptions or cause codes.
 
 **Bold**: set in this field the displaying of characters in bold for this cause in video searches: it can be helpful to identify the type of movement without having to read descriptions or cause codes.
 

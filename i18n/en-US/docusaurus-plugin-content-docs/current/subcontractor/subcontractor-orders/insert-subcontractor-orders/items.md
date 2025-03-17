@@ -1,13 +1,13 @@
 ---
-title: Items (Articoli)
+title: Items
 sidebar_position: 3
 ---
 
 The form consists of a grid, within which the user can manually enter the products requested from the subcontractor. It is possible to enter coded items and notes.
 
-It is already filled in if the order comes from *General Schedule* or *MRP Processing (Elaborazione MRP)*, still leaving the user the option to modify it and/or add additional materials to the list of components of the planned order. It is noteworthy that if the planned order is for purchasing, the Materials tab is inactive.
+It is already filled in if the order comes from *General Schedule* or *MRP Processing*, still leaving the user the option to modify it and/or add additional materials to the list of components of the planned order. It is noteworthy that if the planned order is for purchasing, the Materials tab is inactive.
 
-## Item Data (Dati articolo)
+## Item Data 
 
 In this tab, the information related to the selected line in the items grid is displayed, including:
 

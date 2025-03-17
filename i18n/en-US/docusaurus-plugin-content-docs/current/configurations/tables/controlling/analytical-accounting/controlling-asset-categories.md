@@ -3,7 +3,7 @@ title: Fixed asset category for controlling
 sidebar_position: 2
 ---
 
-The form can be found at the path: **Tables > Controlling > Analytical Accounting > Fixed asset category for controlling (Tabelle > Controlling > Contabilità analitica > Categorie cespiti per il controllo)**
+The form can be found at the path: **Tables > Controlling > Analytical Accounting > Fixed asset category for controlling**
 
 :::tip Note
 This table is dedicated to companies that have activated *Controlling* management, but it is not mandatory if accounting logic for valuating depreciation in management control is to be applied.
@@ -17,7 +17,7 @@ In this table, we identify the various calculation types that we want to use in 
 
 - **Description** of the category
 
-- **COST SUBACCOUNT (SOTTOCONTO DI COSTO)** and **FUND SUBACCOUNT (SOTTOCONTO DEL FONDO)** to use: these could be the same subaccounts associated with accounting asset categories, in order to perform year-end adjustments between the two calculation logics, or specific controlling subaccounts that are not used in accounting.
+- **COST SUBACCOUNT** and **FUND SUBACCOUNT** to use: these could be the same subaccounts associated with accounting asset categories, in order to perform year-end adjustments between the two calculation logics, or specific controlling subaccounts that are not used in accounting.
 
 :::tip Note
 In cases where it is desired to use specific subaccounts in controlling, separate from those of general accounting, it is recommended to define a specific *Account type* with the *Controlling* flag set, as these subaccounts cannot even mistakenly be used in general accounting entries.
@@ -28,7 +28,7 @@ In cases where it is desired to use specific subaccounts in controlling, separat
     - *Objective value*, given off-book
     - *Repurchase value*, a specific field for controlling
 
-- **CALCULATION TYPE (TIPO DI CALCOLO)** can be of 5 different types:  
+- **CALCULATION TYPE** can be of 5 different types:  
     - *Percent Completed*: according to the percentage for controlling set in the individual asset
     - *Perpetual percentage*: like the previous one but without checks on the remaining balance to be depreciated
     - *Quantity*: for assets that have a useful life related to a theoretical quantity produced (e.g. a mold that can produce a certain number of impressions)
