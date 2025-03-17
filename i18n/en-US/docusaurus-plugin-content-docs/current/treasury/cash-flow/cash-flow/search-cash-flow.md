@@ -5,11 +5,11 @@ sidebar_position: 1
 
 LINK:
 
-**[Preliminary tables to manage (Tabelle preliminari da gestire)](/docs/treasury/cash-flow/general-overview)**
+**[Preliminary tables to manage](/docs/treasury/cash-flow/general-overview)**
 
-**[Automatic processing (Elaborazione automatica)](/docs/treasury/cash-flow/procedures)**
+**[Automatic processing](/docs/treasury/cash-flow/procedures)**
 
-**[Print (Stampa)](/docs/treasury/cash-flow/reports)**
+**[Report](/docs/treasury/cash-flow/reports)**
 
  
 
@@ -19,7 +19,7 @@ From this form, it is possible to search for and modify previous entries.
 
 It is also possible to enter a new processing, which in this case would be completely manual (and therefore of limited practical use).
 
-It is recommended to create the cash flow from the **[Automatic cash flow generation (Generazione automatica cash flow)](/docs/treasury/cash-flow/procedures)** procedure.
+It is recommended to create the cash flow from the **[Automatic cash flow generation](/docs/treasury/cash-flow/procedures)** procedure.
 
 
 #### Specific buttons

@@ -1,5 +1,5 @@
 ---
-title: Introduction (Introduzione)
+title: Introduction 
 sidebar_position: 1
 ---
 
@@ -9,7 +9,7 @@ It allows for precise monitoring of cash inflows and outflows, helping companies
 
 The module also includes the ability to manually enter extra-accounting deadlines related to data not present in the system, such as a future projection of employee salaries, a repayment plan for a debt already written off from accounting, and so on.
 
-**Main Features (Funzionalità Principali)**:
+**Main Features**:
 
 - Automatic generation of cash flow with the ability to include or exclude types of financial flow enabled by toggling a simple flag.
 - Date filtering options for each individual flow.
@@ -18,17 +18,17 @@ The module also includes the ability to manually enter extra-accounting deadline
 - Option to read the analytical printout grouped by supporting bank.
 - Ability to define a due date for each flow, parallel to the natural due date.
 
-**List of tables necessary for managing the module (Elenco tabelle necessarie per gestire il modulo):**
+**List of tables necessary for managing the module:**
 
-[Types of financial account (Tipi conto finanziario)](/docs/configurations/tables/treasury/cash-flow-module-tables/financial-account-types),  
+[Financial Account Types](/docs/configurations/tables/treasury/cash-flow-module-tables/financial-account-types),  
 
-[Types of flow (Tipi flusso)](/docs/configurations/tables/treasury/cash-flow-module-tables/flux-types),  
+[Flow Type](/docs/configurations/tables/treasury/cash-flow-module-tables/flux-types),  
 
-[Types of due date (Tipi scadenza)](/docs/configurations/tables/treasury/cash-flow-module-tables/due-date-types),  
+[Due Date Types](/docs/configurations/tables/treasury/cash-flow-module-tables/due-date-types),  
 
-[Types of order/note/invoice (Tipi ordine/bolla/fattura)](/docs/configurations/tables/treasury/cash-flow-module-tables/order-dn-invoice-types),  
+[Types of order/note/invoice](/docs/configurations/tables/treasury/cash-flow-module-tables/order-dn-invoice-types),  
 
-[Customer/vendor/agent registry (Anagrafica cliente/fornitore/agente)](/docs/configurations/tables/treasury/cash-flow-module-tables/customer-vendor-agent-register).
+[Customer/vendor/agent registry](/docs/configurations/tables/treasury/cash-flow-module-tables/customer-vendor-agent-register).
 
 Furthermore, for each type of financial flow that is activated, it is necessary to manage within the related tables, such as Types DDT, Types of orders (customers and suppliers), etc., which specific types of documents should be monitored.
 

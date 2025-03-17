@@ -7,25 +7,25 @@ Normally, the cash flow simulation is created through this screen, which allows 
 
 Each new processing will save the calculation associated with the **Number** field, which is assigned automatically. It is also possible to associate a detailed **Description**.
 
-*Specific fields (Campi specifici)*
+*Specific fields*
 
-**Type / Flow Description (Tipo / Descrizione flusso):** taken from the Types of Flow table
+**Type / Flow Description:** taken from the Types of Flow table
 
-**From Date / To Date (Da Data / A Data):** Date range for filtering that works according to the specific logic of each type of flow (see below)
+**From Date / To Date:** Date range for filtering that works according to the specific logic of each type of flow (see below)
 
-**Enabled (Abilitato):** flag that manages the actual use of the corresponding type of flow in the calculation that is about to be run
+**Enabled:** flag that manages the actual use of the corresponding type of flow in the calculation that is about to be run
 
-**Provisional records (Registrazioni provvisorie):** considers or not the data related to accounting records in *Provisional* status
+**Provisional records:** considers or not the data related to ledger records in *Provisional* status
 
-**Not payable (Non pagabili):** also considers open items in *Not payable* status
+**Not payable:** also considers open items in *Not payable* status
 
-**Use remaining qty (Usa q.ta residua):** allows considering the orders according to the remaining quantity to be fulfilled
+**Use remaining qty:** allows considering the orders according to the remaining quantity to be fulfilled
 
-**Use in current availability (Usa nella disp. attuale):** reads the effects in the portfolio that are PRESENTED and not overdue with due dates later than today and displays them as of today in the CURRENT account present in the presentation list (even though the accounting credit will only be after collection)
+**Use in the disp. current:** reads the effects in the portfolio that are PRESENTED and not overdue with due dates later than today and displays them as of today in the CURRENT account present in the presentation list (even though the accounting credit will only be after collection)
 
-**Use in due date in the report (Usa in scad. nel castelletto):** allows considering the effects presented with a good-end condition. In particular, it uses the supporting bank account for the good-end condition (s.b.f.) inserted in the presentation list (instead of the customer account as it does when the effect is only *Issued*) and moves it to debit based on what is presented on the various due dates of the effects included in the list.
+**Use on time. in the headframe:** allows considering the effects presented with a good-end condition. In particular, it uses the supporting bank account for the good-end condition (s.b.f.) inserted in the presentation list (instead of the customer account as it does when the effect is only *Issued*) and moves it to debit based on what is presented on the various due dates of the effects included in the list.
 
-:::danger WARNING (ATTENZIONE)
+:::danger WARNING
 The effects inserted in the list will only be visible if they have the **Accounted** flag active internally (since the accounting of the issuance has been carried out). Since it is still possible to include them in the list for presentation to the bank even if not accounted for, caution is advised.
 
 Another important condition is the filter that excludes (regardless of the filtering date set before running the calculation) the effects with due dates earlier than "today" or the date of processing the cash flow in question.
@@ -33,35 +33,35 @@ Another important condition is the filter that excludes (regardless of the filte
 
 If enabled in relation to the **Advance** flow type, it will detect the amounts of non-accounted advance invoice lists for the amount advanced on the bank account, with a date equal to the advanced due date.
 
-**WARNING: (ATTENZIONE:)**
+**WARNING:**
 If this option is selected, supporting accounts used for the good-end condition must NOT be included in the initial financial consistency (via the management of *financial account types*), otherwise the data (in terms of positive cash flow) will be duplicated, thus the result will be distorted and unreliable.
 
 
-*Detail of the logics applied to flow types (Dettaglio delle logiche applicate ai tipi flusso)*:
+*Detail of the logics applied to flow types*:
 
-**Accounting balance (Saldo contabile):** the date range is used to calculate the accounting balance according to the accounting registration date;
+**Ledger balance:** the date range is used to calculate the ledger balance according to the accounting registration date;
 
-**Items (Partite):** the date range is used to filter by due dates of the items. There are then flags to consider items linked to provisional records as well as non-payable items;
+**Mat. values:** the date range is used to filter by due dates of the items. There are then flags to consider items linked to provisional records as well as non-payable items;
 
-**Customer/Supplier Orders (Ordini clienti/fornitori):** the date range filters by order date. Only types with the *cash flow* flag set, printed and confirmed, are considered. It is recommended to set the *use remaining qty* flag to simulate an order based on the remaining quantity to deliver/receive. Hypothetical due dates are calculated based on the type/payment solution settings set in the header, taking as the start date the delivery date of the line (if the delivery date of the order header is missing) or today's date if this is before today;
+**Customer/Supplier Orders:** the date range filters by order date. Only types with the *cash flow* flag set, printed and confirmed, are considered. It is recommended to set the *use remaining qty* flag to simulate an order based on the remaining quantity to deliver/receive. Hypothetical due dates are calculated based on the type/payment solution settings set in the header, taking as the start date the delivery date of the line (if the delivery date of the order header is missing) or today's date if this is before today;
 
-**Purchase/Sale DDT (DDT di acquisto/vendita):** the date range filters by DDT date. Only types set for 'cash flow', printed or checked, not already valued in the invoice are considered. Hypothetical due dates are calculated based on the type/payment solution settings set in the header, starting from the DDT date;
+**Purchase/Sale DDT:** the date range filters by DDT date. Only types set for 'cash flow', printed or checked, not already valued in the invoice are considered. Hypothetical due dates are calculated based on the type/payment solution settings set in the header, starting from the DDT date;
 
-**Purchase/Sale Invoices (Fatture di acquisto/vendita):** the date range filters by invoice due date. Non-proforma documents that are printed or checked and not already accounted for are considered;
+**Purchase/Sale Invoices:** the date range filters by invoice due date. Non-proforma documents that are printed or checked and not already accounted for are considered;
 
-**Job Orders (Ordini di conto lavoro):** the date range filters by order date, considering only printed unstamped orders. Hypothetical due dates are created based on the unreturned balance and the cost of work performed;
+**Subcontractor orders:** the date range filters by order date, considering only printed unstamped orders. Hypothetical due dates are created based on the unreturned balance and the cost of work performed;
 
-**Job Return (Rientri di conto lavoro):** the date range filters by return date, considering only printed un-invoiced returns.
+**Subcontractor Returns:** the date range filters by return date, considering only printed un-invoiced returns.
 
 Returns must be generated by fulfilling the job order and not inserted manually; otherwise, they will not be visible.
 
-**Extracontable (Extracontabile):** the date range filters by extracontable due date.
+**Off-balance:** the date range filters by off-balance due date.
 
-The execution parameters are stored: only the final date of the accounting balance flow type is always proposed as today's date upon opening. Once the cash flow description is set, the calculation button can be pressed. Considering the movements of orders, for which the system must simulate line by line, the processing may be particularly long depending on the amount of data present in the set filter. Once the processing is complete, it will be possible to open the cash flow through the related management button.
+The execution parameters are stored: only the final date of the ledger balance flow type is always proposed as today's date upon opening. Once the cash flow description is set, the calculation button can be pressed. Considering the movements of orders, for which the system must simulate line by line, the processing may be particularly long depending on the amount of data present in the set filter. Once the processing is complete, it will be possible to open the cash flow through the related management button.
 
-**Active Portfolio (Portafoglio attivo):** WARNING: regarding the flow of SBF lists, care must be taken with effects presented but not accounted for (accounting of issuance); the situation can arise, for example, by issuing them from invoice due dates and then including them in the list without accounting for the issuance. In this situation, the effects will not be included in the cash flow. Another condition to consider is that regardless of the filter, the effect due date must be greater than or equal to "today" (cash flow processing date).
+**Active Portfolio:** WARNING: regarding the flow of SBF lists, care must be taken with effects presented but not accounted for (accounting of issuance); the situation can arise, for example, by issuing them from invoice due dates and then including them in the list without accounting for the issuance. In this situation, the effects will not be included in the cash flow. Another condition to consider is that regardless of the filter, the effect due date must be greater than or equal to "today" (cash flow processing date).
 
-| Function (Funzione) | Meaning (Significato) |
+| Function | Meaning |
 | --- | --- |
-| Creation (Creazione) | Executes the cash flow generation procedure according to the settings entered in the screen. |
-| Modification (Modifica) | Opens the created cash flow for modification. |
+| Creation | Executes the cash flow generation procedure according to the settings entered in the screen. |
+| Modification | Opens the created cash flow for modification. |
