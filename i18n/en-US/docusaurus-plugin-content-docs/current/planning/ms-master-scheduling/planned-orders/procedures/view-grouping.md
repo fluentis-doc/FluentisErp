@@ -13,4 +13,4 @@ To *open* the details of a grouping, simply select it and double-click with the 
 
 Entering the view of the grouping you chose to select, a new form will open, consisting of an initial part with fields summarizing the main data of the *Grouping* and a results grid where you can view all the *Grouping Orders*.
 
-For details on the common functionality of forms, refer to the link [Common features, buttons, and fields (Funzionalità, pulsanti e campi comuni)](/docs/guide/common).
+For details on the common functionality of forms, refer to the link [Custom features, buttons, and fields (Funzionalità, pulsanti e campi comuni)](/docs/guide/common).

@@ -74,7 +74,7 @@ If the planned order is for purchase, the *Materials* tab is inactive.
 **Use MU**: in this field, the possible alternative unit of measure of the item is entered;  
 **Usage Date**: coincides with the planned start date of the planned order (modifying the first automatically changes this one as well);  
 **Qty. Used**: represents the unitary quantity required for this item (as specified by the BOM) which can be modified;  
-**Total Qty.**: represents the quantity obtained by multiplying the *Utilization Qty (Qtà d'impiego)* by the *Quantity to Produce (Qtà da produrre)*;  
+**Total Qty.**: represents the quantity obtained by multiplying the *Qty used* by the *Quantity to be prod*;  
 **% Scrap**: this box contains or retrieves from the bill of materials the possible % of scrap for this item;  
 **Phase/Subphase**: it is possible to manually enter the relevant phase and subphase and thus assign the selected material to a particular phase of the item's processing; these are automatically proposed from the work cycle;            
 **Available Qty.**: this field shows the available quantity of the item at the employment date.
@@ -174,4 +174,4 @@ In this tab, the notes/documents related to the selected processing phase in the
 
 For an in-depth description of extra data, refer to the article [Extra data](/docs/configurations/utility/extra-data/extradata/new-extradata-simple).
 
-For details on the common functionality of forms, refer to the link [Common functionalities, buttons, and fields](/docs/guide/common).
+For details on the common functionality of forms, refer to the link [Custom features, buttons, and fields](/docs/guide/common).
