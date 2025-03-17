@@ -5,7 +5,7 @@ sidebar_position: 2
 
 Dalla form di ricerca è possibile ricercare ed inserire, tramite il tasto **Nuovo**, le registrazioni extra-contabili di Budget.
 
-Per inserire un nuovo movimento è obbligatorio selezionare un **Area** di analisi (che si consiglia di codificare adeguatamente, ad esempio *Budget* per distinguerla, ad esempio, dal *Consuntivo* o *Simulazione* ecc....)
+Per inserire un nuovo movimento è obbligatorio selezionare un [**Area**](/docs/controlling/controlling-parametrization/controlling-specific-settings/area-types-areas) di analisi (che si consiglia di codificare adeguatamente, ad esempio *Budget* per distinguerla, ad esempio, dal *Consuntivo* o *Simulazione* ecc....)
 
 Si procede selezionando una causale contabile (analogamente a quanto previsto per i movimenti contabili) ed una data.
 E' prevista l'indicazione della valuta di riferimento, Euro o altra divisa.
