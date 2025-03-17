@@ -1,70 +1,70 @@
 ---
-title: MRP
+title: MRP (MRP)
 sidebar_position: 3
----
+--- 
 
-:::important A cosa serve
-La funzione **MRP** (**Manufacturing Resourse Planning**) di Fluentis permette agli utenti di analizzare la disponibilità dei materiali e delle risorse produttive in base alla pianificazione della produzione. Attraverso questa procedura, l'operatore riceve suggerimenti su come ottimizzare la gestione dei materiali, comprese le indicazioni per anticipare forniture, integrare quantità necessarie o annullare ordini superflui. L'MRP di Fluentis tiene conto dei vincoli di produzione, delle materie prime, dei semilavorati disponibili o ordinati, consentendo così un controllo efficiente di ogni commessa attiva. Questo sistema mira a ottimizzare le scorte aziendali, riducendo i livelli di magazzino e migliorando l'efficienza operativa
-:::
+:::important What is it for (A cosa serve)
+The **MRP** (**Manufacturing Resource Planning**) function of Fluentis allows users to analyze the availability of materials and production resources based on production planning. Through this procedure, the operator receives suggestions on how to optimize material management, including guidance for anticipating supplies, integrating necessary quantities, or canceling unnecessary orders. Fluentis MRP takes into account production constraints, raw materials, and available or ordered semi-finished products, thus allowing efficient control of each active job. This system aims to optimize company inventories, reducing stock levels and improving operational efficiency.
+::: 
 
-Tale procedura permette all’utente di avere l’analisi della corretta disponibilità dei materiali e delle risorse produttive in funzione della pianificazione di produzione. Attraverso questa elaborazione l’operatore può ricevere una serie di suggerimenti relativi all’anticipo di alcune forniture di materiali, all’integrazione di quantità necessarie, piuttosto che provvedere ad annullare ordini di articoli inutili in modo da rendere il più agevole possibile il controllo e la gestione delle operazioni.
-L’MRP realizza una pianificazione di produzione tenendo conto dei diversi vincoli di produzione, delle materie prime e semilavorati disponibili e di quelli ordinati.
-Grazie a questa procedura l’operatore è in grado di analizzare la copertura produttiva di ogni commessa attiva, gestendo e coordinando tutti i processi relativi all’acquisizione, alla produzione e alla consegna del prodotto finito.
-Il principio base del sistema di fabbisogno dei materiali di produzione è l’ottimizzazione delle scorte sulla base delle esigenze aziendali, questo si riflette in un abbassamento dei livelli delle scorte ed in un conseguente aumento di efficienza.
-In sostanza, attraverso gli algoritmi di questa funzione, l’MRP di Fluentis è in grado di conoscere l’impegno di ogni materiale presente a magazzino e la disponibilità alla data interessata. 
+This procedure allows the user to have an analysis of the correct availability of materials and production resources based on production planning. Through this processing, the operator can receive a series of suggestions related to anticipating some material supplies, integrating necessary quantities, or canceling orders for unnecessary items in order to make the control and management of operations as smooth as possible. The MRP performs production planning while considering different production constraints, as well as available and ordered raw materials and semi-finished products. Thanks to this procedure, the operator is able to analyze the production coverage of each active job, managing and coordinating all processes related to acquisition, production, and delivery of the finished product. The basic principle of the material requirements planning system is the optimization of stocks based on business needs, which results in reduced stock levels and a consequent increase in efficiency. Essentially, through the algorithms of this function, Fluentis MRP is able to understand the commitment of each material present in inventory and the availability on the specified date. 
 
 ### M.R.P.
 
-In questo tab vengono visualizzati i risultati dell'elaborazioni MRP lanciate precedentemente. 
+In this tab, it is possible to consult the results by selecting the processing from those present in the history.    
+It is noted that processes are maintained in history for the number of days indicated in the field **MRP History Days to Keep** (Giorni storico MRP da mantenere), present in the [Material Requirements Parameters](/docs/configurations/parameters/production/resource-requirements-parameters).      
+This form consists of a filter area where it is possible to filter by item, type of supply, or even by the type of suggestion provided by the procedure.  
+On the right side, there is a list of all the items that the procedure has processed, for each of which the proposed actions are also indicated.    
+Once one of these rows is selected, all the information related to the actions to be taken is displayed in the central table, where availability, requirement, and any confirmed requirement are reported if the procedure has been launched with the **Confirmed Production Demand Difference (Differenza domanda di produzione confermata)** flag active; while in the lower table, we find all the information related to all documents related to the item, indicating demand, offer, and availability on the specified date.    
+By selecting a scheduled order created by the MRP procedure, it is possible to release it by pressing the **Release Scheduled Orders (Rilascio ordini pianificati)** button.
 
-### Commessa
+### Job (Commessa)
 
-In questo tab è possibile filtrare e selezionare le commesse di produzione che si desidera processare, in modo da  operare in modo parziale su alcune commesse selezionate o in modo globale su tutto l’insieme delle commesse presenti in produzione.
+In this tab, it is possible to filter and select the production jobs that you want to process, so as to operate partially on some selected jobs or globally on all jobs present in production.
 
-### Parametri
+### Parameters (Parametri)
 
-Attraverso questo tab vengono settati tutti i parametri generali che riguardano la procedura MRP. Alcune impostazioni presente in questo tab vengono riprese dalla finestra [Parametri MRP](/docs/configurations/parameters/production/mrp-parameters/mrp-parameters-intro) e sono relative allo specifico articolo. 
+Through this tab, all the general parameters concerning the MRP procedure are set. Some settings present in this tab are taken from the [MRP Parameters](/docs/configurations/parameters/production/mrp-parameters/mrp-parameters-intro) window and are related to the specific item. 
 
-**Schedulazione**: 
-> **Schedulare fino al**: indica la data di fine schedulazione;    
-> **Flag Materiali**: se abilitato, vengono considerati i materiali nella pianificazione;    
-> **Flag Risorse**: se abilitato, vengono considerate le risorse nella pianificazione;    
-> **Flag Ordini pianificati di acquisto**: se abilitato, vengono considerati gli ordini pianificati di acquisto nella pianificazione;    
-> **Flag Ordini pianificati di produzione**: se abilitato, vengono considerati gli ordini pianificati di produzione nella pianificazione;    
-> **Flag Ordini pianificati di conto lavoro**: se abilitato, vengono considerati gli ordini pianificati di conto lavoro nella pianificazione;   
+**Planning (Pianificazione)**: 
+> **Plan until (Pianificare fino al)**: indicates the date by which the system should consider the entered documents. This is proposed as the last day of the year if the current date is until June 30 of the current year; otherwise, after July 1, the last day of the following year is proposed.     
+> **Materials Flag (Flag Materiali)**: if enabled, the materials to be consumed are listed in the created scheduled orders. If the flag is not active, scheduled orders will still be created but without the materials inside;       
+> **Resources Flag (Flag Risorse)**: if enabled, the processing phases are also listed in the created scheduled orders. If the flag is not active, scheduled orders will still be created but without the processing phases inside;            
+> **Planned Purchase Orders Flag (Flag Ordini pianificati di acquisto)**: if enabled, planned purchase orders are considered in planning;    
+> **Planned Production Orders Flag (Flag Ordini pianificati di produzione)**: if enabled, planned production orders are considered in planning;    
+> **Planned Job Orders Flag (Flag Ordini pianificati di conto lavoro)**: if enabled, planned job orders are considered in planning;   
 
-**Per i documenti privi di date necessarie:**    
-> **Ordini fornitori e richieste di acquisto**: è possibile decidere di non considerare gli articoli privi di data prevista ricevimento, oppure di considerare come data di prevista consegna quella indicata manualmente in questa sezione;    
-> **Ordini clienti**: è possibile decidere di non considerare gli articoli privi di data prevista ricevimento, oppure di considerare come data di prevista consegna quella indicata manualmente in questa sezione;    
+**For documents without necessary dates:**    
+> **Supplier Orders and Purchase Requests (Ordini fornitori e richieste di acquisto)**: it is possible to decide not to consider items without a scheduled delivery date, or to consider the manually indicated delivery date in this section;    
+> **Customer Orders (Ordini clienti)**: it is possible to decide not to consider items without a scheduled delivery date, or to consider the manually indicated delivery date in this section;    
 
-**Considera le disponibilità provenienti da**:    
-> **Acquisti**: se attivato, il flag consente di fare in modo che i documenti dell’area gestionale *Acquisti* debbano essere presi in considerazione durante l’elaborazione della procedura MRP;   
-> **Vendite**: se attivato, il flag consente di fare in modo che i documenti dell’area gestionale *Vendite* debbano essere presi in considerazione durante l’elaborazione della procedura MRP;    
-> **Magazzino**: se attivato, il flag consente di fare in modo che i documenti dell’area gestionale *Magazzino* debbano essere presi in considerazione durante l’elaborazione della procedura MRP;   
-> **Conto Lavoro**: se attivato, il flag consente di fare in modo che i documenti dell’area gestionale *Conto Lavoro* debbano essere presi in considerazione durante l’elaborazione della procedura MRP;   
-> **Pianificazione**: se attivato, il flag consente di fare in modo che i documenti dell’area gestionale *Pianificazione*, (quindi Commesse di Produzione, Ordini Pianificati di Acquisto, Conto Lavoro e/o Produzione), debbano essere presi in considerazione durante l’elaborazione della procedura MRP;
-> **Produzione**: se attivato, il flag consente di fare in modo che i documenti dell’area gestionale *Produzione* Rilasciata (quindi Ordini di Produzione), debbano essere presi in considerazione durante l’elaborazione della procedura MRP;    
+**Consider availabilities coming from (Considera le disponibilità provenienti da)**:    
+> **Purchases (Acquisti)**: if activated, the flag ensures that documents from the management area *Purchases* must be taken into account during the processing of the MRP procedure;   
+> **Sales (Vendite)**: if activated, the flag ensures that documents from the management area *Sales* must be taken into account during the processing of the MRP procedure;    
+> **Inventory (Magazzino)**: if activated, the flag ensures that documents from the management area *Inventory* must be taken into account during the processing of the MRP procedure;   
+> **Job Order (Conto Lavoro)**: if activated, the flag ensures that documents from the management area *Job Order* must be taken into account during the processing of the MRP procedure;   
+> **Planning (Pianificazione)**: if activated, the flag ensures that documents from the management area *Planning* (thus Production Jobs, Planned Purchase Orders, Job Orders, and/or Production) must be taken into account during the processing of the MRP procedure;   
+> **Production (Produzione)**: if activated, the flag ensures that documents from the management area *Released Production* (thus Production Orders) must be taken into account during the processing of the MRP procedure;    
 
-**Considera anche le alternative dei materiali**: *IN SVILUPPO*    
-**Considera anche le fasi alternative**: *IN SVILUPPO* 
+**Also consider alternative materials (Considera anche le alternative dei materiali)**: *IN DEVELOPMENT*    
+**Also consider alternative phases (Considera anche le fasi alternative)**: *IN DEVELOPMENT*
 
-**Lettura distinte/cicli**:   
-> **Versione**: indica la versione di default da prendere in considerazione per distinta / ciclo;   
+**Reading BOM/Cycles (Lettura distinte/cicli)**:   
+> **Version (Versione)**: indicates the default version to consider for BOM/cycles;   
 
-**Considera le quantità in base al lotto economico**: se attivato, il flag consente di fare in modo che per l’articolo venga considerato il lotto economico (ovvero la quantità minima) di produzione o di acquisto;   
-**Considera i multipli del lotto economico**: se attivato, il flag consente di fare in modo che per l’articolo venga considerato il multiplo del lotto economico di produzione o di acquisto;   
-**Reintegro scorta minima dell’articolo**: se attivato, il flag consente di fare in modo che per l’articolo venga reintegrata la scorta minima impostata nella sua anagrafica, tab *Approvvigionamento*;   
-**Reintegro punto di riordino dell’articolo**: se attivato, il flag consente di fare in modo che per l’articolo venga reintegrato il punto di riordino impostato nella sua anagrafica, tab *Approvvigionamento*; *IN SVILUPPO*       
-**Considera indice di copertura**: se attivato, il flag consente di fare in modo che per l’articolo venga considerato l’indice di copertura impostato nella sua anagrafica, tab *Approvvigionamento*; l'indice di copertura viene espresso in settimane e quando viene indicato, significa che si va a dire al sistema di coprire il fabbisogno per le settimane indicate in questo campo;   
-**Senza suggerimenti**: se attivo, l'MRP non fa le porposte delle azioni di aumento, diminuzione, cancellazione, anticipo e posticipo sugli ordini pianificati già creati;   
-**Considera passato**: se attivo, per quei documenti con la data di prevista consegna passata rispetto alla data corrente (oggi), considera la disponibilità anche nel passato; se non attivo tutti i documenti passati (rispetto ad oggi) verranno considerati con data prevista consegna oggi;       
-**Differenzia domanda di produzione confermata**: se attivo, l'mrp viene eseguito due volte; la prima esecuzione considera solamente i fabbisogni provenienti da documenti esecutivi (aree: SCM - Acquisti, SCS - Conto Lavoro e MES - Produzione), generando ordini pianificati, se necessari, valorizzando anche il campo "quantità confermata" (presente nell'ordine pianificato appena creato); questa prima esecuzione genera i documenti strettamente necessari a soddisfare la domanda di documenti più urgenti, per l'appunto quelli esecutivi.
-La seconda esecuzione prende in considerazione i fabbisogni provenienti da tutti i documenti comprese la Commesse di produzione; questa seconda esecuzione genera i documenti mancanti senza però ottimizzarli con quelli generati nella prima esecuzione per poter dare la possibilità di poterli confermare/rilasciare separatamente;       
-**Considera articoli privi di commessa**: se attivo, durante l’elaborazione della procedura MRP verranno presi in considerazione tutti gli articoli con politica di gestione previsionale e fabbisogno (ad esclusione di quelli archiviati e/o fittizi) e con politica di gestione per commessa solamente se il flag *Commessa di produzione* nei parametri MRP dell’articolo anche se privi di commessa;     
-**Controllo fabbisogni con generazione ordini pianificati**: permette di scegliere se far generare gli ordini pianificati o meno. Se non attivo, vengono poposti solo  i suggerimenti di creazione degli ordini pianificati; da notare che gli ordini pianificati creati dal MRP non hanno i riferimenti a commesse;    
-**Articoli a scorta**: prende tutti gli articoli che hanno politica di gestione “A scorta” nei parametri MRP dell’articolo;inoltre, nei parametri MRP almeno uno tra i parametri di scorta minima e punto di riordino devono essere settati;    
-**Tolleranza per l’occupazione dei C.d.L.**: viene utilizzato in generazione occupazione per le fasi degli ordini pianificati di produzione per definire quando l'MRP deve utilizzare una fase di lavoro alternativa.     
+**Consider quantities based on the economic lot (Considera le quantità in base al lotto economico)**: if activated, the flag ensures that the economic lot (i.e., the minimum quantity) of production or purchase is taken into account for the item;   
+**Consider multiples of the economic lot (Considera i multipli del lotto economico)**: if activated, the flag ensures that the multiple of the economic lot of production or purchase is taken into account for the item;   
+**Replenish minimum stock of the item (Reintegro scorta minima dell’articolo)**: if activated, the flag ensures that the minimum stock set in its registry, tab *Supply (Approvvigionamento)*, is replenished for the item;   
+**Consider coverage index (Considera indice di copertura)**: if activated, the flag ensures that the coverage index set in its registry, tab *Supply (Approvvigionamento)*, is taken into account for the item; the coverage index is expressed in weeks and when indicated, it means that the system is instructed to cover the needs for the indicated weeks in this field;   
+**Without suggestions (Senza suggerimenti)**: if active, the MRP does not make proposals for increasing, decreasing, cancelling, anticipating, and postponing the scheduled orders already created;   
+**Consider past (Considera passato)**: if activated, for those documents with a scheduled delivery date past relative to the current date (today), availability is also considered in the past; if not active, all past documents (relative to today) will be considered with a scheduled delivery date of today;       
+**Differentiate confirmed production demand (Differenzia domanda di produzione confermata)**: if active, the MRP is executed twice; the first execution only considers requirements coming from executive documents (areas: SCM - Purchases, SCS - Job Order, and MES - Production), generating scheduled orders if necessary, also valuing the "confirmed quantity" field (present in the scheduled order just created); this first execution generates the strictly necessary documents to satisfy the demand for more urgent documents, namely those executive ones. 
+The second execution takes into account requirements coming from all documents including Production Jobs; this second execution generates missing documents without optimizing them with those generated in the first execution in order to allow them to be confirmed/released separately;       
+**Consider items without a job (Considera articoli privi di commessa)**: if activated, during the processing of the MRP procedure, all items with a policy of predictive management and requirement (excluding those archived and/or fictitious) and with a policy of job management (only if the flag *Consider the item in MRP calculation (Considera l'articolo nel calcolo MRP)* is active in the [MRP Parameters](/docs/configurations/parameters/production/mrp-parameters/mrp-parameters-intro) of the item), will be taken into account even if without a job;     
+**Control requirements with generation of scheduled orders (Controllo fabbisogni con generazione ordini pianificati)**: allows you to choose whether to generate scheduled orders or not. If not active, only suggestions for creating scheduled orders are proposed; note that scheduled orders created by MRP do not have references to jobs;    
+**Stock items (Articoli a scorta)**: takes all items that have a stock management policy in the MRP parameters of the item; moreover, in the MRP parameters, at least one of the minimum stock parameters and reorder point must be set;    
+**Tolerance for loading C.d.L. (Tolleranza per l’occupazione dei C.d.L.)**: used in generating loading for the phases of planned production orders to define when the MRP should use an alternative work phase.      
 
-### Storico
+### History (Storico)
 
-In questo tab è possibile filtrare e visualizzare l'elenco delle procedure MRP lanciate, con l'indicazione dell'utente e del momento in cui sono state eseguite.     
+In this tab, it is possible to filter and view the list of launched MRP procedures, with the indication of the user and the time they were executed.

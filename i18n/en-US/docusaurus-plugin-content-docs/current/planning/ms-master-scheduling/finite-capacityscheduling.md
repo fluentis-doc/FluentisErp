@@ -1,129 +1,132 @@
 ---
-title: Schedulazione a capacità finita
+title: Finite Capacity Scheduling (Schedulazione a capacità finita)
 sidebar_position: 4
 ---
 
-:::important A cosa serve
-La funzione di Schedulazione a capacità finita di Fluentis è uno strumento avanzato progettato per ottimizzare la gestione delle risorse produttive all'interno di un'azienda manifatturiera. Questo modulo viene integrato all'interno del sistema ERP di Fluentis e consente di pianificare e gestire le attività produttive considerando le reali capacità delle risorse disponibili, come manodopera, macchinari e materiali. Grazie a tale funzionalità, le aziende possono minimizzare i tempi di inattività, migliorare l'efficienza operativa e rispondere con maggiore flessibilità alle variazioni della domanda.
+:::important Purpose
+The Finite Capacity Scheduling function of Fluentis is an advanced tool designed to optimize the management of production resources within a manufacturing company. This module is integrated into the Fluentis ERP system and allows for planning and managing production activities considering the actual capacities of available resources, such as labor, machinery, and materials. Thanks to this functionality, companies can minimize downtime, improve operational efficiency, and respond with increased flexibility to variations in demand.
 
-La schedulazione a capacità finita tiene conto delle limitazioni fisiche delle risorse, permettendo di creare piani di produzione realistici e attuabili. Inoltre, offre strumenti analitici per prevedere eventuali colli di bottiglia e consente l'ottimizzazione dell'allocazione dei compiti, integrandosi con altre funzionalità dell'ERP per una visione olistica delle operazioni aziendali. Questo sistema aiuta le aziende a bilanciare in modo efficace la domanda dei clienti con le capacità produttive, migliorando in ultima analisi la redditività e la soddisfazione del cliente.
+Finite capacity scheduling takes into account the physical limitations of resources, allowing for the creation of realistic and achievable production plans. Additionally, it offers analytical tools to foresee potential bottlenecks and allows for the optimization of task allocation, integrating with other ERP functionalities for a holistic view of business operations. This system helps companies effectively balance customer demand with production capacities, ultimately improving profitability and customer satisfaction.
 :::
 
-La schedulazione di produzione a capacità finita permette di capire quanto lavoro può essere espresso in un periodo di tempo definito, considerando le limitazioni di alcune risorse. L’obiettivo finale è quello di garantire la maggiore efficienza dei ritmi produttivi lungo tutta la filiera interna allo stabilimento, ottimizzando i tempi e riducendo i costi dei centri di lavoro.  
-Con questa modalità di pianificazione è possibile creare sequenze ottimali di lavorazione su ogni singolo Centro di lavoro ottenendo la loro massima saturazione.
+Finite capacity production scheduling enables understanding how much work can be expressed within a defined period, considering the limitations of certain resources. The ultimate goal is to ensure maximum efficiency of production rhythms throughout the internal supply chain of the plant, optimizing times and reducing costs of work centers.  
+With this planning mode, it is possible to create optimal processing sequences on each individual Work Center, achieving their maximum saturation.
 
-## Commesse
+## Work Orders (Commesse)
 
-Il tab commesse mostra solamente le commesse che si trovano in stato non schedulato.
+The work orders tab only shows work orders that are in an unexamined state.
 
-*Pulsanti specifici*:
+*Specific buttons*:
 
-> **Schedulazione F.C.S.**: consente al sistema di schedulare a capacità finita le fasi di lavorazione dei documenti previsti;  
-> **Modifica data commessa**: questo pulsante consente di modificare la data commessa;  
-> **Cambia priorità**: tramite questa funzionalità si può variare la piorità delle commesse selezionate;    
-> **Parametri MRP**: consente di aprire i parametri MRP delle commesse selezionate;    
-> **Distinta base**: consente di aprire le distinte basi delle commesse selezionate;    
-> **Ciclo di lavoro**: consente di aprire i cicli di lavoro delle commesse selezionate.        
+> **F.C.S. Scheduling (Schedulazione F.C.S.)**: allows the system to schedule the processing phases of the expected documents using finite capacity;  
+> **Modify work order date (Modifica data commessa)**: this button allows you to change the work order date;  
+> **Change priority (Cambia priorità)**: through this functionality, you can change the priority of the selected work orders;    
+> **MRP Parameters (Parametri MRP)**: allows you to open the MRP parameters of the selected work orders;    
+> **Bill of materials (Distinta base)**: allows you to open the bills of materials of the selected work orders;    
+> **Work cycle (Ciclo di lavoro)**: allows you to open the work cycles of the selected work orders.        
 
-*Filtri specifici*:
+*Specific filters*:
 
-**Tipo commessa**: tramite questa combo è possibile andare a selezionare il tipo di commessa che si vuole visualizzare, se le commesse monoprodotto, le commesse multiprodotto oppure entrambe;
+**Type of work order (Tipo commessa)**: through this combo, it is possible to select the type of work order to visualize, whether single-product work orders, multi-product work orders, or both;
 
-**Sito produzione**: si possono andare a visualizzare le commesse in base al sito di produzione in cui vanno prodotte, selezionandolo tramite l'apposita combo;
+**Production site (Sito produzione)**: you can view work orders based on the production site where they are to be produced, selecting it through the appropriate combo;
 
-*Campi specifici nella griglia dei Risultati*
+*Specific fields in the Results grid*
 
-**Data suggerita**: come spiegato nell'articolo relativo ai parametri generali di schedulazione, attivando un particolare flag chiamato  [Controlla doc in ritardo con ATP](/docs/planning/ms-master-scheduling/general-schedule) lo schedulatore andrà ad eseguire un ragionamento tale per cui se anche uno solo degli ordini che vengono schedulati e generati risulta essere in ritardo rispetto alla data prevista il sistema andrà a cancellare tutti gli ordini creati e ripartirà a generali dalla data MS che viene definita sempre nei parametri e che si attiva solo settando il flag controllo doc in ritardo con ATP e andrà a proporre la nuova data per le commesse proprio nel campo *Data suggerita* presente nella griglia di risultato.
+**Suggested date (Data suggerita)**: as explained in the article related to the general scheduling parameters, activating a particular flag called [Check late documents with ATP (Controlla doc in ritardo con ATP)](/docs/planning/ms-master-scheduling/general-schedule), the scheduler will perform reasoning where if even one of the orders scheduled and generated is late compared to the expected date, the system will cancel all created orders and restart from the date defined in the MS parameters, which is activated only by setting the flag check late documents with ATP, and it will propose a new date for the work orders right in the *Suggested date* field present in the results grid.
 
-### Procedura schedulazione F.C.S.    
+### F.C.S. Scheduling Procedure    
 
-Dal tab **Commesse** è possibile selezionare le commesse non schedulate che si vogliono prendere in considerazione. 
-Premendo il pulsante **Schedulazione F.C.S.** la procedura eseguirà una prima schedulazione a capacità infinita sulle commesse non schedulate appena selezionate, utilizzando i parametri presenti nel tab **Parametri generali** e di seguito eseguirà una schedulazione a capacità finita su tutti i documenti indicati nei **Parametri schedulazione a capacità finita**.
+From the **Work Orders** tab, it is possible to select the unscheduled work orders you wish to consider. 
+By pressing the **F.C.S. Scheduling** button, the procedure will perform a first infinite capacity scheduling of the newly selected unscheduled work orders, using the parameters present in the **General Parameters** tab, and then perform finite capacity scheduling on all documents indicated in the **Finite Capacity Scheduling Parameters**.
 
-Come nel caso della schedulazione generale, gli ordini pianificati si potranno visualizzare nella form [Ricerca ordini pianificati](/docs/planning/ms-master-scheduling/planned-orders/search-planned-orders).
+As in the case of general planning, the scheduled orders can be viewed in the form [Search for scheduled orders](/docs/planning/ms-master-scheduling/planned-orders/search-planned-orders).
 
-Per visualizzare tutte le schedulazioni effettuate e i relativi errori / warning creati per ogni  commessa, basterà spostarsi nel tab **Storico**.    
+To view all the scheduling performed and the related errors/warnings created for each work order, just go to the **History** tab.    
 
-## Parametri di schedulazione generale
+## General Scheduling Parameters
 
-Tutti i parametri relativi alla fase di schedulazione generale posso essere consultati direttamente nell'articolo relativo alla [Schedulazione generale](/docs/planning/ms-master-scheduling/general-schedule) nella sezione **Parametri di schedulazione generale**.        
+All parameters related to the phase of General Scheduling can be consulted directly in the article related to [General Scheduling](/docs/planning/ms-master-scheduling/general-schedule) in the **General Scheduling Parameters** section.        
 
-## Parametri schedulazione a capacità finita   
+## Finite Capacity Scheduling Parameters   
 
-:::note Nota
-Prima di procedere con la schedulazione F.C.S., è importante settare all'interno di questo tab i parametri  da seguire per eseguire la schedulazione a capacità finita.
+:::note Note
+Before proceeding with F.C.S. scheduling, it is important to set the parameters to follow for executing finite capacity scheduling within this tab.
 ::: 
 
-**Schedulazione al più presto o al più tardi**: questi flag sono disabilitati ed è attivo sempre e solo il flag *Al più presto*, in quanto la schedulazione a capacità finita cerca di saturare al più presto i centri di lavoro;        
+**Scheduling as soon as possible or as late as possible**: these flags are disabled and only the *As soon as possible* flag is always active, as finite capacity scheduling seeks to saturate the work centers as soon as possible;        
 
-**Dalla data**: permette di definire la data da cui iniziare la schedulazione a capacità finita; è proposta come *Data odierna* ma può essere incrementata per un numero di giorni pari al valore che si può inserire dai *Parametri MPS* nel campo *Giorni prossima schedulazione*
+**From date (Dalla data)**: allows you to define the date from which to start finite capacity scheduling; by default, today's date is proposed, but it can be increased by a number of days equal to the value that can be entered from the [MS Parameters](/docs/configurations/parameters/production/mps-parameters) in the *Days until next scheduling* field;
 
-**Operazione su ordini pianificati Ricalcolo tempo**: il flag è sempre attivo e permette di ricalcolare il tempo negli ordini pianificati;    
+**Operation on planned orders Recalculate time (Operazione su ordini pianificati Ricalcolo tempo)**: the flag is always active and allows for time recalculation in planned orders;    
 
-**Ricalcolo ordini di produzione**: permette di selezionare quali ordini di produzione, tra *Lanciati* e/o *Esecutivi*, deve prendere in considerazione la schedulazione F.C.S.;    
+**Recalculate production orders (Ricalcolo ordini di produzione)**: allows you to select which production orders, among *Launched* and/or *Executive*, should be taken into consideration by F.C.S. scheduling;    
 
-**Ricalcolo fasi**: permette di selezionare quali fasi di produzione, *Non iniziate* e/o *Già iniziate*, deve prendere in considerazione la schedulazione F.C.S.;    
+**Recalculate phases (Ricalcolo fasi)**: allows you to select which production phases, *Not started* and/or *Already started*, should be considered by F.C.S. scheduling;    
 
-**Modalità di ricalcolo fasi già iniziate**: permette di segliere la modalità con cui la procedura di schedulazione F.C.S. deve ricalcolare la parte rimanente da eseguire delle fasi già iniziate. Si tratta di definire se dare la priorità al tempo lavorato flaggando *Tempo già lavorato e poi Quantità già prodotte*, oppure dare la priorità alla quantità prodotta con il flag *Quantità già prodotte e poi Tempo già lavorato*;     
+**Mode of recalculating already started phases (Modalità di ricalcolo fasi già iniziate)**: allows you to choose the mode in which the F.C.S. scheduling procedure should recalculate the remaining part to be executed of the already started phases. It involves defining whether to give priority to the worked time by flagging *Worked time first and then Quantity already produced*, or to give priority to the quantity produced with the flag *Quantity already produced and then Worked time*;     
 
-**Blocca gli ordini tassativi**: permette selezionare le tipologie di ordini tra *Pianificati*, *Lanciati* ed *Esecutivi*, che nel caso abbiano il flag *Tassativo* abilitato non saranno modificati dalla procedura di schedulazione F.C.S.;    
+**Block mandatory orders (Blocca gli ordini tassativi)**: allows selecting the types of orders among *Planned*, *Launched*, and *Executive*, which, if they have the *Mandatory* flag enabled, will not be modified by the F.C.S. scheduling procedure;    
 
-**Inizia lavori su disponibilità materiale**: se attivo, la schedulazione F.C.S. verificherà anche la disponibilità di materiale fino alla data indicata nel campo **Controllo disponibilità fino al**, oltre a quella data la schedulazione proseguira senza prendere in considerazione la disponibilità di materiale. Attivando il flag **Controllo disponibilità solo sui Materiali critici** la procedura verificherà la diposnibilità solamente per i materiali che in disitinta base hanno il flag *Critico* attivo;   
+**Start jobs on material availability (Inizia lavori su disponibilità materiale)**: if active, F.C.S. scheduling will also check material availability up until the date indicated in the **Check availability until (Controllo disponibilità fino al)** field; beyond that date, scheduling will continue without considering material availability. By activating the flag **Check availability only on Critical Materials**, the procedure will check availability only for materials that have the *Critical* flag active in the bill of materials;   
 
-**Considera disponibiltà Materiale**: permetterà di selezionare la modalità con cui considerare la disponibilità del materiale tra *Generale* (indipendentemente dalla commessa di produzione ch elo impegna) e *Per Commessa Prod.*; attualmente è prevista solamente la regola *Generale*.
+**Consider Material Availability (Considera disponibilità Materiale)**: will allow selecting the way to consider material availability between *General* (regardless of the production work order that commits it) and *By Production Work Order (Per Commessa Prod.)*; currently, only the *General* rule is provided. It should be noted that for materials related to a certain phase, availability will be verified at the beginning of that phase, while for all materials not linked to a phase, availability will be verified at the beginning of the first phase of the cycle. 
 
-Nella parte sottostante della form è possibile indicare con quali criteri, a paratià di documento, la scheduazione a capacità finita deve operare.
+In the lower part of the form, it is possible to indicate with what criteria, in the case of equal documents, the finite capacity scheduling should operate.
 
-:::note Nota
-In accordo con i flag precedentemente attivati o meno, la schedulazione F.C.S. schedulerà i vari documenti nel seguente ordine: Fasi già iniziate, Fasi non ancora iniziate, Ordini di produzione in stato esecutivo e poi lanciato ed in fine Ordini pianificati. 
+:::note Note
+In accordance with the previously activated or not flags, the F.C.S. scheduling will schedule the various documents in the following order: Already started phases, Not yet started phases, Production orders in executive state, and then launched, and finally Planned orders. 
 ::: 
 
-Dalla tabella **Scelte priorità schedulazione** è possibile trascinare con il drag & drop le singole voci all'interno della tabella **Piorità schedulaizone**, dove in quest'ultima è possibile variarne la priorità. Nel caso in cui vengano selezionare le voci *Clienti critici* oppure *C.d.L critici* si abiliterà anche la tabella **Dettaglio priorità schedulazione** dove sarà possibile inserire rispettivamente i clienti o i centri di lavoro, potendo variare anche in questo caso la priorità.   
+From the **Scheduling priority choices** table, it is possible to drag and drop individual entries within the **Scheduling Priority** table, where in the latter it is possible to change their priority. If the entries *Critical customers* or *Critical work centers* are selected, the **Scheduling Priority Details** table will also be enabled, where it will be possible to insert respectively the customers or work centers, also being able to change the priority in this case.   
 
-*Pulsanti specifici*:
+:::note Attention
+The priority for *Phase sequence* and *Critical work centers* is not used in the standard and has been inserted for scheduling only with custom procedures.
+::: 
 
-> **Ripristina priorità**: permette di ripristinare le priorità di default all'interno della tabella *Priorità schedulazione*.    
+If no scheduling priority is entered, the ordering will be performed as follows:
+*Level descending > StartDate ascending > EndDate ascending > Id ascending*
+
+*Specific buttons*:
+
+> **Restore priority (Ripristina priorità)**: allows restoring the default priorities within the *Scheduling Priority* table.    
 
 ## Monitor
 
-In questo tab, tramite l'attivazione o meno dei flag presenti, l'utente ha la possibilità di scegliere la visualizzazione dei risultati della schedulazione nel tab **Storico**.
+In this tab, by activating or deactivating the existing flags, the user has the opportunity to choose the display of scheduling results in the **History** tab.
 
-Si può decidere se visualizzare i **Calendari** presi in considerazione (il Calendario di *Fabbrica* e il calendario delle *Capacità produttive*); si può decidere che venga segnalato se nella schedulazione erano presenti **Articoli privi di** *Parametri MRP*, privi di *Distinta base* o di *Ciclo di lavoro*, privi di *Fornitore preferenziale* (nel caso di ordini di acquisto), privi di *Terzista preferenziale* (per gli ordini di conto lavoro) e privi dell'indicazione della scorta minima per tutti quegli articoli che sono gestiti a scorta. Per ogni **Commessa di produzione** si può scegliere di visualizzare nello storico, il *Numero di righe schedulate* e il dettaglio di queste righe, le commesse in ritardo e le commesse scadute.
+You can decide whether to display the **Calendars** considered (the Factory Calendar and the Production Capacity calendar); you can decide that it be reported if there were **Items without** *MRP parameters*, without *Bill of materials*, without *Work cycle*, without a *Preferred supplier* (in the case of purchase orders), without a *Preferred subcontractor* (for work orders), and without indicating the minimum stock for all those items managed in stock. For each **Production Work Order**, you can choose to display in the history the *Number of scheduled rows* and the details of these rows, the work orders that are late and overdue work orders.
 
-Per quanto riguarda gli **Ordini pianificati**, si può scegliere se visualizzare nello storico, il *Numero di ordini generati* e il loro *Dettaglio*, gli ordini *In ritardo* e *Scaduti*, le *Alternative materiali*; si può scegliere anche di essere avvisati nel caso in cui ci siano **Ordini pianificati privi di** *Materiale*, di *Fasi di lavorazione*, del *Fornitore* (per l'acquisto) e il *Terzista* (per il conto lavoro).
+Regarding **Planned Orders**, you can choose whether to display in the history the *Number of generated orders* and their *Detail*, late *Orders* and *Expired* orders, *Alternative materials*; you can also choose to be notified if there are **Planned orders without** *Material*, without *Processing phases*, without a *Supplier* (for purchase), and without a *Subcontractor* (for work orders).
 
-**Legenda**: i flag attivi permettono di ricevere l'avviso e i dettagli riguardanti le voci selezionate.
+**Legend**: active flags allow receiving alerts and details regarding the selected items.
 
-## Storico
+## History
 
-Nella griglia di questo tab vengono visualizzate tutte le informazioni riepilogative relative alla schedulazione della commessa.
+In the grid of this tab, all summary information regarding the scheduling of the work order is displayed.
 
-**Progr. sched.**: visualizza un semplice progressivo dell'operazione di schedulazione lanciata dall'utente;
+**Scheduled prog. (Progr. sched.)**: displays a simple incremental number of the scheduling operation launched by the user;
 
-**Operatore**: visualizza l'utente che ha lanciato la schedulazione;
+**Operator (Operatore)**: displays the user who launched the scheduling;
 
-**No. errori**: visualizza il numero degli errori registrati durante la procedura di schedulazione;
+**No. errors (No. errori)**: displays the number of errors recorded during the scheduling procedure;
 
-**Data inizio**: visualizza data e ora di inizio del processo di schedulazione;
+**Start date (Data inizio)**: displays the date and time the scheduling process started;
 
-**Data fine**: visualizza data e ora di fine del processo di schedulazione;
+**End date (Data fine)**: displays the date and time the scheduling process ended;
 
-**Dati schedulati provenienti da**: visualizza l'origine precisa dei dati schedulati;
+**Scheduled data originating from (Dati schedulati provenienti da)**: displays the precise origin of the scheduled data;
 
-**Previsionale**: visualizza se i dati provengano dalle Previsioni di Vendita oppure dal Piano Principale di Produzione;
+**Forecast (Previsionale)**: displays whether the data comes from Sales Forecasts or from the Master Production Plan;
 
-**Periodo**: visualizza il tipo di previsione, settimanale o mensile;
+**Period (Periodo)**: displays the type of forecast, weekly or monthly;
 
-**Giorno**: visualizza il giorno della settimana designato come giorno in cui deve cadere la data di fine della commessa di produzione schedulata direttamente da Definizione MPS.
+**Day (Giorno)**: displays the designated weekday as the day when the scheduled production work order end date must fall as defined by MPS Definition.
 
-Tutte le altre colonne della griglia visualizzano le impostazioni utilizzate nel tab **Parametri** della Schedulazione relativa alla riga selezionata.
+All other columns in the grid display the settings used in the **Parameters** tab of the Scheduling related to the selected row.
 
-**Risultato schedulazione**
+**Scheduling result (Risultato schedulazione)**
 
-In base alla riga selezionata nella griglia, in questa sezione compariranno eventuali errori e/o warning con i dettagli richiesti dall'utente nel tab **Monitor**.
+Based on the selected row in the grid, this section will display any errors and/or warnings with the details requested by the user in the **Monitor** tab.
 
-Per dettagli sul funzionamento comune delle form fare riferimento al link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
-
-
-
-
+For details on the common functionality of the forms, please refer to the link [Common functionalities, buttons, and fields](/docs/guide/common).
