@@ -1,5 +1,5 @@
 ---
-title: Create advances list
+title: Create Advances List
 sidebar_position: 3
 ---
 
@@ -23,4 +23,4 @@ This data can be automated by entering it in the registry of the bank used for t
 
 ![](/img/it-it/treasury/advance/create-advances-list/image03.png)
 
-To proceed with accounting for the advance, use the appropriate procedure for Advance List Accounting (Contabilizzazione Distinta anticipi).
+To proceed with accounting for the advance, use the appropriate procedure for Advance List Accounting.

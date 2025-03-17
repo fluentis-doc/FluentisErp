@@ -1,5 +1,5 @@
 ---
-title: Print Presentation Lists (Stampa Distinte di presentazione)
+title: Print Presentation Lists 
 sidebar_position: 1
 ---
 

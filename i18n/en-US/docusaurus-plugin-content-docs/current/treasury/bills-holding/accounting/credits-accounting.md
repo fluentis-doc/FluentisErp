@@ -3,7 +3,7 @@ title: Credits Accounting
 sidebar_position: 3
 ---
 
-The form is located in Treasury > Bills Portfolio > Accounting > Credits Accounting (Contabilizzazione accrediti)
+The form is located in Treasury > Bills Holding > Accounting > Credits Accounting 
 
 From this screen, the final phase of the bills portfolio is proceeded with: the procedure will close the transit account of the presenting bank to credit the actual current account of the bank registry in the summary.
 
@@ -17,7 +17,7 @@ From this screen, the final phase of the bills portfolio is proceeded with: the 
 
 2. Select from the central grid the effects you wish to manage.
 
-3. Fill in the parameters for accounting such as the **Ledger Records Template**, the **Posting date**, and the due date (data competenza).
+3. Fill in the parameters for accounting such as the **Ledger Records Template**, the **Posting date**, and the due date.
 
 :::note[Note]
 This section can be predefined within the [**parameters**](/docs/configurations/parameters/treasury/bills-portfolio-parameters) of the Bills Portfolio module.
@@ -55,7 +55,7 @@ From the *Previous* tab, it is possible to proceed with the cancellation of exec
 
 Cancellation will only be possible if the period is still modifiable (journal book print and account closure not executed). 
 
-Double-clicking in the registration section will allow you to view the related accounting entry. 
+Double-clicking in the registration section will allow you to view the related ledger record. 
 
 There is a detail tab to view errors detected during accounting.
 
@@ -65,4 +65,4 @@ There is a detail tab to view errors detected during accounting.
 
 **Rollback accounting**: Restores the selected accountings for all documents contained therein.
 
-**Rollback Records**: Restores the single selected accounting entry.
+**Rollback Records**: Restores the single selected ledger record.

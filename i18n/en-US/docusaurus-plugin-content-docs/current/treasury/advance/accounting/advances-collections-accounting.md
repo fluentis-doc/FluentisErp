@@ -1,5 +1,5 @@
 ---
-title: Advances collections accounting
+title: Advances Collections Accounting
 sidebar_position: 2
 ---
 
