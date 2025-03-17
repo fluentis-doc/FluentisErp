@@ -1,5 +1,5 @@
 ---
-title: Order Fulfillment (Evasione da ordine)
+title: Fulfillment from Order
 sidebar_position: 1
 ---
 
@@ -25,9 +25,9 @@ The procedure retrieves all data present in the order, and as a consequence, the
 
 In the results grid, the user then has the option to:
 
- 1. select the *entire order (ordine per intero)*. To do this, simply select the flag present at the beginning of the order row.
+ 1. select the *entire order*. To do this, simply select the flag present at the beginning of the order row.
  2. select only *some* of the *Items* proposed. To do this, simply select the flag present at the beginning of the item row.
- 3. select only *some items* but only for a *specific quantity (determinata quantità)*. In this case, the user will need to modify the quantity to fulfill.
+ 3. select only *some items* but only for a *specific quantity*. In this case, the user will need to modify the quantity to fulfill.
 
 To complete the procedure, click the **Transfer** button, which will retrieve all the data present in the order and will report it in the DDT.
 
