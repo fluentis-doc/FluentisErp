@@ -1,8 +1,8 @@
 ---
-title: Cashflow Analysis (Analisi Cashflow)
+title: Cashflow Analysis 
 sidebar_position: 5
 ---
-The form can be found under Treasury > Cash Flow > Print > Cash Flow Analysis (Tesoreria > Cash Flow > Stampa > Analisi Cash Flow).
+The form can be found under Treasury > Cash Flow > Report > Cash Flow Analysis.
 
 From this screen, it is possible to obtain the printout of the cash flow calculations that have been calculated and are present in the system: the system, upon opening, suggests the last calculation performed by the current user as a filter.
 
@@ -14,7 +14,7 @@ The following filters can be set:
 
 - the **Report type** to be displayed, grouping by flow type or payment type.
 
-- the **data display (visualizzazione del dato)** channeled **by bank (per banca)**, 
+- the **data display** channeled **by bank**, 
 
 - the filter for **Project** (e.g., job order), 
 
