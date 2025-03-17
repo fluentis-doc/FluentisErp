@@ -27,22 +27,22 @@ This field, in turn, is populated by the Calculate command, applying the value o
 
 In detail, the calculation is developed as follows:
 
-“12M Revenue (Fatturato 12M)” / 365 * “Multiplier (Moltiplicatore)” * “Average Payment Terms (Giorni dilazione medi)”, where the latter are in turn calculated based on the invoice due dates of the past 12 months, as “(sum(Due Amount * Payment Days))/(total sum of due dates).
+“12M Revenue” / 365 * “Multiplier” * “Average Payment Terms”, where the latter are in turn calculated based on the invoice due dates of the past 12 months, as “(sum(Due Amount * Payment Days))/(total sum of due dates).
 
-**OTHER FORM FIELDS (ALTRI CAMPI DELLA FORM):**
+**OTHER FORM FIELDS:**
 
-**12M Revenue (Fatt 12 m)** = revenue for the previous twelve months
+**12M Revenue** = revenue for the previous twelve months
 
 **Mat. values** = amounts due and respective balances
 
-**Debits / Credits (Dare / avere)** = collection movements from provisional records (informational data)
+**Debits / Credits** = collection movements from provisional records (informational data)
 
-**Debits / Credits Balance (Saldo dare / avere)** = accounting movement if the accounting mode has been chosen
+**Debits / Credits Balance** = accounting movement if the accounting mode has been chosen
 
-**To Be Accounted (Fatt. da contabilizzare)** = not yet accounted for (credit because there are Credit Notes); Advances are included for invoices with advance lines
+**To Be Accounted** = not yet accounted for (credit because there are Credit Notes); Advances are included for invoices with advance lines
 
-**DDT to Invoice (DDT da fatturare)** = (credit if return DDT)
+**DDT to Invoice** = (credit if return DDT)
 
-**Value and Number of Unpaid (Valore e nr insoluti)** = (statistical, not included in the calculation)
+**Value and Number of Unpaid** = (statistical, not included in the calculation)
 
 **Expired** = how much of the open transactions are overdue

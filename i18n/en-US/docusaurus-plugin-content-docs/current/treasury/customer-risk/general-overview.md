@@ -1,5 +1,5 @@
 ---
-title: Introduction (Introduzione)
+title: Introduction
 sidebar_position: 1
 ---
 
@@ -11,7 +11,7 @@ The module is present in the treasury area and draws data from the active docume
 
 A series of settings, both predetermined table settings and correct parameterization of the basic algorithms, are recommended before proceeding with customer risk management.
 
- Main Features (Funzionalità Principali)
+ Main Features 
 
 - Credit exposure monitoring: The module allows for defining customized credit limits for each customer and continuously monitoring their financial exposure by comparing available credit with utilized credit.
 
@@ -19,12 +19,12 @@ A series of settings, both predetermined table settings and correct parameteriza
 
 - Automatic blocks and alerts: If a customer exceeds credit limits or has overdue invoices, the system can activate automatic blocks on the creation of new orders or send alerts to the sales or administrative department.
 
-- Integration with accounting: The module is fully integrated with general accounting and accounts management, from which it reads data to update risk exposure reporting and the utilization of each customer's credit limit. It is also interfaced with the active cycle, intervening directly in the creation of documents, orders, delivery notes, and invoices, in order to notify or block the fulfillment process if the limit is exceeded.
+- Integration with accounting: The module is fully integrated with general ledger and accounts management, from which it reads data to update risk exposure reporting and the utilization of each customer's credit limit. It is also interfaced with the active cycle, intervening directly in the creation of documents, orders, delivery notes, and invoices, in order to notify or block the fulfillment process if the limit is exceeded.
 
 
 
-**Tables (Tabelle):** There are no specific tables for this module; however, it should be noted that various document types in purchase and sale have settings related to customer risk ([tables related to the Customer Risk module](/docs/configurations/tables/treasury/customer-risk-module-tables)).
+**Tables:** There are no specific tables for this module; however, it should be noted that various document types in purchase and sale have settings related to customer risk ([tables related to the Customer Risk module](/docs/configurations/tables/treasury/customer-risk-module-tables)).
 
  
 
-**Preliminary parameters to be set (Parametri preliminari da impostare)**: [Customer Risk Parameters (Parametri rischio cliente)](/docs/configurations/parameters/treasury/customer-risk-parameters).
+**Preliminary parameters to be set**: [Customer Risk Parameters](/docs/configurations/parameters/treasury/customer-risk-parameters).

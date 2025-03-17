@@ -1,5 +1,5 @@
 ---
-title: Credit Management (Gestione fidi)
+title: Credit Management 
 sidebar_position: 2
 ---
 
@@ -7,7 +7,7 @@ This form allows you to verify and manage the credit settings of customer regist
 
 There are four types of credit control implemented:
 
-**Block documents and monitor credit (Blocco doc. e monitor fido)**: the document from the sales area that exceeds the credit limit will be blocked, and it will be necessary to authorize it to proceed to the subsequent phases of the document flow;
+**Block documents and monitor credit**: the document from the sales area that exceeds the credit limit will be blocked, and it will be necessary to authorize it to proceed to the subsequent phases of the document flow;
 
 **Reliance monitor**: a credit check will simply be performed with a potential message to the user indicating the occurrence of the exceeded limit;
 
@@ -15,4 +15,4 @@ There are four types of credit control implemented:
 
 **Group monitor**: similar to the second, but the calculation is cumulative for all companies in the database that belong to the same customer registry.
 
-The **insured credit (fido assicurato)** field is only a reference and is not actively managed by the program, as are the credit notes.
+The **insured credit** field is only a reference and is not actively managed by the program, as are the credit notes.
