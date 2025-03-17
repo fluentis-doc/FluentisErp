@@ -364,40 +364,68 @@ Nella causale contabile, in particolare per tutte le causali IVA, per la riga co
 
 ## 3. Partite
 
-La scheda è presente **solo se la causale ha il flag 'Apertura partite'** impostato. 
+La scheda è presente **solo se la causale contabile ha il flag *Apertura partite*** impostato. 
 
-### 3.1 Tipologia partite
+### 3.1 Griglia Tipologia di pagamento
 
-è dedicata alla gestione dei dati di calcolo delle partite sottostanti e ricalca le condizioni di pagamento per una registrazione manuale di tipo IVA troveremo la griglia compilata con i dati di default così come inseriti all'interno dell'anagrafica cliente/fornitore/agente assegnata come sottoconto intestatario della registrazione stessa. Per altri tipi di registrazione (ad esempio, per i pagamenti anticipati è possibile codificare una causale che apra la partita, nel segno opposto, invece di chiuderla visto che il documento non è stato ancora rilevato): in questo caso la gestione di questa sezione diventa manuale, cosicché l'utente potrà inserire i dati essenziali del tipo di pagamento, della soluzione di pagamento e del sottoconto di riferimento, con il 100% inserito nel campo 'Percentuale'.  
+griglia dedicata alla gestione dei dati di calcolo delle partite sottostanti, replica i dati presenti all'interno dell'anagrafica cliente/fornitore/agente intestatario della registrazione.
+ 
+Se nell'anagrafica non è presente alcun dato di default da poter leggere, questa sezione può essere compilata manualmente nel caso di inserimento manuale della registrazione contabile.
 
-Per questa sezione è da segnalare che:  
-- la partita può essere creata anche su sottoconti non di anagrafica e che non hanno il flag Apertura partite nel piano dei conti (questo flag è relativo al solo controllo che i dati di giornale e partite corrispondano per i sottoconti che l'hanno impostato);  
-- gli appoggi bancari sono riportati tipicamente dall'anagrafica o dal documento contabilizzato dall'area acquisti/vendite/percipienti, ma possono essere di volta in volta forzati richiamandone uno differente utilizzando l'help abi/cab (doppio click nel campo). L'appoggio bancario collegato in questa sezione sarà il dato normalmente utilizzato nei pagamenti fornitori quale banca beneficiaria del pagamento a meno che non sia impostato il flag di '**[Imponi banca d'appoggio presente in anagrafica del fornitore](/docs/configurations/parameters/treasury/vendor-payments-parameters)**';  
-- normalmente viene inserito il campo '**Percentuale**'. Il significato dei campi 'Importo/Imposta' è il seguente: nel campo '**Importo**' si può inserire un importo fisso da utilizzare per la combinazione tipo pag./soluzione pag. della riga in gestione; il campo '**Imposta**' consente di definire, di questo importo, quanto sia riferibile all'IVA (questo serve nel caso in cui la soluzione di pagamento preveda delle percentuali imponibile/imposta differenziate tra le varie rate, per ottenere un calcolo corretto). È possibile inserire una combinazione importo/percentuale:
+
+<details>
+
+  <summary>Ulteriori dettagli (Click to expand)</summary>
+  
+  Per altri tipi di registrazione (ad esempio, per i pagamenti anticipati è possibile codificare una causale che apra la partita, nel segno opposto, invece di chiuderla visto che il documento non è stato ancora rilevato): in questo caso la gestione di questa sezione diventa manuale, cosicché l'utente potrà inserire i dati essenziali del tipo di pagamento, della soluzione di pagamento e del sottoconto di riferimento, con il 100% inserito nel campo *Percentuale*.  
+
+    Per questa sezione è da segnalare che:  
+    - la partita può essere creata anche su sottoconti non di anagrafica e che non hanno il flag Apertura partite nel piano dei conti (questo flag è relativo al solo controllo che i dati di giornale e partite corrispondano per i sottoconti che l'hanno impostato);  
+    - gli appoggi bancari sono riportati tipicamente dall'anagrafica o dal documento contabilizzato dall'area acquisti/vendite/percipienti, ma possono essere di volta in volta forzati richiamandone uno differente utilizzando l'help abi/cab (doppio click nel campo).
+</details>
+
+
+ L'appoggio bancario collegato in questa sezione (campi **Banca, Descrizione Banca, CIN, ABI, CAB, Conto corrente,IBAN, SWIFT**)
+
+sarà il dato normalmente utilizzato nei pagamenti fornitori quale banca beneficiaria del pagamento a meno che non sia impostato il flag di **[Imponi banca d'appoggio presente in anagrafica del fornitore](/docs/configurations/parameters/treasury/vendor-payments-parameters)**;  
+ 
+
+Normalmente viene inserito il campo **Percentuale** al 100%. Con percentuali diverse (che diano somma 100%) è possibile gestire su varie righe anche combinazioni di pagamenti differenti. 
+
+<details>
+
+  <summary>Ulteriori dettagli (Click to expand)</summary>
+
+Nel campo **Importo** si può inserire un importo fisso da utilizzare per la combinazione tipo pag./soluzione pag. della riga in gestione; il campo **Imposta** consente di definire, di questo importo, quanto sia riferibile all'IVA (questo serve nel caso in cui la soluzione di pagamento preveda delle percentuali imponibile/imposta differenziate tra le varie rate, per ottenere un calcolo corretto). È possibile inserire una combinazione importo/percentuale:
 
 **Raggruppa partite**: il flag, non attivo, viene ripreso dall'anagrafica cliente/fornitore: sostanzialmente non ha uso pratico, in quanto è ben raro che due partite abbiano stesso tipo pagamento e stessa data scadenza all'interno dello stesso documento;
 
-- al di sotto ci sono alcuni campi di riepilogo della situazione cliente/fornitore: l'importo del fido concesso nel modulo Rischio cliente, il valore dell'esposizione ottenuto secondo la situazione delle partite aperte (senza considerare la registrazione in uso) e il saldo contabile (considerando anche la registrazione in uso);
+Al di sotto della griglia ci sono alcuni campi di riepilogo della situazione cliente/fornitore: l'importo del **fido concesso** nel modulo Rischio cliente, il valore dell'**esposizione** ottenuto secondo la situazione delle partite aperte (senza considerare la registrazione in uso) e il **saldo contabile** (considerando anche la registrazione in uso);
 
-- nel caso di registrazione derivante dalla **contabilizzazione insoluti**, la griglia superiore NON ha nessuna rilevanza per il calcolo delle partite sottostanti (tipicamente l'anagrafica prevede partite per RB, ma gli insoluti vengono gestiti come BB e non si devono riemettere in automatico altre riba): viene letta unicamente nel caso serva il dato degli appoggi bancari.
+Nel caso di registrazione derivante dalla **contabilizzazione insoluti**, la griglia superiore NON ha nessuna rilevanza per il calcolo delle partite sottostanti (tipicamente l'anagrafica prevede partite per RB, ma gli insoluti vengono gestiti come BB e non si devono riemettere in automatico altre riba): viene letta unicamente nel caso serva il dato degli appoggi bancari.
+</details>
 
-### 3.2 Partite
 
-presenta la lista delle partite calcolate secondo le impostazioni della sezione sopra: l'utente può forzare il tipo di pagamento, la data scadenza e gli importi delle varie rate (avendo cura di rispettare i totali). La griglia delle partite NON consente l'inserimento manuale di una nuova rata. 
 
-Nel caso in cui la causale preveda sia l'apertura partite, che la chiusura per compensazione e sia stato attivato anche il flag 'Avviso', al momento del salvataggio della registrazione verrà restituito all'utente un messaggio di avviso della presenza di partite da poter compensare.
+### 3.2 Griglia Partite
 
-**Descrizione**: viene indicato lo stato della partita (aperta, parzialmente aperta, chiusa);  
+**presenta la lista delle partite calcolate secondo le impostazioni della sezione sopra**. 
+
+L'utente può forzare il tipo di pagamento, la data scadenza e gli importi delle varie rate (avendo cura di rispettare i totali). La griglia delle partite NON consente l'inserimento manuale di una nuova rata. 
+
+Nel caso in cui la causale preveda sia l'apertura partite, che la chiusura per compensazione e sia stato attivato anche il flag *Avviso*, al momento del salvataggio della registrazione verrà restituito all'utente un messaggio di avviso della presenza di partite da poter compensare.
+
+**Stato Partita**: viene indicato lo stato della partita (aperta, parzialmente aperta, chiusa);  
 **Conto/sottoconto/descrizione**: sottoconto cliente o fornitore al quale la partita è riferita;  
-**Pag**: tipo pagamento (bonifico, contanti ecc...);  
+**Pagamento**: tipo pagamento (bonifico, contanti ecc...);  
 **Scadenza**: data di scadenza calcolata a partire dalle condizioni di pagamento della griglia soprastante o imposta manualmente;  
-**Cod. doc**: codice del documento che ha generato la partita (esempio FA = fattura di acquisto, FV = fattura di vendita);  
+**Codice documento**: codice del documento che ha generato la partita (esempio FA = fattura di acquisto, FV = fattura di vendita);  
 **Data documento**: data del documento (esempio fattura di acquisto) che ha generato la partita;  
-**N. documento**: numero del documento che ha generato la partita;  
+**Numero documento**: numero del documento che ha generato la partita;  
 **Divisa**: divisa in cui è denominata la partita (es. EUR = Euro);  
-**Cambio**: tasso di cambio che ha determinato il valore in valuta ed il controvalore in Euro della partita;  
+**Cambio diretto / Cambio inverso**: tasso di cambio (esposto sia come tasso diretto *certo per incerto*, che come tasso indiretto *incerto per certo*) che ha determinato il valore in valuta ed il controvalore in Euro della partita;  
 **Data Valuta**: data di riferimento del tasso di cambio;  
-**Importo in valuta**: pari all'importo in euro se il cambio è 1;  
+**Importo in valuta**: importo nella divisa estera o pari all'importo in euro se il cambio è 1;  
 **Importo Dare / Avere**: la partita ha un segno (o sezione che dir si voglia) così come il movimento contabile che l'ha generata. La partita con segno dare sarà una partita a nostro credito, mentre una partita con segno avere sarà una partita a debito (esempio a fronte di fattura ricevuta da fornitore o di nota di accredito emessa al cliente) ; 
 
 E' inoltre possibile bloccare il pagamento della partita (Flag **Non Pagabile**): la procedura memorizzerà la data e l'utente che ha bloccato il pagamento con un'eventuale nota esplicativa (**Inizio Blocco, Utente Blocco, Note Blocco**) così come data e utente sbloccante (**Utente Sblocco, Fine Blocco**), per entrambe le operazioni sono previsti specifici diritti utente nell'ARM. 
@@ -406,8 +434,9 @@ E' inoltre possibile bloccare il pagamento della partita (Flag **Non Pagabile**)
 **Posizione partita**: combo box collegata ad una una tabella libera definibile dall'utente, consente di classificare le partite contabili fin dal momento della loro creazione;  
 **Note** (della partita): note libere che si possono anche legare automaticamente in causale contabile alla descrizione di dettaglio del sottoconto così come inserite in contabilità.  
 **Agente**: in questo campo è possibile agganciare l'agente di riferimento per la partita: questo viene valorizzato automaticamente sulla base dell'agente inserito nella fattura di vendita all'atto della contabilizzazione (nel caso siano presenti più agenti, sarà assegnato quello con provvigioni superiori).  
-**Data Rif / N. Rif**: Campi ripresi dalla data documento  e numero documento nella registrazione contabile (se presenti, altrimenti ripresi da data/numero registrazione), premettono di raggruppare e filtrare le partite/settlement riferite allo stesso documento (ad esempio una nota di credito che si riferisce ad una fattura, per visualizzare il partitario tutto insieme).  
+**Data Riferimento / Numero Riferimento**: Campi ripresi dalla data documento  e numero documento nella registrazione contabile (se presenti, altrimenti ripresi da data/numero registrazione), premettono di raggruppare e filtrare le partite riferite allo stesso documento (ad esempio una nota di credito che si riferisce ad una fattura, per visualizzare il partitario tutto insieme).  
 **Cig** e **Cup**: ripresi dalla fattura di vendita, ma possono anche esser scritti a mano (tramite combo box) Si veda **[documentazione sui campi in fattura](/docs/sales/sales-invoices/invoicing/sales-invoice).**  
+**Conto / Sottoconto cauzione**: conto dedicato alla contabilizzazione dei depositi cauzionali agganciati alle partite tramite apposita modalità. Vedere [**qui**](/docs/finance-area/maturity-values/maturity-values/maturity-values/search-maturity-values) il flag *Mostra cauzioni*.
 **Modelli di riferimento** e **Numero di riferimento**: campi solitamente non utilizzati in Italia, tipici della Croazia (dove quando l'azienda emette la fattura ad ogni scadenza associa un tipo/codice identificativo della rata, che il cliente poi riporta nel pagamento e la banca riporta nel movimento d'incasso: dall'estratto conto bancario, quindi, facilmente si può risalire alla rata chiusa. Il campi rappresentano un riferimento anche a seguito di una futura implementazione di importazione movimenti bancari).  
 **Ritardo medio giorni di pagamento**: Non utilizzato in Italia: riprende il valore dei giorni di ritardo dell'anagrafica cliente ma è modificabile anche manualmente. Può essere utilizzato nella simulazione di cash flow.
 
@@ -419,7 +448,9 @@ E' inoltre possibile bloccare il pagamento della partita (Flag **Non Pagabile**)
 
 ## **4. Pagamenti** 
 
-La scheda ‘Pagamenti' **è presente solo se la causale ha il flag ‘Chiusura partite' impostato**. Consente di visualizzare le partite aperte per procedere ai pagamenti/incassi con chiusura delle partite aperte o alle compensazioni.  
+La scheda **è presente solo se la causale contabile ha il flag *Chiusura partite* impostato**. 
+
+Consente di visualizzare le partite aperte per procedere ai pagamenti/incassi con chiusura delle partite aperte o alle compensazioni.  
 
 :::tip Info
 Il tab è diviso in due griglie fondamentali, la prima, quella superiore, serve per ricercare le partite aperte al fine di chiuderle, la seconda, inferiore, conterrà il risultato della manovra di chiusura (ovvero i pagamenti risultanti)
@@ -427,9 +458,11 @@ Il tab è diviso in due griglie fondamentali, la prima, quella superiore, serve 
 
 ### Corretta configurazione dell'interazione tra Apertura, Chiusura e Compensazione Partite
 
-- Tipicamente tutte le registrazioni di tipo IVA hanno il flag di 'apertura partite' e possono avere anche il flag di chiusura + compensazione partite; 
+- Tipicamente tutte le registrazioni di tipo IVA (es. acquisti o vendite) hanno il flag di *apertura partite* e possono avere anche il flag di chiusura + compensazione partite; 
 
-- Le causali di **pagamento/incasso**, invece, prevedono sempre la chiusura partite **senza mai il flag di compensazione**, eventualmente possono avere il flag di apertura partite per gestire i casi di pagamento anticipato (in questo caso, mancando la chiusura di una partita, verrà aperta una partita di segno opposto mantenendo la quadratura con il movimento contabile - quadratura che può essere resa obbligatoria tramite i **[parametri](/docs/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates)** della causale contabile). 
+- Le causali di **pagamento/incasso**, invece, prevedono sempre la chiusura partite **senza mai il flag di compensazione**, eventualmente possono avere il flag di apertura partite per gestire i casi di pagamento anticipato (in questo caso, mancando la chiusura di una partita, verrà aperta una partita di segno opposto mantenendo la quadratura con il movimento contabile. 
+
+La quadratura che può essere resa obbligatoria tramite i **[parametri](/docs/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates)** della causale contabile). 
 
 :::tip ATTENZIONE
 Differenza tra pagamenti partite e compensazione partite:  
@@ -453,7 +486,7 @@ per tutte le registrazioni IVA, quindi, l'applicativo proporrà qui le partite d
 
 nel caso di registrazioni di pagamento/incasso (soprattutto di più clienti o fornitori), invece, normalmente il campo in testata sarà vuoto e sarà l'utente a compilare il filtro secondo le esigenze. 
 
-Da segnalare, in particolare, il campo del sottoconto **Banca**: non si tratta di un filtro, ma viene compilato automaticamente con il sottoconto di pagamento inserito in **[anagrafica](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/finance)** del cliente/fornitore intestatario della registrazione e da qui va ad aggiornare la registrazione contabile nel campo che prevede il tipo importo ‘Tot. Doc./registrazione' 
+Da segnalare, in particolare, il campo del sottoconto **Banca**: non si tratta di un filtro, ma viene compilato automaticamente con il sottoconto di pagamento inserito in **[anagrafica](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/finance)** del cliente/fornitore intestatario della registrazione e da qui va ad aggiornare la registrazione contabile nel campo che prevede il tipo importo *Tot. Doc./registrazione*, 
 
 <details>
 
@@ -499,6 +532,10 @@ Un risultato simile può essere ottenuto creando manualmente un pagamento e forz
 Non è consentito di forzare il pagamento con un importo superiore al residuo della partita.
 :::
 
+<details>
+
+  <summary>Ulteriori dettagli Click Here</summary>
+
 Nella lista dei pagamenti possono essere inserite note degli stessi: queste note possono essere collegate automaticamente, in causale, con la descrizione generica della registrazione contabile (flag *descrizione in giornale e pagamenti*, sconsigliato).
 
 Se il pagamento sarà gestito, secondo le **[impostazioni della causale](/docs/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates)**, al cambio storico della partita, non sarà rilevata nessuna differenza cambio in automatico e sarà gestirla manualmente in contabilità: l'opzione facilita inoltre, e la cosa è particolarmente utile, la gestione dell'uguaglianza tra partite aperte e saldo contabile. 
@@ -511,6 +548,8 @@ In basso saranno visualizzati campi di totalizzazione degli importi selezionati.
 
 Sulla base dei pagamenti effettivamente inseriti e delle impostazioni della causale, l'applicativo aggiornerà la riga con il tipo importo ‘Tot. Doc./registrazione' (ad esempio attribuito al sottoconto della banca di pagamento) con il totale dei pagamenti rilevati, mentre inserirà una riga per ogni pagamento o raggrupperà i pagamenti dare e avere, divisa per divisa, di ogni sottoconto cliente/fornitore pagato/incassato.
 
+</details>
+
 #### Pulsanti specifici  
 > **Parametri di inserimento**: richiama i parametri di inserimento della prima nota.  
 > **Ricerca partite**: permette di ricercare le partite da pagare/incassare.  
@@ -522,17 +561,25 @@ Sulla base dei pagamenti effettivamente inseriti e delle impostazioni della caus
 
 ## **5. Analitica**
 
-E' dedicata alla gestione a centro di costo/profitto (oggi centri aziendali), è presente solo se la causale ha almeno uno dei due flag di gestione Centri di costo / Centri di profitto.
+La scheda è dedicata alla gestione dei **centri di costo/profitto** (oggi centri aziendali), è presente solo se la causale ha almeno uno dei due flag di gestione **Centri di costo** / Centri di profitto.
 
 :::danger ATTENZIONE
-La gestione dei centri di costo / profitto (oggi centri aziendali) sarà differente a seconda che siano attivate o meno le **funzionalità avanzate per il controllo di gestione** all'interno della tabella [**Società**](/docs/configurations/tables/general-settings/company).
+La gestione dei centri di costo / profitto (oggi centri aziendali) sarà differente a seconda che sia attivato o meno il **flag GESTIONE CONTROLLING**all'interno della tabella [**Società**](/docs/configurations/tables/general-settings/company).
 
-Queste funzionalità, recentemente sviluppate, permettono una gestione più evoluta e flessibile del controlling (ad esempio consentendo analisi di centri aziendali multi dimensionali e reversioni di qualsiasi centro uno sull'altro) rispetto al set di funzionalità standard, le quali sono comunque tutt'ora disponibili decidendo di non attivare il **flag GESTIONE CONTROLLING** all'interno della tabella di cui sopra.
+ Con il flag ATTIVATO si abilitano le **funzionalità complete per il controllo di gestione**, attualmente da considerare come la **scelta standard**, permettono una gestione più evoluta e flessibile del controlling rispetto al set di funzionalità precedenti (con flag disattivato), presenti per retro-compatibilità.
+
+In questa configurazione **i centri di profitto NON sono più utilizzati**.
+
+Vengono utilizzati unicamente i centri di costo (che assumono la nuova definizione di centri aziendali). I centri aziendali possono accogliere infatti sia componenti positivi (di profitto) che componenti negativi (di costo) e possono essere ribaltati a piacimento gli uni sugli altri secondo le logiche previste nel modulo del Controlling in maniera totalmente flessibile.
+<details>
+
+  <summary>Dettagli vecchia gestione Click Here</summary>
+
+A seconda delle impostazioni della causale sarà presente una sezione, l'altra, o entrambe (in quest'ultimo caso con due opzioni: nel caso di *gestione separata cdc/cdp* entrambe saranno da valorizzare contemporaneamente, altrimenti la procedura attribuirà l'importo solo ad una delle due sezioni, i costi andranno sui centri di costo e i ricavi ai centri di profitto). 
+
+</details>
+
 :::
-
- a seconda delle impostazioni della causale sarà presente una sezione, l'altra, o entrambe (in quest'ultimo caso con due opzioni: nel caso di ‘gestione separata cdc/cdp' entrambe saranno da valorizzare contemporaneamente, altrimenti la procedura attribuirà l'importo solo ad una delle due sezioni, i costi andranno sui centri di costo e i ricavi ai centri di profitto). 
-
-Nel caso in cui si utilizzino le funzioni evolute per il controlling, sebbene sia possibile attivare nella causale contabile sia cdc che cdp, la valorizzazione di questi ultimi risulta superflua poiché si andrà a valorizzare unicamente i cdc (che assumono la nuova definizione di centri aziendali). I centri aziendali possono accogliere infatti sia componenti positivi (di profitto) che componenti negativi (di costo) e possono essere ribaltati a piacimento gli uni sugli altri secondo le logiche previste nel modulo conformemente al nuovo set di funzionalità in maniera totalmente flessibile.
 
 Se nella causale contabile è stata attivata anche l'opzione **Gestione macchina** sarà presente anche una griglia di valorizzazione costi/ricavi agli automezzi aziendali (sotto alla griglia principale dei centri di costo)  
 Richiamando l'automezzo tramite la combo box apposita sarà possibile attribuire anche i dati di dettaglio dello stesso.  
@@ -540,9 +587,11 @@ La combo box è collegata alla tabella Gestione automezzo (Logistica > Automezzi
 
 ### CAMPI PRESENTI NELLA GRIGLIA PRINCIPALE
 
-Se le funzionalità avanzate del controlling sono attive è presente una struttura tipo pivot table che raggruppa, sottoconto per sottoconto, le attribuzioni dei movimenti contabili ai centri per dimensione di analisi. Infatti secondo le metodologie avanzate di cui sopra i centri aziendali devono essere attribuiti ad una dimensione di analisi creando quindi dei sottoinsiemi funzionali a diverse configurazioni possibili nello sviluppo della contabilità analitica.
+Con le funzionalità complete del controlling attive, è presente una struttura tipo pivot table che raggruppa, sottoconto per sottoconto, le attribuzioni dei movimenti contabili ai centri aziendali per [***dimensione***](/docs/configurations/tables/controlling/analytical-accounting/dimension) di analisi. 
 
-Lo stesso sottoconto che accoglie il movimento di costo contabile, può dunque essere imputato contemporaneamente a più centri facenti riferimento a dimensioni (e quindi "raggruppamenti") diversi.
+Infatti i centri aziendali **devono** essere attribuiti ad una dimensione di analisi creando quindi dei sottoinsiemi funzionali alla gestione della contabilità analitica che risulta strutturata su analisi multidimensionali.
+
+Lo stesso sottoconto che accoglie il movimento di costo contabile, può dunque essere imputato **contemporaneamente** a più centri facenti riferimento ognuno a dimensioni (e quindi "raggruppamenti") diversi.
 
 All'interno della stessa dimensione il movimento potrebbe poi essere ripartito (esempio al 50%) su due centri.
 
@@ -556,6 +605,8 @@ All'interno della stessa dimensione il movimento potrebbe poi essere ripartito (
 
 **Conto / Sottoconto / Descrizione**: campi per l'inserimento del sottoconto contabile che viene attribuito al centro. I dati saranno riportati in automatico se è presente una associazione definita nel piano dei conti o in anagrafica (vedere sotto).
 
+**Divisione / Descrizione**: Il movimento può essere associato anche ad una singola divisione aziendale per supportare analisi specifiche riferite al ramo d'azienda.
+
 **Progetto**: Se nella causale contabile è abilitato il flag Progetti (ex Commesse) è visibile questo campo che permette di attribuire il movimento ad un progetto. Il widget fa riferimento alla tabella Progetti (Gestione Progetti > Progetti > Progetti)
 
 :::danger ATTENZIONE:
@@ -567,7 +618,7 @@ Tale dimensione (che può essere nominata a piacere, anche se si consiglia un no
 **Centri di costo / Descrizione centri di Costo**: campi per l'inserimento (tramite combo box posizionata sul campo Centri di costo) del centro sul quale attribuire il costo (o profitto). La combo box fa riferimento alla tabella **[Centri Aziendali](/docs/configurations/tables/controlling/analytical-accounting/corporate-centers)** (Configurazione > Tabelle >Controlling > Analitica > Centri Aziendali).  
 **Divisa**: valore ripreso dai dati della registrazione contabile, specifica la divisa (che presenta poi il controvalore in Euro) del movimento che viene attribuito.  
 **Data Valuta**: Data valuta del cambio tra divisa ed Euro (ripresa dal movimento contabile).  
-**Cambio**: Valore del cambio tra divisa ed Euro (ripresa dal movimento contabile).  
+**Cambio Diretto**: Valore del cambio diretto tra Euro e divisa (ripresa dal movimento contabile).  
 **Importo Valuta**: Importo in divisa del movimento (ripreso dal movimento contabile in caso di attribuzione totale del movimento ad un singolo centro oppure definito attraverso la percentuale di attribuzione nel piano dei conti o in anagrafica); il valore può essere variato manualmente per definire l'attribuzione ai centri desiderata in caso di ripartizione del costo su più centri. Il campo si presenta su un'unica sezione e viene poi inserito nella sezione dare o avere del movimento in euro seguendo lo schema della causale contabile o della registrazione (Tab Registrazione), ma può essere poi forzato.
 
 **Importo Dare / Importo Avere**: Importo in Euro del movimento (ripreso dal movimento contabile in caso di attribuzione totale del movimento ad un singolo centro oppure definito attraverso la percentuale di attribuzione nel piano dei conti o in anagrafica); il valore può essere variato manualmente per definire l'attribuzione ai centri desiderata in caso di ripartizione del costo su più centri.
@@ -576,7 +627,7 @@ Tale dimensione (che può essere nominata a piacere, anche se si consiglia un no
 
 **Descrizione di Dettaglio**: Ripresa dall'omonimo campo nelle righe del movimento contabile. 
 
-#### Il caricamento dei dati nelle sezioni cdc/cdp può essere automatizzato in due modi:
+### Il caricamento dei dati nelle sezioni cdc/cdp può essere automatizzato in due modi:
 
 - attraverso l'assegnazione dei centri nel piano dei conti, ai sottoconti di costo/ricavo, valorizzando la percentuale di attribuzione del valore di ogni conto ad uno o più centri. Per maggiori dettagli vedere **[Piano dei conti](/docs/erp-home/registers/accounting/analytic-chart-of-accounts)**. 
 
@@ -607,18 +658,32 @@ Rimane invece visibile il campo presente nella testata della registrazione per l
  
 In questo tab saranno assegnati ai vari Progetti (commesse di vendita) i dati economici rilevati nella registrazione di contabilità: automaticamente saranno assegnati tutti alla commessa inserita in testata, ma l'utente potrà suddividere gli importi in modo differente manualmente direttamente in questa sezione.
 
-Nell'inserimento manuale degli importi il software provvederà automaticamente ad attribuire il valore residuo al fine di quadrare il movimento contabile. Sono previsti controlli del bilanciamento degli importi con la contabilità generale e la possibilità di bloccare il salvataggio della registrazione in caso di differenze (vedere '** [parametri](/docs/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates)**' della causale).
+Nell'inserimento manuale degli importi il software provvederà automaticamente ad attribuire il valore residuo al fine di quadrare il movimento contabile. Sono previsti controlli del bilanciamento degli importi con la contabilità generale e la possibilità di bloccare il salvataggio della registrazione in caso di differenze (vedere [**parametri**](/docs/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates) della causale).
 
 ## 7. Cespiti
 
-La tab Cespiti è dedicata alla gestione dei beni ad uso pluriennale: sarà utilizzato per rilevare acquisti, incrementi, alienazioni e distruzioni.
+La tab Cespiti, visibile solamente se la causale contabile che si sta utilizzando ha attivo al suo interno il flag ***cespiti***, è dedicata alla gestione dei beni ad uso pluriennale: viene utilizzata per rilevare acquisti, incrementi, alienazioni e distruzioni.
 
-ATTENZIONE: La tab è visibile solamente se la causale contabile che si sta utilizzando presenta al suo interno il flag '**cespiti**' attivo. Inoltre è opportuno impostare, sempre nella causale (tab **[Dettaglio registrazione](/docs/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates)**), il **tipo di operazione** da compiere, tramite la combo box accanto al flag di cui sopra (acquisizione, dismissione, distruzione ecc...). Pertanto sarà opportuno creare diverse causali dedicate ai cespiti ed adatte a compiere le diverse operazioni possibili. 
+<details>
 
-### Tabella superiore
+  <summary>Ulteriori dettagli (Click to expand)</summary>
+  
+Nella causale (tab **[Dettaglio registrazione](/docs/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates)**), è necessario aver impostato anche il **tipo di operazione** da compiere, tramite la combo box accanto al flag di attivazione del tab cespiti (acquisizione, dismissione, distruzione ecc...). 
 
-E' dedicata alla codifica del nuovo cespite acquistato oppure alla selezione del cespite esistente per rilevare una nuova operazione al suo interno. **Per inserire un nuovo cespite** è sufficiente procedere a compilare una nuova riga, 
+Pertanto sarà opportuno creare diverse causali dedicate ai cespiti ed adatte a compiere le diverse operazioni possibili. 
+
+</details>
+
+
+### Griglia superiore
+
+E' dedicata all'inserimento del nuovo cespite acquistato oppure alla selezione del cespite esistente per rilevare una nuova operazione al suo interno. 
+
+:::tip[Attenzione]
+**Per inserire un nuovo cespite** è sufficiente procedere a compilare una nuova riga, 
 mentre **per selezionare un cespite esistente** bisogna necessariamente utilizzare il pulsante denominato **Seleziona cespite esistente** presente nella ribbon bar al fine di richiamare la scheda cespite già esistente ed integrarla.  
+:::
+
 
 #### PROCEDURA PER L'INSERIMENTO:
 
@@ -636,7 +701,9 @@ Tutti questi campi saranno ripresi direttamente dal cespite già esistente nel c
 
 Il campo **% ind**. che riguarda la percentuale di indetraibilità dell'iva, normalmente è compilato in automatico e dipende dal codice iva selezionato tramite il settaggio impostato nella tabella **[Aliquote e modalità iva](/docs/configurations/tables/finance/vat-rates)**, se ne sconsiglia la modifica manuale.
 
-**Stato**: campo impostato automaticamente, inizialmente, all'atto dell'acquisto si imposta su 'non ammortizzato', successivamente, a seconda degli ammortamenti accumulati lo stato sarà 'parzialmente ammortizzato' o 'totalmente ammortizzato'. Il valore può essere forzato manualmente tramite la combo box collegata ad una tabella fissa.  
+**Stato**: campo impostato automaticamente, inizialmente, all'atto dell'acquisto si imposta su *non ammortizzato*, successivamente, a seconda degli ammortamenti accumulati lo stato sarà *parzialmente ammortizzato* o *totalmente ammortizzato*. 
+
+Il valore può essere forzato manualmente tramite la combo box collegata ad una tabella fissa.  
 **Tipo operazione**: viene proposto sulla base dell'impostazione della causale contabile: tipicamente nel caso di acquisto o incrementi il tipo operazione è ‘costo originario', mentre per le vendite sarà ‘Alienazione parziale' o ‘Alienazione totale';  
 **Conto / Sottoconto / Descrizione**: viene ripreso dalla categoria cespite (se inserito nella tabella **[Categoria Cespite](/docs/configurations/tables/finance/fixed-asset-category)**);  
 **Data di inizio attività**: viene proposta sulla base della data registrazione: da questa data sarà verificato l'anno a partire dal quale il cespite può essere ammortizzato;  
@@ -644,7 +711,7 @@ Il campo **% ind**. che riguarda la percentuale di indetraibilità dell'iva, nor
 **Inizio / fine garanzia**: campo informativo in merito alla validità della garanzia.  
 **Usato**: identifica i cespiti che sono stati acquistati usati (per questi cespiti la percentuale d'applicazione dell'ammortamento il primo anno è del 100% e l'ammortamento anticipato è applicabile solo per un anno),  
 **In uso**: (proposto di default al salvataggio) indica che il cespite è effettivamente in uso (senza questo flag il cespite non può essere ammortizzato),  
-**Manut.**: indica che il cespite è da considerare per il calcolo delle manutenzioni. 
+**In manutenzione**: indica che il cespite è da considerare per il calcolo delle manutenzioni. 
 
 **Note**: campo per annotazioni, non riportato nei report standard (può essere aggiunto personalizzandoli). 
 
@@ -654,23 +721,23 @@ Il campo **% ind**. che riguarda la percentuale di indetraibilità dell'iva, nor
 
 **Tipo deducibilità**: consente di impostare la deducibilità fiscale dell'ammortamento per il cespite. La combo box è collegata alla tabella **[Tipi deducibilità](/docs/configurations/tables/finance/deductibility-types)**.
 
-**U.M.**: combo box che permette di selezionare l'unità di misura (codice) per la quantità (es. Kg, Pezzi...); la **Descrizione** dell'unità scelta è visualizzata nel campo adiacente;
+**Unità di Misura**: combo box che permette di selezionare l'unità di misura (codice) per la quantità (es. Kg, Pezzi...); la **Descrizione** dell'unità scelta è visualizzata nel campo adiacente;
 
-**Perc**: campo visibile solo se all'interno della form **[Parametri Cespiti](/docs/configurations/parameters/finance/fixed-assets-parameters)** è attivo il flag 'Percentuale su singolo Cespite'. Consente di definire una percentuale di ammortamento specifica per il cespite che si sta inserendo, che andrà a prevalere rispetto a quella definita all'interno della relativa categoria cespite. Il campo è riportato all'interno della scheda cespite.
+**Percentuale**: campo visibile solo se all'interno della form **[Parametri Cespiti](/docs/configurations/parameters/finance/fixed-assets-parameters)** è attivo il flag *Percentuale su singolo Cespite*. Consente di definire una percentuale di ammortamento specifica per il cespite che si sta inserendo, che andrà a prevalere rispetto a quella definita all'interno della relativa categoria cespite. Il campo è riportato all'interno della scheda cespite.
 
-**Tipo Ammortamento**: combo box che permette di selezionare la tipologia (codice) di ammortamento oggettivo (un ammortamento tecnico ed extra-contabile) da applicare; la **Descrizione** del codice selezionato è visualizzata nel campo adiacente; la combo box è collegata alla tabella **[Tipi Ammortamenti Oggettivi](/docs/configurations/tables/finance/objective-amortization-types)** (Tipo Ammortamento).
+**Tipi Ammortamento fiscale**: combo box che permette di selezionare la tipologia (codice) di ammortamento fiscale, svincolato da quello contabile, da applicare; la **Descrizione** del codice selezionato è visualizzata nel campo adiacente; la combo box è collegata alla tabella **[Tipi Ammortamenti fiscali](/docs/configurations/tables/finance/objective-amortization-types)** (Tipo Ammortamento).
 
 **Al salvataggio della riga potrebbero comparire, a seconda dei casi, diversi messaggi**:
 
-- "Il cespite ha valore inferiore a ___. Vuoi ammortizzarlo al 100%?": la categoria cespite ha impostato un valore nel campo del ‘limite amm. totale' e il valore inserito per il nuovo cespite è inferiore: siamo nel caso dei cespiti di valore inferiore a 516 € (il vecchio milione di lire) che la normativa fiscale consente di girare direttamente a costo (cioè ammortizzare al 100%) direttamente nell'anno di acquisto. Scegliendo Si (Yes) sarà eseguito l'ammortamento al 100% il primo anno, tramite l'aggiornamento del flag nella testata dell'anagrafica cespite in modo da essere gestito in modo specifico nella procedura automatica di ammortamento;
+- "Il cespite ha valore inferiore a ___. Vuoi ammortizzarlo al 100%?": la categoria cespite ha impostato un valore nel campo del *limite ammortamento totale* e il valore inserito per il nuovo cespite è inferiore (esempio beni inferiore a 516 €) che la normativa fiscale consente di girare direttamente a costo (cioè ammortizzare al 100%) direttamente nell'anno di acquisto. Scegliendo Si (Yes) sarà eseguito l'ammortamento al 100% il primo anno, tramite l'aggiornamento del flag nella testata dell'anagrafica cespite in modo da essere gestito in modo specifico nella procedura automatica di ammortamento;
 
-- "Vuoi legare l'alienazione parziale ad un'operazione patrimoniale già esistente?": la causale è di vendita parziale e la categoria cespite non ha il flag ‘incrementale': in questo caso sarà eseguito il messaggio per una assegnazione dell'importo di alienazione ad una specifica operazione patrimoniale del cespite. Esempio: per un cespite ‘non incrementale' ogni singola riga di operazione viene gestita a livello di ammortamenti con una vita a se stante: l'alienazione parziale (rispetto a tutto il cespite) potrebbe essere in realtà gestita come una vendita totale della singola operazione (ad es.: ho un computer, lo incremento con uno scanner, poi vendo solo lo scanner).
+- "Vuoi legare l'alienazione parziale ad un'operazione patrimoniale già esistente?": la causale è di vendita parziale e la categoria cespite non ha attivo il flag *incrementale*: in questo caso il messaggio chiede se procedere ad una assegnazione dell'importo di alienazione ad una specifica operazione patrimoniale del cespite. Esempio: per un cespite non incrementale (con componenti incrementativi separati) ogni singola riga di operazione viene gestita a livello di ammortamenti con una vita a se stante: l'alienazione parziale (rispetto a tutto il cespite) potrebbe essere in realtà gestita come una vendita totale della singola operazione (ad es.: ho un computer, lo incremento con uno scanner, poi vendo solo lo scanner).
 
 **Scegliendo Si (Yes)** verrà visualizzato un help (popup) per la ricerca di quale **componente** che costituisce il cespite si vuole alienare, permettendo di selezionarlo tramite i tasti *Ricerca* e *Seleziona*  
 
-In particolare si noti che i vari componenti sono facilmente individuabili anche perchè riferiti, all'interno dell'help, al campo **Progressivo** (*Progrg*.) così come all'interno della scheda cespite
+In particolare si noti che i vari componenti sono facilmente individuabili anche perchè riferiti, all'interno dell'help, al campo **Progressivo** così come all'interno della scheda cespite
 
-### Tabelle inferiori
+### Griglie inferiori
 
 Il contenuto è riferito alla riga superiore selezionata. 
 
@@ -678,9 +745,9 @@ Il contenuto è riferito alla riga superiore selezionata.
 
 (viene aggiunta una nuova riga per ogni operazione caricata nella griglia superiore). 
 
-**Data Oper**: Data alla quale viene registrato il movimento sul libro cespiti;
+**Data Operazione**: Data alla quale viene registrato il movimento sul libro cespiti;
 
-**Progr**: Progressivo di riga dell'operazione;
+**Progressivo**: Progressivo di riga dell'operazione;
 
 **Costo Originario**: il campo viene valorizzato solo dalle operazioni eseguite con Tipo operazione 'costo originario' con il valore patrimoniale di acquisto (corrispondente all'imponibile + eventuale iva indetraibile);
 
@@ -698,7 +765,7 @@ Ammortamento 30.000 - 15.000 = 15.000 x 3%; L'ammortamento sarà calcolato fich�
 
 **F.do Amm. Ord. / Anticipato / Decelerato**: i campi accolgono, a seconda del tipo di ammortamento calcolato (ordinario oppure anticipato o decelerato) il cumulo delle quote di ammortamento contabilizzate;
 
-**F.do Amm. Fiscale**: viene valorizzato se è attivo il flag 'Fiscale' presente nella categoria cespite oppure attivabile a livello di singola riga nella Tab 'Ammortamento'
+**Fondo Ammortamento Fiscale**: viene valorizzato se è attivo il flag 'Fiscale' presente nella categoria cespite oppure attivabile a livello di singola riga nella Tab 'Ammortamento'
 
 **Alienazione**: accoglie il valore di vendita del bene e viene valorizzato in automatico tramite il campo 'Importo' della griglia superiore se il Tipo Movimento è 'Alienazione'. Sulla base di questo valore e del valore della Plusvalenza o minusvalenza sarà aggiornato il valore storico del bene da scaricare dal libro cespiti;
 
@@ -706,7 +773,7 @@ Ammortamento 30.000 - 15.000 = 15.000 x 3%; L'ammortamento sarà calcolato fich�
 
 **Plusvalenza**: accoglie il valore della plusvalenza di vendita del cespite e concorre al calcolo del valore storico ceduto;
 
-**Plusv. reinvestita**: non attivo;
+**Plusvalenza reinvestita**: non attivo;
 
 **Rivalutazione**: aumenta il costo storico a seguito legge di rivalutazione;
 
@@ -728,7 +795,7 @@ Ammortamento 30.000 - 15.000 = 15.000 x 3%; L'ammortamento sarà calcolato fich�
 
 **Note**: note libere di riga;
 
-**Progr Vend**: in caso di alienazione parziale riporta il progressivo della riga selezionata per la vendita del relativo componente;
+**Progressivo Vendita**: in caso di alienazione parziale riporta il progressivo della riga selezionata per la vendita del relativo componente;
 
 **Stampato**: si attiva se è stampato in definitiva il libro cespiti relativamente alla riga in questione.
 
@@ -736,13 +803,13 @@ Ammortamento 30.000 - 15.000 = 15.000 x 3%; L'ammortamento sarà calcolato fich�
 
 (normalmente non utilizzata), serve per collegare alla scheda cespite un costo che non va capitalizzato (perché non pluriennale).
 
-I dati contenuti in questo tab vengono valorizzati se nella griglia superiore viene inserita una riga con Tipo movimento 'Operazioni economiche'
+I dati contenuti in questo tab vengono valorizzati se nella griglia superiore viene inserita una riga con Tipo movimento *Operazioni economiche*
 
 I campi sono simili a quelli presenti nella tab Operazioni patrimoniali
 
 #### AMMORTAMENTI:
 
-Normalmente non utilizzata all'interno della registrazione contabile, poiché l'ammortamento può essere più comodamente gestito tramite la relativa procedura automatica nell'ambito delle scritture di assestamento, oppure, per singolo cespite, dall'interno della scheda cespite (nell'apposita griglia che ricalca i campi presenti nella tab in commento).
+**Normalmente non utilizzata all'interno della registrazione contabile**, poiché l'ammortamento può essere più comodamente gestito tramite la relativa procedura automatica nell'ambito delle scritture di assestamento, oppure, per singolo cespite, dall'interno della scheda cespite (nell'apposita griglia che ricalca i campi presenti nella tab in commento).
 
 Nel caso si desideri, nell'ambito di una registrazione di prima nota, effettuare l'ammortamento (per quanto riguarda la scheda cespite, la parte contabile sarà gestita nel tab Registrazione) occorrerà richiamare il cespite esistente da ammortizzare tramite il tasto **Seleziona un cespite esistente** che farà comparire la riga relativa nella griglia superiore, assicurarsi che il Tipo operazione sia *F.do Ammortamento Ordinario*, se non già previsto nelle impostazioni della causale, inserire nel campo **Importo** il valore dell'ammortamento annuale da registrare, quindi nella tab *Ammortamenti* indicare l'anno dell'ammortamento (campo **Anno**) e compilare manualmente i campi obbligatori della griglia:
 
@@ -762,7 +829,7 @@ Nel caso si desideri, nell'ambito di una registrazione di prima nota, effettuare
 
 **Costo**: risultato del calcolo imponibile * Percentuale * giorni possesso / 365 (può essere forzato manualmente).
 
-**Contab**: flag contabilizzato, attribuisce alla registrazione la qualifica di contabilizzata impedendone la sovrascrittura, senza questo flag non potrà essere elaborato un ammortamento successivo.
+**Contabilizzato**: flag contabilizzato, attribuisce alla registrazione la qualifica di contabilizzata impedendone la sovrascrittura, senza questo flag non potrà essere elaborato un ammortamento successivo.
 
 **Fiscale**: flag che identifica l'ammortamento ai fini fiscali ed andrà ad incrementare il fondo fiscale nel relativo campo, distinto da quello civilistico / contabile.
 
@@ -865,6 +932,8 @@ Sezione riferita al sistema di monitoraggio attività degli utenti e verifica de
 **La griglia sottostante,** visualizza l'eventuale registrazione automatica collegata a quella in uso: ad ogni modifica della prima, infatti, la procedura continuerà ad allineare la seconda secondo la logica delle causali automatiche.
 
 ## 9. Raggruppamento partite  
+
+**GESTIONE PARTICOLARE DELLE PARTITE APERTE ALTERNATIVA RISPETTO A QUELLA STANDARD SOPRA DESCRITTA.**
 
 La gestione dei Raggruppamenti partite permette di creare, in fase di apertura partite oppure in un secondo tempo, dei gruppi di partite (il gruppo è una sorta di contenitore con all'interno, anche visivamente, le partite di dettaglio).
 
