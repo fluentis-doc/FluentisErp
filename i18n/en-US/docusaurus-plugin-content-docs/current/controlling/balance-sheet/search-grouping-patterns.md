@@ -24,7 +24,7 @@ RIBBON BAR: it represents the Form menu, that is the area in which it is possibl
 | Function | Meaning |
 | --- | --- |
 |  Report - Reclassification Patterns  | It refers to the procedure to print the reclassification pattern. |
-|  Report – Reclassification Valorization]  | It refers to the procedure to print the valorization of reclassification. |
+|  Report – Reclassification Valorization  | It refers to the procedure to print the valorization of reclassification. |
 
 FILTER AREA: the filter area contains the list of possible data types thanks to which it is possible to perform a section, a research on total patterns inserted. typically filters have 'AND' condition and it is possible to specify more filter criteria at the same time.
 
