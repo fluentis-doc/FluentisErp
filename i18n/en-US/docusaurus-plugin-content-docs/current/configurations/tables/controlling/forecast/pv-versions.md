@@ -1,5 +1,5 @@
 ---
-title: P.V. Versions (Versioni P. V.)
+title: P.V. Versions
 sidebar_position: 4
 ---
 

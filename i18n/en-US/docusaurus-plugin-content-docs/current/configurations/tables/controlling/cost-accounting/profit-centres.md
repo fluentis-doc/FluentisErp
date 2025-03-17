@@ -22,10 +22,10 @@ The general section presents the branched structure of the Profit Centres define
 
 **End date**: defines the end date of the profit center's use.
 
-**Valuable Flag (Flag valorizzabile)**: when this flag is set, the profit center can be valued with accounting movements. Remove the flag from the structure levels that you do not want to value incorrectly and leave it only at the lowest level.
+**Valuable Flag**: when this flag is set, the profit center can be valued with accounting movements. Remove the flag from the structure levels that you do not want to value incorrectly and leave it only at the lowest level.
 
-**MRP Flag (Flag MRP)**: this flag allows the use of the profit center in the production module.
+**MRP Flag**: this flag allows the use of the profit center in the production module.
 
-:::tip Note (Nota)
-the table is to be considered obsolete and is managed only for backward compatibility. It is recommended to rather define a *revenue dimension (dimensione ricavi)* to be used in *Corporate centers*.
+:::tip Note
+the table is to be considered obsolete and is managed only for backward compatibility. It is recommended to rather define a *revenue dimension* to be used in *Corporate centers*.
 :::
