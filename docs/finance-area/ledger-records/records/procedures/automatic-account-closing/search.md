@@ -11,15 +11,22 @@ Nella zona di testata sono presenti alcuni campi per il filtro, in particolare i
 
 ![](/img/it-it/finance-area/ledger-records/records/automatic-account-closing/search/image01.png)
 
+### Come eseguire una chiusura dei conti
+
+- Dalla presente maschera premere [**Nuovo**](/docs/finance-area/ledger-records/records/procedures/automatic-account-closing/new-account-closing) per creare una *Nuova* chiusura per l'anno che verrà indicato nei parametri della nuova chiusura (nella maschera che si apre)
+- Nella nuova chiusura che stiamo creando inserire tutti i parametri necessari (vedere il link di cui al punto precedente)
+- Calcolare i saldi tramite il comando *Ripresa valori sottoconti* (presente all'interno della nuova chiusura)
+- Contabilizzare la chiusura tramite il comando *Crea registrazione per la chiusura conti* (presente all'interno della nuova chiusura)
+
 #### Campi specifici  
 
 **Descrizione**: liberamente assegnabile in fase di creazione della nuova chiusura;
 
 **Data**: data di elaborazione della chiusura;
 
-**Vers**: numero di versione della chiusura (attenzione, deve essere un numero univoco per ogni società e rappresenta in pratica un numero progressivo delle varie chiusure presenti);
+**Versione**: numero di versione della chiusura (attenzione, deve essere un numero univoco per ogni società e rappresenta in pratica un numero progressivo delle varie chiusure presenti);
 
-**Contab**: indica se la chiusura è contabilizzata (flag attivo) oppure solo calcolata (flag non attivo);
+**Contabilizzata**: indica se la chiusura è contabilizzata (flag attivo) oppure solo calcolata (flag non attivo);
 
 **Note**: campo liberamente compilabile in fase di creazione della chiusura.
 
