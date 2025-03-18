@@ -17,6 +17,6 @@ The table allows for defining and managing the list of combined nomenclature cod
 
 **Service**: indicates the coding of a nomenclature of services, consisting of 5 characters, to be proposed in the valuation of the sections of services in the models.
 
-:::tip Note (Nota)
+:::tip Note 
 Within Bizlink, there is a procedure for importing from a spreadsheet to update the nomenclatures en masse year by year.
 :::

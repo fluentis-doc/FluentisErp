@@ -1,5 +1,5 @@
 ---
-title: Tax/Objective Depreciation Types (Tipi ammortamenti fiscali/oggettivi)
+title: Tax/Objective Depreciation Types 
 sidebar_position: 26
 ---
 
@@ -17,8 +17,8 @@ The current functionality remains active (also for backward compatibility) in th
 
 **Incremental oper.**: management flag as "incremental" also for objective data (refer to the same flag of the asset category).
 
-**Usage days calculation (Calcolo giorni d'uso)**: calculation flag for usage days that will calculate the actual days of asset usage in the year instead of using the entire fiscal year as in normal calculation.
+**Usage days calculation**: calculation flag for usage days that will calculate the actual days of asset usage in the year instead of using the entire fiscal year as in normal calculation.
 
 **Perc.** The standard percentage to apply.
 
-**Fixed perc. (Perc. fissa)**: with this flag active, the percentage will be fixed without the possibility of customizing it asset by asset.
+**Fixed perc.**: with this flag active, the percentage will be fixed without the possibility of customizing it asset by asset.

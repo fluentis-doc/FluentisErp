@@ -3,7 +3,7 @@ title: Numeration Ledger Records
 sidebar_position: 19
 ---
 
-Form Path: **Configuration > Administration > Numeration Ledger Records (Configurazione > Amministrazione > Numerazione registrazioni contabili)**
+Form Path: **Configuration > Administration > Numeration Ledger Records**
 
 :::tip[FAst Start]
 The table is affected by the [**Fast Start**](/docs/guide/fast-start) procedure.

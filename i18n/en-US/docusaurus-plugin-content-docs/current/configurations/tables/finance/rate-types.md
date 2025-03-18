@@ -15,7 +15,7 @@ The definition of this table allows for the coding and setting of various types 
 
 **From due date**: expiration date from which interest calculation is to be managed (reference is to LEGISLATIVE DECREE October 9, 2002, n. 231). The purpose of this field is to prevent interest from being calculated on documents with an expiration date prior to the issuance of the law.
 
-**Min. interest (Interesse min.)**: minimum amount of interest below which no amount should be valued.
+**Min. interest**: minimum amount of interest below which no amount should be valued.
 
 **Franchise days**: number of grace days that will be deducted from the count of late days.
 

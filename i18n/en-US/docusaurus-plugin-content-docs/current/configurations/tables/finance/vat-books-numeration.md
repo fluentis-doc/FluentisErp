@@ -1,5 +1,5 @@
 ---
-title: Numbering registers iva
+title: VAT Numbering Registers
 sidebar_position: 22
 ---
 
@@ -9,7 +9,7 @@ The numbering settings are the same as those of other standard counters.
 
 The numbering set in this table is referenced within the [**VAT registers table**](/docs/configurations/tables/finance/vat-books/).
 
-:::tip Note (Nota)
+:::tip Note
 In the Italian reality, it is **not** necessary to define any counter in this table, as the protocol **always** follows the solar year, regardless of the fiscal year spanning or not spanning the solar year itself, and therefore the standard numbering already provided in the VAT Registers table is sufficient for management.
 The option has been included for foreign cases where the protocol does not follow the solar year.
 :::

@@ -3,9 +3,9 @@ title: VAT Books
 sidebar_position: 20
 ---
 
-Form path: **Configuration > Tables > Administration > VAT Books (Configurazione > Tabelle > Amministrazione > Registri IVA)**
+Form path: **Configuration > Tables > Administration > VAT Books**
 
-:::tip[Fast Start (FAst Start)]
+:::tip[Fast Start]
 The table is affected by the [**Fast Start**](/docs/guide/fast-start) procedure.
 
 If you intend to configure manually, refer to the checklist of the linked page.
@@ -44,7 +44,7 @@ The registers created by the Fast Start are already ready to manage:
 
 **To settle**: allows determining which VAT registers are to be managed in the printing of the periodic VAT liquidation.
 
-**Ref. purchase reg. (Rif. reg. acquisto)**: the field is active only for sales/revenue registers, to indicate the originating purchase VAT register of the revenue allocation.
+**Ref. purchase reg.**: the field is active only for sales/revenue registers, to indicate the originating purchase VAT register of the revenue allocation.
 
 **Description**: description of the ref. purchase register.
 
@@ -58,17 +58,17 @@ The registers created by the Fast Start are already ready to manage:
 
 ### Second Section  
 
-Allows setting the protocol counter for each fiscal year in the 'Initial VAT Prot. (Prot. IVA Iniziale)' field.
+Allows setting the protocol counter for each fiscal year in the 'Initial VAT Prot.' field.
 
 **Year**: reference year.
 
-**Initial VAT Prot. (Prot. IVA iniziale)**: initial VAT protocol for the reference year.
+**Initial VAT Prot.**: initial VAT protocol for the reference year.
 
-**Last VAT Prot. (Ultimo prot. IVA)**: allows viewing which is the last VAT protocol that has been definitively printed in the register itself.
+**Last VAT Prot.**: allows viewing which is the last VAT protocol that has been definitively printed in the register itself.
 
 **Last print date**: date of execution of the last definitive print.
 
-**Last printed page (Ultima pag. stampata)**: last page number printed definitively.
+**Last printed page**: last page number printed definitively.
 
 :::tip Note
 Printing this table allows viewing the last period printed definitively for each register and year.

@@ -5,7 +5,7 @@ sidebar_position: 13
 
 The table allows you to define and manage the payment methods for taxes in the Recipients module.
 
-#### Specific Fields (Campi specifici)
+#### Specific Fields 
 
 **Code**: code for the payment method.
 

@@ -1,5 +1,5 @@
 ---
-title: VAT Accounting Types (Tipi contabilizzazione IVA)
+title: VAT Accounting Types
 sidebar_position: 24
 ---
 This table is referenced within the customer/supplier registry to which we refer, and then within the VAT Rates/methods to define the specific sub-accounts to be used for each type.
