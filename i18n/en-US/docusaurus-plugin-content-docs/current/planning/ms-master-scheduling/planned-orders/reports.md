@@ -1,5 +1,5 @@
 ---
-title: Production Orders >Reports
+title: Production Orders > Reports
 sidebar_position: 6
 ---
 
