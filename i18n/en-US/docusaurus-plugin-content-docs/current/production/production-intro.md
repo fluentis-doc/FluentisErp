@@ -21,26 +21,26 @@ import Link from '@docusaurus/Link';
 <div className="cardContainer">
     <div className="card">
 ###     <Link to="/docs/production/production-intro">MES - Manufacturing Execution System</Link>
-        <p><Link to="/docs/production/pp-production-in-progress/production-orders/search-production-orders" className="bold-link">Production Orders (Ordini di produzione)</Link></p>
+        <p><Link to="/docs/production/pp-production-in-progress/production-orders/search-production-orders" className="bold-link">Production Orders</Link></p>
         <p>This module is designed to optimize and simplify the planning of production processes. It allows the management of orders in "Launched" and "Executable" statuses, enabling a clear distinction between orders ready for start and those already in execution.</p>
-        <p><Link to="/docs/production/pp-production-in-progress/picking-materials-list" className="bold-link">Materials Picking List (Lista prelievo materiali)</Link></p>
+        <p><Link to="/docs/production/pp-production-in-progress/picking-materials-list" className="bold-link">Picking Materials List</Link></p>
         <p>It allows for effective management and movement of materials destined for production.</p>
-        <p><Link to="/docs/production/pp-production-in-progress/signals/sisgnals" className="bold-link">Production Declarations (Dichiarazioni di produzione)</Link></p>
+        <p><Link to="/docs/production/pp-production-in-progress/signals/sisgnals" className="bold-link">Production Declarations</Link></p>
         <p>This module allows users to generate production declarations by tracking the progress status of each phase, thus ensuring complete visibility and control of the production process.</p>
-        <p><Link to="/docs/production/pp-production-in-progress/procedures/signals-record" className="bold-link">Declaration Registration (Registrazione dichiarazioni)</Link></p>
+        <p><Link to="/docs/production/pp-production-in-progress/procedures/signals-record" className="bold-link">Declaration Record</Link></p>
         <p>This procedure allows for the registration of multiple production declarations simultaneously.</p>
-        <p><Link to="/docs/production/pp-production-in-progress/procedures/production-orders-release" className="bold-link">Release of Production Orders (Rilascio ordini di produzione)</Link></p>
+        <p><Link to="/docs/production/pp-production-in-progress/procedures/production-orders-release" className="bold-link">Production Orders Release</Link></p>
         <p>The procedure for releasing production orders in Fluentis allows changing the status of orders from *Launched* to *Executable*, simultaneously generating the necessary warehouse movements.</p>
     </div>
 </div>
 <div className="cardContainer">
     <div className="card">
 ###     <Link to="/docs/production/mes/mes-intro">Fluentis MES</Link>
-        <p><Link to="/docs/production/mes/workstation" className="bold-link">Workstation (Workstation)</Link></p>
+        <p><Link to="/docs/production/mes/workstation" className="bold-link">Workstation</Link></p>
         <p>They allow for efficient management of production operations, enabling coding, filtering, and associating resources. Thanks to their intuitive interface, users can optimize workflow and improve operational efficiency.</p>
-        <p><Link to="/docs/production/mes/production-resources" className="bold-link">Production Resources (Risorse di produzione)</Link></p>
+        <p><Link to="/docs/production/mes/production-resources" className="bold-link">Production Resources</Link></p>
         <p>It allows for the easy and quick customization of the layout and behavior of each work center, adapting the system to the specific business needs.</p>
-        <p><Link to="/docs/production/mes/mes-main-form" className="bold-link">MES (MES)</Link></p>
+        <p><Link to="/docs/production/mes/mes-main-form" className="bold-link">MES</Link></p>
         <p>It is designed to optimize and simplify the process of declaring production activities. This interface allows operators to monitor and manage production resources in real-time, facilitating the entry of data related to the processing phases and produced quantities.</p>
     </div>
 </div>
