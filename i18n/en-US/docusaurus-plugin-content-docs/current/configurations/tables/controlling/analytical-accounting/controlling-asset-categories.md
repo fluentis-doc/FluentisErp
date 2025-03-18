@@ -17,10 +17,10 @@ In this table, we identify the various calculation types that we want to use in 
 
 - **Description** of the category
 
-- **COST SUBACCOUNT** and **FUND SUBACCOUNT** to use: these could be the same subaccounts associated with accounting asset categories, in order to perform year-end adjustments between the two calculation logics, or specific controlling subaccounts that are not used in accounting.
+- **COST DETAIL ACCOUNT** and **FUND DETAIL ACCOUNT** to use: these could be the same detail accounts associated with accounting asset categories, in order to perform year-end adjustments between the two calculation logics, or specific controlling detail accounts that are not used in accounting.
 
 :::tip Note
-In cases where it is desired to use specific subaccounts in controlling, separate from those of general accounting, it is recommended to define a specific *Account type* with the *Controlling* flag set, as these subaccounts cannot even mistakenly be used in general accounting entries.
+In cases where it is desired to use specific detail accounts in controlling, separate from those of general accounting, it is recommended to define a specific *Account type* with the *Controlling* flag set, as these detail accounts cannot even mistakenly be used in general accounting entries.
 :::
 
 - **Calculation base** we can choose from:  
