@@ -1,57 +1,116 @@
 ---
-title: Nuovo ExtraData Semplice
-sidebar_position: 2
+title: ExtraData Simple
+sidebar_position: 1
 ---
 
-Gli extradata è che si dividono in due categorie: 
+## ExtraData Semplice - Aspetti introduttivi
 
- - **Semplici**: sono delle proprietà agganciate agli oggetti
+Tramite l'ExtraData semplice è possibile aggiungere delle nuove proprietà semplici ad un oggetto Fluentis esistente.  
+Le proprietà semplici che possono essere aggiunte sono di diverse tipologie:
+* Booleani.
+* Stringhe.
+* Numeri interi, decimali.
+* Array.
 
- - **Oggetti**: sono dei veri e propri oggetti a sé stanti
+## Creazione dell'Extradata Semplice
 
-Ognuno dei due ha una procedura, partiamo analizzando gli extradata semplici.
+### Testata
 
-### Creazione Extradata
+Andare in **Home > Utilità > ExtraData > ExtraData** e cliccare sul pulsante **Nuovo** **ExtraData**.
 
-Andare in **Home > Utilità > ExtraData > ExtraData** e cliccare sul pulsante **Nuovo** extradata.
+![](../../../../../static/images/20250313151835.png)
 
-Nelle immagini sottostanti si vede la prima parte della creazione.
+In questo caso procediamo a crare un ExtraData **semplice** di tipo stringa chiamandolo **Modello**.  
 
-![](/img/it-it/configurations/utility/extradata/new-extradata-simple/image01.png)        
+![](../../../../../static/images/20250313151723.png)
 
-1. selezionare il radio button corrispondente a **Semplice**.
+La form di dettaglio di creazione dell'ExtraData è composta così come segue:
 
-2. inserire il **Codice** che identificherà l'extradata.
+* **Codice**: che identifica l'extradata.
+* **Tipo contenuto**: sarà di tipo semplice.
+* **Tipo Widget**: definisce le modalità di visualizzazione e selezione per le tipologie Oggetto e Datasource. Per il tipo Simple va lasciato vuoto perché il widget caricato sarà il widget di default del framework associato al tipo di dato.
+* **Nome**: deve essere una parola presente nel dizionario altrimenti dovremo aggiungerla.  
+* **Tipo di dati**: si tratta della tipologia del dato.
+* **Stereotipo**: opzioni aggiuntive sulla formattazione del campo, come testo multilinea o definizione del numero di decimali.
+* **Descrizione**: è obbigatorio - descrizione che verrà visualizzata, esattamente come il Name è selezionabile dal dizionario.
+* **Validity Start/End**: se vogliamo dare all’extradata una validità temporanea
+* **View right / Modify right**: per associare uno specifico diritto che consenta la visualizzazione o la modifica dell'extradata.
 
-3. inserire il **Nome** geo localizzato dell'extradata (deve essere quindi una parola presente nel dizionario altrimenti dovremmo aggiungerla).
-
-4. selezionare il **Tipo di dati** tramite il menu a tendina. 
-
-5. inserire una **Descrizione** che spesso corrisponde al **Nome**.
-
-6. se ha una scadenza inserire **Data inizio/fine validità** altrimenti non serve inserirli.
-
-7. se necessario, inserire i **Diritti di modifica e visualizzazione**.
-
-8. selezionare lo **Stereotipo** del valore (la modalità di visualizzazione della colonna Valore in tutte le gestioni dei documenti).
 
 Lo stereotipo è attivabile per il *Tipo di dati*: Date (DateTime e Time); Decimal (Currency e Numeric); Double, Float e Long (Numeric); Int (Color, Numeric e Year); Short (Numeric e Year); String (MultiLine).
 
 Lo stereotipo è attivabile per tutti gli oggetti attivati e per singolo oggetto. 
 
-Negli ExtraData, presenti in tutte le gestioni dei documenti, per le colonne: Descrizione (per gli ExtraData di tipo Semplice) e Note è stata implementata la proprietà Multi-linea (attivabile premendo la combinazione dei tasti MAIUSCOLO+INVIO).
+### Attivazioni
 
-Nella griglia **Attivazioni**, si vede l'elenco degli oggetti nei quali l'extradata sarà possibile vederlo e valorizzarlo.
+La griglia delle attivazioni permette di definire le classi su cui l'ExtraData dovrà essere disponibile.  
+La griglia è così composta:
+* **Oggetto padre**: è l'oggetto a cui si lega l'ExtraData, nel nostro caso FSItem. Ciascun ExtraData può essere associato a più oggetti.  
+* **Proprietà**: si tratta della proprietà dell'oggetto padre in cui verrà caricato l'ExtraData. In questo caso la proprietà ExtraData è presente sull'oggetto FSItem, generata dalla referenza che collega FSItem a FSItemExtraData.  
+* **Required**: indica se l'ExtraData èobbligatorio per l'oggetto a cui è associato.
+* **To Print**: indicato se l'ExtraData deve essere disponibile per la stampa.
+* **Ordinamento**: si tratta dell'ordinmaneto dell'oggetto padre, non ha ripercussioni sul funzionamento, solitamente viene lasciato a 0.
+* **Start valid**. **/** **End validity**: se la validità è temporanea, indica inizio e fine del periodo in cui l'ExtraData potrà essere utilizzato.  
+* **Stereotype**: la formattazione del campo, cambia a seconda del tipo di dato. Andrebbe a sovrascrivere lo stereotype generale definito per l'extradata se si volesse forzare un comportamento specifico per un particolare oggetto diverso da quello di default.
 
-Per aggiungerne uno **Nuovo** basta andare a scrivere nell'ultima riga presente nella tabella.
+### Inserimento dell'ExtraData nella form di dettaglio
 
-I flag **Obbligatorio** e **Da stampare** identificano se rispetto all'oggetto in cui è visibile l'extradata, è obbligatorio l'inserimento e può essere stampato.
+Una delle principali novità introdotte a partire dalla major-release Fluentis2021 riguarda la possibilità di inserire direttamente nella form di dettaglio il widget che caricherà i contenuto dell'ExtraData.  
+In questo caso, poiché L'ExtraData è di tipo semplice, verrà caricato il widget di default del framework associato al tipo di dato.  
 
-L'**Ordinamento** serve semplicemente per la visualizzazione, quando aggiungiamo l'extradata; l'ordine con cui poi ci appariranno gli extradata all'interno dell'oggetto è deciso da questo campo.
+Per includere l'ExtraData nella form di dettaglio dell'articolo (FSItem), possiamo utilizzare il **form navigator** e **l'object navigator**.  
+1. Dall'**Object Navigator**, espandiamo il nodo ExtraData relativo all'oggetto di business e selezionamo l'ExtraData che ci interessa.
+2. Dal **Form Navigator**, espandiamo il navigator fino al tab Generalità di cui vogliamo inserire l'ExtraData.  
 
-![](/img/it-it/configurations/utility/extradata/new-extradata-simple/image02.png) 
+![](../../../../../static/images/20250313151552.png)
 
-9. Aggiungere extradata nella form Fluentis
+Per visualizzare l'ExtraData nella form di dettaglio dell'articolo è sufficiente dare drag and drop dal Navigatore Oggetti al Form Navigator.  
+Nell'esempio sopracitato è stato riportato L'ExtraData 'Model' nel LayoutGroup che definisce i dati di testata dell'articolo (FSItem).   
+L'ExtraData è stato valorizzato con un dato di tipo stringa.   
+
+Per rendere **persistente** la visualizzazione dell'ExtraData nella form di dettaglio dell'articolo è sufficiente creare uno specifico profilo e caricarlo ogni qualvolta ci sia la necessità di visualizzare l'ExtraData.  
+
+![](../../../../../static/images/20250313153623.png)
+
+
+Infine, sempre nella form di dettaglio dell'articolo, è presenta uno specifico tab denominato **Extra data** dove possiamo trovare ciascun ExtraData associato all'articolo.  
+![](../../../../../static/images/20250313154302.png).  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 
+
+
+1. Aggiungere extradata nella form Fluentis
 
 Per poter aggiungere l'extradata direttamente da uno di questi oggetti, nell'apposita maschera di Fluentis premere tasto dx sulla riga blu (con  ![](/img/neutral/common/filter.png)) e cliccare su **Aggiungi extradata di primo livello**. Questo procedimento va eseguito per ogni extradata che vogliamo aggiungere. Una volta aggiunto uno, potremmo anche **Aggiungere degli extradata figli**.
 
@@ -82,3 +141,4 @@ Ora creare una nuova fattura e come cliente/fornitore inserire lo stesso dell'im
 Vedi anche [Inserimento Extradata Semplice in Xtrareport](/docs/configurations/utility/extra-data/extradata/insert-extradata-simple-in-xtrareport).
 
 Vedi anche [Nuovo ExtraData Oggetto](/docs/configurations/utility/extra-data/extradata/new-extradata-object).
+ -->
