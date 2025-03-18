@@ -4,6 +4,16 @@ sidebar_position: 3
 ---
 La form si apre tramite il percorso *Vendite > Agenti > Liquidazioni agenti > Ricerca liquidazioni agenti* con click sul pulsante **Nuovo**.
 
+:::tip[Consiglio]
+Sebbene sia possibile creare *manualmente* una liquidazione, come spigato qui di seguito,
+
+consigliamo di utilizzare la **procedura guidata (wizard)** di [**Creazione automatica liquidazione agenti**](/docs/sales/agents/procedures/automatic-generation-of-commission-settlement).
+:::
+
+:::note[Nota]
+Uno scenario con **esempi** di gestione agenti e calcoli provvigioni è presente [**qui**](/docs/sales/agents/agent-scenario)
+:::
+
 ## **1. Liquidazioni**
 
 L'inserimento di una liquidazione richiede: 
