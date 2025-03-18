@@ -3,7 +3,14 @@ title: Ricerca
 sidebar_position: 1
 ---
 
-In questa form è possibile ricercare aperture dei conti precedentemente create e procedere all' **inserimento di una nuova chiusura.**
+In questa form è possibile ricercare aperture dei conti precedentemente create e procedere all' [**inserimento di una nuova apertura conti.**](/docs/finance-area/ledger-records/records/procedures/automatic-accounts-opening/new)
+
+
+:::tip[Attenzione]
+La presente procedura serve per supportare l'apertura iniziale dei conti. Non gestisce la Ri-apertura di inizio anno.
+
+A partire dalla prima chiusura di bilancio, le successive aperture conti potranno essere gestite direttamente dalla [**procedura di chiusura**](/docs/finance-area/ledger-records/records/procedures/automatic-account-closing/new-account-closing).
+:::
 
 Per i campi di dettaglio della testata e della griglia di ricerca vedere **[Chiusura Automatica conti.](/docs/finance-area/ledger-records/records/procedures/automatic-account-closing/search)**
 
