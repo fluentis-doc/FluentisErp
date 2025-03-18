@@ -1,77 +1,53 @@
 ---
-title: Nuovo ExtraData Oggetto
-sidebar_position: 3
+title: Extradata Object
+sidebar_position: 2
 ---
 
-Gli extradata è che si dividono in due categorie:
+## ExtraData Basato su oggetto - Aspetti introduttivi
 
-- **Semplici**: sono delle proprietà agganciate agli oggetti
-
-- **Oggetti**: sono dei veri e propri oggetti a sé stanti
-
-Ognuno dei due ha una procedura, partiamo analizzando gli extradata oggetto.
+Tramite l'ExtraData basato su oggetto è possibile legare una proprietà rappresentata da un oggetto standard o custom con un oggetto di Fluentis.   
+*Per spiegare meglio questo concetto utilizziamo un esempio pratico dove leghiamo l'oggetto **FSColor** che rappresenta un set di **colori**, con l'oggetto Standard di Fluentis **FSItem (Articolo)***.  
 
 
-### Creazione Extradata
+## Creazione Extradata Basato su oggetto 
+Andare in **Home > Utilità > ExtraData > ExtraData** e cliccare sul pulsante **Nuovo** **ExtraData**.
 
-Andare in **Home > Utilità > ExtraData > ExtraData** e cliccare sul pulsante **Nuovo** extradata.
+![](../../../../../static/images/20250313151835.png)
 
-Nelle immagini sottostanti si vede la prima parte della creazione.
+### Testata
 
-![](/img/it-it/configurations/utility/extradata/new-extradata-object/image01.png) 
+Procediamo a creare l'**ExtraData** basato sull'oggetto **FSColor** chiamandolo **Color**.
 
-1. selezionare come prima cosa il radio button corrispondente a **Oggetto**.
+![](../../../../../static/images/20250313165106.png)
 
-2. inserire il **Codice** che identificherà l'extradata.
+* **Code:** obbligatorio - codice.
+* **Content Type:** obbligatorio - permette di selezionare il widget di visualizzazione dell'ExtraData, sono disponibili tre opzioni:
+  * **Combobox**: si tratta di un menu a tendina che mostra i valori per codice/descrizione.
+  * **Autocomplete Code**: che permette di scrivere il codice che andrà ad autocompletarsi filtrando I record disponibili.​
+  * **Autocomplete Description**: che permette di scrivere la descrizione che andrà ad autocompletarsi filtrando I record disponibili.
+* **Widget Type:**
+* **Business Object:** obbligatorio - permette di selezionare l'oggetto su cui dovrà essere creato l'extradata ad esempio FSColor per permettere di creare un extradata basato sulla tabella codici colore. 
 
-3. inserire il **Nome** geo localizzato dell'extradata (deve essere quindi una parola presente nel dizionario altrimenti dovremmo aggiungerla).
+### Attivazioni
 
-4. inserire l'**Oggetto Business** geo localizzato che si vuole dare al nuovo oggetto, corrisponde al nome dell'oggetto. 
+Procediammo a legare l'**ExtraData** all'oggetto di business **FSItem** (Articolo).  
 
-5. inserire una **Descrizione** che spesso corrisponde al **Nome**.
+![](../../../../../static/images/20250313170414.png)
 
-6. se ha una scadenza inserire **Data inizio/fine validità** altrimenti non serve inserirli.
+Vale esattamente quanto illustrato nell'introduzione agli ExtraData.  
 
-7. se necessario, inserire i **Diritti di modifica e visualizzazione**.
+### Inserimento dell'ExtraData nella form di dettaglio
 
-Nella griglia **Attivazioni, **si vede l'elenco degli oggetti nei quali l'extradata sarà possibile vederlo e valorizzarlo.
+Dopo aver aperto la form di dettaglio dell'articolo interessato, per includere l'ExtraData nella form di dettaglio dell'articolo (FSItem), possiamo utilizzare il **form navigator** e **l'object navigator**.  
+1. Dall'**Object Navigator**, espandiamo il nodo ExtraData relativo all'oggetto di business e selezionamo l'ExtraData che ci interessa.
+2. Dal **Form Navigator**, espandiamo il navigator fino al tab Generalità di cui vogliamo inserire l'ExtraData.  
 
-Per aggiungerne uno Nuovo basta andare a scrivere nell'ultima riga presente nella tabella.
+![](../../../../../static/images/20250313172149.png)
 
-I flag **Obbligatorio** e **Da stampare** identificano se rispetto all'oggetto in cui è visibile l'extradata, è obbligatorio l'inserimento e può essere stampato.  
+Per visualizzare l'ExtraData nella form di dettaglio dell'articolo è sufficiente fare drag and drop dal Navigatore Oggetti al Form Navigator.  
+Nell'esempio è stato riportato L'ExtraData 'Color' nel LayoutGroup che definisce i dati di testata dell'articolo (FSItem).   
+L'ExtraData avrà un widget di tipo combobox (dropdown) e mostrerà esattamente i valori di **codice** e **descrizione** salvati sulla corrispondente tabella lato MSSQL.
 
-L'**Ordinamento** serve semplicemente per la visualizzazione, quando aggiungiamo l'extradata; l'ordine con cui poi ci appariranno gli extradata all'interno dell'oggetto è deciso da questo campo.
+![](../../../../../static/images/20250313172543.png)  
 
-![](/img/it-it/configurations/utility/extradata/new-extradata-object/image02.png) 
 
-8. Aggiungere extradata nella form Fluentis
-
-Per poter aggiungere l'extradata direttamente da uno di questi oggetti, nell'apposita maschera di Fluentis premere tasto dx sulla riga blu (con  ![](/img/neutral/common/filter.png)) e cliccare su **Aggiungi extradata di primo livello**. Questo procedimento va eseguito per ogni extradata che vogliamo aggiungere. Una volta aggiunto uno, potremmo anche **Aggiungere degli extradata figli**.
-
-![](/img/it-it/configurations/utility/extradata/new-extradata-object/image04.png) 
-
-Nel menu a tendina come in figura selezionare l'extradata desiderato. È possibile quindi valorizzare l'extradata.
-
- ![](/img/it-it/configurations/utility/extradata/new-extradata-object/image05.png) 
-
-9. Infine si può inserire la **Propagazione**.
-
-![](/img/it-it/configurations/utility/extradata/new-extradata-object/image06.png) 
-
-Nella propagazione va inserita la proprietà esatta in cui se valorizzato lì l'extradata verrà riportato automaticamente nell'oggetto selezionato in **Attivazioni**. C'è la possibilità di inserire più propagazioni.
-
-### Esempio
-
-Prendiamo l'immagine con la propagazione sopra, ossia se nel conto viene valorizzata la lingua (“Propagazione”), inserendo tale conto nella creazione di una nuova fattura, la lingua verrà importata in modo automatico all'interno della sezione extradata della testata della fattura (“Attivazioni”).
-
-![](/img/it-it/configurations/utility/extradata/new-extradata-object/image07.png) 
-
-Nell'immagine sopra si vede come nella sezione extradata si stia impostando il valore di lingua. Salvare il tutto una volta terminate le modifiche.
-
-Ora creare una nuova fattura e come cliente/fornitore inserire lo stesso dell'immagine vista in precedenza e si nota che in automatico viene importata la lingua.
-
-![](/img/it-it/configurations/utility/extradata/new-extradata-object/image08.png) 
-
-Vedi anche [Inserimento Extradata Oggetto in Xtrareport](/docs/configurations/utility/extra-data/extradata/insert-extradata-object-in-xtrareport).
-
-Vedi anche [Nuovo ExtraData Semplice](/docs/configurations/utility/extra-data/extradata/new-extradata-simple).
