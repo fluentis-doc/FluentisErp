@@ -1,1 +1,1 @@
-**Ubicazione**: viene proposto solo se per l'articolo selezionato è stato scelto il magazzino.
+- **Location**: it is proposed only if the selected item has a warehouse chosen.

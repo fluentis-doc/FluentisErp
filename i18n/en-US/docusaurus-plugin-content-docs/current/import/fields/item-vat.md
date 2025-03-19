@@ -1,1 +1,1 @@
-**VAT**: The VAT (Value Added Tax) rate prioritizes the value entered in the VAT field of the *Contact Record*. If this field is empty, the value from the *Item Record* is proposed. However, the user can manually enter a different value. This field is mandatory.
+- **VAT**: the data entered in the VAT field of the *Contact Registry (Anagrafica contatto)* is *prioritized*; if this is not present, the value from the *Item registry* is proposed, but the user has the option to enter another value. It is a mandatory field.

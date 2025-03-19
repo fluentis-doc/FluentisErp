@@ -1,9 +1,9 @@
-La form di Ricerca dei documenti consente di ricercare tutti i documenti con lo scopo di visualizzarli, modificarli, ed eventualmente cancellarli oppure procedere all'inserimento di un nuovo documento; la finestra si compone di un'area di filtro e da una griglia di risultato.
+The document search form allows for the search of all documents in order to view, modify, and possibly delete them or proceed to the insertion of a new document; the window consists of a filter area and a result grid.
 
-Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** presente nella *Ribbon bar* per visualizzare i risultati all'interno della griglia di risultato.
+Once all desired filters are set, simply click the **Search** button present on the *Ribbon bar* to display the results within the result grid.
 
-Per aprire i dettagli di un documento, basterà selezionarlo e fare doppio click con il mouse, oppure cliccare sul pulsante **Modifica** (consente di entrare nei dettagli e modificarli) o sul pulsante **Visualizza** (consente di entrare nei dettagli e visualizzarli ma senza poterli modificare).
+To open the details of a document, simply select it and double-click with the mouse, or click the **Modify** button (which allows entering the details and modifying them) or the **View** button (which allows entering the details and viewing them but without the ability to modify them).
 
-*Vedi anche*:  
-[Funzionalità, pulsanti e campi comuni](/docs/guide/common)  
-[Aggiungere nuovi campi nelle form di ricerca](/docs/object-navigator/load-request-object)
+*See also (Vedi anche)*:  
+[Functionality, common buttons, and fields (Funzionalità, pulsanti e campi comuni)](/docs/guide/common)  
+[Adding new fields in search forms (Aggiungere nuovi campi nelle form di ricerca)](/docs/object-navigator/load-request-object)

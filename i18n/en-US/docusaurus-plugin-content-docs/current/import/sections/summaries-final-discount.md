@@ -1,9 +1,6 @@
-**Discounts** section allows you to enter percentage discounts to apply to the total document.
+The final discounts applied at the level of each individual item are distributed (or "spread") across each item line of the document. This means that the discount amount is proportionally divided among all the items present in the document, and the corresponding discount will be visible in the Items tab for each individual line.
 
-Discounts entered in this section are calculated and applied to each item in the document, in the *Items > Discounts/Pricing* tab.
-
-- **Discount Type/Description**: Allows you to choose discount types (predefined in [Discount Types](/docs/configurations/tables/general-settings/discount-types)), assigning the type priority for applying the discount and whether the discount is calculated on the taxable amount or cascaded based on previously applied discounts.
-- **Priority**: Represents the priority for applying the discount; sorting is done in ascending order.
-- **Cascade/Taxable Amount**: Defines whether the discount calculation uses the taxable amount (price * quantity) - (already calculated discounts) or (price * quantity).
-- **Value**: Numerical value of the final discount to apply.
-
+- **Type/Description of discount (Tipo/Descrizione sconto)**: allows you to choose the types of discounts (preset in [Discount Types](/docs/configurations/tables/general-settings/discount-types)), assigning the type the priority for discount application and whether the discount is calculated on the taxable amount or cascaded from previously applied discounts.  
+- **Priority**: represents the priority of discount application; the ordering to be applied occurs in ascending order.  
+- **Cascade/Amount**: to define whether the calculation of the discount uses as taxable the (price * quantity) - (discounts already calculated) or (price * quantity).  
+- **Value**: numerical value of the final discount to be applied.

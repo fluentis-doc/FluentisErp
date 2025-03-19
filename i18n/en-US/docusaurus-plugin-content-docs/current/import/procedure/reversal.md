@@ -1,6 +1,6 @@
-**Storno**: il pulsante consente di *stornare parzialmente o totalmente un documento*. Con questa funzione sarà possibile creare un documento di storno che *scaricherà* (in acquisti) / *caricherà* (in vendite) il magazzino.  
+**Transfer**: the button allows you to *partially or fully cancel a document*. With this function, it will be possible to create a cancellation document that will *decrease stock* (in purchases) / *increase stock* (in sales).  
 
-> *Procedura*:  
-1. selezionare il documento da stornare e cliccare sul pulsante di **Storno**. L'applicazione aprirà una finestra pop-up con tutte le righe articolo del documento di origine;  
-2. inserire in questa form: il **Tipo di documento** di storno che si vuole creare e, per ogni articolo, indicare la **Quantità da stornare**, la **Causale di storno** e attivare il parametro **Da stornare**;  
-3. click **OK** per confermare l'operazione.
+> *Procedure (Procedura)*:  
+1. select the document to cancel and click on the **Transfer** button. The application will open a pop-up window with all the item lines of the source document;  
+2. fill in this form: the **Type of cancellation document (Tipo di documento di storno)** you want to create and, for each item, specify the **Quantity to be reversed**, the **Cancellation reason (Causale di storno)**, and activate the **To be canceled (Da stornare)** parameter;  
+3. click **OK** to confirm the operation.

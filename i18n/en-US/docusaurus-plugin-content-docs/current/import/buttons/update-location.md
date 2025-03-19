@@ -1,1 +1,1 @@
-**Aggiorna ubicazione**: utilizzata per aggiornare l'ubicazione in base alla causale e la riporta nella riga. Il pulsante diventa attivo se si scelgono almeno due articoli e apre l'help delle ubicazioni  da dove si può scegliere la nuova ubicazione per tutti gli articoli selezionati per questa procedura.
+- **Update Location**: used to update the location based on the reason and reports it in the line. The button becomes active if at least two items are selected and opens the location help from where a new location can be chosen for all selected items for this procedure.

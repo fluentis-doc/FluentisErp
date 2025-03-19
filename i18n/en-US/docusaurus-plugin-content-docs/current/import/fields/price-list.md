@@ -1,1 +1,1 @@
-**Listino**: viene proposto il listino dal quale è stato ripreso l'articolo, con la data inizio/fine validità, con condizioni particolari (es. scaglione di sconto) assegnate all'articolo nel listino.
+- **Price list**: the price list from which the item was retrieved is proposed, along with the start/end validity dates, and any special conditions (e.g., discount tier) assigned to the item in the price list.

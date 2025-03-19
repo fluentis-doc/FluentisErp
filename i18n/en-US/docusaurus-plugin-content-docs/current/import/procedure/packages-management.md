@@ -1,3 +1,3 @@
-**Gestione imballi**: permette l'apertura della gestione degli imballi a rendere usati nel documento di acquisti.<br />
-Il pulsante diventa attivo se il documento è salvato, ma non caricato.<br />
-Con clic su questo pulsante si apre la form corrispondente dove: inserire la quantità, selezionare la riga ed eseguire il trasferimento dell'imballo selezionato nelle righe articolo cliccando sul pulsante **Execute**. In questa form vengono riportati gli articoli che spno stati inseriti con natura Imballo e che sono presenti nella tabella degli [Imballi a rendere](/docs/configurations/tables/logistics/package-to-be-returned). 
+- **Packages management**: allows for the opening of the management of returnable packaging used in the purchase document.<br />
+The button becomes active if the document is saved but not uploaded.<br />
+By clicking on this button, the corresponding form opens where: you can enter the quantity, select the line, and execute the transfer of the selected packaging to the item lines by clicking the **Run** button. This form lists the items that have been entered with the nature Packaging and that are present in the table of [Returnable Packaging (Imballi a rendere)](/docs/configurations/tables/logistics/package-to-be-returned).

@@ -1,27 +1,27 @@
-- **Gross amount of items**: Represents the sum of the values of all items.
+- **Items gross amount**: represents the sum of the values of all items.
 
-- **Advance payment**: Represents the value of any advance payment received for the document.
+- **On-account**: represents the value of any deposit received for the document.
 
-- **Gift amount**: Represents the amount of gift items entered in the *Items* tab.
+- **Amount giveaway**: represents the amount of items classified as gifts entered in the *Items* tab.
 
-- **Total applied discounts**: Represents the total value of discounts applied to the items, excluding final discounts.
+- **Total discounts applied**: represents the total value of discounts applied to the items, excluding final discounts.
 
-- **Net amount of items**: *Gross amount of items* – *Total applied discounts*.
+- **Items net amount**: *Items gross amount* – *Total discounts applied*.
 
-- **Final discounts on items**: Represents the value of final discounts expressed as a percentage of the gross amount of items.
+- **Final item discounts**: represents the value of final discounts expressed as a percentage of the gross amount of the items.
 
-- **Net amount after final discounts**: *Net amount of items* - *Total final discounts*.
+- **Net amount of final discounts (Importo netto sconti finali)**: *Items net amount* - *Total final discounts*.
 
-- **Total item expenses**: Represents the value of expenses entered in the previous tab as *Expense Type* items.
+- **Total charges items**: represents the value of expenses entered in the previous tab as items of *Charge type*.
 
-- **Collection fees**: Represents the sum of collection fees entered in the *Expenses* grid.
+- **Collection charges**: represents the sum of collection expenses entered in the *Charges* grid.
 
-- **Stamp duty**: Represents the sum of stamp duty fees entered in the *Expenses* grid.
+- **Stamp charges**: represents the sum of stamp duty expenses entered in the *Charges* grid.
 
-- **Total expenses/discounts/increases**: Represents the total value of expenses entered in the *Expenses* grid.
+- **Total expenses/discounts/increases (Totale spese/sconti/maggiorazioni)**: represents the total value of expenses entered in the *Charges* grid.
 
-- **Taxable amount**: *Net amount of items* – *Final discounts* + *Total item expenses* + *Total expenses/discounts/increases*.
+- **Origin amount**: *Items net amount* – *Final discounts* + *Total charges items* + *Total expenses/discounts/increases (Totale spese/sconti/maggiorazioni)*.
 
-- **Tax**: Represents the sum of values contained in the VAT summaries.
+- **VAT**: represents the sum of the values contained in the VAT summaries.
 
-- **Total**: *Taxable amount* + *Tax*.
+- **Total**: *Origin amount* + *VAT*.

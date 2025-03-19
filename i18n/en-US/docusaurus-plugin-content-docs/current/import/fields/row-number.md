@@ -1,1 +1,1 @@
-**Row Number**: This field will be automatically filled in sequentially as data is entered into the row.
+- **Line number**: this field will automatically and progressively populate as data is entered in the line.

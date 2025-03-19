@@ -1,3 +1,1 @@
-
-**Aggiornamento listini**: permette di aggiornare il prezzo dell'articolo in base al nuovo listino (nel caso sia stato inserimento un listino aggiornato).<br />
-Cliccando sulla tendina accanto al pulsante ![](/img/neutral/common/down-arrow.png), sarà possibile creare un nuovo listino se ancora da creare.
+- **Update price lists**: allows updating the price of the price list based on the new price entered for the item.<br /> Clicking on the dropdown next to the button ![](/img/neutral/common/down-arrow.png), on the other hand, will allow you to create a new price list if it has not been created yet.

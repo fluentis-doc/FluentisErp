@@ -1,1 +1,1 @@
-**Quantity**: Represents the quantity in the default primary unit of measure (U.M.). By default, it has a value of 1 and can be manually adjusted or retrieved from the document considered for processing.
+- **Quantity**: represents the quantity of the main unit of measure and by default has the value 1; it can be manually modified or can be taken from the document considered for fulfillment.

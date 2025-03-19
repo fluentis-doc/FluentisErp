@@ -1,1 +1,1 @@
-Here, the information entered in the *Entity Record > Extra Data tab* is proposed, only if default data exists.
+Here is proposed the information entered in the *Subject Registry (Anagrafica del soggetto) > Extra data tab (tab Extra data)*, only if default data exists.

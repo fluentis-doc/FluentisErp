@@ -1,23 +1,23 @@
-Una volta impostati tutti i *Filtri* desiderati, cliccando sul pulsante di *Ricerca* verrà visualizzata nella griglia una riga per ciascun ordine stampato, confermato e non evaso oppure evaso parzialmente.
+Once all desired *Filters* are set, clicking the *Search* button will display a row in the grid for each printed, confirmed, and not fulfilled order or partially fulfilled order.
 
-:::note Avviso
-La procedura riprende tutti i dati presenti nell'ordine e come conseguenza saranno applicate le condizioni di acquisto presenti nell'ordine, anche se queste attualmente sono cambiate. 
+:::note Notice (Avviso)
+The procedure retrieves all data present in the order, and as a consequence, the purchasing conditions present in the order will be applied, even if these have currently changed.
 :::
 
-Nella griglia di risultati, l'utente ha la possibilità di:
+In the results grid, the user has the option to:
 
- 1. selezionare l'*ordine per intero*. Per farlo basterà selezionare il flag presente all'inizio della riga ordine.
- 2. selezionare solo *alcuni* degli *articoli* proposti. Per farlo basterà selezionare il flag presente all'inizio della riga articolo.
- 3. selezionare solo *alcuni articoli* e solo per una *determinata quantità*. In questo caso dovrà andare a modificare la quantità da evadere.
+1. select the *entire order (ordine per intero)*. To do this, simply select the flag present at the beginning of the order row.
+2. select only *some (alcuni)* of the *Items* proposed. To do this, simply select the flag present at the beginning of the item row.
+3. select only *some items (alcuni articoli)* and only for a *specific quantity (determinata quantità)*. In this case, the user will need to modify the quantity to be fulfilled.
 
-Per completare la procedura bisognerà poi cliccare sul pulsante *Trasferimento*, che andrà a riprendere tutti i dati presenti nell'ordine e li riporterà nel DDT.
+To complete the procedure, the user must then click the *Transfer* button, which will retrieve all data present in the order and transfer it to the DDT.
 
-*Pulsanti specifici*:  
-> **Ricerca** : p di cercare gli ordini fornitore;  
-> **Trasferimento**: p di trasferire i dati dell'ordine selezionato all'interno della nuovo DDT;  
-> **Evasione forzata dell'ordine**: p l'evasione forzata dell'ordine;  
-> **Evasione ordini**: p l'evasione dell'ordine;  
-> **Espandi**: p di espandere l'intero albero degli ordini nella griglia sottostante, per visualizzare gli articoli contenuti in essi;  
-> **Comprimi**: p di comprimere la visualizzazione delle righe articolo, e di far visualizzare solamente le righe ordine;  
-> **Seleziona tutti**: p di selezionare tutti gli articoli dalla lista;  
-> **Deseleziona tutti**: p di deselezionare tutti gli articoli dalla lista.  
+*Specific buttons (Pulsanti specifici)*:  
+> **Search**: to search for supplier orders;  
+> **Transfer**: to transfer the data of the selected order into the new DDT;  
+> **Forced Oreder Execution**: for forced fulfillment of the order;  
+> **Orders Processing**: for the fulfillment of the order;  
+> **Expand**: to expand the entire order tree in the grid below, to view the items contained in it;  
+> **Collapse**: to collapse the view of item rows and only show order rows;  
+> **Select all**: to select all items from the list;  
+> **Deselect all**: to deselect all items from the list.

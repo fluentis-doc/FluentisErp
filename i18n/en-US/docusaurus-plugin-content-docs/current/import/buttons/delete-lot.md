@@ -1,1 +1,1 @@
-**Cancella lotto**: permette di cancellare la riga lotto selezionata.
+- **Delete Batch**: allows you to delete the selected batch line.

@@ -1,4 +1,4 @@
-Vengono riportate le varianti dell'articolo selezionato, codificate nel tab [ Varianti](/docs/erp-home/registers/items/create-new-items/item-registry/variants) dell'anagrafica articoli oppure possono essere inserite manualmente.  
-Offre la possibilità di gestire le varianti dell'articolo in modo diverso da quello proposto sulla riga articolo.  
-Per esempio, in ogni riga articolo, è possibile inserire la quantità totale; successivamente, nel medesimo tab, possono essere definite diverse quantità per più varianti dell'articolo selezionato e anche per variante e attributo, ovvero gestione taglia/colore.  
-Questa operazione è possibile solo se tutte le varianti dell'articolo hanno il prezzo uguale al prezzo dell'articolo nella configurazione standard.
+The variants of the selected item are reported, coded in the tab [Variants](/docs/erp-home/registers/items/create-new-items/item-registry/variants) of the item registry or can be manually entered.  
+It offers the possibility to manage the variants of the item differently from what is proposed on the item line.  
+For example, in each item line, it is possible to enter the total quantity; subsequently, in the same tab, different quantities for multiple variants of the selected item can be defined, as well as for variant and attribute, i.e., size/color management.  
+This operation is possible only if all the variants of the item have the same price as the price of the item in the standard configuration.

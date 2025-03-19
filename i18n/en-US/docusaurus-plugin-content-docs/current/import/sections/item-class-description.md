@@ -1,3 +1,2 @@
-**Class/Code/Item Description**: These can be entered [manually](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) or with the help of a field selector that proposes all related data entered in the *Item Registry*.
-
-After entering the item, its *Description* will be automatically retrieved from the item registry. If the item has *Variants*, you can select the desired variant from the *Item Data* tab.
+- **Class/Code/Item Description (Classe/Codice/Descrizione articolo)**: it is possible to enter [manually (manualmente)](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) or with the assistance of the [field help (help di campo)](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection), which will propose all the related data entered in the *Item registry*. 
+After entering the item, its *Description* will be automatically retrieved from the registry. If the item has *Variants*, it will be possible to select the desired variant from the *Item data* tab.

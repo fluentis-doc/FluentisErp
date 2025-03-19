@@ -1,1 +1,1 @@
-**Operatore**: permette di inserire l'utente che crea il documento. I dipendenti sono stati inseriti in precedenza nella tabella *Dipendenti* che si trova nel percorso *Home > Dipendenti*. Il dato diventa **obbligatorio** se l'opzione è impostata nei Parametri del documento stesso.
+- **User**: allows you to enter the user who creates the document. Employees have been previously entered in the *Employees* table located in the path *Employees*. The data becomes **Mandatory** if the option is set in the Parameters of the document itself.

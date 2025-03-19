@@ -1,10 +1,5 @@
-**Row Type** allows you to select from different types of items using the combo-box.
-
-:::note Note
-If you start directly with entering the item, its *class*, *code*, and *row type - Coded Item* will be automatically filled in.
-:::
-
-> **Coded Item**: These are items coded in the registry and can be accounted for analytically and recorded in inventory. <br />
-> **Uncoded Item**: These are descriptive items that can be accounted for analytically but cannot be stocked in inventory. <br />
-> **Expense Item**: These can be coded or uncoded items and are summarized separately in document summaries. If an expense item is coded and of tax interest, it will be stocked in inventory; if uncoded or not of tax interest, it won't be stocked. <br />
-> **Note Item**: These are descriptive notes included in the document printout; they do not affect accounting or inventory.
+- **Line type** offers the opportunity to select, from the combo-box, items with different characteristics (if you start directly by entering the item by double-clicking on the 'Item (Articolo)' column or by directly typing the item code, its *Class*, *Code*, and *line type - Coded Item (tipo riga - Articolo codificato)* are automatically inserted):
+> **Codified Item**: these are the items coded in the registry and can be recorded in analytical accounting and stored in the warehouse. <br />
+> **Non-Coded Item (Articolo non-codificato)**: these are descriptive items that can be recorded in analytical accounting but cannot be moved in the warehouse. <br />
+> **Charge Item**: these can be coded or non-coded items and are summarized distinctly in the document summaries. If the expense item is coded and of fiscal interest, it will be moved in the warehouse; if it is non-coded or not of fiscal interest, it will not be moved in the warehouse. <br />
+> **Note Item**: these are descriptive notes included in the document printout; they do not affect accounting and the warehouse.

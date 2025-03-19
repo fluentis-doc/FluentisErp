@@ -1,1 +1,1 @@
-**Cancella serial number**: permette di cancellare la riga serial number selezionata.
+- **Cancel serial number**: allows for the deletion of the selected serial number line.

@@ -1,1 +1,1 @@
-**Cancella sconti**: permette di cancellare lo sconto selezionato dalla griglia corrispondente.
+- **Delete discounts**: allows you to delete the selected discount from the corresponding grid.

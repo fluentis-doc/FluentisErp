@@ -1,5 +1,5 @@
-**Agente**: l'agente collegato con la relativa provvigione per l'articolo selezionato; il dato corrisponde a quello presente in *Testata > tab Agenti*. La percentuale può essere cambiata.
+- **Agent**: the agent linked with the corresponding commission for the selected item; the data corresponds to that present in *Header > Agents tab (Testata > tab Agenti)*. The percentage can be changed.
 
-*Pulsante specifico*
+*Specific button (Pulsante specifico)*
 
-> **Cancella agenti**: permette di cancellare l' agente associato ad un articolo.
+> **Delete agents**: allows you to delete the agent associated with an item.

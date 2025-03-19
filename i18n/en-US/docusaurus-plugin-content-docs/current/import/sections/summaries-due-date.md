@@ -1,36 +1,21 @@
-Rappresenta il riepilogo delle scadenze del documento, per ogni *tipo* e *soluzione* di pagamento.  
-**Numero**: valore progressivo della riga.  
-**Pagamento**: rappresenta il codice alfanumerico del *Tipo pagamento* ripreso dalla *Testata del documento > tab Pagamenti*.  
+Represents the summary of the document deadlines, for each *type* and *payment solution*.  
+- **Number**: progressive value of the line.  
+- **Payment**: represents the alphanumeric code of the *Payment type* retrieved from *Document Header > Payments tab (Testata del documento > tab Pagamenti)*.  
+- **Amount**: Amount of the calculated deadline. It can be manually overridden, in which case the subsequent flag *Manually edit* is automatically activated. (Automatic controls and alerts regarding the alignment between the deadline values and the total invoice are triggered)  
+- **Expiry date**: Date of the calculated deadline. It can be manually overridden, in which case the subsequent flag *Manually edit* is automatically activated.  
+- **Collection charges**: Field in which the calculated collection fees are reported.  
+- **VAT**: to be applied to collection fees (can also be set manually)  
+- **Payment reason (Causale pagamento)**: it is possible to directly enter an accounting reason in the invoice that leads to an automatic recording of collection/payment. Note: pay attention to the template of the reason because it will use the accounts present even without sub-account, which is why the following field is present.  
+- **Customer/Supplier sub-account (Conto sottoconto cliente / fornitore)**: account used to collect/pay (cash or bank, for example) the deadline, overriding the account present in the payment (or collection) accounting reason.  
+- **Receipt no.**: An eventual receipt number for the money received.  
+- **Single**: activates the accounting of the deadline closure in the automated writing.  
+- **Discount type**: Type of financial discount.  
+- **Mat. value**: Value of the financial discount on collection.  
+- **Detail declarations**: This is the reference to the declaration of intent. The VAT applied to collection fees could always be a plafond VAT, so it is also necessary to insert the related declaration of intent here (as for item lines and expense lines).  
 
-**Importo**: Importo della scadenza calcolato. Può essere forzato manualmente, nel qual caso si attiva automaticamente il successivo flag *Modifica manuale*. (Scattano in automatico dei controlli e avvisi sulla quadratura tra i valori delle scadenze e il totale fattura)
+**PURCHASE INVOICES:**  
 
-**Data scadenza**: Data della scadenza calcolata. Può essere forzata manualmente, nel qual caso si attiva automaticamente il successivo flag *Modifica manuale*.
-
-**Spese di incasso**: Campo in cui riportate le spese di incasso calcolate.
-
-**IVA**: da applicare alle spese di incasso (può essere impostata anche manualmente)
-
-**Causale pagamento**: è possibile inserire direttamente in fattura una causale contabile che da luogo ad una scrittura automatica di incasso / pagamento. NB prestare attenzione al template della causale perchè utilizzerà i conti presenti anche senza sottoconto, motivo per il quale è presente il campo seguente.
-
-**Conto sottoconto cliente / fornitore** conto che usa per incassare/pagare (cassa o banca ad esempio) la scadenza andando a sovrascrivere il conto presente nella causale contabile di pagamento (o incasso)
-
-**N. ricevuta**: Un eventuale numero della ricevuta per i soldi ricevuti
-	
-**Sing.**: attiva la contabilizzazione della chiusura scadenze nella scrittura automatizzata
-
-**Tipo sconto**: Tipo di sconto finanziario
-
-**Valore sconto**: Valore dello sconto finanziario su incasso
-
-**Dettaglio dichiarazioni**: È il riferimento alla dichiarazione di intento. L’iva applicata alle spese incasso potrebbe essere sempre un’iva plafond, quindi è necessario poter inserire anche qui la dich. di intento collegata (come per le righe articolo e le righe spese)
-
-**FATTURE D'ACQUISTO:**
-
-**Segno**: solo le scadenze che hanno questo flag vengono poi gestite in pagamento con causale e conto impostato
-	
-**Modelli riferimento pagamento**: Modello di creazione del codice di pagamento. In alcune localizzazioni estere ogni scadenza in fattura prevede un codice attribuito da chi fattura: questo codice è strutturato secondo alcuni modelli specifici (tabella MB_PaymentReferenceModels), in modo da poter costruire il codice con un algoritmo.
-
-**Codici modelli pagamento**: Questo è il codice (strutturato come da modello precedente) da riportare nella partita e quindi poi nei pagamenti che si inviano alla banca, in modo che questa comunichi al beneficiario qual è la scadenza che è stata pagata (e così automatizzare l’import dai movimenti bancari con chiusura partita). Da qui viene compilato dentro la partita e nel file Sepa.
-
-**Data limite pag anticipato** Questo è un campo previsto nel tracciato fatture Sdi, la data limite per poter applicare lo sconto finanziario.
-
+- **Sign**: only the deadlines that have this flag are then managed in payment with the reason and account set.  
+- **Payment reference models (Modelli riferimento pagamento)**: Model for creating the payment code. In some foreign locations, each deadline in the invoice requires a code assigned by the invoicer: this code is structured according to specific models (table MB_PaymentReferenceModels), in order to construct the code with an algorithm.  
+- **Payment model codes (Codici modelli pagamento)**: This is the code (structured as per the previous model) to be reported in the transaction and then in the payments sent to the bank, so that the bank communicates to the beneficiary which deadline has been paid (thus automating the import from bank movements with transaction closure). From here it is populated inside the transaction and in the Sepa file.  
+- **Deadline for advance payment discount (Data limite pag anticipato)**: This is a field provided in the Sdi invoice trace, the deadline for being able to apply the financial discount.

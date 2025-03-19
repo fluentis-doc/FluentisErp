@@ -1,1 +1,1 @@
-**Storno ricevimenti**: permette di stornare i tipi di documenti che hanno la natura di tipo reso.
+- **Receptions reversal**: allows for the cancellation of document types that have the nature of a return.

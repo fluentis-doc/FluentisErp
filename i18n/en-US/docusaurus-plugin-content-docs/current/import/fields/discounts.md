@@ -1,1 +1,1 @@
-**Sconti**: vengono proposti tutti gli sconti associati all'articolo, ognuno con la propria base di calcolo e di assegnazione.
+- **Discounts**: all discounts associated with the item are proposed, each with its own calculation and assignment basis.

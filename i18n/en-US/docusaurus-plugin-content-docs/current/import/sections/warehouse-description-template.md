@@ -1,1 +1,1 @@
-**Magazzino/Descrizione/Causale**: questi dati sono necessari per le registrazioni di carico in magazzino. Vengono ripresi, in base al documento di acquisto, dalla tabella *Tipi ordine/DDT/Fatture di acquisto* oppure si inseriscono manualmente.
+- **Warehouse/Description/Reason (Magazzino/Descrizione/Causale)**: these data are necessary for stock loading records. They are retrieved, based on the purchase document, from the table *Order Types/Delivery Notes/Purchase Invoices (Tipi ordine/DDT/Fatture di acquisto)* or are entered manually.

@@ -1,7 +1,12 @@
-**Sconti**: vengono proposti tutti gli sconti associati all'articolo, ognuno con la propria base di calcolo e di assegnazione. Gli sconti possono essere ripresi: dall'anagrafica cliente, dalla soluzione di pagamento assegnata al documento, dal listino dall'associazione listino-cliente. Tutti i dati proposti sono modificabili.
+In this tab, the price list and discounts associated with the item line can be consulted.
 
-**Valori listino**: viene proposto il listino dal quale è stato ripreso l'articolo, con la data inizio/fine validità, con condizioni particolari di vendita (es. scaglione di sconto) assegnate all'articolo nel listino.
+In the **Price list** section, the price list from which the item has been retrieved is proposed, along with the start/end validity date.  
+In the **Bracket type**, the default tier that the customer has associated for this price list is proposed; if no default tier is present, a discount tier can be manually selected to use; it is important to remember that price lists can have different discount tiers associated with the same item (quantity discounts, general discounts, etc.).
 
-*Pulsante specifico*
+The **Manual price** flag not active means that the price list, price, and discounts of the line are all calculated automatically; if the user changes any of these, the flag will be activated.
 
-> **Cancella sconto**: permette di cancellare lo sconto associato all'articolo selezionato nella griglia soprastante.
+In the **Discounts** grid, all discounts associated with the item are proposed, each with its own calculation base and assignment. Discounts can be retrieved from: the customer registry, the payment solution assigned to the document, from the price list via the price list-customer association. All proposed data can be modified.
+
+*Specific Button (Pulsante specifico)*
+
+> **Delete discount**: allows you to delete the discount associated with the selected item in the above grid.

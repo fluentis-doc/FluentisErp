@@ -1,1 +1,1 @@
-**Data is entered manually**, using the **field help** or can be suggested by **connected procedures**.
+The data is entered [manually (manualmente)](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection), with the help of the [field help (help di campo)](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) or can be proposed by the connected procedures.
