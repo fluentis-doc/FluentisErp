@@ -1,5 +1,5 @@
 ---
-title: Patch Notes Version 704 (Patch notes Versione 704)
+title: Patch Notes Version 704
 sidebar_position: 1
 ---
 

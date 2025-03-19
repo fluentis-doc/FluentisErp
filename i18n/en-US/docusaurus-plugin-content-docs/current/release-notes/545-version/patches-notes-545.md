@@ -1,5 +1,5 @@
 ---
-title: Patch notes Version 545 (Patch notes Versione 545)
+title: Patch notes Version 545 
 sidebar_position: 1
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: Patch Notes Version 606 (Patch notes Versione 606)
+title: Patch Notes Version 606 
 sidebar_position: 1
 ---
 
