@@ -1,5 +1,5 @@
 ---
-title: Fluentis Numbering (Numerazioni Fluentis)
+title: Fluentis Numbering 
 sidebar_position: 13
 last_update:
   date: 03/30/2023
