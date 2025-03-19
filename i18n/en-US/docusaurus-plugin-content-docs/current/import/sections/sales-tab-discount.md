@@ -7,6 +7,6 @@ The **Manual price** flag not active means that the price list, price, and disco
 
 In the **Discounts** grid, all discounts associated with the item are proposed, each with its own calculation base and assignment. Discounts can be retrieved from: the customer registry, the payment solution assigned to the document, from the price list via the price list-customer association. All proposed data can be modified.
 
-*Specific Button (Pulsante specifico)*
+*Specific Button*
 
 > **Delete discount**: allows you to delete the discount associated with the selected item in the above grid.

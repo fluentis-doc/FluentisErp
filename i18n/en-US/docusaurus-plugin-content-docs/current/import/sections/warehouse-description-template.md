@@ -1,1 +1,1 @@
-- **Warehouse/Description/Reason (Magazzino/Descrizione/Causale)**: these data are necessary for stock loading records. They are retrieved, based on the purchase document, from the table *Order Types/Delivery Notes/Purchase Invoices (Tipi ordine/DDT/Fatture di acquisto)* or are entered manually.
+- **Warehouse/Description/Template**: these data are necessary for stock loading records. They are retrieved, based on the purchase document, from the table *Order Types/Delivery Notes/Purchase Invoices* or are entered manually.

@@ -1,1 +1,1 @@
-- **Supplier**, using the [field help (help di campo)](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) or typing the data [manually (manualmente)](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection).
+- **Supplier**, using the [field help](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) or typing the data [manually](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection).

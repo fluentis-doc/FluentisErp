@@ -4,6 +4,6 @@ Once all desired filters are set, simply click the **Search** button present on 
 
 To open the details of a document, simply select it and double-click with the mouse, or click the **Modify** button (which allows entering the details and modifying them) or the **View** button (which allows entering the details and viewing them but without the ability to modify them).
 
-*See also (Vedi anche)*:  
-[Functionality, common buttons, and fields (Funzionalità, pulsanti e campi comuni)](/docs/guide/common)  
-[Adding new fields in search forms (Aggiungere nuovi campi nelle form di ricerca)](/docs/object-navigator/load-request-object)
+*See also*:  
+[Custom features, buttons, and common fields](/docs/guide/common)  
+[Adding new fields in search forms](/docs/object-navigator/load-request-object)

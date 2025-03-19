@@ -4,7 +4,7 @@ See the image in detail.
 
 ![](/img/it-it/finance-area/maturity-values/maturity-values/advance-maturities/advance-maturity-order.png)
 
-This will lead to the presence of an advance deadline in the order summaries to be sent to accounting, if desired, via the specific button ***Advance Payment Creation: (Creazione partita di anticipo:)***
+This will lead to the presence of an advance deadline in the order summaries to be sent to accounting, if desired, via the specific button ***Advance Maturity Creation:***
 
 ![](/img/it-it/finance-area/maturity-values/maturity-values/advance-maturities/advance-maturity-order-creation.png)
 

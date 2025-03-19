@@ -1,1 +1,1 @@
-- **VAT**: the data entered in the VAT field of the *Contact Registry (Anagrafica contatto)* is *prioritized*; if this is not present, the value from the *Item registry* is proposed, but the user has the option to enter another value. It is a mandatory field.
+- **VAT**: the data entered in the VAT field of the *Contact Register* is *prioritized*; if this is not present, the value from the *Item registry* is proposed, but the user has the option to enter another value. It is a mandatory field.

@@ -1,1 +1,1 @@
-Here is proposed the information entered in the *Subject Registry (Anagrafica del soggetto) > Extra data tab (tab Extra data)*, only if default data exists.
+Here is proposed the information entered in the *Subject Registry > Extra data tab*, only if default data exists.
