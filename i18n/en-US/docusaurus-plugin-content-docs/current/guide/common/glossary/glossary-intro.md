@@ -43,7 +43,7 @@ This section can be found in various forms and serves for the traceability of op
 
 ### C
 
-#### Exchange Rate ({#currency-exchange})
+#### Exchange Rate {#currency-exchange}
 If the company's currency is the same as that of the document, the reported value will be 1; otherwise, the value will be taken from the *Currency Exchange* table or from the *Fixed Exchange Rates for EURO* table found in the path *Configuration > Tables > Administration*.
 
 #### Loaded 
@@ -55,10 +55,10 @@ This field refers to the pre-coded values in the related table found at Home > T
 #### CIG
 Contract identification code; in order to track the actual traceability of payments by public administrations, electronic invoices issued to public administrations must contain the CIG code and the CUP code; this is a unique alphanumeric code that identifies a specific procurement or lot and can be found in sales invoices and sales orders. 
 
-#### Item Class ({#item-class})
+#### Item Class {#item-class}
 This field includes mandatory information about the item; the class refers to the belonging class of the item within the database (examples of classes: Raw material, Semi-finished, Finished product, etc.); the classes used to group items can be chosen at the time of creation/duplication of an item and are pre-coded within the related table **Classes** found in the path **Tables > Logistics**. In all documents, the item will appear with its class and description.
 
-#### Item Code ({#item-code})
+#### Item Code {#item-code}
 This field represents a specific alphanumeric code that encodes the item based on its specific characteristics; the code along with the class constitutes the item's *name*, which must be unique;
 
 #### Combo Box
@@ -104,7 +104,7 @@ In these two fields, we will find the start date of validity of the price list (
 #### Expiration Date
 Payment expiration date calculated from the payment terms or set manually. This field is generally present in active and passive cycle documents (orders, delivery notes, invoices, etc.). The calculation of the date checks the payment terms (inserted in the header) and in particular the payment solution (e.g., 30 days from the invoice date) and adds them to the value of the field **(Date) Due Date** (the latter also present in the document - by opening the 'Shipping' expander). See also **Due date**.
 
-#### Currency Date ({#currency-date})
+#### Currency Date {#currency-date}
 Date on which the exchange rate value is calculated as a ratio between the company's currency and that of the supplier/customer, according to the settings of the *Currency Exchange* table located in the path *Configuration > Tables > Administration*.
 
 #### Due Date
