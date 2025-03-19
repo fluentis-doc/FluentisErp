@@ -1,5 +1,5 @@
 ---
-title: Items (Articoli)
+title: Items 
 sidebar_position: 3
 ---
 
@@ -11,46 +11,46 @@ To visualize the project structure, the following buttons are available:
 ![](/img/neutral/common/implode.png)  Collapse: allows you to hide the structure rows;
 ![](/img/neutral/common/implode.png)  Expand: allows you to display the rows.
 
-The characteristics of the item should be entered in the **Activities tab (tab Attività)** below:
+The characteristics of the item should be entered in the **Activities tab** below:
 
-**Row number/WBS number (Numero riga/Numero WBS)**: contains the row number and the WBS, and is set automatically, though it can be modified freely;       
-**Projects Node Type**: indicates whether the row is a **Root Node (nodo principale)**, an **Activity Node (nodo relativo alle attività)**, or a **Work Package Node (nodo finale di progetto, l’unico che può contenere dei codici articolo specifici)**;       
+**Row number/WBS number**: contains the row number and the WBS, and is set automatically, though it can be modified freely;       
+**Projects Node Type**: indicates whether the row is a **Root Node**, an **Activity Node**, or a **Work Package Node**;       
 **Line type**: indicates the type of item among Coded, Uncoded, Expenses, or Notes (the latter by default);      
 **ITEM**: shows the Class, Code, and Description of the item if selected;        
 **Description**: contains the default description of the item if selected, but it can be modified freely;           
 **Work type**: identifies a project level that is not yet quoted within the organizational context (visible in offers, to separate it from activities part of the contract), thus indicating new work that has not yet been managed by the project manager but comes from various project operations;
 **Sales offer item**:           
-**Quantity/UM/Price (Quantità/UM/Prezzo)**: contains any data of the selected item;        
-**Material Cost/Total Cost (Costo materiale/Costo totale)**: it is possible to indicate any costs;          
+**Quantity/UM/Price**: contains any data of the selected item;        
+**Material Cost/Total Cost**: it is possible to indicate any costs;          
 **Resources cost**: it is possible to indicate any cost for the resources;              
 **VAT**: indicates the VAT to be applied;             
 **Sales turnover type**: indicates the sales turnover of the item;            
 **Level not visible**: with this flag, the level is considered complete, meaning that downstream the project branch cannot be used to associate additional activities;                       
-**Activity category**: indicates any activity category set in **Tables > Project Management > Activity Category (Tabelle > Gestione Progetti > Categoria di Attività)**.
+**Task category**: indicates any activity category set in **Tables > Project Management > Task Category**.
 
 The data entered will be included in the project rows and will update as other tabs are filled out.
 The information aggregates at a higher level, so the Root Node will contain the synthesis of its child branches.
 
-In the Items tab, we also find the **Service Planning tab (tab Pianificazione servizio)**, where the data to be reported for the selected item row are:
+In the Items tab, we also find the **Service Planning tab**, where the data to be reported for the selected item row are:
 
-**Start Date/End Date (Data inizio/Data fine)**: indicate the planned dates for the activity; 
+**Start Date/End Date**: indicate the planned dates for the activity; 
 > The dates will be updated automatically, provided that:
 - active flag "Recalculate start-end date" in the project types table
 - if the unit of measure used corresponds to the day unit in project parameters, when modifying the row quantity, the end date will be recalculated
 - inserting new resources with a date earlier than the start date or later than the end date, the start-end dates will be automatically updated based on the minimum and maximum date present in the resources tab.   
 
-**From Milestone Date/To Milestone Date (Da data Milestone/A Data Milestone)**:               
-**Completed Work (percentage)/Estimate (Lavoro completato(perc.)/Stima)**: it is possible to indicate a percentage of work progress or a corresponding estimate;              
+**From Milestone Date/To Milestone Date**:               
+**Completed Work (percentage)/Estimation**: it is possible to indicate a percentage of work progress or a corresponding estimation;              
 **Request Intervention Type**: a type of intervention request linked can be indicated, which will be used in the generation of new intervention requests related to the project row;              
 **Planned intervention type**: a type of planned intervention linked can be indicated, which will be used in the generation of new planned interventions related to the project row;    
 **Main Asset**: it is possible to link a plant, which will contain, for example, a series of information related to its maintenance project;            
 **Manager**: a project resource can be indicated;          
 **Forced closed**: a possible forced closure date of the project can be indicated;               
 **Forced executed**:                         
-**Invoicing criteria**: it is possible to choose the billing criterion of the project by choosing not to bill some activities, therefore performing a validation check; the choice is between All activities or Contractual activities; choosing the latter option, only the projected activity Quantity in the Activities tab will be considered billable, while any necessary additional activities will not be billed;               
-**Invoiceable activity**: if the flag is present, it indicates that the activity is billable; the activation of this flag automatically depends on the Template entered or the registry of the Activity Category input in the Activities tab.                           
+**Invoicing criteria**: it is possible to choose the billing criterion of the project by choosing not to bill some activities, therefore performing a validation check; the choice is between All activities or Contractual activities; choosing the latter option, only the projected activity Quantity in the Activities tab will be considered invoiceable, while any necessary additional activities will not be billed;               
+**Invoiceable activity**: if the flag is present, it indicates that the activity is invoiceable; the activation of this flag automatically depends on the Template entered or the registry of the Task Category input in the Activities tab.                           
 
-In the **Resources tab (tab Risorse)**, resources for the selected item row can be allocated:
+In the **Resources tab**, resources for the selected item row can be allocated:
 
 **Insert date**: filled with the resource entry date into the project;           
 **Asset**: contains the resource, previously coded;              
@@ -84,7 +84,7 @@ If the resource has a differentiated cost for overtime/public holidays, etc., th
 **Start pause**: contains the possible date and time of break start;             
 **Break end time**: contains the possible date and time of break end;                 
 **End date**: contains the date when the resource will be allocated, with the end working time;                               
-**Effective Time (Tempo effettiva)**: is a calculated field based on the hours of the previous columns, which also modifies the Quantity field of the same value;       
+**Effective Time**: is a calculated field based on the hours of the previous columns, which also modifies the Quantity field of the same value;       
 **Notes**: it is possible to insert any notes;             
 **Request Intervention Type**: it is possible to enter a linked [intervention request] with its characteristics, such as Description and Number.         
 
@@ -95,5 +95,5 @@ The specific button in the ribbon bar ![](/img/it-it/project-management/projects
 
 With the button ![](/img/neutral/common/new-visit-report.png) Create Intervention Request, you can, by selecting a Resource, create the intervention request linked to the project or rollback it with the button Rollback Intervention Request.
 
-In the **Materials tab (tab Materiali)**, the materials needed for the progress of the project are indicated, along with the characteristics of the coded items. The cost of these materials will impact the item row Cost of materials. The cost is proposed based on the setting specified in the "Cost type" field, whose default value can be set in the project parameters. In the case of "last cost" or "average cost," the reference date is the project date. 
+In the **Materials tab**, the materials needed for the progress of the project are indicated, along with the characteristics of the coded items. The cost of these materials will impact the item row Cost of materials. The cost is proposed based on the setting specified in the "Cost type" field, whose default value can be set in the project parameters. In the case of "last cost" or "average cost," the reference date is the project date. 
 From this screen, it is possible to create a Purchase Request directly for the Materials, via the button in the ribbon bar **Purch. demand creation**.

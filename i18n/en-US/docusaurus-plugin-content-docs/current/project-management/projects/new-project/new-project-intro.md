@@ -1,11 +1,11 @@
 ---
-title: New Project (Nuovo progetto)
+title: New Project 
 sidebar_position: 1
 ---
 
 In this form, it is possible to enter all the data for a new **Project**.
 
-**Project type**: contains the selected project type from the Configuration > Tables > Project Management > Project Types table;
+**Project type**: contains the selected project type from the Configuration > Tables > Project Management > Project Types Table;
 
 **Client**: contains the client to whom the project is linked;
 

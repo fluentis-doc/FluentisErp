@@ -1,5 +1,5 @@
 ---
-title: New Planned Intervention (Nuovo Intervento Pianificato)
+title: New Planned Intervention 
 sidebar_position: 1
 ---
 
@@ -17,7 +17,7 @@ In this form, it is possible to enter a new **Planned intervention**. The data t
 
 **Project**: contains the [Project](/docs/project-management/projects/search-projects-intro/) linked to the intervention;
 
-**Tickets/Ticket Severity (Tickets/Severità Ticket)**: contains a relevant reference ticket with the associated severity;
+**Tickets/Ticket Severity**: contains a relevant reference ticket with the associated severity;
 
 **SLA**: is the Service Level Agreement;
 
@@ -27,7 +27,7 @@ In this form, it is possible to enter a new **Planned intervention**. The data t
 
 There are also several tabs in which to enter additional information about the planned intervention.
 
-**Resources Tab (Tab Risorse)**  
+**Resources Tab**  
 In this tab, it is possible to enter the **Asset** that will carry out the planned intervention. The data to be entered are:  
 **Asset**: contains the Resource;  
 **Employee**: contains the associated Employee record,  
@@ -41,11 +41,11 @@ There are also some flags that regulate the obligation of the **Technician**, th
 
 ![](/img/it-it/project-management/planned-intervention/resource.png)
 
-**Solution Tab (Tab Soluzione)**  
+**Solution Tab**  
 In this tab, there are two freely fillable areas: **Terms** and **Note**.
 
-**Estimate Tab (Tab Stima)**  
-In this tab, it is possible to enter an estimate for the planned intervention through the following data:  
+**Estimation Tab**  
+In this tab, it is possible to enter an estimation for the planned intervention through the following data:  
 **Units of Measure**: contains the UM to be used to quantify the intervention;  
 **Sales price list**: it is possible to link a [Sales Price List](/docs/sales/sales-price-list/sales-price-list/insert-sales-price-list/) from which to take the information;  
 **Quantity**: it is possible to directly fill in the actual time in this tab, which will appear in the corresponding field in the Resources tab;  
@@ -59,7 +59,7 @@ When selecting the project, the following values are proposed:
 - Ticket  
 - Description  
 - Activity Category  
-- Billable  
+- Invoiceable  
 - Value-Added Activity  
 - Item (if not already entered)  
 - Unit of Measure if not already entered  
@@ -70,7 +70,7 @@ Alternatively, if the item is not present in the planned intervention and is ass
 
 ![](/img/it-it/project-management/planned-intervention/stima.png)
 
-**Connected Document Tab (Tab Documento collegato)**  
+**Linked Document Tab**  
 In this tab, it is possible to view and add attachments, which will be saved in the Document Management module of Fluentis. To add a file, simply use drag and drop, selecting the file from its current location and dropping it into the table.  
 The following form will then open:
 
@@ -80,5 +80,5 @@ In the **Document type** field at the top of the form, it is possible to select 
 Then, by pressing the **Apply** button, this value will be reflected in the corresponding field for all the files currently being uploaded. **First Name** and **Type** are automatically retrieved by the procedure.  
 By pressing OK, the program will save the file in the Document Management system of Fluentis.
 
-**Extra Data Tab (Tab Extra Data)**  
+**Extra Data Tab**  
 In this tab, it is possible to enter any connected Extra Data; for more information, consult the section on [Extra Data](/docs/configurations/utility/extra-data/extradata/search-extradata/).

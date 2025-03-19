@@ -1,5 +1,5 @@
 ---
-title: Gantt (Gantt)
+title: Gantt
 sidebar_position: 4
 ---
 

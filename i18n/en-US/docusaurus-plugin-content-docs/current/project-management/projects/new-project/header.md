@@ -1,9 +1,9 @@
 ---
-title: Header (Testata)
+title: Header 
 sidebar_position: 2
 ---
 
-In this tab, general project data can be defined, such as the **Currency**, **Shipping Methods (modalità di Spedizione)**, an optional **Closed date**, and the **Country**. The **Execution status** becomes necessary to indicate the completed project in other documents, while the **Customer note** provide some references for the customer, such as a potential linked project or initial notes.
+In this tab, general project data can be defined, such as the **Currency**, **Shipping Methods**, an optional **Closed date**, and the **Country**. The **Execution status** becomes necessary to indicate the completed project in other documents, while the **Customer note** provide some references for the customer, such as a potential linked project or initial notes.
 
 ![](/img/it-it/project-management/projects/header.png)
 
