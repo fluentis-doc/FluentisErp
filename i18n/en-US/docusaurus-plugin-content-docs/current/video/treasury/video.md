@@ -1,5 +1,5 @@
 ---
-title: Treasury (Tesoreria)
+title: Treasury
 sidebar_position: 1
 ---
 
@@ -7,24 +7,24 @@ The first video covers the basic parameters and tables of the module, and it is 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/pnRACKqZqvM" title="YouTube video player" frameborder="0" allowfullscreen="true"></iframe>
 
-### ACTIVE WALLET (PORTAFOGLIO ATTIVO)
+### ACTIVE WALLET 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/lKIGZYCBwvg" title="YouTube video player" frameborder="0" allowfullscreen="true"></iframe>
 
-### SUPPLIER PAYMENTS (PAGAMENTI FORNITORI)
+### SUPPLIER PAYMENTS
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/CDCVq0iC29s" title="YouTube video player" frameborder="0" allowfullscreen="true"></iframe>
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/DkxoWgTkvUg" title="YouTube video player" frameborder="0" allowfullscreen="true"></iframe>
 
-### CASHFLOW (CASHFLOW)
+### CASHFLOW
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Gr5xFCDyRJA" title="YouTube video player" frameborder="0" allowfullscreen="true"></iframe>
 
-### BANK RECONCILIATION (RICONCILIAZIONE BANCARIA)
+### BANK RECONCILIATION
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/sPeYvES_dpw" title="YouTube video player" frameborder="0" allowfullscreen="true"></iframe>
 
-### LIQUIDITY MANAGEMENT (GESTIONE LIQUIDITA') 
+### LIQUIDITY MANAGEMENT
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/L4I6ptx3noc" title="YouTube video player" frameborder="0" allowfullscreen="true"></iframe>

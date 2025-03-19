@@ -1,4 +1,4 @@
 ---
-title: Quality (Qualità)
+title: Quality 
 sidebar_position: 1
 ---

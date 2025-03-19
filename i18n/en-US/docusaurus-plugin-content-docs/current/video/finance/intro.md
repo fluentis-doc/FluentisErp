@@ -1,9 +1,9 @@
 ---
-title: Finance (Finance)
+title: Finance 
 sidebar_position: 1
 ---
 
-## GENERAL BASE TABLES (TABELLE GENERALI DI BASE)
+## GENERAL BASE TABLES 
 
 The management of the company registry and the possible addition of new companies is fundamental and represents general information; it is recommended to watch the video first.
 
@@ -17,7 +17,7 @@ An outdated video but still valid as a general concept.
 
 ---
 
-### **MANAGEMENT OF CUSTOMERS, SUPPLIERS, BANKS, AND AGENTS REGISTRIES (GESTIONE ANAGRAFICHE CLIENTI FORNITORI, BANCHE e AGENTI)**
+### **MANAGEMENT OF CUSTOMERS, SUPPLIERS, BANKS, AND AGENTS REGISTRIES**
 
 Understanding how to correctly enter and manage registries is essential for the proper management **and automation (e automazione)** of other administrative and accounting data. Therefore, it is advisable to watch these videos first.
 
@@ -30,32 +30,32 @@ Understanding how to correctly enter and manage registries is essential for the 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/iBBMYnZsvRg" title="YouTube video player" frameborder="0" allowfullscreen= "true"></iframe>
 
 
-### **THE CHART OF ACCOUNTS (IL PIANO DEI CONTI)**
+### **THE CHART OF ACCOUNTS**
 
 Correctly entering the chart of accounts (if customized) or modifying the standard one for necessary adjustments, consulting, or printing is essential for entering accounting movements. Therefore, it is advisable to watch the following video before entering accounting movements.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Q_0azlCYnIQ" title="YouTube video player" frameborder="0" allowfullscreen="true"></iframe>
 
 
-## **BASIC PARAMETERS AND ADMINISTRATIVE TABLES (I PARAMETRI DI BASE E LE TABELLE AMMINISTRATIVE)**
+## **BASIC PARAMETERS AND ADMINISTRATIVE TABLES**
 
 In this section, we address all the general configuration parameters and the basic tables of the administrative module.
 
-Preliminary viewing of these videos is **Useful** for everyone but particularly **for those who intend to configure a NON-standard operational environment (per coloro che intendono configurare un ambiente operativo NON standard)** (The initial configuration procedure *Fast Start (Fast Start)* has not been launched).
+Preliminary viewing of these videos is **Useful** for everyone but particularly **for those who intend to configure a NON-standard operational environment** (The initial configuration procedure *Fast Start* has not been launched).
 
-### ACCOUNTING PARAMETERS (PARAMETRI DI CONTABILITA')
+### ACCOUNTING PARAMETERS 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/UpAkdvW8ClQ" title="YouTube video player" frameborder="0" allowfullscreen= "true"></iframe>
 
 
-### ADMINISTRATION MODULE TABLES (TABELLE MODULO AMMINISTRAZIONE)
+### ADMINISTRATION MODULE TABLES 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/r62pWFU1tuk" title="YouTube video player" frameborder="0"  allowfullscreen= "true"></iframe>
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/zRxODibrGL4" title="YouTube video player" frameborder="0" allowfullscreen="true"></iframe>
 
 
-### CONFIGURATION OF ACCOUNTING REASONS (CONFIGURAZIONE CAUSALI CONTABILI)
+### CONFIGURATION OF ACCOUNTING REASONS 
 
 The configuration of accounting reasons represents the logical core of the module related to accounting entries and allows you to manage and leverage all the related automation.
 
@@ -79,14 +79,14 @@ It is essential for those who intend to configure a custom operational environme
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/hKPW4QfQnt8" title="YouTube video player" frameborder="0" allowfullscreen= "true"></iframe>
 
-### ASSET MODULE PARAMETERS (PARAMETRI DEL MODULO CESPITI)
+### ASSET MODULE PARAMETERS
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/m_qhk6-JrVc" title="YouTube video player" frameborder="0" allowfullscreen= "true"></iframe>
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/m_qhk6-JrVc" title="YouTube video player" frameborder="0" allowfullscreen= "true"></iframe>
 
 
-## **MANAGEMENT OF ACCOUNTING ENTRIES (GESTIONE DELLE REGISTRAZIONI CONTABILI)**
+## **MANAGEMENT OF ACCOUNTING ENTRIES**
 
 The first video discusses the search and visualization of accounting data.
 
@@ -96,25 +96,25 @@ In this video, it explains how to enter journal entries.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/lOWGrEg-w6A" title="YouTube video player" frameborder="0" allowfullscreen= "true"></iframe>
 
-## ADMINISTRATIVE PRINT MANAGEMENT (GESTIONE STAMPE AMMINISTRATIVE)
+## ADMINISTRATIVE PRINT MANAGEMENT 
 
-### ACCOUNTING PRINTS (STAMPE CONTABILI)
+### ACCOUNTING PRINTS 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/vQS47gLDe2M" title="YouTube video player" frameborder="0" allowfullscreen= "true"></iframe>
 
-### TAX PRINTS (STAMPE FISCALI)
+### TAX PRINTS 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/HWjgN0yehEc" title="YouTube video player" frameborder="0" allowfullscreen= "true"></iframe>
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/E_lIBlV2OXI" title="YouTube video player" frameborder="0" allowfullscreen= "true"></iframe>
 
-### Financial statement reclassification for civil balance processing (scheme CEE) (Riclassificazione di bilancio per elaborazione bilancio civilistico (schema CEE))
+### Financial statement reclassification for civil balance processing (scheme CEE)
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/bhoSB80XFGY" title="YouTube video player" frameborder="0" allowfullscreen= "true"></iframe>
 
-## **OPEN ITEM MANAGEMENT MODULE (MODULO GESTIONE PARTITE APERTE)**
+## **OPEN ITEM MANAGEMENT MODULE**
 
-### OPEN ITEM SEARCH (RICERCA PARTITE APERTE)
+### OPEN ITEM SEARCH 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/FZVfr6QuXDc" title="YouTube video player" frameborder="0" allowfullscreen= "true"></iframe>
 
@@ -128,24 +128,24 @@ In this video, it explains how to enter journal entries.
 
 ## **Fixed Assets**
 
-### ENTRY (INSERIMENTO)
+### ENTRY
 
 <iframe width="560" height="315" src="https://youtube.com/embed/EumrLuAHXCk" title="YouTube video player" frameborder="0" allowfullscreen= "true"></iframe>
 
-### PRINTS (STAMPE)
+### PRINTS
 
 <iframe width="560" height="315" src="https://youtube.com/embed/0vMJpldI7fw" title="YouTube video player" frameborder="0" allowfullscreen= "true"></iframe>
 
-### PARAMETERS (PARAMETRI)
+### PARAMETERS
 
 <iframe width="560" height="315" src="https://youtube.com/embed/m_qhk6-JrVc" title="YouTube video player" frameborder="0" allowfullscreen= "true"></iframe>
 
-### DEPRECIATION (AMMORTAMENTO)
+### DEPRECIATION 
 
 <iframe width="560" height="315" src="https://youtube.com/embed/jD0qtQmqCIA" title="YouTube video player" frameborder="0" allowfullscreen= "true"></iframe>
 
 
-## **Professional Men (Professionisti)**
+## **Professionals**
 
 <iframe width="560" height="315" src="https://youtube.com/embed/k7abmzqf6Bk" title="YouTube video player" frameborder="0" allowfullscreen= "true"></iframe>
 
@@ -153,13 +153,13 @@ In this video, it explains how to enter journal entries.
 
 <iframe width="560" height="315" src="https://youtube.com/embed/DVXhUdwqBS4" title="YouTube video player" frameborder="0" allowfullscreen= "true"></iframe>
 
-## **TAX DECLARATIONS (DICHIARAZIONI FISCALI)**
+## **TAX DECLARATIONS**
 
 <iframe width="560" height="315" src="https://youtube.com/embed/-IAAv1RdE-g" title="YouTube video player" frameborder="0" allowfullscreen= "true"></iframe>
 
 <iframe width="560" height="315" src="https://youtube.com/embed/rZM6NBOpIxQ" title="YouTube video player" frameborder="0" allowfullscreen= "true"></iframe>
 
-## MANAGEMENT OF PASSIVE MORTGAGES (GESTIONE MUTUI PASSIVI)
+## MANAGEMENT OF PASSIVE MORTGAGES 
 
 <iframe width="560" height="315" src="https://youtube.com/embed/lIsD0KRlFFw" title="YouTube video player" frameborder="0" allowfullscreen= "true"></iframe>
 

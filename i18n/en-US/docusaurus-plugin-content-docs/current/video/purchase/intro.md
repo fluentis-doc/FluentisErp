@@ -1,4 +1,4 @@
 ---
-title: Purchases (Acquisti)
+title: Purchases
 sidebar_position: 1
 ---

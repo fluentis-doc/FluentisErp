@@ -1,4 +1,4 @@
 ---
-title: Logistics (Logistica)
+title: Logistics
 sidebar_position: 1
 ---

@@ -1,4 +1,4 @@
 ---
-title: Sales (Vendite)
+title: Sales
 sidebar_position: 1
 ---

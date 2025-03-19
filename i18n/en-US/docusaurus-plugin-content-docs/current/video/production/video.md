@@ -1,12 +1,12 @@
 ---
-title: Production (Produzione)
+title: Production
 sidebar_position: 1
 ---
 
 ### MES
 
 <details>
-<summary> Workstation (Workstation) </summary>
+<summary> Workstation </summary>
 
 **Workstation**
 
@@ -17,15 +17,15 @@ sidebar_position: 1
 <details>
 <summary> Production Resources (Risorse di produzione) </summary>
 
-**Introduction (Introduzione)** (part 1/3)
+**Introduction** (part 1/3)
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/e_InRLJAn2k" title="YouTube video player" frameborder="0" allowfullscreen="true"></iframe>
 
-**General Tab (Tab Generale)** (part 2/3)
+**General Tab** (part 2/3)
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/04QnqA4qQ3U" title="YouTube video player" frameborder="0" allowfullscreen="true"></iframe>
 
-**Layout Tab (Tab Layout)** (part 3/3)
+**Layout Tab** (part 3/3)
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/evp7f-bLfaI" title="YouTube video player" frameborder="0" allowfullscreen="true"></iframe>
 
@@ -34,7 +34,7 @@ sidebar_position: 1
 <details>
 <summary> MES </summary>
 
-**Main Form (Form principale)**
+**Main Form**
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/1sumpmQg91k" title="YouTube video player" frameborder="0" allowfullscreen="true"></iframe>
 
@@ -46,7 +46,7 @@ sidebar_position: 1
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Wf0TBhuVixo" title="YouTube video player" frameborder="0" allowfullscreen="true"></iframe>
 
-**Batches and Serial Number (Lotti e Numero di serie)**
+**Batches and Serial Number**
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/phz4V2OO7HA" title="YouTube video player" frameborder="0" allowfullscreen="true"></iframe>
 
@@ -66,7 +66,7 @@ sidebar_position: 1
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ZQwcG6PuBm8" title="YouTube video player" frameborder="0" allowfullscreen="true"></iframe>
 
-**Documents and Operating Instructions - Notes - Previous Reports - ExtraData (Documenti ed Istruzioni operative - Note - Segnalazioni precedenti - ExtraData)**
+**Documents and Operating Instructions - Notes - Previous Reports - ExtraData**
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/V8pqfSrLTFs" title="YouTube video player" frameborder="0" allowfullscreen="true"></iframe>
 
