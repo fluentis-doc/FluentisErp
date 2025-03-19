@@ -34,7 +34,7 @@ Il codice Tipo che viene proposto di default (nelle fatture di vendita) è quell
     </CodiceArticolo> 
 ```         
 
-Oppure il *CodiceTipo* può essere personalizzato valorizzando il campo **[Codice articolo fornitore](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/fiscal-information#codice_articolo_fornitore_cliente)** presente in anagrafica cliente nel tab *informazioni fiscali*. 
+Oppure il *CodiceTipo* può essere personalizzato valorizzando il campo **[Codice articolo fornitore](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/fiscal-information)** presente in anagrafica cliente nel tab *informazioni fiscali*. 
 
 :::note Nota
 Prestare attenziaone, si tratta di una coppia di campi adiacenti relativi, rispettivamente, alla codifica della nostra società (fornitore) per la personalizzazione rispetto al default, ed al cliente per una doppia codifica da inserire nel tracciato della fattura

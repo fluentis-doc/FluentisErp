@@ -65,7 +65,7 @@ Povezani s komponentom su i svi prisutni kartice:
 
 Na ovoj Kartici moguće je postaviti alternative za komponentu osnovne razrade u prioritetnom redoslijedu, u slučaju da komponenta nije dostupna u trenutku proizvodnje te razrade.
 
-Postoji mogućnost, u slučaju više alternativa, da se odredi prioritet njihove upotrebe tijekom proizvodnje *Raspored* i *MRP* uzimat će u obzir alternative ovisno o aktivaciji određenih zastava u povezanim parametrima (za *MRP Parametre* zastava koja se treba postaviti bit će *Razmotri i alternative materijala* i postavlja se u prozoru [MRP Parametara](/docs/configurations/parameters/production/mrp-parameters/search-mrp-parameters), za *Raspored*, ista zastava koja se treba aktivirati bit će *Razmotri i alternative materijala* i postavlja se u zaslonu [Rasporeda](/docs/planning/ms-master-scheduling/general-schedule#parametri-di-schedulazione-generale), kartica *Parametri*).
+Postoji mogućnost, u slučaju više alternativa, da se odredi prioritet njihove upotrebe tijekom proizvodnje *Raspored* i *MRP* uzimat će u obzir alternative ovisno o aktivaciji određenih zastava u povezanim parametrima (za *MRP Parametre* zastava koja se treba postaviti bit će *Razmotri i alternative materijala* i postavlja se u prozoru [MRP Parametara](/docs/configurations/parameters/production/mrp-parameters/search-mrp-parameters), za *Raspored*, ista zastava koja se treba aktivirati bit će *Razmotri i alternative materijala* i postavlja se u zaslonu [Rasporeda](/docs/planning/ms-master-scheduling/general-schedule), kartica *Parametri*).
 
 
 ### Faze razduženja

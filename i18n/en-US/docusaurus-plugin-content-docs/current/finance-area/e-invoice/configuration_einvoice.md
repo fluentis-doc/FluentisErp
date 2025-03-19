@@ -33,7 +33,7 @@ The default proposed Type Code (in sales invoices) refers to the item code prese
     </CodiceArticolo> 
 ```         
 
-Alternatively, the *CodiceTipo* can be customized by valuing the field **[Vendor item code](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/fiscal-information#codice_articolo_fornitore_cliente)** present in customer registry in the *fiscal information* tab. 
+Alternatively, the *CodiceTipo* can be customized by valuing the field **[Vendor item code](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/fiscal-information)** present in customer registry in the *fiscal information* tab. 
 
 :::note Note
 Please pay attention, this involves a pair of adjacent fields related to the coding of our company (supplier) for customization regarding the default, and the customer for a double coding to include in the invoice data.

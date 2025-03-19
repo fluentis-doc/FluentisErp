@@ -230,7 +230,7 @@ The flag can only be activated for non-VAT causes (e.g., opening accounts) for e
 
 **Projects**: (ex Commitments): activating this flag will display the *Project* field in the header of the registration in addition to the detail fields in the body of the registration for linking projects (commitments) with the detailed accounting movements.
 
-For further details see **[here](/docs/finance-area/ledger-records/records/ledger-record#campo_progetto)**.
+For further details see **[here](/docs/finance-area/ledger-records/records/ledger-record)**.
 
 **Cost centres**: the presence of this flag will display the cost center valuation management tab in the accounting registrations.
 
