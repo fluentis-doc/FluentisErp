@@ -1,5 +1,5 @@
 ---
-title: Marketing Contact Campaigns (Campagne marketing contatto)
+title: Contact Marketing Campaigns 
 sidebar_position: 20
 ---
 

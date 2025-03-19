@@ -1,5 +1,5 @@
 ---
-title: Contact Addresses (Indirizzi Contatto)
+title: Contact Addresses 
 sidebar_position: 4
 ---
 

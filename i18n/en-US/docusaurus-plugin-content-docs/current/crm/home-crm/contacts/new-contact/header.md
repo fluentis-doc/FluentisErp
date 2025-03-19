@@ -1,5 +1,5 @@
 ---
-title: Contact Header (Testata Contatto)
+title: Contact Header 
 sidebar_position: 1
 ---
 
@@ -8,13 +8,13 @@ The CRM Contact screen is composed of three parts:
 - the central part presents the Contact Header with general and demographic information, some mandatory and others not.      
 - below are various tabs that report the different operations performed on the customer, which will be dealt with later in this guide. The displayed tabs will depend on those chosen for each [Contact Type](/docs/configurations/tables/crm/contacts/contact-type) in the related table.            
 
-## Mandatory Header Data (Dati obbligatori di testata)
+## Mandatory Header Data 
 
-**Contact Type (Tipo Contatto)**: refers to the table [Contact Type](/docs/configurations/tables/crm/contacts/contact-type); used to distinguish between various CRM contacts (Contact, Prospect, Lead, etc.); the **Contact Type** also contains the tabs to display in the registry.        
+**Contact Type**: refers to the table [Contact Type](/docs/configurations/tables/crm/contacts/contact-type); used to distinguish between various CRM contacts (Contact, Prospect, Lead, etc.); the **Contact Type** also contains the tabs to display in the registry.        
 
-**Contact Name (Nome Contatto)**: used to indicate the business name or, more generally, the name of the contact;    
+**Contact Name**: used to indicate the company name or, more generally, the name of the contact;    
 
-## Non-mandatory Header Data (Dati non obbligatori di testata)
+## Non-mandatory Header Data 
 
 **VAT register number**: a field composed of the international ISO code of the country (defined in the **Nations** table itself) and the corresponding VAT number. The field is subject to a validity check for the control character for Italian VAT numbers; after entering this field, by using the toolbar button *Propose Data*, it is possible to automatically populate the demographic data.   
 
@@ -22,7 +22,7 @@ The CRM Contact screen is composed of three parts:
 
 **Currency**: Currency to be used in the case of issuing documents addressed to the contact. 
 
-**Office code**: IPA code of the public office recipient of the invoice or (if the Electronic Invoicing flag is active) the SDI code of the recipient of the invoice. It will be recorded in the customer registry if the contact is converted. 
+**Office code**: IPA code of the public office recipient of the invoice or (if the Electronic Invoicing flag is active) the ES code of the recipient of the invoice. It will be recorded in the customer registry if the contact is converted. 
 
 **Certified mail**: space reserved for the PEC address if the PEC recipient mode is active in the Type code field for issuing electronic invoices. It will be recorded in the customer registry if the contact is converted. 
 
@@ -30,7 +30,7 @@ The CRM Contact screen is composed of three parts:
 
 **Main Agent** serves as an informational title, but also for access purposes to Fluentis by the agents: they will only be able to consult the contacts for which they have permission.      
 
-**Latitude/Longitude (Latitudine/Longitudine)**: it is possible to manage the position of contacts with latitude and longitude instead of the address; this data is considered for localization within the Map present in the [CRM Contact Search](/docs/crm/home-crm/contacts/search-contacts) if the address is not present.     
+**Latitude/Longitude**: it is possible to manage the position of contacts with latitude and longitude instead of the address; this data is considered for localization within the Map present in the [CRM Contact Search](/docs/crm/home-crm/contacts/search-contacts) if the address is not present.     
 
 **Contact pipeline**: If the contact has an associated workflow, and the status of the workflow corresponds to one of the statuses present in the "Contact Pipeline" for the Contact Type, the "Contact Pipeline" field in the contact registry will be automatically updated. 
 Therefore, with each status change of the workflow, if there is a correspondence, the "Contact Pipeline" field will be automatically updated. In this way, the workflow and the Contact Pipeline field in the contact registry will always be aligned. 
@@ -39,7 +39,7 @@ Therefore, with each status change of the workflow, if there is a correspondence
 
 **Contact quality** assigns stars to various contacts: the [quality](/docs/configurations/tables/crm/contacts/contact-quality) is expressed in a growing manner from one to five stars; this characteristic is used for various analyses and to define the quality of the contact based on a classification made by the user.     
 
-**Phone/Email (Telefono/Email)**: contains the main phone and email of the contact, specified in the subsequent fields: Phone, Mobile Phone, Fax, Email, Secondary Email, Web Site. 
+**Phone/Email**: contains the main phone and email of the contact, specified in the subsequent fields: Phone, Mobile Phone, Fax, Email, Secondary Email, Web Site. 
 
 **Language**: language used by the contact.
 
@@ -61,15 +61,15 @@ Therefore, with each status change of the workflow, if there is a correspondence
 
 **Note carriage**: field where any notes related to the port can be indicated, to be proposed in documents related to the contact.
 
-**Register**: in this field, Fluentis automatically indicates the nickname and the business name of the customer linked to the contact, when this is converted to a customer. Alternatively, manual association can be performed.     
+**Register**: in this field, Fluentis automatically indicates the nickname and the company name of the customer linked to the contact, when this is converted to a customer. Alternatively, manual association can be performed.     
 
 **Finance Category**: serves to indicate the administrative category of the contact, which could be useful for statistical purposes.     
 
 **Commercial category**: like the administrative category, could be useful for statistical purposes.     
 
-**Usage Sector (Settore d’uso)**: is a field specific to the CRM and serves to indicate the [sector](/docs/configurations/tables/crm/contacts/sector-use) in which the contact operates.      
+**Sector Use**: is a field specific to the CRM and serves to indicate the [sector](/docs/configurations/tables/crm/contacts/sector-use) in which the contact operates.      
 
-**Parent Contact**: it is possible to indicate a contact connected to the one in view, for example, if the contact is part of a holding whose parent company is already among our contacts. Or when the contact changes its business name, it is possible to keep track by linking it to the new contact.        
+**Parent Contact**: it is possible to indicate a contact connected to the one in view, for example, if the contact is part of a holding whose parent company is already among our contacts. Or when the contact changes its company name, it is possible to keep track by linking it to the new contact.        
 
 **Brand**: serves to indicate any brand marketed by the company.       
 

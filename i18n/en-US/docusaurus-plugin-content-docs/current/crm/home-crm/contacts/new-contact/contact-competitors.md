@@ -1,5 +1,5 @@
 ---
-title: Competitor Contact (Concorrenti Contatto)
+title: Contact Competitors
 sidebar_position: 13
 ---
 

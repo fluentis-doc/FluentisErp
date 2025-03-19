@@ -1,5 +1,5 @@
 ---
-title: Contact Agents (Agenti Contatto)
+title: Contact Agents 
 sidebar_position: 9
 ---
 
@@ -9,7 +9,7 @@ In this tab, it is possible to define the **Agents** associated with this contac
 
 The fillable fields are as follows:
 
-**Account – Subaccount – Account Description (Conto – Sottoconto – Descrizione Conto)**: through these fields, it is possible to select the agent, referring to the respective registry;
+**Account – Detail Account – Account Description**: through these fields, it is possible to select the agent, referring to the respective registry;
 
 **Zone**: the area of competence of the agent can be defined, as specified in the table;
 

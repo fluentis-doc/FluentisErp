@@ -1,5 +1,5 @@
 ---
-title: Visit Report Contacts (Visit Report Contatti)
+title: Visit Report Contacts 
 sidebar_position: 10
 ---
 

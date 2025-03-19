@@ -1,5 +1,5 @@
 ---
-title: Workflow Log (Workflow Log)
+title: Workflow Log 
 sidebar_position: 2
 ---
 
@@ -8,7 +8,7 @@ Using a workflow for managing Contacts allows for managing the relationship with
 
 There are two tabs: Activities and Log.
 
-## Activities (Attività)
+## Activity
 
 The available fields in the activities detail are divided into 2 boxes, **Task** and **Pending activity**. The first serves to detail the activity already performed, while the second can already define some information regarding the activity that will need to be performed subsequent to the one already entered.
 
@@ -34,10 +34,10 @@ In the second box, the following fields are present:
 
 **User**: the Fluentis user who will perform the activity must be defined;
 
-**Reminder Start/End Date (Data inizio/fine promemoria)**: in this field, you can indicate the range of dates during which a reminder for the next activity should be displayed;        
+**Reminder Start/End Date**: in this field, you can indicate the range of dates during which a reminder for the next activity should be displayed;        
 
 **Create activity**: checking this box will create a new entry in the **Task** section of Fluentis for the user indicated in the **User** field. This automation will trigger at the time of saving the contact.    
 
-## Log (Log)
+## Log 
 
-In this tab, changes in the workflow status are displayed, indicating: the starting and ending status, the operator who made the operation, and the date.
+In this tab, changes in the workflow status are displayed, indicating: the starting and ending status, the user who made the operation, and the date.

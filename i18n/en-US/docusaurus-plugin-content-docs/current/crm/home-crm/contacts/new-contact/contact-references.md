@@ -1,5 +1,5 @@
 ---
-title: Contact References (Riferimenti Contatto)
+title: Contact References 
 sidebar_position: 3
 ---
 
@@ -11,7 +11,7 @@ In the new reference entry form, the following fields are present:
 
 **Surname**: this is the last name of the reference.
 
-**First Name**: this is the first name of the reference.
+**Name**: this is the first name of the reference.
 
 **User**: any associated operator is reported in the reference registry.
 

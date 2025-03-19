@@ -1,5 +1,5 @@
 ---
-title: Sales Price Lists for the Contact (Listini di vendita del contatto)
+title: Contact Sales Price Lists 
 sidebar_position: 14
 ---
 

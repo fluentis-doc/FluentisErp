@@ -1,5 +1,5 @@
 ---
-title: Sales Orders for Contact (Ordini vendita contatto)
+title: Contact Sales Orders 
 sidebar_position: 14
 ---
 

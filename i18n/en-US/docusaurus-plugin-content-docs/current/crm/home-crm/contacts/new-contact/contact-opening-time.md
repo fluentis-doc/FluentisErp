@@ -1,5 +1,5 @@
 ---
-title: Contact Opening Hours (Orari di apertura contatto)
+title: Contact Opening Hours 
 sidebar_position: 18
 ---
 

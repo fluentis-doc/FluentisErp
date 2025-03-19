@@ -1,5 +1,5 @@
 ---
-title: Example CRM Contact Workflow (Esempio Workflow Contatti CRM)
+title: Example CRM Contact Workflow 
 sidebar_position: 3
 ---
 

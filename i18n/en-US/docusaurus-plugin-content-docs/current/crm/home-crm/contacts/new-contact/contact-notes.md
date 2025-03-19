@@ -1,5 +1,5 @@
 ---
-title: Contact Notes (Note Contatto)
+title: Contact Notes 
 sidebar_position: 5
 ---
 
@@ -9,10 +9,10 @@ In this tab, it is possible to view the notes related to the contact. Within the
 
 In the entry form, the following fields are present:
 
-**title**: this is the title of the note, which will make it easier to search for the note;
+**Title**: this is the title of the note, which will make it easier to search for the note;
 
 **Date**: refers to the date of entry of the note;
 
 **Notes**: in this varchar field, it is possible to write the details of the note;
 
-**Contact note type**: you can specify the [type of note (tipologia di nota)](/docs/configurations/tables/crm/contacts/contact-note-type) that you are entering.
+**Contact note type**: you can specify the [contact note type](/docs/configurations/tables/crm/contacts/contact-note-type) that you are entering.

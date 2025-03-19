@@ -1,5 +1,5 @@
 ---
-title: Opportunity Progress KanBan Board (Opportunity Progress KanBan Board)
+title: Opportunity Progress KanBan Board 
 sidebar_position: 5
 ---
 

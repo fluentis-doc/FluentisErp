@@ -1,5 +1,5 @@
 ---
-title: Opportunity Stages KanBan Board (Opportunity Stages KanBan Board)
+title: Opportunity Stages KanBan Board 
 sidebar_position: 6
 ---
 
@@ -11,14 +11,14 @@ The filter area is dedicated to hosting the list of possible data types that all
 In the area below the filter area is the **Kan Ban Board**, where opportunities are displayed divided by the various stages of the workflow selected in the filters. Each column of the Kan Ban Board consists of the following elements:  
 
 A **top band** where the following data are displayed, in order:
-- Workflow stage (Stadio del workflow);
+- Workflow stage;
 - Count: corresponds to the number of opportunities placed in that column;
 - Total Net Amount: corresponds to the total value of the opportunities present in the column, net of applied discounts.
 
 A **bottom band** where individual opportunities are displayed. For each opportunity, the following data are displayed in order:
-- Name of the contact person for the opportunity (Nome del contatto intestatario dell’opportunità);
-- Title of the opportunity (Titolo dell’opportunità);
-- Fluentis user who entered the opportunity (Utente Fluentis che ha inserito l’opportunità);
-- Net total of the opportunity (Totale netto dell’opportunità).
+- Name of the contact person for the opportunity;
+- Title of the opportunity;
+- Fluentis user who entered the opportunity;
+- Net total of the opportunity.
 
 By double-clicking on a single opportunity, you enter the view/edit mode of that opportunity.

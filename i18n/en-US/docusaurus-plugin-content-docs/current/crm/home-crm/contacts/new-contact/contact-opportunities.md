@@ -1,5 +1,5 @@
 ---
-title: Contact Opportunity (Opportunità contatto)
+title: Contact Opportunity 
 sidebar_position: 17
 ---
 

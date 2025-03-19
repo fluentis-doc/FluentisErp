@@ -1,5 +1,5 @@
 ---
-title: Contact Area (Zona Contatto)
+title: Contact Zone
 sidebar_position: 8
 ---
 

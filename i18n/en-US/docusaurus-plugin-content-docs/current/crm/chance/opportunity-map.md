@@ -1,5 +1,5 @@
 ---
-title: Crm opportunity map
+title: Crm Opportunity Map
 sidebar_position: 4
 ---
 
@@ -12,7 +12,7 @@ The filter area is dedicated to hosting the list of possible data types through 
 In the area below the filter section, there is a map where opportunities are displayed, marked with an indicator within which you can view the number of opportunities present for the same Contact. 
 Clicking on the indicator will display the following information in a pop-up window:
 
--	Business name of the contact holding the opportunity (Ragione Sociale del contatto titolare dell’opportunità);
--	The quality of the contact (La Qualità del contatto);
--	The value of the opportunity (Il valore dell’opportunità);
--	The address of the Contact (L’indirizzo del Contatto).
+-	Company name of the contact holding the opportunity;
+-	The contact quality;
+-	The value of the opportunity;
+-	The address of the Contact.

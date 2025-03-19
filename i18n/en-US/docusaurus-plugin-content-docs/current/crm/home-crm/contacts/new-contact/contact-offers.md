@@ -1,5 +1,5 @@
 ---
-title: Contact Offers (Offerte contatto)
+title: Contact Offers 
 sidebar_position: 11
 ---
 

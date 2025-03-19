@@ -1,5 +1,5 @@
 ---
-title: Contact Newsletter (Newsletter contatto)
+title: Contact Newsletter 
 sidebar_position: 15
 ---
 

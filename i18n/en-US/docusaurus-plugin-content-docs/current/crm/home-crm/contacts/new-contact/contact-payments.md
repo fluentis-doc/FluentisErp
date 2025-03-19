@@ -1,5 +1,5 @@
 ---
-title: Contact Payments (Pagamenti contatto)
+title: Contact Payments 
 sidebar_position: 16
 ---
 
@@ -8,9 +8,9 @@ This is one of the tabs of **CRM contacts**.
 In this tab, payments to be proposed in the documents related to the contact can be configured.
 
 
-### Payment Types (Tipi pagamento)
+### Payment Types 
 
-The essential section of the **Payments** tab serves to set the calculation logic for due dates. You select the **Payment Type (Tipo di pagamento)** and the **Payment Term** (both can be found in *Configuration > Tables > General Settings*).
+The essential section of the **Payments** tab serves to set the calculation logic for due dates. You select the **Payment Type** and the **Payment Term** (both can be found in *Configuration > Tables > General Settings*).
 
 **Percent Completed**: allows defining the portion (in percentage) of the total payment (or collection) value to be managed with the payment condition (as a combination of payment type and payment solution) set in the line.
 
@@ -40,7 +40,7 @@ Entry of a bank can also be performed by double-clicking in the abi/cab fields t
 
 **Bank code**: field NOT used in Italy. For foreign localizations, it can accommodate an alternate banking code versus the ABI CAB system.
 
-### Supporting Bank (Banca d'appoggio)
+### Supporting Bank 
 
 In the grid, the supporting banks of the counterpart can be entered.
 

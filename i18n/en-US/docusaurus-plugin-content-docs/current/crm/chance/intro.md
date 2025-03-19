@@ -1,5 +1,5 @@
 ---
-title: Introduction (Introduzione)
+title: Introduction 
 sidebar_position: 1
 ---
 
@@ -12,10 +12,10 @@ The Opportunities module of Fluentis ERP allows for managing the entire lifecycl
 **Crm opportunity map**       
 This feature provides a geographical visualization of active opportunities, using the geographical information present in the CRM contact registry. Opportunities can be filtered by type, operator user, or probability of success.     
 
-**Opportunity Progress KanBan Board (Opportunity Progress KanBan Board)**     
+**Opportunity Progress KanBan Board**     
 This function displays opportunities divided by probability of success, using a KanBan Board. Through advanced filters, it is possible to isolate specific sets of opportunities, with columns representing different success percentages. Each column shows the number of opportunities, their total net value, and individual details for each opportunity.       
 
-**Opportunity Stages KanBan Board (Opportunity Stages KanBan Board)**      
+**Opportunity Stages KanBan Board**      
 Similar to the previous one, this feature divides opportunities by workflow stages. Each column of the KanBan Board represents a stage of the workflow, with information on the number and net value of opportunities.      
 
 **Invoicing Progress Kanban Board**       
