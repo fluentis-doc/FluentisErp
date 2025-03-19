@@ -5,7 +5,7 @@ sidebar_position: 12
 
 The table is accessible from **Tables > Project Management > Project Types**.
 
-The table contains the possible types of **Project (Progetto)**. It consists of a filter section where you can search through the description of the type, and two grids: one where all the project types entered will be listed (just click the ![](/img/neutral/common/search.png) search button in the ribbon bar to display them) and one where predefined costs/revenues for each project type to be used in the WIP calculation can be indicated.
+The table contains the possible types of **Project**. It consists of a filter section where you can search through the description of the type, and two grids: one where all the project types entered will be listed (just click the ![](/img/neutral/common/search.png) search button in the ribbon bar to display them) and one where predefined costs/revenues for each project type to be used in the WIP calculation can be indicated.
 
 ![](/img/it-it/configurations/tables/projects/proj-type.png)
 
