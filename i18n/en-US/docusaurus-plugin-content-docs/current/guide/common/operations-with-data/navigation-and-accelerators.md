@@ -1,9 +1,9 @@
 ---
-title: Navigation and Accelerators (Navigazione e acceleratori)
+title: Navigation and Accelerators 
 sidebar_position: 8
 ---
 
-### Navigating Forms (Navigare nelle form)
+### Navigating Forms 
 
 - Move to the next field with the **TAB** key, both in forms and grids; similarly, move backward with Shift+TAB;
 
@@ -35,7 +35,7 @@ Several other links to related forms as in the example of the image below.
 
 </p>
 
-### Navigating Between Multiple Forms (Navigare tra più form)
+### Navigating Between Multiple Forms
 
 Each form is opened in full screen, with a label that allows you to jump from one to another.  
 
@@ -69,21 +69,21 @@ Panels can also be *floated/docked* from/to the form by right-clicking on the co
 You can also create groups of panels (*Move to next tab group*, still by right-clicking on the panel label). In this way, panels will be visible as vertical labels to the left of the form.
 
 
-### Accelerators (Acceleratori)
+### Accelerators 
 
 <p align="center">
 
-| Function (Funzione) | Meaning (Significato) |
+| Function | Meaning |
 | --- | --- |
-| Search (Ricerca) | Ctrl+R |
-| Open (Apri) | Ctrl+O |
-| View (Visualizza) | Ctrl+U |
-| Delete (Cancella) | Ctrl+D |
-| New (Nuovo) | Ctrl+N |
-| Preview (Anteprima) | Ctrl+T |
-| Print (Stampa) | Ctrl+P |
-| Save (Salva) | Ctrl+S |
-| Rollback (Rollback) | Ctrl+I |
-| Execute (Esegui) | Ctrl+E |
+| Search | Ctrl+R |
+| Open | Ctrl+O |
+| View | Ctrl+U |
+| Delete | Ctrl+D |
+| New  | Ctrl+N |
+| Preview | Ctrl+T |
+| Print | Ctrl+P |
+| Save | Ctrl+S |
+| Rollback | Ctrl+I |
+| Execute | Ctrl+E |
 
 </p>

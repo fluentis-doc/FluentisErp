@@ -1,9 +1,9 @@
 ---
-title: Filter, Sort, and Other Operations with Records in Grids (Filtrare, ordinare e altre operazioni con i record nelle griglie)
+title: Filter, Sort, and Other Operations with Records in Grids 
 sidebar_position: 4
 ---
 
-### Filtering Records (Filtrare i record)
+### Filtering Records 
 
 Within the grids, you can filter and/or sort records (see the example in the image below). 
 
@@ -18,7 +18,7 @@ On the column header, there is also an active button (another icon similar to a 
 ![](/img/it-it/guide/operations-with-data/filter-sort-and-other-operations-with-records-in-grids/image04.png)
 
 
-### Sorting Records (Ordinare i record)
+### Sorting Records
 
 In the grids, in addition to the first filter row, you can sort records (in ascending or descending order) by clicking on the header of the column itself: if you want to sort by cascading for other columns, you need to hold down ‘Shift' and click them with the mouse.
 
@@ -34,7 +34,7 @@ By right-clicking on the grid headers, the following operations are allowed:
 
 **Clear Sorting**: removes the sorting
 
-### Other Operations (Altre operazioni)
+### Other Operations 
 
 By right-clicking on the grid headers, the following operations are allowed:
 
@@ -50,11 +50,11 @@ By right-clicking on the grid headers, the following operations are allowed:
 
 **Best Fit**: adjusts the size of the selected column to the values present in the field.
 
-**Fit (All Columns) (Adatta (tutte le colonne))**: adjusts the size of all columns based on the values present in the field.
+**Fit (All Columns)**: adjusts the size of all columns based on the values present in the field.
 
 **Group Summary Editor...**: (only in case of grouped data) opens a form where you can set a counter for occurrences per group, setting the corresponding label and its formatting. (The totals should not be managed in this option but by setting the grid for total loading and then through the totals summary panel, as explained further below.)
 
-**Filter Editor (Editor filtro)**: opens the manual filter writing panel on the grid.
+**Filter Editor**: opens the manual filter writing panel on the grid.
 
 **Show Search Panel**: opens a search field on the occurrences of the grid, filtering the records themselves.
 
@@ -66,7 +66,7 @@ By right-clicking on the grid headers, the following operations are allowed:
 
 **Filter row**: enables/disables the initial filter row.
 
-**End Group (Fine gruppo)**: displays a final section for each group, where you can display totals and values of the columns for that group (for grids with total loading, as explained further below).
+**End Group**: displays a final section for each group, where you can display totals and values of the columns for that group (for grids with total loading, as explained further below).
 
 **Export**: allows exporting the grid in various formats (csv, html, image, mht, pdf, rtf, text, xls, xlsx, xps).
 

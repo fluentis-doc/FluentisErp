@@ -1,9 +1,9 @@
 ---
-title: Form Customizations and Profile Management (Personalizzazioni form e Gestione profili)
+title: Form Customizations and Profile Management 
 sidebar_position: 9
 ---
 
-### Form Customizations (Personalizzazioni form)
+### Form Customizations 
 
 Form customizations (size/position/new fields) must be stored with a user profile in order to set them as defaults for the user, multiple users, or for user roles (through the **Profile Rights** button): if they are not saved, they will be lost upon closing the form.
 
@@ -19,7 +19,7 @@ These also store the positioning of the columns, their size, but modifications t
 
 </p>
 
-- if we are in a filter form, open the **Filter widget** and select the **Filter** to make the **Customization mode (Customization mode)** option visible and selectable at the bottom. 
+- if we are in a filter form, open the **Filter widget** and select the **Filter** to make the **Customization mode** option visible and selectable at the bottom. 
 
 <p align="center"> 
 
@@ -27,7 +27,7 @@ These also store the positioning of the columns, their size, but modifications t
 
 </p>
 
-- if we are in a document form, select it to enable and select the **Customization mode (Customization mode)** option at the bottom.  
+- if we are in a document form, select it to enable and select the **Customization mode** option at the bottom.  
 
 <p align="center">
 
@@ -51,7 +51,7 @@ These also store the positioning of the columns, their size, but modifications t
 
 </p>
 
-### Profile Management (Gestione profili)
+### Profile Management
 
 **Procedure**
 

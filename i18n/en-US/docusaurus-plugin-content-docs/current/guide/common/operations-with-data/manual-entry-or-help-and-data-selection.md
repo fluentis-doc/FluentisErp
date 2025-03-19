@@ -1,18 +1,18 @@
 ---
-title: Data Entry and Selection (Inserimento e Selezione dati)
+title: Data Entry and Selection
 sidebar_position: 1
 ---
 
-## Data Entry (Inserimento dati)
+## Data Entry
 
 The data to be entered can be:
 
-- **optional (opzionali)**
+- **optional**
 
-- **mandatory (obbligatori)**: in this case, if the user has not entered them, they are highlighted before saving with the icon ![](/img/it-it/guide/operations-with-data/manual-entry-or-help-and-data-selection/image01.png) or with a red rectangle. 
+- **mandatory**: in this case, if the user has not entered them, they are highlighted before saving with the icon ![](/img/it-it/guide/operations-with-data/manual-entry-or-help-and-data-selection/image01.png) or with a red rectangle. 
 
 
-### Manual Entry (Inserimento manuale)  
+### Manual Entry 
 
 - selecting one or more options with a left mouse click 
 
@@ -46,7 +46,7 @@ The data to be entered can be:
 
 </p>
 
-### Entry with Field Help (Inserimento con il help di campo)  
+### Entry with Field Help
 
 - in all fields that have a blue background, pressing F9 or double-clicking opens the *field help* where you can enter filters to search for the desired data (see also  [Data Search](/docs/guide/common/operations-with-data/data-search-in-read-only-forms)).  
 
@@ -58,7 +58,7 @@ The data to be entered can be:
 
 </p>
 
-### Entry with Copy & Paste (Inserimento con Copia&Incolla)  
+### Entry with Copy & Paste
 
 Depending on the type of field where the user is positioned, a form opens with a right mouse click that allows pasting the previously copied text.  
 
@@ -68,10 +68,10 @@ Depending on the type of field where the user is positioned, a form opens with a
 
 </p>
 
-## Data Selection (Selezione dati)
+## Data Selection
 
-### Field/Row Selection (Selezione campo/riga)  
+### Field/Row Selection 
 You can select a field (by positioning on the desired one) or an entire row (going to the beginning of the row and clicking on the icon ![](/img/it-it/guide/operations-with-data/manual-entry-or-help-and-data-selection/image10.png)).
 
-### Multiple Data Selection (Selezione multipla dati)  
+### Multiple Data Selection 
 You can perform this on a field by clicking with the left mouse button and holding it down while moving up or down over the rows you wish to select. In certain fields, you can right-click to choose the option *Select All* for the table/field on which the user is positioned (see image above).

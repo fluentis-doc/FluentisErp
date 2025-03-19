@@ -1,13 +1,13 @@
 ---
-title: Data Search and Entry (Ricerca e inserimento dati)
+title: Data Search and Entry
 sidebar_position: 3
 ---
 
-The forms allow you to find previously entered records to *view (visualizzarli)*, *modify (modificarli)*, *delete (cancellarli)*, but also to add **New (Nuovi)** records if the user has the **necessary rights (diritti necessari)** for these operations.
+The forms allow you to find previously entered records to *view*, *modify*, *delete (cancellarli)*, but also to add **New** records if the user has the **necessary rights** for these operations.
 
 A form is divided into multiple sections:
 
-### 1. Advanced Search Bar (Barra di ricerca avanzata)
+### 1. Advanced Search Bar
 
 This multifunctional bar allows you to search by keyword within various fields present in the document object of the form.
 
@@ -25,7 +25,7 @@ In the window that opens, select the object again and by right-clicking select *
 
 :::
 
-### 2. Filter Area (Area di filtro)
+### 2. Filter Area
 
 Filters are typically in 'AND' condition and you can specify multiple filter criteria simultaneously to view: a single record (filter by document number), multiple records (filter by date), records entered in a year (filter by year), records entered for a certain registry (filter by account/sub-account), etc.
 
@@ -40,11 +40,11 @@ The filter area can be displayed as already expanded when the window opens if it
 
 ![](/img/neutral/common/pin.png)
 
-### 3. Result Grid (Griglia di risultato)
+### 3. Result Grid 
 
 Represents the list of data that matches the filters entered in the filter area.
 
-### Inserting New Records (Inserimento nuovi record)
+### Inserting New Records 
 
 The read/write forms also allow the insertion of records.
 

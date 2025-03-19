@@ -1,5 +1,5 @@
 ---
-title: Document Manager (Document manager)
+title: Document Manager 
 sidebar_position: 11
 ---
 

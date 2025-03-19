@@ -1,5 +1,5 @@
 ---
-title: Data Search (Ricerca dati)
+title: Data Search
 sidebar_position: 2
 ---
 
@@ -11,7 +11,7 @@ In search forms, it is possible to view: a single record (filter by document num
 
 A form is divided into three sections:
 
-### 1. Advanced Search Bar (Barra di ricerca avanzata)
+### 1. Advanced Search Bar
 
 This multifunctional bar allows searching by keyword within various fields present in the document subject of the form.
 
@@ -28,7 +28,7 @@ In the dialog that opens, select the object again and right-click to select *Edi
 
 :::
 
-### 2. Filter Area (Area di filtro)
+### 2. Filter Area
 
 Filters are typically in 'AND' condition, meaning multiple filters can be entered simultaneously.
 
@@ -42,7 +42,7 @@ The filter area can be displayed as already expanded upon opening the dialog if 
 
 ![](/img/neutral/common/pin.png)
 
-### 3. Result Grid (Griglia di risultato)
+### 3. Result Grid
 
 Represents the list of data that matches the filters entered in the filter area.
 

@@ -1,5 +1,5 @@
 ---
-title: Attach Documents (Allega Documenti)
+title: Attach Documents
 sidebar_position: 7
 ---
 
@@ -13,7 +13,7 @@ The functionality can be found in the ribbon bar of the forms with the icon:
 
 </p>
 
-By clicking on the **arrow (freccia)** present on the icon, a menu will open offering the option to attach a new document or link a document to an already attached document.
+By clicking on the **arrow** present on the icon, a menu will open offering the option to attach a new document or link a document to an already attached document.
 
 <p align="center">
 
@@ -49,4 +49,4 @@ Selecting the file will reopen the document attachment screen, and three additio
 
 > **Open Attachment**: clicking this button will allow you to open the attachment and then decide whether to save it, print it, or simply view it;  
 > **Save Attachment**: by clicking this button, the attachment will be directly saved to your computer, without first viewing it;  
-> **Print attachment (Stampa allegato)**: using this button, you will proceed directly to print the attachment without first viewing it.
+> **Print attachment**: using this button, you will proceed directly to print the attachment without first viewing it.
