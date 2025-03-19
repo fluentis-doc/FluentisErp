@@ -1,5 +1,5 @@
 ---
-title: Search interventions
+title: Search Interventions
 sidebar_position: 1
 ---
 

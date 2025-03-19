@@ -1,5 +1,5 @@
 ---
-title: Project management
+title: Project Management
 sidebar_position: 1
 ---
 
@@ -11,17 +11,17 @@ This area meets the needs of "Product Centric" and "Service Centric" business re
 
 The main types of projects can be summarized as follows:
 
-**WBS Projects (Progetti WBS)** - Build projects using the Work Break Down Structure method to enable Waterfall management within individual WBS and Work Packages.
+**WBS Projects** - Build projects using the Work Break Down Structure method to enable Waterfall management within individual WBS and Work Packages.
 
-**Commission Type Projects (Progetti di tipo Commessa)** - Allow the management of simple projects where the essential element is the project or commission number aimed at aggregating documents of different nature.
+**Job Order Type Projects** - Allow the management of simple projects where the essential element is the project or Job Order number aimed at aggregating documents of different nature.
 
-**Repetitive Projects (Progetti di tipo Ripetitivo)** - Create projects aimed at repetitive contracts, primarily characterized by a temporal sequence in billing. Typically, projects with repetitive billing such as rental or support contracts.
+**Repetitive Projects** - Create projects aimed at repetitive contracts, primarily characterized by a temporal sequence in billing. Typically, projects with repetitive billing such as rental or support contracts.
 
-**Maintenance Projects (Progetti di Manutenzione)** - Enable projects that manage the scheduled maintenance of internal or external systems of the company. Systems that may not even be owned.
+**Maintenance Projects** - Enable projects that manage the scheduled maintenance of internal or external systems of the company. Systems that may not even be owned.
 
-**SAL Type Projects (Progetti di tipo SAL)** - Manage contracts of the State of Progress of Works type. These are projects that foresee the realization of services or products related to ongoing activities. Characterized by the issuance of advance and final billing.
+**WIP Type Projects** - Manage contracts of the State of Progress of Works type. These are projects that foresee the realization of services or products related to ongoing activities. Characterized by the issuance of advance and final billing.
 
-**Manufacturing Type Projects (Progetti di tipo Manufacturing)** - Connect project management to the production and logistics flow with the aim of aggregating costs related to production in the typically MTO (Make to Order) mode.
+**Manufacturing Type Projects** - Connect project management to the production and logistics flow with the aim of aggregating costs related to production in the typically MTO (Make to Order) mode.
 
 Below are some examples of business processes based on the reality to be managed:
 
@@ -69,12 +69,12 @@ Billing in the project area can occur in 2 ways:
 - directly from the project (common for recurring billing in cases of projects for managing fees, licenses, etc.) and for advance invoices
 - from interventions.
 
-Consequently, all documents to be invoiced must flow into the interventions. In fact, an activity marked as billable can be automatically converted into an intervention.
+Consequently, all documents to be invoiced must flow into the interventions. In fact, an activity marked as invoiceable can be automatically converted into an intervention.
 
 Instead, for payroll/employee management, all activity declarations must be present. If the operator enters an intervention, when the intervention state is "Approved," the activity for the employee's hour count can be automatically generated.
 
 It follows that interventions and activities are documents linked to each other:
 from intervention > into activity
-from activity (if billable) > into intervention
+from activity (if invoiceable) > into intervention
 
 For more details, consult the specific pages for each document, where alongside explanations and indications on the configurations to be made, the priorities with which the configurations are read and the connection with other documents will also be illustrated.

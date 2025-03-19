@@ -1,13 +1,13 @@
 ---
-title: Calendar Resource Planning (Pianificazione a calendario delle risorse)
+title: Calendar Resource Planning 
 sidebar_position: 9
 ---
 
-After configuring the calendar, you can proceed with the calendar synchronization for the use of **Project management** and thus **Calendar Resource Planning (Pianificazione a calendario delle risorse)**:
+After configuring the calendar, you can proceed with the calendar synchronization for the use of **Project management** and thus **Calendar Resource Planning**:
 
 ![](/img/it-it/project-management/transverse-procedures/image01.png)
 
-:::note Note (Nota)
+:::note Note 
 In the **Employee** form, the *User* field must be filled by associating it with the user entered in **ARM**:
 :::
 
