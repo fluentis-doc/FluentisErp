@@ -7,11 +7,11 @@ Through this form, various work centers can be coded, including information rela
 
 The table allows for the insertion of new records or to search for existing ones to view, modify, or delete them.
 
-### Search Work Center (Ricerca Centri di lavoro)
+### Search Work Center 
 
 The form consists of a filter area and a results area. Once all desired filters are set, simply click the **Search** button to view the results in the results grid.
 
-### Insertion of Work Center (Inserimento Centri di lavoro)
+### Insertion of Work Center 
 
 To insert new codes, you must click on the first empty row in the grid or press the **Insert** button.
 
@@ -28,10 +28,10 @@ The form consists of a main section where the following data related to the work
 **Machine number**: indicates the number of equivalent machines;  
 **Labour Group**: indicates the code of the labor group associated with the work center;  
 **Workers number**: indicates the number of workers in the work center;  
-**Priority for Calendar Availability Calculation (Priorità per il calcolo disponibilità calendario)**: indicates which criteria to use to calculate the availability over time of that work center;  
+**Priority for Calendar Availability Calculation**: indicates which criteria to use to calculate the availability over time of that work center;  
 **Division**: indicates the code of the department in which the work center is located;  
-**% Work Center Utilization (utilizzo centro di lavoro)**: indicates the percentage of efficiency of the work center;             
-**% Minimum Occupancy Level (minimo livello occupazionale)**: indicates the minimum percentage that must be free in the work center to assign it another activity;  
+**% Work Center Utilization**: indicates the percentage of efficiency of the work center;             
+**% Minimum Occupancy Level**: indicates the minimum percentage that must be free in the work center to assign it another activity;  
 **Work start hour**: indicates the start work time of the work center;  
 **Start pause**: indicates the start break time of the work center;  
 **Break end time**: indicates the end break time of the work center;  

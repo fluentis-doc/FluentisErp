@@ -1,5 +1,5 @@
 ---
-title: Assembly Valuation (Valorizzazione assiemi)
+title: Assembly Valuation
 sidebar_position: 8
 ---
 
@@ -17,7 +17,7 @@ It consists of 6 sections:
 
 **Report type**: to decide up to what level of detail you want to visualize the list of components of the bills of materials. The print can be 'Analytical' or 'Summarized', and depending on the chosen option, you will obtain more or fewer details in the print report;
 
-**Result Grid (Griglia di risultato)**: in this section, the results derived from the filter options entered in the previous section will be displayed;  
+**Result Grid**: in this section, the results derived from the filter options entered in the previous section will be displayed;  
 To run the report, simply click on **Preview** (in this case, you will see a preview of the report and can decide whether to print, how many pages and copies to print, or whether to export the file) or click on **Print Report** (in this case, the report will be sent directly to the printer).
 
 For anything not detailed in this document regarding the common functionality of forms, please refer to the following link [Common Features, Buttons, and Fields](/docs/guide/common).

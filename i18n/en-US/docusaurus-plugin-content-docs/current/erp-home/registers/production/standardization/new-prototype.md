@@ -1,5 +1,5 @@
 ---
-title: Prototype Management (Gestione Prototipi)
+title: Prototype Management 
 sidebar_position: 2
 ---
 
@@ -11,9 +11,9 @@ After defining all the necessary components, at any level of the bill of materia
 
 The form consists of an area with header information, where it is possible to enter:
 
-**Type of prototype (Tipo di prototipo)**: indicates the type of prototype to be used;      
+**Type of prototype**: indicates the type of prototype to be used;      
 **Year / number / date**: indicate the year, number, and creation date of the prototype, these are entered automatically;          
-**Start and end validity date (Data di inizio e fine validità)**: indicates the start and end validity date of the prototype;          
+**Start and end validity date**: indicates the start and end validity date of the prototype;          
 **Project**: indicates the link of the prototype to a possible project;     
 **Prototype description**: is a free note field.
 
@@ -51,7 +51,7 @@ In this tab, there are a number of read-only information related to the article 
 
 **Sales Price List**: displays all selling price lists where this article appears.
 
-**Prototype note (Nata prototipo)**: allows for entering a free note related to the prototype (this is the only editable field in this tab).
+**Prototype note**: allows for entering a free note related to the prototype (this is the only editable field in this tab).
 
 ### Components
 
@@ -84,7 +84,7 @@ If the selected element in the tree is a semi-finished product, in the **Compone
 
 In the **Extra data - model** and **Extra data - component** tabs, it is possible to enter the respective extra data related to the parent article and the component; for an in-depth description of the extra data, reference is made to the article [Extra data](/docs/configurations/utility/extra-data/extradata/new-extradata-simple).     
 
-At the bottom of the form, within the **Cycle** tab, it is possible to insert the processing phases related to the individual elements of the tree with their respective times and setup and processing costs; it is also possible to manually enter a cost in the **Manual phase cost (Costo fase manuale)** field, which will have a higher priority in the cost calculation phase, overriding the cost calculated based on the phase times and cost centers.    
+At the bottom of the form, within the **Cycle** tab, it is possible to insert the processing phases related to the individual elements of the tree with their respective times and setup and processing costs; it is also possible to manually enter a cost in the **Manual phase cost** field, which will have a higher priority in the cost calculation phase, overriding the cost calculated based on the phase times and cost centers.    
 The **Cycle** tab is enabled for articles with **Procurement type** of *Production* or *Subcontractor* in the [MRP Parameters](/docs/configurations/parameters/production/mrp-parameters/mrp-parameters-intro).       
 Furthermore, in the **Shipping phases** tab, the phase in which the related element must be withdrawn from the warehouse is indicated.
 
@@ -92,7 +92,7 @@ Furthermore, in the **Shipping phases** tab, the phase in which the related elem
 
 *Specific buttons*:
 
-> **Prototyping parameters (Parametri prototipazione)**: allows you to open the prototyping parameters, specifically to consult the Prototyping parameters;    
+> **Prototyping parameters**: allows you to open the prototyping parameters, specifically to consult the Prototyping parameters;    
 > **Recompute Costs**: allows recalculating the costs of that prototype based on the costs that comprise it;    
 > **Items register**: allows you to open the item registry related to the selected element;    
 > **MRP Parameters**: allows you to open the MRP parameters related to the selected element;    
@@ -125,7 +125,7 @@ Specifically, the fields taken into consideration are the following:
 **Machine cost**: total machine cost calculated from the bill of materials tree;    
 **Manual cost**: not managed;        
 
-**Industrial cost**: total of *Material costs (Costi materiale)*, *Labour costs*, and *Machine cost*;     
+**Industrial cost**: total of *Material costs*, *Labour costs*, and *Machine cost*;     
 **Total direct costs**: total of the costs entered in the *Direct costs* section;    
 **Industrial cost + direct costs**: total of *Industrial cost* and *Direct costs*;    
 **Refill**: allows specifying the markup as a percentage or value; this value increases the *Industrial cost* or the *Total general costs*, respectively if in the [Prototyping parameters](/docs/configurations/parameters/logistics/item-prototypes-parameters/) the *Calculation of sales price with markup on:* field is indicated as *Direct costs* or *Total costs*;      
@@ -134,10 +134,10 @@ Specifically, the fields taken into consideration are the following:
 **Total other costs**: total of the costs entered in the *Other costs* section;    
 **Correction**: allows entering a value to correct the new selling price;      
 **Rounding**: allows deciding whether to round up or down and the order of magnitude;      
-**Sales price**: total of *Industrial cost + direct costs*, *General costs*, *Total other costs*, *Correction*, and *Rounding*; if the *New selling price (Nuovo prezzo di vendita)* flag is active in the [Prototyping parameters](/docs/configurations/parameters/logistics/item-prototypes-parameters/), this field is calculated automatically and cannot be modified manually; while if it is disabled, the field can also be edited manually;         
+**Sales price**: total of *Industrial cost + direct costs*, *General costs*, *Total other costs*, *Correction*, and *Rounding*; if the *New selling price* flag is active in the [Prototyping parameters](/docs/configurations/parameters/logistics/item-prototypes-parameters/), this field is calculated automatically and cannot be modified manually; while if it is disabled, the field can also be edited manually;         
 **Production batch**: allows indicating the value of the production lot, which determines an increase or decrease in labor and machine costs, and also affects the unit cost of setup;    
 **Total production batch**: total of the *Sales price* calculated for the indicated *Production batch*;     
-**Price list deviation (Scostamento da listino)**: indicates the deviation from the selling price list;            
+**Price list deviation**: indicates the deviation from the selling price list;            
 **Price list type**: indicates the type of list;                
 **From validity date**: indicates the validity date of the price list;           
 **To validity date**: indicates the validity date of the price list.                
@@ -150,9 +150,9 @@ Allows visualizing the cost composition of the prototype through a pie chart, ei
 
 > **Update sales price list**: allows updating the price of the article on the corresponding selling price list;         
 > **Update offers**: by varying the value of the *Sales price* of a prototype linked to an offer, through this button, it is possible to update the price indicated in the offer itself;     
-> **Update customer (Aggiorna cliente)**: allows creating a new valuation row for the prototype associated with the selected customer.         
+> **Update customer**: allows creating a new valuation row for the prototype associated with the selected customer.         
 
-**Cost calculation method (Modalità di calcolo costi)**
+**Cost calculation method**
 
 The costs reported for each component are unit costs; in the structure of the prototype bills of materials, the unit and total costs of materials and processing related to the quantities of each component’s parent are reported.
 

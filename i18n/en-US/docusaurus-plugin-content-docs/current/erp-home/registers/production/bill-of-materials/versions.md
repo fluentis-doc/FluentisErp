@@ -1,5 +1,5 @@
 ---
-title: Versions (Versioni)
+title: Versions
 sidebar_position: 4
 ---
 

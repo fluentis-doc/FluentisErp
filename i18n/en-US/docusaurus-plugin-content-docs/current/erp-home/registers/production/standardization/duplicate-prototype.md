@@ -1,5 +1,5 @@
 ---
-title: Duplicate Models (Duplica modelli)
+title: Duplicate Models 
 sidebar_position: 3
 ---
 
@@ -13,7 +13,7 @@ You can also choose to set the flags **Materials**, **Extra data**, **Cycle phas
 
 Once all the data is set, clicking on the icon on the ribbon bar called **Duplicate** will activate the procedure that generates, for the specified item, a prototype that is exactly identical to the starting one.
 
-*Specific button (Pulsante specifico)*:
+*Specific button*:
 
 > **Duplicate**: button that activates the procedure that allows duplicating an assembly.
 

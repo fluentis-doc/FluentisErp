@@ -1,5 +1,5 @@
 ---
-title: Prototyping Search (Ricerca prototipazione)
+title: Prototyping Search 
 sidebar_position: 1
 ---
 
@@ -9,8 +9,8 @@ The form consists of a filter area and a results area. Once all desired filters 
 
 To enter new records, you need to click on the first empty row in the grid or press the **New** button.
 
-*Specific button (Pulsante specifico)*:
+*Specific button*:
 
 > **Recompute Costs**: by selecting one or more prototype rows and clicking on the cost recalculation button, the system will recalculate the costs of that prototype based on the costs that make it up.
 
-For everything not detailed in this document regarding the common functionality of forms, please refer to the following link [Common functionalities, buttons, and fields (Funzionalità, pulsanti e campi comuni)](/docs/guide/common).
+For everything not detailed in this document regarding the common functionality of forms, please refer to the following link [Common functionalities, buttons, and fields](/docs/guide/common).

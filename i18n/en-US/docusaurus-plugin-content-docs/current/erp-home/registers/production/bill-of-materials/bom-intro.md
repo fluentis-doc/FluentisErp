@@ -1,9 +1,9 @@
 ---
-title: Bill of Materials (Distinta base)
+title: Bill of Materials 
 sidebar_position: 0
 ---
 
-:::important **Introduction (Introduzione)**
+:::important **Introduction**
 
 The bill of materials is a data structure of a physical-logical type that describes how a product is made.             
 Normally, it is only used for production products and not for purchased items, indicating the components that are part of the assembled product and the necessary quantity of each to produce a predefined amount of the assembled product (component usage coefficient).            
@@ -27,7 +27,7 @@ Regarding planning, in addition to physical bills where both the assembled code 
 The main types of planning bills are as follows:
 
 <details>
-<summary> Modular Bills (Distinte modulari) </summary>
+<summary> Modular Bills </summary>
 
 This type of bill describes the modules and options of a finished product.
 The modules are common parts that do not depend on customer choices, whereas the options are chosen by customers.
@@ -36,7 +36,7 @@ It is widely used in environments where a product can be ordered with various op
 </details>
 
 <details>
-<summary> Container Bills (Distinte contenitore) </summary>
+<summary> Container Bills </summary>
 
 In this case, the code of the assembled product does not correspond to a real product managed in inventory but represents a logical grouping of its components.
 The advantage is that with a single item code, many are managed in both the planning phase and inventory movement and product costing.
@@ -45,7 +45,7 @@ The container code is thus used as a component in other bills, both physical and
 </details>
 
 <details>
-<summary> Super Bills (Distinte super) </summary>
+<summary> Super Bills </summary>
 
 These are bills used to represent families of finished products that use modular bills and common parts bills as components.
 The usage coefficient assigned to each option represents the probability of ordering that option out of the total units sold of the finished product family (for example, if the 2000 cc gasoline engine is chosen in 23% of cases, the usage coefficient for that option will be 0.23).
@@ -54,7 +54,7 @@ The usage coefficient assigned to each common parts bill represents the quantity
 </details>
 
 <details>
-<summary> Family Bills (Distinte famiglia) </summary>
+<summary> Family Bills </summary>
 
 The assembled code of such a bill is a logical and not physical element that serves to identify a family of products by indicating its individual members when the number of members in a family is not large.
 Often the members of the family are the “models” that compose it.
@@ -65,7 +65,7 @@ Each “model” will be present in the bill with a usage coefficient that repre
 </details>
 
 <details>
-<summary> Average Bills (Distinta media) </summary>
+<summary> Average Bills </summary>
 
 Once again, the code of the assembled product is logical and not physical.
 It represents the average structure of a product similarly to how a super bill does, but unlike the latter, its components are not modules or kits (i.e., logical components) but physical codes actually managed in inventory and in most cases consist solely of purchased components.
@@ -74,7 +74,7 @@ It is mainly used when finished products differ in physical characteristics such
 </details>
 
 <details>
-<summary> Imaginary Bills (Distinta immaginaria) </summary>
+<summary> Imaginary Bills </summary>
 
 This is a type of bill used in companies that work on Engineer to Order type orders where very complex products with long realization times are produced and not yet engineered at the time of the customer order (industrial plants, large machinery, ships, airplanes, etc.).
 In this case, the bill of the finished product would only be available at the end of the entire design activity, making it too late for the planning system to take action.

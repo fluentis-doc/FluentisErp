@@ -9,7 +9,7 @@ This form allows for bulk modification of previously created prototypes, using t
 
 By selecting **Substitute/Edit** from the **Manag. type** combo, you need to enter a component in the filter area by selecting it with the appropriate *Help items* next to the **Component** field.
 
-Filter for only one item; it is not possible to use just the item class or just a part of the code or description as a search filter. After setting the search criteria, by clicking the **Search** button on the ribbon bar, the procedure displays in the grid all the bill of materials that include the component entered in the filter area, thus performing a *Component Implosion (Implosione componente)*.
+Filter for only one item; it is not possible to use just the item class or just a part of the code or description as a search filter. After setting the search criteria, by clicking the **Search** button on the ribbon bar, the procedure displays in the grid all the bill of materials that include the component entered in the filter area, thus performing a *Component Implosion*.
 
 In the results grid, class, code, description and variant of the assembly, version of the bill of materials, validity start and end of both the parent item and the component are displayed; moreover, the quantity of the component and its unit of measure used is also shown, always in connection with the assembly/component relationship.
 
@@ -19,7 +19,7 @@ Select, in the lower section of the window, the new component to replace the one
 
 By using the *Alternative* flags, you can decide whether to also include the alternatives tied to the new component in the new link.
 
-It is also possible to activate, if necessary, the *Movable* flag and the *Phantom* flag (for a detailed explanation of the various fields to be filled in, refer to the article [Structure Management (Gestione strutture)](/docs/erp-home/registers/production/bill-of-materials/assemblies/structure-management).
+It is also possible to activate, if necessary, the *Movable* flag and the *Phantom* flag for a detailed explanation of the various fields to be filled in, refer to the article [Structure Management](/docs/erp-home/registers/production/bill-of-materials/assemblies/structure-management).
 
 Through this procedure, it is possible to enter, in the lower section, the same component entered in the filter section: in this case, simply a modification of the already existing information for that component within the selected bills of materials in the grid will be made.
 
@@ -37,7 +37,7 @@ Select, in the lower section of the window, the new component to insert into the
 
 By using the *Alternative* flags, you can decide whether to also include the alternatives tied to the new component in the new link.
 
-You can activate, if necessary, the *Movable* flag and the *Phantom* flag (for a detailed explanation of the various fields to be filled in, refer to the article [Structure Management (Gestione strutture)](/docs/erp-home/registers/production/bill-of-materials/assemblies/structure-management).
+You can activate, if necessary, the *Movable* flag and the *Phantom* flag for a detailed explanation of the various fields to be filled in, refer to the article [Structure Management](/docs/erp-home/registers/production/bill-of-materials/assemblies/structure-management).
 
 Once you have completed the information input, execute the **Insertion** procedure using the *Run* button.
 
@@ -57,4 +57,4 @@ Once the component to be deleted is selected, you can execute the **Cancellation
 
 > **Run**: button that allows you to activate the selected procedure from the initial combo of the window (thus either the *Replacement/Modification* procedure, or the *Insertion* procedure or the *Cancellation* procedure).
 
-For anything not detailed in this document regarding the common functionality of forms, please refer to the following link [Common Features, Buttons, and Fields (Funzionalità, pulsanti e campi comuni)](/docs/guide/common).
+For anything not detailed in this document regarding the common functionality of forms, please refer to the following link [Common Features, Buttons, and Fields](/docs/guide/common).
