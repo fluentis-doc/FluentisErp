@@ -3,10 +3,10 @@ title: Warehouse Purchase Delivery Note Record
 sidebar_position: 1
 keywords:
 - DDT
-- Warehouse (Magazzino)
+- Warehouse 
 ---
 
-The procedure is accessed via the path **Purchases > Purchase DDT > Procedures > Warehouse Purchase Delivery Note Record (Acquisti > DDT di acquisto > Procedure > Registrazione DDT di acquisto in magazzino)** and allows for the execution/restoration of warehouse loading operations for the items present in the DDT.
+The procedure is accessed via the path **Purchases > Purchase DDT > Procedures > Warehouse Purchase Delivery Note Record** and allows for the execution/restoration of warehouse loading operations for the items present in the DDT.
 
 :::note NOTE
 The Purchase DDT can also be registered in the warehouse using the button [*Automatic loading in warehouse*](/docs/purchase/purchase-delivery-note/procedures/create-delivery-notes-from-orders) found within the document.
@@ -36,9 +36,9 @@ If some item lines of the DDT do not have the warehouse and the reason for loadi
 
 The available options are:
 
-- **Do not register the entire DDT (Non effettuare la registrazione del DDT per intero)**: does not allow partial loading of the document;   
+- **Do not register the entire DDT**: does not allow partial loading of the document;   
 - **Ignore item without warehouse and template**: allows partial loading of the document;    
-- **Accept the following data as warehouse and reason (Accettare come magazzino e causale i seguenti dati)**: ensures complete loading of the document. For all items found without a warehouse and reason in the selected DDTs, it sets the data entered immediately after, in the fields: *Warehouse* and *Template*.
+- **Accept the following data as warehouse and reason**: ensures complete loading of the document. For all items found without a warehouse and reason in the selected DDTs, it sets the data entered immediately after, in the fields: *Warehouse* and *Template*.
 
 :::important Remember
 If in the [Purchase DDT Parameters](/docs/configurations/parameters/purchase/purchase-delivery-note-parameters#carico) > Load tab the flag **Priority warehouse and load template** is active, the *Warehouse* and *Template* entered in the parameters will always be used, ignoring those present in the DDT for each item line.

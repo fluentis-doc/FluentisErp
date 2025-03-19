@@ -1,13 +1,13 @@
 ---
-title: Fulfillment (Evasioni)
+title: Fulfillment 
 sidebar_position: 5
 ---
 
 The **Execution** cycle in Fluentis serves to manage the entire operational flow of purchasing in a structured and integrated manner, from the initial request phase to the final invoicing phase. Each phase is characterized by specific procedures and configurations that ensure a smooth and integrated management of the workflow.
 
-## Conversion from Offer to Order (Conversione da Offerta a Ordine)
+## Conversion from Offer to Order 
 
-The procedure for **converting a supplier offer to a purchase order (conversione da offerta fornitore a ordine di acquisto)** can be initiated:
+The procedure for **converting a supplier offer to a purchase order** can be initiated:
 
 - From the [Menu Procedures](/docs/purchase/offer-request/procedures/order-creation): going to *Purchases > Offer Requests > Procedures > Create Supplier Order from Supplier Offer*.
 
@@ -23,9 +23,9 @@ Once the conversion is confirmed, the system generates a new supplier order usin
 
 For more details on the procedure, please refer to the dedicated page in the documentation.
 
-## Conversion from Purchase Request to Order (Conversione da Richiesta di Acquisto a Ordine)
+## Conversion from Purchase Request to Order
 
-The procedure for **creating a Supplier Order from Purchase Request (creazione Ordine fornitore da Richiesta di Acquisto)** can be initiated:
+The procedure for **creating a Supplier Order from Purchase Request** can be initiated:
 
 - From the [Menu Procedures](/docs/purchase/purchase-orders/procedures/create-purchase-orders-from-purchase-requests): going to *Purchases > Supplier Orders > Procedures > Automatic Order Creation*.
 
@@ -39,11 +39,11 @@ This procedure allows for the creation of one or more purchase orders from one o
 
 Once the order prototype is confirmed, clicking the *Generate Supplier Orders (Genera ordini fornitore)* button will cause the system to create the purchase orders based on the chosen parameters.
 
-The same procedure can be used for creating **Supplier Orders from Customer Orders (Ordini fornitore da Ordini cliente)**. For more details, please refer to the specific [page](/docs/purchase/purchase-orders/procedures/create-purchase-orders-from-purchase-requests) in the documentation.
+The same procedure can be used for creating **Supplier Orders from Customer Orders**. For more details, please refer to the specific [page](/docs/purchase/purchase-orders/procedures/create-purchase-orders-from-purchase-requests) in the documentation.
 
-## Fulfillment from Orders to Delivery Notes (Evasione da Ordini a DDT)
+## Fulfillment from Orders to Delivery Notes 
 
-The procedure for **fulfilling from order to Delivery Note (evasione da ordine a Documento di Trasporto)** is available in two modes:
+The procedure for **fulfilling from order to Delivery Note** is available in two modes:
 
 - From the [Menu Procedures](/docs/purchase/purchase-delivery-note/procedures/create-delivery-notes-from-orders): going to *Purchases > Purchase DDT > Procedures > Fulfillment from Orders*.
 - Fulfillment from the [Header](/docs/purchase/purchase-delivery-note/insert-purchase-delivery-note/purchase-delivery-note) of the DDT: using the *Order Fulfillment (Evasione da Ordine)* button to open a selection window of confirmed orders from the supplier to transfer to the DDT.
@@ -58,13 +58,13 @@ The conditions for fulfillment are:
 
 The conditions for grouping orders in DDT can be defined in the [DDT Grouping Parameters](/docs/configurations/parameters/purchase/dn-grouping).
 
-After selecting the orders and setting the filters, clicking on *Transfer* will generate the DDT with the order data. If the fulfillment has been executed correctly, the order will automatically change status to *"Fulfilled (Evaso)"* or *"Partially Fulfilled (Parzialmente Evaso)"*.
+After selecting the orders and setting the filters, clicking on *Transfer* will generate the DDT with the order data. If the fulfillment has been executed correctly, the order will automatically change status to *"Fulfilled"* or *"Partially Fulfilled"*.
 
-Fulfillment from order to DDT can also be completed from the header of the invoice itself using the *Order Fulfillment (Evasione da ordine)* button.
+Fulfillment from order to DDT can also be completed from the header of the invoice itself using the *Order Fulfillment* button.
 
-## Fulfillment from DDT to Invoices (Evasione da DDT a Fatture)
+## Fulfillment from DDT to Invoices 
 
-The procedure for **fulfilling from DDT to invoice (evasione da DDT a fattura)** can be initiated in two modes:
+The procedure for **fulfilling from DDT to invoice** can be initiated in two modes:
 
 - From the [Menu Procedures](/docs/purchase/purchase-invoices/procedures/purchase-delivery-note-valorization): going to *Purchases > Purchase Invoices > Procedures > Valuation of Purchase DDT*.
 - From the [Header](/docs/purchase/purchase-invoices/insert-purchase-invoice/purchase-invoice) of the Sales Invoice: using the *D.N. execution* button in the invoice header.

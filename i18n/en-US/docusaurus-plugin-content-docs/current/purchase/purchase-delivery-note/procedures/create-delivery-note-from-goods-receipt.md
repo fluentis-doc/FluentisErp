@@ -3,10 +3,10 @@ title: Delivery Note from Goods Receipt
 sidebar_position: 2
 keywords:
 - DDT
-- Goods Receipt (Ricevimento merci)
+- Goods Receipt 
 ---
 
-The procedure opens via the path **Purchases > Purchase Invoice > Procedures > Delivery Note from Goods Receipt (Acquisti > Bolla di acquisto > Procedure > Creazione DDT da ricevimento merci)**
+The procedure opens via the path **Purchases > Purchase Invoice > Procedures > Delivery Note from Goods Receipt**
 
 ### Filter
 
@@ -16,13 +16,13 @@ It offers the possibility to enter filters to search for receipts, select them, 
 
 ### Parameters
 
-*Mandatory data (Dati obbligatori)*:
+*Mandatory data*:
 
 - **Purchase Delivery Note Type**: indicates the document type to be used for creating the DDT.
-- **VAT**: indicates the [VAT Rate (Aliquota IVA)](/docs/configurations/tables/finance/vat-rates) to be entered on the item lines in the DDT.
+- **VAT**: indicates the [VAT Rate](/docs/configurations/tables/finance/vat-rates) to be entered on the item lines in the DDT.
 - **Purchase turnover type**: to be set on the item lines of the DDT.
 
-*Optional data (Dati opzionali)*:
+*Optional data*:
 > **Recompute cost/revenue centers**: allows choosing whether to recalculate the cost/revenue centers at the time of DDT creation.
 
 ### Rollback
