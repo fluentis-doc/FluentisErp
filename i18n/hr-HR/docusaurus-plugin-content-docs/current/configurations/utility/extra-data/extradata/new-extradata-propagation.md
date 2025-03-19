@@ -24,7 +24,7 @@ Il tab **Propagation** si compone di una griglia con le seguenti colonne:
 * **From val.  date / To validity date**: se vogliamo che sia temporanea, quindi abbia un inizio ed una fine.  
 
 Nello screenshot d'esempio procediamo a collegare l'ExtraData 'FinituraExtraData' che abbiamo definito in uno scenario precedente 
-[**Link Scenario Precedente**](docs/configurations/utility/extra-data/extradata/new-extradata-datasource).  
+[**Link Scenario Precedente**](/docs/configurations/utility/extra-data/extradata/new-extradata-datasource).  
 
 Per gestire la propagazione da un oggetto principale ad uno derivato è necessario avere, nel tab delle **attivazioni**, l'ExtraData attivo su entrambi gli oggetti e gestire poi la propagazione attraverso l'apposito tab **propagation**.
 
