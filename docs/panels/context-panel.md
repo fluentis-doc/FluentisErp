@@ -10,7 +10,7 @@ La costruzione di un pannello contestuale (context panel) prevede alcuni step di
 2.  creazione del **context panel** dalla relativa form. 
 3.  parametrizzazione del **context panel** e definizione dei relativi legami.
 
-![](../../static/images/20250318122749.png)
+![](/img/en-US/extradata/20250318122749.png)
 
 La form dei pannelli contestuali si presenta così come segue:
 
@@ -32,7 +32,7 @@ Il corpo centrale si compone di una griglia con i seguenti campi:
 * Report: facoltativo - indica il report su cui si basa in pannello contestuale.
 
 ## Form di dettaglio
-![](../../static/images/20250318135028.png)
+![](/img/en-US/extradata/20250318135028.png)
 
 La form di dettaglio si compone di n. 3 parti:
 
@@ -82,21 +82,21 @@ dove, ```@ID``` è un parametro che definiamo successivamente a livello di **Dat
 
 2. Creiamo il datasource basato sulla query di cui al punto precedente; per la creazione di DataSource si rimanda all'apposita documentazione.   
 
-![](../../static/images/20250318143226.png)
+![](/img/en-US/extradata/20250318143226.png)
 Trasciniamo nel tab ***Visible property*** le proprietà di nostro interesse quali: **Id**, **Description**, **Code**, **TotalAmount**, **TotalDepreciation**, **NetAmount**.  
 
 3. Definiamo, attraverso il tab **parameters**,  un parametro nel datasource appena creato.
 
-![](../../static/images/20250318144742.png)
+![](/img/en-US/extradata/20250318144742.png)
 
 4. Da Fluentis, procediamo a creare la dashboard; per tutti i dettagli relativi alle dashboard si rimanda all'apposita documentazione dedicata.  
 
 5. Da Arm, creiamo la parametrizzazione per il **context panel**.  
 
-![](../../static/images/20250318145023.png)
+![](/img/en-US/extradata/20250318145023.png)
 
 6. Procediamo a selezionare un record dalla form dei cespiti; verrà quindi mostrata sul pannello contestuale la percentuale di ammortamento del cespite.  
 
-![](../../static/images/20250318153357.png)
+![](/img/en-US/extradata/20250318153357.png)
 
 

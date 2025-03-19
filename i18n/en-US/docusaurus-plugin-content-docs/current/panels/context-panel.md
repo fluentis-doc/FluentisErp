@@ -10,7 +10,7 @@ The construction of a context panel involves several parameterization steps, mor
 2. creation of the **context panel** from the related form.
 3. parameterization of the **context panel** and definition of the relevant links.
 
-![](../../static/images/20250318122749.png)
+![](/img/en-US/extradata/20250318122749.png)
 
 The form of the context panels is presented as follows:
 
@@ -32,7 +32,7 @@ The central body consists of a grid with the following fields:
 * Report: optional - indicates the report on which the context panel is based.
 
 ## Detail Form
-![](../../static/images/20250318135028.png)
+![](/img/en-US/extradata/20250318135028.png)
 
 The detail form is composed of 3 parts:
 
@@ -81,19 +81,19 @@ where ```@ID``` is a parameter that we define later at the **DataSource** level.
 
 2. We create the datasource based on the query mentioned in the previous point; for creating a DataSource, please refer to the specific documentation.
 
-![](../../static/images/20250318143226.png)
+![](/img/en-US/extradata/20250318143226.png)
 Drag the properties of interest such as: **Id**, **Description**, **Code**, **TotalAmount**, **TotalDepreciation**, **NetAmount** into the ***Visible property*** tab.
 
 3. We define a parameter in the newly created datasource through the **parameters** tab.
 
-![](../../static/images/20250318144742.png)
+![](/img/en-US/extradata/20250318144742.png)
 
 4. From Fluentis, we proceed to create the dashboard; for all details related to dashboards, please refer to the specific documentation.
 
 5. From Arm, we create the parameterization for the **context panel**.
 
-![](../../static/images/20250318145023.png)
+![](/img/en-US/extradata/20250318145023.png)
 
 6. We proceed to select a record from the asset form; the depreciation percentage of the asset will then be shown on the context panel.
 
-![](../../static/images/20250318153357.png)
+![](/img/en-US/extradata/20250318153357.png)
