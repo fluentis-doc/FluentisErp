@@ -1,9 +1,9 @@
 ---
-title: Variants (Varianti)
+title: Variants 
 sidebar_position: 21
 ---
 
-:::important What it is for (A cosa serve)
+:::important Purpose
 The Variants tab in the Fluentis item registry provides the functionality to enter and manage the variants of a given item. This option is particularly useful when there is a need to create a new item that differs only marginally from an existing one. In such cases, creating a variant is preferable to creating a new item, especially when the main characteristics of the original item remain substantially unchanged.        
 A practical example of this functionality can be observed in the fashion sector: one might have an item called "sweater," from which variants are created for different sizes and colors, maintaining the fundamental characteristics of the original item.
 

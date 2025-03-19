@@ -1,9 +1,9 @@
 ---
-title: Item Registry - Fixed Section (Anagrafica articolo - sezione fissa)
+title: Item Registry - Fixed Section
 sidebar_position: 1
 ---
 
-**Introduction (Introduzione)**: [Product identification and related parts](/docs/erp-home/registers/items/master-item-intro) 
+**Introduction**: [Product identification and related parts](/docs/erp-home/registers/items/master-item-intro) 
 
 :::important Purpose
 The item registry of Fluentis plays a crucial role in managing and organizing information related to a company’s items. It acts as a central database where the details of each product are recorded and updated, allowing for a clear and systematic view of inventories, costs, and warehouse movements.
@@ -14,11 +14,11 @@ Thanks to this registry, companies can keep track of the status of items, automa
 :::
 
 The process of creating a new item opens through the path:
-- **Home > Item > Create New Item (Home > Articolo > Crea Nuovo Articolo)**,
+- **Home > Item > Create New Item**,
 
 or
 
-- **Home > Items > Search Items (Home > Articoli > Ricerca Articoli)** by clicking the **New** button present in the ribbon bar of the form in question.
+- **Home > Items > Search Items** by clicking the **New** button present in the ribbon bar of the form in question.
 
 The **Item registry** form will open, consisting of a section where the *mandatory characteristics* of the item will be defined and a lower section made up of several tabs that group the *specific characteristics*.
 
@@ -29,7 +29,7 @@ The combination of class and code must be unique for that specific item.
 :::
 Other non-mandatory characteristics:
 - **Second description**: a second description that can be attributed to the item;
-- **Configuration/Version (Configurazione/Versione)**: combo through which the version of the item is selected;
+- **Configuration/Version**: combo through which the version of the item is selected;
 
 Once all the mandatory characteristics of the item have been defined, one proceeds to enter the more specific ones through the various tabs found in the second part of the window, which are covered in the following documents.
 
@@ -38,4 +38,4 @@ Once all the mandatory characteristics of the item have been defined, one procee
 > **Update LF LV with Formula**: button that allows updating selling prices through specific formulas starting from the list prices;      
 > [**MRP Parameters**](/docs/configurations/parameters/production/mrp-parameters/search-mrp-parameters): button that provides access to the *MRP Parameters* of that item, where parameters necessary for managing that item in production are defined; this is a button that will also be found within other forms related to the production area.  
 
-For everything that is not detailed in this document regarding the common functioning of the forms, please refer to the following link [Common functionalities, buttons, and fields (Funzionalità, pulsanti e campi comuni)](/docs/guide/common).
+For everything that is not detailed in this document regarding the common functioning of the forms, please refer to the following link [Common functionalities, buttons, and fields](/docs/guide/common).

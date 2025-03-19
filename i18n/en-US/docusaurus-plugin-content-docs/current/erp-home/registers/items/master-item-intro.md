@@ -1,9 +1,9 @@
 ---
-title: Introduction (Introduzione)
+title: Introduction 
 sidebar_position: 0
 ---
 
-:::important **Product Identification and Related Parts (Identificazione dei prodotti e relative parti)**
+:::important **Product Identification and Related Parts**
 
 Every manufacturing company sells physical products commonly referred to as finished products. 
 

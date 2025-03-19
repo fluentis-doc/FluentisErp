@@ -1,5 +1,5 @@
 ---
-title: Supplier Price Lists (Listini fornitori)
+title: Supplier Price Lists 
 sidebar_position: 15
 ---
 

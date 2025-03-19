@@ -3,7 +3,7 @@ title: Preferential vendors
 sidebar_position: 12
 ---
 
-:::important What it is for
+:::important Purpose
 The Preferential vendors tab within the item registry of Fluentis is a key feature for managing supplies. This allows for precisely defining the preferred suppliers for each item, thus facilitating the procurement process and ensuring that the most suitable suppliers are chosen.  
 In its interface, the section is divided into two main parts. The first part concerns general information about suppliers, such as the selection of a predefined supplier, which becomes the main procurement channel for the item in question. Here, users can also set important parameters like maximum order quantity, tolerances on quantities and prices, and details related to supply orders. The second part offers a detailed grid where specific information about each supplier can be added, such as lead time, and any notes.
 :::
@@ -18,17 +18,17 @@ The window consists of two sections:
 
 **Maximum number of lines of evidence**: this is the maximum number of supplier order lines that can be created for a given item/supplier until the flag **Block order rows** is activated;
 
-**Purchase unit of measure (U.M di acquisto)**: this field specifies the unit of measure for purchasing that material;
+**Purchase unit of measure**: this field specifies the unit of measure for purchasing that material;
 
-**maximum affordable value**: this field specifies the maximum quantity that can be ordered from that supplier for that item;
+**Maximum affordable value**: this field specifies the maximum quantity that can be ordered from that supplier for that item;
 
 **Block order rows**: if active, this flag indicates that the ability to insert new supplier order lines should be blocked;
 
 **Block date**: indicates the date on which the block of supplier order lines is activated;
 
-**% tolerance for received quantities in excess and in defect (% tolleranza quantità ricevuta in eccesso e in difetto)**: in these two fields, the % tolerance on the delivered quantity exceeding and below the specified amount by the supplier for that material will be indicated;
+**% tolerance for received quantities in excess and in defect**: in these two fields, the % tolerance on the delivered quantity exceeding and below the specified amount by the supplier for that material will be indicated;
 
-**% price tolerance in excess and in defect (% tolleranza prezzo in eccesso e in difetto)**: in these two fields, the % tolerance on the supplier price exceeding and falling short of the established price will be indicated;
+**% price tolerance in excess and in defect**: in these two fields, the % tolerance on the supplier price exceeding and falling short of the established price will be indicated;
 
 **Allow zero price**: if active, this flag allows issuing supplier orders with a zero price for that item.
 
@@ -50,7 +50,7 @@ The window consists of two sections:
 
 **Origin**: indicates the origin of the goods, such as the country of origin or the origin of animal or vegetable products;     
 
-**Acceptance checks (Controlli di accettazione)**: within this field, any checks that need to be performed upon the acceptance of the material before it can be used will be indicated;
+**Acceptance checks**: within this field, any checks that need to be performed upon the acceptance of the material before it can be used will be indicated;
 
 **Variant**: in this field, any variant of the supplier for that item will be entered;
 
