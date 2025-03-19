@@ -3,71 +3,71 @@ title: New Offer Request
 sidebar_position: 3
 ---
 
-## *How to create a request for quotation (Come creare una richiesta di offerta)*
+## *How to create a request for quotation*
 
 <details>
 
-<summary>Click for the essential steps (Clicca per i passaggi fondamentali)</summary>
+<summary>Click for the essential steps</summary>
 
-1. **Enter the mandatory data (Inserisci i dati obbligatori)**: *Type* and *Supplier*. *Year*, *Number*, and *Insert date* will be proposed automatically.
+1. **Enter the mandatory data**: *Type* and *Supplier*. *Year*, *Number*, and *Insert date* will be proposed automatically.
 
-2. **Enter or modify optional header data (Inserisci o modifica i dati facoltativi della testata)**: such as delivery dates, any *Discounts*, the *Destination*, etc.
+2. **Enter or modify optional header data**: such as delivery dates, any *Discounts*, the *Destination*, etc.
 
-3. **Enter the Items (Inserisci gli Articoli)**: by double-clicking in the *Item code* field, the item help opens, allowing you to search and select an existing item. All other row data, such as *Units of Measure*, *Quantity*, and *Price*, will be proposed automatically, but can be modified. Alternatively, you can select *Not-Codified Item* as the *Line type* and manually enter the subsequent data.
+3. **Enter the Items**: by double-clicking in the *Item code* field, the item help opens, allowing you to search and select an existing item. All other row data, such as *Units of Measure*, *Quantity*, and *Price*, will be proposed automatically, but can be modified. Alternatively, you can select *Not-Codified Item* as the *Line type* and manually enter the subsequent data.
 
-4. **Enter any discounts or additional information (Inserisci eventuali sconti o altre informazioni aggiuntive)** in the *Discounts/Price Lists* and *Item data* tabs.
+4. **Enter any discounts or additional information** in the *Discounts/Price Lists* and *Item data* tabs.
 
-5. **Check the Summary section (Controlla la sezione dei Riepiloghi)** and enter any final expenses or discounts.
+5. **Check the Summary section** and enter any final expenses or discounts.
 
 6. Once you have checked and confirmed the order, **enter a *Confirmation date* and activate the *Printed* flag in the header** to make the document available for fulfillment procedures.
 
 </details>
 
-## **1. Mandatory Data (Dati obbligatori)**
+## **1. Mandatory Data**
 
 The mandatory fields for entering a purchase request are as follows:
 
-- **Type**: a mandatory field. Depending on the chosen [RDO Type (Tipo RDO)](/docs/configurations/tables/purchase/purchase-offer-type), certain functionalities will be activated, such as *Fixed assets management*.
-- **Date/Year (Data/Anno)**: the current date is proposed by default but can be modified manually.
+- **Type**: a mandatory field. Depending on the chosen [RDO Type](/docs/configurations/tables/purchase/purchase-offer-type), certain functionalities will be activated, such as *Fixed assets management*.
+- **Date/Year**: the current date is proposed by default but can be modified manually.
 - **Number**: automatically proposed based on the chosen RDO Type.
 - **Supplier**: contains the contact registry to which the quotation is requested.
 - **Version**: contains the version of the quotation; a new version can be created with the **New version** button on the ribbon bar.
 
-:::note Remember (Ricorda)
+:::note Remember 
 If the document is *automatically created* from an RDA, this data is taken from the *originating document* from which it was generated.
 :::
 
 ## **Header**
 
-### 2.1 Supplier Data (Dati fornitore)
+### 2.1 Supplier Data 
 
-By entering the **Supplier**, all specific header data in the **Header** tab are automatically proposed according to the data previously set in the [supplier registry (anagrafica fornitore)](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/accounting-data-intro) in the fields corresponding to their address and in the sections:
->- **Currency**: section containing [Currency (Divisa)](/docs/configurations/tables/general-settings/currencies), [Exchange Rate (Cambio)](/docs/guide/common/glossary/glossary-intro#currency-exchange), [Value Date (Data valuta)](/docs/guide/common/glossary/glossary-intro#currency-date).
->- **Delivery**: section containing [Shipping (Spedizioni)](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/delivery), [Freight (Porto)](/docs/guide/common/glossary/glossary-intro#carriage), [Packing (Imballo)](/docs/guide/common/glossary/glossary-intro#packing), default [Price List (Listino)](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/price-list#listini), and its [validity range (intervallo di validità)](/docs/guide/common/glossary/glossary-intro#validity-date).
->- **Country**: section containing [Country (Nazione)](/docs/guide/common/glossary/glossary-intro#country), [Language (Lingua)](/docs/guide/common/glossary/glossary-intro#language), and [Zone (Zona)](/docs/guide/common/glossary/glossary-intro#zone).
->- **Payments**: section containing data on [Payments (Pagamenti)](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/payments), *Discounts*, *Destination*, and *Carrier*.
+By entering the **Supplier**, all specific header data in the **Header** tab are automatically proposed according to the data previously set in the [supplier registry](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/accounting-data-intro) in the fields corresponding to their address and in the sections:
+>- **Currency**: section containing [Currency](/docs/configurations/tables/general-settings/currencies), [Exchange Rate](/docs/guide/common/glossary/glossary-intro#currency-exchange), [Value Date](/docs/guide/common/glossary/glossary-intro#currency-date).
+>- **Delivery**: section containing [Shipping](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/delivery), [Freight](/docs/guide/common/glossary/glossary-intro#carriage), [Packing](/docs/guide/common/glossary/glossary-intro#packing), default [Price List](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/price-list#listini), and its [validity range](/docs/guide/common/glossary/glossary-intro#validity-date).
+>- **Country**: section containing [Country](/docs/guide/common/glossary/glossary-intro#country), [Language](/docs/guide/common/glossary/glossary-intro#language), and [Zone](/docs/guide/common/glossary/glossary-intro#zone).
+>- **Payments**: section containing data on [Payments](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/payments), *Discounts*, *Destination*, and *Carrier*.
 
 All these fields can be deleted or manually modified by the user.
 
-### 2.2 Optional Header Data (Dati facoltativi testata)
+### 2.2 Optional Header Data 
 
 - **Notes**: this field is taken from the supplier registry or potentially from the RDA, but can also be entered manually.
 - **Our/Your reference**: in these fields, an internal reference and a supplier reference for the document are usually indicated. If present, they are taken from the supplier registry; otherwise, they can be entered manually.
-- **Initial/Final notes (Note iniziali/finali)**: notes that have been previously entered in the table found in the path *Configuration > Utilities > Management of coded notes (Configurazione > Utilità > Gestione note codificate)* can be selected. To do this, the user must double-click on the *Initial/Final notes (Note iniziali/finali)* field to open Help on coded notes and select the data.
+- **Initial/Final notes**: notes that have been previously entered in the table found in the path *Configuration > Utilities > Management of coded notes* can be selected. To do this, the user must double-click on the *Initial/Final notes* field to open Help on coded notes and select the data.
 - **Project**: using the field help, the document can be linked to a project. This association only works at the header level of the article. The project is automatically inserted if the RDO was generated by an RDA containing it.
-- **Confirmation date estimation**: allows entering the date the quotation was confirmed, but it is not a mandatory data; in the procedure for [Creating a supplier order from a supplier quotation (Creazione ordine fornitore da Offerta fornitore)](/docs/purchase/offer-request/procedures/order-creation), unconfirmed RDOs can also be viewed and converted by activating the appropriate flag in the filter area.
-- **Estimated delivery date**: if set before entering the items within the RDO, it will also be reported on each individual article line. Alternatively, it will be sufficient to press the button *Replace estimated delivery date in lines (Sostituisci data prevista consegna nelle righe)* on the ribbon bar to update the dates on the article lines.
+- **Confirmation date estimation**: allows entering the date the quotation was confirmed, but it is not a mandatory data; in the procedure for [Creating a supplier order from a supplier quotation](/docs/purchase/offer-request/procedures/order-creation), unconfirmed RDOs can also be viewed and converted by activating the appropriate flag in the filter area.
+- **Estimated delivery date**: if set before entering the items within the RDO, it will also be reported on each individual article line. Alternatively, it will be sufficient to press the button *Replace estimated delivery date in lines* on the ribbon bar to update the dates on the article lines.
 - **Closing date**: at the time of converting the RDO into a supplier order, it is automatically populated with the current date if the appropriate flag to close converted quotations has been enabled.
 - **Offer validity**: allows setting an end date for the validity of the request for quotation.
 
 #### Specific Buttons
 
-> **Replace expected delivery date in lines (Sostituisci data prev. consegna nelle righe)**: after specifying the expected delivery date in the header, it is possible to replace it in bulk in the already entered article lines.
+> **Replace expected delivery date in lines**: after specifying the expected delivery date in the header, it is possible to replace it in bulk in the already entered article lines.
 
-### 2.3 Payments (Pagamenti)
+### 2.3 Payments 
 
-The [Payment Solutions (Soluzioni di pagamento)](/docs/configurations/tables/general-settings/payment-terms) are automatically taken from the *Supplier Registry > Payments tab (Anagrafica fornitore > tab Pagamenti)* and can be modified/deleted by the user.  
-If a financial discount is associated with the [Payment Type (Tipo pagamento)](/docs/configurations/tables/general-settings/payment-types), the discount amount is only considered for accounting purposes, i.e., in the payment deadlines of the document and not in the total DDT.
+The [Payment Solutions](/docs/configurations/tables/general-settings/payment-terms) are automatically taken from the *Supplier Registry > Payments tab (Anagrafica fornitore > tab Pagamenti)* and can be modified/deleted by the user.  
+If a financial discount is associated with the [Payment Type](/docs/configurations/tables/general-settings/payment-types), the discount amount is only considered for accounting purposes, i.e., in the payment deadlines of the document and not in the total DDT.
 
 #### Specific Buttons
 
@@ -75,7 +75,7 @@ If a financial discount is associated with the [Payment Type (Tipo pagamento)](/
 
 ### 2.4 Discounts (Sconti)
 
-Only the predefined discounts taken from the *Supplier Registry > Discounts tab (Anagrafica fornitore> tab Sconti)* are proposed and not those attributed to payment conditions or certain articles. They can be modified/deleted by the user.
+Only the predefined discounts taken from the *Supplier Registry > Discounts tab* are proposed and not those attributed to payment conditions or certain articles. They can be modified/deleted by the user.
 
 The discounts proposed in the document header are reflected in every new article line added to the document. If a new discount is entered in the header after entering the article lines, this will not be replicated in the already entered article lines.
 
@@ -83,15 +83,15 @@ The discounts proposed in the document header are reflected in every new article
 
 > **Delete default discounts**: used to delete the selected discounts.
 
-### Extra Data (Extra Data)
+### Extra Data 
 
-Here, the information entered in the *Subject Registry > Extra Data tab (Anagrafica del soggetto > tab Extra data)* is proposed, only if default data exist.
+Here, the information entered in the *Subject Registry > Extra Data tab* is proposed, only if default data exist.
 
 ## **Items**
 
 To insert a *New Item* in the grid, simply position yourself on the row to fill in the various data or use the **New Item** button present on the ribbon bar.
 
-### 3.1 Mandatory Data (Dati obbligatori)
+### 3.1 Mandatory Data
 
 import RowNumber from './../../../import/fields/row-number.md'
 
@@ -99,74 +99,74 @@ import RowNumber from './../../../import/fields/row-number.md'
 
 - **Line type** offers the possibility to select, from the combo box, items with different characteristics:
 > - *Codified Item*: these are the items coded in the registry and can be accounted for in analytical accounting and registered in the warehouse.
-> - *Uncoded Item (Articolo non-codificato)*: these are descriptive items that can be accounted for in analytical accounting but cannot be moved in the warehouse.
+> - *Uncoded Item*: these are descriptive items that can be accounted for in analytical accounting but cannot be moved in the warehouse.
 > - *Charge Item*: these are coded or uncoded items and are separately summed up in the document summaries; if the expense item is coded and of fiscal interest, it will be moved in the warehouse, if it is uncoded or not of fiscal interest it will not be moved in the warehouse.
 > - *Note Item*: these are descriptive notes reported in the document's print; they do not affect accounting and inventory.
 > - *GiveAway Item*: it is managed as a coded or uncoded item for tax and warehouse purposes, but being a gift, it is counted separately in the document summaries, and based on the tax flag, the amount of VAT on the gift will be calculated to be charged to the subject or not.
 
-:::note Note (Nota)
+:::note Note
 If you start directly with entering the item, its class, code, and row type (*Codified Item*) are automatically filled in.
 :::
 
-- **Class/Code/Item Description (Classe/Codice/Descrizione articolo)**: can be entered manually or with the help of the field help, which will propose all the data related to the item registry. After entering the item, its Description will be automatically taken from the registry. If the item has Variants, it will be possible to select the desired variant from the Item Data tab.
+- **Class/Code/Item Description**: can be entered manually or with the help of the field help, which will propose all the data related to the item registry. After entering the item, its Description will be automatically taken from the registry. If the item has Variants, it will be possible to select the desired variant from the Item Data tab.
 
 - **Units of Measure**: the main unit of measure of the item is proposed, but if alternative units of measure are defined in the item registry, the user has the option to choose another.
 
 - **Quantity**: represents the quantity of the main U.M. and is set to 1 by default; it can be modified manually or may be retrieved from the document considered for fulfillment.
 
-- **Price**: the price is proposed from the price list entered in the contact registry; the reference price list for the item itself is displayed in the *Item data* tab; the same document could contain items with prices taken from different price lists if multiple cascading price lists are associated with the subject in the registry. Through double-clicking in the Price Lists (Listini) field, the user can select a price list different from the default one, from which the price of the inserted item will be taken.
+- **Price**: the price is proposed from the price list entered in the contact registry; the reference price list for the item itself is displayed in the *Item data* tab; the same document could contain items with prices taken from different price lists if multiple cascading price lists are associated with the subject in the registry. Through double-clicking in the Price Lists field, the user can select a price list different from the default one, from which the price of the inserted item will be taken.
 
 - **VAT**: the data entered in the VAT field of the contact registry takes priority. If this is not present, the value in the item registry is proposed, but the user has the option to enter another data.
 
 - **Unit price**: is automatically calculated net of discounts.
 
-### 3.2 Non-Mandatory Data (Dati non obbligatori)
+### 3.2 Non-Mandatory Data 
 
 - **Purchase turnover**: the data entered in the *Generality* tab of the item registry is proposed.
 
-- **Closing date**: indicates the closure date of the quotation; it is automatically filled if the flag to close quotations is selected at the time of [creating a supplier order from a supplier quotation (creazione ordine fornitore da offerta fornitore)](/docs/purchase/offer-request/procedures/order-creation).
+- **Closing date**: indicates the closure date of the quotation; it is automatically filled if the flag to close quotations is selected at the time of [creating a supplier order from a supplier quotation](/docs/purchase/offer-request/procedures/order-creation).
 
 - **Estimated delivery date**: indicates the estimated date for the delivery of goods. It is automatically proposed if the *Estimated delivery date* has been populated in the header tab.
 
 - **Estimated delivery period**: a free descriptive field where it is possible to indicate the expected time frame for the delivery of the goods.
 
-### 3.3 Discounts (Sconti)
+### 3.3 Discounts
 
 - **Bracket type**: indicates the discount tier to be used, which is taken from the supplier registry or the price list.
 
 - **Manual price**: is automatically activated when the price of the item has been manually entered or modified.
 
-In the grid, all discounts associated with the item are proposed, each with its calculation base and assignment. Discounts can be taken: from the supplier registry, from the payment solution assigned to the document, from the price list, or from the [definition of discount policies (definizione politiche sconti)](/docs/purchase/price-control/definition). All proposed data are modifiable.
+In the grid, all discounts associated with the item are proposed, each with its calculation base and assignment. Discounts can be taken: from the supplier registry, from the payment solution assigned to the document, from the price list, or from the [definition of discount policies](/docs/purchase/price-control/definition). All proposed data are modifiable.
 
 #### Specific Buttons
 
 > **Delete discounts**: allows deleting the selected discount from the corresponding grid.
 
-### 3.4 Item Data (Dati articolo)
+### 3.4 Item Data
 
 This tab contains additional information related to the item.
 
 >- **ITEM**: displays the selected item in the upper grid.
->- **Variant**: in this field, it is possible to select a variant of the item among those previously coded in the [Variants tab (Varianti)](/docs/erp-home/registers/items/create-new-items/item-registry/variants) of the item registry. If prices and/or different discounts for each variant have been entered in the price list, they will be updated when selecting a different variant of the item.
+>- **Variant**: in this field, it is possible to select a variant of the item among those previously coded in the [Variants tab](/docs/erp-home/registers/items/create-new-items/item-registry/variants) of the item registry. If prices and/or different discounts for each variant have been entered in the price list, they will be updated when selecting a different variant of the item.
 >- **Note**: these are notes related to the item line, which can also be entered through the help of coded notes. They will be reported in all documents generated from this.
->- **Warehouse and reason (Magazzino e causale)**: the warehouse and the reference cause will be automatically proposed when loading the relevant items into the warehouse.
+>- **Warehouse and reason**: the warehouse and the reference cause will be automatically proposed when loading the relevant items into the warehouse.
 
 >- **Project**: represents the project to associate with the document. If a project has been entered in the document header, it will be reported on all article lines; alternatively, it can be selected through the specific project help.
 >- **Price list**: the price list from which the price of the item has been taken is proposed, along with its start/end validity dates.
 
->- **Alternative Unit of Measure/Quantity (Unità di misura/Quantità alternativa)**: allows setting an alternative unit of measure and the corresponding quantity for the selected item in the grid.
->- **Alternative unit price (Prezzo unità di misura alternativa)**: if active indicates that the price entered on the item row refers to the alternative unit of measure and not the main one.
+>- **Alternative Unit of Measure/Quantity**: allows setting an alternative unit of measure and the corresponding quantity for the selected item in the grid.
+>- **Alternative unit price**: if active indicates that the price entered on the item row refers to the alternative unit of measure and not the main one.
 
 >- **Brand**: represents the brand of the item, retrieved from its registry or the item's price list.
->- **Purchase request**: if the quotation was created from an RDA, the corresponding [Purchase Request (Richiesta d'acquisto)](/docs/purchase/purchase-requests/purchase-request/insert-purchase-request) will be reported.
+>- **Purchase request**: if the quotation was created from an RDA, the corresponding [Purchase Request](/docs/purchase/purchase-requests/purchase-request/insert-purchase-request) will be reported.
 
-#### 3.4 Extra Data (Extra data)
+#### 3.4 Extra Data 
 
 import DocItemExtraData from './../../../import/sections/doc-item-extradata.md'
 
 <DocItemExtraData />
 
-#### 3.5 Attached Documents (Documenti allegati)
+#### 3.5 Attached Documents 
 
 import DocAttachDocument from './../../../import/sections/doc-attach-document.md'
 
@@ -176,11 +176,11 @@ import DocAttachDocument from './../../../import/sections/doc-attach-document.md
 
 In this tab's sections, the main information of the entire document is presented.
 
-### 4.1 Final Discounts for Items (Sconti finali articoli)
+### 4.1 Final Discounts for Items 
 
 The final discounts applied at the individual article level are distributed (or "spanned") across each article line of the document. This means that the discount amount is proportionally divided among all the items present in the document, and the related discount will be visible in the Items tab for each individual line.
 
-- **Discount Type/Description (Tipo/Descrizione sconto)**: allows choosing discount types (predefined in [Discount Types (Tipi sconti)](/docs/configurations/tables/general-settings/discount-types)), assigning the type the priority for applying the discount and whether the discount is calculated on the taxable amount or cascaded from previously applied discounts.
+- **Discount Type/Description**: allows choosing discount types (predefined in [Discount Types](/docs/configurations/tables/general-settings/discount-types)), assigning the type the priority for applying the discount and whether the discount is calculated on the taxable amount or cascaded from previously applied discounts.
 
 - **Priority**: represents the priority of discount application; the ordering to be applied is in ascending order.
 
@@ -188,7 +188,7 @@ The final discounts applied at the individual article level are distributed (or 
 
 - **Value**: numerical value of the final discount to be applied.
 
-### 4.2 Document Totals (Totali documento)
+### 4.2 Document Totals
 
 - **Items gross amount**: represents the sum of the values of all items.
 
@@ -202,7 +202,7 @@ The final discounts applied at the individual article level are distributed (or 
 
 - **Final item discounts**: represents the value of final discounts expressed as a percentage of the gross amount of items.
 
-- **Net amount of final discounts (Importo netto sconti finali)**: *Items net amount* - *Total final discounts*.
+- **Net amount of final discounts**: *Items net amount* - *Total final discounts*.
 
 - **Total charges items**: represents the value of expenses entered in the previous tab as *Charge type* items.
 
@@ -210,9 +210,9 @@ The final discounts applied at the individual article level are distributed (or 
 
 - **Stamp charges**: represents the sum of stamp duty expenses entered in the *Charges* grid.
 
-- **Total expenses/discounts/increases (Totale spese/sconti/maggiorazioni)**: represents the total value of expenses entered in the *Charges* grid.
+- **Total expenses/discounts/increases**: represents the total value of expenses entered in the *Charges* grid.
 
-- **Origin amount**: *Items net amount* – *Final discounts* + *Total charges items* + *Total expenses/discounts/increases (Totale spese/sconti/maggiorazioni)*.
+- **Origin amount**: *Items net amount* – *Final discounts* + *Total charges items* + *Total expenses/discounts/increases*.
 
 - **VAT**: represents the sum of the values contained in the VAT summaries.
 

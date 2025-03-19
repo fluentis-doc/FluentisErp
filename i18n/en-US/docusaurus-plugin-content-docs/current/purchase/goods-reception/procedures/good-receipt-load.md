@@ -10,11 +10,11 @@ The form consists of three tabs: *Filter*, *Parameters*, and *Rollback*.
 ### 1. Filter
 
 In this tab, the user has the ability to enter filters to search for the goods receipt to be loaded into the warehouse.   
-You can filter by: *Supplier*, *Receipt Number (Numero ricevimento)*, *From/To Receipt Date (Da/A data ricevimento)*.
+You can filter by: *Supplier*, *Receipt Number*, *From/To Receipt Date*.
 
 - **Posting date**: allows you to specify the date related to the warehouse registration.
 
-:::important Remember (Ricorda)
+:::important Remember
 If in the [Supplier Order Parameters](/docs/configurations/parameters/purchase/purchase-orders-parameters#carico) > Load tab the flag **Create recording with document date** is active, the warehouse registration will always be executed with the *Reception date* entered in the document header, ignoring the *Warehouse posting date* entered in this form.    
 If the *Load date* is not filled in, the warehouse registration will be created with the *Warehouse posting date* entered in this form or with the current date if the *Posting date* field is not populated.
 :::
@@ -35,7 +35,7 @@ In the *Parameters* tab, you can choose, with the related flags, how to handle a
 - **Ignore the receipt items without warehouse/template**: allows partial loading of the document while skipping items that do not have a warehouse and reason.     
 - **Use this values for the items without warehouse/template.**: ensures complete loading of the document. For all items found without warehouse and reason in the selected receipts, it sets the data entered in the following fields: *Warehouse* and *Template*.
 
-:::important Remember (Ricorda)
+:::important Remember
 If in the [Supplier Order Parameters](/docs/configurations/parameters/purchase/purchase-orders-parameters) > Load tab the flag **Priority warehouse and load template** is active, the *Warehouse* and the *Template* entered in the parameters will always be used, ignoring those present in the goods receipt for each item line; otherwise, the ones entered in the document will have priority.  
 :::
 
