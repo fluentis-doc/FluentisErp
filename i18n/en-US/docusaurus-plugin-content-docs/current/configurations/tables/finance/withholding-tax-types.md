@@ -13,19 +13,19 @@ In this table, the types of withholding tax to be associated with the recipients
 
 #### Specific Fields
 
-**Withholding Code (Codice ritenuta)**: alphanumeric identification code of 5 characters for the withholding; typically, it refers to the ministerial tax code.
+**Withholding Code**: alphanumeric identification code of 5 characters for the withholding; typically, it refers to the ministerial tax code.
 
-**Withholding Description (Descrizione ritenuta)**: description of the withholding code.
+**Withholding Description**: description of the withholding code.
 
 **[Tax Code (Codice tributo)](/docs/configurations/tables/finance/tax-code)**: refers to the table of tax codes: this is pre-filled at the time of installation and contains the complete list of tax codes provided for Form F24.
 
-**General Accounting Reason (Causale di contabilità generale)**: this field requires mandatory settings for recording the compensation in accounting: it is usually a VAT reason, like a standard purchase in Italy. However, it also allows for non-VAT reasons to manage cases of withholding for occasional collaborators not holding a VAT number.
+**General Ledger Template**: this field requires mandatory settings for recording the compensation in accounting: it is usually a VAT reason, like a standard purchase in Italy. However, it also allows for non-VAT reasons to manage cases of withholding for occasional collaborators not holding a VAT number.
 
 **Electronic invoicing withholding tax types**: in this field, it is possible to insert the specific withholding type code valid for active electronic invoicing (i.e., when the company in use is subject to withholding tax imposed by its customer/purchaser). For the current coding, refer to the updated technical specifications on electronic invoicing available from the Revenue Agency's website.
 
-**Section in Mod. 770 (Quadro in Mod. 770)**: this is a mandatory field; however, Model 770 is not managed in the procedure.
+**Section in Mod. 770**: this is a mandatory field; however, Model 770 is not managed in the procedure.
 
-**Payment Code in Mod. 770 (Codice di pag. in mod. 770)**: the payment code in 770 is a non-mandatory and unused field.
+**Payment Code in Mod. 770**: the payment code in 770 is a non-mandatory and unused field.
 
 **Mat. val. types**: the choice is between net payments and gross payments. The distinction relates to the creation of deadlines net or gross of all taxes on the recipient: the standard setting provides for net payments, in order to have a list with the actual amount to be paid to the professional, in which case the corresponding accounting reason should not block the registration of unbalanced movements with the payments.
 
@@ -39,9 +39,9 @@ In this table, the types of withholding tax to be associated with the recipients
 
 **Agent category**: this is the type of agent from which to determine the contribution percentages to the Enasarco institute. If the category has been set, it will be necessary to also enter the previous debt sub-account to Enasarco. The field is mandatory if the management of Enasarco is charged to the company.
 
-**Enasarco Contributions Charged to Company (Cont. Enasarco a carico ditta)**: this flag activates the setting of the following two sub-accounts and makes it mandatory to assign an agent category and a debt sub-account for the agent's share. Activating this flag will trigger the accounting record of Enasarco contributions with the corresponding accounting procedure. This option is recommended to make this recording autonomous, as the Enasarco contribution must be recorded on an accrual basis and not on a cash basis like the withholding tax. Within this flag, there are also:
+**Enasarco Contributions Charged to Company**: this flag activates the setting of the following two sub-accounts and makes it mandatory to assign an agent category and a debt sub-account for the agent's share. Activating this flag will trigger the accounting record of Enasarco contributions with the corresponding accounting procedure. This option is recommended to make this recording autonomous, as the Enasarco contribution must be recorded on an accrual basis and not on a cash basis like the withholding tax. Within this flag, there are also:
 
-**Enasarco Debt Charged to Agent (Debito Enasarco a carico agente)**: the field is dedicated to setting the debt sub-account on which the amount charged to the agent will be recorded. This sub-account will be used in payment accounting or in Enasarco accounting depending on whether the management of Enasarco is charged to the company or not. The field is mandatory if the following agent category field is set.
+**Enasarco Debt Charged to Agent**: the field is dedicated to setting the debt sub-account on which the amount charged to the agent will be recorded. This sub-account will be used in payment accounting or in Enasarco accounting depending on whether the management of Enasarco is charged to the company or not. The field is mandatory if the following agent category field is set.
 
 **Cost paid by company**: sub-account to be attributed to the accounting recording of Enasarco costs charged to the company.
 
@@ -58,6 +58,6 @@ The section includes the following fields (click on the arrow to the right of th
 
 % **Social insurance fund**: percentage for welfare fund.
 
-% **Flat Rate Deduction (Rid. forf. compenso)**: unused field.
+% **Flat Rate Deduction**: unused field.
 
 The INPS section allows for activating an additional tax section within the recipient's compensation to manage INPS contributions due, for example, from project collaborators and similar.
