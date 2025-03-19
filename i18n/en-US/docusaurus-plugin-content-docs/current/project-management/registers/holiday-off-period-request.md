@@ -5,17 +5,17 @@ sidebar_position: 4
 
 The Leave/Permission request allows the user to directly request days or hours of leave, permissions, or sickness from Fluentis. The information required to be entered by the user includes:
 
-**From date/To date (Da data/A data)**: the period of time, in days and hours, for which the request is to be made is entered; by leaving 00:00 as the start and end time, during the activity declaration generation phase, the configured start and end times in the resource's shift will be used; 
+**From date/To date**: the period of time, in days and hours, for which the request is to be made is entered; by leaving 00:00 as the start and end time, during the activity declaration generation phase, the configured start and end times in the resource's shift will be used; 
 
 **Asset**: the resource of the user accessing Fluentis is proposed; 
 
 **Reason**: contains the list of absence causes configured for the company. 
 
-**Managed**: flag indicating whether the request has already been handled. It can be enabled manually or at the end of the procedure performed with the button "Confirm Period (Conferma Periodo)"
+**Managed**: flag indicating whether the request has already been handled. It can be enabled manually or at the end of the procedure performed with the button "Confirm Period"
 
 **Creation date**: this is the date of creation of the request; 
 
-**User who created (Utente di creazione)**: contains the user who created the request and proposes the same user accessing the system;
+**User who created**: contains the user who created the request and proposes the same user accessing the system;
 
 **Manager**: list of users from which to select the manager figure for the resource; this data is not mandatory;
 

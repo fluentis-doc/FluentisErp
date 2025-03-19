@@ -8,7 +8,7 @@ In the filter area, it is possible to specify a series of filters to search for 
 After setting the filters, pressing the **Search** button in the ribbon bar will display the results in the grid. 
 At the bottom, it is possible to specify the parameters to use for executing the procedure:
 
-**Invoice type**: contains the type of invoice to create, if it is not set in the table [Project Types (Tipi progetto)](/docs/configurations/tables/project-management/project-type/);
+**Invoice type**: contains the type of invoice to create, if it is not set in the table [Project Types](/docs/configurations/tables/project-management/project-type/);
 
 **Creation date**: contains the date when the invoice will be created;
 
@@ -16,7 +16,7 @@ At the bottom, it is possible to specify the parameters to use for executing the
 
 **Add Projects Reference**: this flag adds the originating project to the invoice;
 
-**Creation of advance invoice (Creazione della fattura di acconto)**: this flag allows for the generation of a potential advance invoice.
+**Creation of on-account invoice**: this flag allows for the generation of a potential on-account invoice.
 
 It is also possible to choose whether to convert the currency with the **Currency convert** flag, which makes the fields **Currency**, **Rounding**, and **Exchange** editable.
 

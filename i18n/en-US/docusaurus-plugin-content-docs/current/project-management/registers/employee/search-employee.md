@@ -1,5 +1,5 @@
 ---
-title: Employee Search (Ricerca Dipendenti)
+title: Employee Search 
 sidebar_position: 1
 ---
 

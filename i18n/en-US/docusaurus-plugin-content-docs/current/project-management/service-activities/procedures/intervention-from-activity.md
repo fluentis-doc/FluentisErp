@@ -9,9 +9,9 @@ Once the filters are entered, by clicking **Search** in the ribbon bar, the resu
 
 The specific buttons in this tab are:
 
-![](/img/neutral/common/select-all.png) Set all as Billable Activity: activates the **Invoiceable activity** flag in all selected activity rows in the grid;
+![](/img/neutral/common/select-all.png) Set all as Invoiceable Activity: activates the **Invoiceable activity** flag in all selected activity rows in the grid;
 
-![](/img/neutral/common/select-all.png) Set all as Force Billed Activity: activates the **Force Billed Activity (Forza l’attività fatturata)** flag in all selected rows;
+![](/img/neutral/common/select-all.png) Set all as Force Invoiced Activity: activates the **Force Invoiced Activity** flag in all selected rows;
 
 ![](/img/neutral/common/select-all.png) Set all as Verified: sets the **Activity status** field to **Verified** in all selected rows;
 
@@ -27,9 +27,9 @@ In the second tab, **Parameters**, you can enter the parameters to be used in th
 
 In the combo box **Time arrangement** you can choose how to round the Time to pay between:
 
-**Round up to 0 minutes, when time is more than 0 minutes (Arr. Superirore a 0 minuti, quando tempo essere più dopo 0 minuti)**:
+**Round up to 0 minutes, when time is more than 0 minutes**:
 
-**Round down to 0 minutes, when time is less than 0 minutes (Arr, inferire a 0 minuti, quando tempo è inferiore a 0 minuti)**:
+**Round down to 0 minutes, when time is less than 0 minutes**:
 
 **Do not round** (if this option is selected, the Time to pay field cannot be filled);
 

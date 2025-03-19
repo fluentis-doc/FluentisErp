@@ -1,5 +1,5 @@
 ---
-title: Print Project Details (Stampa dettaglio Progetti)
+title: Report Project Details 
 sidebar_position: 2
 ---
 
@@ -13,16 +13,16 @@ The documents that can be printed are: orders, delivery notes (ddt), invoices (b
 
 **From insert date**: filter by project entry date
 
-**From Expected Delivery Date - To Expected Delivery Date (Da Data prev.consegna - A Data prev.consegna)**: in the case of processing with document filter for "Ordered," the expected delivery date entered in the order is considered. 
+**From Expected Delivery Date - To Expected Delivery Date**: in the case of processing with document filter for "Ordered," the expected delivery date entered in the order is considered. 
 
 **Client**: filter by customer
 
-**Print Details - Items (Stampa dettaglio - Articoli)**: you can choose to print the individual project lines or only the **Header**
+**Print Details - Items**: you can choose to print the individual project lines or only the **Header**
 
 **Number**: filter for specific project
 
-**From Confirmation Date - To Confirmation Date (Da data conferma - A data conferma)**: filter for project confirmation date. 
+**From Confirmation Date - To Confirmation Date**: filter for project confirmation date. 
 
 **ITEM**: filter for a specific item.
 
-**Document filter for date**: **Ordered** filters for orders, **Invoiced** filters for invoices **From date - To date (Da data - A data)**.
+**Document filter for date**: **Ordered** filters for orders, **Invoiced** filters for invoices **From date - To date**.

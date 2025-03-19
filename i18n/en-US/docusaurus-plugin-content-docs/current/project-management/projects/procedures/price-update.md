@@ -1,11 +1,11 @@
 ---
-title: Project price update
+title: Project Price Update
 sidebar_position: 3
 ---
 
 The Update Prices procedure **updates the price, reference price list, and VAT code** in project lines, intervention requests, planned interventions, and interventions based on the parameters set in the lower part of the form.
 
-For more details on the common parts of the forms, refer to the link [Functionality, buttons, and common fields](/docs/guide/common).
+For more details on the common parts of the forms, refer to the link [Custom features, buttons, and common fields](/docs/guide/common).
 
 ## Procedure  
 
@@ -26,9 +26,9 @@ Changes at this stage are only applied to the preview and are not yet effective 
 
 **Force Price**: use this option if you want to manually specify the new price;
 
-**Update price and list with last price list (Aggiorna prezzo e listino con ultimo listino)**: if selected, the last valid price list will be used to determine the new price;
+**Update price and list with last price list**: if selected, the last valid price list will be used to determine the new price;
 
-**Update price and list with price list (Aggiorna prezzo e listino con listino)**: if selected, the price list entered later will be used to determine the new price;
+**Update price and list with price list**: if selected, the price list entered later will be used to determine the new price;
 
 **Force VAT**: manually indicate the VAT code to be used for the selected rows, which will be entered in the VAT column of the results table;
 
@@ -42,6 +42,6 @@ Changes at this stage are only applied to the preview and are not yet effective 
   
 ## Documents
 
-**Update project lines, intervention requests, and planned interventions linked to WBS not yet fulfilled (Aggiorna righe di progetti, richieste intervento e interventi pianificati collegati alla WBS non ancora evasi)**: when project lines are updated, requests and planned intervention documents that have not yet been fulfilled are automatically updated;
+**Update price of intervention requests and planned interventions connected to the WBS not yet fulfilled**: when project lines are updated, requests and planned intervention documents that have not yet been fulfilled are automatically updated;
 
 **Update interventions linked to the WBS not yet invoiced**: in this case, the service line data and the linked line data in the **Billing Plan** tab will be updated.

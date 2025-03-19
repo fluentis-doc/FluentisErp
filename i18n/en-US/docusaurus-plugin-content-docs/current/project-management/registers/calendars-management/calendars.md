@@ -1,5 +1,5 @@
 ---
-title: Calendars management
+title: Calendars Management
 sidebar_position: 1
 ---
 
@@ -16,7 +16,7 @@ To create a new Calendar, the fields to be filled out are:
 
 **User**: it is possible to link the operator;
 
-**Start Date/End Date (Data inizio/Data fine)**: contains the start and end dates of the relationship;
+**Start Date/End Date**: contains the start and end dates of the relationship;
 
 In the grid below, it is possible to insert the Operators and their respective rights for viewing, modifying, and deleting the calendar; in particular:
 

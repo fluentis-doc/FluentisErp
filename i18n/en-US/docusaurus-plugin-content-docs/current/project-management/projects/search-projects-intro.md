@@ -1,9 +1,9 @@
 ---
-title: Project Search (Ricerca Progetti)
+title: Project Search 
 sidebar_position: 1
 ---
 
-The **Project Search (Ricerca Progetti)** allows you to search for projects that have already been entered and to add new projects.
+The **Project Search** allows you to search for projects that have already been entered and to add new projects.
 
 import SearchForm from './../../import/sections/search-form.md'
 
