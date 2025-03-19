@@ -8,13 +8,13 @@ sidebar_position: 4
 The window is essential for defining what the **criteria for identifying commission percentages** are.
 
 ## General fields
-The first two fields allow you to define a **general percentage** and a **fixed amount**: the general percentage will only be used if in the section on the right, where the prioritization criteria for valuation are defined, the type ‘1 – Agent Registry (Anagrafica agente)' is present.
+The first two fields allow you to define a **general percentage** and a **fixed amount**: the general percentage will only be used if in the section on the right, where the prioritization criteria for valuation are defined, the type ‘1 – Agent Registry' is present.
 
 ## Grid with calculation criteria
 
 In the grid, one or more criteria can be defined simultaneously (see also the management of the *Priority* field), and each criterion can be associated with a *Commission category* (see below) that acts as a filter for the criterion itself based on freely configurable information (object properties).
 
-**Commission Type (Tipo provvigione):** The list of possible options (selectable in the combo box) is as follows:
+**Commission Type:** The list of possible options (selectable in the combo box) is as follows:
 
 **Agent contact***: according to the percentage entered in the agent's registry;
 
@@ -40,13 +40,13 @@ In the grid, one or more criteria can be defined simultaneously (see also the ma
 
 **Discount intervals***: according to the type of discount range (Configuration > Tables > Sales > Discount range), that is, linking the commission to the discounts that the agent applies to the customer. In turn, the discount ranges can depend on item classes, price lists, item type, item characteristics, or be a structure of fixed brackets.
 
-***Customer Commission Category (Categoria provv.cliente)***: according to the commission category associated with the customer;
+***Customer Commission Category***: according to the commission category associated with the customer;
 
 **Product line***: according to the product line associated with the item;
 
-***Customer Category and Product Line (Cat.cliente e linea prodotto)***: according to the combination of Commission Category and Product Line.
+***Customer Category and Product Line***: according to the combination of Commission Category and Product Line.
 
-***Royalties (Diritti d'autore)***: this type is specific for cases of subjects who are not real agents but Designers or professionals for whom to calculate Royalties. The percentage of royalties can be linked to the single item or the product line;
+***Royalties***: this type is specific for cases of subjects who are not real agents but Designers or professionals for whom to calculate Royalties. The percentage of royalties can be linked to the single item or the product line;
 
 :::important[Important]
 The **logic for identifying the commission to be applied**, therefore, **depends on the priorities associated with the types** that one wants to use: if, for example, the types ‘6 – item', ‘4 – customer price list', and ‘1 – agent registry' are present with priorities 1, 2, 3, the system would evaluate, upon entering the item, whether it is on the list of items for which the agent has a set commission percentage (if it is among these, this commission percentage is taken); if it is not among these, it would evaluate whether the line has a price derived from a particular price list (e.g., promotional price list) on which the agent has a defined commission (if it is among these, this commission percentage is taken); if it is not among these, it would use the fixed percentage of the agent's registry.

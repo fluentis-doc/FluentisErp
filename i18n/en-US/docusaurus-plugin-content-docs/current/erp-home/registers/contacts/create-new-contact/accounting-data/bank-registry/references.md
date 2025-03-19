@@ -1,5 +1,5 @@
 ---
-title: References (Riferimenti)
+title: References 
 sidebar_position: 1
 ---
 
@@ -13,9 +13,9 @@ The **ABI**, **CAB** codes, the **C/C** number (for Italian banks, you must indi
 
 It is possible to enter some useful data for the interaction with **DocFinance®** (external treasury program to the system):
 
-**R.B.N.: (R.B.N.)** represents the type of relationship (e.g., Current account, currency account...);
+**R.B.N.:** represents the type of relationship (e.g., Current account, currency account...);
 
-**Doc Finance Bank (Banca Doc Finance)**: the name of the bank to be used for bank flow analysis and other functions permitted by DocFinance;
+**Doc Finance Bank**: the name of the bank to be used for bank flow analysis and other functions permitted by DocFinance;
 
 **Bank code**: any free bank code;
 

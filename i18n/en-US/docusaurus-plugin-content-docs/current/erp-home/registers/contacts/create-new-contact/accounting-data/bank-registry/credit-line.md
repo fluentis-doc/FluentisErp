@@ -7,5 +7,5 @@ In this tab, the castelletti for bank effect presentations are indicated, distin
 
 The value of the granted castelletto is entered by the user based on the existing banking conditions, while the value of the used castelletto, and therefore the remainder, will be automatically updated by Fluentis based on the effect presentation manifests related to the bank of the registry in use and managed in the *Treasury* module.
 
-*Specific button (Pulsante specifico)*:
+*Specific button*:
 > **Refresh**: to update the values displayed in the tab.

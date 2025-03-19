@@ -1,5 +1,5 @@
 ---
-title: Zones (Zone)
+title: Zones
 sidebar_position: 8
 ---
 

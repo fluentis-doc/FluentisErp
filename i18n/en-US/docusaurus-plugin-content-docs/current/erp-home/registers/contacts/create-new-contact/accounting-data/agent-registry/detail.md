@@ -45,7 +45,7 @@ This window contains general elements of the agent itself:
 
 **Tax system**: the tax regime of the subject.
 
-**Intra and Service Code (Intra e Cod.serv.)**: for intra-community agents to be reported in the quater and quinquies sections of the Intrastat declaration;
+**Intra and Service Code**: for intra-community agents to be reported in the quater and quinquies sections of the Intrastat declaration;
 
 **Stock company**: obsolete, present for backward compatibility.
 

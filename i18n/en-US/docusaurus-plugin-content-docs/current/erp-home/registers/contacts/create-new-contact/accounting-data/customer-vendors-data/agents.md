@@ -1,5 +1,5 @@
 ---
-title: Agents (Agenti)
+title: Agents 
 sidebar_position: 9
 ---
 

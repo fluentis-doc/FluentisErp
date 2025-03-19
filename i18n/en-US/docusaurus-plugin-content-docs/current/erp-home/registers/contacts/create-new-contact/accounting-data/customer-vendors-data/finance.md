@@ -22,7 +22,7 @@ It is advisable to assess, based on the logic of priority for filling in, whethe
 
 **VAT acc. type**: the field allows defining, in combination with the settings for general accounting causalities, which VAT sub-account to use for the records registered to the subject in use. There is a default VAT accounting type within the accounting parameters (primarily used for non-Italian fiscal matters).
 
-**Item Accounting Type (Tipo contab. articolo)**: for the invoice accounting of **Fluentis**, it allows defining the logic of valuation of the detail sub-account of purchases/sales, differentiating the counterpart (cost/income) from the customer/supplier named on the purchase or sales invoice.
+**Item Accounting Type**: for the invoice accounting of **Fluentis**, it allows defining the logic of valuation of the detail sub-account of purchases/sales, differentiating the counterpart (cost/income) from the customer/supplier named on the purchase or sales invoice.
 
 *Example*: 
 
@@ -57,10 +57,10 @@ This way, the user will then only need to set the registry, and the settings wil
 Similarly, the setting operates on the supplier side, by checking the *Suppliers* box in the table [Item Accounting Type](/docs/configurations/tables/finance/articles-accounting-types) and updating the **Purchases Revenue** table.
 
 
-**Sub-account for invoices to receive / issue (Sottoconto fatture da ricevere / emettere)**: indicate in this field the asset sub-account (prioritized over the default entered in the accounting parameters) to be used in the procedure of the purchasing area **Accounting of invoices to receive**, but also in the procedures for calculating balance adjustments or semi-annual balance simulations in case all the cost is to be included in the period balance. The fields are alternative and visible depending on whether the account type is *Supplier* (invoices to *receive*) or *Customer* (invoices to *issue*)
+**Sub-account for invoices to receive / issue**: indicate in this field the asset sub-account (prioritized over the default entered in the accounting parameters) to be used in the procedure of the purchasing area **Accounting of invoices to receive**, but also in the procedures for calculating balance adjustments or semi-annual balance simulations in case all the cost is to be included in the period balance. The fields are alternative and visible depending on whether the account type is *Supplier* (invoices to *receive*) or *Customer* (invoices to *issue*)
 
 
-**Sub-account for credit notes to receive / issue (Sottoconto della Nota d'accredito da ricevere / emettere)**: indicate in this field the asset sub-account (prioritized over the default entered in the accounting parameters) to be used in the procedure of the purchasing area **Accounting of invoices to receive**, but also in the procedures for calculating balance adjustments or semi-annual balance simulations in case all the cost is to be included in the period balance. The fields are alternative and visible depending on whether the account type is *Supplier* (credit notes to *receive*) or *Customer* (credit notes to *issue*)
+**Sub-account for credit notes to receive / issue**: indicate in this field the asset sub-account (prioritized over the default entered in the accounting parameters) to be used in the procedure of the purchasing area **Accounting of invoices to receive**, but also in the procedures for calculating balance adjustments or semi-annual balance simulations in case all the cost is to be included in the period balance. The fields are alternative and visible depending on whether the account type is *Supplier* (credit notes to *receive*) or *Customer* (credit notes to *issue*)
 
 
 **Detail acc. for invoicing**: the field, managed exclusively for customer registries, allows defining which sub-account to use for attributing the invoice during invoice creation from delivery notes (DDT);
@@ -75,20 +75,20 @@ An alternative (recommended) method is to always manage the registry of customer
 
 **Detail acc.-head group**: in customer risk analysis, it allows for grouping customers who belong to the same corporate group; 
 
-**Payment sub-account (Sottoconto di pag. (Pag.Forn.))**: this sub-account is associated with the accounting entries created, in order to be able to verify the flow of payments/collections in the prints of the receivable and payable schedules and in cash flow simulations;
+**Payment sub-account**: this sub-account is associated with the accounting entries created, in order to be able to verify the flow of payments/collections in the prints of the receivable and payable schedules and in cash flow simulations;
 
 
-**Default counterpart cost/income (Costo/Ricavo di contropartite predef.):** is the general accounting sub-account proposed by default in VAT accounting records; in case of documenting purchases/sales, this sub-account is the default value to use if no purchase/sales revenue has been entered in the item lines;
+**Default counterpart cost/income:** is the general accounting sub-account proposed by default in VAT accounting records; in case of documenting purchases/sales, this sub-account is the default value to use if no purchase/sales revenue has been entered in the item lines;
 
 
 *Priority for filling* of account, sub-account fields, description in the **VAT Details** section of the **Accounting Record** document:  
 1. Valuation of the [Sales Revenue](/docs/configurations/tables/sales/sales-turnover)/ **Purchases Revenue** present in the invoice being recorded and the account code, sub-account and description linked to each type in the Purchases Revenue / Sales Revenue tables.  
 2. Customer/Supplier Registry  
 
-**Alternative counterpart cost/income (Costo/Ricavo di contropartita alternativo)**: this grid allows predefining the list of sub-accounts and the corresponding VAT rate to propose in the VAT records addressed to the subject; to use this option, it is necessary that a default ‘VAT Position’ is set and no default counterpart cost/income is entered;
+**Alternative counterpart cost/income**: this grid allows predefining the list of sub-accounts and the corresponding VAT rate to propose in the VAT records addressed to the subject; to use this option, it is necessary that a default ‘VAT Position’ is set and no default counterpart cost/income is entered;
 
 
-**Advance Account (Conto Anticipi):** it is possible to define an advance sub-account associated with the customer registry itself (for example, a sub-account linked to the specific account type '*CA*' for Customer Advances with the related master account) and link it to the main account of the customer (the classic one with account type '*CIT*' linked for example to the Italian Customers master) through this field.
+**Advance Account:** it is possible to define an advance sub-account associated with the customer registry itself (for example, a sub-account linked to the specific account type '*CA*' for Customer Advances with the related master account) and link it to the main account of the customer (the classic one with account type '*CIT*' linked for example to the Italian Customers master) through this field.
 
 ![](/img/it-it/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/finance/image05.png)
 
@@ -122,17 +122,17 @@ ATTENTION: management of open accounts: in both accountings there are discrepanc
 
 **No accompanying invoices**: flag to prevent the creation of accompanying type sales invoices for the subject in use.
 
-**Do not group by destination (Non raggr.per destinazione)**: indicates that for the subject in use documents should never be grouped by destination during the document creation; this flag is considered in procedures present in the toolbar of Customer Order Searches, Supplier Order Searches, Work Order Searches.     
+**Do not group by destination**: indicates that for the subject in use documents should never be grouped by destination during the document creation; this flag is considered in procedures present in the toolbar of Customer Order Searches, Supplier Order Searches, Work Order Searches.     
 
-**Group by sales orders (Raggruppa per commesse di vendita)**: for the subject, the transport DDTs must be grouped by job to create sales invoices;
+**Group by sales orders**: for the subject, the transport DDTs must be grouped by job to create sales invoices;
 
 **Create invoices from DN to OC**: for the subject, transport DDTs must be grouped by **customer order** to create sales invoices;
 
 **Gest. EDI**: enables the management of EDI files (functionality currently disabled);
 
-**Intrastat/Service Code (Intrastat/Cod. Serv)**: flag that enables the management of the intrastat declaration for documents/registrations addressed to the subject in use, if the document type is also of an intracommunity type; in case of a subject with the ‘Intrastat’ flag, it is possible to indicate the default service code for sections four and five of the intrastat declaration;
+**Intrastat/Service Code**: flag that enables the management of the intrastat declaration for documents/registrations addressed to the subject in use, if the document type is also of an intracommunity type; in case of a subject with the ‘Intrastat’ flag, it is possible to indicate the default service code for sections four and five of the intrastat declaration;
 
-**Percentage intra expenses/Sign (Perc. spese Intra/Segno)**: indicates the average percentage of expenses to add/subtract from the commodity value for calculating the statistical value in the intrastat declaration; the sign defines whether the expenses should be added or subtracted to obtain the statistical value of the goods in the intrastat declarations;
+**Percentage intra expenses/Sign**: indicates the average percentage of expenses to add/subtract from the commodity value for calculating the statistical value in the intrastat declaration; the sign defines whether the expenses should be added or subtracted to obtain the statistical value of the goods in the intrastat declarations;
 
 **Finance Category**: statistical data of the administrative category associated with the subject;
 

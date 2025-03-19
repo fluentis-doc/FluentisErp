@@ -17,6 +17,6 @@ In this way, the data can be viewed within the accounting entry that uses the re
 
 ![](/img/it-it/erp-home/registers/contacts/create-new-contact/accounting-data/bank-registry/bank-days/image03.png)
 
-*Specific buttons (Pulsanti specifici)*:
+*Specific buttons*:
 > **New**: to set the cursor for entering a new detail of days.  
 > **Cancel**: to delete the details of selected bank days.
