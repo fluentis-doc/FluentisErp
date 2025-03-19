@@ -1,5 +1,5 @@
 ---
-title: The Main Form of Fluentis (La form principale di Fluentis)
+title: The Main Form of Fluentis 
 sidebar_position: 2
 ---
 
@@ -21,7 +21,7 @@ The tab contains:
 
 - A combo box to select the desired **Language**,
     
-- A combo box to choose the **Menu (Menù)** of Fluentis,
+- A combo box to choose the **Menu** of Fluentis,
 
 :::note Menu    
 Based on the activated menu, the ribbon bar of the **Home** tab is populated with cross-sectional information for the entire application, and tabs corresponding to the areas of Fluentis are added.
@@ -93,4 +93,4 @@ See also [Resource Calendar Planning](/docs/project-management/transverse-proced
 
 **...**: allows the user to access, with a right-click, the **Navigation Options** window to select the maximum number of items to display (arrows up/down to increase/decrease) and to set the order in which they should be displayed (arrows up/down to change the order). Use the 'OK' button to confirm the choices and the 'Reset' button to return to the standard situation;
 
-**Database**: the displayed information refers to the connection to the database and are, in the order displayed: *User*, *Server/Database (Server\Database)*, *Company*, (*Division*).
+**Database**: the displayed information refers to the connection to the database and are, in the order displayed: *User*, *Server/Database*, *Company*.

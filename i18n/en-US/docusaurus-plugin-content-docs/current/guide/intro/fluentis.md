@@ -1,5 +1,5 @@
 ---
-title: Documentation Structure (Struttura della documentazione)
+title: Documentation Structure
 sidebar_position: 2
 ---
 
@@ -7,14 +7,14 @@ Thanks to advanced functionalities and the integration of emerging technologies,
 
 The documentation is organized into different sections to facilitate navigation and access to information:
 
-### Settings (Impostazioni)
+### Settings 
 
 Describes the initial configurations, tables, parameters, and common tools necessary to customize Fluentis ERP according to the specific needs of the company.
 
-### Registries (Anagrafiche)
+### Registries
 Includes detailed information on managing contacts, the chart of accounts, items, production, and employees.
 
-### Functional Areas (Aree Funzionali)
+### Functional Areas
 
 The documentation covers the different functional areas of the system, including:
 
@@ -22,9 +22,9 @@ The documentation covers the different functional areas of the system, including
 - **Treasury**: Management of current accounts, supplier payments, customer risk, cash flow, and effects portfolio.
 - **Controlling**: Half-year closings, reclassifications, budgeting, managerial accounting, and cost calculation.
 - **CRM**: Management of CRM contacts, newsletters, marketing campaigns, opportunities, sales forecasts, and helpdesk.
-- **Purchases and Sales (Acquisti e Vendite)**: Management of purchase requests, supplier orders, goods receipt, quotes, customer orders, delivery notes (DDT), and invoices.
+- **Purchases and Sales**: Management of purchase requests, supplier orders, goods receipt, quotes, customer orders, delivery notes (DDT), and invoices.
 - **Logistics**: Management of items, warehouse, batches, picking, physical inventories, unit documentation (UDC), loading plans, and shipments.
-- **Planning and Production (Pianificazione e Produzione)**: Management of production orders, MRP, production progress, and production control.
+- **Planning and Production**: Management of production orders, MRP, production progress, and production control.
 - **Subcontractor**: Management of job order, delivery DDT, and returns.
 - **Project management**: Management of projects, intervention requests, activities, and resource planning.
 - **Quality**: Management of external and internal source documents, item checks, complaints, corrective actions, and instrument calibration.
@@ -33,20 +33,20 @@ The documentation covers the different functional areas of the system, including
 
 Updates on new software versions, with details on changes and improvements made.
 
-### Training (Formazione)
+### Training
 
 Includes FAQs and video tutorials to deepen learning and effectively use the system.
 
-### Multilingual Access (Accesso Multilingua)
+### Multilingual Access
 
 The documentation is available in several languages, including: Italian, English, Croatian, and Romanian to support users of different nationalities.
 
-### Additional Resources (Risorse Aggiuntive)
+### Additional Resources 
 
 In addition to the documentation, further resources are available to enhance understanding of Fluentis ERP:
 
 - **Fluentis Live Update**: Information on real-time system updates.
 - **Fluentis Training**: Platform dedicated to user training.
-- **Integrations (Integrazioni)**: Details on integration possibilities with other systems and applications.
+- **Integrations**: Details on integration possibilities with other systems and applications.
 
 For more information, visit the official website: [www.fluentis.com](https://www.fluentis.com/).

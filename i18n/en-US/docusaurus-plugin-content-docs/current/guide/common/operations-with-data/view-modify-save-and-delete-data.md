@@ -1,25 +1,25 @@
 ---
-title: Viewing, Editing, Saving, and Deleting Data (Visualizzazione, modifica, salvataggio e cancellazione dati)
+title: Viewing, Editing, Saving, and Deleting Data
 sidebar_position: 5
 ---
 
-**Viewing Data (Visualizzazione dati)**
+**Viewing Data**
 
 If you wish to view the data, use the button ![](/img/neutral/common/view.png). This procedure does not allow for data modification.
 
-**Editing Data (Modifica dati)**
+**Editing Data**
 
 If you want to open a record to make changes, use the button ![](/img/neutral/common/edit.png).
 
-**Saving Data (Salvataggio dati)**
+**Saving Data**
 
 This can be done using the button ![](/img/neutral/common/save.png) or by using the keyboard shortcut CTRL+S. In certain tables, saving occurs simply by moving to another row.
 
-**Deleting Data (Cancellazione dati)**
+**Deleting Data**
 
 Select the data to delete and press the button ![](/img/neutral/common/delete.png) or use the 'Delete (Canc)' key on the keyboard. The application will prompt a message to confirm the operation. If you choose Yes, the selected data will be deleted.
 
-:::note Note (Nota)
+:::note Note 
 There are records that cannot be deleted until their links to other records are removed.
 :::
 
