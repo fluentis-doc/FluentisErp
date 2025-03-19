@@ -98,7 +98,7 @@ Date of the document (e.g., purchase invoice); a field present in active and pas
 
 #### Goods Ready Date
 
-#### Start Date/End Date of Validity ({#validity-date})
+#### Start Date/End Date of Validity {#validity-date}
 In these two fields, we will find the start date of validity of the price list (i.e., from when the prices of that price list will come into effect in various documents) and the end date of validity (that is, when the prices of that price list will cease to be valid and will be replaced by new prices in a new price list).
 
 #### Expiration Date
@@ -110,16 +110,16 @@ Date on which the exchange rate value is calculated as a ratio between the compa
 #### Due Date
 Field present in active and passive cycle documents (e.g., invoices). At the time of document creation, it is automatically set equal to the document date, but can then be changed manually. Based on this field, the due date(s) of payment is calculated based on the payment terms (type and solution) set for the document.
 
-#### Recipient ({#recipient})
+#### Recipient {#recipient}
 In customer/supplier orders, in delivery notes for purchases/sales, and in purchase/sale invoices, this field is automatically filled with the default recipient previously entered in *Contact Registry > Accounting Data tab > Delivery tab*.  
 If the recipient is different from the default one, the information can be modified directly in the **Recipient** field of the documents.
 
-#### Destination ({#destination})
+#### Destination {#destination}
 In customer/supplier orders, in delivery notes for purchases/sales, and in purchase/sale invoices, this field is automatically filled with the default recipient previously entered in *Contact Registry > Accounting Data tab > Delivery tab*.  
 If the destination is different from the default one, the information can be modified directly in the **Destination** field of the documents.  
 The destination of the goods can *coincide* with the Recipient, but it can also be different if the recipient has, for example, multiple locations or warehouses.
 
-#### Currency ({#currency})
+#### Currency {#currency}
 Currencies are coded in the related table **Currencies** located in the path *Configuration > Tables > General Settings*. In documents, the information entered in *Contact Registry > Accounting Data tab > Administration tab* is proposed by default to indicate the default currency for the items related to the subject.
 
 #### Attached Documents
@@ -130,7 +130,7 @@ In this section, present in various forms, the documents that have been attached
 #### EDI
 The EDI (Electronic Data Interchange) system allows the exchange of documents between the information systems of different companies through a dedicated channel and in a defined format so that no human intervention is required except in some exceptional cases; it allows sending such documents as customer orders, invoices, price lists, etc., which were previously sent via email, fax, or mail.
 
-#### Expander ({#expander})
+#### Expander {#expander}
 They are represented by two small arrows and allow you to view (open ![](/img/it-it/guide/glossary/e/image01.png)) or hide (closed ![](/img/it-it/guide/glossary/e/image02.png)) the data they contain.
 
 
@@ -154,7 +154,7 @@ It is linked to Article 62; for perishable goods, the invoice must be created an
 
 ### I
 
-#### Packaging ({#packing})
+#### Packaging {#packing}
 Types of packaging are coded in the related table **Packaging** located in the path *Configuration > Tables > Logistics*. Additionally, this data can be entered in *Contact Registry > Accounting Data tab > Delivery tab* to indicate the default packaging for items related to the subject.  
 If this data is *present* in the [Registry](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/delivery), it will be *offered* by default in all *documents* related to that subject.
 
@@ -169,15 +169,15 @@ It is a mandatory data and can be found in all sales/purchase documents.
 
 ### L
 
-#### Language ({#language})
+#### Language {#language}
 Languages are coded in the related table **Languages** located in the path *Configuration > Tables > General Settings*.
 This data can be entered in *Contact Registry > General tab* and corresponds to the language of the documents issued.  
 If this data is *present* in the registry, it will be *offered* by default in all *documents* related to that subject.
 
-#### Supplier Price List ({#purchase-price-list})
+#### Supplier Price List {#purchase-price-list}
 In purchase documents, the information entered in *Supplier Registry > Price Lists tab* is proposed, but only if there is a default price list (reference table 'Supplier Price Lists');
 
-#### Customer Price List ({#sales-price-list})
+#### Customer Price List {#sales-price-list}
 In sales documents, the information entered in *Customer Registry > Price Lists tab* is proposed, but only if a default price list exists (reference table 'Sales Price Lists');
 
 #### Lots 
@@ -191,7 +191,7 @@ In this field, present in different forms, the warehouse code that you have chos
 
 ### N
 
-#### Item Nature ({#item-nature})
+#### Item Nature {#item-nature}
 Used in some procedures. In the combo, we find the list of various natures that can be attributed to the item:
  - *Equipment/tool/machine* > group of items for the production part;
  - *Item family* > defines the item for sales forecasts;
@@ -199,7 +199,7 @@ Used in some procedures. In the combo, we find the list of various natures that 
  - *Services* > for managing post-sales interventions;
  - *Loan/use/plants/component plant* > serve for managing maintenance.
 
-#### Country ({#country})
+#### Country {#country}
 Countries are coded in the related table **Countries** located in the path *Configuration > Tables > General Settings*. This data can be entered in *Contact Registry > General tab* and indicates the country of origin of the subject.  
 If this data is *present* in the registry, it will be *offered* by default in all *documents* related to that subject.
 
@@ -208,14 +208,14 @@ In this field, the nomenclature (i.e., the customs item of the article) useful f
 
 #### Our/Your Reference 
 
-#### Initial Notes ({#initial-note})
+#### Initial Notes {#initial-note}
 Allows selecting notes that were previously entered in the homonymous table found in the path *Configuration > Utilities > Management of Coded Notes*. For this, the user must double-click on the **Initial Note** field to open *Help coded notes* and select the data, or with the right mouse button, can open a window to specify a very long note text. If the field contains a value, the background color of the field will change.
 
 **Line Number**: this field will automatically fill upon entering data in the line, progressively;
 
 ### O
 
-#### Operator ({#user})
+#### Operator {#user}
 
 import User from './../../../import/fields/user.md'
 
@@ -226,7 +226,7 @@ import User from './../../../import/fields/user.md'
 #### Payment 
 This field shows the payment term associated with the subject in the customer/supplier/agents registry in the 'Accounting Data' tab in the Administration section.
 
-#### Carriage ({#carriage})
+#### Carriage {#carriage}
 The types of carriage are coded in the related table **Carriage** located in the path *Configuration > Tables > General Settings*. Additionally, this data can be entered in *Contact Registry > Accounting Data tab > Delivery tab* to indicate the default carriage for the items related to the subject.  
 If this data is *present* in the [Registry](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/delivery), it will be *offered* by default in all *documents* related to that subject.
 
@@ -258,7 +258,7 @@ This flag is present in sales/purchase documents such as invoices and delivery n
 #### Serial Number (S/N)
 Field in which the specific serial code of that item is reported, in case the item registry has opted for management by serial number in the Lots and S/N tab.
 
-#### Shipment ({#shipment})
+#### Shipment {#shipment}
 The types of shipping are coded in the related table **Shipments** located in the path *Configuration > Tables > General Settings*. Additionally, this data can be entered in *Contact Registry > Accounting Data tab > Delivery tab* to indicate the default shipment for items related to the subject.  
 If this data is *present* in the [Registry](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/delivery), it will be *offered* by default in all *documents* related to that subject.
 
@@ -295,7 +295,7 @@ The line type identifies the type of item. They can vary in type:
 ### U
 
 
-#### Unit of Measure ({#unit-of-measurement})
+#### Unit of Measure {#unit-of-measurement}
 Through this combo, the management unit of measure related to the item is selected.
 
 #### Default User
@@ -314,10 +314,10 @@ The VIES (VAT Information Exchange System) is a system for exchanging informatio
 
 ### Z
 
-#### Zone ({#zone})
+#### Zonen {#zone}
 Zones are coded in the related table **Zones** located in the path *Configuration > Tables > General Settings*. Additionally, this data can be entered in *Contact Registry > Accounting Data tab > Delivery tab* to indicate the subject's area of origin.  
 If this data is *present* in the Registry, it will be *proposed* by default in all *documents* related to that subject.
 
-#### Delivery Zones ({#delivery-zone})
+#### Delivery Zones {#delivery-zone}
 Delivery zones are coded in the related table **Delivery Zones** located in the path *Configuration > Tables > General Settings*. Additionally, this data can be entered in *Contact Registry > Accounting Data tab > Delivery tab* to indicate the delivery zone of the goods.  
 If this data is *present* in the Registry, it will be *proposed* by default in all *documents* related to that subject.
