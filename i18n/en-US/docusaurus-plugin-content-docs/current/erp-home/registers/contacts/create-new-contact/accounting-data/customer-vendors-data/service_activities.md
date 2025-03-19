@@ -7,7 +7,7 @@ In this tab, all customer-related parameters to be used in the interventions of 
 
 There are 2 additional tabs:
 
-### Travel Expenses (Oneri di Viaggio)
+### Travel Expenses 
 
 Here all expenses that will be proposed in the interventions as Billable Expenses can be entered.
 
@@ -27,7 +27,7 @@ Here all expenses that will be proposed in the interventions as Billable Expense
 
 **Km cost**: expense per km, it will be multiplied by the indicated kms. Enabled only if the expense type is correctly configured as "Distance".
 
-**Resource contract type and description (Tipo di contratto della risorsa e descrizione)**: used as a filter to select the expense corresponding to the contract configured in the resource registry.
+**Resource contract type and description**: used as a filter to select the expense corresponding to the contract configured in the resource registry.
 
 **Working site**: used as a filter to select the expense corresponding to the workplace configured in the resource registry.
 
@@ -41,7 +41,7 @@ When changing the intervention status from Entered to Pending Approval, the expe
 The same logic is applied for other types of expenses. 
 :::
 
-**Travel expenses type - flat rate details (Tipologia di spese viaggio - dettaglio forfait)**
+**Travel expenses type - flat rate details**
 
 The flat rate consists of multiple expenses that will be entered on the invoice as one cumulative line, allowing for the display of the flat rate details and the indication of individual item amounts. The flat rate line in the intervention and on the invoice will be entered as the sum of all the values configured in this view.
 
@@ -54,6 +54,7 @@ The flat rate consists of multiple expenses that will be entered on the invoice 
 **By day**: based on the service days within the same intervention, the expense will be multiplied by each service day.
 
 **By resource**: based on resources indicated in the services within the same intervention, the expense will be multiplied by each resource.
+
 :::note[Example]
 The flat rate consists of: 
 Highway: 100
@@ -64,7 +65,7 @@ The billable flat rate expense will total 250 (100 for highway fixed, 50 for lun
 :::
 
 
-### Invoice Plan Settings (Impostazioni del piano di fatturazione)
+### Invoice Plan Settings 
 
 The rules to apply to the billing plan of the intervention can be established in the general parameters of Project Management, and therefore be valid for all clients, or specific to a client. 
 The calculation procedure for the billing plan will first check for specific configurations for the client, and if not present, will consider those present in the general parameters.
@@ -72,6 +73,7 @@ The calculation procedure for the billing plan will first check for specific con
 **Working site** and **Intervention type**: used as filters; if empty, they are considered valid for all workplaces and all types of interventions. If configured, they will only be taken into account corresponding to the workplace configured in the resource registry that performs the intervention, and the type of intervention used.
 
 **Time table type**: indicates the agreed working time slot with the client, and the daily hours allocation.
+
 :::note[Observation] 
 It can be established that for one client the daily hours are 7 hours, while for another, they are 8. The hours indicated in the time slot will be used in the conversion between different time units: 
 - e.g. if we have completed 7 hours for the client and their slot corresponds to 7 hours, the quantity in Days will be 1.
@@ -86,13 +88,14 @@ The slot will also be considered for calculating overtime to be billed at a diff
 
 **Commercial category**: an additional filter for selecting the rule for the billing plan. If empty, it will be considered valid for all client commercial categories; if specifically indicated, the corresponding one inserted in the customer registry - Administration tab will be selected.
 
-**Include travel hours in services (Includi ore viaggio nei servizi)**: allows considering the travel hours present in the intervention in the "Billable Expenses" tab, as if they were service hours. Consequently, all billing rules (time slot, rounding, etc.) will also be applied to travel hours, as if they were a performed service.
+**Include travel hours in services**: allows considering the travel hours present in the intervention in the "Billable Expenses" tab, as if they were service hours. Consequently, all billing rules (time slot, rounding, etc.) will also be applied to travel hours, as if they were a performed service.
 
 **Exclude rounding**: if enabled, no rounding will be applied in the billing plan.
 
 **Exclude Overtime**: if enabled, the overtime will not be calculated in the billing plan. For the conversion between different time units (e.g. from hours to days), the hours allocation indicated in the "Work Shift" field in the general parameters of Project Management will be used.
 
 **Consider all Time Table for Overtime**: if enabled, both daytime and nighttime time slots are considered in the overtime calculation. Only what is outside both slots or exceeds the daily hours will be considered overtime. If disabled, only one time slot will be considered (daytime or nighttime based on the start time of the service), and anything outside this considered time slot will be billed as overtime.
+
 :::note[Example]
 Daytime slot 7.00 - 18.00
 Nighttime slot 20.00 - 5.00

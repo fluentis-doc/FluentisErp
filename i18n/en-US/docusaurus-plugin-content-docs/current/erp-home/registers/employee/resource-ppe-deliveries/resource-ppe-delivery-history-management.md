@@ -5,8 +5,8 @@ sidebar_position: 3
 
 Management can be performed from the filter of the **P.P.E. delivery/return history**:
 > by pressing the *New* button;    
-> by double-clicking on a row of *delivery/return of PPE (consegna/reso D.P.I.)* in the result grid;    
-> by selecting a *delivery/return of PPE (consegna/reso D.P.I.)* from the result grid and pressing the *Modify* or *View* buttons.   
+> by double-clicking on a row of *delivery/return of PPE* in the result grid;    
+> by selecting a *delivery/return of PPE* from the result grid and pressing the *Modify* or *View* buttons.   
 
 
 :::important Purpose
@@ -17,7 +17,7 @@ The data present in this management is used to manage the information of the *P.
 ## Specific Buttons   
 
 
-### ![](/img/neutral/common/save.png) Save P.P.E. delivery/return history (Salva Storico consegna/reso D.P.I.)
+### ![](/img/neutral/common/save.png) Save P.P.E. delivery/return history
 
 To save the modified information, it is necessary to press the **Save** button.   
 

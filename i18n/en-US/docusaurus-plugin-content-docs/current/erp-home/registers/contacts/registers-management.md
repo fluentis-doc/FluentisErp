@@ -26,20 +26,20 @@ By positioning on the row of the record that you wish to view in detail and doub
 
 ### Create Record
 
-A **New Record (Nuova anagrafica)** can be inserted:
+A **New Record** can be inserted:
 
-- through the path **Home > Contacts > Create Contact Record (Crea Anagrafica contatti)**
+- through the path **Home > Contacts > Create Contact Record**
 
    or
 
 - by clicking the **New** button within the **[Contacts Register](/docs/erp-home/registers/contacts/registers-management)** form.
 
 The **Register** form consists of two tabs:
-- **[General (Generale)](/docs/erp-home/registers/contacts/create-new-contact/general)** where general information about the record can be found;
-- **[Accounting Data (Dati Contabili)](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/accounting-data-intro)** which in turn will present a series of tabs where more specific information of an administrative, commercial, and logistical nature can be entered, which will be detailed in subsequent articles.
+- **[General](/docs/erp-home/registers/contacts/create-new-contact/general)** where general information about the record can be found;
+- **[Accounting Data](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/accounting-data-intro)** which in turn will present a series of tabs where more specific information of an administrative, commercial, and logistical nature can be entered, which will be detailed in subsequent articles.
 
 ## Summary
-:::tip[Operational Flow for Records (Flusso Operativo per le Anagrafiche)]
+:::tip[Operational Flow for Records]
 1. Use the *New* command to insert a *Contact* that contains general registration data
 2. Write the VAT number and use the **Propose data** command to automatically fill in the general data while also checking the validity of the VAT number 
 3. Associate an **Account type** and the accounting account will be created automatically, activating the details

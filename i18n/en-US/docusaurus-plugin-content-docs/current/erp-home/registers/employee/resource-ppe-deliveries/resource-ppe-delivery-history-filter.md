@@ -1,5 +1,5 @@
 ---
-title: Search History of Deliveries/Returns of PPE (Ricerca Storico consegne/resi D.P.I.)
+title: Search History of Deliveries/Returns of PPE 
 sidebar_position: 2
 ---
 
@@ -19,4 +19,4 @@ To enter new *Deliveries/Returns of PPE*, you need to press the **New** button.
 
 To open the management of the result grid, it is necessary to double-click on the row of interest or, by selecting one or more rows, press the **Modify** or **View** buttons.   
 
-For anything not detailed in this document regarding the common functionality of forms, refer to the following link [Common Features, Buttons, and Fields (Funzionalità, pulsanti e campi comuni)](/docs/guide/common).
+For anything not detailed in this document regarding the common functionality of forms, refer to the following link [Common Features, Buttons, and Fields](/docs/guide/common).

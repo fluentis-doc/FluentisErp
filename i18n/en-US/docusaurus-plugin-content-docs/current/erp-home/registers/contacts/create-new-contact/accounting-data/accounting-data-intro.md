@@ -10,26 +10,27 @@ The detailed registries are divided into three categories: **Customers/Suppliers
 
 Each category has different detail fields for different purposes; therefore, it is addressed in detail (link to specific sections).
 
-### [Customer/Supplier Registry (Anagrafica clienti/fornitori)](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/finance)
+### [Customer/Supplier Registry](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/finance)
 
-### [Bank Registry (Anagrafica banche)](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/bank-registry/references)
+### [Bank Registry](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/bank-registry/references)
 
-### [Agent Registry (Anagrafica agenti)](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/agent-registry/detail)
+### [Agent Registry](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/agent-registry/detail)
 
 
 ---
 
-## Assigned Sub-Accounts (Sottoconti assegnati)
+## Assigned Sub-Accounts
 
 In the grid, the **Detail Accounts** assigned to the subject are displayed, which then determine the display of a series of *specific tabs* where information related to the different areas of the system will be entered.
 
-### Sub-Account Matching (Abbinamento sottoconti)
+### Sub-Account Matching 
+
 :::tip[Procedure]
 **To assign an accounting sub-account to the current registry** it is sufficient to position in the first column **Account type** and select a type *compatible* with the registry management (even if the dropdown menu displays all account types).
 :::
 
 :::note Note
-The compatible types are: *Customers/Suppliers (Clienti/Fornitori)*, *Agents*, and *Banks*. The *Professional Men* are classified as suppliers, and within the detail data, specific settings for the management of withholding taxes are activated.
+The compatible types are: *Customers/Suppliers*, *Agents*, and *Banks*. The *Professional Men* are classified as suppliers, and within the detail data, specific settings for the management of withholding taxes are activated.
 :::
 
 Once the account type is selected, pressing the tab key to move to the subsequent fields, you will notice that **Fluentis** automatically assigns an account and a sub-account. Upon saving, the tabs with the detailed information will also be loaded.
@@ -48,7 +49,7 @@ It is preferable to leave the assignment of the sub-account to **Fluentis**. Add
 
 :::danger[Warning]
 If, after selecting the *Account type* from the first column of the *Assigned accounts* grid, an account code and sub-account are not automatically filled in (and you are sure to have invoked an account type compatible with the registries), this indicates that the [**Accounting Parameters**](/docs/configurations/parameters/finance/accounting-parameters) section defining the correct matching of account types related to registries with the account plan has probably not been initialized (or has not been filled out correctly).
-The incorrect configuration could also reside, further up, in the [**Account Type Table (Tabella Tipi Conto)**](/docs/configurations/tables/finance/account-types).
+The incorrect configuration could also reside, further up, in the [**Account Type Table**](/docs/configurations/tables/finance/account-types).
 :::
 
 :::tip
@@ -63,5 +64,5 @@ This possible multiple matching optimizes and rationalizes the management of gen
 ## VIDEO TUTORIALS ON REGISTRIES
 
 :::important See Also
-[**VIDEO TUTORIALS ON REGISTRIES (VIDEO TUTORIALS SULLE ANAGRAFICHE)**](/docs/video/finance/intro)
+[**VIDEO TUTORIALS ON REGISTRIES**](/docs/video/finance/intro)
 :::

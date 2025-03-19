@@ -1,5 +1,5 @@
 ---
-title: Payments (Pagamenti)
+title: Payments 
 sidebar_position: 3
 ---
 
@@ -11,15 +11,15 @@ In this form, you can specify the default commercial conditions regarding paymen
 
 For everything not detailed in this document on the common operation of forms, please refer to the following link [Functionality, buttons, and common fields](/docs/guide/common).
 
-### Payment Types (Tipi pagamento)
+### Payment Types 
 :::tip[ ]
-The key section of the **Payments** tab is used to set the logic for calculating deadlines. You select the **Payment Type (Tipo di pagamento)** and the **Payment Term** (both found under *Configuration > Tables > General Settings*).
+The key section of the **Payments** tab is used to set the logic for calculating deadlines. You select the **Payment Type** and the **Payment Term** (both found under *Configuration > Tables > General Settings*).
 :::
 
 
 **Amount**: allows for the calculation of a deadline by imposing the specified amount; the remaining balance must be managed with lines having the Percentage field filled in. If the total of the document is less than the value of the Amount field (even with lines having the Percentage field filled in), an error message will be sent during the creation of deadlines in the document, asking for correction of the setting as it is not consistent.
 
-<u>Attention</u>: this field is rarely applied in practice; moreover, within documents, during deadline calculation, it is used and filled in by automatic procedures as follows: when multiple DDTs are valued, for example, in an invoice, a situation arises where there may be different payment conditions in the delivery notes. Then, in the invoice, as many payment lines are created as there are types of conditions, grouping the amounts (sum of DDTs with that condition) and entering that value in the *Amount* field, an additional "residual" line is created, where, utilizing the *Percent Completed* field, 100% of the “residual” value (if any) is managed with a payment condition determined by the registry. This “residual” value typically captures any additional amounts directly charged on the invoice (and thus not present in the delivery notes) such as *collection fees, transportation fees, stamp duty*, etc. This filling in of multiple lines (at least two, one for the DDT deadline and one "residual") will also occur if a single DDT is valued. This management is imposed by the DDT valuation parameter, in the section *Payment treatment in invoice* with the option *Keep those from delivery notes (Mantieni quelli delle bolle)*. Conversely, choosing *Restore nomenclature data* will result in all deadlines being grouped with the only condition present in the registry. It is noted that in invoice printing all calculated deadlines will be reported as they appear on screen. If desired, it is possible to customize the print so that it only reports the line actually used (i.e., it does not report the “extra” line if it does not link to any deadlines).
+<u>Attention</u>: this field is rarely applied in practice; moreover, within documents, during deadline calculation, it is used and filled in by automatic procedures as follows: when multiple DDTs are valued, for example, in an invoice, a situation arises where there may be different payment conditions in the delivery notes. Then, in the invoice, as many payment lines are created as there are types of conditions, grouping the amounts (sum of DDTs with that condition) and entering that value in the *Amount* field, an additional "residual" line is created, where, utilizing the *Percent Completed* field, 100% of the “residual” value (if any) is managed with a payment condition determined by the registry. This “residual” value typically captures any additional amounts directly charged on the invoice (and thus not present in the delivery notes) such as *collection fees, transportation fees, stamp duty*, etc. This filling in of multiple lines (at least two, one for the DDT deadline and one "residual") will also occur if a single DDT is valued. This management is imposed by the DDT valuation parameter, in the section *Payment treatment in invoice* with the option *Keep those from delivery notes*. Conversely, choosing *Restore nomenclature data* will result in all deadlines being grouped with the only condition present in the registry. It is noted that in invoice printing all calculated deadlines will be reported as they appear on screen. If desired, it is possible to customize the print so that it only reports the line actually used (i.e., it does not report the “extra” line if it does not link to any deadlines).
 
 **Percent Completed**: allows defining the share (in percentage) of the total value of the payment (or collection) to be managed with the payment condition (as a combination of payment type and payment solution) set in the line.
 
@@ -43,7 +43,7 @@ If the percentage is less than 100, then as many lines should be created with pe
 > - if the payment type is bank transfer, the supplier's bank will be indicated;  
 > - if the payment type is bank receipt, the bank of the company will be indicated.
 
-The field is filled in through a combo box (**Banca**) linked to the table [*Presentation bank*](/docs/configurations/tables/general-settings/reference-bank). Within this table, both the banks of the company and those of the counterpart (customer or supplier) can be entered. Additionally, it is possible to input rows complete with IBAN and/or SWIFT (recommended for the company's banks) as well as rows complete with only ABI and CAB (recommended for counterpart banks for which IBAN and SWIFT can be provided in the grid fields present in the registry).
+The field is filled in through a combo box (**Bank**) linked to the table [*Presentation bank*](/docs/configurations/tables/general-settings/reference-bank). Within this table, both the banks of the company and those of the counterpart (customer or supplier) can be entered. Additionally, it is possible to input rows complete with IBAN and/or SWIFT (recommended for the company's banks) as well as rows complete with only ABI and CAB (recommended for counterpart banks for which IBAN and SWIFT can be provided in the grid fields present in the registry).
 
 If the row present in the Supporting Bank table is complete with IBAN and/or SWIFT, as well as with ABI and CAB, invoking that row via the combo box will populate the data in the registry grid; otherwise, only ABI and CAB will be populated, but it will always be possible to add the missing data directly in the grid. This is advisable for counterpart banks to avoid coding too many rows in the Supporting Bank table used only for a single customer or supplier. It is preferable to indicate only the street bank data (ABI and CAB) where different customers or suppliers may have current accounts.
 
@@ -59,15 +59,15 @@ Entering a bank can also be performed through a double-click in the abi/cab fiel
 With this setting, essentially, we can set that for orders of type X the customer will pay us with Riba at 60 days, while for orders of type Y they will pay us with Bank transfer at 30 days.
 :::
 
-### Supporting Bank (Banca d'appoggio)
+### Presentation bank
 
-In the grid, you can insert the supporting banks of the counterpart.
+In the grid, you can insert the Presentation banks of the counterpart.
 
 Among these, the one set as **Default** (with the same flag) can be used as the beneficiary bank for supplier bank transfers in the *Supplier Payments* module.
 
 In this case, the bank entered in this grid will be set in the transfer file, replacing the one present in the accounting registration (the latter defined, in the accounting registration, manually or through the data entered in the registry in the upper Types of Payment grid) and linked to the open transaction.
 
-*Attention*: to activate the replacement of the supporting bank mentioned above, it is necessary to activate the flag *Enforce the supporting bank (Imponi la banca d'appoggio)* present in *Supplier Registry > [Supplier Payment Parameters (Parametri Pagamenti Fornitore)](/docs/configurations/parameters/treasury/vendor-payments-parameters)*.
+*Attention*: to activate the replacement of the supporting bank mentioned above, it is necessary to activate the flag *Enforce the Presentation bank* present in *Supplier Registry > [Supplier Payment Parameters](/docs/configurations/parameters/treasury/vendor-payments-parameters)*.
 
 If the flag is active in the *Supplier Payment Parameters* form but no banks with the active default flag are inserted in the grid, the bank indicated in the accounting registration will be maintained through the data entered in the registry in the upper grid *Types of Payment* (or modified manually in the registration).
 
@@ -79,7 +79,7 @@ Entering a bank can be performed through a double click in the abi/cab fields to
 
 **Beneficiary company name**: enter the registry data in case payments are to be made out to a third party (e.g., a group financial company).
 
-### Month of Deadline Exclusion (Mese esclusione scadenze)
+### Month of Deadline Exclusion 
 
 ![](/img/it-it/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/payments/image07.png)
 
@@ -107,9 +107,9 @@ In the accounting causal parameters configuration, it is possible to define a ch
 
 **Groupe Mat. Val.**: currently not managed; allows grouping transactions that have the same due date in the same registration (for example for months of exclusion);
 
-**Group Deadlines in Effects (Raggr. scadenze in effetti)**: allows grouping multiple transactions/deadlines in a single effect in the effects portfolio module (they will be grouped in case of the same due date and same supporting bank);
+**Group Deadlines in Effects**: allows grouping multiple transactions/deadlines in a single effect in the effects portfolio module (they will be grouped in case of the same due date and same supporting bank);
 
-**Group Credit Notes in Effects (Raggr. note cred. in effetti)**: allows reversing, in effect creation, also credit notes that have the payment type to be managed in effects. If the flag is not active, open transactions related to credit notes will not be displayed in the transaction search form for the procedure [effect creation from due transactions](/docs/treasury/bills-holding/procedures/bills-acquisition-from-maturity-values).
+**Group Credit Notes in Effects**: allows reversing, in effect creation, also credit notes that have the payment type to be managed in effects. If the flag is not active, open transactions related to credit notes will not be displayed in the transaction search form for the procedure [effect creation from due transactions](/docs/treasury/bills-holding/procedures/bills-acquisition-from-maturity-values).
 
 The aforementioned parameter must be combined with the flag **Group credit notes by due date** present in the [Effects Portfolio Parameters (Parametri portafoglio effetti)](/docs/configurations/parameters/treasury/bills-portfolio-parameters) 
 
@@ -117,15 +117,15 @@ If the flag for grouping by due date is activated, the transaction (or transacti
 
 **Exposure control**: this flag will make this subject visible in the summary masks of the [customer exposure (esposizione clienti)](/docs/treasury/customer-risk/procedures/customer-statement).
 
-**Days Late (Giorni ritardo)** is a statistical data calculated in the **customer risk** module (procedure [**remittance check**](/docs/treasury/customer-risk/procedures/remittances-check) and used in cash flow projections; it represents an **average of late payment days on the part of customers**, not only on current overdue transactions but also historically. The calculation involves a weighted average over the transaction amount. In fact, the calculation is based on processing the "credit numbers" (as in a bank statement). Within the **remittance check** form (in the ribbon bar at the top), there is the command **Update Late Days (Aggiorna gg ritardo)** that inserts the calculated result into the Late Days field in the customer registry.
+**Days Late** is a statistical data calculated in the **customer risk** module (procedure [**remittance check**](/docs/treasury/customer-risk/procedures/remittances-check) and used in cash flow projections; it represents an **average of late payment days on the part of customers**, not only on current overdue transactions but also historically. The calculation involves a weighted average over the transaction amount. In fact, the calculation is based on processing the "credit numbers" (as in a bank statement). Within the **remittance check** form (in the ribbon bar at the top), there is the command **Update Late Days (Aggiorna gg ritardo)** that inserts the calculated result into the Late Days field in the customer registry.
 
-**Granted Credit Limit (Imp. fido concesso)**: is the amount of credit granted to the customer. For the correct management of this functionality, the flag **Credit** present in the tables relating to sales cycle document types (Invoice Types; Delivery Note Types; Customer Order Types) must also manage whether or not to include the document type in the limit check against the credit limit.
+**Granted Credit Limit**: is the amount of credit granted to the customer. For the correct management of this functionality, the flag **Credit** present in the tables relating to sales cycle document types (Invoice Types; Delivery Note Types; Customer Order Types) must also manage whether or not to include the document type in the limit check against the credit limit.
 
-**Credit Limit Control Type (Tipo contr. fido)**: allows defining whether the customer is subject to a single ‘**Reliance monitor**' (i.e., only one notification message will be returned for exceeding the credit limit) or a **document block and credit limit monitor** whereby the document that exceeds the credit limit will be blocked and must be authorized within the customer risk module (procedure [Lock manager](/docs/treasury/customer-risk/procedures/lock-manager)), or in a multi-company database the possibility of setting a **group monitor** or **group block** thus evaluating the overall situation of the subject concerning all the companies managed in the database and summing the total documents (it is recommended to set the credit limit amount equal and active across all companies). **Customer Group Block/Monitor** checks for group companies and thus verifies the head group's subgroup account (reads the head group's credit limit). It always totals the values of all group companies against the head group's credit limit. It ignores the value of the credit limit entered on the registries of branches.
+**Credit Limit Control Type**: allows defining whether the customer is subject to a single ‘**Reliance monitor**' (i.e., only one notification message will be returned for exceeding the credit limit) or a **document block and credit limit monitor** whereby the document that exceeds the credit limit will be blocked and must be authorized within the customer risk module (procedure [Lock manager](/docs/treasury/customer-risk/procedures/lock-manager)), or in a multi-company database the possibility of setting a **group monitor** or **group block** thus evaluating the overall situation of the subject concerning all the companies managed in the database and summing the total documents (it is recommended to set the credit limit amount equal and active across all companies). **Customer Group Block/Monitor** checks for group companies and thus verifies the head group's subgroup account (reads the head group's credit limit). It always totals the values of all group companies against the head group's credit limit. It ignores the value of the credit limit entered on the registries of branches.
 
-In the customer risk module, there is a [credit limit management procedure (gestione fidi)](/docs/treasury/customer-risk/credit-management) that allows viewing the list of credit limit settings applied to all customer codes, without having to enter the individual registry.
+In the customer risk module, there is a [credit limit management procedure](/docs/treasury/customer-risk/credit-management) that allows viewing the list of credit limit settings applied to all customer codes, without having to enter the individual registry.
 
-**Insured Credit Limit (Fido assicurato)**: is a simple indicative field for the amount covered by insurance, not influencing risk calculations.
+**Insured Credit Limit**: is a simple indicative field for the amount covered by insurance, not influencing risk calculations.
 
 **Note credit**: commercial notes on the granted credit limit.
 
@@ -139,10 +139,10 @@ The combo box is linked to the Types of Reminders table (Home>Tables>Administrat
 
 **Agreement date**: is the date of the agreement on the calculation of late interest for payment delays.
 
-**Interest Rate Type (Tipo tasso di interesse)**: is the type of late interest rate to be applied to the subject based on the agreed agreement;
+**Interest Rate Type**: is the type of late interest rate to be applied to the subject based on the agreed agreement;
 
-The combo box is linked to the [Rate Types table (Tipi Tasso)](/docs/configurations/tables/finance/rate-types) in Configuration > Tables > Administrative).
+The combo box is linked to the [Rate Types table](/docs/configurations/tables/finance/rate-types) in Configuration > Tables > Administrative).
 
 **Spread**: increase in the rate compared to the standard of its type.
 
-**Authorization Level (Livello autorizzativo):** refers to the [**linked table (tabella collegata)**](/docs/configurations/tables/finance/authorization-levels/) of the combo box.
+**Authorization Level:** refers to the [**linked table**](/docs/configurations/tables/finance/authorization-levels/) of the combo box.

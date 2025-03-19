@@ -1,5 +1,5 @@
 ---
-title: Various (Varie)
+title: Various 
 sidebar_position: 7
 ---
 

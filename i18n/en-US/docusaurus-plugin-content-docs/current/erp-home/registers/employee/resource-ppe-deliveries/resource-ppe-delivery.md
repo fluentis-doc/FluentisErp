@@ -3,7 +3,7 @@ title: P.P.E. deliveries/returns
 sidebar_position: 1
 ---
 
-The management can be found at **Home > Employees > P.P.E. deliveries/returns (D.P.I.) > P.P.E. deliveries/returns (D.P.I.)**   
+The management can be found at **Home > Employees > P.P.E. deliveries/returns  > P.P.E. deliveries/returns**   
 
 
 :::important What it is for
@@ -17,44 +17,44 @@ Once all desired filters are set, simply click the **Search deliveries** or **Se
 ## Specific Buttons   
 
 
-### ![](/img/neutral/common/search.png) Search Deliveries (Ricerca consegne)   
-The search for *D.P.I.* to be delivered is based on the active *D.P.I.* expected for the *Task* and the *Employees* who hold the same *Task*.   
+### ![](/img/neutral/common/search.png) Search Deliveries 
+The search for *P.P.E.* to be delivered is based on the active *P.P.E.* expected for the *Task* and the *Employees* who hold the same *Task*.   
 Based on the set filter, results are displayed in the results grid. The *Expected date*:   
-- is not displayed if deliveries of *D.P.I.* have never been made for the *Employee*;   
-- is displayed in *red* if the expected delivery of the *D.P.I.* is overdue compared to the current date;   
+- is not displayed if deliveries of *P.P.E.* have never been made for the *Employee*;   
+- is displayed in *red* if the expected delivery of the *P.P.E.* is overdue compared to the current date;   
 - is calculated based on the date of the last delivery made plus the *Monthly validity* indicated in the *Task* held by the *Employee*.
-- if the *Employee* holds multiple *Tasks* and the same *D.P.I.* is needed for multiple *Tasks* with different *Monthly validity*, the *Monthly validity* considered for the calculation of the *Expected date* will be the lesser ones.
+- if the *Employee* holds multiple *Tasks* and the same *P.P.E.* is needed for multiple *Tasks* with different *Monthly validity*, the *Monthly validity* considered for the calculation of the *Expected date* will be the lesser ones.
 
 
-### Propose Deliveries (Proponi consegne)   
+### Propose Deliveries  
 Button enabled only if a **Search deliveries** has been previously performed.   
-Proposes the *Quantity delivered* as 1 (one) in all rows displayed in the *Results Area (Area risultato)*.   
+Proposes the *Quantity delivered* as 1 (one) in all rows displayed in the *Results Area*.   
 
 
-### Delete Deliveries (Elimina consegne)   
+### Delete Deliveries  
 Button enabled only if a **Search deliveries** has been previously performed.   
-Proposes the *Quantity delivered* as 0 (zero) in all rows displayed in the *Results Area (Area risultato)*.   
+Proposes the *Quantity delivered* as 0 (zero) in all rows displayed in the *Results Area*.   
 
 
-### Search Returns (Ricerca resi)   
-The search for *D.P.I.* to be returned is based on the *D.P.I.* delivered to the *Employees*.   
+### Search Returns   
+The search for *P.P.E.* to be returned is based on the *P.P.E.* delivered to the *Employees*.   
 Based on the set filter, results are displayed in the results grid.   
-The *Expected date* is displayed in *red* if the expected return of the *D.P.I.* is overdue compared to the current date.   
-No checks are made to ensure that the *Quantity returned* is consistent with the *Delivered Quantities (Quantità consegnate)* previously.  
+The *Expected date* is displayed in *red* if the expected return of the *P.P.E.* is overdue compared to the current date.   
+No checks are made to ensure that the *Quantity returned* is consistent with the *Delivered Quantities* previously.  
 
 
-### Propose Returns (Proponi resi)   
+### Propose Returns   
 Button enabled only if a **Search for returns** has been previously performed.   
-Proposes the *Quantity returned* as 1 (one) in all rows displayed in the *Results Area (Area risultato)*.   
+Proposes the *Quantity returned* as 1 (one) in all rows displayed in the *Results Area*.   
 
 
-### Delete Returns (Elimina resi)   
+### Delete Returns    
 Button enabled only if a **Search for returns** has been previously performed.   
-Proposes the *Quantity returned* as 0 (zero) in all rows displayed in the *Results Area (Area risultato)*.   
+Proposes the *Quantity returned* as 0 (zero) in all rows displayed in the *Results Area*.   
 
 
-### ![](/img/neutral/common/save.png) Save (Salva)   
-All rows present in the *Results Area (Area risultato)* with *Quantity delivered* or *Quantity returned* greater than *zero* will be inserted into the *P.P.E. delivery/return history*, as of the *Delivered/Returned on date* present in the *Data proposed for deliveries/returns* area.   
+### ![](/img/neutral/common/save.png) Save    
+All rows present in the *Results Area* with *Quantity delivered* or *Quantity returned* greater than *zero* will be inserted into the *P.P.E. delivery/return history*, as of the *Delivered/Returned on date* present in the *Data proposed for deliveries/returns* area.   
 
 
 ## Management Areas
@@ -63,19 +63,19 @@ All rows present in the *Results Area (Area risultato)* with *Quantity delivered
 ### Filter   
 The data filter consists of the following information:   
 > **Deliveries/Returns for the employee**: this is the *Employee* for whom you want to search for *D.P.I.* to deliver/receive.   
-> **Deliveries/Returns for P.P.E.**: this is the *D.P.I.* that you want to deliver/receive.   
+> **Deliveries/Returns for P.P.E.**: this is the *P.P.E.* that you want to deliver/receive.   
 
 
-### Proposed Data for Deliveries/Returns (Dati proposti per le consegne/resi)   
+### Proposed Data for Deliveries/Returns   
 The information contained in this expander is mandatory for registering the *deliveries/returns*.   
 The expander consists of the following information:   
-> **Delivered by/Returned to**: this is the *person* who delivers the *D.P.I.* to the *Employees* / receives the *D.P.I.* from the *Employees*.   
-> **Delivered/Returned on date**: this is the delivery/return date of the *D.P.I.* to the *Employees*.   
+> **Delivered by/Returned to**: this is the *person* who delivers the *P.P.E.* to the *Employees* / receives the *P.P.E.* from the *Employees*.   
+> **Delivered/Returned on date**: this is the delivery/return date of the *P.P.E..* to the *Employees*.   
 
 
 ### Result   
 The list consists of the following information:   
-> **Expected date**: this is the expected delivery/return date of the *D.P.I.* to the *Employees*.   
+> **Expected date**: this is the expected delivery/return date of the *P.P.E.* to the *Employees*.   
 >
 > **Employee**
 >> **Code**: this is the code of the recipient *Employee*.   
@@ -83,16 +83,16 @@ The list consists of the following information:
 >> **First Name**: this is the name of the recipient *Employee*.   
 >
 > **P.P.E.**
->> **Code**: this is the code of the *D.P.I.* to be delivered/returned.   
->> **Description**: this is the description of the *D.P.I.* to be delivered/returned.   
+>> **Code**: this is the code of the *P.P.E.* to be delivered/returned.   
+>> **Description**: this is the description of the *P.P.E.* to be delivered/returned.   
 >
 > **Quantity**
->> **Delivered**: this is the *Quantity delivered* of the *D.P.I.* to the *Employee*.   
->> **Yield**: this is the *Quantity returned* of the *D.P.I.* from the *Employee*.   
+>> **Delivered**: this is the *Quantity delivered* of the *P.P.E.* to the *Employee*.   
+>> **Yield**: this is the *Quantity returned* of the *P.P.E.* from the *Employee*.   
 >
-> **Signed**: indicates whether the *Employee* has signed the *Delivery/Return Form (Scheda consegna/reso)* for acceptance.   
-> **Use**: free notes on the subject; proposed from the list of *D.P.I.* required for the *Task* held by the *Employee*.   
-> **Prescriptions**: free notes on the subject; proposed from the list of *D.P.I.* required for the *Task* held by the *Employee*.   
+> **Signed**: indicates whether the *Employee* has signed the *Delivery/Return Form* for acceptance.   
+> **Use**: free notes on the subject; proposed from the list of *P.P.E.* required for the *Task* held by the *Employee*.   
+> **Prescriptions**: free notes on the subject; proposed from the list of *P.P.E.* required for the *Task* held by the *Employee*.   
 > **Notes**: free notes.   
 
 
