@@ -18,11 +18,11 @@ Le proprietà semplici che possono essere aggiunte sono di diverse tipologie:
 
 Andare in **Home > Utilità > ExtraData > ExtraData** e cliccare sul pulsante **Nuovo** **ExtraData**.
 
-![](../../../../../static/images/20250313151835.png)
+![](/img/en-US/extradata/20250313151835.png)
 
 In questo caso procediamo a crare un ExtraData **semplice** di tipo stringa chiamandolo **Modello**.  
 
-![](../../../../../static/images/20250313151723.png)
+![](/img/en-US/extradata/20250313151723.png)
 
 La form di dettaglio di creazione dell'ExtraData è composta così come segue:
 
@@ -62,7 +62,7 @@ Per includere l'ExtraData nella form di dettaglio dell'articolo (FSItem), possia
 1. Dall'**Object Navigator**, espandiamo il nodo ExtraData relativo all'oggetto di business e selezionamo l'ExtraData che ci interessa.
 2. Dal **Form Navigator**, espandiamo il navigator fino al tab Generalità di cui vogliamo inserire l'ExtraData.  
 
-![](../../../../../static/images/20250313151552.png)
+![](/img/en-US/extradata/20250313151552.png)
 
 Per visualizzare l'ExtraData nella form di dettaglio dell'articolo è sufficiente dare drag and drop dal Navigatore Oggetti al Form Navigator.  
 Nell'esempio sopracitato è stato riportato L'ExtraData 'Model' nel LayoutGroup che definisce i dati di testata dell'articolo (FSItem).   
@@ -70,11 +70,11 @@ L'ExtraData è stato valorizzato con un dato di tipo stringa.
 
 Per rendere **persistente** la visualizzazione dell'ExtraData nella form di dettaglio dell'articolo è sufficiente creare uno specifico profilo e caricarlo ogni qualvolta ci sia la necessità di visualizzare l'ExtraData.  
 
-![](../../../../../static/images/20250313153623.png)
+![](/img/en-US/extradata/20250313153623.png)
 
 
 Infine, sempre nella form di dettaglio dell'articolo, è presenta uno specifico tab denominato **Extra data** dove possiamo trovare ciascun ExtraData associato all'articolo.  
-![](../../../../../static/images/20250313154302.png).  
+![](/img/en-US/extradata/20250313154302.png).  
 
 
 

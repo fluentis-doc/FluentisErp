@@ -14,7 +14,7 @@ Since the ExtraData is present in FSItem as defined in the previous paragraph, t
 
 ## Central Body (Corpo Centrale)
 
-![](../../../../../static/images/20250317090341.png)
+![](/img/en-US/extradata/20250317090341.png)
 
 The **Propagation** tab consists of a grid with the following columns:  
 * **Property path (Property path)**: required - property that will link the classes.  
@@ -36,6 +36,6 @@ After opening the detail form of the relevant **sales order**, to include the Ex
 1. From the **Object Navigator**, expand the node of the **items** collection and then expand the ExtraData node.  
 2. Drag the ExtraData directly onto the grid of items associated with the sales order.   
 
-![](../../../../../static/images/20250317101524.png)
+![](/img/en-US/extradata/20250317101524.png)
 
 The ExtraData will have a combobox (dropdown) widget and will show the **code** value saved in the corresponding table on the MSSQL side.

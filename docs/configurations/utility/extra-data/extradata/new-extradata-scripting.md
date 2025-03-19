@@ -66,6 +66,6 @@ Il blocco condizionale **if - else**,  controlla se per l'oggetto currentObject 
 2.  ***Se esiste***:
     *  Viene aggiornato solamente il valore della proprietà ExtraDataValue con una stringa cablata.  
 
-![](../../../../../static/images/20250317161007.png)
+![](/img/en-US/extradata/20250317161007.png)
 
 ***Dallo screenshot si nota l'aggiornamento della proprietà dell'ExtraData.***   

@@ -12,13 +12,13 @@ Tramite l'ExtraData basato su oggetto è possibile legare una proprietà rappres
 ## Creazione Extradata Basato su oggetto 
 Andare in **Home > Utilità > ExtraData > ExtraData** e cliccare sul pulsante **Nuovo** **ExtraData**.
 
-![](../../../../../static/images/20250313151835.png)
+![](/img/en-US/extradata/20250313151835.png)
 
 ### Testata
 
 Procediamo a creare l'**ExtraData** basato sull'oggetto **FSColor** chiamandolo **Color**.
 
-![](../../../../../static/images/20250313165106.png)
+![](/img/en-US/extradata/20250313165106.png)
 
 * **Code:** obbligatorio - codice.
 * **Content Type:** obbligatorio - permette di selezionare il widget di visualizzazione dell'ExtraData, sono disponibili tre opzioni:
@@ -32,7 +32,7 @@ Procediamo a creare l'**ExtraData** basato sull'oggetto **FSColor** chiamandolo 
 
 Procediammo a legare l'**ExtraData** all'oggetto di business **FSItem** (Articolo).  
 
-![](../../../../../static/images/20250313170414.png)
+![](/img/en-US/extradata/20250313170414.png)
 
 Vale esattamente quanto illustrato nell'introduzione agli ExtraData.  
 
@@ -42,12 +42,12 @@ Dopo aver aperto la form di dettaglio dell'articolo interessato, per includere l
 1. Dall'**Object Navigator**, espandiamo il nodo ExtraData relativo all'oggetto di business e selezionamo l'ExtraData che ci interessa.
 2. Dal **Form Navigator**, espandiamo il navigator fino al tab Generalità di cui vogliamo inserire l'ExtraData.  
 
-![](../../../../../static/images/20250313172149.png)
+![](/img/en-US/extradata/20250313172149.png)
 
 Per visualizzare l'ExtraData nella form di dettaglio dell'articolo è sufficiente fare drag and drop dal Navigatore Oggetti al Form Navigator.  
 Nell'esempio è stato riportato L'ExtraData 'Color' nel LayoutGroup che definisce i dati di testata dell'articolo (FSItem).   
 L'ExtraData avrà un widget di tipo combobox (dropdown) e mostrerà esattamente i valori di **codice** e **descrizione** salvati sulla corrispondente tabella lato MSSQL.
 
-![](../../../../../static/images/20250313172543.png)  
+![](/img/en-US/extradata/20250313172543.png)  
 
 

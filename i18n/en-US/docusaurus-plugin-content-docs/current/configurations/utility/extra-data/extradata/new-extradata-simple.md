@@ -18,11 +18,11 @@ The simple properties that can be added are of different types:
 
 Go to **Home > Utilities > ExtraData > ExtraData** and click on the **New** **ExtraData** button.
 
-![](../../../../../static/images/20250313151835.png)
+![](/img/en-US/extradata/20250313151835.png)
 
 In this case, we proceed to create a **simple** ExtraData of type string called **Model (Modello)**.
 
-![](../../../../../static/images/20250313151723.png)
+![](/img/en-US/extradata/20250313151723.png)
 
 The detail form for creating ExtraData is composed as follows:
 
@@ -61,7 +61,7 @@ To include the ExtraData in the detail form of the item (FSItem), we can use the
 1. From the **Object Navigator**, expand the ExtraData node related to the business object and select the ExtraData of interest.
 2. From the **Form Navigator**, expand the navigator up to the Generality tab where we want to insert the ExtraData.  
 
-![](../../../../../static/images/20250313151552.png)
+![](/img/en-US/extradata/20250313151552.png)
 
 To display the ExtraData in the detail form of the item, it is sufficient to drag and drop from the Object Navigator to the Form Navigator.  
 In the example above, the ExtraData 'Model' has been added to the LayoutGroup that defines the header data of the item (FSItem).  
@@ -69,7 +69,7 @@ The ExtraData has been populated with a string type data.
 
 To make the display of ExtraData in the detail form of the item **persistent**, it is sufficient to create a specific profile and load it whenever it is necessary to display the ExtraData.
 
-![](../../../../../static/images/20250313153623.png)
+![](/img/en-US/extradata/20250313153623.png)
 
 Finally, also in the detail form of the item, there is a specific tab called **Extra data (Extra data)** where we can find each ExtraData associated with the item.  
-![](../../../../../static/images/20250313154302.png).
+![](/img/en-US/extradata/20250313154302.png).

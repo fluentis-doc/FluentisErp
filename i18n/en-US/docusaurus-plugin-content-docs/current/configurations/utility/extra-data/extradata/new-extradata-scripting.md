@@ -64,6 +64,6 @@ The conditional block **if - else**, checks if an ExtraData with Code TrainingEx
 2.  ***If it exists***:
     *  Only the value of the ExtraDataValue property is updated with a hardcoded string.
 
-![](../../../../../static/images/20250317161007.png)
+![](/img/en-US/extradata/20250317161007.png)
 
 ***The screenshot shows the update of the ExtraData property.***

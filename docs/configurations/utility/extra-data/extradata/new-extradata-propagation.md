@@ -14,7 +14,7 @@ Poiché in FSItem è presente l'ExtraData definito al paragrafo precedente, la c
 
 ## Corpo Centrale
 
-![](../../../../../static/images/20250317090341.png)
+![](/img/en-US/extradata/20250317090341.png)
 
 Il tab **Propagation** si compone di una griglia con le seguenti colonne:  
 * **Property path**: obbligatorio - proprietà che collegherà le classi.  
@@ -36,7 +36,7 @@ Dopo aver aperto la form di dettaglio dell'**ordine di vendita** interessato, pe
 1. Dall'**Object Navigator**, espandiamo il nodo della collezione degli **articoli**, e quindi espandiamo il nodo ExtraData.  
 2. Trasciniamo l'ExtraData direttamente sulla griglia degli articoli associati all'ordine di vendita.   
 
-![](../../../../../static/images/20250317101524.png)
+![](/img/en-US/extradata/20250317101524.png)
 
 L'ExtraData avrà un widget di tipo combobox (dropdown) e mostrerà il valore **codice** salvato sulla corrispondente tabella lato MSSQL.  
 

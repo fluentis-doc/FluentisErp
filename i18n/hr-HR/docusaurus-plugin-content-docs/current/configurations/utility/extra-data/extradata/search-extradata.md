@@ -8,7 +8,7 @@ sidebar_position: 0
 Gli **ExtraData** sono un mezzo per aggiungere **nuove proprietà** sia ad oggetti standard che custom di Fluentis senza dover ricorrere all'utilizzo di codice custom e quindi alla compilazione di progetti custom.     
 Tutti i principali oggetti funzionali come articoi, ordini, fatture, sono già predisposti all'aggiunta di ExtraData.  
 
-![](../../../../../static/images/20250311142958.png)
+![](/img/en-US/extradata/20250311142958.png)
 La form degli **ExtraData** è raggiungibile da **Configurazione** > **Utilità** > **ExtraData.**
 
 ### Categori di ExtraData
@@ -20,7 +20,7 @@ Gli ExtraData possono essere di n. 3 tipologie:
 
 Ciascuna tipologia di ExtraData presenta delle caratteristiche peculiari.  
 
-![](../../../../../static/images/20250311143520.png)
+![](/img/en-US/extradata/20250311143520.png)
 
 ***La form degli ExtraData si presenta così come segue:*** 
 
@@ -36,7 +36,7 @@ Il RIbbon menu permette all'utente di svolgere le operazioni sugli ExtraData, ne
 
 Il filtro standard permette la ricerca degli ExtraData definiti in Fluentis per **codice**.  
 
-![](../../../../../static/images/20250313155146.png)
+![](/img/en-US/extradata/20250313155146.png)
 
 ### Corpo Centrale
 Il corpo centrale presenta presenta una griglia dei risultati relativa ai singoli Extra Data definiti in Fluentis.  
@@ -101,7 +101,7 @@ Tale griglia si compone così come segue:
 
 Aprendo la form di dettaglio di un ExtraData, si avrà accesso al pannello di parametrizzazione dell'ExtraData.
 
-![](../../../../../static/images/20250311160817.png)
+![](/img/en-US/extradata/20250311160817.png)
 
 La form è composta da n. 3 tab.
 * Testata

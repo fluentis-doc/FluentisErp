@@ -8,7 +8,7 @@ sidebar_position: 0
 **ExtraData (ExtraData)** are a means to add **new properties (nuove propriet�)** to both standard and custom objects of Fluentis without resorting to custom code and therefore compiling custom projects.     
 All major functional objects such as items, orders, and invoices are already prepared for the addition of ExtraData.  
 
-![](../../../../../static/images/20250311142958.png)
+![](/img/en-US/extradata/20250311142958.png)
 The form for **ExtraData (ExtraData)** is accessible from **Configuration (Configurazione)** > **Utilities (Utilit�)** > **ExtraData (ExtraData)**.
 
 ### Types of ExtraData (Categori di ExtraData)
@@ -20,7 +20,7 @@ ExtraData can be of 3 types:
 
 Each type of ExtraData has its own peculiar characteristics.  
 
-![](../../../../../static/images/20250311143520.png)
+![](/img/en-US/extradata/20250311143520.png)
 
 ***The ExtraData form appears as follows: (La form degli ExtraData si presenta cos� come segue: )*** 
 
@@ -36,7 +36,7 @@ The Ribbon menu allows the user to perform operations on ExtraData, specifically
 
 The standard filter allows searching for the ExtraData defined in Fluentis by **code (codice)**.  
 
-![](../../../../../static/images/20250313155146.png)
+![](/img/en-US/extradata/20250313155146.png)
 
 ### Central Body (Corpo Centrale)
 The central body presents a grid of results related to the individual Extra Data defined in Fluentis.  
@@ -101,7 +101,7 @@ This grid is composed as follows:
 
 Opening the detail form of an ExtraData will give access to the ExtraData parameterization panel.
 
-![](../../../../../static/images/20250311160817.png)
+![](/img/en-US/extradata/20250311160817.png)
 
 The form consists of 3 tabs.
 * Header (Testata)
