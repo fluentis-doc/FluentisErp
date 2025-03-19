@@ -3,7 +3,7 @@ title: Basic course
 sidebar_position: 3
 ---
 
-The management can be found along the path **New basic course** or it can be performed from **Search Basic courses (Ricerca Corsi base)**.   
+The management can be found along the path **New basic course** or it can be performed from **Search Basic courses**.   
 
 
 :::important Purpose
@@ -14,12 +14,12 @@ Basic courses are templates for courses that are conducted repeatedly, or not: u
 ## Command Buttons
 
 
-### ![](/img/neutral/common/save.png) Save (Salva)
+### ![](/img/neutral/common/save.png) Save 
 
 Pressing this button saves all modified information of the *Basic course* displayed.   
 
 
-### ![](/img/neutral/common/duplicate.png) Duplicate (Duplica)
+### ![](/img/neutral/common/duplicate.png) Duplicate
 
 To duplicate an existing *Basic course* into a new *Basic course*, it is necessary to press the **Duplicate** button. A request will be displayed:   
 > **Basic course Type**: this is the *Basic course type* of the new *Basic course* (mandatory data), the *Basic course type* of the original *Basic course* is suggested.   
@@ -33,7 +33,7 @@ Then press the **OK** button or the **Cancel** button if you wish to proceed wit
 At the end of the processing, the new *Basic course* is displayed.
 
 
-### Schedule Next Course (Pianifica prossimo corso)
+### Schedule Next Course 
 
 To schedule a new *Training Course* from a *Basic course*, it is necessary to press the **Schedule Next Course** button.   
 The new *Training Course* created will have the following preloaded information:   
@@ -45,9 +45,9 @@ The new *Training Course* created will have the following preloaded information:
 
 At the end of the processing, the new *Training Course* is displayed.
 
-### Schedule Next Renewal (Pianifica prossimo rinnovo)
+### Schedule Next Renewal 
 
-The button is only enabled if a single *Basic course* is selected from the results grid where a renewal is anticipated (*Renewal course data (Dati rinnovo corso)* with *Frequency (Periodicità)* different from *zero*).   
+The button is only enabled if a single *Basic course* is selected from the results grid where a renewal is anticipated (*Renewal course data* with *Frequency* different from *zero*).   
 To schedule a new renewal from a *Basic course*, you need to click in the grid on the *Basic course* from which you want to schedule and press the **Schedule Next Renewal** button. You can schedule only one *Training Course* at a time.   
 A message indicating the impossibility of creating a renewal will be displayed if no *Training Course* has ever been conducted for the *Basic course*. 
 The new *Training Course* created will have the following preloaded information:   
@@ -64,7 +64,7 @@ At the end of the processing, the new *Training Course* is displayed.
 ## Data Management
 
 
-### Header Data (Dati di testata)
+### Header Data 
 
 The managed information includes:   
 > **Basic course Type**: this is the *Basic course type* of the new *Basic course* (mandatory data), the *Basic course type* indicated in the *Staff Management Parameters* is suggested.   
@@ -96,13 +96,13 @@ The managed information includes:
 >
 >> **Scheduled hours**: these are the expected training hours for each renewal.   
 >> **Cost**: this is the expected training cost for each renewal.   
->> **Frequency (in months) (Periodicità (in mesi))**: this is the period (expressed in months) that elapses between the first *Course* and the first *Renewal*, or between *Renewal* and *Renewal*.   
+>> **Frequency (in months)**: this is the period (expressed in months) that elapses between the first *Course* and the first *Renewal*, or between *Renewal* and *Renewal*.   
 >> **Attested**: free notes on the topic.   
 >> **Foreign presence**: free notes on the topic.   
 >> **Efficacy evaluation**: free notes on the topic.   
 
 
-### Involved Roles (Mansioni interessate)
+### Involved Roles 
 
 These are the *Roles* involved in participating in the *Course*.   
 Based on the listed *Roles*, the *Employees* who hold them in the *Training Course* created from this *Basic course* are proposed.   
@@ -112,8 +112,7 @@ The list consists of the following information:
 > **Notes**: free notes.   
 
 
-### Planned and Completed Courses (Corsi pianificati e completati)
-
+### Planned and Completed Courses 
 In these two lists, it is possible to view the history of *Planned Training Courses* and *Completed Training Courses*.   
 By double-clicking on the desired row, it is possible to manage the selected *Training Course*.   
 The list of *Planned Courses* consists of the following information:   
@@ -125,7 +124,7 @@ The list of *Planned Courses* consists of the following information:
 The list of *Completed Courses* consists of the following information:   
 > **Topics covered**.   
 > **Effective date from**.   
-> **Duration (hours) (Durata (ore))**.   
+> **Duration (hours)**.   
 > **Tutor**.   
 
 

@@ -3,7 +3,7 @@ title: Training course
 sidebar_position: 5
 ---
 
-The management can be found on the path **Home > Employees > Training courses > New Training course (Home > Dipendenti > Corsi di formazione > Nuovo corso di formazione)** or can be executed from the **Search Training courses (Ricerca Corsi di formazione)**.
+The management can be found on the path **Home > Employees > Training courses > New Training course** or can be executed from the **Search Training courses**.
 
 :::important What it is for
 Training courses provide information regarding the implementation of Information, Training, and Instruction courses: upon hiring new employees, upon their changes in role, periodically for renewals required by laws and regulations, to enhance the required skills.
@@ -33,7 +33,7 @@ At the end of the process, the new *Training course* is displayed.
 
 ### ![](/img/neutral/common/update.png) Update Employees
 
-The button is enabled only if there are *Involved Roles (Mansioni coinvolte)*.   
+The button is enabled only if there are *Involved Roles*.   
 After entering a *Task* in the list present in the *Involved Roles* tab, to add the *Employees* who hold the newly entered *Role*, it is necessary to press the **Update employees** button. The *Employees already present in the list of *Involved employees* will not be modified.
 
 
