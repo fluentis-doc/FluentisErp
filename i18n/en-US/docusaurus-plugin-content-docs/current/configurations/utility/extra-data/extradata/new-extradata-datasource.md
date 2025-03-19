@@ -1,9 +1,9 @@
 ---
-title: ExtraData Datasource (Extradata Datasource)
+title: ExtraData Datasource 
 sidebar_position: 3
 ---
 
-# ExtraData Based on Datasource - Introductory Aspects (ExtraData Basato su Datasource - Aspetti introduttivi)
+# ExtraData Based on Datasource - Introductory Aspects 
 
 Through the ExtraData based on a datasource, it is possible to link a Fluentis object to an external table that is not present in the standard.  
 *To better explain this application scenario, we will use a practical example where a custom table named 'typology' has been created, which represents 3 different finishes.*  
@@ -26,7 +26,7 @@ Using FluentisQueryStudio, we proceed to create the datasource that will be base
 
 We save the datasource.
 
-## Header (Testata)
+## Header 
 We now proceed to create the ExtraData by populating the data related to the header.
 
 ![](/img/en-US/extradata/20250314110446.png)
@@ -36,14 +36,14 @@ We now proceed to create the ExtraData by populating the data related to the hea
 * SQL Query: select the desired query.
 * Area: dictionary value.
 
-## Activations (Attivazioni)
+## Activations 
 We proceed to link the **ExtraData** to the business object **FSItem** (Item).
 
 ![](/img/en-US/extradata/20250314110703.png)
 
 It is exactly as illustrated in the introduction to ExtraData.
 
-## Inserting ExtraData into the detail form (Inserimento dell'ExtraData nella form di dettaglio)
+## Insert ExtraData into the detail form 
 
 After opening the detail form of the relevant item, to include the ExtraData in the detail form of the item (FSItem), we can use the **form navigator** and **object navigator**.  
 1. From the **Object Navigator**, expand the ExtraData node related to the business object and select the ExtraData of interest.

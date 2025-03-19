@@ -1,10 +1,10 @@
 ---
-title: ExtraData - Set Value By Script (ExtraData - Set Value By Script)
+title: ExtraData - Set Value By Script 
 sidebar_position: 5
 ---
 
 It is possible to modify the value of a certain ExtraData through server-side scripting.  
-To illustrate this scenario, we will use an ExtraData **Additional Description (Additional Description)** of type **Simple (Semplice)**, which provides a field of type **String**.  
+To illustrate this scenario, we will use an ExtraData **Additional Description** of type **Simple**, which provides a field of type **String**.  
 
 The script we are going to compose will populate the ExtraData Additional Description with a hardcoded text defined at the script level, depending on a binary condition. For all details regarding server-side scripting, please refer to the appropriate documentation.  
 

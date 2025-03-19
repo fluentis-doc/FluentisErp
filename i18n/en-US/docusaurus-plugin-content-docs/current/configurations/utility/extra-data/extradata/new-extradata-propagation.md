@@ -1,9 +1,9 @@
 ---
-title: Extradata Propagation (Propagazione degli ExtraData)
+title: Extradata Propagation 
 sidebar_position: 4
 ---
 
-# Extradata Propagation - Introductory Aspects (Propagazione degli ExtraData - Aspetti introduttivi)
+# Extradata Propagation - Introductory Aspects 
 
 The functionality related to the propagation of ExtraData allows extending a specific ExtraData defined on one object to another derived object.  
 For example, an ExtraData defined on the FSItem (Item) object can be propagated to the FSSalesOrderItem (Sales Order Item) object.  
@@ -12,25 +12,25 @@ FSSalesOrderItem is an extension of the FSItem class.
 Since the ExtraData is present in FSItem as defined in the previous paragraph, the derived class FSSalesOrderItem can inherit this property based on the inheritance mechanism of object-oriented programming.   
 
 
-## Central Body (Corpo Centrale)
+## Central Body 
 
 ![](/img/en-US/extradata/20250317090341.png)
 
 The **Propagation** tab consists of a grid with the following columns:  
-* **Property path (Property path)**: required - property that will link the classes.  
-* **Collection property (Collection property)**: required - the property of the collection.  
-* **Editable (Editable)**: makes the extra data independently modifiable.  
-* **Priority (Proprity)**: indicates the priority. 
-* **From val. date / To validity date (From val. date / To validity date)**: if we want it to be temporary, thus having a start and an end.  
+* **Property path**: required - property that will link the classes.  
+* **Collection property**: required - the property of the collection.  
+* **Editable**: makes the extra data independently modifiable.  
+* **Priority**: indicates the priority. 
+* **From val. date / To validity date**: if we want it to be temporary, thus having a start and an end.  
 
 In the example screenshot, we proceed to link the ExtraData 'FinituraExtraData' that we defined in a previous scenario  
-[**Link to Previous Scenario (Link Scenario Precedente)**](/docs/configurations/utility/extra-data/extradata/new-extradata-datasource).  
+[**Link to Previous Scenario**](/docs/configurations/utility/extra-data/extradata/new-extradata-datasource).  
 
 To manage the propagation from a main object to a derived one, it is necessary to have the ExtraData active on both objects in the **activations** tab and then manage the propagation through the specific **propagation** tab.
 
 In the example, we insert the linking rule between the two classes.  
 
-## Inserting ExtraData in the Detail Form (Inserimento dell'ExtraData nella form di dettaglio)
+## Insert ExtraData in the Detail Form 
 
 After opening the detail form of the relevant **sales order**, to include the ExtraData in the detail form, we can use the **form navigator** and **object navigator**.  
 1. From the **Object Navigator**, expand the node of the **items** collection and then expand the ExtraData node.  
