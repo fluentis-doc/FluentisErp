@@ -24,7 +24,7 @@ The **Propagation** tab consists of a grid with the following columns:
 * **From val. date / To validity date (From val. date / To validity date)**: if we want it to be temporary, thus having a start and an end.  
 
 In the example screenshot, we proceed to link the ExtraData 'FinituraExtraData' that we defined in a previous scenario  
-[**Link to Previous Scenario (Link Scenario Precedente)**](docs\configurations\utility\extra-data\extradata\new-extradata-datasource.md).  
+[**Link to Previous Scenario (Link Scenario Precedente)**](docs/configurations/utility/extra-data/extradata/new-extradata-datasource).  
 
 To manage the propagation from a main object to a derived one, it is necessary to have the ExtraData active on both objects in the **activations** tab and then manage the propagation through the specific **propagation** tab.
 
