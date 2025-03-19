@@ -3,7 +3,7 @@ title: Purchase Invoices Accounting
 sidebar_position: 1
 ---
 
-The procedure opens via the path **Purchases > Purchase Invoices > Procedures > Purchase Invoices Accounting (Acquisti > Fatture di acquisto > Procedure > Contabilizzazione fatture di acquisto)**.
+The procedure opens via the path **Purchases > Purchase Invoices > Procedures > Purchase Invoices Accounting**.
 
 ### 1. Accounting
 
@@ -22,7 +22,7 @@ At the bottom of the form are some management parameters for accounting:
 
 > **Invoices Accounting**: allows you to account for the selected invoices in the grid, based on the entered parameters.
 
-### 2. Gifts (Omaggi)
+### 2. Gifts 
 
 The user has the option to decide which gifts are to be accounted for. To do this, they must specify the reason for accounting gifts and the account for the VAT reversal.
 
@@ -36,7 +36,7 @@ If the invoice being accounted for has a gift and:
     - 2.1 If no sub-account has been entered in the subsequent fields, the system will append the necessary cost reversal lines to the normal accounting movements, using the same sub-account set for the item.  
     - 2.2 If the flag **Replace to item account** is set, the field to set the gift reversal sub-account will be activated, which will be used instead of the item's sub-account for these additional lines.
 
-- **Account for VAT reversal**: used in cases where the gift item in the invoice does not have the flag **VAT recourse**. This amount will be registered and reversed only if the *VAT reversal account (Conto di storno IVA)* is entered, otherwise, the operation will need to be handled manually in accounting (there is also a confirmation/message for the user regarding the lack of setting in this field).
+- **Account for VAT reversal**: used in cases where the gift item in the invoice does not have the flag **VAT recourse**. This amount will be registered and reversed only if the *VAT reversal account* is entered, otherwise, the operation will need to be handled manually in accounting (there is also a confirmation/message for the user regarding the lack of setting in this field).
 
 #### Specific button
 
@@ -44,7 +44,7 @@ If the invoice being accounted for has a gift and:
 
 After selecting the invoices (from the *Accounting* tab) and setting the parameters, the invoices can be accounted for with the help of the *Invoices Accounting* button.
 
-### 3. Previous Transactions (Precedenti)
+### 3. Previous Transactions
 
 The form presents the list of accounting operations performed, in order to visualize them and eventually cancel them through the appropriate buttons.
 
@@ -61,6 +61,6 @@ The data in the lower grids, **Purchase Invoices** and **Ledger record**, corres
 > **Restore Accounting**: to delete the selected accounting.  
 > **Restore Record**: to delete the entire selected operation, with all its details displayed in the two lower grids.
 
-### 4. Error Messages (Messaggi di errore)
+### 4. Error Messages 
 
 See the page on [**Sales invoice accounting**](/docs/sales/sales-invoices/accounting/sales-invoices-accounting#messaggi-di-errore).

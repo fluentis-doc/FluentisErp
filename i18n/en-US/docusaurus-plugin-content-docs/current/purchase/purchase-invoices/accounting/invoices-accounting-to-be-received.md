@@ -7,13 +7,13 @@ The procedure opens via the path **Accounting invoices to be received**.
 
 With this procedure, it is possible to carry out the accounting of invoices to be received by reading the incoming goods documents.
 
-### 1. Invoices to be Received from Movements (Fatture da ricevere da movimenti)
+### 1. Invoices to be Received from Movements
 
 The accounting of invoices to be received considers, as data sources, one of three elements:
 
 - **Purchase delivery note**
 - **Receipt List**
-- **Return of Work Account (Rientro di conto lavoro)**
+- **Return of Work Account**
 
 Depending on the chosen document, the subsequent fields will filter based on the related records.
 
@@ -27,10 +27,10 @@ At the base of the form, there are some management parameters for accounting:
 - **Competence date**: this is the competence date to be assigned to the registration, typically 12/31 of the year;
 - **Template**: this is the accounting reason to be used. It is a generic reason, not linked to VAT.
 
-#### Specific Button (Pulsante specifico)  
+#### Specific Button
 > **Accounting**: allows executing the accounting of the selected documents.
 
-### 2. Previous Entries (Precedenti)
+### 2. Previous Entries
 
 The form presents a list of the accounting operations performed, in order to view and possibly undo them through the appropriate buttons. A double click in the grid of created entries allows for viewing the accounting entry.
 
@@ -38,6 +38,6 @@ The form presents a list of the accounting operations performed, in order to vie
 
 The data in the lower grids, **Recorded Delivery note** and **Ledger record** corresponds to the operation selected in the upper grid. A double click in the movements/entries section will allow viewing the related movement/accounting entry.
 
-#### Specific Buttons (Pulsanti specifici)  
+#### Specific Buttons  
 > **Rollback accounting**: to cancel the selected accounting.  
 > **Restore Invoice**: to delete the entire operation selected in the first grid, along with all its details displayed in the two grids below.
