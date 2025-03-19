@@ -1,11 +1,11 @@
 ---
-title: FAQ Purchases (FAQ Acquisti)
+title: FAQ Purchases 
 sidebar_position: 1
 ---
 
 <details>
 
-  <summary>1. Why is the <b>Description (Descrizione)</b> field of the supplier item mandatory while for the customer it is not?</summary>
+  <summary>1. Why is the <b>Description</b> field of the supplier item mandatory while for the customer it is not?</summary>
   
 The customer needs to know their code, but the description is not important, as the code is used in the printed document. Instead, for the supplier, the description may be much more technical and necessary, as the data is usually imported.
 
@@ -14,7 +14,7 @@ The customer needs to know their code, but the description is not important, as 
 
 <details>
 
-  <summary>2. What is the purpose of the <b>Tier type (Tipo scaglione)</b> in the item lines of the price list?</summary>
+  <summary>2. What is the purpose of the <b>Tier type</b> in the item lines of the price list?</summary>
   
 The tier type entered in the item line of the price list is automatically proposed in the documents, otherwise the user will manually choose the tier type to apply to the line. Remember that for the same price list item, it is possible to enter different discount tiers.
 
@@ -25,7 +25,7 @@ The tier type entered in the item line of the price list is automatically propos
 
   <summary>3. Is there a check that prevents double inventory entries from delivery notes (ddt) and invoices?</summary>
   
-Yes, if an invoice is linked to an already posted or shipped ddt, the invoice cannot be posted/shipped, unless the "Unlink (Scollega)" flag is active in the invoice type: in this case, both the ddt and the invoice can be processed.
+Yes, if an invoice is linked to an already posted or shipped ddt, the invoice cannot be posted/shipped, unless the "Unlink" flag is active in the invoice type: in this case, both the ddt and the invoice can be processed.
 
 </details>
 
@@ -41,7 +41,7 @@ In this case, it is necessary to duplicate the document.
 
 <details>
 
-  <summary>5. What are the conditions for using <b>Mass Change (Modifica massiva)</b> in the summaries of a purchase invoice?</summary>
+  <summary>5. What are the conditions for using <b>Massive change</b> in the summaries of a purchase invoice?</summary>
   
 The conditions are:       
  1. The price must not be VAT-inclusive;     
@@ -62,7 +62,7 @@ It is necessary to open the Initial Warehouse Parameters corresponding to the cu
 
 <details>
 
-  <summary>7. The invoice appears as Posted (Caricata) even though I have not made any inventory movement, and the Posted flag is locked and cannot be removed.</summary>
+  <summary>7. The invoice appears as Posted even though I have not made any inventory movement, and the Posted flag is locked and cannot be removed.</summary>
   
 In the case of an invoice created from a delivery document that has already been posted, there is a general parameter VE-PurchaseInvoices_VerifyLoadStatusDDT that locks the Posted flag even in the invoice.         
 

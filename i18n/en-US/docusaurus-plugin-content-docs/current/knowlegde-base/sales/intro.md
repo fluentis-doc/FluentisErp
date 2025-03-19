@@ -1,5 +1,5 @@
 ---
-title: Sales FAQ (FAQ Vendite)
+title: Sales FAQ 
 sidebar_position: 1
 ---
 

@@ -1,11 +1,11 @@
 ---
-title: Quality FAQ (FAQ Qualità)
+title: Quality FAQ 
 sidebar_position: 1
 ---
 
 <details>
 
-  <summary>1. Who can Approve and Close the <b>Complaints (Reclami)</b> and <b>Non-conformities (Non conformità)</b>?</summary>
+  <summary>1. Who can Approve and Close the <b>Complaints</b> and <b>Non-conformities</b>?</summary>
   
 Complaints and Non-conformities can only be Approved and Closed by:
 - Responsible person: in this field, it is possible to enter the coded Employee, who must have an associated Arm user;

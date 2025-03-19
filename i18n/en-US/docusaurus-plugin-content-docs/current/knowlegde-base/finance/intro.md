@@ -1,5 +1,5 @@
 ---
-title: Administration FAQ (FAQ Amministrazione)
+title: Administration FAQ 
 sidebar_position: 1
 ---
 
