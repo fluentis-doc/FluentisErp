@@ -1,5 +1,5 @@
 ---
-title: Fluentis Chat (Fluentis Chat)
+title: Fluentis Chat 
 sidebar_position: 6
 ---
 
