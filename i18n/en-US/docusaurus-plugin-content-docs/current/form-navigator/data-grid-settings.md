@@ -1,9 +1,9 @@
 ---
-title: Form Navigator - Data Grid Settings (Form Navigator - Impostazioni dati griglie)
+title: Form Navigator - Data Grid Settings
 sidebar_position: 3
 ---
 
-To set the grid with the option for **full data loading (caricamento completo dei dati)**, proceed as follows:
+To set the grid with the option for **full data loading**, proceed as follows:
 
 **1.** open the *Form Navigator* on the left, open *Results Widgets*, then the grid definition, and select the *Grid* object: the *Grid Control* will appear below where you can select the *Load all data* flag with the maximum number of rows to consider (*Limit rows number*). 
 
@@ -13,7 +13,7 @@ To set the grid with the option for **full data loading (caricamento completo de
 
 ![](/img/it-it/guide/panels/form-navigator/data-grid-settings/image01.png)  
 
-Once this data management mode is defined, several options for **totals/data management (totalizzazione/gestione dei dati)** are presented:
+Once this data management mode is defined, several options for **totals/data management** are presented:
 
 By right-clicking on the grid header, a menu opens from which you can choose the *Total Summary panel* option, then right-click outside the grid, but corresponding to the column to be totaled to choose whether to display: Sum, Min, Max, Count, Average:
 

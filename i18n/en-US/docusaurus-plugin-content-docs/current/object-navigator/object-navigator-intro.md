@@ -1,5 +1,5 @@
 ---
-title: Object Navigator (Object Navigator)
+title: Object Navigator
 sidebar_position: 1
 ---
 

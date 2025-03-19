@@ -1,5 +1,5 @@
 ---
-title: Report Creation (Creazione report)
+title: Report Creation 
 sidebar_position: 3
 ---
 
@@ -17,4 +17,4 @@ XtraReport is a reporting tool, integrated into Fluentis, for generating reports
 
 • Subreport
 
-For details, read the article *Report Creation in ARM (Creazione report in ARM)*.
+For details, read the article *Report Creation in ARM*.
