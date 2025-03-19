@@ -5,15 +5,31 @@ sidebar_position: 2
 
 La form si apre tramite il percorso **Acquisti > Richieste di Acquisto > Nuova richiesta** oppure dal filtro di riceca *Richieste di Acquisto* mediante il pulsante *Nuovo*.   
 
-## *Come creare una richiesta di acquisto*
+## *Come creare una Richiesta di Acquisto*
 
-## **1. Dati obbligatori**
+<details>
+ 
+<summary>Clicca per vedere i passaggi fondamentali</summary>
+ 
+1. **Inserisci il *Tipo RDA* da creare**: *Data*, *Anno* e *Numero* saranno proposti in automatico.  
+ 
+2. **Inserisci gli Articoli**: mediante doppio click nel campo *Codice articolo* si apre l’help articoli che permette di cercare e selezionare un articolo esistente. Tutti gli altri dati della riga, come *unità di misura*, *quantità*, *prezzo*, saranno proposti in automatico, ma possono essere modificati.
+In alternativa è possibile selezionare come *Tipo riga* un *Articolo non codificato* e inserire manualmente i dati successivi.
+ 
+3. **Inserisci eventuali informazioni aggiuntive** nei tab *Dati articolo*.
+ 
+4. **Autorizza la Richiesta di Acquisto**: dopo aver selezionato gli articoli nella griglia, premi il pulsante *Autorizzazione RDA* della barra degli strumenti, in modo da rendere la RDA disponibile per le procedure successive.   
+
+ 
+</details>
+
+## **1. Sezione superiore** {#upper-section}
 
 I campi obbligatori per l'inserimento di una richiesta di acquisto sono i seguenti:
 
 - **Tipo**: predefinito in *Configurazione > Tabelle >* [*Tipi richieste di acquisto*](/docs/configurations/tables/purchase/purchase-request-type). A seconda del tipo scelto, saranno attivate alcune funzionalità quali ad esempio il *controllo della disponibilità*.   
 - **Data/Anno**: di default viene proposta la data corrente, ma può essere modificata manualmente.   
-- **Numero**: poposto automaticamente in base al *Tipo RDA* scelto.
+- **Numero**: poposto automaticamente in base alla numerazione associata al *Tipo RDA* scelto.
 
 #### Altri dati
 
@@ -21,7 +37,7 @@ I campi obbligatori per l'inserimento di una richiesta di acquisto sono i seguen
 - **Annotazioni**: permette di inserire note visibili a livello di RDA.   
 - **Stato richiesta**: campo non editabile; visualizza lo stato di evasione dell'intera richiesta considerando lo stato evasione di ogni singola riga articolo. Una RDA viene considerata *Evasa* o *Parzialmente evasa* quando è stato generato l'ordine fornitore per tutte o alcune delle righe articolo contenute in essa.       
 
-## **2. Articoli**
+## **2. Articoli** {#items}
 
 Nella griglia articoli sono presenti i seguenti dati: 
 
@@ -63,11 +79,10 @@ Nella sezione sottostante la griglia vengono riportati i totali del documento:
 
 > **Rollback RDO**: permette di annullare ed eliminare la richiesta di offerta creata precedentemente.   
 
-> **Apri richiesta di offerta**: permette di aprire la RDO generata.
 
-### 2.1 Dati articolo{#items-data}
+### 2.1 Dati articolo {#items-data}
 
-Sono tutti campi informativi che vengono presi di default dall'articolo/fornitore. È possibile comunque sovrascrivere tali informazioni a livello di riga.   
+Sono campi informativi che vengono ripresi di default dall'articolo/fornitore. È possibile sovrascrivere tali informazioni a livello di riga.   
 
 - **Listini**: viene proposto il listino da cui è stato ripreso il prezzo dell'articolo.    
 
@@ -91,19 +106,19 @@ Sono tutti campi informativi che vengono presi di default dall'articolo/fornitor
 - **In data**: riporta la data in cui è stata autorizzata la riga articolo della RDA.   
 - **Dall'utente**: riporta il nome dell'utente che ha autorizzato la richiesta di acquisto.   
 
-### 2.2 Analitica
+### 2.2 Analitica {#cost-profit-centers-tab}
 
 Contiene campi relativi alla contabilità analitica. Vengono riportati i centri di costo/profitto sui quali sono distribuiti i valori dei prodotti acquistati.    
 
 Questi dati possono essere inseriti: manualmente oppure automaticamente, nel caso in cui i centri di costo/profitti sono stati inseriti precedentemente nell'anagrafica del contatto, anagrafica articolo oppure nel piano dei conti.
 
-### 2.3 Documenti allegati
+### 2.3 Documenti allegati {#attached-documents}
 
 Viene visualizzato il dettaglio di un eventuale documento allegato (nome, tipo di documento, eventuali note, ns/vs riferimento).    
 
 Per le istruzioni relative a come allegare un documento si rimanda all'articolo  [Allega documenti](/docs/guide/common/operations-with-data/attach-documents).
 
-### 2.4 Generatore RDO
+### 2.4 Generatore RDO {#generate-RDO}
 
 In questa tab vengono riportati i *Fornitori preferenziali* presenti nell'anagrafica dell'articolo selezionato in griglia con i relativi dati, listini e prezzi. Da questa tab è possibile quindi scegliere il miglior prezzo. In alternativa, è possibile inserire manualmente il fornitore da considerare per l'articolo.    
 

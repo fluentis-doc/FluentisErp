@@ -3,37 +3,49 @@ title: Introduzione
 sidebar_position: 1
 ---
 
-Il modulo si trova nell'area **Acquisti > Fatture di acquisto**.   
+Il modulo si trova nell'area **Acquisti > Fatture di acquisto**. Le fatture di acquisto sono documenti fiscali emessi dai fornitori a fronte della fornitura di beni o servizi all'azienda e rappresentano la base per la registrazione contabile e il pagamento dei fornitori. 
 
-Le fatture di acquisto sono documenti fiscali emessi dai fornitori a fronte della fornitura di beni o servizi all'azienda e rappresentano la base per la registrazione contabile e il pagamento dei fornitori. Queste fatture contengono informazioni come i dettagli del fornitore, la descrizione dei beni o servizi acquistati, le quantità, i prezzi, le condizioni di pagamento e gli eventuali riferimenti a ordini di acquisto o DDT.
+## **Configurazione preliminare del modulo**
 
-### **Flusso operativo**
-
-Le fatture di acquisto possono essere inserite manualmente o generate automaticamente evadendo documenti esistenti, come:
-
-- **Ordini di acquisto**: la fattura può essere generata automaticamente dall'evasione di uno o più ordini di acquisto, cliccando il pulsante [Evasione da ordine](/docs/purchase/purchase-invoices/insert-purchase-invoice/purchase-invoice) dall'interno di una nuova fattura.   
-- **DDT di acquisto**: l'evasione da DDT può essere effettuata sia dall'interno della fattura, mediante il pulsante *Evasione DDT*, sia dalla procedura di [valorizzazione DDT di Acquisto](/docs/purchase/purchase-invoices/procedures/purchase-delivery-note-valorization) da cui è possibile effettuare anche un ripristino delle operazioni. 
-- **Rientro di conto lavoro**: la procedura di *Valorizzazione DDT di rientro* consente di generare la fattura evadendo uno o più rientri di conto lavoro.   
-- **Ricevimento merce**: la fattura può essere creata anche da un *Ricevimento merci* attraverso la [Creazione fatture da Ricevimento merci](/docs/purchase/purchase-invoices/procedures/create-purchase-invoices-from-goods-receipt).    
-
-La gestione delle fatture è strettamente integrata con il magazzino e i DDT, consentendo di caricare automaticamente gli articoli e di generare fatture raggruppando uno o più DDT a seconda delle esigenze. La contabilizzazione automatica delle fatture permette poi di aggiornare i registri contabili e finanziari e garantendo la coerenza con il bilancio aziendale. 
+Prima di utilizzare il modulo, è necessario compilare le seguenti tabelle e parametri:     
+- [**Numerazioni**](/docs/configurations/tables/fluentis-numerations): inserimento delle numerazioni da utilizzare per le Fatture di Acquisto.     
+- [**Fatturato acquisti**](/docs/configurations/tables/purchase/purchase-turnover/): definizione delle tipologie di Fatturato acquisti da inserire nei documenti.
+- [**Tipi Fatture di Acquisto**](/docs/configurations/tables/purchase/purchase-invoices-type): creazione e definizione delle tipologie di Fatture da utilizzare.
+- [**Parametri Fatture di Acquisto**]((/docs/configurations/parameters/purchase/purchase-invoices-parameters)): impostazioni specifiche per la gestione delle fatture. 
+- [**Parametri di raggruppamento fatture di acquisto**](/docs/configurations/parameters/purchase/invoice-grouping/): definire le condizioni di raggruppamento dei DDT in fattura.
 
 
-### **Funzionalità principali**
+## **Collegamenti con altri moduli**
 
-- Gestione di più tipi di fatture e numerazioni: Fluentis consente di classificare e filtrare le fatture in base alla loro natura commerciale, garantendo una gestione ottimizzata di diversi flussi di fornitura.
-- Prezzi e sconti da listini: Il sistema permette di recuperare automaticamente prezzi e sconti dai listini fornitore riducendo gli errori e accelerando il processo di fatturazione.
-- Inserimento di spese e note: Le fatture possono includere spese o sconti legati ai beni scaricati dal magazzino, e ogni articolo può avere note specifiche per una maggiore personalizzazione della fattura.
-- Articoli non codificati e varianti: È possibile inserire in fattura articoli non presenti a sistema, inserendo solo una descrizione, così come gestire varianti di articoli con attributi aggiuntivi.
-- Visualizzazione e modifica delle scadenze: Nel riepilogo della fattura è possibile visualizzare i dettagli di pagamento e scadenza, con opzioni per modificarli, ricalcolarli o raggrupparli in modo flessibile.
-- Gestione lotti e magazzino: i codici lotti e serial number possono essere codificati automaticamente o manualmente. 
-- Stampa personalizzabile: Fluentis consente la stampa delle fatture, con layout personalizzabili, includendo tutti i dettagli commerciali e contabili richiesti.
+import Link from '@docusaurus/Link';
 
-### **Impostazioni**
-
-Prima di utilizzare il modulo, è necessario compilare i seguenti parametri e tabelle: 
-> - [Numerazioni](/docs/configurations/tables/fluentis-numerations)    
-> - [Fatturato acquisti](/docs/configurations/tables/purchase/purchase-turnover/)
-> - [Tipi fatture acquisto](/docs/configurations/tables/purchase/purchase-invoices-type)
-> - [Parametri fatture di acquisto](/docs/configurations/parameters/purchase/purchase-invoices-parameters)
-> - [Parametri di raggruppamento fatture di acquisto](/docs/configurations/parameters/purchase/invoice-grouping/)
+<div className="cardContainer">
+    <div className="card">
+###     <Link to="/docs/purchase/purchase-orders/general-overview">Ordini Fornitore</Link>
+        <p>La Fattura può essere creata mediante evasione di uno o più Ordini fornitore dall'interno della fattura utilizzando il pulsante Evasione da ordini.  </p>
+    </div>
+        <div className="card">
+###     <Link to="/docs/purchase/purchase-delivery-note/general-overview">DDT di Acquisto</Link>
+        <p>La Fattura può essere creata mediante evasione di uno o più DDT, sia dall'interno della fattura utilizzando il pulsante Evasione DDT, sia mediante la procedura di [Valorizzazione DDT di Acquisto](/docs/purchase/purchase-invoices/procedures/purchase-delivery-note-valorization).  </p>
+    </div>
+</div>
+<div className="cardContainer">
+    <div className="card">
+###     <Link to="/docs/subcontractor/subcontractor-returns/search-returns"> Rientro di Conto Lavoro</Link>
+        <p>la procedura di *Valorizzazione DDT di rientro* consente di generare una fattura di acquisto evadendo uno o più rientri di conto lavoro.   </p>
+    </div>
+    <div className="card">
+###     <Link to="/docs/purchase/goods-reception/receipt-goods-form-settings-and-structure">Ricevimento merci</Link>
+        <p>La procedura di [Creazione fatture da Ricevimento merci](/docs/purchase/purchase-invoices/procedures/create-purchase-invoices-from-goods-receipt) permette la creazione della fattura a partire da un ricevimento merci già registrato.  </p>
+    </div>
+</div>
+<div className="cardContainer">
+    <div className="card">
+###     <Link to="/docs/logistics/warehouse/stock-records/records">Logistica</Link>
+        <p>Le Fatture di acquisto di tipo immediato possono essere caricate a magazzino per registrare l'arrivo della merce e aggiornare le giacenze di materiale.  </p>
+    </div>
+    <div className="card">
+###     <Link to="/docs/purchase/purchase-invoices/accounting/purchase-invoices-accounting">Contabilizzazione</Link>
+        <p> La contabilizzazione automatica delle fatture permette di aggiornare i registri contabili e finanziari e garantendo la coerenza con il bilancio aziendale. </p>
+    </div>
+</div>

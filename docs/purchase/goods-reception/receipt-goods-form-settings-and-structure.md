@@ -5,21 +5,24 @@ sidebar_position: 1
 
 Il modulo si trova nell'area acquisti **Acquisti > Ricevimento merci** e rappresenta un passaggio intermedio che consente di registrare l'arrivo della merce inviata da un fornitore, in modo da aggiornare le giacenze di magazzino senza dover prima creare il Documento di Trasporto (DDT) o la Fattura di acquisto. 
 
-### Flusso operativo
+## **Configurazione preliminare del modulo**
 
-- Creazione: Il ricevimento merci può essere inserito manualmente dall'operatore quando al momento di arrivo della merce oppure può essere generato a partire da un ordine fornitore mediante il pulsante di *Evasione da Ordini*. 
-- Registrazione a magazzino: Il ricevimento merci può essere caricato a magazzino mediante l'apposita [procedura](/docs/purchase/goods-reception/procedures/good-receipt-load).
-- Documenti collegati: A partire da un ricevimento merci è possibile effettuare la [Creazione di un DDT di acquisto](/docs/purchase/purchase-delivery-note/procedures/create-delivery-note-from-goods-receipt) oppure di una [Fattura di acquisto](/docs/purchase/purchase-invoices/procedures/create-purchase-invoices-from-goods-receipt).
+Prima di utilizzare il modulo, è necessario compilare le seguenti tabelle e parametri:     
+- [**Numerazioni**](/docs/configurations/tables/fluentis-numerations): inserimento delle numerazioni da utilizzare per i ricevimenti merce.     
+- [**Tipi ricevimento merci**](/docs/configurations/tables/purchase/goods-receipt-types)
+- [**Parametri ordini fornitori**](/docs/configurations/parameters/purchase/purchase-orders-parameters): nel tab *Carico* vanno indicati i parametri da utilizzare per il *Carico ricevimento* merci. 
 
-### Benefici operativi
+## **Collegamenti con altri moduli**
 
-- Aggiornamento immediato delle giacenze: Il modulo consente di registrare e aggiornare in tempo reale le quantità di merci in entrata, garantendo che il magazzino sia sempre allineato con le scorte effettive e prevenendo errori o discrepanze nei dati di inventario.
-- Integrazione fluida con altri processi aziendali: Il ricevimento merci è strettamente collegato agli ordini di acquisto e al magazzino e permette la creazione automatica di documenti collegati come DDT e fatture di acquisto.
-- Tracciabilità: Ogni ricevimento viene tracciato nel sistema, consentendo una visibilità completa del flusso di merci. 
+import Link from '@docusaurus/Link';
 
-### Impostazioni
-
-Prima di utilizzare il modulo, è necessario compilare i seguenti parametri e tabelle:     
-> - [Numerazioni](/docs/configurations/tables/fluentis-numerations)
-> - [Tipi ricevimento merci](/docs/configurations/tables/purchase/goods-receipt-types)
-> - [Parametri ordini fornitori](/docs/configurations/parameters/purchase/purchase-orders-parameters): nel tab *Carico* vanno indicati i parametri da utilizzare per il *Carico ricevimento* merci.
+<div className="cardContainer">
+    <div className="card">
+###     <Link to="/docs/logistics/warehouse/stock-records/records">Logistica</Link>
+        <p>Il ricevimento merci può essere caricato a magazzino mediante l'apposita [procedura](/docs/purchase/goods-reception/procedures/good-receipt-load).  </p>
+    </div>
+    <div className="card">
+###     <Link to="/docs/purchase/goods-reception/receipt-goods-form-settings-and-structure">DDT e Fatture di Acquisto</Link>
+        <p>A partire da un ricevimento merci è possibile effettuare la [Creazione di un DDT di acquisto](/docs/purchase/purchase-delivery-note/procedures/create-delivery-note-from-goods-receipt) oppure di una [Fattura di acquisto](/docs/purchase/purchase-invoices/procedures/create-purchase-invoices-from-goods-receipt).  </p>
+    </div>
+</div>

@@ -5,7 +5,26 @@ sidebar_position: 1
 
 La form si apre tramite il percorso **Acquisti > Commesse Acquisto > Nuova Commessa di Acquisto** oppure dal filtro di ricerca delle commesse di acquisto, mediante il pulsante *Nuova commessa*.
 
-## *Come creare una commessa di acquisti*
+## *Come creare una commessa di acquisto*
+
+<details>
+ 
+<summary>Clicca per vedere i passaggi fondamentali</summary>
+ 
+1. **Inserisci i dati obbligatori**: *Tipo* e *Fornitore*. *Anno*, *Numero* e *Data Inserimento* saranno proposti in automatico.  
+ 
+2. **Inserisci o modifica i dati facoltativi** della testata: come *sconti*, *destinazione*, ecc.  
+ 
+3. **Inserisci gli Articoli**: mediante doppio click nel campo *Codice articolo* si apre l’help articoli che permette di cercare e selezionare un articolo esistente. Tutti gli altri dati della riga, come *unità di misura*, *quantità*, *prezzo*, saranno proposti in automatico, ma possono essere modificati.
+In alternativa è possibile selezionare come *Tipo riga* un *Articolo non codificato* e inserire manualmente i dati successivi.
+ 
+4. **Inserisci eventuali sconti o altre informazioni aggiuntive** nel tab *Dati*.
+ 
+5. **Controlla la sezione dei Riepiloghi** ed inserisci eventuali spese o sconti finali.  
+ 
+6. Una volta controllata la commessa, **inserisci una *Data conferma* e attiva il flag *Stampato* in testata** in modo da rendere il documento disponibile per le procedure di evasione.
+ 
+</details>
 
 ## **1. Dati obbligatori**
 

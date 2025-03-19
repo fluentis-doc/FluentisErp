@@ -3,9 +3,30 @@ title: Nuova Richiesta di offerta
 sidebar_position: 3
 ---
 
+La form si apre tramite il percorso **Acquisti > Richiesta di Offerta > Nuova richiesta di offerta** oppure dal filtro di riceca Richieste di Offerta, mediante il pulsante Nuovo.
+
 ## *Come creare una richiesta di offerta*
 
-## **1. Dati obbligatori**
+<details>
+ 
+<summary>Clicca per vedere i passaggi fondamentali</summary>
+ 
+1. **Inserisci i dati obbligatori**: *Tipo richiesta di offerta* e *Fornitore*. *Anno*, *Numero* e *Data* saranno proposti in automatico.  
+ 
+2. **Inserisci o modifica i dati facoltativi** della testata: come date di consegna, eventuali *sconti*, la *destinazione*, ecc.  
+ 
+3. **Inserisci gli Articoli**: mediante doppio click nel campo *Codice articolo* si apre l’help articoli che permette di cercare e selezionare un articolo esistente. Tutti gli altri dati della riga, come *unità di misura*, *quantità*, *prezzo*, saranno proposti in automatico, ma possono essere modificati.
+In alternativa è possibile selezionare come *Tipo riga* un *Articolo non codificato* e inserire manualmente i dati successivi.
+ 
+4. **Inserisci eventuali sconti o altre informazioni aggiuntive** nei tab *Sconti* e *Dati articolo*
+ 
+5. **Controlla la sezione dei Riepiloghi** ed inserisci eventuali sconti finali.  
+ 
+6. Una volta controllata e confermata l'offerta, **inserisci una *Data conferma* in testata** in modo da rendere il documento disponibile per la conversione in ordine.
+ 
+</details>
+
+## **1. Sezione superiore**{#upper-section}
 
 I campi obbligatori per l'inserimento di una richiesta di acquisto sono i seguenti:
 
@@ -19,7 +40,7 @@ I campi obbligatori per l'inserimento di una richiesta di acquisto sono i seguen
 Se il documento viene *creato automaticamente* da una RDA, questi dati vengono ripresi dal *documento d'origine* da cui è stata generato.
 :::
 
-## **2. Testata**
+## **2. Testata**{#header}
 
 ### 2.1 Dati fornitore
 
@@ -66,11 +87,11 @@ Gli sconti proposti in testata del documento vengono riportati in ogni nuova rig
 > **Cancella sconti predefiniti**: utilizzato per cancellare gli sconti selezionati.
 
 
-### Extra Data
+### 2.5 Extra Data
 
 Qui viene proposta l'informazione inserita nell'*Anagrafica del soggetto > tab Extra data*, solo se esistono dati di default.
 
-## **3. Articoli**
+## **3. Articoli**{#items}
 
 Per inserire un *Nuovo articolo* nella griglia basterà posizionarsi sulla riga per compilare i vari dati oppure utilizzare il pulsante **Nuovo articolo** presente nella ribbon bar.
 
@@ -113,7 +134,7 @@ Se si parte direttamente con l'inserimento dell'articolo, la sua classe, il codi
 
 - **Periodo di prevista consegna**: campo descrittivo libero in cui è possibile indicare il periodo di tempo previsto per la consegna della merce.
 
-### 3.3 Sconti
+### 3.3 Sconti{#discount}
 
 - **Tipo scaglione**: riporta lo scaglione di sconto da utilizzare, che viene ripreso dall'anagrafica fornitore oppure dal listino.  
 
@@ -125,7 +146,7 @@ Nella griglia invece vengono proposti tutti gli sconti associati all'articolo, o
 
 > **Cancella sconti**: permette di cancellare lo sconto selezionato dalla griglia corrispondente. 
 
-### 3.4 Dati articolo
+### 3.4 Dati articolo {#items-data}
 
 All'interno di questo tab vengono riportate/inserite ulteriori informazioni relative all'articolo.
 
@@ -141,22 +162,22 @@ All'interno di questo tab vengono riportate/inserite ulteriori informazioni rela
 >- **Prezzo unità di misura alternativa**: se attivo indica che il prezzo inserito sulla riga articolo è riferito all'unità di misura alternativa e non a quella principale.    
 
 >- **Marca**: rappresenta la marca dell'articolo, ripresa dalla sua anagrafica oppure dal listino dell'articolo.   
->- **Richiesta di acquisto**: se l'offerta è stato creata da RDA viene riportata la [Richiesta d'acquisto](/docs/purchase/purchase-requests/purchase-request/insert-purchase-request)) di riferimento.   
+>- **Richiesta di acquisto**: se l'offerta è stato creata da RDA viene riportata la [Richiesta d'acquisto](/docs/purchase/purchase-requests/purchase-request/insert-purchase-request) di riferimento.   
 
 
-#### 3.4 Extra data
+#### 3.4 Extra data{#extra-data}
 
 import DocItemExtraData from './../../../import/sections/doc-item-extradata.md'
 
 <DocItemExtraData />
 
-#### 3.5 Documenti allegati
+#### 3.5 Documenti allegati{#attached-documents}
 
 import DocAttachDocument from './../../../import/sections/doc-attach-document.md'
 
 <DocAttachDocument />
 
-## **4. Riepiloghi**
+## **4. Riepiloghi**{#summaries}
 
 Nelle sezioni di questo tab sono presentate le informazioni principali dell'intero documento.
 

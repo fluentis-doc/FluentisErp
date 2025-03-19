@@ -9,6 +9,26 @@ Dalla form di ricerca degli ordini è possibile creare un nuovo documento median
  
 ## *Come creare un ordine fornitore*
 
+<details>
+ 
+<summary>Clicca per vedere i passaggi fondamentali</summary>
+ 
+1. **Inserisci i dati obbligatori**: *Tipo Ordine* e *Fornitore*. *Anno*, *Numero* e *Data Inserimento* saranno proposti in automatico.  
+ 
+2. **Inserisci o modifica i dati facoltativi** della testata: come date di consegna, eventuali *sconti*, la *destinazione*, ecc.  
+ 
+3. **Inserisci gli Articoli**: mediante doppio click nel campo *Codice articolo* si apre l’help articoli che permette di cercare e selezionare un articolo esistente. Tutti gli altri dati della riga, come *unità di misura*, *quantità*, *prezzo*, saranno proposti in automatico, ma possono essere modificati.
+In alternativa è possibile selezionare come *Tipo riga* un *Articolo non codificato* e inserire manualmente i dati successivi.
+ 
+4. **Inserisci eventuali sconti o altre informazioni aggiuntive** nei tab *Sconti/listini* e *Dati articolo*
+ 
+5. **Controlla la sezione dei Riepiloghi** ed inserisci eventuali spese o sconti finali.  
+ 
+6. Una volta controllato e confermato l’ordine, **inserisci una *Data conferma* e attiva il flag *Stampato* in testata** in modo da rendere l’ordine disponibile per le procedure di evasione.
+ 
+</details>
+ 
+ 
 ## **1. Dati obbligatori**
  
 Per creare l'ordine, l'utente deve inserire i campi obbligatori:
@@ -19,7 +39,7 @@ Per creare l'ordine, l'utente deve inserire i campi obbligatori:
 - **Data inserimento**: viene proposta automaticamente la data corrente, ma può essere modificata manualmente sempre rispettando la regola di progressione tra data e numero;  
 - **Fornitore**: può essere inserito usando l'[help di campo](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection#inserimento-con-il-help-di-campo) oppure [manualmente](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection#inserimento-manuale).
  
-## **2. Testata**
+## **2. Testata** {#header}
  
 Continuare l'inserimento dei seguenti dati [manualmente](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection#inserimento-manuale) oppure con l'[help di campo](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection#inserimento-con-il-help-di-campo).
  
@@ -137,7 +157,7 @@ Per completare la procedura, bisognerà cliccare sul pulsante Evasione, che andr
 > **Seleziona/Deseleziona tutti**: permette di selezionare/deselezionare tutti gli articoli dalla lista;  
 > **Attiva/Disattiva solo righe selezionate**: utile soprattutto per l'evasione mediante griglia; permette di attivare/disattivare i flag di tutte le righe selezionate.  
  
-## **3. Articoli**
+## **3. Articoli** {#items}
  
 In questo tab vengono inseriti tutti gli articoli con i relativi dati.
  
@@ -221,7 +241,7 @@ Quando si crea/aggiorna un listino mediante questa procedura, nel listino vengon
  
 **Cancella sconti**: permette di cancellare lo sconto selezionato dalla griglia corrispondente.
  
-### 3.4 Dati articolo  
+### 3.4 Dati articolo {#items-data} 
  
 All'interno di questo tab vengono riportate/inserite ulteriori informazioni relative all'articolo.
  
@@ -269,7 +289,7 @@ import SalesValuesSection from './../../../import/sections/item-values-section.m
  
 <SalesValuesSection />
  
-## **4. Riepiloghi**
+## **4. Riepiloghi** {#summaries}
  
 Nelle diverse sezioni di questo tab sono presentate le informazioni principali dell'intero documento e alcuni pulsanti specifici.
  

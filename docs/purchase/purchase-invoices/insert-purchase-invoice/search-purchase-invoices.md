@@ -1,5 +1,5 @@
 ---
-title: Ricerca Fatture di acquisti
+title: Ricerca Fatture di acquisto
 sidebar_position: 1
 ---
 

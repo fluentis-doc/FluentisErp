@@ -7,6 +7,19 @@ La form si apre tramite il percorso **Acquisti > Ricevimento merci > Crea ricevi
 
 ## *Come creare un ricevimento merci*
 
+<details>
+ 
+<summary>Clicca per vedere i passaggi fondamentali</summary>
+ 
+1. **Inserisci i dati obbligatori**: *Tipo* e *Fornitore*. *Anno*, *Numero* e *Data Inserimento* saranno proposti in automatico.  
+ 
+2. **Inserisci gli Articoli**: mediante doppio click nel campo *Codice articolo* si apre l’help articoli che permette di cercare e selezionare un articolo esistente. Tutti gli altri dati della riga, come *unità di misura*, *quantità*, *prezzo*, saranno proposti in automatico, ma possono essere modificati.
+In alternativa è possibile selezionare come *Tipo riga* un *Articolo non codificato* e inserire manualmente i dati successivi.
+ 
+3. **Inserisci eventuali informazioni aggiuntive** nei tab *Lotti e Serial Number* e *Dati articolo*.
+ 
+</details>
+
 ## **1. Dati obbligatori**
 
 Per creare il ricevimento merci, l'utente deve inserire i seguenti dati:
