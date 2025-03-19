@@ -8,7 +8,7 @@ In the header, the following fields are present:
 **User**: contains the operator performing the operation;     
 **Period type**: this field automatically populates by entering the next field and suggests the [Period Type](/docs/configurations/tables/crm/sales-forecast/period-type) associated with the forecast;      
 **Sales forecast**: it is required to enter the [Sales Forecast](/docs/crm/sales-forecast-crm/new-sales-forecast) that we want to analyze and compare with the documentation;     
-**Year/Date/Number (Anno/Data/Numero)**: these fields are automatically populated based on the associated numbering and the current date;     
+**Year/Date/Number**: these fields are automatically populated based on the associated numeration and the current date;     
 **Period type detail**: this data is fundamental to indicate which Period Detail (taken from the table [Period Type](/docs/configurations/tables/crm/sales-forecast/period-type)) to consider;             
 
 In the **Data** tab below, it is possible to import the documentation using the buttons on the toolbar. The tab presents three grids, one for each type of document: Invoices, Orders, and Opportunities.      

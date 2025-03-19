@@ -1,5 +1,5 @@
 ---
-title: Items (Articoli)
+title: Items 
 sidebar_position: 4
 ---
 

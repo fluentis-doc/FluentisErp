@@ -1,5 +1,5 @@
 ---
-title: New Visit Report (Nuovo Visit Report)
+title: New Visit Report 
 sidebar_position: 2
 ---
 
@@ -13,7 +13,7 @@ In the upper part, the following fields are present:
 **Date**: this is the date related to the visit and is set to today's date.          
 **Object**: this field should indicate the reason for the visit to the customer.          
 **Note**: free field for entering additional notes related to the visit.           
-**Contact/Customer (Contatto/Cliente)**: this field should indicate the CRM contact or the customer to which the Visit Report refers. The label of the field and the subject of reference for the field itself change depending on whether the flag is placed on the *Crm Contact* or on the *Fluentis Account*.     
+**Contact/Customer**: this field should indicate the CRM contact or the customer to which the Visit Report refers. The label of the field and the subject of reference for the field itself change depending on whether the flag is placed on the *Crm Contact* or on the *Fluentis Account*.     
 **Participants**: in this freely filled field, the individuals who participated in the meeting should be indicated.     
 **Agent**: in this field, which refers to the agents' registry of Fluentis, the agent who attended the meeting should be indicated, if present.     
 
@@ -36,30 +36,30 @@ It recalls the basic functions of the most common text editors, such as Microsof
 
 - **Insert**: this Tab contains buttons for inserting various elements into the Template:
 > - *Insert Table*: allows you to insert a table into the worksheet;
-> - *Align Image (Allinea Immagine)*: allows you to insert an image into the body of the document;
+> - *Align Image*: allows you to insert an image into the body of the document;
 > - *Picture*: allows you to insert an image into the body of the document;
-> - *Bookmark (Bookmark)*: allows you to insert a bookmark within the template;
-> - *Hyperlink (Hyperlink)*: allows you to insert a link to a webpage or to a bookmark in the template;
+> - *Bookmark*: allows you to insert a bookmark within the template;
+> - *Hyperlink*: allows you to insert a link to a webpage or to a bookmark in the template;
 > - *Heading*: allows you to insert the header of the template;
-> - *Footer (Piè di pagina)*: allows you to insert the footer of the template;
-> - *Page Number (Numero di pagina)*: serves to indicate the page number in the header or footer of the Template;
-> - *Page Count (Conteggio pagine)*: serves to indicate the total number of pages of the template in the header or footer;
-> - *Text Box (Casella di testo)*: allows you to insert a text box into the Template;
-> - *Symbol (Simbolo)*: serves to insert a special symbol within the Template.
+> - *Footer*: allows you to insert the footer of the template;
+> - *Page Number*: serves to indicate the page number in the header or footer of the Template;
+> - *Page Count*: serves to indicate the total number of pages of the template in the header or footer;
+> - *Text Box*: allows you to insert a text box into the Template;
+> - *Symbol*: serves to insert a special symbol within the Template.
 
-- **Merge data (Dati uniti)**: in this tab, the buttons necessary for managing and inserting merge data are present.
-> - *Insert Merge Field (Inserisci Merge Field)*: This button allows you to insert the merge data by selecting them from a list based on the Data Source referenced by the Template;
-> - *View Merged Data (Visualizza Dati Unificati)*: this button allows you to hide/view the merged data inserted in the template;
-> - *Show All Field Codes (Mostra tutti i codici dei campi)*: the button serves to show the codes of the fields used as merge data;
-> - *Show All Field Results (Mostra tutti i risultati dei campi)*: the button serves to show the results of the extraction of the fields used as merge data;
-> - *First Record (Primo Record)*: allows you to position yourself on the first record extracted from the merge data;
-> - *Previous Record (Record Precedente)*: allows you to position yourself on the previous record relative to the current one extracted from the merge data;
-> - *Next Record (Record Successivo)*: allows you to position yourself on the next record relative to the current one extracted from the merge data;
-> - *Last Record (Ultimo Record)*: allows you to position yourself on the last record extracted from the merge data.
+- **Merge data**: in this tab, the buttons necessary for managing and inserting merge data are present.
+> - *Insert Merge Field*: This button allows you to insert the merge data by selecting them from a list based on the Data Source referenced by the Template;
+> - *View Merged Data*: this button allows you to hide/view the merged data inserted in the template;
+> - *Show All Field Codes*: the button serves to show the codes of the fields used as merge data;
+> - *Show All Field Results*: the button serves to show the results of the extraction of the fields used as merge data;
+> - *First Record*: allows you to position yourself on the first record extracted from the merge data;
+> - *Previous Record*: allows you to position yourself on the previous record relative to the current one extracted from the merge data;
+> - *Next Record*: allows you to position yourself on the next record relative to the current one extracted from the merge data;
+> - *Last Record*: allows you to position yourself on the last record extracted from the merge data.
 
-## Attached Documents (Documenti allegati)
+## Attached Documents
 
 In this tab, you can consult the attached documents. To attach documents, you can proceed in two ways:
 
 - using the button from the Document tools bar, you can choose to attach an already coded document in Fluentis or to create a new Document to attach.
-- by directly using the right mouse button in the grid and selecting Attach file (Allega file), you enter the creation of a new Document to attach.
+- by directly using the right mouse button in the grid and selecting Attach file, you enter the creation of a new Document to attach.

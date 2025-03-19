@@ -1,5 +1,5 @@
 ---
-title: Marketing Budget (Marketing budget)
+title: Marketing Budget 
 sidebar_position: 5
 ---
 
@@ -16,4 +16,4 @@ In the grid, it is possible to build the budget tree using the buttons on the to
 **Total Quantity**: contains the total quantity to be distributed across the various budget Periods;       
 **Unit price**: this field is automatically filled with the result of the division between *Total amount* and *Total Quantity*:        
 **Total amount**: contains the Total Amount to be distributed across the various budget Periods.        
-In the right grid, *Total Quantity* and *Total amount* are divided by the number of periods provided by the [Budget Period (Periodo budget)](/docs/configurations/tables/crm/sales-forecast/budget-period) entered in the header. This way, it will be possible to consult the Budget for each period. The *Period* grid is editable using the buttons on the ribbon bar, in case the calendar needs to deviate from the standard coding.
+In the right grid, *Total Quantity* and *Total amount* are divided by the number of periods provided by the [Budget Period](/docs/configurations/tables/crm/sales-forecast/budget-period) entered in the header. This way, it will be possible to consult the Budget for each period. The *Period* grid is editable using the buttons on the ribbon bar, in case the calendar needs to deviate from the standard coding.

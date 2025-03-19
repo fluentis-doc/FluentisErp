@@ -1,5 +1,5 @@
 ---
-title: Introduction (Introduzione)
+title: Introduction 
 sidebar_position: 1
 ---
 

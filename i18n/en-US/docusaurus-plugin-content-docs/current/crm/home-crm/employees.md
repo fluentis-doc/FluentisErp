@@ -1,5 +1,5 @@
 ---
-title: Employees (Dipendenti)
+title: Employees
 sidebar_position: 3
 ---
 
