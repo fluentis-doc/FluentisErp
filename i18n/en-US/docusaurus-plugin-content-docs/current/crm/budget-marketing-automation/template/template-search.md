@@ -1,5 +1,5 @@
 ---
-title: Template Search (Ricerca Template)
+title: Template Search 
 sidebar_position: 1 
 ---
 

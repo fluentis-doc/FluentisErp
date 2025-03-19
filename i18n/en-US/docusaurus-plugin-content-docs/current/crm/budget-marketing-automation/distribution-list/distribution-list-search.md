@@ -1,5 +1,5 @@
 ---
-title: Distribution List Search (Ricerca Liste di Distribuzione)
+title: Distribution List Search 
 sidebar_position: 2
 ---
 

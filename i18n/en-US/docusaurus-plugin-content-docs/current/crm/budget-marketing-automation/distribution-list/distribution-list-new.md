@@ -1,5 +1,5 @@
 ---
-title: New Distribution List (Nuova Lista di Distribuzione)
+title: New Distribution List 
 sidebar_position: 3
 ---
 
@@ -17,22 +17,22 @@ The upper section allows you to define the following information:
 
 **Author**: indicates the user who generated the list;
 
-**Type**: allows you to define the type of distribution list as either **Static (Statica)** or **Dynamic (Dinamica)**.
+**Type**: allows you to define the type of distribution list as either **Static** or **Dynamic**.
 
 
 The lower form differs depending on whether the list is Static or Dynamic.
 
-## ***STATIC LIST (LISTA STATICA)***
+## ***STATIC LIST***
 
 The section is divided into 2 tabs.
 
-**Assigned Tab (Tab Assegnato)**
+**Assigned Tab**
 
 In the Assigned tab, the subjects that have already been assigned to the distribution list are shown.
 
 ![](/img/it-it/applications/crm/distribution-list/assigned.png)
 
-**Unassigned Tab (Tab Non Assegnato)**
+**Unassigned Tab**
 
 In the Unassigned tab, the contacts that have not yet been assigned to the list in question are displayed. The tab is divided into 2 sections. 
 The first section is a Filter, where you can set a series of filters regarding the contacts to extract.
@@ -44,11 +44,11 @@ The second section, the results grid, shows the subjects extracted based on the 
 **Group by contact**: allows you to group subjects (contacts and references) into a single row based on the contact they belong to.
 
 
-## ***DYNAMIC LIST (LISTA DINAMICA)***
+## ***DYNAMIC LIST***
 
 The section is divided into 2 tabs.
 
-**Configuration Tab (Tab Configurazione)**
+**Configuration Tab**
 
 Initially, these 3 data points must be indicated:
 **Area**: used to define the area of Fluentis from which the data should be retrieved;
@@ -58,7 +58,7 @@ In the grid below, the properties and how they have been mapped are displayed.
 
 ![](/img/it-it/applications/crm/distribution-list/configuration.png)
 
-**Mapping Tab (Tab Mapping)**
+**Mapping Tab**
 
 In this tab, the contacts processed and inserted into the distribution list based on the SQL Query indicated in the Configuration tab are displayed in real-time.
 

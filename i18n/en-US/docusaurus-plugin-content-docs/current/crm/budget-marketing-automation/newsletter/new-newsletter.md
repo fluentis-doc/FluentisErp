@@ -1,5 +1,5 @@
 ---
-title: New Newsletter (Nuova Newsletter)
+title: New Newsletter 
 sidebar_position: 2
 ---
 
@@ -9,7 +9,7 @@ The form is divided into two parts.
 
 In the upper part, the following fields are present:
 
-**title**: corresponds to the code of the Newsletter;
+**Title**: corresponds to the code of the Newsletter;
 
 **Description**: alphanumeric field to indicate the detailed meaning of the Newsletter;
 
