@@ -1,5 +1,5 @@
 ---
-title: Fluentis Fast Start - Roadmap for Starting a New Operating Environment (Fluentis Fast Start - roadmap startup nuovo ambiente operativo)
+title: Fluentis Fast Start - Roadmap for Starting a New Operating Environment
 sidebar_position: 2
 ---
 
@@ -7,22 +7,22 @@ The **Fast Start** is a feature designed to make the initialization of the Fluen
 
 ### Configuration with Fast Start
 
-**Initial Assessment (Valutazione iniziale)**  
+**Initial Assessment**  
 - Decide whether to adopt the **Fast Start** to launch the system with preconfigured settings. This choice will affect the initial setup.
 
-**Fast Start Features (Funzionalità del Fast Start)**  
+**Fast Start Features**  
 - Automatic population of basic parameters.  
 - Simplified configuration for quickly starting the system.  
 
-**Main Benefits (Vantaggi principali)**  
+**Main Benefits**  
 - Efficiency in the initial setup.  
 - Reduced risk of manual errors and savings in time and resources.  
 
-**Launch the Procedure (Lanciare la procedura)**  
+**Launch the Procedure**  
 - Start the **Fast Start** to apply the default settings.  
 - Subsequently review the generated parameters to ensure compliance with business requirements.
 
-:::tip[Where to Activate] (Dove si attiva)
+:::tip[Where to Activate]
 **To launch the procedure**, access the [**Company Table**](/docs/configurations/tables/general-settings/company#pulsante-impostazioni-generali), enter the specific company of interest, and press the *General Settings* button present in the ribbon bar.
 :::
 
@@ -32,7 +32,7 @@ The procedure is available for **each individual company** present in the databa
 This is why the **activation button** is located **within the individual company**.
 :::
 
-:::danger[WARNING] (ATTENZIONE)
+:::danger[WARNING]
 The chart of accounts (in no part) and other tables involved in the procedure must not already be populated. It is recommended to decide immediately and execute this procedure first after installation.
 
 :::
@@ -44,99 +44,99 @@ The chart of accounts (in no part) and other tables involved in the procedure mu
 
 Tables involved (Stored Procedure Fluentis.SH_CreateNewYear_IT):
     
- - > Account Types (Tipi conto)
- - > Chart of Accounts (Piano dei conti)
- - > General Accounting Parameters (Parametri di contabilità generale)
- - > Asset Parameters (Parametri cespiti)
- - > Portfolio Parameters (active - effects) (Parametri portafoglio (attivo- effetti))
- - > Outstanding Parameters (Parametri insoluti)
- - > MPS Parameters (Parametri MPS)
- - > Accounting Reasons (Causali contabili)
- - > VAT Codes (Codici IVA)
- - > VAT Registers (Registri IVA)
- - > Document Types (Tipi documento)
- - > Payment Types (Tipi pagamento)
- - > Payment Solutions (Soluzioni pagamento)
- - > Agent Categories (Categorie Agenti)
- - > Withholding Types (Tipi ritenuta (d'acconto))
- - > Asset Categories (Categorie cespiti)
- - > Financial Flow Types (Tipi flusso finanziario)
- - > Advance Types (Tipi anticipo)
- - > Outstanding Status (Stati insoluto)
- - > Effects Status (Stati effetti)
- - > Presentation Note Types (Tipi distinta di presentazione (effetti))
- - > Effects Types (Tipi effetti)
- - > Link between payment types table and effect types (Link tra la tabella Tipi pagamento e i tipi effetto)
- - > Accounting Registration Numberings (definitive and provisional) (Numerazioni registrazioni contabili (definitive e provvisorie))
- - > Transaction Numbering (Numerazione partite)
- - > Settlement Numbering (Numerazione compensazioni (partite))
- - > Monitor Payment Numbering (Numerazione pagamenti fronitori)
- - > Intrastat Numbering (Numerazione intrastat)
- - > Agents Settlement Numbering (Numerazione liquidazioni agenti)
- - > Presentation Note Numbering (Numerazione distinte di presentazione effetti)
- - > Effects Numbering (Numerazione effetti)
- - > [Sales Document Numbering](/docs/configurations/tables/fluentis-numerations) (Numerazione documenti di vendita)
- - > [Purchase Document Numbering](/docs/configurations/tables/fluentis-numerations) (Numerazione documenti di acquisto)
- - > Invoice Types ([purchase](/docs/configurations/tables/purchase/purchase-invoices-type) e [sales](/docs/configurations/tables/sales/invoices-type)) with links to accounting reasons
- - > Delivery Note Types ([purchase](/docs/configurations/tables/purchase/purchase-delivery-notes-type) e [sales](/docs/configurations/tables/sales/delivery-notes-type)) linking to invoice types
- - > Order Types ([purchase](/docs/configurations/tables/purchase/purchase-orders-type) e [sales](/docs/configurations/tables/sales/sales-order-types)) linking to delivery note types
- - > [Offer Types](/docs/configurations/tables/sales/sales-offer-type) (Tipi offerta)
- - > [Invoice Parameters](/docs/configurations/parameters/sales/sales-invoices-parameters) (Parametri fatture) and related [groupings](/docs/configurations/parameters/sales/invoice-grouping) (raggruppamenti) 
- - > [Delivery Note Parameters](/docs/configurations/parameters/sales/dn-parameters) (Parametri DDT) and related [groupings](/docs/configurations/parameters/sales/dn-grouping) (raggruppamenti) 
- - > [Order Parameters](/docs/configurations/parameters/sales/sales-orders-parameters) (Parametri ordini) and related [groupings](/docs/configurations/parameters/sales/orders-grouping) (raggruppamenti)
- - > [Offer Parameters](/docs/configurations/parameters/sales/offer-parameters) (Parametri offerte)
- - > Project Types (Tipi progetto) (sales job order)
- - > Intervention Types (Tipi intervento)
- - > Project Numbering (Numerazione progetti)
- - > Intervention Numbering (Numerazione interventi)
- - > Intervention Request Types (Tipi richiesta intervento) (and related numbering)
- - > Planned Intervention Types (Tipi interventi pianificati) (and numbering)
- - > Job Work Return Types (Tipi rientro conto lavoro) (and numbering)
- - > Job Order Types (Tipi ordini conto lavoro) (and numbering)
- - > Production Order Types (Tipi commesse di produzione) (and numbering)
- - > Planned Purchasing Order Types (Tipi ordini pianificati di acquisto) (and numbering)
- - > Planned Production Order Types (Tipi ordini pianificati di produzione) (and numbering)
- - > Planned Job Order Types (Tipi ordini pianificati di conto lavoro) (and numbering)
- - > Production Order Types (Tipi ordini di produzione) (and numbering)
- - > Job Order Types (Tipi ordini di conto lavoro) (and numbering)
- - > RDA Types (Tipi RDA) (and numbering)
- - > (Types) sales turnover ((Tipi) fatturato vendite)
- - > (Types) purchase turnover ((Tipi) fatturato acquisti)
- - > Price List Types (Tipi listino)
- - > Address Types (Tipi indirizzo)
- - > Discount Types (Tipi sconto)
- - > Languages (Lingue)
- - > Countries (Nazioni)
- - > Blacklist Countries (Nazioni Black list)
- - > Currencies (Divise)
- - > Units of Measure (Unità di misura)
- - > Freight (Incoterms - termini di resa)
- - > Shipping (types) (Spedizioni (tipi))
- - > Reclassification Models (Modelli di riclassificazione) (controlling)
+ - > Account Types 
+ - > Chart of Accounts 
+ - > General Accounting Parameters 
+ - > Asset Parameters 
+ - > Portfolio Parameters (active - effects) 
+ - > Outstanding Parameters 
+ - > MPS Parameters 
+ - > Accounting Reasons 
+ - > VAT Codes 
+ - > VAT Registers
+ - > Document Types 
+ - > Payment Types 
+ - > Payment Solutions 
+ - > Agent Categories 
+ - > Withholding Types 
+ - > Asset Categories 
+ - > Financial Flow Types 
+ - > Advance Types
+ - > Outstanding Status 
+ - > Effects Status 
+ - > Presentation Note Types 
+ - > Effects Types 
+ - > Link between payment types table and effect types 
+ - > Accounting Registration Numberings (definitive and provisional)   
+ - > Transaction Numbering 
+ - > Settlement Numbering 
+ - > Monitor Payment Numbering 
+ - > Intrastat Numbering 
+ - > Agents Settlement Numbering 
+ - > Presentation Note Numbering
+ - > Effects Numbering 
+ - > [Sales Document Numbering](/docs/configurations/tables/fluentis-numerations)  
+ - > [Purchase Document Numbering](/docs/configurations/tables/fluentis-numerations)  
+ - > Invoice Types ([purchase](/docs/configurations/tables/purchase/purchase-invoices-type) and [sales](/docs/configurations/tables/sales/invoices-type)) with links to accounting reasons
+ - > Delivery Note Types ([purchase](/docs/configurations/tables/purchase/purchase-delivery-notes-type) and [sales](/docs/configurations/tables/sales/delivery-notes-type)) linking to invoice types
+ - > Order Types ([purchase](/docs/configurations/tables/purchase/purchase-orders-type) and [sales](/docs/configurations/tables/sales/sales-order-types)) linking to delivery note types
+ - > [Offer Types](/docs/configurations/tables/sales/sales-offer-type) 
+ - > [Invoice Parameters](/docs/configurations/parameters/sales/sales-invoices-parameters) and related [groupings](/docs/configurations/parameters/sales/invoice-grouping)  
+ - > [Delivery Note Parameters](/docs/configurations/parameters/sales/dn-parameters) and related [groupings](/docs/configurations/parameters/sales/dn-grouping)  
+ - > [Order Parameters](/docs/configurations/parameters/sales/sales-orders-parameters) and related [groupings](/docs/configurations/parameters/sales/orders-grouping)
+ - > [Offer Parameters](/docs/configurations/parameters/sales/offer-parameters) 
+ - > Project Types (sales job order)
+ - > Intervention Types 
+ - > Project Numbering 
+ - > Intervention Numbering 
+ - > Intervention Request Types (and related numbering)
+ - > Planned Intervention Types (and numbering)
+ - > Job Work Return Types (and numbering)
+ - > Job Order Types (and numbering)
+ - > Production Order Types (and numbering)
+ - > Planned Purchasing Order Types (and numbering)
+ - > Planned Production Order Types (and numbering)
+ - > Planned Job Order Types (and numbering)
+ - > Production Order Types (and numbering)
+ - > Job Order Types (and numbering)
+ - > RDA Types (and numbering)
+ - > (Types) sales turnover 
+ - > (Types) purchase turnover
+ - > Price List Types 
+ - > Address Types 
+ - > Discount Types 
+ - > Languages 
+ - > Countries 
+ - > Blacklist Countries 
+ - > Currencies 
+ - > Units of Measure 
+ - > Freight 
+ - > Shipping (types) 
+ - > Reclassification Models (controlling)
  - > Link of the reclassification model for CEE balance with detailed chart of accounts
- - > Working Hours (gest. dipendenti) (Orari di lavoro)
+ - > Working Hours 
  - > Severity (ticket CRM)
  - > SLA (ticket CRM)
  - > CRM Ticket Types (Tipi Ticket CRM) (and numbering)
- - > Bill of Materials Versions (Versioni distinta base)
- - > Item Classes (Classi articolo)
- - > Warehouses (Magazzini)
- - > Warehouse Reasons (Causali di magazzino)
- - > Default Data for CRM (Dati di default per il CRM) (Contact Types, Visit report, Opportunities, Contact Quality, success percentages, etc...)
+ - > Bill of Materials Versions
+ - > Item Classes 
+ - > Warehouses
+ - > Warehouse Templates 
+ - > Default Data for CRM (Contact Types, Visit report, Opportunities, Contact Quality, success percentages, etc...)
 
 </details>
 
 ---
 
-**CUSTOM ENVIRONMENT WITHOUT FAST START (AMBIENTE CUSTOM SENZA FAST START)**
+**CUSTOM ENVIRONMENT WITHOUT FAST START **
 
 If you do not launch the Fast Start, it is necessary to manually populate the following tables.
 
-## BASIC TABLES (TABELLE DI BASE)
+## BASIC TABLES 
 
 <details>
 
-  <summary>COUNTRIES (NAZIONI) Click to expand!</summary>
+  <summary>COUNTRIES Click to expand!</summary>
  
  ## Table necessary for all documents and the entry of CLI FOR registries
 
@@ -149,7 +149,7 @@ If you do not launch the Fast Start, it is necessary to manually populate the fo
 
 <details>
 
-  <summary>CURRENCIES (DIVISE) Click to expand!</summary>
+  <summary>CURRENCIES Click to expand!</summary>
  
  ## Table necessary for managing currency exchanges and accounting registrations
 
@@ -165,7 +165,7 @@ If you do not launch the Fast Start, it is necessary to manually populate the fo
 
 <details>
 
-  <summary>COMPANY (SOCIETA') Click to expand!</summary>
+  <summary>COMPANY  Click to expand!</summary>
  
  ## Table necessary for electronic invoicing and for company data in documents and prints
 
@@ -184,7 +184,7 @@ If you do not launch the Fast Start, it is necessary to manually populate the fo
 
 <details>
 
-  <summary>DOCUMENT TYPES (TIPI DOCUMENTO) Click to expand!</summary>
+  <summary>DOCUMENT TYPES Click to expand!</summary>
  
  ## General group table 'Document Types' not to be confused with the homonymous one in the administration group
 
@@ -195,9 +195,9 @@ If you do not launch the Fast Start, it is necessary to manually populate the fo
 
 <details>
 
-  <summary>PAYMENT TYPES (TIPI PAGAMENTO) Click to expand!</summary>
+  <summary>PAYMENT TYPES  Click to expand!</summary>
  
- ## Necessary for the registries and documents (deadlines) and accounting records (Partite)
+ ## Necessary for the registries and documents (deadlines) and accounting records 
 
 Ensure the presence of data in the **P.A. Code** field for the electronic invoice treatment
 
@@ -207,19 +207,19 @@ Pay attention to the connection with effect types (bottom right grid) otherwise 
 
 <details>
 
-  <summary>PAYMENT SOLUTIONS (SOLUZIONI DI PAGAMENTO) Click to expand!</summary>
+  <summary>PAYMENT SOLUTIONS Click to expand!</summary>
  
- ## Necessary for documents (deadlines) and accounting (Partite)
+ ## Necessary for documents (deadlines) and accounting 
 
 </details>
 
-## ADMINISTRATION TABLES (TABELLE AMMINISTRAZIONE) 
+## ADMINISTRATION TABLES 
 
-### Basic Accounting (Contabilità di base)
+### Basic Accounting 
 
 <details>
 
-  <summary>VAT RATES (ALIQUOTE IVA) Click to expand!</summary>
+  <summary>VAT RATES Click to expand!</summary>
  
  ## Necessary for accounting, documents, electronic invoicing
 
@@ -234,7 +234,7 @@ Pay attention to the connection with effect types (bottom right grid) otherwise 
 
 <details>
 
-  <summary>VAT REGISTERS (REGISTRI IVA) Click to expand!</summary>
+  <summary>VAT REGISTERS Click to expand!</summary>
  
  ## Necessary for accounting and VAT settlement
 
@@ -250,7 +250,7 @@ Pay attention to the connection with effect types (bottom right grid) otherwise 
 
 <details>
 
-  <summary>ACCOUNTING REGISTRATION NUMBERING (NUMERAZIONE REGISTRAZIONI CONTABILI) Click to expand!</summary>
+  <summary>ACCOUNTING REGISTRATION NUMBERING Click to expand!</summary>
  
  ## Necessary for accounting
 
@@ -263,7 +263,7 @@ Pay attention to the connection with effect types (bottom right grid) otherwise 
 
 <details>
 
-  <summary>ACCOUNT TYPES (TIPI CONTO) Click to expand!</summary>
+  <summary>ACCOUNT TYPES Click to expand!</summary>
  
  ## Necessary for the Chart of Accounts, accounting, and balance printing
 
@@ -280,7 +280,7 @@ Pay attention to the connection with effect types (bottom right grid) otherwise 
 
 <details>
 
-  <summary>CHART OF ACCOUNTS (PIANO DEI CONTI) Click to expand!</summary>
+  <summary>CHART OF ACCOUNTS Click to expand!</summary>
  
  ## Necessary for accounting and balance printing
 
@@ -297,7 +297,7 @@ Pay attention to the connection with effect types (bottom right grid) otherwise 
 
 <details>
 
-  <summary>GENERAL ACCOUNTING PARAMETERS (PARAMETRI DI CONTABILITA' GENERALE) Click to expand!</summary>
+  <summary>GENERAL ACCOUNTING PARAMETERS Click to expand!</summary>
  
  ## Necessary for accounting
 
@@ -313,7 +313,7 @@ Pay attention to the connection with effect types (bottom right grid) otherwise 
 
 <details>
 
-  <summary>GENERAL ACCOUNTING REASONS (CAUSALI DI CONTABILITA' GENERALE) Click to expand!</summary>
+  <summary>GENERAL ACCOUNTING REASONS  Click to expand!</summary>
  
  ## Necessary for accounting
 
@@ -330,11 +330,11 @@ Pay attention to the connection with effect types (bottom right grid) otherwise 
     
 </details>
 
-### Asset Management (Gestione cespiti)
+### Asset Management 
 
 <details>
 
-  <summary>ASSET PARAMETERS (PARAMETRI CESPITI) Click to expand!</summary>
+  <summary>ASSET PARAMETERS Click to expand!</summary>
  
  ## Necessary for asset management
 
@@ -344,7 +344,7 @@ Pay attention to the connection with effect types (bottom right grid) otherwise 
 
 <details>
 
-  <summary>ASSET CATEGORIES TABLE (Tabella CATEGORIE CESPITI) Click to expand!</summary>
+  <summary>ASSET CATEGORIES TABLE Click to expand!</summary>
  
  ## Necessary for accounting and asset management
 
@@ -357,7 +357,7 @@ Pay attention to the connection with effect types (bottom right grid) otherwise 
 
 <details>
 
-  <summary>ASSET PRE-CODE TABLE (Tabella PRECODICE CESPITE) Click to expand!</summary>
+  <summary>ASSET PRE-CODE TABLE Click to expand!</summary>
  
  ## Optional
 
@@ -367,11 +367,10 @@ Pay attention to the connection with effect types (bottom right grid) otherwise 
 
 </details>
 
-### Recipient Management (Gestione percipienti)
-
+### Recipient Management 
 <details>
 
-  <summary>TAX CODE TABLE (Tabella CODICE TRIBUTO) Click to expand!</summary>
+  <summary>TAX CODE TABLE Click to expand!</summary>
  
  ## Necessary for F24 management
 
@@ -382,7 +381,7 @@ Pay attention to the connection with effect types (bottom right grid) otherwise 
 
 <details>
 
-  <summary>WITHHOLDING TYPES TABLE (Tabella TIPI RITENUTA) Click to expand!</summary>
+  <summary>WITHHOLDING TYPES TABLE  Click to expand!</summary>
  
  ## Necessary for recipient management
 
@@ -394,13 +393,13 @@ Pay attention to the connection with effect types (bottom right grid) otherwise 
 
 ---
 
-## TREASURY TABLES (TABELLE TESORERIA)
+## TREASURY TABLES 
 
-### Active Portfolio (Portafoglio attivo)
+### Active Portfolio 
 
 <details>
 
-  <summary>STATUS EFFECTS TABLE (Tabella STATI EFFETTI) Click to expand!</summary>
+  <summary>STATUS EFFECTS TABLE Click to expand!</summary>
  
  ## Necessary for portfolio management
 
@@ -410,7 +409,7 @@ Pay attention to the connection with effect types (bottom right grid) otherwise 
 
 <details>
 
-  <summary>OUTSTANDING STATUS TABLE (Tabella STATI INSOLUTI) Click to expand!</summary>
+  <summary>OUTSTANDING STATUS TABLE Click to expand!</summary>
  
  ## Necessary for outstanding management linked to the portfolio
 
@@ -422,7 +421,7 @@ Pay attention to the connection with effect types (bottom right grid) otherwise 
 
 <details>
 
-  <summary>EFFECT TYPES TABLE (Tabella TIPI EFFETTI) Click to expand!</summary>
+  <summary>EFFECT TYPES TABLE Click to expand!</summary>
  
  ## Necessary for portfolio management
 
@@ -435,7 +434,7 @@ Pay attention to the connection with effect types (bottom right grid) otherwise 
 
 <details>
 
-  <summary>EFFECTS NUMBERING (NUMERAZIONE EFFETTI) Click to expand!</summary>
+  <summary>EFFECTS NUMBERING Click to expand!</summary>
  
  ## Necessary for portfolio management
 
@@ -448,7 +447,7 @@ Pay attention to the connection with effect types (bottom right grid) otherwise 
 
 <details>
 
-  <summary>PRESENTATION LIST NUMBERING (NUMERAZIONE DISTINTE DI PRESENTAZIONE) Click to expand!</summary>
+  <summary>PRESENTATION LIST NUMBERING Click to expand!</summary>
  
  ## Necessary for portfolio management
 
@@ -461,7 +460,7 @@ Pay attention to the connection with effect types (bottom right grid) otherwise 
 
 <details>
 
-  <summary>TYPES OF PRESENTATION LISTS OF EFFECTS TABLE (Tabella TIPI PRESENTAZIONE DISTINTE EFFETTI) Click to expand!</summary>
+  <summary>TYPES OF PRESENTATION LISTS OF EFFECTS TABLE  Click to expand!</summary>
  
  ## Necessary for portfolio management
 
@@ -472,11 +471,10 @@ Pay attention to the connection with effect types (bottom right grid) otherwise 
    
 </details>
 
-### Supplier Transfers (Bonifici fornitori)
-
+### Supplier Transfers 
 <details>
 
-  <summary>SUPPLIER PAYMENT NUMBERING (NUMERAZIONE PAGAMENTI FORNITORI) Click to expand!</summary>
+  <summary>SUPPLIER PAYMENT NUMBERING Click to expand!</summary>
  
  ## Necessary for managing payment lists
 
@@ -489,7 +487,7 @@ Pay attention to the connection with effect types (bottom right grid) otherwise 
 
 <details>
 
-  <summary>PAYMENT TYPES TABLE (Tabella TIPI PAGAMENTO) Click to expand!</summary>
+  <summary>PAYMENT TYPES TABLE Click to expand!</summary>
  
  ## Check: already managed in general tables
 
@@ -498,11 +496,11 @@ Pay attention to the connection with effect types (bottom right grid) otherwise 
    
 </details>
 
-### Invoice Advances (Anticipo fatture)
+### Invoice Advances 
 
 <details>
 
-  <summary>ADVANCE TYPES TABLE (Tabella TIPI ANTICIPO) Click to expand!</summary>
+  <summary>ADVANCE TYPES TABLE  Click to expand!</summary>
  
  ## Necessary for managing advances
 
@@ -514,7 +512,7 @@ Pay attention to the connection with effect types (bottom right grid) otherwise 
 
 <details>
 
-  <summary>ADVANCE INVOICE LIST NUMBERING (NUMERAZIONE DISTINTE ANTICIPO FATTURE) Click to expand!</summary>
+  <summary>ADVANCE INVOICE LIST NUMBERING Click to expand!</summary>
  
  ## Necessary for managing advance lists
 
@@ -529,7 +527,7 @@ Pay attention to the connection with effect types (bottom right grid) otherwise 
 
 <details>
 
-  <summary>FLOW TYPES TABLE (Tabella TIPI FLUSSO) Click to expand!</summary>
+  <summary>FLOW TYPES TABLE Click to expand!</summary>
  
  ## Necessary for cashflow management
 
@@ -541,7 +539,7 @@ Pay attention to the connection with effect types (bottom right grid) otherwise 
 
 <details>
 
-  <summary>FINANCIAL ACCOUNT TYPES TABLE (Tabella TIPI CONTO FINANZIARIO) Click to expand!</summary>
+  <summary>FINANCIAL ACCOUNT TYPES TABLE Click to expand!</summary>
  
  ## Necessary for cashflow management
 
@@ -553,7 +551,7 @@ Pay attention to the connection with effect types (bottom right grid) otherwise 
 
 <details>
 
-  <summary>DUE DATE TYPES TABLE (Tabella TIPI SCADENZA) Click to expand!</summary>
+  <summary>DUE DATE TYPES TABLE Click to expand!</summary>
  
  ## Optional for managing off-account due dates in cashflow
 
@@ -564,13 +562,13 @@ Pay attention to the connection with effect types (bottom right grid) otherwise 
 
 Check in the various document tables (Orders, DDT, RDA, etc.) which types you want to read in the cashflow calculation.
 
-## SALES TABLES (TABELLE VENDITA)
+## SALES TABLES 
 
-### Offers (Offerte)
+### Offers 
 
 <details>
 
-  <summary>PARAMETERS (PARAMETRI) Click to expand!</summary>
+  <summary>PARAMETERS  Click to expand!</summary>
 
   Define the [parameters](/docs/configurations/parameters/sales/offer-parameters) to be used in offers. 
 
@@ -580,7 +578,7 @@ Check in the various document tables (Orders, DDT, RDA, etc.) which types you wa
 
 <details>
 
-  <summary>ORDER TYPES TABLE (Tabella TIPI ORDINE) Click to expand!</summary>
+  <summary>ORDER TYPES TABLE Click to expand!</summary>
 
   Insert the [order types](/docs/configurations/tables/sales/sales-order-types) used; the mandatory data are: *Type*, *Description* and *[Numbering](/docs/configurations/tables/fluentis-numerations)*.     
   The criteria for creating various types may differ, for example:      
@@ -592,17 +590,17 @@ Check in the various document tables (Orders, DDT, RDA, etc.) which types you wa
 
 <details>
 
-  <summary>PARAMETERS (PARAMETRI) Click to expand!</summary>
+  <summary>PARAMETERS Click to expand!</summary>
 
   Define the [parameters](/docs/configurations/parameters/sales/sales-orders-parameters) to be used in customer orders. 
 
 </details>
 
-### Sales DDT (DDT di vendita)
+### Sales DDT 
 
 <details>
 
-  <summary>DELIVERY NOTE TYPES TABLE (Tabella TIPI DDT) Click to expand!</summary>
+  <summary>DELIVERY NOTE TYPES TABLE  Click to expand!</summary>
 
   Insert the [delivery note types](/docs/configurations/tables/sales/delivery-notes-type) used; the mandatory data are: *Type*, *Description* and *[Numbering](/docs/configurations/tables/fluentis-numerations)*.     
   The criteria for creating various types may differ, for example:      
@@ -614,17 +612,17 @@ Check in the various document tables (Orders, DDT, RDA, etc.) which types you wa
 
 <details>
 
-  <summary>PARAMETERS (PARAMETRI) Click to expand!</summary>
+  <summary>PARAMETERS Click to expand!</summary>
 
   Define the [parameters](/docs/configurations/parameters/sales/dn-parameters) to be used in customer DDT. 
   
 </details>
 
-### Sales Invoices (Fatture di vendita)
+### Sales Invoices 
 
 <details>
 
-  <summary>INVOICE TYPES TABLE (Tabella TIPI FATTURA) Click to expand!</summary>
+  <summary>INVOICE TYPES TABLE Click to expand!</summary>
 
   Insert the [invoice types](/docs/configurations/tables/sales/invoices-type) used; the mandatory data are: *Type*, *Description* and *[Numbering](/docs/configurations/tables/fluentis-numerations)*.     
   The criteria for creating various types may differ, for example:      
@@ -636,7 +634,7 @@ Check in the various document tables (Orders, DDT, RDA, etc.) which types you wa
 
 <details>
 
-  <summary>PARAMETERS (PARAMETRI) Click to expand!</summary>
+  <summary>PARAMETERS Click to expand!</summary>
 
   Define the [parameters](/docs/configurations/parameters/sales/sales-invoices-parameters) to be used in customer invoices. 
 
