@@ -1,5 +1,5 @@
 ---
-title: Document Types (Tipi documenti)
+title: Document Types
 sidebar_position: 5
 ---
 
@@ -9,7 +9,7 @@ The table is affected by the [**Fast Start**](/docs/guide/fast-start) procedure.
 If you intend to configure manually, refer to the checklist on the linked page.
 :::
 
-The table can be accessed through the path **Tables > General Settings > Document Types (Tabelle > Impostazioni generali > Tipi documenti)** and holds the possible types of documents that will be stored in the database and managed by the Fluentis Document Management System.
+The table can be accessed through the path **Tables > General Settings > Document Types** and holds the possible types of documents that will be stored in the database and managed by the Fluentis Document Management System.
 
 The form consists of a filter area and a results area. Once all desired filters are set, simply click the **Search** button to display the results within the results grid.
 
@@ -27,7 +27,7 @@ To insert a new document type, press the **New** button on the ribbon bar.
 
 #### Specific Fields
 
-**Maximum Size (MByte) (Dimensione massima (MByte))**: Defines the maximum size of the document that can be archived (usually set to 10).
+**Maximum Size (MByte)**: Defines the maximum size of the document that can be archived (usually set to 10).
 
 **Compression**: Enables the saving of a compressed file (e.g., .zip).
 

@@ -1,9 +1,9 @@
 ---
-title: Year - Letter Association (Associazione anno - lettera)
+title: Year - Letter Association
 sidebar_position: 1
 ---
 
-The table is opened through the path **Tables > General Settings > Month - Letter Association (Tabelle > Impostazioni generali > Associazione mese - lettera)** and allows you to enter the codes related to the various years that will then be used in lot codings.
+The table is opened through the path **Tables > General Settings > Month - Letter Association** and allows you to enter the codes related to the various years that will then be used in lot codings.
 
 It allows you to add new records or search for existing ones to view, modify, or delete them.
 

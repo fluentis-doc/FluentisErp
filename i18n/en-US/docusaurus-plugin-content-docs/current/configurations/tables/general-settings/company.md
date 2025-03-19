@@ -1,5 +1,5 @@
 ---
-title: Company (Società)
+title: Company 
 sidebar_position: 3
 ---
 
@@ -10,7 +10,7 @@ The table is affected by the [**Fast Start**](/docs/guide/fast-start) procedure.
 In case of manual configuration, refer to the checklist on the linked page.
 :::
 
-### INTRODUCTION (PREMESSA)
+### INTRODUCTION 
 
 The table, which is considered fundamental and necessary to manage any other data, allows for the coding of companies related to the database to which you are connected.
 
@@ -30,7 +30,7 @@ The concept of division can be understood as a company department or a branch of
 
 ---
 
-### MANAGEMENT TABLE (GESTIONE TABELLA)
+### MANAGEMENT TABLE
 
 The form that opens represents the list of companies present in the database. 
 Some fields present in the detail of the company itself are displayed in the grid for convenience, as illustrated below.
@@ -41,7 +41,7 @@ Some fields present in the detail of the company itself are displayed in the gri
 After creating the new company in this table, it is necessary to manage its visibility permissions for the various users through the ARM application and also to preliminarily define the company itself in ARM (menu Companies).
 :::
 
-### COMPANY REGISTRY DETAIL (DETTAGLIO ANAGRAFICA SOCIETA')
+### COMPANY REGISTRY DETAIL 
 
 the **Code** of the Company (which must correspond to the code defined in the ARM portal)
 
@@ -53,7 +53,7 @@ the **Code** of the Company (which must correspond to the code defined in the AR
 
 **Activity code**: that is the ATECO code of the main activity of the company.
 
-**Company's Country (Nazione della società)**: based on this field, Fluentis recognizes the localization and fiscal settings to be presented by default in the system.
+**Company's Country**: based on this field, Fluentis recognizes the localization and fiscal settings to be presented by default in the system.
 
 **Currency**: this is the currency in which the company’s official accounting is kept.
 
@@ -63,17 +63,17 @@ The country and currency of the company are already populated as they are requir
 
 **Language**: in this field, not mandatory but very important, the official language of the company is indicated. It is used as the default language to be reported in prints, as well as in the automatic valorization of descriptive strings in accounting.
 
-**Associated Registry (Anagrafica associata)**: this is an optional field that serves for two types of use: the first in case the company is a sole proprietorship, this is the connection to the registry that allows us to retrieve the data of the individual for tax declarations.
+**Associated Registry**: this is an optional field that serves for two types of use: the first in case the company is a sole proprietorship, this is the connection to the registry that allows us to retrieve the data of the individual for tax declarations.
 The second use: in case of two companies belonging to a group that have relations, and therefore intercompany documents, it is used for the data transfer from one company to the other; for example, so that the sales invoice of the first company automatically becomes a purchase invoice for the second company: to do this, therefore, the second company must know in which registry to look for the supplier to correctly address the document.
 The setting is also used for the procedure in the Controlling module > Closures > Interim > Consolidation, where the system neutralizes costs and revenues, receivables, and payables between the two companies part of the group, while aggregating "external" costs and revenues, receivables, and payables to obtain a consolidated balance sheet.
 
-**Address fields (Campi indirizzo)**: that is the address of the registered office.
+**Address fields**: that is the address of the registered office.
 
 **VAT office**: in this field, the city where the reference VAT office of the company is located is indicated.
 
-**REA Office/REA Registration Number (Ufficio REA/Numero di iscrizione REA)**: code of the province and registration number in the business register (necessary for electronic invoicing).
+**REA Office/REA Registration Number**: code of the province and registration number in the business register (necessary for electronic invoicing).
 
-**Subscribed Capital/Paid-in Capital (Capitale sottoscritto/Capitale versato)**: texts relating to the values of the corporate capital situation (necessary for electronic invoicing).
+**Subscribed Capital/Paid-in Capital**: texts relating to the values of the corporate capital situation (necessary for electronic invoicing).
 
 The **Members** and **State** fields, whether in liquidation or not, are also necessary, always for electronic invoicing.
 
@@ -87,8 +87,8 @@ In the list of possible regimes, code 61 VAT GROUP has been added. Selecting thi
 For XML files of incoming purchase invoices, with this setting a check is also carried out on the VAT number and then, if there are multiple companies in the database with the same VAT number, also on the tax code.
 :::
 
-**Decimal Places for Quantity Fields (Numero decimali per i campi qtà)**: which indicates how many decimal places to report in the prints for the quantity fields of the documents.
-The flag **Show currency symbol (Mosta simbolo valuta)** indicates whether or not to display the currency symbol (and fields equal to zero) in the accounting movement display forms.
+**Decimal Places for Quantity Fields**: which indicates how many decimal places to report in the prints for the quantity fields of the documents.
+The flag **Show currency symbol** indicates whether or not to display the currency symbol (and fields equal to zero) in the accounting movement display forms.
 
 Flag **Controlling Management** that enables the "advanced" procedures (full set of functions) of the controlling area for the company we are modifying.
 
@@ -99,7 +99,7 @@ Thus, during consolidation, the accounting movement of the subsidiary will be re
 The data managed in this processing, in any case, is the one managed in the controlling module and already elaborated by the related cost drivers, not the general accounting data.
 Only the accounting nature part will be transcoded, while the cost center movement (business center) will be reported unchanged, and the prerequisite for the reporting is, in fact, that the business center code is the same in both the master company and the subsidiary.
 
-#### Lower Section (Sezione inferiore)
+#### Lower Section
 
 At the bottom of the window, we find three expandable sections with additional data that can be entered; in this case, these are optional data that may also not be present, at least initially:
 
@@ -107,7 +107,7 @@ Within the **EDI** (Electronic Data Interchange) section, some company values us
 
 In the **Stamp charges** section, the value of stamp duty expenses and the value that triggers the obligation of its application in the invoice is indicated, the authorization number for virtual stamp duty, and the province of the finance authority. I remind you that in the company table, the minimum value of VAT-exempt operations that triggers the addition of stamp duty in the invoice should be entered, but this stamp duty expense must also be coded in the Expenses Types table and must be entered in the customer registry. Only in this way, if the amount in the invoice is VAT-exempt, the stamp duty expense will be added.
 
-**Ri.Ba Expander (Expander Ri.Ba.)**: contains the identifying data of the company for the banking telematics system: the SIA code (5 alphanumeric characters) and the CUC code (8 characters) for SEPA.
+**Ri.Ba Expander**: contains the identifying data of the company for the banking telematics system: the SIA code (5 alphanumeric characters) and the CUC code (8 characters) for SEPA.
 
 
 ### Division Grid, Default Banking Support, and Logo
@@ -166,11 +166,11 @@ In this tab, the configurations of the VAT group consisting of one or more of th
 
 Start Year/Period and End Year/Period: to define the validity of the setting and the existence of the VAT group status.
 
-Is parent company (E' società capogruppo): to be activated if the company in use is the parent company, that is, the one that imposes its VAT number on the others.
+Is parent company: to be activated if the company in use is the parent company, that is, the one that imposes its VAT number on the others.
 
-Combo box parent company (Combo box soc. Capogruppo): serves to link the company in use to the already existing parent company within the same database.
+Combo box parent company: serves to link the company in use to the already existing parent company within the same database.
 
-Parent Company Registry (Anagrafica Capogruppo): serves to select an external parent company, therefore not present within the same database as a company (for example, because managed with different software and therefore needs to be entered as a simple contact registry from which to read data such as the VAT number, etc.).
+Parent Company Registry: serves to select an external parent company, therefore not present within the same database as a company (for example, because managed with different software and therefore needs to be entered as a simple contact registry from which to read data such as the VAT number, etc.).
 
 
 **NOTE: Within the processing of LiPe (quarterly communication of VAT settlements), there is a flag to enable the VAT group mode for the declaration itself.**

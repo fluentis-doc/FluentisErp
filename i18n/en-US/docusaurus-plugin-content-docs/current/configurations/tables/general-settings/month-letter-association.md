@@ -1,9 +1,9 @@
 ---
-title: Month - Letter Association (Associazione mese - lettera)
+title: Month - Letter Association 
 sidebar_position: 1
 ---
 
-The table opens via the path **Tables > General Settings > Month - Letter Association (Tabelle > Impostazioni generali > Associazione mese - lettera)** and allows you to enter the codes related to the various months that will then be used in the batch coding.
+The table opens via the path **Tables > General Settings > Month - Letter Association** and allows you to enter the codes related to the various months that will then be used in the batch coding.
 
 It allows you to insert new records or to search for existing ones to view, modify, or delete them.
 
