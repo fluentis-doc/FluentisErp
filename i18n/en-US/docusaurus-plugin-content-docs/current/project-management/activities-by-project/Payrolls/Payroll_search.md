@@ -1,5 +1,5 @@
 ---
-title: Summary Search for Payslips (Ricerca Riepiloghi per cedolini)
+title: Totals for Payroll Search
 sidebar_position: 1
 ---
 

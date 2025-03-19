@@ -1,9 +1,9 @@
 ---
-title: Payroll values calculation
+title: Payroll Values Calculation
 sidebar_position: 3
 ---
 
-Project Management > Activity Procedures > Payroll values calculation
+Project Management > Activity Procedures > Payroll Values Calculation
 
 From this screen, it is possible to automatically calculate the data for payroll slips.
 
@@ -13,9 +13,9 @@ By default, the period to be calculated defaults to the current year and the mon
 
 Before proceeding with processing, it is necessary to carry out the following configurations:
 
-> - [Payroll Codes (Codici Paghe)](/docs/configurations/tables/employee/Payroll_codes)     
-> - [Activity Categories (Categorie di attività)](/docs/configurations/tables/project-management/task-category)    
-> - [Expense Types (Tipi Spese)](/docs/configurations/tables/general-settings/expenses-types)  
-> - [Employee Records (Anagrafiche dipendenti)](/docs/project-management/registers/employee/new-employee)  
-> - [Resource Records (Anagrafiche Risorse)](/docs/project-management/registers/resources-management/new-resource)  
-> - [Holiday Calendar (Calendario giorni festivi)](/docs/project-management/registers/employee/new-employee)
+> - [Payroll Codes](/docs/configurations/tables/employee/Payroll_codes)     
+> - [Task Categories](/docs/configurations/tables/project-management/task-category)    
+> - [Expense Types](/docs/configurations/tables/general-settings/expenses-types)  
+> - [Employee Registry](/docs/project-management/registers/employee/new-employee)  
+> - [Resource Records](/docs/project-management/registers/resources-management/new-resource)  
+> - [Non Working Days Calendar](/docs/project-management/registers/employee/new-employee)

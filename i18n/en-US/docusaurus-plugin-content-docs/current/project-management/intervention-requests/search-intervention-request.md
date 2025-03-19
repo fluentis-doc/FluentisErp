@@ -1,11 +1,11 @@
 ---
-title: Search Intervention Requests (Ricerca Richieste di Intervento)
+title: Search Intervention Requests 
 sidebar_position: 1
 ---
 
-In this form, it is possible to search for previously entered Intervention Requests (Richieste di Intervento).
+In this form, it is possible to search for previously entered Intervention Requests.
 
-*Specific button (Pulsante specifico)*
+*Specific button*
 
 > **Confirmation date**: allows you to enter a confirmation date for the selected intervention requests.
 
