@@ -1,5 +1,5 @@
 ---
-title: Notes (Note)
+title: Notes
 sidebar_position: 17.1
 ---
 

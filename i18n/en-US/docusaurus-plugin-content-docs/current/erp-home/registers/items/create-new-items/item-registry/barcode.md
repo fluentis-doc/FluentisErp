@@ -18,7 +18,7 @@ The form consists of a grid where a **New** barcode can be entered using the **I
 
 In the **Barcode type** field, you select, using the corresponding dropdown, the type of barcode you want to encode and in the **Barcode** field, the barcode code.
 
-*Specific buttons (Pulsanti specifici)*:
+*Specific buttons*:
 
 > **Validation**: pressing this button, the system checks that the code corresponds to the regulations mentioned earlier regarding the length that the code must have based on the type of code being entered;
-> **Delete Barcodes (Cancella codici barcode)**: allows you to delete a previously entered barcode.
+> **Delete Barcodes**: allows you to delete a previously entered barcode.

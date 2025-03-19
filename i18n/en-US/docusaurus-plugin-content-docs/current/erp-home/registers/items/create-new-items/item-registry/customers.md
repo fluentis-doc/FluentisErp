@@ -1,11 +1,11 @@
 ---
-title: Customers (Clienti)
+title: Customers 
 sidebar_position: 6
 ---
 
 In this tab, it is possible to associate the list of customers who have purchased the item.
 
-**Sampling Type (Tipo campionamento)**: combo to define the default method for sampling from a production order for that item (for example, one sample for every 100 pieces, or one sample for every 3 orders, etc.). The sampling types are previously coded in the table under **Tables > Logistics (Tabelle > Logistica)**;
+**Sampling Type**: combo to define the default method for sampling from a production order for that item (for example, one sample for every 100 pieces, or one sample for every 3 orders, etc.). The sampling types are previously coded in the table under **Tables > Logistics**;
 
 Upper Grid:
 
@@ -23,7 +23,7 @@ Upper Grid:
 
 **Final test**: in this field, relevant information regarding the type, year, code, and description of the final testing should be entered;
 
-**Variant**: in this field, any variant of that item can be entered, selecting it from the combo containing the variants previously coded in the **Item Variants (Varianti Articolo)** table;
+**Variant**: in this field, any variant of that item can be entered, selecting it from the combo containing the variants previously coded in the **Item Variants** table;
 
 **Notes**: section where additional notes can be entered.
 
