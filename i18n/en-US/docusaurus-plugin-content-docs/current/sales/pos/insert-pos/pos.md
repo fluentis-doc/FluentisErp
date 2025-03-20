@@ -1,11 +1,11 @@
 ---
-title: New POS (Nuovo POS)
+title: New POS 
 sidebar_position: 2
 ---
 
 The **Create POS** form opens via the path **Sales > POS > Create POS** or through the **New** button found in the *POS* search form.
 
-## **1. Required Data (Dati obbligatori)**
+## **1. Required Data**
 
 In the data entry form, the **Date** and **Year** are automatically proposed as the current values but can be modified.
 
@@ -17,13 +17,13 @@ To continue creating the sales invoice, the user must enter the required fields:
 
 - **Account**: using the [field help](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) or typing [directly](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) the data.
 
-:::danger[Attention (Attenzione)]
+:::danger[Attention]
 This field is not relevant for managing [**POS accounting**](/docs/sales/pos/pos-accounting). The accounting reason associated with POS accounting must define a **FIXED** customer account detailed with a **sub-account** code (for example, a "Customer revenues" account). The amount type on the reason line for the customer sub-account will be set as *Total Document / registration*.
 :::
 
 - **Register**: this is an alternative field to the previous *Account* that can be used to enter a *Contact* that is not matched to any sub-account.
 
-### 1.1 Document Totals (Totali documento)
+### 1.1 Document Totals 
 
 On the right side of the form, the document totals are present.
 
@@ -31,7 +31,7 @@ import SummariesDocumentTotal from './../../../import/sections/summaries-documen
 
 <SummariesDocumentTotal />
 
-#### Specific Buttons (Pulsanti specifici)
+#### Specific Buttons 
 > **Fiscal**: allows for the generation of the fiscal receipt by interfacing with a cash register (after configuring the connection using the specific fields).  
 > **Unload POS**: allows for the POS download, if the warehouse and reason have been entered for each item.
 
@@ -39,13 +39,13 @@ import SummariesDocumentTotal from './../../../import/sections/summaries-documen
 
 After selecting the required data in the upper section, the user can continue entering the following data [manually](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) or with the [field help](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection).
 
-When entering the **Account**, all data specific to the **Header** tab is automatically *proposed*, according to the data previously set in the [contact registry (anagrafica contatto)](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/accounting-data-intro), in the fields corresponding to its address and in the *sections*:  
+When entering the **Account**, all data specific to the **Header** tab is automatically *proposed*, according to the data previously set in the [contact registry](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/accounting-data-intro), in the fields corresponding to its address and in the *sections*:  
 
-- **Currency**: [Currency](/docs/guide/common/glossary/glossary-intro#currency), [Exchange Rate (Cambio)](/docs/guide/common/glossary/glossary-intro#currency-exchange), [Value Date (Data valuta)](/docs/guide/common/glossary/glossary-intro#currency-date).
-- **Country**: [Country](/docs/guide/common/glossary/glossary-intro#country), [Language (Lingua)](/docs/guide/common/glossary/glossary-intro#language), [Zone (Zona)](/docs/guide/common/glossary/glossary-intro#zone)
-- **Delivery**: [Shipping](/docs/guide/common/glossary/glossary-intro#shipment), [Carriage (Porto)](/docs/guide/common/glossary/glossary-intro#carriage), [Packing (Imballo)](/docs/guide/common/glossary/glossary-intro#packing), [Price List (Listino)](/docs/guide/common/glossary/glossary-intro#sales-price-list) and its [validity range (intervallo di validità)](/docs/guide/common/glossary/glossary-intro#validity-date)
+- **Currency**: [Currency](/docs/guide/common/glossary/glossary-intro#currency), [Exchange Rate](/docs/guide/common/glossary/glossary-intro#currency-exchange), [Value Date](/docs/guide/common/glossary/glossary-intro#currency-date).
+- **Country**: [Country](/docs/guide/common/glossary/glossary-intro#country), [Language](/docs/guide/common/glossary/glossary-intro#language), [Zone](/docs/guide/common/glossary/glossary-intro#zone)
+- **Delivery**: [Shipping](/docs/guide/common/glossary/glossary-intro#shipment), [Carriage](/docs/guide/common/glossary/glossary-intro#carriage), [Packing](/docs/guide/common/glossary/glossary-intro#packing), [Price List](/docs/guide/common/glossary/glossary-intro#sales-price-list) and its [validity range](/docs/guide/common/glossary/glossary-intro#validity-date)
 
-#### Other Fields (Altri campi)
+#### Other Fields 
 
 - **Pos status**: during creation, the POS does not have any active flags. The section includes the fields:
 > - **Printed** is activated when the printing of the receipt is launched.  
@@ -57,7 +57,7 @@ When entering the **Account**, all data specific to the **Header** tab is automa
 The flags can be removed with the restore operation procedure.
 :::
 
-- **Our reference/Your reference (Nostro riferimento/vostro riferimento)**: in these fields, an internal reference and a customer reference are usually indicated for the POS in question.  
+- **Our reference/Your reference**: in these fields, an internal reference and a customer reference are usually indicated for the POS in question.  
 
 import InitialNote from './../../../import/fields/initial-note.md'
 
@@ -68,15 +68,15 @@ import InitialNote from './../../../import/fields/initial-note.md'
 - **Project**: using the [field help](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) you can link the document to a project.  
 This association only works at the article header level.
 
-### 2.1 Payments (Pagamenti)
+### 2.1 Payments 
 
 The **Payment Terms** are automatically reported from the *Customer Registry > Payments tab* and can be modified/deleted by the user.
 
-#### Specific Button (Pulsante specifico)
+#### Specific Button 
 
 > **Delete Payments**: used to delete the selected payment lines.
 
-### 2.2 Discounts (Sconti)
+### 2.2 Discounts 
 
 Only the predefined discounts fetched from the *Customer Registry > Discounts tab* are proposed and can be modified/deleted by the user.
 
@@ -84,7 +84,7 @@ import TabDiscount from './../../../import/sections/tab-discount.md'
 
 <TabDiscount />
 
-### 2.3 Agents (Agenti)
+### 2.3 Agents
 
 Indicates the agent code and their commission for each article line. The code and percentage defined in the *Customer Registry > Agents tab* are proposed.
 
@@ -92,7 +92,7 @@ If the commission is not linked to the customer in their registry, the agent mus
 
 The same section will be reapplied for each article line in the relevant *Agents* tab.
 
-#### Specific Button (Pulsante specifico)
+#### Specific Button
 
 > **Delete agents**: allows for the deletion of selected agents.
 
@@ -109,7 +109,7 @@ import InsertMode from './../../../import/sections/insert-mode.md'
 To insert a **New Item** into the grid, simply position the cursor on the row to fill in the various data or use the **New** button in the ribbon bar.
 
 
-### 3.1 Required Data (Dati obbligatori)
+### 3.1 Required Data
 
 import RowNumber from './../../../import/fields/row-number.md'
 
@@ -141,7 +141,7 @@ import Quantity from './../../../import/fields/item-quantity.md'
 
 - **VAT** and **Origin amount** are calculated automatically, taking values from the VAT inclusive price.
 
-#### Specific Buttons (Pulsanti specifici)
+#### Specific Buttons 
 
 import PackagesManagement from './../../../import/procedure/packages-management.md'
 import UpdatePriceLists from './../../../import/buttons/update-price-lists.md'
@@ -149,13 +149,13 @@ import UpdatePriceLists from './../../../import/buttons/update-price-lists.md'
 > <PackagesManagement />
 > <UpdatePriceLists />
 
-### 3.2 Discounts/Price Lists (Sconti/Listini)
+### 3.2 Discounts/Price Lists
 
 import SalesTabDiscount from './../../../import/sections/sales-tab-discount.md'
 
 <SalesTabDiscount />
 
-### 3.3 Item Details (Dettaglio articolo)
+### 3.3 Item Details 
 
 This tab contains additional information related to the item.
 
@@ -173,17 +173,17 @@ import Vat from './../../../import/fields/item-vat.md'
 
 If this is not present, no data is proposed, but at the time of accounting, the value entered in the *Default Counterparty Cost/Revenue* field of the *Customer Registry > Accounting Data > Administrative tab* will be considered.
 
-- **Warehouse and Reason (Magazzino e causale)**: the warehouse and reason of reference are automatically proposed at the time of downloading the relevant items from the warehouse. The data is retrieved from the *POS Types* table.
+- **Warehouse and Reason**: the warehouse and reason of reference are automatically proposed at the time of downloading the relevant items from the warehouse. The data is retrieved from the *POS Types* table.
 
 - **Notes**: offers the ability to enter notes for each item.
 
-### 3.4 Agents (Agenti)
+### 3.4 Agents
 
 import SalesTabAgent from './../../../import/sections/sales-tab-agent.md'
 
 <SalesTabAgent />
 
-### 3.5 Analytical (Analitica)
+### 3.5 Analytical 
 
 import TabAnalytic from './../../../import/sections/tab-analytic.md'
 
@@ -191,23 +191,23 @@ import TabAnalytic from './../../../import/sections/tab-analytic.md'
 
 ## **Summaries**
 
-### 4.1 Final Item Discounts (Sconti finali articoli)
+### 4.1 Final Item Discounts 
 
 import SummariesFinalDiscount from './../../../import/sections/summaries-final-discount.md'
 
 <SummariesFinalDiscount />
 
-### 4.2 Final Expenses/Discounts/Increases (Spese/Sconti/Maggiorazioni finali)
+### 4.2 Final Expenses/Discounts/Increases
 
 import SummariesExpenses from './../../../import/sections/summaries-expenses.md'
 
 <SummariesExpenses />
 
-### 4.3 VAT Summaries (Riepiloghi IVA)
+### 4.3 VAT Summaries 
 
 The VAT summary of the document is proposed for each VAT code.
 
-### 4.4 Summary of Deadlines (Riepilogo scadenze)
+### 4.4 Summary of Deadlines 
 
 Represents the summary of deadlines of the document, for each *type* and *Payment Term*. 
  
@@ -217,5 +217,5 @@ Represents the summary of deadlines of the document, for each *type* and *Paymen
 - **Expiry date**: calculated due date. It can be manually forced, in which case the subsequent flag *Manually edit* is automatically activated.
 - **Collection charges**: Field in which the calculated collection expenses are reported.
 - **VAT**: to be applied to collection expenses (can also be set manually).
-- **Payment Reason (Causale pagamento)**: it is possible to directly enter a accounting reason in the invoice that gives rise to an automatic entry of collection/payment. NB pay attention to the reason template because it will use the accounts present even without sub-accounts, which is why the following field is present.
-- **Customer Account/Sub-account (Conto/sottoconto cliente)**: account used to collect/pay (cash or bank, for example) the deadline, overwriting the account present in the accounting payment (or collection) reason.
+- **Payment Template**: it is possible to directly enter a accounting reason in the invoice that gives rise to an automatic entry of collection/payment. NB pay attention to the reason template because it will use the accounts present even without sub-accounts, which is why the following field is present.
+- **Customer Account/Sub-account**: account used to collect/pay (cash or bank, for example) the deadline, overwriting the account present in the accounting payment (or collection) reason.

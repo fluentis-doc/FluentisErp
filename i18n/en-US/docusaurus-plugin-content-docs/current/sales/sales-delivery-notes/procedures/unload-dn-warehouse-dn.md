@@ -1,16 +1,16 @@
 ---
-title: DDT Shipment from Warehouse (Scarico DDT da magazzino)
+title: DDT Shipment from Warehouse 
 sidebar_position: 1
 ---
 
-The mass procedure is opened through the path **Sales > DDT > Procedures > DDT Shipment from Warehouse (Scarico DDT da magazzino)**.
+The mass procedure is opened through the path **Sales > DDT > Procedures > DDT Shipment from Warehouse**.
 
 This procedure allows you to execute/restore automatic shipment operations from the warehouse of the items present in the DDT.    
-Please note that this procedure can also be executed within the [Header](/docs/sales/sales-delivery-notes/insert-delivery-notes/sales-dn) of the single DDT using the button [Automatic Shipment (Scarico automatico)](/docs/sales/sales-delivery-notes/insert-delivery-notes/sales-dn). 
+Please note that this procedure can also be executed within the [Header](/docs/sales/sales-delivery-notes/insert-delivery-notes/sales-dn) of the single DDT using the button [Automatic Shipment](/docs/sales/sales-delivery-notes/insert-delivery-notes/sales-dn). 
 
 The mass procedure consists of three tabs, which we will analyze below.
 
-### Filter (Filtro)
+### Filter
 
 In this tab, the user has the ability to search for and transfer the DDT that have set the *Printed* flag internally and are therefore ready for shipment.     
 
@@ -19,7 +19,7 @@ In this tab, the user has the ability to search for and transfer the DDT that ha
 > **Search**: allows you to search for DDT to be shipped.  
 > **Unload**: allows you to execute the shipment of the selected DDT from the warehouse, based on the shipment algorithms and the parameters entered in the following *Parameters* tab.
 
-### Parameters (Parametri)
+### Parameters 
 
 In this form, the user can specify how to handle exceptions for the item lines.
 
@@ -35,7 +35,7 @@ In this case, if the DDT lines have not specified the warehouse and the reason f
 
 After selecting the DDT (from the *Filter* tab) and setting the parameters, the DDT can be shipped using the *Unload* button.
 
-### Summary (Riepilogativo)
+### Summary
 
 In this tab, the user has the ability to search, view, and cancel executed shipment operations that meet specific conditions for canceling warehouse registrations.
 

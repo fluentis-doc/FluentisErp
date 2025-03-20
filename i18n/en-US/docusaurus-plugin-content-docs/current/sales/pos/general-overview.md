@@ -1,13 +1,13 @@
 ---
-title: Introduction (Introduzione)
+title: Introduction 
 sidebar_position: 1
 ---
 
-The module is located in the path **Sales > POS (Vendite > POS)**.
+The module is located in the path **Sales > POS**.
 
 The POS allows you to manage sales directly at the checkout, with advanced tools for the creation and management of invoices, issuance of receipts, and automatic updating of inventory levels.
 
-**Main Features (Funzionalità Principali)**:
+**Main Features**:
 - Manual creation of invoices: The POS allows for the immediate generation of invoices, with automatic input of the customer's commercial information, such as agents, commissions, discounts, payments, and due dates.
 - Automatic entry of items: The system automatically retrieves information about items, including prices and discounts, directly from the registry or sales price lists, speeding up the invoicing process.
 - Management of non-coded items: It is possible to enter items not present in the registry by specifying only the description, useful for managing sales of occasional products or services.
@@ -19,5 +19,5 @@ The POS allows you to manage sales directly at the checkout, with advanced tools
 - Management via barcode: The POS system supports sales management and the creation of reports through barcode reading, speeding up checkout operations.
 
 Before using the module, it is necessary to fill in the following tables:
-> - [Numbering (Numerazioni)](/docs/configurations/tables/fluentis-numerations)    
-> - [POS Type (Tipo POS)](/docs/configurations/tables/sales/pos-types)
+> - [Numbering](/docs/configurations/tables/fluentis-numerations)    
+> - [POS Type](/docs/configurations/tables/sales/pos-types)
