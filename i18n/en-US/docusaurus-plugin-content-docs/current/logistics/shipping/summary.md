@@ -1,5 +1,5 @@
 ---
-title: Summaries (Riepiloghi)
+title: Summaries 
 sidebar_position: 6
 ---
 
@@ -13,10 +13,10 @@ These elements are applied to the entirety of the document and are not distribut
 To enter a new expense, it is necessary to fill in the following data:
 
 - **Line number**: indicates the line number of the entered expense, which is automatically filled;
-- **Expense type / Description (Tipo spesa / Descrizione)**: allows you to choose the predefined types of expenses in the table [Expense Types (Tipi spese)](/docs/configurations/tables/general-settings/expenses-types/);
+- **Expense type / Description**: allows you to choose the predefined types of expenses in the table [Expense Types](/docs/configurations/tables/general-settings/expenses-types/);
 - **Charge amount**: indicates the value of the expense expressed in the currency of the document;
 - **Charge description**: Detail of declarations: the possible valid declaration of intent for the customer is entered here;
-- **VAT**: allows you to select the VAT rate, predefined in the table [VAT Rates/Methods (Aliquote/Modalità IVA)](/docs/configurations/tables/finance/vat-rates/).
+- **VAT**: allows you to select the VAT rate, predefined in the table [VAT Rates/Methods](/docs/configurations/tables/finance/vat-rates/).
 
 On the right side of the form, the following fields are present:
 

@@ -1,5 +1,5 @@
 ---
-title: Shipment Search (Ricerca spedizioni)
+title: Shipment Search 
 sidebar_position: 2
 ---
 
@@ -13,4 +13,4 @@ import SearchForm from './../../import/sections/search-form.md'
 
 <SearchForm />
 
-To enter a new [Shipment (Spedizione)](/docs/logistics/shipping/shippings), you must press the **New** button.
+To enter a new [Shipment](/docs/logistics/shipping/shippings), you must press the **New** button.
