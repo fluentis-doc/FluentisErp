@@ -1,9 +1,9 @@
 ---
-title: Supplier Prices (Prezzi fornitore)
+title: Supplier Prices 
 sidebar_position: 1
 ---
 
-The form opens via the path **Purchases > Supplier Price Lists > Procedures > Supplier Prices (Acquisti > Listini fornitori > Procedure > Prezzi fornitore)**.
+The form opens via the path **Purchases > Supplier Price Lists > Procedures > Supplier Prices**.
 
 In this form, it is possible to consult the results of the [Import Supplier Prices and Items](/docs/applications/bizlink/price-item-supplier). All items imported via bizlink along with their respective prices are entered in this screen, from which they can be consulted and selected for processing.
 
@@ -15,16 +15,16 @@ The main data in the grid are:
 - **Supplier**: this data indicates the supplier from whom the catalog has been imported and will populate the *Preferential vendor* in the item registry once created.    
 - **Import date**: contains the date when the import occurred in Excel.       
 - **Starting validity date**: contains the validity start date entered in the Excel sheet.          
-- **Supplier Item Code/Description (Codice/Descrizione articolo fornitore)**: indicates the supplier item code which will also be reflected in the item registry, tab [Preferred Suppliers (fornitori preferenziali)](/docs/erp-home/registers/items/create-new-items/item-registry/preferential-vendors).    
+- **Supplier Item Code/Description**: indicates the supplier item code which will also be reflected in the item registry, tab [Preferred Suppliers](/docs/erp-home/registers/items/create-new-items/item-registry/preferential-vendors).    
 - **Units of Measure**: indicates the unit of measure used in the supplier's catalog.   
-- **Quantity (Qantità)**: indicates the quantity to which the **Price** of the item refers.  
-- **Discount category**: indicates the discount category to which the item belongs and must be matched with the discount category for purchases coded in Fluentis. The *Discount category* column is also present in the [Discount Policy Definition (Definizione politiche sconti)](/docs/purchase/price-control/definition), where discounts applied by the supplier can be consulted.     
-- **Subcategory discount**: code that specifies the subcategories of belonging; it is primarily used for very large price lists. Users who wish to also manage the discount subcategory must enter the same code present in this column in the *Detail discount category* of the [Discount Policy Definition (Definizione politiche sconti)](/docs/purchase/price-control/definition).
+- **Quantity**: indicates the quantity to which the **Price** of the item refers.  
+- **Discount category**: indicates the discount category to which the item belongs and must be matched with the discount category for purchases coded in Fluentis. The *Discount category* column is also present in the [Discount Policy Definition](/docs/purchase/price-control/definition), where discounts applied by the supplier can be consulted.     
+- **Subcategory discount**: code that specifies the subcategories of belonging; it is primarily used for very large price lists. Users who wish to also manage the discount subcategory must enter the same code present in this column in the *Detail discount category* of the [Discount Policy Definition](/docs/purchase/price-control/definition).
 
 
 
-:::important Remember (Ricorda)
-Before proceeding with the **Import prices from Supplier** procedure, it is necessary to indicate a correspondence between the *Discount category* used by the supplier and those coded in the table [Purchase Discount Category (Categoria sconto acquisti)](/docs/configurations/tables/purchase/category-discounts-price-management/); this matching must be done in the [Purchase/Sale Discount Category Correspondence (Corrispondenza categorie sconto acquisti/vendite)](/docs/purchase/price-control/correspondence) procedure. 
+:::important Remember 
+Before proceeding with the **Import prices from Supplier** procedure, it is necessary to indicate a correspondence between the *Discount category* used by the supplier and those coded in the table [Purchase Discount Category](/docs/configurations/tables/purchase/category-discounts-price-management/); this matching must be done in the [Purchase/Sale Discount Category Correspondence](/docs/purchase/price-control/correspondence) procedure. 
 :::
 
-Once the items to be imported have been identified, clicking the **Import** button in the ribbon bar will open the [Import from Supplier Prices (Importazione da Prezzi fornitore)](/docs/purchase/purchase-price-lists/procedures/import-price) procedure.
+Once the items to be imported have been identified, clicking the **Import** button in the ribbon bar will open the [Import from Supplier Prices](/docs/purchase/purchase-price-lists/procedures/import-price) procedure.

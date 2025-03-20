@@ -16,52 +16,52 @@ import Link from '@docusaurus/Link';
 
 <div className="cardContainer">
     <div className="card">
-###     <Link to="/docs/purchase/purchase-requests/general-overview">Purchase Requests (Richieste di acquisto)</Link>
+###     <Link to="/docs/purchase/purchase-requests/general-overview">Purchase Requests</Link>
         <p>Processing the request for materials to be purchased based on requests from other departments or reports of shortages.</p>
     </div>
     <div className="card">
-###     <Link to="/docs/purchase/offer-request/settings">Offer Requests (Richieste di offerta)</Link>
+###     <Link to="/docs/purchase/offer-request/settings">Offer Requests</Link>
         <p>Comparing supplier quotes to choose the best offer and turn it into a purchase order.</p>
     </div>
 </div>
 <div className="cardContainer">
     <div className="card">
-###     <Link to="/docs/purchase/purchase-orders/general-overview">Supplier Orders (Ordini fornitori)</Link>
+###     <Link to="/docs/purchase/purchase-orders/general-overview">Supplier Orders</Link>
         <p>Management and organization of the procurement process for goods and services from suppliers.</p>
     </div>
     <div className="card">
-###     <Link to="/docs/purchase/goods-reception/receipt-goods-form-settings-and-structure">Goods Reception (Ricevimento merci)</Link>
+###     <Link to="/docs/purchase/goods-reception/receipt-goods-form-settings-and-structure">Goods Reception</Link>
         <p>Recording the arrival of goods before creating the Purchase Delivery Note (DDT) or invoice.</p>
     </div>
 </div>
 <div className="cardContainer">
     <div className="card">
-###     <Link to="/docs/purchase/purchase-delivery-note/general-overview">Purchase Delivery Notes (DDT di acquisto)</Link>
+###     <Link to="/docs/purchase/purchase-delivery-note/general-overview">Purchase Delivery Notes</Link>
         <p>Tracking and documentation of the transfer of incoming goods and registration in the warehouse.</p>
     </div>
     <div className="card">
-###     <Link to="/docs/purchase/purchase-invoices/general-overview">Purchase Invoices (Fatture di acquisto)</Link>
+###     <Link to="/docs/purchase/purchase-invoices/general-overview">Purchase Invoices</Link>
         <p>Certification of the amount due by the company to a supplier for goods or services received, specifying costs, VAT, and payment conditions.</p>
     </div>
 </div>
 <div className="cardContainer">
     <div className="card">
-###     <Link to="/docs/purchase/purchase-price-lists/general-overview">Supplier Price Lists (Listini fornitori)</Link>
+###     <Link to="/docs/purchase/purchase-price-lists/general-overview">Supplier Price Lists</Link>
         <p>Management and updating of prices agreed with suppliers, automating the application of prices, discounts, and any customized conditions.</p>
     </div>
     <div className="card">
-###     Purchase Jobs (Commesse di acquisto)
+###     Purchase Jobs 
         <p>Management of purchase jobs based on previously negotiated contracts with the supplier.</p>
     </div>
 </div>
 <div className="cardContainer">
     <div className="card">
-###     Price Management (Gestione prezzi)
-        <p><Link to="/docs/purchase/price-control/definition" className="bold-link">Definition of discount policies (Definizione politiche sconti)</Link></p>
+###     Price Management 
+        <p><Link to="/docs/purchase/price-control/definition" className="bold-link">Definition of discount policies</Link></p>
         <p>Application of discounts associated with the supplier, item class, and/or discount categories.</p>
-        <p><Link to="/docs/purchase/price-control/formulas" className="bold-link">Update price/discount policy formulas (Formule di aggiornamento politiche prezzi/sconti)</Link></p>
+        <p><Link to="/docs/purchase/price-control/formulas" className="bold-link">Update price/discount policy formulas</Link></p>
         <p>Definition of rules for updating prices in purchase/sale lists.</p>
-        <p><Link to="/docs/purchase/price-control/correspondence" className="bold-link">Correspondence of discount categories purchase/sale (Corrispondenza categorie sconto acq//ven)</Link></p>
+        <p><Link to="/docs/purchase/price-control/correspondence" className="bold-link">Correspondence of discount categories purchase/sale</Link></p>
         <p>Matching the generic discount category to the discount conditions to be applied to your customers/suppliers.</p>
     </div>
 </div>

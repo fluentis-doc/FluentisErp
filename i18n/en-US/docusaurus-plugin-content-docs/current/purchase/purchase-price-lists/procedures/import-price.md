@@ -1,9 +1,9 @@
 ---
-title: Import from Supplier Prices (Importazione da Prezzi fornitori)
+title: Import from Supplier Prices 
 sidebar_position: 2
 ---
 
-The form opens via the path **Purchases Supplier Price Lists Procedures Import Supplier Prices (Acquisti  Listini fornitori  Procedure  Importazione prezzi fornitori)** and allows you to select items for import that were previously entered via the [Import Supplier Prices and Items](/docs/applications/bizlink/price-item-supplier). 
+The form opens via the path **Purchases Supplier Price Lists Procedures Import Supplier Prices** and allows you to select items for import that were previously entered via the [Import Supplier Prices and Items](/docs/applications/bizlink/price-item-supplier). 
 
 Through this procedure, it is possible to create or update the registries of the selected items and create a new supplier price list with the updated prices.
 
@@ -13,7 +13,7 @@ Before proceeding with the import of items, it is necessary to indicate a corres
 
 ### Filter
 
-In the main grid, the same results of the [Supplier Prices (Prezzi fornitore)](/docs/purchase/purchase-price-lists/procedures/supplier-price) form are displayed, filtered based on the data entered in the upper section. Items can be selected for definitive import by checking the box next to the *Item class*. Items that have already been encoded will have a different row color.   
+In the main grid, the same results of the [Supplier Prices](/docs/purchase/purchase-price-lists/procedures/supplier-price) form are displayed, filtered based on the data entered in the upper section. Items can be selected for definitive import by checking the box next to the *Item class*. Items that have already been encoded will have a different row color.   
 In the second grid, all items selected with the flag in the first grid are displayed. 
 
 *Specific buttons*:      
@@ -27,7 +27,7 @@ In this tab, it is possible to choose which information to include in the item r
 
 - **Create Article**: if active, allows the creation of the registry of the selected items if they do not exist.   
 
-- **Update Item Fields (Aggiorna campi articolo)**: allows you to select which data to overwrite in the registry being updated. In the case of creating a new item, the data related to the active flags will be included in the new registry. The data that can be updated includes: *Description*, *Commercial code*, *Barcode*, *Packaging*, *Weight*, *Nomenclature*, *Discount cat. purchase*, *Sales Discount Category (Categoria sconto Vendite)*, *Subcategory*, *Formula*, *Package to be returned*.   
+- **Update Item Fields**: allows you to select which data to overwrite in the registry being updated. In the case of creating a new item, the data related to the active flags will be included in the new registry. The data that can be updated includes: *Description*, *Commercial code*, *Barcode*, *Packaging*, *Weight*, *Nomenclature*, *Discount cat. purchase*, *Sales Discount Category*, *Subcategory*, *Formula*, *Package to be returned*.   
 
 - **Create Purchase Price List**: if active, allows the creation of the supplier price list for the selected items. The mandatory data for creating the price list are **Starting validity date** and **Currency**. Optionally, **Expiration Date** can also be entered.    
 
@@ -37,7 +37,7 @@ In the third column of parameters, there are some data used only for creating ne
     - **Class**: if the one indicated for the item in the results grid is not encoded in the system, the class indicated in this field will be used.       
     - **VAT**: indicates the VAT rate to be attributed to the item.  
     - **Item Measurement Unit**: indicates the main UoM to use for the item. 
-    - **Purchase/Sale Turnover (Fatturato acquisti/vendite)**   
+    - **Purchase/Sale Turnover**   
     - **Price Measurement Unit**: indicates the UoM to which the price of the supplier price list refers.
     - **Weight MU**: indicates the unit of measure to use for weights.     
     - **Formula**: indicates the [price update formula](/docs/purchase/price-control/formulas) to match with the item.   
