@@ -1,9 +1,9 @@
 ---
-title: Unloading Selection (Scarico spunta)
+title: Unloading Selection 
 sidebar_position: 5
 ---
 
-:::important Purpose (A cosa serve)
+:::important Purpose 
 The Unloading Selection procedure of Fluentis is a specialized module that allows for the management of the unloading process only for the lines that have been actually selected during picking operations. This functionality ensures a wave of efficiency and accuracy, allowing for the selection and recording of only the items that have been confirmed as picked from the warehouse.
 
 Users can search for the desired pickings through custom filters to quickly identify the relevant ones. Once selected, the interface allows for the creation of warehouse records for the selected lines, while a timely summary of the operations performed offers the possibility to view details and manage any rollbacks.
@@ -12,14 +12,14 @@ The unloading selection procedure not only reduces the risk of errors but also o
 :::
 
 :::note Note
-Unlike [Picking Unloading (Scarico picking)](/docs/logistics/picking/unload-picking), this procedure allows for the same functions but only for the selected lines.
+Unlike [Picking Unloading](/docs/logistics/picking/unload-picking), this procedure allows for the same functions but only for the selected lines.
 :::
 
 By selecting one or more pickings and pressing the **Unload** button, a window opens that allows for the movement of pickings for the selected lines.
 
 **Filter**
 
-In this tab, it is possible to search for the desired pickings based on the entered filters. It is also possible to specify the **Warehouse Registration Date (Data di registrazione di magazzino)**.
+In this tab, it is possible to search for the desired pickings based on the entered filters. It is also possible to specify the **Warehouse Registration Date**.
 
 *Specific button*:  
 > **Unload**: creates the warehouse records for the selected pickings.  
@@ -40,4 +40,4 @@ By selecting one or more rows in the search grid and pressing the *Delete Select
 > **Delete Selected Unloads**: deletes records derived from the selected rows in the results grid.  
 > **Restore Picking**: deletes records limited to the selected picking rows.  
 
-For anything not detailed in this document regarding the common operation of the forms, please refer to the following link [Common Features, Buttons, and Fields (Funzionalità, pulsanti e campi comuni)](/docs/guide/common).
+For anything not detailed in this document regarding the common operation of the forms, please refer to the following link [Common Features, Buttons, and Fields](/docs/guide/common).

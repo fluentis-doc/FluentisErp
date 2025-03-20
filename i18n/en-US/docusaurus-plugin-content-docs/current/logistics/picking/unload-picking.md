@@ -3,7 +3,7 @@ title: Unload picking
 sidebar_position: 4
 ---
 
-:::important What it is for
+:::important Purpose
 The Unload picking procedure in Fluentis is designed to facilitate the handling of items picked from the warehouse during the picking process. This functionality allows users to select one or more already created pickings and, through an intuitive interface, make the necessary warehouse entries for the correct unloading of items.
 
 Within the procedure, users can apply filters to select the desired pickings and specify the warehouse registration date. 
@@ -16,7 +16,7 @@ By selecting one or more pickings and pressing the **Unload** button, a window o
 
 **Filter**
 
-In this tab, it is possible to search for the desired pickings based on the applied filters. It is also possible to specify the **Warehouse registration date (Data di registrazione di magazzino)**.
+In this tab, it is possible to search for the desired pickings based on the applied filters. It is also possible to specify the **Warehouse registration date**.
 
 *Specific button*:  
 > **Unload**: creates the warehouse entries for the selected pickings.  
