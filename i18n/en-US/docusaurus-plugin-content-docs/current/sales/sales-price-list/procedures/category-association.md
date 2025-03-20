@@ -1,5 +1,5 @@
 ---
-title: Associating Customer Price Lists by Commercial Category (Associazione listini clienti per categoria commerciale)
+title: Associating Customer Price Lists by Commercial Category 
 sidebar_position: 2
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: Customer Order Line Details (Dettaglio righe Ordini cliente)
+title: Customer Order Line Details 
 sidebar_position: 4
 ---
 
@@ -7,8 +7,8 @@ This form is a grid that presents each row with an item present in a customer or
 The grid allows users to view, select, and modify various information using the buttons in the toolbar.     
 The first column of the grid is a selection box. Using this box, the user can select one or more rows to apply the available operations from the toolbar:
 
-**Forced Fulfillment (Evasione Forzata)**      
-Allows the forced fulfillment of the selected lines; this operation will insert the *Forced Fulfilled (Evaso forzato)* flag in the order lines.
+**Forced Fulfillment**      
+Allows the forced fulfillment of the selected lines; this operation will insert the *Forced Fulfilled* flag in the order lines.
 
 **Modify prices**     
 Allows modification of the unit price for the selected lines; a pop-up is opened to enter the price.

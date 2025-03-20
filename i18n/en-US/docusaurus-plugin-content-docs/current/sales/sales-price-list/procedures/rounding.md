@@ -3,7 +3,7 @@ title: Roundingss
 sidebar_position: 5
 ---
 
-The form can be opened through the path **Sales > Price Lists > Procedures > Roundings (Vendite > Listini di Vendita > Procedure > Arrotondamenti)**.
+The form can be opened through the path **Sales > Price Lists > Procedures > Roundings**.
 
 The procedure allows for searching the roundings and defining multiple codes for increasing/decreasing prices, updating discounts, and rounding policies for the obtained prices.
 
@@ -25,7 +25,7 @@ The rounding method is defined for price unit brackets.
 
 **Percent Completed**: is the percentage beyond which, if the ratio between the calculated prices (obtained by applying the variation to the starting price) and the starting price exceeds this percentage, the resulting rounded price will be highlighted in red as it is beyond the allowed rounding limit. In the case highlighted above, the “rounded price” should not exceed the “non-rounded price” by more than 5%.
 
-**VALID VALUES FOR THE MASK (VALORI VALIDI PER IL MASK)**
+**VALID VALUES FOR THE MASK**
 
 The MASK is a rule defined by the user by composing a text using the following language:
 
@@ -47,7 +47,7 @@ The MASK is a rule defined by the user by composing a text using the following l
 
 The following are examples which can explain how to create a rule:
 
-| Initial Price (Prezzo ini.) | Non-Rounded Price (Prezzo non arr.) | Mask (Mask) | Rounded Price (Prezzo arrotondato) |
+| Initial Price | Non-Rounded Price | Mask | Rounded Price |
 | --- | --- | --- | --- |
 | 16.16 | 16.968 | [=][=][=],[=][+] | 16.98 |
 | 16.16 | 16.968 | [=][=][=],[=][=] | 16.97 |
