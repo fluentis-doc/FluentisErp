@@ -3,6 +3,17 @@ title: Patch notes Versione 608
 sidebar_position: 2
 ---
 
+### Patch 608.1-0071 - 13/03/2025
+> - Add ConnectionTimeout to BizLink Service  FPS Ticket ID: #TT00803/25
+> - SD – Fix AgentSettlement calculation-sales invoices with more agents case(#TT01134/25)
+> - SD - Fix SalesOrder and SalesDeliveryNote execution-custom problem (#TT01227/25)
+> - revisione campo ‘Codice fiscale sostituto subentrante’
+> - MES - Corretto bug nella registrazione delle dichiarazioni di produzione. (#TT00352/25)
+> - MS - Corretto bug nel calcolo delle ore inizio e fine delle fasi nella procedura di schedulazione a capacità finita. (#TT00820/25)
+> - FI - nelle scritture di assestamento, abilitazione della cancellazione da tastiera delle righe selezionate. (#TT01093/25)
+> - FI – Registrazioni contabili: revisione del messaggio di avviso quando si apre una registrazione contabile che ha già la sua scheda cespiti aperta. (TT01023/25)
+> - WMS – In gestione spunta del WMS, ora è possibile andare in negativo per articoli gestiti a lotti se nei parametri iniziali di magazzino vengono attivati i relativi flag.  (#TT05102/24)
+
 ### Patch 608.1-0070 - 28/02/2025
 > - FI – Stampa liquidazione IVA annuale: risolto errore nella stampa della liquidazione IVA annuale quando veniva attivato il flag nei parametri ‘Memorizza il numero dell'ultima pagina’ (TT00200/25)
 > - PR - Campo "Progresso" nel modulo Gestione della liquidità ( TT02060/24). Changes were made to field progressive of form Gestione della liquidità. The profile can be affected by the changes.

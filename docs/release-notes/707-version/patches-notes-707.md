@@ -3,6 +3,29 @@ title: Patch notes Versione 707
 sidebar_position: 1
 ---
 
+### Patch 707.1-0024 - 13/03/2025
+> - SD – Stampa Lista Fatture – corretta anomalia in ordinamento per numero (#TT01135/25)
+> - FI – Stampa Lista Partite – corretta anomali che impediva la stampa (#TT01205/25)
+> - PM: Ricerca attività - aggiunta gestione ricerca per data anche per le attività senza data inizio-fine con sola data principale (#TT00809/25)
+> - Revisione campo ‘Codice fiscale sostituto subentrante’
+> - Workflow - Corretta anomalia in fase di caricamento dati sulle tab (#TT01164/25)
+> - MS - Corretto bug nel calcolo delle ore inizio e fine delle fasi nella procedura di schedulazione a capacità finita. (#TT00820/25)
+> - Hide confirm button and align validation login for settings page on Supervisor scheduler service
+> - FI - nelle scritture di assestamento, abilitazione della cancellazione da tastiera delle righe selezionate. (#TT01093/25)
+> - FI - revisione gestione rollback della procedura Ammortamenti fiscali. (#TT01167/25)
+> - WMS – Migliorato l’help lotti del WMS che ora visualizza i lotti filtrati per l’articolo selezionato.  (#TT01083/25)
+> - WM Picking: Creazione DDT/Fattura - Sono stati tolti i parametri di raggruppamento nella procedura e sono stati uniformati alle procedure di raggruppamento che utilizzano i parametri di raggruppamento (in Parametri Area Vendita Raggruppamento DDT o Raggruppamento Fattura la procedura Creazione DDT/Fattura da Picking. (rif. ticket 1315/25 e 1299/25)
+> - WM – Stampa inventario – Modificato layout stampa inventario(#TT00658/25)
+> - MES – Corretto il layout del report Foglio di lavoro presente nel filtro degli ordini di produzione. (#TT01027/25)
+> - SCS – Corretto errore nella registrazione di un Rientro di Conto lavoro che, in caso di rollback e successivo carico di un rientro valorizzato, non movimentava a magazzino gli articoli gestiti a lotti (#TT01040/25).
+> - MES - Corretto bug nelle dichiarazioni di produzione. Nel caso in cui si crei un avanzamento con quantità zero e poi si vada a cambiare la quantità, ora viene mostrato il messaggio che chiede se ricalcolare o meno i materiali. (#TT00374/25)
+> - SCM – Corretto errore generico che si verificava in fase di caricamento automatico di una Fattura di Acquisto a magazzino (#TT00660/25).
+> - FI - ottimizzazione procedure di creazione automatica intrastat, revisione gestione natura transazione per note di credito senza data riferimento fattura (#TT01061/25)
+> - WM – bug fix per gestione prototipi
+> - MS – added progress bar for release planned orders (#TT01062/25)
+> - PR - nella form Controllo rimesse del modulo Rischio cliente, revisione gestione report di stampa. (#TT01136/25)
+> - FI – Registrazioni contabili: revisione del messaggio di avviso quando si apre una registrazione contabile che ha già la sua scheda cespiti aperta. (TT01023/25)
+
 ### Patch 707.1-0023 - 07/03/2025
 > - FI - Corretto problema del mancato riporto dei campi dl paese d’origine, paese di provenienza e provincia di destinazione negli elenchi intrastat. Corretto mancato riporto del campo modo trasporto nella stampa. Rif. #TT05326/24
 > - ARM – Busines Object Browser - fix filter on View/Table function names
