@@ -1,4 +1,4 @@
 ---
-title: Sending Documents to SDI (Invio a SDI dei documenti)
+title: Sending Documents to SDI 
 sidebar_position: 8
 ---

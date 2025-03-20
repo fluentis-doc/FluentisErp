@@ -1,18 +1,18 @@
 ---
-title: Setting Contact Records (Impostazione anagrafiche contatti)
+title: Setting Contact Records 
 sidebar_position: 3
 ---
 
 In the customer contact records, it will be necessary to set up electronic invoicing management in order to correctly register in Fluentis the Recipient Code or the PEC address of the clients receiving the B2B invoice file or, in the case of registering a Public Administration, the related Office Code.
 
-## B2B Invoicing (Fatturazione B2B)
+## B2B Invoicing 
 
-To configure contacts, access *Contacts Register*, search for and pull up the contact record for which you wish to set up electronic invoicing management, and in the *Accounting Data > Tax Information (Dati contabili > Informazioni fiscali)* panel, check the **Electronic invoicing** box and the related fields:     
+To configure contacts, access *Contacts Register*, search for and pull up the contact record for which you wish to set up electronic invoicing management, and in the *Accounting Data > Tax Information* panel, check the **Electronic invoicing** box and the related fields:     
 - **Company name**: this field should remain empty
 - **Description**: this field should remain empty
 - **Signed Electronic invoice**: this check refers to the ability to manage signed electronic invoices FOR THE SELECTED CONTACT. The value set at the issuer company level in the Electronic Invoicing Configuration section is shown and can be varied from the general setting entered, creating an exception for the contact in management. If the check is set, at the time of issuing the electronic invoice, it will be possible to export the XML file, sign it with appropriate external supports and import it formatted in Fluentis, then proceeding with the issuance phases. This option is discretionary for invoices issued to clients residing in Italian territory, while it is MANDATORY for documents issued to non-resident, non-established, non-identified subjects in Italy for whom it is intended to send documents through the SdI.
 - **Attachment in Electronic invoice**: this check refers to the possibility of sending electronic invoices with the PDF of the invoice attached. The value set at the issuer company level in the Electronic Invoicing Configuration section is shown and can be varied from the general setting entered, creating an exception for the contact in management. If the check is set, an XML file will be generated at the time of issuing the electronic invoice to which the related PDF file will be attached.
-- **ARM Transformation for PDF Invoice Creation (Trasformazione ARM per creazione PDF fattura)**: in this field, the reference for the ARM transformation related to the creation of the invoice PDF file can be indicated, for example, the same process that might be invoked for emailing the invoice to the client. If not indicated and if the check "Electronic Invoicing with PDF Attached" is set, the transformation indicated in the Electronic Invoicing Configuration for Companies section is used for the creation of the PDF. 
+- **ARM Transformation for PDF Invoice Creation**: in this field, the reference for the ARM transformation related to the creation of the invoice PDF file can be indicated, for example, the same process that might be invoked for emailing the invoice to the client. If not indicated and if the check "Electronic Invoicing with PDF Attached" is set, the transformation indicated in the Electronic Invoicing Configuration for Companies section is used for the creation of the PDF. 
 - **Code Type**: this field identifies the channel to be used for sending electronic documents; filling this field also requires the correct definition of the RECIPIENT CODE and EMAIL fields, in order to create the invoice file with the correct addressing. Based on the choice of this field, the gray area of the ELECTRONIC INVOICING section must be filled out according to specific rules. The values it can assume are:
 > - **Channel ES**: the choice of this value indicates the intention to use a known recipient code or an email address as the method of sending, or to delegate the SdI to determine the channel registered by the client. Specifically, assigning this value in the records requires filling in the RECIPIENT CODE and EMAIL fields according to the rules indicated below:
 
@@ -38,9 +38,9 @@ To configure contacts, access *Contacts Register*, search for and pull up the co
 | Non-resident, non-established, not identified in Italy | XXXXXXX (7 "X") | Empty | Customer's company name | Start of relationship | End of validity of the channel used | 
         
 
-## Public Administration Invoicing (Fatturazione pubblica amministrazione)
+## Public Administration Invoicing 
 
-In the case of registering a Public Administration, it is necessary to access *Contacts Register*, search for and pull up the contact record for which you wish to set up electronic invoicing management, and in the *Accounting Data > Tax Information (Dati contabili > Informazioni fiscali)* panel, check the **Public administration** flag. Concurrently with selecting the check, filling in the **Public administration** grid is required.
+In the case of registering a Public Administration, it is necessary to access *Contacts Register*, search for and pull up the contact record for which you wish to set up electronic invoicing management, and in the *Accounting Data > Tax Information* panel, check the **Public administration** flag. Concurrently with selecting the check, filling in the **Public administration** grid is required.
 The fields of the grid must be filled out as follows:         
 - **Office code**: Code of the public office receiving the invoice
 - **Office name**: Description of the office code field to be filled with the name of the public office

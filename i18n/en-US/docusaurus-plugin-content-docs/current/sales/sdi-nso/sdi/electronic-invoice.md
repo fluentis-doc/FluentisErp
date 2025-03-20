@@ -1,5 +1,5 @@
 ---
-title: What is Electronic Invoicing (Cos'è la fatturazione elettronica)
+title: What is Electronic Invoicing 
 sidebar_position: 1
 ---
 

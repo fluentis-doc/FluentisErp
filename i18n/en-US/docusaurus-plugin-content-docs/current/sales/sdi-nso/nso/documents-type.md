@@ -1,9 +1,9 @@
 ---
-title: Document Types (Tipi documento)
+title: Document Types 
 sidebar_position: 2
 ---
 
-## Order (Ordine)
+## Order 
 
 The Order is the Document representing the purchase order of goods and services issued by the 
 Customer (Sender) and addressed to the Supplier (Recipient). An Order consists of one or more 
@@ -28,7 +28,7 @@ to be initiated is related to a previous process and should never be used instea
 other tools (Revocation Order, Replacement Order, and Acknowledgment Order) specifically 
 designed to revoke, replace (or supplement), confirm, or reject another Document.
 
-## Response (Risposta)
+## Response
 
 The Response is the Document through which the Supplier (Sender) accepts, declines, or proposes changes to an Order received from the Customer (Recipient). 
 **The Response is prepared in the format described by the PEPPOL Order Response transaction 3.0 specification.**     
@@ -46,7 +46,7 @@ initial Order.
 
 The Response to a revoked Order has no effect.
 
-## Acknowledgment Order (Ordine di Riscontro)
+## Acknowledgment Order
 
 The Acknowledgment Order is the Document through which the Customer (Sender) confirms, declines, or replaces (Replacement Acknowledgment Order) a pre-agreed Order or a Response sent by 
 the Supplier (Recipient). 
@@ -60,7 +60,7 @@ complete with all order lines, that contains the indication that it is a “Repl
 Replacement Acknowledgment Orders and Acknowledgment Orders for Denial, respectively, replace and cancel both the indicated pre-agreed Order or Response and all other Replacements and Revocations already transmitted, referring to the related initial Order.      
 The Acknowledgment Order related to a revoked pre-agreed Order has no effect.
 
-## PRE-Agreed Order (Ordine PRE-Concordato)
+## PRE-Agreed Order 
 
 The Pre-agreed Order is the Document representing the purchase order of goods and services, 
 issued by the Supplier (Sender) instead of the Customer (Recipient), in agreement with the latter. 

@@ -1,5 +1,5 @@
 ---
-title: Introduction (Introduzione)
+title: Introduction 
 sidebar_position: 1
 ---
 
@@ -15,7 +15,7 @@ NSO acts as a sort of intelligent postman that manages the exchange of purchase 
 NSO receives Messages and checks that they are correctly formatted. If this verification is successful, it forwards them to the respective Recipients and, with appropriate system Notifications, informs the Senders about the outcome of the verification and delivery.  
 If the Client or Supplier interacts with NSO through an Intermediary, the former assume the role of Sender or Recipient, while the Intermediary assumes the role of Transmitter and/or Receiver.
 
-## NSO Messages (Messaggi NSO)
+## NSO Messages 
 
 The NSO system will process "Messages," meaning files composed of:
 - Transmission envelope, the part of the Message that contains the necessary data for correct addressing; 

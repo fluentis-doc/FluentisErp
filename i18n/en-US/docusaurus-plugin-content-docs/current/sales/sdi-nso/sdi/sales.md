@@ -1,5 +1,5 @@
 ---
-title: Management of Active Cycle (Gestione del ciclo attivo)
+title: Management of Active Cycle 
 sidebar_position: 6
 ---
 

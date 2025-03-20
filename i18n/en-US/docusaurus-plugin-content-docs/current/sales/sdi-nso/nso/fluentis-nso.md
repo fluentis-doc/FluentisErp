@@ -3,7 +3,7 @@ title: Fluentis NSO
 sidebar_position: 5
 ---
 
-## Configuration (Configurazione)
+## Configuration 
 
 The first configuration to make is to set the Electronic Order Transmission flag in *Home > Tables > General Settings > Electronic Document Configuration*.        
 In the Electronic Document Configuration table, it is possible to define for each company the use of receiving and transmitting electronic orders with public administration; in the same table, it is also possible to identify how certain transactions should be executed.        
@@ -18,7 +18,7 @@ The pre-coded tables:
 - Process Nature.
 - Document Nature.
 
-## Tables to Configure (Tabelle da configurare)
+## Tables to Configure 
 
 The tables to configure are as follows:     
 
@@ -29,7 +29,7 @@ The tables to configure are as follows:
 - Configuration of discount types, where the Fluentis discount types are associated with the PEPPOL discount codes.
 - Configuration of expense types, where the Fluentis expense types are associated with the PEPPOL expense codes.
 
-## Pre-coded Table Data (Dati delle tabelle Precodificate)
+## Pre-coded Table Data
 
 It is necessary to identify the type of order, using the values from the corresponding code list provided by the PEPPOL standard, which includes the following two codes: 
 - “220” for purchase orders in the strictest sense; 
@@ -76,7 +76,7 @@ the subtype order code is indicated in the “SpecialTerms” field of the “De
 
 <cac:DeliveryTerms> <cbc:SpecialTerms>220#OFR</cbc:SpecialTerms> </cac:DeliveryTerms>
 
-## Article Code (Codice Articolo)
+## Article Code 
 
 The identification of the product (good or service) within each order line occurs not only through the name (element “Name”, which is mandatory) and the description (element “Description”), but also by using identifying codes. 
 In particular, the layouts of the aforementioned documents provide, primarily, two types of code: 
@@ -108,7 +108,7 @@ For fast-moving consumer goods, it is suggested to populate the element
 For pharmaceutical products with the Marketing Authorization Code (AIC) issued by the Italian Medicines Agency (AIFA), the element 
 “SellersItemIdentification/ID” must always be populated with the corresponding AIC code.
 
-## Merchandise Group (Gruppo Merceologico)
+## Merchandise Group 
 
 For each product, within the relevant order line, it is possible to specify one or more classification codes by populating the “ItemClassificationCode/ID” field of the “CommodityClassification” element. 
 The value to be indicated must be taken from a unique classification system selected from those present in the appropriate code list provided by the PEPPOL standard, as shown in the following example:       
@@ -137,7 +137,7 @@ It is recommended to use at least one of the classification systems listed in th
 
 In Fluentis, these codes are to be assigned to the barcode codes table associated with the item.     
 
-## Unit of Measure (Unità di misura)
+## Unit of Measure 
 
 In the order lines, it is necessary to indicate the quantity of the product by specifying a unit of measure among those indicated in the appropriate Code List provided by the PEPPOL standard, as shown in the following example:     
 
@@ -186,7 +186,7 @@ In the following table, the codes of the units of measure that are recommended t
 | CUR | Curie | Radioactivity |
 | MCU | Millicurie | Radioactivity |
 
-## Delivery Destination (Destinazione merce)
+## Delivery Destination 
 
 The ID indicates the code attributed to the location where the supply must be executed. This code must always be included if the delivery location is an institutional address of the Client that has been associated with a unique identifier made available to the Supplier.          
 
@@ -197,7 +197,7 @@ In order to facilitate the supply of goods to the institutional offices of publi
 
 In Fluentis, the Delivery Destination is recognized via this ID code and is searched as a coded destination in the customer by assigning to the contact nickname in Fluentis the last 7 characters of the code that follow the – of the NSO delivery point.
 
-## PEPPOL Customer Orders (PEPPOL Ordini clienti)
+## PEPPOL Customer Orders 
 
 In Bizlink applications, there is the PEPPOL Customer Orders form to view all incoming messages from NSO and outgoing for NSO.         
 After selecting a row of an order, pressing the “View” button on the ribbon bar opens another form **SDI Document Register**.       

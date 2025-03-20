@@ -1,5 +1,5 @@
 ---
-title: NSO Messages (Messaggi NSO)
+title: NSO Messages 
 sidebar_position: 4
 ---
 
@@ -12,7 +12,7 @@ Therefore, a single entity can issue one and only one Document with the same ide
 
 All valid Messages (and, therefore, all Documents) can be searched on the Commercial Credit Platform (PCC) both via the Identification Triplet and via the IdT.
 
-## NSO Validation States (Stati validazione NSO)
+## NSO Validation States 
 
 Based on the outcome of the requested operation, NSO can send the Transmitter one or more of the following system Notifications, which report the Transaction Identifier (IdT) to which they refer. In both categories of scenarios (transmission and validation), if the Message does not pass validation, NSO sends the Transmitter the following system Notification: 
 - Rejection Notification: indicates to the Transmitter that the Message has not passed the validation checks.

@@ -14,4 +14,4 @@ The **Default** flag indicates that this type is default among all.
 The **Itself** flag allows for considering a customized price list in the customer registry when the association occurs.     
 
 At this point, the group of price list types present in the association is valid for the inserted commercial category.
-If it is necessary to massively associate these price list types in the customer registry, use the procedure [Customer Price List Association by Commercial Category (Associazione listini clienti per categoria commerciale)](/docs/sales/sales-price-list/procedures/category-association).
+If it is necessary to massively associate these price list types in the customer registry, use the procedure [Customer Price List Association by Commercial Category](/docs/sales/sales-price-list/procedures/category-association).

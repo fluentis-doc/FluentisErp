@@ -1,5 +1,5 @@
 ---
-title: Management of the Passive Cycle (Gestione del ciclo passivo)
+title: Management of the Passive Cycle 
 sidebar_position: 7
 ---
 

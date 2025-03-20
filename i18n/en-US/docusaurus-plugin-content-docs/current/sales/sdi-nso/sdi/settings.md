@@ -1,5 +1,5 @@
 ---
-title: Technical Settings (Impostazioni tecniche)
+title: Technical Settings 
 sidebar_position: 9
 ---
 
