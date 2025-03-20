@@ -3,15 +3,15 @@ title: Return delivery notes valorization
 sidebar_position: 4
 ---
 
-The procedure opens through the path **Purchases > Purchase Invoices > Procedures > Return delivery notes valorization (Acquisti > Fatture di acquisto > Procedure > Valorizzazione DDT di rientro)**.
+The procedure opens through the path **Purchases > Purchase Invoices > Procedures > Return delivery notes valorization**.
 
 The procedure allows the creation of invoices from return DDT.
 
-### Return Filter (Filtro rientri)
+### Return Filter
 
 In this tab, the user has the opportunity to enter filters to search for return DDT to be valued. It is possible to filter by: supplier, return type, document number, date, item, and project.
 
-- **Invoice number and date (Numero e data fattura)**: allows you to specify the number and date of the invoice that will be created.
+- **Invoice number and date**: allows you to specify the number and date of the invoice that will be created.
 
 - **Total**: allows you to see the total amount of the selected returns for valuation.
 
@@ -20,7 +20,7 @@ In this tab, the user has the opportunity to enter filters to search for return 
 > **Valorization of Subcontractor Returns**: allows for the valuation of the selected returns in the grid, based on the parameters entered in the subsequent *Parameters* tab.
 
 
-### Parameters (Parametri)
+### Parameters 
 
 *Invoice type*
 
@@ -30,10 +30,10 @@ In this tab, the user has the opportunity to enter filters to search for return 
 
 *Return references*
 
-- **Maintain return references**: if this flag is set, in the [Items tab (Articoli)](/docs/purchase/purchase-invoices/insert-purchase-invoice/purchase-invoice) of the invoice, a *Note item (Articolo nota)* will be displayed that will take the references from the return from which the invoice was created. The content of this note must be entered in the *Description* field, according to the parameters described in the label.
+- **Maintain return references**: if this flag is set, in the [Items tab](/docs/purchase/purchase-invoices/insert-purchase-invoice/purchase-invoice) of the invoice, a *Note item* will be displayed that will take the references from the return from which the invoice was created. The content of this note must be entered in the *Description* field, according to the parameters described in the label.
 
-:::tip Remember (Ricorda)
-For summary invoicing, it is necessary to set the grouping conditions to be used in the [Invoice Grouping Parameters (Parametri raggruppamento fatture)](/docs/configurations/parameters/purchase/invoice-grouping/). 
+:::tip Remember 
+For summary invoicing, it is necessary to set the grouping conditions to be used in the [Invoice Grouping Parameters](/docs/configurations/parameters/purchase/invoice-grouping/). 
 :::
 
 *Specific button*: 
@@ -42,7 +42,7 @@ For summary invoicing, it is necessary to set the grouping conditions to be used
 
 After selecting the return DDT (from the *Return Filter* tab) and setting the parameters, the invoice can be created with the help of the *Valuation of work account returns* button.
 
-### Previous (Precedenti)
+### Previous 
 
 The last tab is the restoration tab: it can be used to filter, view, and cancel operations.
 
