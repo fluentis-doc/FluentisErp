@@ -5,8 +5,7 @@ sidebar_position: 1
 
 The form is accessed via the path **Logistics > MotorMotorvehicle > Material Consumption**.
 
-This form allows you to manage the movements carried out for the consumption of materials related to the MotorMotorvehicle created in the table [Motorvehicle Management](/docs/logistics/motorvehicle/motorvehicle-management).
-
+This form allows you to manage the movements carried out for the consumption of materials related to the MotorMotorvehicle created in the table [Motorvehicle Management](/docs/logistics/motorvehicles/motorvehicle-management).
 **Motorvehicle Management Search**
 
 The form consists of a filter area and a results area. Once all desired filters are set, simply click the **Search** button to display the results within the results grid.
@@ -22,7 +21,7 @@ The form consists of a filter area and a results area. Once all desired filters 
 **Insert Motorvehicle Management Entry**
 
 To enter new *material consumption movements*, you need to press the **New** button.    
-For the new record, see the documentation related to [New Material Consumption](/docs/logistics/motorMotorMotorvehicle/material-consumption/new-material-consumption).
+For the new record, see the documentation related to [New Material Consumption](/docs/logistics/motorvehicles/material-consumption/new-material-consumption).
 
 *Specific Buttons*: 
 
