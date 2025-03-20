@@ -1,31 +1,31 @@
 ---
-title: Batches Registry and Traceability (Anagrafica lotti e Tracciabilità)
+title: Batches Register and Traceability 
 sidebar_position: 3
 ---
 
 :::important Purpose
-The Fluentis batches registry represents an essential tool for the precise and detailed management of batches within a product traceability system. This feature allows users to search for and view specific details of each batch with a simple double-click, thus facilitating the monitoring and management of inventory.
+The Fluentis batches register represents an essential tool for the precise and detailed management of batches within a product traceability system. This feature allows users to search for and view specific details of each batch with a simple double-click, thus facilitating the monitoring and management of inventory.
 
 Within the tab dedicated to each individual batch, users can modify various crucial information, such as the supplier, the batch code provided by the supplier, specific notes, and the status of the batch. The latter, which can be easily updated, plays a fundamental role in determining the possibility of using the batch in sales documents and inventory records. Furthermore, the system also provides for the management of various batch statuses, which directly affect the operational availability of the batch.
 
-A distinctive aspect of the batches registry is the section that allows for historical viewing of the loading and unloading documents that involved the batch, thus maintaining accurate traceability over time. Additionally, it is possible to view the current inventory divided by warehouse. Thanks to these features, the Fluentis batches registry not only simplifies operational management but also helps ensure regulatory compliance in sectors where traceability is essential, such as food and pharmaceuticals.
+A distinctive aspect of the batches register is the section that allows for historical viewing of the loading and unloading documents that involved the batch, thus maintaining accurate traceability over time. Additionally, it is possible to view the current inventory divided by warehouse. Thanks to these features, the Fluentis batches register not only simplifies operational management but also helps ensure regulatory compliance in sectors where traceability is essential, such as food and pharmaceuticals.
 :::
 
-## Batches Registry (Anagrafica lotti)
+## Batches Register 
 
 The form displays the batch details and is composed of 4 different sections:
 
-### Batch Header (Testata lotto)
+### Batch Header 
 
 In this section, the main data related to the batch is displayed, with the possibility to modify some of them, particularly:
 
-**ITEM**: in the 3 related fields, the class, code, and description of the item to which the batch refers are displayed. This is certainly an item with the *Batches management* flag activated in the *Item registry* > *Batches/SN (Lotti/SN)* tab; otherwise, it would not have been possible to perform the batch load for the item itself;
+**ITEM**: in the 3 related fields, the class, code, and description of the item to which the batch refers are displayed. This is certainly an item with the *Batches management* flag activated in the *Item registry* > *Batches/SN* tab; otherwise, it would not have been possible to perform the batch load for the item itself;
 
 **Variant**: in the 2 related fields, the code and description of the item's variant to which the batch refers are displayed, if present;
 
-**Batch**: in this field, the Batch Code appears. This is an editable field by the user, although during loading operations, it can be generated automatically based on some rules set in the *Batch code type* linked to the item. First, a code and description of the *Batch Code Type* are entered, the row is saved, and then the parameters to be used for the composition of the newly created *Batch Code Type* are decided. For each parameter used, one can decide the number of characters it should consist of, and optionally, the padding character to be used. For example, with the *Progressive number* parameter, setting the padding character to '0' and Length '5' will create batches with the first number as 00000, then 00001, then 00002, and so on. The *Batch Code Type* must then be linked to the item registry in the appropriate field located in the *Batches/Serial Number (Lotti/SerialNumber)* tab so that in the procedures that automatically create the batch code for the item in question, the batch itself is generated according to the rules set in the *Batch Code Type* linked to the item. The field is alphanumeric and can reach a maximum length of 50 characters. This is not the batch identifier, as multiple loads can be done at different times for the same batch; in this case, multiple rows with the same *Batch code* would appear within the *Batch Search (Ricerca Lotti)* grid;
+**Batch**: in this field, the Batch Code appears. This is an editable field by the user, although during loading operations, it can be generated automatically based on some rules set in the *Batch code type* linked to the item. First, a code and description of the *Batch Code Type* are entered, the row is saved, and then the parameters to be used for the composition of the newly created *Batch Code Type* are decided. For each parameter used, one can decide the number of characters it should consist of, and optionally, the padding character to be used. For example, with the *Progressive number* parameter, setting the padding character to '0' and Length '5' will create batches with the first number as 00000, then 00001, then 00002, and so on. The *Batch Code Type* must then be linked to the item registry in the appropriate field located in the *Batches/Serial Number* tab so that in the procedures that automatically create the batch code for the item in question, the batch itself is generated according to the rules set in the *Batch Code Type* linked to the item. The field is alphanumeric and can reach a maximum length of 50 characters. This is not the batch identifier, as multiple loads can be done at different times for the same batch; in this case, multiple rows with the same *Batch code* would appear within the *Batch Search* grid;
 
-**Supplier**: in this field, the account/subaccount/description of the supplier will be indicated;
+**Supplier**: in this field, the account/detail account/description of the supplier will be indicated;
 
 **Producer**: in this field, the nickname/legal name of the manufacturer will be indicated;
 
@@ -35,7 +35,7 @@ In this section, the main data related to the batch is displayed, with the possi
 
 **Start date**: in this field, the date when the batch was loaded usually appears, editable by the user. If the batch was loaded through inventory registration, this date is proposed identical to the date when the registration was created; if the batch was loaded through the registration of a purchase DDT or return registration, this date is set equal to the date of the purchase DDT or return (unless the user manually modified it within the DDT); if the batch was loaded through the registration of a production report, this date is proposed as identical to the date of the production report;
 
-**Expiry date**: in this field, the expiration date of the batch appears, editable by the user, which is calculated at the time of batch creation and thus of loading the corresponding inventory movement, starting from the start date and adding the validity days of the batch entered in the *Batches/Serial Number (Lotti/SerialNumber)* tab of the item registry;
+**Expiry date**: in this field, the expiration date of the batch appears, editable by the user, which is calculated at the time of batch creation and thus of loading the corresponding inventory movement, starting from the start date and adding the validity days of the batch entered in the *Batches/Serial Number* tab of the item registry;
 
 **Initial quantity**: in this field, the initial quantity loaded for the batch through the first document that loaded the batch itself appears;
 
@@ -43,7 +43,7 @@ In this section, the main data related to the batch is displayed, with the possi
 
 **Notes**: in this field, the notes entered in the inventory registration during the batch load appear. This field is editable by the user and is also viewable in the Batch Search, as specified above;
 
-**Batch Status**: the combo displays the batch status. It is modifiable by the user and references data from the appropriate *Batch Status (Stati lotto)* table. The status of the batch determines whether or not the batch can be used in sales documents, production, and record of inventory unloading. However, this is a non-binding management; the user is not obligated to utilize the functionality of the *Batch Status* table;
+**Batch Status**: the combo displays the batch status. It is modifiable by the user and references data from the appropriate *Batch Status* table. The status of the batch determines whether or not the batch can be used in sales documents, production, and record of inventory unloading. However, this is a non-binding management; the user is not obligated to utilize the functionality of the *Batch Status* table;
 
 **Batch evaluation**: the combo displays the data related to the valuation of the batch. It is modifiable by the user and references data from the appropriate *Batch evaluation* table. This data serves purely descriptive functions, thus having no particular influence on procedures, thus also being optional;
 
@@ -51,7 +51,7 @@ In this section, the main data related to the batch is displayed, with the possi
 
 **Closed**: the flag, if activated, ensures that the quantity of that batch is not considered for the calculation of inventory and availability. This flag can only be activated manually.        
 
-### Loading (Carico)
+### Loading
 
 In this section, the fundamental data of the documents that have contributed to loading the batch are displayed. Generally, the detail of the *Warehouse posting* that loaded the batch always appears; if this was generated through the loading of a document (bill, return, etc.), then a line will appear showing the details of this document as well.
 
@@ -81,15 +81,15 @@ In this section, the fundamental data of the documents that have contributed to 
 
 **Template**: in these fields, the code and description of the reason used for the creation of that loading movement appear;
 
-**Customer/Supplier**: in these fields, account, subaccount, and description relative to the customer or supplier appear;
+**Customer/Supplier**: in these fields, account, detail account, and description relative to the customer or supplier appear;
 
 **Project**: in this field, the sales order, editable by the user, related to the batch appears. This is usually the sales order linked to the item line that has been loaded and that loaded the batch itself;
 
-### Other Loading Documents (Altri documenti di carico)
+### Other Loading Documents 
 
 In this section, the fundamental data of any other documents in which the batch has been committed, in relation to the document selected in the upper grid, are displayed.
 
-### Unloading (Scarico)
+### Unloading
 
 In this section, the fundamental data of all documents, in chronological order, that commit the batch are displayed. 
 
@@ -115,11 +115,11 @@ In this section, the fundamental data of all documents, in chronological order, 
 
 **Template**: in these fields, the code and description of the reason used for the creation of that loading movement appear;
 
-**Customer/Supplier**: in these fields, account, subaccount, and description relative to the customer or supplier appear;
+**Customer/Supplier**: in these fields, account, detail account, and description relative to the customer or supplier appear;
 
 **Project**: in this field, the sales order, editable by the user, related to the batch appears. This is usually the sales order linked to the item line that has been loaded and that loaded the batch itself;
 
-### Other Unloading Documents (Altri documenti di scarico)
+### Other Unloading Documents 
 
 In this section, the fundamental data of any other documents in which the batch has been committed, in relation to the document selected in the upper grid, are displayed.
 
@@ -131,9 +131,9 @@ In this section, the fundamental data of any other documents in which the batch 
 
 *With a double click on the line of the document, it is possible, depending on the user's rights, to open the related document in view-only mode.*
 
-### Inventory Visibility (Visualizzazione Giacenze)
+### Stocks Visualization
 
-In this tab, it is possible to view the inventory of the batch divided by warehouse.
+In this tab, it is possible to view the stocks of the batch divided by warehouse.
 
 The grid consists of the following fields:
 
@@ -143,14 +143,14 @@ The grid consists of the following fields:
 
 **Units of Measure**: indicates the unit of measure;
 
-**Total Quantity Loaded (Quantità totale caricata)**: indicates the total quantity loaded of that item for that batch;
+**Total Quantity Loaded**: indicates the total quantity loaded of that item for that batch;
 
-**Current Inventory (Quantità giacenza)**: indicates the current inventory of that item for that batch;
+**Stock Quantity**: indicates the stock quantity of that item for that batch;
 
-**Available quantity**: indicates the available inventory of that item for that batch.
+**Available Stock**: indicates the available stock of that item for that batch.
 
 
-## Batch Traceability (Tracciabilità lotto)
+## Batch Traceability 
 
 :::important Purpose
 The Fluentis batch traceability is a module designed to ensure efficient and precise management of product batches within the production and logistics cycle. This functionality allows users to monitor and record the path of each batch, from the moment of production or purchase until its final use, contributing to a transparent and secure management of materials.
@@ -178,4 +178,4 @@ These two flags are always active by default, but the user can activate or deact
 
 After selecting the batch of interest, simply click on print or print preview to view the report with the searched results.
 
-For details on the common functionality of forms, refer to the link [Common Features, Buttons, and Fields](/docs/guide/common).
+For details on the common functionality of forms, refer to the link [Custom Features, Buttons, and Fields](/docs/guide/common).

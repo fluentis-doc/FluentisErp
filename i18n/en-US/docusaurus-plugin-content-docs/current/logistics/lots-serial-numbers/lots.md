@@ -1,20 +1,20 @@
 ---
-title: Lot Search (Ricerca lotti)
+title: Batch Search 
 sidebar_position: 2
 ---
 
-The form opens through the path **Logistics > Lot Registry (Logistica > Anagrafica lotti)** and allows you to search for all lots in order to view and modify them.
+The form opens through the path **Logistics > Batches Register** and allows you to search for all lots in order to view and modify them.
 
 Once all desired filters are set, just click on the **Search** button in the *Ribbon bar* to view the results within the result grid.
 
 To open the details of a document, simply select it and double-click with the mouse, or click the **Modify** button.
 
-*Specific buttons (Pulsanti specifici)*:
+*Specific buttons*:
 
-> **Modify**: this button allows you to [Edit an entered lot (Modificare un lotto inserito)](/docs/logistics/lots-serial-numbers/lots-register);    
+> **Modify**: this button allows you to [Edit an entered lot](/docs/logistics/lots-serial-numbers/lots-register);    
 > **Cancel**: allows the deletion of the lot if it is not referenced in any document. 
 
-*Specific filters (Filtri specifici)*:
+*Specific filters*:
 
 **All**: activating this flag allows the user to filter all lots present in the database;
 
@@ -22,7 +22,7 @@ To open the details of a document, simply select it and double-click with the mo
 
 **Closed**: activating this flag allows the user to filter only closed lots, meaning only lots whose stock is equal to zero.  
 
-*Specific fields in the result grid (Campi specifici nella griglia di risultato)* (click on the **+** sign to open the row details)
+*Specific fields in the result grid* (click on the **+** sign to open the row details)
 
 **Closed**: the flag, if active, highlights that the stock is equal to zero;
 
@@ -34,4 +34,4 @@ To open the details of a document, simply select it and double-click with the mo
 
 **Warehouse**: the column displays the code of the warehouse where the lot is located.
 
-For details on the common functioning of forms, please refer to the link [Common functionalities, buttons, and fields (Funzionalità, pulsanti e campi comuni)](/docs/guide/common).
+For details on the common functioning of forms, please refer to the link [Custom festures, buttons, and fields](/docs/guide/common).
