@@ -12,7 +12,7 @@ Before using the available functionalities, a series of basic data must be manag
 Alternatively, the [**Fast Start**](/docs/guide/fast-start) procedure is available, for which it will only be necessary to manage a minimum set of data such as the [**Registers**](/docs/erp-home/registers/registers-intro).
 
 
-## Sales Modules (Moduli Vendite)
+## Sales Modules
 
 import Link from '@docusaurus/Link';
 
