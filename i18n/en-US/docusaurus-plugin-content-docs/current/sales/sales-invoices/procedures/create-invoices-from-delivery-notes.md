@@ -1,5 +1,5 @@
 ---
-title: Creating Invoices from DDT (Creazione fatture da DDT)
+title: Creating Invoices from DDT 
 sidebar_position: 1
 ---
 
@@ -14,7 +14,7 @@ In this tab, the user has the opportunity to enter filters to search for DDTs, w
 **Creation date**: allows specifying the date of the invoice that will be created. 
 
 *Specific buttons*: 
-> **Create invoices from DDT (Creazione fatture da DDT)**: allows valuing the selected DDTs in the grid, based on the parameters entered in the following *Parameters* tab.
+> **Create invoices from DDT**: allows valuing the selected DDTs in the grid, based on the parameters entered in the following *Parameters* tab.
 > **Open D.N.**: allows viewing and modifying the selected DDT.
 
 :::note
@@ -37,27 +37,27 @@ With the help of these parameters, DDTs of the same customer can be grouped into
 
 *Processing of payments in invoice*
 
-If there are DDTs with different payment solutions and the *Group DDT (Raggruppa DDT)* flag has not been set:
+If there are DDTs with different payment solutions and the *Group DDT* flag has not been set:
 
 **Restore nomenclature data**: the invoice will take the payment solutions from the registry (and does not consider the information entered in the DDT). 
 
-**Keeps those from DDT (Mantiene quelli dei DDT)**: the invoice will take the payment solutions entered in the DDT.
+**Keeps those from DDT**: the invoice will take the payment solutions entered in the DDT.
 
 *Insertion on invoice*
 
 **Grouping maturities on invoice**: the active flag allows grouping due dates with the same date but coming from different DDTs into a single solution.
 
-**Recalculate CDC/CDP (Ricalcola CdC/CdP)**: used in analytical accounting, it is used to recalculate cost or profit centers.
+**Recalculate CDC/CDP**: used in analytical accounting, it is used to recalculate cost or profit centers.
 
 *D.N. references*
 
-**Insert D.N. references**: if this flag is set, in the [Items](/docs/purchase/purchase-invoices/insert-purchase-invoice/purchase-invoice) tab of the invoice, an *Item note (Articolo nota)* will be displayed that retrieves the references from the DDT from which the invoice was created. The composition of this note must be entered in the 'Description' field according to the parameters described in the label.
+**Insert D.N. references**: if this flag is set, in the [Items](/docs/purchase/purchase-invoices/insert-purchase-invoice/purchase-invoice) tab of the invoice, an *Item note* will be displayed that retrieves the references from the DDT from which the invoice was created. The composition of this note must be entered in the 'Description' field according to the parameters described in the label.
 
 *Specific button*: 
 
 > **Save Parameters**: allows saving the parameters set for valuation.
 
-After selecting the DDTs (from the *Valuation* tab) and setting the parameters, the invoice can be created with the help of the *Create Invoice from DDT (Creazione fattura da DDT)* button.
+After selecting the DDTs (from the *Valuation* tab) and setting the parameters, the invoice can be created with the help of the *Create Invoice from DDT* button.
 
 ### Previous
 

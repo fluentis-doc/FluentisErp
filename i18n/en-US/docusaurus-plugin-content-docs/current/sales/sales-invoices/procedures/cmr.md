@@ -1,17 +1,17 @@
 ---
-title: C.M.R. (C.M.R.)
+title: C.M.R. 
 sidebar_position: 3
 ---
 
 The CMR procedure allows you to print documents to summarize the items and the total weight and volume of the selected documents for shipping. At the top, it is possible to filter the sales invoices, sales DDTs, and labor account DDTs. By clicking Search, the documents that have the searched characteristics and that will be printed will be displayed in a grid.
 
-:::tip Tip (Consiglio)
+:::tip Tip 
 If you want to exclude a certain type of document from the grid results for a customer, enter a start date and an end date during which there are no documents. This way, no row will be proposed for printing.
 :::
 
-To view the results, it is mandatory to group by **Account**, **Carriage**, **Recipient/Destination (Destinatario/Destinazione)**, or **Carrier**, with the corresponding filter flags.
+To view the results, it is mandatory to group by **Account**, **Carriage**, **Recipient/Destination**, or **Carrier**, with the corresponding filter flags.
 
-:::tip Tip (Consiglio)
+:::tip Tip 
 If you group only by Account, you cannot set Recipient and Destination because multiple rows with the same customer but different recipients/destinations create a single CMR row. Therefore, it is necessary to group both by Destination and by Account.
 :::
 

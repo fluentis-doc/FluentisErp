@@ -1,5 +1,5 @@
 ---
-title: Accounting for Sales Invoices (Contabilizzazione fatture di vendita)
+title: Accounting for Sales Invoices 
 sidebar_position: 1
 ---
 
@@ -23,7 +23,7 @@ If the flag is not set, the *exchange rate present in the header of the invoice*
 
 **Update exchange on document**: the field is active *only* if the previous flag is set. The meaning is to also update the exchange rate present in the header of the invoice, overwriting the current one;
 
-**VAT competence = document date (Comp. IVA = data documento)**: the flag enforces that the VAT competence of the movements is equal to the invoice date. In the case where one wants to utilize the ability to invoice up to the 15th of the month following the shipping date (deferred invoicing), the flag should be removed so that the VAT competence is taken from the start date indicated in the original document, as required by VAT regulations;
+**VAT competence = document date**: the flag enforces that the VAT competence of the movements is equal to the invoice date. In the case where one wants to utilize the ability to invoice up to the 15th of the month following the shipping date (deferred invoicing), the flag should be removed so that the VAT competence is taken from the start date indicated in the original document, as required by VAT regulations;
 
 **Use customer branch to assign department**: flag connected to the field *Referene Company branch* present in the customer and supplier registries, where it's possible to associate the customer/supplier to a branch and, through this, to a *division* different from the one in use. This flag triggers a check if there is a reference branch in the customer and, from this link, it checks if there is a division associated with that branch. If positive, it registers the invoice attributing it to that division (even if the invoice is attributed to division X, the accounting registration will be in Y). This option facilitates the drafting of financial statements for divisions in situations where invoicing occurs separately but the results from a budgeting perspective are intended to be aggregated at a main division.
 
@@ -41,13 +41,13 @@ In this form, some general elements of invoice accounting are set.
 
 2. If the gift management is activated but no sub-account is entered in the subsequent fields, the system will add the necessary lines for the reversal of revenue at the end of the normal accounting movements, using the same sub-account set for sales items.
 
-3. If the flag **Replace article account (Sostituisci il conto dell'articolo)** is set, the field to set the sub-account for reversing advance payments will be activated, which will be used instead of the article's sub-account in these additional lines.
+3. If the flag **Replace article account** is set, the field to set the sub-account for reversing advance payments will be activated, which will be used instead of the article's sub-account in these additional lines.
 
 **Vat code for gifts in vat register**: filling in this field (generally with a VAT code corresponding to the case of "out of VAT scope" or "excluded...") will automatically execute a reversal line of the value of the gift in the VAT register, where there is no VAT reclaim exercised against the customer.
 
-**Account for VAT reversal**: used in the case where the gift article in the invoice does not have the flag **VAT recourse**, with which it indicates whether the VAT applied to the gift article is to be borne (with flag) by the customer or not (without flag). This amount will be recorded and reversed only if the *Reversal VAT account (Conto di storno iva)* is entered; without it, the operation will need to be managed manually in accounting (this field also has a confirmation/warning message for the user regarding the missing setting).
+**Account for VAT reversal**: used in the case where the gift article in the invoice does not have the flag **VAT recourse**, with which it indicates whether the VAT applied to the gift article is to be borne (with flag) by the customer or not (without flag). This amount will be recorded and reversed only if the *Reversal VAT account* is entered; without it, the operation will need to be managed manually in accounting (this field also has a confirmation/warning message for the user regarding the missing setting).
 
-**Group automatic row accounts (Raggruppa conti delle righe automatiche)**: with the flag active, the accounts inserted automatically in the journal section (such as in gift accounting where the customer appears multiple times, once for the total invoice and then the gifts are reversed) will be grouped by sub-account forming a compact registration.
+**Group automatic row accounts**: with the flag active, the accounts inserted automatically in the journal section (such as in gift accounting where the customer appears multiple times, once for the total invoice and then the gifts are reversed) will be grouped by sub-account forming a compact registration.
 
 **Detail account of financial discount**: this field is used to record the financial discount associated with the invoice's due date.
 
