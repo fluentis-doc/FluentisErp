@@ -1,5 +1,5 @@
 ---
-title: Management of Main and Alternative Units of Measure (Gestione Unità di misura principale e alternativa)
+title: Management of Main and Alternative Units of Measure 
 sidebar_position: 5
 ---
 
