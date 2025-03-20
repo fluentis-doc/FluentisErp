@@ -1,10 +1,10 @@
 ---
-title: Locations (Ubicazioni)
+title: Locations 
 sidebar_position: 1
 ---
 
 
-:::important What It Is Used For (A cosa serve)
+:::important Purpose
 The management of locations in Fluentis is a crucial element for optimizing warehouse operations. This module allows users to structure storage locations within warehouses according to a hierarchical scheme, which can be easily modified to adapt to business needs. Each location can be defined based on various parameters, including the type of location (e.g., area, shelf, rack, section) and its physical characteristics such as width, height, and load capacity.
 
 Thanks to the creation of a location tree, operators can insert new branches and view the contents of each location, with details about the items and quantities in stock. The location attributes section further allows for customization, enabling the definition of specific requirements for individual locations.
@@ -36,7 +36,7 @@ The search results are divided into two sections: a first section that contains 
 
 **Location group**: Indicates that it is a group location.
 
-In the second part of the window under the *Location Attributes (Attributi dell’ubicazione)* tab, a series of data related to the location can be entered.
+In the second part of the window under the *Location Attributes* tab, a series of data related to the location can be entered.
 
 **Width**: Indicates the width of the location; 
 
@@ -50,7 +50,7 @@ In the second part of the window under the *Location Attributes (Attributi dell�
 
 **Layers number**: Indicates the maximum number of layers that can be loaded in the location; 
 
-**Type of Load Unit (Tipo unità di carico)**: Indicates the type of load unit that can be loaded in the location;
+**Type of Load Unit**: Indicates the type of load unit that can be loaded in the location;
 
 **Loading unit number**: Indicates the number of load units that can be loaded in the location;
 

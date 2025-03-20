@@ -34,7 +34,7 @@ From this form, it is possible to load the selected Loading Unit Items by pressi
 If you want to transfer items from the warehouse directly into the load unit, using a loading reason to insert the items into the unit and a unloading counterpart to remove them from the warehouse, it is important to remember to first move the items to the location indicated in the counterpart reason.
 :::
 
-*Specific buttons (Pulsanti specifici)*:
+*Specific buttons*:
 
 > **New**: the button allows you to [Create a new Loading Unit Item](/docs/logistics/udc/loading-unit-management/insert-new-pallet);  
 > **Sales returns**: allows you to create a new *Load Unit*, using as *Loading Unit Item Type* the one with the *For Return* enabled, and all other properties are copied from the original *Load Unit*; this button is enabled only for lines that are loaded and delivered;  

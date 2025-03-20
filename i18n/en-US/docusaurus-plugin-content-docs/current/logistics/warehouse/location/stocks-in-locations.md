@@ -3,7 +3,7 @@ title: Stocks in Locations
 sidebar_position: 2
 ---
 
-:::important What it is for (A cosa serve)
+:::important Purpose
 The "Stocks in Locations" feature of Fluentis is a crucial element for the efficient management of the warehouse, allowing users to monitor the placement of stored items within various locations.      
 Thanks to an intuitive interface, operators can view in real-time the quantities available for each item and easily identify their specific location.
 :::
