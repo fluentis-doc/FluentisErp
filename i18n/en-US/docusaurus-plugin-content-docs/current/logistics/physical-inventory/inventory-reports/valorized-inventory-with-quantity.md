@@ -3,7 +3,7 @@ title: Valorized Inventory with Quantity
 sidebar_position: 1
 ---
 
-:::important What It Is For
+:::important Purpose 
 The report "Valorized Inventory with Quantity" of Fluentis represents a key tool for the management and monitoring of warehouse stocks, allowing companies to have a clear and detailed view of their inventories. Through this report, users can access complete information not only about the physical quantities of items present in the warehouse but also about their value, obtained through various valuation methods such as average cost, last cost, FIFO, and LIFO.
 
 The generation of the report occurs through customizable filters, which allow for viewing specific data for warehouse, item, merchandise category, and more, facilitating analysis and management of stocks. Users can also group and sort data based on meaningful parameters, making the entire inventory control process more efficient and informed.
@@ -23,13 +23,13 @@ Additionally, through a series of dedicated boxes, it is possible to:
 
 By activating the box **With valorization at**, the report will also include the value of the single item based on the following flags:
 
-- **Average cost**: if active, items are valued with the average cost calculated based on warehouse movements (if the flag **From item registry (Da anagrafica articolo)** is disabled);    
-- **Latest cost**: if active, items are valued with the last cost calculated based on warehouse movements (if the flag **From item registry (Da anagrafica articolo)** is disabled);    
+- **Average cost**: if active, items are valued with the average cost calculated based on warehouse movements (if the flag **From item registry** is disabled);    
+- **Latest cost**: if active, items are valued with the last cost calculated based on warehouse movements (if the flag **From item registry** is disabled);    
 - **FIFO yearly rise**: if active, items are valued using the FIFO logic in annual increments;        
 - **LIFO yearly rise**: if active, items are valued using the LIFO logic in annual increments;        
 - **Management area**: if active, items are valued based on the management area indicated for that warehouse within the [Warehouses table](/docs/configurations/tables/logistics/warehouses/);          
 - **By effective cost batches**: if active, items are valued with the value indicated in lot registry;      
-- **From item registry (Da anagrafica articolo)**: if active, in conjunction with the **Average cost** or **Latest cost** flags, items are valued at average or last cost respectively, but based on the respective costs entered in the item registry;         
+- **From item registry**: if active, in conjunction with the **Average cost** or **Latest cost** flags, items are valued at average or last cost respectively, but based on the respective costs entered in the item registry;         
 - **Inventory historicization**: if active, the processing data will be saved in the [Warehouse History](/docs/logistics/physical-inventory/warehouse-history);      
 - **From historicizing**: if active, items are valued with the values present in the [Warehouse History](/docs/logistics/physical-inventory/warehouse-history) for the date specified in the **History cost date** field;      
 - **History cost date**: enabled only if the **From historicizing** flag is active, allows the entry of the historical cost date to be used for valuation.
@@ -53,8 +53,8 @@ For the calculation of the weighted average cost, all movements of items with th
 
 For the calculation of stock, all movements of items with the active tax interest flag from warehouse records with tax interest are considered. 
 
-Once the stock at the end of the period is obtained, the LIFO stratifications in the *Warehouse History (Storico di magazzino)* are verified, calculating backwards the balances of each year; then, for each year, the balance of the year is multiplied by the average cost of the year, and by summing the values of each year of the stratification, the FIFO cost of each item is obtained. 
-If in the *Warehouse History (Storico di magazzino)* there are years with a balance of 0, the search for LIFO stratifications stops and the valuation is done from the next stratified year.
+Once the stock at the end of the period is obtained, the LIFO stratifications in the *Warehouse History* are verified, calculating backwards the balances of each year; then, for each year, the balance of the year is multiplied by the average cost of the year, and by summing the values of each year of the stratification, the FIFO cost of each item is obtained. 
+If in the *Warehouse History* there are years with a balance of 0, the search for LIFO stratifications stops and the valuation is done from the next stratified year.
 
 :::note Note
 For all years prior to the last warehouse closing, the stock at the end of the year is considered, without splitting it by warehouse.   

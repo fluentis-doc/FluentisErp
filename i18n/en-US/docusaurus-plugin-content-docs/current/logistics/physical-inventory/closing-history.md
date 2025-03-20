@@ -1,9 +1,9 @@
 ---
-title: Closing History (Storico chiusura)
+title: Closing History 
 sidebar_position: 4
 ---
 
-:::important Purpose (A cosa serve)
+:::important Purpose 
 The introduction to the closing history of Fluentis provides essential access to historical data related to warehouse closures, allowing operators to monitor and analyze variations in stock over time. This functionality allows for detailed information such as last cost, average cost, and stock levels, all created through the valuation procedure.
 
 In the form dedicated to the closing history, users can view and filter the closures made, thus facilitating easy consultation of historical data and supporting the analysis of warehouse performance. It is important to note that to correctly save the data within the history, the inventory archiving flag must be activated during the execution of the valuation.

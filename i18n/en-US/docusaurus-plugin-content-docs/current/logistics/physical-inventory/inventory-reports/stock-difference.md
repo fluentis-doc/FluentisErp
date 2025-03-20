@@ -3,7 +3,7 @@ title: Stock Difference
 sidebar_position: 3
 ---
 
-:::important What it’s for (A cosa serve)
+:::important Purpose
 The "Stock Difference" report from Fluentis is a fundamental tool for monitoring discrepancies between physical stocks and logical stocks within the warehouse. It allows users to identify and analyze the differences that emerged during the inventory phases, enabling correct inventory management and timely adjustments to records.
 
 Each highlighted difference is accompanied by information related to the involved items, allowing users to understand the origin of discrepancies and take necessary corrective measures.
