@@ -13,7 +13,7 @@ The printout is a simulation of the calculation of the commission earned by the 
 
 The flag **Print debit vs/agent on date** activates the relevant date: with this option, it is possible to simulate the printing of earned commissions as of that date, including those settled on a later date (which are normally excluded).
 
-The flag **Consider zero commissions in commissionable taxable income (Considera provvigioni zero in imponibile provvigionale)** allows for commissions with a zero commission value to be included among the commissionable taxable amounts.
+The flag **Consider zero commissions in commissionable taxable income** allows for commissions with a zero commission value to be included among the commissionable taxable amounts.
 
 :::tip COMMISSIONS ON COLLECTED AMOUNTS AND OFFSETTING OF ITEMS
 In cases where commissions are calculated on collected amounts and an offsetting of items occurs (for example, for previous advances received), it is important to note that the offsetting assigns the closing item lines for the purpose of calculating earned commissions based on the **most recent registration date** among the two that created the items being offset against each other.

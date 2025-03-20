@@ -1,5 +1,5 @@
 ---
-title: New Customer Offer (Nuova offerta cliente)
+title: New Customer Offer 
 sidebar_position: 3
 ---
 
@@ -55,7 +55,7 @@ After entering data in the upper section, you can proceed with header data:
 
 - **Sales price list**: the default price list present in the customer profile is proposed, along with the relevant Scale Type provided for the customer.     
 
-- **Customer Annotations (Annotazioni clienti)**: in this section, you can enter Customer References, any Initial/Final Notes; the *Customer Annotations* field reports the Notes entered in the [Customer Profile Data](/docs/erp-home/registers/contacts/create-new-contact/general).     
+- **Customer Annotations**: in this section, you can enter Customer References, any Initial/Final Notes; the *Customer Annotations* field reports the Notes entered in the [Customer Profile Data](/docs/erp-home/registers/contacts/create-new-contact/general).     
 
 - **Confirmation date estimation**: indicates the date on which the offer was confirmed and can therefore be converted into an order.     
 
@@ -71,12 +71,12 @@ After entering data in the upper section, you can proceed with header data:
 
 > **New version**: generates a new version of the offer, incrementing the *Version* field. Subsequent versions of an Offer inherit the attached Documents.       
 
-> **Replace expected delivery date in lines (Sostituisci data prevista consegna nelle righe)**: replaces the Expected Delivery Date entered in the header in all article lines.       
+> **Replace expected delivery date in lines**: replaces the Expected Delivery Date entered in the header in all article lines.       
 
 > **Conversion**: allows you to transform a sales offer into an actual sales order. For the process to occur correctly, it is essential to configure the desired Order Type in the [Offer Types](/docs/configurations/tables/sales/sales-offer-type) table. Additionally, for the offer to be successfully converted, it must have a Confirmation Date in the header; otherwise, the system will alert the user via a pop-up message indicating the need to confirm the offer before proceeding. Once all required data has been entered, a pop-up will appear with the following fields:     
 > - if some lines of the offer have already been converted into an order, the user will be asked if they want to create a new order using all offer lines or only those lines not yet referenced.             
 > - **Create/Update Project**: with this flag, we instruct the system that in addition to creating the order, it should also proceed with the creation or updating of the project. If the project needs to be created, it is necessary to tick the command *Create New Empty Project*, *Create New Project from Offer*, or **Create New Project from Offer and Project Template**; in all cases, it will be necessary to enter the **[Project Type](/docs/configurations/tables/project-management/project-type)** to be created in the appropriate field; in the latter case, the **Template Project** will also need to be entered. If the project already exists and needs to be updated with the data entered in the offer, the **Project** field must be filled with the project to be updated.     
-> - **Report Materials/Resources from Offer lines as Order lines (Riporta Materiali/Risorse da righe Offerta come righe Ordine)**: with these flags, items with the resources and materials from the offer are included in the order, if hierarchical.              
+> - **Report Materials/Resources from Offer lines as Order lines**: with these flags, items with the resources and materials from the offer are included in the order, if hierarchical.              
 Once the pop-up is confirmed, the system will then generate a new customer order using the data from the offer. This order can be viewed and modified in the [Customer Order Search](/docs/sales/sales-orders/create-new-sales-orders/search-sales-orders) section. Additionally, the user will be informed via a pop-up message regarding the success of the conversion, the number of the converted offer and its version, along with a message containing the number of the customer order generated from the conversion.        
 If the Offer data proposed by the profile are modified, they will be transferred to the Order generated from the conversion: Customer Annotations, Shipping, Payments, Discounts, Agents, Destinations, Carriers.      
 
@@ -118,14 +118,14 @@ Let’s now list the special tabs of a hierarchical offer.
 ### 3.b.1 Activities 
 
 In this tab, it is necessary to enter the characteristics of the articles in the articles grid. The fields present are:     
-- **Line number/Level (Numero riga/Livello)**: contains the line and WBS numbers and is automatically set, although it can be freely modified.          
+- **Line number/Level**: contains the line and WBS numbers and is automatically set, although it can be freely modified.          
 - **Projects Node Type**: indicates whether the line is a **Root Node**, an **Activity Node**, or a **Work Package Node** (the final project node, the only one that can contain coded item numbers).       
 - **Line type**: indicates the type of article among Coded, Uncoded, Expenses, or Notes (the latter by default).            
 - **Item code**: this section reports Class, Code, and Description of the possibly selected coded article.             
 - **Variant code**: reports a possible [Variant](/docs/erp-home/registers/items/create-new-items/item-registry/variants) of the article.       
 - **Item description**: this section reports the Description of the article, if of type Note or Uncoded.    
 - **Prototype**: contains any linked [Prototype](/docs/erp-home/registers/production/standardization/new-prototype).          
-- **Quantity/UM/Price (Quantità/UM/Prezzo)**: contains quantity, unit of measure, and price of the selected item.        
+- **Quantity/UM/Price**: contains quantity, unit of measure, and price of the selected item.        
 - **Alternative quantity**: contains any alternative quantity, with the Alternative Unit of Measure next to it.     
 - **Price MU**: if entered, this flag indicates to multiply the unit price by the alternative quantity to obtain the amount.   
 - **Price list**: it is possible to associate a price list from which to obtain the price of the article, along with the **Scale Type** to be applied for the discount.     
@@ -139,14 +139,14 @@ In this tab, it is necessary to enter the characteristics of the articles in the
 - **Material revenues/Resources revenues**: these fields display the *Revenue* columns from the Resources and Materials tabs; this way, it is possible to directly see the impact of amounts on the total Price from this tab.     
 - **VAT**: indicates the VAT to be applied.             
 - **Sales Turnover**: indicates the [Sales turnover](/docs/configurations/tables/sales/sales-turnover) of the article.                
-- **Expected delivery date/Expected delivery period (Data prevista consegna/Periodo di prevista consegna)**: in these fields, expected date/period for delivering the selected article can be entered.    
+- **Expected delivery date/Expected delivery period**: in these fields, expected date/period for delivering the selected article can be entered.    
 
 ### 3.b.2 Resources
 
 In this tab, it is possible to indicate the Revenues obtained from various Resources. The fields present are: 
 - **Asset**: requires the entry of a [Resource](/docs/project-management/registers/employee/new-employee) that has performed the activity.     
 - **Units of Measure**: contains the unit of measure to use for the Resource; the default one from the resource profile is proposed, but it can be changed.      
-- **Quantity/Unit Cost/Total Cost (Quantità/Costo unitario/Costo totale)**: the Total Cost is automatically calculated by multiplying the entered Quantity by the Unit Price.      
+- **Quantity/Unit Cost/Total Cost**: the Total Cost is automatically calculated by multiplying the entered Quantity by the Unit Price.      
 - **Percentage/Value**: in these fields, any markup to be applied to the Total Cost can be entered, either as a percentage or as a value.     
 - **Revenue**: in this column, the Total Cost with markup will be automatically calculated.        
 - **Note**: in this field, free notes can be entered.       
@@ -156,12 +156,12 @@ In this tab, it is possible to indicate the Revenues obtained from various Resou
 
 In this tab, it is possible to indicate the Revenues obtained from the use of Materials.      
 In the first columns of the grid, a Coded Item, Uncoded, or Notes can be entered, along with its possible Variant and VAT. The subsequent columns are:     
-- **Quantity/Unit Cost/Total Cost (Quantità/Costo unitario/Costo totale)**: the Total Cost is automatically calculated by multiplying the entered Quantity by the Unit Cost.      
+- **Quantity/Unit Cost/Total Cost**: the Total Cost is automatically calculated by multiplying the entered Quantity by the Unit Cost.      
 - **Origin type cost**: it is possible to select the origin from which to populate the *Unit Cost* column among: Last cost, Average cost, Standard cost, Net supplier price list, Supplier order, or Purchase invoice; this field is configurable by default in the [Offer Parameters](/docs/configurations/parameters/sales/offer-parameters).    
 - **Percentage/Value**: in these fields, any markup to be applied to the Total Cost can be entered, either as a percentage or value.     
 - **Revenue**: in this column, the Total Cost with markup will be automatically calculated.        
 - **Vendor description**: the preferred Supplier entered in the item profile is proposed, but it can be modified; if the supplier price list is selected in the *Cost origin type* column, the list considered will be the valid one for this supplier; additionally, this supplier will be the addressee of the **Request for Quotation** generated from the material line.           
-- **Request number/date (Numero/Data richiesta)**: contains the eventual **Request for Quotation** created for the Material; in fact, when in the *Materials* tab, the *Create Request for Quotation* button appears in the toolbar, which will generate the RFQ for the selected material.    
+- **Request number/date**: contains the eventual **Request for Quotation** created for the Material; in fact, when in the *Materials* tab, the *Create Request for Quotation* button appears in the toolbar, which will generate the RFQ for the selected material.    
 - **Note**: in this field, free notes can be entered.   
 
 Other tabs present are similar to those of the non-hierarchical offer.     

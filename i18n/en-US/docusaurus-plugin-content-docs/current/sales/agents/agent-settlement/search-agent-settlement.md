@@ -1,8 +1,8 @@
 ---
-title: Agent Settlement Search (Ricerca Liquidazioni agenti)
+title: Agent Settlement Search 
 sidebar_position: 2
 ---
 
-The form opens via the path **Sales (Vendite) > Agent Settlements (Liquidazioni agenti) > Agent Settlements (Liquidazioni agenti)**.
+The form opens via the path **Sales > Agent Settlements > Agent Settlements**.
 
-For an explanation of functionalities common to sales documents, please refer to the section [Sales (Vendite)](/docs/sales/sales-intro).
+For an explanation of functionalities common to sales documents, please refer to the section [Sales](/docs/sales/sales-intro).

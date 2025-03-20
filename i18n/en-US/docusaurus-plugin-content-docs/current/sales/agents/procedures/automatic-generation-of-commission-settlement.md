@@ -1,17 +1,17 @@
 ---
-title: Automatic Commission Settlement Creation (Creazione automatica liquidazione provvigioni)
+title: Automatic Commission Settlement Creation 
 sidebar_position: 1
 ---
 
-The form opens via the path *Sales > Agents > Procedures > Automatic Commission Settlement Creation (Vendite > Agenti > Procedure > Creazione automatica liquidazione provvigioni)*.
+The form opens via the path *Sales > Agents > Procedures > Automatic Commission Settlement Creation*.
 
 The automatic commission settlement creation process performs the final calculation of agent settlements according to the set parameters.
 
-## Settlement Calculation (Calcolo liquidazioni)
+## Settlement Calculation 
 
 Once the search is executed, the **Agents list** section will display all the agents defined in the system: in this section, it is necessary to select (using the *Ctrl* or *Shift* keyboard commands to select multiple rows) the list of subjects for whom to perform the calculation.
 
-The **commission accumulation type (tipo di maturazione)** of the agent is visible, so that you can **set the filters on the right appropriately to the agent's settings**.
+The **commission accumulation type** of the agent is visible, so that you can **set the filters on the right appropriately to the agent's settings**.
 
 On the right, the following filters appear:
 
@@ -40,7 +40,7 @@ The situation is clearly improbable and "theoretical" to better understand the e
 
 :::
 
-In the **lower section (sezione inferiore)**, *Data for creation of commission settlement*, the settlement date, a description, and the reference month/year for the calculation of Enasarco must be specified.
+In the **lower section**, *Data for creation of commission settlement*, the settlement date, a description, and the reference month/year for the calculation of Enasarco must be specified.
 
 :::important[Important]
 The month/year fields for Enasarco must be filled in carefully because they determine the calculation of the minimum and maximum for Enasarco. Thus, the calculation to be executed is attributed a "competence" for the calculation of any minimum; if the minimum is not reached for the quarter in question, or the maximum, adjusting the contributions borne by the agent and/or principal company.
@@ -69,7 +69,7 @@ Also, pay attention during the initialization of a new environment that it has b
 > **Search**: executes the search for agents present in the active company.  
 > **Settlements calculation**: performs the calculation of settlements for the selected agents according to the set filtering settings.  
 
-## Restore (Ripristina)
+## Restore 
 
 The restore tab allows you to identify in which agent settlement the commissions of the filtered documents were entered, or to identify one or more settlements according to the filters present in the mask. Through the appropriate restore button, it is possible to cancel the creation of the agent settlement. Restoring already processed settlements in the recipient module is not allowed.
 
