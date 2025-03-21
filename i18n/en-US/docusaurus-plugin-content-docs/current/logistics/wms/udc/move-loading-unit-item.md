@@ -1,11 +1,11 @@
 ---
-title: Moving Items Between Two Loading Units (Spostamento articoli tra due unità di carico)
+title: Moving Items Between Two Loading Units
 sidebar_position: 7
 ---
 
-:::important Purpose (A cosa serve)
+:::important Purpose
 The Move Items Between Two Loading Units function of Fluentis WMS allows for easy transfer of items from a starting loading unit to a destination one.     
-Through barcode scanning, the operator can view the items contained in the first loading unit (UDC) and, after selecting the destination UDC, is able to quickly move the desired quantities, making the movement process more efficient.
+Through barcode scanning, the operator can view the items contained in the first loading unit and, after selecting the destination UDC, is able to quickly move the desired quantities, making the movement process more efficient.
 :::  
 
 Upon reading the first loading unit, it is entered as the starting loading unit, and all items contained within it are displayed in the grid below, indicating: *Item code*, *Quantity*, *Batch*, and *Item description*.        
@@ -21,7 +21,7 @@ The **Clear All** button allows you to clear the form of all entered data.
 - The destination loading unit can only be unloaded if it is empty or if the quantities of all items within it are zero; if the quantities of the items within it are greater than zero, that loading unit must be loaded.
 - It is not possible to exceed the quantity present in the starting loading unit.
 - For the creation of the warehouse movement, availability for the item and lot is checked.
-- The starting and destination loading units must not be contained in a **UDC Picking List / Packing List (Lista di prelievo UDC / Packing list)** or in a **UDC Transfer List (Lista di trasferimento UDC)**. 
+- The starting and destination loading units must not be contained in a **Loading Unit Picking List / Packing List** or in a **Loading Unit Transfer List**. 
 :::
 
 **Load/Unload Parameters** to be entered in the table [Loading/Unloading Parameters for User](/docs/configurations/parameters/general-parameters/deliverynotes-grouping).

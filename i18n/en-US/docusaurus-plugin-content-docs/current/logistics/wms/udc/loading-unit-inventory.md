@@ -1,9 +1,9 @@
 ---
-title: Load Unit Inventory (Inventario unità di carico)
+title: Load Unit Inventory 
 sidebar_position: 9
 ---
 
-:::important Purpose (A cosa serve)
+:::important Purpose
 The Load Unit Inventory function of the Fluentis WMS allows for an accurate inventory of load units present in the warehouse.        
 Operators can read the location to view the UDC contained and proceed with recording the quantities, automatically generating adjustment movements to align the logical stock with the physical stock.
 :::  
@@ -22,7 +22,7 @@ The **Clear All** button allows for clearing the form of all entered data.
 Once all load unit readings are completed, by pressing the **Confirm** button, only if there are un-inventoried load units will the procedure create unloading movements for those load units from the selected location and loading movements for the same units in the default location indicated in the cause present in the 
 [Load/Unload Parameters for User (Parametri Carico/Scarico per utente)](/docs/configurations/parameters/general-parameters/deliverynotes-grouping).
 
-**Load/Unload Parameters** to be entered in the table [Load/Unload Parameters for User (Parametri Carico/Scarico per utente)](/docs/configurations/parameters/general-parameters/deliverynotes-grouping).
+**Load/Unload Parameters** to be entered in the table [Load/Unload Parameters for User](/docs/configurations/parameters/general-parameters/deliverynotes-grouping).
 
 | Area | Module | Form |
 | :-- | :-- | :-- |
@@ -31,8 +31,8 @@ Once all load unit readings are completed, by pressing the **Confirm** button, o
 
 The parameters are entered twice because the form uses a cause for unloading the load unit from the starting location and one for loading the load unit in the destination location.
 
-:::note WARNING (ATTENZIONE)
-The associated loading cause must have a default location indicated within the table of [Warehouse Causes (Causali di magazzino)](/docs/configurations/tables/logistics/warehouse-templates/).
+:::note WARNING
+The associated loading cause must have a default location indicated within the table of [Warehouse Templates](/docs/configurations/tables/logistics/warehouse-templates/).
 :::
 
 For all information on how to encode the barcodes to be read in the **Input code** field, please refer to the page regarding the [Barcode tokenizer](/docs/configurations/tables/general-settings/barcode-tokenizer).

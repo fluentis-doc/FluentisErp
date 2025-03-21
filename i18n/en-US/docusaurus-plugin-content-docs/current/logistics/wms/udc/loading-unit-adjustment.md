@@ -1,9 +1,9 @@
 ---
-title: Load Unit Adjustment (Rettifica unità di carico)
+title: Load Unit Adjustment 
 sidebar_position: 8
 ---
 
-:::important What it is for (A cosa serve)
+:::important Purpose
 The Load Unit Adjustment function of the Fluentis WMS allows modifications to the items contained in a load unit, permitting both positive and negative adjustments.     
 Operators can view all present items, change quantities, and add or remove items, making the process of updating stock levels more accurate and efficient.
 :::

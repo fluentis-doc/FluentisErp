@@ -1,9 +1,9 @@
 ---
-title: Load/Move UDC (Carico/Sposta UDC)
+title: Load/Move Loading unit 
 sidebar_position: 2
 ---
 
-:::important Purpose (A cosa serve)
+:::important Purpose 
 The **Load/Move UDC** function of Fluentis WMS is designed to simplify the process of managing load units. It allows operators to load a load unit that has not yet been registered in the system or to move an already loaded unit from one location to another, all through barcode scanning. With this functionality, the system facilitates real-time warehouse operations.
 :::
 
