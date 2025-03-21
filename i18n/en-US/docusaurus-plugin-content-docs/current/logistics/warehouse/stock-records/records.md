@@ -25,16 +25,16 @@ From this form, you can also insert a new warehouse record using the **New** but
 
 **Document date**: the column displays the date of the reference document present in the record header;   
 
-**Loading / Unloading (Carico / Scarico)**: the column displays the type of record. It can only be loading or unloading;   
+**Loading / Unloading**: the column displays the type of record. It can only be loading or unloading;   
 
-**Counterparty Warehouse (Magazzino di Contropartita)**: the column displays the code of the counterparty warehouse record, if present;   
+**Counterparty Warehouse**: the column displays the code of the counterparty warehouse record, if present;   
 
-**Counterparty Reason (Causale di Contropartita)**: the column displays the code of the counterparty reason of the record, if present;   
+**Counterparty Reason**: the column displays the code of the counterparty reason of the record, if present;   
 
-**Counterparty Number (Numero contropartita)**: the column displays the progressive number of the counterparty record, if present;   
+**Counterparty Number**: the column displays the progressive number of the counterparty record, if present;   
 
-**Counterparty Reference Document (Documento Riferimento contropartita)**: the column displays what is present in the "Reference Document" field of the counterparty record header, if present;   
+**Counterparty Reference Document**: the column displays what is present in the "Reference Document" field of the counterparty record header, if present;   
 
-**Account / Subaccount / Account Description (Conto / Sottoconto / Descrizione conto)**: the column displays the account, subaccount, and the name of the client or supplier entered in the warehouse record header.
+**Account / Subaccount / Account Description**: the column displays the account, subaccount, and the name of the client or supplier entered in the warehouse record header.
 
-For all other details not specified in this document regarding the common operation of forms, please refer to the following link [Common Functions, Buttons, and Fields (Funzionalità, pulsanti e campi comuni)](/docs/guide/common).
+For all other details not specified in this document regarding the common operation of forms, please refer to the following link [Common Functions, Buttons, and Fields](/docs/guide/common).

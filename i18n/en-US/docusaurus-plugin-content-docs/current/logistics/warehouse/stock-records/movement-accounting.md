@@ -21,11 +21,11 @@ The results grid consists of the following fields:
 **Number**: the field shows the progressive number of the warehouse record;     
 **Reference doc.**: the field shows what is present in the *Reference doc.* field in the header of the record;      
 **Document date**: the field shows the date of the related document present in the header of the record;      
-**Load / Unload (Carico / Scarico)**: the field shows the type of record, which can be either load or unload;      
+**Load / Unload **: the field shows the type of record, which can be either load or unload;      
 **Warehouse of destination**: the field shows the code of the destination warehouse, if present;      
-**Destination Warehouse Model (Modello del magazzino di destinazione)**: the field shows the identification code of the destination warehouse, if present;      
-**Destination Warehouse Number (Numero del magazzino di destinazione)**: the field shows the progressive number of the destination warehouse record, if present;      
-**Reference Document of Destination Warehouse (Documento di riferimento del magazzino di destinazione)**: the field shows what is present in the *Reference document* field in the header of the destination warehouse record, if present;      
+**Destination Warehouse Model**: the field shows the identification code of the destination warehouse, if present;      
+**Destination Warehouse Number**: the field shows the progressive number of the destination warehouse record, if present;      
+**Reference Document of Destination Warehouse**: the field shows what is present in the *Reference document* field in the header of the destination warehouse record, if present;      
 **Account description**: the field shows the description of the account of the contact depending on whether it is a debit or credit.     
 
 ## **Ledger record**
@@ -41,16 +41,16 @@ Additionally, in these last two tables, there is the possibility to view the cor
 
 The results grid of the **Documents** contains the following main fields:     
 **Warehouse**: the field shows the code of the warehouse where the record was generated;     
-**Warehouse Reason (Causale di magazzino)**: the field shows the code of the warehouse reason used for the movement and has thus been included in the header of the record;     
+**Warehouse Reason**: the field shows the code of the warehouse reason used for the movement and has thus been included in the header of the record;     
 **Accounting date**: the field shows the accounting date of the warehouse record;     
 **Movement no.**: the field shows the progressive number of the warehouse record;     
 **Document**: the field shows what is present in the *Reference doc.* field in the header of the record;     
 **Date of document**: the field shows the date of the *Reference doc.* present in the header of the record;     
-**Load / Unload (Carico / Scarico)**: the field shows the type of movement, which can be either load or unload;     
+**Load / Unload**: the field shows the type of movement, which can be either load or unload;     
 **Document Number**: the field shows the document number;     
 **Account**: the field shows the partner’s account;     
 **Detail account**: the field shows the subaccount;     
-**Account / Subaccount Description (Descrizione conto / Sottoconto)**: the field shows the detailed description of the account / partner name.     
+**Account / Subaccount Description**: the field shows the detailed description of the account / partner name.     
 
 The results grid of the **Ledger record** contains the following main fields:     
 **Registration date**: the column shows the date of entry in the main record;     
