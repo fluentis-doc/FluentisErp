@@ -1,12 +1,11 @@
 ---
-title: Management of Checkbox and Picking Confirmation (Gestione spunta e Conferma picking)
+title: Management of Checkbox and Picking Confirmation 
 sidebar_position: 2
 ---
 
-## Checkbox Management (Gestione spunta)
-
+## Checkbox Management 
 :::important What it is for
-The checkbox management of the Fluentis WMS is a tool designed to confirm the lines of picking actually picked by the operator in the warehouse. If at least one line is checked, the procedures for creating the Transport Document (DDT) and the invoice only consider these lines; otherwise, all the lines of the picking are considered. This system simplifies and speeds up the creation of transport and billing documents, allowing for the manual entry of new lines of items. Additionally, the checkbox management allows for the creation of Load Units (UDC) during the confirmation of the picking lines, grouping items into load units. Once a line is selected and the necessary data is entered, it is possible to create and manage new UDCs with the confirmed items.
+The checkbox management of the Fluentis WMS is a tool designed to confirm the lines of picking actually picked by the operator in the warehouse. If at least one line is checked, the procedures for creating the Transport Document (DDT) and the invoice only consider these lines; otherwise, all the lines of the picking are considered. This system simplifies and speeds up the creation of transport and billing documents, allowing for the manual entry of new lines of items. Additionally, the checkbox management allows for the creation of Load Units during the confirmation of the picking lines, grouping items into load units. Once a line is selected and the necessary data is entered, it is possible to create and manage new UDCs with the confirmed items.
 :::
 
 Starting from an existing Picking, it is possible to read the items present and group them into UDCs.    
@@ -37,11 +36,11 @@ If the user confirms the line of an item managed in lots and for which the lot h
 **Specific buttons**
 > **Detail Check**: allows you to navigate to the **Selected items** tab;        
 > **Confirm**: allows you to confirm the entered data and subsequently load the data related to the next line;          
-> **New UDC**: allows you to create a new *Load Unit* after selecting the type.         
+> **New Loading Unit**: allows you to create a new *Load Unit* after selecting the type.         
 
 Below the picking quantity, there is a read-only grid with the following columns: *Quantity*, *Location*, and *Lot*. This updates dynamically, for example, if only the item is indicated, it should show all locations with inventory > 0 where that item exists, if the lot is also indicated, it should show all locations with inventory > 0 where that item with that lot exists.
 
-- **UDC**
+- **Loading Unit**
 Allows you to view the composition of *Load Units* created for the current picking.          
 
 **Specific buttons**
@@ -72,7 +71,7 @@ The parameters are repeated because the form uses a shipping cause (without coun
 For all information on how to encode the barcodes to be read in the **Barcode Code** field, refer to the page related to the [Barcode tokenizer](https://docs/configurations/tables/general-settings/barcode-tokenizer).
 
 
-## Picking Confirmation (Conferma Picking)
+## Picking Confirmation
 
 :::important What it is for
 Starting from an existing Picking, without using load units, which are created using the [Checkbox Management](https://docs/logistics/wms/sales/check-row-menagement) form, with the **Picking Confirmation** form it is possible to confirm the individual lines of the picking, to move items between two warehouses or locations, directly creating the warehouse movement of displacement.

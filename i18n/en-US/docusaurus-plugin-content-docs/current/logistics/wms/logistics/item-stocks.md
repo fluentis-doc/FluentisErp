@@ -1,10 +1,10 @@
 ---
-title: Item Stock (Giacenza articolo)
+title: Item Stock 
 sidebar_position: 5
 ---
 
-:::important Purpose (A cosa serve)
-The **item stock (giacenza articolo)** function allows operators to quickly view the stock levels for each registered item. Through an interactive grid, it is possible to extract detailed information regarding the management stock, units of measure, and batches. Additionally, the function allows for analyzing stock aggregated by item, location, or project, thus providing a comprehensive view of material availability. This procedure facilitates inventory monitoring and allows for more accurate and informed management of warehouse operations, thereby contributing to optimizing overall logistical efficiency.
+:::important Purpose 
+The **item stock** function allows operators to quickly view the stock levels for each registered item. Through an interactive grid, it is possible to extract detailed information regarding the management stock, units of measure, and batches. Additionally, the function allows for analyzing stock aggregated by item, location, or project, thus providing a comprehensive view of material availability. This procedure facilitates inventory monitoring and allows for more accurate and informed management of warehouse operations, thereby contributing to optimizing overall logistical efficiency.
 :::
 
 This procedure is used to view the stock of an item.     
@@ -13,10 +13,10 @@ The form presents a grid that changes its columns based on the filters entered f
 For example, if only the code of a location is read, using the **Search** button, the search results will be displayed in the grid below with the following columns populated:
 
 > **ITEM**: indicates the item code;     
-> **Stock (Gest.) (Giacenza (Gest.))**: indicates the stock in the management unit of measure (main);      
+> **Stock (Gest.)**: indicates the stock in the management unit of measure (main);      
 > **Units of Measure**: indicates the item's unit of measure;          
 > **Stock**: is populated only if the *Default WMS* flag is enabled in the tab [Alternative Units of Measure in the Item Registry](/docs/erp-home/registers/items/create-new-items/item-registry/alternative-um). This value indicates the stock expressed in the alternative unit of measure, calculated based on the warehouse movements;         
-> **Stock (FC) (Giacenza (FC))**: is populated only if the *Default WMS* flag is enabled in the tab [Alternative Units of Measure in the Item Registry](/docs/erp-home/registers/items/create-new-items/item-registry/alternative-um). This value indicates the stock expressed in the alternative unit of measure, calculated using the conversion factor;               
+> **Stock (FC)**: is populated only if the *Default WMS* flag is enabled in the tab [Alternative Units of Measure in the Item Registry](/docs/erp-home/registers/items/create-new-items/item-registry/alternative-um). This value indicates the stock expressed in the alternative unit of measure, calculated using the conversion factor;               
 > **Batch**: indicates the item's batch;       
 > **Item description**: indicates the description of the item;      
 > **Variant**: indicates the variant code of the item;    
@@ -26,17 +26,17 @@ Meanwhile, when reading the item to adjust, using the **Search** button, the sea
 
 > **Location**: indicates the item's location;        
 > **ITEM**: indicates the item code;     
-> **Stock (Gest.) (Giacenza (Gest.))**: indicates the stock in the management unit of measure (main);      
+> **Stock (Gest.)**: indicates the stock in the management unit of measure (main);      
 > **Units of Measure**: indicates the item's unit of measure;          
 > **Stock**: is populated only if the *Default WMS* flag is enabled in the tab [Alternative Units of Measure in the Item Registry](/docs/erp-home/registers/items/create-new-items/item-registry/alternative-um). This value indicates the stock expressed in the alternative unit of measure, calculated based on the warehouse movements;         
-> **Stock (FC) (Giacenza (FC))**: is populated only if the *Default WMS* flag is enabled in the tab [Alternative Units of Measure in the Item Registry](/docs/erp-home/registers/items/create-new-items/item-registry/alternative-um). This value indicates the stock expressed in the alternative unit of measure, calculated using the conversion factor;               
+> **Stock (FC)**: is populated only if the *Default WMS* flag is enabled in the tab [Alternative Units of Measure in the Item Registry](/docs/erp-home/registers/items/create-new-items/item-registry/alternative-um). This value indicates the stock expressed in the alternative unit of measure, calculated using the conversion factor;               
 > **Batch**: indicates the item's batch;       
 > **Variant**: indicates the variant code of the item;    
 > **Variant description**: indicates the description of the item's variant.     
 
 :::note Note
 The columns related to stock are three: 
-- *Stock (Gest.)* - (gestionale) 
+- *Stock (Gest.)* - (management) 
 - *Stock*  
 - *Stock (FC)* - (FC = Conversion Factor)
 

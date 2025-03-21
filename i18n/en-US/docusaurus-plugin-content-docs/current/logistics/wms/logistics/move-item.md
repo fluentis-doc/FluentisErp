@@ -1,5 +1,5 @@
 ---
-title: Move Item (Sposta articolo)
+title: Move Item 
 sidebar_position: 3
 ---
 

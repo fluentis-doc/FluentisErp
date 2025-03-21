@@ -18,14 +18,14 @@ The **Clear All** button allows you to clear the form of all entered data.
 The *Item code* and the *Batch* must have the registry present in Fluentis.
 :::
 
-**Load/Unload Parameters** to be entered in the table [Warehouse Loading/Unloading Parameters for User (Parametri Magazzino Carico/Scarico per utente)](/docs/configurations/parameters/general-parameters/deliverynotes-grouping).
+**Load/Unload Parameters** to be entered in the table [Warehouse Loading/Unloading Parameters for User](/docs/configurations/parameters/general-parameters/deliverynotes-grouping).
 
 | Area | Module | Form |
 | :-- | :-- | :-- |
 | WM | Fluentis.FluentisErp.Mvvm.WM.Views | LoadItem |
 
 :::note Note
-If in the [Warehouse Loading/Unloading Parameters for User (Parametri Magazzino Carico/Scarico per utente)](/docs/configurations/parameters/general-parameters/deliverynotes-grouping) only one warehouse is associated for that user, it is proposed by default; otherwise, if more than one is associated, none will be proposed by default and the user can only choose from one of those entered.
+If in the [Warehouse Loading/Unloading Parameters for User](/docs/configurations/parameters/general-parameters/deliverynotes-grouping) only one warehouse is associated for that user, it is proposed by default; otherwise, if more than one is associated, none will be proposed by default and the user can only choose from one of those entered.
 :::
 
 For all information on how to encode the barcodes to be read in the **Input code** field, refer to the page regarding the [Barcode tokenizer](/docs/configurations/tables/general-settings/barcode-tokenizer).

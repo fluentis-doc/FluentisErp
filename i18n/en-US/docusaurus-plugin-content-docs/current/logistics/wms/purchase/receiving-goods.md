@@ -3,10 +3,10 @@ title: Receipt List
 sidebar_position: 1
 ---
 
-:::important Purpose (A cosa serve)
+:::important Purpose 
 The goods receipt module is an essential tool for effective warehouse flow management. This function allows for the timely identification of incoming materials, ensuring an accurate and organized loading of goods. The process begins with the selection of supplier orders that are not fulfilled or partially fulfilled, facilitated by detailed filters that allow viewing items awaiting receipt.
 
-Once the orders are selected, the operator can generate the Purchase Delivery Document (DDT), entering details related to the items to be loaded. The system also supports the creation of loading units (UDC) if these are managed, further improving the organization and traceability of received goods. By entering data related to lots, quantities, and other relevant information, the module ensures complete control over warehouse movements.
+Once the orders are selected, the operator can generate the Purchase Delivery Document (DDT), entering details related to the items to be loaded. The system also supports the creation of loading units if these are managed, further improving the organization and traceability of received goods. By entering data related to lots, quantities, and other relevant information, the module ensures complete control over warehouse movements.
 :::
 
 This procedure is used during the goods receipt phase for item identification, creation, and loading of the purchase DDT.
@@ -40,9 +40,9 @@ Additionally, information related to the first item on the order will be display
 
 Through the **Input code** field (using a barcode reader), it is possible to enter data related to the lot, location, the recorded quantity, and the item in case you want to load a different one than what is proposed, but still present in the previously selected orders.       
 After entering data related to the current item, they can be confirmed via the **Confirm** button.     
-Once all lines of the order have been confirmed, you will be automatically positioned on the **DDT Details (Dettaglio DDT)** tab, where by using the **Closed** button, the DDT can be saved and the related warehouse movement can be carried out.
+Once all lines of the order have been confirmed, you will be automatically positioned on the **DDT Details** tab, where by using the **Closed** button, the DDT can be saved and the related warehouse movement can be carried out.
 
-**Specific Buttons (Pulsanti specifici)**
+**Specific Buttons**
 > **Confirm**: allows confirming the entered data for the selected item;           
 > **Conf+Stp**: allows confirming the entered data for the item and also opens a pop-up that provides the option to print labels;       
 > **Print Report**: allows printing labels;       
@@ -53,15 +53,15 @@ Once all lines of the order have been confirmed, you will be automatically posit
 - **DDT Details**       
 In this form, all information related to the created lines is displayed.
 
-**Specific Buttons (Pulsanti specifici)**
+**Specific Buttons**
 > **Delete items**: allows deleting the selected line from the DDT.   
 
 - **Order Details**: 
 In this form, all information related to the considered supplier order is displayed.
 
-## **Goods receipt with loading units (Ricevimento merci con unità di carico)**
+## **Goods receipt with loading units**
 
-If the item is managed with loading units, and therefore, in the tab [packaging](/docs/erp-home/registers/items/create-new-items/item-registry/packaging) of the item registry, there must be at least one line with the flag **Mandatory Loading Unit (Unità di carico obbligatoria)** active, the priority and the quantity.     
+If the item is managed with loading units, and therefore, in the tab [packaging](/docs/erp-home/registers/items/create-new-items/item-registry/packaging) of the item registry, there must be at least one line with the flag **Mandatory Loading Unit** active, the priority and the quantity.     
 The goods receipt procedure will have to consider the line by choosing the one with the highest priority among those for that supplier client (if indicated, otherwise choose among those without), but with the flag Mandatory Loading Unit active.     
 
 Therefore, after entering all data related to the item as described previously for the case without UDC, when the **Confirm** button is pressed, the procedure will open a new form dedicated to the creation of loading units; where the item data will be preloaded, such as: *class*, *code*, and *item description*, with possible *variant* and *lot*.     
@@ -69,8 +69,8 @@ Therefore, after entering all data related to the item as described previously f
 The **Residual quantity** will initially be equal to the value indicated in the main form in the quantity field; this will then be dynamically updated with each new entry in the table.    
 The table is initially empty, while the following values are already entered: 
 > **Number**: indicates the number of loading units of that type;         
-> **UDC Type (Tipo UDC)**: indicates the type of loading unit;       
-> **Loading unit number (Numero dell’unità di carico)**: indicates the unique number of the loading unit;         
+> **UDC Type**: indicates the type of loading unit;       
+> **Loading unit number**: indicates the unique number of the loading unit;         
 > **Quantity**: indicates the quantity contained in the loading unit.
 
 The cursor focus is positioned in the supplier reference field, allowing the operator to easily and quickly enter the value.       

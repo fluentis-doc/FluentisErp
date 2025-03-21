@@ -18,14 +18,14 @@ The **Clear All** button allows you to empty the form of all entered data.
 The *Item code* and the *Batch* must have the registry present in Fluentis.
 :::
 
-**Load/Unload Parameters** to be entered in the table [Warehouse Loading/Shipping Parameters by User (Parametri Magazzino Carico/Scarico per utente)](/docs/configurations/parameters/general-parameters/deliverynotes-grouping).
+**Load/Unload Parameters** to be entered in the table [Warehouse Loading/Shipping Parameters by User](/docs/configurations/parameters/general-parameters/deliverynotes-grouping).
 
 | Area | Module | Form |
 | :-- | :-- | :-- |
 | WM | Fluentis.FluentisErp.Mvvm.WM.Views | UnloadItem |
 
 :::note Note
-If in the [Warehouse Loading/Shipping Parameters by User (Parametri Magazzino Carico/Scarico per utente)](/docs/configurations/parameters/general-parameters/deliverynotes-grouping) a single warehouse is associated for that user, it will be proposed by default; otherwise, if more than one is associated, by default none will be proposed and the user can only choose from those entered.
+If in the [Warehouse Loading/Shipping Parameters by User](/docs/configurations/parameters/general-parameters/deliverynotes-grouping) a single warehouse is associated for that user, it will be proposed by default; otherwise, if more than one is associated, by default none will be proposed and the user can only choose from those entered.
 :::
 
-For all information on how to encode the barcodes to be scanned in the **Input code** field, consult the page related to the [Barcode Tokenizer (Barcode tokenizer)](/docs/configurations/tables/general-settings/barcode-tokenizer).
+For all information on how to encode the barcodes to be scanned in the **Input code** field, consult the page related to the [Barcode Tokenizer](/docs/configurations/tables/general-settings/barcode-tokenizer).
