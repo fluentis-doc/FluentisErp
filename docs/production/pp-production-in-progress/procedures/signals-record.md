@@ -28,7 +28,7 @@ Selezionando una registrazione, nel tab sottostante **dichiarazioni** è possibi
 
 *Pulsanti specifici*: 
 
-> **Cancellazione registrazione dichiarazioni**: questo pulsante permette di ripristinare tutte le dichiarazioni registrate in quella registrazione;
+> **Cancellazione registrazione dichiarazioni**: questo pulsante permette di ripristinare tutte le dichiarazioni registrate in quella registrazione;          
 > **Ripristino dichiarazione**: questo pulsante permette di ripristinare la singola registrazione selezionata dall'utente nella griglia sottostante, lasciando le altre registrate.
 
 Per dettagli sul funzionamento comune delle form fare riferimento al link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).

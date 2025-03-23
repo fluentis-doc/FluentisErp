@@ -11,7 +11,7 @@ Questa form permette di effettuare il cambio di stato degli ordini di produzione
 
 ## Filtro
 
-In questo tab è possibile visualizzare la lista degli ordini pianificati che devono essere ancora rilasciati ed è possibile filtrarli attraverso una serie di criteri di selezione. 
+In questo tab è possibile visualizzare la lista degli ordini di produzione in stato lanciato che devono essere ancora rilasciati ed è possibile filtrarli attraverso una serie di criteri di selezione. 
 
 Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** presente nella *ribbon bar* per visualizzare i risultati all'interno della griglia di risultato.
 
@@ -27,7 +27,7 @@ Tenendo selezionata una delle righe presenti nella griglia di risultato, vengono
 
 Per lanciare il ripristino, selezionare uno o più ordini e cliccare il pulsante **Ripristino**. 
 
-Il ripristino dell'ordine di produzione è possibile solo se l'ordine di produzione generato si trova nello stato di *Esecutivo* e non sono ancora state iniziate le relative dichiarazioni di produzione; mentre nel caso in cui sia già *Evaso* non è più possibile eseguire il ripristino dell'ordine di produzione, a meno che non si proceda a ritroso partendo dal rollback della registrazione della dichiarazioni di produzione.
+Il ripristino dell'ordine di produzione è possibile solo se l'ordine di produzione generato si trova nello stato di *Esecutivo* e non sono ancora state iniziate le relative dichiarazioni di produzione; mentre nel caso in cui sia già *Evaso* non è più possibile eseguire il ripristino dell'ordine di produzione, a meno che non si proceda a ritroso partendo dal rollback della registrazione della dichiarazione di produzione.
 
 Eseguendo questa procedura, gli ordini ripristinati saranno nuovamente visibili nel tab di **Filtro** dove sarà possibile rieseguire il rilascio.
 
