@@ -7,42 +7,45 @@ La form si apre tramite il percorso **Parametri > Produzione > Parametri Ordini 
 
 ## 1. Generale
 
-**Gestione automatica dei lotti e dei serial number**: se attivo, propone automaticamente i lotti e/o i numeri di serie dei materiali che vengono utilizzati nel corso della produzione, direttamente all'interno delle apposite griglie poste in relazione alla griglia dei materiali utilizzati della segnalazione di produzione. Diversamente, l'utente dovrà impostare manualmente sia i lotti, sia i numeri di serie degli articoli utilizzati che abbiano questo tipo di gestione; ricordiamo che la gestione a lotti o SN viene impostata all'interno dell'*Anagrafica articolo* nel tab [Lotti e SN](/docs/erp-home/registers/items/create-new-items/item-registry/lots-and-serial-number) selezionando il tipo di gestione desiderata.
+**Gestione automatica dei lotti e dei serial number**: se attivo, propone automaticamente i lotti e/o i numeri di serie dei materiali che vengono utilizzati nel corso della produzione, direttamente all'interno delle apposite griglie poste in relazione alla griglia dei materiali utilizzati della dichiarazione di produzione. Diversamente, l'utente dovrà impostare manualmente sia i lotti, sia i numeri di serie degli articoli utilizzati che abbiano questo tipo di gestione; ricordiamo che la gestione a lotti o SN viene impostata all'interno dell'*Anagrafica articolo* nel tab [Lotti e SN](/docs/erp-home/registers/items/create-new-items/item-registry/lots-and-serial-number) selezionando il tipo di gestione desiderata.
 
-**Gestione doppia unità di misura**: se attivo, permette all'utente di gestire la doppia unità di misura all'interno delle segnalazioni di produzione, quindi sia per gli articoli prodotti sia per i materiali utilizzati;
+**Gestione doppia unità di misura**: se attivo, permette all'utente di gestire la doppia unità di misura all'interno delle dichiarazioni di produzione, quindi sia per gli articoli prodotti sia per i materiali utilizzati;
 
-**Stesso lotto per scarti articoli/scarti materiali**: se attivo, permette all'utente di decidere che il lotto caricato nel magazzino scarti sia identico al lotto che è stato prodotto (nel caso di scarto del prodotto finito, dunque nel caso del primo dei 2 flag) oppure al lotto che è stato utilizzato (nel caso di scarto del materiale, dunque nel caso del secondo dei 2 flag);
+**Stesso lotto per scarti articoli**: se attivo, permette all'utente di decidere che gli scarti prodotti vengano caricati a magazzino con lo stesso lotto con cui vengono caricati i prodotti; altrimenti se il flag non è attivo verranno caricati con due lotti differenti;     
 
 **Divisione ordine se i lotti materiali non sono sufficienti**: se attivo, permette all'utente di fare in modo che la procedura di *Rilascio ordini di produzione* controlli se le quantità di materiale da scaricare automaticamente (quindi solo in caso di tipo prelievo automatico o manuale ma con gestione WIP) siano sufficienti nel magazzino da cui devono essere prelevate; se non lo sono, la procedura divide l'ordine di produzione in 2 ordini diversi che avranno lo stesso numero/anno ma lotto diverso (il primo avrà il lotto 0, il secondo il lotto 1; il primo sarà quello per cui i materiali presenti a magazzino sono sufficienti);
 
 **Cambia data commessa su cambio data ordine di produzione**: se attivo, permette all'utente di fare in modo che al cambio della data fine dell'ordine di produzione venga modificata automaticamente anche la data fine della commessa, sempre che l'articolo oggetto dell'ordine di produzione sia lo stesso oggetto della commessa di produzione; quindi l'ordine di produzione deve essere di livello 0;
 
-**Calcolo costo produzione per avanzamenti**: se attivo, permette all'utente di fare in modo che man mano che si registrano gli avanzamenti di produzione il costo della registrazione di magazzino venga incrementato di volta in volta del costo effettivo calcolato in base al tempo effettivo dichiarato nella segnalazione moltiplicato per il costo orario di macchina e/o gruppo manodopera, quindi per il costo orario del centro di lavoro utilizzato;
+**Calcolo costo produzione per avanzamenti**: se attivo, permette all'utente di fare in modo che man mano che si registrano gli avanzamenti di produzione il costo della registrazione di magazzino venga incrementato di volta in volta del costo effettivo calcolato in base al tempo effettivo dichiarato nella dichiarazione moltiplicato per il costo orario di macchina e/o gruppo manodopera, quindi per il costo orario del centro di lavoro utilizzato;
 
 **Stampa Fogli di lavoro per Ordini Lanciati**: è un default che viene impostato sulla relativa form di lancio di stampa e quando viene fatto il lancio degli ordini escono in automatico la stampa degli ordini;
 
-**Determinazione tempi in automatico nelle segnalazioni**: se attivo, calcola automaticamente il tempo macchina e il tempo operaio in base agli orari delle segnalazioni. Diversamente, l'utente dovrà impostare manualmente i detti tempi sulla riga della segnalazione di produzione; 
+**Determinazione tempi in automatico nelle dichiarazioni**: se attivo, calcola automaticamente il tempo macchina e il tempo operaio in base agli orari delle dichiarazioni. Diversamente, l'utente dovrà impostare manualmente i detti tempi sulla riga della dichiarazione di produzione; 
 
-**Proposta automatica U.M. alternativa**: se attivo, propone automaticamente l'unità di misura alternativa impostata per l'articolo all'interno della segnalazione di produzione. Solitamente, se viene attivato il flag **Gestione doppia unità di misura**, si attiva per comodità anche questo flag che diventa editabile solamente se si è attivato il flag **Gestione doppia unità di misura**;
+**Proposta automatica U.M. alternativa**: se attivo, propone automaticamente l'unità di misura alternativa impostata per l'articolo all'interno della dichiarazione di produzione. Solitamente, se viene attivato il flag **Gestione doppia unità di misura**, si attiva per comodità anche questo flag che diventa editabile solamente se si è attivato il flag **Gestione doppia unità di misura**;
 
 **Stesso lotto per scarti materiali**: se abilitato, i materiali scartati mantengono lo stesso lotto dei materiali consumati;
 
-**Registrazione automatica segnalazioni**: se attivo, questo flag indica che appena inserisco la segnalazione questa viene anche registrata automaticamente;
+**Registrazione automatica dichiarazioni**: è utilizzato nella form delle dichiarazioni di produzione presente nel WMS, se attivo, fa si che appena inserisco la dichiarazione questa viene anche registrata automaticamente;
 
 **Associa lotto per lista prelievo**: se attivo, questo flag indica che quando si crea una lista di prelievo tramite la relativa procedura, per i materiali gestiti a lotti il sistema va a scegliere i lotti che sono da prelevare per quel/quegli ordini di produzione che ho selezionato; se non viene attivato vuol dire che l'utente dovrà andare a dichiarare manualmente nel picking quali sono i lotti che sono stati prelevati;
 
 **Aggiorna materiali utilizzati nell’ordine di produzione**: se attivo, al variare della quantità dichiarata in una dichiarazione di produzione, verrà mostrato un messaggio che chiede di ricalcolare o meno le quantità utilizzate dei materiali; se non è attivo, il ricalcolo dei materiali avviene automaticamente;
 
-**Abilita controllo presenze nel MES**: se attivo, abilita il controllo presenze all'interno di Fluentis MES, Il controllo si basa sulla tabella *Fluentis.HR_BadgeRecords*.       
+**Abilita controllo presenze nel MES**: se attivo, abilita il controllo presenze all'interno di [Fluentis MES](/docs/production/mes/mes-intro), Il controllo si basa sulla tabella *Fluentis.HR_BadgeRecords*.       
 In questa i campi obbligatori per il controllo sono: *HRBR_Resource_HRR_Id*, *HRBR_RecordDateTime*, *HRBR_BadgeRecordType_HRBRTY_Id*, che può assumere i valori E = Ingresso o U = Uscita.
 Per ogni riga ci può essere solo l’orario di entrata o quello di uscita, quindi in giorno ci saranno 4 righe per ogni utente, ad esempio:     
 - 2024-01-02 08:30:00.000 - tipo E 
 - 2024-01-02 12:30:00.000 - Tipo U 
 - 2024-01-02 14:00:00.000 - Tipo E 
 - 2024-01-02 18:00:00.000 - Tipo U      
-I dati devono essere importati all'interno di questa tabella partendo dai dati del timbratore utilizzato.
+I dati devono essere importati all'interno di questa tabella partendo dai dati del timbratore utilizzato.      
+Questi verranno poi incrociati con i valori di inizio e fine lavoro di ciascun operatore inserito all’interno del tab *Squadra* presente in [Fluentis MES](/docs/production/mes/mes-intro).
 
-**Mostra la versione per componente dentro distinta base**: se attivo, abilita il campo della versione nel tab componente della distinta base.
+**Mostra la versione per componente dentro distinta base**: se attivo, abilita il campo della versione presente nel tab componente della distinta base.
+
+**Abilita il salvataggio automatico sulle dichiarazioni di produzione**: se attivo, abilita il salvataggio automatico all'interno delle dichiarazioni di produzione.
 
 Ci sono infine altre quattro sezioni: **Fogli di lavoro Gestiti per**, **Periodo Analisi**, **Valorizzazione materiali a costo**, **Proposta sequenza fase**.
 
@@ -50,7 +53,7 @@ Ci sono infine altre quattro sezioni: **Fogli di lavoro Gestiti per**, **Periodo
 
 **Periodo di Analisi**: la sezione consente, tramite l'attivazione di uno dei radio button, di scegliere il periodo di filtraggio degli ordini di produzione che dovranno essere visualizzati nella finestra della stampa del foglio di lavoro (settimanale, giornaliero o ogni X giorni);
 
-**Valorizzazione materiali a costo**: la sezione consente, tramite l'attivazione di uno dei radio button, di scegliere il tipo di costo per la valorizzazione dei materiali (costo ultimo/medio alla data del versamento ovvero della mia segnalazione di produzione o il costo standard). Inoltre, è possibile, selezionando i flag *Lotti* e/o *Commessa di produzione*, andare a proporre come costo del materiale il costo ultimo/Medio/standard per il relativo lotto e/o commessa di produzione in base ai flag attivati.    
+**Valorizzazione materiali a costo**: la sezione consente, tramite l'attivazione di uno dei radio button, di scegliere il tipo di costo per la valorizzazione dei materiali (costo ultimo/medio alla data del versamento ovvero della mia dichiarazione di produzione o il costo standard). Inoltre, è possibile, selezionando i flag *Lotti* e/o *Commessa di produzione*, andare a proporre come costo del materiale il costo ultimo/Medio/standard per il relativo lotto e/o commessa di produzione in base ai flag attivati.    
 
 **Proposta sequenza fase**: la sezione consente di scegliere, durante la creazione di un ciclo di lavoro, il numero di sequenza della fase che viene proposto, che può essere preso dal numero di sequenza della fase standard oppure come progressivo dell’ordine di inserimento, indicando anche il valore di step.
 
@@ -79,7 +82,7 @@ Per poter impostare uno di questi magazzini sarà sufficiente selezionare tramit
 
 Oltre a questi magazzini principali vi sono i magazzini W.I.P. che si attivano selezionando la voce W.I.P. e procedendo alla selezione all'interno della combo box dei magazzini e delle causali come viene fatto per gli altri magazzini.
 
-Per magazzini *W.I.P.* (Work in Progress) si intendono dei magazzini di transizione, in cui la merce transita nel momento in cui l'ordine di produzione del prodotto finito o del semilavorato viene rilasciato. Quando vengono settati questi magazzini il tipo di prelievo del materiale deve essere *Manuale*, altrimenti se fosse un tipo di prelievo *Automatico* lo scarico dei materiali avverrebbe in automatico nel momento del rilascio dell'ordine di produzione. Nel caso dei magazzini W.I.P. il materiale al momento del rilascio viene quindi spostato in questi magazzini (tramite la [Lista di prelievo materiali](/docs/production/pp-production-in-progress/picking-materials-list)) e viene scaricato durante la segnalazione di produzione dell'ultima fase di lavorazione (produttiva e movimentabile) dell'articolo dell'ordine di produzione oppure durante la fase di lavorazione a cui il materiale è associato.
+Per magazzini *W.I.P.* (Work in Progress) si intendono dei magazzini di transizione, in cui la merce transita nel momento in cui l'ordine di produzione del prodotto finito o del semilavorato viene rilasciato. Quando vengono settati questi magazzini il tipo di prelievo del materiale deve essere *Manuale*, altrimenti se fosse un tipo di prelievo *Automatico* lo scarico dei materiali avverrebbe in automatico nel momento del rilascio dell'ordine di produzione. Nel caso dei magazzini W.I.P. il materiale al momento del rilascio viene quindi spostato in questi magazzini (tramite la [Lista di prelievo materiali](/docs/production/pp-production-in-progress/picking-materials-list)) e viene scaricato durante la dichiarazione di produzione dell'ultima fase di lavorazione (produttiva e movimentabile) dell'articolo dell'ordine di produzione oppure durante la fase di lavorazione a cui il materiale è associato.
 
 Diversamente, se il tipo di prelievo del materiale è *Con Lista*, allora mentre lo spostamento del materiale al magazzino W.I.P. avviene nello stesso modo rispetto al tipo di prelievo manuale, lo scarico dal W.I.P. avviene tramite la procedura della [Lista di prelievo materiali](/docs/production/pp-production-in-progress/picking-materials-list).     
 
