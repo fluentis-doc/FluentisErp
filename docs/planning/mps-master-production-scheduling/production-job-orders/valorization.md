@@ -154,4 +154,37 @@ In questo tab vengono messe in evidenza tutte le componenti di costo per quanto 
 
 Queste due tipologie di analisi possono essere confrontate tramite una *ripartizione dei costi* con un diagramma a torta, oppure con un *raffronto dei costi* utilizzando un diagramma a barre.
 
+## Modalità di calcolo dei costi preventivi e effettivi (consuntivi)
+
+I documenti preventivi che concorrono al calcolo dei costi preventivi sono: 
+- Commessa
+- Ordine pianificato
+- Richiesta di acquisto
+- Ordine fornitore
+- Ordine di produzione 
+- Ordine di conto lavoro
+
+I documenti effettivi che concorrono al calcolo dei costi effettivi sono: 
+- DDT di consegna materiale
+- Rientri di conto lavoro
+- Dichiarazioni di produzione
+
+### Lavorazioni interne
+
+I costi delle lavorazioni interne vengono presi dalla [Macchina](/docs/configurations/tables/production/machines) e dal [Gruppo manodopera](/docs/configurations/tables/production/labour-group) che sono stati previsti di utilizzare nel ciclo di lavoro per i costi preventivi e da quelli che sono stati effettivamente utilizzati nelle dichiarazioni di produzione per i costi effettivi.         
+Alla [Macchina](/docs/configurations/tables/production/machines) e al [Gruppo manodopera](/docs/configurations/tables/production/labour-group) viene associato un [Centro di costo](/docs/configurations/tables/production/cost-center) nelle rispettive tabelle, dove a questo [Centro di costo](/docs/configurations/tables/production/cost-center) è associata una certa tariffa.         
+Ovviamente, il costo indicato nel [Centro di costo](/docs/configurations/tables/production/cost-center) verrà moltiplicato per il tempo indicato nel ciclo di lavoro per i costi preventivi, mentre per i costi effettivi verrà moltiplicato per il tempo effettivamente impiegato riportato nelle dichiarazioni di produzione.
+Inoltre, è importate avere inserito il numero di macchine e il numero di operatoti sia nel ciclo che poi nella dichiarazione di produzione; aver generato il [Calendario di fabbrica](/docs/configurations/tables/production/factory-calendar) e quelli delle [Capacità produttive](/docs/configurations/tables/production/productive-capacity-calendar); ed anche aver indicato all'interno dei [Centri di lavoro](/docs/erp-home/registers/production/routes/work-center) i relativi orari di inizio e fine (compresa la pausa).
+
+### Lavorazioni esterne
+
+Il costo preventivo si basa sul prezzo di listino di conto lavoro (fintanto che non è stato creato l'ordine di conto lavoro), nel momento in cui viene creato l'ordine di conto lavoro si baserà sul prezzo indicato nella riga dell'articolo.      
+Per quanto riguarda il costo effettivo, il costo viene preso dal valore indicato nel documento di rientro di conto lavoro.       
+
+### Materiali
+
+Il costo del materiali si basa sul **Tipo costo** che abbiamo selezionato nella costificazione, quindi ultimo, medio o standard.          
+Inoltre, si basa anche sui flag **Costo del lotto** e **Costo della commessa**. Se sono attivati entrambi, la procedura valorizzerà il costo del materiale in base al tipo costo selezionato considerando i valori solo di quella specifica commessa e per quello specifico lotto, ovviamente tra i movimenti effettuati con causali di carico con il flag *aggiorna costo ultimo o medio* (a seconda del valore indicato nel campo **Tipo di costo**) e il flag di *interesse fiscale* attivi; se non trova nessun movimento con queste caratteristiche va a cercare tra i movimenti che hanno caricato quel lotto, se non trova nemmeno questi va a cercare tra tutti i movimenti di quell'articolo. Se non ho nessun movimento di carico per quell'articolo va a vedere nei rispettivi campi costo ultimo, medio e standard dell'anagrafica dell'articolo.         
+Nel caso del costo preventivo i valori verranno presi dalla [Richiesta di acquisto](/docs/purchase/purchase-requests/general-overview) e dall'[Ordine fornitore](/docs/purchase/purchase-orders/general-overview) e moltiplicati per i consumi previsti nella [Distinta base](/docs/erp-home/registers/production/bill-of-materials/assemblies/new-assemble); mentre per i costi effettivi verranno presi dai [DDT di acquisto](/docs/purchase/purchase-delivery-note/general-overview) del materiale e moltiplicati per le quantità impiegate nelle [Dichiarazioni di produzione](/docs/production/pp-production-in-progress/signals/sisgnals).
+
 Per i dettagli sul funzionamento comune delle form fare riferimento al link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).

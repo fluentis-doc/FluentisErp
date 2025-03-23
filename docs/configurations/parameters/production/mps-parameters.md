@@ -43,7 +43,7 @@ Si ricorda che per scatenare l’automatismo, l’ordine cliente deve essere *co
 
 ## Costificazione commessa  
 
-In questa sezione è possibile indicare dei parametri che saranno proposti come defualt per la costificazione delle commesse di produzione.    
+In questa sezione è possibile indicare dei parametri che saranno proposti come default per la costificazione delle commesse di produzione.    
 
 > **Tipo di costo**: permette di indicare il tipo di costo da utilizzare per la costificazione delle materie prime tra costo *Ultimo*, *Medio* e *Standard*;    
 > **Tipo di ricarico**: permette di indicare il tipo di ricarico tra *Costo* (a valore) e *Percentuale*; nel campo accanto è possibile inserire il valore corrispondente;      
@@ -51,7 +51,7 @@ In questa sezione è possibile indicare dei parametri che saranno proposti come 
 > **Costo della commessa**: attivando questo flag, la procedura valorizzerà il costo del materiale in base al tipo costo selezionato considerando i valori solo di quella specifica commessa.     
 
 :::note Nota
-Se **Costo del lotto** e **Costo della commessa** sono attivati entrambi, la procedura valorizzerà il costo del materiale in base al tipo costo selezionato considerando i valori solo di quella specifica commessa e per quello specifico lotto.
+Se **Costo del lotto** e **Costo della commessa** sono attivati entrambi, la procedura valorizzerà il costo del materiale in base al tipo costo selezionato considerando i valori solo di quella specifica commessa e per quello specifico lotto, ovviamente tra i movimenti effettuati con causali di carico con il flag aggiorna costo ultimo o medio (a seconda del valore indicato nel campo **Tipo di costo**) e il flag di interesse fiscale attivi; se non trova nessun movimento con queste caratteristiche va a cercare tra i movimenti che hanno caricato quel lotto, se non trova nemmeno questi va a cercare tra tutti i movimenti di quell'articolo. Se non ho nessun movimento di carico per quell'articolo va a vedere nei rispettivi campi costo ultimo, medio e standard dell'anagrafica dell'articolo.
 ::: 
 
 ## Magazzini di pianificazione commesse  
