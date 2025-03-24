@@ -1,5 +1,5 @@
 ---
-title: New Sales DDT 
+title: New Sales
 sidebar_position: 2
 ---
 
