@@ -22,7 +22,7 @@ As with all search forms, this window consists of a filter area and a results gr
 By positioning on the row of the record that you wish to view in detail and double-clicking, a detail window will open containing the **General** information and all **Accounting data** related to that record, which will be detailed in the following articles.
 
 *Specific Button*:  
-> **Duplicate**: allows you to duplicate the selected record. The button opens a form within which you must define the basic elements of the copy: business name, nickname (i.e., the record's own code), address, postal code, municipality, and province. Once the copy is confirmed, it will automatically open in edit mode. In the copy of the record, all the sub-accounts of the chart of accounts associated with the record in the active company will also be recreated, assigning a new sub-account according to the sequential number of each account.
+> **Duplicate**: allows you to duplicate the selected record. The button opens a form within which you must define the basic elements of the copy: business name, nickname (i.e., the record's own code), address, postal code, municipality, and province. Once the copy is confirmed, it will automatically open in edit mode. In the copy of the record, all the detail accounts of the chart of accounts associated with the record in the active company will also be recreated, assigning a new detail account according to the sequential number of each account.
 
 ### Create Record
 

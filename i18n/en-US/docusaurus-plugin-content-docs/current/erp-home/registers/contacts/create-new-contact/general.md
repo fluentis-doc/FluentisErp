@@ -11,17 +11,17 @@ The window consists of a first section where the information related to the **Da
 
 ### Registry Data 
 
-**Company Name:** this is the field where the name of the entity is defined: it will be assigned to all the accounting sub-accounts defined for the registry in use and will be reported in every accounting/document print.
+**Company Name:** this is the field where the name of the entity is defined: it will be assigned to all the accounting detail accounts defined for the registry in use and will be reported in every accounting/document print.
 
 Based on the text entered here, upon exiting the field, the management system will automatically generate a ‘Nickname,’ which is a short, unique code identifying the registry itself: this can be modified by the user but must be unique in the list of all registries. Since the search for the subject (if accounting) will typically be done based on the company name, this field is not particularly relevant.
 
-**VAT Number:** a field composed of the international ISO code of the country (defined in the Nations table) and the corresponding VAT number. The field is subject to validity checks of the control character for Italian VAT numbers (the check is performed upon exiting the field). Once the VAT number is set, in the case of a European subject, using the ‘Propose data (Proponi dati)’ button, it is possible to request verification and reception of the available data from the VIES community database: for some countries, the address corresponding to the requested VAT number is also returned, which will populate the fields in ***Fluentis***.
+**VAT Number:** a field composed of the international ISO code of the country (defined in the Nations table) and the corresponding VAT number. The field is subject to validity checks of the control character for Italian VAT numbers (the check is performed upon exiting the field). Once the VAT number is set, in the case of a European subject, using the ‘Propose data’ button, it is possible to request verification and reception of the available data from the VIES community database: for some countries, the address corresponding to the requested VAT number is also returned, which will populate the fields in ***Fluentis***.
 
 **Tax Code:** a field for entering the tax code of the subject;
 
 **Natural or Legal Person:** indicates whether the subject is a private individual or not;
 
-**Accounting:** a flag present by default in new entries, it will allow defining the details of administrative/commercial management for the sub-accounts associated with the registry in use.
+**Accounting:** a flag present by default in new entries, it will allow defining the details of finance/commercial management for the detail accounts associated with the registry in use.
 
 **Address:** the address of the legal headquarters;
 
@@ -39,7 +39,7 @@ Based on the text entered here, upon exiting the field, the management system wi
 
 **Notes:** a free field where you can define, for example, the full text of the address to be reported on document prints, without having to combine address + postal code + municipality + province;
 
-**Country:** code of the country for the registry in use, as defined in the table (Home>Tables>General Settings). It should be noted that this field is the basis for identifying subjects present in countries with privileged taxation (Home>Tables>General Settings>Black list countries), for the related tax declaration of the administrative area;
+**Country:** code of the country for the registry in use, as defined in the table (Home>Tables>General Settings). It should be noted that this field is the basis for identifying subjects present in countries with privileged taxation (Home>Tables>General Settings>Black list countries), for the related tax declaration of the finance area;
 
 **Region:** code of the belonging region (Home>Tables>General Settings);
 
@@ -59,7 +59,7 @@ Based on the text entered here, upon exiting the field, the management system wi
 
 **Date/User of last change:** field that displays the user and date of the last save made for the registry in use;
 
-**End of Validity Date:** a field to block the use of the registry in use. Once this date is set, the system will ask whether to apply this end of validity to all the associated accounting sub-accounts: none, the only active entity, all entities, or cancel the modification;
+**End of Validity Date:** a field to block the use of the registry in use. Once this date is set, the system will ask whether to apply this end of validity to all the associated accounting detail accounts: none, the only active entity, all entities, or cancel the modification;
 
 **Notes:** a field where any notes related to the subject can be entered;
 
@@ -80,14 +80,14 @@ In the **Other Data** section, you can enter the customer number, the n. reg. au
 In the **Contacts** grid, you can specify, for the contact in use, the list of reference persons present within it with a description of the role occupied, and the relevant phone contacts and/or email addresses.
 
 :::tip[]
-In the **Detail accounts in all companies** grid, you can see if accounting use has been defined for the registry in use in another company; the grid will then display a list of the various assigned sub-accounts with their corresponding reference company.
+In the **Detail accounts in all companies** grid, you can see if accounting use has been defined for the registry in use in another company; the grid will then display a list of the various assigned detail accounts with their corresponding reference company.
 :::
 
 ### Alternative Addresses 
 
 Here you can enter some alternative addresses that depend on the [**Associated Address Type**](/docs/configurations/tables/general-settings/address-types) 
 
-**Note:** these are not the delivery addresses for which the [Delivery](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/delivery) tab has been developed in the *Accounting Data* section where you enter the *Recipients/Destinations* of the goods to allow complete management in the documents).
+**Note:** these are not the delivery addresses for which the [Delivery](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/delivery) tab has been developed in the *Accounting Data* section where you enter the *Recipients/Destinations* of the goods to allow complete management in the documents.
 
 **The most frequent function of this section is especially the management of email addresses to automate the sending of documents, usually print reports, via workflow (operational flows with state transitions to manage within the masks) primarily through bulk email sending.**
 
@@ -99,7 +99,7 @@ Its function, in addition to a possible simple entry of alternative addresses (e
 
 - **Management of email addresses in bulk document sending** (Sales invoices, but also other types with prior configuration) via a shipping queue managed by the Bizlink component.
 
-- Management of [Co-owners (Cointestatari)](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/fiscal-information) of the sales invoice.
+- Management of [Co-owners](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/fiscal-information) of the sales invoice.
 
 #### Address Entry Procedure
 
@@ -137,7 +137,7 @@ Once the **General** information is entered, you will proceed to enter specific 
 This section serves to manage the possibility of historicizing, or storing changes, in the general data, such as a change of company name or address, etc. of the subject in question, such as a customer or a supplier.
 
 :::note
-In particular, a change of company name will automatically modify (although a confirmation message must be accepted) the description of the accounting sub-accounts of the chart of accounts assigned to the contact registry.
+In particular, a change of company name will automatically modify (although a confirmation message must be accepted) the description of the accounting detail accounts of the chart of accounts assigned to the contact registry.
 
 Therefore, the need to store the previous data is particularly felt to track documents and other data entered through the previous reference.
 :::
