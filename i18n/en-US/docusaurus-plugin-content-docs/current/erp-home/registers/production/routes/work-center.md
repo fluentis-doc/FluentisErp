@@ -19,8 +19,8 @@ The mandatory information for creating a new work center includes: the code, des
 
 The form consists of a main section where the following data related to the work center is entered:
 
-**Work Center**: indicates the code of the work center (CdL);  
-**Work center description**: indicates the description of the work center (CdL);  
+**Work Center**: indicates the code of the work center;  
+**Work center description**: indicates the description of the work center;  
 **Fixed time**: indicates that the work center operates on a fixed time basis, meaning the processing time of the item does not depend on the number of pieces;  
 **Infinite capacity**: indicates that the work center operates with infinite capacity; therefore, it has such great availability that it can be continuously loaded;  
 **Work center type**: indicates whether the work center is internal or external;  

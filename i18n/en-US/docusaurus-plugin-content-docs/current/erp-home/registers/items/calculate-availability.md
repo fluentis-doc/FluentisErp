@@ -23,4 +23,4 @@ Lastly, there is the possibility to indicate the period that the system should c
 
 Currently, these fields are no longer managed because they have been implemented within the Availability Analysis screen. The only part still active remains the grid of Warehouses.
 
-Once the parameters have been set, users can proceed to the [Availability Analysis](/docs/erp-home/registers/items/availability-analysis) through the *Availability Analysis printing*Print Report*Analisi disponibilità*.
+Once the parameters have been set, users can proceed to the [Availability Analysis](/docs/erp-home/registers/items/availability-analysis) through the *Availability Analysis printing*Print Report*Availability Analysis*.

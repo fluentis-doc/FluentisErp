@@ -25,7 +25,7 @@ The window consists of a grid in which the following information is entered:
 
 **Priority:** in this field, the priority of the packaging is indicated (for example, if we have a pallet that contains boxes, the priority must be assigned so that when the system creates the loading units, it knows the packaging priority);
 
-**Account / Subaccount / Customer/Supplier description:** in this field, the customer/supplier requiring this type of loading unit is entered. Thus, it is possible to define different loading units at the individual customer level;
+**Account / Detail account / Customer/Supplier description:** in this field, the customer/supplier requiring this type of loading unit is entered. Thus, it is possible to define different loading units at the individual customer level;
 
 **Unit of measure for dimensions:** in this field, the unit of measure for the dimensions of the loading unit is selected; upon entering the **Loading unit type**, this value is brought from the table [Loading Unit Types](/docs/configurations/tables/logistics/loading-unit-types);
 
