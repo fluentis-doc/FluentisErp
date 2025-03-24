@@ -13,7 +13,7 @@ Entering the **Supplier** will *automatically propose* all specific data from th
 
 *Other fields*:
 
-**Delivery Note status**: these 2 flags identify the status of the DDT, which can be printed (after the physical print of the delivery DDT report has been launched) and downloaded (after the DDT has been downloaded from the warehouse). If the DDT has not been printed, it cannot be downloaded;  
+**Delivery Note status**: these 2 flags identify the status of the Delivery Note, which can be printed (after the physical print of the Delivery Note report has been launched) and downloaded (after the Delivery Note has been downloaded from the warehouse). If the Delivery Note has not been printed, it cannot be downloaded;  
 
 **Our/Your reference**: when the procedure [Fulfillment from order](/docs/purchase/purchase-delivery-note/procedures/create-delivery-notes-from-orders) is completed, the information present in the same field of the order is also proposed;  
 
@@ -21,14 +21,14 @@ Entering the **Supplier** will *automatically propose* all specific data from th
 
 **Specific buttons**
 
-> [Expected deliveries](/docs/subcontractor/delivery-note/insert-delivery-note/header-procedures/execute-from-order): calls up the procedure to create a DDT from an order. It activates with the entry of the supplier and DDT type. The order to be fulfilled must have the *Printed* flag set and the *Order confirmation date* must be filled in;  
+> [Expected deliveries](/docs/subcontractor/delivery-note/insert-delivery-note/header-procedures/execute-from-order): calls up the procedure to create a Delivery Note from an order. It activates with the entry of the supplier and Delivery Note type. The order to be fulfilled must have the *Printed* flag set and the *Order confirmation date* must be filled in;  
 > **Automatic unload**: used to automatically download the warehouse with the selected items. This field will be editable only once the *Printed* field is activated.
 
 ### Payments
 
 The **Payment Terms** are automatically reported from the *Supplier Registry > Payments tab* and can be modified/deleted by the user.
 
-If a financial discount is associated with the **Payment type**, the discount amount is considered only for accounting purposes, i.e., in the document deadlines and not in the total DDT.
+If a financial discount is associated with the **Payment type**, the discount amount is considered only for accounting purposes, i.e., in the document deadlines and not in the total Delivery Note.
 
 If the document originates from an order, the payment types can be taken from the first document or from the supplier registry. 
 
