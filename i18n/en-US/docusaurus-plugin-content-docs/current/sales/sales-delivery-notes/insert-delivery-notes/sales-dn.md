@@ -1,5 +1,5 @@
 ---
-title: New Sales
+title: New DN
 sidebar_position: 2
 ---
 
