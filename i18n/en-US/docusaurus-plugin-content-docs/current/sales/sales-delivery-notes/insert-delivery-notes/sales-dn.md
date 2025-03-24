@@ -3,9 +3,9 @@ title: New Sales
 sidebar_position: 2
 ---
 
-The form **Create Sales DDT** opens via the path **Sales > DDT > Create Sales DDT** or by using the button ![](/img/neutral/common/new.png) found in the [Sales DDT Search (Ricerca DDT di vendita)](/docs/sales/sales-delivery-notes/insert-delivery-notes/search-sales-dn) form.
+The form **Create Sales DN** opens via the path **Sales > DN > Create Sales DN** or by using the button **New** found in the [Sales DN Search](/docs/sales/sales-delivery-notes/insert-delivery-notes/search-sales-dn) form.
 
-## *How to create a Sales DDT*
+## *How to create a Sales DN*
 
 <details>
  
@@ -27,11 +27,11 @@ The form **Create Sales DDT** opens via the path **Sales > DDT > Create Sales DD
 
 ## **1. Mandatory Data**
 
-To continue creating the Sales DDT, the user must enter the required fields:
-- **Delivery note type**: default set in *Configuration > Tables > Sales > [DDT Types](/docs/configurations/tables/sales/delivery-notes-type)*.
-- **Number**: each document is assigned a number according to the numbering specified by the user and the type of document that contains the numbering. The numbering associated with the DDT type generally includes an automatic progression based on date and number, with a retrieval function that covers any gaps in the sequence (for example, caused by the deletion of documents). This behavior is regulated by two specific flags in the numbering table. If the user wishes to manually enter the number, they can disable the date-number progression flag (which ensures the increment of numbering on future dates) and the number retrieval flag. Furthermore, they will need to enable the external numbering flag, indicating to the system that the numbering will be managed manually.    
-- **Client**: can be typed using the [field help](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection), typing it [directly](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection), or using the automatic procedure if they choose to create documents via the [DDT Fulfillment from Customer Order](/docs/sales/sales-delivery-notes/insert-delivery-notes/sales-dn). Upon entering the customer, the following fields, if present in the registry, will be automatically populated, which we will explain in the following sections: currency, country, language, region, shipping, price list, any discounts, payments, fees, agents, destination, carriers, extra data.               
-- **Date**: indicates the creation date of the DDT. This date is crucial for calculating deadlines and any payment conditions. The current date is proposed, which can be modified; if the numbering requires a progression of date and number, and a past date is entered, Fluentis will check the availability of numbers on that date to ensure progression, and if not present, will notify the user that there are no available numbers on that date. 
+To continue creating the Sales DN, the user must enter the required fields:
+- **Delivery note type**: default set in *Configuration > Tables > Sales > [DN Types](/docs/configurations/tables/sales/delivery-notes-type)*.
+- **Number**: each document is assigned a number according to the numbering specified by the user and the type of document that contains the numbering. The numbering associated with the DN type generally includes an automatic progression based on date and number, with a retrieval function that covers any gaps in the sequence (for example, caused by the deletion of documents). This behavior is regulated by two specific flags in the numbering table. If the user wishes to manually enter the number, they can disable the date-number progression flag (which ensures the increment of numbering on future dates) and the number retrieval flag. Furthermore, they will need to enable the external numbering flag, indicating to the system that the numbering will be managed manually.    
+- **Client**: can be typed using the [field help](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection), typing it [directly](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection), or using the automatic procedure if they choose to create documents via the [DN Fulfillment from Customer Order](/docs/sales/sales-delivery-notes/insert-delivery-notes/sales-dn). Upon entering the customer, the following fields, if present in the registry, will be automatically populated, which we will explain in the following sections: currency, country, language, region, shipping, price list, any discounts, payments, fees, agents, destination, carriers, extra data.               
+- **Date**: indicates the creation date of the DN. This date is crucial for calculating deadlines and any payment conditions. The current date is proposed, which can be modified; if the numbering requires a progression of date and number, and a past date is entered, Fluentis will check the availability of numbers on that date to ensure progression, and if not present, will notify the user that there are no available numbers on that date. 
 
 The form contains a series of tabs.
 
@@ -50,11 +50,11 @@ Entering the **Customer**, all specific data of the **Header** tab are automatic
 
 #### Other header fields 
 
-- **Printed**: activated when the document is printed, indicating that the document has been printed; this flag is also important for allowing the fulfillment of the DDT in other documents.      
+- **Printed**: activated when the document is printed, indicating that the document has been printed; this flag is also important for allowing the fulfillment of the DN in other documents.      
 - **Unloaded**: this flag is automatically activated when the document is moved to the warehouse, either with the *Automatic unload* button on the toolbar or with the available procedures.     
-- **Valorized**: this flag is activated when the DDT is valued in the invoice.   
-- **Partial Valorized**: this flag indicates that the DDT has been partially valued in the invoice. 
-- **Forced Valorized**: this flag is activated if the DDT has been forcefully closed with the forced fulfillment of the items; for example, when the remainder will not be delivered and the document is considered closed even if it would not be.
+- **Valorized**: this flag is activated when the DN is valued in the invoice.   
+- **Partial Valorized**: this flag indicates that the DN has been partially valued in the invoice. 
+- **Forced Valorized**: this flag is activated if the DN has been forcefully closed with the forced fulfillment of the items; for example, when the remainder will not be delivered and the document is considered closed even if it would not be.
 - **Cancelled**: the active flag allows the order to be canceled.      
 
 :::note
@@ -62,14 +62,14 @@ Flags can be removed with the operation recovery procedures.
 :::
 
 - **Unique Project Code/Identifying Code for Bid**: if in the [fiscal information](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/fiscal-information) of the customer registry it is enabled for management of CIG and CUP, it will be possible to fill in these details in the document.    
-- **Customer note**: this field is retrieved from the order that created the DDT, but can also be entered manually.
-- **Our Reference/Your Reference**: in these fields usually an internal reference and a customer reference for the document is indicated; if the DDT is generated through an automatic creation procedure, these fields will be populated with the indications present in the origin document (this transfer is valid only for DDT created by retrieving data from a single origin document).   
-- **Reference to Customer Order Number**: this field automatically inserts the order from which the DDT originates.
-- **Reference to Customer Order Date**: this field automatically inserts the date of the order from which the DDT originates; together with the previous field, it creates the data necessary for tag 2.1.2 of the electronic invoice xml file when it is created; if not filled, the Your Reference field will be taken instead.     
+- **Customer note**: this field is retrieved from the order that created the DN, but can also be entered manually.
+- **Our Reference/Your Reference**: in these fields usually an internal reference and a customer reference for the document is indicated; if the DN is generated through an automatic creation procedure, these fields will be populated with the indications present in the origin document (this transfer is valid only for DN created by retrieving data from a single origin document).   
+- **Reference to Customer Order Number**: this field automatically inserts the order from which the DN originates.
+- **Reference to Customer Order Date**: this field automatically inserts the date of the order from which the DN originates; together with the previous field, it creates the data necessary for tag 2.1.2 of the electronic invoice xml file when it is created; if not filled, the Your Reference field will be taken instead.     
 - **D.N. initial note**: you can select the notes that have been previously entered in the homonymous table found in the path *Configuration > Utilities > Management of Coded Notes*; for this, the user must double-click the field to open the Help and select the data; otherwise, they can enter them manually.       
 - **Project**: it is possible to associate a project with the document.    
 - **User**: allows you to enter the user creating the document. Employees were previously entered in the *Home > Employees* table; this data becomes mandatory if the option is set in the [Document Parameters](/docs/configurations/parameters/sales/dn-parameters).     
-- **Execution status**: when the order is fulfilled through DDT or invoices, its fulfillment status changes automatically from *Not executed* to *Partially executed* or *Closed*; the user can force the fulfillment of an order not fully fulfilled, and when this happens, the fulfillment date is also saved.
+- **Execution status**: when the order is fulfilled through DN or invoices, its fulfillment status changes automatically from *Not executed* to *Partially executed* or *Closed*; the user can force the fulfillment of an order not fully fulfilled, and when this happens, the fulfillment date is also saved.
 - **Apply from** is the date for calculating payment deadlines.      
 - **Audit Trail**: as in all documents, this section shows the document creation date with the operator, and the last modification date of the document with the operator.   
 
@@ -119,22 +119,22 @@ import TabExtraData from './../../../import/sections/tab-extra-data.md'
 
 ### *Fulfillment from Order*
 
-In the header of the DDT, pressing the **Fulfillment from Order** button will open the form where it is possible to filter the confirmed orders of the document's customer and transfer them into the DDT. It is also possible to perform the DDT creation operation from the [Order Search](/docs/sales/sales-orders/create-new-sales-orders/search-sales-orders).
+In the header of the DN, pressing the **Fulfillment from Order** button will open the form where it is possible to filter the confirmed orders of the document's customer and transfer them into the DN. It is also possible to perform the DN creation operation from the [Order Search](/docs/sales/sales-orders/create-new-sales-orders/search-sales-orders).
 
-Through this procedure, a sales DDT can be created from the fulfillment of the related customer order. It is thus possible to enter items within the DDT, fulfilling either the entire order or specific lines, either fully or partially.
+Through this procedure, a sales DN can be created from the fulfillment of the related customer order. It is thus possible to enter items within the DN, fulfilling either the entire order or specific lines, either fully or partially.
 
 For this procedure to be usable, there are initial conditions that must be met:
 
- - The customer of the orders must be the same as the DDT;
+ - The customer of the orders must be the same as the DN;
  - The order you wish to fulfill must have the *Printed* flag and the *Order confirmation date* set;
- - In the [DDT Types](/docs/configurations/tables/sales/delivery-notes-type) table, the flag on *Order* (indicating that the DDT can derive from an order) must be present.    
- - Only if the procedure is executed from the Order Search, the document types must be compatible: in the [Order Types](/docs/configurations/tables/sales/sales-order-types) table, the order type you wish to fulfill must have the corresponding DDT type set.        
+ - In the [DN Types](/docs/configurations/tables/sales/delivery-notes-type) table, the flag on *Order* (indicating that the DN can derive from an order) must be present.    
+ - Only if the procedure is executed from the Order Search, the document types must be compatible: in the [Order Types](/docs/configurations/tables/sales/sales-order-types) table, the order type you wish to fulfill must have the corresponding DN type set.        
 
-You must then set in the header of the new DDT, the *Delivery note type* you wish to create (which must correspond to what is set in the order types table) and the *Client*. Once these data are entered, you need to click on the *Orders Processing* button to open the fulfillment form.
+You must then set in the header of the new DN, the *Delivery note type* you wish to create (which must correspond to what is set in the order types table) and the *Client*. Once these data are entered, you need to click on the *Orders Processing* button to open the fulfillment form.
 
 #### Procedure:
 
-The filters for customer and currency will be automatically populated based on the customer selected in the DDT.
+The filters for customer and currency will be automatically populated based on the customer selected in the DN.
 
 Once all desired *Filters* are set, clicking the *Search* button will display a line in the grid for each printed, confirmed, and unfulfilled or partially fulfilled order.
 
@@ -152,12 +152,12 @@ In the results grid, the user then has the option to:
  2. select only *some* of the *Items* proposed. To do this, simply select the flag present at the beginning of the item line.
  3. select only *some items* for a *specific quantity*. In this case, they must modify the quantity to be fulfilled.
 
-To complete the procedure, the user must then click the *Transfer* button, which will retrieve all data present in the order and bring it back into the DDT.
+To complete the procedure, the user must then click the *Transfer* button, which will retrieve all data present in the order and bring it back into the DN.
 
 #### Specific buttons
 
 > **Search** allows searching supplier orders.  
-> **Transfer** allows transferring the data of the selected order into the new DDT.  
+> **Transfer** allows transferring the data of the selected order into the new DN.  
 > **Forced Oreder Execution** allows for the forced fulfillment of the order; if some lines of the order are selected, only the selected lines will be forcefully fulfilled (with the addition of the flag *Forcefully Fulfilled* corresponding to the item line); if the entire order is fulfilled, its status will also change in the header.  
 > **Orders Processing** allows the fulfillment of the order.  
 > **Expand** allows expanding the entire tree of orders in the underlying grid, to view the items contained within them.  
@@ -167,10 +167,10 @@ To complete the procedure, the user must then click the *Transfer* button, which
 
 ### *Automatic unload*
 
-The other procedure present in the DDT header is the automatic shipping from the warehouse. The button is enabled if the document is Printed.      
-Remember that if in the [DDT Parameters](/docs/configurations/parameters/sales/dn-parameters) the automatic shipping is enabled, this procedure will be started automatically once the document is printed.      
-Once the procedure is initiated, Fluentis checks for the presence of warehouses and reasons in the DDT lines and the eventual presence of lots and serial numbers if required; if the procedure does not go well, the user will be notified with an error.      
-If the procedure is successful, a [Warehouse Registration](/docs/logistics/warehouse/stock-records/record) is created, which moves the items in the document, and the **Load** flag is inserted in the DDT header.      
+The other procedure present in the DN header is the automatic shipping from the warehouse. The button is enabled if the document is Printed.      
+Remember that if in the [DN Parameters](/docs/configurations/parameters/sales/dn-parameters) the automatic shipping is enabled, this procedure will be started automatically once the document is printed.      
+Once the procedure is initiated, Fluentis checks for the presence of warehouses and reasons in the DN lines and the eventual presence of lots and serial numbers if required; if the procedure does not go well, the user will be notified with an error.      
+If the procedure is successful, a [Warehouse Registration](/docs/logistics/warehouse/stock-records/record) is created, which moves the items in the document, and the **Load** flag is inserted in the DN header.      
 
 ## **Items**
 
@@ -198,13 +198,13 @@ import RowNumber from './../../../import/fields/row-number.md'
 If starting directly with the item insertion, its class, code, and line type - Coded Item will be automatically entered.
 :::
 
-- **Barcode**: if the management of Barcodes is enabled in the [DDT Parameters](/docs/configurations/parameters/sales/dn-parameters), the Barcode column will appear where you can select the data for the item from the Barcodes entered in *Item Registry > Barcode*. 
+- **Barcode**: if the management of Barcodes is enabled in the [DN Parameters](/docs/configurations/parameters/sales/dn-parameters), the Barcode column will appear where you can select the data for the item from the Barcodes entered in *Item Registry > Barcode*. 
 
 import ItemClassDescription from './../../../import/sections/item-class-description.md'
 
 <ItemClassDescription />
 
-- **Customer item**: if the management of Customer Items is enabled in the [DDT Parameters](/docs/configurations/parameters/sales/dn-parameters), the Customer Item column will appear, with the valid item code for the customer to whom the document is issued and entered in *Item Registry > Customers*. 
+- **Customer item**: if the management of Customer Items is enabled in the [DN Parameters](/docs/configurations/parameters/sales/dn-parameters), the Customer Item column will appear, with the valid item code for the customer to whom the document is issued and entered in *Item Registry > Customers*. 
 
 import UM from './../../../import/fields/item-um.md'
 
@@ -234,7 +234,7 @@ import Vat from './../../../import/fields/item-vat.md'
 
 - **Sales Turnover**: the data entered in the *Item Registry > General tab* is proposed. If this is not present, no data will be proposed, but at the time of invoicing the invoice, the value entered in the *Default Counterparty Cost/Revenue* field of the *Customer Registry > Accounting Data > Administrative tab* will be considered, or an error message will be generated.   
 
-- **On invoice**: this flag is inserted by default, but can be disabled if the item should not be transferred to the invoice and therefore should not appear in the DDT fulfillment procedures.     
+- **On invoice**: this flag is inserted by default, but can be disabled if the item should not be transferred to the invoice and therefore should not appear in the DN fulfillment procedures.     
 
 - **Net weight**: shows the net weight present in the item registry, multiplied by the item quantity of the line.     
 
@@ -270,16 +270,16 @@ import AlternativeUMQuantity from './../../../import/fields/alternative-um-quant
 
 <AlternativeUMQuantity />
 
-- **Warehouse and Reason**: the warehouse and cause of reference will be automatically proposed that will appear when the items are discharged from the warehouse. The data is retrieved from the *DDT Types* or entered manually.
+- **Warehouse and Reason**: the warehouse and cause of reference will be automatically proposed that will appear when the items are discharged from the warehouse. The data is retrieved from the *DN Types* or entered manually.
 - **Variant**: it is possible to choose a variant of the item, if coded within the *Item Registry > Variants*.    
 - **Execution status**: in this section, it is possible to verify whether the item line has been Valuated, Partially Valuated, or Forcefully Valuated.       
 - **Project**: it is the project associated with the document or can be assigned with the help of the field help.     
 - **VAT recourse**: if set, the VAT of the gift is considered for the document total.   
-- **Order reference**: refers to the order from which the DDT was created.  
-- **Our Reference/Your Reference**: in these fields, an internal reference and a customer reference for the document is usually indicated; if the DDT is generated through an automatic creation procedure, these fields will be populated with the indications present in the origin document.      
+- **Order reference**: refers to the order from which the DN was created.  
+- **Our Reference/Your Reference**: in these fields, an internal reference and a customer reference for the document is usually indicated; if the DN is generated through an automatic creation procedure, these fields will be populated with the indications present in the origin document.      
 - **Reference Number/Date**: refers to the Reference to the Number and the Date of the original Customer Order.     
 - **Brand**: represents the brand of the item, taken from its registry or from the item's price list.    
-- **On invoice**: this flag is inserted by default but can be disabled if the item should not be transferred to the invoice and therefore should not appear in the DDT fulfillment procedures.     
+- **On invoice**: this flag is inserted by default but can be disabled if the item should not be transferred to the invoice and therefore should not appear in the DN fulfillment procedures.     
 - **Note**: allows entering notes for each item.     
 - **Detail declarations**: the [Intent Declaration](/docs/finance-area/declarations/declarations/intent-declaration) used to propose the VAT of the item is reported; from the combo box, it is possible to change the reference intent declaration if more valid declarations are present.    
 
@@ -375,9 +375,9 @@ The data present are:
 - **Recipient**: the default recipient entered in the customer registry is proposed; if not present, the customer's address is taken.    
 - **Destination**: the default destination of the recipient is proposed, if entered in the customer registry.        
 - **Tracking Number**: free field. 
-- **Volume**: the cumulative volume is proposed, resulting from the sum of the volumes of the items (the value is taken from the Item Registry > Weights/Dimensions tab), when the unit of measure of the volume of items corresponds to that entered in the [DDT parameters](/docs/configurations/parameters/sales/dn-parameters). 
-- **Net weight**: the cumulative net weight is proposed, resulting from the sum of the weights of the items (the value is taken from the Item Registry > Weights/Dimensions tab), when the unit of measure of the weight of the items corresponds to that entered in the DDT parameters. 
-- **Gross Weight**: the cumulative gross weight is proposed, resulting from the sum of the weights of the items (the value is taken from the Item Registry > Weights/Dimensions tab), when the unit of measure of the weight of the items corresponds to that entered in the DDT parameters.     
+- **Volume**: the cumulative volume is proposed, resulting from the sum of the volumes of the items (the value is taken from the Item Registry > Weights/Dimensions tab), when the unit of measure of the volume of items corresponds to that entered in the [DN parameters](/docs/configurations/parameters/sales/dn-parameters). 
+- **Net weight**: the cumulative net weight is proposed, resulting from the sum of the weights of the items (the value is taken from the Item Registry > Weights/Dimensions tab), when the unit of measure of the weight of the items corresponds to that entered in the DN parameters. 
+- **Gross Weight**: the cumulative gross weight is proposed, resulting from the sum of the weights of the items (the value is taken from the Item Registry > Weights/Dimensions tab), when the unit of measure of the weight of the items corresponds to that entered in the DN parameters.     
 - **Type of packaging**: combo box that refers to the homonymous table.     
 - **Packages**: the number of packages is proposed, based on the data entered in the *Item Registry > Weights/Dimensions tab*, in the fields *Items present in one package* or *Packages for item*. Only items that have this field filled will be considered.     
 - **Values manually modified**: with this flag, we enable the modification of the Volume, Net Weight, Gross Weight, and Packages fields, which otherwise show the data from the item registry without the possibility of modification.     
