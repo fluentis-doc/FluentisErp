@@ -35,12 +35,12 @@ With this print, each order is paginated separately, each with the following sec
 - Order details (item code, unit of measure, etc.)
 - Stock of the item in the warehouse, ordered quantity, picked quantity (field to be filled manually by the operator who will pick the quantity from the warehouse)
 
-## DDT Orders Fulfillment List
+## DN Orders Fulfillment List
 
-This print provides a list of orders with any linked DDT.       
+This print provides a list of orders with any linked DN.       
 With the available filters, it is possible to filter the documents for a more targeted search; for example, I can print orders of a certain type, those not delivered, not fulfilled, etc.     
 By default, the orders are grouped by year and order type, so for the same year and type, the Sales Orders will be listed with corresponding number, date, and customer.       
-If the order has been fulfilled in a DDT, it will be reported below the order, with corresponding number, date, type, items, unit of measure, ordered quantity, and delivered quantity. 
+If the order has been fulfilled in a DN, it will be reported below the order, with corresponding number, date, type, items, unit of measure, ordered quantity, and delivered quantity. 
 
 ## Orders List 
 

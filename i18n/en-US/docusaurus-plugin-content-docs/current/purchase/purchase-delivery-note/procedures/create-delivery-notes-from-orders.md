@@ -2,7 +2,7 @@
 title: Fulfillment of Purchase Delivery Notes from Orders 
 sidebar_position: 3
 keywords:
-- DDT
+- DN
 - Orders 
 ---
 

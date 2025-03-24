@@ -58,7 +58,7 @@ By entering the **Client**, all specific data from the **Header** tab will be *a
 
 - **Delivery date**: in this field, you can enter the expected delivery date of the goods.
 - **Ready goods date**: in this field, you can enter the date when the goods will be ready; this date must be less than or equal to the previous one.      
-- **Confirmed**: this flag indicates that the order is confirmed and can therefore be fulfilled; next to it is the **Confirmation date**; this condition is mandatory if you want to proceed with the order for potential fulfillment in subsequent documents (such as picking, DDT, and invoices), as well as for potential management of production planning.        
+- **Confirmed**: this flag indicates that the order is confirmed and can therefore be fulfilled; next to it is the **Confirmation date**; this condition is mandatory if you want to proceed with the order for potential fulfillment in subsequent documents (such as picking, DN, and invoices), as well as for potential management of production planning.        
 - **Printed**: it activates when the order print is launched, indicating that the document has been printed; this flag is also important for allowing the fulfillment of the order in other documents.      
 - **Archived**: this flag must be applied if the document must be archived.   
 - **Cancelled**: the active flag allows you to cancel the order; the header status of the order will change to forcibly fulfilled, as the order will no longer be transferable to other documents.    
@@ -67,7 +67,7 @@ By entering the **Client**, all specific data from the **Header** tab will be *a
 - **Our reference/your reference**: in these fields, one usually indicates an internal reference and a customer reference for the document; if the order is generated through an automatic creation procedure, these fields will be populated with the indications present in the originating document. This transfer is valid only in the case of a customer order created by pulling data from a single document.     
 - **Initial note**: you can select the notes that have been entered previously in the corresponding table found in *Configuration > Utilities > Management of coded notes*; for this, the user must double-click on the field to open the Help and select the data; otherwise, they can enter them manually.       
 - **User**: allows you to enter the user who creates the document. Employees have been previously entered in the table *Home > Employees*; the data becomes mandatory if the option is set in the [Parameters](/docs/configurations/parameters/sales/sales-orders-parameters) of the document itself.     
-- **Execution status**: when the order is fulfilled through the DDT or invoices, its fulfillment state automatically changes from *Not executed* to *Partially executed* or *Closed*; the user can force the fulfillment of an order not fully fulfilled, and when this happens, the fulfillment date is also saved.      
+- **Execution status**: when the order is fulfilled through the DN or invoices, its fulfillment state automatically changes from *Not executed* to *Partially executed* or *Closed*; the user can force the fulfillment of an order not fully fulfilled, and when this happens, the fulfillment date is also saved.      
 
 :::note
 If the *Forced Fulfillment state* is activated, the message will be displayed: “The forced fulfillment of the line leads to the automatic deletion of any planned orders linked to jobs in scheduled status and the fulfillment of jobs in scheduled and unchecked status. As for documents generated for jobs in launched or executive status, the jobs and documents will not be modified.”
@@ -108,7 +108,7 @@ Indicates the agent code and their commission for each item line. The code and p
 
 If the commission is not linked to the customer in their registry, the agent must still be entered but with a NULL commission, because if it were with a commission of 0, it would mean that the agent is linked to the agent but does not receive any commission.
 
-In case of generating the DDT from the order, this data will naturally be carried over as the same as that of the customer order.
+In case of generating the DN from the order, this data will naturally be carried over as the same as that of the customer order.
 
 The same section will be repeated for each item line in the respective Agents tab.
 
@@ -242,7 +242,7 @@ import AlternativeUMQuantity from './../../../import/fields/alternative-um-quant
 
 <AlternativeUMQuantity />
 
-- **Warehouse/Description/Reason**: in these fields, the discharge warehouse for the material must be indicated with the corresponding reason necessary for the goods to be discharged at the time of the DDT or invoice issuance; this data is set in the table of [Order Types](/docs/configurations/tables/sales/sales-order-types).
+- **Warehouse/Description/Reason**: in these fields, the discharge warehouse for the material must be indicated with the corresponding reason necessary for the goods to be discharged at the time of the DN or invoice issuance; this data is set in the table of [Order Types](/docs/configurations/tables/sales/sales-order-types).
 
 - **Project**: this is the project associated with the document; this can be assigned, in the case of the customer order, using the *Fulfillment from Job* procedure or can be assigned with the help of the field help.
 

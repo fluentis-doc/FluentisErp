@@ -15,7 +15,7 @@ With this print, each invoice is paginated separately, each with the following s
 - Invoice information (type, number, date, etc.)
 - Customer information (VAT number, agent, etc.)
 - Invoice details (item code, quantity, price, etc.)
-- DDT summary (total goods, expenses, total tax, etc.)        
+- DN summary (total goods, expenses, total tax, etc.)        
 In this print, the Nomenclatures of Items are printed only for invoices outside the EU, under the item code; furthermore, in the item description column, a summary of the amounts by nomenclature is provided.
 
 ## Billing Summary Print

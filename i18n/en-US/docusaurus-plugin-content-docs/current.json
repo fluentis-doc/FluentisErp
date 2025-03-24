@@ -2238,5 +2238,9 @@
   "sidebar.releaseNotes.category.Versione 707": {
     "message": "Version 707",
     "description": "The label for category Versione 707 in sidebar releaseNotes"
+  },
+  "sidebar.guide.category.Common Fields, Functions, and Buttons": {
+    "message": "Common Fields, Functions, and Buttons",
+    "description": "The label for category Common Fields, Functions, and Buttons in sidebar guide"
   }
 }
