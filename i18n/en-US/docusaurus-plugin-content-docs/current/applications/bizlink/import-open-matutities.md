@@ -19,7 +19,7 @@ Fields to fill in (not automatically populated)
 
 CUSTOMER / SUPPLIER
     
-- Account / Sub-account: enter an account and sub-account code for customers or suppliers that already exists in Fluentis (MANDATORY)
+- Account / Detail account: enter an account and detail account code for customers or suppliers that already exists in Fluentis (MANDATORY)
 
 DOCUMENT REFERENCES
 - Code type: e.g., FA for purchase invoice, FV for sales invoice. Use the coding already present in Fluentis and already populated by FastStart. In case of issues or absence of the desired types, check the SQL table Fluentis.SH_DocumentTypes regarding the field (not visible in the interface) SHDT_Country_SHCNTR_Id by setting it with the ID corresponding to the IT code from the Fluentis.SH_Countries table.
@@ -28,7 +28,7 @@ DOCUMENT REFERENCES
 PAYMENT DATA
 - Payment type: must already be present in Fluentis (refer to the codes of existing payment types) - MANDATORY. WARNING: in the Payment Types table (also from the interface), ensure that the Country field is filled with the IT code to enable the desired types and allow for correct importation (invalid types that are not enabled can be guessed as they are not visible when using the combo box with a double click in the Excel trace).
 - Expiration: it is the expiration date of the item - MANDATORY
-- Account / sub-account bank: this refers to the bank associated with the item (optional).
+- Account / Detail account bank: this refers to the bank associated with the item (optional).
 
 ITEM DATA
 - Residual (Debit / Credit): the amount of the open item, if the item is not partially paid it corresponds to the countervalue. 

@@ -3,7 +3,7 @@ title: Import Sales Price List
 sidebar_position: 2
 ---
 
-In this document, it will be explained how to **Import supplier price lists (Importare listini fornitori)** into **Fluentis** using an **Spreadsheet**.
+In this document, it will be explained how to **Import vendor price lists** into **Fluentis** using an **Spreadsheet**.
 
 This import is possible due to the use of **BizLink Parameters**, as every time a line is processed, they will be called.
 
@@ -13,7 +13,7 @@ Click on **Tools** (by default located on the right side of Fluentis).
 
 Click on the **BizLink** section
 
-Click on **On Demand Import > Registries > Import Items and Sales Price Lists (Importazione On Demand > Anagrafiche > Importazione Articoli e Listini di Vendita)** as shown in the figure below.
+Click on **On Demand Import > Registries > Import Items and Sales Price Lists** as shown in the figure below.
 
 ![](/img/it-it/applications/bizlink/import-sales-price-lists/image03.png)
 
@@ -418,7 +418,7 @@ The same applies to the other two prices and their respective quantities; only t
 
 ![](/img/it-it/applications/bizlink/import-sales-price-lists/image11.png)
 
-**Other Data (Altri dati)**:
+**Other Data**:
 
 Notes:
 
@@ -510,7 +510,7 @@ These parameters will be used to process the rows entered in the Data section. A
 
 - Type: string
 
-- Description: used to indicate whether the price list is standard or custom. GEN is usually indicated for price lists that can be passed from customer to customer as they will be the same. If it is CUST, it corresponds to a price list customized for the customer, i.e., specifically created for the customer for whom account and sub-account see parameters are entered.
+- Description: used to indicate whether the price list is standard or custom. GEN is usually indicated for price lists that can be passed from customer to customer as they will be the same. If it is CUST, it corresponds to a price list customized for the customer, i.e., specifically created for the customer for whom account and Detail account see parameters are entered.
 
 *Example*: “GEN” corresponds to general, “CUST”
 
@@ -534,21 +534,21 @@ These parameters will be used to process the rows entered in the Data section. A
 
 - Type: string
 
-- Description: customer account, master account of the customer. If the price list is custom, the account and sub-account will be created as indicated in the respective parameters. If it is general, it should not be inserted.
+- Description: customer account, master account of the customer. If the price list is custom, the account and Detail account will be created as indicated in the respective parameters. If it is general, it should not be inserted.
 
 *Example*: “1701,” which has 3 sub-accounts (see below)
 
 - Mapping table/column: select MBPC_Conto from MB_PiaCon
 
-10     Sub-account:
+10     Detail account:
 
 - Field: mandatory
 
 - Type: string
 
-- Description: customer's sub-account, minor account of the customer. If the price list is custom, the account and sub-account will be created as indicated in the respective parameters. If it is general, it should not be inserted.
+- Description: customer's Detail account, minor account of the customer. If the price list is custom, the account and Detail account will be created as indicated in the respective parameters. If it is general, it should not be inserted.
 
-*Example*: for account 1701 seen earlier, there are 3 sub-accounts: “001” which corresponds to accounts, “002” which corresponds to DDT values, and “” (no sub-account specified) which corresponds to liquid availability.
+*Example*: for account 1701 seen earlier, there are 3 sub-accounts: “001” which corresponds to accounts, “002” which corresponds to DDT values, and “” (no Detail account specified) which corresponds to liquid availability.
 
 - Mapping table/column: select BPC_SottoConto from MB_PiaCon
 
@@ -668,7 +668,7 @@ If everything goes well, no error message will appear. For further verification 
 
 ### Useful Tips and Warnings
 
-**Recommended Excel Formatting: (Formattazione Excel consigliata)**
+**Recommended Excel Formatting**
 
 - For a correct import, it is highly recommended to format the columns according to the type indicated in the “Excel Formatting” section of each field. For example, if the field type is decimal and a currency will be entered in that field, format the field as currency. This is because, for example, if the cell is not formatted, Excel will eliminate insignificant digits. To insert formatting, follow these steps:
 
@@ -688,7 +688,7 @@ In this screen, you can format the selected column. Based on the instructions pr
 
 **Attention**: A classic case involves codes containing seemingly insignificant zeros, e.g., “001”. If the field is formatted as generic or number, the zeros would be discarded; if formatted as a string, they would be preserved.
 
-**Mapping table/column: (Mapping table/colonna)**
+**Mapping table/column:**
 
 - If in the Field Entry section there is a mention of a mapping table/column, it means that the value entered within the field for import must already be present in the database. To view the relevant data present in the database, simply follow these steps, using the item class and its mapping as an example:
 

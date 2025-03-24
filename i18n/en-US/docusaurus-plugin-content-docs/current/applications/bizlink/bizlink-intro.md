@@ -1,5 +1,5 @@
 ---
-title: BizLink (BizLink)
+title: BizLink
 sidebar_position: 1
 ---
 

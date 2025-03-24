@@ -1,33 +1,33 @@
 ---
-title: METEL Import (Importazione METEL)
+title: METEL Import 
 sidebar_position: 6
 ---
 
 **BizLink** allows for the import of Metel price lists, providing two flows for this import. The only operation that the user needs to perform is to configure the connector to carry out the import.
 
-:::danger[File Length (Lunghezza del file)]
+:::danger[File Length]
 Fluentis only supports 2 types of files, those with 178 and 233 characters!
 :::
 
-:::danger[File Format (Formato del file)]
+:::danger[File Format]
 Fluentis only supports the ANSI format of the file!
 :::
 
-:::tip[Process for Incorrectly Formatted Files (Processo file in formato non corretto)]
+:::tip[Process for Incorrectly Formatted Files]
 If the file does not meet the two characteristics mentioned above, BizLink will move the file to the processed files folder and will not write anything in the incoming documents as it "rejects" the file.
 :::
 
-### Prerequisites (Prerequisiti)
+### Prerequisites
 - BizLink service installed and working
 - Valid Metel price list (file in txt format)
 
-:::tip[Official Metel Site (Sito ufficiale Metel)]
+:::tip[Official Metel Site]
 For any doubts regarding the file, refer to the site: https://listinipubblici.metel.it/ where there is the "Verify Price List" feature.
 :::
 
-### Parser and Flow View (Visione Parser e Flussi)
+### Parser and Flow View
 
-:::note[Note (Nota bene)]
+:::note[Note]
 This section presents and explains the flows already present in Fluentis. The next section explains how to configure the connector and perform the import.
 :::
 
@@ -45,7 +45,7 @@ Taking the parser object for the 233-character file as an example, we see how ea
 
 ![](/img/it-it/applications/bizlink/import-metel/3.png)
 
-#### Flow (Flusso)
+#### Flow
 
 Metel also has a flow called METEL
 
@@ -63,7 +63,7 @@ The flow document then defines which parser object to use to process the file
 
 ![](/img/it-it/applications/bizlink/import-metel/7.png)
 
-### Creating the Connector (Creazione connettore)
+### Creating the Connector
 
 Go to Bizlink - Connectors and press new
 
@@ -76,13 +76,13 @@ Then set Code, Description, Connector Type = Folder Monitor, Partner, Flow, Flow
 
 ![](/img/it-it/applications/bizlink/import-metel/9.png)
 
-:::tip[Managing Both Files (Gestione di entrambi i file)]
+:::tip[Managing Both Files]
 To manage both types of files, create two different connectors with the two different flow documents. Additionally, the Incoming folder must be different. Failed and Processed can also be the same folders.
 :::
 
-### Test Import (Test import)
+### Test Import
 
-:::danger[Attention (Attenzione)]
+:::danger[Attention]
 In case of errors or re-importing the same file, it is necessary to restart the BizLink service as it cannot process a document with the same name to avoid duplicates. Restarting unlocks this issue.
 :::
 

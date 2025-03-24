@@ -1,5 +1,5 @@
 ---
-title: Importing Supplier Price Lists (Importazione Listini Fornitore)
+title: Importing Supplier Price Lists
 sidebar_position: 3
 ---
 
@@ -69,7 +69,7 @@ General indications:
 
 **Vendor item data**:
 
-Code (Codice):
+Code:
 
 - Field: mandatory
 - Type: string
@@ -78,7 +78,7 @@ Code (Codice):
 - Description: reference code for the item used by the supplier
 *Example*: 02030508
 
-Description (Descrizione):
+Description:
 
 - Field: mandatory
 - Type: string
@@ -92,7 +92,7 @@ Description (Descrizione):
 
 **Item data**:
 
-Class (Classe):
+Class:
 
 - Field: not mandatory
 - Type: string
@@ -102,7 +102,7 @@ Class (Classe):
 *Example*: “1” corresponds to semi-finished products, “IMB” corresponds to packaging
 - Mapping table/column: select MBDC_Classe from MB_Classi
 
-Internal Code (Codice interno):
+Internal Code:
 
 - Field: not mandatory
 - Type: string
@@ -111,7 +111,7 @@ Internal Code (Codice interno):
 - Description: if not assigned, it will take that of the supplier. It will identify the item, so if an item is given and I change its internal code accordingly, the new item will be added. Otherwise, if an item is given, I leave the item code unchanged and modify, for example, the description, an update will be executed for the item with that item code. (Do not update the unit of measure)
 *Example*: 7710ct7tb
 
-Internal Description (Descrizione interna):
+Internal Description:
 
 - Field: not mandatory
 - Type: string
@@ -120,7 +120,7 @@ Internal Description (Descrizione interna):
 - Description: if not assigned, it will take that of the supplier
 *Example*: tennis ball sensitive to rotation
 
-Unit of Measure (Unità di misura):
+Unit of Measure:
 
 - Field: mandatory
 - Type: string
@@ -130,7 +130,7 @@ Unit of Measure (Unità di misura):
 *Example*: “cm” corresponds to centimeters, “UDC” corresponds to pallet
 - Mapping table/column: select MBUM_Codice from MB_UnitaMisura
 
-VAT (IVA):
+VAT:
 
 - Field: not mandatory
 - Type: string
@@ -140,7 +140,7 @@ VAT (IVA):
 *Example*: “22” corresponds to 22% VAT, “944” Exempt article 40 c. 4 bis DL 331
 - Mapping table/column: select MBIV_Code from MB_iva
 
-Merc Category (Cat Merc):
+Merc Category:
 
 - Field: not mandatory
 - Type: string
@@ -150,7 +150,7 @@ Merc Category (Cat Merc):
 *Example*: “206” corresponds to adhesives, “211” corresponds to raw materials
 - Mapping table/column: select MBCM_Codice from MB_CatMerceologica
 
-Invoice Type (Fatt acq):
+Invoice Type:
 
 - Field: not mandatory
 - Type: string
@@ -160,7 +160,7 @@ Invoice Type (Fatt acq):
 *Example*: “4” corresponds to purchase of semi-finished products, “1” corresponds to raw materials
 - Mapping table/column: select MBFA_TipoFatt from mb_TipoFattAcq
 
-Barcode (Barcode):
+Barcode:
 
 - Field: not mandatory
 - Type: string
@@ -169,7 +169,7 @@ Barcode (Barcode):
 - Description: barcode of the item in question
 *Example*: ABC-1234
 
-Batch Type (Tipo lotto):
+Batch Type:
 
 - Field: not mandatory
 - Type: string
@@ -178,7 +178,7 @@ Batch Type (Tipo lotto):
 - Description: type of batch to which the item belongs
 *Example*: “4” corresponds to purchase of semi-finished products, “1” corresponds to raw materials
 
-Nomenclature (Nomenclatura):
+Nomenclature:
 
 - Field: not mandatory
 - Type: string
@@ -188,7 +188,7 @@ Nomenclature (Nomenclatura):
 *Example*: “32049000” corresponds to dyes
 - Mapping table/column: select INCN_CodNomencl from IN_CodNomenc
 
-Manufacturer Code (Codice produttore):
+Manufacturer Code:
 
 - Field: not mandatory
 - Type: string
@@ -197,7 +197,7 @@ Manufacturer Code (Codice produttore):
 - Description: manufacturer code of the item
 *Example*: art0102032019
 
-Commercial Code (Codice commerciale):
+Commercial Code:
 
 - Field: not mandatory
 - Type: string
@@ -211,7 +211,7 @@ Commercial Code (Codice commerciale):
 
 **Price list data**:
 
-Price (Prezzo):
+Price:
 
 - Field: mandatory
 - Type: decimal
@@ -220,7 +220,7 @@ Price (Prezzo):
 - Description: list price of the item
 *Example*: 10.99, 123.45
 
-Price Unit (UMPrezzo):
+Price Unit:
 
 - Field: mandatory
 - Type: string
@@ -251,7 +251,7 @@ Price Unit (UMPrezzo):
 *Example*: 123.45
 
 
-**Additional % (% Aggiuntiva)**:
+**Additional %**:
 
 - Field: not mandatory
 - Type: decimal
@@ -265,7 +265,7 @@ Price Unit (UMPrezzo):
 
 **Discounts**:
 
-Discount1 (Sconto1):
+Discount1:
 
 - Field: not mandatory
 - Type: decimal
@@ -280,7 +280,7 @@ The same applies to the other two discounts; only the discount value changes.
 
 **Discounts for quantity**:
 
-Discount1 (Sconto1):
+Discount1:
 
 - Field: not mandatory
 - Type: decimal
@@ -289,7 +289,7 @@ Discount1 (Sconto1):
 - Description: discount applied if a certain quantity of the item in question is purchased
 *Example*: 10
 
-Quantity1 (Quantità1):
+Quantity1:
 
 - Field: not mandatory
 - Type: decimal
@@ -304,7 +304,7 @@ The same applies to the other two quantity discounts; only the corresponding val
 
 **Discounts for value**:
 
-Discount1 (Sconto1):
+Discount1:
 
 - Field: not mandatory
 - Type: decimal
@@ -313,7 +313,7 @@ Discount1 (Sconto1):
 - Description: discount applied if a certain line taxable amount is exceeded
 *Example*: 20
 
-Value1 (Valore1):
+Value1:
 
 - Field: not mandatory
 - Type: decimal
@@ -328,7 +328,7 @@ The same applies to the other two discounts and values.
 
 **Price per quantity**:
 
-Price1 (Prezzo1):
+Price1:
 
 - Field: not mandatory
 - Type: decimal
@@ -337,7 +337,7 @@ Price1 (Prezzo1):
 - Description: unit price applied if a certain quantity is exceeded
 *Example*: 3.99
 
-Quantity1 (Quantità1):
+Quantity1:
 
 - Field: not mandatory
 - Type: decimal
@@ -350,9 +350,9 @@ The same applies to the other two prices and their respective quantities; only t
 ![](/img/it-it/applications/bizlink/import-purchase-price-lists/image12.png) 
 
 
-**Other Data (Altri dati)**:
+**Other Data**:
 
-Notes (Note):
+Notes:
 
 - Field: not mandatory
 - Type: string
@@ -374,14 +374,14 @@ These parameters will be used to process the rows entered in the Data section. A
 
 - Field: do not enter
 
-2   Language (Lingua):
+2   Language:
 
 - Field: mandatory
 - Type: string
 - Description: ISO code related to the language
 *Example*: “it-IT” represents the Italian language, “en-US” represents American English.
 
-3   Company (Società):
+3   Company:
 
 - Field: mandatory
 - Type: string
@@ -389,7 +389,7 @@ These parameters will be used to process the rows entered in the Data section. A
 *Example*: “1” corresponds to the demo company
 - Mapping table/column: Select MBSC_Code from MB_Soc
 
-4   Division (Divisione):
+4   Division:
 
 - Field: mandatory
 - Type: string
@@ -397,7 +397,7 @@ These parameters will be used to process the rows entered in the Data section. A
 *Example*: “1” corresponds to the legal headquarters, “2” to the operational headquarters in Milan
 - Mapping table/column: select MBDP_Code from MB_Dep
 
-5   Country (Nazione):
+5   Country:
 
 - Field: mandatory
 - Type: string
@@ -413,7 +413,7 @@ These parameters will be used to process the rows entered in the Data section. A
 *Example*: “39” corresponds to COD39
 - Mapping table/column: select MBBC_Codice from MB_BarCode
 
-7   Account (Conto):
+7   Account:
 
 - Field: mandatory
 - Type: string
@@ -421,15 +421,15 @@ These parameters will be used to process the rows entered in the Data section. A
 *Example*: “1701” which has 3 sub-accounts (see below)
 - Mapping table/column: select MBPC_Conto from MB_PiaCon
 
-8   Sub-account (Sottoconto):
+8   Detail account:
 
 - Field: mandatory
 - Type: string
-- Description: sub-account of the supplier, minor account of the supplier
-*Example*: for account 1701 mentioned earlier, there are 3 sub-accounts: “001” corresponds to accounts, “002” corresponds to DDT values and “” (no specified sub-account) corresponds to liquid availability.
+- Description: Detail account of the supplier, minor account of the supplier
+*Example*: for account 1701 mentioned earlier, there are 3 sub-accounts: “001” corresponds to accounts, “002” corresponds to DDT values and “” (no specified Detail account) corresponds to liquid availability.
 - Mapping table/column: select BPC_SottoConto from MB_PiaCon
 
-9   Currency (Divisa):
+9   Currency:
 
 - Field: mandatory
 - Type: string
@@ -437,21 +437,21 @@ These parameters will be used to process the rows entered in the Data section. A
 *Example*: “EUR” corresponds to Euro, “USD” corresponds to Dollar
 - Mapping table/column: select MBDI_Divisa from MB_Divise
 
-10  Validity Start (Inizio validità):
+10  Validity Start:
 
 - Field: mandatory
 - Type: datetime
 - Description: indicates the start of validity of the entered price list (dd/mm/yyyy)
 *Example*: 1/10/2018
 
-11  Validity End (Fine validità):
+11  Validity End:
 
 - Field: not mandatory
 - Type: datetime
 - Description: if present, indicates the end of validity of the entered price list (dd/mm/yyyy)
 *Example*: 31/12/2027
 
-12  Price List Discount Type (Tipo sconto listino):
+12  Price List Discount Type:
 
 - Field: not mandatory
 - Type: string
@@ -459,7 +459,7 @@ These parameters will be used to process the rows entered in the Data section. A
 *Example*: “4” corresponds to final discount on sales
 - Mapping table/column: select MBST_Code from MB_Sconti
 
-15 Discount Quantity Type (Tipo sconto quantità):
+15 Discount Quantity Type:
 
 - Field: not mandatory
 - Type: string
@@ -467,7 +467,7 @@ These parameters will be used to process the rows entered in the Data section. A
 *Example*: “4” corresponds to final discount on sales
 - Mapping table/column: select MBST_Code from MB_Sconti
 
-16 Discount Value Type (Tipo sconto valore):
+16 Discount Value Type:
 
 - Field: not mandatory
 - Type: string
@@ -475,21 +475,21 @@ These parameters will be used to process the rows entered in the Data section. A
 *Example*: “4” corresponds to final discount on sales
 - Mapping table/column: select MBST_Code from MB_Sconti
 
-17 For Third Party (Per terzista):
+17 For Third Party:
 
 - Field: mandatory
 - Type: boolean
 - Description: indicates whether such a price list (for outsourced work) will be for a third party
 *Example*: “1” corresponds to true, “0” corresponds to false
 
-18 Article Insertion (Inserimento articolo):
+18 Article Insertion:
 
 - Field: mandatory
 - Type: boolean
 - Description: if set to 1, inserts the article in the MG_AnaArt item registry table
 *Example*: “1” corresponds to true, “0” corresponds to false
 
-19  Supplier Article Insertion (Inserimento articolo per fornitore):
+19  Supplier Article Insertion:
 
 - Field: mandatory
 - Type: boolean

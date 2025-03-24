@@ -95,11 +95,11 @@ Account:
 *Example*: “15200” corresponds to Clients Italy.
 - Mapping table/column: select MBPC_Conto from MB_PiaCon.
 
-Sub-account:
+Detail account:
 
 - Field: optional.
 - Type: string.
-- Description: sub-account of the supplier, sub-master account of the supplier.
+- Description: Detail account of the supplier, sub-master account of the supplier.
 *Example*: if accounts are passed with an empty system, you can use a coding like 01; 02; 03 or 001; 002; 003.
 - Mapping table/column: select BPC_SottoConto from MB_PiaCon.
 
@@ -119,7 +119,6 @@ Address:
 - Excel Formatting: text.
 - Maximum length: /.
 - Description: address of the customer/supplier.
-*Example*: via le dita dalla tastiera 7.
 - Mapping table/column: select MBAN_Indirizzo from MB_Anagr.
 
 Municipality:
