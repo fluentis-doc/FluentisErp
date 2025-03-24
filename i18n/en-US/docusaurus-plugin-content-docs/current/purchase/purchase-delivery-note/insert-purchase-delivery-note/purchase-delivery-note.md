@@ -240,7 +240,7 @@ By clicking this button, the corresponding form opens where you can enter the qu
 >
 > **Update Location**: used to update the location on multiple item rows. The button becomes active when at least two items are selected and opens the location help from which to choose the new location for all selected items.   
 >
-> **Receptions reversal**: the button is active only for [Types of Delivery Notes](/docs/configurations/tables/purchase/purchase-delivery-notes-type/) that have the *Nature of DDT* type *Return*. In the form, all delivery notes addressed to that supplier that have already been loaded into the warehouse are displayed. After selecting the item rows and the respective quantities to be reversed, it will be sufficient to press the *Receptions reversal* button to insert them into the delivery note.    
+> **Receptions reversal**: the button is active only for [Types of Delivery Notes](/docs/configurations/tables/purchase/purchase-delivery-notes-type/) that have the *Nature of DN* type *Return*. In the form, all delivery notes addressed to that supplier that have already been loaded into the warehouse are displayed. After selecting the item rows and the respective quantities to be reversed, it will be sufficient to press the *Receptions reversal* button to insert them into the delivery note.    
 >
 > **Update price lists**: the button **Update Current Price List** allows you to update the prices in the current price list for each selected item row.    
 The button **Create new price list with new validity** instead, will open a pop-up where you can enter the validity dates of the new price list, which will only contain the selected rows and will be addressed to the supplier entered in the delivery note.
