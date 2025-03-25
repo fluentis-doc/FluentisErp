@@ -111,11 +111,11 @@ In the accounting causal parameters configuration, it is possible to define a ch
 
 **Group Credit Notes in Effects**: allows reversing, in effect creation, also credit notes that have the payment type to be managed in effects. If the flag is not active, open transactions related to credit notes will not be displayed in the transaction search form for the procedure [effect creation from due transactions](/docs/treasury/bills-holding/procedures/bills-acquisition-from-maturity-values).
 
-The aforementioned parameter must be combined with the flag **Group credit notes by due date** present in the [Effects Portfolio Parameters (Parametri portafoglio effetti)](/docs/configurations/parameters/treasury/bills-portfolio-parameters) 
+The aforementioned parameter must be combined with the flag **Group credit notes by due date** present in the [Bills Portfolio Parameters](/docs/configurations/parameters/treasury/bills-portfolio-parameters) 
 
 If the flag for grouping by due date is activated, the transaction (or transactions) related to the credit note with a payment type consistent with the issuance of effects will be grouped (reversing the active transactions) only if it has the same due date as the transactions selected for issuing the effect. Conversely, if the flag is deactivated, the credit note will be grouped by reversing the overdue transaction to the first due date (provided, of course, that the flag *Group Credit Notes in Effects* in the registry is active).
 
-**Exposure control**: this flag will make this subject visible in the summary masks of the [customer exposure (esposizione clienti)](/docs/treasury/customer-risk/procedures/customer-statement).
+**Exposure control**: this flag will make this subject visible in the summary masks of the [customer exposure](/docs/treasury/customer-risk/procedures/customer-statement).
 
 **Days Late** is a statistical data calculated in the **customer risk** module (procedure [**remittance check**](/docs/treasury/customer-risk/procedures/remittances-check) and used in cash flow projections; it represents an **average of late payment days on the part of customers**, not only on current overdue transactions but also historically. The calculation involves a weighted average over the transaction amount. In fact, the calculation is based on processing the "credit numbers" (as in a bank statement). Within the **remittance check** form (in the ribbon bar at the top), there is the command **Update Late Days (Aggiorna gg ritardo)** that inserts the calculated result into the Late Days field in the customer registry.
 
@@ -133,7 +133,7 @@ In the customer risk module, there is a [credit limit management procedure](/doc
 
 **Dunning letter type**: type of payment reminder against the customer to be generated in the automatic reminder creation procedure.
 
-The combo box is linked to the Types of Reminders table (Home>Tables>Administrative); the customer registry in use will be associated with one of the possible reminder types.
+The combo box is linked to the Types of Reminders table (Home>Tables>Finance); the customer registry in use will be associated with one of the possible reminder types.
 
 *Example*: you can create a standard reminder type and a special reminder type, for example, for historic or particularly important customers, with different text (perhaps softer).
 
@@ -141,7 +141,7 @@ The combo box is linked to the Types of Reminders table (Home>Tables>Administrat
 
 **Interest Rate Type**: is the type of late interest rate to be applied to the subject based on the agreed agreement;
 
-The combo box is linked to the [Rate Types table](/docs/configurations/tables/finance/rate-types) in Configuration > Tables > Administrative).
+The combo box is linked to the [Rate Types table](/docs/configurations/tables/finance/rate-types) in Configuration > Tables > Finance).
 
 **Spread**: increase in the rate compared to the standard of its type.
 

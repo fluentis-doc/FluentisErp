@@ -26,7 +26,7 @@ This setting CANNOT be changed once you start creating settlements for the agent
 
 
 :::note Note
-The **Total Payment** mode is only available using the [agent settlement calculation procedure managed by the Administration module](/docs/finance-area/professional-men/procedures/calculate-commissions) which is not available in the calculation of the Sales Agents module.
+The **Total Payment** mode is only available using the [agent settlement calculation procedure managed by the Finance module](/docs/finance-area/professional-men/procedures/calculate-commissions) which is not available in the calculation of the Sales Agents module.
 :::
 
 :::note Note

@@ -86,7 +86,7 @@ The slot will also be considered for calculating overtime to be billed at a diff
 
 **Rounding type**: indicates the mathematical rule by which to round the working hours. The rounding will then be applied to the total hours of the intervention. E.g. total hours 7.45 h, if rounding to the half-hour is expected, the billed hours will be 8.
 
-**Commercial category**: an additional filter for selecting the rule for the billing plan. If empty, it will be considered valid for all client commercial categories; if specifically indicated, the corresponding one inserted in the customer registry - Administration tab will be selected.
+**Commercial category**: an additional filter for selecting the rule for the billing plan. If empty, it will be considered valid for all client commercial categories; if specifically indicated, the corresponding one inserted in the customer registry - Finance tab will be selected.
 
 **Include travel hours in services**: allows considering the travel hours present in the intervention in the "Billable Expenses" tab, as if they were service hours. Consequently, all billing rules (time slot, rounding, etc.) will also be applied to travel hours, as if they were a performed service.
 

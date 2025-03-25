@@ -9,9 +9,9 @@ This association takes into account and interacts, however, with other options f
 
 The priority of reading in the valuation of cost/profit centers is set, year by year, within the [Accounting Parameters](/docs/configurations/parameters/finance/accounting-parameters#center-proposal).
 
-**N (N)**: represents the row number.
+**N**: represents the row number.
 
-**Cc/Pc (CdC/CdP)**: combobox to retrieve the cost/profit center (already present in the cost/profit center table).
+**Cc/Pc**: combobox to retrieve the cost/profit center (already present in the cost/profit center table).
 
 **Percentage%**: percentage attribution of cost or revenue to that center (for example, if the cost needs to be divided 50% on two centers, enter two rows, one for each center with a percentage of 50%).
 

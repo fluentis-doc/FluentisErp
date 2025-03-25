@@ -2105,7 +2105,7 @@
   },
   "sidebar.guide.category.Common Fields, Functions, and Buttons (Campi, funzionalità e pulsanti comuni)": {
     "message": "Common Fields, Functions, and Buttons",
-    "description": "The label for category Common Fields, Functions, and Buttons (Campi, funzionalità e pulsanti comuni) in sidebar guide"
+    "description": "The label for category Common Fields, Functions, and Buttonsin sidebar guide"
   },
   "sidebar.guide.category.Campi comuni": {
     "message": "Common Fields",
@@ -2238,5 +2238,9 @@
   "sidebar.releaseNotes.category.Versione 707": {
     "message": "Version 707",
     "description": "The label for category Versione 707 in sidebar releaseNotes"
+  },
+  "sidebar.guide.category.Common Fields, Functions, and Buttons": {
+    "message": "Common Fields, Functions, and Buttons",
+    "description": "The label for category Common Fields, Functions, and Buttons in sidebar guide"
   }
 }

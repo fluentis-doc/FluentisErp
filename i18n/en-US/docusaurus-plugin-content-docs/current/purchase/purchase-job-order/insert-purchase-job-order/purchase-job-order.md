@@ -75,7 +75,7 @@ To fulfill a purchase order within a Supplier Order, it is necessary that the or
 
 The [Payment Solutions](/docs/configurations/tables/general-settings/payment-terms) are automatically retrieved from the *Supplier Registry > Payments tab (Anagrafica fornitore > tab Pagamenti)* and can be modified/deleted by the user.
 
-If a [Payment Type](/docs/configurations/tables/general-settings/payment-types) is associated with a financial discount, the discount amount is considered only for accounting purposes in the document deadlines and not in the total DDT.
+If a [Payment Type](/docs/configurations/tables/general-settings/payment-types) is associated with a financial discount, the discount amount is considered only for accounting purposes in the document deadlines and not in the total DN.
 
 #### Specific button  
 

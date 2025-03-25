@@ -3,7 +3,7 @@ title: Sales Invoice Shipping from Warehouse
 sidebar_position: 2
 ---
 
-The procedure opens through the path **Sales > DDT > Procedures > Shipping invoices from warehouse**. 
+The procedure opens through the path **Sales > DN > Procedures > Shipping invoices from warehouse**. 
 
 This procedure allows you to execute/restore the automatic shipping operations from the warehouse of the items present in the invoice. 
 
@@ -24,7 +24,7 @@ In this screen, the user has the opportunity to specify, for item lines, how to 
 
 In this case, if the invoice lines have not specified the warehouse and the reason for shipping, the available options are:
 
-- **Do not perform full invoice shipping**: does not allow partial shipping of the DDT;
+- **Do not perform full invoice shipping**: does not allow partial shipping of the DN;
 
 - **Ignore item without warehouse and template**: allows partial shipping of the document;
 

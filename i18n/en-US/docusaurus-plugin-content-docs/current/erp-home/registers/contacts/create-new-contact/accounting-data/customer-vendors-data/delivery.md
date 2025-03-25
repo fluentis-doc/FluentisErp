@@ -9,7 +9,7 @@ This form allows you to define the list of delivery destinations and the standar
 
 For each recipient, you can link the **Zone** and the **Delivery zone** references.
 
-**Destinations list**: in the grid, the N possible destinations for that recipient are entered, which in turn can have a default value to propose, a default *Motorvehicle*, a *type of UDC (unit load)*, a *delivery zone*, and a *Carrier*. You can then create a *triangulation*: selling to the subject in the registry and delivering to a particular warehouse of a third-party recipient.
+**Destinations list**: in the grid, the N possible destinations for that recipient are entered, which in turn can have a default value to propose, a default *Motorvehicle*, a *type of unit load*, a *delivery zone*, and a *Carrier*. You can then create a *triangulation*: selling to the subject in the registry and delivering to a particular warehouse of a third-party recipient.
 
 In the lower section, you can define the **Type of Shipping** (land/sea/truck, etc.) and any notes, the type of *packaging* and any *notes*, and the delivery terms in the field *port* and any *notes* (all note fields, if filled, will be included in the shipping documents);
 
@@ -25,7 +25,7 @@ In the **Delivery Zones** section, there are default elements valid for the cust
 
 - **Motorvehicle** dedicated to delivery;
 
-- **Type of UDC** (pallet, euro-pallet, etc.);
+- **Type of Loading Unit** (pallet, euro-pallet, etc.);
 
 You can also specify if the transport is normally the responsibility of the **Sender**, **Recipient**, or the **Carrier**.
 

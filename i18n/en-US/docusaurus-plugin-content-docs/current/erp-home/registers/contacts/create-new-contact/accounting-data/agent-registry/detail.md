@@ -5,7 +5,7 @@ sidebar_position: 2
 
 The **Agent** type registry is necessary to manage various settings and **automations** related to this type of entity and allows for the **calculation of commissions**, as well as the management of **fiscal aspects** such as ENASARCO contributions and withholding tax.
 
-After entering the general personal data of the subject, you will proceed to choose the [account type](/docs/configurations/tables/finance/account-types) **Agents** in the *Assigned Subaccounts* grid of the [*Accounting Data*](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/accounting-data-intro) tab.
+After entering the general personal data of the subject, you will proceed to choose the [account type](/docs/configurations/tables/finance/account-types) **Agents** in the *Assigned Detail Account* grid of the [*Accounting Data*](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/accounting-data-intro) tab.
 
 :::important[Important]
 It is recommended to fully fill in all the fields necessary for managing the agent, organized in this and the subsequent tabs.
@@ -25,11 +25,11 @@ This window contains general elements of the agent itself:
 
 **Start/end relation date**: based on this date, the calculation of the client supplementary allowance begins (print available for the Agents/Recipients module);
 
-**Offset/cost**: the general accounting sub-account to propose when entering the compensation in the Recipients module (or to be used in its automatic creation from the agents' liquidation) to account for the cost of commissions;
+**Offset/cost**: the general accounting detail account to propose when entering the compensation in the Recipients module (or to be used in its automatic creation from the agents' liquidation) to account for the cost of commissions;
 
 **Fixed Offset Account**: it is possible to assign a fixed amount to a specific accounting account through this field;
 
-**Invoicing account**: this sub-account is used, in the automatic creation of the recipient compensation from the agents' liquidation, to attribute the compensation to a different accounting code (of supplier type, in order to unify accounting data for subjects who are both agents and suppliers);
+**Invoicing account**: this detail account is used, in the automatic creation of the recipient compensation from the agents' liquidation, to attribute the compensation to a different accounting code (of supplier type, in order to unify accounting data for subjects who are both agents and suppliers);
 
 **Notes**: free notes of the agent registry;
 

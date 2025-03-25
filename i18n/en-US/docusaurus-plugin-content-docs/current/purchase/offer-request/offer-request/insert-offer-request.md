@@ -67,7 +67,7 @@ All these fields can be deleted or manually modified by the user.
 ### 2.3 Payments 
 
 The [Payment Solutions](/docs/configurations/tables/general-settings/payment-terms) are automatically taken from the *Supplier Registry > Payments tab (Anagrafica fornitore > tab Pagamenti)* and can be modified/deleted by the user.  
-If a financial discount is associated with the [Payment Type](/docs/configurations/tables/general-settings/payment-types), the discount amount is only considered for accounting purposes, i.e., in the payment deadlines of the document and not in the total DDT.
+If a financial discount is associated with the [Payment Type](/docs/configurations/tables/general-settings/payment-types), the discount amount is only considered for accounting purposes, i.e., in the payment deadlines of the document and not in the total DN.
 
 #### Specific Buttons
 

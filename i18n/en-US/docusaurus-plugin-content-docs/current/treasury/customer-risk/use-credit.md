@@ -41,7 +41,7 @@ In detail, the calculation is developed as follows:
 
 **To Be Accounted** = not yet accounted for (credit because there are Credit Notes); Advances are included for invoices with advance lines
 
-**DDT to Invoice** = (credit if return DDT)
+**Delivery Note to Invoice** = (credit if return Delivery Note)
 
 **Value and Number of Unpaid** = (statistical, not included in the calculation)
 

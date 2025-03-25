@@ -3,7 +3,7 @@ title: Nuovo DDT di vendita
 sidebar_position: 2
 ---
 
-La form **Crea DDT di vendita** si apre tramite il percorso **Vendite > DDT > Crea DDT di vendita** oppure tramite il pulsante ![](/img/neutral/common/new.png) che si trova nella form [Ricerca DDT di vendita](/docs/sales/sales-delivery-notes/insert-delivery-notes/search-sales-dn).
+La form **Crea DDT di vendita** si apre tramite il percorso **Vendite > DDT > Crea DDT di vendita** oppure tramite il pulsante **Nuovo** che si trova nella form [Ricerca DDT di vendita](/docs/sales/sales-delivery-notes/insert-delivery-notes/search-sales-dn).
 
 ## *Come creare un DDT di vendita*
 

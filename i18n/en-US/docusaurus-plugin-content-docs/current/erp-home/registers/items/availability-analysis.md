@@ -61,7 +61,7 @@ In the warehouse results grids, you will see the various lines of availability b
 
 ### Details
 
-In the details grid, by clicking on the line of interest in the warehouse grid, you will see all the documents linked to that single line. Thus, the customer order it refers to, the production order, and the reference job, as well as any sales documents if present (such as DDT, invoices).
+In the details grid, by clicking on the line of interest in the warehouse grid, you will see all the documents linked to that single line. Thus, the customer order it refers to, the production order, and the reference job, as well as any sales documents if present (such as DN, invoices).
 
 *In delay*: represents the algebraic sum of all delayed documents (with delivery dates prior to today) present in the availability, thus given by the sum of the values in the demand column minus the sum of the values in the supply column, but only for the delayed documents.
 

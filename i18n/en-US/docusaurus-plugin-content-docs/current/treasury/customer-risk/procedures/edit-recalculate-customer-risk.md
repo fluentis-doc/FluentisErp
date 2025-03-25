@@ -23,7 +23,7 @@ In the section **Status of ledger balance**, the total debits/credits and the ba
 
 **Invoices to be Accounted**: these are the amounts of invoices (of the Invoice Types linked to the credit) printed but not yet accounted for;
 
-**DDTs to Invoice**: these are the amounts of DDTs (of the DDT Types linked to the credit) printed but not yet invoiced;
+**Delivery Notes to Invoice**: these are the amounts of Delivery Notes (of the Delivery Note Types linked to the credit) printed but not yet invoiced;
 
 **Orders to be executed**: these are the amounts of orders (of the Order Types linked to the credit) printed, confirmed but not yet fulfilled;
 

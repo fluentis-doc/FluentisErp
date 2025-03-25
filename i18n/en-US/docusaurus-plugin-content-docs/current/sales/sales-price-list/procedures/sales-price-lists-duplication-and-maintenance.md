@@ -29,7 +29,7 @@ Once the desired filters are selected, clicking Search will populate the grid wi
 - **Net price**: this column displays the Price net of Discounts.    
 - **From validity date**: this field shows the start validity date of the price list.      
 - **To validity date**: this field shows the potential end validity date.      
-- **Last document date**: this field shows the date of the most recent DDT that lists the item and price list.    
+- **Last document date**: this field shows the date of the most recent DN that lists the item and price list.    
 
 ### Toolbar
 
