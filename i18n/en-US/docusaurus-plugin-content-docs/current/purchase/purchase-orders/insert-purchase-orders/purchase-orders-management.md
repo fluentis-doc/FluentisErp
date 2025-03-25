@@ -9,25 +9,6 @@ From the order search form, a new document can be created using the **New** butt
 
 ## *How to create a Supplier Order*
 
-<details>
-
-<summary>Click for key steps</summary>
-
-1. **Enter mandatory data**: *Order Type* and *Supplier*. *Year*, *Number*, and *Insert date* will be automatically proposed.
-
-2. **Enter or modify optional header data**: such as delivery dates, any *Discounts*, the *Destination*, etc.
-
-3. **Enter Articles**: double-clicking in the *Item code* field opens the articles help that allows searching and selecting an existing article. All other line data, such as *Units of Measure*, *Quantity*, and *Price*, will be automatically proposed but can be modified. Alternatively, you can select *Not-Codified Item* as the *Line type* and manually enter the subsequent data.
-
-4. **Insert any discounts or other additional information** in the *Discounts/Price Lists* and *Item data* tabs.
-
-5. **Check the Summaries section** and enter any additional expenses or final discounts.
-
-6. Once the order has been checked and confirmed, **insert a *Confirmation date* and activate the *Printed* flag in the header** to make the order available for fulfillment procedures.
-
-</details>
-
-
 ## **1. Mandatory Data**
 
 To create the order, the user must enter the mandatory fields:

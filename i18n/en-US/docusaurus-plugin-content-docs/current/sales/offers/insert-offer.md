@@ -7,24 +7,6 @@ The **New Offer** form opens through the path **Sales > New Offer** or via the *
 
 ## *How to create a customer offer*
 
-<details>
- 
-<summary>Click for the essential steps - TO CHECK</summary>
- 
-1. **Enter mandatory data**: *Order Type* and *Customer*. *Year*, *Number*, and *Entry Date* will be proposed automatically.  
- 
-2. **Enter or modify optional header data**: such as delivery dates, any *discounts*, the *destination*, etc.  
- 
-3. **Enter Articles**: by double-clicking in the *Item Code* field, the item help appears, allowing you to search and select an existing item. All other line data, such as *unit of measure*, *quantity*, *price*, will be proposed automatically, but can be modified. Alternatively, you can select *Uncoded Article* as *Line Type* and manually enter the subsequent data.
- 
-4. **Enter any discounts or additional information** in the *Discounts/Price Lists* and *Item Data* tabs.
- 
-5. **Check the Summary section** and enter any additional expenses or final discounts.  
- 
-6. Once the order has been checked and confirmed, **enter a *Confirmation Date* and activate the *Printed* flag in the header** to make the order available for fulfillment procedures.
- 
-</details>
-
 ## **1. Mandatory Data**    
 
 - **Sales offer type**: contains the type of offer, among those entered in the [Offer Types](/docs/configurations/tables/sales/sales-offer-type).
