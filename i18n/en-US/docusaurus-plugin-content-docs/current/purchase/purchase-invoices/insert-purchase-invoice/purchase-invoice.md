@@ -6,8 +6,6 @@ sidebar_position: 2
 The form opens via the path **Purchases > Purchase Invoices > New Invoice** or through the **New** button located in the [Purchase Invoice Search](/docs/purchase/purchase-invoices/insert-purchase-invoice/search-purchase-invoices) form.
 
 ## *How to create a purchase invoice*
- 
-</details>
 
 ## **1. Mandatory Data**
 
