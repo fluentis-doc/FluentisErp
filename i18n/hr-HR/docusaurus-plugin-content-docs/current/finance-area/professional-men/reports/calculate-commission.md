@@ -1,11 +1,11 @@
 ---
-title: Calcolo provvigioni
+title: Izračunajte provizije
 sidebar_position: 3
 ---
 
-La stampa presente in questa posizione (pertinente all'area amministrativa) è stata creata a supporto del ** [calcolo provvigioni](/docs/finance-area/professional-men/procedures/calculate-commissions) ** presente nelle procedure amministrative (che attinge ai dati delle provvigioni agenti inseriti direttamente dalle scritture contabili previa opportuna configurazione delle causali contabili coinvolte).
+Ispis koji se nalazi na ovoj poziciji (odnosi se na administrativno područje) kreiran je da podrži  **[Izračun provizije](/docs/finance-area/professional-men/procedures/calculate-commissions)** prisutan u administrativnim postupcima (koji se oslanja na podatke o proviziji agenta unesene izravno iz računovodstvenih zapisa nakon odgovarajuće konfiguracije računovodstvenih predložaka uključeni).
 
-Tramite questa stampa è possibile dunque elaborare la lista delle provvigioni maturate filtrando eventualmente per singolo agente, per cliente, per data e inserendo la data di riferimento per considerare maturata la provvigione.
+Korištenjem ovog ispisa stoga je moguće obraditi popis obračunatih provizija, moguće filtriranje prema pojedinačnom agentu, prema klijentu, prema datumu i umetanje referentnog datuma kako bi se provizija smatrala obračunatom.
 
 
 

@@ -1,15 +1,15 @@
 ---
-title: Stampe Agenti
+title: Izvješće agenata
 sidebar_position: 1
 ---
 
-Da questa form è possibile lanciare diverse stampe riguardanti la gestione degli agenti.
+Iz ove forme moguće je pokrenuti razne ispise vezane uz upravljanje agentima.
 
-I vari report sono selezioanbili dall'apposita combo box.
+Različita izvješća mogu se odabrati iz odgovarajućeg kombiniranog okvira.
 
 ![](/img/it-it/finance-area/professional-men/reports/agent-reports/image01.png)
 
-I vari campo di filtro ricalcano quelli previsti per la** [ Situazione ritenute](/docs/finance-area/professional-men/reports/withholding-tax-situation) ** alla quale si rinvia.
+Različita polja filtera slijede ona navedena za **[Situaciju poreza po odbitku](/docs/finance-area/professional-men/reports/withholding-tax-situation)** na koju se upućuje.
 
 
 

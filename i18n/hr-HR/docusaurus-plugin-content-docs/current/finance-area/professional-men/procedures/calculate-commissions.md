@@ -1,44 +1,43 @@
 ---
-title: Calcolo provvigioni
+title: Izračunajte provizije
 sidebar_position: 2
 ---
 
-La presente procedura (pertinente all'area amministrativa) è stata creata per l'elaborazione dei dati delle provvigioni agenti inseriti direttamente dalle scritture contabili previa opportuna configurazione delle causali contabili coinvolte.
+Ova procedura koja se odnosi na administrativno područje stvorena je za obradu podataka o provizijama agenata koji su uneseni izravno iz računovodstvenih evidencija nakon odgovarajuće konfiguracije računovodstvenih razloga uključenih.
 
-In particolare la causale (o le causali) utilizzate per la registrazone delle fatture di vendita dovranno avere il flag **Provvigioni** attivo.
+U posebnosti, razlog koji se koriste za registraciju prodajnih faktura trebaju imati oznaku **Provizije** aktiviranu.
 
-**NOTA**: è necessario abiltare i flag Gestione Provvigioni anche all'interno di Configurazione > Utilità > Amministrazione > Parametri di contabilità in corrispondenza dell'anno desiderato.
+**NAPOMENA**: potrebno je aktivirati oznaku Upravljanje provizijama i unutar Konfiguracije > Alati > Administracija > Parametri računovodstva za željenu godinu.
 
-All'apertura della form eseguendo il comando **Ricerca**, posto nella ribbon bar, viene caricata la lista degli agenti attivi (tramite il flag apposito possono essere caricati anche quelli con data fine mandato scaduta).
+Pri otvaranju obrasca izvršavanjem naredbe **Pretraživanje**, koja se nalazi na traci s izbornicima, učitava se popis aktivnih agenata (putem odgovarajuće oznake mogu se učitati i oni čiji je datum isteka mandata istekao).
 
 ![](/img/it-it/finance-area/professional-men/procedures/calculate-commissions/image01.png)
 
 ![](/img/it-it/finance-area/professional-men/procedures/calculate-commissions/image02.png)
 
-Nella parte destra della form sono presenti sia elementi di filtro per i dati dai quali elaborare le provvigioni, sia elementi da indicare al fine di elaborare correttamente i compensi basati sulla liquidazione che si sta generando.
+Na desnoj strani obrasca prisutni su i elementi za filtriranje podataka s kojih se obračunavaju provizije, kao i elementi koje treba naznačiti kako bi se ispravno obračunali troškovi na temelju likvidacije koja se generira.
 
-ATTENZIONE:
+**PAŽNJA:**
 
-Diversamente dall'elaborazione analoga presente nell'area vendite, al termine della presente procedura non vengono elaborate le Liquidazioni (ricercabili e consultabili e da trasformare poi in compensi) ma saranno direttamente generati i compensi agenti ricercabili ed ulteriormente elaborabili dall'area Percipienti.
+Za razliku od sličnog obračuna prisutnog u prodajnom području, na kraju ove procedure ne obrađuju se Likvidacije (koje se mogu pretraživati i konzultirati te zatim pretvoriti u troškove), već će se izravno generirati troškovi agenata koji se mogu pretraživati i dodatno obrađivati u području Primatelja.
 
-**Filtro Divisa**: permette di selezionare e filtrare le partite, da considerare per il calcolo delle provvigioni, espresse in una particolare divisa.
+**Filtriranje Valute**: omogućuje odabir i filtriranje stavki koje se uzimaju u obzir za obračun provizija, izraženih u određenoj valuti.
 
-**Filtro partite**: i filtri di questo gruppo permettono di impostare la data di riferimento per la maturazione della provvigione (posta di default come la data corrente all'apertura della form) e di filtrare ulteriormente per tipo e data del documento. E' presente inoltre un flag che attiva la conversione delle partite in valuta utilizzando il cambio della data documento andando ad imporsi rispetto all'eventuale diverso cambio di apertura delle partite.
+**Filtriranje stavki**: filtriranje ove grupe omogućuje postavljanje referentnog datuma za stjecanje provizije (postavljenog po zadanim postavkama na trenutni datum prilikom otvaranja obrasca) i dodatno filtriranje prema vrsti i datumu dokumenta. Također je prisutna oznaka koja aktivira konverziju stavki u valutu koristeći tečaj datuma dokumenta, nadmašujući eventualni drugačiji tečaj otvaranja stavki.
 
 ![](/img/it-it/finance-area/professional-men/procedures/calculate-commissions/image03.png)
 
-**ATTENZIONE**: Nel caso in cui l'agente abbia il metodo di maturazione provvigioni a **Pagamento totale** e la fattura di vendita abbia come tipo pagamento **Ricevuta bancaria**, la maturazione della provvigione avverrà in ogni caso alla data di scadenza della ricevuta bancaria, indipendentemente dalla chiusura della partita a fronte dell'emissione della RiBa e della presentazione al Salvo buon fine e/o accredito delle somme.
+**PAŽNJA**: U slučaju da agent ima metodu obračuna provizija na **Ukupna plaćanja** i faktura prodaje ima kao tip plaćanja **Bankovni prijenos**, obračun provizije će se u svakom slučaju dogoditi na datum dospijeća bankovne primitke, neovisno o zatvaranju predmeta u vezi s izdavanjem RiBe i predajom na Saldo nakon dobrobiti i/ili kreditiranja iznosa.
 
-Inoltre saranno aggiunti ulteriori giorni impostabili in **Parametri > Tesoreria > Parametri Rischio Cliente** > **N. giorni oltre la scadenza per effetti pres. al slavo buon fine / dopo incasso.**
+Osim toga, bit će dodani dodatni dani koje je moguće postaviti u **Parametri > Blagajna > Parametri Rizik kupca** > **Broj dana nakon isteka za efekte predane na saldo nakon dobrobiti / nakon naplate**.
 
-**Estremi per la creazione liquidazione**: I campi di questo gruppo sono da gestire prima di lanciare l'esecuzione del calcolo al fine di inserire la data della liquidazione (proposta di default come data corrente), la descrizione della liquidazione ed il mese/anno di comptenza ENASARCO (se si omette quest'ultimo dato il compenso sarà creato con gli omonimi campi vuotti e sarà necessario integrare manualmente dentro ogni compenso generato).
+**Podaci za izradu likvidacije**: Polja iz ove grupe trebaju se obraditi prije pokretanja izračuna kako bi se unio datum likvidacije (predložen kao trenutni datum), opis likvidacije te mjesec/godina obračuna ENASARCO (ako se ovaj posljednji podatak izostavi, naknada će biti kreirana s istim praznim poljima i bit će potrebno ručno dopuniti unutar svake generirane naknade).
 
 ![](/img/it-it/finance-area/professional-men/procedures/calculate-commissions/image04.png)
 
-Dopo aver impostato i filtri come sopra descritto, inserito gli stremi per la creazione liquidazione, selezionare dalla lista agenti i soggetti da liquidare e premere il tasto **Calcola** posto nella ribbon bar.
+Nakon postavljanja filtara kao što je opisano iznad, unesite podatke za izradu likvidacije, odaberite iz popisa agente subjekte za likvidaciju i pritisnite gumb **Izračunaj** koji se nalazi na traci izbornika.
 
-a questo punto è possibile chiudere la form in commento essendo i compensi agenti già calcolati e presenti automaticamente nell'area Percipienti.
-
+U ovom trenutku je moguće zatvoriti obrazac u komentaru jer su naknade agenata već izračunate i automatski prisutne u području Primatelji.
 
 
 

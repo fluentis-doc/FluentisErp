@@ -1,34 +1,34 @@
 ---
-title: Ricerca compensi
+title: Pretraga naknada
 sidebar_position: 1
 ---
 
 
 
-| Funzione | Significato |
+| Funkcija | Značenje |
 | --- | --- |
-| Ricerca | Pulsante per applicare i filtri di ricerca all'intero database dei compensi inseriti. |
-| Nuovo | Richiama la procedura per inserire un nuovo compenso. |
-| Modifica | Richiama la procedura per modificare un compenso precedentemente inserito. |
-| Visualizzazione | Richiama la procedura per visualizzare un compenso precedentemente inserito. |
-| Cancella | Esegue la procedura per cancellare un compenso precedentemente inserito. |
-|  [Versamenti ritenuta](/docs/finance-area/professional-men/search-compensations/withholding-tax-paying-in)  | Apre la gestione dei dati dei versamenti effettuati. |
+| Traži | Tipka za primjenu filtara pretraživanja na cijelu bazu podataka unesenih naknada. |
+| Novo | Poziva proceduru za unos nove naknade. |
+| Izmjeni | Poziva proceduru izmjene prethodno upisane naknade. |
+| Vizualizacija | Pozovite proceduru za pregled prethodno unesene naknade. |
+| Izbriši | Izvodi proceduru brisanja prethodno unesene kompenzacije. |
+|  [Plaćanja po odbitku](/docs/finance-area/professional-men/search-compensations/withholding-tax-paying-in)  | Otvara upravljanje podacima o izvršenim uplatama. |
 
 
 
-| Funzione | Significato |
+| Funkcija | Značenje |
 | --- | --- |
-| Stampa certificazione ritenute (nel gruppo Ritenute a Titolo d'acconto) | Richiama la procedura per stampare le certificazioni periodiche delle ritenute. |
-|  [Stampa Situazione ritenute (nel gruppo Ritenute a Titolo d'acconto)](/docs/finance-area/professional-men/reports/withholding-tax-situation)  | Richiama la procedura per stampare la situazione delle ritenute versate/da versare per i pagamenti del periodo selezionato. |
+| Ispis potvrde o porezu po odbitku (u grupi Porez po odbitku) | Poziva postupak ispisa periodičnih potvrda o porezu po odbitku. |
+| [Ispiši stanje poreza po odbitku (u grupi Porez po odbitku)](/docs/finance-area/professional-men/reports/withholding-tax-situation)  | Poziva proceduru ispisa stanja obujma za isplate za odabrano razdoblje. |
 
 
 
-| Funzione | Significato |
+| Funkcija | Značenje |
 | --- | --- |
-| Modello F24 | Richiama la procedura per gestire i dati del modello F24. |
-|  [Contabilizzazione compensi](/docs/finance-area/professional-men/accounting/compensation-accounting/compensations-accounting)  | Richiama la procedura per effettuare la contabilizzazione dei compensi. |
-|  [Contabilizzazione Enasarco](/docs/finance-area/professional-men/accounting/enasarco-accounting/enasarco-accounting-intro)  | Richiama la procedura per effettuare la contabilizzazione dei tributi dovuti all'ente Enasarco. |
-|  [Contabilizzazione pagamenti](/docs/finance-area/professional-men/accounting/payments-accounting/payments-accounting-intro)  | Richiama la procedura per effettuare la contabilizzazione dei pagamenti ai professionisti, che rileverà le ritenute e gli eventuali oneri INPS. |
+| Model F24 | Prisjetite se postupka upravljanja podacima modela F24. |
+|  [Računovodstvo naknada](/docs/finance-area/professional-men/accounting/compensation-accounting/compensations-accounting)  | Podsjeća na postupak obračunavanja naknade. |
+|  [Enasarco računovodstvo](/docs/finance-area/professional-men/accounting/enasarco-accounting/enasarco-accounting-intro)  | Podsjeća na proceduru obračunavanja poreza dospjelih Enasarco-u. |
+|  [Računovodstvena plaćanja](/docs/finance-area/professional-men/accounting/payments-accounting/payments-accounting-intro)  | Sliči proceduri računovodstva za plaćanja profesionalcima, koja će otkriti zadržavanja i sve troškove INPS-a. |
 
 
 

@@ -1,23 +1,23 @@
 ---
-title: Modello F24
+title: Model F24
 sidebar_position: 1
 ---
 
-La procedura è dedicata alla creazione del modello F24. Questo modello è dedicato al versamento dei vari tributi versati mensilmente dall'azienda.
+Postupak je namijenjen za kreiranje obrasca F24. Ovaj obrazac je namijenjen za plaćanje raznih poreza koji se plaćaju mjesečno od strane tvrtke.
 
-Per inserire un nuovo modello F24 premere il tasto **Nuovo** nella ribbon bar.
+Za unos novog obrasca F24 pritisnite tipku **Novi** na traci izbornika.
 
-Per i dettagli nel nuovo modello in fase di inserimento vedere [**Gestione modello F24**](/docs/finance-area/professional-men/procedures/model-f24/f24-management)
+Za detalje u novom modelu tijekom unosa pogledajte [**Upravljanje modelom F24**].(/docs/finance-area/professional-men/procedures/model-f24/f24-management)
 
 
 
-| Funzione | Significato |
+| Funkcija | Značenje |
 | --- | --- |
-| Ricerca | Pulsante per applicare i filtri di ricerca all'intero database dei modelli inseriti. |
-| Nuovo | Richiama la procedura per inserire un nuovo modello. |
-| Modifica | Richiama la procedura per modificare un modello precedentemente inserito. |
-| Visualizzazione | Richiama la procedura per visualizzare un modello precedentemente inserito. |
-| Cancella | Esegue la procedura per cancellare un modello precedentemente inserito. |
+| Pretraživanje | Tipka za primjenu filtara pretraživanja na cijelu bazu podataka unesenih modela. |
+| Novi | Poziva proceduru za unos novog modela. |
+| Izmjena | Poziva proceduru za izmjenu prethodno unesenog modela. |
+| Prikaz  | Poziva proceduru za prikaz prethodno unesenog modela. |
+| Brisanje | Izvodi postupak za brisanje prethodno unesenog modela. |
 
 
 

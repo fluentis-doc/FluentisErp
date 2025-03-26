@@ -1,9 +1,9 @@
 ---
-title: Versamenti ritenuta
+title: Uplata odbitka
 sidebar_position: 2
 ---
 
-In questa maschera è possibile filtrare i compensi pagati nel mese al fine di assegnare, massivamente, a quelli selezionati i riferimenti del versamento con modello F24, senza dover entrare in ogni compenso per inserirli uno ad uno. Una volta filtrati e selezionati i compensi, si impostano i dati nella sezione 'versamento' e poi si assegnano con il pulsante 'Imposta versamento'.
+U ovom obrascu moguće je filtrirati uplate plaćene u mjesecu kako bi se masovno dodijelile reference plaćanja s obrascem F24 odabranima, bez potrebe da ulazite u svaku uplatu kako biste ih umetnuli jednu po jednu. Nakon što su kompenzacije filtrirane i odabrane, podaci se postavljaju u odjeljku "plaćanje", a zatim se dodjeljuju pomoću gumba "Postavi plaćanje".
 
 ![](/img/it-it/finance-area/professional-men/search-compensations/withholding-tax-paying-in/image01.png)
 
