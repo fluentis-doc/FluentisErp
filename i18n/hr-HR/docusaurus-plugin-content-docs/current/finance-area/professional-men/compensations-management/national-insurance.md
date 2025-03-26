@@ -3,7 +3,7 @@ title: INPS
 sidebar_position: 7
 ---
 
-A seconda dell'impostazione della tabella tipi ritenuta può essere presente la scheda 'INPS': in caso di calcolo manuale sarà possibile forzare anche i dati presenti in questa sezione.
+Ovisno o postavkama tablice tipova zadržavanja, može biti prisutna kartica 'INPS': u slučaju ručnog izračuna bit će moguće prisiliti i podatke prisutne u ovoj sekciji.
 
 
 

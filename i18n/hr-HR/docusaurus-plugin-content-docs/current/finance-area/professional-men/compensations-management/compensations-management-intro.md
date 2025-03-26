@@ -1,19 +1,19 @@
 ---
-title: Gestione compensi
+title: Upravljanje naknadama
 sidebar_position: 1
 ---
 
-### **LINK AI TAB DELLA PARTE INFERIORE DELLA FORM**:
+### **POVEZNICA NA KARTICE NA DNU OBRASCA**:
 
-** [Totale ritenuta](/docs/finance-area/professional-men/compensations-management/total-withholding-tax) **
+** [Ukupni porez po odbitku](/docs/finance-area/professional-men/compensations-management/total-withholding-tax) **
 
-** [Lista pagamenti](/docs/finance-area/professional-men/compensations-management/total-withholding-tax) **
+** [Lista plaćanja](/docs/finance-area/professional-men/compensations-management/total-withholding-tax) **
 
-** [Versamenti ritenute](/docs/finance-area/professional-men/compensations-management/withholding-tax-paying-in) **
+** [Plaćanja po odbitku](/docs/finance-area/professional-men/compensations-management/withholding-tax-paying-in) **
 
-** [Riepiloghi IVA](/docs/finance-area/professional-men/compensations-management/vat-summaries) **
+** [Sažeci PDV-a](/docs/finance-area/professional-men/compensations-management/vat-summaries) **
 
-** [Centri di costo / profitto](/docs/finance-area/professional-men/compensations-management/cost-profit-centres) **
+** [Centri troškova/profita](/docs/finance-area/professional-men/compensations-management/cost-profit-centres) **
 
 ** [INPS](/docs/finance-area/professional-men/compensations-management/national-insurance) **
 
@@ -21,55 +21,55 @@ sidebar_position: 1
 
  
 
-Da questa maschera si procede al caricamento/modifica del documento ricevuto dal professionista o dall'agente, **sia nel caso di notula provvisoria che di fattura definitiva: la differenza tra i due, infatti, riguarderà unicamente l'inserimento immediato o successivo (entrando quindi in modifica di un provvisoria già rilevato) dei campi relativi al numero e data documento definitivo.**
+Iz ovog obrasca nastavljate s učitavanjem/izmjenom dokumenta primljenog od stručnjaka ili agenta, **u slučaju privremene notule i konačne fakture: razlika između toga dvoje, zapravo, odnosit će se samo na trenutno ili naknadno umetanje (dakle ulazak u izmjene već zabilježenog privremenog dokumenta) polja koja se odnose na broj i datum konačnog dokumenta.**
 
 ![](/img/it-it/finance-area/professional-men/compensations-management/compensations-management/image01.png)
 
  
 
-### **CAMPI DI TESTATA**:
+### **POLJA ZAGLAVLJA**:
 
-**Percipiente**: riguarda l'inserimento del sottoconto intestatario del compenso: si possono inserire in questo campo solo sottoconti con tipo conto agente oppure fornitori che abbiano il flag ritenute d'acconto impostato in anagrafica.
+**Primatelj**: odnosi se na unos nositelja podračuna naknade: u ovo polje mogu se unijeti samo podračuni s vrstom računa agenta ili dobavljača koji imaju oznaku poreza po odbitku postavljenu u šifarniku.
 
-I flag di stato successivi (aprire l'expander) sono: 
+Sljedeći statusni flagovi (otvoriti expander) su: 
 
-**contabilizzato**: gestito in automatico dall'applicazione al momento della contabilizzazione compensi. Una volta impostato questo flag il compenso non sarà più modificabile. **ritenuta versata**: sarà applicato al compenso manualmente oppure attraverso alla procedura ** [Versamenti ritenuta](/docs/finance-area/professional-men/search-compensations/withholding-tax-paying-in) ** eseguibile dalla maschera di ricerca compensi. 
+**Uračunato**: njime automatski upravlja aplikacija u trenutku obračuna naknade. Nakon što je ova zastavica postavljena, kompenzacija se više ne može mijenjati.  **Plaćeno zadržavanje**: primijenit će se na naknadu ručno ili kroz postupak  **[Plaćanja po odbitku](/docs/finance-area/professional-men/search-compensations/withholding-tax-paying-in)** koji se može izvesti iz maske za pretraživanje naknade. 
 
-**certificato**: viene impostato in automatico dal programma all'atto della stampa definitiva delle certificazioni ritenute.
+**Certifikat**: automatski ga postavlja program kada se zadržani certifikati definitivno ispisuju.
 
 ![](/img/it-it/finance-area/professional-men/compensations-management/compensations-management/image02.png)
 
  
 
-Collegato al sottoconto agente o fornitore può essere predefinito il **tipo di ritenuta** da proporre al momento di caricamento del compenso (il collegamento si definisce nell'anagrafica dell'agente o del fornitore).
+Povezano s podračunom agenta ili dobavljača, može se unaprijed definirati **vrsta poreza** po odbitku koji će se predložiti prilikom učitavanja naknade (veza se definira u registru agenta ili dobavljača).
 
-Il campo **note** successivo consente di annotare un testo di riferimento del compenso: si tratta di una nota che sarà poi riportata nelle note di dettaglio di tutti i movimenti contabili collegati a questo compenso. 
+Sljedeće polje za **bilješke** omogućuje vam da zapišete referentni tekst naknade: to je bilješka koja će se zatim prijaviti u detaljnim bilješkama svih računovodstvenih kretanja povezanih s ovom kompenzacijom. 
 
-**Descrizione movimento**: sarà utilizzato nella contabilizzazione compensi per l'omonimo campo della registrazione contabile.
-
- 
-
-Nella parte a destra: 
-
-**Codice pagamento**: questo campo, proposto in automatico (richiamando il compenso il tipo ritenuta applicabile) se è stato compilato l'omonimo campo nella form  [Gestione tipo ritenuta](/docs/configurations/tables/finance/withholding-tax-types), si riferisce al codice relativo alla causale di pagamento da indicare nella Certificazione unica dei percipienti (vedere istruzioni ministeriali).
-
-Esempio: codice A = prestazioni di lavoro autonomo esercitate abitualmente; Q = provvigioni corrisposte ad agente o rappresentante di commercio monomandatario; R = provvigioni corrisposte ad agente o rappresentante di commercio plurimandatario; U = provvigioni corrisposte a procacciatore d'affari......
+**Opis kretanja**: koristit će se u obračunu kompenzacije za istoimeno polje u računovodstvenom unosu.
 
  
 
-**Numero e anno di riferimento del compenso**: si tratta di una numerazione automatica interna del programma che deve essere univoca per la società. 
+Na desnoj strani: 
 
-**Data documento**: viene proposta come la data attuale ma può essere impostata come la data della notula provvisoria ricevuta.
+**Šifra plaćanja**: ovo polje, predloženo automatski (podsjećajući na primjenjivu vrstu poreza po odbitku za naknadu) ako je polje istog naziva ispunjeno u obrascu za [Upravljanje vrstom poreza](/docs/configurations/tables/finance/withholding-tax-types) po odbitku, odnosi se na šifru koja se odnosi na predložak plaćanja koji treba navesti u jedinstvenoj ovjeri primatelja (vidi upute ministarstva).
 
-**Data e numero documento definitivo**: riguardano i riferimenti alla fattura definitiva: si tratta di campi obbligatori per procedere alla contabilizzazione compensi, anche se la causale di riferimento non dovesse essere una causale IVA. Questi due campi saranno gli unici modificabili nel caso in cui il pagamento sia già stato rilevato in contabilità.
-
-**Data ricevimento**: campo per annotare la data di ricezione della fattura definitiva (non obbligatorio per la contabilizzazione).
+Primjer: šifra A = samozaposleni rad koji se obavlja uobičajeno; Q = provizije plaćene agentu ili prodajnom predstavniku jedne tvrtke; R = provizije plaćene agentu za više tvrtki ili prodajnom predstavniku; U = provizije plaćene poslovnom agentu......
 
  
 
-**Progetto** (ex commessa): serve a collegare il compenso ad un progetto (commessa di vendita): potrebbe essere il caso di una perizia su un cantiere gestito a commessa. Se la ** [causale contabile](/docs/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates) ** utilizzata nella contabilizzazione del compenso ha il flag progetti (ex commesse) attivo allora i costi inseriti in questo compenso saranno assegnati al progetto (commessa) inserito in questo campo.
+**Referentni broj i godina naknade**: ovo je automatska interna numeracija programa koja mora biti jedinstvena za tvrtku.
 
-**Cambio valuta/Data valuta/Divisa**: collegati alla gestione della divisa e dei relativi dati del cambio prelevati dalla tabella cambi (la divisa viene impostata dall'anagrafica agente/fornitore).
+**Datum dokumenta**: predložen je kao trenutni datum, ali se može postaviti kao datum primljene privremene obavijesti.
+
+**Datum i broj završnog dokumenta**: oni se odnose na reference na konačni račun: ovo su obavezna polja za nastavak obračuna naknade, čak i ako referentni predložak nije predložak PDV-a. Ova dva polja će biti jedina koja se mogu mijenjati ako je plaćanje već evidentirano u računovodstvu.
+
+**Datum primitka**: polje za bilježenje datuma primitka završnog računa (nije obavezno za računovodstvo).
+
+ 
+
+**Projekt** (bivši radni nalog): služi za povezivanje naknade s projektom (prodajni radni nalog): to može biti slučaj procjene na gradilištu kojim se upravlja na temelju radnog naloga. Ako **[računovodstveni predložak](/docs/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates)** koji se koristi u računovodstvu za kompenzaciju ima aktivnu oznaku projekti (ex narudžbe), tada će troškovi uneseni u ovu kompenzaciju biti dodijeljeni projektu (narudžbi) umetnutom u ovo polje.
+
+**Mjenjačnica / Datum valute / Valuta**: povezano s upravljanjem valutom i pripadajućim podacima o mjenjaču preuzetim iz mjenjačke tablice (valuta se postavlja iz registra agenta/dobavljača).
 
  
 
