@@ -17,8 +17,6 @@ La form si apre tramite il percorso **Parametri > Produzione > Parametri Ordini 
 
 **Cambia data commessa su cambio data ordine di produzione**: se attivo, permette all'utente di fare in modo che al cambio della data fine dell'ordine di produzione venga modificata automaticamente anche la data fine della commessa, sempre che l'articolo oggetto dell'ordine di produzione sia lo stesso oggetto della commessa di produzione; quindi l'ordine di produzione deve essere di livello 1;
 
-**Calcolo costo produzione per avanzamenti**: se attivo, permette all'utente di fare in modo che man mano che si registrano gli avanzamenti di produzione il costo della registrazione di magazzino venga incrementato di volta in volta del costo effettivo calcolato in base al tempo effettivo dichiarato nella dichiarazione moltiplicato per il costo orario di macchina e/o gruppo manodopera, quindi per il costo orario del centro di lavoro utilizzato;
-
 **Stampa Fogli di lavoro per Ordini Lanciati**: permette di rendere attivo di default il flag *Lanciati* nella relativa form di lancio di stampa del [Foglio di lavoro](/docs/production/pp-production-in-progress/reports/worksheet).
 
 **Determinazione tempi in automatico nelle dichiarazioni**: se attivo, calcola automaticamente il tempo macchina e il tempo operaio in base agli orari delle dichiarazioni. Diversamente, l'utente dovrà impostare manualmente i detti tempi sulla riga della dichiarazione di produzione; 
