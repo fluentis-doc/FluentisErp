@@ -51,7 +51,17 @@ Ci sono infine altre quattro sezioni: **Fogli di lavoro Gestiti per**, **Periodo
 
 **Periodo di Analisi**: la sezione consente, tramite l'attivazione di uno dei radio button, di scegliere il periodo di filtraggio degli ordini di produzione che dovranno essere visualizzati nella finestra della stampa del foglio di lavoro (settimanale, giornaliero o ogni X giorni);
 
-**Valorizzazione materiali a costo**: la sezione consente, tramite l'attivazione di uno dei radio button, di scegliere il tipo di costo per la valorizzazione dei materiali (costo ultimo/medio alla data del versamento ovvero della mia dichiarazione di produzione o il costo standard). Inoltre, è possibile, selezionando i flag *Lotti* e/o *Commessa di produzione*, andare a proporre come costo del materiale il costo ultimo/Medio/standard per il relativo lotto e/o commessa di produzione in base ai flag attivati.    
+**Valorizzazione materiali a costo**: la sezione consente di definire dei parametri che saranno utilizzati per il calcolo dei costi relativi alle dichiarazioni di produzione registrate. (Questi parametri non sono presi in considerazione dalla [Costificazione](/docs/planning/mps-master-production-scheduling/production-job-orders/valorization), in quando questa prende i valori direttamente dalle registrazioni delle dichiarazioni di produzione).   
+
+> **Ultimo**: permette di valorizzare i materiali a costo *Ultimo*;      
+> **Medio**: permette di valorizzare i materiali a costo *Medio*;                
+> **Standard**: permette di valorizzare i materiali a costo *Standard*;          
+> **Da area gestionale**: permette di valorizzare i materiali in base al costo legato all'*Area gestionale* selezionata nella relativa combo box;     
+> **Costo del lotto**: attivando questo flag, la procedura valorizzerà il costo del materiale in base al tipo costo selezionato considerando i valori solo di quello specifico lotto;     
+> **Costo della commessa**: attivando questo flag, la procedura valorizzerà il costo del materiale in base al tipo costo selezionato considerando i valori solo di quella specifica commessa.     
+
+:::note Nota
+Se **Costo del lotto** e **Costo della commessa** sono attivati entrambi, la procedura valorizzerà il costo del materiale in base al tipo costo selezionato considerando i valori solo di quella specifica commessa e per quello specifico lotto, ovviamente tra i movimenti effettuati con causali di carico con il flag aggiorna costo ultimo o medio (a seconda del valore indicato nel campo **Tipo di costo**) e il flag di interesse fiscale attivi; se non trova nessun movimento con queste caratteristiche va a cercare tra i movimenti che hanno caricato quel lotto, se non trova nemmeno questi va a cercare tra tutti i movimenti di quell'articolo. Se non ho nessun movimento di carico per quell'articolo va a vedere nei rispettivi campi costo ultimo, medio e standard dell'anagrafica dell'articolo.
 
 **Proposta sequenza fase**: la sezione consente di scegliere, durante la creazione di un ciclo di lavoro, il numero di sequenza della fase che viene proposto, che può essere preso dal numero di sequenza della fase standard oppure come progressivo dell’ordine di inserimento, indicando anche il valore di step.
 
