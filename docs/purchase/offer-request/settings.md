@@ -3,25 +3,27 @@ title: Introduzione
 sidebar_position: 1
 ---
 
-Il modulo si trova nell'area **Acquisti > Richieste di offerta** e rappresenta uno degli step intermedi del ciclo passivo.
-
+Il modulo si trova nell'area **Acquisti > Richieste di offerta** e rappresenta uno degli step intermedi del ciclo passivo. 
 Le richieste di offerta (RDO) servono a gestire il processo di raccolta e confronto di preventivi da parte dei fornitori permettendo la scelta delle condizioni di fornitura migliori.
 
-### Funzionalità principali
+## **Configurazione preliminare del modulo**
 
-- Invio di richieste multiple: Le RDO permettono di inviare richieste di preventivo a diversi fornitori per beni o servizi specifici, consentendo di raccogliere informazioni su prezzi, tempi di consegna, condizioni di pagamento e altre variabili importanti per l'azienda.
-- Comparazione delle offerte: consente di confrontare le offerte ricevute facilitando la selezione della soluzione migliore in termini di costi e condizioni contrattuali.
-- Conversione in ordini di acquisto: Una volta selezionata l'offerta più conveniente, il sistema permette di convertire la richiesta di offerta in un ordine di acquisto utilizzando la procedura di [Creazione ordine fornitore da offerta fornitore](/docs/purchase/offer-request/procedures/order-creation). 
-- Creazione e gestione centralizzata: Le RDO possono essere generate utilizzando template predefiniti e personalizzabili con la *Duplica* e l'utilizzo delle **Versioni**, con possibilità di includere dettagli come scontistiche, termini di pagamento e condizioni specifiche.
+Prima di utilizzare il modulo, è necessario compilare le seguenti tabelle e parametri:     
+- [**Numerazioni**](/docs/configurations/tables/fluentis-numerations): inserimento delle numerazioni da utilizzare per le Richieste di Offerta.       
+- [**Tipi richieste di offerta**](/docs/configurations/tables/purchase/purchase-offer-type): creazione delle tipologie di RDO.
 
-### Benefici operativi
 
-- Riduzione dei costi: Confrontando diverse offerte in modo sistematico, l'azienda può scegliere i fornitori con le condizioni economiche più favorevoli, riducendo i costi di approvvigionamento.
-- Efficienza operativa: L'automazione dei processi di richiesta e confronto delle offerte riduce il carico di lavoro manuale, aumentando la velocità e l'efficienza delle operazioni.
-- Migliore trasparenza e tracciabilità: Il sistema consente di tracciare ogni fase del processo di richiesta di offerta, garantendo trasparenza e un archivio completo per eventuali verifiche future.
+## **Collegamenti con altri moduli**
 
-### Impostazioni
+import Link from '@docusaurus/Link';
 
-Prima di utilizzare il modulo, è necessario compilare le seguenti tabelle:    
-> - [Numerazioni](/docs/configurations/tables/fluentis-numerations) 
-> - [Tipi richieste di offerte](/docs/configurations/tables/purchase/purchase-offer-type)
+<div className="cardContainer">
+    <div className="card">
+###     <Link to="/docs/purchase/purchase-requests/general-overview">Richieste di Acquisto</Link>
+        <p>Le Richiesta di Offerta possono essere generate dalle *Richiesta di Acquisto*, mediante il pulsante **Generatore RDO** posto all'interno della RDA. </p>
+    </div>
+    <div className="card">
+###     <Link to="/docs/purchase/purchase-orders/general-overview">Ordini fornitore</Link>
+        <p>Una volta selezionata l'offerta più conveniente, è possibile convertire la RDO in un ordine di acquisto utilizzando la procedura di [Creazione ordine fornitore da offerta fornitore](/docs/purchase/offer-request/procedures/order-creation).</p>
+    </div>
+</div>

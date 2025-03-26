@@ -7,24 +7,6 @@ The form **Create Sales DN** opens via the path **Sales > DN > Create Sales DN**
 
 ## *How to create a Sales DN*
 
-<details>
- 
-<summary>Click for key steps</summary>
- 
-1. **Enter the mandatory data**: *Order Type* and *Client*. *Year*, *Number*, and *Insert date* will be proposed automatically.  
- 
-2. **Enter or modify optional header data**: such as delivery dates, any *Discounts*, the *Destination*, etc.  
- 
-3. **Enter the Items**: by double-clicking in the *Item code* field, the item help will open, allowing you to search and select an existing item. All other line data, such as *Units of Measure*, *Quantity*, *Price*, will be proposed automatically, but can be modified. Alternatively, you can select as *Line type* an *Not-Codified Item* and manually enter the subsequent data.
- 
-4. **Enter any discounts or additional information** in the *Discounts/Price Lists* and *Item data* tabs.
- 
-5. **Check the Summary section** and enter any final fees or discounts.  
- 
-6. Once the order is checked and confirmed, **enter a *Confirmation date* and activate the *Printed* flag in the header** to make the order available for fulfillment procedures.
- 
-</details>
-
 ## **1. Mandatory Data**
 
 To continue creating the Sales DN, the user must enter the required fields:

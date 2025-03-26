@@ -7,24 +7,6 @@ The form opens via the path **Purchasing > Purchase Requests > New Request** or 
 
 ## *How to create a purchase request*
 
-<details>
- 
-<summary>Click for essential steps</summary>
- 
-1. **Enter mandatory data**: *Type* and *Supplier*. *Year*, *Number*, and *Insert date* will be proposed automatically.  
- 
-2. **Enter or modify optional header data**: such as delivery dates, any *Discounts*, *Destination*, etc.  
- 
-3. **Enter Items**: by double-clicking in the *Item code* field, the item help opens, allowing you to search for and select an existing item. All other line data, such as *Units of Measure*, *Quantity*, *Price*, will be proposed automatically but can be modified. Alternatively, you can select *Not-Codified Item* as *Line type* and manually enter the subsequent data.
- 
-4. **Enter any discounts or additional information** in the *Discounts/Price Lists* and *Item data* tabs.
- 
-5. **Check the Summary section** and enter any final expenses or discounts.  
- 
-6. Once the order is verified and confirmed, **enter a *Confirmation date* and activate the *Printed* flag in the header** to make the document available for fulfillment procedures.
- 
-</details>
-
 ## **1. Mandatory Data**
 
 The mandatory fields for entering a purchase request are as follows:

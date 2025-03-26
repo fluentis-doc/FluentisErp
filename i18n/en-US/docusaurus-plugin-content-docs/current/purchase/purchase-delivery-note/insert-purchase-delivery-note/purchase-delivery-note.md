@@ -7,24 +7,6 @@ The form *Create Purchase Delivery Note* opens via the path **New DN** or throug
 
 ## *How to Create a Purchase Delivery Note*
 
-<details>
- 
-<summary>Click for key steps - TO CHECK </summary>
- 
-1. **Enter mandatory data**: *Order Type* and *Supplier*. *Year*, *Number*, and *Insert date* will be proposed automatically.  
- 
-2. **Enter or modify optional header data**: such as delivery dates, any *Discounts*, *Destination*, etc.  
- 
-3. **Enter Items**: by double-clicking in the *Item code* field, the item help opens, allowing for the search and selection of an existing item. All other line data, such as *Units of Measure*, *Quantity*, and *Price*, will be proposed automatically, but can be modified. Alternatively, it is possible to select as *Line type* an *Not-Codified Item* and manually enter the subsequent data.
- 
-4. **Enter any discounts or additional information** in the *Discounts/Price Lists* and *Item data* tabs.
- 
-5. **Check the summary section** and enter any final expenses or discounts.  
- 
-6. Once the order has been checked and confirmed, **enter a *Confirmation date* and activate the *Printed* flag in the header** to make the order available for fulfillment procedures.
- 
-</details>
-
 ## **1. Mandatory Data**
 
 - **Type of purchase delivery note**: preset in *Configuration > Tables > Purchases > Types of Purchase Delivery Notes*.  

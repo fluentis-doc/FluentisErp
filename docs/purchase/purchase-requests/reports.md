@@ -5,7 +5,7 @@ sidebar_position: 4
 
 L’accesso alle varie stampe delle fatture si effettua dal menu **Acquisti > Richieste di acquisto > Stampe**. 
 
-### Stampa RDA
+## Stampa RDA
 
 Il report serve per stampare massivamente le richieste già inserite a sistema, secondo i filtri specificati nella form iniziale.    
 I primi filtri che ci vengono mostrati sono quelli relativi alle informazioni di testata dei documenti, come il *tipo*, il *numero documento*, il *fornitore*, la *data di inserimento* e la *data richiesta*.    

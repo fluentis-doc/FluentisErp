@@ -1,5 +1,5 @@
 ---
-title: Nuova Fattura di acquisti
+title: Nuova Fattura di acquisto
 sidebar_position: 2
 ---
 
@@ -9,11 +9,11 @@ La form si apre tramite il percorso **Acquisti > Fatture di acquisto > Nuova fat
 
 <details>
  
-<summary>Clicca per i passaggi fondamentali</summary>
+<summary>Clicca per vedere i passaggi fondamentali</summary>
  
 1. **Inserisci i dati obbligatori**: *Tipo* e *Fornitore*. *Anno*, *Numero* e *Data Inserimento* saranno proposti in automatico.  
  
-2. **Inserisci o modifica i dati facoltativi** della testata: come date di consegna, eventuali *sconti*, la *destinazione*, ecc.  
+2. **Inserisci o modifica i dati facoltativi** della testata: come date di arrivo, eventuali *sconti*, la *destinazione*, ecc.  
  
 3. **Inserisci gli Articoli**: mediante doppio click nel campo *Codice articolo* si apre l’help articoli che permette di cercare e selezionare un articolo esistente. Tutti gli altri dati della riga, come *unità di misura*, *quantità*, *prezzo*, saranno proposti in automatico, ma possono essere modificati.
 In alternativa è possibile selezionare come *Tipo riga* un *Articolo non codificato* e inserire manualmente i dati successivi.
@@ -22,7 +22,7 @@ In alternativa è possibile selezionare come *Tipo riga* un *Articolo non codifi
  
 5. **Controlla la sezione dei Riepiloghi** ed inserisci eventuali spese o sconti finali.  
  
-6. Una volta controllato e confermato l’ordine, **inserisci una *Data conferma* e attiva il flag *Stampato* in testata** in modo da rendere il documento disponibile per le procedure di evasione.
+6. Una volta controllata la fattura, **attiva il flag *Controllata* in testata** in modo da rendere il documento disponibile per le procedure successive.
  
 </details>
 

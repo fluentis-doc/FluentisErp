@@ -5,23 +5,6 @@ sidebar_position: 3
 
 ## *How to create a request for quotation*
 
-<details>
-
-<summary>Click for the essential steps</summary>
-
-1. **Enter the mandatory data**: *Type* and *Supplier*. *Year*, *Number*, and *Insert date* will be proposed automatically.
-
-2. **Enter or modify optional header data**: such as delivery dates, any *Discounts*, the *Destination*, etc.
-
-3. **Enter the Items**: by double-clicking in the *Item code* field, the item help opens, allowing you to search and select an existing item. All other row data, such as *Units of Measure*, *Quantity*, and *Price*, will be proposed automatically, but can be modified. Alternatively, you can select *Not-Codified Item* as the *Line type* and manually enter the subsequent data.
-
-4. **Enter any discounts or additional information** in the *Discounts/Price Lists* and *Item data* tabs.
-
-5. **Check the Summary section** and enter any final expenses or discounts.
-
-6. Once you have checked and confirmed the order, **enter a *Confirmation date* and activate the *Printed* flag in the header** to make the document available for fulfillment procedures.
-
-</details>
 
 ## **1. Mandatory Data**
 

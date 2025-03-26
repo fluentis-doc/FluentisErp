@@ -9,20 +9,22 @@ La form *Crea DDT di acquisto* si apre tramite il percorso **Acquisti > DDT di a
 
 <details>
  
-<summary>Clicca per i passaggi fondamentali-DA CONTROLLARE</summary>
+<summary>Clicca per vedere i passaggi fondamentali</summary>
  
-1. **Inserisci i dati obbligatori**: *Tipo Ordine* e *Fornitore*. *Anno*, *Numero* e *Data Inserimento* saranno proposti in automatico.  
+1. **Inserisci i dati obbligatori**: *Tipo DDT* e *Fornitore*. *Anno*, *Numero* e *Data Inserimento* saranno proposti in automatico.  
  
-2. **Inserisci o modifica i dati facoltativi** della testata: come date di consegna, eventuali *sconti*, la *destinazione*, ecc.  
+2. **Inserisci o modifica i dati facoltativi** della testata: come eventuali *sconti*, la *destinazione*, ecc.  
  
 3. **Inserisci gli Articoli**: mediante doppio click nel campo *Codice articolo* si apre l’help articoli che permette di cercare e selezionare un articolo esistente. Tutti gli altri dati della riga, come *unità di misura*, *quantità*, *prezzo*, saranno proposti in automatico, ma possono essere modificati.
 In alternativa è possibile selezionare come *Tipo riga* un *Articolo non codificato* e inserire manualmente i dati successivi.
  
-4. **Inserisci eventuali sconti o altre informazioni aggiuntive** nei tab *Sconti/listini* e *Dati articolo*
+4. **Inserisci eventuali sconti o altre informazioni aggiuntive** nei tab *Sconti/listini* e *Dati articolo*.
+
+5. **Aggiungi e informazioni relative al Trasporto** della merce nel tab *Trasporto*.
+
+6. **Controlla la sezione dei Riepiloghi** ed inserisci eventuali spese o sconti finali.  
  
-5. **Controlla la sezione dei Riepiloghi** ed inserisci eventuali spese o sconti finali.  
- 
-6. Una volta controllato e confermato l’ordine, **inserisci una *Data conferma* e attiva il flag *Stampato* in testata** in modo da rendere l’ordine disponibile per le procedure di evasione.
+7. Una volta confermato il DDT **attiva il flag *Controllato* in testata** in modo da rendere il documento disponibile per le procedure successive.
  
 </details>
 

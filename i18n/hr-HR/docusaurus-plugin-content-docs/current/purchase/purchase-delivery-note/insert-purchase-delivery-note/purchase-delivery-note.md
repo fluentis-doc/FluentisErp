@@ -10,27 +10,6 @@ Putanje za stvaranje nove otpremnice:
 
 - ili putem gumba **Novo** koji se nalazi u obrascu [Pretraga primki](/docs/purchase/purchase-delivery-note/insert-purchase-delivery-note/search-delivery-note).
 
-## *Come creare un DDT di acquisto*
-
-<details>
- 
-<summary>Clicca per i passaggi fondamentali-DA CONTROLLARE</summary>
- 
-1. **Inserisci i dati obbligatori**: *Tipo Ordine* e *Fornitore*. *Anno*, *Numero* e *Data Inserimento* saranno proposti in automatico.  
- 
-2. **Inserisci o modifica i dati facoltativi** della testata: come date di consegna, eventuali *sconti*, la *destinazione*, ecc.  
- 
-3. **Inserisci gli Articoli**: mediante doppio click nel campo *Codice articolo* si apre l’help articoli che permette di cercare e selezionare un articolo esistente. Tutti gli altri dati della riga, come *unità di misura*, *quantità*, *prezzo*, saranno proposti in automatico, ma possono essere modificati.
-In alternativa è possibile selezionare come *Tipo riga* un *Articolo non codificato* e inserire manualmente i dati successivi.
- 
-4. **Inserisci eventuali sconti o altre informazioni aggiuntive** nei tab *Sconti/listini* e *Dati articolo*
- 
-5. **Controlla la sezione dei Riepiloghi** ed inserisci eventuali spese o sconti finali.  
- 
-6. Una volta controllato e confermato l’ordine, **inserisci una *Data conferma* e attiva il flag *Stampato* in testata** in modo da rendere l’ordine disponibile per le procedure di evasione.
- 
-</details>
-
 U ovom dijelu automatski se predlaže trenutni **Datum** koji se može promijeniti prema potrebi dokumenta.
 
 ## **1. Obavezni podaci**
