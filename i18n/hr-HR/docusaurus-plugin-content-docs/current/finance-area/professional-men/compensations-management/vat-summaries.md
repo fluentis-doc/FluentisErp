@@ -1,13 +1,13 @@
 ---
-title: Riepiloghi IVA
+title: Sažetak PDV-a 
 sidebar_position: 5
 ---
 
-La sezione Riepiloghi IVA presenta il riepilogo dettagliato dei dati IVA aliquota per aliquota.
+Odjeljak Sažeci PDV-a predstavlja detaljan sažetak podataka o PDV-u po stopama.
 
-I dati possono essere forzati manualmente, ad esempio per gestire arrtondamenti dell'imposta in modo manuale. 
+Podaci se mogu upisivati ručno, na primjer za ručno upravljanje zaokruživanjem poreza.
 
-Per abilitare la modifica manuale attivare il flag **Calcolo manuale** nella tab** [Totale ritenuta](/docs/finance-area/professional-men/compensations-management/total-withholding-tax) **.
+Kako biste omogućili ručnu izmjenu, aktivirajte flag **Ručni izračun** na kartici **[Ukupni porez po odbitku](/docs/finance-area/professional-men/compensations-management/total-withholding-tax)**.
 
 
 

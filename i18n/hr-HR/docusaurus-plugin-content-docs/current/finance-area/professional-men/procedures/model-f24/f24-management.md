@@ -1,49 +1,49 @@
 ---
-title: Gestione F24
+title: Upravljanje F24
 sidebar_position: 2
 ---
 
-## Compilazione automatica
+## Automatsko popunjavanje
 
-La creazione del modello F24 prevede il caricamento di un nuovo modello all'interno del quale i dati di testata sono compilati sulla base dei riferimenti inseriti all'interno della tabella [**Società**](/docs/configurations/tables/general-settings/company). 
+Kreiranje modela F24 podrazumijeva učitavanje novog modela unutar kojeg su podaci iz zaglavlja popunjeni na temelju referenci unesenih unutar tablice [**Tvrtka**.](/docs/configurations/tables/general-settings/company). 
  
 
-Il periodo IVA e il periodo ritenuta (composti dai due campi mese / anno) sono proposti come il mese attuale: possono essere variati per richiamare il mese di riferimento (sia per i dati dell'iva da versare che per le ritenute d'acconto da versare). 
+Razdoblje PDV-a i razdoblje zadržavanja (koja se sastoje od dva polja mjesec / godina) predloženi su kao trenutni mjesec: mogu se promijeniti kako bi se pozvao referentni mjesec (kako za podatke o PDV-u koji se treba platiti, tako i za akontacije poreza koje treba platiti).
 
-In particolare, per quanto riguarda le  liquidazioni IVA, sarà ricercato il periodo memorizzato nella maschera ** [Versamenti IVA](/docs/finance-area/declarations/declarations/vat-payment) ** presente in contabilità generale (dove sono memorizzati automaticamente i valori della liquidazione al momento della sua stampa in definitivo: è consentito un caricamento manuale del valore).
+Posebice, što se tiče PDV obračuna, tražit će se razdoblje pohranjeno u obrascu **[Uplate PDV-a](/docs/finance-area/declarations/declarations/vat-payment)** prisutnom u glavnoj knjizi (gdje se automatski pohranjuju vrijednosti obračuna prilikom njegovog završnog ispisa: omogućeno je ručno unositi vrijednosti).
 
-E' possibile scegliere di elaborare solo i dati iva o solo i dati delle ritenute cancellando i dati dai campi (periodo e anno di riferimento) del dato che non interessa.
+Moguće je odabrati obradu samo podataka o PDV-u ili samo podataka o zadržavanju brisanjem podataka iz polja (period i godina referencije) podataka koji nisu od interesa.
 
-Una volta memorizzati i dati di testata si attiverà il pulsante **Proponi valori** che andrà a compilare le varie righe della prima **scheda erario**. 
+Jednom kada se pohrane podaci o zaglavlju, aktivirat će se tipka **Predloži vrijednosti** koji će popuniti razne retke prve **Kartice blagajne**.
 
-Una volta compilate **manualmente** anche tutte **le altre sezioni** della dichiarazione, a seconda delle necessità, impostato il versante/firmatario e il percorso di creazione del file sarà possibile eseguire la creazione del file con l'apposito pulsante che andrà a creare un file con il nome strutturato come 'Partita IVA società' + '_' + 'Numero dichiarazione' + '_' + 'Data dichiarazione' con estensione F24. In caso di dati obbligatori mancanti sarà restituito un messaggio di errore esplicativo e il file non sarà creato.
+Jednom kada su **ručno** ispunjene sve **ostale sekcije** deklaracije, ovisno o potrebama, postavljen potpisnik/signatar i putanja za kreiranje datoteke, bit će moguće izvršiti kreiranje datoteke s odgovarajućom tipkom koja će stvoriti datoteku s imenom strukturiranim kao 'PDV broj tvrtke' + '_' + 'Broj deklaracije' + '_' + 'Datum deklaracije' s ekstenzijom F24. U slučaju nedostajućih obaveznih podataka bit će prikazana poruka o grešci koja objašnjava problem, a datoteka neće biti kreirana.
 
-È possibile annullare la creazione del file con l'apposito pulsante di gestione.
+Moguće je otkazati stvaranje datoteke putem odgovarajuće tipke za upravljanje.
 
-Tramite il pulsante **Crea File telematico** è possibile creare il file che sarà inviato all'Agenzia delle Entrate tramite i canali appositi (es. Entratel).
-Il file viene automaticamente archiviato nl Documentale e può essere visualizzato e scaricato localmente attraverso il pulsante e drop down list **Documenti**, presente nella ribbon bar.
+Putem tipke **Kreiraj datoteku** moguće je kreirati datoteku koja će biti poslana Poreznoj upravi putem odgovarajućih kanala (npr. Entratel).
+Datoteka se automatski arhivira u Dokumentima i može se pregledati i preuzeti lokalno putem gumba i padajuće liste **Dokumenti**, koja se nalazi na traci s alatima.
 
-:::note[Nota]
-Per la creazione del file è richiesta la presenza (potrebbe essere restituito un messaggio di avviso) di due connettori Bizlink denominati F24 (Gestito dal servizio con autenticazione) ed F24Errors, di tipo Folder Output e con aggancio al partner AgeEnt, Flusso AgeEnt, Operazione di Flusso e documento di flusso F24 (F24Errors per il secondo)
+:::note[Napomena]
+Za kreiranje datoteke potrebna je prisutnost (može biti vraćena poruka upozorenja) dva Bizlink konektora nazvana F24 (Upravlja usluga s autentifikacijom) i F24Errors, tipa Folder Output i s povezivanjem na partnera AgeEnt, Tok AgeEnt, Operacija toka i dokument toka F24 (F24Errors za drugi).
 :::
 
-## Contabilizzazione
+## Knjiženje
 
-Nella testata del modello è possibile compilare i campi per le eventuali **Spese bancarie** e per il conto della **Banca di pagamento**.
-A questo punto è possibile premere il bottone **Contabilizzazione** per generare automaticamente la scrittura che rileva l'uscita di banca e lo storno dei conti (alimentati automaticamente) dove è stato caricato il debito per ritenute d'acconto da versare e per iva da versare (esempio conti solitamente denominati Erario c/ritenute d'acconto ed Erario C/Iva).
+U zaglavlju modela moguće je ispuniti polja za eventualne **Bankovni troškovi** i za račun **Banke za plaćanje**.
+U ovom trenutku je moguće pritisnuti gumb **Knjiženje** za automatsko generiranje knjiženja koje bilježi izlaz iz banke i povrat računa (automatski napunjenih) gdje je učitana dugovanja za zadržane poreze za uplatu i za PDV za uplatu (primjer računa koji se obično nazivaju Državni proračun c/porezi na zadržane iznose i Državni proračun C/PDV).
 
-:::tip[Nota]
-I conti utilizzati automaticamente per caricare il debito IVA e il debito per le ritenute d'acconto sono impostati, rispettivamente, nei [**parametri di contabilità**](/docs/configurations/parameters/finance/accounting-parameters#conti) per quanto riguarda l'iva, e nella tabella [**Tipi Ritenuta**](/docs/configurations/tables/finance/withholding-tax-types) per le ritenute d'acconto, conto di default che può essere stato sovrascritto in fase di [**contabilizzazione pagamento compensi**](/docs/finance-area/professional-men/accounting/payments-accounting/parameters)
+:::tip[Napomena]
+Računi koji se automatski koriste za učitavanje dugovanja za PDV i dugovanja za akontacije poreza na dohodak postavljeni su, respektivno, u [**parametrima računovodstva**](/docs/configurations/parameters/finance/accounting-parameters#conti) što se tiče PDV-a, te u tablici [**Tipovi odbitka poreza**](/docs/configurations/tables/finance/withholding-tax-types) za akontacije poreza na dohodak, zadani račun koji je mogao biti zamijenjen tijekom faze [**knjigovodstvene obrade isplate naknada**](/docs/finance-area/professional-men/accounting/payments-accounting/parameters)
 :::
 
 
 
-| Funzione | Significato |
+| Funkcija | Značenje |
 | --- | --- |
-| Salva | Salva il modello in uso. |
-| Proponi valori | Esegue la ripresa dei dati dai versamenti iva e dalle ritenute dei compensi pagati. |
-| Nuovo dettaglio | Imposta il cursore nella griglia di inserimento dei dettagli. |
-| Cancella dettaglio | Cancella la riga di dettaglio selezionata. |
+| Spremi | Spremi model u upotrebi. |
+| Predloži vrijednosti | Izvršava preuzimanje podataka iz uplate PDV-a i od poreza na isplaćene naknade. |
+| Novi detalj | Postavlja kursor u mreži za unos detalja. |
+| Obriši detalj | Briše odabrani redak detalja. |
 
 
 

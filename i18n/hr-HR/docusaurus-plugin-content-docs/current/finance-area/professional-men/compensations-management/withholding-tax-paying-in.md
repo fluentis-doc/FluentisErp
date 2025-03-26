@@ -1,9 +1,9 @@
 ---
-title: Versamenti ritenute
+title: Plaćanja po odbitku
 sidebar_position: 4
 ---
 
-La scheda Versamenti ritenuta memorizza i riferimenti generali del versamento ritenuta: viene gestita manualmente inserendo i dati del versamento effettuato con modello F24 o in modo massivo attraverso la maschera ** [Versamenti ritenuta](/docs/finance-area/professional-men/search-compensations/withholding-tax-paying-in) ** che si può aprire dalla ** [Ricerca compensi](/docs/finance-area/professional-men/search-compensations/search-compensations-intro) **.
+Kartica Plaćanja po odbitku pohranjuje opće reference uplate poreza po odbitku: njime se upravlja ručno unosom podataka o uplati u obrascu F24 ili masovno putem obrasca **[Plaćanja po odbitku](/docs/finance-area/professional-men/search-compensations/withholding-tax-paying-in)** koji se može otvoriti iz **[Traži kompenzaciju](/docs/finance-area/professional-men/search-compensations/search-compensations-intro)**.
 
 
 

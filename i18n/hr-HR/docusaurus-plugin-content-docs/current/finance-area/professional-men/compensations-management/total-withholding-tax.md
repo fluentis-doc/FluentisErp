@@ -1,24 +1,24 @@
 ---
-title: Totali ritenuta
+title: Ukupni iznosi po odbitku
 sidebar_position: 2
 ---
 
-Riepiloghi IVA e dati di dettaglio del calcolo della ritenuta d'acconto, dei contributi Enasarco e INPS.
+Sažeci PDV-a i detaljni podaci o obračunu poreza po odbitku, Enasarco i INPS doprinosa.
 
  ![](/img/it-it/finance-area/professional-men/compensations-management/total-withholding-tax/image01.png)
 
-**FLAG alla base della maschera**: è possibile impostare il **calcolo manuale**: in questo caso sarà possibile forzare manualmente i campi di calcolo della ritenuta i campi Enasarco ed il calcolo dell'IVA nella tab ** [Riepiloghi IVA](/docs/finance-area/professional-men/compensations-management/vat-summaries) **. 
+**FLAG u podnožju obrasca**: è possibile impostare il **calcolo manuale**: moguće je postaviti ručni izračun: u ovom slučaju bit će moguće ručno forsirati polja za izračun poreza po odbitku, polja Enasarco i izračun PDV-a u kartici **[PDV Sažeci](/docs/finance-area/professional-men/compensations-management/vat-summaries)**. 
 
-Si segnala che se è stato impostato il calcolo manuale l'applicazione non procederà più ad allineare la scadenza da pagare presente nel tabulatore successivo.
+Imajte na umu da ako je postavljen ručni izračun, aplikacija više neće uskladiti datum dospijeća za plaćanje u sljedećem tabulatoru.
 
-Si ricorda infine, che nel caso (remoto) di nota di credito percipiente, i valori della griglia di dettaglio saranno da inserire con segno negativo.
+Na kraju, imajte na umu da u (dalekom) slučaju primanja knjižnog odobrenja, vrijednosti u mreži s detaljima moraju biti unesene s negativnim predznakom.
 
 
 
-| Funzione | Significato |
+| Funkcija | Značenje |
 | --- | --- |
-| Calcola valori | Esegue il ricalcolo dei dati del compenso (ritenute, IVA, scadenze). |
-| Anteprima di stampa | Esegue l'anteprima di stampa del compenso. |
+| Izračunaj vrijednosti | Vrši preračun podataka o naknadama (odbitci, PDV, rokovi). |
+| Pregled ispisa | Obavlja pretpregled ispisa kompenzacije.|
 
 
 
