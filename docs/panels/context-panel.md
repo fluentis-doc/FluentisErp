@@ -3,16 +3,16 @@ title: Context Panel
 sidebar_position: 4
 ---
 
-I pannelli contestuali **Context Panel**, permettono una visualizzazione immediata di informazioni di sintesi circa un determinato oggetto di business di Fluentis.  
+I pannelli contestuali c.d. **Context Panel**, permettono una visualizzazione immediata di informazioni di sintesi circa un determinato oggetto di business di Fluentis.  
 
 La costruzione di un pannello contestuale (context panel) prevede alcuni step di parametrizzazione, più nello specifico:
 1.  eventuale creazione della dashboard (nel caso il context panel si basi su dashboard).
 2.  creazione del **context panel** dalla relativa form. 
 3.  parametrizzazione del **context panel** e definizione dei relativi legami.
 
-![](/img/en-US/extradata/20250318122749.png)
+Per aprire la form relativa ai **Context Panel**, da **Arm** > **Platform** > **Context Panel**
 
-La form dei pannelli contestuali si presenta così come segue:
+La form dei pannelli contestuali è articolata così come segue:  
 
 ### Ribbon menu
 Il Ribbon menu contiene i controlli per integrire con la form:
@@ -32,7 +32,6 @@ Il corpo centrale si compone di una griglia con i seguenti campi:
 * Report: facoltativo - indica il report su cui si basa in pannello contestuale.
 
 ## Form di dettaglio
-![](/img/en-US/extradata/20250318135028.png)
 
 La form di dettaglio si compone di n. 3 parti:
 
@@ -41,10 +40,10 @@ Il Ribbon menu contiene esclusivamente il pulsante **Save**, utilizzato per il s
 
 ### Testata
 Il tab relativo alla testata si compone dei seguenit input/campi:
-* Business Object: 
-* Localized Code:
-* Name:
-* Right:
+* Business Object: obbligatorio - si tratta dell'oggetto di business su cui si basa il pannello contestuale.
+* Localized Code: facoltativo - descrizione localizzata.
+* Name: obbligatorio - descrizione
+* Right: 
 * Type:
 * Dashboard:
 * Definition:
