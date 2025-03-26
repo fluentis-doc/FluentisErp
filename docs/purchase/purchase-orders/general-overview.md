@@ -31,7 +31,7 @@ import Link from '@docusaurus/Link';
 </div>
 <div className="cardContainer">
     <div className="card">
-###     <Link to="docs/sales/sales-orders/settings">Ordini Clienti</Link>
+###     <Link to="/docs/sales/sales-orders/settings">Ordini Clienti</Link>
         <p>La procedura di *Creazione automatica ordini* permette anche la creazione di un *Ordine fornitore* a partire da un *Ordine cliente*. In alternativa, è possibile generare un ordine di acquisto dal filtro di [Ricerca Ordini clienti](/docs/sales/sales-orders/create-new-sales-orders/search-sales-orders) mediante il pulsante *Creazione ordini fornitori*.         </p>
     </div>
     <div className="card">

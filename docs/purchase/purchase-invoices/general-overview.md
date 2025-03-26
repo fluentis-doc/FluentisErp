@@ -11,7 +11,7 @@ Prima di utilizzare il modulo, è necessario compilare le seguenti tabelle e par
 - [**Numerazioni**](/docs/configurations/tables/fluentis-numerations): inserimento delle numerazioni da utilizzare per le Fatture di Acquisto.     
 - [**Fatturato acquisti**](/docs/configurations/tables/purchase/purchase-turnover/): definizione delle tipologie di Fatturato acquisti da inserire nei documenti.
 - [**Tipi Fatture di Acquisto**](/docs/configurations/tables/purchase/purchase-invoices-type): creazione e definizione delle tipologie di Fatture da utilizzare.
-- [**Parametri Fatture di Acquisto**]((/docs/configurations/parameters/purchase/purchase-invoices-parameters)): impostazioni specifiche per la gestione delle fatture. 
+- [**Parametri Fatture di Acquisto**](/docs/configurations/parameters/purchase/purchase-invoices-parameters): impostazioni specifiche per la gestione delle fatture. 
 - [**Parametri di raggruppamento fatture di acquisto**](/docs/configurations/parameters/purchase/invoice-grouping/): definire le condizioni di raggruppamento dei DDT in fattura.
 
 

@@ -10,8 +10,7 @@ Le richieste di offerta (RDO) servono a gestire il processo di raccolta e confro
 
 Prima di utilizzare il modulo, è necessario compilare le seguenti tabelle e parametri:     
 - [**Numerazioni**](/docs/configurations/tables/fluentis-numerations): inserimento delle numerazioni da utilizzare per le Richieste di Offerta.       
-- [**Tipi richieste di offerta**](/(/docs/configurations/tables/purchase/purchase-offer-type)): creazione delle tipologie di RDO.
-- [**Parametri richieste di acquisto**](/docs/configurations/parameters/purchase/purchase-requests-parameters): impostazioni specifiche per la gestione delle RDA. 
+- [**Tipi richieste di offerta**](/docs/configurations/tables/purchase/purchase-offer-type): creazione delle tipologie di RDO.
 
 
 ## **Collegamenti con altri moduli**
