@@ -26,7 +26,7 @@ In alternativa è possibile selezionare come *Tipo riga* un *Articolo non codifi
  
 </details>
 
-## **1. Sezione superiore**{#upper-section}
+## **1. Sezione superiore** {#upper-section}
 
 I campi obbligatori per l'inserimento di una richiesta di acquisto sono i seguenti:
 
@@ -40,7 +40,7 @@ I campi obbligatori per l'inserimento di una richiesta di acquisto sono i seguen
 Se il documento viene *creato automaticamente* da una RDA, questi dati vengono ripresi dal *documento d'origine* da cui è stata generato.
 :::
 
-## **2. Testata**{#header}
+## **2. Testata** {#header}
 
 ### 2.1 Dati fornitore
 
@@ -91,7 +91,7 @@ Gli sconti proposti in testata del documento vengono riportati in ogni nuova rig
 
 Qui viene proposta l'informazione inserita nell'*Anagrafica del soggetto > tab Extra data*, solo se esistono dati di default.
 
-## **3. Articoli**{#items}
+## **3. Articoli** {#items}
 
 Per inserire un *Nuovo articolo* nella griglia basterà posizionarsi sulla riga per compilare i vari dati oppure utilizzare il pulsante **Nuovo articolo** presente nella ribbon bar.
 
@@ -134,7 +134,7 @@ Se si parte direttamente con l'inserimento dell'articolo, la sua classe, il codi
 
 - **Periodo di prevista consegna**: campo descrittivo libero in cui è possibile indicare il periodo di tempo previsto per la consegna della merce.
 
-### 3.3 Sconti{#discount}
+### 3.3 Sconti {#discount}
 
 - **Tipo scaglione**: riporta lo scaglione di sconto da utilizzare, che viene ripreso dall'anagrafica fornitore oppure dal listino.  
 
@@ -165,19 +165,19 @@ All'interno di questo tab vengono riportate/inserite ulteriori informazioni rela
 >- **Richiesta di acquisto**: se l'offerta è stato creata da RDA viene riportata la [Richiesta d'acquisto](/docs/purchase/purchase-requests/purchase-request/insert-purchase-request) di riferimento.   
 
 
-#### 3.4 Extra data{#extra-data}
+#### 3.4 Extra data {#extra-data}
 
 import DocItemExtraData from './../../../import/sections/doc-item-extradata.md'
 
 <DocItemExtraData />
 
-#### 3.5 Documenti allegati{#attached-documents}
+#### 3.5 Documenti allegati {#attached-documents}
 
 import DocAttachDocument from './../../../import/sections/doc-attach-document.md'
 
 <DocAttachDocument />
 
-## **4. Riepiloghi**{#summaries}
+## **4. Riepiloghi** {#summaries}
 
 Nelle sezioni di questo tab sono presentate le informazioni principali dell'intero documento.
 
