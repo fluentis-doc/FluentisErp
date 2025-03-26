@@ -1,59 +1,52 @@
 ---
-title: Introduzione
+title: Uvod
 sidebar_position: 1
 ---
 
-Il modulo Percipienti di Fluentis ERP gestisce le attività legate ai compensi erogati a professionisti esterni e agenti, garantendo il controllo sulle ritenute d’acconto e sugli adempimenti fiscali connessi, come la compilazione del modello F24. Questo modulo permette di registrare compensi, contabilizzare pagamenti, e generare certificazioni fiscali. Il modulo può ricevere i dati degli agenti dall'omonimo modulo dell'area **Vendite**.  
-Da questo modulo si realizza la rilevazione dei debiti per i vari tributi da versare (ritenuta, Enasarco, INPS).
+Modul percipijenata Fluentis ERP upravlja aktivnostima vezanim uz naknade isplaćene vanjskim stručnjacima i agentima, garantirajući kontrolu nad odbiticama i fiskalnim obvezama koje su povezane, kao što je popunjavanje obrasca F24. Ovaj modul omogućuje registraciju naknada, knjiženje uplata i generiranje fiskalnih certifikata. Modul može primati podatke od agenata iz istoimenog modula u području **Prodaje**.  
+Iz ovog modula vrši se evidentiranje dugova za razne poreze koji se trebaju platiti (odbitak, Enasarco, INPS).
 
-**Funzionalità Principali**
+**Glavne funkcionalnosti**
 
-- Ricerca e gestione dei compensi: Consente di inserire, modificare e visualizzare i compensi, con la possibilità di eliminare quelli errati e gestire versamenti delle ritenute d’acconto in modo massivo, evitando modifiche manuali sui singoli compensi​
+- Pretraživanje i upravljanje naknadama: Omogućuje unos, izmjenu i pregled naknada, s mogućnošću brisanja pogrešnih i upravljanja isplatama akontacija na masovni način, izbjegavajući ručne izmjene pojedinih naknada​.
 
-- Contabilizzazione compensi: I compensi possono essere contabilizzati direttamente, sia per la parte fiscale (ritenute, INPS, ENASARCO), sia per la gestione dei centri di costo e profitto aziendali. I compensi definitivi vengono poi inseriti in contabilità​
+- Knjiženje kompenzacija: Naknade se mogu kontabilizirati izravno, kako za porezni dio (zadržavanja, INPS, ENASARCO), tako i za upravljanje centrima troška i profita tvrtke. Konačne naknade se zatim unose u računovodstvo​.
 
-- Modello F24: Il modulo gestisce il calcolo e la compilazione del modello F24 per il versamento delle ritenute e altri tributi, con la possibilità di proporre automaticamente i dati necessari grazie alle informazioni inserite nei compensi​
+- Model F24 (Modello F24): Modul upravlja izračunom i popunjavanjem modela F24 za uplatu zadržavanja i drugih poreza, s mogućnošću automatskog predlaganja potrebnih podataka zahvaljujući informacijama unesenim u naknade​.
 
+**Dostupni ispis**
 
+- Ispis certifikata zadržavanja: Generira certifikat o periodičnim zadržavanjima kao akontaciji​.
 
-**Stampe Disponibili**
+- Situacija poreza po odbitku: Pruža sažetak uplaćenih ili za uplatu zadržavanja, korisno za unutarnju kontrolu i popunjavanje Jedinstvene certifikacije​.
 
-- Stampa certificazione ritenute: Genera la certificazione delle ritenute periodiche a titolo d’acconto​
+- Ispis provizija: Podržava upravljanje provizijama koje su stekli agenti, s filtrima prema datumu i agentu, omogućujući obradu cjelovitih lista​.
 
-- Situazione ritenute: Fornisce un riepilogo delle ritenute versate o da versare, utile per il controllo interno e la compilazione della Certificazione Unica​
+**Glavne procedure**
 
-- Stampa provvigioni: Supporta la gestione delle provvigioni maturate dagli agenti, con filtri per data e agente, permettendo di elaborare liste complete​
+- Upravljanje naknadama i isplatama zadržavanja: Omogućuje učitavanje, izmjenu i povezivanje fiskalnih dokumenata vezanih uz naknade, te upravljanje podacima o isplatama ručno ili masovno​.
 
+- Izračun provizija: Automatizira izračun provizija za agente, s mogućnošću povezivanja naknada sa specifičnim projektima ili poslovima​.
 
+**Prednosti korištenja modula**: Ovaj modul komunicira i s modulom **Prodaja** za čitanje izračunatih provizija agenata i pretvaranje u Račun agenata, osiguravajući izračun kako zadržavanja, tako i doprinosa za penzijsko osiguranje Enasarco, te s modulom Porezne prijave omogućujući samostalno upravljanje svim porezima, sve do CU (jedinstvena certifikacija zadržavanja) bez potrebe za vanjskim savjetima. Obrada CU također omogućuje izvoz telematičke evidencije za slanje Poreznoj upravi. Posebna pažnja je posvećena logici upravljanja naknadama i stvarnosti u Italiji, s mogućnošću unosa obavijesti o računu (u suštini proforma faktura) i nastavku plaćanja, s nastankom duga za porezne uplate, prije nego što se faktura primi u računovodstvo.
 
-**Procedure Principali**
+**Tabele i parametri potrebni za korištenje modula**
 
-- Gestione compensi e versamenti ritenute: Permette di caricare, modificare e collegare documenti fiscali relativi ai compensi, e di gestire manualmente o massivamente i dati del versamento​
+Za korištenje modula Percipienti u Fluentis ERP-u, potrebno je upravljati nekim ključnim tablicama kako bi se osigurao ispravan rad sustava i usklađivanje računovodstvenih i poreznih operacija. Među glavnim tablicama koje treba konfigurirati su:
 
-- Calcolo provvigioni: Automatizza il calcolo delle provvigioni per gli agenti, con la possibilità di collegare i compensi a specifici progetti o commesse​
+- Tipovi računa i **Tipovi odbitka poreza**: Osnovni za definiranje vrste zadržavanja koje se primjenjuju na različite percipijente.
+- **Kategorije agenata**: Temeljna tablica za agente gdje se definiraju doprinosi za penzijsko osiguranje i drugi doprinosi na koje su podložni.
+- Kod poreza: Potreban za upravljanje zadržavanjima i porezima povezanim s naknadama.
+- Načini isplate: Za definiranje načina plaćanja poreza.
+- Plan računa: Potreban za povezivanje računovodstvenih unosa s ispravnim računima.
+- Stope PDV-a: Za pravilnu primjenu poreza na naknade.
+- Razlozi opće računovodstvo i razlozi doprinosa: Koriste se za ispravnu klasifikaciju računovodstvenih operacija vezanih uz naknade percipijenata.
+- Centri troška/profitabilnosti/odgovornosti: Za dodjelu troškova i prihoda različitim poslovnim centrima.
+- Fiksni tečajevi eura i tečajevi valuta: Važni za upravljanje transakcijama u različitim valutama.
 
+**Zaključci**
 
-**Vantaggi nell'utilizzo del modulo**: Questo modulo dialoga sia con il modulo **Vendite** per la lettura delle provvigioni agenti calcolate e la trasformazione in Parcella dell'agente, garantendo il calcolo sia delle ritenute d'acconto, sia dei contributi pensionistici Enasarco, e sia con il modulo Dichiarazioni fiscali permettendo di gestire tutta la fiscalità, fino alla CU (certificazione unica delle ritenute d'acconto) in autonomia senza necessariamente dover ricorrere a consulenze esterne. L'elaborazione della CU permette anche di esportare il tracciato telematico per l'invio all'Agenzia delle Entrate. Particolare attenzione è stata posta alla logica di gestione dei compensi ed alla realtà Italiana, con la possibilità di inserire il preavviso di parcella (di fatto una fattura proforma) e procedere al pagamento, con nascita del debito per i versamenti fiscali, prima della contabilizzazione della fattura ricevuta.
-
-**Tabelle e parametri necessari per utilizzare il modulo**
-
-Per utilizzare il modulo Percipienti di Fluentis ERP, è necessario gestire alcune tabelle chiave per assicurare il corretto funzionamento del sistema e l'allineamento delle operazioni contabili e fiscali. Tra le principali tabelle da configurare ci sono:
-
-- Tipi conto e **Tipi ritenuta**: Essenziali per definire la tipologia di ritenuta da applicare ai diversi percipienti.
-- **Categorie Agenti**: Tabella fondamentale per gli agenti dove definire la contribuzione pensionistica e gli altri contribuiti a cui sono soggetti.
-- Codice tributo: Necessario per la gestione delle ritenute e dei tributi collegati ai compensi.
-- Modalità di versamento: Per definire le modalità di pagamento dei tributi.
-- Piano dei conti: Necessario per associare le registrazioni contabili ai conti corretti.
-- Aliquote IVA: Per la corretta applicazione delle imposte sui compensi.
-- Causali contabilità generale e causali contributo: Utilizzate per classificare correttamente le operazioni contabili legate ai compensi dei percipienti.
-- Centri di costo/profitto/responsabilità: Per assegnare i costi e i ricavi ai vari centri aziendali.
-- Cambi fissi euro e cambi valute: Importanti per la gestione delle transazioni in diverse valute.
-
-
-
-**Conclusioni**
-
-Il modulo Percipienti di Fluentis ERP è uno strumento avanzato per la gestione dei compensi a professionisti e agenti, assicurando la correttezza dei versamenti fiscali e facilitando l’elaborazione di documenti ufficiali come il modello F24 e le certificazioni delle ritenute.
+Modul Percipienti u Fluentis ERP-u je napredni alat za upravljanje naknadama profesionalcima i agentima, osiguravajući točnost poreznih uplata i olakšavajući obradu službenih dokumenata kao što su model F24 i certifikati zadržavanja.
 
 
 

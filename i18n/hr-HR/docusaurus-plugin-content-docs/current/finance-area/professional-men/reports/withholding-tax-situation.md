@@ -1,53 +1,53 @@
 ---
-title: Stampa situazione ritenute
+title: Ispiši stanje poreza po odbitku
 sidebar_position: 2
 ---
 
-Con questa stampa è possibile estrarre i dati dei pagamenti compensi effettuati, al fine di avere un riepilogo dei dati relativi alle ritenute d'acconto operate al fine di  gestirne il versamento con modello F24 oppure per effettuare verifiche nell'ambito della certificazione unica dei percipienti e del successivo modello 770.
+Pomoću ovog ispisa moguće je izdvojiti podatke o izvršenim isplatama naknada, kako bi se dobio sažetak podataka koji se odnose na izvršene poreze po odbitku kako bi se upravljalo isplatom s obrascem F24 ili radi provjera u kontekstu jedinstvenu certifikaciju primatelja i naknadni model 770.
 
-Sono presenti due diversi layout della stampa selezionabili tramite la combo box in alto a sinistra: il primo "Certificazione ritenute" ricalca la comunicazione in forma libera che veniva inviata ai percipienti fino alla recente introduzione della Certificazione Unica mentre la seconda "Situazione ritenute" si presenta come una lista di verifica.
+Postoje dva različita izgleda ispisa koja se mogu odabrati putem kombiniranog okvira u gornjem lijevom kutu: prvi "Potvrda o porezu po odbitku" slijedi komunikaciju u slobodnom obliku koja je bila poslana primateljima do nedavnog uvođenja jedinstvene potvrde, dok drugi "Situacija s porezom po odbitku" " predstavlja kao kontrolni popis.
 
 ![](/img/it-it/finance-area/professional-men/reports/withholding-tax-situation/image01.png)
 
-PRINCIPALI ELEMENTI DI FILTRO:
+GLAVNI ELEMENTI FILTRA:
 
-Dati del preavviso di parcella.
+Podaci o obavijesti o naknadama.
 
-- Filtro anagrafica percipente
+- Filtar registra primatelja
 
-- Range date del preavviso
+- Obavijest o rasponu datuma
 
-- Range numero del preavviso
+- Obavijest o rasponu brojeva
 
-- Divisa
+- Split
 
-- Codice tributo
+- Porezni broj
 
-- Tipo ritenuta
+- Vrsta poreza po odbitku
 
 ![](/img/it-it/finance-area/professional-men/reports/withholding-tax-situation/image02.png)
 
  
 
-Dati relativi alla fattura definitiva (da utilizzare se il preavviso è già stato integrato con i datti della fattura)
+Podaci koji se odnose na konačni račun (koristiti ako je obavijest već integrirana s podacima računa)
 
-- Range di date fattura
+- Datumski raspon računa
 
-- Numero
+- Broj
 
 ![](/img/it-it/finance-area/professional-men/reports/withholding-tax-situation/image03.png)
 
-Altri dati:
+Ostali podaci:
 
-- Flag di filtro che verificano le principali condizioni del documento (contabilizzato, certificato, versata ritenuta, pagato)
+- Flag filtera koje potvrđuju glavne uvjete dokumenta (obračunato, ovjereno, plaćeno po odbitku, plaćeno)
 
 ![](/img/it-it/finance-area/professional-men/reports/withholding-tax-situation/image04.png)
 
-- Anno: filtra solo i compens di competenza dell'anno inserito
+- Godina: filtrira samo naknadu za unesenu godinu
 
-- Flag definitiva: esegue la stampa in definitivo e non permette di variare ulteriormente i dati relativi al versamento delle ritenute.
+- Završni flag: ispisuje se definitivno i ne dopušta daljnju promjenu podataka koji se odnose na isplatu poreza po odbitku.
 
-- Flag escludi già stampate in definitiva: esclude i compensi già stampati in una stampa definitiva.
+- Flag isključi već tiskane u definitivnom: isključuje plaćanja koja su već ispisana u konačnom ispisu.
 
 ![](/img/it-it/finance-area/professional-men/reports/withholding-tax-situation/image05.png)
 
@@ -55,10 +55,10 @@ Altri dati:
 
 
 
-| Funzione | Significato |
+| Funkcija | Značenje |
 | --- | --- |
-| Anteprima | Pulsante per eseguire l'anteprima di stampa. |
-| Stampa | Pulsante per eseguire la stampa fisica del documento. |
+| Pregled | Tipka za pretpregled ispisa. |
+| Ispiši | Tipka za fizički ispis dokumenta. |
 
 
 
