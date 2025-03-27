@@ -70,9 +70,9 @@ Nell'ordine di produzione è possibile variare una fase da interna ad esterna, q
 **Conto terzista/descrizione terzista**: con doppio click sulla casella si apre il help per poter selezionare il conto e sottoconto del relativo terzista. Questa *casella è attiva solo* nel caso in cui la fase sia designata come fase *Esterna*. Da notare che il *terzista* viene anch'esso ripreso dalla fase di lavorazione inserita nel ciclo di lavorazione dell'articolo;
 **Ord. CL creato**: se flaggato, indica che è già stato creato il relativo ordine di conto lavoro;
 **Sequenza**: indica la sequenza con cui dovrà essere realizzata quella fase, è possibile modificarlo direttamente dall'ordine di produzione.   
-**Costo operaio**: viene valorizzato da quando inizio a fare lesegnalazioni di produzione;    
-**Costo macchina**: viene valorizzato da quando inizio a fare lesegnalazioni di produzione;    
-**Costo attrezzaggio**: viene valorizzato da quando inizio a fare lesegnalazioni di produzione.   
+**Costo operaio**: viene valorizzato da quando inizio a fare le dichiarazione di produzione;    
+**Costo macchina**: viene valorizzato da quando inizio a fare le dichiarazione di produzione;    
+**Costo attrezzaggio**: viene valorizzato da quando inizio a fare le dichiarazione di produzione.   
 
 ### Fasi - Proprietà
 
