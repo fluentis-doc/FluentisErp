@@ -1,17 +1,17 @@
 ---
-title: Contabilizzazione Enasarco
+title: Enasarco računovodstvena evidencija
 sidebar_position: 1
 ---
 
 LINK:
 
-** [Acquisizione](/docs/finance-area/professional-men/accounting/enasarco-accounting/acquisition) **
+** [Nabava](/docs/finance-area/professional-men/accounting/enasarco-accounting/acquisition) **
 
 ** [Rollback](/docs/finance-area/professional-men/accounting/enasarco-accounting/previous) **
 
  
 
-La procedura andrà a rilevare i contributi Enasarco dei compensi selezionati, se il tipo ritenuta collegato prevede la gestione 'Enasarco a carico ditta' (altrimenti sarà rilevato il solo contributo a carico agente direttamente all'interno della procedura di contabilizzazione pagamenti del modulo, impostazione sconsigliata).
+Procedura će bilježiti Enasarco doprinose za odabrane naknade, ako povezani tip poreza predviđa upravljanje "Enasarco na teret tvrtke" (inače će biti zabilježen samo doprinos na teret agenta izravno unutar procedure računovodstvene obrade plaćanja modula, što se ne preporučuje). 
 
 
 

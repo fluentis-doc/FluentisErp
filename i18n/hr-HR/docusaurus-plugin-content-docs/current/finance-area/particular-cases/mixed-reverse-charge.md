@@ -1,39 +1,38 @@
 ---
 sidebar_position: 2
-title: Reverse Charge Misto
+title: Mješoviti Reverse Charge
 ---
 
-E' presente a sistema una particolare gestione per automatizzare maggiormente la gestione delle situazioni cosiddette di Reverse charge misto, ovvero nella stessa fattura di acquisto una parte fatturata in reverse charge e l'altra in regime ordinario.
+U sustavu postoji posebna funkcionalnost za automatsko upravljanje situacijama takozvanog mješovitog reverse charge-a, tj. kada je u istoj fakturi za kupovinu jedan dio fakturiran prema reverse charge-u, a drugi prema običnom režimu.
 
-Questo set di impostazioni **va ad aggiungersi** a quelle già presenti con le quali in precedenza si ovviava (in maniera non completa) alla situazione mista, in particolare al flag *Escludi da causali automatiche* presente nella tabella Aliquote e modalità IVA.
-Le presenti configurazioni possono essere utilizzate al posto del flag predetto per una gestione più completa e funzionale.
+Ovaj skup postavki **nadograđuje**  one koje su već bile prisutne i s kojima se prije pokušavalo (ne potpuno) upravljati mješovitom situacijom, posebno flag  *Izuzmi iz automatskih predložaka* u tablici Aliquote e modalità IVA.    
+Sadašnje postavke mogu se koristiti umjesto tog flaga za potpunije i funkcionalnije upravljanje.
 
 
-Le implementazioni specifiche per questa gestione prevedono:
+Specifične implementacije za ovu funkcionalnost uključuju:
 
-- Un **flag** nella tabella **Aliquote e modalità IVA**
-- UN apposito **Tipo importo** nella causale contabile
+- **Flag** u tablici **Stope i načini obračuna PDV-a**
+- Specifičan **Tip iznosa** u računovodstvenom predlošku
 
-### Tabella Aliquote e modalità IVA
+### Tablica stopa i načina obračuna PDV-a
 
-In corrispondenza del codice iva che verrà designato per la quota parte fatturata in reverse charge si abiliterà il **flag** **Reverse Charge** che contrassegna l'aliquota da utilizzare per il reverse charge. Questo vuol dire che l’iva di questa riga non sarà messa nel totale registrazione né sarà conteggiata per le partite (l’ipotesi è che il fornitore abbia la logica di calcolo partite su *imponibile+ iva*).
+Za kod PDV-a koji će biti dodijeljen dijelu fakturiranoj u reverse charge-u, omogućit će se **flag** **Reverse Charge**  koji označava stopu koja se koristi za reverse charge. To znači da PDV ove stavke neće biti uključeno u ukupnu registraciju niti će biti obračunato za stavke (pretpostavka je da dobavljač ima logiku obračuna stavki prema *osnovici + PDV*).
 
-:::tip Nota
-La logica delle "nuove configurazioni" per la situazione mista è pertanto rovesciata rispetto al passato, anzichè identificare la parte da non girocontare perchè esclusa da reverse charge, si andrà a indicare  la quota parte che è in reverse charge.
-L'iva in reverse non sarà dunque aggiunta al totale della registrazione come in precedenza, nè corrisposta al fornitore monetariamente (cosa che già avveniva, ma senza bisogno di impostare il metodo di calcolo della partita aperta su solo imponibile inquanto anche lasciando il settaggio base su imponibile + iva la quota in reverse non viene aggiunta alla partita aperta)
+:::tip Napomena 
+Logika "novih postavki" za mješovitu situaciju je obrnuta u odnosu na prošlost; umjesto da se identificira dio koji se ne knjiži jer je isključen iz reverse charge-a, sada se označava dio koji je u reverse charge-u. PDV u reverse charge-u neće se dodavati u ukupnu registraciju kao prije, niti će biti plaćen dobavljaču (što se već događalo, ali bez potrebe za postavljanjem metode obračuna stavke na samo osnovicu, jer i ostavljajući osnovnu postavku na osnovicu + PDV, dio u reverse charge-u neće biti dodan u otvorenu stavku). 
 :::
 
-### Causali contabili: Tipo importo
+### Računovodstveni predlošci: Tip iznosa
 
-Nella causale contabile che verrà utilizzata per contabilizzare il reverse charge, il tipo importo *Totale doc/registrazione* viene valorizzato con imponibile + iva ordinaria - iva reverse (perché l’iva reverse viene sottratta tramite il flag di cui sopra e in questa logica non deve essere aggiunta al totale inquanto non deriva dalla fattura fornitore, quindi non è da pagare).
+U računovodstvenom predlošku koji će se koristiti za knjiženje reverse charge-a, tip iznosa *Ukupno dokument/registracijae* bit će valoriziran s osnovicom + običnim PDV-om - PDV-om u reverse charge-u (jer se PDV u reverse charge-u oduzima putem gore navedenog flaga i u ovoj logici ne smije se dodavati u ukupnu vrijednost jer ne dolazi iz fakture od dobavljača, dakle nije za plaćanje).
 
-E' previsto un nuovo tipo importo *Reverse charge* che valorizza con l’iva in reverse ed è da utilizzare quindi per la riga di iva transitoria e per le due righe iva della reg. automatica.
+Predviđen je novi tip iznosa *Reverse charge* koji valorizira s PDV-om u reverse charge-u i koristi se za privremenu stavku PDV-a i za dvije PDV stavke automatske registracije.
 
-:::note Nota
-Il tipo importo *Reverse charge* non considera l'iva indetraibile, (anche per quadratura con l’importo che ho nel fornitore) La quota indetraibile quindi finisce a costo nella prima registrazione e poi va nell’iva a debito del girococonto, come iva da versare.
+:::note Napomena 
+Tip iznosa *Reverse charge* ne uzima u obzir neodbitni PDV (također zbog usklađivanja s iznosom koji imam kod dobavljača). Neodbitni dio završava kao trošak u prvoj registraciji, a zatim ide u PDV na dugovanje kroz prijenos, kao PDV za plaćanje. 
 :::
 
-Le causali reverse quindi diventano così:
+Računovodstveni predlošci za reverse charge postaju sljedeći:
 
 ![](/img/it-it/finance-area/other/mixrev1.png)
 
