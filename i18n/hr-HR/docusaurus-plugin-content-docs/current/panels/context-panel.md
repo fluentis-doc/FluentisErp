@@ -22,12 +22,6 @@ Definirajte prikaz u kontekstualnom panelu navodeći:
  
 - **Definicija** veze, odnosno parametra koji treba proslijediti.
 
-
-![](/img/it-it/guide/panels/context-panel/image01.png)
-
-
 U  **Fluentisu**:
 
 - otvorite obrazac na kojem je postavljen panel kako biste vidjeli dobiveni rezultat (u slučaju primjera, otvorite obrazac za proizvodne narudžbe, odaberite redak i kliknite na traku *Context Panel* s desne strane kako biste prikazali nadzorni *Dashboard*).
-
-![](/img/it-it/guide/panels/context-panel/image02.png)

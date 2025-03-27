@@ -30,7 +30,7 @@ import Link from '@docusaurus/Link';
 ## Per iniziare ad utilizzare   
 
 gli **Inventari fisici**:
-- creare degli articoli nell'[*Anagrafica articoli*](/docs/erp-home/registers/items/create-new-items/create-new-item)        
+- creare degli articoli nell'[*Anagrafica articoli*](/docs/erp-home/registers/items/create-new-items)        
 - definire correttamente le [*Causali di magazzino*](/docs/configurations/tables/logistics/warehouse-templates) da utilizzare       
 - definire i [*Parametri iniziali di magazzino*](/docs/configurations/parameters/logistics/warehouse-initial-parameters/warehouse-parameters)          
 - definire i [*Parametri differenze inventariali*](/docs/configurations/parameters/logistics/stock-difference/)           

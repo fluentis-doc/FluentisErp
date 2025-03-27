@@ -95,6 +95,3 @@ Trasciniamo nel tab ***Visible property*** le proprietà di nostro interesse qua
 
 
 3. Procediamo a selezionare un record dalla form dei cespiti; verrà quindi mostrata sul pannello contestuale la percentuale di ammortamento del cespite.  
-
-
-

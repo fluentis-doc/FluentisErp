@@ -43,7 +43,7 @@ Pentru a insera datele, efectuați clic pe butonul **Nou**.
 
 **Control disponibilitate**: dacă este activ, tipul ordinului va fi considerat la [calcularea disponibilității](/docs/erp-home/registers/items/calculate-availability);
 
-**Agr. vânz. TVA**: dacă este activ, în momentul creării ordinului, aplicația va verifica, dacă pentru articolul utilizat, este prezent un cod TVA agricol. Dacă nu este prezent, este utilizat codul TVA prezent în [registrul articolului](/docs/erp-home/registers/items/create-new-items/item-registry/generality);
+**Agr. vânz. TVA**: dacă este activ, în momentul creării ordinului, aplicația va verifica, dacă pentru articolul utilizat, este prezent un cod TVA agricol. Dacă nu este prezent, este utilizat codul TVA prezent în [registrul articolului](/docs/erp-home/registers/items/create-new-items);
 
 **Tip comandă producție**: reprezintă tipul comenzii de producție care va fi generată din acest tip de ordin client în *Definire MPS*;
 

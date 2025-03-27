@@ -31,7 +31,7 @@ I parametri degli ordini clienti permettono l'impostazione di base per gestire c
 
 **Vis. disponibilità**: se attivo, grazie a questo flag vi sarà la possibilità di visualizzare l'eventuale stato in esaurimento a livello di riga articolo quando si inserisce la quantità. Le condizioni per ottenere il messaggio che l'articolo sta per esaurire sono:         
 - nei parametri Ordini cliente deve essere settato il flag "Verifica articoli in esaurimento";          
-- in [Anagrafica articolo](/docs/erp-home/registers/items/create-new-items/create-new-item), tab Generalità, deve essere settato il flag "In esaurimento" e inoltre la "Data esaurimento" deve essere minore o uguale alla data dell'ordine.
+- in [Anagrafica articolo](/docs/erp-home/registers/items/create-new-items), tab Generalità, deve essere settato il flag "In esaurimento" e inoltre la "Data esaurimento" deve essere minore o uguale alla data dell'ordine.
 
 **Considera disponibilità provenienti da**:  
 In questa sezione è possibile andare ad indicare quali tipologie di movimenti debbano essere considerati per il calcolo della disponibilità articolo tra *Conto lavoro*, *Acquisto*, *Vendite*, *Produzione pianificata*, *Produzione rilasciata* e *Magazzino*.

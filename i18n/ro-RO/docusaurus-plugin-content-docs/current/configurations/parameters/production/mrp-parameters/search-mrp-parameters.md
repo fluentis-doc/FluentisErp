@@ -3,7 +3,7 @@ title: Caută Parametri MRP
 sidebar_position: 1
 ---
 
-Permite căutarea [Parametrilor MRP](/docs/erp-home/registers/items/create-new-items/create-new-item) ai articolelor din baza de date. Pentru fiecare articol pot fi creați parametrii MRP imediat ce sunt introduse datele sale "principale", cu ajutorul butonului **Parametrii MRP**![](/img/neutral/common/production-orders.png) situat în ribbon bar din form-ul *Registru articole*.
+Permite căutarea [Parametrilor MRP](/docs/erp-home/registers/items/create-new-items) ai articolelor din baza de date. Pentru fiecare articol pot fi creați parametrii MRP imediat ce sunt introduse datele sale "principale", cu ajutorul butonului **Parametrii MRP**![](/img/neutral/common/production-orders.png) situat în ribbon bar din form-ul *Registru articole*.
 
 #### Butoane specifice
 

@@ -31,7 +31,7 @@ import Link from '@docusaurus/Link';
 
 ## Getting Started 
 
-- Create items in the [*Item Registry*](/docs/erp-home/registers/items/create-new-items/create-new-item) 
+- Create items in the [*Item Registry*](/docs/erp-home/registers/items/create-new-items) 
 - Create [*Bills of Materials*](/docs/erp-home/registers/production/bill-of-materials/search-and-insert-assemblies) 
 - Create [*Work Cycles*](/docs/erp-home/registers/production/routes/new-route) 
 - Create [*Work Centers*](/docs/erp-home/registers/production/routes/work-center) 
@@ -42,4 +42,4 @@ import Link from '@docusaurus/Link';
 - Define [*Production Order Parameters*](/docs/configurations/parameters/production/production-orders-parameters/production-orders-parameters-intro/)   
 
 ## Links to Other Modules 
-These are closely linked to the [*Item Registry*](/docs/erp-home/registers/items/create-new-items/create-new-item), [*Bills of Materials*](/docs/erp-home/registers/production/bill-of-materials/search-and-insert-assemblies), [*Work Cycles*](/docs/erp-home/registers/production/routes/new-route), [*Work Centers*](/docs/erp-home/registers/production/routes/work-center), [*Planned Orders*](/docs/planning/ms-master-scheduling/planned-orders/search-planned-orders), and [*Production Orders*](/docs/production/pp-production-in-progress/production-orders/search-production-orders).
+These are closely linked to the [*Item Registry*](/docs/erp-home/registers/items/create-new-items), [*Bills of Materials*](/docs/erp-home/registers/production/bill-of-materials/search-and-insert-assemblies), [*Work Cycles*](/docs/erp-home/registers/production/routes/new-route), [*Work Centers*](/docs/erp-home/registers/production/routes/work-center), [*Planned Orders*](/docs/planning/ms-master-scheduling/planned-orders/search-planned-orders), and [*Production Orders*](/docs/production/pp-production-in-progress/production-orders/search-production-orders).

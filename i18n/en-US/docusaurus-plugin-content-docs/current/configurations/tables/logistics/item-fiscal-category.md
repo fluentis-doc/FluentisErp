@@ -7,7 +7,7 @@ The table is located at **Tables > Logistics > Item Fiscal Category**.
 
 In this table, it is possible to encode the different categories according to the fiscal logic that can then be associated with the product and used as grouping, as statistical data, or as functionality in the relevant modules.  
 
-An example of use can be found within the [Item Registry](/docs/erp-home/registers/items/create-new-items/item-registry/generality) under the entry *Fiscal Category*.  
+An example of use can be found within the [Item Registry](/docs/erp-home/registers/items/create-new-items) under the entry *Fiscal Category*.  
 
 The table allows for the insertion of new records or the search for existing ones to view, modify, or delete them.
 

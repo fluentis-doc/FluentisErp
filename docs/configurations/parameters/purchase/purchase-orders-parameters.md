@@ -27,7 +27,7 @@ La finestra si compone di pulsanti e tre diversi tab: *Generale*, *Carico* e 
 
 **Uso articolo fornitore**: se attivo, nella griglia articoli dell'ordine fornitore viene proposto anche il campo per inserire e ricercare il codice articolo fornitore. Se non attivo questo campo non sarà visibile.
 
-**Verifica articoli in esaurimento**: se attivato, il sistema fa un controllo sulla disponibilità degli articoli in riga ordine ed avvisa qualora l'articolo fosse in esaurimento, ovvero se nell'[anagrafica dell'articolo](/docs/erp-home/registers/items/create-new-items/item-registry/generality) è stato attivato il flag *In esaurimento*.
+**Verifica articoli in esaurimento**: se attivato, il sistema fa un controllo sulla disponibilità degli articoli in riga ordine ed avvisa qualora l'articolo fosse in esaurimento, ovvero se nell'[anagrafica dell'articolo](/docs/erp-home/registers/items/create-new-items) è stato attivato il flag *In esaurimento*.
 
 **Contabilizzazione imballi**: consente di poter contabilizzare, in contabilità generale, anche le righe con articoli di natura imballo che solitamente vengono gestiti per avere la verifica delle giacenze degli [Imballi a rendere](/docs/configurations/tables/logistics/package-to-be-returned).
 

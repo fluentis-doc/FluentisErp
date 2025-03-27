@@ -83,7 +83,7 @@ With the introduction of this regulation, the possibility has been provided for 
 > **Solution under 60 days**: NOT MANAGED / DEACTIVATED
 
 There are other settings regarding the **management of perishable goods**:  
-> **GG Pag. merce deperibile** within the [Item Registry > General tab](/docs/erp-home/registers/items/create-new-items/item-registry/generality) where the expiration to be applied is defined;  
+> **GG Pag. merce deperibile** within the [Item Registry > General tab](/docs/erp-home/registers/items/create-new-items) where the expiration to be applied is defined;  
 > **GG ricev. fattura** in *Customer/Supplier Registry > General tab > Alternative Addresses tab*, useful for complying with the certain date of receipt of the invoice (for the field to be enabled, the type of address linked to the alternative address defined in the [Address Types table](/docs/configurations/tables/general-settings/address-types) must have the *Email Invoice* flag set);
 > **Days transport** in the *Zones* table, a field that can be entered in the *Customer/Supplier Registry > [Delivery tab*](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/delivery). 
 

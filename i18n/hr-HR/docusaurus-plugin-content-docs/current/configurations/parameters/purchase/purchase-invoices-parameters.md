@@ -27,7 +27,7 @@ Prozor se sastoji od gumba i tri različite kartice: *Općenito*, *Učitavanje*
 
 **Koristi predmet dobavljača**: ako je aktivno, polje za unos šifre stavke dobavljača također se predlaže u mreži stavke dokumenta. Ako nije aktivirano, ovo polje neće biti vidljivo;
 
-**Provjeri zalihe artikala**: ako je aktivirano, sustav provjerava dostupnost artikala unesenih na račun i obavještava ako je artikl u odlasku, odnosno ako je u [Šifarniku artikla](/docs/erp-home/registers/items/create-new-items/item-registry/generality) zastavica *U odlasku* aktivna.
+**Provjeri zalihe artikala**: ako je aktivirano, sustav provjerava dostupnost artikala unesenih na račun i obavještava ako je artikl u odlasku, odnosno ako je u [Šifarniku artikla](/docs/erp-home/registers/items/create-new-items) zastavica *U odlasku* aktivna.
 
 **Ambalažno računovodstvo**: omogućuje knjiženje, u općem računovodstvu, i redaka s artiklima od materijala za pakiranje, koji se obično upravljaju kako bi se provjerile zalihe [Pakiranja za napraviti](/docs/configurations/tables/logistics/package-to-be-returned).
 

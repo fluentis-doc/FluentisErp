@@ -41,7 +41,7 @@ Per inserire nuovi record è necessario cliccare nella griglia sulla prima riga 
 
 **Controllo disponibilità**: se attivo, questi tipi ordine verranno considerati nel [calcolo della disponibilità](/docs/erp-home/registers/items/calculate-availability);
 
-**Agr. Acq. IVA**: se attivo, in fase di creazione dell'ordine, il sistema andrà a controllare se per l'articolo utilizzato è presente un codice dell'IVA agricola, altrimenti verrà utilizzato il codice IVA presente nell'[anagrafica articolo;](/docs/erp-home/registers/items/create-new-items/item-registry/generality);
+**Agr. Acq. IVA**: se attivo, in fase di creazione dell'ordine, il sistema andrà a controllare se per l'articolo utilizzato è presente un codice dell'IVA agricola, altrimenti verrà utilizzato il codice IVA presente nell'[anagrafica articolo;](/docs/erp-home/registers/items/create-new-items);
 
 **Tipo commessa produzione**: in questo campo è possibile indicare il tipo di commessa di produzione che si vuole venga generata da questo tipo di ordine all'interno della *Definizione MPS* nel momento della generazione delle commesse di produzione da ordine cliente;
 

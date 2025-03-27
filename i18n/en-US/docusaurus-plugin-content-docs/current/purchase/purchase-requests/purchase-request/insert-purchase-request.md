@@ -82,7 +82,7 @@ These are all informational fields that are taken by default from the item/suppl
 - **User**: it is possible to enter the operator who entered the purchase request in this field.   
 
 - **Project**: in this field, it is possible to associate a project with each item. If the RDA was generated from the planning of a production order containing a project, it will be automatically reported on the individual item lines.   
-- **Purchase turnover type**: the data entered in the [General](/docs/erp-home/registers/items/create-new-items/item-registry/generality) tab of the item registry is proposed.    
+- **Purchase turnover type**: the data entered in the [General](/docs/erp-home/registers/items/create-new-items) tab of the item registry is proposed.    
 - **Demand priority**: the *Procurement Priority* present within the [production order](/docs/planning/mps-master-production-scheduling/production-job-orders/new-monoproduct-job-order) is reported.   
 - **Notes**: in this field, it is possible to insert notes related to the item line; they will be reported in all documents generated from this.   
 - **Execution date**: at the time of [creating the supplier order](/docs/purchase/purchase-orders/procedures/create-purchase-orders-from-purchase-requests) from the purchase request, the lines included in the order are fulfilled and the date of fulfillment will be reported in this field.   

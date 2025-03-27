@@ -33,10 +33,10 @@ import Link from '@docusaurus/Link';
 ## Pentru a începe să utilizați
 
 comenzile de producție:
-- creați articole în [*Registrul articolelor*](/docs/erp-home/registers/items/create-new-items/create-new-item) 
+- creați articole în [*Registrul articolelor*](/docs/erp-home/registers/items/create-new-items) 
 - definiți [*Tipurile de documente*](/docs/configurations/tables/production/documents-types/)  
 - definiți [*Parametrii MS*](/docs/configurations/parameters/production/mps-parameters/)   
 
 ## Conexiuni cu alte module
 
-Acestea sunt strâns legate de [*Registrul articolelor*](/docs/erp-home/registers/items/create-new-items/create-new-item), de [*Ordinele clienților*](/docs/sales/sales-orders/settings) și de **Previziunile de vânzare**.
+Acestea sunt strâns legate de [*Registrul articolelor*](/docs/erp-home/registers/items/create-new-items), de [*Ordinele clienților*](/docs/sales/sales-orders/settings) și de **Previziunile de vânzare**.

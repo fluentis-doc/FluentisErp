@@ -44,4 +44,4 @@ l'**Anagrafica Serial number**:
 - creare un documento o una [*Registrazione di magazzino*](/docs/logistics/warehouse/stock-records/record) di carico o scarico con un articolo gestito a serial number in modo da poter visualizzare il risultato nell'**Anagrafica Serial number**
 
 ## Collegamenti con altri moduli
-Questi sono strettamente collegati all'[*Anagrafica articoli*](/docs/erp-home/registers/items/create-new-items/create-new-item), alle [*Registrazione di magazzino*](/docs/logistics/warehouse/stock-records/record) ed a tutti i documenti che generano movimenti di carico e scarico.   
+Questi sono strettamente collegati all'[*Anagrafica articoli*](/docs/erp-home/registers/items/create-new-items), alle [*Registrazione di magazzino*](/docs/logistics/warehouse/stock-records/record) ed a tutti i documenti che generano movimenti di carico e scarico.   

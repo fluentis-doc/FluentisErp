@@ -31,7 +31,7 @@ import Link from '@docusaurus/Link';
 
 ## Per iniziare ad utilizzare   
 
-- creare degli articoli nell'[*Anagrafica articoli*](/docs/erp-home/registers/items/create-new-items/create-new-item) 
+- creare degli articoli nell'[*Anagrafica articoli*](/docs/erp-home/registers/items/create-new-items) 
 - creare le [*Distinte basi*](/docs/erp-home/registers/production/bill-of-materials/search-and-insert-assemblies) 
 - creare i [*Cicli di lavoro*](/docs/erp-home/registers/production/routes/new-route) 
 - creare i [*Centri di lavoro*](/docs/erp-home/registers/production/routes/work-center) 
@@ -42,4 +42,4 @@ import Link from '@docusaurus/Link';
 - definire i [*Parametri ordini produzione*](/docs/configurations/parameters/production/production-orders-parameters/production-orders-parameters-intro/)   
 
 ## Collegamenti con altri moduli 
-Questi sono strettamente collegati all'[*Anagrafica articoli*](/docs/erp-home/registers/items/create-new-items/create-new-item), alle [*Distinte basi*](/docs/erp-home/registers/production/bill-of-materials/search-and-insert-assemblies), [*Cicli di lavoro*](/docs/erp-home/registers/production/routes/new-route), [*Centri di lavoro*](/docs/erp-home/registers/production/routes/work-center), [*Ordini pianificati*](/docs/planning/ms-master-scheduling/planned-orders/search-planned-orders) e [*Ordini produzione*](/docs/production/pp-production-in-progress/production-orders/search-production-orders).
+Questi sono strettamente collegati all'[*Anagrafica articoli*](/docs/erp-home/registers/items/create-new-items), alle [*Distinte basi*](/docs/erp-home/registers/production/bill-of-materials/search-and-insert-assemblies), [*Cicli di lavoro*](/docs/erp-home/registers/production/routes/new-route), [*Centri di lavoro*](/docs/erp-home/registers/production/routes/work-center), [*Ordini pianificati*](/docs/planning/ms-master-scheduling/planned-orders/search-planned-orders) e [*Ordini produzione*](/docs/production/pp-production-in-progress/production-orders/search-production-orders).

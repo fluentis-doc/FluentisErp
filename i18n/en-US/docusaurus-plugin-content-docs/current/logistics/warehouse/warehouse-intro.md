@@ -43,7 +43,7 @@ import Link from '@docusaurus/Link';
 ## Getting Started with 
 
 **Stock records**:
-- create items in the [*Items register*](/docs/erp-home/registers/items/create-new-items/create-new-item)        
+- create items in the [*Items register*](/docs/erp-home/registers/items/create-new-items)        
 - define [*Warehouses*](/docs/configurations/tables/logistics/warehouses)    
 - correctly define the [*Warehouse template*](/docs/configurations/tables/logistics/warehouse-templates) to use       
 - define the [*Initial Warehouse Parameters*](/docs/configurations/parameters/logistics/warehouse-initial-parameters/warehouse-parameters)          

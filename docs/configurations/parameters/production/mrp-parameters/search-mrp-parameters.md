@@ -3,7 +3,7 @@ title: Ricerca Parametri MRP
 sidebar_position: 1
 ---
 
-Si tratta della finestra di ricerca dei [Parametri MRP](/docs/erp-home/registers/items/create-new-items/create-new-item) degli articoli presenti nel database. Per ciascun articolo viene creata l'anagrafica dei parametri MRP non appena viene inserita la sua anagrafica “principale”, cliccando sul pulsante **Parametri MRP** che si trova nella ribbon bar della form *Anagrafica articoli*.
+Si tratta della finestra di ricerca dei [Parametri MRP](/docs/erp-home/registers/items/create-new-items) degli articoli presenti nel database. Per ciascun articolo viene creata l'anagrafica dei parametri MRP non appena viene inserita la sua anagrafica “principale”, cliccando sul pulsante **Parametri MRP** che si trova nella ribbon bar della form *Anagrafica articoli*.
 
 #### Pulsanti specifici
 

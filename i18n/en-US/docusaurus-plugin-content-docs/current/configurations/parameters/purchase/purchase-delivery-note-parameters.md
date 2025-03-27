@@ -25,7 +25,7 @@ The window consists of buttons and three different tabs: *General*, *Load*, and 
 
 **Use supplier item:** if active, the grid of items in the DDT will also propose the field to enter the supplier item code.
 
-**Check items in stock:** if activated, the system checks the availability of the items entered in the DDT and warns if the item is running out, that is, if in the [item registry](/docs/erp-home/registers/items/create-new-items/item-registry/generality) the flag *In exhaustion* is active.
+**Check items in stock:** if activated, the system checks the availability of the items entered in the DDT and warns if the item is running out, that is, if in the [item registry](/docs/erp-home/registers/items/create-new-items) the flag *In exhaustion* is active.
 
 **Accounting for packaging:** allows for accounting in general ledger for lines with items of packaging nature, which are usually managed to verify the stock of [Returnable Packaging](/docs/configurations/tables/logistics/package-to-be-returned).
 

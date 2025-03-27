@@ -17,7 +17,7 @@ The form consists of a filter area and a results area. Once all desired filters 
 
 To insert new codes, it is necessary to click on the first empty row in the grid or press the **Insert** button.
 
-This table contains the items that are to be considered *Package To Be Returned* for the traceability of inventory. The item inserted in this table must have as Item Nature: *Packing* (the Item Nature is entered in the Item Registry, [Generality tab](/docs/erp-home/registers/items/create-new-items/item-registry/generality)).     
+This table contains the items that are to be considered *Package To Be Returned* for the traceability of inventory. The item inserted in this table must have as Item Nature: *Packing* (the Item Nature is entered in the Item Registry, [Generality tab](/docs/erp-home/registers/items/create-new-items)).     
 Through the flags in the grid, it is possible to choose in which areas the item will be manageable for movement.
 
 *Mandatory data*: 

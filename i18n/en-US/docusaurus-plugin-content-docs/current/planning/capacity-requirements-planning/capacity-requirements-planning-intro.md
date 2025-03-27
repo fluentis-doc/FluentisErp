@@ -24,7 +24,7 @@ import Link from '@docusaurus/Link';
 ## To get started using 
 
 **Work Center Capacity** and **Phase Sequence**:
-- create items in the [*Item Register*](/docs/erp-home/registers/items/create-new-items/create-new-item) 
+- create items in the [*Item Register*](/docs/erp-home/registers/items/create-new-items) 
 - create [*Bills of Materials*](/docs/erp-home/registers/production/bill-of-materials/search-and-insert-assemblies) 
 - create [*Work Cycles*](/docs/erp-home/registers/production/routes/new-route) 
 - create [*Work Centers*](/docs/erp-home/registers/production/routes/work-center) 
@@ -32,4 +32,4 @@ import Link from '@docusaurus/Link';
 - create [*Production Capacity Calendars*](/docs/configurations/tables/production/productive-capacity-calendar/) 
 
 ## Connections with other modules
-These are closely linked to the [*Item Register*](/docs/erp-home/registers/items/create-new-items/create-new-item), [*Bills of Materials*](/docs/erp-home/registers/production/bill-of-materials/search-and-insert-assemblies), [*Work Cycles*](/docs/erp-home/registers/production/routes/new-route), [*Work Centers*](/docs/erp-home/registers/production/routes/work-center), [*Planned Orders*](/docs/planning/ms-master-scheduling/planned-orders/search-planned-orders), and [*Production Orders*](/docs/production/pp-production-in-progress/production-orders/search-production-orders).
+These are closely linked to the [*Item Register*](/docs/erp-home/registers/items/create-new-items), [*Bills of Materials*](/docs/erp-home/registers/production/bill-of-materials/search-and-insert-assemblies), [*Work Cycles*](/docs/erp-home/registers/production/routes/new-route), [*Work Centers*](/docs/erp-home/registers/production/routes/work-center), [*Planned Orders*](/docs/planning/ms-master-scheduling/planned-orders/search-planned-orders), and [*Production Orders*](/docs/production/pp-production-in-progress/production-orders/search-production-orders).

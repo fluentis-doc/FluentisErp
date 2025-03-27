@@ -3,7 +3,7 @@ title: MRP Parameters Search
 sidebar_position: 1
 ---
 
-This is the search window for the [MRP Parameters](/docs/erp-home/registers/items/create-new-items/create-new-item) of the items present in the database. For each item, the MRP parameters registry is created as soon as its “main” registry is entered by clicking on the **MRP Parameters** button located in the ribbon bar of the *Items register* form.
+This is the search window for the [MRP Parameters](/docs/erp-home/registers/items/create-new-items) of the items present in the database. For each item, the MRP parameters registry is created as soon as its “main” registry is entered by clicking on the **MRP Parameters** button located in the ribbon bar of the *Items register* form.
 
 #### Specific Buttons
 

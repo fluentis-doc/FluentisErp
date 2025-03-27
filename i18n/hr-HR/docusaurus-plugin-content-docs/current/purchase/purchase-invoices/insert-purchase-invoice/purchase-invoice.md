@@ -193,7 +193,7 @@ Isti dokument može sadržavati artikle s cijenama preuzetim iz različitih cjen
 
 Dvoklikom u polje **Cjenici** (kartica *Popusti/Cjenici*) korisnik ima mogućnost odabira drugačije ponude od zadane, iz koje će se preuzeti cijena unesenog artikla.
 
-Ako nema cjenika, predloženi podatak može se preuzeti iz **posljednje nabavne cijene** unesene u šifarnik artikla, ako u kartici [Postavkama narudžbenica dobavljača](/docs/erp-home/registers/items/create-new-items/item-registry/costs) nije postavljeno da se *trošak postavlja na nulu* u odsutnosti cjenika.
+Ako nema cjenika, predloženi podatak može se preuzeti iz **posljednje nabavne cijene** unesene u šifarnik artikla, ako u kartici [Postavkama narudžbenica dobavljača](/docs/erp-home/registers/items/create-new-items) nije postavljeno da se *trošak postavlja na nulu* u odsutnosti cjenika.
 
 **PDV**: prioritet ima podatak unesen u polje PDV *Šifarnik kontakta*. Ako toga nema, predložena je vrijednost iz *Šifarnik artikla*, ali korisnik ima mogućnost unosa drugog podatka. To je obavezno polje.
 

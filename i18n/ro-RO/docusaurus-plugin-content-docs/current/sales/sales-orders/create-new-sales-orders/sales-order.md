@@ -164,7 +164,7 @@ import ItemPrice from './../../../import/fields/item-price.md'
 <ItemPrice />
 
 :::note[NOTA]
-In assenza del listino, il dato proposto è il **prezzo di vendita** ripreso dall'*Anagrafica articolo > tab [Costi](/docs/erp-home/registers/items/create-new-items/item-registry/costs)* oppure verrà recuperato in base alle impostazioni dei parametri del documento. In assenza anche di questo dato, verrà riportato il prezzo 0.
+In assenza del listino, il dato proposto è il **prezzo di vendita** ripreso dall'*Anagrafica articolo > tab [Costi](/docs/erp-home/registers/items/create-new-items)* oppure verrà recuperato in base alle impostazioni dei parametri del documento. In assenza anche di questo dato, verrà riportato il prezzo 0.
 :::
 
 - **Imponibile**: questo campo contiene il Prezzo unitario moltiplicato per la quantità, al netto degli sconti.

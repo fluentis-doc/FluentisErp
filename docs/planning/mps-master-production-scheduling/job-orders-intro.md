@@ -33,11 +33,11 @@ import Link from '@docusaurus/Link';
 ## Per iniziare ad utilizzare   
 
 le **Commesse di produzione**:
-- creare degli articoli nell'[*Anagrafica articoli*](/docs/erp-home/registers/items/create-new-items/create-new-item) 
+- creare degli articoli nell'[*Anagrafica articoli*](/docs/erp-home/registers/items/create-new-items) 
 - definire i [*Tipi documento*](/docs/configurations/tables/production/documents-types/)  
 - definire i [*Parametri MS*](/docs/configurations/parameters/production/mps-parameters/)   
 
 ## Collegamenti con altri moduli 
-Questi sono strettamente collegati all'[*Anagrafica articoli*](/docs/erp-home/registers/items/create-new-items/create-new-item), agli [*Ordini clienti*](/docs/sales/sales-orders/settings) e alle **Previsioni di vendita**.
+Questi sono strettamente collegati all'[*Anagrafica articoli*](/docs/erp-home/registers/items/create-new-items), agli [*Ordini clienti*](/docs/sales/sales-orders/settings) e alle **Previsioni di vendita**.
 
 

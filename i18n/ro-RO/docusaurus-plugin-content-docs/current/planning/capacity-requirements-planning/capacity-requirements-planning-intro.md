@@ -24,7 +24,7 @@ import Link from '@docusaurus/Link';
 ## Pentru a începe să utilizați
 
 **Capacitatea Centrelor de Lucru** și **Secvența fazelor**:
-- creați articole în [*Registrul articolelor*](/docs/erp-home/registers/items/create-new-items/create-new-item) 
+- creați articole în [*Registrul articolelor*](/docs/erp-home/registers/items/create-new-items) 
 - creați [*Liste componente*](/docs/erp-home/registers/production/bill-of-materials/search-and-insert-assemblies) 
 - creați [*Cicluri de lucru*](/docs/erp-home/registers/production/routes/new-route) 
 - creați [*Centre de lucru*](/docs/erp-home/registers/production/routes/work-center) 
@@ -33,4 +33,4 @@ import Link from '@docusaurus/Link';
 
 ## Conexiuni cu alte module
 
-Acestea sunt strâns conectate cu [*Registru articole*](/docs/erp-home/registers/items/create-new-items/create-new-item), [*Liste componente*](/docs/erp-home/registers/production/bill-of-materials/search-and-insert-assemblies), [*Cicluri de lucru*](/docs/erp-home/registers/production/routes/new-route), [*Centre de lucru*](/docs/erp-home/registers/production/routes/work-center), [*Ordine planificate*](/docs/planning/ms-master-scheduling/planned-orders/search-planned-orders) și [*Ordine de producție*](/docs/production/pp-production-in-progress/production-orders/search-production-orders).
+Acestea sunt strâns conectate cu [*Registru articole*](/docs/erp-home/registers/items/create-new-items), [*Liste componente*](/docs/erp-home/registers/production/bill-of-materials/search-and-insert-assemblies), [*Cicluri de lucru*](/docs/erp-home/registers/production/routes/new-route), [*Centre de lucru*](/docs/erp-home/registers/production/routes/work-center), [*Ordine planificate*](/docs/planning/ms-master-scheduling/planned-orders/search-planned-orders) și [*Ordine de producție*](/docs/production/pp-production-in-progress/production-orders/search-production-orders).

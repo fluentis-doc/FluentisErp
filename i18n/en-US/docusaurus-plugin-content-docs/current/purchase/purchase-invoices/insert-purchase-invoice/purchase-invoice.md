@@ -316,7 +316,7 @@ If there is no price list, the proposed data can be retrieved from the *last cos
 
 - **Supplier Article Code/Description**: in this section, you can add the code and description that the supplier uses to identify the item; this data is proposed automatically if in the item registry, tab [Preferred Suppliers](/docs/erp-home/registers/items/create-new-items/item-registry/preferential-vendors) an item supplier has been associated. 
 
-- **Purchase turnover type**: the data entered in the tab [Generalities](/docs/erp-home/registers/items/create-new-items/item-registry/generality) of the item registry is proposed. If this is not present, no data is proposed, and at the time of accounting for the invoice, the value entered in the *Default Counterpart Cost/Revenue (Costo/Ricavo di contropartita predefinito)* field of the contact registry will be considered.
+- **Purchase turnover type**: the data entered in the tab [Generalities](/docs/erp-home/registers/items/create-new-items) of the item registry is proposed. If this is not present, no data is proposed, and at the time of accounting for the invoice, the value entered in the *Default Counterpart Cost/Revenue (Costo/Ricavo di contropartita predefinito)* field of the contact registry will be considered.
 
 #### Specific Buttons
 

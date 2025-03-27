@@ -17,7 +17,7 @@ La form si compone di un'area di filtro e da una di risultato. Una volta imposta
 
 Per poter inserire nuove codifiche è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Inserimento**.  
 
-Questa tabella contiene gli articoli che sono da considerarsi *Imballi a rendere* per la tracciabilità della giacenza. L’articolo inserito in questa tabella deve avere come Natura articolo: *Imballo* (la Natura articolo si inserisce in Anagrafica articolo, tab [Generalità](/docs/erp-home/registers/items/create-new-items/item-registry/generality)).     
+Questa tabella contiene gli articoli che sono da considerarsi *Imballi a rendere* per la tracciabilità della giacenza. L’articolo inserito in questa tabella deve avere come Natura articolo: *Imballo* (la Natura articolo si inserisce in Anagrafica articolo, tab [Generalità](/docs/erp-home/registers/items/create-new-items)).     
 Attraverso i flag in griglia è possibile scegliere in quali aree l'articolo sarà gestibile per essere movimentato.    
 
 #### Dati obbligatori 

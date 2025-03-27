@@ -3,7 +3,7 @@ title: Pretraži MRP parametre
 sidebar_position: 1
 ---
 
-Ovo je prozor za pretraživanje [MRP parametara](/docs/erp-home/registers/items/create-new-items/create-new-item) stavki prisutnih u bazi podataka. Za svaku stavku kreiraju se matični podaci MRP parametra čim se unesu njeni "principale", matični podaci klikom na gumb **MRP parametri** koji se nalazi na traci vrpce obrasca  *Matični podaci stavke*.
+Ovo je prozor za pretraživanje [MRP parametara](/docs/erp-home/registers/items/create-new-items) stavki prisutnih u bazi podataka. Za svaku stavku kreiraju se matični podaci MRP parametra čim se unesu njeni "principale", matični podaci klikom na gumb **MRP parametri** koji se nalazi na traci vrpce obrasca  *Matični podaci stavke*.
 
 *Specifični gumbi*
 

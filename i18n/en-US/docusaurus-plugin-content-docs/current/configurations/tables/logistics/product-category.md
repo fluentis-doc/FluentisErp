@@ -7,7 +7,7 @@ The table can be found at the path **Tables > Logistics > Item Product Category*
 
 This table manages the coding of the various categories according to the product logic, which can then be associated with the product to be used as grouping, statistical data, or functionality in the respective modules.
 
-An example of usage can be found within the [Item Registry](/docs/erp-home/registers/items/create-new-items/item-registry/generality) under the item *Product Category*.
+An example of usage can be found within the [Item Registry](/docs/erp-home/registers/items/create-new-items) under the item *Product Category*.
 
 The table allows for the insertion of new records or to search for existing ones to view, modify, or delete them.
 

@@ -15,18 +15,6 @@ Configurarea panourilor contextuale se face cu ajutorul **ARM**.Cale: ARM> Home>
 
 
 
-![](/img/ro-RO/guide/panels/context-panel/image01.png)
-
-
-
 În **Fluentis**:
 
-- deschideți formularul pe care ați setat panoul pentru a vizualiza rezultatul obținut (în cazul exemplului dat, deschideți form-ul Vizualizare conturi), selectați un rând și faceți clic pe bara Context Panel din dreapta pentru a vizualiza tabloul de bord).
-
-![](/img/ro-RO/guide/panels/context-panel/image02.png)
-
-
-
-
-
-
+- deschideți formularul pe care ați setat panoul pentru a vizualiza rezultatul obținut (în cazul exemplului dat, deschideți form-ul Vizualizare conturi), selectați un rând și faceți clic pe bara Context Panel din dreapta pentru a vizualiza tabloul de bord.

@@ -27,7 +27,7 @@ The window consists of buttons and three different tabs: *General*, *Load*, and 
 
 **Use vendor item**: if active, the item grid of the supplier order also proposes the field for entering and searching the supplier item code. If not active, this field will not be visible.
 
-**Check items in exhaustion**: if activated, the system checks the availability of the items in the order line and notifies if the item is about to run out, meaning the flag *In exhaustion* has been activated in the [item registry](/docs/erp-home/registers/items/create-new-items/item-registry/generality).
+**Check items in exhaustion**: if activated, the system checks the availability of the items in the order line and notifies if the item is about to run out, meaning the flag *In exhaustion* has been activated in the [item registry](/docs/erp-home/registers/items/create-new-items).
 
 **Packings accounting**: allows the accounting of rows with packaging items, which are usually managed for verifying the stock of [Package to be returned)](/docs/configurations/tables/logistics/package-to-be-returned).
 

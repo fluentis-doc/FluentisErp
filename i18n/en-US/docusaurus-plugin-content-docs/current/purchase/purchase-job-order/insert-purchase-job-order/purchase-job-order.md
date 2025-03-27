@@ -133,7 +133,7 @@ import Vat from './../../../import/fields/item-vat.md'
 
 <Vat />
 
-- **Purchase turnover type**: the data entered in the [Generalities tab](/docs/erp-home/registers/items/create-new-items/item-registry/generality) of the item registry is proposed. If this is not present, no data is proposed, and at the time of invoicing, the value entered in the *Default counter entry cost/revenue* field of the contact registry will be considered.
+- **Purchase turnover type**: the data entered in the [Generalities tab](/docs/erp-home/registers/items/create-new-items) of the item registry is proposed. If this is not present, no data is proposed, and at the time of invoicing, the value entered in the *Default counter entry cost/revenue* field of the contact registry will be considered.
 
 - **Forced executed**: by activating this flag, the item line will be marked as *Forced fulfilled* and will no longer be available for further fulfillments.   
 

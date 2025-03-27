@@ -191,7 +191,7 @@ import Vat from './../../../import/fields/item-vat.md'
 
 - **Supplier article code/description**: in this section, you can add the code and description that the supplier uses to identify the article; this data is automatically proposed if a supplier article has been associated in the item's registry (tab [Preferred suppliers](/docs/erp-home/registers/items/create-new-items/item-registry/preferential-vendors)).
 
-- **Purchase turnover type**: the data entered in the tab [Generalities](/docs/erp-home/registers/items/create-new-items/item-registry/generality) of the item registry is proposed. If this is not present, no data is proposed, and at the time of invoice recording, the value entered in the *Default counterparty cost/revenue value* field of the contact registry will be considered.
+- **Purchase turnover type**: the data entered in the tab [Generalities](/docs/erp-home/registers/items/create-new-items) of the item registry is proposed. If this is not present, no data is proposed, and at the time of invoice recording, the value entered in the *Default counterparty cost/revenue value* field of the contact registry will be considered.
 
 - **Requested delivery date** and **Delivery date**: indicate the requested and expected delivery dates. They can propose the dates entered in the header tab or can be modified manually.
 

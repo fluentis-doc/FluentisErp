@@ -5,7 +5,7 @@ sidebar_position: 24
 
 La tabella si trova sul percorso **Tabelle > Logistica > Tipo articolo**.
 
-In questa tabella è possibile gestire la codifica dei diversi *Tipi articolo* da associare ai singoli articoli nel tabulatore [Generealità](/docs/erp-home/registers/items/create-new-items/item-registry/generality).    
+In questa tabella è possibile gestire la codifica dei diversi *Tipi articolo* da associare ai singoli articoli nel tabulatore [Generealità](/docs/erp-home/registers/items/create-new-items).    
 
 Consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
 

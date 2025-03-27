@@ -7,7 +7,7 @@ La tabella si trova sul percorso **Tabelle > Logistica > Categorie fiscali artic
 
 In questa tabella è possibile codificare le diverse categorie secondo la logica fiscale che può essere a sua volta associata al prodotto e utilizzata come raggruppamento, come dato statistico o come funzionalità nei moduli competenti.   
 
-Un esempio di utiizzo lo troviamo all'interno dell'[Anagrafica articolo](/docs/erp-home/registers/items/create-new-items/item-registry/generality) alla voce *Categoria fiscale*.  
+Un esempio di utiizzo lo troviamo all'interno dell'[Anagrafica articolo](/docs/erp-home/registers/items/create-new-items) alla voce *Categoria fiscale*.  
 
 La tabella consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
 

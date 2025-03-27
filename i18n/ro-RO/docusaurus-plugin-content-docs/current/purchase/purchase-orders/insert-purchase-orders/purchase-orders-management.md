@@ -210,7 +210,7 @@ import Vat from './../../../import/fields/item-vat.md'
 
 - **Cod/Descriere articol furnizor**: în această secțiune se poate adăuga codul și descrierea pe care furnizorul le utilizează pentru a identifica articolul; această dată este propusă automat dacă în registru articolului, tab [Furnizori preferențiali](/docs/erp-home/registers/items/create-new-items/item-registry/preferential-vendors) a fost asociat un articol furnizor.
 
-- **Tip facturare achiziții**: este propusă data introdusă în tab [Generalități](/docs/erp-home/registers/items/create-new-items/item-registry/generality) din registrul articole. Dacă aceasta nu este prezentă, nu este propusă nicio dată și, la momentul contabilizării facturii, va fi considerat valoarea introdusă în câmpul *Cheltuieli/Venituri contrapartidă implicit* din registrul contactului.
+- **Tip facturare achiziții**: este propusă data introdusă în tab [Generalități](/docs/erp-home/registers/items/create-new-items) din registrul articole. Dacă aceasta nu este prezentă, nu este propusă nicio dată și, la momentul contabilizării facturii, va fi considerat valoarea introdusă în câmpul *Cheltuieli/Venituri contrapartidă implicit* din registrul contactului.
 
 - **Data cerută livrare** și **Dată livrare**: indică data cerută și prevăzută pentru livrare. Pot fi propuse datele introduse în tab *Antet* sau se pot modifica manual.
 

@@ -97,7 +97,7 @@ Sono campi informativi che vengono ripresi di default dall'articolo/fornitore. �
 - **Operatore**: in quersto campo è possibile inserire l'operatore che ha inserito la richiesta di acquisto.   
 
 - **Progetto**: in questo campo è possibile associare un progetto a ciascun articolo. Se la RDA è stata generata a partire dalla pianificazione di una commessa di produzione contenente un progetto, esso sarà automaticamente riportato sulle singole righe articolo.   
-- **Tipo fatturato acquisti**: viene proposto il dato inserito nel tab [Generalità](/docs/erp-home/registers/items/create-new-items/item-registry/generality) dell'anagrafica articoli.    
+- **Tipo fatturato acquisti**: viene proposto il dato inserito nel tab [Generalità](/docs/erp-home/registers/items/create-new-items) dell'anagrafica articoli.    
 - **Priorità richiesta**: viene riportata la *priorità approvvigionamento* presente all'interno della [commessa di produzione](/docs/planning/mps-master-production-scheduling/production-job-orders/new-monoproduct-job-order).   
 - **Note**: in questo campo è possibile inserire note relative alla riga articolo; saranno riportate in tutti i documenti generati da questo.   
 - **Data evasione**: al momento della [creazione dell'ordine fornitore](/docs/purchase/purchase-orders/procedures/create-purchase-orders-from-purchase-requests) dalla richiesta di acquisto, le righe inserite nell'ordine vengono evase e vuiene riportata in quetso campo la data dell'evasione.   

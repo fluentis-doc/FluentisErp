@@ -62,7 +62,7 @@ S uvođenjem ove norme predviđena je mogućnost za poduzeća povezana financijs
 > **Tjedno riješenje 60 dana**: NIJE UPRAVLJANO / ONEMOGUĆENO
 
 Postoje i druge postavke koje se odnose na **upravljanje pokvarljivom robom**:  
-> **Dani plaćanja za pokvarljivu robu** unutar [Šifarnik artikla > kartica Općenito](/docs/erp-home/registers/items/create-new-items/item-registry/generality) gdje je definiran rok trajanja koji se primjenjuje;  
+> **Dani plaćanja za pokvarljivu robu** unutar [Šifarnik artikla > kartica Općenito](/docs/erp-home/registers/items/create-new-items) gdje je definiran rok trajanja koji se primjenjuje;  
 > **Dana do primitka računa** u *Šifarnik klijenta/dobavljača > kartica Opće > kartica Alternativne adrese* korisno je radi pridržavanja točnog datuma primitka računa (da bi se omogućilo polje, vrsta adrese povezana s korištenom alternativnom adresom i definirana u tablici [Tipovi adresa](/docs/configurations/tables/general-settings/address-types)  mora imati postavljeni flag  *Email*).
 > **Dani prijevoza** u tablici *Zone*,  polje koje se može unijeti u *Šifarnik klijenta/dobavljača > kartica [Dostava*](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/delivery) 
 

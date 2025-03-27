@@ -25,7 +25,7 @@ Prozor se sastoji od gumba i tri različite kartice: *Općenito*, *Utovar* i *An
 
 **Korištenje artikla dobavljača**: ako je aktivno, u tablici artikala otpremnice također se nudi polje za unos šifre artikla dobavljača.
 
-**Provjeri zalihe artikala**: ako je aktivirano, sustav provodi provjeru dostupnosti artikala unesenih u otpremnicu i obavještava ako je artikl u odlasku, odnosno ako je u [Šifarniku artikla](/docs/erp-home/registers/items/create-new-items/item-registry/generality) aktivna oznaka *U odlasku*.
+**Provjeri zalihe artikala**: ako je aktivirano, sustav provodi provjeru dostupnosti artikala unesenih u otpremnicu i obavještava ako je artikl u odlasku, odnosno ako je u [Šifarniku artikla](/docs/erp-home/registers/items/create-new-items) aktivna oznaka *U odlasku*.
 
 **Ambalažno računovodstvo**: omogućuje knjiženje, u glavnoj knjizi, i redaka s artiklima prirode ambalaže koji se obično upravljaju kako bi se provjerili inventari [Pakiranja za napraviti](/docs/configurations/tables/logistics/package-to-be-returned).
 
