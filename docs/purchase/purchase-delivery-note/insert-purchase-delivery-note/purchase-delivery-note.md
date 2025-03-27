@@ -229,7 +229,7 @@ In assenza del listino, il dato proposto può essere ripreso dal *costo ultimo* 
 
 ### 3.2 Dati facoltativi articoli
 
-- **Codice/Descrizione articolo fornitore**: in questa sezione si potrà aggiungere il codice e la descrizione che il fornitore utilizza per identificare l'articolo; questo dato viene proposto in automatico se nell'anagrafica dell'articolo, tab [Fornitori preferenziali](/docs/erp-home/registers/items/create-new-item/item-registry/preferential-vendors) è stato associato un articolo fornitore. 
+- **Codice/Descrizione articolo fornitore**: in questa sezione si potrà aggiungere il codice e la descrizione che il fornitore utilizza per identificare l'articolo; questo dato viene proposto in automatico se nell'anagrafica dell'articolo, tab [Fornitori preferenziali](/docs/erp-home/registers/items/create-new-item) è stato associato un articolo fornitore. 
 
 - **Tipo fatturato acquisti**: viene proposto il dato inserito nel tab [Generalità](/docs/erp-home/registers/items/create-new-item) dell'anagrafica articoli. Se questo non è presente, non viene proposto nessun dato e al momento della contabilizzazione della fattura, sarà considerato il valore inserito nel campo *Costo/Ricavo di contropartita predefinito* dell'anagrafica contatto.
 
@@ -278,7 +278,7 @@ All'interno di questo tab vengono riportate/inserite ulteriori informazioni rela
 - **Valorizzata parzialmente**: indica se la riga articolo è stata valorizzata per una quantità parziale.   
 - **Valorizzata forzatamente**: indica se la riga articolo è stata valorizzata forzatamente.   
 - **Progetto**: rappresenta il progetto da associare al documento. Se nella testata del documento è stato inserito un progetto, esso sarà riportato su tutte le righe articolo; in alternativa può essere selezionato tramite l'apposito help progetti.   
-- **Unità di misura/Quantità alternativa**: se nell'[anagrafica dell'articolo](/docs/erp-home/registers/items/create-new-item/item-registry/alternative-um) è stata codificata un'unità di misura alternativa con il flag *Predefinito* e nei Parametri ordini fornitore è stato attivato il flag *Proposta automatica U.M. alternativa*, questi valori saranno proposti in automatico al momento dell'inserimento dell'articolo, altrimenti è possibile selezionare una tra le unità di misura alternative codificate per l'articolo.   
+- **Unità di misura/Quantità alternativa**: se nell'[anagrafica dell'articolo](/docs/erp-home/registers/items/create-new-item) è stata codificata un'unità di misura alternativa con il flag *Predefinito* e nei Parametri ordini fornitore è stato attivato il flag *Proposta automatica U.M. alternativa*, questi valori saranno proposti in automatico al momento dell'inserimento dell'articolo, altrimenti è possibile selezionare una tra le unità di misura alternative codificate per l'articolo.   
 - **Prezzo unità di misura alternativa**: se attivo indica che il prezzo inserito sulla riga articolo è riferito all'unità di misura alternativa e non a quella principale.    
 Questo flag assieme ai campi *Unità di misura alternativa* e *Quantità alternativa* sono visibili solo se nei [Parametri ordini fornitori](/docs/configurations/parameters/purchase/purchase-orders-parameters) è stato attivato il flag *Gestione doppia unità di misura*.
 - **Marca**: rappresenta la marca dell'articolo, ripresa dalla sua anagrafica oppure dal listino dell'articolo.
@@ -401,11 +401,11 @@ Rappresenta il riepilogo delle scadenze del documento, per ogni *tipo* e *soluzi
 
 ### 4.5 Altri campi
 
-- **Volume**: viene proposto il volume cumulativo, risultato dalla somma dei volumi degli articoli (il valore viene ripreso dall'*Anagrafica articolo > tab* [*Pesi/Dimensioni*](/docs/erp-home/registers/items/create-new-item/item-registry/weights-dimensions)), quando l'unità di misura del volume degli articoli corrisponde a quella inserita nei parametri del DDT. Sono presi in considerazione solo gli articoli che hanno questo campo compilato.
+- **Volume**: viene proposto il volume cumulativo, risultato dalla somma dei volumi degli articoli (il valore viene ripreso dall'*Anagrafica articolo > tab* [*Pesi/Dimensioni*](/docs/erp-home/registers/items/create-new-item)), quando l'unità di misura del volume degli articoli corrisponde a quella inserita nei parametri del DDT. Sono presi in considerazione solo gli articoli che hanno questo campo compilato.
 
-- **Peso netto/lordo**: viene proposto il peso netto cumulativo, risultato dalla somma dei pesi degli articoli (il valore viene ripreso dall'*Anagrafica articolo > tab* [*Pesi/Dimensioni*](/docs/erp-home/registers/items/create-new-item/item-registry/weights-dimensions)), quando l'unità di misura del peso degli articoli corrisponde a quello inserito nei parametri del DDT. Sono presi in considerazione solo gli articoli che hanno questo campo compilato.
+- **Peso netto/lordo**: viene proposto il peso netto cumulativo, risultato dalla somma dei pesi degli articoli (il valore viene ripreso dall'*Anagrafica articolo > tab* [*Pesi/Dimensioni*](/docs/erp-home/registers/items/create-new-item)), quando l'unità di misura del peso degli articoli corrisponde a quello inserito nei parametri del DDT. Sono presi in considerazione solo gli articoli che hanno questo campo compilato.
 
-- **Colli**: viene proposto il numero dei colli, sulla base dei dati inseriti nell'*Anagrafica articolo > tab* [*Pesi/Dimensioni*](/docs/erp-home/registers/items/create-new-item/item-registry/weights-dimensions), nei campi *Articoli presenti in un collo* oppure *Colli per formare l'articolo*. Sono presi in considerazione solo gli articoli che hanno questo campo compilato.
+- **Colli**: viene proposto il numero dei colli, sulla base dei dati inseriti nell'*Anagrafica articolo > tab* [*Pesi/Dimensioni*](/docs/erp-home/registers/items/create-new-item), nei campi *Articoli presenti in un collo* oppure *Colli per formare l'articolo*. Sono presi in considerazione solo gli articoli che hanno questo campo compilato.
 
 - **Valori modificati manualmente**: attivando questo flag sarà possibile odificare manualmente i valori di *volume*, *peso netto*, *peso lordo* e *colli*.
 

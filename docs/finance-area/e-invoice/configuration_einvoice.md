@@ -66,7 +66,7 @@ Esempio pratico d’uso per i ‘Dispositivi medici’: si codificano 3 tipi bar
 
 ![](/img/it-it/finance-area/e-invoice/configuration/tipibarcode.png)
 
-poi  **[nell’anagrafica articolo](/docs/erp-home/registers/items/create-new-item/item-registry/barcode)** si indica il valore per il ongi tipo codice: 
+poi  **[nell’anagrafica articolo](/docs/erp-home/registers/items/create-new-item)** si indica il valore per il ongi tipo codice: 
 
 ![](/img/it-it/finance-area/e-invoice/configuration/tipibarcode2.png)
 

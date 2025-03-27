@@ -189,7 +189,7 @@ import Vat from './../../../import/fields/item-vat.md'
 
 ### 3.2 Optional Item Data 
 
-- **Supplier article code/description**: in this section, you can add the code and description that the supplier uses to identify the article; this data is automatically proposed if a supplier article has been associated in the item's registry (tab [Preferred suppliers](/docs/erp-home/registers/items/create-new-item/item-registry/preferential-vendors)).
+- **Supplier article code/description**: in this section, you can add the code and description that the supplier uses to identify the article; this data is automatically proposed if a supplier article has been associated in the item's registry (tab [Preferred suppliers](/docs/erp-home/registers/items/create-new-item)).
 
 - **Purchase turnover type**: the data entered in the tab [Generalities](/docs/erp-home/registers/items/create-new-item) of the item registry is proposed. If this is not present, no data is proposed, and at the time of invoice recording, the value entered in the *Default counterparty cost/revenue value* field of the contact registry will be considered.
 
@@ -198,7 +198,7 @@ import Vat from './../../../import/fields/item-vat.md'
 #### Specific Buttons 
 
 > **Split Quantity in More Delivery Dates**: used to split the order line into multiple lines depending on the requested delivery. This procedure will open a new form in which the new *Requested delivery date* and the expected quantities for each date must be entered.
-> **Packaging**: activates after the order is saved and allows creating a UDC starting from the selected line. The line must be a coded article and saved in the document. The user must have rights within [Loading/Unloading Parameters](/docs/configurations/parameters/logistics/load-unload-parameters/load-unload-parameters-intro/) for loading the pallet. Additionally, the article must be managed in UDC, and based on the settings of the UDC Type entered in the item registry, tab [Packaging](/docs/erp-home/registers/items/create-new-item/item-registry/packaging) the UDC will be created according to the criteria.
+> **Packaging**: activates after the order is saved and allows creating a UDC starting from the selected line. The line must be a coded article and saved in the document. The user must have rights within [Loading/Unloading Parameters](/docs/configurations/parameters/logistics/load-unload-parameters/load-unload-parameters-intro/) for loading the pallet. Additionally, the article must be managed in UDC, and based on the settings of the UDC Type entered in the item registry, tab [Packaging](/docs/erp-home/registers/items/create-new-item) the UDC will be created according to the criteria.
 > **Update price lists**: the *Update current price list* button allows updating the prices in the current price list for each selected item line;    
 the *Create new price list with new validity* button, on the other hand, will open a pop-up to enter the validity dates of the new price list, which will only contain the selected lines and will be addressed to the supplier entered in the order.
 
@@ -242,7 +242,7 @@ Additional information related to the item is reported/inserted within this tab.
 
 - **Alternative unit price**: if active, indicates that the price entered on the article line refers to the alternative unit of measure and not to the main one. This flag, along with the *Alternative Measurement Unit* and *Alternative quantity* fields, is visible only if the flag *Management of double UM* in [Supplier Order Parameters](/docs/configurations/parameters/purchase/purchase-orders-parameters/) is active.
 
-- **Unit of measure/Alternative quantity**: if an alternative unit of measure has been coded in the [item registry](/docs/erp-home/registers/items/create-new-item/item-registry/alternative-um) with the *Default* flag and the flag *Automatic proposal of alternative U.M.* in Supplier Order Parameters is active, these values will automatically be proposed when entering the article.
+- **Unit of measure/Alternative quantity**: if an alternative unit of measure has been coded in the [item registry](/docs/erp-home/registers/items/create-new-item) with the *Default* flag and the flag *Automatic proposal of alternative U.M.* in Supplier Order Parameters is active, these values will automatically be proposed when entering the article.
 
 ### 3.5 Analytical 
 

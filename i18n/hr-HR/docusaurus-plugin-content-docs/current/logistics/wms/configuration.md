@@ -19,7 +19,7 @@ Ako se klijentsko okruženje ažurira, nije potrebno ponovno instalirati aplikac
 
 - **Barkod tokenizator**: barkodovi se mogu konfigurirati unutar obrasca [Barkod toneknizator](/docs/configurations/tables/general-settings/barcode-tokenizer), koji se nalazi u: Tablice > Opće postavke > Barkod tokenizator. To omogućuje programu da "tumači" barkodove i izvršava određene radnje.
 
-- **Alternativna J.M. - Zadano WMS-u**: samo za obrasce *Utovar artikla*, *Istovar artikla*, *Premještanje artikla*, *Korekcija artikla*, *Zaliha* i *Inventar*, uvedena je mogućnost manipuliranja robom putem Alternativne J.M.. Konfiguracija se postiže aktiviranjem oznake  *Zadano WMS-u* u kartici [Alternativna J.M.](/docs/erp-home/registers/items/create-new-item/item-registry/alternative-um) u *Šifraniku Artikla*. U navedenim obrascima prikazuje se samo Alternativna J.M. u polju Mjerna jedinica, a stvorene manipulacije imaju Alternativnu Mjernu jedinicu i količinu Alternativne J.M. popunjenu prema faktoru pretvorbe.
+- **Alternativna J.M. - Zadano WMS-u**: samo za obrasce *Utovar artikla*, *Istovar artikla*, *Premještanje artikla*, *Korekcija artikla*, *Zaliha* i *Inventar*, uvedena je mogućnost manipuliranja robom putem Alternativne J.M.. Konfiguracija se postiže aktiviranjem oznake  *Zadano WMS-u* u kartici [Alternativna J.M.](/docs/erp-home/registers/items/create-new-item) u *Šifraniku Artikla*. U navedenim obrascima prikazuje se samo Alternativna J.M. u polju Mjerna jedinica, a stvorene manipulacije imaju Alternativnu Mjernu jedinicu i količinu Alternativne J.M. popunjenu prema faktoru pretvorbe.
 
 - **Obrasci u WPF-u**: za pristup obrascima u WPF-u potrebno je imati F21-WMS rješenje na korisniku. 
 

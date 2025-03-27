@@ -53,7 +53,7 @@ Indica il centro di lavoro su cui l'operatore sta facendo la dichiarazione; è p
 - **Fasi in lavoro**
 Le fasi possono essere aggiunte all'interno della griglia tramite il campo *Codice barcode*, oppure utilizzando il pulsante specifico *Seleziona nuove fasi* presente nel menù di destra. La griglia contiene una serie di informazioni relative alla commessa, all'ordine di produzione, al progetto, alla variante, ecc... 
 Tutte queste informazioni possono essere rese visibili o nascoste tramite la gestione nel tab *Layout* delle [Risorse di produzione](/docs/production/mes/production-resources).   
-Per la riga selezionata, sulla parte destra della griglia, è possibile visualizzare l'immagine di default inserita nell'[Anagrafica articolo](/docs/erp-home/registers/items/create-new-item/item-registry/images); inoltre, con il doppio click verrà visualizzata a tutto schermo.       
+Per la riga selezionata, sulla parte destra della griglia, è possibile visualizzare l'immagine di default inserita nell'[Anagrafica articolo](/docs/erp-home/registers/items/create-new-item); inoltre, con il doppio click verrà visualizzata a tutto schermo.       
                 
 ### Tab Produzione      
 

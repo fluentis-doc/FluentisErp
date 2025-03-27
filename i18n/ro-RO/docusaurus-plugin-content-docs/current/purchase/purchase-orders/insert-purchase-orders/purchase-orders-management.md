@@ -208,7 +208,7 @@ import Vat from './../../../import/fields/item-vat.md'
  
 ### 3.2 Date opționale articole
 
-- **Cod/Descriere articol furnizor**: în această secțiune se poate adăuga codul și descrierea pe care furnizorul le utilizează pentru a identifica articolul; această dată este propusă automat dacă în registru articolului, tab [Furnizori preferențiali](/docs/erp-home/registers/items/create-new-item/item-registry/preferential-vendors) a fost asociat un articol furnizor.
+- **Cod/Descriere articol furnizor**: în această secțiune se poate adăuga codul și descrierea pe care furnizorul le utilizează pentru a identifica articolul; această dată este propusă automat dacă în registru articolului, tab [Furnizori preferențiali](/docs/erp-home/registers/items/create-new-item) a fost asociat un articol furnizor.
 
 - **Tip facturare achiziții**: este propusă data introdusă în tab [Generalități](/docs/erp-home/registers/items/create-new-item) din registrul articole. Dacă aceasta nu este prezentă, nu este propusă nicio dată și, la momentul contabilizării facturii, va fi considerat valoarea introdusă în câmpul *Cheltuieli/Venituri contrapartidă implicit* din registrul contactului.
 
@@ -217,7 +217,7 @@ import Vat from './../../../import/fields/item-vat.md'
 #### Butoane specifice
 
 > **Subdivide cantitatea pe mai multe date de livrare**: utilizat pentru a împărți rândul comenzii în mai multe rânduri în funcție de livrarea cerută. Această procedură va deschide un nou form în care se va introduce noua *Dată cerere livrare* și cantitățile prevăzute pentru fiecare dată.  
-> **Ambalare**: se activează după salvarea comenzii și permite crearea unei UDC (Unități de Desfacere a Comenzilor) pornind de la rândul selectat. Rândul trebuie să fie un articol codificat și salvat în document. Utilizatorul trebuie să aibă drepturi în [Parametrii de încărcare/descărcare](/docs/configurations/parameters/logistics/load-unload-parameters/load-unload-parameters-intro/) pentru încărcarea paletului. În plus, articolul trebuie să fie gestionat la UDC, iar în funcție de setările *Tip UDC* introduse în registrul articolului, tab [Ambalare](/docs/erp-home/registers/items/create-new-item/item-registry/packaging) va fi creat UDC respectând criteriile.  
+> **Ambalare**: se activează după salvarea comenzii și permite crearea unei UDC (Unități de Desfacere a Comenzilor) pornind de la rândul selectat. Rândul trebuie să fie un articol codificat și salvat în document. Utilizatorul trebuie să aibă drepturi în [Parametrii de încărcare/descărcare](/docs/configurations/parameters/logistics/load-unload-parameters/load-unload-parameters-intro/) pentru încărcarea paletului. În plus, articolul trebuie să fie gestionat la UDC, iar în funcție de setările *Tip UDC* introduse în registrul articolului, tab [Ambalare](/docs/erp-home/registers/items/create-new-item) va fi creat UDC respectând criteriile.  
 > **Actualizare oferte**: butonul *Actualizează oferta curentă* permite actualizarea prețurilor din oferta curentă pentru fiecare rând de articol selectat;    
 butonul *Creează o nouă ofertă de preţuri cu o nouă valabilitate* va deschide un pop-up în care se vor introduce datele de validitate ale noii oferte, care va conține doar rândurile selectate și va fi asociat furnizorului inserat în comandă.
 
@@ -261,7 +261,7 @@ Când se creează/actualizează o ofertă cu această procedură, în ofertă su
 
 - **Preț unitate de măsură alternativă**: dacă este activ, indică faptul că prețul introdus pentru articol se referă la unitatea de măsură alternativă și nu la cea principală. Acest flag, împreună cu câmpurile *Unitate de măsură alternativă* și *Cantitate alternativă*, este vizibil doar dacă în [Parametrii ordine furnizori](/docs/configurations/parameters/purchase/purchase-orders-parameters/) a fost activat flagul *Gestionare unitate de măsură dublă*.
 
-- **Unitate de măsură/Cantitate alternativă**: dacă în [registrul articolului](/docs/erp-home/registers/items/create-new-item/item-registry/alternative-um) a fost codificată o unitate de măsură alternativă cu opțiunea *Predefinit* și în *Parametrii ordine furnizor* a fost activată opțiunea *Propunere automată U.M. alternativă*, aceste valori vor fi propuse automat în momentul introducerii articolului.
+- **Unitate de măsură/Cantitate alternativă**: dacă în [registrul articolului](/docs/erp-home/registers/items/create-new-item) a fost codificată o unitate de măsură alternativă cu opțiunea *Predefinit* și în *Parametrii ordine furnizor* a fost activată opțiunea *Propunere automată U.M. alternativă*, aceste valori vor fi propuse automat în momentul introducerii articolului.
  
 ### 3.5 Analitic
  

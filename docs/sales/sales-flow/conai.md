@@ -32,7 +32,7 @@ La gestione delle tipologie di materiali di imballaggio avviene nella tabella de
 
 ## Definizioni in Anagrafica Articoli
 
-Nella scheda [Pesi/Dimensioni](/docs/erp-home/registers/items/create-new-item/item-registry/weights-dimensions) dell'anagrafica articoli è possibile specificare le caratteristiche degli imballaggi per la gestione CONAI. In questa sezione è possibile definire:
+Nella scheda [Pesi/Dimensioni](/docs/erp-home/registers/items/create-new-item) dell'anagrafica articoli è possibile specificare le caratteristiche degli imballaggi per la gestione CONAI. In questa sezione è possibile definire:
 
 **Usa in Acquisto/Vendita**: Specifica se l'articolo è soggetto al calcolo del contributo CONAI nei documenti di acquisto o vendita.      
 **Tipologia di Imballaggio**: Indica se l'imballaggio è primario, secondario o terziario.     

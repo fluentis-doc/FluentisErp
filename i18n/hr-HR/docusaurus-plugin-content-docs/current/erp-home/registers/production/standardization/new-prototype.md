@@ -41,7 +41,7 @@ Ispod su prisutne posebne kartice za:
 
 Na ovom je kartici niz informacija, samo za čitanje, koje se odnose na artikl koji je unesen u zaglavlje.
 
-**Napomena o artiklu**: prikazuju se bilješke unesene unutar kartice [Bilješke](/docs/erp-home/registers/items/create-new-item/item-registry/notes) u Šifarnik artikla.      
+**Napomena o artiklu**: prikazuju se bilješke unesene unutar kartice [Bilješke](/docs/erp-home/registers/items/create-new-item) u Šifarnik artikla.      
 
 **Težine**: prikazuje mjernu jedinicu težine i pripadajuće vrijednosti bruto težine, neto težine i specifične težine.
 

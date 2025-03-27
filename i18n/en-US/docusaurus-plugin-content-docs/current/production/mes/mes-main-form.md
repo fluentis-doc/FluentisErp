@@ -53,7 +53,7 @@ Indicates the work center on which the operator is making the declaration; it is
 - **Ongoing Phases**
 Phases can be added within the grid using the *Barcode* field or by using the specific button *Select New Phases* present in the right menu. The grid contains a series of information related to the job, production order, project, variant, etc. 
 All this information can be made visible or hidden through management in the *Layout* tab of [Production Resources](/docs/production/mes/production-resources).   
-For the selected row, on the right side of the grid, it is possible to view the default image inserted in the [Item Registry](/docs/erp-home/registers/items/create-new-item/item-registry/images); additionally, with a double-click, it will be displayed in full screen.       
+For the selected row, on the right side of the grid, it is possible to view the default image inserted in the [Item Registry](/docs/erp-home/registers/items/create-new-item); additionally, with a double-click, it will be displayed in full screen.       
 
 ### Production Tab      
 

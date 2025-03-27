@@ -32,7 +32,7 @@ It is possible to use a single article code for all materials or specify one for
 
 ## Definitions in Item Registry
 
-In the [Weights/Dimensions](/docs/erp-home/registers/items/create-new-item/item-registry/weights-dimensions) tab of the item registry, it is possible to specify the characteristics of packaging for CONAI management. In this section, you can define:
+In the [Weights/Dimensions](/docs/erp-home/registers/items/create-new-item) tab of the item registry, it is possible to specify the characteristics of packaging for CONAI management. In this section, you can define:
 
 **Used in Purchase/Sale**: Specifies whether the item is subject to the calculation of the CONAI contribution in purchase or sales documents.      
 **Type of packaging**: Indicates whether the packaging is primary, secondary, or tertiary.     

@@ -9,7 +9,7 @@ Questa funzionalità permette di definire e utilizzare diverse **unità di misur
 Per abilitare la gestione delle **unità di misura alternative**, è necessario attivare il flag **Gestione doppia unità di misura** nei [Parametri](/docs/configurations/parameters/sales/dn-parameters).
 :::
 
-L'**unità di misura principale**, obbligatoria, viene definita per ogni articolo nella sua anagrafica e non può essere modificata dopo l’utilizzo dell’articolo nei documenti o nei movimenti di magazzino. L'**unità di misura alternativa**, invece, consente di gestire il prodotto in un'unità diversa rispetto a quella principale e può essere impostata nel tab [Unità di Misura Alternative](/docs/erp-home/registers/items/create-new-item/item-registry/alternative-um) dell’anagrafica articolo.
+L'**unità di misura principale**, obbligatoria, viene definita per ogni articolo nella sua anagrafica e non può essere modificata dopo l’utilizzo dell’articolo nei documenti o nei movimenti di magazzino. L'**unità di misura alternativa**, invece, consente di gestire il prodotto in un'unità diversa rispetto a quella principale e può essere impostata nel tab [Unità di Misura Alternative](/docs/erp-home/registers/items/create-new-item) dell’anagrafica articolo.
 
 Nei documenti, l'unità di misura principale viene mostrata nella griglia degli **Articoli**, mentre il widget dell'unità di misura alternativa è visibile nel tab**Dati articolo**, contenente i campi**Quantità Alternativa** e**Prezzo Unità di Misura Alternativa**, ma solo se il flag **Gestione Doppia Unità di Misura** è attivo nei parametri del modulo.
 

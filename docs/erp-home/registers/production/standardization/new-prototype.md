@@ -43,7 +43,7 @@ Al di sotto sono presenti tab specifici per:
 
 In questo tab sono presenti una serie di informazioni, in sola lettura, relative all'articolo inserito in testata.
 
-**Nota articolo**: venogno riportate le note inserite all'interno del tab [Note](/docs/erp-home/registers/items/create-new-item/item-registry/notes) dell'anagrafica articolo.       
+**Nota articolo**: venogno riportate le note inserite all'interno del tab [Note](/docs/erp-home/registers/items/create-new-item) dell'anagrafica articolo.       
 
 **Pesi**: riporta l'unità di misura del peso ed i relativi valori di peso:lordi, netto e specifico.
 

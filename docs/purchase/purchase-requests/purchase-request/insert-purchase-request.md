@@ -86,7 +86,7 @@ Sono campi informativi che vengono ripresi di default dall'articolo/fornitore. �
 
 - **Listini**: viene proposto il listino da cui è stato ripreso il prezzo dell'articolo.    
 
-- **Fornitore**: viene riportato il *fornitore preferenziale* di default dell'[anagrafica articolo](/docs/erp-home/registers/items/create-new-item/item-registry/preferential-vendors).    
+- **Fornitore**: viene riportato il *fornitore preferenziale* di default dell'[anagrafica articolo](/docs/erp-home/registers/items/create-new-item).    
 - **IVA**: riporta l'aliquota IVA associata all'articolo.   
 - **Marca**: rappresenta la marca dell'articolo, ripresa dalla sua anagrafica oppure dal listino dell'articolo.
 - **Divisa**: di default viene proposta la [divisa](/docs/configurations/tables/general-settings/currencies) presente nell'[anagrafica](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/finance) del *Fornitore preferenziale*. 
@@ -130,8 +130,8 @@ In questa tab vengono riportati i *Fornitori preferenziali* presenti nell'anagra
 
 Gli altri campi presenti nella griglia sono: 
 - **Codice/Descrizione/Barcode articolo fornitore**: riportano il codice e la decsrizione con cui il fornitore identifica l'articolo richiesto; sono campi facoltativi.     
-- **Unità di misura**: viene proposta l'unità di misura associata al fornitore nell'[angrafica dell'articolo](/docs/erp-home/registers/items/create-new-item/item-registry/preferential-vendors), oppure l'unità di misura principale nel caso in cui tale campo non sia valorizzato.   
-- **Quantità**: viene proposta in base all'eventuale lotto economico del fornitore, se specificato nel tab [fornitori preferenziali](/docs/erp-home/registers/items/create-new-item/item-registry/preferential-vendors) dell'articolo; in alternativa viene proposta la quantità presente nella riga articolo della RDA.
+- **Unità di misura**: viene proposta l'unità di misura associata al fornitore nell'[angrafica dell'articolo](/docs/erp-home/registers/items/create-new-item), oppure l'unità di misura principale nel caso in cui tale campo non sia valorizzato.   
+- **Quantità**: viene proposta in base all'eventuale lotto economico del fornitore, se specificato nel tab [fornitori preferenziali](/docs/erp-home/registers/items/create-new-item) dell'articolo; in alternativa viene proposta la quantità presente nella riga articolo della RDA.
 - **Prezzo**: viene proposto in base al listino associato al fornitore preferenziale. 
 - **Data stimata consegna**: permette di inserire la data prevista per la consegna. 
 - **IVA**: viene proposta l'aliquota IVA presente nel tab *Dati articolo*, ma è modificabile manualmente.  

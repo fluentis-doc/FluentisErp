@@ -25,7 +25,7 @@ import Link from '@docusaurus/Link';
 ## To get started with   
 
 **Loading Unit Management**:
-- create items in the [*Items register*](/docs/erp-home/registers/items/create-new-item) and define their parameters in the [Packing tab](/docs/erp-home/registers/items/create-new-item/item-registry/packaging)        
+- create items in the [*Items register*](/docs/erp-home/registers/items/create-new-item) and define their parameters in the [Packing tab](/docs/erp-home/registers/items/create-new-item)        
 - define a [*Loading Unit group type*](/docs/configurations/tables/logistics/loading-unit-group-type/)        
 - define a [*Loading Unit Type*](/docs/configurations/tables/logistics/loading-unit-types/)  
 - correctly define the [*Warehouse template*](/docs/configurations/tables/logistics/warehouse-templates) to be used       

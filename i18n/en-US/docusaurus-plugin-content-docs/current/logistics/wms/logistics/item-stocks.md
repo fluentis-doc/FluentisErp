@@ -15,8 +15,8 @@ For example, if only the code of a location is read, using the **Search** button
 > **ITEM**: indicates the item code;     
 > **Stock (Gest.)**: indicates the stock in the management unit of measure (main);      
 > **Units of Measure**: indicates the item's unit of measure;          
-> **Stock**: is populated only if the *Default WMS* flag is enabled in the tab [Alternative Units of Measure in the Item Registry](/docs/erp-home/registers/items/create-new-item/item-registry/alternative-um). This value indicates the stock expressed in the alternative unit of measure, calculated based on the warehouse movements;         
-> **Stock (FC)**: is populated only if the *Default WMS* flag is enabled in the tab [Alternative Units of Measure in the Item Registry](/docs/erp-home/registers/items/create-new-item/item-registry/alternative-um). This value indicates the stock expressed in the alternative unit of measure, calculated using the conversion factor;               
+> **Stock**: is populated only if the *Default WMS* flag is enabled in the tab [Alternative Units of Measure in the Item Registry](/docs/erp-home/registers/items/create-new-item). This value indicates the stock expressed in the alternative unit of measure, calculated based on the warehouse movements;         
+> **Stock (FC)**: is populated only if the *Default WMS* flag is enabled in the tab [Alternative Units of Measure in the Item Registry](/docs/erp-home/registers/items/create-new-item). This value indicates the stock expressed in the alternative unit of measure, calculated using the conversion factor;               
 > **Batch**: indicates the item's batch;       
 > **Item description**: indicates the description of the item;      
 > **Variant**: indicates the variant code of the item;    
@@ -28,8 +28,8 @@ Meanwhile, when reading the item to adjust, using the **Search** button, the sea
 > **ITEM**: indicates the item code;     
 > **Stock (Gest.)**: indicates the stock in the management unit of measure (main);      
 > **Units of Measure**: indicates the item's unit of measure;          
-> **Stock**: is populated only if the *Default WMS* flag is enabled in the tab [Alternative Units of Measure in the Item Registry](/docs/erp-home/registers/items/create-new-item/item-registry/alternative-um). This value indicates the stock expressed in the alternative unit of measure, calculated based on the warehouse movements;         
-> **Stock (FC)**: is populated only if the *Default WMS* flag is enabled in the tab [Alternative Units of Measure in the Item Registry](/docs/erp-home/registers/items/create-new-item/item-registry/alternative-um). This value indicates the stock expressed in the alternative unit of measure, calculated using the conversion factor;               
+> **Stock**: is populated only if the *Default WMS* flag is enabled in the tab [Alternative Units of Measure in the Item Registry](/docs/erp-home/registers/items/create-new-item). This value indicates the stock expressed in the alternative unit of measure, calculated based on the warehouse movements;         
+> **Stock (FC)**: is populated only if the *Default WMS* flag is enabled in the tab [Alternative Units of Measure in the Item Registry](/docs/erp-home/registers/items/create-new-item). This value indicates the stock expressed in the alternative unit of measure, calculated using the conversion factor;               
 > **Batch**: indicates the item's batch;       
 > **Variant**: indicates the variant code of the item;    
 > **Variant description**: indicates the description of the item's variant.     
@@ -40,7 +40,7 @@ The columns related to stock are three:
 - *Stock*  
 - *Stock (FC)* - (FC = Conversion Factor)
 
-If the **Default WMS** flag is used in the tab [Alternative Units of Measure in the Item Registry](/docs/erp-home/registers/items/create-new-item/item-registry/alternative-um), the first will be populated with the item's main unit of measure, the second will be populated with the stock expressed in the item's alternative unit of measure and derived from the sum of movements, while the third will be the stock expressed in the alternative unit of measure but calculated using the conversion factor.
+If the **Default WMS** flag is used in the tab [Alternative Units of Measure in the Item Registry](/docs/erp-home/registers/items/create-new-item), the first will be populated with the item's main unit of measure, the second will be populated with the stock expressed in the item's alternative unit of measure and derived from the sum of movements, while the third will be the stock expressed in the alternative unit of measure but calculated using the conversion factor.
 If the **Default WMS** flag is not enabled, the *Stock* and *Stock (FC)* columns will not be populated.
 :::
 

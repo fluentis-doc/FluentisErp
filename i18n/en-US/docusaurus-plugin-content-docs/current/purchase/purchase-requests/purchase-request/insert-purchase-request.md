@@ -71,7 +71,7 @@ These are all informational fields that are taken by default from the item/suppl
 
 - **Price list**: the price list from which the item price was retrieved is proposed.    
 
-- **Supplier**: the default *Preferential vendor* of the [item registry](/docs/erp-home/registers/items/create-new-item/item-registry/preferential-vendors) is displayed.    
+- **Supplier**: the default *Preferential vendor* of the [item registry](/docs/erp-home/registers/items/create-new-item) is displayed.    
 - **VAT**: shows the VAT rate associated with the item.   
 - **Brand**: represents the brand of the item, pulled from its registry or from the item's price list.
 - **Currency**: by default, the [currency](/docs/configurations/tables/general-settings/currencies) present in the [registry](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/finance) of the *Preferential vendor* is proposed. 
@@ -115,8 +115,8 @@ You can choose between:
 
 The other fields present in the grid are: 
 - **Code/Description/Supplier Item Barcode**: report the code and the description with which the supplier identifies the requested item; these are optional fields.     
-- **Units of Measure**: the unit of measure associated with the supplier in the [item registry](/docs/erp-home/registers/items/create-new-item/item-registry/preferential-vendors) is proposed, or the primary unit of measure if this field is not valued.   
-- **Quantity**: is proposed based on the supplier’s economic lot if specified in the [preferred suppliers](/docs/erp-home/registers/items/create-new-item/item-registry/preferential-vendors) tab of the item; alternatively, the quantity present in the item line of the RDA is proposed.
+- **Units of Measure**: the unit of measure associated with the supplier in the [item registry](/docs/erp-home/registers/items/create-new-item) is proposed, or the primary unit of measure if this field is not valued.   
+- **Quantity**: is proposed based on the supplier’s economic lot if specified in the [preferred suppliers](/docs/erp-home/registers/items/create-new-item) tab of the item; alternatively, the quantity present in the item line of the RDA is proposed.
 - **Price**: is proposed based on the price list associated with the preferred supplier. 
 - **Estimated Delivery Date**: allows you to enter the expected delivery date. 
 - **VAT**: the VAT rate present in the *Item data* tab is proposed but can be manually modified.  

@@ -61,7 +61,7 @@ In questa form vengono riportate tutte le informazioni relative all'ordine forni
 
 ## **Ricevimento merci con unità di carico**
 
-Nel caso in cui, l’articolo fosse gestito con unità di carico, e quindi, nel tab [confezionamento](/docs/erp-home/registers/items/create-new-item/item-registry/packaging) dell’anagrafica articolo deve essere presente almeno una riga con il flag **Unità di carico obbligatoria** attivo, la priorità e la quantità.     
+Nel caso in cui, l’articolo fosse gestito con unità di carico, e quindi, nel tab [confezionamento](/docs/erp-home/registers/items/create-new-item) dell’anagrafica articolo deve essere presente almeno una riga con il flag **Unità di carico obbligatoria** attivo, la priorità e la quantità.     
 La procedura di ricevimento merci dovrà considerare la riga scegliendo quella con priorità più alta tra quelle di quel cliente fornitore (se indicato, altrimenti scegliere tra quelle senza), ma comunque con il flag Unità di carico obbligatoria attivo.     
 
 Quindi, dopo aver inserito tutti i dati relativi all’articolo come descritto precedentemente per il caso senza UDC, quando viene premuto il pulsante **Conferma** la procedura aprirà una nuova form dedicata alla creazione delle unità di carico; dove verranno precaricati i dati dell’articolo, come: *classe*, *codice* e *descrizione articolo*, con eventuale *variante* e *lotto*.     

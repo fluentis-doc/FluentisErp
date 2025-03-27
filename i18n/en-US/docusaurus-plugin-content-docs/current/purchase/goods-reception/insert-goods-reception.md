@@ -71,7 +71,7 @@ This tab displays/contains additional information related to the item.
 
 - **Project**: represents the project to associate with the document. If a project has been entered in the header of the document, it will be reported on all article lines; alternatively, it can be selected via the dedicated project help.
 
-- **Unit of Measure/Alternative Quantity**: if an alternative unit of measure has been defined in the [item registry](/docs/erp-home/registers/items/create-new-item/item-registry/alternative-um) with the *Default* flag and the flag *Automatic proposal of alternative U.M.* has been activated in Supplier Order Parameters, these values will be automatically proposed when entering the item.
+- **Unit of Measure/Alternative Quantity**: if an alternative unit of measure has been defined in the [item registry](/docs/erp-home/registers/items/create-new-item) with the *Default* flag and the flag *Automatic proposal of alternative U.M.* has been activated in Supplier Order Parameters, these values will be automatically proposed when entering the item.
 
 ### 2.3 Analytical 
 This can contain information on cost/profit centers on which the values of the items are distributed.   

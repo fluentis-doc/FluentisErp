@@ -15,7 +15,7 @@ The main data in the grid are:
 - **Supplier**: this data indicates the supplier from whom the catalog has been imported and will populate the *Preferential vendor* in the item registry once created.    
 - **Import date**: contains the date when the import occurred in Excel.       
 - **Starting validity date**: contains the validity start date entered in the Excel sheet.          
-- **Supplier Item Code/Description**: indicates the supplier item code which will also be reflected in the item registry, tab [Preferred Suppliers](/docs/erp-home/registers/items/create-new-item/item-registry/preferential-vendors).    
+- **Supplier Item Code/Description**: indicates the supplier item code which will also be reflected in the item registry, tab [Preferred Suppliers](/docs/erp-home/registers/items/create-new-item).    
 - **Units of Measure**: indicates the unit of measure used in the supplier's catalog.   
 - **Quantity**: indicates the quantity to which the **Price** of the item refers.  
 - **Discount category**: indicates the discount category to which the item belongs and must be matched with the discount category for purchases coded in Fluentis. The *Discount category* column is also present in the [Discount Policy Definition](/docs/purchase/price-control/definition), where discounts applied by the supplier can be consulted.     

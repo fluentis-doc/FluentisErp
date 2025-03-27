@@ -19,7 +19,7 @@ If the customer environment is updated, there is no need to reinstall the applic
 
 - **Barcode tokenizer**: barcodes can be configured within the form [Barcode tokenizer](/docs/configurations/tables/general-settings/barcode-tokenizer), located in: Tables > General Settings > Barcode tokenizer. These allow you to "instruct" the program to interpret the barcodes and execute certain actions.
 
-- **Alternative U.M. - WMS Default**: for the forms *LOAD ITEM*, *Unload item*, *Move Item*, *Item adjustment*, *Stock*, and *Inventory*, the ability to move goods using the Alternative U.M. has been introduced. The configuration is obtained by activating the *Default WMS* flag in the [Alternative U.M.](/docs/erp-home/registers/items/create-new-item/item-registry/alternative-um) tab found in the *Item Registry*. In the indicated forms, only the Alternative U.M. is displayed in the U.M. field, and the created movements have the Alternative U.M. and Alternative Quantity populated according to the conversion factor.
+- **Alternative U.M. - WMS Default**: for the forms *LOAD ITEM*, *Unload item*, *Move Item*, *Item adjustment*, *Stock*, and *Inventory*, the ability to move goods using the Alternative U.M. has been introduced. The configuration is obtained by activating the *Default WMS* flag in the [Alternative U.M.](/docs/erp-home/registers/items/create-new-item) tab found in the *Item Registry*. In the indicated forms, only the Alternative U.M. is displayed in the U.M. field, and the created movements have the Alternative U.M. and Alternative Quantity populated according to the conversion factor.
 
 - **Forms in WPF**: to access forms in WPF, the user must have the F21-WMS solution.
 
