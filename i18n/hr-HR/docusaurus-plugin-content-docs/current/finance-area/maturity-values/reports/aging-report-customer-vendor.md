@@ -1,24 +1,22 @@
 ---
-title: Report di aging
+title: Izvještaj starenja Kupaca/Dobavljača
 ---
 
-Da questa form è possibile lanciare la stampa del Report di aging.
+Ovaj poseban ispis osmišljen je kako bi na prvi pogled pružio situaciju, i dobavljačima i kupcima, o sastavu isteklih stavaka plaćanja prema vremenskim kategorijama.
 
-Questa particolare stampa è pensata per fornire, a colpo d'occhio, una situazione, sia per i fornitori sia per i clienti, sulla composizione delle partite scadute ed a scadere per categorie temporali.
+Primjer: moguće je prvo odabrati jednu po jednu kategoriju, fokusirajući se na primjer na kupce i dobiti prikaz dospjelih dugovanja podijeljen u grupe od 0 do 30 dana, od 30 do 60 dana i nakon 60 dana. Isto vrijedi i za dospijeća koja istječu, dobivajući podjelu u tri skupine kako bi se procijenili kratkoročni izgledi u usporedbi s onima koji su vremenski udaljeniji.
 
-Esempio: è possibile selezionare innanzitutto una categoria alla volta, concentrandosi ad esempio sui clienti (ed eventualmente selezionando solo i clienti italiani) ed ottenere una visione dello scaduto suddiviso in scaglioni da 0 a 30 giorni, da 30 a 60 giorni ed oltre 60 giorni. Lo stesso dicasi per le partite a scadere, ottendo una suddivisione su tre scaglioni per valutare le quote a più breve scadenza rispetto a quelle più lontane nel tempo.
+Ispis ima legendu na vrhu kako bi se lakše razumjeli ukupni iznosi koji su istekli (TOT = A + B + C...)
 
-La stampa presenta una legenda in alto per la comprensione dei totali scaduto ed a scadere (TOT = A + B + C...)
+Grupe za podjele dospijeća korisnik može slobodno postaviti u smislu broja dana.
 
-Gli scaglioni di suddivisione delle partite sono liberamente impostabili dall'utente in termini di numero di giorni.
-
-La sezione Giorni è infatti l'elemento specifico della form per questa stampa, e permette di inserire il numero di giorni, con segno negativo (obbligatorio) per lo scaduto e positivo per le partite a scadere per determinare l'ampiezza degli scagioni di raggruppamento.
+Rubrika Dani je zapravo specifičan element obrasca za ovaj ispis, a omogućuje unos broja dana, s predznakom minus (obavezno) za stavke kojima je istekao rok plaćanja i plus predznak za stavke kojima ističe rok plaćanja, kako bi se odredio opseg izuzeća za grupiranje.
 
 ![](/img/it-it/finance-area/maturity-values/reports/aging-report-customer-vendor/image01.png)
 
-La lettura nella stampa sarà da sinistra (scaduto) a destra (a scadere) e pertanto si consiglia di rispettare la logica dei campi che sono numerati da 1 (sarà quello più a sinistra e pertanto scaduto più "vecchio") a 6 (a scadere più lontano nel tempo) dove il campo 1 avrà un numero negativo maggiore che andrà a ridursi passando a 2 e 3 fino ad azzerarsi e crescere in positivo.
+Očitavanje u ispisu bit će s lijeva (isteklo) na desno (uskoro istječe) i stoga je preporučljivo poštivati logiku polja koja su numerirana od 1 do 6, gdje će polje 1 imati veći negativni broj koji će se smanjivati, prelazeći na 2 i 3 dok ne dosegne nulu i postane pozitivan.
 
-Gli **altri campi della form** sono i medesimi utilizzati in altre stampe del modulo. ** [Vedere qui per maggiori dettagli.](/docs/finance-area/maturity-values/reports/customer-vendor-due-register) **
+**Ostala polja obrasca** ista su ona koja se koriste u drugim ispisima ovakvih obrasca **[Pogledati ovdje za više detalja.](/docs/finance-area/maturity-values/reports/customer-vendor-due-register)**
 
 ---
 
