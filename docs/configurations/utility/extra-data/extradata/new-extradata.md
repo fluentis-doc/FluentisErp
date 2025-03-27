@@ -28,7 +28,7 @@ In this case, we proceed to create a **simple** ExtraData of type string named *
 #### Specific fields  
 - **Code**: which identifies the extradata.
 - **Content Type**: will be simple type.
-- **Widget Type **: defines the display and selection modes for Object and Datasource types. For the Simple type, it should be left empty because the loaded widget will be the default widget of the framework associated with the data type.
+- **Widget Type**: defines the display and selection modes for Object and Datasource types. For the Simple type, it should be left empty because the loaded widget will be the default widget of the framework associated with the data type.
 - **Name**: must be a word present in the dictionary; otherwise, we must add it.  
 - **Data Type**: this is the type of data.
 - **Stereotype**: additional options for field formatting, such as multiline text or defining the number of decimals.
@@ -164,24 +164,24 @@ For example, an ExtraData defined on the **FSItem** object (Item) can be propaga
 
 To manage the propagation from a main object to a derived one, it is necessary to have the ExtraData active on both objects in the **Activations** tab and then manage the propagation through the appropriate **propagation** tab.
 
-### Inserimento dell'ExtraData nella form di dettaglio
+#### Inserting the ExtraData into the detail form
 
 Dopo aver aperto la form di dettaglio dell'**ordine di vendita** interessato, per includere l'ExtraData nella form di dettaglio possiamo utilizzare il **form navigator** e **l'object navigator**.  
 1. Dall'**Object Navigator**, espandiamo il nodo della collezione degli **articoli**, e quindi espandiamo il nodo ExtraData.  
 2. Trasciniamo l'ExtraData direttamente sulla griglia degli articoli associati all'ordine di vendita.   
 L'ExtraData avrà un widget di tipo combobox (dropdown) e mostrerà il valore **codice** salvato sulla corrispondente tabella lato MSSQL.  
 
-### **4. Inserimento di ExtraData nei Report**
+### **4. Inserting ExtraData into Report**
 
 Per quanto riguarda l'inclusione degli **ExtraData** nei report si possono configuare n. 3 scenari distinti in base alla tipologia di ExtraData:
 * ExtraData Semplice.
 * ExtraData basato su un oggetto.
 * ExtraData basato su un datasource.
 
-### 4.1 ExtraData Semplice
+### 4.1 Simple ExtraData
 
-Per l'**ExtraData** **semplice**, è necessario includere nella parte relativa allo script del report il seguente metodo.  
-*Nell'esempio è stato associato un'ExtraData di tipo Semplice ad una fattura di vendita.*    
+For the simple ExtraData, you need to include the following method in the report script section.  
+In the example, an ExtraData of object type has been associated with a sales invoice.  
 
 ```cs
 private void calcExtraData_GetValue(object sender, DevExpress.XtraReports.UI.GetValueEventArgs e) {
@@ -197,10 +197,10 @@ private void calcExtraData_GetValue(object sender, DevExpress.XtraReports.UI.Get
 }
 ```
 
-### 4.2 ExtraData basato su oggetto
+### 4.2 Object-based ExtraData
 
-Per l'**ExtraData** **semplice**, è necessario includere nella parte relativa allo script del report il seguente metodo.  
-Nell'esempio è stato associato un'ExtraData di tipo oggetto ad una fattura di vendita.*    
+For the object-based ExtraData, you need to include the following method in the report script section.  
+In the example, an object-type ExtraData has been associated with a sales invoice.   
 
 ```cs
 private void calcExtraData_GetValue(object sender, DevExpress.XtraReports.UI.GetValueEventArgs e)
