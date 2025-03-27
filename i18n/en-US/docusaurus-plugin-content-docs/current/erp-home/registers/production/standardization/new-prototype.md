@@ -82,7 +82,7 @@ Within the **Component data** box, it is possible to specify:
 
 If the selected element in the tree is a semi-finished product, in the **Components** tab, it is possible to view the first-level components it is made up of.
 
-In the **Extra data - model** and **Extra data - component** tabs, it is possible to enter the respective extra data related to the parent article and the component; for an in-depth description of the extra data, reference is made to the article [Extra data](/docs/configurations/utility/extra-data/extradata/new-extradata-simple).     
+In the **Extra data - model** and **Extra data - component** tabs, it is possible to enter the respective extra data related to the parent article and the component; for an in-depth description of the extra data, reference is made to the article [Extra data](/docs/configurations/utility/extra-data/extradata/new-extradata).     
 
 At the bottom of the form, within the **Cycle** tab, it is possible to insert the processing phases related to the individual elements of the tree with their respective times and setup and processing costs; it is also possible to manually enter a cost in the **Manual phase cost** field, which will have a higher priority in the cost calculation phase, overriding the cost calculated based on the phase times and cost centers.    
 The **Cycle** tab is enabled for articles with **Procurement type** of *Production* or *Subcontractor* in the [MRP Parameters](/docs/configurations/parameters/production/mrp-parameters/mrp-parameters-intro).       

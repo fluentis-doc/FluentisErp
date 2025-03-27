@@ -56,7 +56,7 @@ Ova sekcija, aktivna samo ako je odabrani artikl u mreži upravljan preko serijs
 **Dodatni podaci Artikla**
 
 Omogućuje unos i pregled *Dodatnih podataka* koji se odnose na pojedinačnu stavku.
-Za detaljan opis dodatnih podataka, molimo pogledajte članak o [Dodatnim podacima](/docs/configurations/utility/extra-data/extradata/new-extradata-simple).
+Za detaljan opis dodatnih podataka, molimo pogledajte članak o [Dodatnim podacima](/docs/configurations/utility/extra-data/extradata/new-extradata).
 
 
 ### Povezani proizvodni nalog

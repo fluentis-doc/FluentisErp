@@ -84,7 +84,7 @@ All'interno dei box relativo ai **Dati componente**, è possibile indicare:
 
 Se l'elemento seleziona nell'albero è un semilavorato nel tab **Componenti** è possibile visualizzare i componenti di primo livello da cui è costituito.
 
-Nei tab **Dati extra - modello** e **Dati extra - componente** è possibile inserire rispettivamente gli extra data relativi all'articolo padre e al componente; per una descrizione approfondita sugli extra data si rimanda all'articolo [Extra data](/docs/configurations/utility/extra-data/extradata/new-extradata-simple).     
+Nei tab **Dati extra - modello** e **Dati extra - componente** è possibile inserire rispettivamente gli extra data relativi all'articolo padre e al componente; per una descrizione approfondita sugli extra data si rimanda all'articolo [Extra data](/docs/configurations/utility/extra-data/extradata/new-extradata).     
 
 Nella parte inferiore della form, all'interno del tab **Ciclo** è possibile inserire le fasi delle lavorazioni relative ai singoli elementi dell'albero con i relativi tempi e costi di attrezzaggio e lavorazione; è anche possibile inserire un costo manualmente nel campo **Costo fase manuale** che avrà un priorità più alta nella fase di calcolo dei costi, sovrascrivendo il costo calcolato in base ai tempi delle fasi e ai centri di costo.    
 Il tab **Ciclo** viene abilitato per gli articoli con **Tipo approvvigionamento** *Produzione* o *Conto lavoro* nei [Parametri MRP](/docs/configurations/parameters/production/mrp-parameters/mrp-parameters-intro).       

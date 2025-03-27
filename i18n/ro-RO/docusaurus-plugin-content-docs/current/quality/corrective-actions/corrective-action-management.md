@@ -237,7 +237,7 @@ Le informazioni visibili sono:
 
 ### Extra data
 
-E' possibile inserire degli [Extra Data](/docs/configurations/utility/extra-data/extradata/new-extradata-simple) per l'*Azione correttiva*.   
+E' possibile inserire degli [Extra Data](/docs/configurations/utility/extra-data/extradata/new-extradata) per l'*Azione correttiva*.   
 
 
 ## Programmi azione correttiva
@@ -354,7 +354,7 @@ L'elenco si compone delle seguenti informazioni:
 
 ### Extra data
 
-E' possibile inserire degli [Extra Data](/docs/configurations/utility/extra-data/extradata/new-extradata-simple) per il *Programma azione correttiva*.   
+E' possibile inserire degli [Extra Data](/docs/configurations/utility/extra-data/extradata/new-extradata) per il *Programma azione correttiva*.   
 
 
 ### Documenti allegati

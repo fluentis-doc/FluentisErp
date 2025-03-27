@@ -81,7 +81,7 @@ Unutar okvira koji se odnosi na **Podaci o komponenti** moguće je navesti:
 
 Ako je odabrani element u strukturi poluproizvod, na kartici **Komponente** moguće je vidjeti komponente prvog stupnja od kojih se sastoji.
 
-Na karticama **Dodatni podaci - model** i **Dodatni podaci - komponenta** moguće je unijeti dodatne podatke koji se odnose na nadređeni artikl odnosno komponentu; za detaljan opis dodatnih podataka upućujemo na članak [Dodatni podaci](/docs/configurations/utility/extra-data/extradata/new-extradata-simple).     
+Na karticama **Dodatni podaci - model** i **Dodatni podaci - komponenta** moguće je unijeti dodatne podatke koji se odnose na nadređeni artikl odnosno komponentu; za detaljan opis dodatnih podataka upućujemo na članak [Dodatni podaci](/docs/configurations/utility/extra-data/extradata/new-extradata).     
 
 Na dnu obrasca, unutar kartice **Ciklus** moguće je unijeti radne faze koje se odnose na pojedine elemente u strukturi s pripadajućim vremenima i troškovima postavljanja i rada; također je moguće ručno unijeti trošak u polje **Ručni trošak faze** koji ima viši prioritet pri izračunu troškova, zamjenjujući trošak izračunan prema vremenima faza i centrima troškova.    
 Kartica **Ciklus** omogućena je za artikle s **Vrstom opskrbe**, *Proizvodnja* ili *Radni nalog* u [Parametrima MRP](/docs/configurations/parameters/production/mrp-parameters/mrp-parameters-intro).       

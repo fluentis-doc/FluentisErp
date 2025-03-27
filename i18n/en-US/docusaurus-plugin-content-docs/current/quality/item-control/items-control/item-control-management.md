@@ -211,7 +211,7 @@ The list consists of the following information:
 
 
 #### Test Attribute
-It is possible to enter [Extra Data](/docs/configurations/utility/extra-data/extradata/new-extradata-simple) for the single *Test*.
+It is possible to enter [Extra Data](/docs/configurations/utility/extra-data/extradata/new-extradata) for the single *Test*.
 
 
 #### Test Configuration
@@ -224,12 +224,12 @@ In this list, it is possible to insert and consult any attachments; it is possib
 
 
 ### Attributes Controls
-It is possible to enter [Extra Data](/docs/configurations/utility/extra-data/extradata/new-extradata-simple) for each *Control*.   
+It is possible to enter [Extra Data](/docs/configurations/utility/extra-data/extradata/new-extradata) for each *Control*.   
 They are inherited from the *Extra Data* associated with the *Items Control Type*.
 
 
 ### Item Attributes
-It is possible to enter [Extra Data](/docs/configurations/utility/extra-data/extradata/new-extradata-simple) for the *Controlled Item*.   
+It is possible to enter [Extra Data](/docs/configurations/utility/extra-data/extradata/new-extradata) for the *Controlled Item*.   
 They are inherited from the *Extra Data* associated with the *Item*.
 
 

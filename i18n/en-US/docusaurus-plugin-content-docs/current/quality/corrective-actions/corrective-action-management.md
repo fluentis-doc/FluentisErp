@@ -237,7 +237,7 @@ The visible information is:
 
 ### Extra Data 
 
-It is possible to insert [Extra Data](/docs/configurations/utility/extra-data/extradata/new-extradata-simple) for the *Corrective Action*.   
+It is possible to insert [Extra Data](/docs/configurations/utility/extra-data/extradata/new-extradata) for the *Corrective Action*.   
 
 
 ## Corrective Action Programs
@@ -354,7 +354,7 @@ The list consists of the following information:
 
 ### Extra Data 
 
-It is possible to enter [Extra Data](/docs/configurations/utility/extra-data/extradata/new-extradata-simple) for the *Corrective Action Program*.   
+It is possible to enter [Extra Data](/docs/configurations/utility/extra-data/extradata/new-extradata) for the *Corrective Action Program*.   
 
 
 ### Attached Documents 

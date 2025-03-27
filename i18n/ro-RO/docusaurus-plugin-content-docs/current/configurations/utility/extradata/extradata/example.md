@@ -10,7 +10,7 @@ Creare extra data *culoare* activat în **Registrul articol** și **Registrul fu
 - inserați în *Antet*:       
 
 **Cod**: identificativ;            
-**Tip conținut**: la alegere între [Obiect](/docs/configurations/utility/extra-data/extradata/new-extradata-object), [Simplu](/docs/configurations/utility/extra-data/extradata/new-extradata-simple) sau Data source;       
+**Tip conținut**: la alegere între [Obiect](/docs/configurations/utility/extra-data/extradata/new-extradata), [Simplu](/docs/configurations/utility/extra-data/extradata/new-extradata) sau Data source;       
 **Tip Widget**: se poate alege între un widget cu combo box sau cu cod/descriere cu completare automată;        
 **Nume**: inserați *culoare deschisă*, prezentă în dicționar;            
 **Descriere**: inserați *culoare deschisă*;                        

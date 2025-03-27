@@ -144,6 +144,6 @@ In this tab, it is possible to enter the operators who will perform the individu
 
 ## Extra Data 
 
-For a detailed description of the extra data, please refer to the article [Extra data](/docs/configurations/utility/extra-data/extradata/new-extradata-simple).
+For a detailed description of the extra data, please refer to the article [Extra data](/docs/configurations/utility/extra-data/extradata/new-extradata).
 
 For details on the common functionality of forms, please refer to the link [Custom features, buttons, and fields](/docs/guide/common).

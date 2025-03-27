@@ -191,7 +191,7 @@ This tab allows specifying multiple warehouses and scrap reasons with their rela
 
 Allows managing and visualizing the Extra Data related to the report.
 
-For an in-depth description of the extra data, please refer to the article [Extra Data](/docs/configurations/utility/extra-data/extradata/new-extradata-simple).
+For an in-depth description of the extra data, please refer to the article [Extra Data](/docs/configurations/utility/extra-data/extradata/new-extradata).
 
 ## Lots and Serial Numbers
 

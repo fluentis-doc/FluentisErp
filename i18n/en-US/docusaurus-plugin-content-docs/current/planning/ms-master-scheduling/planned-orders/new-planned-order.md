@@ -172,6 +172,6 @@ In this tab, the notes/documents related to the selected processing phase in the
 
 ## Extra Data
 
-For an in-depth description of extra data, refer to the article [Extra data](/docs/configurations/utility/extra-data/extradata/new-extradata-simple).
+For an in-depth description of extra data, refer to the article [Extra data](/docs/configurations/utility/extra-data/extradata/new-extradata).
 
 For details on the common functionality of forms, refer to the link [Custom features, buttons, and fields](/docs/guide/common).

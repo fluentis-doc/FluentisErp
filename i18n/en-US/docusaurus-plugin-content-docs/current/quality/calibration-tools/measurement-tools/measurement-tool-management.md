@@ -169,7 +169,7 @@ The list consists of the following information:
 
 
 ### Extra Data
-It is possible to enter [Extra Data](/docs/configurations/utility/extra-data/extradata/new-extradata-simple) for each *Measurement Tool*.   
+It is possible to enter [Extra Data](/docs/configurations/utility/extra-data/extradata/new-extradata) for each *Measurement Tool*.   
 
 
 ### Linked Documents

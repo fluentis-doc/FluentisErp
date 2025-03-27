@@ -112,7 +112,7 @@ Lista este compusă din următoarele informații:
 
 ### Extra data
 
-Permite inserarea [Datelor suplimentare](/docs/configurations/utility/extra-data/extradata/new-extradata-simple) pentru fiecare *Calibrare instrument*.
+Permite inserarea [Datelor suplimentare](/docs/configurations/utility/extra-data/extradata/new-extradata) pentru fiecare *Calibrare instrument*.
 
 ### Imagine
 Este afișată imaginea asociată în gestionarea *Instrumentului de măsură*.

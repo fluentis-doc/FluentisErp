@@ -138,7 +138,7 @@ Ora creare una nuova fattura e come cliente/fornitore inserire lo stesso dell'im
 
  ![](/img/it-it/configurations/utility/extradata/new-extradata-simple/image08.png)
 
-Vedi anche [Inserimento Extradata Semplice in Xtrareport](/docs/configurations/utility/extra-data/extradata/insert-extradata-simple-in-xtrareport).
+Vedi anche [Inserimento Extradata Semplice in Xtrareport](/docs/configurations/utility/extra-data/extradata/new-extradata).
 
-Vedi anche [Nuovo ExtraData Oggetto](/docs/configurations/utility/extra-data/extradata/new-extradata-object).
+Vedi anche [Nuovo ExtraData Oggetto](/docs/configurations/utility/extra-data/extradata/new-extradata).
  -->

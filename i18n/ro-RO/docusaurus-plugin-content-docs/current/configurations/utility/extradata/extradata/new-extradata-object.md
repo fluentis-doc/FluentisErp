@@ -80,7 +80,7 @@ Iar în imaginea următoare vedem cum, la crearea noii facturi pentru contul ana
 
 ![](/img/ro-RO/configurations/utility/extradata/new-extradata-object/image08.png)
 
-Vezi și  [Nou ExtraData Simplu](/docs/configurations/utility/extra-data/extradata/new-extradata-simple).
+Vezi și  [Nou ExtraData Simplu](/docs/configurations/utility/extra-data/extradata/new-extradata).
 
 
 

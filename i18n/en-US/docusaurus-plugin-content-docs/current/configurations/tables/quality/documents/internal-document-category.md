@@ -105,7 +105,7 @@ The list consists of the following information:
 **Delete Access Function**: deletes the selected row from the list.   
 
 ### Extra Data 
-It is possible to enter [Extra Data](/docs/configurations/utility/extra-data/extradata/new-extradata-simple) for each *Internal Origin Document*.   
+It is possible to enter [Extra Data](/docs/configurations/utility/extra-data/extradata/new-extradata) for each *Internal Origin Document*.   
 These *Extra Data* are inherited in the *Internal Document* of that specific category.   
 
 For anything not detailed in this document regarding the common functioning of the forms, please refer to the following link [Custom features, buttons, and fields](/docs/guide/common).

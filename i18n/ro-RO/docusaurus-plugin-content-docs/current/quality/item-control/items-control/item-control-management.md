@@ -211,7 +211,7 @@ L'elenco si compone delle seguenti informazioni:
 
 
 #### Attributi prove effettuate
-E' possibile inserire degli [Extra Data](/docs/configurations/utility/extra-data/extradata/new-extradata-simple) per la singola *Prova*.   
+E' possibile inserire degli [Extra Data](/docs/configurations/utility/extra-data/extradata/new-extradata) per la singola *Prova*.   
 
 
 #### Configurazione della prova
@@ -224,12 +224,12 @@ In questo elenco è possibile inserire e consultare eventuali allegati; è possi
 
 
 ### Attributi controlli
-E' possibile inserire degli [Extra Data](/docs/configurations/utility/extra-data/extradata/new-extradata-simple) per ogni *Controllo*.   
+E' possibile inserire degli [Extra Data](/docs/configurations/utility/extra-data/extradata/new-extradata) per ogni *Controllo*.   
 Vengono ereditati dagli *Extra data* associati al *Tipo controllo articoli*.   
 
 
 ### Attributi articolo
-E' possibile inserire degli [Extra Data](/docs/configurations/utility/extra-data/extradata/new-extradata-simple) per l'*Articolo* controllato.   
+E' possibile inserire degli [Extra Data](/docs/configurations/utility/extra-data/extradata/new-extradata) per l'*Articolo* controllato.   
 Vengono ereditati dagli *Extra data* associati all'*Articolo*.   
 
 

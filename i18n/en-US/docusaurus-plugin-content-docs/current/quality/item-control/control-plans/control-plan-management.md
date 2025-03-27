@@ -113,7 +113,7 @@ The information is editable if you are creating a new *Control Plan*, otherwise 
 
 
 ### Control Plan Attributes
-It is possible to insert [Extra Data](/docs/configurations/utility/extra-data/extradata/new-extradata-simple) for each *Control Plan*.   
+It is possible to insert [Extra Data](/docs/configurations/utility/extra-data/extradata/new-extradata) for each *Control Plan*.   
 They are inherited from the *Extra Data* associated with the *Control Plan type*.   
 
 
@@ -205,7 +205,7 @@ The list consists of the following information:
 
 
 ### Item Attributes
-Alternatively to the list of *Associated Items*, it is possible to insert characteristics (in [Extra Data](/docs/configurations/utility/extra-data/extradata/new-extradata-simple) format) for which the *Planned Tests* of the *Control Plan* are valid.   
+Alternatively to the list of *Associated Items*, it is possible to insert characteristics (in [Extra Data](/docs/configurations/utility/extra-data/extradata/new-extradata) format) for which the *Planned Tests* of the *Control Plan* are valid.   
 
 
 ### Related Sheets

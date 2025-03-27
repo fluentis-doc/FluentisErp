@@ -16,6 +16,6 @@ La lista di distribuzione contiene tutti i soggetti che abitualmente ricevono un
 In questa tab è possibile inserire le Funzioni aziendali a cui dare i diritti di accesso.    
 
 ## Extra data
-E' possibile inserire degli [Extra Data](/docs/configurations/utility/extra-data/extradata/new-extradata-simple) per ogni Documento di origine interna.   
+E' possibile inserire degli [Extra Data](/docs/configurations/utility/extra-data/extradata/new-extradata) per ogni Documento di origine interna.   
 
 Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).

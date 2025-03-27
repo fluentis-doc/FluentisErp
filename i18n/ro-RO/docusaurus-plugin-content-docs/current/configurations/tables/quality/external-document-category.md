@@ -19,5 +19,5 @@ Permite inserarea funcțiilor din companie pentru a oferi drepturile de acces.
 
 ## Extra data
 
-Permite inserarea diverslor [Extra Data](/docs/configurations/utility/extra-data/extradata/new-extradata-simple) pentru fiecare document.
+Permite inserarea diverslor [Extra Data](/docs/configurations/utility/extra-data/extradata/new-extradata) pentru fiecare document.
 
