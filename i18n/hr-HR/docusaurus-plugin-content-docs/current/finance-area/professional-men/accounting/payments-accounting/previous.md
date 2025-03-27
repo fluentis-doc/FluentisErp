@@ -1,19 +1,19 @@
 ---
-title: Precedenti
+title: Prethodni
 sidebar_position: 4
 ---
 
-Dalla scheda precedenti è possibile procedere all'annullamento delle contabilizzazioni eseguite. L'annullamento sarà possibile solo se il periodo è ancora modificabile (stampa libro giornale e chiusura conti non eseguite). Un doppio click nella sezione delle registrazioni consentirà di visualizzare la registrazione contabile relativa.
+Iz prethodne kartice moguće je nastaviti s otkazivanjem provedenog obračuna. Otkaz će biti moguć samo ako se razdoblje još može mijenjati (ispisivanje dnevnika i zatvaranje računa nije izvršeno). Dupli klik u odjeljku evidencije omogućit će vam pregled relevantnog računovodstvenog zapisa.
 
 
 
 
 
-| Funzione | Significato |
+| Funkcija | Značenje |
 | --- | --- |
-| Ricerca | Ricerca la lista delle creazioni eseguite. |
-| Rollback contabilizzazione | Con questo pulsante sarà cancellata tutta la contabilizzazione effettuata, con tutti i compensi associati. |
-| Rollback registrazioni | Il pulsante esegue il ripristino della registrazione selezionata. |
+| Traži | Pretražite popis stvorenih kreacija. |
+| Poništi knjiženje | Ovom tipkom brišu se svi provedeni obračuni, sa svim pripadajućim naknadama. |
+| Poništi zapise | Tipka vraća odabrane zapise. |
 
 
 

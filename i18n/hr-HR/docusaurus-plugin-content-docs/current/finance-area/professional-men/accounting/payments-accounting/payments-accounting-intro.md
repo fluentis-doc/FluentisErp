@@ -1,25 +1,25 @@
 ---
-title: Contabilizzazione pagamenti
+title: Knjiženje plaćanja
 sidebar_position: 1
 ---
 
 LINK:
 
-** [Filtro](/docs/finance-area/professional-men/accounting/payments-accounting/filter) **
+** [Filter](/docs/finance-area/professional-men/accounting/payments-accounting/filter) **
 
 ** [Parametri](/docs/finance-area/professional-men/accounting/payments-accounting/parameters) **
 
-** [Rollback](/docs/finance-area/professional-men/accounting/payments-accounting/previous) **
+** [Povratak](/docs/finance-area/professional-men/accounting/payments-accounting/previous) **
 
  
 
-Con questa procedura si può eseguire la contabilizzazione dei pagamenti dei compensi percipienti inseriti a sistema.
+Ovim postupkom moguće je izvršiti obračun isplata unesenih u sustav primatelja naknada.
 
-La contabilizzazione del pagamento può avvenire sia sul preavviso di parcella (senza numero e data documento definitivo), sia sulla fattura definitiva.
+Plaćanje se može evidentirati ili na obavijesti o naknadi (bez konačnog broja dokumenta i datuma) ili na konačnom računu.
 
-Pertanto l'ordine con il quale potranno essere eseguite la presente procedura rispetto a quella di ** [Contabilizzazione compensi](/docs/finance-area/professional-men/accounting/compensation-accounting/compensations-accounting) ** dipenderà dall'emissione direttamente di una fattura o di un preavviso da parte del percipiente. Questa possibilità è legata anche al fatto che il termine per il versamento della ritenuta d'acconto  scatta dal momento del pagamento e non della fatturazione.
+Stoga će redoslijed kojim se ovaj postupak može provesti u odnosu na  **[Knjiženje naknade](/docs/finance-area/professional-men/accounting/compensation-accounting/compensations-accounting)** ovisiti o tome je li fakturu ili obavijest izravno izdao primatelj. Ova mogućnost također je povezana s činjenicom da rok za plaćanje poreza po odbitku počinje teći od trenutka uplate, a ne od izdavanja računa.
 
-**Per la corretta gestione della ritenuta d'acconto da parte di Fluentis, si raccomanda di gestire il pagamento dei percipienti esclusivamente da questa procedura evitando di effettuare registrazioni manuali in prima nota oppure di operare dal modulo Tesoreria.**
+**Za ispravno upravljanje porezom po odbitku od strane Fluentisa, preporuča se upravljanje uplatama primatelja isključivo kroz ovaj postupak, izbjegavajući ručne unose u prvoj bilješci ili rad iz modula Riznica.**
 
  
 
