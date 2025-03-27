@@ -1,11 +1,11 @@
 ---
-title: Estratto conto a partite aperte
+title: Konto kartica (otvorene stavke)
 sidebar_position: 4
 ---
 
-Da questa form è possibile lanciare l'estratto conto a partite aperte, che rappresenta, specularmente all'estratto conto contabile, la situazione delle partite aperte per singolo cliente o fornitore, per il quale viene stampata una scheda distinta.
+Iz ovog obrasca moguće je pokrenuti izvadak konta koji predstavlja stanje otvorenih stavki za svakog kupca ili dobavljača, za što se ispisuje poseban list. 
 
-Il funzionamento della maschera è il medesimo previsto per lo ** [scadenziario al quale si rinvia](/docs/finance-area/maturity-values/reports/customer-vendor-due-register) **.
+Funkcioniranje obrasca je isto kao i za  **[ostale ispise obrasca iz ovog područja](/docs/finance-area/maturity-values/reports/customer-vendor-due-register)**.
 
 ---
 
