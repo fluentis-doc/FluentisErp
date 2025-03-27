@@ -503,6 +503,10 @@
     "message": "Complaints and non-compliance",
     "description": "The label for category Reclami e non conformità in sidebar erpHome"
   },
+  "sidebar.erpHome.category.Non conformità": {
+    "message": "Non compliance",
+    "description": "The label for category Reclami e non conformità in sidebar erpHome"
+  },
   "sidebar.erpHome.category.Certificati": {
     "message": "Certificates",
     "description": "The label for category Certificati in sidebar erpHome"
@@ -2004,7 +2008,7 @@
     "description": "The label for category Interventi Pianificati in sidebar projectManagement"
   },
   "sidebar.projectManagement.category.Riepiloghi per cedolini": {
-    "message": "Riepiloghi per cedolini",
+    "message": "Totals for payroll",
     "description": "The label for category Riepiloghi per cedolini in sidebar projectManagement"
   },
   "sidebar.quality.category.Documenti di origine esterna": {
