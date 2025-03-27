@@ -425,7 +425,7 @@ In questa sezione invece si vanno a specificare informazioni relative alla produ
 In questa sezione si va ad indicare il lead time di analisi necessario per effettuare i controlli preliminare sull'aritcolo:  
 **Lead time analisi**: se attivo, questo flag indica che per quel materiale sono necessarie dei controlli di qualità che necessitano quindi di un periodo di tempo (in giorni) che viene indicato nel campo affianco; questo serve per stabilire dopo aver ricevuto il materiale, dopo quanti giorni è possibile utilizzarlo in produzione o nel caso di un prodotto finito dopo quanti giorni dalla sua produzione è possibile spedire il materiale.
 
-### Post vendita
+#### Post vendita
 
 In questa sezione finale si andrà ad indicare l'eventuale garanzia concessa sul materiale e i relativi giorni di garanzia stabili attivando il flag **Con Garanzia** e aggiungendo nel campo editabile il numero dei giorni di garanzia; nel caso in cui il materiale non abbia una garanzia il flag risulterà disattivato.
 
