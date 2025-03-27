@@ -81,21 +81,20 @@ dove, ```@ID``` è un parametro che definiamo successivamente a livello di **Dat
 
 2. Creiamo il datasource basato sulla query di cui al punto precedente; per la creazione di DataSource si rimanda all'apposita documentazione.   
 
-![](/img/en-US/extradata/20250318143226.png)
+
 Trasciniamo nel tab ***Visible property*** le proprietà di nostro interesse quali: **Id**, **Description**, **Code**, **TotalAmount**, **TotalDepreciation**, **NetAmount**.  
 
-3. Definiamo, attraverso il tab **parameters**,  un parametro nel datasource appena creato.
+1. Definiamo, attraverso il tab **parameters**,  un parametro nel datasource appena creato.
 
-![](/img/en-US/extradata/20250318144742.png)
+)
 
-4. Da Fluentis, procediamo a creare la dashboard; per tutti i dettagli relativi alle dashboard si rimanda all'apposita documentazione dedicata.  
+1. Da Fluentis, procediamo a creare la dashboard; per tutti i dettagli relativi alle dashboard si rimanda all'apposita documentazione dedicata.  
 
-5. Da Arm, creiamo la parametrizzazione per il **context panel**.  
+2. Da Arm, creiamo la parametrizzazione per il **context panel**.  
 
-![](/img/en-US/extradata/20250318145023.png)
 
-6. Procediamo a selezionare un record dalla form dei cespiti; verrà quindi mostrata sul pannello contestuale la percentuale di ammortamento del cespite.  
 
-![](/img/en-US/extradata/20250318153357.png)
+3. Procediamo a selezionare un record dalla form dei cespiti; verrà quindi mostrata sul pannello contestuale la percentuale di ammortamento del cespite.  
+
 
 
