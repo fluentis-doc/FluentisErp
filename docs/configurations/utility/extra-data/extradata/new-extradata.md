@@ -164,9 +164,70 @@ For example, an ExtraData defined on the **FSItem** object (Item) can be propaga
 
 To manage the propagation from a main object to a derived one, it is necessary to have the ExtraData active on both objects in the **Activations** tab and then manage the propagation through the appropriate **propagation** tab.
 
+### Inserting the ExtraData into the detail form
+
 ### Inserimento dell'ExtraData nella form di dettaglio
 
 Dopo aver aperto la form di dettaglio dell'**ordine di vendita** interessato, per includere l'ExtraData nella form di dettaglio possiamo utilizzare il **form navigator** e **l'object navigator**.  
 1. Dall'**Object Navigator**, espandiamo il nodo della collezione degli **articoli**, e quindi espandiamo il nodo ExtraData.  
 2. Trasciniamo l'ExtraData direttamente sulla griglia degli articoli associati all'ordine di vendita.   
 L'ExtraData avrà un widget di tipo combobox (dropdown) e mostrerà il valore **codice** salvato sulla corrispondente tabella lato MSSQL.  
+
+### **4. Inserimento di ExtraData nei Report**
+
+Per quanto riguarda l'inclusione degli **ExtraData** nei report si possono configuare n. 3 scenari distinti in base alla tipologia di ExtraData:
+* ExtraData Semplice.
+* ExtraData basato su un oggetto.
+* ExtraData basato su un datasource.
+
+### 4.1 ExtraData Semplice
+
+Per l'**ExtraData** **semplice**, è necessario includere nella parte relativa allo script del report il seguente metodo.  
+*Nell'esempio è stato associato un'ExtraData di tipo Semplice ad una fattura di vendita.*    
+
+```cs
+private void calcExtraData_GetValue(object sender, DevExpress.XtraReports.UI.GetValueEventArgs e) {
+  FSSalesInvoice row = (FSSalesInvoice)e.Row;
+ if (row != null)
+ {
+  var extraData = row.ExtraData.Where(x => x.ExtraDataObject != null && x.ExtraDataObject.Code == "ExtradataXreport").FirstOrDefault();
+  if (extraData != null)
+  {
+    e.Value = extraData.ExtraDataValue;
+  }
+ }  
+}
+```
+
+### 4.2 ExtraData basato su oggetto
+
+Per l'**ExtraData** **semplice**, è necessario includere nella parte relativa allo script del report il seguente metodo.  
+Nell'esempio è stato associato un'ExtraData di tipo oggetto ad una fattura di vendita.*    
+
+```cs
+private void calcExtraData_GetValue(object sender, DevExpress.XtraReports.UI.GetValueEventArgs e)
+{
+    FSSalesInvoice row = (FSSalesInvoice)e.Row;
+    if (row != null)
+    {
+        var extraData = row.ExtraData 
+            .Where(x => x.ExtraDataObject != null && x.ExtraDataObject.Code == "ObjectExtraData")
+            .FirstOrDefault();
+        
+        if (extraData != null)
+        {
+            var record = GetReport().DataProvider
+                .Linq<FSColor>()
+                .Where(x => x.Id == extraData.ExtraDataId)
+                .FirstOrDefault();
+            
+            if (record != null)
+            {
+                e.Value = record.Description; 
+            }
+        }
+    }
+}
+```
+
+
