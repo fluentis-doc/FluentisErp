@@ -1,25 +1,25 @@
 ---
-title: Differenza tra saldo contabile e partite aperte
+title: Razlika između dospijeća plaćanja i glavne knjige
 sidebar_position: 5
 ---
 
-La stampa che è possibile lanciare dalla presente form corrisponde al contenuto della visualizzazione a video ottenibile con la form ** [Differenza partite aperte saldo contabile.](/docs/finance-area/maturity-values/maturity-values/difference-between-maturity-value-and-ledger-balance) **
+Ispis koji se može pokrenuti iz ovog obrasca odgovara sadržaju prikaza na ekranu koji se može dobiti pomoću obrasca **[Razlika između otvorenih partija i računovodstvenog salda.](/docs/finance-area/maturity-values/maturity-values/difference-between-maturity-value-and-ledger-balance)**
 
-Specularmente alla viualizzazione a video, il significato della presente stampa è quello di ricercare le differenze (squadrature) tra i saldi contabili ed i saldi del partitario per ogni cliente e fornitore al fine di correggerle. Dette differenze possono originare da errori nella gestione del partitario o delle scritture contabili (mancato allineamento tra movimento contabile ed apertura partite o incasso / pagamento e chiusura partita).
+Ovaj ispis služi za traženje stavaka (razlika) između stanja otvorenih stavaka i stanja glavne knjige za svakog kupca i dobavljača, s ciljem kako bi se takve stavke ispravile. Ove razlike mogu nastati od pogrešaka u vođenju glavne knjige ili računovodstvenih zapisa (nedostatak usklađenosti između računovodstvenog kretanja i otvaranja stavki ili naplate/plaćanja i zatvaranja stavke).
 
-:::danger NOTA:
-Nel caso dei **percipienti**, se si adotta il criterio di esposizione delle partite aperte al netto della ritenuta d'acconto (nei parametri del [tipo ritenuta d'acconto](/docs/configurations/tables/finance/withholding-tax-types), le differenze che saranno evidenziate devono essere ignorate (e non da considerare come errori) tenedo inoltre presente che saranno riassorbite all'atto del pagamento del compenso e della chiusura della relativa partita.
+:::danger BILJEŠKA:
+U slučaju **primatelja**,  ako se primijeni kriterij izlaganja otvorenih partija umanjenih za porez na dohodak (u parametrima [tipa poreza na dohodak](/docs/configurations/tables/finance/withholding-tax-types)),  razlike koje će biti prikazane trebaju se ignorirati (i ne smatrati greškama), uzimajući u obzir da će biti apsorbirane prilikom plaćanja naknade i zatvaranja odgovarajuće partije.
 :::
 
 
-**Conto**: filtro principale per estrarre solo un sottoconto di cliente o fornitore. Non filtrando saranno riportati i sottoconti di tutti i clienti e fornitori che presentano differenze.
+**Račun**: Glavni filtar za pregled podkonta kupca ili dobavljača. Bez filtriranja, bit će prikazana podkonta svih kupaca i dobavljača s razlikama.
 
-**Da/A Data registrazione**: filtro sulle date di registrazione contabile
+**Od/do Datum zapisivanja**: filtriranje datuma računovodstvenog knjiženja
 
-**Escludi partite chiuse**: attivando il flag verranno ignorate le partite nello stato Chiusa.
+**Isključi zatvorene dospjele vrijednosti**: aktiviranje zastavice zanemarit će dospijeća u stanju ‘Zatvoreno’. 
 
-**Dettagli**: attivando questo flag i risultati saranno scomposti (anziché raggruppati) evidenziando l'eventuale differenza per ogni singolo movimento contabile rispetto alla partita correlata (o al pagamento relativo in caso di movimento contabile di incasso / pagamento);
+**Detalji**: aktiviranjem ove oznake rezultati će biti raščlanjeni ističući moguću razliku za svako pojedinačno računovodstveno kretanje u usporedbi s povezanom stavkom (ili s povezanim plaćanjem u slučaju obračunskog kretanja naplate/plaćanja);
 
-**Visualizzare solo i sottoconti / registrazioni con differenza diversa da zero**: il flag (consigliato) attivo permette di evidenziare solo i sottoconti che presentano delle differenze da correggere nascondendo invece quelli che risultano corretti.
+**Prikaži samo detaljna konta/ zapise s razlikom različitom od nule**: (preporučen) aktivan flag omogućuje da se označe samo podkonta koji imaju razlike koje treba ispraviti. One koji nemaju razlike se ne prikazuju.
 
-**Raggruppa per divisa della società**: il flag attivo determina l'esposizione dei movimenti in divisa secondo la divisa della società. Esempio dei movimenti in USD saranno esposti e convertiti in Euro.
+**Grupiraj po valuti tvrtke**: aktivan flag određuje prikaz valutnih kretanja prema valuti poduzeća. 
