@@ -141,4 +141,4 @@ Reamintim faptul că există puncte de codificare ulterioare ale centrelor de co
 
 În plus față de Codul contului analitic, este necesar să se introducă și *Tipul sumei* și secțiunea *Debit/Credit* (vezi și  [Șabloane contabile](/docs/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates)).
 
-Pentru detalii despre tab-ul cu **Extra Data** consultați documentația referitoare la  [Extra Data](/docs/configurations/utility/extra-data/extradata/new-extradata-simple). 
+Pentru detalii despre tab-ul cu **Extra Data** consultați documentația referitoare la  [Extra Data](/docs/configurations/utility/extra-data/extradata/new-extradata). 

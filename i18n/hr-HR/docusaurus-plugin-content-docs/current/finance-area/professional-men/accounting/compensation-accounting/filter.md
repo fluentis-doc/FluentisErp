@@ -1,19 +1,19 @@
 ---
-title: Filtro
+title: Filter
 sidebar_position: 2
 ---
 
-La parte superiore della maschera è dedicata all'impostazione dei filtri di ricerca. Una volta impostate alla base della maschera le date di registrazione competenza e l'eventuale registrazione con stato provvisorio è sufficiente premere il pulsante di contabilizzazione: se tutto va a buon fine le righe selezionate scompariranno dalla griglia e dalla form di rollback sarà possibile visualizzare in anteprima il risultato.
+Gornji dio obrasca namijenjen je postavljanju filtera pretraživanja. Nakon što su datumi obračunske registracije i bilo koje registracije s privremenim statusom postavljeni u podnožju obrasca, jednostavno pritisnite gumb za knjiženje: ako sve bude u redu, odabrani redovi će nestati s mreže i bit će ih moguće pregledati te iz povratka oblikovati rezultat.
 
 ![](/img/it-it/finance-area/professional-men/accounting/compensation-accounting/filter/image01.png)
 
 
 
-| Funzione | Significato |
+| Funkcija | Značenje |
 | --- | --- |
-| Ricerca contabilizzazioni | Ricerca la lista dei compensi da contabilizzare. |
-| Contabilizzazione compensi | Esegue la contabilizzazione compensi per le righe selezionate. |
-| Modifica compenso | Apre in modifica il compenso selezionato. |
+| Pretraga knjiženja| Potražite popis naknada koje treba obračunati. |
+| Knjiženje kompenzacija | Izvodi kompenzacijsko računovodstvo za odabrane linije. |
+| Promjena naknade | Otvara odabranu kompenzaciju za uređivanje. |
 
 
 

@@ -1,19 +1,19 @@
 ---
-title: Rollback
+title: Povrat
 sidebar_position: 3
 ---
 
-Dalla scheda precedenti è possibile procedere all'annullamento delle contabilizzazioni eseguite. 
+Iz prethodne kartice moguće je nastaviti s otkazivanjem provedenog obračuna
 
-L'annullamento sarà possibile solo se il periodo è ancora modificabile (stampa libro giornale, registro iva non stampato, liquidazione periodica non stampata, chiusura conti non eseguita). Un doppio click nella sezione delle registrazioni consentirà di visualizzare la registrazione contabile relativa.
+Otkaz će biti moguć samo ako se razdoblje još može mijenjati (ispisana dnevnik, neispisan registar PDV-a, nije ispisan periodični obračun, nije izvršeno zatvaranje računa). Dupli klik u odjeljku evidencije omogućit će vam pregled relevantnog računovodstvenog zapisa.  
 
 
 
-| Funzione | Significato |
+| Funkcija | Značenje |
 | --- | --- |
-| Ricerca | Ricerca la lista delle creazioni eseguite. |
-| Rollback contabilizzazione | Con questo pulsante sarà cancellata tutta la contabilizzazione effettuata (selezionata dalla griglia 'Contabilizzazione'), con tutti i compensi associati. |
-| Rollback registrazioni | Il pulsante esegue il ripristino solamente della registrazione contabile selezionata dalla griglia 'Registrazione contabile'. |
+| Traži | Pretražite popis stvorenih kreacija. |
+| Poništi knjiženje | Ovom tipkom brišu se sva provedena knjiženja (odabrana iz mreže 'Računovodstvo'), sa svim pripadajućim naknadama.|
+| Povrati zapise | Tipka vraća samo knjiženi unos odabran iz mreže 'Knjiženi unos'. |
 
 
 

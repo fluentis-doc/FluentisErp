@@ -1,17 +1,17 @@
 ---
-title: Lettere di sollecito
+title: Opomene za zakašnjelo plaćanje
 sidebar_position: 6
 ---
 
-Da questa maschera è possibile procedere alla stampa dei solleciti.
+U ovoj proceduri je moguće ispisivati podsjetnike za plaćanje
 
-Prima di eseguire la stampa è possibile, anzichè stampare tutti i solleciti generati, filtrare per numero del sollecito, per data, per tipo e per cliente.
+Prije ispisa moguće je, umjesto ispisa svih generiranih opomena, filtrirati po broju opomene, datumu, vrsti i kupcu.
 
 
-| Funzione | Significato |
+| Funkcija | Značenje |
 | --- | --- |
-| Anteprima | Esegue l'anteprima delle lettere di sollecito, con possibilità di poter selezionare solo i movimenti con massima priorità o tutti i movimenti. |
-| Stampa | Esegue la stampa delle lettere di sollecito, con possibilità di poter selezionare solo i movimenti con massima priorità o tutti i movimenti. |
+| Pregled | Pregled podsjetnika/opomena za plaćanje, s mogućnošću odabira samo transakcija s najvećim prioritetom ili svih transakcija. |
+| Ispiši | Ispisuje pisma podsjetnika/opomena, uz mogućnost odabira samo transakcija s najvećim prioritetom ili svih transakcija. |
 
 
 

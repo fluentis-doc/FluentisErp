@@ -85,7 +85,7 @@ Le informazioni gestite sono:
 
 
 #### Extra data
-E' possibile inserire degli [Extra Data](/docs/configurations/utility/extra-data/extradata/new-extradata-simple) per ogni *Certificato di analisi*.   
+E' possibile inserire degli [Extra Data](/docs/configurations/utility/extra-data/extradata/new-extradata) per ogni *Certificato di analisi*.   
 
 
 ### Controlli e valori rilevati 
@@ -199,13 +199,13 @@ Le informazioni gestite sono:
 
 ***Altri dati prove effettuate***   
 
-E' possibile visualizzare degli [Extra Data](/docs/configurations/utility/extra-data/extradata/new-extradata-simple) per ogni riga *Valori rilevati* della riga *Articolo/Controlli articolo*.   
+E' possibile visualizzare degli [Extra Data](/docs/configurations/utility/extra-data/extradata/new-extradata) per ogni riga *Valori rilevati* della riga *Articolo/Controlli articolo*.   
 Vengono ereditati dagli *Attributi prove effettuate* associati alle *Prove* dei *Controlli articolo*.   
 
 
 ***Attributi articolo***   
 
-E' possibile inserire degli [Extra Data](/docs/configurations/utility/extra-data/extradata/new-extradata-simple) per ogni riga *Valori rilevati* della riga *Articolo/Controlli articolo*.   
+E' possibile inserire degli [Extra Data](/docs/configurations/utility/extra-data/extradata/new-extradata) per ogni riga *Valori rilevati* della riga *Articolo/Controlli articolo*.   
 
 
 ***Documenti allegati***   
@@ -226,12 +226,12 @@ Le informazioni gestite sono:
 
 
 #### Altri dati controllo
-E' possibile visualizzare degli [Extra Data](/docs/configurations/utility/extra-data/extradata/new-extradata-simple) per ogni riga *Articolo/Controlli articolo*.   
+E' possibile visualizzare degli [Extra Data](/docs/configurations/utility/extra-data/extradata/new-extradata) per ogni riga *Articolo/Controlli articolo*.   
 Vengono ereditati dagli *Attributi controlli* associati ai *Controlli articolo*.   
 
 
 #### Attributi articolo
-E' possibile inserire degli [Extra Data](/docs/configurations/utility/extra-data/extradata/new-extradata-simple) per ogni riga *Articolo/Controlli articolo*.   
+E' possibile inserire degli [Extra Data](/docs/configurations/utility/extra-data/extradata/new-extradata) per ogni riga *Articolo/Controlli articolo*.   
 
 
 #### Documenti allegati

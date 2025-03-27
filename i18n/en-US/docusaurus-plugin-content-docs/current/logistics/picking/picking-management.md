@@ -62,7 +62,7 @@ The Serial Numbers section, active only if the selected item in the grid is mana
 ### Extra Item Data
 
 Allows for the insertion and viewing of *Extra data* related to individual lines.           
-For a detailed description of the extra data, refer to the article [Extra Data](/docs/configurations/utility/extra-data/extradata/new-extradata-simple).
+For a detailed description of the extra data, refer to the article [Extra Data](/docs/configurations/utility/extra-data/extradata/new-extradata).
 
 ### Linked Production Orders 
 

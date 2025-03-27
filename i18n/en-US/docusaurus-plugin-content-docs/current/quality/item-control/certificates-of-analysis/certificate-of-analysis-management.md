@@ -85,7 +85,7 @@ The managed information includes:
 
 
 #### Extra Data
-It is possible to enter [Extra Data](/docs/configurations/utility/extra-data/extradata/new-extradata-simple) for each *Certificate of Analysis*.   
+It is possible to enter [Extra Data](/docs/configurations/utility/extra-data/extradata/new-extradata) for each *Certificate of Analysis*.   
 
 
 ### Controls and Detected Values 
@@ -199,13 +199,13 @@ The managed information includes:
 
 ***Other Test Data***   
 
-It is possible to view [Extra Data](/docs/configurations/utility/extra-data/extradata/new-extradata-simple) for each row of *Detected Values* of the *Item/Item Controls* row.   
+It is possible to view [Extra Data](/docs/configurations/utility/extra-data/extradata/new-extradata) for each row of *Detected Values* of the *Item/Item Controls* row.   
 These are inherited from the *Attributes of Conducted Tests* associated with the *Tests* of the *Item Controls*.   
 
 
 ***Item Attributes***   
 
-It is possible to enter [Extra Data](/docs/configurations/utility/extra-data/extradata/new-extradata-simple) for each row of *Detected Values* of the *Item/Item Controls* row.   
+It is possible to enter [Extra Data](/docs/configurations/utility/extra-data/extradata/new-extradata) for each row of *Detected Values* of the *Item/Item Controls* row.   
 
 
 ***Attached Documents***   
@@ -226,12 +226,12 @@ The managed information includes:
 
 
 #### Other Control Data
-It is possible to view [Extra Data](/docs/configurations/utility/extra-data/extradata/new-extradata-simple) for each row of *Item/Item Controls*.   
+It is possible to view [Extra Data](/docs/configurations/utility/extra-data/extradata/new-extradata) for each row of *Item/Item Controls*.   
 These are inherited from the *Attributes of Controls* associated with the *Item Controls*.   
 
 
 #### Item Attributes
-It is possible to enter [Extra Data](/docs/configurations/utility/extra-data/extradata/new-extradata-simple) for each row of *Item/Item Controls*.   
+It is possible to enter [Extra Data](/docs/configurations/utility/extra-data/extradata/new-extradata) for each row of *Item/Item Controls*.   
 
 
 #### Attached Documents

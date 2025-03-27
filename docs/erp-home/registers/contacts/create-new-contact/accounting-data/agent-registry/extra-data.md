@@ -3,6 +3,6 @@ title: Extra data
 sidebar_position: 7
 ---
 
-In questa tab possono essere associati all'anagrafica in uso alcuni [Extra data](/docs/configurations/utility/extra-data/extradata/new-extradata-simple).
+In questa tab possono essere associati all'anagrafica in uso alcuni [Extra data](/docs/configurations/utility/extra-data/extradata/new-extradata).
 
 Conviene fare riferimento al commento di dettaglio per la gestione e le casistiche di impiego di queste funzionalità.

@@ -164,9 +164,9 @@ For example, an ExtraData defined on the **FSItem** object (Item) can be propaga
 
 To manage the propagation from a main object to a derived one, it is necessary to have the ExtraData active on both objects in the **Activations** tab and then manage the propagation through the appropriate **propagation** tab.
 
-### Inserimento dell'ExtraData nella form di dettaglio
+### Inserting the ExtraData into the detail form
 
-Dopo aver aperto la form di dettaglio dell'**ordine di vendita** interessato, per includere l'ExtraData nella form di dettaglio possiamo utilizzare il **form navigator** e **l'object navigator**.  
-1. Dall'**Object Navigator**, espandiamo il nodo della collezione degli **articoli**, e quindi espandiamo il nodo ExtraData.  
-2. Trasciniamo l'ExtraData direttamente sulla griglia degli articoli associati all'ordine di vendita.   
-L'ExtraData avrà un widget di tipo combobox (dropdown) e mostrerà il valore **codice** salvato sulla corrispondente tabella lato MSSQL.  
+After opening the detail form of the **sales order** in question, to include the ExtraData in the detail form, we can use the **form navigator** and **the object navigator**.  
+1. From the **Object Navigator**, expand the node of the **items collection**, and then expand the ExtraData node.  
+2. Drag the ExtraData directly onto the grid of the items associated with the sales order.   
+The ExtraData will have a combobox (dropdown) widget and will display the **code** value saved in the corresponding table on the MSSQL side.

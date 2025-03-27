@@ -39,4 +39,4 @@ Permite inserarea datelor specifice furnizorului implicit și a altor furnizori 
 **Note**: reprezintă eventualele note relative la furnizor.
 
 ## Extra data
-În acest tab, registrului îi pot fi asociate [Extra data](/docs/configurations/utility/extra-data/extradata/new-extradata-simple).
+În acest tab, registrului îi pot fi asociate [Extra data](/docs/configurations/utility/extra-data/extradata/new-extradata).

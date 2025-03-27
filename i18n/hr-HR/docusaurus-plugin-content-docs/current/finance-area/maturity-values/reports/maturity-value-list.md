@@ -1,11 +1,11 @@
 ---
-title: Lista Partite
+title: Pregled dospijeća plaćanja
 sidebar_position: 3
 ---
 
-Da questa form è possibile lanciare la stampa di una lista di partite aperte (o partite in uno degli altri stati possbili) secondo i parametri di filtro impostati.
+Iz ove forme moguće je ispisati popis otvorenih stavaka (ili dospijeća u nekom od drugih mogućih stanja) prema postavljenim parametrima filtera.
 
-Il funzionamento della form è il medesimo previsto per ** [altre stampe del modulo alle quali si rinvia](/docs/finance-area/maturity-values/reports/customer-vendor-due-register).**
+Funkcioniranje obrasca je isto kao i za ** [ostale ispise obrasca iz ovog područja](/docs/finance-area/maturity-values/reports/customer-vendor-due-register).**
 
 ---
 

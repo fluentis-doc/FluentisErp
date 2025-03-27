@@ -103,7 +103,7 @@ This information is modifiable if creating a new *Data Sheet*; otherwise, it is 
 
 
 ### Sheet Attributes
-It is possible to enter [Extra Data](/docs/configurations/utility/extra-data/extradata/new-extradata-simple) for each *Data Sheet*.   
+It is possible to enter [Extra Data](/docs/configurations/utility/extra-data/extradata/new-extradata) for each *Data Sheet*.   
 They are inherited from the *Data Sheet Attributes* associated with the *Data Sheet type*.
 
 
@@ -166,7 +166,7 @@ The list consists of the following information:
 
 
 ### Item Attributes
-Alternatively to the list of *Associated Items*, it is possible to enter characteristics (in [Extra Data](/docs/configurations/utility/extra-data/extradata/new-extradata-simple)) for which the *Properties* of the *Data Sheet* are valid.
+Alternatively to the list of *Associated Items*, it is possible to enter characteristics (in [Extra Data](/docs/configurations/utility/extra-data/extradata/new-extradata)) for which the *Properties* of the *Data Sheet* are valid.
 
 
 ### Related Sheets

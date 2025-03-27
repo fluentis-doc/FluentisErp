@@ -124,7 +124,7 @@ L'elenco si compone delle seguenti informazioni:
 
 
 ### Extra data
-E' possibile inserire degli [Extra Data](/docs/configurations/utility/extra-data/extradata/new-extradata-simple) per ogni *Taratura strumento*.   
+E' possibile inserire degli [Extra Data](/docs/configurations/utility/extra-data/extradata/new-extradata) per ogni *Taratura strumento*.   
 
 
 ### Immagine

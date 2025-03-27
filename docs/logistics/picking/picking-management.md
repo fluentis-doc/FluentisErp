@@ -62,7 +62,7 @@ La sezione Numeri di serie, attivo solo se l'articolo selezionato nella griglia 
 ### Extra Data Articolo
 
 Permette di inserire e visualizzare gli *Extra data* relativi alla singola riga.           
-Per una descrizione approfondita sugli extra data si rimanda all'articolo [Extra data](/docs/configurations/utility/extra-data/extradata/new-extradata-simple).
+Per una descrizione approfondita sugli extra data si rimanda all'articolo [Extra data](/docs/configurations/utility/extra-data/extradata/new-extradata).
 
 ### Ordini di produzione collegati
 

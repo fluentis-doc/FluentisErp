@@ -113,7 +113,7 @@ L'informazione è modificabile se si stà creando un nuovo *Piano di controllo* 
 
 
 ### Attributi piano di controllo
-E' possibile inserire degli [Extra Data](/docs/configurations/utility/extra-data/extradata/new-extradata-simple) per ogni *Piano di controllo*.   
+E' possibile inserire degli [Extra Data](/docs/configurations/utility/extra-data/extradata/new-extradata) per ogni *Piano di controllo*.   
 Vengono ereditati dagli *Extra data* associati al *Tipo piano di controllo*.   
 
 
@@ -205,7 +205,7 @@ L'elenco si compone delle seguenti informazioni:
 
 
 ### Attributi articolo
-In alternativa all'elenco degli *Articoli associati* è possibile inserire caratteristiche (in formato [Extra Data](/docs/configurations/utility/extra-data/extradata/new-extradata-simple)) per cui le *Prove pianificate* del *Piano di controllo* sono valide.   
+In alternativa all'elenco degli *Articoli associati* è possibile inserire caratteristiche (in formato [Extra Data](/docs/configurations/utility/extra-data/extradata/new-extradata)) per cui le *Prove pianificate* del *Piano di controllo* sono valide.   
 
 
 ### Schede correlate

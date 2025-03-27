@@ -192,7 +192,7 @@ Questo tab permette di specificare più magazzini e causali di scarto con le rel
 
 Permmette di gestire e visualizzare gli Extra Data relativi alla segnalazione.
 
-Per una descrizione approfondita sugli extra data si rimanda all'articolo [Extra data](/docs/configurations/utility/extra-data/extradata/new-extradata-simple).
+Per una descrizione approfondita sugli extra data si rimanda all'articolo [Extra data](/docs/configurations/utility/extra-data/extradata/new-extradata).
 
 ## Lotti e Serial Number
 

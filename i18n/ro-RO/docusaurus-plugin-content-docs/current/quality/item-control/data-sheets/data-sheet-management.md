@@ -103,7 +103,7 @@ L'informazione è modificabile se si stà creando una nuova *Scheda tecnica* alt
 
 
 ### Attributi scheda
-E' possibile inserire degli [Extra Data](/docs/configurations/utility/extra-data/extradata/new-extradata-simple) per ogni *Scheda tecnica*.   
+E' possibile inserire degli [Extra Data](/docs/configurations/utility/extra-data/extradata/new-extradata) per ogni *Scheda tecnica*.   
 Vengono ereditati dagli *Attributi Scheda tecnica* associati al *Tipo scheda tecnica*.   
 
 
@@ -166,7 +166,7 @@ L'elenco si compone delle seguenti informazioni:
 
 
 ### Attributi articolo
-In alternativa all'elenco degli *Articoli associati* è possibile inserire caratteristiche (in formato [Extra Data](/docs/configurations/utility/extra-data/extradata/new-extradata-simple)) per cui le *Proprietà* della *Scheda tecnica* sono valide.   
+In alternativa all'elenco degli *Articoli associati* è possibile inserire caratteristiche (in formato [Extra Data](/docs/configurations/utility/extra-data/extradata/new-extradata)) per cui le *Proprietà* della *Scheda tecnica* sono valide.   
 
 
 ### Schede correlate

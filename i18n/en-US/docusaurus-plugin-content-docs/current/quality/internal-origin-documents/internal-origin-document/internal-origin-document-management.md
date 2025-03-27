@@ -248,7 +248,7 @@ The list includes the following information:
 
 
 ### Extra Data
-It is possible to insert [Extra Data](/docs/configurations/utility/extra-data/extradata/new-extradata-simple) for each *Internal Origin Document*.
+It is possible to insert [Extra Data](/docs/configurations/utility/extra-data/extradata/new-extradata) for each *Internal Origin Document*.
 
 
 ### Previous Editions/Revisions

@@ -27,7 +27,7 @@ Pentru fiecare element din arbore, în tab **Generale** pot fi definiți paramet
 
 Dacă elementul selectat în arbore este *semifabricat*, în tab *Componente* pot fi afișate componentele de prim nivel din care este format.  
 
-În **Extra data - model** și **Extra data - component** pot fi inserate datele suplimentare referitoare la articolul părinte și la component. Pentru informații suplimentare consultați [Extra data](/docs/configurations/utility/extra-data/extradata/new-extradata-simple).   
+În **Extra data - model** și **Extra data - component** pot fi inserate datele suplimentare referitoare la articolul părinte și la component. Pentru informații suplimentare consultați [Extra data](/docs/configurations/utility/extra-data/extradata/new-extradata).   
 
 În partea inferioară a form-ului, în tab **Ciclu**, se pot insera fazele lucrărilor relative la fiecare element din arbore, cu timpii și costurile de montaj și de lucru. Se poate insera manual un cost în **Cost fază manual** care va avea prioritate mai mare în momentul calculării costurilor.
 

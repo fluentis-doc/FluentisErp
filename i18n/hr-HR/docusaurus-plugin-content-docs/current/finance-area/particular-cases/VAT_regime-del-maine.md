@@ -1,71 +1,71 @@
 ---
 sidebar_position: 4
-title: Regime iva del margine
+title: Sustav PDV-a na maržu
 ---
 
-### CONFIGURAZIONI
+### KONFIGURACIJE
 
-E’ necessario codificare (almeno) due **specifici registri iva** sui quali registrare gli acquisti relativi al regime del margine e le vendite dello stesso regime, associandoli, nel campo **tipo di registro**:
+Potrebno je kodirati (barem) dva **specifična PDV registra**  u koje će se unositi kupnje povezane sa sustavom PDV-a na maržu i prodaje istog sustava, povezujući ih u polju **tip registra**:
 
-- Acquisti regime del margine
-- Vendite regime del margine
+- Kupnje sustava PDV-a na maržu
+- Prodaje sustava PDV-a na maržu
 
-In secondo luogo, dovremo creare le [**aliquote iva**](/docs/configurations/tables/finance/vat-rates) che saranno utilizzate su questi registri iva specifici, identificandole con il **flag** ***Iva del margine***:
+Drugi korak bit će kreiranje [**PDV stopa**](/docs/configurations/tables/finance/vat-rates)  koje će se koristiti na ovim specifičnim PDV registrima, identificirajući ih s **flagom** ***PDV na maržu***:
 
 ![](/img/it-it/finance-area/other/VATMargine.png)
 
-Le aliquote da utilizzare in acquisto avranno l’indicazione dell’aliquota iva del margine di riferimento, in modo da sapere a quale aliquota assegnare proporzionalmente il valore del margine stesso.
+Stopa koja će se koristiti pri kupnji imat će označenu stopu PDV-a margine referencije, kako bi se znalo kojoj stopi proporcionalno dodijeliti vrijednost same margine.
 
-Dovremo poi codificare le causali contabili che prevedono la rilevazione su questi registri specifici: la causale delle vendite, in particolare, sarà collegata ad un tipo fattura di vendita specifico, che consentirà di emettere il documento in vendita e inviarlo allo Sdi. 
-Può essere utile, al fine di evitare utilizzi erronei di aliquote non previste per la gestione del margine, abilitare in queste causali la sezione di vincolo alle aliquote iva abilitate (*Controllo Aliquote IVA*).
+Trebali bismo zatim kodificirati računovodstvene razloge koji predviđaju evidentiranje u ovim specifičnim registrima: razlog prodaje, posebice, bit će povezan s određenim tipom fakture prodaje, što će omogućiti izdavanje dokumenta u prodaji i njegovo slanje u Sdi.
+Može biti korisno, kako bi se izbjegla pogrešna korištenja nepredviđenih stopa za upravljanje maržom, omogućiti u ovim razlozima odjeljak za obvezu za aktivirane PDV stope (*Provjera stope PDV-a*).
 
-La causale di vendita andrà a rilevare il debito per iva del margine, con tipo movimento *vendite regime normale* e registro vendite ordinario.
+Razlog prodaje će zabilježiti dug za PDV na margini, s tipom kretanja *prodaje prema normalnom režimu* i redovitim registrovanjem prodaje.
 
 ![](/img/it-it/finance-area/other/VATMargine2.png)
 
-Tale registrazione prevede contabilmente il conto del debito iva e il conto di storno del ricavo vendita per margine, che viene impostato nei parametri di contabilità generale in questa sezione:
+Ova registracija predviđa računovodstveno račun dugovanja PDV-a i račun za poništavanje prihoda od prodaje za marginu, koji se postavlja u parametrima općeg računovodstva u ovoj sekciji:
 
 ![](/img/it-it/finance-area/other/VATMargine3.png)
 
-indicheremo il ricavo di vendita e la causale di default. La data ultima elaborazione e il valore negativo del margine, invece, sono due valori aggiornati automaticamente da Fluentis con la stampa definitiva dell’elaborazione del margine di periodo.
+Navedeni će biti prihod od prodaje i osnovni razlog. Datum posljednje obrade i negativna vrijednost marže, s druge strane, dva su vrijednosti koja Fluentis automatski ažurira prilikom završnog ispisa obrade marže za razdoblje.
 
-### ELABORAZIONE
+### OBRADA
 
-All’interno del menù *Dichiarazioni* del modulo *Amministrazione* selezionare **Elaborazione iva del margine**:
+Unutar izbornika *Izjave* modula *Administracija* odabrati **Obrada PDV-a na maržu**:
 
-Generando un nuovo calcolo avremo:
+Generiranjem novog izračuna imat ćemo:
 
 ![](/img/it-it/finance-area/other/VATMargine4.png)
 
-L’anno dei parametri di contabilità, il registro da utilizzare per rilevare l’eventuale debito sul margine positivo, la causale di rilevazione, il cliente da assegnare alla registrazione del debito e a destra il range di date oggetto di elaborazione.
-Una volta impostati questi dati, avremo la possibilità di eseguire il calcolo attraverso il pulsante della ribbon bar, che andrà a valorizzare i dati dei due sotto tab:
+Godina računovodstvenih parametara, registar koji će se koristiti za evidentiranje eventualnog duga na pozitivnoj marži, razlog evidentiranja, klijent koji će biti dodeljen za evidenciju duga i desno opseg datuma koji je predmet obrade.
+Nakon što postavimo ove podatke, imat ćemo mogućnost izvršiti izračun putem gumba na traci s alatima, koji će popuniti podatke na dvije kartice:
 
-Nel primo avremo i totali delle aliquote movimentate nei registri del margine di acquisto e vendita, dove per l’acquisto avremo l’esposizione delle percentuali relative di ripartizione:
+Na prvoj kartici imat ćemo ukupne iznose PDV stopa evidentirane u registrima kupnje i prodaje marže, gdje ćemo za kupnju imati prikazane odgovarajuće postotke raspodjele:
 
 ![](/img/it-it/finance-area/other/VATMargine5.png)
 
-Nel secondo tab, invece, avremo l’elaborazione del calcolo del margine applicando le percentuali alle aliquote iva collegate alle aliquote d’acquisto:
+Na drugoj kartici, s druge strane, imat ćemo obradu izračuna marže primjenjujući postotke na PDV stope povezane s PDV stopama na kupnju:
 
 ![](/img/it-it/finance-area/other/VATMargine6.png)
 
-Questo secondo tab sarà valorizzato solo se il margine del periodo, considerando eventuali margini negativi pregressi, porterà ad un saldo positivo del margine stesso.
-Avremo poi alcuni altri pulsanti di gestione da utilizzare: la stampa dell’elaborazione eseguita, che se effettuata direttamente richiederà se impostare il flag ‘definitiva’ rendendo il calcolo non più modificabile:
+Ova druga kartica bit će popunjena samo ako marža za razdoblje, uzimajući u obzir eventualne prethodne negativne marže, dovede do pozitivnog salda same marže.
+Zatim ćemo imati nekoliko drugih gumba za upravljanje: ispis izvršene obrade, koji, ako se izvrši izravno, tražit će postavljanje oznake 'definitivno', čime će se izračun učiniti nepovratnim:
 
 ![](/img/it-it/finance-area/other/VATMargine7.png)
 
-Questa operazione andrà ad aggiornare, nei parametri di contabilità, la data ultima elaborazione e l’importo memorizzato nel saldo negativo del margine.
+Ova operacija ažurirat će, u računovodstvenim parametrima, datum posljednje obrade i iznos pohranjen u negativnom saldu marže.
 
-Una volta settato il flag ‘definitivo’ si abiliterà la possibilità di contabilizzare il debito iva:
+Jednom kada se postavi flag 'definitivo', omogućit će se mogućnost računovodstvenog evidentiranja PDV duga.
 
 ![](/img/it-it/finance-area/other/VATMargine8.png)
 
 ![](/img/it-it/finance-area/other/VATMargine9.png)
 
-:::tip Particolarità
-Nella sezione iva avremo solo l’importo dell’iva a debito, **senza un imponibile**.
+:::tip Posebnosti
+U odjeljku PDV imat ćemo samo iznos PDV-a duga, **bez osnovice**.
 :::
 
-Completano la procedura i pulsanti per eseguire il rollback della contabilizzazione e l’annullamento della stampa definitiva:
+Postupak završavaju tipke za izvršenje povrata računovodstvene obrade i poništavanje definitivnog ispisa.
 
 
 ![](/img/it-it/finance-area/other/VATMargine10.png)

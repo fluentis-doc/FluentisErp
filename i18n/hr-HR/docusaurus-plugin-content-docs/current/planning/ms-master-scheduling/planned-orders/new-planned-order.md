@@ -167,6 +167,6 @@ Na ovoj kartici prikazuju se bilješke/dokumenti vezani uz odabranu fazu obrade 
 
 ## Dodatni podaci 
 
-Za detaljan opis dodatnih podataka molimo pogledajte članak [Dodatni podaci](/docs/configurations/utility/extra-data/extradata/new-extradata-simple).
+Za detaljan opis dodatnih podataka molimo pogledajte članak [Dodatni podaci](/docs/configurations/utility/extra-data/extradata/new-extradata).
 
 Za informacije o uobičajenom funkcioniranju formi molimo pogledajte link [Funkcionalnosti, gumbi i zajednička polja.](/docs/guide/common).  
