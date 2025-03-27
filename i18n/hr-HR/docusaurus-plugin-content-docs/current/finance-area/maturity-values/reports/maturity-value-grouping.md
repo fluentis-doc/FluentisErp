@@ -1,29 +1,29 @@
 ---
-title: Gruppi Partite
+title: Grupiraj dospijeća plaćanja
 sidebar_position: 2
 ---
 
-La stampa che viene lanciata dalla presente form deve essere utilizzata, in luogo delle altre stampe del modulo, quali Lista partite, Estratto conto a partite aperte e Scadenzario clienti / fornitori , in presenza di raggruppamenti partite.
+Ispis koji se pokreće iz ovog obrasca treba se koristiti umjesto drugih ispisa modula, kao što su Popis partija, Izvod za otvorene partije i Pregled rokova za klijente / dobavljače, u prisutnosti grupiranja partija.
 
-La gestione delle partite tramite i raggruppamenti rappresenta infatti una metodologia alternativa e particolare rispetto alla classica, e richiede una visualizzazione specifica per ottenere una situazione chiaramente leggibile.
+Upravljanje dospijećima kroz grupiranje predstavlja alternativnu i posebnu metodologiju u odnosu na klasičnu, te zahtijeva specifičnu vizualizaciju kako bi se dobila jasno čitljiva situacija.
 
-Per ulteriori** [dettagli sul raggruppamento partite vedere qui.](/docs/finance-area/ledger-records/records/ledger-record) **
+Za daljnje **[detalje o grupiranju utakmica pogledati ovdje](/docs/finance-area/ledger-records/records/ledger-record)**
 
-La stampa corrisponde alla funzione di ** [visualizzazione a video dei gruppi partite.](/docs/finance-area/maturity-values/maturity-values/maturity-value-grouping) **
-
-
-I campi di filtro della form ricalcano quelli previsti per lanciare le [**altre stampe del modulo alle quali si rinvia**](/docs/finance-area/maturity-values/reports/customer-vendor-due-register).
+Ispis odgovara funkciji  **[prikaza na ekranu grupiranih partija.](/docs/finance-area/maturity-values/maturity-values/maturity-value-grouping)**
 
 
+Polja filtera obrasca slijede ona predviđena za pokretanje [**ostalih ispisa obrasca za otvorene stavke**](/docs/finance-area/maturity-values/reports/customer-vendor-due-register).
 
-**ELEMENTI SPECIFICI:**
 
 
-**Tipo Gruppo**: Aperto / Chiuso = Benchè le singole partite partite del gruppo possano essere aperte o chiuse da pagamenti di segno opposto, l'intero gruppo si considera chiuso quando tutte le partite sono chiuse ed il totale dare ed avere del gruppo pareggiano. Pertanto è possibile selezionare questa condizione nel filtro.
+**SPECIFIČNI ELEMENTI:**
+
+
+**Tip grupe**: Otvoreno / Zatvoren = Iako se pojedinačne stavke u grupi mogu otvoriti ili zatvoriti uplatama suprotnih predznaka, cijela se grupa smatra zatvorenom kada su sve stavke zatvorene i kada je ukupno dugovanje i potraživanje grupe jednako. Stoga, može se odabrati ovaj uvjet u filtru..
 
 ![](/img/it-it/finance-area/maturity-values/reports/maturity-value-grouping/image01.png)
 
-**Elementi dal non visualizzare**: è possibile escludere dalla stampa i dati riferiti alle tipologie selezionate (che si riferiscono ai tipi conto collegati alle anagrafiche).
+**Ne prikazuj**: moguće je isključiti iz ispisa podatke koji se odnose na odabrane vrste računa vezane uz matične podatke.
 
 ![](/img/it-it/finance-area/maturity-values/reports/maturity-value-grouping/image02.png)
 

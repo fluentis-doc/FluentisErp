@@ -1,45 +1,46 @@
 ---
-title: Introduzione
+title: Uvod
 sidebar_position: 1
 ---
 
 
-Il modulo delle partite aperte in Fluentis ERP gestisce le posizioni debitorie e creditorie, facilitando il monitoraggio dei pagamenti e degli incassi. Accessibile tramite Amministrazione > Partite > Partite, permette di creare, modificare e raggruppare partite manualmente o automaticamente dalle scritture contabili.
-Funzionalità Principali
+Modul otvorenih stavki u Fluentis ERP upravlja dugovanjima i potraživanjima, olakšavajući praćenje uplata i prihoda. Dostupan putem Administracija > Stavke > Stavke, omogućuje izradu, izmjenu i grupiranje stavki ručno ili automatski iz računovodstvenih isprava.
 
-    Gestione Partite: Creazione, modifica e blocco/sblocco delle partite con tracciamento automatico di data e utente.
-    Collegamento con il Cash Flow: Associazione automatica a sottoconti bancari e utilizzo della data prevista per previsioni finanziarie accurate.
-    Accorpamento e Suddivisione: Possibilità di raggruppare o suddividere partite per una gestione semplificata.
-    Collegamento Contabile: Collegamento delle partite create manualmente con le scritture contabili, mantenendo allineamento tra dati.
+Glavne funkcionalnosti 
 
-**Stampe Disponibili**
+    Upravljanje partijama: Kreacija, izmjena i blokiranje/otključavanje partija uz automatsko praćenje datuma i korisnika.
+    Povezivanje s novčanim tokom: Automatska povezanost s bankovnim podračunima i korištenje predviđenog datuma za točne financijske prognoze.  
+    Spajanje i podjela: Mogućnost grupiranja ili razdvajanja partija za pojednostavljeni rad.  
+    Računovodstvena povezanost: Povezivanje ručno kreiranih partija s računovodstvenim knjiženjima, održavajući usklađenost podataka.  
 
-    Estratto Conto Partite Aperte: Visualizza lo stato delle partite aperte per ogni cliente o fornitore.
-    Report di Aging: Suddivide le partite in scadute e a scadere per valutare i flussi.
-    Scadenziario Clienti/Fornitori: Monitora le scadenze in base a diversi parametri (data, stato, tipo documento).
-    Lettere di Sollecito: Automatizza l’invio di solleciti per le partite scadute.
-    Differenza Saldo Contabile e Partite: Verifica eventuali discrepanze tra saldo contabile e partitario.
+**Dostupni izvještaji**
 
-**Procedure Principali**
+    Izvod stanja otvorenih stavki: Prikazuje stanje otvorenih stavki za svakog klijenta ili dobavljača.
+    Izvještaj o starenju (Aging Report): Razdvaja stavke na one koje su prošle rok i one koje dolaze, kako bi se procijenili novčani tokovi. 
+    Kalendar plaćanja klijenata/dobavljača: Praćenje rokova temeljenih na različitim parametrima (datum, status, tip dokumenta).
+    Pisma za opomenu: Automatizira slanje opomena za nepodmirene stavke. 
+    Razlika između računovodstvenog salda i stavki: Provjerava eventualne nesuglasice između računovodstvenog salda i stavki.
 
-    Compensazione Partite: Bilanciamento delle partite tra clienti e fornitori, con chiusura delle posizioni aperte.
-    Calcolo Interessi di Mora: Gestione automatica degli interessi per i ritardi nei pagamenti.
-    Creazione Automatica Solleciti: Generazione massiva di solleciti per le partite scadute.
-    Collegamento Registrazioni Contabili: Associazione delle partite a scritture contabili per un controllo completo.
-    Gestione Pagamenti Collegati: Creazione di nuove partite a partire dai pagamenti già esistenti.
+**Glavne procedure**
 
-
-Collegamenti: il modulo riceve i dati dal modulo amministrativo tramite l'apertura automatica delle partite, in base alle condizioni di pagamento, in fase di registrazione contabile oppure di contabilizzazione automatica delle fatture di acquisto o vendita.
+    Kompenzacija Partija: Izravnavanje partija između kupaca i dobavljača, s zatvaranjem otvorenih pozicija. 
+    Izračun Zakašnjenih Kamata: Automatsko upravljanje kamatama za kašnjenja u plaćanjima.
+    Automatsko Kreiranje Podsjetnika: Masovno generiranje podsjetnika za neplaćene partije.
+    Povezivanje Računovodstvenih Evidencija: Povezivanje partija s računovodstvenim zapisima za potpunu kontrolu.
+    Upravljanje Povezanim Plaćanjima: Kreiranje novih partija na temelju već postojećih plaćanja.
 
 
-**Tabelle necessarie per utilizzare il modulo:**
-- Numerazione Partite
-- Posizione partite
-- Tipi sollecito
-- Tipo compensazione
-- Tipi pagamento
-- Soluzioni di pagamento
+Povezivanja: Modul prima podatke iz administrativnog modula putem automatskog otvaranja partija, na temelju uvjeta plačanja, tijekom računovodstvene registracije ili automatske kontabilizacije računa za kupovinu ili prodaju. 
 
-**Conclusioni**
 
-Il modulo fornisce strumenti completi per la gestione e l’automazione delle partite aperte, con funzionalità avanzate per il monitoraggio delle scadenze e il recupero crediti, migliorando il controllo della liquidità aziendale.
+**Potrebne tablice za korištenje modula:**
+- Numeracija partija
+- Pozicija partija
+- Tipovi opomena
+- Tip kompenzacije
+- Tipovi plačanja
+- Rješenja za plačanje
+
+**Zaključci**
+
+Modul pruža potpune alate za upravljanje i automatizaciju otvorenih partija, s naprednim funkcijama za praćenje roka plačanja i naplatu potraživanja, poboljšavajući kontrolu poslovne likvidnosti.
