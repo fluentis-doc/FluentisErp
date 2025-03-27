@@ -20,7 +20,7 @@ import Link from '@docusaurus/Link';
 - define a [*Picking type*](/docs/configurations/tables/logistics/picking-type/)      
 - define the [*Picking Parameters*](//docs/configurations/parameters/logistics/picking-parameters/)        
 - correctly define the [*Warehouse template*](/docs/configurations/tables/logistics/warehouse-templates) to be used
-- create items in the [*Items register*](/docs/erp-home/registers/items/create-new-items)
+- create items in the [*Items register*](/docs/erp-home/registers/items/create-new-item)
 
 ## Links to other modules 
 It is possible to generate a picking manually, but also from a [Materials Picking List](/docs/production/pp-production-in-progress/picking-materials-list). Additionally, from a picking, it is possible to directly create [Delivery Notes (DDT)](/docs/sales/sales-delivery-notes/insert-delivery-notes/search-sales-dn) and [Sales Invoices](/docs/sales/sales-invoices/general-overview).

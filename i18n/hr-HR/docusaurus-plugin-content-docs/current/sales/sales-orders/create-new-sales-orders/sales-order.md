@@ -160,7 +160,7 @@ Isti dokument može sadržavati artikle s cijenama preuzetim iz različitih cjen
 
 Dvostrukim klikom u polje **Cjenici** (kartica *Popusti/Cjenici*), korisnik ima mogućnost odabrati drugu ponudu osim zadane, iz koje će biti preuzeta cijena unesenog artikla.
 
-U odsutnosti cjenika, predloženi podatak je **prodajna cijena** preuzeta iz *Šifarnik artikala > kartica [Troškovi](/docs/erp-home/registers/items/create-new-items)* ili će se povući prema postavkama parametara dokumenta. Ako ni to nije dostupno, bit će navedena cijena 0.
+U odsutnosti cjenika, predloženi podatak je **prodajna cijena** preuzeta iz *Šifarnik artikala > kartica [Troškovi](/docs/erp-home/registers/items/create-new-item)* ili će se povući prema postavkama parametara dokumenta. Ako ni to nije dostupno, bit će navedena cijena 0.
 
 **PDV**: prednost ima podatak unesen u polje PDV *Šifarnik kontakta*. Ako ovaj podatak nije prisutan, predložena je vrijednost iz *Šifarnika artikala*, ali korisnik ima mogućnost unosa drugog podatka. To je obavezno polje.
 
@@ -190,7 +190,7 @@ U odsutnosti cjenika, predloženi podatak je **prodajna cijena** preuzeta iz *Š
 > **Proširi prvi nivo popisa**: : omogućuje dodavanje materijala (sirovina i poluproizvoda) iz osnovne razgradnje odabranog artikla u narudžbu kupca; stoga će biti prikazani materijali prvog nivoa sastava gotovog proizvoda. Ova opcija se, na primjer, često koristi za proizvode u Kitu (tj. sastavljene od više dijelova).    
 > **Ažurirajte cjenike**: omogućuje ažuriranje cijene artikla u postojećem cjeniku (spremite dokument kako biste omogućili ove gumbe), ili stvaranje novog cjenika s odabranim artiklom i odgovarajućom cijenom.           
 > **Podijeli količinu u više datuma dostave**: omogućuje podjelu količine stavke artikla u više redaka prema datumima isporuke. Odabirom retka i klikom na gumb otvorit će se obrazac **Različite dostave** unutar kojeg će biti navedeni *Datum pripravnosti robe*, *Datum isporuke* i *Količina* retka. U sljedećem retku trebat će navesti *Datum spremnosti robe* (koji bi trebao biti isti), *Datum isporuke* koji će biti različit i *Količinu* koja će biti poslana toga dana, a zatim će trebati promijeniti datum u prvom retku ažurirajući ga na preostalu količinu tako da zbroj količina dvaju redaka rezultira početnom količinom retka prije raspada. Potvrditi radnju gumbom *U redu*.      
-> **Pakiranje**: omogućuje stvaranje UDC-a iz odabranog retka. Redak mora biti kodiran artikli spremljen u dokument. Korisnik mora imati prava unutar [Postavki unosa/izlaza](/docs/configurations/parameters/logistics/load-unload-parameters/load-unload-parameters-intro) za utovar paleta. Osim toga, artikl mora biti upravljano kao UDC i prema postavkama Tipa UDC-a unesenim u evidenciju artikala, kartica  [Pakiranje](/docs/erp-home/registers/items/create-new-items/item-registry/packaging), stvorit će se UDC poštujući kriterije.
+> **Pakiranje**: omogućuje stvaranje UDC-a iz odabranog retka. Redak mora biti kodiran artikli spremljen u dokument. Korisnik mora imati prava unutar [Postavki unosa/izlaza](/docs/configurations/parameters/logistics/load-unload-parameters/load-unload-parameters-intro) za utovar paleta. Osim toga, artikl mora biti upravljano kao UDC i prema postavkama Tipa UDC-a unesenim u evidenciju artikala, kartica  [Pakiranje](/docs/erp-home/registers/items/create-new-item/item-registry/packaging), stvorit će se UDC poštujući kriterije.
 
       
 ### 3.1 Popusti/Cjenici
@@ -236,7 +236,7 @@ Na primjer, na svakom se retku s artiklima može unijeti ukupna količina; zatim
 
 ### 3.4 Lotti e Serial number
 
-U oba prikaza mogu se unijeti lotovi i serijski brojevi koji se moraju isprazniti iz skladišta, a koji su povezani s artiklom u *Šifarnik Artikla > kartici [Lotovi i serijski brojevi](/docs/erp-home/registers/items/create-new-items/item-registry/lots-and-serial-number)* ili ih se može unijeti ručno. 
+U oba prikaza mogu se unijeti lotovi i serijski brojevi koji se moraju isprazniti iz skladišta, a koji su povezani s artiklom u *Šifarnik Artikla > kartici [Lotovi i serijski brojevi](/docs/erp-home/registers/items/create-new-item)* ili ih se može unijeti ručno. 
 
 Ova operacija uvjetovana je prisustvom serija i serijskih brojeva u skladištu. 
 

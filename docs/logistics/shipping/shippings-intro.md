@@ -25,7 +25,7 @@ import Link from '@docusaurus/Link';
 ## Per iniziare ad utilizzare   
 
 le **Spedizioni**:
-- creare degli articoli nell'[*Anagrafica articoli*](/docs/erp-home/registers/items/create-new-items) 
+- creare degli articoli nell'[*Anagrafica articoli*](/docs/erp-home/registers/items/create-new-item) 
 - definire un [*Tipi di spedizione*](/docs/configurations/tables/logistics/shipping-type)        
 - definire un [*Stati di spedizione*](/docs/configurations/tables/logistics/shipping-states)     
 - definire gli [*Automezzi*](/docs/logistics/motorvehicles/motorvehicle)   
@@ -39,5 +39,5 @@ le **Spedizioni**:
 - definire i [*Tipi automezzi*](/docs/configurations/tables/logistics/motorvehicle-Type)  
 
 ## Collegamenti con altri moduli
-Questi sono strettamente collegati all'[*Anagrafica articoli*](/docs/erp-home/registers/items/create-new-items) e agli [*Ordini clienti*](/docs/sales/sales-orders/settings) dato che è possibile aggiungere gli articoli direttamente da un ordine.           
+Questi sono strettamente collegati all'[*Anagrafica articoli*](/docs/erp-home/registers/items/create-new-item) e agli [*Ordini clienti*](/docs/sales/sales-orders/settings) dato che è possibile aggiungere gli articoli direttamente da un ordine.           
 Inoltre da una spedizione è possibile creare direttamente [*DDT*](/docs/sales/sales-delivery-notes/insert-delivery-notes/search-sales-dn), [*Fatture*](/docs/sales/sales-invoices/general-overview) di vendita ed anche [Picking](/docs/logistics/picking/picking-intro). 

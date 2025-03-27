@@ -53,7 +53,7 @@ If you start directly with entering the item, its class, code, and line type (*C
 ### 2.1 Lots
 
 In the two grids, lots and serial numbers that need to be loaded into the warehouse can be entered. 
-If the item does not require management of [Lots and Serial Numbers](/docs/erp-home/registers/items/create-new-items/item-registry/lots-and-serial-number), this tab will be disabled.   
+If the item does not require management of [Lots and Serial Numbers](/docs/erp-home/registers/items/create-new-item), this tab will be disabled.   
 
 #### Specific Button 
 
@@ -65,13 +65,13 @@ This tab displays/contains additional information related to the item.
 
 - **ITEM**: displays the selected item in the upper grid.   
 
-- **Variant**: in this field, it is possible to select a variant of the item among those previously defined in the [Variants tab](/docs/erp-home/registers/items/create-new-items/item-registry/variants) of the item registry. If different prices and/or discounts have been entered for each variant in the price list, they will be updated when a different variant of the item is selected.   
+- **Variant**: in this field, it is possible to select a variant of the item among those previously defined in the [Variants tab](/docs/erp-home/registers/items/create-new-item) of the item registry. If different prices and/or discounts have been entered for each variant in the price list, they will be updated when a different variant of the item is selected.   
 
 - **Warehouse and Reason**: allows entering the warehouse and the corresponding reason to be used for loading the related items into the warehouse. If the article line has been taken from a purchase order, the warehouse and reason entered in the order will be proposed; otherwise, they can be entered manually for each article line. If the fields are not filled in, at the time of loading the goods receipt, those entered in the supplier order parameters will be used, tab [Loading](/docs/configurations/parameters/purchase/purchase-orders-parameters#carico). 
 
 - **Project**: represents the project to associate with the document. If a project has been entered in the header of the document, it will be reported on all article lines; alternatively, it can be selected via the dedicated project help.
 
-- **Unit of Measure/Alternative Quantity**: if an alternative unit of measure has been defined in the [item registry](/docs/erp-home/registers/items/create-new-items/item-registry/alternative-um) with the *Default* flag and the flag *Automatic proposal of alternative U.M.* has been activated in Supplier Order Parameters, these values will be automatically proposed when entering the item.
+- **Unit of Measure/Alternative Quantity**: if an alternative unit of measure has been defined in the [item registry](/docs/erp-home/registers/items/create-new-item/item-registry/alternative-um) with the *Default* flag and the flag *Automatic proposal of alternative U.M.* has been activated in Supplier Order Parameters, these values will be automatically proposed when entering the item.
 
 ### 2.3 Analytical 
 This can contain information on cost/profit centers on which the values of the items are distributed.   

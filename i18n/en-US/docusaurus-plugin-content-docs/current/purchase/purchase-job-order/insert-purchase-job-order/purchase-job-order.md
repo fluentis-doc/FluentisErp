@@ -133,7 +133,7 @@ import Vat from './../../../import/fields/item-vat.md'
 
 <Vat />
 
-- **Purchase turnover type**: the data entered in the [Generalities tab](/docs/erp-home/registers/items/create-new-items) of the item registry is proposed. If this is not present, no data is proposed, and at the time of invoicing, the value entered in the *Default counter entry cost/revenue* field of the contact registry will be considered.
+- **Purchase turnover type**: the data entered in the [Generalities tab](/docs/erp-home/registers/items/create-new-item) of the item registry is proposed. If this is not present, no data is proposed, and at the time of invoicing, the value entered in the *Default counter entry cost/revenue* field of the contact registry will be considered.
 
 - **Forced executed**: by activating this flag, the item line will be marked as *Forced fulfilled* and will no longer be available for further fulfillments.   
 
@@ -152,7 +152,7 @@ This tab contains additional information related to the item.
 
 - **ITEM**: displays the item selected in the upper grid.
 
-- **Variant**: in this field, you can select a variant of the item among those previously coded in the [Variants tab](/docs/erp-home/registers/items/create-new-items/item-registry/variants) of the item registry. If different prices and/or discounts have been entered for each variant in the price list, they will be updated when a different variant of the item is selected.   
+- **Variant**: in this field, you can select a variant of the item among those previously coded in the [Variants tab](/docs/erp-home/registers/items/create-new-item) of the item registry. If different prices and/or discounts have been entered for each variant in the price list, they will be updated when a different variant of the item is selected.   
 
 - **Note**: these are notes related to the item line; they can also be entered through coded note help. They will be reported in all documents generated from this.
 

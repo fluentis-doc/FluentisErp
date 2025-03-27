@@ -83,7 +83,7 @@ Con l’introduzione di tale norma, è stata prevista la possibilità, per le im
 > **Sol. inf. 60 gg**: NON GESTITO / DISATTIVATO
 
 Vi sono altre impostazioni riguardanti la **gestione merci deperibili**:  
-> **GG Pag. merce deperibile** all'interno dell'[Anagrafica articolo > tab Generali](/docs/erp-home/registers/items/create-new-items) dove viene definita la scadenza da applicare;  
+> **GG Pag. merce deperibile** all'interno dell'[Anagrafica articolo > tab Generali](/docs/erp-home/registers/items/create-new-item) dove viene definita la scadenza da applicare;  
 > **GG ricev. fattura** in *Anagrafica cliente/fornitore > tab Generale > tab Indirizzi alternativi* utile per ottemperare alla data certa di ricevimento della fattura (affinché si abiliti il campo, il tipo indirizzo collegato all'indirizzo alternativo utilizzato e definito nella tabella [Tipi indirizzi](/docs/configurations/tables/general-settings/address-types) deve avere il flag *Email Fatt.C.* settato)
 > **Giorni trasporto** nella tabella *Zone*, campo che può essere inserita nell'*Anagrafica cliente/fornitore > tab [Consegna*](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/delivery) 
 

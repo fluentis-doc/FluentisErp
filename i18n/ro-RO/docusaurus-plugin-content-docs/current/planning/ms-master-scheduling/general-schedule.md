@@ -100,7 +100,7 @@ Prima di procedere con la pianificazione , è importante settare all'interno di 
 
 **Considera disponibilità provenienti da**: anche questi flag diventano attivabili solamente se attivato il flag **Considera la disponibilità** e permettono di indicare se si vuole che lo schedulatore consideri le disponibilità provenienti dagli acquisti, dalle vendite, dal magazzino, dal conto lavoro e dalla produzione;
 
-**Reintegro scorta minima dell'articolo e reintegro punto di riordino dell'articolo**: il primo flag si attiva solamente se si va a settare il secondo; questi due flag vanno ad indicare che lo schedulatore dovrà prevedere il reintegro del punto di riordino stabilito per quell'articolo e se si vuole anche il reintegro della scorta minima dell'articolo; entrambi questi dati vengono inseriti nel momento della creazione dell'articolo nel tab [Approvvigionamento](/docs/erp-home/registers/items/create-new-items/item-registry/procurement);
+**Reintegro scorta minima dell'articolo e reintegro punto di riordino dell'articolo**: il primo flag si attiva solamente se si va a settare il secondo; questi due flag vanno ad indicare che lo schedulatore dovrà prevedere il reintegro del punto di riordino stabilito per quell'articolo e se si vuole anche il reintegro della scorta minima dell'articolo; entrambi questi dati vengono inseriti nel momento della creazione dell'articolo nel tab [Approvvigionamento](/docs/erp-home/registers/items/create-new-item);
 
 **Considera l'indice di copertura**: se il flag è attivo, lo schedulatore dovrà tenere conto dell'indice di copertura che viene stabilito sempre nel tab *Approvvigionamento* dell'articolo;
 

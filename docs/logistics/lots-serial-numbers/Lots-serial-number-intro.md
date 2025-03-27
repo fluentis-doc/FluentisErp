@@ -33,15 +33,15 @@ import Link from '@docusaurus/Link';
 
 l'**Anagrafica lotti**:
 - definire un [*Tipo codice lotto*](/docs/configurations/tables/logistics/lot-codes-types)      
-- definire i parametri per il singolo articolo nel tab [*Lotti e Serial number*](/docs/erp-home/registers/items/create-new-items/item-registry/lots-and-serial-number) dell'anagrafica articolo        
+- definire i parametri per il singolo articolo nel tab [*Lotti e Serial number*](/docs/erp-home/registers/items/create-new-item) dell'anagrafica articolo        
 - definire correttamente le [*Causali di magazzino*](/docs/configurations/tables/logistics/warehouse-templates) da utilizzare
 - creare un documento o una [*Registrazione di magazzino*](/docs/logistics/warehouse/stock-records/record) di carico o scarico con un articolo gestito a lotti in modo da poter visualizzare il risultato nell'**Anagrafica lotto**
 
 l'**Anagrafica Serial number**:
 - definire un [*Tipo codice serial number*](/docs/configurations/tables/logistics/serial-numbers-code-type)      
-- definire i parametri per il singolo articolo nel tab [*Lotti e Serial number*](/docs/erp-home/registers/items/create-new-items/item-registry/lots-and-serial-number) dell'anagrafica articolo        
+- definire i parametri per il singolo articolo nel tab [*Lotti e Serial number*](/docs/erp-home/registers/items/create-new-item) dell'anagrafica articolo        
 - definire correttamente le [*Causali di magazzino*](/docs/configurations/tables/logistics/warehouse-templates) da utilizzare
 - creare un documento o una [*Registrazione di magazzino*](/docs/logistics/warehouse/stock-records/record) di carico o scarico con un articolo gestito a serial number in modo da poter visualizzare il risultato nell'**Anagrafica Serial number**
 
 ## Collegamenti con altri moduli
-Questi sono strettamente collegati all'[*Anagrafica articoli*](/docs/erp-home/registers/items/create-new-items), alle [*Registrazione di magazzino*](/docs/logistics/warehouse/stock-records/record) ed a tutti i documenti che generano movimenti di carico e scarico.   
+Questi sono strettamente collegati all'[*Anagrafica articoli*](/docs/erp-home/registers/items/create-new-item), alle [*Registrazione di magazzino*](/docs/logistics/warehouse/stock-records/record) ed a tutti i documenti che generano movimenti di carico e scarico.   

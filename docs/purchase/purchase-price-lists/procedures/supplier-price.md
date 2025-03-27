@@ -15,7 +15,7 @@ I dati principali della griglia sono:
 - **Fornitore**: questo dato indica il fornitore di cui è stato importato il catalogo e andrà a popolare il *Fornitore preferenziale* nell’anagrafica articolo, una volta creato.    
 - **Data importazione**: contiene la data nella quale è avvenuta l’importazione in excel.       
 - **Data inizio validità**: contiene la data inizio validità inserita nel foglio excel.          
-- **Codice/Descrizione articolo fornitore**: indica il codice dell'articolo fornitore che sarà riportato anche nell'anagrafica articolo, tab [fornitori preferenziali](/docs/erp-home/registers/items/create-new-items/item-registry/preferential-vendors).    
+- **Codice/Descrizione articolo fornitore**: indica il codice dell'articolo fornitore che sarà riportato anche nell'anagrafica articolo, tab [fornitori preferenziali](/docs/erp-home/registers/items/create-new-item/item-registry/preferential-vendors).    
 - **Unità di misura**: indica l'unità di misura utilizzata nel catalogo del fornitore.   
 - **Qantità**: indica la quantità a cui è riferito il **Prezzo** dell'articolo.  
 - **Categoria sconto**: indica la categoria di sconto alla quale appartiene l’articolo e che deve essere abbinata alla categoria sconto acquisti codificata in Fluentis. La colonna *Categoria sconto* è presente anche nella [Definizione politiche sconti](/docs/purchase/price-control/definition), nella quale è possibile consultare gli sconti applicati dal fornitore.     

@@ -7,7 +7,7 @@ Form-ul se deschide din **Parametri > Producție > Parametri ordine de producți
 
 ### General
 
-**Gestionare automată loturi și numere de serie**: dacă este activ, propune automat loturile și/sau numerele de serie ale materialelor utilizate în producției, direct în tabelele relaționate cu tabelul materialor utilizate de semnalarea de producție. În caz contrar, utilizatorul va trebui să seteze manual atât loturile, cât și numerele de serie ale articolelor utilizate care au acest tip de gestionare; reamintim că gestionarea lotului sau SN este setată în *Registrul articolului* în tab [Loturi și SN](/docs/erp-home/registers/items/create-new-items/item-registry/lots-and-serial-number) selectând tipul de gestionare dorit.
+**Gestionare automată loturi și numere de serie**: dacă este activ, propune automat loturile și/sau numerele de serie ale materialelor utilizate în producției, direct în tabelele relaționate cu tabelul materialor utilizate de semnalarea de producție. În caz contrar, utilizatorul va trebui să seteze manual atât loturile, cât și numerele de serie ale articolelor utilizate care au acest tip de gestionare; reamintim că gestionarea lotului sau SN este setată în *Registrul articolului* în tab [Loturi și SN](/docs/erp-home/registers/items/create-new-item) selectând tipul de gestionare dorit.
 
 **Determinare automată timpi în semnalări**: dacă este activ, calculează automat timpul mașină și timpul operator pe baza orarelor semnalărilor. În caz contrar, utilizatorul va trebui să seteze manual orele menționate pe linia semnalării de producție; 
 

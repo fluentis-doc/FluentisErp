@@ -24,7 +24,7 @@ il **Picking**:
 - definire un [*Tipo picking*](/docs/configurations/tables/logistics/picking-type/)      
 - definire i [*Parametri picking*](//docs/configurations/parameters/logistics/picking-parameters/)        
 - definire correttamente le [*Causali di magazzino*](/docs/configurations/tables/logistics/warehouse-templates) da utilizzare
-- creare degli articoli nell'[*Anagrafica articoli*](/docs/erp-home/registers/items/create-new-items)
+- creare degli articoli nell'[*Anagrafica articoli*](/docs/erp-home/registers/items/create-new-item)
 
 ## Collegamenti con altri moduli
 E' possibile generare un picking manualmente, ma anche da una [Liste prelievo materilali](/docs/production/pp-production-in-progress/picking-materials-list).

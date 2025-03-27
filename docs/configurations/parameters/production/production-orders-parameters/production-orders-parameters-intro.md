@@ -7,7 +7,7 @@ La form si apre tramite il percorso **Parametri > Produzione > Parametri Ordini 
 
 ## 1. Generale
 
-**Gestione automatica dei lotti e dei serial number**: se attivo, propone automaticamente i lotti e/o i numeri di serie dei materiali che vengono utilizzati nel corso della produzione, direttamente all'interno delle apposite griglie poste in relazione alla griglia dei materiali utilizzati della dichiarazione di produzione. Diversamente, l'utente dovrà impostare manualmente sia i lotti, sia i numeri di serie degli articoli utilizzati che abbiano questo tipo di gestione; ricordiamo che la gestione a lotti o SN viene impostata all'interno dell'*Anagrafica articolo* nel tab [Lotti e SN](/docs/erp-home/registers/items/create-new-items/item-registry/lots-and-serial-number) selezionando il tipo di gestione desiderata.
+**Gestione automatica dei lotti e dei serial number**: se attivo, propone automaticamente i lotti e/o i numeri di serie dei materiali che vengono utilizzati nel corso della produzione, direttamente all'interno delle apposite griglie poste in relazione alla griglia dei materiali utilizzati della dichiarazione di produzione. Diversamente, l'utente dovrà impostare manualmente sia i lotti, sia i numeri di serie degli articoli utilizzati che abbiano questo tipo di gestione; ricordiamo che la gestione a lotti o SN viene impostata all'interno dell'*Anagrafica articolo* nel tab [Lotti e SN](/docs/erp-home/registers/items/create-new-item) selezionando il tipo di gestione desiderata.
 
 **Gestione doppia unità di misura**: se attivo, permette all'utente di gestire la doppia unità di misura all'interno delle dichiarazioni di produzione, quindi sia per gli articoli prodotti sia per i materiali utilizzati;
 

@@ -25,7 +25,7 @@ import Link from '@docusaurus/Link';
 ## To get started with   
 
 **Loading Unit Management**:
-- create items in the [*Items register*](/docs/erp-home/registers/items/create-new-items) and define their parameters in the [Packing tab](/docs/erp-home/registers/items/create-new-items/item-registry/packaging)        
+- create items in the [*Items register*](/docs/erp-home/registers/items/create-new-item) and define their parameters in the [Packing tab](/docs/erp-home/registers/items/create-new-item/item-registry/packaging)        
 - define a [*Loading Unit group type*](/docs/configurations/tables/logistics/loading-unit-group-type/)        
 - define a [*Loading Unit Type*](/docs/configurations/tables/logistics/loading-unit-types/)  
 - correctly define the [*Warehouse template*](/docs/configurations/tables/logistics/warehouse-templates) to be used       
@@ -36,4 +36,4 @@ Additionally, for **Loading Unit Picking List / Packing List** and **Loading Uni
 - define a [*Picking type*](/docs/configurations/tables/logistics/picking-type/)      
 
 ## Links to Other Modules
-These are closely connected to the [*Items register*](/docs/erp-home/registers/items/create-new-items), to the [*Warehouse posting*](/docs/logistics/warehouse/stock-records/record), and to all documents that generate loading and unloading movements with loading units.
+These are closely connected to the [*Items register*](/docs/erp-home/registers/items/create-new-item), to the [*Warehouse posting*](/docs/logistics/warehouse/stock-records/record), and to all documents that generate loading and unloading movements with loading units.

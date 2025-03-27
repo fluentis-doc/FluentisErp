@@ -286,7 +286,7 @@ import Price from './../../../import/fields/item-price.md'
 <Price />
 
 :::note
-In the absence of a price list, the proposed data is the **selling price** retrieved from *Item Registry > [Costs](/docs/erp-home/registers/items/create-new-items)* tab or will be recovered based on the parameters document settings. In the absence of this data as well, the price will be reported as 0.
+In the absence of a price list, the proposed data is the **selling price** retrieved from *Item Registry > [Costs](/docs/erp-home/registers/items/create-new-item)* tab or will be recovered based on the parameters document settings. In the absence of this data as well, the price will be reported as 0.
 :::
 
 - **Origin amount**: this field shows the Unit Price multiplied by the item quantity, net of discounts.        

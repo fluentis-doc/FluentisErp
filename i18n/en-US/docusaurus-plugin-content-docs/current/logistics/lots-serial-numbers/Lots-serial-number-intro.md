@@ -33,15 +33,15 @@ import Link from '@docusaurus/Link';
 
 the **Batches register**:
 - define a [*Batch code type*](/docs/configurations/tables/logistics/lot-codes-types)      
-- define the parameters for the individual item in the [*Batches and Serial Number*](/docs/erp-home/registers/items/create-new-items/item-registry/lots-and-serial-number) of the item registry        
+- define the parameters for the individual item in the [*Batches and Serial Number*](/docs/erp-home/registers/items/create-new-item) of the item registry        
 - correctly define the [*Warehouse template*](/docs/configurations/tables/logistics/warehouse-templates) to be used
 - create a document or a [*Warehouse posting*](/docs/logistics/warehouse/stock-records/record) of loading or unloading with an item managed in lots in order to view the result in the **Batch Register**
 
 the **Serial Number Register**:
 - define a [*Serial Number code type*](/docs/configurations/tables/logistics/serial-numbers-code-type)      
-- define the parameters for the individual item in the [*Batches and Serial Number*](/docs/erp-home/registers/items/create-new-items/item-registry/lots-and-serial-number) of the item registry        
+- define the parameters for the individual item in the [*Batches and Serial Number*](/docs/erp-home/registers/items/create-new-item) of the item registry        
 - correctly define the [*Warehouse template*](/docs/configurations/tables/logistics/warehouse-templates) to be used
 - create a document or a [*Warehouse posting*](/docs/logistics/warehouse/stock-records/record) of loading or unloading with an item managed by serial number in order to view the result in the **Serial Number Register**
 
 ## Connections with Other Modules 
-These are closely linked to the [*Items register*](/docs/erp-home/registers/items/create-new-items), the [*Warehouse posting*](/docs/logistics/warehouse/stock-records/record), and all documents that generate loading and unloading movements.
+These are closely linked to the [*Items register*](/docs/erp-home/registers/items/create-new-item), the [*Warehouse posting*](/docs/logistics/warehouse/stock-records/record), and all documents that generate loading and unloading movements.

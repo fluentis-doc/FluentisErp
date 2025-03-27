@@ -7,7 +7,7 @@ The form can be accessed via the path **Parameters > Production > Production Ord
 
 ## 1. General
 
-**Automatic management of the batches and serial numbers**: if active, it automatically proposes the batches and/or serial numbers of the materials used during production, directly within the appropriate grids related to the used materials grid of the production report. Otherwise, the user must manually set both the batches and the serial numbers of the items used that have this type of management; remember that batch or SN management is set within the *Item registry* in the tab [Batches and SN](/docs/erp-home/registers/items/create-new-items/item-registry/lots-and-serial-number) by selecting the desired management type.
+**Automatic management of the batches and serial numbers**: if active, it automatically proposes the batches and/or serial numbers of the materials used during production, directly within the appropriate grids related to the used materials grid of the production report. Otherwise, the user must manually set both the batches and the serial numbers of the items used that have this type of management; remember that batch or SN management is set within the *Item registry* in the tab [Batches and SN](/docs/erp-home/registers/items/create-new-item) by selecting the desired management type.
 
 **Management of double UM**: if active, it allows the user to manage the double unit of measure within the production reports, both for the produced items and for the materials used;
 

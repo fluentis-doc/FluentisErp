@@ -5,7 +5,7 @@ sidebar_position: 24
 
 The table is located at **Tables > Logistics > Item Type**.
 
-In this table, it is possible to manage the encoding of different *Item Types* to be associated with individual items in the [Generality](/docs/erp-home/registers/items/create-new-items) tab.    
+In this table, it is possible to manage the encoding of different *Item Types* to be associated with individual items in the [Generality](/docs/erp-home/registers/items/create-new-item) tab.    
 
 It allows for the insertion of new records or the search for existing ones to view, modify, or delete them.
 

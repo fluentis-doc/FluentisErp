@@ -15,7 +15,7 @@ Ad esempio, nel caso in cui venga letto solo il codice di un'ubicazione, tramite
 > **Unità di misura**: indica l'unità di misura articolo;     
 > **Quantità**: indica la quantità che l'operatore può variare manualmente oppure tramite i pulsanti **+** e **-**;        
 > **Giacenza**: indica la giacenza dell'articolo calcolata sulla base dei movimenti di magazzino;       
-> **Giacenza (FC)**: si attiva solo se il flag *Default WMS* è abilitato nel tab [Unità di misura alternative dell'anagrafica articolo](/docs/erp-home/registers/items/create-new-items/item-registry/alternative-um). Questo valore indica la giacenza espressa nell'unità di misura alternativa, calcolata utilizzando il fattore di conversione;               
+> **Giacenza (FC)**: si attiva solo se il flag *Default WMS* è abilitato nel tab [Unità di misura alternative dell'anagrafica articolo](/docs/erp-home/registers/items/create-new-item/item-registry/alternative-um). Questo valore indica la giacenza espressa nell'unità di misura alternativa, calcolata utilizzando il fattore di conversione;               
 > **Lotto**: indica il lotto dell'articolo;       
 > **Descrizione articolo**: indica la descrizione dell'articolo.    
 
@@ -25,11 +25,11 @@ Mentre, leggendo l'articolo da rettificare, tramite il pulsante **Ricerca** verr
 > **Unità di misura**: indica l'unità di misura articolo;     
 > **Quantità**: indica la quantità che l'operatore può variare manualmente oppure tramite i pulsanti **+** e **-**;        
 > **Giacenza**: indica la giacenza dell'articolo calcolata sulla base dei movimenti di magazzino;       
-> **Giacenza (FC)**: si attiva solo se il flag *Default WMS* è abilitato nel tab [Unità di misura alternative dell'anagrafica articolo](/docs/erp-home/registers/items/create-new-items/item-registry/alternative-um). Questo valore indica la giacenza espressa nell'unità di misura alternativa, calcolata utilizzando il fattore di conversione;                      
+> **Giacenza (FC)**: si attiva solo se il flag *Default WMS* è abilitato nel tab [Unità di misura alternative dell'anagrafica articolo](/docs/erp-home/registers/items/create-new-item/item-registry/alternative-um). Questo valore indica la giacenza espressa nell'unità di misura alternativa, calcolata utilizzando il fattore di conversione;                      
 > **Lotto**: indica il lotto dell'articolo.       
 
 :::note **Giacenza** e **Giacenza (FC)**
-È importante ricordare che, se il flag *Default WMS* è attivo nel tab [Unità di misura alternative dell'anagrafica articolo](/docs/erp-home/registers/items/create-new-items/item-registry/alternative-um), i valori nei campi **Giacenza** e **Giacenza (FC)** saranno espressi nell'unità di misura alternativa corrispondente. Tuttavia, se l'articolo è gestito a lotti, i valori nei campi **Giacenza** e **Giacenza (FC)** saranno espressi nell'unità di misura principale dell'articolo, anche se il flag "Default WMS" è attivo.
+È importante ricordare che, se il flag *Default WMS* è attivo nel tab [Unità di misura alternative dell'anagrafica articolo](/docs/erp-home/registers/items/create-new-item/item-registry/alternative-um), i valori nei campi **Giacenza** e **Giacenza (FC)** saranno espressi nell'unità di misura alternativa corrispondente. Tuttavia, se l'articolo è gestito a lotti, i valori nei campi **Giacenza** e **Giacenza (FC)** saranno espressi nell'unità di misura principale dell'articolo, anche se il flag "Default WMS" è attivo.
 :::
 
 Per poter procedere con la rettifica è necessario che nella griglia dei risultati sia presente un solo record.     

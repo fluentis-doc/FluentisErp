@@ -65,7 +65,7 @@ A practical usage example for ‘Medical Devices’: three types of barcodes are
 
 ![](/img/it-it/finance-area/e-invoice/configuration/tipibarcode.png)
 
-Then in **[Item registry](/docs/erp-home/registers/items/create-new-items/item-registry/barcode)**, the value for each type of code is indicated:
+Then in **[Item registry](/docs/erp-home/registers/items/create-new-item/item-registry/barcode)**, the value for each type of code is indicated:
 
 ![](/img/it-it/finance-area/e-invoice/configuration/tipibarcode2.png)
 

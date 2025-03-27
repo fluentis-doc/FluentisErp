@@ -25,7 +25,7 @@ import Link from '@docusaurus/Link';
 ## Per iniziare ad utilizzare   
 
 la **Gestione UDC**:
-- creare degli articoli nell'[*Anagrafica articoli*](/docs/erp-home/registers/items/create-new-items) e definirne i parametri nel tab [Confezionamento](/docs/erp-home/registers/items/create-new-items/item-registry/packaging)        
+- creare degli articoli nell'[*Anagrafica articoli*](/docs/erp-home/registers/items/create-new-item) e definirne i parametri nel tab [Confezionamento](/docs/erp-home/registers/items/create-new-item/item-registry/packaging)        
 - definire un [*Tipo gruppo UDC*](/docs/configurations/tables/logistics/loading-unit-group-type/)        
 - definire un [*Tipo UDC*](/docs/configurations/tables/logistics/loading-unit-types/)  
 - definire correttamente le [*Causali di magazzino*](/docs/configurations/tables/logistics/warehouse-templates) da utilizzare       
@@ -36,4 +36,4 @@ inoltre, per **Lista di prelievo UDC / Packing list** e **Lista di trasferimento
 - definire un [*Tipo picking*](/docs/configurations/tables/logistics/picking-type/)      
 
 ## Collegamenti con altri moduli
-Questi sono strettamente collegati all'[*Anagrafica articoli*](/docs/erp-home/registers/items/create-new-items), alle [*Registrazione di magazzino*](/docs/logistics/warehouse/stock-records/record) ed a tutti i documenti che generano movimenti di carico e scarico con le unità di carico.   
+Questi sono strettamente collegati all'[*Anagrafica articoli*](/docs/erp-home/registers/items/create-new-item), alle [*Registrazione di magazzino*](/docs/logistics/warehouse/stock-records/record) ed a tutti i documenti che generano movimenti di carico e scarico con le unità di carico.   

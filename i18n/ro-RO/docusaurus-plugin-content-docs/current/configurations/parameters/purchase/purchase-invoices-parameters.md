@@ -29,7 +29,7 @@ Parametrii facturilor de achiziţie permit setarea de bază pentru gestionarea c
 
 **Utilizează articolul furnizor**: dacă este activ, câmpul pentru introducerea codului articolului furnizorului este propus în gridul articolelor documentului. Dacă nu este activ, acest câmp nu va fi vizibil; 
 
-**Verifică articole în epuizare**: dacă este activ, sistemul verifică disponibilitatea articolelor din facturpă avertizează dacă articolul se epuizează, și anume dacă în [registrul articolului](/docs/erp-home/registers/items/create-new-items) este activat flagul *În epuizare*.
+**Verifică articole în epuizare**: dacă este activ, sistemul verifică disponibilitatea articolelor din facturpă avertizează dacă articolul se epuizează, și anume dacă în [registrul articolului](/docs/erp-home/registers/items/create-new-item) este activat flagul *În epuizare*.
 
 **Contabilizare ambalaje**: permite contabilizarea, în contabilitatea generală, și a liniilor cu articole cu natura Ambalaj care, de obicei, sunt gestionare pentru a verifica stocurile ambalajelor care se returnează. 
 

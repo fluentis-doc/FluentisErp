@@ -33,9 +33,9 @@ import Link from '@docusaurus/Link';
 ## Getting Started with 
 
 **Production Job Orders**:
-- create items in the [*Item Registry*](/docs/erp-home/registers/items/create-new-items) 
+- create items in the [*Item Registry*](/docs/erp-home/registers/items/create-new-item) 
 - define [*Document Types*](/docs/configurations/tables/production/documents-types/)  
 - define [*MS Parameters*](/docs/configurations/parameters/production/mps-parameters/)   
 
 ## Links to Other Modules 
-These are closely linked to the [*Item Registry*](/docs/erp-home/registers/items/create-new-items), to [*Sales Orders*](/docs/sales/sales-orders/settings), and to **Sales Forecasts**.
+These are closely linked to the [*Item Registry*](/docs/erp-home/registers/items/create-new-item), to [*Sales Orders*](/docs/sales/sales-orders/settings), and to **Sales Forecasts**.

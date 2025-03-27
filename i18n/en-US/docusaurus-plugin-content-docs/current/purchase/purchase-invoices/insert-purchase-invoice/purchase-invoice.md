@@ -314,9 +314,9 @@ If there is no price list, the proposed data can be retrieved from the *last cos
 
 ### 3.2 Optional Article Data 
 
-- **Supplier Article Code/Description**: in this section, you can add the code and description that the supplier uses to identify the item; this data is proposed automatically if in the item registry, tab [Preferred Suppliers](/docs/erp-home/registers/items/create-new-items/item-registry/preferential-vendors) an item supplier has been associated. 
+- **Supplier Article Code/Description**: in this section, you can add the code and description that the supplier uses to identify the item; this data is proposed automatically if in the item registry, tab [Preferred Suppliers](/docs/erp-home/registers/items/create-new-item/item-registry/preferential-vendors) an item supplier has been associated. 
 
-- **Purchase turnover type**: the data entered in the tab [Generalities](/docs/erp-home/registers/items/create-new-items) of the item registry is proposed. If this is not present, no data is proposed, and at the time of accounting for the invoice, the value entered in the *Default Counterpart Cost/Revenue (Costo/Ricavo di contropartita predefinito)* field of the contact registry will be considered.
+- **Purchase turnover type**: the data entered in the tab [Generalities](/docs/erp-home/registers/items/create-new-item) of the item registry is proposed. If this is not present, no data is proposed, and at the time of accounting for the invoice, the value entered in the *Default Counterpart Cost/Revenue (Costo/Ricavo di contropartita predefinito)* field of the contact registry will be considered.
 
 #### Specific Buttons
 
@@ -347,11 +347,11 @@ When creating/updating a price list through this procedure, only discounts that 
 In this tab, further information related to the article is reported/entered.
 
 - **ITEM**: shows the class, code, and description of the selected item in the grid.   
-- **Variant**: in this field, it is possible to select a variant of the item among those previously coded in the tab [Variants](/docs/erp-home/registers/items/create-new-items/item-registry/variants) of the item registry. If different prices and/or discounts have been entered for each variant in the price list, they will be updated when a different variant of the article is selected.     
+- **Variant**: in this field, it is possible to select a variant of the item among those previously coded in the tab [Variants](/docs/erp-home/registers/items/create-new-item) of the item registry. If different prices and/or discounts have been entered for each variant in the price list, they will be updated when a different variant of the article is selected.     
 - **Notes**: these are the notes related to the item row, which can also be entered through the coded notes help. They will be reported in all documents generated from this.   
 - **Warehouse and Reason**: the warehouse and the reference reason that will automatically appear at the time of loading the related items into the warehouse are proposed. The data are retrieved from the [Purchase Invoice Types](/docs/configurations/tables/purchase/purchase-invoices-type) or from the supplier order or the DDT, if the invoice derives from the fulfillment of an order or from DDT valuation. They can be modified manually for each item row.   
 - **Location**: is proposed automatically if the reason used has been associated with a location in the table of [Warehouse Templates](/docs/configurations/tables/logistics/warehouse-templates) or if the item has been entered in the [Item Location Map](/docs/logistics/warehouse/location/item-location-map/). It can be entered or modified manually.  
-- **Unit of Measure/Alternative Quantity**: if an alternative unit of measure has been coded in the [item registry](/docs/erp-home/registers/items/create-new-items/item-registry/alternative-um) with the *Default* flag, and the *Automatic proposal of alternative U.M.* flag has been activated in the Supplier Order Parameters, these values will be automatically proposed upon entering the article; otherwise, it is possible to select one among the alternative units of measure coded for the article.   
+- **Unit of Measure/Alternative Quantity**: if an alternative unit of measure has been coded in the [item registry](/docs/erp-home/registers/items/create-new-item/item-registry/alternative-um) with the *Default* flag, and the *Automatic proposal of alternative U.M.* flag has been activated in the Supplier Order Parameters, these values will be automatically proposed upon entering the article; otherwise, it is possible to select one among the alternative units of measure coded for the article.   
 - **Alternative Unit Price**: if activated, indicates that the price entered on the item row refers to the alternative unit of measure and not to the main one.    
 This flag, along with the *Alternative Measurement Unit* and *Alternative quantity* fields, is visible only if the flag *Management of double UM* has been activated in the [Purchase Invoice Parameters](/docs/configurations/parameters/purchase/purchase-invoices-parameters).
 - **Project**: represents the project to associate with the document. If a project has been entered in the header of the document, it will be reported on all item rows; alternatively, it can be selected through the appropriate project help.   
@@ -363,10 +363,10 @@ This flag, along with the *Alternative Measurement Unit* and *Alternative quanti
 ### 3.5 Lots and Serial Numbers
 
 In these two grids, lots and serial numbers that must be loaded into the warehouse can be entered.   
-If the article does not require the management of [Lots and Serial Numbers](/docs/erp-home/registers/items/create-new-items/item-registry/lots-and-serial-number), this tab will be disabled.
+If the article does not require the management of [Lots and Serial Numbers](/docs/erp-home/registers/items/create-new-item), this tab will be disabled.
 
 :::tip Remember 
-If in the [Purchase Invoice Parameters](/docs/configurations/parameters/purchase/purchase-invoices-parameters) the flag *Batches and S.N. compulsory* is disabled, it will be possible to save the document without entering lots/serial numbers. Furthermore, if the *Withdrawal Type* of the lot coded in the [item registry](/docs/erp-home/registers/items/create-new-items/item-registry/lots-and-serial-number) is *FIFO* or *Expiry date* at the time of loading the invoice into the warehouse, the lots will be proposed automatically if they have not already been entered previously.
+If in the [Purchase Invoice Parameters](/docs/configurations/parameters/purchase/purchase-invoices-parameters) the flag *Batches and S.N. compulsory* is disabled, it will be possible to save the document without entering lots/serial numbers. Furthermore, if the *Withdrawal Type* of the lot coded in the [item registry](/docs/erp-home/registers/items/create-new-item) is *FIFO* or *Expiry date* at the time of loading the invoice into the warehouse, the lots will be proposed automatically if they have not already been entered previously.
 :::
 
 ### 3.6 Analytical 

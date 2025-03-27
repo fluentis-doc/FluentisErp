@@ -261,7 +261,7 @@ Ova operacija je moguća samo ako sve varijante odabranog proizvoda imaju istu c
 
 ### 3.5 Lotovi i Serijski broj
 
-Ove dvije mreže omogućuju unos partija i serijskih brojeva koji se moraju unijeti u skladište i koji su povezani s proizvodom u kartici *Šifranik artikla > kartica [Lotovi/Serijski broj ](/docs/erp-home/registers/items/create-new-items/item-registry/lots-and-serial-number)* ili ih je moguće unijeti ručno.
+Ove dvije mreže omogućuju unos partija i serijskih brojeva koji se moraju unijeti u skladište i koji su povezani s proizvodom u kartici *Šifranik artikla > kartica [Lotovi/Serijski broj ](/docs/erp-home/registers/items/create-new-item)* ili ih je moguće unijeti ručno.
 
 Ako proizvod ne podržava upravljanje Lotovima/Serijski brojevima, ova će kartica biti onemogućena.
 

@@ -75,7 +75,7 @@ import Link from '@docusaurus/Link';
 ## Per iniziare ad utilizzare   
 
 la **Gestione UDC**:
-- creare degli articoli nell'[*Anagrafica articoli*](/docs/erp-home/registers/items/create-new-items)
+- creare degli articoli nell'[*Anagrafica articoli*](/docs/erp-home/registers/items/create-new-item)
 - definire correttamente le [*Causali di magazzino*](/docs/configurations/tables/logistics/warehouse-templates) da utilizzare       
 - definire i [*Parametri iniziali di magazzino*](/docs/configurations/parameters/logistics/warehouse-initial-parameters/warehouse-parameters)                      
 - creare un dipendente nella tabella [Dipendenti](/docs/project-management/registers/employee/new-employee/)

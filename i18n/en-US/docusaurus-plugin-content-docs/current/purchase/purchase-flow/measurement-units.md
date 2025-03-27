@@ -9,7 +9,7 @@ This functionality allows for the definition and use of different **units of mea
 To enable the management of **alternative units of measure**, the **Management of double UM** flag must be activated in the [Parameters](/docs/configurations/parameters/sales/dn-parameters).
 :::
 
-The **main unit of measure**, which is mandatory, is defined for each item in its registry and cannot be modified after the item has been used in documents or warehouse movements. The **Alternative Measurement Unit**, on the other hand, allows for the management of the product in a unit different from the main one and can be set in the [Alternative Units of Measure](https://docs/erp-home/registers/items/create-new-items/item-registry/alternative-um) tab of the item registry.
+The **main unit of measure**, which is mandatory, is defined for each item in its registry and cannot be modified after the item has been used in documents or warehouse movements. The **Alternative Measurement Unit**, on the other hand, allows for the management of the product in a unit different from the main one and can be set in the [Alternative Units of Measure](https://docs/erp-home/registers/items/create-new-item/item-registry/alternative-um) tab of the item registry.
 
 In documents, the main unit of measure is shown in the **Items** grid, while the alternative unit of measure widget is visible in the **Item data** tab, containing the **Alternative quantity** and **Alternative Unit of Measure Price** fields, but only if the **Management of double UM** flag is active in the module parameters.
 

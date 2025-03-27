@@ -14,5 +14,5 @@ In the **Load Plans Search** screen, it is possible to consult previously entere
 
 :::note Remember
 To perform the *Create picking* from the Loading Plan, it is necessary to have first specified the dimensions of the plan.    
-The dimensions are automatically calculated based on the dimensions, weights, and volume entered for each item in the [Weights/Dimensions](/docs/erp-home/registers/items/create-new-items/item-registry/weights-dimensions) tab of its registry. 
+The dimensions are automatically calculated based on the dimensions, weights, and volume entered for each item in the [Weights/Dimensions](/docs/erp-home/registers/items/create-new-item/item-registry/weights-dimensions) tab of its registry. 
 :::

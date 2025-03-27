@@ -17,7 +17,7 @@ To insert new codes, it is necessary to click on the first empty row in the grid
 
 For each parameter used, you can decide how many characters it should consist of and optionally the filling character to be used. For example, with the "Progressive number" parameter, by setting the filling character to "0" and the Length to 5, batches will be created starting with the first number 00000, then 00001, then 00002, and so on.
 
-The **Serial Number Code Type** must then be linked to the *Item Registry* in the corresponding field located in the [Batches and Serial Numbers](/docs/erp-home/registers/items/create-new-items/item-registry/lots-and-serial-number) tab, so that in the procedures that automatically create the serial number for the item in question, the SN itself is generated according to the rules set here.
+The **Serial Number Code Type** must then be linked to the *Item Registry* in the corresponding field located in the [Batches and Serial Numbers](/docs/erp-home/registers/items/create-new-item) tab, so that in the procedures that automatically create the serial number for the item in question, the SN itself is generated according to the rules set here.
 
 **Details of Serial Number Code Type**
 

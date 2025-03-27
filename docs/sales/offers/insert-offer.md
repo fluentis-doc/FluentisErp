@@ -104,7 +104,7 @@ In questa tab è necessario inserire le caratteristiche degli articoli della gri
 - **Tipo Nodo**: indica se la riga è un **Root Node** (nodo principale), un **Activity Node** (relativo alle attività) o un **Work Package Node** (nodo finale di progetto, l’unico che può contenere dei codici articolo codificati).       
 - **Tipo riga**: indica la tipologia di articolo tra Codificato, Non codificato, Spese o Note (quest’ultimo di default).            
 - **Codice Articolo**: questa sezione riporta Classe, Codice e Descrizione dell’articolo codificato eventualmente selezionato.             
-- **Codice Variante**: riporta un'eventuale [Variante](/docs/erp-home/registers/items/create-new-items/item-registry/variants) dell'articolo.       
+- **Codice Variante**: riporta un'eventuale [Variante](/docs/erp-home/registers/items/create-new-item) dell'articolo.       
 - **Descrizione articolo**: questa sezione riporta la Descrizione dell'articolo, se di tipo Nota o Non codificato.    
 - **Prototipo**: contiene l'eventuale [Prototipo](/docs/erp-home/registers/production/standardization/new-prototype) collegato.          
 - **Quantità/UM/Prezzo**: contiene quantità, unità di misura e prezzo dell’articolo selezionato.        

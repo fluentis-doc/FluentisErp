@@ -41,7 +41,7 @@ Below are specific tabs for:
 
 In this tab, there are a number of read-only information related to the article entered in the header.
 
-**Note article**: includes the notes inserted in the [Notes](/docs/erp-home/registers/items/create-new-items/item-registry/notes) tab of the item registry.       
+**Note article**: includes the notes inserted in the [Notes](/docs/erp-home/registers/items/create-new-item/item-registry/notes) tab of the item registry.       
 
 **Weights**: shows the unit of measure of weight and the related values of gross, net, and specific weight.
 

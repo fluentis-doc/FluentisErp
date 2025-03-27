@@ -25,7 +25,7 @@ To enter new codes, you must click on the first empty row in the grid or press t
 
 You need to enter the **Code** and **Description** of the batch code type, enable or disable the **Fill progressive value** flag to fill in missing values in the numeration, and enter the initial value of the numeric progressive in the **Start progressive value** field and the alphabetical value in the **Start character value** field. Obviously, the first will be the initial value of the **Progressive Number**, while the second will be the initial value used for **Alphabetical Characters**.
 
-The **Batch Code Type** must then be linked to the *Item Registry* in the appropriate and homonymous field located in the [Batches and Serial Number](/docs/erp-home/registers/items/create-new-items/item-registry/lots-and-serial-number) tab, so that in the procedures that automatically create the batch code for the item in question, the batch itself is generated according to the rules set here.
+The **Batch Code Type** must then be linked to the *Item Registry* in the appropriate and homonymous field located in the [Batches and Serial Number](/docs/erp-home/registers/items/create-new-item) tab, so that in the procedures that automatically create the batch code for the item in question, the batch itself is generated according to the rules set here.
 
 Below the main table, there are three tabs:   
 - **Batch Code Type Details**

@@ -1,4 +1,4 @@
-The variants of the selected item are reported, coded in the tab [Variants](/docs/erp-home/registers/items/create-new-items/item-registry/variants) of the item registry or can be manually entered.  
+The variants of the selected item are reported, coded in the tab [Variants](/docs/erp-home/registers/items/create-new-item) of the item registry or can be manually entered.  
 It offers the possibility to manage the variants of the item differently from what is proposed on the item line.  
 For example, in each item line, it is possible to enter the total quantity; subsequently, in the same tab, different quantities for multiple variants of the selected item can be defined, as well as for variant and attribute, i.e., size/color management.  
 This operation is possible only if all the variants of the item have the same price as the price of the item in the standard configuration.

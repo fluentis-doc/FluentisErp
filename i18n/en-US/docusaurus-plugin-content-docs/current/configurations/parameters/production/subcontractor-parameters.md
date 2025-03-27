@@ -70,7 +70,7 @@ For the registration of **Work Order Returns**: if the flag is active, the *Retu
 
 **Recompute transport**: this flag ensures that in the Transport tab of the DDT, the totals of weight, volume, and packages of the document lines are reported; without this flag, the fields will not be filled.
 
-**Check items in exhaustion**: if activated, the system checks the availability of items in the order line and warns if the item is running out, meaning if the **In exhaustion** flag has been activated in the [item registry](/docs/erp-home/registers/items/create-new-items).
+**Check items in exhaustion**: if activated, the system checks the availability of items in the order line and warns if the item is running out, meaning if the **In exhaustion** flag has been activated in the [item registry](/docs/erp-home/registers/items/create-new-item).
 
 **Activate quality control**: work in progress.
 

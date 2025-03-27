@@ -210,16 +210,16 @@ import Vat from './../../../import/fields/item-vat.md'
  
 ### 3.2 Dati facoltativi articoli
  
-- **Codice/Descrizione articolo fornitore**: in questa sezione si può aggiungere il codice e la descrizione che il fornitore utilizza per identificare l'articolo; questo dato viene proposto in automatico se nell'anagrafica dell'articolo (tab [Fornitori preferenziali](/docs/erp-home/registers/items/create-new-items/item-registry/preferential-vendors)) è stato associato un articolo fornitore.
+- **Codice/Descrizione articolo fornitore**: in questa sezione si può aggiungere il codice e la descrizione che il fornitore utilizza per identificare l'articolo; questo dato viene proposto in automatico se nell'anagrafica dell'articolo (tab [Fornitori preferenziali](/docs/erp-home/registers/items/create-new-item/item-registry/preferential-vendors)) è stato associato un articolo fornitore.
  
-- **Tipo fatturato acquisti**: viene proposto il dato inserito nel tab [Generalità](/docs/erp-home/registers/items/create-new-items) dell'anagrafica articoli. Se questo non è presente, non viene proposto nessun dato e al momento della contabilizzazione della fattura, sarà considerato il valore inserito nel campo *Costo/Ricavo di contropartita predefinito* dell'anagrafica contatto.
+- **Tipo fatturato acquisti**: viene proposto il dato inserito nel tab [Generalità](/docs/erp-home/registers/items/create-new-item) dell'anagrafica articoli. Se questo non è presente, non viene proposto nessun dato e al momento della contabilizzazione della fattura, sarà considerato il valore inserito nel campo *Costo/Ricavo di contropartita predefinito* dell'anagrafica contatto.
  
 - **Data richiesta consegna** e **Data consegna**: indicano la data richiesta e prevista per la consegna. Possono essere proposte le date inserite nel tab testata oppure si possono modificare manualmente.
  
 #### Pulsanti specifici
  
 > **Suddividi la quantità in più date consegna**: utilizzato per suddividere la riga ordine in più righe a seconda della consegna richiesta. Questa procedura aprirà una nuova form in cui si dovrà inserire la nuova *data richiesta consegna* e le quantità previste per ciascuna data.  
-> **Confezionamento**: si abilita dopo il salvataggio dell'ordine e permette di creare una UDC a partire dalla riga selezionata. La riga deve essere un articolo codificato e salvato nel documento. L'utente deve avere i diritti all'interno dei [Parametri di carico/scarico](/docs/configurations/parameters/logistics/load-unload-parameters/load-unload-parameters-intro/) per il caricamento del pallet. Inoltre, l'articolo deve essere gestito a UDC, e in base alle impostazioni del Tipo UDC inserite nell'anagrafica articolo, tab [Confezionamento](/docs/erp-home/registers/items/create-new-items/item-registry/packaging) verrà creato l'UDC rispettando i criteri.  
+> **Confezionamento**: si abilita dopo il salvataggio dell'ordine e permette di creare una UDC a partire dalla riga selezionata. La riga deve essere un articolo codificato e salvato nel documento. L'utente deve avere i diritti all'interno dei [Parametri di carico/scarico](/docs/configurations/parameters/logistics/load-unload-parameters/load-unload-parameters-intro/) per il caricamento del pallet. Inoltre, l'articolo deve essere gestito a UDC, e in base alle impostazioni del Tipo UDC inserite nell'anagrafica articolo, tab [Confezionamento](/docs/erp-home/registers/items/create-new-item/item-registry/packaging) verrà creato l'UDC rispettando i criteri.  
 > **Aggiornamento listini**: il pulsante *Aggiorna listino corrente* permette di aggiornare i prezzi nel listino corrente per ciascuna riga articolo selezionata;    
 il pulsante *Crea nuovo listino con nuova validità* invece, aprirà un pop-up in cui inserire le date di validità del nuovo listino, il quale conterrà solo le righe selezionate e sarà intestato al fornitore inserito nell'ordine.
  
@@ -245,7 +245,7 @@ Quando si crea/aggiorna un listino mediante questa procedura, nel listino vengon
  
 All'interno di questo tab vengono riportate/inserite ulteriori informazioni relative all'articolo.
  
-- **Variante**: in questo campo è possibile selezionare una variante dell'articolo tra quelle precedentemente codificate nel tab [Varianti](/docs/erp-home/registers/items/create-new-items/item-registry/variants) dell'anagrafica articolo. Se nel listino sono stati inseriti prezzi e/o sconti diversi per ciascuna variante, essi saranno aggiornati quando si seleziona una variante diversa dell'articolo.  
+- **Variante**: in questo campo è possibile selezionare una variante dell'articolo tra quelle precedentemente codificate nel tab [Varianti](/docs/erp-home/registers/items/create-new-item) dell'anagrafica articolo. Se nel listino sono stati inseriti prezzi e/o sconti diversi per ciascuna variante, essi saranno aggiornati quando si seleziona una variante diversa dell'articolo.  
  
 - **Progetto**: rappresenta il progetto da associare al documento. Se nella testata del documento è stato inserito un progetto, esso sarà riportato su tutte le righe articolo; in alternativa, può essere selezionato tramite l'apposito help progetti.
  
@@ -263,7 +263,7 @@ All'interno di questo tab vengono riportate/inserite ulteriori informazioni rela
  
 - **Prezzo unità di misura alternativa**: se attivo, indica che il prezzo inserito sulla riga articolo è riferito all'unità di misura alternativa e non a quella principale. Questo flag, assieme ai campi *Unità di misura alternativa* e *Quantità alternativa*, è visibile solo se nei [Parametri ordini fornitori](/docs/configurations/parameters/purchase/purchase-orders-parameters/) è stato attivato il flag *Gestione doppia unità di misura*.
  
-- **Unità di misura/Quantità alternativa**: se nell'[anagrafica dell'articolo](/docs/erp-home/registers/items/create-new-items/item-registry/alternative-um) è stata codificata un'unità di misura alternativa con il flag *Predefinito* e nei Parametri ordini fornitore è stato attivato il flag *Proposta automatica U.M. alternativa*, questi valori saranno proposti in automatico al momento dell'inserimento dell'articolo.
+- **Unità di misura/Quantità alternativa**: se nell'[anagrafica dell'articolo](/docs/erp-home/registers/items/create-new-item/item-registry/alternative-um) è stata codificata un'unità di misura alternativa con il flag *Predefinito* e nei Parametri ordini fornitore è stato attivato il flag *Proposta automatica U.M. alternativa*, questi valori saranno proposti in automatico al momento dell'inserimento dell'articolo.
  
 ### 3.5 Analitica
  

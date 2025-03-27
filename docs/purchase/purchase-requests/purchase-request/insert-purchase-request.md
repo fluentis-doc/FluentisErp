@@ -86,18 +86,18 @@ Sono campi informativi che vengono ripresi di default dall'articolo/fornitore. �
 
 - **Listini**: viene proposto il listino da cui è stato ripreso il prezzo dell'articolo.    
 
-- **Fornitore**: viene riportato il *fornitore preferenziale* di default dell'[anagrafica articolo](/docs/erp-home/registers/items/create-new-items/item-registry/preferential-vendors).    
+- **Fornitore**: viene riportato il *fornitore preferenziale* di default dell'[anagrafica articolo](/docs/erp-home/registers/items/create-new-item/item-registry/preferential-vendors).    
 - **IVA**: riporta l'aliquota IVA associata all'articolo.   
 - **Marca**: rappresenta la marca dell'articolo, ripresa dalla sua anagrafica oppure dal listino dell'articolo.
 - **Divisa**: di default viene proposta la [divisa](/docs/configurations/tables/general-settings/currencies) presente nell'[anagrafica](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/finance) del *Fornitore preferenziale*. 
 - **Cambio**: riporta la data e il tasso di cambio da utilizzare per la conversione valuta.   
 
-- **Variante**: in questo campo è possibile selezionare una variante dell'articolo tra quelle precedentemente codificate nel tab [Varianti](/docs/erp-home/registers/items/create-new-items/item-registry/variants) dell'anagrafica articolo. Se nel listino sono stati inseriti prezzi e/o sconti diversi per ciascuna variante essi saranno aggiornati quando si sleziona una variante diversa dell'articolo.   
+- **Variante**: in questo campo è possibile selezionare una variante dell'articolo tra quelle precedentemente codificate nel tab [Varianti](/docs/erp-home/registers/items/create-new-item) dell'anagrafica articolo. Se nel listino sono stati inseriti prezzi e/o sconti diversi per ciascuna variante essi saranno aggiornati quando si sleziona una variante diversa dell'articolo.   
 - **Commesse di produzione**: se la richiesta di acquisto è stata generata dalla [pianificazione](/docs/planning/ms-master-scheduling/general-schedule/) di una commessa di produzione (con rilascio ordini automatico oppure mediante la [procedura](/docs/planning/ms-master-scheduling/planned-orders/procedures/release-planned-orders#richieste-dacquisto) di rilascio di un ordine pianificato di acquisto) in questo campo sarà riportato il riferimeto alla commessa. Per maggiori informazioni vedere anche la [sezione introduttiva](/docs/purchase/purchase-requests/general-overview).   
 - **Operatore**: in quersto campo è possibile inserire l'operatore che ha inserito la richiesta di acquisto.   
 
 - **Progetto**: in questo campo è possibile associare un progetto a ciascun articolo. Se la RDA è stata generata a partire dalla pianificazione di una commessa di produzione contenente un progetto, esso sarà automaticamente riportato sulle singole righe articolo.   
-- **Tipo fatturato acquisti**: viene proposto il dato inserito nel tab [Generalità](/docs/erp-home/registers/items/create-new-items) dell'anagrafica articoli.    
+- **Tipo fatturato acquisti**: viene proposto il dato inserito nel tab [Generalità](/docs/erp-home/registers/items/create-new-item) dell'anagrafica articoli.    
 - **Priorità richiesta**: viene riportata la *priorità approvvigionamento* presente all'interno della [commessa di produzione](/docs/planning/mps-master-production-scheduling/production-job-orders/new-monoproduct-job-order).   
 - **Note**: in questo campo è possibile inserire note relative alla riga articolo; saranno riportate in tutti i documenti generati da questo.   
 - **Data evasione**: al momento della [creazione dell'ordine fornitore](/docs/purchase/purchase-orders/procedures/create-purchase-orders-from-purchase-requests) dalla richiesta di acquisto, le righe inserite nell'ordine vengono evase e vuiene riportata in quetso campo la data dell'evasione.   
@@ -130,8 +130,8 @@ In questa tab vengono riportati i *Fornitori preferenziali* presenti nell'anagra
 
 Gli altri campi presenti nella griglia sono: 
 - **Codice/Descrizione/Barcode articolo fornitore**: riportano il codice e la decsrizione con cui il fornitore identifica l'articolo richiesto; sono campi facoltativi.     
-- **Unità di misura**: viene proposta l'unità di misura associata al fornitore nell'[angrafica dell'articolo](/docs/erp-home/registers/items/create-new-items/item-registry/preferential-vendors), oppure l'unità di misura principale nel caso in cui tale campo non sia valorizzato.   
-- **Quantità**: viene proposta in base all'eventuale lotto economico del fornitore, se specificato nel tab [fornitori preferenziali](/docs/erp-home/registers/items/create-new-items/item-registry/preferential-vendors) dell'articolo; in alternativa viene proposta la quantità presente nella riga articolo della RDA.
+- **Unità di misura**: viene proposta l'unità di misura associata al fornitore nell'[angrafica dell'articolo](/docs/erp-home/registers/items/create-new-item/item-registry/preferential-vendors), oppure l'unità di misura principale nel caso in cui tale campo non sia valorizzato.   
+- **Quantità**: viene proposta in base all'eventuale lotto economico del fornitore, se specificato nel tab [fornitori preferenziali](/docs/erp-home/registers/items/create-new-item/item-registry/preferential-vendors) dell'articolo; in alternativa viene proposta la quantità presente nella riga articolo della RDA.
 - **Prezzo**: viene proposto in base al listino associato al fornitore preferenziale. 
 - **Data stimata consegna**: permette di inserire la data prevista per la consegna. 
 - **IVA**: viene proposta l'aliquota IVA presente nel tab *Dati articolo*, ma è modificabile manualmente.  

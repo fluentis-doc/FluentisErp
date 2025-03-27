@@ -10,7 +10,7 @@ Stupci koji se odnose na stanje zaliha su tri:
 - *Stanje zaliha*  
 - *Stanje zaliha (FK)* - (FK = Faktor konverzije)
 
-U slučaju korištenja **UM Def. WMS** (prisutno u kartici  [Alternativne mjernih jedinica u šifarniku artikla](/docs/erp-home/registers/items/create-new-items/item-registry/alternative-um)), prvi stupac bit će ispunjen glavnom jedinicom mjere artikla, drugi će biti popunjen sa stanjem zaliha izraženim u alternativnoj jedinici mjere artikla i dobivenim zbrajanjem svih pokreta, dok će treći biti izračunat iz stanja zaliha izraženog u alternativnoj jedinici mjere, ali s faktorom konverzije.   
+U slučaju korištenja **UM Def. WMS** (prisutno u kartici  [Alternativne mjernih jedinica u šifarniku artikla](/docs/erp-home/registers/items/create-new-item/item-registry/alternative-um)), prvi stupac bit će ispunjen glavnom jedinicom mjere artikla, drugi će biti popunjen sa stanjem zaliha izraženim u alternativnoj jedinici mjere artikla i dobivenim zbrajanjem svih pokreta, dok će treći biti izračunat iz stanja zaliha izraženog u alternativnoj jedinici mjere, ali s faktorom konverzije.   
 Ako nije omogućena opcija **UM Def. WMS** stupci *Stanje zaliha* i *Stanje zaliha (FK)* neće biti popunjeni.
 
 **Parametri utovara/istovara** trebaju se unijeti u tablicu [Parametri punjenja/pražnjenja po korisniku](/docs/configurations/parameters/general-parameters/deliverynotes-grouping).

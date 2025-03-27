@@ -74,7 +74,7 @@ import Link from '@docusaurus/Link';
 ## To get started with   
 
 **Loading Unit Management**:
-- create items in the [*Items register*](/docs/erp-home/registers/items/create-new-items)
+- create items in the [*Items register*](/docs/erp-home/registers/items/create-new-item)
 - correctly define the [*Warehouse template*](/docs/configurations/tables/logistics/warehouse-templates) to use       
 - define the [*Initial Warehouse Parameters*](/docs/configurations/parameters/logistics/warehouse-initial-parameters/warehouse-parameters)                      
 - create an employee in the [Employees](/docs/project-management/registers/employee/new-employee/) table

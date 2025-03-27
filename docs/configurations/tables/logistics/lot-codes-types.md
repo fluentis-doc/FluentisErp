@@ -25,7 +25,7 @@ Per poter inserire nuove codifiche è necessario cliccare nella griglia sulla pr
 
 È necessario inserire **Codice** e **Descrizione** del tipo codice lotto, abilitare o meno il flag **Riempire valore progressivo** per riempire i valori mancanti nella numerazione, ed inserire il valore iniziale del progressivo numerico nel campo **Inizia valore progressivo** e quello alfabetico nel campo **Inizio valore carattere**. Ovviamente, il primo sarà il valore iniziale del **Numero progressivo**, mentre il secondo sarà il valore iniziale usato per i **Caratteri alfabetici**.
 
-Il **Tipo codice lotto** deve poi essere agganciato all'*Anagrafica articolo* nell'apposito ed omonimo campo situato nel tab [Lotti e serial number](/docs/erp-home/registers/items/create-new-items/item-registry/lots-and-serial-number), in modo che nelle procedure che creano automaticamente il codice lotto per l'articolo in questione il lotto stesso venga generato secondo le regole impostate qui.
+Il **Tipo codice lotto** deve poi essere agganciato all'*Anagrafica articolo* nell'apposito ed omonimo campo situato nel tab [Lotti e serial number](/docs/erp-home/registers/items/create-new-item), in modo che nelle procedure che creano automaticamente il codice lotto per l'articolo in questione il lotto stesso venga generato secondo le regole impostate qui.
 
 Al di sotto della tabella principale, sono presenti tre tab:   
 - **Dettagli tipo codice lotto**

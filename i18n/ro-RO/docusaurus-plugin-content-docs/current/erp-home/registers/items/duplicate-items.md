@@ -50,7 +50,7 @@ Prototipul generat va fi afișat în următorul tab,  următoare **Prototipuri a
 
 Permite selectarea parametrilor care trebuie să reglementeze duplicarea articolului.
 
-Informațiile care pot fi duplicate sunt: costuri, greutăți și dimensiuni, loturi și S/N, achiziții, variante, furnizori preferențiali (în cazul articolelor de achiziție), clienți (în cazul articolelor de vânzare), U.M. alternativ, imagini, note, coduri de bare, informațiile conținute în fila Administrare, data suplimentară, ambalarea etc. Acestea sunt toate informațiile conținute în filele care alcătuiesc articolul și care au fost detaliate în articolele relevante (consultați [Creare articol](/docs/erp-home/registers/items/create-new-items) și documentele asociate).
+Informațiile care pot fi duplicate sunt: costuri, greutăți și dimensiuni, loturi și S/N, achiziții, variante, furnizori preferențiali (în cazul articolelor de achiziție), clienți (în cazul articolelor de vânzare), U.M. alternativ, imagini, note, coduri de bare, informațiile conținute în fila Administrare, data suplimentară, ambalarea etc. Acestea sunt toate informațiile conținute în filele care alcătuiesc articolul și care au fost detaliate în articolele relevante (consultați [Creare articol](/docs/erp-home/registers/items/create-new-item) și documentele asociate).
 
 Se poate duplica și [Lista componentelor](/docs/erp-home/registers/production/bill-of-materials/search-and-insert-assemblies) pentru producerea articolului, [Ciclul de lucru](/docs/erp-home/registers/production/routes/new-route) și [Parametri MRP](/docs/configurations/parameters/production/mrp-parameters/search-mrp-parameters) ai articolului.
 

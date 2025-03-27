@@ -24,7 +24,7 @@ import Link from '@docusaurus/Link';
 ## Per iniziare ad utilizzare   
 
 la **Capacità Centri di Lavoro** e **Sequenza fasi**:
-- creare degli articoli nell'[*Anagrafica articoli*](/docs/erp-home/registers/items/create-new-items) 
+- creare degli articoli nell'[*Anagrafica articoli*](/docs/erp-home/registers/items/create-new-item) 
 - creare le [*Distinte basi*](/docs/erp-home/registers/production/bill-of-materials/search-and-insert-assemblies) 
 - creare i [*Cicli di lavoro*](/docs/erp-home/registers/production/routes/new-route) 
 - creare i [*Centri di lavoro*](/docs/erp-home/registers/production/routes/work-center) 
@@ -32,4 +32,4 @@ la **Capacità Centri di Lavoro** e **Sequenza fasi**:
 - creare i [*Calendari capacità produttive*](/docs/configurations/tables/production/productive-capacity-calendar/) 
 
 ## Collegamenti con altri moduli 
-Questi sono strettamente collegati all'[*Anagrafica articoli*](/docs/erp-home/registers/items/create-new-items), alle [*Distinte basi*](/docs/erp-home/registers/production/bill-of-materials/search-and-insert-assemblies), [*Cicli di lavoro*](/docs/erp-home/registers/production/routes/new-route), [*Centri di lavoro*](/docs/erp-home/registers/production/routes/work-center), [*Ordini pianificati*](/docs/planning/ms-master-scheduling/planned-orders/search-planned-orders) e [*Ordini produzione*](/docs/production/pp-production-in-progress/production-orders/search-production-orders).
+Questi sono strettamente collegati all'[*Anagrafica articoli*](/docs/erp-home/registers/items/create-new-item), alle [*Distinte basi*](/docs/erp-home/registers/production/bill-of-materials/search-and-insert-assemblies), [*Cicli di lavoro*](/docs/erp-home/registers/production/routes/new-route), [*Centri di lavoro*](/docs/erp-home/registers/production/routes/work-center), [*Ordini pianificati*](/docs/planning/ms-master-scheduling/planned-orders/search-planned-orders) e [*Ordini produzione*](/docs/production/pp-production-in-progress/production-orders/search-production-orders).

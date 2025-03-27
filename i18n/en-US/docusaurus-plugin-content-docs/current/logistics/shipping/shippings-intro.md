@@ -24,7 +24,7 @@ import Link from '@docusaurus/Link';
 ## To get started using
 
 **Shipments**:
-- create items in the [*Items register*](/docs/erp-home/registers/items/create-new-items) 
+- create items in the [*Items register*](/docs/erp-home/registers/items/create-new-item) 
 - define a [*Shipping Types*](/docs/configurations/tables/logistics/shipping-type)        
 - define [*Shipping States*](/docs/configurations/tables/logistics/shipping-states)     
 - define [*Motorvehicles*](/docs/logistics/motorvehicles/motorvehicle)   
@@ -38,5 +38,5 @@ import Link from '@docusaurus/Link';
 - define [*Vehicle Types*](/docs/configurations/tables/logistics/motorvehicle-Type)  
 
 ## Links to Other Modules 
-These are closely related to the [*Items register*](/docs/erp-home/registers/items/create-new-items) and [*Sales Orders*](/docs/sales/sales-orders/settings) since it is possible to add items directly from an order.           
+These are closely related to the [*Items register*](/docs/erp-home/registers/items/create-new-item) and [*Sales Orders*](/docs/sales/sales-orders/settings) since it is possible to add items directly from an order.           
 Additionally, from a shipment, it is possible to directly create [*DDT (Delivery Notes) (DDT)*](/docs/sales/sales-delivery-notes/insert-delivery-notes/search-sales-dn), [*Invoices*](/docs/sales/sales-invoices/general-overview), and also [*Picking*](/docs/logistics/picking/picking-intro).

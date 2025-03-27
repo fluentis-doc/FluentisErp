@@ -30,7 +30,7 @@ import Link from '@docusaurus/Link';
 ## To Start Using  
 
 **Physical Inventory**:
-- create items in the [*Items register*](/docs/erp-home/registers/items/create-new-items)        
+- create items in the [*Items register*](/docs/erp-home/registers/items/create-new-item)        
 - correctly define the [*Warehouse template*](/docs/configurations/tables/logistics/warehouse-templates) to be used       
 - define the [*Initial Warehouse Parameters*](/docs/configurations/parameters/logistics/warehouse-initial-parameters/warehouse-parameters)          
 - define the [*Stock difference parameters*](/docs/configurations/parameters/logistics/stock-difference/)           

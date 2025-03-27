@@ -7,7 +7,7 @@ La tabella si trova sul percorso **Tabelle > Logistica > Categorie merceologiche
 
 Questa tabella gestisce la codifica delle diverse categorie secondo la logica merceologica, la quale può essere poi associata al prodotto per poterla utilizzare come raggruppamento oppure come dato statistico oppure come funzionalità nei moduli competenti.  
 
-Un esempio di utiizzo lo troviamo all'interno dell'[Anagrafica articolo](/docs/erp-home/registers/items/create-new-items) alla voce *Categoria merceologica*.  
+Un esempio di utiizzo lo troviamo all'interno dell'[Anagrafica articolo](/docs/erp-home/registers/items/create-new-item) alla voce *Categoria merceologica*.  
 
 La tabella consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
 

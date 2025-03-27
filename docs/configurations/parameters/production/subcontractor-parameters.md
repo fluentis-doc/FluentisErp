@@ -70,7 +70,7 @@ Per la registrazione dei **Rientri di conto lavoro**: se il flag è attivo viene
 
 **Ricalcola trasporto**: questo flag fa in modo che nel tab Trasporto del DDT vengano riportati i totali di peso, volume e colli delle righe del documento; senza questo flag, i campi non saranno compilati.
 
-**Verifica articoli in esaurimento**: se attivato, il sistema fa un controllo sulla disponibilità degli articoli in riga ordine ed avvisa qualora l'articolo fosse in esaurimento, ovvero se nell'[anagrafica dell'articolo](/docs/erp-home/registers/items/create-new-items) è stato attivato il flag *In esaurimento*.
+**Verifica articoli in esaurimento**: se attivato, il sistema fa un controllo sulla disponibilità degli articoli in riga ordine ed avvisa qualora l'articolo fosse in esaurimento, ovvero se nell'[anagrafica dell'articolo](/docs/erp-home/registers/items/create-new-item) è stato attivato il flag *In esaurimento*.
 
 **Attiva il controllo qualità**: work in progress.
 

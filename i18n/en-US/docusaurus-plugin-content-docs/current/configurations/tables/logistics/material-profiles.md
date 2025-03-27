@@ -6,7 +6,7 @@ sidebar_position: 7
 The table is located at **Tables > Logistics > Material Profiles**.  
 
 In this table, it is possible to code the different *Material Profiles* to associate with individual items.  
-An example of usage can be found within the Item Registry in the [Weights/Dimensions](/docs/erp-home/registers/items/create-new-items/item-registry/weights-dimensions) tab under the *Profile* entry.  
+An example of usage can be found within the Item Registry in the [Weights/Dimensions](/docs/erp-home/registers/items/create-new-item/item-registry/weights-dimensions) tab under the *Profile* entry.  
 
 It allows you to insert new records or search for existing ones to view, modify, or delete them.
 

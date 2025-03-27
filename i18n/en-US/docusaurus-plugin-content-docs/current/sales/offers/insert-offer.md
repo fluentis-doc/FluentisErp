@@ -104,7 +104,7 @@ In this tab, it is necessary to enter the characteristics of the articles in the
 - **Projects Node Type**: indicates whether the line is a **Root Node**, an **Activity Node**, or a **Work Package Node** (the final project node, the only one that can contain coded item numbers).       
 - **Line type**: indicates the type of article among Coded, Uncoded, Expenses, or Notes (the latter by default).            
 - **Item code**: this section reports Class, Code, and Description of the possibly selected coded article.             
-- **Variant code**: reports a possible [Variant](/docs/erp-home/registers/items/create-new-items/item-registry/variants) of the article.       
+- **Variant code**: reports a possible [Variant](/docs/erp-home/registers/items/create-new-item) of the article.       
 - **Item description**: this section reports the Description of the article, if of type Note or Uncoded.    
 - **Prototype**: contains any linked [Prototype](/docs/erp-home/registers/production/standardization/new-prototype).          
 - **Quantity/UM/Price**: contains quantity, unit of measure, and price of the selected item.        

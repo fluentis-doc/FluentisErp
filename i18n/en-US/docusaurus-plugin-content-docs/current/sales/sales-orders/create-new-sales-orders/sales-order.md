@@ -122,7 +122,7 @@ This tab is active only if the customer registry, [tax information tab](/docs/er
 
 This tab is active and visible only for [Order Types](/docs/configurations/tables/sales/sales-order-types) that have set the *Extra Data Matrix Management* flag and the related *Configuration*. This tab allows the generation of item variants for the various valid attribute combinations, which will be transferred to the subsequent *Items* tab.      
 For all the fields not explained on this page, you can refer to the documentation of the *Items* tab.       
-By entering a [matrix-managed item](/docs/erp-home/registers/items/create-new-items/item-registry/matrix) in the item grid, indeed, in the *Matrices* tab, the matrix associated with the item registry will be displayed. In the cells of the matrix, it will be possible to input the ordered quantities for each combination; only the cells that have a valid combination in the registry can be filled.       
+By entering a [matrix-managed item](/docs/erp-home/registers/items/create-new-item/item-registry/matrix) in the item grid, indeed, in the *Matrices* tab, the matrix associated with the item registry will be displayed. In the cells of the matrix, it will be possible to input the ordered quantities for each combination; only the cells that have a valid combination in the registry can be filled.       
 Once quantities are entered for each combination, it is necessary to click the *Confirm stub values* button on the toolbar to generate as many variants as there are possible combinations. Each variant will populate a row in the subsequent *Items* tab, with the corresponding quantity.
 
 ## **Items**
@@ -166,7 +166,7 @@ import ItemPrice from './../../../import/fields/item-price.md'
 <ItemPrice />
 
 :::note[NOTE]
-In the absence of the price list, the proposed data is the **Sales price** taken from the *Item Registry > [Costs](/docs/erp-home/registers/items/create-new-items) tab* or will be retrieved based on the document parameter settings. In the absence of this data, the price 0 will be reported.
+In the absence of the price list, the proposed data is the **Sales price** taken from the *Item Registry > [Costs](/docs/erp-home/registers/items/create-new-item) tab* or will be retrieved based on the document parameter settings. In the absence of this data, the price 0 will be reported.
 :::
 
 - **Origin amount**: this field contains the Unit Price multiplied by the quantity, net of discounts.
@@ -199,7 +199,7 @@ In the Items section, the following buttons are present in the toolbar:
 > **Explode First Level Bill**: allows you to add materials (raw materials and semi-finished products) present in the bill of materials of the item to the customer order; thus the first level components of the finished product will be reported in the order. This option is particularly used for Kit products (composed of multiple parts).  
 > **Update price lists**: allows you to update the price of the item in an existing price list (save the document to enable these buttons) or to create a new price list with the item and the selected price.       
 > **Split Quantity into Multiple Deliveries**: allows you to split the quantity of an item line into multiple lines based on delivery dates. By selecting the row and clicking the button, the **Various deliveries** form will open, within which the *Ready goods date*, the *Delivery date*, and the *Quantity* of the line will be reported. In the next row, you should indicate the *Ready goods date* (which should be the same), the *Delivery Date* which will be different, and the *Quantity* to be shipped on that date and then you will need to modify the date in the first row, updating it to the remaining quantity so that the sum of the quantities of the two rows results in the initial quantity of the row before splitting. Confirm the operation with the *OK* button.  
-> **Packaging**: allows you to create a UDC starting from the selected row. The row must be a coded item and saved in the document. The user must have the rights within the [Loading/Unloading Parameters](/docs/configurations/parameters/logistics/load-unload-parameters/load-unload-parameters-intro) for loading the pallet. Moreover, the item must be managed as UDC and based on the settings of the UDC Type specified in the item registry, tab [Packaging](/docs/erp-home/registers/items/create-new-items/item-registry/packaging), the UDC will be created respecting the criteria.      
+> **Packaging**: allows you to create a UDC starting from the selected row. The row must be a coded item and saved in the document. The user must have the rights within the [Loading/Unloading Parameters](/docs/configurations/parameters/logistics/load-unload-parameters/load-unload-parameters-intro) for loading the pallet. Moreover, the item must be managed as UDC and based on the settings of the UDC Type specified in the item registry, tab [Packaging](/docs/erp-home/registers/items/create-new-item/item-registry/packaging), the UDC will be created respecting the criteria.      
 
 At this point, let’s analyze the tabs present under the items grid. 
 
@@ -244,7 +244,7 @@ import SalesTabAgent from './../../../import/sections/sales-tab-agent.md'
 
 ### 3.b.4 Lots and Serial Numbers
 
-In the two grids, lots and serial numbers that must be discharged from the warehouse and are linked to the item in the *Item Registry > [Lots and Serial Numbers tab](/docs/erp-home/registers/items/create-new-items/item-registry/lots-and-serial-number) tab* can either be inserted manually.
+In the two grids, lots and serial numbers that must be discharged from the warehouse and are linked to the item in the *Item Registry > [Lots and Serial Numbers tab](/docs/erp-home/registers/items/create-new-item) tab* can either be inserted manually.
 
 This operation is conditioned by the presence of lots and serial numbers in the warehouse. 
 

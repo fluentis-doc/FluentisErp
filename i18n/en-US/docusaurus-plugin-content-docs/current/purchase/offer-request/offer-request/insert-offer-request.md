@@ -130,7 +130,7 @@ In the grid, all discounts associated with the item are proposed, each with its 
 This tab contains additional information related to the item.
 
 >- **ITEM**: displays the selected item in the upper grid.
->- **Variant**: in this field, it is possible to select a variant of the item among those previously coded in the [Variants tab](/docs/erp-home/registers/items/create-new-items/item-registry/variants) of the item registry. If prices and/or different discounts for each variant have been entered in the price list, they will be updated when selecting a different variant of the item.
+>- **Variant**: in this field, it is possible to select a variant of the item among those previously coded in the [Variants tab](/docs/erp-home/registers/items/create-new-item) of the item registry. If prices and/or different discounts for each variant have been entered in the price list, they will be updated when selecting a different variant of the item.
 >- **Note**: these are notes related to the item line, which can also be entered through the help of coded notes. They will be reported in all documents generated from this.
 >- **Warehouse and reason**: the warehouse and the reference cause will be automatically proposed when loading the relevant items into the warehouse.
 

@@ -27,7 +27,7 @@ The window consists of buttons and three different tabs: *General*, *Load*, and 
 
 **Use vendor item**: if active, the item grid in the document also proposes the field to enter the supplier item code. If not active, this field will not be visible;
 
-**Check items in exhaustion**: if activated, the system checks the availability of the items entered in the invoice and alerts if the item is running low, meaning if in the [item registry](/docs/erp-home/registers/items/create-new-items) the *Out of Stock* flag is active.
+**Check items in exhaustion**: if activated, the system checks the availability of the items entered in the invoice and alerts if the item is running low, meaning if in the [item registry](/docs/erp-home/registers/items/create-new-item) the *Out of Stock* flag is active.
 
 **Packings accounting**: allows the accounting, in general accounting, of lines with packaging items that are usually managed to verify the stocks of [Returnable Packaging (Imballi a rendere)](/docs/configurations/tables/logistics/package-to-be-returned).
 

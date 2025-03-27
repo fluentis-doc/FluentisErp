@@ -29,7 +29,7 @@ Parametrii avizelor de achiziţie permit setarea de bază pentru gestionarea cor
 
 **Utilizează articolul furnizor**: dacă este activ, în tabelul articolelor avizului este propus și câmpul pentru inserarea codului articolului furnizorului. 
 
-**Verifică articole în epuizare**: dacă este activ, sistemul verifică disponibilitatea articolelor inserate în aviz și avertizează dacă articolul se epuizează, și anume dacă în [registrul articolului](/docs/erp-home/registers/items/create-new-items) parametrul *In epuizare* este activ.
+**Verifică articole în epuizare**: dacă este activ, sistemul verifică disponibilitatea articolelor inserate în aviz și avertizează dacă articolul se epuizează, și anume dacă în [registrul articolului](/docs/erp-home/registers/items/create-new-item) parametrul *In epuizare* este activ.
 
 **Contabilizare ambalaje**: permite contabilizarea, în contabilitatea generală, și a liniilor cu articole cu natura *Ambalaj* care, de obicei, sunt gestionare pentru a verifica stocurile ambalajelor care se returnează [Ambalaje de returnat](/docs/configurations/tables/logistics/package-to-be-returned).
 

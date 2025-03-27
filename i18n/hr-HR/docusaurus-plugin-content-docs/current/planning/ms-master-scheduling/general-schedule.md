@@ -94,7 +94,7 @@ Prije nego što započnete s planiranjem, važno je postaviti parametre unutar o
 
 **Uzmite u obzir dostupnost iz**: ove opcije postaju dostupne samo ako je aktivirana opcija  **Razmotri raspoloživost** i omogućuju vam da naznačite želite li da planer uzme u obzir dostupnost iz nabave, prodaje, skladišta, uslužne proizvodnje i proizvodnje;  
 
-**Obnavljanje minimalne zalihe artikla i obnavljanje točke ponovnog naručivanja artikla**: prva opcija se aktivira samo ako je postavljena druga opcija. Ove dvije opcije ukazuju na to da planer mora predvidjeti obnavljanje točke ponovnog naručivanja određene za taj artikl, a također, ako želite, i obnavljanje minimalne zalihe artikla. Oba podatka unose se prilikom kreiranja artikla u kartici [Nabava](/docs/erp-home/registers/items/create-new-items/item-registry/procurement);
+**Obnavljanje minimalne zalihe artikla i obnavljanje točke ponovnog naručivanja artikla**: prva opcija se aktivira samo ako je postavljena druga opcija. Ove dvije opcije ukazuju na to da planer mora predvidjeti obnavljanje točke ponovnog naručivanja određene za taj artikl, a također, ako želite, i obnavljanje minimalne zalihe artikla. Oba podatka unose se prilikom kreiranja artikla u kartici [Nabava](/docs/erp-home/registers/items/create-new-item);
 
 **Razmotrite indeks pokrivanja**: ako je opcija aktivirana, planer će morati uzeti u obzir indeks pokrivenosti koji se postavlja u kartici *Nabava* artikla;  
 

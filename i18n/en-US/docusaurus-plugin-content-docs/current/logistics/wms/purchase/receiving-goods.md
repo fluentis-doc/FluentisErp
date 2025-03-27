@@ -61,7 +61,7 @@ In this form, all information related to the considered supplier order is displa
 
 ## **Goods receipt with loading units**
 
-If the item is managed with loading units, and therefore, in the tab [packaging](/docs/erp-home/registers/items/create-new-items/item-registry/packaging) of the item registry, there must be at least one line with the flag **Mandatory Loading Unit** active, the priority and the quantity.     
+If the item is managed with loading units, and therefore, in the tab [packaging](/docs/erp-home/registers/items/create-new-item/item-registry/packaging) of the item registry, there must be at least one line with the flag **Mandatory Loading Unit** active, the priority and the quantity.     
 The goods receipt procedure will have to consider the line by choosing the one with the highest priority among those for that supplier client (if indicated, otherwise choose among those without), but with the flag Mandatory Loading Unit active.     
 
 Therefore, after entering all data related to the item as described previously for the case without UDC, when the **Confirm** button is pressed, the procedure will open a new form dedicated to the creation of loading units; where the item data will be preloaded, such as: *class*, *code*, and *item description*, with possible *variant* and *lot*.     

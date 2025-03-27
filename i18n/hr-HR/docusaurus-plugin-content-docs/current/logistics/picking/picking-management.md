@@ -38,7 +38,7 @@ U tablici unosa unose se artikli specificirajući  **Klasu**, **Šifru artikla**
 Također je moguće unijeti **Alternativnu mjernu jedinicu** s odgovarajućom količinom.   
 U polju **Skladište** definira se skladište za pokretanje, a u polju **Uzrok** odgovarajući uzrok.   
 Također je moguće specificirati **Lokaciju** s koje se preuzima uneseni artikl.        
-**Ukupna neto** i **težina artikala** prikazani su, izračunati koristeći težine prisutne u kartici [Težine i dimenzije](/docs/erp-home/registers/items/create-new-items/item-registry/weights-dimensions) *Šifarnika artikla* pomnožene s količinom retka.
+**Ukupna neto** i **težina artikala** prikazani su, izračunati koristeći težine prisutne u kartici [Težine i dimenzije](/docs/erp-home/registers/items/create-new-item/item-registry/weights-dimensions) *Šifarnika artikla* pomnožene s količinom retka.
 
 Potrebni podaci za pokretanje skladišta:    
 **Datum izuzimanja**: predstavlja datum kada treba izvršiti zapis o skladištu;    

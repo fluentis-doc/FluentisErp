@@ -6,7 +6,7 @@ sidebar_position: 7
 La tabella si trova sul percorso **Tabelle > Logistica > Profili materiale**.  
 
 In questa tabella è possibile codificare i diversi *Profili materiale* da associare ai singoli articoli.  
-Un esempio di utiizzo lo troviamo all'interno dell'Anagrafica Articolo nel tabulatore [Pesi/Dimensioni](/docs/erp-home/registers/items/create-new-items/item-registry/weights-dimensions) sotto la voce *Profilo*.  
+Un esempio di utiizzo lo troviamo all'interno dell'Anagrafica Articolo nel tabulatore [Pesi/Dimensioni](/docs/erp-home/registers/items/create-new-item/item-registry/weights-dimensions) sotto la voce *Profilo*.  
 
 Consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
 

@@ -208,9 +208,9 @@ In the absence of a price list, the proposed data may be taken from the *last co
 
 ### 3.2 Optional Item Data 
 
-- **Supplier Item Code/Description**: in this section, you can add the code and the description used by the supplier to identify the item; this data is automatically proposed if a supplier item has been associated in the item registry, in the [Preferential Vendors](/docs/erp-home/registers/items/create-new-items/item-registry/preferential-vendors) tab. 
+- **Supplier Item Code/Description**: in this section, you can add the code and the description used by the supplier to identify the item; this data is automatically proposed if a supplier item has been associated in the item registry, in the [Preferential Vendors](/docs/erp-home/registers/items/create-new-item/item-registry/preferential-vendors) tab. 
 
-- **Purchase turnover type**: the data entered in the [Generalities](/docs/erp-home/registers/items/create-new-items) tab of the item registry is proposed. If this is not present, no data is proposed, and at the time of invoice accounting, the value entered in the *Default Counterpart Cost/Revenue* field of the contact registry will be considered.
+- **Purchase turnover type**: the data entered in the [Generalities](/docs/erp-home/registers/items/create-new-item) tab of the item registry is proposed. If this is not present, no data is proposed, and at the time of invoice accounting, the value entered in the *Default Counterpart Cost/Revenue* field of the contact registry will be considered.
 
 #### Specific Buttons
 
@@ -248,7 +248,7 @@ When creating/updating a price list using this procedure, only those discounts t
 Within this tab, further information related to the item is recorded/entered.
 
 - **ITEM**: shows the class, code, and description of the item selected in the grid.   
-- **Variant**: in this field, it is possible to select a variant of the item among those previously coded in the [Variants](/docs/erp-home/registers/items/create-new-items/item-registry/variants) tab of the item registry. If prices and/or discounts have been entered in the price list for each variant, they will be updated when selecting a different variant of the item.     
+- **Variant**: in this field, it is possible to select a variant of the item among those previously coded in the [Variants](/docs/erp-home/registers/items/create-new-item) tab of the item registry. If prices and/or discounts have been entered in the price list for each variant, they will be updated when selecting a different variant of the item.     
 - **Note**: these are the notes related to the item line, which can also be entered through the coded note help. They will be reported in all documents generated from this.   
 - **Warehouse and Template**: the warehouse and the corresponding reason are automatically proposed and will appear automatically at the time of loading the related items into the warehouse. These data are taken from the [Types of Delivery Notes](/docs/configurations/tables/purchase/purchase-delivery-notes-type) or from the supplier order, if the delivery note originates from the fulfillment of an order. They can be manually modified for each item line.   
 - **Location**: is automatically proposed if a location has been associated with the used reason in the [Warehouse Template](/docs/configurations/tables/logistics/warehouse-templates) table or if the item has been entered in the [Item Location Map](/docs/logistics/warehouse/location/item-location-map/). It can be entered or modified manually.   
@@ -256,7 +256,7 @@ Within this tab, further information related to the item is recorded/entered.
 - **Partial Valorized**: indicates whether the item line has been valued for a partial quantity.   
 - **Forced Valorized**: indicates whether the item line has been forcefully valued.   
 - **Project**: represents the project to associate with the document. If a project has been entered in the document header, it will be reported on all item lines; alternatively, it can be selected through the appropriate project help.   
-- **Alternative Unit of Measure/Alternative Quantity**: if an alternative unit of measure has been coded in the [item registry](/docs/erp-home/registers/items/create-new-items/item-registry/alternative-um) with the *Default* flag and in the purchase order parameters the *Automatic proposal of alternative U.M.* flag was activated, these values will be automatically proposed when entering the item; otherwise, one of the coded alternative units of measure can be selected for the item.   
+- **Alternative Unit of Measure/Alternative Quantity**: if an alternative unit of measure has been coded in the [item registry](/docs/erp-home/registers/items/create-new-item/item-registry/alternative-um) with the *Default* flag and in the purchase order parameters the *Automatic proposal of alternative U.M.* flag was activated, these values will be automatically proposed when entering the item; otherwise, one of the coded alternative units of measure can be selected for the item.   
 - **Alternative Unit of Measure Price**: if active, indicates that the price entered for the item line refers to the alternative unit of measure and not to the main one.    
 This flag along with the *Alternative Measurement Unit* and *Alternative quantity* fields are visible only if the flag *Management of double measurement unit* has been activated in the [Supplier Order Parameters](/docs/configurations/parameters/purchase/purchase-orders-parameters).
 - **Brand**: represents the item brand, taken from its registry or from the item's price list.
@@ -266,10 +266,10 @@ This flag along with the *Alternative Measurement Unit* and *Alternative quantit
 ### 3.5 Lots and Serial Numbers
 
 In the two grids, lots and serial numbers that must be loaded into the warehouse can be entered.   
-If the item does not provide for the management of [Lots and Serial Numbers](/docs/erp-home/registers/items/create-new-items/item-registry/lots-and-serial-number), this tab will be disabled.
+If the item does not provide for the management of [Lots and Serial Numbers](/docs/erp-home/registers/items/create-new-item), this tab will be disabled.
 
 :::tip Remember (Ricorda)
-If in the [Purchase Delivery Note Parameters](/docs/configurations/parameters/purchase/purchase-orders-parameters) the *Batches and S.N. compulsory* flag is disabled, it will be possible to save the document without entering lots/serial numbers. Furthermore, if the *Lot Retrieval Type* coded in the [item registry](/docs/erp-home/registers/items/create-new-items/item-registry/lots-and-serial-number) is *FIFO* or with *Expiry date*, at the time of loading the delivery note into the warehouse, the lots will be automatically proposed if they have not already been entered previously.
+If in the [Purchase Delivery Note Parameters](/docs/configurations/parameters/purchase/purchase-orders-parameters) the *Batches and S.N. compulsory* flag is disabled, it will be possible to save the document without entering lots/serial numbers. Furthermore, if the *Lot Retrieval Type* coded in the [item registry](/docs/erp-home/registers/items/create-new-item) is *FIFO* or with *Expiry date*, at the time of loading the delivery note into the warehouse, the lots will be automatically proposed if they have not already been entered previously.
 :::
 
 #### Specific Buttons
@@ -379,11 +379,11 @@ Represents the summary of the document's deadlines, for each *type* and *payment
 
 ### 4.5 Other Fields (Altri campi)
 
-- **Volume**: the cumulative volume is proposed, resulting from the sum of the volumes of the items (the value is taken from the *Item Registry > tab* [*Weights/Dimensions*](/docs/erp-home/registers/items/create-new-items/item-registry/weights-dimensions)), when the volume unit of measure of the items corresponds to that entered in the delivery note parameters. Only items with this field filled in are taken into consideration.
+- **Volume**: the cumulative volume is proposed, resulting from the sum of the volumes of the items (the value is taken from the *Item Registry > tab* [*Weights/Dimensions*](/docs/erp-home/registers/items/create-new-item/item-registry/weights-dimensions)), when the volume unit of measure of the items corresponds to that entered in the delivery note parameters. Only items with this field filled in are taken into consideration.
 
-- **Net/Gross Weight**: the cumulative net weight is proposed, resulting from the sum of the weights of the items (the value is taken from the *Item Registry > tab* [*Weights/Dimensions*](/docs/erp-home/registers/items/create-new-items/item-registry/weights-dimensions)), when the weight unit of measure of the items corresponds to that entered in the delivery note parameters. Only items with this field filled in are taken into consideration.
+- **Net/Gross Weight**: the cumulative net weight is proposed, resulting from the sum of the weights of the items (the value is taken from the *Item Registry > tab* [*Weights/Dimensions*](/docs/erp-home/registers/items/create-new-item/item-registry/weights-dimensions)), when the weight unit of measure of the items corresponds to that entered in the delivery note parameters. Only items with this field filled in are taken into consideration.
 
-- **Packages**: the number of packages is proposed, based on the data entered in the *Item Registry > tab* [*Weights/Dimensions*](/docs/erp-home/registers/items/create-new-items/item-registry/weights-dimensions), in the fields *Items present in one package* or *Packages for item*. Only items with this field filled in are taken into consideration.
+- **Packages**: the number of packages is proposed, based on the data entered in the *Item Registry > tab* [*Weights/Dimensions*](/docs/erp-home/registers/items/create-new-item/item-registry/weights-dimensions), in the fields *Items present in one package* or *Packages for item*. Only items with this field filled in are taken into consideration.
 
 - **Values manually modified**: activating this flag will allow the manual modification of the values for *volume*, *net weight*, *gross weight*, and *packages*.
 
@@ -404,11 +404,11 @@ The present data are:
 - **Sender**: in this field, it is possible to enter the account/sub-account of the sender.
 - **Recipient**: the default recipient entered in the customer registry is proposed; if not present, the customer's address is taken.    
 - **Destination**: the default destination of the recipient is proposed, if entered in the customer registry.        
-- **Volume**: the cumulative volume is proposed, resulting from the sum of the volumes of the items (the value is taken from the *Item Registry > tab* [*Weights/Dimensions*](/docs/erp-home/registers/items/create-new-items/item-registry/weights-dimensions)), when the volume unit of measure of the items corresponds to that entered in the delivery note parameters. 
-- **Net weight**: the cumulative net weight is proposed, resulting from the sum of the weights of the items (the value is taken from the *Item Registry > tab* [*Weights/Dimensions*](/docs/erp-home/registers/items/create-new-items/item-registry/weights-dimensions)), when the weight unit of measure of the items corresponds to that entered in the delivery note parameters. 
-- **Gross Weight**: the cumulative gross weight is proposed, resulting from the sum of the weights of the items (the value is taken from the *Item Registry > tab* [*Weights/Dimensions*](/docs/erp-home/registers/items/create-new-items/item-registry/weights-dimensions)), when the weight unit of measure of the items corresponds to that entered in the delivery note parameters.     
+- **Volume**: the cumulative volume is proposed, resulting from the sum of the volumes of the items (the value is taken from the *Item Registry > tab* [*Weights/Dimensions*](/docs/erp-home/registers/items/create-new-item/item-registry/weights-dimensions)), when the volume unit of measure of the items corresponds to that entered in the delivery note parameters. 
+- **Net weight**: the cumulative net weight is proposed, resulting from the sum of the weights of the items (the value is taken from the *Item Registry > tab* [*Weights/Dimensions*](/docs/erp-home/registers/items/create-new-item/item-registry/weights-dimensions)), when the weight unit of measure of the items corresponds to that entered in the delivery note parameters. 
+- **Gross Weight**: the cumulative gross weight is proposed, resulting from the sum of the weights of the items (the value is taken from the *Item Registry > tab* [*Weights/Dimensions*](/docs/erp-home/registers/items/create-new-item/item-registry/weights-dimensions)), when the weight unit of measure of the items corresponds to that entered in the delivery note parameters.     
 - **External Appearance of Goods**: a combo box that refers to the corresponding table where the data can be coded.     
-- **Packages**: the number of packages is proposed, based on the data entered in the *Item Registry > tab* [*Weights/Dimensions*](/docs/erp-home/registers/items/create-new-items/item-registry/weights-dimensions), in the fields *Items present in one package* or *Packages for item*. Only items with this field filled in are taken into consideration.     
+- **Packages**: the number of packages is proposed, based on the data entered in the *Item Registry > tab* [*Weights/Dimensions*](/docs/erp-home/registers/items/create-new-item/item-registry/weights-dimensions), in the fields *Items present in one package* or *Packages for item*. Only items with this field filled in are taken into consideration.     
 - **Values manually modified**: with this flag, we enable the modification of the Volume, Net Weight, Gross Weight, and Packages fields, which otherwise report the data from the item registry without the possibility of modification.     
 - **Customs Office Entry/Exit**: fields used for eTransport for the Romanian version, referring to the *Customs Office* table.     
 - **Border Crossing Entry/Exit**: fields used for eTransport for the Romanian version, referring to the *Border Crossing* table.      

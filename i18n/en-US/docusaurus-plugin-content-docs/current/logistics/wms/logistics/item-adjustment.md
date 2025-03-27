@@ -15,7 +15,7 @@ For example, if only the code of a location is read, the **Search** button will 
 > **Units of Measure**: indicates the item's unit of measure;     
 > **Quantity**: indicates the quantity that the operator can manually change or adjust using the **+** and **-** buttons;        
 > **Stock**: indicates the stock level of the item calculated based on the warehouse movements;       
-> **Stock Level (FC)**: activates only if the *Default WMS* flag is enabled in the [Alternative Units of Measure tab of the item registry](/docs/erp-home/registers/items/create-new-items/item-registry/alternative-um). This value indicates the stock level expressed in the alternative unit of measure, calculated using the conversion factor;               
+> **Stock Level (FC)**: activates only if the *Default WMS* flag is enabled in the [Alternative Units of Measure tab of the item registry](/docs/erp-home/registers/items/create-new-item/item-registry/alternative-um). This value indicates the stock level expressed in the alternative unit of measure, calculated using the conversion factor;               
 > **Batch**: indicates the lot of the item;       
 > **Item description**: indicates the description of the item.    
 
@@ -25,11 +25,11 @@ Meanwhile, when reading the item to be adjusted, the **Search** button will disp
 > **Units of Measure**: indicates the item's unit of measure;     
 > **Quantity**: indicates the quantity that the operator can manually change or adjust using the **+** and **-** buttons;        
 > **Stock**: indicates the stock level of the item calculated based on the warehouse movements;       
-> **Stock Level (FC)**: activates only if the *Default WMS* flag is enabled in the [Alternative Units of Measure tab of the item registry](/docs/erp-home/registers/items/create-new-items/item-registry/alternative-um). This value indicates the stock level expressed in the alternative unit of measure, calculated using the conversion factor;                      
+> **Stock Level (FC)**: activates only if the *Default WMS* flag is enabled in the [Alternative Units of Measure tab of the item registry](/docs/erp-home/registers/items/create-new-item/item-registry/alternative-um). This value indicates the stock level expressed in the alternative unit of measure, calculated using the conversion factor;                      
 > **Batch**: indicates the lot of the item.       
 
 :::note **Stock** and **Stock Level (FC)**
-It is important to remember that if the *Default WMS* flag is active in the [Alternative Units of Measure tab of the item registry](/docs/erp-home/registers/items/create-new-items/item-registry/alternative-um), the values in the **Stock** and **Stock Level (FC)** fields will be expressed in the corresponding alternative unit of measure. However, if the item is managed in batches, the values in the **Stock** and **Stock Level (FC)** fields will be expressed in the item's primary unit of measure, even if the "Default WMS" flag is active.
+It is important to remember that if the *Default WMS* flag is active in the [Alternative Units of Measure tab of the item registry](/docs/erp-home/registers/items/create-new-item/item-registry/alternative-um), the values in the **Stock** and **Stock Level (FC)** fields will be expressed in the corresponding alternative unit of measure. However, if the item is managed in batches, the values in the **Stock** and **Stock Level (FC)** fields will be expressed in the item's primary unit of measure, even if the "Default WMS" flag is active.
 :::
 
 To proceed with the adjustment, it is necessary that there is only one record present in the results grid.     
