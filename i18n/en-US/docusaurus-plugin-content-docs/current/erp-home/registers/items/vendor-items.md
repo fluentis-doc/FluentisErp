@@ -1,6 +1,6 @@
 ---
 title: Vendor Items
-sidebar_position: 3
+sidebar_position: 3.1
 ---
 
 The form opens via the path **Home > Items > Item Search** and allows for the search of all purchased items related to various suppliers and to insert new ones.

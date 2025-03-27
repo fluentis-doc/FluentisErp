@@ -1,6 +1,6 @@
-----
-title: New Item
-sidebar_position: 1.1
+---
+title: New item
+sidebar_position: 3
 ---
 
 **Introduction**: [Identification of products and related parts](/docs/erp-home/registers/items/master-item-intro) 
