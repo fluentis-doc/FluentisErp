@@ -164,8 +164,6 @@ For example, an ExtraData defined on the **FSItem** object (Item) can be propaga
 
 To manage the propagation from a main object to a derived one, it is necessary to have the ExtraData active on both objects in the **Activations** tab and then manage the propagation through the appropriate **propagation** tab.
 
-### Inserting the ExtraData into the detail form
-
 ### Inserimento dell'ExtraData nella form di dettaglio
 
 Dopo aver aperto la form di dettaglio dell'**ordine di vendita** interessato, per includere l'ExtraData nella form di dettaglio possiamo utilizzare il **form navigator** e **l'object navigator**.  
