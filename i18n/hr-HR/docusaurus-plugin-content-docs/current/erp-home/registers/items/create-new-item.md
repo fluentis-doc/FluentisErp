@@ -30,7 +30,7 @@ Nakon što su definirane sve obavezne značajke članka, nastavlja se s unosom s
 > **Ažuriranje LF LV s Formulom**: gumb koji omogućuje ažuriranje prodajnih cijena putem određenih formula, polazeći od cjenika;      
 > [**Parametri MRP**](/docs/configurations/parameters/production/mrp-parameters/search-mrp-parameters): gumb koji omogućuje pristup *MRP Parametrima* tog članka, gdje se definiraju parametri potrebni za upravljanje tim člankom u proizvodnji; ovaj gumb pronaći ćete i unutar drugih obrazaca koji se odnose na proizvodni dio.  
 
-## 3. **Općenito**
+## 2. **Općenito**
 
 Unutar ove Kartice moguće je definirati sljedeće opće podatke:
 
