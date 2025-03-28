@@ -4,138 +4,137 @@ sidebar_position: 1
 ---
 
 ### Patch 707.1-0025 - 21/03/2025  
-> - SD – Al momento dell’evasione degli Ordini Clienti in Fattura, le righe di tipo nota vengono ora riportate con il campo Imponibile non valorizzato (#TT01166/25)
-> - WMS – In gestione spunta e conferma picking ora viene proposto da confermare il primo articolo del picking. (#TT01091/25)
-> - WMS – Coretto bug in gestione spunta e conferma picking che non caricava correttamente i dati dell’articolo se ne veniva letto uno diverso da quello caricato. (#TT01097/25)
-> - SD – Nelle Fatture di Vendita scaricate per cui è stato generato il documento Sdi le quantità e i prezzi degli articoli non sono più modificabili (#TT00881/25)
-> - ARM – Fix ItemNature for BusinessObjectInformation
-> - WM – new report RO – check FIFO values
-> - SD – Nella form di Dettaglio righe Ordini clienti è stata bloccata la possibilità di applicare un filtro sulla colonna Quantità residua - Modifications in sales order item details form that can have an impact on a profile (#TT01000/25)
-> - MES – Corretto bug nel calcolo delle quantità dei materiali delle dichiarazioni di produzione nel caso in cui il materiale avesse quantità fissa in distinta base. (#TT01176/25)
-> - MES - Ora le Causali di sospensione sono filtrate per Società per Divisione. (#TT01351/25)
+> - SD - Al momento dell’evasione degli Ordini Clienti in Fattura, le righe di tipo nota vengono ora riportate con il campo Imponibile non valorizzato (#TT01166/25)
+> - WMS - In gestione spunta e conferma picking ora viene proposto da confermare il primo articolo del picking (#TT01091/25)
+> - WMS - Coretto bug in gestione spunta e conferma picking che non caricava correttamente i dati dell’articolo se ne veniva letto uno diverso da quello caricato (#TT01097/25)
+> - SD - Nelle Fatture di Vendita scaricate per cui è stato generato il documento Sdi le quantità e i prezzi degli articoli non sono più modificabili (#TT00881/25)
+> - ARM - Correzione ItemNature per BusinessObjectInformation
+> - WM - nuovo report RO - verifica valori FIFO
+> - SD - Nella form di Dettaglio righe Ordini clienti è stata bloccata la possibilità di applicare un filtro sulla colonna Quantità residua - Modifiche nel modulo di dettaglio righe Ordini Clienti che possono avere un impatto su un profilo (#TT01000/25)
+> - MES - Corretto bug nel calcolo delle quantità dei materiali delle dichiarazioni di produzione nel caso in cui il materiale avesse quantità fissa in distinta base (#TT01176/25)
+> - MES - Ora le Causali di sospensione sono filtrate per Società per Divisione (#TT01351/25)
 > - SCS - ordine conto lavoro, corretto errore controllo ubicazione nella riga materiale (#TT01002/25)
-> - SCM - Corretto errore nella Modifica massiva degli Ordini fornitore che non aggiornava correttamente lo stato dell'ordine nel caso di evasione forzata (#TT01259/25).
-> - SCM - Corretto errore negli Ordini Fornitore che non riportava il flag Prezzo manuale su tutte le righe quando si utilizzava il pulsante Suddividi quantità in più date consegna (#TT01035/25).
-> - PM: Interventi – servizi , cambiato parametro nell’algoritmo dell’assegnazione prezzo. Ora è sempre abilitata la ricerca in tutti i listini predefiniti.
+> - SCM - Corretto errore nella Modifica massiva degli Ordini fornitore che non aggiornava correttamente lo stato dell'ordine nel caso di evasione forzata (#TT01259/25)
+> - SCM - Corretto errore negli Ordini Fornitore che non riportava il flag Prezzo manuale su tutte le righe quando si utilizzava il pulsante Suddividi quantità in più date consegna (#TT01035/25)
+> - PM: Interventi - servizi , cambiato parametro nell’algoritmo dell’assegnazione prezzo. Ora è sempre abilitata la ricerca in tutti i listini predefiniti.
 > - CO - nel report ‘Consolidato di progetto’, filtro per società sulla tendina ‘consolidato di commess’ (#TT01128/25)
 > - FI - revisione calcolo ammortamento su categorie impostate sul conteggio giornaliero (#TT01271/25)
-> - CO - Errore grammaticale from stampa riclassificazione ( TT01364/25)
-> - FI – Stampa liquidazione iva annuale – Corretta anomalia che impediva la visualizzazione dei totali per codice iva (#TT00867/25)
+> - CO - Errore grammaticale from stampa riclassificazione (#TT01364/25)
+> - FI - Stampa liquidazione iva annuale - Corretta anomalia che impediva la visualizzazione dei totali per codice iva (#TT00867/25)
 > - SH - corretto errore data creazione conto contabilità creato da contatto (#TT01050/25)
-> - MS – Corretto bug in pianificazione generale nel caso di impiego del flag Considera anche le alternative dei materiali. (#TT01345/25)
-> - WM – ripristinato valore in anagrafica articolo tab listino fornitori campo conto fornitore (TT01233/25)
-> - SH – WEB: Corretto il funzionamento del filtro di ricerca nella form delle Anagrafiche Articoli e Contatti (#TT01356/25)
-> - WM – In visualizzazione giacenze, implementata la possibilità di filtrare nelle colonne utilizzando il carattere “%”. (#TT00773/25)
-> - PM: SAL progetto - gestito caso per cui in mancanza di date inizio-fine nella dichiarazione attività, l'elaborazione viene fatta sulla data attività principale (#TT01286/25).
-> - Solved bug on duplicate task to set ItemNature to clientnature
-> - SCM – Nella form di Dettaglio righe Ordini fornitori è stata bloccata la possibilità di applicare un filtro sulla colonna Data documento evasione (#TT00786/25).
-(modification on Purchase Order Details Item that can have an impact on a profile)
+> - MS - Corretto bug in pianificazione generale nel caso di impiego del flag Considera anche le alternative dei materiali (#TT01345/25)
+> - WM - ripristinato valore in anagrafica articolo tab listino fornitori campo conto fornitore (#TT01233/25)
+> - SH - WEB: Corretto il funzionamento del filtro di ricerca nella form delle Anagrafiche Articoli e Contatti (#TT01356/25)
+> - WM - In visualizzazione giacenze, implementata la possibilità di filtrare nelle colonne utilizzando il carattere “%” (#TT00773/25)
+> - PM: SAL progetto - gestito caso per cui in mancanza di date inizio-fine nella dichiarazione attività, l'elaborazione viene fatta sulla data attività principale (#TT01286/25)
+> - Risolto bug sulla duplicazione dell’attività per impostare ItemNature su Clientnature
+> - SCM - Nella form di Dettaglio righe Ordini fornitori è stata bloccata la possibilità di applicare un filtro sulla colonna Data documento evasione (#TT00786/25)  (*Modifica nei dettagli dell’Ordine Fornitore che può avere un impatto su un profilo*)
 > - FI - revisione contabilizzazione chiusura/riapertura conti per caso di periodo senza costi o senza ricavi (#TT00308/25)
 > - PM: calcolo SAL progetto - costi e ricavi fatture di vendita, costi fatture di acquisto - introdotto calcolo dei valori proporzionato su data competenza fattura e range date elaborazione SAL (#TT01289/25)
 > - PM: duplica progetto - ora viene anche considerato il tipo intervento pianificato nella procedura di duplica (#TT01394/25)
 > - PM: interventi - piano di fatturazione. Risolta anomalia in caso di cancellazione contemporanea del piano di fatturazione e del relativo servizio collegato senza salvare tra i due passaggi (#TT01382/25)
 > - PM: attività con ora fine nel giorno successivo, gestita corretta suddivisione nelle righe servizi di un intervento per le ore relative ad una giornata e le ore relative alla giornata successiva (#TT01287/25)
 > - PM: attività con ora fine nel giorno successivo, gestita corretta suddivisione nelle righe servizi di un intervento per le ore relative ad una giornata e le ore relative alla giornata successiva (#TT01287/25)
-> - MES - Negli Ordini di produzione è stata data la possibilità di prenotare un lotto materiale, da un magazzino gestito ad ubicazione, senza doverla necessariamente specificare. (#TT01056/25)
-> - ARM - fix for changing expression type in web api (#TT01454/25)
-> - PM - End hour is resetting when recurrence form is used; fixes for deleting FSWorkReportService (#TT01376/25)
-> - WM - Creazione DDT/Fatture da Picking: Vengono utilizzati per il raggruppamento i parametri di raggruppamento presenti tra i parametri di raggruppamento DDT e Fatture presente in Configurazione. I dati non ri raggruppamento vengono presi dall'anagrafica cliente mentre quelli di raggruppamento dal documento raggruppato. (rif ticket 1430/25,  1299/25)
-> - QY - Taratura strumenti – Alla creazione manuale (non pianificata) di una taratura strumento, viene ora riportato correttamente il “Tipo taratura” impostato nei “Parametri Taratura Strumenti” alla voce “Tipo taratura manuale”.
- (Riferimento ticket #TT01100/25).
-> - CRM/CO/CPM/FI/PR/SH - disabilitato il filtro di griglia per colonne calcolate (#TT00793/25). Changes were made in calculated fields of forms : ContactFilterResults, ContactOpportunityFilterResults, AreaPosting, AreaProjectPosting, DuplicatePhysicalPosting, PeriodTypeRWFilterResults, PhysicalFlowRWFilterResults, PhysicalMovementByItemAndJobRWFilterResults, PhysicalPostingRWFilterResults, ReclassificationsCompDetail, RecordCostProfitTab, RecordProjectTab, AdjustmentRecordsCostTab, AdjustmentRecordsRevenueTab, ClosureModelListAccountFilterResults, ClosureModelListProjectFilterResults, ClosureValorizationFilterResults, ConsolidationListAccountFilterResults, ConsolidationListProjectFilterResults, CategoryRWFilterResults, TargetingRWFilterResults, VariableRWFilterResults, AccountCompensationTypeRWFilterResults, AdjustmentRecordsManagementTab, BankImportRWFilterResults, CertificationHold, CertificationHoldRWFilterResults, DeductionPaidRWFilterResults, EmploymentCostElementRWFilterResults, IntrastatTransactionNatureRWFilterResults, PostingCostProfitTab, PostingIntrastatTab, PostingProjectTab, ProfessionalCostCenter, AdvanceMaturityFilterResults, AutomaticDepreciationFilterResult, BankLoanFilterResults, EmployeeFilterResults, EmploymentCostElementFilterResults, FixedAssetDepreciationFilterResult, FixedAssetFilterResults, MaturityCashManagementFilterResults, MaturityFilterResults, MaturityFilterResultsSimple, ObjectiveDepreciationFilterResult, PostingCostCenterDefaultFilterResults, PostingLedgerViewAccountFilterResults, QuarterlyInvoiceCommunicationFilterResults, IntrastatSexies,PayrollResourceActivity, PayrollResourceActivityFilterResults, BasicCourseFilterResults, AdvancedTypesRWFilterResults, AdvanceManagementPresentationTab, BillsTypesRWFilterResults, CashFlow, CreditManagementRWFilterResult, AdvanceFilterResults, BillsTypesFilterResults, CreditManagementFilterResult, CustomerLastStatementFilterResults, ProimissoryListFilterResults, UnpaidFilterResults, AreaRWFilterResults, CityRWFilterResults, ContactAlternativeRWFilterResults, CountryRWFilterResults, GroupAccountRWFilterResults, ProvinceRWFilterResults, RegionRWFilterResults, CityFilterResults, CompanyFilterResults, NomenclatureFilterResults, ProvinceFilterResults, RegionFilterResults. The profile can be affected by the changes.
+> - MES - Negli Ordini di produzione è stata data la possibilità di prenotare un lotto materiale, da un magazzino gestito ad ubicazione, senza doverla necessariamente specificare (#TT01056/25)
+> - ARM - correzione per la modifica del tipo di espressione nella web API (#TT01454/25)
+> - PM - L’ora di fine si resetta quando si utilizza il modulo di ricorrenza; correzioni per l’eliminazione di FSWorkReportService (#TT01376/25)
+> - WM - Creazione DDT/Fatture da Picking: Vengono utilizzati per il raggruppamento i parametri di raggruppamento presenti tra i parametri di raggruppamento DDT e Fatture presente in Configurazione. I dati non ri raggruppamento vengono presi dall'anagrafica cliente mentre quelli di raggruppamento dal documento raggruppato (#TT01430/25 - #TT01299/25)
+> - QY - Taratura strumenti - Alla creazione manuale (non pianificata) di una taratura strumento, viene ora riportato correttamente il “Tipo taratura” impostato nei “Parametri Taratura Strumenti” alla voce “Tipo taratura manuale”.
+ (#TT01100/25)
+> - CRM/CO/CPM/FI/PR/SH - disabilitato il filtro di griglia per colonne calcolate (#TT00793/25) Sono state apportate modifiche ai campi calcolati dei moduli: ContactFilterResults, ContactOpportunityFilterResults, AreaPosting, AreaProjectPosting, DuplicatePhysicalPosting, PeriodTypeRWFilterResults, PhysicalFlowRWFilterResults, PhysicalMovementByItemAndJobRWFilterResults, PhysicalPostingRWFilterResults, ReclassificationsCompDetail, RecordCostProfitTab, RecordProjectTab, AdjustmentRecordsCostTab, AdjustmentRecordsRevenueTab, ClosureModelListAccountFilterResults, ClosureModelListProjectFilterResults, ClosureValorizationFilterResults, ConsolidationListAccountFilterResults, ConsolidationListProjectFilterResults, CategoryRWFilterResults, TargetingRWFilterResults, VariableRWFilterResults, AccountCompensationTypeRWFilterResults, AdjustmentRecordsManagementTab, BankImportRWFilterResults, CertificationHold, CertificationHoldRWFilterResults, DeductionPaidRWFilterResults, EmploymentCostElementRWFilterResults, IntrastatTransactionNatureRWFilterResults, PostingCostProfitTab, PostingIntrastatTab, PostingProjectTab, ProfessionalCostCenter, AdvanceMaturityFilterResults, AutomaticDepreciationFilterResult, BankLoanFilterResults, EmployeeFilterResults, EmploymentCostElementFilterResults, FixedAssetDepreciationFilterResult, FixedAssetFilterResults, MaturityCashManagementFilterResults, MaturityFilterResults, MaturityFilterResultsSimple, ObjectiveDepreciationFilterResult, PostingCostCenterDefaultFilterResults, PostingLedgerViewAccountFilterResults, QuarterlyInvoiceCommunicationFilterResults, IntrastatSexies,PayrollResourceActivity, PayrollResourceActivityFilterResults, BasicCourseFilterResults, AdvancedTypesRWFilterResults, AdvanceManagementPresentationTab, BillsTypesRWFilterResults, CashFlow, CreditManagementRWFilterResult, AdvanceFilterResults, BillsTypesFilterResults, CreditManagementFilterResult, CustomerLastStatementFilterResults, ProimissoryListFilterResults, UnpaidFilterResults, AreaRWFilterResults, CityRWFilterResults, ContactAlternativeRWFilterResults, CountryRWFilterResults, GroupAccountRWFilterResults, ProvinceRWFilterResults, RegionRWFilterResults, CityFilterResults, CompanyFilterResults, NomenclatureFilterResults, ProvinceFilterResults, RegionFilterResults. *Il profilo può essere influenzato dai cambiamenti*
 > - FI - tabella categorie cespiti, incrementata la dimensione del campo Descrizione categoria (#TT01428/25)
-> - WM - Nella webapi di import ed export picking è stata implementata la possibilità di importare ed esportare i dettagli della spunta. (#TT01142/25)
+> - WM - Nella webapi di import ed export picking è stata implementata la possibilità di importare ed esportare i dettagli della spunta (#TT01142/25)
 > -  SH - Import excel - Revisione degli Import da excel: nuovo campo per suddividere l'import in blocchi di N elementi per poter migliorare le performance; nella configurazione dei parametri ora è possibilità definire che abbiano valore Null; controllo dei dati obbligatori in fase di validazione dei dati; validazione di campi obbligatori, se il campo obbligatorio (evidenziato in rosso) non è valorizzato appare un messaggio di errore; (#TT04900/24)
 
 ### Patch 707.1-0024 - 13/03/2025  
-> - SD – Stampa Lista Fatture – corretta anomalia in ordinamento per numero (#TT01135/25)
-> - FI – Stampa Lista Partite – corretta anomali che impediva la stampa (#TT01205/25)
+> - SD - Stampa Lista Fatture - corretta anomalia in ordinamento per numero (#TT01135/25)
+> - FI - Stampa Lista Partite - corretta anomali che impediva la stampa (#TT01205/25)
 > - PM: Ricerca attività - aggiunta gestione ricerca per data anche per le attività senza data inizio-fine con sola data principale (#TT00809/25)
 > - Revisione campo ‘Codice fiscale sostituto subentrante’
 > - Workflow - Corretta anomalia in fase di caricamento dati sulle tab (#TT01164/25)
-> - MS - Corretto bug nel calcolo delle ore inizio e fine delle fasi nella procedura di schedulazione a capacità finita. (#TT00820/25)
-> - Hide confirm button and align validation login for settings page on Supervisor scheduler service
-> - FI - nelle scritture di assestamento, abilitazione della cancellazione da tastiera delle righe selezionate. (#TT01093/25)
-> - FI - revisione gestione rollback della procedura Ammortamenti fiscali. (#TT01167/25)
-> - WMS – Migliorato l’help lotti del WMS che ora visualizza i lotti filtrati per l’articolo selezionato.  (#TT01083/25)
-> - WM Picking: Creazione DDT/Fattura - Sono stati tolti i parametri di raggruppamento nella procedura e sono stati uniformati alle procedure di raggruppamento che utilizzano i parametri di raggruppamento (in Parametri Area Vendita Raggruppamento DDT o Raggruppamento Fattura la procedura Creazione DDT/Fattura da Picking. (rif. ticket 1315/25 e 1299/25)
-> - WM – Stampa inventario – Modificato layout stampa inventario(#TT00658/25)
-> - MES – Corretto il layout del report Foglio di lavoro presente nel filtro degli ordini di produzione. (#TT01027/25)
-> - SCS – Corretto errore nella registrazione di un Rientro di Conto lavoro che, in caso di rollback e successivo carico di un rientro valorizzato, non movimentava a magazzino gli articoli gestiti a lotti (#TT01040/25).
-> - MES - Corretto bug nelle dichiarazioni di produzione. Nel caso in cui si crei un avanzamento con quantità zero e poi si vada a cambiare la quantità, ora viene mostrato il messaggio che chiede se ricalcolare o meno i materiali. (#TT00374/25)
-> - SCM – Corretto errore generico che si verificava in fase di caricamento automatico di una Fattura di Acquisto a magazzino (#TT00660/25).
+> - MS - Corretto bug nel calcolo delle ore inizio e fine delle fasi nella procedura di schedulazione a capacità finita (#TT00820/25)
+> - Nascondi il pulsante di conferma e allinea la validazione del login per la pagina delle impostazioni nel servizio Supervisor scheduler
+> - FI - nelle scritture di assestamento, abilitazione della cancellazione da tastiera delle righe selezionate (#TT01093/25)
+> - FI - revisione gestione rollback della procedura Ammortamenti fiscali (#TT01167/25)
+> - WMS - Migliorato l’help lotti del WMS che ora visualizza i lotti filtrati per l’articolo selezionato.  (#TT01083/25)
+> - WM Picking: Creazione DDT/Fattura - Sono stati tolti i parametri di raggruppamento nella procedura e sono stati uniformati alle procedure di raggruppamento che utilizzano i parametri di raggruppamento; in Parametri Area Vendita Raggruppamento DDT o Raggruppamento Fattura la procedura Creazione DDT/Fattura da Picking (#TT01315/25 - #TT01299/25)
+> - WM - Stampa inventario - Modificato layout stampa inventario(#TT00658/25)
+> - MES - Corretto il layout del report Foglio di lavoro presente nel filtro degli ordini di produzione (#TT01027/25)
+> - SCS - Corretto errore nella registrazione di un Rientro di Conto lavoro che, in caso di rollback e successivo carico di un rientro valorizzato, non movimentava a magazzino gli articoli gestiti a lotti (#TT01040/25)
+> - MES - Corretto bug nelle dichiarazioni di produzione. Nel caso in cui si crei un avanzamento con quantità zero e poi si vada a cambiare la quantità, ora viene mostrato il messaggio che chiede se ricalcolare o meno i materiali (#TT00374/25)
+> - SCM - Corretto errore generico che si verificava in fase di caricamento automatico di una Fattura di Acquisto a magazzino (#TT00660/25)
 > - FI - ottimizzazione procedure di creazione automatica intrastat, revisione gestione natura transazione per note di credito senza data riferimento fattura (#TT01061/25)
-> - WM – bug fix per gestione prototipi
-> - MS – added progress bar for release planned orders (#TT01062/25)
-> - PR - nella form Controllo rimesse del modulo Rischio cliente, revisione gestione report di stampa. (#TT01136/25)
-> - FI – Registrazioni contabili: revisione del messaggio di avviso quando si apre una registrazione contabile che ha già la sua scheda cespiti aperta. (TT01023/25)
+> - WM - bug fix per gestione prototipi
+> - MS - added progress bar for release planned orders (#TT01062/25)
+> - PR - nella form Controllo rimesse del modulo Rischio cliente, revisione gestione report di stampa (#TT01136/25)
+> - FI - Registrazioni contabili: revisione del messaggio di avviso quando si apre una registrazione contabile che ha già la sua scheda cespiti aperta (#TT01023/25)
 
 ### Patch 707.1-0023 - 07/03/2025  
-> - FI - Corretto problema del mancato riporto dei campi dl paese d’origine, paese di provenienza e provincia di destinazione negli elenchi intrastat. Corretto mancato riporto del campo modo trasporto nella stampa. Rif. #TT05326/24
-> - ARM – Busines Object Browser - fix filter on View/Table function names
+> - FI - Corretto problema del mancato riporto dei campi dl paese d’origine, paese di provenienza e provincia di destinazione negli elenchi intrastat. Corretto mancato riporto del campo modo trasporto nella stampa (#TT05326/24)
+> - ARM - Busines Object Browser - fix filter on View/Table function names
 > - CRM: data chiusura contatto - corretto funzionamento nei filtri di ricerca dei contatti (#TT00927/25)
-> - FI - Stampa Certificazione Unica: Revisione descrizione del percipiente nel caso in cui si tratti di una persona giuridica (TT01098/25)
-> - FI - revisione creazione partite d’anticipo e partite da import excel (#TT01171/25).
+> - FI - Stampa Certificazione Unica: Revisione descrizione del percipiente nel caso in cui si tratti di una persona giuridica (#TT01098/25)
+> - FI - revisione creazione partite d’anticipo e partite da import excel (#TT01171/25)
 > - Add ConnectionTimeout to BizLink Service
-> - CO - nelle procedure di Creazione chiusura infrannuale, Contabilizzazione rimanenze, aggiornamento stato partite, allineamento tecnico per tracing procedure (TT05604/24)
-> - PM: Risolto caso in procedura Generazione interventi da attività con condizioni di raggruppamento – se impostato articolo in dichiarazione attività, questo non veniva considerato (#TT01170/25)
-> - SCS – Corretto errore in fase di rilascio di un Ordine pianificato di Conto lavoro che riportava sull’articolo l’aliquota IVA del cliente e non del fornitore (#TT00959/25).
+> - CO - nelle procedure di Creazione chiusura infrannuale, Contabilizzazione rimanenze, aggiornamento stato partite, allineamento tecnico per tracing procedure (#TT05604/24)
+> - PM: Risolto caso in procedura Generazione interventi da attività con condizioni di raggruppamento - se impostato articolo in dichiarazione attività, questo non veniva considerato (#TT01170/25)
+> - SCS - Corretto errore in fase di rilascio di un Ordine pianificato di Conto lavoro che riportava sull’articolo l’aliquota IVA del cliente e non del fornitore (#TT00959/25)
 > - SCM - Nella procedura di Importazione prezzi fornitori, sono state corrette le intestazioni di colonna per 'Classe articolo' e 'Codice articolo', che erano invertite (#TT05100/24)"
-> - PR - Risolto problema nei tempi di elaborazione di alcune tipologia di flusso finanziario nel cash flow, ad esempio RDA, migliorate le prestazioni generali nell'elaborazione del cashflow e dell'apertura delle maschere e implementata la barra di stato avanzamento elaborazione. Rif. #TT00408/25
+> - PR - Risolto problema nei tempi di elaborazione di alcune tipologia di flusso finanziario nel cash flow, ad esempio RDA, migliorate le prestazioni generali nell'elaborazione del cashflow e dell'apertura delle maschere e implementata la barra di stato avanzamento elaborazione (#TT00408/25)
 > - FI - revisione e ottimizzazione processo di rollback delle contabilizzazioni (#TT00647/25)
 > - SD - Shipping Calendar implementations (#TT00735/25,#TT00734/25,#TT00733/25, #TT00456/25, #TT04936/24)
-> - SD: Spedizioni - Introdotta data di fine validità in anagrafica autisti , che viene confrontata con la data del documento di spedizione. Sono di conseguenza filtrate anche le combo di selezione autisti. (TT04935/24)
-> - WM – In fase di creazione DDT e fattura da un picking, è stata implementata la possibilità di raggruppare, nel DDT o nella fattura, le righe spuntate dello stesso articolo tramite il flag Raggruppa righe spuntate. (#TT00481/25)
-> - FI - Intrastat - Problema su gestione pesi inferiori a 1kg e Note di credito mese corrente ( TT01061/25)
-> - ARM – DB Browser - fix filter on Views/Table Valued Functions
-> - WM - Nelle spedizioni, in fase di creazione del picking non vengono più riportati anche tipi di riga diversi da tipi 1 e 5. (#TT01009/25)
-> - SCM – Corretta la memorizzazione dei filtri impostati nella form Dettaglio righe ordini, che non venivano salvati correttamente nei profili (#TT01063/25).
+> - SD: Spedizioni - Introdotta data di fine validità in anagrafica autisti , che viene confrontata con la data del documento di spedizione. Sono di conseguenza filtrate anche le combo di selezione autisti (#TT04935/24)
+> - WM - In fase di creazione DDT e fattura da un picking, è stata implementata la possibilità di raggruppare, nel DDT o nella fattura, le righe spuntate dello stesso articolo tramite il flag Raggruppa righe spuntate (#TT00481/25)
+> - FI - Intrastat - Problema su gestione pesi inferiori a 1kg e Note di credito mese corrente (#TT01061/25)
+> - ARM - DB Browser - fix filter on Views/Table Valued Functions
+> - WM - Nelle spedizioni, in fase di creazione del picking non vengono più riportati anche tipi di riga diversi da tipi 1 e 5 (#TT01009/25)
+> - SCM - Corretta la memorizzazione dei filtri impostati nella form Dettaglio righe ordini, che non venivano salvati correttamente nei profili (#TT01063/25)
 -Modifications in purchase item details form that can have an impact on a profile
-> - SCM – Corretto errore nel Carico di un DDT o di una Fattura di Acquisto, che non riportava il Fornitore nell’anagrafica lotto quando il codice lotto veniva modificato manualmente (#TT01124/25).
+> - SCM - Corretto errore nel Carico di un DDT o di una Fattura di Acquisto, che non riportava il Fornitore nell’anagrafica lotto quando il codice lotto veniva modificato manualmente (#TT01124/25)
 
 ### Patch 707.1-0022 - 28/02/2025
 > - FI - revisione creazione nuova Dichiarazione iva periodica (#TT00975/25)
-> - FI - revisione filtro stampa liquidazione iva periodica con periodicità trimestrale e calcolo acconto trimestrale (#TT00866/25).
-> - FI - Conto analitica con importo a zero in contabilizzazione fattura di vendita con righe omaggio senza rivalsa ( TT00316/25)
-> - SCM - la contabilizzazione dall’interno della fattura di acquisto (tab riepiloghi) ora imposta la data registrazione uguale alla data documento se questo è superiore alla data ultima registrazione del registro iva di riferimento, e imposta la data competenza rispetto alle impostazioni dei parametri utente. (#TT04804/24)
-> - SCM – Stampa Portafoglio ordini a quantità - Corretta visualizzazione di dettaglio fatture (#TT00937/25)
-> - FI – Stampa Lista Partite – Corretto formato data in caso di raggruppamento per scadenza in dd/mm/yyyy (#TT00940/25)
-> - SD – Stampe conai – Corretta anomalia in caso di salto pagina (#TT00952/25)
-> - SD – Stampa Fattura di vendita immediata – Corretta anomalia sulla data in quanto in fase di export pdf non veniva esportata (#TT00984/25)
-> - SCM – Corretto errore nella procedura di Valorizzazione DDT di Acquisto e di rientro, che talvolta generava un doppio movimento di magazzino per gli articoli gestiti a lotti (#TT00596/25).
-> - SCM- Cambia layout per fatture di acquisto diChiusura documenti - filtra per ordine di essere correlato agli articoli(TT00550/25)”
-> - Arm – workflow – corretta anomalia sulla priorità (#TT00878/25)
+> - FI - revisione filtro stampa liquidazione iva periodica con periodicità trimestrale e calcolo acconto trimestrale (#TT00866/25)
+> - FI - Conto analitica con importo a zero in contabilizzazione fattura di vendita con righe omaggio senza rivalsa (#TT00316/25)
+> - SCM - la contabilizzazione dall’interno della fattura di acquisto (il tab riepiloghi) ora imposta la data registrazione uguale alla data documento se questo è superiore alla data ultima registrazione del registro iva di riferimento, e imposta la data competenza rispetto alle impostazioni dei parametri utente (#TT04804/24)
+> - SCM - Stampa Portafoglio ordini a quantità - Corretta visualizzazione di dettaglio fatture (#TT00937/25)
+> - FI - Stampa Lista Partite - Corretto formato data in caso di raggruppamento per scadenza in dd/mm/yyyy (#TT00940/25)
+> - SD - Stampe conai - Corretta anomalia in caso di salto pagina (#TT00952/25)
+> - SD - Stampa Fattura di vendita immediata - Corretta anomalia sulla data in quanto in fase di export pdf non veniva esportata (#TT00984/25)
+> - SCM - Corretto errore nella procedura di Valorizzazione DDT di Acquisto e di rientro, che talvolta generava un doppio movimento di magazzino per gli articoli gestiti a lotti (#TT00596/25)
+> - SCM- Cambia layout per fatture di acquisto diChiusura documenti - filtra per ordine di essere correlato agli articoli(#TT00550/25)”
+> - Arm - workflow - corretta anomalia sulla priorità (#TT00878/25)
 > - FI - nella creazione manuale delle partite, revisione salvataggio per assegnazione prossimo numero libero (#TT00507/25)
-> - SCM – Nei documenti di acquisto, quando il listino viene modificato manualmente, il prezzo viene aggiornato e proposto in base al nuovo listino (#TT00651/25).
-> - FI – Compensi: risolto problema in variazione compensi con Enasarco ( TT00606/25)
-> - SCM – Nella procedura di Duplica e manutenzione Listini fornitori l’arrotondamento viene ora applicato correttamente (#TT00642/25).
-> - FI – Stampa liquidazione IVA annuale: risolto errore nella stampa della liquidazione IVA annuale quando veniva attivato il flag nei parametri ‘Memorizza il numero dell'ultima pagina’ (TT00200/25)
-> - PR/FI/CO/SH/ CPM/CRM - revisione filtri di griglia per disabilitare l’opzione su alcune colonne ( TT00793/25). Changes were made in calculated fields of forms CustomerLastStatementFilterResults, CreditManagementFilterResult, BillsTypesFilterResults, AdvanceFilterResults, CreditManagementRWFilterResult, BillsTypesRWFilterResults, PayrollResourceActivity, IntrastatSexies, QuarterlyInvoiceCommunicationFilterResults, ObjectiveDepreciationFilterResult, MaturityFilterResultsSimple, MaturityCashManagementFilterResults, FixedAssetFilterResults, FixedAssetDepreciationFilterResult, EmploymentCostElementFilterResults, EmployeeFilterResults, BankLoanFilterResults, AutomaticDepreciationFilterResult, AdvanceMaturityFilterResults, PostingIntrastatTab, IntrastatTransactionNatureRWFilterResults, EmploymentCostElementRWFilterResults, CertificationHoldRWFilterResults, CertificationHold, AccountCompensationTypeRWFilterResults, VariableRWFilterResults, TargetingRWFilterResults, CategoryRWFilterResults, ConsolidationListProjectFilterResults, ConsolidationListAccountFilterResults, ClosureValorizationFilterResults, ClosureModelListProjectFilterResults, ClosureModelListAccountFilterResults, PeriodTypeRWFilterResults, ContactOpportunityFilterResults, ContactFilterResults, NomenclatureFilterResults, ContactAlternativeRWFilterResults. The profile can be affected by the changes.
+> - SCM - Nei documenti di acquisto, quando il listino viene modificato manualmente, il prezzo viene aggiornato e proposto in base al nuovo listino (#TT00651/25)
+> - FI - Compensi: risolto problema in variazione compensi con Enasarco (#TT00606/25)
+> - SCM - Nella procedura di Duplica e manutenzione Listini fornitori l’arrotondamento viene ora applicato correttamente (#TT00642/25)
+> - FI - Stampa liquidazione IVA annuale: risolto errore nella stampa della liquidazione IVA annuale quando veniva attivato il flag nei parametri ‘Memorizza il numero dell'ultima pagina’ (#TT00200/25)
+> - PR/FI/CO/SH/ CPM/CRM - revisione filtri di griglia per disabilitare l’opzione su alcune colonne (#TT00793/25) Changes were made in calculated fields of forms CustomerLastStatementFilterResults, CreditManagementFilterResult, BillsTypesFilterResults, AdvanceFilterResults, CreditManagementRWFilterResult, BillsTypesRWFilterResults, PayrollResourceActivity, IntrastatSexies, QuarterlyInvoiceCommunicationFilterResults, ObjectiveDepreciationFilterResult, MaturityFilterResultsSimple, MaturityCashManagementFilterResults, FixedAssetFilterResults, FixedAssetDepreciationFilterResult, EmploymentCostElementFilterResults, EmployeeFilterResults, BankLoanFilterResults, AutomaticDepreciationFilterResult, AdvanceMaturityFilterResults, PostingIntrastatTab, IntrastatTransactionNatureRWFilterResults, EmploymentCostElementRWFilterResults, CertificationHoldRWFilterResults, CertificationHold, AccountCompensationTypeRWFilterResults, VariableRWFilterResults, TargetingRWFilterResults, CategoryRWFilterResults, ConsolidationListProjectFilterResults, ConsolidationListAccountFilterResults, ClosureValorizationFilterResults, ClosureModelListProjectFilterResults, ClosureModelListAccountFilterResults, PeriodTypeRWFilterResults, ContactOpportunityFilterResults, ContactFilterResults, NomenclatureFilterResults, ContactAlternativeRWFilterResults. The profile can be affected by the changes.
 > - Ottimizzazione stampa “Brogliaccio di magazzino”
-> - MES – Nelle dichiarazioni di produzione i costi dei materiali vengono spalmati solo sui prodotti finiti e non sui prodotti alternativi. Il costo dei prodotti alternativi viene assegnato in base al costo proposto della causale che li carica a magazzino. (#TT00678/25)
-> - WM – Corretto bug nell’help scarico lotti che non visualizzava correttamente i dati tra la griglia principale e quella per ubicazione. (#TT00722/25)
-> - MS – Corretto bug sul funzionamento del pulsante Rilascio ordini pianificati presente nella procedura MRP. (#TT00837/25) (changed xamls: MrpDetailFilterResults, MrpDetailFilterWidget)
-> - MES – Corretto il layout del report Foglio di lavoro presente nel filtro degli ordini di produzione. (#TT01027/25)
-> - SCM – Corretta la visualizzazione dei campi Classe articolo e Codice articolo nella procedura di Importazione da Prezzi fornitore (#TT00715/25). 
+> - MES - Nelle dichiarazioni di produzione i costi dei materiali vengono spalmati solo sui prodotti finiti e non sui prodotti alternativi. Il costo dei prodotti alternativi viene assegnato in base al costo proposto della causale che li carica a magazzino (#TT00678/25)
+> - WM - Corretto bug nell’help scarico lotti che non visualizzava correttamente i dati tra la griglia principale e quella per ubicazione (#TT00722/25)
+> - MS - Corretto bug sul funzionamento del pulsante Rilascio ordini pianificati presente nella procedura MRP (#TT00837/25) (changed xamls: MrpDetailFilterResults, MrpDetailFilterWidget)
+> - MES - Corretto il layout del report Foglio di lavoro presente nel filtro degli ordini di produzione (#TT01027/25)
+> - SCM - Corretta la visualizzazione dei campi Classe articolo e Codice articolo nella procedura di Importazione da Prezzi fornitore (#TT00715/25) 
 o	Changes to the PurchasePriceListFromFileDetailFilterResults that can affect a profile on the form of duplicate and maintenance of purchase price list
-> - WM – Corretto errore che non permetteva la modifica della quantità del padre in una Registrazione con contropartita e scarico distinta base nel caso di articoli gestiti a lotti (#TT01026/25).
-> - MS – Corretto bug in sequenza fasi inerrente al pulsante Rilascio ordini pianificati di produzione. (#TT01031/25)
-> - WM – Corretto bug in distinta base legato al pulsante copia componente. (#TT00438/25)
+> - WM - Corretto errore che non permetteva la modifica della quantità del padre in una Registrazione con contropartita e scarico distinta base nel caso di articoli gestiti a lotti (#TT01026/25)
+> - MS - Corretto bug in sequenza fasi inerrente al pulsante Rilascio ordini pianificati di produzione (#TT01031/25)
+> - WM - Corretto bug in distinta base legato al pulsante copia componente (#TT00438/25)
 > - FI - revisione generazione file CU per carriage return finale errato (#TT00965/25)
-> - FI - Unlimited digit number on currency adjustment procedure ( TT00991/25). Changes were made in exchange field of form CurrencyAdjustmentAccounting.The profile can be affected by the changes.
+> - FI - Unlimited digit number on currency adjustment procedure (#TT00991/25) Changes were made in exchange field of form CurrencyAdjustmentAccounting.The profile can be affected by the changes.
 > - Modificata la stampa della comunicazione trimestrale iva, ordinamento dei periodi (#TT00981/25)
 > - PM: risolta visualizzazione diagramma nei progetti, nel caso di fatture con righe non codificate (#TT00985/25)
-> - SCS – Nei Rientri di Conto lavoro il prezzo dell’articolo viene ripreso dal Listino di Conto lavoro, se presente, altrimenti viene sempre proposto pari a zero (#TT00986/25).
-> - SD – Ottimizzata la ricerca nelle form di Evasione ordini e DDT nei documenti di Vendita (#TT00797/25 and TT01016/25).
-> - SCM and SD – Corretto errore in fase di Aggiornamento prezzi nella procedura di Duplica e Manutenzione Listini fornitori e Duplica e Manutenzione Listini di vendita (#TT01060/25)
-> - ARM – Fix for Workflow (#TT01086/25)
-> - FI - revisione gestione visualizzazione/memorizzazione/esportazione dati della Comunicazione iva periodica (lipe) nel caso in cui sia stato cancellato un periodo in dichiarazione iva periodica. (#TT00981/25)
+> - SCS - Nei Rientri di Conto lavoro il prezzo dell’articolo viene ripreso dal Listino di Conto lavoro, se presente, altrimenti viene sempre proposto pari a zero (#TT00986/25)
+> - SD - Ottimizzata la ricerca nelle form di Evasione ordini e DDT nei documenti di Vendita (#TT00797/25 and TT01016/25)
+> - SCM and SD - Corretto errore in fase di Aggiornamento prezzi nella procedura di Duplica e Manutenzione Listini fornitori e Duplica e Manutenzione Listini di vendita (#TT01060/25)
+> - ARM - Fix for Workflow (#TT01086/25)
+> - FI - revisione gestione visualizzazione/memorizzazione/esportazione dati della Comunicazione iva periodica (lipe) nel caso in cui sia stato cancellato un periodo in dichiarazione iva periodica (#TT00981/25)
 
 ### Patch 707.1-0021 - 20/02/2025
 > - Risolto bug nella generazione di codice in un algoritimo relativo alla sezione blockly
-> - MES – Nelle dichiarazioni di produzione la proposta dei materiali viene fatta indipendente dalla quantità dichiarata. (#TT04864/24)
-> - SH - fix ExtraData widget in ItemCodifier (TT00851/25)
-> - SH - Nell’import dell’oggetto FSLedgerAccount, abilitati i setter sui campi dei codici Abi/Cab per creare la banca d’appoggio automaticamente. (#TT00813/25)
+> - MES - Nelle dichiarazioni di produzione la proposta dei materiali viene fatta indipendente dalla quantità dichiarata (#TT04864/24)
+> - SH - fix ExtraData widget in ItemCodifier (#TT00851/25)
+> - SH - Nell’import dell’oggetto FSLedgerAccount, abilitati i setter sui campi dei codici Abi/Cab per creare la banca d’appoggio automaticamente (#TT00813/25)
 > - SD - Nella Stampa Conai, l'Anno di Riferimento viene inserito in base ai filtri impostati (#TT00723/25)
 > - ARM - Workflow - Corretta anomalia che generava documenti doppi in caso di azione automatica (#TT00333/25)
 > - CO - nuova riclassificazione, visualizzazione del tipo saldo in griglia sottoconti (#TT00826/25)
@@ -143,7 +142,7 @@ o	Changes to the PurchasePriceListFromFileDetailFilterResults that can affect a 
 > - SD - Nella Ricerca ordini, espandendo il dettaglio delle righe, vengono riportati Nostro e Vostro riferimento di testata (#TT00830/25)
 > - SD - Nella Ricerca Offerte, la Tile standard 'Scadute' riporta le offerte non confermate e con data fine validità anteriore ad oggi (#TT00825/25)
 > - FI - nelle stampe dei partitari, rivisto filtro ‘Mostra cauzioni’ (#TT00257/25)
-> - SCM – Ottimizzata la cancellazione di molti articoli dai documenti di acquisto (#TT01963/24).
+> - SCM - Ottimizzata la cancellazione di molti articoli dai documenti di acquisto (#TT01963/24)
 
 ### Patch 707.1-0020 - 13/02/2025
 > - CO - Ottimizzazione procedura chiusura infrannuale (#TT00699/25)
@@ -161,7 +160,7 @@ Nel caso venga impostato un diritto sulla transizione si potranno vedere i due s
 > - CRM - Nel Visit Report viene riportato l'Agente principale inserito in anagrafica Cliente o Contatto CRM (#TT00713/25)
 > - FI - revisione stampa liquidazione iva per la localizzazione serba, per problema in interfaccia browser (#TT00777/25)
 > - FI - Revisione tendina dei centri di costo quando nel piano dei conti è indicato solo dimensione e categoria centro (#TT00489/25)
-> - SH - Analisi Dispnibilità: Risolto errore filtro per Tipo Articolo se viene effettuata una chiamata custom (rif.ticket 790/25)
+> - SH - Analisi Dispnibilità: Risolto errore filtro per Tipo Articolo se viene effettuata una chiamata custom (#TT00790/25)
 > - MES - Corretto bug nella registrazione delle dichiarazioni di produzione (#TT00352/25)
 > - MES - Corretto bug nelle dichiarazioni di produzione. Nel caso in cui si crei un avanzamento con quantità zero e poi si vada a cambiare la quantità, ora viene mostrato il messaggio che chiede se ricalcolare o meno i materiali (#TT00374/25)
 > - WM - Corretto bug nel report Inventario a quantità valorizzato nel caso in cui venissero attivati il dettaglio per ubicazione e lotto (#TT00658/25)
@@ -203,7 +202,7 @@ Nel caso venga impostato un diritto sulla transizione si potranno vedere i due s
 
 ### Patch 707.1-0018 - 31/01/2025
 > - FI - Stampa lettere di sollecito - Risolta anomalia di arrotondamento sui valori monetari (#TT00361/25)
-> - SCM - Documenti acquisto in entrata: Risolto errore che si verificava durante l'impostazione del filtro sulla data dell'ultimo evento (rif. #TT00245/25)
+> - SCM - Documenti acquisto in entrata: Risolto errore che si verificava durante l'impostazione del filtro sulla data dell'ultimo evento (#TT00245/25)
 > - SD: Offerte multilivello - conversione in progetto. Corretto caso per cui i Giorni assegnati nel progetto non venivano calcolati contestualmente alla conversione da offerta (#TT00206/25)
 > - SCS - L’ubicazione inserita nella Mappa ubicazioni per articolo viene ora riportata anche negli Ordini e nei Rientri di Conto lavoro (#TT00154/25)
 > - Sh - Noticeboard/Bacheca - Unificata visualizzazione tra wpf e versione web della bacheca (#TT04205/24)

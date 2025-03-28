@@ -6,17 +6,17 @@ sidebar_position: 1
 ### Patch 545.1-0115- 07/03/2025
 > - FI - revisione filtro stampa liquidazione iva periodica con periodicità trimestrale e calcolo acconto trimestrale (#TT00866/25)
 > - FI - Errato calcolo liquidazione iva  ( #TT03165/24)
-> - FI - Stampa Liquidazione Iva periodica - non viene riportato il registro iva acquisti nella stampa ( TT01236/25)
+> - FI - Stampa Liquidazione Iva periodica - non viene riportato il registro iva acquisti nella stampa (#TT01236/25)
 
 ### Patch 545.1-0114- 28/02/2025
-> - Bizlink – Import excel fatture – Resi non obbligatori prezzo, unità di misura e iva per poter importare le righe nota (#TT00639/25)
+> - Bizlink - Import excel fatture - Resi non obbligatori prezzo, unità di misura e iva per poter importare le righe nota (#TT00639/25)
 > - FI - revisione filtro stampa liquidazione iva periodica con periodicità trimestrale e calcolo acconto trimestrale (#TT00866/25)
 > - FI - Errato calcolo liquidazione iva  ( #TT03165/24)
 > - Ottimizzazione stampa “Brogliaccio di magazzino”
-> - PR - Campo "Progresso" nel modulo Gestione della liquidità ( TT02060/24). Changes were made to field progressive of form Gestione della liquidità. The profile can be affected by the changes.
+> - PR - Campo "Progresso" nel modulo Gestione della liquidità (#TT02060/24) Changes were made to field progressive of form Gestione della liquidità. The profile can be affected by the changes.
 > - FI - revisione contabilizzazione assestamenti con opzione ‘singola registrazione’, ripristino a null del campo di link ‘-1’ quando la registrazione non può essere salvata causa squadrature
-> - FI - Unlimited digit number on currency adjustment procedure ( TT00991/25). Changes were made in exchange field of form CurrencyAdjustmentAccounting.The profile can be affected by the changes.
-> - FI – partial payments for vat delayed ( TT01013/25)
+> - FI - Unlimited digit number on currency adjustment procedure (#TT00991/25) Changes were made in exchange field of form CurrencyAdjustmentAccounting.The profile can be affected by the changes.
+> - FI - partial payments for vat delayed (#TT01013/25)
 
 ### Patch 545.1-0113- 14/02/2025
 > - FI - revisione stampa ‘Differenza partite aperte saldo contabile’, visualizzazione risultati anche per stampa ‘dettagliata’ (#TT00121/24)
@@ -252,7 +252,7 @@ sidebar_position: 1
 
 > - CRM - Risolta eccezione uscente cliccando il tasto Invia in una Newsletter (#TT02563/23) 
 
-> - SCM - Importazione file xml- rivista formattazione della data nell’importazione del file xml (rif #TT03194/23) 
+> - SCM - Importazione file xml- rivista formattazione della data nell’importazione del file xml (#TT03194/23) 
 
 > - FI - RO aggiungere nuovi conti su FastStart 
 

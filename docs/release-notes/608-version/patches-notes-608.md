@@ -4,36 +4,36 @@ sidebar_position: 2
 ---
 
 ### Patch 608.1-0071 - 13/03/2025
-> - Add ConnectionTimeout to BizLink Service  FPS Ticket ID: #TT00803/25
-> - SD – Fix AgentSettlement calculation-sales invoices with more agents case(#TT01134/25)
-> - SD - Fix SalesOrder and SalesDeliveryNote execution-custom problem (#TT01227/25)
+> - Aggiunto ConnectionTimeout al servizio BizLink (#TT00803/25)
+> - SD - Fix calcolo AgentSettlement nel caso di fatture di vendita con più agenti (#TT01134/25)
+> - SD - Fix esecuzione SalesOrder e SalesDeliveryNote su problemi custom (#TT01227/25)
 > - revisione campo ‘Codice fiscale sostituto subentrante’
-> - MES - Corretto bug nella registrazione delle dichiarazioni di produzione. (#TT00352/25)
-> - MS - Corretto bug nel calcolo delle ore inizio e fine delle fasi nella procedura di schedulazione a capacità finita. (#TT00820/25)
-> - FI - nelle scritture di assestamento, abilitazione della cancellazione da tastiera delle righe selezionate. (#TT01093/25)
-> - FI – Registrazioni contabili: revisione del messaggio di avviso quando si apre una registrazione contabile che ha già la sua scheda cespiti aperta. (TT01023/25)
-> - WMS – In gestione spunta del WMS, ora è possibile andare in negativo per articoli gestiti a lotti se nei parametri iniziali di magazzino vengono attivati i relativi flag.  (#TT05102/24)
+> - MES - Corretto bug nella registrazione delle dichiarazioni di produzione (#TT00352/25)
+> - MS - Corretto bug nel calcolo delle ore inizio e fine delle fasi nella procedura di schedulazione a capacità finita (#TT00820/25)
+> - FI - nelle scritture di assestamento, abilitazione della cancellazione da tastiera delle righe selezionate (#TT01093/25)
+> - FI - Registrazioni contabili: revisione del messaggio di avviso quando si apre una registrazione contabile che ha già la sua scheda cespiti aperta (#TT01023/25)
+> - WMS - In gestione spunta del WMS, ora è possibile andare in negativo per articoli gestiti a lotti se nei parametri iniziali di magazzino vengono attivati i relativi flag.  (#TT05102/24)
 
 ### Patch 608.1-0070 - 28/02/2025
-> - FI – Stampa liquidazione IVA annuale: risolto errore nella stampa della liquidazione IVA annuale quando veniva attivato il flag nei parametri ‘Memorizza il numero dell'ultima pagina’ (TT00200/25)
-> - PR - Campo "Progresso" nel modulo Gestione della liquidità ( TT02060/24). Changes were made to field progressive of form Gestione della liquidità. The profile can be affected by the changes.
-> - MS – Corretto bug sul funzionamento del pulsante Rilascio ordini pianificati presente nella procedura MRP. (#TT00837/25)
-> - SD – Ottimizzata la ricerca nelle form di Evasione ordini e DDT nei documenti di Vendita (#TT00797/25 and TT01016/25).
+> - FI - Stampa liquidazione IVA annuale: risolto errore nella stampa della liquidazione IVA annuale quando veniva attivato il flag nei parametri ‘Memorizza il numero dell'ultima pagina’ (#TT00200/25)
+> - PR - Campo "Progresso" nel modulo Gestione della liquidità (#TT02060/24) Sono state apportate modifiche al campo progresso del modulo Gestione della liquidità. *Il profilo potrebbe essere influenzato dalle modifiche*
+> - MS - Corretto bug sul funzionamento del pulsante Rilascio ordini pianificati presente nella procedura MRP (#TT00837/25)
+> - SD - Ottimizzata la ricerca nelle form di Evasione ordini e DDT nei documenti di Vendita (#TT00797/25 and TT01016/25)
 > - FI - revisione generazione file CU per carriage return finale errato (#TT00965/25)
-> - FI - Unlimited digit number on currency adjustment procedure ( TT00991/25). Changes were made in exchange field of form CurrencyAdjustmentAccounting.The profile can be affected by the changes.
-> - SCS – Nei Rientri di Conto lavoro il prezzo dell’articolo viene ripreso dal Listino di Conto lavoro, se presente, altrimenti viene sempre proposto pari a zero (#TT00986/25).
+> - FI - Numero di cifre illimitato nella procedura di adeguamento valuta (#TT00991/25). Sono state apportate modifiche al campo cambio del modulo CurrencyAdjustmentAccounting. *Il profilo potrebbe essere influenzato dalle modifiche*
+> - SCS - Nei Rientri di Conto lavoro il prezzo dell’articolo viene ripreso dal Listino di Conto lavoro, se presente, altrimenti viene sempre proposto pari a zero (#TT00986/25)
 > - modificata la stampa della comunicazione trimestrale iva, ordinamento dei periodi (#TT00981/25)
-> - FI - revisione gestione visualizzazione/memorizzazione/esportazione dati della Comunicazione iva periodica (lipe) nel caso in cui sia stato cancellato un periodo in dichiarazione iva periodica. (#TT00981/25)
-> - FI - Corretto problema del mancato riporto dei campi dl paese d’origine, paese di provenienza e provincia di destinazione negli elenchi intrastat. Corretto mancato riporto del campo modo trasporto nella stampa. Rif. #TT05326/24
-> - FI - Riconciliazione movimenti c/c: risolto problema in contabilizzazione da riconciliazione movimenti c/c (TT05601/24)
+> - FI - revisione gestione visualizzazione/memorizzazione/esportazione dati della Comunicazione iva periodica (lipe) nel caso in cui sia stato cancellato un periodo in dichiarazione iva periodica (#TT00981/25)
+> - FI - Corretto problema del mancato riporto dei campi dl paese d’origine, paese di provenienza e provincia di destinazione negli elenchi intrastat. Corretto mancato riporto del campo modo trasporto nella stampa (#TT05326/24)
+> - FI - Riconciliazione movimenti c/c: risolto problema in contabilizzazione da riconciliazione movimenti c/c (#TT05601/24)
 
 ### Patch 608.1-0069 - 21/02/2025
 > - FI - revisione calcolo ammortamenti su categorie con flag ‘Incrementale’ (#TT00113/25)
-> - SCS – Se attivo nell’Ordine di Conto lavoro, il flag Prezzo manuale viene riportato anche nel Rientro creato mediante evasione da ordine (#TT05336/24).
+> - SCS - Se attivo nell’Ordine di Conto lavoro, il flag Prezzo manuale viene riportato anche nel Rientro creato mediante evasione da ordine (#TT05336/24)
 > - SCM - Risoluzione dell'errore che impediva la Valorizzazione di un DDT di acquisto di natura Reso, a seguito di un precedente Rollback della procedura (#TT00052/25)
 > - FI - Stampa Enasarco - Revisione somma in stampa Enasarco (#TT00766/25)
-> - FI - revisione filtro stampa liquidazione iva periodica con periodicità trimestrale e calcolo acconto trimestrale (#TT00866/25).
-> - SCS - Corretto errore generico in fase di registrazione di un Rientro di Conto lavoro (#TT00656/25). 
+> - FI - revisione filtro stampa liquidazione iva periodica con periodicità trimestrale e calcolo acconto trimestrale (#TT00866/25)
+> - SCS - Corretto errore generico in fase di registrazione di un Rientro di Conto lavoro (#TT00656/25) 
 
 ### Patch 608.1-0068 - 06/02/2025
 > - Rilascio stampa Certificazioni Uniche 2025
@@ -43,13 +43,13 @@ sidebar_position: 2
 > - WM- Corretto bug nella procedura di calcolo costi che in alcuni casi generava un exception (#TT00231/25)
 > - WM - Corretto errore nella procedura di Calcolo Costi che in alcuni casi resettava il valore del costo ultimo elaborato (#TT05527/24)
 > - MPS - Migliorata la generazione delle commesse di produzione da Sottoscorta per garantire il corretto funzionamento anche con molte righe (#TT00572/25)
-> - FI - Withholding tax declaration for 2025, alignment ( TT00236/25)
-> - SH - Fix new numeration from Numeration widget combobox context menu (#TT03655/23)
+> - FI - Dichiarazione della ritenuta d'acconto per il 2025, allineamento (#TT00236/25)
+> - SH - Corretto il nuovo sistema di numerazione dal menu contestuale della combobox del widget Numerazione (#TT03655/23)
 
 ### Patch 608.1-0067 - 30/01/2025
 > - WM - Corretto bug nella procedura di Sottoscorta (#TT05117/24)
 > - FI - revisione gestione segni centri di costo in contabilizzazione fatture di acquisto (#TT00013/25)
-> - FI - gestione assestamento form issues ( TT04549/24)
+> - FI - gestione assestamento form issues (#TT04549/24)
 > - SD - Le numerazioni con periodo 'Nessuno' non vengono più resettate all'inizio dell'anno; la numerazione dei documenti nel nuovo anno partirà dal numero più alto registrato nel periodo precedente (#TT00000/25)
 > - MES - Corretto bug in fase di registrazione delle segnalazioni di produzione nel caso di una fase intermedia successiva ad una fase esterna (#TT05515/24)
 > - MPS - In fase di creazione delle commesse dall’ordine cliente, l’unità di misura alternativa che viene ereditata nella commessa dall’ordine cliente (sempre se questa è tra quelle indicate nel tab UM alternative dell’anagrafica dell’articolo) (#TT05068/24)
@@ -57,11 +57,11 @@ sidebar_position: 2
 > - SCM, SCS - Le numerazioni con periodo 'Nessuno' non vengono più resettate a inizio anno; la numerazione dei documenti nel nuovo anno partirà dal numero maggiore inserito nell'anno precedente (#TT00020/25)
 > - WM - fix verifica giacenza per ogni scarico tra data scarico e data corrente (#TT02878/23)
 > - WM - Corretto bug nella rollback della procedura Scarico da spunta (#TT00286/25)
-> - FI - Vat settlement with flag 'calcola acconto' ( TT00414/25)
+> - FI - Vat settlement with flag 'calcola acconto' (#TT00414/25)
 > - Caricamento NIR - risolvere il problema quando la registrazione ha contrapartita di carico - proporre lotti(#TT00472/25)
 > - FI - la contabilizzazione degli assestamenti ora valorizza nei centri di costo il campo della divisione (#TT00314/25)
 > - FI - la contabilizzazione automatica degli storni fatture da ricevere ora gestisce i range di date competenza dall’operazione di origine (#TT00309/25)
-> - SH - Province Table conversion code from 4char to 4varchar ( TT00298/25)
+> - SH - Province Table conversion code from 4char to 4varchar (#TT00298/25)
 > - MPS - Corretti bug nella procedura di schedulazione a capacità finita che creavano una discrepanza tra le date indicate nelle fasi e quanto riportato nel grafico sottostante, inoltre corretto anche il calcolo della data ora fine delle singole fasi (#TT00325/25 - #TT04638/24) 
 > - MPS - Corretta la procedura MRP che generava ordini pianificati per articoli non validi nella distinta base (#TT05478/24 and #TT00376/25)
 > - FI - Stampa liquidazione iva periodica - Rivisto il calcolo degli interessi derivanti da liquidazioni iva trimestrali (#TT00302/25)
