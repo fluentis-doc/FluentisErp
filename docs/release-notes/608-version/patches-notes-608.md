@@ -4,18 +4,12 @@ sidebar_position: 2
 ---
 
 ### Patch 608.1-0072 - 27/03/2025  
-> - SD – Nelle Fatture di Vendita scaricate per cui è stato generato il documento Sdi le quantità e i prezzi degli articoli non sono più modificabili (#TT00881/25) 
-
-> - FI - revisione calcolo ammortamento su categorie impostate sul conteggio giornaliero (#TT01271/25) 
-
-> - WM – ripristinato valore in anagrafica articolo tab listino fornitori campo conto fornitore (TT01233/25) 
-
-> - FI - revisione contabilizzazione chiusura/riapertura conti per caso di periodo senza costi o senza ricavi (#TT00308/25) 
-
-> - SD - Corretto problema di visibilità nella stampa delle provvigioni maturate in presenza di fatture a zero create stornando acconti nati dalle partite di anticipo(#TT00783/25) 
-
-> - SD -Corretto problema di visibilità della formattazione delle date documento nella stampa delle provvigioni maturate quando la fattura aveva al suo interno due agenti, uno con tipo maturazione fattura messa, l’altro con pagamento avvenuto(#TT01134/25) 
-
+> - SD – Nelle Fatture di Vendita scaricate per cui è stato generato il documento Sdi le quantità e i prezzi degli articoli non sono più modificabili (#TT00881/25)  
+> - FI - revisione calcolo ammortamento su categorie impostate sul conteggio giornaliero (#TT01271/25)  
+> - WM – ripristinato valore in anagrafica articolo tab listino fornitori campo conto fornitore (TT01233/25)  
+> - FI - revisione contabilizzazione chiusura/riapertura conti per caso di periodo senza costi o senza ricavi (#TT00308/25)  
+> - SD - Corretto problema di visibilità nella stampa delle provvigioni maturate in presenza di fatture a zero create stornando acconti nati dalle partite di anticipo(#TT00783/25)  
+> - SD -Corretto problema di visibilità della formattazione delle date documento nella stampa delle provvigioni maturate quando la fattura aveva al suo interno due agenti, uno con tipo maturazione fattura messa, l’altro con pagamento avvenuto(#TT01134/25)  
 > - PR - in una nuova distinta di anticipo fatture, il cambio del tipo distinta aggiorna entrambi i sottoconti delle testata distinta (#TT01384/25) 
 
 ### Patch 608.1-0071 - 13/03/2025  
@@ -192,7 +186,7 @@ sidebar_position: 2
 > - MS - Corretti bug in pianificazione generale (#TT03785/24 - #TT04245/24)
 > - PR - corretta importazione file movimenti bancari dove le date registrazione e valuta banca risultavano invertite (#TT04435/24)
 
-### Patch 608.1-0054 - 03/10/2024
+### Patch 608.1-0054 - 03/10/2024  
 > - SH - Documentale - Corretto bug in caricamento di più documenti in modalità cartella in quanto andava in disconnessione il programma (#TT03705/24 - #TT02202/24)
 > - CO - revisione calcolo mensilizzazione dell’elaborazione periodi (#TT04072/24)
 > - nel calcolo dei totali fatture di acquisto, gestione delle aliquote iva con flag ‘Reverse charge’ per gestione fatture miste (#TT03198/24)
@@ -202,7 +196,7 @@ sidebar_position: 2
 > - SH - Correggi il filtro dei dati aggiuntivi: le colonne vengono caricate dal profilo. Salta la colonna se non è valida (#TT01838/24)
 > - SCM - Nella procedura di Creazione automatica ordini fornitore da Ordini clienti è ora possibile utilizzare anche articoli la cui descrizione supera 200 caratteri (#TT04031/24)
 
-### Patch 608.1-0053 - 20/09/2024
+### Patch 608.1-0053 - 20/09/2024  
 > - WM - Aggiunto la variante nel report ValorizatedBOM e ValorizatedItemCostBOM della valorizzazione distinta base
 > - SCM, SCS - Corretto errore nella ripartizione delle spese con flag Ripartita inserite nei riepiloghi dei documenti (#TT02336/24)  
 > - CO - revisione cancellazione registrazioni rimanenze nelle chiusure infrannuali (#TT03976/24)
@@ -210,11 +204,11 @@ sidebar_position: 2
 > - CO - Aggiunta la Colonna costo variante nel calcolo costi. Questa riporta i valori presenti nel tab varianti dell’anagrafica articolo (#TT03057/24 - #TT03043/24)
 > - FI - Stampa Libro Cespiti con esercizio non solare (#TT03716/24)
 
-### Patch 608.1-0052 - 12/09/2024
+### Patch 608.1-0052 - 12/09/2024  
 > - PM- corretta data spese inserite automaticamente nella dichiarazione attività generata dal cambio stato approvato dell'intervento (#TT03640/24)
 > - MS - Corretto bug nella Pianificazione generale; ora la schedulazione con il flag “Considera anche le alternative dei materiali” funziona correttamente (#TT00306/24)
 
-### Patch 608.1-0051 - 05/09/2024
+### Patch 608.1-0051 - 05/09/2024  
 > - FI - all’interno delle registrazioni contabili, revisione del pulsante di ricalcolo imposta (#TT02926/24)
 > - FI - revisione salvataggio registrazioni con nuovi cespiti in creazione, localizzazione RO-HR (#TT03614/24)
 > - QY - Controllo articoli - Importa articoli da controllare - Risolta anomalia nella ricerca di un articolo, gestito a lotti, già precedentemente importato (#TT03709/24)
@@ -222,7 +216,7 @@ sidebar_position: 2
 > - SCM - Nella procedura di Evasione da ordini la Quantità da evadere permette l'inserimento degli stessi decimali della Quantità residua (#TT03700/24)
 > - WM - Nella form di ricerca dell’anagrafica articolo, ora i campi Cliente e Fornitore preferenziale filtrano i dati rispettivamente per cliente e fornitore.  (#TT03698/24)
 
-### Patch 608.1-0050 - 08/08/2024
+### Patch 608.1-0050 - 08/08/2024  
 > - WM - Corretto bug in analisi disponibilità (#TT03349/24)
 > - WM - Corretto bug in anagrafica articolo, che all'inserimento di una variante creava anche la distinta base per quella variante (#TT03443/24)
 > - MPS - Corretto bug in Capacità centri di lavoro che considerava la capacità su un centro di lavoro interno data da un ordine pianificato di conto lavoro; ora, se l’ordine pianificato di conto lavoro ha una fase interna (perché a volte viene prodotto internamente e a volte esternamente) questo non impegna più quel centro di lavoro (#TT03406/24)
@@ -232,15 +226,15 @@ sidebar_position: 2
 > - FI - la contabilizzazione canoni di leasing ora utilizza il conto il costo degli interessi sul sottoconto specifico impostato (#TT03582/24)
 > - MES- Corretto bug nella procedura di ricalcolo costo nel caso in cui fossero presenti delle varianti (#TT02015/24)
 
-### Patch 608.1-0049 - 30/07/2024
+### Patch 608.1-0049 - 30/07/2024  
 > - MES - Corretto bug nel calcolo del costo dell'articolo prodotto con le dichiarazioni di produzione (#TT03408/24)
 > - SCM - Valorizzazione DDT Acquisto- Corretto errore valorizzazione DDT Acquisto (#TT03538/24)
 > - SCS - Corretto errore che al momento della duplicazione di un Ordine di Conto Lavoro forzatamente evaso non aggiornava lo stato evasione dei materiali da consegnare del nuovo ordine (#TT03380/24)
 
-### Patch 608.1-0048 - 26/07/2024
----note Attenzione
+### Patch 608.1-0048 - 26/07/2024  
+:::note Attenzione
 Con questa patch viene rilasciato il ticket 2097/24 che consente l'aggiornamento delle quantità dei materiali da spedire e impiegare modificando la quantità dell'articolo da lavorare sia nell'ordine di produzione per fase o livello che nell'ordine di conto lavoro. Per fare questo sono stati aggiornati i dati delle quantità degli ordini di conto lavoro ancora non evasi o parzialmente evasi. Si consiglia di verificare gli ordini in essere dopo l'installazione della patch.
----
+:::
 > - FI - Risolto errore exception nell’intrastat che coinvolgeva un caso relativo ad una nota di accredito (#TT03449/24)
 > - WM - Nella maschera di Ricerca picking è ora possibile filtrare per i Picking Non evasi (#TT03191/24)
 > - MS - Nuove ottimizzazioni per la procedura del MRP (#TT03485/24)
