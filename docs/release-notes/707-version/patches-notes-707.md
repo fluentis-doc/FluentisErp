@@ -4,40 +4,38 @@ sidebar_position: 1
 ---
 
 ### Patch 707.1-0026 - 28/03/2025  
-> - SD - corretto problema di visibilità nella stampa delle provvigioni maturate in presenza di fatture a zero create stornando acconti nati dalle partite di anticipo(#TT00783/25)  
-> - SD - corretto problema di visibilità della formattazione delle date documento nella stampa delle provvigioni maturate quando la fattura aveva al suo interno due agenti, uno con tipo maturazione fattura messa, l’altro con pagamento avvenuto(#TT01134/25)  
-> - PR - corretto errore di visualizzazione commissioni nella form Contabilizzazione accrediti (tesoreria) e mancata implementazione della contabilizzazione delle commissioni automatiche (presenti sulle righe da contabilizzare). Rif #TT01145/25  
-> - FI - Implement in 2023 procedure FT_VatFor418 - there is alreay in 2023 for purchase FA_VatFor408 ( TT01089/25)  
+> - SD - corretto problema di visibilità nella stampa delle provvigioni maturate in presenza di fatture a zero create stornando acconti nati dalle partite di anticipo (#TT00783/25)  
+> - SD - corretto problema di visibilità della formattazione delle date documento nella stampa delle provvigioni maturate quando la fattura aveva al suo interno due agenti, uno con tipo maturazione fattura messa, l’altro con pagamento avvenuto (#TT01134/25)  
+> - PR - corretto errore di visualizzazione commissioni nella form Contabilizzazione accrediti (tesoreria) e mancata implementazione della contabilizzazione delle commissioni automatiche (presenti sulle righe da contabilizzare) (#TT01145/25)
+> - FI - Implementata nel 2023 la procedura FT_VatFor418 - esiste già nel 2023 per l'acquisto FA_VatFor408 (#TT01089/25)  
 > - SD: spedizioni- aggiunti destinatario e destinazione in testata spedizione. Aggiunto ordine di priorità degli stati. Stati resi visibili in riga e per tipo spedizione possibile impostare uno stato iniziale. Corretta proposta indirizzo del luogo di carico e del luogo di destinazione. 
-Modifications in ShippingState, ShippingType and Shipping forms that can have an impact on a profile (#TT04871/24)  
-> - SH - Error on adding a new account for a partner ( TT01481/25) 
-> - SD: calendario spedizioni - risolto caso per cui scorrendo oltre ad un certo numero di settimane precedenti si bloccava. (#TT01383/25)   
-> - WMS – corretto bug nella form di Ricevimento merci che non creava correttamente le righe dei DDT caricati. (#TT01081/25)  
-Solved bug to override function with script editor 
-> - CO - revisione inserimento nuove righe nelle Tariffe standard dei centri aziendali del controlling. (#TT01348/25)  
+Modifiche in ShippingState, ShippingType e nei moduli di spedizione che *possono avere un impatto su un profilo* (#TT04871/24)  
+> - SH - Errore nell'aggiunta di un nuovo account per un partner (#TT01481/25) 
+> - SD: calendario spedizioni - risolto caso per cui scorrendo oltre ad un certo numero di settimane precedenti si bloccava (#TT01383/25)   
+> - WMS – corretto bug nella form di Ricevimento merci che non creava correttamente le righe dei DDT caricati (#TT01081/25)  
+> - Corretto bug per sovrascrivere la funzione con l'editor di script. 
+> - CO - revisione inserimento nuove righe nelle Tariffe standard dei centri aziendali del controlling (#TT01348/25)  
 > - SD – Stampa scadenziario ordini clienti: corretto errore di visualizzazione delle quantità residue dopo la modifica della quantità articolo nel DDT di evasione dell’ordine cliente (#TT01459/25)  
 > - SD - Calendario spedizioni - Documenti di riferimento mostrati nel popup di ogni spedizione - se presenti N occorrenze dello stesso documento corretto in modo da visualizzare il riferimento una volta sola (#TT01272/25)  
 > - PR - in una nuova distinta di anticipo fatture, il cambio del tipo distinta aggiorna entrambi i sottoconti delle testata distinta (#TT01384/25)  
-> - WM – corretto bug in visualizzazione giacenze inerente al filtro di colonna del campo numero progetto. (#TT01554/25)  
-> - SD – corretto bug in fase di creazione della fattura nel caso in cui una riga articolo avesse più righe lotti con lo stesso lotto. (#TT01433/25)  
-> - QY – Taratura Strumenti di Misura – Risolta l’anomalia di errata proposta dell’Esito in caso di tarature con richieste di valori negativi.(#TT01104/25).  
-> - PM: in caso di dichiarazione attività senza orari ma con il solo monte ore, bloccata con avviso creazione intervento automatica (#TT01457/25)  
-> - SCM – Nei DDT di Acquisto è ora possibile inserire solo Unità di misura alternative che sono state precedentemente inserite nell’anagrafica dell’articolo (#TT01067/25). Modifications on Purchase delivery note item grid that can affect profiles.  
-> - WM – Implementata la barra di scorrimento verticale nel tab note dell’anagrafica articolo. (#TT01514/25)  
+> - WM – corretto bug in visualizzazione giacenze inerente al filtro di colonna del campo numero progetto (#TT01554/25)  
+> - SD – corretto bug in fase di creazione della fattura nel caso in cui una riga articolo avesse più righe lotti con lo stesso lotto (#TT01433/25)  
+> - QY – Taratura Strumenti di Misura – Risolta l’anomalia di errata proposta dell’Esito in caso di tarature con richieste di valori negativi (#TT01104/25)  
+> - PM - in caso di dichiarazione attività senza orari ma con il solo monte ore, bloccata con avviso creazione intervento automatica (#TT01457/25)  
+> - SCM – Nei DDT di Acquisto è ora possibile inserire solo Unità di misura alternative che sono state precedentemente inserite nell’anagrafica dell’articolo (#TT01067/25) *Modifiche nella griglia degli articoli della bolla di consegna acquisti che possono influenzare i profili*  
+> - WM – Implementata la barra di scorrimento verticale nel tab note dell’anagrafica articolo (#TT01514/25)  
 > - WMS – In ricevimento merci, rimosso il messaggio di avviso relativo all’apertura della form di creazione UDC quando l’articolo non è gestito a UDC. (#TT01530/25)  
-> - WM – Nel filtro delle spedizioni implementata la possibilità di aggiungere le colonne inerenti al sito produttivo dall’object navigator e salvare il profilo.  
-Modifications in Filter Shipping form that can have an impact on a profile. (#TT00336/25)  
-> - SD: aggiunta descrizione articolo nella griglia di dettaglio del groupage delle spedizioni.  
-Modifications in Shipping form that can have an impact on a profile.  (#TT00877/25)  
-> - SH - Abilitati i filtra per extra data nella form di ricerca dei Dipendenti. (#TT01524/25)  
-> - PM - Wbs assegnazione risorse, risolto caso in cui non venivano assegnati correttamente gli orari. (#TT01376/25)  
-> - FI - Ro changes in cost center sales invoice accounting ( TT00383/25) 
-> - FI - Period Combo for SAFT ( TT01563/25). Modifications in Saft Declaration form that can have an impact on a profile  
-> - WM – In gestione prototipi, utilizzando il pulsante Esporta, ora vengono esportate nella distinta base tutte le righe di un articolo inserito nello stesso livello ma con priorità diverse.  (#TT01369/25)  
-> - MS – Rilascio ordini pianificati – Ottimizzazione delle prestazioni. (#TT01062/25)  
+> - WM – Nel filtro delle spedizioni implementata la possibilità di aggiungere le colonne inerenti al sito produttivo dall’object navigator e salvare il profilo. *Modifiche nel modulo di filtro delle spedizioni che possono avere un impatto su un profilo* (#TT00336/25)  
+> - SD: aggiunta descrizione articolo nella griglia di dettaglio del groupage delle spedizioni. *Modifiche nel modulo di spedizione che possono avere un impatto su un profilo* (#TT00877/25)  
+> - SH - Abilitati i filtra per extra data nella form di ricerca dei Dipendenti (#TT01524/25)  
+> - PM - Wbs assegnazione risorse, risolto caso in cui non venivano assegnati correttamente gli orari (#TT01376/25)  
+> - FI - Modifiche nella contabilità delle fatture di vendita del centro di costo (#TT00383/25) 
+> - FI - Selezione del periodo per SAFT (#TT01563/25) *Modifiche nel modulo di dichiarazione SAFT che possono avere un impatto su un profilo*  
+> - WM – In gestione prototipi, utilizzando il pulsante Esporta, ora vengono esportate nella distinta base tutte le righe di un articolo inserito nello stesso livello ma con priorità diverse (#TT01369/25)  
+> - MS – Rilascio ordini pianificati – Ottimizzazione delle prestazioni (#TT01062/25)  
 > - SD - Proposta Ubicazione Causale: risolto nel framework il mancato caricamento dell'ubicazione (in alcuni casi) della causale proposta nella prima riga documento 
-Modifications in SubcontractorDeliveryNote, SalesDeliveryNote, SalesInvoice, SalesOrder and Picking object forms that can have an impact on a profile.(#TT00960/25)   
-> - WMS – Migliorata la velocità nelle form Conferma picking e Gestione spunta. Inoltre, è stato risolto il problema relativo alla perdita del focus nel campo barcode dopo una lettura di un codice a barre. (#TT01325/25-#TT01398/25) 
+Modifiche nei moduli SubcontractorDeliveryNote, SalesDeliveryNote, SalesInvoice, SalesOrder e Picking object che *possono avere un impatto su un profilo* (#TT00960/25)   
+> - WMS – Migliorata la velocità nelle form Conferma picking e Gestione spunta. Inoltre, è stato risolto il problema relativo alla perdita del focus nel campo barcode dopo una lettura di un codice a barre (#TT01325/25-#TT01398/25) 
 
 ### Patch 707.1-0025 - 21/03/2025  
 > - SD - Al momento dell’evasione degli Ordini Clienti in Fattura, le righe di tipo nota vengono ora riportate con il campo Imponibile non valorizzato (#TT01166/25)
@@ -52,7 +50,7 @@ Modifications in SubcontractorDeliveryNote, SalesDeliveryNote, SalesInvoice, Sal
 > - SCS - ordine conto lavoro, corretto errore controllo ubicazione nella riga materiale (#TT01002/25)
 > - SCM - Corretto errore nella Modifica massiva degli Ordini fornitore che non aggiornava correttamente lo stato dell'ordine nel caso di evasione forzata (#TT01259/25)
 > - SCM - Corretto errore negli Ordini Fornitore che non riportava il flag Prezzo manuale su tutte le righe quando si utilizzava il pulsante Suddividi quantità in più date consegna (#TT01035/25)
-> - PM: Interventi - servizi , cambiato parametro nell’algoritmo dell’assegnazione prezzo. Ora è sempre abilitata la ricerca in tutti i listini predefiniti.
+> - PM - Interventi - servizi , cambiato parametro nell’algoritmo dell’assegnazione prezzo. Ora è sempre abilitata la ricerca in tutti i listini predefiniti.
 > - CO - nel report ‘Consolidato di progetto’, filtro per società sulla tendina ‘consolidato di commess’ (#TT01128/25)
 > - FI - revisione calcolo ammortamento su categorie impostate sul conteggio giornaliero (#TT01271/25)
 > - CO - Errore grammaticale from stampa riclassificazione (#TT01364/25)
@@ -62,15 +60,15 @@ Modifications in SubcontractorDeliveryNote, SalesDeliveryNote, SalesInvoice, Sal
 > - WM - ripristinato valore in anagrafica articolo tab listino fornitori campo conto fornitore (#TT01233/25)
 > - SH - WEB: Corretto il funzionamento del filtro di ricerca nella form delle Anagrafiche Articoli e Contatti (#TT01356/25)
 > - WM - In visualizzazione giacenze, implementata la possibilità di filtrare nelle colonne utilizzando il carattere “%” (#TT00773/25)
-> - PM: SAL progetto - gestito caso per cui in mancanza di date inizio-fine nella dichiarazione attività, l'elaborazione viene fatta sulla data attività principale (#TT01286/25)
+> - PM - SAL progetto - gestito caso per cui in mancanza di date inizio-fine nella dichiarazione attività, l'elaborazione viene fatta sulla data attività principale (#TT01286/25)
 > - Risolto bug sulla duplicazione dell’attività per impostare ItemNature su Clientnature
 > - SCM - Nella form di Dettaglio righe Ordini fornitori è stata bloccata la possibilità di applicare un filtro sulla colonna Data documento evasione (#TT00786/25)  (*Modifica nei dettagli dell’Ordine Fornitore che può avere un impatto su un profilo*)
 > - FI - revisione contabilizzazione chiusura/riapertura conti per caso di periodo senza costi o senza ricavi (#TT00308/25)
-> - PM: calcolo SAL progetto - costi e ricavi fatture di vendita, costi fatture di acquisto - introdotto calcolo dei valori proporzionato su data competenza fattura e range date elaborazione SAL (#TT01289/25)
-> - PM: duplica progetto - ora viene anche considerato il tipo intervento pianificato nella procedura di duplica (#TT01394/25)
-> - PM: interventi - piano di fatturazione. Risolta anomalia in caso di cancellazione contemporanea del piano di fatturazione e del relativo servizio collegato senza salvare tra i due passaggi (#TT01382/25)
-> - PM: attività con ora fine nel giorno successivo, gestita corretta suddivisione nelle righe servizi di un intervento per le ore relative ad una giornata e le ore relative alla giornata successiva (#TT01287/25)
-> - PM: attività con ora fine nel giorno successivo, gestita corretta suddivisione nelle righe servizi di un intervento per le ore relative ad una giornata e le ore relative alla giornata successiva (#TT01287/25)
+> - PM - calcolo SAL progetto - costi e ricavi fatture di vendita, costi fatture di acquisto - introdotto calcolo dei valori proporzionato su data competenza fattura e range date elaborazione SAL (#TT01289/25)
+> - PM - duplica progetto - ora viene anche considerato il tipo intervento pianificato nella procedura di duplica (#TT01394/25)
+> - PM - interventi - piano di fatturazione. Risolta anomalia in caso di cancellazione contemporanea del piano di fatturazione e del relativo servizio collegato senza salvare tra i due passaggi (#TT01382/25)
+> - PM - attività con ora fine nel giorno successivo, gestita corretta suddivisione nelle righe servizi di un intervento per le ore relative ad una giornata e le ore relative alla giornata successiva (#TT01287/25)
+> - PM - attività con ora fine nel giorno successivo, gestita corretta suddivisione nelle righe servizi di un intervento per le ore relative ad una giornata e le ore relative alla giornata successiva (#TT01287/25)
 > - MES - Negli Ordini di produzione è stata data la possibilità di prenotare un lotto materiale, da un magazzino gestito ad ubicazione, senza doverla necessariamente specificare (#TT01056/25)
 > - ARM - correzione per la modifica del tipo di espressione nella web API (#TT01454/25)
 > - PM - L’ora di fine si resetta quando si utilizza il modulo di ricorrenza; correzioni per l’eliminazione di FSWorkReportService (#TT01376/25)
@@ -85,7 +83,7 @@ Modifications in SubcontractorDeliveryNote, SalesDeliveryNote, SalesInvoice, Sal
 ### Patch 707.1-0024 - 13/03/2025  
 > - SD - Stampa Lista Fatture - corretta anomalia in ordinamento per numero (#TT01135/25)
 > - FI - Stampa Lista Partite - corretta anomali che impediva la stampa (#TT01205/25)
-> - PM: Ricerca attività - aggiunta gestione ricerca per data anche per le attività senza data inizio-fine con sola data principale (#TT00809/25)
+> - PM - Ricerca attività - aggiunta gestione ricerca per data anche per le attività senza data inizio-fine con sola data principale (#TT00809/25)
 > - Revisione campo ‘Codice fiscale sostituto subentrante’
 > - Workflow - Corretta anomalia in fase di caricamento dati sulle tab (#TT01164/25)
 > - MS - Corretto bug nel calcolo delle ore inizio e fine delle fasi nella procedura di schedulazione a capacità finita (#TT00820/25)
@@ -113,7 +111,7 @@ Modifications in SubcontractorDeliveryNote, SalesDeliveryNote, SalesInvoice, Sal
 > - FI - revisione creazione partite d’anticipo e partite da import excel (#TT01171/25)
 > - Add ConnectionTimeout to BizLink Service
 > - CO - nelle procedure di Creazione chiusura infrannuale, Contabilizzazione rimanenze, aggiornamento stato partite, allineamento tecnico per tracing procedure (#TT05604/24)
-> - PM: Risolto caso in procedura Generazione interventi da attività con condizioni di raggruppamento - se impostato articolo in dichiarazione attività, questo non veniva considerato (#TT01170/25)
+> - PM - Risolto caso in procedura Generazione interventi da attività con condizioni di raggruppamento - se impostato articolo in dichiarazione attività, questo non veniva considerato (#TT01170/25)
 > - SCS - Corretto errore in fase di rilascio di un Ordine pianificato di Conto lavoro che riportava sull’articolo l’aliquota IVA del cliente e non del fornitore (#TT00959/25)
 > - SCM - Nella procedura di Importazione prezzi fornitori, sono state corrette le intestazioni di colonna per 'Classe articolo' e 'Codice articolo', che erano invertite (#TT05100/24)"
 > - PR - Risolto problema nei tempi di elaborazione di alcune tipologia di flusso finanziario nel cash flow, ad esempio RDA, migliorate le prestazioni generali nell'elaborazione del cashflow e dell'apertura delle maschere e implementata la barra di stato avanzamento elaborazione (#TT00408/25)
@@ -159,7 +157,7 @@ o	Changes to the PurchasePriceListFromFileDetailFilterResults that can affect a 
 > - FI - revisione generazione file CU per carriage return finale errato (#TT00965/25)
 > - FI - Unlimited digit number on currency adjustment procedure (#TT00991/25) Changes were made in exchange field of form CurrencyAdjustmentAccounting.The profile can be affected by the changes.
 > - Modificata la stampa della comunicazione trimestrale iva, ordinamento dei periodi (#TT00981/25)
-> - PM: risolta visualizzazione diagramma nei progetti, nel caso di fatture con righe non codificate (#TT00985/25)
+> - PM - risolta visualizzazione diagramma nei progetti, nel caso di fatture con righe non codificate (#TT00985/25)
 > - SCS - Nei Rientri di Conto lavoro il prezzo dell’articolo viene ripreso dal Listino di Conto lavoro, se presente, altrimenti viene sempre proposto pari a zero (#TT00986/25)
 > - SD - Ottimizzata la ricerca nelle form di Evasione ordini e DDT nei documenti di Vendita (#TT00797/25 and TT01016/25)
 > - SCM and SD - Corretto errore in fase di Aggiornamento prezzi nella procedura di Duplica e Manutenzione Listini fornitori e Duplica e Manutenzione Listini di vendita (#TT01060/25)
