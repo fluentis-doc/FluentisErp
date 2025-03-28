@@ -1,16 +1,16 @@
 ---
-title: Rollback
+title: Povrat
 sidebar_position: 4
 ---
 
-La scheda di Rollback consente di annullare la creazione: nel caso specifico lo stesso risultato si ottiene entrando nella ricerca partite sollecitate e cancellando direttamente da qui.
+Kartica Povrat omogućuje da otkazivanje stvaranje opomena. U ovom konkretnom slučaju isti se rezultat dobiva ulaskom u pretraživanje traženih dospijeća i brisanjem izravno odavde.
 
 
-| Funzione | Significato |
+| Funckija | Značenje |
 | --- | --- |
-| Ricerca | Pulsante per la ricerca della creazione solleciti. |
-| Rollback tutti | Pulsante per cancellare tutti i solleciti della creazione selezionata. |
-| Rollback selezione | Pulsante per cancellare solo alcuni solleciti della creazione selezionata. |
+| Traži | Tipka za traženje stvaranja opomena. |
+| Povrati sve | Tipka za brisanje svih opomena za odabrano stavku. |
+| Povrat| Tipka za brisanje samo nekih opomena iz odabrane stavke. |
 
 
 

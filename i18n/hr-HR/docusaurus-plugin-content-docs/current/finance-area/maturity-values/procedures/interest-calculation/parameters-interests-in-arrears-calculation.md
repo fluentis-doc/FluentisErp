@@ -1,30 +1,29 @@
 ---
-title: Parametri di calcolo interessi moratori
+title: Parametri za izračun zateznih kamata
 sidebar_position: 3
 ---
 
-Nella form sono presenti una lista di flag di selezione dei tipi di partite per le quali procedere al calcolo dei tassi di interesse, mentre in altro è presente un campo di filtro per codici di conto/sottoconto. Al di sotto di questo si deve impostare il tipo di tasso di default da applicare e i flag che guidano la logica di calcolo:
+U obrascu se nalazi lista zastavica/flagova za odabir tipova stavki za koje će se nastaviti s obračunom kamata, te filter polje za šifre konta/podkonta. Ispod toga se mora postaviti vrsta zadane stope koja će se primijeniti i oznake koje vode logiku izračuna:
 
-**Calcola per le partite chiuse nel periodo**: la procedura andrà a verificare le partite che sono diventate chiuse all'interno del range di date impostate e solo per queste andrà a calcolare il valore degli interessi, quindi per i pagamenti parziali non sarà conteggiato alcun interesse;
+**Izračunaj zatvorene dospjele vrijednosti za period**: postupak će provjeriti stavke koje su postale zatvorene unutar zadanog datumskog raspona i samo za njih će izračunati vrijednost kamata, dakle za djelomična plaćanja, kamata se neće računati;
 
-**Calcola per i pagamenti del periodo**: la procedura andrà a individuare i pagamenti registrati all'interno del range di date e su questi importi andrà a calcolare il valore degli interessi relativi: questa impostazione è quella consigliata.
+**Izračunaj plaćanja perioda**: postupak će identificirati plaćanja zabilježena unutar datumskog raspona i na tim će iznosima izračunati vrijednost relativnih kamata: ova je postavka preporučena.
 
-In caso non sia stato inserito nessun flag il calcolo andrà a valorizzare gli interessi relativi ai giorni di ritardo presenti nel range di date impostate.
+Ako nije unesena oznaka, izračun će procijeniti kamatu koja se odnosi na dane kašnjenja prisutne u rasponu postavljenih datuma.
 
-**Tipo documento** e **tipo pagamento**: sono ulteriori filtri di individuazione delle partite sulle quali eseguire il calcolo interessi.
+**Vrsta dokumenta** i **način plaćanja**: ovo su daljnji filtri za prepoznavanje stavki na kojima treba izvršiti obračun kamata.
 
-Il radio button successivo consente di definire il tipo di tasso da utilizzare nel calcolo interessi:
+Omogućeno je i definiranje vrste stope koja se koristi u izračunu kamata:
 
-- calcolare gli interessi solo sui clienti per i quali è stato inserito in anagrafica una data accordo;
+- Izračunavanje samo za kupce s ugovorom;
 
-- calcolare gli interessi sui clienti con un accordo secondo le impostazioni di anagrafica, il tasso di default inserito in alto per tutti gli altri;
+- Izračunavanje za kupce s ugovorima, a za ostale prema stopi zadanoj u ovom obrascu;
 
-- calcolare gli interessi per tutti i clienti secondo il tasso d'interesse di default inserito in alto.
+- Izračun za sve prema prema stopi zadanoj u ovom obrascu. 
 
-Un ultimo flag, **Escludi effetti emessi**, già impostato di default, prevede l'esclusione dagli interessi delle partite pagate con effetti del modulo portafoglio effetti: tale impostazione serve, in particolare, per i tipi tasso sui quali è stato impostato il calcolo anche a sconto, in quanto la chiusura della partita cliente viene solitamente rilevata direttamente all'emissione della ricevuta bancaria/effetto cambiario.
+Flag **Isključi izdane račune**, već postavljena prema zadanim postavkama, omogućuje izuzimanje iz kamata stavke plaćenih računa: ova je postavka korisna, posebno za vrste stopa na koje je također postavljen izračun s popustom, budući da se zatvaranje računa kupca obično radi izravno kada se izda bankovna potvrda/zadužnica.  
 
-La procedura di calcolo si avvia con il tasto **Calcolo interessi**, nella ribbon bar.
-
+Postupak izračuna započinje tipkom  **Izračun kamata** na traci izbornika. 
 
 
 
