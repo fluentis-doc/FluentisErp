@@ -179,7 +179,7 @@ Per quanto riguarda l'inclusione degli **ExtraData** nei report si possono confi
 * ExtraData basato su un oggetto.
 * ExtraData basato su un datasource.
 
-### 4.1 Simple ExtraData
+### 4.1 ExtraData semplice
 
 Per l'ExtraData semplice, è necessario includere il seguente metodo nella sezione dello script del report.
 Nell'esempio, un ExtraData di tipo oggetto è stato associato a una fattura di vendita. 
@@ -198,7 +198,7 @@ private void calcExtraData_GetValue(object sender, DevExpress.XtraReports.UI.Get
 }
 ```
 
-### 4.2 Object-based ExtraData
+### 4.2 ExtraData basato su oggetto
 
 Per l'ExtraData basato su oggetti, è necessario includere il seguente metodo nella sezione dello script del report.
 Nell'esempio, un ExtraData di tipo oggetto è stato associato a una fattura di vendita.  
@@ -228,3 +228,73 @@ private void calcExtraData_GetValue(object sender, DevExpress.XtraReports.UI.Get
     }
 }
 ```
+### 4.3 ExtraData basato su datasouce
+Per l'ExtraData basato su datasource, è necessario includere il seguente metodo nella sezione dello script del report.  
+L'ExtraData basato su datasource si chiama ```Model```.  
+Nell'esempio, è stata creata una tabella custom ```dbo.Model``` contenente i seguenti dati:
+```sql
+SELECT Code, Description FROM dbo.Model
+```
+
+ <table>
+        <tr>
+            <th>Codice</th>
+            <th>Descrizione</th>
+        </tr>
+        <tr>
+            <td>Finitura1</td>
+            <td>Lucida</td>
+        </tr>
+        <tr>
+            <td>Finitura2</td>
+            <td>Opaca</td>
+        </tr>
+        <tr>
+            <td>Finitura3</td>
+            <td>Cromata</td>
+        </tr>
+    </table>
+
+
+Nello script relativo alla generazione del report va incluso il seguente metodo d'esempio.   
+
+```cs
+private void calcExtraData_GetValue(object sender, DevExpress.XtraReports.UI.GetValueEventArgs e)
+{
+    FSSalesInvoice row = (FSSalesInvoice)e.Row;
+    if (row != null)
+    {
+        var extraData = row.ExtraData 
+            .Where(x => x.ExtraDataObject != null && x.ExtraDataObject.Code == "Model")
+            .FirstOrDefault();
+
+        if (extraData != null)
+        {
+            if (extraData.ExtraDataObject != null && 
+                extraData.ExtraDataObject.DataSource != null && 
+                !string.IsNullOrEmpty(extraData.ExtraDataObject.DataSource.SqlQuery.Script))
+            {
+                string extradDataObjectId = extraData.ExtraDataId.ToString();
+                string sqlQueryExtraData = extraData.ExtraDataObject.DataSource.SqlQuery.Script + 
+                                           " WHERE Id = " + extradDataObjectId;
+                
+                IExecuteSql execSql = (IExecuteSql)GetReport().DataProvider;
+                using (IDbCommand command = execSql.CreateCommand())
+                {
+                    command.CommandText = sqlQueryExtraData;
+                    using (IDataReader reader = command.ExecuteReader())
+                    {
+                        if (reader.Read())
+                        {
+                            e.Value = reader.GetValue(2);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+```
+
+
+
