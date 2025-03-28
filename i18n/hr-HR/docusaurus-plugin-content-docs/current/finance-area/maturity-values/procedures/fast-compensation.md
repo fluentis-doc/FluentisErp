@@ -1,45 +1,45 @@
 ---
-title: Compensazione veloce
+title: Brza kompenzacija
 sidebar_position: 3
 ---
 
-:::note Percorso
-**Amministrazione>Partite>Procedure>Compensazione veloce**
+:::note Put
+**Administracija > Dospijeća plaćanja > Procedure > Brza kompenzacija**
 
-Nota:
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Napomena:
+Za sve što nije detaljno objašnjeno u ovom dokumentu o uobičajenom funkcioniranju obrazaca, molimo se obratite sljedećoj poveznici: [Zajedničke funkcionalnosti, tipke i polja](/docs/guide/common).
 
 :::
 
 ---
 
-La presente form permette, in maniera leggermente semplificata rispetto all'analoga *Compensazione partite*, di gestire la compensazione tra partite aperte di segno inverso (Dare / Avere) ed intestate al medesimo sottoconto (ad es. un cliente o un fornitore).
+Ova forma omogućuje, na nešto pojednostavljeni način u odnosu na sličan *Obračun stavki*, upravljanje obračunom između otvorenih stavki (dugovanja/potraživanja) i upisanih na isti podkonto (npr. kupca ili dobavljača).
 
-Viene pertanto utilizzata in alternativa alla manovra di compensazione da eseguire direttamente in fase di registrazione contabile (ad esempio nel caso di registrazione di una fattura emessa o ricevuta dove in precedenza sia già avvenuto un incasso o un pagamento anticipato) e dunque anche in un secondo momento.
+Koristi kao alternativa običnim kompenzacijama (na primjer, u slučaju primljene fakture gdje je već došlo do naplate ili predujma).
 
-**Le partite attive vengono rappresentate nella griglia superiore, mentre quelle passive nella griglia inferiore.**
-I pulsanti per avviare la ricerca delle partite sono posti come di consueto nella ribbon bar e vanno premuti entrambi per ottenere entrambe le tipologie di partita.
+**Aktivna dospijeća su predstavljena u gornjem prikazu, dok su pasivna dospijeća zastupljena u donjem prikazu**
+Tipka za pokretanje pretraživanja dospijeća smješteni su kao i obično na traci izbornika i moraju se pritisnuti oba kako bi se dobile obje vrste dospijeća.
 
-Per gestire la ricerca tramite i consueti campi di filtro (ad esempio per ricercare solo le partite attive e le passive intestate ad un singolo fornitore) è necessario visualizzare i campi di filtro (a scomparsa) dagli **appositi tab posti sulla destra** (divengono visibili passando sopra con il mouse e possono essere eventualmente bloccati su visibile).
+Za upravljanje pretraživanjem pomoću uobičajenih polja filtera (na primjer za traženje samo aktivnih i pasivnih stavaka jednog dobavljača) potrebno je vidjeti polja filtera (skrivena) iz  **odgovarajućih kartica s desne strane** (postaju vidljiva prolaskom mišem preko kartica i eventualno se može zaključati da bude stalno vidljivo). 
 
-Le partite che devono essere compensate tra di loro devono essere selezionate sia nella griglia superiore, sia in quella inferiore
+Dospijeća koja je potrebno međusobno povezati moraju biti odabrana u gornjem i donjem prikazu.
 
 
 ![](/img/it-it/finance-area/maturity-values/fast-compensation.png)
 
-Premendo il tasto ***Compensazione partite***, nella ribbon bar le partite selezionate vengono compensate tra di loro.
+Pritiskom na gumb tipku ***Kompenzacija dospjelih plaćanja***, odabrana podudaranja međusobno se kompenziraju.
 
-Nel caso di importi non coincidenti la partite di minore importo viene chiusa mentre quella maggiore rimane aperta per il valore residuo.
+U slučaju nepoklapanja iznosa, manji iznos se zatvara, dok veći ostaje otvoren kao ostatak vrijednosti. Također je moguće odrediti djelomičnu vrijednost prema kojoj će se izvršiti kompenzacija.
 
-E' possibile anche specificare un valore parziale secondo il quale eseguire la compensazione. In questo caso espandere la sezione Contabilizzazione ed utilizzare il campo **Valore** (si veda ultima immagine in basso).
+U tom slučaju se proširi odjeljak Knjiženje (kvačica) i upotrijebi polje **Vrijednost** (pogledajte posljednju sliku u nastavku).
 
 
 ![](/img/it-it/finance-area/maturity-values/fast-compensation2.png)
 
 ---
 
-La compensazione può dar luogo, automaticamente, anche ad una scrittura contabile (ad esempio quando si compensano partite di uno stesso soggetto ma avente sottoconti distinti inquanto è sia cliente che fornitore e dunque devono essere compensati anche i saldi contabili).
+Prijeboj vrijednosti također može automatski dovesti do računovodstvenog unosa (na primjer kada se stavke koje pripadaju istim partnerima kompenziraju, ali imaju različita podkonta budući da su i kupci i dobavljači i stoga se računovodstvena stanja također moraju kompenzirati).
 
-Per attivare la contabilizzazione mettere il flag sul campo contabilizzazione in alto in corrispondenza delle tab della maschera ed espandere la sezione per impostare i parametri necessari (in particolare la causale di contabilità)
+Dakle, postavljanje zastavice s prikazanim dodatnim odjeljkom, omogućuje postavljanje još nekih parametara (poput predloška knjiženja).
 
 ![](/img/it-it/finance-area/maturity-values/fast-compensation3.png)

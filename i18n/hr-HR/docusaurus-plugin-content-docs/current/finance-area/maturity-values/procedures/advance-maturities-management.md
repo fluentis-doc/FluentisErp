@@ -1,76 +1,78 @@
 ---
-title: Gestione partite di anticipo
+title: Napredno upravljanje dospijećima
 sidebar_position: 7
 ---
 
-:::note Percorso
-**Amministrazione>Partite>Procedure>Gestione partite d'Anticipo**
+:::note MENI
+**Administracija > Dospijeća plaćanja > Procedure > Napredno upravljanje dospijećima**
 
 Nota:
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Za sve što nije detaljno objašnjeno u ovom dokumentu o uobičajenom funkcioniranju obrazaca, molimo se obratite sljedećoj poveznici: [Zajedničke funkcionalnosti, tipke i polja](/docs/guide/common).
 
 :::
 
 ---
-Questa procedura consente di creare delle partite di anticipo da pagarsi o incassarsi all'emissione della conferma d'ordine (o alla consegna) e poi fatturare e contabilizzare l'anticipo incassato.
-Si tratta chiaramente di partite extra-contabili inquanto esistenti prima dell'emissione della fattura.
+Ovaj postupak omogućuje kreiranje avansnih stavki koje se plaćaju ili preuzimaju kada se izda potvrda narudžbe (ili pri isporuci), a zatim se fakturiraju i obračunavaju. To su uglavnom izvanračunovodstvene stavke jer postoje prije izdavanja računa.
 
-I comandi per la gestione di questa funzionalità sono dislocati nella presente form oltre che nella tab dei ***Riepiloghi*** dell'ordine.
+Naredbe za upravljanje ovom funkcionalnošću nalaze se u ovom obrascu kao i u kartici ***Sažeci*** naloga. 
 
-:::note Nota
-Gli esempi nelle immagini si riferiscono all’ area vendite con una partita all’ ordine, ma la gestione è speculare per gli acquisti e concettualmente simile per le partite alla consegna.
+:::note BILJEŠKA
+Primjeri na slikama odnose se na prodajnu oblast s jednim iznosom po narudžbi, ali upravljanje je isto za nabavu i konceptualno slično za iznose pri isporuci.
 
-Non è previsto alcun automatismo standard per creare la partita di anticipo in contabilità all’ atto della conferma dell’ ordine o di un qualche evento collegato ad esso o ai DDT. Qualsiasi scadenza dell’ ordine può essere passata alla contabilità perché questa abbia visibilità che c’è una partita all’ ordine da incassare. 
+Ne postoji standardna automatizacija za stvaranje avansnog unosa računa prilikom potvrđivanja narudžbe ili bilo kojeg događaja povezanog s njom ili s otpremnicama. 
 
-Allo stesso modo, non c’è nulla che fermi l’ avviamento della produzione dell’ ordine fino all’ incasso della partita d’ anticipo. 
+Svaki rok narudžbe može se proslijediti računovodstvu tako da ima vidljivost da postoji stavka narudžbe koju treba preuzeti.
 
-Entrambi questi passaggi potrebbero essere gestiti tramite workflow customizzati da configurare appositamente.
+Ovim se može upravljati putem prilagođenih radnih procesa koji se posebno konfiguriraju.
 
 :::
 
-### Creazione partita all'ordine
+### Stvaranje dospijeća narudžbe
 
-import FileName from './../../../import/sections/advance-maturities-creation-order.md'
+U zaglavlju je potrebno postaviti dva retka s uvjetima plaćanja, jedan red će voditi akontaciju, a drugi red će imati postavku za preostali postotak.
 
-<FileName />
+Ovo će unijeti prisutnost roka plaćanja unaprijed koji će se poslati u računovodstvo putem odgovarajuće tipke **Stvarnje zrelosti unaprijed**
 
----
+Pritiskom na ovu tipku otvara se obrazac u kojem se traže dva dodatna podatka: opis koji će se prijaviti ovakvom vođenju dospijeća i vrsta dokumenta koja će se povezati s ne knjiženom stavkom koja će se kreirati.
 
-### Gestione delle partite di anticipo all'interno della form.
+Rezultat će biti kreiranje vanbilančne stavke za iznos i istek naloga. Ova operacija bit će vidljiva u posebnom obrascu.
 
-In questa form, nel primo tab del lato vendite, è possibile creare partite di anticipo anche per altri ordini clienti ed indipendentemente dalla creazione eseguita da dentro l'ordine cliente, oppure partite su consegne presenti nel secondo tab.
+### Upravljanje prethodnim dospijećima unutar forme
 
-Nella ***tab Gestione anticipo*** è possibile eseguire il rollback della partita di anticipo appena creata.
+U ovoj formi u prvoj kartici prodajne strane moguće je kreirati avansne artikle i za druge narudžbe kupaca i neovisno o kreiranju unutar narudžbe kupca ili artikle za isporuke prisutne u drugoj kartici. 
+
+Na kartici ***Napredno upravljanje*** može se vratiti prethodni unos koji se upravo stvorio. 
 
 ![](/img/it-it/finance-area/maturity-values/maturity-values/advance-maturities/advance-maturities-form.png)
 
-Nell’ ordine di vendita di origine, se un utente entra a modificare un qualche valore che causa il ricalcolo scadenze, sarà restituito un messaggio di avviso che richiede se annullare la partita di anticipo (se questa non è incassata, altrimenti questo non è possibile).
+U izvornom prodajnom dokumentu, ako korisnik unese izmjenu neke vrijednosti koja uzrokuje ponovni izračun rokova, pojavit će se poruka upozorenja s pitanjem treba li poništiti avansnu stavku (ako to nije unovčeno, inače to nije moguće).
 
 ![](/img/it-it/finance-area/maturity-values/maturity-values/advance-maturities/advance-maturities-message.png)
 
 
-### Incasso partita di anticipo
-Quando viene incassata la partita di anticipo (acconto) all'ordine (o alla consegna) e dunque viene salvata una registrazione contabile di prima nota con l’ incasso di una partita d’ anticipo (chiusura partita) apparirà un messaggio che avvisa l'utente della necessità di fatturare questo anticipo.
+### Plaćanje dospijeća unaprijed
+
+Kada se avansni unos podigne na narudžbi (ili pri isporuci) i prva se napomena računovodstvenog unosa spremi s naplatom avansnog unosa (zatvaranje unosa), pojavit će se poruka s upozorenjem da je potrebno fakturirati unaprijed.  
 
 ![](/img/it-it/finance-area/maturity-values/maturity-values/advance-maturities/advance-maturities-message2.png)
 
-Confermando la creazione si aprirà la maschera della Gestione partite di anticipo, dove l’ utente potrà andare nuovamente nella scheda di gestione anticipi per fatturare l’ operazione; se, invece, l’ operazione non viene confermata, sarà l’ utente a doversi ricordare di andare nella procedura in seguito per fatturare l’ operazione.
+Potvrđujući kreiranje, otvorit će se obrazac za Upravljanje dospijećima narudžbi, gdje se može ponovno otići na karticu Napredno upravljanje kako bi se to fakturiralo. 
 
-Selezionando la riga si attiverà il pulsante di creazione della fattura:
+Odabirom retka aktivira se tipka za izradu računa:
 
 ![](/img/it-it/finance-area/maturity-values/maturity-values/advance-maturities/advance-maturities-invoice-creation.png)
 
-Premendolo apparirà una nuova maschera di richiesta dati per la fattura:
+Pritiskom na tipku pojavit će se novi obrazac zahtjeva za podatke o kontu:
 
 ![](/img/it-it/finance-area/maturity-values/maturity-values/advance-maturities/advance-maturities-invoice-creation-popup.png)
 
-I dati già proposti sono quelli della data odierna e della descrizione che sarà riportata nella riga articolo, mentre il tipo fattura, aliquota iva e codice contabile di fatturato vendite saranno da gestire di volta in volta da parte dell’ utente.
+Već predloženi podaci su današnji datum i opis koji će biti ispisan u retku stavke, dok će tip računa, stopu PDV-a i šifru obračuna prometa povremeno upravljati korisnik.
 
-### Fatturazione anticipo incassato e contabilizzazione
-Una volta confermata la creazione si aprirà la fattura:
-il tipo riga articolo è impostato automaticamente come tipo 6, cioè fattura d’ acconto, in modo che questa sia poi disponibile in storno nella fatturazione di chiusura dell’ ordine.
+### Avansno fakturiranje i knjiženje
 
-:::tip **NOTA:**
+Nakon potvrde izrade otvara se račun: tip artikla se automatski postavlja kao tip 6, tj. predujam, tako da je isti dostupan za storniranje u računu za zatvaranje narudžbe. 
 
-Una volta contabilizzata questa fattura, la particolarità è che questa non creerà una nuova partita, ma sarà la partita di anticipo extra-contabile a venir recuperata (anche se è già nello stato di "Chiusa") ed associata alla registrazione contabile di questa fattura:
+:::tip **BILJEŠKA:**
+
+Nakon što se faktura obračuna, posebnost je u tome što se time neće stvoriti nova stavka, već će to biti stavka izvanračunovodstvenog predujma koja će biti vraćena (čak i ako je već u statusu "Zatvoreno") i povezana s knjiženjima te fakture.
 :::
