@@ -3,6 +3,42 @@ title: Patch notes Versione 707
 sidebar_position: 1
 ---
 
+### Patch 707.1-0026 - 28/03/2025  
+> - SD - corretto problema di visibilità nella stampa delle provvigioni maturate in presenza di fatture a zero create stornando acconti nati dalle partite di anticipo(#TT00783/25)  
+> - SD - corretto problema di visibilità della formattazione delle date documento nella stampa delle provvigioni maturate quando la fattura aveva al suo interno due agenti, uno con tipo maturazione fattura messa, l’altro con pagamento avvenuto(#TT01134/25)  
+> - PR - corretto errore di visualizzazione commissioni nella form Contabilizzazione accrediti (tesoreria) e mancata implementazione della contabilizzazione delle commissioni automatiche (presenti sulle righe da contabilizzare). Rif #TT01145/25  
+> - FI - Implement in 2023 procedure FT_VatFor418 - there is alreay in 2023 for purchase FA_VatFor408 ( TT01089/25)  
+> - SD: spedizioni- aggiunti destinatario e destinazione in testata spedizione. Aggiunto ordine di priorità degli stati. Stati resi visibili in riga e per tipo spedizione possibile impostare uno stato iniziale. Corretta proposta indirizzo del luogo di carico e del luogo di destinazione. 
+Modifications in ShippingState, ShippingType and Shipping forms that can have an impact on a profile (#TT04871/24)  
+> - SH - Error on adding a new account for a partner ( TT01481/25) 
+> - SD: calendario spedizioni - risolto caso per cui scorrendo oltre ad un certo numero di settimane precedenti si bloccava. (#TT01383/25)   
+> - WMS – corretto bug nella form di Ricevimento merci che non creava correttamente le righe dei DDT caricati. (#TT01081/25)  
+Solved bug to override function with script editor 
+> - CO - revisione inserimento nuove righe nelle Tariffe standard dei centri aziendali del controlling. (#TT01348/25)  
+> - SD – Stampa scadenziario ordini clienti: corretto errore di visualizzazione delle quantità residue dopo la modifica della quantità articolo nel DDT di evasione dell’ordine cliente (#TT01459/25)  
+> - SD - Calendario spedizioni - Documenti di riferimento mostrati nel popup di ogni spedizione - se presenti N occorrenze dello stesso documento corretto in modo da visualizzare il riferimento una volta sola (#TT01272/25)  
+> - PR - in una nuova distinta di anticipo fatture, il cambio del tipo distinta aggiorna entrambi i sottoconti delle testata distinta (#TT01384/25)  
+> - WM – corretto bug in visualizzazione giacenze inerente al filtro di colonna del campo numero progetto. (#TT01554/25)  
+> - SD – corretto bug in fase di creazione della fattura nel caso in cui una riga articolo avesse più righe lotti con lo stesso lotto. (#TT01433/25)  
+> - QY – Taratura Strumenti di Misura – Risolta l’anomalia di errata proposta dell’Esito in caso di tarature con richieste di valori negativi.(#TT01104/25).  
+> - PM: in caso di dichiarazione attività senza orari ma con il solo monte ore, bloccata con avviso creazione intervento automatica (#TT01457/25)  
+> - SCM – Nei DDT di Acquisto è ora possibile inserire solo Unità di misura alternative che sono state precedentemente inserite nell’anagrafica dell’articolo (#TT01067/25). Modifications on Purchase delivery note item grid that can affect profiles.  
+> - WM – Implementata la barra di scorrimento verticale nel tab note dell’anagrafica articolo. (#TT01514/25)  
+> - WMS – In ricevimento merci, rimosso il messaggio di avviso relativo all’apertura della form di creazione UDC quando l’articolo non è gestito a UDC. (#TT01530/25)  
+> - WM – Nel filtro delle spedizioni implementata la possibilità di aggiungere le colonne inerenti al sito produttivo dall’object navigator e salvare il profilo.  
+Modifications in Filter Shipping form that can have an impact on a profile. (#TT00336/25)  
+> - SD: aggiunta descrizione articolo nella griglia di dettaglio del groupage delle spedizioni.  
+Modifications in Shipping form that can have an impact on a profile.  (#TT00877/25)  
+> - SH - Abilitati i filtra per extra data nella form di ricerca dei Dipendenti. (#TT01524/25)  
+> - PM - Wbs assegnazione risorse, risolto caso in cui non venivano assegnati correttamente gli orari. (#TT01376/25)  
+> - FI - Ro changes in cost center sales invoice accounting ( TT00383/25) 
+> - FI - Period Combo for SAFT ( TT01563/25). Modifications in Saft Declaration form that can have an impact on a profile  
+> - WM – In gestione prototipi, utilizzando il pulsante Esporta, ora vengono esportate nella distinta base tutte le righe di un articolo inserito nello stesso livello ma con priorità diverse.  (#TT01369/25)  
+> - MS – Rilascio ordini pianificati – Ottimizzazione delle prestazioni. (#TT01062/25)  
+> - SD - Proposta Ubicazione Causale: risolto nel framework il mancato caricamento dell'ubicazione (in alcuni casi) della causale proposta nella prima riga documento 
+Modifications in SubcontractorDeliveryNote, SalesDeliveryNote, SalesInvoice, SalesOrder and Picking object forms that can have an impact on a profile.(#TT00960/25)   
+> - WMS – Migliorata la velocità nelle form Conferma picking e Gestione spunta. Inoltre, è stato risolto il problema relativo alla perdita del focus nel campo barcode dopo una lettura di un codice a barre. (#TT01325/25-#TT01398/25) 
+
 ### Patch 707.1-0025 - 21/03/2025  
 > - SD - Al momento dell’evasione degli Ordini Clienti in Fattura, le righe di tipo nota vengono ora riportate con il campo Imponibile non valorizzato (#TT01166/25)
 > - WMS - In gestione spunta e conferma picking ora viene proposto da confermare il primo articolo del picking (#TT01091/25)

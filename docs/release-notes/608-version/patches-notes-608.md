@@ -3,7 +3,22 @@ title: Patch notes Versione 608
 sidebar_position: 2
 ---
 
-### Patch 608.1-0071 - 13/03/2025
+### Patch 608.1-0072 - 27/03/2025  
+> - SD – Nelle Fatture di Vendita scaricate per cui è stato generato il documento Sdi le quantità e i prezzi degli articoli non sono più modificabili (#TT00881/25) 
+
+> - FI - revisione calcolo ammortamento su categorie impostate sul conteggio giornaliero (#TT01271/25) 
+
+> - WM – ripristinato valore in anagrafica articolo tab listino fornitori campo conto fornitore (TT01233/25) 
+
+> - FI - revisione contabilizzazione chiusura/riapertura conti per caso di periodo senza costi o senza ricavi (#TT00308/25) 
+
+> - SD - Corretto problema di visibilità nella stampa delle provvigioni maturate in presenza di fatture a zero create stornando acconti nati dalle partite di anticipo(#TT00783/25) 
+
+> - SD -Corretto problema di visibilità della formattazione delle date documento nella stampa delle provvigioni maturate quando la fattura aveva al suo interno due agenti, uno con tipo maturazione fattura messa, l’altro con pagamento avvenuto(#TT01134/25) 
+
+> - PR - in una nuova distinta di anticipo fatture, il cambio del tipo distinta aggiorna entrambi i sottoconti delle testata distinta (#TT01384/25) 
+
+### Patch 608.1-0071 - 13/03/2025  
 > - Aggiunto ConnectionTimeout al servizio BizLink (#TT00803/25)
 > - SD - Fix calcolo AgentSettlement nel caso di fatture di vendita con più agenti (#TT01134/25)
 > - SD - Fix esecuzione SalesOrder e SalesDeliveryNote su problemi custom (#TT01227/25)
