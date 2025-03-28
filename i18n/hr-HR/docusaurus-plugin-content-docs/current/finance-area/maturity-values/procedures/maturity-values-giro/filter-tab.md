@@ -1,25 +1,25 @@
 ---
-title: Tab Filtro
+title: Kartica filtera
 sidebar_position: 1
 ---
 
-| Funzione | Significato |
+| Funckija | Značenje |
 | --- | --- |
-| Ricerca | Pulsante per cercare le partite relative al sottoconto da girare su un altro sottoconto. |
-| Contabilizza | Pulsante per operare la contabilizzazione del giroconto partite. |
+| Traži | Tipka za traženje dospijeća koja se odnose na podkonto za prijenos na drugi podkonto.|
+| Knjiži | Tipka za knjiženje prijenosa između odabranih konta. |
 
-### UTILIZZO GENERICO
+### GENERIČKA UPORABA
 
-La maschera si compone di una parte superiore di filtro, all'interno della quale è obbligatorio indicare il sottoconto sul quale ricercare le partite da girare, una griglia di selezione delle partite e in basso l'impostazione della causale di contabilità, le date di registrazione/competenza e il sottoconto sul quale riaprire le partite. In particolare, la causale di contabilità deve prevedere sia il flag di chiusura partite che quello di apertura. Il risultato sarà la rilevazione della chiusura delle partite selezionate per riaprirle, mantenendo gli stessi riferimenti d'origine, ma sul sottoconto di destinazione.
+Obrazac se sastoji od gornjeg dijela filtera unutar kojeg je obavezno naznačiti podkonto na kojem se traže stavke za prijenos, prikaz za odabir stavki i na dnu postavka predloška knjiženja. Tu su još datumi unosa/obračuna i podkonto na kojem se predmeti ponovno otvaraju. Konkretno, predložak knjiženja mora uključivati i oznaku otvaranja i zatvaranja dospijeća. Rezultat će biti otkrivanje zatvaranja stavki odabranih za ponovno otvaranje, uz zadržavanje istih izvornih referenci, ali na odredišnom podkontu.
 
 
-### UTILIZZO NELL'AMBITO DELL'IVA IN SOSPENSIONE
-Questa procedura può essere utilizzata anche nell'ambito delle casistiche di IVA in sospensione (c.d. iva per cassa) che, come noto, prevede che, decorso un anno dalla fatturazione dell'operazione attiva o passiva, se non è avvenuto l'incasso o il pagamento (che avrebbero reso esigibile o detraibile l'iva relativa) si debba in ogni caso rendere l'iva imponibile o detrarre l'imposta sull'acquisto.
+### KORIŠTENJE U KONTEKSTU OBUSTAVE PDV-A  
+Ovaj se postupak također može koristiti u kontekstu obustave PDV-a (tzv. gotovinski PDV) koji, kao što je poznato, predviđa da, nakon godinu dana od fakturiranja, ako bi se naplata ili plaćanje izvršili kao plaćanje ili odbitak relevantnog PDV-a, potrebno je učiniti PDV oporezivim ili odbiti porez na kupnju.  
 
-Apponendo il flag (in basso) **Mostra scadenze sospese non chiuse alla data** e valorizzando opportunamente il campo **Data iva sospesa** vengono estratte soltanto le partite aperte riferite ad operazioni con iva in sospensione (identificate tramite le causali contabili appositamente configurate) alla data impostata nel campo di cui sopra.
+Postavljanjem flaga (dolje) **Prikaži istek suspendiranog PDV-a koji nije zatvoren na datum** i odgovarajućom valorizacijom polja  **PDV-a datum je obustavljen**, samo otvorene stavke koje se odnose na operacije s obustavljenim PDV-om (identificirani kroz posebno konfigurirane predloške knjiženja) na datum postavljen u polju, bit će prikazane u glavnom prikazu.
 
-A questo punto, selezionandole ed impostando la causale contabile desiderata, premendo **Contabilizza**, si va a creare la registrazione di giro dai conti utilizzati per l'iva in sospensione ai conti per l'iva a debito o a credito, lasciando tuttavia (ecco la particolarità della procedura in commento)le partite aperte. 
-La registrazione contabile di incasso o pagamento rileverà automaticamente l'avvenuto giroconto e non farà scattare nuovamente la scrittura automatica per il giroconto dell'iva.
+U ovom trenutku, njihovim odabirom i postavljanjem željenog predloška knjiženja, pritiskom na **Knjiži**, kreira se zapis prijenosa s konta koji se koristi za suspendirani PDV na konta za dugovni ili potražni PDV, ostavljajući otvorena dospijeća.   
+Računovodstveno knjiženje naplate ili plaćanja automatski će otkriti prijenos i neće ponovno pokrenuti automatski unos za prijenos PDV-a.  
 
 
 

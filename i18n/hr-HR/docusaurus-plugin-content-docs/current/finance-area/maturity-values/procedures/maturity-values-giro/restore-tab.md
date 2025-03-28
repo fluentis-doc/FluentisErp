@@ -1,16 +1,16 @@
 ---
-title: Tab Ripristino
+title: Povrati u prethodno stanje
 sidebar_position: 2
 ---
 
-E' presente come al solito una scheda finale ‘Ripristino' per visualizzare in anteprima la registrazione effettuata o anche per annullarle attraverso l'apposito pulsante.
+Kao i obično, postoji konačna kartica 'Vrati' za pregled napravljenih snimaka ili čak za njihovo poništavanje pomoću odgovarajuće tipke.
 
 
 
-| Funzione | Significato |
+| Funkcija | Značenje |
 | --- | --- |
-| Ricerca | Pulsante per cercare il giroconto partite effettuati precedentemente. |
-| Ripristina giroconto partite | Pulsante per visualizzare e/o ripristinare il giroconto partite. |
+| Traži | Tipka za traženje prethodno kreiranih prijenosa konta. |
+| Povrat računa dospijeća plaćanja | Tipka za vraćanje kreiranih prijenosa. |
 
 
 
