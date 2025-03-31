@@ -1,68 +1,67 @@
 ---
-title: Visualizzazione Movimenti IVA
+title: Prikazivanje poreznih kretanja
 sidebar_position: 5
 ---
-:::tip[A cosa serve]
-La form consente di **visualizzare i movimenti** eseguiti sui **registri IVA** contestualmente alle registrazioni contabili (ad esempio per ricevimento o emissione fatture).
+:::tip[Čemu služi]
+Obrazac omogućuje **prikazivanje kretanja** izvršenih na **PDV registrima** zajedno s računovodstvenim zapisima (na primjer za primitak ili izdavanje faktura). 
 
-Utile per **controlli** o **estrazione dati** riferiti all'IVA.
+Korisno za **kontrole** ili **izvlačenje podataka** vezanih uz PDV.
 
-La visualizzazione a video risulta particolarmente flessibile permettendo di esportare velocemente i dati estratti o di entrare velocemente in modifica di ogni movimento con doppio click
+Prikaz na ekranu je posebno fleksibilan, omogućujući brzo izvođenje podataka ili brzo ulazak u izmjenu svakog pokreta dvostrukim klikom.
 :::
 
 
-## Testata:
-Nella parte superiore sono presenti i campi di **filtro**:
+## Zaglavlje:
+U gornjem dijelu nalaze se **filtri**:
 
-**Registri IVA:** per estrarre i movimenti relativi ad uno o più (selezionando dalla tendina tenendo premuto il tasto Ctrl) sezionali IVA
+**PDV registri:** za izvlačenje kretanja vezanih uz jedan ili više (selekcija putem padajućeg izbornika uz držanje tipke Ctrl) PDV odjeljaka.
 
-**Codice IVA:** per filtrare i movimenti eseguiti con una determinata aliquota o codice IVA (esenzione, esclusione ecc.)
+**PDV kod:**  za filtriranje kretanja izvršenih s određenom stopom ili PDV kodom (izuzeće, isključenje itd.)
 
-**DA Data competenza IVA / A Data competenza IVA:** per la ricerca dei movimenti in base alle date di competenza iva, ovvero la data alla quale avrà effetto il movimento ai fini della liquidazione periodica iva. 
+**OD Datum obračuna PDV-a / DO Datum obračuna PDV-a:** za pretragu kretanja na temelju datuma obračuna PDV-a, tj. datum kada će kretanje imati učinak na obračun PDV-a.
 
-:::tip[Nota]
-**filtro principale** essendo nel contesto dell'iva si ricerca nel periodo in cui il movimento ha effetto sulla liquidazione periodica IVA, più che per data in cui è stata effettuata la registrazione contabile (come noto infatti la competenza iva può essere variata, in genere retrodatando). 
+:::tip[Napomena]
+**Glavni filtar** odnosi se na razdoblje u kojem kretanje ima učinak na obračun PDV-a, a ne na datum kada je izvršeno računovodstveno knjiženje (kako je poznato, PDV obveza može biti promijenjena, obično retroaktivno).
 
-Se si desidera ricercare anche per una determinata data della registrazione contabile è sempre possibile intervenire sul filtro della colonna nella griglia dei risultati.
+Ako želite pretraživati i prema određenom datumu računovodstvenog zapisnika, uvijek možete intervenirati u filtru stupca u rezultatnoj tablici.
 :::
 
-**Operazioni:** filtra in base alle tre categorie (attive,passive e reverse charge) considerate per l'abbinamento tr i codici iva e i righi della stampa per la Dichiarazione IVA Annuale. Fare riferimento alla tabella [**Aliquote/ Modalità IVA**](/docs/configurations/tables/finance/vat-rates#tab-specifiche-per-dichiarazione)
+**Operacije:** filtrira prema tri kategorije (aktivne, pasivne i reverse charge) koje se razmatraju za povezivanje PDV kodova i redaka ispisa za Godišnju PDV prijavu. Pogledajte tablicu [**Stope/Metode PDV-a**](/docs/configurations/tables/finance/vat-rates#tab-specifiche-per-dichiarazione)
 
-**Riga Dichiarazione fiscale:** filtro da abbinare al precedente. Dopo aver selezionato la tipologia di operazioni è possibile dettagliare quali codici iva filtrare inquanto abbinati ad un determinato rigo della stampa per la Dichiarazione IVA Annuale. Fare riferimento alla tabella [**Aliquote/ Modalità IVA**](/docs/configurations/tables/finance/vat-rates#tab-specifiche-per-dichiarazione)
+**Redak porezne prijave:** filtar koji treba povezati s prethodnim. Nakon što se odabere vrsta operacija, moguće je detaljno filtrirati koji PDV kodovi se odnose na određeni redak u ispisu za Godišnju PDV prijavu. Pogledajte tablicu [**Stope/Metode PDV-a**](/docs/configurations/tables/finance/vat-rates#tab-specifiche-per-dichiarazione)
 
-**Tipo IVA:** filtro riferito alla tipologia di operazione iva. Il dato può essere associato ai movimenti iva in sede di creazione delle registrazioni contabili, sezione *estremi iva del movimento*, tramite il campo omonimo.
+**Tip PDV-a:** filtar koji se odnosi na vrstu PDV operacije. Podaci se mogu povezati s PDV kretanjima prilikom izrade računovodstvenih zapisa, u odjeljku *podaci PDV-a za kretanje*, putem istoimenog polja. 
 
-**Conto / Sottoconto:** permette di filtrare in relazione al conto di contropartita utilizzato nella registrazione che ha generato i movimenti iva, ad esempio in caso di acquisti o vendite, tipicamente si può filtrare per il conto di costo o ricavo
+**Konto / Podkonto:** omogućuje filtriranje prema računu protivpartije koji je korišten u zapisniku koji je generirao PDV kretanja, na primjer, u slučaju kupovine ili prodaje, obično se može filtrirati prema računu troška ili prihoda.
 
-**Conto di testata:** permette di filtrare per sottoconto inserito nella testata delle registrazioni che hanno generato i movimenti iva, ad esempio in caso di acquisti o vendite, tipicamente si può filtrare per fornitore o cliente
+**Konto u zaglavlju:** omogućuje filtriranje prema podračunu unesenom u zaglavlje zapisnika koji je generirao PDV kretanja, na primjer, u slučaju kupovine ili prodaje, obično se može filtrirati prema dobavljaču ili kupcu.
 
 
-## La griglia dati:
+## Tablica podataka:
 
-Presenta alcune colonne fisse che contengono i valori di ogni movimento quali l'imponibile, l'imposta, la quota indetraibile ed i totali.
+Predstavlja fiksne kolone koje sadrže vrijednosti svakog pokreta, kao što su osnovica, porez, neodbitni iznos i ukupni iznosi.
 
-Le altre colonne scorrono e presentano i seguenti dati:
+Ostale kolone se pomiču i prikazuju sljedeće podatke:
 
-- **Data e Numero della registrazione** contabile che ha generato il movimento IVA
-- **Numero del documento** registrato, ad esempio il numero della fattura di acquisto o di vendita
-- **Causale contabile** (codice e descrizione) utilizzata per la registrazione contabile che ha generato il movimento IVA
-- **Sezionale iva** (codice e descrizione) movimentato
-- **Protocollo iva** del movimento
-- **Conto utilizzato nella testata** della registrazione (ad esempio cliente o fornitore)
-- **Conto di contropartita** utilizzato (ad esempio di costo o ricavo) nella registrazione contabile che ha generato il movimento IVA
-- **Codice IVA** (aliquota, esenzione, esclusione ecc.) utilizzato per il movimento
-- **Percentuale di indetraibilità** presente sulla riga iva del movimento nella registrazione contabile, il valore potrebbe essere forzato manualmente ma in genere è predefinito per il codice iva utilizzato direttamente nella tabella [**Aliquote/ Modalità IVA**](/docs/configurations/tables/finance/vat-rates)
-- **Da / A Data competenza**, si riferisce alla competenza economica del costo / ricavo e dunque non strattamente connesso al movimento iva, seppure presente e definito nella sezione iva della registrazione contabile
-- **Competenza plafond**, dato definito nella sezione iva della registrazione contabile e riferito alla competenza del movimento ai fini del calcolo del [**plafond per esportatori abituali**](/docs/finance-area/declarations/declarations/plafond/general-overview)
-- **Competenza IVA**, dato già presente nei campi di filtro in testata della maschera e qui visualizzato per ogni movimento
-- **Descrizione di dettaglio**, omonimo presente nella sezione iva della registrazione contabile
-- **Data competenza**, riferita alla competenza contabile presente nella testata della registrazione contabile che ha generato il movimento IVA
-- **Data documento**, riferita alla data fattura presente nella testata della registrazione contabile che ha generato il movimento IVA
-- **Tipo codice**, riferito al campo Tipo documento presente nella testata della registrazione contabile che ha generato il movimento IVA
-- **Tipo operazione fiscale** (codice / descrizione) campo presente ella sezione iva della registrazione contabile, utile per l'abbinamento con il tipo di acquisto finalizzato all'informativa statistica da dare nella dichiarazione iva annuale. Il campo è visibile nelle registrazione previa attivazione nei parametri delle causali contabili.
+- **Datum i broj zapisnika** računovođa koji je generirao kretanje PDV-a 
+- **Broj dokumenta** registrirano, na primjer broj računa za kupnju ili prodaju 
+- **Računovodstveni predložak** (kod i opis) korišten za računovodstveni zapis koji je generirao PDV kretanje
+- **PDV odjeljak**  (kod i opis) koji je pomaknut
+- **PDV protokol** kretanja
+- **Račun korišten u zaglavlju** zapisnika (na primjer, kupac ili dobavljač)
+- **Račun protivpartije** korišten (na primjer, trošak ili prihod) u računovodstvenom zapisu koji je generirao PDV kretanje  
+- **PDV kod** (stopa, izuzeće, isključenje itd.) korišten za kretanje
+- **Postotak nedopustivosti** prisutan na PDV retku kretanja u računovodstvenom zapisu, vrijednost može biti ručno postavljena, ali obično je unaprijed postavljena za korišteni PDV kod izravno u tablici [**Stope/Metode PDV-a**](/docs/configurations/tables/finance/vat-rates)
+- **Od / Do Datum obračuna**, odnosi se na ekonomsku kompetenciju troška / prihoda i nije izravno povezan s PDV kretanjem, iako je prisutan i definiran u PDV odjeljku računovodstvenog zapisa  
+- **Obračun u gornjoj/donjoj vrijednosti**, podatak definiran u PDV odjeljku računovodstvenog zapisa i odnosi se na kompetenciju kretanja za potrebe izračuna [**Plafon za redovite izvoznike**](/docs/finance-area/declarations/declarations/plafond/general-overview)
+- **Kompetencija PDV-a**, podatak koji je već prisutan u filtriranim poljima zaglavlja obrasca i ovdje prikazan za svako kretanje  
+- **Detaljan opis**, istoimeni podatak prisutan u PDV odjeljku računovodstvenog zapisa  
+- **Datum kompetencije**, odnosi se na računovodstvenu kompetenciju prisutnu u zaglavlju računovodstvenog zapisa koji je generirao PDV kretanje  
+- **Datum dokumenta**, odnosi se na datum fakture prisutan u zaglavlju računovodstvenog zapisa koji je generirao PDV kretanje  
+- **Tip kod**, odnosi se na polje Tip dokumenta prisutno u zaglavlju računovodstvenog zapisa koji je generirao PDV kretanje  
+- **Tip porezne operacije** (kod / opis) polje prisutno u PDV odjeljku računovodstvenog zapisa, korisno za povezivanje s tipom kupovine koja je potrebna za statističke informacije koje se dostavljaju u godišnjoj PDV prijavi. Polje je vidljivo u zapisnicima nakon aktivacije u parametrima računovodstvenih uzoraka.
 
-## Totali alla base della maschera:
+## Ukupni iznosi u donjem dijelu obrasca:
 
-- Imponibile / Imposta / Totale **Selezionato**: si riferisce alla selezione attivata dal click del mouse (una o più righe contemporaneamente se si tiene premuto Ctrl)
-
-- Imponibile / Imposta / Totale : indipendentemente dalla selezione del mouse mostra i dati relativi a tutte le righe visibili nella griglia dei risultati (applicando i filtri di testata e /o quelli della testata colonne della griglia stessa)
+- Osnovica / Porez / Ukupno **Odabrano**: odnosi se na selekciju aktiviranu klikom miša (jedan ili više redaka istovremeno ako se drži tipka Ctrl)  
+- Osnovica / Porez / Ukupno: neovisno o selekciji mišem prikazuje podatke koji se odnose na sve redke vidljive u tablici rezultata (primjenjujući filtre iz zaglavlja i / ili one u zaglavlju stupaca tablice).  
