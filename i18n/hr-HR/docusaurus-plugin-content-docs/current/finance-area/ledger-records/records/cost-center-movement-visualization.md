@@ -1,29 +1,29 @@
 ---
-title: Visualizzazione dei movimenti dei centri aziendali.
+title: Pregled knjiženja po mjestu troška
 sidebar_position: 11
 ---
 
-Questa maschera permette di visualizzare, per ogni sottoconto selezionato (principalmente di tipo economico) i relativi movimenti dei centri aziendali collegati.
+Ovaj obrazac omogućuje pregled zapisa povezanih centara poduzeća za svaki odabrani podkonto.
 
 ![](/img/it-it/finance-area/ledger-records/records/cost-center-movement-visualization/image01.png)
 
-Nell'area di filtro superiore è possibile inserire dati relativi sia alle registrazioni contabili, sia al centro di costo al fine di raffinare la ricerca.
+U gornjem području filtera moguće je unijeti podatke koji se odnose i na računovodstvena knjiženja za mjesto troška kako bi se preciziralo pretraživanje.
 
-La griglia dei risultati (sotto) presenta, per ogni conto contabile, il relativo movimento dei centri aziendali (uno o più di uno) collegati, oltre ad altri dettagli sulla registrazione contabile. Per il significato dei campi specifici si rinvia al **[Glossario](/docs/guide/common/glossary/glossary-intro)**.
+Pregled rezultata (ispod) prikazuje, za svaki konto, relativno kretanje povezanih poslovnih centara (jednog ili više njih), kao i druge detalje o računovodstvenom unosu. Za značenje specifičnih polja upućuje se na **[Rječnik](/docs/guide/common/glossary/glossary-intro)**.
 
-In basso, sotto la griglia dei risultati, sono presenti quattro campi con i totali, rispettivamente per le sezioni Dare e Avere.
+Pri dnu, ispod prikaza s rezultatima, nalaze se četiri polja s ukupnim iznosima, odnosno odjeljak dugovne i potražne strane.
 
-I primi due sono riferiti ai totali per le sole righe selezionate (una o più di una tramite le modalità illustrate nella parte generale). I secondi sono riferiti in ogni caso al totale delle righe presenti nella griglia dei risultati e visualizzate dalla ricerca eseguita.
+Prva dva odnose se na ukupne iznose samo za odabrane retke (jedan ili više od jednog koristeći metode prikazane u općem dijelu). Druga dva se odnose na iznose u ukupnom broju redaka prisutnih u prikazu rezultata.
 
-**Ribbon bar**:
+**Traka izbornika**:
 
 
 
-| Funzione | Significato |
+| Funkcija | Značenje |
 | --- | --- |
-| Ricerca | Avvia la ricerca dei risultati secondo i dati inseriti nell'area di filtro. |
-| Modifica | Entra direttamente in modifica della registrazione contabile che ha originato il movimento del centro aziendale selezionato. |
-| Visualizza | Entra direttamente in visualizzazione della registrazione contabile che ha originato il movimento del centro aziendale selezionato. Non sarà possibile salvare modifiche. |
+| Traži | Pokreće traženje rezultata prema podacima unesenim u područje filtera. |
+| Izmjeni | Otvara uređivanje računovodstvenog unosa. |
+| Prikaži | Ide izravno na pregled računovodstvenog unosa. Neće biti moguće spremiti promjene. |
 
 
 

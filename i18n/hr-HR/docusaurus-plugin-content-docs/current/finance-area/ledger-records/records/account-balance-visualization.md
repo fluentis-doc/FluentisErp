@@ -1,93 +1,93 @@
 ---
-title: Visualizzazione Bilancio
+title: Pregled stanja računa
 sidebar_position: 8
 ---
 
-Da questa form è possibile ottenere una visualizzazione dei dati a video che corrisponde, grossomodo, al report del bilancio di verifica, potendo tuttavia usufruire di svariate possibilità di filtro, raggruppamento dei dati e opzioni ulteriori.
+S ove forme moguće je dobiti prikaz podataka na ekranu koji otprilike odgovara izvještaju o bilanci, ali s mogućnošću korištenja različitih filtara, grupiranja podataka i dodatnih opcija.
 
-AREA DI FILTRO:
+PODRUČJE FILTRA:
 
 ![](/img/it-it/finance-area/ledger-records/records/account-balance-visualization/image01.png)
 
-permette di filtrare i dati contabili da elaborare inserendo un range di **date di registrazione** contabile, un range (sottoinsieme) di conti o sottoconti, un tipo conto, una causale contabile (**Template**) una divisione specifica (utile se ve ne sono più di una attive) una divisa estera (**Valuta**).
+Omogućuje filtriranje računovodstvenih podataka za obradu unoseći raspon **datuma obračuna** raspon (podskup) konta ili podkonti, tip konta, računovodstvenu stavku (**Predložak**) specifičnu podjelu (korisno ako postoji više aktivnih) te stranu valutu (**Valuta**).
 
-**Converti anche le altre somme in divisa**: attivando questo flag, in concomitanza con la valorizzazione del precedente filtro Valuta (il quale estrae i movimenti espressi in una particolare divisa), anche gli altri movimenti contabili espressi in Euro o in altre divise saranno convertiti nella divisa selezionata con il cambio della data di registrazione.
+**Konvertiraj također druge zbrojeve u valuti**: aktiviranjem ovog flaga, uz postavljanje prethodnog filtra Valuta (koji izvlači transakcije izrađene u određenoj valuti), i ostale računovodstvene transakcije izrađene u eurima ili drugim valutama, bit će pretvorene u odabranu valutu prema tečaju na datum knjiženja.
 
-PARAMETRI: (aprire l'expander)
+PARAMETRI: (otvoriti proširenja)
 
 ![](/img/it-it/finance-area/ledger-records/records/account-balance-visualization/image02.png)
 
-Poiché la griglia dei risultati presenta anche il campo **Livello**, che rappresenta l'ordine gerarchico del conto/sottoconto rispettivo nel piano dei conti (dove 99 è l'ultimo livello inferiore di massimo dettaglio possibile e 0 è il nodo radice, generalmente contenente il totale) è presente un filtro sui livelli da visualizzare:
+Budući da prikaz s rezultatima također prikazuje polje **Razina**, koje predstavlja hijerarhijski redoslijed odgovarajućeg konta/podkontna u kontonom planu (gdje je 99 posljednja razina s najvećim detaljima, a 0 je korijenski čvor, obično koji sadrži ukupno), prisutan je i filtar za razine koje treba prikazati:
 
-**Tutti**: mostra tutti i livelli;
+**Svi**: Prikazuje sve razine;
 
-**Mostra i totali per livello X... **: inserendo il livello desiderato (esempio 98) nell'apposito campo adiacente **Livello**, i risultati saranno raggruppati per conto mastro (che nel piano dei conti è il livello immediatamente superiore al 99, definito ai fini della presente elaborazione come massimo dettaglio possibile dei sottoconti nel piano dei conti);
+**Prikaži ukupni iznos za razinu X...**: unoseći željenu razinu (npr. 98) u odgovarajuće polje **Razina** rezultati će biti grupirani prema glavnim kontima (koja u planu konta predstavljaju razinu neposredno iznad 99, definiranu kao maksimalni detalj podkonti u kontnom planu za ovu obradu);
 
-**Mostra i totali per livello X...** **con subtotali:** rispetto al tipo di raggruppamento precedente mostrerà anche i subtotali dei possibili raggruppamenti gerarchicamente inferiori.
+**Prikaži ukupni iznos za razinu X... s podzbrojevima:** U usporedbi s prethodnim načinom grupiranja, prikazat će i djelomične ukupne iznose za moguće hijerarhijski niže grupacije. 
 
-**Mostra totali solo per sottoconti**: i valori saranno visualizzati solo per i livelli contenenti sottoconti (i livelli gerarchicamente superiori non saranno visualizzati).
+**Prikaži ukupni iznos samo za podračune**: Vrijednosti će biti prikazane samo za razine koje sadrže podkonte (više hijerarhijske razine neće biti prikazane). 
 
-**Escludere le righe a zero**: non saranno visualizzati i conti / sottoconti non movimentati.
+**Isključi retke s nultim iznosom**: Konta/podkonti bez transakcija neće biti prikazani.
 
-**Aggiungere (off/on)**: il flag attiva o disattiva una particolare modalità di visualizzazione che, in caso di modifica del range di date di registrazione ed aggiornamento della videata premendo nuovamente il tasto Ricerca nella ribbon bar, va ad aggiungere il nuovo risultato (accodandolo nella griglia del risultato) a quello precedentemente visualizzato permettendo, ad esempio, di effettuare dei confronti di valori tra periodi diversi. Per ragioni di gestibilità e chiarezza del risultato si consiglia di utilizzare questa modalità solamente in abbinamento con il filtro sui conti / sottoconti settato in modo da restituire un set limitato di dati.
+**Dodaj (uključeno/isključeno)**: ova opcija aktivira ili deaktivira poseban način prikazivanja koji, u slučaju promjene raspona datuma knjiženja i ažuriranja prikaza pritiskom na gumb Traži u traci izbornika, dodaje novi rezultat (dodajući ga u prikaz rezultata) prethodno prikazanom rezultatu. To omogućuje, na primjer, usporedbu vrijednosti između različitih razdoblja. Radi upravljivosti i jasnoće rezultata, preporučuje se korištenje ove opcije samo uz filtar za konta/podkonte postavljen tako da vraća ograničen set podataka.
 
-GRIGLIA DEL RISULTATO:
+GRID S REZULTATIMA:
 
 ![](/img/it-it/finance-area/ledger-records/records/account-balance-visualization/image03.png)
 
-In questa griglia sono esposti i conti / sottoconti secondo i parametri di filtro e raggruppamento definiti nella parte superiore della form.
+U ovom prikazu vide se konta/podkonta prema parametrima filtriranja i grupiranja definiranim u gornjem dijelu obrasca.
 
-Vengono riportati il codice e descrizione sia del **gruppo** (si veda la struttura del **[piano dei conti](/docs/erp-home/registers/accounting/analytic-chart-of-accounts)**) sia del conto / sottoconto ed il codice del **livello** definito specificamente per la presente elaborazione e sopra descritto.
+Prikazuju se šifra i opis **grupe** (vidi strukturu **[kontnog plana](/docs/erp-home/registers/accounting/analytic-chart-of-accounts)**) i računa/podračuna te šifra **razine** definirana posebno za ovu obradu i opisana gore.  
 
-**Finale**: questo campo indica (con un flag) se il conto e/o il gruppo sia di livello gerarchicamente superiore rispetto a tutti gli altri del suo ramo (della struttura del piano dei conti). Ciò è utile perché, in caso di organizzazione non ottimale o non perfettamente omogenea della struttura del piano dei conti, il codice visualizzato nel campo Livello potrebbe non essere realmente quello gerarchicamente superiore e pertanto potrebbe non essere possibile filtrare correttamente (ed ottenere totali corretti).
+**Konačni**: ovo polje označava (zastavicom) je li konto i/ili grupa hijerarhijski viša razina od svih ostalih u svojoj grani (strukture kontnog plana). Ovo je korisno jer, u slučaju složenije organizacije strukture kontnog plana, šifra prikazana u polju Razina možda zapravo nije hijerarhijski nadređena i stoga možda neće biti moguće ispravno filtrirati (i dobiti točne ukupne iznose).
 
-Quindi nella riga filtro della griglia è possibile scegliere tutti i conti con flag Finale attivo assicurandosi così di estrarre tutti i livelli superiori.
+Stoga je u retku filtera mreže moguće odabrati sve račune s aktivnom zastavom Konačni, čime se osigurava izdvajanje svih viših razina.  
 
 ![](/img/it-it/finance-area/ledger-records/records/account-balance-visualization/image04.png)
 
-NOTE:
+NAPOMENE:
 
-Nelle colonne don i dati numerici sono utilizzate le seguenti abbreviazioni:
+U stupcima koji sadrže numeričke podatke koriste se sljedeće kratice:
 
-VdS = Valuta della società (inteso come divisa della società in uso, quella in cui è denominata la contabilità che stiamo tenendo, nel caso si una azienda italiana è l'Euro).
+VdS = Valuta tvrtke (zamišljena kao valuta tvrtke u upotrebi, zove se ona u kojoj vodimo računovodstvo, u slučaju talijanske tvrtke to je euro).  
 
-VS = Valuta scelta (divisa) nel filtro iniziale.
+VS = odabrana valuta (podijeljena) u početnom filtru.  
 
-Euroam = Euroamount: controvalore in Euro di una operazione in valuta.
+Euroam = Euroamount: ekvivalentna vrijednost transakcije u valuti u eurima. 
 
-ATTENZIONE: è possibile visualizzare (o nascondere) ulteriori colonne rispetto al profilo standard della form facendo click con il tasto DX sulle testate delle colonne della griglia e scegliendo **Visualizza selettore colonne**.
+PAŽNJA: moguće je prikazati (ili sakriti) dodatne stupce u usporedbi sa standardnim profilom obrasca desnim klikom na zaglavlja stupaca pregleda i odabirom  **Pokaži izbornik stupaca**.
 
 ![](/img/it-it/finance-area/ledger-records/records/account-balance-visualization/image05.png)
 
 ![](/img/it-it/finance-area/ledger-records/records/account-balance-visualization/image06.png)
 
-SIGNIFICATO COLONNE:
+ZNAČENJE STUPCA:
 
-Apertura Anno Dare / Avere = valore dell'ultima apertura dei conti calcolata **(A)**
+Godina otvaranja Dugovno / potražno = vrijednost posljednjeg izračunatog otvaranja konta **(A)**
 
-Importo precedente (Dare / Avere) = importo riferito al periodo intercorrente tra l'ultima apertura conti (A) e la data di inizio periodo impostata nel filtro per date registrazione **(B)**
+Prethodni iznos (dugovno / potražno) = iznos koji se odnosi na razdoblje između posljednjeg otvaranja konta (A) i datuma početka razdoblja postavljenog u filtru datuma knjiženja **(B)**
 
-Bilancio precedente (Dare /Avere) = **(A) + (B)**
+Prethodna bilanca (dugovno/potražno) = **(A) + (B)**
 
-Dare / Avere nel periodo = importo riferito al periodo inserito nel filtro per date registrazione **(C)**
+Dugovno/potražno u razdoblju= iznos koji se odnosi na razdoblje umetnuto u filtar datuma **(C)**
 
-Totale Dare / Avere = **(A) + (B) + (C)**
+Ukupno dugovno/potražno = **(A) + (B) + (C)**
 
-Saldo finale Dare /Avere = è il saldo netto dei valori totale dare /avere espressi dal punto precedente.
+Konačno dugovno/potražno = je neto stanje ukupnih dugovnih/potražnih vrijednosti izraženih u prethodnoj točki.
 
-Colonna **Filtro**: è un dato "tecnico" che serve, nel caso di esportazione dati della griglia in excel (o trasferimento con copia-incolla), per gestire correttamente la successiva creazione, su excel, di pivot table (deve quindi essere portato su excel anche questo dato).
+Stupac **Filter**: to je "tehnički" podatak koji se koristi, u slučaju izvoza prikazanih podataka u Excel (ili prijenosa s kopiranjem), za ispravno upravljanje naknadnim stvaranjem tablica u Excelu.
 
-TOTALI:
+UKUPNO:
 
 ![](/img/it-it/finance-area/ledger-records/records/account-balance-visualization/image07.png)
 
-**Totale righe selezionate**: è possibile selezionare uno o più (tenendo premuto il tasto Ctrl) conti / sottoconti. in questo caso gli importi vengono totalizzati in questa riga.
+**Ukupno za označene redove**: može se odabrati jedan ili više (držeći pritisnutu tipku Ctrl) konta/podkonta. 
 
-ATTENZIONE: Nel caso in cui vengano selezionati ad esempio dei sottoconti e anche i relativi conti mastro , oppure dei gruppi di livello gerarchico superiore (che dunque già comprendono il valore dei sottoconti di dettaglio), **l'importo visualizzato** in questa riga sarà riportato **in rosso** per evidenziare che il totale sarà falsato da una selezione non omogenea e coerente.
+PAŽNJA: Ako su npr. odabrana podkonta i povezana glavna konta ili grupe na višoj hijerarhijskoj razini (koje stoga već uključuju vrijednost detaljnih podkonta), **iznos prikazan** u ovom retku bit će prikazan **u crvenom** kako bi se istaknulo da će ukupni rezultat biti iskrivljen nehomogenim i koherentnim odabirom.  
 
-**Totale conti dettagliati**: i totali visualizzati in questa riga sono solamente quelli riferiti a sottoconti di dettaglio di livello gerarchico più basso.
+**Ukupno za detaljna konta**: ukupni iznosi prikazani u ovom retku odnose se samo na detaljna podkonta na najnižoj hijerarhijskoj razini. 
 
-**Totale tabella**: i totali visualizzati in questa riga sono quelli riferiti a tutte le righe visualizzate nella griglia dei risultati, quindi nel caso siano restituiti (in base ai filtri impostati) sia sottoconti di dettaglio, sia conti o livelli superiori, il totale sarà la somma dei sottoconti e dei livelli superiori (andando a moltiplicare i valori rispetto al livello di dettaglio e rappresentando in questo caso un dato poco significativo).
+**Ukupno tabela**: ukupni iznosi prikazani u ovom retku odnose se na sve retke prikazane u mreži rezultata, stoga ako se vrate i detaljna podkonta i više razine ili računi (na temelju postavljenih filtara), ukupni će biti zbroj podkonta i viših razina (množenje vrijednosti s obzirom na razinu detalja i predstavlja u ovom slučaju beznačajnu brojku).
 
 
 
