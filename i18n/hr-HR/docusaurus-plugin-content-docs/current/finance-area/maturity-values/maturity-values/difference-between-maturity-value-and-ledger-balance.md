@@ -1,50 +1,50 @@
 ---
-title: Differenza partite aperte saldo contabile
+title: Razlika između otvorenih stavki i glavne knjige
 sidebar_position: 4
 ---
 
-I dati che è possibile estrarre dalla presente form corrispondono al contenuto della stampa **Differenza tra saldo contabile e partite.**
+Podaci koje je moguće izdvojiti iz ovog obrasca odgovaraju sadržaju **Ispisa razlike knjigovodstvenog stanja i otvorenih stavki**
 
-Il significato della ricerca è quello di verificare le differenze (squadrature) tra i saldi contabili ed i saldi del partitario per ogni cliente e fornitore al fine di correggerle. Dette differenze possono originare da errori nella gestione del partitario o delle scritture contabili (mancato allineamento tra movimento contabile ed apertura partite o incasso / pagamento e chiusura partita).
+Smisao istraživanja je provjeriti razlike (razdvajanja) između knjigovodstvenih stanja i stanja u glavnim knjigama za svakog kupca i dobavljača radi ispravljanja istih. Ove razlike mogu potjecati od pogrešaka u vođenju glavne knjige ili računovodstvenih zapisa (nedostatak usklađenosti između računovodstvenog kretanja i otvaranja stavki ili naplate/plaćanja i zatvaranja stavke).
 
-:::danger NOTA IMPORTANTE:
-Nel caso dei **percipienti**, se si adotta il criterio di esposizione delle partite aperte al netto della ritenuta d'acconto (nei parametri del [tipo ritenuta d'acconto](/docs/configurations/tables/finance/withholding-tax-types), le differenze che saranno evidenziate devono essere ignorate (e non da considerare come errori) tenendo inoltre presente che saranno riassorbite all'atto del pagamento del compenso e della chiusura della relativa partita.
+:::danger VAŽNA NAPOMENA:
+U slučaju **vanjskog suradnika**, ako se usvoji kriterij prikazivanja otvorenih stavki bez poreza po odbitku (u parametrima [vrste poreza po odbitku](/docs/configurations/tables/finance/withholding-tax-types)), razlike koje će biti istaknute moraju se zanemariti (i ne smatrati pogreškama), također uzimajući u obzir napomenu o računu da će se ponovno vratiti nakon plaćanja naknade i zatvaranja relevantne stavke.
 :::
 
 
-### **AREA DI FILTRO**:
+### **PODRUČJE FILTRA**:
 
-**Conto**: filtro principale per estrarre solo un sottoconto di cliente o fornitore. Non filtrando saranno riportati i sottoconti di tutti i clienti e fornitori che presentano differenze.
+**Konto**: Glavni filtar za izdvajanje samo podkonta kupca ili dobavljača. Bez filtriranja, bit će prijavljena podkonta svih kupaca i dobavljača s razlikama.
 
-**Da /  A Data registrazione**: filtro sulle date di registrazione contabile
+**Od/do datuma zapisivanja**: filtriranje datuma računovodstvenog knjiženja
 
-**Escludi partite chiuse**: attivando il flag verranno ignorate le partite nello stato Chiusa.
+**Isključi zatvorene dospjele vrijednosti**: aktiviranje zastavice zanemarit će dospijeća u zatvorenom stanju.
 
-:::tip **UTILE**
-**Dettagli**: attivando questo flag i risultati saranno scomposti (anzichè raggruppati) evidenziando l'eventuale differenza per ogni singolo movimento contabile rispetto alla partita correlata (o al pagamento relativo in caso di movimento contabile di incasso / pagamento); L'opzione è utile in combinazione con il filtro sul sottoconto dello specifico cliente o fornitore per analizzare come si è formata la squadratura (su quali movimenti contabili) e procedere a correggerla.
+:::tip **KORISNO**
+**Detalji**: aktiviranjem ove oznake rezultati će biti raščlanjeni (umjesto da budu grupirani) ističući moguću razliku za svako pojedinačno računovodstveno kretanje u usporedbi s povezanom stavkom (ili s povezanim plaćanjem u slučaju obračunskog kretanja naplate/plaćanja); Opcija je korisna u kombinaciji s filterom na podkontu određenog kupca ili dobavljača kako bi se analiziralo kako je formirano stanje (na kojim knjigovodstvenim kretanjima) i krenulo u njegovu korekciju.
 :::
 
-:::tip **MOLTO UTILE**
-**Visualizzare solo i sottoconti / registrazioni con differenza diversa da zero**: il flag (consigliato) attivo permette di evidenziare solo i sottoconti che presentano delle differenze da correggere nascondendo invece quelli che risultano corretti.
+:::tip **VRLO KORISNO**
+**Prikaži samo detaljna konta/zapise s razlikom različitom od nule**: (preporučen) aktivan flag omogućuje da se označe samo podkonta koja imaju razlike koje treba ispraviti, a ne prikazuju se oni koji su točni.
 :::
 
-**Raggruppa per divisa della società**: il flag attivo determina l'esposizione dei movimenti in divisa secondo la divisa della società. Esempio dei movimenti in USD saranno esposti e convertiti in Euro.
+**Grupiraj po valuti tvrtke**: aktivan flag određuje prikaz valutnih kretanja prema valuti poduzeća. 
 
-### **GRIGLIA DEI RISULTATI**:
+### **PRIKAZ REZULTATA**:
 
 ![](/img/it-it/finance-area/maturity-values/maturity-values/difference-between-maturity-value-and-ledger-balance/image1.png)
 
-Per ogni sottoconto relativo al cliente o fornitore sono visualizzati i totali, rispettivamente, DARE ed AVERE sia per la parte dei movimenti contabili, sia per la parte del partitario ed infine il saldo contabile e di partitario. Quindi una colonna con la differenza.
+Za svaki podkonto koji se odnosi na kupca ili dobavljača, ukupni iznosi, odnosno dugovanja i potraživanja prikazani su i za dio računovodstvenih kretanja i za dio glavne knjige i na kraju za računovodstveni i glavni saldo. Dakle, stupac s razlikom.
 
-In questo modo è possibile anche valutare la possibile origne della squadratura.
+Na ovaj način također je moguće procijeniti mogući izvor nepodudaranja.
 
-A titolo di esempio: Un totale dare contabile postivo (e quindi un saldo dare contabile positivo) ed un totale dare partite a zero relativamente al sottoconto di un cliente può essere orginato da una apertura dei conti per la quale non si è provveduto anche all'apertura delle partite. 
+Kao primjer: Ukupni pozitivni račun duga (a time i pozitivan saldo duga) i ukupni račun duga sa nulama u odnosu na podkonto kupca mogu nastati uslijed otvaranja računa za koji nije bilo izvršeno i otvaranje stavki 
 
 ---
 
-### **VIDEO TUTORIALS**
+### **VIDEO TUTORIJALI**
 
-:::important Vedi Anche
-[**VIDEO TUTORIALS SULLE PARTITE APERTE**](/docs/video/finance/intro)
+:::important Vidi također
+[**VIDEO TUTORIJALI O OTVORENIM DOSPIJEĆIMA**](/docs/video/finance/intro)
 :::
 

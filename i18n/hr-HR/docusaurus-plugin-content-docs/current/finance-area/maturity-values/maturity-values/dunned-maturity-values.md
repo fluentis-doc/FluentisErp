@@ -1,40 +1,40 @@
 ---
-title: Partite sollecitate
+title: Dospijeća plaćanja za koje su izdane opomene
 sidebar_position: 2
 ---
 
-Ricerca partite sollecitate 
+Traži dospijeća podudarnosti
 
  
 
-La procedura di ricerca delle partite sollecitate permette all'utente di ricercare i solleciti inseriti precedentemente con lo scopo di visualizzarli, modificarli ed eventualmente cancellarli.
+Procedura pretraživanja traženih artikala omogućuje korisniku pretragu prethodno unesenih podsjetnika s ciljem pregledavanja, izmjene i eventualnog brisanja istih.
 
 
 
-| Funzione | Significato |
+| Funkcija | Značenje |
 | --- | --- |
-| Ricerca | Pulsante per applicare i filtri di ricerca all'intero database dei solleciti inseriti. |
-| Nuovo | Richiama la procedura per inserire un nuovo sollecito. Normalmente il sollecito viene creato con la procedura di creazione automatica, un inserimento di tipo manuale risulta pertanto molto raro e meno efficiente. |
-| Modifica | Richiama la procedura per modificare un sollecito precedentemente inserito. |
-| Visualizza | Richiama la procedura per visualizzare un sollecito precedentemente inserito. |
-| Cancella | Esegue la procedura per cancellare un sollecito precedentemente inserito. |
+| Traži | Tipka za primjenu filtara pretraživanja na cijelu bazu podataka unesenih podsjetnika. |
+| Novo | Poziva postupak za umetanje novog podsjetnika. Obično se podsjetnik stvara automatskim postupkom izrade, stoga je ručni unos vrlo rijedak i manje učinkovit.|
+| Izmjeni | Poziva postupak za izmjenu prethodno unesenog podsjetnika. |
+| Prikaži | Poziva postupak za pregled prethodno unesenog podsjetnika. |
+| Izbriši | Izvodi postupak za brisanje prethodno unesenog podsjetnika.|
 
-**Per le informazioni, relative alle Stampe  e Procedure che seguono, si rinvia alle rispettive voci di Menù**
+**Za informacije koje se odnose na ispise i postupke koji slijede, pogledajte odgovarajuće stavke izbornika**
 
 
 
-| Funzione | Significato |
+| Funkcija | Značenje |
 | --- | --- |
-| Stampa interessi | Richiama la procedura per stampare gli interessi sui ritardi di pagamento. |
-| Stampa lettere di sollecito | Richiama la procedura per stampare le lettere di sollecito. |
+| Ispis kamata | Poziva proceduru za ispis kamata na zakašnjela plaćanja. |
+| Ispis podsjetnika | Poziva proceduru za ispis podsjetnika. |
 
 
 
-| Funzione | Significato |
+| Funkcija | Značenje |
 | --- | --- |
-|  [Calcolo interessi](/docs/finance-area/maturity-values/procedures/interest-calculation/parameters-interests-in-arrears-calculation)  | Richiama la procedura per gestire il calcolo degli interessi sui ritardi di pagamento. |
-|  [Creazione automatica solleciti](/docs/finance-area/maturity-values/procedures/dunning-letters-automatic-issue)  | Richiama la procedura per effettuare la creazione automatica solleciti.. |
-|  [Generazione solleciti](/docs/finance-area/maturity-values/procedures/generation-of-dunning-letters/generation-of-dunning-letters-intro)  | Richiama la procedura per effettuare la creazione manuale solleciti. |
+|  [Obračun kamata](/docs/finance-area/maturity-values/procedures/interest-calculation/parameters-interests-in-arrears-calculation)  | Poziva proceduru za vođenje obračuna kamata na zakašnjela plaćanja. |
+|  [Automatsko kreiranje podsjetnika](/docs/finance-area/maturity-values/procedures/dunning-letters-automatic-issue)  | Poziva postupak za automatsko kreiranje podsjetnika. |
+|  [Generiranje podsjetnika](/docs/finance-area/maturity-values/procedures/generation-of-dunning-letters/generation-of-dunning-letters-intro)  | Poziva postupak za ručno kreiranje podsjetnika. |
 
 
 

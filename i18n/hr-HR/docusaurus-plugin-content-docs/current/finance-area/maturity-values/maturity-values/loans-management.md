@@ -1,55 +1,55 @@
 ---
-title: Gestione mutui
+title: Upravljanje bankarskim kreditima
 sidebar_position: 2
 ---
 
-### Introduzione
+### Uvod
 
-Dalla presente form è possibile ricercare ed inserire nuovi mutui passivi.
+Iz ovog obrasca moguće je pretraživati i unositi nove naplative hipoteke.
 
-La gestione del mutuo passivo permette, nel dettaglio, di inserire tutti i dati relativi, in particolare il piano di ammortamento del mutuo, al fine di procedere successivamente alla contabilizzazione automatica del pagamento delle rate alle scadenze previste.
+Upravljanje pasivnom hipotekom omogućuje detaljan unos svih relevantnih podataka, posebice plana otplate hipoteke, kako bi se naknadno pristupilo automatskom obračunu plaćanja obroka u predviđenim rokovima.
 
-I campi principali esposti nella maschera ono quelli presenti anche nel dettaglio.
+Glavna polja prikazana u maski također su prisutna u detaljima.
 
-Per inserire un nuovo mutuo premere **Nuovo**.
+Za unos nove hipoteke pritisnite **Novo**.
 
-Il primo dato obbligatorio da inserire è il tipo di mutuo, tramite una combo box che rinvia all'apposita tabella *Tipi mutuo* (accessibile anche con il tasto destro e comando Apri form).
+Prvi obvezni podatak koji se upisuje je vrsta hipoteke, preko kombiniranog okvira koji upućuje na konkretnu tablicu Vrste hipoteka (dostupnoj i desnom tipkom i naredbom Otvori obrazac).
 
-### Tabella tipi mutuo
+### Tablica vrsta kredita
 
-:::note Campi della tabella Tipi Mutuo
-**Tipo Mutuo**: codice per richiamare il dato
+:::note POLJA U TABLICI VRSTA HIPOTEKE
+**Vrsta kredita**: šifra za opoziv podataka;
 
-**Descrizione del tipo mutuo**: descrizione estesa del dato
+**Vrsta opisa bankovnog zajma**: prošireni opis podataka;
 
-**Tipo flusso / Descrizione**: campo per richiamare (nella tabella *Tipi flusso finanziario*) quale tipo di flusso finanziario relativo all'elaborazione del Cash Flow sarà abbinato alle rate mutuo, in modo tale da poterle rappresentare automaticamente nell'elaborazione dei cash flow
+**Vrsta tijeka / opis**: polje za prisjećanje (u tablici *Vrste financijskog tijeka*) koja vrsta financijskog tijeka koja se odnosi na obradu novčanog tijeka će se kombinirati s ratama hipoteke, tako da se mogu automatski prikazati u obradi novčanog tijeka; 
 
-**Causale**: causale contabile abbinata al fine di permettere la contabilizzazione automatica delle rate
+**Predložak**: računovodstveni predložak kombiniran kako bi se omogućilo automatsko obračunavanje rata.
 :::
 
-### Dettaglio nuovo mutuo
+### Novi detalji o kreditu
 
-Gli altri campi obbligatori sono la descrizione del contratto ed i conti principali per le successive operazioni di contabilizzazione
+Ostala obavezna polja su opis ugovora i glavni računi za kasnije računovodstvene operacije
 
-- Banca: per inserire il conto corrente bancario con cui saranno pagate le rate
-- Debito: per inserire il conto di debito dal quale saranno stornati i pagamenti delle rate, **in linea capitale** (ad es. "Mutui passivi") 
-- Interessi: per inserire il conto sul quale sarà contabilizzata la quota interessi di ogni rata
-- Costi: per inserire il conto dove saà contabilizzata la commissione o gli altri costi di ogni rata
+- Banka: za unos bankovnog računa na koji će se uplate rate;
+- Debit: za unos debitnog računa s kojeg će biti otkazana **otplata glavnice** (npr. "Hipotekarne obveze");
+- Kamate: za unos računa na koji će se obračunavati kamata svake rate;
+- Troškovi: za unos računa na koji će se obračunavati provizija ili drugi troškovi svake rate;
 
-Gli altri campi importanti sono l'importo erogato, la divisa (in particolare se diversa da Euro attiva il relativo tasso di cambio)
+Druga važna polja su plaćeni iznos, valuta (osobito ako se razlikuje od eura, aktivira relevantni tečaj)
 
-**TAEG:** tasso di interesse praticato sul mutuo, il dato viene utilizzato dalla procedura di calcolo automatico del piano di ammortamento.
+**APR:** kamatna stopa koja se obračunava na hipoteku, podaci se koriste u postupku automatskog izračuna otplatnog plana.
 
-Il campo Versione si ricollega al pulsante **Nuova Versione** presente nella form di ricerca che permette, anche dopo l'inserimento del piano di ammortamento e la contabilizzazione di alcune rate, di effettuare delle modifiche nel piano storicizzando la situazione precedente.
+Polje Verzija povezano je s tipkom  **Nova verzija** koji se nalazi u obrascu za pretraživanje koji omogućuje, čak i nakon umetanja amortizacijskog plana i obračuna nekih rata, izmjene u planu historiziranjem prethodne situacije.  
 
-Nella griglia di dettaglio viene inserito il piano di ammortamento composto da tutte le rate previste, compilando ola data (che sarà ripresa nella procedura di contabilizzazione), la quota capitale e la quota interessi e le relative commissioni (nella colonna **Costo**)
+U detaljnu mrežu upisuje se amortizacijski plan koji se sastoji od svih očekivanih obroka, popunjavanja datuma (koji će biti uključeni u računovodstveni postupak), dijela kapitala i dijela kamata te pripadajućih provizija (u stupcu **Trošak**)
 
-Le successive colonne, evidenziate in azzurro, vengono gestite da Fluentis per evidenziare il totale della rata, l'avvenuta contabilizzazione mediante procedura relativa ed il riferimento alla registrazione contabile generata.
+Sljedećim stupcima, označenim plavom bojom, upravlja Fluentis kako bi se istaknuo ukupni iznos rate, računovodstvo provedeno korištenjem odgovarajuće procedure i referenca na generirani računovodstveni zapis.
 
-### Procedure disponibili nella ribbon bar
+### Postupci dostupni na traci izbornika
 
-Le procedure disponibili, ovvero Calcola Piano di ammortamento, Cambia date Rate e Aggiorna spese rata, sono le medesime disponibili per la gestione dei leasing, pertanto si rinvia alla [**pagina corrispondente**](/docs/finance-area/leasing/new).
+Dostupni postupci, tj. izračun amortizacijskog plana, promjena datuma rate i ažuriranje troškova rate, isti su kao i oni dostupni za upravljanje leasingom, stoga pogledajte [**odgovarajuću stranicu**](/docs/finance-area/leasing/new).
 
-### Contabilizzazione rate mutuo
+### Knjiženje rata kredita
 
-Avviene utilizzando i comandi posti nella ribbon bar **Contabilizzazione** ( e **Ripristina contabilizzazione** per annullare la manovra)
+To se radi pomoću naredbi koje se nalaze na traci izbornika **Knjiženje** ( i **Vrati knjiženje** za poništavanje operacije)

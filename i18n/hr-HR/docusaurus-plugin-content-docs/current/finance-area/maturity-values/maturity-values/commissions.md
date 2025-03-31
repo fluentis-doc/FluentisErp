@@ -1,33 +1,33 @@
 ---
-title: Commissioni
+title: Provizije
 sidebar_position: 7
 ---
 
-Questa form permette di visualizzare le commissioni (provvigioni agenti) maturate e liquidate.
+Ovaj obrazac omogućuje pregled obračunatih i plaćenih provizija (agentskih provizija).
 
-Si riferisce alla gestione delle provvigioni agenti effettuata dal modulo amministrativo.
+Odnosi se na upravljanje agentskim provizijama koje provodi administrativni modul.
 
-Nella sezione di testata sono presenti i filtri per Agente e per alcuni elementi contabili, dal momento che le righe relative alle provvigioni vengono inserite già nel momento in cui la fattura di vendita che le determina viene contabilizzata.
+U odjeljku zaglavlja nalaze se filtri za Agenta/Predstavnika i za neke računovodstvene elemente, budući da su linije koje se odnose na provizije već umetnute kada se prodajni račun koji ih utvrđuje obračunava.
 
-:::note Nota
-**Si ricorda che all'interno della causale contabile con la quale viene contabilizzata la fattura deve essere attivo il flag di gestione delle provvigioni, il quale farà in modo che siano valorizzati i dati nell'apposito tab dedicato alle provvigioni presenta all'interno della registrazione contabile.**
+:::note BILJEŠKA
+**Unutar predloška knjiženja s kojim se knjiži faktura, zastavica za upravljanje provizijama mora biti aktivna, što će osigurati da se podaci unesu u posebnu karticu posvećenu provizijama prikazanim unutar računovodstvenog zapisa.**
 :::
 
 
-Ulteriori elementi di filtro sono i quattro flag che permettono di ricercare provvigioni da liquidare, o provvigioni liquidate o entrambe, e provvigioni non maturate o maturate.
+Daljnji elementi filtera su četiri zastavice koje omogućuju traženje provizija koje treba platiti, ili provizija koje se plaćaju ili oboje, te provizije koje nisu ili jesu akumulirane.
 
-**N.B.** più precisamente la condizione *APERTA* e *CHIUSA* fa riferimento al fatto che ci sia ancora un residuo da incassare o sia tutto incassato (e quindi la provvigione *chiusa* non avrà altri movimenti).
+**Dodatna bilješka**: Prikaz *OTVORENE* *ZATVORENE PROVIZIJE* odnosi se na činjenicu da još ima ostataka za prikupljanje ili da je sve prikupljeno.
 
-Nella griglia di dettaglio le righe corrispondono alle provvigioni calcolate in fattura inserite al momento della contabilizzazione della fattura stessa.
+U tabeli detalja redovi odgovaraju provizijama obračunatim na fakturi unesenoj prilikom knjiženja fakture.
 
-A seconda del criterio di maturazione definito nell'anagrafica agente, (ad esempio a pagamento avvenuto) verranno create delle righe di "storno" (ad esempio in caso di pagamento parziale o di una delle varie partite aperte, si creerà un riga corrispondente al valore dle pagamento). Per vederle occorre espandere il dettaglio della riga principale con l'apposito pulsante + a sinistra della riga.
+Ovisno o kriteriju razgraničenja definiranom u bazi podataka agenta (na primjer nakon izvršenog plaćanja) kreirat će se "stornirane" linije (na primjer u slučaju djelomičnog plaćanja ili jedne od raznih otvorenih stavki, kreirat će se linija koja odgovara vrijednost plaćanja). Da bi se to vidjelo, trebate proširiti detalje glavnog retka pomoću odgovarajuće tipke + lijevo od retka.
 
-Nel dettaglio (riportato poi sula riga principale) è presente anche il flag che si valorizza quando la provvigione viene liquidata all'agente.
+U detaljima (kasnije objavljenim na glavnoj liniji) postoji i zastavica koja se postavlja kada se provizija plaća agentu.
 
 ![](/img/it-it/finance-area/maturity-values/commissions.png)
 
 :::tip LINK
-Per la procedura di liquidazione provvigioni specifica della gestione dal modulo amministrativo vedere [**qui**](/docs/finance-area/professional-men/procedures/calculate-commissions)
+Za postupak podmirenja provizije specifične za menadžment iz administrativnog modula, pogledajte [**ovdje**](/docs/finance-area/professional-men/procedures/calculate-commissions)
 :::
 
 

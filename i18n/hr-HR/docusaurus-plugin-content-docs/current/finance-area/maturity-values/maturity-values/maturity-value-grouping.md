@@ -1,23 +1,23 @@
 ---
-title: Raggruppamenti partite
+title: Grupiraj dospijeća plaćanja
 sidebar_position: 3
 ---
 
-La ricerca effettuata dalla presente form deve essere utilizzata, in luogo della funzionalità di ricerca Partite, in presenza di raggruppamenti partite.
+Pretraživanje provedeno pomoću ovog obrasca mora se koristiti, umjesto funkcije pretraživanja podudaranja, u prisustvu grupiranja podudaranja.
 
-La gestione delle partite tramite i raggruppamenti rappresenta infatti una metodologia alternativa e particolare rispetto alla classica, e richiede una visualizzazione specifica per ottenere una situazione chiaramente leggibile.
+Upravljanje dospijećima kroz grupiranje predstavlja alternativnu i posebnu metodologiju u odnosu na klasičnu, te zahtijeva specifičnu vizualizaciju kako bi se dobila jasna situacija.
 
-Per ulteriori ** [dettagli sul raggruppamento partite vedere qui.](/docs/finance-area/ledger-records/records/ledger-record) **
+Za daljnje  **[detalje o grupiranju dospijeća pogledajte ovdje](/docs/finance-area/ledger-records/records/ledger-record)**
 
-La stampa  che corrisponde alla presente funzionalità di ricerca è denominata anch'essa** [ Raggruppamento partite.](/docs/finance-area/maturity-values/reports/maturity-value-grouping) **
+Ispis koji odgovara ovoj funkciji pretraživanja također se naziva **[Grupiranje dospijeća](/docs/finance-area/maturity-values/reports/maturity-value-grouping)**.
 
  
 
-**Sottoconto:** filtro principale di selezione del sottoconto relativo al cliente o fornitore.
+**Podkonto:** glavni filter za odabir podračuna koji se odnosi na kupca ili dobavljača.
 
-**Nr. documento:** filtro per l'inserimento del numero di documento (fattura, ricevuta fiscale ecc..) relativo al gruppo partite o alle partite di dettaglio (attivando il flag **Ricerca rif. all'interno del gruppo**).
+**Broj dokumenta:** filter za unos broja dokumenta (račun, porezna potvrda i sl.) koji se odnosi na skupinu paketa ili pakete detalja (aktivacija flaga **Traži ref. unutar grupe**).
 
-**Tipo Gruppo**: Aperto / Chiuso = Benchè le singole partite partite del gruppo possano essere aperte o chiuse da pagamenti di segno opposto, l'intero gruppo si considera chiuso quando tutte le partite sono chiuse ed il totale dare ed avere del gruppo pareggiano. Pertanto è possibile selezionare questa condizione nel filtro.
+**Tip grupe**: Otvoreno / Zatvoreno = Iako se pojedinačna dospijeća u grupi mogu otvoriti ili zatvoriti uplatama suprotnih predznaka, cijela se grupa smatra zatvorenom kada su sva dospijeća zatvorena i kada su ukupni dugovi i krediti grupe jednaki. Stoga možete odabrati ovaj uvjet u filtru.
 
 
 

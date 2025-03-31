@@ -1,14 +1,14 @@
 ---
-title: Pagamenti
+title: Plaćanja
 sidebar_position: 3
 ---
 
-La presente form permette di ricercare o inserire manualmente i pagamenti.
+Ovaj obrazac omogućuje traženje ili ručni unos plaćanja.
 
-Si ricorda che il sistema dei partitari Fluentis prevede che una partita sia aperta oppure chiusa, rispettivamente, se ad essa NON è collegato oppure è collegato un pagamento.
+Fluentisov sustav glavne knjige omogućuje da je plaćanje bude otvoreno ili zatvoreno, ako NIJE povezano sa stavkom u glavnoj knjizi.
 
-Nella presente form si segnala pertanto, in particolare, nell'area di filtro, il **flag Pagamenti non collegati a partite**, molto utile a livello diagnostico per individuare pagamenti orfani della relativa partita e pertanto da considerare dato non congruente da correggere.
+U području filtera, flag **Plaćanja koja nisu vezana za dospjele vrijednosti** je vrlo korisna na dijagnostičkoj razini za prepoznavanje plaćanja relevantne stavke.
 
-Nel caso in cui venga inserito manualmente un pagamento tramite il comando **Nuovo** (caso particolare e generalmente non tipico, ad esempio per chiudere una partita aperta extra-contabilmente) dopo l'apertura della form di inserimento nuovo pagamento si segnala il comando **Crea da partite / pagamenti**, che permette di ricercare la partita da chiudere creando il pagamento collegato in modo automatico.
+Ako se plaćanje ručno upisuje naredbom **Novo** (poseban i općenito netipičan slučaj, npr. za zatvaranje stavke koja je otvorena izvan računovodstva) nakon otvaranja obrasca za unos novog plaćanja, naredba **Kreiraj iz dospijeća plaćanja/plaćanja** omogućuje traženje stavke za zatvaranje automatskim stvaranjem povezanog plaćanja.
 
-Utile anche il comando **Collegamento registrazioni** per ricostruire il legame (mancante) tra il pagamento e la registrazione contabile relativa se necessario.
+Naredba **Poveznica zapisivanja** također je korisna za rekonstrukciju (nedostajuće) veze između plaćanja i povezanog računovodstvenog unosa ako je potrebno.
