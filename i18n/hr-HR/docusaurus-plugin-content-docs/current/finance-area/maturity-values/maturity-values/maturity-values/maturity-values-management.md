@@ -1,69 +1,69 @@
 ---
-title: Gestione partite
+title: Dospijeća plaćanja
 sidebar_position: 1
 ---
 
-Questa form è accessibile solo dalla form **Partite** (Amministrazione > Partite > Partite).
+Ovom obrascu se može pristupiti samo iz obrasca za **Dospijeća plaćanja** (Administracija > Dospijeća plaćanja > Dospijeća plaćanja).
 
-L'accesso avviene in due modi:
+Pristup se odvija na dva načina:
 
- 1. Tramite il comando *Nuova partita*
- 2. Facendo doppio click con il mouse su una partita presente nella griglia principale della form di *Ricerca partite* oppure selezionando la riga e utilizzando il comando Modifica partita nella ribbon bar.
+ 1. Putem naredbe *Nova dospijeća plaćanja*
+ 2. Dvostrukim klikom miša na dospijeće u glavnom prikazu za pretraživanje dospijeća ili odabirom retka i korištenjem naredbe *Izmijeni dospijeća plaćanja* na traci izbornika. 
 
-Da questa posizione è possibile:
+Iz ove pozicije moguće je: 
 
-- inserire una nuova partita manualmente (senza che sia generata da una scrittura contabile)
+- ručno unijeti novu stavku (bez generiranja knjigovodstvenog unosa)  
 
-- modificare i dati di una partita pre-esistente.
+- mijenjati podatke već postojećeg dospijeća. 
 
-In particolare, tipicamente, da questa posizione può essere aggiunto o rimosso il blocco della partita per il pagamento agendo sul flag apposito:
+Konkretno, obično se s ove pozicije plaćanje može dodati ili ukloniti korištenjem odgovarajućeg flaga:
 
 ![](/img/it-it/finance-area/maturity-values/maturity-values/maturity-values-management/image01.png) 
 
-aggiungendo il flag per bloccare (il programma aggiungerà automaticamente la data e l'utente che ha bloccato)
+Dodavanje oznake za zaključavanje (program će automatski dodati datum i korisnika koji je zaključao stavku)
 
-oppure togliendolo per sbloccare (a questo punto comparirà anche l'utente che ha sbloccato). 
+ili uklanjanjem za otključavanje (u tom trenutku će se pojaviti i korisnik koji je otključao).
 
 ![](/img/it-it/finance-area/maturity-values/maturity-values/maturity-values-management/image02.png)
 
-**Sottoconto di pagam.**: questo sottoconto viene associato alle partite create, al fine di poter verificare la canalizzazione dei pagamenti/incassi nelle stampe degli scadenziari e nelle simulazioni di cash flow; verrà pertanto compilato inserendo il conto bancario dell'azienda in uso. Il campo verrà compilato in automatico, per le partite create da registrazioni contabili, se nell'** [anagrafica del fornitore](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/finance) ** è compilato il campo apposito.
+**Podkonto plaćanja**: ovaj podkonto je povezan s kreiranim stavkama kako bi se moglo provjeriti plaćanje/naplate u ispisima i u simulacijama novčanog toka; stoga se može ispuniti unosom bankovnog računa tvrtke na koju se stavka odnosti. Polje će se popuniti automatski, za stavke kreirane iz knjigovodstvene evidencije, ako je u **[šifarniku dobavljača](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/finance)** popunjeno odgovarajuće polje.
 
-**Agente**: il campo viene compilato in automatico per le partite generate da contabilizzazione automatica di fatture di vendita con l'indicazione dell'agente collegato alla fattura stessa. L'informazione è utile per filtrare le partite nella form di ricerca e nelle stampe dove il campo è presente.
+**Predstavnik/Agent**: polje se popunjava automatski za zapise generirane automatskim obračunom prodajnih računa uz naznaku agenta vezanog uz sam račun. Informacije su korisne za detaljnije filtriranje.
 
-**Data Prevista**: questo campo può essere compilato per supportare le elaborazione del ** [Cash Flow](/docs/treasury/cash-flow/cash-flow/cash-flow-management) ** (funzionalità presente nell'area tesoreria). Può dunque essere indicata una data prevista di incasso o di pagamento che differisce rispetto alla data scadenza della partita e che sarà riportata nelle elaborazioni per il cash flow (alle quali si rinvia). In particolare si ricorda che in assenza di indicazione particolare definita nel campo in commento, la data prevista sarà valorizzata nell'elaborazione del cash flow, a partire dalla data scadenza, sommando il dato (se presente) contenuto nel campo **Giorni di Ritardo** presente nell'anagrafica del cliente o fornitore.
+**Očekivani datum**: ovo polje se može ispuniti kao pomoć pri obradi **[Novčanog tijeka](/docs/treasury/cash-flow/cash-flow/cash-flow-management)** (funkcionalnost prisutna u području riznice). Stoga se može naznačiti očekivani datum preuzimanja ili plaćanja koji se razlikuje od datuma isteka stavke i koji će biti prijavljen u izračunima novčanog toka (na koje se referencira). Treba imati na umu da će se u nedostatku određene naznake definirane u dotičnom polju, očekivani datum valorizirati u obradi novčanog toka počevši od datuma isteka, dodajući podatke (ako postoje) sadržane u polje **Prosječno kašnjenje dana plaćanja** prisutno u detaljima kupca ili dobavljača.
 
-Per gli altri campi vedere il ** [Glossario](/docs/guide/common/glossary/glossary-intro) ** e fare riferimento alle istruzioni relative alla ** [Tab Partite nella Registrazione contabile](/docs/finance-area/ledger-records/records/ledger-record) **.
+Za ostala polja pogledati **[Pojmovnik](/docs/guide/common/glossary/glossary-intro)** i pogledati upute koje se odnose na  **[Karticu stavki u računovodstvenom zapisu](/docs/finance-area/ledger-records/records/ledger-record)**.
 
-**NOTA:**
+**BILJEŠKA:**
 
-Generalmente l'inserimento manuale di partite è una operazione non ordinaria in quanto le partite nascono tramite le registrazioni contabili. Può essere eseguita ad esempio per inserire manualmente alcune partite aperte derivanti dal passaggio dati da precedente sistema gestionale (in alternativa alle funzionalità di importazione massiva) o per altre motivazioni particolari.
+Općenito, ručni unos stavki je neuobičajena operacija jer se stavke automatski pojavljuju kroz računovodstvene evidencije. Može se izvršiti, na primjer, za ručno umetanje nekih otvorenih stavki koje proizlaze iz prijenosa podataka iz prethodnog sustava upravljanja (kao alternativa masivnim funkcijama uvoza) ili iz drugih posebnih razloga.  
 
-Se, parallelamente, ad esempio, viene inserita una scrittura contabile di apertura saldo cliente o fornitore, dalla maschera in commento è possibile collegare la scrittura contabile tramite apposito comando presente nella ribbon bar e più sotto descritto.
+Ako se, primjerice, u isto vrijeme unese računovodstveni unos koji otvara stanje kupca ili dobavljača, iz dotičnog obrasca moguće je povezati računovodstveni unos koristeći određenu naredbu koja se nalazi na traci izbornika i opisana je u nastavku. 
 
-## Partite raggruppate
+## Grupirane dospjele vrijednosti 
 
- Dalla form in commento è possibile anche eseguire una sorta di "accorpamento" delle partite. Ovvero alla partita attualmente in modifica è possibile accorpare altre partite (anche non intestate allo stesso soggetto). Il comando è posto nella ribbon bar. **Aggiungi partite da raggruppare**.
+Moguće je spojiti druga dospijeća u dospijeće koje se trenutno uređuje. Naredba se nalazi u traci izbornika.  **Dodaj dospijeća plaćanja za grupiranje.**.
 
-Il risultato sarà che:
+Rezultat će biti sljedeći:
 
-- le partite accorpate non saranno più visibili nella form di ricerca partite
+- spojena dospijeća više neće biti vidljiva u pregledu dospijeća
 
-- la partita in modifica assumerà come valore il totale del suo valore più quello delle partite accorpate
+- dospijeća koja se mijenjaju će uzeti kao svoju vrijednost ukupnu svoju vrijednost plus vrijednost spojenih dospijeća
 
-- il dettaglio delle partie che sono state accorpate a quella in modifica apparirà nella griglia in commento.
+- pojedinosti o dijelovima koji su spojeni s onim dospijećem koji se mijenja, pojavit će se u donjem pregledu.
 
 ![](/img/it-it/finance-area/maturity-values/maturity-values/maturity-values-management/image03.png)
 
-**Per eseguire l'aggiunta delle partite che saranno accorpate utilizzare il comando Aggiungi partite da raggruppare presente nella ribbon bar.**
+**Za dodavanje dospijeća koje će se spojiti upotrijebiti naredbu Dodaj dospijeća u grupu na traci izbornika.**
 
-*Pulsanti specifici*
-> **Aggiungi partite da raggruppare**: permette di selezionare altre partite che saranno accorpate alla partita in modifica;  
-> **Cancella partite da raggruppare**: cancella la partita selezionata dalla griglia 'Partite raggruppate' ripristinandone l'autonomia rispetto alla partita in modifica (che è l'unica visibile rispetto a quelle ad essa accorpate);  
-> **Crea da partite / pagamenti**: permette di creare una partita a partire da un pagamento. Utile per operazioni di riallineamento di differenze o compensazione. Il comando fa apparire una form di ricerca dei pagamenti dai quali creare la partita. Tipicamente si esegue subito dopo aver creato manualmente una nuova partita dalla form di ricerca partite;  
-> **Collegamento registrazioni**: permette di collegare la partita in modifica ad una registrazione contabile (utile se la partita è stata creata manualmente).
+*Specifični gumbi*
+> **Dodaj dospijeća plaćanja za grupiranje**: omogućuje odabir drugih dospijeća koje će se spojiti s dospijećem koje se uređuje;    
+> **Izbriši dospijeća plaćanja za grupiranje**: briše odabrano dospijeće iz prikaza ' Grupiranje dospijeća, vraćajući joj autonomiju u odnosu na dospijeće koja se uređuje (koja je jedina vidljiva u usporedbi s onima koje su spojene s njom);        
+> **Kreiraj iz dospijeća plaćanja/plaćanja**: omogućuje stvaranje dospijeća iz plaćanja. Korisno za usklađivanje razlika ili operacije kompenzacije. Naredba otvara obrazac za traženje plaćanja iz kojeg možete kreirati dospijeće. Obično se izvodi odmah nakon ručnog kreiranja novog dospijeća iz obrasca za pretraživanje dospijeća;      
+> **Poveznica zapisivanja**: omogućuje povezivanje dospijeća koje se uređuje s računovodstvenim zapisom (korisno ako je dospijeće kreirano ručno).  
 
-## Pagamenti collegati
+## Povezano plaćanje  
 
 ## Extra Data
 
-Viene riportata la lista degli Extra data collegati, con la possibilità di aggiungere nuovi extra data utili solo per il documento in oggetto, con la possibilità tramite l'apposito flag, di scegliere quali extra data stampare.
+Prikazuje se popis povezanih Dodatnih podataka, s mogućnošću dodavanja novih Dodatnih podataka koji su korisni samo za otvoreni dokument.  

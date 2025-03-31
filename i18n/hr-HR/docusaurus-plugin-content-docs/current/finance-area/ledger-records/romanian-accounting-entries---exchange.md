@@ -1,47 +1,46 @@
 ---
-title: Regolarizzazione Valuta
+title: Zatvaranje tečajnih razlika 
 sidebar_position: 2
 ---
 
-Questa maschera permette di calcolare in automatico, ad una certa data, le differenze di cambio per i conti in valuta (ad esempio crediti e debiti oppure conti bancari) e per generare le partite e le registrazioni contabili di regolarizzazione.
+Ovaj obrazac omogućuje da se automatski izračuna, na određeni datum, tečajna razlike za valutne račune (na primjer kredite i zaduženja ili bankovne račune) i da se generiraju odgovarajući računovodstveni unose.  
 
-**Occorre, prima di tutto selezionare una divisa** (una per volta) rispetto alla quale sarà eseguito il calcolo, oltre (mediante i radio buttons sulla destra) alla tipologia di 
-calcolo:
+**Prije svega, potrebno je odabrati valutu** (jednu po jednu) prema kojoj će se vršiti izračun, kao i (pomoću izbornika s desne strane) vrstu izračuna:
 
-- Disponibilità: considera saldi (es. bancari)
-- Partite: legge crediti e debiti verso clienti / fornitori
-    - Attiva: clienti
-    - Passiva: fornitori
+- Raspoloživost: uzima u obzir stanja (npr. banka)
+- Dospijeća plaćanja: čita dugove i potražnje prema kupcima/dobavljačima
+    - Aktivno: kupci
+    - Pasiva: dobavljači 
 
-Il conto / sottoconto e la Divisione sono invece filtri opzionali per restringere la ricerca.
-
----
-
-Nella griglia centrale che espone il dettaglio delle posizioni ricercate vengono evidenziati, conto per conto, l'importo espresso nella divisa estera, il controvalore in euro storico, calcolato come somma algebrica di tutti i movimenti, il controvalore corrente ricalcolato al cambio esposto più in basso nella maschera, la differenza cambio positiva o negativa.
+Konto/podkotno i odjel su izborni filtri za sužavanje pretraživanja.  
 
 ---
 
-Nella zona dei *Parametri* sono definiti una serie di parametri con i quali sarà realizzata la contabilizzazione della regolarizzazione:
-
-**Provvisorie**: permette di generare la differenza di cambio come registrazione contabile provvisorie;
-
-**Cambio**: con il quale viene calcolato il valore aggiornato. Viene proposto in automatico dal programma (dalla tabella cambio valute), ma può essere cambiato dall'utente;
-
-**Data** e **Numero** **documento** e **Causale** **contabile** relativa alla registrazione contabile da regolarizzare. **La data inserita rappresenta anche la data fino alla quale vengono selezionate le registrazioni contabili;**
-
-**Conti** **di ricavo** e **costo**: utilizzati per registrare le differenze di cambio;
+U središnjem pregledu prikazuju se pojedinosti pretraživanih pozicija, iznos izražen u stranoj valuti, povijesna vrijednost u eurima - izračunata kao algebarski zbroj svih kretanja, trenutna vrijednost preračunata prema tečaju prikazanom niže te pozitivna ili negativna tečajna razlika.  
 
 ---
 
-Nella tab di *Ripristino* è possibile visualizzare e ripristinare il risultato delle operazioni di regolarizzazione eseguite in base ai filtri impostati (Da data/A data, il conto).
+U području *Parametri* definiran je niz parametara s kojima će se provoditi knjiženja:
+
+**Privremeno**: omogućuje generiranje tečajne razlike kao privremeni računovodstveni unos;
+
+**Tečaj**: broj s kojim se izračunava ažurirana vrijednost. Program ga automatski predlaže (iz tablice mjenjačnice), ali ga korisnik može promijeniti;
+
+**Datum** i **Broj** **dokumenta** i **Knjigovodstveni predložak** koji se odnosi na knjigovodstveno knjiženje koje treba urediti. **Uneseni datum također predstavlja datum do kojeg su odabrani računovodstveni zapisi**;
+
+**Konto prihoda** i **rashoda**: koriste se za evidentiranje tečajnih razlika; 
+
+---
+
+U kartici *Poništavanje knjiženja korekcije tečaja* moguće je pregledati i vratiti rezultat obavljenih knjiženja na temelju postavljenih filtera (Od datuma/Do datuma, račun).  
 
 
 
-| Funzione | Significato |
+| Funkcija | Značenje |
 | --- | --- |
-| Cerca | Pulsante per cercare i conti da regolarizzare in base ai filtri inseriti. |
-| Contabilizzazione | Pulsante per eseguire l'operazione di regolarizzazione dei conti selezionati nella zona dei filtri e in corrispondenza ai parametri inseriti nella zona relativa. |
-| Ripristina regolarizzazione | Pulsante per cancellare le operazioni di regolarizzazione selezionate nella griglia di risultato. |
+| Traži | Tipka za traženje konta koje treba podmiriti na temelju unesenih filtara. |
+| Knjiženje | Tipka za izvođenje operacije knjiženja u području filtra i koji odgovaraju parametrima unesenim u relevantno područje. |
+| Povrati usklađenje | Tipka za brisanje knjiženja  odabranih u pregledu rezultata. |
 
 
 

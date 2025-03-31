@@ -1,36 +1,36 @@
 ---
-title: Introduzione
+title: Uvod
 sidebar_position: 1
 ---
 
-Il modulo comprende le funzionalità per la ricerca, l'inserimento e la modifica di registrazioni contabili e connessi movimenti IVA.
-Con questo modulo è possibile una tenuta completa della contabilità aziendale. 
+Modul uključuje funkcionalnosti za pretraživanje, unos i izmjenu računovodstvenih zapisnika te povezane porezne pokrete.  
+S ovim modulom moguće je potpuno upravljanje poslovnim računovodstvom. 
 
-Le registrazioni sono generate dalle procedure di contabilizzazione documenti del ciclo attivo e passivo  o registrate direttamente, in modo manuale.
+Zapisnici se generiraju putem procedura za knjiženje dokumenata iz aktivnog i pasivnog ciklusa ili se unose izravno, ručno.  
 
-Dal  modulo si procede alla visualizzazione del bilancio, alla visualizzazione dei conti,  come anche lancio di varie **stampe**, raggruppate in tre blocchi:
+Iz modula se pristupa prikazu bilance, prikazu računa, kao i pokretanju raznih **ispisa**, grupiranih u tri bloka:
 
-- **Contabili**: Bilanci, Estratti conto, situazioni contabili ed altre stampe di dettaglio
-- **Fiscali**: Libri contabili, Registri IVA, Liquidazioni Iva, Dichiarazioni di intento
-- **Contabilità Analitica**: movimenti dei centri di costo collegati ai movimenti contabili
-
-
-Le **procedure** del modulo consentono:
-
-- Il calcolo e contabilizzazione delle scritture di assestamento
-- La chiusura e riapertura automatica dei conti
-- Il calcolo delle differenze cambio di fine anno (Regolarizzazione valuta)
-- La gestione delle registrazioni provvisorie
-- Il riordino dei protocolli iva 
-
-Prima di procedere all'introduzione o realizzazione di una registrazione è necessario accertarsi di avere correttamente impostato tutti i dati tabellari nonché i [**parametri**](/docs/configurations/parameters/finance/accounting-parameters) del modulo.
-
-I dati contabili sono utilizzati dal modulo Controlling per elaborare le chiusure infrannuali e per elaborare tutti i movimenti dei centri di costo ad esse collegate.
-Il modulo è strettamente interconnesso con la tesoreria con cui interscambia i dati e riceve movimenti contabili dalle procedure automatiche di contabilizzazione dei vari fatti contabili connessi alle operazioni di tesoreria (bonifici , portafoglio attivo ecc....)
-
-Una delle caratteristiche fondamentali e caratterizzanti del modulo per le registrazioni contabili è la sua Logica basata su [**Causali contabili**](/docs/configurations/tables/finance/ledger-records-templates/ledger-records-templates-intro) liberamente configurabili per definire i propri schemi contabili.
+- **Računovodstveni**: Bilance, Izvodi računa, računovodstvene situacije i drugi detaljni ispisi. 
+- **Fiscali**: Računovodstvene knjige, Registar PDV-a, PDV obračun, Izjave o namjeri.
+- **Analitičko računovodstvo**:  Kretanje troškovnih centara povezano s računovodstvenim kretanjima.
 
 
-:::important Vedi Anche
-[**VIDEO TUTORIALS SULLE REGISTRAZIONI CONTABILI**](/docs/video/finance/intro)
+**Procedure** modula omogućuju: 
+
+- Izračun i knjiženje usklađivačkih isprava
+- Automatsko zatvaranje i ponovo otvaranje računa
+- Izračun razlika tečaja na kraju godine (Valutna usklađivanja)
+- Upravljanje privremenim zapisima
+- Preuređivanje PDV protokola 
+
+Prije nego što pristupite unosu ili realizaciji zapisnika, potrebno je osigurati da su svi tablični podaci ispravno postavljeni, kao i [**parametri**](/docs/configurations/parameters/finance/accounting-parameters) modula.
+
+Računovodstveni podaci koriste se u modulu za kontroling za obradu međugodišnjih zatvaranja i za obradu svih kretanja troškovnih centara povezanih s njima.
+Modul je usko povezan s blagajnom, s kojom razmjenjuje podatke i prima računovodstvene pokrete od automatskih procedura za knjiženje različitih računovodstvenih događaja povezanih s transakcijama blagajne (bankovni transferi, aktivni portfelj itd.).
+
+Jedna od ključnih karakteristika modula za računovodstvene zapisnike je njegova logika temeljena na [**računovodstvenim predlošcima**](/docs/configurations/tables/finance/ledger-records-templates/ledger-records-templates-intro) koji se mogu slobodno konfigurirati za definiranje vlastitih računovodstvenih shema. 
+
+
+:::important Vidi također
+[**VIDEO TUTORIJALI ZA RAČUNOVODSTVENE ZAPISNIKE**](/docs/video/finance/intro)
 :::
