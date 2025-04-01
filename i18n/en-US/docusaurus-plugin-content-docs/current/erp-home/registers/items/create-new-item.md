@@ -61,7 +61,7 @@ This tab allows for defining additional details useful for the management and tr
 **Last edit date**: indicates the date of the last modification of the item;  
 **Tax Category**: through this combo, the tax category to which the item belongs can be selected, which is useful for warehouse tax prints, to group inventories by tax category;  
 **Product category**: a statistical data similar to the characteristic, used in certain specific reports;  
-**Sales Turnover**: as with purchase turnover, this combo serves for the management of revenue sub-accounts for the sale of the item;  
+**Sales Turnover**: as with purchase turnover, this combo serves for the management of revenue detail accounts for the sale of the item;  
 **Nature of Item**: a field used to attribute specific characteristics to the item to be used in certain particular procedures. In the combo, there is a list of the various natures that can be attributed to the item (click for the [glossary](/docs/guide/common/glossary/glossary-intro#item-nature));  
 
 > **Equipment/Tool**: this nature associates the item with the registry of measuring instruments and equipment found in the processing cycles.
@@ -151,7 +151,7 @@ In this tab, you can associate to the item the list of customers who have purcha
 **Sampling Type**: combo to define the default method of sample extraction from a production order for that item (for example, one sample every 100 pieces, or one sample every 3 orders, etc.). The sampling types are previously coded in the table under **Tables > Logistics**.
 
 Upper Grid:  
-**Customer**: the account/sub-account and description of the customer should be indicated;  
+**Customer**: the account/detail account and description of the customer should be indicated;  
 **Economic Lot**: indicates the economic lot (the minimum quantity purchasable by the customer) with its corresponding unit of measure;  
 **Customer Item**: in this section, you can indicate the code and description that the customer assigns to the item in their database; by indicating their reference here, it will be displayed on all documents related to that customer for that item;  
 **Usage Sector**: here the customer's usage sector is indicated;  

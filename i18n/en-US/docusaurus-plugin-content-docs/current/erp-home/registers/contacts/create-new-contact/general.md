@@ -33,7 +33,7 @@ Based on the text entered here, upon exiting the field, the management system wi
 
 **Municipality:** an editable field where the municipality of the legal headquarters can be inserted. There is a help for Municipalities to search in the list of municipalities as defined in the table (Home>Tables>General Settings);
 
-**Legal Nature (Natura giuridica):** legal nature, the list is linked to the country of the contact;
+**Legal Nature:** legal nature, the list is linked to the country of the contact;
 
 **Province:** an editable field where the province code can be entered. There is a help for Provinces to search in the list of provinces as defined in the table (Home>Tables>General Settings);
 
