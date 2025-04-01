@@ -11,6 +11,6 @@ Please note that to select more than one group at a time, the rows in the combo 
 
 **From Account / To Account**: these fields allow you to filter a pair of accounts to print only a portion of the chart of accounts.
 
-Flag **Info do not visualize**: Allows you to exclude from the printout (with the active flags) the sub-accounts related to the records of customers/suppliers, agents, and banks.
+Flag **Info do not visualize**: Allows you to exclude from the printout (with the active flags) the detail accounts related to the records of customers/suppliers, agents, and banks.
 
 After defining the desired parameters, press the Preview or Print button to print directly.
