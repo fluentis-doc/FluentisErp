@@ -1,0 +1,1202 @@
+{
+  "version.label": {
+    "message": "Next",
+    "description": "The label for version current"
+  },
+  "sidebar.financeArea.category.Dichiarazioni": {
+    "message": "Dichiarazioni",
+    "description": "The label for category Dichiarazioni in sidebar financeArea"
+  },
+  "sidebar.financeArea.category.Plafond": {
+    "message": "Plafond",
+    "description": "The label for category Plafond in sidebar financeArea"
+  },
+  "sidebar.financeArea.category.Intrastat": {
+    "message": "Intrastat",
+    "description": "The label for category Intrastat in sidebar financeArea"
+  },
+  "sidebar.financeArea.category.Ricerca intrastat": {
+    "message": "Ricerca intrastat",
+    "description": "The label for category Ricerca intrastat in sidebar financeArea"
+  },
+  "sidebar.financeArea.category.Crea Intrastat1": {
+    "message": "Crea Intrastat1",
+    "description": "The label for category Crea Intrastat1 in sidebar financeArea"
+  },
+  "sidebar.financeArea.category.Crea Intrastat2": {
+    "message": "Crea Intrastat2",
+    "description": "The label for category Crea Intrastat2 in sidebar financeArea"
+  },
+  "sidebar.financeArea.category.Creazione automatica - Intrastat1": {
+    "message": "Creazione automatica - Intrastat1",
+    "description": "The label for category Creazione automatica - Intrastat1 in sidebar financeArea"
+  },
+  "sidebar.financeArea.category.Creazione da registrazioni - Intrastat1  ": {
+    "message": "Creazione da registrazioni - Intrastat1  ",
+    "description": "The label for category Creazione da registrazioni - Intrastat1   in sidebar financeArea"
+  },
+  "sidebar.financeArea.category.Creazione automatica Intrastat2": {
+    "message": "Creazione automatica Intrastat2",
+    "description": "The label for category Creazione automatica Intrastat2 in sidebar financeArea"
+  },
+  "sidebar.financeArea.category.Creazione da registrazioni Intrastat2": {
+    "message": "Creazione da registrazioni Intrastat2",
+    "description": "The label for category Creazione da registrazioni Intrastat2 in sidebar financeArea"
+  },
+  "sidebar.financeArea.category.Registrazioni contabili": {
+    "message": "Registrazioni contabili",
+    "description": "The label for category Registrazioni contabili in sidebar financeArea"
+  },
+  "sidebar.financeArea.category.Registrazioni": {
+    "message": "Registrazioni",
+    "description": "The label for category Registrazioni in sidebar financeArea"
+  },
+  "sidebar.financeArea.category.Procedure": {
+    "message": "Procedure",
+    "description": "The label for category Procedure in sidebar financeArea"
+  },
+  "sidebar.financeArea.category.Apertura automatica conti": {
+    "message": "Apertura automatica conti",
+    "description": "The label for category Apertura automatica conti in sidebar financeArea"
+  },
+  "sidebar.financeArea.category.Chiusura automatica conti": {
+    "message": "Chiusura automatica conti",
+    "description": "The label for category Chiusura automatica conti in sidebar financeArea"
+  },
+  "sidebar.financeArea.category.Scritture di assestamento": {
+    "message": "Scritture di assestamento",
+    "description": "The label for category Scritture di assestamento in sidebar financeArea"
+  },
+  "sidebar.financeArea.category.Stampe fiscali": {
+    "message": "Stampe fiscali",
+    "description": "The label for category Stampe fiscali in sidebar financeArea"
+  },
+  "sidebar.financeArea.category.Stampe contabile": {
+    "message": "Stampe contabile",
+    "description": "The label for category Stampe contabile in sidebar financeArea"
+  },
+  "sidebar.financeArea.category.Stampe analitica": {
+    "message": "Stampe analitica",
+    "description": "The label for category Stampe analitica in sidebar financeArea"
+  },
+  "sidebar.financeArea.category.Partite": {
+    "message": "Partite",
+    "description": "The label for category Partite in sidebar financeArea"
+  },
+  "sidebar.financeArea.category.Calcolo Interessi": {
+    "message": "Calcolo Interessi",
+    "description": "The label for category Calcolo Interessi in sidebar financeArea"
+  },
+  "sidebar.financeArea.category.Generazione solleciti": {
+    "message": "Generazione solleciti",
+    "description": "The label for category Generazione solleciti in sidebar financeArea"
+  },
+  "sidebar.financeArea.category.Giroconto partite": {
+    "message": "Giroconto partite",
+    "description": "The label for category Giroconto partite in sidebar financeArea"
+  },
+  "sidebar.financeArea.category.Stampe": {
+    "message": "Stampe",
+    "description": "The label for category Stampe in sidebar financeArea"
+  },
+  "sidebar.financeArea.category.Percipienti": {
+    "message": "Percipienti",
+    "description": "The label for category Percipienti in sidebar financeArea"
+  },
+  "sidebar.financeArea.category.Cerca compensi": {
+    "message": "Cerca compensi",
+    "description": "The label for category Cerca compensi in sidebar financeArea"
+  },
+  "sidebar.financeArea.category.Modello F24": {
+    "message": "Modello F24",
+    "description": "The label for category Modello F24 in sidebar financeArea"
+  },
+  "sidebar.financeArea.category.Contabilizza": {
+    "message": "Contabilizza",
+    "description": "The label for category Contabilizza in sidebar financeArea"
+  },
+  "sidebar.financeArea.category.Contabilizzazione compensi": {
+    "message": "Contabilizzazione compensi",
+    "description": "The label for category Contabilizzazione compensi in sidebar financeArea"
+  },
+  "sidebar.financeArea.category.Contabilizza Enasarco": {
+    "message": "Contabilizza Enasarco",
+    "description": "The label for category Contabilizza Enasarco in sidebar financeArea"
+  },
+  "sidebar.financeArea.category.Contabilizza pagamenti": {
+    "message": "Contabilizza pagamenti",
+    "description": "The label for category Contabilizza pagamenti in sidebar financeArea"
+  },
+  "sidebar.financeArea.category.Gestione compensi": {
+    "message": "Gestione compensi",
+    "description": "The label for category Gestione compensi in sidebar financeArea"
+  },
+  "sidebar.financeArea.category.Cespiti": {
+    "message": "Cespiti",
+    "description": "The label for category Cespiti in sidebar financeArea"
+  },
+  "sidebar.financeArea.category.Gestione cespiti": {
+    "message": "Gestione cespiti",
+    "description": "The label for category Gestione cespiti in sidebar financeArea"
+  },
+  "sidebar.financeArea.category.Ammortamento oggettivo": {
+    "message": "Ammortamento oggettivo",
+    "description": "The label for category Ammortamento oggettivo in sidebar financeArea"
+  },
+  "sidebar.financeArea.category.Ammortamento cespiti": {
+    "message": "Ammortamento cespiti",
+    "description": "The label for category Ammortamento cespiti in sidebar financeArea"
+  },
+  "sidebar.financeArea.category.Stampe cespiti": {
+    "message": "Stampe cespiti",
+    "description": "The label for category Stampe cespiti in sidebar financeArea"
+  },
+  "sidebar.financeArea.category.Fatturazione Elettronica": {
+    "message": "Fatturazione Elettronica",
+    "description": "The label for category Fatturazione Elettronica in sidebar financeArea"
+  },
+  "sidebar.financeArea.category.Gest. Autofattura Elettronica": {
+    "message": "Gest. Autofattura Elettronica",
+    "description": "The label for category Gest. Autofattura Elettronica in sidebar financeArea"
+  },
+  "sidebar.financeArea.category.Leasing": {
+    "message": "Leasing",
+    "description": "The label for category Leasing in sidebar financeArea"
+  },
+  "sidebar.financeArea.category.Contabilizzazioni": {
+    "message": "Contabilizzazioni",
+    "description": "The label for category Contabilizzazioni in sidebar financeArea"
+  },
+  "sidebar.financeArea.category.Documenti SDI": {
+    "message": "Documenti SDI",
+    "description": "The label for category Documenti SDI in sidebar financeArea"
+  },
+  "sidebar.financeArea.category.Casi particolari e Regimi specifici": {
+    "message": "Casi particolari e Regimi specifici",
+    "description": "The label for category Casi particolari e Regimi specifici in sidebar financeArea"
+  },
+  "sidebar.erpHome.category.Anagrafiche": {
+    "message": "Anagrafiche",
+    "description": "The label for category Anagrafiche in sidebar erpHome"
+  },
+  "sidebar.erpHome.category.Contatti": {
+    "message": "Contatti",
+    "description": "The label for category Contatti in sidebar erpHome"
+  },
+  "sidebar.erpHome.category.Crea anagrafica": {
+    "message": "Crea anagrafica",
+    "description": "The label for category Crea anagrafica in sidebar erpHome"
+  },
+  "sidebar.erpHome.category.Dati contabili": {
+    "message": "Dati contabili",
+    "description": "The label for category Dati contabili in sidebar erpHome"
+  },
+  "sidebar.erpHome.category.Anagrafiche clienti/fornitori": {
+    "message": "Anagrafiche clienti/fornitori",
+    "description": "The label for category Anagrafiche clienti/fornitori in sidebar erpHome"
+  },
+  "sidebar.erpHome.category.Anagrafiche banche": {
+    "message": "Anagrafiche banche",
+    "description": "The label for category Anagrafiche banche in sidebar erpHome"
+  },
+  "sidebar.erpHome.category.Anagrafica agenti": {
+    "message": "Anagrafica agenti",
+    "description": "The label for category Anagrafica agenti in sidebar erpHome"
+  },
+  "sidebar.erpHome.category.Contabili": {
+    "message": "Contabili",
+    "description": "The label for category Contabili in sidebar erpHome"
+  },
+  "sidebar.erpHome.category.Articoli": {
+    "message": "Articoli",
+    "description": "The label for category Articoli in sidebar erpHome"
+  },
+  "sidebar.erpHome.category.Produzione": {
+    "message": "Produzione",
+    "description": "The label for category Produzione in sidebar erpHome"
+  },
+  "sidebar.erpHome.category.Cicli di lavoro": {
+    "message": "Cicli di lavoro",
+    "description": "The label for category Cicli di lavoro in sidebar erpHome"
+  },
+  "sidebar.erpHome.category.Distinta base": {
+    "message": "Distinta base",
+    "description": "The label for category Distinta base in sidebar erpHome"
+  },
+  "sidebar.erpHome.category.Crea assieme": {
+    "message": "Crea assieme",
+    "description": "The label for category Crea assieme in sidebar erpHome"
+  },
+  "sidebar.erpHome.category.Prototipazione": {
+    "message": "Prototipazione",
+    "description": "The label for category Prototipazione in sidebar erpHome"
+  },
+  "sidebar.erpHome.category.Dipendenti": {
+    "message": "Dipendenti",
+    "description": "The label for category Dipendenti in sidebar erpHome"
+  },
+  "sidebar.erpHome.category.Consegne/Resi D.P.I.": {
+    "message": "Consegne/Resi D.P.I.",
+    "description": "The label for category Consegne/Resi D.P.I. in sidebar erpHome"
+  },
+  "sidebar.erpHome.category.Corsi di formazione": {
+    "message": "Corsi di formazione",
+    "description": "The label for category Corsi di formazione in sidebar erpHome"
+  },
+  "sidebar.planning.category.MPS - Master Production Schedule": {
+    "message": "MPS - Master Production Schedule",
+    "description": "The label for category MPS - Master Production Schedule in sidebar planning"
+  },
+  "sidebar.planning.category.Commesse di produzione": {
+    "message": "Commesse di produzione",
+    "description": "The label for category Commesse di produzione in sidebar planning"
+  },
+  "sidebar.planning.category.Stampe": {
+    "message": "Stampe",
+    "description": "The label for category Stampe in sidebar planning"
+  },
+  "sidebar.planning.category.MS - Master Scheduling": {
+    "message": "MS - Master Scheduling",
+    "description": "The label for category MS - Master Scheduling in sidebar planning"
+  },
+  "sidebar.planning.category.Ordini pianificati": {
+    "message": "Ordini pianificati",
+    "description": "The label for category Ordini pianificati in sidebar planning"
+  },
+  "sidebar.planning.category.Procedure": {
+    "message": "Procedure",
+    "description": "The label for category Procedure in sidebar planning"
+  },
+  "sidebar.planning.category.CRP - Capacity Requirements Planning": {
+    "message": "CRP - Capacity Requirements Planning",
+    "description": "The label for category CRP - Capacity Requirements Planning in sidebar planning"
+  },
+  "sidebar.planning.category.Visualizzazione Gantt": {
+    "message": "Visualizzazione Gantt",
+    "description": "The label for category Visualizzazione Gantt in sidebar planning"
+  },
+  "sidebar.planning.category.Sequenza fasi": {
+    "message": "Sequenza fasi",
+    "description": "The label for category Sequenza fasi in sidebar planning"
+  },
+  "sidebar.production.category.MRP": {
+    "message": "MRP",
+    "description": "The label for category MRP in sidebar production"
+  },
+  "sidebar.production.category.PP-Production in Progress": {
+    "message": "PP-Production in Progress",
+    "description": "The label for category PP-Production in Progress in sidebar production"
+  },
+  "sidebar.production.category.Ordini di Produzione": {
+    "message": "Ordini di Produzione",
+    "description": "The label for category Ordini di Produzione in sidebar production"
+  },
+  "sidebar.production.category.Dichiarazioni": {
+    "message": "Dichiarazioni",
+    "description": "The label for category Dichiarazioni in sidebar production"
+  },
+  "sidebar.production.category.Procedure": {
+    "message": "Procedure",
+    "description": "The label for category Procedure in sidebar production"
+  },
+  "sidebar.production.category.Stampe": {
+    "message": "Stampe",
+    "description": "The label for category Stampe in sidebar production"
+  },
+  "sidebar.production.category.Production control": {
+    "message": "Production control",
+    "description": "The label for category Production control in sidebar production"
+  },
+  "sidebar.production.category.Fluentis MES": {
+    "message": "Fluentis MES",
+    "description": "The label for category Fluentis MES in sidebar production"
+  },
+  "sidebar.ddmrp.category.Anagrafiche": {
+    "message": "Anagrafiche",
+    "description": "The label for category Anagrafiche in sidebar ddmrp"
+  },
+  "sidebar.ddmrp.category.Procedure": {
+    "message": "Procedure",
+    "description": "The label for category Procedure in sidebar ddmrp"
+  },
+  "sidebar.ddmrp.category.Forms e reports": {
+    "message": "Forms e reports",
+    "description": "The label for category Forms e reports in sidebar ddmrp"
+  },
+  "sidebar.crm.category.Home CRM": {
+    "message": "Home CRM",
+    "description": "The label for category Home CRM in sidebar crm"
+  },
+  "sidebar.crm.category.My CRM area": {
+    "message": "My CRM area",
+    "description": "The label for category My CRM area in sidebar crm"
+  },
+  "sidebar.crm.category.Visit report": {
+    "message": "Visit report",
+    "description": "The label for category Visit report in sidebar crm"
+  },
+  "sidebar.crm.category.Contatti": {
+    "message": "Contatti",
+    "description": "The label for category Contatti in sidebar crm"
+  },
+  "sidebar.crm.category.Nuovo contatto CRM": {
+    "message": "Nuovo contatto CRM",
+    "description": "The label for category Nuovo contatto CRM in sidebar crm"
+  },
+  "sidebar.crm.category.Newsletter": {
+    "message": "Newsletter",
+    "description": "The label for category Newsletter in sidebar crm"
+  },
+  "sidebar.crm.category.Liste di distribuzione": {
+    "message": "Liste di distribuzione",
+    "description": "The label for category Liste di distribuzione in sidebar crm"
+  },
+  "sidebar.crm.category.Template": {
+    "message": "Template",
+    "description": "The label for category Template in sidebar crm"
+  },
+  "sidebar.crm.category.Campagne Marketing": {
+    "message": "Campagne Marketing",
+    "description": "The label for category Campagne Marketing in sidebar crm"
+  },
+  "sidebar.crm.category.Opportunità": {
+    "message": "Opportunità",
+    "description": "The label for category Opportunità in sidebar crm"
+  },
+  "sidebar.crm.category.Previsioni di vendita": {
+    "message": "Previsioni di vendita",
+    "description": "The label for category Previsioni di vendita in sidebar crm"
+  },
+  "sidebar.crm.category.Helpdesk": {
+    "message": "Helpdesk",
+    "description": "The label for category Helpdesk in sidebar crm"
+  },
+  "sidebar.purchase.category.Richieste di acquisto": {
+    "message": "Richieste di acquisto",
+    "description": "The label for category Richieste di acquisto in sidebar purchase"
+  },
+  "sidebar.purchase.category.Richiesta di offerta": {
+    "message": "Richiesta di offerta",
+    "description": "The label for category Richiesta di offerta in sidebar purchase"
+  },
+  "sidebar.purchase.category.Richieste di offerta": {
+    "message": "Richieste di offerta",
+    "description": "The label for category Richieste di offerta in sidebar purchase"
+  },
+  "sidebar.purchase.category.Procedure": {
+    "message": "Procedure",
+    "description": "The label for category Procedure in sidebar purchase"
+  },
+  "sidebar.purchase.category.Ordini fornitori": {
+    "message": "Ordini fornitori",
+    "description": "The label for category Ordini fornitori in sidebar purchase"
+  },
+  "sidebar.purchase.category.Ricevimento merci": {
+    "message": "Ricevimento merci",
+    "description": "The label for category Ricevimento merci in sidebar purchase"
+  },
+  "sidebar.purchase.category.DDT di acquisto": {
+    "message": "DDT di acquisto",
+    "description": "The label for category DDT di acquisto in sidebar purchase"
+  },
+  "sidebar.purchase.category.Fatture di acquisto": {
+    "message": "Fatture di acquisto",
+    "description": "The label for category Fatture di acquisto in sidebar purchase"
+  },
+  "sidebar.purchase.category.Contabilizzazione": {
+    "message": "Contabilizzazione",
+    "description": "The label for category Contabilizzazione in sidebar purchase"
+  },
+  "sidebar.purchase.category.Commesse di acquisto": {
+    "message": "Commesse di acquisto",
+    "description": "The label for category Commesse di acquisto in sidebar purchase"
+  },
+  "sidebar.purchase.category.Gestione prezzi": {
+    "message": "Gestione prezzi",
+    "description": "The label for category Gestione prezzi in sidebar purchase"
+  },
+  "sidebar.purchase.category.Listini fornitori": {
+    "message": "Listini fornitori",
+    "description": "The label for category Listini fornitori in sidebar purchase"
+  },
+  "sidebar.purchase.category.Procedure comuni": {
+    "message": "Procedure comuni",
+    "description": "The label for category Procedure comuni in sidebar purchase"
+  },
+  "sidebar.sales.category.Offerte": {
+    "message": "Offerte",
+    "description": "The label for category Offerte in sidebar sales"
+  },
+  "sidebar.sales.category.Ordini cliente": {
+    "message": "Ordini cliente",
+    "description": "The label for category Ordini cliente in sidebar sales"
+  },
+  "sidebar.sales.category.DDT di vendita": {
+    "message": "DDT di vendita",
+    "description": "The label for category DDT di vendita in sidebar sales"
+  },
+  "sidebar.sales.category.Procedure": {
+    "message": "Procedure",
+    "description": "The label for category Procedure in sidebar sales"
+  },
+  "sidebar.sales.category.Fatture di vendita": {
+    "message": "Fatture di vendita",
+    "description": "The label for category Fatture di vendita in sidebar sales"
+  },
+  "sidebar.sales.category.Contabilizzazione": {
+    "message": "Contabilizzazione",
+    "description": "The label for category Contabilizzazione in sidebar sales"
+  },
+  "sidebar.sales.category.POS": {
+    "message": "POS",
+    "description": "The label for category POS in sidebar sales"
+  },
+  "sidebar.sales.category.Liquidazione agenti": {
+    "message": "Liquidazione agenti",
+    "description": "The label for category Liquidazione agenti in sidebar sales"
+  },
+  "sidebar.sales.category.Stampe": {
+    "message": "Stampe",
+    "description": "The label for category Stampe in sidebar sales"
+  },
+  "sidebar.sales.category.Listini di vendita": {
+    "message": "Listini di vendita",
+    "description": "The label for category Listini di vendita in sidebar sales"
+  },
+  "sidebar.sales.category.Gestione prezzi": {
+    "message": "Gestione prezzi",
+    "description": "The label for category Gestione prezzi in sidebar sales"
+  },
+  "sidebar.sales.category.Procedure comuni": {
+    "message": "Procedure comuni",
+    "description": "The label for category Procedure comuni in sidebar sales"
+  },
+  "sidebar.sales.category.Documenti SDI e NSO": {
+    "message": "Documenti SDI e NSO",
+    "description": "The label for category Documenti SDI e NSO in sidebar sales"
+  },
+  "sidebar.sales.category.Documenti SDI": {
+    "message": "Documenti SDI",
+    "description": "The label for category Documenti SDI in sidebar sales"
+  },
+  "sidebar.sales.category.Documenti NSO": {
+    "message": "Documenti NSO",
+    "description": "The label for category Documenti NSO in sidebar sales"
+  },
+  "sidebar.treasury.category.Conti correnti": {
+    "message": "Conti correnti",
+    "description": "The label for category Conti correnti in sidebar treasury"
+  },
+  "sidebar.treasury.category.DocFinance": {
+    "message": "DocFinance",
+    "description": "The label for category DocFinance in sidebar treasury"
+  },
+  "sidebar.treasury.category.Pagamenti fornitori": {
+    "message": "Pagamenti fornitori",
+    "description": "The label for category Pagamenti fornitori in sidebar treasury"
+  },
+  "sidebar.treasury.category.Procedure": {
+    "message": "Procedure",
+    "description": "The label for category Procedure in sidebar treasury"
+  },
+  "sidebar.treasury.category.Contabilizza": {
+    "message": "Contabilizza",
+    "description": "The label for category Contabilizza in sidebar treasury"
+  },
+  "sidebar.treasury.category.Rischio cliente": {
+    "message": "Rischio cliente",
+    "description": "The label for category Rischio cliente in sidebar treasury"
+  },
+  "sidebar.treasury.category.Cash flow": {
+    "message": "Cash flow",
+    "description": "The label for category Cash flow in sidebar treasury"
+  },
+  "sidebar.treasury.category.Portofoglio Effetti": {
+    "message": "Portofoglio Effetti",
+    "description": "The label for category Portofoglio Effetti in sidebar treasury"
+  },
+  "sidebar.treasury.category.Contabilizzazione": {
+    "message": "Contabilizzazione",
+    "description": "The label for category Contabilizzazione in sidebar treasury"
+  },
+  "sidebar.treasury.category.Stampe": {
+    "message": "Stampe",
+    "description": "The label for category Stampe in sidebar treasury"
+  },
+  "sidebar.treasury.category.Anticipi & Incassi": {
+    "message": "Anticipi & Incassi",
+    "description": "The label for category Anticipi & Incassi in sidebar treasury"
+  },
+  "sidebar.logistics.category.Articoli": {
+    "message": "Articoli",
+    "description": "The label for category Articoli in sidebar logistics"
+  },
+  "sidebar.logistics.category.Magazzino": {
+    "message": "Magazzino",
+    "description": "The label for category Magazzino in sidebar logistics"
+  },
+  "sidebar.logistics.category.Registrazioni di magazzino": {
+    "message": "Registrazioni di magazzino",
+    "description": "The label for category Registrazioni di magazzino in sidebar logistics"
+  },
+  "sidebar.logistics.category.Ubicazioni": {
+    "message": "Ubicazioni",
+    "description": "The label for category Ubicazioni in sidebar logistics"
+  },
+  "sidebar.logistics.category.Stampe gestionali": {
+    "message": "Stampe gestionali",
+    "description": "The label for category Stampe gestionali in sidebar logistics"
+  },
+  "sidebar.logistics.category.Stampe contabili": {
+    "message": "Stampe contabili",
+    "description": "The label for category Stampe contabili in sidebar logistics"
+  },
+  "sidebar.logistics.category.Lotti/Numeri di serie": {
+    "message": "Lotti/Numeri di serie",
+    "description": "The label for category Lotti/Numeri di serie in sidebar logistics"
+  },
+  "sidebar.logistics.category.Picking": {
+    "message": "Picking",
+    "description": "The label for category Picking in sidebar logistics"
+  },
+  "sidebar.logistics.category.Inventari fisici": {
+    "message": "Inventari fisici",
+    "description": "The label for category Inventari fisici in sidebar logistics"
+  },
+  "sidebar.logistics.category.Stampe": {
+    "message": "Stampe",
+    "description": "The label for category Stampe in sidebar logistics"
+  },
+  "sidebar.logistics.category.U.D.C.": {
+    "message": "U.D.C.",
+    "description": "The label for category U.D.C. in sidebar logistics"
+  },
+  "sidebar.logistics.category.Gestione UDC": {
+    "message": "Gestione UDC",
+    "description": "The label for category Gestione UDC in sidebar logistics"
+  },
+  "sidebar.logistics.category.Liste di prelievo UDC/Packing list": {
+    "message": "Liste di prelievo UDC/Packing list",
+    "description": "The label for category Liste di prelievo UDC/Packing list in sidebar logistics"
+  },
+  "sidebar.logistics.category.Piani di carico": {
+    "message": "Piani di carico",
+    "description": "The label for category Piani di carico in sidebar logistics"
+  },
+  "sidebar.logistics.category.Spedizioni": {
+    "message": "Spedizioni",
+    "description": "The label for category Spedizioni in sidebar logistics"
+  },
+  "sidebar.logistics.category.Automezzi": {
+    "message": "Automezzi",
+    "description": "The label for category Automezzi in sidebar logistics"
+  },
+  "sidebar.logistics.category.Consumo materiali": {
+    "message": "Consumo materiali",
+    "description": "The label for category Consumo materiali in sidebar logistics"
+  },
+  "sidebar.logistics.category.WMS": {
+    "message": "WMS",
+    "description": "The label for category WMS in sidebar logistics"
+  },
+  "sidebar.logistics.category.Acquisti": {
+    "message": "Acquisti",
+    "description": "The label for category Acquisti in sidebar logistics"
+  },
+  "sidebar.logistics.category.Logistica": {
+    "message": "Logistica",
+    "description": "The label for category Logistica in sidebar logistics"
+  },
+  "sidebar.logistics.category.UDC": {
+    "message": "UDC",
+    "description": "The label for category UDC in sidebar logistics"
+  },
+  "sidebar.logistics.category.Vendita": {
+    "message": "Vendita",
+    "description": "The label for category Vendita in sidebar logistics"
+  },
+  "sidebar.subcontractor.category.Ordini di conto lavoro": {
+    "message": "Ordini di conto lavoro",
+    "description": "The label for category Ordini di conto lavoro in sidebar subcontractor"
+  },
+  "sidebar.subcontractor.category.Inserimento ordini di conto lavoro": {
+    "message": "Inserimento ordini di conto lavoro",
+    "description": "The label for category Inserimento ordini di conto lavoro in sidebar subcontractor"
+  },
+  "sidebar.subcontractor.category.DDT di consegna": {
+    "message": "DDT di consegna",
+    "description": "The label for category DDT di consegna in sidebar subcontractor"
+  },
+  "sidebar.subcontractor.category.Inserimento DDT di consegna": {
+    "message": "Inserimento DDT di consegna",
+    "description": "The label for category Inserimento DDT di consegna in sidebar subcontractor"
+  },
+  "sidebar.subcontractor.category.Procedure testata": {
+    "message": "Procedure testata",
+    "description": "The label for category Procedure testata in sidebar subcontractor"
+  },
+  "sidebar.subcontractor.category.Procedure": {
+    "message": "Procedure",
+    "description": "The label for category Procedure in sidebar subcontractor"
+  },
+  "sidebar.subcontractor.category.Stampe": {
+    "message": "Stampe",
+    "description": "The label for category Stampe in sidebar subcontractor"
+  },
+  "sidebar.subcontractor.category.Ricerca Rientri": {
+    "message": "Ricerca Rientri",
+    "description": "The label for category Ricerca Rientri in sidebar subcontractor"
+  },
+  "sidebar.subcontractor.category.Inserimento rientri": {
+    "message": "Inserimento rientri",
+    "description": "The label for category Inserimento rientri in sidebar subcontractor"
+  },
+  "sidebar.subcontractor.category.Registrazione rientri": {
+    "message": "Registrazione rientri",
+    "description": "The label for category Registrazione rientri in sidebar subcontractor"
+  },
+  "sidebar.subcontractor.category.Listini di conto lavoro": {
+    "message": "Listini di conto lavoro",
+    "description": "The label for category Listini di conto lavoro in sidebar subcontractor"
+  },
+  "sidebar.configurations.category.Parametri": {
+    "message": "Parametri",
+    "description": "The label for category Parametri in sidebar configurations"
+  },
+  "sidebar.configurations.category.Parametri generali": {
+    "message": "Parametri generali",
+    "description": "The label for category Parametri generali in sidebar configurations"
+  },
+  "sidebar.configurations.category.Parametri Generali": {
+    "message": "Parametri Generali",
+    "description": "The label for category Parametri Generali in sidebar configurations"
+  },
+  "sidebar.configurations.category.Acquisti": {
+    "message": "Acquisti",
+    "description": "The label for category Acquisti in sidebar configurations"
+  },
+  "sidebar.configurations.category.Amministrazione": {
+    "message": "Amministrazione",
+    "description": "The label for category Amministrazione in sidebar configurations"
+  },
+  "sidebar.configurations.category.Dipendenti": {
+    "message": "Dipendenti",
+    "description": "The label for category Dipendenti in sidebar configurations"
+  },
+  "sidebar.configurations.category.Logistica": {
+    "message": "Logistica",
+    "description": "The label for category Logistica in sidebar configurations"
+  },
+  "sidebar.configurations.category.Parametri iniziali magazzino": {
+    "message": "Parametri iniziali magazzino",
+    "description": "The label for category Parametri iniziali magazzino in sidebar configurations"
+  },
+  "sidebar.configurations.category.Parametri carico/scarico": {
+    "message": "Parametri carico/scarico",
+    "description": "The label for category Parametri carico/scarico in sidebar configurations"
+  },
+  "sidebar.configurations.category.Gestione progetti": {
+    "message": "Gestione progetti",
+    "description": "The label for category Gestione progetti in sidebar configurations"
+  },
+  "sidebar.configurations.category.Produzione": {
+    "message": "Produzione",
+    "description": "The label for category Produzione in sidebar configurations"
+  },
+  "sidebar.configurations.category.Parametri ordini di produzione": {
+    "message": "Parametri ordini di produzione",
+    "description": "The label for category Parametri ordini di produzione in sidebar configurations"
+  },
+  "sidebar.configurations.category.Parametri MRP": {
+    "message": "Parametri MRP",
+    "description": "The label for category Parametri MRP in sidebar configurations"
+  },
+  "sidebar.configurations.category.Qualità": {
+    "message": "Qualità",
+    "description": "The label for category Qualità in sidebar configurations"
+  },
+  "sidebar.configurations.category.Parametri reclami e non conformità": {
+    "message": "Parametri reclami e non conformità",
+    "description": "The label for category Parametri reclami e non conformità in sidebar configurations"
+  },
+  "sidebar.configurations.category.Tesoreria": {
+    "message": "Tesoreria",
+    "description": "The label for category Tesoreria in sidebar configurations"
+  },
+  "sidebar.configurations.category.Vendite": {
+    "message": "Vendite",
+    "description": "The label for category Vendite in sidebar configurations"
+  },
+  "sidebar.configurations.category.CRM": {
+    "message": "CRM",
+    "description": "The label for category CRM in sidebar configurations"
+  },
+  "sidebar.configurations.category.Tabelle": {
+    "message": "Tabelle",
+    "description": "The label for category Tabelle in sidebar configurations"
+  },
+  "sidebar.configurations.category.Causali di contabilità generale": {
+    "message": "Causali di contabilità generale",
+    "description": "The label for category Causali di contabilità generale in sidebar configurations"
+  },
+  "sidebar.configurations.category.Tipi solleciti": {
+    "message": "Tipi solleciti",
+    "description": "The label for category Tipi solleciti in sidebar configurations"
+  },
+  "sidebar.configurations.category.Controlling": {
+    "message": "Controlling",
+    "description": "The label for category Controlling in sidebar configurations"
+  },
+  "sidebar.configurations.category.Contabilità analitica": {
+    "message": "Contabilità analitica",
+    "description": "The label for category Contabilità analitica in sidebar configurations"
+  },
+  "sidebar.configurations.category.Contabilità gestionale": {
+    "message": "Contabilità gestionale",
+    "description": "The label for category Contabilità gestionale in sidebar configurations"
+  },
+  "sidebar.configurations.category.Contabilità industriale": {
+    "message": "Contabilità industriale",
+    "description": "The label for category Contabilità industriale in sidebar configurations"
+  },
+  "sidebar.configurations.category.Budgeting": {
+    "message": "Budgeting",
+    "description": "The label for category Budgeting in sidebar configurations"
+  },
+  "sidebar.configurations.category.Reporting": {
+    "message": "Reporting",
+    "description": "The label for category Reporting in sidebar configurations"
+  },
+  "sidebar.configurations.category.Previsionale": {
+    "message": "Previsionale",
+    "description": "The label for category Previsionale in sidebar configurations"
+  },
+  "sidebar.configurations.category.Costo prodotto / commessa": {
+    "message": "Costo prodotto / commessa",
+    "description": "The label for category Costo prodotto / commessa in sidebar configurations"
+  },
+  "sidebar.configurations.category.D.P.I.": {
+    "message": "D.P.I.",
+    "description": "The label for category D.P.I. in sidebar configurations"
+  },
+  "sidebar.configurations.category.Mansioni": {
+    "message": "Mansioni",
+    "description": "The label for category Mansioni in sidebar configurations"
+  },
+  "sidebar.configurations.category.Corsi di formazione": {
+    "message": "Corsi di formazione",
+    "description": "The label for category Corsi di formazione in sidebar configurations"
+  },
+  "sidebar.configurations.category.Gestione Progetti": {
+    "message": "Gestione Progetti",
+    "description": "The label for category Gestione Progetti in sidebar configurations"
+  },
+  "sidebar.configurations.category.Generale": {
+    "message": "Generale",
+    "description": "The label for category Generale in sidebar configurations"
+  },
+  "sidebar.configurations.category.Controlli articolo": {
+    "message": "Controlli articolo",
+    "description": "The label for category Controlli articolo in sidebar configurations"
+  },
+  "sidebar.configurations.category.Documenti": {
+    "message": "Documenti",
+    "description": "The label for category Documenti in sidebar configurations"
+  },
+  "sidebar.configurations.category.Qualificazione fornitori": {
+    "message": "Qualificazione fornitori",
+    "description": "The label for category Qualificazione fornitori in sidebar configurations"
+  },
+  "sidebar.configurations.category.Reclami e Non conformità": {
+    "message": "Reclami e Non conformità",
+    "description": "The label for category Reclami e Non conformità in sidebar configurations"
+  },
+  "sidebar.configurations.category.Azioni correttive": {
+    "message": "Azioni correttive",
+    "description": "The label for category Azioni correttive in sidebar configurations"
+  },
+  "sidebar.configurations.category.Taratura strumenti": {
+    "message": "Taratura strumenti",
+    "description": "The label for category Taratura strumenti in sidebar configurations"
+  },
+  "sidebar.configurations.category.Tabelle modulo cash flow": {
+    "message": "Tabelle modulo cash flow",
+    "description": "The label for category Tabelle modulo cash flow in sidebar configurations"
+  },
+  "sidebar.configurations.category.Tabelle modulo Portafoglio effetti": {
+    "message": "Tabelle modulo Portafoglio effetti",
+    "description": "The label for category Tabelle modulo Portafoglio effetti in sidebar configurations"
+  },
+  "sidebar.configurations.category.Tabelle modulo DocFinance": {
+    "message": "Tabelle modulo DocFinance",
+    "description": "The label for category Tabelle modulo DocFinance in sidebar configurations"
+  },
+  "sidebar.configurations.category.Impostazioni generali": {
+    "message": "Impostazioni generali",
+    "description": "The label for category Impostazioni generali in sidebar configurations"
+  },
+  "sidebar.configurations.category.Contatti": {
+    "message": "Contatti",
+    "description": "The label for category Contatti in sidebar configurations"
+  },
+  "sidebar.configurations.category.Opportunità": {
+    "message": "Opportunità",
+    "description": "The label for category Opportunità in sidebar configurations"
+  },
+  "sidebar.configurations.category.Previsioni di vendita": {
+    "message": "Previsioni di vendita",
+    "description": "The label for category Previsioni di vendita in sidebar configurations"
+  },
+  "sidebar.configurations.category.Ticket": {
+    "message": "Ticket",
+    "description": "The label for category Ticket in sidebar configurations"
+  },
+  "sidebar.configurations.category.CPQ": {
+    "message": "CPQ",
+    "description": "The label for category CPQ in sidebar configurations"
+  },
+  "sidebar.configurations.category.Utilità": {
+    "message": "Utilità",
+    "description": "The label for category Utilità in sidebar configurations"
+  },
+  "sidebar.configurations.category.ExtraData": {
+    "message": "ExtraData",
+    "description": "The label for category ExtraData in sidebar configurations"
+  },
+  "sidebar.configurations.category.Template": {
+    "message": "Template",
+    "description": "The label for category Template in sidebar configurations"
+  },
+  "sidebar.projectManagement.category.Progetti": {
+    "message": "Progetti",
+    "description": "The label for category Progetti in sidebar projectManagement"
+  },
+  "sidebar.projectManagement.category.Nuovo Progetto": {
+    "message": "Nuovo Progetto",
+    "description": "The label for category Nuovo Progetto in sidebar projectManagement"
+  },
+  "sidebar.projectManagement.category.Procedure": {
+    "message": "Procedure",
+    "description": "The label for category Procedure in sidebar projectManagement"
+  },
+  "sidebar.projectManagement.category.Stampe": {
+    "message": "Stampe",
+    "description": "The label for category Stampe in sidebar projectManagement"
+  },
+  "sidebar.projectManagement.category.Anagrafiche": {
+    "message": "Anagrafiche",
+    "description": "The label for category Anagrafiche in sidebar projectManagement"
+  },
+  "sidebar.projectManagement.category.Gestione Risorse": {
+    "message": "Gestione Risorse",
+    "description": "The label for category Gestione Risorse in sidebar projectManagement"
+  },
+  "sidebar.projectManagement.category.Dipendente": {
+    "message": "Dipendente",
+    "description": "The label for category Dipendente in sidebar projectManagement"
+  },
+  "sidebar.projectManagement.category.Gestione Calendari": {
+    "message": "Gestione Calendari",
+    "description": "The label for category Gestione Calendari in sidebar projectManagement"
+  },
+  "sidebar.projectManagement.category.Richieste di Intervento": {
+    "message": "Richieste di Intervento",
+    "description": "The label for category Richieste di Intervento in sidebar projectManagement"
+  },
+  "sidebar.projectManagement.category.Interventi Pianificati": {
+    "message": "Interventi Pianificati",
+    "description": "The label for category Interventi Pianificati in sidebar projectManagement"
+  },
+  "sidebar.projectManagement.category.Interventi": {
+    "message": "Interventi",
+    "description": "The label for category Interventi in sidebar projectManagement"
+  },
+  "sidebar.projectManagement.category.Attività": {
+    "message": "Attività",
+    "description": "The label for category Attività in sidebar projectManagement"
+  },
+  "sidebar.projectManagement.category.Riepiloghi per cedolini": {
+    "message": "Riepiloghi per cedolini",
+    "description": "The label for category Riepiloghi per cedolini in sidebar projectManagement"
+  },
+  "sidebar.projectManagement.category.Stato avanzamento lavori": {
+    "message": "Stato avanzamento lavori",
+    "description": "The label for category Stato avanzamento lavori in sidebar projectManagement"
+  },
+  "sidebar.quality.category.Documenti di origine esterna": {
+    "message": "Documenti di origine esterna",
+    "description": "The label for category Documenti di origine esterna in sidebar quality"
+  },
+  "sidebar.quality.category.Documenti di origine interna": {
+    "message": "Documenti di origine interna",
+    "description": "The label for category Documenti di origine interna in sidebar quality"
+  },
+  "sidebar.quality.category.Controlli articolo": {
+    "message": "Controlli articolo",
+    "description": "The label for category Controlli articolo in sidebar quality"
+  },
+  "sidebar.quality.category.Schede tecniche": {
+    "message": "Schede tecniche",
+    "description": "The label for category Schede tecniche in sidebar quality"
+  },
+  "sidebar.quality.category.Procedure": {
+    "message": "Procedure",
+    "description": "The label for category Procedure in sidebar quality"
+  },
+  "sidebar.quality.category.Stampe": {
+    "message": "Stampe",
+    "description": "The label for category Stampe in sidebar quality"
+  },
+  "sidebar.quality.category.Piani di controllo": {
+    "message": "Piani di controllo",
+    "description": "The label for category Piani di controllo in sidebar quality"
+  },
+  "sidebar.quality.category.Controllo articoli": {
+    "message": "Controllo articoli",
+    "description": "The label for category Controllo articoli in sidebar quality"
+  },
+  "sidebar.quality.category.Certificati di Analisi": {
+    "message": "Certificati di Analisi",
+    "description": "The label for category Certificati di Analisi in sidebar quality"
+  },
+  "sidebar.quality.category.Reclami e non conformità": {
+    "message": "Reclami e non conformità",
+    "description": "The label for category Reclami e non conformità in sidebar quality"
+  },
+  "sidebar.quality.category.Reclami": {
+    "message": "Reclami",
+    "description": "The label for category Reclami in sidebar quality"
+  },
+  "sidebar.quality.category.Non conformità": {
+    "message": "Non conformità",
+    "description": "The label for category Non conformità in sidebar quality"
+  },
+  "sidebar.quality.category.Azioni correttive": {
+    "message": "Azioni correttive",
+    "description": "The label for category Azioni correttive in sidebar quality"
+  },
+  "sidebar.quality.category.Taratura strumenti": {
+    "message": "Taratura strumenti",
+    "description": "The label for category Taratura strumenti in sidebar quality"
+  },
+  "sidebar.quality.category.Strumenti di misura": {
+    "message": "Strumenti di misura",
+    "description": "The label for category Strumenti di misura in sidebar quality"
+  },
+  "sidebar.quality.category.Qualificazione fornitore": {
+    "message": "Qualificazione fornitore",
+    "description": "The label for category Qualificazione fornitore in sidebar quality"
+  },
+  "sidebar.controlling.category.Panoramica Generale Controlling": {
+    "message": "Panoramica Generale Controlling",
+    "description": "The label for category Panoramica Generale Controlling in sidebar controlling"
+  },
+  "sidebar.controlling.category.Tabelle e Parametri controlling": {
+    "message": "Tabelle e Parametri controlling",
+    "description": "The label for category Tabelle e Parametri controlling in sidebar controlling"
+  },
+  "sidebar.controlling.category.Tabelle e Parametri specifici della contabilità analitica e gestionale": {
+    "message": "Tabelle e Parametri specifici della contabilità analitica e gestionale",
+    "description": "The label for category Tabelle e Parametri specifici della contabilità analitica e gestionale in sidebar controlling"
+  },
+  "sidebar.controlling.category.Tabelle e Parametri all'interno delle altre Aree": {
+    "message": "Tabelle e Parametri all'interno delle altre Aree",
+    "description": "The label for category Tabelle e Parametri all'interno delle altre Aree in sidebar controlling"
+  },
+  "sidebar.controlling.category.Gestione del controlling nelle varie aree": {
+    "message": "Gestione del controlling nelle varie aree",
+    "description": "The label for category Gestione del controlling nelle varie aree in sidebar controlling"
+  },
+  "sidebar.controlling.category.Chiusure infrannuali": {
+    "message": "Chiusure infrannuali",
+    "description": "The label for category Chiusure infrannuali in sidebar controlling"
+  },
+  "sidebar.controlling.category.Procedure": {
+    "message": "Procedure",
+    "description": "The label for category Procedure in sidebar controlling"
+  },
+  "sidebar.controlling.category.Stampe": {
+    "message": "Stampe",
+    "description": "The label for category Stampe in sidebar controlling"
+  },
+  "sidebar.controlling.category.Riclassificazioni": {
+    "message": "Riclassificazioni",
+    "description": "The label for category Riclassificazioni in sidebar controlling"
+  },
+  "sidebar.controlling.category.Contabilità gestionale": {
+    "message": "Contabilità gestionale",
+    "description": "The label for category Contabilità gestionale in sidebar controlling"
+  },
+  "sidebar.controlling.category.Prima nota": {
+    "message": "Prima nota",
+    "description": "The label for category Prima nota in sidebar controlling"
+  },
+  "sidebar.controlling.category.Storico gestionale": {
+    "message": "Storico gestionale",
+    "description": "The label for category Storico gestionale in sidebar controlling"
+  },
+  "sidebar.controlling.category.Visualizzazione": {
+    "message": "Visualizzazione",
+    "description": "The label for category Visualizzazione in sidebar controlling"
+  },
+  "sidebar.controlling.category.Storico di progetto": {
+    "message": "Storico di progetto",
+    "description": "The label for category Storico di progetto in sidebar controlling"
+  },
+  "sidebar.controlling.category.Budget": {
+    "message": "Budget",
+    "description": "The label for category Budget in sidebar controlling"
+  },
+  "sidebar.controlling.category.Previsioni di vendita": {
+    "message": "Previsioni di vendita",
+    "description": "The label for category Previsioni di vendita in sidebar controlling"
+  },
+  "sidebar.controlling.category.Calcolo costo": {
+    "message": "Calcolo costo",
+    "description": "The label for category Calcolo costo in sidebar controlling"
+  },
+  "sidebar.guide.category.Introduzione": {
+    "message": "Introduzione",
+    "description": "The label for category Introduzione in sidebar guide"
+  },
+  "sidebar.guide.category.Avviamento Fluentis ERP": {
+    "message": "Avviamento Fluentis ERP",
+    "description": "The label for category Avviamento Fluentis ERP in sidebar guide"
+  },
+  "sidebar.guide.category.Campi, funzionalità e pulsanti comuni": {
+    "message": "Campi, funzionalità e pulsanti comuni",
+    "description": "The label for category Campi, funzionalità e pulsanti comuni in sidebar guide"
+  },
+  "sidebar.guide.category.Campi comuni": {
+    "message": "Campi comuni",
+    "description": "The label for category Campi comuni in sidebar guide"
+  },
+  "sidebar.guide.category.Funzionalità comuni": {
+    "message": "Funzionalità comuni",
+    "description": "The label for category Funzionalità comuni in sidebar guide"
+  },
+  "sidebar.applications.category.BizLink": {
+    "message": "BizLink",
+    "description": "The label for category BizLink in sidebar applications"
+  },
+  "sidebar.applications.category.Supervisor": {
+    "message": "Supervisor",
+    "description": "The label for category Supervisor in sidebar applications"
+  },
+  "sidebar.applications.category.Funzionalità": {
+    "message": "Funzionalità",
+    "description": "The label for category Funzionalità in sidebar applications"
+  },
+  "sidebar.applications.category.Attività": {
+    "message": "Attività",
+    "description": "The label for category Attività in sidebar applications"
+  },
+  "sidebar.applications.category.Task": {
+    "message": "Task",
+    "description": "The label for category Task in sidebar applications"
+  },
+  "sidebar.applications.category.Eventi": {
+    "message": "Eventi",
+    "description": "The label for category Eventi in sidebar applications"
+  },
+  "sidebar.applications.category.Liste di Distribuzione": {
+    "message": "Liste di Distribuzione",
+    "description": "The label for category Liste di Distribuzione in sidebar applications"
+  },
+  "sidebar.knowlegdeBase.category.Amministrativa": {
+    "message": "Amministrativa",
+    "description": "The label for category Amministrativa in sidebar knowlegdeBase"
+  },
+  "sidebar.knowlegdeBase.category.Home": {
+    "message": "Home",
+    "description": "The label for category Home in sidebar knowlegdeBase"
+  },
+  "sidebar.knowlegdeBase.category.Acquisti": {
+    "message": "Acquisti",
+    "description": "The label for category Acquisti in sidebar knowlegdeBase"
+  },
+  "sidebar.knowlegdeBase.category.Vendite": {
+    "message": "Vendite",
+    "description": "The label for category Vendite in sidebar knowlegdeBase"
+  },
+  "sidebar.knowlegdeBase.category.Logistica": {
+    "message": "Logistica",
+    "description": "The label for category Logistica in sidebar knowlegdeBase"
+  },
+  "sidebar.knowlegdeBase.category.Produzione": {
+    "message": "Produzione",
+    "description": "The label for category Produzione in sidebar knowlegdeBase"
+  },
+  "sidebar.knowlegdeBase.category.Qualità": {
+    "message": "Qualità",
+    "description": "The label for category Qualità in sidebar knowlegdeBase"
+  },
+  "sidebar.video.category.Amministrativa": {
+    "message": "Amministrativa",
+    "description": "The label for category Amministrativa in sidebar video"
+  },
+  "sidebar.video.category.Home": {
+    "message": "Home",
+    "description": "The label for category Home in sidebar video"
+  },
+  "sidebar.video.category.Tesoreria": {
+    "message": "Tesoreria",
+    "description": "The label for category Tesoreria in sidebar video"
+  },
+  "sidebar.video.category.Acquisti": {
+    "message": "Acquisti",
+    "description": "The label for category Acquisti in sidebar video"
+  },
+  "sidebar.video.category.Vendite": {
+    "message": "Vendite",
+    "description": "The label for category Vendite in sidebar video"
+  },
+  "sidebar.video.category.Logistica": {
+    "message": "Logistica",
+    "description": "The label for category Logistica in sidebar video"
+  },
+  "sidebar.video.category.Produzione": {
+    "message": "Produzione",
+    "description": "The label for category Produzione in sidebar video"
+  },
+  "sidebar.video.category.Qualità": {
+    "message": "Qualità",
+    "description": "The label for category Qualità in sidebar video"
+  },
+  "sidebar.releaseNotes.category.Versione 545": {
+    "message": "Versione 545",
+    "description": "The label for category Versione 545 in sidebar releaseNotes"
+  },
+  "sidebar.releaseNotes.category.Versione 605": {
+    "message": "Versione 605",
+    "description": "The label for category Versione 605 in sidebar releaseNotes"
+  },
+  "sidebar.releaseNotes.category.Versione 606": {
+    "message": "Versione 606",
+    "description": "The label for category Versione 606 in sidebar releaseNotes"
+  },
+  "sidebar.releaseNotes.category.Versione 607": {
+    "message": "Versione 607",
+    "description": "The label for category Versione 607 in sidebar releaseNotes"
+  },
+  "sidebar.releaseNotes.category.Versione 608": {
+    "message": "Versione 608",
+    "description": "The label for category Versione 608 in sidebar releaseNotes"
+  },
+  "sidebar.releaseNotes.category.Versione 704": {
+    "message": "Versione 704",
+    "description": "The label for category Versione 704 in sidebar releaseNotes"
+  },
+  "sidebar.releaseNotes.category.Versione 705": {
+    "message": "Versione 705",
+    "description": "The label for category Versione 705 in sidebar releaseNotes"
+  },
+  "sidebar.releaseNotes.category.Versione 706": {
+    "message": "Versione 706",
+    "description": "The label for category Versione 706 in sidebar releaseNotes"
+  },
+  "sidebar.releaseNotes.category.Versione 707": {
+    "message": "Versione 707",
+    "description": "The label for category Versione 707 in sidebar releaseNotes"
+  }
+}

@@ -1,0 +1,142 @@
+{
+  "title": {
+    "message": "academy",
+    "description": "The title in the navbar"
+  },
+  "logo.alt": {
+    "message": "Logo",
+    "description": "The alt text of navbar logo"
+  },
+  "item.label.Release Notes": {
+    "message": "Release Notes",
+    "description": "Navbar item with label Release Notes"
+  },
+  "item.label.Formazione": {
+    "message": "Formazione",
+    "description": "Navbar item with label Formazione"
+  },
+  "item.label.Introduzione": {
+    "message": "Introduzione",
+    "description": "Navbar item with label Introduzione"
+  },
+  "item.label.Impostazioni": {
+    "message": "Impostazioni",
+    "description": "Navbar item with label Impostazioni"
+  },
+  "item.label.Anagrafiche": {
+    "message": "Anagrafiche",
+    "description": "Navbar item with label Anagrafiche"
+  },
+  "item.label.Aree": {
+    "message": "Aree",
+    "description": "Navbar item with label Aree"
+  },
+  "item.label.FAQ": {
+    "message": "FAQ",
+    "description": "Navbar item with label FAQ"
+  },
+  "item.label.Video tutorial": {
+    "message": "Video tutorial",
+    "description": "Navbar item with label Video tutorial"
+  },
+  "item.label.Fluentis Fast Start": {
+    "message": "Fluentis Fast Start",
+    "description": "Navbar item with label Fluentis Fast Start"
+  },
+  "item.label.Avviamento Fluentis ERP": {
+    "message": "Avviamento Fluentis ERP",
+    "description": "Navbar item with label Avviamento Fluentis ERP"
+  },
+  "item.label.Campi, funzionalità e pulsanti comuni": {
+    "message": "Campi, funzionalità e pulsanti comuni",
+    "description": "Navbar item with label Campi, funzionalità e pulsanti comuni"
+  },
+  "item.label.Configurazioni (Tabelle, Parametri...)": {
+    "message": "Configurazioni (Tabelle, Parametri...)",
+    "description": "Navbar item with label Configurazioni (Tabelle, Parametri...)"
+  },
+  "item.label.Context Panel": {
+    "message": "Context Panel",
+    "description": "Navbar item with label Context Panel"
+  },
+  "item.label.Form navigator": {
+    "message": "Form navigator",
+    "description": "Navbar item with label Form navigator"
+  },
+  "item.label.Object Navigator": {
+    "message": "Object Navigator",
+    "description": "Navbar item with label Object Navigator"
+  },
+  "item.label.Strumenti": {
+    "message": "Strumenti",
+    "description": "Navbar item with label Strumenti"
+  },
+  "item.label.Contatti": {
+    "message": "Contatti",
+    "description": "Navbar item with label Contatti"
+  },
+  "item.label.Piano dei conti": {
+    "message": "Piano dei conti",
+    "description": "Navbar item with label Piano dei conti"
+  },
+  "item.label.Articoli": {
+    "message": "Articoli",
+    "description": "Navbar item with label Articoli"
+  },
+  "item.label.Produzione": {
+    "message": "Produzione",
+    "description": "Navbar item with label Produzione"
+  },
+  "item.label.Dipendenti": {
+    "message": "Dipendenti",
+    "description": "Navbar item with label Dipendenti"
+  },
+  "item.label.Amministrativa": {
+    "message": "Amministrativa",
+    "description": "Navbar item with label Amministrativa"
+  },
+  "item.label.Tesoreria": {
+    "message": "Tesoreria",
+    "description": "Navbar item with label Tesoreria"
+  },
+  "item.label.Controlling": {
+    "message": "Controlling",
+    "description": "Navbar item with label Controlling"
+  },
+  "item.label.DDMRP": {
+    "message": "DDMRP",
+    "description": "Navbar item with label DDMRP"
+  },
+  "item.label.CRM": {
+    "message": "CRM",
+    "description": "Navbar item with label CRM"
+  },
+  "item.label.Acquisti": {
+    "message": "Acquisti",
+    "description": "Navbar item with label Acquisti"
+  },
+  "item.label.Vendite": {
+    "message": "Vendite",
+    "description": "Navbar item with label Vendite"
+  },
+  "item.label.Logistica": {
+    "message": "Logistica",
+    "description": "Navbar item with label Logistica"
+  },
+  "item.label.Pianificazione": {
+    "message": "Pianificazione",
+    "description": "Navbar item with label Pianificazione"
+  },
+  "item.label.Conto Lavoro": {
+    "message": "Conto Lavoro",
+    "description": "Navbar item with label Conto Lavoro"
+  },
+  "item.label.Gestione progetti": {
+    "message": "Gestione progetti",
+    "description": "Navbar item with label Gestione progetti"
+  },
+  "item.label.Qualità": {
+    "message": "Qualità",
+    "description": "Navbar item with label Qualità"
+  }
+}
